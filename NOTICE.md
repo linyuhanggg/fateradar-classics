@@ -5,7 +5,8 @@
 ## 发布边界
 
 - `sources/fulltext/` 保存旧研究工程现存的规范化文本快照；各文件的网页录入、OCR、标点、校勘和整理状态并不相同。
-- 当前未找回历史扫描 PDF、逐页图片、原始网页快照或 OCR 页面工程，因此本仓库不声称含有完整影印原件。
+- 历史扫描 PDF、逐页图片、原始网页快照和 OCR 页面工程没有从旧工程找回；`sources/facsimile/` 与 GitHub Release 中的影印件是依据来源锚点重新下载的公开副本，不冒充已经遗失的旧文件。
+- 普通 Git 中现有 75 个 PDF / DjVu；超过 GitHub 普通仓库单文件限制的原件放在 `facsimiles-oversize-2026-09-04` Release。各批 manifest 记录来源页面、原文件直链、书目映射和缺口。
 - 不包含已知的现代出版社付费点校本或付费数据库导出文件。
 - 不发布 FateRadar 的产品代码、旧排盘算法、用户资料、密钥、日志或生产配置。
 - 每套资料的来源网址、版本问题和风险说明以 `references/catalog/` 与对应 `references/books/*/*/index.md` 为准。
