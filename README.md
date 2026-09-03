@@ -50,8 +50,7 @@ docs/               FateRadar 新排盘引擎调研文档
 - 规范化全文：54 / 55 已上传；《奇门法窍》目前只有摘录，没有找到完整全文。
 - 补充材料：另有 2 份 Markdown 补充文本，已随全文上传。
 - 普通 Git 影印件：75 个 PDF / DjVu，共 1,170,138,206 bytes，覆盖 34 / 55 套，均已上传；同一影印册覆盖多本书时只保存一份。
-- 超限影印件：4 / 55 套，共 545,553,071 bytes，已放入 [Release](https://github.com/linyuhanggg/fateradar-classics/releases/tag/facsimiles-oversize-2026-09-04)。
-- 待传：1 / 55 套。《大六壬秘本》已确认 154,825,545 bytes 的公开扫描来源，但首次下载被来源站限流，当前仍只登记直链，尚未进入 Release。
+- 超限影印件：5 / 55 套，共 700,378,616 bytes，已放入 [Release](https://github.com/linyuhanggg/fateradar-classics/releases/tag/facsimiles-oversize-2026-09-04)，其中包括 154,825,545-byte 的《大六壬秘本》。
 - 未找到可确认影印本：14 / 55 套；仅摘录或从母书分出的 section pack：2 / 55 套。具体书名单见 `sources/facsimile/` 下的清单。
 - 旧工程原先保存的 PDF、逐页图片、网页快照、压缩包和 OCR 页面工程没有找回；现在的影印件是依据保留下来的来源锚点重新下载的替代副本。
 - 另有 4 个未纳入包：两项底本不稳，两项只有扫描线索但 OCR / 校勘未完成。

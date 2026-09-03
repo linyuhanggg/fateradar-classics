@@ -2,14 +2,14 @@
 
 更新时间：2026-09-04
 范围：原目录中 15 个 Chinese Text Project（CText）锚点和 6 个其他网页锚点，共 21 本。
-收录规则：只记录已经核实过的公开影印来源；单文件超过 95 MiB 只登记、不下载；没有可靠公开影印来源的直接标为“未找到”。本清单不保存哈希。
+收录规则：只记录已经核实过的公开影印来源；单文件超过 95 MiB 不放入普通 Git，改放 GitHub Release；没有可靠公开影印来源的直接标为“未找到”。本清单不保存哈希。
 
 ## 状态说明
 
 - `完整`：选定影印本的全部文件已经落盘，且本地字节数与检索时记录的来源字节数一致。
 - `部分`：只落盘了部分册次，或下载被中断后文件字节数不足。
 - `未下载`：已经核实公开影印来源，但本地尚无文件。
-- `超限`：来源已经核实，但单文件超过 95 MiB，按约定只登记链接。
+- `Release`：来源已经核实，但单文件超过 95 MiB，已上传 GitHub Release。
 - `未找到`：本轮有限检索没有找到可确认、可直接开发使用的公开影印底本。
 
 ## 21 本总表
@@ -27,7 +27,7 @@
 | 9 | 珞琭子三命消息赋 | [CText](https://ctext.org/wiki.pl?if=gb&res=430735) | [Wikimedia Commons：CADAL06054188](https://commons.wikimedia.org/wiki/File:CADAL06054188_%E7%8F%9E%E7%90%AD%E5%AD%90%E4%B8%89%E5%91%BD%E6%B6%88%E6%81%AF%E8%B3%A6%E6%B3%A8%C2%B7%E5%8D%B7%E4%B8%8A~%E5%8D%B7%E4%B8%8B.djvu) | DjVu | 3,585,820 | 完整 | 使用《珞琭子三命消息赋注》卷上至卷下。 |
 | 10 | 五行精纪 | [CText](https://ctext.org/wiki.pl?if=gb&res=190367) | [Wikimedia Commons 分类页](https://commons.wikimedia.org/wiki/Category:%E4%BA%94%E8%A1%8C%E7%B2%BE%E7%B4%80) | PDF | 83,175,472 | 完整 | 国图六册本。 |
 | 11 | 柳庄相法 | [CText](https://ctext.org/wiki.pl?if=gb&res=648356) | [Wikimedia Commons：NLC416-13jh001257-42702](https://commons.wikimedia.org/wiki/File:NLC416-13jh001257-42702_%E6%9F%B3%E8%8E%8A%E7%9B%B8%E6%B3%95.pdf) | PDF | 4,475,976 | 完整 | 国图扫描，单文件。 |
-| 12 | 大六壬秘本 | [CText](https://ctext.org/wiki.pl?if=gb&res=348173) | [来源页](https://commons.wikimedia.org/wiki/File:NCL-06572_%E5%A4%A7%E5%85%AD%E5%A3%AC%E7%A7%98%E6%9C%AC.pdf) / [原文件直链](https://upload.wikimedia.org/wikipedia/commons/0/0a/NCL-06572_%E5%A4%A7%E5%85%AD%E5%A3%AC%E7%A7%98%E6%9C%AC.pdf) | PDF | 0 | 超限 | 来源文件 154,825,545 bytes，约 147.7 MiB，未下载。 |
+| 12 | 大六壬秘本 | [CText](https://ctext.org/wiki.pl?if=gb&res=348173) | [来源页](https://commons.wikimedia.org/wiki/File:NCL-06572_%E5%A4%A7%E5%85%AD%E5%A3%AC%E7%A7%98%E6%9C%AC.pdf) / [原文件直链](https://upload.wikimedia.org/wikipedia/commons/0/0a/NCL-06572_%E5%A4%A7%E5%85%AD%E5%A3%AC%E7%A7%98%E6%9C%AC.pdf) | PDF | 154,825,545 | Release | 已核对文件字节数与 PDF 格式，并上传 GitHub Release。 |
 | 13 | 六壬指南（原目录 slug：liuren-zhiyin） | [CText](https://ctext.org/wiki.pl?if=gb&res=516644) | [Wikimedia Commons：NLC416-12jh005348-45347](https://commons.wikimedia.org/wiki/File:NLC416-12jh005348-45347_%E5%85%AD%E5%A3%AC%E6%8C%87%E5%8D%97.pdf) | PDF | 6,568,701 | 完整 | 来源题名为《六壬指南》。 |
 | 14 | 协纪辨方书 | [CText](https://ctext.org/wiki.pl?if=gb&res=595276) | [Wikimedia Commons 分类页](https://commons.wikimedia.org/wiki/Category:%E6%AC%BD%E5%AE%9A%E5%8D%94%E7%B4%80%E8%BE%A8%E6%96%B9%E6%9B%B8) | DjVu | 118,813,493 | 完整 | CADAL 26 个文件，覆盖卷一至卷三十六。 |
 | 15 | 星历考原 | [CText](https://ctext.org/wiki.pl?if=gb&res=403679) | [Wikimedia Commons：御定星曆考原第1册](https://commons.wikimedia.org/wiki/File:NLC892-412000003528-227963_%E5%BE%A1%E5%AE%9A%E6%98%9F%E6%9B%86%E8%80%83%E5%8E%9F_%E7%AC%AC1%E5%86%8A.pdf) | PDF | 69,295,961 | 完整 | 国图六册扫描，均已核对来源长度。 |
@@ -192,18 +192,19 @@ yangzhai-sanyao/part-02.pdf  68,437,090 bytes
 qimen-dunjia-tongzhi/NLC416-12jh003951-48665.pdf  8,832,333 bytes
 ```
 
-## 已核实但没有本地文件的来源
+## 已核实并放入 GitHub Release 的来源
 
-### 大六壬秘本（超限）
+### 大六壬秘本
 
 - 来源文件：`NCL-06572 大六壬秘本.pdf`
 - 来源字节数：154,825,545 bytes
 - 原文件直链：<https://upload.wikimedia.org/wikipedia/commons/0/0a/NCL-06572_%E5%A4%A7%E5%85%AD%E5%A3%AC%E7%A7%98%E6%9C%AC.pdf>
+- Release 文件：[`NCL-06572-daliuren-miben.pdf`](https://github.com/linyuhanggg/fateradar-classics/releases/download/facsimiles-oversize-2026-09-04/NCL-06572-daliuren-miben.pdf)
 
 ## 本地合计
 
 - 非空文件：63 个
 - 实际总字节数：932,230,397 bytes
 - 已补齐：`卜筮正宗`、`地理辨正`、`星历考原`、`阳宅三要`；`都天宝照经`跟随《地理辨正》共用底本。
-- 超限只登记：`大六壬秘本`。
+- 超限 Release：`大六壬秘本`，154,825,545 bytes。
 - 本轮未找到：`兰台妙选`、`沈氏玄空学`。

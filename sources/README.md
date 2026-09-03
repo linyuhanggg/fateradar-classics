@@ -8,7 +8,7 @@
 - `fulltext/` 内另有 2 份补充 Markdown，分别属于六壬指引与奇门遁甲统宗材料。
 - `excerpts/qimen-faqiao-chaibu-v1.md`：《奇门法窍》现存核验摘录。它不是全书。
 - `facsimile/`：75 个 PDF / DjVu 影印文件，共 1,170,138,206 bytes，覆盖 34 / 55 套；每批都有来源和书目映射清单。
-- 超过 GitHub 普通仓库单文件限制的 4 套影印原件，共 545,553,071 bytes，放在 [GitHub Release](https://github.com/linyuhanggg/fateradar-classics/releases/tag/facsimiles-oversize-2026-09-04)。
+- 超过 GitHub 普通仓库单文件限制的 5 套影印原件，共 700,378,616 bytes，放在 [GitHub Release](https://github.com/linyuhanggg/fateradar-classics/releases/tag/facsimiles-oversize-2026-09-04)。
 
 规范化全文来自旧工程最后一份与 catalog 对齐的 stage 快照。复制到本仓库后保持内容不变，并已逐文件比较源目录与目标目录。影印件则是从各 manifest 登记的公开来源重新下载，并核对文件长度和格式。
 
@@ -42,9 +42,9 @@ facsimile/wikisource/        维基文库 / Commons 底本
 facsimile/missing-recovery/  未找到、超限或误匹配的恢复记录
 ```
 
-《大六壬秘本》的 154,825,545-byte 扫描已经确认来源，但来源站首次请求返回限流，暂未上传；原文件直链保留在 `facsimile/other/MANIFEST.md`。
+《大六壬秘本》的 154,825,545-byte 扫描已从官方来源取得并上传 Release；原文件直链保留在 `facsimile/other/MANIFEST.md`。
 
-以 catalog 的 55 套为全集，当前互斥状态是：普通 Git 影印件 34 套、Release 影印件 4 套、待传 1 套、未找到可确认影印本 14 套、仅摘录或 section pack 2 套，合计正好 55 套。
+以 catalog 的 55 套为全集，当前互斥状态是：普通 Git 影印件 34 套、Release 影印件 5 套、未找到可确认影印本 14 套、仅摘录或 section pack 2 套，合计正好 55 套。
 
 ## 开发使用边界
 
