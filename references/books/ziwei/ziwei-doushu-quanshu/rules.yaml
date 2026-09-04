@@ -425,7 +425,11 @@ rules:
     start_line: 3472
     end_line: 3472
   quote: 先看命宮星曜落陷加羊陀火鈴空劫化忌守照如何，又看疾厄宮星曜善惡廟旺落陷如何斷之。
-  applicable_to: []
+  applicable_to:
+  - key: ziwei_star
+    value: 天伤
+  - key: ziwei_star
+    value: 天使
   caveats:
   - ⚠️ "病伤"断语**严禁**作医疗诊断
   - 仅作文化研究参考
@@ -884,27 +888,9 @@ rules:
     start_line: 4039
     end_line: 4039
   quote: 須詳大限獨守吉凶何如，小限獨守吉凶何如，太歲獨守吉凶何如。如歲限俱凶則凶。又看大限與小限相逢吉凶何如，大限逢太歲吉凶何如，小限逢太歲吉凶何如，禍福所定。又看太歲沖大限小限，太歲沖羊陀七殺，然後可斷吉凶。
-  applicable_to: 
+  applicable_to:
   - key: daxian
-    value: 事业 86–95
-  - key: daxian
-    value: 交友 76–85
-  - key: daxian
-    value: 兄弟 16–25
-  - key: daxian
-    value: 夫妻 26–35
-  - key: daxian
-    value: 子女 36–45
-  - key: daxian
-    value: 父母 116–125
-  - key: daxian
-    value: 田宅 96–105
-  - key: daxian
-    value: 疾厄 56–65
-  - key: daxian
-    value: 福德 106–115
-  - key: daxian
-    value: 财帛 46–55
+    value: 子女
   caveats: []
   school: null
   verified: false
@@ -931,7 +917,13 @@ rules:
     start_line: 4039
     end_line: 4039
   quote: 須詳大限獨守吉凶何如，小限獨守吉凶何如，太歲獨守吉凶何如。如歲限俱凶則凶。又看大限與小限相逢吉凶何如，大限逢太歲吉凶何如，小限逢太歲吉凶何如，禍福所定。又看太歲沖大限小限，太歲沖羊陀七殺，然後可斷吉凶。
-  applicable_to: []
+  applicable_to:
+  - key: daxian
+    value: 子女
+  - key: daxian
+    value: 田宅
+  - key: liunian_taisui
+    value: 午
   caveats:
   - 仅作文化研究参考
   - 不作具体年份的祸福铁口断
@@ -947,27 +939,9 @@ rules:
     start_line: 4046
     end_line: 4046
   quote: 南斗諸星吉凶，大限斷下五年應，小限斷下半年應。
-  applicable_to: 
+  applicable_to:
   - key: daxian
-    value: 事业 46–55
-  - key: daxian
-    value: 交友 56–65
-  - key: daxian
-    value: 兄弟 116–125
-  - key: daxian
-    value: 夫妻 106–115
-  - key: daxian
-    value: 子女 96–105
-  - key: daxian
-    value: 父母 16–25
-  - key: daxian
-    value: 田宅 36–45
-  - key: daxian
-    value: 疾厄 76–85
-  - key: daxian
-    value: 福德 26–35
-  - key: daxian
-    value: 财帛 86–95
+    value: 田宅
   caveats:
   - 仅作文化研究参考
   school: null
@@ -982,7 +956,9 @@ rules:
     start_line: 4039
     end_line: 4039
   quote: 須詳大限獨守吉凶何如，小限獨守吉凶何如，太歲獨守吉凶何如。如歲限俱凶則凶。又看大限與小限相逢吉凶何如，大限逢太歲吉凶何如，小限逢太歲吉凶何如，禍福所定。又看太歲沖大限小限，太歲沖羊陀七殺，然後可斷吉凶。
-  applicable_to: []
+  applicable_to:
+  - key: liunian_taisui
+    value: 午
   caveats:
   - 仅作文化研究参考
   - 不作铁口断流年祸福
@@ -998,7 +974,17 @@ rules:
     start_line: 4039
     end_line: 4039
   quote: 須詳大限獨守吉凶何如，小限獨守吉凶何如，太歲獨守吉凶何如。如歲限俱凶則凶。又看大限與小限相逢吉凶何如，大限逢太歲吉凶何如，小限逢太歲吉凶何如，禍福所定。又看太歲沖大限小限，太歲沖羊陀七殺，然後可斷吉凶。
-  applicable_to: []
+  applicable_to:
+  - key: ziwei_star
+    value: 擎羊
+  - key: ziwei_star
+    value: 陀罗
+  - key: ziwei_star
+    value: 七杀
+  - key: daxian
+    value: 子女
+  - key: daxian
+    value: 田宅
   caveats:
   - ⚠️ "大祸"断语**严禁**作铁口断
   - 仅作命书文化研究参考
@@ -1138,7 +1124,11 @@ rules:
     start_line: 4013
     end_line: 4013
   quote: 人生於富貴之家，一生快樂享福，財官顯達，妻榮子貴，奴僕成行，聲名昭著。其間有半途遭傷，人離財散，官非火盜，身喪家亡，此等之命非命也。是限步逢大小二限及太歲相衝照，又加兇殺守臨，故此破敗，不貧即損壽也。所謂先成後敗，先大後小也。
-  applicable_to: []
+  applicable_to:
+  - key: daxian
+    value: 子女
+  - key: daxian
+    value: 田宅
   caveats:
   - 仅作文化研究参考
   - 不作铁口断财运起伏

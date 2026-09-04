@@ -1853,40 +1853,7 @@
         },
         {
           "key": "daxian",
-          "value": "命宫 6–15",
-          "scope": {
-            "layer": "本命",
-            "palace": "命宫"
-          },
-          "derivedFrom": [
-            "decadal"
-          ]
-        },
-        {
-          "key": "daxian",
-          "value": "兄弟 16–25",
-          "scope": {
-            "layer": "本命",
-            "palace": "兄弟"
-          },
-          "derivedFrom": [
-            "decadal"
-          ]
-        },
-        {
-          "key": "daxian",
-          "value": "夫妻 26–35",
-          "scope": {
-            "layer": "本命",
-            "palace": "夫妻"
-          },
-          "derivedFrom": [
-            "decadal"
-          ]
-        },
-        {
-          "key": "daxian",
-          "value": "子女 36–45",
+          "value": "子女",
           "scope": {
             "layer": "大运",
             "palace": "子女"
@@ -1896,91 +1863,13 @@
           ]
         },
         {
-          "key": "daxian",
-          "value": "财帛 46–55",
+          "key": "liunian_taisui",
+          "value": "午",
           "scope": {
-            "layer": "本命",
-            "palace": "财帛"
+            "layer": "流年"
           },
           "derivedFrom": [
-            "decadal"
-          ]
-        },
-        {
-          "key": "daxian",
-          "value": "疾厄 56–65",
-          "scope": {
-            "layer": "本命",
-            "palace": "疾厄"
-          },
-          "derivedFrom": [
-            "decadal"
-          ]
-        },
-        {
-          "key": "daxian",
-          "value": "迁移 66–75",
-          "scope": {
-            "layer": "本命",
-            "palace": "迁移"
-          },
-          "derivedFrom": [
-            "decadal"
-          ]
-        },
-        {
-          "key": "daxian",
-          "value": "交友 76–85",
-          "scope": {
-            "layer": "本命",
-            "palace": "交友"
-          },
-          "derivedFrom": [
-            "decadal"
-          ]
-        },
-        {
-          "key": "daxian",
-          "value": "事业 86–95",
-          "scope": {
-            "layer": "本命",
-            "palace": "事业"
-          },
-          "derivedFrom": [
-            "decadal"
-          ]
-        },
-        {
-          "key": "daxian",
-          "value": "田宅 96–105",
-          "scope": {
-            "layer": "本命",
-            "palace": "田宅"
-          },
-          "derivedFrom": [
-            "decadal"
-          ]
-        },
-        {
-          "key": "daxian",
-          "value": "福德 106–115",
-          "scope": {
-            "layer": "本命",
-            "palace": "福德"
-          },
-          "derivedFrom": [
-            "decadal"
-          ]
-        },
-        {
-          "key": "daxian",
-          "value": "父母 116–125",
-          "scope": {
-            "layer": "本命",
-            "palace": "父母"
-          },
-          "derivedFrom": [
-            "decadal"
+            "calendar.now"
           ]
         }
       ]
@@ -2947,106 +2836,7 @@
         },
         {
           "key": "daxian",
-          "value": "命宫 6–15",
-          "scope": {
-            "layer": "本命",
-            "palace": "命宫"
-          },
-          "derivedFrom": [
-            "decadal"
-          ]
-        },
-        {
-          "key": "daxian",
-          "value": "兄弟 116–125",
-          "scope": {
-            "layer": "本命",
-            "palace": "兄弟"
-          },
-          "derivedFrom": [
-            "decadal"
-          ]
-        },
-        {
-          "key": "daxian",
-          "value": "夫妻 106–115",
-          "scope": {
-            "layer": "本命",
-            "palace": "夫妻"
-          },
-          "derivedFrom": [
-            "decadal"
-          ]
-        },
-        {
-          "key": "daxian",
-          "value": "子女 96–105",
-          "scope": {
-            "layer": "本命",
-            "palace": "子女"
-          },
-          "derivedFrom": [
-            "decadal"
-          ]
-        },
-        {
-          "key": "daxian",
-          "value": "财帛 86–95",
-          "scope": {
-            "layer": "本命",
-            "palace": "财帛"
-          },
-          "derivedFrom": [
-            "decadal"
-          ]
-        },
-        {
-          "key": "daxian",
-          "value": "疾厄 76–85",
-          "scope": {
-            "layer": "本命",
-            "palace": "疾厄"
-          },
-          "derivedFrom": [
-            "decadal"
-          ]
-        },
-        {
-          "key": "daxian",
-          "value": "迁移 66–75",
-          "scope": {
-            "layer": "本命",
-            "palace": "迁移"
-          },
-          "derivedFrom": [
-            "decadal"
-          ]
-        },
-        {
-          "key": "daxian",
-          "value": "交友 56–65",
-          "scope": {
-            "layer": "本命",
-            "palace": "交友"
-          },
-          "derivedFrom": [
-            "decadal"
-          ]
-        },
-        {
-          "key": "daxian",
-          "value": "事业 46–55",
-          "scope": {
-            "layer": "本命",
-            "palace": "事业"
-          },
-          "derivedFrom": [
-            "decadal"
-          ]
-        },
-        {
-          "key": "daxian",
-          "value": "田宅 36–45",
+          "value": "田宅",
           "scope": {
             "layer": "大运",
             "palace": "田宅"
@@ -3056,25 +2846,13 @@
           ]
         },
         {
-          "key": "daxian",
-          "value": "福德 26–35",
+          "key": "liunian_taisui",
+          "value": "午",
           "scope": {
-            "layer": "本命",
-            "palace": "福德"
+            "layer": "流年"
           },
           "derivedFrom": [
-            "decadal"
-          ]
-        },
-        {
-          "key": "daxian",
-          "value": "父母 16–25",
-          "scope": {
-            "layer": "本命",
-            "palace": "父母"
-          },
-          "derivedFrom": [
-            "decadal"
+            "calendar.now"
           ]
         }
       ]
@@ -3089,8 +2867,8 @@
           "value": "天英",
           "scope": {
             "layer": "本命",
-            "gong": 4,
-            "palace": "四宫 巽"
+            "palace": "四宫 巽",
+            "gong": 4
           },
           "derivedFrom": [
             "grid.star"
@@ -3101,8 +2879,8 @@
           "value": "惊门",
           "scope": {
             "layer": "本命",
-            "gong": 4,
-            "palace": "四宫 巽"
+            "palace": "四宫 巽",
+            "gong": 4
           },
           "derivedFrom": [
             "grid.door"
@@ -3113,8 +2891,8 @@
           "value": "太阴",
           "scope": {
             "layer": "本命",
-            "gong": 4,
-            "palace": "四宫 巽"
+            "palace": "四宫 巽",
+            "gong": 4
           },
           "derivedFrom": [
             "grid.god"
@@ -3125,8 +2903,8 @@
           "value": "天芮",
           "scope": {
             "layer": "本命",
-            "gong": 9,
-            "palace": "九宫 离"
+            "palace": "九宫 离",
+            "gong": 9
           },
           "derivedFrom": [
             "grid.star"
@@ -3137,8 +2915,8 @@
           "value": "开门",
           "scope": {
             "layer": "本命",
-            "gong": 9,
-            "palace": "九宫 离"
+            "palace": "九宫 离",
+            "gong": 9
           },
           "derivedFrom": [
             "grid.door"
@@ -3149,8 +2927,8 @@
           "value": "腾蛇",
           "scope": {
             "layer": "本命",
-            "gong": 9,
-            "palace": "九宫 离"
+            "palace": "九宫 离",
+            "gong": 9
           },
           "derivedFrom": [
             "grid.god"
@@ -3161,8 +2939,8 @@
           "value": "天柱",
           "scope": {
             "layer": "本命",
-            "gong": 2,
-            "palace": "二宫 坤"
+            "palace": "二宫 坤",
+            "gong": 2
           },
           "derivedFrom": [
             "grid.star"
@@ -3173,8 +2951,8 @@
           "value": "休门",
           "scope": {
             "layer": "本命",
-            "gong": 2,
-            "palace": "二宫 坤"
+            "palace": "二宫 坤",
+            "gong": 2
           },
           "derivedFrom": [
             "grid.door"
@@ -3185,8 +2963,8 @@
           "value": "值符",
           "scope": {
             "layer": "本命",
-            "gong": 2,
-            "palace": "二宫 坤"
+            "palace": "二宫 坤",
+            "gong": 2
           },
           "derivedFrom": [
             "grid.god"
@@ -3197,8 +2975,8 @@
           "value": "天辅",
           "scope": {
             "layer": "本命",
-            "gong": 3,
-            "palace": "三宫 震"
+            "palace": "三宫 震",
+            "gong": 3
           },
           "derivedFrom": [
             "grid.star"
@@ -3209,8 +2987,8 @@
           "value": "死门",
           "scope": {
             "layer": "本命",
-            "gong": 3,
-            "palace": "三宫 震"
+            "palace": "三宫 震",
+            "gong": 3
           },
           "derivedFrom": [
             "grid.door"
@@ -3221,8 +2999,8 @@
           "value": "六合",
           "scope": {
             "layer": "本命",
-            "gong": 3,
-            "palace": "三宫 震"
+            "palace": "三宫 震",
+            "gong": 3
           },
           "derivedFrom": [
             "grid.god"
@@ -3233,8 +3011,8 @@
           "value": "天禽",
           "scope": {
             "layer": "本命",
-            "gong": 5,
-            "palace": "五宫 中"
+            "palace": "五宫 中",
+            "gong": 5
           },
           "derivedFrom": [
             "grid.star"
@@ -3245,8 +3023,8 @@
           "value": "值符",
           "scope": {
             "layer": "本命",
-            "gong": 5,
-            "palace": "五宫 中"
+            "palace": "五宫 中",
+            "gong": 5
           },
           "derivedFrom": [
             "grid.god"
@@ -3257,8 +3035,8 @@
           "value": "天心",
           "scope": {
             "layer": "本命",
-            "gong": 7,
-            "palace": "七宫 兑"
+            "palace": "七宫 兑",
+            "gong": 7
           },
           "derivedFrom": [
             "grid.star"
@@ -3269,8 +3047,8 @@
           "value": "生门",
           "scope": {
             "layer": "本命",
-            "gong": 7,
-            "palace": "七宫 兑"
+            "palace": "七宫 兑",
+            "gong": 7
           },
           "derivedFrom": [
             "grid.door"
@@ -3281,8 +3059,8 @@
           "value": "九天",
           "scope": {
             "layer": "本命",
-            "gong": 7,
-            "palace": "七宫 兑"
+            "palace": "七宫 兑",
+            "gong": 7
           },
           "derivedFrom": [
             "grid.god"
@@ -3293,8 +3071,8 @@
           "value": "天冲",
           "scope": {
             "layer": "本命",
-            "gong": 8,
-            "palace": "八宫 艮"
+            "palace": "八宫 艮",
+            "gong": 8
           },
           "derivedFrom": [
             "grid.star"
@@ -3305,8 +3083,8 @@
           "value": "景门",
           "scope": {
             "layer": "本命",
-            "gong": 8,
-            "palace": "八宫 艮"
+            "palace": "八宫 艮",
+            "gong": 8
           },
           "derivedFrom": [
             "grid.door"
@@ -3317,8 +3095,8 @@
           "value": "白虎",
           "scope": {
             "layer": "本命",
-            "gong": 8,
-            "palace": "八宫 艮"
+            "palace": "八宫 艮",
+            "gong": 8
           },
           "derivedFrom": [
             "grid.god"
@@ -3329,8 +3107,8 @@
           "value": "天任",
           "scope": {
             "layer": "本命",
-            "gong": 1,
-            "palace": "一宫 坎"
+            "palace": "一宫 坎",
+            "gong": 1
           },
           "derivedFrom": [
             "grid.star"
@@ -3341,8 +3119,8 @@
           "value": "杜门",
           "scope": {
             "layer": "本命",
-            "gong": 1,
-            "palace": "一宫 坎"
+            "palace": "一宫 坎",
+            "gong": 1
           },
           "derivedFrom": [
             "grid.door"
@@ -3353,8 +3131,8 @@
           "value": "玄武",
           "scope": {
             "layer": "本命",
-            "gong": 1,
-            "palace": "一宫 坎"
+            "palace": "一宫 坎",
+            "gong": 1
           },
           "derivedFrom": [
             "grid.god"
@@ -3365,8 +3143,8 @@
           "value": "天蓬",
           "scope": {
             "layer": "本命",
-            "gong": 6,
-            "palace": "六宫 乾"
+            "palace": "六宫 乾",
+            "gong": 6
           },
           "derivedFrom": [
             "grid.star"
@@ -3377,8 +3155,8 @@
           "value": "伤门",
           "scope": {
             "layer": "本命",
-            "gong": 6,
-            "palace": "六宫 乾"
+            "palace": "六宫 乾",
+            "gong": 6
           },
           "derivedFrom": [
             "grid.door"
@@ -3389,8 +3167,8 @@
           "value": "九地",
           "scope": {
             "layer": "本命",
-            "gong": 6,
-            "palace": "六宫 乾"
+            "palace": "六宫 乾",
+            "gong": 6
           },
           "derivedFrom": [
             "grid.god"
@@ -3456,8 +3234,8 @@
           "value": "天辅",
           "scope": {
             "layer": "本命",
-            "gong": 4,
-            "palace": "四宫 巽"
+            "palace": "四宫 巽",
+            "gong": 4
           },
           "derivedFrom": [
             "grid.star"
@@ -3468,8 +3246,8 @@
           "value": "杜门",
           "scope": {
             "layer": "本命",
-            "gong": 4,
-            "palace": "四宫 巽"
+            "palace": "四宫 巽",
+            "gong": 4
           },
           "derivedFrom": [
             "grid.door"
@@ -3480,8 +3258,8 @@
           "value": "九地",
           "scope": {
             "layer": "本命",
-            "gong": 4,
-            "palace": "四宫 巽"
+            "palace": "四宫 巽",
+            "gong": 4
           },
           "derivedFrom": [
             "grid.god"
@@ -3492,8 +3270,8 @@
           "value": "天英",
           "scope": {
             "layer": "本命",
-            "gong": 9,
-            "palace": "九宫 离"
+            "palace": "九宫 离",
+            "gong": 9
           },
           "derivedFrom": [
             "grid.star"
@@ -3504,8 +3282,8 @@
           "value": "景门",
           "scope": {
             "layer": "本命",
-            "gong": 9,
-            "palace": "九宫 离"
+            "palace": "九宫 离",
+            "gong": 9
           },
           "derivedFrom": [
             "grid.door"
@@ -3516,8 +3294,8 @@
           "value": "九天",
           "scope": {
             "layer": "本命",
-            "gong": 9,
-            "palace": "九宫 离"
+            "palace": "九宫 离",
+            "gong": 9
           },
           "derivedFrom": [
             "grid.god"
@@ -3528,8 +3306,8 @@
           "value": "天芮",
           "scope": {
             "layer": "本命",
-            "gong": 2,
-            "palace": "二宫 坤"
+            "palace": "二宫 坤",
+            "gong": 2
           },
           "derivedFrom": [
             "grid.star"
@@ -3540,8 +3318,8 @@
           "value": "死门",
           "scope": {
             "layer": "本命",
-            "gong": 2,
-            "palace": "二宫 坤"
+            "palace": "二宫 坤",
+            "gong": 2
           },
           "derivedFrom": [
             "grid.door"
@@ -3552,8 +3330,8 @@
           "value": "值符",
           "scope": {
             "layer": "本命",
-            "gong": 2,
-            "palace": "二宫 坤"
+            "palace": "二宫 坤",
+            "gong": 2
           },
           "derivedFrom": [
             "grid.god"
@@ -3564,8 +3342,8 @@
           "value": "天冲",
           "scope": {
             "layer": "本命",
-            "gong": 3,
-            "palace": "三宫 震"
+            "palace": "三宫 震",
+            "gong": 3
           },
           "derivedFrom": [
             "grid.star"
@@ -3576,8 +3354,8 @@
           "value": "伤门",
           "scope": {
             "layer": "本命",
-            "gong": 3,
-            "palace": "三宫 震"
+            "palace": "三宫 震",
+            "gong": 3
           },
           "derivedFrom": [
             "grid.door"
@@ -3588,8 +3366,8 @@
           "value": "玄武",
           "scope": {
             "layer": "本命",
-            "gong": 3,
-            "palace": "三宫 震"
+            "palace": "三宫 震",
+            "gong": 3
           },
           "derivedFrom": [
             "grid.god"
@@ -3600,8 +3378,8 @@
           "value": "天禽",
           "scope": {
             "layer": "本命",
-            "gong": 5,
-            "palace": "五宫 中"
+            "palace": "五宫 中",
+            "gong": 5
           },
           "derivedFrom": [
             "grid.star"
@@ -3612,8 +3390,8 @@
           "value": "值符",
           "scope": {
             "layer": "本命",
-            "gong": 5,
-            "palace": "五宫 中"
+            "palace": "五宫 中",
+            "gong": 5
           },
           "derivedFrom": [
             "grid.god"
@@ -3624,8 +3402,8 @@
           "value": "天柱",
           "scope": {
             "layer": "本命",
-            "gong": 7,
-            "palace": "七宫 兑"
+            "palace": "七宫 兑",
+            "gong": 7
           },
           "derivedFrom": [
             "grid.star"
@@ -3636,8 +3414,8 @@
           "value": "惊门",
           "scope": {
             "layer": "本命",
-            "gong": 7,
-            "palace": "七宫 兑"
+            "palace": "七宫 兑",
+            "gong": 7
           },
           "derivedFrom": [
             "grid.door"
@@ -3648,8 +3426,8 @@
           "value": "腾蛇",
           "scope": {
             "layer": "本命",
-            "gong": 7,
-            "palace": "七宫 兑"
+            "palace": "七宫 兑",
+            "gong": 7
           },
           "derivedFrom": [
             "grid.god"
@@ -3660,8 +3438,8 @@
           "value": "天任",
           "scope": {
             "layer": "本命",
-            "gong": 8,
-            "palace": "八宫 艮"
+            "palace": "八宫 艮",
+            "gong": 8
           },
           "derivedFrom": [
             "grid.star"
@@ -3672,8 +3450,8 @@
           "value": "生门",
           "scope": {
             "layer": "本命",
-            "gong": 8,
-            "palace": "八宫 艮"
+            "palace": "八宫 艮",
+            "gong": 8
           },
           "derivedFrom": [
             "grid.door"
@@ -3684,8 +3462,8 @@
           "value": "白虎",
           "scope": {
             "layer": "本命",
-            "gong": 8,
-            "palace": "八宫 艮"
+            "palace": "八宫 艮",
+            "gong": 8
           },
           "derivedFrom": [
             "grid.god"
@@ -3696,8 +3474,8 @@
           "value": "天蓬",
           "scope": {
             "layer": "本命",
-            "gong": 1,
-            "palace": "一宫 坎"
+            "palace": "一宫 坎",
+            "gong": 1
           },
           "derivedFrom": [
             "grid.star"
@@ -3708,8 +3486,8 @@
           "value": "休门",
           "scope": {
             "layer": "本命",
-            "gong": 1,
-            "palace": "一宫 坎"
+            "palace": "一宫 坎",
+            "gong": 1
           },
           "derivedFrom": [
             "grid.door"
@@ -3720,8 +3498,8 @@
           "value": "六合",
           "scope": {
             "layer": "本命",
-            "gong": 1,
-            "palace": "一宫 坎"
+            "palace": "一宫 坎",
+            "gong": 1
           },
           "derivedFrom": [
             "grid.god"
@@ -3732,8 +3510,8 @@
           "value": "天心",
           "scope": {
             "layer": "本命",
-            "gong": 6,
-            "palace": "六宫 乾"
+            "palace": "六宫 乾",
+            "gong": 6
           },
           "derivedFrom": [
             "grid.star"
@@ -3744,8 +3522,8 @@
           "value": "开门",
           "scope": {
             "layer": "本命",
-            "gong": 6,
-            "palace": "六宫 乾"
+            "palace": "六宫 乾",
+            "gong": 6
           },
           "derivedFrom": [
             "grid.door"
@@ -3756,8 +3534,8 @@
           "value": "太阴",
           "scope": {
             "layer": "本命",
-            "gong": 6,
-            "palace": "六宫 乾"
+            "palace": "六宫 乾",
+            "gong": 6
           },
           "derivedFrom": [
             "grid.god"

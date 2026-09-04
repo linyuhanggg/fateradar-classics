@@ -116,7 +116,13 @@ rules:
     start_line: 516
     end_line: 516
   quote: 如法院警察局看守所律師之屬。
-  applicable_to: []
+  applicable_to:
+  - key: ziwei_star
+    value: 巨门
+  - key: ziwei_star
+    value: 天刑
+  - key: ziwei_palace
+    value: 事业
   caveats:
   - 只能提示传统象义和风险，不能替代法律判断，也不能无盘事实断“必有官非”
   school: null

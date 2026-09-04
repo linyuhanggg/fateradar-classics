@@ -2,7 +2,7 @@
 
 本轮只改 `applicable_to`。下列锚定规则的 statement 无法用该 art 引擎已产出的 FactKey 忠实表达，保持空数组。
 
-共 447 条。
+共 440 条。
 
 | art | book | rule_id | 原因分类 | 需要的事实 |
 |---|---|---|---|---|
@@ -268,7 +268,6 @@
 | `bazi` | `luming-nayin/yuzhao-shenying` | `YUZHAOSHENYI-051` | 条件过于复合，现有谓词表达不了 |  |
 | `bazi` | `luming-nayin/yuzhao-shenying` | `YUZHAOSHENYI-053` | 条件过于复合，现有谓词表达不了 |  |
 | `bazi` | `luming-nayin/yuzhao-shenying` | `YUZHAOSHENYI-054` | 条件过于复合，现有谓词表达不了 |  |
-| `ziwei` | `ziwei/feixing-ziwei-doushu-yuanzhi` | `FEIXINGZIWEI-008` | 需要引擎未产出的事实 | 大限宫位/流年太岁，不用 daxian * 通配 |
 | `ziwei` | `ziwei/feixing-ziwei-doushu-yuanzhi` | `FEIXINGZIWEI-010` | 条件过于复合，现有谓词表达不了 |  |
 | `ziwei` | `ziwei/feixing-ziwei-doushu-yuanzhi` | `FEIXINGZIWEI-013` | 通则/无条件 |  |
 | `ziwei` | `ziwei/feixing-ziwei-doushu-yuanzhi` | `FEIXINGZIWEI-014` | 条件过于复合，现有谓词表达不了 |  |
@@ -278,18 +277,12 @@
 | `ziwei` | `ziwei/taiwei-fu` | `TAIWEIFU-008` | 引擎不产出该 art 的此类事实 | shishen |
 | `ziwei` | `ziwei/taiwei-fu` | `TAIWEIFU-010` | 条件过于复合，现有谓词表达不了 |  |
 | `ziwei` | `ziwei/taiwei-fu` | `TAIWEIFU-017` | 条件过于复合，现有谓词表达不了 |  |
-| `ziwei` | `ziwei/taiwei-fu` | `TAIWEIFU-020` | 需要引擎未产出的事实 | 大限宫位/流年太岁，不用 daxian * 通配 |
 | `ziwei` | `ziwei/taiwei-fu` | `TAIWEIFU-021` | 条件过于复合，现有谓词表达不了 |  |
-| `ziwei` | `ziwei/ziwei-doushu-quanshu` | `ZIWEIDOUSHUQ-025` | 需要引擎未产出的事实 | 大限宫位/流年太岁，不用 daxian * 通配 |
 | `ziwei` | `ziwei/ziwei-doushu-quanshu` | `ZIWEIDOUSHUQ-050` | 条件过于复合，现有谓词表达不了 |  |
-| `ziwei` | `ziwei/ziwei-doushu-quanshu` | `ZIWEIDOUSHUQ-ZW-06` | 需要引擎未产出的事实 | 大限宫位/流年太岁，不用 daxian * 通配 |
-| `ziwei` | `ziwei/ziwei-doushu-quanshu` | `ZIWEIDOUSHUQ-055` | 需要引擎未产出的事实 | 大限宫位/流年太岁，不用 daxian * 通配 |
-| `ziwei` | `ziwei/ziwei-doushu-quanshu` | `ZIWEIDOUSHUQ-056` | 需要引擎未产出的事实 | 大限宫位/流年太岁，不用 daxian * 通配 |
 | `ziwei` | `ziwei/ziwei-doushu-quanshu` | `ZIWEIDOUSHUQ-058` | 条件过于复合，现有谓词表达不了 |  |
 | `ziwei` | `ziwei/ziwei-doushu-quanshu` | `ZIWEIDOUSHUQ-059` | 条件过于复合，现有谓词表达不了 |  |
 | `ziwei` | `ziwei/ziwei-doushu-quanshu` | `ZIWEIDOUSHUQ-062` | 条件过于复合，现有谓词表达不了 |  |
 | `ziwei` | `ziwei/ziwei-doushu-quanshu` | `ZW-08` | 条件过于复合，现有谓词表达不了 |  |
-| `ziwei` | `ziwei/ziwei-doushu-quanshu` | `ZIWEIDOUSHUQ-065` | 需要引擎未产出的事实 | 大限宫位/流年太岁，不用 daxian * 通配 |
 | `ziwei` | `ziwei/ziwei-doushu-quanshu` | `ZIWEIDOUSHUQ-069` | 条件过于复合，现有谓词表达不了 |  |
 | `liuyao` | `divination/bushi-zhengzong` | `BSZZ` | 通则/无条件 | 起卦记录法 |
 | `liuyao` | `divination/huangji-jingshi` | `HR-04` | 通则/无条件 | 皇极数/卦气，非六爻盘面 |
