@@ -88,7 +88,11 @@ rules:
     start_line: 772
     end_line: 772
   quote: 家宅吉占，专用财福；
-  applicable_to: []
+  applicable_to: 
+  - key: liuqin
+    value: 子孙
+  - key: liushen
+    value: 青龙
   caveats: []
   school: null
   verified: false
@@ -102,7 +106,17 @@ rules:
     start_line: 796
     end_line: 796
   quote: 起造迁移，财静人安；
-  applicable_to: []
+  applicable_to: 
+  - key: liuqin
+    value: 官鬼
+  - key: liuqin
+    value: 子孙
+  - key: liuqin
+    value: 兄弟
+  - key: liuqin
+    value: 父母
+  - key: liuqin
+    value: 妻财
   caveats: []
   school: null
   verified: false
@@ -116,7 +130,9 @@ rules:
     start_line: 809
     end_line: 809
   quote: 鬼墓方为圣堂，子墓方为牲畜，财墓方为仓库，绝为厕，兄墓得直方水生旺处为井，应为屋，鬼为厅，福为廊，财为房屋橱柜，兄为门。身持兄得，五事俱全，不可空，无刑冲克，上等屋也。内有一爻被冲克，主有损坏，得空为妙。
-  applicable_to: []
+  applicable_to: 
+  - key: liuqin
+    value: 妻财
   caveats: []
   school: null
   verified: false

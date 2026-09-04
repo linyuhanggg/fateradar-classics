@@ -44,7 +44,9 @@ rules:
     start_line: 30
     end_line: 30
   quote: 世為己，應為人，大宜契合。動為始，變為終，最怕交爭。
-  applicable_to: []
+  applicable_to: 
+  - key: shiyao
+    value: "*"
   caveats: []
   school: null
   verified: false
@@ -144,7 +146,9 @@ rules:
     start_line: 974
     end_line: 974
   quote: 兄如太過，反不剋財；身或兄臨，必難求望。
-  applicable_to: []
+  applicable_to: 
+  - key: liuqin
+    value: 妻财
   caveats: []
   school: null
   verified: false
@@ -172,7 +176,9 @@ rules:
     start_line: 1040
     end_line: 1040
   quote: 宅合有情之玄武，門庭柳陌花街；木臨無氣之螣蛇，宅舍茆簷蓬戶。
-  applicable_to: []
+  applicable_to: 
+  - key: liuqin
+    value: 妻财
   caveats: []
   school: null
   verified: false
@@ -186,7 +192,15 @@ rules:
     start_line: 880
     end_line: 880
   quote: 父爻旺相。文成擲地金聲；鬼位興隆，家報泥金捷喜。
-  applicable_to: []
+  applicable_to: 
+  - key: liuqin
+    value: 官鬼
+  - key: liuqin
+    value: 兄弟
+  - key: liuqin
+    value: 父母
+  - key: liuqin
+    value: 妻财
   caveats: []
   school: null
   verified: false
@@ -200,7 +214,13 @@ rules:
     start_line: 1318
     end_line: 1318
   quote: 應乃對頭，要休囚死絕；世為自己，宜帝旺長生。
-  applicable_to: []
+  applicable_to: 
+  - key: liuqin
+    value: 官鬼
+  - key: liuqin
+    value: 子孙
+  - key: liuqin
+    value: 父母
   caveats: []
   school: null
   verified: false
@@ -214,7 +234,11 @@ rules:
     start_line: 1578
     end_line: 1578
   quote: 父為行李，帶刑則破損不中；妻作盤纏，生旺則豐盈足用。
-  applicable_to: []
+  applicable_to: 
+  - key: liuqin
+    value: 妻财
+  - key: liuqin
+    value: 父母
   caveats: []
   school: null
   verified: false

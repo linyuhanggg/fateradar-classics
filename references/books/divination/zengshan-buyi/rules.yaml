@@ -84,7 +84,9 @@ rules:
     start_line: 498
     end_line: 498
   quote: 若占妻財﹐取財爻爲神﹐用此姤卦以寅卯木爻爲妻財﹐今六爻無寅卯﹐卽是用神不上卦﹐如於寅卯月占者﹐則以日月爲用神﹐倘非寅卯月﹐須在宮首卦﹐乾爲天卦內尋之。乾宮首卦乾爲天。
-  applicable_to: []
+  applicable_to: 
+  - key: fushen
+    value: "*"
   caveats:
   - 伏神之力远不及上卦之爻
   school: null
@@ -411,7 +413,9 @@ rules:
     start_line: 2465
     end_line: 2465
   quote: 官鬼雷霆霧電。官鬼乃父母之元神﹐動則生父﹐故主霧霆雷電。或應雷霆﹐不拘春夏秋冬﹐可執以爲雷霆霧電看是也。
-  applicable_to: []
+  applicable_to: 
+  - key: dongyao
+    value: "*"
   caveats:
   - 本书核心规则之一
   - 现代精准时间预测仍受多重不确定性限制
@@ -485,7 +489,17 @@ rules:
     start_line: 2424
     end_line: 2424
   quote: 父母爲雨雪霧霜﹐發則八方潤澤。
-  applicable_to: []
+  applicable_to: 
+  - key: liuqin
+    value: 官鬼
+  - key: liuqin
+    value: 子孙
+  - key: liuqin
+    value: 妻财
+  - key: liuqin
+    value: 兄弟
+  - key: liuqin
+    value: 父母
   caveats:
   - 现代以气象预报为主
   school: null
@@ -500,7 +514,11 @@ rules:
     start_line: 3148
     end_line: 3148
   quote: 卦宮衰弱根基淺﹐爻象豐隆命運高。爻象豐隆﹐占身命最重。世爻﹑財爻﹑福爻﹐得遇生扶﹐自然命運高彊。惟卦宮之衰弱者不驗﹐常見根基淺薄之人﹐宮幾旺﹐是不爲法。
-  applicable_to: []
+  applicable_to: 
+  - key: liuqin
+    value: 官鬼
+  - key: liuqin
+    value: 子孙
   caveats:
   - 仅作综合参考，不替代命理分析
   school: null
@@ -515,7 +533,11 @@ rules:
     start_line: 2406
     end_line: 2406
   quote: 子孫爲日月星斗﹐動則萬里晴光。黃金策以財動者﹐八方咸仰晴光﹐非也。子孫發動﹐萬里無雲﹐財以子孫爲元神﹐財動𨿽晴﹐倘如子孫休囚空破﹐或現而不動﹐必不大晴﹐當有浮雲薄霧。
-  applicable_to: []
+  applicable_to: 
+  - key: liuqin
+    value: 子孙
+  - key: liuqin
+    value: 妻财
   caveats:
   - —
   school: null
@@ -530,7 +552,11 @@ rules:
     start_line: 2292
     end_line: 2292
   quote: 此人已往軍前援例﹐故占流年﹐只謂命有功名﹐流年必現﹐卻不知占功名﹐以官爲官﹐最喜官星持世。
-  applicable_to: []
+  applicable_to: 
+  - key: liuqin
+    value: 官鬼
+  - key: liuqin
+    value: 父母
   caveats:
   - 现代职业发展应以多因素评估为主
   school: null
@@ -545,7 +571,11 @@ rules:
     start_line: 4741
     end_line: 4741
   quote: 陰陽雜職俱以子動爲嫌。子孫動子持世皆許必不成名﹐篤則以俗家求名同斷。
-  applicable_to: []
+  applicable_to: 
+  - key: liuqin
+    value: 子孙
+  - key: liuqin
+    value: 父母
   caveats:
   - 现代考试以备考为主
   school: null
@@ -560,7 +590,13 @@ rules:
     start_line: 6760
     end_line: 6760
   quote: 占妻、妾、婢、僕及占財物都以妻財爻爲用神，此卦寅木妻財就是用神。忌臨旬空月破，宜水相生，怕金相克，也有四處生克，多生少克爲吉與前同看。凡占金銀、買賣都以妻財爲用神，須在用神章中細看。
-  applicable_to: []
+  applicable_to: 
+  - key: liuqin
+    value: 子孙
+  - key: liuqin
+    value: 妻财
+  - key: liuqin
+    value: 兄弟
   caveats:
   - 仅参考
   - 不应作为投机指引
@@ -576,7 +612,11 @@ rules:
     start_line: 6760
     end_line: 6760
   quote: 占妻、妾、婢、僕及占財物都以妻財爻爲用神，此卦寅木妻財就是用神。忌臨旬空月破，宜水相生，怕金相克，也有四處生克，多生少克爲吉與前同看。凡占金銀、買賣都以妻財爲用神，須在用神章中細看。
-  applicable_to: []
+  applicable_to: 
+  - key: liuqin
+    value: 官鬼
+  - key: liuqin
+    value: 妻财
   caveats:
   - 婚姻属现代私事，占断不替代当事人意愿
   school: null
@@ -591,7 +631,11 @@ rules:
     start_line: 5340
     end_line: 5340
   quote: 卜胎之虛實﹐占孕之安危﹐問產婦之吉凶﹐測胎中之男女﹐各宜分占﹐親占代占﹐皆用子孫﹐惟子占母孕﹐以弟兄爻爲用神也。
-  applicable_to: []
+  applicable_to: 
+  - key: liuqin
+    value: 官鬼
+  - key: liuqin
+    value: 子孙
   caveats:
   - '**严禁替代现代产前检查**'
   - 男女鉴定属医学伦理范畴，本书不作为现代用途
@@ -637,7 +681,9 @@ rules:
     start_line: 1955
     end_line: 1955
   quote: 占官差以官鬼爲用﹐此卦辰土持世﹐寅木官鬼克世﹐世爻空﹐卽於壬寅日得差﹐次年三月死於中途﹐豈可謂之用克世勿作凶看。
-  applicable_to: []
+  applicable_to: 
+  - key: liuqin
+    value: 官鬼
   caveats:
   - —
   school: null
@@ -668,7 +714,11 @@ rules:
     start_line: 5758
     end_line: 5758
   quote: 野鶴曰﹕諸書無不以官爲鬼爲病﹐應爲醫人﹐子孫爲藥﹐理固然也﹐但此宜鬼者非鬼非病﹐乃憂神耳。
-  applicable_to: []
+  applicable_to: 
+  - key: liuqin
+    value: 官鬼
+  - key: liuqin
+    value: 子孙
   caveats:
   - '**严禁替代现代医学诊断**'
   - 占断仅做心理参考
