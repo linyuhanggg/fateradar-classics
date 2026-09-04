@@ -235,7 +235,17 @@ rules:
     start_line: 29
     end_line: 29
   quote: 窠更不拘其神煞星専時令須分體用方可斷其榮枯星徤身強官而富富而夀格髙星困苗不秀秀不實是乃星躔失度若斯當問人生分野而通之更詳正闗闔拱闢拱有官禄而無用宫乃蔵其刃雄或刑囚而不妨殺不加于二主盖吉曜失時吉而不吉凶星得地㐫莫能㐫身命官福最喜三元左經右緯須
-  applicable_to: []
+  applicable_to: 
+  - key: xingyao
+    value: 水星
+  - key: xingyao
+    value: 金星
+  - key: xingyao
+    value: 火星
+  - key: xingyao
+    value: 木星
+  - key: xingyao
+    value: 土星
   caveats: []
   school: null
   verified: false
@@ -263,7 +273,15 @@ rules:
     start_line: 77
     end_line: 77
   quote: 既令旺相此鬼縱在側不為忌矣因閲天綱集有曰爍爍陽光火勢不忌娟娟蟾影土計為妨四火懼見漂流四木怕逢金健四金坐度惟怕炎火四土何則為忌强梁之木要得金剛四水何則為防壅遏之勢要得木〔音乂〕夀甄迦羅限度邐行而無滯福阿僧祇命源妥安而有氣〔甄迦羅阿僧祇比西竺國語數無
-  applicable_to: []
+  applicable_to: 
+  - key: xingyao
+    value: 火星
+  - key: xingyao
+    value: 木星
+  - key: xingyao
+    value: 金星
+  - key: xingyao
+    value: 水星
   caveats: []
   school: null
   verified: false
@@ -277,7 +295,9 @@ rules:
     start_line: 39
     end_line: 39
   quote: 切以三冬之木遇水而寒九夏之土逢火而燥金埋土而反晦土渾水而致濁無根之木遇惡水而漂泛東西受制之土見猛水而崩潰四出冬金遇月飢寒刺骨春金見月淡薄無成大逢月朗則無權金得火明而煥發寒月最喜扵陽夏火不妨見月未垣安命太陽行限則柔而能剛星度為元太隂司用則懦而
-  applicable_to: []
+  applicable_to: 
+  - key: xingyao
+    value: 太阳
   caveats: []
   school: null
   verified: false

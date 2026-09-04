@@ -368,7 +368,9 @@ rules:
     start_line: 4988
     end_line: 4988
   quote: 太阴乃水之精也，人之身也。
-  applicable_to: []
+  applicable_to: 
+  - key: xingyao
+    value: 太阴
   caveats:
   - 通用 1+3+4+5（**女命"师尼""三嫁""庶生""庶出"等贬义条目按 safety-redlines + reframe**）
   school: null
@@ -383,7 +385,19 @@ rules:
     start_line: 6423
     end_line: 6423
   quote: 金星守命夜生吉，白日生人减半力。
-  applicable_to: []
+  applicable_to: 
+  - key: xingyao
+    value: 金星
+  - key: xingyao
+    value: 木星
+  - key: xingyao
+    value: 水星
+  - key: xingyao
+    value: 火星
+  - key: xingyao
+    value: 土星
+  - key: miaowang
+    value: 入庙得地
   caveats:
   - 通用 1+4（**"顽钝""哑吃""祸殃""作恶"等贬义条目 reframe**）
   school: null
@@ -410,7 +424,9 @@ rules:
     start_line: 8395
     end_line: 8395
   quote: 大凡洞微所急者限主星也，所贵者禄星也，所重者诸曜顺行也，所发者庙宫也，所畏者忌星也，所好者吉神也，所辅者行年也，所助者三方也，所恶者气孛罗计也，如善星陷逆则福慢，顺行则福紧。
-  applicable_to: []
+  applicable_to: 
+  - key: miaowang
+    value: 入庙得地
   caveats:
   - 通用 1+3
   school: null
