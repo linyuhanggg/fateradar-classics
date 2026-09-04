@@ -10,8 +10,11 @@ rules:
 - rule_id: ZZR
   kind: doctrine
   statement: 八卦相重，每一重卦具六爻，由此形成六十四卦体系。
-  anchor: null
-  quote: 八卦相重，每一重卦具六爻，由此形成六十四卦体系。
+  anchor:
+    file: sources/fulltext/divination/zhouyi-zhezhong/fulltext.md
+    start_line: 10625
+    end_line: 10625
+  quote: 乾坤剥復〔大過〕頤姤夬
   applicable_to: []
   caveats:
   - 仅作重卦结构方法，不授权卦意吉凶
@@ -22,8 +25,11 @@ rules:
 - rule_id: ZZR-01
   kind: doctrine
   statement: 阳爻居阳位（初三五）、阴爻居阴位（二四上）为"当位"；当位则正，多吉。
-  anchor: null
-  quote: 阳爻居阳位（初三五）、阴爻居阴位（二四上）为"当位"；当位则正，多吉。
+  anchor:
+    file: sources/fulltext/divination/zhouyi-zhezhong/fulltext.md
+    start_line: 2398
+    end_line: 2398
+  quote: 本義〔位雖得正然過剛不中志從於上不能久於其所故為不恒其德或承之羞之象或者不知其何人之辭承奉也言人皆得奉而進之不知其所自來也貞吝者正而不恒為可羞吝申戒占者之辭〕程傳〔三陽爻居陽位處得其位是其常處也乃志從於上六不惟隂陽相應風復從雷於恒處而不處不恒之人
   applicable_to: []
   caveats:
   - 当位非必然吉
@@ -47,8 +53,11 @@ rules:
 - rule_id: ZHOUYIZHEZHO-004
   kind: doctrine
   statement: 得中又当位（如九五、六二）为"中正"，最贵之爻；多主大吉、君子之道。
-  anchor: null
-  quote: 得中又当位（如九五、六二）为"中正"，最贵之爻；多主大吉、君子之道。
+  anchor:
+    file: sources/fulltext/divination/zhouyi-zhezhong/fulltext.md
+    start_line: 4409
+    end_line: 4409
+  quote: 本義〔以卦徳卦體而言陽猶可亨也〕程傳〔以卦才言也内健而外巽健而能巽也二五居中剛中也陽性上進下復乾體志在於行也剛居中為剛而得中又為中剛言畜陽則以柔巽言能亨則由剛中以成卦之義言則為隂畜陽以卦才言則陽為剛中才如是故畜雖小而能亨也〕
   applicable_to: []
   caveats:
   - —
@@ -59,8 +68,11 @@ rules:
 - rule_id: ZHOUYIZHEZHO-005
   kind: doctrine
   statement: 初与四、二与五、三与上相应；阴阳相应为有应（吉象）、同性相应为无应（孤立）。
-  anchor: null
-  quote: 初与四、二与五、三与上相应；阴阳相应为有应（吉象）、同性相应为无应（孤立）。
+  anchor:
+    file: sources/fulltext/divination/zhouyi-zhezhong/fulltext.md
+    start_line: 1265
+    end_line: 1265
+  quote: 臣二言大臣盡其職任以答夫君三與上相交泰之終也故三言平變而爲陂上言城復而于隍蓋君子進而小人退所以致泰也君委任而臣效忠所以致泰也抑天運之循環泰極而否有必然者而保泰之意隱然有不容不恐懼焉則平陂城隍其旨嚴哉○吳氏曰愼曰初四以氣類言二體之始也三上以時運
   applicable_to: []
   caveats:
   - 与卜筮"世应"概念不同
@@ -72,8 +84,11 @@ rules:
 - rule_id: ZHOUYIZHEZHO-006
   kind: doctrine
   statement: 相邻两爻为比；阴阳相比为亲、同性为敌。比关系次于应。
-  anchor: null
-  quote: 相邻两爻为比；阴阳相比为亲、同性为敌。比关系次于应。
+  anchor:
+    file: sources/fulltext/divination/zhouyi-zhezhong/fulltext.md
+    start_line: 4850
+    end_line: 4850
+  quote: 隨漸曰小子中孚曰其子皆指初爻也二為女正位乎内母道也五為男正位乎外父道也然必初上皆陽然後父子之象備又必三陽四陰各得其位然後兄弟夫婦粲然於一卦之中矣彖傳先舉二五始明其為男女之正繼明其為父母之嚴以兩爻為卦主也然後悉推家人以切卦位既以盡正家之義又以
   applicable_to: []
   caveats:
   - —
@@ -84,8 +99,11 @@ rules:
 - rule_id: ZHOUYIZHEZHO-007
   kind: doctrine
   statement: 一卦之主爻多为五爻（君位）；或以"成卦之主"（一阴一阳独成卦义者）；或以"主卦之主"（位最尊德最大者）。
-  anchor: null
-  quote: 一卦之主爻多为五爻（君位）；或以"成卦之主"（一阴一阳独成卦义者）；或以"主卦之主"（位最尊德最大者）。
+  anchor:
+    file: sources/fulltext/divination/zhouyi-zhezhong/fulltext.md
+    start_line: 8477
+    end_line: 8477
+  quote: 相攻相取相感之人其居皆有逺近其行皆有情偽其情皆有愛惡也故總以相近一條明之近而不相得則以惡相攻而凶生矣以偽相感而害生矣不以近相取而悔吝生矣是則一近之中備此三條也凡爻有比爻有應爻有一卦之主爻皆情之當相得者也今稱近者止據比爻言之反以三隅則逺而為應
   applicable_to: []
   caveats:
   - 朱熹与程颐对卦主认定有差异，本书取折中
@@ -96,8 +114,11 @@ rules:
 - rule_id: ZHOUYIZHEZHO-008
   kind: doctrine
   statement: 易爻随卦时而变义；同一爻位在不同卦中义不同（如九三在乾为君子终日乾乾、在坤无）。
-  anchor: null
-  quote: 易爻随卦时而变义；同一爻位在不同卦中义不同（如九三在乾为君子终日乾乾、在坤无）。
+  anchor:
+    file: sources/fulltext/divination/zhouyi-zhezhong/fulltext.md
+    start_line: 2794
+    end_line: 2794
+  quote: 之人則能濟於蹇故爲利也各爻取義不同如屯初九之志正而於六二則目之爲宼也諸爻皆不言吉上獨言吉者諸爻皆得正各有所善然皆未能出於蹇故未足爲吉惟上處蹇極而得寛裕乃爲吉也〕集説〔朱子語類云諸爻皆不言吉蓋未離乎蹇中也至上六往蹇來碩吉却是蹇極有可濟之理○項氏安世
   applicable_to: []
   caveats:
   - 不可执位以释爻
@@ -120,8 +141,11 @@ rules:
 - rule_id: ZHOUYIZHEZHO-ZZR-02
   kind: doctrine
   statement: 上下两卦之德合为一卦德（如乾下乾上为健中健、坎下离上为水火既济）。
-  anchor: null
-  quote: 上下两卦之德合为一卦德（如乾下乾上为健中健、坎下离上为水火既济）。
+  anchor:
+    file: sources/fulltext/divination/zhouyi-zhezhong/fulltext.md
+    start_line: 3332
+    end_line: 3332
+  quote: 本義〔革變革也兌澤在上離火在下火然則水乾水決則火滅中少二女合為一卦而少上中下志不相得故其卦為革也變革之初人未之信故必已日而後信又以其内有文明之徳而外有和說之氣故其占為有所更革皆大亨而得其正所革皆當而所革之悔亡也一有不正則所革不信不通而反有悔矣
   applicable_to: []
   caveats:
   - —
@@ -132,8 +156,11 @@ rules:
 - rule_id: ZHOUYIZHEZHO-011
   kind: doctrine
   statement: 64 卦两两为反对（综卦）；反对之卦义相反相成（如屯蒙、需讼、师比）。
-  anchor: null
-  quote: 64 卦两两为反对（综卦）；反对之卦义相反相成（如屯蒙、需讼、师比）。
+  anchor:
+    file: sources/fulltext/divination/zhouyi-zhezhong/fulltext.md
+    start_line: 10376
+    end_line: 10376
+  quote: 先天圖八卦兩兩相對序卦之根也乾與坤對坎與離對震與巽對艮與兑對相對而不相變所以定序卦之體也然既相對則必相交四正之卦相交則雖翻覆而其體不易四維之卦相交則翻覆而其體遂易矣若四正之卦與四維之卦雜交則易者半不易者半所以極序卦之用也是故天地定位上經所以
   applicable_to: []
   caveats:
   - —
@@ -156,8 +183,11 @@ rules:
 - rule_id: ZZR-03
   kind: doctrine
   statement: 乾健、坤顺、震动、巽入、坎陷、离丽、艮止、兑悦；为八卦本德。
-  anchor: null
-  quote: 乾健、坤顺、震动、巽入、坎陷、离丽、艮止、兑悦；为八卦本德。
+  anchor:
+    file: sources/fulltext/divination/zhouyi-zhezhong/fulltext.md
+    start_line: 2192
+    end_line: 2192
+  quote: 是之類率皆一字可以盡其義而此卦上下皆險以是爲險難重疊之際君子之人必當預積習之然後可以濟其險阻故聖人特加習字者此也○蘇氏軾曰坎險也水之所行而非水也惟水爲能習行於險其不直曰坎而曰習坎取於水也○吕氏大臨曰習坎更試乎至難也八卦乾健坤順震動艮止離明坎險巽
   applicable_to: []
   caveats:
   - —
@@ -168,8 +198,11 @@ rules:
 - rule_id: ZHOUYIZHEZHO-ZZR-03
   kind: doctrine
   statement: 八卦各有动物 / 身体 / 家人 / 方位 / 季节等多重类象（详卷十六）。
-  anchor: null
-  quote: 八卦各有动物 / 身体 / 家人 / 方位 / 季节等多重类象（详卷十六）。
+  anchor:
+    file: sources/fulltext/divination/zhouyi-zhezhong/fulltext.md
+    start_line: 9473
+    end_line: 9473
+  quote: 耦各二老陽老陰變數各八少隂少陽變數各二十四合為六十四八卦各得八焉然此乃奇耦對待加倍而得者體數也若天三地二衍而為五十者用數也蓋體數常均用數則陽饒而陰乏也此正造化之妙若陰陽同科老少一例是體數非用數也〕
   applicable_to: []
   caveats:
   - 类象有传统差异
@@ -181,8 +214,11 @@ rules:
 - rule_id: ZZR-04
   kind: doctrine
   statement: 易有太极，是生两仪、两仪生四象、四象生八卦；为易理生成之总框架。
-  anchor: null
-  quote: 易有太极，是生两仪、两仪生四象、四象生八卦；为易理生成之总框架。
+  anchor:
+    file: sources/fulltext/divination/zhouyi-zhezhong/fulltext.md
+    start_line: 9279
+    end_line: 9279
+  quote: 易有太極是生兩儀兩儀生四象四象生八卦
   applicable_to: []
   caveats:
   - —
@@ -217,8 +253,11 @@ rules:
 - rule_id: ZHOUYIZHEZHO-018
   kind: doctrine
   statement: 六爻分三才；初二为地、三四为人、五上为天。
-  anchor: null
-  quote: 六爻分三才；初二为地、三四为人、五上为天。
+  anchor:
+    file: sources/fulltext/divination/zhouyi-zhezhong/fulltext.md
+    start_line: 7562
+    end_line: 7562
+  quote: 〔柔變而趨於剛者退極而進也剛化而趨於柔者進極而退也既變而剛則晝而陽矣既化而柔則夜而陰矣六爻初二為地三四為人五上為天動即變化也極至也三極天地人之至理三才各一太極也此明剛柔相推以生變化而變化之極復為剛柔流行於一卦六爻之間而占者得因所値以斷吉凶也〕集
   applicable_to: []
   caveats:
   - —
@@ -229,8 +268,11 @@ rules:
 - rule_id: ZHOUYIZHEZHO-019
   kind: doctrine
   statement: 吉凶生大业；悔吝者言乎其小疵；动爻之吉凶悔吝皆由象生。
-  anchor: null
-  quote: 吉凶生大业；悔吝者言乎其小疵；动爻之吉凶悔吝皆由象生。
+  anchor:
+    file: sources/fulltext/divination/zhouyi-zhezhong/fulltext.md
+    start_line: 7589
+    end_line: 7589
+  quote: 吉凶者言乎其失得也悔吝者言乎其小疵也无咎者善補過也
   applicable_to: []
   caveats:
   - —
@@ -253,8 +295,11 @@ rules:
 - rule_id: ZHOUYIZHEZHO-ZZR-05
   kind: doctrine
   statement: 杂卦传以两两反对论卦义之异同（乾刚坤柔、比乐师忧）。
-  anchor: null
-  quote: 杂卦传以两两反对论卦义之异同（乾刚坤柔、比乐师忧）。
+  anchor:
+    file: sources/fulltext/divination/zhouyi-zhezhong/fulltext.md
+    start_line: 9116
+    end_line: 9116
+  quote: '### 乾剛坤柔比樂師憂'
   applicable_to: []
   caveats:
   - —
@@ -265,8 +310,11 @@ rules:
 - rule_id: ZZR-06
   kind: doctrine
   statement: 河图天数 1+3+5+7+9 = 25、地数 2+4+6+8+10 = 30、合 55；洛书纵横皆 15。
-  anchor: null
-  quote: 河图天数 1+3+5+7+9 = 25、地数 2+4+6+8+10 = 30、合 55；洛书纵横皆 15。
+  anchor:
+    file: sources/fulltext/divination/zhouyi-zhezhong/fulltext.md
+    start_line: 9234
+    end_line: 9234
+  quote: 之輕清而位乎上者也所謂地者隂之重濁而位乎下者也陽數奇故一三五七九皆屬乎天所謂天數五也隂數耦故二四六八十皆屬乎地所謂地數五也天數地數各以類而相求所謂五位之相得者然也天以一生水而地以六成之地以二生火而天以七成之天以三生木而地以八成之地以四生金而
   applicable_to: []
   caveats:
   - —
@@ -277,8 +325,11 @@ rules:
 - rule_id: ZHOUYIZHEZHO-ZZR-06
   kind: doctrine
   statement: 太极一、两仪二、四象四、八卦八、十六、三十二、六十四；每加一爻倍增。
-  anchor: null
-  quote: 太极一、两仪二、四象四、八卦八、十六、三十二、六十四；每加一爻倍增。
+  anchor:
+    file: sources/fulltext/divination/zhouyi-zhezhong/fulltext.md
+    start_line: 7854
+    end_line: 7854
+  quote: 乎盈故此獨以老陽老陰計乾坤六爻之策數餘可推而知也期周一歲也凡三百六十五日四分日之一此特舉成數而槩言之耳〕集説〔孔氏穎達曰乾之少陽一爻有二十八策六爻則有一百六十八策此經據老陽之策也若坤之少陰一爻有三十二六爻則有一百九十二此經據坤之老陰故百四十有四
   applicable_to: []
   caveats:
   - —
@@ -289,8 +340,11 @@ rules:
 - rule_id: ZHOUYIZHEZHO-024
   kind: doctrine
   statement: 50 根蓍草、去 1 不用、余 49 根、分二挂一揲四归奇，共 18 变成一卦。
-  anchor: null
-  quote: 50 根蓍草、去 1 不用、余 49 根、分二挂一揲四归奇，共 18 变成一卦。
+  anchor:
+    file: sources/fulltext/divination/zhouyi-zhezhong/fulltext.md
+    start_line: 7865
+    end_line: 7865
+  quote: 〔四營謂分二掛一揲四歸竒也易變易也謂一變也三變成爻十八變則成六爻也〕集説〔陸氏績曰分而為二以象兩一營也掛一以象三二營也揲之以四以象四時三營也歸奇於扐以象閏四營也○孔氏穎逹曰營謂經營謂四度經營蓍策乃成易之一變也毎一爻有三變初一揲不五則九是一變也第二揲
   applicable_to: []
   caveats:
   - 实操**严禁** LLM 手算
@@ -314,8 +368,11 @@ rules:
 - rule_id: ZHOUYIZHEZHO-026
   kind: doctrine
   statement: 六爻全静占本卦彖辞 / 卦辞；一爻变占本卦变爻爻辞；二爻变占本卦二变爻、上爻为主；三爻变占本卦及变卦彖辞、本卦为主；四爻变占变卦二不变爻、下爻为主；五爻变占变卦不变爻；六爻全变占之卦彖辞（乾用九 / 坤用六例外）。
-  anchor: null
-  quote: 六爻全静占本卦彖辞 / 卦辞；一爻变占本卦变爻爻辞；二爻变占本卦二变爻、上爻为主；三爻变占本卦及变卦彖辞、本卦为主；四爻变占变卦二不变爻、下爻为主；五爻变占变卦不变爻；六爻全变占之卦彖辞（乾用九 / 坤用六例外）。
+  anchor:
+    file: sources/fulltext/divination/zhouyi-zhezhong/fulltext.md
+    start_line: 9506
+    end_line: 9506
+  quote: 凡卦六爻皆不變則占本卦彖辭而以内卦為貞外卦為悔彖辭為卦下之辭孔成子筮立衛公子元遇屯曰利建侯秦伯伐晉筮之遇蠱曰貞風也其悔山也
   applicable_to: []
   caveats:
   - 朱熹折中诸家说之总结
@@ -327,8 +384,11 @@ rules:
 - rule_id: ZHOUYIZHEZHO-027
   kind: doctrine
   statement: 易者寡过之书；占断为辅，修身为本；君子知幾不待占而后行。
-  anchor: null
-  quote: 易者寡过之书；占断为辅，修身为本；君子知幾不待占而后行。
+  anchor:
+    file: sources/fulltext/divination/zhouyi-zhezhong/fulltext.md
+    start_line: 6530
+    end_line: 6530
+  quote: 正家之義脩於近小言之與行君子樞機出身加人發邇化遠故舉言行以爲之誡○楊氏時曰言忠信則有物行篤敬則有常○胡氏炳文曰風自火出一家之化自吾言行出皆由内及外自然薰蒸而成者也○俞氏琰曰齊家之道自脩身始此風自火出所以爲家人之象也君子知風之自於是齊家以脩身爲本而
   applicable_to: []
   caveats:
   - 本书反对依赖占卜决疑而废修身
@@ -339,8 +399,11 @@ rules:
 - rule_id: ZZR-07
   kind: doctrine
   statement: 本书解卦四层：先程传（义理）、次本义（义理 + 象数兼）、次集说（诸家）、终案语（折中）；学者依此层次研读。
-  anchor: null
-  quote: 本书解卦四层：先程传（义理）、次本义（义理 + 象数兼）、次集说（诸家）、终案语（折中）；学者依此层次研读。
+  anchor:
+    file: sources/fulltext/divination/zhouyi-zhezhong/fulltext.md
+    start_line: 494
+    end_line: 494
+  quote: 程子言易謂得其義則象數在其中朱子以為先見象數方說得理不然事無實證則虚理易差愚嘗觀顔延之庭誥云馬陸得其象數取之於物荀王舉其正宗得之於心其說以荀王為長李泰發亦謂一行明數而不知其義管輅明象而不通其理盖自輔嗣之學行而象數之說隱然義理象數一以貫之乃為
   applicable_to: []
   caveats:
   - —
@@ -351,8 +414,11 @@ rules:
 - rule_id: ZHOUYIZHEZHO-ZZR-07
   kind: doctrine
   statement: 程颐重义理（伊川易传）、朱熹兼象数与卜筮（本义）；本书以朱为正、程为佐。
-  anchor: null
-  quote: 程颐重义理（伊川易传）、朱熹兼象数与卜筮（本义）；本书以朱为正、程为佐。
+  anchor:
+    file: sources/fulltext/divination/zhouyi-zhezhong/fulltext.md
+    start_line: 319
+    end_line: 319
+  quote: 一易經二篇傳十篇在古元不相混費直王弼乃以傳附經而程子從之至呂大防晁說之呂祖謙諸儒以為應復其舊朱子本義所據者祖謙本也明初程傳朱義並用而以世次先程後朱故脩大全書破析本義以從程傳之序今案易學當以朱子為主故列本義於先而經傳次第則亦悉依本義原本庶學者
   applicable_to: []
   caveats:
   - —
@@ -375,8 +441,11 @@ rules:
 - rule_id: ZHOUYIZHEZHO-031
   kind: doctrine
   statement: 解卦兼综时位 / 才德 / 应比 / 中正 / 卦主等多角度；不可执一以蔽义。
-  anchor: null
-  quote: 解卦兼综时位 / 才德 / 应比 / 中正 / 卦主等多角度；不可执一以蔽义。
+  anchor:
+    file: sources/fulltext/divination/zhouyi-zhezhong/fulltext.md
+    start_line: 6954
+    end_line: 6954
+  quote: 程傳〔以初九時位才皆不可以有爲故當以中順自固也〕集說〔胡氏瑗曰凡革之道必須已日然後可以革之也民固卽日而未孚可遽革之乎故但可固守中順未可大有所爲○鄭氏汝諧曰居位之下革之而人未必從當革之始遽革而人未必信固執中順之道循理而變通可也自我有爲不可也於革之初言
   applicable_to: []
   caveats:
   - —

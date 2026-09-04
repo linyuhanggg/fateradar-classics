@@ -10,8 +10,11 @@ rules:
 - rule_id: XR
   kind: doctrine
   statement: 择日基础以河图洛书、先后天八卦、十二月辟卦（泰、大壮、夬、乾、姤、遯、否、观、剥、坤、复、临）、二十八宿配日、五行用事、干支六合、五虎遁、纳音为根本框架。
-  anchor: null
-  quote: 择日基础以河图洛书、先后天八卦、十二月辟卦（泰、大壮、夬、乾、姤、遯、否、观、剥、坤、复、临）、二十八宿配日、五行用事、干支六合、五虎遁、纳音为根本框架。
+  anchor:
+    file: sources/fulltext/selection/xieji-bianfang-shu/fulltext.md
+    start_line: 336
+    end_line: 336
+  quote: '### 二十八宿配日'
   applicable_to: []
   caveats:
   - 本卷为术数共同基础
@@ -23,8 +26,11 @@ rules:
 - rule_id: XIEJIBIANFAN-XR
   kind: doctrine
   statement: 二十四方位以八卦（壬子、癸丑、艮寅…）布全周天 360°；坐山方位避忌按"年月克山家"裁判；阳宅方位用八宅大小游年变卦。
-  anchor: null
-  quote: 二十四方位以八卦（壬子、癸丑、艮寅…）布全周天 360°；坐山方位避忌按"年月克山家"裁判；阳宅方位用八宅大小游年变卦。
+  anchor:
+    file: sources/fulltext/selection/xieji-bianfang-shu/fulltext.md
+    start_line: 4350
+    end_line: 4350
+  quote: 各時刻於各節圏上作識之聯之必成曲線也最内一層為地平二十四方位以明此圖即晷表之理日在南則影在北日在東則影在西也夜無日影以晝例夜也今依其法推得京師各節氣昏旦更時刻中星著於篇星圖步天歌并附於後
   applicable_to: []
   caveats:
   - 方位避忌涉及年家三煞、大将军、太岁等，必须由 mingli-master.selection.v1 起盘
@@ -36,8 +42,11 @@ rules:
 - rule_id: XIEJIBIANFAN-003
   kind: doctrine
   statement: 每年依年支推年家神煞：太岁、岁破、大将军、博士、蚕室、太阴、白虎、豹尾、死符、劫煞、灾煞、岁煞、大煞、金神、破败五鬼、日游神等。岁德、岁德合、岁枝德为吉，余者多凶。
-  anchor: null
-  quote: 每年依年支推年家神煞：太岁、岁破、大将军、博士、蚕室、太阴、白虎、豹尾、死符、劫煞、灾煞、岁煞、大煞、金神、破败五鬼、日游神等。岁德、岁德合、岁枝德为吉，余者多凶。
+  anchor:
+    file: sources/fulltext/selection/xieji-bianfang-shu/fulltext.md
+    start_line: 2192
+    end_line: 2192
+  quote: 選擇宗鏡曰李淳風四利三元一太嵗二太陽三喪門四太隂五官符六死符七嵗破八龍德九白虎十福德十一弔客十二病符太陽太隂龍德福德為吉餘方皆凶
   applicable_to: []
   caveats:
   - 本规则为元规则
@@ -49,8 +58,11 @@ rules:
 - rule_id: XIEJIBIANFAN-004
   kind: doctrine
   statement: 建除十二神依月支起例：寅月起建于寅，卯月起建于卯，依次类推；建/除/满/平/定/执/破/危/成/收/开/闭十二位轮排，配合月支推每日"建除"。建/除/定/执/成/开六位为吉，其余六位多凶。月厌与月支相冲。
-  anchor: null
-  quote: 建除十二神依月支起例：寅月起建于寅，卯月起建于卯，依次类推；建/除/满/平/定/执/破/危/成/收/开/闭十二位轮排，配合月支推每日"建除"。建/除/定/执/成/开六位为吉，其余六位多凶。月厌与月支相冲。
+  anchor:
+    file: sources/fulltext/selection/xieji-bianfang-shu/fulltext.md
+    start_line: 2187
+    end_line: 2187
+  quote: 通書曰六壬天罡年月例取天罡為首順行十二支以天罡配辰太乙配巳勝光配午小吉配未傳送配申從魁配酉河魁配戌登明配亥神后配子大吉配丑功曹配寅太衝配卯取神后子勝光午功曹寅傳送申天罡辰河魁戌六位為吉用三合月日時楊救貧造葬用山頭吉星修方用方道吉星如修凶方從
   applicable_to: []
   caveats:
   - 建除十二神必须由 mingli-master.selection.v1 计算
@@ -62,8 +74,11 @@ rules:
 - rule_id: XIEJIBIANFAN-005
   kind: doctrine
   statement: 嫁娶宜：天德、月德、月恩、四相、时德、生气、母仓、不将日、要安、定日、成日、开日、收日；忌：月破、月厌、月刑、月害、四废、五墓、孤辰、寡宿、十恶大败、重丧、三丧、复日、伏断、嫁娶周堂"翁姑/夫妇/父母"忌位。
-  anchor: null
-  quote: 嫁娶宜：天德、月德、月恩、四相、时德、生气、母仓、不将日、要安、定日、成日、开日、收日；忌：月破、月厌、月刑、月害、四废、五墓、孤辰、寡宿、十恶大败、重丧、三丧、复日、伏断、嫁娶周堂"翁姑/夫妇/父母"忌位。
+  anchor:
+    file: sources/fulltext/selection/xieji-bianfang-shu/fulltext.md
+    start_line: 3138
+    end_line: 3138
+  quote: 寅申月值成日丑未月值開日與月德天德合月德合併止忌行幸遣使安撫邊境選將訓兵出師上官赴任臨政親民結婚姻納采問名嫁娶求醫療病般移遠迴栽種餘皆不忌不與德神併如常例辰戌月值定日己亥月值滿日與天德月德月德合併凡所忌者則不註宜所宜者亦不註忌不與徳合併如常
   applicable_to: []
   caveats:
   - 嫁娶吉凶必须由 mingli-master.selection.v1 起盘 + 考查男女双方四柱
@@ -76,8 +91,11 @@ rules:
 - rule_id: XIEJIBIANFAN-006
   kind: doctrine
   statement: 起造宜：成日、开日、收日、天德、月德、月恩、四相、时德、生气、母仓；忌：土王用事日、月破、三煞、大耗、月家三煞方、大将军方、太岁方。动土、上梁、立柱另有专用吉凶神煞。
-  anchor: null
-  quote: 起造宜：成日、开日、收日、天德、月德、月恩、四相、时德、生气、母仓；忌：土王用事日、月破、三煞、大耗、月家三煞方、大将军方、太岁方。动土、上梁、立柱另有专用吉凶神煞。
+  anchor:
+    file: sources/fulltext/selection/xieji-bianfang-shu/fulltext.md
+    start_line: 3855
+    end_line: 3855
+  quote: 宜霜降後立春前執日危日收日
   applicable_to: []
   caveats:
   - 方位避忌（三煞、大将军、太岁）必须由 mingli-master.selection.v1 起盘
@@ -89,8 +107,11 @@ rules:
 - rule_id: XIEJIBIANFAN-007
   kind: doctrine
   statement: 丧葬宜：鸣吠日、鸣吠对日、不将日、成日、开日；忌：重丧日、三丧日、复日、伏断日、月破、月厌、地火、土禁、土王用事。
-  anchor: null
-  quote: 丧葬宜：鸣吠日、鸣吠对日、不将日、成日、开日；忌：重丧日、三丧日、复日、伏断日、月破、月厌、地火、土禁、土王用事。
+  anchor:
+    file: sources/fulltext/selection/xieji-bianfang-shu/fulltext.md
+    start_line: 1484
+    end_line: 1484
+  quote: 乾坤寳典曰天道者天之元陽順理之方也其地宜興舉衆務向之上吉○廣聖歴曰天道正月九月在南方二月在西南方三月七月在北方四月十二月在西方五月在西北方六月十月在東方八月在東北方十一月在東南方也○考原曰按天道者天徳所在之方也乾坤寳典曰天徳者天之福徳也所理之方
   applicable_to: []
   caveats:
   - 现代殡葬不以此作时间决策
@@ -102,8 +123,11 @@ rules:
 - rule_id: XIEJIBIANFAN-008
   kind: doctrine
   statement: 通用宜忌总则：每日吉凶以建除 + 黄黑道 + 当日神煞综合判断。十恶大败为大凶；四废、五墓为通用凶日；天德、月德、天恩为通用吉日。
-  anchor: null
-  quote: 通用宜忌总则：每日吉凶以建除 + 黄黑道 + 当日神煞综合判断。十恶大败为大凶；四废、五墓为通用凶日；天德、月德、天恩为通用吉日。
+  anchor:
+    file: sources/fulltext/selection/xieji-bianfang-shu/fulltext.md
+    start_line: 12166
+    end_line: 12166
+  quote: 起工通用吉日 己巳辛未甲戌乙亥戊寅己夘壬午甲申乙酉戊子庚寅乙未己亥壬寅癸夘丙午戊申己酉壬子乙夘己未庚申辛酉成開日
   applicable_to: []
   caveats:
   - 必须由 mingli-master.selection.v1 综合起盘
@@ -114,8 +138,11 @@ rules:
 - rule_id: XIEJIBIANFAN-009
   kind: doctrine
   statement: 出行宜：驿马日、天马日、天德、月德、黄道吉时；忌：往亡日、归忌日、四离四绝、杨公忌。上任 / 受官宜：成日、开日、临政日、天恩日；忌：破日、死日、闭日。
-  anchor: null
-  quote: 出行宜：驿马日、天马日、天德、月德、黄道吉时；忌：往亡日、归忌日、四离四绝、杨公忌。上任 / 受官宜：成日、开日、临政日、天恩日；忌：破日、死日、闭日。
+  anchor:
+    file: sources/fulltext/selection/xieji-bianfang-shu/fulltext.md
+    start_line: 3366
+    end_line: 3366
+  quote: 按上朔為隂陽與嵗徳俱盡之日四離四絶為二氣五行分判之日晦為月盡之日故諸事不宜惟祭祀解除等事或以事神而不敢禁或以除舊而不為嫌故遇有所宜之神則不忌晦日雖不與上朔同凶然亦止宜祭祀等事餘事雖不忌亦不註宜也又上朔以年干取義晦日反支以月朔取義四離四絶以節
   applicable_to: []
   caveats:
   - 现代仅作礼仪文化参考，不构成事实判断
@@ -126,8 +153,11 @@ rules:
 - rule_id: XIEJIBIANFAN-010
   kind: doctrine
   statement: 安碓、修井、作灶、开渠、穿井、装饰、修补、葺墙等小型用事，多以通用吉日为准；特殊忌日（如井泉龙日忌穿井）需对照神煞表。
-  anchor: null
-  quote: 安碓、修井、作灶、开渠、穿井、装饰、修补、葺墙等小型用事，多以通用吉日为准；特殊忌日（如井泉龙日忌穿井）需对照神煞表。
+  anchor:
+    file: sources/fulltext/selection/xieji-bianfang-shu/fulltext.md
+    start_line: 3803
+    end_line: 3803
+  quote: 忌土府月破平日收日閉日劫煞災煞月煞月刑月厭四廢土符地囊土王用事後
   applicable_to: []
   caveats:
   - 文化参考，非事实判断
@@ -138,8 +168,11 @@ rules:
 - rule_id: XIEJIBIANFAN-011
   kind: doctrine
   statement: 牧养、纳畜、捕捉、田猎、取鱼等农事用事，多以"母仓""收日""成日"为吉，"破日""闭日""复日"为忌。
-  anchor: null
-  quote: 牧养、纳畜、捕捉、田猎、取鱼等农事用事，多以"母仓""收日""成日"为吉，"破日""闭日""复日"为忌。
+  anchor:
+    file: sources/fulltext/selection/xieji-bianfang-shu/fulltext.md
+    start_line: 2747
+    end_line: 2747
+  quote: 按天德月德乃月建三合旺氣天德合月德合與旺氣作五合皆上吉之日故所宜應如此忌畋獵取魚者恐傷生氣也舊本天德止宜興土工營宮室繕城郭月德并宜上官宴樂天德合宜祭祀祈福覃恩肆赦緩刑獄選將訓兵月德合並宜上册進表章營建宮室殊於名義不合明原引五行論則曰月德合日
   applicable_to: []
   caveats:
   - 现代农业不以此作时间决策
@@ -151,8 +184,11 @@ rules:
 - rule_id: XIEJIBIANFAN-012
   kind: doctrine
   statement: 祭祀宜：天恩、天赦、母仓、四相、月德、鸣吠对日；祈福求嗣宜：天医、月恩、生气。
-  anchor: null
-  quote: 祭祀宜：天恩、天赦、母仓、四相、月德、鸣吠对日；祈福求嗣宜：天医、月恩、生气。
+  anchor:
+    file: sources/fulltext/selection/xieji-bianfang-shu/fulltext.md
+    start_line: 3526
+    end_line: 3526
+  quote: 宜天徳月徳天徳合月徳合天赦天願月恩四相時徳天巫開日普護福生聖心益後續世
   applicable_to: []
   caveats:
   - 文化参考，非事实判断
@@ -163,8 +199,11 @@ rules:
 - rule_id: XIEJIBIANFAN-013
   kind: doctrine
   statement: 入学宜：成日、开日、定日；冠笄宜：天德、月德、生气；习艺宜：成日、开日、四相。
-  anchor: null
-  quote: 入学宜：成日、开日、定日；冠笄宜：天德、月德、生气；习艺宜：成日、开日、四相。
+  anchor:
+    file: sources/fulltext/selection/xieji-bianfang-shu/fulltext.md
+    start_line: 3606
+    end_line: 3606
+  quote: '### 入學'
   applicable_to: []
   caveats:
   - 文化参考，非事实判断
@@ -188,8 +227,11 @@ rules:
 - rule_id: XIEJIBIANFAN-015
   kind: doctrine
   statement: 沐浴、整容、剃头、整手足甲等小事，按"沐浴日""剃头日"等专用吉凶神煞查询。
-  anchor: null
-  quote: 沐浴、整容、剃头、整手足甲等小事，按"沐浴日""剃头日"等专用吉凶神煞查询。
+  anchor:
+    file: sources/fulltext/selection/xieji-bianfang-shu/fulltext.md
+    start_line: 3702
+    end_line: 3702
+  quote: 忌月建月破劫煞災煞月煞月刑月厭每月一日六日十五日十九日二十一日二十三日
   applicable_to: []
   caveats:
   - 文化参考，非事实判断
@@ -200,8 +242,11 @@ rules:
 - rule_id: XIEJIBIANFAN-016
   kind: doctrine
   statement: 求医疗病、针灸、服药宜：天医、月恩、四相、生气；忌：复日、四废、十恶大败。
-  anchor: null
-  quote: 求医疗病、针灸、服药宜：天医、月恩、四相、生气；忌：复日、四废、十恶大败。
+  anchor:
+    file: sources/fulltext/selection/xieji-bianfang-shu/fulltext.md
+    start_line: 3706
+    end_line: 3706
+  quote: 宜天徳月徳天徳合月徳合天赦月恩四相時徳天后除日破日天醫開日解神除神
   applicable_to: []
   caveats:
   - 现代医疗绝对不以此作时间决策
@@ -214,8 +259,11 @@ rules:
 - rule_id: XIEJIBIANFAN-017
   kind: doctrine
   statement: 本书"辨讹"卷订正《选择通书》及民间通书之讹，主要包括： - 罗天大进、走天罗地网、上吉七圣、太极贵人等"无据虚名"神煞应予废除。 - 起例口诀错谬（如某神煞起例算法错）应订正。 - "诸事不宜""百事大吉"等绝对化判语应回归"具体宜忌"。 - 所有择日不可"以吉避吉、以凶避凶"，应按事择日。
-  anchor: null
-  quote: 本书"辨讹"卷订正《选择通书》及民间通书之讹，主要包括： - 罗天大进、走天罗地网、上吉七圣、太极贵人等"无据虚名"神煞应予废除。 - 起例口诀错谬（如某神煞起例算法错）应订正。 - "诸事不宜""百事大吉"等绝对化判语应回归"具体宜忌"。 - 所有择日不可"以吉避吉、以凶避凶"，应按事择日。
+  anchor:
+    file: sources/fulltext/selection/xieji-bianfang-shu/fulltext.md
+    start_line: 3041
+    end_line: 3041
+  quote: 神併而仍諸事皆忌也隂陽交破陽破隂衝詳月厭條下舊本不忌嫁娶經絡而忌沐浴葢嫁娶舊止宜不將日又忌章光無翹伏斷歸忌紅沙若再忌月破等日恐致無日可用是不得已為權宜之術耳今按章光無翹等皆俗説拘於俗忌而不避大凶其所為權宜者殊為未當且按監本通書及各坊本皆云嫁
   applicable_to: []
   caveats:
   - 本规则为本书最大特色

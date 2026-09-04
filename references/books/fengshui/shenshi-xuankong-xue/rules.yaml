@@ -10,8 +10,11 @@ rules:
 - rule_id: XK
   kind: doctrine
   statement: 本 pack 是公开网页转写层，不是 1935 民国排印本逐页校本。
-  anchor: null
-  quote: 本 pack 是公开网页转写层，不是 1935 民国排印本逐页校本。
+  anchor:
+    file: sources/fulltext/fengshui/shenshi-xuankong-xue/fulltext.md
+    start_line: 29
+    end_line: 29
+  quote: 余以葬事，涉猎地理诸书，觉其说庞杂，有歧之又歧之慨！及读《沈氏玄空学》，江迂生太史《序》曰：“峦头征实，古今无伪书；理气课虚，古今多伪诀。”信哉斯言！然后知余向之未始学，学自今始也。窥竹礽先生之学，窃以为先生当世衰学晦之际，得“天人合一”之旨，毅然有澄清天下之志，可谓观止矣！
   applicable_to: []
   caveats:
   - 不得把图像页或未结构化表格当作完成规则
@@ -22,8 +25,11 @@ rules:
 - rule_id: SHENSHIXUANK-XK
   kind: doctrine
   statement: 沈氏玄空重九星、元运、山向、紫白、挨星等理气框架。
-  anchor: null
-  quote: 沈氏玄空重九星、元运、山向、紫白、挨星等理气框架。
+  anchor:
+    file: sources/fulltext/fengshui/shenshi-xuankong-xue/fulltext.md
+    start_line: 1189
+    end_line: 1189
+  quote: 祖绵谨案：仲山《阴宅秘断》第十六图“稽中堂祖墓”，子午兼壬丙，坐山挨星是八，乃山上飞星不用八，而用七入中，盖寻替当求同元，子午兼向天元龙也。八之天元为艮，“艮丙辛，位位是破军”，故以七入中。玄空重流行之气，艮属阳，故顺行耳。此以山用替也。
   applicable_to: []
   caveats:
   - 不能替代建筑安全、法律、工程和现实居住判断
@@ -34,8 +40,11 @@ rules:
 - rule_id: SHENSHIXUANK-003
   kind: doctrine
   statement: 阴宅秘断、阳宅秘断是历史案例叙述，不能用来承诺现实应验。
-  anchor: null
-  quote: 阴宅秘断、阳宅秘断是历史案例叙述，不能用来承诺现实应验。
+  anchor:
+    file: sources/fulltext/fengshui/shenshi-xuankong-xue/fulltext.md
+    start_line: 3711
+    end_line: 3711
+  quote: '## SXK-113 阳宅秘断（计十七条）'
   applicable_to: []
   caveats:
   - 涉及丁财、灾祸、疾病、死亡、官讼等内容必须安全改写
@@ -46,8 +55,11 @@ rules:
 - rule_id: SHENSHIXUANK-004
   kind: doctrine
   statement: 九运挨星图、分金表等章节含图像证据，当前未完全结构化。
-  anchor: null
-  quote: 九运挨星图、分金表等章节含图像证据，当前未完全结构化。
+  anchor:
+    file: sources/fulltext/fengshui/shenshi-xuankong-xue/fulltext.md
+    start_line: 4016
+    end_line: 4016
+  quote: 下诀：“一坎、二坤、三震、四巽、五中、六乾、七兑、八艮、九离。”一为壬子癸，二为未坤申，三为甲卯乙，四为辰巽巳，五为戊己，六为戌乾亥，七为庚酉辛，八为丑艮寅，九为丙午丁。以上二十四山分为天、人、地三元。
   applicable_to: []
   caveats:
   - 不得仅凭章节标题输出完整图表规则

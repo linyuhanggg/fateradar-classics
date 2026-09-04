@@ -10,8 +10,11 @@ rules:
 - rule_id: BSZZ
   kind: doctrine
   statement: 六爻投掷自下而上记录，三掷先成内卦。
-  anchor: null
-  quote: 六爻投掷自下而上记录，三掷先成内卦。
+  anchor:
+    file: sources/fulltext/divination/bushi-zhengzong/fulltext.md
+    start_line: 307
+    end_line: 307
+  quote: BSZZ-0226. [part=1 local=226] 阳卦由初（下而上）起装至六爻
   applicable_to: []
   caveats:
   - 仅作起卦方法，不授权吉凶判断

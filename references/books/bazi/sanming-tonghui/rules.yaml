@@ -10,8 +10,11 @@ rules:
 - rule_id: R-01
   kind: doctrine
   statement: 五行各有生数与成数（水一六、火二七、木三八、金四九、土五十）；命理依此分阴阳与配数。
-  anchor: null
-  quote: 五行各有生数与成数（水一六、火二七、木三八、金四九、土五十）；命理依此分阴阳与配数。
+  anchor:
+    file: sources/fulltext/bazi/sanming-tonghui/fulltext.md
+    start_line: 1119
+    end_line: 1119
+  quote: 或問十干必隔六位一合何也余答曰天地之數各不過五上五位為生數下五位為成數生數與成數相遇然後合天一生壬地二生丁天三生甲地四生辛天五生戊地六成癸天七成丙地八成乙天九成庚地十成巳天一數見地二數然後合所以必隔六也易曰天數五地數五五位相得而各有合是也五
   applicable_to: []
   caveats:
   - 本规则属理论铺垫，不直接用于具体断命
@@ -23,8 +26,11 @@ rules:
 - rule_id: SANMINGTONGH-R-01
   kind: doctrine
   statement: 相生：木→火→土→金→水→木；相克：木克土、土克水、水克火、火克金、金克木。
-  anchor: null
-  quote: 相生：木→火→土→金→水→木；相克：木克土、土克水、水克火、火克金、金克木。
+  anchor:
+    file: sources/fulltext/bazi/sanming-tonghui/fulltext.md
+    start_line: 4234
+    end_line: 4234
+  quote: 〔古歌曰〕生年遁數逄癸亥生月又遁見甲寅從日推之逄辛未此般格局有功名如陳右相癸已癸亥甲寅辛未為入格
   applicable_to: []
   caveats:
   - 单纯生克不等于吉凶
@@ -36,8 +42,11 @@ rules:
 - rule_id: SANMINGTONGH-003
   kind: doctrine
   statement: 六十甲子各配纳音五行取象（海中金、炉中火、大林木、路旁土、剑锋金、山头火、涧下水、城头土、白腊金、杨柳木、泉中水、屋上土、霹雳火、松柏木、流下水、砂石金、山下火、平地木、壁上土、金箔金、灯头火、天河水、大驿土、钗钏金、桑柘木、柘榴木、大海水、石榴木、大海水），30组纳音以象喻命。
-  anchor: null
-  quote: 六十甲子各配纳音五行取象（海中金、炉中火、大林木、路旁土、剑锋金、山头火、涧下水、城头土、白腊金、杨柳木、泉中水、屋上土、霹雳火、松柏木、流下水、砂石金、山下火、平地木、壁上土、金箔金、灯头火、天河水、大驿土、钗钏金、桑柘木、柘榴木、大海水、石榴木、大海水），30组纳音以象喻命。
+  anchor:
+    file: sources/fulltext/bazi/sanming-tonghui/fulltext.md
+    start_line: 175
+    end_line: 175
+  quote: 甲子金〔為寶物喜金木旺地進神喜福星平頭懸針破字〕
   applicable_to: []
   caveats:
   - 纳音在现代子平中已很少使用
@@ -49,8 +58,11 @@ rules:
 - rule_id: SANMINGTONGH-004
   kind: doctrine
   statement: 六十甲子各有五行性质与吉凶倾向，如甲子乙丑海中金（藏而不露）、丙寅丁卯炉中火（炎上）等；可为年命/日柱论命提供甲子级判词。
-  anchor: null
-  quote: 六十甲子各有五行性质与吉凶倾向，如甲子乙丑海中金（藏而不露）、丙寅丁卯炉中火（炎上）等；可为年命/日柱论命提供甲子级判词。
+  anchor:
+    file: sources/fulltext/bazi/sanming-tonghui/fulltext.md
+    start_line: 8189
+    end_line: 8189
+  quote: 〔交互有意如丙午見壬子各有所賴丙用癸官壬用丁財已官㸔餘神扶何者為急何者非急拱夾雖真如乙人遇癸未乙酉二位明見拱夾甲申之真官貴氣無疑或餘神埋藏火神倘遇嵗運見火見庚或見填實其位發禍何可勝言哉〕
   applicable_to: []
   caveats:
   - 六十甲子判词属古法年命体系
@@ -62,8 +74,11 @@ rules:
 - rule_id: R-02
   kind: doctrine
   statement: 阳干顺行十二宫，阴干逆行十二宫；如甲长生在亥，乙长生在午（与寄生十二宫相配）。
-  anchor: null
-  quote: 阳干顺行十二宫，阴干逆行十二宫；如甲长生在亥，乙长生在午（与寄生十二宫相配）。
+  anchor:
+    file: sources/fulltext/bazi/sanming-tonghui/fulltext.md
+    start_line: 1080
+    end_line: 1080
+  quote: 夫太嵗者乃一嵗之主宰諸神之領䄂其説有二如四柱中生年曰當生太嵗如逐年輪轉曰逰行大歳當生太嵗乃終身之主其理巳論於前其逐年太嵗逰行十二宫定一年之禍福為四時之吉凶經云太嵗乃衆煞之主入命未必為凶如逢戰闘之鄉必主刑於本命葢太嵗如君也大運如臣也如君臣和悦
   applicable_to: []
   caveats:
   - 阴干逆行说后世有争议
@@ -75,8 +90,11 @@ rules:
 - rule_id: SANMINGTONGH-R-02
   kind: doctrine
   statement: 月令所藏天干分本气、中气、余气，按节气分日数分配司令；取格优先看本气透干，本气不透看中气、余气。
-  anchor: null
-  quote: 月令所藏天干分本气、中气、余气，按节气分日数分配司令；取格优先看本气透干，本气不透看中气、余气。
+  anchor:
+    file: sources/fulltext/bazi/sanming-tonghui/fulltext.md
+    start_line: 3218
+    end_line: 3218
+  quote: 財豐亦能旺官以財盛自生官運行旺相福禄俱臻一遇官鄉便可發福如柱中原帶官星便作好命看若兄弟輩出縱入官鄉發福必偏財月令所帶最重不宜柱中多逢年上偏財生旺月令柱中通氣主受伯叔祖考産䕃豐隆或外祖產業恩養大要日主興隆財星生旺運向財旺之鄉發福若見刑衝破害比
   applicable_to: []
   caveats:
   - 本气分配日数古今略有差异
@@ -88,8 +106,11 @@ rules:
 - rule_id: SANMINGTONGH-007
   kind: doctrine
   statement: 八字月柱以节气分界（立春、惊蛰…），不以朔望分界；节气前后须严格区分。
-  anchor: null
-  quote: 八字月柱以节气分界（立春、惊蛰…），不以朔望分界；节气前后须严格区分。
+  anchor:
+    file: sources/fulltext/bazi/sanming-tonghui/fulltext.md
+    start_line: 908
+    end_line: 908
+  quote: 立節中氣其春秋有分而不言至夏冬有至而不言分及夫雨水驚蟄以降二十四氣分屬有名亦必有所以為名者何言乎四立者四時之節氣也丑之終寅之始則為節月之半則為中二分者隂陽相半之謂也二至者至有二義子至已為六陽午至亥為六隂至者介乎巳午亥子之間也冬至亥隂極故曰子
   applicable_to: []
   caveats:
   - 节气分界事实层
@@ -114,8 +135,11 @@ rules:
 - rule_id: SANMINGTONGH-009
   kind: doctrine
   statement: 大运从月柱起；男阳女阴顺行，男阴女阳逆行；起运岁数按生时距前/后节气日数除三。
-  anchor: null
-  quote: 大运从月柱起；男阳女阴顺行，男阴女阳逆行；起运岁数按生时距前/后节气日数除三。
+  anchor:
+    file: sources/fulltext/bazi/sanming-tonghui/fulltext.md
+    start_line: 1012
+    end_line: 1012
+  quote: 傷本主無夀被形煞及生月日時者主損本氣破傷祖業六親冷淡蹇滯之命也月為運元行運從月建起若日時是本生年之福宜歸運元生旺處以扶助之故官印貴人禄馬財星宜在運元生旺處為佳若日時是本生年之禍宜歸運元剥尅處以潜濟之故土多窒塞宜歸運元疏通處水多泛濫宜歸運元歸
   applicable_to: []
   caveats:
   - 起运岁数为事实层
@@ -127,8 +151,11 @@ rules:
 - rule_id: SANMINGTONGH-010
   kind: doctrine
   statement: 流年为太岁；命局与太岁冲、刑、合者皆有应；不限于值太岁、冲太岁。
-  anchor: null
-  quote: 流年为太岁；命局与太岁冲、刑、合者皆有应；不限于值太岁、冲太岁。
+  anchor:
+    file: sources/fulltext/bazi/sanming-tonghui/fulltext.md
+    start_line: 1011
+    end_line: 1011
+  quote: 五十年若初限值禄馬貴神不犯空亡截路交退伏神便於初限進逹中限如初限便當中年成立末限如中限便當晚年享通是四柱中分三主三限可見當均重也又曰年為太嵗主人一生禍福如當生太嵗是金是木要日月時相生相應造化和順則根基牢固一生卓立成就若支干五行不順反尅衝破為
   applicable_to: []
   caveats:
   - 现代流派"犯太岁"包装多有夸大
@@ -140,8 +167,11 @@ rules:
 - rule_id: SANMINGTONGH-011
   kind: doctrine
   statement: 大运与流年合参，看与命局喜忌的生克冲合；岁运并临往往应大事。
-  anchor: null
-  quote: 大运与流年合参，看与命局喜忌的生克冲合；岁运并临往往应大事。
+  anchor:
+    file: sources/fulltext/bazi/sanming-tonghui/fulltext.md
+    start_line: 1091
+    end_line: 1091
+  quote: 夫太嵗者年中天子一嵗諸神煞之尊綂正方位廽送六氣遷運四時以成嵗功至尊無上若人遇尅衝壓伏皆為不祥之兆運者恊和二十四氣般運一生休咎扶持四柱輔弼三元運與流年二者相為表裏乃人命禍福死生所係嵗用天元運用地支凡行好運而日干傷流年天元為禍輕若行不好運及脱財
   applicable_to: []
   caveats:
   - 具体事件应期需配合神煞与十神
@@ -153,8 +183,11 @@ rules:
 - rule_id: SANMINGTONGH-012
   kind: doctrine
   statement: 甲己合土、乙庚合金、丙辛合水、丁壬合木、戊癸合火。
-  anchor: null
-  quote: 甲己合土、乙庚合金、丙辛合水、丁壬合木、戊癸合火。
+  anchor:
+    file: sources/fulltext/bazi/sanming-tonghui/fulltext.md
+    start_line: 7884
+    end_line: 7884
+  quote: 凡命取五行真氣交互如辛亥金人得丁巳土有丁壬合真木往來有丙辛合真水往來丁巳土人得癸亥水有戊癸合真火往來有丁壬合真木往來如戊戌癸亥丁巳辛亥交互真氣全乃宰相命也戊午火得壬子木中有丁壬真木戊癸真火丙申火得乙酉水中有丙辛真水乙庚真金庚寅得己邜土中有甲
   applicable_to: []
   caveats:
   - 合不一定化
@@ -166,8 +199,11 @@ rules:
 - rule_id: SANMINGTONGH-013
   kind: doctrine
   statement: 天干五合化气需化神当令、四柱有化神之根、不被冲克破合者方真化。
-  anchor: null
-  quote: 天干五合化气需化神当令、四柱有化神之根、不被冲克破合者方真化。
+  anchor:
+    file: sources/fulltext/bazi/sanming-tonghui/fulltext.md
+    start_line: 4111
+    end_line: 4111
+  quote: 謂年月日時胎再加年日禄馬或命宫合起十二支神更天干五位合全十干為貴如甲子丁卯戊寅辛酉戊午胎巳上安命之類余命壬午癸丑庚寅丙戌甲辰胎禄馬在申是也〔育吾自記〕
   applicable_to: []
   caveats:
   - 化气真伪是命理大变量
@@ -191,8 +227,11 @@ rules:
 - rule_id: SANMINGTONGH-015
   kind: doctrine
   statement: 申子辰合水局、亥卯未合木局、寅午戌合火局、巳酉丑合金局；三合局成时五行势力大增。
-  anchor: null
-  quote: 申子辰合水局、亥卯未合木局、寅午戌合火局、巳酉丑合金局；三合局成时五行势力大增。
+  anchor:
+    file: sources/fulltext/bazi/sanming-tonghui/fulltext.md
+    start_line: 3552
+    end_line: 3552
+  quote: 如甲日生人柱無酉辛丑有卯多衝酉巳酉合丑為甲日正官喜壬癸生助忌酉辛塡實若止一卯字再有刑合起亦為好命乙日生人柱無申庚却有寅衝申子辰合拱或已刑出為乙正官喜壬癸生助忌申庚塡實戊日生人柱無卯乙却有酉衝卯亥未合卯戊得官星喜壬癸財丙丁印忌見卯乙巳日生人柱
   applicable_to: []
   caveats:
   - 三合需三支齐
@@ -204,8 +243,11 @@ rules:
 - rule_id: SANMINGTONGH-016
   kind: doctrine
   statement: 子未、丑午、寅巳、卯辰、申亥、酉戌相害；多主无情、不和。
-  anchor: null
-  quote: 子未、丑午、寅巳、卯辰、申亥、酉戌相害；多主无情、不和。
+  anchor:
+    file: sources/fulltext/bazi/sanming-tonghui/fulltext.md
+    start_line: 6569
+    end_line: 6569
+  quote: 己酉日甲戌時辰丑刑衝財源益進酉戌相害名利中平子月巳貴寅月官印行印運貴純乙酉年月頑暴〔一云〕孤獨離鄕
   applicable_to: []
   caveats:
   - 六害较冲、刑为轻
@@ -217,8 +259,11 @@ rules:
 - rule_id: SANMINGTONGH-017
   kind: doctrine
   statement: 寅巳申无恩之刑、丑戌未持势之刑、子卯无礼之刑；辰午酉亥自刑。
-  anchor: null
-  quote: 寅巳申无恩之刑、丑戌未持势之刑、子卯无礼之刑；辰午酉亥自刑。
+  anchor:
+    file: sources/fulltext/bazi/sanming-tonghui/fulltext.md
+    start_line: 1259
+    end_line: 1259
+  quote: 或曰三刑之法以數起之皇極中天十為煞數積數至十則畨空其數天道惡盈滿則覆故數自卯順至子子逆至卯極十數而為無禮之刑寅逆至巳巳逆至申極十數而為無恩之刑丑順至戍戍順至未極十數而為恃勢之刑七則衝十則刑六則合一理之自然也然寅巳申何以謂之無恩葢寅中有甲木刑
   applicable_to: []
   caveats:
   - 刑入命未必凶，需结合用神喜忌
@@ -230,8 +275,11 @@ rules:
 - rule_id: SANMINGTONGH-018
   kind: doctrine
   statement: 子午、丑未、寅申、卯酉、辰戌、巳亥相冲；冲动、移动、变化之象。
-  anchor: null
-  quote: 子午、丑未、寅申、卯酉、辰戌、巳亥相冲；冲动、移动、变化之象。
+  anchor:
+    file: sources/fulltext/bazi/sanming-tonghui/fulltext.md
+    start_line: 1158
+    end_line: 1158
+  quote: 正月節   二月節   三月節
   applicable_to: []
   caveats:
   - 冲不一定凶
@@ -244,8 +292,11 @@ rules:
 - rule_id: SANMINGTONGH-019
   kind: doctrine
   statement: 十干分配天文（甲雷、乙风、丙日、丁星、戊霞、己云、庚月、辛霜、壬雨、癸露）；十二支分配地理（子齐青州、丑吴越扬州等）。古法以天文地理取象配命。
-  anchor: null
-  quote: 十干分配天文（甲雷、乙风、丙日、丁星、戊霞、己云、庚月、辛霜、壬雨、癸露）；十二支分配地理（子齐青州、丑吴越扬州等）。古法以天文地理取象配命。
+  anchor:
+    file: sources/fulltext/bazi/sanming-tonghui/fulltext.md
+    start_line: 824
+    end_line: 824
+  quote: 子為墨池子在正北方屬水色象墨故有墨池之象凡命逢子年生者時喜見癸亥謂之水歸大海又謂之雙魚逰墨必為文章士矣
   applicable_to: []
   caveats:
   - 天文地理配干支属古法取象，现代仅作背景知识
@@ -257,8 +308,11 @@ rules:
 - rule_id: SANMINGTONGH-020
   kind: doctrine
   statement: 胎元取法：月干进一位、月支进三位（如甲子月→乙卯为胎元）；胎元代表先天根基，看命时可作辅助参考。
-  anchor: null
-  quote: 胎元取法：月干进一位、月支进三位（如甲子月→乙卯为胎元）；胎元代表先天根基，看命时可作辅助参考。
+  anchor:
+    file: sources/fulltext/bazi/sanming-tonghui/fulltext.md
+    start_line: 1023
+    end_line: 1023
+  quote: 夫胎者受形之始故易乾知太始以形言也月者成氣之時故傳曰積日為月以氣言也今談命或不以胎月為重殊不思胎月是四柱之根苗日時雖為若不犯破胎月或乘旺氣禄馬之處則為福尤多或日時之吉而為胎月所犯則吉亦歸無用是胎月最為樞要玉湖專論胎數良有以也今人多以法取胎元
   applicable_to: []
   caveats:
   - 现代八字排盘通常不排胎元柱
@@ -270,8 +324,11 @@ rules:
 - rule_id: SANMINGTONGH-021
   kind: doctrine
   statement: 坐命宫取法以月将加时辰推算得地支，再配天干；命宫辅助看命主根基与运势。
-  anchor: null
-  quote: 坐命宫取法以月将加时辰推算得地支，再配天干；命宫辅助看命主根基与运势。
+  anchor:
+    file: sources/fulltext/bazi/sanming-tonghui/fulltext.md
+    start_line: 3666
+    end_line: 3666
+  quote: 〔珞琭子云〕將星扶德天乙加臨主本休囚行藏汨沒〔子平云〕月將德合逄日貴名登八座將星正月從亥上起運行十二月一月一宫湏照臺厯每月中氣後太陽過宫方為遇將六壬月將加時正此義也正月功曹二月大衝三月天罡四月太乙五月勝光六月小吉七月傳送八月從魁九月河魁十月登明十一
   applicable_to: []
   caveats:
   - 本书"坐命宫"与紫微斗数"命宫"取法不同，不可混用
@@ -283,8 +340,11 @@ rules:
 - rule_id: SANMINGTONGH-022
   kind: doctrine
   statement: 小运以时辰为起点，男阳女阴顺行、男阴女阳逆行，逐年推排；每一年一柱，用于辅助大运看年内细节。
-  anchor: null
-  quote: 小运以时辰为起点，男阳女阴顺行、男阴女阳逆行，逐年推排；每一年一柱，用于辅助大运看年内细节。
+  anchor:
+    file: sources/fulltext/bazi/sanming-tonghui/fulltext.md
+    start_line: 4756
+    end_line: 4756
+  quote: 〔又曰〕小兒之命當論時辰為正先看關煞次看格局日主强財官旺有關無煞日主弱財官少常病易養日千弱財官多有煞有關難養夫關者何也即偏官為關偏財為煞專以日干為主取生成之數斷之關者譬如今之關隘乃險阻之地人至關非明文不敢私渡違者必致其禍小兒命犯此關則為不利柱中
   applicable_to: []
   caveats:
   - 子平后世较少用小运，现代八字以大运+流年为标准配置
@@ -296,8 +356,11 @@ rules:
 - rule_id: SANMINGTONGH-023
   kind: doctrine
   statement: 五行在节气转换中有四阶段：进气（将旺未旺）、交气（正旺）、退气（旺极将衰）、伏气（衰极潜伏）。判断五行力量需考虑节气深浅。
-  anchor: null
-  quote: 五行在节气转换中有四阶段：进气（将旺未旺）、交气（正旺）、退气（旺极将衰）、伏气（衰极潜伏）。判断五行力量需考虑节气深浅。
+  anchor:
+    file: sources/fulltext/bazi/sanming-tonghui/fulltext.md
+    start_line: 1484
+    end_line: 1484
+  quote: 官星文章不必專論印綬古人以長生學堂取生氣就學之義不必專論日干但柱中帶寅申己亥便為有學此四宮聚天地間至清之氣其中有四驛馬四刼煞皆是生發之意子午卯酉為四敗其氣濁辰戌丑未為四庫其氣雜且如月候到寅申巳亥便不寒不熱風氣自然清雅溫和凡占年月者最有力日干
   applicable_to: []
   caveats:
   - 现代多简化为旺衰二分
@@ -309,8 +372,11 @@ rules:
 - rule_id: R-03
   kind: doctrine
   statement: 日干之禄与驿马同支或邻支为禄马同乡；古以为吉象。
-  anchor: null
-  quote: 日干之禄与驿马同支或邻支为禄马同乡；古以为吉象。
+  anchor:
+    file: sources/fulltext/bazi/sanming-tonghui/fulltext.md
+    start_line: 1424
+    end_line: 1424
+  quote: 己絶忌癸有暗合遇卯死忌辛人遇午敗忌遇寅絶忌以上六貴神皆與忌神同位生月日時遇之可得二三分福力若與驛馬同位及帶正天乙本家祿正官正印干合有輔助者加倍據此分是貴人忌死絶而不思丙丁壬癸正以死絶為貴也
   applicable_to: []
   caveats:
   - 神煞作辅
@@ -323,8 +389,11 @@ rules:
 - rule_id: SANMINGTONGH-R-03
   kind: doctrine
   statement: 甲戊庚日见牛（丑）羊（未）；乙己日见鼠（子）猴（申）；丙丁日见猪（亥）鸡（酉）；壬癸日见兔（卯）蛇（巳）；辛日见马（午）虎（寅）。
-  anchor: null
-  quote: 甲戊庚日见牛（丑）羊（未）；乙己日见鼠（子）猴（申）；丙丁日见猪（亥）鸡（酉）；壬癸日见兔（卯）蛇（巳）；辛日见马（午）虎（寅）。
+  anchor:
+    file: sources/fulltext/bazi/sanming-tonghui/fulltext.md
+    start_line: 3815
+    end_line: 3815
+  quote: 甲乙日生亥卯未月時逄寅卯丙丁日生寅午戌月時逄巳午戊巳日生巳午月時逄辰戌丑未庚辛日生已酉丑月時逄申酉壬癸日生申子辰月時逄亥子得此為主本得地歸方就局倚勢自强主人身健一生自要安居遠害退身避位名輕利薄去塵脱俗人也若甲乙人在寅卯丙丁人在巳午之類為五行
   applicable_to: []
   caveats:
   - 贵人入命主有解厄之力
@@ -336,8 +405,11 @@ rules:
 - rule_id: SANMINGTONGH-026
   kind: doctrine
   statement: 阳干见刃位（甲见卯、丙见午、戊见午、庚见酉、壬见子）为阳刃；阴干一般不取刃。
-  anchor: null
-  quote: 阳干见刃位（甲见卯、丙见午、戊见午、庚见酉、壬见子）为阳刃；阴干一般不取刃。
+  anchor:
+    file: sources/fulltext/bazi/sanming-tonghui/fulltext.md
+    start_line: 3465
+    end_line: 3465
+  quote: 重重又見財富貴饒金帛此之謂也或曰甲戊庚見刄逄衝發禍多騐壬丙逄刄見子午衝多無禍以丙見子壬見午俱為正官反作貴氣論也又曰甲以巳為妻財四柱却有卯乙巳土受傷不能扶甲故主剥喪妻子歲運復臨刼刃旺相誠所不免如别位逄庚辛酉申庚能邀乙為妻即成眷屬不為甲之七煞辛
   applicable_to: []
   caveats:
   - 阳刃过旺需食伤、官煞制
@@ -349,8 +421,11 @@ rules:
 - rule_id: SANMINGTONGH-027
   kind: doctrine
   statement: 以日柱所属旬定旬空（甲子旬空戌亥…）；空亡入命主无依、有变。
-  anchor: null
-  quote: 以日柱所属旬定旬空（甲子旬空戌亥…）；空亡入命主无依、有变。
+  anchor:
+    file: sources/fulltext/bazi/sanming-tonghui/fulltext.md
+    start_line: 9493
+    end_line: 9493
+  quote: 時歸日祿生平不喜官星
   applicable_to: []
   caveats:
   - 空亡不必凶
@@ -362,8 +437,11 @@ rules:
 - rule_id: SANMINGTONGH-028
   kind: doctrine
   statement: 神煞作事项点缀与应期辅证，不作主格主用；神煞与格局/用神冲突时以格局/用神为主。
-  anchor: null
-  quote: 神煞作事项点缀与应期辅证，不作主格主用；神煞与格局/用神冲突时以格局/用神为主。
+  anchor:
+    file: sources/fulltext/bazi/sanming-tonghui/fulltext.md
+    start_line: 3470
+    end_line: 3470
+  quote: 也不喜刑衝破害三㑹六合要有七煞相制再行官印鄉便為好命賦云日刄大忌衝合喜官煞相制合者㓙遇印者吉有煞無刃施為有勇無威有刄無煞作事濁而不顯無煞遇煞竊恐禍患相侵有刄遇刄須忌災危相犯刄生身死其年難作吉推財旺官傷此歲不作㓙㫁又曰戊午日歲月見火多則以印綬
   applicable_to: []
   caveats:
   - 本书神煞条目多达数十种
@@ -375,8 +453,11 @@ rules:
 - rule_id: SANMINGTONGH-029
   kind: doctrine
   statement: 金舆贵人取法以日干查地支（甲日见辰、乙日见巳等）；金舆主车驾出行之吉、迁动之利。
-  anchor: null
-  quote: 金舆贵人取法以日干查地支（甲日见辰、乙日见巳等）；金舆主车驾出行之吉、迁动之利。
+  anchor:
+    file: sources/fulltext/bazi/sanming-tonghui/fulltext.md
+    start_line: 785
+    end_line: 785
+  quote: 地支之用不比天干動静不同圓方逈異然五行所屬則一而所處之地不一且如在年則有在年之論在月則有在月之論在日時則有日時之論其隂陽輕重剛柔豈可泥於一體今當以月提為主所藏所用要見何神所耗所嫌要係何物凡四柱之神較量深淺而用子十二支之魁溪澗江洋之水乃戊土旺
   applicable_to: []
   caveats:
   - 金舆为吉神，但力量较轻，不作主线判断
@@ -387,8 +468,11 @@ rules:
 - rule_id: SANMINGTONGH-030
   kind: doctrine
   statement: 天上三奇甲戊庚、地下三奇乙丙丁、人中三奇壬癸辛；三奇入命需顺排不杂（天干连续）方为真，主特异才能。
-  anchor: null
-  quote: 天上三奇甲戊庚、地下三奇乙丙丁、人中三奇壬癸辛；三奇入命需顺排不杂（天干连续）方为真，主特异才能。
+  anchor:
+    file: sources/fulltext/bazi/sanming-tonghui/fulltext.md
+    start_line: 9509
+    end_line: 9509
+  quote: 丙丁反尅庚辛壬癸遇之不畏
   applicable_to: []
   caveats:
   - 三奇贵人条件苛刻（需顺排+不杂+不逢冲破）
@@ -401,8 +485,11 @@ rules:
 - rule_id: SANMINGTONGH-031
   kind: doctrine
   statement: 太极贵人取法以日干年干查地支（甲乙见子午、丙丁见卯酉等）；主智慧、玄学、学术天赋。
-  anchor: null
-  quote: 太极贵人取法以日干年干查地支（甲乙见子午、丙丁见卯酉等）；主智慧、玄学、学术天赋。
+  anchor:
+    file: sources/fulltext/bazi/sanming-tonghui/fulltext.md
+    start_line: 7952
+    end_line: 7952
+  quote: 嵗運併臨必死㑹諸凶神惡煞勾絞元辰亡神刼煞弔客墓病死宫諸煞九死一生財官太多身弱元犯七煞身輕如丙丁日干年月時庚辛加酉運或庚辛年必死甲乙日干庚辛月時夾雜年運見庚辛必死若有救則吉無救定凶五行神煞金多夭折水盛飄流木旺則夭土多痴呆火多愚頑太過不及作此論
   applicable_to: []
   caveats:
   - 太极贵人主聪明好学，但不可单凭此断学历高低
@@ -413,8 +500,11 @@ rules:
 - rule_id: SANMINGTONGH-032
   kind: doctrine
   statement: 学堂、词馆贵人取法以日干查地支（甲见亥、乙见午等）；主文章学业功名，命带学堂词馆者多有文才。
-  anchor: null
-  quote: 学堂、词馆贵人取法以日干查地支（甲见亥、乙见午等）；主文章学业功名，命带学堂词馆者多有文才。
+  anchor:
+    file: sources/fulltext/bazi/sanming-tonghui/fulltext.md
+    start_line: 1483
+    end_line: 1483
+  quote: 子平云學堂者天地陰陽清秀之氣五行長生之神乃甲見亥乙見午等例或月時一位見者即是不必兼全更帶天乙貴如丁日酉時或酉月之類讀書人遇之主聰明智巧高科文翰更引用得地無尅壓之神及逢徳秀冠世儒業與命中財帛印食相為表裏經云生氣學堂冠世文章富貴又云學堂不必專論
   applicable_to: []
   caveats:
   - 学堂词馆为文章类神煞，现代可作学业参考但非决定性因素
@@ -437,8 +527,11 @@ rules:
 - rule_id: SANMINGTONGH-034
   kind: doctrine
   statement: 德秀贵人取法以月支查天干（寅午戌月见丙丁等）；主容貌秀美、品性端正。
-  anchor: null
-  quote: 德秀贵人取法以月支查天干（寅午戌月见丙丁等）；主容貌秀美、品性端正。
+  anchor:
+    file: sources/fulltext/bazi/sanming-tonghui/fulltext.md
+    start_line: 9066
+    end_line: 9066
+  quote: 論運者以月支為首分四時而提起五行消長
   applicable_to: []
   caveats:
   - 容貌品性类神煞，现代仅作趣味参考
@@ -449,8 +542,11 @@ rules:
 - rule_id: SANMINGTONGH-035
   kind: doctrine
   statement: 元辰（大耗）取法以年支查（子年见未、丑年见申等）；主损耗、失脱、变动。
-  anchor: null
-  quote: 元辰（大耗）取法以年支查（子年见未、丑年见申等）；主损耗、失脱、变动。
+  anchor:
+    file: sources/fulltext/bazi/sanming-tonghui/fulltext.md
+    start_line: 1662
+    end_line: 1662
+  quote: 〔屬毛頭星一名大耗〕
   applicable_to: []
   caveats:
   - 元辰为凶煞但非必应
@@ -462,8 +558,11 @@ rules:
 - rule_id: SANMINGTONGH-036
   kind: doctrine
   statement: 暗金的煞取法以年支日支查（子午年日见巳、丑未年日见酉等）；为五行金之煞气，主刑伤意外。
-  anchor: null
-  quote: 暗金的煞取法以年支日支查（子午年日见巳、丑未年日见酉等）；为五行金之煞气，主刑伤意外。
+  anchor:
+    file: sources/fulltext/bazi/sanming-tonghui/fulltext.md
+    start_line: 1007
+    end_line: 1007
+  quote: 凡論人命年月日時排成四柱遁月從年則以年為本遁時從日則以日為主古法以年看子平以日看本此如人本木而得夘月以乗之主金而得酉時以乗之謂之本主乗旺氣如本水而得甲申丙子壬戌癸亥月主火而得丙寅戊午甲辰乙巳時本木而得己亥辛卯甲寅庚寅月主金而得辛巳癸酉庚申壬
   applicable_to: []
   caveats:
   - 煞名虽凶，需有刑冲引动方验
@@ -475,8 +574,11 @@ rules:
 - rule_id: SANMINGTONGH-037
   kind: doctrine
   statement: 灾煞取法为三合局之沐浴位（申子辰见午、亥卯未见酉等）；主突发灾祸、意外变动。
-  anchor: null
-  quote: 灾煞取法为三合局之沐浴位（申子辰见午、亥卯未见酉等）；主突发灾祸、意外变动。
+  anchor:
+    file: sources/fulltext/bazi/sanming-tonghui/fulltext.md
+    start_line: 9683
+    end_line: 9683
+  quote: 〔得局三合局也歸垣干歸禄也此言人命要生旺成局勢為福若得局失垣雖天干類象而地支三合却為日干休囚死絶之地亦平生不遂若得局又歸垣如五星升殿入垣乃得地得時之謂也决主早歳發福曲直潤下等格即得局歸垣〕
   applicable_to: []
   caveats:
   - 灾煞需有冲克引动方验
@@ -488,8 +590,11 @@ rules:
 - rule_id: SANMINGTONGH-038
   kind: doctrine
   statement: 六厄煞取法以日干查地支（甲见卯、乙见辰等）；主困厄阻滞。
-  anchor: null
-  quote: 六厄煞取法以日干查地支（甲见卯、乙见辰等）；主困厄阻滞。
+  anchor:
+    file: sources/fulltext/bazi/sanming-tonghui/fulltext.md
+    start_line: 1682
+    end_line: 1682
+  quote: 厄者遭乎難者也常居馬前一辰刼後二辰死而不生謂之厄申子辰水局水死在卯寅午戌火局火死在酉亥卯未木局木死在午巳酉丑金局金死在子所以為厄若有救䕶有扶持逢生旺兼貴氣相助則吉究竟一生蹇滯壺中子云六厄為剝官之煞李廣不封侯是也
   applicable_to: []
   caveats:
   - 六厄为凶煞但力量较轻
@@ -514,8 +619,11 @@ rules:
 - rule_id: SANMINGTONGH-040
   kind: doctrine
   statement: 十恶大败日以年柱干支查日柱，特定日柱（甲辰、乙巳、丙申等十日）为十恶大败；主破败不顺、仓库空乏。
-  anchor: null
-  quote: 十恶大败日以年柱干支查日柱，特定日柱（甲辰、乙巳、丙申等十日）为十恶大败；主破败不顺、仓库空乏。
+  anchor:
+    file: sources/fulltext/bazi/sanming-tonghui/fulltext.md
+    start_line: 1712
+    end_line: 1712
+  quote: 十惡者譬律法中人犯十惡重罪在所不赦大敗者譬兵法中與敵交戰大敗無一生還喻極㐫也六甲旬中十個日値祿入空亡如甲辰乙巳甲以寅為祿乙以卯為祿甲辰旬以寅卯為空亡壬申者壬以亥為祿甲子旬以亥為空亡餘如丙申丁亥庚辰戊戌癸亥辛巳乙丑等日皆倣此命中犯者當以日上見
   applicable_to: []
   caveats:
   - 古法日柱禁忌，现代仅作参考
@@ -540,8 +648,11 @@ rules:
 - rule_id: SANMINGTONGH-R-05
   kind: doctrine
   statement: 正官一位清纯而有印护或财生为佳；多见正官则反成混杂。
-  anchor: null
-  quote: 正官一位清纯而有印护或财生为佳；多见正官则反成混杂。
+  anchor:
+    file: sources/fulltext/bazi/sanming-tonghui/fulltext.md
+    start_line: 2947
+    end_line: 2947
+  quote: 丙為合乙為刼丁為傷克庚為混雜湏是官星純一五行和粹方以正官論若見前忌柱中雖有物去之亦不純粹若官星結局又有財資扶非行身旺地不發官止一二無財有印身弱無妨若四柱皆歸背禄宜推嵗運向背財官旺地何如若財官滿目日主衰弱不能負荷徒勞無用運至財煞旺鄉多染癆瘵但
   applicable_to: []
   caveats:
   - 精细成败救应需 `bazi/ziping-zhenquan`
@@ -552,8 +663,11 @@ rules:
 - rule_id: SANMINGTONGH-043
   kind: doctrine
   statement: 七煞为忌神，需食神制、印化、合留三法之一；制化得宜则煞为权星。
-  anchor: null
-  quote: 七煞为忌神，需食神制、印化、合留三法之一；制化得宜则煞为权星。
+  anchor:
+    file: sources/fulltext/bazi/sanming-tonghui/fulltext.md
+    start_line: 9605
+    end_line: 9605
+  quote: 處身僧道之首用煞反輕受職諫之除偏官得地〔七煞為權星又為孤星身煞兩強七煞有制身弱從煞皆貴然多為臺諫之官若身旺煞輕更入清竒必為僧道之首矣〕
   applicable_to: []
   caveats:
   - 制化不当则反伤身
@@ -565,8 +679,11 @@ rules:
 - rule_id: SANMINGTONGH-044
   kind: doctrine
   statement: 正官与七煞同现谓之官煞混杂；杂则不清，需去留得宜。
-  anchor: null
-  quote: 正官与七煞同现谓之官煞混杂；杂则不清，需去留得宜。
+  anchor:
+    file: sources/fulltext/bazi/sanming-tonghui/fulltext.md
+    start_line: 2037
+    end_line: 2037
+  quote: 之地若四柱庚辛俱見謂之官煞混雜無去留制伏反主貧賤如只有庚不見制伏當作鬼論分身鬼强弱定其吉㐫壽夭若制伏得中作偏官論太過反不為福更㸔日干於所生月内有力無力有助無助分節氣淺深輕重言之喜行身旺鬼衰運忌身衰鬼旺運
   applicable_to: []
   caveats:
   - 去留之法见 R-05-06
@@ -577,8 +694,11 @@ rules:
 - rule_id: SANMINGTONGH-045
   kind: doctrine
   statement: 日主无根极弱、煞极旺无制、行运扶煞者，弃命从煞为格成；从而反贵。
-  anchor: null
-  quote: 日主无根极弱、煞极旺无制、行运扶煞者，弃命从煞为格成；从而反贵。
+  anchor:
+    file: sources/fulltext/bazi/sanming-tonghui/fulltext.md
+    start_line: 3120
+    end_line: 3120
+  quote: 獨歩云棄命從煞須要㑹煞從財忌煞從煞喜財㑹逄根氣命損無猜葢言從煞格以煞神太重身無所歸不得已從之要行煞旺及財鄉四柱無一㸃比肩印綬方論如遇運扶身旺與煞為敵從煞不專故為禍患經云棄命從煞論剛柔言棄天干從地支隨五行性情隂干從地支煞純者多貴以隂柔能從物也
   applicable_to: []
   caveats:
   - 从格判定严格
@@ -590,8 +710,11 @@ rules:
 - rule_id: SANMINGTONGH-046
   kind: doctrine
   statement: 官煞混杂时，凭月令、合冲、制化决定去官留煞或去煞留官；保留者为格之主。
-  anchor: null
-  quote: 官煞混杂时，凭月令、合冲、制化决定去官留煞或去煞留官；保留者为格之主。
+  anchor:
+    file: sources/fulltext/bazi/sanming-tonghui/fulltext.md
+    start_line: 491
+    end_line: 491
+  quote: 吉釵釧成器相見亦宜若柱有未成之金無加於劒故最忌之見則性蒙猖狂戌則金混雜時中却宜火勝大抵劒鋒乃金之最利者只宜水潤不宜火刑如見寅巳三刑全者大凶
   applicable_to: []
   caveats:
   - 去留判断细节较多
@@ -603,8 +726,11 @@ rules:
 - rule_id: SANMINGTONGH-047
   kind: doctrine
   statement: 正官诸子格：天福贵人（官星得福神护）、天元作禄（日坐禄，身强官得用）、岁德正官（年柱正官，祖上官贵）、时上正官（时柱正官，晚来得贵）。共性为官星在特定柱位得用，忌伤官克破。
-  anchor: null
-  quote: 正官诸子格：天福贵人（官星得福神护）、天元作禄（日坐禄，身强官得用）、岁德正官（年柱正官，祖上官贵）、时上正官（时柱正官，晚来得贵）。共性为官星在特定柱位得用，忌伤官克破。
+  anchor:
+    file: sources/fulltext/bazi/sanming-tonghui/fulltext.md
+    start_line: 2970
+    end_line: 2970
+  quote: 謂官星坐處見禄如人有官得禄莫非天福甲生人以辛為官辛禄在酉是以甲人見酉乙人見申之例甲用辛官柱有辛酉更得福神助之生旺有氣為佳一名禄干福神遇者主科名巍峩官職尊崇多掌絲綸文翰之美
   applicable_to: []
   caveats:
   - 正官子格以月令正官格为基础，柱位不同仅影响应期和来源，不改变官格本质
@@ -615,8 +741,11 @@ rules:
 - rule_id: SANMINGTONGH-048
   kind: doctrine
   statement: 官印禄库（官印禄库俱全为贵）、相刑遇贵（刑中有贵人解）、三合遇贵（三合局又遇贵人）——三者均为官星得辅助或救应的吉祥组合。
-  anchor: null
-  quote: 官印禄库（官印禄库俱全为贵）、相刑遇贵（刑中有贵人解）、三合遇贵（三合局又遇贵人）——三者均为官星得辅助或救应的吉祥组合。
+  anchor:
+    file: sources/fulltext/bazi/sanming-tonghui/fulltext.md
+    start_line: 3010
+    end_line: 3010
+  quote: 經云官中見禄庫逄財金玉自天来如甲乙逄乙丑丙丁逄庚午戊己逄壬辰庚辛見乙未壬癸逄丙戌是也一命丁丑辛亥癸酉壬戌癸用丙為財戌為財庫用戊為官戌中戊土正旺財庫生助酉為癸印丑為印庫財官印俱逄庫旺無衝破為貴
   applicable_to: []
   caveats:
   - 配合条件需同时满足
@@ -628,8 +757,11 @@ rules:
 - rule_id: SANMINGTONGH-049
   kind: doctrine
   statement: 金木间隔（金木有制为佳）、水火既济（丙壬相配智慧通达）、金火相成（火炼金成器）——三者均为五行搭配的特殊吉象。
-  anchor: null
-  quote: 金木间隔（金木有制为佳）、水火既济（丙壬相配智慧通达）、金火相成（火炼金成器）——三者均为五行搭配的特殊吉象。
+  anchor:
+    file: sources/fulltext/bazi/sanming-tonghui/fulltext.md
+    start_line: 3033
+    end_line: 3033
+  quote: '### 金木間隔'
   applicable_to: []
   caveats:
   - 古法五行配合细目，现代仅作搭配参考，不单独构成格局
@@ -640,8 +772,11 @@ rules:
 - rule_id: SANMINGTONGH-050
   kind: doctrine
   statement: 偏官（七煞）诸子格：天元坐煞（日坐七煞需制化）、时上一位贵（时上一位七煞有制为权星）、年上七煞（年柱七煞需制化）。共性为七煞在特定柱位，制化得宜方吉。
-  anchor: null
-  quote: 偏官（七煞）诸子格：天元坐煞（日坐七煞需制化）、时上一位贵（时上一位七煞有制为权星）、年上七煞（年柱七煞需制化）。共性为七煞在特定柱位，制化得宜方吉。
+  anchor:
+    file: sources/fulltext/bazi/sanming-tonghui/fulltext.md
+    start_line: 3107
+    end_line: 3107
+  quote: 喜忌篇云若乃時逄七煞見之未必為㓙月制干強其煞反為權印經云時上偏官身要強陽刃衝刑煞敢當制多要行煞旺運煞多制少必為殃葢時上偏官要干上透出只一位為妙年月日重見反主辛苦勞碌若身旺煞制太過喜行煞旺運或三合煞運如無制伏要行制伏運方發但忌身弱縱得運扶持發
   applicable_to: []
   caveats:
   - 七煞无论在哪柱均需制化（食制、印化、合留）
@@ -653,8 +788,11 @@ rules:
 - rule_id: SANMINGTONGH-051
   kind: doctrine
   statement: 专禄格（日坐临官禄位）禄旺，需财官食伤为用以平衡；禄旺无制则过刚易折。
-  anchor: null
-  quote: 专禄格（日坐临官禄位）禄旺，需财官食伤为用以平衡；禄旺无制则过刚易折。
+  anchor:
+    file: sources/fulltext/bazi/sanming-tonghui/fulltext.md
+    start_line: 2550
+    end_line: 2550
+  quote: 此身旺宜任也 丑月官煞多或遇丙丁宜行酉地吉偏官偏印及寅午戌辰日時食傷之類皆可論吉癸水十月全隂乃飛禄亦有乙卯時食傷為用行東南發福己未時乃煞庚申辛酉時乃合禄飛禄遇〕
   applicable_to: []
   caveats:
   - 专禄与建禄同类（皆日干临官），不取月令格局而转扶抑论法
@@ -665,8 +803,11 @@ rules:
 - rule_id: R-06
   kind: doctrine
   statement: 庚辰、庚戌、壬辰、戊戌为魁罡日；性烈刚强、聪明果决；忌见财官。
-  anchor: null
-  quote: 庚辰、庚戌、壬辰、戊戌为魁罡日；性烈刚强、聪明果决；忌见财官。
+  anchor:
+    file: sources/fulltext/bazi/sanming-tonghui/fulltext.md
+    start_line: 9417
+    end_line: 9417
+  quote: 年傷日干名為本主不和
   applicable_to: []
   caveats:
   - 魁罡多则贵
@@ -678,8 +819,11 @@ rules:
 - rule_id: SANMINGTONGH-R-06
   kind: doctrine
   statement: 木局曲直（亥卯未或寅卯辰全）、火局炎上（寅午戌或巳午未全）、金局从革（巳酉丑或申酉戌全）、水局润下（申子辰或亥子丑全）、土局稼穑（辰戌丑未全）；专局成时以化神为用。
-  anchor: null
-  quote: 木局曲直（亥卯未或寅卯辰全）、火局炎上（寅午戌或巳午未全）、金局从革（巳酉丑或申酉戌全）、水局润下（申子辰或亥子丑全）、土局稼穑（辰戌丑未全）；专局成时以化神为用。
+  anchor:
+    file: sources/fulltext/bazi/sanming-tonghui/fulltext.md
+    start_line: 10089
+    end_line: 10089
+  quote: 〔日干庚辛地支巳酉丑或申酉戌全者乃從革之象庚日干頭再有甲戊辛日干頭再有壬癸其人死當廟食於百世矣何以言之夫金之為用也剛而其為質也固剛者義氣之發固者可久之道人之仗義者生為忠臣{{SKchar|2636}}必為明神矣此理可與達士論之〕
   applicable_to: []
   caveats:
   - 专局忌克化神之神
@@ -691,8 +835,11 @@ rules:
 - rule_id: SANMINGTONGH-054
   kind: doctrine
   statement: 正财主妻、主守财；身财两停为佳；身弱财多为富屋穷人。
-  anchor: null
-  quote: 正财主妻、主守财；身财两停为佳；身弱财多为富屋穷人。
+  anchor:
+    file: sources/fulltext/bazi/sanming-tonghui/fulltext.md
+    start_line: 3177
+    end_line: 3177
+  quote: 繼善篇又云財多身弱反為富屋貧人珞琭云大叚天元羸弱官吉不及以為榮縱鄧通鑄錢終身不富而餓死是也若月令得財局身衰逄印資助當作富論如先見印却怕見財獨步云先財後印反成其福先印後財反成其辱是也用財不宜明露柱見比刼則宜透出使人共見則不能奪賦云財宜藏藏則豐
   applicable_to: []
   caveats:
   - 身弱者扶身比逐财更重要
@@ -716,8 +863,11 @@ rules:
 - rule_id: SANMINGTONGH-056
   kind: doctrine
   statement: 偏财主父、主众人之财；多情而慷慨；不忌比劫则可发偏财。
-  anchor: null
-  quote: 偏财主父、主众人之财；多情而慷慨；不忌比劫则可发偏财。
+  anchor:
+    file: sources/fulltext/bazi/sanming-tonghui/fulltext.md
+    start_line: 3217
+    end_line: 3217
+  quote: 何謂偏財乃甲見戊乙見巳之例非妻所帶乃衆人之財也切忌有姊妹兄弟分奪柱無官星禍患百出經曰偏財好出亦不懼藏唯怕分奪及落空亡有一於此官將不成財將不住如財弱必待厯旺鄉而榮財盛無往不利但恐身勢無力不能勝任偏財格主人慷慨不甚吝財與人有情而多詐若是得地不止
   applicable_to: []
   caveats:
   - 偏财怕比劫夺
@@ -729,8 +879,11 @@ rules:
 - rule_id: SANMINGTONGH-057
   kind: doctrine
   statement: 日主无根极弱、财星极旺无克、行运扶财者，弃命从财为格成。
-  anchor: null
-  quote: 日主无根极弱、财星极旺无克、行运扶财者，弃命从财为格成。
+  anchor:
+    file: sources/fulltext/bazi/sanming-tonghui/fulltext.md
+    start_line: 3239
+    end_line: 3239
+  quote: 獨步云棄命從財須要㑹財若逢根氣命損無猜假如丁生酉月柱多庚辛日干無氣只得棄命相從運入北方財官旺地乃為入格南行災古歌云曰干無氣滿盤財棄命相從是福胎運旺財官皆富貴如逢根助反為災
   applicable_to: []
   caveats:
   - 从财格行比劫运则破
@@ -741,8 +894,11 @@ rules:
 - rule_id: SANMINGTONGH-058
   kind: doctrine
   statement: 偏正财同看为吉者重在身强能任；身弱者偏正财皆为忌。
-  anchor: null
-  quote: 偏正财同看为吉者重在身强能任；身弱者偏正财皆为忌。
+  anchor:
+    file: sources/fulltext/bazi/sanming-tonghui/fulltext.md
+    start_line: 3194
+    end_line: 3194
+  quote: 如甲日午年巳乙日巳年戊喜忌與月干正財同若嵗帶正馬生辰戊丑未月或夏令月申巳土旺相不犯刑衝分奪日干乗旺主受祖業豐厚若生寅卯月令柱中更帶比肩或遇運行傷刼之地必主貧困
   applicable_to: []
   caveats:
   - 忌混财杂
@@ -754,8 +910,11 @@ rules:
 - rule_id: SANMINGTONGH-059
   kind: doctrine
   statement: 印绶生身、护身；身弱喜印；身强忌印过重。
-  anchor: null
-  quote: 印绶生身、护身；身弱喜印；身强忌印过重。
+  anchor:
+    file: sources/fulltext/bazi/sanming-tonghui/fulltext.md
+    start_line: 10021
+    end_line: 10021
+  quote: 〔濕木不生無{{SKchar|3303}}火理固然也乙卯癸卯尤甚丅卯庶幾〕
   applicable_to: []
   caveats:
   - 印多则懒
@@ -767,8 +926,11 @@ rules:
 - rule_id: SANMINGTONGH-060
   kind: doctrine
   statement: 印多为病、又有财能破印，行运扶财者，弃印就财为格。
-  anchor: null
-  quote: 印多为病、又有财能破印，行运扶财者，弃印就财为格。
+  anchor:
+    file: sources/fulltext/bazi/sanming-tonghui/fulltext.md
+    start_line: 3311
+    end_line: 3311
+  quote: 經云棄印就財明偏正印綬忌財此理甚明正印居月令者决不可見財若居年時月令見財只用財格喜印生身敵財為福若偏印月令年時見財無妨為棄印就財捨輕用重如壬生申月丙生寅月坐長生之地年時得財即身旺喜見財地如此造化必主棄祖基而自創别業立身
   applicable_to: []
   caveats:
   - 身弱印为用神时不可弃
@@ -779,8 +941,11 @@ rules:
 - rule_id: SANMINGTONGH-061
   kind: doctrine
   statement: 偏印逢食神为倒食；食神被夺则身弱无养。
-  anchor: null
-  quote: 偏印逢食神为倒食；食神被夺则身弱无养。
+  anchor:
+    file: sources/fulltext/bazi/sanming-tonghui/fulltext.md
+    start_line: 10310
+    end_line: 10310
+  quote: 主健財禄堪圖刼煞不宜行旺地食神最妙偏財鄉女命傷官歸禄得之極吉男造羊刃身弱遇之為竒金神建禄欄义女命逢之最忌羊刃傷官七煞男子遇之得權金神入火逢煞刃貴而無疑煞重有印逢食傷榮而有凖正官正印官居不顯羊刃七煞出仕馳名身旺無依僧道之軰桃花滚浪娼婢之流金弱
   applicable_to: []
   caveats:
   - 有偏财通关或七煞食制者可解
@@ -791,8 +956,11 @@ rules:
 - rule_id: SANMINGTONGH-062
   kind: doctrine
   statement: 月令辰戌丑未为杂气；取格须看透干本气、中气、余气；杂气需冲透为用。
-  anchor: null
-  quote: 月令辰戌丑未为杂气；取格须看透干本气、中气、余气；杂气需冲透为用。
+  anchor:
+    file: sources/fulltext/bazi/sanming-tonghui/fulltext.md
+    start_line: 1930
+    end_line: 1930
+  quote: 辰戌丑未為四印戊己得之偏主信甲乙若逢鄙且貪丙丁或遇多貧病庚辛格號母生兒聚煞丑宫多短命〔戊己屬土遇四印為本宫主信甲乙逢之為財財已入庫主人貪鄙丙丁得之竊氣不貧則夭庚辛為子歸母腹或四位不全在死絶之地主人勾絞使術數或聚煞丑宫多夭折〕
   applicable_to: []
   caveats:
   - 杂气取用复杂
@@ -804,8 +972,11 @@ rules:
 - rule_id: SANMINGTONGH-063
   kind: doctrine
   statement: 伤官见官为祸百端；除非伤官配印或伤官生财者可解。
-  anchor: null
-  quote: 伤官见官为祸百端；除非伤官配印或伤官生财者可解。
+  anchor:
+    file: sources/fulltext/bazi/sanming-tonghui/fulltext.md
+    start_line: 3351
+    end_line: 3351
+  quote: 〔喜身旺 財星 印綬 傷盡忌身弱 無財 刑衝 入墓〕
   applicable_to: []
   caveats:
   - 伤官伤尽却又喜见官的特例存在
@@ -817,8 +988,11 @@ rules:
 - rule_id: SANMINGTONGH-064
   kind: doctrine
   statement: 身强、食神有力、七煞当令时，食神制煞为佳，反成权贵。
-  anchor: null
-  quote: 身强、食神有力、七煞当令时，食神制煞为佳，反成权贵。
+  anchor:
+    file: sources/fulltext/bazi/sanming-tonghui/fulltext.md
+    start_line: 9677
+    end_line: 9677
+  quote: 〔上言財要伏藏為竒然財者衆所争故有羊刃劫則因財致禍見財不可專也上言食神制煞為妙然食者人所食故有梟神奪則因食生疾見食不可貪也男以官煞為子如羊刃劫財官煞為彼用是兄弟有子而我無子故以姪男為嗣以偏正財為妻如柱中無財正位而寄生别宫是娶他人所養女故主義女
   applicable_to: []
   caveats:
   - 食神被合、被夺则制煞失力
@@ -829,8 +1003,11 @@ rules:
 - rule_id: SANMINGTONGH-065
   kind: doctrine
   statement: 阳干见月刃为阳刃格；以官、煞、食、伤制刃为用；不取格而以扶抑论。
-  anchor: null
-  quote: 阳干见月刃为阳刃格；以官、煞、食、伤制刃为用；不取格而以扶抑论。
+  anchor:
+    file: sources/fulltext/bazi/sanming-tonghui/fulltext.md
+    start_line: 3473
+    end_line: 3473
+  quote: 制按如法須還他發福後遇歲運併臨或在刑合之位依舊有禍刄格福自福禍自禍兩不相掩也又曰五陰干見五陽干為敗財雖不尅妻亦主財帛消耗陰私口舌或小人相侵歲時見官煞或坐或透皆吉身弱逄之遇敗財受刑亦吉身弱行官煞財運亦妨若柱中元無官煞歲運再逄敗地因財争競兄弟分
   applicable_to: []
   caveats:
   - 刃重无制则凶
@@ -842,8 +1019,11 @@ rules:
 - rule_id: SANMINGTONGH-066
   kind: doctrine
   statement: 日干临官在月支为建禄；不取格而以扶抑论；常以月外财、官、食、伤为用。
-  anchor: null
-  quote: 日干临官在月支为建禄；不取格而以扶抑论；常以月外财、官、食、伤为用。
+  anchor:
+    file: sources/fulltext/bazi/sanming-tonghui/fulltext.md
+    start_line: 3629
+    end_line: 3629
+  quote: 提綱重月令無神用此竒〔又〕所拱之位怕塡實又怕傷官在月支陽刃重重來破格如無此破貴無疑
   applicable_to: []
   caveats:
   - 与《子平真诠》"建禄不取格"主张一致
@@ -854,8 +1034,11 @@ rules:
 - rule_id: R-07
   kind: doctrine
   statement: 日干、十神、五行偏枯决定性情与形貌；木主仁、火主礼、土主信、金主义、水主智。
-  anchor: null
-  quote: 日干、十神、五行偏枯决定性情与形貌；木主仁、火主礼、土主信、金主义、水主智。
+  anchor:
+    file: sources/fulltext/bazi/sanming-tonghui/fulltext.md
+    start_line: 669
+    end_line: 669
+  quote: 止金為少陰性沈下而有所止土無常性視四時所乘欲使相濟得所勿令太過弗及夫五行之性各致其用水者其性智火者其性禮木者其性仁金者其性義惟土主信重厚寛博無所不容以之水則水附之而行以之木則木托之而生金不得土則無自出火不得土則無自歸必損實以為通致虛以為明故
   applicable_to: []
   caveats:
   - 性情判断与命主自我描述对照
@@ -881,8 +1064,11 @@ rules:
 - rule_id: SANMINGTONGH-069
   kind: doctrine
   statement: 女命以正官为夫、食伤为子；夫宫稳定为佳；夫星与子星均不可缺。
-  anchor: null
-  quote: 女命以正官为夫、食伤为子；夫宫稳定为佳；夫星与子星均不可缺。
+  anchor:
+    file: sources/fulltext/bazi/sanming-tonghui/fulltext.md
+    start_line: 8409
+    end_line: 8409
+  quote: 良婦或殘房入舎此六干柱中多者尤{{SKchar|1606}}尤濫即陰錯陽差也帶桃花在帝旺多惹婦人官訟或豪家亦因妻黨婢妾致争否則兒女官司也别子賢愚五法一以妻生而尅我者為子男以偏官為子女以正官為子一云女以我生為子引至時上逢生旺則好仍以餘神㑹合有情方貴一云我與妻同化者如甲人以
   applicable_to: []
   caveats:
   - 本书部分女命断语具时代局限（如"濁滥娼淫"等条目）
@@ -894,8 +1080,11 @@ rules:
 - rule_id: SANMINGTONGH-070
   kind: doctrine
   statement: 小儿命须看关煞与刑冲破害；关煞重者主夭折或多病。
-  anchor: null
-  quote: 小儿命须看关煞与刑冲破害；关煞重者主夭折或多病。
+  anchor:
+    file: sources/fulltext/bazi/sanming-tonghui/fulltext.md
+    start_line: 4756
+    end_line: 4756
+  quote: 〔又曰〕小兒之命當論時辰為正先看關煞次看格局日主强財官旺有關無煞日主弱財官少常病易養日千弱財官多有煞有關難養夫關者何也即偏官為關偏財為煞專以日干為主取生成之數斷之關者譬如今之關隘乃險阻之地人至關非明文不敢私渡違者必致其禍小兒命犯此關則為不利柱中
   applicable_to: []
   caveats:
   - 关煞名目繁多，多神煞同现不必然成应
@@ -907,8 +1096,11 @@ rules:
 - rule_id: SANMINGTONGH-071
   kind: doctrine
   statement: 父—偏印；母—正印；兄弟姐妹—比劫；妻—正财；子—食伤（男）；夫—正官（女）。
-  anchor: null
-  quote: 父—偏印；母—正印；兄弟姐妹—比劫；妻—正财；子—食伤（男）；夫—正官（女）。
+  anchor:
+    file: sources/fulltext/bazi/sanming-tonghui/fulltext.md
+    start_line: 4797
+    end_line: 4797
+  quote: 惟辨隂陽陽男隂女理之大順也〔神白經云〕甲人丁為父壬為母乙人戊為父癸為母餘八干例見是不論陽男隂女只取隂生隂陽生陽生我者為母與母合干為父夫妻合而後生子陽干傷官為父正印為母隂干正財為父偏印為母見父則無父而發見母則無母而發尅年干不利父尅月干不利母干鬼不
   applicable_to: []
   caveats:
   - 本书古制
@@ -921,8 +1113,11 @@ rules:
 - rule_id: SANMINGTONGH-072
   kind: doctrine
   statement: 女命纯和清贵者，五行平和、夫星（正官）清贵有力、子星（食伤）得所、无冲无破。
-  anchor: null
-  quote: 女命纯和清贵者，五行平和、夫星（正官）清贵有力、子星（食伤）得所、无冲无破。
+  anchor:
+    file: sources/fulltext/bazi/sanming-tonghui/fulltext.md
+    start_line: 10312
+    end_line: 10312
+  quote: 絕官者無限貧窮身弱棄命要無根官居宰府干衰身化得其時位近天廷男命類屬從化照返鬼伏宜細詳之女命純和清貴濁濫娼淫當深究也
   applicable_to: []
   caveats:
   - 古文"纯和清贵"含时代价值观
@@ -934,8 +1129,11 @@ rules:
 - rule_id: SANMINGTONGH-073
   kind: doctrine
   statement: 古文"浊滥娼淫"的命理成因：伤官过重无制、官煞混杂无去留、五行偏枯、桃花咸池泛滥。
-  anchor: null
-  quote: 古文"浊滥娼淫"的命理成因：伤官过重无制、官煞混杂无去留、五行偏枯、桃花咸池泛滥。
+  anchor:
+    file: sources/fulltext/bazi/sanming-tonghui/fulltext.md
+    start_line: 2037
+    end_line: 2037
+  quote: 之地若四柱庚辛俱見謂之官煞混雜無去留制伏反主貧賤如只有庚不見制伏當作鬼論分身鬼强弱定其吉㐫壽夭若制伏得中作偏官論太過反不為福更㸔日干於所生月内有力無力有助無助分節氣淺深輕重言之喜行身旺鬼衰運忌身衰鬼旺運
   applicable_to: []
   caveats:
   - 极度敏感内容
@@ -948,8 +1146,11 @@ rules:
 - rule_id: SANMINGTONGH-074
   kind: doctrine
   statement: 旺夫克子（夫星旺、子星弱→正官得用+食伤被制）；旺子伤夫（子星旺、夫星弱→食伤有力+正官被克）；伤夫克子（夫星子星皆损→官被伤、食被夺）。三者以十神生克为判断核心。
-  anchor: null
-  quote: 旺夫克子（夫星旺、子星弱→正官得用+食伤被制）；旺子伤夫（子星旺、夫星弱→食伤有力+正官被克）；伤夫克子（夫星子星皆损→官被伤、食被夺）。三者以十神生克为判断核心。
+  anchor:
+    file: sources/fulltext/bazi/sanming-tonghui/fulltext.md
+    start_line: 4550
+    end_line: 4550
+  quote: 有旺子傷夫者何此法專以月時推之謂尅我者為官為夫有氣得時則夫發福若支干失位不得月氣柱中又逢衝尅時上又無旺氣而已生之子引至時上逢長生臨官帝旺之地又無刑尅是旺子傷夫也如〔一命〕己夘甲戌乙夘戊寅乙用庚為夫九月庚金無氣乙用丙為子丙火長生於寅與戌㑹局皆屬火
   applicable_to: []
   caveats:
   - 古文以夫为纲的价值观
@@ -961,8 +1162,11 @@ rules:
 - rule_id: SANMINGTONGH-075
   kind: doctrine
   statement: 安静守分（命局平和无冲战）；福寿两备（五行流通、夫星子星皆得用、无冲无破）。二者均为女命理想化标准。
-  anchor: null
-  quote: 安静守分（命局平和无冲战）；福寿两备（五行流通、夫星子星皆得用、无冲无破）。二者均为女命理想化标准。
+  anchor:
+    file: sources/fulltext/bazi/sanming-tonghui/fulltext.md
+    start_line: 4560
+    end_line: 4560
+  quote: 安靜守分者乃夫星有氣日干自旺相停無尅不值刑衝財食得所者是也如〔一命〕癸巳庚申乙夘丁亥乙坐夘專禄自旺又得時支亥字合局是本身旺也以庚金為夫七月庚禄到申又得年支巳火為金長生之地是夫星旺也亥中壬水夫之食神天厨故主夫食天禄此乃自已夫星兩不相傷各乗旺氣無混
   applicable_to: []
   caveats:
   - 理想化标准，现实少有完全符合
@@ -974,8 +1178,11 @@ rules:
 - rule_id: SANMINGTONGH-076
   kind: doctrine
   statement: 小儿/少年命局冲战过重、关煞重、五行偏枯至极，古法断为横夭。
-  anchor: null
-  quote: 小儿/少年命局冲战过重、关煞重、五行偏枯至极，古法断为横夭。
+  anchor:
+    file: sources/fulltext/bazi/sanming-tonghui/fulltext.md
+    start_line: 4565
+    end_line: 4565
+  quote: 夫横夭少年者造化之窮絶格局之變異也有懸梁溺水血産少亡被人殺死若此者何乃身弱而遇煞重煞多尅身又帶刑衝破敗之類或命中元有官星受傷行運復遇官鄉或無官見傷運復臨官之類或帶刃無制運行合刃之地及亡神刼煞等類此皆横夭類也不獨女命有之男命亦同如〔一命〕丁夘癸丑
   applicable_to: []
   caveats:
   - 绝对禁止铁口断寿！遇小儿/少年命局只分析五行偏枯和冲战，必须注明"不作寿夭结论"
@@ -987,8 +1194,11 @@ rules:
 - rule_id: SANMINGTONGH-077
   kind: doctrine
   statement: 正偏自处（正官与七煞同现，需去留得宜）；招嫁不定（夫宫被冲合或官煞混杂无定主→感情不稳）。
-  anchor: null
-  quote: 正偏自处（正官与七煞同现，需去留得宜）；招嫁不定（夫宫被冲合或官煞混杂无定主→感情不稳）。
+  anchor:
+    file: sources/fulltext/bazi/sanming-tonghui/fulltext.md
+    start_line: 4582
+    end_line: 4582
+  quote: 夫招嫁不定者何也乃月令中有夫星透干與己相合己身從伏其夫星却無氣時引夫星或煞星却乘旺地來尅己身又從伏偏夫故謂之招嫁不定若夫星不旺或受尅制必嫁夫遲或嫁夫不明或夫不濟事或有外情如〔一命〕癸酉甲子己未乙亥己用甲為夫生於十一月失時不旺時逢亥字乃甲木長生是
   applicable_to: []
   caveats:
   - 古文婚姻观
@@ -1000,8 +1210,11 @@ rules:
 - rule_id: SANMINGTONGH-078
   kind: doctrine
   statement: 古法由八字推孕中男女，以年柱时柱或特定干支组合（如阳年阳月阳日阳时生男等）推断。
-  anchor: null
-  quote: 古法由八字推孕中男女，以年柱时柱或特定干支组合（如阳年阳月阳日阳时生男等）推断。
+  anchor:
+    file: sources/fulltext/bazi/sanming-tonghui/fulltext.md
+    start_line: 4863
+    end_line: 4863
+  quote: 假先下四十九數於筭盤乃加上其母受胎月數總得若干數若值正月胎是五十數其母三十一除去止餘一十九數九則為单单則男若单生女雙生男主夭折〔一云〕加除法以天一地二人三除之看剩數〔又云〕除一除二除三除盡看零數
   applicable_to: []
   caveats:
   - 现代绝对不作事实结论
@@ -1028,8 +1241,11 @@ rules:
 - rule_id: R-09
   kind: doctrine
   statement: 十干各有喜忌支位：甲喜寅卯、忌申酉；乙喜寅卯辰、忌酉戌；丙喜巳午、忌亥子；丁喜巳午未、忌子丑；戊喜巳午辰戌、忌寅卯；己喜巳午未、忌卯辰；庚喜申酉、忌巳午；辛喜申酉戌、忌午未；壬喜亥子、忌辰戌丑未；癸喜亥子丑、忌未戌。
-  anchor: null
-  quote: 十干各有喜忌支位：甲喜寅卯、忌申酉；乙喜寅卯辰、忌酉戌；丙喜巳午、忌亥子；丁喜巳午未、忌子丑；戊喜巳午辰戌、忌寅卯；己喜巳午未、忌卯辰；庚喜申酉、忌巳午；辛喜申酉戌、忌午未；壬喜亥子、忌辰戌丑未；癸喜亥子丑、忌未戌。
+  anchor:
+    file: sources/fulltext/bazi/sanming-tonghui/fulltext.md
+    start_line: 1930
+    end_line: 1930
+  quote: 辰戌丑未為四印戊己得之偏主信甲乙若逢鄙且貪丙丁或遇多貧病庚辛格號母生兒聚煞丑宫多短命〔戊己屬土遇四印為本宫主信甲乙逢之為財財已入庫主人貪鄙丙丁得之竊氣不貧則夭庚辛為子歸母腹或四位不全在死絶之地主人勾絞使術數或聚煞丑宫多夭折〕
   applicable_to: []
   caveats:
   - 喜忌为一般趋势
@@ -1042,8 +1258,11 @@ rules:
 - rule_id: R-04
   kind: doctrine
   statement: 日干得月令之气者为得时，得时支生扶者为得地；月时俱得则日主强旺；月时一得一失则中和；月时俱失则身弱。
-  anchor: null
-  quote: 日干得月令之气者为得时，得时支生扶者为得地；月时俱得则日主强旺；月时一得一失则中和；月时俱失则身弱。
+  anchor:
+    file: sources/fulltext/bazi/sanming-tonghui/fulltext.md
+    start_line: 7944
+    end_line: 7944
+  quote: 基業立當代之功名不招䜛謗不致傷害保其終始是命運生旺體用俱得故也其一旦崛起忽然驟興繇柱中所用貴神悉皆得位乘旺又且合格奈日主無力不能勝任其福所以勞困偃蹇倐逢好運生扶日干得其强健元命用神方爲我用我因乘之虎嘯風生大發富貴是偏氣乘和衰以遇旺故迎吉而發
   applicable_to: []
   caveats:
   - 月时配合为粗框架
@@ -1055,8 +1274,11 @@ rules:
 - rule_id: SANMINGTONGH-R-04
   kind: doctrine
   statement: 大运可改变格局喜忌重心；原局身弱逢印比运则转强；原局身强逢财官运则得用；运过则复原局。
-  anchor: null
-  quote: 大运可改变格局喜忌重心；原局身弱逢印比运则转强；原局身强逢财官运则得用；运过则复原局。
+  anchor:
+    file: sources/fulltext/bazi/sanming-tonghui/fulltext.md
+    start_line: 1068
+    end_line: 1068
+  quote: 丙丁巳午運名傷官運主尅子女訟事囚繫庚辛申酉運七煞官鄉主得名發越太過則災病惡疾壬癸亥子生氣印綬運主吉慶增産辰戍丑未戊巳財運主名利皆通此乃死發須隨格局喜忌推之干旺宜衰運正所謂干弱則求氣旺之藉有餘則欲不足之營須要通變更兼流年諸神煞推之其驗如神
   applicable_to: []
   caveats:
   - 行运扶抑为暂态
@@ -1068,8 +1290,11 @@ rules:
 - rule_id: SANMINGTONGH-083
   kind: doctrine
   statement: 以月支为纲论日干吉凶：月支当令则日干得气而旺，月支失令则日干不得气而衰；月支与日干生克关系决定基本旺衰倾向。
-  anchor: null
-  quote: 以月支为纲论日干吉凶：月支当令则日干得气而旺，月支失令则日干不得气而衰；月支与日干生克关系决定基本旺衰倾向。
+  anchor:
+    file: sources/fulltext/bazi/sanming-tonghui/fulltext.md
+    start_line: 9066
+    end_line: 9066
+  quote: 論運者以月支為首分四時而提起五行消長
   applicable_to: []
   caveats:
   - 月支得日干仅为粗判
@@ -1081,8 +1306,11 @@ rules:
 - rule_id: SANMINGTONGH-084
   kind: doctrine
   statement: 五行在十二时辰各有旺衰变化（如木旺于寅卯辰时、火旺于巳午未时等）；五行与地理方位（东南西北中）亦有分野吉凶。时辰定五行当前气数，地域分野作辅证。
-  anchor: null
-  quote: 五行在十二时辰各有旺衰变化（如木旺于寅卯辰时、火旺于巳午未时等）；五行与地理方位（东南西北中）亦有分野吉凶。时辰定五行当前气数，地域分野作辅证。
+  anchor:
+    file: sources/fulltext/bazi/sanming-tonghui/fulltext.md
+    start_line: 4261
+    end_line: 4261
+  quote: 聖人得抱一之眞則無所不逹鬼神含得一之靈則變化無窮而隂陽之理精神之運歛散抑於一者所以為致一之命乃間世賢輔出羣大貴人也如年月日時胎五位納音四木一水四金一土之類一見於時或一金四水土一水四金土一見於年各有旺氣發越一路是也五位中年胎月俱丑而日上或時上
   applicable_to: []
   caveats:
   - 分野之说属古法理论框架，现代不作硬性结论
@@ -1094,8 +1322,11 @@ rules:
 - rule_id: SANMINGTONGH-085
   kind: doctrine
   statement: 壬辰日柱多见（尤以月日时三见壬辰为佳）为壬骑龙背格；辰为水库，壬水坐库得势；忌见财官透干破格。
-  anchor: null
-  quote: 壬辰日柱多见（尤以月日时三见壬辰为佳）为壬骑龙背格；辰为水库，壬水坐库得势；忌见财官透干破格。
+  anchor:
+    file: sources/fulltext/bazi/sanming-tonghui/fulltext.md
+    start_line: 8676
+    end_line: 8676
+  quote: 〔此亦因比肩之謂也葢四柱多見比肩必然争祿争財且奪歲運之物為禍如年月透出一位七煞比肩知畏勢必歸之歲運一遇食神制煞則柱無主張之神使比肩復亂如初則散財破業横死於茍貪之下端有徵矣〕
   applicable_to: []
   caveats:
   - 古法杂格，现代不作八字主线结论
@@ -1107,8 +1338,11 @@ rules:
 - rule_id: SANMINGTONGH-086
   kind: doctrine
   statement: 遥合取贵类杂格（子遥巳禄、丑遥巳禄、冲合禄马、虎午奔巳、羊击猪蛇）的共同原则：日柱通过遥合、冲合等方式获取远在它支的禄（临官）或马（驿马）或财官；成立条件为遥合不破、禄马不被克冲。
-  anchor: null
-  quote: 遥合取贵类杂格（子遥巳禄、丑遥巳禄、冲合禄马、虎午奔巳、羊击猪蛇）的共同原则：日柱通过遥合、冲合等方式获取远在它支的禄（临官）或马（驿马）或财官；成立条件为遥合不破、禄马不被克冲。
+  anchor:
+    file: sources/fulltext/bazi/sanming-tonghui/fulltext.md
+    start_line: 3525
+    end_line: 3525
+  quote: '### 子遥巳禄'
   applicable_to: []
   caveats:
   - 全部属古法杂格，现代子平格局体系已基本不取此类
@@ -1120,8 +1354,11 @@ rules:
 - rule_id: SANMINGTONGH-087
   kind: doctrine
   statement: 日时禄贵类杂格（六阴朝阳=辛日子时、六乙鼠贵=乙日子时、日禄归时=时支为日干临官）的共同原则：时柱为归宿，时得禄贵则晚年有靠有贵；忌见官星或冲克破格。
-  anchor: null
-  quote: 日时禄贵类杂格（六阴朝阳=辛日子时、六乙鼠贵=乙日子时、日禄归时=时支为日干临官）的共同原则：时柱为归宿，时得禄贵则晚年有靠有贵；忌见官星或冲克破格。
+  anchor:
+    file: sources/fulltext/bazi/sanming-tonghui/fulltext.md
+    start_line: 7551
+    end_line: 7551
+  quote: 癸日壬子時日祿歸時癸水子上建祿若年月干支無戊巳午未字刑衝破害三元有倚托通月氣者文章秀麗官職顯達若通木氣月亦貴如柱透己有甲合亦貴否則反覆
   applicable_to: []
   caveats:
   - 日禄归时较其余两格更接近子平主线（时支禄位属身强论），但其"不取它格"的主张与后世格局取用法有冲突
@@ -1133,8 +1370,11 @@ rules:
 - rule_id: SANMINGTONGH-088
   kind: doctrine
   statement: 拱禄拱贵格：两柱之间虚夹一位为禄（临官）或贵人（天乙贵人），虚而实应为贵；冲禄格：禄位被冲则动，动而有得（喜冲忌神得禄）。忌填实则拱破，忌冲喜用。
-  anchor: null
-  quote: 拱禄拱贵格：两柱之间虚夹一位为禄（临官）或贵人（天乙贵人），虚而实应为贵；冲禄格：禄位被冲则动，动而有得（喜冲忌神得禄）。忌填实则拱破，忌冲喜用。
+  anchor:
+    file: sources/fulltext/bazi/sanming-tonghui/fulltext.md
+    start_line: 1393
+    end_line: 1393
+  quote: 天乙者乃天上之神在紫微垣閶闔門外與太乙並列事天皇大帝下遊三辰家在己丑斗牛之次出乎己未井鬼之舍執玉衡較量天人之事名曰天乙也其神最尊貴所至之處一切㓙煞隱然而避通𤣥經云先天坤在北方子位陽貴起先天之坤乃從子上起甲干甲徳在子甲與己合不取甲徳而取合氣故己
   applicable_to: []
   caveats:
   - 拱夹之说属古法取象
@@ -1146,8 +1386,11 @@ rules:
 - rule_id: SANMINGTONGH-089
   kind: doctrine
   statement: 六壬趋艮（壬日寅时）：壬水趋艮（寅属艮）得止为贵；六甲趋乾（甲日亥时）：甲木趋乾（亥属乾）得生为贵。忌冲：申冲寅破六壬趋艮，巳冲亥破六甲趋乾。
-  anchor: null
-  quote: 六壬趋艮（壬日寅时）：壬水趋艮（寅属艮）得止为贵；六甲趋乾（甲日亥时）：甲木趋乾（亥属乾）得生为贵。忌冲：申冲寅破六壬趋艮，巳冲亥破六甲趋乾。
+  anchor:
+    file: sources/fulltext/bazi/sanming-tonghui/fulltext.md
+    start_line: 5149
+    end_line: 5149
+  quote: 甲日乙亥時甲木亥上長生有旺乙為刃制尅學堂壬為倒食亥上建禄甲以金為官戊己為財辛金沐浴戊己衰絶不能作福生己酉丑月及見辛柱有戊字貴餘雖聰明功名不遂藝術人也
   applicable_to: []
   caveats:
   - 以八卦方位配日时的古法，现代基本不取
@@ -1158,8 +1401,11 @@ rules:
 - rule_id: SANMINGTONGH-090
   kind: doctrine
   statement: 特定日柱自成贵格：财官双美（壬午、癸巳，日坐财官）；日贵（丁酉、丁亥、癸卯、癸巳，日带天乙贵人）；日德（甲寅、丙辰、戊辰、庚辰、壬戌，日坐德神）。共性为日柱本身带贵气，忌刑冲破害。
-  anchor: null
-  quote: 特定日柱自成贵格：财官双美（壬午、癸巳，日坐财官）；日贵（丁酉、丁亥、癸卯、癸巳，日带天乙贵人）；日德（甲寅、丙辰、戊辰、庚辰、壬戌，日坐德神）。共性为日柱本身带贵气，忌刑冲破害。
+  anchor:
+    file: sources/fulltext/bazi/sanming-tonghui/fulltext.md
+    start_line: 3690
+    end_line: 3690
+  quote: 此格止有五日甲寅丙辰戊辰庚辰壬戌取甲丙戊庚壬五陽干甲坐寅得禄丙坐辰官庫庚坐辰財印兩全壬坐戌三竒俱備寅為三陽之首辰戍為魁罡之地干支異於别位故名日德也查吉神一百二十五位無日德或者别有取義余則未曉日德要多二三位併踏同者方用若只一位還以月令財官印食
   applicable_to: []
   caveats:
   - 日柱特格在子平体系中属参考（非主格）
@@ -1172,8 +1418,11 @@ rules:
 - rule_id: SANMINGTONGH-091
   kind: doctrine
   statement: 破官/飞财/破财三格的共同原则：原有格局（官格/财格）被破之后，另有替代之格可成；破而后立，有救应方可取格；破而无救则原格毁。
-  anchor: null
-  quote: 破官/飞财/破财三格的共同原则：原有格局（官格/财格）被破之后，另有替代之格可成；破而后立，有救应方可取格；破而无救则原格毁。
+  anchor:
+    file: sources/fulltext/bazi/sanming-tonghui/fulltext.md
+    start_line: 9305
+    end_line: 9305
+  quote: 〔此亦同上文之義凡命最忌羊刄財格被破印格被奪官格衝怒只喜七煞制之陰刃力微無妨印見妻財是貪財壞印之説也歲運又見主破財傷妻或因妻致訟若原無財星或財星力㣲歲運見之稍輕惟官煞進生解勸反得舉薦成名〕
   applicable_to: []
   caveats:
   - 破格取用的替代条件严苛
@@ -1185,8 +1434,11 @@ rules:
 - rule_id: SANMINGTONGH-092
   kind: doctrine
   statement: 庚子、壬子、癸亥等日柱多见子水者，以子多冲出午中财官（丁火正官、己土正财）为飞天禄马格；忌午支填实则冲力失效破格。
-  anchor: null
-  quote: 庚子、壬子、癸亥等日柱多见子水者，以子多冲出午中财官（丁火正官、己土正财）为飞天禄马格；忌午支填实则冲力失效破格。
+  anchor:
+    file: sources/fulltext/bazi/sanming-tonghui/fulltext.md
+    start_line: 9250
+    end_line: 9250
+  quote: 〔以上正衝倒衝遥合通融互文見義舉丙丁與巳忌填實也舉子忌刑衝也如丙子庚寅丙午癸巳○庚寅壬午丙午戊戌○二命喜寅午戌全如辛酉癸巳丁巳乙巳○癸卯丁巳丁巳乙巳○二命喜巳字多不論有合無合皆吉惟忌辰字絆住則不能衝却喜巳酉丑全是正衝格也喜忌篇云若逢傷官月建如凶處未必
   applicable_to: []
   caveats:
   - 古法杂格，以"冲出"为取格方式
@@ -1199,8 +1451,11 @@ rules:
 - rule_id: SANMINGTONGH-093
   kind: doctrine
   statement: 福德秀气格：合福德（天月德等）与秀气（学堂词馆等）为一体，主身份清贵；禄元互换格：年禄在日、日禄在年，互换为有情之象。
-  anchor: null
-  quote: 福德秀气格：合福德（天月德等）与秀气（学堂词馆等）为一体，主身份清贵；禄元互换格：年禄在日、日禄在年，互换为有情之象。
+  anchor:
+    file: sources/fulltext/bazi/sanming-tonghui/fulltext.md
+    start_line: 8793
+    end_line: 8793
+  quote: 〔崇者卑之反竒者耦之對物以積而高高之為崇在五行上生下是也物以無與耦之為竒在五行異而乃羣是也將星月将也德天月德也天乙貴神也生年為本生日為主休囚對生旺言人命年月日時四柱有五行上生下有三竒乙丙丁更帶將星德貴主本生旺得地所謂吉將交臨而福臻成慶此為至貴
   applicable_to: []
   caveats:
   - 古法杂格，细则需对原文逐条核
@@ -1212,8 +1467,11 @@ rules:
 - rule_id: SANMINGTONGH-094
   kind: doctrine
   statement: 子午双包格：命局子午对冲而各有包裹得宜（如子被丑合包裹、午被未合包裹）；冲中有合、动中有制则为贵。
-  anchor: null
-  quote: 子午双包格：命局子午对冲而各有包裹得宜（如子被丑合包裹、午被未合包裹）；冲中有合、动中有制则为贵。
+  anchor:
+    file: sources/fulltext/bazi/sanming-tonghui/fulltext.md
+    start_line: 10102
+    end_line: 10102
+  quote: 者孤支干刑害者疾用神休囚者難求富貴秀氣淺薄者多是藝術刑尅互見身旺定作軍徒辰戌相加有損斷為獄吏金水閒慢落魄清貧之人驛馬衝擊馳驅紅塵之客魁罡重犯生於屠宰之家酉戌重逢身作奴僕之下柱中子午雙包尊居垣省命内干支一氣貴至王侯一片純陽獨尅命不死也傷滿盤印
   applicable_to: []
   caveats:
   - 子午冲为最强之地支冲
@@ -1225,8 +1483,11 @@ rules:
 - rule_id: SANMINGTONGH-095
   kind: doctrine
   statement: 六神兽格（青龙=木、白虎=金、朱雀=火、玄武=水、勾陈=土）为五行配六神的取象法；各神兽对应五行须在命局成形（三合或方局）且格局清纯不破方为贵。
-  anchor: null
-  quote: 六神兽格（青龙=木、白虎=金、朱雀=火、玄武=水、勾陈=土）为五行配六神的取象法；各神兽对应五行须在命局成形（三合或方局）且格局清纯不破方为贵。
+  anchor:
+    file: sources/fulltext/bazi/sanming-tonghui/fulltext.md
+    start_line: 670
+    end_line: 670
+  quote: 五行皆賴土也推其形色則水黑火赤木青金白土黃此正色也及其變易則不然常以生旺從正色〔當生旺則正氣全可見正色〕死絶從母色〔水者木之母死絶則黑木者火之母死絶則青火者土之母死絶則赤土者金之母死絕則黃夫五行死絕則氣歸根見母之色凡人遇苦楚而呻吟母者乃其義也〕成形
   applicable_to: []
   caveats:
   - 六神兽格属古法取象，不作现代八字主线结论
@@ -1238,8 +1499,11 @@ rules:
 - rule_id: SANMINGTONGH-096
   kind: doctrine
   statement: 还魂借气格：命局借他柱之气为己用（如枯木逢水得生），日主衰弱而有情生扶者可借气还魂；借气来源须有情不破。
-  anchor: null
-  quote: 还魂借气格：命局借他柱之气为己用（如枯木逢水得生），日主衰弱而有情生扶者可借气还魂；借气来源须有情不破。
+  anchor:
+    file: sources/fulltext/bazi/sanming-tonghui/fulltext.md
+    start_line: 3787
+    end_line: 3787
+  quote: '### 還魂借氣'
   applicable_to: []
   caveats:
   - 借气非原气，行运变则格局随之而变
@@ -1251,8 +1515,11 @@ rules:
 - rule_id: SANMINGTONGH-097
   kind: doctrine
   statement: 八专日（甲寅、乙卯、丁未、己未、庚申、辛酉、壬子、癸丑）日坐禄旺之地，身强为论；以月令它格为用。
-  anchor: null
-  quote: 八专日（甲寅、乙卯、丁未、己未、庚申、辛酉、壬子、癸丑）日坐禄旺之地，身强为论；以月令它格为用。
+  anchor:
+    file: sources/fulltext/bazi/sanming-tonghui/fulltext.md
+    start_line: 9713
+    end_line: 9713
+  quote: 〔支干同類如甲寅乙卯丙午丁未庚申辛酉壬子癸丑戊午己未戊戌己丑是也行運會煞必主不祿以其恃強與煞相争煞竟尅身故也〕
   applicable_to: []
   caveats:
   - 八专日身强需看是否过旺无制
@@ -1264,8 +1531,11 @@ rules:
 - rule_id: SANMINGTONGH-098
   kind: doctrine
   statement: 土局润下（土遇水局，克中有生）；金白水清（金水相生，主聪明）；木火交辉（木火通明，主文采）；火金铸印（火炼金成器，主权威）；火土夹杂（火土过燥需水润）。五者皆属两五行配合的特殊格局。
-  anchor: null
-  quote: 土局润下（土遇水局，克中有生）；金白水清（金水相生，主聪明）；木火交辉（木火通明，主文采）；火金铸印（火炼金成器，主权威）；火土夹杂（火土过燥需水润）。五者皆属两五行配合的特殊格局。
+  anchor:
+    file: sources/fulltext/bazi/sanming-tonghui/fulltext.md
+    start_line: 3841
+    end_line: 3841
+  quote: '### 土局潤下'
   applicable_to: []
   caveats:
   - 此五格为五行搭配而成的特殊取象，不属标准八格
@@ -1277,8 +1547,11 @@ rules:
 - rule_id: SANMINGTONGH-099
   kind: doctrine
   statement: 辰戌丑未墓库遇七煞为墓煞；墓煞凶中藏变，有制化（食神制煞或印化煞）则可转凶为吉。
-  anchor: null
-  quote: 辰戌丑未墓库遇七煞为墓煞；墓煞凶中藏变，有制化（食神制煞或印化煞）则可转凶为吉。
+  anchor:
+    file: sources/fulltext/bazi/sanming-tonghui/fulltext.md
+    start_line: 8957
+    end_line: 8957
+  quote: 宅墓受煞落梁塵以呻吟喪弔臨人變宫商為薤露〔命前五辰為宅命後五辰為墓煞刼煞灾煞歲煞也命前二辰為喪門命後二辰為弔客人人元也古之善歌者有遶梁之聲善唱者合宫商之曲今易以呻吟愁嘆變為薤露挽歌則喪弔臨門宅墓受煞故也其或太歲凶煞臨併大小運限刑衝必致凶禍切宜
   applicable_to: []
   caveats:
   - 墓煞非必凶
@@ -1290,8 +1563,11 @@ rules:
 - rule_id: SANMINGTONGH-100
   kind: doctrine
   statement: 四位纯全（四柱干支同气纯一）与一气生成（四柱地支顺连如寅卯辰巳）皆为专一格局；纯全太过则偏枯，一气顺连为美、逆乱则破。
-  anchor: null
-  quote: 四位纯全（四柱干支同气纯一）与一气生成（四柱地支顺连如寅卯辰巳）皆为专一格局；纯全太过则偏枯，一气顺连为美、逆乱则破。
+  anchor:
+    file: sources/fulltext/bazi/sanming-tonghui/fulltext.md
+    start_line: 3892
+    end_line: 3892
+  quote: 〔即四位純全如天干同類為天元一氣如支神一字為地物相同三格併論〕
   applicable_to: []
   caveats:
   - 纯全格在现代较少见
@@ -1303,8 +1579,11 @@ rules:
 - rule_id: SANMINGTONGH-101
   kind: doctrine
   statement: 背禄逐马（禄被背不得、马被逐失势）为古法凶断；十干十二年生大贵人例为十干各年大贵人的枚举配合。
-  anchor: null
-  quote: 背禄逐马（禄被背不得、马被逐失势）为古法凶断；十干十二年生大贵人例为十干各年大贵人的枚举配合。
+  anchor:
+    file: sources/fulltext/bazi/sanming-tonghui/fulltext.md
+    start_line: 4361
+    end_line: 4361
+  quote: '### 十干十二年生大貴人例'
   applicable_to: []
   caveats:
   - 背禄逐马为古法凶断，需结合整体格局复核不可独断
@@ -1316,8 +1595,11 @@ rules:
 - rule_id: SANMINGTONGH-102
   kind: doctrine
   statement: 岁带正马（年柱正财，祖上有财，需身强能任）；时带正马（时柱正财，晚年财运，忌比劫夺）；天元坐财（日干自坐财，主自身得财，忌坐下被冲）；时上偏财（时上偏财一位为贵，忌劫财夺）；日坐天财（特定日柱坐财得贵）。
-  anchor: null
-  quote: 岁带正马（年柱正财，祖上有财，需身强能任）；时带正马（时柱正财，晚年财运，忌比劫夺）；天元坐财（日干自坐财，主自身得财，忌坐下被冲）；时上偏财（时上偏财一位为贵，忌劫财夺）；日坐天财（特定日柱坐财得贵）。
+  anchor:
+    file: sources/fulltext/bazi/sanming-tonghui/fulltext.md
+    start_line: 3230
+    end_line: 3230
+  quote: 為貴〔又〕時上偏財不用多支干須要用搜羅喜逢財旺兼身旺衝破傷官受折磨〔又〕時上偏財一位逢不遭衝破享榮豐比肩刼財還無遇富貴䨇全比石崇〔又〕時上偏財遇刼辰田園破盡苦還貧傷妻損妾多遭辱食不相資困在陳
   applicable_to: []
   caveats:
   - 财在何柱何位只是参考信息
@@ -1329,8 +1611,11 @@ rules:
 - rule_id: SANMINGTONGH-103
   kind: doctrine
   statement: 时逢生印（时上印绶，晚年得印护身，需区分正印/偏印，偏印夺食为忌）；胞胎逢印绶（胎元得印，根基深厚，现代多用月柱替代胎元）。
-  anchor: null
-  quote: 时逢生印（时上印绶，晚年得印护身，需区分正印/偏印，偏印夺食为忌）；胞胎逢印绶（胎元得印，根基深厚，现代多用月柱替代胎元）。
+  anchor:
+    file: sources/fulltext/bazi/sanming-tonghui/fulltext.md
+    start_line: 3301
+    end_line: 3301
+  quote: '### 時逢生印'
   applicable_to: []
   caveats:
   - 胞胎（胎元）为古法概念，现代八字排盘通常不含胎元柱
@@ -1342,8 +1627,11 @@ rules:
 - rule_id: SANMINGTONGH-104
   kind: doctrine
   statement: 大运入墓为收藏、转变之期，非必凶；身强入墓伏藏（收敛），身弱入墓得藏（安稳）；墓运过后复出则有新局。
-  anchor: null
-  quote: 大运入墓为收藏、转变之期，非必凶；身强入墓伏藏（收敛），身弱入墓得藏（安稳）；墓运过后复出则有新局。
+  anchor:
+    file: sources/fulltext/bazi/sanming-tonghui/fulltext.md
+    start_line: 8167
+    end_line: 8167
+  quote: 〔財官之氣均停有拱更加貴氣於上爲吉爲庫庫中雜氣有三件若當旺相為貴益我者妙若官化鬼入墓財神休囚入墓為凶則不為庫若吉神入庫仍帶休廢來刑且尅我者亦非庫〕
   applicable_to: []
   caveats:
   - 墓运因人而异
@@ -1356,8 +1644,11 @@ rules:
 - rule_id: SANMINGTONGH-105
   kind: doctrine
   statement: 倒冲禄（日时冲合求禄，与飞天禄马同理）；福星贵人（特定日柱带的福神，主福禄，神煞辅证）；食神同窠（食神与日干同柱，主子旺食丰，需不逢偏印夺食）；食神带合（食神被合则制煞不力或食力转变）；红鸾天印（红鸾桃花+天印，主婚喜或文印之喜，神煞辅证）；墨池涌泉（水局涌动文思如泉，主文贵）。
-  anchor: null
-  quote: 倒冲禄（日时冲合求禄，与飞天禄马同理）；福星贵人（特定日柱带的福神，主福禄，神煞辅证）；食神同窠（食神与日干同柱，主子旺食丰，需不逢偏印夺食）；食神带合（食神被合则制煞不力或食力转变）；红鸾天印（红鸾桃花+天印，主婚喜或文印之喜，神煞辅证）；墨池涌泉（水局涌动文思如泉，主文贵）。
+  anchor:
+    file: sources/fulltext/bazi/sanming-tonghui/fulltext.md
+    start_line: 3709
+    end_line: 3709
+  quote: 神為印見己酉丑金局能生癸水喜秋冬亦不喜生四月以水絶於巳雖然金生在巳以金生水亦不能絶得官印運便能發福只嫌火財傷金〔或曰〕此三日與飛天禄馬同如生巳月名為月臨風是謂塡實貴位亦通辛巳辛酉辛丑三日柱全金局為妙若見午戌火旺有破反生災咎若通丙火旺為正氣官星或
   applicable_to: []
   caveats:
   - 全部属古法杂格或神煞辅证
@@ -1369,8 +1660,11 @@ rules:
 - rule_id: SANMINGTONGH-106
   kind: doctrine
   statement: 本书卷六所载杂格（壬骑龙背、遥合禄马、飞天禄马、六神兽格、趋乾趋艮等 30+ 项）多数属古法、唐宋朝禄命法或取象法，不属后世子平格局体系的主流结论；杂格可作趣味参考或历史源流追踪，但不得替代正格（八格+建禄阳刃+外格）的判断。
-  anchor: null
-  quote: 本书卷六所载杂格（壬骑龙背、遥合禄马、飞天禄马、六神兽格、趋乾趋艮等 30+ 项）多数属古法、唐宋朝禄命法或取象法，不属后世子平格局体系的主流结论；杂格可作趣味参考或历史源流追踪，但不得替代正格（八格+建禄阳刃+外格）的判断。
+  anchor:
+    file: sources/fulltext/bazi/sanming-tonghui/fulltext.md
+    start_line: 3517
+    end_line: 3517
+  quote: 〔喜忌篇云〕陽水叠逄辰位是壬騎龍背之鄉此格以壬日坐辰壬以丁為財巳為官壬用支辰暗衝戍中丁戊壬日得財官之貴柱中湏辰多方能衝起再得一寅字合住財官為妙不宜財官顯露喜行身旺及傷官食神運忌南方財官之地柱有丁巳午戌只作財官論若壬日坐寅柱中辰多亦取此格以壬食甲
   applicable_to: []
   caveats:
   - 主 skill 在遇到杂格相关提问时，默认先以正格（月令格局）为第一判断路径

@@ -52,8 +52,11 @@ rules:
 - rule_id: HDZJ-R004
   kind: doctrine
   statement: 先修刑祸、后修福德为吉；先修福德、后修刑祸为凶。
-  anchor: null
-  quote: 先修刑祸、后修福德为吉；先修福德、后修刑祸为凶。
+  anchor:
+    file: sources/fulltext/fengshui/huangdi-zhaijing/fulltext.md
+    start_line: 38
+    end_line: 38
+  quote: 先修刑禍後修福徳即吉先修福徳後修刑禍即凶陰宅從巳起功順轉陽宅從亥起功順轉刑禍方用一百工福徳方用二百工壓之即吉陽宅多修於外陰宅多修於内或者取子午分陰陽之界悞將甚也此是二氣潛通運迴之數不同八卦九宫分形列象配男女之位也〔冬至巳夏至亥是陰陽起盛之極處
   applicable_to: []
   caveats: []
   school: null

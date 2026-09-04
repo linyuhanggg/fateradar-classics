@@ -10,8 +10,11 @@ rules:
 - rule_id: BR
   kind: doctrine
   statement: 01 神骨章
-  anchor: null
-  quote: 01 神骨章
+  anchor:
+    file: sources/fulltext/physiognomy/bingjian/fulltext.md
+    start_line: 29
+    end_line: 29
+  quote: '## 神骨章第一'
   applicable_to: []
   caveats: []
   school: null
@@ -137,8 +140,11 @@ rules:
 - rule_id: BINGJIAN-BR
   kind: doctrine
   statement: 02 刚柔章
-  anchor: null
-  quote: 02 刚柔章
+  anchor:
+    file: sources/fulltext/physiognomy/bingjian/fulltext.md
+    start_line: 41
+    end_line: 41
+  quote: '## 剛柔章第二'
   applicable_to: []
   caveats: []
   school: null
@@ -233,8 +239,11 @@ rules:
 - rule_id: BINGJIAN-015
   kind: doctrine
   statement: 03 容貌章
-  anchor: null
-  quote: 03 容貌章
+  anchor:
+    file: sources/fulltext/physiognomy/bingjian/fulltext.md
+    start_line: 58
+    end_line: 58
+  quote: '## 容貌章第三'
   applicable_to: []
   caveats: []
   school: null
@@ -312,8 +321,11 @@ rules:
 - rule_id: BINGJIAN-020
   kind: doctrine
   statement: 04 情态章
-  anchor: null
-  quote: 04 情态章
+  anchor:
+    file: sources/fulltext/physiognomy/bingjian/fulltext.md
+    start_line: 76
+    end_line: 76
+  quote: '## 情態章第四'
   applicable_to: []
   caveats: []
   school: null
@@ -374,8 +386,11 @@ rules:
 - rule_id: BINGJIAN-024
   kind: doctrine
   statement: 05 须眉章
-  anchor: null
-  quote: 05 须眉章
+  anchor:
+    file: sources/fulltext/physiognomy/bingjian/fulltext.md
+    start_line: 84
+    end_line: 84
+  quote: '## 鬚眉章第五'
   applicable_to: []
   caveats: []
   school: null
@@ -454,8 +469,11 @@ rules:
 - rule_id: BINGJIAN-029
   kind: doctrine
   statement: 06 声音章
-  anchor: null
-  quote: 06 声音章
+  anchor:
+    file: sources/fulltext/physiognomy/bingjian/fulltext.md
+    start_line: 118
+    end_line: 118
+  quote: '## 聲音章第六'
   applicable_to: []
   caveats: []
   school: null
@@ -532,8 +550,11 @@ rules:
 - rule_id: BINGJIAN-034
   kind: doctrine
   statement: 07 气色章
-  anchor: null
-  quote: 07 气色章
+  anchor:
+    file: sources/fulltext/physiognomy/bingjian/fulltext.md
+    start_line: 139
+    end_line: 139
+  quote: '## 氣色章第七'
   applicable_to: []
   caveats: []
   school: null

@@ -22,8 +22,11 @@ rules:
 - rule_id: HUANGJIJINGS-HR-01
   kind: doctrine
   statement: 邵雍以"子会"开物（万物始）、"丑会"立地、"寅会"生人；亥会闭物（万物归）。
-  anchor: null
-  quote: 邵雍以"子会"开物（万物始）、"丑会"立地、"寅会"生人；亥会闭物（万物归）。
+  anchor:
+    file: sources/fulltext/divination/huangji-jingshi/fulltext.md
+    start_line: 20177
+    end_line: 20177
+  quote: 皇極經世書卷五上    宋 邵雍 撰
   applicable_to: []
   caveats:
   - 属术数史观，非自然演化论
@@ -34,8 +37,11 @@ rules:
 - rule_id: HUANGJIJINGS-003
   kind: doctrine
   statement: 以元经会主天之运（卷一至二）、以会经运主地之化（卷三至四）、以运经世主人物之事（卷五至六）；以世经世落具体年甲子（卷七至十）。
-  anchor: null
-  quote: 以元经会主天之运（卷一至二）、以会经运主地之化（卷三至四）、以运经世主人物之事（卷五至六）；以世经世落具体年甲子（卷七至十）。
+  anchor:
+    file: sources/fulltext/divination/huangji-jingshi/fulltext.md
+    start_line: 26223
+    end_line: 26223
+  quote: 皇極經世書卷六下    宋 邵雍 撰觀物篇三十四  以運經世十
   applicable_to: []
   caveats:
   - —
@@ -95,8 +101,11 @@ rules:
 - rule_id: HR-04
   kind: doctrine
   statement: 八卦先天数：乾 1、兑 2、离 3、震 4、巽 5、坎 6、艮 7、坤 8。
-  anchor: null
-  quote: 八卦先天数：乾 1、兑 2、离 3、震 4、巽 5、坎 6、艮 7、坤 8。
+  anchor:
+    file: sources/fulltext/divination/huangji-jingshi/fulltext.md
+    start_line: 37145
+    end_line: 37145
+  quote: 先天學心法也故圖皆自中起萬化萬事生乎心也先天學主乎誠至誠可以通神明不誠則不可以得道先天之學心也後天之學迹也
   applicable_to: []
   caveats:
   - 起具体卦应由 `tool.divination.qiguagua`（梅花体系）处理
@@ -108,8 +117,11 @@ rules:
 - rule_id: HUANGJIJINGS-HR-04
   kind: doctrine
   statement: 每加一爻卦数倍增；太极生两仪→四象→八卦→十六→三十二→六十四。
-  anchor: null
-  quote: 每加一爻卦数倍增；太极生两仪→四象→八卦→十六→三十二→六十四。
+  anchor:
+    file: sources/fulltext/divination/huangji-jingshi/fulltext.md
+    start_line: 37239
+    end_line: 37239
+  quote: 萬物各有太極兩儀四象八卦之次亦有古今之象隂陽分而生二儀二儀交而生四象四象交而生八卦八卦交而生萬物故二儀生天地之類四象定天地之體四象生八卦之類八卦定日月之體八卦生萬物之類重卦定萬物之體類者生之序也體者象之交也推類者必本乎生觀體者必由乎象生則未
   applicable_to: []
   caveats:
   - —
@@ -120,8 +132,11 @@ rules:
 - rule_id: HUANGJIJINGS-010
   kind: doctrine
   statement: 先天八卦方位（伏羲）— 乾南坤北、离东坎西；后天八卦方位（文王）— 离南坎北、震东兑西。
-  anchor: null
-  quote: 先天八卦方位（伏羲）— 乾南坤北、离东坎西；后天八卦方位（文王）— 离南坎北、震东兑西。
+  anchor:
+    file: sources/fulltext/divination/huangji-jingshi/fulltext.md
+    start_line: 37022
+    end_line: 37022
+  quote: 主嬴也乾坤不用者何也獨陽不生專隂不成也離坎用半何也離東坎西當隂陽之半為春秋晝夜之門也或用乾或用離坎何也主陽而言之故用乾也主嬴分而言之則陽侵隂晝侵夜故用離坎也陽主嬴故乾全用也隂主虚故坤全不用也陽侵隂隂侵陽故離坎用半也是以天之南全見而北全不見東
   applicable_to: []
   caveats:
   - 梅花易数兼用先后天，本书仅辨先天
@@ -144,8 +159,11 @@ rules:
 - rule_id: HR-05
   kind: doctrine
   statement: 以物观物则得理通，以我观物则有情累；圣人之观物在反观。
-  anchor: null
-  quote: 以物观物则得理通，以我观物则有情累；圣人之观物在反观。
+  anchor:
+    file: sources/fulltext/divination/huangji-jingshi/fulltext.md
+    start_line: 36973
+    end_line: 36973
+  quote: 之聖人也夫鑑之所以能為朙者謂其能不隠萬物之形也雖然鑑之能不隠萬物之形未若水之能一萬物之形也雖然水之能一萬物之形又未若聖人之能一萬物之情也聖人之所以能一萬物之情者謂其聖人之能反觀也所以謂之反觀者不以我觀物也不以我觀物者以物觀物之謂也既能以物觀
   applicable_to: []
   caveats:
   - 属哲学义理，非具体占断规则
@@ -156,8 +174,11 @@ rules:
 - rule_id: HUANGJIJINGS-HR-05
   kind: doctrine
   statement: 天地之心可知，万化从心起；心为太极，万象皆心之发。
-  anchor: null
-  quote: 天地之心可知，万化从心起；心为太极，万象皆心之发。
+  anchor:
+    file: sources/fulltext/divination/huangji-jingshi/fulltext.md
+    start_line: 37237
+    end_line: 37237
+  quote: 太極道之極也太𤣥道之𤣥也太素色之本也太一數之始也太初事之初也其成功則一也
   applicable_to: []
   caveats:
   - —
@@ -168,8 +189,11 @@ rules:
 - rule_id: HUANGJIJINGS-014
   kind: doctrine
   statement: 乾坤为体、坎离为用；体不立则用不行，用不行则体不显。
-  anchor: null
-  quote: 乾坤为体、坎离为用；体不立则用不行，用不行则体不显。
+  anchor:
+    file: sources/fulltext/divination/huangji-jingshi/fulltext.md
+    start_line: 37103
+    end_line: 37103
+  quote: 乾坤坎離為上篇之用兊艮震巽為下篇之用也頥中孚大過小過為二篇之正也
   applicable_to: []
   caveats:
   - 与梅花易数"体用生克"占法不同
@@ -181,8 +205,11 @@ rules:
 - rule_id: HR-06
   kind: doctrine
   statement: 天声 10 类配地音 12 类、平上去入 4 调 × 开发收闭 4 等；声音之数皆受元会运世数管摄。
-  anchor: null
-  quote: 天声 10 类配地音 12 类、平上去入 4 调 × 开发收闭 4 等；声音之数皆受元会运世数管摄。
+  anchor:
+    file: sources/fulltext/divination/huangji-jingshi/fulltext.md
+    start_line: 36954
+    end_line: 36954
+  quote: 剛少剛之用數是謂水火土石之化數日月星辰之變數一萬七千二十四謂之動數水火土石之化數一萬七千二十四謂之植數再唱和日月星辰水火土石之變化通數二萬八千九百八十一萬六千五百七十六謂之動植通數
   applicable_to: []
   caveats:
   - 与现代音韵学需对照
@@ -194,8 +221,11 @@ rules:
 - rule_id: HUANGJIJINGS-HR-06
   kind: doctrine
   statement: 天声唱、地音和；唱和成则音律备。
-  anchor: null
-  quote: 天声唱、地音和；唱和成则音律备。
+  anchor:
+    file: sources/fulltext/divination/huangji-jingshi/fulltext.md
+    start_line: 36954
+    end_line: 36954
+  quote: 剛少剛之用數是謂水火土石之化數日月星辰之變數一萬七千二十四謂之動數水火土石之化數一萬七千二十四謂之植數再唱和日月星辰水火土石之變化通數二萬八千九百八十一萬六千五百七十六謂之動植通數
   applicable_to: []
   caveats:
   - —
@@ -206,8 +236,11 @@ rules:
 - rule_id: HR-07
   kind: doctrine
   statement: 万物分动 / 植 / 飞 / 走；总数受元会运世数管摄；动植之数 12 万 8 千有奇。
-  anchor: null
-  quote: 万物分动 / 植 / 飞 / 走；总数受元会运世数管摄；动植之数 12 万 8 千有奇。
+  anchor:
+    file: sources/fulltext/divination/huangji-jingshi/fulltext.md
+    start_line: 36954
+    end_line: 36954
+  quote: 剛少剛之用數是謂水火土石之化數日月星辰之變數一萬七千二十四謂之動數水火土石之化數一萬七千二十四謂之植數再唱和日月星辰水火土石之變化通數二萬八千九百八十一萬六千五百七十六謂之動植通數
   applicable_to: []
   caveats:
   - 术数符号意义，非生物学分类
@@ -218,8 +251,11 @@ rules:
 - rule_id: HR-09
   kind: doctrine
   statement: 元会运世年甲子表 / 卦气配年表 / 声音律吕表，凡查询事实层运算，必须 `tool.divination.huangji`，**严禁 LLM 手算**。
-  anchor: null
-  quote: 元会运世年甲子表 / 卦气配年表 / 声音律吕表，凡查询事实层运算，必须 `tool.divination.huangji`，**严禁 LLM 手算**。
+  anchor:
+    file: sources/fulltext/divination/huangji-jingshi/fulltext.md
+    start_line: 37492
+    end_line: 37492
+  quote: 先天者伏羲之易也後天者文王之易也太元者子雲之易後天之匹也皇極經世者康節之易先天之嗣也觀物篇立言廣大措意精微如繋辭然稽之以理既無不通參之以數亦無不合經世之數元㑹運世主之天而地也觀物之數聲音律吕主之地而物也夫天之運行有一十二萬九千六百之年地之生
   applicable_to: []
   caveats:
   - 手算极易出错
@@ -231,8 +267,11 @@ rules:
 - rule_id: HUANGJIJINGS-HR-09
   kind: doctrine
   statement: 邵雍以唐尧元年甲辰（公元前 2357 年）为经世表元始首甲；后续年甲子均依此推。
-  anchor: null
-  quote: 邵雍以唐尧元年甲辰（公元前 2357 年）为经世表元始首甲；后续年甲子均依此推。
+  anchor:
+    file: sources/fulltext/divination/huangji-jingshi/fulltext.md
+    start_line: 13475
+    end_line: 13475
+  quote: 經辰之申二千一百五十七
   applicable_to: []
   caveats:
   - 与《竹书纪年》《史记·三代世表》等他源元始有出入

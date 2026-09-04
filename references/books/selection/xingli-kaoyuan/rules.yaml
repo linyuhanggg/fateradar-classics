@@ -22,8 +22,11 @@ rules:
 - rule_id: KR-02
   kind: doctrine
   statement: 五纪（岁、月、日、星辰、历数）与甲历（六十甲子）共同构成择日体系的时间坐标。
-  anchor: null
-  quote: 五纪（岁、月、日、星辰、历数）与甲历（六十甲子）共同构成择日体系的时间坐标。
+  anchor:
+    file: sources/fulltext/selection/xingli-kaoyuan/fulltext.md
+    start_line: 38
+    end_line: 38
+  quote: 洪範曰四五紀一曰嵗二曰月三曰日四曰星辰五曰厯數嵗者日與天㑹也日一日行一度三百六十五日有竒而匝天一週復與天㑹是為一嵗而春夏秋冬統於其間矣月者日與月㑹也日一日行一度月一日行十三度有奇二十七日有奇而匝天一週又二日有奇而與日㑹是為一月而晦朔望統於其
   applicable_to: []
   caveats: []
   school: null
@@ -33,8 +36,11 @@ rules:
 - rule_id: KR-03
   kind: doctrine
   statement: 十二月配十二消息卦：复（子）、临（丑）、泰（寅）、大壮（卯）、夬（辰）、乾（巳）、姤（午）、遯（未）、否（申）、观（酉）、剥（戌）、坤（亥）。
-  anchor: null
-  quote: 十二月配十二消息卦：复（子）、临（丑）、泰（寅）、大壮（卯）、夬（辰）、乾（巳）、姤（午）、遯（未）、否（申）、观（酉）、剥（戌）、坤（亥）。
+  anchor:
+    file: sources/fulltext/selection/xingli-kaoyuan/fulltext.md
+    start_line: 1266
+    end_line: 1266
+  quote: 按十日為旬以十干配十二支自甲至癸而止餘二辰天干不及故為空亡也如甲子起至癸酉止不及戌亥故甲子旬十日皆以戌亥為空餘倣此
   applicable_to: []
   caveats: []
   school: null
@@ -44,8 +50,11 @@ rules:
 - rule_id: KR-04
   kind: doctrine
   statement: 二十四方位（十二支 + 八天干 + 四维）对应二十四节气；方位与节气共构空间-时间矩阵。
-  anchor: null
-  quote: 二十四方位（十二支 + 八天干 + 四维）对应二十四节气；方位与节气共构空间-时间矩阵。
+  anchor:
+    file: sources/fulltext/selection/xingli-kaoyuan/fulltext.md
+    start_line: 138
+    end_line: 138
+  quote: 立春艮雨水寅驚蟄甲春分卯
   applicable_to: []
   caveats: []
   school: null
@@ -55,8 +64,11 @@ rules:
 - rule_id: KR-05
   kind: doctrine
   statement: 五虎遁（年起月）：甲己起丙寅、乙庚起戊寅、丙辛起庚寅、丁壬起壬寅、戊癸起甲寅；五鼠遁（日起时）：甲己起甲子、乙庚起丙子、丙辛起戊子、丁壬起庚子、戊癸起壬子。
-  anchor: null
-  quote: 五虎遁（年起月）：甲己起丙寅、乙庚起戊寅、丙辛起庚寅、丁壬起壬寅、戊癸起甲寅；五鼠遁（日起时）：甲己起甲子、乙庚起丙子、丙辛起戊子、丁壬起庚子、戊癸起壬子。
+  anchor:
+    file: sources/fulltext/selection/xingli-kaoyuan/fulltext.md
+    start_line: 340
+    end_line: 340
+  quote: 〔從寅算起以五陽干配五寅位故為五虎〕
   applicable_to: []
   caveats: []
   school: null
@@ -66,8 +78,11 @@ rules:
 - rule_id: KR-06
   kind: doctrine
   statement: 三合：申子辰水、亥卯未木、寅午戌火、巳酉丑金；五合（天干）：甲己土、乙庚金、丙辛水、丁壬木、戊癸火；六合（地支）：子丑、寅亥、卯戌、辰酉、巳申、午未。
-  anchor: null
-  quote: 三合：申子辰水、亥卯未木、寅午戌火、巳酉丑金；五合（天干）：甲己土、乙庚金、丙辛水、丁壬木、戊癸火；六合（地支）：子丑、寅亥、卯戌、辰酉、巳申、午未。
+  anchor:
+    file: sources/fulltext/selection/xingli-kaoyuan/fulltext.md
+    start_line: 679
+    end_line: 679
+  quote: 曾門經曰三合者異位而同氣也寅午戌火之三合巳酉丑金之三合申子辰水之三合亥卯未木之三合其日宜結會親姻和合交易修營起土立木上梁○
   applicable_to: []
   caveats: []
   school: null
@@ -77,8 +92,11 @@ rules:
 - rule_id: KR-07
   kind: doctrine
   statement: 上中下三元各 60 年，每元起九星入中宫；上元起一白、中元起四绿、下元起七赤；逐年逆转。
-  anchor: null
-  quote: 上中下三元各 60 年，每元起九星入中宫；上元起一白、中元起四绿、下元起七赤；逐年逆转。
+  anchor:
+    file: sources/fulltext/selection/xingli-kaoyuan/fulltext.md
+    start_line: 398
+    end_line: 398
+  quote: 上元〔子午卯酉四仲年〕 中元〔辰戌丑未四季年〕 下元〔寅申巳亥四孟年〕正月 八白  正月 五黃  正月 二黑二月 七赤  二月 四緑  二月 一白三月 六白  三月 三碧  三月 九紫四月 五黃  四月 二黑  四月 八白五月 四綠  五月 一白  五月 七赤六月 三碧  六月 九紫  六月 六白七月 二黑  七月 八白  七月 五黃八月 一白  八月 七赤
   applicable_to: []
   caveats: []
   school: null
@@ -88,8 +106,11 @@ rules:
 - rule_id: KR-08
   kind: doctrine
   statement: 太岁为年神之首，居当年地支位；年神有岁德合 / 岁枝德等吉神，与大将军 / 太阴 / 白虎 / 豹尾 / 金神七煞 / 力士等凶神。
-  anchor: null
-  quote: 太岁为年神之首，居当年地支位；年神有岁德合 / 岁枝德等吉神，与大将军 / 太阴 / 白虎 / 豹尾 / 金神七煞 / 力士等凶神。
+  anchor:
+    file: sources/fulltext/selection/xingli-kaoyuan/fulltext.md
+    start_line: 456
+    end_line: 456
+  quote: 神樞經曰太隂者嵗后也常居嵗後二辰所理之地不可興修○蓬瀛書曰嵗在四孟則與大將軍合於四仲名曰羣醜○曹震圭曰后妃所居者后宫也后宫之星在帝後二星〔紫微垣北極五星第二為帝星第四為后宫〕故太隂常居太嵗後二辰子年起戌順行十二辰如子年則在戌丑年則在亥寅年則在子是也
   applicable_to: []
   caveats:
   - 文化参考，非事实判断
@@ -113,8 +134,11 @@ rules:
 - rule_id: KR-10
   kind: doctrine
   statement: 大将军居太岁三方之冲（一说三方对宫），主战伐之神；忌兴造、动土、伐木。
-  anchor: null
-  quote: 大将军居太岁三方之冲（一说三方对宫），主战伐之神；忌兴造、动土、伐木。
+  anchor:
+    file: sources/fulltext/selection/xingli-kaoyuan/fulltext.md
+    start_line: 456
+    end_line: 456
+  quote: 神樞經曰太隂者嵗后也常居嵗後二辰所理之地不可興修○蓬瀛書曰嵗在四孟則與大將軍合於四仲名曰羣醜○曹震圭曰后妃所居者后宫也后宫之星在帝後二星〔紫微垣北極五星第二為帝星第四為后宫〕故太隂常居太嵗後二辰子年起戌順行十二辰如子年則在戌丑年則在亥寅年則在子是也
   applicable_to: []
   caveats:
   - 文化参考，非事实判断
@@ -125,8 +149,11 @@ rules:
 - rule_id: KR-11
   kind: doctrine
   statement: 天德（按月轮转吉方）、月德（与天德并列）、月空（虚位之吉）、母仓（主孳息）共为月吉神核心；月德合 / 天德合为其合神。
-  anchor: null
-  quote: 天德（按月轮转吉方）、月德（与天德并列）、月空（虚位之吉）、母仓（主孳息）共为月吉神核心；月德合 / 天德合为其合神。
+  anchor:
+    file: sources/fulltext/selection/xingli-kaoyuan/fulltext.md
+    start_line: 606
+    end_line: 606
+  quote: 按天德合者即各以其月天德所合之干為之月德合
   applicable_to: []
   caveats: []
   school: null
@@ -148,8 +175,11 @@ rules:
 - rule_id: KR-13
   kind: doctrine
   statement: 四废：春庚辛日、夏壬癸日、秋甲乙日、冬丙丁日；四离：二分二至前一日；四绝：四立前一日。共为节气交替之大忌。
-  anchor: null
-  quote: 四废：春庚辛日、夏壬癸日、秋甲乙日、冬丙丁日；四离：二分二至前一日；四绝：四立前一日。共为节气交替之大忌。
+  anchor:
+    file: sources/fulltext/selection/xingli-kaoyuan/fulltext.md
+    start_line: 945
+    end_line: 945
+  quote: 廣聖厯曰四廢者四時衰謝之辰也其日忌出軍征伐造舍迎親封建拜官納財開市○
   applicable_to: []
   caveats:
   - 文化参考，非事实判断
@@ -160,8 +190,11 @@ rules:
 - rule_id: KR-14
   kind: doctrine
   statement: 黄道六神：青龙、明堂、金匮、天德、玉堂、司命（吉）；黑道六神：天刑、朱雀、白虎、天牢、玄武、勾陈（凶）；按月建逐日轮配。
-  anchor: null
-  quote: 黄道六神：青龙、明堂、金匮、天德、玉堂、司命（吉）；黑道六神：天刑、朱雀、白虎、天牢、玄武、勾陈（凶）；按月建逐日轮配。
+  anchor:
+    file: sources/fulltext/selection/xingli-kaoyuan/fulltext.md
+    start_line: 1213
+    end_line: 1213
+  quote: 按黄黑二道者黄道六黑道六共十有二以配十有二辰一青龍二明堂三天刑四朱雀五金匱六天徳七白虎八玉堂九天牢十元武十一司命十二勾陳其法則寅申青龍起子卯酉起寅辰戌起辰巳亥起午子午起申丑未起戌順行十二辰月起日則建寅之月子日為青龍丑日為明堂日起時則子日申時
   applicable_to: []
   caveats: []
   school: null
@@ -171,8 +204,11 @@ rules:
 - rule_id: KR-15
   kind: doctrine
   statement: 二十八宿（角亢氐房心尾箕…）按七曜（日月火水木金土）周而复始配日；每宿主吉凶不同。
-  anchor: null
-  quote: 二十八宿（角亢氐房心尾箕…）按七曜（日月火水木金土）周而复始配日；每宿主吉凶不同。
+  anchor:
+    file: sources/fulltext/selection/xingli-kaoyuan/fulltext.md
+    start_line: 1253
+    end_line: 1253
+  quote: 按日有六十宿有二十八四百二十日而一週四百二十者以六十與二十八俱可以度盡也故有七元之説一元甲子日起虚以子象鼠而虚為日鼠也二元甲子起奎三元甲子起畢四元甲子起鬼五元甲子起翼六元甲子起氐七元甲子起箕至七元盡而甲子又起虚周而復始但一元起於何年月日則不
   applicable_to: []
   caveats: []
   school: null
@@ -206,8 +242,11 @@ rules:
 - rule_id: KR-18
   kind: doctrine
   statement: 嫁娶择日宜天德 / 月德 / 天德合 / 月德合 / 三合 / 六合等吉神；忌月厌 / 月破 / 受死 / 八专 / 四废等。
-  anchor: null
-  quote: 嫁娶择日宜天德 / 月德 / 天德合 / 月德合 / 三合 / 六合等吉神；忌月厌 / 月破 / 受死 / 八专 / 四废等。
+  anchor:
+    file: sources/fulltext/selection/xingli-kaoyuan/fulltext.md
+    start_line: 599
+    end_line: 599
+  quote: 天寳厯曰月德者月之德神也取土修營宜向其方宴樂上官利用其日○
   applicable_to: []
   caveats:
   - 文化参考，非事实判断
@@ -218,8 +257,11 @@ rules:
 - rule_id: KR-19
   kind: doctrine
   statement: 安葬宜鸣吠 / 鸣吠对 / 月恩 / 三合等；忌重丧 / 复日 / 重日 / 月破 / 月厌等。
-  anchor: null
-  quote: 安葬宜鸣吠 / 鸣吠对 / 月恩 / 三合等；忌重丧 / 复日 / 重日 / 月破 / 月厌等。
+  anchor:
+    file: sources/fulltext/selection/xingli-kaoyuan/fulltext.md
+    start_line: 868
+    end_line: 868
+  quote: 一行經云鳴吠對日者是五姓外宅用之破土斬草也○鳴吠對日者丙寅丁卯丙子辛卯甲午庚子癸卯壬子甲寅乙卯也
   applicable_to: []
   caveats:
   - 文化参考，非事实判断
@@ -230,8 +272,11 @@ rules:
 - rule_id: KR-20
   kind: doctrine
   statement: 起造 / 修造动土宜成日 / 开日 / 月恩 / 母仓；忌土王用事 / 月破 / 月厌 / 大将军 / 金神七煞方。
-  anchor: null
-  quote: 起造 / 修造动土宜成日 / 开日 / 月恩 / 母仓；忌土王用事 / 月破 / 月厌 / 大将军 / 金神七煞方。
+  anchor:
+    file: sources/fulltext/selection/xingli-kaoyuan/fulltext.md
+    start_line: 1717
+    end_line: 1717
+  quote: 厯例曰凡釀酒醴和醯醢等事宜成日定日忌辛日破日
   applicable_to: []
   caveats:
   - 文化参考，非事实判断

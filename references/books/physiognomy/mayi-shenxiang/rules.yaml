@@ -10,8 +10,11 @@ rules:
 - rule_id: MR
   kind: doctrine
   statement: 引用本 pack 前必须先判断文本层：第 2-11 页为古籍转写层；第 1、12-14 页为现代附益层。
-  anchor: null
-  quote: 引用本 pack 前必须先判断文本层：第 2-11 页为古籍转写层；第 1、12-14 页为现代附益层。
+  anchor:
+    file: sources/fulltext/physiognomy/mayi-shenxiang/fulltext.md
+    start_line: 15
+    end_line: 15
+  quote: 版本说明：本 normalized source 完整保留全学网 `mayixf01` 至 `mayixf14` 的网页文字。第 2-11 页作为古籍相法转写层；第 1 页为现代前言，第 12-14 页含明显现代语汇和现代面相解释，只作现代附益层，不可作为原典一线断语。NLC/Wikimedia 两卷 PDF 仅作影印锚点，尚未完成逐页 OCR 校勘。
   applicable_to: []
   caveats:
   - 避免把现代医学词汇、交通词汇和现代面相解释误当原典
@@ -46,8 +49,11 @@ rules:
 - rule_id: MAYISHENXIAN-004
   kind: doctrine
   statement: 骨肉、四肢、手纹条目多含寿夭、贫贱、刑伤、疾病等高风险断语。
-  anchor: null
-  quote: 骨肉、四肢、手纹条目多含寿夭、贫贱、刑伤、疾病等高风险断语。
+  anchor:
+    file: sources/fulltext/physiognomy/mayi-shenxiang/fulltext.md
+    start_line: 1882
+    end_line: 1882
+  quote: 夫手足者谓之四肢，以象四时，加之以首，谓之五体，以象五行。
   applicable_to: []
   caveats:
   - 涉及医疗、寿命、伤残、婚育、生死、刑伤的内容必须拒绝现实化硬断
@@ -58,8 +64,11 @@ rules:
 - rule_id: MAYISHENXIAN-005
   kind: doctrine
   statement: 石室神异赋、金锁赋等赋文适合做术语索引和跨书对读线索。
-  anchor: null
-  quote: 石室神异赋、金锁赋等赋文适合做术语索引和跨书对读线索。
+  anchor:
+    file: sources/fulltext/physiognomy/mayi-shenxiang/fulltext.md
+    start_line: 3812
+    end_line: 3812
+  quote: 议论争差识者稀　附于金锁号银匙
   applicable_to: []
   caveats:
   - 赋文中的强断语不得脱离文本语境应用到真人
@@ -70,8 +79,11 @@ rules:
 - rule_id: MAYISHENXIAN-006
   kind: doctrine
   statement: 本 pack 是全学网通行网页本完整转写，不是 NLC/Wikimedia 两卷影印本逐字 OCR 校本。
-  anchor: null
-  quote: 本 pack 是全学网通行网页本完整转写，不是 NLC/Wikimedia 两卷影印本逐字 OCR 校本。
+  anchor:
+    file: sources/fulltext/physiognomy/mayi-shenxiang/fulltext.md
+    start_line: 15
+    end_line: 15
+  quote: 版本说明：本 normalized source 完整保留全学网 `mayixf01` 至 `mayixf14` 的网页文字。第 2-11 页作为古籍相法转写层；第 1 页为现代前言，第 12-14 页含明显现代语汇和现代面相解释，只作现代附益层，不可作为原典一线断语。NLC/Wikimedia 两卷 PDF 仅作影印锚点，尚未完成逐页 OCR 校勘。
   applicable_to: []
   caveats:
   - 对外说明必须保留“网页转写本/未校影印本”的版本限定

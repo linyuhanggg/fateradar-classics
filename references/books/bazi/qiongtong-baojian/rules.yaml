@@ -11,8 +11,11 @@ rules:
 - rule_id: QTB
   kind: doctrine
   statement: 五行之土无固定一季之性，须结合四时所乘之气审视调济。
-  anchor: null
-  quote: 五行之土无固定一季之性，须结合四时所乘之气审视调济。
+  anchor:
+    file: sources/fulltext/bazi/qiongtong-baojian/fulltext.md
+    start_line: 777
+    end_line: 777
+  quote: 五行之土，散冠四维，故金木水火，依而成象，是四时皆有用有忌者。火、死酉也。水、旺子也。盖土赖火运，火死则土囚。土喜水才，水旺则土虚。土得金火，方成大器。土高无贵，空惹灰尘。土聚则滞，土散则轻。
   applicable_to: []
   caveats:
   - 仅说明四时方法，不据此自动判断旺衰吉凶
@@ -23,8 +26,11 @@ rules:
 - rule_id: QR
   kind: doctrine
   statement: 00 五行总论
-  anchor: null
-  quote: 00 五行总论
+  anchor:
+    file: sources/fulltext/bazi/qiongtong-baojian/fulltext.md
+    start_line: 3
+    end_line: 3
+  quote: '## 五行总论'
   applicable_to: []
   caveats: []
   school: null
@@ -34,8 +40,11 @@ rules:
 - rule_id: QR-00-01
   kind: doctrine
   statement: 木主仁、性直；火主礼、性急；土主信、性重；金主义、性刚；水主智、性聪。生克之理：木生火、火生土、土生金、金生水、水生木；木克土、土克水、水克火、火克金、金克木。
-  anchor: null
-  quote: 木主仁、性直；火主礼、性急；土主信、性重；金主义、性刚；水主智、性聪。生克之理：木生火、火生土、土生金、金生水、水生木；木克土、土克水、水克火、火克金、金克木。
+  anchor:
+    file: sources/fulltext/bazi/qiongtong-baojian/fulltext.md
+    start_line: 1315
+    end_line: 1315
+  quote: 二月辛金，阳和之际，壬水为尊，见戊己为病。得甲制伏，则辛金不致埋没，壬水不致混浊，合此者必身入玉堂。故二月辛金，有壬甲透者贵显。否则，乡绅。或壬坐亥支，不见土出，可能入芥，家亦小康。得申中之壬者，异途名望。无壬者常人。其生剋之理，与正月辛金皆同。
   applicable_to: []
   caveats:
   - 仅作日主性情参考
@@ -47,8 +56,11 @@ rules:
 - rule_id: QIONGTONGBAO-QR
   kind: doctrine
   statement: 01 论木（行论 + 甲乙木 × 四季）
-  anchor: null
-  quote: 01 论木（行论 + 甲乙木 × 四季）
+  anchor:
+    file: sources/fulltext/bazi/qiongtong-baojian/fulltext.md
+    start_line: 25
+    end_line: 25
+  quote: 木性腾上而无所止，气重则欲金任使，有金则有惟高惟敛之德。
   applicable_to: []
   caveats: []
   school: null
@@ -58,8 +70,11 @@ rules:
 - rule_id: QR-01-00
   kind: doctrine
   statement: 木性腾上而无所止；春木阳气方盛，宜火以宣其华；夏木根干叶燥，宜水以润之；秋木气衰枝叶凋零，宜金以斩削；冬木枝叶归根，宜火以暖之。
-  anchor: null
-  quote: 木性腾上而无所止；春木阳气方盛，宜火以宣其华；夏木根干叶燥，宜水以润之；秋木气衰枝叶凋零，宜金以斩削；冬木枝叶归根，宜火以暖之。
+  anchor:
+    file: sources/fulltext/bazi/qiongtong-baojian/fulltext.md
+    start_line: 25
+    end_line: 25
+  quote: 木性腾上而无所止，气重则欲金任使，有金则有惟高惟敛之德。
   applicable_to:
   - key: rizhu
     value: 甲
@@ -130,8 +145,11 @@ rules:
 - rule_id: QR-01-04
   kind: doctrine
   statement: 冬木寒凝，专用庚金为先（破癸去寒），丁火暖局，戊土堤水。庚丁戊三者俱透者大贵。
-  anchor: null
-  quote: 冬木寒凝，专用庚金为先（破癸去寒），丁火暖局，戊土堤水。庚丁戊三者俱透者大贵。
+  anchor:
+    file: sources/fulltext/bazi/qiongtong-baojian/fulltext.md
+    start_line: 1511
+    end_line: 1511
+  quote: 凡壬日无比肩羊刃者，不必用戊，专用庚金，以丙为佐。
   applicable_to:
   - key: rizhu
     value: 甲
@@ -164,8 +182,11 @@ rules:
 - rule_id: QR-01-06
   kind: doctrine
   statement: 夏乙焦枯，专用癸水润；丙火透出反喜，能催英华；忌干旱无水，亦忌庚金生水反复。
-  anchor: null
-  quote: 夏乙焦枯，专用癸水润；丙火透出反喜，能催英华；忌干旱无水，亦忌庚金生水反复。
+  anchor:
+    file: sources/fulltext/bazi/qiongtong-baojian/fulltext.md
+    start_line: 247
+    end_line: 247
+  quote: 四月乙木，自有丙火，耑取癸水为尊。四月乙木专用癸水，丙火酌用，虽以庚辛佐癸，须辛透为清。癸透、庚辛又透，科甲定然，独一点癸水、无金，是水无根，虽出天干，不过秀才小富，须要大运相扶。或土多困癸，贫贱之人。丙戊太多，支成火局，瞽目之流。
   applicable_to:
   - key: rizhu
     value: 乙
@@ -197,8 +218,11 @@ rules:
 - rule_id: QR-01-08
   kind: doctrine
   statement: 冬乙阴寒，专用丙火暖局；最忌癸水冻木；戊土制癸为佐。丙戊两透者贵。
-  anchor: null
-  quote: 冬乙阴寒，专用丙火暖局；最忌癸水冻木；戊土制癸为佐。丙戊两透者贵。
+  anchor:
+    file: sources/fulltext/bazi/qiongtong-baojian/fulltext.md
+    start_line: 840
+    end_line: 840
+  quote: 四月戊土，阳气发升，寒气内藏，外实内虚，不畏火炎，无阳气相催，万物不长，故先用甲疏噼，次取丙癸为佐。
   applicable_to:
   - key: rizhu
     value: 乙
@@ -212,8 +236,11 @@ rules:
 - rule_id: QIONGTONGBAO-014
   kind: doctrine
   statement: 02 论火（行论 + 丙丁火 × 四季）
-  anchor: null
-  quote: 02 论火（行论 + 丙丁火 × 四季）
+  anchor:
+    file: sources/fulltext/bazi/qiongtong-baojian/fulltext.md
+    start_line: 333
+    end_line: 333
+  quote: 炎炎真火，位镇南方，故火无不明之理，辉光不久。全要伏藏，故明无不灭之象。火以木为体。无木、则火不长焰。火以水为用，无水、则火太酷烈。故火多则不实，火烈则伤物。木能藏火，到寅卯方而生火，不利于西，遇申酉而必死。生居离位，木断有为，若居坎宫，谨畏守礼。
   applicable_to: []
   caveats: []
   school: null
@@ -223,8 +250,11 @@ rules:
 - rule_id: QR-02-00
   kind: doctrine
   statement: 火性炎上，宜其得地见水以济之；春火炎而未烈，秋火退气，冬火气衰，夏火炎烈。喜壬水克之、忌癸水熄之，丙喜见甲乙发其光。
-  anchor: null
-  quote: 火性炎上，宜其得地见水以济之；春火炎而未烈，秋火退气，冬火气衰，夏火炎烈。喜壬水克之、忌癸水熄之，丙喜见甲乙发其光。
+  anchor:
+    file: sources/fulltext/bazi/qiongtong-baojian/fulltext.md
+    start_line: 9
+    end_line: 9
+  quote: 火为太阳，性炎上。水为太阴，性润下。木为少阳，性腾上而无所止。金为少阴，性沉下而有所止。土无常性，视四时所乘，欲使相济得所，勿令太过弗及。
   applicable_to:
   - key: rizhu
     value: 丙
@@ -277,8 +307,11 @@ rules:
 - rule_id: QR-02-03
   kind: doctrine
   statement: 秋丙退气，专用甲木生身，壬水显威；甲壬两透者贵；忌癸水熄丙。
-  anchor: null
-  quote: 秋丙退气，专用甲木生身，壬水显威；甲壬两透者贵；忌癸水熄丙。
+  anchor:
+    file: sources/fulltext/bazi/qiongtong-baojian/fulltext.md
+    start_line: 658
+    end_line: 658
+  quote: 遇年透隔位之壬，不贪丁合者，忠而且厚。或支成火局，干见火出，得庚壬两透者，科甲定然。土透制壬，常人。即壬藏支中，亦非白丁，但要运行西北，方可发达。得一癸透，名独杀当权，出人头地。
   applicable_to:
   - key: rizhu
     value: 丙
@@ -310,8 +343,11 @@ rules:
 - rule_id: QR-02-05
   kind: doctrine
   statement: 春丁柔弱，专用庚金劈甲、引甲生丁；甲庚不悖者贵。
-  anchor: null
-  quote: 春丁柔弱，专用庚金劈甲、引甲生丁；甲庚不悖者贵。
+  anchor:
+    file: sources/fulltext/bazi/qiongtong-baojian/fulltext.md
+    start_line: 1511
+    end_line: 1511
+  quote: 凡壬日无比肩羊刃者，不必用戊，专用庚金，以丙为佐。
   applicable_to:
   - key: rizhu
     value: 丁
@@ -324,8 +360,11 @@ rules:
 - rule_id: QR-02-06
   kind: doctrine
   statement: 夏丁炎旺，用庚金、壬水（"金白水清"），庚壬两透者贵；忌甲木助火、戊土晦光。
-  anchor: null
-  quote: 夏丁炎旺，用庚金、壬水（"金白水清"），庚壬两透者贵；忌甲木助火、戊土晦光。
+  anchor:
+    file: sources/fulltext/bazi/qiongtong-baojian/fulltext.md
+    start_line: 21
+    end_line: 21
+  quote: 论木论火论土论金论水，甲木丙火戊土庚金壬水。
   applicable_to:
   - key: rizhu
     value: 丁
@@ -339,8 +378,11 @@ rules:
 - rule_id: QR-02-07
   kind: doctrine
   statement: 秋丁退气，专用甲木生身为主、庚金劈甲为辅；甲庚两透者贵。
-  anchor: null
-  quote: 秋丁退气，专用甲木生身为主、庚金劈甲为辅；甲庚两透者贵。
+  anchor:
+    file: sources/fulltext/bazi/qiongtong-baojian/fulltext.md
+    start_line: 1688
+    end_line: 1688
+  quote: 正月癸水，辛金为主，庚金次之，丙亦不可少。若无庚辛，虽有丙火，无用之人。或火多土多，残疾不免。
   applicable_to:
   - key: rizhu
     value: 丁
@@ -369,8 +411,11 @@ rules:
 - rule_id: QIONGTONGBAO-024
   kind: doctrine
   statement: 03 论土（行论 + 戊己土 × 四季）
-  anchor: null
-  quote: 03 论土（行论 + 戊己土 × 四季）
+  anchor:
+    file: sources/fulltext/bazi/qiongtong-baojian/fulltext.md
+    start_line: 777
+    end_line: 777
+  quote: 五行之土，散冠四维，故金木水火，依而成象，是四时皆有用有忌者。火、死酉也。水、旺子也。盖土赖火运，火死则土囚。土喜水才，水旺则土虚。土得金火，方成大器。土高无贵，空惹灰尘。土聚则滞，土散则轻。
   applicable_to: []
   caveats: []
   school: null
@@ -380,8 +425,11 @@ rules:
 - rule_id: QR-03-00
   kind: doctrine
   statement: 土主信、性重，散在四维，不立一方；春土气虚而薄，宜火生之；夏土性燥，宜水润之；秋土子旺母衰，宜火助之；冬土外寒内温，宜火暖之。
-  anchor: null
-  quote: 土主信、性重，散在四维，不立一方；春土气虚而薄，宜火生之；夏土性燥，宜水润之；秋土子旺母衰，宜火助之；冬土外寒内温，宜火暖之。
+  anchor:
+    file: sources/fulltext/bazi/qiongtong-baojian/fulltext.md
+    start_line: 11
+    end_line: 11
+  quote: 夫五行之性，各致其用。水者其性智，火者其性礼，木其性仁，金其性义，惟土主信，重宽厚博，无所不容：以之水，即水附之而行；以之木，则木托之而生；金不得土，则无自出；火不得土，则无自归。必损实以为通，致虚以为明，故五行皆赖土也。
   applicable_to:
   - key: rizhu
     value: 戊
@@ -415,8 +463,11 @@ rules:
 - rule_id: QR-03-02
   kind: doctrine
   statement: 夏戊燥裂，专用癸水润；丙火合癸化雨为辅。癸丙不悖（不直接相合即"既济"）者富贵。
-  anchor: null
-  quote: 夏戊燥裂，专用癸水润；丙火合癸化雨为辅。癸丙不悖（不直接相合即"既济"）者富贵。
+  anchor:
+    file: sources/fulltext/bazi/qiongtong-baojian/fulltext.md
+    start_line: 247
+    end_line: 247
+  quote: 四月乙木，自有丙火，耑取癸水为尊。四月乙木专用癸水，丙火酌用，虽以庚辛佐癸，须辛透为清。癸透、庚辛又透，科甲定然，独一点癸水、无金，是水无根，虽出天干，不过秀才小富，须要大运相扶。或土多困癸，贫贱之人。丙戊太多，支成火局，瞽目之流。
   applicable_to:
   - key: rizhu
     value: 戊
@@ -430,8 +481,11 @@ rules:
 - rule_id: QR-03-03
   kind: doctrine
   statement: 秋戊金多泄气，用丙火助身、癸水润、甲木疏。丙癸甲三者俱备者贵。
-  anchor: null
-  quote: 秋戊金多泄气，用丙火助身、癸水润、甲木疏。丙癸甲三者俱备者贵。
+  anchor:
+    file: sources/fulltext/bazi/qiongtong-baojian/fulltext.md
+    start_line: 901
+    end_line: 901
+  quote: 八月戊土，金洩身寒，赖丙照暖，喜水滋润，先丙后癸，不必木疏。丙癸两透，科甲中人。丙透癸藏，可许入泮。癸透丙藏，纳资得官。若丙藏又无癸，即多不透，此皆常人。丙癸全无，奔流之客。
   applicable_to:
   - key: rizhu
     value: 戊
@@ -463,8 +517,11 @@ rules:
 - rule_id: QR-03-05
   kind: doctrine
   statement: 春己阴湿，专用丙火暖、癸水润、甲木疏（合不化）。丙癸甲三者俱备者贵。
-  anchor: null
-  quote: 春己阴湿，专用丙火暖、癸水润、甲木疏（合不化）。丙癸甲三者俱备者贵。
+  anchor:
+    file: sources/fulltext/bazi/qiongtong-baojian/fulltext.md
+    start_line: 1355
+    end_line: 1355
+  quote: 若壬水藏亥，戊不出干，亦主上达。有戊常人。有一甲透，衣禄可求。若有甲无壬癸者，富贵虚浮。所谓羊质虎皮是也。壬、癸、甲、三者全无，又不合格，斯为下品。
   applicable_to:
   - key: rizhu
     value: 己
@@ -513,8 +570,11 @@ rules:
 - rule_id: QR-03-08
   kind: doctrine
   statement: 冬己寒湿，专用丙火暖、戊土帮身；不忌甲木合身（合而无化）。丙戊两透者贵。
-  anchor: null
-  quote: 冬己寒湿，专用丙火暖、戊土帮身；不忌甲木合身（合而无化）。丙戊两透者贵。
+  anchor:
+    file: sources/fulltext/bazi/qiongtong-baojian/fulltext.md
+    start_line: 1071
+    end_line: 1071
+  quote: 三冬己土，溼泥寒冻，非丙暖不生，取丙为尊，甲木参酌。戊土癸水不用。惟初冬壬旺，取戊制之。余皆用丙丁，但丁不能解冻除寒，不能大济。
   applicable_to:
   - key: rizhu
     value: 己
@@ -592,8 +652,11 @@ rules:
 - rule_id: QR-04-03
   kind: doctrine
   statement: 秋庚得令，专用丁火炼成器、甲木引丁。丁甲两透不悖者大贵。
-  anchor: null
-  quote: 秋庚得令，专用丁火炼成器、甲木引丁。丁甲两透不悖者大贵。
+  anchor:
+    file: sources/fulltext/bazi/qiongtong-baojian/fulltext.md
+    start_line: 1158
+    end_line: 1158
+  quote: 得丁甲两透，不见比肩，科甲之命，但要好运相催。甲透丁藏，采芹拾芥。甲藏丁透，异路功名。丁甲俱藏，不受庚制，富中取贵，刀笔起家。有甲无丁，平常之辈。有丁无甲，迂儒腐儒。丁甲两无，下贱之流。
   applicable_to:
   - key: rizhu
     value: 庚
@@ -607,8 +670,11 @@ rules:
 - rule_id: QR-04-04
   kind: doctrine
   statement: 冬庚寒，专用丁火炼、丙火暖、戊土制水。丁丙戊俱透者贵。
-  anchor: null
-  quote: 冬庚寒，专用丁火炼、丙火暖、戊土制水。丁丙戊俱透者贵。
+  anchor:
+    file: sources/fulltext/bazi/qiongtong-baojian/fulltext.md
+    start_line: 1254
+    end_line: 1254
+  quote: 十月庚金，水冷性寒，非丁莫造，非丙不暖。丁甲两透，支无水局，一榜有之。支藏丙火，桃浪之仙。支见亥子，得己出制，亦有功名。
   applicable_to:
   - key: rizhu
     value: 庚
@@ -622,8 +688,11 @@ rules:
 - rule_id: QR-04-05
   kind: doctrine
   statement: 春辛弱嫩，专用己土生身、壬水洗辛。己壬两透者贵；忌丙火合辛化水误用。
-  anchor: null
-  quote: 春辛弱嫩，专用己土生身、壬水洗辛。己壬两透者贵；忌丙火合辛化水误用。
+  anchor:
+    file: sources/fulltext/bazi/qiongtong-baojian/fulltext.md
+    start_line: 1300
+    end_line: 1300
+  quote: 正月辛金，阳气舒而寒气未除，不知正月建寅，中有长生之丙，解去寒气，忌甲木司权，辛金失令，取己土为生身之本，欲得辛金发现，全赖壬水之功，己壬两透，支见庚制甲，科甲定然。或己土透干，支中有甲，异路恩荣。或己土不全，号曰君臣失势，富贵难全。或有丙火出干，亦主武学。或见壬、无己庚者，贫贱之徒。
   applicable_to:
   - key: rizhu
     value: 辛
@@ -637,8 +706,11 @@ rules:
 - rule_id: QR-04-06
   kind: doctrine
   statement: 夏辛被火炼，专用壬水洗辛、己土护身、癸水润。壬己癸三透者贵。
-  anchor: null
-  quote: 夏辛被火炼，专用壬水洗辛、己土护身、癸水润。壬己癸三透者贵。
+  anchor:
+    file: sources/fulltext/bazi/qiongtong-baojian/fulltext.md
+    start_line: 1351
+    end_line: 1351
+  quote: 四月辛金，时逢首夏，忌丙火之燥烈，喜壬水之洗淘。支成金局，水透出干，有木制戊，名一清澈底，科甲功名。癸透壬藏，富真贵假。若壬癸皆藏，戊己亦藏，略富。若壬癸俱无，反见火出，必主鳏独。
   applicable_to:
   - key: rizhu
     value: 辛
@@ -669,8 +741,11 @@ rules:
 - rule_id: QR-04-08
   kind: doctrine
   statement: 冬辛寒甚，专用丙火暖（合而不化于本月），壬水洗辛（不寒）。丙壬两透清纯者贵。
-  anchor: null
-  quote: 冬辛寒甚，专用丙火暖（合而不化于本月），壬水洗辛（不寒）。丙壬两透清纯者贵。
+  anchor:
+    file: sources/fulltext/bazi/qiongtong-baojian/fulltext.md
+    start_line: 1474
+    end_line: 1474
+  quote: 十二月辛金，寒冻之极，先丙后壬，无丙不能解冻，无壬不能洗淘。丙壬两透，金马玉堂之客。壬丙俱藏，游庠食饩之人。有丙无壬富真贵假。有壬乏丙，贱而且贫。或丙多、无壬、有癸，市中贸易之流。
   applicable_to:
   - key: rizhu
     value: 辛
@@ -684,8 +759,11 @@ rules:
 - rule_id: QIONGTONGBAO-044
   kind: doctrine
   statement: 05 论水（行论 + 壬癸水 × 四季）
-  anchor: null
-  quote: 05 论水（行论 + 壬癸水 × 四季）
+  anchor:
+    file: sources/fulltext/bazi/qiongtong-baojian/fulltext.md
+    start_line: 1493
+    end_line: 1493
+  quote: 天倾西北，亥为出水之方，地陷东南，辰为纳水之库，逆流到申而作声，故水不西流。水性润下，顺则有容，顺行十二神，顺也，主有度量，有吉神扶助，乃贵格。逆则有声，逆行十二神，逆也。入格者，主清贵，有声誉。忌刑剋，则横流，爱自死自绝则吉。
   applicable_to: []
   caveats: []
   school: null
@@ -712,8 +790,11 @@ rules:
 - rule_id: QR-05-01
   kind: doctrine
   statement: 春壬泄气于木，用辛金生身；如盘中水势已盛，配戊土堤防。辛戊适配者贵。
-  anchor: null
-  quote: 春壬泄气于木，用辛金生身；如盘中水势已盛，配戊土堤防。辛戊适配者贵。
+  anchor:
+    file: sources/fulltext/bazi/qiongtong-baojian/fulltext.md
+    start_line: 1682
+    end_line: 1682
+  quote: 正月癸水，值三阳之候，雨露之精，其性至柔，先用辛金，生癸水之源，次用丙火照暖，名阴阳和合，万物发生。辛丙两透，金榜有名。
   applicable_to:
   - key: rizhu
     value: 壬
@@ -745,8 +826,11 @@ rules:
 - rule_id: QR-05-03
   kind: doctrine
   statement: 秋壬通源旺极，用戊土堤防、丁火财星为佐。戊丁两透者贵。
-  anchor: null
-  quote: 秋壬通源旺极，用戊土堤防、丁火财星为佐。戊丁两透者贵。
+  anchor:
+    file: sources/fulltext/bazi/qiongtong-baojian/fulltext.md
+    start_line: 1585
+    end_line: 1585
+  quote: 七月壬水，庚金司令，壬得申之长生，源流自远，转弱为强，专用戊土，次取丁火佐戊制庚。但用辰戌之戊，不用申中受病之戊。戊丁俱透，科甲生员。戊透天干，丁藏午戌，恩封可待，特忌戊癸化合。即支见寅戌，年出丁火，可许衣衿。或丁戊两藏，富中取贵。
   applicable_to:
   - key: rizhu
     value: 壬
@@ -778,8 +862,11 @@ rules:
 - rule_id: QR-05-05
   kind: doctrine
   statement: 春癸泄于木，用辛金生身、丙火配（不可同透相合）。辛丙间透者贵。
-  anchor: null
-  quote: 春癸泄于木，用辛金生身、丙火配（不可同透相合）。辛丙间透者贵。
+  anchor:
+    file: sources/fulltext/bazi/qiongtong-baojian/fulltext.md
+    start_line: 1682
+    end_line: 1682
+  quote: 正月癸水，值三阳之候，雨露之精，其性至柔，先用辛金，生癸水之源，次用丙火照暖，名阴阳和合，万物发生。辛丙两透，金榜有名。
   applicable_to:
   - key: rizhu
     value: 癸
@@ -793,8 +880,11 @@ rules:
 - rule_id: QR-05-06
   kind: doctrine
   statement: 夏癸枯竭，专用辛金生身、庚金为辅。辛庚两透者贵；忌火多无金。
-  anchor: null
-  quote: 夏癸枯竭，专用辛金生身、庚金为辅。辛庚两透者贵；忌火多无金。
+  anchor:
+    file: sources/fulltext/bazi/qiongtong-baojian/fulltext.md
+    start_line: 1682
+    end_line: 1682
+  quote: 正月癸水，值三阳之候，雨露之精，其性至柔，先用辛金，生癸水之源，次用丙火照暖，名阴阳和合，万物发生。辛丙两透，金榜有名。
   applicable_to:
   - key: rizhu
     value: 癸
@@ -807,8 +897,11 @@ rules:
 - rule_id: QR-05-07
   kind: doctrine
   statement: 秋癸通源，用辛金生身、丁火制辛（不忌庚金）。辛丁不悖者贵。
-  anchor: null
-  quote: 秋癸通源，用辛金生身、丁火制辛（不忌庚金）。辛丁不悖者贵。
+  anchor:
+    file: sources/fulltext/bazi/qiongtong-baojian/fulltext.md
+    start_line: 1682
+    end_line: 1682
+  quote: 正月癸水，值三阳之候，雨露之精，其性至柔，先用辛金，生癸水之源，次用丙火照暖，名阴阳和合，万物发生。辛丙两透，金榜有名。
   applicable_to:
   - key: rizhu
     value: 癸

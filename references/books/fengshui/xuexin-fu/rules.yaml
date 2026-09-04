@@ -10,8 +10,11 @@ rules:
 - rule_id: XXF
   kind: doctrine
   statement: R01 先水口與明堂，再談穴局
-  anchor: null
-  quote: R01 先水口與明堂，再談穴局
+  anchor:
+    file: sources/fulltext/fengshui/xuexin-fu/fulltext.md
+    start_line: 195
+    end_line: 195
+  quote: 城上星峰卓卓，真如插戟護垣；面前墩阜累累，喚作排衙唱喏。
   applicable_to: []
   caveats: []
   school: null
@@ -21,8 +24,11 @@ rules:
 - rule_id: XUEXINFU-XXF
   kind: doctrine
   statement: R02 分合向背是形勢判斷核心
-  anchor: null
-  quote: R02 分合向背是形勢判斷核心
+  anchor:
+    file: sources/fulltext/fengshui/xuexin-fu/fulltext.md
+    start_line: 38
+    end_line: 38
+  quote: 類以聚；是以潛藏須細察，來止要詳明。
   applicable_to: []
   caveats: []
   school: null
@@ -32,8 +38,11 @@ rules:
 - rule_id: XUEXINFU-003
   kind: doctrine
   statement: R03 五星重剝換與特達
-  anchor: null
-  quote: R03 五星重剝換與特達
+  anchor:
+    file: sources/fulltext/fengshui/xuexin-fu/fulltext.md
+    start_line: 45
+    end_line: 45
+  quote: 細看八國之周流，詳察五星之變化；星以剝換為貴，形以特達為尊。
   applicable_to: []
   caveats: []
   school: null

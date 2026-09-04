@@ -10,8 +10,11 @@ rules:
 - rule_id: HZL
   kind: doctrine
   statement: 六爻审卦先核世应位置，再进入后续深浅判断。
-  anchor: null
-  quote: 六爻审卦先核世应位置，再进入后续深浅判断。
+  anchor:
+    file: sources/fulltext/divination/huozhu-lin/fulltext.md
+    start_line: 99
+    end_line: 99
+  quote: 旁爻持世，旺相得地；
   applicable_to: []
   caveats:
   - 仅作读盘顺序，不授权吉凶结论

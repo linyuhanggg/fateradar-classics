@@ -10,8 +10,11 @@ rules:
 - rule_id: LZ-01-01
   kind: doctrine
   statement: 三才四气定命基
-  anchor: null
-  quote: 三才四气定命基
+  anchor:
+    file: sources/fulltext/luming-nayin/luoluzi-sanming/fulltext.md
+    start_line: 33
+    end_line: 33
+  quote: 元一氣兮先天，稟清濁兮自然；著三才以成象，播四氣以為年。
   applicable_to: []
   caveats: []
   school: null
@@ -21,8 +24,11 @@ rules:
 - rule_id: LZ-01-02
   kind: doctrine
   statement: 以干为禄、以支为命
-  anchor: null
-  quote: 以干为禄、以支为命
+  anchor:
+    file: sources/fulltext/luming-nayin/luoluzi-sanming/fulltext.md
+    start_line: 58
+    end_line: 58
+  quote: 以干為祿，向背定其貧富；以支為命，詳順逆以循環。
   applicable_to: []
   caveats: []
   school: null
@@ -32,8 +38,11 @@ rules:
 - rule_id: LZ-01-03
   kind: doctrine
   statement: 四柱内外详休旺
-  anchor: null
-  quote: 四柱内外详休旺
+  anchor:
+    file: sources/fulltext/luming-nayin/luoluzi-sanming/fulltext.md
+    start_line: 101
+    end_line: 101
+  quote: 凡看命見貴賤，未可便言，且精四柱內外，天元並三合有無剋奪所有之貴。
   applicable_to: []
   caveats: []
   school: null
@@ -43,8 +52,11 @@ rules:
 - rule_id: LZ-02-01
   kind: doctrine
   statement: 折除运程一辰十岁
-  anchor: null
-  quote: 折除运程一辰十岁
+  anchor:
+    file: sources/fulltext/luming-nayin/luoluzi-sanming/fulltext.md
+    start_line: 88
+    end_line: 88
+  quote: '> [注] 行運則一辰十歲，折除乃三日為年。'
   applicable_to: []
   caveats: []
   school: null
@@ -54,8 +66,11 @@ rules:
 - rule_id: LZ-02-02
   kind: doctrine
   statement: 将来者进、功成者退
-  anchor: null
-  quote: 将来者进、功成者退
+  anchor:
+    file: sources/fulltext/luming-nayin/luoluzi-sanming/fulltext.md
+    start_line: 112
+    end_line: 112
+  quote: 其為氣也，將來者進，功成者退。如蛇在灰，如鱔在塵。
   applicable_to: []
   caveats: []
   school: null
@@ -65,8 +80,11 @@ rules:
 - rule_id: LZ-02-03
   kind: doctrine
   statement: 绝处建禄成贵
-  anchor: null
-  quote: 绝处建禄成贵
+  anchor:
+    file: sources/fulltext/luming-nayin/luoluzi-sanming/fulltext.md
+    start_line: 129
+    end_line: 129
+  quote: '> [注] 此五行論于絕地而建貴也，五行絕處有祿馬。'
   applicable_to: []
   caveats: []
   school: null
@@ -76,8 +94,11 @@ rules:
 - rule_id: LZ-03-01
   kind: doctrine
   statement: 三奇歌诀贵格
-  anchor: null
-  quote: 三奇歌诀贵格
+  anchor:
+    file: sources/fulltext/luming-nayin/luoluzi-sanming/fulltext.md
+    start_line: 171
+    end_line: 171
+  quote: 三奇歌云：甲己六辛頭，乙戊向庚求，丙辛遭癸美，丁壬辛更優，戊癸逢乙妙，己壬并甲遊，庚乙丁須聴，辛甲丙同周，壬丁己堪重，癸丙戊何愁。
   applicable_to: []
   caveats: []
   school: null
@@ -87,8 +108,11 @@ rules:
 - rule_id: LZ-03-02
   kind: doctrine
   statement: 将星扶德合贵
-  anchor: null
-  quote: 将星扶德合贵
+  anchor:
+    file: sources/fulltext/luming-nayin/luoluzi-sanming/fulltext.md
+    start_line: 161
+    end_line: 161
+  quote: 崇為寶也，奇為貴也，將星扶德，太乙加臨，本主休囚，行藏汩沒。
   applicable_to: []
   caveats: []
   school: null
@@ -98,8 +122,11 @@ rules:
 - rule_id: LZ-03-03
   kind: doctrine
   statement: 勾陈得位、真武当权
-  anchor: null
-  quote: 勾陈得位、真武当权
+  anchor:
+    file: sources/fulltext/luming-nayin/luoluzi-sanming/fulltext.md
+    start_line: 179
+    end_line: 179
+  quote: 至若勾陳得位，不虧小信以成仁；真武當權，知是大才而分瑞。
   applicable_to: []
   caveats: []
   school: null
@@ -131,8 +158,11 @@ rules:
 - rule_id: LZ-05-01
   kind: doctrine
   statement: 财命有气背禄不贫
-  anchor: null
-  quote: 财命有气背禄不贫
+  anchor:
+    file: sources/fulltext/luming-nayin/luoluzi-sanming/fulltext.md
+    start_line: 465
+    end_line: 465
+  quote: 唯有水剋火為財，春生火旺，故曰：財命有氣也。
   applicable_to: []
   caveats: []
   school: null
@@ -142,8 +172,11 @@ rules:
 - rule_id: LZ-05-02
   kind: doctrine
   statement: 财绝命衰建禄不富
-  anchor: null
-  quote: 财绝命衰建禄不富
+  anchor:
+    file: sources/fulltext/luming-nayin/luoluzi-sanming/fulltext.md
+    start_line: 619
+    end_line: 619
+  quote: '> [注] 世術用六甲人正月生者，此名建祿不富，此非生月帶官祿也。'
   applicable_to: []
   caveats: []
   school: null
@@ -153,8 +186,11 @@ rules:
 - rule_id: LZ-05-03
   kind: doctrine
   statement: 身旺鬼绝长年
-  anchor: null
-  quote: 身旺鬼绝长年
+  anchor:
+    file: sources/fulltext/luming-nayin/luoluzi-sanming/fulltext.md
+    start_line: 564
+    end_line: 564
+  quote: 若乃身旺鬼絕，雖破命而長年；鬼旺身衰，逢建命而夭壽。
   applicable_to: []
   caveats: []
   school: null
@@ -164,8 +200,11 @@ rules:
 - rule_id: LZ-05-04
   kind: doctrine
   statement: 鬼旺身衰夭寿
-  anchor: null
-  quote: 鬼旺身衰夭寿
+  anchor:
+    file: sources/fulltext/luming-nayin/luoluzi-sanming/fulltext.md
+    start_line: 564
+    end_line: 564
+  quote: 若乃身旺鬼絕，雖破命而長年；鬼旺身衰，逢建命而夭壽。
   applicable_to: []
   caveats: []
   school: null
@@ -175,8 +214,11 @@ rules:
 - rule_id: LZ-05-05
   kind: doctrine
   statement: 背禄逐马克妻
-  anchor: null
-  quote: 背禄逐马克妻
+  anchor:
+    file: sources/fulltext/luming-nayin/luoluzi-sanming/fulltext.md
+    start_line: 568
+    end_line: 568
+  quote: 背祿逐馬，守窮途而悽惶；祿馬同鄉，不三台而八座。
   applicable_to: []
   caveats: []
   school: null
@@ -186,8 +228,11 @@ rules:
 - rule_id: LZ-05-06
   kind: doctrine
   statement: 禄马同乡两府之贵
-  anchor: null
-  quote: 禄马同乡两府之贵
+  anchor:
+    file: sources/fulltext/luming-nayin/luoluzi-sanming/fulltext.md
+    start_line: 175
+    end_line: 175
+  quote: 假令，壬寅年、庚戌月、癸卯日、乙卯時，九月將在卯，扶其生日，更得九月金土六合，卯戌合，乙庚合，戊癸合，如此五行各不居休敗，則貴命也，可作兩府之上貴格言。
   applicable_to: []
   caveats: []
   school: null
@@ -219,8 +264,11 @@ rules:
 - rule_id: LZ-06-03
   kind: doctrine
   statement: 劫财克妻
-  anchor: null
-  quote: 劫财克妻
+  anchor:
+    file: sources/fulltext/luming-nayin/luoluzi-sanming/fulltext.md
+    start_line: 608
+    end_line: 608
+  quote: 戊見己，庚見辛，壬見癸，皆為劫財，與甲見乙同，前五陽見五陰為劫財，克妻。
   applicable_to: []
   caveats: []
   school: null
@@ -230,8 +278,11 @@ rules:
 - rule_id: LZ-06-04
   kind: doctrine
   statement: 生月带禄入仕赫奕
-  anchor: null
-  quote: 生月带禄入仕赫奕
+  anchor:
+    file: sources/fulltext/luming-nayin/luoluzi-sanming/fulltext.md
+    start_line: 617
+    end_line: 617
+  quote: 生月帶祿，入仕居赫奕之尊；重犯奇儀，蘊藉抱出群之器。
   applicable_to: []
   caveats: []
   school: null
@@ -241,8 +292,11 @@ rules:
 - rule_id: LZ-06-05
   kind: doctrine
   statement: 裸形夹煞至凶
-  anchor: null
-  quote: 裸形夹煞至凶
+  anchor:
+    file: sources/fulltext/luming-nayin/luoluzi-sanming/fulltext.md
+    start_line: 1031
+    end_line: 1031
+  quote: 就中裸形夾煞，魄往豐都；所犯有傷，魂歸岱嶺。
   applicable_to: []
   caveats: []
   school: null
@@ -252,8 +306,11 @@ rules:
 - rule_id: LZ-07-01
   kind: doctrine
   statement: 四煞五鬼六害七伤
-  anchor: null
-  quote: 四煞五鬼六害七伤
+  anchor:
+    file: sources/fulltext/luming-nayin/luoluzi-sanming/fulltext.md
+    start_line: 696
+    end_line: 696
+  quote: 或逢四煞五鬼，六害七傷，地網天羅，三元九宮，福臻成慶，禍併危疑，扶兮速速，抑乃遲遲。
   applicable_to: []
   caveats: []
   school: null
@@ -285,8 +342,11 @@ rules:
 - rule_id: LZ-07-04
   kind: doctrine
   statement: 八孤五墓临空亡
-  anchor: null
-  quote: 八孤五墓临空亡
+  anchor:
+    file: sources/fulltext/luming-nayin/luoluzi-sanming/fulltext.md
+    start_line: 441
+    end_line: 441
+  quote: 八孤臨于五墓，戌未東行；六虛下于空亡，自乾南首。
   applicable_to: []
   caveats: []
   school: null
@@ -329,8 +389,11 @@ rules:
 - rule_id: LZ-08-02
   kind: doctrine
   statement: 男迎女送前后五年
-  anchor: null
-  quote: 男迎女送前后五年
+  anchor:
+    file: sources/fulltext/luming-nayin/luoluzi-sanming/fulltext.md
+    start_line: 889
+    end_line: 889
+  quote: 然一運十年，更分前後五年之中，凡入吉運得節氣深，男迎者，前五年發福，是謂男迎也。
   applicable_to: []
   caveats: []
   school: null
@@ -351,8 +414,11 @@ rules:
 - rule_id: LZ-08-04
   kind: doctrine
   statement: 禍旬向末迎福
-  anchor: null
-  quote: 禍旬向末迎福
+  anchor:
+    file: sources/fulltext/luming-nayin/luoluzi-sanming/fulltext.md
+    start_line: 882
+    end_line: 882
+  quote: 禍旬向末言福，可以迎推；纔入衰鄉論災，宜其逆課。男迎女送，否泰交居；陰陽二氣，逆順折除。
   applicable_to: []
   caveats: []
   school: null
@@ -384,8 +450,11 @@ rules:
 - rule_id: LZ-08-07
   kind: doctrine
   statement: 身克煞輕、煞克身重
-  anchor: null
-  quote: 身克煞輕、煞克身重
+  anchor:
+    file: sources/fulltext/luming-nayin/luoluzi-sanming/fulltext.md
+    start_line: 1082
+    end_line: 1082
+  quote: 須要明其神煞，較重較量。身剋煞而尚輕，煞剋身而尤重。
   applicable_to: []
   caveats: []
   school: null
@@ -395,8 +464,11 @@ rules:
 - rule_id: LZ-08-08
   kind: doctrine
   statement: 万里回还三归之地
-  anchor: null
-  quote: 万里回还三归之地
+  anchor:
+    file: sources/fulltext/luming-nayin/luoluzi-sanming/fulltext.md
+    start_line: 1054
+    end_line: 1054
+  quote: 狂橫起於勾絞，禍幾發於元亡。宅墓同處，恐少樂而多憂。萬里回還，乃是三歸之地。
   applicable_to: []
   caveats: []
   school: null
@@ -406,8 +478,11 @@ rules:
 - rule_id: LZ-08-09
   kind: doctrine
   statement: 金火两停成大器
-  anchor: null
-  quote: 金火两停成大器
+  anchor:
+    file: sources/fulltext/luming-nayin/luoluzi-sanming/fulltext.md
+    start_line: 849
+    end_line: 849
+  quote: 亦須要金火兩停者能之。
   applicable_to: []
   caveats: []
   school: null
@@ -417,8 +492,11 @@ rules:
 - rule_id: LZ-08-10
   kind: doctrine
   statement: 处定求动、居安问危
-  anchor: null
-  quote: 处定求动、居安问危
+  anchor:
+    file: sources/fulltext/luming-nayin/luoluzi-sanming/fulltext.md
+    start_line: 1164
+    end_line: 1164
+  quote: 處定求動，剋未進而難遷；居安問危，可凶中而卜吉。
   applicable_to: []
   caveats: []
   school: null

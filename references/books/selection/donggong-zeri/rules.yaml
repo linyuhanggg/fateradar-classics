@@ -10,8 +10,11 @@ rules:
 - rule_id: DR
   kind: doctrine
   statement: 本书把筮仕、受官、出行、谋干、婚姻、起造移居、丧凶葬祭等用事都纳入“择日选时”框架；日与时并看，不能只看日课。
-  anchor: null
-  quote: 本书把筮仕、受官、出行、谋干、婚姻、起造移居、丧凶葬祭等用事都纳入“择日选时”框架；日与时并看，不能只看日课。
+  anchor:
+    file: sources/fulltext/selection/donggong-zeri/fulltext.md
+    start_line: 26
+    end_line: 26
+  quote: 但人生筮仕，受官，出行，謀幹，及婚姻吉禮，起造移居，以及喪凶葬祭，莫不思趨吉而避凶，蓋欲求平安而圖其利也，欲求吉利，非擇日選時不可。
   applicable_to: []
   caveats:
   - 文化参考，非事实判断
@@ -23,8 +26,11 @@ rules:
 - rule_id: DONGGONGZERI-DR
   kind: doctrine
   statement: 全书主体按正月寅月至十二月丑月，每月列 12 个建除日（建、除、满、平、定、执、破、危、成、收、开、闭）并给出宜忌、应事与凶验叙述。
-  anchor: null
-  quote: 全书主体按正月寅月至十二月丑月，每月列 12 个建除日（建、除、满、平、定、执、破、危、成、收、开、闭）并给出宜忌、应事与凶验叙述。
+  anchor:
+    file: sources/fulltext/selection/donggong-zeri/fulltext.md
+    start_line: 784
+    end_line: 784
+  quote: '## 十二月 丑月'
   applicable_to: []
   caveats:
   - 不得让 LLM 手算日期
@@ -36,8 +42,11 @@ rules:
 - rule_id: DONGGONGZERI-003
   kind: doctrine
   statement: 当用户问“某日是否宜嫁娶/动土/安葬/出行”时，主 skill 应先调用历算工具确定干支与月建，再用本表检索对应月支+建除日；输出时说明这是《董公选择日要览》的民间通书说法。
-  anchor: null
-  quote: 当用户问“某日是否宜嫁娶/动土/安葬/出行”时，主 skill 应先调用历算工具确定干支与月建，再用本表检索对应月支+建除日；输出时说明这是《董公选择日要览》的民间通书说法。
+  anchor:
+    file: sources/fulltext/selection/donggong-zeri/fulltext.md
+    start_line: 730
+    end_line: 730
+  quote: 紫檀天皇地皇星蓋照、宜婚姻入宅、起造安葬、
   applicable_to: []
   caveats:
   - 不得直接把表内“吉”“凶”“应验”当事实判断
@@ -49,8 +58,11 @@ rules:
 - rule_id: DONGGONGZERI-004
   kind: doctrine
   statement: 本书论略中特别提示煞入中宫或白虎入中宫之日，不宜在庭院中钉钉、鼓乐喧哗；即使有煞贡、直星、人专、天德、月德等，也主张避用为上。
-  anchor: null
-  quote: 本书论略中特别提示煞入中宫或白虎入中宫之日，不宜在庭院中钉钉、鼓乐喧哗；即使有煞贡、直星、人专、天德、月德等，也主张避用为上。
+  anchor:
+    file: sources/fulltext/selection/donggong-zeri/fulltext.md
+    start_line: 113
+    end_line: 113
+  quote: 如遇煞入中宮或白虎入中宮之日，不可在庭院之中釘釘及鼓樂喧嘩之聲浪，凡此種日干，即使有煞貢、直星、人專、天德、月德星臨，似可化解、然已生疑及旁觀，故避用為上策。
   applicable_to: []
   caveats:
   - 这是本书民间风险偏好，官方口径仍应以《协纪辨方书》《星历考原》为上位参照
@@ -61,8 +73,11 @@ rules:
 - rule_id: DONGGONGZERI-005
   kind: doctrine
   statement: 金神七煞歌把角、亢、奎、娄、牛、鬼等宿与出兵、行船、修造、嫁娶等凶象相连；技能中应把它作为“民间通书避忌项”，不是独立断验。
-  anchor: null
-  quote: 金神七煞歌把角、亢、奎、娄、牛、鬼等宿与出兵、行船、修造、嫁娶等凶象相连；技能中应把它作为“民间通书避忌项”，不是独立断验。
+  anchor:
+    file: sources/fulltext/selection/donggong-zeri/fulltext.md
+    start_line: 866
+    end_line: 866
+  quote: 角亢奎婁牛鬼星，出兵便是不回兵，行船定被大風打，居官未滿即遭刑，起造婚姻逢此日，不出三年見哭聲，世人若知避三煞，官商士庶永豐榮。角水蛟、亢金龍、奎木狼、婁金羊、牛金牛、星日馬，遇此七星諸事忌之。
   applicable_to: []
   caveats:
   - 金神起例需与《星历考原》核对
@@ -74,8 +89,11 @@ rules:
 - rule_id: DONGGONGZERI-006
   kind: doctrine
   statement: 本书将煞贡、直星、人专列为可用于上官赴任、临政亲民、入学等事的吉日类；可作民间通书“通用吉日”证据层。
-  anchor: null
-  quote: 本书将煞贡、直星、人专列为可用于上官赴任、临政亲民、入学等事的吉日类；可作民间通书“通用吉日”证据层。
+  anchor:
+    file: sources/fulltext/selection/donggong-zeri/fulltext.md
+    start_line: 870
+    end_line: 870
+  quote: 正、四、七、十，四孟之月：
   applicable_to: []
   caveats:
   - 不得替代官方黄道、神煞起例
@@ -87,8 +105,11 @@ rules:
 - rule_id: DONGGONGZERI-007
   kind: doctrine
   statement: 本书反复强调同一日用于不同人、不同事可能吉凶不同，需兼看本命、用事类型、入宅/敬神/发轿等关键时辰；技能应优先路由到“日课+时辰+本命”组合判断。
-  anchor: null
-  quote: 本书反复强调同一日用于不同人、不同事可能吉凶不同，需兼看本命、用事类型、入宅/敬神/发轿等关键时辰；技能应优先路由到“日课+时辰+本命”组合判断。
+  anchor:
+    file: sources/fulltext/selection/donggong-zeri/fulltext.md
+    start_line: 108
+    end_line: 108
+  quote: 移居需同參主人入宅、敬神時辰為吉。
   applicable_to: []
   caveats:
   - 现代输出只作文化说明
@@ -100,8 +121,11 @@ rules:
 - rule_id: DONGGONGZERI-008
   kind: doctrine
   statement: 月日表中同一日常出现“宜安葬但不宜起造婚姻”“宜小修但大用凶”等差异；主 skill 检索时必须带上事项类型，不得只输出单一吉凶。
-  anchor: null
-  quote: 月日表中同一日常出现“宜安葬但不宜起造婚姻”“宜小修但大用凶”等差异；主 skill 检索时必须带上事项类型，不得只输出单一吉凶。
+  anchor:
+    file: sources/fulltext/selection/donggong-zeri/fulltext.md
+    start_line: 729
+    end_line: 729
+  quote: 滿寅日：黃沙天富，是土瘟、但不宜動土，然有福星並黃羅
   applicable_to: []
   caveats:
   - 若用户未说明事项，应先分类为嫁娶、动土、出行、安葬、入宅、开张、上任等，再检索
@@ -124,8 +148,11 @@ rules:
 - rule_id: DONGGONGZERI-010
   kind: doctrine
   statement: 原书大量使用“犯之主官司、损人口、重丧、大凶”等应验语。蒸馏为 skill 时必须改写为“原书以某日列为某类避忌”，禁止直接断言会发生灾祸。
-  anchor: null
-  quote: 原书大量使用“犯之主官司、损人口、重丧、大凶”等应验语。蒸馏为 skill 时必须改写为“原书以某日列为某类避忌”，禁止直接断言会发生灾祸。
+  anchor:
+    file: sources/fulltext/selection/donggong-zeri/fulltext.md
+    start_line: 720
+    end_line: 720
+  quote: 建子日：火星甲子天赦日進財、惜被月建沖破用之主官司
   applicable_to: []
   caveats:
   - 必须附“文化参考，非事实判断”

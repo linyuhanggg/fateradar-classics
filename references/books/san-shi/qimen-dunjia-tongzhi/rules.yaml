@@ -94,7 +94,10 @@ rules:
 - rule_id: QM-P07
   kind: doctrine
   statement: 大格 庚临六癸
-  anchor: null
+  anchor:
+    file: sources/fulltext/san-shi/qimen-dunjia-tongzhi/fulltext.md
+    start_line: 285
+    end_line: 285
   quote: 大格 庚临六癸
   applicable_to: []
   caveats: []
@@ -105,7 +108,10 @@ rules:
 - rule_id: QM-P08
   kind: doctrine
   statement: 刑格 庚临六己
-  anchor: null
+  anchor:
+    file: sources/fulltext/san-shi/qimen-dunjia-tongzhi/fulltext.md
+    start_line: 287
+    end_line: 287
   quote: 刑格 庚临六己
   applicable_to: []
   caveats: []
@@ -116,7 +122,10 @@ rules:
 - rule_id: QM-P09
   kind: doctrine
   statement: 小格 庚临壬
-  anchor: null
+  anchor:
+    file: sources/fulltext/san-shi/qimen-dunjia-tongzhi/fulltext.md
+    start_line: 297
+    end_line: 297
   quote: 小格 庚临壬
   applicable_to: []
   caveats: []
@@ -197,7 +206,10 @@ rules:
 - rule_id: QM-P15
   kind: doctrine
   statement: 反吟 星加对宫
-  anchor: null
+  anchor:
+    file: sources/fulltext/san-shi/qimen-dunjia-tongzhi/fulltext.md
+    start_line: 309
+    end_line: 309
   quote: 反吟 星加对宫
   applicable_to: []
   caveats: []
@@ -348,7 +360,10 @@ rules:
 - rule_id: QM-P27
   kind: doctrine
   statement: 岁格 庚临岁干
-  anchor: null
+  anchor:
+    file: sources/fulltext/san-shi/qimen-dunjia-tongzhi/fulltext.md
+    start_line: 289
+    end_line: 289
   quote: 岁格 庚临岁干
   applicable_to: []
   caveats: []
@@ -359,7 +374,10 @@ rules:
 - rule_id: QM-P28
   kind: doctrine
   statement: 月格 庚临月干
-  anchor: null
+  anchor:
+    file: sources/fulltext/san-shi/qimen-dunjia-tongzhi/fulltext.md
+    start_line: 291
+    end_line: 291
   quote: 月格 庚临月干
   applicable_to: []
   caveats: []
@@ -370,7 +388,10 @@ rules:
 - rule_id: QM-P29
   kind: doctrine
   statement: 日格 庚临日干
-  anchor: null
+  anchor:
+    file: sources/fulltext/san-shi/qimen-dunjia-tongzhi/fulltext.md
+    start_line: 293
+    end_line: 293
   quote: 日格 庚临日干
   applicable_to: []
   caveats: []
@@ -395,7 +416,10 @@ rules:
 - rule_id: QM-P31
   kind: doctrine
   statement: 伏宫 庚临值符
-  anchor: null
+  anchor:
+    file: sources/fulltext/san-shi/qimen-dunjia-tongzhi/fulltext.md
+    start_line: 299
+    end_line: 299
   quote: 伏宫 庚临值符
   applicable_to: []
   caveats: []
@@ -406,7 +430,10 @@ rules:
 - rule_id: QM-P32
   kind: doctrine
   statement: 伏干 庚临日干
-  anchor: null
+  anchor:
+    file: sources/fulltext/san-shi/qimen-dunjia-tongzhi/fulltext.md
+    start_line: 301
+    end_line: 301
   quote: 伏干 庚临日干
   applicable_to: []
   caveats: []

@@ -10,8 +10,11 @@ rules:
 - rule_id: WX-01-01
   kind: doctrine
   statement: 六甲纳音法
-  anchor: null
-  quote: 六甲纳音法
+  anchor:
+    file: sources/fulltext/luming-nayin/wuxing-jingji/fulltext.md
+    start_line: 270
+    end_line: 270
+  quote: 《六微指論》雲：天氣始於甲，地氣始於子，子甲相合，命曰歲，以十乾配十二支，周而復始，則六甲成矣。
   applicable_to: []
   caveats: []
   school: null
@@ -32,8 +35,11 @@ rules:
 - rule_id: WX-02-01
   kind: doctrine
   statement: 乾神十干配五常
-  anchor: null
-  quote: 乾神十干配五常
+  anchor:
+    file: sources/fulltext/luming-nayin/wuxing-jingji/fulltext.md
+    start_line: 270
+    end_line: 270
+  quote: 《六微指論》雲：天氣始於甲，地氣始於子，子甲相合，命曰歲，以十乾配十二支，周而復始，則六甲成矣。
   applicable_to: []
   caveats: []
   school: null
@@ -43,8 +49,11 @@ rules:
 - rule_id: WX-02-02
   kind: doctrine
   statement: 阳干阴干性情之分
-  anchor: null
-  quote: 阳干阴干性情之分
+  anchor:
+    file: sources/fulltext/luming-nayin/wuxing-jingji/fulltext.md
+    start_line: 6130
+    end_line: 6130
+  quote: 以阳干生阴干、阴干生阳干，为正印，阳干生阳干，阴干生阴干，为偏印，若月日时在四贵、华盖之上，遇正印者，主大贵。遇四平亦主贵，四忌上亦主福。（三命提要）
   applicable_to: []
   caveats: []
   school: null
@@ -54,8 +63,11 @@ rules:
 - rule_id: WX-03-01
   kind: doctrine
   statement: 支神藏干（人元）
-  anchor: null
-  quote: 支神藏干（人元）
+  anchor:
+    file: sources/fulltext/luming-nayin/wuxing-jingji/fulltext.md
+    start_line: 2213
+    end_line: 2213
+  quote: 亥子(水)寅卯(木)巳午(火)申酉(金)辰戍醜未(土)
   applicable_to: []
   caveats: []
   school: null
@@ -65,8 +77,11 @@ rules:
 - rule_id: WX-03-02
   kind: doctrine
   statement: 五行四时旺衰
-  anchor: null
-  quote: 五行四时旺衰
+  anchor:
+    file: sources/fulltext/luming-nayin/wuxing-jingji/fulltext.md
+    start_line: 8070
+    end_line: 8070
+  quote: 犯之者遭刑，有疾，四时休败，不利四时，旺者富也。
   applicable_to: []
   caveats: []
   school: null
@@ -76,8 +91,11 @@ rules:
 - rule_id: WX-03-03
   kind: doctrine
   statement: 真五行合化
-  anchor: null
-  quote: 真五行合化
+  anchor:
+    file: sources/fulltext/luming-nayin/wuxing-jingji/fulltext.md
+    start_line: 9300
+    end_line: 9300
+  quote: 珞琭子雲：律呂宮商，五虎論其成敗，王氏注雲：陽六為律，陰六為呂，五音總於律呂，吹律吸呂，以定宮商，蓋五行合於五音，是故甲己宮土，遁起丙寅，乙庚商金，起戊寅，丙辛羽水，起於庚寅，丁壬角木，起自壬寅，戊癸徵火，起於甲寅，遁人之成敗吉兇
   applicable_to: []
   caveats: []
   school: null
@@ -98,8 +116,11 @@ rules:
 - rule_id: WX-04-02
   kind: doctrine
   statement: 日时贵格识别
-  anchor: null
-  quote: 日时贵格识别
+  anchor:
+    file: sources/fulltext/luming-nayin/wuxing-jingji/fulltext.md
+    start_line: 86
+    end_line: 86
+  quote: 釋日時貴格
   applicable_to: []
   caveats: []
   school: null
@@ -109,8 +130,11 @@ rules:
 - rule_id: WX-04-03
   kind: doctrine
   statement: 凶中凶格
-  anchor: null
-  quote: 凶中凶格
+  anchor:
+    file: sources/fulltext/luming-nayin/wuxing-jingji/fulltext.md
+    start_line: 3773
+    end_line: 3773
+  quote: 甲子日丁卯时甲戌时
   applicable_to: []
   caveats: []
   school: null
@@ -120,8 +144,11 @@ rules:
 - rule_id: WX-04-04
   kind: doctrine
   statement: 节气浅深起运
-  anchor: null
-  quote: 节气浅深起运
+  anchor:
+    file: sources/fulltext/luming-nayin/wuxing-jingji/fulltext.md
+    start_line: 4111
+    end_line: 4111
+  quote: 立春正月节雨水正月中
   applicable_to: []
   caveats: []
   school: null
@@ -131,8 +158,11 @@ rules:
 - rule_id: WX-05-01
   kind: doctrine
   statement: 天乙贵神识别
-  anchor: null
-  quote: 天乙贵神识别
+  anchor:
+    file: sources/fulltext/luming-nayin/wuxing-jingji/fulltext.md
+    start_line: 96
+    end_line: 96
+  quote: 第十四卷論天乙貴神
   applicable_to: []
   caveats: []
   school: null
@@ -142,8 +172,11 @@ rules:
 - rule_id: WX-05-02
   kind: doctrine
   statement: 祿馬同乡上贵
-  anchor: null
-  quote: 祿馬同乡上贵
+  anchor:
+    file: sources/fulltext/luming-nayin/wuxing-jingji/fulltext.md
+    start_line: 102
+    end_line: 102
+  quote: 第十七卷並論祿馬
   applicable_to: []
   caveats: []
   school: null
@@ -153,8 +186,11 @@ rules:
 - rule_id: WX-05-03
   kind: doctrine
   statement: 三奇贵格
-  anchor: null
-  quote: 三奇贵格
+  anchor:
+    file: sources/fulltext/luming-nayin/wuxing-jingji/fulltext.md
+    start_line: 8522
+    end_line: 8522
+  quote: 三刑須等即貴，若偏枯不等即兇敗。若有官，也見遷諦，須得相等，更帶三奇、貴人，天德，官極品矣。（金書命訣）
   applicable_to: []
   caveats: []
   school: null
@@ -164,8 +200,11 @@ rules:
 - rule_id: WX-05-04
   kind: doctrine
   statement: 四进神贵命
-  anchor: null
-  quote: 四进神贵命
+  anchor:
+    file: sources/fulltext/luming-nayin/wuxing-jingji/fulltext.md
+    start_line: 6520
+    end_line: 6520
+  quote: 甲午为第三进神，则丙午、丁未、戊申为交、退伏神，已酉为第四进神，则辛酉、壬戌、癸亥为交、退、伏神、值进神则发迹亨快，值交神，则庶事不谐，值退神则官资降黜，值伏神则所作留滞。
   applicable_to: []
   caveats: []
   school: null
@@ -175,8 +214,11 @@ rules:
 - rule_id: WX-05-05
   kind: doctrine
   statement: 华盖主孤高僧道
-  anchor: null
-  quote: 华盖主孤高僧道
+  anchor:
+    file: sources/fulltext/luming-nayin/wuxing-jingji/fulltext.md
+    start_line: 6765
+    end_line: 6765
+  quote: 寅午戌人在戌巳酉醜人在醜申子辰人在辰亥卯未人在未
   applicable_to: []
   caveats: []
   school: null
@@ -186,8 +228,11 @@ rules:
 - rule_id: WX-05-06
   kind: doctrine
   statement: 金舆乘车之贵
-  anchor: null
-  quote: 金舆乘车之贵
+  anchor:
+    file: sources/fulltext/luming-nayin/wuxing-jingji/fulltext.md
+    start_line: 6793
+    end_line: 6793
+  quote: 金輿者，是五行之吉神，常在祿前二辰，命前二辰，馬前二辰。（林開五命）
   applicable_to: []
   caveats: []
   school: null
@@ -197,8 +242,11 @@ rules:
 - rule_id: WX-05-07
   kind: doctrine
   statement: 学堂文章
-  anchor: null
-  quote: 学堂文章
+  anchor:
+    file: sources/fulltext/luming-nayin/wuxing-jingji/fulltext.md
+    start_line: 6809
+    end_line: 6809
+  quote: 謂年、月、日、時，有甲乙丙丁分處四位，相聯不斷，帶木火盛數，如甲寅年、乙亥月、丁酉時、丙申日，丙寅胎，此青赤為文之命也，又雲：青赤時為父子，謂如甲子年、丙寅月、甲子日，丙寅時，又甲寅、丙寅之類，亦是如年木、月火、日木、時火，不惟福力最緊，兼文彩異眾。
   applicable_to: []
   caveats: []
   school: null
@@ -208,8 +256,11 @@ rules:
 - rule_id: WX-06-01
   kind: doctrine
   statement: 上贵格三大要素
-  anchor: null
-  quote: 上贵格三大要素
+  anchor:
+    file: sources/fulltext/luming-nayin/wuxing-jingji/fulltext.md
+    start_line: 6084
+    end_line: 6084
+  quote: 以上贵格，须是支神带生旺福聚方入格，若有驳杂冲破空亡，所临时加减言之，若带死绝、凶杀、福聚之处，虽有如无也，主吉中有凶，亦作薄命断之，盖变官为鬼也，又若己酉己卯人见丁壬，壬子壬午人见乙庚，虽纳音见真五行克为官，奈本干同受克，故不作真官，而作真鬼断之，大小运太岁逢之，灾尤重。
   applicable_to: []
   caveats: []
   school: null
@@ -241,8 +292,11 @@ rules:
 - rule_id: WX-07-02
   kind: doctrine
   statement: 三刑骨肉
-  anchor: null
-  quote: 三刑骨肉
+  anchor:
+    file: sources/fulltext/luming-nayin/wuxing-jingji/fulltext.md
+    start_line: 8456
+    end_line: 8456
+  quote: 刑有四种：一曰无礼刑，子刑卯，卯复刑子，盖子为生阳晶，卯为日门，阳者，君也，夫也，势不两立，又子者，水也，卯者，木也，有子母之道，因两阳之竞不恤，所以相生处相刑害。
   applicable_to: []
   caveats: []
   school: null
@@ -252,8 +306,11 @@ rules:
 - rule_id: WX-07-03
   kind: doctrine
   statement: 六害骨肉离
-  anchor: null
-  quote: 六害骨肉离
+  anchor:
+    file: sources/fulltext/luming-nayin/wuxing-jingji/fulltext.md
+    start_line: 8701
+    end_line: 8701
+  quote: 凡空亡遇三者，主骨肉離散，拋失鄉井，橫遭官事，常主破財，祿馬與一切福神落空亡，皆為陷沒，大小運至此，三命又在衰鄉，財祿無氣，亦為死厄。（三命鈴）
   applicable_to: []
   caveats: []
   school: null
@@ -263,8 +320,11 @@ rules:
 - rule_id: WX-07-04
   kind: doctrine
   statement: 空亡
-  anchor: null
-  quote: 空亡
+  anchor:
+    file: sources/fulltext/luming-nayin/wuxing-jingji/fulltext.md
+    start_line: 8602
+    end_line: 8602
+  quote: 每旬管兩空亡，分前後五辰，各有所屬，假令甲子旬中無戌亥，自甲子至戊辰，以戌為空亡，自己巳至癸酉，以亥為空亡，餘彷此。（林開五命）
   applicable_to: []
   caveats: []
   school: null
@@ -274,8 +334,11 @@ rules:
 - rule_id: WX-07-05
   kind: doctrine
   statement: 冲破六冲
-  anchor: null
-  quote: 冲破六冲
+  anchor:
+    file: sources/fulltext/luming-nayin/wuxing-jingji/fulltext.md
+    start_line: 8707
+    end_line: 8707
+  quote: 相衝者十二支戰擊之神，大概為兇，然有為福之甚者，凡沖處要相生，如辛巳沖癸亥，即是金生水也，馀依此推之。如同類及相尅者最兇，如壬申金尅庚寅之木，己卯沖己酉之土，皆不利矣。凡相生衝，主人聲望播流，高明出眾，科甲崢嶸，相尅衝，主人神清貌俊，襟韻脫俗，軒昂灑落，上視，仰面而行。
   applicable_to: []
   caveats: []
   school: null
@@ -296,8 +359,11 @@ rules:
 - rule_id: WX-08-01
   kind: doctrine
   statement: 小儿关煞
-  anchor: null
-  quote: 小儿关煞
+  anchor:
+    file: sources/fulltext/luming-nayin/wuxing-jingji/fulltext.md
+    start_line: 9402
+    end_line: 9402
+  quote: 凡小兒日帶甲乙者，主印堂寬，日藏神，人中長，眉疏秀。帶丙丁者，主眼大，頸長，額窄。小年多患瘡。帶戊己者，主頭大，額廣，帶庚字者，主面方，額闊，帶辛字者，主鳳眼，耳朝口，有垂珠，帶壬字者，主眼大，好喫酒，膽大，蓋癸乃真武殺也。
   applicable_to: []
   caveats: []
   school: null
@@ -307,8 +373,11 @@ rules:
 - rule_id: WX-08-02
   kind: doctrine
   statement: 男命取格
-  anchor: null
-  quote: 男命取格
+  anchor:
+    file: sources/fulltext/luming-nayin/wuxing-jingji/fulltext.md
+    start_line: 9571
+    end_line: 9571
+  quote: 凡推男命，以年為父，胎為母，月為兄弟，官員以朋為僚友日為己身、妻妾，時為子孫，官員以時為帝座，禍福凡是子午卯酉日生，主娶子午卯酉命妻，或日支三六合，或乾合，俱不得偕老。
   applicable_to: []
   caveats: []
   school: null
@@ -318,8 +387,11 @@ rules:
 - rule_id: WX-08-03
   kind: doctrine
   statement: 女命旧观
-  anchor: null
-  quote: 女命旧观
+  anchor:
+    file: sources/fulltext/luming-nayin/wuxing-jingji/fulltext.md
+    start_line: 9653
+    end_line: 9653
+  quote: 凡女命以年為翁父，胎為婆母，月為妯娌，日為夫，己身，時為子孫。
   applicable_to: []
   caveats: []
   school: null
@@ -329,8 +401,11 @@ rules:
 - rule_id: WX-08-04
   kind: doctrine
   statement: 父母位
-  anchor: null
-  quote: 父母位
+  anchor:
+    file: sources/fulltext/luming-nayin/wuxing-jingji/fulltext.md
+    start_line: 9918
+    end_line: 9918
+  quote: 父位者，以克母者為之，謂如木命以土為父，若遇父在有氣之鄉，其父必居華顯或得父祖庥蔭，名望升達，假令戊辰木命人，以土為父，十一月生為旺鄉，若居無氣之鄉，則主其父不利，或幼失尊長，或父抱疾，終當孤立，假令丁卯火命人，以金為父，九月生為衰鄉，他皆彷。
   applicable_to: []
   caveats: []
   school: null
@@ -340,8 +415,11 @@ rules:
 - rule_id: WX-09-01
   kind: doctrine
   statement: 子息位
-  anchor: null
-  quote: 子息位
+  anchor:
+    file: sources/fulltext/luming-nayin/wuxing-jingji/fulltext.md
+    start_line: 9993
+    end_line: 9993
+  quote: 子位者，以妻命所生者為之，謂如木命人以金為子，若遇子位在旺相有氣之鄉，則生有聰明忠孝之子，光顯祖宗。假令甲子人以火為子，五月生火乘旺氣，餘準此。若是陰命人，定子位，並以所生者為子，如木命人，火為子，他彷此。其吉兇休咎，皆如前法夫命推之。
   applicable_to: []
   caveats: []
   school: null
@@ -351,8 +429,11 @@ rules:
 - rule_id: WX-09-02
   kind: doctrine
   statement: 僧道九流吏卒
-  anchor: null
-  quote: 僧道九流吏卒
+  anchor:
+    file: sources/fulltext/luming-nayin/wuxing-jingji/fulltext.md
+    start_line: 10066
+    end_line: 10066
+  quote: 凡推道德命者，喪門、孤角、空亡，同類福者，是也。
   applicable_to: []
   caveats: []
   school: null
@@ -362,8 +443,11 @@ rules:
 - rule_id: WX-09-03
   kind: doctrine
   statement: 形貌性情
-  anchor: null
-  quote: 形貌性情
+  anchor:
+    file: sources/fulltext/luming-nayin/wuxing-jingji/fulltext.md
+    start_line: 10132
+    end_line: 10132
+  quote: 凡人禀五行之氣而生者也，形貌美惡，性之剛柔不同，由金、木、水、火、土，今敍五行形性。
   applicable_to: []
   caveats: []
   school: null
@@ -373,8 +457,11 @@ rules:
 - rule_id: WX-09-04
   kind: doctrine
   statement: 论疾病
-  anchor: null
-  quote: 论疾病
+  anchor:
+    file: sources/fulltext/luming-nayin/wuxing-jingji/fulltext.md
+    start_line: 10268
+    end_line: 10268
+  quote: 夫人禀五行之和氣而成形，所以有疾苦者，皆由陰陽五行之氣，虛、實、寒、熱太過不及，贅疣而致也。
   applicable_to: []
   caveats: []
   school: null
@@ -384,8 +471,11 @@ rules:
 - rule_id: WX-09-05
   kind: doctrine
   statement: 论壽夭
-  anchor: null
-  quote: 论壽夭
+  anchor:
+    file: sources/fulltext/luming-nayin/wuxing-jingji/fulltext.md
+    start_line: 10347
+    end_line: 10347
+  quote: 夫人壽夭脩短之數，大抵生旺為壽長，死絕則為夭折，如根深者蒂固，源
   applicable_to: []
   caveats: []
   school: null
@@ -395,8 +485,11 @@ rules:
 - rule_id: WX-10-01
   kind: doctrine
   statement: 大运起例
-  anchor: null
-  quote: 大运起例
+  anchor:
+    file: sources/fulltext/luming-nayin/wuxing-jingji/fulltext.md
+    start_line: 10711
+    end_line: 10711
+  quote: 乃是一歲奇九月之大運，
   applicable_to: []
   caveats: []
   school: null
@@ -406,8 +499,11 @@ rules:
 - rule_id: WX-10-02
   kind: doctrine
   statement: 小运起例
-  anchor: null
-  quote: 小运起例
+  anchor:
+    file: sources/fulltext/luming-nayin/wuxing-jingji/fulltext.md
+    start_line: 10994
+    end_line: 10994
+  quote: 小運者，陰陽生成之數也。
   applicable_to: []
   caveats: []
   school: null
@@ -417,8 +513,11 @@ rules:
 - rule_id: WX-10-03
   kind: doctrine
   statement: 二运并行
-  anchor: null
-  quote: 二运并行
+  anchor:
+    file: sources/fulltext/luming-nayin/wuxing-jingji/fulltext.md
+    start_line: 11011
+    end_line: 11011
+  quote: 凡二運見貴人，主少災無撓，主有人引接，進職加官。
   applicable_to: []
   caveats: []
   school: null
@@ -428,8 +527,11 @@ rules:
 - rule_id: WX-10-04
   kind: doctrine
   statement: 太岁伏吟反吟
-  anchor: null
-  quote: 太岁伏吟反吟
+  anchor:
+    file: sources/fulltext/luming-nayin/wuxing-jingji/fulltext.md
+    start_line: 11240
+    end_line: 11240
+  quote: 太歲者，木星之精也，每歲一位，其神為諸殺之君，故諸殺視之以定其位，所至之宮，欲常與本命支幹納音相合，無沖害、刑克，仍加本命貴人、祿馬，一切福神之地，則其年有遷官得財、成名進身．婚姻生子、利見大人之福。
   applicable_to: []
   caveats: []
   school: null
@@ -439,8 +541,11 @@ rules:
 - rule_id: WX-10-05
   kind: doctrine
   statement: 歲運合参
-  anchor: null
-  quote: 歲運合参
+  anchor:
+    file: sources/fulltext/luming-nayin/wuxing-jingji/fulltext.md
+    start_line: 11167
+    end_line: 11167
+  quote: 發於沉滯之中，有非常之慶，起於貧賤之間，有不次之用，當在歲運相遇也。
   applicable_to: []
   caveats: []
   school: null

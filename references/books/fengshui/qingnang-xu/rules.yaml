@@ -10,8 +10,11 @@ rules:
 - rule_id: QINGNANGXU-R-01
   kind: doctrine
   statement: 杨公养老法以"看雌雄"为总；先看金龙动不动、次察血脉认来龙；龙分两片阴阳取，水对三叉细认宗。
-  anchor: null
-  quote: 杨公养老法以"看雌雄"为总；先看金龙动不动、次察血脉认来龙；龙分两片阴阳取，水对三叉细认宗。
+  anchor:
+    file: sources/fulltext/fengshui/qingnang-xu/fulltext.md
+    start_line: 3
+    end_line: 3
+  quote: 楊公養老看雌雄，天下諸書對不同。先看金龍動不動，次察血脈認來龍。龍分兩片陰陽取，水對三叉細認宗。江南龍來江北望，江西龍去望江東。是以聖人卜河洛，湹澗二水交華嵩。
   applicable_to: []
   caveats:
   - 现代使用边界：仅作文化研究参考
@@ -22,8 +25,11 @@ rules:
 - rule_id: QINGNANGXU-R-02
   kind: doctrine
   statement: 山以山为对、水以水为对；山管山兮水管水，此是阴阳不待言；不可混淆。
-  anchor: null
-  quote: 山以山为对、水以水为对；山管山兮水管水，此是阴阳不待言；不可混淆。
+  anchor:
+    file: sources/fulltext/fengshui/qingnang-xu/fulltext.md
+    start_line: 4
+    end_line: 4
+  quote: 相其陰陽流水位，卜年卜宅世都宮。晉世景純傳此術，演經立義出元空。朱雀發源生旺氣，一一講說開愚蒙。一生二兮二生三，三生萬物是元關。山管山兮水管水，此是陰陽不待言。
   applicable_to: []
   caveats:
   - 现代使用边界：仅作文化研究参考
@@ -34,8 +40,11 @@ rules:
 - rule_id: QINGNANGXU-R-03
   kind: doctrine
   statement: 先天罗经十二支、后天再用八干四维辅正位，共二十四山；二十四山分顺逆，共成四十八局；五行从此中分，祖宗从阴阳出。
-  anchor: null
-  quote: 先天罗经十二支、后天再用八干四维辅正位，共二十四山；二十四山分顺逆，共成四十八局；五行从此中分，祖宗从阴阳出。
+  anchor:
+    file: sources/fulltext/fengshui/qingnang-xu/fulltext.md
+    start_line: 5
+    end_line: 5
+  quote: 識得陰陽元妙理，知其衰望生與死。不問坐山與來水，但逢死氣皆無取。先天羅經十二支，後天再用干與維。八干四維輔正位，子母公孫同此推。二十四山分順逆，共成四十有八局。
   applicable_to: []
   caveats:
   - 现代使用边界：具体局位推演必须使用 tool.fengshui.luopan，严禁手算
@@ -46,8 +55,11 @@ rules:
 - rule_id: QINGNANGXU-R-04
   kind: doctrine
   statement: 用净阴净阳法时，前后八尺不宜杂；斜正受来阴阳取，气乘生旺方无煞。
-  anchor: null
-  quote: 用净阴净阳法时，前后八尺不宜杂；斜正受来阴阳取，气乘生旺方无煞。
+  anchor:
+    file: sources/fulltext/fengshui/qingnang-xu/fulltext.md
+    start_line: 8
+    end_line: 8
+  quote: 用此量山與步水，百里江山一餉間。更有淨陰淨陽法，前後八尺不宜雜。斜正受來陰陽取，氣乘生旺方無煞。來處起頂須要知，三節四節不須拘。只要龍神得生旺，陰陽卻與穴中殊。
   applicable_to: []
   caveats:
   - 现代使用边界：仅作文化研究参考
@@ -59,8 +71,11 @@ rules:
 - rule_id: QINGNANGXU-R-05
   kind: doctrine
   statement: 山上龙神不下水、水里龙神不上山；用此量山步水，百里江山一饷间。
-  anchor: null
-  quote: 山上龙神不下水、水里龙神不上山；用此量山步水，百里江山一饷间。
+  anchor:
+    file: sources/fulltext/fengshui/qingnang-xu/fulltext.md
+    start_line: 7
+    end_line: 7
+  quote: 若能勘破個中理，妙用本來向一體。陰陽相見兩爲難，一山一水何足言。二十四山雙雙起，少有時師通此義。五行分布二十四，時師此訣何曾記。山上龍神不下水，水裏龍神不上山。
   applicable_to: []
   caveats:
   - 现代使用边界：仅作文化研究参考
@@ -71,8 +86,11 @@ rules:
 - rule_id: QINGNANGXU-R-06
   kind: doctrine
   statement: 水交三八要相遇，水发城门须要会；明堂朝水须截定生旺，莫教直泻。
-  anchor: null
-  quote: 水交三八要相遇，水发城门须要会；明堂朝水须截定生旺，莫教直泻。
+  anchor:
+    file: sources/fulltext/fengshui/qingnang-xu/fulltext.md
+    start_line: 9
+    end_line: 9
+  quote: 天上星辰似織羅，水交三八要相遇。水發城門須要會，卻如湖裏雁交鵝。穴上明堂并朝水，文庫大小俱得位。截定生旺莫教流，直射直流家業退。射破生方定少亡，沖破旺位財狼𤢎。
   applicable_to: []
   caveats:
   - 现代使用边界：仅作文化研究参考
@@ -83,8 +101,11 @@ rules:
 - rule_id: QINGNANGXU-R-07
   kind: doctrine
   statement: 截定生旺莫教流，直射直流家业退；射破生方定少亡，沖破旺位财狼藉。
-  anchor: null
-  quote: 截定生旺莫教流，直射直流家业退；射破生方定少亡，沖破旺位财狼藉。
+  anchor:
+    file: sources/fulltext/fengshui/qingnang-xu/fulltext.md
+    start_line: 9
+    end_line: 9
+  quote: 天上星辰似織羅，水交三八要相遇。水發城門須要會，卻如湖裏雁交鵝。穴上明堂并朝水，文庫大小俱得位。截定生旺莫教流，直射直流家業退。射破生方定少亡，沖破旺位財狼𤢎。
   applicable_to: []
   caveats:
   - 现代使用边界：仅作文化研究参考
@@ -96,8 +117,11 @@ rules:
 - rule_id: QINGNANGXU-R-08
   kind: doctrine
   statement: 生出克出名为退、生入克入名为进；进神宜进则家资旺，进神若退则家不兴；退神宜退亦同旺，退神若进则主官刑。
-  anchor: null
-  quote: 生出克出名为退、生入克入名为进；进神宜进则家资旺，进神若退则家不兴；退神宜退亦同旺，退神若进则主官刑。
+  anchor:
+    file: sources/fulltext/fengshui/qingnang-xu/fulltext.md
+    start_line: 10
+    end_line: 10
+  quote: 文若來時男女亂，庫方來到定爲殃。生出剋出名爲退，生入剋入名爲進。退水宜流千百步，進水須教庭戶迎。進退得位出公卿，家資巨富旺人丁。旺方帶煞來不宜，庫中藏煞去亦非。
   applicable_to: []
   caveats:
   - 现代使用边界：仅作文化研究参考
@@ -109,8 +133,11 @@ rules:
 - rule_id: QINGNANGXU-R-09
   kind: doctrine
   statement: 乾坤艮巽长男兴、寅申巳亥长伶丁；甲庚丙壬中男发、子午卯酉中男杀；乙辛丁癸小男强、辰戌丑未小男殃。
-  anchor: null
-  quote: 乾坤艮巽长男兴、寅申巳亥长伶丁；甲庚丙壬中男发、子午卯酉中男杀；乙辛丁癸小男强、辰戌丑未小男殃。
+  anchor:
+    file: sources/fulltext/fengshui/qingnang-xu/fulltext.md
+    start_line: 14
+    end_line: 14
+  quote: 凶神流短吉神長，富貴聲名滿天下。子午卯酉號衙廳，神壇寺觀亦能興。內有旗鎗紅門水，雷公館位使人驚。水神禍福原非細，更須一一查公位。乾坤艮巽長男興，寅申已亥長伶丁。
   applicable_to: []
   caveats:
   - 现代使用边界：仅作文化研究参考
@@ -122,8 +149,11 @@ rules:
 - rule_id: QINGNANGXU-R-10
   kind: doctrine
   statement: 山静水动昼夜定，水主财禄山主人丁；富贵贫贱在水神。
-  anchor: null
-  quote: 山静水动昼夜定，水主财禄山主人丁；富贵贫贱在水神。
+  anchor:
+    file: sources/fulltext/fengshui/qingnang-xu/fulltext.md
+    start_line: 15
+    end_line: 15
+  quote: 甲庚丙壬中男發，子午卯酉中男殺。乙辛丁癸小男強，辰戌丑未小男殃。富貴貧賤在水神，水是山家血脈精。山靜水動畫夜定，水主財祿山人丁。乾坤艮巽號御街，四大尊神在內排。
   applicable_to: []
   caveats:
   - 现代使用边界：仅作文化研究参考
@@ -134,8 +164,11 @@ rules:
 - rule_id: QINGNANGXU-R-11
   kind: doctrine
   statement: 唐僧一行扰外国时颠倒五行，遂以讹传讹禍福错乱；用法须回归杨曾真传。
-  anchor: null
-  quote: 唐僧一行扰外国时颠倒五行，遂以讹传讹禍福错乱；用法须回归杨曾真传。
+  anchor:
+    file: sources/fulltext/fengshui/qingnang-xu/fulltext.md
+    start_line: 17
+    end_line: 17
+  quote: 三才六建難爲妙，得三失五盡爲偏。蓋因一行擾外國，遂把五行顛倒編。以訛傳訛竟不明，所以禍福爲錯亂。
   applicable_to: []
   caveats:
   - 现代使用边界：典故性陈述，仅作源流参考

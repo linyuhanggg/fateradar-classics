@@ -75,8 +75,11 @@ rules:
 - rule_id: ZPR-04
   kind: doctrine
   statement: 月令所藏多气，透干或会支可使财变官、官变印、煞化印等，用神随之变化。
-  anchor: null
-  quote: 用神既主月令矣，然月令所藏不一，而用神遂有變化。如十二支中，除子午卯酉外，餘皆有藏，不必四墓也。即以寅論，甲爲本主，如郡之有府；丙其長生，如郡之有同知；戊亦長生，如郡之有通判。假使寅月爲提，不透甲而透丙，則如府官不臨郡，而同知得以作主。此變化之由也。
+  anchor:
+    file: sources/fulltext/bazi/ziping-zhenquan/fulltext.md
+    start_line: 419
+    end_line: 419
+  quote: 用神既主月令矣，然月令所藏不一，而用神遂有變化。如十二支中，除子午卯酉外，餘皆有藏，不必四墓也。即以寅論，甲爲本主，如郡之有府；丙其長生，如郡之有同知；戊亦長生，如郡之有通判。假使寅月爲提
   applicable_to:
   - key: yueling
     value: "*"
@@ -106,8 +109,11 @@ rules:
 - rule_id: ZPR-06
   kind: doctrine
   statement: 辰戌丑未为杂气，取用须看所藏何神透出、会合何局，不能只按单一藏干判断。
-  anchor: null
-  quote: 四墓者，沖氣也，何以謂之雜氣？以其所藏者多，用神不一，故謂之雜氣也。如辰本藏戊，而又爲水庫，爲乙餘氣，三者俱有，於何取用？然而甚易也，透干會支，取其清者用之，雜而不雜也。
+  anchor:
+    file: sources/fulltext/bazi/ziping-zhenquan/fulltext.md
+    start_line: 542
+    end_line: 542
+  quote: 四墓者，沖氣也，何以謂之雜氣？以其所藏者多，用神不一，故謂之雜氣也。如辰本藏戊，而又爲水庫，爲乙餘氣
   applicable_to:
   - key: yueling
     value: 辰
@@ -149,8 +155,11 @@ rules:
 - rule_id: ZPR-08
   kind: doctrine
   statement: 煞伤劫刃虽为四凶神，但制化得宜、配合得所，也可成格。
-  anchor: null
-  quote: 煞傷梟刃，四凶神也，然施之得宜，亦能成格。如印綬根輕，透煞爲助，煞能成格也；財逢比劫，傷官可解，傷能成格也；食神遇官，露梟得用，梟能成格也；財逢七煞，刃可解危，刃能成格也。
+  anchor:
+    file: sources/fulltext/bazi/ziping-zhenquan/fulltext.md
+    start_line: 627
+    end_line: 627
+  quote: 煞傷梟刃，四凶神也，然施之得宜，亦能成格。如印綬根輕，透煞爲助，煞能成格也；財逢比劫，傷官可解，傷能成格也；食神遇官
   applicable_to:
   - key: shishen
     value: 七杀
@@ -260,8 +269,11 @@ rules:
 - rule_id: ZPR-14
   kind: doctrine
   statement: 四吉神各有成格条件、破格条件和取运路径，不能用同一模板套判。
-  anchor: null
-  quote: 官以尅身，雖與七煞有別，終受彼制，何以切忌刑沖破害，尊之若是乎？豈知人生天地間，必無矯焉自尊之理，雖貴極天子，亦有天祖臨之。正官者，分所當尊，如在國有君，在家有親，刑沖破害，以下犯上，烏乎可乎？
+  anchor:
+    file: sources/fulltext/bazi/ziping-zhenquan/fulltext.md
+    start_line: 927
+    end_line: 927
+  quote: ，必無矯焉自尊之理，雖貴極天子，亦有天祖臨之。正官者，分所當尊，如在國有君，在家有親，刑沖破害，以下犯上，烏乎可乎？
   applicable_to:
   - key: shishen
     value: 正官
@@ -291,8 +303,11 @@ rules:
 - rule_id: ZPR-16
   kind: doctrine
   statement: 杂格应在正格不足以取用时讨论，且须严格按原文条件，不可泛化为万能例外。
-  anchor: null
-  quote: 雜格者，月令無用，取外格而用之，其格甚多，故謂之雜。大約要干頭無官無煞，方成外格。如有官煞，則自有官煞爲用，無勞外格矣。若透財尚可取格，然財根深，或財透兩位，則亦以財爲重，不取外格也。
+  anchor:
+    file: sources/fulltext/bazi/ziping-zhenquan/fulltext.md
+    start_line: 1365
+    end_line: 1365
+  quote: 雜格者，月令無用，取外格而用之，其格甚多，故謂之雜。
   applicable_to: []
   caveats:
   - 与外格同属边界规则，优先级低于月令正用

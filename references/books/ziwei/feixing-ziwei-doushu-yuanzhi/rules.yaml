@@ -10,8 +10,11 @@ rules:
 - rule_id: FZ
   kind: doctrine
   statement: 调用本 pack 时须称其为《華山陳希夷先生飛星紫微斗數原旨 / 斗數觀測錄》民国观测注释层，不得把它冒称为《斗数管见》，也不得当作古法紫微一线原典。
-  anchor: null
-  quote: 调用本 pack 时须称其为《華山陳希夷先生飛星紫微斗數原旨 / 斗數觀測錄》民国观测注释层，不得把它冒称为《斗数管见》，也不得当作古法紫微一线原典。
+  anchor:
+    file: sources/fulltext/ziwei/feixing-ziwei-doushu-yuanzhi/fulltext.md
+    start_line: 18
+    end_line: 18
+  quote: 華山陳希夷先生飛星紫微斗數原旨
   applicable_to: []
   caveats:
   - 作者题署和正文书名存在层次差异
@@ -23,8 +26,11 @@ rules:
 - rule_id: FEIXINGZIWEI-FZ
   kind: doctrine
   statement: 本书“观测之道”把天气变化、人事起伏、富贵剥复视为可观察对象；用于分析时只能作为对既有盘面事实的旁证和解释框架，不能替代排盘、历法、事实层。
-  anchor: null
-  quote: 本书“观测之道”把天气变化、人事起伏、富贵剥复视为可观察对象；用于分析时只能作为对既有盘面事实的旁证和解释框架，不能替代排盘、历法、事实层。
+  anchor:
+    file: sources/fulltext/ziwei/feixing-ziwei-doushu-yuanzhi/fulltext.md
+    start_line: 134
+    end_line: 134
+  quote: 觀測之道。
   applicable_to: []
   caveats:
   - 不可把“观测”扩张成无盘无据的自由断语
@@ -35,8 +41,11 @@ rules:
 - rule_id: FEIXINGZIWEI-003
   kind: doctrine
   statement: 本书称斗数“先布出身命垣”，说明一切占课和观察须先有身命/盘面定位；没有命身宫、十二宫、星曜、限运等事实，不应使用本 pack 下判断。
-  anchor: null
-  quote: 本书称斗数“先布出身命垣”，说明一切占课和观察须先有身命/盘面定位；没有命身宫、十二宫、星曜、限运等事实，不应使用本 pack 下判断。
+  anchor:
+    file: sources/fulltext/ziwei/feixing-ziwei-doushu-yuanzhi/fulltext.md
+    start_line: 1082
+    end_line: 1082
+  quote: 故先布出身命垣。
   applicable_to: []
   caveats: []
   school: null
@@ -72,8 +81,11 @@ rules:
 - rule_id: FEIXINGZIWEI-006
   kind: doctrine
   statement: 本书把白虎、喪門、弔客、歲破、大耗、流羊、陀罗等在方位上的作用归为伤病、破败、拆毁、急变、起土、迁动等传统凶象类别。
-  anchor: null
-  quote: 本书把白虎、喪門、弔客、歲破、大耗、流羊、陀罗等在方位上的作用归为伤病、破败、拆毁、急变、起土、迁动等传统凶象类别。
+  anchor:
+    file: sources/fulltext/ziwei/feixing-ziwei-doushu-yuanzhi/fulltext.md
+    start_line: 582
+    end_line: 582
+  quote: 歲破之方主破財破敗拆毀等事。
   applicable_to: []
   caveats:
   - 现代输出必须改写为“传统认为此方需注意安全、纠纷、破耗、动土/修缮”之类，不铁口断死病
@@ -84,8 +96,11 @@ rules:
 - rule_id: FEIXINGZIWEI-007
   kind: doctrine
   statement: 红鸾、天喜、咸池与大耗同宫或限运相逢，书中多以婚恋、喜庆、家眷移动、关系变化、消费支出、妻女病耗等案例验证。
-  anchor: null
-  quote: 红鸾、天喜、咸池与大耗同宫或限运相逢，书中多以婚恋、喜庆、家眷移动、关系变化、消费支出、妻女病耗等案例验证。
+  anchor:
+    file: sources/fulltext/ziwei/feixing-ziwei-doushu-yuanzhi/fulltext.md
+    start_line: 4026
+    end_line: 4026
+  quote: 按紅鸞天喜咸池與大耗同宮。
   applicable_to: []
   caveats:
   - 不应每次运势都机械说“财务/回款”
@@ -97,8 +112,11 @@ rules:
 - rule_id: FEIXINGZIWEI-008
   kind: doctrine
   statement: 巨门主口舌是非、公门黑暗、法院警署看守律师等象；天刑主刑法、司法、掌权施令、戒师将帅等象。二者在官禄、命身、流年等位置可作为法律/纠纷/公门事务旁证。
-  anchor: null
-  quote: 巨门主口舌是非、公门黑暗、法院警署看守律师等象；天刑主刑法、司法、掌权施令、戒师将帅等象。二者在官禄、命身、流年等位置可作为法律/纠纷/公门事务旁证。
+  anchor:
+    file: sources/fulltext/ziwei/feixing-ziwei-doushu-yuanzhi/fulltext.md
+    start_line: 516
+    end_line: 516
+  quote: 如法院警察局看守所律師之屬。
   applicable_to: []
   caveats:
   - 只能提示传统象义和风险，不能替代法律判断，也不能无盘事实断“必有官非”
@@ -109,8 +127,11 @@ rules:
 - rule_id: FEIXINGZIWEI-009
   kind: doctrine
   statement: 本书用宫位假借看岳父母、子女配偶、叔伯、外孙等关系，例如岳父母可借兄弟/子女等宫位，外孙可由迁移宫与命垣对照并用三合判定。
-  anchor: null
-  quote: 本书用宫位假借看岳父母、子女配偶、叔伯、外孙等关系，例如岳父母可借兄弟/子女等宫位，外孙可由迁移宫与命垣对照并用三合判定。
+  anchor:
+    file: sources/fulltext/ziwei/feixing-ziwei-doushu-yuanzhi/fulltext.md
+    start_line: 1079
+    end_line: 1079
+  quote: 切。即由遷移宮。與對照之命垣。仍用三合之法判定。或得其大概之義理。
   applicable_to: []
   caveats:
   - 必须明确标注为“本书假借法”，不要混作所有紫微流派通则
@@ -121,8 +142,11 @@ rules:
 - rule_id: FEIXINGZIWEI-010
   kind: doctrine
   statement: 本书尝试把斗数用于占课：一物一事一地一人均有身命，推演一课即该事整体局势，不必另分主客用神。
-  anchor: null
-  quote: 本书尝试把斗数用于占课：一物一事一地一人均有身命，推演一课即该事整体局势，不必另分主客用神。
+  anchor:
+    file: sources/fulltext/ziwei/feixing-ziwei-doushu-yuanzhi/fulltext.md
+    start_line: 1090
+    end_line: 1090
+  quote: 而其他一切對于占課身命顯然布明。
   applicable_to: []
   caveats:
   - 属本书创新/实验法
@@ -146,8 +170,11 @@ rules:
 - rule_id: FEIXINGZIWEI-012
   kind: doctrine
   statement: 本书观察村镇气脉时先看村头庙宇，庙宇坍塌/重新等被作为村中人事兴衰的旁证，并提到《阳宅爱众篇》诸庙宇神煞表。
-  anchor: null
-  quote: 本书观察村镇气脉时先看村头庙宇，庙宇坍塌/重新等被作为村中人事兴衰的旁证，并提到《阳宅爱众篇》诸庙宇神煞表。
+  anchor:
+    file: sources/fulltext/ziwei/feixing-ziwei-doushu-yuanzhi/fulltext.md
+    start_line: 3803
+    end_line: 3803
+  quote: 諸廟宇神煞表最靈不過。
   applicable_to: []
   caveats:
   - 这是一条“神煞书籍线索”，不是已完成的庙宇神煞规则库
@@ -159,8 +186,11 @@ rules:
 - rule_id: FEIXINGZIWEI-013
   kind: doctrine
   statement: 本书强调谈命需因人、语言、心理、社会语境而施说，并区分不敢说、不能说、不可说、不便说、不得不说等情形。用于 `mingli-master` 时应把原书说法、事实依据、现代解释和不确定性分开。
-  anchor: null
-  quote: 本书强调谈命需因人、语言、心理、社会语境而施说，并区分不敢说、不能说、不可说、不便说、不得不说等情形。用于 `mingli-master` 时应把原书说法、事实依据、现代解释和不确定性分开。
+  anchor:
+    file: sources/fulltext/ziwei/feixing-ziwei-doushu-yuanzhi/fulltext.md
+    start_line: 3997
+    end_line: 3997
+  quote: 談命一道。有不敢說。不能說。不可說。不便說。不得說。不懇說。不必說。不宜說。不暇說。又有勸說解說直說。不得不說之分。此談命者。臨機應變之秘。
   applicable_to: []
   caveats:
   - 这不是内容禁忌
@@ -172,8 +202,11 @@ rules:
 - rule_id: FEIXINGZIWEI-014
   kind: doctrine
   statement: 书末自称十二宫活用假借等法为“新发明”且由考验得来；因此这些规则须作为本书经验法，不得反向改写《紫微斗数全书》《太微赋》的基础义理。
-  anchor: null
-  quote: 书末自称十二宫活用假借等法为“新发明”且由考验得来；因此这些规则须作为本书经验法，不得反向改写《紫微斗数全书》《太微赋》的基础义理。
+  anchor:
+    file: sources/fulltext/ziwei/feixing-ziwei-doushu-yuanzhi/fulltext.md
+    start_line: 4538
+    end_line: 4538
+  quote: 此以上各稿內。對於斗數十二宮活用假借等法。均係新發明。而宣洩其中之微妙。曾由考驗得來。如一掌經子平講十二宮者。襲此活用各法。評斷。頗有神秘。其他講十二宮者。若能假借拆用。亦有奇驗。望在此各草稿中搜求之可也。萬勿以批命看之。是借命盤推演直指用法之意。然亦不過作命理草案看。
   applicable_to: []
   caveats:
   - 若与早期原典冲突，以早期 pack 先定本义，再把本书作为案例旁证

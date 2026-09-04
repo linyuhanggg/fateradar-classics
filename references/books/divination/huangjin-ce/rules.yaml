@@ -10,8 +10,11 @@ rules:
 - rule_id: HJC
   kind: doctrine
   statement: 占卦以动爻为变化之始、变卦为变化之终。
-  anchor: null
-  quote: 占卦以动爻为变化之始、变卦为变化之终。
+  anchor:
+    file: sources/fulltext/divination/huangjin-ce/fulltext.md
+    start_line: 17
+    end_line: 17
+  quote: 《黃金策》題明•劉基著。此書為火珠林卦法的集大成之作，是研究火珠林法的經典。明清術士莫不奉之圭臬。目前在民間流傳甚廣的《卜筮全書》、《增刪卜易》、《卜筮正宗》都收錄了此書，可見影響之大。 本電子文按《卜筮正宗》本，全文載錄。
   applicable_to: []
   caveats:
   - 仅作动变方法，不授权具体事项吉凶

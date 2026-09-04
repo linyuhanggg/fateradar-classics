@@ -25,8 +25,11 @@ rules:
 - rule_id: TR-02
   kind: doctrine
   statement: 太岁在地支所主之宫；占国家事件之"年神"位
-  anchor: null
-  quote: 太岁在地支所主之宫；占国家事件之"年神"位
+  anchor:
+    file: sources/fulltext/san-shi/taiyi-shenshu/fulltext.md
+    start_line: 1192
+    end_line: 1192
+  quote: 古法云始擊將者熒惑之精隨嵗計所遷臨二十八舍於嵗中各有所主之事矣
   applicable_to: []
   caveats: []
   school: null
@@ -104,8 +107,11 @@ rules:
 - rule_id: TR-08
   kind: doctrine
   statement: 只产生“三门具/不具”的结构化关系谓词和来源，不把古代兵占结论写入事实层
-  anchor: null
-  quote: 只产生“三门具/不具”的结构化关系谓词和来源，不把古代兵占结论写入事实层
+  anchor:
+    file: sources/fulltext/san-shi/taiyi-shenshu/fulltext.md
+    start_line: 595
+    end_line: 595
+  quote: 經曰五將發不發謂始擊将無掩擊文昌将無囚迫主客大小将無相闗即門具将發也若開休生三門具五将自然相㑹也若三門不具不可出兵五將不發不可臨戰也
   applicable_to: []
   caveats: []
   school: null
@@ -300,8 +306,11 @@ rules:
 - rule_id: TR-12
   kind: doctrine
   statement: 卷五三元五纪立成钤作为四神、天乙、地乙、直符 180 年周期的独立验算表
-  anchor: null
-  quote: 卷五三元五纪立成钤作为四神、天乙、地乙、直符 180 年周期的独立验算表
+  anchor:
+    file: sources/fulltext/san-shi/taiyi-shenshu/fulltext.md
+    start_line: 708
+    end_line: 708
+  quote: 〔與四神天乙地乙直符同用〕
   applicable_to: []
   caveats: []
   school: null
@@ -311,8 +320,11 @@ rules:
 - rule_id: TR-13
   kind: doctrine
   statement: 七术（临津问道 / 狮子反掷 / 白云卷空 / 猛虎相拒 / 雷公入水 / 白龙得云 / 回军无言）+ 16 推占（含三才 / 长短缓急 / 五音灾变 / 孤单成败 / 内外攻击 / 多少胜负 / 阴阳厄会 / 所主吉凶 等）
-  anchor: null
-  quote: 七术（临津问道 / 狮子反掷 / 白云卷空 / 猛虎相拒 / 雷公入水 / 白龙得云 / 回军无言）+ 16 推占（含三才 / 长短缓急 / 五音灾变 / 孤单成败 / 内外攻击 / 多少胜负 / 阴阳厄会 / 所主吉凶 等）
+  anchor:
+    file: sources/fulltext/san-shi/taiyi-shenshu/fulltext.md
+    start_line: 860
+    end_line: 860
+  quote: 推三才以占天地八  推長短以占緩急九推五音以占災變十  推孤單以占成敗十一推内外以占攻擊十二 推多少以占勝負十三推隂陽以占厄㑹十四 推所主以占吉㓙十五推太乙七術序
   applicable_to: []
   caveats:
   - 不在本发布的 annual_macro_historical_board_facts 计算范围
@@ -324,8 +336,11 @@ rules:
 - rule_id: TR-14
   kind: doctrine
   statement: 卷四（出师 / 障向 / 置阵 / 风云飞鸟助战 / 奇兵伏兵 / 对阵雲气）+ 卷九（敌国动静 / 敌使虚实 / 间谍 / 敌来方面 / 始击将临二十八舍）皆古代兵占；本 pack 仅作纲领，不展开具体应用
-  anchor: null
-  quote: 卷四（出师 / 障向 / 置阵 / 风云飞鸟助战 / 奇兵伏兵 / 对阵雲气）+ 卷九（敌国动静 / 敌使虚实 / 间谍 / 敌来方面 / 始击将临二十八舍）皆古代兵占；本 pack 仅作纲领，不展开具体应用
+  anchor:
+    file: sources/fulltext/san-shi/taiyi-shenshu/fulltext.md
+    start_line: 639
+    end_line: 639
+  quote: 經曰助戰之法常須觀風雲之勢察飛鳥之情若太乙所在宫有風雲飛鳥䓁来衝格迫擊太乙者大敗之兆若迫擊大將宫者主敗若從主目上去擊客客敗若從客目上擊主主敗若從主人形上来客敗若有風雲飛鳥從太嵗太隂月建上来擊主人主人敗擊客客敗若有風雲飛鳥扶主人陣者主人勝扶客
   applicable_to: []
   caveats:
   - ⚠️ 严格仅作文化遗产参考
@@ -352,8 +367,11 @@ rules:
 - rule_id: TR-16
   kind: doctrine
   statement: 一兾 / 二荆 / 三青 / 四徐 / 五豫 / 六雍 / 七梁 / 八兖 / 九雝；附绛宫交州 / 明堂益州 / 玉堂幽州
-  anchor: null
-  quote: 一兾 / 二荆 / 三青 / 四徐 / 五豫 / 六雍 / 七梁 / 八兖 / 九雝；附绛宫交州 / 明堂益州 / 玉堂幽州
+  anchor:
+    file: sources/fulltext/san-shi/taiyi-shenshu/fulltext.md
+    start_line: 1027
+    end_line: 1027
+  quote: 〔并序〕 一宫兾州   二宫荆州三宫青州   四宫徐州   五宫豫州六宫雍州   七宫梁州   八宫兖州九宫州   絳宫交州   明堂益州玉堂幽州
   applicable_to: []
   caveats:
   - ⚠️ 古代分野与现代地理无直接对应

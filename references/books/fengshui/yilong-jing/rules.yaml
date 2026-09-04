@@ -10,8 +10,11 @@ rules:
 - rule_id: YILONGJING-R-01
   kind: doctrine
   statement: 干龙长远去无穷，行至中间阳气聚为真；枝龙身上半是虚花半是胎，结实者必有护送回顾。
-  anchor: null
-  quote: 干龙长远去无穷，行至中间阳气聚为真；枝龙身上半是虚花半是胎，结实者必有护送回顾。
+  anchor:
+    file: sources/fulltext/fengshui/yilong-jing/fulltext.md
+    start_line: 14
+    end_line: 14
+  quote: 幹龍長遠去無窮。
   applicable_to: []
   caveats:
   - 现代使用边界：仅作文化研究参考
@@ -24,8 +27,11 @@ rules:
 - rule_id: YILONGJING-R-02
   kind: doctrine
   statement: 枝龙护纒须观疊数，三重五重抱回来则可于枝龙腰上做穴；一疊回顾则只是护龙叶交互，非真穴。
-  anchor: null
-  quote: 枝龙护纒须观疊数，三重五重抱回来则可于枝龙腰上做穴；一疊回顾则只是护龙叶交互，非真穴。
+  anchor:
+    file: sources/fulltext/fengshui/yilong-jing/fulltext.md
+    start_line: 28
+    end_line: 28
+  quote: 三重五重抱回來，此就枝龍腰上做。
   applicable_to: []
   caveats:
   - 现代使用边界：仅作文化研究参考
@@ -37,8 +43,11 @@ rules:
 - rule_id: YILONGJING-R-03
   kind: doctrine
   statement: 寻得干龙穷处，若见二水相交、风吹水劫之地，必非真穴；当看水交纒处外有山聚会，翻身顾母为回龙转身处。
-  anchor: null
-  quote: 寻得干龙穷处，若见二水相交、风吹水劫之地，必非真穴；当看水交纒处外有山聚会，翻身顾母为回龙转身处。
+  anchor:
+    file: sources/fulltext/fengshui/yilong-jing/fulltext.md
+    start_line: 35
+    end_line: 35
+  quote: 請君看水交纏處，水外有山來聚會。
   applicable_to: []
   caveats:
   - 现代使用边界：仅作文化研究参考
@@ -50,8 +59,11 @@ rules:
 - rule_id: YILONGJING-R-04
   kind: doctrine
   statement: 朝山若真则特来低昂起伏，向穴有情；若假则尖圆如画却直去倾仄，名为"墜朝山"，与穴无关。
-  anchor: null
-  quote: 朝山若真则特来低昂起伏，向穴有情；若假则尖圆如画却直去倾仄，名为"墜朝山"，与穴无关。
+  anchor:
+    file: sources/fulltext/fengshui/yilong-jing/fulltext.md
+    start_line: 85
+    end_line: 85
+  quote: 惟要低昂起伏來，不愛尖傾直去者。
   applicable_to: []
   caveats:
   - 现代使用边界：仅作文化研究参考
@@ -62,8 +74,11 @@ rules:
 - rule_id: YILONGJING-R-05
   kind: doctrine
   statement: 明堂惜水如惜血，穴裏避风如避贼；莫令穴缺被风吹，莫使溜牙遭水劫。
-  anchor: null
-  quote: 明堂惜水如惜血，穴裏避风如避贼；莫令穴缺被风吹，莫使溜牙遭水劫。
+  anchor:
+    file: sources/fulltext/fengshui/yilong-jing/fulltext.md
+    start_line: 102
+    end_line: 102
+  quote: 明堂惜水如惜血，穴裏避風如避賊。
   applicable_to: []
   caveats:
   - 现代使用边界：仅作文化研究参考
@@ -75,8 +90,11 @@ rules:
 - rule_id: YILONGJING-R-06
   kind: doctrine
   statement: 识得龙身背面后，于寬平大曲处寻穴，此为大地断无疑；曲转之形必是面，进山塞不开者非。
-  anchor: null
-  quote: 识得龙身背面后，于寬平大曲处寻穴，此为大地断无疑；曲转之形必是面，进山塞不开者非。
+  anchor:
+    file: sources/fulltext/fengshui/yilong-jing/fulltext.md
+    start_line: 183
+    end_line: 183
+  quote: 寬平大曲處尋穴，此為大地斷無疑。
   applicable_to: []
   caveats:
   - 现代使用边界：仅作文化研究参考
@@ -87,8 +105,11 @@ rules:
 - rule_id: YILONGJING-R-07
   kind: doctrine
   statement: 干龙行尽处必有外山隔水来顾为官山；若有逆转之鬼山拖脚后环则向前寬处安穴，"凡山大曲水大转，必有王侯居此间"。
-  anchor: null
-  quote: 干龙行尽处必有外山隔水来顾为官山；若有逆转之鬼山拖脚后环则向前寬处安穴，"凡山大曲水大转，必有王侯居此间"。
+  anchor:
+    file: sources/fulltext/fengshui/yilong-jing/fulltext.md
+    start_line: 229
+    end_line: 229
+  quote: 凡山大曲水大轉，必有王候居此間。
   applicable_to: []
   caveats:
   - 现代使用边界：仅作文化研究参考
@@ -100,8 +121,11 @@ rules:
 - rule_id: YILONGJING-R-08
   kind: doctrine
   statement: 案山宜逆水关锁；顺流随水案无力，名为"破城裏"，垣气走失。
-  anchor: null
-  quote: 案山宜逆水关锁；顺流随水案无力，名为"破城裏"，垣气走失。
+  anchor:
+    file: sources/fulltext/fengshui/yilong-jing/fulltext.md
+    start_line: 201
+    end_line: 201
+  quote: 順流隨水案無力，此處名為破城裏。
   applicable_to: []
   caveats:
   - 现代使用边界：仅作文化研究参考
@@ -112,8 +136,11 @@ rules:
 - rule_id: YILONGJING-R-09
   kind: doctrine
   statement: 真龙必为主，不为朝见；凡有星峰去作朝者，此龙骨裏福潜消，如吏兵跪起庭前。
-  anchor: null
-  quote: 真龙必为主，不为朝见；凡有星峰去作朝者，此龙骨裏福潜消，如吏兵跪起庭前。
+  anchor:
+    file: sources/fulltext/fengshui/yilong-jing/fulltext.md
+    start_line: 250
+    end_line: 250
+  quote: 問君如何分貴賤，真龍不肯為朝見。
   applicable_to: []
   caveats:
   - 现代使用边界：仅作文化研究参考
@@ -124,8 +151,11 @@ rules:
 - rule_id: YILONGJING-R-10
   kind: doctrine
   statement: 不可只爱左右抱者强；虚花左右似有情，仔细辨来非正形；怪形异穴识得裁穴卻無難，子孙世襲官。
-  anchor: null
-  quote: 不可只爱左右抱者强；虚花左右似有情，仔细辨来非正形；怪形异穴识得裁穴卻無難，子孙世襲官。
+  anchor:
+    file: sources/fulltext/fengshui/yilong-jing/fulltext.md
+    start_line: 288
+    end_line: 288
+  quote: 虛花左右似有情，仔細辯來非正形。
   applicable_to: []
   caveats:
   - 现代使用边界：仅作文化研究参考
@@ -138,8 +168,11 @@ rules:
 - rule_id: YILONGJING-R-11
   kind: doctrine
   statement: 千里来龙只一穴，正者为优旁者劣；龙从左来穴居右（藏形回入首），龙从右来穴居左。
-  anchor: null
-  quote: 千里来龙只一穴，正者为优旁者劣；龙从左来穴居右（藏形回入首），龙从右来穴居左。
+  anchor:
+    file: sources/fulltext/fengshui/yilong-jing/fulltext.md
+    start_line: 332
+    end_line: 332
+  quote: 千里來龍只一穴，正者為優旁者劣。
   applicable_to: []
   caveats:
   - 现代使用边界：仅作文化研究参考
@@ -150,8 +183,11 @@ rules:
 - rule_id: YILONGJING-R-12
   kind: doctrine
   statement: 山川灵气降为神，神随主者家生人；只要祀事香火明，抱养子与僧道嗣续皆可承蔭，与亲生同气；古"招魂葬"汉家四百年旺为证。
-  anchor: null
-  quote: 山川灵气降为神，神随主者家生人；只要祀事香火明，抱养子与僧道嗣续皆可承蔭，与亲生同气；古"招魂葬"汉家四百年旺为证。
+  anchor:
+    file: sources/fulltext/fengshui/yilong-jing/fulltext.md
+    start_line: 394
+    end_line: 394
+  quote: 山川靈氣降為神，神隨主者家生人。
   applicable_to: []
   caveats:
   - 现代使用边界：仅作文化研究参考
@@ -176,8 +212,11 @@ rules:
 - rule_id: YILONGJING-R-14
   kind: doctrine
   statement: 不可固执一墓；新旧数墓皆是真者，新者助旧者，福祿不可量；积小成大，"驽马十驾亦追至"。
-  anchor: null
-  quote: 不可固执一墓；新旧数墓皆是真者，新者助旧者，福祿不可量；积小成大，"驽马十驾亦追至"。
+  anchor:
+    file: sources/fulltext/fengshui/yilong-jing/fulltext.md
+    start_line: 463
+    end_line: 463
+  quote: 騏驥千里迸一日，駑馬十駕亦追至。
   applicable_to: []
   caveats:
   - 现代使用边界：仅作文化研究参考
@@ -189,8 +228,11 @@ rules:
 - rule_id: YILONGJING-R-15
   kind: doctrine
   statement: 阳宅性穴大、寬阔连绵又平伏；阴宅性穴小、宜安墳。阳宅若用小穴，气脉伤残俱凿了。
-  anchor: null
-  quote: 阳宅性穴大、寬阔连绵又平伏；阴宅性穴小、宜安墳。阳宅若用小穴，气脉伤残俱凿了。
+  anchor:
+    file: sources/fulltext/fengshui/yilong-jing/fulltext.md
+    start_line: 474
+    end_line: 474
+  quote: 大凡陽宅要穴大，寬闊連綿又平伏。
   applicable_to: []
   caveats:
   - 现代使用边界：仅作文化研究参考
@@ -202,8 +244,11 @@ rules:
 - rule_id: R-16
   kind: doctrine
   statement: 主客山皆端正、两峰品字相映时，以水抱便为主；水城反背处为客，多少时师误殺人。
-  anchor: null
-  quote: 主客山皆端正、两峰品字相映时，以水抱便为主；水城反背处为客，多少时师误殺人。
+  anchor:
+    file: sources/fulltext/fengshui/yilong-jing/fulltext.md
+    start_line: 488
+    end_line: 488
+  quote: 水城反背處為客，多少時師誤殺人。
   applicable_to: []
   caveats:
   - 现代使用边界：仅作文化研究参考
@@ -214,8 +259,11 @@ rules:
 - rule_id: R-17
   kind: doctrine
   statement: 真形必有真案；蛇形必有鼠蛤、虎形必有肉堆狮子案、人形必两相亲、龙形必雲雷近水；无相配之案则虚花。
-  anchor: null
-  quote: 真形必有真案；蛇形必有鼠蛤、虎形必有肉堆狮子案、人形必两相亲、龙形必雲雷近水；无相配之案则虚花。
+  anchor:
+    file: sources/fulltext/fengshui/yilong-jing/fulltext.md
+    start_line: 509
+    end_line: 509
+  quote: 更有肉堆獅子案，如無此案是朝迎。
   applicable_to: []
   caveats:
   - 现代使用边界：仅作文化研究参考
@@ -226,8 +274,11 @@ rules:
 - rule_id: R-18
   kind: doctrine
   statement: 干头未作枝先兴、干长枝短力难争；如瓶生数嘴、口若尽倾嘴无水；大树生小枝、大枝分奪小枝衰。
-  anchor: null
-  quote: 干头未作枝先兴、干长枝短力难争；如瓶生数嘴、口若尽倾嘴无水；大树生小枝、大枝分奪小枝衰。
+  anchor:
+    file: sources/fulltext/fengshui/yilong-jing/fulltext.md
+    start_line: 528
+    end_line: 528
+  quote: 幹頭未作枝先興，枝上未作幹先榮。
   applicable_to: []
   caveats:
   - 现代使用边界：仅作文化研究参考
@@ -238,8 +289,11 @@ rules:
 - rule_id: R-19
   kind: doctrine
   statement: 花穴前生者，连臂为案橫生穴、案外有腳鋪茵氈但案不向裏；后假者龙虎雖端涯必溜，外面點檢山醜走。案山必向裏方为真。
-  anchor: null
-  quote: 花穴前生者，连臂为案橫生穴、案外有腳鋪茵氈但案不向裏；后假者龙虎雖端涯必溜，外面點檢山醜走。案山必向裏方为真。
+  anchor:
+    file: sources/fulltext/fengshui/yilong-jing/fulltext.md
+    start_line: 547
+    end_line: 547
+  quote: 連臂為案橫生穴，案外有腳鋪茵氈。
   applicable_to: []
   caveats:
   - 现代使用边界：仅作文化研究参考
@@ -250,8 +304,11 @@ rules:
 - rule_id: R-20
   kind: doctrine
   statement: 一星十二节始变；干龙剝换由贪入巨入禄文、次第入廉武、破军盡变入辅弼；多至十二少九变，周而复始换头面。
-  anchor: null
-  quote: 一星十二节始变；干龙剝换由贪入巨入禄文、次第入廉武、破军盡变入辅弼；多至十二少九变，周而复始换头面。
+  anchor:
+    file: sources/fulltext/fengshui/yilong-jing/fulltext.md
+    start_line: 572
+    end_line: 572
+  quote: 由貪入巨入祿文，次第變入廉武裏。
   applicable_to: []
   caveats:
   - 现代使用边界：仅作文化研究参考
@@ -262,8 +319,11 @@ rules:
 - rule_id: R-21
   kind: doctrine
   statement: 贪不变生乳突、巨不变窩中求、武不变釵頭见、禄不变梨僻头、文不变掌心作、破不变及与矛、辅弼不变燕窠仰。
-  anchor: null
-  quote: 贪不变生乳突、巨不变窩中求、武不变釵頭见、禄不变梨僻头、文不变掌心作、破不变及与矛、辅弼不变燕窠仰。
+  anchor:
+    file: sources/fulltext/fengshui/yilong-jing/fulltext.md
+    start_line: 709
+    end_line: 709
+  quote: 文曲不變掌心作，破軍不變及與矛，
   applicable_to: []
   caveats:
   - 现代使用边界：仅作文化研究参考
@@ -274,8 +334,11 @@ rules:
 - rule_id: R-22
   kind: doctrine
   statement: 横龙欲向直中扦，直山欲向橫中处；怪形异穴诸星退缷而我立说，主客只求三吉山。
-  anchor: null
-  quote: 横龙欲向直中扦，直山欲向橫中处；怪形异穴诸星退缷而我立说，主客只求三吉山。
+  anchor:
+    file: sources/fulltext/fengshui/yilong-jing/fulltext.md
+    start_line: 715
+    end_line: 715
+  quote: 橫龍欲向直中扦，直山欲向橫中處，
   applicable_to: []
   caveats:
   - 现代使用边界：仅作文化研究参考
@@ -286,8 +349,11 @@ rules:
 - rule_id: R-23
   kind: doctrine
   statement: 龙脉一断一断断了断，鶴膝蜂腰真吉地；当有逆潮案、案外覆金更如盂、捍门外有罗星，便作公侯山水断。
-  anchor: null
-  quote: 龙脉一断一断断了断，鶴膝蜂腰真吉地；当有逆潮案、案外覆金更如盂、捍门外有罗星，便作公侯山水断。
+  anchor:
+    file: sources/fulltext/fengshui/yilong-jing/fulltext.md
+    start_line: 723
+    end_line: 723
+  quote: 一斷一斷斷了斷，鶴膝蜂腰真吉地，
   applicable_to: []
   caveats:
   - 现代使用边界：仅作文化研究参考
@@ -299,8 +365,11 @@ rules:
 - rule_id: R-24
   kind: doctrine
   statement: 侍卫龙身之池水深潜不流者为真衛气；天池夾辅、深入坎井不闻聲者最贵；流而出者则非。
-  anchor: null
-  quote: 侍卫龙身之池水深潜不流者为真衛气；天池夾辅、深入坎井不闻聲者最贵；流而出者则非。
+  anchor:
+    file: sources/fulltext/fengshui/yilong-jing/fulltext.md
+    start_line: 611
+    end_line: 611
+  quote: 深入坎井不聞聲，恰似尾閭沒無疏。
   applicable_to: []
   caveats:
   - 现代使用边界：仅作文化研究参考
@@ -311,8 +380,11 @@ rules:
 - rule_id: R-25
   kind: doctrine
   statement: 案山如笋插天青、对面推来始是真；若背面成峰身直去，"以我无情似有情"，时师下了乃知误殺人。
-  anchor: null
-  quote: 案山如笋插天青、对面推来始是真；若背面成峰身直去，"以我无情似有情"，时师下了乃知误殺人。
+  anchor:
+    file: sources/fulltext/fengshui/yilong-jing/fulltext.md
+    start_line: 743
+    end_line: 743
+  quote: 背面成峰身直去，以我無情似有情，
   applicable_to: []
   caveats:
   - 现代使用边界：仅作文化研究参考

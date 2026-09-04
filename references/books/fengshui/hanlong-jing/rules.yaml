@@ -10,8 +10,11 @@ rules:
 - rule_id: HANLONGJING-R-01
   kind: doctrine
   statement: 高山须认星峰起、平地龙行别有名；峰以星名取其类，星辰下照山成形。"高水一寸即是山、低水一寸即是平洋。"
-  anchor: null
-  quote: 高山须认星峰起、平地龙行别有名；峰以星名取其类，星辰下照山成形。"高水一寸即是山、低水一寸即是平洋。"
+  anchor:
+    file: sources/fulltext/fengshui/hanlong-jing/fulltext.md
+    start_line: 15
+    end_line: 15
+  quote: 貴居其中大率龍行自有真星峯磊落是龍身髙山須認星峯起平地龍行别有名峯以星名取其類星辰下照山成形龍神二字尋山脉神是精神龍是質莫道髙山方有龍却來平地失真蹤平地龍從髙脈發髙起星峯低落穴高山既認星峯起平地兩傍尋水勢两水夾處是真龍枝葉周回中者是莫令山反
   applicable_to: []
   caveats:
   - 现代使用边界：仅作文化研究参考
@@ -22,8 +25,11 @@ rules:
 - rule_id: HANLONGJING-R-02
   kind: doctrine
   statement: 九星中贪狼、巨门、武曲为三吉，左辅右弼为辅佐；禄存、廉贞、破军、文曲多关煞或祖星，须与三吉合方为贵。
-  anchor: null
-  quote: 九星中贪狼、巨门、武曲为三吉，左辅右弼为辅佐；禄存、廉贞、破军、文曲多关煞或祖星，须与三吉合方为贵。
+  anchor:
+    file: sources/fulltext/fengshui/hanlong-jing/fulltext.md
+    start_line: 6
+    end_line: 6
+  quote: 足盡信也然其書乃為世所盛傳撼龍經專言山壠落脈形勢分貪狼巨門禄存文曲㢘貞武曲破軍左輔右弼九星各為之説疑龍經上篇言幹中尋枝以關局水口為主中篇論尋龍到頭看面背朝迎之法下篇論結穴形勢附以疑龍十問以闡明其義法則專論穴有倚盖撞黏諸説倒杖分十二條即上説而
   applicable_to: []
   caveats:
   - 现代使用边界：仅作文化研究参考
@@ -34,8 +40,11 @@ rules:
 - rule_id: HANLONGJING-R-03
   kind: doctrine
   statement: 贪狼正形五：尖（笋顶）、圆（四面同）、平（卧蚕高顶）、直（决脊引绳）、小（笔头插塔）；其余欹、斜、侧、巖、倒、破、空七者非正。
-  anchor: null
-  quote: 贪狼正形五：尖（笋顶）、圆（四面同）、平（卧蚕高顶）、直（决脊引绳）、小（笔头插塔）；其余欹、斜、侧、巖、倒、破、空七者非正。
+  anchor:
+    file: sources/fulltext/fengshui/hanlong-jing/fulltext.md
+    start_line: 22
+    end_line: 22
+  quote: 或為關峽似龍形正身潛在峽中行時師多向峽中覔不識真龍斷續情貪狼自有十二様尖圓平直小為上欹斜側巖倒破空祻福輕重自不同欹側似斜斜似側平似乗龍側似直貪狼似巨倒似空空似虚巖即似石問君來此如何觀我道貪狼非一般欹是崩崖破是折斜是邊有邊不同側是靣尖身直去空
   applicable_to: []
   caveats:
   - 现代使用边界：仅作文化研究参考
@@ -46,8 +55,11 @@ rules:
 - rule_id: HANLONGJING-R-04
   kind: doctrine
   statement: 火星廉贞高顶生宝殿，分宗派祖；贪巨武曲皆从廉贞出。"贪狼若非廉作祖，为官也不到三公"。
-  anchor: null
-  quote: 火星廉贞高顶生宝殿，分宗派祖；贪巨武曲皆从廉贞出。"贪狼若非廉作祖，为官也不到三公"。
+  anchor:
+    file: sources/fulltext/fengshui/hanlong-jing/fulltext.md
+    start_line: 24
+    end_line: 24
+  quote: 火星要起廉貞位生出貪狼由此勢若見火星動熖時看他踪跡落何處此龍不是尋常貴生出貪狼向亦竒火星若起廉貞位落處須尋一百里中有貪狼小小峯有時回顧火星宫世人只道貪狼好不識廉貞是祖宗貪狼若非廉作祖為官也不到三公髙山頂上如平掌中分細脉如蛇様貴龍多是穿心出富
   applicable_to: []
   caveats:
   - 现代使用边界：仅作文化研究参考
@@ -58,8 +70,11 @@ rules:
 - rule_id: HANLONGJING-R-05
   kind: doctrine
   statement: 巨门行龙少鬼劫；两傍多罗列，水界分处夹龙行；其少关峡、护送无容左右离。
-  anchor: null
-  quote: 巨门行龙少鬼劫；两傍多罗列，水界分处夹龙行；其少关峡、护送无容左右离。
+  anchor:
+    file: sources/fulltext/fengshui/hanlong-jing/fulltext.md
+    start_line: 35
+    end_line: 35
+  quote: 看䕶衛不曾停尊星自有尊星體方正為屏將相位巨門行龍少鬼刼葢緣两傍多羅列水界分處夾龍行不肯單行走空缺水界分及亂生枝枝葉雖多夾水隨䕶龍亦自有背靣背後如壁靣平夷平夷便是貼龍體龍過之時形怪異不起尖圓即馬旗攢劒繙龍歸此地䕶衛纒遶如打團重重包裹外山歸至令
   applicable_to: []
   caveats:
   - 现代使用边界：仅作文化研究参考
@@ -95,8 +110,11 @@ rules:
 - rule_id: HANLONGJING-R-08
   kind: doctrine
   statement: 武曲覆钟、左辅覆釜；钟高釜矮，二者形似而辨。武曲端严富贵；辅弼随龙厚薄取。
-  anchor: null
-  quote: 武曲覆钟、左辅覆釜；钟高釜矮，二者形似而辨。武曲端严富贵；辅弼随龙厚薄取。
+  anchor:
+    file: sources/fulltext/fengshui/hanlong-jing/fulltext.md
+    start_line: 68
+    end_line: 68
+  quote: 武曲星峯覆鍾釜鍾釡之形有何故鍾髙釜矮事不同髙即為武矮為輔二者雖然皆吉星大小不容有差互武曲端嚴富貴牢輔弼隨龍厚薄取真龍若行五六程臨落之時剝輔星如梭如印如皎月三三两两牽聮行前關後峽相引從峽若多時龍猛勇博到輔星三四重仔細來此認龍踪貪巨若無輔弼落高
   applicable_to: []
   caveats:
   - 现代使用边界：仅作文化研究参考
@@ -107,8 +125,11 @@ rules:
 - rule_id: HANLONGJING-R-09
   kind: doctrine
   statement: 破军星峰如走旗、前高卓尾后低；多为引龙兼作护，大龙虽要大破军，吉星之下无不吉、凶星之下凶所存。
-  anchor: null
-  quote: 破军星峰如走旗、前高卓尾后低；多为引龙兼作护，大龙虽要大破军，吉星之下无不吉、凶星之下凶所存。
+  anchor:
+    file: sources/fulltext/fengshui/hanlong-jing/fulltext.md
+    start_line: 87
+    end_line: 87
+  quote: 少只為鐘鼓閣九星皆有破禄文三吉之形輔弼尊平行穿珠巨貪禄䦨掉尖拖是破軍吉星之下無不吉凶星之下凶所存况是凶龍不為穴只是閒行引過身縱然有穴必是假假穴如何保久存時師只來尋龍胍來此峽内空低蹲便指纒䕶為真氣或有逺秀出他村便説朝山朝水好下了凶事自入門只縁
   applicable_to: []
   caveats:
   - 现代使用边界：仅作文化研究参考
@@ -119,8 +140,11 @@ rules:
 - rule_id: R-10
   kind: doctrine
   statement: 左辅幞头形入垣最贵；东华西华水横之外四围列峰位，分左右兵卫。紫微、太微、天市三垣各有四门。
-  anchor: null
-  quote: 左辅幞头形入垣最贵；东华西华水横之外四围列峰位，分左右兵卫。紫微、太微、天市三垣各有四门。
+  anchor:
+    file: sources/fulltext/fengshui/hanlong-jing/fulltext.md
+    start_line: 99
+    end_line: 99
+  quote: 要知此星名侍衛入到垣中最為貴東華西華門水横水外四圍列峯位此是垣前執法星却分左右為兵衛方正之垣號太微垣有四門號天市紫㣲垣外前後門華蓋三台前後衛中有過水名御溝抱城屈曲中間流紫㣲垣内星辰足天市太微少全局朝迎未必皆真形朝海拱辰勢如簇千山萬水皆入朝入
   applicable_to: []
   caveats:
   - 现代使用边界：仅作文化研究参考
@@ -131,8 +155,11 @@ rules:
 - rule_id: R-11
   kind: doctrine
   statement: 右弼随八曜高低生；隐藏无形、断脉断跡寻来无；多吉少傍凶，藏形多于平阳之地。
-  anchor: null
-  quote: 右弼随八曜高低生；隐藏无形、断脉断跡寻来无；多吉少傍凶，藏形多于平阳之地。
+  anchor:
+    file: sources/fulltext/fengshui/hanlong-jing/fulltext.md
+    start_line: 109
+    end_line: 109
+  quote: 弼星本來無正形形隨八曜髙低生要識弼星正形處八星斷處隠藏行隠藏是形名隠曜此是弼星最要妙抛梭馬跡線如絲蜘蛛過水上灘魚驚蛇入草失行跡斷脉斷跡尋來無脉是尊名右弼星左右隨龍身上行行龍之時有輔弼變換隨龍看踪跡君如識得右弼星毎到垣中多失跡博龍失脉失跡時地
   applicable_to: []
   caveats:
   - 现代使用边界：仅作文化研究参考
@@ -143,8 +170,11 @@ rules:
 - rule_id: R-12
   kind: doctrine
   statement: 贪狼作穴是乳头、巨门作穴窝中求、武曲作穴釵钳觅、禄廉梳齿犁鐴头、文曲穴来坪里作（高处亦掌心落）、破军作穴似戈矛、辅星正穴燕巢仰。
-  anchor: null
-  quote: 贪狼作穴是乳头、巨门作穴窝中求、武曲作穴釵钳觅、禄廉梳齿犁鐴头、文曲穴来坪里作（高处亦掌心落）、破军作穴似戈矛、辅星正穴燕巢仰。
+  anchor:
+    file: sources/fulltext/fengshui/hanlong-jing/fulltext.md
+    start_line: 113
+    end_line: 113
+  quote: 貪狼作穴是乳頭巨門作穴窩中求武曲作穴釵鉗覔禄廉梳齒犁鐴頭文曲穴來坪裏作髙處亦是掌心落破軍作穴似戈矛两傍左右手皆收定有两山皆䕶衛不然一水過横流輔星正穴燕巢仰若在髙山掛燈様落在低平是雞巢縱有圓頭亦凹象此是博換尋星穴尋穴隨龍細辨别龍若真兮穴亦真龍
   applicable_to: []
   caveats:
   - 现代使用边界：仅作文化研究参考
@@ -155,8 +185,11 @@ rules:
 - rule_id: R-13
   kind: doctrine
   statement: 古人尋龍尋頓伏，蓋緣頓伏生尖曲；曲转之余必生枝，枝上必为小关局。
-  anchor: null
-  quote: 古人尋龍尋頓伏，蓋緣頓伏生尖曲；曲转之余必生枝，枝上必为小关局。
+  anchor:
+    file: sources/fulltext/fengshui/hanlong-jing/fulltext.md
+    start_line: 159
+    end_line: 159
+  quote: 尋頓伏葢縁頓伏生尖曲曲轉之餘必生枝枝上必為小關局譬如人行適千里豈無解鞍并頓宿頓宿之所雖未住亦有從行并部曲頓伏移換并退卸却看山靣何方下移換却須尋回山山回却有迎送還迎送相從識龍靣龍身背上是纒山纒山轉來龍抱體此中尋穴又何難古人建都與建邑先尋頓伏識
   applicable_to: []
   caveats:
   - 现代使用边界：仅作文化研究参考
@@ -167,8 +200,11 @@ rules:
 - rule_id: R-14
   kind: doctrine
   statement: 寻龙望气先寻脉，云雾多生是龙脊；春夏之交与二分，夜望云霓生处觅。
-  anchor: null
-  quote: 寻龙望气先寻脉，云雾多生是龙脊；春夏之交与二分，夜望云霓生处觅。
+  anchor:
+    file: sources/fulltext/fengshui/hanlong-jing/fulltext.md
+    start_line: 92
+    end_line: 92
+  quote: 分星入桂連山行有斷脉不斷直至江隂大海邊海門旺氣連閩越南水两夾相交纒此是海門南脉絡貨財文武相交錯何處是貪何處文何處辨認武曲尊尋龍望氣先尋脉雲霧多生是龍脊春夏之交與二分夜望雲霓生處覔雲霓先生絶髙頂此是龍樓寶殿定大脊微微雲自生霧氣如嵐反難證生尋霧
   applicable_to: []
   caveats:
   - 现代使用边界：仅作文化研究参考
@@ -180,8 +216,11 @@ rules:
 - rule_id: R-15
   kind: doctrine
   statement: 大关大锁龙千里、定有罗星横截气；罗星正形方匾尖圆为吉，破碎尖破最为害。
-  anchor: null
-  quote: 大关大锁龙千里、定有罗星横截气；罗星正形方匾尖圆为吉，破碎尖破最为害。
+  anchor:
+    file: sources/fulltext/fengshui/hanlong-jing/fulltext.md
+    start_line: 95
+    end_line: 95
+  quote: 卧虎或作重重如瓠禹鑿龍門透大河便是當時關水處大行走出河中府河北河南關两所大河北來曲射東西山作水如眠龍馬耳山枕大江口絶無脚手為神妙壁山來截淮河更無一脚如横過海門二山鎻二浙兩山相合如環缺文廉生脚鎻緇流横在水中為两截大關大鎻龍千里定有羅星横截氣截
   applicable_to: []
   caveats:
   - 现代使用边界：仅作文化研究参考
