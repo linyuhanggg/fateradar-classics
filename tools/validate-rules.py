@@ -124,7 +124,17 @@ T2S_TABLE = str.maketrans({t: s for t, s in SCRIPT_PAIRS if len(t) == 1 and len(
 
 
 def fold_han(text: str) -> str:
-    folded = (text or "").translate(T2S_TABLE)
+    src = text or ""
+    try:
+        from zhconv import convert as _zh_convert
+        folded = _zh_convert(src, "zh-cn")
+    except ImportError:
+        conv = getattr(fold_han, "_opencc", None)
+        if conv is None:
+            import opencc as _opencc
+            conv = _opencc.OpenCC("t2s")
+            fold_han._opencc = conv
+        folded = conv.convert(src)
     return "".join(HAN_RE.findall(folded))
 
 
