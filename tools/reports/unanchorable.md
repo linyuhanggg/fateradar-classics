@@ -249,7 +249,6 @@
 | `luming-nayin/yuzhao-shenying` | `YUZHAOSHENYI-045` | quote not locatable or previously unanchored | 以胎元、月柱干支推父母年命；干同主父寿、音同主母寿。 |
 | `luming-nayin/yuzhao-shenying` | `YUZHAOSHENYI-046` | quote not locatable or previously unanchored | 日柱大小定妻年龄、时柱变法定子嗣有无。 |
 | `luming-nayin/yuzhao-shenying` | `YUZHAOSHENYI-047` | quote not locatable or previously unanchored | 命局夫旺则妻强，妻旺则夫强，按旺相之气。 |
-| `physiognomy/liuzhuang-xiangfa` | `LZ` | quote not locatable or previously unanchored | source_base: CTP《柳庄相法》Wiki 文本页抽取；本地 Wikimedia/NLC PDF 作影印锚点。 |
 | `physiognomy/liuzhuang-xiangfa` | `LIUZHUANGXIA-LZ` | quote not locatable or previously unanchored | R02 五官五岳六府是索引体系，不是结论体系 |
 | `physiognomy/liuzhuang-xiangfa` | `LIUZHUANGXIA-003` | quote not locatable or previously unanchored | R03 气色与精神类条目不得医学化 |
 | `physiognomy/liuzhuang-xiangfa` | `LIUZHUANGXIA-004` | quote not locatable or previously unanchored | R04 儿童、孕产、女性、婚姻条目全部高风险 |

@@ -23,7 +23,7 @@ P7 未追覆盖率。重测最低 art 仍是 qimen 35.0%，向下取整 35。`.g
 
 `python3 tools/export-rules.py`：`exported=688 == anchored_exportable`；`skipped_no_anchor=297`；`skipped_other_system=372`。`tools/reports/anchor-mismatch.json` 长度 0。
 
-## 2. 产品仓（命令回读，未 push）
+## 2. 产品仓（命令回读，已 push）
 
 本机 `git -C cosmic-fortune-lab branch --show-current` → `feat/structured-facts`。
 
@@ -31,7 +31,9 @@ P7 未追覆盖率。重测最低 art 仍是 qimen 35.0%，向下取整 35。`.g
 
 `git log --oneline -1` → `a5b8ac9 data: 同步古籍仓 P7 导出规则`。该提交只含 `src/lib/rules/generated/{bazi,liuren,liuyao,ziwei}.json`（qimen/qizheng 与上一份字节相同，无 diff）。
 
-条数：bazi 399、ziwei 70、qimen 14、liuren 34、liuyao 118、qizheng 50；`verification` 全部 `provisional`。`bun run test` 12 files / 76 passed；`bun run build` exit 0。产品仓未 push。
+条数：bazi 399、ziwei 70、qimen 14、liuren 34、liuyao 118、qizheng 50；`verification` 全部 `provisional`。`bun run test` 12 files / 76 passed；`bun run build` exit 0。
+
+`git -C cosmic-fortune-lab push -u origin feat/structured-facts` 成功。`git ls-remote --heads origin feat/structured-facts` → `a5b8ac9b9b6b2cbbee7caba392cb92d5765f61eb	refs/heads/feat/structured-facts`。未开 PR、未合 main。
 
 > 任务书第四节写「本机没有 feat/structured-facts、c2d1d54 不存在、generated 未跟踪」。那是另一台机器的状态。**本机实测上述分支和 hash 均存在**，按诚实性硬规定写本机回读结果，不把任务书里的「不存在」抄进文档。
 
