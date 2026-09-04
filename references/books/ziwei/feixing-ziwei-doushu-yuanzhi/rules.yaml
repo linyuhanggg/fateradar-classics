@@ -10,10 +10,7 @@ rules:
 - rule_id: FZ
   kind: doctrine
   statement: 调用本 pack 时须称其为《華山陳希夷先生飛星紫微斗數原旨 / 斗數觀測錄》民国观测注释层，不得把它冒称为《斗数管见》，也不得当作古法紫微一线原典。
-  anchor:
-    file: sources/fulltext/ziwei/feixing-ziwei-doushu-yuanzhi/fulltext.md
-    start_line: 18
-    end_line: 18
+  anchor: null
   quote: 華山陳希夷先生飛星紫微斗數原旨
   applicable_to: []
   caveats:

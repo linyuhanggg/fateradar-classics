@@ -10,10 +10,7 @@ rules:
 - rule_id: LZ
   kind: doctrine
   statement: R01 相法必须“乘除加减”
-  anchor:
-    file: sources/fulltext/physiognomy/liuzhuang-xiangfa/fulltext.md
-    start_line: 3
-    end_line: 3
+  anchor: null
   quote: 'source_base: CTP《柳庄相法》Wiki 文本页抽取；本地 Wikimedia/NLC PDF 作影印锚点。'
   applicable_to: []
   caveats: []
