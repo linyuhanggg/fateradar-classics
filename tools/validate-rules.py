@@ -116,6 +116,47 @@ def han_count(text: str) -> int:
     return len(HAN_RE.findall(text or ""))
 
 
+HEADING_QUOTE_RE = re.compile(r"^#{1,6}(?:\s|$)")
+META_QUOTE_RE = re.compile(r"(?m)^(?:-\s*)?(raw_file|section_note|source_base)\s*:")
+ATTRIB_QUOTE_RE = re.compile(r"(?:唐|宋|元|明|清)\s*\S{0,12}\s*撰")
+JUDOU_RE = re.compile(r"[。！？；!?]")
+T2S_TABLE = str.maketrans({t: s for t, s in SCRIPT_PAIRS if len(t) == 1 and len(s) == 1})
+
+
+def fold_han(text: str) -> str:
+    folded = (text or "").translate(T2S_TABLE)
+    return "".join(HAN_RE.findall(folded))
+
+
+def v13_bad_quote(quote: str, book_title: str = "") -> str | None:
+    """客观劣质 quote：标题行、pack 元数据、卷首署名。仅用于已锚规则。"""
+    q = (quote or "").strip()
+    if not q:
+        return None
+    if HEADING_QUOTE_RE.match(q):
+        return "quote 是 markdown 标题行，不能作为断辞"
+    if META_QUOTE_RE.search(q):
+        return "quote 是 pack 元数据，不是原文断辞"
+    if ATTRIB_QUOTE_RE.search(q) and han_count(q) <= 40:
+        return "quote 是卷首署名，不是原文断辞"
+    quote_h = fold_han(q)
+    if not JUDOU_RE.search(q) and han_count(q) <= 24:
+        for part in re.split(r"[/／|]", book_title or ""):
+            title_h = fold_han(part)
+            if title_h and (quote_h == title_h or quote_h.endswith(title_h)):
+                return "quote 是书名/卷首行，不是原文断辞"
+    return None
+
+
+def correspondence(statement: str, quote: str) -> float:
+    """statement↔quote 繁简归一后的汉字集合对应度（statement 侧召回）。"""
+    stmt_h = fold_han(statement)
+    if not stmt_h:
+        return 1.0
+    sa, sb = set(stmt_h), set(fold_han(quote))
+    return len(sa & sb) / len(sa)
+
+
 def load_yaml(path: Path):
     try:
         data = yaml.safe_load(path.read_text(encoding="utf-8"))
@@ -519,6 +560,23 @@ def validate_book(
             reporter.add(
                 "V5",
                 f"{loc}: quote 去空白后不是锚点区间子串。quote={quote!r} 锚点区前 200 字={preview!r}",
+                rule_id=rule_id,
+                book=book_key,
+            )
+
+        reason = v13_bad_quote(quote, title)
+        if reason:
+            reporter.add(
+                "V13",
+                f"{loc}: {reason}。quote={quote!r}",
+                rule_id=rule_id,
+                book=book_key,
+            )
+        score = correspondence(statement, quote)
+        if score < 0.15:
+            reporter.warn(
+                "V14",
+                f"{loc}: statement/quote 对应度 {score:.3f} < 0.15",
                 rule_id=rule_id,
                 book=book_key,
             )

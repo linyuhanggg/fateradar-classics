@@ -80,6 +80,27 @@ def main() -> int:
         if rc == 0 or "V7" not in codes:
             fail(f"fake key should V7 FAIL, rc={rc} codes={codes} out={out[:800]}")
         print("reverse3 OK V7 fake key")
+
+        # reverse 4: heading quote → V13 FAIL
+        old_q = (
+            "八字用神，專求月令，以日干配月令地支，而生尅不同，格局分焉。"
+            "財官印食，此用神之善而順用之者也；煞傷劫刃，此用神之不善而逆用之者也。"
+            "當順而順，當逆而逆，配合得宜，皆爲貴格。"
+        )
+        heading = yaml_orig.replace(old_q, '"### 論用神"', 1)
+        if heading == yaml_orig:
+            fail("could not mutate heading quote")
+        YAML.write_text(heading, encoding="utf-8")
+        rc, out = run_validate(["--book", BOOK, "--json"])
+        YAML.write_text(yaml_orig, encoding="utf-8")
+        payload = json.loads(out[out.find("{") :]) if "{" in out else {}
+        codes = [e.get("code") for e in payload.get("errors") or []]
+        ids = [e.get("rule_id") for e in payload.get("errors") or []]
+        if rc == 0 or "V13" not in codes:
+            fail(f"heading quote should V13 FAIL, rc={rc} codes={codes} out={out[:800]}")
+        if "ZPR-01" not in ids:
+            fail(f"V13 should print ZPR-01, ids={ids}")
+        print("reverse4 OK V13 heading quote")
     finally:
         YAML.write_text(yaml_orig, encoding="utf-8")
         FULLTEXT.write_text(ft_orig, encoding="utf-8")
