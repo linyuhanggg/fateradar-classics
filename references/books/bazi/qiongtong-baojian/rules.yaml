@@ -1,4 +1,5 @@
 schema_version: fateradar-rules-v2
+# verified: true 仅表示 quote 与本仓 fulltext 逐字一致，不等于与影印底本校勘。本阶段不由模型填写 verified / verified_by / verified_at。
 book:
   slug: qiongtong-baojian
   system: bazi
@@ -59,7 +60,11 @@ rules:
   statement: 木性腾上而无所止；春木阳气方盛，宜火以宣其华；夏木根干叶燥，宜水以润之；秋木气衰枝叶凋零，宜金以斩削；冬木枝叶归根，宜火以暖之。
   anchor: null
   quote: 木性腾上而无所止；春木阳气方盛，宜火以宣其华；夏木根干叶燥，宜水以润之；秋木气衰枝叶凋零，宜金以斩削；冬木枝叶归根，宜火以暖之。
-  applicable_to: []
+  applicable_to:
+  - key: rizhu
+    value: 甲
+  - key: rizhu
+    value: 乙
   caveats:
   - 仅是宜忌总纲，具体用神组合需查 QR-01-01 ～ QR-01-08
   school: null
@@ -74,7 +79,9 @@ rules:
     start_line: 41
     end_line: 69
   quote: 春月之木，渐有生长之象。初春犹有余寒，当以火温暖，则有舒畅之美，水多变剋，有损精神。重见生旺，必用庚金斲凿，可成楝梁。春末阳壮水渴，藉水资扶，则花繁叶茂。初春无火，增之以水，则阴浓气弱，根损枝枯，不能华秀。春末失水，增之以火，则阳气太盛，燥渴相加，枝枯叶干，亦不华秀。是以水火二物，要得时相济为美。
-  applicable_to: []
+  applicable_to:
+  - key: rizhu
+    value: 甲
   caveats:
   - 寅月调候忌庚金过早伤甲
   - 具体宜忌取决于盘中庚丁透与不透
@@ -91,7 +98,9 @@ rules:
     start_line: 73
     end_line: 101
   quote: 四月甲木退气，丙火司权，先癸后丁。
-  applicable_to: []
+  applicable_to:
+  - key: rizhu
+    value: 甲
   caveats:
   - 巳月病火不可全废
   - 癸水必须有源（庚辛申子辰之类）
@@ -108,7 +117,9 @@ rules:
     start_line: 105
     end_line: 149
   quote: 三秋甲木，木性枯藁，金土乘旺，先丁后庚，丁庚两全，将甲造为画戟，七月甲堪为戟，非丁火不能造庚，非庚不能造甲，丁庚两透，科甲定然。庚禄居申，杀印相生，运行金水，身伴明君。或庚透无丁，一富而已，主为人操心太重，不能坐享。或丁透庚藏，亦主青衿小富。或庚多无丁，残疾之人若为僧道，灾厄可免。
-  applicable_to: []
+  applicable_to:
+  - key: rizhu
+    value: 甲
   caveats:
   - 戌月燥土反需癸水润
   - 纯杀格、从杀格另判
@@ -121,7 +132,9 @@ rules:
   statement: 冬木寒凝，专用庚金为先（破癸去寒），丁火暖局，戊土堤水。庚丁戊三者俱透者大贵。
   anchor: null
   quote: 冬木寒凝，专用庚金为先（破癸去寒），丁火暖局，戊土堤水。庚丁戊三者俱透者大贵。
-  applicable_to: []
+  applicable_to:
+  - key: rizhu
+    value: 甲
   caveats:
   - 子月切忌癸水透干无制
   - 冬甲见己土泥木为忌
@@ -138,7 +151,9 @@ rules:
     start_line: 179
     end_line: 207
   quote: 三春乙木，为芝兰蒿草之物，丙癸不可离也，春乙见丙，卉木向阳，万象回春，须癸滋养根基。丙癸齐透天干，无化合制剋，自然登科及第，故书云：乙木根荄种得深，只须阳地不宜阴，漂浮只怕多逢水，剋制何须苦用金。
-  applicable_to: []
+  applicable_to:
+  - key: rizhu
+    value: 乙
   caveats:
   - 辰月乙弱不可见戊厚埋根
   - 调候用神与旺衰用神冲突时按 §冲突优先级裁判
@@ -151,7 +166,9 @@ rules:
   statement: 夏乙焦枯，专用癸水润；丙火透出反喜，能催英华；忌干旱无水，亦忌庚金生水反复。
   anchor: null
   quote: 夏乙焦枯，专用癸水润；丙火透出反喜，能催英华；忌干旱无水，亦忌庚金生水反复。
-  applicable_to: []
+  applicable_to:
+  - key: rizhu
+    value: 乙
   caveats:
   - 未月燥土须癸水透天
   - 夏乙见伤官生财格另判
@@ -167,7 +184,9 @@ rules:
     start_line: 247
     end_line: 275
   quote: 三秋乙木，金神司令，先丙后癸，惟九月耑用癸水，恐丙暖戊土为病也。
-  applicable_to: []
+  applicable_to:
+  - key: rizhu
+    value: 乙
   caveats:
   - 酉月切忌庚辛合乙乱命
   - 纯七杀格另议
@@ -180,7 +199,9 @@ rules:
   statement: 冬乙阴寒，专用丙火暖局；最忌癸水冻木；戊土制癸为佐。丙戊两透者贵。
   anchor: null
   quote: 冬乙阴寒，专用丙火暖局；最忌癸水冻木；戊土制癸为佐。丙戊两透者贵。
-  applicable_to: []
+  applicable_to:
+  - key: rizhu
+    value: 乙
   caveats:
   - 冬乙若日干弱极而四柱无丙，已成寒木无用之造，须警示判语
   - 从财、从杀格另议
@@ -204,7 +225,11 @@ rules:
   statement: 火性炎上，宜其得地见水以济之；春火炎而未烈，秋火退气，冬火气衰，夏火炎烈。喜壬水克之、忌癸水熄之，丙喜见甲乙发其光。
   anchor: null
   quote: 火性炎上，宜其得地见水以济之；春火炎而未烈，秋火退气，冬火气衰，夏火炎烈。喜壬水克之、忌癸水熄之，丙喜见甲乙发其光。
-  applicable_to: []
+  applicable_to:
+  - key: rizhu
+    value: 丙
+  - key: rizhu
+    value: 丁
   caveats:
   - 仅总纲
   - 具体宜忌见 QR-02-01 ～ QR-02-08
@@ -220,7 +245,9 @@ rules:
     start_line: 317
     end_line: 382
   quote: 三春丙火，秉象至威，阳回大地，侮雪欺霜，耑用壬水为扶阳，名曰天和地润，既济功成。
-  applicable_to: []
+  applicable_to:
+  - key: rizhu
+    value: 丙
   caveats:
   - 寅月丙生时尚有余寒，忌见过早水多寒身
   - 正官格、印格另议
@@ -236,7 +263,9 @@ rules:
     start_line: 386
     end_line: 448
   quote: 三夏丙火，阳威性烈，专用壬水。若亥宫壬水无力，回剋洩气故也，仍用申宫长生之水，方云富贵。
-  applicable_to: []
+  applicable_to:
+  - key: rizhu
+    value: 丙
   caveats:
   - 午月阳刃格须配七杀
   - 不可滥用壬水致水多反克身
@@ -250,7 +279,9 @@ rules:
   statement: 秋丙退气，专用甲木生身，壬水显威；甲壬两透者贵；忌癸水熄丙。
   anchor: null
   quote: 秋丙退气，专用甲木生身，壬水显威；甲壬两透者贵；忌癸水熄丙。
-  applicable_to: []
+  applicable_to:
+  - key: rizhu
+    value: 丙
   caveats:
   - 戌月燥土须配癸水反润
   - 财格、官杀格另议
@@ -266,7 +297,9 @@ rules:
     start_line: 503
     end_line: 557
   quote: 十月丙火，太阳失令，得见甲戊庚出干，可云科甲，主为人性好清高，斯文领袖。如辛透见辰，名化合逢时，主大贵。
-  applicable_to: []
+  applicable_to:
+  - key: rizhu
+    value: 丙
   caveats:
   - 冬丙忌壬水无制泛滥
   - 从杀格、化气格另议
@@ -279,7 +312,9 @@ rules:
   statement: 春丁柔弱，专用庚金劈甲、引甲生丁；甲庚不悖者贵。
   anchor: null
   quote: 春丁柔弱，专用庚金劈甲、引甲生丁；甲庚不悖者贵。
-  applicable_to: []
+  applicable_to:
+  - key: rizhu
+    value: 丁
   caveats:
   - 庚金须有制（壬水或丁火本身），不可孤庚伤丁
   school: null
@@ -291,7 +326,9 @@ rules:
   statement: 夏丁炎旺，用庚金、壬水（"金白水清"），庚壬两透者贵；忌甲木助火、戊土晦光。
   anchor: null
   quote: 夏丁炎旺，用庚金、壬水（"金白水清"），庚壬两透者贵；忌甲木助火、戊土晦光。
-  applicable_to: []
+  applicable_to:
+  - key: rizhu
+    value: 丁
   caveats:
   - 未月燥土仍以壬水为先
   - 炎上格另议
@@ -304,7 +341,9 @@ rules:
   statement: 秋丁退气，专用甲木生身为主、庚金劈甲为辅；甲庚两透者贵。
   anchor: null
   quote: 秋丁退气，专用甲木生身为主、庚金劈甲为辅；甲庚两透者贵。
-  applicable_to: []
+  applicable_to:
+  - key: rizhu
+    value: 丁
   caveats:
   - 酉月忌庚旺无丁
   - 财格、杀格另议
@@ -317,7 +356,9 @@ rules:
   statement: 冬丁寒弱，专用甲木生身、庚金劈甲、戊土制水；甲庚戊三透不悖者贵。
   anchor: null
   quote: 冬丁寒弱，专用甲木生身、庚金劈甲、戊土制水；甲庚戊三透不悖者贵。
-  applicable_to: []
+  applicable_to:
+  - key: rizhu
+    value: 丁
   caveats:
   - 子月忌癸水透干熄丁
   - 从杀格、化气格另议
@@ -341,7 +382,11 @@ rules:
   statement: 土主信、性重，散在四维，不立一方；春土气虚而薄，宜火生之；夏土性燥，宜水润之；秋土子旺母衰，宜火助之；冬土外寒内温，宜火暖之。
   anchor: null
   quote: 土主信、性重，散在四维，不立一方；春土气虚而薄，宜火生之；夏土性燥，宜水润之；秋土子旺母衰，宜火助之；冬土外寒内温，宜火暖之。
-  applicable_to: []
+  applicable_to:
+  - key: rizhu
+    value: 戊
+  - key: rizhu
+    value: 己
   caveats:
   - 仅总纲
   - 具体宜忌见 QR-03-01 ～ QR-03-08
@@ -357,7 +402,9 @@ rules:
     start_line: 769
     end_line: 798
   quote: 三春戊土，无丙照暖，戊土不生，无甲疏噼，戊土不灵，无癸滋润，万物不长。正二月先丙后甲，癸又次之。三月先甲后丙，癸又次之，因戊土司权故也。有甲、丙、癸，三者齐透，必主一品当朝，或二透一藏，亦登金榜，二藏一透，也可异途。
-  applicable_to: []
+  applicable_to:
+  - key: rizhu
+    value: 戊
   caveats:
   - 寅月忌甲多无丙
   - 正官格、七杀格另议
@@ -370,7 +417,9 @@ rules:
   statement: 夏戊燥裂，专用癸水润；丙火合癸化雨为辅。癸丙不悖（不直接相合即"既济"）者富贵。
   anchor: null
   quote: 夏戊燥裂，专用癸水润；丙火合癸化雨为辅。癸丙不悖（不直接相合即"既济"）者富贵。
-  applicable_to: []
+  applicable_to:
+  - key: rizhu
+    value: 戊
   caveats:
   - 午月忌火多焦土
   - 从强格另议
@@ -383,7 +432,9 @@ rules:
   statement: 秋戊金多泄气，用丙火助身、癸水润、甲木疏。丙癸甲三者俱备者贵。
   anchor: null
   quote: 秋戊金多泄气，用丙火助身、癸水润、甲木疏。丙癸甲三者俱备者贵。
-  applicable_to: []
+  applicable_to:
+  - key: rizhu
+    value: 戊
   caveats:
   - 戌月燥金燥土须癸水透干
   - 伤官生财格另议
@@ -399,7 +450,9 @@ rules:
     start_line: 897
     end_line: 929
   quote: 十月戊土，时值小阳，阳气略出，先用甲木，次取丙火。非甲、土不灵。非丙、土不暖，安能生发万物。甲丙两出，富贵中人。或甲得长生，遇支藏得地之水，一丙高透，亦主身贵扬名。
-  applicable_to: []
+  applicable_to:
+  - key: rizhu
+    value: 戊
   caveats:
   - 子月切忌癸水透干无丙
   - 从财格另议
@@ -412,7 +465,9 @@ rules:
   statement: 春己阴湿，专用丙火暖、癸水润、甲木疏（合不化）。丙癸甲三者俱备者贵。
   anchor: null
   quote: 春己阴湿，专用丙火暖、癸水润、甲木疏（合不化）。丙癸甲三者俱备者贵。
-  applicable_to: []
+  applicable_to:
+  - key: rizhu
+    value: 己
   caveats:
   - 己甲合化土须时柱配合，详见 sanming-tonghui 五合化气
   - 正官格另议
@@ -428,7 +483,9 @@ rules:
     start_line: 981
     end_line: 1002
   quote: 三夏己土，杂气才官，禾稼在田，最喜甘沛，取癸为要，次用丙火。夏无太阳，禾稼不长，故无癸曰旱田，无丙曰孤阴。
-  applicable_to: []
+  applicable_to:
+  - key: rizhu
+    value: 己
   caveats:
   - 未月忌火多燥土
   - 伤官生财格另议
@@ -444,7 +501,9 @@ rules:
     start_line: 1006
     end_line: 1029
   quote: 三秋己土，万物收藏之际，外虚内实，寒气渐升，须丙火温之，癸水润之，不特此也，且癸能洩金，丙能制金，补土精神，则秋生之物咸茂矣。癸先丙后。
-  applicable_to: []
+  applicable_to:
+  - key: rizhu
+    value: 己
   caveats:
   - 戌月燥土须癸水透干
   school: null
@@ -456,7 +515,9 @@ rules:
   statement: 冬己寒湿，专用丙火暖、戊土帮身；不忌甲木合身（合而无化）。丙戊两透者贵。
   anchor: null
   quote: 冬己寒湿，专用丙火暖、戊土帮身；不忌甲木合身（合而无化）。丙戊两透者贵。
-  applicable_to: []
+  applicable_to:
+  - key: rizhu
+    value: 己
   caveats:
   - 子月忌水多无丙
   - 从财格另议
@@ -480,7 +541,11 @@ rules:
   statement: 金性沉重、主义、性刚；春金犹寒，宜火气以舒之；夏金尤柔，宜土厚以扶之；秋金当权，喜火炼以成器；冬金寒甚，喜火暖以解冻。
   anchor: null
   quote: 金性沉重、主义、性刚；春金犹寒，宜火气以舒之；夏金尤柔，宜土厚以扶之；秋金当权，喜火炼以成器；冬金寒甚，喜火暖以解冻。
-  applicable_to: []
+  applicable_to:
+  - key: rizhu
+    value: 庚
+  - key: rizhu
+    value: 辛
   caveats:
   - 仅总纲
   - 具体宜忌见 QR-04-01 ～ QR-04-08
@@ -496,7 +561,9 @@ rules:
     start_line: 1072
     end_line: 1133
   quote: 正月庚金，木旺之际，有土皆死，不能生金，且金之寒气未除，先用丙暖庚性，又虑土厚埋金，须甲疏洩。丙甲两透，科甲显荣。二者透一，亦有生监。丙藏甲透，异路功名。
-  applicable_to: []
+  applicable_to:
+  - key: rizhu
+    value: 庚
   caveats:
   - 寅月仍寒，丁火不可无
   - 正财格另议
@@ -512,7 +579,9 @@ rules:
     start_line: 1137
     end_line: 1166
   quote: 四月庚金，长生于巳，巳内有戊。丙不镕金，故不畏火炎，丙亦可作用，但先壬水，方得中和，故曰群金生夏，喜用勾陈。次取戊土，丙火佐之。三者皆全，登科及第，即透一二，亦非白丁。
-  applicable_to: []
+  applicable_to:
+  - key: rizhu
+    value: 庚
   caveats:
   - 午月忌丁多熔金
   - 从杀格另议
@@ -525,7 +594,9 @@ rules:
   statement: 秋庚得令，专用丁火炼成器、甲木引丁。丁甲两透不悖者大贵。
   anchor: null
   quote: 秋庚得令，专用丁火炼成器、甲木引丁。丁甲两透不悖者大贵。
-  applicable_to: []
+  applicable_to:
+  - key: rizhu
+    value: 庚
   caveats:
   - 戌月燥土反晦丁，须癸水或壬水调
   - 从革格另议
@@ -538,7 +609,9 @@ rules:
   statement: 冬庚寒，专用丁火炼、丙火暖、戊土制水。丁丙戊俱透者贵。
   anchor: null
   quote: 冬庚寒，专用丁火炼、丙火暖、戊土制水。丁丙戊俱透者贵。
-  applicable_to: []
+  applicable_to:
+  - key: rizhu
+    value: 庚
   caveats:
   - 子月忌伤官无制
   - 从儿格另议
@@ -551,7 +624,9 @@ rules:
   statement: 春辛弱嫩，专用己土生身、壬水洗辛。己壬两透者贵；忌丙火合辛化水误用。
   anchor: null
   quote: 春辛弱嫩，专用己土生身、壬水洗辛。己壬两透者贵；忌丙火合辛化水误用。
-  applicable_to: []
+  applicable_to:
+  - key: rizhu
+    value: 辛
   caveats:
   - 春辛见戊土反埋
   - 正官格另议
@@ -564,7 +639,9 @@ rules:
   statement: 夏辛被火炼，专用壬水洗辛、己土护身、癸水润。壬己癸三透者贵。
   anchor: null
   quote: 夏辛被火炼，专用壬水洗辛、己土护身、癸水润。壬己癸三透者贵。
-  applicable_to: []
+  applicable_to:
+  - key: rizhu
+    value: 辛
   caveats:
   - 未月燥土须癸水透干
   - 从杀格另议
@@ -580,7 +657,9 @@ rules:
     start_line: 1348
     end_line: 1405
   quote: 七月辛金，值庚司令，不旺自旺，且壬水居申，四柱不见戊土，胎元戊藏申内，为壬堤岸，人命得此，为官清正，但不富耳。
-  applicable_to: []
+  applicable_to:
+  - key: rizhu
+    value: 辛
   caveats:
   - 酉月忌伤官见官
   school: null
@@ -592,7 +671,9 @@ rules:
   statement: 冬辛寒甚，专用丙火暖（合而不化于本月），壬水洗辛（不寒）。丙壬两透清纯者贵。
   anchor: null
   quote: 冬辛寒甚，专用丙火暖（合而不化于本月），壬水洗辛（不寒）。丙壬两透清纯者贵。
-  applicable_to: []
+  applicable_to:
+  - key: rizhu
+    value: 辛
   caveats:
   - 子月忌癸水寒辛无丙
   - 化气格另议
@@ -616,7 +697,11 @@ rules:
   statement: 水主智、性聪，至清而柔；春水泛滥，宜土堤之；夏水涸竭，宜金生之；秋水通源，喜水之归；冬水冻凝，喜火之暖。
   anchor: null
   quote: 水主智、性聪，至清而柔；春水泛滥，宜土堤之；夏水涸竭，宜金生之；秋水通源，喜水之归；冬水冻凝，喜火之暖。
-  applicable_to: []
+  applicable_to:
+  - key: rizhu
+    value: 壬
+  - key: rizhu
+    value: 癸
   caveats:
   - 仅总纲
   - 具体宜忌见 QR-05-01 ～ QR-05-08
@@ -629,7 +714,9 @@ rules:
   statement: 春壬泄气于木，用辛金生身；如盘中水势已盛，配戊土堤防。辛戊适配者贵。
   anchor: null
   quote: 春壬泄气于木，用辛金生身；如盘中水势已盛，配戊土堤防。辛戊适配者贵。
-  applicable_to: []
+  applicable_to:
+  - key: rizhu
+    value: 壬
   caveats:
   - 辰月水库须看戊土透不透
   - 伤官生财格另议
@@ -645,7 +732,9 @@ rules:
     start_line: 1496
     end_line: 1530
   quote: 四月壬水，丙火司权，水弱极矣，专取壬水比肩为助，次取辛金发源，且暗合丙火，庚金为佐。壬辛两透，金榜有名，或癸辛两出，加以甲透，亦主异路之荣。无甲者、富贵门下之客。
-  applicable_to: []
+  applicable_to:
+  - key: rizhu
+    value: 壬
   caveats:
   - 午月忌火多无金
   - 从财格另议
@@ -658,7 +747,9 @@ rules:
   statement: 秋壬通源旺极，用戊土堤防、丁火财星为佐。戊丁两透者贵。
   anchor: null
   quote: 秋壬通源旺极，用戊土堤防、丁火财星为佐。戊丁两透者贵。
-  applicable_to: []
+  applicable_to:
+  - key: rizhu
+    value: 壬
   caveats:
   - 戌月燥土过重反塞水源
   - 从儿格另议
@@ -674,7 +765,9 @@ rules:
     start_line: 1587
     end_line: 1625
   quote: 十月壬水司权，至旺之极，取戊为用，若生辰日干，又见辰时，必须戊透，又须庚制甲，不伤戊土，戊庚两全，定主豋科乃第，位显权高。或甲出制戊，不见庚救者，断之贫穷。戊藏无制，可许生员。或戊庚两透无甲者，亦主荣显。
-  applicable_to: []
+  applicable_to:
+  - key: rizhu
+    value: 壬
   caveats:
   - 子月忌癸水透干争夫
   - 化气格另议
@@ -687,7 +780,9 @@ rules:
   statement: 春癸泄于木，用辛金生身、丙火配（不可同透相合）。辛丙间透者贵。
   anchor: null
   quote: 春癸泄于木，用辛金生身、丙火配（不可同透相合）。辛丙间透者贵。
-  applicable_to: []
+  applicable_to:
+  - key: rizhu
+    value: 癸
   caveats:
   - 戊癸合化火须看时柱与化神是否得令
   - 正官格另议
@@ -700,7 +795,9 @@ rules:
   statement: 夏癸枯竭，专用辛金生身、庚金为辅。辛庚两透者贵；忌火多无金。
   anchor: null
   quote: 夏癸枯竭，专用辛金生身、庚金为辅。辛庚两透者贵；忌火多无金。
-  applicable_to: []
+  applicable_to:
+  - key: rizhu
+    value: 癸
   caveats:
   - 未月燥土塞水源，须癸水透干自助
   school: null
@@ -712,7 +809,9 @@ rules:
   statement: 秋癸通源，用辛金生身、丁火制辛（不忌庚金）。辛丁不悖者贵。
   anchor: null
   quote: 秋癸通源，用辛金生身、丁火制辛（不忌庚金）。辛丁不悖者贵。
-  applicable_to: []
+  applicable_to:
+  - key: rizhu
+    value: 癸
   caveats:
   - 戌月燥土须辛金护癸
   - 伤官生财格另议
@@ -728,7 +827,9 @@ rules:
     start_line: 1731
     end_line: 1764
   quote: 十月癸水，旺中有弱，何也？因亥摇木，洩散元神，宜用庚辛为妙。得庚辛两透，不见丁伤者，功名有准。
-  applicable_to: []
+  applicable_to:
+  - key: rizhu
+    value: 癸
   caveats:
   - 子月忌水多无丙
   - 从强格另议

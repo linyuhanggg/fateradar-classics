@@ -1,4 +1,5 @@
 schema_version: fateradar-rules-v2
+# verified: true 仅表示 quote 与本仓 fulltext 逐字一致，不等于与影印底本校勘。本阶段不由模型填写 verified / verified_by / verified_at。
 book:
   slug: yuanhai-ziping
   system: bazi
@@ -50,7 +51,9 @@ rules:
   statement: 月支为提纲；得令者旺、失令者衰；月令决定命局基本强弱。
   anchor: null
   quote: 月支为提纲；得令者旺、失令者衰；月令决定命局基本强弱。
-  applicable_to: []
+  applicable_to:
+  - key: yueling
+    value: "*"
   caveats:
   - 本书强调月令重要性但尚未形成后世《子平真诠》的严格"月令本气透干取格"规则
   school: null
@@ -65,7 +68,9 @@ rules:
     start_line: 109
     end_line: 109
   quote: 以日为主，年为本，月为提纲，时为辅佐。
-  applicable_to: []
+  applicable_to:
+  - key: yueling
+    value: "*"
   caveats:
   - 仅作方法论
   - 不由此直接推出旺衰、格局或吉凶
@@ -168,7 +173,9 @@ rules:
   statement: 正官一位清纯为佳（忌伤冲多见）；七煞需制化（食制/印化/合留）；正财身财两停为佳；偏财多情慷慨忌劫夺；印绶生身护身；偏印夺食为忌；食神制煞生财；伤官见官为祸；比肩劫财分夺。
   anchor: null
   quote: 正官一位清纯为佳（忌伤冲多见）；七煞需制化（食制/印化/合留）；正财身财两停为佳；偏财多情慷慨忌劫夺；印绶生身护身；偏印夺食为忌；食神制煞生财；伤官见官为祸；比肩劫财分夺。
-  applicable_to: []
+  applicable_to:
+  - key: shishen
+    value: "*"
   caveats:
   - 本书十神描述为"经验断语"级别，未严格区分顺逆用
   - 精修以《子平真诠》为准
@@ -193,7 +200,11 @@ rules:
   statement: 正官七煞同现为混杂，需去留得宜（去官留煞或去煞留官）。
   anchor: null
   quote: 正官七煞同现为混杂，需去留得宜（去官留煞或去煞留官）。
-  applicable_to: []
+  applicable_to:
+  - key: shishen
+    value: 正官
+  - key: shishen
+    value: 七杀
   caveats:
   - 去留细节以《子平真诠》为精修版
   school: null
@@ -218,7 +229,15 @@ rules:
   statement: 月令辰戌丑未为杂气；需看透干本气中气余气取格。
   anchor: null
   quote: 月令辰戌丑未为杂气；需看透干本气中气余气取格。
-  applicable_to: []
+  applicable_to:
+  - key: yueling
+    value: 辰
+  - key: yueling
+    value: 戌
+  - key: yueling
+    value: 丑
+  - key: yueling
+    value: 未
   caveats:
   - 杂气取用复杂
   - 与《三命通会》R-06-11 互证
@@ -344,7 +363,9 @@ rules:
   statement: 神煞作事项辅证，不主格局；与十神/格局冲突时以格局为主。
   anchor: null
   quote: 神煞作事项辅证，不主格局；与十神/格局冲突时以格局为主。
-  applicable_to: []
+  applicable_to:
+  - key: shensha
+    value: "*"
   caveats:
   - 本书仍保留较多唐宋禄命神煞
   - 现代以十神+月令为主线
@@ -493,6 +514,22 @@ rules:
   caveats:
   - 古法以年为主的残留
   - 现代子平以月令取格为主，不用年上起官
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: YR-P-01
+  kind: procedure
+  statement: 起运折除以三日为一年，按一年二十四气、七十二候计。
+  anchor:
+    file: sources/fulltext/bazi/yuanhai-ziping/fulltext.md
+    start_line: 4770
+    end_line: 4770
+  quote: 折除乃三日为年；折除者乃一年二十四气，七十二候。
+  applicable_to: []
+  caveats:
+  - 只锁折除日数，不锁阳男阴女顺逆（本书此处未写）
+  - 起运时刻取真太阳时与节气，由排盘引擎计算
   school: null
   verified: false
   verified_by: null
