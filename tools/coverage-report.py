@@ -16,6 +16,17 @@ import yaml
 
 ROOT = Path(__file__).resolve().parents[1]
 ARTS = ("bazi", "ziwei", "qimen", "liuren", "liuyao", "qizheng")
+REFERENCE_ARTS = ("meihua", "yili")
+
+DIVINATION_SLUG_TO_ART = {
+    "huangjin-ce": "liuyao",
+    "huozhu-lin": "liuyao",
+    "zengshan-buyi": "liuyao",
+    "bushi-zhengzong": "liuyao",
+    "meihua-yishu": "meihua",
+    "zhouyi-zhezhong": "yili",
+    "huangji-jingshi": "yili",
+}
 
 
 def art_of(system: str, slug: str) -> str | None:
@@ -25,11 +36,12 @@ def art_of(system: str, slug: str) -> str | None:
         if slug.startswith("liuren-") or slug.startswith("daliuren-"):
             return "liuren"
         return None
+    if system == "divination":
+        return DIVINATION_SLUG_TO_ART.get(slug)
     return {
         "bazi": "bazi",
         "luming-nayin": "bazi",
         "ziwei": "ziwei",
-        "divination": "liuyao",
         "xingming": "qizheng",
     }.get(system)
 
@@ -40,7 +52,8 @@ def main() -> int:
     parser.add_argument("--json", action="store_true")
     args = parser.parse_args()
 
-    stats: dict[str, dict[str, int]] = {art: {"total": 0, "anchored": 0} for art in ARTS}
+    tracked = ARTS + REFERENCE_ARTS
+    stats: dict[str, dict[str, int]] = {art: {"total": 0, "anchored": 0} for art in tracked}
     per_book: list[dict] = []
 
     for path in sorted((ROOT / "references/books").glob("*/*/rules.yaml")):
@@ -63,16 +76,25 @@ def main() -> int:
             stats[art]["total"] += total
             stats[art]["anchored"] += anchored
 
-    arts_out = {}
-    worst = None
-    for art in ARTS:
+    def pack(art: str) -> dict:
         t, a = stats[art]["total"], stats[art]["anchored"]
         cov = (a / t * 100.0) if t else 0.0
-        arts_out[art] = {"total": t, "anchored": a, "coverage": round(cov, 2)}
+        return {"total": t, "anchored": a, "coverage": round(cov, 2)}
+
+    arts_out = {art: pack(art) for art in ARTS}
+    ref_out = {art: pack(art) for art in REFERENCE_ARTS}
+    worst = None
+    for art in ARTS:
+        cov = arts_out[art]["coverage"]
         if worst is None or cov < worst[0]:
             worst = (cov, art)
 
-    payload = {"arts": arts_out, "books": per_book, "fail_under": args.fail_under}
+    payload = {
+        "arts": arts_out,
+        "reference_arts": ref_out,
+        "books": per_book,
+        "fail_under": args.fail_under,
+    }
     if args.json:
         json.dump(payload, sys.stdout, ensure_ascii=False, indent=2)
         sys.stdout.write("\n")
@@ -80,6 +102,10 @@ def main() -> int:
         print(f"{'art':8} {'total':>6} {'anchored':>8} {'coverage':>9}")
         for art in ARTS:
             d = arts_out[art]
+            print(f"{art:8} {d['total']:6d} {d['anchored']:8d} {d['coverage']:8.1f}%")
+        print("reference (not gated)")
+        for art in REFERENCE_ARTS:
+            d = ref_out[art]
             print(f"{art:8} {d['total']:6d} {d['anchored']:8d} {d['coverage']:8.1f}%")
         if args.fail_under is not None:
             print(f"threshold {args.fail_under:.1f}%")

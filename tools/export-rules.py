@@ -22,14 +22,25 @@ except ImportError:  # pragma: no cover
 
 ROOT = Path(__file__).resolve().parents[1]
 SCHEMA_VERSION = "fateradar-rules-v2"
-ARTS = ("bazi", "ziwei", "qimen", "liuren", "liuyao", "qizheng")
+# 六个产品 art + 两个分类纠正后的导出 art。产品仓只消费前六个。
+ARTS = ("bazi", "ziwei", "qimen", "liuren", "liuyao", "qizheng", "meihua", "yili")
 
 SYSTEM_TO_ART = {
     "bazi": "bazi",
     "luming-nayin": "bazi",
     "ziwei": "ziwei",
-    "divination": "liuyao",
     "xingming": "qizheng",
+}
+
+# 真六爻四本留 liuyao；梅花、周易折中、皇极经世从六爻分出。
+DIVINATION_SLUG_TO_ART = {
+    "huangjin-ce": "liuyao",
+    "huozhu-lin": "liuyao",
+    "zengshan-buyi": "liuyao",
+    "bushi-zhengzong": "liuyao",
+    "meihua-yishu": "meihua",
+    "zhouyi-zhezhong": "yili",
+    "huangji-jingshi": "yili",
 }
 
 SAN_SHI_PREFIX = (
@@ -45,6 +56,8 @@ def art_of(system: str, slug: str) -> str | None:
             if slug.startswith(prefix):
                 return art
         return None
+    if system == "divination":
+        return DIVINATION_SLUG_TO_ART.get(slug)
     if system in {"fengshui", "physiognomy", "selection"}:
         return None
     return SYSTEM_TO_ART.get(system)

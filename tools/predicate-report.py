@@ -17,7 +17,18 @@ import yaml
 
 ROOT = Path(__file__).resolve().parents[1]
 ARTS = ("bazi", "ziwei", "qimen", "liuren", "liuyao", "qizheng")
+REFERENCE_ARTS = ("meihua", "yili")
 OPEN_KEYS = ("geju", "shensha", "ziwei_star", "daxian", "geju_qimen", "keti")
+
+DIVINATION_SLUG_TO_ART = {
+    "huangjin-ce": "liuyao",
+    "huozhu-lin": "liuyao",
+    "zengshan-buyi": "liuyao",
+    "bushi-zhengzong": "liuyao",
+    "meihua-yishu": "meihua",
+    "zhouyi-zhezhong": "yili",
+    "huangji-jingshi": "yili",
+}
 
 # 各 art 引擎实际 pushFact 的 key。来源：$PRODUCT/src/lib/engine/facts/emit.ts
 # 的 emitBaziFacts / emitZiweiFacts / emitQimenFacts / emitLiurenFacts /
@@ -41,11 +52,12 @@ def art_of(system: str, slug: str) -> str | None:
         if slug.startswith("liuren-") or slug.startswith("daliuren-"):
             return "liuren"
         return None
+    if system == "divination":
+        return DIVINATION_SLUG_TO_ART.get(slug)
     return {
         "bazi": "bazi",
         "luming-nayin": "bazi",
         "ziwei": "ziwei",
-        "divination": "liuyao",
         "xingming": "qizheng",
     }.get(system)
 
@@ -84,6 +96,7 @@ def main() -> int:
     )
     args = parser.parse_args()
 
+    tracked = ARTS + REFERENCE_ARTS
     stats: dict[str, dict] = {
         art: {
             "anchored": 0,
@@ -91,7 +104,7 @@ def main() -> int:
             "wildcard": 0,
             "keys": set(),
         }
-        for art in ARTS
+        for art in tracked
     }
     open_uses: list[tuple[str, str, str, str]] = []
     art_key_uses: list[tuple[str, str, str]] = []
@@ -118,20 +131,21 @@ def main() -> int:
                 val = p.get("value")
                 if isinstance(key, str):
                     stats[art]["keys"].add(key)
+                if art not in ARTS:
+                    continue
                 if key in OPEN_KEYS and val != "*":
                     open_uses.append((art, rule.get("rule_id", ""), key, str(val)))
                 if isinstance(key, str):
                     art_key_uses.append((art, str(rule.get("rule_id", "")), key))
 
-    arts_out = {}
-    for art in ARTS:
+    def pack(art: str) -> dict:
         d = stats[art]
         anchored = d["anchored"]
         with_p = d["with_predicates"]
         wild = d["wildcard"]
         cov = (with_p / anchored * 100.0) if anchored else 0.0
         wpct = (wild / with_p * 100.0) if with_p else 0.0
-        arts_out[art] = {
+        return {
             "anchored": anchored,
             "with_predicates": with_p,
             "coverage": round(cov, 2),
@@ -141,7 +155,10 @@ def main() -> int:
             "fact_key_names": sorted(d["keys"]),
         }
 
-    payload = {"arts": arts_out, "max_wildcard": args.max_wildcard}
+    arts_out = {art: pack(art) for art in ARTS}
+    ref_out = {art: pack(art) for art in REFERENCE_ARTS}
+
+    payload = {"arts": arts_out, "reference_arts": ref_out, "max_wildcard": args.max_wildcard}
 
     if args.json:
         json.dump(payload, sys.stdout, ensure_ascii=False, indent=2)
@@ -159,6 +176,13 @@ def main() -> int:
             )
             if d["fact_key_names"]:
                 print(f"         keys: {', '.join(d['fact_key_names'])}")
+        print("reference (not gated)")
+        for art in REFERENCE_ARTS:
+            d = ref_out[art]
+            print(
+                f"{art:8} {d['anchored']:8d} {d['with_predicates']:9d} {d['coverage']:8.1f}% "
+                f"{d['wildcard']:5d} {d['wildcard_pct']:6.1f}% {d['fact_keys']:5d}"
+            )
 
     exit_code = 0
     if args.max_wildcard is not None:
