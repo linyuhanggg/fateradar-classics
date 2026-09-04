@@ -6,7 +6,7 @@ book:
   title: 渊海子平
   script: simplified
   fulltext: sources/fulltext/bazi/yuanhai-ziping/fulltext.md
-  fulltext_sha256: a09dc8706d654ddfcb8b88843dde9fc01e792487b066c3faa9232c5df3e4918a
+  fulltext_sha256: 08f5c689ac7059e319d8f1b2276e9ccae748c0c036aec3b7dd27ac470e9e70be
 rules:
 - rule_id: YR-01
   kind: doctrine
@@ -65,8 +65,8 @@ rules:
   statement: 以日为主，年为本，月为提纲，时为辅佐。
   anchor:
     file: sources/fulltext/bazi/yuanhai-ziping/fulltext.md
-    start_line: 109
-    end_line: 109
+    start_line: 116
+    end_line: 116
   quote: 以日为主，年为本，月为提纲，时为辅佐。
   applicable_to:
   - key: yueling
@@ -523,8 +523,8 @@ rules:
   statement: 起运折除以三日为一年，按一年二十四气、七十二候计。
   anchor:
     file: sources/fulltext/bazi/yuanhai-ziping/fulltext.md
-    start_line: 4770
-    end_line: 4770
+    start_line: 4842
+    end_line: 4842
   quote: 折除乃三日为年；折除者乃一年二十四气，七十二候。
   applicable_to: []
   caveats:

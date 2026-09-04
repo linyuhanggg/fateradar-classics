@@ -5,15 +5,15 @@ book:
   title: 六壬指南（一作六壬指引）
   script: traditional
   fulltext: sources/fulltext/san-shi/liuren-zhiyin/fulltext.md
-  fulltext_sha256: 2298b2270daf8f8e413f9d6c768e84830a225f93779a2ebbd90e8c905885c8bc
+  fulltext_sha256: d39e8de1e1f3a0a6ad934458fb4ad0673d4843c8d1bc914af35c483eac4de804
 rules:
 - rule_id: LR
   kind: doctrine
   statement: 用户给出可校验的占时，或给出已由同一算法生成的完整课盘。
   anchor:
     file: sources/fulltext/san-shi/liuren-zhiyin/fulltext.md
-    start_line: 57
-    end_line: 61
+    start_line: 107
+    end_line: 107
   quote: 8. 以月將加占時之上
   applicable_to: []
   caveats:
@@ -28,8 +28,8 @@ rules:
   statement: '`LR-00` 已通过，四课上下关系可确定。'
   anchor:
     file: sources/fulltext/san-shi/liuren-zhiyin/fulltext.md
-    start_line: 63
-    end_line: 64
+    start_line: 134
+    end_line: 134
   quote: 14. 賊克為初用之始，相因作中末之身。
   applicable_to: []
   caveats:
@@ -43,8 +43,8 @@ rules:
   statement: '`LR-01` 留下两个或更多同类直接克候选。'
   anchor:
     file: sources/fulltext/san-shi/liuren-zhiyin/fulltext.md
-    start_line: 66
-    end_line: 68
+    start_line: 142
+    end_line: 142
   quote: 17. 克多比用涉害，
   applicable_to: []
   caveats:
@@ -58,8 +58,8 @@ rules:
   statement: 四课上下全无直接克；不是八专无克分支。
   anchor:
     file: sources/fulltext/san-shi/liuren-zhiyin/fulltext.md
-    start_line: 70
-    end_line: 71
+    start_line: 156
+    end_line: 156
   quote: 21. 無克是以遙嗔。
   applicable_to: []
   caveats:
@@ -73,8 +73,8 @@ rules:
   statement: 恰为四课，既无直接克又无遥克，且不是伏吟或反吟专式。
   anchor:
     file: sources/fulltext/san-shi/liuren-zhiyin/fulltext.md
-    start_line: 73
-    end_line: 74
+    start_line: 168
+    end_line: 168
   quote: 24. 若昴星當俯仰於酉上。
   applicable_to: []
   caveats:
@@ -88,8 +88,8 @@ rules:
   statement: 四课去重后恰为三课，且无直接克、无遥克。
   anchor:
     file: sources/fulltext/san-shi/liuren-zhiyin/fulltext.md
-    start_line: 76
-    end_line: 77
+    start_line: 176
+    end_line: 176
   quote: 27. 若別責取干支之合神。
   applicable_to: []
   caveats:
@@ -103,8 +103,8 @@ rules:
   statement: 天地盘同位，adapter 标记 `is_fuyin=true`。
   anchor:
     file: sources/fulltext/san-shi/liuren-zhiyin/fulltext.md
-    start_line: 78
-    end_line: 79
+    start_line: 186
+    end_line: 186
   quote: 29. 伏返以刑衝為定
   applicable_to: []
   caveats:
@@ -118,8 +118,8 @@ rules:
   statement: adapter 标记十二神各临冲位，`is_fanyin=true`。
   anchor:
     file: sources/fulltext/san-shi/liuren-zhiyin/fulltext.md
-    start_line: 79
-    end_line: 79
+    start_line: 187
+    end_line: 200
   quote: 30. 若諸神歸於本位，如子加子、午加午之類，乃伏吟之象也。有克者取克，不過癸乙二干而已。無克者陽日自乾上發傳，陰日自辰上發傳，迤邐三刑而為三傳也。若初傳值自刑則中傳陽日用支、陰日用乾，仍取刑為末傳也。倘逢中傳自刑者，末傳以衝神為之矣。夫刑有三者：一字刑乃午刑午、辰刑辰、酉刑酉、亥刑亥，自刑也。二字刑乃卯刑子、子刑卯也。三字刑乃醜刑戌、戌刑未、未刑醜也；寅刑巳、巳刑申、申刑寅也。反吟乃子加午、卯加酉，十二神各臨衝射之位也。克之少者重審、元首取之，多則知一涉害取之。三傳初末相同而衝乎中傳。若夫丁未、己未、辛未、丁丑、己丑、辛丑六課無克，乃名無依，以支神之井欄衝射上所得之神以為初用，而日支所乘為中傳，日乾所乘為末傳。夫井欄者，醜衝未、巳衝亥也。
   applicable_to: []
   caveats:
@@ -133,8 +133,8 @@ rules:
   statement: 干支同位，四课去重后为两课，adapter 标记 `is_bazhuan=true`。
   anchor:
     file: sources/fulltext/san-shi/liuren-zhiyin/fulltext.md
-    start_line: 81
-    end_line: 82
+    start_line: 202
+    end_line: 202
   quote: 32. 八專以逆順為真。
   applicable_to: []
   caveats:
@@ -148,8 +148,8 @@ rules:
   statement: 三传已由前述规则或 adapter 唯一生成。
   anchor:
     file: sources/fulltext/san-shi/liuren-zhiyin/fulltext.md
-    start_line: 770
-    end_line: 770
+    start_line: 936
+    end_line: 936
   quote: 167. 用為發端之門，中為移易之府，末為歸計之宮。
   applicable_to: []
   caveats:
@@ -163,8 +163,8 @@ rules:
   statement: 取用和三传已定。
   anchor:
     file: sources/fulltext/san-shi/liuren-zhiyin/fulltext.md
-    start_line: 817
-    end_line: 817
+    start_line: 1094
+    end_line: 1103
   quote: 214. 既定課傳，次觀神將。貴人為百神之主，得位為福，失位為殃；螣蛇為卑賤之神，旺相怪異，休囚亦主憂驚。朱雀文書亦主刑戮奸讒口舌，白虎道路又為官災疾病死亡。勾陳主遲滯勾連之事，囚主訟而旺主生；玄武為盜賊虛耗之神，休失人而旺失物。六合為婚姻合和，婦女得之則為私門；太常主酒食衣裳，武職占之則為擢任。青龍所主財物，文官見之光為恩寵，天後雖為婦人，庶人得之亦主亨佳。天空奴婢妄誕，太陰暗昧不明。
   applicable_to: []
   caveats:
@@ -178,8 +178,8 @@ rules:
   statement: 用户问题已分类，且不是要求把文化文本当现实保证。
   anchor:
     file: sources/fulltext/san-shi/liuren-zhiyin/fulltext.md
-    start_line: 830
-    end_line: 830
+    start_line: 1220
+    end_line: 1227
   quote: 227. 占天看雲龍風虎，察水火升降以辨陰晴。占地看玉藻金英，視神將生克以知吉凶。占宅占人看日辰而次詳課義，占獄占病視勾虎而解救同論。捕亡三奸之下可得，鬼神煩神之位推詳。占婚姻視天後妻財與日辰比和。占胎孕夫妻年上方判陰陽。占謀望要成神合氣，占求財要看旺相龍常。占功名先看吉神吉將，占官職當明天吏天城。
   applicable_to: []
   caveats:
@@ -193,8 +193,8 @@ rules:
   statement: '`LR-00` 至 `LR-10` 所需主盘字段齐全，且已有不含神煞的主判断。'
   anchor:
     file: sources/fulltext/san-shi/liuren-zhiyin/fulltext.md
-    start_line: 2451
-    end_line: 2451
+    start_line: 3261
+    end_line: 3261
   quote: 2. 神煞全圖 凡看神煞，須干支神將刑克，其事乃發 。
   applicable_to: []
   caveats:
@@ -209,8 +209,8 @@ rules:
   statement: 三传形成三合局，且明确调用的是张洪注本第三十章现代附录。
   anchor:
     file: sources/fulltext/san-shi/liuren-zhiyin/fulltext.md
-    start_line: 2431
-    end_line: 2434
+    start_line: 3241
+    end_line: 3241
   quote: 1574. 三合章第三十
   applicable_to: []
   caveats:
@@ -225,7 +225,7 @@ rules:
   anchor:
     file: sources/fulltext/san-shi/liuren-zhiyin/fulltext.md
     start_line: 38
-    end_line: 38
+    end_line: 46
   quote: 1. 六壬之術，傳之甚古，周、漢、唐、宋迄於明季，名家輩出，而今式微矣。餘出身隴畝，世業耕讀，非今慕古，雅愛五行。庚戌季秋，以百七十元，貿得上海民國江東書局《改良大六壬全書三種》，三十年間，苦讀不綴，間為人占，而實求理自娛也，雖多有應者，亦不過好之耳。然觀今者納甲、星命之書，充棟汗牛，而壬學之書，屈指可數，為之可懼，故有意將所得所感，成一帙而濫芋於壬書中，以副尊壬之意，以消永日之閒。但賢如孔聖，尚且述而不作，吾輩後生，焉敢自題曰某某著耶？竊謂所閱書中，以《大全》、《指南》最為壬學圭臬，而《大全》匯類總集，繁複不可驟讀；《指南》則言簡意賅，發人深省，但引而不發，未盡細故，令後學無由而致其道，餘因之簡注之，僭參己意，並引少許實例，稍著翼論之功，以求拋磚之效。壬學廁身，未得其徑，南畝農夫，言辭陋鄙，徒污明家之目，訛漏必多，方家指正。是為序。
   applicable_to: []
   caveats:
@@ -239,8 +239,8 @@ rules:
   statement: 用户问收款、入账或求财，三传、六亲、旺衰、空墓与天将已由确定性事实层给出。
   anchor:
     file: sources/fulltext/san-shi/liuren-zhiyin/fulltext.md
-    start_line: 777
-    end_line: 777
+    start_line: 943
+    end_line: 949
   quote: 174. 三傳生日百事宜，日生三傳財源耗。日克三傳求財可羨，三傳克日眾鬼難堪。初傳克末事成空，末克初傳事可成。傳見妻財利益多，傳見父母饒生意，傳見兄弟口舌生，傳見子孫福祿滿，傳見官鬼有兩途，病訟畏兮官位顯。子傳父兮逆且疑，母傳子兮順且便。三傳凶謀事不成而終不喜，三傳吉兮干支凶，事吉而成無少憚。支若傳乾人求我，乾若傳支我求人。
   applicable_to: []
   caveats:
@@ -255,8 +255,8 @@ rules:
   statement: 用户问具体事件应期，事实层日期、课体和三传完整；只有求财问题才启用末传六合分支。
   anchor:
     file: sources/fulltext/san-shi/liuren-zhiyin/fulltext.md
-    start_line: 65
-    end_line: 65
+    start_line: 141
+    end_line: 141
   quote: 16. 克者動也，不克則不動。課中有幾克，即有幾事。又事之應期，亦在克中求，蓋克者，轉折也。元首主速，重審主遲；元首主喜，切防樂極生悲；重審主憂，亦詳自暗而明。
   applicable_to: []
   caveats:
@@ -270,8 +270,8 @@ rules:
   statement: 日干、日支及其五行均由同一确定性课盘给出；问题属于可判成否的具体事件。
   anchor:
     file: sources/fulltext/san-shi/liuren-zhiyin/fulltext.md
-    start_line: 557
-    end_line: 558
+    start_line: 678
+    end_line: 678
   quote: 508. 辰來克日諸事難成，日往克辰所謀皆遂。
   applicable_to: []
   caveats:
@@ -286,8 +286,8 @@ rules:
   statement: 三传完整有序，五行关系由确定性事实层给出。
   anchor:
     file: sources/fulltext/san-shi/liuren-zhiyin/fulltext.md
-    start_line: 777
-    end_line: 777
+    start_line: 943
+    end_line: 949
   quote: 174. 三傳生日百事宜，日生三傳財源耗。日克三傳求財可羨，三傳克日眾鬼難堪。初傳克末事成空，末克初傳事可成。傳見妻財利益多，傳見父母饒生意，傳見兄弟口舌生，傳見子孫福祿滿，傳見官鬼有兩途，病訟畏兮官位顯。子傳父兮逆且疑，母傳子兮順且便。三傳凶謀事不成而終不喜，三傳吉兮干支凶，事吉而成無少憚。支若傳乾人求我，乾若傳支我求人。
   applicable_to: []
   caveats:
@@ -302,8 +302,8 @@ rules:
   statement: 问题类神已由有出处的专项映射确定，三传六亲、旺衰和空亡完整。
   anchor:
     file: sources/fulltext/san-shi/liuren-zhiyin/fulltext.md
-    start_line: 777
-    end_line: 777
+    start_line: 943
+    end_line: 949
   quote: 174. 三傳生日百事宜，日生三傳財源耗。日克三傳求財可羨，三傳克日眾鬼難堪。初傳克末事成空，末克初傳事可成。傳見妻財利益多，傳見父母饒生意，傳見兄弟口舌生，傳見子孫福祿滿，傳見官鬼有兩途，病訟畏兮官位顯。子傳父兮逆且疑，母傳子兮順且便。三傳凶謀事不成而終不喜，三傳吉兮干支凶，事吉而成無少憚。支若傳乾人求我，乾若傳支我求人。
   applicable_to: []
   caveats:

@@ -6,7 +6,7 @@ book:
   title: 穷通宝鉴
   script: simplified
   fulltext: sources/fulltext/bazi/qiongtong-baojian/fulltext.md
-  fulltext_sha256: fce5e9215be146435c533b15647849c03321577128e6fb7ac19258dc8b55cbaf
+  fulltext_sha256: 7fd1c835481b7c761f3519cce2cb4c3f16a90fd409d40cd0a09b412af1fef3cc
 rules:
 - rule_id: QTB
   kind: doctrine
@@ -76,8 +76,8 @@ rules:
   statement: 正月甲木余寒，原文取丙癸；二月以庚金得所为要；三月先取庚金、次用壬水。三个月令次序不同，不得合并成同一用神组合。
   anchor:
     file: sources/fulltext/bazi/qiongtong-baojian/fulltext.md
-    start_line: 41
-    end_line: 69
+    start_line: 57
+    end_line: 63
   quote: 春月之木，渐有生长之象。初春犹有余寒，当以火温暖，则有舒畅之美，水多变剋，有损精神。重见生旺，必用庚金斲凿，可成楝梁。春末阳壮水渴，藉水资扶，则花繁叶茂。初春无火，增之以水，则阴浓气弱，根损枝枯，不能华秀。春末失水，增之以火，则阳气太盛，燥渴相加，枝枯叶干，亦不华秀。是以水火二物，要得时相济为美。
   applicable_to:
   - key: rizhu
@@ -95,8 +95,8 @@ rules:
   statement: 四月甲木先癸后丁；五月先癸后丁，庚金次之；六月先丁后庚，原文并明言无癸亦可。三夏须按实际月支分别取用。
   anchor:
     file: sources/fulltext/bazi/qiongtong-baojian/fulltext.md
-    start_line: 73
-    end_line: 101
+    start_line: 105
+    end_line: 105
   quote: 四月甲木退气，丙火司权，先癸后丁。
   applicable_to:
   - key: rizhu
@@ -114,8 +114,8 @@ rules:
   statement: 七月甲木以丁火为尊、庚金次之；八月先丁、次丙、再次庚；九月独爱丁火，并以壬癸滋扶。三秋各月不可互换次序。
   anchor:
     file: sources/fulltext/bazi/qiongtong-baojian/fulltext.md
-    start_line: 105
-    end_line: 149
+    start_line: 137
+    end_line: 137
   quote: 三秋甲木，木性枯藁，金土乘旺，先丁后庚，丁庚两全，将甲造为画戟，七月甲堪为戟，非丁火不能造庚，非庚不能造甲，丁庚两透，科甲定然。庚禄居申，杀印相生，运行金水，身伴明君。或庚透无丁，一富而已，主为人操心太重，不能坐享。或丁透庚藏，亦主青衿小富。或庚多无丁，残疾之人若为僧道，灾厄可免。
   applicable_to:
   - key: rizhu
@@ -148,8 +148,8 @@ rules:
   statement: 正月乙木丙先癸次；二月以丙为君、癸为臣；三月转为先癸后丙。应用时必须保留寅卯辰的逐月差异。
   anchor:
     file: sources/fulltext/bazi/qiongtong-baojian/fulltext.md
-    start_line: 179
-    end_line: 207
+    start_line: 211
+    end_line: 211
   quote: 三春乙木，为芝兰蒿草之物，丙癸不可离也，春乙见丙，卉木向阳，万象回春，须癸滋养根基。丙癸齐透天干，无化合制剋，自然登科及第，故书云：乙木根荄种得深，只须阳地不宜阴，漂浮只怕多逢水，剋制何须苦用金。
   applicable_to:
   - key: rizhu
@@ -181,8 +181,8 @@ rules:
   statement: 三秋乙木总纲先丙后癸，但九月专用癸水；七月、八月还须依各月段所列条件分别判断，不得把三秋写成统一组合。
   anchor:
     file: sources/fulltext/bazi/qiongtong-baojian/fulltext.md
-    start_line: 247
-    end_line: 275
+    start_line: 279
+    end_line: 279
   quote: 三秋乙木，金神司令，先丙后癸，惟九月耑用癸水，恐丙暖戊土为病也。
   applicable_to:
   - key: rizhu
@@ -242,8 +242,8 @@ rules:
   statement: 正月丙火用壬、庚辛为助；二月专用壬水；三月仍用壬水，土重时取甲为辅。三春依据实际月支保留不同佐用。
   anchor:
     file: sources/fulltext/bazi/qiongtong-baojian/fulltext.md
-    start_line: 317
-    end_line: 382
+    start_line: 349
+    end_line: 349
   quote: 三春丙火，秉象至威，阳回大地，侮雪欺霜，耑用壬水为扶阳，名曰天和地润，既济功成。
   applicable_to:
   - key: rizhu
@@ -260,8 +260,8 @@ rules:
   statement: 四月丙火专用壬水、金为佐；五月亦专用壬水；六月用壬并借庚金为佐。此为三夏逐月原文次序，不外推固定吉凶。
   anchor:
     file: sources/fulltext/bazi/qiongtong-baojian/fulltext.md
-    start_line: 386
-    end_line: 448
+    start_line: 418
+    end_line: 418
   quote: 三夏丙火，阳威性烈，专用壬水。若亥宫壬水无力，回剋洩气故也，仍用申宫长生之水，方云富贵。
   applicable_to:
   - key: rizhu
@@ -294,8 +294,8 @@ rules:
   statement: 十月丙火按木旺、水旺、火旺分别酌用庚、戊、壬；十一月壬水为最、戊土佐之；十二月喜壬，土多时不可少甲。三冬不存在统一的壬甲戊三透规则。
   anchor:
     file: sources/fulltext/bazi/qiongtong-baojian/fulltext.md
-    start_line: 503
-    end_line: 557
+    start_line: 535
+    end_line: 535
   quote: 十月丙火，太阳失令，得见甲戊庚出干，可云科甲，主为人性好清高，斯文领袖。如辛透见辰，名化合逢时，主大贵。
   applicable_to:
   - key: rizhu
@@ -399,8 +399,8 @@ rules:
   statement: 正二月戊土先丙后甲、癸又次之；三月先甲后丙、癸又次之。春季共同涉及甲丙癸，但先后随月令改变。
   anchor:
     file: sources/fulltext/bazi/qiongtong-baojian/fulltext.md
-    start_line: 769
-    end_line: 798
+    start_line: 807
+    end_line: 807
   quote: 三春戊土，无丙照暖，戊土不生，无甲疏噼，戊土不灵，无癸滋润，万物不长。正二月先丙后甲，癸又次之。三月先甲后丙，癸又次之，因戊土司权故也。有甲、丙、癸，三者齐透，必主一品当朝，或二透一藏，亦登金榜，二藏一透，也可异途。
   applicable_to:
   - key: rizhu
@@ -447,8 +447,8 @@ rules:
   statement: 十月戊土先用甲木、次取丙火；十一、十二月严寒冰冻，丙火为专、甲木为佐。亥月与子丑月的先后次序不可混同。
   anchor:
     file: sources/fulltext/bazi/qiongtong-baojian/fulltext.md
-    start_line: 897
-    end_line: 929
+    start_line: 935
+    end_line: 935
   quote: 十月戊土，时值小阳，阳气略出，先用甲木，次取丙火。非甲、土不灵。非丙、土不暖，安能生发万物。甲丙两出，富贵中人。或甲得长生，遇支藏得地之水，一丙高透，亦主身贵扬名。
   applicable_to:
   - key: rizhu
@@ -480,8 +480,8 @@ rules:
   statement: 三夏己土取癸为要、次用丙火；原文以甘沛与太阳并论。此章不授权把辛金泄秀或癸辛两透写成三夏统一结论。
   anchor:
     file: sources/fulltext/bazi/qiongtong-baojian/fulltext.md
-    start_line: 981
-    end_line: 1002
+    start_line: 1019
+    end_line: 1019
   quote: 三夏己土，杂气才官，禾稼在田，最喜甘沛，取癸为要，次用丙火。夏无太阳，禾稼不长，故无癸曰旱田，无丙曰孤阴。
   applicable_to:
   - key: rizhu
@@ -498,8 +498,8 @@ rules:
   statement: 三秋己土以丙火温、癸水润，癸先丙后；九月土盛时另宜甲木疏之。不得据此虚构丙癸辛三透的统一规则。
   anchor:
     file: sources/fulltext/bazi/qiongtong-baojian/fulltext.md
-    start_line: 1006
-    end_line: 1029
+    start_line: 1044
+    end_line: 1044
   quote: 三秋己土，万物收藏之际，外虚内实，寒气渐升，须丙火温之，癸水润之，不特此也，且癸能洩金，丙能制金，补土精神，则秋生之物咸茂矣。癸先丙后。
   applicable_to:
   - key: rizhu
@@ -558,8 +558,8 @@ rules:
   statement: 正月庚金以丙甲为上、丁火次之；二月专用丁火并借甲引丁、借庚劈甲；三月先甲后丁。三春须逐月读取。
   anchor:
     file: sources/fulltext/bazi/qiongtong-baojian/fulltext.md
-    start_line: 1072
-    end_line: 1133
+    start_line: 1110
+    end_line: 1110
   quote: 正月庚金，木旺之际，有土皆死，不能生金，且金之寒气未除，先用丙暖庚性，又虑土厚埋金，须甲疏洩。丙甲两透，科甲显荣。二者透一，亦有生监。丙藏甲透，异路功名。
   applicable_to:
   - key: rizhu
@@ -576,8 +576,8 @@ rules:
   statement: 四月庚金参用壬丙戊；五月专用壬水、癸又次之；六月先用丁火、次取甲木。三夏没有统一的壬戊组合。
   anchor:
     file: sources/fulltext/bazi/qiongtong-baojian/fulltext.md
-    start_line: 1137
-    end_line: 1166
+    start_line: 1175
+    end_line: 1175
   quote: 四月庚金，长生于巳，巳内有戊。丙不镕金，故不畏火炎，丙亦可作用，但先壬水，方得中和，故曰群金生夏，喜用勾陈。次取戊土，丙火佐之。三者皆全，登科及第，即透一二，亦非白丁。
   applicable_to:
   - key: rizhu
@@ -654,8 +654,8 @@ rules:
   statement: 七月辛金以壬水为尊、甲戊酌用；八月专用壬水，见戊己时才以甲制土；九月先壬后甲。不得把甲戊无条件并入所有秋月。
   anchor:
     file: sources/fulltext/bazi/qiongtong-baojian/fulltext.md
-    start_line: 1348
-    end_line: 1405
+    start_line: 1399
+    end_line: 1399
   quote: 七月辛金，值庚司令，不旺自旺，且壬水居申，四柱不见戊土，胎元戊藏申内，为壬堤岸，人命得此，为官清正，但不富耳。
   applicable_to:
   - key: rizhu
@@ -729,8 +729,8 @@ rules:
   statement: 四月壬水取壬比肩为助、辛金发源、庚金为佐；五月取癸为用、庚为佐；六月先辛后甲、次取癸水。三夏用法逐月不同。
   anchor:
     file: sources/fulltext/bazi/qiongtong-baojian/fulltext.md
-    start_line: 1496
-    end_line: 1530
+    start_line: 1547
+    end_line: 1547
   quote: 四月壬水，丙火司权，水弱极矣，专取壬水比肩为助，次取辛金发源，且暗合丙火，庚金为佐。壬辛两透，金榜有名，或癸辛两出，加以甲透，亦主异路之荣。无甲者、富贵门下之客。
   applicable_to:
   - key: rizhu
@@ -762,8 +762,8 @@ rules:
   statement: 十月壬水专用戊丙、次取庚金；十一月先戊后丙；十二月专用丙火、甲木为佐。戊丙不是三冬不分月令的统一结论。
   anchor:
     file: sources/fulltext/bazi/qiongtong-baojian/fulltext.md
-    start_line: 1587
-    end_line: 1625
+    start_line: 1638
+    end_line: 1638
   quote: 十月壬水司权，至旺之极，取戊为用，若生辰日干，又见辰时，必须戊透，又须庚制甲，不伤戊土，戊庚两全，定主豋科乃第，位显权高。或甲出制戊，不见庚救者，断之贫穷。戊藏无制，可许生员。或戊庚两透无甲者，亦主荣显。
   applicable_to:
   - key: rizhu
@@ -824,8 +824,8 @@ rules:
   statement: 十月癸水宜用庚辛；十一月专用丙火解冻并要辛金滋扶；十二月宜丙火解冻。亥子丑三月不得合并为统一丙辛规则。
   anchor:
     file: sources/fulltext/bazi/qiongtong-baojian/fulltext.md
-    start_line: 1731
-    end_line: 1764
+    start_line: 1790
+    end_line: 1790
   quote: 十月癸水，旺中有弱，何也？因亥摇木，洩散元神，宜用庚辛为妙。得庚辛两透，不见丁伤者，功名有准。
   applicable_to:
   - key: rizhu

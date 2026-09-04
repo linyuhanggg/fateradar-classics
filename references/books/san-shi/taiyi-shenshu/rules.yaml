@@ -5,15 +5,15 @@ book:
   title: 太乙神数
   script: traditional
   fulltext: sources/fulltext/san-shi/taiyi-shenshu/fulltext.md
-  fulltext_sha256: ecacc021ea180803b10b3b97a42ce602ea50bc342c73d30883012629cabc111c
+  fulltext_sha256: 98221f9efadd70ec9dd9a43c5ec8e670204299d595c7e21ae93b0b9ff2d3177b
 rules:
 - rule_id: TR-01
   kind: doctrine
   statement: 采用卷一上元甲子年计；大唐甲子（724）为 1,937,281 算，一算起例，公元换算偏移为 1,936,557
   anchor:
     file: sources/fulltext/san-shi/taiyi-shenshu/fulltext.md
-    start_line: 67
-    end_line: 69
+    start_line: 80
+    end_line: 81
   quote: 自上元以来嵗代綿逺紀法差殊雖設繁詞備而靡用今從上元甲子到唐甲子嵗通前計四萬八百一筭臣按宋琨置元似童兒戯推求人紀之年下求不得日辰上求不得冬至自三百餘年學者何多逮於淳風但效尤而已臣今别修甲子元四分厯法與太乙同元舉而備用得上元甲子冬至引而下之齊距嵗計太乙行宫進不違於四分退不失於元紀自上元混沌甲子之嵗至今大唐甲子嵗積得一百九十三萬七千二百八十一筭
   applicable_to: []
   caveats:
@@ -38,8 +38,8 @@ rules:
   statement: 360 年为六纪，每纪 60 年；另以连续五个 72 年段标记五子元（甲子、丙子、戊子、庚子、壬子），72 局内每三年依次理天、理地、理人
   anchor:
     file: sources/fulltext/san-shi/taiyi-shenshu/fulltext.md
-    start_line: 75
-    end_line: 81
+    start_line: 90
+    end_line: 90
   quote: 置上元以来距所求積年以周紀法三百六十去之不盡以紀法六十去之所得為紀數不盡為入紀年數也
   applicable_to: []
   caveats: []
@@ -52,8 +52,8 @@ rules:
   statement: 每三年移一宫，按一、二、三、四、六、七、八、九顺行，不游中五
   anchor:
     file: sources/fulltext/san-shi/taiyi-shenshu/fulltext.md
-    start_line: 79
-    end_line: 81
+    start_line: 94
+    end_line: 94
   quote: 推上元積年以周紀法三百六十去之不盡以元法七十二去之又不盡以太乙小周法二十四除之又不盡以三約之為宫數不滿為入宫以來年數其宫數命起一宫順行八宫不遊中五筭外即得太乙所在及入宫以来年數也
   applicable_to: []
   caveats: []
@@ -66,8 +66,8 @@ rules:
   statement: 主客大将取算数个位；整十取十位；参将取大将乘三的十进制余数，余零留中五
   anchor:
     file: sources/fulltext/san-shi/taiyi-shenshu/fulltext.md
-    start_line: 314
-    end_line: 316
+    start_line: 347
+    end_line: 349
   quote: 五將者太乙監將幷上下二目主客大小將也監將者東方嵗星之精受木徳之正氣王在春三月 上目者南方熒惑之精受火徳之正氣在天為陽號始擊將屬客王在夏三月 下目者中宫鎮星之精受土徳之正氣在地為隂號文昌將屬主王在四季 客大將者北方辰星之精受水徳之正氣主兵革王在冬三月 主大將者西方太白之精受金徳之正氣主戰鬬王在秋三月又五將各應五方隨四時各有休王經云主客兩陣相當乘生氣者勝乘死氣者敗 假令八月攻東方以太蔟為始擊將乘生氣也大勝若髙叢為始擊將乘死氣也大負他倣此 嵗計者嵗星之使也謂計嵗月日時之事也 是故聖人則而象之創法而制局太乙為人君二目法輔相五將定主客八門分勝負運沉機扵罇爼之間突雄略扵幃幄之内盖王佐之要道也
   applicable_to: []
   caveats:
@@ -117,7 +117,7 @@ rules:
   statement: 本 profile 只输出下表中可由年计主盘逐字段验证的掩、囚、格、对子谓词；不得把未具备门位或先后方向数据的击、迫、关、四郭固、四郭杜、执提、提挟伪报为已计算
   anchor:
     file: sources/fulltext/san-shi/taiyi-shenshu/fulltext.md
-    start_line: 428
+    start_line: 470
     end_line: 470
   quote: 經曰始擊將臨太乙宫謂之掩嵗計遇之王綱失序臣張君弱宜修徳以禳之盖掩襲刼殺之義若掩太乙在陽絶之地君凶隂絶之地臣誅掩主大將主人筭和吉不和凶參擊之勝
   applicable_to: []
@@ -133,8 +133,8 @@ rules:
   statement: 始击／客目与太乙同位
   anchor:
     file: sources/fulltext/san-shi/taiyi-shenshu/fulltext.md
-    start_line: 430
-    end_line: 430
+    start_line: 470
+    end_line: 470
   quote: 經曰始擊將臨太乙宫謂之掩嵗計遇之王綱失序臣張君弱宜修徳以禳之盖掩襲刼殺之義若掩太乙在陽絶之地君凶隂絶之地臣誅掩主大將主人筭和吉不和凶參擊之勝
   applicable_to: []
   caveats: []
@@ -147,8 +147,8 @@ rules:
   statement: 天目／文昌与太乙同位
   anchor:
     file: sources/fulltext/san-shi/taiyi-shenshu/fulltext.md
-    start_line: 442
-    end_line: 442
+    start_line: 482
+    end_line: 482
   quote: 經曰囚者簒戮之義也若文昌將并主客大小四將俱與太乙同宫總名曰囚若在陽氣絶氣之地大凶若在絶陽絶隂之地自敗臣受誅若諸將與太乙同宫或近大將謀在同類近參將謀在内也筭和者利筭不和者謀不成也
   applicable_to: []
   caveats: []
@@ -161,8 +161,8 @@ rules:
   statement: 始击／客目在太乙对宫
   anchor:
     file: sources/fulltext/san-shi/taiyi-shenshu/fulltext.md
-    start_line: 450
-    end_line: 450
+    start_line: 490
+    end_line: 490
   quote: 經曰客目大小將與太乙對宫為格言政事上下格也若在陽絶之地又與嵗計遇格不利有為所格者格易之義也若格太乙者盜侮其君主客筭不和者必敗
   applicable_to: []
   caveats: []
@@ -175,8 +175,8 @@ rules:
   statement: 天目／文昌在太乙对宫
   anchor:
     file: sources/fulltext/san-shi/taiyi-shenshu/fulltext.md
-    start_line: 454
-    end_line: 454
+    start_line: 494
+    end_line: 494
   quote: 經曰下目文昌將與太乙衝而相當者為對若下目相對之時皆為大臣懐二心君逐良將兇奸生下臣欺上
   applicable_to: []
   caveats: []
@@ -189,8 +189,8 @@ rules:
   statement: 主大将与太乙同宫
   anchor:
     file: sources/fulltext/san-shi/taiyi-shenshu/fulltext.md
-    start_line: 442
-    end_line: 442
+    start_line: 482
+    end_line: 482
   quote: 經曰囚者簒戮之義也若文昌將并主客大小四將俱與太乙同宫總名曰囚若在陽氣絶氣之地大凶若在絶陽絶隂之地自敗臣受誅若諸將與太乙同宫或近大將謀在同類近參將謀在内也筭和者利筭不和者謀不成也
   applicable_to: []
   caveats: []
@@ -203,8 +203,8 @@ rules:
   statement: 主参将与太乙同宫
   anchor:
     file: sources/fulltext/san-shi/taiyi-shenshu/fulltext.md
-    start_line: 442
-    end_line: 442
+    start_line: 482
+    end_line: 482
   quote: 經曰囚者簒戮之義也若文昌將并主客大小四將俱與太乙同宫總名曰囚若在陽氣絶氣之地大凶若在絶陽絶隂之地自敗臣受誅若諸將與太乙同宫或近大將謀在同類近參將謀在内也筭和者利筭不和者謀不成也
   applicable_to: []
   caveats: []
@@ -217,8 +217,8 @@ rules:
   statement: 客大将与太乙同宫
   anchor:
     file: sources/fulltext/san-shi/taiyi-shenshu/fulltext.md
-    start_line: 442
-    end_line: 442
+    start_line: 482
+    end_line: 482
   quote: 經曰囚者簒戮之義也若文昌將并主客大小四將俱與太乙同宫總名曰囚若在陽氣絶氣之地大凶若在絶陽絶隂之地自敗臣受誅若諸將與太乙同宫或近大將謀在同類近參將謀在内也筭和者利筭不和者謀不成也
   applicable_to: []
   caveats: []
@@ -231,8 +231,8 @@ rules:
   statement: 客参将与太乙同宫
   anchor:
     file: sources/fulltext/san-shi/taiyi-shenshu/fulltext.md
-    start_line: 442
-    end_line: 442
+    start_line: 482
+    end_line: 482
   quote: 經曰囚者簒戮之義也若文昌將并主客大小四將俱與太乙同宫總名曰囚若在陽氣絶氣之地大凶若在絶陽絶隂之地自敗臣受誅若諸將與太乙同宫或近大將謀在同類近參將謀在内也筭和者利筭不和者謀不成也
   applicable_to: []
   caveats: []
@@ -245,8 +245,8 @@ rules:
   statement: 客大将在太乙对宫
   anchor:
     file: sources/fulltext/san-shi/taiyi-shenshu/fulltext.md
-    start_line: 450
-    end_line: 450
+    start_line: 490
+    end_line: 490
   quote: 經曰客目大小將與太乙對宫為格言政事上下格也若在陽絶之地又與嵗計遇格不利有為所格者格易之義也若格太乙者盜侮其君主客筭不和者必敗
   applicable_to: []
   caveats: []
@@ -259,8 +259,8 @@ rules:
   statement: 客参将在太乙对宫
   anchor:
     file: sources/fulltext/san-shi/taiyi-shenshu/fulltext.md
-    start_line: 450
-    end_line: 450
+    start_line: 490
+    end_line: 490
   quote: 經曰客目大小將與太乙對宫為格言政事上下格也若在陽絶之地又與嵗計遇格不利有為所格者格易之義也若格太乙者盜侮其君主客筭不和者必敗
   applicable_to: []
   caveats: []
@@ -273,8 +273,8 @@ rules:
   statement: 计算君基、臣基、民基、五福、大游、小游、四神、天乙、地乙、直符的确定位置与独立 epoch_profile
   anchor:
     file: sources/fulltext/san-shi/taiyi-shenshu/fulltext.md
-    start_line: 595
-    end_line: 759
+    start_line: 656
+    end_line: 656
   quote: 推積年法      推君基太乙法
   applicable_to: []
   caveats:
