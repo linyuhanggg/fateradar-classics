@@ -2,10 +2,11 @@
 
 定位不到原文或不支持结论的规则保持 `anchor: null`。无锚点是安全降级；错锚点不可接受。
 
-共 462 条。P6 质检后含对应度<0.15 / 短句无句读 / 标题元数据降级。
+共 462 条（P6 计数；P7 已恢复 34 条误杀，另将 `LIURENMIBEN-020` 降级，未重扫全表）。
 
 | book | rule_id | reason | quote 摘录 |
 |---|---|---|---|
+| `san-shi/liuren-miben` | `LIURENMIBEN-020` | P7：CTP 出处声明（`>` 辑录行），非正文断辞 | > 清·金正音 辑录。CTP URN：ctp:wb348173… |
 | `bazi/ditiansui-chanwei` | `DITIANSUICHA-009` | 对应度<0.15，引文不能支持结论 | 五阳皆阳丙为最，五阴皆阴癸为至。 |
 | `bazi/ditiansui-chanwei` | `DITIANSUICHA-DR-02` | 对应度<0.15，引文不能支持结论 | 合有宜不宜，合多不为奇。 |
 | `bazi/ditiansui-chanwei` | `DITIANSUICHA-014` | quote not locatable or previously unanchored | 命局之精（资源充足）、气（流通无阻）、神（光彩外显）三者饱满者为贵。 |

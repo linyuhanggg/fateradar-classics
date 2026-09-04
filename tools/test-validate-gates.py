@@ -101,6 +101,22 @@ def main() -> int:
         if "ZPR-01" not in ids:
             fail(f"V13 should print ZPR-01, ids={ids}")
         print("reverse4 OK V13 heading quote")
+
+        # reverse 5: blockquote prefix quote → V13 FAIL
+        blockquote = yaml_orig.replace(old_q, '"> 清·金正音 辑录"', 1)
+        if blockquote == yaml_orig:
+            fail("could not mutate blockquote quote")
+        YAML.write_text(blockquote, encoding="utf-8")
+        rc, out = run_validate(["--book", BOOK, "--json"])
+        YAML.write_text(yaml_orig, encoding="utf-8")
+        payload = json.loads(out[out.find("{") :]) if "{" in out else {}
+        codes = [e.get("code") for e in payload.get("errors") or []]
+        ids = [e.get("rule_id") for e in payload.get("errors") or []]
+        if rc == 0 or "V13" not in codes:
+            fail(f"blockquote quote should V13 FAIL, rc={rc} codes={codes} out={out[:800]}")
+        if "ZPR-01" not in ids:
+            fail(f"V13 should print ZPR-01, ids={ids}")
+        print("reverse5 OK V13 blockquote quote")
     finally:
         YAML.write_text(yaml_orig, encoding="utf-8")
         FULLTEXT.write_text(ft_orig, encoding="utf-8")

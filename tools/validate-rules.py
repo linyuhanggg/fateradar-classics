@@ -118,7 +118,7 @@ def han_count(text: str) -> int:
 
 HEADING_QUOTE_RE = re.compile(r"^#{1,6}(?:\s|$)")
 META_QUOTE_RE = re.compile(r"(?m)^(?:-\s*)?(raw_file|section_note|source_base)\s*:")
-ATTRIB_QUOTE_RE = re.compile(r"(?:唐|宋|元|明|清)\s*\S{0,12}\s*撰")
+ATTRIB_QUOTE_RE = re.compile(r"(?:唐|宋|元|明|清)\s*\S{0,12}\s*(?:撰|輯|編|著|辑录|輯錄)")
 JUDOU_RE = re.compile(r"[。！？；!?]")
 T2S_TABLE = str.maketrans({t: s for t, s in SCRIPT_PAIRS if len(t) == 1 and len(s) == 1})
 
@@ -145,6 +145,8 @@ def v13_bad_quote(quote: str, book_title: str = "") -> str | None:
         return None
     if HEADING_QUOTE_RE.match(q):
         return "quote 是 markdown 标题行，不能作为断辞"
+    if q.startswith(">"):
+        return "quote 以 > 开头，是引用/批注标记行，不能作为断辞"
     if META_QUOTE_RE.search(q):
         return "quote 是 pack 元数据，不是原文断辞"
     if ATTRIB_QUOTE_RE.search(q) and han_count(q) <= 40:

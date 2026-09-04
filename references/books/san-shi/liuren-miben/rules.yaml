@@ -273,10 +273,7 @@ rules:
 - rule_id: LIURENMIBEN-020
   kind: doctrine
   statement: 输出任何本书引文、作者归属、影印页码或“古籍原文”判断。
-  anchor:
-    file: sources/fulltext/san-shi/liuren-miben/fulltext.md
-    start_line: 3
-    end_line: 3
+  anchor: null
   quote: '> 清·金正音 辑录。CTP URN：`ctp:wb348173`。本文以 CTP 维基区《六壬秘本》5 个 wiki chapter 为底，剥除 CTP 页面外壳与 markdown 表格列号，按正文卷次「卷之一—卷之十七」重组。原典正文未做改写、未做简繁转换、未做断句调整；CTP 三处章节切分乱码已据 NCL-06572 影印第 72、179、234 页补回，并在文末「影印补字记录」中登记。'
   applicable_to: []
   caveats:
