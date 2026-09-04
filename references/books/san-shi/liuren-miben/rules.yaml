@@ -63,7 +63,11 @@ rules:
     start_line: 429
     end_line: 429
   quote: 天空用起又空亡，時又空亡何處詳。若問其中是何物，其中無物慢思量。
-  applicable_to: []
+  applicable_to: 
+  - key: kongwang
+    value: "*"
+  - key: sanchuan
+    value: 初传
   caveats:
   - 卷四的射覆空象与卷十五的事项空亡不是同一粒度
   school: null
@@ -150,7 +154,13 @@ rules:
     start_line: 3335
     end_line: 3335
   quote: 虛者，旬中空亡也。在天曰寡宿，在地曰孤辰，吉凶相反。克我、刑我、劫我、衝我，皆取空；生我、旺我、救我，不許空。天上神臨地下空，曰落空，曰陷空，即同空論。此天地妙理。課傳既定，首觀虛實，以分吉凶焉。實者，不空不陷，受生同類比和是也。
-  applicable_to: []
+  applicable_to: 
+  - key: sanchuan
+    value: 初传
+  - key: sanchuan
+    value: 中传
+  - key: sanchuan
+    value: 末传
   caveats:
   - 卷十三、十四、十五对空亡表述粒度不同，不能互相抹平
   school: null
@@ -180,7 +190,9 @@ rules:
     start_line: 3397
     end_line: 3397
   quote: 傳進為進，傳退為退。進空宜退，退空宜進，觀其傳，吉則進，凶則退。
-  applicable_to: []
+  applicable_to: 
+  - key: sanchuan
+    value: 初传
   caveats:
   - 特殊课体会改变过程感，但不取消三传事实
   school: null
@@ -235,7 +247,9 @@ rules:
     start_line: 5600
     end_line: 5600
   quote: 天課占天人課人，地課卜宅地墳塋。罡天魁地人求貴，此訣教君最有靈。孟仲季中分順逆，地般落處見真情。仲於本位天盤取，孟季須知隔五尊。此是三才期應訣，鬼神無處可潛形。
-  applicable_to: []
+  applicable_to: 
+  - key: sanchuan
+    value: 初传
   caveats:
   - 这是一项卷十七专法，不覆盖常规四课三传解释
   school: null
@@ -290,7 +304,9 @@ rules:
     start_line: 5533
     end_line: 5533
   quote: 時下無傷猶獲寶，支干俱損不如歸凡求財，傳中見財易求，無才難取；龍居日本財堪覓。
-  applicable_to: []
+  applicable_to: 
+  - key: tianjiang
+    value: 青龙
   caveats:
   - 凶将不能推翻旺相财爻，只能限定实得和风险
   school: null
@@ -305,7 +321,9 @@ rules:
     start_line: 3208
     end_line: 3208
   quote: 凡占事吉凶應期，以發用決之。太歲發用，應在一年；月建發用，應在一月；旬首發用，應在一旬；節氣發用，應在一氣；日乾發用，應在當日。其所應之事，以乘神決之。如勾用主田宅事。又乘貴人，主貴人扶助之例。
-  applicable_to: []
+  applicable_to: 
+  - key: sanchuan
+    value: 初传
   caveats:
   - 与其他候期法不一致时并列，不静默择一
   school: null
