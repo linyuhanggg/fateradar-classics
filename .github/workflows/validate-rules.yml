@@ -23,3 +23,5 @@ jobs:
           python-version: "3.12"
       - run: pip install pyyaml
       - run: python tools/validate-rules.py
+      - run: python tools/test-validate-gates.py
+      - run: python tools/coverage-report.py --fail-under 85
