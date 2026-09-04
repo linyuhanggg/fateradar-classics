@@ -50,3 +50,11 @@ G1 要求 V11 < 50，当前约 112（未锚 paraphrase + 已锚原文与 `book.s
 - 已锚规则 quote 取自 fulltext，与 `book.script` 登记不符时未改 script、未放宽 V11。
 
 需人决定：是否按 fulltext 实际用字改正 `book.script`，或接受 V11 残留。
+
+## P10 任务 3：七政格局 / 行限未加 FactKey
+
+任务书 3a 要求加 `qizheng_geju`、`xingxian`。按 3c：引擎必须从**已有排盘结果**取出；取不到就回退、不许为产出事实改排盘。
+
+实测 `buildQizheng` / `emitQizhengFacts` 只有 `stars`（宫位、宿度、庙旺、顺逆）和 `palaces`，没有格局名或行限宫位字段。从黄经现算「五曜连珠 / 二星合璧 / 洞微百六限」等于新写分析算法。按 3c 不加这两个 key。约 35 条七政未映射规则本轮仍空。
+
+紫微侧可取：`decadal.accent` 的 `palace` → `daxian`（emit 改为当前大限宫位名）；当前年柱地支 → `liunian_taisui`。未改 `ziwei.ts` 排盘。`daxian` 词表暂保持开放数组：关闭成十二宫会让既有「宫名 N–M」谓词无法通过 `isLegalFactValue`（产品仓 89 测红）。等任务 4 改完 yaml 后再关。

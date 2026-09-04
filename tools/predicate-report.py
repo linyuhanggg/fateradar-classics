@@ -37,7 +37,7 @@ ART_EMIT_KEYS: dict[str, frozenset[str]] = {
     "bazi": frozenset(
         {"rizhu", "yueling", "rizhu_strength", "geju", "yongshen", "shishen", "shensha", "kongwang"}
     ),
-    "ziwei": frozenset({"ziwei_palace", "ziwei_star", "sihua", "daxian"}),
+    "ziwei": frozenset({"ziwei_palace", "ziwei_star", "sihua", "daxian", "liunian_taisui"}),
     "qimen": frozenset({"jiuxing", "bamen", "bashen", "zhifu", "zhishi", "geju_qimen", "kongwang"}),
     "liuren": frozenset({"keti", "sanchuan", "tianjiang", "yuejiang", "kongwang"}),
     "liuyao": frozenset({"shiyao", "yingyao", "liuqin", "liushen", "fushen", "dongyao"}),
