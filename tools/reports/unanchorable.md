@@ -2,7 +2,7 @@
 
 定位不到原文或不支持结论的规则保持 `anchor: null`。无锚点是安全降级；错锚点不可接受。
 
-共 462 条（P6 计数；P7 恢复 33 条误杀，另将 `LIURENMIBEN-020` 降级，并撤回误列的 `LZ`，未重扫全表）。
+共 462 条（P6 计数；P7 恢复 33 条误杀，另将 `LIURENMIBEN-020` 降级，并撤回误列的 `LZ`，未重扫全表）。P10：`qimen-dunjia-tongzhi` 24 条在「奇门四十格」有唯一整行，已重锚并从下表移除；`qimen-faqiao` 2 条仍不碰。
 
 | book | rule_id | reason | quote 摘录 |
 |---|---|---|---|
@@ -322,30 +322,6 @@
 | `san-shi/liuren-zhiyin` | `LIURENZHIYIN-017` | 对应度<0.15，引文不能支持结论 | 16. 克者動也，不克則不動。課中有幾克，即有幾事。又事之應期，亦在克中求，蓋克者，轉折也。元首主速，重審主遲；元首主喜，切防樂極生悲；重審主憂，亦詳自暗而明。 |
 | `san-shi/liuren-zhiyin` | `LIURENZHIYIN-018` | 对应度<0.15，引文不能支持结论 | 508. 辰來克日諸事難成，日往克辰所謀皆遂。 |
 | `san-shi/liuren-zhiyin` | `LIURENZHIYIN-020` | 对应度<0.15，引文不能支持结论 | 174. 三傳生日百事宜，日生三傳財源耗。日克三傳求財可羨，三傳克日眾鬼難堪。初傳克末事成空，末克初傳事可成。傳見妻財利益多，傳見父母饒生意，傳見兄弟口舌生，傳 |
-| `san-shi/qimen-dunjia-tongzhi` | `QM-P01` | 短句无句读，无法扩成原文整行 | 龙回首 甲值符加地盘丙奇 |
-| `san-shi/qimen-dunjia-tongzhi` | `QM-P02` | 短句无句读，无法扩成原文整行 | 鸟跌穴 丙奇加地盘甲值符 |
-| `san-shi/qimen-dunjia-tongzhi` | `QM-P03` | 短句无句读，无法扩成原文整行 | 龙逃走 乙奇遇辛 |
-| `san-shi/qimen-dunjia-tongzhi` | `QM-P04` | 短句无句读，无法扩成原文整行 | 虎猖狂 辛遇乙奇 |
-| `san-shi/qimen-dunjia-tongzhi` | `QM-P05` | 短句无句读，无法扩成原文整行 | 蛇妖矫 癸见丁奇 |
-| `san-shi/qimen-dunjia-tongzhi` | `QM-P06` | 短句无句读，无法扩成原文整行 | 雀投江 丁奇见癸 |
-| `san-shi/qimen-dunjia-tongzhi` | `QM-P07` | 短句无句读，无法扩成原文整行 | 大格 庚临六癸 |
-| `san-shi/qimen-dunjia-tongzhi` | `QM-P08` | 短句无句读，无法扩成原文整行 | 刑格 庚临六己 |
-| `san-shi/qimen-dunjia-tongzhi` | `QM-P09` | 短句无句读，无法扩成原文整行 | 小格 庚临壬 |
-| `san-shi/qimen-dunjia-tongzhi` | `QM-P14` | 短句无句读，无法扩成原文整行 | 伏吟 本星加本宫 |
-| `san-shi/qimen-dunjia-tongzhi` | `QM-P15` | 短句无句读，无法扩成原文整行 | 反吟 星加对宫 |
-| `san-shi/qimen-dunjia-tongzhi` | `QM-P21` | 短句无句读，无法扩成原文整行 | 龙遁 休门与乙奇合坎 |
-| `san-shi/qimen-dunjia-tongzhi` | `QM-P22` | 短句无句读，无法扩成原文整行 | 虎遁 休门与乙奇合艮辛 |
-| `san-shi/qimen-dunjia-tongzhi` | `QM-P23` | 短句无句读，无法扩成原文整行 | 神遁 休门与乙奇合九天 |
-| `san-shi/qimen-dunjia-tongzhi` | `QM-P24` | 短句无句读，无法扩成原文整行 | 鬼遁 乙奇合九地杜门 |
-| `san-shi/qimen-dunjia-tongzhi` | `QM-P27` | 短句无句读，无法扩成原文整行 | 岁格 庚临岁干 |
-| `san-shi/qimen-dunjia-tongzhi` | `QM-P28` | 短句无句读，无法扩成原文整行 | 月格 庚临月干 |
-| `san-shi/qimen-dunjia-tongzhi` | `QM-P29` | 短句无句读，无法扩成原文整行 | 日格 庚临日干 |
-| `san-shi/qimen-dunjia-tongzhi` | `QM-P30` | 短句无句读，无法扩成原文整行 | 时格 庚临时干三奇 |
-| `san-shi/qimen-dunjia-tongzhi` | `QM-P31` | 短句无句读，无法扩成原文整行 | 伏宫 庚临值符 |
-| `san-shi/qimen-dunjia-tongzhi` | `QM-P32` | 短句无句读，无法扩成原文整行 | 伏干 庚临日干 |
-| `san-shi/qimen-dunjia-tongzhi` | `QM-P33` | 短句无句读，无法扩成原文整行 | 飞干格 日干临庚 |
-| `san-shi/qimen-dunjia-tongzhi` | `QM-P38` | 短句无句读，无法扩成原文整行 | 地罗遮蔽 六壬临时干 |
-| `san-shi/qimen-dunjia-tongzhi` | `QM-P39` | 短句无句读，无法扩成原文整行 | 天网四张 六癸临时干 |
 | `san-shi/qimen-faqiao` | `QM-P26` | qimen-faqiao excerpt only; no publisher scrape | 直使加地丁为守门 |
 | `san-shi/qimen-faqiao` | `QM-P36` | qimen-faqiao excerpt only; no publisher scrape | 时干入墓，戊戌、壬辰、丙戌、癸未、丁丑、己丑也 |
 | `san-shi/taiyi-shenshu` | `TR-06` | quote not locatable or previously unanchored | 九宫各主一州（一兾 / 二荆 / 三青 / 四徐 / 五豫 / 六雍 / 七梁 / 八兖 / 九雝） |
