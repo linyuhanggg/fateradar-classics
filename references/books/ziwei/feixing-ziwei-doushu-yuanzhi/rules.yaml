@@ -119,8 +119,28 @@ rules:
   applicable_to:
   - key: ziwei_star
     value: 巨门
+    scope:
+      palace: 事业
+  - key: ziwei_star
+    value: 巨门
+    scope:
+      palace: 命宫
+  - key: ziwei_star
+    value: 巨门
+    scope:
+      palace: 身宫
   - key: ziwei_star
     value: 天刑
+    scope:
+      palace: 事业
+  - key: ziwei_star
+    value: 天刑
+    scope:
+      palace: 命宫
+  - key: ziwei_star
+    value: 天刑
+    scope:
+      palace: 身宫
   - key: ziwei_palace
     value: 事业
   caveats:

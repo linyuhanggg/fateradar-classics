@@ -215,8 +215,12 @@ rules:
   applicable_to: 
   - key: ziwei_star
     value: 太阳
+    scope:
+      palace: 事业
   - key: ziwei_star
     value: 文昌
+    scope:
+      palace: 事业
   - key: ziwei_palace
     value: 事业
   caveats:
@@ -236,8 +240,12 @@ rules:
   applicable_to: 
   - key: ziwei_star
     value: 太阴
+    scope:
+      palace: 夫妻
   - key: ziwei_star
     value: 文曲
+    scope:
+      palace: 夫妻
   - key: ziwei_palace
     value: 夫妻
   caveats:
@@ -255,6 +263,10 @@ rules:
     end_line: 38
   quote: 祿居奴僕縱有官也奔馳，帝遇凶徒雖獲吉而無道。
   applicable_to: 
+  - key: ziwei_star
+    value: 禄存
+    scope:
+      palace: 交友
   - key: ziwei_palace
     value: 交友
   caveats:
@@ -329,6 +341,20 @@ rules:
   applicable_to: 
   - key: ziwei_star
     value: 七杀
+    scope:
+      palace: 命宫
+  - key: ziwei_star
+    value: 七杀
+    scope:
+      palace: 身宫
+  - key: ziwei_star
+    value: 铃星
+    scope:
+      palace: 命宫
+  - key: ziwei_star
+    value: 擎羊
+    scope:
+      palace: 命宫
   - key: ziwei_palace
     value: 命宫
   caveats:

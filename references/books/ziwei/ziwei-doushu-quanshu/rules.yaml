@@ -80,6 +80,8 @@ rules:
   applicable_to: 
   - key: ziwei_star
     value: 武曲
+    scope:
+      palace: 命宫
   - key: ziwei_star
     value: 破军
   - key: ziwei_star
@@ -106,6 +108,8 @@ rules:
   applicable_to: 
   - key: ziwei_star
     value: 天同
+    scope:
+      palace: 命宫
   - key: ziwei_palace
     value: 福德
   caveats:
@@ -138,8 +142,12 @@ rules:
   applicable_to: 
   - key: ziwei_star
     value: 紫微
+    scope:
+      palace: 命宫
   - key: ziwei_star
     value: 天府
+    scope:
+      palace: 命宫
   caveats:
   - 仅作文化研究参考
   school: null
@@ -198,6 +206,8 @@ rules:
     value: 廉贞
   - key: ziwei_star
     value: 天相
+    scope:
+      palace: 命宫
   caveats:
   - 仅作文化研究参考
   school: null
@@ -217,6 +227,8 @@ rules:
     value: 天机
   - key: ziwei_star
     value: 天梁
+    scope:
+      palace: 命宫
   - key: ziwei_palace
     value: 父母
   caveats:
@@ -254,6 +266,8 @@ rules:
     value: 七杀
   - key: ziwei_star
     value: 破军
+    scope:
+      palace: 命宫
   caveats:
   - 仅作文化研究参考
   school: null
@@ -290,8 +304,12 @@ rules:
     value: 天梁
   - key: ziwei_star
     value: 文昌
+    scope:
+      palace: 命宫
   - key: ziwei_star
     value: 文曲
+    scope:
+      palace: 命宫
   caveats:
   - 仅作文化研究参考
   - 不替代现代教育规划
@@ -310,6 +328,8 @@ rules:
   applicable_to: 
   - key: ziwei_star
     value: 紫微
+    scope:
+      palace: 命宫
   - key: ziwei_star
     value: 左辅
   - key: ziwei_star
@@ -458,7 +478,20 @@ rules:
     end_line: 562
   quote: 希夷先生曰：天同南斗益算保生之星，化祿為善，逢吉為祥，身命值之，主為人謙遜，稟性溫和。
   applicable_to:
-  - {key: ziwei_palace, value: 命宫}
+  - key: sihua
+    value: 化禄
+    scope:
+      palace: 命宫
+  - key: sihua
+    value: 化禄
+    scope:
+      palace: 财帛
+  - key: sihua
+    value: 化禄
+    scope:
+      palace: 事业
+  - key: ziwei_palace
+    value: 命宫
   caveats:
   - 仅作文化研究参考
   - 不作铁口断财
@@ -475,7 +508,16 @@ rules:
     end_line: 3623
   quote: 紫微廟旺遇左右昌曲魁鉞，軒勝位至封候伯，加羊陀火鈴平常，天府同權貴名利兩全，天相加內外權貴清正，破軍同鬧中安身。
   applicable_to:
-  - {key: ziwei_palace, value: 命宫}
+  - key: sihua
+    value: 化权
+    scope:
+      palace: 命宫
+  - key: sihua
+    value: 化权
+    scope:
+      palace: 事业
+  - key: ziwei_palace
+    value: 命宫
   caveats:
   - 仅作文化研究参考
   school: null
@@ -497,6 +539,8 @@ rules:
     value: 文曲
   - key: sihua
     value: 化科
+    scope:
+      palace: 命宫
   caveats:
   - 仅作文化研究参考
   - 不替代现代教育规划
@@ -513,7 +557,16 @@ rules:
     end_line: 3472
   quote: 先看命宮星曜落陷加羊陀火鈴空劫化忌守照如何，又看疾厄宮星曜善惡廟旺落陷如何斷之。
   applicable_to:
-  - {key: ziwei_palace, value: 命宫}
+  - key: sihua
+    value: 化忌
+    scope:
+      palace: 命宫
+  - key: sihua
+    value: 化忌
+    scope:
+      palace: 疾厄
+  - key: ziwei_palace
+    value: 命宫
   caveats:
   - ⚠️ 化忌坐疾厄断病**严禁**作医疗诊断
   - 仅作文化研究参考
@@ -534,10 +587,16 @@ rules:
     value: 命宫
   - key: sihua
     value: 化禄
+    scope:
+      palace: 命宫
   - key: sihua
     value: 化权
+    scope:
+      palace: 命宫
   - key: sihua
     value: 化科
+    scope:
+      palace: 命宫
   caveats:
   - 仅作文化研究参考
   - 不作铁口断富贵
@@ -633,16 +692,26 @@ rules:
   applicable_to: 
   - key: ziwei_star
     value: 武曲
+    scope:
+      palace: 财帛
   - key: ziwei_star
     value: 天府
+    scope:
+      palace: 财帛
   - key: ziwei_star
     value: 破军
+    scope:
+      palace: 财帛
   - key: ziwei_star
     value: 禄存
+    scope:
+      palace: 财帛
   - key: ziwei_palace
     value: 财帛
   - key: sihua
     value: 化禄
+    scope:
+      palace: 财帛
   caveats:
   - 仅作文化研究参考
   - 不替代现代投资决策
@@ -680,6 +749,8 @@ rules:
   applicable_to: 
   - key: ziwei_star
     value: 天马
+    scope:
+      palace: 迁移
   - key: ziwei_palace
     value: 迁移
   caveats:
@@ -717,14 +788,22 @@ rules:
   applicable_to: 
   - key: ziwei_star
     value: 紫微
+    scope:
+      palace: 事业
   - key: ziwei_star
     value: 太阳
+    scope:
+      palace: 事业
   - key: ziwei_palace
     value: 事业
   - key: sihua
     value: 化权
+    scope:
+      palace: 事业
   - key: sihua
     value: 化科
+    scope:
+      palace: 事业
   caveats:
   - 仅作文化研究参考
   - 不替代现代职业规划
@@ -743,12 +822,18 @@ rules:
   applicable_to: 
   - key: ziwei_star
     value: 天府
+    scope:
+      palace: 田宅
   - key: ziwei_star
     value: 太阴
+    scope:
+      palace: 田宅
   - key: ziwei_palace
     value: 田宅
   - key: sihua
     value: 化禄
+    scope:
+      palace: 田宅
   caveats:
   - 仅作文化研究参考
   - 不替代现代房地产决策
@@ -767,12 +852,18 @@ rules:
   applicable_to: 
   - key: ziwei_star
     value: 天同
+    scope:
+      palace: 福德
   - key: ziwei_star
     value: 天梁
+    scope:
+      palace: 福德
   - key: ziwei_palace
     value: 福德
   - key: sihua
     value: 化禄
+    scope:
+      palace: 福德
   caveats:
   - 仅作文化研究参考
   school: null
@@ -959,6 +1050,14 @@ rules:
   applicable_to:
   - key: liunian_taisui
     value: 午
+  - key: sihua
+    value: 化忌
+    scope:
+      palace: 命宫
+  - key: ziwei_star
+    value: 禄存
+    scope:
+      palace: 财帛
   caveats:
   - 仅作文化研究参考
   - 不作铁口断流年祸福
