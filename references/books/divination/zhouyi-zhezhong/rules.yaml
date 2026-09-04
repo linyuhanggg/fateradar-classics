@@ -1,0 +1,386 @@
+schema_version: fateradar-rules-v2
+book:
+  slug: zhouyi-zhezhong
+  system: divination
+  title: 御纂周易折中
+  script: traditional
+  fulltext: sources/fulltext/divination/zhouyi-zhezhong/fulltext.md
+  fulltext_sha256: 3b3dd34ee83c8b021ba63372d3cb1a5ade4b50747fa6ac72a8b9b2b08ef28cea
+rules:
+- rule_id: ZZR
+  kind: doctrine
+  statement: 八卦相重，每一重卦具六爻，由此形成六十四卦体系。
+  anchor: null
+  quote: 八卦相重，每一重卦具六爻，由此形成六十四卦体系。
+  applicable_to: []
+  caveats:
+  - 仅作重卦结构方法，不授权卦意吉凶
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: ZZR-01
+  kind: doctrine
+  statement: 阳爻居阳位（初三五）、阴爻居阴位（二四上）为"当位"；当位则正，多吉。
+  anchor: null
+  quote: 阳爻居阳位（初三五）、阴爻居阴位（二四上）为"当位"；当位则正，多吉。
+  applicable_to: []
+  caveats:
+  - 当位非必然吉
+  - 尚需看爻之时位与应
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: ZHOUYIZHEZHO-ZZR-01
+  kind: doctrine
+  statement: 二爻居下卦中、五爻居上卦中；得中位者多吉，所谓"刚中"（阳爻居中）或"柔中"（阴爻居中）。
+  anchor: null
+  quote: 二爻居下卦中、五爻居上卦中；得中位者多吉，所谓"刚中"（阳爻居中）或"柔中"（阴爻居中）。
+  applicable_to: []
+  caveats:
+  - 中位虽贵，仍需看爻才与时
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: ZHOUYIZHEZHO-004
+  kind: doctrine
+  statement: 得中又当位（如九五、六二）为"中正"，最贵之爻；多主大吉、君子之道。
+  anchor: null
+  quote: 得中又当位（如九五、六二）为"中正"，最贵之爻；多主大吉、君子之道。
+  applicable_to: []
+  caveats:
+  - —
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: ZHOUYIZHEZHO-005
+  kind: doctrine
+  statement: 初与四、二与五、三与上相应；阴阳相应为有应（吉象）、同性相应为无应（孤立）。
+  anchor: null
+  quote: 初与四、二与五、三与上相应；阴阳相应为有应（吉象）、同性相应为无应（孤立）。
+  applicable_to: []
+  caveats:
+  - 与卜筮"世应"概念不同
+  - 此处专属义理解卦
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: ZHOUYIZHEZHO-006
+  kind: doctrine
+  statement: 相邻两爻为比；阴阳相比为亲、同性为敌。比关系次于应。
+  anchor: null
+  quote: 相邻两爻为比；阴阳相比为亲、同性为敌。比关系次于应。
+  applicable_to: []
+  caveats:
+  - —
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: ZHOUYIZHEZHO-007
+  kind: doctrine
+  statement: 一卦之主爻多为五爻（君位）；或以"成卦之主"（一阴一阳独成卦义者）；或以"主卦之主"（位最尊德最大者）。
+  anchor: null
+  quote: 一卦之主爻多为五爻（君位）；或以"成卦之主"（一阴一阳独成卦义者）；或以"主卦之主"（位最尊德最大者）。
+  applicable_to: []
+  caveats:
+  - 朱熹与程颐对卦主认定有差异，本书取折中
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: ZHOUYIZHEZHO-008
+  kind: doctrine
+  statement: 易爻随卦时而变义；同一爻位在不同卦中义不同（如九三在乾为君子终日乾乾、在坤无）。
+  anchor: null
+  quote: 易爻随卦时而变义；同一爻位在不同卦中义不同（如九三在乾为君子终日乾乾、在坤无）。
+  applicable_to: []
+  caveats:
+  - 不可执位以释爻
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: ZZR-02
+  kind: doctrine
+  statement: 每卦象征一时；解卦先识卦时（屯之难、需之待、否之闭、泰之通）。
+  anchor: null
+  quote: 每卦象征一时；解卦先识卦时（屯之难、需之待、否之闭、泰之通）。
+  applicable_to: []
+  caveats:
+  - —
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: ZHOUYIZHEZHO-ZZR-02
+  kind: doctrine
+  statement: 上下两卦之德合为一卦德（如乾下乾上为健中健、坎下离上为水火既济）。
+  anchor: null
+  quote: 上下两卦之德合为一卦德（如乾下乾上为健中健、坎下离上为水火既济）。
+  applicable_to: []
+  caveats:
+  - —
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: ZHOUYIZHEZHO-011
+  kind: doctrine
+  statement: 64 卦两两为反对（综卦）；反对之卦义相反相成（如屯蒙、需讼、师比）。
+  anchor: null
+  quote: 64 卦两两为反对（综卦）；反对之卦义相反相成（如屯蒙、需讼、师比）。
+  applicable_to: []
+  caveats:
+  - —
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: ZHOUYIZHEZHO-012
+  kind: doctrine
+  statement: 64 卦皆有错卦（六爻全反）；错卦之义为本卦之背面（乾错坤、屯错鼎）。
+  anchor: null
+  quote: 64 卦皆有错卦（六爻全反）；错卦之义为本卦之背面（乾错坤、屯错鼎）。
+  applicable_to: []
+  caveats:
+  - —
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: ZZR-03
+  kind: doctrine
+  statement: 乾健、坤顺、震动、巽入、坎陷、离丽、艮止、兑悦；为八卦本德。
+  anchor: null
+  quote: 乾健、坤顺、震动、巽入、坎陷、离丽、艮止、兑悦；为八卦本德。
+  applicable_to: []
+  caveats:
+  - —
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: ZHOUYIZHEZHO-ZZR-03
+  kind: doctrine
+  statement: 八卦各有动物 / 身体 / 家人 / 方位 / 季节等多重类象（详卷十六）。
+  anchor: null
+  quote: 八卦各有动物 / 身体 / 家人 / 方位 / 季节等多重类象（详卷十六）。
+  applicable_to: []
+  caveats:
+  - 类象有传统差异
+  - 与梅花易数取象互参
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: ZZR-04
+  kind: doctrine
+  statement: 易有太极，是生两仪、两仪生四象、四象生八卦；为易理生成之总框架。
+  anchor: null
+  quote: 易有太极，是生两仪、两仪生四象、四象生八卦；为易理生成之总框架。
+  applicable_to: []
+  caveats:
+  - —
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: ZHOUYIZHEZHO-ZZR-04
+  kind: doctrine
+  statement: 形而上者谓之道、形而下者谓之器；易兼道器，不可偏执。
+  anchor: null
+  quote: 形而上者谓之道、形而下者谓之器；易兼道器，不可偏执。
+  applicable_to: []
+  caveats:
+  - —
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: ZHOUYIZHEZHO-017
+  kind: doctrine
+  statement: 君子见几而作；知微之始者，可应万变。
+  anchor: null
+  quote: 君子见几而作；知微之始者，可应万变。
+  applicable_to: []
+  caveats:
+  - —
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: ZHOUYIZHEZHO-018
+  kind: doctrine
+  statement: 六爻分三才；初二为地、三四为人、五上为天。
+  anchor: null
+  quote: 六爻分三才；初二为地、三四为人、五上为天。
+  applicable_to: []
+  caveats:
+  - —
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: ZHOUYIZHEZHO-019
+  kind: doctrine
+  statement: 吉凶生大业；悔吝者言乎其小疵；动爻之吉凶悔吝皆由象生。
+  anchor: null
+  quote: 吉凶生大业；悔吝者言乎其小疵；动爻之吉凶悔吝皆由象生。
+  applicable_to: []
+  caveats:
+  - —
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: ZZR-05
+  kind: doctrine
+  statement: 64 卦相次有理；后卦由前卦之必然演化（屯生于乾坤、蒙次于屯）。
+  anchor: null
+  quote: 64 卦相次有理；后卦由前卦之必然演化（屯生于乾坤、蒙次于屯）。
+  applicable_to: []
+  caveats:
+  - —
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: ZHOUYIZHEZHO-ZZR-05
+  kind: doctrine
+  statement: 杂卦传以两两反对论卦义之异同（乾刚坤柔、比乐师忧）。
+  anchor: null
+  quote: 杂卦传以两两反对论卦义之异同（乾刚坤柔、比乐师忧）。
+  applicable_to: []
+  caveats:
+  - —
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: ZZR-06
+  kind: doctrine
+  statement: 河图天数 1+3+5+7+9 = 25、地数 2+4+6+8+10 = 30、合 55；洛书纵横皆 15。
+  anchor: null
+  quote: 河图天数 1+3+5+7+9 = 25、地数 2+4+6+8+10 = 30、合 55；洛书纵横皆 15。
+  applicable_to: []
+  caveats:
+  - —
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: ZHOUYIZHEZHO-ZZR-06
+  kind: doctrine
+  statement: 太极一、两仪二、四象四、八卦八、十六、三十二、六十四；每加一爻倍增。
+  anchor: null
+  quote: 太极一、两仪二、四象四、八卦八、十六、三十二、六十四；每加一爻倍增。
+  applicable_to: []
+  caveats:
+  - —
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: ZHOUYIZHEZHO-024
+  kind: doctrine
+  statement: 50 根蓍草、去 1 不用、余 49 根、分二挂一揲四归奇，共 18 变成一卦。
+  anchor: null
+  quote: 50 根蓍草、去 1 不用、余 49 根、分二挂一揲四归奇，共 18 变成一卦。
+  applicable_to: []
+  caveats:
+  - 实操**严禁** LLM 手算
+  - 必须 `tool.divination.qiguagua`
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: ZHOUYIZHEZHO-025
+  kind: doctrine
+  statement: 揲蓍得 9（老阳 / 重）、6（老阴 / 交）为动爻；7（少阳 / 单）、8（少阴 / 拆）为静爻。
+  anchor: null
+  quote: 揲蓍得 9（老阳 / 重）、6（老阴 / 交）为动爻；7（少阳 / 单）、8（少阴 / 拆）为静爻。
+  applicable_to: []
+  caveats:
+  - 与三钱金钱卦动静爻一致，但概率分布不同
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: ZHOUYIZHEZHO-026
+  kind: doctrine
+  statement: 六爻全静占本卦彖辞 / 卦辞；一爻变占本卦变爻爻辞；二爻变占本卦二变爻、上爻为主；三爻变占本卦及变卦彖辞、本卦为主；四爻变占变卦二不变爻、下爻为主；五爻变占变卦不变爻；六爻全变占之卦彖辞（乾用九 / 坤用六例外）。
+  anchor: null
+  quote: 六爻全静占本卦彖辞 / 卦辞；一爻变占本卦变爻爻辞；二爻变占本卦二变爻、上爻为主；三爻变占本卦及变卦彖辞、本卦为主；四爻变占变卦二不变爻、下爻为主；五爻变占变卦不变爻；六爻全变占之卦彖辞（乾用九 / 坤用六例外）。
+  applicable_to: []
+  caveats:
+  - 朱熹折中诸家说之总结
+  - 其他派别变占法（如京房 6 亲法）不同
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: ZHOUYIZHEZHO-027
+  kind: doctrine
+  statement: 易者寡过之书；占断为辅，修身为本；君子知幾不待占而后行。
+  anchor: null
+  quote: 易者寡过之书；占断为辅，修身为本；君子知幾不待占而后行。
+  applicable_to: []
+  caveats:
+  - 本书反对依赖占卜决疑而废修身
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: ZZR-07
+  kind: doctrine
+  statement: 本书解卦四层：先程传（义理）、次本义（义理 + 象数兼）、次集说（诸家）、终案语（折中）；学者依此层次研读。
+  anchor: null
+  quote: 本书解卦四层：先程传（义理）、次本义（义理 + 象数兼）、次集说（诸家）、终案语（折中）；学者依此层次研读。
+  applicable_to: []
+  caveats:
+  - —
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: ZHOUYIZHEZHO-ZZR-07
+  kind: doctrine
+  statement: 程颐重义理（伊川易传）、朱熹兼象数与卜筮（本义）；本书以朱为正、程为佐。
+  anchor: null
+  quote: 程颐重义理（伊川易传）、朱熹兼象数与卜筮（本义）；本书以朱为正、程为佐。
+  applicable_to: []
+  caveats:
+  - —
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: ZHOUYIZHEZHO-030
+  kind: doctrine
+  statement: 本书重宋学义理而旁取汉学象数；不取魏伯阳 / 京房等纳甲飞伏之纯象数。
+  anchor: null
+  quote: 本书重宋学义理而旁取汉学象数；不取魏伯阳 / 京房等纳甲飞伏之纯象数。
+  applicable_to: []
+  caveats:
+  - 清代后期惠栋汉学派对此有反动，应注明
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: ZHOUYIZHEZHO-031
+  kind: doctrine
+  statement: 解卦兼综时位 / 才德 / 应比 / 中正 / 卦主等多角度；不可执一以蔽义。
+  anchor: null
+  quote: 解卦兼综时位 / 才德 / 应比 / 中正 / 卦主等多角度；不可执一以蔽义。
+  applicable_to: []
+  caveats:
+  - —
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null

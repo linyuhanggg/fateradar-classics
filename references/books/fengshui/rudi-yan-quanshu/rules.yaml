@@ -1,0 +1,107 @@
+schema_version: fateradar-rules-v2
+book:
+  slug: rudi-yan-quanshu
+  system: fengshui
+  title: 入地眼全书
+  script: traditional
+  fulltext: sources/fulltext/fengshui/rudi-yan-quanshu/fulltext.md
+  fulltext_sha256: f15e1a215fe1a0a6d0955ca52a3dfb4760d23660961bdfa30d4a6b2ecd69f1a4
+rules:
+- rule_id: RDY-R001
+  kind: doctrine
+  statement: 先熟看巒頭，再细玩理气；舍巒頭而重理气会导致登山茫然。
+  anchor:
+    file: sources/fulltext/fengshui/rudi-yan-quanshu/fulltext.md
+    start_line: 21
+    end_line: 31
+  quote: 一、是書自宋迄今，巨族大家抄寫成帙，秘之已久。或前後失次，或散軼事不全，愚不揣固陋，留心匯正，歷數寒暑，方成全集。至間有欠雅馴處，字字坦然明白，故不敢妄為刪易。
+  applicable_to: []
+  caveats: []
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: RDY-R002
+  kind: doctrine
+  statement: 寻龙须辨祖宗；去穴近者关祸福近，少祖、父母、入首是重点。
+  anchor:
+    file: sources/fulltext/fengshui/rudi-yan-quanshu/fulltext.md
+    start_line: 167
+    end_line: 177
+  quote: 入地眼全書龍法卷二
+  applicable_to: []
+  caveats: []
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: RDY-R003
+  kind: doctrine
+  statement: 水来合处为面，砂头向内为面；砂水有情处是龙，无情处非龙。
+  anchor:
+    file: sources/fulltext/fengshui/rudi-yan-quanshu/fulltext.md
+    start_line: 167
+    end_line: 177
+  quote: 入地眼全書龍法卷二
+  applicable_to: []
+  caveats: []
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: RDY-R004
+  kind: doctrine
+  statement: 水法总以形象为第一；斜飞直冲虽合理气吉方，仍须避。
+  anchor:
+    file: sources/fulltext/fengshui/rudi-yan-quanshu/fulltext.md
+    start_line: 205
+    end_line: 213
+  quote: 入地眼全書水法卷六
+  applicable_to: []
+  caveats: []
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: RDY-R005
+  kind: doctrine
+  statement: 寻龙立穴水为先，但龙为根本水为用，二者不可偏废。
+  anchor:
+    file: sources/fulltext/fengshui/rudi-yan-quanshu/fulltext.md
+    start_line: 213
+    end_line: 219
+  quote: 堪輿首重詳龍身，「詳」字妙。詳龍勢之強弱、偏正以及榮枯休旺等形。倚斜側出，不是龍矣。精峻岡巒秀氣凝。精峻自然秀，有凝自然發福。亦有平原結穴者，靜深蛾眉最親人。世俗紛紛滋論說，究來禍福總無憑。卻不知水秀砂明即是地，誰識得消砂納水法中尋。水秀者，或凝聚，或彎抱，或層層朝拜，並來大去小，來長去短，止見來不見去，更無駁雜是也。砂明者，峰頭開爽，情向親勢，低穴其頭俯臨，高穴其頭仰顧。穴砂差等，如賓主坐談，語笑殷勤是也。凡砂高穴，不過丈許，離穴不過兩尋。八尺曰尋，此言兩旁龍、虎是也。如砂腳端正，砂頭圓淨，砂身潤澤，饒有悃悃款款之形，不出半紀而發也。十二年為一紀。「凡砂」句四十二字，字字要訣。總之，人在穴中，砂之頭腳俱見者，其力最重。第一逆朝好，速發地多逆水。次之橫過水停蓄。橫過水停蓄，得砂關即發。人言大地多順局，初運貧寒怎麼救人。若得一案，緊緊橫開亦好。砂與水分先後，砂遲發，水速行。每見青龍砂甚好，右邊惡水長飄零。水先管事矣。朝主兩山本無砂妙處，二房似不利矣。二來繼大二乃興。長絕則二承矣。溪澗江湖固是水，田源塘沼亦同情。堂平而低砂即應，稍有曲折水先輪。龍為根本水為用，兩者由來無輕重。尋龍立穴水為先，詳將要法把君傳。
+  applicable_to: []
+  caveats: []
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: RDY-R006
+  kind: doctrine
+  statement: 多处龙法强调单清过脉、地局端正、砂水全备；兼带煞气须详辨。
+  anchor:
+    file: sources/fulltext/fengshui/rudi-yan-quanshu/fulltext.md
+    start_line: 33
+    end_line: 166
+  quote: 入地眼全書天星卷一
+  applicable_to: []
+  caveats: []
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: RDY-R007
+  kind: doctrine
+  statement: 卷十专论阳宅门路灶与宫星生克，不能只看门或灶单项。
+  anchor:
+    file: sources/fulltext/fengshui/rudi-yan-quanshu/fulltext.md
+    start_line: 231
+    end_line: 255
+  quote: 入地眼全書陽宅卷十
+  applicable_to: []
+  caveats: []
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null

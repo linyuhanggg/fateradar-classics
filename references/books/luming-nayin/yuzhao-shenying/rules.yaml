@@ -1,0 +1,709 @@
+schema_version: fateradar-rules-v2
+book:
+  slug: yuzhao-shenying
+  system: luming-nayin
+  title: 玉照神应真经
+  script: traditional
+  fulltext: sources/fulltext/luming-nayin/yuzhao-shenying/fulltext.md
+  fulltext_sha256: c40acbd0eba328bc466a33f38b1d4649d05e7d030d8d2656f3ba0807df603fe3
+rules:
+- rule_id: YZ-01
+  kind: doctrine
+  statement: 卦逢生气天德合，仍要长生有所归；先看生我何为父，次看克我是何儿。
+  anchor: null
+  quote: 卦逢生气天德合，仍要长生有所归；先看生我何为父，次看克我是何儿。
+  applicable_to: []
+  caveats:
+  - 仅作命书结构理解
+  - 不构成对家庭关系的现代判定
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: YZ-02
+  kind: doctrine
+  statement: 论命须以年/胎/月/日/时五主互参，分别尊卑、干音并重。
+  anchor: null
+  quote: 论命须以年/胎/月/日/时五主互参，分别尊卑、干音并重。
+  applicable_to: []
+  caveats:
+  - 模型理解层次为主
+  - 不可单据其一断吉凶
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: YUZHAOSHENYI-YZ-02
+  kind: doctrine
+  statement: 干尅支为顺，主头面尊老；支尅干为逆，主身体四支与陰人小口。干尅在尊位为重，音尅在身位为切。
+  anchor: null
+  quote: 干尅支为顺，主头面尊老；支尅干为逆，主身体四支与陰人小口。干尅在尊位为重，音尅在身位为切。
+  applicable_to: []
+  caveats:
+  - 古法身体定位仅供文化研究
+  - 不作医学判断
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: YUZHAOSHENYI-004
+  kind: doctrine
+  statement: 时柱尅日柱，干尅轻、音尅重；干音俱尅则为重伤。
+  anchor: null
+  quote: 时柱尅日柱，干尅轻、音尅重；干音俱尅则为重伤。
+  applicable_to: []
+  caveats:
+  - 仅为传统命书条文呈现
+  - 不据此预言疾病或祸患
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: YUZHAOSHENYI-005
+  kind: doctrine
+  statement: 时尅日、日尅月、月尅年，两分交战者损尊、伤本、寿促。
+  anchor: null
+  quote: 时尅日、日尅月、月尅年，两分交战者损尊、伤本、寿促。
+  applicable_to: []
+  caveats:
+  - ⚠️ 涉及寿夭断语
+  - 仅作文化研究参考，不得铁口断寿断病
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: YUZHAOSHENYI-006
+  kind: doctrine
+  statement: 二三柱犯纳音月胎者，主祖宗祸患或祖业不继。
+  anchor: null
+  quote: 二三柱犯纳音月胎者，主祖宗祸患或祖业不继。
+  applicable_to: []
+  caveats:
+  - 历史宗族观念表述
+  - 不作现代家庭判断
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: YUZHAOSHENYI-007
+  kind: doctrine
+  statement: 干支俱合相养则贵；乖违则凶。
+  anchor: null
+  quote: 干支俱合相养则贵；乖违则凶。
+  applicable_to: []
+  caveats:
+  - 仅为命理传统判识
+  - 勿替代现实决策
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: YZ-03
+  kind: doctrine
+  statement: 功曹（寅）传送（申）+庚甲，主商旅、公吏。
+  anchor: null
+  quote: 功曹（寅）传送（申）+庚甲，主商旅、公吏。
+  applicable_to: []
+  caveats:
+  - ⚠️ 古代职业断语
+  - 仅作文化研究参考，不作现代职业归类
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: YUZHAOSHENYI-YZ-03
+  kind: doctrine
+  statement: 子午+庚甲组合主他乡外立。
+  anchor: null
+  quote: 子午+庚甲组合主他乡外立。
+  applicable_to: []
+  caveats:
+  - 古迁徙观念
+  - 不作居所/职业现代判断
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: YUZHAOSHENYI-010
+  kind: doctrine
+  statement: 六合(乙)+太陰(辛)+螣蛇(丁)+从魁(酉)等组合，主官事陰人之扰。
+  anchor: null
+  quote: 六合(乙)+太陰(辛)+螣蛇(丁)+从魁(酉)等组合，主官事陰人之扰。
+  applicable_to: []
+  caveats:
+  - 古代官讼断语
+  - 仅作文化研究，不作司法预测
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: YUZHAOSHENYI-011
+  kind: doctrine
+  statement: 丙、戊、丁、甲重见戌亥，原文归为道士僧人或门户出僧人。
+  anchor: null
+  quote: 丙、戊、丁、甲重见戌亥，原文归为道士僧人或门户出僧人。
+  applicable_to: []
+  caveats:
+  - ⚠️ 古代职业身份断语
+  - 仅作术数文本分类研究，不作现代职业、宗教身份预测
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: YUZHAOSHENYI-012
+  kind: doctrine
+  statement: 辰戌魁罡往来，原文按旺相休囚分作狱官、公吏、屠儿、争讼等。
+  anchor: null
+  quote: 辰戌魁罡往来，原文按旺相休囚分作狱官、公吏、屠儿、争讼等。
+  applicable_to: []
+  caveats:
+  - ⚠️ 涉及职业贬义和刑讼标签
+  - 只保留为古代社会分类语汇，不作现代品行/司法判断
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: YUZHAOSHENYI-013
+  kind: doctrine
+  statement: 癸玄武、乙六合、壬天后加卯酉私门，原文主男女私情。
+  anchor: null
+  quote: 癸玄武、乙六合、壬天后加卯酉私门，原文主男女私情。
+  applicable_to: []
+  caveats:
+  - ⚠️ 古代道德化情欲断语
+  - 现代输出必须 reframe 为“关系边界/隐私议题的文本象意”，不得指控真人
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: YUZHAOSHENYI-014
+  kind: doctrine
+  statement: 壬水多见子丑艮坎，原文归为道士、僧道、九流之人。
+  anchor: null
+  quote: 壬水多见子丑艮坎，原文归为道士、僧道、九流之人。
+  applicable_to: []
+  caveats:
+  - ⚠️ 古代职业等级断语
+  - 只作文化研究，不给现代职业分层
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: YUZHAOSHENYI-015
+  kind: doctrine
+  statement: 壬癸水多并见戌亥天空连阴，原文主门户生盗贼。
+  anchor: null
+  quote: 壬癸水多并见戌亥天空连阴，原文主门户生盗贼。
+  applicable_to: []
+  caveats:
+  - ⚠️ 违法犯罪标签必须屏蔽
+  - 只可描述为“古文将其归入隐匿/失范象”，不得对个人作盗贼判断
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: YUZHAOSHENYI-016
+  kind: doctrine
+  statement: 甲寅、乙卯全见，尤其落旬空，原文主门户出长发师姑。
+  anchor: null
+  quote: 甲寅、乙卯全见，尤其落旬空，原文主门户出长发师姑。
+  applicable_to: []
+  caveats:
+  - ⚠️ 宗教/性别身份标签仅作古代社会语汇，不作现代身份预测
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: YUZHAOSHENYI-017
+  kind: doctrine
+  statement: 庚辛申酉金旺多见，原文主军人、孤女、兵刃等象。
+  anchor: null
+  quote: 庚辛申酉金旺多见，原文主军人、孤女、兵刃等象。
+  applicable_to: []
+  caveats:
+  - ⚠️ 兵刃、孤女、伤亡类断语必须 reframe
+  - 只保留“金旺刚决/武职象”的文本层说明
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: YZ-04
+  kind: doctrine
+  statement: 智仁清、礼义浊、信从四时；五常对应水木清、火金浊、土因时。
+  anchor: null
+  quote: 智仁清、礼义浊、信从四时；五常对应水木清、火金浊、土因时。
+  applicable_to: []
+  caveats:
+  - 古代性情论
+  - 非现代心理学评估
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: YZ-05
+  kind: doctrine
+  statement: 干墓在辰戌丑未；有旺气者为库主储藏，无气者为墓主收藏不发。
+  anchor: null
+  quote: 干墓在辰戌丑未；有旺气者为库主储藏，无气者为墓主收藏不发。
+  applicable_to: []
+  caveats:
+  - 文化研究层
+  - 勿替代命运决策
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: YUZHAOSHENYI-YZ-05
+  kind: doctrine
+  statement: 干防尊老、音同身、尅防同类妻妾、下防陰人小口。
+  anchor: null
+  quote: 干防尊老、音同身、尅防同类妻妾、下防陰人小口。
+  applicable_to: []
+  caveats:
+  - 古代家族观念
+  - 不构成现代亲属判断
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: YUZHAOSHENYI-021
+  kind: doctrine
+  statement: 阳干月德合在干、陰干月德合在支；同柱为近合力强，旁柱为远合力弱。
+  anchor: null
+  quote: 阳干月德合在干、陰干月德合在支；同柱为近合力强，旁柱为远合力弱。
+  applicable_to: []
+  caveats:
+  - 仅为合力强弱判别
+  - 不作绝对吉凶
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: YUZHAOSHENYI-022
+  kind: doctrine
+  statement: 甲寅(纳音水)+辛丑(纳音土)，下尅上主官事刑咎。
+  anchor: null
+  quote: 甲寅(纳音水)+辛丑(纳音土)，下尅上主官事刑咎。
+  applicable_to: []
+  caveats:
+  - ⚠️ 涉及刑讼断语
+  - 仅作文化研究参考，不作司法/疾病预测
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: YUZHAOSHENYI-023
+  kind: doctrine
+  statement: 卯(三光户、陰贼)+子(神后)相刑，主无礼德。
+  anchor: null
+  quote: 卯(三光户、陰贼)+子(神后)相刑，主无礼德。
+  applicable_to: []
+  caveats:
+  - 古代道德论
+  - 不作现代品行评判
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: YUZHAOSHENYI-024
+  kind: doctrine
+  statement: 丑戌未三刑见者，主四肢病。
+  anchor: null
+  quote: 丑戌未三刑见者，主四肢病。
+  applicable_to: []
+  caveats:
+  - ⚠️ 涉及疾病断语
+  - 仅作文化研究参考，不得铁口断病，不替代医学诊断
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: YUZHAOSHENYI-025
+  kind: doctrine
+  statement: 卯(陰贼)+辰(天罡)相加，主狱刑或腰脚之患。
+  anchor: null
+  quote: 卯(陰贼)+辰(天罡)相加，主狱刑或腰脚之患。
+  applicable_to: []
+  caveats:
+  - ⚠️ 涉及刑讼/疾病断语
+  - 仅作文化研究参考，不作司法/医学判断
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: YUZHAOSHENYI-026
+  kind: doctrine
+  statement: 辰午酉亥自刑+下尅上重见，主自凶。
+  anchor: null
+  quote: 辰午酉亥自刑+下尅上重见，主自凶。
+  applicable_to: []
+  caveats:
+  - ⚠️ 涉及死亡断语
+  - 仅作文化研究参考，不得铁口断寿断病
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: YUZHAOSHENYI-027
+  kind: doctrine
+  statement: 戊寅、己卯休囚，原文主四肢风病或大疾。
+  anchor: null
+  quote: 戊寅、己卯休囚，原文主四肢风病或大疾。
+  applicable_to: []
+  caveats:
+  - ⚠️ 疾病断语仅作医史化文本研究，不作医学判断
+  - 现实健康问题必须转现代医学
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: YUZHAOSHENYI-028
+  kind: doctrine
+  statement: 丙丁火至亥子水位，原文主投江河、水灾等。
+  anchor: null
+  quote: 丙丁火至亥子水位，原文主投江河、水灾等。
+  applicable_to:
+  - {key: rizhu, value: 丙}
+  caveats:
+  - ⚠️ 死亡/水灾硬断全屏蔽
+  - 只保留“火临水位失势”的象意
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: YUZHAOSHENYI-029
+  kind: doctrine
+  statement: 己午火与庚辛金上下相见，原文主男女心血之灾。
+  anchor: null
+  quote: 己午火与庚辛金上下相见，原文主男女心血之灾。
+  applicable_to: []
+  caveats:
+  - ⚠️ 疾病硬断屏蔽
+  - 只作火金相战的文本象意
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: YUZHAOSHENYI-030
+  kind: doctrine
+  statement: 甲申、乙酉木上金下，原文主小儿肝风之灾。
+  anchor: null
+  quote: 甲申、乙酉木上金下，原文主小儿肝风之灾。
+  applicable_to: []
+  caveats:
+  - ⚠️ 涉及儿童健康，必须完全转现代医学
+  - 不可作预测或诊断
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: YUZHAOSHENYI-031
+  kind: doctrine
+  statement: 庚寅、辛卯金上木下，原文主大人劳骨、血气之病。
+  anchor: null
+  quote: 庚寅、辛卯金上木下，原文主大人劳骨、血气之病。
+  applicable_to: []
+  caveats:
+  - ⚠️ 疾病断语屏蔽
+  - 只保留金木相伤的象意
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: YUZHAOSHENYI-032
+  kind: doctrine
+  statement: 卯酉门户上下全土，原文主腰脚沉滞。
+  anchor: null
+  quote: 卯酉门户上下全土，原文主腰脚沉滞。
+  applicable_to: []
+  caveats:
+  - ⚠️ 身体部位断语不作医学诊断
+  - 只作为古文身体象位记录
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: YUZHAOSHENYI-033
+  kind: doctrine
+  statement: 甲乙木居前而见庚辛金尅，原文主头面之伤。
+  anchor: null
+  quote: 甲乙木居前而见庚辛金尅，原文主头面之伤。
+  applicable_to: []
+  caveats:
+  - ⚠️ 伤病硬断屏蔽
+  - 不可预测外伤
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: YUZHAOSHENYI-034
+  kind: doctrine
+  statement: 水土同至寅卯，原文主隔气风痰。
+  anchor: null
+  quote: 水土同至寅卯，原文主隔气风痰。
+  applicable_to: []
+  caveats:
+  - ⚠️ 疾病术语仅作古代医命语汇，不作医学结论
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: YZ-06
+  kind: doctrine
+  statement: 月德合见于四正(子午卯酉)，主十分作福。
+  anchor: null
+  quote: 月德合见于四正(子午卯酉)，主十分作福。
+  applicable_to: []
+  caveats:
+  - 福报判断为传统话语
+  - 不构成现代决策
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: YUZHAOSHENYI-YZ-06
+  kind: doctrine
+  statement: 阳干月德主贵人扶助、陰干主陰人用力。
+  anchor: null
+  quote: 阳干月德主贵人扶助、陰干主陰人用力。
+  applicable_to: []
+  caveats:
+  - 古代社交观念
+  - 不作具体人际判断
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: YUZHAOSHENYI-037
+  kind: doctrine
+  statement: 25岁前以月柱合十二宫、25-50以日柱、50后以时柱。
+  anchor: null
+  quote: 25岁前以月柱合十二宫、25-50以日柱、50后以时柱。
+  applicable_to: []
+  caveats:
+  - 时段划分供命理参考
+  - 不替代人生规划
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: YUZHAOSHENYI-038
+  kind: doctrine
+  statement: 干鬼制者为官；纳音生鬼者亦为官贵。
+  anchor: null
+  quote: 干鬼制者为官；纳音生鬼者亦为官贵。
+  applicable_to: []
+  caveats:
+  - 古代官位话语
+  - 不作现代职业预测
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: YUZHAOSHENYI-039
+  kind: doctrine
+  statement: 生干则尊人喜；生纳音则中下人吉。
+  anchor: null
+  quote: 生干则尊人喜；生纳音则中下人吉。
+  applicable_to: []
+  caveats:
+  - 古代等级话语
+  - 仅作传统命书理解
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: YUZHAOSHENYI-040
+  kind: doctrine
+  statement: 五行三合局齐者(木亥卯未/火寅午戌/金巳酉丑/水申子辰)俱旺主富贵。
+  anchor: null
+  quote: 五行三合局齐者(木亥卯未/火寅午戌/金巳酉丑/水申子辰)俱旺主富贵。
+  applicable_to: []
+  caveats:
+  - 富贵判断为传统话语
+  - 不作现代财运预测
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: YUZHAOSHENYI-041
+  kind: doctrine
+  statement: 胎朝月、月朝日、日朝时之朝拱关系，主倍禄。
+  anchor: null
+  quote: 胎朝月、月朝日、日朝时之朝拱关系，主倍禄。
+  applicable_to: []
+  caveats:
+  - 禄命传统语
+  - 不作具体事业判断
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: YUZHAOSHENYI-042
+  kind: doctrine
+  statement: 旬中六甲(甲子甲戌甲申甲午甲辰甲寅)全见，主尊荣。
+  anchor: null
+  quote: 旬中六甲(甲子甲戌甲申甲午甲辰甲寅)全见，主尊荣。
+  applicable_to: []
+  caveats:
+  - 极罕见格局
+  - 仅作文化记录
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: YZ-07
+  kind: doctrine
+  statement: 兄弟干同辈，相生顺则和睦、相尅逆则交争。
+  anchor: null
+  quote: 兄弟干同辈，相生顺则和睦、相尅逆则交争。
+  applicable_to: []
+  caveats:
+  - 古代宗法话语
+  - 不作现代亲属关系判断
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: YUZHAOSHENYI-YZ-07
+  kind: doctrine
+  statement: 父子夫妻儿女按尅合远近判亲疏内外。
+  anchor: null
+  quote: 父子夫妻儿女按尅合远近判亲疏内外。
+  applicable_to: []
+  caveats:
+  - 古代亲属观念
+  - 不作现代家庭关系判断
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: YUZHAOSHENYI-045
+  kind: doctrine
+  statement: 以胎元、月柱干支推父母年命；干同主父寿、音同主母寿。
+  anchor: null
+  quote: 以胎元、月柱干支推父母年命；干同主父寿、音同主母寿。
+  applicable_to: []
+  caveats:
+  - ⚠️ 寿夭断语
+  - 仅作文化研究参考，不得铁口断寿
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: YUZHAOSHENYI-046
+  kind: doctrine
+  statement: 日柱大小定妻年龄、时柱变法定子嗣有无。
+  anchor: null
+  quote: 日柱大小定妻年龄、时柱变法定子嗣有无。
+  applicable_to: []
+  caveats:
+  - ⚠️ 涉及婚配/子嗣断语
+  - 仅作文化研究参考，不作现代家庭规划
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: YUZHAOSHENYI-047
+  kind: doctrine
+  statement: 命局夫旺则妻强，妻旺则夫强，按旺相之气。
+  anchor: null
+  quote: 命局夫旺则妻强，妻旺则夫强，按旺相之气。
+  applicable_to: []
+  caveats:
+  - ⚠️ 涉及婚配论
+  - 仅作文化研究参考，不作伴侣关系判断
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: YUZHAOSHENYI-048
+  kind: doctrine
+  statement: 命局四重干合者，主妻或夫再立、子郎重生。
+  anchor: null
+  quote: 命局四重干合者，主妻或夫再立、子郎重生。
+  applicable_to: []
+  caveats:
+  - ⚠️ 涉及婚配重组断语
+  - 仅作文化研究参考，不构成婚姻预测
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: YZ-08
+  kind: doctrine
+  statement: 木见旺金主强、火入离中主旺、金向旺中须损折、土积山岗多不动、水盛防走失。
+  anchor: null
+  quote: 木见旺金主强、火入离中主旺、金向旺中须损折、土积山岗多不动、水盛防走失。
+  applicable_to: []
+  caveats:
+  - 传统五行平衡论
+  - 非具体凶吉断语
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: YUZHAOSHENYI-YZ-08
+  kind: doctrine
+  statement: 干上至下为退、下至上为进；五行升降以衰兴。
+  anchor: null
+  quote: 干上至下为退、下至上为进；五行升降以衰兴。
+  applicable_to: []
+  caveats:
+  - 命书理解层
+  - 勿据此作生涯决策
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: YUZHAOSHENYI-051
+  kind: doctrine
+  statement: 四孟(寅申巳亥)有力之乡见者主发。
+  anchor: null
+  quote: 四孟(寅申巳亥)有力之乡见者主发。
+  applicable_to: []
+  caveats:
+  - 古代发应话语
+  - 不作现代成就预测
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: YUZHAOSHENYI-052
+  kind: doctrine
+  statement: 甲己真土/乙庚真金/丙辛真水/丁壬真木/戊癸真火，所合所化为正道。
+  anchor: null
+  quote: 甲己真土/乙庚真金/丙辛真水/丁壬真木/戊癸真火，所合所化为正道。
+  applicable_to: []
+  caveats:
+  - 真五行与纳音五行需区分
+  - 勿混用
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: YUZHAOSHENYI-053
+  kind: doctrine
+  statement: 自家四柱干支自合为内合，旁柱合本柱为外合。
+  anchor: null
+  quote: 自家四柱干支自合为内合，旁柱合本柱为外合。
+  applicable_to: []
+  caveats:
+  - 内外合力判别为命书细则
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: YUZHAOSHENYI-054
+  kind: doctrine
+  statement: 年生月、月生日、日生时之上生下，主身贫贱；返此为进发。
+  anchor: null
+  quote: 年生月、月生日、日生时之上生下，主身贫贱；返此为进发。
+  applicable_to: []
+  caveats:
+  - 古代贵贱话语
+  - 不作现代经济地位判断
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null

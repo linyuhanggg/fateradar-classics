@@ -1,0 +1,219 @@
+schema_version: fateradar-rules-v2
+book:
+  slug: dutian-baozhao-jing
+  system: fengshui
+  title: 都天宝照经
+  script: traditional
+  fulltext: sources/fulltext/fengshui/dutian-baozhao-jing/fulltext.md
+  fulltext_sha256: bfab28c5959e4dc18d4fc7c3e541be6bd518cd603a7d3b92ea23b6da8e02419e
+rules:
+- rule_id: DTR-01
+  kind: doctrine
+  statement: 上篇先以龙穴、水口、砂水、平洋来龙作为总纲；砂曲星辰正、水口锁门、穴见阳神等共同构成兴隆语境。
+  anchor:
+    file: sources/fulltext/fengshui/dutian-baozhao-jing/fulltext.md
+    start_line: 12
+    end_line: 34
+  quote: 楊公妙應不多言.實實作家傳.人生禍福由天定.賢達能安命.
+  applicable_to: []
+  caveats:
+  - “发福”“豪雄”“官僚”等为古代断语，不作现代因果陈述
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: DTR-02
+  kind: doctrine
+  statement: 对军州、平洋地形，文中强调“天下军州总住空”，不可机械要求后头龙，而要向水神朝处取。
+  anchor:
+    file: sources/fulltext/fengshui/dutian-baozhao-jing/fulltext.md
+    start_line: 34
+    end_line: 36
+  quote: 此是軍州大地形.細說與君聽.天下軍州總住空.何曾撐著後頭龍.
+  applicable_to: []
+  caveats:
+  - 此为文献规则，实地判断必须有地形与水系数据
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: DTR-03
+  kind: doctrine
+  statement: 大山五星聚脉难分时，须从分水脉脊处辨脉，并以罗经确定出路。
+  anchor:
+    file: sources/fulltext/fengshui/dutian-baozhao-jing/fulltext.md
+    start_line: 40
+    end_line: 42
+  quote: 大山喚作破軍體.五星所聚脈難分.但看出身一路脈.到頭要分水土金.
+  applicable_to: []
+  caveats:
+  - 罗经读数必须由 `tool.fengshui.luopan` 或人工测量给出，LLM 不手算
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: DTR-04
+  kind: doctrine
+  statement: 子癸午丁、卯乙酉辛，辰戌丑未、乾坤艮巽，甲庚壬丙、寅申巳亥等分组用于辨天元、地元、人元；文本反复警告阳差阴错。
+  anchor:
+    file: sources/fulltext/fengshui/dutian-baozhao-jing/fulltext.md
+    start_line: 44
+    end_line: 52
+  quote: 子字出脈子字尋.莫教差錯丑與壬.莫是陽差與陰錯.勸君不必費心尋.
+  applicable_to: []
+  caveats:
+  - 各派三元分组解释不完全一致，master skill 应以所选流派裁判
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: DTR-05
+  kind: doctrine
+  statement: 文中提出立宅安坟要合龙，不须拟对好奇峰，并以主客东西关系比喻山水宾主。
+  anchor:
+    file: sources/fulltext/fengshui/dutian-baozhao-jing/fulltext.md
+    start_line: 54
+    end_line: 56
+  quote: 貪狼原來發來遲.坐向穴中人未知.立宅安墳過兩紀.方生貴子好男兒.
+  applicable_to: []
+  caveats:
+  - 仅作文献原则，不作现实选址建议
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: DTR-06
+  kind: doctrine
+  statement: 中篇把军州空龙与平洋墓宅相通，认为龙若空时气不空，穴得水则不畏风。
+  anchor:
+    file: sources/fulltext/fengshui/dutian-baozhao-jing/fulltext.md
+    start_line: 60
+    end_line: 68
+  quote: 天下軍州總住空.何須撐著後來龍.時人不識玄機訣.只道後頭少撐龍.
+  applicable_to: []
+  caveats:
+  - “空龙”需结合地形、水界、城市格局判断，不能仅凭文字套用
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: DTR-07
+  kind: doctrine
+  statement: 文中警示“莫依八卦阴阳取”，并批评把八卦作先宗、妄将卦例更阴阳。
+  anchor:
+    file: sources/fulltext/fengshui/dutian-baozhao-jing/fulltext.md
+    start_line: 70
+    end_line: 82
+  quote: 莫依八卦陰陽取.陰陽差錯敗無窮.百二十家渺無訣.此訣玄機大祖宗.
+  applicable_to: []
+  caveats:
+  - 这是《地理辨正》系理气批判语境，不可用来否定所有八卦法
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: DTR-08
+  kind: doctrine
+  statement: 文中称五星一诀非真术，城门一诀最为良；识得五星城门诀，则立宅安坟大吉昌。
+  anchor:
+    file: sources/fulltext/fengshui/dutian-baozhao-jing/fulltext.md
+    start_line: 110
+    end_line: 112
+  quote: 未審何山消此水.合得天心造化工.五星一訣非真術.城門一訣最為良.
+  applicable_to: []
+  caveats:
+  - 城门操作必须工具化，不能由 LLM 推断方位
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: DTR-09
+  kind: doctrine
+  statement: 都天大卦总阴阳，但须能知山情与水意，配合方可论阴阳。
+  anchor:
+    file: sources/fulltext/fengshui/dutian-baozhao-jing/fulltext.md
+    start_line: 122
+    end_line: 124
+  quote: 陽若無陰定不成.陰若無陽定不生.陽水陰山相配合.兒孫天府早登名.
+  applicable_to: []
+  caveats:
+  - 只保留为“山水合参”原则，不输出现实吉凶
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: DTR-10
+  kind: doctrine
+  statement: 下篇强调安坟最要看中阳，明堂宽抱、乙字水缠、九曲来朝等作为水形吉象。
+  anchor:
+    file: sources/fulltext/fengshui/dutian-baozhao-jing/fulltext.md
+    start_line: 136
+    end_line: 144
+  quote: 尋得真龍龍虎飛．水城屈曲抱身歸．前朝旗鼓馬相應．下後離鄉著紫衣．
+  applicable_to: []
+  caveats:
+  - “吉形”仅作传统术语解释，实地需地图/测绘/人工勘验
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: DTR-11
+  kind: doctrine
+  statement: 下篇列举直水、插胁水、四杀、八杀、拖刀杀、反水、射腰等凶水名目。
+  anchor:
+    file: sources/fulltext/fengshui/dutian-baozhao-jing/fulltext.md
+    start_line: 146
+    end_line: 160
+  quote: 水直朝來最不祥．一條直是一條鎗．兩條名為插脅水．三條雲是三刑傷．
+  applicable_to: []
+  caveats:
+  - 这些包含伤亡绝嗣等强断语，skill 输出时必须转为“古文风险词”，禁止现代决定论
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: DTR-12
+  kind: doctrine
+  statement: 文中明确玄武摆头有斜、侧、正出多种，不可执一端，须凭直节对堂安。
+  anchor:
+    file: sources/fulltext/fengshui/dutian-baozhao-jing/fulltext.md
+    start_line: 166
+    end_line: 168
+  quote: 玄武擺頭有多般．未可慳然執一端．或斜或側或正出．須憑直節對堂安．
+  applicable_to: []
+  caveats:
+  - 属形势判断，需地形数据或人工照片，不由 LLM 想象
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: DTR-13
+  kind: doctrine
+  statement: 贪武辅弼巨门为可寻之吉龙，破禄廉文为凶恶龙，二者不可混同。
+  anchor:
+    file: sources/fulltext/fengshui/dutian-baozhao-jing/fulltext.md
+    start_line: 172
+    end_line: 174
+  quote: 貪武輔弼巨門龍．方可登山細認蹤．水去山朝皆有地．不離五吉在其中．
+  applicable_to: []
+  caveats:
+  - 九星名目需与《撼龙经》《疑龙经》《天玉经外编》互证
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: DTR-14
+  kind: doctrine
+  statement: 寻龙过气要分父母宗枝，孟山连孟山、仲山接仲山；三节不乱则可称真龙。
+  anchor:
+    file: sources/fulltext/fengshui/dutian-baozhao-jing/fulltext.md
+    start_line: 184
+    end_line: 206
+  quote: 尋龍過氣尋三節．父母宗枝要分別．孟山須要孟山連．仲山須要仲山接．
+  applicable_to: []
+  caveats:
+  - 这是龙脉结构规则，不可在无地形资料时断定
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null

@@ -1,0 +1,133 @@
+schema_version: fateradar-rules-v2
+book:
+  slug: huozhu-lin
+  system: divination
+  title: 火珠林
+  script: simplified
+  fulltext: sources/fulltext/divination/huozhu-lin/fulltext.md
+  fulltext_sha256: 6239f9ef22be7deb5771b513dacfc9cc1e8eea8cc5e54164f971cd7de86e5293
+rules:
+- rule_id: HZL
+  kind: doctrine
+  statement: 六爻审卦先核世应位置，再进入后续深浅判断。
+  anchor: null
+  quote: 六爻审卦先核世应位置，再进入后续深浅判断。
+  applicable_to: []
+  caveats:
+  - 仅作读盘顺序，不授权吉凶结论
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: HZL-R001
+  kind: doctrine
+  statement: 公用取官鬼，私用取妻财；官用以父母辅，财用以子孙辅。
+  anchor:
+    file: sources/fulltext/divination/huozhu-lin/fulltext.md
+    start_line: 91
+    end_line: 104
+  quote: 阴阳男女，次策推排；
+  applicable_to: []
+  caveats: []
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: HZL-R002
+  kind: doctrine
+  statement: 财官旺相、有辅体发动或生世为可用；休囚、克破、无辅则力薄。
+  anchor:
+    file: sources/fulltext/divination/huozhu-lin/fulltext.md
+    start_line: 40
+    end_line: 51
+  quote: 财官异路，可辨五乡；
+  applicable_to: []
+  caveats: []
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: HZL-R003
+  kind: doctrine
+  statement: 乱动时先看世上旁爻、世下亲爻，再以最旺或发动生世之爻为用。
+  anchor:
+    file: sources/fulltext/divination/huozhu-lin/fulltext.md
+    start_line: 52
+    end_line: 77
+  quote: 独发易取，乱动难寻；
+  applicable_to: []
+  caveats: []
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: HZL-R004
+  kind: doctrine
+  statement: 财官持世虽可许，但应爻或动爻克所用辅爻则事难成。
+  anchor:
+    file: sources/fulltext/divination/huozhu-lin/fulltext.md
+    start_line: 78
+    end_line: 90
+  quote: 旁爻持世，旺相得地；
+  applicable_to: []
+  caveats: []
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: HZL-R005
+  kind: doctrine
+  statement: 财官出现旺相宜久远；伏藏有气虽可取，多利短时或暂成。
+  anchor:
+    file: sources/fulltext/divination/huozhu-lin/fulltext.md
+    start_line: 105
+    end_line: 118
+  quote: 出现旺相，为久为远；
+  applicable_to: []
+  caveats: []
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: HZL-R006
+  kind: doctrine
+  statement: 家宅占专看财、子孙与内三爻宅象，再合青龙、龙德、刑冲克制。
+  anchor:
+    file: sources/fulltext/divination/huozhu-lin/fulltext.md
+    start_line: 724
+    end_line: 736
+  quote: 家宅吉占，专用财福；
+  applicable_to: []
+  caveats: []
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: HZL-R007
+  kind: doctrine
+  statement: 起造迁移喜子孙、财爻旺相持世；忌官鬼、父母、妻、子、兄弟独发扰宅。
+  anchor:
+    file: sources/fulltext/divination/huozhu-lin/fulltext.md
+    start_line: 748
+    end_line: 760
+  quote: 起造迁移，财静人安；
+  applicable_to: []
+  caveats: []
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: HZL-R008
+  kind: doctrine
+  statement: 内卦二爻为宅，外卦六爻看动；宅下伏鬼、父空、财动等均有特定宅象。
+  anchor:
+    file: sources/fulltext/divination/huozhu-lin/fulltext.md
+    start_line: 761
+    end_line: 770
+  quote: 鬼墓方为圣堂，子墓方为牲畜，财墓方为仓库，绝为厕，兄墓得直方水生旺处为井，应为屋，鬼为厅，福为廊，财为房屋橱柜，兄为门。身持兄得，五事俱全，不可空，无刑冲克，上等屋也。内有一爻被冲克，主有损坏，得空为妙。
+  applicable_to: []
+  caveats: []
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null

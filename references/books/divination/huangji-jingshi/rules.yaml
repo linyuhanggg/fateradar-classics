@@ -1,0 +1,268 @@
+schema_version: fateradar-rules-v2
+book:
+  slug: huangji-jingshi
+  system: divination
+  title: 皇极经世书
+  script: traditional
+  fulltext: sources/fulltext/divination/huangji-jingshi/fulltext.md
+  fulltext_sha256: bdc5c42a08d2b9591f1b4ccd457f709c9e9c6e8376e02fa6499478a7686683bc
+rules:
+- rule_id: HR-01
+  kind: doctrine
+  statement: 一元 = 12 会 = 360 运 = 4320 世 = 129600 年；为天地一开辟之大周期。
+  anchor: null
+  quote: 一元 = 12 会 = 360 运 = 4320 世 = 129600 年；为天地一开辟之大周期。
+  applicable_to: []
+  caveats:
+  - 本数为术数史观符号，不等于现代地质 / 天文学时间尺度
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: HUANGJIJINGS-HR-01
+  kind: doctrine
+  statement: 邵雍以"子会"开物（万物始）、"丑会"立地、"寅会"生人；亥会闭物（万物归）。
+  anchor: null
+  quote: 邵雍以"子会"开物（万物始）、"丑会"立地、"寅会"生人；亥会闭物（万物归）。
+  applicable_to: []
+  caveats:
+  - 属术数史观，非自然演化论
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: HUANGJIJINGS-003
+  kind: doctrine
+  statement: 以元经会主天之运（卷一至二）、以会经运主地之化（卷三至四）、以运经世主人物之事（卷五至六）；以世经世落具体年甲子（卷七至十）。
+  anchor: null
+  quote: 以元经会主天之运（卷一至二）、以会经运主地之化（卷三至四）、以运经世主人物之事（卷五至六）；以世经世落具体年甲子（卷七至十）。
+  applicable_to: []
+  caveats:
+  - —
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: HUANGJIJINGS-004
+  kind: doctrine
+  statement: 一元 12 会以 12 地支配；子开寅生午盛申退戌闭亥归；现今天地正处于"午会"中后期。
+  anchor: null
+  quote: 一元 12 会以 12 地支配；子开寅生午盛申退戌闭亥归；现今天地正处于"午会"中后期。
+  applicable_to: []
+  caveats:
+  - 邵雍立场视点为北宋，"午会"判断含历史时代背景
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: HR-02
+  kind: doctrine
+  statement: 以六十四卦配岁；卦气消息按月配中孚 / 复 / 临 / 泰……剥 / 坤；亦按经世配元会运世。
+  anchor: null
+  quote: 以六十四卦配岁；卦气消息按月配中孚 / 复 / 临 / 泰……剥 / 坤；亦按经世配元会运世。
+  applicable_to: []
+  caveats:
+  - 与汉孟喜卦气、京房八宫卦气取义不同
+  - 查具体年用 `tool.divination.huangji`
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: HUANGJIJINGS-HR-02
+  kind: doctrine
+  statement: 经世卦序以乾坤为始、咸恒为人事之序；与《周易》上下经卦序有结构相通。
+  anchor: null
+  quote: 经世卦序以乾坤为始、咸恒为人事之序；与《周易》上下经卦序有结构相通。
+  applicable_to: []
+  caveats:
+  - —
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: HUANGJIJINGS-007
+  kind: doctrine
+  statement: 本书不涉个人卜筮取用神；元会运世为时间数理框架，非占断系统。
+  anchor: null
+  quote: 本书不涉个人卜筮取用神；元会运世为时间数理框架，非占断系统。
+  applicable_to: []
+  caveats:
+  - 用户问占断 → 转 `meihua-yishu` 或 `zengshan-buyi`
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: HR-04
+  kind: doctrine
+  statement: 八卦先天数：乾 1、兑 2、离 3、震 4、巽 5、坎 6、艮 7、坤 8。
+  anchor: null
+  quote: 八卦先天数：乾 1、兑 2、离 3、震 4、巽 5、坎 6、艮 7、坤 8。
+  applicable_to: []
+  caveats:
+  - 起具体卦应由 `tool.divination.qiguagua`（梅花体系）处理
+  - 本书仅提供数理来源
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: HUANGJIJINGS-HR-04
+  kind: doctrine
+  statement: 每加一爻卦数倍增；太极生两仪→四象→八卦→十六→三十二→六十四。
+  anchor: null
+  quote: 每加一爻卦数倍增；太极生两仪→四象→八卦→十六→三十二→六十四。
+  applicable_to: []
+  caveats:
+  - —
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: HUANGJIJINGS-010
+  kind: doctrine
+  statement: 先天八卦方位（伏羲）— 乾南坤北、离东坎西；后天八卦方位（文王）— 离南坎北、震东兑西。
+  anchor: null
+  quote: 先天八卦方位（伏羲）— 乾南坤北、离东坎西；后天八卦方位（文王）— 离南坎北、震东兑西。
+  applicable_to: []
+  caveats:
+  - 梅花易数兼用先后天，本书仅辨先天
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: HUANGJIJINGS-011
+  kind: doctrine
+  statement: 六十四卦两两为偶（反对）；非反即对；卦序之理本于此。
+  anchor: null
+  quote: 六十四卦两两为偶（反对）；非反即对；卦序之理本于此。
+  applicable_to: []
+  caveats:
+  - —
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: HR-05
+  kind: doctrine
+  statement: 以物观物则得理通，以我观物则有情累；圣人之观物在反观。
+  anchor: null
+  quote: 以物观物则得理通，以我观物则有情累；圣人之观物在反观。
+  applicable_to: []
+  caveats:
+  - 属哲学义理，非具体占断规则
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: HUANGJIJINGS-HR-05
+  kind: doctrine
+  statement: 天地之心可知，万化从心起；心为太极，万象皆心之发。
+  anchor: null
+  quote: 天地之心可知，万化从心起；心为太极，万象皆心之发。
+  applicable_to: []
+  caveats:
+  - —
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: HUANGJIJINGS-014
+  kind: doctrine
+  statement: 乾坤为体、坎离为用；体不立则用不行，用不行则体不显。
+  anchor: null
+  quote: 乾坤为体、坎离为用；体不立则用不行，用不行则体不显。
+  applicable_to: []
+  caveats:
+  - 与梅花易数"体用生克"占法不同
+  - 梅花是占断方法
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: HR-06
+  kind: doctrine
+  statement: 天声 10 类配地音 12 类、平上去入 4 调 × 开发收闭 4 等；声音之数皆受元会运世数管摄。
+  anchor: null
+  quote: 天声 10 类配地音 12 类、平上去入 4 调 × 开发收闭 4 等；声音之数皆受元会运世数管摄。
+  applicable_to: []
+  caveats:
+  - 与现代音韵学需对照
+  - 具体音类查 `tool.divination.huangji`
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: HUANGJIJINGS-HR-06
+  kind: doctrine
+  statement: 天声唱、地音和；唱和成则音律备。
+  anchor: null
+  quote: 天声唱、地音和；唱和成则音律备。
+  applicable_to: []
+  caveats:
+  - —
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: HR-07
+  kind: doctrine
+  statement: 万物分动 / 植 / 飞 / 走；总数受元会运世数管摄；动植之数 12 万 8 千有奇。
+  anchor: null
+  quote: 万物分动 / 植 / 飞 / 走；总数受元会运世数管摄；动植之数 12 万 8 千有奇。
+  applicable_to: []
+  caveats:
+  - 术数符号意义，非生物学分类
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: HR-09
+  kind: doctrine
+  statement: 元会运世年甲子表 / 卦气配年表 / 声音律吕表，凡查询事实层运算，必须 `tool.divination.huangji`，**严禁 LLM 手算**。
+  anchor: null
+  quote: 元会运世年甲子表 / 卦气配年表 / 声音律吕表，凡查询事实层运算，必须 `tool.divination.huangji`，**严禁 LLM 手算**。
+  applicable_to: []
+  caveats:
+  - 手算极易出错
+  - 表项数百万级
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: HUANGJIJINGS-HR-09
+  kind: doctrine
+  statement: 邵雍以唐尧元年甲辰（公元前 2357 年）为经世表元始首甲；后续年甲子均依此推。
+  anchor: null
+  quote: 邵雍以唐尧元年甲辰（公元前 2357 年）为经世表元始首甲；后续年甲子均依此推。
+  applicable_to: []
+  caveats:
+  - 与《竹书纪年》《史记·三代世表》等他源元始有出入
+  - 以本书表为准
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: HUANGJIJINGS-020
+  kind: doctrine
+  statement: 本书数理框架虽含史观，但邵雍未明言"国运"预测；后世以此预言朝代兴衰多属附会。
+  anchor: null
+  quote: 本书数理框架虽含史观，但邵雍未明言"国运"预测；后世以此预言朝代兴衰多属附会。
+  applicable_to: []
+  caveats:
+  - 避免据本书推断现代国运 / 政治
+  - 纯文化参考
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: HUANGJIJINGS-021
+  kind: doctrine
+  statement: 本书是宇宙史观数理，非个人命术；不可用本书直接推个人吉凶。
+  anchor: null
+  quote: 本书是宇宙史观数理，非个人命术；不可用本书直接推个人吉凶。
+  applicable_to: []
+  caveats:
+  - 个人命术应转 `bazi/*` 或 `divination/{meihua-yishu, zengshan-buyi}`
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null

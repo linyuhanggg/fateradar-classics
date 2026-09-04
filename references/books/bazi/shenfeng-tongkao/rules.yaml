@@ -1,0 +1,64 @@
+schema_version: fateradar-rules-v2
+book:
+  slug: shenfeng-tongkao
+  system: bazi
+  title: 神峰通考
+  script: simplified
+  fulltext: sources/fulltext/bazi/shenfeng-tongkao/fulltext.md
+  fulltext_sha256: d1e3de0f9658ed6482a58ed51583f6cbbdfdecfd14b32d22dee09a8bcbbaa574
+rules:
+- rule_id: SF
+  kind: doctrine
+  statement: R01 先辨张楠批判对象
+  anchor: null
+  quote: R01 先辨张楠批判对象
+  applicable_to: []
+  caveats: []
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: SHENFENGTONG-SF
+  kind: doctrine
+  statement: R02 病药法是核心路由
+  anchor: null
+  quote: R02 病药法是核心路由
+  applicable_to: []
+  caveats: []
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: SHENFENGTONG-003
+  kind: doctrine
+  statement: R03 动静与盖头用于透藏和作用层级
+  anchor: null
+  quote: R03 动静与盖头用于透藏和作用层级
+  applicable_to: []
+  caveats: []
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: SHENFENGTONG-004
+  kind: doctrine
+  statement: R04 格局断语要与强弱任受同看
+  anchor: null
+  quote: R04 格局断语要与强弱任受同看
+  applicable_to: []
+  caveats: []
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: SHENFENGTONG-005
+  kind: doctrine
+  statement: R05 高风险断语必须安全改写
+  anchor: null
+  quote: R05 高风险断语必须安全改写
+  applicable_to: []
+  caveats: []
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null

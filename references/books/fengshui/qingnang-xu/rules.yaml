@@ -1,0 +1,146 @@
+schema_version: fateradar-rules-v2
+book:
+  slug: qingnang-xu
+  system: fengshui
+  title: 青囊序
+  script: traditional
+  fulltext: sources/fulltext/fengshui/qingnang-xu/fulltext.md
+  fulltext_sha256: c3865ecf1be5c5037d98699c0d4af47695c581f3591024edb4cdaa0fd873763c
+rules:
+- rule_id: QINGNANGXU-R-01
+  kind: doctrine
+  statement: 杨公养老法以"看雌雄"为总；先看金龙动不动、次察血脉认来龙；龙分两片阴阳取，水对三叉细认宗。
+  anchor: null
+  quote: 杨公养老法以"看雌雄"为总；先看金龙动不动、次察血脉认来龙；龙分两片阴阳取，水对三叉细认宗。
+  applicable_to: []
+  caveats:
+  - 现代使用边界：仅作文化研究参考
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: QINGNANGXU-R-02
+  kind: doctrine
+  statement: 山以山为对、水以水为对；山管山兮水管水，此是阴阳不待言；不可混淆。
+  anchor: null
+  quote: 山以山为对、水以水为对；山管山兮水管水，此是阴阳不待言；不可混淆。
+  applicable_to: []
+  caveats:
+  - 现代使用边界：仅作文化研究参考
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: QINGNANGXU-R-03
+  kind: doctrine
+  statement: 先天罗经十二支、后天再用八干四维辅正位，共二十四山；二十四山分顺逆，共成四十八局；五行从此中分，祖宗从阴阳出。
+  anchor: null
+  quote: 先天罗经十二支、后天再用八干四维辅正位，共二十四山；二十四山分顺逆，共成四十八局；五行从此中分，祖宗从阴阳出。
+  applicable_to: []
+  caveats:
+  - 现代使用边界：具体局位推演必须使用 tool.fengshui.luopan，严禁手算
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: QINGNANGXU-R-04
+  kind: doctrine
+  statement: 用净阴净阳法时，前后八尺不宜杂；斜正受来阴阳取，气乘生旺方无煞。
+  anchor: null
+  quote: 用净阴净阳法时，前后八尺不宜杂；斜正受来阴阳取，气乘生旺方无煞。
+  applicable_to: []
+  caveats:
+  - 现代使用边界：仅作文化研究参考
+  - 具体精度由 tool.fengshui.luopan 判定，不可手算
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: QINGNANGXU-R-05
+  kind: doctrine
+  statement: 山上龙神不下水、水里龙神不上山；用此量山步水，百里江山一饷间。
+  anchor: null
+  quote: 山上龙神不下水、水里龙神不上山；用此量山步水，百里江山一饷间。
+  applicable_to: []
+  caveats:
+  - 现代使用边界：仅作文化研究参考
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: QINGNANGXU-R-06
+  kind: doctrine
+  statement: 水交三八要相遇，水发城门须要会；明堂朝水须截定生旺，莫教直泻。
+  anchor: null
+  quote: 水交三八要相遇，水发城门须要会；明堂朝水须截定生旺，莫教直泻。
+  applicable_to: []
+  caveats:
+  - 现代使用边界：仅作文化研究参考
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: QINGNANGXU-R-07
+  kind: doctrine
+  statement: 截定生旺莫教流，直射直流家业退；射破生方定少亡，沖破旺位财狼藉。
+  anchor: null
+  quote: 截定生旺莫教流，直射直流家业退；射破生方定少亡，沖破旺位财狼藉。
+  applicable_to: []
+  caveats:
+  - 现代使用边界：仅作文化研究参考
+  - '"少亡""家业退"为古代水法评价语，不作现代决定论陈述'
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: QINGNANGXU-R-08
+  kind: doctrine
+  statement: 生出克出名为退、生入克入名为进；进神宜进则家资旺，进神若退则家不兴；退神宜退亦同旺，退神若进则主官刑。
+  anchor: null
+  quote: 生出克出名为退、生入克入名为进；进神宜进则家资旺，进神若退则家不兴；退神宜退亦同旺，退神若进则主官刑。
+  applicable_to: []
+  caveats:
+  - 现代使用边界：仅作文化研究参考
+  - 具体进退判断由 tool.fengshui.luopan 完成
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: QINGNANGXU-R-09
+  kind: doctrine
+  statement: 乾坤艮巽长男兴、寅申巳亥长伶丁；甲庚丙壬中男发、子午卯酉中男杀；乙辛丁癸小男强、辰戌丑未小男殃。
+  anchor: null
+  quote: 乾坤艮巽长男兴、寅申巳亥长伶丁；甲庚丙壬中男发、子午卯酉中男杀；乙辛丁癸小男强、辰戌丑未小男殃。
+  applicable_to: []
+  caveats:
+  - 现代使用边界：仅作文化研究参考
+  - '"长男杀""小男殃"等表述为古文措辞，不作现代决定论陈述'
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: QINGNANGXU-R-10
+  kind: doctrine
+  statement: 山静水动昼夜定，水主财禄山主人丁；富贵贫贱在水神。
+  anchor: null
+  quote: 山静水动昼夜定，水主财禄山主人丁；富贵贫贱在水神。
+  applicable_to: []
+  caveats:
+  - 现代使用边界：仅作文化研究参考
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: QINGNANGXU-R-11
+  kind: doctrine
+  statement: 唐僧一行扰外国时颠倒五行，遂以讹传讹禍福错乱；用法须回归杨曾真传。
+  anchor: null
+  quote: 唐僧一行扰外国时颠倒五行，遂以讹传讹禍福错乱；用法须回归杨曾真传。
+  applicable_to: []
+  caveats:
+  - 现代使用边界：典故性陈述，仅作源流参考
+  - '"一行扰外国"为传说，史学待考'
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null

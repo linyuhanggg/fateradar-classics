@@ -1,0 +1,25 @@
+name: validate-rules
+on:
+  pull_request:
+    paths:
+      - "references/**"
+      - "sources/fulltext/**"
+      - "tools/**"
+  push:
+    branches: [main]
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          lfs: false
+          sparse-checkout: |
+            references
+            sources/fulltext
+            tools
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install pyyaml
+      - run: python tools/validate-rules.py

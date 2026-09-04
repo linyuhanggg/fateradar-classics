@@ -1,0 +1,895 @@
+schema_version: fateradar-rules-v2
+book:
+  slug: ziwei-doushu-quanshu
+  system: ziwei
+  title: 紫微斗数全书
+  script: simplified
+  fulltext: sources/fulltext/ziwei/ziwei-doushu-quanshu/fulltext.md
+  fulltext_sha256: 75679206451ebfad7d7124168316ffaf72a516de9c149e4bef001dd3f3b7283d
+rules:
+- rule_id: ZW
+  kind: doctrine
+  statement: 斗数以命、兄弟、妻妾、子女、财帛、疾厄、迁移、奴仆、官禄、田宅、福德、父母为十二宫次序。
+  anchor: null
+  quote: 斗数以命、兄弟、妻妾、子女、财帛、疾厄、迁移、奴仆、官禄、田宅、福德、父母为十二宫次序。
+  applicable_to: []
+  caveats:
+  - 仅证明十二宫方法，不授权宫位吉凶
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: ZIWEIDOUSHUQ-ZW
+  kind: doctrine
+  statement: 01 14 主星核心断诀
+  anchor: null
+  quote: 01 14 主星核心断诀
+  applicable_to: []
+  caveats: []
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: ZW-01
+  kind: doctrine
+  statement: 紫微为帝座尊星，入命主聪明端正、仪表魁梧、有领导力；庙旺会左辅右弼天魁天钺主大富大贵；落陷无吉则成"在野孤君"，主孤高难合群。
+  anchor: null
+  quote: 紫微为帝座尊星，入命主聪明端正、仪表魁梧、有领导力；庙旺会左辅右弼天魁天钺主大富大贵；落陷无吉则成"在野孤君"，主孤高难合群。
+  applicable_to: []
+  caveats:
+  - 仅作命书文化研究参考，不作铁口断富贵
+  - 不替代现代职业/教育规划
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: ZIWEIDOUSHUQ-ZW-01
+  kind: doctrine
+  statement: 天机为兄弟主星，入命主智慧善变、宜动宜谋；与天梁同主善人；与太阴同主参佐；落陷会煞主奔波劳碌、虚而不实。
+  anchor: null
+  quote: 天机为兄弟主星，入命主智慧善变、宜动宜谋；与天梁同主善人；与太阴同主参佐；落陷会煞主奔波劳碌、虚而不实。
+  applicable_to: []
+  caveats:
+  - 仅作文化研究参考
+  - 不作铁口断职业
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: ZIWEIDOUSHUQ-005
+  kind: doctrine
+  statement: 太阳庙旺（寅卯辰巳午）入命主贵气光明、为父星夫星；落陷（戌亥子）入命主辛劳;**女命**太阳庙旺与男命同贵，落陷则古书指婚迟（**强 reframe**：现代社会无此因果）。
+  anchor: null
+  quote: 太阳庙旺（寅卯辰巳午）入命主贵气光明、为父星夫星；落陷（戌亥子）入命主辛劳;**女命**太阳庙旺与男命同贵，落陷则古书指婚迟（**强 reframe**：现代社会无此因果）。
+  applicable_to: []
+  caveats:
+  - ⚠️ 古书"女命太阳"含时代偏见，**严禁**用于断现代女性婚姻
+  - 仅作文化研究
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: ZIWEIDOUSHUQ-006
+  kind: doctrine
+  statement: 武曲为财帛主，入命主刚毅决断、宜从事财金武职；庙旺会禄存化禄主大富；落陷会煞或与破军同主孤克破耗。
+  anchor: null
+  quote: 武曲为财帛主，入命主刚毅决断、宜从事财金武职；庙旺会禄存化禄主大富；落陷会煞或与破军同主孤克破耗。
+  applicable_to: []
+  caveats:
+  - 仅作文化研究参考
+  - 不作具体投资决策依据
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: ZIWEIDOUSHUQ-007
+  kind: doctrine
+  statement: 天同为福德主星，入命主温和敦厚、福寿绵长；庙旺主一生安乐；落陷会煞则福薄。
+  anchor: null
+  quote: 天同为福德主星，入命主温和敦厚、福寿绵长；庙旺主一生安乐；落陷会煞则福薄。
+  applicable_to: []
+  caveats:
+  - 仅作文化研究参考
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: ZIWEIDOUSHUQ-008
+  kind: doctrine
+  statement: 廉贞为官禄囚星，入命主邪正双面：清白入庙主清贵廉洁；会煞落陷主官非桃花、刑伤囚禁。
+  anchor: null
+  quote: 廉贞为官禄囚星，入命主邪正双面：清白入庙主清贵廉洁；会煞落陷主官非桃花、刑伤囚禁。
+  applicable_to: []
+  caveats:
+  - 古书"囚禁"断语**严禁**用于现代法律预测
+  - 仅作文化研究参考
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: ZIWEIDOUSHUQ-009
+  kind: doctrine
+  statement: 天府为南斗财库主星，入命主慷慨稳重、财禄宽裕；与紫微同宫为大富大贵之"紫府同宫"格。
+  anchor: null
+  quote: 天府为南斗财库主星，入命主慷慨稳重、财禄宽裕；与紫微同宫为大富大贵之"紫府同宫"格。
+  applicable_to: []
+  caveats:
+  - 仅作文化研究参考
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: ZIWEIDOUSHUQ-010
+  kind: doctrine
+  statement: 太阴庙旺（亥子丑酉）入命主富裕清秀、为母星妻星；落陷（巳午）入命主劳碌；**女命**太阴庙旺与男命同主富，落陷古书断为夫缘薄（**强 reframe**）。
+  anchor: null
+  quote: 太阴庙旺（亥子丑酉）入命主富裕清秀、为母星妻星；落陷（巳午）入命主劳碌；**女命**太阴庙旺与男命同主富，落陷古书断为夫缘薄（**强 reframe**）。
+  applicable_to: []
+  caveats:
+  - ⚠️ 古书女命太阴落陷断语含时代偏见，**严禁**用于现代女性婚姻判读
+  - 仅作文化研究
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: ZIWEIDOUSHUQ-011
+  kind: doctrine
+  statement: 贪狼为桃花主星，入命主多欲多变、社交广泛；与火铃同宫成"火贪/铃贪"暴发格；与廉贞同宫主桃花官非。
+  anchor: null
+  quote: 贪狼为桃花主星，入命主多欲多变、社交广泛；与火铃同宫成"火贪/铃贪"暴发格；与廉贞同宫主桃花官非。
+  applicable_to: []
+  caveats:
+  - 桃花断语仅作文化研究参考
+  - 不作铁口断婚外情
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: ZIWEIDOUSHUQ-012
+  kind: doctrine
+  statement: 巨门为是非暗星，入命主口舌是非疑虑多；庙旺会吉成"巨日同宫/石中隐玉"贵格；落陷会煞主官非破败。
+  anchor: null
+  quote: 巨门为是非暗星，入命主口舌是非疑虑多；庙旺会吉成"巨日同宫/石中隐玉"贵格；落陷会煞主官非破败。
+  applicable_to: []
+  caveats:
+  - 仅作文化研究参考
+  - 不作铁口断官非
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: ZIWEIDOUSHUQ-013
+  kind: doctrine
+  statement: 天相为印绶主星，入命主辅佐慈和、有官印之贵；与紫府同宫主大贵；与廉贞同宫主清贵。
+  anchor: null
+  quote: 天相为印绶主星，入命主辅佐慈和、有官印之贵；与紫府同宫主大贵；与廉贞同宫主清贵。
+  applicable_to: []
+  caveats:
+  - 仅作文化研究参考
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: ZIWEIDOUSHUQ-014
+  kind: doctrine
+  statement: 天梁为寿星·荫主，入命主父母荫庇、延年益寿、宜文教；庙旺会昌曲主科甲；与天机同主善智。
+  anchor: null
+  quote: 天梁为寿星·荫主，入命主父母荫庇、延年益寿、宜文教；庙旺会昌曲主科甲；与天机同主善智。
+  applicable_to: []
+  caveats:
+  - ⚠️ 寿星断语**严禁**作铁口断寿
+  - 仅作文化研究参考
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: ZIWEIDOUSHUQ-015
+  kind: doctrine
+  statement: 七杀为将星·肃杀，入命主权威决断、刚毅独立；庙旺会吉主武贵；与破军贪狼同三合主"杀破狼"创业格；会煞则刑伤孤克。
+  anchor: null
+  quote: 七杀为将星·肃杀，入命主权威决断、刚毅独立；庙旺会吉主武贵；与破军贪狼同三合主"杀破狼"创业格；会煞则刑伤孤克。
+  applicable_to: []
+  caveats:
+  - 仅作文化研究参考
+  - '"刑伤"断语不作铁口断'
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: ZIWEIDOUSHUQ-016
+  kind: doctrine
+  statement: 破军为耗星，入命主破耗冲锋、革新创业；与七杀贪狼同三合为"杀破狼"格；会昌曲主文化革新；会煞则破败。
+  anchor: null
+  quote: 破军为耗星，入命主破耗冲锋、革新创业；与七杀贪狼同三合为"杀破狼"格；会昌曲主文化革新；会煞则破败。
+  applicable_to: []
+  caveats:
+  - 仅作文化研究参考
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: ZIWEIDOUSHUQ-017
+  kind: doctrine
+  statement: 02 辅星煞星合论
+  anchor: null
+  quote: 02 辅星煞星合论
+  applicable_to: []
+  caveats: []
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: ZW-02
+  kind: doctrine
+  statement: 文昌文曲庙旺入命或夹命，主科甲文章；与太阳天梁会"阳梁昌禄"格主学贵；与紫微天府会主清贵。
+  anchor: null
+  quote: 文昌文曲庙旺入命或夹命，主科甲文章；与太阳天梁会"阳梁昌禄"格主学贵；与紫微天府会主清贵。
+  applicable_to: []
+  caveats:
+  - 仅作文化研究参考
+  - 不替代现代教育规划
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: ZIWEIDOUSHUQ-ZW-02
+  kind: doctrine
+  statement: 左辅右弼会紫微成"君臣庆会"贵格；左右夹命主一生贵人多助；单守命宫力减半。
+  anchor: null
+  quote: 左辅右弼会紫微成"君臣庆会"贵格；左右夹命主一生贵人多助；单守命宫力减半。
+  applicable_to: []
+  caveats:
+  - 仅作文化研究参考
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: ZIWEIDOUSHUQ-020
+  kind: doctrine
+  statement: 天魁阳贵人主白日助力，天钺阴贵人主夜间助力；命身夹魁钺为"魁钺夹命"贵格，主一生贵人提携。
+  anchor: null
+  quote: 天魁阳贵人主白日助力，天钺阴贵人主夜间助力；命身夹魁钺为"魁钺夹命"贵格，主一生贵人提携。
+  applicable_to: []
+  caveats:
+  - 仅作文化研究参考
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: ZIWEIDOUSHUQ-021
+  kind: doctrine
+  statement: 禄存主财禄，天马主奔波；禄马同宫或会照成"禄马交驰"富格，主奔波得财；禄存独守且无吉则称"羊陀夹禄"易破。
+  anchor: null
+  quote: 禄存主财禄，天马主奔波；禄马同宫或会照成"禄马交驰"富格，主奔波得财；禄存独守且无吉则称"羊陀夹禄"易破。
+  applicable_to: []
+  caveats:
+  - 仅作文化研究参考
+  - 不作具体投资决策依据
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: ZIWEIDOUSHUQ-022
+  kind: doctrine
+  statement: 擎羊主刑伤争斗，陀罗主延滞磨折；二煞夹命/夹禄/夹忌主灾厄；庙旺会吉星可制凶（如"马头带剑"）。
+  anchor: null
+  quote: 擎羊主刑伤争斗，陀罗主延滞磨折；二煞夹命/夹禄/夹忌主灾厄；庙旺会吉星可制凶（如"马头带剑"）。
+  applicable_to: []
+  caveats:
+  - ⚠️ 凶煞断语**严禁**用于断病断刑
+  - 仅作文化研究参考
+  - 现代须严格 reframe
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: ZIWEIDOUSHUQ-023
+  kind: doctrine
+  statement: 火星主突发烦躁，铃星主沉郁孤寡；二煞会贪狼成"火贪/铃贪"暴发格；夹命则成"火铃夹命"凶格。
+  anchor: null
+  quote: 火星主突发烦躁，铃星主沉郁孤寡；二煞会贪狼成"火贪/铃贪"暴发格；夹命则成"火铃夹命"凶格。
+  applicable_to: []
+  caveats:
+  - 仅作文化研究参考
+  - '"暴发"非铁口断财运'
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: ZIWEIDOUSHUQ-024
+  kind: doctrine
+  statement: 天空地劫主破败劫财；二星夹命主一生不聚财；会吉星则减凶。
+  anchor: null
+  quote: 天空地劫主破败劫财；二星夹命主一生不聚财；会吉星则减凶。
+  applicable_to: []
+  caveats:
+  - 仅作文化研究参考
+  - 不作铁口断破财
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: ZIWEIDOUSHUQ-025
+  kind: doctrine
+  statement: 天伤主病伤损耗，天使主疾厄使灾；流年遇之主小灾。
+  anchor: null
+  quote: 天伤主病伤损耗，天使主疾厄使灾；流年遇之主小灾。
+  applicable_to: []
+  caveats:
+  - ⚠️ "病伤"断语**严禁**作医疗诊断
+  - 仅作文化研究参考
+  - 如有健康疑虑请就医
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: ZIWEIDOUSHUQ-026
+  kind: doctrine
+  statement: 03 四化与三奇加会
+  anchor: null
+  quote: 03 四化与三奇加会
+  applicable_to: []
+  caveats: []
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: ZW-03
+  kind: doctrine
+  statement: 化禄为四化之首，主财禄福气；十干所化星各异（甲廉贞化禄、乙天机化禄……）；化禄入命/财/官主一生财福。
+  anchor: null
+  quote: 化禄为四化之首，主财禄福气；十干所化星各异（甲廉贞化禄、乙天机化禄……）；化禄入命/财/官主一生财福。
+  applicable_to:
+  - {key: ziwei_palace, value: 命宫}
+  caveats:
+  - 仅作文化研究参考
+  - 不作铁口断财
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: ZIWEIDOUSHUQ-ZW-03
+  kind: doctrine
+  statement: 化权主权力威严决断；入命/官禄主有权力；与化禄会则富贵双全。
+  anchor: null
+  quote: 化权主权力威严决断；入命/官禄主有权力；与化禄会则富贵双全。
+  applicable_to:
+  - {key: ziwei_palace, value: 命宫}
+  caveats:
+  - 仅作文化研究参考
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: ZIWEIDOUSHUQ-029
+  kind: doctrine
+  statement: 化科主科甲名声考试；入命主聪明声誉好；与文昌文曲会则科甲贵显。
+  anchor: null
+  quote: 化科主科甲名声考试；入命主聪明声誉好；与文昌文曲会则科甲贵显。
+  applicable_to: []
+  caveats:
+  - 仅作文化研究参考
+  - 不替代现代教育规划
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: ZIWEIDOUSHUQ-030
+  kind: doctrine
+  statement: 化忌为四化之凶，主忌讳阻碍是非；入命主多波折；化忌坐疾厄主病；与煞会主灾厄。
+  anchor: null
+  quote: 化忌为四化之凶，主忌讳阻碍是非；入命主多波折；化忌坐疾厄主病；与煞会主灾厄。
+  applicable_to:
+  - {key: ziwei_palace, value: 命宫}
+  caveats:
+  - ⚠️ 化忌坐疾厄断病**严禁**作医疗诊断
+  - 仅作文化研究参考
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: ZIWEIDOUSHUQ-031
+  kind: doctrine
+  statement: 化禄+化权+化科三吉化于命宫三方四正，成"三奇加会"贵格，主大富大贵。
+  anchor: null
+  quote: 化禄+化权+化科三吉化于命宫三方四正，成"三奇加会"贵格，主大富大贵。
+  applicable_to: []
+  caveats:
+  - 仅作文化研究参考
+  - 不作铁口断富贵
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: ZIWEIDOUSHUQ-032
+  kind: doctrine
+  statement: 04 十二宫核心断法
+  anchor: null
+  quote: 04 十二宫核心断法
+  applicable_to: []
+  caveats: []
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: ZW-04
+  kind: doctrine
+  statement: 命宫主一生总论：星曜性质 + 庙旺利平闲陷 + 三方四正会照吉煞 + 四化加临；命宫为根本，必须与身宫合参。
+  anchor: null
+  quote: 命宫主一生总论：星曜性质 + 庙旺利平闲陷 + 三方四正会照吉煞 + 四化加临；命宫为根本，必须与身宫合参。
+  applicable_to: []
+  caveats:
+  - 命宫断语为命书核心断法
+  - 仅作文化研究参考
+  - 不作铁口断
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: ZIWEIDOUSHUQ-ZW-04
+  kind: doctrine
+  statement: 兄弟宫主兄弟姐妹与同辈关系；庙旺吉星主兄弟和睦多助；落陷凶煞主兄弟少缘。
+  anchor: null
+  quote: 兄弟宫主兄弟姐妹与同辈关系；庙旺吉星主兄弟和睦多助；落陷凶煞主兄弟少缘。
+  applicable_to: []
+  caveats:
+  - 仅作文化研究参考
+  - 不作铁口断家庭关系
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: ZIWEIDOUSHUQ-035
+  kind: doctrine
+  statement: 妻妾宫主婚姻配偶；男看妻、女看夫；庙旺吉星主婚姻和美；落陷凶煞主婚迟/婚变。**注**：原书"妻妾"为古制，现代等同于"夫妻宫"。
+  anchor: null
+  quote: 妻妾宫主婚姻配偶；男看妻、女看夫；庙旺吉星主婚姻和美；落陷凶煞主婚迟/婚变。**注**：原书"妻妾"为古制，现代等同于"夫妻宫"。
+  applicable_to: []
+  caveats:
+  - ⚠️ 古书"妾"为父权时代多偶制，现代严格 reframe 为"夫妻宫"
+  - 婚姻断语**严禁**作铁口断离合
+  - 仅作文化研究参考
+  - 不替代婚姻咨询
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: ZIWEIDOUSHUQ-036
+  kind: doctrine
+  statement: 子女宫主子女才能与亲缘；庙旺吉星主子女多才贤孝；落陷凶煞主子缘薄。
+  anchor: null
+  quote: 子女宫主子女才能与亲缘；庙旺吉星主子女多才贤孝；落陷凶煞主子缘薄。
+  applicable_to: []
+  caveats:
+  - ⚠️ 古书"子缘薄"断语**严禁**作铁口断生育
+  - 仅作文化研究参考
+  - 不替代现代生殖咨询
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: ZIWEIDOUSHUQ-037
+  kind: doctrine
+  statement: 财帛宫主一生财源得失；庙旺武曲/天府/禄存/化禄主财厚；落陷会空劫破军主破财。
+  anchor: null
+  quote: 财帛宫主一生财源得失；庙旺武曲/天府/禄存/化禄主财厚；落陷会空劫破军主破财。
+  applicable_to: []
+  caveats:
+  - 仅作文化研究参考
+  - 不替代现代投资决策
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: ZIWEIDOUSHUQ-038
+  kind: doctrine
+  statement: 疾厄宫主健康疾病灾厄；庙旺吉星主体健少病；落陷凶煞主多病灾。
+  anchor: null
+  quote: 疾厄宫主健康疾病灾厄；庙旺吉星主体健少病；落陷凶煞主多病灾。
+  applicable_to: []
+  caveats:
+  - ⚠️ **严禁**作医疗诊断或健康预测
+  - 仅作命书文化研究参考
+  - 如有健康疑虑请就医
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: ZIWEIDOUSHUQ-039
+  kind: doctrine
+  statement: 迁移宫主出外移动际遇；庙旺吉星会天马主出外发达；落陷凶煞主出外不利。
+  anchor: null
+  quote: 迁移宫主出外移动际遇；庙旺吉星会天马主出外发达；落陷凶煞主出外不利。
+  applicable_to: []
+  caveats:
+  - 仅作文化研究参考
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: ZIWEIDOUSHUQ-040
+  kind: doctrine
+  statement: 奴仆宫主朋友下属；庙旺吉星主朋友助力；落陷凶煞主多损友。**注**：现代义近"交友宫"。
+  anchor: null
+  quote: 奴仆宫主朋友下属；庙旺吉星主朋友助力；落陷凶煞主多损友。**注**：现代义近"交友宫"。
+  applicable_to: []
+  caveats:
+  - ⚠️ 古书"奴仆"为封建用语，现代严格 reframe 为"交友宫"
+  - 仅作文化研究参考
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: ZIWEIDOUSHUQ-041
+  kind: doctrine
+  statement: 官禄宫主功名职业；庙旺紫微/太阳/化权/化科主官禄通达；落陷凶煞主职业波折。**注**：现代义近"事业宫"。
+  anchor: null
+  quote: 官禄宫主功名职业；庙旺紫微/太阳/化权/化科主官禄通达；落陷凶煞主职业波折。**注**：现代义近"事业宫"。
+  applicable_to: []
+  caveats:
+  - 仅作文化研究参考
+  - 不替代现代职业规划
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: ZIWEIDOUSHUQ-042
+  kind: doctrine
+  statement: 田宅宫主不动产居所；庙旺太阴/天府/化禄主田宅丰；落陷会空劫主田宅破。
+  anchor: null
+  quote: 田宅宫主不动产居所；庙旺太阴/天府/化禄主田宅丰；落陷会空劫主田宅破。
+  applicable_to: []
+  caveats:
+  - 仅作文化研究参考
+  - 不替代现代房地产决策
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: ZIWEIDOUSHUQ-043
+  kind: doctrine
+  statement: 福德宫主福气精神享受；庙旺天同/天梁/化禄主一生享福；落陷凶煞主精神苦闷。
+  anchor: null
+  quote: 福德宫主福气精神享受；庙旺天同/天梁/化禄主一生享福；落陷凶煞主精神苦闷。
+  applicable_to: []
+  caveats:
+  - 仅作文化研究参考
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: ZIWEIDOUSHUQ-044
+  kind: doctrine
+  statement: 父母宫主父母与长辈关系；庙旺吉星主父母双全有荫；落陷凶煞主父母缘薄。
+  anchor: null
+  quote: 父母宫主父母与长辈关系；庙旺吉星主父母双全有荫；落陷凶煞主父母缘薄。
+  applicable_to: []
+  caveats:
+  - ⚠️ "父母缘薄"断语**严禁**作铁口断
+  - 仅作文化研究参考
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: ZIWEIDOUSHUQ-045
+  kind: doctrine
+  statement: 05 富贵贫贱格局
+  anchor: null
+  quote: 05 富贵贫贱格局
+  applicable_to: []
+  caveats: []
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: ZW-05
+  kind: doctrine
+  statement: 富局主要包括：日月并明 / 月朗天门 / 武贪格 / 火贪格 / 铃贪格 / 双禄交流 / 财禄夹马等；命宫三方四正会成富局。
+  anchor: null
+  quote: 富局主要包括：日月并明 / 月朗天门 / 武贪格 / 火贪格 / 铃贪格 / 双禄交流 / 财禄夹马等；命宫三方四正会成富局。
+  applicable_to: []
+  caveats:
+  - 仅作文化研究参考
+  - 不作铁口断财富
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: ZIWEIDOUSHUQ-ZW-05
+  kind: doctrine
+  statement: 贵局主要包括：紫府同宫 / 紫府朝垣 / 君臣庆会 / 府相朝垣 / 日月夹命 / 机月同梁 / 杀破狼 / 阳梁昌禄 / 巨日同宫 / 石中隐玉 / 三奇加会 / 紫微在午无杀凑 / 马头带剑 等。
+  anchor: null
+  quote: 贵局主要包括：紫府同宫 / 紫府朝垣 / 君臣庆会 / 府相朝垣 / 日月夹命 / 机月同梁 / 杀破狼 / 阳梁昌禄 / 巨日同宫 / 石中隐玉 / 三奇加会 / 紫微在午无杀凑 / 马头带剑 等。
+  applicable_to: []
+  caveats:
+  - 仅作文化研究参考
+  - 不作铁口断官禄
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: ZIWEIDOUSHUQ-048
+  kind: doctrine
+  statement: 贫贱局主要包括：日月反背 / 命无正曜 / 命坐空亡 / 羊陀夹忌 / 火铃夹命 等；古书断为终身贫贱。
+  anchor: null
+  quote: 贫贱局主要包括：日月反背 / 命无正曜 / 命坐空亡 / 羊陀夹忌 / 火铃夹命 等；古书断为终身贫贱。
+  applicable_to: []
+  caveats:
+  - ⚠️ 古书"贫贱"断语含强烈宿命色彩，**严禁**用于现代社会经济地位判读
+  - 仅作命书历史研究
+  - 现代社会经济流动性大，宜批判性阅读
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: ZIWEIDOUSHUQ-049
+  kind: doctrine
+  statement: 杂局主要包括：桃花犯主 / 贪武同行 / 廉贞会贪狼 等；吉凶兼备需细判。
+  anchor: null
+  quote: 杂局主要包括：桃花犯主 / 贪武同行 / 廉贞会贪狼 等；吉凶兼备需细判。
+  applicable_to: []
+  caveats:
+  - 仅作文化研究参考
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: ZIWEIDOUSHUQ-050
+  kind: doctrine
+  statement: 紫微斗数星曜在 12 地支位有六等亮度：庙最旺、旺、利、平、闲、陷最弱；庙旺主吉力大，落陷主吉减凶增。
+  anchor: null
+  quote: 紫微斗数星曜在 12 地支位有六等亮度：庙最旺、旺、利、平、闲、陷最弱；庙旺主吉力大，落陷主吉减凶增。
+  applicable_to: []
+  caveats:
+  - 仅作文化研究参考
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: ZIWEIDOUSHUQ-051
+  kind: doctrine
+  statement: 06 大限/小限/流年运程
+  anchor: null
+  quote: 06 大限/小限/流年运程
+  applicable_to: []
+  caveats: []
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: ZW-06
+  kind: doctrine
+  statement: 大限十年一段：水二局自二岁起、木三局自三岁起、金四局自四岁起、土五局自五岁起、火六局自六岁起；男阳/女阳顺行，男阴/女阴逆行。
+  anchor: null
+  quote: 大限十年一段：水二局自二岁起、木三局自三岁起、金四局自四岁起、土五局自五岁起、火六局自六岁起；男阳/女阳顺行，男阴/女阴逆行。
+  applicable_to: []
+  caveats:
+  - 不得手算大限起例
+  - 必须依赖工具
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: ZIWEIDOUSHUQ-ZW-06
+  kind: doctrine
+  statement: 大限+小限+太岁三限合参定吉凶；三者皆吉则吉，皆凶则凶；二吉一凶减半，二凶一吉化险。
+  anchor: null
+  quote: 大限+小限+太岁三限合参定吉凶；三者皆吉则吉，皆凶则凶；二吉一凶减半，二凶一吉化险。
+  applicable_to: []
+  caveats:
+  - 仅作文化研究参考
+  - 不作具体年份的祸福铁口断
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: ZIWEIDOUSHUQ-054
+  kind: doctrine
+  statement: 大限行至南斗诸星宫得力一类断法，行至北斗诸星宫得力另一类断法；不得混判。
+  anchor: null
+  quote: 大限行至南斗诸星宫得力一类断法，行至北斗诸星宫得力另一类断法；不得混判。
+  applicable_to: []
+  caveats:
+  - 仅作文化研究参考
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: ZIWEIDOUSHUQ-055
+  kind: doctrine
+  statement: 流年太岁会大限/小限主星煞，吉凶倍之；流年化忌入命宫主一年波折；流年禄存入财帛主一年财厚。
+  anchor: null
+  quote: 流年太岁会大限/小限主星煞，吉凶倍之；流年化忌入命宫主一年波折；流年禄存入财帛主一年财厚。
+  applicable_to: []
+  caveats:
+  - 仅作文化研究参考
+  - 不作铁口断流年祸福
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: ZIWEIDOUSHUQ-056
+  kind: doctrine
+  statement: 大限/小限/流年三重叠擎羊陀罗或七杀，主灾厄重重；古书称"三限叠并必有大祸"。
+  anchor: null
+  quote: 大限/小限/流年三重叠擎羊陀罗或七杀，主灾厄重重；古书称"三限叠并必有大祸"。
+  applicable_to: []
+  caveats:
+  - ⚠️ "大祸"断语**严禁**作铁口断
+  - 仅作命书文化研究参考
+  - 不替代法律/医疗咨询
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: ZIWEIDOUSHUQ-057
+  kind: doctrine
+  statement: 大限或小限星辰过 12 宫各遇 12 地支共 144 条所忌诀；本规则仅作总纲索引，详细 144 条留待 D2 续抽。
+  anchor: null
+  quote: 大限或小限星辰过 12 宫各遇 12 地支共 144 条所忌诀；本规则仅作总纲索引，详细 144 条留待 D2 续抽。
+  applicable_to: []
+  caveats:
+  - 仅作文化研究参考
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: ZIWEIDOUSHUQ-058
+  kind: doctrine
+  statement: 紫微斗数承认阴德可改命延寿；行善积德可化解凶限；此为道德修养层，非命定。
+  anchor: null
+  quote: 紫微斗数承认阴德可改命延寿；行善积德可化解凶限；此为道德修养层，非命定。
+  applicable_to: []
+  caveats:
+  - 仅作文化研究参考
+  - 阴骘观为传统道德教化层
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: ZIWEIDOUSHUQ-059
+  kind: doctrine
+  statement: 07 男女命同异
+  anchor: null
+  quote: 07 男女命同异
+  applicable_to: []
+  caveats: []
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: ZW-07
+  kind: doctrine
+  statement: 古书男命主官禄财帛，女命主夫子家宅，断法不同；**强 reframe**：现代社会男女平权，不应套用古书男女命差异。
+  anchor: null
+  quote: 古书男命主官禄财帛，女命主夫子家宅，断法不同；**强 reframe**：现代社会男女平权，不应套用古书男女命差异。
+  applicable_to: []
+  caveats:
+  - ⚠️ **严格强 reframe**：古书男女命差异含明显父权时代偏见，**严禁**用于现代女性命运判读
+  - 仅作命书历史研究
+  - 现代男女命应以个人志业一体而论
+  - 宜批判性阅读
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: ZIWEIDOUSHUQ-ZW-07
+  kind: doctrine
+  statement: 女命骨髓赋专论女命吉凶，含"刑夫克子煞"、"伤夫煞"等大量父权时代偏见断语；本赋仅作命书历史研究展示。
+  anchor: null
+  quote: 女命骨髓赋专论女命吉凶，含"刑夫克子煞"、"伤夫煞"等大量父权时代偏见断语；本赋仅作命书历史研究展示。
+  applicable_to: []
+  caveats:
+  - ⚠️ **特殊强 reframe**：女命骨髓赋为古代父权时代产物，**严禁**用于现代女性命运判读
+  - 不得用于断婚姻、断子女、断夫缘
+  - 现代须批判性阅读，**严禁铁口断**
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: ZIWEIDOUSHUQ-062
+  kind: doctrine
+  statement: 08 小儿命与夭寿
+  anchor: null
+  quote: 08 小儿命与夭寿
+  applicable_to: []
+  caveats: []
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: ZW-08
+  kind: doctrine
+  statement: 小儿命论关煞与生时吉凶；关煞重者古书称"难养"；生时不确则命局误。
+  anchor: null
+  quote: 小儿命论关煞与生时吉凶；关煞重者古书称"难养"；生时不确则命局误。
+  applicable_to: []
+  caveats:
+  - ⚠️ **严格强 reframe**：小儿关煞**严禁**用于断小儿生死/疾病
+  - 仅作命书文化研究参考
+  - 如有小儿健康疑虑请就医
+  - 现代医学已无对应概念
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: ZIWEIDOUSHUQ-ZW-08
+  kind: doctrine
+  statement: 古书"小儿克亲"指小儿命格主父母离/早卒之类断语；含强烈宿命因果观。
+  anchor: null
+  quote: 古书"小儿克亲"指小儿命格主父母离/早卒之类断语；含强烈宿命因果观。
+  applicable_to: []
+  caveats:
+  - ⚠️ **严格强 reframe**：**严禁**用于现代亲子关系判读
+  - 不得作铁口断
+  - 仅作命书历史研究
+  - 现代心理学已废此说
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: ZIWEIDOUSHUQ-065
+  kind: doctrine
+  statement: 命局有先贫后富之象（如大限早凶后吉、武贪格三十后发等）；为命学动态发展观，非命定贫富。
+  anchor: null
+  quote: 命局有先贫后富之象（如大限早凶后吉、武贪格三十后发等）；为命学动态发展观，非命定贫富。
+  applicable_to: []
+  caveats:
+  - 仅作文化研究参考
+  - 不作铁口断财运起伏
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: ZIWEIDOUSHUQ-066
+  kind: doctrine
+  statement: 09 论诸星同垣富贵贫贱夭寿（强 reframe）
+  anchor: null
+  quote: 09 论诸星同垣富贵贫贱夭寿（强 reframe）
+  applicable_to: []
+  caveats: []
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: ZW-09
+  kind: doctrine
+  statement: 紫微斗数综合断法以"诸星同垣"为核心：本宫星 + 三方四正会照星 + 四化加临 + 庙旺利平闲陷综合判富贵贫贱夭寿。
+  anchor: null
+  quote: 紫微斗数综合断法以"诸星同垣"为核心：本宫星 + 三方四正会照星 + 四化加临 + 庙旺利平闲陷综合判富贵贫贱夭寿。
+  applicable_to: []
+  caveats:
+  - ⚠️ "夭寿"断语**严禁**作铁口断寿
+  - '"贫贱"断语**严禁**作社会经济地位判读'
+  - 仅作命书文化研究参考
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: ZIWEIDOUSHUQ-ZW-09
+  kind: doctrine
+  statement: 紫微斗数命格有高下之分：上格主大富大贵、中格主小富小贵、下格主温饱、最下格主贫贱夭折。
+  anchor: null
+  quote: 紫微斗数命格有高下之分：上格主大富大贵、中格主小富小贵、下格主温饱、最下格主贫贱夭折。
+  applicable_to: []
+  caveats:
+  - ⚠️ 古书"贫贱夭折"断语含宿命色彩，**严禁**用于现代社会判读
+  - 仅作命书历史研究
+  - 现代社会流动性大，宜批判性阅读
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: ZIWEIDOUSHUQ-069
+  kind: doctrine
+  statement: 凡命局必先看是否入格：入吉格则富贵可期，入凶格则需化解，不入格则平常。
+  anchor: null
+  quote: 凡命局必先看是否入格：入吉格则富贵可期，入凶格则需化解，不入格则平常。
+  applicable_to: []
+  caveats:
+  - 仅作文化研究参考
+  - 不作铁口断
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null

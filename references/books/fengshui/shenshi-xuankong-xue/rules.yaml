@@ -1,0 +1,69 @@
+schema_version: fateradar-rules-v2
+book:
+  slug: shenshi-xuankong-xue
+  system: fengshui
+  title: 沈氏玄空学
+  script: simplified
+  fulltext: sources/fulltext/fengshui/shenshi-xuankong-xue/fulltext.md
+  fulltext_sha256: 90fcb09f383522364803e6ea9f3e596decbab3a28cc512f9190c469ad12e151c
+rules:
+- rule_id: XK
+  kind: doctrine
+  statement: 本 pack 是公开网页转写层，不是 1935 民国排印本逐页校本。
+  anchor: null
+  quote: 本 pack 是公开网页转写层，不是 1935 民国排印本逐页校本。
+  applicable_to: []
+  caveats:
+  - 不得把图像页或未结构化表格当作完成规则
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: SHENSHIXUANK-XK
+  kind: doctrine
+  statement: 沈氏玄空重九星、元运、山向、紫白、挨星等理气框架。
+  anchor: null
+  quote: 沈氏玄空重九星、元运、山向、紫白、挨星等理气框架。
+  applicable_to: []
+  caveats:
+  - 不能替代建筑安全、法律、工程和现实居住判断
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: SHENSHIXUANK-003
+  kind: doctrine
+  statement: 阴宅秘断、阳宅秘断是历史案例叙述，不能用来承诺现实应验。
+  anchor: null
+  quote: 阴宅秘断、阳宅秘断是历史案例叙述，不能用来承诺现实应验。
+  applicable_to: []
+  caveats:
+  - 涉及丁财、灾祸、疾病、死亡、官讼等内容必须安全改写
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: SHENSHIXUANK-004
+  kind: doctrine
+  statement: 九运挨星图、分金表等章节含图像证据，当前未完全结构化。
+  anchor: null
+  quote: 九运挨星图、分金表等章节含图像证据，当前未完全结构化。
+  applicable_to: []
+  caveats:
+  - 不得仅凭章节标题输出完整图表规则
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: SHENSHIXUANK-005
+  kind: doctrine
+  statement: 《沈氏玄空学》是近代玄空解释层，应与《地理辨正》《天玉经》《青囊》系原典分层读取。
+  anchor: null
+  quote: 《沈氏玄空学》是近代玄空解释层，应与《地理辨正》《天玉经》《青囊》系原典分层读取。
+  applicable_to: []
+  caveats:
+  - 冲突时并列说明派系与版本
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null

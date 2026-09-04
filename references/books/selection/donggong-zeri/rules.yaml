@@ -1,0 +1,146 @@
+schema_version: fateradar-rules-v2
+book:
+  slug: donggong-zeri
+  system: selection
+  title: 董公择日
+  script: traditional
+  fulltext: sources/fulltext/selection/donggong-zeri/fulltext.md
+  fulltext_sha256: f35894e1041076321f3061fdcb20515740b12fc30fce6e4ec20977f5660396fc
+rules:
+- rule_id: DR
+  kind: doctrine
+  statement: 本书把筮仕、受官、出行、谋干、婚姻、起造移居、丧凶葬祭等用事都纳入“择日选时”框架；日与时并看，不能只看日课。
+  anchor: null
+  quote: 本书把筮仕、受官、出行、谋干、婚姻、起造移居、丧凶葬祭等用事都纳入“择日选时”框架；日与时并看，不能只看日课。
+  applicable_to: []
+  caveats:
+  - 文化参考，非事实判断
+  - 现代事项不以此作实际决策依据
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: DONGGONGZERI-DR
+  kind: doctrine
+  statement: 全书主体按正月寅月至十二月丑月，每月列 12 个建除日（建、除、满、平、定、执、破、危、成、收、开、闭）并给出宜忌、应事与凶验叙述。
+  anchor: null
+  quote: 全书主体按正月寅月至十二月丑月，每月列 12 个建除日（建、除、满、平、定、执、破、危、成、收、开、闭）并给出宜忌、应事与凶验叙述。
+  applicable_to: []
+  caveats:
+  - 不得让 LLM 手算日期
+  - 具体某日属于何月建、何干支，必须调用 `mingli-master.selection.v1`
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: DONGGONGZERI-003
+  kind: doctrine
+  statement: 当用户问“某日是否宜嫁娶/动土/安葬/出行”时，主 skill 应先调用历算工具确定干支与月建，再用本表检索对应月支+建除日；输出时说明这是《董公选择日要览》的民间通书说法。
+  anchor: null
+  quote: 当用户问“某日是否宜嫁娶/动土/安葬/出行”时，主 skill 应先调用历算工具确定干支与月建，再用本表检索对应月支+建除日；输出时说明这是《董公选择日要览》的民间通书说法。
+  applicable_to: []
+  caveats:
+  - 不得直接把表内“吉”“凶”“应验”当事实判断
+  - 需与《协纪辨方书》《星历考原》交叉
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: DONGGONGZERI-004
+  kind: doctrine
+  statement: 本书论略中特别提示煞入中宫或白虎入中宫之日，不宜在庭院中钉钉、鼓乐喧哗；即使有煞贡、直星、人专、天德、月德等，也主张避用为上。
+  anchor: null
+  quote: 本书论略中特别提示煞入中宫或白虎入中宫之日，不宜在庭院中钉钉、鼓乐喧哗；即使有煞贡、直星、人专、天德、月德等，也主张避用为上。
+  applicable_to: []
+  caveats:
+  - 这是本书民间风险偏好，官方口径仍应以《协纪辨方书》《星历考原》为上位参照
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: DONGGONGZERI-005
+  kind: doctrine
+  statement: 金神七煞歌把角、亢、奎、娄、牛、鬼等宿与出兵、行船、修造、嫁娶等凶象相连；技能中应把它作为“民间通书避忌项”，不是独立断验。
+  anchor: null
+  quote: 金神七煞歌把角、亢、奎、娄、牛、鬼等宿与出兵、行船、修造、嫁娶等凶象相连；技能中应把它作为“民间通书避忌项”，不是独立断验。
+  applicable_to: []
+  caveats:
+  - 金神起例需与《星历考原》核对
+  - 冲突时以官方神煞考原为准
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: DONGGONGZERI-006
+  kind: doctrine
+  statement: 本书将煞贡、直星、人专列为可用于上官赴任、临政亲民、入学等事的吉日类；可作民间通书“通用吉日”证据层。
+  anchor: null
+  quote: 本书将煞贡、直星、人专列为可用于上官赴任、临政亲民、入学等事的吉日类；可作民间通书“通用吉日”证据层。
+  applicable_to: []
+  caveats:
+  - 不得替代官方黄道、神煞起例
+  - 需说明为《董公》口径
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: DONGGONGZERI-007
+  kind: doctrine
+  statement: 本书反复强调同一日用于不同人、不同事可能吉凶不同，需兼看本命、用事类型、入宅/敬神/发轿等关键时辰；技能应优先路由到“日课+时辰+本命”组合判断。
+  anchor: null
+  quote: 本书反复强调同一日用于不同人、不同事可能吉凶不同，需兼看本命、用事类型、入宅/敬神/发轿等关键时辰；技能应优先路由到“日课+时辰+本命”组合判断。
+  applicable_to: []
+  caveats:
+  - 现代输出只作文化说明
+  - 不作实际择吉承诺
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: DONGGONGZERI-008
+  kind: doctrine
+  statement: 月日表中同一日常出现“宜安葬但不宜起造婚姻”“宜小修但大用凶”等差异；主 skill 检索时必须带上事项类型，不得只输出单一吉凶。
+  anchor: null
+  quote: 月日表中同一日常出现“宜安葬但不宜起造婚姻”“宜小修但大用凶”等差异；主 skill 检索时必须带上事项类型，不得只输出单一吉凶。
+  applicable_to: []
+  caveats:
+  - 若用户未说明事项，应先分类为嫁娶、动土、出行、安葬、入宅、开张、上任等，再检索
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: DONGGONGZERI-009
+  kind: doctrine
+  statement: 本书属于民间通书系；遇到《协纪辨方书》《星历考原》对神煞、宜忌、起例的不同说法时，本书只能作为旁证或民间异说，不能覆盖官方系统。
+  anchor: null
+  quote: 本书属于民间通书系；遇到《协纪辨方书》《星历考原》对神煞、宜忌、起例的不同说法时，本书只能作为旁证或民间异说，不能覆盖官方系统。
+  applicable_to: []
+  caveats:
+  - 官方书未覆盖的民间用法，也要保留“通书异说”标注
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: DONGGONGZERI-010
+  kind: doctrine
+  statement: 原书大量使用“犯之主官司、损人口、重丧、大凶”等应验语。蒸馏为 skill 时必须改写为“原书以某日列为某类避忌”，禁止直接断言会发生灾祸。
+  anchor: null
+  quote: 原书大量使用“犯之主官司、损人口、重丧、大凶”等应验语。蒸馏为 skill 时必须改写为“原书以某日列为某类避忌”，禁止直接断言会发生灾祸。
+  applicable_to: []
+  caveats:
+  - 必须附“文化参考，非事实判断”
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: D2
+  kind: doctrine
+  statement: 状态
+  anchor: null
+  quote: 状态
+  applicable_to: []
+  caveats: []
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null

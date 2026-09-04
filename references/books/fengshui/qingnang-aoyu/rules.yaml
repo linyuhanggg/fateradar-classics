@@ -1,0 +1,121 @@
+schema_version: fateradar-rules-v2
+book:
+  slug: qingnang-aoyu
+  system: fengshui
+  title: 青囊奥语
+  script: traditional
+  fulltext: sources/fulltext/fengshui/qingnang-aoyu/fulltext.md
+  fulltext_sha256: 0718b133e0aaef6f7010d6d985809702ae0d8a2d92924e9fae591fc0431ffdc5
+rules:
+- rule_id: QNA-R001
+  kind: doctrine
+  statement: 坤壬乙、艮丙辛、巽辰亥、甲癸申等星名分组不可凭记忆套用，必须绑定具体青囊/玄空流派表。
+  anchor:
+    file: sources/fulltext/fengshui/qingnang-aoyu/fulltext.md
+    start_line: 11
+    end_line: 12
+  quote: 坤壬乙, 巨門從頭出 ,艮丙辛, 位位是破星,
+  applicable_to: []
+  caveats: []
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: QNA-R002
+  kind: doctrine
+  statement: 书中连续说雌雄、山水、玄空；理气判断不得只看坐山，须同时给山、水、向、水口。
+  anchor:
+    file: sources/fulltext/fengshui/qingnang-aoyu/fulltext.md
+    start_line: 13
+    end_line: 16
+  quote: 左為陽, 子癸至亥壬, 右為陰, 午丁至巳丙,
+  applicable_to: []
+  caveats: []
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: QNA-R003
+  kind: doctrine
+  statement: 二十四山的顺逆、颠倒是珠宝/火坑差异来源，必须由 adapter 明确顺逆口径。
+  anchor:
+    file: sources/fulltext/fengshui/qingnang-aoyu/fulltext.md
+    start_line: 17
+    end_line: 18
+  quote: 顛顛倒,二十四山有珠寶; 順逆行, 二十四山有火坑;
+  applicable_to: []
+  caveats: []
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: QNA-R004
+  kind: doctrine
+  statement: 龙身行止、来脉明堂、城门、天心十道、流神来去等十项须合观；缺关键项时不能强断。
+  anchor:
+    file: sources/fulltext/fengshui/qingnang-aoyu/fulltext.md
+    start_line: 19
+    end_line: 23
+  quote: 第一義, 要識龍身行與止; 第二言, 來脈明堂不可偏;
+  applicable_to: []
+  caveats: []
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: QNA-R005
+  kind: doctrine
+  statement: 向中放水是否吉，取决于生旺休囚，须由水法/元运/二十四山事实层给出。
+  anchor:
+    file: sources/fulltext/fengshui/qingnang-aoyu/fulltext.md
+    start_line: 27
+    end_line: 31
+  quote: 向放水, 生旺有吉休囚否.
+  applicable_to: []
+  caveats: []
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: QNA-R006
+  kind: doctrine
+  statement: 从外出入名进，从内生出名退，出入克入名旺；但方向和克入关系必须由工具判定。
+  anchor:
+    file: sources/fulltext/fengshui/qingnang-aoyu/fulltext.md
+    start_line: 32
+    end_line: 34
+  quote: 從外出入名為進, 家內財寶積如山;
+  applicable_to: []
+  caveats: []
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: QNA-R007
+  kind: doctrine
+  statement: 若脉息不生旺、龙歇脉寒，书中说他山救助亦空劳；要把龙脉事实层作为硬前提。
+  anchor:
+    file: sources/fulltext/fengshui/qingnang-aoyu/fulltext.md
+    start_line: 35
+    end_line: 36
+  quote: 脈息生旺要知因, 龍歇脈寒災禍侵;
+  applicable_to: []
+  caveats: []
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: QNA-R008
+  kind: doctrine
+  statement: 篇末强调再辨星辰、真微妙；实际输出须与青囊序/天玉/都天/地理辨正和现场事实合读。
+  anchor:
+    file: sources/fulltext/fengshui/qingnang-aoyu/fulltext.md
+    start_line: 37
+    end_line: 38
+  quote: 勸君再把星辰辨, 吉凶禍福如神現;
+  applicable_to: []
+  caveats: []
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null

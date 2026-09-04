@@ -1,0 +1,537 @@
+schema_version: fateradar-rules-v2
+book:
+  slug: xingming-suyuan
+  system: xingming
+  title: 星命溯源
+  script: traditional
+  fulltext: sources/fulltext/xingming/xingming-suyuan/fulltext.md
+  fulltext_sha256: 93581f38e1ffa36f9b33e695d4ec3441da57cad4a3f20e6b1c29b77207394f5a
+rules:
+- rule_id: XINGMINGSUYU-XR
+  kind: doctrine
+  statement: M01 主曜身宫与经用
+  anchor: null
+  quote: M01 主曜身宫与经用
+  applicable_to: []
+  caveats: []
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: XR-01
+  kind: doctrine
+  statement: 01 五曜连珠
+  anchor: null
+  quote: 01 五曜连珠
+  applicable_to: []
+  caveats: []
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: XINGMINGSUYU-XR-01
+  kind: doctrine
+  statement: 02 二星合璧
+  anchor: null
+  quote: 02 二星合璧
+  applicable_to: []
+  caveats: []
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: XINGMINGSUYU-004
+  kind: doctrine
+  statement: 03 朝拱辅夹
+  anchor: null
+  quote: 03 朝拱辅夹
+  applicable_to: []
+  caveats: []
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: XINGMINGSUYU-005
+  kind: doctrine
+  statement: 04 经纬夹拱
+  anchor: null
+  quote: 04 经纬夹拱
+  applicable_to: []
+  caveats: []
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: XINGMINGSUYU-006
+  kind: doctrine
+  statement: 05 卦禄斗并
+  anchor: null
+  quote: 05 卦禄斗并
+  applicable_to: []
+  caveats: []
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: XINGMINGSUYU-007
+  kind: doctrine
+  statement: 06 阴注阳受
+  anchor: null
+  quote: 06 阴注阳受
+  applicable_to: []
+  caveats: []
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: XINGMINGSUYU-008
+  kind: doctrine
+  statement: 07 七政并旺
+  anchor: null
+  quote: 07 七政并旺
+  applicable_to: []
+  caveats: []
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: XINGMINGSUYU-009
+  kind: doctrine
+  statement: 08 四主咸屯
+  anchor: null
+  quote: 08 四主咸屯
+  applicable_to: []
+  caveats: []
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: XINGMINGSUYU-010
+  kind: doctrine
+  statement: 09 拱夹不起
+  anchor: null
+  quote: 09 拱夹不起
+  applicable_to: []
+  caveats: []
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: XR-02
+  kind: doctrine
+  statement: 01 度主为正
+  anchor: null
+  quote: 01 度主为正
+  applicable_to: []
+  caveats: []
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: XINGMINGSUYU-XR-02
+  kind: doctrine
+  statement: 02 三主互参
+  anchor: null
+  quote: 02 三主互参
+  applicable_to: []
+  caveats: []
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: XINGMINGSUYU-013
+  kind: doctrine
+  statement: 03 转生取用
+  anchor: null
+  quote: 03 转生取用
+  applicable_to: []
+  caveats: []
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: XINGMINGSUYU-014
+  kind: doctrine
+  statement: 04 飞廉守照
+  anchor: null
+  quote: 04 飞廉守照
+  applicable_to: []
+  caveats: []
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: XINGMINGSUYU-015
+  kind: doctrine
+  statement: 05 一星满用
+  anchor: null
+  quote: 05 一星满用
+  applicable_to: []
+  caveats: []
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: XINGMINGSUYU-016
+  kind: doctrine
+  statement: 06 恩主随身
+  anchor: null
+  quote: 06 恩主随身
+  applicable_to: []
+  caveats: []
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: XINGMINGSUYU-017
+  kind: doctrine
+  statement: 07 官魁化曜
+  anchor: null
+  quote: 07 官魁化曜
+  applicable_to: []
+  caveats: []
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: XR-03
+  kind: doctrine
+  statement: 01 五星四时令旺
+  anchor: null
+  quote: 01 五星四时令旺
+  applicable_to: []
+  caveats: []
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: XINGMINGSUYU-XR-03
+  kind: doctrine
+  statement: 02 三冬之木遇水寒
+  anchor: null
+  quote: 02 三冬之木遇水寒
+  applicable_to: []
+  caveats: []
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: XINGMINGSUYU-020
+  kind: doctrine
+  statement: 03 四火懼漂流四木怕金健
+  anchor: null
+  quote: 03 四火懼漂流四木怕金健
+  applicable_to: []
+  caveats: []
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: XINGMINGSUYU-021
+  kind: doctrine
+  statement: 04 寒月喜阳
+  anchor: null
+  quote: 04 寒月喜阳
+  applicable_to: []
+  caveats: []
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: XINGMINGSUYU-022
+  kind: doctrine
+  statement: 05 时令决疑
+  anchor: null
+  quote: 05 时令决疑
+  applicable_to: []
+  caveats: []
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: XR-04
+  kind: doctrine
+  statement: 01 斗杓卦气唐符国印
+  anchor: null
+  quote: 01 斗杓卦气唐符国印
+  applicable_to: []
+  caveats: []
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: XINGMINGSUYU-XR-04
+  kind: doctrine
+  statement: 02 天雄阳刃在命
+  anchor: null
+  quote: 02 天雄阳刃在命
+  applicable_to: []
+  caveats: []
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: XINGMINGSUYU-025
+  kind: doctrine
+  statement: 03 飞廉浮沉羊刃
+  anchor: null
+  quote: 03 飞廉浮沉羊刃
+  applicable_to: []
+  caveats: []
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: XINGMINGSUYU-026
+  kind: doctrine
+  statement: 04 天耗地耗
+  anchor: null
+  quote: 04 天耗地耗
+  applicable_to: []
+  caveats: []
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: XINGMINGSUYU-027
+  kind: doctrine
+  statement: 05 闌干煞缢死
+  anchor: null
+  quote: 05 闌干煞缢死
+  applicable_to: []
+  caveats: []
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: XINGMINGSUYU-028
+  kind: doctrine
+  statement: 06 太岁填实
+  anchor: null
+  quote: 06 太岁填实
+  applicable_to: []
+  caveats: []
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: XR-05
+  kind: doctrine
+  statement: 01 量天尺定坐宫
+  anchor: null
+  quote: 01 量天尺定坐宫
+  applicable_to: []
+  caveats: []
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: XINGMINGSUYU-XR-05
+  kind: doctrine
+  statement: 02 洞微大限行限
+  anchor: null
+  quote: 02 洞微大限行限
+  applicable_to: []
+  caveats: []
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: XINGMINGSUYU-031
+  kind: doctrine
+  statement: 03 行限交宫过度
+  anchor: null
+  quote: 03 行限交宫过度
+  applicable_to: []
+  caveats: []
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: XINGMINGSUYU-032
+  kind: doctrine
+  statement: 04 流年三方对照
+  anchor: null
+  quote: 04 流年三方对照
+  applicable_to: []
+  caveats: []
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: XINGMINGSUYU-033
+  kind: doctrine
+  statement: 05 限主病再延
+  anchor: null
+  quote: 05 限主病再延
+  applicable_to: []
+  caveats: []
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: XINGMINGSUYU-034
+  kind: doctrine
+  statement: 06 衝刑壓逼
+  anchor: null
+  quote: 06 衝刑壓逼
+  applicable_to: []
+  caveats: []
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: XR-06
+  kind: doctrine
+  statement: 01 妇命以财福为重
+  anchor: null
+  quote: 01 妇命以财福为重
+  applicable_to: []
+  caveats: []
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: XINGMINGSUYU-XR-06
+  kind: doctrine
+  statement: 02 妇人陶到木躔
+  anchor: null
+  quote: 02 妇人陶到木躔
+  applicable_to: []
+  caveats: []
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: XINGMINGSUYU-037
+  kind: doctrine
+  statement: 03 五星先天 14 等口诀
+  anchor: null
+  quote: 03 五星先天 14 等口诀
+  applicable_to: []
+  caveats: []
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: XINGMINGSUYU-038
+  kind: doctrine
+  statement: 04 妇人产亡
+  anchor: null
+  quote: 04 妇人产亡
+  applicable_to: []
+  caveats: []
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: XINGMINGSUYU-039
+  kind: doctrine
+  statement: 05 鼓盆之嘆
+  anchor: null
+  quote: 05 鼓盆之嘆
+  applicable_to: []
+  caveats: []
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: XR-07
+  kind: doctrine
+  statement: 01 化气从天官、正气从果老
+  anchor: null
+  quote: 01 化气从天官、正气从果老
+  applicable_to: []
+  caveats: []
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: XINGMINGSUYU-XR-07
+  kind: doctrine
+  statement: 02 与果老星宗互参原则
+  anchor: null
+  quote: 02 与果老星宗互参原则
+  applicable_to: []
+  caveats: []
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: XINGMINGSUYU-042
+  kind: doctrine
+  statement: 03 不替代子平
+  anchor: null
+  quote: 03 不替代子平
+  applicable_to: []
+  caveats: []
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: XINGMINGSUYU-043
+  kind: doctrine
+  statement: 04 旁证层接受相术
+  anchor: null
+  quote: 04 旁证层接受相术
+  applicable_to: []
+  caveats: []
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: XR-08
+  kind: doctrine
+  statement: 01 卷二·后天口诀全段
+  anchor: null
+  quote: 01 卷二·后天口诀全段
+  applicable_to: []
+  caveats: []
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: XINGMINGSUYU-XR-08
+  kind: doctrine
+  statement: 02 卷四前篇寿夭案例
+  anchor: null
+  quote: 02 卷四前篇寿夭案例
+  applicable_to: []
+  caveats: []
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: XINGMINGSUYU-046
+  kind: doctrine
+  statement: 03 卷四后篇寿夭案例与具体死法
+  anchor: null
+  quote: 03 卷四后篇寿夭案例与具体死法
+  applicable_to: []
+  caveats: []
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: XINGMINGSUYU-047
+  kind: doctrine
+  statement: 04 妇人产亡 / 三嫁 / 师尼
+  anchor: null
+  quote: 04 妇人产亡 / 三嫁 / 师尼
+  applicable_to: []
+  caveats: []
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: XINGMINGSUYU-048
+  kind: doctrine
+  statement: 05 共命贫富寿夭不同
+  anchor: null
+  quote: 05 共命贫富寿夭不同
+  applicable_to: []
+  caveats: []
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null

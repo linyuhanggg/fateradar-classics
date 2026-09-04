@@ -1,0 +1,688 @@
+schema_version: fateradar-rules-v2
+book:
+  slug: shenxiang-quanbian
+  system: physiognomy
+  title: 神相全编
+  script: traditional
+  fulltext: sources/fulltext/physiognomy/shenxiang-quanbian/fulltext.md
+  fulltext_sha256: 984eac109baef32a234be23f0612b604d65cd08d26c4f5e00411e61d9e638865
+rules:
+- rule_id: SR-01
+  kind: doctrine
+  statement: 观人当依"十观"：威仪 / 厚重 / 清浊 / 古怪 / 孤独 / 神 / 精 / 筋 / 骨 / 形局；十观为相术总纲。
+  anchor: null
+  quote: 观人当依"十观"：威仪 / 厚重 / 清浊 / 古怪 / 孤独 / 神 / 精 / 筋 / 骨 / 形局；十观为相术总纲。
+  applicable_to: []
+  caveats:
+  - 通用 1+2
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: SHENXIANGQUA-SR-01
+  kind: doctrine
+  statement: 相之五法：知 / 析 / 神 / 形 / 心；五法为五种观察分层。
+  anchor: null
+  quote: 相之五法：知 / 析 / 神 / 形 / 心；五法为五种观察分层。
+  applicable_to: []
+  caveats:
+  - 通用 1
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: SHENXIANGQUA-003
+  kind: doctrine
+  statement: 气色为面之外华，须察其浮沉、聚散、明暗；气色随时变易，不可作终身判。
+  anchor: null
+  quote: 气色为面之外华，须察其浮沉、聚散、明暗；气色随时变易，不可作终身判。
+  applicable_to: []
+  caveats:
+  - 通用 1+3+5（**禁基于照片诊断疾病**）
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: SHENXIANGQUA-004
+  kind: doctrine
+  statement: 仁配木 / 义配金 / 礼配火 / 智配水 / 信配土；以五德对应五行体相。
+  anchor: null
+  quote: 仁配木 / 义配金 / 礼配火 / 智配水 / 信配土；以五德对应五行体相。
+  applicable_to: []
+  caveats:
+  - 通用 1+2（不输出"缺某德"贬义）
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: SHENXIANGQUA-005
+  kind: doctrine
+  statement: 面分十三部位（天中→地阁），各部对应人生不同阶段或方面，需整体平衡。
+  anchor: null
+  quote: 面分十三部位（天中→地阁），各部对应人生不同阶段或方面，需整体平衡。
+  applicable_to: []
+  caveats:
+  - 通用 1
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: SHENXIANGQUA-006
+  kind: doctrine
+  statement: 百岁面部流年图，童限 1-13 在两耳，14-30 在额上，31-50 在中庭，51-70 在下停，71-99 散布。
+  anchor: null
+  quote: 百岁面部流年图，童限 1-13 在两耳，14-30 在额上，31-50 在中庭，51-70 在下停，71-99 散布。
+  applicable_to: []
+  caveats:
+  - 通用 1+3+4（**对具体个人禁用作年份吉凶判断**）
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: SHENXIANGQUA-007
+  kind: doctrine
+  statement: 面部十二宫各对应人生一面（命 / 财 / 兄弟 / 田宅 / 男女 / 奴仆 / 妻妾 / 疾厄 / 迁移 / 官禄 / 福德 / 父母）。
+  anchor: null
+  quote: 面部十二宫各对应人生一面（命 / 财 / 兄弟 / 田宅 / 男女 / 奴仆 / 妻妾 / 疾厄 / 迁移 / 官禄 / 福德 / 父母）。
+  applicable_to: []
+  caveats:
+  - 通用 1+3+4（**妻妾 / 男女 / 疾厄 三宫具体判断按 safety-redlines 屏蔽**）
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: SHENXIANGQUA-008
+  kind: doctrine
+  statement: 面部学堂主智慧学问，四学堂（眼为官学堂 / 额为禄学堂等）+ 八学堂（增列）。
+  anchor: null
+  quote: 面部学堂主智慧学问，四学堂（眼为官学堂 / 额为禄学堂等）+ 八学堂（增列）。
+  applicable_to: []
+  caveats:
+  - 通用 1
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: SHENXIANGQUA-009
+  kind: doctrine
+  statement: 上停（额至眉）主早年 / 中停（眉至鼻）主中年 / 下停（鼻至颏）主晚年；三停均匀为相之贵。
+  anchor: null
+  quote: 上停（额至眉）主早年 / 中停（眉至鼻）主中年 / 下停（鼻至颏）主晚年；三停均匀为相之贵。
+  applicable_to: []
+  caveats:
+  - 通用 1+3（**不作具体年龄段吉凶判断**）
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: SHENXIANGQUA-010
+  kind: doctrine
+  statement: 相分四态：形有余 / 形不足 / 神有余 / 神不足；形神俱足为上。
+  anchor: null
+  quote: 相分四态：形有余 / 形不足 / 神有余 / 神不足；形神俱足为上。
+  applicable_to: []
+  caveats:
+  - 通用 1
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: SR-02
+  kind: doctrine
+  statement: 耳为采听官 / 眉为保寿官 / 目为监察官 / 鼻为审辨官 / 口为出纳官；五官各成一格而后总论。
+  anchor: null
+  quote: 耳为采听官 / 眉为保寿官 / 目为监察官 / 鼻为审辨官 / 口为出纳官；五官各成一格而后总论。
+  applicable_to: []
+  caveats:
+  - 通用 1
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: SHENXIANGQUA-SR-02
+  kind: doctrine
+  statement: 额左颧鼻颏配五岳 / 耳目鼻口配四渎；五岳要朝拱、四渎要清通。
+  anchor: null
+  quote: 额左颧鼻颏配五岳 / 耳目鼻口配四渎；五岳要朝拱、四渎要清通。
+  applicable_to: []
+  caveats:
+  - 通用 1
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: SHENXIANGQUA-013
+  kind: doctrine
+  statement: 五星六曜配面部部位；与七政命盘"五星六曜"同名异用，不可换算。
+  anchor: null
+  quote: 五星六曜配面部部位；与七政命盘"五星六曜"同名异用，不可换算。
+  applicable_to: []
+  caveats:
+  - 通用 1
+  - '**与 xingming 系统五星六曜术语不互通**'
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: SHENXIANGQUA-014
+  kind: doctrine
+  statement: 六府（上中下二二二）+ 三才（天人地）+ 三停（上中下）共构面部立体框架。
+  anchor: null
+  quote: 六府（上中下二二二）+ 三才（天人地）+ 三停（上中下）共构面部立体框架。
+  applicable_to: []
+  caveats:
+  - 通用 1
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: SHENXIANGQUA-015
+  kind: doctrine
+  statement: 木形瘦长 / 火形尖锐 / 土形敦厚 / 金形方正 / 水形圆润；体型分五行。
+  anchor:
+    file: sources/fulltext/physiognomy/shenxiang-quanbian/fulltext.md
+    start_line: 1095
+    end_line: 1095
+  quote: 下停長，終日區區促壽疆。上停長，下停短，衣食自然
+  applicable_to: []
+  caveats:
+  - 通用 1
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: SR-03
+  kind: doctrine
+  statement: 相之精微在形 / 神 / 气 / 声四要素；古文以"神为君，形为臣，气为养"层级。
+  anchor:
+    file: sources/fulltext/physiognomy/shenxiang-quanbian/fulltext.md
+    start_line: 1112
+    end_line: 1112
+  quote: ​ 欽定古今圖書集成博物彙編藝術典
+  applicable_to: []
+  caveats:
+  - 通用 1
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: SHENXIANGQUA-SR-03
+  kind: doctrine
+  statement: 原书列富格 / 贵格 / 寿相格 / 福德格诸成相；本 pack 仅作"古代富贵寿福观念语义提取"。
+  anchor:
+    file: sources/fulltext/physiognomy/shenxiang-quanbian/fulltext.md
+    start_line: 1180
+    end_line: 1180
+  quote: 材，善御其德，又善治其器，善御其馬。小人反是，其氣
+  applicable_to: []
+  caveats:
+  - 通用 1+3+4（**禁用于具体个人富贵寿福判断**）
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: SHENXIANGQUA-018
+  kind: doctrine
+  statement: 相分"成格 / 败格 / 进 / 退 / 动 / 散"等动态变化；成相非永驻，败相非永衰。
+  anchor:
+    file: sources/fulltext/physiognomy/shenxiang-quanbian/fulltext.md
+    start_line: 1240
+    end_line: 1240
+  quote: 太剛則折，隔山相聞，圓長不缺，斯乃貴人遠見風格。」
+  applicable_to: []
+  caveats:
+  - 通用 1
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: SHENXIANGQUA-019
+  kind: doctrine
+  statement: 原书分发达 / 清闲安乐 / 稳厚 / 聪明 / 愚顽 / 刚强 / 伎巧 等十余种性情类相；调用时执行 reframe（如"愚顽"→"思维稳定型"）。
+  anchor: null
+  quote: 原书分发达 / 清闲安乐 / 稳厚 / 聪明 / 愚顽 / 刚强 / 伎巧 等十余种性情类相；调用时执行 reframe（如"愚顽"→"思维稳定型"）。
+  applicable_to: []
+  caveats:
+  - 通用 1+2（**贬义条目必须 reframe**）
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: SHENXIANGQUA-020
+  kind: doctrine
+  statement: 原书列孤格 / 夭相 / 窮蹇 / 刑剋 / 剋妻妾 / 剋子息 / 奸詐 / 貪食 / 惡死 / 溺水 / 火災 等近 25 凶相格。
+  anchor: null
+  quote: 原书列孤格 / 夭相 / 窮蹇 / 刑剋 / 剋妻妾 / 剋子息 / 奸詐 / 貪食 / 惡死 / 溺水 / 火災 等近 25 凶相格。
+  applicable_to: []
+  caveats:
+  - 通用 1+2+3+4+5
+  - '**整段 safety-redlines**'
+  - 调用时返回："本规则属古文灾祸预测，现代不适用，已屏蔽
+  - '"'
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: SHENXIANGQUA-021
+  kind: doctrine
+  statement: 人面应天圆地方；头主一身；发主血气余华；三者相辅。
+  anchor:
+    file: sources/fulltext/physiognomy/shenxiang-quanbian/fulltext.md
+    start_line: 1500
+    end_line: 1500
+  quote: 生逆毛主惡亡。此為惡死之相也。
+  applicable_to: []
+  caveats:
+  - 通用 1
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: SHENXIANGQUA-022
+  kind: doctrine
+  statement: 眉式 20 余种（鬼眉 / 龙眉 / 柳叶眉 / 剑眉 / 八字眉 / 一字眉 / 卧蚕眉 等）；本规则只作"形态分类标签"返回。
+  anchor:
+    file: sources/fulltext/physiognomy/shenxiang-quanbian/fulltext.md
+    start_line: 1600
+    end_line: 1600
+  quote: 訣曰：「眉高聳秀，威權祿厚。眉毛長垂，高壽無疑。眉毛潤澤，求官易得。眉交不分，早歲歸墳。眉如角弓，性善不雄。眉如初月，聰明超越。重重如絲，貪淫無守。彎彎如蛾，好色雖多。眉長過目，忠直有祿。眉短於目，心性孤獨。眉頭交斜，兄弟各家。眉毛細起，不賢則貴。眉角入鬢，為人聰俊。眉俱旋毛，兄弟同胞。眉毛婆娑，男少」 女多。眉覆眉仰。兩目所仰。眉若高直。身當清職。眉中紋破。迍邅常有。
+  applicable_to: []
+  caveats:
+  - 通用 1+2+6（**不输出"鬼眉主凶"等贬义判语**）
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: SHENXIANGQUA-023
+  kind: doctrine
+  statement: 眼式 30 余种（龙眼 / 凤眼 / 猴眼 / 象眼 / 狼目 / 蛇眼 等）；同上仅作分类标签。
+  anchor: null
+  quote: 眼式 30 余种（龙眼 / 凤眼 / 猴眼 / 象眼 / 狼目 / 蛇眼 等）；同上仅作分类标签。
+  applicable_to: []
+  caveats:
+  - 通用 1+2+6（**不输出动物喻象的吉凶判语**）
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: SR-04
+  kind: doctrine
+  statement: 鼻分伏犀 / 悬胆 / 截筒 / 鹰嘴 / 蒜鼻 / 狮子鼻 等；准头丰隆为佳。
+  anchor:
+    file: sources/fulltext/physiognomy/shenxiang-quanbian/fulltext.md
+    start_line: 1900
+    end_line: 1900
+  quote: 夭；隆高有梁者，主壽。若懸膽而直截筒者，富貴。豎有
+  applicable_to: []
+  caveats:
+  - 通用 1+6
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: SHENXIANGQUA-SR-04
+  kind: doctrine
+  statement: 口分仰月 / 吹火 / 樱桃 / 鲇鱼 / 覆船 等；唇红齿白为相之贵征。
+  anchor:
+    file: sources/fulltext/physiognomy/shenxiang-quanbian/fulltext.md
+    start_line: 2000
+    end_line: 2000
+  quote: 針者，絕子，貧寒。」上有黑子者，多子。下有黑子者多女，
+  applicable_to: []
+  caveats:
+  - 通用 1+6
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: SHENXIANGQUA-026
+  kind: doctrine
+  statement: 耳分垂肩 / 贴脑 / 棋子 / 鼠耳 / 猪耳 等；轮廓分明、贴脑、垂珠为佳。
+  anchor:
+    file: sources/fulltext/physiognomy/shenxiang-quanbian/fulltext.md
+    start_line: 2100
+    end_line: 2100
+  quote: 音》欲清。《口德》欲端。《口脣》欲厚。
+  applicable_to: []
+  caveats:
+  - 通用 1+6（**"鼠耳""猪耳"贬义喻象不输出**）
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: SHENXIANGQUA-027
+  kind: doctrine
+  statement: 人中深长清晰为相之吉征；古文与子嗣寿命相关之论按 safety-redlines 屏蔽。
+  anchor:
+    file: sources/fulltext/physiognomy/shenxiang-quanbian/fulltext.md
+    start_line: 2150
+    end_line: 2150
+  quote: 夭，廕下須教破且休。
+  applicable_to: []
+  caveats:
+  - 通用 1+3+4（**子嗣判断屏蔽**）
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: SHENXIANGQUA-028
+  kind: doctrine
+  statement: 印堂宽平润泽为相之吉；山根高直不断为相之佳。
+  anchor:
+    file: sources/fulltext/physiognomy/shenxiang-quanbian/fulltext.md
+    start_line: 2180
+    end_line: 2180
+  quote: 《訣》曰：「脣如雞肝，至老貧寒。脣如青黑，餓死塗陌。脣色光紅，不求自豐。脣色淡黑，毒殺之客。脣平不起，饑餓莫比。脣缺而陷，主人下賤。長脣短齒，長命不死。脣生不正，言詞難定。」
+  applicable_to: []
+  caveats:
+  - 通用 1
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: SHENXIANGQUA-029
+  kind: doctrine
+  statement: 唇红润 / 舌长大 / 齿密齐为相之佳；古文细分齿数对应贵贱按 reframe。
+  anchor:
+    file: sources/fulltext/physiognomy/shenxiang-quanbian/fulltext.md
+    start_line: 2210
+    end_line: 2210
+  quote: 《詩》曰：「齒密方為君子儒，分明小輩齒牙疏。色如白玉
+  applicable_to: []
+  caveats:
+  - 通用 1+2
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: SHENXIANGQUA-030
+  kind: doctrine
+  statement: 背宜厚 / 胸宜平阔 / 腰宜挺直 / 腹宜垂下 / 脐宜深；躯干诸部各有相理。
+  anchor: null
+  quote: 背宜厚 / 胸宜平阔 / 腰宜挺直 / 腹宜垂下 / 脐宜深；躯干诸部各有相理。
+  applicable_to: []
+  caveats:
+  - 通用 1
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: SR-05
+  kind: doctrine
+  statement: 五行金木水火土相生相克之理用于相术；五脏所出对应五行外华。
+  anchor:
+    file: sources/fulltext/physiognomy/shenxiang-quanbian/fulltext.md
+    start_line: 2400
+    end_line: 2400
+  quote: 暴，太緩則遲，周旋不失其節，進退各中其度者，至貴」
+  applicable_to: []
+  caveats:
+  - 通用 1
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: SHENXIANGQUA-SR-05
+  kind: doctrine
+  statement: 器气章 + 形神章并论；形以载神，气以养神，器以承气。
+  anchor:
+    file: sources/fulltext/physiognomy/shenxiang-quanbian/fulltext.md
+    start_line: 2480
+    end_line: 2480
+  quote: 則心曲，故曰「觀其表則知其裡矣。」
+  applicable_to: []
+  caveats:
+  - 通用 1
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: SHENXIANGQUA-033
+  kind: doctrine
+  statement: 相五合（大小相称）/ 相五小（小而灵）/ 相五短（短而清）/ 相五长（长而秀）/ 相五露（皆为不足）/ 相八大 / 相八小 / 相六大 / 相六小极 / 相六小贵。
+  anchor: null
+  quote: 相五合（大小相称）/ 相五小（小而灵）/ 相五短（短而清）/ 相五长（长而秀）/ 相五露（皆为不足）/ 相八大 / 相八小 / 相六大 / 相六小极 / 相六小贵。
+  applicable_to: []
+  caveats:
+  - 通用 1+2
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: SHENXIANGQUA-034
+  kind: doctrine
+  statement: 原书列六恶相 / 六贱相；本 pack 仅作目录留痕。
+  anchor:
+    file: sources/fulltext/physiognomy/shenxiang-quanbian/fulltext.md
+    start_line: 2620
+    end_line: 2620
+  quote: 兼卑賤，背陷成坑亦主貧。若是時師依此訣，相中十
+  applicable_to: []
+  caveats:
+  - 通用 1+2+4
+  - '**强贬义+safety-redlines**'
+  - 调用时返回："本规则属古文贱恶判语，现代禁用于人际评价
+  - '"'
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: SHENXIANGQUA-035
+  kind: doctrine
+  statement: 原书分相善 / 相恶 / 相忠信慈孝 / 相愚僻凶暴 / 相形带杀；性格类条目可作 reframe 后语义引用，"凶暴""带杀"等条目按 safety-redlines 屏蔽。
+  anchor:
+    file: sources/fulltext/physiognomy/shenxiang-quanbian/fulltext.md
+    start_line: 2700
+    end_line: 2700
+  quote: 前，此相之人終不貴。鼻大眼小金剋木，一世貧寒主
+  applicable_to: []
+  caveats:
+  - 通用 1+2+4
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: SHENXIANGQUA-036
+  kind: doctrine
+  statement: 原书列相富 / 相贵 / 相贵中贱 / 相贫贱 / 相蹇难。
+  anchor:
+    file: sources/fulltext/physiognomy/shenxiang-quanbian/fulltext.md
+    start_line: 2750
+    end_line: 2750
+  quote: 「頭面耳鼻口腹」六者，反常而不得其正也。
+  applicable_to: []
+  caveats:
+  - 通用 1+3+4（**禁用于具体个人富贵贫贱判断**
+  - 贬义必须 reframe）
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: SHENXIANGQUA-037
+  kind: doctrine
+  statement: 原书列相寿 / 相夭 / 相孤苦 / 相疾病。
+  anchor:
+    file: sources/fulltext/physiognomy/shenxiang-quanbian/fulltext.md
+    start_line: 2790
+    end_line: 2790
+  quote: 方，耳雖小堅且圓，額雖小平且正，聲雖小宮且商，面
+  applicable_to: []
+  caveats:
+  - 通用 1+3+4
+  - '**整段 safety-redlines**：寿命、夭折、疾病禁用于具体个人'
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: SHENXIANGQUA-038
+  kind: doctrine
+  statement: 原书列相坐 / 相卧 / 相行篇 / 相行论 / 论卧 / 论食。
+  anchor:
+    file: sources/fulltext/physiognomy/shenxiang-quanbian/fulltext.md
+    start_line: 2830
+    end_line: 2830
+  quote: 來到底貧。鰥寡天羅赤色多，更看兩角旋成螺，語
+  applicable_to: []
+  caveats:
+  - 通用 1+5（**不接受真人录像 / 监控影像**）
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: SHENXIANGQUA-039
+  kind: doctrine
+  statement: 观人八相法：威 / 厚 / 清 / 古 / 孤 / 薄 / 恶 / 俗；前四为吉相，后四为不足相。
+  anchor:
+    file: sources/fulltext/physiognomy/shenxiang-quanbian/fulltext.md
+    start_line: 2880
+    end_line: 2880
+  quote: 中，每與天地相流通。神流如夢如影響，目力觀兮如
+  applicable_to: []
+  caveats:
+  - 通用 1+2（贬义部分 reframe）
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: SR-06
+  kind: doctrine
+  statement: 神异赋核心句"骨格定一世之荣枯，气色定行年之休咎"；以骨为本、气色为流年标尺。
+  anchor: null
+  quote: 神异赋核心句"骨格定一世之荣枯，气色定行年之休咎"；以骨为本、气色为流年标尺。
+  applicable_to: []
+  caveats:
+  - 通用 1+3
+  - '**赋中女命部分按 safety-redlines 屏蔽**'
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: SR-07
+  kind: doctrine
+  statement: 神眼经专论目相精微；以"神 - 光 - 黑白分明"三层观目。
+  anchor: null
+  quote: 神眼经专论目相精微；以"神 - 光 - 黑白分明"三层观目。
+  applicable_to: []
+  caveats:
+  - 通用 1
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: SHENXIANGQUA-SR-07
+  kind: doctrine
+  statement: 麻衣金锁赋 + 银匙歌为麻衣派根本相赋；二者互为表里。
+  anchor:
+    file: sources/fulltext/physiognomy/shenxiang-quanbian/fulltext.md
+    start_line: 3600
+    end_line: 3600
+  quote: 郎君面，男子郎君命不長。女子郎君好媱慾，僧道孤
+  applicable_to: []
+  caveats:
+  - 通用 1+2
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: SHENXIANGQUA-043
+  kind: doctrine
+  statement: 人伦大统赋上篇为张行简集大成之作；从总论起依次论部位。
+  anchor:
+    file: sources/fulltext/physiognomy/shenxiang-quanbian/fulltext.md
+    start_line: 3700
+    end_line: 3700
+  quote: 「塵蒙」而身無所資，玉潤而名高先唱。
+  applicable_to: []
+  caveats:
+  - 通用 1+2
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: SR-08
+  kind: doctrine
+  statement: 人伦大统赋下篇承上篇详论部位；含"鼻嵩岳论"等专题。
+  anchor: null
+  quote: 人伦大统赋下篇承上篇详论部位；含"鼻嵩岳论"等专题。
+  applicable_to: []
+  caveats:
+  - 通用 1+2
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: SHENXIANGQUA-SR-08
+  kind: doctrine
+  statement: 鬼眼先生 / 西岳先生 / 唐举三种相法集；多以韵语口诀形式存世。
+  anchor:
+    file: sources/fulltext/physiognomy/shenxiang-quanbian/fulltext.md
+    start_line: 4130
+    end_line: 4130
+  quote: 善盡美之人；兩眼雌雄，豈由仁由義」之子。色如常變
+  applicable_to: []
+  caveats:
+  - 通用 1+2
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: SR-09
+  kind: doctrine
+  statement: 袁柳庄人象赋 + 吴心鉴通元赋 + 管辂人伦渊奥赋三种相赋。
+  anchor: null
+  quote: 袁柳庄人象赋 + 吴心鉴通元赋 + 管辂人伦渊奥赋三种相赋。
+  applicable_to: []
+  caveats:
+  - 通用 1+2
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: SHENXIANGQUA-SR-09
+  kind: doctrine
+  statement: 杨氏论神气 + 达摩动静论 + 袁柳庄杂论 + 麻衣杂论；神气动静合论。
+  anchor:
+    file: sources/fulltext/physiognomy/shenxiang-quanbian/fulltext.md
+    start_line: 4500
+    end_line: 4500
+  quote: 巧。鼠齒漏而多非，猴面長而不飽。黨結奸邪之輩，讎
+  applicable_to: []
+  caveats:
+  - 通用 1
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: SHENXIANGQUA-048
+  kind: doctrine
+  statement: 原书列何知歌 / 何知诀 / 凶暴歌 / 刑害歌 / 无子歌 / 恶死歌 等八篇韵语；以"何知人……"句式列举具体相征对应人生境遇。
+  anchor:
+    file: sources/fulltext/physiognomy/shenxiang-quanbian/fulltext.md
+    start_line: 4850
+    end_line: 4850
+  quote: 吟，言祕密謹似珠金，若人收得得意集，此法須收拾，
+  applicable_to: []
+  caveats:
+  - 通用 1+3+4
+  - '**整段 safety-redlines**'
+  - 调用时返回："本规则属古文灾祸/寿命/子嗣预测，现代禁用于具体个人
+  - '"'
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: SHENXIANGQUA-049
+  kind: doctrine
+  statement: 正形歌 + 正色歌 + 正声歌 + 体骨歌 四歌；以"正"立标尺。
+  anchor:
+    file: sources/fulltext/physiognomy/shenxiang-quanbian/fulltext.md
+    start_line: 5000
+    end_line: 5000
+  quote: 似破菰兒，何知貪財并好色，龜背龜胸如何說？何知
+  applicable_to: []
+  caveats:
+  - 通用 1
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null

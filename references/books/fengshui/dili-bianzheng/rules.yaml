@@ -1,0 +1,64 @@
+schema_version: fateradar-rules-v2
+book:
+  slug: dili-bianzheng
+  system: fengshui
+  title: 地理辨正
+  script: simplified
+  fulltext: sources/fulltext/fengshui/dili-bianzheng/fulltext.md
+  fulltext_sha256: 0397f286e48683aedd8d27955d6ad6b8dd733657c91ab503f03b8396b6d3180e
+rules:
+- rule_id: DLBZ
+  kind: doctrine
+  statement: R01 经文与蒋注必须分层
+  anchor: null
+  quote: R01 经文与蒋注必须分层
+  applicable_to: []
+  caveats: []
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: DILIBIANZHEN-DLBZ
+  kind: doctrine
+  statement: R02 雌雄优先于简单阴阳
+  anchor: null
+  quote: R02 雌雄优先于简单阴阳
+  applicable_to: []
+  caveats: []
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: DILIBIANZHEN-003
+  kind: doctrine
+  statement: R03 理气问题需要工具，不让 LLM 手算
+  anchor: null
+  quote: R03 理气问题需要工具，不让 LLM 手算
+  applicable_to: []
+  caveats: []
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: DILIBIANZHEN-004
+  kind: doctrine
+  statement: R04 与形势法冲突时并列
+  anchor: null
+  quote: R04 与形势法冲突时并列
+  applicable_to: []
+  caveats: []
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: DILIBIANZHEN-005
+  kind: doctrine
+  statement: R05 辨伪段落用于冲突裁判
+  anchor: null
+  quote: R05 辨伪段落用于冲突裁判
+  applicable_to: []
+  caveats: []
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null

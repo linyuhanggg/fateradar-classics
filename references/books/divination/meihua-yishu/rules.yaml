@@ -1,0 +1,428 @@
+schema_version: fateradar-rules-v2
+book:
+  slug: meihua-yishu
+  system: divination
+  title: 梅花易数
+  script: traditional
+  fulltext: sources/fulltext/divination/meihua-yishu/fulltext.md
+  fulltext_sha256: 6fa4f590c86623eda1d0109200100c25408d101e557e98f76fc9db35699b9b59
+rules:
+- rule_id: MR-01
+  kind: doctrine
+  statement: 八卦先天数序为乾一、兑二、离三、震四、巽五、坎六、艮七、坤八；起卦取数皆以此为本。
+  anchor: null
+  quote: 八卦先天数序为乾一、兑二、离三、震四、巽五、坎六、艮七、坤八；起卦取数皆以此为本。
+  applicable_to: []
+  caveats:
+  - 与文王后天八卦数次序不同，勿与京房纳甲混
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: MEIHUAYISHU-MR-01
+  kind: doctrine
+  statement: 金生水、水生木、木生火、火生土、土生金；金克木、木克土、土克水、水克火、火克金。
+  anchor: null
+  quote: 金生水、水生木、木生火、火生土、土生金；金克木、木克土、土克水、水克火、火克金。
+  applicable_to: []
+  caveats:
+  - 基础铺垫
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: MEIHUAYISHU-003
+  kind: doctrine
+  statement: 乾兑属金、坤艮属土、震巽属木、坎属水、离属火。
+  anchor: null
+  quote: 乾兑属金、坤艮属土、震巽属木、坎属水、离属火。
+  applicable_to: []
+  caveats:
+  - 与京房八宫纳甲分宫不同
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: MEIHUAYISHU-004
+  kind: doctrine
+  statement: 震巽木旺于春；离火旺于夏；乾兑金旺于秋；坎水旺于冬；坤艮土旺于辰戌丑未月。
+  anchor: null
+  quote: 震巽木旺于春；离火旺于夏；乾兑金旺于秋；坎水旺于冬；坤艮土旺于辰戌丑未月。
+  applicable_to: []
+  caveats:
+  - 与"卦气衰"对照使用（MR-01-05）
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: MEIHUAYISHU-005
+  kind: doctrine
+  statement: 春坤艮衰、夏乾兑衰、秋震巽衰、冬离衰、辰戌丑未坎衰。
+  anchor: null
+  quote: 春坤艮衰、夏乾兑衰、秋震巽衰、冬离衰、辰戌丑未坎衰。
+  applicable_to: []
+  caveats:
+  - 用以衡量克我者之力（克体若克者衰，凶力减
+  - 体若衰，更怕克）
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: MR-02
+  kind: doctrine
+  statement: 起上下卦时以总数除以 8，取余数对应八卦先天数（恰得 8 取坤）；不足 8 直接取数。
+  anchor: null
+  quote: 起上下卦时以总数除以 8，取余数对应八卦先天数（恰得 8 取坤）；不足 8 直接取数。
+  applicable_to: []
+  caveats:
+  - 必须由 `tool.divination.qiguagua` 计算，禁止 LLM 手算
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: MEIHUAYISHU-MR-02
+  kind: doctrine
+  statement: 起动爻时以重卦总数（年 + 月 + 日 + 时）除以 6，取余数为动爻位（恰得 6 取上爻）。
+  anchor: null
+  quote: 起动爻时以重卦总数（年 + 月 + 日 + 时）除以 6，取余数为动爻位（恰得 6 取上爻）。
+  applicable_to: []
+  caveats:
+  - 动爻一爻为常
+  - 多爻动需另解（古法不出本书规范）
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: MEIHUAYISHU-008
+  kind: doctrine
+  statement: 互卦只用八卦不取六十四卦名；以重卦的二三四爻为下互、三四五爻为上互；乾坤无互，互其变卦。
+  anchor: null
+  quote: 互卦只用八卦不取六十四卦名；以重卦的二三四爻为下互、三四五爻为上互；乾坤无互，互其变卦。
+  applicable_to: []
+  caveats:
+  - 本书互卦法与京房六爻不同，不可混用
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: MEIHUAYISHU-009
+  kind: doctrine
+  statement: 可数之物 / 已成器物 / 已栽树木 / 已建屋宅可起卦；江河山石及未成之物不可起卦；牛马犬豕初生 / 初置时方可起卦。
+  anchor: null
+  quote: 可数之物 / 已成器物 / 已栽树木 / 已建屋宅可起卦；江河山石及未成之物不可起卦；牛马犬豕初生 / 初置时方可起卦。
+  applicable_to: []
+  caveats:
+  - 起卦机不应强占，"无故不占"为本书心法
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: MR-03
+  kind: doctrine
+  statement: 求占者报数起卦，以体用生克及卦象类比断当日动静吉凶；用克体凶、体克用顺、比和平、用生体得、体生用失。
+  anchor: null
+  quote: 求占者报数起卦，以体用生克及卦象类比断当日动静吉凶；用克体凶、体克用顺、比和平、用生体得、体生用失。
+  applicable_to: []
+  caveats:
+  - 仅供参考，非命理结论
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: MR-04
+  kind: doctrine
+  statement: 起卦后含动爻一卦为用，不含动爻一卦为体；体卦为问占者本身 / 主体，用卦为所问之事 / 客体；体用乃占断主轴。
+  anchor: null
+  quote: 起卦后含动爻一卦为用，不含动爻一卦为体；体卦为问占者本身 / 主体，用卦为所问之事 / 客体；体用乃占断主轴。
+  applicable_to: []
+  caveats:
+  - 若两卦皆有动爻或两卦皆无动爻，按本书"用卦取动多者"约定（具体看正文细则）
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: MEIHUAYISHU-MR-04
+  kind: doctrine
+  statement: 用卦生体卦——大吉，主有外财外喜；体卦生用卦——主耗、退财；用卦克体卦——大凶；体卦克用卦——主顺、克他人；体用比和（同五行）——吉，事顺。
+  anchor: null
+  quote: 用卦生体卦——大吉，主有外财外喜；体卦生用卦——主耗、退财；用卦克体卦——大凶；体卦克用卦——主顺、克他人；体用比和（同五行）——吉，事顺。
+  applicable_to: []
+  caveats:
+  - 吉凶轻重还须看体用之衰旺
+  - 体衰受克尤凶，体旺受克较缓
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: MEIHUAYISHU-013
+  kind: doctrine
+  statement: 体用同五行（如皆木皆金）为比和，事顺利、平稳；不主大吉大凶。
+  anchor: null
+  quote: 体用同五行（如皆木皆金）为比和，事顺利、平稳；不主大吉大凶。
+  applicable_to: []
+  caveats:
+  - 比和虽吉，仍须看互变
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: MEIHUAYISHU-014
+  kind: doctrine
+  statement: 互卦看事之中（过程曲折），变卦看事之终（结果归宿）；互变之卦与体用之生克须合参。
+  anchor: null
+  quote: 互卦看事之中（过程曲折），变卦看事之终（结果归宿）；互变之卦与体用之生克须合参。
+  applicable_to: []
+  caveats:
+  - 变卦克体凶
+  - 变卦生体吉
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: MEIHUAYISHU-015
+  kind: doctrine
+  statement: 体用并非固定，因时因事而变；体之力借助于互变之中之比和、生扶、克泄综合判断。
+  anchor: null
+  quote: 体用并非固定，因时因事而变；体之力借助于互变之中之比和、生扶、克泄综合判断。
+  applicable_to: []
+  caveats:
+  - 体用之变需经验
+  - 不可机械套用
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: MEIHUAYISHU-016
+  kind: doctrine
+  statement: 变卦旺则减体之力，变卦克体则祸；变卦生体则福。
+  anchor: null
+  quote: 变卦旺则减体之力，变卦克体则祸；变卦生体则福。
+  applicable_to: []
+  caveats:
+  - 变卦之力小于本卦体用，但决定事之终向
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: MR-05
+  kind: doctrine
+  statement: 应期取八卦数（如乾应戌亥年月日时）+ 时令旺衰 + 卦气强弱综合断；不可单凭一项。
+  anchor: null
+  quote: 应期取八卦数（如乾应戌亥年月日时）+ 时令旺衰 + 卦气强弱综合断；不可单凭一项。
+  applicable_to: []
+  caveats:
+  - 应期判断属经验性，本书仅给框架
+  - 不应作为现代精准时间预测
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: MEIHUAYISHU-MR-05
+  kind: doctrine
+  statement: 体卦旺则吉力大、凶力减；体卦衰则吉力减、凶力大；判生克须先衡量旺衰。
+  anchor: null
+  quote: 体卦旺则吉力大、凶力减；体卦衰则吉力减、凶力大；判生克须先衡量旺衰。
+  applicable_to: []
+  caveats:
+  - 旺衰参 MR-01-04 / MR-01-05
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: MR-07
+  kind: doctrine
+  statement: 体克用、用克体晴；用生体雨；坎多雨；离多晴；震多雷；巽多风；坤多阴；艮多雾。
+  anchor: null
+  quote: 体克用、用克体晴；用生体雨；坎多雨；离多晴；震多雷；巽多风；坤多阴；艮多雾。
+  applicable_to: []
+  caveats:
+  - 现代气象预报应优先于占断
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: MEIHUAYISHU-MR-07
+  kind: doctrine
+  statement: 用克体凶、体克用顺、用生体得益、体生用耗损、比和顺利；卦象再合参。
+  anchor: null
+  quote: 用克体凶、体克用顺、用生体得益、体生用耗损、比和顺利；卦象再合参。
+  applicable_to: []
+  caveats:
+  - 仅作参考
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: MEIHUAYISHU-021
+  kind: doctrine
+  statement: 体为家宅、用为外事；体克用宅吉、用克体宅有外祟；用生体得外援、体生用宅气泄；比和家宅安。
+  anchor: null
+  quote: 体为家宅、用为外事；体克用宅吉、用克体宅有外祟；用生体得外援、体生用宅气泄；比和家宅安。
+  applicable_to: []
+  caveats:
+  - 现代住宅安全应以工程检测为主
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: MEIHUAYISHU-022
+  kind: doctrine
+  statement: 屋舍新旧、坐向、构件依卦象分别取；体克用屋无大碍。
+  anchor: null
+  quote: 屋舍新旧、坐向、构件依卦象分别取；体克用屋无大碍。
+  applicable_to: []
+  caveats:
+  - 仅供参考
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: MR-08
+  kind: doctrine
+  statement: 体为求婚者、用为对方；用生体或体克用婚成；用克体或体生用难成；比和顺成。
+  anchor: null
+  quote: 体为求婚者、用为对方；用生体或体克用婚成；用克体或体生用难成；比和顺成。
+  applicable_to: []
+  caveats:
+  - 婚姻属现代私事，占断不替代当事人意愿
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: MEIHUAYISHU-MR-08
+  kind: doctrine
+  statement: 体为母、用为子；阳卦为男、阴卦为女；体克用 / 用克体产难；体生用 / 用生体顺产；比和顺。
+  anchor: null
+  quote: 体为母、用为子；阳卦为男、阴卦为女；体克用 / 用克体产难；体生用 / 用生体顺产；比和顺。
+  applicable_to: []
+  caveats:
+  - 现代产前必须以医学超声 / 产检为主，占断不作医学结论
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: MR-09
+  kind: doctrine
+  statement: 体为我、用为财；用生体得财、体克用得财；体生用耗财、用克体破财；比和守成。
+  anchor: null
+  quote: 体为我、用为财；用生体得财、体克用得财；体生用耗财、用克体破财；比和守成。
+  applicable_to: []
+  caveats:
+  - 仅参考
+  - 不应作为投机指引
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: MEIHUAYISHU-MR-09
+  kind: doctrine
+  statement: 体用生克同求财；用克体交易凶；体克用交易顺。
+  anchor: null
+  quote: 体用生克同求财；用克体交易凶；体克用交易顺。
+  applicable_to: []
+  caveats:
+  - 仅参考
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: MR-10
+  kind: doctrine
+  statement: 体为出行者、用为去处；体克用顺、用生体得益；用克体凶忌；体生用劳形耗资。
+  anchor: null
+  quote: 体为出行者、用为去处；体克用顺、用生体得益；用克体凶忌；体生用劳形耗资。
+  applicable_to: []
+  caveats:
+  - 现代出行须以天气、交通为主
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: MEIHUAYISHU-MR-10
+  kind: doctrine
+  statement: 体为占者、用为行人；用生体行人速归；体生用未归；用克体行人遇险；体克用行人受制。
+  anchor: null
+  quote: 体为占者、用为行人；用生体行人速归；体生用未归；用克体行人遇险；体克用行人受制。
+  applicable_to: []
+  caveats:
+  - 仅参考
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: MEIHUAYISHU-029
+  kind: doctrine
+  statement: 体为求见者、用为所见；用生体可见、有益；体克用可见而不悦；用克体不见或有阻。
+  anchor: null
+  quote: 体为求见者、用为所见；用生体可见、有益；体克用可见而不悦；用克体不见或有阻。
+  applicable_to: []
+  caveats:
+  - —
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: MEIHUAYISHU-030
+  kind: doctrine
+  statement: 体为失主、用为物 / 拿者；用方位即物之方；体克用易得、用克体难得；卦象类比物形与去向。
+  anchor: null
+  quote: 体为失主、用为物 / 拿者；用方位即物之方；体克用易得、用克体难得；卦象类比物形与去向。
+  applicable_to: []
+  caveats:
+  - 仅供方向参考
+  - 现代寻物应报警
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: MR-11
+  kind: doctrine
+  statement: 体为病人、用为病；用克体病重；体克用病可制；用生体反耗体；体生用病退；比和病稳。卦象类病象（坎肾、离心、震肝、艮脾）。
+  anchor: null
+  quote: 体为病人、用为病；用克体病重；体克用病可制；用生体反耗体；体生用病退；比和病稳。卦象类病象（坎肾、离心、震肝、艮脾）。
+  applicable_to: []
+  caveats:
+  - '**严禁替代现代医学诊断**'
+  - 占断仅做心理参考
+  - 危及性命须立即就医
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: MR-12
+  kind: doctrine
+  statement: 体为告者、用为对方；体克用胜、用克体败；用生体有人助、体生用己耗。
+  anchor: null
+  quote: 体为告者、用为对方；体克用胜、用克体败；用生体有人助、体生用己耗。
+  applicable_to: []
+  caveats:
+  - 现代诉讼以法律证据为准
+  - 占断不替代律师意见
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: MEIHUAYISHU-MR-12
+  kind: doctrine
+  statement: 体为后人、用为坟；体生用耗、用生体福；用克体凶；体克用安。
+  anchor: null
+  quote: 体为后人、用为坟；体生用耗、用生体福；用克体凶；体克用安。
+  applicable_to: []
+  caveats:
+  - 现代殡葬以法规为主
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: MR-13
+  kind: doctrine
+  statement: 占断本于体用生克 + 卦气衰旺 + 互变补充 + 类象取义；不拘一格，须临占灵动。
+  anchor: null
+  quote: 占断本于体用生克 + 卦气衰旺 + 互变补充 + 类象取义；不拘一格，须临占灵动。
+  applicable_to: []
+  caveats:
+  - 本书重心法多于死法
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null

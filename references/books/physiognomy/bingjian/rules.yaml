@@ -1,0 +1,613 @@
+schema_version: fateradar-rules-v2
+book:
+  slug: bingjian
+  system: physiognomy
+  title: 冰鉴
+  script: traditional
+  fulltext: sources/fulltext/physiognomy/bingjian/fulltext.md
+  fulltext_sha256: 9bb96093eb9b4c1e24435e6683a68d4e23002260ed943cf69830a25453a7f600
+rules:
+- rule_id: BR
+  kind: doctrine
+  statement: 01 神骨章
+  anchor: null
+  quote: 01 神骨章
+  applicable_to: []
+  caveats: []
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: BR-01-01
+  kind: doctrine
+  statement: 一身精神具乎两目；一身骨相具乎面部。文人观人先观神骨，开门见山。
+  anchor:
+    file: sources/fulltext/physiognomy/bingjian/fulltext.md
+    start_line: 19
+    end_line: 19
+  quote: 語云：脫穀為糠，其髓斯存，神之謂也。山騫不崩，惟石為鎮，骨之謂也。一身精神，具乎兩目；一身骨相，具乎面部。他家兼論形骸，文人先觀神骨，開門見山，此為第一。
+  applicable_to: []
+  caveats:
+  - 仅作旁证参考，不参与命盘硬判断
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: BR-01-02
+  kind: doctrine
+  statement: 论神先辨清浊，再辨邪正；辨邪正先观动静。静若含珠、动若水发；静若无人、动若赴敌——澄清到底。
+  anchor:
+    file: sources/fulltext/physiognomy/bingjian/fulltext.md
+    start_line: 21
+    end_line: 21
+  quote: 相家論神，有清濁之辨。清濁易辨，邪正難辨。欲辨邪正，先觀動靜。靜若含珠，動若水發；靜若無人，動若赴敵。此為澄清到底。靜若螢光，動若流水，尖巧喜淫；靜若半睡，動若鹿駭，別才而深思；一為敗器，一為隱流。均之。託跡二清，不可不辨。
+  applicable_to: []
+  caveats:
+  - 仅作旁证参考
+  - '"邪正"是古义概念，现代不作道德评价'
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: BR-01-03
+  kind: doctrine
+  statement: 静若萤光、动若流水：尖巧喜淫；静若半睡、动若鹿骇：别才深思；前者隐流，后者败器。
+  anchor:
+    file: sources/fulltext/physiognomy/bingjian/fulltext.md
+    start_line: 21
+    end_line: 21
+  quote: 相家論神，有清濁之辨。清濁易辨，邪正難辨。欲辨邪正，先觀動靜。靜若含珠，動若水發；靜若無人，動若赴敵。此為澄清到底。靜若螢光，動若流水，尖巧喜淫；靜若半睡，動若鹿駭，別才而深思；一為敗器，一為隱流。均之。託跡二清，不可不辨。
+  applicable_to: []
+  caveats:
+  - 仅作旁证参考
+  - '**贬义判语**："喜淫"、"敗器"、"隐流" 现代必须 reframe，不作人格评价'
+  - 不可据此评价具体个人
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: BR-01-04
+  kind: doctrine
+  statement: 抖擞时易见，断续时难见。小心者从其做不了处看（脱略）；大胆者从其做了处看（针线）。
+  anchor:
+    file: sources/fulltext/physiognomy/bingjian/fulltext.md
+    start_line: 23
+    end_line: 23
+  quote: 凡精神抖擻時易見，斷續時難見。斷者出處斷，續者閉處續。道家所謂收拾入門之說，不了處看其脫略，做了處看其針線。小心者，從其做不了處看之，疏節闊目，若不經意，所謂脫略也。大膽者，從其做了處看之，慎重周密，無有苟且，所謂針線也。二者實看向內處，稍移外便落情態矣，情態易見。
+  applicable_to: []
+  caveats:
+  - 仅作旁证参考
+  - 属古典察人技法，与现代心理学不同源
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: BR-01-05
+  kind: doctrine
+  statement: 骨有九起：天庭、枕、顶、佐串、太阳、眉、鼻、颧、颊。头主天庭、枕、太阳；面主眉、颧。五者备者，柱石器也。
+  anchor:
+    file: sources/fulltext/physiognomy/bingjian/fulltext.md
+    start_line: 25
+    end_line: 25
+  quote: 骨有九起：天庭骨隆起，枕骨強起，頂骨平起，佐串骨角起，太陽骨線起，眉骨伏犀起，鼻骨芽起，顴骨豐起，頰骨平伏起。在頭以天庭骨、枕骨、太陽骨為主；在面以眉骨、顴骨為主。五者備，柱石器也。一則不窮，二則不賤，三動履小勝，四貴異。
+  applicable_to: []
+  caveats:
+  - 仅作旁证参考
+  - '"柱石器"是古典语义，不作现代职业前途判断'
+  - 不作医学骨学解读
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: BR-01-06
+  kind: doctrine
+  statement: 面以青为主（"少年公卿半青面"），紫次之，白下；头联者贵、扁次、碎下；面佳不如头佳。
+  anchor:
+    file: sources/fulltext/physiognomy/bingjian/fulltext.md
+    start_line: 27
+    end_line: 27
+  quote: 骨有色，面以青為主，少年公卿半青面是也。紫次之，白斯下矣。骨有質，頭以聯者為貴，匾者次之，碎為最下。總之，頭少惡骨，面佳不如頭佳。然大而缺天庭，終是賤品；圓而無串骨，半為孤僧；鼻骨犯眉，堂上不壽；顴與眼爭，子嗣不立。此中貴賤，有毫厘千里之辨。
+  applicable_to: []
+  caveats:
+  - 仅作旁证参考
+  - '"贵 / 下" 古义判语'
+  - 现代禁用于评价具体个人
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: BR-01-07
+  kind: doctrine
+  statement: 大而缺天庭终是贱品；圆而无串骨半为孤僧；鼻骨犯眉堂上不寿；颧与眼争子嗣不立。
+  anchor:
+    file: sources/fulltext/physiognomy/bingjian/fulltext.md
+    start_line: 27
+    end_line: 27
+  quote: 骨有色，面以青為主，少年公卿半青面是也。紫次之，白斯下矣。骨有質，頭以聯者為貴，匾者次之，碎為最下。總之，頭少惡骨，面佳不如頭佳。然大而缺天庭，終是賤品；圓而無串骨，半為孤僧；鼻骨犯眉，堂上不壽；顴與眼爭，子嗣不立。此中貴賤，有毫厘千里之辨。
+  applicable_to: []
+  caveats:
+  - '**强贬义判语**——含"贱品 / 孤僧 / 不寿 / 子嗣不立"'
+  - 现代必须 reframe
+  - '**禁止**用于评价具体个人'
+  - 涉及寿命/子嗣属 safety-redlines 范围，输出层须直接屏蔽硬判
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: BINGJIAN-BR
+  kind: doctrine
+  statement: 02 刚柔章
+  anchor: null
+  quote: 02 刚柔章
+  applicable_to: []
+  caveats: []
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: BR-02-01
+  kind: doctrine
+  statement: 既识神骨，当辨刚柔。刚柔即五行生克之数，名"先天种子"；不足用补、有余用泄。
+  anchor:
+    file: sources/fulltext/physiognomy/bingjian/fulltext.md
+    start_line: 31
+    end_line: 31
+  quote: 既識神骨，當辨剛柔。剛柔即五行生剋之數，名曰先天種子。不足用補，有餘用洩，消息直與命通，此其皎然易見。五行有合法。木合火，水合木，此順而合。順者多富，即貴亦在浮沉之間。金與火仇，有時合火，推之水土皆然，此逆而合。逆者其貴非常。然所謂逆合者，金形帶火則然，火形帶金則三十死矣；水形帶土則然，土形帶水則孤寒老矣；木形帶金則然，金形帶木則刀劍隨身矣。此外牽合，俱是雜格，不入文人正論。
+  applicable_to: []
+  caveats:
+  - 仅作旁证参考
+  - '"先天种子"为古义，不作现代医学/遗传学解读'
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: BR-02-02
+  kind: doctrine
+  statement: 木合火、水合木：顺合，多富，贵在浮沉间；金与火仇时合火、水土皆然：逆合，贵非常。
+  anchor:
+    file: sources/fulltext/physiognomy/bingjian/fulltext.md
+    start_line: 31
+    end_line: 31
+  quote: 既識神骨，當辨剛柔。剛柔即五行生剋之數，名曰先天種子。不足用補，有餘用洩，消息直與命通，此其皎然易見。五行有合法。木合火，水合木，此順而合。順者多富，即貴亦在浮沉之間。金與火仇，有時合火，推之水土皆然，此逆而合。逆者其貴非常。然所謂逆合者，金形帶火則然，火形帶金則三十死矣；水形帶土則然，土形帶水則孤寒老矣；木形帶金則然，金形帶木則刀劍隨身矣。此外牽合，俱是雜格，不入文人正論。
+  applicable_to: []
+  caveats:
+  - 仅作旁证参考
+  - '"多富 / 贵非常"古义判富贵'
+  - 现代仅作语义还原
+  - 不作具体个人富贵预测
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: BR-02-03
+  kind: doctrine
+  statement: 金形带火则然，火形带金则三十死矣；水形带土则然，土形带水则孤寒老矣；木形带金则然，金形带木则刀剑随身矣。此外牵合俱是杂格，不入文人正论。
+  anchor:
+    file: sources/fulltext/physiognomy/bingjian/fulltext.md
+    start_line: 31
+    end_line: 31
+  quote: 既識神骨，當辨剛柔。剛柔即五行生剋之數，名曰先天種子。不足用補，有餘用洩，消息直與命通，此其皎然易見。五行有合法。木合火，水合木，此順而合。順者多富，即貴亦在浮沉之間。金與火仇，有時合火，推之水土皆然，此逆而合。逆者其貴非常。然所謂逆合者，金形帶火則然，火形帶金則三十死矣；水形帶土則然，土形帶水則孤寒老矣；木形帶金則然，金形帶木則刀劍隨身矣。此外牽合，俱是雜格，不入文人正論。
+  applicable_to: []
+  caveats:
+  - '**强贬义/凶语**——"三十死 / 孤寒老 / 刀剑随身"'
+  - '**现代严禁直接套用**'
+  - 输出层必须屏蔽寿命/灾祸硬判（safety-redlines）
+  - 仅作"古典语义还原"
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: BR-02-04
+  kind: doctrine
+  statement: 喜高怒重、过目辄忘——近粗；伏不伉跳不扬——近蠢；初浅转深——近奸。
+  anchor:
+    file: sources/fulltext/physiognomy/bingjian/fulltext.md
+    start_line: 33
+    end_line: 33
+  quote: 五行為外剛柔，內剛柔則喜怒、伏跳、深淺者是。喜高怒重，過目輒忘，近粗。伏亦不伉，跳亦不揚，近蠢。初念甚淺，轉念甚深，近奸。內奸者，功名可期。粗蠢各半者，勝人以壽。純奸能豁達者，其人終成。純粗無周密者，半途必棄。觀人所忽，十得八九矣。
+  applicable_to: []
+  caveats:
+  - 仅作旁证参考
+  - '**贬义**——"粗 / 蠢 / 奸" 现代必须 reframe 为"古典语义还原"，不作人格诊断'
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: BR-02-05
+  kind: doctrine
+  statement: 内奸者功名可期；粗蠢各半者胜人以寿；纯奸能豁达者其人终成；纯粗无周密者半途必弃。
+  anchor:
+    file: sources/fulltext/physiognomy/bingjian/fulltext.md
+    start_line: 33
+    end_line: 33
+  quote: 五行為外剛柔，內剛柔則喜怒、伏跳、深淺者是。喜高怒重，過目輒忘，近粗。伏亦不伉，跳亦不揚，近蠢。初念甚淺，轉念甚深，近奸。內奸者，功名可期。粗蠢各半者，勝人以壽。純奸能豁達者，其人終成。純粗無周密者，半途必棄。觀人所忽，十得八九矣。
+  applicable_to: []
+  caveats:
+  - 仅作旁证参考
+  - '**含寿命预测**——现代屏蔽寿命硬判'
+  - '"功名可期 / 终成 / 必弃"古义判语，不作具体个人事业预测'
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: BINGJIAN-015
+  kind: doctrine
+  statement: 03 容貌章
+  anchor: null
+  quote: 03 容貌章
+  applicable_to: []
+  caveats: []
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: BR-03-01
+  kind: doctrine
+  statement: 容以七尺为期，貌合两仪而论；背腹手足实接五方，耳目口鼻全通四气；相顾相称则福生。
+  anchor:
+    file: sources/fulltext/physiognomy/bingjian/fulltext.md
+    start_line: 37
+    end_line: 37
+  quote: 容以七尺為期，貌合兩儀而論。背腹手足，實接五方；耳目口鼻，全通四氣。相顧相稱則福生，如肖如湊，則林林總總不足論也。
+  applicable_to: []
+  caveats:
+  - 仅作旁证参考
+  - '"福生"古义，不作具体福报预测'
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: BR-03-02
+  kind: doctrine
+  statement: 容贵整：短不豕蹲、长不茅立、肥不熊餐、瘦不鹊寒；五短多贵、两大不扬；负重高官、鼠行好利。
+  anchor:
+    file: sources/fulltext/physiognomy/bingjian/fulltext.md
+    start_line: 39
+    end_line: 39
+  quote: 容貴整，整非整齊之謂。短不豕蹲，長不茅立，肥不熊餐，瘦不鵲寒，所謂整也。背宜圓，腹宜突坦，手宜溫軟，曲若彎弓，足宜豐滿，下宜藏蛋，所謂整也。五短多貴，兩大不揚，負重高官，鼠行好利，此為定格。他如手長其身，身長過於體，配以佳骨，定主封侯。羅紋滿身，胸有秀骨，配以妙神，不拜相即鼎甲。
+  applicable_to: []
+  caveats:
+  - 仅作旁证参考
+  - '**贬义**——"鼠行好利 / 两大不扬"'
+  - 现代禁止用于职业/招聘/婚配判断
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: BR-03-03
+  kind: doctrine
+  statement: 科名星：印堂、眉尾时隐时见，13-39 岁随时见；阴骘纹：眼角阴雨便见、如三叉，19-46 岁随时见。二见全大物；得一亦贵；二者全无前程莫问。
+  anchor:
+    file: sources/fulltext/physiognomy/bingjian/fulltext.md
+    start_line: 41
+    end_line: 41
+  quote: 相貌家有清、古、奇、秀之別，總之不必，須看科名星、陰騭紋為主。科名星，十三歲至三十九歲隨時而見；陰騭紋，十九歲至四十六歲隨時而見。二見全，大物也，得一亦貴。科名星見於印堂、眉尾，時隱時見，或為剛針，或為小丸，常有光氣，酒後及發怒時易見。陰騭紋見於眼角，陰雨便見，如三叉樣，假寐時最易見。得科名星早發，得陰騭紋遲發。二者全無，前程莫問。陰騭紋見於喉間，又主子貴，雜路不在此格。
+  applicable_to: []
+  caveats:
+  - 仅作旁证参考
+  - '"前程莫问"是古义铁口判语'
+  - '**现代严禁直接套用**到高考、升迁、考公等具体场合'
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: BR-03-04
+  kind: doctrine
+  statement: 目深、鼻高、口阔方、齿多固、眼角入鬓、耳白过面：贵徵；舌脱、橘面、文人眼伤、鹰准动便食人：贱徵。
+  anchor:
+    file: sources/fulltext/physiognomy/bingjian/fulltext.md
+    start_line: 43
+    end_line: 43
+  quote: 目者面之淵，不深則不清；鼻者面之山，不高則不靈。口闊而方祿千鍾，齒多而固不家食。眼角入鬢，必掌刑名；耳白過面，終身錢穀。此貴徵也。舌脫無官，橘面不顯；文人不傷在眼，鷹準動便食人。此賤徵也。
+  applicable_to: []
+  caveats:
+  - '**强贬义判语**——"贱徵 / 食人"'
+  - 现代必须 reframe
+  - '**禁止**用于评价具体个人'
+  - 涉及职业 / 道德判断属现代禁用
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: BINGJIAN-020
+  kind: doctrine
+  statement: 04 情态章
+  anchor: null
+  quote: 04 情态章
+  applicable_to: []
+  caveats: []
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: BR-04-01
+  kind: doctrine
+  statement: 弱态—飞鸟依人；狂态—不衫不履；疏懒态—坐立自如；周旋态—饰其中机、察言观色。皆根其性，不由矫枉。
+  anchor:
+    file: sources/fulltext/physiognomy/bingjian/fulltext.md
+    start_line: 49
+    end_line: 49
+  quote: 人有弱態，有狂態，有疏懶態，有周旋態。飛鳥依人，情致婉轉，此弱態也。不衫不履，旁若無人，此狂態也。坐立自如，問答隨意，此疏懶態也。飾其中機，不苟言笑，察言觀色，趨吉避凶，此周旋態也。皆根其性，不由矯枉。弱而不媚，狂而不譁，疏懶而真誠，周旋而健舉，皆能成器；反此，敗類也。大概亦得二三矣。
+  applicable_to: []
+  caveats:
+  - 仅作旁证参考
+  - 本书强调"皆根其性、不由矫枉"，可作传统人格四分模型
+  - 但不作现代心理学诊断
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: BR-04-02
+  kind: doctrine
+  statement: 弱而不媚、狂而不譁、疏懒而真诚、周旋而健举：皆能成器；反此者，敗類也。
+  anchor:
+    file: sources/fulltext/physiognomy/bingjian/fulltext.md
+    start_line: 49
+    end_line: 49
+  quote: 人有弱態，有狂態，有疏懶態，有周旋態。飛鳥依人，情致婉轉，此弱態也。不衫不履，旁若無人，此狂態也。坐立自如，問答隨意，此疏懶態也。飾其中機，不苟言笑，察言觀色，趨吉避凶，此周旋態也。皆根其性，不由矯枉。弱而不媚，狂而不譁，疏懶而真誠，周旋而健舉，皆能成器；反此，敗類也。大概亦得二三矣。
+  applicable_to: []
+  caveats:
+  - '**贬义**——"敗類"'
+  - 现代必须 reframe
+  - '**严禁**直接套用到具体个人评价'
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: BR-04-03
+  kind: doctrine
+  statement: 神忽他往、独冷笑：深险难近，不足与论情；极口称是、故意诋毁：卑庸可耻，不足与论事；漫无可否、无故堕泪：愚昧之仁，不足与谈心。三者不必定人终身。
+  anchor:
+    file: sources/fulltext/physiognomy/bingjian/fulltext.md
+    start_line: 51
+    end_line: 51
+  quote: 前者恒態，亦有時態。方與對談，神忽他往；眾方稱言，此獨冷笑；深險難近，不足與論情。言不必當，極口稱是；未交此人，故意詆毀；卑庸可恥，不足與論事。漫無可否，臨事遲回；不甚關情，亦為墮淚；愚昧之仁，不足與談心。三者不必定人終身。反此以求，可以交天下士。
+  applicable_to: []
+  caveats:
+  - 仅作旁证参考
+  - 本书自带"不必定人终身"的反铁口约束，应予保留
+  - 现代输出时须强调"暂态而非定型"
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: BINGJIAN-024
+  kind: doctrine
+  statement: 05 须眉章
+  anchor: null
+  quote: 05 须眉章
+  applicable_to: []
+  caveats: []
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: BR-05-01
+  kind: doctrine
+  statement: 鬚眉男子。少年两道眉、临老一林鬚——眉主早成、鬚主晚运。
+  anchor:
+    file: sources/fulltext/physiognomy/bingjian/fulltext.md
+    start_line: 55
+    end_line: 55
+  quote: 鬚眉男子。未有鬚眉不具，可稱男子者。少年兩道眉，臨老一林鬚。此言眉主早成，鬚主晚運也。然而，紫面無眉自貴，暴腮缺鬚亦榮。郭令公半部不全，霍剽姚一副寡臉。此等間逢。畢竟有鬚眉者十之九也。眉尚彩，彩者，杪處反光是也。貴人有三層彩，有一二層彩者，所謂文明氣象。宜疏爽不宜凝滯，一望有乘風翔舞之勢者，上也；如潑墨者，最下。倒豎者，上也；下垂者，最下。長有起伏，短有神氣，濃忌浮光，淡忌枯索。如劍者掌兵權，如帚者赴法場。箇中亦有微茫，不可不辨。他如壓眼不利，散亂多憂，細而帶媚，粗而無文，最是下乘。
+  applicable_to: []
+  caveats:
+  - 仅作旁证参考
+  - 现代不作"早成晚运"的硬性人生分期
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: BR-05-02
+  kind: doctrine
+  statement: 眉尚彩；贵人三层彩；一二层为文明气象。宜疏爽不宜凝滞、宜倒竖不宜下垂；如剑者掌兵权、如帚者赴法场。
+  anchor:
+    file: sources/fulltext/physiognomy/bingjian/fulltext.md
+    start_line: 55
+    end_line: 55
+  quote: 鬚眉男子。未有鬚眉不具，可稱男子者。少年兩道眉，臨老一林鬚。此言眉主早成，鬚主晚運也。然而，紫面無眉自貴，暴腮缺鬚亦榮。郭令公半部不全，霍剽姚一副寡臉。此等間逢。畢竟有鬚眉者十之九也。眉尚彩，彩者，杪處反光是也。貴人有三層彩，有一二層彩者，所謂文明氣象。宜疏爽不宜凝滯，一望有乘風翔舞之勢者，上也；如潑墨者，最下。倒豎者，上也；下垂者，最下。長有起伏，短有神氣，濃忌浮光，淡忌枯索。如劍者掌兵權，如帚者赴法場。箇中亦有微茫，不可不辨。他如壓眼不利，散亂多憂，細而帶媚，粗而無文，最是下乘。
+  applicable_to: []
+  caveats:
+  - '**强贬义判语**——"赴法场"'
+  - '**现代严禁**直接套用'
+  - 现代仅作传统语义还原
+  - 属 safety-redlines 范围
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: BR-05-03
+  kind: doctrine
+  statement: 须取与眉相称；多者宜清疏缩参差，少者宜健光圆有情。捲如螺、长如索、劲如戟、亮如银条皆官途大器。
+  anchor:
+    file: sources/fulltext/physiognomy/bingjian/fulltext.md
+    start_line: 57
+    end_line: 57
+  quote: 鬚有多寡，取其與眉相稱。多者宜清、宜疏、宜縮、宜參差不齊；少者宜健、宜光、宜圓、宜有情照顧。捲如螺紋，聰明豁達；長如解索，風流榮顯；勁如張戟，位高權重；亮若銀條，早登廊廟。皆官途大器。紫鬚劍眉，聲音洪壯；蓬然虯亂，嘗見耳後；配以神骨清奇，不千里封侯，亦十年拜相。他如輔鬚先長終不利，人中不見一世窮，鼻毛接鬚多晦滯，短髭遮口餓終身，此其顯可見矣。
+  applicable_to: []
+  caveats:
+  - 仅作旁证参考
+  - '"官途大器"古义'
+  - 现代不作仕途预测
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: BR-05-04
+  kind: doctrine
+  statement: 辅须先长终不利；人中不见一世穷；鼻毛接须多晦滞；短髭遮口饿终身。
+  anchor:
+    file: sources/fulltext/physiognomy/bingjian/fulltext.md
+    start_line: 57
+    end_line: 57
+  quote: 鬚有多寡，取其與眉相稱。多者宜清、宜疏、宜縮、宜參差不齊；少者宜健、宜光、宜圓、宜有情照顧。捲如螺紋，聰明豁達；長如解索，風流榮顯；勁如張戟，位高權重；亮若銀條，早登廊廟。皆官途大器。紫鬚劍眉，聲音洪壯；蓬然虯亂，嘗見耳後；配以神骨清奇，不千里封侯，亦十年拜相。他如輔鬚先長終不利，人中不見一世窮，鼻毛接鬚多晦滯，短髭遮口餓終身，此其顯可見矣。
+  applicable_to: []
+  caveats:
+  - '**强贬义**——"一世穷 / 饿终身"'
+  - '**现代严禁**直接套用'
+  - 属 safety-redlines 范围
+  - 输出层屏蔽贫富 / 生计硬判
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: BINGJIAN-029
+  kind: doctrine
+  statement: 06 声音章
+  anchor: null
+  quote: 06 声音章
+  applicable_to: []
+  caveats: []
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: BR-06-01
+  kind: doctrine
+  statement: 人之声音犹天地之气，轻清上浮、重浊下坠；始于丹田、发于喉、转于舌、辨于齿、出于唇；与五音相配。
+  anchor:
+    file: sources/fulltext/physiognomy/bingjian/fulltext.md
+    start_line: 61
+    end_line: 61
+  quote: 人之聲音，猶天地之氣，輕清上浮，重濁下墜。始於丹田，發於喉，轉於舌，辨於齒，出於唇，實與五音相配。取其自成一家，不必一一合調。聞聲相思，其人斯在，寧必一見決雌雄哉。
+  applicable_to: []
+  caveats:
+  - 仅作旁证参考
+  - 不作语音学/医学诊断
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: BR-06-02
+  kind: doctrine
+  statement: 声主张，寻发处见；音主敛，寻歇处见。辨声必辨喜怒哀乐：喜如折竹当风、怒如阴雷起地、哀如石击薄冰、樂如雪舞风前；以轻清为上。
+  anchor:
+    file: sources/fulltext/physiognomy/bingjian/fulltext.md
+    start_line: 63
+    end_line: 63
+  quote: 聲與音不同。聲主張，尋發處見；音主斂，尋歇處見。辨聲之法，必辨喜怒哀樂。喜如折竹當風，怒如陰雷起地，哀如石擊薄冰，樂如雪舞風前，大概以輕清為上。聲雄者，如鐘則貴，如鑼則賤；聲雌者，如雉鳴則貴，如蛙鳴則賤。遠聽聲洪，近聽悠揚，起若乘風，止若拍瑟，上上；大言不張唇，細言若無齒，上也。出而不返，荒郊牛鳴；急而不達，深夜鼠嚼；或字句相聯，喋喋利口；或齒喉隔斷，喈喈混談；市井之夫，何足比數。
+  applicable_to: []
+  caveats:
+  - 仅作旁证参考
+  - 不作具体个人情绪 / 病情诊断
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: BR-06-03
+  kind: doctrine
+  statement: 声雄如钟则贵、如锣则贱；声雌如雉鸣则贵、如蛙鸣则贱。市井之夫，何足比数。
+  anchor:
+    file: sources/fulltext/physiognomy/bingjian/fulltext.md
+    start_line: 63
+    end_line: 63
+  quote: 聲與音不同。聲主張，尋發處見；音主斂，尋歇處見。辨聲之法，必辨喜怒哀樂。喜如折竹當風，怒如陰雷起地，哀如石擊薄冰，樂如雪舞風前，大概以輕清為上。聲雄者，如鐘則貴，如鑼則賤；聲雌者，如雉鳴則貴，如蛙鳴則賤。遠聽聲洪，近聽悠揚，起若乘風，止若拍瑟，上上；大言不張唇，細言若無齒，上也。出而不返，荒郊牛鳴；急而不達，深夜鼠嚼；或字句相聯，喋喋利口；或齒喉隔斷，喈喈混談；市井之夫，何足比數。
+  applicable_to: []
+  caveats:
+  - '**强贬义**——"贱 / 市井之夫"'
+  - '**现代必须 reframe**'
+  - 禁止用于身份评价
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: BR-06-04
+  kind: doctrine
+  statement: 贫贱者有声无音，尖巧者有音无声，所谓"禽无声、兽无音"是也。
+  anchor:
+    file: sources/fulltext/physiognomy/bingjian/fulltext.md
+    start_line: 65
+    end_line: 65
+  quote: 音者，聲之餘也，與聲相去不遠，此則從細處曲中見直。貧賤者有聲無音，尖巧者有音無聲，所謂禽無聲、獸無音是也。凡人說話是聲，其散在左右前後是音。開談若含情，話終多餘響，不惟雅人，兼稱國士；闊口無溢出，尖舌無窕音，不惟實厚，兼獲名高。
+  applicable_to: []
+  caveats:
+  - '**极强贬义**——"贫贱 / 禽 / 兽"'
+  - '**现代严格禁用**'
+  - 仅作传统语义存档
+  - 输出层屏蔽贫富身份判断
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: BINGJIAN-034
+  kind: doctrine
+  statement: 07 气色章
+  anchor: null
+  quote: 07 气色章
+  applicable_to: []
+  caveats: []
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: BR-07-01
+  kind: doctrine
+  statement: 面部如命、气色如运。大命固宜整齐、小运亦当亨泰。光焰不发：珠玉与瓦砾同观；藻绘未扬：缯帛与布葛齐价。大者主一生祸福、小者亦三月吉凶。
+  anchor:
+    file: sources/fulltext/physiognomy/bingjian/fulltext.md
+    start_line: 69
+    end_line: 69
+  quote: 面部如命，氣色如運。大命固宜整齊，小運亦當亨泰。是故光焰不發，珠玉與瓦礫同觀；藻繪未揚，繒帛與布葛齊價。大者主一生禍福，小者亦三月吉凶。
+  applicable_to: []
+  caveats:
+  - 仅作旁证参考
+  - '"祸福 / 吉凶"古义'
+  - 现代不作具体祸福预测
+  - 属 safety-redlines 范围
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: BR-07-02
+  kind: doctrine
+  statement: 终身气色：少淡、长明、壮艳、老素；年气色：春青、夏红、秋黄、冬白；月气色：朔后森发、望后隐跃；日气色：早透、昼满、晚停、暮静。
+  anchor:
+    file: sources/fulltext/physiognomy/bingjian/fulltext.md
+    start_line: 71
+    end_line: 71
+  quote: 人以氣為主，於內為精神，於外為氣色。有終身之氣色，少淡、長明、壯艷、老素是也。有一年之氣色，春青、夏紅、秋黃、冬白是也。有一月之氣色，朔後森發，望後隱躍是也。有一日之氣色，早透、晝滿、晚停、暮靜是也。
+  applicable_to: []
+  caveats:
+  - 仅作旁证参考
+  - 古典色相分类，不作现代医学之"面色"诊断
+  - 不作具体吉凶预测
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: BR-07-03
+  kind: doctrine
+  statement: 科名中人以黄为主：黄云盖顶必掇大魁、黄翅入鬓进身不远、印堂黄色富贵逼人、学堂紫净明年及第。
+  anchor:
+    file: sources/fulltext/physiognomy/bingjian/fulltext.md
+    start_line: 73
+    end_line: 73
+  quote: 科名中人，以黃色為主，此正色也。黃雲蓋頂，必掇大魁；黃翅入鬢，進身不遠；印堂黃色，富貴逼人；學堂紫淨，明年及第。他如眼角霞鮮，決利小考；印堂垂紫，動獲小利；紅暈中分，定產佳兒；兩顴紅潤，骨肉發跡。由此推之，足見一斑矣。
+  applicable_to: []
+  caveats:
+  - 仅作旁证参考
+  - '"必掇大魁 / 富贵逼人 / 明年及第"是古义铁口判语'
+  - '**现代严禁**直接套用到考试 / 升迁 / 中标等具体场合'
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: BR-07-04
+  kind: doctrine
+  statement: 色忌白、忌青；青常见眼底、白常发眉端。心事忧劳青如凝墨；祸生不测青如浮烟；酒色憊倦白如卧羊；灾晦催人白如傅粉。最不佳者：太白夹日月、烏鳥集天庭、桃花散面颊、赪尾守地阁。
+  anchor:
+    file: sources/fulltext/physiognomy/bingjian/fulltext.md
+    start_line: 75
+    end_line: 75
+  quote: 色忌白、忌青。青常見於眼底，白常發於眉端。然亦有不同。心事憂勞，青如凝墨；禍生不測，青如浮煙；酒色憊倦，白如臥羊；災晦催人，白如傅粉。又或青而帶紫，金形遇之而飛揚；白而有光，土庚相當亦富貴；又不在此論也。最不佳者，太白夾日月，烏鳥集天庭，桃花散面頰，赬尾守地閣。有一於此，前程退落，禍患再三矣。
+  applicable_to: []
+  caveats:
+  - '**强凶语**——"祸 / 灾 / 前程退落 / 禍患再三"'
+  - '**现代严禁**直接预测灾祸'
+  - 属 safety-redlines
+  - 输出层屏蔽灾祸 / 病况硬判
+  - 仅作传统语义还原
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null

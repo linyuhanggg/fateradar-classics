@@ -1,0 +1,242 @@
+schema_version: fateradar-rules-v2
+book:
+  slug: xingli-kaoyuan
+  system: selection
+  title: 星历考原
+  script: traditional
+  fulltext: sources/fulltext/selection/xingli-kaoyuan/fulltext.md
+  fulltext_sha256: 419ee9d7fe62e6e9bf597d1325ae7476a952c14bcefe967cc1d622bf5e04f9ff
+rules:
+- rule_id: KR-01
+  kind: doctrine
+  statement: 本书为康熙朝官方择日典籍考源；其规则定位是"神煞出处与起例口诀的官方源头"，不直接定具体某日吉凶。
+  anchor: null
+  quote: 本书为康熙朝官方择日典籍考源；其规则定位是"神煞出处与起例口诀的官方源头"，不直接定具体某日吉凶。
+  applicable_to: []
+  caveats:
+  - 文化参考，非事实判断
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: KR-02
+  kind: doctrine
+  statement: 五纪（岁、月、日、星辰、历数）与甲历（六十甲子）共同构成择日体系的时间坐标。
+  anchor: null
+  quote: 五纪（岁、月、日、星辰、历数）与甲历（六十甲子）共同构成择日体系的时间坐标。
+  applicable_to: []
+  caveats: []
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: KR-03
+  kind: doctrine
+  statement: 十二月配十二消息卦：复（子）、临（丑）、泰（寅）、大壮（卯）、夬（辰）、乾（巳）、姤（午）、遯（未）、否（申）、观（酉）、剥（戌）、坤（亥）。
+  anchor: null
+  quote: 十二月配十二消息卦：复（子）、临（丑）、泰（寅）、大壮（卯）、夬（辰）、乾（巳）、姤（午）、遯（未）、否（申）、观（酉）、剥（戌）、坤（亥）。
+  applicable_to: []
+  caveats: []
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: KR-04
+  kind: doctrine
+  statement: 二十四方位（十二支 + 八天干 + 四维）对应二十四节气；方位与节气共构空间-时间矩阵。
+  anchor: null
+  quote: 二十四方位（十二支 + 八天干 + 四维）对应二十四节气；方位与节气共构空间-时间矩阵。
+  applicable_to: []
+  caveats: []
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: KR-05
+  kind: doctrine
+  statement: 五虎遁（年起月）：甲己起丙寅、乙庚起戊寅、丙辛起庚寅、丁壬起壬寅、戊癸起甲寅；五鼠遁（日起时）：甲己起甲子、乙庚起丙子、丙辛起戊子、丁壬起庚子、戊癸起壬子。
+  anchor: null
+  quote: 五虎遁（年起月）：甲己起丙寅、乙庚起戊寅、丙辛起庚寅、丁壬起壬寅、戊癸起甲寅；五鼠遁（日起时）：甲己起甲子、乙庚起丙子、丙辛起戊子、丁壬起庚子、戊癸起壬子。
+  applicable_to: []
+  caveats: []
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: KR-06
+  kind: doctrine
+  statement: 三合：申子辰水、亥卯未木、寅午戌火、巳酉丑金；五合（天干）：甲己土、乙庚金、丙辛水、丁壬木、戊癸火；六合（地支）：子丑、寅亥、卯戌、辰酉、巳申、午未。
+  anchor: null
+  quote: 三合：申子辰水、亥卯未木、寅午戌火、巳酉丑金；五合（天干）：甲己土、乙庚金、丙辛水、丁壬木、戊癸火；六合（地支）：子丑、寅亥、卯戌、辰酉、巳申、午未。
+  applicable_to: []
+  caveats: []
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: KR-07
+  kind: doctrine
+  statement: 上中下三元各 60 年，每元起九星入中宫；上元起一白、中元起四绿、下元起七赤；逐年逆转。
+  anchor: null
+  quote: 上中下三元各 60 年，每元起九星入中宫；上元起一白、中元起四绿、下元起七赤；逐年逆转。
+  applicable_to: []
+  caveats: []
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: KR-08
+  kind: doctrine
+  statement: 太岁为年神之首，居当年地支位；年神有岁德合 / 岁枝德等吉神，与大将军 / 太阴 / 白虎 / 豹尾 / 金神七煞 / 力士等凶神。
+  anchor: null
+  quote: 太岁为年神之首，居当年地支位；年神有岁德合 / 岁枝德等吉神，与大将军 / 太阴 / 白虎 / 豹尾 / 金神七煞 / 力士等凶神。
+  applicable_to: []
+  caveats:
+  - 文化参考，非事实判断
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: KR-09
+  kind: doctrine
+  statement: 金神七煞由年干推算，每年所占方位不同；为方位之大凶神，忌动土 / 修造。
+  anchor: null
+  quote: 金神七煞由年干推算，每年所占方位不同；为方位之大凶神，忌动土 / 修造。
+  applicable_to: []
+  caveats:
+  - 文化参考，非事实判断
+  - 具体方位由 mingli-master.selection.v1 输出
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: KR-10
+  kind: doctrine
+  statement: 大将军居太岁三方之冲（一说三方对宫），主战伐之神；忌兴造、动土、伐木。
+  anchor: null
+  quote: 大将军居太岁三方之冲（一说三方对宫），主战伐之神；忌兴造、动土、伐木。
+  applicable_to: []
+  caveats:
+  - 文化参考，非事实判断
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: KR-11
+  kind: doctrine
+  statement: 天德（按月轮转吉方）、月德（与天德并列）、月空（虚位之吉）、母仓（主孳息）共为月吉神核心；月德合 / 天德合为其合神。
+  anchor: null
+  quote: 天德（按月轮转吉方）、月德（与天德并列）、月空（虚位之吉）、母仓（主孳息）共为月吉神核心；月德合 / 天德合为其合神。
+  applicable_to: []
+  caveats: []
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: KR-12
+  kind: doctrine
+  statement: 月建（该月建除之首）；月破（月建对冲日）；月厌（按月逆轮）；月害（六害关系）；为月凶神核心。
+  anchor: null
+  quote: 月建（该月建除之首）；月破（月建对冲日）；月厌（按月逆轮）；月害（六害关系）；为月凶神核心。
+  applicable_to: []
+  caveats:
+  - 文化参考，非事实判断
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: KR-13
+  kind: doctrine
+  statement: 四废：春庚辛日、夏壬癸日、秋甲乙日、冬丙丁日；四离：二分二至前一日；四绝：四立前一日。共为节气交替之大忌。
+  anchor: null
+  quote: 四废：春庚辛日、夏壬癸日、秋甲乙日、冬丙丁日；四离：二分二至前一日；四绝：四立前一日。共为节气交替之大忌。
+  applicable_to: []
+  caveats:
+  - 文化参考，非事实判断
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: KR-14
+  kind: doctrine
+  statement: 黄道六神：青龙、明堂、金匮、天德、玉堂、司命（吉）；黑道六神：天刑、朱雀、白虎、天牢、玄武、勾陈（凶）；按月建逐日轮配。
+  anchor: null
+  quote: 黄道六神：青龙、明堂、金匮、天德、玉堂、司命（吉）；黑道六神：天刑、朱雀、白虎、天牢、玄武、勾陈（凶）；按月建逐日轮配。
+  applicable_to: []
+  caveats: []
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: KR-15
+  kind: doctrine
+  statement: 二十八宿（角亢氐房心尾箕…）按七曜（日月火水木金土）周而复始配日；每宿主吉凶不同。
+  anchor: null
+  quote: 二十八宿（角亢氐房心尾箕…）按七曜（日月火水木金土）周而复始配日；每宿主吉凶不同。
+  applicable_to: []
+  caveats: []
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: KR-16
+  kind: doctrine
+  statement: 时神之首为贵登天门（贵人乘天乙之时）；其次为四大吉时；按日干起十二贵人时辰。
+  anchor: null
+  quote: 时神之首为贵登天门（贵人乘天乙之时）；其次为四大吉时；按日干起十二贵人时辰。
+  applicable_to: []
+  caveats: []
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: KR-17
+  kind: doctrine
+  statement: 卷六将"用事"系统化为六十事项（祭祀 / 嫁娶 / 起造 / 商事 / 安葬 / 出行 / 农事 / 医疗 / 沐浴 / 修缮 等）；每事项有官方"宜 / 忌"通例。
+  anchor: null
+  quote: 卷六将"用事"系统化为六十事项（祭祀 / 嫁娶 / 起造 / 商事 / 安葬 / 出行 / 农事 / 医疗 / 沐浴 / 修缮 等）；每事项有官方"宜 / 忌"通例。
+  applicable_to: []
+  caveats:
+  - 文化参考，非事实判断
+  - 具体某事某日的吉凶由 mingli-master.selection.v1 输出
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: KR-18
+  kind: doctrine
+  statement: 嫁娶择日宜天德 / 月德 / 天德合 / 月德合 / 三合 / 六合等吉神；忌月厌 / 月破 / 受死 / 八专 / 四废等。
+  anchor: null
+  quote: 嫁娶择日宜天德 / 月德 / 天德合 / 月德合 / 三合 / 六合等吉神；忌月厌 / 月破 / 受死 / 八专 / 四废等。
+  applicable_to: []
+  caveats:
+  - 文化参考，非事实判断
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: KR-19
+  kind: doctrine
+  statement: 安葬宜鸣吠 / 鸣吠对 / 月恩 / 三合等；忌重丧 / 复日 / 重日 / 月破 / 月厌等。
+  anchor: null
+  quote: 安葬宜鸣吠 / 鸣吠对 / 月恩 / 三合等；忌重丧 / 复日 / 重日 / 月破 / 月厌等。
+  applicable_to: []
+  caveats:
+  - 文化参考，非事实判断
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: KR-20
+  kind: doctrine
+  statement: 起造 / 修造动土宜成日 / 开日 / 月恩 / 母仓；忌土王用事 / 月破 / 月厌 / 大将军 / 金神七煞方。
+  anchor: null
+  quote: 起造 / 修造动土宜成日 / 开日 / 月恩 / 母仓；忌土王用事 / 月破 / 月厌 / 大将军 / 金神七煞方。
+  applicable_to: []
+  caveats:
+  - 文化参考，非事实判断
+  - 方位避忌由 mingli-master.selection.v1 与 fengshui pack 联合输出
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null

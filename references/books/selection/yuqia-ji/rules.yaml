@@ -1,0 +1,255 @@
+schema_version: fateradar-rules-v2
+book:
+  slug: yuqia-ji
+  system: selection
+  title: 玉匣记
+  script: traditional
+  fulltext: sources/fulltext/selection/yuqia-ji/fulltext.md
+  fulltext_sha256: 93a9b8cde53e3fd6efafe509523fa3ec7c98181b7835c1933703f5cd5563d912
+rules:
+- rule_id: JR-01
+  kind: doctrine
+  statement: 本书为民间通书系经典；其规则定位是"民俗信仰与禁忌日的汇编"，与官方典籍冲突时以官方为准。所有规则均为民俗参考，不构成事实判断。
+  anchor: null
+  quote: 本书为民间通书系经典；其规则定位是"民俗信仰与禁忌日的汇编"，与官方典籍冲突时以官方为准。所有规则均为民俗参考，不构成事实判断。
+  applicable_to: []
+  caveats:
+  - 文化参考，非事实判断
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: JR-02
+  kind: doctrine
+  statement: 本书核心组"许真君日期"逐月列出宜祭祀 / 沐浴 / 修真 / 上章 / 用事 / 起造 / 出行 / 嫁娶等的吉日。具体日子由 tool 根据农历输出。
+  anchor: null
+  quote: 本书核心组"许真君日期"逐月列出宜祭祀 / 沐浴 / 修真 / 上章 / 用事 / 起造 / 出行 / 嫁娶等的吉日。具体日子由 tool 根据农历输出。
+  applicable_to: []
+  caveats:
+  - 文化参考，非事实判断
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: JR-03
+  kind: doctrine
+  statement: 三元：上元正月十五（天官诞）、中元七月十五（地官诞）、下元十月十五（水官诞）。五腊：天腊正月初一、地腊五月初五、道德腊七月初七、民岁腊十月初一、王侯腊十二月初八。诸日宜祭祀斋戒。
+  anchor: null
+  quote: 三元：上元正月十五（天官诞）、中元七月十五（地官诞）、下元十月十五（水官诞）。五腊：天腊正月初一、地腊五月初五、道德腊七月初七、民岁腊十月初一、王侯腊十二月初八。诸日宜祭祀斋戒。
+  applicable_to: []
+  caveats: []
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: JR-04
+  kind: doctrine
+  statement: 二十八宿按七曜（日月火水木金土）周而复始配日；本书有"角木蛟亢金龙氐土貉…"长歌，逐宿配吉凶事项；与协纪辨方书卷五口径基本一致。
+  anchor: null
+  quote: 二十八宿按七曜（日月火水木金土）周而复始配日；本书有"角木蛟亢金龙氐土貉…"长歌，逐宿配吉凶事项；与协纪辨方书卷五口径基本一致。
+  applicable_to: []
+  caveats: []
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: JR-05
+  kind: doctrine
+  statement: 彭祖百忌歌：天干十忌（甲不开仓 / 乙不栽植 / …）+ 地支十二忌（子不问卜 / 丑不冠带 / …）；按当日干支匹配避忌事项。
+  anchor: null
+  quote: 彭祖百忌歌：天干十忌（甲不开仓 / 乙不栽植 / …）+ 地支十二忌（子不问卜 / 丑不冠带 / …）；按当日干支匹配避忌事项。
+  applicable_to: []
+  caveats:
+  - 文化参考，非事实判断
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: JR-06
+  kind: doctrine
+  statement: 每年农历十三个固定日为杨公忌（正月十三、二月十一、三月初九、四月初七、五月初五、六月初三、七月初一/廿九、八月廿七、九月廿五、十月廿三、十一月廿一、十二月十九）；忌一切用事。
+  anchor: null
+  quote: 每年农历十三个固定日为杨公忌（正月十三、二月十一、三月初九、四月初七、五月初五、六月初三、七月初一/廿九、八月廿七、九月廿五、十月廿三、十一月廿一、十二月十九）；忌一切用事。
+  applicable_to: []
+  caveats:
+  - 文化参考，非事实判断
+  - 具体日期由 tool 输出
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: JR-07
+  kind: doctrine
+  statement: 农历每月初五、十四、廿三三日为月忌日；忌一切用事，尤忌远行。
+  anchor: null
+  quote: 农历每月初五、十四、廿三三日为月忌日；忌一切用事，尤忌远行。
+  applicable_to: []
+  caveats:
+  - 文化参考，非事实判断
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: JR-08
+  kind: doctrine
+  statement: 十恶大败日为八字 / 择日双系大凶日；干支组合：甲辰、乙巳、丙申、丁亥、戊戌、己丑、庚辰、辛巳、壬申、癸亥（一说异于此）；取义"十干受死"。
+  anchor: null
+  quote: 十恶大败日为八字 / 择日双系大凶日；干支组合：甲辰、乙巳、丙申、丁亥、戊戌、己丑、庚辰、辛巳、壬申、癸亥（一说异于此）；取义"十干受死"。
+  applicable_to: []
+  caveats:
+  - 文化参考，非事实判断
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: JR-09
+  kind: doctrine
+  statement: 伏断日（伏神断神共值）/ 上兀日 / 下兀日 / 上朔日 / 火星日 / 长星日 / 短星日，皆民俗凶日；具体起例由 tool 输出。
+  anchor: null
+  quote: 伏断日（伏神断神共值）/ 上兀日 / 下兀日 / 上朔日 / 火星日 / 长星日 / 短星日，皆民俗凶日；具体起例由 tool 输出。
+  applicable_to: []
+  caveats:
+  - 文化参考，非事实判断
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: JR-10
+  kind: doctrine
+  statement: 九土鬼日为忌动土的民俗凶日；与起造 / 修造 / 葬埋的择日通则联用。
+  anchor: null
+  quote: 九土鬼日为忌动土的民俗凶日；与起造 / 修造 / 葬埋的择日通则联用。
+  applicable_to: []
+  caveats:
+  - 文化参考，非事实判断
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: JR-11
+  kind: doctrine
+  statement: 每日"人神"游某身体部位（如初一在脚拇指、初二在外踝…）；古俗忌该部位针灸 / 手术 / 服药。
+  anchor: null
+  quote: 每日"人神"游某身体部位（如初一在脚拇指、初二在外踝…）；古俗忌该部位针灸 / 手术 / 服药。
+  applicable_to: []
+  caveats:
+  - '**重要警告**：本规则为古代民俗，**现代医疗不应据此延误就医**'
+  - 输出时必须明确提示"请遵从医疗专业意见"
+  - 文化参考，非事实判断
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: JR-12
+  kind: doctrine
+  statement: 民俗探病忌日为壬寅 / 壬午 / 庚午 / 甲寅 / 乙卯 / 己卯 等若干日；忌之恐沾凶气。
+  anchor: null
+  quote: 民俗探病忌日为壬寅 / 壬午 / 庚午 / 甲寅 / 乙卯 / 己卯 等若干日；忌之恐沾凶气。
+  applicable_to: []
+  caveats:
+  - '**重要警告**：本规则为古代民俗，**现代不应据此延误探视、就医、医疗陪护**'
+  - 文化参考，非事实判断
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: JR-13
+  kind: doctrine
+  statement: 鹤神为民俗方位之神；按日逐方游走（"鹤神日游方"）。鹤神所在方位忌兴造 / 出行 / 嫁娶。
+  anchor: null
+  quote: 鹤神为民俗方位之神；按日逐方游走（"鹤神日游方"）。鹤神所在方位忌兴造 / 出行 / 嫁娶。
+  applicable_to: []
+  caveats:
+  - 文化参考，非事实判断
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: JR-14
+  kind: doctrine
+  statement: 民俗嫁娶吉日宜天德 / 月德 / 三合 / 六合 / 不将 / 母仓等吉神；忌十恶大败 / 月厌 / 月破 / 杨公忌 / 月忌日 / 受死 / 八专。与协纪辨方书卷七嫁娶通例基本一致。
+  anchor: null
+  quote: 民俗嫁娶吉日宜天德 / 月德 / 三合 / 六合 / 不将 / 母仓等吉神；忌十恶大败 / 月厌 / 月破 / 杨公忌 / 月忌日 / 受死 / 八专。与协纪辨方书卷七嫁娶通例基本一致。
+  applicable_to: []
+  caveats:
+  - 文化参考，非事实判断
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: JR-15
+  kind: doctrine
+  statement: 民俗出行宜驿马 / 天马 / 三合 / 六合等；忌往亡 / 归忌 / 月破 / 受死 / 杨公忌 / 月忌日。本书附"诸葛武侯逐年出行图"作年度专项参考。
+  anchor: null
+  quote: 民俗出行宜驿马 / 天马 / 三合 / 六合等；忌往亡 / 归忌 / 月破 / 受死 / 杨公忌 / 月忌日。本书附"诸葛武侯逐年出行图"作年度专项参考。
+  applicable_to: []
+  caveats:
+  - 文化参考，非事实判断
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: JR-16
+  kind: doctrine
+  statement: 上官赴任宜驿马 / 三合 / 月恩 / 鸣吠对；应试赴举宜青龙 / 太常 / 文昌 / 学馆等。专项历法对应古代官场学业。
+  anchor: null
+  quote: 上官赴任宜驿马 / 三合 / 月恩 / 鸣吠对；应试赴举宜青龙 / 太常 / 文昌 / 学馆等。专项历法对应古代官场学业。
+  applicable_to: []
+  caveats:
+  - 文化参考，非事实判断
+  - 现代考试 / 任职无可靠对应
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: JR-17
+  kind: doctrine
+  statement: 民俗安葬宜鸣吠 / 鸣吠对 / 月恩 / 三合；忌重丧 / 复日 / 重日 / 月破 / 月厌 / 楊公忌 / 十恶大败。与协纪辨方书卷七安葬通例基本一致。
+  anchor: null
+  quote: 民俗安葬宜鸣吠 / 鸣吠对 / 月恩 / 三合；忌重丧 / 复日 / 重日 / 月破 / 月厌 / 楊公忌 / 十恶大败。与协纪辨方书卷七安葬通例基本一致。
+  applicable_to: []
+  caveats:
+  - 文化参考，非事实判断
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: JR-18
+  kind: doctrine
+  statement: 本书杂占篇收占梦、占耳鸣眼跳、占禽鸟、占灯花等民俗占断；以"梦兆 → 吉凶事项"或"身体征兆 → 吉凶事项"作映射。
+  anchor: null
+  quote: 本书杂占篇收占梦、占耳鸣眼跳、占禽鸟、占灯花等民俗占断；以"梦兆 → 吉凶事项"或"身体征兆 → 吉凶事项"作映射。
+  applicable_to: []
+  caveats:
+  - '**重要警告**：杂占完全为民俗信仰，无任何科学依据'
+  - 现代不构成事实判断
+  - 仅作文化研究参考
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: JR-19
+  kind: doctrine
+  statement: 民俗以猫瞳孔形状判时辰（子午圆 / 丑未亥扁 / 寅申巳枣核 等）；定寅时按节气月相调整。
+  anchor: null
+  quote: 民俗以猫瞳孔形状判时辰（子午圆 / 丑未亥扁 / 寅申巳枣核 等）；定寅时按节气月相调整。
+  applicable_to: []
+  caveats:
+  - 文化参考，非事实判断
+  - 现代以钟表为准
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: JR-20
+  kind: doctrine
+  statement: 主 skill 输出某日吉凶时，应将"官方层（协纪辨方书 / 星历考原）"作为权重主源，本书禁忌日（彭祖百忌 / 杨公忌 / 月忌日 / 十恶大败 等）作为补充避忌；不重复计算同一神煞的口径差异。
+  anchor: null
+  quote: 主 skill 输出某日吉凶时，应将"官方层（协纪辨方书 / 星历考原）"作为权重主源，本书禁忌日（彭祖百忌 / 杨公忌 / 月忌日 / 十恶大败 等）作为补充避忌；不重复计算同一神煞的口径差异。
+  applicable_to: []
+  caveats:
+  - 文化参考，非事实判断
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null

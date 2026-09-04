@@ -1,0 +1,107 @@
+schema_version: fateradar-rules-v2
+book:
+  slug: yangzhai-sanyao
+  system: fengshui
+  title: 阳宅三要
+  script: simplified
+  fulltext: sources/fulltext/fengshui/yangzhai-sanyao/fulltext.md
+  fulltext_sha256: 56128f671f3b75fc05f04987a9445a57cef9058825442349c0d216d3cc364735
+rules:
+- rule_id: YZS-R001
+  kind: doctrine
+  statement: 阳宅以门、主、灶为三要，先看大门，次看灶，再看主房。
+  anchor:
+    file: sources/fulltext/fengshui/yangzhai-sanyao/fulltext.md
+    start_line: 14
+    end_line: 16
+  quote: 夫曰：三要者何，门、主、灶是也。门乃由之路，主乃居之所，灶乃食之方。
+  applicable_to: []
+  caveats: []
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: YZS-R002
+  kind: doctrine
+  statement: 门主相生以吉断，相克以凶断；灶须与门、主相生。
+  anchor:
+    file: sources/fulltext/fengshui/yangzhai-sanyao/fulltext.md
+    start_line: 16
+    end_line: 16
+  quote: 阳宅先看大门，次看厨，有东四、西四之分，再者主房。而主房却无定位，高大者即是。
+  applicable_to: []
+  caveats: []
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: YZS-R003
+  kind: doctrine
+  statement: 门生主、主生灶、灶生门，三者互无克或比和，再合宅主福元，为上吉。
+  anchor:
+    file: sources/fulltext/fengshui/yangzhai-sanyao/fulltext.md
+    start_line: 16
+    end_line: 16
+  quote: 阳宅先看大门，次看厨，有东四、西四之分，再者主房。而主房却无定位，高大者即是。
+  applicable_to: []
+  caveats: []
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: YZS-R004
+  kind: doctrine
+  statement: 生气、天乙、延年为三吉方，宜开门、安灶、安床。
+  anchor:
+    file: sources/fulltext/fengshui/yangzhai-sanyao/fulltext.md
+    start_line: 104
+    end_line: 104
+  quote: 巽天五六祸生绝延
+  applicable_to: []
+  caveats: []
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: YZS-R005
+  kind: doctrine
+  statement: 东四宅与西四宅不许相混。
+  anchor:
+    file: sources/fulltext/fengshui/yangzhai-sanyao/fulltext.md
+    start_line: 184
+    end_line: 199
+  quote: 西四宅   延年上大吉
+  applicable_to: []
+  caveats: []
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: YZS-R006
+  kind: doctrine
+  statement: 宫星相克会按卦象家庭成员取象。
+  anchor:
+    file: sources/fulltext/fengshui/yangzhai-sanyao/fulltext.md
+    start_line: 118
+    end_line: 122
+  quote: （生炁）  贪狼家道隆   五子更英雄   文艺多端立   精专百事通   （长房更大利）
+  applicable_to: []
+  caveats: []
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: YZS-R007
+  kind: doctrine
+  statement: 静宅、动宅、变宅、化宅需先分辨，再用不同番星/贯井法。
+  anchor:
+    file: sources/fulltext/fengshui/yangzhai-sanyao/fulltext.md
+    start_line: 369
+    end_line: 390
+  quote: 布八卦分二十四山、向，看系某主、某门、某
+  applicable_to: []
+  caveats: []
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null

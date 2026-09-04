@@ -1,0 +1,599 @@
+schema_version: fateradar-rules-v2
+book:
+  slug: zengshan-buyi
+  system: divination
+  title: 增删卜易
+  script: traditional
+  fulltext: sources/fulltext/divination/zengshan-buyi/fulltext.md
+  fulltext_sha256: 40cb50a05cbcb03ce3d42f2cc3de5daf1db6cf78e8dbae4c4b9b1e42dd6f50e0
+rules:
+- rule_id: ZR
+  kind: doctrine
+  statement: 原文保存兑为泽初、上爻动而变天水讼的完整成卦实例，只用于核对 provider 的起卦结果。
+  anchor: null
+  quote: 原文保存兑为泽初、上爻动而变天水讼的完整成卦实例，只用于核对 provider 的起卦结果。
+  applicable_to: []
+  caveats:
+  - 仅证明成卦实例，不授权官运吉凶判断
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: ZR-02
+  kind: doctrine
+  statement: 八宫卦各纳天干（乾纳甲壬、坤纳乙癸、震纳庚、巽纳辛、坎纳戊、离纳己、艮纳丙、兑纳丁）；六爻配地支按纳甲歌取。
+  anchor: null
+  quote: 八宫卦各纳天干（乾纳甲壬、坤纳乙癸、震纳庚、巽纳辛、坎纳戊、离纳己、艮纳丙、兑纳丁）；六爻配地支按纳甲歌取。
+  applicable_to: []
+  caveats:
+  - 必须由 `tool.divination.liuyao_bindisk` 处理
+  - 禁止 LLM 手算
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: ZR-03
+  kind: doctrine
+  statement: 以世爻五行为我，生我者父母、克我者官鬼、我生者子孙、我克者妻财、与我同者兄弟。
+  anchor: null
+  quote: 以世爻五行为我，生我者父母、克我者官鬼、我生者子孙、我克者妻财、与我同者兄弟。
+  applicable_to: []
+  caveats:
+  - 六亲是占断主轴
+  - 女命问夫看官鬼、男命问妻看妻财（含现代性别考量）
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: ZR-04
+  kind: doctrine
+  statement: 所占之事在卦中之代表爻为用神；问占类型决定用神（详见 ZP-04 取用神流程）。
+  anchor: null
+  quote: 所占之事在卦中之代表爻为用神；问占类型决定用神（详见 ZP-04 取用神流程）。
+  applicable_to: []
+  caveats:
+  - 用神为占断之根本
+  - 用神有伤则事不成
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: ZENGSHANBUYI-ZR-04
+  kind: doctrine
+  statement: 生用神者元神（喜其旺动）；克用神者忌神（怕其旺动）；克元神 / 生忌神者仇神（不可旺）。
+  anchor: null
+  quote: 生用神者元神（喜其旺动）；克用神者忌神（怕其旺动）；克元神 / 生忌神者仇神（不可旺）。
+  applicable_to: []
+  caveats:
+  - 四神协参，单看用神不全
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: ZENGSHANBUYI-006
+  kind: doctrine
+  statement: 用神不上卦时取本宫伏神；伏神受日月生扶可用、被压制则不可用。
+  anchor: null
+  quote: 用神不上卦时取本宫伏神；伏神受日月生扶可用、被压制则不可用。
+  applicable_to: []
+  caveats:
+  - 伏神之力远不及上卦之爻
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: ZENGSHANBUYI-007
+  kind: doctrine
+  statement: 用神两现时，若仅一爻发动则取动爻；若两爻俱动或俱静，须再择其旺者。旬空、月破等取舍不可脱离实际占验机械套用。
+  anchor: null
+  quote: 用神两现时，若仅一爻发动则取动爻；若两爻俱动或俱静，须再择其旺者。旬空、月破等取舍不可脱离实际占验机械套用。
+  applicable_to: []
+  caveats:
+  - 两爻同动或同静时仍须完成月日、旺相休囚、空破冲合与受伤等综合裁决，不得按单一条件硬选
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: ZR-05
+  kind: doctrine
+  statement: 元神旺动而无伤——用神得力；忌神旺动而无制——用神受伤。
+  anchor: null
+  quote: 元神旺动而无伤——用神得力；忌神旺动而无制——用神受伤。
+  applicable_to: []
+  caveats:
+  - 动静与旺衰并参
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: ZENGSHANBUYI-ZR-05
+  kind: doctrine
+  statement: 金生水、水生木、木生火、火生土、土生金；元神之力本于此。
+  anchor: null
+  quote: 金生水、水生木、木生火、火生土、土生金；元神之力本于此。
+  applicable_to: []
+  caveats:
+  - —
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: ZENGSHANBUYI-010
+  kind: doctrine
+  statement: 金克木、木克土、土克水、水克火、火克金；忌神之力本于此。
+  anchor: null
+  quote: 金克木、木克土、土克水、水克火、火克金；忌神之力本于此。
+  applicable_to: []
+  caveats:
+  - —
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: ZENGSHANBUYI-011
+  kind: doctrine
+  statement: 用神被克处又逢生扶（日月或动爻）则危而不死；俗谓"贪生忘克"。
+  anchor: null
+  quote: 用神被克处又逢生扶（日月或动爻）则危而不死；俗谓"贪生忘克"。
+  applicable_to: []
+  caveats:
+  - 必须有真生扶之爻，非空虚之论
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: ZENGSHANBUYI-012
+  kind: doctrine
+  statement: 月令当令的本气五行为旺，月令所生五行为相，其余先记作休囚候选；四时标签须与日辰、空破、动变和生克合参。
+  anchor: null
+  quote: 月令当令的本气五行为旺，月令所生五行为相，其余先记作休囚候选；四时标签须与日辰、空破、动变和生克合参。
+  applicable_to: []
+  caveats:
+  - 只裁定月令季节带，不单独形成候选综合旺衰、成败、吉凶或应期结论
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: ZENGSHANBUYI-013
+  kind: doctrine
+  statement: 月建生扶用神则旺、克伤用神则衰；月建之力贯穿一月。
+  anchor: null
+  quote: 月建生扶用神则旺、克伤用神则衰；月建之力贯穿一月。
+  applicable_to: []
+  caveats:
+  - 月建之力大于动爻、小于日辰
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: ZENGSHANBUYI-014
+  kind: doctrine
+  statement: 日辰为占断之最大旺衰主宰；可生扶可克破，可冲实空爻、合住动爻。
+  anchor: null
+  quote: 日辰为占断之最大旺衰主宰；可生扶可克破，可冲实空爻、合住动爻。
+  applicable_to: []
+  caveats:
+  - 日辰之权最大
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: ZR-06
+  kind: doctrine
+  statement: 摇卦得三背或三面为动爻，老阳老阴变化；动爻变出之爻为变爻。
+  anchor: null
+  quote: 摇卦得三背或三面为动爻，老阳老阴变化；动爻变出之爻为变爻。
+  applicable_to: []
+  caveats:
+  - 必须由 `tool.divination.liuyao_bindisk` 完成
+  - 禁止 LLM 手算
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: ZENGSHANBUYI-ZR-06
+  kind: doctrine
+  statement: 动爻能生克他爻、亦能受他爻克生；静爻不能生克他爻，唯受日月生克。
+  anchor: null
+  quote: 动爻能生克他爻、亦能受他爻克生；静爻不能生克他爻，唯受日月生克。
+  applicable_to: []
+  caveats:
+  - 暗动除外（ZR-06-04）
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: ZENGSHANBUYI-017
+  kind: doctrine
+  statement: 动爻与变爻间可成回头生、回头克、回头冲、回头合；变爻反作用于本动爻。
+  anchor: null
+  quote: 动爻与变爻间可成回头生、回头克、回头冲、回头合；变爻反作用于本动爻。
+  applicable_to: []
+  caveats:
+  - 变克本为大忌
+  - 变生本为大吉
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: ZENGSHANBUYI-018
+  kind: doctrine
+  statement: 静爻得日辰冲为暗动；暗动如同动，能生克他爻。
+  anchor: null
+  quote: 静爻得日辰冲为暗动；暗动如同动，能生克他爻。
+  applicable_to: []
+  caveats:
+  - 暗动力虽显但不及真动
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: ZENGSHANBUYI-019
+  kind: doctrine
+  statement: 动爻被日辰冲为动散，力减不能为大用。
+  anchor: null
+  quote: 动爻被日辰冲为动散，力减不能为大用。
+  applicable_to: []
+  caveats:
+  - —
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: ZENGSHANBUYI-020
+  kind: doctrine
+  statement: 化进神（如寅化卯）力增、化退神（如卯化寅）力减；进神逢冲不进、退神逢冲不退。
+  anchor: null
+  quote: 化进神（如寅化卯）力增、化退神（如卯化寅）力减；进神逢冲不进、退神逢冲不退。
+  applicable_to: []
+  caveats:
+  - —
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: ZENGSHANBUYI-021
+  kind: doctrine
+  statement: 一卦六爻独一爻动，此动爻为占断之主；详细参其生克墓绝。
+  anchor: null
+  quote: 一卦六爻独一爻动，此动爻为占断之主；详细参其生克墓绝。
+  applicable_to: []
+  caveats:
+  - —
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: ZR-07
+  kind: doctrine
+  statement: 子丑、寅亥、卯戌、辰酉、巳申、午未六合；合则成事、合则停、合住忌神则解凶。
+  anchor: null
+  quote: 子丑、寅亥、卯戌、辰酉、巳申、午未六合；合则成事、合则停、合住忌神则解凶。
+  applicable_to: []
+  caveats:
+  - 合住用神有时反不利（事不动）
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: ZENGSHANBUYI-ZR-07
+  kind: doctrine
+  statement: 子午、丑未、寅申、卯酉、辰戌、巳亥六冲；冲散事、冲实空、冲开合。
+  anchor: null
+  quote: 子午、丑未、寅申、卯酉、辰戌、巳亥六冲；冲散事、冲实空、冲开合。
+  applicable_to: []
+  caveats:
+  - 六冲卦不一定凶，看用神状态
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: ZENGSHANBUYI-024
+  kind: doctrine
+  statement: 寅巳申、丑戌未、子卯三刑；刑则有损伤纠葛。
+  anchor: null
+  quote: 寅巳申、丑戌未、子卯三刑；刑则有损伤纠葛。
+  applicable_to: []
+  caveats:
+  - 本书重视六冲六合，三刑作辅
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: ZENGSHANBUYI-025
+  kind: doctrine
+  statement: 反吟主反复颠倒、伏吟主呻吟忧虑；皆非吉象。
+  anchor: null
+  quote: 反吟主反复颠倒、伏吟主呻吟忧虑；皆非吉象。
+  applicable_to: []
+  caveats:
+  - —
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: ZR-08
+  kind: doctrine
+  statement: 动爻变出之爻有回头生 / 克 / 比合 / 墓 / 绝；其中入墓主收藏停滞、入绝主断绝。
+  anchor: null
+  quote: 动爻变出之爻有回头生 / 克 / 比合 / 墓 / 绝；其中入墓主收藏停滞、入绝主断绝。
+  applicable_to: []
+  caveats:
+  - —
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: ZENGSHANBUYI-ZR-08
+  kind: doctrine
+  statement: 用神旬空——空而不空（动 / 旺 / 临日月）则不空；真空——出旬即应；旬空亦可冲实。
+  anchor: null
+  quote: 用神旬空——空而不空（动 / 旺 / 临日月）则不空；真空——出旬即应；旬空亦可冲实。
+  applicable_to: []
+  caveats:
+  - 必须由 `tool.divination.liuyao_bindisk` 计算旬空
+  - 禁止 LLM 手算
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: ZENGSHANBUYI-028
+  kind: doctrine
+  statement: 用神长生之地、帝旺之地、墓绝之地皆为应期取义点。
+  anchor: null
+  quote: 用神长生之地、帝旺之地、墓绝之地皆为应期取义点。
+  applicable_to: []
+  caveats:
+  - 与 ZR-08-04 合参
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: ZENGSHANBUYI-029
+  kind: doctrine
+  statement: 用神动则于值日 / 冲日 / 合日应；用神静则于冲日 / 临日应；用神空则出空 / 冲空之日实。
+  anchor: null
+  quote: 用神动则于值日 / 冲日 / 合日应；用神静则于冲日 / 临日应；用神空则出空 / 冲空之日实。
+  applicable_to: []
+  caveats:
+  - 本书核心规则之一
+  - 现代精准时间预测仍受多重不确定性限制
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: ZENGSHANBUYI-030
+  kind: doctrine
+  statement: 月建冲爻为月破；月破之爻——静则到底破、动则能伤本变、变则能伤本动、出月或合日不破。
+  anchor: null
+  quote: 月建冲爻为月破；月破之爻——静则到底破、动则能伤本变、变则能伤本动、出月或合日不破。
+  applicable_to: []
+  caveats:
+  - 本书对月破有"动则能伤"重大补充，与他书有差异
+  - 以本书为准
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: ZENGSHANBUYI-031
+  kind: doctrine
+  statement: 用神动随官鬼入墓——大凶；用神入日辰之墓亦凶。
+  anchor: null
+  quote: 用神动随官鬼入墓——大凶；用神入日辰之墓亦凶。
+  applicable_to: []
+  caveats:
+  - 占病、占讼、占行人尤忌
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: ZR-09
+  kind: doctrine
+  statement: 归魂卦——主回归、还原；游魂卦——主漂泊、不定；问行人、问出行尤宜参看。
+  anchor: null
+  quote: 归魂卦——主回归、还原；游魂卦——主漂泊、不定；问行人、问出行尤宜参看。
+  applicable_to: []
+  caveats:
+  - 仅作辅参，不主主线
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: ZR-10
+  kind: doctrine
+  statement: 所有问占先取用神 → 看用神旺衰 → 看元忌动静 → 看应期；此为通则。
+  anchor: null
+  quote: 所有问占先取用神 → 看用神旺衰 → 看元忌动静 → 看应期；此为通则。
+  applicable_to: []
+  caveats:
+  - —
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: ZENGSHANBUYI-ZR-10
+  kind: doctrine
+  statement: 占天时——父母为雨、子孙为晴、官鬼为云雷、妻财为风、兄弟为风云；旺动则现。
+  anchor: null
+  quote: 占天时——父母为雨、子孙为晴、官鬼为云雷、妻财为风、兄弟为风云；旺动则现。
+  applicable_to: []
+  caveats:
+  - 现代以气象预报为主
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: ZR-11
+  kind: doctrine
+  statement: 占身命——以世爻为身、子孙为福德、官鬼为忧；世旺无伤为佳。
+  anchor: null
+  quote: 占身命——以世爻为身、子孙为福德、官鬼为忧；世旺无伤为佳。
+  applicable_to: []
+  caveats:
+  - 仅作综合参考，不替代命理分析
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: ZENGSHANBUYI-ZR-11
+  kind: doctrine
+  statement: 占财福——以妻财为用、子孙为元神；财旺有源为佳。
+  anchor: null
+  quote: 占财福——以妻财为用、子孙为元神；财旺有源为佳。
+  applicable_to: []
+  caveats:
+  - —
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: ZENGSHANBUYI-037
+  kind: doctrine
+  statement: 占功名——以官鬼为用、父母为元神（印绶）；官旺得印为佳。
+  anchor: null
+  quote: 占功名——以官鬼为用、父母为元神（印绶）；官旺得印为佳。
+  applicable_to: []
+  caveats:
+  - 现代职业发展应以多因素评估为主
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: ZENGSHANBUYI-038
+  kind: doctrine
+  statement: 占求名——同 ZR-11-03；考试以父母为文书、子孙为忌神（克官）。
+  anchor: null
+  quote: 占求名——同 ZR-11-03；考试以父母为文书、子孙为忌神（克官）。
+  applicable_to: []
+  caveats:
+  - 现代考试以备考为主
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: ZENGSHANBUYI-039
+  kind: doctrine
+  statement: 占求财——以妻财为用；财旺有元神（子孙）则得；忌兄弟（劫财）旺动。
+  anchor: null
+  quote: 占求财——以妻财为用；财旺有元神（子孙）则得；忌兄弟（劫财）旺动。
+  applicable_to: []
+  caveats:
+  - 仅参考
+  - 不应作为投机指引
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: ZR-12
+  kind: doctrine
+  statement: 占婚——男以妻财为用、女以官鬼为用；用神旺动有元神则成。
+  anchor: null
+  quote: 占婚——男以妻财为用、女以官鬼为用；用神旺动有元神则成。
+  applicable_to: []
+  caveats:
+  - 婚姻属现代私事，占断不替代当事人意愿
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: ZENGSHANBUYI-ZR-12
+  kind: doctrine
+  statement: 占胎孕——以子孙为用；阳卦阳爻男、阴卦阴爻女；忌官鬼旺动克子孙。
+  anchor: null
+  quote: 占胎孕——以子孙为用；阳卦阳爻男、阴卦阴爻女；忌官鬼旺动克子孙。
+  applicable_to: []
+  caveats:
+  - '**严禁替代现代产前检查**'
+  - 男女鉴定属医学伦理范畴，本书不作为现代用途
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: ZR-13
+  kind: doctrine
+  statement: 占出行——以世爻为身；忌世动入墓 / 入空 / 受冲克；游魂卦不宜远行。
+  anchor: null
+  quote: 占出行——以世爻为身；忌世动入墓 / 入空 / 受冲克；游魂卦不宜远行。
+  applicable_to: []
+  caveats:
+  - 现代出行以天气交通为主
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: ZENGSHANBUYI-ZR-13
+  kind: doctrine
+  statement: 占行人归否——以应爻 / 远人之爻为用；用动来生世 / 临归魂——速归；用入墓入空——未归。
+  anchor: null
+  quote: 占行人归否——以应爻 / 远人之爻为用；用动来生世 / 临归魂——速归；用入墓入空——未归。
+  applicable_to: []
+  caveats:
+  - —
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: ZR-14
+  kind: doctrine
+  statement: 占防非避讼——以官鬼为用；官鬼空 / 安静 / 受制——无讼；官鬼旺动克世——讼来。
+  anchor: null
+  quote: 占防非避讼——以官鬼为用；官鬼空 / 安静 / 受制——无讼；官鬼旺动克世——讼来。
+  applicable_to: []
+  caveats:
+  - —
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: ZENGSHANBUYI-ZR-14
+  kind: doctrine
+  statement: 占兴讼胜负——世应相战看哪边得日月生扶；世旺应衰胜、世衰应旺败。
+  anchor: null
+  quote: 占兴讼胜负——世应相战看哪边得日月生扶；世旺应衰胜、世衰应旺败。
+  applicable_to: []
+  caveats:
+  - 现代诉讼以法律证据为准
+  - 占断不替代律师意见
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: ZR-15
+  kind: doctrine
+  statement: 占疾病——以官鬼为病、子孙为药；官鬼旺动且无子孙——病重；子孙旺动 / 临日月——可愈。
+  anchor: null
+  quote: 占疾病——以官鬼为病、子孙为药；官鬼旺动且无子孙——病重；子孙旺动 / 临日月——可愈。
+  applicable_to: []
+  caveats:
+  - '**严禁替代现代医学诊断**'
+  - 占断仅做心理参考
+  - 危及生命须立即就医
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: ZR-16
+  kind: doctrine
+  statement: 占家宅——以世爻为人、二爻为宅、五爻为路、六爻为屋顶 / 远；世爻旺无伤、宅爻不被冲克为佳。
+  anchor: null
+  quote: 占家宅——以世爻为人、二爻为宅、五爻为路、六爻为屋顶 / 远；世爻旺无伤、宅爻不被冲克为佳。
+  applicable_to: []
+  caveats:
+  - 现代住宅安全应以工程检测为主
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: ZR-17
+  kind: doctrine
+  statement: 占茔葬——以二爻为穴、世爻为后人；穴旺生世——吉地；穴受冲克——凶地。
+  anchor: null
+  quote: 占茔葬——以二爻为穴、世爻为后人；穴旺生世——吉地；穴受冲克——凶地。
+  applicable_to: []
+  caveats:
+  - 现代殡葬以法规为主
+  - 本书内容属传统民俗
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null

@@ -1,0 +1,87 @@
+schema_version: fateradar-rules-v2
+book:
+  slug: bushi-zhengzong
+  system: divination
+  title: 卜筮正宗
+  script: simplified
+  fulltext: sources/fulltext/divination/bushi-zhengzong/fulltext.md
+  fulltext_sha256: 651efe70d1bce36d1a18e9bf680a912ae3f556f2e66b16c137cd6efbfc9cb491
+rules:
+- rule_id: BSZZ
+  kind: doctrine
+  statement: 六爻投掷自下而上记录，三掷先成内卦。
+  anchor: null
+  quote: 六爻投掷自下而上记录，三掷先成内卦。
+  applicable_to: []
+  caveats:
+  - 仅作起卦方法，不授权吉凶判断
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: BUSHIZHENGZO-BSZZ
+  kind: doctrine
+  statement: R01 六爻必须先装卦
+  anchor: null
+  quote: R01 六爻必须先装卦
+  applicable_to: []
+  caveats: []
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: BUSHIZHENGZO-003
+  kind: doctrine
+  statement: R02 先定用神，再看原忌仇
+  anchor: null
+  quote: R02 先定用神，再看原忌仇
+  applicable_to: []
+  caveats: []
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: BUSHIZHENGZO-004
+  kind: doctrine
+  statement: R03 世应定义主客边界
+  anchor: null
+  quote: R03 世应定义主客边界
+  applicable_to: []
+  caveats: []
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: BUSHIZHENGZO-005
+  kind: doctrine
+  statement: R04 飞伏神处理“用神不上卦”
+  anchor: null
+  quote: R04 飞伏神处理“用神不上卦”
+  applicable_to: []
+  caveats: []
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: BUSHIZHENGZO-006
+  kind: doctrine
+  statement: R05 与《增删卜易》并读
+  anchor: null
+  quote: R05 与《增删卜易》并读
+  applicable_to: []
+  caveats: []
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: BUSHIZHENGZO-007
+  kind: doctrine
+  statement: R06 高风险断语安全改写
+  anchor: null
+  quote: R06 高风险断语安全改写
+  applicable_to: []
+  caveats: []
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null

@@ -1,0 +1,514 @@
+schema_version: fateradar-rules-v2
+book:
+  slug: qimen-dunjia-tongzhi
+  system: san-shi
+  title: 奇门遁甲统宗大全
+  script: simplified
+  fulltext: sources/fulltext/san-shi/qimen-dunjia-tongzhi/fulltext.md
+  fulltext_sha256: f4feb5c389f0ac8bc8dfd0d3f011b088576bc5510248e8d8663e01e2d0b0c140
+rules:
+- rule_id: QM-P01
+  kind: doctrine
+  statement: 龙回首 甲值符加地盘丙奇
+  anchor:
+    file: sources/fulltext/san-shi/qimen-dunjia-tongzhi/fulltext.md
+    start_line: 97
+    end_line: 97
+  quote: 龙回首 甲值符加地盘丙奇
+  applicable_to: []
+  caveats: []
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: QM-P02
+  kind: doctrine
+  statement: 鸟跌穴 丙奇加地盘甲值符
+  anchor:
+    file: sources/fulltext/san-shi/qimen-dunjia-tongzhi/fulltext.md
+    start_line: 99
+    end_line: 99
+  quote: 鸟跌穴 丙奇加地盘甲值符
+  applicable_to: []
+  caveats: []
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: QM-P03
+  kind: doctrine
+  statement: 龙逃走 乙奇遇辛
+  anchor:
+    file: sources/fulltext/san-shi/qimen-dunjia-tongzhi/fulltext.md
+    start_line: 119
+    end_line: 119
+  quote: 龙逃走 乙奇遇辛
+  applicable_to: []
+  caveats: []
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: QM-P04
+  kind: doctrine
+  statement: 虎猖狂 辛遇乙奇
+  anchor:
+    file: sources/fulltext/san-shi/qimen-dunjia-tongzhi/fulltext.md
+    start_line: 121
+    end_line: 121
+  quote: 虎猖狂 辛遇乙奇
+  applicable_to: []
+  caveats: []
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: QM-P05
+  kind: doctrine
+  statement: 蛇妖矫 癸见丁奇
+  anchor:
+    file: sources/fulltext/san-shi/qimen-dunjia-tongzhi/fulltext.md
+    start_line: 123
+    end_line: 123
+  quote: 蛇妖矫 癸见丁奇
+  applicable_to: []
+  caveats: []
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: QM-P06
+  kind: doctrine
+  statement: 雀投江 丁奇见癸
+  anchor:
+    file: sources/fulltext/san-shi/qimen-dunjia-tongzhi/fulltext.md
+    start_line: 125
+    end_line: 125
+  quote: 雀投江 丁奇见癸
+  applicable_to: []
+  caveats: []
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: QM-P07
+  kind: doctrine
+  statement: 大格 庚临六癸
+  anchor: null
+  quote: 大格 庚临六癸
+  applicable_to: []
+  caveats: []
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: QM-P08
+  kind: doctrine
+  statement: 刑格 庚临六己
+  anchor: null
+  quote: 刑格 庚临六己
+  applicable_to: []
+  caveats: []
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: QM-P09
+  kind: doctrine
+  statement: 小格 庚临壬
+  anchor: null
+  quote: 小格 庚临壬
+  applicable_to: []
+  caveats: []
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: QM-P10
+  kind: doctrine
+  statement: 生门六丙临六戊，此为天遁是分明
+  anchor:
+    file: sources/fulltext/san-shi/qimen-dunjia-tongzhi/fulltext.md
+    start_line: 65
+    end_line: 65
+  quote: 生门六丙临六戊，此为天遁是分明。开门六乙临六己，地遁如斯而已矣。休门六丁合太阴，欲识人遁莫过此。要知三遁何所宜，形藏影隐斯为美。庚为太白丙荧惑，庚丙相加谁会得。六庚加丙白入荧，六丙加庚荧入白。白入荧兮贼即来，荧入白兮贼欲隔。丙为勃兮庚为格，格则不通勃乱逆。庚加六甲为伏干，甲加六庚飞干格。庚加值符天乙伏，值符加庚天乙飞。加一宫兮战在野，同一宫兮战国中。庚加癸兮为大格，加己为刑大不宜。加壬之时为小格，格嫌岁月日时移。更有一般时格者，六庚慎勿加三奇。此局若还行师去，匹马只轮无返期。六癸加丁腾蛇矫，六丁加癸雀入水。六辛加乙虎猖狂，六乙加辛龙逃走。诸君四是曰凶神，凡事遇之宜不平。丙加甲兮鸟跌穴，甲加丙兮龙回首。只此二者是吉神，为事加吉十八九。八门若遇休开生，诸事遇之总称情。伤宜捕猎终须获，杜好逃遮更隐形。景士投书与破阵，死唯游猎葬埋宜。试问惊门何所益，捕捉公庭较是非。蓬任冲辅禽阳星，英芮柱心阴宿益。辅禽心星为大吉，冲任小吉未全亨。大凶蓬芮不堪遇，小凶英柱在中宫。大凶无气交为小，小凶有气亦丁忧。吉宿更能逢旺相，万举万全功必成。
+  applicable_to: []
+  caveats: []
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: QM-P11
+  kind: doctrine
+  statement: 开门六乙临六己，地遁如斯而已矣
+  anchor:
+    file: sources/fulltext/san-shi/qimen-dunjia-tongzhi/fulltext.md
+    start_line: 65
+    end_line: 65
+  quote: 生门六丙临六戊，此为天遁是分明。开门六乙临六己，地遁如斯而已矣。休门六丁合太阴，欲识人遁莫过此。要知三遁何所宜，形藏影隐斯为美。庚为太白丙荧惑，庚丙相加谁会得。六庚加丙白入荧，六丙加庚荧入白。白入荧兮贼即来，荧入白兮贼欲隔。丙为勃兮庚为格，格则不通勃乱逆。庚加六甲为伏干，甲加六庚飞干格。庚加值符天乙伏，值符加庚天乙飞。加一宫兮战在野，同一宫兮战国中。庚加癸兮为大格，加己为刑大不宜。加壬之时为小格，格嫌岁月日时移。更有一般时格者，六庚慎勿加三奇。此局若还行师去，匹马只轮无返期。六癸加丁腾蛇矫，六丁加癸雀入水。六辛加乙虎猖狂，六乙加辛龙逃走。诸君四是曰凶神，凡事遇之宜不平。丙加甲兮鸟跌穴，甲加丙兮龙回首。只此二者是吉神，为事加吉十八九。八门若遇休开生，诸事遇之总称情。伤宜捕猎终须获，杜好逃遮更隐形。景士投书与破阵，死唯游猎葬埋宜。试问惊门何所益，捕捉公庭较是非。蓬任冲辅禽阳星，英芮柱心阴宿益。辅禽心星为大吉，冲任小吉未全亨。大凶蓬芮不堪遇，小凶英柱在中宫。大凶无气交为小，小凶有气亦丁忧。吉宿更能逢旺相，万举万全功必成。
+  applicable_to: []
+  caveats: []
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: QM-P12
+  kind: doctrine
+  statement: 休门六丁合太阴，欲识人遁莫过此
+  anchor:
+    file: sources/fulltext/san-shi/qimen-dunjia-tongzhi/fulltext.md
+    start_line: 65
+    end_line: 65
+  quote: 生门六丙临六戊，此为天遁是分明。开门六乙临六己，地遁如斯而已矣。休门六丁合太阴，欲识人遁莫过此。要知三遁何所宜，形藏影隐斯为美。庚为太白丙荧惑，庚丙相加谁会得。六庚加丙白入荧，六丙加庚荧入白。白入荧兮贼即来，荧入白兮贼欲隔。丙为勃兮庚为格，格则不通勃乱逆。庚加六甲为伏干，甲加六庚飞干格。庚加值符天乙伏，值符加庚天乙飞。加一宫兮战在野，同一宫兮战国中。庚加癸兮为大格，加己为刑大不宜。加壬之时为小格，格嫌岁月日时移。更有一般时格者，六庚慎勿加三奇。此局若还行师去，匹马只轮无返期。六癸加丁腾蛇矫，六丁加癸雀入水。六辛加乙虎猖狂，六乙加辛龙逃走。诸君四是曰凶神，凡事遇之宜不平。丙加甲兮鸟跌穴，甲加丙兮龙回首。只此二者是吉神，为事加吉十八九。八门若遇休开生，诸事遇之总称情。伤宜捕猎终须获，杜好逃遮更隐形。景士投书与破阵，死唯游猎葬埋宜。试问惊门何所益，捕捉公庭较是非。蓬任冲辅禽阳星，英芮柱心阴宿益。辅禽心星为大吉，冲任小吉未全亨。大凶蓬芮不堪遇，小凶英柱在中宫。大凶无气交为小，小凶有气亦丁忧。吉宿更能逢旺相，万举万全功必成。
+  applicable_to: []
+  caveats: []
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: QM-P13
+  kind: doctrine
+  statement: 时干克日干乃五不遇而灾生
+  anchor:
+    file: sources/fulltext/san-shi/qimen-dunjia-tongzhi/fulltext.md
+    start_line: 57
+    end_line: 57
+  quote: 甲加丙兮龙回首，丙加甲兮鸟跌穴。回首则悦怿易逐，跌穴则显灼易成。身残毁兮，乙遇辛而龙逃走；财虚耗兮，辛遇乙而虎猖狂。癸见丁，腾蛇妖矫；丁见癸，朱雀投江。生丙临戊天遁用兵，开乙临己地遁安坟，休丁遇太阴人遁安营。庚临日干伏干格，日干临庚飞干格。庚临值符伏宫格之名，值符临庚飞宫格之说。大格庚临六癸，刑格庚临六己。时干克日干乃五不遇而灾生，丙奇临时干名勃格而祸起。三奇得使众善皆臻，六仪击刑百凶俱集。太白加荧贼欲来，火入金乡贼将去。
+  applicable_to: []
+  caveats: []
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: QM-P14
+  kind: doctrine
+  statement: 伏吟 本星加本宫
+  anchor:
+    file: sources/fulltext/san-shi/qimen-dunjia-tongzhi/fulltext.md
+    start_line: 157
+    end_line: 157
+  quote: 伏吟 本星加本宫
+  applicable_to: []
+  caveats: []
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: QM-P15
+  kind: doctrine
+  statement: 反吟 星加对宫
+  anchor: null
+  quote: 反吟 星加对宫
+  applicable_to: []
+  caveats: []
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: QM-P16
+  kind: doctrine
+  statement: 三奇入墓 乙奇坤宫 丙奇乾宫 丁奇艮宫
+  anchor:
+    file: sources/fulltext/san-shi/qimen-dunjia-tongzhi/fulltext.md
+    start_line: 161
+    end_line: 161
+  quote: 三奇入墓 乙奇坤宫 丙奇乾宫 丁奇艮宫
+  applicable_to: []
+  caveats: []
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: QM-P17
+  kind: doctrine
+  statement: 六仪击刑 甲子值符三 甲申值符八 甲戌值符二 甲午值符九 甲辰值符四 甲寅值符四
+  anchor:
+    file: sources/fulltext/san-shi/qimen-dunjia-tongzhi/fulltext.md
+    start_line: 165
+    end_line: 167
+  quote: 六仪击刑 甲子值符三 甲申值符八 甲戌值符二
+  applicable_to: []
+  caveats: []
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: QM-P18
+  kind: doctrine
+  statement: 开门临三四宫（金克木） 休门临九宫（水克火） 生门临一宫（土克水） 伤门临八宫（木克土） 景门临六宫（火克金） 死门临一宫（土克水） 惊门临三四宫（金克木） 杜门临二八宫（木克土）
+  anchor:
+    file: sources/fulltext/san-shi/qimen-dunjia-tongzhi/fulltext.md
+    start_line: 189
+    end_line: 193
+  quote: 开门临三四宫（金克木） 休门临九宫（水克火） 生门临一宫（土克水）
+  applicable_to: []
+  caveats: []
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: QM-P19
+  kind: doctrine
+  statement: 云遁 休开生与乙奇合奇，地盘六辛
+  anchor:
+    file: sources/fulltext/san-shi/qimen-dunjia-tongzhi/fulltext.md
+    start_line: 107
+    end_line: 107
+  quote: 云遁 休开生与乙奇合奇，地盘六辛
+  applicable_to: []
+  caveats: []
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: QM-P20
+  kind: doctrine
+  statement: 风遁 休开生临乙奇，地盘巽四宫
+  anchor:
+    file: sources/fulltext/san-shi/qimen-dunjia-tongzhi/fulltext.md
+    start_line: 109
+    end_line: 109
+  quote: 风遁 休开生临乙奇，地盘巽四宫
+  applicable_to: []
+  caveats: []
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: QM-P21
+  kind: doctrine
+  statement: 龙遁 休门与乙奇合坎
+  anchor:
+    file: sources/fulltext/san-shi/qimen-dunjia-tongzhi/fulltext.md
+    start_line: 111
+    end_line: 111
+  quote: 龙遁 休门与乙奇合坎
+  applicable_to: []
+  caveats: []
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: QM-P22
+  kind: doctrine
+  statement: 虎遁 休门与乙奇合艮辛
+  anchor:
+    file: sources/fulltext/san-shi/qimen-dunjia-tongzhi/fulltext.md
+    start_line: 113
+    end_line: 113
+  quote: 虎遁 休门与乙奇合艮辛
+  applicable_to: []
+  caveats: []
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: QM-P23
+  kind: doctrine
+  statement: 神遁 休门与乙奇合九天
+  anchor:
+    file: sources/fulltext/san-shi/qimen-dunjia-tongzhi/fulltext.md
+    start_line: 115
+    end_line: 115
+  quote: 神遁 休门与乙奇合九天
+  applicable_to: []
+  caveats: []
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: QM-P24
+  kind: doctrine
+  statement: 鬼遁 乙奇合九地杜门
+  anchor:
+    file: sources/fulltext/san-shi/qimen-dunjia-tongzhi/fulltext.md
+    start_line: 117
+    end_line: 117
+  quote: 鬼遁 乙奇合九地杜门
+  applicable_to: []
+  caveats: []
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: QM-P25
+  kind: doctrine
+  statement: 三奇得使 乙奇加甲午甲戌 丙奇加甲子甲申 丁奇加甲寅甲辰
+  anchor:
+    file: sources/fulltext/san-shi/qimen-dunjia-tongzhi/fulltext.md
+    start_line: 127
+    end_line: 127
+  quote: 三奇得使 乙奇加甲午甲戌 丙奇加甲子甲申 丁奇加甲寅甲辰
+  applicable_to: []
+  caveats: []
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: QM-P27
+  kind: doctrine
+  statement: 岁格 庚临岁干
+  anchor: null
+  quote: 岁格 庚临岁干
+  applicable_to: []
+  caveats: []
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: QM-P28
+  kind: doctrine
+  statement: 月格 庚临月干
+  anchor: null
+  quote: 月格 庚临月干
+  applicable_to: []
+  caveats: []
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: QM-P29
+  kind: doctrine
+  statement: 日格 庚临日干
+  anchor: null
+  quote: 日格 庚临日干
+  applicable_to: []
+  caveats: []
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: QM-P30
+  kind: doctrine
+  statement: 时格 庚临时干三奇
+  anchor:
+    file: sources/fulltext/san-shi/qimen-dunjia-tongzhi/fulltext.md
+    start_line: 141
+    end_line: 141
+  quote: 时格 庚临时干三奇
+  applicable_to: []
+  caveats: []
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: QM-P31
+  kind: doctrine
+  statement: 伏宫 庚临值符
+  anchor: null
+  quote: 伏宫 庚临值符
+  applicable_to: []
+  caveats: []
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: QM-P32
+  kind: doctrine
+  statement: 伏干 庚临日干
+  anchor: null
+  quote: 伏干 庚临日干
+  applicable_to: []
+  caveats: []
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: QM-P33
+  kind: doctrine
+  statement: 飞干格 日干临庚
+  anchor:
+    file: sources/fulltext/san-shi/qimen-dunjia-tongzhi/fulltext.md
+    start_line: 149
+    end_line: 149
+  quote: 飞干格 日干临庚
+  applicable_to: []
+  caveats: []
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: QM-P34
+  kind: doctrine
+  statement: 六庚加丙奇
+  anchor:
+    file: sources/fulltext/san-shi/qimen-dunjia-tongzhi/fulltext.md
+    start_line: 151
+    end_line: 151
+  quote: 太白入荧 六庚加丙奇又庚加卯日时酉丁
+  applicable_to: []
+  caveats: []
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: QM-P35
+  kind: doctrine
+  statement: 丙奇加六庚金
+  anchor:
+    file: sources/fulltext/san-shi/qimen-dunjia-tongzhi/fulltext.md
+    start_line: 153
+    end_line: 153
+  quote: 火入金乡 丙奇加六庚金又丙奇加惊用值符之庚辛
+  applicable_to: []
+  caveats: []
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: QM-P37
+  kind: doctrine
+  statement: 六仪受制 休加离 伤加坤 杜加艮 景加乾 生加兑 死加坎 开加震 惊加巽
+  anchor:
+    file: sources/fulltext/san-shi/qimen-dunjia-tongzhi/fulltext.md
+    start_line: 169
+    end_line: 171
+  quote: 六仪受制 休加离 伤加坤 杜加艮 景加乾
+  applicable_to: []
+  caveats: []
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: QM-P38
+  kind: doctrine
+  statement: 地罗遮蔽 六壬临时干
+  anchor:
+    file: sources/fulltext/san-shi/qimen-dunjia-tongzhi/fulltext.md
+    start_line: 173
+    end_line: 173
+  quote: 地罗遮蔽 六壬临时干
+  applicable_to: []
+  caveats: []
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: QM-P39
+  kind: doctrine
+  statement: 天网四张 六癸临时干
+  anchor:
+    file: sources/fulltext/san-shi/qimen-dunjia-tongzhi/fulltext.md
+    start_line: 175
+    end_line: 175
+  quote: 天网四张 六癸临时干
+  applicable_to: []
+  caveats: []
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: QM-P40
+  kind: doctrine
+  statement: 尺寸高低 一二三四五宫尺寸低，六七八九宫尺寸高
+  anchor:
+    file: sources/fulltext/san-shi/qimen-dunjia-tongzhi/fulltext.md
+    start_line: 177
+    end_line: 177
+  quote: 尺寸高低 一二三四五宫尺寸低，六七八九宫尺寸高
+  applicable_to: []
+  caveats: []
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null

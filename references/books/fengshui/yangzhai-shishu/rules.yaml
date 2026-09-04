@@ -1,0 +1,261 @@
+schema_version: fateradar-rules-v2
+book:
+  slug: yangzhai-shishu
+  system: fengshui
+  title: 阳宅十书
+  script: traditional
+  fulltext: sources/fulltext/fengshui/yangzhai-shishu/fulltext.md
+  fulltext_sha256: 78ca6fcbc7dec7b361bf4b4922c6834bc4d1320495940d51cc11f411d348110a
+rules:
+- rule_id: YANGZHAISHIS-YZS-R001
+  kind: doctrine
+  statement: 宅外来龙、明堂、山水道路是第一层；外形大局不善时，不能只凭内部布局判全吉。
+  anchor:
+    file: sources/fulltext/fengshui/yangzhai-shishu/fulltext.md
+    start_line: 25
+    end_line: 36
+  quote: 人之居處，宜以大地山河為主，其來脈氣勢最大，關
+  applicable_to: []
+  caveats: []
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: YANGZHAISHIS-YZS-R002
+  kind: doctrine
+  statement: 当冲口、寺庙、祠社窑冶官衙、故军营战地、正当水流、山脊冲、大城门口、狱门、百川口等，书中列为不居。
+  anchor:
+    file: sources/fulltext/fengshui/yangzhai-shishu/fulltext.md
+    start_line: 41
+    end_line: 44
+  quote: 凡宅：不居當衝口處，不居寺廟，不近祠社窯冶官衙，
+  applicable_to: []
+  caveats: []
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: YANGZHAISHIS-YZS-R003
+  kind: doctrine
+  statement: 门前新塘、屋箭、井当大门、水路桥梁四面交冲等被列为阳宅外形忌象，须作为环境风险项而不是单一断语。
+  anchor:
+    file: sources/fulltext/fengshui/yangzhai-shishu/fulltext.md
+    start_line: 56
+    end_line: 89
+  quote: 凡宅或水路橋梁四面交衝者，使子孫怯弱，主不吉
+  applicable_to: []
+  caveats: []
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: YANGZHAISHIS-YZS-R004
+  kind: doctrine
+  statement: 书中认为福元一错，东四修西、西四修东，则外形内形俱吉也无用；因此八宅类判断必须先有生年/福元事实层。
+  anchor:
+    file: sources/fulltext/fengshui/yangzhai-shishu/fulltext.md
+    start_line: 767
+    end_line: 774
+  quote: 福元者何，即福德宮是也。古人隱祕此訣，謂之「伏位。」
+  applicable_to: []
+  caveats: []
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: YANGZHAISHIS-YZS-R005
+  kind: doctrine
+  statement: 东四位生人以震巽坎离为吉方系统，西四位生人以乾坤艮兑为吉方系统；不得把两组平均化。
+  anchor:
+    file: sources/fulltext/fengshui/yangzhai-shishu/fulltext.md
+    start_line: 1039
+    end_line: 1041
+  quote: 東四位宅圖說并東四位生人用例
+  applicable_to: []
+  caveats: []
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: YANGZHAISHIS-YZS-R006
+  kind: doctrine
+  statement: 不能概以大门定全宅吉凶；宅中有墙隔断并开门时，游年与穿宫应从该门重起。
+  anchor:
+    file: sources/fulltext/fengshui/yangzhai-shishu/fulltext.md
+    start_line: 1582
+    end_line: 1594
+  quote: 近世術者，概以大門定宅吉凶，不知大門止是遊年
+  applicable_to: []
+  caveats: []
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: YANGZHAISHIS-YZS-R007
+  kind: doctrine
+  statement: 生气贪狼、延年武曲、天乙巨门为吉星核心；祸害禄存、六煞文曲、五鬼廉贞、绝命破军等为凶星系统。
+  anchor:
+    file: sources/fulltext/fengshui/yangzhai-shishu/fulltext.md
+    start_line: 1247
+    end_line: 1255
+  quote: 生者，生氣星，貪狼星也　　　，一木
+  applicable_to: []
+  caveats: []
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: YZS-R008
+  kind: doctrine
+  statement: 大游年主方位，也主层数；方位虽吉但层数高下错配，吉也可能变凶。
+  anchor:
+    file: sources/fulltext/fengshui/yangzhai-shishu/fulltext.md
+    start_line: 1577
+    end_line: 1581
+  quote: 「《大遊》年既主方位，又主層數，方位雖吉，而層數之中
+  applicable_to: []
+  caveats: []
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: YZS-R009
+  kind: doctrine
+  statement: 穿宫层数中，吉星位置宜高大，凶星位置宜低小；但吉星落凶方时仍不可简单高大化。
+  anchor:
+    file: sources/fulltext/fengshui/yangzhai-shishu/fulltext.md
+    start_line: 1674
+    end_line: 1680
+  quote: 震坎方高大，皆為富貴之利宅。
+  applicable_to: []
+  caveats: []
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: YZS-R010
+  kind: doctrine
+  statement: 安门专主福元旺合吉星，同时要避直冲尖射、砂水斜割、恶石、神庙等乘杀入门，并须慎选月日。
+  anchor:
+    file: sources/fulltext/fengshui/yangzhai-shishu/fulltext.md
+    start_line: 1766
+    end_line: 1784
+  quote: 論開門修造門第六
+  applicable_to: []
+  caveats: []
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: YZS-R011
+  kind: doctrine
+  statement: 天德月德满成开日、门光星、天牢黑道、三煞、胎神等需要完整择日事实层；不能只凭文本直接挑日期。
+  anchor:
+    file: sources/fulltext/fengshui/yangzhai-shishu/fulltext.md
+    start_line: 1772
+    end_line: 1823
+  quote: 十墳，不與人家修一門。」故論開門修造門第六，
+  applicable_to: []
+  caveats: []
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: YZS-R012
+  kind: doctrine
+  statement: 书中称阳宅阴宅俱以水法取效，水法一差则前法俱坏；须分九星水来去、阴阳山水、天干/地支水。
+  anchor:
+    file: sources/fulltext/fengshui/yangzhai-shishu/fulltext.md
+    start_line: 1881
+    end_line: 1935
+  quote: 陽宅陰宅，俱以水法取效，若宅內外之形雖佳，修造
+  applicable_to: []
+  caveats: []
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: YZS-R013
+  kind: doctrine
+  statement: 辰戌丑未见破军水为凶，见巨门水为救；必须先有二十四山与水路事实层。
+  anchor:
+    file: sources/fulltext/fengshui/yangzhai-shishu/fulltext.md
+    start_line: 1937
+    end_line: 1945
+  quote: 更有《離》壬寅午戌，　　　合山合水一齊陽。
+  applicable_to: []
+  caveats: []
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: YZS-R014
+  kind: doctrine
+  statement: 宅内形涉及堂屋、廊屋、天井、门路、龙虎、碓磨、厨灶等，不能只看一个房间或单一门向。
+  anchor:
+    file: sources/fulltext/fengshui/yangzhai-shishu/fulltext.md
+    start_line: 2015
+    end_line: 2078
+  quote: 《宅法》多端，無一可略。宅內房屋，如龜頭雁尾，披孝之
+  applicable_to: []
+  caveats: []
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: YZS-R015
+  kind: doctrine
+  statement: 修造择日线中，书中明确先起命前五神，再进入九宫建宅、行年建宅等；必须走择日 adapter。
+  anchor:
+    file: sources/fulltext/fengshui/yangzhai-shishu/fulltext.md
+    start_line: 2197
+    end_line: 2244
+  quote: ===論選擇第九
+  applicable_to: []
+  caveats: []
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: YZS-R016
+  kind: doctrine
+  statement: 太阴/太阳过宫图局属于选择第九图表信息，不得由语言模型从图像或记忆手推。
+  anchor:
+    file: sources/fulltext/fengshui/yangzhai-shishu/fulltext.md
+    start_line: 2593
+    end_line: 2601
+  quote: 逐日太陰過宮定局
+  applicable_to: []
+  caveats: []
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: YZS-R017
+  kind: doctrine
+  statement: 论符镇含大量符图；本 pack 可说明其在书中用于“宅兆既凶，又岁月难待”的传统语境，但不转写符形、不指导现实执行。
+  anchor:
+    file: sources/fulltext/fengshui/yangzhai-shishu/fulltext.md
+    start_line: 2616
+    end_line: 3015
+  quote: 修宅造門，非甚有力之家，難以卒辦。縱有力者，非遲
+  applicable_to: []
+  caveats: []
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: YZS-R018
+  kind: doctrine
+  statement: 书末问答称地利仅足以挽回天时之半，宅法不可执定；回答时需把阳宅读法作为传统倾向而非现实保证。
+  anchor:
+    file: sources/fulltext/fengshui/yangzhai-shishu/fulltext.md
+    start_line: 3007
+    end_line: 3015
+  quote: 王子既輯《陽宅十書》成，客有質者曰：「亦有宅法吉
+  applicable_to: []
+  caveats: []
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
