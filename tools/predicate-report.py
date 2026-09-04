@@ -19,6 +19,20 @@ ROOT = Path(__file__).resolve().parents[1]
 ARTS = ("bazi", "ziwei", "qimen", "liuren", "liuyao", "qizheng")
 OPEN_KEYS = ("geju", "shensha", "ziwei_star", "daxian", "geju_qimen", "keti")
 
+# 各 art 引擎实际 pushFact 的 key。来源：$PRODUCT/src/lib/engine/facts/emit.ts
+# 的 emitBaziFacts / emitZiweiFacts / emitQimenFacts / emitLiurenFacts /
+# emitLiuyaoFacts / emitQizhengFacts。扩词表时必须同步改这里。
+ART_EMIT_KEYS: dict[str, frozenset[str]] = {
+    "bazi": frozenset(
+        {"rizhu", "yueling", "rizhu_strength", "geju", "yongshen", "shishen", "shensha", "kongwang"}
+    ),
+    "ziwei": frozenset({"ziwei_palace", "ziwei_star", "sihua", "daxian"}),
+    "qimen": frozenset({"jiuxing", "bamen", "bashen", "zhifu", "zhishi", "geju_qimen", "kongwang"}),
+    "liuren": frozenset({"keti", "sanchuan", "tianjiang", "yuejiang", "kongwang"}),
+    "liuyao": frozenset({"shiyao", "yingyao", "liuqin", "liushen", "fushen", "dongyao"}),
+    "qizheng": frozenset({"xingyao", "gongwei", "xiudu", "miaowang"}),
+}
+
 
 def art_of(system: str, slug: str) -> str | None:
     if system == "san-shi":
@@ -63,6 +77,11 @@ def main() -> int:
     parser.add_argument("--json", action="store_true")
     parser.add_argument("--max-wildcard", type=float, default=None, help="fail if any art wildcard share > this percent")
     parser.add_argument("--check-open-values", action="store_true", help="fail if open-key values are absent from facts-sample.json")
+    parser.add_argument(
+        "--check-art-keys",
+        action="store_true",
+        help="fail if a predicate key is not emitted by that art's engine",
+    )
     args = parser.parse_args()
 
     stats: dict[str, dict] = {
@@ -75,6 +94,7 @@ def main() -> int:
         for art in ARTS
     }
     open_uses: list[tuple[str, str, str, str]] = []
+    art_key_uses: list[tuple[str, str, str]] = []
 
     for path in sorted((ROOT / "references/books").glob("*/*/rules.yaml")):
         data = yaml.safe_load(path.read_text(encoding="utf-8"))
@@ -100,6 +120,8 @@ def main() -> int:
                     stats[art]["keys"].add(key)
                 if key in OPEN_KEYS and val != "*":
                     open_uses.append((art, rule.get("rule_id", ""), key, str(val)))
+                if isinstance(key, str):
+                    art_key_uses.append((art, str(rule.get("rule_id", "")), key))
 
     arts_out = {}
     for art in ARTS:
@@ -174,6 +196,33 @@ def main() -> int:
             exit_code = 1
         else:
             print("PASS open-values")
+
+    if args.check_art_keys:
+        bad_keys = [
+            (art, rid, key)
+            for art, rid, key in art_key_uses
+            if key not in ART_EMIT_KEYS.get(art, frozenset())
+        ]
+        # 同一规则同一非法 key 只报一次
+        seen: set[tuple[str, str, str]] = set()
+        uniq = []
+        for row in bad_keys:
+            if row in seen:
+                continue
+            seen.add(row)
+            uniq.append(row)
+        if uniq:
+            for art, rid, key in uniq[:20]:
+                allowed = ",".join(sorted(ART_EMIT_KEYS.get(art, frozenset())))
+                print(
+                    f"FAIL art-keys {art} {rid} key={key!r} not in emit.ts ({allowed})",
+                    file=sys.stderr,
+                )
+            if len(uniq) > 20:
+                print(f"... {len(uniq) - 20} more", file=sys.stderr)
+            exit_code = 1
+        else:
+            print("PASS art-keys")
 
     return exit_code
 

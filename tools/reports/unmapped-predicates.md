@@ -2,7 +2,7 @@
 
 本轮只改 `applicable_to`。下列锚定规则的 statement 无法用该 art 引擎已产出的 FactKey 忠实表达，保持空数组。
 
-共 445 条。
+共 447 条。
 
 | art | book | rule_id | 原因分类 | 需要的事实 |
 |---|---|---|---|---|
@@ -274,6 +274,8 @@
 | `ziwei` | `ziwei/feixing-ziwei-doushu-yuanzhi` | `FEIXINGZIWEI-014` | 条件过于复合，现有谓词表达不了 |  |
 | `ziwei` | `ziwei/taiwei-fu` | `TR` | 通则/无条件 |  |
 | `ziwei` | `ziwei/taiwei-fu` | `TAIWEIFU-005` | 条件过于复合，现有谓词表达不了 |  |
+| `ziwei` | `ziwei/taiwei-fu` | `TAIWEIFU-006` | 引擎不产出该 art 的此类事实 | xingyao |
+| `ziwei` | `ziwei/taiwei-fu` | `TAIWEIFU-008` | 引擎不产出该 art 的此类事实 | shishen |
 | `ziwei` | `ziwei/taiwei-fu` | `TAIWEIFU-010` | 条件过于复合，现有谓词表达不了 |  |
 | `ziwei` | `ziwei/taiwei-fu` | `TAIWEIFU-017` | 条件过于复合，现有谓词表达不了 |  |
 | `ziwei` | `ziwei/taiwei-fu` | `TAIWEIFU-020` | 需要引擎未产出的事实 | 大限宫位/流年太岁，不用 daxian * 通配 |
