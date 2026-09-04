@@ -27,11 +27,18 @@ statement 含「安全改写 / reframe / 不替代 / 并读 / 调用本 pack」�
 - `divination/huangji-jingshi` HR-01 元会运世换算、HUANGJIJINGS-007/020/021「非占断 / 非国运 / 非个人命术」
 - `xingming/xingming-suyuan` 卷四后篇案例总述
 
+## P7 恢复名单与校验冲突
+
+`docs/tasks/P7_QUALITY_FIX.md` 要求从 `0abcf1e` 原样恢复 34 条。已全部恢复，`FZ` 仍为 `anchor: null`。
+
+- `LZ`（`physiognomy/liuzhuang-xiangfa`）quote 是 `source_base: CTP《柳庄相法》…`，V13 判为 pack 元数据。按名单恢复后 `validate-rules.py` 对这条报 V13 ERROR。未改 quote、未再降级（不在第三节允许改动的 `LIURENMIBEN-020` 之内）。
+- `FEIXINGZIWEI-008` 对应度 0.140、`ZIWEIDOUSHUQ-ZW-05` 对应度 0.106，V14 WARN。任务书给的「正确对应度」分别是 0.15 / 0.16；本机 `fold_han` 用 opencc t2s（无 zhconv），未改 quote、未再降级。
+
 ## P6 灰区（对应度 0.15–0.30）
 
-任务书要求机器不动这一档，留人抽检。当前仍带锚 **260** 条。不要为了覆盖率把任务 5 已降级的 `<0.15` 填回去。
+任务书要求机器不动这一档，留人抽检。不要为了覆盖率把任务 5 已降级的 `<0.15` 填回去。
 
-完整降级清单见 `tools/reports/p6-downgrade.md`。其中白话转译、对应度被汉字集合召回打低的条目（如 `ZPR-03` 成败救应）若要收回，必须人对照原文，机器不回填。
+完整降级清单见 `tools/reports/p6-downgrade.md`。ZPR-03 等已按 P7 名单恢复。
 
 本机未找到 `/Users/yuhanglin/sync/code/FATERADAR_CLASSICS_P6_GOAL.md`，任务 0→8 按 nmem 会话 `claude-code-ddeb375d-2209-4b50-a61d-7776ccd62cfd` 的任务书摘要施工。
 

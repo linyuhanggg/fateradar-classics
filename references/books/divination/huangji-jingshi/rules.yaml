@@ -168,7 +168,10 @@ rules:
 - rule_id: HUANGJIJINGS-HR-05
   kind: doctrine
   statement: 天地之心可知，万化从心起；心为太极，万象皆心之发。
-  anchor: null
+  anchor:
+    file: sources/fulltext/divination/huangji-jingshi/fulltext.md
+    start_line: 37237
+    end_line: 37237
   quote: 太極道之極也太𤣥道之𤣥也太素色之本也太一數之始也太初事之初也其成功則一也
   applicable_to: []
   caveats:

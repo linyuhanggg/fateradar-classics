@@ -92,7 +92,10 @@ rules:
 - rule_id: HJC-R006
   kind: doctrine
   statement: 吉凶神煞、六神取象只能作旁证；核心判断仍以生克制化、用神旺衰和世应动变为主。
-  anchor: null
+  anchor:
+    file: sources/fulltext/divination/huangjin-ce/fulltext.md
+    start_line: 115
+    end_line: 115
   quote: 虎興而遇吉神，不害其為吉。龍動而逢凶曜，難掩其為凶。
   applicable_to: []
   caveats: []
@@ -136,7 +139,10 @@ rules:
 - rule_id: HJC-R010
   kind: doctrine
   statement: 财来生世或就世较易，我去寻财、世持动兄、财被日伤则难；应期看生衰旺合。
-  anchor: null
+  anchor:
+    file: sources/fulltext/divination/huangjin-ce/fulltext.md
+    start_line: 974
+    end_line: 974
   quote: 兄如太過，反不剋財；身或兄臨，必難求望。
   applicable_to: []
   caveats: []

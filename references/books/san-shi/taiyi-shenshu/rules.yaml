@@ -327,7 +327,10 @@ rules:
 - rule_id: TR-14
   kind: doctrine
   statement: 卷四（出师 / 障向 / 置阵 / 风云飞鸟助战 / 奇兵伏兵 / 对阵雲气）+ 卷九（敌国动静 / 敌使虚实 / 间谍 / 敌来方面 / 始击将临二十八舍）皆古代兵占；本 pack 仅作纲领，不展开具体应用
-  anchor: null
+  anchor:
+    file: sources/fulltext/san-shi/taiyi-shenshu/fulltext.md
+    start_line: 639
+    end_line: 639
   quote: 經曰助戰之法常須觀風雲之勢察飛鳥之情若太乙所在宫有風雲飛鳥䓁来衝格迫擊太乙者大敗之兆若迫擊大將宫者主敗若從主目上去擊客客敗若從客目上擊主主敗若從主人形上来客敗若有風雲飛鳥從太嵗太隂月建上来擊主人主人敗擊客客敗若有風雲飛鳥扶主人陣者主人勝扶客
   applicable_to: []
   caveats:

@@ -112,7 +112,10 @@ rules:
 - rule_id: TYR-08
   kind: doctrine
   statement: 文中称挨星虽贵，但注解强调仍以三合五行生旺墓绝作为判断根基。
-  anchor: null
+  anchor:
+    file: sources/fulltext/fengshui/tianyu-jing/fulltext.md
+    start_line: 190
+    end_line: 190
   quote: 惟有挨星不最貴，泄漏天機秘。天機若然安在內，家活常富貴。天機若然安在外，家活漸退敗。五星配出九星名，天下任橫行。
   applicable_to: []
   caveats:

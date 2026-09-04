@@ -156,7 +156,10 @@ rules:
 - rule_id: XIEJIBIANFAN-011
   kind: doctrine
   statement: 牧养、纳畜、捕捉、田猎、取鱼等农事用事，多以"母仓""收日""成日"为吉，"破日""闭日""复日"为忌。
-  anchor: null
+  anchor:
+    file: sources/fulltext/selection/xieji-bianfang-shu/fulltext.md
+    start_line: 2747
+    end_line: 2747
   quote: 按天德月德乃月建三合旺氣天德合月德合與旺氣作五合皆上吉之日故所宜應如此忌畋獵取魚者恐傷生氣也舊本天德止宜興土工營宮室繕城郭月德并宜上官宴樂天德合宜祭祀祈福覃恩肆赦緩刑獄選將訓兵月德合並宜上册進表章營建宮室殊於名義不合明原引五行論則曰月德合日
   applicable_to: []
   caveats:

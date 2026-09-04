@@ -58,7 +58,10 @@ rules:
 - rule_id: ZPR-03
   kind: doctrine
   statement: 格局不能只判成败，还要看败中是否有救、成中是否被破；救应能改变格局可用性。
-  anchor: null
+  anchor:
+    file: sources/fulltext/bazi/ziping-zhenquan/fulltext.md
+    start_line: 361
+    end_line: 361
   quote: 用神專求月令，然以四柱配之，必有成敗。
   applicable_to:
   - key: yueling
@@ -277,7 +280,10 @@ rules:
 - rule_id: ZPR-15
   kind: doctrine
   statement: 四凶/特殊格须看制、化、合、配与取运，凶神得制化可成，失制化则败。
-  anchor: null
+  anchor:
+    file: sources/fulltext/bazi/ziping-zhenquan/fulltext.md
+    start_line: 1154
+    end_line: 1154
   quote: 煞以攻身，似非美物，而大貴之格，多存七煞。蓋控制得宜，煞爲我用，如大英雄大豪傑，似難駕馭，而處之有方，則驚天動地之功，忽焉而就。此王侯將相所以多存七煞也。
   applicable_to:
   - key: shishen
@@ -291,7 +297,10 @@ rules:
 - rule_id: ZPR-16
   kind: doctrine
   statement: 杂格应在正格不足以取用时讨论，且须严格按原文条件，不可泛化为万能例外。
-  anchor: null
+  anchor:
+    file: sources/fulltext/bazi/ziping-zhenquan/fulltext.md
+    start_line: 1365
+    end_line: 1365
   quote: 雜格者，月令無用，取外格而用之，其格甚多，故謂之雜。
   applicable_to: []
   caveats:

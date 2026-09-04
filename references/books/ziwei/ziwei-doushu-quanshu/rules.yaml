@@ -299,7 +299,10 @@ rules:
 - rule_id: ZIWEIDOUSHUQ-022
   kind: doctrine
   statement: 擎羊主刑伤争斗，陀罗主延滞磨折；二煞夹命/夹禄/夹忌主灾厄；庙旺会吉星可制凶（如"马头带剑"）。
-  anchor: null
+  anchor:
+    file: sources/fulltext/ziwei/ziwei-doushu-quanshu/fulltext.md
+    start_line: 1257
+    end_line: 1257
   quote: 命里逢空不飄流即主疾苦，馬頭帶劍非夭折則主刑傷。
   applicable_to: []
   caveats:
@@ -390,7 +393,10 @@ rules:
 - rule_id: ZIWEIDOUSHUQ-ZW-03
   kind: doctrine
   statement: 化权主权力威严决断；入命/官禄主有权力；与化禄会则富贵双全。
-  anchor: null
+  anchor:
+    file: sources/fulltext/ziwei/ziwei-doushu-quanshu/fulltext.md
+    start_line: 3623
+    end_line: 3623
   quote: 紫微廟旺遇左右昌曲魁鉞，軒勝位至封候伯，加羊陀火鈴平常，天府同權貴名利兩全，天相加內外權貴清正，破軍同鬧中安身。
   applicable_to:
   - {key: ziwei_palace, value: 命宫}
@@ -436,7 +442,10 @@ rules:
 - rule_id: ZIWEIDOUSHUQ-031
   kind: doctrine
   statement: 化禄+化权+化科三吉化于命宫三方四正，成"三奇加会"贵格，主大富大贵。
-  anchor: null
+  anchor:
+    file: sources/fulltext/ziwei/ziwei-doushu-quanshu/fulltext.md
+    start_line: 508
+    end_line: 508
   quote: 若居廟旺，化祿化權，允為貴論。
   applicable_to: []
   caveats:
@@ -570,7 +579,10 @@ rules:
 - rule_id: ZIWEIDOUSHUQ-040
   kind: doctrine
   statement: 奴仆宫主朋友下属；庙旺吉星主朋友助力；落陷凶煞主多损友。**注**：现代义近"交友宫"。
-  anchor: null
+  anchor:
+    file: sources/fulltext/ziwei/ziwei-doushu-quanshu/fulltext.md
+    start_line: 1788
+    end_line: 1788
   quote: 順數命前六位是天傷，命後六位是天使，天傷安在奴僕宮，天使安在疾厄宮。身與歲限夾在傷使中間，謂之加夾地更加惡曜多凶。
   applicable_to: []
   caveats:
@@ -670,7 +682,10 @@ rules:
 - rule_id: ZIWEIDOUSHUQ-ZW-05
   kind: doctrine
   statement: 贵局主要包括：紫府同宫 / 紫府朝垣 / 君臣庆会 / 府相朝垣 / 日月夹命 / 机月同梁 / 杀破狼 / 阳梁昌禄 / 巨日同宫 / 石中隐玉 / 三奇加会 / 紫微在午无杀凑 / 马头带剑 等。
-  anchor: null
+  anchor:
+    file: sources/fulltext/ziwei/ziwei-doushu-quanshu/fulltext.md
+    start_line: 1585
+    end_line: 1585
   quote: 日月夾命 不坐空亡遇逢本宮有吉星是也。
   applicable_to: []
   caveats:

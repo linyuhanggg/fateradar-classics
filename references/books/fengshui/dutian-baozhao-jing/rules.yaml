@@ -52,7 +52,10 @@ rules:
 - rule_id: DTR-04
   kind: doctrine
   statement: 子癸午丁、卯乙酉辛，辰戌丑未、乾坤艮巽，甲庚壬丙、寅申巳亥等分组用于辨天元、地元、人元；文本反复警告阳差阴错。
-  anchor: null
+  anchor:
+    file: sources/fulltext/fengshui/dutian-baozhao-jing/fulltext.md
+    start_line: 44
+    end_line: 44
   quote: 子字出脈子字尋.莫教差錯丑與壬.莫是陽差與陰錯.勸君不必費心尋.
   applicable_to: []
   caveats:

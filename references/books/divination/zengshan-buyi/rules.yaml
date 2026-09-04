@@ -406,7 +406,10 @@ rules:
 - rule_id: ZENGSHANBUYI-029
   kind: doctrine
   statement: 用神动则于值日 / 冲日 / 合日应；用神静则于冲日 / 临日应；用神空则出空 / 冲空之日实。
-  anchor: null
+  anchor:
+    file: sources/fulltext/divination/zengshan-buyi/fulltext.md
+    start_line: 2465
+    end_line: 2465
   quote: 官鬼雷霆霧電。官鬼乃父母之元神﹐動則生父﹐故主霧霆雷電。或應雷霆﹐不拘春夏秋冬﹐可執以爲雷霆霧電看是也。
   applicable_to: []
   caveats:
@@ -477,7 +480,10 @@ rules:
 - rule_id: ZENGSHANBUYI-ZR-10
   kind: doctrine
   statement: 占天时——父母为雨、子孙为晴、官鬼为云雷、妻财为风、兄弟为风云；旺动则现。
-  anchor: null
+  anchor:
+    file: sources/fulltext/divination/zengshan-buyi/fulltext.md
+    start_line: 2424
+    end_line: 2424
   quote: 父母爲雨雪霧霜﹐發則八方潤澤。
   applicable_to: []
   caveats:

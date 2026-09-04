@@ -102,7 +102,10 @@ rules:
 - rule_id: QNA-R008
   kind: doctrine
   statement: 篇末强调再辨星辰、真微妙；实际输出须与青囊序/天玉/都天/地理辨正和现场事实合读。
-  anchor: null
+  anchor:
+    file: sources/fulltext/fengshui/qingnang-aoyu/fulltext.md
+    start_line: 37
+    end_line: 37
   quote: 勸君再把星辰辨, 吉凶禍福如神現;
   applicable_to: []
   caveats: []

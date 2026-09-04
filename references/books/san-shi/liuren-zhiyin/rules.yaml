@@ -223,7 +223,10 @@ rules:
 - rule_id: LIURENZHIYIN-017
   kind: doctrine
   statement: 用户问具体事件应期，事实层日期、课体和三传完整；只有求财问题才启用末传六合分支。
-  anchor: null
+  anchor:
+    file: sources/fulltext/san-shi/liuren-zhiyin/fulltext.md
+    start_line: 141
+    end_line: 141
   quote: 16. 克者動也，不克則不動。課中有幾克，即有幾事。又事之應期，亦在克中求，蓋克者，轉折也。元首主速，重審主遲；元首主喜，切防樂極生悲；重審主憂，亦詳自暗而明。
   applicable_to: []
   caveats:

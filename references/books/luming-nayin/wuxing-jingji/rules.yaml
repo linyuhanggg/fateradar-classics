@@ -313,7 +313,10 @@ rules:
 - rule_id: WX-07-05
   kind: doctrine
   statement: 冲破六冲
-  anchor: null
+  anchor:
+    file: sources/fulltext/luming-nayin/wuxing-jingji/fulltext.md
+    start_line: 8707
+    end_line: 8707
   quote: 相衝者十二支戰擊之神，大概為兇，然有為福之甚者，凡沖處要相生，如辛巳沖癸亥，即是金生水也，馀依此推之。如同類及相尅者最兇，如壬申金尅庚寅之木，己卯沖己酉之土，皆不利矣。凡相生衝，主人聲望播流，高明出眾，科甲崢嶸，相尅衝，主人神清貌俊，襟韻脫俗，軒昂灑落，上視，仰面而行。
   applicable_to: []
   caveats: []

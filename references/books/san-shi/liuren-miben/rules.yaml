@@ -88,7 +88,10 @@ rules:
 - rule_id: LIURENMIBEN-007
   kind: doctrine
   statement: 已按问题域确定类神，LM-R00 已通过。
-  anchor: null
+  anchor:
+    file: sources/fulltext/san-shi/liuren-miben/fulltext.md
+    start_line: 1474
+    end_line: 1474
   quote: 類不逢空旺相乘，傳生支合事須成，見類日鬼空刑害，所乾不遂類中明。幹事，三傳上下相生，支神三六合乾合，所幹成。雖是見類，與今日為鬼，或刑害空亡，三傳見害，不成。傳中用事之人，須此原本作「比」字。言之。
   applicable_to: []
   caveats:
@@ -172,7 +175,10 @@ rules:
 - rule_id: LIURENMIBEN-013
   kind: doctrine
   statement: 已有日辰和三传，问题包含进退、过程或结果。
-  anchor: null
+  anchor:
+    file: sources/fulltext/san-shi/liuren-miben/fulltext.md
+    start_line: 3397
+    end_line: 3397
   quote: 傳進為進，傳退為退。進空宜退，退空宜進，觀其傳，吉則進，凶則退。
   applicable_to: []
   caveats:
@@ -224,7 +230,10 @@ rules:
 - rule_id: LIURENMIBEN-017
   kind: doctrine
   statement: 用户明确采用卷十七三才应事，且 LM-R00 已通过。
-  anchor: null
+  anchor:
+    file: sources/fulltext/san-shi/liuren-miben/fulltext.md
+    start_line: 5600
+    end_line: 5600
   quote: 天課占天人課人，地課卜宅地墳塋。罡天魁地人求貴，此訣教君最有靈。孟仲季中分順逆，地般落處見真情。仲於本位天盤取，孟季須知隔五尊。此是三才期應訣，鬼神無處可潛形。
   applicable_to: []
   caveats:

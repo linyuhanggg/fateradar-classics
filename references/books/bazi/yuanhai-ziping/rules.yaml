@@ -526,7 +526,10 @@ rules:
 - rule_id: YUANHAIZIPIN-YR-04
   kind: doctrine
   statement: 本书神煞卷还含天罗地网、十恶大败、灾煞、元辰、勾绞、暗金的煞、六厄等；统一按 YR-04-01 神煞总则处理。
-  anchor: null
+  anchor:
+    file: sources/fulltext/bazi/yuanhai-ziping/fulltext.md
+    start_line: 4470
+    end_line: 4470
   quote: 十惡大敗，格中不忌。若會財官，反成富貴。格局推詳，以殺為重。制煞為權，何愁損用。
   applicable_to: []
   caveats:

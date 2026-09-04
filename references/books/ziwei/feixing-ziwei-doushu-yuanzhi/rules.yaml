@@ -72,7 +72,10 @@ rules:
 - rule_id: FEIXINGZIWEI-006
   kind: doctrine
   statement: 本书把白虎、喪門、弔客、歲破、大耗、流羊、陀罗等在方位上的作用归为伤病、破败、拆毁、急变、起土、迁动等传统凶象类别。
-  anchor: null
+  anchor:
+    file: sources/fulltext/ziwei/feixing-ziwei-doushu-yuanzhi/fulltext.md
+    start_line: 582
+    end_line: 582
   quote: 歲破之方主破財破敗拆毀等事。
   applicable_to: []
   caveats:
@@ -100,7 +103,10 @@ rules:
 - rule_id: FEIXINGZIWEI-008
   kind: doctrine
   statement: 巨门主口舌是非、公门黑暗、法院警署看守律师等象；天刑主刑法、司法、掌权施令、戒师将帅等象。二者在官禄、命身、流年等位置可作为法律/纠纷/公门事务旁证。
-  anchor: null
+  anchor:
+    file: sources/fulltext/ziwei/feixing-ziwei-doushu-yuanzhi/fulltext.md
+    start_line: 516
+    end_line: 516
   quote: 如法院警察局看守所律師之屬。
   applicable_to: []
   caveats:
@@ -127,7 +133,10 @@ rules:
 - rule_id: FEIXINGZIWEI-010
   kind: doctrine
   statement: 本书尝试把斗数用于占课：一物一事一地一人均有身命，推演一课即该事整体局势，不必另分主客用神。
-  anchor: null
+  anchor:
+    file: sources/fulltext/ziwei/feixing-ziwei-doushu-yuanzhi/fulltext.md
+    start_line: 1090
+    end_line: 1090
   quote: 而其他一切對于占課身命顯然布明。
   applicable_to: []
   caveats:

@@ -60,7 +60,10 @@ rules:
 - rule_id: YANGZHAISHIS-YZS-R005
   kind: doctrine
   statement: 东四位生人以震巽坎离为吉方系统，西四位生人以乾坤艮兑为吉方系统；不得把两组平均化。
-  anchor: null
+  anchor:
+    file: sources/fulltext/fengshui/yangzhai-shishu/fulltext.md
+    start_line: 19
+    end_line: 19
   quote: 東四位宅圖說并東四位生人用例
   applicable_to: []
   caveats: []
@@ -171,7 +174,10 @@ rules:
 - rule_id: YZS-R014
   kind: doctrine
   statement: 宅内形涉及堂屋、廊屋、天井、门路、龙虎、碓磨、厨灶等，不能只看一个房间或单一门向。
-  anchor: null
+  anchor:
+    file: sources/fulltext/fengshui/yangzhai-shishu/fulltext.md
+    start_line: 2016
+    end_line: 2016
   quote: 《宅法》多端，無一可略。宅內房屋，如龜頭雁尾，披孝之
   applicable_to: []
   caveats: []

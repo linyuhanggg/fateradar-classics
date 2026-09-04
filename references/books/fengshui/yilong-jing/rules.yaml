@@ -10,7 +10,10 @@ rules:
 - rule_id: YILONGJING-R-01
   kind: doctrine
   statement: 干龙长远去无穷，行至中间阳气聚为真；枝龙身上半是虚花半是胎，结实者必有护送回顾。
-  anchor: null
+  anchor:
+    file: sources/fulltext/fengshui/yilong-jing/fulltext.md
+    start_line: 14
+    end_line: 14
   quote: 幹龍長遠去無窮。
   applicable_to: []
   caveats:
@@ -271,7 +274,10 @@ rules:
 - rule_id: R-18
   kind: doctrine
   statement: 干头未作枝先兴、干长枝短力难争；如瓶生数嘴、口若尽倾嘴无水；大树生小枝、大枝分奪小枝衰。
-  anchor: null
+  anchor:
+    file: sources/fulltext/fengshui/yilong-jing/fulltext.md
+    start_line: 528
+    end_line: 528
   quote: 幹頭未作枝先興，枝上未作幹先榮。
   applicable_to: []
   caveats:

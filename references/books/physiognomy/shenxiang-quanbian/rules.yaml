@@ -380,7 +380,10 @@ rules:
 - rule_id: SHENXIANGQUA-029
   kind: doctrine
   statement: 唇红润 / 舌长大 / 齿密齐为相之佳；古文细分齿数对应贵贱按 reframe。
-  anchor: null
+  anchor:
+    file: sources/fulltext/physiognomy/shenxiang-quanbian/fulltext.md
+    start_line: 2507
+    end_line: 2507
   quote: 《詩》曰：「齒密方為君子儒，分明小輩齒牙疏。色如白玉
   applicable_to: []
   caveats:

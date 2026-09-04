@@ -1,6 +1,8 @@
 # P6 任务 5 降级/扩行记录
 
-扩行 10，短句降级 46，低对应度降级 252。灰区 0.15–0.30 未动 258 条。
+P7 恢复 34 条，原因：P6 繁简表缺陷。本表原有 33 行已删；`physiognomy/liuzhuang-xiangfa` 的 `LZ` 不在本表中（P5 锚点仍按名单从 `0abcf1e` 取回）。
+
+扩行 10，短句降级 46，低对应度降级 252（P7 已从本表去掉误杀行）。灰区 0.15–0.30 未动 258 条。
 
 | book | rule_id | action | reason | score |
 |---|---|---|---|---:|
@@ -42,22 +44,15 @@
 | bazi/yuanhai-ziping | YUANHAIZIPIN-019 | null | 对应度<0.15，引文不能支持结论 | 0.111 |
 | bazi/yuanhai-ziping | YR-03 | null | 对应度<0.15，引文不能支持结论 | 0.115 |
 | bazi/yuanhai-ziping | YUANHAIZIPIN-033 | null | 对应度<0.15，引文不能支持结论 | 0.115 |
-| bazi/yuanhai-ziping | YUANHAIZIPIN-YR-04 | null | 对应度<0.15，引文不能支持结论 | 0.091 |
 | bazi/yuanhai-ziping | YUANHAIZIPIN-037 | null | 对应度<0.15，引文不能支持结论 | 0.086 |
-| bazi/ziping-zhenquan | ZPR-03 | null | 对应度<0.15，引文不能支持结论 | 0.125 |
 | bazi/ziping-zhenquan | ZPR-12 | null | 对应度<0.15，引文不能支持结论 | 0.062 |
 | bazi/ziping-zhenquan | ZPR-14 | null | 扩行后对应度仍<0.15 | 0.083 |
-| bazi/ziping-zhenquan | ZPR-15 | null | 对应度<0.15，引文不能支持结论 | 0.143 |
-| bazi/ziping-zhenquan | ZPR-16 | null | 对应度<0.15，引文不能支持结论 | 0.138 |
-| divination/huangji-jingshi | HUANGJIJINGS-HR-05 | null | 对应度<0.15，引文不能支持结论 | 0.125 |
 | divination/huangji-jingshi | HR-06 | null | 对应度<0.15，引文不能支持结论 | 0.077 |
 | divination/huangji-jingshi | HUANGJIJINGS-HR-09 | null | 对应度<0.15，引文不能支持结论 | 0.083 |
 | divination/huangjin-ce | HJC-R003 | null | 对应度<0.15，引文不能支持结论 | 0.0 |
-| divination/huangjin-ce | HJC-R006 | null | 对应度<0.15，引文不能支持结论 | 0.125 |
 | divination/huangjin-ce | HJC-R007 | null | 对应度<0.15，引文不能支持结论 | 0.118 |
 | divination/huangjin-ce | HJC-R008 | null | 对应度<0.15，引文不能支持结论 | 0.091 |
 | divination/huangjin-ce | HJC-R009 | null | 对应度<0.15，引文不能支持结论 | 0.125 |
-| divination/huangjin-ce | HJC-R010 | null | 对应度<0.15，引文不能支持结论 | 0.12 |
 | divination/huangjin-ce | HJC-R017 | null | 对应度<0.15，引文不能支持结论 | 0.054 |
 | divination/huozhu-lin | HZL | null | 对应度<0.15，引文不能支持结论 | 0.105 |
 | divination/huozhu-lin | HZL-R001 | null | 对应度<0.15，引文不能支持结论 | 0.0 |
@@ -73,16 +68,12 @@
 | divination/zengshan-buyi | ZR-07 | null | 对应度<0.15，引文不能支持结论 | 0.0 |
 | divination/zengshan-buyi | ZENGSHANBUYI-ZR-07 | null | 对应度<0.15，引文不能支持结论 | 0.0 |
 | divination/zengshan-buyi | ZR-08 | null | 对应度<0.15，引文不能支持结论 | 0.0 |
-| divination/zengshan-buyi | ZENGSHANBUYI-029 | null | 对应度<0.15，引文不能支持结论 | 0.125 |
 | divination/zengshan-buyi | ZENGSHANBUYI-031 | null | 短句无句读，无法扩成原文整行 | 0.214 |
-| divination/zengshan-buyi | ZENGSHANBUYI-ZR-10 | null | 对应度<0.15，引文不能支持结论 | 0.13 |
 | divination/zhouyi-zhezhong | ZZR | null | 对应度<0.15，引文不能支持结论 | 0.0 |
 | fengshui/dutian-baozhao-jing | DTR-01 | null | 对应度<0.15，引文不能支持结论 | 0.029 |
-| fengshui/dutian-baozhao-jing | DTR-04 | null | 对应度<0.15，引文不能支持结论 | 0.136 |
 | fengshui/huangdi-zhaijing | HDZJ-R002 | null | 对应度<0.15，引文不能支持结论 | 0.083 |
 | fengshui/qingnang-aoyu | QNA-R002 | null | 对应度<0.15，引文不能支持结论 | 0.0 |
 | fengshui/qingnang-aoyu | QNA-R005 | null | 短句无句读，无法扩成原文整行 | 0.321 |
-| fengshui/qingnang-aoyu | QNA-R008 | null | 对应度<0.15，引文不能支持结论 | 0.125 |
 | fengshui/qingnang-jing | QINGNANGJING-R-01 | null | 短句无句读，无法扩成原文整行 | 0.231 |
 | fengshui/qingnang-jing | QINGNANGJING-R-02 | null | 短句无句读，无法扩成原文整行 | 0.159 |
 | fengshui/qingnang-jing | QINGNANGJING-R-03 | null | 短句无句读，无法扩成原文整行 | 0.167 |
@@ -101,7 +92,6 @@
 | fengshui/shenshi-xuankong-xue | SHENSHIXUANK-004 | null | 对应度<0.15，引文不能支持结论 | 0.13 |
 | fengshui/tianyu-jing | TYR-01 | null | 对应度<0.15，引文不能支持结论 | 0.08 |
 | fengshui/tianyu-jing | TYR-02 | null | 对应度<0.15，引文不能支持结论 | 0.125 |
-| fengshui/tianyu-jing | TYR-08 | null | 对应度<0.15，引文不能支持结论 | 0.143 |
 | fengshui/xuexin-fu | XXF | null | 对应度<0.15，引文不能支持结论 | 0.0 |
 | fengshui/xuexin-fu | XUEXINFU-XXF | null | 对应度<0.15，引文不能支持结论 | 0.091 |
 | fengshui/yangzhai-sanyao | YZS-R004 | null | 短句无句读，无法扩成原文整行 | 0.188 |
@@ -110,18 +100,14 @@
 | fengshui/yangzhai-sanyao | YZS-R007 | null | 对应度<0.15，引文不能支持结论 | 0.056 |
 | fengshui/yangzhai-shishu | YANGZHAISHIS-YZS-R001 | null | 对应度<0.15，引文不能支持结论 | 0.103 |
 | fengshui/yangzhai-shishu | YANGZHAISHIS-YZS-R004 | null | 对应度<0.15，引文不能支持结论 | 0.108 |
-| fengshui/yangzhai-shishu | YANGZHAISHIS-YZS-R005 | null | 对应度<0.15，引文不能支持结论 | 0.143 |
 | fengshui/yangzhai-shishu | YANGZHAISHIS-YZS-R007 | null | 对应度<0.15，引文不能支持结论 | 0.111 |
 | fengshui/yangzhai-shishu | YZS-R009 | null | 对应度<0.15，引文不能支持结论 | 0.12 |
 | fengshui/yangzhai-shishu | YZS-R010 | null | 对应度<0.15，引文不能支持结论 | 0.028 |
 | fengshui/yangzhai-shishu | YZS-R011 | null | 对应度<0.15，引文不能支持结论 | 0.083 |
-| fengshui/yangzhai-shishu | YZS-R014 | null | 对应度<0.15，引文不能支持结论 | 0.133 |
 | fengshui/yangzhai-shishu | YZS-R015 | null | 对应度<0.15，引文不能支持结论 | 0.036 |
 | fengshui/yangzhai-shishu | YZS-R016 | null | 对应度<0.15，引文不能支持结论 | 0.133 |
 | fengshui/yangzhai-shishu | YZS-R017 | null | 对应度<0.15，引文不能支持结论 | 0.024 |
 | fengshui/yangzhai-shishu | YZS-R018 | null | 对应度<0.15，引文不能支持结论 | 0.105 |
-| fengshui/yilong-jing | YILONGJING-R-01 | null | 对应度<0.15，引文不能支持结论 | 0.091 |
-| fengshui/yilong-jing | R-18 | null | 对应度<0.15，引文不能支持结论 | 0.138 |
 | fengshui/zangfa-daozhang | ZFD-R001 | expand | 残句/短句扩到原文整行 | 0.0 |
 | fengshui/zangfa-daozhang | ZFD-R002 | expand | 残句/短句扩到原文整行 | 0.158 |
 | fengshui/zangfa-daozhang | ZFD-R003 | expand | 残句/短句扩到原文整行 | 0.182 |
@@ -139,7 +125,6 @@
 | luming-nayin/wuxing-jingji | WX-05-01 | null | 短句无句读，无法扩成原文整行 | 0.5 |
 | luming-nayin/wuxing-jingji | WX-05-02 | null | 短句无句读，无法扩成原文整行 | 0.333 |
 | luming-nayin/wuxing-jingji | WX-05-05 | null | 对应度<0.15，引文不能支持结论 | 0.0 |
-| luming-nayin/wuxing-jingji | WX-07-05 | null | 对应度<0.15，引文不能支持结论 | 0.0 |
 | luming-nayin/wuxing-jingji | WX-10-01 | null | 短句无句读，无法扩成原文整行 | 0.25 |
 | physiognomy/mayi-shenxiang | MAYISHENXIAN-004 | null | 对应度<0.15，引文不能支持结论 | 0.125 |
 | physiognomy/mayi-shenxiang | MAYISHENXIAN-005 | null | 对应度<0.15，引文不能支持结论 | 0.091 |
@@ -156,7 +141,6 @@
 | physiognomy/shenxiang-quanbian | SHENXIANGQUA-SR-04 | null | 对应度<0.15，引文不能支持结论 | 0.0 |
 | physiognomy/shenxiang-quanbian | SHENXIANGQUA-026 | null | 对应度<0.15，引文不能支持结论 | 0.0 |
 | physiognomy/shenxiang-quanbian | SHENXIANGQUA-027 | null | 对应度<0.15，引文不能支持结论 | 0.0 |
-| physiognomy/shenxiang-quanbian | SHENXIANGQUA-029 | null | 对应度<0.15，引文不能支持结论 | 0.13 |
 | physiognomy/shenxiang-quanbian | SR-05 | null | 对应度<0.15，引文不能支持结论 | 0.0 |
 | physiognomy/shenxiang-quanbian | SHENXIANGQUA-SR-05 | null | 对应度<0.15，引文不能支持结论 | 0.0 |
 | physiognomy/shenxiang-quanbian | SHENXIANGQUA-034 | null | 对应度<0.15，引文不能支持结论 | 0.071 |
@@ -182,12 +166,9 @@
 | san-shi/liuren-miben | LIURENMIBEN-LM | null | 对应度<0.15，引文不能支持结论 | 0.0 |
 | san-shi/liuren-miben | LIURENMIBEN-003 | null | 对应度<0.15，引文不能支持结论 | 0.077 |
 | san-shi/liuren-miben | LIURENMIBEN-004 | null | 对应度<0.15，引文不能支持结论 | 0.059 |
-| san-shi/liuren-miben | LIURENMIBEN-007 | null | 对应度<0.15，引文不能支持结论 | 0.091 |
 | san-shi/liuren-miben | LIURENMIBEN-009 | null | 对应度<0.15，引文不能支持结论 | 0.071 |
-| san-shi/liuren-miben | LIURENMIBEN-013 | null | 对应度<0.15，引文不能支持结论 | 0.056 |
 | san-shi/liuren-miben | LIURENMIBEN-015 | null | 对应度<0.15，引文不能支持结论 | 0.077 |
 | san-shi/liuren-miben | LIURENMIBEN-016 | null | 对应度<0.15，引文不能支持结论 | 0.03 |
-| san-shi/liuren-miben | LIURENMIBEN-017 | null | 对应度<0.15，引文不能支持结论 | 0.125 |
 | san-shi/liuren-miben | LIURENMIBEN-018 | null | 对应度<0.15，引文不能支持结论 | 0.087 |
 | san-shi/liuren-zhiyin | LR | null | 对应度<0.15，引文不能支持结论 | 0.087 |
 | san-shi/liuren-zhiyin | LIURENZHIYIN-LR | null | 对应度<0.15，引文不能支持结论 | 0.0 |
@@ -199,7 +180,6 @@
 | san-shi/liuren-zhiyin | LIURENZHIYIN-010 | null | 对应度<0.15，引文不能支持结论 | 0.0 |
 | san-shi/liuren-zhiyin | LIURENZHIYIN-012 | null | 对应度<0.15，引文不能支持结论 | 0.143 |
 | san-shi/liuren-zhiyin | LIURENZHIYIN-014 | null | 短句无句读，无法扩成原文整行 | 0.208 |
-| san-shi/liuren-zhiyin | LIURENZHIYIN-017 | null | 对应度<0.15，引文不能支持结论 | 0.133 |
 | san-shi/liuren-zhiyin | LIURENZHIYIN-018 | null | 对应度<0.15，引文不能支持结论 | 0.097 |
 | san-shi/liuren-zhiyin | LIURENZHIYIN-020 | null | 对应度<0.15，引文不能支持结论 | 0.111 |
 | san-shi/qimen-dunjia-tongzhi | QM-P01 | null | 短句无句读，无法扩成原文整行 | 1.0 |
@@ -229,7 +209,6 @@
 | san-shi/taiyi-shenshu | TR-09 | null | 对应度<0.15，引文不能支持结论 | 0.054 |
 | san-shi/taiyi-shenshu | TR-10 | null | 对应度<0.15，引文不能支持结论 | 0.115 |
 | san-shi/taiyi-shenshu | TR-12 | null | 短句无句读，无法扩成原文整行 | 0.28 |
-| san-shi/taiyi-shenshu | TR-14 | null | 对应度<0.15，引文不能支持结论 | 0.053 |
 | selection/donggong-zeri | DONGGONGZERI-DR | null | 对应度<0.15，引文不能支持结论 | 0.0 |
 | selection/donggong-zeri | DONGGONGZERI-003 | null | 对应度<0.15，引文不能支持结论 | 0.054 |
 | selection/donggong-zeri | DONGGONGZERI-006 | null | 对应度<0.15，引文不能支持结论 | 0.0 |
@@ -239,10 +218,8 @@
 | selection/xieji-bianfang-shu | XIEJIBIANFAN-007 | null | 对应度<0.15，引文不能支持结论 | 0.148 |
 | selection/xieji-bianfang-shu | XIEJIBIANFAN-008 | null | 对应度<0.15，引文不能支持结论 | 0.111 |
 | selection/xieji-bianfang-shu | XIEJIBIANFAN-010 | null | 对应度<0.15，引文不能支持结论 | 0.132 |
-| selection/xieji-bianfang-shu | XIEJIBIANFAN-011 | null | 对应度<0.15，引文不能支持结论 | 0.148 |
 | selection/xieji-bianfang-shu | XIEJIBIANFAN-015 | null | 对应度<0.15，引文不能支持结论 | 0.091 |
 | selection/xingli-kaoyuan | KR-04 | null | 对应度<0.15，引文不能支持结论 | 0.0 |
-| selection/xingli-kaoyuan | KR-13 | null | 对应度<0.15，引文不能支持结论 | 0.125 |
 | selection/yuqia-ji | JR-02 | null | 对应度<0.15，引文不能支持结论 | 0.122 |
 | selection/yuqia-ji | JR-09 | null | 短句无句读，无法扩成原文整行 | 0.2 |
 | selection/yuqia-ji | JR-11 | null | 对应度<0.15，引文不能支持结论 | 0.133 |
@@ -279,9 +256,6 @@
 | xingming/xingxue-dacheng | XXDC-R008 | null | 对应度<0.15，引文不能支持结论 | 0.042 |
 | ziwei/feixing-ziwei-doushu-yuanzhi | FEIXINGZIWEI-FZ | null | 对应度<0.15，引文不能支持结论 | 0.038 |
 | ziwei/feixing-ziwei-doushu-yuanzhi | FEIXINGZIWEI-003 | null | 对应度<0.15，引文不能支持结论 | 0.136 |
-| ziwei/feixing-ziwei-doushu-yuanzhi | FEIXINGZIWEI-006 | null | 对应度<0.15，引文不能支持结论 | 0.114 |
-| ziwei/feixing-ziwei-doushu-yuanzhi | FEIXINGZIWEI-008 | null | 对应度<0.15，引文不能支持结论 | 0.12 |
-| ziwei/feixing-ziwei-doushu-yuanzhi | FEIXINGZIWEI-010 | null | 对应度<0.15，引文不能支持结论 | 0.143 |
 | ziwei/feixing-ziwei-doushu-yuanzhi | FEIXINGZIWEI-012 | null | 对应度<0.15，引文不能支持结论 | 0.095 |
 | ziwei/ziwei-doushu-quanshu | ZW | null | 对应度<0.15，引文不能支持结论 | 0.031 |
 | ziwei/ziwei-doushu-quanshu | ZW-01 | null | 对应度<0.15，引文不能支持结论 | 0.146 |
@@ -291,15 +265,10 @@
 | ziwei/ziwei-doushu-quanshu | ZIWEIDOUSHUQ-012 | null | 对应度<0.15，引文不能支持结论 | 0.086 |
 | ziwei/ziwei-doushu-quanshu | ZIWEIDOUSHUQ-015 | null | 对应度<0.15，引文不能支持结论 | 0.05 |
 | ziwei/ziwei-doushu-quanshu | ZIWEIDOUSHUQ-021 | null | 对应度<0.15，引文不能支持结论 | 0.097 |
-| ziwei/ziwei-doushu-quanshu | ZIWEIDOUSHUQ-022 | null | 对应度<0.15，引文不能支持结论 | 0.147 |
-| ziwei/ziwei-doushu-quanshu | ZIWEIDOUSHUQ-ZW-03 | null | 对应度<0.15，引文不能支持结论 | 0.1 |
-| ziwei/ziwei-doushu-quanshu | ZIWEIDOUSHUQ-031 | null | 对应度<0.15，引文不能支持结论 | 0.143 |
 | ziwei/ziwei-doushu-quanshu | ZW-04 | null | 对应度<0.15，引文不能支持结论 | 0.081 |
 | ziwei/ziwei-doushu-quanshu | ZIWEIDOUSHUQ-ZW-04 | null | 对应度<0.15，引文不能支持结论 | 0.12 |
-| ziwei/ziwei-doushu-quanshu | ZIWEIDOUSHUQ-040 | null | 对应度<0.15，引文不能支持结论 | 0.115 |
 | ziwei/ziwei-doushu-quanshu | ZIWEIDOUSHUQ-045 | null | 对应度<0.15，引文不能支持结论 | 0.0 |
 | ziwei/ziwei-doushu-quanshu | ZW-05 | null | 对应度<0.15，引文不能支持结论 | 0.088 |
-| ziwei/ziwei-doushu-quanshu | ZIWEIDOUSHUQ-ZW-05 | null | 对应度<0.15，引文不能支持结论 | 0.064 |
 | ziwei/ziwei-doushu-quanshu | ZIWEIDOUSHUQ-048 | null | 对应度<0.15，引文不能支持结论 | 0.129 |
 | ziwei/ziwei-doushu-quanshu | ZIWEIDOUSHUQ-049 | null | 对应度<0.15，引文不能支持结论 | 0.04 |
 | ziwei/ziwei-doushu-quanshu | ZW-06 | null | 对应度<0.15，引文不能支持结论 | 0.111 |

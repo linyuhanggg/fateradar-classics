@@ -172,7 +172,10 @@ rules:
 - rule_id: KR-13
   kind: doctrine
   statement: 四废：春庚辛日、夏壬癸日、秋甲乙日、冬丙丁日；四离：二分二至前一日；四绝：四立前一日。共为节气交替之大忌。
-  anchor: null
+  anchor:
+    file: sources/fulltext/selection/xingli-kaoyuan/fulltext.md
+    start_line: 945
+    end_line: 945
   quote: 廣聖厯曰四廢者四時衰謝之辰也其日忌出軍征伐造舍迎親封建拜官納財開市○
   applicable_to: []
   caveats:
