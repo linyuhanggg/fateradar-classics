@@ -24,10 +24,7 @@ rules:
 - rule_id: QNA-R002
   kind: doctrine
   statement: 书中连续说雌雄、山水、玄空；理气判断不得只看坐山，须同时给山、水、向、水口。
-  anchor:
-    file: sources/fulltext/fengshui/qingnang-aoyu/fulltext.md
-    start_line: 13
-    end_line: 13
+  anchor: null
   quote: 左為陽, 子癸至亥壬, 右為陰, 午丁至巳丙,
   applicable_to: []
   caveats: []
@@ -66,10 +63,7 @@ rules:
 - rule_id: QNA-R005
   kind: doctrine
   statement: 向中放水是否吉，取决于生旺休囚，须由水法/元运/二十四山事实层给出。
-  anchor:
-    file: sources/fulltext/fengshui/qingnang-aoyu/fulltext.md
-    start_line: 27
-    end_line: 27
+  anchor: null
   quote: 向放水, 生旺有吉休囚否.
   applicable_to: []
   caveats: []
@@ -108,10 +102,7 @@ rules:
 - rule_id: QNA-R008
   kind: doctrine
   statement: 篇末强调再辨星辰、真微妙；实际输出须与青囊序/天玉/都天/地理辨正和现场事实合读。
-  anchor:
-    file: sources/fulltext/fengshui/qingnang-aoyu/fulltext.md
-    start_line: 37
-    end_line: 37
+  anchor: null
   quote: 勸君再把星辰辨, 吉凶禍福如神現;
   applicable_to: []
   caveats: []

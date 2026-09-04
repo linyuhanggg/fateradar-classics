@@ -27,9 +27,17 @@ statement 含「安全改写 / reframe / 不替代 / 并读 / 调用本 pack」�
 - `divination/huangji-jingshi` HR-01 元会运世换算、HUANGJIJINGS-007/020/021「非占断 / 非国运 / 非个人命术」
 - `xingming/xingming-suyuan` 卷四后篇案例总述
 
+## P6 灰区（对应度 0.15–0.30）
+
+任务书要求机器不动这一档，留人抽检。当前仍带锚 **260** 条。不要为了覆盖率把任务 5 已降级的 `<0.15` 填回去。
+
+完整降级清单见 `tools/reports/p6-downgrade.md`。其中白话转译、对应度被汉字集合召回打低的条目（如 `ZPR-03` 成败救应）若要收回，必须人对照原文，机器不回填。
+
+本机未找到 `/Users/yuhanglin/sync/code/FATERADAR_CLASSICS_P6_GOAL.md`，任务 0→8 按 nmem 会话 `claude-code-ddeb375d-2209-4b50-a61d-7776ccd62cfd` 的任务书摘要施工。
+
 ## V11 与 G1
 
-G1 要求 V11 < 50，当前 113（未锚 paraphrase 75 + 已锚原文与 `book.script` 不一致 38）。
+G1 要求 V11 < 50，当前约 112（未锚 paraphrase + 已锚原文与 `book.script` 不一致）。
 
 - 未锚规则的 quote 仍是现代概括，若清空会触发 V9 错误；若做简繁转换则改动 quote，均未做。
 - 已锚规则 quote 取自 fulltext，与 `book.script` 登记不符时未改 script、未放宽 V11。

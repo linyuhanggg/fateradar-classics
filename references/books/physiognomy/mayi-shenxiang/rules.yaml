@@ -49,10 +49,7 @@ rules:
 - rule_id: MAYISHENXIAN-004
   kind: doctrine
   statement: 骨肉、四肢、手纹条目多含寿夭、贫贱、刑伤、疾病等高风险断语。
-  anchor:
-    file: sources/fulltext/physiognomy/mayi-shenxiang/fulltext.md
-    start_line: 1882
-    end_line: 1882
+  anchor: null
   quote: 夫手足者谓之四肢，以象四时，加之以首，谓之五体，以象五行。
   applicable_to: []
   caveats:
@@ -64,10 +61,7 @@ rules:
 - rule_id: MAYISHENXIAN-005
   kind: doctrine
   statement: 石室神异赋、金锁赋等赋文适合做术语索引和跨书对读线索。
-  anchor:
-    file: sources/fulltext/physiognomy/mayi-shenxiang/fulltext.md
-    start_line: 3812
-    end_line: 3812
+  anchor: null
   quote: 议论争差识者稀　附于金锁号银匙
   applicable_to: []
   caveats:

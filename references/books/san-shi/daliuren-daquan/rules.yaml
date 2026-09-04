@@ -10,10 +10,7 @@ rules:
 - rule_id: DLR
   kind: doctrine
   statement: 用户要求实际占事或给出的既有课盘需要被当成事实使用。
-  anchor:
-    file: sources/fulltext/san-shi/daliuren-daquan/fulltext.md
-    start_line: 66
-    end_line: 66
+  anchor: null
   quote: 取课先从下贼呼，如无下贼上克初。初传之上名中次，中上加临是末居。三传既定天盘将，此是入式法第一。
   applicable_to: []
   caveats:
@@ -26,10 +23,7 @@ rules:
 - rule_id: DALIURENDAQU-DLR
   kind: doctrine
   statement: DLR-00 通过，adapter 已给日干和寄宫。
-  anchor:
-    file: sources/fulltext/san-shi/daliuren-daquan/fulltext.md
-    start_line: 62
-    end_line: 62
+  anchor: null
   quote: 甲课寅兮乙课辰，丙戊课巳不须论。丁己课未庚申上，辛戌壬亥是其真。癸课原来丑宫坐，分明不用四正神。
   applicable_to: []
   caveats:
@@ -42,10 +36,7 @@ rules:
 - rule_id: DALIURENDAQU-003
   kind: doctrine
   statement: 四课已确定且不是无效盘。
-  anchor:
-    file: sources/fulltext/san-shi/daliuren-daquan/fulltext.md
-    start_line: 64
-    end_line: 64
+  anchor: null
   quote: 一 贼克法一下克上曰重审，一上克下曰元首
   applicable_to: []
   caveats:
@@ -72,10 +63,7 @@ rules:
 - rule_id: DALIURENDAQU-005
   kind: doctrine
   statement: 多个同方向候选经比用后仍俱比或俱不比。
-  anchor:
-    file: sources/fulltext/san-shi/daliuren-daquan/fulltext.md
-    start_line: 74
-    end_line: 74
+  anchor: null
   quote: 渉害行来本家止，路逢多克为用取。孟深仲浅季当休，复等柔辰刚日宜。
   applicable_to: []
   caveats:
@@ -102,10 +90,7 @@ rules:
 - rule_id: DALIURENDAQU-007
   kind: doctrine
   statement: 四课完整、无直接克、无遥克，且不属于伏吟、返吟、八专或三课别责。
-  anchor:
-    file: sources/fulltext/san-shi/daliuren-daquan/fulltext.md
-    start_line: 82
-    end_line: 82
+  anchor: null
   quote: 无遥无克昴星穷，阳仰阴俯酉位中论初传也。刚日先辰而后日，柔日先日而后辰论中末也。
   applicable_to: []
   caveats:
@@ -148,10 +133,7 @@ rules:
 - rule_id: DALIURENDAQU-010
   kind: doctrine
   statement: 月将支与占时支相同，十二神各居本宫，adapter 标记 `is_fuyin=true`。
-  anchor:
-    file: sources/fulltext/san-shi/daliuren-daquan/fulltext.md
-    start_line: 94
-    end_line: 94
+  anchor: null
   quote: 伏吟有克还为用，无克刚干柔取辰。迤逦刑之作中末，从兹《玉厯》职其真。若也自刑为发用，次传颠倒日辰并。次传更复自刑者，冲取末传不论刑。
   applicable_to: []
   caveats:
@@ -163,10 +145,7 @@ rules:
 - rule_id: DALIURENDAQU-011
   kind: doctrine
   statement: 十二神各居冲位，adapter 标记 `is_fanyin=true`。
-  anchor:
-    file: sources/fulltext/san-shi/daliuren-daquan/fulltext.md
-    start_line: 98
-    end_line: 98
+  anchor: null
   quote: 返吟有克亦为用，无克别有井栏名。若知六日该无克，丑未同干丁己辛。丑日登明未太乙，辰中日末识原因阳日用辰，阴日用日，辰上作中，日上作末。
   applicable_to: []
   caveats:

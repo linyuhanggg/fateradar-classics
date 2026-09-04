@@ -10,10 +10,7 @@ rules:
 - rule_id: XK
   kind: doctrine
   statement: 本 pack 是公开网页转写层，不是 1935 民国排印本逐页校本。
-  anchor:
-    file: sources/fulltext/fengshui/shenshi-xuankong-xue/fulltext.md
-    start_line: 29
-    end_line: 29
+  anchor: null
   quote: 余以葬事，涉猎地理诸书，觉其说庞杂，有歧之又歧之慨！及读《沈氏玄空学》，江迂生太史《序》曰：“峦头征实，古今无伪书；理气课虚，古今多伪诀。”信哉斯言！然后知余向之未始学，学自今始也。窥竹礽先生之学，窃以为先生当世衰学晦之际，得“天人合一”之旨，毅然有澄清天下之志，可谓观止矣！
   applicable_to: []
   caveats:
@@ -40,10 +37,7 @@ rules:
 - rule_id: SHENSHIXUANK-003
   kind: doctrine
   statement: 阴宅秘断、阳宅秘断是历史案例叙述，不能用来承诺现实应验。
-  anchor:
-    file: sources/fulltext/fengshui/shenshi-xuankong-xue/fulltext.md
-    start_line: 3720
-    end_line: 3720
+  anchor: null
   quote: 向上有破屋并水，开巽方门，前有三叉水口，兑方有水至巽方门前聚消。
   applicable_to: []
   caveats:
@@ -55,10 +49,7 @@ rules:
 - rule_id: SHENSHIXUANK-004
   kind: doctrine
   statement: 九运挨星图、分金表等章节含图像证据，当前未完全结构化。
-  anchor:
-    file: sources/fulltext/fengshui/shenshi-xuankong-xue/fulltext.md
-    start_line: 4016
-    end_line: 4016
+  anchor: null
   quote: 下诀：“一坎、二坤、三震、四巽、五中、六乾、七兑、八艮、九离。”一为壬子癸，二为未坤申，三为甲卯乙，四为辰巽巳，五为戊己，六为戌乾亥，七为庚酉辛，八为丑艮寅，九为丙午丁。以上二十四山分为天、人、地三元。
   applicable_to: []
   caveats:

@@ -58,10 +58,7 @@ rules:
 - rule_id: ZPR-03
   kind: doctrine
   statement: 格局不能只判成败，还要看败中是否有救、成中是否被破；救应能改变格局可用性。
-  anchor:
-    file: sources/fulltext/bazi/ziping-zhenquan/fulltext.md
-    start_line: 361
-    end_line: 361
+  anchor: null
   quote: 用神專求月令，然以四柱配之，必有成敗。
   applicable_to:
   - key: yueling
@@ -231,10 +228,7 @@ rules:
 - rule_id: ZPR-12
   kind: doctrine
   statement: 行运不只是增减强弱，还会成格、变格、救格、破格。
-  anchor:
-    file: sources/fulltext/bazi/ziping-zhenquan/fulltext.md
-    start_line: 783
-    end_line: 783
+  anchor: null
   quote: 論運與看命，無二法也。看命以四柱干支，配月令之喜忌。而取運則又以運之干支，配八字之喜忌。故運中每運行一字，即必以此一字，配命中八字而統觀之，爲喜爲忌，吉凶判然矣。
   applicable_to:
   - key: shishen
@@ -269,11 +263,8 @@ rules:
 - rule_id: ZPR-14
   kind: doctrine
   statement: 四吉神各有成格条件、破格条件和取运路径，不能用同一模板套判。
-  anchor:
-    file: sources/fulltext/bazi/ziping-zhenquan/fulltext.md
-    start_line: 927
-    end_line: 927
-  quote: ，必無矯焉自尊之理，雖貴極天子，亦有天祖臨之。正官者，分所當尊，如在國有君，在家有親，刑沖破害，以下犯上，烏乎可乎？
+  anchor: null
+  quote: 官以尅身，雖與【校：「與」原作「六」，據中州本改】七煞有別，終受彼制，何以切忌刑沖破害，尊之若是乎？豈知人生天地間【校：「間」字據中州本補】，必無矯焉自尊之理，雖貴極天子，亦有天祖臨之。正官者，分所當尊，如在國有君，在家有親，刑沖破害，以下犯上，烏乎可乎？
   applicable_to:
   - key: shishen
     value: 正官
@@ -286,10 +277,7 @@ rules:
 - rule_id: ZPR-15
   kind: doctrine
   statement: 四凶/特殊格须看制、化、合、配与取运，凶神得制化可成，失制化则败。
-  anchor:
-    file: sources/fulltext/bazi/ziping-zhenquan/fulltext.md
-    start_line: 1154
-    end_line: 1154
+  anchor: null
   quote: 煞以攻身，似非美物，而大貴之格，多存七煞。蓋控制得宜，煞爲我用，如大英雄大豪傑，似難駕馭，而處之有方，則驚天動地之功，忽焉而就。此王侯將相所以多存七煞也。
   applicable_to:
   - key: shishen
@@ -303,10 +291,7 @@ rules:
 - rule_id: ZPR-16
   kind: doctrine
   statement: 杂格应在正格不足以取用时讨论，且须严格按原文条件，不可泛化为万能例外。
-  anchor:
-    file: sources/fulltext/bazi/ziping-zhenquan/fulltext.md
-    start_line: 1365
-    end_line: 1365
+  anchor: null
   quote: 雜格者，月令無用，取外格而用之，其格甚多，故謂之雜。
   applicable_to: []
   caveats:

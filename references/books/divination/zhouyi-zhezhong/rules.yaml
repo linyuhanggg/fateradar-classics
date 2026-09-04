@@ -10,10 +10,7 @@ rules:
 - rule_id: ZZR
   kind: doctrine
   statement: 八卦相重，每一重卦具六爻，由此形成六十四卦体系。
-  anchor:
-    file: sources/fulltext/divination/zhouyi-zhezhong/fulltext.md
-    start_line: 10625
-    end_line: 10625
+  anchor: null
   quote: 乾坤剥復〔大過〕頤姤夬
   applicable_to: []
   caveats:

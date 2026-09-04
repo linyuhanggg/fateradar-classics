@@ -121,10 +121,7 @@ rules:
 - rule_id: TR-09
   kind: doctrine
   statement: 本 profile 只输出下表中可由年计主盘逐字段验证的掩、囚、格、对子谓词；不得把未具备门位或先后方向数据的击、迫、关、四郭固、四郭杜、执提、提挟伪报为已计算
-  anchor:
-    file: sources/fulltext/san-shi/taiyi-shenshu/fulltext.md
-    start_line: 470
-    end_line: 470
+  anchor: null
   quote: 經曰始擊將臨太乙宫謂之掩嵗計遇之王綱失序臣張君弱宜修徳以禳之盖掩襲刼殺之義若掩太乙在陽絶之地君凶隂絶之地臣誅掩主大將主人筭和吉不和凶參擊之勝
   applicable_to: []
   caveats:
@@ -277,10 +274,7 @@ rules:
 - rule_id: TR-10
   kind: doctrine
   statement: 计算君基、臣基、民基、五福、大游、小游、四神、天乙、地乙、直符的确定位置与独立 epoch_profile
-  anchor:
-    file: sources/fulltext/san-shi/taiyi-shenshu/fulltext.md
-    start_line: 656
-    end_line: 656
+  anchor: null
   quote: 推積年法      推君基太乙法
   applicable_to: []
   caveats:
@@ -306,10 +300,7 @@ rules:
 - rule_id: TR-12
   kind: doctrine
   statement: 卷五三元五纪立成钤作为四神、天乙、地乙、直符 180 年周期的独立验算表
-  anchor:
-    file: sources/fulltext/san-shi/taiyi-shenshu/fulltext.md
-    start_line: 708
-    end_line: 708
+  anchor: null
   quote: 〔與四神天乙地乙直符同用〕
   applicable_to: []
   caveats: []
@@ -336,10 +327,7 @@ rules:
 - rule_id: TR-14
   kind: doctrine
   statement: 卷四（出师 / 障向 / 置阵 / 风云飞鸟助战 / 奇兵伏兵 / 对阵雲气）+ 卷九（敌国动静 / 敌使虚实 / 间谍 / 敌来方面 / 始击将临二十八舍）皆古代兵占；本 pack 仅作纲领，不展开具体应用
-  anchor:
-    file: sources/fulltext/san-shi/taiyi-shenshu/fulltext.md
-    start_line: 639
-    end_line: 639
+  anchor: null
   quote: 經曰助戰之法常須觀風雲之勢察飛鳥之情若太乙所在宫有風雲飛鳥䓁来衝格迫擊太乙者大敗之兆若迫擊大將宫者主敗若從主目上去擊客客敗若從客目上擊主主敗若從主人形上来客敗若有風雲飛鳥從太嵗太隂月建上来擊主人主人敗擊客客敗若有風雲飛鳥扶主人陣者主人勝扶客
   applicable_to: []
   caveats:

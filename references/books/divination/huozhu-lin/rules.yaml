@@ -10,10 +10,7 @@ rules:
 - rule_id: HZL
   kind: doctrine
   statement: 六爻审卦先核世应位置，再进入后续深浅判断。
-  anchor:
-    file: sources/fulltext/divination/huozhu-lin/fulltext.md
-    start_line: 99
-    end_line: 99
+  anchor: null
   quote: 旁爻持世，旺相得地；
   applicable_to: []
   caveats:
@@ -25,10 +22,7 @@ rules:
 - rule_id: HZL-R001
   kind: doctrine
   statement: 公用取官鬼，私用取妻财；官用以父母辅，财用以子孙辅。
-  anchor:
-    file: sources/fulltext/divination/huozhu-lin/fulltext.md
-    start_line: 112
-    end_line: 112
+  anchor: null
   quote: 阴阳男女，次策推排；
   applicable_to: []
   caveats: []
@@ -39,10 +33,7 @@ rules:
 - rule_id: HZL-R002
   kind: doctrine
   statement: 财官旺相、有辅体发动或生世为可用；休囚、克破、无辅则力薄。
-  anchor:
-    file: sources/fulltext/divination/huozhu-lin/fulltext.md
-    start_line: 61
-    end_line: 61
+  anchor: null
   quote: 财官异路，可辨五乡；
   applicable_to: []
   caveats: []
@@ -53,10 +44,7 @@ rules:
 - rule_id: HZL-R003
   kind: doctrine
   statement: 乱动时先看世上旁爻、世下亲爻，再以最旺或发动生世之爻为用。
-  anchor:
-    file: sources/fulltext/divination/huozhu-lin/fulltext.md
-    start_line: 73
-    end_line: 73
+  anchor: null
   quote: 独发易取，乱动难寻；
   applicable_to: []
   caveats: []

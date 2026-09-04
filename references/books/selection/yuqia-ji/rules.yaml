@@ -25,10 +25,7 @@ rules:
 - rule_id: JR-02
   kind: doctrine
   statement: 本书核心组"许真君日期"逐月列出宜祭祀 / 沐浴 / 修真 / 上章 / 用事 / 起造 / 出行 / 嫁娶等的吉日。具体日子由 tool 根据农历输出。
-  anchor:
-    file: sources/fulltext/selection/yuqia-ji/fulltext.md
-    start_line: 331
-    end_line: 331
+  anchor: null
   quote: 真君見世人作福酬願，拜表上章，建齋設醮，或吉或凶，作福作禍。
   applicable_to: []
   caveats:
@@ -126,10 +123,7 @@ rules:
 - rule_id: JR-09
   kind: doctrine
   statement: 伏断日（伏神断神共值）/ 上兀日 / 下兀日 / 上朔日 / 火星日 / 长星日 / 短星日，皆民俗凶日；具体起例由 tool 输出。
-  anchor:
-    file: sources/fulltext/selection/yuqia-ji/fulltext.md
-    start_line: 46
-    end_line: 46
+  anchor: null
   quote: 伏斷日             上兀下兀日
   applicable_to: []
   caveats:
@@ -156,10 +150,7 @@ rules:
 - rule_id: JR-11
   kind: doctrine
   statement: 每日"人神"游某身体部位（如初一在脚拇指、初二在外踝…）；古俗忌该部位针灸 / 手术 / 服药。
-  anchor:
-    file: sources/fulltext/selection/yuqia-ji/fulltext.md
-    start_line: 54
-    end_line: 54
+  anchor: null
   quote: 人神所在日           先賢死葬日
   applicable_to: []
   caveats:
@@ -189,10 +180,7 @@ rules:
 - rule_id: JR-13
   kind: doctrine
   statement: 鹤神为民俗方位之神；按日逐方游走（"鹤神日游方"）。鹤神所在方位忌兴造 / 出行 / 嫁娶。
-  anchor:
-    file: sources/fulltext/selection/yuqia-ji/fulltext.md
-    start_line: 1625
-    end_line: 1625
+  anchor: null
   quote: 乙卯、丙辰、丁巳、戊午、已末五日，   在正東，忌甲卯乙。
   applicable_to: []
   caveats:
@@ -219,10 +207,7 @@ rules:
 - rule_id: JR-15
   kind: doctrine
   statement: 民俗出行宜驿马 / 天马 / 三合 / 六合等；忌往亡 / 归忌 / 月破 / 受死 / 杨公忌 / 月忌日。本书附"诸葛武侯逐年出行图"作年度专项参考。
-  anchor:
-    file: sources/fulltext/selection/yuqia-ji/fulltext.md
-    start_line: 2684
-    end_line: 2684
+  anchor: null
   quote: 凡嫁娶男命與女命，三合、六合皆吉。
   applicable_to: []
   caveats:
@@ -234,10 +219,7 @@ rules:
 - rule_id: JR-16
   kind: doctrine
   statement: 上官赴任宜驿马 / 三合 / 月恩 / 鸣吠对；应试赴举宜青龙 / 太常 / 文昌 / 学馆等。专项历法对应古代官场学业。
-  anchor:
-    file: sources/fulltext/selection/yuqia-ji/fulltext.md
-    start_line: 3464
-    end_line: 3464
+  anchor: null
   quote: 天德是跟天道，月德是三合月旺，歲德是歲君天干，此三德之吉不與別吉相同，乃與三德相合者吉，與三德同。
   applicable_to: []
   caveats:
@@ -289,10 +271,7 @@ rules:
 - rule_id: JR-20
   kind: doctrine
   statement: 主 skill 输出某日吉凶时，应将"官方层（协纪辨方书 / 星历考原）"作为权重主源，本书禁忌日（彭祖百忌 / 杨公忌 / 月忌日 / 十恶大败 等）作为补充避忌；不重复计算同一神煞的口径差异。
-  anchor:
-    file: sources/fulltext/selection/yuqia-ji/fulltext.md
-    start_line: 56
-    end_line: 56
+  anchor: null
   quote: 彭祖百忌日           楊公忌日
   applicable_to: []
   caveats:

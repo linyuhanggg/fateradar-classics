@@ -144,10 +144,7 @@ rules:
 - rule_id: MR-03
   kind: doctrine
   statement: 求占者报数起卦，以体用生克及卦象类比断当日动静吉凶；用克体凶、体克用顺、比和平、用生体得、体生用失。
-  anchor:
-    file: sources/fulltext/divination/meihua-yishu/fulltext.md
-    start_line: 385
-    end_line: 385
+  anchor: null
   quote: 有客問曰：「今日動靜如何？
   applicable_to: []
   caveats:
@@ -298,10 +295,7 @@ rules:
 - rule_id: MEIHUAYISHU-MR-07
   kind: doctrine
   statement: 用克体凶、体克用顺、用生体得益、体生用耗损、比和顺利；卦象再合参。
-  anchor:
-    file: sources/fulltext/divination/meihua-yishu/fulltext.md
-    start_line: 1039
-    end_line: 1039
+  anchor: null
   quote: 天下之事有吉凶，托占以明其機。
   applicable_to: []
   caveats:

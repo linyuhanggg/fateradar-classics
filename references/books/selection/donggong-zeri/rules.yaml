@@ -26,10 +26,7 @@ rules:
 - rule_id: DONGGONGZERI-DR
   kind: doctrine
   statement: 全书主体按正月寅月至十二月丑月，每月列 12 个建除日（建、除、满、平、定、执、破、危、成、收、开、闭）并给出宜忌、应事与凶验叙述。
-  anchor:
-    file: sources/fulltext/selection/donggong-zeri/fulltext.md
-    start_line: 786
-    end_line: 786
+  anchor: null
   quote: 小寒 小寒後三煞在東
   applicable_to: []
   caveats:
@@ -42,10 +39,7 @@ rules:
 - rule_id: DONGGONGZERI-003
   kind: doctrine
   statement: 当用户问“某日是否宜嫁娶/动土/安葬/出行”时，主 skill 应先调用历算工具确定干支与月建，再用本表检索对应月支+建除日；输出时说明这是《董公选择日要览》的民间通书说法。
-  anchor:
-    file: sources/fulltext/selection/donggong-zeri/fulltext.md
-    start_line: 730
-    end_line: 730
+  anchor: null
   quote: 紫檀天皇地皇星蓋照、宜婚姻入宅、起造安葬、
   applicable_to: []
   caveats:
@@ -89,10 +83,7 @@ rules:
 - rule_id: DONGGONGZERI-006
   kind: doctrine
   statement: 本书将煞贡、直星、人专列为可用于上官赴任、临政亲民、入学等事的吉日类；可作民间通书“通用吉日”证据层。
-  anchor:
-    file: sources/fulltext/selection/donggong-zeri/fulltext.md
-    start_line: 870
-    end_line: 870
+  anchor: null
   quote: 正、四、七、十，四孟之月：
   applicable_to: []
   caveats:
@@ -121,10 +112,7 @@ rules:
 - rule_id: DONGGONGZERI-008
   kind: doctrine
   statement: 月日表中同一日常出现“宜安葬但不宜起造婚姻”“宜小修但大用凶”等差异；主 skill 检索时必须带上事项类型，不得只输出单一吉凶。
-  anchor:
-    file: sources/fulltext/selection/donggong-zeri/fulltext.md
-    start_line: 729
-    end_line: 729
+  anchor: null
   quote: 滿寅日：黃沙天富，是土瘟、但不宜動土，然有福星並黃羅
   applicable_to: []
   caveats:
@@ -148,10 +136,7 @@ rules:
 - rule_id: DONGGONGZERI-010
   kind: doctrine
   statement: 原书大量使用“犯之主官司、损人口、重丧、大凶”等应验语。蒸馏为 skill 时必须改写为“原书以某日列为某类避忌”，禁止直接断言会发生灾祸。
-  anchor:
-    file: sources/fulltext/selection/donggong-zeri/fulltext.md
-    start_line: 720
-    end_line: 720
+  anchor: null
   quote: 建子日：火星甲子天赦日進財、惜被月建沖破用之主官司
   applicable_to: []
   caveats:

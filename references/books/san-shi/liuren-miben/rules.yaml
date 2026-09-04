@@ -10,10 +10,7 @@ rules:
 - rule_id: LM
   kind: doctrine
   statement: 用户要求具体起课、断某一件事或把本书规则套入实际盘。
-  anchor:
-    file: sources/fulltext/san-shi/liuren-miben/fulltext.md
-    start_line: 3106
-    end_line: 3106
+  anchor: null
   quote: 凡占以正時為主，或為日之德合鬼墓，或為辰之破害刑衝，傳課未成，吉凶先露，故曰先鋒門。
   applicable_to: []
   caveats:
@@ -25,10 +22,7 @@ rules:
 - rule_id: LIURENMIBEN-LM
   kind: doctrine
   statement: 查询本书某月将、天将、地支或八卦的传统类象；若用于实际盘，LM-R00 已通过。
-  anchor:
-    file: sources/fulltext/san-shi/liuren-miben/fulltext.md
-    start_line: 84
-    end_line: 84
+  anchor: null
   quote: 神後屬子，其數九，味咸，女虛危三宿三位。
   applicable_to: []
   caveats:
@@ -40,10 +34,7 @@ rules:
 - rule_id: LIURENMIBEN-003
   kind: doctrine
   statement: 用户明确查询本书卷三六旬表，或 adapter 已按同一来源 profile 输出对应神煞。
-  anchor:
-    file: sources/fulltext/san-shi/liuren-miben/fulltext.md
-    start_line: 362
-    end_line: 362
+  anchor: null
   quote: 甲子旬，子儀神，卯丁神，戌亥天中，壬日亥不空，醜奇神，酉閉口，未五亡神。
   applicable_to: []
   caveats:
@@ -55,10 +46,7 @@ rules:
 - rule_id: LIURENMIBEN-004
   kind: doctrine
   statement: 问题明确为射覆/传统物类推演，且 LM-R00 已通过。
-  anchor:
-    file: sources/fulltext/san-shi/liuren-miben/fulltext.md
-    start_line: 381
-    end_line: 381
+  anchor: null
   quote: 剛日先看日上神，更兼發用細詳明。柔日支上先須視，用神兼取兩邊迎。
   applicable_to: []
   caveats:
@@ -100,10 +88,7 @@ rules:
 - rule_id: LIURENMIBEN-007
   kind: doctrine
   statement: 已按问题域确定类神，LM-R00 已通过。
-  anchor:
-    file: sources/fulltext/san-shi/liuren-miben/fulltext.md
-    start_line: 1474
-    end_line: 1474
+  anchor: null
   quote: 類不逢空旺相乘，傳生支合事須成，見類日鬼空刑害，所乾不遂類中明。幹事，三傳上下相生，支神三六合乾合，所幹成。雖是見類，與今日為鬼，或刑害空亡，三傳見害，不成。傳中用事之人，須此原本作「比」字。言之。
   applicable_to: []
   caveats:
@@ -130,10 +115,7 @@ rules:
 - rule_id: LIURENMIBEN-009
   kind: doctrine
   statement: 已有天将、所乘神、旺衰与生克事实。
-  anchor:
-    file: sources/fulltext/san-shi/liuren-miben/fulltext.md
-    start_line: 2269
-    end_line: 2269
+  anchor: null
   quote: 日鬼加臨辰兩課，門中官事乃相榮。
   applicable_to: []
   caveats:
@@ -190,10 +172,7 @@ rules:
 - rule_id: LIURENMIBEN-013
   kind: doctrine
   statement: 已有日辰和三传，问题包含进退、过程或结果。
-  anchor:
-    file: sources/fulltext/san-shi/liuren-miben/fulltext.md
-    start_line: 3397
-    end_line: 3397
+  anchor: null
   quote: 傳進為進，傳退為退。進空宜退，退空宜進，觀其傳，吉則進，凶則退。
   applicable_to: []
   caveats:
@@ -220,10 +199,7 @@ rules:
 - rule_id: LIURENMIBEN-015
   kind: doctrine
   statement: adapter 已输出合、鬼、墓、刑冲破害及旺衰。
-  anchor:
-    file: sources/fulltext/san-shi/liuren-miben/fulltext.md
-    start_line: 3132
-    end_line: 3132
+  anchor: null
   quote: 凡合與德入傳，百事皆吉，即會凶神，亦主凶中和合。
   applicable_to: []
   caveats:
@@ -236,10 +212,7 @@ rules:
 - rule_id: LIURENMIBEN-016
   kind: doctrine
   statement: 用户问题属于婚姻、疾病、出行、行人、谒人、诉讼、田产、宅舍、商贾、盗失、逃亡、假借等具体门类。
-  anchor:
-    file: sources/fulltext/san-shi/liuren-miben/fulltext.md
-    start_line: 2528
-    end_line: 2528
+  anchor: null
   quote: '> 原 CTP 标题附注：李批：亦可作注解入各類下'
   applicable_to: []
   caveats:
@@ -251,10 +224,7 @@ rules:
 - rule_id: LIURENMIBEN-017
   kind: doctrine
   statement: 用户明确采用卷十七三才应事，且 LM-R00 已通过。
-  anchor:
-    file: sources/fulltext/san-shi/liuren-miben/fulltext.md
-    start_line: 5600
-    end_line: 5600
+  anchor: null
   quote: 天課占天人課人，地課卜宅地墳塋。罡天魁地人求貴，此訣教君最有靈。孟仲季中分順逆，地般落處見真情。仲於本位天盤取，孟季須知隔五尊。此是三才期應訣，鬼神無處可潛形。
   applicable_to: []
   caveats:
@@ -266,10 +236,7 @@ rules:
 - rule_id: LIURENMIBEN-018
   kind: doctrine
   statement: 确定性 adapter 已给 `lesson_type` 和生成路径，用户要查本书如何解释该课名。
-  anchor:
-    file: sources/fulltext/san-shi/liuren-miben/fulltext.md
-    start_line: 3013
-    end_line: 3013
+  anchor: null
   quote: 始入者，初起而犯上者也。凡四課中惟一下賊上者，名始入。若有一上克，複有下賊，舍克取賊發用，乃謂之重審。
   applicable_to: []
   caveats:

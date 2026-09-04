@@ -10,10 +10,7 @@ rules:
 - rule_id: ZW
   kind: doctrine
   statement: 斗数以命、兄弟、妻妾、子女、财帛、疾厄、迁移、奴仆、官禄、田宅、福德、父母为十二宫次序。
-  anchor:
-    file: sources/fulltext/ziwei/ziwei-doushu-quanshu/fulltext.md
-    start_line: 3248
-    end_line: 3248
+  anchor: null
   quote: 紫微有倚靠年長之兄，天府同三人，天相同三四人，破軍同亦有三人，或各胞生，加羊陀火鈴空劫克害有則欠和。
   applicable_to: []
   caveats:
@@ -36,10 +33,7 @@ rules:
 - rule_id: ZW-01
   kind: doctrine
   statement: 紫微为帝座尊星，入命主聪明端正、仪表魁梧、有领导力；庙旺会左辅右弼天魁天钺主大富大贵；落陷无吉则成"在野孤君"，主孤高难合群。
-  anchor:
-    file: sources/fulltext/ziwei/ziwei-doushu-quanshu/fulltext.md
-    start_line: 425
-    end_line: 425
+  anchor: null
   quote: 希夷先生曰：紫微為帝座，在諸宮能降福消災，解諸星之惡虛。能制火鈴為善，能降七殺為權。
   applicable_to: []
   caveats:
@@ -52,10 +46,7 @@ rules:
 - rule_id: ZIWEIDOUSHUQ-ZW-01
   kind: doctrine
   statement: 天机为兄弟主星，入命主智慧善变、宜动宜谋；与天梁同主善人；与太阴同主参佐；落陷会煞主奔波劳碌、虚而不实。
-  anchor:
-    file: sources/fulltext/ziwei/ziwei-doushu-quanshu/fulltext.md
-    start_line: 3248
-    end_line: 3248
+  anchor: null
   quote: 紫微有倚靠年長之兄，天府同三人，天相同三四人，破軍同亦有三人，或各胞生，加羊陀火鈴空劫克害有則欠和。
   applicable_to: []
   caveats:
@@ -112,10 +103,7 @@ rules:
 - rule_id: ZIWEIDOUSHUQ-008
   kind: doctrine
   statement: 廉贞为官禄囚星，入命主邪正双面：清白入庙主清贵廉洁；会煞落陷主官非桃花、刑伤囚禁。
-  anchor:
-    file: sources/fulltext/ziwei/ziwei-doushu-quanshu/fulltext.md
-    start_line: 168
-    end_line: 168
+  anchor: null
   quote: 財居空亡巴三覽四，文曲旺宮聞一知十。暗合廉貞為貪濫之曹吏。
   applicable_to: []
   caveats:
@@ -156,10 +144,7 @@ rules:
 - rule_id: ZIWEIDOUSHUQ-011
   kind: doctrine
   statement: 贪狼为桃花主星，入命主多欲多变、社交广泛；与火铃同宫成"火贪/铃贪"暴发格；与廉贞同宫主桃花官非。
-  anchor:
-    file: sources/fulltext/ziwei/ziwei-doushu-quanshu/fulltext.md
-    start_line: 574
-    end_line: 574
+  anchor: null
   quote: 答曰：廉貞屬火，北斗第五星也。
   applicable_to: []
   caveats:
@@ -172,10 +157,7 @@ rules:
 - rule_id: ZIWEIDOUSHUQ-012
   kind: doctrine
   statement: 巨门为是非暗星，入命主口舌是非疑虑多；庙旺会吉成"巨日同宫/石中隐玉"贵格；落陷会煞主官非破败。
-  anchor:
-    file: sources/fulltext/ziwei/ziwei-doushu-quanshu/fulltext.md
-    start_line: 691
-    end_line: 691
+  anchor: null
   quote: 北斗第二星也，為陰精之星，化氣為暗。
   applicable_to: []
   caveats:
@@ -219,10 +201,7 @@ rules:
 - rule_id: ZIWEIDOUSHUQ-015
   kind: doctrine
   statement: 七杀为将星·肃杀，入命主权威决断、刚毅独立；庙旺会吉主武贵；与破军贪狼同三合主"杀破狼"创业格；会煞则刑伤孤克。
-  anchor:
-    file: sources/fulltext/ziwei/ziwei-doushu-quanshu/fulltext.md
-    start_line: 646
-    end_line: 646
+  anchor: null
   quote: 答曰：貪狼北斗解厄之神，第一星也。
   applicable_to: []
   caveats:
@@ -307,10 +286,7 @@ rules:
 - rule_id: ZIWEIDOUSHUQ-021
   kind: doctrine
   statement: 禄存主财禄，天马主奔波；禄马同宫或会照成"禄马交驰"富格，主奔波得财；禄存独守且无吉则称"羊陀夹禄"易破。
-  anchor:
-    file: sources/fulltext/ziwei/ziwei-doushu-quanshu/fulltext.md
-    start_line: 1187
-    end_line: 1187
+  anchor: null
   quote: 苗而不秀科名陷於凶神，發不主財祿主躔於弱地。
   applicable_to: []
   caveats:
@@ -323,10 +299,7 @@ rules:
 - rule_id: ZIWEIDOUSHUQ-022
   kind: doctrine
   statement: 擎羊主刑伤争斗，陀罗主延滞磨折；二煞夹命/夹禄/夹忌主灾厄；庙旺会吉星可制凶（如"马头带剑"）。
-  anchor:
-    file: sources/fulltext/ziwei/ziwei-doushu-quanshu/fulltext.md
-    start_line: 1257
-    end_line: 1257
+  anchor: null
   quote: 命里逢空不飄流即主疾苦，馬頭帶劍非夭折則主刑傷。
   applicable_to: []
   caveats:
@@ -417,10 +390,7 @@ rules:
 - rule_id: ZIWEIDOUSHUQ-ZW-03
   kind: doctrine
   statement: 化权主权力威严决断；入命/官禄主有权力；与化禄会则富贵双全。
-  anchor:
-    file: sources/fulltext/ziwei/ziwei-doushu-quanshu/fulltext.md
-    start_line: 3623
-    end_line: 3623
+  anchor: null
   quote: 紫微廟旺遇左右昌曲魁鉞，軒勝位至封候伯，加羊陀火鈴平常，天府同權貴名利兩全，天相加內外權貴清正，破軍同鬧中安身。
   applicable_to:
   - {key: ziwei_palace, value: 命宫}
@@ -466,10 +436,7 @@ rules:
 - rule_id: ZIWEIDOUSHUQ-031
   kind: doctrine
   statement: 化禄+化权+化科三吉化于命宫三方四正，成"三奇加会"贵格，主大富大贵。
-  anchor:
-    file: sources/fulltext/ziwei/ziwei-doushu-quanshu/fulltext.md
-    start_line: 508
-    end_line: 508
+  anchor: null
   quote: 若居廟旺，化祿化權，允為貴論。
   applicable_to: []
   caveats:
@@ -493,10 +460,7 @@ rules:
 - rule_id: ZW-04
   kind: doctrine
   statement: 命宫主一生总论：星曜性质 + 庙旺利平闲陷 + 三方四正会照吉煞 + 四化加临；命宫为根本，必须与身宫合参。
-  anchor:
-    file: sources/fulltext/ziwei/ziwei-doushu-quanshu/fulltext.md
-    start_line: 2319
-    end_line: 2319
+  anchor: null
   quote: 紫微土，南北斗化帝座，為官祿主。紫微面紫色或白青，腰背肥滿，為人忠厚老成，謙恭耿直，其威制七殺降火鈴。
   applicable_to: []
   caveats:
@@ -510,10 +474,7 @@ rules:
 - rule_id: ZIWEIDOUSHUQ-ZW-04
   kind: doctrine
   statement: 兄弟宫主兄弟姐妹与同辈关系；庙旺吉星主兄弟和睦多助；落陷凶煞主兄弟少缘。
-  anchor:
-    file: sources/fulltext/ziwei/ziwei-doushu-quanshu/fulltext.md
-    start_line: 3248
-    end_line: 3248
+  anchor: null
   quote: 紫微有倚靠年長之兄，天府同三人，天相同三四人，破軍同亦有三人，或各胞生，加羊陀火鈴空劫克害有則欠和。
   applicable_to: []
   caveats:
@@ -609,10 +570,7 @@ rules:
 - rule_id: ZIWEIDOUSHUQ-040
   kind: doctrine
   statement: 奴仆宫主朋友下属；庙旺吉星主朋友助力；落陷凶煞主多损友。**注**：现代义近"交友宫"。
-  anchor:
-    file: sources/fulltext/ziwei/ziwei-doushu-quanshu/fulltext.md
-    start_line: 1788
-    end_line: 1788
+  anchor: null
   quote: 順數命前六位是天傷，命後六位是天使，天傷安在奴僕宮，天使安在疾厄宮。身與歲限夾在傷使中間，謂之加夾地更加惡曜多凶。
   applicable_to: []
   caveats:
@@ -688,10 +646,7 @@ rules:
 - rule_id: ZIWEIDOUSHUQ-045
   kind: doctrine
   statement: 05 富贵贫贱格局
-  anchor:
-    file: sources/fulltext/ziwei/ziwei-doushu-quanshu/fulltext.md
-    start_line: 1642
-    end_line: 1642
+  anchor: null
   quote: 生不逢時 命坐空亡逢廉貞是也。
   applicable_to: []
   caveats: []
@@ -702,10 +657,7 @@ rules:
 - rule_id: ZW-05
   kind: doctrine
   statement: 富局主要包括：日月并明 / 月朗天门 / 武贪格 / 火贪格 / 铃贪格 / 双禄交流 / 财禄夹马等；命宫三方四正会成富局。
-  anchor:
-    file: sources/fulltext/ziwei/ziwei-doushu-quanshu/fulltext.md
-    start_line: 1570
-    end_line: 1570
+  anchor: null
   quote: 財蔭夾印 相守命武梁來夾是也，田宅宮亦然。
   applicable_to: []
   caveats:
@@ -718,10 +670,7 @@ rules:
 - rule_id: ZIWEIDOUSHUQ-ZW-05
   kind: doctrine
   statement: 贵局主要包括：紫府同宫 / 紫府朝垣 / 君臣庆会 / 府相朝垣 / 日月夹命 / 机月同梁 / 杀破狼 / 阳梁昌禄 / 巨日同宫 / 石中隐玉 / 三奇加会 / 紫微在午无杀凑 / 马头带剑 等。
-  anchor:
-    file: sources/fulltext/ziwei/ziwei-doushu-quanshu/fulltext.md
-    start_line: 1585
-    end_line: 1585
+  anchor: null
   quote: 日月夾命 不坐空亡遇逢本宮有吉星是也。
   applicable_to: []
   caveats:
@@ -734,10 +683,7 @@ rules:
 - rule_id: ZIWEIDOUSHUQ-048
   kind: doctrine
   statement: 贫贱局主要包括：日月反背 / 命无正曜 / 命坐空亡 / 羊陀夹忌 / 火铃夹命 等；古书断为终身贫贱。
-  anchor:
-    file: sources/fulltext/ziwei/ziwei-doushu-quanshu/fulltext.md
-    start_line: 1642
-    end_line: 1642
+  anchor: null
   quote: 生不逢時 命坐空亡逢廉貞是也。
   applicable_to: []
   caveats:
@@ -751,10 +697,7 @@ rules:
 - rule_id: ZIWEIDOUSHUQ-049
   kind: doctrine
   statement: 杂局主要包括：桃花犯主 / 贪武同行 / 廉贞会贪狼 等；吉凶兼备需细判。
-  anchor:
-    file: sources/fulltext/ziwei/ziwei-doushu-quanshu/fulltext.md
-    start_line: 1661
-    end_line: 1661
+  anchor: null
   quote: 風雲際會 身命雖弱二限逢祿馬是也。
   applicable_to: []
   caveats:
@@ -795,10 +738,7 @@ rules:
 - rule_id: ZW-06
   kind: doctrine
   statement: 大限十年一段：水二局自二岁起、木三局自三岁起、金四局自四岁起、土五局自五岁起、火六局自六岁起；男阳/女阳顺行，男阴/女阴逆行。
-  anchor:
-    file: sources/fulltext/ziwei/ziwei-doushu-quanshu/fulltext.md
-    start_line: 4020
-    end_line: 4020
+  anchor: null
   quote: 如宮分星纏全吉廟旺得地，無擎羊陀羅火鈴空劫者，主十年安靜，人財全美。
   applicable_to: []
   caveats:
@@ -875,10 +815,7 @@ rules:
 - rule_id: ZIWEIDOUSHUQ-057
   kind: doctrine
   statement: 大限或小限星辰过 12 宫各遇 12 地支共 144 条所忌诀；本规则仅作总纲索引，详细 144 条留待 D2 续抽。
-  anchor:
-    file: sources/fulltext/ziwei/ziwei-doushu-quanshu/fulltext.md
-    start_line: 4072
-    end_line: 4072
+  anchor: null
   quote: 人生子命忌寅申  假如子年生人切忌寅申歲限，災晦至重，及忌子午歲限相衝。
   applicable_to: []
   caveats:
@@ -935,10 +872,7 @@ rules:
 - rule_id: ZIWEIDOUSHUQ-ZW-07
   kind: doctrine
   statement: 女命骨髓赋专论女命吉凶，含"刑夫克子煞"、"伤夫煞"等大量父权时代偏见断语；本赋仅作命书历史研究展示。
-  anchor:
-    file: sources/fulltext/ziwei/ziwei-doushu-quanshu/fulltext.md
-    start_line: 1324
-    end_line: 1324
+  anchor: null
   quote: 府相之星女命躔，必當子貴與夫賢。
   applicable_to: []
   caveats:
@@ -1018,10 +952,7 @@ rules:
 - rule_id: ZIWEIDOUSHUQ-066
   kind: doctrine
   statement: 09 论诸星同垣富贵贫贱夭寿（强 reframe）
-  anchor:
-    file: sources/fulltext/ziwei/ziwei-doushu-quanshu/fulltext.md
-    start_line: 4246
-    end_line: 4246
+  anchor: null
   quote: 紫微 廟丑未午 旺寅申卯酉巳亥 平子 無陷
   applicable_to: []
   caveats: []
@@ -1032,10 +963,7 @@ rules:
 - rule_id: ZW-09
   kind: doctrine
   statement: 紫微斗数综合断法以"诸星同垣"为核心：本宫星 + 三方四正会照星 + 四化加临 + 庙旺利平闲陷综合判富贵贫贱夭寿。
-  anchor:
-    file: sources/fulltext/ziwei/ziwei-doushu-quanshu/fulltext.md
-    start_line: 4246
-    end_line: 4246
+  anchor: null
   quote: 紫微 廟丑未午 旺寅申卯酉巳亥 平子 無陷
   applicable_to: []
   caveats:
@@ -1049,10 +977,7 @@ rules:
 - rule_id: ZIWEIDOUSHUQ-ZW-09
   kind: doctrine
   statement: 紫微斗数命格有高下之分：上格主大富大贵、中格主小富小贵、下格主温饱、最下格主贫贱夭折。
-  anchor:
-    file: sources/fulltext/ziwei/ziwei-doushu-quanshu/fulltext.md
-    start_line: 1642
-    end_line: 1642
+  anchor: null
   quote: 生不逢時 命坐空亡逢廉貞是也。
   applicable_to: []
   caveats:
