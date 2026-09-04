@@ -58,3 +58,22 @@ G1 要求 V11 < 50，当前约 112（未锚 paraphrase + 已锚原文与 `book.s
 实测 `buildQizheng` / `emitQizhengFacts` 只有 `stars`（宫位、宿度、庙旺、顺逆）和 `palaces`，没有格局名或行限宫位字段。从黄经现算「五曜连珠 / 二星合璧 / 洞微百六限」等于新写分析算法。按 3c 不加这两个 key。约 35 条七政未映射规则本轮仍空。
 
 紫微侧可取：`decadal.accent` 的 `palace` → `daxian`（emit 改为当前大限宫位名）；当前年柱地支 → `liunian_taisui`。未改 `ziwei.ts` 排盘。`daxian` 词表暂保持开放数组：关闭成十二宫会让既有「宫名 N–M」谓词无法通过 `isLegalFactValue`（产品仓 89 测红）。等任务 4 改完 yaml 后再关。
+
+## P11 七政 3 条 + 目录篇名灰区
+
+`GUOTIANJING-GR-02`（天禄天暗）、`GUOTIANJING-GR-05`（宫度二主强弱）需要引擎没有的格局判定；`GUOTIANJING-GR-03` 原文自述「古书中具体图缺」。**需要先定五曜格局判定口径，属算法开发，不在语料轮次范围。**
+
+P11 把 31 条 `xingming-suyuan` 未映射规则改归「目录篇名，不是可判定规则」，并从谓词覆盖率分母剔除。下列 statement 带一点判定语气，但仍按任务书 31 条名单保守留在目录篇名，未写成谓词：
+
+- `XINGMINGSUYU-XR-03` 三冬之木遇水寒
+- `XR-04` 斗杓卦气唐符国印
+- `XINGMINGSUYU-XR-04` 天雄阳刃在命
+- `XR-06` 妇命以财福为重
+- `XINGMINGSUYU-038` / `XINGMINGSUYU-047` 妇人产亡
+- `XR-07` 化气从天官、正气从果老
+
+`GR-01` / `GR-03` 已改 `kind: procedure`。编号篇名但 `anchor: null` 的条目（如 `XINGMINGSUYU-008` 七政并旺、`XR-02` 度主为正）不在未映射 36 条里，本轮未扩进 31。
+
+## P11 紫微宫位 scope
+
+24 条规则、54 个谓词按 statement 写了 `scope.palace`。未加 scope 的包括：星性（紫微为帝座）、夹命、地支居子/居午、未点名宫位的同宫、宫位专章无列星、`TAIWEIFU-004` 天马（留给 V15 reverse6）。不许为两盘差异臆造宫位。产品仓 `LEGACY_ZIWEI_RULES`（尤其 `ZW-06-01` / `ZW-04-02`）本轮按硬约束不得改 `ziwei.ts`。

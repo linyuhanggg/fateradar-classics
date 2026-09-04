@@ -1,7 +1,8 @@
 #!/usr/bin/env python3
 """Per-art structured-predicate coverage for the six product arts.
 
-coverage(art) = rules_with_nonempty_applicable_to / anchored_rules
+coverage(art) = rules_with_nonempty_applicable_to / (anchored_rules - catalog_titles)
+Catalog titles (七政篇名、无判定条件) are counted separately and excluded from the denominator.
 Wildcard share = rules_containing_* / rules_with_nonempty_applicable_to
 fengshui / physiognomy / selection / taiyi are omitted (same as coverage-report.py).
 """
@@ -19,6 +20,44 @@ ROOT = Path(__file__).resolve().parents[1]
 ARTS = ("bazi", "ziwei", "qimen", "liuren", "liuyao", "qizheng")
 REFERENCE_ARTS = ("meihua", "yili")
 OPEN_KEYS = ("geju", "shensha", "ziwei_star", "geju_qimen", "keti")
+
+# 七政 statement 实为书的目录篇名、没有判定条件。肉眼确认后从覆盖率分母剔除，单独计数。
+# 名单取自 P11 表：36 条「需要引擎未产出的事实」减去 GR-01 / GR-03 / GUOTIANJING-GR-02 / GUOTIANJING-GR-03 / GUOTIANJING-GR-05。
+CATALOG_TITLE_RULE_IDS = frozenset(
+    {
+        "XR-01",
+        "XINGMINGSUYU-XR-01",
+        "XINGMINGSUYU-004",
+        "XINGMINGSUYU-005",
+        "XINGMINGSUYU-006",
+        "XINGMINGSUYU-007",
+        "XINGMINGSUYU-009",
+        "XINGMINGSUYU-010",
+        "XINGMINGSUYU-XR-02",
+        "XINGMINGSUYU-015",
+        "XINGMINGSUYU-016",
+        "XINGMINGSUYU-XR-03",
+        "XINGMINGSUYU-022",
+        "XR-04",
+        "XINGMINGSUYU-XR-04",
+        "XINGMINGSUYU-026",
+        "XINGMINGSUYU-028",
+        "XR-05",
+        "XINGMINGSUYU-XR-05",
+        "XINGMINGSUYU-031",
+        "XINGMINGSUYU-033",
+        "XINGMINGSUYU-034",
+        "XR-06",
+        "XINGMINGSUYU-XR-06",
+        "XINGMINGSUYU-037",
+        "XINGMINGSUYU-038",
+        "XINGMINGSUYU-039",
+        "XR-07",
+        "XINGMINGSUYU-XR-07",
+        "XINGMINGSUYU-047",
+        "XINGMINGSUYU-048",
+    }
+)
 
 DIVINATION_SLUG_TO_ART = {
     "huangjin-ce": "liuyao",
@@ -100,6 +139,7 @@ def main() -> int:
     stats: dict[str, dict] = {
         art: {
             "anchored": 0,
+            "catalog_titles": 0,
             "with_predicates": 0,
             "wildcard": 0,
             "keys": set(),
@@ -120,6 +160,8 @@ def main() -> int:
             if not isinstance(rule, dict) or not isinstance(rule.get("anchor"), dict):
                 continue
             stats[art]["anchored"] += 1
+            if rule.get("rule_id") in CATALOG_TITLE_RULE_IDS:
+                stats[art]["catalog_titles"] += 1
             preds = preds_of(rule)
             if not preds:
                 continue
@@ -141,12 +183,15 @@ def main() -> int:
     def pack(art: str) -> dict:
         d = stats[art]
         anchored = d["anchored"]
+        catalog = d["catalog_titles"]
+        denom = anchored - catalog
         with_p = d["with_predicates"]
         wild = d["wildcard"]
-        cov = (with_p / anchored * 100.0) if anchored else 0.0
+        cov = (with_p / denom * 100.0) if denom else 0.0
         wpct = (wild / with_p * 100.0) if with_p else 0.0
         return {
             "anchored": anchored,
+            "catalog_titles": catalog,
             "with_predicates": with_p,
             "coverage": round(cov, 2),
             "wildcard": wild,
@@ -165,13 +210,13 @@ def main() -> int:
         sys.stdout.write("\n")
     else:
         print(
-            f"{'art':8} {'anchored':>8} {'with_pred':>9} {'coverage':>9} "
+            f"{'art':8} {'anchored':>8} {'catalog':>7} {'with_pred':>9} {'coverage':>9} "
             f"{'wild':>5} {'wild%':>7} {'keys':>5}"
         )
         for art in ARTS:
             d = arts_out[art]
             print(
-                f"{art:8} {d['anchored']:8d} {d['with_predicates']:9d} {d['coverage']:8.1f}% "
+                f"{art:8} {d['anchored']:8d} {d['catalog_titles']:7d} {d['with_predicates']:9d} {d['coverage']:8.1f}% "
                 f"{d['wildcard']:5d} {d['wildcard_pct']:6.1f}% {d['fact_keys']:5d}"
             )
             if d["fact_key_names"]:
@@ -180,7 +225,7 @@ def main() -> int:
         for art in REFERENCE_ARTS:
             d = ref_out[art]
             print(
-                f"{art:8} {d['anchored']:8d} {d['with_predicates']:9d} {d['coverage']:8.1f}% "
+                f"{art:8} {d['anchored']:8d} {d.get('catalog_titles', 0):7d} {d['with_predicates']:9d} {d['coverage']:8.1f}% "
                 f"{d['wildcard']:5d} {d['wildcard_pct']:6.1f}% {d['fact_keys']:5d}"
             )
 

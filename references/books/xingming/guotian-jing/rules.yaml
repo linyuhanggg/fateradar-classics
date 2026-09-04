@@ -8,7 +8,7 @@ book:
   fulltext_sha256: 497368916cde5dc4184b5be072ab9c3b5be4c8cb3b977b788925bccd9497935d
 rules:
 - rule_id: GR-01
-  kind: doctrine
+  kind: procedure
   statement: 年干起月：甲己起丙寅，乙庚起戊寅，丙辛起庚寅，丁壬起壬寅，戊癸起甲寅；日干起时：甲己起甲子，乙庚起丙子，丙辛起戊子，丁壬起庚子，戊癸起壬子。
   anchor:
     file: sources/fulltext/xingming/guotian-jing/fulltext.md
@@ -256,7 +256,7 @@ rules:
   verified_by: null
   verified_at: null
 - rule_id: GR-03
-  kind: doctrine
+  kind: procedure
   statement: 定行限度法 + 逐年行限度法；大限沿宫流转，依洞微百六限分配年数。
   anchor:
     file: sources/fulltext/xingming/guotian-jing/fulltext.md
