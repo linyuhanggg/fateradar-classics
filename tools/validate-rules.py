@@ -284,6 +284,7 @@ def validate_predicates(
     reporter: Reporter,
     rule_id: str,
     book: str,
+    system: str,
     fact_keys: set[str],
     fact_values: dict[str, list[str]],
     any_token: str,
@@ -320,6 +321,25 @@ def validate_predicates(
         scope = pred.get("scope")
         if scope is not None and not isinstance(scope, dict):
             reporter.add("V2", f"{ploc}: scope 应为 mapping", rule_id=rule_id, book=book)
+            continue
+        if isinstance(scope, dict) and "palace" in scope:
+            palace = scope.get("palace")
+            if system != "ziwei":
+                reporter.add(
+                    "V15",
+                    f"{ploc}: 只有 ziwei 规则可以写 scope.palace",
+                    rule_id=rule_id,
+                    book=book,
+                )
+                continue
+            allowed = fact_values.get("ziwei_palace") or []
+            if not isinstance(palace, str) or palace not in allowed:
+                reporter.add(
+                    "V15",
+                    f"{ploc}: palace {palace!r} 不在 ziwei_palace 取值内",
+                    rule_id=rule_id,
+                    book=book,
+                )
 
 
 def validate_fulltext_lines(ft_path: Path, *, book_key: str, loc: str, reporter: Reporter) -> None:
@@ -501,6 +521,7 @@ def validate_book(
             reporter=reporter,
             rule_id=rule_id,
             book=book_key,
+            system=system,
             fact_keys=fact_keys,
             fact_values=fact_values,
             any_token=any_token,

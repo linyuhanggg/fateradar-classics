@@ -18,7 +18,7 @@ import yaml
 ROOT = Path(__file__).resolve().parents[1]
 ARTS = ("bazi", "ziwei", "qimen", "liuren", "liuyao", "qizheng")
 REFERENCE_ARTS = ("meihua", "yili")
-OPEN_KEYS = ("geju", "shensha", "ziwei_star", "daxian", "geju_qimen", "keti")
+OPEN_KEYS = ("geju", "shensha", "ziwei_star", "geju_qimen", "keti")
 
 DIVINATION_SLUG_TO_ART = {
     "huangjin-ce": "liuyao",

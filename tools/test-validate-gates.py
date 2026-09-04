@@ -12,6 +12,8 @@ ROOT = Path(__file__).resolve().parents[1]
 BOOK = "bazi/ziping-zhenquan"
 YAML = ROOT / "references/books" / BOOK / "rules.yaml"
 FULLTEXT = ROOT / "sources/fulltext/bazi/ziping-zhenquan/fulltext.md"
+ZW_BOOK = "ziwei/taiwei-fu"
+ZW_YAML = ROOT / "references/books" / ZW_BOOK / "rules.yaml"
 
 
 def run_validate(args: list[str]) -> tuple[int, str]:
@@ -33,6 +35,7 @@ def fail(msg: str) -> None:
 def main() -> int:
     yaml_orig = YAML.read_text(encoding="utf-8")
     ft_orig = FULLTEXT.read_text(encoding="utf-8")
+    zw_orig = ZW_YAML.read_text(encoding="utf-8")
     try:
         # reverse 1: wrong quote → V5 FAIL with rule_id
         mutated = yaml_orig.replace("專求月令", "專求月令X", 1)
@@ -117,9 +120,28 @@ def main() -> int:
         if "ZPR-01" not in ids:
             fail(f"V13 should print ZPR-01, ids={ids}")
         print("reverse5 OK V13 blockquote quote")
+
+        # reverse 6: illegal ziwei palace → V15 FAIL
+        needle = "  - key: ziwei_star\n    value: 天马\n"
+        if zw_orig.count(needle) != 1:
+            fail(f"expected unique 天马 predicate in {ZW_BOOK}, count={zw_orig.count(needle)}")
+        illegal = zw_orig.replace(
+            needle,
+            "  - key: ziwei_star\n    value: 天马\n    scope:\n      palace: 伪宫名\n",
+            1,
+        )
+        ZW_YAML.write_text(illegal, encoding="utf-8")
+        rc, out = run_validate(["--book", ZW_BOOK, "--json"])
+        ZW_YAML.write_text(zw_orig, encoding="utf-8")
+        payload = json.loads(out[out.find("{") :]) if "{" in out else {}
+        codes = [e.get("code") for e in payload.get("errors") or []]
+        if rc == 0 or "V15" not in codes:
+            fail(f"illegal palace should V15 FAIL, rc={rc} codes={codes} out={out[:800]}")
+        print("reverse6 OK V15 illegal palace")
     finally:
         YAML.write_text(yaml_orig, encoding="utf-8")
         FULLTEXT.write_text(ft_orig, encoding="utf-8")
+        ZW_YAML.write_text(zw_orig, encoding="utf-8")
     print("ALL GATES OK")
     return 0
 
