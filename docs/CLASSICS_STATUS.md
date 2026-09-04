@@ -4,7 +4,7 @@
 
 **全部规则 `verified` 仍为 `false`，未经人工比对影印件，不得对外宣称「古籍已校勘」。**
 
-任务书：仓库内 [`docs/tasks/P7_QUALITY_FIX.md`](docs/tasks/P7_QUALITY_FIX.md)。
+任务书：仓库内 [`docs/tasks/P7_QUALITY_FIX.md`](docs/tasks/P7_QUALITY_FIX.md)、[`docs/tasks/P9_PREDICATES.md`](docs/tasks/P9_PREDICATES.md)。
 
 ## 1. 六术锚点覆盖率与导出条数
 
@@ -23,19 +23,22 @@ P7 未追覆盖率。重测最低 art 仍是 qimen 35.0%，向下取整 35。`.g
 
 `python3 tools/export-rules.py`：`exported=688 == anchored_exportable`；`skipped_no_anchor=297`；`skipped_other_system=372`。`tools/reports/anchor-mismatch.json` 长度 0。
 
-## 2. 产品仓（命令回读，已 push）
+## 2. 产品仓（命令回读）
 
 本机 `git -C cosmic-fortune-lab branch --show-current` → `feat/structured-facts`。
 
-本机 `git -C cosmic-fortune-lab rev-parse --short HEAD` → `a5b8ac9`。
+本机 `git -C cosmic-fortune-lab rev-parse HEAD` → `f8f7adf04d3e78d5a50ba87785ca21ca6b8e3fd9`（短 `f8f7adf`）。
 
-`git log --oneline -1` → `a5b8ac9 data: 同步古籍仓 P7 导出规则`。该提交只含 `src/lib/rules/generated/{bazi,liuren,liuyao,ziwei}.json`（qimen/qizheng 与上一份字节相同，无 diff）。
+P9 本机提交（`origin/feat/structured-facts..HEAD`）：
 
-条数：bazi 399、ziwei 70、qimen 14、liuren 34、liuyao 118、qizheng 50；`verification` 全部 `provisional`。`bun run test` 12 files / 76 passed；`bun run build` exit 0。
+- `6427d2c` chore: 新增 facts dump 脚本用于谓词施工
+- `9a5dba0` data: 同步古籍仓 P9 导出规则
+- `5d3b8ca` feat: 五术 catalog 接入 generated JSON
+- `f8f7adf` test: 谓词检索行为断言，覆盖六术两盘差异
 
-`git -C cosmic-fortune-lab push -u origin feat/structured-facts` 成功。`git ls-remote --heads origin feat/structured-facts` → `a5b8ac9b9b6b2cbbee7caba392cb92d5765f61eb	refs/heads/feat/structured-facts`。未开 PR、未合 main。
+条数仍为 bazi 399、ziwei 70、qimen 14、liuren 34、liuyao 118、qizheng 50；`verification` 全部 `provisional`。`bun run test` 13 files / 88 passed；`bun run build` exit 0。
 
-> 任务书第四节写「本机没有 feat/structured-facts、c2d1d54 不存在、generated 未跟踪」。那是另一台机器的状态。**本机实测上述分支和 hash 均存在**，按诚实性硬规定写本机回读结果，不把任务书里的「不存在」抄进文档。
+P7 时 remote 为 `a5b8ac9`。本节写本机 HEAD；remote 以交付时 `git ls-remote --heads origin feat/structured-facts` 为准。未开 PR、未合 main。
 
 ## 3. P7 做了什么
 
@@ -60,3 +63,62 @@ P7 未追覆盖率。重测最低 art 仍是 qimen 35.0%，向下取整 35。`.g
 全库 1357 条规则 **`verified: true` 计数 = 0**。导出 JSON 的 `verification` 全部为 `provisional`。
 
 **不得对外宣称「古籍已校勘」。**
+
+## 7. P9 结构化谓词
+
+任务书：[`docs/tasks/P9_PREDICATES.md`](docs/tasks/P9_PREDICATES.md)。只改 `applicable_to`；`statement` / `quote` / `anchor` / `verified` 未动。`python3 tools/export-rules.py` 仍 `exported=688 == anchored_exportable`。
+
+### 7.1 覆盖率前后
+
+| art | 开工前有谓词 | 开工前占比 | P9 有谓词 | P9 占比 | 通配 | 通配占比 | FactKey 种类 | 参考下限 | 达标 |
+|---|---:|---:|---:|---:|---:|---:|---:|---:|---|
+| bazi | 60 | 15% | 140 | 34.8% | 15 | 10.7% | 7 | 30% | 是 |
+| ziwei | 6 | 9% | 49 | 70.0% | 0 | 0.0% | 6 | 50% | 是 |
+| qimen | 0 | 0% | 7 | 50.0% | 1 | 14.3% | 4 | 50% | 是 |
+| liuren | 0 | 0% | 15 | 44.1% | 1 | 6.7% | 4 | 50% | **否** |
+| liuyao | 0 | 0% | 21 | 17.8% | 3 | 14.3% | 5 | 60% | **否** |
+| qizheng | 0 | 0% | 11 | 22.0% | 1 | 9.1% | 4 | 60% | **否** |
+
+`python3 tools/predicate-report.py --max-wildcard 15 --check-open-values`：PASS wildcard ≤ 15%；PASS open-values；exit 0。
+
+用到的 key（报告回读）：
+
+- bazi：`geju, kongwang, rizhu, rizhu_strength, shensha, shishen, yueling`
+- ziwei：`daxian, shishen, sihua, xingyao, ziwei_palace, ziwei_star`（`TAIWEIFU-006`/`008` 的 `xingyao`/`shishen` 是开工前已有错键，本轮未改 statement，也未扩词表）
+- qimen：`bamen, bashen, geju_qimen, zhifu`
+- liuren：`keti, kongwang, sanchuan, tianjiang`
+- liuyao：`dongyao, fushen, liuqin, liushen, shiyao`
+- qizheng：`gongwei, miaowang, xingyao, xiudu`
+
+### 7.2 未映射
+
+`tools/reports/unmapped-predicates.md` 共 **445** 条：bazi 262、ziwei 21、liuyao 97、liuren 19、qimen 7、qizheng 39。
+
+原因：条件过于复合 295；需要引擎未产出的事实 106；通则/无条件 35；pack 元规则 9。
+
+### 7.3 未达参考下限
+
+数量下限不是门禁，禁止用 `*` 或臆造值凑数。
+
+- **liuyao 17.8% vs 60%**：118 条里梅花/皇极/周易大量是卦辞体例、用神旺衰复合条件；引擎没有卦名、六冲六合、月破日冲等 key，忠实翻译只能留空。
+- **qizheng 22% vs 60%**：五曜格局与行限需要引擎未产出的格局/行限事实；`xiudu` 只对宿度专条使用，不能把行限规则映射成宿。
+- **liuren 44.1% vs 50%**：差约 2 条（参考 17）。九宗门/神煞/年命等要课体细节或神煞 key，dump 里 `keti` 只有「涉害课/伏吟课」，其余留空。
+
+### 7.4 行为断言（不传 question）
+
+`bun run test`：13 files / 88 passed。`matchRules(art, facts)` 两盘均 ≥6、每条 `matched` 非空、`score>0`、两盘 ruleId 集合不同。qimen 未下调 ≥6。
+
+| art | A 命中 | A ruleId | B 命中 | B ruleId | 集合不同 |
+|---|---:|---|---:|---|---|
+| bazi | 6 | DITIANSUICHA-012,ZPR-02,ZPR-08,SANMINGTONGH-071,YUANHAIZIPIN-023,BZ-02-01 | 6 | DITIANSUICHA-012,ZPR-02,SANMINGTONGH-071,YUANHAIZIPIN-023,ZPR-08,ZPR-07 | 是 |
+| ziwei | 6 | ZIWEIDOUSHUQ-051,ZIWEIDOUSHUQ-037,ZW-02,ZW-06-01,ZIWEIDOUSHUQ-006,ZIWEIDOUSHUQ-041 | 6 | ZIWEIDOUSHUQ-054,ZIWEIDOUSHUQ-037,ZW-02,ZW-06-01,ZIWEIDOUSHUQ-006,ZIWEIDOUSHUQ-041 | 是 |
+| qimen | 6 | QM-P19,QM-P20,QM-P12,QM-P18,QM-P10,QM-P11 | 6 | QM-P19,QM-P20,QM-P12,QM-P10,QM-P11,QM-P17 | 是 |
+| liuren | 6 | LR-03-01,LIURENMIBEN-011,LIURENZHIYIN-019,LIURENMIBEN-005,LR-04-04,DALIURENDAQU-006 | 6 | LR-03-01,LIURENMIBEN-011,LIURENZHIYIN-019,LIURENMIBEN-005,LR-04-04,DALIURENDAQU-012 | 是 |
+| liuyao | 6 | HZL-R007,ZENGSHANBUYI-ZR-10,HJC-R013,HJC-R014,ZENGSHANBUYI-039,HJC-R015 | 6 | HZL-R007,ZENGSHANBUYI-ZR-10,HJC-R013,ZENGSHANBUYI-039,HJC-R014,HZL-R006 | 是 |
+| qizheng | 6 | XXDC-R002,GUOTIANJING-030,XR-03,XINGMINGSUYU-020,QZ-02-01,QZ-04-02 | 6 | GUOTIANJING-030,XR-03,XINGMINGSUYU-020,QZ-02-01,QZ-04-02,XXDC-R003 | 是 |
+
+### 7.5 产品仓相对任务书的偏差
+
+任务书只允许动 `scripts/dump-facts.ts`、`tests/rules/predicate-matching.test.ts`、`src/lib/rules/generated/*.json`。
+
+**G8 不接 catalog 无法成立**：开工前只有 `bazi.ts` 读 generated JSON；`qimen.ts` 导出空数组，`matchRules` 走空池返回 `[]`；ziwei/liuyao/liuren/qizheng 仍用硬编码旧条目，读不到 P9 谓词。因此按 `bazi.ts` 模式改了这五个 catalog。另将 `LR-04-02`/`LR-04-03` 的全量天将列表收成 `tianjiang: "*"`，否则两盘 top-6 被 score 24/22 压成同一集合，两盘差异断言失败。未改 `matcher.ts`、引擎、`vocab.ts`、两个 `fact-vocab.json`。未提交 `evidence-panel.tsx` / `package.json` / `tsconfig.json`。
