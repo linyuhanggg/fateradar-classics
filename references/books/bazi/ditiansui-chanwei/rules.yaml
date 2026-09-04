@@ -47,7 +47,9 @@ rules:
     start_line: 29
     end_line: 29
   quote: 如天干气弱，地支生之，地支神衰，天干辅之，皆为有情而顺则吉；
-  applicable_to: []
+  applicable_to: 
+  - key: rizhu_strength
+    value: 中和
   caveats:
   - 本派核心立场
   - '"奇异"（如四戊午、四癸亥）一律按偏枯论，不得作奇格高论'
@@ -63,7 +65,9 @@ rules:
     start_line: 3691
     end_line: 3691
   quote: 然总以中和为主，犹如人之无病，由四肢健量，营卫调和，行止自如，诸多安适：设使有病，则忧多乐少，举动艰难，如遇良药则可岂不为终身之患乎？
-  applicable_to: []
+  applicable_to: 
+  - key: rizhu_strength
+    value: 中和
   caveats:
   - 方法论层面
   - 任氏多次警告勿信"奇格"
@@ -181,7 +185,27 @@ rules:
     start_line: 2658
     end_line: 2658
   quote: 财官印绶发偏正，兼论食伤八格定。
-  applicable_to: []
+  applicable_to: 
+  - key: shishen
+    value: 食神
+  - key: shishen
+    value: 伤官
+  - key: shishen
+    value: 偏财
+  - key: shishen
+    value: 正财
+  - key: shishen
+    value: 七杀
+  - key: shishen
+    value: 正官
+  - key: shishen
+    value: 偏印
+  - key: shishen
+    value: 正印
+  - key: geju
+    value: 正官格
+  - key: geju
+    value: 偏印格
   caveats:
   - 与《子平真诠》视角不同
   - 遇到月令格局精修需求时转 `bazi/ziping-zhenquan`
@@ -273,7 +297,9 @@ rules:
     start_line: 48
     end_line: 48
   quote: 由此观之，命贵中和，偏枯终于有损；
-  applicable_to: []
+  applicable_to: 
+  - key: rizhu_strength
+    value: 中和
   caveats:
   - '"中和"不是五行皆有'
   - 是五行配合得宜、流通无阻
@@ -321,7 +347,11 @@ rules:
     start_line: 4555
     end_line: 4555
   quote: 任氏曰：官杀混杂者，富贵甚多。总之杀官当令者，必要坐下印绶，则其杀官之气流通，生化有情：或气贯生时，亦足以扶身敌杀。若不气贯生时，又不坐下印绶，不贫亦贱。如杀官不当令者，不作此论也。
-  applicable_to: []
+  applicable_to: 
+  - key: shishen
+    value: 食神
+  - key: shishen
+    value: 伤官
   caveats:
   - 本书官杀视角与格局派略有不同：本派以"制化平衡"为主，格局派以"成败救应"为主
   school: null
@@ -524,7 +554,11 @@ rules:
     start_line: 6721
     end_line: 6721
   quote: 原注：子平之法，以财为父，以印为母，以断其吉凶，十有九验，然看岁月为紧。
-  applicable_to: []
+  applicable_to: 
+  - key: shishen
+    value: 偏财
+  - key: shishen
+    value: 正印
   caveats:
   - 现代有"父正财母偏印"之异说
   - 不能铁口断
@@ -540,7 +574,13 @@ rules:
     start_line: 6452
     end_line: 6452
   quote: 同我者为兄弟，比肩劫财是也。
-  applicable_to: []
+  applicable_to: 
+  - key: rizhu_strength
+    value: 中弱
+  - key: rizhu_strength
+    value: 偏弱
+  - key: rizhu_strength
+    value: 极弱
   caveats:
   - 经验判语
   - 需结合喜忌
@@ -661,7 +701,9 @@ rules:
     start_line: 2665
     end_line: 2665
   quote: 变者，必从五行之气势也，曰从财，曰从官杀，曰从食伤，曰从强，曰从弱，曰从势，曰一行得气，曰两气成形。
-  applicable_to: []
+  applicable_to: 
+  - key: rizhu_strength
+    value: 极弱
   caveats:
   - 从格判定严格，必须无根
   - 运逢扶身则破

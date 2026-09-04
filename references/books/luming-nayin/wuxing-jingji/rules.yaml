@@ -226,7 +226,9 @@ rules:
     start_line: 6809
     end_line: 6809
   quote: 謂年、月、日、時，有甲乙丙丁分處四位，相聯不斷，帶木火盛數，如甲寅年、乙亥月、丁酉時、丙申日，丙寅胎，此青赤為文之命也，又雲：青赤時為父子，謂如甲子年、丙寅月、甲子日，丙寅時，又甲寅、丙寅之類，亦是如年木、月火、日木、時火，不惟福力最緊，兼文彩異眾。
-  applicable_to: []
+  applicable_to: 
+  - key: shensha
+    value: 学堂
   caveats: []
   school: null
   verified: false
@@ -304,7 +306,9 @@ rules:
     start_line: 8602
     end_line: 8602
   quote: 每旬管兩空亡，分前後五辰，各有所屬，假令甲子旬中無戌亥，自甲子至戊辰，以戌為空亡，自己巳至癸酉，以亥為空亡，餘彷此。（林開五命）
-  applicable_to: []
+  applicable_to: 
+  - key: kongwang
+    value: "*"
   caveats: []
   school: null
   verified: false

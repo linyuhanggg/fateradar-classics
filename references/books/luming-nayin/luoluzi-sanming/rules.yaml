@@ -113,7 +113,9 @@ rules:
     start_line: 161
     end_line: 161
   quote: 崇為寶也，奇為貴也，將星扶德，太乙加臨，本主休囚，行藏汩沒。
-  applicable_to: []
+  applicable_to: 
+  - key: shensha
+    value: 将星
   caveats: []
   school: null
   verified: false
@@ -191,7 +193,13 @@ rules:
     start_line: 564
     end_line: 564
   quote: 若乃身旺鬼絕，雖破命而長年；鬼旺身衰，逢建命而夭壽。
-  applicable_to: []
+  applicable_to: 
+  - key: rizhu_strength
+    value: 中强
+  - key: rizhu_strength
+    value: 偏强
+  - key: rizhu_strength
+    value: 极强
   caveats: []
   school: null
   verified: false
@@ -269,7 +277,9 @@ rules:
     start_line: 608
     end_line: 608
   quote: 戊見己，庚見辛，壬見癸，皆為劫財，與甲見乙同，前五陽見五陰為劫財，克妻。
-  applicable_to: []
+  applicable_to: 
+  - key: shishen
+    value: 劫财
   caveats: []
   school: null
   verified: false
@@ -347,7 +357,9 @@ rules:
     start_line: 441
     end_line: 441
   quote: 八孤臨于五墓，戌未東行；六虛下于空亡，自乾南首。
-  applicable_to: []
+  applicable_to: 
+  - key: kongwang
+    value: "*"
   caveats: []
   school: null
   verified: false

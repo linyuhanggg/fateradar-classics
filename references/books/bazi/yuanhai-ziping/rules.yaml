@@ -163,7 +163,11 @@ rules:
     start_line: 270
     end_line: 270
   quote: 《未》未月阴深火渐衰，藏官藏印不藏财；近无亥卯形难变，远带刑冲库亦开。无火怕行金水去，多寒偏爱丙丁来；用神喜忌当分晓，莫把圭璋作石猜。
-  applicable_to: []
+  applicable_to: 
+  - key: shishen
+    value: 正官
+  - key: geju
+    value: 正官格
   caveats:
   - 赋文体裁，经验性描述
   - 精细喜忌以后世《子平真诠》为准
@@ -237,7 +241,9 @@ rules:
     start_line: 4660
     end_line: 4660
   quote: 甲乙无根，怕逢申酉；杀合逢之，双目必朽。
-  applicable_to: []
+  applicable_to: 
+  - key: rizhu_strength
+    value: 极弱
   caveats:
   - 从格判定严格
   - 运逢扶身则破格
@@ -340,7 +346,19 @@ rules:
     start_line: 438
     end_line: 438
   quote: 何谓之正财？犹如正官之意；是阴见阳财，阳见阴财。大抵正财，吾妻之财也。人之女貲财以事我，必精神康强，然后可以享用之；如吾身方且自萎懦而不振，虽妻财丰厚，但能目视，终不可一毫受用。
-  applicable_to: []
+  applicable_to: 
+  - key: shishen
+    value: 正财
+  - key: shishen
+    value: 正官
+  - key: shishen
+    value: 偏印
+  - key: shishen
+    value: 正印
+  - key: geju
+    value: 正官格
+  - key: geju
+    value: 偏印格
   caveats:
   - 古制
   - 现代有"父偏财"等异说
@@ -356,7 +374,11 @@ rules:
     start_line: 546
     end_line: 546
   quote: 若月令中有正官，时干支有偏官，便难以正官言之。
-  applicable_to: []
+  applicable_to: 
+  - key: shishen
+    value: 正官
+  - key: geju
+    value: 正官格
   caveats:
   - 古文价值观需 reframe
   - 现代中性表述
@@ -531,7 +553,9 @@ rules:
     start_line: 4470
     end_line: 4470
   quote: 十惡大敗，格中不忌。若會財官，反成富貴。格局推詳，以殺為重。制煞為權，何愁損用。
-  applicable_to: []
+  applicable_to: 
+  - key: shensha
+    value: 灾煞
   caveats:
   - 神煞作辅不主主线
   - 不可单凭神煞断吉凶

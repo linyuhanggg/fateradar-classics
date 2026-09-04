@@ -1051,7 +1051,11 @@ rules:
     start_line: 237
     end_line: 237
   quote: 終始之道非才能明於日月器度廣於山川大人君子孰能備徳况神頭祿各有神以主之應日臨神或左右運動於六合之中盈縮於吉凶之變也〔己丑土為天乙貴人乙未土為太常福神觧百煞之凶配一人之徳吉以吉應逐凶釋凶若得之當用則為横財之善若戊辰為勾陳戊戌為天空亡之神多遷改君
-  applicable_to: []
+  applicable_to: 
+  - key: rizhu
+    value: 甲
+  - key: shensha
+    value: 天乙贵人
   caveats:
   - 神煞断语
   - 不作绝对吉凶
@@ -1083,7 +1087,11 @@ rules:
     start_line: 76
     end_line: 76
   quote: 論貴神優劣 乙丑文星貴神 乙未華盖貴神〔截路空亡〕丁未退神羊刃貴神〔一云半吉〕己未羊刃貴神〔一云半吉〕辛未華盖貴神〔一云空亡大敗〕癸未伏神華盖貴神〔已上甲戊庚人月日時貴神〕甲子進神貴神 丙子交神貴神 戊子伏神貴神 庚子徳合貴神 壬子羊刃貴神 甲申截路空亡貴神〔一云半吉〕丙申大敗
-  applicable_to: []
+  applicable_to: 
+  - key: shensha
+    value: 羊刃
+  - key: kongwang
+    value: "*"
   caveats:
   - 神煞内分
   - 不作绝对吉凶
@@ -1162,7 +1170,9 @@ rules:
     start_line: 107
     end_line: 107
   quote: 戌之為陽是知隂陽之相覆奇耦相匹故萬物化成生者為父為母為子為孫配之為夫為婦以别人倫之要也〕故曰甲己真宫乙庚真商丙辛真羽丁壬真角戊癸真徵〔甲木二五之始名而為土六位相成於已故曰真宫土生始成終故金次於土羽水之音角木之音徵火之音此十干皆天之清氣生數成於五
-  applicable_to: []
+  applicable_to: 
+  - key: rizhu
+    value: 甲
   caveats:
   - 真五行≠纳音五行，须严格区分
   school: null
@@ -1253,7 +1263,9 @@ rules:
     start_line: 152
     end_line: 152
   quote: 真假邪正 變通拙而蔽於神執一明而瞽於衆辨明真假消息盈虛〔隂陽無形為道至妙湏在智識變通為比察觀真假消息盈虚則靈於神明〕守位則正失方則邪〔如甲寅乙卯在亥卯未乃得正體若居己酉丑之方謂之失位他皆倣此〕隂生陽死逆順相因甲氣申方乙絶酉位〔四時一陽生六隂死然陽道行左
-  applicable_to: []
+  applicable_to: 
+  - key: rizhu
+    value: 甲
   caveats:
   - 命书原理
   - 不作绝对吉凶
@@ -1600,7 +1612,9 @@ rules:
     start_line: 225
     end_line: 225
   quote: 忌於真敗隨氣運以詳之又土無正位隨真運而敗甲巳土敗在酉乙庚金敗在午丙辛水敗在酉丁壬木敗在子戊癸火敗在卯各以十干所配消息而取用也〕
-  applicable_to: []
+  applicable_to: 
+  - key: rizhu
+    value: 甲
   caveats:
   - 同上
   school: null
@@ -1646,7 +1660,9 @@ rules:
     start_line: 237
     end_line: 237
   quote: 終始之道非才能明於日月器度廣於山川大人君子孰能備徳况神頭祿各有神以主之應日臨神或左右運動於六合之中盈縮於吉凶之變也〔己丑土為天乙貴人乙未土為太常福神觧百煞之凶配一人之徳吉以吉應逐凶釋凶若得之當用則為横財之善若戊辰為勾陳戊戌為天空亡之神多遷改君
-  applicable_to: []
+  applicable_to: 
+  - key: rizhu
+    value: 戊
   caveats:
   - 同上
   school: null
