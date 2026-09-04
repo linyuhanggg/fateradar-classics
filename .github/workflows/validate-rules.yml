@@ -25,3 +25,4 @@ jobs:
       - run: python tools/validate-rules.py
       - run: python tools/test-validate-gates.py
       - run: python tools/coverage-report.py --fail-under 35
+      - run: python tools/predicate-report.py --max-wildcard 15 --check-open-values
