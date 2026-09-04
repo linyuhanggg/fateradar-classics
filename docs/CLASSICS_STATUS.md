@@ -191,3 +191,74 @@ liuyao「降」是分类纠正：梅花/周易/皇极共 62 条带锚规则本�
 - `57ceebc` fix: 检索零命中时不再返回兜底条目
 
 未开 PR、未合 main、未 force push。
+
+### 8.6 P10 `bun run test`（补记）
+
+P10 任务书要求逐条贴 G1–G9，当时漏写产品仓 `bun run test`。实测紫微「两盘 ruleId 集合不同」**失败**（1 failed；两盘 top-6 同为无宫位高分规则）。该失败由 P11 处理，见 §9。P10 其余五术两盘集合不同。
+
+## 9. P11 紫微宫位 scope 与七政目录归类
+
+日期：2026-09-05。任务书：[`docs/tasks/P11_ZIWEI_SCOPE.md`](docs/tasks/P11_ZIWEI_SCOPE.md)。
+写本节前古籍仓 `git rev-parse HEAD` → `ccc150e8a737b630494604cf3341eb88783d20a7`（`refactor: 七政目录篇名条目单独归类，两条起例改 procedure`）。本节提交之后以当时 `git rev-parse HEAD` 为准；产品仓 `CLASSICS_REV` 钉那次 40 位 SHA。
+
+**全部规则 `verified` 仍为 `false`。**
+
+### 9.1 做了什么
+
+- 产品仓 `factMatches` 在 layer 之后比对 `scope.palace`（谓词没写 palace 则行为不变）。`daxian` 收成与 `ziwei_palace` 相同的 13 宫枚举。
+- 校验器 V15：仅 ziwei 可写 `scope.palace`，取值必须在 `ziwei_palace` 词表。`test-validate-gates.py` reverse6：非法宫名 → V15。
+- 紫微 24 条规则、54 个谓词按 statement 写入 `scope.palace`。星性、夹命、地支居子/居午、未点名宫的同宫不加。
+- 七政 31 条目录篇名从谓词覆盖率分母剔除并单独计数；`GR-01`/`GR-03` 改 `kind: procedure`。未加任何 FactKey。
+
+### 9.2 G1–G10 实测
+
+**G1** `python3 tools/validate-rules.py` → `OK  55 file(s), 114 warning(s)` exit=0。
+`python3 tools/test-validate-gates.py` → reverse1–6 ALL GATES OK。
+
+**G2** `python3 tools/predicate-report.py --max-wildcard 15 --check-open-values --check-art-keys`：
+
+```
+art      anchored catalog with_pred  coverage  wild   wild%  keys
+bazi          402       0       140     34.8%    15   10.7%     7
+ziwei          70       0        54     77.1%     0    0.0%     5
+qimen          38       0         7     18.4%     1   14.3%     4
+liuren         34       0        15     44.1%     1    6.7%     4
+liuyao         56       0        21     37.5%     3   14.3%     5
+qizheng        50      31        11     57.9%     1    9.1%     4
+```
+
+PASS wildcard ≤ 15%；PASS open-values；PASS art-keys。紫微覆盖 77.1% ≥ 60%。七政分母剔除 31 条篇名后 11/19=57.9%（剔除前 22.0%）。
+
+**G3** 紫微谓词 140 条，带 palace 的 54 条。
+
+**G4** 不带 scope 交集 85  带 scope 交集 27。
+
+**G5** daxian 取值数 13。
+
+**G6** `cmp references/vocab/fact-vocab.json` 与产品仓 `src/lib/engine/facts/fact-vocab.json` → 词表一致。
+
+**G7** `grep -rn "^  verified: true" references/books/*/*/rules.yaml | wc -l` → 0。
+
+**G8** `python3 tools/export-rules.py` → qizheng doctrine=48 procedure=2；`qizheng procedures 2`（GR-01, GR-03）。exported=712 == anchored_exportable。
+
+**G9** 产品仓 `CLASSICS_REV` 在同步提交中钉本节古籍仓最终 40 位 SHA（硬约束 11；约束 8 未列 `source-link.ts`，按 11 改并记档）。
+
+**G10 未达标。** `bun test tests/rules/predicate-matching.test.ts`：12 pass / 1 fail。紫微两盘 top-6 仍同为：
+
+`FEIXINGZIWEI-009, ZIWEIDOUSHUQ-006, ZIWEIDOUSHUQ-056, ZW-02, ZW-04-02, ZW-06-01`
+
+带宫位比对后的差异出现在 rank 16+（A：`ZIWEIDOUSHUQ-043` 化禄@福德；B：`TAIWEIFU-013` 文昌@事业、`TAIWEIFU-014` 文曲@夫妻），被无宫位高分规则压在默认 limit=6 之外。未改断言，未改 `ziwei.ts`。根因见 `tools/reports/needs-human-review.md`。
+
+### 9.3 本机提交（写本节前 `git log` 回读）
+
+古籍仓 `feat/p3-p4-machine-readable`：
+
+- `21ca392` feat: 校验器新增 V15 宫位 scope 判据
+- `21b7702` feat: 紫微谓词补宫位 scope 24 条
+- `ccc150e` refactor: 七政目录篇名条目单独归类，两条起例改 procedure
+
+产品仓 `feat/structured-facts`（写本节前 HEAD `01be1f047bb667040ff9098af49cca00dd046cc0`）：
+
+- `01be1f0` feat: factMatches 支持宫位比对
+
+未开 PR、未合 main、未 force push。

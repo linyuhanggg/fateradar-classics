@@ -76,4 +76,6 @@ P11 把 31 条 `xingming-suyuan` 未映射规则改归「目录篇名，不是�
 
 ## P11 紫微宫位 scope
 
-24 条规则、54 个谓词按 statement 写了 `scope.palace`。未加 scope 的包括：星性（紫微为帝座）、夹命、地支居子/居午、未点名宫位的同宫、宫位专章无列星、`TAIWEIFU-004` 天马（留给 V15 reverse6）。不许为两盘差异臆造宫位。产品仓 `LEGACY_ZIWEI_RULES`（尤其 `ZW-06-01` / `ZW-04-02`）本轮按硬约束不得改 `ziwei.ts`。
+24 条规则、54 个谓词按 statement 写了 `scope.palace`。未加 scope 的包括：星性（紫微为帝座）、夹命、地支居子/居午、未点名宫位的同宫、宫位专章无列星、`TAIWEIFU-004` 天马（留给 V15 reverse6）。不许为两盘差异臆造宫位。
+
+**G10 未达标，回读 1.3b 后仍无法在不改 `ziwei.ts` / 不改断言的前提下让默认 top-6 两盘不同。** 产品仓 `LEGACY_ZIWEI_RULES` 中 `ZW-06-01`（6 辅星无宫位，score 12）、`ZW-04-02`（`ziwei_palace: *` + 四宫，score 10）以及 `ZW-03-02`/`ZW-06-02`/`ZW-08-02`（各 4 条无宫位谓词，score 8）对两盘同等命中。生成规则里 `FEIXINGZIWEI-009` 四宫假借、`ZIWEIDOUSHUQ-006` 破军/禄存/化禄/财帛未指定同宫、`ZW-02` 紫微太阳天府天梁是「会」不是入命、`ZIWEIDOUSHUQ-056` 羊陀杀无宫位，按 1.3b 不能为凑差异乱加 palace。带宫位的分化在 rank 16+ 已出现。硬约束 8 禁止改 `ziwei.ts`。需要人决定：是否允许给 legacy 辅星补宫位，或把检索从「命中条数」改成「星带宫优先」。
