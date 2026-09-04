@@ -1,0 +1,5440 @@
+{
+  "bazi": {
+    "caseA": {
+      "label": "甲 1990-08-15 13:20 男 上海",
+      "facts": [
+        {
+          "key": "rizhu",
+          "value": "壬",
+          "scope": {
+            "layer": "本命",
+            "pillar": "day"
+          },
+          "derivedFrom": [
+            "ganzhi.day"
+          ]
+        },
+        {
+          "key": "yueling",
+          "value": "申",
+          "scope": {
+            "layer": "本命",
+            "pillar": "month"
+          },
+          "derivedFrom": [
+            "ganzhi.month"
+          ]
+        },
+        {
+          "key": "rizhu_strength",
+          "value": "极强",
+          "scope": {
+            "layer": "本命"
+          },
+          "derivedFrom": [
+            "analysis.strength.tier"
+          ]
+        },
+        {
+          "key": "geju",
+          "value": "偏印格",
+          "scope": {
+            "layer": "本命"
+          },
+          "derivedFrom": [
+            "analysis.geju.name"
+          ]
+        },
+        {
+          "key": "yongshen",
+          "value": "土",
+          "scope": {
+            "layer": "本命"
+          },
+          "derivedFrom": [
+            "analysis.yongshen.xi"
+          ]
+        },
+        {
+          "key": "yongshen",
+          "value": "木",
+          "scope": {
+            "layer": "本命"
+          },
+          "derivedFrom": [
+            "analysis.yongshen.xi"
+          ]
+        },
+        {
+          "key": "yongshen",
+          "value": "火",
+          "scope": {
+            "layer": "本命"
+          },
+          "derivedFrom": [
+            "analysis.yongshen.xi"
+          ]
+        },
+        {
+          "key": "shishen",
+          "value": "偏印",
+          "scope": {
+            "layer": "本命",
+            "pillar": "year"
+          },
+          "derivedFrom": [
+            "rows.十神"
+          ]
+        },
+        {
+          "key": "shishen",
+          "value": "食神",
+          "scope": {
+            "layer": "本命",
+            "pillar": "month"
+          },
+          "derivedFrom": [
+            "rows.十神"
+          ]
+        },
+        {
+          "key": "shishen",
+          "value": "正财",
+          "scope": {
+            "layer": "本命",
+            "pillar": "time"
+          },
+          "derivedFrom": [
+            "rows.十神"
+          ]
+        },
+        {
+          "key": "shishen",
+          "value": "正财",
+          "scope": {
+            "layer": "本命",
+            "pillar": "year"
+          },
+          "derivedFrom": [
+            "rows.藏干"
+          ]
+        },
+        {
+          "key": "shishen",
+          "value": "正官",
+          "scope": {
+            "layer": "本命",
+            "pillar": "year"
+          },
+          "derivedFrom": [
+            "rows.藏干"
+          ]
+        },
+        {
+          "key": "shishen",
+          "value": "偏印",
+          "scope": {
+            "layer": "本命",
+            "pillar": "month"
+          },
+          "derivedFrom": [
+            "rows.藏干"
+          ]
+        },
+        {
+          "key": "shishen",
+          "value": "比肩",
+          "scope": {
+            "layer": "本命",
+            "pillar": "month"
+          },
+          "derivedFrom": [
+            "rows.藏干"
+          ]
+        },
+        {
+          "key": "shishen",
+          "value": "七杀",
+          "scope": {
+            "layer": "本命",
+            "pillar": "month"
+          },
+          "derivedFrom": [
+            "rows.藏干"
+          ]
+        },
+        {
+          "key": "shishen",
+          "value": "劫财",
+          "scope": {
+            "layer": "本命",
+            "pillar": "day"
+          },
+          "derivedFrom": [
+            "rows.藏干"
+          ]
+        },
+        {
+          "key": "shishen",
+          "value": "正官",
+          "scope": {
+            "layer": "本命",
+            "pillar": "time"
+          },
+          "derivedFrom": [
+            "rows.藏干"
+          ]
+        },
+        {
+          "key": "shishen",
+          "value": "伤官",
+          "scope": {
+            "layer": "本命",
+            "pillar": "time"
+          },
+          "derivedFrom": [
+            "rows.藏干"
+          ]
+        },
+        {
+          "key": "shensha",
+          "value": "飞刃",
+          "scope": {
+            "layer": "本命",
+            "pillar": "year"
+          },
+          "derivedFrom": [
+            "rows.神煞"
+          ]
+        },
+        {
+          "key": "shensha",
+          "value": "将星",
+          "scope": {
+            "layer": "本命",
+            "pillar": "year"
+          },
+          "derivedFrom": [
+            "rows.神煞"
+          ]
+        },
+        {
+          "key": "shensha",
+          "value": "太极贵人",
+          "scope": {
+            "layer": "本命",
+            "pillar": "month"
+          },
+          "derivedFrom": [
+            "rows.神煞"
+          ]
+        },
+        {
+          "key": "shensha",
+          "value": "学堂",
+          "scope": {
+            "layer": "本命",
+            "pillar": "month"
+          },
+          "derivedFrom": [
+            "rows.神煞"
+          ]
+        },
+        {
+          "key": "shensha",
+          "value": "驿马",
+          "scope": {
+            "layer": "本命",
+            "pillar": "month"
+          },
+          "derivedFrom": [
+            "rows.神煞"
+          ]
+        },
+        {
+          "key": "shensha",
+          "value": "孤辰",
+          "scope": {
+            "layer": "本命",
+            "pillar": "month"
+          },
+          "derivedFrom": [
+            "rows.神煞"
+          ]
+        },
+        {
+          "key": "shensha",
+          "value": "羊刃",
+          "scope": {
+            "layer": "本命",
+            "pillar": "day"
+          },
+          "derivedFrom": [
+            "rows.神煞"
+          ]
+        },
+        {
+          "key": "shensha",
+          "value": "红艳",
+          "scope": {
+            "layer": "本命",
+            "pillar": "day"
+          },
+          "derivedFrom": [
+            "rows.神煞"
+          ]
+        },
+        {
+          "key": "shensha",
+          "value": "灾煞",
+          "scope": {
+            "layer": "本命",
+            "pillar": "day"
+          },
+          "derivedFrom": [
+            "rows.神煞"
+          ]
+        },
+        {
+          "key": "shensha",
+          "value": "月德贵人",
+          "scope": {
+            "layer": "本命",
+            "pillar": "day"
+          },
+          "derivedFrom": [
+            "rows.神煞"
+          ]
+        },
+        {
+          "key": "shensha",
+          "value": "国印贵人",
+          "scope": {
+            "layer": "本命",
+            "pillar": "time"
+          },
+          "derivedFrom": [
+            "rows.神煞"
+          ]
+        },
+        {
+          "key": "shensha",
+          "value": "天乙贵人",
+          "scope": {
+            "layer": "本命",
+            "pillar": "time"
+          },
+          "derivedFrom": [
+            "rows.神煞"
+          ]
+        },
+        {
+          "key": "shensha",
+          "value": "天喜",
+          "scope": {
+            "layer": "本命",
+            "pillar": "time"
+          },
+          "derivedFrom": [
+            "rows.神煞"
+          ]
+        },
+        {
+          "key": "shensha",
+          "value": "天医",
+          "scope": {
+            "layer": "本命",
+            "pillar": "time"
+          },
+          "derivedFrom": [
+            "rows.神煞"
+          ]
+        },
+        {
+          "key": "kongwang",
+          "value": "寅",
+          "scope": {
+            "layer": "本命"
+          },
+          "derivedFrom": [
+            "meta.kong"
+          ]
+        },
+        {
+          "key": "kongwang",
+          "value": "卯",
+          "scope": {
+            "layer": "本命"
+          },
+          "derivedFrom": [
+            "meta.kong"
+          ]
+        },
+        {
+          "key": "shishen",
+          "value": "伤官",
+          "scope": {
+            "layer": "大运"
+          },
+          "derivedFrom": [
+            "dayun"
+          ]
+        },
+        {
+          "key": "shishen",
+          "value": "偏财",
+          "scope": {
+            "layer": "大运"
+          },
+          "derivedFrom": [
+            "dayun"
+          ]
+        },
+        {
+          "key": "shishen",
+          "value": "正财",
+          "scope": {
+            "layer": "大运"
+          },
+          "derivedFrom": [
+            "dayun"
+          ]
+        },
+        {
+          "key": "shishen",
+          "value": "七杀",
+          "scope": {
+            "layer": "大运"
+          },
+          "derivedFrom": [
+            "dayun"
+          ]
+        },
+        {
+          "key": "shishen",
+          "value": "正官",
+          "scope": {
+            "layer": "大运"
+          },
+          "derivedFrom": [
+            "dayun"
+          ]
+        },
+        {
+          "key": "shishen",
+          "value": "偏印",
+          "scope": {
+            "layer": "大运"
+          },
+          "derivedFrom": [
+            "dayun"
+          ]
+        },
+        {
+          "key": "shishen",
+          "value": "偏财",
+          "scope": {
+            "layer": "流年"
+          },
+          "derivedFrom": [
+            "liunian"
+          ]
+        },
+        {
+          "key": "shishen",
+          "value": "正财",
+          "scope": {
+            "layer": "流年"
+          },
+          "derivedFrom": [
+            "liunian"
+          ]
+        },
+        {
+          "key": "shishen",
+          "value": "七杀",
+          "scope": {
+            "layer": "流年"
+          },
+          "derivedFrom": [
+            "liunian"
+          ]
+        },
+        {
+          "key": "shishen",
+          "value": "正官",
+          "scope": {
+            "layer": "流年"
+          },
+          "derivedFrom": [
+            "liunian"
+          ]
+        }
+      ]
+    },
+    "caseB": {
+      "label": "乙 1984-02-04 23:40 女 上海",
+      "facts": [
+        {
+          "key": "rizhu",
+          "value": "己",
+          "scope": {
+            "layer": "本命",
+            "pillar": "day"
+          },
+          "derivedFrom": [
+            "ganzhi.day"
+          ]
+        },
+        {
+          "key": "yueling",
+          "value": "寅",
+          "scope": {
+            "layer": "本命",
+            "pillar": "month"
+          },
+          "derivedFrom": [
+            "ganzhi.month"
+          ]
+        },
+        {
+          "key": "rizhu_strength",
+          "value": "极强",
+          "scope": {
+            "layer": "本命"
+          },
+          "derivedFrom": [
+            "analysis.strength.tier"
+          ]
+        },
+        {
+          "key": "geju",
+          "value": "正官格",
+          "scope": {
+            "layer": "本命"
+          },
+          "derivedFrom": [
+            "analysis.geju.name"
+          ]
+        },
+        {
+          "key": "yongshen",
+          "value": "木",
+          "scope": {
+            "layer": "本命"
+          },
+          "derivedFrom": [
+            "analysis.yongshen.xi"
+          ]
+        },
+        {
+          "key": "yongshen",
+          "value": "金",
+          "scope": {
+            "layer": "本命"
+          },
+          "derivedFrom": [
+            "analysis.yongshen.xi"
+          ]
+        },
+        {
+          "key": "yongshen",
+          "value": "水",
+          "scope": {
+            "layer": "本命"
+          },
+          "derivedFrom": [
+            "analysis.yongshen.xi"
+          ]
+        },
+        {
+          "key": "shishen",
+          "value": "正官",
+          "scope": {
+            "layer": "本命",
+            "pillar": "year"
+          },
+          "derivedFrom": [
+            "rows.十神"
+          ]
+        },
+        {
+          "key": "shishen",
+          "value": "正印",
+          "scope": {
+            "layer": "本命",
+            "pillar": "month"
+          },
+          "derivedFrom": [
+            "rows.十神"
+          ]
+        },
+        {
+          "key": "shishen",
+          "value": "正官",
+          "scope": {
+            "layer": "本命",
+            "pillar": "time"
+          },
+          "derivedFrom": [
+            "rows.十神"
+          ]
+        },
+        {
+          "key": "shishen",
+          "value": "偏财",
+          "scope": {
+            "layer": "本命",
+            "pillar": "year"
+          },
+          "derivedFrom": [
+            "rows.藏干"
+          ]
+        },
+        {
+          "key": "shishen",
+          "value": "正官",
+          "scope": {
+            "layer": "本命",
+            "pillar": "month"
+          },
+          "derivedFrom": [
+            "rows.藏干"
+          ]
+        },
+        {
+          "key": "shishen",
+          "value": "劫财",
+          "scope": {
+            "layer": "本命",
+            "pillar": "month"
+          },
+          "derivedFrom": [
+            "rows.藏干"
+          ]
+        },
+        {
+          "key": "shishen",
+          "value": "正印",
+          "scope": {
+            "layer": "本命",
+            "pillar": "day"
+          },
+          "derivedFrom": [
+            "rows.藏干"
+          ]
+        },
+        {
+          "key": "shishen",
+          "value": "伤官",
+          "scope": {
+            "layer": "本命",
+            "pillar": "day"
+          },
+          "derivedFrom": [
+            "rows.藏干"
+          ]
+        },
+        {
+          "key": "shishen",
+          "value": "劫财",
+          "scope": {
+            "layer": "本命",
+            "pillar": "day"
+          },
+          "derivedFrom": [
+            "rows.藏干"
+          ]
+        },
+        {
+          "key": "shishen",
+          "value": "偏财",
+          "scope": {
+            "layer": "本命",
+            "pillar": "time"
+          },
+          "derivedFrom": [
+            "rows.藏干"
+          ]
+        },
+        {
+          "key": "shensha",
+          "value": "天乙贵人",
+          "scope": {
+            "layer": "本命",
+            "pillar": "year"
+          },
+          "derivedFrom": [
+            "rows.神煞"
+          ]
+        },
+        {
+          "key": "shensha",
+          "value": "太极贵人",
+          "scope": {
+            "layer": "本命",
+            "pillar": "year"
+          },
+          "derivedFrom": [
+            "rows.神煞"
+          ]
+        },
+        {
+          "key": "shensha",
+          "value": "将星",
+          "scope": {
+            "layer": "本命",
+            "pillar": "year"
+          },
+          "derivedFrom": [
+            "rows.神煞"
+          ]
+        },
+        {
+          "key": "shensha",
+          "value": "国印贵人",
+          "scope": {
+            "layer": "本命",
+            "pillar": "month"
+          },
+          "derivedFrom": [
+            "rows.神煞"
+          ]
+        },
+        {
+          "key": "shensha",
+          "value": "驿马",
+          "scope": {
+            "layer": "本命",
+            "pillar": "month"
+          },
+          "derivedFrom": [
+            "rows.神煞"
+          ]
+        },
+        {
+          "key": "shensha",
+          "value": "孤辰",
+          "scope": {
+            "layer": "本命",
+            "pillar": "month"
+          },
+          "derivedFrom": [
+            "rows.神煞"
+          ]
+        },
+        {
+          "key": "shensha",
+          "value": "月德贵人",
+          "scope": {
+            "layer": "本命",
+            "pillar": "month"
+          },
+          "derivedFrom": [
+            "rows.神煞"
+          ]
+        },
+        {
+          "key": "shensha",
+          "value": "羊刃",
+          "scope": {
+            "layer": "本命",
+            "pillar": "day"
+          },
+          "derivedFrom": [
+            "rows.神煞"
+          ]
+        },
+        {
+          "key": "shensha",
+          "value": "劫煞",
+          "scope": {
+            "layer": "本命",
+            "pillar": "day"
+          },
+          "derivedFrom": [
+            "rows.神煞"
+          ]
+        },
+        {
+          "key": "shensha",
+          "value": "天乙贵人",
+          "scope": {
+            "layer": "本命",
+            "pillar": "time"
+          },
+          "derivedFrom": [
+            "rows.神煞"
+          ]
+        },
+        {
+          "key": "shensha",
+          "value": "太极贵人",
+          "scope": {
+            "layer": "本命",
+            "pillar": "time"
+          },
+          "derivedFrom": [
+            "rows.神煞"
+          ]
+        },
+        {
+          "key": "shensha",
+          "value": "将星",
+          "scope": {
+            "layer": "本命",
+            "pillar": "time"
+          },
+          "derivedFrom": [
+            "rows.神煞"
+          ]
+        },
+        {
+          "key": "kongwang",
+          "value": "戌",
+          "scope": {
+            "layer": "本命"
+          },
+          "derivedFrom": [
+            "meta.kong"
+          ]
+        },
+        {
+          "key": "kongwang",
+          "value": "亥",
+          "scope": {
+            "layer": "本命"
+          },
+          "derivedFrom": [
+            "meta.kong"
+          ]
+        },
+        {
+          "key": "shishen",
+          "value": "七杀",
+          "scope": {
+            "layer": "大运"
+          },
+          "derivedFrom": [
+            "dayun"
+          ]
+        },
+        {
+          "key": "shishen",
+          "value": "正官",
+          "scope": {
+            "layer": "大运"
+          },
+          "derivedFrom": [
+            "dayun"
+          ]
+        },
+        {
+          "key": "shishen",
+          "value": "偏财",
+          "scope": {
+            "layer": "大运"
+          },
+          "derivedFrom": [
+            "dayun"
+          ]
+        },
+        {
+          "key": "shishen",
+          "value": "正财",
+          "scope": {
+            "layer": "大运"
+          },
+          "derivedFrom": [
+            "dayun"
+          ]
+        },
+        {
+          "key": "shishen",
+          "value": "食神",
+          "scope": {
+            "layer": "大运"
+          },
+          "derivedFrom": [
+            "dayun"
+          ]
+        },
+        {
+          "key": "shishen",
+          "value": "伤官",
+          "scope": {
+            "layer": "大运"
+          },
+          "derivedFrom": [
+            "dayun"
+          ]
+        },
+        {
+          "key": "shishen",
+          "value": "正印",
+          "scope": {
+            "layer": "流年"
+          },
+          "derivedFrom": [
+            "liunian"
+          ]
+        },
+        {
+          "key": "shishen",
+          "value": "偏印",
+          "scope": {
+            "layer": "流年"
+          },
+          "derivedFrom": [
+            "liunian"
+          ]
+        },
+        {
+          "key": "shishen",
+          "value": "劫财",
+          "scope": {
+            "layer": "流年"
+          },
+          "derivedFrom": [
+            "liunian"
+          ]
+        },
+        {
+          "key": "shishen",
+          "value": "比肩",
+          "scope": {
+            "layer": "流年"
+          },
+          "derivedFrom": [
+            "liunian"
+          ]
+        }
+      ]
+    }
+  },
+  "ziwei": {
+    "caseA": {
+      "label": "甲 1990-08-15 13:20 男 上海",
+      "facts": [
+        {
+          "key": "ziwei_palace",
+          "value": "命宫",
+          "scope": {
+            "layer": "本命",
+            "palace": "命宫"
+          },
+          "derivedFrom": [
+            "palaces.name"
+          ]
+        },
+        {
+          "key": "ziwei_star",
+          "value": "天机",
+          "scope": {
+            "layer": "本命",
+            "palace": "命宫"
+          },
+          "derivedFrom": [
+            "palaces.stars"
+          ]
+        },
+        {
+          "key": "ziwei_star",
+          "value": "解神",
+          "scope": {
+            "layer": "本命",
+            "palace": "命宫"
+          },
+          "derivedFrom": [
+            "palaces.adjective"
+          ]
+        },
+        {
+          "key": "ziwei_star",
+          "value": "天哭",
+          "scope": {
+            "layer": "本命",
+            "palace": "命宫"
+          },
+          "derivedFrom": [
+            "palaces.adjective"
+          ]
+        },
+        {
+          "key": "ziwei_star",
+          "value": "天虚",
+          "scope": {
+            "layer": "本命",
+            "palace": "命宫"
+          },
+          "derivedFrom": [
+            "palaces.adjective"
+          ]
+        },
+        {
+          "key": "ziwei_palace",
+          "value": "兄弟",
+          "scope": {
+            "layer": "本命",
+            "palace": "兄弟"
+          },
+          "derivedFrom": [
+            "palaces.name"
+          ]
+        },
+        {
+          "key": "ziwei_star",
+          "value": "紫微",
+          "scope": {
+            "layer": "本命",
+            "palace": "兄弟"
+          },
+          "derivedFrom": [
+            "palaces.stars"
+          ]
+        },
+        {
+          "key": "ziwei_star",
+          "value": "破军",
+          "scope": {
+            "layer": "本命",
+            "palace": "兄弟"
+          },
+          "derivedFrom": [
+            "palaces.stars"
+          ]
+        },
+        {
+          "key": "ziwei_star",
+          "value": "天魁",
+          "scope": {
+            "layer": "本命",
+            "palace": "兄弟"
+          },
+          "derivedFrom": [
+            "palaces.minor"
+          ]
+        },
+        {
+          "key": "ziwei_star",
+          "value": "台辅",
+          "scope": {
+            "layer": "本命",
+            "palace": "兄弟"
+          },
+          "derivedFrom": [
+            "palaces.adjective"
+          ]
+        },
+        {
+          "key": "ziwei_palace",
+          "value": "夫妻",
+          "scope": {
+            "layer": "本命",
+            "palace": "夫妻"
+          },
+          "derivedFrom": [
+            "palaces.name"
+          ]
+        },
+        {
+          "key": "ziwei_palace",
+          "value": "身宫",
+          "scope": {
+            "layer": "本命",
+            "palace": "夫妻"
+          },
+          "derivedFrom": [
+            "palaces.isBody"
+          ]
+        },
+        {
+          "key": "ziwei_star",
+          "value": "空宫",
+          "scope": {
+            "layer": "本命",
+            "palace": "夫妻"
+          },
+          "derivedFrom": [
+            "palaces.stars"
+          ]
+        },
+        {
+          "key": "ziwei_star",
+          "value": "恩光",
+          "scope": {
+            "layer": "本命",
+            "palace": "夫妻"
+          },
+          "derivedFrom": [
+            "palaces.adjective"
+          ]
+        },
+        {
+          "key": "ziwei_star",
+          "value": "天厨",
+          "scope": {
+            "layer": "本命",
+            "palace": "夫妻"
+          },
+          "derivedFrom": [
+            "palaces.adjective"
+          ]
+        },
+        {
+          "key": "ziwei_star",
+          "value": "蜚廉",
+          "scope": {
+            "layer": "本命",
+            "palace": "夫妻"
+          },
+          "derivedFrom": [
+            "palaces.adjective"
+          ]
+        },
+        {
+          "key": "ziwei_star",
+          "value": "天刑",
+          "scope": {
+            "layer": "本命",
+            "palace": "夫妻"
+          },
+          "derivedFrom": [
+            "palaces.adjective"
+          ]
+        },
+        {
+          "key": "ziwei_palace",
+          "value": "子女",
+          "scope": {
+            "layer": "本命",
+            "palace": "子女"
+          },
+          "derivedFrom": [
+            "palaces.name"
+          ]
+        },
+        {
+          "key": "ziwei_star",
+          "value": "天府",
+          "scope": {
+            "layer": "本命",
+            "palace": "子女"
+          },
+          "derivedFrom": [
+            "palaces.stars"
+          ]
+        },
+        {
+          "key": "ziwei_star",
+          "value": "文昌",
+          "scope": {
+            "layer": "本命",
+            "palace": "子女"
+          },
+          "derivedFrom": [
+            "palaces.minor"
+          ]
+        },
+        {
+          "key": "ziwei_star",
+          "value": "天喜",
+          "scope": {
+            "layer": "本命",
+            "palace": "子女"
+          },
+          "derivedFrom": [
+            "palaces.adjective"
+          ]
+        },
+        {
+          "key": "ziwei_star",
+          "value": "咸池",
+          "scope": {
+            "layer": "本命",
+            "palace": "子女"
+          },
+          "derivedFrom": [
+            "palaces.adjective"
+          ]
+        },
+        {
+          "key": "ziwei_star",
+          "value": "天月",
+          "scope": {
+            "layer": "本命",
+            "palace": "子女"
+          },
+          "derivedFrom": [
+            "palaces.adjective"
+          ]
+        },
+        {
+          "key": "ziwei_star",
+          "value": "天德",
+          "scope": {
+            "layer": "本命",
+            "palace": "子女"
+          },
+          "derivedFrom": [
+            "palaces.adjective"
+          ]
+        },
+        {
+          "key": "ziwei_palace",
+          "value": "财帛",
+          "scope": {
+            "layer": "本命",
+            "palace": "财帛"
+          },
+          "derivedFrom": [
+            "palaces.name"
+          ]
+        },
+        {
+          "key": "ziwei_star",
+          "value": "太阴",
+          "scope": {
+            "layer": "本命",
+            "palace": "财帛"
+          },
+          "derivedFrom": [
+            "palaces.stars"
+          ]
+        },
+        {
+          "key": "ziwei_star",
+          "value": "地空",
+          "scope": {
+            "layer": "本命",
+            "palace": "财帛"
+          },
+          "derivedFrom": [
+            "palaces.minor"
+          ]
+        },
+        {
+          "key": "ziwei_star",
+          "value": "凤阁",
+          "scope": {
+            "layer": "本命",
+            "palace": "财帛"
+          },
+          "derivedFrom": [
+            "palaces.adjective"
+          ]
+        },
+        {
+          "key": "ziwei_star",
+          "value": "寡宿",
+          "scope": {
+            "layer": "本命",
+            "palace": "财帛"
+          },
+          "derivedFrom": [
+            "palaces.adjective"
+          ]
+        },
+        {
+          "key": "ziwei_star",
+          "value": "阴煞",
+          "scope": {
+            "layer": "本命",
+            "palace": "财帛"
+          },
+          "derivedFrom": [
+            "palaces.adjective"
+          ]
+        },
+        {
+          "key": "ziwei_star",
+          "value": "年解",
+          "scope": {
+            "layer": "本命",
+            "palace": "财帛"
+          },
+          "derivedFrom": [
+            "palaces.adjective"
+          ]
+        },
+        {
+          "key": "sihua",
+          "value": "化科",
+          "scope": {
+            "layer": "本命",
+            "palace": "财帛"
+          },
+          "derivedFrom": [
+            "palaces.hua"
+          ]
+        },
+        {
+          "key": "ziwei_palace",
+          "value": "疾厄",
+          "scope": {
+            "layer": "本命",
+            "palace": "疾厄"
+          },
+          "derivedFrom": [
+            "palaces.name"
+          ]
+        },
+        {
+          "key": "ziwei_star",
+          "value": "廉贞",
+          "scope": {
+            "layer": "本命",
+            "palace": "疾厄"
+          },
+          "derivedFrom": [
+            "palaces.stars"
+          ]
+        },
+        {
+          "key": "ziwei_star",
+          "value": "贪狼",
+          "scope": {
+            "layer": "本命",
+            "palace": "疾厄"
+          },
+          "derivedFrom": [
+            "palaces.stars"
+          ]
+        },
+        {
+          "key": "ziwei_star",
+          "value": "右弼",
+          "scope": {
+            "layer": "本命",
+            "palace": "疾厄"
+          },
+          "derivedFrom": [
+            "palaces.minor"
+          ]
+        },
+        {
+          "key": "ziwei_star",
+          "value": "八座",
+          "scope": {
+            "layer": "本命",
+            "palace": "疾厄"
+          },
+          "derivedFrom": [
+            "palaces.adjective"
+          ]
+        },
+        {
+          "key": "ziwei_star",
+          "value": "破碎",
+          "scope": {
+            "layer": "本命",
+            "palace": "疾厄"
+          },
+          "derivedFrom": [
+            "palaces.adjective"
+          ]
+        },
+        {
+          "key": "ziwei_star",
+          "value": "天伤",
+          "scope": {
+            "layer": "本命",
+            "palace": "疾厄"
+          },
+          "derivedFrom": [
+            "palaces.adjective"
+          ]
+        },
+        {
+          "key": "ziwei_palace",
+          "value": "迁移",
+          "scope": {
+            "layer": "本命",
+            "palace": "迁移"
+          },
+          "derivedFrom": [
+            "palaces.name"
+          ]
+        },
+        {
+          "key": "ziwei_star",
+          "value": "巨门",
+          "scope": {
+            "layer": "本命",
+            "palace": "迁移"
+          },
+          "derivedFrom": [
+            "palaces.stars"
+          ]
+        },
+        {
+          "key": "ziwei_star",
+          "value": "地劫",
+          "scope": {
+            "layer": "本命",
+            "palace": "迁移"
+          },
+          "derivedFrom": [
+            "palaces.minor"
+          ]
+        },
+        {
+          "key": "ziwei_star",
+          "value": "天姚",
+          "scope": {
+            "layer": "本命",
+            "palace": "迁移"
+          },
+          "derivedFrom": [
+            "palaces.adjective"
+          ]
+        },
+        {
+          "key": "ziwei_star",
+          "value": "天才",
+          "scope": {
+            "layer": "本命",
+            "palace": "迁移"
+          },
+          "derivedFrom": [
+            "palaces.adjective"
+          ]
+        },
+        {
+          "key": "ziwei_star",
+          "value": "天福",
+          "scope": {
+            "layer": "本命",
+            "palace": "迁移"
+          },
+          "derivedFrom": [
+            "palaces.adjective"
+          ]
+        },
+        {
+          "key": "ziwei_star",
+          "value": "截路",
+          "scope": {
+            "layer": "本命",
+            "palace": "迁移"
+          },
+          "derivedFrom": [
+            "palaces.adjective"
+          ]
+        },
+        {
+          "key": "ziwei_palace",
+          "value": "交友",
+          "scope": {
+            "layer": "本命",
+            "palace": "交友"
+          },
+          "derivedFrom": [
+            "palaces.name"
+          ]
+        },
+        {
+          "key": "ziwei_star",
+          "value": "天相",
+          "scope": {
+            "layer": "本命",
+            "palace": "交友"
+          },
+          "derivedFrom": [
+            "palaces.stars"
+          ]
+        },
+        {
+          "key": "ziwei_star",
+          "value": "天钺",
+          "scope": {
+            "layer": "本命",
+            "palace": "交友"
+          },
+          "derivedFrom": [
+            "palaces.minor"
+          ]
+        },
+        {
+          "key": "ziwei_star",
+          "value": "陀罗",
+          "scope": {
+            "layer": "本命",
+            "palace": "交友"
+          },
+          "derivedFrom": [
+            "palaces.minor"
+          ]
+        },
+        {
+          "key": "ziwei_star",
+          "value": "天空",
+          "scope": {
+            "layer": "本命",
+            "palace": "交友"
+          },
+          "derivedFrom": [
+            "palaces.adjective"
+          ]
+        },
+        {
+          "key": "ziwei_star",
+          "value": "空亡",
+          "scope": {
+            "layer": "本命",
+            "palace": "交友"
+          },
+          "derivedFrom": [
+            "palaces.adjective"
+          ]
+        },
+        {
+          "key": "ziwei_star",
+          "value": "天使",
+          "scope": {
+            "layer": "本命",
+            "palace": "交友"
+          },
+          "derivedFrom": [
+            "palaces.adjective"
+          ]
+        },
+        {
+          "key": "ziwei_palace",
+          "value": "事业",
+          "scope": {
+            "layer": "本命",
+            "palace": "事业"
+          },
+          "derivedFrom": [
+            "palaces.name"
+          ]
+        },
+        {
+          "key": "ziwei_star",
+          "value": "天同",
+          "scope": {
+            "layer": "本命",
+            "palace": "事业"
+          },
+          "derivedFrom": [
+            "palaces.stars"
+          ]
+        },
+        {
+          "key": "ziwei_star",
+          "value": "天梁",
+          "scope": {
+            "layer": "本命",
+            "palace": "事业"
+          },
+          "derivedFrom": [
+            "palaces.stars"
+          ]
+        },
+        {
+          "key": "ziwei_star",
+          "value": "禄存",
+          "scope": {
+            "layer": "本命",
+            "palace": "事业"
+          },
+          "derivedFrom": [
+            "palaces.minor"
+          ]
+        },
+        {
+          "key": "ziwei_star",
+          "value": "天马",
+          "scope": {
+            "layer": "本命",
+            "palace": "事业"
+          },
+          "derivedFrom": [
+            "palaces.minor"
+          ]
+        },
+        {
+          "key": "ziwei_star",
+          "value": "火星",
+          "scope": {
+            "layer": "本命",
+            "palace": "事业"
+          },
+          "derivedFrom": [
+            "palaces.minor"
+          ]
+        },
+        {
+          "key": "ziwei_star",
+          "value": "天寿",
+          "scope": {
+            "layer": "本命",
+            "palace": "事业"
+          },
+          "derivedFrom": [
+            "palaces.adjective"
+          ]
+        },
+        {
+          "key": "ziwei_star",
+          "value": "天巫",
+          "scope": {
+            "layer": "本命",
+            "palace": "事业"
+          },
+          "derivedFrom": [
+            "palaces.adjective"
+          ]
+        },
+        {
+          "key": "ziwei_star",
+          "value": "孤辰",
+          "scope": {
+            "layer": "本命",
+            "palace": "事业"
+          },
+          "derivedFrom": [
+            "palaces.adjective"
+          ]
+        },
+        {
+          "key": "sihua",
+          "value": "化忌",
+          "scope": {
+            "layer": "本命",
+            "palace": "事业"
+          },
+          "derivedFrom": [
+            "palaces.hua"
+          ]
+        },
+        {
+          "key": "ziwei_palace",
+          "value": "田宅",
+          "scope": {
+            "layer": "本命",
+            "palace": "田宅"
+          },
+          "derivedFrom": [
+            "palaces.name"
+          ]
+        },
+        {
+          "key": "ziwei_star",
+          "value": "武曲",
+          "scope": {
+            "layer": "本命",
+            "palace": "田宅"
+          },
+          "derivedFrom": [
+            "palaces.stars"
+          ]
+        },
+        {
+          "key": "ziwei_star",
+          "value": "七杀",
+          "scope": {
+            "layer": "本命",
+            "palace": "田宅"
+          },
+          "derivedFrom": [
+            "palaces.stars"
+          ]
+        },
+        {
+          "key": "ziwei_star",
+          "value": "左辅",
+          "scope": {
+            "layer": "本命",
+            "palace": "田宅"
+          },
+          "derivedFrom": [
+            "palaces.minor"
+          ]
+        },
+        {
+          "key": "ziwei_star",
+          "value": "擎羊",
+          "scope": {
+            "layer": "本命",
+            "palace": "田宅"
+          },
+          "derivedFrom": [
+            "palaces.minor"
+          ]
+        },
+        {
+          "key": "ziwei_star",
+          "value": "红鸾",
+          "scope": {
+            "layer": "本命",
+            "palace": "田宅"
+          },
+          "derivedFrom": [
+            "palaces.adjective"
+          ]
+        },
+        {
+          "key": "ziwei_star",
+          "value": "三台",
+          "scope": {
+            "layer": "本命",
+            "palace": "田宅"
+          },
+          "derivedFrom": [
+            "palaces.adjective"
+          ]
+        },
+        {
+          "key": "ziwei_star",
+          "value": "封诰",
+          "scope": {
+            "layer": "本命",
+            "palace": "田宅"
+          },
+          "derivedFrom": [
+            "palaces.adjective"
+          ]
+        },
+        {
+          "key": "sihua",
+          "value": "化权",
+          "scope": {
+            "layer": "本命",
+            "palace": "田宅"
+          },
+          "derivedFrom": [
+            "palaces.hua"
+          ]
+        },
+        {
+          "key": "ziwei_palace",
+          "value": "福德",
+          "scope": {
+            "layer": "本命",
+            "palace": "福德"
+          },
+          "derivedFrom": [
+            "palaces.name"
+          ]
+        },
+        {
+          "key": "ziwei_star",
+          "value": "太阳",
+          "scope": {
+            "layer": "本命",
+            "palace": "福德"
+          },
+          "derivedFrom": [
+            "palaces.stars"
+          ]
+        },
+        {
+          "key": "ziwei_star",
+          "value": "铃星",
+          "scope": {
+            "layer": "本命",
+            "palace": "福德"
+          },
+          "derivedFrom": [
+            "palaces.minor"
+          ]
+        },
+        {
+          "key": "ziwei_star",
+          "value": "天贵",
+          "scope": {
+            "layer": "本命",
+            "palace": "福德"
+          },
+          "derivedFrom": [
+            "palaces.adjective"
+          ]
+        },
+        {
+          "key": "ziwei_star",
+          "value": "龙池",
+          "scope": {
+            "layer": "本命",
+            "palace": "福德"
+          },
+          "derivedFrom": [
+            "palaces.adjective"
+          ]
+        },
+        {
+          "key": "ziwei_star",
+          "value": "华盖",
+          "scope": {
+            "layer": "本命",
+            "palace": "福德"
+          },
+          "derivedFrom": [
+            "palaces.adjective"
+          ]
+        },
+        {
+          "key": "ziwei_star",
+          "value": "旬空",
+          "scope": {
+            "layer": "本命",
+            "palace": "福德"
+          },
+          "derivedFrom": [
+            "palaces.adjective"
+          ]
+        },
+        {
+          "key": "sihua",
+          "value": "化禄",
+          "scope": {
+            "layer": "本命",
+            "palace": "福德"
+          },
+          "derivedFrom": [
+            "palaces.hua"
+          ]
+        },
+        {
+          "key": "ziwei_palace",
+          "value": "父母",
+          "scope": {
+            "layer": "本命",
+            "palace": "父母"
+          },
+          "derivedFrom": [
+            "palaces.name"
+          ]
+        },
+        {
+          "key": "ziwei_star",
+          "value": "空宫",
+          "scope": {
+            "layer": "本命",
+            "palace": "父母"
+          },
+          "derivedFrom": [
+            "palaces.stars"
+          ]
+        },
+        {
+          "key": "ziwei_star",
+          "value": "文曲",
+          "scope": {
+            "layer": "本命",
+            "palace": "父母"
+          },
+          "derivedFrom": [
+            "palaces.minor"
+          ]
+        },
+        {
+          "key": "ziwei_star",
+          "value": "天官",
+          "scope": {
+            "layer": "本命",
+            "palace": "父母"
+          },
+          "derivedFrom": [
+            "palaces.adjective"
+          ]
+        },
+        {
+          "key": "ziwei_star",
+          "value": "月德",
+          "scope": {
+            "layer": "本命",
+            "palace": "父母"
+          },
+          "derivedFrom": [
+            "palaces.adjective"
+          ]
+        },
+        {
+          "key": "daxian",
+          "value": "命宫 6–15",
+          "scope": {
+            "layer": "本命",
+            "palace": "命宫"
+          },
+          "derivedFrom": [
+            "decadal"
+          ]
+        },
+        {
+          "key": "daxian",
+          "value": "兄弟 16–25",
+          "scope": {
+            "layer": "本命",
+            "palace": "兄弟"
+          },
+          "derivedFrom": [
+            "decadal"
+          ]
+        },
+        {
+          "key": "daxian",
+          "value": "夫妻 26–35",
+          "scope": {
+            "layer": "本命",
+            "palace": "夫妻"
+          },
+          "derivedFrom": [
+            "decadal"
+          ]
+        },
+        {
+          "key": "daxian",
+          "value": "子女 36–45",
+          "scope": {
+            "layer": "大运",
+            "palace": "子女"
+          },
+          "derivedFrom": [
+            "decadal"
+          ]
+        },
+        {
+          "key": "daxian",
+          "value": "财帛 46–55",
+          "scope": {
+            "layer": "本命",
+            "palace": "财帛"
+          },
+          "derivedFrom": [
+            "decadal"
+          ]
+        },
+        {
+          "key": "daxian",
+          "value": "疾厄 56–65",
+          "scope": {
+            "layer": "本命",
+            "palace": "疾厄"
+          },
+          "derivedFrom": [
+            "decadal"
+          ]
+        },
+        {
+          "key": "daxian",
+          "value": "迁移 66–75",
+          "scope": {
+            "layer": "本命",
+            "palace": "迁移"
+          },
+          "derivedFrom": [
+            "decadal"
+          ]
+        },
+        {
+          "key": "daxian",
+          "value": "交友 76–85",
+          "scope": {
+            "layer": "本命",
+            "palace": "交友"
+          },
+          "derivedFrom": [
+            "decadal"
+          ]
+        },
+        {
+          "key": "daxian",
+          "value": "事业 86–95",
+          "scope": {
+            "layer": "本命",
+            "palace": "事业"
+          },
+          "derivedFrom": [
+            "decadal"
+          ]
+        },
+        {
+          "key": "daxian",
+          "value": "田宅 96–105",
+          "scope": {
+            "layer": "本命",
+            "palace": "田宅"
+          },
+          "derivedFrom": [
+            "decadal"
+          ]
+        },
+        {
+          "key": "daxian",
+          "value": "福德 106–115",
+          "scope": {
+            "layer": "本命",
+            "palace": "福德"
+          },
+          "derivedFrom": [
+            "decadal"
+          ]
+        },
+        {
+          "key": "daxian",
+          "value": "父母 116–125",
+          "scope": {
+            "layer": "本命",
+            "palace": "父母"
+          },
+          "derivedFrom": [
+            "decadal"
+          ]
+        }
+      ]
+    },
+    "caseB": {
+      "label": "乙 1984-02-04 23:40 女 上海",
+      "facts": [
+        {
+          "key": "ziwei_palace",
+          "value": "命宫",
+          "scope": {
+            "layer": "本命",
+            "palace": "命宫"
+          },
+          "derivedFrom": [
+            "palaces.name"
+          ]
+        },
+        {
+          "key": "ziwei_palace",
+          "value": "身宫",
+          "scope": {
+            "layer": "本命",
+            "palace": "命宫"
+          },
+          "derivedFrom": [
+            "palaces.isBody"
+          ]
+        },
+        {
+          "key": "ziwei_star",
+          "value": "空宫",
+          "scope": {
+            "layer": "本命",
+            "palace": "命宫"
+          },
+          "derivedFrom": [
+            "palaces.stars"
+          ]
+        },
+        {
+          "key": "ziwei_star",
+          "value": "禄存",
+          "scope": {
+            "layer": "本命",
+            "palace": "命宫"
+          },
+          "derivedFrom": [
+            "palaces.minor"
+          ]
+        },
+        {
+          "key": "ziwei_star",
+          "value": "天马",
+          "scope": {
+            "layer": "本命",
+            "palace": "命宫"
+          },
+          "derivedFrom": [
+            "palaces.minor"
+          ]
+        },
+        {
+          "key": "ziwei_star",
+          "value": "火星",
+          "scope": {
+            "layer": "本命",
+            "palace": "命宫"
+          },
+          "derivedFrom": [
+            "palaces.minor"
+          ]
+        },
+        {
+          "key": "ziwei_star",
+          "value": "天才",
+          "scope": {
+            "layer": "本命",
+            "palace": "命宫"
+          },
+          "derivedFrom": [
+            "palaces.adjective"
+          ]
+        },
+        {
+          "key": "ziwei_star",
+          "value": "天寿",
+          "scope": {
+            "layer": "本命",
+            "palace": "命宫"
+          },
+          "derivedFrom": [
+            "palaces.adjective"
+          ]
+        },
+        {
+          "key": "ziwei_star",
+          "value": "封诰",
+          "scope": {
+            "layer": "本命",
+            "palace": "命宫"
+          },
+          "derivedFrom": [
+            "palaces.adjective"
+          ]
+        },
+        {
+          "key": "ziwei_star",
+          "value": "孤辰",
+          "scope": {
+            "layer": "本命",
+            "palace": "命宫"
+          },
+          "derivedFrom": [
+            "palaces.adjective"
+          ]
+        },
+        {
+          "key": "ziwei_star",
+          "value": "阴煞",
+          "scope": {
+            "layer": "本命",
+            "palace": "命宫"
+          },
+          "derivedFrom": [
+            "palaces.adjective"
+          ]
+        },
+        {
+          "key": "ziwei_palace",
+          "value": "兄弟",
+          "scope": {
+            "layer": "本命",
+            "palace": "兄弟"
+          },
+          "derivedFrom": [
+            "palaces.name"
+          ]
+        },
+        {
+          "key": "ziwei_star",
+          "value": "廉贞",
+          "scope": {
+            "layer": "本命",
+            "palace": "兄弟"
+          },
+          "derivedFrom": [
+            "palaces.stars"
+          ]
+        },
+        {
+          "key": "ziwei_star",
+          "value": "破军",
+          "scope": {
+            "layer": "本命",
+            "palace": "兄弟"
+          },
+          "derivedFrom": [
+            "palaces.stars"
+          ]
+        },
+        {
+          "key": "ziwei_star",
+          "value": "擎羊",
+          "scope": {
+            "layer": "本命",
+            "palace": "兄弟"
+          },
+          "derivedFrom": [
+            "palaces.minor"
+          ]
+        },
+        {
+          "key": "ziwei_star",
+          "value": "红鸾",
+          "scope": {
+            "layer": "本命",
+            "palace": "兄弟"
+          },
+          "derivedFrom": [
+            "palaces.adjective"
+          ]
+        },
+        {
+          "key": "sihua",
+          "value": "化禄",
+          "scope": {
+            "layer": "本命",
+            "palace": "兄弟"
+          },
+          "derivedFrom": [
+            "palaces.hua"
+          ]
+        },
+        {
+          "key": "sihua",
+          "value": "化权",
+          "scope": {
+            "layer": "本命",
+            "palace": "兄弟"
+          },
+          "derivedFrom": [
+            "palaces.hua"
+          ]
+        },
+        {
+          "key": "ziwei_palace",
+          "value": "夫妻",
+          "scope": {
+            "layer": "本命",
+            "palace": "夫妻"
+          },
+          "derivedFrom": [
+            "palaces.name"
+          ]
+        },
+        {
+          "key": "ziwei_star",
+          "value": "空宫",
+          "scope": {
+            "layer": "本命",
+            "palace": "夫妻"
+          },
+          "derivedFrom": [
+            "palaces.stars"
+          ]
+        },
+        {
+          "key": "ziwei_star",
+          "value": "左辅",
+          "scope": {
+            "layer": "本命",
+            "palace": "夫妻"
+          },
+          "derivedFrom": [
+            "palaces.minor"
+          ]
+        },
+        {
+          "key": "ziwei_star",
+          "value": "文曲",
+          "scope": {
+            "layer": "本命",
+            "palace": "夫妻"
+          },
+          "derivedFrom": [
+            "palaces.minor"
+          ]
+        },
+        {
+          "key": "ziwei_star",
+          "value": "龙池",
+          "scope": {
+            "layer": "本命",
+            "palace": "夫妻"
+          },
+          "derivedFrom": [
+            "palaces.adjective"
+          ]
+        },
+        {
+          "key": "ziwei_star",
+          "value": "华盖",
+          "scope": {
+            "layer": "本命",
+            "palace": "夫妻"
+          },
+          "derivedFrom": [
+            "palaces.adjective"
+          ]
+        },
+        {
+          "key": "ziwei_palace",
+          "value": "子女",
+          "scope": {
+            "layer": "本命",
+            "palace": "子女"
+          },
+          "derivedFrom": [
+            "palaces.name"
+          ]
+        },
+        {
+          "key": "ziwei_star",
+          "value": "天府",
+          "scope": {
+            "layer": "本命",
+            "palace": "子女"
+          },
+          "derivedFrom": [
+            "palaces.stars"
+          ]
+        },
+        {
+          "key": "ziwei_star",
+          "value": "天贵",
+          "scope": {
+            "layer": "本命",
+            "palace": "子女"
+          },
+          "derivedFrom": [
+            "palaces.adjective"
+          ]
+        },
+        {
+          "key": "ziwei_star",
+          "value": "天巫",
+          "scope": {
+            "layer": "本命",
+            "palace": "子女"
+          },
+          "derivedFrom": [
+            "palaces.adjective"
+          ]
+        },
+        {
+          "key": "ziwei_star",
+          "value": "天厨",
+          "scope": {
+            "layer": "本命",
+            "palace": "子女"
+          },
+          "derivedFrom": [
+            "palaces.adjective"
+          ]
+        },
+        {
+          "key": "ziwei_star",
+          "value": "月德",
+          "scope": {
+            "layer": "本命",
+            "palace": "子女"
+          },
+          "derivedFrom": [
+            "palaces.adjective"
+          ]
+        },
+        {
+          "key": "ziwei_star",
+          "value": "破碎",
+          "scope": {
+            "layer": "本命",
+            "palace": "子女"
+          },
+          "derivedFrom": [
+            "palaces.adjective"
+          ]
+        },
+        {
+          "key": "ziwei_palace",
+          "value": "财帛",
+          "scope": {
+            "layer": "本命",
+            "palace": "财帛"
+          },
+          "derivedFrom": [
+            "palaces.name"
+          ]
+        },
+        {
+          "key": "ziwei_star",
+          "value": "天同",
+          "scope": {
+            "layer": "本命",
+            "palace": "财帛"
+          },
+          "derivedFrom": [
+            "palaces.stars"
+          ]
+        },
+        {
+          "key": "ziwei_star",
+          "value": "太阴",
+          "scope": {
+            "layer": "本命",
+            "palace": "财帛"
+          },
+          "derivedFrom": [
+            "palaces.stars"
+          ]
+        },
+        {
+          "key": "ziwei_star",
+          "value": "三台",
+          "scope": {
+            "layer": "本命",
+            "palace": "财帛"
+          },
+          "derivedFrom": [
+            "palaces.adjective"
+          ]
+        },
+        {
+          "key": "ziwei_star",
+          "value": "台辅",
+          "scope": {
+            "layer": "本命",
+            "palace": "财帛"
+          },
+          "derivedFrom": [
+            "palaces.adjective"
+          ]
+        },
+        {
+          "key": "ziwei_star",
+          "value": "天哭",
+          "scope": {
+            "layer": "本命",
+            "palace": "财帛"
+          },
+          "derivedFrom": [
+            "palaces.adjective"
+          ]
+        },
+        {
+          "key": "ziwei_star",
+          "value": "天虚",
+          "scope": {
+            "layer": "本命",
+            "palace": "财帛"
+          },
+          "derivedFrom": [
+            "palaces.adjective"
+          ]
+        },
+        {
+          "key": "ziwei_palace",
+          "value": "疾厄",
+          "scope": {
+            "layer": "本命",
+            "palace": "疾厄"
+          },
+          "derivedFrom": [
+            "palaces.name"
+          ]
+        },
+        {
+          "key": "ziwei_star",
+          "value": "武曲",
+          "scope": {
+            "layer": "本命",
+            "palace": "疾厄"
+          },
+          "derivedFrom": [
+            "palaces.stars"
+          ]
+        },
+        {
+          "key": "ziwei_star",
+          "value": "贪狼",
+          "scope": {
+            "layer": "本命",
+            "palace": "疾厄"
+          },
+          "derivedFrom": [
+            "palaces.stars"
+          ]
+        },
+        {
+          "key": "ziwei_star",
+          "value": "天钺",
+          "scope": {
+            "layer": "本命",
+            "palace": "疾厄"
+          },
+          "derivedFrom": [
+            "palaces.minor"
+          ]
+        },
+        {
+          "key": "ziwei_star",
+          "value": "天官",
+          "scope": {
+            "layer": "本命",
+            "palace": "疾厄"
+          },
+          "derivedFrom": [
+            "palaces.adjective"
+          ]
+        },
+        {
+          "key": "ziwei_star",
+          "value": "天伤",
+          "scope": {
+            "layer": "本命",
+            "palace": "疾厄"
+          },
+          "derivedFrom": [
+            "palaces.adjective"
+          ]
+        },
+        {
+          "key": "sihua",
+          "value": "化科",
+          "scope": {
+            "layer": "本命",
+            "palace": "疾厄"
+          },
+          "derivedFrom": [
+            "palaces.hua"
+          ]
+        },
+        {
+          "key": "ziwei_palace",
+          "value": "迁移",
+          "scope": {
+            "layer": "本命",
+            "palace": "迁移"
+          },
+          "derivedFrom": [
+            "palaces.name"
+          ]
+        },
+        {
+          "key": "ziwei_star",
+          "value": "太阳",
+          "scope": {
+            "layer": "本命",
+            "palace": "迁移"
+          },
+          "derivedFrom": [
+            "palaces.stars"
+          ]
+        },
+        {
+          "key": "ziwei_star",
+          "value": "巨门",
+          "scope": {
+            "layer": "本命",
+            "palace": "迁移"
+          },
+          "derivedFrom": [
+            "palaces.stars"
+          ]
+        },
+        {
+          "key": "ziwei_star",
+          "value": "解神",
+          "scope": {
+            "layer": "本命",
+            "palace": "迁移"
+          },
+          "derivedFrom": [
+            "palaces.adjective"
+          ]
+        },
+        {
+          "key": "ziwei_star",
+          "value": "八座",
+          "scope": {
+            "layer": "本命",
+            "palace": "迁移"
+          },
+          "derivedFrom": [
+            "palaces.adjective"
+          ]
+        },
+        {
+          "key": "ziwei_star",
+          "value": "截路",
+          "scope": {
+            "layer": "本命",
+            "palace": "迁移"
+          },
+          "derivedFrom": [
+            "palaces.adjective"
+          ]
+        },
+        {
+          "key": "ziwei_star",
+          "value": "蜚廉",
+          "scope": {
+            "layer": "本命",
+            "palace": "迁移"
+          },
+          "derivedFrom": [
+            "palaces.adjective"
+          ]
+        },
+        {
+          "key": "sihua",
+          "value": "化忌",
+          "scope": {
+            "layer": "本命",
+            "palace": "迁移"
+          },
+          "derivedFrom": [
+            "palaces.hua"
+          ]
+        },
+        {
+          "key": "ziwei_palace",
+          "value": "交友",
+          "scope": {
+            "layer": "本命",
+            "palace": "交友"
+          },
+          "derivedFrom": [
+            "palaces.name"
+          ]
+        },
+        {
+          "key": "ziwei_star",
+          "value": "天相",
+          "scope": {
+            "layer": "本命",
+            "palace": "交友"
+          },
+          "derivedFrom": [
+            "palaces.stars"
+          ]
+        },
+        {
+          "key": "ziwei_star",
+          "value": "天喜",
+          "scope": {
+            "layer": "本命",
+            "palace": "交友"
+          },
+          "derivedFrom": [
+            "palaces.adjective"
+          ]
+        },
+        {
+          "key": "ziwei_star",
+          "value": "咸池",
+          "scope": {
+            "layer": "本命",
+            "palace": "交友"
+          },
+          "derivedFrom": [
+            "palaces.adjective"
+          ]
+        },
+        {
+          "key": "ziwei_star",
+          "value": "天福",
+          "scope": {
+            "layer": "本命",
+            "palace": "交友"
+          },
+          "derivedFrom": [
+            "palaces.adjective"
+          ]
+        },
+        {
+          "key": "ziwei_star",
+          "value": "天德",
+          "scope": {
+            "layer": "本命",
+            "palace": "交友"
+          },
+          "derivedFrom": [
+            "palaces.adjective"
+          ]
+        },
+        {
+          "key": "ziwei_star",
+          "value": "空亡",
+          "scope": {
+            "layer": "本命",
+            "palace": "交友"
+          },
+          "derivedFrom": [
+            "palaces.adjective"
+          ]
+        },
+        {
+          "key": "ziwei_star",
+          "value": "天刑",
+          "scope": {
+            "layer": "本命",
+            "palace": "交友"
+          },
+          "derivedFrom": [
+            "palaces.adjective"
+          ]
+        },
+        {
+          "key": "ziwei_star",
+          "value": "天使",
+          "scope": {
+            "layer": "本命",
+            "palace": "交友"
+          },
+          "derivedFrom": [
+            "palaces.adjective"
+          ]
+        },
+        {
+          "key": "ziwei_palace",
+          "value": "事业",
+          "scope": {
+            "layer": "本命",
+            "palace": "事业"
+          },
+          "derivedFrom": [
+            "palaces.name"
+          ]
+        },
+        {
+          "key": "ziwei_star",
+          "value": "天机",
+          "scope": {
+            "layer": "本命",
+            "palace": "事业"
+          },
+          "derivedFrom": [
+            "palaces.stars"
+          ]
+        },
+        {
+          "key": "ziwei_star",
+          "value": "天梁",
+          "scope": {
+            "layer": "本命",
+            "palace": "事业"
+          },
+          "derivedFrom": [
+            "palaces.stars"
+          ]
+        },
+        {
+          "key": "ziwei_star",
+          "value": "右弼",
+          "scope": {
+            "layer": "本命",
+            "palace": "事业"
+          },
+          "derivedFrom": [
+            "palaces.minor"
+          ]
+        },
+        {
+          "key": "ziwei_star",
+          "value": "文昌",
+          "scope": {
+            "layer": "本命",
+            "palace": "事业"
+          },
+          "derivedFrom": [
+            "palaces.minor"
+          ]
+        },
+        {
+          "key": "ziwei_star",
+          "value": "铃星",
+          "scope": {
+            "layer": "本命",
+            "palace": "事业"
+          },
+          "derivedFrom": [
+            "palaces.minor"
+          ]
+        },
+        {
+          "key": "ziwei_star",
+          "value": "凤阁",
+          "scope": {
+            "layer": "本命",
+            "palace": "事业"
+          },
+          "derivedFrom": [
+            "palaces.adjective"
+          ]
+        },
+        {
+          "key": "ziwei_star",
+          "value": "天月",
+          "scope": {
+            "layer": "本命",
+            "palace": "事业"
+          },
+          "derivedFrom": [
+            "palaces.adjective"
+          ]
+        },
+        {
+          "key": "ziwei_star",
+          "value": "旬空",
+          "scope": {
+            "layer": "本命",
+            "palace": "事业"
+          },
+          "derivedFrom": [
+            "palaces.adjective"
+          ]
+        },
+        {
+          "key": "ziwei_star",
+          "value": "寡宿",
+          "scope": {
+            "layer": "本命",
+            "palace": "事业"
+          },
+          "derivedFrom": [
+            "palaces.adjective"
+          ]
+        },
+        {
+          "key": "ziwei_star",
+          "value": "年解",
+          "scope": {
+            "layer": "本命",
+            "palace": "事业"
+          },
+          "derivedFrom": [
+            "palaces.adjective"
+          ]
+        },
+        {
+          "key": "ziwei_palace",
+          "value": "田宅",
+          "scope": {
+            "layer": "本命",
+            "palace": "田宅"
+          },
+          "derivedFrom": [
+            "palaces.name"
+          ]
+        },
+        {
+          "key": "ziwei_star",
+          "value": "紫微",
+          "scope": {
+            "layer": "本命",
+            "palace": "田宅"
+          },
+          "derivedFrom": [
+            "palaces.stars"
+          ]
+        },
+        {
+          "key": "ziwei_star",
+          "value": "七杀",
+          "scope": {
+            "layer": "本命",
+            "palace": "田宅"
+          },
+          "derivedFrom": [
+            "palaces.stars"
+          ]
+        },
+        {
+          "key": "ziwei_star",
+          "value": "地空",
+          "scope": {
+            "layer": "本命",
+            "palace": "田宅"
+          },
+          "derivedFrom": [
+            "palaces.minor"
+          ]
+        },
+        {
+          "key": "ziwei_star",
+          "value": "地劫",
+          "scope": {
+            "layer": "本命",
+            "palace": "田宅"
+          },
+          "derivedFrom": [
+            "palaces.minor"
+          ]
+        },
+        {
+          "key": "ziwei_star",
+          "value": "恩光",
+          "scope": {
+            "layer": "本命",
+            "palace": "田宅"
+          },
+          "derivedFrom": [
+            "palaces.adjective"
+          ]
+        },
+        {
+          "key": "ziwei_palace",
+          "value": "福德",
+          "scope": {
+            "layer": "本命",
+            "palace": "福德"
+          },
+          "derivedFrom": [
+            "palaces.name"
+          ]
+        },
+        {
+          "key": "ziwei_star",
+          "value": "空宫",
+          "scope": {
+            "layer": "本命",
+            "palace": "福德"
+          },
+          "derivedFrom": [
+            "palaces.stars"
+          ]
+        },
+        {
+          "key": "ziwei_palace",
+          "value": "父母",
+          "scope": {
+            "layer": "本命",
+            "palace": "父母"
+          },
+          "derivedFrom": [
+            "palaces.name"
+          ]
+        },
+        {
+          "key": "ziwei_star",
+          "value": "空宫",
+          "scope": {
+            "layer": "本命",
+            "palace": "父母"
+          },
+          "derivedFrom": [
+            "palaces.stars"
+          ]
+        },
+        {
+          "key": "ziwei_star",
+          "value": "天魁",
+          "scope": {
+            "layer": "本命",
+            "palace": "父母"
+          },
+          "derivedFrom": [
+            "palaces.minor"
+          ]
+        },
+        {
+          "key": "ziwei_star",
+          "value": "陀罗",
+          "scope": {
+            "layer": "本命",
+            "palace": "父母"
+          },
+          "derivedFrom": [
+            "palaces.minor"
+          ]
+        },
+        {
+          "key": "ziwei_star",
+          "value": "天姚",
+          "scope": {
+            "layer": "本命",
+            "palace": "父母"
+          },
+          "derivedFrom": [
+            "palaces.adjective"
+          ]
+        },
+        {
+          "key": "ziwei_star",
+          "value": "天空",
+          "scope": {
+            "layer": "本命",
+            "palace": "父母"
+          },
+          "derivedFrom": [
+            "palaces.adjective"
+          ]
+        },
+        {
+          "key": "daxian",
+          "value": "命宫 6–15",
+          "scope": {
+            "layer": "本命",
+            "palace": "命宫"
+          },
+          "derivedFrom": [
+            "decadal"
+          ]
+        },
+        {
+          "key": "daxian",
+          "value": "兄弟 116–125",
+          "scope": {
+            "layer": "本命",
+            "palace": "兄弟"
+          },
+          "derivedFrom": [
+            "decadal"
+          ]
+        },
+        {
+          "key": "daxian",
+          "value": "夫妻 106–115",
+          "scope": {
+            "layer": "本命",
+            "palace": "夫妻"
+          },
+          "derivedFrom": [
+            "decadal"
+          ]
+        },
+        {
+          "key": "daxian",
+          "value": "子女 96–105",
+          "scope": {
+            "layer": "本命",
+            "palace": "子女"
+          },
+          "derivedFrom": [
+            "decadal"
+          ]
+        },
+        {
+          "key": "daxian",
+          "value": "财帛 86–95",
+          "scope": {
+            "layer": "本命",
+            "palace": "财帛"
+          },
+          "derivedFrom": [
+            "decadal"
+          ]
+        },
+        {
+          "key": "daxian",
+          "value": "疾厄 76–85",
+          "scope": {
+            "layer": "本命",
+            "palace": "疾厄"
+          },
+          "derivedFrom": [
+            "decadal"
+          ]
+        },
+        {
+          "key": "daxian",
+          "value": "迁移 66–75",
+          "scope": {
+            "layer": "本命",
+            "palace": "迁移"
+          },
+          "derivedFrom": [
+            "decadal"
+          ]
+        },
+        {
+          "key": "daxian",
+          "value": "交友 56–65",
+          "scope": {
+            "layer": "本命",
+            "palace": "交友"
+          },
+          "derivedFrom": [
+            "decadal"
+          ]
+        },
+        {
+          "key": "daxian",
+          "value": "事业 46–55",
+          "scope": {
+            "layer": "本命",
+            "palace": "事业"
+          },
+          "derivedFrom": [
+            "decadal"
+          ]
+        },
+        {
+          "key": "daxian",
+          "value": "田宅 36–45",
+          "scope": {
+            "layer": "大运",
+            "palace": "田宅"
+          },
+          "derivedFrom": [
+            "decadal"
+          ]
+        },
+        {
+          "key": "daxian",
+          "value": "福德 26–35",
+          "scope": {
+            "layer": "本命",
+            "palace": "福德"
+          },
+          "derivedFrom": [
+            "decadal"
+          ]
+        },
+        {
+          "key": "daxian",
+          "value": "父母 16–25",
+          "scope": {
+            "layer": "本命",
+            "palace": "父母"
+          },
+          "derivedFrom": [
+            "decadal"
+          ]
+        }
+      ]
+    }
+  },
+  "qimen": {
+    "caseA": {
+      "label": "甲 1990-08-15 13:20 男 上海",
+      "facts": [
+        {
+          "key": "jiuxing",
+          "value": "天英",
+          "scope": {
+            "layer": "本命",
+            "gong": 4,
+            "palace": "四宫 巽"
+          },
+          "derivedFrom": [
+            "grid.star"
+          ]
+        },
+        {
+          "key": "bamen",
+          "value": "惊门",
+          "scope": {
+            "layer": "本命",
+            "gong": 4,
+            "palace": "四宫 巽"
+          },
+          "derivedFrom": [
+            "grid.door"
+          ]
+        },
+        {
+          "key": "bashen",
+          "value": "太阴",
+          "scope": {
+            "layer": "本命",
+            "gong": 4,
+            "palace": "四宫 巽"
+          },
+          "derivedFrom": [
+            "grid.god"
+          ]
+        },
+        {
+          "key": "jiuxing",
+          "value": "天芮",
+          "scope": {
+            "layer": "本命",
+            "gong": 9,
+            "palace": "九宫 离"
+          },
+          "derivedFrom": [
+            "grid.star"
+          ]
+        },
+        {
+          "key": "bamen",
+          "value": "开门",
+          "scope": {
+            "layer": "本命",
+            "gong": 9,
+            "palace": "九宫 离"
+          },
+          "derivedFrom": [
+            "grid.door"
+          ]
+        },
+        {
+          "key": "bashen",
+          "value": "腾蛇",
+          "scope": {
+            "layer": "本命",
+            "gong": 9,
+            "palace": "九宫 离"
+          },
+          "derivedFrom": [
+            "grid.god"
+          ]
+        },
+        {
+          "key": "jiuxing",
+          "value": "天柱",
+          "scope": {
+            "layer": "本命",
+            "gong": 2,
+            "palace": "二宫 坤"
+          },
+          "derivedFrom": [
+            "grid.star"
+          ]
+        },
+        {
+          "key": "bamen",
+          "value": "休门",
+          "scope": {
+            "layer": "本命",
+            "gong": 2,
+            "palace": "二宫 坤"
+          },
+          "derivedFrom": [
+            "grid.door"
+          ]
+        },
+        {
+          "key": "bashen",
+          "value": "值符",
+          "scope": {
+            "layer": "本命",
+            "gong": 2,
+            "palace": "二宫 坤"
+          },
+          "derivedFrom": [
+            "grid.god"
+          ]
+        },
+        {
+          "key": "jiuxing",
+          "value": "天辅",
+          "scope": {
+            "layer": "本命",
+            "gong": 3,
+            "palace": "三宫 震"
+          },
+          "derivedFrom": [
+            "grid.star"
+          ]
+        },
+        {
+          "key": "bamen",
+          "value": "死门",
+          "scope": {
+            "layer": "本命",
+            "gong": 3,
+            "palace": "三宫 震"
+          },
+          "derivedFrom": [
+            "grid.door"
+          ]
+        },
+        {
+          "key": "bashen",
+          "value": "六合",
+          "scope": {
+            "layer": "本命",
+            "gong": 3,
+            "palace": "三宫 震"
+          },
+          "derivedFrom": [
+            "grid.god"
+          ]
+        },
+        {
+          "key": "jiuxing",
+          "value": "天禽",
+          "scope": {
+            "layer": "本命",
+            "gong": 5,
+            "palace": "五宫 中"
+          },
+          "derivedFrom": [
+            "grid.star"
+          ]
+        },
+        {
+          "key": "bashen",
+          "value": "值符",
+          "scope": {
+            "layer": "本命",
+            "gong": 5,
+            "palace": "五宫 中"
+          },
+          "derivedFrom": [
+            "grid.god"
+          ]
+        },
+        {
+          "key": "jiuxing",
+          "value": "天心",
+          "scope": {
+            "layer": "本命",
+            "gong": 7,
+            "palace": "七宫 兑"
+          },
+          "derivedFrom": [
+            "grid.star"
+          ]
+        },
+        {
+          "key": "bamen",
+          "value": "生门",
+          "scope": {
+            "layer": "本命",
+            "gong": 7,
+            "palace": "七宫 兑"
+          },
+          "derivedFrom": [
+            "grid.door"
+          ]
+        },
+        {
+          "key": "bashen",
+          "value": "九天",
+          "scope": {
+            "layer": "本命",
+            "gong": 7,
+            "palace": "七宫 兑"
+          },
+          "derivedFrom": [
+            "grid.god"
+          ]
+        },
+        {
+          "key": "jiuxing",
+          "value": "天冲",
+          "scope": {
+            "layer": "本命",
+            "gong": 8,
+            "palace": "八宫 艮"
+          },
+          "derivedFrom": [
+            "grid.star"
+          ]
+        },
+        {
+          "key": "bamen",
+          "value": "景门",
+          "scope": {
+            "layer": "本命",
+            "gong": 8,
+            "palace": "八宫 艮"
+          },
+          "derivedFrom": [
+            "grid.door"
+          ]
+        },
+        {
+          "key": "bashen",
+          "value": "白虎",
+          "scope": {
+            "layer": "本命",
+            "gong": 8,
+            "palace": "八宫 艮"
+          },
+          "derivedFrom": [
+            "grid.god"
+          ]
+        },
+        {
+          "key": "jiuxing",
+          "value": "天任",
+          "scope": {
+            "layer": "本命",
+            "gong": 1,
+            "palace": "一宫 坎"
+          },
+          "derivedFrom": [
+            "grid.star"
+          ]
+        },
+        {
+          "key": "bamen",
+          "value": "杜门",
+          "scope": {
+            "layer": "本命",
+            "gong": 1,
+            "palace": "一宫 坎"
+          },
+          "derivedFrom": [
+            "grid.door"
+          ]
+        },
+        {
+          "key": "bashen",
+          "value": "玄武",
+          "scope": {
+            "layer": "本命",
+            "gong": 1,
+            "palace": "一宫 坎"
+          },
+          "derivedFrom": [
+            "grid.god"
+          ]
+        },
+        {
+          "key": "jiuxing",
+          "value": "天蓬",
+          "scope": {
+            "layer": "本命",
+            "gong": 6,
+            "palace": "六宫 乾"
+          },
+          "derivedFrom": [
+            "grid.star"
+          ]
+        },
+        {
+          "key": "bamen",
+          "value": "伤门",
+          "scope": {
+            "layer": "本命",
+            "gong": 6,
+            "palace": "六宫 乾"
+          },
+          "derivedFrom": [
+            "grid.door"
+          ]
+        },
+        {
+          "key": "bashen",
+          "value": "九地",
+          "scope": {
+            "layer": "本命",
+            "gong": 6,
+            "palace": "六宫 乾"
+          },
+          "derivedFrom": [
+            "grid.god"
+          ]
+        },
+        {
+          "key": "zhifu",
+          "value": "天柱",
+          "scope": {
+            "layer": "本命"
+          },
+          "derivedFrom": [
+            "meta.值符"
+          ]
+        },
+        {
+          "key": "zhishi",
+          "value": "惊门",
+          "scope": {
+            "layer": "本命"
+          },
+          "derivedFrom": [
+            "meta.值使"
+          ]
+        },
+        {
+          "key": "geju_qimen",
+          "value": "门迫",
+          "scope": {
+            "layer": "本命"
+          },
+          "derivedFrom": [
+            "patterns"
+          ]
+        },
+        {
+          "key": "kongwang",
+          "value": "寅",
+          "scope": {
+            "layer": "本命"
+          },
+          "derivedFrom": [
+            "meta.空亡"
+          ]
+        },
+        {
+          "key": "kongwang",
+          "value": "卯",
+          "scope": {
+            "layer": "本命"
+          },
+          "derivedFrom": [
+            "meta.空亡"
+          ]
+        }
+      ]
+    },
+    "caseB": {
+      "label": "乙 1984-02-04 23:40 女 上海",
+      "facts": [
+        {
+          "key": "jiuxing",
+          "value": "天辅",
+          "scope": {
+            "layer": "本命",
+            "gong": 4,
+            "palace": "四宫 巽"
+          },
+          "derivedFrom": [
+            "grid.star"
+          ]
+        },
+        {
+          "key": "bamen",
+          "value": "杜门",
+          "scope": {
+            "layer": "本命",
+            "gong": 4,
+            "palace": "四宫 巽"
+          },
+          "derivedFrom": [
+            "grid.door"
+          ]
+        },
+        {
+          "key": "bashen",
+          "value": "九地",
+          "scope": {
+            "layer": "本命",
+            "gong": 4,
+            "palace": "四宫 巽"
+          },
+          "derivedFrom": [
+            "grid.god"
+          ]
+        },
+        {
+          "key": "jiuxing",
+          "value": "天英",
+          "scope": {
+            "layer": "本命",
+            "gong": 9,
+            "palace": "九宫 离"
+          },
+          "derivedFrom": [
+            "grid.star"
+          ]
+        },
+        {
+          "key": "bamen",
+          "value": "景门",
+          "scope": {
+            "layer": "本命",
+            "gong": 9,
+            "palace": "九宫 离"
+          },
+          "derivedFrom": [
+            "grid.door"
+          ]
+        },
+        {
+          "key": "bashen",
+          "value": "九天",
+          "scope": {
+            "layer": "本命",
+            "gong": 9,
+            "palace": "九宫 离"
+          },
+          "derivedFrom": [
+            "grid.god"
+          ]
+        },
+        {
+          "key": "jiuxing",
+          "value": "天芮",
+          "scope": {
+            "layer": "本命",
+            "gong": 2,
+            "palace": "二宫 坤"
+          },
+          "derivedFrom": [
+            "grid.star"
+          ]
+        },
+        {
+          "key": "bamen",
+          "value": "死门",
+          "scope": {
+            "layer": "本命",
+            "gong": 2,
+            "palace": "二宫 坤"
+          },
+          "derivedFrom": [
+            "grid.door"
+          ]
+        },
+        {
+          "key": "bashen",
+          "value": "值符",
+          "scope": {
+            "layer": "本命",
+            "gong": 2,
+            "palace": "二宫 坤"
+          },
+          "derivedFrom": [
+            "grid.god"
+          ]
+        },
+        {
+          "key": "jiuxing",
+          "value": "天冲",
+          "scope": {
+            "layer": "本命",
+            "gong": 3,
+            "palace": "三宫 震"
+          },
+          "derivedFrom": [
+            "grid.star"
+          ]
+        },
+        {
+          "key": "bamen",
+          "value": "伤门",
+          "scope": {
+            "layer": "本命",
+            "gong": 3,
+            "palace": "三宫 震"
+          },
+          "derivedFrom": [
+            "grid.door"
+          ]
+        },
+        {
+          "key": "bashen",
+          "value": "玄武",
+          "scope": {
+            "layer": "本命",
+            "gong": 3,
+            "palace": "三宫 震"
+          },
+          "derivedFrom": [
+            "grid.god"
+          ]
+        },
+        {
+          "key": "jiuxing",
+          "value": "天禽",
+          "scope": {
+            "layer": "本命",
+            "gong": 5,
+            "palace": "五宫 中"
+          },
+          "derivedFrom": [
+            "grid.star"
+          ]
+        },
+        {
+          "key": "bashen",
+          "value": "值符",
+          "scope": {
+            "layer": "本命",
+            "gong": 5,
+            "palace": "五宫 中"
+          },
+          "derivedFrom": [
+            "grid.god"
+          ]
+        },
+        {
+          "key": "jiuxing",
+          "value": "天柱",
+          "scope": {
+            "layer": "本命",
+            "gong": 7,
+            "palace": "七宫 兑"
+          },
+          "derivedFrom": [
+            "grid.star"
+          ]
+        },
+        {
+          "key": "bamen",
+          "value": "惊门",
+          "scope": {
+            "layer": "本命",
+            "gong": 7,
+            "palace": "七宫 兑"
+          },
+          "derivedFrom": [
+            "grid.door"
+          ]
+        },
+        {
+          "key": "bashen",
+          "value": "腾蛇",
+          "scope": {
+            "layer": "本命",
+            "gong": 7,
+            "palace": "七宫 兑"
+          },
+          "derivedFrom": [
+            "grid.god"
+          ]
+        },
+        {
+          "key": "jiuxing",
+          "value": "天任",
+          "scope": {
+            "layer": "本命",
+            "gong": 8,
+            "palace": "八宫 艮"
+          },
+          "derivedFrom": [
+            "grid.star"
+          ]
+        },
+        {
+          "key": "bamen",
+          "value": "生门",
+          "scope": {
+            "layer": "本命",
+            "gong": 8,
+            "palace": "八宫 艮"
+          },
+          "derivedFrom": [
+            "grid.door"
+          ]
+        },
+        {
+          "key": "bashen",
+          "value": "白虎",
+          "scope": {
+            "layer": "本命",
+            "gong": 8,
+            "palace": "八宫 艮"
+          },
+          "derivedFrom": [
+            "grid.god"
+          ]
+        },
+        {
+          "key": "jiuxing",
+          "value": "天蓬",
+          "scope": {
+            "layer": "本命",
+            "gong": 1,
+            "palace": "一宫 坎"
+          },
+          "derivedFrom": [
+            "grid.star"
+          ]
+        },
+        {
+          "key": "bamen",
+          "value": "休门",
+          "scope": {
+            "layer": "本命",
+            "gong": 1,
+            "palace": "一宫 坎"
+          },
+          "derivedFrom": [
+            "grid.door"
+          ]
+        },
+        {
+          "key": "bashen",
+          "value": "六合",
+          "scope": {
+            "layer": "本命",
+            "gong": 1,
+            "palace": "一宫 坎"
+          },
+          "derivedFrom": [
+            "grid.god"
+          ]
+        },
+        {
+          "key": "jiuxing",
+          "value": "天心",
+          "scope": {
+            "layer": "本命",
+            "gong": 6,
+            "palace": "六宫 乾"
+          },
+          "derivedFrom": [
+            "grid.star"
+          ]
+        },
+        {
+          "key": "bamen",
+          "value": "开门",
+          "scope": {
+            "layer": "本命",
+            "gong": 6,
+            "palace": "六宫 乾"
+          },
+          "derivedFrom": [
+            "grid.door"
+          ]
+        },
+        {
+          "key": "bashen",
+          "value": "太阴",
+          "scope": {
+            "layer": "本命",
+            "gong": 6,
+            "palace": "六宫 乾"
+          },
+          "derivedFrom": [
+            "grid.god"
+          ]
+        },
+        {
+          "key": "zhifu",
+          "value": "天芮",
+          "scope": {
+            "layer": "本命"
+          },
+          "derivedFrom": [
+            "meta.值符"
+          ]
+        },
+        {
+          "key": "zhishi",
+          "value": "死门",
+          "scope": {
+            "layer": "本命"
+          },
+          "derivedFrom": [
+            "meta.值使"
+          ]
+        },
+        {
+          "key": "geju_qimen",
+          "value": "本局无显格",
+          "scope": {
+            "layer": "本命"
+          },
+          "derivedFrom": [
+            "patterns"
+          ]
+        },
+        {
+          "key": "kongwang",
+          "value": "戌",
+          "scope": {
+            "layer": "本命"
+          },
+          "derivedFrom": [
+            "meta.空亡"
+          ]
+        },
+        {
+          "key": "kongwang",
+          "value": "亥",
+          "scope": {
+            "layer": "本命"
+          },
+          "derivedFrom": [
+            "meta.空亡"
+          ]
+        }
+      ]
+    }
+  },
+  "liuren": {
+    "caseA": {
+      "label": "甲 1990-08-15 13:20 男 上海",
+      "facts": [
+        {
+          "key": "keti",
+          "value": "涉害课",
+          "scope": {
+            "layer": "本命"
+          },
+          "derivedFrom": [
+            "meta.课体"
+          ]
+        },
+        {
+          "key": "sanchuan",
+          "value": "初传",
+          "scope": {
+            "layer": "本命"
+          },
+          "derivedFrom": [
+            "chuan.初传",
+            "戌"
+          ]
+        },
+        {
+          "key": "tianjiang",
+          "value": "白虎",
+          "scope": {
+            "layer": "本命"
+          },
+          "derivedFrom": [
+            "chuan.初传.god"
+          ]
+        },
+        {
+          "key": "sanchuan",
+          "value": "中传",
+          "scope": {
+            "layer": "本命"
+          },
+          "derivedFrom": [
+            "chuan.中传",
+            "酉"
+          ]
+        },
+        {
+          "key": "tianjiang",
+          "value": "天空",
+          "scope": {
+            "layer": "本命"
+          },
+          "derivedFrom": [
+            "chuan.中传.god"
+          ]
+        },
+        {
+          "key": "sanchuan",
+          "value": "末传",
+          "scope": {
+            "layer": "本命"
+          },
+          "derivedFrom": [
+            "chuan.末传",
+            "申"
+          ]
+        },
+        {
+          "key": "tianjiang",
+          "value": "青龙",
+          "scope": {
+            "layer": "本命"
+          },
+          "derivedFrom": [
+            "chuan.末传.god"
+          ]
+        },
+        {
+          "key": "tianjiang",
+          "value": "太常",
+          "scope": {
+            "layer": "本命"
+          },
+          "derivedFrom": [
+            "ring.god"
+          ]
+        },
+        {
+          "key": "tianjiang",
+          "value": "玄武",
+          "scope": {
+            "layer": "本命"
+          },
+          "derivedFrom": [
+            "ring.god"
+          ]
+        },
+        {
+          "key": "tianjiang",
+          "value": "太阴",
+          "scope": {
+            "layer": "本命"
+          },
+          "derivedFrom": [
+            "ring.god"
+          ]
+        },
+        {
+          "key": "tianjiang",
+          "value": "天后",
+          "scope": {
+            "layer": "本命"
+          },
+          "derivedFrom": [
+            "ring.god"
+          ]
+        },
+        {
+          "key": "tianjiang",
+          "value": "贵人",
+          "scope": {
+            "layer": "本命"
+          },
+          "derivedFrom": [
+            "ring.god"
+          ]
+        },
+        {
+          "key": "tianjiang",
+          "value": "腾蛇",
+          "scope": {
+            "layer": "本命"
+          },
+          "derivedFrom": [
+            "ring.god"
+          ]
+        },
+        {
+          "key": "tianjiang",
+          "value": "朱雀",
+          "scope": {
+            "layer": "本命"
+          },
+          "derivedFrom": [
+            "ring.god"
+          ]
+        },
+        {
+          "key": "tianjiang",
+          "value": "六合",
+          "scope": {
+            "layer": "本命"
+          },
+          "derivedFrom": [
+            "ring.god"
+          ]
+        },
+        {
+          "key": "tianjiang",
+          "value": "勾陈",
+          "scope": {
+            "layer": "本命"
+          },
+          "derivedFrom": [
+            "ring.god"
+          ]
+        },
+        {
+          "key": "yuejiang",
+          "value": "午",
+          "scope": {
+            "layer": "本命"
+          },
+          "derivedFrom": [
+            "meta.月将"
+          ]
+        },
+        {
+          "key": "kongwang",
+          "value": "寅",
+          "scope": {
+            "layer": "本命"
+          },
+          "derivedFrom": [
+            "meta.空亡"
+          ]
+        },
+        {
+          "key": "kongwang",
+          "value": "卯",
+          "scope": {
+            "layer": "本命"
+          },
+          "derivedFrom": [
+            "meta.空亡"
+          ]
+        }
+      ]
+    },
+    "caseB": {
+      "label": "乙 1984-02-04 23:40 女 上海",
+      "facts": [
+        {
+          "key": "keti",
+          "value": "伏吟课",
+          "scope": {
+            "layer": "本命"
+          },
+          "derivedFrom": [
+            "meta.课体"
+          ]
+        },
+        {
+          "key": "sanchuan",
+          "value": "初传",
+          "scope": {
+            "layer": "本命"
+          },
+          "derivedFrom": [
+            "chuan.初传",
+            "巳"
+          ]
+        },
+        {
+          "key": "tianjiang",
+          "value": "六合",
+          "scope": {
+            "layer": "本命"
+          },
+          "derivedFrom": [
+            "chuan.初传.god"
+          ]
+        },
+        {
+          "key": "sanchuan",
+          "value": "中传",
+          "scope": {
+            "layer": "本命"
+          },
+          "derivedFrom": [
+            "chuan.中传",
+            "申"
+          ]
+        },
+        {
+          "key": "tianjiang",
+          "value": "贵人",
+          "scope": {
+            "layer": "本命"
+          },
+          "derivedFrom": [
+            "chuan.中传.god"
+          ]
+        },
+        {
+          "key": "sanchuan",
+          "value": "末传",
+          "scope": {
+            "layer": "本命"
+          },
+          "derivedFrom": [
+            "chuan.末传",
+            "寅"
+          ]
+        },
+        {
+          "key": "tianjiang",
+          "value": "天空",
+          "scope": {
+            "layer": "本命"
+          },
+          "derivedFrom": [
+            "chuan.末传.god"
+          ]
+        },
+        {
+          "key": "tianjiang",
+          "value": "太常",
+          "scope": {
+            "layer": "本命"
+          },
+          "derivedFrom": [
+            "ring.god"
+          ]
+        },
+        {
+          "key": "tianjiang",
+          "value": "白虎",
+          "scope": {
+            "layer": "本命"
+          },
+          "derivedFrom": [
+            "ring.god"
+          ]
+        },
+        {
+          "key": "tianjiang",
+          "value": "青龙",
+          "scope": {
+            "layer": "本命"
+          },
+          "derivedFrom": [
+            "ring.god"
+          ]
+        },
+        {
+          "key": "tianjiang",
+          "value": "勾陈",
+          "scope": {
+            "layer": "本命"
+          },
+          "derivedFrom": [
+            "ring.god"
+          ]
+        },
+        {
+          "key": "tianjiang",
+          "value": "朱雀",
+          "scope": {
+            "layer": "本命"
+          },
+          "derivedFrom": [
+            "ring.god"
+          ]
+        },
+        {
+          "key": "tianjiang",
+          "value": "腾蛇",
+          "scope": {
+            "layer": "本命"
+          },
+          "derivedFrom": [
+            "ring.god"
+          ]
+        },
+        {
+          "key": "tianjiang",
+          "value": "天后",
+          "scope": {
+            "layer": "本命"
+          },
+          "derivedFrom": [
+            "ring.god"
+          ]
+        },
+        {
+          "key": "tianjiang",
+          "value": "太阴",
+          "scope": {
+            "layer": "本命"
+          },
+          "derivedFrom": [
+            "ring.god"
+          ]
+        },
+        {
+          "key": "tianjiang",
+          "value": "玄武",
+          "scope": {
+            "layer": "本命"
+          },
+          "derivedFrom": [
+            "ring.god"
+          ]
+        },
+        {
+          "key": "yuejiang",
+          "value": "子",
+          "scope": {
+            "layer": "本命"
+          },
+          "derivedFrom": [
+            "meta.月将"
+          ]
+        },
+        {
+          "key": "kongwang",
+          "value": "戌",
+          "scope": {
+            "layer": "本命"
+          },
+          "derivedFrom": [
+            "meta.空亡"
+          ]
+        },
+        {
+          "key": "kongwang",
+          "value": "亥",
+          "scope": {
+            "layer": "本命"
+          },
+          "derivedFrom": [
+            "meta.空亡"
+          ]
+        }
+      ]
+    }
+  },
+  "liuyao": {
+    "caseA": {
+      "label": "乾宫本宫安静 111111 · 甲 1990-08-15",
+      "facts": [
+        {
+          "key": "liuqin",
+          "value": "子孙",
+          "scope": {
+            "layer": "本命",
+            "yao": 1
+          },
+          "derivedFrom": [
+            "rows.relative"
+          ]
+        },
+        {
+          "key": "liushen",
+          "value": "玄武",
+          "scope": {
+            "layer": "本命",
+            "yao": 1
+          },
+          "derivedFrom": [
+            "rows.spirit"
+          ]
+        },
+        {
+          "key": "liuqin",
+          "value": "妻财",
+          "scope": {
+            "layer": "本命",
+            "yao": 2
+          },
+          "derivedFrom": [
+            "rows.relative"
+          ]
+        },
+        {
+          "key": "liushen",
+          "value": "青龙",
+          "scope": {
+            "layer": "本命",
+            "yao": 2
+          },
+          "derivedFrom": [
+            "rows.spirit"
+          ]
+        },
+        {
+          "key": "liuqin",
+          "value": "父母",
+          "scope": {
+            "layer": "本命",
+            "yao": 3
+          },
+          "derivedFrom": [
+            "rows.relative"
+          ]
+        },
+        {
+          "key": "liushen",
+          "value": "朱雀",
+          "scope": {
+            "layer": "本命",
+            "yao": 3
+          },
+          "derivedFrom": [
+            "rows.spirit"
+          ]
+        },
+        {
+          "key": "yingyao",
+          "value": "三爻",
+          "scope": {
+            "layer": "本命",
+            "yao": 3
+          },
+          "derivedFrom": [
+            "rows.mark"
+          ]
+        },
+        {
+          "key": "liuqin",
+          "value": "官鬼",
+          "scope": {
+            "layer": "本命",
+            "yao": 4
+          },
+          "derivedFrom": [
+            "rows.relative"
+          ]
+        },
+        {
+          "key": "liushen",
+          "value": "勾陈",
+          "scope": {
+            "layer": "本命",
+            "yao": 4
+          },
+          "derivedFrom": [
+            "rows.spirit"
+          ]
+        },
+        {
+          "key": "liuqin",
+          "value": "兄弟",
+          "scope": {
+            "layer": "本命",
+            "yao": 5
+          },
+          "derivedFrom": [
+            "rows.relative"
+          ]
+        },
+        {
+          "key": "liushen",
+          "value": "腾蛇",
+          "scope": {
+            "layer": "本命",
+            "yao": 5
+          },
+          "derivedFrom": [
+            "rows.spirit"
+          ]
+        },
+        {
+          "key": "liuqin",
+          "value": "父母",
+          "scope": {
+            "layer": "本命",
+            "yao": 6
+          },
+          "derivedFrom": [
+            "rows.relative"
+          ]
+        },
+        {
+          "key": "liushen",
+          "value": "白虎",
+          "scope": {
+            "layer": "本命",
+            "yao": 6
+          },
+          "derivedFrom": [
+            "rows.spirit"
+          ]
+        },
+        {
+          "key": "shiyao",
+          "value": "六爻",
+          "scope": {
+            "layer": "本命",
+            "yao": 6
+          },
+          "derivedFrom": [
+            "rows.mark"
+          ]
+        }
+      ]
+    },
+    "caseB": {
+      "label": "地天泰初爻动 111000 · 乙 1984-02-04",
+      "facts": [
+        {
+          "key": "liuqin",
+          "value": "妻财",
+          "scope": {
+            "layer": "本命",
+            "yao": 1
+          },
+          "derivedFrom": [
+            "rows.relative"
+          ]
+        },
+        {
+          "key": "liushen",
+          "value": "勾陈",
+          "scope": {
+            "layer": "本命",
+            "yao": 1
+          },
+          "derivedFrom": [
+            "rows.spirit"
+          ]
+        },
+        {
+          "key": "dongyao",
+          "value": "初爻",
+          "scope": {
+            "layer": "本命",
+            "yao": 1
+          },
+          "derivedFrom": [
+            "rows.moving"
+          ]
+        },
+        {
+          "key": "liuqin",
+          "value": "官鬼",
+          "scope": {
+            "layer": "本命",
+            "yao": 2
+          },
+          "derivedFrom": [
+            "rows.relative"
+          ]
+        },
+        {
+          "key": "liushen",
+          "value": "腾蛇",
+          "scope": {
+            "layer": "本命",
+            "yao": 2
+          },
+          "derivedFrom": [
+            "rows.spirit"
+          ]
+        },
+        {
+          "key": "fushen",
+          "value": "父母",
+          "scope": {
+            "layer": "本命",
+            "yao": 2
+          },
+          "derivedFrom": [
+            "rows.hidden"
+          ]
+        },
+        {
+          "key": "liuqin",
+          "value": "兄弟",
+          "scope": {
+            "layer": "本命",
+            "yao": 3
+          },
+          "derivedFrom": [
+            "rows.relative"
+          ]
+        },
+        {
+          "key": "liushen",
+          "value": "白虎",
+          "scope": {
+            "layer": "本命",
+            "yao": 3
+          },
+          "derivedFrom": [
+            "rows.spirit"
+          ]
+        },
+        {
+          "key": "shiyao",
+          "value": "三爻",
+          "scope": {
+            "layer": "本命",
+            "yao": 3
+          },
+          "derivedFrom": [
+            "rows.mark"
+          ]
+        },
+        {
+          "key": "liuqin",
+          "value": "兄弟",
+          "scope": {
+            "layer": "本命",
+            "yao": 4
+          },
+          "derivedFrom": [
+            "rows.relative"
+          ]
+        },
+        {
+          "key": "liushen",
+          "value": "玄武",
+          "scope": {
+            "layer": "本命",
+            "yao": 4
+          },
+          "derivedFrom": [
+            "rows.spirit"
+          ]
+        },
+        {
+          "key": "liuqin",
+          "value": "妻财",
+          "scope": {
+            "layer": "本命",
+            "yao": 5
+          },
+          "derivedFrom": [
+            "rows.relative"
+          ]
+        },
+        {
+          "key": "liushen",
+          "value": "青龙",
+          "scope": {
+            "layer": "本命",
+            "yao": 5
+          },
+          "derivedFrom": [
+            "rows.spirit"
+          ]
+        },
+        {
+          "key": "liuqin",
+          "value": "子孙",
+          "scope": {
+            "layer": "本命",
+            "yao": 6
+          },
+          "derivedFrom": [
+            "rows.relative"
+          ]
+        },
+        {
+          "key": "liushen",
+          "value": "朱雀",
+          "scope": {
+            "layer": "本命",
+            "yao": 6
+          },
+          "derivedFrom": [
+            "rows.spirit"
+          ]
+        },
+        {
+          "key": "yingyao",
+          "value": "六爻",
+          "scope": {
+            "layer": "本命",
+            "yao": 6
+          },
+          "derivedFrom": [
+            "rows.mark"
+          ]
+        }
+      ]
+    }
+  },
+  "qizheng": {
+    "caseA": {
+      "label": "甲 1990-08-15 13:20 男 上海",
+      "facts": [
+        {
+          "key": "xingyao",
+          "value": "太阴",
+          "scope": {
+            "layer": "本命",
+            "palace": "双子"
+          },
+          "derivedFrom": [
+            "stars.name"
+          ]
+        },
+        {
+          "key": "gongwei",
+          "value": "双子",
+          "scope": {
+            "layer": "本命",
+            "palace": "双子"
+          },
+          "derivedFrom": [
+            "stars.palace"
+          ]
+        },
+        {
+          "key": "xiudu",
+          "value": "毕",
+          "scope": {
+            "layer": "本命",
+            "palace": "双子"
+          },
+          "derivedFrom": [
+            "stars.mansion"
+          ]
+        },
+        {
+          "key": "miaowang",
+          "value": "平宫",
+          "scope": {
+            "layer": "本命",
+            "palace": "双子"
+          },
+          "derivedFrom": [
+            "stars.dignity"
+          ]
+        },
+        {
+          "key": "xingyao",
+          "value": "太阳",
+          "scope": {
+            "layer": "本命",
+            "palace": "狮子"
+          },
+          "derivedFrom": [
+            "stars.name"
+          ]
+        },
+        {
+          "key": "gongwei",
+          "value": "狮子",
+          "scope": {
+            "layer": "本命",
+            "palace": "狮子"
+          },
+          "derivedFrom": [
+            "stars.palace"
+          ]
+        },
+        {
+          "key": "xiudu",
+          "value": "星",
+          "scope": {
+            "layer": "本命",
+            "palace": "狮子"
+          },
+          "derivedFrom": [
+            "stars.mansion"
+          ]
+        },
+        {
+          "key": "miaowang",
+          "value": "入庙得地",
+          "scope": {
+            "layer": "本命",
+            "palace": "狮子"
+          },
+          "derivedFrom": [
+            "stars.dignity"
+          ]
+        },
+        {
+          "key": "xingyao",
+          "value": "水星",
+          "scope": {
+            "layer": "本命",
+            "palace": "处女"
+          },
+          "derivedFrom": [
+            "stars.name"
+          ]
+        },
+        {
+          "key": "gongwei",
+          "value": "处女",
+          "scope": {
+            "layer": "本命",
+            "palace": "处女"
+          },
+          "derivedFrom": [
+            "stars.palace"
+          ]
+        },
+        {
+          "key": "xiudu",
+          "value": "翼",
+          "scope": {
+            "layer": "本命",
+            "palace": "处女"
+          },
+          "derivedFrom": [
+            "stars.mansion"
+          ]
+        },
+        {
+          "key": "miaowang",
+          "value": "入庙得地",
+          "scope": {
+            "layer": "本命",
+            "palace": "处女"
+          },
+          "derivedFrom": [
+            "stars.dignity"
+          ]
+        },
+        {
+          "key": "xingyao",
+          "value": "金星",
+          "scope": {
+            "layer": "本命",
+            "palace": "狮子"
+          },
+          "derivedFrom": [
+            "stars.name"
+          ]
+        },
+        {
+          "key": "xiudu",
+          "value": "鬼",
+          "scope": {
+            "layer": "本命",
+            "palace": "狮子"
+          },
+          "derivedFrom": [
+            "stars.mansion"
+          ]
+        },
+        {
+          "key": "miaowang",
+          "value": "平宫",
+          "scope": {
+            "layer": "本命",
+            "palace": "狮子"
+          },
+          "derivedFrom": [
+            "stars.dignity"
+          ]
+        },
+        {
+          "key": "xingyao",
+          "value": "火星",
+          "scope": {
+            "layer": "本命",
+            "palace": "金牛"
+          },
+          "derivedFrom": [
+            "stars.name"
+          ]
+        },
+        {
+          "key": "gongwei",
+          "value": "金牛",
+          "scope": {
+            "layer": "本命",
+            "palace": "金牛"
+          },
+          "derivedFrom": [
+            "stars.palace"
+          ]
+        },
+        {
+          "key": "xiudu",
+          "value": "胃",
+          "scope": {
+            "layer": "本命",
+            "palace": "金牛"
+          },
+          "derivedFrom": [
+            "stars.mansion"
+          ]
+        },
+        {
+          "key": "miaowang",
+          "value": "落陷失地",
+          "scope": {
+            "layer": "本命",
+            "palace": "金牛"
+          },
+          "derivedFrom": [
+            "stars.dignity"
+          ]
+        },
+        {
+          "key": "xingyao",
+          "value": "木星",
+          "scope": {
+            "layer": "本命",
+            "palace": "巨蟹"
+          },
+          "derivedFrom": [
+            "stars.name"
+          ]
+        },
+        {
+          "key": "gongwei",
+          "value": "巨蟹",
+          "scope": {
+            "layer": "本命",
+            "palace": "巨蟹"
+          },
+          "derivedFrom": [
+            "stars.palace"
+          ]
+        },
+        {
+          "key": "xiudu",
+          "value": "鬼",
+          "scope": {
+            "layer": "本命",
+            "palace": "巨蟹"
+          },
+          "derivedFrom": [
+            "stars.mansion"
+          ]
+        },
+        {
+          "key": "miaowang",
+          "value": "平宫",
+          "scope": {
+            "layer": "本命",
+            "palace": "巨蟹"
+          },
+          "derivedFrom": [
+            "stars.dignity"
+          ]
+        },
+        {
+          "key": "xingyao",
+          "value": "土星",
+          "scope": {
+            "layer": "本命",
+            "palace": "摩羯"
+          },
+          "derivedFrom": [
+            "stars.name"
+          ]
+        },
+        {
+          "key": "gongwei",
+          "value": "摩羯",
+          "scope": {
+            "layer": "本命",
+            "palace": "摩羯"
+          },
+          "derivedFrom": [
+            "stars.palace"
+          ]
+        },
+        {
+          "key": "xiudu",
+          "value": "斗",
+          "scope": {
+            "layer": "本命",
+            "palace": "摩羯"
+          },
+          "derivedFrom": [
+            "stars.mansion"
+          ]
+        },
+        {
+          "key": "miaowang",
+          "value": "入庙得地",
+          "scope": {
+            "layer": "本命",
+            "palace": "摩羯"
+          },
+          "derivedFrom": [
+            "stars.dignity"
+          ]
+        },
+        {
+          "key": "xingyao",
+          "value": "罗睺",
+          "scope": {
+            "layer": "本命",
+            "palace": "宝瓶"
+          },
+          "derivedFrom": [
+            "stars.name"
+          ]
+        },
+        {
+          "key": "gongwei",
+          "value": "宝瓶",
+          "scope": {
+            "layer": "本命",
+            "palace": "宝瓶"
+          },
+          "derivedFrom": [
+            "stars.palace"
+          ]
+        },
+        {
+          "key": "xiudu",
+          "value": "牛",
+          "scope": {
+            "layer": "本命",
+            "palace": "宝瓶"
+          },
+          "derivedFrom": [
+            "stars.mansion"
+          ]
+        },
+        {
+          "key": "xingyao",
+          "value": "计都",
+          "scope": {
+            "layer": "本命",
+            "palace": "狮子"
+          },
+          "derivedFrom": [
+            "stars.name"
+          ]
+        },
+        {
+          "key": "xiudu",
+          "value": "柳",
+          "scope": {
+            "layer": "本命",
+            "palace": "狮子"
+          },
+          "derivedFrom": [
+            "stars.mansion"
+          ]
+        },
+        {
+          "key": "xingyao",
+          "value": "月孛",
+          "scope": {
+            "layer": "本命",
+            "palace": "人马"
+          },
+          "derivedFrom": [
+            "stars.name"
+          ]
+        },
+        {
+          "key": "gongwei",
+          "value": "人马",
+          "scope": {
+            "layer": "本命",
+            "palace": "人马"
+          },
+          "derivedFrom": [
+            "stars.palace"
+          ]
+        },
+        {
+          "key": "xiudu",
+          "value": "房",
+          "scope": {
+            "layer": "本命",
+            "palace": "人马"
+          },
+          "derivedFrom": [
+            "stars.mansion"
+          ]
+        },
+        {
+          "key": "xingyao",
+          "value": "紫气",
+          "scope": {
+            "layer": "本命",
+            "palace": "双鱼"
+          },
+          "derivedFrom": [
+            "stars.name"
+          ]
+        },
+        {
+          "key": "gongwei",
+          "value": "双鱼",
+          "scope": {
+            "layer": "本命",
+            "palace": "双鱼"
+          },
+          "derivedFrom": [
+            "stars.palace"
+          ]
+        },
+        {
+          "key": "xiudu",
+          "value": "室",
+          "scope": {
+            "layer": "本命",
+            "palace": "双鱼"
+          },
+          "derivedFrom": [
+            "stars.mansion"
+          ]
+        },
+        {
+          "key": "gongwei",
+          "value": "白羊",
+          "scope": {
+            "layer": "本命",
+            "palace": "白羊"
+          },
+          "derivedFrom": [
+            "palaces.name"
+          ]
+        },
+        {
+          "key": "gongwei",
+          "value": "天秤",
+          "scope": {
+            "layer": "本命",
+            "palace": "天秤"
+          },
+          "derivedFrom": [
+            "palaces.name"
+          ]
+        },
+        {
+          "key": "gongwei",
+          "value": "天蝎",
+          "scope": {
+            "layer": "本命",
+            "palace": "天蝎"
+          },
+          "derivedFrom": [
+            "palaces.name"
+          ]
+        }
+      ]
+    },
+    "caseB": {
+      "label": "乙 1984-02-04 23:40 女 上海",
+      "facts": [
+        {
+          "key": "xingyao",
+          "value": "太阴",
+          "scope": {
+            "layer": "本命",
+            "palace": "双鱼"
+          },
+          "derivedFrom": [
+            "stars.name"
+          ]
+        },
+        {
+          "key": "gongwei",
+          "value": "双鱼",
+          "scope": {
+            "layer": "本命",
+            "palace": "双鱼"
+          },
+          "derivedFrom": [
+            "stars.palace"
+          ]
+        },
+        {
+          "key": "xiudu",
+          "value": "室",
+          "scope": {
+            "layer": "本命",
+            "palace": "双鱼"
+          },
+          "derivedFrom": [
+            "stars.mansion"
+          ]
+        },
+        {
+          "key": "miaowang",
+          "value": "平宫",
+          "scope": {
+            "layer": "本命",
+            "palace": "双鱼"
+          },
+          "derivedFrom": [
+            "stars.dignity"
+          ]
+        },
+        {
+          "key": "xingyao",
+          "value": "太阳",
+          "scope": {
+            "layer": "本命",
+            "palace": "宝瓶"
+          },
+          "derivedFrom": [
+            "stars.name"
+          ]
+        },
+        {
+          "key": "gongwei",
+          "value": "宝瓶",
+          "scope": {
+            "layer": "本命",
+            "palace": "宝瓶"
+          },
+          "derivedFrom": [
+            "stars.palace"
+          ]
+        },
+        {
+          "key": "xiudu",
+          "value": "女",
+          "scope": {
+            "layer": "本命",
+            "palace": "宝瓶"
+          },
+          "derivedFrom": [
+            "stars.mansion"
+          ]
+        },
+        {
+          "key": "miaowang",
+          "value": "落陷失地",
+          "scope": {
+            "layer": "本命",
+            "palace": "宝瓶"
+          },
+          "derivedFrom": [
+            "stars.dignity"
+          ]
+        },
+        {
+          "key": "xingyao",
+          "value": "水星",
+          "scope": {
+            "layer": "本命",
+            "palace": "摩羯"
+          },
+          "derivedFrom": [
+            "stars.name"
+          ]
+        },
+        {
+          "key": "gongwei",
+          "value": "摩羯",
+          "scope": {
+            "layer": "本命",
+            "palace": "摩羯"
+          },
+          "derivedFrom": [
+            "stars.palace"
+          ]
+        },
+        {
+          "key": "xiudu",
+          "value": "斗",
+          "scope": {
+            "layer": "本命",
+            "palace": "摩羯"
+          },
+          "derivedFrom": [
+            "stars.mansion"
+          ]
+        },
+        {
+          "key": "miaowang",
+          "value": "平宫",
+          "scope": {
+            "layer": "本命",
+            "palace": "摩羯"
+          },
+          "derivedFrom": [
+            "stars.dignity"
+          ]
+        },
+        {
+          "key": "xingyao",
+          "value": "金星",
+          "scope": {
+            "layer": "本命",
+            "palace": "摩羯"
+          },
+          "derivedFrom": [
+            "stars.name"
+          ]
+        },
+        {
+          "key": "xingyao",
+          "value": "火星",
+          "scope": {
+            "layer": "本命",
+            "palace": "天蝎"
+          },
+          "derivedFrom": [
+            "stars.name"
+          ]
+        },
+        {
+          "key": "gongwei",
+          "value": "天蝎",
+          "scope": {
+            "layer": "本命",
+            "palace": "天蝎"
+          },
+          "derivedFrom": [
+            "stars.palace"
+          ]
+        },
+        {
+          "key": "xiudu",
+          "value": "亢",
+          "scope": {
+            "layer": "本命",
+            "palace": "天蝎"
+          },
+          "derivedFrom": [
+            "stars.mansion"
+          ]
+        },
+        {
+          "key": "miaowang",
+          "value": "入庙得地",
+          "scope": {
+            "layer": "本命",
+            "palace": "天蝎"
+          },
+          "derivedFrom": [
+            "stars.dignity"
+          ]
+        },
+        {
+          "key": "xingyao",
+          "value": "木星",
+          "scope": {
+            "layer": "本命",
+            "palace": "摩羯"
+          },
+          "derivedFrom": [
+            "stars.name"
+          ]
+        },
+        {
+          "key": "xiudu",
+          "value": "箕",
+          "scope": {
+            "layer": "本命",
+            "palace": "摩羯"
+          },
+          "derivedFrom": [
+            "stars.mansion"
+          ]
+        },
+        {
+          "key": "xingyao",
+          "value": "土星",
+          "scope": {
+            "layer": "本命",
+            "palace": "天蝎"
+          },
+          "derivedFrom": [
+            "stars.name"
+          ]
+        },
+        {
+          "key": "xiudu",
+          "value": "氐",
+          "scope": {
+            "layer": "本命",
+            "palace": "天蝎"
+          },
+          "derivedFrom": [
+            "stars.mansion"
+          ]
+        },
+        {
+          "key": "miaowang",
+          "value": "平宫",
+          "scope": {
+            "layer": "本命",
+            "palace": "天蝎"
+          },
+          "derivedFrom": [
+            "stars.dignity"
+          ]
+        },
+        {
+          "key": "xingyao",
+          "value": "罗睺",
+          "scope": {
+            "layer": "本命",
+            "palace": "双子"
+          },
+          "derivedFrom": [
+            "stars.name"
+          ]
+        },
+        {
+          "key": "gongwei",
+          "value": "双子",
+          "scope": {
+            "layer": "本命",
+            "palace": "双子"
+          },
+          "derivedFrom": [
+            "stars.palace"
+          ]
+        },
+        {
+          "key": "xiudu",
+          "value": "毕",
+          "scope": {
+            "layer": "本命",
+            "palace": "双子"
+          },
+          "derivedFrom": [
+            "stars.mansion"
+          ]
+        },
+        {
+          "key": "xingyao",
+          "value": "计都",
+          "scope": {
+            "layer": "本命",
+            "palace": "人马"
+          },
+          "derivedFrom": [
+            "stars.name"
+          ]
+        },
+        {
+          "key": "gongwei",
+          "value": "人马",
+          "scope": {
+            "layer": "本命",
+            "palace": "人马"
+          },
+          "derivedFrom": [
+            "stars.palace"
+          ]
+        },
+        {
+          "key": "xiudu",
+          "value": "心",
+          "scope": {
+            "layer": "本命",
+            "palace": "人马"
+          },
+          "derivedFrom": [
+            "stars.mansion"
+          ]
+        },
+        {
+          "key": "xingyao",
+          "value": "月孛",
+          "scope": {
+            "layer": "本命",
+            "palace": "双鱼"
+          },
+          "derivedFrom": [
+            "stars.name"
+          ]
+        },
+        {
+          "key": "xiudu",
+          "value": "危",
+          "scope": {
+            "layer": "本命",
+            "palace": "双鱼"
+          },
+          "derivedFrom": [
+            "stars.mansion"
+          ]
+        },
+        {
+          "key": "xingyao",
+          "value": "紫气",
+          "scope": {
+            "layer": "本命",
+            "palace": "人马"
+          },
+          "derivedFrom": [
+            "stars.name"
+          ]
+        },
+        {
+          "key": "xiudu",
+          "value": "尾",
+          "scope": {
+            "layer": "本命",
+            "palace": "人马"
+          },
+          "derivedFrom": [
+            "stars.mansion"
+          ]
+        },
+        {
+          "key": "gongwei",
+          "value": "白羊",
+          "scope": {
+            "layer": "本命",
+            "palace": "白羊"
+          },
+          "derivedFrom": [
+            "palaces.name"
+          ]
+        },
+        {
+          "key": "gongwei",
+          "value": "金牛",
+          "scope": {
+            "layer": "本命",
+            "palace": "金牛"
+          },
+          "derivedFrom": [
+            "palaces.name"
+          ]
+        },
+        {
+          "key": "gongwei",
+          "value": "巨蟹",
+          "scope": {
+            "layer": "本命",
+            "palace": "巨蟹"
+          },
+          "derivedFrom": [
+            "palaces.name"
+          ]
+        },
+        {
+          "key": "gongwei",
+          "value": "狮子",
+          "scope": {
+            "layer": "本命",
+            "palace": "狮子"
+          },
+          "derivedFrom": [
+            "palaces.name"
+          ]
+        },
+        {
+          "key": "gongwei",
+          "value": "处女",
+          "scope": {
+            "layer": "本命",
+            "palace": "处女"
+          },
+          "derivedFrom": [
+            "palaces.name"
+          ]
+        },
+        {
+          "key": "gongwei",
+          "value": "天秤",
+          "scope": {
+            "layer": "本命",
+            "palace": "天秤"
+          },
+          "derivedFrom": [
+            "palaces.name"
+          ]
+        }
+      ]
+    }
+  }
+}
