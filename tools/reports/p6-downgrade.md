@@ -1,6 +1,6 @@
 # P6 任务 5 降级/扩行记录
 
-P7 恢复 34 条，原因：P6 繁简表缺陷。本表原有 33 行已删；`physiognomy/liuzhuang-xiangfa` 的 `LZ` 不在本表中（P5 锚点仍按名单从 `0abcf1e` 取回）。
+P7 恢复 33 条，原因：P6 繁简表缺陷。`physiognomy/liuzhuang-xiangfa` 的 `LZ` 曾被名单误列，quote 是 source_base 元数据，已撤回为 `anchor: null`。
 
 扩行 10，短句降级 46，低对应度降级 252（P7 已从本表去掉误杀行）。灰区 0.15–0.30 未动 258 条。
 

@@ -2,10 +2,11 @@
 
 定位不到原文或不支持结论的规则保持 `anchor: null`。无锚点是安全降级；错锚点不可接受。
 
-共 462 条（P6 计数；P7 已恢复 34 条误杀，另将 `LIURENMIBEN-020` 降级，未重扫全表）。
+共 462 条（P6 计数；P7 恢复 33 条误杀，另将 `LIURENMIBEN-020` 降级，并撤回误列的 `LZ`，未重扫全表）。
 
 | book | rule_id | reason | quote 摘录 |
 |---|---|---|---|
+| `physiognomy/liuzhuang-xiangfa` | `LZ` | quote 是 source_base 元数据，P7 恢复名单误列，已撤回 | source_base: CTP《柳庄相法》Wiki 文本页抽取… |
 | `san-shi/liuren-miben` | `LIURENMIBEN-020` | P7：CTP 出处声明（`>` 辑录行），非正文断辞 | > 清·金正音 辑录。CTP URN：ctp:wb348173… |
 | `bazi/ditiansui-chanwei` | `DITIANSUICHA-009` | 对应度<0.15，引文不能支持结论 | 五阳皆阳丙为最，五阴皆阴癸为至。 |
 | `bazi/ditiansui-chanwei` | `DITIANSUICHA-DR-02` | 对应度<0.15，引文不能支持结论 | 合有宜不宜，合多不为奇。 |

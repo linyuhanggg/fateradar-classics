@@ -38,21 +38,20 @@ P7 未追覆盖率。重测最低 art 仍是 qimen 35.0%，向下取整 35。`.g
 ## 3. P7 做了什么
 
 1. **繁简表**：`fold_han()` 不再用 52 对 `SCRIPT_PAIRS`。本机 `python3 -c "from zhconv import convert"` 失败（未装 zhconv，PEP 668 不能 pip）。按任务书回退到已装的 `opencc` t2s。`SCRIPT_PAIRS` / V11 未改。自检 `fold_han('相衝者')=='相冲者'`、`correspondence('冲破六冲', …) >= 0.3` 通过（实测 0.333）。
-2. **恢复 34 条**：从 `0abcf1e` 原样取回 `anchor`（quote 与 P5 已一致，未改字）。`FZ` 仍为 `anchor: null`。V5 34 条全过。
-3. **V13**：增补 `>` 前缀；署名动词扩到 `撰|輯|編|著|辑录|輯錄`。`LIURENMIBEN-020` 找不到正文断辞，`anchor: null`，记入 `tools/reports/unanchorable.md`。`test-validate-gates.py` 增加 reverse5。第三节自检输出 0 条。
+2. **恢复 33 条**：从 `0abcf1e` 原样取回 `anchor`（quote 与 P5 已一致，未改字）。`FZ` 仍为 `anchor: null`。原名单第 34 条 `LZ`（`physiognomy/liuzhuang-xiangfa`）quote 是 `source_base:` 元数据，名单误列，已撤回为 `anchor: null`。
+3. **V13**：增补 `>` 前缀；署名正则收紧为朝代 + 2–6 个连续汉字人名 + `撰|輯|編|著述|辑录|輯錄`（不再用 `\S{0,12}`，避免把「清濁…著三才」判成署名）。`META_QUOTE_RE` 已覆盖 `raw_file|section_note|source_base`。`LIURENMIBEN-020` 找不到正文断辞，`anchor: null`。`test-validate-gates.py` 有 reverse5。
 
-## 4. 校验器（如实，含未过项）
+## 4. 校验器（实测）
 
+- `python3 tools/validate-rules.py`：exit 0。`OK  55 file(s), 114 warning(s)`，**errors 0**。warnings：V11 = 112，V14 = 2（`FEIXINGZIWEI-008` 0.140、`ZIWEIDOUSHUQ-ZW-05` 0.106）。V12 = 0，V13 = 0。
 - `python3 tools/test-validate-gates.py`：reverse1–5 ALL GATES OK。
-- `python3 tools/validate-rules.py`：**未过零错误**。`ok False`，**2 个 V13 ERROR**：
-  - `LZ`（`physiognomy/liuzhuang-xiangfa`）：按名单恢复后 quote 仍是 `source_base: …`，V13 判 pack 元数据。未改 quote、未再降级。
-  - `LZ-01-01`（`luming-nayin/luoluzi-sanming`）：署名判据扩到「著」后误伤「清濁…著三才」。不在允许改锚名单里，未动锚点。
-- warnings：V11 = 112，V14 = 2（`FEIXINGZIWEI-008` 0.140、`ZIWEIDOUSHUQ-ZW-05` 0.106）。V12 = 0。
-- V1–V12 判据字符串相对 P6 零删除。
+- `python3 tools/coverage-report.py`：六术与上一份相同（LZ 是相法，不进产品）——bazi 77.0% / ziwei 67.3% / qimen 35.0% / liuren 54.8% / liuyao 70.2% / qizheng 56.2%。
+- `python3 tools/export-rules.py`：`exported=688 == anchored_exportable`。
+- V1–V12 判据字符串与 `SCRIPT_PAIRS` 未改。
 
 ## 5. 无法锚定与人审
 
-`tools/reports/unanchorable.md` 仍以 P6 的 462 为底，P7 只追加 `LIURENMIBEN-020`，未重扫全表。`qimen-faqiao` QM-P26、QM-P36 未碰。灰区未动。详见 `tools/reports/needs-human-review.md`。
+`tools/reports/unanchorable.md` 仍以 P6 的 462 为底，P7 追加 `LIURENMIBEN-020`，并记入撤回的 `LZ`（原因：quote 是 source_base 元数据，P7 恢复名单误列，已撤回），未重扫全表。`qimen-faqiao` QM-P26、QM-P36 未碰。灰区未动。详见 `tools/reports/needs-human-review.md`。
 
 ## 6. 校勘声明
 

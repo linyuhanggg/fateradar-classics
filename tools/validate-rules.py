@@ -118,7 +118,7 @@ def han_count(text: str) -> int:
 
 HEADING_QUOTE_RE = re.compile(r"^#{1,6}(?:\s|$)")
 META_QUOTE_RE = re.compile(r"(?m)^(?:-\s*)?(raw_file|section_note|source_base)\s*:")
-ATTRIB_QUOTE_RE = re.compile(r"(?:唐|宋|元|明|清)\s*\S{0,12}\s*(?:撰|輯|編|著|辑录|輯錄)")
+ATTRIB_QUOTE_RE = re.compile(r"(?:唐|宋|元|明|清)[·\s]*[一-鿿]{2,6}\s*(?:撰|輯|編|著述|辑录|輯錄)")
 JUDOU_RE = re.compile(r"[。！？；!?]")
 T2S_TABLE = str.maketrans({t: s for t, s in SCRIPT_PAIRS if len(t) == 1 and len(s) == 1})
 

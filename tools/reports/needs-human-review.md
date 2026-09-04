@@ -27,12 +27,12 @@ statement 含「安全改写 / reframe / 不替代 / 并读 / 调用本 pack」�
 - `divination/huangji-jingshi` HR-01 元会运世换算、HUANGJIJINGS-007/020/021「非占断 / 非国运 / 非个人命术」
 - `xingming/xingming-suyuan` 卷四后篇案例总述
 
-## P7 恢复名单与校验冲突
+## P7 恢复名单
 
-`docs/tasks/P7_QUALITY_FIX.md` 要求从 `0abcf1e` 原样恢复 34 条。已全部恢复，`FZ` 仍为 `anchor: null`。
+从 `0abcf1e` 恢复 33 条（原名单 34 条里 `LZ` 已撤回）。`FZ` 仍为 `anchor: null`。
 
-- `LZ`（`physiognomy/liuzhuang-xiangfa`）quote 是 `source_base: CTP《柳庄相法》…`，V13 判为 pack 元数据。按名单恢复后 `validate-rules.py` 对这条报 V13 ERROR。未改 quote、未再降级（不在第三节允许改动的 `LIURENMIBEN-020` 之内）。
-- `FEIXINGZIWEI-008` 对应度 0.140、`ZIWEIDOUSHUQ-ZW-05` 对应度 0.106，V14 WARN。任务书给的「正确对应度」分别是 0.15 / 0.16；本机 `fold_han` 用 opencc t2s（无 zhconv），未改 quote、未再降级。
+- `LZ`（`physiognomy/liuzhuang-xiangfa`）quote 是 `source_base:` 元数据，P7 恢复名单误列，已改回 `anchor: null`。
+- `FEIXINGZIWEI-008` 对应度 0.140、`ZIWEIDOUSHUQ-ZW-05` 对应度 0.106，V14 WARN。本机 `fold_han` 用 opencc t2s（无 zhconv），未改 quote、未再降级。
 
 ## P6 灰区（对应度 0.15–0.30）
 
