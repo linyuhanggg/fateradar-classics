@@ -4,7 +4,7 @@
 
 **全部规则 `verified` 仍为 `false`，未经人工比对影印件，不得对外宣称「古籍已校勘」。**
 
-任务书：仓库内 [`docs/tasks/P7_QUALITY_FIX.md`](docs/tasks/P7_QUALITY_FIX.md)、[`docs/tasks/P9_PREDICATES.md`](docs/tasks/P9_PREDICATES.md)。
+任务书：仓库内 [`docs/tasks/P7_QUALITY_FIX.md`](docs/tasks/P7_QUALITY_FIX.md)、[`docs/tasks/P9_PREDICATES.md`](docs/tasks/P9_PREDICATES.md)、[`docs/tasks/P10_CORPUS_AND_ENGINE.md`](docs/tasks/P10_CORPUS_AND_ENGINE.md)。
 
 ## 1. 六术锚点覆盖率与导出条数
 
@@ -122,3 +122,72 @@ P7 时 remote 为 `a5b8ac9`。本节写本机 HEAD；remote 以交付时 `git ls
 任务书只允许动 `scripts/dump-facts.ts`、`tests/rules/predicate-matching.test.ts`、`src/lib/rules/generated/*.json`。
 
 **G8 不接 catalog 无法成立**：开工前只有 `bazi.ts` 读 generated JSON；`qimen.ts` 导出空数组，`matchRules` 走空池返回 `[]`；ziwei/liuyao/liuren/qizheng 仍用硬编码旧条目，读不到 P9 谓词。因此按 `bazi.ts` 模式改了这五个 catalog。另将 `LR-04-02`/`LR-04-03` 的全量天将列表收成 `tianjiang: "*"`，否则两盘 top-6 被 score 24/22 压成同一集合，两盘差异断言失败。未改 `matcher.ts`、引擎、`vocab.ts`、两个 `fact-vocab.json`。未提交 `evidence-panel.tsx` / `package.json` / `tsconfig.json`。
+
+## 8. P10 语料分流、词表与奇门重锚
+
+日期：2026-09-05。任务书：[`docs/tasks/P10_CORPUS_AND_ENGINE.md`](docs/tasks/P10_CORPUS_AND_ENGINE.md)。
+写本节前古籍仓 `git rev-parse HEAD` → `4c432db4ae61e40bfd88fcaf69f9b2244c17dc2a`（`fix: 奇门重锚 24 条`）。本节提交之后以当时 `git rev-parse HEAD` 为准，产品仓 `CLASSICS_REV` 钉那次 SHA。
+
+**全部规则 `verified` 仍为 `false`，不得对外宣称「古籍已校勘」。**
+
+### 8.1 art 归类
+
+`divination/` 七本拆开：黄金策 / 火珠林 / 增删卜易 / 卜筮正宗 → `liuyao`；梅花易数 → `meihua`；周易折中 / 皇极经世 → `yili`。`meihua`/`yili` 照常导出，产品仓不 import、不进 `catalog.ts`、不扩 `ArtKey`。覆盖率与谓词门禁只对六个产品 art。
+
+| art | P9 规则 | P9 锚点 | P9 锚点覆盖 | P10 规则 | P10 锚点 | P10 锚点覆盖 |
+|---|---:|---:|---:|---:|---:|---:|
+| bazi | 522 | 402 | 77.0% | 522 | 402 | 77.0% |
+| ziwei | 104 | 70 | 67.3% | 104 | 70 | 67.3% |
+| qimen | 40 | 14 | 35.0% | 40 | 38 | 95.0% |
+| liuren | 62 | 34 | 54.8% | 62 | 34 | 54.8% |
+| liuyao | 168 | 118 | 70.2% | 82 | 56 | 68.3% |
+| qizheng | 89 | 50 | 56.2% | 89 | 50 | 56.2% |
+| meihua（参考，非门禁） | — | — | — | 34 | 31 | 91.2% |
+| yili（参考，非门禁） | — | — | — | 52 | 31 | 59.6% |
+
+liuyao「降」是分类纠正：梅花/周易/皇极共 62 条带锚规则本不是六爻，从检索池移出，避免梅花体用出现在六爻证据面板。真六爻四本带锚 56、有谓词 21 不变，谓词覆盖 17.8% → 37.5%。六产品 art 锚点数 626→650（P9 含未分流六爻与 14 条奇门；P10 奇门重锚后 doctrine 38，六术 399+70+38+34+56+50=647 条 doctrine + bazi 3 条 procedure）。`python3 tools/export-rules.py`：`exported=712 == anchored_exportable`（含 meihua 31 + yili 31）。
+
+锚点门禁：六个产品 art 最低 liuren 54.8%，向下取整 54。`.github/workflows/validate-rules.yml` 改为 `--fail-under 54`。`python3 tools/coverage-report.py --fail-under 54` PASS。
+
+### 8.2 FactKey
+
+任务书 3a 要加 `qizheng_geju` / `xingxian`。按 3c：引擎必须从已有排盘结果取；`buildQizheng` 只有星曜宫位宿度庙旺，没有格局名或行限字段。未加这两个 key，约 35 条七政未映射仍空。详见 `tools/reports/needs-human-review.md`。
+
+实际新增 / 改产出：
+
+- `liunian_taisui`：十二地支。`emitZiweiFacts` 用 `momentFacts` + `new Date()` 取当前年柱地支，未改 `ziwei.ts`。
+- `daxian`：emit 改为当前大限宫位名（`decadal.accent` 的 `palace`）。词表保持开放数组，未关成十二宫——关闭会让拷贝前 generated JSON 里旧「宫名 N–M」谓词无法通过 `isLegalFactValue`。
+- 两处 `fact-vocab.json` `cmp` 一致。
+
+谓词：ziwei 补 7 条（有谓词 47→54，覆盖 77.1%）。七政 35 条因无 key 未映射，谓词覆盖仍 22.0%。
+
+`python3 tools/predicate-report.py --max-wildcard 15 --check-open-values --check-art-keys`：三道 PASS。qimen 有谓词仍 7 条，锚点 14→38 后谓词覆盖 50.0%→18.4%，未用 `*` 凑数。
+
+### 8.3 奇门重锚
+
+`qimen-dunjia-tongzhi` P6 因「短句无句读」降级的 24 条，在 fulltext「奇门四十格」各有唯一整行，quote 本就等于该行，只补 `anchor`（与已锚的 QM-P19/P20 同款）。`qimen-faqiao` QM-P26、QM-P36 未碰。该书 38 条全锚；qimen art 仍无锚 2 条（faqiao）。
+
+### 8.4 产品仓工程债
+
+- 类型检查：`package.json` 增加 `"typecheck": "tsc --noEmit"`，30 个 `exactOptionalPropertyTypes` 报错清零。`bun run typecheck` exit 0。
+- matcher：零命中由 `pool.slice(0, 2)` 改为 `[]`。`evidence-panel.tsx` 已有 `hits.length === 0` 返回 null，未再改该文件。空证据面板是正确行为，不是回归。
+
+### 8.5 本机提交（写本节前 `git log` 回读）
+
+古籍仓 `feat/p3-p4-machine-readable`：
+
+- `0c084b0` feat: 谓词报告增加 art-key 兼容门禁
+- `374e01d` refactor: 梅花与义理类从六爻 art 分出，六爻只留真六爻四本
+- `24c40f5` feat: 词表新增七政格局/行限与紫微大限宫位、流年太岁
+- `d61df5e` feat: ziwei 补谓词 7 条
+- `4c432db` fix: 奇门重锚 24 条
+
+产品仓 `feat/structured-facts`（写本节前 HEAD `57ceebc1ecc60b6f48ca97b1d204b087fb3ce13c`）：
+
+- `2e22c91` fix: 出处链接钉到古籍仓 commit，证据面板分级展示，夹具收归仓内
+- `e76fc72` chore: 打开类型检查并清零既存报错
+- `0596cdf` feat: 词表新增七政格局/行限与紫微大限宫位、流年太岁
+- `df4cd50` data: 刷新 facts 样本含大限宫位与流年太岁
+- `57ceebc` fix: 检索零命中时不再返回兜底条目
+
+未开 PR、未合 main、未 force push。
