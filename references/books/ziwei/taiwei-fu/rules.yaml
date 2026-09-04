@@ -30,7 +30,9 @@ rules:
     start_line: 6
     end_line: 6
   quote: 其星分布一十二垣，數定乎三十六位，入廟為奇，失度為虛，大抵以身命為福德之本，加以根源為窮通之資。
-  applicable_to: []
+  applicable_to: 
+  - key: ziwei_palace
+    value: 福德
   caveats:
   - 入庙/失度的具体配位需查《紫微斗数全书》卷二
   school: null
@@ -45,7 +47,9 @@ rules:
     start_line: 15
     end_line: 15
   quote: 祿逢沖破，吉處藏凶。馬遇空亡，終身奔走。
-  applicable_to: []
+  applicable_to: 
+  - key: ziwei_star
+    value: 禄存
   caveats:
   - 现代教学保留为"吉中藏忧"参考，不作绝对凶论
   school: null
@@ -60,7 +64,9 @@ rules:
     start_line: 15
     end_line: 15
   quote: 祿逢沖破，吉處藏凶。馬遇空亡，終身奔走。
-  applicable_to: []
+  applicable_to: 
+  - key: ziwei_star
+    value: 天马
   caveats:
   - 现代解读为漂泊倾向，不作绝对断语
   school: null
@@ -106,7 +112,11 @@ rules:
     start_line: 20
     end_line: 20
   quote: 紫微天府全依輔弼之功，七殺破軍專依羊鈴之虐。
-  applicable_to: []
+  applicable_to: 
+  - key: ziwei_star
+    value: 紫微
+  - key: ziwei_star
+    value: 天府
   caveats:
   - 须辅弼真夹（紧夹）方为上品
   - 隔宫效力减半
@@ -138,7 +148,9 @@ rules:
     start_line: 36
     end_line: 36
   quote: 貪居亥子，名為犯水桃花。刑遇貪狼，號曰風流彩杖。
-  applicable_to: []
+  applicable_to: 
+  - key: ziwei_star
+    value: 贪狼
   caveats:
   - '"至淫"古文价值观需 reframe 为"情感繁复倾向"，不作道德定性'
   school: null
@@ -168,7 +180,9 @@ rules:
     start_line: 32
     end_line: 32
   quote: 太陽居午，謂之日麗中天，有專權之貴，敵國之富。
-  applicable_to: []
+  applicable_to: 
+  - key: ziwei_star
+    value: 太阳
   caveats:
   - 现代为富贵倾向参考，不作铁口断富
   school: null
@@ -183,7 +197,9 @@ rules:
     start_line: 33
     end_line: 33
   quote: 太陰居子，號曰水澄桂萼，得清要之職，忠諫之材。
-  applicable_to: []
+  applicable_to: 
+  - key: ziwei_star
+    value: 太阴
   caveats:
   - 现代为清贵职业倾向参考
   school: null
@@ -198,7 +214,13 @@ rules:
     start_line: 40
     end_line: 40
   quote: 太陽會文昌於官祿，皇殿朝班，富貴全美。
-  applicable_to: []
+  applicable_to: 
+  - key: ziwei_star
+    value: 太阳
+  - key: ziwei_star
+    value: 文昌
+  - key: ziwei_palace
+    value: 事业
   caveats:
   - 现代为学业仕途倾向
   school: null
@@ -213,7 +235,13 @@ rules:
     start_line: 41
     end_line: 41
   quote: 太陰會文曲於妻宮，蟾宮折桂，文章全盛。
-  applicable_to: []
+  applicable_to: 
+  - key: ziwei_star
+    value: 太阴
+  - key: ziwei_star
+    value: 文曲
+  - key: ziwei_palace
+    value: 夫妻
   caveats:
   - 现代为文艺才情倾向
   school: null
@@ -228,7 +256,9 @@ rules:
     start_line: 38
     end_line: 38
   quote: 祿居奴僕縱有官也奔馳，帝遇凶徒雖獲吉而無道。
-  applicable_to: []
+  applicable_to: 
+  - key: ziwei_palace
+    value: 交友
   caveats:
   - 现代解读为为他人作嫁倾向，不作仕途铁断
   school: null
@@ -243,7 +273,13 @@ rules:
     start_line: 37
     end_line: 37
   quote: 七殺廉貞同位，路上埋屍。破軍暗曜同鄉，水中作塚。
-  applicable_to: []
+  applicable_to: 
+  - key: ziwei_star
+    value: 廉贞
+  - key: ziwei_star
+    value: 七杀
+  - key: ziwei_star
+    value: 破军
   caveats:
   - ⚠️ 死亡断语 — 仅作文化研究参考，不得铁口断寿断病
   - 现代 reframe 为外出风险倾向
@@ -292,7 +328,11 @@ rules:
     start_line: 48
     end_line: 48
   quote: 七殺臨於身命加惡殺，必定死亡。鈴羊合於命宮遇白虎，須當刑戮。
-  applicable_to: []
+  applicable_to: 
+  - key: ziwei_star
+    value: 七杀
+  - key: ziwei_palace
+    value: 命宫
   caveats:
   - ⚠️ 严重死亡/刑戮断语 — 仅作文化研究参考，不得铁口断寿断病
   - 现代严格 reframe

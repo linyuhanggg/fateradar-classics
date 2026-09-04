@@ -77,7 +77,17 @@ rules:
     start_line: 1920
     end_line: 1920
   quote: 若武曲金星與廉真同度，則武曲為財而無用也，余仿此。
-  applicable_to: []
+  applicable_to: 
+  - key: ziwei_star
+    value: 武曲
+  - key: ziwei_star
+    value: 破军
+  - key: ziwei_star
+    value: 禄存
+  - key: ziwei_palace
+    value: 财帛
+  - key: sihua
+    value: 化禄
   caveats:
   - 仅作文化研究参考
   - 不作具体投资决策依据
@@ -93,7 +103,11 @@ rules:
     start_line: 3749
     end_line: 3749
   quote: 紫微福厚享福安樂，天府天相同終身獲吉，破軍同勞心費力不安，加羊陀鈴空劫福薄，天機同享福終身。
-  applicable_to: []
+  applicable_to: 
+  - key: ziwei_star
+    value: 天同
+  - key: ziwei_palace
+    value: 福德
   caveats:
   - 仅作文化研究参考
   school: null
@@ -121,7 +135,11 @@ rules:
     start_line: 409
     end_line: 409
   quote: 答曰：紫微屬土，乃中天之尊星為帝座，主掌造化樞機，人生主宰。仗五行育萬物，以人命為之立定數。
-  applicable_to: []
+  applicable_to: 
+  - key: ziwei_star
+    value: 紫微
+  - key: ziwei_star
+    value: 天府
   caveats:
   - 仅作文化研究参考
   school: null
@@ -175,7 +193,11 @@ rules:
     start_line: 542
     end_line: 542
   quote: 與太陰以互權，天府、天相為佐貳之星，財帛田宅為專司之所。
-  applicable_to: []
+  applicable_to: 
+  - key: ziwei_star
+    value: 廉贞
+  - key: ziwei_star
+    value: 天相
   caveats:
   - 仅作文化研究参考
   school: null
@@ -190,7 +212,13 @@ rules:
     start_line: 3806
     end_line: 3806
   quote: 凡看父母以太陽星為父，太陰星為母。太陽在陷宮主先克父，太陰星在陷宮主先克母。
-  applicable_to: []
+  applicable_to: 
+  - key: ziwei_star
+    value: 天机
+  - key: ziwei_star
+    value: 天梁
+  - key: ziwei_palace
+    value: 父母
   caveats:
   - ⚠️ 寿星断语**严禁**作铁口断寿
   - 仅作文化研究参考
@@ -219,7 +247,13 @@ rules:
     start_line: 823
     end_line: 823
   quote: 居子午入廟，在天為殺氣，在數為耗星，故化氣曰耗。
-  applicable_to: []
+  applicable_to: 
+  - key: ziwei_star
+    value: 贪狼
+  - key: ziwei_star
+    value: 七杀
+  - key: ziwei_star
+    value: 破军
   caveats:
   - 仅作文化研究参考
   school: null
@@ -245,7 +279,19 @@ rules:
     start_line: 409
     end_line: 409
   quote: 答曰：紫微屬土，乃中天之尊星為帝座，主掌造化樞機，人生主宰。仗五行育萬物，以人命為之立定數。
-  applicable_to: []
+  applicable_to: 
+  - key: ziwei_star
+    value: 紫微
+  - key: ziwei_star
+    value: 太阳
+  - key: ziwei_star
+    value: 天府
+  - key: ziwei_star
+    value: 天梁
+  - key: ziwei_star
+    value: 文昌
+  - key: ziwei_star
+    value: 文曲
   caveats:
   - 仅作文化研究参考
   - 不替代现代教育规划
@@ -261,7 +307,15 @@ rules:
     start_line: 3572
     end_line: 3572
   quote: 紫微成行得力，旺主生財，加擎羊火鈴陀羅欠力，破軍同先難後有招，天相同得力，加空劫招怨逃走。
-  applicable_to: []
+  applicable_to: 
+  - key: ziwei_star
+    value: 紫微
+  - key: ziwei_star
+    value: 左辅
+  - key: ziwei_star
+    value: 右弼
+  - key: ziwei_palace
+    value: 命宫
   caveats:
   - 仅作文化研究参考
   school: null
@@ -276,7 +330,11 @@ rules:
     start_line: 4696
     end_line: 4696
   quote: 魁鉞夾命為奇格  如命安在辰宮，魁在卯，鉞在巳宮是也。
-  applicable_to: []
+  applicable_to: 
+  - key: ziwei_star
+    value: 天魁
+  - key: ziwei_star
+    value: 天钺
   caveats:
   - 仅作文化研究参考
   school: null
@@ -304,7 +362,11 @@ rules:
     start_line: 1257
     end_line: 1257
   quote: 命里逢空不飄流即主疾苦，馬頭帶劍非夭折則主刑傷。
-  applicable_to: []
+  applicable_to: 
+  - key: ziwei_star
+    value: 擎羊
+  - key: ziwei_star
+    value: 陀罗
   caveats:
   - ⚠️ 凶煞断语**严禁**用于断病断刑
   - 仅作文化研究参考
@@ -321,7 +383,13 @@ rules:
     start_line: 4686
     end_line: 4686
   quote: 火鈴夾命為敗局  如命安寅申，火星在丑，鈴星在卯。吉多尚可，惟夾忌。辰凶歲限巡遊者此地亦吉
-  applicable_to: []
+  applicable_to: 
+  - key: ziwei_star
+    value: 贪狼
+  - key: ziwei_star
+    value: 火星
+  - key: ziwei_star
+    value: 铃星
   caveats:
   - 仅作文化研究参考
   - '"暴发"非铁口断财运'
@@ -337,7 +405,11 @@ rules:
     start_line: 1106
     end_line: 1106
   quote: 希夷先生曰：二星守身命，遇吉則吉，遇凶則凶。如四殺沖照，輕者下賤，重者六畜之命。僧道不正，女子婢妾，刑克孤獨。大抵二星俱不宜見，定主破財，二限逢之必凶。
-  applicable_to: []
+  applicable_to: 
+  - key: ziwei_star
+    value: 地劫
+  - key: ziwei_star
+    value: 天空
   caveats:
   - 仅作文化研究参考
   - 不作铁口断破财
@@ -414,7 +486,13 @@ rules:
     start_line: 863
     end_line: 863
   quote: 答曰：文昌主科甲，守身命主人幽閑儒雅，清秀魁梧，博文廣記，機變異常，一舉成名，披緋衣紫，福壽雙全。縱四殺沖破不為下賤。女人加吉得地，衣祿充足。四殺沖破，偏房下賤，僧道宜之。加權祿厚重有師號。
-  applicable_to: []
+  applicable_to: 
+  - key: ziwei_star
+    value: 文昌
+  - key: ziwei_star
+    value: 文曲
+  - key: sihua
+    value: 化科
   caveats:
   - 仅作文化研究参考
   - 不替代现代教育规划
@@ -447,7 +525,15 @@ rules:
     start_line: 508
     end_line: 508
   quote: 若居廟旺，化祿化權，允為貴論。
-  applicable_to: []
+  applicable_to: 
+  - key: ziwei_palace
+    value: 命宫
+  - key: sihua
+    value: 化禄
+  - key: sihua
+    value: 化权
+  - key: sihua
+    value: 化科
   caveats:
   - 仅作文化研究参考
   - 不作铁口断富贵
@@ -501,7 +587,9 @@ rules:
     start_line: 1418
     end_line: 1418
   quote: 如克妻克子克父母內犯一二不為僧道亦作貧賤之人，第一看父母在廟旺地有無吉凶星辰，如在陷地加殺化忌必主刑克，第二又看妻妾宮，三看子女宮廟陷之地，有無吉凶星辰，如在陷加殺化忌必鰥寡孤獨論斷。
-  applicable_to: []
+  applicable_to: 
+  - key: ziwei_palace
+    value: 夫妻
   caveats:
   - ⚠️ 古书"妾"为父权时代多偶制，现代严格 reframe 为"夫妻宫"
   - 婚姻断语**严禁**作铁口断离合
@@ -519,7 +607,9 @@ rules:
     start_line: 3344
     end_line: 3344
   quote: 凡看子女先看本宮星宿主有几子。若加羊陀火玲空劫殺忌主生子女有刑克，次看對宮有沖刑否。
-  applicable_to: []
+  applicable_to: 
+  - key: ziwei_palace
+    value: 子女
   caveats:
   - ⚠️ 古书"子缘薄"断语**严禁**作铁口断生育
   - 仅作文化研究参考
@@ -536,7 +626,19 @@ rules:
     start_line: 539
     end_line: 539
   quote: 答曰：武曲北斗第六星，屬金，乃財帛宮主。與天府同宮有壽，其施權於十二宮分，其臨地有廟、旺、陷宮。主於人，性剛果決，有喜有怒，可福可災。若陷囚會於震宮，必為破主淹留之舉。與祿馬交馳，發財於遠郡。若貪狼同度，慳吝之人。破軍同財鄉，財到手而成空。諸凶聚而作禍，吉集以成祥。
-  applicable_to: []
+  applicable_to: 
+  - key: ziwei_star
+    value: 武曲
+  - key: ziwei_star
+    value: 天府
+  - key: ziwei_star
+    value: 破军
+  - key: ziwei_star
+    value: 禄存
+  - key: ziwei_palace
+    value: 财帛
+  - key: sihua
+    value: 化禄
   caveats:
   - 仅作文化研究参考
   - 不替代现代投资决策
@@ -552,7 +654,9 @@ rules:
     start_line: 1048
     end_line: 1048
   quote: 刑與暗同行，暗疾刑六親，火鈴遇凶伴，只宜道與僧，權刑囚合殺，疾病災厄侵，
-  applicable_to: []
+  applicable_to: 
+  - key: ziwei_palace
+    value: 疾厄
   caveats:
   - ⚠️ **严禁**作医疗诊断或健康预测
   - 仅作命书文化研究参考
@@ -569,7 +673,11 @@ rules:
     start_line: 3521
     end_line: 3521
   quote: 紫微同左右出外貴人扶持發福，天府同出入通達，天相同在外發財，破軍同貴人見愛，小人不足，加羊陀火鈴空劫在外不安靜。
-  applicable_to: []
+  applicable_to: 
+  - key: ziwei_star
+    value: 天马
+  - key: ziwei_palace
+    value: 迁移
   caveats:
   - 仅作文化研究参考
   school: null
@@ -584,7 +692,9 @@ rules:
     start_line: 1788
     end_line: 1788
   quote: 順數命前六位是天傷，命後六位是天使，天傷安在奴僕宮，天使安在疾厄宮。身與歲限夾在傷使中間，謂之加夾地更加惡曜多凶。
-  applicable_to: []
+  applicable_to: 
+  - key: ziwei_palace
+    value: 交友
   caveats:
   - ⚠️ 古书"奴仆"为封建用语，现代严格 reframe 为"交友宫"
   - 仅作文化研究参考
@@ -600,7 +710,17 @@ rules:
     start_line: 431
     end_line: 431
   quote: 紫微原屬土，官祿宮主星，有相為有用，無相為孤君，諸宮皆降福，逢凶福自申，
-  applicable_to: []
+  applicable_to: 
+  - key: ziwei_star
+    value: 紫微
+  - key: ziwei_star
+    value: 太阳
+  - key: ziwei_palace
+    value: 事业
+  - key: sihua
+    value: 化权
+  - key: sihua
+    value: 化科
   caveats:
   - 仅作文化研究参考
   - 不替代现代职业规划
@@ -616,7 +736,15 @@ rules:
     start_line: 635
     end_line: 635
   quote: 此星屬水，為田宅宮主，有輝為福，失陷必凶。
-  applicable_to: []
+  applicable_to: 
+  - key: ziwei_star
+    value: 天府
+  - key: ziwei_star
+    value: 太阴
+  - key: ziwei_palace
+    value: 田宅
+  - key: sihua
+    value: 化禄
   caveats:
   - 仅作文化研究参考
   - 不替代现代房地产决策
@@ -632,7 +760,15 @@ rules:
     start_line: 1461
     end_line: 1461
   quote: 福壽論 如南人天同天梁坐命廟旺主福壽雙全如北人紫微武曲破軍貪狼坐命旺宮主福壽
-  applicable_to: []
+  applicable_to: 
+  - key: ziwei_star
+    value: 天同
+  - key: ziwei_star
+    value: 天梁
+  - key: ziwei_palace
+    value: 福德
+  - key: sihua
+    value: 化禄
   caveats:
   - 仅作文化研究参考
   school: null
@@ -647,7 +783,9 @@ rules:
     start_line: 773
     end_line: 773
   quote: 天梁原屬土，南斗最吉星，化蔭名延壽，父母宮主星，田宅兄弟內，得之福自生，
-  applicable_to: []
+  applicable_to: 
+  - key: ziwei_palace
+    value: 父母
   caveats:
   - ⚠️ "父母缘薄"断语**严禁**作铁口断
   - 仅作文化研究参考
@@ -687,7 +825,9 @@ rules:
     start_line: 1585
     end_line: 1585
   quote: 日月夾命 不坐空亡遇逢本宮有吉星是也。
-  applicable_to: []
+  applicable_to: 
+  - key: ziwei_star
+    value: 紫微
   caveats:
   - 仅作文化研究参考
   - 不作铁口断官禄
@@ -744,7 +884,27 @@ rules:
     start_line: 4039
     end_line: 4039
   quote: 須詳大限獨守吉凶何如，小限獨守吉凶何如，太歲獨守吉凶何如。如歲限俱凶則凶。又看大限與小限相逢吉凶何如，大限逢太歲吉凶何如，小限逢太歲吉凶何如，禍福所定。又看太歲沖大限小限，太歲沖羊陀七殺，然後可斷吉凶。
-  applicable_to: []
+  applicable_to: 
+  - key: daxian
+    value: 事业 86–95
+  - key: daxian
+    value: 交友 76–85
+  - key: daxian
+    value: 兄弟 16–25
+  - key: daxian
+    value: 夫妻 26–35
+  - key: daxian
+    value: 子女 36–45
+  - key: daxian
+    value: 父母 116–125
+  - key: daxian
+    value: 田宅 96–105
+  - key: daxian
+    value: 疾厄 56–65
+  - key: daxian
+    value: 福德 106–115
+  - key: daxian
+    value: 财帛 46–55
   caveats: []
   school: null
   verified: false
@@ -787,7 +947,27 @@ rules:
     start_line: 4046
     end_line: 4046
   quote: 南斗諸星吉凶，大限斷下五年應，小限斷下半年應。
-  applicable_to: []
+  applicable_to: 
+  - key: daxian
+    value: 事业 46–55
+  - key: daxian
+    value: 交友 56–65
+  - key: daxian
+    value: 兄弟 116–125
+  - key: daxian
+    value: 夫妻 106–115
+  - key: daxian
+    value: 子女 96–105
+  - key: daxian
+    value: 父母 16–25
+  - key: daxian
+    value: 田宅 36–45
+  - key: daxian
+    value: 疾厄 76–85
+  - key: daxian
+    value: 福德 26–35
+  - key: daxian
+    value: 财帛 86–95
   caveats:
   - 仅作文化研究参考
   school: null
@@ -938,7 +1118,9 @@ rules:
     start_line: 4008
     end_line: 4008
   quote: 如寅午巳酉生人，見辰戍丑未時最毒，子申亥卯生人次之。若寅亥巳生人，見午申酉亥時，主先克父，出十六歲則不妨。若辰巳丑未生人，見子午卯巳亥申酉時生者，主先克母。
-  applicable_to: []
+  applicable_to: 
+  - key: ziwei_palace
+    value: 父母
   caveats:
   - ⚠️ **严格强 reframe**：**严禁**用于现代亲子关系判读
   - 不得作铁口断

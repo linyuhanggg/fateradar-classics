@@ -77,7 +77,9 @@ rules:
     start_line: 582
     end_line: 582
   quote: 歲破之方主破財破敗拆毀等事。
-  applicable_to: []
+  applicable_to: 
+  - key: ziwei_star
+    value: 陀罗
   caveats:
   - 现代输出必须改写为“传统认为此方需注意安全、纠纷、破耗、动土/修缮”之类，不铁口断死病
   school: null
@@ -92,7 +94,13 @@ rules:
     start_line: 4026
     end_line: 4026
   quote: 按紅鸞天喜咸池與大耗同宮。
-  applicable_to: []
+  applicable_to: 
+  - key: ziwei_star
+    value: 红鸾
+  - key: ziwei_star
+    value: 天喜
+  - key: ziwei_star
+    value: 咸池
   caveats:
   - 不应每次运势都机械说“财务/回款”
   - 只有盘面确有红鸾/天喜/咸池/大耗等组合并且问题相关时才用
@@ -123,7 +131,15 @@ rules:
     start_line: 1079
     end_line: 1079
   quote: 切。即由遷移宮。與對照之命垣。仍用三合之法判定。或得其大概之義理。
-  applicable_to: []
+  applicable_to: 
+  - key: ziwei_palace
+    value: 兄弟
+  - key: ziwei_palace
+    value: 子女
+  - key: ziwei_palace
+    value: 迁移
+  - key: ziwei_palace
+    value: 父母
   caveats:
   - 必须明确标注为“本书假借法”，不要混作所有紫微流派通则
   school: null
