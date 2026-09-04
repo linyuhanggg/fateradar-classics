@@ -91,7 +91,7 @@ Source: https://zh.wikisource.org/zh-hans/%E6%AC%BD%E5%AE%9A%E5%8F%A4%E4%BB%8A%E
 丑低投軍號陣中，　　　艮低師巫殘患人。
 寅低狼傷并虎咬，　　　他鄉外死甲上坑。
 卯地有灓傷眼目，　　　乙辰有水患禿風
-[IMAGE:考證 | src=https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/%E8%80%83%E8%AD%89.svg/60px-%E8%80%83%E8%AD%89.svg.png?utm_source=zh.wikisource.org&utm_campaign=parser&utm_content=thumbnail]
+[圖]
 巽地坑池官司敗，　　　陽短陰山出暗風。
 午丙有坑火災顯，　　　未丁坑下癆嗽人。
 酉方坑下家貧窘，　　　戌亥蛇腰鬼賊侵。
@@ -122,7 +122,7 @@ Source: https://zh.wikisource.org/zh-hans/%E6%AC%BD%E5%AE%9A%E5%8F%A4%E4%BB%8A%E
 不出三年并五載，　　　家私蕩盡賣田園。
 此法屢驗，故特標為一訣。
 圖
-[IMAGE:圖 | src=https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1648.svg/960px-Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1648.svg.png?utm_source=zh.wikisource.org&utm_campaign=parser&utm_content=thumbnail]
+[圖]
 陽宅外形吉凶圖說　此宅左短右邊長君子居　之大吉昌家內錢財豐盛
 富：「只因次後少兒郎。」
 右短左長不堪居，生財不？
@@ -141,7 +141,7 @@ Source: https://zh.wikisource.org/zh-hans/%E6%AC%BD%E5%AE%9A%E5%8F%A4%E4%BB%8A%E
 墳在上頭人，口貲，財多富。
 《貴二千》，食祿任公侯。
 圖
-[IMAGE:圖 | src=https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1654.svg/960px-Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1654.svg.png?utm_source=zh.wikisource.org&utm_campaign=parser&utm_content=thumbnail]
+[圖]
 《坎》《兌》兩邊道，路橫定主先。
 《吉》後有凶人，口貲《財》初一。
 勝不過十年一時空
@@ -160,7 +160,7 @@ Source: https://zh.wikisource.org/zh-hans/%E6%AC%BD%E5%AE%9A%E5%8F%A4%E4%BB%8A%E
 之定「滅門」 ，愚師不辨吉凶。
 理年久墳前缺子孫
 圖
-[IMAGE:圖 | src=https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1660.svg/960px-Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1660.svg.png?utm_source=zh.wikisource.org&utm_campaign=parser&utm_content=thumbnail]
+[圖]
 「此房正北有丘墳。」 《明師安》
 《莊定》「有名君子，居之官出。」
 祿，「庶人居之家道榮。」
@@ -180,7 +180,7 @@ Source: https://zh.wikisource.org/zh-hans/%E6%AC%BD%E5%AE%9A%E5%8F%A4%E4%BB%8A%E
 此好興工，不論宮商角徵。
 羽家豪富貴旺人丁
 圖
-[IMAGE:圖 | src=https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1666.svg/960px-Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1666.svg.png?utm_source=zh.wikisource.org&utm_campaign=parser&utm_content=thumbnail]
+[圖]
 此宅觀靈取，這強卻因辰。
 巳有池塘，兒孫旺相家資。
 盛興小敗長有官防
@@ -200,7 +200,7 @@ Source: https://zh.wikisource.org/zh-hans/%E6%AC%BD%E5%AE%9A%E5%8F%A4%E4%BB%8A%E
 「是不相宜」 ，不逢喜，事多悲。
 《泣》初雖富，時終殘疾。
 圖
-[IMAGE:圖 | src=https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1672.svg/960px-Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1672.svg.png?utm_source=zh.wikisource.org&utm_campaign=parser&utm_content=thumbnail]
+[圖]
 「後邊有山可安，莊」 家財盛，
 茂人最彊若，居此地人丁。
 旺子孫萬石有餘糧
@@ -220,7 +220,7 @@ Source: https://zh.wikisource.org/zh-hans/%E6%AC%BD%E5%AE%9A%E5%8F%A4%E4%BB%8A%E
 《莊》甚是凶，疾病纏身終不。
 吉「家中常被鬼賊侵。」
 圖
-[IMAGE:圖 | src=https://upload.wikimedia.org/wikipedia/commons/thumb/3/32/Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1678.svg/960px-Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1678.svg.png?utm_source=zh.wikisource.org&utm_campaign=parser&utm_content=thumbnail]
+[圖]
 「此宅右短左邊長」 ，假令左，
 短有何妨，後邊齊整方圓。
 「吉，庶人居之」 ，出賢良。
@@ -240,7 +240,7 @@ Source: https://zh.wikisource.org/zh-hans/%E6%AC%BD%E5%AE%9A%E5%8F%A4%E4%BB%8A%E
 宅福有餘，牛羊六畜多興。
 旺家道：「富貴出英豪。」
 圖
-[IMAGE:圖 | src=https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1684.svg/960px-Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1684.svg.png?utm_source=zh.wikisource.org&utm_campaign=parser&utm_content=thumbnail]
+[圖]
 四面交道，主凶殃禍起人。
 家不可當，若不損財災禍。
 「死。」 投河自縊，井中亡。
@@ -259,9 +259,9 @@ Source: https://zh.wikisource.org/zh-hans/%E6%AC%BD%E5%AE%9A%E5%8F%A4%E4%BB%8A%E
 《朱元》龍虎四神全，男人富。
 「《貴女人》賢」 ，官祿不求而自。
 至「後代兒孫福遠年。」
-[IMAGE:考證 | src=https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/%E8%80%83%E8%AD%89.svg/60px-%E8%80%83%E8%AD%89.svg.png?utm_source=zh.wikisource.org&utm_campaign=parser&utm_content=thumbnail]
+[圖]
 圖
-[IMAGE:圖 | src=https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1690.svg/960px-Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1690.svg.png?utm_source=zh.wikisource.org&utm_campaign=parser&utm_content=thumbnail]
+[圖]
 宅前有水後有丘，十人遇。
 此九人憂家財，初有終耗。
 散，牛羊倒，死禍無休。
@@ -280,7 +280,7 @@ Source: https://zh.wikisource.org/zh-hans/%E6%AC%BD%E5%AE%9A%E5%8F%A4%E4%BB%8A%E
 仰顯高危，天賜富貴倉糧。
 足輩輩兒孫著紫衣
 圖
-[IMAGE:圖 | src=https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1696.svg/960px-Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1696.svg.png?utm_source=zh.wikisource.org&utm_campaign=parser&utm_content=thumbnail]
+[圖]
 西有長波匯遠岡。東有河。
 水：《鵝鴨昌》。若居此地多吉。
 《慶》，「代代兒孫福祿彊。」
@@ -300,7 +300,7 @@ Source: https://zh.wikisource.org/zh-hans/%E6%AC%BD%E5%AE%9A%E5%8F%A4%E4%BB%8A%E
 水西道長，子孫世世居官。
 位，「紫袍金帶拜君王。」
 圖
-[IMAGE:圖 | src=https://upload.wikimedia.org/wikipedia/commons/thumb/7/7f/Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1702.svg/960px-Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1702.svg.png?utm_source=zh.wikisource.org&utm_campaign=parser&utm_content=thumbnail]
+[圖]
 乾坤艮坎土，岡高前平地。
 勢有相饒立宅居之人口。
 《旺》，兒孫出眾又英豪。
@@ -320,7 +320,7 @@ Source: https://zh.wikisource.org/zh-hans/%E6%AC%BD%E5%AE%9A%E5%8F%A4%E4%BB%8A%E
 龍綠水潺若，居此地出公。
 相不入文班入武班
 圖
-[IMAGE:圖 | src=https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1708.svg/960px-Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1708.svg.png?utm_source=zh.wikisource.org&utm_campaign=parser&utm_content=thumbnail]
+[圖]
 林中不得去，安居田宅莫。
 把作坵墳，《田蠶》歲歲多耗。
 散「宅內驚憂鬼成精。」
@@ -340,7 +340,7 @@ Source: https://zh.wikisource.org/zh-hans/%E6%AC%BD%E5%AE%9A%E5%8F%A4%E4%BB%8A%E
 「見死佳人」 ，坤地水流妨老；
 母「子孫後代受孤貧。」
 圖
-[IMAGE:圖 | src=https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1714.svg/960px-Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1714.svg.png?utm_source=zh.wikisource.org&utm_campaign=parser&utm_content=thumbnail]
+[圖]
 庚辛壬癸有，墳林可取千。
 《株鬱帚L》。正對宅舍六十步，兒孫換改舊家門。
 「寺廟坵墳切，要知」 不分南。
@@ -369,14 +369,14 @@ Source: https://zh.wikisource.org/zh-hans/%E6%AC%BD%E5%AE%9A%E5%8F%A4%E4%BB%8A%E
 〉
 〈
 斷若見明堂以
-[IMAGE:請幫助識別此字。 | src=https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/GJfont.pdf/page3779-20px-GJfont.pdf.jpg?utm_source=zh.wikisource.org&utm_campaign=parser&utm_content=thumbnail]
+[圖]
 貞斷定眼疾少光明。
 〉
 〈
 曰家生氣疾虛勞死將來致死滿門庭
 〉
 圖
-[IMAGE:圖 | src=https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1720.svg/960px-Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1720.svg.png?utm_source=zh.wikisource.org&utm_campaign=parser&utm_content=thumbnail]
+[圖]
 〈
 斷明堂形似破軍星不出軍兮出匠真
 〉
@@ -414,7 +414,7 @@ Source: https://zh.wikisource.org/zh-hans/%E6%AC%BD%E5%AE%9A%E5%8F%A4%E4%BB%8A%E
 曰右火沖身弟必亡當面尖射中此是
 〉
 圖
-[IMAGE:圖 | src=https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1726.svg/960px-Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1726.svg.png?utm_source=zh.wikisource.org&utm_campaign=parser&utm_content=thumbnail]
+[圖]
 〈
 斷門前三塘及二塘必啼孤子寡母娘
 〉
@@ -423,9 +423,9 @@ Source: https://zh.wikisource.org/zh-hans/%E6%AC%BD%E5%AE%9A%E5%8F%A4%E4%BB%8A%E
 〉
 〈
 斷逆水
-[IMAGE:請幫助識別此字。 | src=https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/GJfont.pdf/page3779-20px-GJfont.pdf.jpg?utm_source=zh.wikisource.org&utm_campaign=parser&utm_content=thumbnail]
+[圖]
 《貞》為「谷」，將順水。
-[IMAGE:請幫助識別此字。 | src=https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/GJfont.pdf/page3779-20px-GJfont.pdf.jpg?utm_source=zh.wikisource.org&utm_campaign=parser&utm_content=thumbnail]
+[圖]
 《貞》是退神。
 〉
 〈
@@ -456,7 +456,7 @@ Source: https://zh.wikisource.org/zh-hans/%E6%AC%BD%E5%AE%9A%E5%8F%A4%E4%BB%8A%E
 曰單傳人口多少亡氣痛其家常不脫
 〉
 圖
-[IMAGE:圖 | src=https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1732.svg/960px-Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1732.svg.png?utm_source=zh.wikisource.org&utm_campaign=parser&utm_content=thumbnail]
+[圖]
 〈
 斷明堂返轉似裙頭家中淫亂不知羞
 〉
@@ -494,7 +494,7 @@ Source: https://zh.wikisource.org/zh-hans/%E6%AC%BD%E5%AE%9A%E5%8F%A4%E4%BB%8A%E
 曰蛇傷牛鬥風傷事曲背跎腰聾啞人
 〉
 圖
-[IMAGE:圖 | src=https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1738.svg/960px-Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1738.svg.png?utm_source=zh.wikisource.org&utm_campaign=parser&utm_content=thumbnail]
+[圖]
 〈
 斷若見明堂似牛軛定斷其家會做賊
 〉
@@ -532,7 +532,7 @@ Source: https://zh.wikisource.org/zh-hans/%E6%AC%BD%E5%AE%9A%E5%8F%A4%E4%BB%8A%E
 曰孤辰寡宿定分明無兒無女妙通神
 〉
 圖
-[IMAGE:圖 | src=https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1744.svg/960px-Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1744.svg.png?utm_source=zh.wikisource.org&utm_campaign=parser&utm_content=thumbnail]
+[圖]
 〈
 斷祿存重樹在門前二房喑啞不能言
 〉
@@ -570,7 +570,7 @@ Source: https://zh.wikisource.org/zh-hans/%E6%AC%BD%E5%AE%9A%E5%8F%A4%E4%BB%8A%E
 曰子罵父兮天道滅媳欺姑媽失人倫
 〉
 圖
-[IMAGE:圖 | src=https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1750.svg/960px-Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1750.svg.png?utm_source=zh.wikisource.org&utm_campaign=parser&utm_content=thumbnail]
+[圖]
 〈
 斷離鄉之樹頭向外定知落水遭徒配
 〉
@@ -597,7 +597,7 @@ Source: https://zh.wikisource.org/zh-hans/%E6%AC%BD%E5%AE%9A%E5%8F%A4%E4%BB%8A%E
 〉
 〈
 斷空心大樹在門前婦人癆病
-[IMAGE:請幫助識別此字。 | src=https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/GJfont.pdf/page3139-20px-GJfont.pdf.jpg?utm_source=zh.wikisource.org&utm_campaign=parser&utm_content=thumbnail]
+[圖]
 《皇天》。
 〉
 〈
@@ -610,7 +610,7 @@ Source: https://zh.wikisource.org/zh-hans/%E6%AC%BD%E5%AE%9A%E5%8F%A4%E4%BB%8A%E
 曰男貪淫慾女貪花破壞風聲情似蜜
 〉
 圖
-[IMAGE:圖 | src=https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1756.svg/960px-Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1756.svg.png?utm_source=zh.wikisource.org&utm_campaign=parser&utm_content=thumbnail]
+[圖]
 〈
 斷腫頭之樹人難辨破軍方位不可見
 〉
@@ -648,7 +648,7 @@ Source: https://zh.wikisource.org/zh-hans/%E6%AC%BD%E5%AE%9A%E5%8F%A4%E4%BB%8A%E
 曰一塘便斷一人喪何寵不與外人傳
 〉
 圖
-[IMAGE:圖 | src=https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1762.svg/960px-Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1762.svg.png?utm_source=zh.wikisource.org&utm_campaign=parser&utm_content=thumbnail]
+[圖]
 〈
 斷明堂此塘在面前三四寡婦鬧喧天
 〉
@@ -666,7 +666,7 @@ Source: https://zh.wikisource.org/zh-hans/%E6%AC%BD%E5%AE%9A%E5%8F%A4%E4%BB%8A%E
 〉
 〈
 曰若然直去不
-[IMAGE:請幫助識別此字。 | src=https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/GJfont.pdf/page3152-20px-GJfont.pdf.jpg?utm_source=zh.wikisource.org&utm_campaign=parser&utm_content=thumbnail]
+[圖]
 還定出離鄉不歸屋。
 〉
 〈
@@ -688,7 +688,7 @@ Source: https://zh.wikisource.org/zh-hans/%E6%AC%BD%E5%AE%9A%E5%8F%A4%E4%BB%8A%E
 曰欲弔不弔是此路術者只要細推玩
 〉
 圖
-[IMAGE:圖 | src=https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1768.svg/960px-Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1768.svg.png?utm_source=zh.wikisource.org&utm_campaign=parser&utm_content=thumbnail]
+[圖]
 〈
 斷若見田塍如此樣斷定自縊弔高梁
 〉
@@ -726,7 +726,7 @@ Source: https://zh.wikisource.org/zh-hans/%E6%AC%BD%E5%AE%9A%E5%8F%A4%E4%BB%8A%E
 曰更兼眼疾年年有火殺加臨更惹災
 〉
 圖
-[IMAGE:圖 | src=https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1774.svg/960px-Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1774.svg.png?utm_source=zh.wikisource.org&utm_campaign=parser&utm_content=thumbnail]
+[圖]
 〈
 斷此屋門前兩口塘為人哭泣此明堂
 〉
@@ -738,7 +738,7 @@ Source: https://zh.wikisource.org/zh-hans/%E6%AC%BD%E5%AE%9A%E5%8F%A4%E4%BB%8A%E
 〉
 〈
 曰殘疾之人真是有名為暗箭射人
-[IMAGE:請幫助識別此字。 | src=https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/GJfont.pdf/page26252-20px-GJfont.pdf.jpg?utm_source=zh.wikisource.org&utm_campaign=parser&utm_content=thumbnail]
+[圖]
 〉
 〈
 斷門前若見有小屋宮事臨門來得速
@@ -759,7 +759,7 @@ Source: https://zh.wikisource.org/zh-hans/%E6%AC%BD%E5%AE%9A%E5%8F%A4%E4%BB%8A%E
 曰小口驚嚇不須言氣絕聾啞人難覺
 〉
 {{Annotation|斷此個人家品字樣讀書作
-[IMAGE:請幫助識別此字。 | src=https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/GJfont.pdf/page30067-20px-GJfont.pdf.jpg?utm_source=zh.wikisource.org&utm_campaign=parser&utm_content=thumbnail]
+[圖]
 起家莊。
 〈
 曰人財大旺添田地貴子聲名達帝鄉
@@ -795,7 +795,7 @@ Source: https://zh.wikisource.org/zh-hans/%E6%AC%BD%E5%AE%9A%E5%8F%A4%E4%BB%8A%E
 野馬跳澗訣
 野馬跳澗走，從寅數到狗。一年隔一位，不用亥子丑。
 野馬跳澗掌圖
-[IMAGE:野馬跳澗掌圖 | src=https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1780_-_%E9%87%8E%E9%A6%AC%E8%B7%B3%E6%BE%97%E6%8E%8C%E5%9C%96.svg/960px-Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1780_-_%E9%87%8E%E9%A6%AC%E8%B7%B3%E6%BE%97%E6%8E%8C%E5%9C%96.svg.png?utm_source=zh.wikisource.org&utm_campaign=parser&utm_content=thumbnail]
+[圖]
 起男女上中下元訣
 《上元》甲子一宮連，　　　中元起巽下兌間。
 上五中二下八女，　　　男逆女順起根源。
@@ -1118,17 +1118,17 @@ Source: https://zh.wikisource.org/zh-hans/%E6%AC%BD%E5%AE%9A%E5%8F%A4%E4%BB%8A%E
 此段不在裝卦內用，《裝卦爻訣》內無天乙巨門之吉，蓋凡天乙卦，陽配陽，陰配陰也。
 《天乙》是巨門星，但人家大房坐此星，或合得此卦，謂黃蛇入宅，或宅上有生此蛇者，百事大吉。
 第三合成《延年卦》。
-[IMAGE:請幫助識別此字。 | src=https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/GJfont.pdf/page4288-20px-GJfont.pdf.jpg?utm_source=zh.wikisource.org&utm_campaign=parser&utm_content=thumbnail]
+[圖]
 《蝟入宅》，喜吉祥，不出三年家豪
 富，牛馬成群進寶莊。
 註曰：延年是武曲星，若人家大房坐此星，或合得此卦，謂
-[IMAGE:請幫助識別此字。 | src=https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/GJfont.pdf/page4288-20px-GJfont.pdf.jpg?utm_source=zh.wikisource.org&utm_campaign=parser&utm_content=thumbnail]
+[圖]
 《蝟入宅或宅上生此物》，亦是百事大吉。
 第四配合五鬼神，騾馬倒死損財珍，三歲三番賊遄
 至，火光官事口舌頻。
 註曰：「五鬼是廉貞星，若人家大房坐此星，或合得。」
 圖
-[IMAGE:圖 | src=https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1781.svg/960px-Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1781.svg.png?utm_source=zh.wikisource.org&utm_campaign=parser&utm_content=thumbnail]
+[圖]
 西四位宅圖說并西四位生人用例
 福元在乾坤艮兌宮，為西四位生人，其吉星俱在乾
 坤艮兌之方，門所宜開，路所宜行，房樓所宜高大，主
@@ -1210,7 +1210,7 @@ Source: https://zh.wikisource.org/zh-hans/%E6%AC%BD%E5%AE%9A%E5%8F%A4%E4%BB%8A%E
 一定牛馬欄，宜在西北方，生氣貪狼，大吉。
 一定放水宜在南方「丙」字、丁字上吉。
 西四位宅圖
-[IMAGE:西四位宅圖 | src=https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1787.svg/960px-Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1787.svg.png?utm_source=zh.wikisource.org&utm_campaign=parser&utm_content=thumbnail]
+[圖]
 
 # 第676卷 欽定古今圖書集成/博物彙編/藝術典/第676卷
 
@@ -1260,29 +1260,29 @@ Source: https://zh.wikisource.org/zh-hans/%E6%AC%BD%E5%AE%9A%E5%8F%A4%E4%BB%8A%E
 五鬼凶年寅午戌
 六煞應在申子辰
 坐南向北乾門宅
-[IMAGE:坐南向北乾門宅 | src=https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1793_-_%E5%A4%A7%E9%81%8A%E5%B9%B4%E6%96%B9%E4%BD%8D%E5%8D%81%E4%BA%8C%E5%AE%85_%E5%9D%90%E5%8C%97%E5%90%91%E5%8D%97%E9%9B%A2%E9%96%80%E5%AE%85.svg/960px-Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1793_-_%E5%A4%A7%E9%81%8A%E5%B9%B4%E6%96%B9%E4%BD%8D%E5%8D%81%E4%BA%8C%E5%AE%85_%E5%9D%90%E5%8C%97%E5%90%91%E5%8D%97%E9%9B%A2%E9%96%80%E5%AE%85.svg.png?utm_source=zh.wikisource.org&utm_campaign=parser&utm_content=thumbnail]
+[圖]
 坐北向南巽門宅
-[IMAGE:坐北向南巽門宅 | src=https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1794_-_%E5%9D%90%E5%8C%97%E5%90%91%E5%8D%97%E5%B7%BD%E9%96%80%E5%AE%85.svg/960px-Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1794_-_%E5%9D%90%E5%8C%97%E5%90%91%E5%8D%97%E5%B7%BD%E9%96%80%E5%AE%85.svg.png?utm_source=zh.wikisource.org&utm_campaign=parser&utm_content=thumbnail]
+[圖]
 坐北向南坤門宅
-[IMAGE:坐北向南坤門宅 | src=https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1795_-_%E5%9D%90%E5%8C%97%E5%90%91%E5%8D%97%E5%9D%A4%E9%96%80%E5%AE%85.svg/960px-Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1795_-_%E5%9D%90%E5%8C%97%E5%90%91%E5%8D%97%E5%9D%A4%E9%96%80%E5%AE%85.svg.png?utm_source=zh.wikisource.org&utm_campaign=parser&utm_content=thumbnail]
+[圖]
 {{{2}}}
-[IMAGE:{{{2}}} | src=https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1796_-_%E5%9D%90%E5%8D%97%E5%90%91%E5%8C%97%E4%B9%BE%E9%96%80%E5%AE%85.svg/960px-Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1796_-_%E5%9D%90%E5%8D%97%E5%90%91%E5%8C%97%E4%B9%BE%E9%96%80%E5%AE%85.svg.png?utm_source=zh.wikisource.org&utm_campaign=parser&utm_content=thumbnail]
+[圖]
 坐西向東巽門宅
-[IMAGE:坐西向東巽門宅 | src=https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1797_-_%E5%9D%90%E5%8D%97%E5%90%91%E5%8C%97%E5%9D%8E%E9%96%80%E5%AE%85.svg/960px-Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1797_-_%E5%9D%90%E5%8D%97%E5%90%91%E5%8C%97%E5%9D%8E%E9%96%80%E5%AE%85.svg.png?utm_source=zh.wikisource.org&utm_campaign=parser&utm_content=thumbnail]
+[圖]
 坐南向北艮門宅
-[IMAGE:坐南向北艮門宅 | src=https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1798_-_%E5%9D%90%E5%8D%97%E5%90%91%E5%8C%97%E8%89%AE%E9%96%80%E5%AE%85.svg/960px-Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1798_-_%E5%9D%90%E5%8D%97%E5%90%91%E5%8C%97%E8%89%AE%E9%96%80%E5%AE%85.svg.png?utm_source=zh.wikisource.org&utm_campaign=parser&utm_content=thumbnail]
+[圖]
 坐東向西坤門宅
-[IMAGE:坐東向西坤門宅 | src=https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1799_-_%E5%9D%90%E6%9D%B1%E5%90%91%E8%A5%BF%E5%9D%A4%E9%96%80%E5%AE%85.svg/960px-Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1799_-_%E5%9D%90%E6%9D%B1%E5%90%91%E8%A5%BF%E5%9D%A4%E9%96%80%E5%AE%85.svg.png?utm_source=zh.wikisource.org&utm_campaign=parser&utm_content=thumbnail]
+[圖]
 坐東向西兌門宅
-[IMAGE:坐東向西兌門宅 | src=https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1800_-_%E5%9D%90%E6%9D%B1%E5%90%91%E8%A5%BF%E5%85%8C%E9%96%80%E5%AE%85.svg/960px-Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1800_-_%E5%9D%90%E6%9D%B1%E5%90%91%E8%A5%BF%E5%85%8C%E9%96%80%E5%AE%85.svg.png?utm_source=zh.wikisource.org&utm_campaign=parser&utm_content=thumbnail]
+[圖]
 坐東向西乾門宅
-[IMAGE:坐東向西乾門宅 | src=https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1801_-_%E5%9D%90%E6%9D%B1%E5%90%91%E8%A5%BF%E4%B9%BE%E9%96%80%E5%AE%85.svg/960px-Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1801_-_%E5%9D%90%E6%9D%B1%E5%90%91%E8%A5%BF%E4%B9%BE%E9%96%80%E5%AE%85.svg.png?utm_source=zh.wikisource.org&utm_campaign=parser&utm_content=thumbnail]
+[圖]
 坐西向東震門宅
-[IMAGE:坐西向東震門宅 | src=https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1802_-_%E5%9D%90%E8%A5%BF%E5%90%91%E6%9D%B1%E9%9C%87%E9%96%80%E5%AE%85.svg/960px-Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1802_-_%E5%9D%90%E8%A5%BF%E5%90%91%E6%9D%B1%E9%9C%87%E9%96%80%E5%AE%85.svg.png?utm_source=zh.wikisource.org&utm_campaign=parser&utm_content=thumbnail]
+[圖]
 坐西向東艮門宅
-[IMAGE:坐西向東艮門宅 | src=https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1803_-_%E5%9D%90%E8%A5%BF%E5%90%91%E6%9D%B1%E8%89%AE%E9%96%80%E5%AE%85.svg/960px-Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1803_-_%E5%9D%90%E8%A5%BF%E5%90%91%E6%9D%B1%E8%89%AE%E9%96%80%E5%AE%85.svg.png?utm_source=zh.wikisource.org&utm_campaign=parser&utm_content=thumbnail]
+[圖]
 {{{2}}}
-[IMAGE:{{{2}}} | src=https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1804_-_%E5%9D%90%E8%A5%BF%E5%90%91%E6%9D%B1%E5%B7%BD%E9%96%80%E5%AE%85.svg/960px-Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1804_-_%E5%9D%90%E8%A5%BF%E5%90%91%E6%9D%B1%E5%B7%BD%E9%96%80%E5%AE%85.svg.png?utm_source=zh.wikisource.org&utm_campaign=parser&utm_content=thumbnail]
+[圖]
 圖說
 凡宅舍按《大遊》年，以週圍八方主之。如乾上開門，坎
 為六煞凶星，雖得其位，房不宜高大。艮為天乙吉星，
@@ -1412,7 +1412,7 @@ Source: https://zh.wikisource.org/zh-hans/%E6%AC%BD%E5%AE%9A%E5%8F%A4%E4%BB%8A%E
 絕命生凶星，　　長房有災迍，　　明五暗，六盜，
 三火九傷人，　　紅花蛇蟲見，　　家內不安寧，
 延年號武曲，　　小房多發積，　　白蛇入宅中。
-[IMAGE:請幫助識別此字。 | src=https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/GJfont.pdf/page4288-20px-GJfont.pdf.jpg?utm_source=zh.wikisource.org&utm_campaign=parser&utm_content=thumbnail]
+[圖]
 《蝟》多大吉，　　生產必是男，　　遇剋多受制，
 其家漸漸興，　　小口多災病。　　生氣貪狼星，
 五子在宅中，　　其家人口有。　　青蛇入宅中，
@@ -1594,7 +1594,7 @@ Source: https://zh.wikisource.org/zh-hans/%E6%AC%BD%E5%AE%9A%E5%8F%A4%E4%BB%8A%E
 若房層數中間但有門牆隔斷，即以「《截路分房》論。」
 穿宮十二宅圖
 坐南朝北開乾門圖
-[IMAGE:坐南朝北開乾門圖 | src=https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1805_-_%E5%9D%90%E5%8D%97%E6%9C%9D%E5%8C%97%E9%96%8B%E4%B9%BE%E9%96%80%E5%9C%96.svg/960px-Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1805_-_%E5%9D%90%E5%8D%97%E6%9C%9D%E5%8C%97%E9%96%8B%E4%B9%BE%E9%96%80%E5%9C%96.svg.png?utm_source=zh.wikisource.org&utm_campaign=parser&utm_content=thumbnail]
+[圖]
 圖說
 坐南向北開乾門者，若得第二層、四層、五層，房屋高
 大，乃為吉慶，財祿大發。若得艮坤二方，房屋高大，富
@@ -1603,7 +1603,7 @@ Source: https://zh.wikisource.org/zh-hans/%E6%AC%BD%E5%AE%9A%E5%8F%A4%E4%BB%8A%E
 房，俱朝外開門，當以二層起《六煞》，三層起《貪狼》，四層
 起《五鬼》，五層屬天乙，六層屬《延年》，後倣此。
 坐南朝北開坎門圖
-[IMAGE:坐南朝北開坎門圖 | src=https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1806_-_%E5%9D%90%E5%8D%97%E6%9C%9D%E5%8C%97%E9%96%8B%E5%9D%8E%E9%96%80%E5%9C%96.svg/960px-Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1806_-_%E5%9D%90%E5%8D%97%E6%9C%9D%E5%8C%97%E9%96%8B%E5%9D%8E%E9%96%80%E5%9C%96.svg.png?utm_source=zh.wikisource.org&utm_campaign=parser&utm_content=thumbnail]
+[圖]
 圖說
 坐南向北開坎門者，乃水火不相射，因坐上含延年
 吉星，若得三層五層房高大，主世出魁元，子孫興旺，
@@ -1612,7 +1612,7 @@ Source: https://zh.wikisource.org/zh-hans/%E6%AC%BD%E5%AE%9A%E5%8F%A4%E4%BB%8A%E
 中宮有犯，木入中宮反不吉也。須以截路分房，或向
 南多蓋幾層活法處之，務令貪狼不屬中宮乃可耳。
 坐西朝東開艮門圖
-[IMAGE:坐西朝東開艮門圖 | src=https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1807_-_%E5%9D%90%E8%A5%BF%E6%9C%9D%E6%9D%B1%E9%96%8B%E8%89%AE%E9%96%80%E5%9C%96.svg/960px-Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1807_-_%E5%9D%90%E8%A5%BF%E6%9C%9D%E6%9D%B1%E9%96%8B%E8%89%AE%E9%96%80%E5%9C%96.svg.png?utm_source=zh.wikisource.org&utm_campaign=parser&utm_content=thumbnail]
+[圖]
 圖說
 坐西向東，開艮門者，乃土金相生，主男女夫婦和合，
 為生合之妙。若得二四五層房屋高大，及乾兌方房
@@ -1622,53 +1622,53 @@ Source: https://zh.wikisource.org/zh-hans/%E6%AC%BD%E5%AE%9A%E5%8F%A4%E4%BB%8A%E
 外開門，當以二層為六煞，三層為貪狼，四層為五鬼，
 五層屬天乙，六層屬《延年》，後倣此。
 坐西朝東開震門圖
-[IMAGE:坐西朝東開震門圖 | src=https://upload.wikimedia.org/wikipedia/commons/thumb/1/1c/Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1808_-_%E5%9D%90%E8%A5%BF%E6%9C%9D%E6%9D%B1%E9%96%8B%E9%9C%87%E9%96%80%E5%9C%96.svg/960px-Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1808_-_%E5%9D%90%E8%A5%BF%E6%9C%9D%E6%9D%B1%E9%96%8B%E9%9C%87%E9%96%80%E5%9C%96.svg.png?utm_source=zh.wikisource.org&utm_campaign=parser&utm_content=thumbnail]
+[圖]
 圖說
 坐西向東開震門者，若得三層五層房高大，及離方
 房高大，主吉祥富貴之兆。此宅貪狼乃吉星，宜高大。
 若正居中宮，恐是木入中宮，宜詳之。
 坐北朝南開巽門圖
-[IMAGE:坐北朝南開巽門圖 | src=https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1809_-_%E5%9D%90%E5%8C%97%E6%9C%9D%E5%8D%97%E9%96%8B%E5%B7%BD%E9%96%80%E5%9C%96.svg/960px-Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1809_-_%E5%9D%90%E5%8C%97%E6%9C%9D%E5%8D%97%E9%96%8B%E5%B7%BD%E9%96%80%E5%9C%96.svg.png?utm_source=zh.wikisource.org&utm_campaign=parser&utm_content=thumbnail]
+[圖]
 圖說
 坐北向南開巽門者，水木相親，若修一二四層，及離
 坎二方，房高大，發富貴，子孫萬輩興旺。
 坐北朝南開離門圖
-[IMAGE:坐北朝南開離門圖 | src=https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1810_-_%E5%9D%90%E5%8C%97%E6%9C%9D%E5%8D%97%E9%96%8B%E9%9B%A2%E9%96%80%E5%9C%96.svg/960px-Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1810_-_%E5%9D%90%E5%8C%97%E6%9C%9D%E5%8D%97%E9%96%8B%E9%9B%A2%E9%96%80%E5%9C%96.svg.png?utm_source=zh.wikisource.org&utm_campaign=parser&utm_content=thumbnail]
+[圖]
 圖說
 坐北向南開離門者，水火既濟，男女榮貴，夫婦和諧。
 若得三五六層，及坐上高大房屋者，吉不可言。再得
 坎巽二方，房屋高大，極富貴之兆
-[IMAGE:考證 | src=https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/%E8%80%83%E8%AD%89.svg/60px-%E8%80%83%E8%AD%89.svg.png?utm_source=zh.wikisource.org&utm_campaign=parser&utm_content=thumbnail]
+[圖]
 坐東朝西開兌門圖
-[IMAGE:坐東朝西開兌門圖 | src=https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1811_-_%E5%9D%90%E6%9D%B1%E6%9C%9D%E8%A5%BF%E9%96%8B%E5%85%8C%E9%96%80%E5%9C%96.svg/960px-Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1811_-_%E5%9D%90%E6%9D%B1%E6%9C%9D%E8%A5%BF%E9%96%8B%E5%85%8C%E9%96%80%E5%9C%96.svg.png?utm_source=zh.wikisource.org&utm_campaign=parser&utm_content=thumbnail]
+[圖]
 圖說
 坐東向西開「《兌》門」者，若得一層三層，房屋高大。再得
 五層六層，房屋高大，主大富貴。若坤方天乙、巨門、土
 星房高，兼艮方武曲、延年、金星房屋高大。俱大吉利
 之宅。
 坐東朝西開坤門圖
-[IMAGE:坐東朝西開坤門圖 | src=https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1812_-_%E5%9D%90%E6%9D%B1%E6%9C%9D%E8%A5%BF%E9%96%8B%E5%9D%A4%E9%96%80%E5%9C%96.svg/960px-Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1812_-_%E5%9D%90%E6%9D%B1%E6%9C%9D%E8%A5%BF%E9%96%8B%E5%9D%A4%E9%96%80%E5%9C%96.svg.png?utm_source=zh.wikisource.org&utm_campaign=parser&utm_content=thumbnail]
+[圖]
 圖說
 坐東向西開《坤》門者，土木相親，內含六煞五鬼凶星，
 若得一二層四層六層，房屋高大，又兼乾兌二方高
 大，主富貴平安，財畜大旺，子孫茂盛。
 坐北朝南開坤門圖
-[IMAGE:坐北朝南開坤門圖 | src=https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1813_-_%E5%9D%90%E5%8C%97%E6%9C%9D%E5%8D%97%E9%96%8B%E5%9D%A4%E9%96%80%E5%9C%96.svg/960px-Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1813_-_%E5%9D%90%E5%8C%97%E6%9C%9D%E5%8D%97%E9%96%8B%E5%9D%A4%E9%96%80%E5%9C%96.svg.png?utm_source=zh.wikisource.org&utm_campaign=parser&utm_content=thumbnail]
+[圖]
 圖說
 坐北向南《坤》門者，若得二層、四層、五層高起，及乾兌
 方，房屋高大，富貴福利之宅也。
 坐南朝北開艮門圖
-[IMAGE:坐南朝北開艮門圖 | src=https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1814_-_%E5%9D%90%E5%8D%97%E6%9C%9D%E5%8C%97%E9%96%8B%E8%89%AE%E9%96%80%E5%9C%96.svg/960px-Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1814_-_%E5%9D%90%E5%8D%97%E6%9C%9D%E5%8C%97%E9%96%8B%E8%89%AE%E9%96%80%E5%9C%96.svg.png?utm_source=zh.wikisource.org&utm_campaign=parser&utm_content=thumbnail]
+[圖]
 圖說
 坐南向北開艮門者，火土相生，若得二層、三層五層
 高大，及乾兌方高大，皆為福利之宅也。
 坐東朝西開乾門圖
-[IMAGE:坐東朝西開乾門圖 | src=https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1815_-_%E5%9D%90%E6%9D%B1%E6%9C%9D%E8%A5%BF%E9%96%8B%E4%B9%BE%E9%96%80%E5%9C%96.svg/960px-Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1815_-_%E5%9D%90%E6%9D%B1%E6%9C%9D%E8%A5%BF%E9%96%8B%E4%B9%BE%E9%96%80%E5%9C%96.svg.png?utm_source=zh.wikisource.org&utm_campaign=parser&utm_content=thumbnail]
+[圖]
 圖說
 坐東向西開乾門者，宜三四五層起高房，及坤兌二
 方高起，皆為福慶之宅。
 坐西朝東開巽門圖
-[IMAGE:坐西朝東開巽門圖 | src=https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1816_-_%E5%9D%90%E8%A5%BF%E6%9C%9D%E6%9D%B1%E9%96%8B%E5%B7%BD%E9%96%80%E5%9C%96.svg/960px-Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1816_-_%E5%9D%90%E8%A5%BF%E6%9C%9D%E6%9D%B1%E9%96%8B%E5%B7%BD%E9%96%80%E5%9C%96.svg.png?utm_source=zh.wikisource.org&utm_campaign=parser&utm_content=thumbnail]
+[圖]
 圖說
 坐西朝東，開巽門者，宜一層三層五六層高大，及離
 震坎方高大，皆為富貴之利宅。
@@ -1737,7 +1737,7 @@ Source: https://zh.wikisource.org/zh-hans/%E6%AC%BD%E5%AE%9A%E5%8F%A4%E4%BB%8A%E
 《震》巽配成坤艮卦，少年老母在家喪。
 註曰：震巽木也，坤艮土也，木能剋土。震見坤為禍害，祿存星見艮為六煞，文曲星，俱凶。巽見坤為五鬼，廉貞星見艮為絕命，破軍星，俱凶。坤為老母，艮為少男，又遇剋制，又遭凶星，至會局之年月，必殃及老母少男也。
 《坤》艮裝成坎三陽，中男滅絕不還鄉
-[IMAGE:考證 | src=https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/%E8%80%83%E8%AD%89.svg/60px-%E8%80%83%E8%AD%89.svg.png?utm_source=zh.wikisource.org&utm_campaign=parser&utm_content=thumbnail]
+[圖]
 註曰：坤艮土也，坎水也，土能剋水。坤見坎為絕命、破軍星，艮見坎為五鬼，廉貞星，俱凶。坎為中男，又遇剋制，又逄凶星於會局之年月中男必滅絕也。
 中男合就離家火，夫婦先吉後還傷。
 註曰：坎為中男，屬水，離為中女，屬火，居卦中之夫婦也。坎離相見，雖是延年，終是火遭水剋，故曰「夫婦先吉後還傷」 也。
@@ -1818,7 +1818,7 @@ Source: https://zh.wikisource.org/zh-hans/%E6%AC%BD%E5%AE%9A%E5%8F%A4%E4%BB%8A%E
 「紅嘴朱雀入離宮」日：　庚午、己卯、戊子、丁酉、丙午乙。
 卯忌安大門
 門尺圖
-[IMAGE:門尺圖 | src=https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1817_-_%E9%96%80%E5%B0%BA%E5%9C%96.svg/960px-Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1817_-_%E9%96%80%E5%B0%BA%E5%9C%96.svg.png?utm_source=zh.wikisource.org&utm_campaign=parser&utm_content=thumbnail]
+[圖]
 凡造門修門，安大小門戶，開門基，並宜用《門光星》。
 門光星起例訣
 有水點，是門光吉星，餘是凶星。大月宜全用，小月除了「消」 字。
@@ -1827,7 +1827,7 @@ Source: https://zh.wikisource.org/zh-hans/%E6%AC%BD%E5%AE%9A%E5%8F%A4%E4%BB%8A%E
 門光星吉日定局
 大月從下數上　　，小月從上數下。
 圖
-[IMAGE:圖 | src=https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1818.svg/960px-Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1818.svg.png?utm_source=zh.wikisource.org&utm_campaign=parser&utm_content=thumbnail]
+[圖]
 白圈者，「吉　。」 「人」 字損人　，黑圈損畜。
 門戶歌
 換象抽爻別有因，　三人同陌不同行。
@@ -2011,7 +2011,7 @@ Source: https://zh.wikisource.org/zh-hans/%E6%AC%BD%E5%AE%9A%E5%8F%A4%E4%BB%8A%E
 《發微通書》云：「凡論六陽命，子寅辰午申戌生人是也；
 六陰命，丑卯己未酉亥生人是也。」
 二十四山水方向
-[IMAGE:二十四山水方向 | src=https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1819_-_%E4%BA%8C%E5%8D%81%E5%9B%9B%E5%B1%B1%E6%B0%B4%E6%96%B9%E5%90%91.svg/960px-Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1819_-_%E4%BA%8C%E5%8D%81%E5%9B%9B%E5%B1%B1%E6%B0%B4%E6%96%B9%E5%90%91.svg.png?utm_source=zh.wikisource.org&utm_campaign=parser&utm_content=thumbnail]
+[圖]
 論宅內形第八
 《宅法》多端，無一可略。宅內房屋，如龜頭雁尾，披孝之
 類，一有所犯，輒應凶災，至於推車，兆禍尤大，均之不
@@ -2110,89 +2110,89 @@ Source: https://zh.wikisource.org/zh-hans/%E6%AC%BD%E5%AE%9A%E5%8F%A4%E4%BB%8A%E
 坎宅坐甲離修乙，　　　艮宅坐乙坤宅壬。
 此歌與前互相發，但「《離》修乙」 三字不合，乙方是離宮福德人之生氣，不宜立火唵，況是艮宮福德人，所修火唵之方，不應重復，或傳流之誤。
 純陽房
-[IMAGE:純陽房 | src=https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1820.svg/960px-Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1820.svg.png?utm_source=zh.wikisource.org&utm_campaign=parser&utm_content=thumbnail]
+[圖]
 單耳房
-[IMAGE:單耳房 | src=https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1824_-_%E5%96%AE%E8%80%B3%E6%88%BF.svg/960px-Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1824_-_%E5%96%AE%E8%80%B3%E6%88%BF.svg.png?utm_source=zh.wikisource.org&utm_campaign=parser&utm_content=thumbnail]
+[圖]
 雙耳房
-[IMAGE:雙耳房 | src=https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1825_-_%E9%9B%99%E8%80%B3%E6%88%BF.svg/960px-Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1825_-_%E9%9B%99%E8%80%B3%E6%88%BF.svg.png?utm_source=zh.wikisource.org&utm_campaign=parser&utm_content=thumbnail]
+[圖]
 孤獨房
-[IMAGE:孤獨房 | src=https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1826_-_%E5%AD%A4%E7%8D%A8%E6%88%BF.svg/960px-Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1826_-_%E5%AD%A4%E7%8D%A8%E6%88%BF.svg.png?utm_source=zh.wikisource.org&utm_campaign=parser&utm_content=thumbnail]
+[圖]
 露星房
-[IMAGE:露星房 | src=https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1827_-_%E9%9C%B2%E6%98%9F%E6%88%BF.svg/960px-Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1827_-_%E9%9C%B2%E6%98%9F%E6%88%BF.svg.png?utm_source=zh.wikisource.org&utm_campaign=parser&utm_content=thumbnail]
+[圖]
 單側房
-[IMAGE:單側房 | src=https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1828_-_%E5%96%AE%E5%81%B4%E6%88%BF.svg/960px-Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1828_-_%E5%96%AE%E5%81%B4%E6%88%BF.svg.png?utm_source=zh.wikisource.org&utm_campaign=parser&utm_content=thumbnail]
+[圖]
 暗筭房
-[IMAGE:暗筭房 | src=https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1829_-_%E6%9A%97%E7%AD%AD%E6%88%BF.svg/960px-Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1829_-_%E6%9A%97%E7%AD%AD%E6%88%BF.svg.png?utm_source=zh.wikisource.org&utm_campaign=parser&utm_content=thumbnail]
+[圖]
 再插焦尾房
-[IMAGE:再插焦尾房 | src=https://upload.wikimedia.org/wikipedia/commons/thumb/9/97/Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1830_-_%E5%86%8D%E6%8F%92%E7%84%A6%E5%B0%BE%E6%88%BF.svg/960px-Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1830_-_%E5%86%8D%E6%8F%92%E7%84%A6%E5%B0%BE%E6%88%BF.svg.png?utm_source=zh.wikisource.org&utm_campaign=parser&utm_content=thumbnail]
+[圖]
 露骨房
-[IMAGE:露骨房 | src=https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1831_-_%E9%9C%B2%E9%AA%A8%E6%88%BF.svg/960px-Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1831_-_%E9%9C%B2%E9%AA%A8%E6%88%BF.svg.png?utm_source=zh.wikisource.org&utm_campaign=parser&utm_content=thumbnail]
+[圖]
 曬屍房
-[IMAGE:曬屍房 | src=https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1832_-_%E6%9B%AC%E5%B1%8D%E6%88%BF.svg/960px-Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1832_-_%E6%9B%AC%E5%B1%8D%E6%88%BF.svg.png?utm_source=zh.wikisource.org&utm_campaign=parser&utm_content=thumbnail]
+[圖]
 丁字房
-[IMAGE:丁字房 | src=https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1833_-_%E4%B8%81%E5%AD%97%E6%88%BF.svg/960px-Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1833_-_%E4%B8%81%E5%AD%97%E6%88%BF.svg.png?utm_source=zh.wikisource.org&utm_campaign=parser&utm_content=thumbnail]
+[圖]
 青龍披頭插尾
-[IMAGE:青龍披頭插尾 | src=https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1834_-_%E9%9D%92%E9%BE%8D%E6%8A%AB%E9%A0%AD%E6%8F%92%E5%B0%BE.svg/960px-Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1834_-_%E9%9D%92%E9%BE%8D%E6%8A%AB%E9%A0%AD%E6%8F%92%E5%B0%BE.svg.png?utm_source=zh.wikisource.org&utm_campaign=parser&utm_content=thumbnail]
+[圖]
 元武披頭插尾
-[IMAGE:元武披頭插尾 | src=https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1835_-_%E5%85%83%E6%AD%A6%E6%8A%AB%E9%A0%AD%E6%8F%92%E5%B0%BE.svg/960px-Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1835_-_%E5%85%83%E6%AD%A6%E6%8A%AB%E9%A0%AD%E6%8F%92%E5%B0%BE.svg.png?utm_source=zh.wikisource.org&utm_campaign=parser&utm_content=thumbnail]
+[圖]
 白虎披頭及畔哭
-[IMAGE:白虎披頭及畔哭 | src=https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1836_-_%E7%99%BD%E8%99%8E%E6%8A%AB%E9%A0%AD%E5%8F%8A%E7%95%94%E5%93%AD.svg/960px-Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1836_-_%E7%99%BD%E8%99%8E%E6%8A%AB%E9%A0%AD%E5%8F%8A%E7%95%94%E5%93%AD.svg.png?utm_source=zh.wikisource.org&utm_campaign=parser&utm_content=thumbnail]
+[圖]
 朱雀披頭插尾
-[IMAGE:朱雀披頭插尾 | src=https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1837_-_%E6%9C%B1%E9%9B%80%E6%8A%AB%E9%A0%AD%E6%8F%92%E5%B0%BE.svg/960px-Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1837_-_%E6%9C%B1%E9%9B%80%E6%8A%AB%E9%A0%AD%E6%8F%92%E5%B0%BE.svg.png?utm_source=zh.wikisource.org&utm_campaign=parser&utm_content=thumbnail]
+[圖]
 孤陽房
-[IMAGE:孤陽房 | src=https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1838_-_%E5%AD%A4%E9%99%BD%E6%88%BF.svg/960px-Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1838_-_%E5%AD%A4%E9%99%BD%E6%88%BF.svg.png?utm_source=zh.wikisource.org&utm_campaign=parser&utm_content=thumbnail]
+[圖]
 露肘房
-[IMAGE:露肘房 | src=https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1839_-_%E9%9C%B2%E8%82%98%E6%88%BF.svg/960px-Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1839_-_%E9%9C%B2%E8%82%98%E6%88%BF.svg.png?utm_source=zh.wikisource.org&utm_campaign=parser&utm_content=thumbnail]
+[圖]
 水字房
-[IMAGE:水字房 | src=https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1840_-_%E6%B0%B4%E5%AD%97%E6%88%BF.svg/960px-Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1840_-_%E6%B0%B4%E5%AD%97%E6%88%BF.svg.png?utm_source=zh.wikisource.org&utm_campaign=parser&utm_content=thumbnail]
+[圖]
 土字房
-[IMAGE:土字房 | src=https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1841_-_%E5%9C%9F%E5%AD%97%E6%88%BF.svg/960px-Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1841_-_%E5%9C%9F%E5%AD%97%E6%88%BF.svg.png?utm_source=zh.wikisource.org&utm_campaign=parser&utm_content=thumbnail]
+[圖]
 癱患房
-[IMAGE:癱患房 | src=https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1842_-_%E7%99%B1%E6%82%A3%E6%88%BF.svg/960px-Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1842_-_%E7%99%B1%E6%82%A3%E6%88%BF.svg.png?utm_source=zh.wikisource.org&utm_campaign=parser&utm_content=thumbnail]
+[圖]
 {{{2}}}
-[IMAGE:{{{2}}} | src=https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1843_-_%E7%B4%94%E9%99%BD%E6%88%BF.svg/960px-Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1843_-_%E7%B4%94%E9%99%BD%E6%88%BF.svg.png?utm_source=zh.wikisource.org&utm_campaign=parser&utm_content=thumbnail]
+[圖]
 左右脊射
-[IMAGE:左右脊射 | src=https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1844.svg/960px-Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1844.svg.png?utm_source=zh.wikisource.org&utm_campaign=parser&utm_content=thumbnail]
+[圖]
 ,
 重陰房
-[IMAGE:重陰房 | src=https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1846.svg/960px-Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1846.svg.png?utm_source=zh.wikisource.org&utm_campaign=parser&utm_content=thumbnail]
+[圖]
 白虎畔邊哭
-[IMAGE:白虎畔邊哭 | src=https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1847_-_%E7%99%BD%E8%99%8E%E7%95%94%E9%82%8A%E5%93%AD.svg/960px-Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1847_-_%E7%99%BD%E8%99%8E%E7%95%94%E9%82%8A%E5%93%AD.svg.png?utm_source=zh.wikisource.org&utm_campaign=parser&utm_content=thumbnail]
+[圖]
 青龍舉其頭
-[IMAGE:青龍舉其頭 | src=https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1848_-_%E9%9D%92%E9%BE%8D%E8%88%89%E5%85%B6%E9%A0%AD.svg/960px-Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1848_-_%E9%9D%92%E9%BE%8D%E8%88%89%E5%85%B6%E9%A0%AD.svg.png?utm_source=zh.wikisource.org&utm_campaign=parser&utm_content=thumbnail]
+[圖]
 玄武插尾
-[IMAGE:玄武插尾 | src=https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1849_-_%E7%8E%84%E6%AD%A6%E6%8F%92%E5%B0%BE.svg/960px-Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1849_-_%E7%8E%84%E6%AD%A6%E6%8F%92%E5%B0%BE.svg.png?utm_source=zh.wikisource.org&utm_campaign=parser&utm_content=thumbnail]
+[圖]
 朱雀垂翅
-[IMAGE:朱雀垂翅 | src=https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1850_-_%E6%9C%B1%E9%9B%80%E5%9E%82%E7%BF%85.svg/960px-Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1850_-_%E6%9C%B1%E9%9B%80%E5%9E%82%E7%BF%85.svg.png?utm_source=zh.wikisource.org&utm_campaign=parser&utm_content=thumbnail]
+[圖]
 螣蛇舉其頭
-[IMAGE:螣蛇舉其頭 | src=https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1851_-_%E8%9E%A3%E8%9B%87%E8%88%89%E5%85%B6%E9%A0%AD.svg/960px-Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1851_-_%E8%9E%A3%E8%9B%87%E8%88%89%E5%85%B6%E9%A0%AD.svg.png?utm_source=zh.wikisource.org&utm_campaign=parser&utm_content=thumbnail]
+[圖]
 小字房
-[IMAGE:小字房 | src=https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1852_-_%E5%B0%8F%E5%AD%97%E6%88%BF.svg/960px-Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1852_-_%E5%B0%8F%E5%AD%97%E6%88%BF.svg.png?utm_source=zh.wikisource.org&utm_campaign=parser&utm_content=thumbnail]
+[圖]
 焦尾房
-[IMAGE:焦尾房 | src=https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1853_-_%E7%84%A6%E5%B0%BE%E6%88%BF.svg/960px-Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1853_-_%E7%84%A6%E5%B0%BE%E6%88%BF.svg.png?utm_source=zh.wikisource.org&utm_campaign=parser&utm_content=thumbnail]
+[圖]
 工字房
-[IMAGE:工字房 | src=https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1854_-_%E5%B7%A5%E5%AD%97%E6%88%BF.svg/960px-Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1854_-_%E5%B7%A5%E5%AD%97%E6%88%BF.svg.png?utm_source=zh.wikisource.org&utm_campaign=parser&utm_content=thumbnail]
+[圖]
 兩傍直
-[IMAGE:兩傍直 | src=https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1855_-_%E5%85%A9%E5%82%8D%E7%9B%B4.svg/960px-Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1855_-_%E5%85%A9%E5%82%8D%E7%9B%B4.svg.png?utm_source=zh.wikisource.org&utm_campaign=parser&utm_content=thumbnail]
+[圖]
 過頭房
-[IMAGE:過頭房 | src=https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1856_-_%E9%81%8E%E9%A0%AD%E6%88%BF.svg/960px-Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1856_-_%E9%81%8E%E9%A0%AD%E6%88%BF.svg.png?utm_source=zh.wikisource.org&utm_campaign=parser&utm_content=thumbnail]
+[圖]
 孤寡房
-[IMAGE:孤寡房 | src=https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1857_-_%E5%AD%A4%E5%AF%A1%E6%88%BF.svg/960px-Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1857_-_%E5%AD%A4%E5%AF%A1%E6%88%BF.svg.png?utm_source=zh.wikisource.org&utm_campaign=parser&utm_content=thumbnail]
+[圖]
 中高前後低
-[IMAGE:中高前後低 | src=https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1858_-_%E4%B8%AD%E9%AB%98%E5%89%8D%E5%BE%8C%E4%BD%8E.svg/960px-Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1858_-_%E4%B8%AD%E9%AB%98%E5%89%8D%E5%BE%8C%E4%BD%8E.svg.png?utm_source=zh.wikisource.org&utm_campaign=parser&utm_content=thumbnail]
+[圖]
 有右無左
-[IMAGE:有右無左 | src=https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1859_-_%E6%9C%89%E5%8F%B3%E7%84%A1%E5%B7%A6.svg/960px-Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1859_-_%E6%9C%89%E5%8F%B3%E7%84%A1%E5%B7%A6.svg.png?utm_source=zh.wikisource.org&utm_campaign=parser&utm_content=thumbnail]
+[圖]
 有左無右
-[IMAGE:有左無右 | src=https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1860_-_%E6%9C%89%E5%B7%A6%E7%84%A1%E5%8F%B3.svg/960px-Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1860_-_%E6%9C%89%E5%B7%A6%E7%84%A1%E5%8F%B3.svg.png?utm_source=zh.wikisource.org&utm_campaign=parser&utm_content=thumbnail]
+[圖]
 干水臨頭凶支水吉
-[IMAGE:干水臨頭凶支水吉 | src=https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1861_-_%E5%B9%B2%E6%B0%B4%E8%87%A8%E9%A0%AD%E5%87%B6%E6%94%AF%E6%B0%B4%E5%90%89.svg/960px-Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1861_-_%E5%B9%B2%E6%B0%B4%E8%87%A8%E9%A0%AD%E5%87%B6%E6%94%AF%E6%B0%B4%E5%90%89.svg.png?utm_source=zh.wikisource.org&utm_campaign=parser&utm_content=thumbnail]
+[圖]
 {{{2}}}
-[IMAGE:{{{2}}} | src=https://upload.wikimedia.org/wikipedia/commons/thumb/8/86/Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1862_-_%E5%B7%A6%E5%8F%B3%E8%84%8A%E5%B0%84.svg/960px-Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1862_-_%E5%B7%A6%E5%8F%B3%E8%84%8A%E5%B0%84.svg.png?utm_source=zh.wikisource.org&utm_campaign=parser&utm_content=thumbnail]
+[圖]
 圖
-[IMAGE:圖 | src=https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1863.svg/960px-Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1863.svg.png?utm_source=zh.wikisource.org&utm_campaign=parser&utm_content=thumbnail]
+[圖]
 ,
 {{{2}}}
-[IMAGE:{{{2}}} | src=https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1867.svg/960px-Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1867.svg.png?utm_source=zh.wikisource.org&utm_campaign=parser&utm_content=thumbnail]
+[圖]
 《外內形吉凶圖》下，斷語歌解，率皆鄙俚不葉，然其兆應禍福無爽，必其作者亦有道之人。予弗敢以己意改飾為是，因仍舊言。昔仲尼慕古史闕文之義，今願竊則傚焉。
 ===論選擇第九
 〈
@@ -2397,7 +2397,7 @@ Source: https://zh.wikisource.org/zh-hans/%E6%AC%BD%E5%AE%9A%E5%8F%A4%E4%BB%8A%E
 宮，陰貴人丁丑數至酉字艮宮。其年乾坤艮上修造，
 俱大吉利。餘倣此。
 圖
-[IMAGE:圖 | src=https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1868.svg/960px-Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1868.svg.png?utm_source=zh.wikisource.org&utm_campaign=parser&utm_content=thumbnail]
+[圖]
 「甲子，兌兌巽震離兌巽坎坤巽巽坎兌。乾乾兌坎兌、坎中兌兌巽艮坎。
 乙丑，乾乾震坤艮乾震離坎震震離。乾中中乾，離乾離巽乾乾震兌離。
 丙寅中中坤、坎兌中，坤、艮離坤坤艮中坎、巽中艮中艮，震中中坤、乾艮。
@@ -2459,7 +2459,7 @@ Source: https://zh.wikisource.org/zh-hans/%E6%AC%BD%E5%AE%9A%E5%8F%A4%E4%BB%8A%E
 壬戊，離離乾中，坤離乾、震巽乾、離震離、艮、艮離震離、震兌離離。乾坎震
 癸亥，艮艮中，巽坎艮中」，坤，震中艮，坤艮兌兌艮坤艮坤乾艮，艮中離，坤。
 圖
-[IMAGE:圖 | src=https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1869.svg/960px-Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1869.svg.png?utm_source=zh.wikisource.org&utm_campaign=parser&utm_content=thumbnail]
+[圖]
 「甲子，坤坎巽兌、坤坤坎兌兌中，坤坎兌艮巽坤兌、巽巽艮中，巽坎巽坤。
 乙丑，坎離震乾坎坎離。乾乾巽坎離。乾兌，震坎乾震震兌、坎震離震坎。
 丙寅，離艮坤中，離離艮中中，震離艮中，乾坤離中，坤坤乾離坤艮坤離。
@@ -2593,10 +2593,10 @@ Source: https://zh.wikisource.org/zh-hans/%E6%AC%BD%E5%AE%9A%E5%8F%A4%E4%BB%8A%E
 逐日太陰過宮定局
 太陰乃百神之主，修造逢之，諸殺不敢為惡。
 圖
-[IMAGE:圖 | src=https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1870.svg/960px-Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1870.svg.png?utm_source=zh.wikisource.org&utm_campaign=parser&utm_content=thumbnail]
+[圖]
 ,
 圖
-[IMAGE:圖 | src=https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1872.svg/960px-Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1872.svg.png?utm_source=zh.wikisource.org&utm_campaign=parser&utm_content=thumbnail]
+[圖]
 {{{2}}}
 
 # 第678卷 欽定古今圖書集成/博物彙編/藝術典/第678卷
@@ -2622,50 +2622,50 @@ Source: https://zh.wikisource.org/zh-hans/%E6%AC%BD%E5%AE%9A%E5%8F%A4%E4%BB%8A%E
 《五岳鎮宅符》，
 凡人家宅不安，或凶神邪鬼作怪，此符鎮之，大吉。或夜行身帶此符，諸邪不敢近。
 北岳符
-[IMAGE:北岳符 | src=https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1874_-_%E4%B8%AD%E5%B2%B3%E7%AC%A6.svg/960px-Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1874_-_%E4%B8%AD%E5%B2%B3%E7%AC%A6.svg.png?utm_source=zh.wikisource.org&utm_campaign=parser&utm_content=thumbnail]
+[圖]
 東岳符
-[IMAGE:東岳符 | src=https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1875_-_%E6%9D%B1%E5%B2%B3%E7%AC%A6.svg/960px-Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1875_-_%E6%9D%B1%E5%B2%B3%E7%AC%A6.svg.png?utm_source=zh.wikisource.org&utm_campaign=parser&utm_content=thumbnail]
+[圖]
 西岳符
-[IMAGE:西岳符 | src=https://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1876_-_%E8%A5%BF%E5%B2%B3%E7%AC%A6.svg/960px-Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1876_-_%E8%A5%BF%E5%B2%B3%E7%AC%A6.svg.png?utm_source=zh.wikisource.org&utm_campaign=parser&utm_content=thumbnail]
+[圖]
 南岳符
-[IMAGE:南岳符 | src=https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1877_-_%E5%8D%97%E5%B2%B3%E7%AC%A6.svg/960px-Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1877_-_%E5%8D%97%E5%B2%B3%E7%AC%A6.svg.png?utm_source=zh.wikisource.org&utm_campaign=parser&utm_content=thumbnail]
+[圖]
 {{{2}}}
-[IMAGE:{{{2}}} | src=https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1878_-_%E5%8C%97%E5%B2%B3%E7%AC%A6.svg/960px-Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1878_-_%E5%8C%97%E5%B2%B3%E7%AC%A6.svg.png?utm_source=zh.wikisource.org&utm_campaign=parser&utm_content=thumbnail]
+[圖]
 《鎮宅》十二年，土府神殺。
 凡修造誤犯土凶神，主傷人。用桃板書符於犯處。
 亥年符
-[IMAGE:亥年符 | src=https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1879_-_%E5%AD%90%E5%B9%B4%E7%AC%A6.svg/960px-Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1879_-_%E5%AD%90%E5%B9%B4%E7%AC%A6.svg.png?utm_source=zh.wikisource.org&utm_campaign=parser&utm_content=thumbnail]
+[圖]
 丑年符
-[IMAGE:丑年符 | src=https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1880_-_%E4%B8%91%E5%B9%B4%E7%AC%A6.svg/960px-Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1880_-_%E4%B8%91%E5%B9%B4%E7%AC%A6.svg.png?utm_source=zh.wikisource.org&utm_campaign=parser&utm_content=thumbnail]
+[圖]
 寅年符
-[IMAGE:寅年符 | src=https://upload.wikimedia.org/wikipedia/commons/thumb/2/23/Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1881_-_%E5%AF%85%E5%B9%B4%E7%AC%A6.svg/960px-Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1881_-_%E5%AF%85%E5%B9%B4%E7%AC%A6.svg.png?utm_source=zh.wikisource.org&utm_campaign=parser&utm_content=thumbnail]
+[圖]
 卯年符
-[IMAGE:卯年符 | src=https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1882_-_%E5%8D%AF%E5%B9%B4%E7%AC%A6.svg/960px-Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1882_-_%E5%8D%AF%E5%B9%B4%E7%AC%A6.svg.png?utm_source=zh.wikisource.org&utm_campaign=parser&utm_content=thumbnail]
+[圖]
 辰年符
-[IMAGE:辰年符 | src=https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1883_-_%E8%BE%B0%E5%B9%B4%E7%AC%A6.svg/960px-Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1883_-_%E8%BE%B0%E5%B9%B4%E7%AC%A6.svg.png?utm_source=zh.wikisource.org&utm_campaign=parser&utm_content=thumbnail]
+[圖]
 巳年符
-[IMAGE:巳年符 | src=https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1884_-_%E5%B7%B3%E5%B9%B4%E7%AC%A6.svg/960px-Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1884_-_%E5%B7%B3%E5%B9%B4%E7%AC%A6.svg.png?utm_source=zh.wikisource.org&utm_campaign=parser&utm_content=thumbnail]
+[圖]
 午年符
-[IMAGE:午年符 | src=https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1885_-_%E5%8D%88%E5%B9%B4%E7%AC%A6.svg/960px-Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1885_-_%E5%8D%88%E5%B9%B4%E7%AC%A6.svg.png?utm_source=zh.wikisource.org&utm_campaign=parser&utm_content=thumbnail]
+[圖]
 未年符
-[IMAGE:未年符 | src=https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1886_-_%E6%9C%AA%E5%B9%B4%E7%AC%A6.svg/960px-Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1886_-_%E6%9C%AA%E5%B9%B4%E7%AC%A6.svg.png?utm_source=zh.wikisource.org&utm_campaign=parser&utm_content=thumbnail]
+[圖]
 申年符
-[IMAGE:申年符 | src=https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1887_-_%E7%94%B3%E5%B9%B4%E7%AC%A6.svg/960px-Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1887_-_%E7%94%B3%E5%B9%B4%E7%AC%A6.svg.png?utm_source=zh.wikisource.org&utm_campaign=parser&utm_content=thumbnail]
+[圖]
 酉年符
-[IMAGE:酉年符 | src=https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1888_-_%E9%85%89%E5%B9%B4%E7%AC%A6.svg/960px-Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1888_-_%E9%85%89%E5%B9%B4%E7%AC%A6.svg.png?utm_source=zh.wikisource.org&utm_campaign=parser&utm_content=thumbnail]
+[圖]
 戌年符
-[IMAGE:戌年符 | src=https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1889_-_%E6%88%8C%E5%B9%B4%E7%AC%A6.svg/960px-Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1889_-_%E6%88%8C%E5%B9%B4%E7%AC%A6.svg.png?utm_source=zh.wikisource.org&utm_campaign=parser&utm_content=thumbnail]
+[圖]
 {{{2}}}
-[IMAGE:{{{2}}} | src=https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1890_-_%E4%BA%A5%E5%B9%B4%E7%AC%A6.svg/960px-Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1890_-_%E4%BA%A5%E5%B9%B4%E7%AC%A6.svg.png?utm_source=zh.wikisource.org&utm_campaign=parser&utm_content=thumbnail]
+[圖]
 諸符用桃板一尺二寸硃書。用僧道祭犯處吉。
 鎮四方土禁，并《退方神符》。
 凡誤犯三殺凶神主傷人。用桃板硃書符於犯處。
 申酉戌年符
-[IMAGE:申酉戌年符 | src=https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1891_-_%E5%AF%85%E5%8D%AF%E8%BE%B0%E5%B9%B4%E7%AC%A6.svg/960px-Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1891_-_%E5%AF%85%E5%8D%AF%E8%BE%B0%E5%B9%B4%E7%AC%A6.svg.png?utm_source=zh.wikisource.org&utm_campaign=parser&utm_content=thumbnail]
+[圖]
 巳午未年符
-[IMAGE:巳午未年符 | src=https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1892_-_%E5%B7%B3%E5%8D%88%E6%9C%AA%E5%B9%B4%E7%AC%A6.svg/960px-Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1892_-_%E5%B7%B3%E5%8D%88%E6%9C%AA%E5%B9%B4%E7%AC%A6.svg.png?utm_source=zh.wikisource.org&utm_campaign=parser&utm_content=thumbnail]
+[圖]
 {{{2}}}
-[IMAGE:{{{2}}} | src=https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1893_-_%E7%94%B3%E9%85%89%E6%88%8C%E5%B9%B4%E7%AC%A6.svg/960px-Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1893_-_%E7%94%B3%E9%85%89%E6%88%8C%E5%B9%B4%E7%AC%A6.svg.png?utm_source=zh.wikisource.org&utm_campaign=parser&utm_content=thumbnail]
+[圖]
 鎮命元建宅，有犯凶神。
 〈
 命元即五神
@@ -2673,10 +2673,10 @@ Source: https://zh.wikisource.org/zh-hans/%E6%AC%BD%E5%AE%9A%E5%8F%A4%E4%BB%8A%E
 「若犯庚辛，為孝服之年」 ，主人口災病，六畜損傷，鎮。
 用白楊木刻人形兩個，於本宅生氣方，頭南腳北，埋三尺深，以本人沐浴水潑埋處，更書此符帶之。
 圖
-[IMAGE:圖 | src=https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1894.svg/960px-Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1894.svg.png?utm_source=zh.wikisource.org&utm_campaign=parser&utm_content=thumbnail]
+[圖]
 若誤犯壬癸者，為盜賊驚恐，或為官事敗財。鎮用牢中土一斗，自死鼠一箇，埋在本宅五鬼方門下，深一尺二寸。如《乾宅》，以震為五鬼方，餘七宅俱倣此推。
 圖
-[IMAGE:圖 | src=https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1895.svg/960px-Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1895.svg.png?utm_source=zh.wikisource.org&utm_campaign=parser&utm_content=thumbnail]
+[圖]
 《鎮行年建宅神符》。
 凡建宅犯卯酉巳，為小凶之年，主小口災，破財用桃皮。
 〈
@@ -2688,131 +2688,131 @@ Source: https://zh.wikisource.org/zh-hans/%E6%AC%BD%E5%AE%9A%E5%8F%A4%E4%BB%8A%E
 〉
 并艾煎水浴身吉。
 圖
-[IMAGE:圖 | src=https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1896.svg/960px-Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1896.svg.png?utm_source=zh.wikisource.org&utm_campaign=parser&utm_content=thumbnail]
+[圖]
 凡建宅犯辰戌，為大凶之年，主人家有死亡之事。鎮用古墓中磚四塊，填臥床腳下，吉。又書硃符帶之。
 圖
-[IMAGE:圖 | src=https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1897.svg/960px-Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1897.svg.png?utm_source=zh.wikisource.org&utm_campaign=parser&utm_content=thumbnail]
+[圖]
 若犯五鬼之年，主人家破財，口舌不絕。鎮用市鋪土、十字街中土，又用破墓土各三升和泥，泥在門上泥處，貼符吉。
 圖
-[IMAGE:圖 | src=https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1898.svg/960px-Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1898.svg.png?utm_source=zh.wikisource.org&utm_campaign=parser&utm_content=thumbnail]
+[圖]
 若犯禍害之年，主六畜損傷，官非口舌。用古城牆土一斗，古井水七升，和泥作泥人七個，埋入大門左右，深一尺。若犯絕命之年，主小口多災。用本人遊年四吉位上，將古城牆土、古井水灑于上，又以車輻埋之吉。
 《三教救宅神符》，
 若有人家人口多災，禍害不止，此是建宅凶星高大之故，宜修改之。力不能改，宜急取《三教救宅神符》八道，用桃木八片，硃書，分八方釘之。不數月，禍害即止。
 兌方符
-[IMAGE:兌方符 | src=https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1900_-_%E4%B9%BE%E6%96%B9%E7%AC%A6.svg/960px-Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1900_-_%E4%B9%BE%E6%96%B9%E7%AC%A6.svg.png?utm_source=zh.wikisource.org&utm_campaign=parser&utm_content=thumbnail]
+[圖]
 坎方符
-[IMAGE:坎方符 | src=https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1901_-_%E5%9D%8E%E6%96%B9%E7%AC%A6.svg/960px-Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1901_-_%E5%9D%8E%E6%96%B9%E7%AC%A6.svg.png?utm_source=zh.wikisource.org&utm_campaign=parser&utm_content=thumbnail]
+[圖]
 艮方符
-[IMAGE:艮方符 | src=https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1902_-_%E8%89%AE%E6%96%B9%E7%AC%A6.svg/960px-Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1902_-_%E8%89%AE%E6%96%B9%E7%AC%A6.svg.png?utm_source=zh.wikisource.org&utm_campaign=parser&utm_content=thumbnail]
+[圖]
 震方符
-[IMAGE:震方符 | src=https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1903_-_%E9%9C%87%E6%96%B9%E7%AC%A6.svg/960px-Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1903_-_%E9%9C%87%E6%96%B9%E7%AC%A6.svg.png?utm_source=zh.wikisource.org&utm_campaign=parser&utm_content=thumbnail]
+[圖]
 巽方符
-[IMAGE:巽方符 | src=https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1904_-_%E5%B7%BD%E6%96%B9%E7%AC%A6.svg/960px-Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1904_-_%E5%B7%BD%E6%96%B9%E7%AC%A6.svg.png?utm_source=zh.wikisource.org&utm_campaign=parser&utm_content=thumbnail]
+[圖]
 離方符
-[IMAGE:離方符 | src=https://upload.wikimedia.org/wikipedia/commons/thumb/9/97/Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1905_-_%E9%9B%A2%E6%96%B9%E7%AC%A6.svg/960px-Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1905_-_%E9%9B%A2%E6%96%B9%E7%AC%A6.svg.png?utm_source=zh.wikisource.org&utm_campaign=parser&utm_content=thumbnail]
+[圖]
 坤方符
-[IMAGE:坤方符 | src=https://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1906_-_%E5%9D%A4%E6%96%B9%E7%AC%A6.svg/960px-Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1906_-_%E5%9D%A4%E6%96%B9%E7%AC%A6.svg.png?utm_source=zh.wikisource.org&utm_campaign=parser&utm_content=thumbnail]
+[圖]
 {{{2}}}
-[IMAGE:{{{2}}} | src=https://upload.wikimedia.org/wikipedia/commons/thumb/2/23/Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1907_-_%E5%85%8C%E6%96%B9%E7%AC%A6.svg/960px-Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1907_-_%E5%85%8C%E6%96%B9%E7%AC%A6.svg.png?utm_source=zh.wikisource.org&utm_campaign=parser&utm_content=thumbnail]
+[圖]
 鎮「多年老宅」，禍患不止。
 凡老宅旺氣已盡，人財損傷，用「本命福德方土五升，天月二德土五升，東流水和泥」 ，泥本宅太歲金神處，硃書神符鎮之。如乾宅四十年，坤宅五十年，氣盡，宜改別宅。如不能改者，此法鎮之吉。
 圖
-[IMAGE:圖 | src=https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1908.svg/960px-Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1908.svg.png?utm_source=zh.wikisource.org&utm_campaign=parser&utm_content=thumbnail]
+[圖]
 「鎮」八位，卦爻反逆。
 凡宅爻神錯亂者凶。用柏板八片，長一尺二寸，硃書《金剛符》八方釘之。取本命福德方土，并桃杏仁各四十九，桃杏根各七根，取三家水在宅長命元五鬼位上，令祝人噴之。
 青金剛
-[IMAGE:青金剛 | src=https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1909_-_%E9%BB%83%E9%87%91%E5%89%9B.svg/960px-Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1909_-_%E9%BB%83%E9%87%91%E5%89%9B.svg.png?utm_source=zh.wikisource.org&utm_campaign=parser&utm_content=thumbnail]
+[圖]
 赤金剛
-[IMAGE:赤金剛 | src=https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1910_-_%E8%B5%A4%E9%87%91%E5%89%9B.svg/960px-Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1910_-_%E8%B5%A4%E9%87%91%E5%89%9B.svg.png?utm_source=zh.wikisource.org&utm_campaign=parser&utm_content=thumbnail]
+[圖]
 定賢金剛
-[IMAGE:定賢金剛 | src=https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1911_-_%E5%AE%9A%E8%B3%A2%E9%87%91%E5%89%9B.svg/960px-Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1911_-_%E5%AE%9A%E8%B3%A2%E9%87%91%E5%89%9B.svg.png?utm_source=zh.wikisource.org&utm_campaign=parser&utm_content=thumbnail]
+[圖]
 {{{2}}}
-[IMAGE:{{{2}}} | src=https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1912_-_%E9%9D%92%E9%87%91%E5%89%9B.svg/960px-Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1912_-_%E9%9D%92%E9%87%91%E5%89%9B.svg.png?utm_source=zh.wikisource.org&utm_campaign=parser&utm_content=thumbnail]
+[圖]
 大神金剛
-[IMAGE:大神金剛 | src=https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1913_-_%E8%BE%9F%E9%9D%92%E9%87%91%E5%89%9B.svg/960px-Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1913_-_%E8%BE%9F%E9%9D%92%E9%87%91%E5%89%9B.svg.png?utm_source=zh.wikisource.org&utm_campaign=parser&utm_content=thumbnail]
+[圖]
 白為水金剛
-[IMAGE:白為水金剛 | src=https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1914_-_%E7%99%BD%E7%82%BA%E6%B0%B4%E9%87%91%E5%89%9B.svg/960px-Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1914_-_%E7%99%BD%E7%82%BA%E6%B0%B4%E9%87%91%E5%89%9B.svg.png?utm_source=zh.wikisource.org&utm_campaign=parser&utm_content=thumbnail]
+[圖]
 紫賢金剛
-[IMAGE:紫賢金剛 | src=https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1915_-_%E7%B4%AB%E8%B3%A2%E9%87%91%E5%89%9B.svg/960px-Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1915_-_%E7%B4%AB%E8%B3%A2%E9%87%91%E5%89%9B.svg.png?utm_source=zh.wikisource.org&utm_campaign=parser&utm_content=thumbnail]
+[圖]
 {{{2}}}
-[IMAGE:{{{2}}} | src=https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1916_-_%E5%A4%A7%E7%A5%9E%E9%87%91%E5%89%9B.svg/960px-Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1916_-_%E5%A4%A7%E7%A5%9E%E9%87%91%E5%89%9B.svg.png?utm_source=zh.wikisource.org&utm_campaign=parser&utm_content=thumbnail]
+[圖]
 鎮：年月日時相剋。
 凡建宅年月日時相生比和吉。如癸宅丙午日修造凶。用黃石三十斤埋中宮，吉。月犯絕胎養用狗頭骨燒灰，及歲德方土和泥，泥竈桃板，硃書符吉。
 圖
-[IMAGE:圖 | src=https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1917.svg/960px-Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1917.svg.png?utm_source=zh.wikisource.org&utm_campaign=parser&utm_content=thumbnail]
+[圖]
 《鎮分房》相剋。
 分房年月不利，用住宅四角草四把，化灰送入他人井中，吉。如分宿剋宅，用剋宿石一塊埋房門下，吉。又造宅犯二十八宿，或穿臨剋宅者，凶。用剋宿石二塊五十斤，書符埋入本宅伏位下，吉。如乾宅穿臨尾宿屬火，用黑石二塊書符埋西北吉。又如震宅見武曲，用紅石二塊五十斤，書符埋東方吉。
 圖
-[IMAGE:圖 | src=https://upload.wikimedia.org/wikipedia/commons/thumb/b/b3/Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1918.svg/960px-Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1918.svg.png?utm_source=zh.wikisource.org&utm_campaign=parser&utm_content=thumbnail]
+[圖]
 《鎮元空裝》卦未順，
 敕令張光，釘在生氣上。敕令主文，釘在天乙上。敕令主角，釘在五鬼上。敕令明宗祖，釘在堂門房門口。以門向定符論天乙伏位。中宮，用車輻一根，上書《六甲護宅符》掛之。
 六甲護宅符
-[IMAGE:六甲護宅符 | src=https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1919_-_%E5%85%AD%E7%94%B2%E8%AD%B7%E5%AE%85%E7%AC%A6.svg/960px-Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1919_-_%E5%85%AD%E7%94%B2%E8%AD%B7%E5%AE%85%E7%AC%A6.svg.png?utm_source=zh.wikisource.org&utm_campaign=parser&utm_content=thumbnail]
+[圖]
 《六甲符咒》：
 天心天目天耳天光之心，剋地之靈光，日月為光。急急如律令。《五帝敕》。一氣念七遍，吹在符上鎮之。
 修造《預鎮神符》，
 凡欲修造，先用牡酒紙馬桃木板書符，各方鎮之，雖犯諸殺，不凶。
 亥方符
-[IMAGE:亥方符 | src=https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1920_-_%E6%9D%B1%E6%96%B9%E7%AC%A6.svg/960px-Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1920_-_%E6%9D%B1%E6%96%B9%E7%AC%A6.svg.png?utm_source=zh.wikisource.org&utm_campaign=parser&utm_content=thumbnail]
+[圖]
 西方符
-[IMAGE:西方符 | src=https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1921_-_%E8%A5%BF%E6%96%B9%E7%AC%A6.svg/960px-Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1921_-_%E8%A5%BF%E6%96%B9%E7%AC%A6.svg.png?utm_source=zh.wikisource.org&utm_campaign=parser&utm_content=thumbnail]
+[圖]
 南方符
-[IMAGE:南方符 | src=https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1922_-_%E5%8D%97%E6%96%B9%E7%AC%A6.svg/960px-Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1922_-_%E5%8D%97%E6%96%B9%E7%AC%A6.svg.png?utm_source=zh.wikisource.org&utm_campaign=parser&utm_content=thumbnail]
+[圖]
 北方符
-[IMAGE:北方符 | src=https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1923_-_%E5%8C%97%E6%96%B9%E7%AC%A6.svg/960px-Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1923_-_%E5%8C%97%E6%96%B9%E7%AC%A6.svg.png?utm_source=zh.wikisource.org&utm_campaign=parser&utm_content=thumbnail]
+[圖]
 中央符
-[IMAGE:中央符 | src=https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1924_-_%E4%B8%AD%E5%A4%AE%E7%AC%A6.svg/960px-Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1924_-_%E4%B8%AD%E5%A4%AE%E7%AC%A6.svg.png?utm_source=zh.wikisource.org&utm_campaign=parser&utm_content=thumbnail]
+[圖]
 子方符
-[IMAGE:子方符 | src=https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1925_-_%E5%AD%90%E6%96%B9%E7%AC%A6.svg/960px-Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1925_-_%E5%AD%90%E6%96%B9%E7%AC%A6.svg.png?utm_source=zh.wikisource.org&utm_campaign=parser&utm_content=thumbnail]
+[圖]
 丑方符
-[IMAGE:丑方符 | src=https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1926_-_%E4%B8%91%E6%96%B9%E7%AC%A6.svg/960px-Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1926_-_%E4%B8%91%E6%96%B9%E7%AC%A6.svg.png?utm_source=zh.wikisource.org&utm_campaign=parser&utm_content=thumbnail]
+[圖]
 寅方符
-[IMAGE:寅方符 | src=https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1927_-_%E5%AF%85%E6%96%B9%E7%AC%A6.svg/960px-Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1927_-_%E5%AF%85%E6%96%B9%E7%AC%A6.svg.png?utm_source=zh.wikisource.org&utm_campaign=parser&utm_content=thumbnail]
+[圖]
 卯方符
-[IMAGE:卯方符 | src=https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1928_-_%E5%8D%AF%E6%96%B9%E7%AC%A6.svg/960px-Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1928_-_%E5%8D%AF%E6%96%B9%E7%AC%A6.svg.png?utm_source=zh.wikisource.org&utm_campaign=parser&utm_content=thumbnail]
+[圖]
 辰方符
-[IMAGE:辰方符 | src=https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1929_-_%E8%BE%B0%E6%96%B9%E7%AC%A6.svg/960px-Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1929_-_%E8%BE%B0%E6%96%B9%E7%AC%A6.svg.png?utm_source=zh.wikisource.org&utm_campaign=parser&utm_content=thumbnail]
+[圖]
 巳方符
-[IMAGE:巳方符 | src=https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1930_-_%E5%B7%B3%E6%96%B9%E7%AC%A6.svg/960px-Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1930_-_%E5%B7%B3%E6%96%B9%E7%AC%A6.svg.png?utm_source=zh.wikisource.org&utm_campaign=parser&utm_content=thumbnail]
+[圖]
 午方符
-[IMAGE:午方符 | src=https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1931_-_%E5%8D%88%E6%96%B9%E7%AC%A6.svg/960px-Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1931_-_%E5%8D%88%E6%96%B9%E7%AC%A6.svg.png?utm_source=zh.wikisource.org&utm_campaign=parser&utm_content=thumbnail]
+[圖]
 未方符
-[IMAGE:未方符 | src=https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1932_-_%E6%9C%AA%E6%96%B9%E7%AC%A6.svg/960px-Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1932_-_%E6%9C%AA%E6%96%B9%E7%AC%A6.svg.png?utm_source=zh.wikisource.org&utm_campaign=parser&utm_content=thumbnail]
+[圖]
 申方符
-[IMAGE:申方符 | src=https://upload.wikimedia.org/wikipedia/commons/thumb/c/c6/Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1933_-_%E7%94%B3%E6%96%B9%E7%AC%A6.svg/960px-Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1933_-_%E7%94%B3%E6%96%B9%E7%AC%A6.svg.png?utm_source=zh.wikisource.org&utm_campaign=parser&utm_content=thumbnail]
+[圖]
 酉方符
-[IMAGE:酉方符 | src=https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1934_-_%E9%85%89%E6%96%B9%E7%AC%A6.svg/960px-Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1934_-_%E9%85%89%E6%96%B9%E7%AC%A6.svg.png?utm_source=zh.wikisource.org&utm_campaign=parser&utm_content=thumbnail]
+[圖]
 戌方符
-[IMAGE:戌方符 | src=https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1935_-_%E6%88%8C%E6%96%B9%E7%AC%A6.svg/960px-Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1935_-_%E6%88%8C%E6%96%B9%E7%AC%A6.svg.png?utm_source=zh.wikisource.org&utm_campaign=parser&utm_content=thumbnail]
+[圖]
 {{{2}}}
-[IMAGE:{{{2}}} | src=https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1936_-_%E4%BA%A5%E6%96%B9%E7%AC%A6.svg/960px-Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1936_-_%E4%BA%A5%E6%96%B9%E7%AC%A6.svg.png?utm_source=zh.wikisource.org&utm_campaign=parser&utm_content=thumbnail]
+[圖]
 《鎮火庵》，「遠近布爻不成。」
 凡八宅火庵，遠者三五十步，近者十一十五步，用陰數最妙。須以四宅分房，布卦為上。若顛倒者，大凶，宜拆改之。如不可改者，用青石一塊，重一百斤，書神符。若重陰界北埋之，若重陽界南埋之，大吉。若內外布成五鬼六煞，禍害絕命，依各位鎮之。假令乾宅布成震卦，為五鬼於卯上鎮之。用佛座上土一斗，與酒醋和泥，泥在本屋上吉。餘依前「符石鎮之。」
 圖
-[IMAGE:圖 | src=https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1937.svg/960px-Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1937.svg.png?utm_source=zh.wikisource.org&utm_campaign=parser&utm_content=thumbnail]
+[圖]
 「鎮八宅不成」，卦爻拆改。
 凡人宅舍，四吉星宜高，四凶星宜低。若誤蓋凶星高，宜拆改之，用硃書神符，於拆改處鎮之，吉。
 圖
-[IMAGE:圖 | src=https://upload.wikimedia.org/wikipedia/commons/thumb/2/26/Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1938.svg/960px-Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1938.svg.png?utm_source=zh.wikisource.org&utm_campaign=parser&utm_content=thumbnail]
+[圖]
 《鎮》宅內，移徙出火，修造方道。
 凡人移居出火，急速造宅，暫移住處，須宅主年命吉方住吉。如三十六歲兌上是生氣，兌上卻無房可移。卯上有房卻犯五鬼之鄉，就於卯上居住，取四吉方水土和泥，於卯上香火處壁上泥之吉。硃書神符鎮之，四吉即生氣、福德、延年、巨門是也。
 圖
-[IMAGE:圖 | src=https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1939.svg/960px-Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1939.svg.png?utm_source=zh.wikisource.org&utm_campaign=parser&utm_content=thumbnail]
+[圖]
 凡移徙犯四凶位者，主人口多災，用舊住宅四角土共一斗，泥竈上，吉。四凶即「破軍」 、「廉貞」 、「祿存」 六煞是也。
 凡徙居犯沒滅者，用福德宮土一升，作泥人四個，埋住宅四角，即止。又法，埋入大門下吉。
 凡移居出火不合，大利年月日時，與年命相衝，大凶。用柏木四片，書除災金剛馬鞍勒四片，硃書大勒鬼。車輻四條，書禍去福來。明鏡一個，書天尊佛像。福德土五升，作土坯一個，上書二「土」 字。用柏板八片，書前《三教八方符》，隨處書名。埋一尺二寸深，書八宅神名，乾名劉子卿，坎名劉子伯俠，艮名任子辛，震名明子，辛天，巽名張元孫，離名馬伯叔，坤名黃天禽，兌名劉子孟。
 《移徙預鎮神符》。
 凡人移宅或出火修造年月，不利福德方位，不利。預書《五方神符》於五方，并《六甲靈符》於宅中，諸凶不忌。若犯文曲星，用鐵人五個，錫人三個，背書定印匠人姓名　，《祿存》用鐵人三個，白楊木三個，背書定印匠人姓名，黃絹裹之　。廉貞用赤土一斗，木炭三百斤，白楊木人五個，背書定印匠人姓名，紅絹裹之　。破軍星，用桐木人五個，背書定印匠人姓名，白絹裹之。取東流水，以罐盛之，香七炷，埋各位上，吉。《五方符》用棗木硃書，釘各位上吉。定印匠人姓名，即前項鑄造鐵錫木人匠人是也。
 中方符
-[IMAGE:中方符 | src=https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1940_-_%E6%9D%B1%E6%96%B9%E7%AC%A6.svg/960px-Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1940_-_%E6%9D%B1%E6%96%B9%E7%AC%A6.svg.png?utm_source=zh.wikisource.org&utm_campaign=parser&utm_content=thumbnail]
+[圖]
 西方符
-[IMAGE:西方符 | src=https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1941_-_%E8%A5%BF%E6%96%B9%E7%AC%A6.svg/960px-Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1941_-_%E8%A5%BF%E6%96%B9%E7%AC%A6.svg.png?utm_source=zh.wikisource.org&utm_campaign=parser&utm_content=thumbnail]
+[圖]
 南方符
-[IMAGE:南方符 | src=https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1942_-_%E5%8D%97%E6%96%B9%E7%AC%A6.svg/960px-Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1942_-_%E5%8D%97%E6%96%B9%E7%AC%A6.svg.png?utm_source=zh.wikisource.org&utm_campaign=parser&utm_content=thumbnail]
+[圖]
 北方符
-[IMAGE:北方符 | src=https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1943_-_%E5%8C%97%E6%96%B9%E7%AC%A6.svg/960px-Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1943_-_%E5%8C%97%E6%96%B9%E7%AC%A6.svg.png?utm_source=zh.wikisource.org&utm_campaign=parser&utm_content=thumbnail]
+[圖]
 {{{2}}}
-[IMAGE:{{{2}}} | src=https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1944_-_%E4%B8%AD%E6%96%B9%E7%AC%A6.svg/960px-Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1944_-_%E4%B8%AD%E6%96%B9%E7%AC%A6.svg.png?utm_source=zh.wikisource.org&utm_campaign=parser&utm_content=thumbnail]
+[圖]
 《鎮宅內誤犯二十四位凶神》。
 若犯太歲者，主傷家長，用馬蹄二個，虎骨一兩，豬、羊血各一斤，桃木板一尺二寸，硃書「六甲符」 ，埋犯處。太歲名蔡子明。
 若犯大將軍者，傷六畜官事。用白楊木七片，長一尺二寸，白楊木人三個，酒和泥，埋犯處，吉。大將軍名「姜無相。」
@@ -2843,10 +2843,10 @@ Source: https://zh.wikisource.org/zh-hans/%E6%AC%BD%E5%AE%9A%E5%8F%A4%E4%BB%8A%E
 鎮四鄰起土修造，誤犯我家土府凶神。
 凡鄰家動土冒犯土府者，用雷驚木三尺六寸，或一尺二寸，硃書神符三道，本宅中心釘之，諸惡不能為凶。
 圖
-[IMAGE:圖 | src=https://upload.wikimedia.org/wikipedia/commons/thumb/2/23/Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1945.svg/960px-Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1945.svg.png?utm_source=zh.wikisource.org&utm_campaign=parser&utm_content=thumbnail]
+[圖]
 ,
 {{{2}}}
-[IMAGE:{{{2}}} | src=https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1947.svg/960px-Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1947.svg.png?utm_source=zh.wikisource.org&utm_campaign=parser&utm_content=thumbnail]
+[圖]
 《鎮》四季，誤犯土王殺。
 凡土王用事，犯者凶《柏板》。
 〈
@@ -2854,18 +2854,18 @@ Source: https://zh.wikisource.org/zh-hans/%E6%AC%BD%E5%AE%9A%E5%8F%A4%E4%BB%8A%E
 〉
 硃書符於犯處，吉。
 冬神符
-[IMAGE:冬神符 | src=https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1948_-_%E6%98%A5%E7%A5%9E%E7%AC%A6.svg/960px-Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1948_-_%E6%98%A5%E7%A5%9E%E7%AC%A6.svg.png?utm_source=zh.wikisource.org&utm_campaign=parser&utm_content=thumbnail]
+[圖]
 夏神符
-[IMAGE:夏神符 | src=https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1949_-_%E5%A4%8F%E7%A5%9E%E7%AC%A6.svg/960px-Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1949_-_%E5%A4%8F%E7%A5%9E%E7%AC%A6.svg.png?utm_source=zh.wikisource.org&utm_campaign=parser&utm_content=thumbnail]
+[圖]
 秋神符
-[IMAGE:秋神符 | src=https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1950_-_%E7%A7%8B%E7%A5%9E%E7%AC%A6.svg/960px-Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1950_-_%E7%A7%8B%E7%A5%9E%E7%AC%A6.svg.png?utm_source=zh.wikisource.org&utm_campaign=parser&utm_content=thumbnail]
+[圖]
 {{{2}}}
-[IMAGE:{{{2}}} | src=https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1951_-_%E5%86%AC%E7%A5%9E%E7%AC%A6.svg/960px-Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1951_-_%E5%86%AC%E7%A5%9E%E7%AC%A6.svg.png?utm_source=zh.wikisource.org&utm_campaign=parser&utm_content=thumbnail]
+[圖]
 鎮穿井不在利方。
 凡穿井與福德不利，主凶。用柏木二片，長一尺二寸，硃書五方神符二道，石一塊，五穀一升，投入井，符釘於上，咒曰：「五方井神，各安本宮，符到奉行用。」
 水噴符井上誦七遍
 圖
-[IMAGE:圖 | src=https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1952.svg/960px-Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1952.svg.png?utm_source=zh.wikisource.org&utm_campaign=parser&utm_content=thumbnail]
+[圖]
 鎮宅中邪氣。妖鬼作怪。
 凡宅中氣如煙火人鬼形。
 〈
@@ -2873,137 +2873,137 @@ Source: https://zh.wikisource.org/zh-hans/%E6%AC%BD%E5%AE%9A%E5%8F%A4%E4%BB%8A%E
 〉
 硃書「酆都大帝位」，用柏板一尺二寸，書符，於宅中鎮之，吉。
 圖
-[IMAGE:圖 | src=https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1953.svg/960px-Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1953.svg.png?utm_source=zh.wikisource.org&utm_campaign=parser&utm_content=thumbnail]
+[圖]
 凡人家房屋自響者凶。用白芷、白礬、青石一塊，重六十斤，硃砂一錢，雄黃一錢五分，草心七根，天月德、方水土各一升，泥響處書此符，貼泥上，即止。
 圖
-[IMAGE:圖 | src=https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1955.svg/960px-Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1955.svg.png?utm_source=zh.wikisource.org&utm_campaign=parser&utm_content=thumbnail]
+[圖]
 《鎮》宅內被人暗埋壓「鎮。」
 凡人家被人暗埋，鎮物所害者，必傷人。用棗木板二片，書符二道，柏木板一片，書《天師符》，安宅中吉。
 〈
 天師符見前。
 〉
 圖
-[IMAGE:圖 | src=https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1957.svg/960px-Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1957.svg.png?utm_source=zh.wikisource.org&utm_campaign=parser&utm_content=thumbnail]
+[圖]
 鎮府州縣衙門不利。
 「凡天下衙門，但官員到任未久，多生疾患，甚有被百姓誣告者，及本職不陞者，有小口損傷者，多是遠年冤枉之魂作怪故也。」 鎮用三郡三門下土三斗，公座下土一斗，以酒和泥，泥後堂壁上，一半撒於後宅中。又用大青石一百斤，解四角，埋四方。又用虎骨官桂各一兩，遠志二兩，埋公座下。又用丁香、黃香、乳香、水石各一錢，蕎麥稿燒灰，淋水調灑，用柏木板書符，鎮於後宅中堂吉。
 圖
-[IMAGE:圖 | src=https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1959.svg/960px-Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1959.svg.png?utm_source=zh.wikisource.org&utm_campaign=parser&utm_content=thumbnail]
+[圖]
 鎮、儒學不利。
 凡天下儒學發高科，乃一縣風水合三吉六秀故也。亦或有神廟寺觀，衝犯街渠土箭，居於吉方，多有不利者。用橋上土七升，紅棗五升，磁瓶一個盛之，埋入聖人面前，二尺深土蓋之。又用大石五塊，各重一百二十斤，染為五色，各依方位埋之。其黃色石，埋入梓潼帝君面前，蓋土於上書靈符，以五綵幣，用文星日「祭之，當年多中。」
 圖
-[IMAGE:圖 | src=https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1960.svg/960px-Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1960.svg.png?utm_source=zh.wikisource.org&utm_campaign=parser&utm_content=thumbnail]
+[圖]
 鎮寺觀不存僧道。
 凡寺觀不存僧道，乃地勢不堪，或建殿年月不吉故也。鎮之用石一塊，重八十斤，面書靈符，埋入三門下。又用《福德方》水土和泥，泥在臥房中，則僧道自然不去也。或以柏木人一個，將頭顛倒埋床下，用老石榴木人一個，各房埋入床下吉。
 圖
-[IMAGE:圖 | src=https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1961.svg/960px-Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1961.svg.png?utm_source=zh.wikisource.org&utm_campaign=parser&utm_content=thumbnail]
+[圖]
 武帝《應用靈符》。
 霹靂符
-[IMAGE:霹靂符 | src=https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1962_-_%E4%BF%9D%E5%AE%89%E9%9D%88%E7%AC%A6.svg/960px-Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1962_-_%E4%BF%9D%E5%AE%89%E9%9D%88%E7%AC%A6.svg.png?utm_source=zh.wikisource.org&utm_campaign=parser&utm_content=thumbnail]
+[圖]
 保人口符
-[IMAGE:保人口符 | src=https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1963_-_%E4%BF%9D%E4%BA%BA%E5%8F%A3%E7%AC%A6.svg/960px-Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1963_-_%E4%BF%9D%E4%BA%BA%E5%8F%A3%E7%AC%A6.svg.png?utm_source=zh.wikisource.org&utm_campaign=parser&utm_content=thumbnail]
+[圖]
 {{{2}}}
-[IMAGE:{{{2}}} | src=https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1964_-_%E9%9C%B9%E9%9D%82%E7%AC%A6.svg/960px-Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1964_-_%E9%9C%B9%E9%9D%82%E7%AC%A6.svg.png?utm_source=zh.wikisource.org&utm_campaign=parser&utm_content=thumbnail]
+[圖]
 利官太古符
-[IMAGE:利官太古符 | src=https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1965.svg/960px-Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1965.svg.png?utm_source=zh.wikisource.org&utm_campaign=parser&utm_content=thumbnail]
+[圖]
 謝土符
-[IMAGE:謝土符 | src=https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1966_-_%E8%AC%9D%E5%9C%9F%E7%AC%A6.svg/960px-Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1966_-_%E8%AC%9D%E5%9C%9F%E7%AC%A6.svg.png?utm_source=zh.wikisource.org&utm_campaign=parser&utm_content=thumbnail]
+[圖]
 鎮子孫不和
-[IMAGE:鎮子孫不和 | src=https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1967_-_%E9%8E%AE%E5%AD%90%E5%AD%AB%E4%B8%8D%E5%92%8C.svg/960px-Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1967_-_%E9%8E%AE%E5%AD%90%E5%AD%AB%E4%B8%8D%E5%92%8C.svg.png?utm_source=zh.wikisource.org&utm_campaign=parser&utm_content=thumbnail]
+[圖]
 鎮父子不和
-[IMAGE:鎮父子不和 | src=https://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1968_-_%E9%8E%AE%E7%88%B6%E5%AD%90%E4%B8%8D%E5%92%8C.svg/960px-Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1968_-_%E9%8E%AE%E7%88%B6%E5%AD%90%E4%B8%8D%E5%92%8C.svg.png?utm_source=zh.wikisource.org&utm_campaign=parser&utm_content=thumbnail]
+[圖]
 鎮口舌不侵
-[IMAGE:鎮口舌不侵 | src=https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1969_-_%E9%8E%AE%E5%8F%A3%E8%88%8C%E4%B8%8D%E4%BE%B5.svg/960px-Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1969_-_%E9%8E%AE%E5%8F%A3%E8%88%8C%E4%B8%8D%E4%BE%B5.svg.png?utm_source=zh.wikisource.org&utm_campaign=parser&utm_content=thumbnail]
+[圖]
 鎮失害符
-[IMAGE:鎮失害符 | src=https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1970_-_%E9%8E%AE%E5%A4%B1%E5%AE%B3%E7%AC%A6.svg/960px-Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1970_-_%E9%8E%AE%E5%A4%B1%E5%AE%B3%E7%AC%A6.svg.png?utm_source=zh.wikisource.org&utm_campaign=parser&utm_content=thumbnail]
+[圖]
 保命靈符
-[IMAGE:保命靈符 | src=https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1971_-_%E4%BF%9D%E5%91%BD%E9%9D%88%E7%AC%A6.svg/960px-Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1971_-_%E4%BF%9D%E5%91%BD%E9%9D%88%E7%AC%A6.svg.png?utm_source=zh.wikisource.org&utm_campaign=parser&utm_content=thumbnail]
+[圖]
 七真符
-[IMAGE:七真符 | src=https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1972_-_%E4%B8%83%E7%9C%9F%E7%AC%A6.svg/960px-Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1972_-_%E4%B8%83%E7%9C%9F%E7%AC%A6.svg.png?utm_source=zh.wikisource.org&utm_campaign=parser&utm_content=thumbnail]
+[圖]
 泰山符
-[IMAGE:泰山符 | src=https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1973_-_%E6%B3%B0%E5%B1%B1%E7%AC%A6.svg/960px-Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1973_-_%E6%B3%B0%E5%B1%B1%E7%AC%A6.svg.png?utm_source=zh.wikisource.org&utm_campaign=parser&utm_content=thumbnail]
+[圖]
 動土符
-[IMAGE:動土符 | src=https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1974_-_%E5%8B%95%E5%9C%9F%E7%AC%A6.svg/960px-Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1974_-_%E5%8B%95%E5%9C%9F%E7%AC%A6.svg.png?utm_source=zh.wikisource.org&utm_campaign=parser&utm_content=thumbnail]
+[圖]
 起攢符
-[IMAGE:起攢符 | src=https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1975_-_%E8%B5%B7%E6%94%A2%E7%AC%A6.svg/960px-Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1975_-_%E8%B5%B7%E6%94%A2%E7%AC%A6.svg.png?utm_source=zh.wikisource.org&utm_campaign=parser&utm_content=thumbnail]
+[圖]
 鎮夫婦不和
-[IMAGE:鎮夫婦不和 | src=https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1976_-_%E9%8E%AE%E5%A4%AB%E5%A9%A6%E4%B8%8D%E5%92%8C.svg/960px-Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1976_-_%E9%8E%AE%E5%A4%AB%E5%A9%A6%E4%B8%8D%E5%92%8C.svg.png?utm_source=zh.wikisource.org&utm_campaign=parser&utm_content=thumbnail]
+[圖]
 鎮官司不侵
-[IMAGE:鎮官司不侵 | src=https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1977_-_%E9%8E%AE%E5%AE%98%E5%8F%B8%E4%B8%8D%E4%BE%B5.svg/960px-Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1977_-_%E9%8E%AE%E5%AE%98%E5%8F%B8%E4%B8%8D%E4%BE%B5.svg.png?utm_source=zh.wikisource.org&utm_campaign=parser&utm_content=thumbnail]
+[圖]
 鎮鬼怪不侵
-[IMAGE:鎮鬼怪不侵 | src=https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1978_-_%E9%8E%AE%E9%AC%BC%E6%80%AA%E4%B8%8D%E4%BE%B5.svg/960px-Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1978_-_%E9%8E%AE%E9%AC%BC%E6%80%AA%E4%B8%8D%E4%BE%B5.svg.png?utm_source=zh.wikisource.org&utm_campaign=parser&utm_content=thumbnail]
+[圖]
 {{{2}}}
-[IMAGE:{{{2}}} | src=https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1979_-_%E5%88%A9%E5%AE%98%E5%A4%AA%E5%8F%A4%E7%AC%A6.svg/960px-Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1979_-_%E5%88%A9%E5%AE%98%E5%A4%AA%E5%8F%A4%E7%AC%A6.svg.png?utm_source=zh.wikisource.org&utm_campaign=parser&utm_content=thumbnail]
+[圖]
 謝起攢符
-[IMAGE:謝起攢符 | src=https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1980_-_%E5%88%A9%E7%B6%93%E7%87%9F%E7%AC%A6.svg/960px-Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1980_-_%E5%88%A9%E7%B6%93%E7%87%9F%E7%AC%A6.svg.png?utm_source=zh.wikisource.org&utm_campaign=parser&utm_content=thumbnail]
+[圖]
 鎮鼠食蚕符
-[IMAGE:鎮鼠食蚕符 | src=https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1981_-_%E9%8E%AE%E9%BC%A0%E9%A3%9F%E8%9A%95%E7%AC%A6.svg/960px-Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1981_-_%E9%8E%AE%E9%BC%A0%E9%A3%9F%E8%9A%95%E7%AC%A6.svg.png?utm_source=zh.wikisource.org&utm_campaign=parser&utm_content=thumbnail]
+[圖]
 鎮耗神符
-[IMAGE:鎮耗神符 | src=https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1982_-_%E9%8E%AE%E8%80%97%E7%A5%9E%E7%AC%A6.svg/960px-Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1982_-_%E9%8E%AE%E8%80%97%E7%A5%9E%E7%AC%A6.svg.png?utm_source=zh.wikisource.org&utm_campaign=parser&utm_content=thumbnail]
+[圖]
 鎮燈自明滅符
-[IMAGE:鎮燈自明滅符 | src=https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1983_-_%E9%8E%AE%E7%87%88%E8%87%AA%E6%98%8E%E6%BB%85%E7%AC%A6.svg/960px-Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1983_-_%E9%8E%AE%E7%87%88%E8%87%AA%E6%98%8E%E6%BB%85%E7%AC%A6.svg.png?utm_source=zh.wikisource.org&utm_campaign=parser&utm_content=thumbnail]
+[圖]
 {{{2}}}
-[IMAGE:{{{2}}} | src=https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1984_-_%E8%AC%9D%E8%B5%B7%E6%94%A2%E7%AC%A6.svg/960px-Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1984_-_%E8%AC%9D%E8%B5%B7%E6%94%A2%E7%AC%A6.svg.png?utm_source=zh.wikisource.org&utm_campaign=parser&utm_content=thumbnail]
+[圖]
 鎮土炁
-[IMAGE:鎮土炁 | src=https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1985.svg/960px-Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1985.svg.png?utm_source=zh.wikisource.org&utm_campaign=parser&utm_content=thumbnail]
+[圖]
 凶
-[IMAGE:請幫助識別此字。 | src=https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/GJfont.pdf/page2237-20px-GJfont.pdf.jpg?utm_source=zh.wikisource.org&utm_campaign=parser&utm_content=thumbnail]
-[IMAGE:凶 | src=https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1986.svg/960px-Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1986.svg.png?utm_source=zh.wikisource.org&utm_campaign=parser&utm_content=thumbnail]
+[圖]
+[圖]
 鎮劍鋒殺
-[IMAGE:鎮劍鋒殺 | src=https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1987.svg/960px-Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1987.svg.png?utm_source=zh.wikisource.org&utm_campaign=parser&utm_content=thumbnail]
+[圖]
 鎮白虎符
-[IMAGE:鎮白虎符 | src=https://upload.wikimedia.org/wikipedia/commons/thumb/1/1c/Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1988_-_%E9%8E%AE%E7%99%BD%E8%99%8E%E7%AC%A6.svg/960px-Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1988_-_%E9%8E%AE%E7%99%BD%E8%99%8E%E7%AC%A6.svg.png?utm_source=zh.wikisource.org&utm_campaign=parser&utm_content=thumbnail]
+[圖]
 鎮白衣殺
-[IMAGE:鎮白衣殺 | src=https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1989_-_%E9%8E%AE%E7%99%BD%E8%A1%A3%E6%AE%BA.svg/960px-Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1989_-_%E9%8E%AE%E7%99%BD%E8%A1%A3%E6%AE%BA.svg.png?utm_source=zh.wikisource.org&utm_campaign=parser&utm_content=thumbnail]
+[圖]
 鎮骨髓破
-[IMAGE:鎮骨髓破 | src=https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1990_-_%E9%8E%AE%E9%AA%A8%E9%AB%93%E7%A0%B4.svg/960px-Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1990_-_%E9%8E%AE%E9%AA%A8%E9%AB%93%E7%A0%B4.svg.png?utm_source=zh.wikisource.org&utm_campaign=parser&utm_content=thumbnail]
+[圖]
 鎮三姦六伏人墓
-[IMAGE:鎮三姦六伏人墓 | src=https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1991_-_%E9%8E%AE%E4%B8%89%E5%A7%A6%E5%85%AD%E4%BC%8F%E4%BA%BA%E5%A2%93.svg/960px-Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1991_-_%E9%8E%AE%E4%B8%89%E5%A7%A6%E5%85%AD%E4%BC%8F%E4%BA%BA%E5%A2%93.svg.png?utm_source=zh.wikisource.org&utm_campaign=parser&utm_content=thumbnail]
+[圖]
 除凶禍符
-[IMAGE:除凶禍符 | src=https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1992_-_%E9%99%A4%E5%87%B6%E7%A6%8D%E7%AC%A6.svg/960px-Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1992_-_%E9%99%A4%E5%87%B6%E7%A6%8D%E7%AC%A6.svg.png?utm_source=zh.wikisource.org&utm_campaign=parser&utm_content=thumbnail]
+[圖]
 鎮陰府符
-[IMAGE:鎮陰府符 | src=https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1993_-_%E9%8E%AE%E9%99%B0%E5%BA%9C%E7%AC%A6.svg/960px-Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1993_-_%E9%8E%AE%E9%99%B0%E5%BA%9C%E7%AC%A6.svg.png?utm_source=zh.wikisource.org&utm_campaign=parser&utm_content=thumbnail]
+[圖]
 鎮地中白虎
-[IMAGE:鎮地中白虎 | src=https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1994_-_%E9%8E%AE%E5%9C%B0%E4%B8%AD%E7%99%BD%E8%99%8E.svg/960px-Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1994_-_%E9%8E%AE%E5%9C%B0%E4%B8%AD%E7%99%BD%E8%99%8E.svg.png?utm_source=zh.wikisource.org&utm_campaign=parser&utm_content=thumbnail]
+[圖]
 {{{2}}}
-[IMAGE:{{{2}}} | src=https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1995_-_%E9%8E%AE%E5%8A%8D%E9%8B%92%E6%AE%BA.svg/960px-Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1995_-_%E9%8E%AE%E5%8A%8D%E9%8B%92%E6%AE%BA.svg.png?utm_source=zh.wikisource.org&utm_campaign=parser&utm_content=thumbnail]
+[圖]
 鎮門自響符
-[IMAGE:鎮門自響符 | src=https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1996.svg/960px-Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1996.svg.png?utm_source=zh.wikisource.org&utm_campaign=parser&utm_content=thumbnail]
+[圖]
 女犯破家殺
-[IMAGE:女犯破家殺 | src=https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1997_-_%E5%A5%B3%E7%8A%AF%E7%A0%B4%E5%AE%B6%E6%AE%BA.svg/960px-Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1997_-_%E5%A5%B3%E7%8A%AF%E7%A0%B4%E5%AE%B6%E6%AE%BA.svg.png?utm_source=zh.wikisource.org&utm_campaign=parser&utm_content=thumbnail]
+[圖]
 鎮外姓喪在家
-[IMAGE:鎮外姓喪在家 | src=https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1998_-_%E9%8E%AE%E5%A4%96%E5%A7%93%E5%96%AA%E5%9C%A8%E5%AE%B6.svg/960px-Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1998_-_%E9%8E%AE%E5%A4%96%E5%A7%93%E5%96%AA%E5%9C%A8%E5%AE%B6.svg.png?utm_source=zh.wikisource.org&utm_campaign=parser&utm_content=thumbnail]
+[圖]
 {{{2}}}
-[IMAGE:{{{2}}} | src=https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1999_-_%E9%8E%AE%E9%96%80%E8%87%AA%E9%9F%BF%E7%AC%A6.svg/960px-Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic1999_-_%E9%8E%AE%E9%96%80%E8%87%AA%E9%9F%BF%E7%AC%A6.svg.png?utm_source=zh.wikisource.org&utm_campaign=parser&utm_content=thumbnail]
+[圖]
 產婦不下
-[IMAGE:產婦不下 | src=https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic2000.svg/960px-Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic2000.svg.png?utm_source=zh.wikisource.org&utm_campaign=parser&utm_content=thumbnail]
+[圖]
 犬上房符
-[IMAGE:犬上房符 | src=https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic2001_-_%E7%8A%AC%E4%B8%8A%E6%88%BF%E7%AC%A6.svg/960px-Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic2001_-_%E7%8A%AC%E4%B8%8A%E6%88%BF%E7%AC%A6.svg.png?utm_source=zh.wikisource.org&utm_campaign=parser&utm_content=thumbnail]
+[圖]
 鎮瘟符
-[IMAGE:鎮瘟符 | src=https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic2002_-_%E9%8E%AE%E7%98%9F%E7%AC%A6.svg/960px-Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic2002_-_%E9%8E%AE%E7%98%9F%E7%AC%A6.svg.png?utm_source=zh.wikisource.org&utm_campaign=parser&utm_content=thumbnail]
+[圖]
 救豬瘟符
-[IMAGE:救豬瘟符 | src=https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic2003_-_%E6%95%91%E8%B1%AC%E7%98%9F%E7%AC%A6.svg/960px-Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic2003_-_%E6%95%91%E8%B1%AC%E7%98%9F%E7%AC%A6.svg.png?utm_source=zh.wikisource.org&utm_campaign=parser&utm_content=thumbnail]
+[圖]
 {{{2}}}
-[IMAGE:{{{2}}} | src=https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic2004_-_%E7%94%A2%E5%A9%A6%E4%B8%8D%E4%B8%8B.svg/960px-Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic2004_-_%E7%94%A2%E5%A9%A6%E4%B8%8D%E4%B8%8B.svg.png?utm_source=zh.wikisource.org&utm_campaign=parser&utm_content=thumbnail]
+[圖]
 六畜亡死
-[IMAGE:六畜亡死 | src=https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic2005.svg/960px-Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic2005.svg.png?utm_source=zh.wikisource.org&utm_campaign=parser&utm_content=thumbnail]
+[圖]
 六畜走失
-[IMAGE:六畜走失 | src=https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic2006_-_%E5%85%AD%E7%95%9C%E8%B5%B0%E5%A4%B1.svg/960px-Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic2006_-_%E5%85%AD%E7%95%9C%E8%B5%B0%E5%A4%B1.svg.png?utm_source=zh.wikisource.org&utm_campaign=parser&utm_content=thumbnail]
+[圖]
 鎮釜自鳴
-[IMAGE:鎮釜自鳴 | src=https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic2007_-_%E9%8E%AE%E9%87%9C%E8%87%AA%E9%B3%B4.svg/960px-Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic2007_-_%E9%8E%AE%E9%87%9C%E8%87%AA%E9%B3%B4.svg.png?utm_source=zh.wikisource.org&utm_campaign=parser&utm_content=thumbnail]
+[圖]
 犬無人自吠
-[IMAGE:犬無人自吠 | src=https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic2008_-_%E7%8A%AC%E7%84%A1%E4%BA%BA%E8%87%AA%E5%90%A0.svg/960px-Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic2008_-_%E7%8A%AC%E7%84%A1%E4%BA%BA%E8%87%AA%E5%90%A0.svg.png?utm_source=zh.wikisource.org&utm_campaign=parser&utm_content=thumbnail]
+[圖]
 大門內撒屎
-[IMAGE:大門內撒屎 | src=https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic2009_-_%E5%A4%A7%E9%96%80%E5%85%A7%E6%92%92%E5%B1%8E.svg/960px-Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic2009_-_%E5%A4%A7%E9%96%80%E5%85%A7%E6%92%92%E5%B1%8E.svg.png?utm_source=zh.wikisource.org&utm_campaign=parser&utm_content=thumbnail]
+[圖]
 保豬不災
-[IMAGE:保豬不災 | src=https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic2010_-_%E4%BF%9D%E8%B1%AC%E4%B8%8D%E7%81%BD.svg/960px-Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic2010_-_%E4%BF%9D%E8%B1%AC%E4%B8%8D%E7%81%BD.svg.png?utm_source=zh.wikisource.org&utm_campaign=parser&utm_content=thumbnail]
+[圖]
 鎮盜賊符
-[IMAGE:鎮盜賊符 | src=https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic2011_-_%E9%8E%AE%E7%9B%9C%E8%B3%8A%E7%AC%A6.svg/960px-Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic2011_-_%E9%8E%AE%E7%9B%9C%E8%B3%8A%E7%AC%A6.svg.png?utm_source=zh.wikisource.org&utm_campaign=parser&utm_content=thumbnail]
+[圖]
 鎮金銀入宅
-[IMAGE:鎮金銀入宅 | src=https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic2012_-_%E9%8E%AE%E9%87%91%E9%8A%80%E5%85%A5%E5%AE%85.svg/960px-Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic2012_-_%E9%8E%AE%E9%87%91%E9%8A%80%E5%85%A5%E5%AE%85.svg.png?utm_source=zh.wikisource.org&utm_campaign=parser&utm_content=thumbnail]
+[圖]
 鼠咬人衣
-[IMAGE:鼠咬人衣 | src=https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic2013_-_%E9%BC%A0%E5%92%AC%E4%BA%BA%E8%A1%A3.svg/960px-Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic2013_-_%E9%BC%A0%E5%92%AC%E4%BA%BA%E8%A1%A3.svg.png?utm_source=zh.wikisource.org&utm_campaign=parser&utm_content=thumbnail]
+[圖]
 {{{2}}}
-[IMAGE:{{{2}}} | src=https://upload.wikimedia.org/wikipedia/commons/thumb/7/7f/Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic2014_-_%E5%85%AD%E7%95%9C%E4%BA%A1%E6%AD%BB.svg/960px-Imperial_Encyclopaedia_-_Skilled_Occupation_or_Profession_-_pic2014_-_%E5%85%AD%E7%95%9C%E4%BA%A1%E6%AD%BB.svg.png?utm_source=zh.wikisource.org&utm_campaign=parser&utm_content=thumbnail]
+[圖]
 王子既輯《陽宅十書》成，客有質者曰：「亦有宅法吉
 而災咎未盡除者乎？」曰：「必其人之命運方迍，時過
 則吉集矣。」曰：「亦有宅法不善，而吉慶猶安享者乎？」

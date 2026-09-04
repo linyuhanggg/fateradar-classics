@@ -5,7 +5,7 @@ book:
   title: 天玉经
   script: traditional
   fulltext: sources/fulltext/fengshui/tianyu-jing/fulltext.md
-  fulltext_sha256: d9c42bd39a1618f931061b9d9022bf45038b9cb3bea4220fd9463af7f28d323c
+  fulltext_sha256: b25ce875934df450437a29fe4f5830114a6b5692998a6c811b33dfc01193a763
 rules:
 - rule_id: TYR-01
   kind: doctrine
@@ -13,7 +13,7 @@ rules:
   anchor:
     file: sources/fulltext/fengshui/tianyu-jing/fulltext.md
     start_line: 5
-    end_line: 19
+    end_line: 5
   quote: 江東一勢從來吉，八神四個一。
   applicable_to: []
   caveats:
@@ -28,8 +28,8 @@ rules:
   statement: 天卦偏向“以地支从天干”的水之用，地卦偏向“以天干从地支”的山水相对之用。
   anchor:
     file: sources/fulltext/fengshui/tianyu-jing/fulltext.md
-    start_line: 23
-    end_line: 31
+    start_line: 35
+    end_line: 35
   quote: 天卦江東掌上尋，知了值千金。
   applicable_to: []
   caveats:
@@ -43,8 +43,8 @@ rules:
   statement: 父母不同则阴阳异路，前兼后与后兼前分属两路，用于解释向首与龙家的不同作用。
   anchor:
     file: sources/fulltext/fengshui/tianyu-jing/fulltext.md
-    start_line: 33
-    end_line: 35
+    start_line: 51
+    end_line: 51
   quote: 父母陰陽仔細尋，前後相兼定。前後相兼兩路看，分定兩邊安。
   applicable_to: []
   caveats:
@@ -58,8 +58,8 @@ rules:
   statement: 文中以地卦倒加天卦、随流神阴阳顺逆起九星，称为玄空八卦。
   anchor:
     file: sources/fulltext/fengshui/tianyu-jing/fulltext.md
-    start_line: 47
-    end_line: 49
+    start_line: 73
+    end_line: 73
   quote: 關於關地定雌雄，富貴此中逢，翻天倒地對不同，秘密在玄空。
   applicable_to: []
   caveats:
@@ -74,8 +74,8 @@ rules:
   statement: 三阳水朝并流归墓地、六秀入局不出本卦二神，是文本中的水中小贵格框架。
   anchor:
     file: sources/fulltext/fengshui/tianyu-jing/fulltext.md
-    start_line: 51
-    end_line: 53
+    start_line: 90
+    end_line: 90
   quote: 三陽水口盡源流，富貴永無休。三陽六秀二神當，立見入朝堂。
   applicable_to: []
   caveats:
@@ -89,8 +89,8 @@ rules:
   statement: 文中以正神/零神区分立向与发水，强调支神、干神在水法中的不同位置。
   anchor:
     file: sources/fulltext/fengshui/tianyu-jing/fulltext.md
-    start_line: 81
-    end_line: 87
+    start_line: 127
+    end_line: 127
   quote: 陰陽二字看零正，坐向須知病。若電正神正位裝，發水入零堂。零堂正向須知好，認取來山腦。水上排龍點位裝，積粟萬餘倉。
   applicable_to: []
   caveats:
@@ -105,8 +105,8 @@ rules:
   statement: 二十四山分阴阳顺逆两路，需辨五行主、交战与公位。
   anchor:
     file: sources/fulltext/fengshui/tianyu-jing/fulltext.md
-    start_line: 93
-    end_line: 95
+    start_line: 139
+    end_line: 139
   quote: 二十四山分兩路，認取五行主。龍中交戰水中裝，便是正龍傷腦。前面若無凶交破，莫斷為凶禍。凶星看在何公頭，仔細認蹤由。
   applicable_to: []
   caveats:
@@ -120,8 +120,8 @@ rules:
   statement: 文中称挨星虽贵，但注解强调仍以三合五行生旺墓绝作为判断根基。
   anchor:
     file: sources/fulltext/fengshui/tianyu-jing/fulltext.md
-    start_line: 126
-    end_line: 130
+    start_line: 190
+    end_line: 190
   quote: 惟有挨星不最貴，泄漏天機秘。天機若然安在內，家活常富貴。天機若然安在外，家活漸退敗。五星配出九星名，天下任橫行。
   applicable_to: []
   caveats:
@@ -136,8 +136,8 @@ rules:
   statement: 天卦、地卦、父母卦构成三般卦框架；文中把玄空大卦归为此经诀。
   anchor:
     file: sources/fulltext/fengshui/tianyu-jing/fulltext.md
-    start_line: 136
-    end_line: 138
+    start_line: 200
+    end_line: 200
   quote: 天地父母三般卦，時師未曾話。玄空大卦神仙說，本是此經訣。不識宗枝俱亂傳，開口莫胡言。若還不信此經文，但復古人墳。
   applicable_to: []
   caveats:
@@ -151,8 +151,8 @@ rules:
   statement: 折水以子寅辰乾丙乙等四组配长男、二男、三男、四男等公位。
   anchor:
     file: sources/fulltext/fengshui/tianyu-jing/fulltext.md
-    start_line: 164
-    end_line: 166
+    start_line: 240
+    end_line: 240
   quote: 子寅辰乾共同丙乙，長男排此位。午申戌與坤壬辛，二男此位真。卯巳醜用艮庚丁，三男位相生。酉亥未兼巽甲癸，四男位北際。
   applicable_to: []
   caveats:
@@ -166,8 +166,8 @@ rules:
   statement: 下篇把辰戌丑未四墓、借库、自库纳入富贵贫乏的水法解释。
   anchor:
     file: sources/fulltext/fengshui/tianyu-jing/fulltext.md
-    start_line: 198
-    end_line: 200
+    start_line: 280
+    end_line: 280
   quote: 要求富貴三般卦，出分家貧乏。寅中巳亥水來長，五行向中藏。辰戌醜未叩金龍，動得永不窮。若還借庫富後貧，自庫樂長春。
   applicable_to: []
   caveats:
@@ -181,8 +181,8 @@ rules:
   statement: 文中以倒排父母为真龙，顺排父母到子息则退；注解进一步解释四龙折水顺逆。
   anchor:
     file: sources/fulltext/fengshui/tianyu-jing/fulltext.md
-    start_line: 238
-    end_line: 246
+    start_line: 328
+    end_line: 328
   quote: 倒排父母是真龍，子息達天聰。順排父母到子息，代代人財退。
   applicable_to: []
   caveats:
@@ -196,8 +196,8 @@ rules:
   statement: 结尾把翻天倒地归玄空大卦，把收山出杀归为另一路诀法。
   anchor:
     file: sources/fulltext/fengshui/tianyu-jing/fulltext.md
-    start_line: 252
-    end_line: 254
+    start_line: 342
+    end_line: 342
   quote: 世人不知天機秘，泄破有何益。汝今傳得地中仙，玄空妙難言。翻天倒地更玄玄，大外不易傳。更有收山出殺訣，亦兼為汝說。相逢大地能幾人，個個是知心。若還求地不種德，隱口深藏舌。
   applicable_to: []
   caveats:
@@ -212,8 +212,8 @@ rules:
   statement: 外编以乾丙乙与子寅辰等分属金，艮庚丁卯巳丑分属水，并以坤壬辛与午申戌、甲癸与亥酉未等分属木火，归为阴阳天地卦与四经五行。
   anchor:
     file: sources/fulltext/fengshui/tianyu-jing/fulltext.md
-    start_line: 256
-    end_line: 258
+    start_line: 346
+    end_line: 346
   quote: 卦號玄空理最幽，乾坤艮巽問蹤由。坎了震兌分天地，五行更在位中求。第一《天寶經》最妙，第二要看《龍子經》。第三一經名《玄女》，第四《寶照經》為名。乾丙乙與子寅辰，六位排來俱屬金。艮庚丁卯巳醜，六位屬水由人數。以上數者盡屬陽，陽山陽水始相當。
   applicable_to: []
   caveats:
@@ -228,8 +228,8 @@ rules:
   statement: 外编明确提出“正神上山，零神下水”，并以支神为正、干神为零解释山水分用。
   anchor:
     file: sources/fulltext/fengshui/tianyu-jing/fulltext.md
-    start_line: 260
-    end_line: 280
+    start_line: 350
+    end_line: 367
   quote: 正神上山，零神下水，一也。支神為正，幹神為零，正神為龍，零神為水。山上龍神不下水，水底龍神不上山。零山作零向發財祿，而抱養零山作正向，當進舍而奸生，雖然，支在龍貴兩相生，相生家當貴，相克絕人丁，須看大五行，五行配定吉凶名，知了便橫行。山管人丁，水管財祿，二也。四龍分四房，如子寅辰不在山，則是長房無山，乾丙乙不在水，則是長房無水。山向水路在順一二三四之次序，三也。如子一龍在山，午二龍在向，則可以行。二龍水順而吉，若三龍在山而行，二龍水謂之逆，凶災立至。如壬丙向，金克水，是向克山，為逆，雖發福人丁不旺。若子山午向，金克木，是山克向，為順，主大富貴，百子千孫。以大五行論山不論向。山向水皆在卦內主貴，出卦不出貴，四也。二十四山分為三卦，寅甲卯乙辰要巳內為東分，申庚酉辛戌乾亥壬為四卦，午丁未坤子癸丑艮為南北一卦。水去要回頭，五也。四龍中皆要見一龍水則出貴，無一龍水富而不貴。如乙丙放水，當三四折再昌乙水，方得人財長久。或本向有來水，亦謂之回頭。
   applicable_to: []
   caveats:
@@ -243,8 +243,8 @@ rules:
   statement: 外编将寻龙与星峰形势绑定，强调贪、巨、武、祿、文、廉、破、辅弼等九星各有形体、护送、关峡、穴法。
   anchor:
     file: sources/fulltext/fengshui/tianyu-jing/fulltext.md
-    start_line: 345
-    end_line: 457
+    start_line: 525
+    end_line: 525
   quote: 北辰一星中天尊，上相上將居四恒。天乙太乙明堂照，華蓋三臺相後先。此星萬里不得一，此龍不許時人識。識得之時不用藏，留與皇朝鎮家國。請從垣外論九星，北斗星宮系幾名。貪巨武星並輔粥，祿文謙破地中行。九星人言有三吉，三吉之徐有輔瓣。不知星曜定錙株，禍福之門教君識。
   applicable_to: []
   caveats:

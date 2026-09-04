@@ -5,15 +5,15 @@ book:
   title: 果天经/果老星宗
   script: simplified
   fulltext: sources/fulltext/xingming/guotian-jing/fulltext.md
-  fulltext_sha256: 3846727ba925eaf7b5a9e363f2561355a0ed58fddc73d0735d30e9dadc904e67
+  fulltext_sha256: 497368916cde5dc4184b5be072ab9c3b5be4c8cb3b977b788925bccd9497935d
 rules:
 - rule_id: GR-01
   kind: doctrine
   statement: 年干起月：甲己起丙寅，乙庚起戊寅，丙辛起庚寅，丁壬起壬寅，戊癸起甲寅；日干起时：甲己起甲子，乙庚起丙子，丙辛起戊子，丁壬起庚子，戊癸起壬子。
   anchor:
     file: sources/fulltext/xingming/guotian-jing/fulltext.md
-    start_line: 31
-    end_line: 31
+    start_line: 221
+    end_line: 221
   quote: 年上起月、此起八字法也。
   applicable_to: []
   caveats:
@@ -64,8 +64,8 @@ rules:
   statement: 依出生时刻 + 太阳所躔之宿度 + 节气，按度推宫定命。
   anchor:
     file: sources/fulltext/xingming/guotian-jing/fulltext.md
-    start_line: 130
-    end_line: 130
+    start_line: 359
+    end_line: 359
   quote: 度：度主者，谓：
   applicable_to: []
   caveats:
@@ -79,8 +79,8 @@ rules:
   statement: 大限按宫流转，每宫年数依洞微百六限分配；年分诀 / 行度诀辅助计算。
   anchor:
     file: sources/fulltext/xingming/guotian-jing/fulltext.md
-    start_line: 160
-    end_line: 160
+    start_line: 389
+    end_line: 389
   quote: 向：向者诸星向朝也，如日月向朝，如官福向朝，如田财向朝，如文魁向朝，如经纬向朝，如三元满用向朝，如一主专权向朝。向者有情凶星又怕向。
   applicable_to: []
   caveats:
@@ -130,8 +130,8 @@ rules:
   statement: 天禄主享禄，天暗主暗昧；一吉一凶相对。
   anchor:
     file: sources/fulltext/xingming/guotian-jing/fulltext.md
-    start_line: 356
-    end_line: 356
+    start_line: 596
+    end_line: 596
   quote: 天禄、仕人遇之主食俸禄庶人有之亦主享福。
   applicable_to: []
   caveats:
@@ -145,8 +145,8 @@ rules:
   statement: 天刑（刑伤）/ 天印（官印）/ 天囚（拘禁）/ 天权（权柄）四星组合。
   anchor:
     file: sources/fulltext/xingming/guotian-jing/fulltext.md
-    start_line: 420
-    end_line: 420
+    start_line: 660
+    end_line: 660
   quote: 天囚、若遇阑干贯索相并主牢狱之患
   applicable_to: []
   caveats:
@@ -172,8 +172,8 @@ rules:
   statement: 天经 / 地纬 / 天马 / 地驿 / 卦气 / 三元禄 / 职元 / 局主 共 8 星，构成命盘第二层主星。
   anchor:
     file: sources/fulltext/xingming/guotian-jing/fulltext.md
-    start_line: 520
-    end_line: 520
+    start_line: 760
+    end_line: 760
   quote: 壬甲从干乙癸坤，
   applicable_to: []
   caveats:
@@ -211,8 +211,8 @@ rules:
   statement: 月廉 / 月煞 / 值难 / 的杀 / 咸池 / 大煞 共 6 星；多与"色 / 难 / 杀"相关。
   anchor:
     file: sources/fulltext/xingming/guotian-jing/fulltext.md
-    start_line: 700
-    end_line: 700
+    start_line: 954
+    end_line: 954
   quote: 五十一月临巳上，
   applicable_to: []
   caveats:
@@ -226,8 +226,8 @@ rules:
   statement: 空亡 / 孤虚 / 孤辰 / 寡宿 共 4 煞。
   anchor:
     file: sources/fulltext/xingming/guotian-jing/fulltext.md
-    start_line: 740
-    end_line: 740
+    start_line: 994
+    end_line: 994
   quote: 牛头大忌，又谓之破碎。
   applicable_to: []
   caveats:
@@ -242,8 +242,8 @@ rules:
   statement: 三刑 / 六害 / 劫杀 / 亡神 / 天罗（戌亥）/ 地网（辰巳）共 6 煞群；多与"狱讼""博戏亡家""伤害"语相关。
   anchor:
     file: sources/fulltext/xingming/guotian-jing/fulltext.md
-    start_line: 770
-    end_line: 770
+    start_line: 1024
+    end_line: 1024
   quote: 金空则鸣火空发，
   applicable_to: []
   caveats:
@@ -257,8 +257,8 @@ rules:
   statement: 五行长生例 + 天干化曜星例 + 天干吉凶星例；用于推干合长生 + 化曜。
   anchor:
     file: sources/fulltext/xingming/guotian-jing/fulltext.md
-    start_line: 880
-    end_line: 880
+    start_line: 1137
+    end_line: 1137
   quote: 巳酉丑人马在亥，
   applicable_to: []
   caveats:
@@ -272,8 +272,8 @@ rules:
   statement: 五行配四时；春木旺 / 夏火旺 / 秋金旺 / 冬水旺 / 四季土旺；旺相休囚死五态。
   anchor:
     file: sources/fulltext/xingming/guotian-jing/fulltext.md
-    start_line: 1015
-    end_line: 1015
+    start_line: 1272
+    end_line: 1272
   quote: 豹尾：同 上，戌未辰丑戌未辰丑戌未辰丑。
   applicable_to: []
   caveats:
@@ -299,8 +299,8 @@ rules:
   statement: 钦天监校正授时过宫度图 + 逐年行度图 + 命度图；古书中具体图缺。
   anchor:
     file: sources/fulltext/xingming/guotian-jing/fulltext.md
-    start_line: 1061
-    end_line: 1061
+    start_line: 1323
+    end_line: 1323
   quote: 钦天监校正授时过宫度图：缺图
   applicable_to: []
   caveats:
@@ -314,8 +314,8 @@ rules:
   statement: 先天心法以二十八宿为经，以十一曜为用；尊莫尊于日月，美莫美于官福；贵贱论煞，贫富论财；贤愚识其高卑，寿夭观其元气。
   anchor:
     file: sources/fulltext/xingming/guotian-jing/fulltext.md
-    start_line: 1066
-    end_line: 1066
+    start_line: 1328
+    end_line: 1328
   quote: 先天心法、李?问答
   applicable_to: []
   caveats:
@@ -329,8 +329,8 @@ rules:
   statement: 后天口诀以斗杓 / 卦气 / 唐符国印 / 天雄地雌为限度核心；常人命中皆有天雄地雌空亡的煞天地二耗。
   anchor:
     file: sources/fulltext/xingming/guotian-jing/fulltext.md
-    start_line: 1088
-    end_line: 1088
+    start_line: 1367
+    end_line: 1367
   quote: 后天口诀、李?问答
   applicable_to: []
   caveats:
@@ -344,8 +344,8 @@ rules:
   statement: 天经地纬夹拱不离者为贵；斗杓地立身安命为富贵；唐符国印守身命为奇；阴注阳受身命值之化凶为吉。
   anchor:
     file: sources/fulltext/xingming/guotian-jing/fulltext.md
-    start_line: 1122
-    end_line: 1122
+    start_line: 1401
+    end_line: 1401
   quote: 至宝论、李?问答
   applicable_to: []
   caveats:
@@ -359,8 +359,8 @@ rules:
   statement: 人生贤愚寿夭非今日为然；气禀之始终各异；以宫主 / 度主 / 身主三主论命；过犹不及泥在太拘。
   anchor:
     file: sources/fulltext/xingming/guotian-jing/fulltext.md
-    start_line: 1146
-    end_line: 1146
+    start_line: 1431
+    end_line: 1431
   quote: 评人生禀赋分金论、李?问答
   applicable_to: []
   caveats:

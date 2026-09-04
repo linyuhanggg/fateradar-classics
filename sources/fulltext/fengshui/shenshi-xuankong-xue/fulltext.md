@@ -10,203 +10,21 @@ generated: 2026-06-17
 
 # 增广沈氏玄空学（公开专题转写层）
 
-版本说明：本 normalized source 来自 `special.rhky.com` 公开专题《增广沈氏玄空学 上》的章节页，共 158 个章节。它是公开网页转写层，不是 1935 民国排印本/第三版的逐页影印 OCR 校本。纯图像或卷标页保留为 image_only/skipped，不抽取为规则。
-
-## 章节目录
-
-| seq | chapter_id | title | digest_status | text_chars | image_count | source |
-|---:|---:|---|---|---:|---:|---|
-| 1 | 814953106 | 目录 | skipped | 0 | 1 | https://special.rhky.com/mobile/mooc/tocard/814953106?courseId=240632071&name=%E7%9B%AE%E5%BD%95&code=&btype=tushu |
-| 2 | 814953107 | 增广沈氏玄空学卷首 | skipped | 0 | 1 | https://special.rhky.com/mobile/mooc/tocard/814953107?courseId=240632071&name=%E5%A2%9E%E5%B9%BF%E6%B2%88%E6%B0%8F%E7%8E%84%E7%A9%BA%E5%AD%A6%E5%8D%B7%E9%A6%96&code=&btype=tushu |
-| 3 | 814953108 | 增广沈氏玄空学序 | done | 740 | 1 | https://special.rhky.com/mobile/mooc/tocard/814953108?courseId=240632071&name=%E5%A2%9E%E5%B9%BF%E6%B2%88%E6%B0%8F%E7%8E%84%E7%A9%BA%E5%AD%A6%E5%BA%8F&code=&btype=tushu |
-| 4 | 814953109 | 重编沈氏玄空学题词 | done | 270 | 1 | https://special.rhky.com/mobile/mooc/tocard/814953109?courseId=240632071&name=%E9%87%8D%E7%BC%96%E6%B2%88%E6%B0%8F%E7%8E%84%E7%A9%BA%E5%AD%A6%E9%A2%98%E8%AF%8D&code=&btype=tushu |
-| 5 | 814953110 | 重编沈氏玄空学序 | done | 932 | 1 | https://special.rhky.com/mobile/mooc/tocard/814953110?courseId=240632071&name=%E9%87%8D%E7%BC%96%E6%B2%88%E6%B0%8F%E7%8E%84%E7%A9%BA%E5%AD%A6%E5%BA%8F&code=&btype=tushu |
-| 6 | 814953111 | 沈氏玄空学序 | done | 2171 | 1 | https://special.rhky.com/mobile/mooc/tocard/814953111?courseId=240632071&name=%E6%B2%88%E6%B0%8F%E7%8E%84%E7%A9%BA%E5%AD%A6%E5%BA%8F&code=&btype=tushu |
-| 7 | 814953112 | 沈氏玄空学序 | done | 404 | 1 | https://special.rhky.com/mobile/mooc/tocard/814953112?courseId=240632071&name=%E6%B2%88%E6%B0%8F%E7%8E%84%E7%A9%BA%E5%AD%A6%E5%BA%8F&code=&btype=tushu |
-| 8 | 814953113 | 沈氏玄空学跋 | done | 848 | 1 | https://special.rhky.com/mobile/mooc/tocard/814953113?courseId=240632071&name=%E6%B2%88%E6%B0%8F%E7%8E%84%E7%A9%BA%E5%AD%A6%E8%B7%8B&code=&btype=tushu |
-| 9 | 814953114 | 沈氏玄空学四种序 | done | 562 | 1 | https://special.rhky.com/mobile/mooc/tocard/814953114?courseId=240632071&name=%E6%B2%88%E6%B0%8F%E7%8E%84%E7%A9%BA%E5%AD%A6%E5%9B%9B%E7%A7%8D%E5%BA%8F&code=&btype=tushu |
-| 10 | 814953115 | 沈氏玄空学四种序 | done | 735 | 1 | https://special.rhky.com/mobile/mooc/tocard/814953115?courseId=240632071&name=%E6%B2%88%E6%B0%8F%E7%8E%84%E7%A9%BA%E5%AD%A6%E5%9B%9B%E7%A7%8D%E5%BA%8F&code=&btype=tushu |
-| 11 | 814953116 | 沈氏玄空学序 | done | 3071 | 1 | https://special.rhky.com/mobile/mooc/tocard/814953116?courseId=240632071&name=%E6%B2%88%E6%B0%8F%E7%8E%84%E7%A9%BA%E5%AD%A6%E5%BA%8F&code=&btype=tushu |
-| 12 | 814953117 | 沈竹礽先生玄空学遗著题词 | done | 336 | 1 | https://special.rhky.com/mobile/mooc/tocard/814953117?courseId=240632071&name=%E6%B2%88%E7%AB%B9%E7%A4%BD%E5%85%88%E7%94%9F%E7%8E%84%E7%A9%BA%E5%AD%A6%E9%81%97%E8%91%97%E9%A2%98%E8%AF%8D&code=&btype=tushu |
-| 13 | 814953118 | 敬题竹礽丈玄空学遗著 | done | 67 | 1 | https://special.rhky.com/mobile/mooc/tocard/814953118?courseId=240632071&name=%E6%95%AC%E9%A2%98%E7%AB%B9%E7%A4%BD%E4%B8%88%E7%8E%84%E7%A9%BA%E5%AD%A6%E9%81%97%E8%91%97&code=&btype=tushu |
-| 14 | 814953119 | 钱塘沈竹礽先生传 | done | 817 | 1 | https://special.rhky.com/mobile/mooc/tocard/814953119?courseId=240632071&name=%E9%92%B1%E5%A1%98%E6%B2%88%E7%AB%B9%E7%A4%BD%E5%85%88%E7%94%9F%E4%BC%A0&code=&btype=tushu |
-| 15 | 814953120 | 钱塘沈竹礽先生墓表 | done | 1621 | 1 | https://special.rhky.com/mobile/mooc/tocard/814953120?courseId=240632071&name=%E9%92%B1%E5%A1%98%E6%B2%88%E7%AB%B9%E7%A4%BD%E5%85%88%E7%94%9F%E5%A2%93%E8%A1%A8&code=&btype=tushu |
-| 16 | 814953121 | 增广沈氏玄空学卷一 | skipped | 0 | 1 | https://special.rhky.com/mobile/mooc/tocard/814953121?courseId=240632071&name=%E5%A2%9E%E5%B9%BF%E6%B2%88%E6%B0%8F%E7%8E%84%E7%A9%BA%E5%AD%A6%E5%8D%B7%E4%B8%80&code=&btype=tushu |
-| 17 | 814953122 | 自得斋地理丛说 | skipped | 0 | 1 | https://special.rhky.com/mobile/mooc/tocard/814953122?courseId=240632071&name=%E8%87%AA%E5%BE%97%E6%96%8B%E5%9C%B0%E7%90%86%E4%B8%9B%E8%AF%B4&code=&btype=tushu |
-| 18 | 814953123 | 缘　起 | done | 1121 | 1 | https://special.rhky.com/mobile/mooc/tocard/814953123?courseId=240632071&name=%E7%BC%98%E3%80%80%E8%B5%B7&code=&btype=tushu |
-| 19 | 814953124 | 论玄空 | done | 239 | 1 | https://special.rhky.com/mobile/mooc/tocard/814953124?courseId=240632071&name=%E8%AE%BA%E7%8E%84%E7%A9%BA&code=&btype=tushu |
-| 20 | 814953125 | 论天心 | done | 281 | 1 | https://special.rhky.com/mobile/mooc/tocard/814953125?courseId=240632071&name=%E8%AE%BA%E5%A4%A9%E5%BF%83&code=&btype=tushu |
-| 21 | 814953126 | 论罗经 | done | 3428 | 1 | https://special.rhky.com/mobile/mooc/tocard/814953126?courseId=240632071&name=%E8%AE%BA%E7%BD%97%E7%BB%8F&code=&btype=tushu |
-| 22 | 814953127 | 论紫白 | done | 1353 | 3 | https://special.rhky.com/mobile/mooc/tocard/814953127?courseId=240632071&name=%E8%AE%BA%E7%B4%AB%E7%99%BD&code=&btype=tushu |
-| 23 | 814953128 | 论父母子息 | done | 1252 | 1 | https://special.rhky.com/mobile/mooc/tocard/814953128?courseId=240632071&name=%E8%AE%BA%E7%88%B6%E6%AF%8D%E5%AD%90%E6%81%AF&code=&btype=tushu |
-| 24 | 814953129 | 论夫妇合十 | done | 1466 | 3 | https://special.rhky.com/mobile/mooc/tocard/814953129?courseId=240632071&name=%E8%AE%BA%E5%A4%AB%E5%A6%87%E5%90%88%E5%8D%81&code=&btype=tushu |
-| 25 | 814953130 | 论阴阳零正 | done | 1113 | 1 | https://special.rhky.com/mobile/mooc/tocard/814953130?courseId=240632071&name=%E8%AE%BA%E9%98%B4%E9%98%B3%E9%9B%B6%E6%AD%A3&code=&btype=tushu |
-| 26 | 814953131 | 论下卦 | done | 1929 | 1 | https://special.rhky.com/mobile/mooc/tocard/814953131?courseId=240632071&name=%E8%AE%BA%E4%B8%8B%E5%8D%A6&code=&btype=tushu |
-| 27 | 814953132 | 论起星 | done | 5103 | 4 | https://special.rhky.com/mobile/mooc/tocard/814953132?courseId=240632071&name=%E8%AE%BA%E8%B5%B7%E6%98%9F&code=&btype=tushu |
-| 28 | 814953133 | 论向水 | done | 1416 | 1 | https://special.rhky.com/mobile/mooc/tocard/814953133?courseId=240632071&name=%E8%AE%BA%E5%90%91%E6%B0%B4&code=&btype=tushu |
-| 29 | 814953134 | 论城门 | done | 2390 | 1 | https://special.rhky.com/mobile/mooc/tocard/814953134?courseId=240632071&name=%E8%AE%BA%E5%9F%8E%E9%97%A8&code=&btype=tushu |
-| 30 | 814953135 | 论七星打劫 | done | 4400 | 4 | https://special.rhky.com/mobile/mooc/tocard/814953135?courseId=240632071&name=%E8%AE%BA%E4%B8%83%E6%98%9F%E6%89%93%E5%8A%AB&code=&btype=tushu |
-| 31 | 814953136 | 增广沈氏玄空学卷二 | skipped | 0 | 1 | https://special.rhky.com/mobile/mooc/tocard/814953136?courseId=240632071&name=%E5%A2%9E%E5%B9%BF%E6%B2%88%E6%B0%8F%E7%8E%84%E7%A9%BA%E5%AD%A6%E5%8D%B7%E4%BA%8C&code=&btype=tushu |
-| 32 | 814953137 | 自得斋地理丛说 | skipped | 0 | 1 | https://special.rhky.com/mobile/mooc/tocard/814953137?courseId=240632071&name=%E8%87%AA%E5%BE%97%E6%96%8B%E5%9C%B0%E7%90%86%E4%B8%9B%E8%AF%B4&code=&btype=tushu |
-| 33 | 814953138 | 论四十八局 | done | 1439 | 1 | https://special.rhky.com/mobile/mooc/tocard/814953138?courseId=240632071&name=%E8%AE%BA%E5%9B%9B%E5%8D%81%E5%85%AB%E5%B1%80&code=&btype=tushu |
-| 34 | 814953140 | 论上山下水、到山到向 | done | 450 | 1 | https://special.rhky.com/mobile/mooc/tocard/814953140?courseId=240632071&name=%E8%AE%BA%E4%B8%8A%E5%B1%B1%E4%B8%8B%E6%B0%B4%E3%80%81%E5%88%B0%E5%B1%B1%E5%88%B0%E5%90%91&code=&btype=tushu |
-| 35 | 814953142 | 论三星五吉 | done | 189 | 1 | https://special.rhky.com/mobile/mooc/tocard/814953142?courseId=240632071&name=%E8%AE%BA%E4%B8%89%E6%98%9F%E4%BA%94%E5%90%89&code=&btype=tushu |
-| 36 | 814953144 | 论一四同宫 | done | 382 | 1 | https://special.rhky.com/mobile/mooc/tocard/814953144?courseId=240632071&name=%E8%AE%BA%E4%B8%80%E5%9B%9B%E5%90%8C%E5%AE%AB&code=&btype=tushu |
-| 37 | 814953146 | 论反吟伏吟 | done | 1300 | 4 | https://special.rhky.com/mobile/mooc/tocard/814953146?courseId=240632071&name=%E8%AE%BA%E5%8F%8D%E5%90%9F%E4%BC%8F%E5%90%9F&code=&btype=tushu |
-| 38 | 814953148 | 论令星入囚 | done | 471 | 1 | https://special.rhky.com/mobile/mooc/tocard/814953148?courseId=240632071&name=%E8%AE%BA%E4%BB%A4%E6%98%9F%E5%85%A5%E5%9B%9A&code=&btype=tushu |
-| 39 | 814953150 | 论收山出煞 | done | 183 | 1 | https://special.rhky.com/mobile/mooc/tocard/814953150?courseId=240632071&name=%E8%AE%BA%E6%94%B6%E5%B1%B1%E5%87%BA%E7%85%9E&code=&btype=tushu |
-| 40 | 814953152 | 论分金 | done | 4276 | 4 | https://special.rhky.com/mobile/mooc/tocard/814953152?courseId=240632071&name=%E8%AE%BA%E5%88%86%E9%87%91&code=&btype=tushu |
-| 41 | 814953154 | 论照神 | done | 161 | 1 | https://special.rhky.com/mobile/mooc/tocard/814953154?courseId=240632071&name=%E8%AE%BA%E7%85%A7%E7%A5%9E&code=&btype=tushu |
-| 42 | 814953156 | 论八煞黄泉 | done | 1944 | 1 | https://special.rhky.com/mobile/mooc/tocard/814953156?courseId=240632071&name=%E8%AE%BA%E5%85%AB%E7%85%9E%E9%BB%84%E6%B3%89&code=&btype=tushu |
-| 43 | 814953158 | 论消亡水 | done | 179 | 1 | https://special.rhky.com/mobile/mooc/tocard/814953158?courseId=240632071&name=%E8%AE%BA%E6%B6%88%E4%BA%A1%E6%B0%B4&code=&btype=tushu |
-| 44 | 814953160 | 论三合 | done | 1299 | 2 | https://special.rhky.com/mobile/mooc/tocard/814953160?courseId=240632071&name=%E8%AE%BA%E4%B8%89%E5%90%88&code=&btype=tushu |
-| 45 | 814953162 | 论双山 | done | 207 | 1 | https://special.rhky.com/mobile/mooc/tocard/814953162?courseId=240632071&name=%E8%AE%BA%E5%8F%8C%E5%B1%B1&code=&btype=tushu |
-| 46 | 814953164 | 论纳甲 | done | 121 | 1 | https://special.rhky.com/mobile/mooc/tocard/814953164?courseId=240632071&name=%E8%AE%BA%E7%BA%B3%E7%94%B2&code=&btype=tushu |
-| 47 | 814953166 | 论奇门 | done | 1012 | 3 | https://special.rhky.com/mobile/mooc/tocard/814953166?courseId=240632071&name=%E8%AE%BA%E5%A5%87%E9%97%A8&code=&btype=tushu |
-| 48 | 814953167 | 论选择 | done | 2687 | 1 | https://special.rhky.com/mobile/mooc/tocard/814953167?courseId=240632071&name=%E8%AE%BA%E9%80%89%E6%8B%A9&code=&btype=tushu |
-| 49 | 814953169 | 论三元伪法 | done | 1759 | 4 | https://special.rhky.com/mobile/mooc/tocard/814953169?courseId=240632071&name=%E8%AE%BA%E4%B8%89%E5%85%83%E4%BC%AA%E6%B3%95&code=&btype=tushu |
-| 50 | 814953171 | 论一行伪法 | done | 812 | 4 | https://special.rhky.com/mobile/mooc/tocard/814953171?courseId=240632071&name=%E8%AE%BA%E4%B8%80%E8%A1%8C%E4%BC%AA%E6%B3%95&code=&btype=tushu |
-| 51 | 814953173 | 论诸家得失 | done | 4359 | 1 | https://special.rhky.com/mobile/mooc/tocard/814953173?courseId=240632071&name=%E8%AE%BA%E8%AF%B8%E5%AE%B6%E5%BE%97%E5%A4%B1&code=&btype=tushu |
-| 52 | 814953175 | 论秘密之谬 | done | 3263 | 1 | https://special.rhky.com/mobile/mooc/tocard/814953175?courseId=240632071&name=%E8%AE%BA%E7%A7%98%E5%AF%86%E4%B9%8B%E8%B0%AC&code=&btype=tushu |
-| 53 | 814953177 | 论阳宅 | done | 251 | 1 | https://special.rhky.com/mobile/mooc/tocard/814953177?courseId=240632071&name=%E8%AE%BA%E9%98%B3%E5%AE%85&code=&btype=tushu |
-| 54 | 814953179 | 罗盘图说 | done | 81 | 1 | https://special.rhky.com/mobile/mooc/tocard/814953179?courseId=240632071&name=%E7%BD%97%E7%9B%98%E5%9B%BE%E8%AF%B4&code=&btype=tushu |
-| 55 | 814953181 | 钱塘沈竹礽更正蒋盘简式 | skipped | 0 | 4 | https://special.rhky.com/mobile/mooc/tocard/814953181?courseId=240632071&name=%E9%92%B1%E5%A1%98%E6%B2%88%E7%AB%B9%E7%A4%BD%E6%9B%B4%E6%AD%A3%E8%92%8B%E7%9B%98%E7%AE%80%E5%BC%8F&code=&btype=tushu |
-| 56 | 814953183 | 增广沈氏玄空学卷三 | skipped | 0 | 1 | https://special.rhky.com/mobile/mooc/tocard/814953183?courseId=240632071&name=%E5%A2%9E%E5%B9%BF%E6%B2%88%E6%B0%8F%E7%8E%84%E7%A9%BA%E5%AD%A6%E5%8D%B7%E4%B8%89&code=&btype=tushu |
-| 57 | 814953185 | 原　序 | done | 270 | 1 | https://special.rhky.com/mobile/mooc/tocard/814953185?courseId=240632071&name=%E5%8E%9F%E3%80%80%E5%BA%8F&code=&btype=tushu |
-| 58 | 814953187 | 阴宅秘断（计五十四条） | done | 25 | 1 | https://special.rhky.com/mobile/mooc/tocard/814953187?courseId=240632071&name=%E9%98%B4%E5%AE%85%E7%A7%98%E6%96%AD%EF%BC%88%E8%AE%A1%E4%BA%94%E5%8D%81%E5%9B%9B%E6%9D%A1%EF%BC%89&code=&btype=tushu |
-| 59 | 814953189 | 常州张姓祖墓　癸山丁向　一运扦 | done | 320 | 2 | https://special.rhky.com/mobile/mooc/tocard/814953189?courseId=240632071&name=%E5%B8%B8%E5%B7%9E%E5%BC%A0%E5%A7%93%E7%A5%96%E5%A2%93%E3%80%80%E7%99%B8%E5%B1%B1%E4%B8%81%E5%90%91%E3%80%80%E4%B8%80%E8%BF%90%E6%89%A6&code=&btype=tushu |
-| 60 | 814953191 | 杨姓祖墓　亥山巳向　一运扦 | done | 306 | 2 | https://special.rhky.com/mobile/mooc/tocard/814953191?courseId=240632071&name=%E6%9D%A8%E5%A7%93%E7%A5%96%E5%A2%93%E3%80%80%E4%BA%A5%E5%B1%B1%E5%B7%B3%E5%90%91%E3%80%80%E4%B8%80%E8%BF%90%E6%89%A6&code=&btype=tushu |
-| 61 | 814953193 | 柳塘桥张姓祖墓　申山寅向　一运扦 | done | 246 | 2 | https://special.rhky.com/mobile/mooc/tocard/814953193?courseId=240632071&name=%E6%9F%B3%E5%A1%98%E6%A1%A5%E5%BC%A0%E5%A7%93%E7%A5%96%E5%A2%93%E3%80%80%E7%94%B3%E5%B1%B1%E5%AF%85%E5%90%91%E3%80%80%E4%B8%80%E8%BF%90%E6%89%A6&code=&btype=tushu |
-| 62 | 814953195 | 无锡石塘湾孙姓祖墓　子山午向　二运扦 | done | 322 | 2 | https://special.rhky.com/mobile/mooc/tocard/814953195?courseId=240632071&name=%E6%97%A0%E9%94%A1%E7%9F%B3%E5%A1%98%E6%B9%BE%E5%AD%99%E5%A7%93%E7%A5%96%E5%A2%93%E3%80%80%E5%AD%90%E5%B1%B1%E5%8D%88%E5%90%91%E3%80%80%E4%BA%8C%E8%BF%90%E6%89%A6&code=&btype=tushu |
-| 63 | 814953197 | 上虞鲤鱼山钱姓祖墓　辛乙兼酉卯　二运扦 | done | 720 | 2 | https://special.rhky.com/mobile/mooc/tocard/814953197?courseId=240632071&name=%E4%B8%8A%E8%99%9E%E9%B2%A4%E9%B1%BC%E5%B1%B1%E9%92%B1%E5%A7%93%E7%A5%96%E5%A2%93%E3%80%80%E8%BE%9B%E4%B9%99%E5%85%BC%E9%85%89%E5%8D%AF%E3%80%80%E4%BA%8C%E8%BF%90%E6%89%A6&code=&btype=tushu |
-| 64 | 814953199 | 上虞某姓祖墓　坐乙向辛　二运扦 | done | 558 | 2 | https://special.rhky.com/mobile/mooc/tocard/814953199?courseId=240632071&name=%E4%B8%8A%E8%99%9E%E6%9F%90%E5%A7%93%E7%A5%96%E5%A2%93%E3%80%80%E5%9D%90%E4%B9%99%E5%90%91%E8%BE%9B%E3%80%80%E4%BA%8C%E8%BF%90%E6%89%A6&code=&btype=tushu |
-| 65 | 814953201 | 孙姓祖墓　壬山丙向　二运扦 | done | 257 | 2 | https://special.rhky.com/mobile/mooc/tocard/814953201?courseId=240632071&name=%E5%AD%99%E5%A7%93%E7%A5%96%E5%A2%93%E3%80%80%E5%A3%AC%E5%B1%B1%E4%B8%99%E5%90%91%E3%80%80%E4%BA%8C%E8%BF%90%E6%89%A6&code=&btype=tushu |
-| 66 | 814953203 | 章姓祖墓　壬山丙向　二运扦 | done | 194 | 2 | https://special.rhky.com/mobile/mooc/tocard/814953203?courseId=240632071&name=%E7%AB%A0%E5%A7%93%E7%A5%96%E5%A2%93%E3%80%80%E5%A3%AC%E5%B1%B1%E4%B8%99%E5%90%91%E3%80%80%E4%BA%8C%E8%BF%90%E6%89%A6&code=&btype=tushu |
-| 67 | 814953205 | 施姓祖墓　酉山卯向　二运扦 | done | 152 | 2 | https://special.rhky.com/mobile/mooc/tocard/814953205?courseId=240632071&name=%E6%96%BD%E5%A7%93%E7%A5%96%E5%A2%93%E3%80%80%E9%85%89%E5%B1%B1%E5%8D%AF%E5%90%91%E3%80%80%E4%BA%8C%E8%BF%90%E6%89%A6&code=&btype=tushu |
-| 68 | 814953207 | 裴姓祖墓　未山丑向　二运扦 | done | 380 | 2 | https://special.rhky.com/mobile/mooc/tocard/814953207?courseId=240632071&name=%E8%A3%B4%E5%A7%93%E7%A5%96%E5%A2%93%E3%80%80%E6%9C%AA%E5%B1%B1%E4%B8%91%E5%90%91%E3%80%80%E4%BA%8C%E8%BF%90%E6%89%A6&code=&btype=tushu |
-| 69 | 814953209 | 锦棚桥陆姓祖墓　酉山卯向　二运扦 | done | 335 | 2 | https://special.rhky.com/mobile/mooc/tocard/814953209?courseId=240632071&name=%E9%94%A6%E6%A3%9A%E6%A1%A5%E9%99%86%E5%A7%93%E7%A5%96%E5%A2%93%E3%80%80%E9%85%89%E5%B1%B1%E5%8D%AF%E5%90%91%E3%80%80%E4%BA%8C%E8%BF%90%E6%89%A6&code=&btype=tushu |
-| 70 | 814953211 | 状元钱茶山祖墓　丑山未向　二运扦 | done | 406 | 2 | https://special.rhky.com/mobile/mooc/tocard/814953211?courseId=240632071&name=%E7%8A%B6%E5%85%83%E9%92%B1%E8%8C%B6%E5%B1%B1%E7%A5%96%E5%A2%93%E3%80%80%E4%B8%91%E5%B1%B1%E6%9C%AA%E5%90%91%E3%80%80%E4%BA%8C%E8%BF%90%E6%89%A6&code=&btype=tushu |
-| 71 | 814953213 | 鲍姓祖墓　辛山乙向　三运扦 | done | 299 | 2 | https://special.rhky.com/mobile/mooc/tocard/814953213?courseId=240632071&name=%E9%B2%8D%E5%A7%93%E7%A5%96%E5%A2%93%E3%80%80%E8%BE%9B%E5%B1%B1%E4%B9%99%E5%90%91%E3%80%80%E4%B8%89%E8%BF%90%E6%89%A6&code=&btype=tushu |
-| 72 | 814953215 | 钱塘鲁斯占祖墓　丙山壬向　三运扦 | done | 323 | 2 | https://special.rhky.com/mobile/mooc/tocard/814953215?courseId=240632071&name=%E9%92%B1%E5%A1%98%E9%B2%81%E6%96%AF%E5%8D%A0%E7%A5%96%E5%A2%93%E3%80%80%E4%B8%99%E5%B1%B1%E5%A3%AC%E5%90%91%E3%80%80%E4%B8%89%E8%BF%90%E6%89%A6&code=&btype=tushu |
-| 73 | 814953217 | 某姓祖墓　巳山亥向　三运扦 | done | 272 | 2 | https://special.rhky.com/mobile/mooc/tocard/814953217?courseId=240632071&name=%E6%9F%90%E5%A7%93%E7%A5%96%E5%A2%93%E3%80%80%E5%B7%B3%E5%B1%B1%E4%BA%A5%E5%90%91%E3%80%80%E4%B8%89%E8%BF%90%E6%89%A6&code=&btype=tushu |
-| 74 | 814953219 | 某姓祖墓　巳山亥向　六运扦[1] | done | 232 | 2 | https://special.rhky.com/mobile/mooc/tocard/814953219?courseId=240632071&name=%E6%9F%90%E5%A7%93%E7%A5%96%E5%A2%93%E3%80%80%E5%B7%B3%E5%B1%B1%E4%BA%A5%E5%90%91%E3%80%80%E5%85%AD%E8%BF%90%E6%89%A6%5B1%5D&code=&btype=tushu |
-| 75 | 814953221 | 经姓祖墓　巳山亥向　三运扦 | done | 356 | 2 | https://special.rhky.com/mobile/mooc/tocard/814953221?courseId=240632071&name=%E7%BB%8F%E5%A7%93%E7%A5%96%E5%A2%93%E3%80%80%E5%B7%B3%E5%B1%B1%E4%BA%A5%E5%90%91%E3%80%80%E4%B8%89%E8%BF%90%E6%89%A6&code=&btype=tushu |
-| 76 | 814953223 | 经姓祖墓　巳山亥向　四运扦[2] | done | 602 | 2 | https://special.rhky.com/mobile/mooc/tocard/814953223?courseId=240632071&name=%E7%BB%8F%E5%A7%93%E7%A5%96%E5%A2%93%E3%80%80%E5%B7%B3%E5%B1%B1%E4%BA%A5%E5%90%91%E3%80%80%E5%9B%9B%E8%BF%90%E6%89%A6%5B2%5D&code=&btype=tushu |
-| 77 | 814953225 | 嵇中堂祖墓　子午兼壬丙　三运扦 | done | 455 | 2 | https://special.rhky.com/mobile/mooc/tocard/814953225?courseId=240632071&name=%E5%B5%87%E4%B8%AD%E5%A0%82%E7%A5%96%E5%A2%93%E3%80%80%E5%AD%90%E5%8D%88%E5%85%BC%E5%A3%AC%E4%B8%99%E3%80%80%E4%B8%89%E8%BF%90%E6%89%A6&code=&btype=tushu |
-| 78 | 814953227 | 严探花祖墓　辰山戌向　三运扦 | done | 285 | 2 | https://special.rhky.com/mobile/mooc/tocard/814953227?courseId=240632071&name=%E4%B8%A5%E6%8E%A2%E8%8A%B1%E7%A5%96%E5%A2%93%E3%80%80%E8%BE%B0%E5%B1%B1%E6%88%8C%E5%90%91%E3%80%80%E4%B8%89%E8%BF%90%E6%89%A6&code=&btype=tushu |
-| 79 | 814953229 | 唐姓祖墓　甲山庚向　四运扦 | done | 402 | 2 | https://special.rhky.com/mobile/mooc/tocard/814953229?courseId=240632071&name=%E5%94%90%E5%A7%93%E7%A5%96%E5%A2%93%E3%80%80%E7%94%B2%E5%B1%B1%E5%BA%9A%E5%90%91%E3%80%80%E5%9B%9B%E8%BF%90%E6%89%A6&code=&btype=tushu |
-| 80 | 814953231 | 唐姓祖墓　申山寅向　四运扦 | done | 492 | 2 | https://special.rhky.com/mobile/mooc/tocard/814953231?courseId=240632071&name=%E5%94%90%E5%A7%93%E7%A5%96%E5%A2%93%E3%80%80%E7%94%B3%E5%B1%B1%E5%AF%85%E5%90%91%E3%80%80%E5%9B%9B%E8%BF%90%E6%89%A6&code=&btype=tushu |
-| 81 | 814953233 | 冯姓祖墓　未山丑向　四运扦 | done | 332 | 2 | https://special.rhky.com/mobile/mooc/tocard/814953233?courseId=240632071&name=%E5%86%AF%E5%A7%93%E7%A5%96%E5%A2%93%E3%80%80%E6%9C%AA%E5%B1%B1%E4%B8%91%E5%90%91%E3%80%80%E5%9B%9B%E8%BF%90%E6%89%A6&code=&btype=tushu |
-| 82 | 814953235 | 施姓祖墓　酉山卯向　四运扦 | done | 386 | 2 | https://special.rhky.com/mobile/mooc/tocard/814953235?courseId=240632071&name=%E6%96%BD%E5%A7%93%E7%A5%96%E5%A2%93%E3%80%80%E9%85%89%E5%B1%B1%E5%8D%AF%E5%90%91%E3%80%80%E5%9B%9B%E8%BF%90%E6%89%A6&code=&btype=tushu |
-| 83 | 814953237 | 钱姓祖墓　丁山癸向　四运扦 | done | 301 | 2 | https://special.rhky.com/mobile/mooc/tocard/814953237?courseId=240632071&name=%E9%92%B1%E5%A7%93%E7%A5%96%E5%A2%93%E3%80%80%E4%B8%81%E5%B1%B1%E7%99%B8%E5%90%91%E3%80%80%E5%9B%9B%E8%BF%90%E6%89%A6&code=&btype=tushu |
-| 84 | 814953239 | 谈姓祖墓　壬山丙向　四运扦 | done | 238 | 2 | https://special.rhky.com/mobile/mooc/tocard/814953239?courseId=240632071&name=%E8%B0%88%E5%A7%93%E7%A5%96%E5%A2%93%E3%80%80%E5%A3%AC%E5%B1%B1%E4%B8%99%E5%90%91%E3%80%80%E5%9B%9B%E8%BF%90%E6%89%A6&code=&btype=tushu |
-| 85 | 814953241 | 郑姓祖墓　乙山辛向　四运扦 | done | 427 | 2 | https://special.rhky.com/mobile/mooc/tocard/814953241?courseId=240632071&name=%E9%83%91%E5%A7%93%E7%A5%96%E5%A2%93%E3%80%80%E4%B9%99%E5%B1%B1%E8%BE%9B%E5%90%91%E3%80%80%E5%9B%9B%E8%BF%90%E6%89%A6&code=&btype=tushu |
-| 86 | 814953243 | 青城桥徐姓墓　乙山辛向　四运扦 | done | 340 | 2 | https://special.rhky.com/mobile/mooc/tocard/814953243?courseId=240632071&name=%E9%9D%92%E5%9F%8E%E6%A1%A5%E5%BE%90%E5%A7%93%E5%A2%93%E3%80%80%E4%B9%99%E5%B1%B1%E8%BE%9B%E5%90%91%E3%80%80%E5%9B%9B%E8%BF%90%E6%89%A6&code=&btype=tushu |
-| 87 | 814953245 | 黄姓祖墓　癸山丁向　四运扦 | done | 266 | 2 | https://special.rhky.com/mobile/mooc/tocard/814953245?courseId=240632071&name=%E9%BB%84%E5%A7%93%E7%A5%96%E5%A2%93%E3%80%80%E7%99%B8%E5%B1%B1%E4%B8%81%E5%90%91%E3%80%80%E5%9B%9B%E8%BF%90%E6%89%A6&code=&btype=tushu |
-| 88 | 814953247 | 赵姓祖墓　壬山丙向　四运扦 | done | 265 | 2 | https://special.rhky.com/mobile/mooc/tocard/814953247?courseId=240632071&name=%E8%B5%B5%E5%A7%93%E7%A5%96%E5%A2%93%E3%80%80%E5%A3%AC%E5%B1%B1%E4%B8%99%E5%90%91%E3%80%80%E5%9B%9B%E8%BF%90%E6%89%A6&code=&btype=tushu |
-| 89 | 814953249 | 蔡姓祖墓　庚山甲向　五运扦 | done | 320 | 2 | https://special.rhky.com/mobile/mooc/tocard/814953249?courseId=240632071&name=%E8%94%A1%E5%A7%93%E7%A5%96%E5%A2%93%E3%80%80%E5%BA%9A%E5%B1%B1%E7%94%B2%E5%90%91%E3%80%80%E4%BA%94%E8%BF%90%E6%89%A6&code=&btype=tushu |
-| 90 | 814953251 | 蔡姓祖墓　庚山甲向　六运扦[4] | done | 391 | 2 | https://special.rhky.com/mobile/mooc/tocard/814953251?courseId=240632071&name=%E8%94%A1%E5%A7%93%E7%A5%96%E5%A2%93%E3%80%80%E5%BA%9A%E5%B1%B1%E7%94%B2%E5%90%91%E3%80%80%E5%85%AD%E8%BF%90%E6%89%A6%5B4%5D&code=&btype=tushu |
-| 91 | 814953253 | 某姓墓　乙山辛向　五运扦 | done | 339 | 2 | https://special.rhky.com/mobile/mooc/tocard/814953253?courseId=240632071&name=%E6%9F%90%E5%A7%93%E5%A2%93%E3%80%80%E4%B9%99%E5%B1%B1%E8%BE%9B%E5%90%91%E3%80%80%E4%BA%94%E8%BF%90%E6%89%A6&code=&btype=tushu |
-| 92 | 814953255 | 徐姓祖墓　卯山酉向　五运扦 | done | 371 | 2 | https://special.rhky.com/mobile/mooc/tocard/814953255?courseId=240632071&name=%E5%BE%90%E5%A7%93%E7%A5%96%E5%A2%93%E3%80%80%E5%8D%AF%E5%B1%B1%E9%85%89%E5%90%91%E3%80%80%E4%BA%94%E8%BF%90%E6%89%A6&code=&btype=tushu |
-| 93 | 814953258 | 伊姓祖墓　癸山丁向　五运扦 | done | 285 | 2 | https://special.rhky.com/mobile/mooc/tocard/814953258?courseId=240632071&name=%E4%BC%8A%E5%A7%93%E7%A5%96%E5%A2%93%E3%80%80%E7%99%B8%E5%B1%B1%E4%B8%81%E5%90%91%E3%80%80%E4%BA%94%E8%BF%90%E6%89%A6&code=&btype=tushu |
-| 94 | 814953261 | 华姓祖墓　癸山丁向　五运扦 | done | 180 | 2 | https://special.rhky.com/mobile/mooc/tocard/814953261?courseId=240632071&name=%E5%8D%8E%E5%A7%93%E7%A5%96%E5%A2%93%E3%80%80%E7%99%B8%E5%B1%B1%E4%B8%81%E5%90%91%E3%80%80%E4%BA%94%E8%BF%90%E6%89%A6&code=&btype=tushu |
-| 95 | 814953264 | 某姓祖墓　癸山丁向　五运扦 | done | 292 | 2 | https://special.rhky.com/mobile/mooc/tocard/814953264?courseId=240632071&name=%E6%9F%90%E5%A7%93%E7%A5%96%E5%A2%93%E3%80%80%E7%99%B8%E5%B1%B1%E4%B8%81%E5%90%91%E3%80%80%E4%BA%94%E8%BF%90%E6%89%A6&code=&btype=tushu |
-| 96 | 814953267 | 周姓祖墓　壬山丙向　五运扦 | done | 214 | 2 | https://special.rhky.com/mobile/mooc/tocard/814953267?courseId=240632071&name=%E5%91%A8%E5%A7%93%E7%A5%96%E5%A2%93%E3%80%80%E5%A3%AC%E5%B1%B1%E4%B8%99%E5%90%91%E3%80%80%E4%BA%94%E8%BF%90%E6%89%A6&code=&btype=tushu |
-| 97 | 814953270 | 余姚徐姓祖墓　丑山未向　五运扦 | done | 410 | 2 | https://special.rhky.com/mobile/mooc/tocard/814953270?courseId=240632071&name=%E4%BD%99%E5%A7%9A%E5%BE%90%E5%A7%93%E7%A5%96%E5%A2%93%E3%80%80%E4%B8%91%E5%B1%B1%E6%9C%AA%E5%90%91%E3%80%80%E4%BA%94%E8%BF%90%E6%89%A6&code=&btype=tushu |
-| 98 | 814953273 | 陈余六祖墓　乙山辛向　六运扦 | done | 264 | 2 | https://special.rhky.com/mobile/mooc/tocard/814953273?courseId=240632071&name=%E9%99%88%E4%BD%99%E5%85%AD%E7%A5%96%E5%A2%93%E3%80%80%E4%B9%99%E5%B1%B1%E8%BE%9B%E5%90%91%E3%80%80%E5%85%AD%E8%BF%90%E6%89%A6&code=&btype=tushu |
-| 99 | 814953276 | 郑姓祖墓　癸山丁向　六运扦 | done | 371 | 2 | https://special.rhky.com/mobile/mooc/tocard/814953276?courseId=240632071&name=%E9%83%91%E5%A7%93%E7%A5%96%E5%A2%93%E3%80%80%E7%99%B8%E5%B1%B1%E4%B8%81%E5%90%91%E3%80%80%E5%85%AD%E8%BF%90%E6%89%A6&code=&btype=tushu |
-| 100 | 814953279 | 周姓祖墓　壬丙兼亥巳　六运扦 | done | 358 | 2 | https://special.rhky.com/mobile/mooc/tocard/814953279?courseId=240632071&name=%E5%91%A8%E5%A7%93%E7%A5%96%E5%A2%93%E3%80%80%E5%A3%AC%E4%B8%99%E5%85%BC%E4%BA%A5%E5%B7%B3%E3%80%80%E5%85%AD%E8%BF%90%E6%89%A6&code=&btype=tushu |
-| 101 | 814953282 | 胡姓祖墓　午山子向　六运扦 | done | 227 | 2 | https://special.rhky.com/mobile/mooc/tocard/814953282?courseId=240632071&name=%E8%83%A1%E5%A7%93%E7%A5%96%E5%A2%93%E3%80%80%E5%8D%88%E5%B1%B1%E5%AD%90%E5%90%91%E3%80%80%E5%85%AD%E8%BF%90%E6%89%A6&code=&btype=tushu |
-| 102 | 814953285 | 陈姓祖墓　庚山甲向　六运扦 | done | 123 | 2 | https://special.rhky.com/mobile/mooc/tocard/814953285?courseId=240632071&name=%E9%99%88%E5%A7%93%E7%A5%96%E5%A2%93%E3%80%80%E5%BA%9A%E5%B1%B1%E7%94%B2%E5%90%91%E3%80%80%E5%85%AD%E8%BF%90%E6%89%A6&code=&btype=tushu |
-| 103 | 814953288 | 孙姓祖墓　癸山丁向　六运扦 | done | 308 | 2 | https://special.rhky.com/mobile/mooc/tocard/814953288?courseId=240632071&name=%E5%AD%99%E5%A7%93%E7%A5%96%E5%A2%93%E3%80%80%E7%99%B8%E5%B1%B1%E4%B8%81%E5%90%91%E3%80%80%E5%85%AD%E8%BF%90%E6%89%A6&code=&btype=tushu |
-| 104 | 814953291 | 金姓祖墓　巽山乾向　六运扦 | done | 383 | 2 | https://special.rhky.com/mobile/mooc/tocard/814953291?courseId=240632071&name=%E9%87%91%E5%A7%93%E7%A5%96%E5%A2%93%E3%80%80%E5%B7%BD%E5%B1%B1%E4%B9%BE%E5%90%91%E3%80%80%E5%85%AD%E8%BF%90%E6%89%A6&code=&btype=tushu |
-| 105 | 814953294 | 徐姓祖墓　癸山丁向　六运附葬 | done | 476 | 2 | https://special.rhky.com/mobile/mooc/tocard/814953294?courseId=240632071&name=%E5%BE%90%E5%A7%93%E7%A5%96%E5%A2%93%E3%80%80%E7%99%B8%E5%B1%B1%E4%B8%81%E5%90%91%E3%80%80%E5%85%AD%E8%BF%90%E9%99%84%E8%91%AC&code=&btype=tushu |
-| 106 | 814953297 | 郑姓祖墓　戌山辰向　七运扦 | done | 246 | 2 | https://special.rhky.com/mobile/mooc/tocard/814953297?courseId=240632071&name=%E9%83%91%E5%A7%93%E7%A5%96%E5%A2%93%E3%80%80%E6%88%8C%E5%B1%B1%E8%BE%B0%E5%90%91%E3%80%80%E4%B8%83%E8%BF%90%E6%89%A6&code=&btype=tushu |
-| 107 | 814953300 | 慈溪俞姓祖墓　子山午向　七运扦 | done | 318 | 2 | https://special.rhky.com/mobile/mooc/tocard/814953300?courseId=240632071&name=%E6%85%88%E6%BA%AA%E4%BF%9E%E5%A7%93%E7%A5%96%E5%A2%93%E3%80%80%E5%AD%90%E5%B1%B1%E5%8D%88%E5%90%91%E3%80%80%E4%B8%83%E8%BF%90%E6%89%A6&code=&btype=tushu |
-| 108 | 814953303 | 王御史祖墓　丁山癸向　七运扦 | done | 258 | 2 | https://special.rhky.com/mobile/mooc/tocard/814953303?courseId=240632071&name=%E7%8E%8B%E5%BE%A1%E5%8F%B2%E7%A5%96%E5%A2%93%E3%80%80%E4%B8%81%E5%B1%B1%E7%99%B8%E5%90%91%E3%80%80%E4%B8%83%E8%BF%90%E6%89%A6&code=&btype=tushu |
-| 109 | 814953306 | 马姓祖墓　辰山戌向　七运扦 | done | 411 | 2 | https://special.rhky.com/mobile/mooc/tocard/814953306?courseId=240632071&name=%E9%A9%AC%E5%A7%93%E7%A5%96%E5%A2%93%E3%80%80%E8%BE%B0%E5%B1%B1%E6%88%8C%E5%90%91%E3%80%80%E4%B8%83%E8%BF%90%E6%89%A6&code=&btype=tushu |
-| 110 | 814953309 | 某姓墓　辰戌兼巽乾　八运扦 | done | 332 | 2 | https://special.rhky.com/mobile/mooc/tocard/814953309?courseId=240632071&name=%E6%9F%90%E5%A7%93%E5%A2%93%E3%80%80%E8%BE%B0%E6%88%8C%E5%85%BC%E5%B7%BD%E4%B9%BE%E3%80%80%E5%85%AB%E8%BF%90%E6%89%A6&code=&btype=tushu |
-| 111 | 814953312 | 邹状元祖墓　卯山酉向　九运扦 | done | 334 | 2 | https://special.rhky.com/mobile/mooc/tocard/814953312?courseId=240632071&name=%E9%82%B9%E7%8A%B6%E5%85%83%E7%A5%96%E5%A2%93%E3%80%80%E5%8D%AF%E5%B1%B1%E9%85%89%E5%90%91%E3%80%80%E4%B9%9D%E8%BF%90%E6%89%A6&code=&btype=tushu |
-| 112 | 814953314 | 许姓祖墓　丁山癸向　九运扦 | done | 468 | 2 | https://special.rhky.com/mobile/mooc/tocard/814953314?courseId=240632071&name=%E8%AE%B8%E5%A7%93%E7%A5%96%E5%A2%93%E3%80%80%E4%B8%81%E5%B1%B1%E7%99%B8%E5%90%91%E3%80%80%E4%B9%9D%E8%BF%90%E6%89%A6&code=&btype=tushu |
-| 113 | 814953316 | 阳宅秘断（计十七条） | skipped | 0 | 1 | https://special.rhky.com/mobile/mooc/tocard/814953316?courseId=240632071&name=%E9%98%B3%E5%AE%85%E7%A7%98%E6%96%AD%EF%BC%88%E8%AE%A1%E5%8D%81%E4%B8%83%E6%9D%A1%EF%BC%89&code=&btype=tushu |
-| 114 | 814953318 | 陶姓宅　丑山未向　五运造 | done | 146 | 2 | https://special.rhky.com/mobile/mooc/tocard/814953318?courseId=240632071&name=%E9%99%B6%E5%A7%93%E5%AE%85%E3%80%80%E4%B8%91%E5%B1%B1%E6%9C%AA%E5%90%91%E3%80%80%E4%BA%94%E8%BF%90%E9%80%A0&code=&btype=tushu |
-| 115 | 814953320 | 某　宅　子午兼癸丁　五运造 | done | 155 | 2 | https://special.rhky.com/mobile/mooc/tocard/814953320?courseId=240632071&name=%E6%9F%90%E3%80%80%E5%AE%85%E3%80%80%E5%AD%90%E5%8D%88%E5%85%BC%E7%99%B8%E4%B8%81%E3%80%80%E4%BA%94%E8%BF%90%E9%80%A0&code=&btype=tushu |
-| 116 | 814953322 | 某　宅　壬丙兼亥巳　五运造 | done | 187 | 2 | https://special.rhky.com/mobile/mooc/tocard/814953322?courseId=240632071&name=%E6%9F%90%E3%80%80%E5%AE%85%E3%80%80%E5%A3%AC%E4%B8%99%E5%85%BC%E4%BA%A5%E5%B7%B3%E3%80%80%E4%BA%94%E8%BF%90%E9%80%A0&code=&btype=tushu |
-| 117 | 814953324 | 某　宅　辛乙兼戌辰　五运造 | done | 251 | 2 | https://special.rhky.com/mobile/mooc/tocard/814953324?courseId=240632071&name=%E6%9F%90%E3%80%80%E5%AE%85%E3%80%80%E8%BE%9B%E4%B9%99%E5%85%BC%E6%88%8C%E8%BE%B0%E3%80%80%E4%BA%94%E8%BF%90%E9%80%A0&code=&btype=tushu |
-| 118 | 814953326 | 某　宅　子山午向兼癸丁　六运造 | done | 154 | 2 | https://special.rhky.com/mobile/mooc/tocard/814953326?courseId=240632071&name=%E6%9F%90%E3%80%80%E5%AE%85%E3%80%80%E5%AD%90%E5%B1%B1%E5%8D%88%E5%90%91%E5%85%BC%E7%99%B8%E4%B8%81%E3%80%80%E5%85%AD%E8%BF%90%E9%80%A0&code=&btype=tushu |
-| 119 | 814953328 | 某　宅　子山午向　六运造 | done | 127 | 2 | https://special.rhky.com/mobile/mooc/tocard/814953328?courseId=240632071&name=%E6%9F%90%E3%80%80%E5%AE%85%E3%80%80%E5%AD%90%E5%B1%B1%E5%8D%88%E5%90%91%E3%80%80%E5%85%AD%E8%BF%90%E9%80%A0&code=&btype=tushu |
-| 120 | 814953330 | 某　宅　子午兼壬丙　六运造 | done | 614 | 3 | https://special.rhky.com/mobile/mooc/tocard/814953330?courseId=240632071&name=%E6%9F%90%E3%80%80%E5%AE%85%E3%80%80%E5%AD%90%E5%8D%88%E5%85%BC%E5%A3%AC%E4%B8%99%E3%80%80%E5%85%AD%E8%BF%90%E9%80%A0&code=&btype=tushu |
-| 121 | 814953332 | 会稽任宅　子午兼壬丙　七运造 | done | 363 | 2 | https://special.rhky.com/mobile/mooc/tocard/814953332?courseId=240632071&name=%E4%BC%9A%E7%A8%BD%E4%BB%BB%E5%AE%85%E3%80%80%E5%AD%90%E5%8D%88%E5%85%BC%E5%A3%AC%E4%B8%99%E3%80%80%E4%B8%83%E8%BF%90%E9%80%A0&code=&btype=tushu |
-| 122 | 814953334 | 会稽章宅　子午兼癸丁　七运造 | done | 846 | 2 | https://special.rhky.com/mobile/mooc/tocard/814953334?courseId=240632071&name=%E4%BC%9A%E7%A8%BD%E7%AB%A0%E5%AE%85%E3%80%80%E5%AD%90%E5%8D%88%E5%85%BC%E7%99%B8%E4%B8%81%E3%80%80%E4%B8%83%E8%BF%90%E9%80%A0&code=&btype=tushu |
-| 123 | 814953336 | 胡　宅　甲山庚向　七运造 | done | 234 | 2 | https://special.rhky.com/mobile/mooc/tocard/814953336?courseId=240632071&name=%E8%83%A1%E3%80%80%E5%AE%85%E3%80%80%E7%94%B2%E5%B1%B1%E5%BA%9A%E5%90%91%E3%80%80%E4%B8%83%E8%BF%90%E9%80%A0&code=&btype=tushu |
-| 124 | 814953338 | 某　宅　申寅兼坤艮　七运造 | done | 79 | 2 | https://special.rhky.com/mobile/mooc/tocard/814953338?courseId=240632071&name=%E6%9F%90%E3%80%80%E5%AE%85%E3%80%80%E7%94%B3%E5%AF%85%E5%85%BC%E5%9D%A4%E8%89%AE%E3%80%80%E4%B8%83%E8%BF%90%E9%80%A0&code=&btype=tushu |
-| 125 | 814953340 | 张村丁宅　子午兼癸丁　七运造 | done | 237 | 2 | https://special.rhky.com/mobile/mooc/tocard/814953340?courseId=240632071&name=%E5%BC%A0%E6%9D%91%E4%B8%81%E5%AE%85%E3%80%80%E5%AD%90%E5%8D%88%E5%85%BC%E7%99%B8%E4%B8%81%E3%80%80%E4%B8%83%E8%BF%90%E9%80%A0&code=&btype=tushu |
-| 126 | 814953342 | 许　宅　子午兼癸丁　七运造 | done | 242 | 2 | https://special.rhky.com/mobile/mooc/tocard/814953342?courseId=240632071&name=%E8%AE%B8%E3%80%80%E5%AE%85%E3%80%80%E5%AD%90%E5%8D%88%E5%85%BC%E7%99%B8%E4%B8%81%E3%80%80%E4%B8%83%E8%BF%90%E9%80%A0&code=&btype=tushu |
-| 127 | 814953344 | 湖塘下陈宅　亥山巳向　八运造 | done | 489 | 2 | https://special.rhky.com/mobile/mooc/tocard/814953344?courseId=240632071&name=%E6%B9%96%E5%A1%98%E4%B8%8B%E9%99%88%E5%AE%85%E3%80%80%E4%BA%A5%E5%B1%B1%E5%B7%B3%E5%90%91%E3%80%80%E5%85%AB%E8%BF%90%E9%80%A0&code=&btype=tushu |
-| 128 | 814953346 | 东溪周宅　酉卯山兼辛乙　八运造 | done | 432 | 2 | https://special.rhky.com/mobile/mooc/tocard/814953346?courseId=240632071&name=%E4%B8%9C%E6%BA%AA%E5%91%A8%E5%AE%85%E3%80%80%E9%85%89%E5%8D%AF%E5%B1%B1%E5%85%BC%E8%BE%9B%E4%B9%99%E3%80%80%E5%85%AB%E8%BF%90%E9%80%A0&code=&btype=tushu |
-| 129 | 814953348 | 某　宅　未山丑向　八运造 | done | 369 | 2 | https://special.rhky.com/mobile/mooc/tocard/814953348?courseId=240632071&name=%E6%9F%90%E3%80%80%E5%AE%85%E3%80%80%E6%9C%AA%E5%B1%B1%E4%B8%91%E5%90%91%E3%80%80%E5%85%AB%E8%BF%90%E9%80%A0&code=&btype=tushu |
-| 130 | 814953350 | 宁波府基　癸丁兼丑未　八运修造 | done | 654 | 4 | https://special.rhky.com/mobile/mooc/tocard/814953350?courseId=240632071&name=%E5%AE%81%E6%B3%A2%E5%BA%9C%E5%9F%BA%E3%80%80%E7%99%B8%E4%B8%81%E5%85%BC%E4%B8%91%E6%9C%AA%E3%80%80%E5%85%AB%E8%BF%90%E4%BF%AE%E9%80%A0&code=&btype=tushu |
-| 131 | 814953352 | 增广沈氏玄空学卷四 | skipped | 0 | 1 | https://special.rhky.com/mobile/mooc/tocard/814953352?courseId=240632071&name=%E5%A2%9E%E5%B9%BF%E6%B2%88%E6%B0%8F%E7%8E%84%E7%A9%BA%E5%AD%A6%E5%8D%B7%E5%9B%9B&code=&btype=tushu |
-| 132 | 814953354 | 九运挨星立成图 | skipped | 0 | 1 | https://special.rhky.com/mobile/mooc/tocard/814953354?courseId=240632071&name=%E4%B9%9D%E8%BF%90%E6%8C%A8%E6%98%9F%E7%AB%8B%E6%88%90%E5%9B%BE&code=&btype=tushu |
-| 133 | 814953356 | 九宫挨星掌诀 | done | 576 | 2 | https://special.rhky.com/mobile/mooc/tocard/814953356?courseId=240632071&name=%E4%B9%9D%E5%AE%AB%E6%8C%A8%E6%98%9F%E6%8E%8C%E8%AF%80&code=&btype=tushu |
-| 134 | 814953358 | 天元子山午向挨星图 | done | 67 | 4 | https://special.rhky.com/mobile/mooc/tocard/814953358?courseId=240632071&name=%E5%A4%A9%E5%85%83%E5%AD%90%E5%B1%B1%E5%8D%88%E5%90%91%E6%8C%A8%E6%98%9F%E5%9B%BE&code=&btype=tushu |
-| 135 | 814953360 | 天元午山子向挨星图 | done | 67 | 4 | https://special.rhky.com/mobile/mooc/tocard/814953360?courseId=240632071&name=%E5%A4%A9%E5%85%83%E5%8D%88%E5%B1%B1%E5%AD%90%E5%90%91%E6%8C%A8%E6%98%9F%E5%9B%BE&code=&btype=tushu |
-| 136 | 814953363 | 天元卯山酉向挨星图 | done | 59 | 4 | https://special.rhky.com/mobile/mooc/tocard/814953363?courseId=240632071&name=%E5%A4%A9%E5%85%83%E5%8D%AF%E5%B1%B1%E9%85%89%E5%90%91%E6%8C%A8%E6%98%9F%E5%9B%BE&code=&btype=tushu |
-| 137 | 814953366 | 天元酉山卯向挨星图 | done | 59 | 4 | https://special.rhky.com/mobile/mooc/tocard/814953366?courseId=240632071&name=%E5%A4%A9%E5%85%83%E9%85%89%E5%B1%B1%E5%8D%AF%E5%90%91%E6%8C%A8%E6%98%9F%E5%9B%BE&code=&btype=tushu |
-| 138 | 814953369 | 天元乾山巽向挨星图 | done | 84 | 4 | https://special.rhky.com/mobile/mooc/tocard/814953369?courseId=240632071&name=%E5%A4%A9%E5%85%83%E4%B9%BE%E5%B1%B1%E5%B7%BD%E5%90%91%E6%8C%A8%E6%98%9F%E5%9B%BE&code=&btype=tushu |
-| 139 | 814953372 | 天元巽山乾向挨星图 | done | 78 | 4 | https://special.rhky.com/mobile/mooc/tocard/814953372?courseId=240632071&name=%E5%A4%A9%E5%85%83%E5%B7%BD%E5%B1%B1%E4%B9%BE%E5%90%91%E6%8C%A8%E6%98%9F%E5%9B%BE&code=&btype=tushu |
-| 140 | 814953375 | 天元艮山坤向挨星图 | done | 62 | 4 | https://special.rhky.com/mobile/mooc/tocard/814953375?courseId=240632071&name=%E5%A4%A9%E5%85%83%E8%89%AE%E5%B1%B1%E5%9D%A4%E5%90%91%E6%8C%A8%E6%98%9F%E5%9B%BE&code=&btype=tushu |
-| 141 | 814953378 | 天元坤山艮向挨星图 | done | 70 | 4 | https://special.rhky.com/mobile/mooc/tocard/814953378?courseId=240632071&name=%E5%A4%A9%E5%85%83%E5%9D%A4%E5%B1%B1%E8%89%AE%E5%90%91%E6%8C%A8%E6%98%9F%E5%9B%BE&code=&btype=tushu |
-| 142 | 814953381 | 人元寅山申向挨星图 | done | 74 | 4 | https://special.rhky.com/mobile/mooc/tocard/814953381?courseId=240632071&name=%E4%BA%BA%E5%85%83%E5%AF%85%E5%B1%B1%E7%94%B3%E5%90%91%E6%8C%A8%E6%98%9F%E5%9B%BE&code=&btype=tushu |
-| 143 | 814953384 | 人元申山寅向挨星图 | done | 69 | 4 | https://special.rhky.com/mobile/mooc/tocard/814953384?courseId=240632071&name=%E4%BA%BA%E5%85%83%E7%94%B3%E5%B1%B1%E5%AF%85%E5%90%91%E6%8C%A8%E6%98%9F%E5%9B%BE&code=&btype=tushu |
-| 144 | 814953387 | 人元巳山亥向挨星图 | done | 79 | 4 | https://special.rhky.com/mobile/mooc/tocard/814953387?courseId=240632071&name=%E4%BA%BA%E5%85%83%E5%B7%B3%E5%B1%B1%E4%BA%A5%E5%90%91%E6%8C%A8%E6%98%9F%E5%9B%BE&code=&btype=tushu |
-| 145 | 814953390 | 人元亥山巳向挨星图 | done | 80 | 4 | https://special.rhky.com/mobile/mooc/tocard/814953390?courseId=240632071&name=%E4%BA%BA%E5%85%83%E4%BA%A5%E5%B1%B1%E5%B7%B3%E5%90%91%E6%8C%A8%E6%98%9F%E5%9B%BE&code=&btype=tushu |
-| 146 | 814953393 | 人元乙山辛向挨星图 | done | 58 | 4 | https://special.rhky.com/mobile/mooc/tocard/814953393?courseId=240632071&name=%E4%BA%BA%E5%85%83%E4%B9%99%E5%B1%B1%E8%BE%9B%E5%90%91%E6%8C%A8%E6%98%9F%E5%9B%BE&code=&btype=tushu |
-| 147 | 814953396 | 人元辛山乙向挨星图 | done | 60 | 4 | https://special.rhky.com/mobile/mooc/tocard/814953396?courseId=240632071&name=%E4%BA%BA%E5%85%83%E8%BE%9B%E5%B1%B1%E4%B9%99%E5%90%91%E6%8C%A8%E6%98%9F%E5%9B%BE&code=&btype=tushu |
-| 148 | 814953399 | 人元丁山癸向挨星图 | done | 68 | 4 | https://special.rhky.com/mobile/mooc/tocard/814953399?courseId=240632071&name=%E4%BA%BA%E5%85%83%E4%B8%81%E5%B1%B1%E7%99%B8%E5%90%91%E6%8C%A8%E6%98%9F%E5%9B%BE&code=&btype=tushu |
-| 149 | 814953402 | 人元癸山丁向挨星图 | done | 69 | 4 | https://special.rhky.com/mobile/mooc/tocard/814953402?courseId=240632071&name=%E4%BA%BA%E5%85%83%E7%99%B8%E5%B1%B1%E4%B8%81%E5%90%91%E6%8C%A8%E6%98%9F%E5%9B%BE&code=&btype=tushu |
-| 150 | 814953405 | 地元辰山戌向挨星图 | done | 58 | 4 | https://special.rhky.com/mobile/mooc/tocard/814953405?courseId=240632071&name=%E5%9C%B0%E5%85%83%E8%BE%B0%E5%B1%B1%E6%88%8C%E5%90%91%E6%8C%A8%E6%98%9F%E5%9B%BE&code=&btype=tushu |
-| 151 | 814953408 | 地元戌山辰向挨星图 | done | 60 | 4 | https://special.rhky.com/mobile/mooc/tocard/814953408?courseId=240632071&name=%E5%9C%B0%E5%85%83%E6%88%8C%E5%B1%B1%E8%BE%B0%E5%90%91%E6%8C%A8%E6%98%9F%E5%9B%BE&code=&btype=tushu |
-| 152 | 814953411 | 地元丑山未向挨星图 | done | 73 | 4 | https://special.rhky.com/mobile/mooc/tocard/814953411?courseId=240632071&name=%E5%9C%B0%E5%85%83%E4%B8%91%E5%B1%B1%E6%9C%AA%E5%90%91%E6%8C%A8%E6%98%9F%E5%9B%BE&code=&btype=tushu |
-| 153 | 814953414 | 地元未山丑向挨星图 | done | 70 | 4 | https://special.rhky.com/mobile/mooc/tocard/814953414?courseId=240632071&name=%E5%9C%B0%E5%85%83%E6%9C%AA%E5%B1%B1%E4%B8%91%E5%90%91%E6%8C%A8%E6%98%9F%E5%9B%BE&code=&btype=tushu |
-| 154 | 814953417 | 地元甲山庚向挨星图 | done | 78 | 4 | https://special.rhky.com/mobile/mooc/tocard/814953417?courseId=240632071&name=%E5%9C%B0%E5%85%83%E7%94%B2%E5%B1%B1%E5%BA%9A%E5%90%91%E6%8C%A8%E6%98%9F%E5%9B%BE&code=&btype=tushu |
-| 155 | 814953420 | 地元庚山甲向挨星图 | done | 79 | 4 | https://special.rhky.com/mobile/mooc/tocard/814953420?courseId=240632071&name=%E5%9C%B0%E5%85%83%E5%BA%9A%E5%B1%B1%E7%94%B2%E5%90%91%E6%8C%A8%E6%98%9F%E5%9B%BE&code=&btype=tushu |
-| 156 | 814953423 | 地元壬山丙向挨星图 | done | 70 | 4 | https://special.rhky.com/mobile/mooc/tocard/814953423?courseId=240632071&name=%E5%9C%B0%E5%85%83%E5%A3%AC%E5%B1%B1%E4%B8%99%E5%90%91%E6%8C%A8%E6%98%9F%E5%9B%BE&code=&btype=tushu |
-| 157 | 814953425 | 地元丙山壬向挨星图 | done | 756 | 4 | https://special.rhky.com/mobile/mooc/tocard/814953425?courseId=240632071&name=%E5%9C%B0%E5%85%83%E4%B8%99%E5%B1%B1%E5%A3%AC%E5%90%91%E6%8C%A8%E6%98%9F%E5%9B%BE&code=&btype=tushu |
-| 158 | 814953427 | 九运二十四山向中宫飞星配卦分金表 | done | 372 | 4 | https://special.rhky.com/mobile/mooc/tocard/814953427?courseId=240632071&name=%E4%B9%9D%E8%BF%90%E4%BA%8C%E5%8D%81%E5%9B%9B%E5%B1%B1%E5%90%91%E4%B8%AD%E5%AE%AB%E9%A3%9E%E6%98%9F%E9%85%8D%E5%8D%A6%E5%88%86%E9%87%91%E8%A1%A8&code=&btype=tushu |
 
 ## SXK-001 目录
 
-- chapter_id: 814953106
-- source_url: https://special.rhky.com/mobile/mooc/tocard/814953106?courseId=240632071&name=%E7%9B%AE%E5%BD%95&code=&btype=tushu
-- digest_status: skipped
-- image_count: 1
 
 [image_only_or_section_title: raw HTML retained; no p.content text extracted]
 
-### image_refs
-
-- https://special.rhky.com/res/images/special/tishi_logo.png
 
 ## SXK-002 增广沈氏玄空学卷首
 
-- chapter_id: 814953107
-- source_url: https://special.rhky.com/mobile/mooc/tocard/814953107?courseId=240632071&name=%E5%A2%9E%E5%B9%BF%E6%B2%88%E6%B0%8F%E7%8E%84%E7%A9%BA%E5%AD%A6%E5%8D%B7%E9%A6%96&code=&btype=tushu
-- digest_status: skipped
-- image_count: 1
 
 [image_only_or_section_title: raw HTML retained; no p.content text extracted]
 
-### image_refs
-
-- https://special.rhky.com/res/images/special/tishi_logo.png
 
 ## SXK-003 增广沈氏玄空学序
 
-- chapter_id: 814953108
-- source_url: https://special.rhky.com/mobile/mooc/tocard/814953108?courseId=240632071&name=%E5%A2%9E%E5%B9%BF%E6%B2%88%E6%B0%8F%E7%8E%84%E7%A9%BA%E5%AD%A6%E5%BA%8F&code=&btype=tushu
-- digest_status: done
-- image_count: 1
 
 余以葬事，涉猎地理诸书，觉其说庞杂，有歧之又歧之慨！及读《沈氏玄空学》，江迂生太史《序》曰：“峦头征实，古今无伪书；理气课虚，古今多伪诀。”信哉斯言！然后知余向之未始学，学自今始也。窥竹礽先生之学，窃以为先生当世衰学晦之际，得“天人合一”之旨，毅然有澄清天下之志，可谓观止矣！
 
@@ -218,16 +36,9 @@ generated: 2026-06-17
 
 或以为玄空之挨排，其法非古，殊不知肇自《易纬》 [6] ，得康成阐发而益详，《〈后汉书·张衡传〉注》节录其说。名儒之篇章俱在，奈何人病而不求之欤！且紫白之图，始于北魏《正光历》 [7] ，今之历书，犹师其法而不衰。噫！又何疑哉！书成，乃序其梗概。
 
-### image_refs
-
-- https://special.rhky.com/res/images/special/tishi_logo.png
 
 ## SXK-004 重编沈氏玄空学题词
 
-- chapter_id: 814953109
-- source_url: https://special.rhky.com/mobile/mooc/tocard/814953109?courseId=240632071&name=%E9%87%8D%E7%BC%96%E6%B2%88%E6%B0%8F%E7%8E%84%E7%A9%BA%E5%AD%A6%E9%A2%98%E8%AF%8D&code=&btype=tushu
-- digest_status: done
-- image_count: 1
 
 天地壹壶，时抽其秘；识者遇之，俯拾亦易。
 
@@ -255,16 +66,9 @@ generated: 2026-06-17
 
 恨乏美质，未能澈底；聊摛俚词，藉伸延企。
 
-### image_refs
-
-- https://special.rhky.com/res/images/special/tishi_logo.png
 
 ## SXK-005 重编沈氏玄空学序
 
-- chapter_id: 814953110
-- source_url: https://special.rhky.com/mobile/mooc/tocard/814953110?courseId=240632071&name=%E9%87%8D%E7%BC%96%E6%B2%88%E6%B0%8F%E7%8E%84%E7%A9%BA%E5%AD%A6%E5%BA%8F&code=&btype=tushu
-- digest_status: done
-- image_count: 1
 
 堪舆之学，峦头、理气二者而已。峦头不外龙、穴、砂、水，然非阅历既深，知之亦非易易。至理气之书，派别最多，以蒋氏《辨正》为最玄秘而不可晓。余昔尝从事研求，誓非得玄空真谛不复言地理。习之五、六年，惘无所得，将废弃之，及友人周枚青谓：“章仲山《直解》，于玄空最有门径。”江莘农太史 [11] 谓：“张心言《辨正疏》，于《辨正》最易入门。”余略究二书，凡蒋氏所隐秘者，《章解》未有特别发明；《张疏》别出见解，以“大卦”二字当六十四卦代名词，竟类师门转手，吾仍未能有惬于心。
 
@@ -278,16 +82,9 @@ generated: 2026-06-17
 
 不知熟于先生之书者，旺山旺水外，有“替卦”以通其变，有“两向”以补其偏，有“三般卦”以妙其用，有“打劫法”以弭其缺，有“城门一诀”以济其穷。作法綦多，不难按图而索骥。盖其学自易理来，故于杨、曾之说，能澈其指归，而不类蒋云间之不脱术家习气也。然则人不欲知葬说则已，苟知葬为一大事，而欲稍涉藩篱，舍先生之书，将安所归？抑吾更有一说，欲为人言之：“葬为大事，谋之宜早！吾维因循蹉跎，观书无当，以致葬亲有误，罪无可逭 [12] ！凡有父母者，宜弗蹈我之故辙也。”重编顷尚未出，吾知其有补于前编无可疑者。莘农已矣，未知观察君视吾说为何如？
 
-### image_refs
-
-- https://special.rhky.com/res/images/special/tishi_logo.png
 
 ## SXK-006 沈氏玄空学序
 
-- chapter_id: 814953111
-- source_url: https://special.rhky.com/mobile/mooc/tocard/814953111?courseId=240632071&name=%E6%B2%88%E6%B0%8F%E7%8E%84%E7%A9%BA%E5%AD%A6%E5%BA%8F&code=&btype=tushu
-- digest_status: done
-- image_count: 1
 
 相墓之术，曰峦头，曰理气，峦头其体，理气其用，二者不可偏废也。第峦头征实，古今无伪书；理气课虚，古今多伪诀。
 
@@ -307,16 +104,9 @@ generated: 2026-06-17
 
 伊案：高淳东坝，有白云真人，乩坛灵异素著。壬戌四月，伊叩挨星之学，乩云：“地理之学，自有真相，应行专注正轨，免被杂说所惑。挨星非熟精易理、参得其窍不可，机缘未至，吾未便授汝以道也。数年之后，不昧夙因，自有所遇。”七月，又叩之，乩示一诗，有“月白风清际有缘”句。十一月，伊至宜兴，为徐遂初观察之封翁卜葬藕山，封翁即假仲山《宅断》于瓞民者。取书以归，录藏行箧，原本邮还瓞民。癸亥九月，瓞民邮此函，以编辑先生遗书见委。十二月，至东坝复叩于坛，真人乩示云：“所得沈书挨星法，的系蒋氏真传，适符前数，而本坛所示‘月白风清’之句，至是亦有奇验。‘月白’二字，暗寓祖绵（瓞民之名）之中；‘风清’二字，按之‘清风徐来’，此书因由徐而来也。不昧夙因者，即许汝能觉其奥也。今欲以此书行世，具见公道，且可补救于时，以免地理家暗中摸索，误人不浅。待汝沉疴脱去，汇集付梓，造福无疆矣。”因果如此，特详志之，以谂世之读此书者！
 
-### image_refs
-
-- https://special.rhky.com/res/images/special/tishi_logo.png
 
 ## SXK-007 沈氏玄空学序
 
-- chapter_id: 814953112
-- source_url: https://special.rhky.com/mobile/mooc/tocard/814953112?courseId=240632071&name=%E6%B2%88%E6%B0%8F%E7%8E%84%E7%A9%BA%E5%AD%A6%E5%BA%8F&code=&btype=tushu
-- digest_status: done
-- image_count: 1
 
 甲子三月，予友邓契一居土邀沈君瓞民自苏来宁，相度法云寺道场。越数日，予同年江莘农亦至，相与商决建殿基址，背西面东，而以前拟建殿之地，兴筑佛教慈幼院。予之识瓞民自此始，瓞民邃于形法家，盖承其家学也。嗣是，法云凡有兴建，辄就咨诹。瓞民和易笃厚，谈娓娓不倦，自称莲池大师族裔，于佛门事尤倾诚策画，予敬异之。
 
@@ -324,16 +114,9 @@ generated: 2026-06-17
 
 抑又闻瓞民在苏，莲池入梦，于其掌中画一“卍”字，微笑而去。次晨，契一即邀之来宁。法云为念佛放生道场，专“法”、“云”栖此中，殆有一段香火因缘，不可思议云，因并记之。
 
-### image_refs
-
-- https://special.rhky.com/res/images/special/tishi_logo.png
 
 ## SXK-008 沈氏玄空学跋
 
-- chapter_id: 814953113
-- source_url: https://special.rhky.com/mobile/mooc/tocard/814953113?courseId=240632071&name=%E6%B2%88%E6%B0%8F%E7%8E%84%E7%A9%BA%E5%AD%A6%E8%B7%8B&code=&btype=tushu
-- digest_status: done
-- image_count: 1
 
 自司马温公 [19] 不信风水，而儒者或卑视堪舆，以为妄人之所为也。然予考《仪礼·既夕礼》有云“筮宅，冢人物土”，郑君注谓“‘物土’为相地”，则相地固圣人之所重也！相之如何？《周礼·小宗伯》有“卜葬兆”之文，郑注“兆，墓茔域”。夫墓茔之域，而称曰“兆”，盖犹今俗所云“风水地”，则相地之术，亦堪舆而已矣。儒者皆诵《论语》，莫不知“葬之以礼”；顾于堪舆，则或毁之，不知其为礼家之事也，毋亦未之深考欤！
 
@@ -345,16 +128,9 @@ generated: 2026-06-17
 
 夫玄空之学，洛书之学也，明堂之学也。用洛书于明堂，义见《大戴礼记·盛德》篇，其文有云：“明堂者，凡九室。二九四、七五三、六一八。”又云：“明堂，天法也。”又云：“天道不顺，生于明堂不饰。”儒者而明此义焉，则堪舆之不外乎礼，亦思过半矣。予敢告天下儒者曰：“《沈氏玄空学》，葬礼之所必以也，愿天下儒者共学之！”
 
-### image_refs
-
-- https://special.rhky.com/res/images/special/tishi_logo.png
 
 ## SXK-009 沈氏玄空学四种序
 
-- chapter_id: 814953114
-- source_url: https://special.rhky.com/mobile/mooc/tocard/814953114?courseId=240632071&name=%E6%B2%88%E6%B0%8F%E7%8E%84%E7%A9%BA%E5%AD%A6%E5%9B%9B%E7%A7%8D%E5%BA%8F&code=&btype=tushu
-- digest_status: done
-- image_count: 1
 
 自公刘 [21] 迁豳，“相阴阳，观流泉”，后世形家之说以兴。然但察地形，未观天象，其于体用，终难兼赅。夫既曰“阴阳”，复曰“流泉”，固明明尽仰观俯察之能事。古人文辞简质，惜后之学者未能心领神会耳。
 
@@ -364,16 +140,9 @@ generated: 2026-06-17
 
 先生尝论先、后天卦位合十，通中央戊己之数，各成十五。孔子所谓“五十学易”者，即此是也。又论“变者河图，不变者洛书”，此等创解，前无古人，非读书得间，洞见本原者，曷克臻此！今哲嗣瓞民观察先汇刊《自得斋地理丛说》、《九运挨星立成图》、《章仲山宅断详注》、《挨星古义》，凡四种，余待续梓行。见玄空之学，昌明于世，挽回气运，非先生之力，其孰能之至？先生生平事略，具见表、传，盖古之振奇人也。
 
-### image_refs
-
-- https://special.rhky.com/res/images/special/tishi_logo.png
 
 ## SXK-010 沈氏玄空学四种序
 
-- chapter_id: 814953115
-- source_url: https://special.rhky.com/mobile/mooc/tocard/814953115?courseId=240632071&name=%E6%B2%88%E6%B0%8F%E7%8E%84%E7%A9%BA%E5%AD%A6%E5%9B%9B%E7%A7%8D%E5%BA%8F&code=&btype=tushu
-- digest_status: done
-- image_count: 1
 
 玄空之学，肇自河洛，其传最古，而用尤神，然非深明易理者，未易窥其堂奥。自晋郭景纯演经立义，玄空之名大著。唐邱延翰 [22] 、杨筠松 [23] 先后继起，传授有自。宋吴景鸾、元张定边亦各有传书。迨明蒋大鸿，虽得玄空正传，著《地理辨正》，然其注《天玉经》以为“天机秘密，不可泄漏”，大失昔贤著书垂教之本旨。章仲山《辨正直解》，亦未尽披露，遂致伪说并起，莫衷一是，几使玄空之学，不绝如线，良可慨也！
 
@@ -385,16 +154,9 @@ generated: 2026-06-17
 
 哲嗣瓞民观察，曾为华居停主人，故得捧读先生遗著。今观察汇刊先生《玄空学》四种，为《自得斋地理丛说》、《九运挨星立成图》、《章仲山宅断详注》、《挨星古义》，都凡四卷。并得江莘农太史为之编次，足称善本。书成，观察属华校勘并索序言，又何敢辞？窃谓先生负奇才异能，安于下位，未竟其志，立言传世，足垂不朽，其存心之公与望世之治，昭然若揭，倘仅以方技目之，则浅之乎测先生矣！
 
-### image_refs
-
-- https://special.rhky.com/res/images/special/tishi_logo.png
 
 ## SXK-011 沈氏玄空学序
 
-- chapter_id: 814953116
-- source_url: https://special.rhky.com/mobile/mooc/tocard/814953116?courseId=240632071&name=%E6%B2%88%E6%B0%8F%E7%8E%84%E7%A9%BA%E5%AD%A6%E5%BA%8F&code=&btype=tushu
-- digest_status: done
-- image_count: 1
 
 《易》曰：“河出图，洛出书，圣人则之。”古人每多连类而及之辞，其实河图、洛书二者迥殊，旧解谓“河图即八卦，洛书即九畴”是也。盖八卦以辨方位而宅中图大，九畴以组社会而开国承家，本不可混视也。
 
@@ -432,16 +194,9 @@ generated: 2026-06-17
 
 盖人情莫不念其祖先，尤莫不爱其种姓，仁人孝子，必由此始。黄帝、老子曰：“天道无亲，常与善人。”是故堪舆者，中国之国粹，而实有史以来千圣百贤传心之学也。今当此世界大通之际，竹礽先生乃适逢其会，大昌明此学，重以其喆嗣瓞民先生善继志述事，家学渊源，悉公同好。宁非天佑吾民族，笃生圣哲仁孝之士，将有大造于中国前途之征哉！
 
-### image_refs
-
-- https://special.rhky.com/res/images/special/tishi_logo.png
 
 ## SXK-012 沈竹礽先生玄空学遗著题词
 
-- chapter_id: 814953117
-- source_url: https://special.rhky.com/mobile/mooc/tocard/814953117?courseId=240632071&name=%E6%B2%88%E7%AB%B9%E7%A4%BD%E5%85%88%E7%94%9F%E7%8E%84%E7%A9%BA%E5%AD%A6%E9%81%97%E8%91%97%E9%A2%98%E8%AF%8D&code=&btype=tushu
-- digest_status: done
-- image_count: 1
 
 天地有元气，山川发其机；正以诞圣智，杂为蠕走飞。
 
@@ -471,16 +226,9 @@ generated: 2026-06-17
 
 庶赓杨曾迹，上又管郭窥；何有一切法，大钧独我师。
 
-### image_refs
-
-- https://special.rhky.com/res/images/special/tishi_logo.png
 
 ## SXK-013 敬题竹礽丈玄空学遗著
 
-- chapter_id: 814953118
-- source_url: https://special.rhky.com/mobile/mooc/tocard/814953118?courseId=240632071&name=%E6%95%AC%E9%A2%98%E7%AB%B9%E7%A4%BD%E4%B8%88%E7%8E%84%E7%A9%BA%E5%AD%A6%E9%81%97%E8%91%97&code=&btype=tushu
-- digest_status: done
-- image_count: 1
 
 世间万事忘机好，了了天心共见之；
 
@@ -492,16 +240,9 @@ generated: 2026-06-17
 
 欲乞金针度流俗，德门何地不牛眠！
 
-### image_refs
-
-- https://special.rhky.com/res/images/special/tishi_logo.png
 
 ## SXK-014 钱塘沈竹礽先生传
 
-- chapter_id: 814953119
-- source_url: https://special.rhky.com/mobile/mooc/tocard/814953119?courseId=240632071&name=%E9%92%B1%E5%A1%98%E6%B2%88%E7%AB%B9%E7%A4%BD%E5%85%88%E7%94%9F%E4%BC%A0&code=&btype=tushu
-- digest_status: done
-- image_count: 1
 
 呜呼！粤匪之难，蹂躏遍十数行省，江浙罹祸尤酷。贼踪所至，四出侵暴，鲜得幸免。惟一、二有道之士，能于丛莽荆棘、雨雪风霜、枪林白刃之中，冒万死出一生，以底于安全。如予所闻沈君其人者，非偶然也。
 
@@ -517,16 +258,9 @@ generated: 2026-06-17
 
 论曰：“辞受取与之间，士君子之大节也，非辨析乎义利之精者，鲜不眩惑。”当姚氏以华尔遗产授君，脱君稍有依违，不难坐拥厚资，以分丹穴之利。乃岸然不屑，宁溷迹市廛以终身，彼其廉节，有挽近士大夫所难能者矣。以十余龄孤子，极琐尾流离之况，卒卓卓有所建树，以贻厥后，吁，有以也夫！
 
-### image_refs
-
-- https://special.rhky.com/res/images/special/tishi_logo.png
 
 ## SXK-015 钱塘沈竹礽先生墓表
 
-- chapter_id: 814953120
-- source_url: https://special.rhky.com/mobile/mooc/tocard/814953120?courseId=240632071&name=%E9%92%B1%E5%A1%98%E6%B2%88%E7%AB%B9%E7%A4%BD%E5%85%88%E7%94%9F%E5%A2%93%E8%A1%A8&code=&btype=tushu
-- digest_status: done
-- image_count: 1
 
 治世无奇才，以非所须则不生；至乱世，而才之奇者横轶突出，往往出人闻见之外。然其中有遇与不遇，天若制之、若不制之。夫不遇与遇者，值其势足以相摄，而托命于遇者之口，非忌则抑，才虽奇，迄不得申其一、二，才则挫矣，奇固在也，则不可以不述。
 
@@ -550,42 +284,21 @@ generated: 2026-06-17
 
 予谓君以弱龄从戎，如童终军，不矜其名，似屠羊说 [39] 、鲁仲连 [40] ；功成而逊迹，则如范少伯 [41] 、葛稚川 [42] 。其报华尔夫妇生活之恩，别立宫宇以祭，又合于魏王修之论四孤。独怪当时公私文牍称述华尔者，略不及君。文忠亦人豪，无能坐君重席，以收烛武之效，意斯时淮军统将布满畿甸，惩以异籍新附，参预其列，否则以资浅蔑之。然则奇才之生乱世，信宜早见，一为人下，必枉其才。如君之不遇，可鉴也。祖绵往乞予文传君，历二年，许未就。今撷其大者书之，觉胸中所忆者，惟杜牧之 [43] 之《燕将录》在，其才力雄骏，曾不能得其仿佛也。
 
-### image_refs
-
-- https://special.rhky.com/res/images/special/tishi_logo.png
 
 ## SXK-016 增广沈氏玄空学卷一
 
-- chapter_id: 814953121
-- source_url: https://special.rhky.com/mobile/mooc/tocard/814953121?courseId=240632071&name=%E5%A2%9E%E5%B9%BF%E6%B2%88%E6%B0%8F%E7%8E%84%E7%A9%BA%E5%AD%A6%E5%8D%B7%E4%B8%80&code=&btype=tushu
-- digest_status: skipped
-- image_count: 1
 
 [image_only_or_section_title: raw HTML retained; no p.content text extracted]
 
-### image_refs
-
-- https://special.rhky.com/res/images/special/tishi_logo.png
 
 ## SXK-017 自得斋地理丛说
 
-- chapter_id: 814953122
-- source_url: https://special.rhky.com/mobile/mooc/tocard/814953122?courseId=240632071&name=%E8%87%AA%E5%BE%97%E6%96%8B%E5%9C%B0%E7%90%86%E4%B8%9B%E8%AF%B4&code=&btype=tushu
-- digest_status: skipped
-- image_count: 1
 
 [image_only_or_section_title: raw HTML retained; no p.content text extracted]
 
-### image_refs
-
-- https://special.rhky.com/res/images/special/tishi_logo.png
 
 ## SXK-018 缘　起
 
-- chapter_id: 814953123
-- source_url: https://special.rhky.com/mobile/mooc/tocard/814953123?courseId=240632071&name=%E7%BC%98%E3%80%80%E8%B5%B7&code=&btype=tushu
-- digest_status: done
-- image_count: 1
 
 或问吾师：于地理学如何入门？
 
@@ -605,46 +318,25 @@ generated: 2026-06-17
 
 胡伯安曰：先生年三十以前，于《易》尚主汉宋之别；三十以后，曾对余小子云：“《易》拘汉宋，《易》理永不明矣。”戊子，先生已购《易》得一千一百余种。是年六月十二日，先生初度 [6] ，余往祝之，阅购《易》书目已一千七百余种。阅此，正先生年未三十也。
 
-### image_refs
-
-- https://special.rhky.com/res/images/special/tishi_logo.png
 
 ## SXK-019 论玄空
 
-- chapter_id: 814953124
-- source_url: https://special.rhky.com/mobile/mooc/tocard/814953124?courseId=240632071&name=%E8%AE%BA%E7%8E%84%E7%A9%BA&code=&btype=tushu
-- digest_status: done
-- image_count: 1
 
 或问：何谓玄空？
 
 答曰：“玄空”二字，传亦久矣，诸子百家解此二字甚多，皆未的当。扬子 [7] 《法言》 [8] 曰：“玄者，一也！”此系的解。至“空”之一字，尤为难解，然空非真空，空中亦有所凭藉。天竺学者言：“色不异空，空不异色。色即是空，空即是色。受想行识，亦复如是。”则空非凭藉于五蕴不可也。既凭藉五蕴，是空即有物矣！此西方圣人与东方圣人之理同也。然空之凭藉即窍也，窍有九，故曰“九窍”。是玄空二字，自一至九之谓，然一至九非定数也，有错综参伍，存乎其间，故以“玄空”二字代之。
 
-### image_refs
-
-- https://special.rhky.com/res/images/special/tishi_logo.png
 
 ## SXK-020 论天心
 
-- chapter_id: 814953125
-- source_url: https://special.rhky.com/mobile/mooc/tocard/814953125?courseId=240632071&name=%E8%AE%BA%E5%A4%A9%E5%BF%83&code=&btype=tushu
-- digest_status: done
-- image_count: 1
 
 九宫之中心为“天心”，此二字由来已久。《乐纬》 [9] 云：“象天心，定礼乐。”壶子 [10] 曰：“伏羲法八极作八卦，黄帝作九窍，以定九宫。”此“窍”字，即“心”字之意，亦即“玄”字之意。
 
 唐人诗已有“讲易见天心”之句。其实天心即“日月为易”之意，一阴一阳之谓也。后人以戊己代之，今人改天心为天星，误矣！盖圣人作《易》，以象日月；孔子作《传》，而曰“乾坤成列，易立乎其中矣”。此“中”字，即“心”字。老子号此心“为玄牝之门，是谓天地根”，云房谓此心“为生门死户”。老子又云：“玄之又玄，众妙之门。”是谓玄学之始，其实《易》也，心也，窍也，中也，玄也，是不二法门。
 
-### image_refs
-
-- https://special.rhky.com/res/images/special/tishi_logo.png
 
 ## SXK-021 论罗经
 
-- chapter_id: 814953126
-- source_url: https://special.rhky.com/mobile/mooc/tocard/814953126?courseId=240632071&name=%E8%AE%BA%E7%BD%97%E7%BB%8F&code=&btype=tushu
-- digest_status: done
-- image_count: 1
 
 或问：罗经之二十八宿、二十四山、九星有所本乎？
 
@@ -754,16 +446,9 @@ generated: 2026-06-17
 
 至四维卦，每卦得四宿，共十六宿，合之为二十八宿。如乾宫为：娄、奎、毕、室；巽宫为：亢、角、轸、翼；艮宫为：牛、斗、箕、尾；坤宫为：鬼、井、参、觜之类。今因岁差之故，度已改矣。
 
-### image_refs
-
-- https://special.rhky.com/res/images/special/tishi_logo.png
 
 ## SXK-022 论紫白
 
-- chapter_id: 814953127
-- source_url: https://special.rhky.com/mobile/mooc/tocard/814953127?courseId=240632071&name=%E8%AE%BA%E7%B4%AB%E7%99%BD&code=&btype=tushu
-- digest_status: done
-- image_count: 3
 
 或问：紫白图入用之初，见于何书？
 
@@ -801,18 +486,9 @@ generated: 2026-06-17
 
 又按：唐宥在先生云：“见有秘本作排五黄解，甚合。”盖一白入中，五黄在离九；九紫入中，五黄在坎一。作如是解，亦足与先生之说并传不朽。更有作零神方位解，其说亦合，缘零神亦为玄空要诀耳。
 
-### image_refs
-
-- https://special.rhky.com/res/images/special/tishi_logo.png
-- http://p.ananas.chaoxing.com/star3/148_106/c17b738d354ea83fc33df486e880a80e.jpg
-- http://p.ananas.chaoxing.com/star3/216_198/4feac5fd622bd204f245a2277b9c999e.jpg
 
 ## SXK-023 论父母子息
 
-- chapter_id: 814953128
-- source_url: https://special.rhky.com/mobile/mooc/tocard/814953128?courseId=240632071&name=%E8%AE%BA%E7%88%B6%E6%AF%8D%E5%AD%90%E6%81%AF&code=&btype=tushu
-- digest_status: done
-- image_count: 1
 
 《经》云：“父母阴阳仔细寻。”即言子息不可兼父母，地不可兼天，天、人虽可兼，然亦有父母、子息之别。
 
@@ -834,16 +510,9 @@ generated: 2026-06-17
 
 又按：此章文字，沈公系采诸欧阳纯《风水》一书，非公手笔也。《宝照经》云：“子字出脉子字寻，莫教差错丑与壬。”此言坎宫壬子癸三山。壬为地，子为天，癸为人，子、癸同属阴，故子字出脉转癸字可用，转壬字即阴阳差错矣！丑则出卦，同在一卦差错尚不可，况出卦平！
 
-### image_refs
-
-- https://special.rhky.com/res/images/special/tishi_logo.png
 
 ## SXK-024 论夫妇合十
 
-- chapter_id: 814953129
-- source_url: https://special.rhky.com/mobile/mooc/tocard/814953129?courseId=240632071&name=%E8%AE%BA%E5%A4%AB%E5%A6%87%E5%90%88%E5%8D%81&code=&btype=tushu
-- digest_status: done
-- image_count: 3
 
 合十云者，圣人得天地之中，同声相应，同气相求，云从龙，风从虎，有生有形，各从其类之义也。《经》云：“共路两神为夫妇。”夫妇即合十之谓。世俗但知一白坎与九紫离对，二黑坤与八白艮对，三碧震也七赤兑对，四绿巽与六白乾对，颠之倒之，均得合十，而不知坎宫藏一二三，离宫藏七八九。壬为三，丙为七；癸为一，丁为九，合之皆十也。乾宫藏四五六，巽宫亦藏四五六。巳为四，亥为六；戌为四，辰为六，合之皆十也。艮宫藏七八九，坤宫藏一二三。申为一，寅为九；未为二，丑为八，合之皆十也。震宫藏一二三，兑宫藏七八九。甲为一，庚为九；辛为七，乙为三，合之皆十也。此一卦三山配夫妇之法也。
 
@@ -877,18 +546,9 @@ generated: 2026-06-17
 
 志伊谨案：玄空最忌者，上山下水；最喜者，到山到向。所谓“旺山旺向，寅葬卯发者”是也。先生于《论四十八局》，言之最详。然自二运至八运，天、地、人三元均有旺山旺向，而一、九两运独无，实为缺憾。今考夫妇合十，则一、九运有乾巽、巳亥，二、八运有丑未，三、七运有子午、癸丁，四、六运有庚甲。三元九运中，全局合十者，共得十四山向，是可补旺山旺向之缺憾矣，愿学者择而用之可也。
 
-### image_refs
-
-- https://special.rhky.com/res/images/special/tishi_logo.png
-- http://p.ananas.chaoxing.com/star3/312_287/a897046f95e8e92e67f8f501a763cf62.jpg
-- http://p.ananas.chaoxing.com/star3/312_300/5e79ffcd6a00c8d8bf723af195b78c24.jpg
 
 ## SXK-025 论阴阳零正
 
-- chapter_id: 814953130
-- source_url: https://special.rhky.com/mobile/mooc/tocard/814953130?courseId=240632071&name=%E8%AE%BA%E9%98%B4%E9%98%B3%E9%9B%B6%E6%AD%A3&code=&btype=tushu
-- digest_status: done
-- image_count: 1
 
 零正，即阴阳之谓，章氏《心眼指要》略露端倪，《温注》较为详尽。盖当元之令神为正神，与正神对待者为零神。如：
 
@@ -918,16 +578,9 @@ generated: 2026-06-17
 
 零神方位，独取河流、低洼，而水里排龙亦忌旺星挨到高山、实地，故宜“拨水入零堂”也。是故飞星与零正相得，其力愈雄厚；反之，而与零正相背，纵得旺山旺向，而无形中究不免减色耳。
 
-### image_refs
-
-- https://special.rhky.com/res/images/special/tishi_logo.png
 
 ## SXK-026 论下卦
 
-- chapter_id: 814953131
-- source_url: https://special.rhky.com/mobile/mooc/tocard/814953131?courseId=240632071&name=%E8%AE%BA%E4%B8%8B%E5%8D%A6&code=&btype=tushu
-- digest_status: done
-- image_count: 1
 
 《经》曰：“二十四龙管三卦”，即运星为一卦，山向飞星各一卦，故曰“管三卦”，此挨星之法也。
 
@@ -975,16 +628,9 @@ generated: 2026-06-17
 
 曰：范宜宾分阳分阴，实误于此。因元旦盘五黄入中，顺飞六到乾，乾卦三山戌乾亥，戌阴也，乾亥阳也；逆飞六到巽，巽卦三山辰巽巳，辰阴也，巽巳阳也。乾为天门，巽为地户，顺逆挨星，由此起原，而“辰戌”为起原之起原，故曰“辰戌分界”。
 
-### image_refs
-
-- https://special.rhky.com/res/images/special/tishi_logo.png
 
 ## SXK-027 论起星
 
-- chapter_id: 814953132
-- source_url: https://special.rhky.com/mobile/mooc/tocard/814953132?courseId=240632071&name=%E8%AE%BA%E8%B5%B7%E6%98%9F&code=&btype=tushu
-- digest_status: done
-- image_count: 4
 
 或问：替卦之法，《辩正》中何以未提及？
 
@@ -1126,19 +772,9 @@ generated: 2026-06-17
 
 黄邃谨案：《奥语》“坤壬乙一节”，《四库目录》谓“自来术家罕能详其起例”，迨蒋氏《辨正》出，始略露端倪。章氏作《直解》，亦有下卦、起星之言。下卦之例，虽经华氏刊传，而起星之法，尚秘而未宣。遂至异说纷纭，莫衷一是。此篇尽抉藩篱，直泄阃奥。举例既极详尽，说理尤事贯通，一洗向来私家隐秘之风，擅列圣心传之妙。邃于斯道略窥门径，证诸所闻，合若符契。其蒋氏所谓“止有一法，更无二门”者欤？读竟为之忭舞 [24] ，使于兰林有知，定当击碎唾壶 [25] 也。
 
-### image_refs
-
-- https://special.rhky.com/res/images/special/tishi_logo.png
-- http://p.ananas.chaoxing.com/star3/484_347/eec0af69da499c568f88b0f4302738ca.jpg
-- http://p.ananas.chaoxing.com/star3/484_348/8165cc4384b5a4e653825d30f0cfaf1c.jpg
-- http://p.ananas.chaoxing.com/star3/484_348/4ab882c81e807345e1ca6a4efc624e9a.jpg
 
 ## SXK-028 论向水
 
-- chapter_id: 814953133
-- source_url: https://special.rhky.com/mobile/mooc/tocard/814953133?courseId=240632071&name=%E8%AE%BA%E5%90%91%E6%B0%B4&code=&btype=tushu
-- digest_status: done
-- image_count: 1
 
 凡卜地：先观山、洋堂局完美；次将令星与蒋氏元旦盘（即五运五黄入中之盘）互相对照，求其生克若何。（俗所谓小玄空者即指此。）
 
@@ -1178,16 +814,9 @@ generated: 2026-06-17
 
 答曰：《周礼》墓大夫之制，即公墓也。近人惑于庸地师之说，往往停柩不葬，浮厝者累累，不如于都会市集择隙地辟为公墓。其法以八卦分界线处，各辟道路，阔二丈四尺。于二十四山分界线处，亦辟道路，阔一丈六尺，路之两旁，植以嘉木，中央作圆形，建屋五楹，为葬者奉祀之所。四围缭以墙垣，其内外各植不凋之木，按元运之兴盛葬之，其子孙受此荫庇，亦可产正人君子。较之听命于庸地师，实有霄壤之别。惟墓之尺寸及造法均须一定，否则参参差差，如义冢一般，令人可厌。地下阴沟，更当疏通，可免水蚁之患，亦安厝之善策也。
 
-### image_refs
-
-- https://special.rhky.com/res/images/special/tishi_logo.png
 
 ## SXK-029 论城门
 
-- chapter_id: 814953134
-- source_url: https://special.rhky.com/mobile/mooc/tocard/814953134?courseId=240632071&name=%E8%AE%BA%E5%9F%8E%E9%97%A8&code=&btype=tushu
-- digest_status: done
-- image_count: 1
 
 “水交三八”，即指城门。如巽山乾向，四山环抱，独子方有缺口，水口亦在子，此地即可用城门诀法。
 
@@ -1257,16 +886,9 @@ generated: 2026-06-17
 
 “知妙道……”一节，即《玄关同窍歌》。他书有单行本，加此文理亦通，实言城门之功用，其余并不关紧要，阅之自能领悟也。
 
-### image_refs
-
-- https://special.rhky.com/res/images/special/tishi_logo.png
 
 ## SXK-030 论七星打劫
 
-- chapter_id: 814953135
-- source_url: https://special.rhky.com/mobile/mooc/tocard/814953135?courseId=240632071&name=%E8%AE%BA%E4%B8%83%E6%98%9F%E6%89%93%E5%8A%AB&code=&btype=tushu
-- digest_status: done
-- image_count: 4
 
 《天玉经》云：“识得父母三般卦，便是真神路。北斗七星去打劫，离宫要相合。”
 
@@ -1372,45 +994,21 @@ generated: 2026-06-17
 
 又案：全局合十，既能运运贞吉。若一局而得一四七、二五八、三六九之三般卦，使三元九运之气皆通，其贞吉当与全局合十等。如二、五、八运之艮坤、坤艮，寅申、申寅，四、六运之丑未、未丑，皆全局合成三般卦，是又于坎离打劫中别创一格者。目为上乘作用，谁曰不宜！
 
-### image_refs
-
-- https://special.rhky.com/res/images/special/tishi_logo.png
-- http://p.ananas.chaoxing.com/star3/405_232/a6701a0cbe1c3ab54f631b55d2372634.jpg
-- http://p.ananas.chaoxing.com/star3/373_221/216da3f12d8d8fe633da6bc3eb6bf64d.jpg
-- http://p.ananas.chaoxing.com/star3/47_177/affa4ca7a771993821a8a14534c4ede0.jpg
 
 ## SXK-031 增广沈氏玄空学卷二
 
-- chapter_id: 814953136
-- source_url: https://special.rhky.com/mobile/mooc/tocard/814953136?courseId=240632071&name=%E5%A2%9E%E5%B9%BF%E6%B2%88%E6%B0%8F%E7%8E%84%E7%A9%BA%E5%AD%A6%E5%8D%B7%E4%BA%8C&code=&btype=tushu
-- digest_status: skipped
-- image_count: 1
 
 [image_only_or_section_title: raw HTML retained; no p.content text extracted]
 
-### image_refs
-
-- https://special.rhky.com/res/images/special/tishi_logo.png
 
 ## SXK-032 自得斋地理丛说
 
-- chapter_id: 814953137
-- source_url: https://special.rhky.com/mobile/mooc/tocard/814953137?courseId=240632071&name=%E8%87%AA%E5%BE%97%E6%96%8B%E5%9C%B0%E7%90%86%E4%B8%9B%E8%AF%B4&code=&btype=tushu
-- digest_status: skipped
-- image_count: 1
 
 [image_only_or_section_title: raw HTML retained; no p.content text extracted]
 
-### image_refs
-
-- https://special.rhky.com/res/images/special/tishi_logo.png
 
 ## SXK-033 论四十八局
 
-- chapter_id: 814953138
-- source_url: https://special.rhky.com/mobile/mooc/tocard/814953138?courseId=240632071&name=%E8%AE%BA%E5%9B%9B%E5%8D%81%E5%85%AB%E5%B1%80&code=&btype=tushu
-- digest_status: done
-- image_count: 1
 
 “二十四山分顺逆，共成四十有八局。”此二句误解者最多。尹一勺注《宝照》“天元”节，翻出四十八局，更谬。盖四十八局者，乃三元中自二运至八运，山上旺星到山，向上旺星到向，共得四十八局耳。
 
@@ -1454,16 +1052,9 @@ generated: 2026-06-17
 
 有假得者，七运之戌辰，因先天之兑在辰，今向上七到，七为兑，是先天之兑与后天之兑相遇也。余类推。
 
-### image_refs
-
-- https://special.rhky.com/res/images/special/tishi_logo.png
 
 ## SXK-034 论上山下水、到山到向
 
-- chapter_id: 814953140
-- source_url: https://special.rhky.com/mobile/mooc/tocard/814953140?courseId=240632071&name=%E8%AE%BA%E4%B8%8A%E5%B1%B1%E4%B8%8B%E6%B0%B4%E3%80%81%E5%88%B0%E5%B1%B1%E5%88%B0%E5%90%91&code=&btype=tushu
-- digest_status: done
-- image_count: 1
 
 今之谈玄空者，能知“不出卦”矣。然“上山、下水”绝不之知，竟有误为到山到向者，毫厘之差，失之千里矣。《经》云：“山上龙神不下水，水里龙神不上山。”言上山下水，何等明白！如二运之乾巽为到山到向，若戌山辰向则上山下水矣。今人葬地卜宅，竟有用戌兼乾、乾兼戌者，实不知运会耳。
 
@@ -1471,46 +1062,25 @@ generated: 2026-06-17
 
 《青囊序》云：“山管山兮水管水”，即言到山到向。“天卦江东掌上寻……”一段，亦言到山到向。蒋氏云：“略指一班，春光漏泄。”予谓“略指一班，则一文不值”也。立向最忌上山下水，乃往往犯此亦发者，其地必龙真穴的，又得向首与入中之卦合十，并有一、二节连珠吉水可通相照，故发耳。然福来不全，祸来甚速，岂能如旺龙旺向之悠久不替乎？
 
-### image_refs
-
-- https://special.rhky.com/res/images/special/tishi_logo.png
 
 ## SXK-035 论三星五吉
 
-- chapter_id: 814953142
-- source_url: https://special.rhky.com/mobile/mooc/tocard/814953142?courseId=240632071&name=%E8%AE%BA%E4%B8%89%E6%98%9F%E4%BA%94%E5%90%89&code=&btype=tushu
-- digest_status: done
-- image_count: 1
 
 或问：何谓三星五吉？
 
 答曰：三星者，每运入中之令星，山、向所到之飞星是也。五吉者，即替卦，因一卦有两卦之用，山、向之飞星有四，合以元运之令星，故云“五吉”也。细参《都天宝照经》蒋注自明。一说：上元，一、二、三为三星，以辅、弼龙来兼取入穴中为五吉；中元，四、五、六为三星，以贪、巨龙来兼取入穴中为五吉；下元，七、八、九为三星，以贪、武龙来兼取入穴中为五吉。亦须较其静动生克而用之耳。
 
-### image_refs
-
-- https://special.rhky.com/res/images/special/tishi_logo.png
 
 ## SXK-036 论一四同宫
 
-- chapter_id: 814953144
-- source_url: https://special.rhky.com/mobile/mooc/tocard/814953144?courseId=240632071&name=%E8%AE%BA%E4%B8%80%E5%9B%9B%E5%90%8C%E5%AE%AB&code=&btype=tushu
-- digest_status: done
-- image_count: 1
 
 邓笏臣问：西子湖头，获遇有道；一顾敝宅，蓬荜生辉。相宅与房均不吉，嘱移床位，谓“两月后必守处州”，今日委檄，适合尊意。足下奇士而挟异术，盍不出而用世耶？
 
 答曰：前相尊宅，宅房不利，故移床以取一吉，适合生旺，理应一麾出守，惟房门方位无生财之道。敝省知府，清苦之缺，无如处州，乃断之如此。其用法，即“一四同宫”诀耳，无足为异。因见足下存心长厚，无宦途习气，故偶施小技以报之。至以某为奇士得异术，未免谬奖。总之，人在天地中，能读书即能知理。所谓理者，人生一日不可须臾离。理者何？河洛是也。河图变易之易也，洛书不变之易也。洛书虽不变，然用法仅在“二八易位”四字之中。二八易位者，即颠颠倒之意，常理也，非异术也。明其理者，常人也，非奇士也。人病不求耳！至以用世相勖，某则山林气重，自知非富贵中人，虽平日读书，抱“前不见古人”之慨，自知身后之名，当有不没之称而已，此外无他求也。
 
-### image_refs
-
-- https://special.rhky.com/res/images/special/tishi_logo.png
 
 ## SXK-037 论反吟伏吟
 
-- chapter_id: 814953146
-- source_url: https://special.rhky.com/mobile/mooc/tocard/814953146?courseId=240632071&name=%E8%AE%BA%E5%8F%8D%E5%90%9F%E4%BC%8F%E5%90%9F&code=&btype=tushu
-- digest_status: done
-- image_count: 4
 
 或问：反吟伏吟之卦若何？
 
@@ -1538,19 +1108,9 @@ generated: 2026-06-17
 
 祖绵谨按：有说反吟伏吟与先子之说微有不同者。如七运立卯山酉向，顺挨至兑得九，将九入中逆挨，七到兑，谓之“令星到向”，宜见水。八在乾，谓之“伏吟方”，因天盘之八遇飞星之八也。此方在得令时反能致福，一失令必致灾祸，且多死于非命，少男尤甚。因八即艮，艮为少男故也。又如八运卯山酉向，八入中，九在乾，一到兑，再以一入中，九到乾，谓之“伏吟”。此由天盘所生者也。
 
-### image_refs
-
-- https://special.rhky.com/res/images/special/tishi_logo.png
-- http://p.ananas.chaoxing.com/star3/origin/05567c27d8d7b705b2219be91303c04d.png
-- http://p.ananas.chaoxing.com/star3/origin/6407fdfa0de07163992c65f7a68e7c37.png
-- http://p.ananas.chaoxing.com/star3/origin/2b4e2bd0b29642b97ea5bf86f2a5afc2.png
 
 ## SXK-038 论令星入囚
 
-- chapter_id: 814953148
-- source_url: https://special.rhky.com/mobile/mooc/tocard/814953148?courseId=240632071&name=%E8%AE%BA%E4%BB%A4%E6%98%9F%E5%85%A5%E5%9B%9A&code=&btype=tushu
-- digest_status: done
-- image_count: 1
 
 令星入中谓之“囚”，阴阳二宅逢囚即败，然有囚得住、囚不住之别。如一运立戌向，运星二到向，至二黑运即囚矣。但要坤方阳宅有门路、阴宅有水则不能囚，盖坤方为五黄所临故也。（此指向上飞星之五黄。）余仿此推。惟五黄入中则不囚，盖五黄，中土也，至尊也，皇极也，何囚之有？
 
@@ -1568,31 +1128,17 @@ generated: 2026-06-17
 
 壬丙虽无旺运，然丙向得八十年，壬向得一百年。此小三元年运之大致也。
 
-### image_refs
-
-- https://special.rhky.com/res/images/special/tishi_logo.png
 
 ## SXK-039 论收山出煞
 
-- chapter_id: 814953150
-- source_url: https://special.rhky.com/mobile/mooc/tocard/814953150?courseId=240632071&name=%E8%AE%BA%E6%94%B6%E5%B1%B1%E5%87%BA%E7%85%9E&code=&btype=tushu
-- digest_status: done
-- image_count: 1
 
 或问：《天玉经》末章云“更有收山出煞诀，亦兼为汝说”。玩“更有”、“亦兼”四字，何等郑重！而蒋、章注解均未言及，究竟其理若何？
 
 答曰：此二句温氏虽揭其理，然终未明白透彻。其实《蒋注》、《章解》、《温续解》，在《都天宝照经》“天机妙诀本不同，八卦只有一卦通”一章内，已将“收山出煞诀”之要理说得头头是道，学者见之，自然明了。不过注此反略者，为“天机不可泄漏”一语所误耳。
 
-### image_refs
-
-- https://special.rhky.com/res/images/special/tishi_logo.png
 
 ## SXK-040 论分金
 
-- chapter_id: 814953152
-- source_url: https://special.rhky.com/mobile/mooc/tocard/814953152?courseId=240632071&name=%E8%AE%BA%E5%88%86%E9%87%91&code=&btype=tushu
-- digest_status: done
-- image_count: 4
 
 或问：分金时，何以不用后天卦？
 
@@ -1676,34 +1222,17 @@ generated: 2026-06-17
 
 此大谬！“蒋盘”节气上有十二支，学者每不察其理，岂知即分金也！仲山《心眼指要》载蒋公盘式，即有分金，惟用法过于秘密，仅于《辨正》中略指一斑耳。分金不独用于山、向，即穴前所见之一山一水，莫不与分金相关，而且非常奇验。赖太素《拨砂法》即分金，张心言《辨正疏》所载卦理亦分金，惟心言“养其一指，而失其肩背”耳。予历年覆人坟墓，生肖以纳音为主，患病以六十四卦为主，不能丝毫放过。曾廉泉讥予：“言分金如作诗之流于试帖。”予曰：“此诗之韵、词之律、曲之谱也。”廉泉恍然。
 
-### image_refs
-
-- https://special.rhky.com/res/images/special/tishi_logo.png
-- http://p.ananas.chaoxing.com/star3/631_450/0fa29dad8eea659b33ec24919094d75a.jpg
-- http://p.ananas.chaoxing.com/star3/181_355/a088a45c27056e4504dd0a0a8778d056.jpg
-- http://p.ananas.chaoxing.com/star3/228_347/1f1dabef426adb6370c6c650d83c1f90.jpg
 
 ## SXK-041 论照神
 
-- chapter_id: 814953154
-- source_url: https://special.rhky.com/mobile/mooc/tocard/814953154?courseId=240632071&name=%E8%AE%BA%E7%85%A7%E7%A5%9E&code=&btype=tushu
-- digest_status: done
-- image_count: 1
 
 或问：《宅断》中有四水开阳，各地虽非五运葬之，亦吉，何故？
 
 答曰：论正格，则宜五运下葬；论变格，其他各运亦能用。终须龙真穴的，将玄空五行配合得宜。因穴之左、右、前、后四水，必有二水为当运之吉星，虽无五运中“左右咸宜”之妙，然终无大咎。因既有二水为吉，至下运，其气一变，又得二水可用，周行不息，非若仅有一水，旺运一过，即衰也。
 
-### image_refs
-
-- https://special.rhky.com/res/images/special/tishi_logo.png
 
 ## SXK-042 论八煞黄泉
 
-- chapter_id: 814953156
-- source_url: https://special.rhky.com/mobile/mooc/tocard/814953156?courseId=240632071&name=%E8%AE%BA%E5%85%AB%E7%85%9E%E9%BB%84%E6%B3%89&code=&btype=tushu
-- digest_status: done
-- image_count: 1
 
 或问：八煞之说，若何？
 
@@ -1751,16 +1280,9 @@ generated: 2026-06-17
 
 曾春沂曰：凡水法，得法为城门；不得法即为黄泉。
 
-### image_refs
-
-- https://special.rhky.com/res/images/special/tishi_logo.png
 
 ## SXK-043 论消亡水
 
-- chapter_id: 814953158
-- source_url: https://special.rhky.com/mobile/mooc/tocard/814953158?courseId=240632071&name=%E8%AE%BA%E6%B6%88%E4%BA%A1%E6%B0%B4&code=&btype=tushu
-- digest_status: done
-- image_count: 1
 
 或问：消亡水如何用法？
 
@@ -1772,16 +1294,9 @@ generated: 2026-06-17
 
 尝观人家冢墓，有消、亡水，均无咎。因《易》之理，凡先、后天同位，皆吉；《易》之用，字如遇交比、同、孚、节志，非先、后天相遇，即先天对待，或后天对待也。其说不可信！
 
-### image_refs
-
-- https://special.rhky.com/res/images/special/tishi_logo.png
 
 ## SXK-044 论三合
 
-- chapter_id: 814953160
-- source_url: https://special.rhky.com/mobile/mooc/tocard/814953160?courseId=240632071&name=%E8%AE%BA%E4%B8%89%E5%90%88&code=&btype=tushu
-- digest_status: done
-- image_count: 2
 
 贾步 问：吾人极鄙视三合，然今人从之者甚众，想有要义，乞吾师详言之。
 
@@ -1813,47 +1328,25 @@ generated: 2026-06-17
 
 韩崑源曰：此说将《汉书·天官·五行》、萧氏《五行大义》所未道着者，一一为之说明，不独三合家言可破，习玄空者亦当奉为圭臬。其实，申子辰、巳酉丑、寅午戌、亥卯未也，即坎、兑、离、震之大化气也。由此而推一切神煞，具有根据，岂空言哉！
 
-### image_refs
-
-- https://special.rhky.com/res/images/special/tishi_logo.png
-- http://p.ananas.chaoxing.com/star3/origin/dd0c6ef44c436ada067bc03db86006a5.png
 
 ## SXK-045 论双山
 
-- chapter_id: 814953162
-- source_url: https://special.rhky.com/mobile/mooc/tocard/814953162?courseId=240632071&name=%E8%AE%BA%E5%8F%8C%E5%B1%B1&code=&btype=tushu
-- digest_status: done
-- image_count: 1
 
 或问：双山若何？
 
 答曰：三合家误解“二十四山双双起，少有时师通此义”两句。岂知“双双起”者，山山如是，不过各取一字以为入中之的而已。彼以长生、旺、墓硬凑二十四山，则误矣。其谬之又谬者，将此二十四山作十二宫，干、维并地支，如癸丑、巽巳从金，艮寅、辛戌从火，乙辰、坤申从水，丁未、乾亥从木，乃谓之“从气”。如乾亥同宫，为木长生；甲卯同宫，为木旺地；丁未同宫，为木墓库。以亥卯未为三合，而以乾甲丁配之，双山云乎哉！余类推。
 
-### image_refs
-
-- https://special.rhky.com/res/images/special/tishi_logo.png
 
 ## SXK-046 论纳甲
 
-- chapter_id: 814953164
-- source_url: https://special.rhky.com/mobile/mooc/tocard/814953164?courseId=240632071&name=%E8%AE%BA%E7%BA%B3%E7%94%B2&code=&btype=tushu
-- digest_status: done
-- image_count: 1
 
 或问：何谓纳气？
 
 答曰：三合家颇重之，即纳甲也。乾纳壬甲，坤纳癸乙，震纳庚，巽纳辛，坎纳戊，离纳己，艮纳丙，兑纳丁。阳干纳阳卦，阴干纳阴卦。如壬龙，壬纳于离，宜午向（三合以午为阳），净阳相配，坎离相交也。岂知净阴净阳自有元运在，非板法可以语也！
 
-### image_refs
-
-- https://special.rhky.com/res/images/special/tishi_logo.png
 
 ## SXK-047 论奇门
 
-- chapter_id: 814953166
-- source_url: https://special.rhky.com/mobile/mooc/tocard/814953166?courseId=240632071&name=%E8%AE%BA%E5%A5%87%E9%97%A8&code=&btype=tushu
-- digest_status: done
-- image_count: 3
 
 奇门，即九宫。不过用于卜宅，既有山、向可为入中之的，不必再求阴遁阳遁。其八门以“休、开、生”为吉，如紫白之取一白、六白、八白也。休即一白，开即六白，生即八白。其五黄入中，数皆不动 [4] ，则谓之“伏吟”。其他入中，则八方必虚其一。虚者，门也，实为五黄加临之方。如坎，休居中，则离方必虚，离即五黄加临也。乾，开居中，则巽方必虚，巽即五黄加临也。余类推。如三奇，“绝体”俗作“祸害”，“游魂”俗作“六煞”，“福德”俗作“延年”，“本宫”俗作“伏位”。
 
@@ -1879,18 +1372,9 @@ generated: 2026-06-17
 
 夏禹甸曰：又有“八诈门符头”，即直符，次螣蛇、次太阴、次六合、次勾陈、次朱雀、次九地、次九天，阴局有白虎、玄武列入，此本合《阴符经》。奇门而着重于戎事，堪舆书中反为赘疣骈拇，盖各有取焉尔。
 
-### image_refs
-
-- https://special.rhky.com/res/images/special/tishi_logo.png
-- http://p.ananas.chaoxing.com/star3/198_287/8a4c89007f0effa400fd65bd28a88e75.jpg
-- http://p.ananas.chaoxing.com/star3/633_404/0ee7fac592c59cab624fd6b2b7f4d438.jpg
 
 ## SXK-048 论选择
 
-- chapter_id: 814953167
-- source_url: https://special.rhky.com/mobile/mooc/tocard/814953167?courseId=240632071&name=%E8%AE%BA%E9%80%89%E6%8B%A9&code=&btype=tushu
-- digest_status: done
-- image_count: 1
 
 或问：蒋氏不讲三煞、太岁，有诸？
 
@@ -1958,16 +1442,9 @@ generated: 2026-06-17
 
 答曰：足下所习者，弟均习之，后读《易纬稽览图》“甲子卦气起中孚”一句，始悟圣人作历即凭卦气。如辟卦为十二月，今无人不知之，而每日一爻，知之者少，于是术者以神煞惑众矣。且天下之理，不外“气数”二字尽之。气为重，数次之，盖气能盖数。如人之将死，数也，然其能作福，可免罪戾。因其气充塞天地之间，即数亦随之而易。如七政四余，天星数也；用卦象，气也。且《易纬》八种中，择日之法已尽，奈何不取法于上而囿于曲学哉？且古人推步之法，皆本于《易》。考唐一行推《大衍》之策，亦《易》也。即西人推步天文，亦与《易》相通，不过纪年之故，致天文躔度略有差讹，然用于卜葬尚无碍。
 
-### image_refs
-
-- https://special.rhky.com/res/images/special/tishi_logo.png
 
 ## SXK-049 论三元伪法
 
-- chapter_id: 814953169
-- source_url: https://special.rhky.com/mobile/mooc/tocard/814953169?courseId=240632071&name=%E8%AE%BA%E4%B8%89%E5%85%83%E4%BC%AA%E6%B3%95&code=&btype=tushu
-- digest_status: done
-- image_count: 4
 
 三元伪法，张心言《疏》中胪举大概，大致尚合，惟“补救水神图”实系正法，而张氏未能分清下卦、起星截然为两途，将正宗变为伪法矣。末载三图，第一图合，第二、第三图均误，实张氏未明的派真传耳。
 
@@ -2015,19 +1492,9 @@ generated: 2026-06-17
 
 更以四运之七到艮，六运之四到震，五到巽，亦穿凿，而谓合于先天艮七震四巽五之数，以为次吉，可笑殊甚！夫理气以后天为“用”，山、向飞星为“重”。“用”失其当，虽有偶中，得不偿失，徒自误、误人而已。
 
-### image_refs
-
-- https://special.rhky.com/res/images/special/tishi_logo.png
-- http://p.ananas.chaoxing.com/star3/156_152/48133f901234b038f906da2da290747b.jpg
-- http://p.ananas.chaoxing.com/star3/624_90/ad084f5e89c31cd59ecf385398dbe41e.jpg
-- http://p.ananas.chaoxing.com/star3/240_235/60899639cd9a6e5b2482f319c1031f67.jpg
 
 ## SXK-050 论一行伪法
 
-- chapter_id: 814953171
-- source_url: https://special.rhky.com/mobile/mooc/tocard/814953171?courseId=240632071&name=%E8%AE%BA%E4%B8%80%E8%A1%8C%E4%BC%AA%E6%B3%95&code=&btype=tushu
-- digest_status: done
-- image_count: 4
 
 唐一行《灭蛮经》全书已不见，而其术流传至今，为生气、天医、延年、祸害、六煞、五鬼、绝命、伏位八者。惟一行颇精易理，错综变化，足为读《易》之一助。其挨排之来历分揭如次。
 
@@ -2075,19 +1542,9 @@ generated: 2026-06-17
 
 此八者，对于先天之变极有一种次序，至术者以吉凶断之，则误矣。
 
-### image_refs
-
-- https://special.rhky.com/res/images/special/tishi_logo.png
-- http://p.ananas.chaoxing.com/star3/384_269/4b9795e517a35648d171b70963006986.jpg
-- http://p.ananas.chaoxing.com/star3/182_133/872267edf14c1178a86364f8638401fb.jpg
-- http://p.ananas.chaoxing.com/star3/190_347/ef94217127a7ac1f1cadab3562e56447.jpg
 
 ## SXK-051 论诸家得失
 
-- chapter_id: 814953173
-- source_url: https://special.rhky.com/mobile/mooc/tocard/814953173?courseId=240632071&name=%E8%AE%BA%E8%AF%B8%E5%AE%B6%E5%BE%97%E5%A4%B1&code=&btype=tushu
-- digest_status: done
-- image_count: 1
 
 予昔年习三合，嗣因中台山择地，大起疑窦，后读蒋氏《平砂玉尺辨伪》，始知三合之无根据，乃弃而习玄空。奈世之习玄空者，均一知半解，无可问津。爰荟萃诸家，日夜穷思，洞明其理，始信其法不谬，然非精熟峦头，读理气书，无所用也。
 
@@ -2261,16 +1718,9 @@ generated: 2026-06-17
 
 胡煦、江慎修、张惠言、纪大奎、端木国瑚，皆精于《易》。胡、江二氏虽未著地理专书，其所引者皆卑卑不足道。张、纪与端木皆有著述，其书无一句可读。盖方技之学，无书可供参考，未得其诀，终日在故书堆中搜求，人愈聪明，读蒋大鸿之书愈觉沉闷，一入歧途，便不可救药矣！
 
-### image_refs
-
-- https://special.rhky.com/res/images/special/tishi_logo.png
 
 ## SXK-052 论秘密之谬
 
-- chapter_id: 814953175
-- source_url: https://special.rhky.com/mobile/mooc/tocard/814953175?courseId=240632071&name=%E8%AE%BA%E7%A7%98%E5%AF%86%E4%B9%8B%E8%B0%AC&code=&btype=tushu
-- digest_status: done
-- image_count: 1
 
 或问：天机不可泄漏，子独泄漏殆尽，何也？
 
@@ -2340,31 +1790,17 @@ generated: 2026-06-17
 
 更进而言之，九宫者，八卦所自出也。其所以有异议者：一则未睹《乾凿度》，不知九宫之本原；二则卦名过繁，难以记忆；三则未明寄宫之说，不能挨排所致。以上三种，惟寄宫为最难。若知寄宫，然后卦画自明，一一排列，自觉一丝不紊。香溪老人为太鹤山人再传弟子，易学颇深，而对此亦茫然无知。余告以“寄宫出于生成”，老人乃恍然大悟。
 
-### image_refs
-
-- https://special.rhky.com/res/images/special/tishi_logo.png
 
 ## SXK-053 论阳宅
 
-- chapter_id: 814953177
-- source_url: https://special.rhky.com/mobile/mooc/tocard/814953177?courseId=240632071&name=%E8%AE%BA%E9%98%B3%E5%AE%85&code=&btype=tushu
-- digest_status: done
-- image_count: 1
 
 阳宅与阴宅异，阳宅不独理气为要，而光线亦不能不讲。如都会之区，人烟稠密，无非光线而已。《诗·绵》之三章“曰止曰时，筑室于时”，“时”即天心正运也。读此章，知古人于定宅形势、理气详矣。
 
 《文王有声》之七章曰：“考卜维王，宅是镐京”，此言作邑也。《公刘》七章曰：“既溥既长，既景乃冈，相其阴阳，观其流泉。”“溥、长”即形势言，“景”即光线言，“冈”即地势高爽也，“阴阳”即卦理言。此章峦头、理气皆备，时人仅采“相阴阳、观流泉”，而未及上二句者，尚未合阳宅之真诀也。至“定之正中”首、二两章，亦谓定阳宅之要诀。
 
-### image_refs
-
-- https://special.rhky.com/res/images/special/tishi_logo.png
 
 ## SXK-054 罗盘图说
 
-- chapter_id: 814953179
-- source_url: https://special.rhky.com/mobile/mooc/tocard/814953179?courseId=240632071&name=%E7%BD%97%E7%9B%98%E5%9B%BE%E8%AF%B4&code=&btype=tushu
-- digest_status: done
-- image_count: 1
 
 一层：洛书。
 
@@ -2384,73 +1820,35 @@ generated: 2026-06-17
 
 九层：六十甲子纳音分金。
 
-### image_refs
-
-- https://special.rhky.com/res/images/special/tishi_logo.png
 
 ## SXK-055 钱塘沈竹礽更正蒋盘简式
 
-- chapter_id: 814953181
-- source_url: https://special.rhky.com/mobile/mooc/tocard/814953181?courseId=240632071&name=%E9%92%B1%E5%A1%98%E6%B2%88%E7%AB%B9%E7%A4%BD%E6%9B%B4%E6%AD%A3%E8%92%8B%E7%9B%98%E7%AE%80%E5%BC%8F&code=&btype=tushu
-- digest_status: skipped
-- image_count: 4
 
 [image_only_or_section_title: raw HTML retained; no p.content text extracted]
 
-### image_refs
-
-- https://special.rhky.com/res/images/special/tishi_logo.png
-- http://p.ananas.chaoxing.com/star3/611_616/1222fde26fad698a9cb8d5df989d2895.jpg
-- http://p.ananas.chaoxing.com/star3/16_9/df784db857fa757e4472507fdde42b6f.jpg
-- http://p.ananas.chaoxing.com/star3/24_10/fe58b25dc792aec13f69e33b9461368d.jpg
 
 ## SXK-056 增广沈氏玄空学卷三
 
-- chapter_id: 814953183
-- source_url: https://special.rhky.com/mobile/mooc/tocard/814953183?courseId=240632071&name=%E5%A2%9E%E5%B9%BF%E6%B2%88%E6%B0%8F%E7%8E%84%E7%A9%BA%E5%AD%A6%E5%8D%B7%E4%B8%89&code=&btype=tushu
-- digest_status: skipped
-- image_count: 1
 
 [image_only_or_section_title: raw HTML retained; no p.content text extracted]
 
-### image_refs
-
-- https://special.rhky.com/res/images/special/tishi_logo.png
 
 ## SXK-057 原　序
 
-- chapter_id: 814953185
-- source_url: https://special.rhky.com/mobile/mooc/tocard/814953185?courseId=240632071&name=%E5%8E%9F%E3%80%80%E5%BA%8F&code=&btype=tushu
-- digest_status: done
-- image_count: 1
 
 此书原名《阴阳二宅录验》，无锡章仲山甫所著，其家视为至宝，不轻示人。同治癸酉夏，予偕胡伯安至锡，以重金向仲山后人假阅，竭一日夜之力，手录以归。以其名不雅驯，改称《宅断》，以便记忆。
 
 夫地理之道，分峦头、理气，五尺童子均知之。然峦头不真，理气无用，所谓皮之不存，毛将焉附者也。章氏理气虽佳，惜目力未经名山大川，所录者均系勾搭小地，予于增注时，将其琐屑者一一删去，于“阴宅”存五十图，“阳宅”存十七图。时予寓居上虞，从游子弟多宁、绍二郡，《宅断》所取亦以其地为多，俾学者易于印证也。不采著名陵墓者，以形势虽佳，而当时卜葬之元运无从稽考，故从略云。
 
-### image_refs
-
-- https://special.rhky.com/res/images/special/tishi_logo.png
 
 ## SXK-058 阴宅秘断（计五十四条）
 
-- chapter_id: 814953187
-- source_url: https://special.rhky.com/mobile/mooc/tocard/814953187?courseId=240632071&name=%E9%98%B4%E5%AE%85%E7%A7%98%E6%96%AD%EF%BC%88%E8%AE%A1%E4%BA%94%E5%8D%81%E5%9B%9B%E6%9D%A1%EF%BC%89&code=&btype=tushu
-- digest_status: done
-- image_count: 1
 
 无锡章仲山原著 钱塘沈竹礽详注 余姚后学王则先补阐
 
-### image_refs
-
-- https://special.rhky.com/res/images/special/tishi_logo.png
 
 ## SXK-059 常州张姓祖墓　癸山丁向　一运扦
 
-- chapter_id: 814953189
-- source_url: https://special.rhky.com/mobile/mooc/tocard/814953189?courseId=240632071&name=%E5%B8%B8%E5%B7%9E%E5%BC%A0%E5%A7%93%E7%A5%96%E5%A2%93%E3%80%80%E7%99%B8%E5%B1%B1%E4%B8%81%E5%90%91%E3%80%80%E4%B8%80%E8%BF%90%E6%89%A6&code=&btype=tushu
-- digest_status: done
-- image_count: 2
 
 此局坤水屈曲而来，转巽方会聚，至艮而消。
 
@@ -2460,17 +1858,9 @@ generated: 2026-06-17
 
 则先谨按：是地坤方地盘二，天盘七，二七同道也。巽方地盘四，天盘九，四九为友也。天地盘暗合生成，泽自远矣。双星临向，三白水俱到向上，又在巽方会聚，配合城门，财自旺矣。然以乾金生坎水之故，长房仅主发秀而财不旺。此可悟公位不单从八国水神断，而有时与向首生克有关，当互相饶减也。
 
-### image_refs
-
-- https://special.rhky.com/res/images/special/tishi_logo.png
-- http://p.ananas.chaoxing.com/star3/248_248/99e694c209bfca147f149455cef0a21f.jpg
 
 ## SXK-060 杨姓祖墓　亥山巳向　一运扦
 
-- chapter_id: 814953191
-- source_url: https://special.rhky.com/mobile/mooc/tocard/814953191?courseId=240632071&name=%E6%9D%A8%E5%A7%93%E7%A5%96%E5%A2%93%E3%80%80%E4%BA%A5%E5%B1%B1%E5%B7%B3%E5%90%91%E3%80%80%E4%B8%80%E8%BF%90%E6%89%A6&code=&btype=tushu
-- digest_status: done
-- image_count: 2
 
 此局大龙从坤来，转庚酉辛，直至丑艮寅而去。脉从乾方腰落，开窝结穴，乾方有湖，巽方有水呈秀。
 
@@ -2480,17 +1870,9 @@ generated: 2026-06-17
 
 则先谨按：是局向首一九共遇，合天心十道，中宫得一九，合“坎离水火中天过，龙墀移帝座”之局。双一临巽水来呈秀，龙穴真的，宜乎财、丁、贵三者并茂。然是地百四十年例当入囚，乃云“自明迄今富贵未艾”者，何也？意者乾方有湖，交八运囚不住耶。
 
-### image_refs
-
-- https://special.rhky.com/res/images/special/tishi_logo.png
-- http://p.ananas.chaoxing.com/star3/248_248/1e6cc50c33b4258a53e2f36f558e6698.jpg
 
 ## SXK-061 柳塘桥张姓祖墓　申山寅向　一运扦
 
-- chapter_id: 814953193
-- source_url: https://special.rhky.com/mobile/mooc/tocard/814953193?courseId=240632071&name=%E6%9F%B3%E5%A1%98%E6%A1%A5%E5%BC%A0%E5%A7%93%E7%A5%96%E5%A2%93%E3%80%80%E7%94%B3%E5%B1%B1%E5%AF%85%E5%90%91%E3%80%80%E4%B8%80%E8%BF%90%E6%89%A6&code=&btype=tushu
-- digest_status: done
-- image_count: 2
 
 此局艮方有大水放光，乾、兑二方亦有清水映照。
 
@@ -2500,17 +1882,9 @@ generated: 2026-06-17
 
 则先谨按：向星入中，主丁稀财退，向上之水作凶煞论，慎勿误为当元旺水，可知入中不偏重运星，向星亦所切忌，与旁气有别。
 
-### image_refs
-
-- https://special.rhky.com/res/images/special/tishi_logo.png
-- http://p.ananas.chaoxing.com/star3/248_248/a760ebf867d439fc93b975cb51c2ff67.jpg
 
 ## SXK-062 无锡石塘湾孙姓祖墓　子山午向　二运扦
 
-- chapter_id: 814953195
-- source_url: https://special.rhky.com/mobile/mooc/tocard/814953195?courseId=240632071&name=%E6%97%A0%E9%94%A1%E7%9F%B3%E5%A1%98%E6%B9%BE%E5%AD%99%E5%A7%93%E7%A5%96%E5%A2%93%E3%80%80%E5%AD%90%E5%B1%B1%E5%8D%88%E5%90%91%E3%80%80%E4%BA%8C%E8%BF%90%E6%89%A6&code=&btype=tushu
-- digest_status: done
-- image_count: 2
 
 此局庚、酉、辛河水大宕，由坤、离、巽、震复从辰方消去。坎方有大河，并有一直滨当背冲于穴后。
 
@@ -2520,17 +1894,9 @@ generated: 2026-06-17
 
 则先谨按：坎宫为当元令星所在，有水特大，所谓“冲起乐宫无价宝”是也，然犯“龙神下水”，故主丁气大减。其余震、巽、离、坤、兑等水，皆收不起，无甚裨益。交六运大败，入囚故也。
 
-### image_refs
-
-- https://special.rhky.com/res/images/special/tishi_logo.png
-- http://p.ananas.chaoxing.com/star3/248_248/43e3a3ac172cff33284f3cd6de6cf13c.jpg
 
 ## SXK-063 上虞鲤鱼山钱姓祖墓　辛乙兼酉卯　二运扦
 
-- chapter_id: 814953197
-- source_url: https://special.rhky.com/mobile/mooc/tocard/814953197?courseId=240632071&name=%E4%B8%8A%E8%99%9E%E9%B2%A4%E9%B1%BC%E5%B1%B1%E9%92%B1%E5%A7%93%E7%A5%96%E5%A2%93%E3%80%80%E8%BE%9B%E4%B9%99%E5%85%BC%E9%85%89%E5%8D%AF%E3%80%80%E4%BA%8C%E8%BF%90%E6%89%A6&code=&btype=tushu
-- digest_status: done
-- image_count: 2
 
 仲山曰：“此局葬后，财丁两旺，兼出科甲，每中必双。辛未年出一词林，系丙申命。然此地必出瞽目，寡妇尤发。”
 
@@ -2546,33 +1912,17 @@ generated: 2026-06-17
 
 则先谨按：此局乃离宫打劫，以向上飞星到山之字入中为囚，故交七运，小房绝嗣，囚实为之。然其地龙真穴的，城门方位又暗合一四同宫之妙，故逢太岁吊动，虽囚而仍有科甲之应。待交九运，地运告终，客星七到向，先、后天火数同聚震宫，宜乎退财损丁，兼遭火患也。
 
-### image_refs
-
-- https://special.rhky.com/res/images/special/tishi_logo.png
-- http://p.ananas.chaoxing.com/star3/248_248/613442fd11ef5309952faf5440476048.jpg
 
 ## SXK-064 上虞某姓祖墓　坐乙向辛　二运扦
 
-- chapter_id: 814953199
-- source_url: https://special.rhky.com/mobile/mooc/tocard/814953199?courseId=240632071&name=%E4%B8%8A%E8%99%9E%E6%9F%90%E5%A7%93%E7%A5%96%E5%A2%93%E3%80%80%E5%9D%90%E4%B9%99%E5%90%91%E8%BE%9B%E3%80%80%E4%BA%8C%E8%BF%90%E6%89%A6&code=&btype=tushu
-- digest_status: done
-- image_count: 2
 
 仲山曰：“坎方水来，直至坤方消出，向上有水。甲申旬中，丙戌流年葬，二黑运主事。双二到山，本犯水神上山，主损财丁，幸后无主峰，又喜有水潴聚，以凶化吉，葬后平平顺利。嗣后巳酉丑三肖之局，巳命人发富，酉命人发秀，交三碧运宫，九紫命局，一九共遇，木火通明，长房起家，女掌男权，定主火灾之忧，一见便生此灾，是四九为友之病。一白到山，长房添丁，次房出酉命人，便发财源。交四绿运，运星入囚，防口舌官灾，兼伤妇女人口，家道衰落。交五黄运，一白天蓬到坎，长房有入泮者，次房平平，寡宿迭见。交六白运，大败，后无吉运矣。”
 
 则先谨按：巳酉二肖发者，从向上之地盘断也。乙山辛向人元龙也，顺子、父母阴阳相同，故土巳酉二肖发。丑虽三合，阴阳殊途，故不与也。女掌男权者，中宫坐山俱为阴卦故也。行震运，三碧旺星入中，长房添丁。己酉年，一白入中，三碧旺星到向，次房亦添丁。凡添丁均与旺星加临有关，然入衰运，逢旺星到山、临向，或值中宫，转有损耗凶祸之咎，二宅皆验，此盖“虚不受补”之理。交四运，地运告终，家道衰落。伤妇女者，巽为阴卦故也。向首六七同宫，四运六又临向，官星重重，故兼主官灾、口舌。五黄运坎、巽两宫，咸合成一四同宫，故有入泮之应。六运大败，后无吉运者，向星入中，星不得令故也。然是局独取坐后有“潴聚旺水”，否则葬后便不免颠沛，又安望其顺利哉？
 
-### image_refs
-
-- https://special.rhky.com/res/images/special/tishi_logo.png
-- http://p.ananas.chaoxing.com/star3/273_248/2aef32be4ffd1cef0ca1a06946b4c074.jpg
 
 ## SXK-065 孙姓祖墓　壬山丙向　二运扦
 
-- chapter_id: 814953201
-- source_url: https://special.rhky.com/mobile/mooc/tocard/814953201?courseId=240632071&name=%E5%AD%99%E5%A7%93%E7%A5%96%E5%A2%93%E3%80%80%E5%A3%AC%E5%B1%B1%E4%B8%99%E5%90%91%E3%80%80%E4%BA%8C%E8%BF%90%E6%89%A6&code=&btype=tushu
-- digest_status: done
-- image_count: 2
 
 此局向上无水，兑方有水放光。
 
@@ -2582,17 +1932,9 @@ generated: 2026-06-17
 
 则先谨按：是局向上无水，八国惟兑方有大水放光，已呈喧宾夺主之象，兑为阴神所集，故以奸断。巽木又克向首、中宫坤土，故复主因奸破财。此玄空活泼泼地之断法，着眼在八国间力量特巨方位与向首、中宫生克并阐。非于此道三折肱者，不易推也。然是地交四运，财气当利，所谓“一水得元”，尚未入囚故也。
 
-### image_refs
-
-- https://special.rhky.com/res/images/special/tishi_logo.png
-- http://p.ananas.chaoxing.com/star3/248_248/929165f0ed80a70a798213bd53bd3974.jpg
 
 ## SXK-066 章姓祖墓　壬山丙向　二运扦
 
-- chapter_id: 814953203
-- source_url: https://special.rhky.com/mobile/mooc/tocard/814953203?courseId=240632071&name=%E7%AB%A0%E5%A7%93%E7%A5%96%E5%A2%93%E3%80%80%E5%A3%AC%E5%B1%B1%E4%B8%99%E5%90%91%E3%80%80%E4%BA%8C%E8%BF%90%E6%89%A6&code=&btype=tushu
-- digest_status: done
-- image_count: 2
 
 仲山曰：“此局葬后，财丁两旺，然主家主不寿，世出寡妇，乃及僧尼耗财。”
 
@@ -2600,17 +1942,9 @@ generated: 2026-06-17
 
 则先谨按：土本生金，而土重则转致埋金，可见过犹不及，五行亦以中和为贵。坤为老阴，寡宿主之，双二同宫失元，主世出寡妇。相生且然，相克宁复待言！故阴精丛集，辄为二宅忌神。
 
-### image_refs
-
-- https://special.rhky.com/res/images/special/tishi_logo.png
-- http://p.ananas.chaoxing.com/star3/248_248/32ea755203e09243d267308c42b0e79c.jpg
 
 ## SXK-067 施姓祖墓　酉山卯向　二运扦
 
-- chapter_id: 814953205
-- source_url: https://special.rhky.com/mobile/mooc/tocard/814953205?courseId=240632071&name=%E6%96%BD%E5%A7%93%E7%A5%96%E5%A2%93%E3%80%80%E9%85%89%E5%B1%B1%E5%8D%AF%E5%90%91%E3%80%80%E4%BA%8C%E8%BF%90%E6%89%A6&code=&btype=tushu
-- digest_status: done
-- image_count: 2
 
 此局坟后低田，兑水远来，从乾、坎、艮至震方开宕。巽方有桥，水从桥下出。
 
@@ -2618,17 +1952,9 @@ generated: 2026-06-17
 
 沈注：大发财丁者，双二到向，向上有水也。入泮必双者，城门在巽，双一到也。一四同宫，本主科甲，因龙力不强，但出秀才，此美中不足耳。世出寡妇、瞽目，以向上双二到九故也。
 
-### image_refs
-
-- https://special.rhky.com/res/images/special/tishi_logo.png
-- http://p.ananas.chaoxing.com/star3/276_248/563967cc82a413ed398bd4bd20f78e66.jpg
 
 ## SXK-068 裴姓祖墓　未山丑向　二运扦
 
-- chapter_id: 814953207
-- source_url: https://special.rhky.com/mobile/mooc/tocard/814953207?courseId=240632071&name=%E8%A3%B4%E5%A7%93%E7%A5%96%E5%A2%93%E3%80%80%E6%9C%AA%E5%B1%B1%E4%B8%91%E5%90%91%E3%80%80%E4%BA%8C%E8%BF%90%E6%89%A6&code=&btype=tushu
-- digest_status: done
-- image_count: 2
 
 此局坤方有城楼，兑方有河开洋，由乾、坎、艮至巽方石桥下消去。
 
@@ -2638,17 +1964,9 @@ generated: 2026-06-17
 
 则先谨按：此由巽乾两方合阐而断。长子因奸伤足，巽有石桥，乾有曲水，故以活法合推取验。然兑方三、六、九同宫，充兵致富者，何以不属长男而为次子？岂因巽方石桥高擎之故，长已受煞，故递推及次耶？或曰：二临山向，故主二房。若谓地元龙主次子发，此鄙俚之谈，究未敢轻信。
 
-### image_refs
-
-- https://special.rhky.com/res/images/special/tishi_logo.png
-- http://p.ananas.chaoxing.com/star3/248_248/ad292a1aa670c07b0bd930533ecbfd24.jpg
 
 ## SXK-069 锦棚桥陆姓祖墓　酉山卯向　二运扦
 
-- chapter_id: 814953209
-- source_url: https://special.rhky.com/mobile/mooc/tocard/814953209?courseId=240632071&name=%E9%94%A6%E6%A3%9A%E6%A1%A5%E9%99%86%E5%A7%93%E7%A5%96%E5%A2%93%E3%80%80%E9%85%89%E5%B1%B1%E5%8D%AF%E5%90%91%E3%80%80%E4%BA%8C%E8%BF%90%E6%89%A6&code=&btype=tushu
-- digest_status: done
-- image_count: 2
 
 此地乾、坤、艮、巽四维有水放光，水外皆有秀峰如文笔。
 
@@ -2658,17 +1976,9 @@ generated: 2026-06-17
 
 则先谨按：是局艮方之水，到五运末为未来之气，生气涵泳，岂可斫丧？二为文书，本主巨儒，今因艮水填实之故，既破四库之局，复犯上山之咎，向上双二变为寡宿。龙力既强，损丁自多，故断八九人耳。
 
-### image_refs
-
-- https://special.rhky.com/res/images/special/tishi_logo.png
-- http://p.ananas.chaoxing.com/star3/248_248/055ed5c55bb739016a845eaea84c01af.jpg
 
 ## SXK-070 状元钱茶山祖墓　丑山未向　二运扦
 
-- chapter_id: 814953211
-- source_url: https://special.rhky.com/mobile/mooc/tocard/814953211?courseId=240632071&name=%E7%8A%B6%E5%85%83%E9%92%B1%E8%8C%B6%E5%B1%B1%E7%A5%96%E5%A2%93%E3%80%80%E4%B8%91%E5%B1%B1%E6%9C%AA%E5%90%91%E3%80%80%E4%BA%8C%E8%BF%90%E6%89%A6&code=&btype=tushu
-- digest_status: done
-- image_count: 2
 
 此地左右两山环抱，坤峰高远，秀丽可爱。坤未方有大湖，离方水圆如镜，近在穴旁。
 
@@ -2678,17 +1988,9 @@ generated: 2026-06-17
 
 则先谨按：阴宅之发贵与否，当察峰峦之秀态，城门之合法，犹须视龙力强弱为饶减。苟以城门发贵者，即以城门对宫之分金为推考生肖之绳则，是局庚子、丙子，即其例也。
 
-### image_refs
-
-- https://special.rhky.com/res/images/special/tishi_logo.png
-- http://p.ananas.chaoxing.com/star3/248_248/2e78d505cf819fa8a95734f463b1043a.jpg
 
 ## SXK-071 鲍姓祖墓　辛山乙向　三运扦
 
-- chapter_id: 814953213
-- source_url: https://special.rhky.com/mobile/mooc/tocard/814953213?courseId=240632071&name=%E9%B2%8D%E5%A7%93%E7%A5%96%E5%A2%93%E3%80%80%E8%BE%9B%E5%B1%B1%E4%B9%99%E5%90%91%E3%80%80%E4%B8%89%E8%BF%90%E6%89%A6&code=&btype=tushu
-- digest_status: done
-- image_count: 2
 
 此地兑、卯二方有水，艮方高墩，墩外有一峰高耸，卯方向上之水映照，坐后兑方之水暗拱。
 
@@ -2698,17 +2000,9 @@ generated: 2026-06-17
 
 则先谨按：交七运，向首犯“山上龙神下水”，亦为伤女丁之征。
 
-### image_refs
-
-- https://special.rhky.com/res/images/special/tishi_logo.png
-- http://p.ananas.chaoxing.com/star3/248_248/82155fa9667c3947082d10d75a556c66.jpg
 
 ## SXK-072 钱塘鲁斯占祖墓　丙山壬向　三运扦
 
-- chapter_id: 814953215
-- source_url: https://special.rhky.com/mobile/mooc/tocard/814953215?courseId=240632071&name=%E9%92%B1%E5%A1%98%E9%B2%81%E6%96%AF%E5%8D%A0%E7%A5%96%E5%A2%93%E3%80%80%E4%B8%99%E5%B1%B1%E5%A3%AC%E5%90%91%E3%80%80%E4%B8%89%E8%BF%90%E6%89%A6&code=&btype=tushu
-- digest_status: done
-- image_count: 2
 
 此穴平地开窝，甲、庚、壬、丙四方均有水亮。
 
@@ -2716,17 +2010,9 @@ generated: 2026-06-17
 
 沈注：《宝照》云：“甲庚壬丙最为荣，下后儿孙出神童。”又云：“穴要窝钳脉到宫。”此地平洋开窝，又得甲、庚、壬、丙水亮，合《宝照》之法。况天卦向得旺向，又丑、甲俱到，山上庚、未、辰俱到，震方壬、甲到，兑方戌、丙、庚俱到，一气清纯，出神童何疑乎？
 
-### image_refs
-
-- https://special.rhky.com/res/images/special/tishi_logo.png
-- http://p.ananas.chaoxing.com/star3/248_248/8b269deaa5b581b7cf7f6bfa5d26309b.jpg
 
 ## SXK-073 某姓祖墓　巳山亥向　三运扦
 
-- chapter_id: 814953217
-- source_url: https://special.rhky.com/mobile/mooc/tocard/814953217?courseId=240632071&name=%E6%9F%90%E5%A7%93%E7%A5%96%E5%A2%93%E3%80%80%E5%B7%B3%E5%B1%B1%E4%BA%A5%E5%90%91%E3%80%80%E4%B8%89%E8%BF%90%E6%89%A6&code=&btype=tushu
-- digest_status: done
-- image_count: 2
 
 此地甲卯来龙，转巽巳入首后，明堂田水从兑方到向，壬、子、癸方有大河来穴前开宕，从戌乾消出。下砂环抱有情，唇下有缺。卯方一峰秀拔，朝山上屏开面。
 
@@ -2736,33 +2022,17 @@ generated: 2026-06-17
 
 前墓于六运照原向改葬，明图于后。
 
-### image_refs
-
-- https://special.rhky.com/res/images/special/tishi_logo.png
-- http://p.ananas.chaoxing.com/star3/248_248/33ac006f5d01ecc3f0ccb9cb2e19a5bb.jpg
 
 ## SXK-074 某姓祖墓　巳山亥向　六运扦[1]
 
-- chapter_id: 814953219
-- source_url: https://special.rhky.com/mobile/mooc/tocard/814953219?courseId=240632071&name=%E6%9F%90%E5%A7%93%E7%A5%96%E5%A2%93%E3%80%80%E5%B7%B3%E5%B1%B1%E4%BA%A5%E5%90%91%E3%80%80%E5%85%AD%E8%BF%90%E6%89%A6%5B1%5D&code=&btype=tushu
-- digest_status: done
-- image_count: 2
 
 沈注：葬后大旺财丁，因两盘旺星双六到向故也。但向上运星是七，旺星是六，七为口舌，六为官事，故主多讼。唇下有缺，故出无唇之人。交七运，财丁两退，因向星入囚故也。惟功名反能开科，秀才、生贡不一其人，此因艮方是四、七运，运星飞艮是一，坤方是一，七运飞坤是四，两处得“四一同宫”，故发科名也。至八运，则平平矣。
 
 则先谨按：六运巳亥，虽两盘旺星到向，究犯全盘伏吟，不宜轻举。是地幸穴前开宕，其气乃空，故得以凶化吉。然地运甚短，一、六、八运即行入囚，盖向上飞星到山之字为八故也。
 
-### image_refs
-
-- https://special.rhky.com/res/images/special/tishi_logo.png
-- http://p.ananas.chaoxing.com/star3/248_248/928211cc07c4365302c8ba175cb3a341.jpg
 
 ## SXK-075 经姓祖墓　巳山亥向　三运扦
 
-- chapter_id: 814953221
-- source_url: https://special.rhky.com/mobile/mooc/tocard/814953221?courseId=240632071&name=%E7%BB%8F%E5%A7%93%E7%A5%96%E5%A2%93%E3%80%80%E5%B7%B3%E5%B1%B1%E4%BA%A5%E5%90%91%E3%80%80%E4%B8%89%E8%BF%90%E6%89%A6&code=&btype=tushu
-- digest_status: done
-- image_count: 2
 
 龙从巽巳方入首，白虎砂掬抱有情有力，走龙略宕。兑有水放光，坎方有小河横过，艮方有小山塞水口。
 
@@ -2774,17 +2044,9 @@ generated: 2026-06-17
 
 前墓于四运建碑修理，明图于后。
 
-### image_refs
-
-- https://special.rhky.com/res/images/special/tishi_logo.png
-- http://p.ananas.chaoxing.com/star3/248_248/5885bae62dd7b298dfd8cacb92f150c6.jpg
 
 ## SXK-076 经姓祖墓　巳山亥向　四运扦[2]
 
-- chapter_id: 814953223
-- source_url: https://special.rhky.com/mobile/mooc/tocard/814953223?courseId=240632071&name=%E7%BB%8F%E5%A7%93%E7%A5%96%E5%A2%93%E3%80%80%E5%B7%B3%E5%B1%B1%E4%BA%A5%E5%90%91%E3%80%80%E5%9B%9B%E8%BF%90%E6%89%A6%5B2%5D&code=&btype=tushu
-- digest_status: done
-- image_count: 2
 
 沈云：“此地于四运照原向建碑后，二房于六运大发财丁，长房大败。此因向上飞星之四到山，四即巽，巽为长；且六白又飞到乾，犯伏吟，故主败。二房于六运发财丁者，因山上飞星二到向，与六白同宫，故主发；七运财气亦好，因兑方有水。七运多官讼，因兑方六七同宫，六为官事，七为口舌也。二房独发者，因兑方之水是七，七为少也。八运平平者，艮方有山故也。此地本山颠水倒，主不吉，而能发者，因龙真穴的。四运建碑之后，龙得旺龙，又向上飞星到山到向，四六合十故也。”
 
@@ -2794,17 +2056,9 @@ generated: 2026-06-17
 
 然则，沈公云“二房于六运大发财丁者”，何也？以囚不住故也。缘向星五黄入中为皇极居临正位，至大至尊，何凶之有？向首坚金遇土，明水相对，又得逢囚不囚，自然运到便兴。七临兑宫，虽犯伏吟，有水不忌，当运反吉。所谓“反吟伏吟须得令”者，此之谓耳。
 
-### image_refs
-
-- https://special.rhky.com/res/images/special/tishi_logo.png
-- http://p.ananas.chaoxing.com/star3/248_248/ebd5f8457d557db069b18a2b52f6680c.jpg
 
 ## SXK-077 嵇中堂祖墓　子午兼壬丙　三运扦
 
-- chapter_id: 814953225
-- source_url: https://special.rhky.com/mobile/mooc/tocard/814953225?courseId=240632071&name=%E5%B5%87%E4%B8%AD%E5%A0%82%E7%A5%96%E5%A2%93%E3%80%80%E5%AD%90%E5%8D%88%E5%85%BC%E5%A3%AC%E4%B8%99%E3%80%80%E4%B8%89%E8%BF%90%E6%89%A6&code=&btype=tushu
-- digest_status: done
-- image_count: 2
 
 乾亥来龙，转坎入首。艮方有荡，坤方有水，曲至离方大开洋，至巽方消出。兑方低田，结穴亦低田。
 
@@ -2814,17 +2068,9 @@ generated: 2026-06-17
 
 则先谨按：是局背山面水，龙、向、水各得三碧旺神，故云“卯山卯向卯源水，合江西卦全局”。盖江西卦起于东，论卦属震，其数即为三也。明此，则《天玉经》所谓“乾山乾向水朝乾，午山午向午来堂，坤山坤向水坤流”三局从可知矣。父母为卦之中气，运与向全盘合十受气，自迂缓而悠远。且局势宏大者，发亦较迟，故必待向首一星得生旺之扶助，客星贪狼加临，水来生木，然后富贵勃兴。此非勾搭小地，一卦乘时，催官暂发者所可等量齐观耳。
 
-### image_refs
-
-- https://special.rhky.com/res/images/special/tishi_logo.png
-- http://p.ananas.chaoxing.com/star3/248_248/af2d7fe0eb4403ad821619faec12db5b.jpg
 
 ## SXK-078 严探花祖墓　辰山戌向　三运扦
 
-- chapter_id: 814953227
-- source_url: https://special.rhky.com/mobile/mooc/tocard/814953227?courseId=240632071&name=%E4%B8%A5%E6%8E%A2%E8%8A%B1%E7%A5%96%E5%A2%93%E3%80%80%E8%BE%B0%E5%B1%B1%E6%88%8C%E5%90%91%E3%80%80%E4%B8%89%E8%BF%90%E6%89%A6&code=&btype=tushu
-- digest_status: done
-- image_count: 2
 
 地由艮方高山双峰落脉，出唇十余丈，左右砂紧紧环抱。卯方水贴近，巽、离、坤三方大湖，湖外有山，乾方有峰，秀美挺拔。惟峰尖稍歪。
 
@@ -2834,17 +2080,9 @@ generated: 2026-06-17
 
 则先谨按：三运辰戌固旺，而此局偏，坐后有水，向上有山，理气与形局相背驰，初年未必即利，且地运最短。然他年必中探花郎者，以其地龙真穴的，朝山挺秀，向上又得一四同宫，故运纵短，卒能依然发贵耳。
 
-### image_refs
-
-- https://special.rhky.com/res/images/special/tishi_logo.png
-- http://p.ananas.chaoxing.com/star3/248_248/e84a0960eea917c548616e26b6874860.jpg
 
 ## SXK-079 唐姓祖墓　甲山庚向　四运扦
 
-- chapter_id: 814953229
-- source_url: https://special.rhky.com/mobile/mooc/tocard/814953229?courseId=240632071&name=%E5%94%90%E5%A7%93%E7%A5%96%E5%A2%93%E3%80%80%E7%94%B2%E5%B1%B1%E5%BA%9A%E5%90%91%E3%80%80%E5%9B%9B%E8%BF%90%E6%89%A6&code=&btype=tushu
-- digest_status: done
-- image_count: 2
 
 巽方大龙从震、艮而去，寅、甲方落脉结穴。左右两砂环抱，内堂壬水聚蓄如镜。亥方停贮，戌、乾方开洋，辛、酉狭细，庚、申方又开洋，仍从坤、申转至庚、酉、辛方又开洋。再转至未、坤、申方出大河，又开洋如镜放光。
 
@@ -2852,17 +2090,9 @@ generated: 2026-06-17
 
 则先谨按：是地从寅、甲方落脉结穴，所谓“龙行出卦无官贵”。运星廉贞挨乾，若水在戌方停贮，则开元一气，亦犹城门。今停贮在亥，戌、乾方开洋，其气未免不纯。又向上飞星之一到乾，暗合生成，亦为城门变格。今乾方之一系山星，而非水神，坐山、城门两无足述，故仲山以“科甲之说为胡猜”云。
 
-### image_refs
-
-- https://special.rhky.com/res/images/special/tishi_logo.png
-- http://p.ananas.chaoxing.com/star3/248_248/be93ffd0d561e080404eb3c0987f2ed3.jpg
 
 ## SXK-080 唐姓祖墓　申山寅向　四运扦
 
-- chapter_id: 814953231
-- source_url: https://special.rhky.com/mobile/mooc/tocard/814953231?courseId=240632071&name=%E5%94%90%E5%A7%93%E7%A5%96%E5%A2%93%E3%80%80%E7%94%B3%E5%B1%B1%E5%AF%85%E5%90%91%E3%80%80%E5%9B%9B%E8%BF%90%E6%89%A6&code=&btype=tushu
-- digest_status: done
-- image_count: 2
 
 龙从离方来，由坤入首。坤、兑方有河，乾方有高屋。艮方有大河水光照面，从震方消去。
 
@@ -2872,17 +2102,9 @@ generated: 2026-06-17
 
 则先谨按：四绿旺星到山到向，巽属长，主长房吉。六犯伏吟兼被屋压，乾亦属长，主长房凶。吉凶相抵，故长房不发亦不败。此可悟“公位吉凶，当从八国飞星互相加减”之理。
 
-### image_refs
-
-- https://special.rhky.com/res/images/special/tishi_logo.png
-- http://p.ananas.chaoxing.com/star3/248_248/1c33e9fc319f42bb3ab69b0236a91375.jpg
 
 ## SXK-081 冯姓祖墓　未山丑向　四运扦
 
-- chapter_id: 814953233
-- source_url: https://special.rhky.com/mobile/mooc/tocard/814953233?courseId=240632071&name=%E5%86%AF%E5%A7%93%E7%A5%96%E5%A2%93%E3%80%80%E6%9C%AA%E5%B1%B1%E4%B8%91%E5%90%91%E3%80%80%E5%9B%9B%E8%BF%90%E6%89%A6&code=&btype=tushu
-- digest_status: done
-- image_count: 2
 
 此地乾方有桥。水从桥口来，横过壬、子、癸，至丑、艮、寅三叉而出。甲、卯、乙有大河，亦至丑、艮、寅方合三叉消出，巽方有一高峰。
 
@@ -2892,17 +2114,9 @@ generated: 2026-06-17
 
 则先谨按：三般卦，卦气镕冶贯通，逢凶化吉，福禄永贞，虽犯上山下水并反伏吟，均所不忌。是局形气相背大甚，龙神下水，适在三叉聚消、滂薄开阳之处，故虽合三般，初年亦主不利。若仅系细流映对，无甚碍也。于此可悟用三般卦，而欲求初年顺利者，当以无明水照面之形局为最合。然此三般非经四位起父母之三般，慎勿误解！
 
-### image_refs
-
-- https://special.rhky.com/res/images/special/tishi_logo.png
-- http://p.ananas.chaoxing.com/star3/248_248/5c5172db5b75713315dade0b3a469ef6.jpg
 
 ## SXK-082 施姓祖墓　酉山卯向　四运扦
 
-- chapter_id: 814953235
-- source_url: https://special.rhky.com/mobile/mooc/tocard/814953235?courseId=240632071&name=%E6%96%BD%E5%A7%93%E7%A5%96%E5%A2%93%E3%80%80%E9%85%89%E5%B1%B1%E5%8D%AF%E5%90%91%E3%80%80%E5%9B%9B%E8%BF%90%E6%89%A6&code=&btype=tushu
-- digest_status: done
-- image_count: 2
 
 此地坟后低田，兑方远水从兑至乾、坎、艮、震，至巽、巳桥下消出，坟前有池，甲卯方有水放光。
 
@@ -2912,17 +2126,9 @@ generated: 2026-06-17
 
 则先谨按：此局本犯水神上山，今坟后为低田远水，则水神仍得其所，此“龙空气不空”作法也。可见理气之效用，端在与形峦相配合。然坟前有池，究犯下水，且阴神丛集于向首，亦为识者所忌。
 
-### image_refs
-
-- https://special.rhky.com/res/images/special/tishi_logo.png
-- http://p.ananas.chaoxing.com/star3/248_248/8b82e3a9f9907999cd26e16a53051737.jpg
 
 ## SXK-083 钱姓祖墓　丁山癸向　四运扦
 
-- chapter_id: 814953237
-- source_url: https://special.rhky.com/mobile/mooc/tocard/814953237?courseId=240632071&name=%E9%92%B1%E5%A7%93%E7%A5%96%E5%A2%93%E3%80%80%E4%B8%81%E5%B1%B1%E7%99%B8%E5%90%91%E3%80%80%E5%9B%9B%E8%BF%90%E6%89%A6&code=&btype=tushu
-- digest_status: done
-- image_count: 2
 
 此地甲、卯、乙方有水放光。
 
@@ -2932,17 +2138,9 @@ generated: 2026-06-17
 
 则先谨按：山上飞星六到震，交六运竟以医道兴家，此由平洋立穴，四面坦然，八国间独有震水贴身，一卦清纯，权力特胜，足以左右全局故也。又得二六同宫，土金相生之力，《玄空秘旨》云：“富兼陶朱，断是坚金遇土”，故兴家业。此山星断运之活法也。
 
-### image_refs
-
-- https://special.rhky.com/res/images/special/tishi_logo.png
-- http://p.ananas.chaoxing.com/star3/248_248/0d6be0a683bc05dd32e499c5b8d3d45d.jpg
 
 ## SXK-084 谈姓祖墓　壬山丙向　四运扦
 
-- chapter_id: 814953239
-- source_url: https://special.rhky.com/mobile/mooc/tocard/814953239?courseId=240632071&name=%E8%B0%88%E5%A7%93%E7%A5%96%E5%A2%93%E3%80%80%E5%A3%AC%E5%B1%B1%E4%B8%99%E5%90%91%E3%80%80%E5%9B%9B%E8%BF%90%E6%89%A6&code=&btype=tushu
-- digest_status: done
-- image_count: 2
 
 此地未方有塔，坤、申小水，兑乾略大而聚，至坎至艮而消。离方有高地，艮方有屋。
 
@@ -2952,17 +2150,9 @@ generated: 2026-06-17
 
 则先谨按：四房齐发者，水里排龙挨得七六五四之水，故云“孟仲叔季，卦理各得”也。
 
-### image_refs
-
-- https://special.rhky.com/res/images/special/tishi_logo.png
-- http://p.ananas.chaoxing.com/star3/248_248/6eedaccab9ea1d0bf74dd32ad08d0505.jpg
 
 ## SXK-085 郑姓祖墓　乙山辛向　四运扦
 
-- chapter_id: 814953241
-- source_url: https://special.rhky.com/mobile/mooc/tocard/814953241?courseId=240632071&name=%E9%83%91%E5%A7%93%E7%A5%96%E5%A2%93%E3%80%80%E4%B9%99%E5%B1%B1%E8%BE%9B%E5%90%91%E3%80%80%E5%9B%9B%E8%BF%90%E6%89%A6&code=&btype=tushu
-- digest_status: done
-- image_count: 2
 
 此地卯方大墩，乾方芦荡。水从兑、坤屈曲而消，亥方有浜，坎方有池，离方有远山。
 
@@ -2972,17 +2162,9 @@ generated: 2026-06-17
 
 则先谨按：交五运，财气大利，系从天盘断运，缘廉贞饶有戊己运化之力故也。六运入囚，既克中宫巽木，又犯全盘伏吟，行兑运，乾方本属旺水，无奈地运既终，衰气来袭，且三、七、五凶星同聚一宫，化旺为煞，宜乎甲子、乙丑七、六入中，连伤数丁。且坎方有池，七运丁星下水，亦可显见。
 
-### image_refs
-
-- https://special.rhky.com/res/images/special/tishi_logo.png
-- http://p.ananas.chaoxing.com/star3/248_248/fd82dec635e2ae3edfb3edb0938d0f04.jpg
 
 ## SXK-086 青城桥徐姓墓　乙山辛向　四运扦
 
-- chapter_id: 814953243
-- source_url: https://special.rhky.com/mobile/mooc/tocard/814953243?courseId=240632071&name=%E9%9D%92%E5%9F%8E%E6%A1%A5%E5%BE%90%E5%A7%93%E5%A2%93%E3%80%80%E4%B9%99%E5%B1%B1%E8%BE%9B%E5%90%91%E3%80%80%E5%9B%9B%E8%BF%90%E6%89%A6&code=&btype=tushu
-- digest_status: done
-- image_count: 2
 
 此地辰山转甲入首，巽巳界水。兑方内明堂有水，戌、乾、亥大水，子、癸大河直长冲腰，外堂兑、乾两方大水。
 
@@ -2992,17 +2174,9 @@ generated: 2026-06-17
 
 则先谨按：“山管人丁水管财”，源为《玄空秘断》唯一简诀。同一地也，同一向也，在四运犯上山下水，五运则到山到向。珠宝、火坑 [3] ，因运变易则随时而在之阴阳尚已。
 
-### image_refs
-
-- https://special.rhky.com/res/images/special/tishi_logo.png
-- http://p.ananas.chaoxing.com/star3/248_248/6948b03cc7175041706a956fc14f8f3a.jpg
 
 ## SXK-087 黄姓祖墓　癸山丁向　四运扦
 
-- chapter_id: 814953245
-- source_url: https://special.rhky.com/mobile/mooc/tocard/814953245?courseId=240632071&name=%E9%BB%84%E5%A7%93%E7%A5%96%E5%A2%93%E3%80%80%E7%99%B8%E5%B1%B1%E4%B8%81%E5%90%91%E3%80%80%E5%9B%9B%E8%BF%90%E6%89%A6&code=&btype=tushu
-- digest_status: done
-- image_count: 2
 
 此地坎方高田落脉，面前低田，兑方有直水来。
 
@@ -3012,17 +2186,9 @@ generated: 2026-06-17
 
 则先谨按：《秘旨》云：“相生而有相凌之害，后天之金水交并。”是墓兑方六、七、一同宫，而实际形峦又犯直水冲腰之忌，形气恶化，已如机张审刮，一遇客星凌铄，自有服毒身死之应。
 
-### image_refs
-
-- https://special.rhky.com/res/images/special/tishi_logo.png
-- http://p.ananas.chaoxing.com/star3/248_248/befc09ce35e0f731a29a5fd7df3fd609.jpg
 
 ## SXK-088 赵姓祖墓　壬山丙向　四运扦
 
-- chapter_id: 814953247
-- source_url: https://special.rhky.com/mobile/mooc/tocard/814953247?courseId=240632071&name=%E8%B5%B5%E5%A7%93%E7%A5%96%E5%A2%93%E3%80%80%E5%A3%AC%E5%B1%B1%E4%B8%99%E5%90%91%E3%80%80%E5%9B%9B%E8%BF%90%E6%89%A6&code=&btype=tushu
-- digest_status: done
-- image_count: 2
 
 此地龙从乾转坎入首，左右两砂环抱有情，龙气穴前不见水，惟坤上有池，圆亮放光。
 
@@ -3032,17 +2198,9 @@ generated: 2026-06-17
 
 则先谨按：是墓八国独坤方有水放光，故推断以坤方着眼，取其特也。然坤方天盘上下交克，故主老寡之应。不然，二六相生，名为“坚金遇土”。坤水一卦清纯，当以富断。明此可悟“论衰旺生克，当冶飞星、运盘于一炉，而尤当着眼于特也”。
 
-### image_refs
-
-- https://special.rhky.com/res/images/special/tishi_logo.png
-- http://p.ananas.chaoxing.com/star3/248_248/a2b491db228f780f7c11d828dba173f7.jpg
 
 ## SXK-089 蔡姓祖墓　庚山甲向　五运扦
 
-- chapter_id: 814953249
-- source_url: https://special.rhky.com/mobile/mooc/tocard/814953249?courseId=240632071&name=%E8%94%A1%E5%A7%93%E7%A5%96%E5%A2%93%E3%80%80%E5%BA%9A%E5%B1%B1%E7%94%B2%E5%90%91%E3%80%80%E4%BA%94%E8%BF%90%E6%89%A6&code=&btype=tushu
-- digest_status: done
-- image_count: 2
 
 此地戌、乾来龙，转庚入首。未、午、巽、卯四方皆有水，消于艮方五里湖而出，坎方亦有水，亦消于五里湖。
 
@@ -3052,17 +2210,9 @@ generated: 2026-06-17
 
 前墓六运附葬，明图于后。
 
-### image_refs
-
-- https://special.rhky.com/res/images/special/tishi_logo.png
-- http://p.ananas.chaoxing.com/star3/248_248/87442858a8fbf893ffd6a4384293db56.jpg
 
 ## SXK-090 蔡姓祖墓　庚山甲向　六运扦[4]
 
-- chapter_id: 814953251
-- source_url: https://special.rhky.com/mobile/mooc/tocard/814953251?courseId=240632071&name=%E8%94%A1%E5%A7%93%E7%A5%96%E5%A2%93%E3%80%80%E5%BA%9A%E5%B1%B1%E7%94%B2%E5%90%91%E3%80%80%E5%85%AD%E8%BF%90%E6%89%A6%5B4%5D&code=&btype=tushu
-- digest_status: done
-- image_count: 2
 
 仲山曰：“六运附葬后大发财丁，兼出科甲。”
 
@@ -3070,17 +2220,9 @@ generated: 2026-06-17
 
 则先谨按：是地龙真穴的，艮方湖水圆亮。以星气论，四运扦卜为一白龙配六白水；六运附葬，为六白龙配一白水。均主财贵无疑！不过，初扦犯上山下水，定主不利；附葬合到山到向，自然一帆风顺而已。
 
-### image_refs
-
-- https://special.rhky.com/res/images/special/tishi_logo.png
-- http://p.ananas.chaoxing.com/star3/248_248/838a4ccd0d22101f0f932866429b4651.jpg
 
 ## SXK-091 某姓墓　乙山辛向　五运扦
 
-- chapter_id: 814953253
-- source_url: https://special.rhky.com/mobile/mooc/tocard/814953253?courseId=240632071&name=%E6%9F%90%E5%A7%93%E5%A2%93%E3%80%80%E4%B9%99%E5%B1%B1%E8%BE%9B%E5%90%91%E3%80%80%E4%BA%94%E8%BF%90%E6%89%A6&code=&btype=tushu
-- digest_status: done
-- image_count: 2
 
 巽龙转甲入首，巽、巳方界水，兑位有内堂水。子、癸方有大河冲腰，戌、乾大水，外堂乾、兑两宫大水。
 
@@ -3090,17 +2232,9 @@ generated: 2026-06-17
 
 则先谨按：“山临五黄主丁少”一语，余运则然。若五运无此乘时得令之星到山，则转主丁衰祚薄，盖此五乃五运之五，非五黄之五，亟须辨清，不可拘执也。
 
-### image_refs
-
-- https://special.rhky.com/res/images/special/tishi_logo.png
-- http://p.ananas.chaoxing.com/star3/248_248/e35256a37bc566b022ee9f3d8ecc8aee.jpg
 
 ## SXK-092 徐姓祖墓　卯山酉向　五运扦
 
-- chapter_id: 814953255
-- source_url: https://special.rhky.com/mobile/mooc/tocard/814953255?courseId=240632071&name=%E5%BE%90%E5%A7%93%E7%A5%96%E5%A2%93%E3%80%80%E5%8D%AF%E5%B1%B1%E9%85%89%E5%90%91%E3%80%80%E4%BA%94%E8%BF%90%E6%89%A6&code=&btype=tushu
-- digest_status: done
-- image_count: 2
 
 此地离方有水，巽方水特大，艮方又有大水，卯方有小池，兑方有山高而逼。
 
@@ -3110,17 +2244,9 @@ generated: 2026-06-17
 
 则先谨按：是局可为但知旺山旺向，而不谙形峦者戒。《经》有之曰：“阴阳相见两为难，一山一水何足言！”玄空大卦，山上排龙，要当元得令之星，排到实地高山；水里排龙，要当元得令之星，排到三叉水口。形气两合，方为阴阳相见。若排山而偏值水，排水而却遇山，形气两背，是为“阴阳相乘”，虽系旺山旺向，仍犯上山下水，其颠倒错乱，不问可知矣！
 
-### image_refs
-
-- https://special.rhky.com/res/images/special/tishi_logo.png
-- http://p.ananas.chaoxing.com/star3/248_248/753355fa850f2e095ef63a4f8fb63c11.jpg
 
 ## SXK-093 伊姓祖墓　癸山丁向　五运扦
 
-- chapter_id: 814953258
-- source_url: https://special.rhky.com/mobile/mooc/tocard/814953258?courseId=240632071&name=%E4%BC%8A%E5%A7%93%E7%A5%96%E5%A2%93%E3%80%80%E7%99%B8%E5%B1%B1%E4%B8%81%E5%90%91%E3%80%80%E4%BA%94%E8%BF%90%E6%89%A6&code=&btype=tushu
-- digest_status: done
-- image_count: 2
 
 此地巽方溪水来，从离横过，至庚、酉、辛屈曲消出，巽方有节孝坊。
 
@@ -3130,17 +2256,9 @@ generated: 2026-06-17
 
 此坟东首有穴相连，山向局运均同，葬后亦大发，惟哑二女一子。因伊姓坟塞于兑方，兑为口，为少女，故主二女哑。一子哑者，八到兑，八为艮，为少男，故一子哑。此“毫厘千里落空亡”之谓也。
 
-### image_refs
-
-- https://special.rhky.com/res/images/special/tishi_logo.png
-- http://p.ananas.chaoxing.com/star3/248_248/91f8c35bc5b496f8a9743d88c93facf8.jpg
 
 ## SXK-094 华姓祖墓　癸山丁向　五运扦
 
-- chapter_id: 814953261
-- source_url: https://special.rhky.com/mobile/mooc/tocard/814953261?courseId=240632071&name=%E5%8D%8E%E5%A7%93%E7%A5%96%E5%A2%93%E3%80%80%E7%99%B8%E5%B1%B1%E4%B8%81%E5%90%91%E3%80%80%E4%BA%94%E8%BF%90%E6%89%A6&code=&btype=tushu
-- digest_status: done
-- image_count: 2
 
 此地巽方来水，至兑方屈曲而去，又巽方水外有尖秀之峰。
 
@@ -3148,17 +2266,9 @@ generated: 2026-06-17
 
 沈注：发财丁者，旺星到山到向，向上又有水也。主科甲者，巽方四一同宫，又处水外尖峰之妙，虽二黑同到，不能害也。《书》云：“一四同宫，准发科名之显。”六运平平，因艮方飞星是六，艮方无水故也。七运大发刑名官，位至三品，因双七临于兑，而水又屈曲而去。此即配水法耳。
 
-### image_refs
-
-- https://special.rhky.com/res/images/special/tishi_logo.png
-- http://p.ananas.chaoxing.com/star3/248_263/d029f558070b91f8f5caae836f3df329.jpg
 
 ## SXK-095 某姓祖墓　癸山丁向　五运扦
 
-- chapter_id: 814953264
-- source_url: https://special.rhky.com/mobile/mooc/tocard/814953264?courseId=240632071&name=%E6%9F%90%E5%A7%93%E7%A5%96%E5%A2%93%E3%80%80%E7%99%B8%E5%B1%B1%E4%B8%81%E5%90%91%E3%80%80%E4%BA%94%E8%BF%90%E6%89%A6&code=&btype=tushu
-- digest_status: done
-- image_count: 2
 
 此地水从巽方来，至兑方消出，兑方有尖峰。
 
@@ -3168,17 +2278,9 @@ generated: 2026-06-17
 
 则先谨按：以上同运癸丁数局，兑方塞者均哑，有水者均利，可见伏吟以通塞为宜，忌理气仗形峦为印象。明此，则八国间犯伏吟者，得知所取裁矣！且巽方同为一四同宫，与水土相克，伊姓以节孝坊高起之故，竟不出读书之人；而华姓得水外尖秀之峰，则准发科名，位至三品，相去奚止径庭。于此，更可见形峦秀美，足以左右五行，调剂生克，八国星辰，不过司招摄之化机而已。
 
-### image_refs
-
-- https://special.rhky.com/res/images/special/tishi_logo.png
-- http://p.ananas.chaoxing.com/star3/248_248/3da9b12e2fd640dfc6b032806fbe5dc1.jpg
 
 ## SXK-096 周姓祖墓　壬山丙向　五运扦
 
-- chapter_id: 814953267
-- source_url: https://special.rhky.com/mobile/mooc/tocard/814953267?courseId=240632071&name=%E5%91%A8%E5%A7%93%E7%A5%96%E5%A2%93%E3%80%80%E5%A3%AC%E5%B1%B1%E4%B8%99%E5%90%91%E3%80%80%E4%BA%94%E8%BF%90%E6%89%A6&code=&btype=tushu
-- digest_status: done
-- image_count: 2
 
 此地坤方有水放光。
 
@@ -3188,17 +2290,9 @@ generated: 2026-06-17
 
 则先谨按：交八运，坤方之六去已久者为死。六属长，故主长房不添丁而败财。且八运五黄飞坤 [5] ，犯火克金，亦属不利。
 
-### image_refs
-
-- https://special.rhky.com/res/images/special/tishi_logo.png
-- http://p.ananas.chaoxing.com/star3/248_248/4d6290b14e6806eddff399d903174233.jpg
 
 ## SXK-097 余姚徐姓祖墓　丑山未向　五运扦
 
-- chapter_id: 814953270
-- source_url: https://special.rhky.com/mobile/mooc/tocard/814953270?courseId=240632071&name=%E4%BD%99%E5%A7%9A%E5%BE%90%E5%A7%93%E7%A5%96%E5%A2%93%E3%80%80%E4%B8%91%E5%B1%B1%E6%9C%AA%E5%90%91%E3%80%80%E4%BA%94%E8%BF%90%E6%89%A6&code=&btype=tushu
-- digest_status: done
-- image_count: 2
 
 此地乾方有水，巽方有一红庙。
 
@@ -3208,17 +2302,9 @@ generated: 2026-06-17
 
 则先谨按：六运中乡榜者，以天盘断也。因八国无水，独乾宫有一卦纯清之水放光，故应在六运。又向上飞星之一亦到乾，一六共宗，乃“趋车朝阙”之义，为催官水，故主发贵。八运长房淫乱者，巽方四九为友，交八运，兑七飞巽，阴神成群，加以红庙高耸，阴神得力，焉得不主淫乱！或且有人面桃花之应。
 
-### image_refs
-
-- https://special.rhky.com/res/images/special/tishi_logo.png
-- http://p.ananas.chaoxing.com/star3/248_248/583d69b1a92ddd09c82d6fb309d8cc3c.jpg
 
 ## SXK-098 陈余六祖墓　乙山辛向　六运扦
 
-- chapter_id: 814953273
-- source_url: https://special.rhky.com/mobile/mooc/tocard/814953273?courseId=240632071&name=%E9%99%88%E4%BD%99%E5%85%AD%E7%A5%96%E5%A2%93%E3%80%80%E4%B9%99%E5%B1%B1%E8%BE%9B%E5%90%91%E3%80%80%E5%85%AD%E8%BF%90%E6%89%A6&code=&btype=tushu
-- digest_status: done
-- image_count: 2
 
 戌、乾、亥有浜，水至庚、酉、辛阔大，坤、申消出，艮方另插一浜，直射穴后。
 
@@ -3226,17 +2312,9 @@ generated: 2026-06-17
 
 沈注：此局艮方一浜射入，到艮之星是二七，二为寡宿，七为少女，且山上六白为男，男已落水，故主伤男而出寡也。来水去水并克向首，盖向上是一，来水是九，为水克火。向上是一，去水是五，五为廉贞，作火论，亦水克火。飞星又上山下水，故葬后一败如灰也。然此地必无气，如有气之地，虽财丁两败而功名可许，因乾、兑两方有水，一为魁星，九为文明，虽克无碍也。
 
-### image_refs
-
-- https://special.rhky.com/res/images/special/tishi_logo.png
-- http://p.ananas.chaoxing.com/star3/248_248/f9aaea8d4e055fa1a6067446935a531b.jpg
 
 ## SXK-099 郑姓祖墓　癸山丁向　六运扦
 
-- chapter_id: 814953276
-- source_url: https://special.rhky.com/mobile/mooc/tocard/814953276?courseId=240632071&name=%E9%83%91%E5%A7%93%E7%A5%96%E5%A2%93%E3%80%80%E7%99%B8%E5%B1%B1%E4%B8%81%E5%90%91%E3%80%80%E5%85%AD%E8%BF%90%E6%89%A6&code=&btype=tushu
-- digest_status: done
-- image_count: 2
 
 此地由癸、丑、艮高山出脉，乾上涧水声响，从兑、坤流至离方，艮方拖出一条山岗，卯方低，至巽方高起。
 
@@ -3246,17 +2324,9 @@ generated: 2026-06-17
 
 则先谨按：穿砂与探头同作贼论，失元主本家应运而出贼，得令亦虑盗贼之觊觎 [6] ，正不必破军失陷，三碧、五黄亦所同忌，观此则形峦美恶当知所慎矣。二五迭临于坎巽，损丁之征。乾方七九同宫，名曰“火照泽天”，故兼患血症也。
 
-### image_refs
-
-- https://special.rhky.com/res/images/special/tishi_logo.png
-- http://p.ananas.chaoxing.com/star3/248_248/1fbb3da6ba19712cfba5a5a1670cd200.jpg
 
 ## SXK-100 周姓祖墓　壬丙兼亥巳　六运扦
 
-- chapter_id: 814953279
-- source_url: https://special.rhky.com/mobile/mooc/tocard/814953279?courseId=240632071&name=%E5%91%A8%E5%A7%93%E7%A5%96%E5%A2%93%E3%80%80%E5%A3%AC%E4%B8%99%E5%85%BC%E4%BA%A5%E5%B7%B3%E3%80%80%E5%85%AD%E8%BF%90%E6%89%A6&code=&btype=tushu
-- digest_status: done
-- image_count: 2
 
 龙从坎方低山穿田至河口，兑方有低田界清脉气，坤方有支水来堂，未方亦有一支水暗来不见，穴前只见辰、巽、巳三位高田。不见水光，坎方有河开宕，由震消艮。
 
@@ -3266,17 +2336,9 @@ generated: 2026-06-17
 
 则先谨按：一、六、八三白到山到向，惟替卦六运中得壬丙、丙壬两局，当目为挨星中之珠宝。苟形止气蓄，得自然之阴阳，大发财丁，贵秀复奚疑！
 
-### image_refs
-
-- https://special.rhky.com/res/images/special/tishi_logo.png
-- http://p.ananas.chaoxing.com/star3/248_248/a67bd86059e56b94b6d129c183fa1100.jpg
 
 ## SXK-101 胡姓祖墓　午山子向　六运扦
 
-- chapter_id: 814953282
-- source_url: https://special.rhky.com/mobile/mooc/tocard/814953282?courseId=240632071&name=%E8%83%A1%E5%A7%93%E7%A5%96%E5%A2%93%E3%80%80%E5%8D%88%E5%B1%B1%E5%AD%90%E5%90%91%E3%80%80%E5%85%AD%E8%BF%90%E6%89%A6&code=&btype=tushu
-- digest_status: done
-- image_count: 2
 
 离方有高山，乾方有石桥，艮方亦有石桥。乾方来水，艮方来水，至亥方消去。
 
@@ -3286,33 +2348,17 @@ generated: 2026-06-17
 
 则先谨按：此《玄机赋》所谓“众凶克主，独力难支”也。乾、坎、艮三方，凶星棋布，左右石桥冲起衰宫，祸机潜伏，葬时星不当旺，未能慑服诸凶，且犯上山，宜乎丁财两耗，不可救药也。
 
-### image_refs
-
-- https://special.rhky.com/res/images/special/tishi_logo.png
-- http://p.ananas.chaoxing.com/star3/248_248/7e32714ca4ee33d11b17f41cb47c8acb.jpg
 
 ## SXK-102 陈姓祖墓　庚山甲向　六运扦
 
-- chapter_id: 814953285
-- source_url: https://special.rhky.com/mobile/mooc/tocard/814953285?courseId=240632071&name=%E9%99%88%E5%A7%93%E7%A5%96%E5%A2%93%E3%80%80%E5%BA%9A%E5%B1%B1%E7%94%B2%E5%90%91%E3%80%80%E5%85%AD%E8%BF%90%E6%89%A6&code=&btype=tushu
-- digest_status: done
-- image_count: 2
 
 仲山曰：“此局寅峰独高，艮宫见水，读书之声三元不绝。（按：此局旺山旺向，向首一四同宫，全局合十故也。）现行八运少丁少财，且主出贼。”
 
 沈注：寅峰高起探头，在阴位，本家应出一贼，其应在二房，以坎为中男，离为中女故也。（按：八运挨星二到寅，亦阴位也。）
 
-### image_refs
-
-- https://special.rhky.com/res/images/special/tishi_logo.png
-- http://p.ananas.chaoxing.com/star3/248_248/6437dbd65da0ebdeeb7c3dfd7c9d7177.jpg
 
 ## SXK-103 孙姓祖墓　癸山丁向　六运扦
 
-- chapter_id: 814953288
-- source_url: https://special.rhky.com/mobile/mooc/tocard/814953288?courseId=240632071&name=%E5%AD%99%E5%A7%93%E7%A5%96%E5%A2%93%E3%80%80%E7%99%B8%E5%B1%B1%E4%B8%81%E5%90%91%E3%80%80%E5%85%AD%E8%BF%90%E6%89%A6&code=&btype=tushu
-- digest_status: done
-- image_count: 2
 
 此地午方有坝水响，从未、坤、申转庚、酉、辛阔大，至辛、戌方消去。
 
@@ -3322,17 +2368,9 @@ generated: 2026-06-17
 
 则先谨按：水里龙神上山，逢年月星辰挨来克泄，亦主外症；如乾首、坤腹、震足、巽胆、离目、坎肾、艮手、兑口之类。缘上山下水，星辰原已失所故，凡形峙气流声响之属，易于招摄耳。
 
-### image_refs
-
-- https://special.rhky.com/res/images/special/tishi_logo.png
-- http://p.ananas.chaoxing.com/star3/248_248/a53de980ffd9235b38c4b94d201872cd.jpg
 
 ## SXK-104 金姓祖墓　巽山乾向　六运扦
 
-- chapter_id: 814953291
-- source_url: https://special.rhky.com/mobile/mooc/tocard/814953291?courseId=240632071&name=%E9%87%91%E5%A7%93%E7%A5%96%E5%A2%93%E3%80%80%E5%B7%BD%E5%B1%B1%E4%B9%BE%E5%90%91%E3%80%80%E5%85%AD%E8%BF%90%E6%89%A6&code=&btype=tushu
-- digest_status: done
-- image_count: 2
 
 此地来龙由巽入穴，向上湖水如镜，坤方有水，兑方有远水来合，出于坎，震方有河浜。
 
@@ -3342,17 +2380,9 @@ generated: 2026-06-17
 
 则先谨按：六运巽乾系八运入囚，向上湖水如镜，故主悠久。即无兑方来水之五化解，亦囚不住。双六临乾，本犯伏吟，今乾方为湖，其气已空，虽犯无妨。第全盘伏吟中，巽四上山，坤、坎两宫，水被土克，不免房房损丁耳。
 
-### image_refs
-
-- https://special.rhky.com/res/images/special/tishi_logo.png
-- http://p.ananas.chaoxing.com/star3/248_248/dd619584b181cad93a80f1c4db525a0a.jpg
 
 ## SXK-105 徐姓祖墓　癸山丁向　六运附葬
 
-- chapter_id: 814953294
-- source_url: https://special.rhky.com/mobile/mooc/tocard/814953294?courseId=240632071&name=%E5%BE%90%E5%A7%93%E7%A5%96%E5%A2%93%E3%80%80%E7%99%B8%E5%B1%B1%E4%B8%81%E5%90%91%E3%80%80%E5%85%AD%E8%BF%90%E9%99%84%E8%91%AC&code=&btype=tushu
-- digest_status: done
-- image_count: 2
 
 此地坎龙三台落脉，未、坤方有水流入离方，离方有湖，穴前不见湖面，其湖收小如镜。
 
@@ -3362,17 +2392,9 @@ generated: 2026-06-17
 
 则先谨按：方今四绿主运，常见立此向，而坐后有山者，其家丁日盛而财恒衰。此双星会合于坐山，水神上山之所致也。若云“退神管向”，乃仅指向首一星之失令而言，非败财之主因也。是墓于六运附葬，离方有湖，合双星会合于向首之局，加以一六吉征，遂发科甲。于此可悟“宁犯下水，毋犯上山”之理。盖旺神管向，一贵当权，其力足以消灾致福故也。
 
-### image_refs
-
-- https://special.rhky.com/res/images/special/tishi_logo.png
-- http://p.ananas.chaoxing.com/star3/248_248/5284b9da7e84ba9c817382739f766121.jpg
 
 ## SXK-106 郑姓祖墓　戌山辰向　七运扦
 
-- chapter_id: 814953297
-- source_url: https://special.rhky.com/mobile/mooc/tocard/814953297?courseId=240632071&name=%E9%83%91%E5%A7%93%E7%A5%96%E5%A2%93%E3%80%80%E6%88%8C%E5%B1%B1%E8%BE%B0%E5%90%91%E3%80%80%E4%B8%83%E8%BF%90%E6%89%A6&code=&btype=tushu
-- digest_status: done
-- image_count: 2
 
 此地龙从离方屈曲而来，由乾入首，内堂水从癸丑方来，外堂辰、巽、巳，甲、卯、乙方水甚大，由艮至坎消出。
 
@@ -3380,17 +2402,9 @@ generated: 2026-06-17
 
 沈注：此局旺星到山到向，故主丁财绵远不败。向上旺星是六，若到囚时，须得一百六十年，故言绵远也。小财丁者，峦头形局不大也。子孙出跷足尤发者，因艮方出水处，水去形如跷足，故出跷子。尤发者，水大也。飞星到艮是三，三即震，震为足，更加形峦亦如跷脚，故主足疾无疑矣！
 
-### image_refs
-
-- https://special.rhky.com/res/images/special/tishi_logo.png
-- http://p.ananas.chaoxing.com/star3/248_248/9d03dda9adc0fdd0872029f92893fc71.jpg
 
 ## SXK-107 慈溪俞姓祖墓　子山午向　七运扦
 
-- chapter_id: 814953300
-- source_url: https://special.rhky.com/mobile/mooc/tocard/814953300?courseId=240632071&name=%E6%85%88%E6%BA%AA%E4%BF%9E%E5%A7%93%E7%A5%96%E5%A2%93%E3%80%80%E5%AD%90%E5%B1%B1%E5%8D%88%E5%90%91%E3%80%80%E4%B8%83%E8%BF%90%E6%89%A6&code=&btype=tushu
-- digest_status: done
-- image_count: 2
 
 此地平田，龙从子、癸方来，乾、坤、艮、巽四维之方均有水。
 
@@ -3400,17 +2414,9 @@ generated: 2026-06-17
 
 则先谨按：是局四水开阳，全盘合十，坤方土金相生，巽方一四同宫，形气如此，似可无庸赀议；孰知灾福之柄操于向首一星，其应速而验神，今是局以退神管向之故，致四库之配合失其纲领，不相呼应。衰气所感，遂有饿死零替之应，冤哉。
 
-### image_refs
-
-- https://special.rhky.com/res/images/special/tishi_logo.png
-- http://p.ananas.chaoxing.com/star3/248_248/b789b397864acf99c5d404a4c0b029bc.jpg
 
 ## SXK-108 王御史祖墓　丁山癸向　七运扦
 
-- chapter_id: 814953303
-- source_url: https://special.rhky.com/mobile/mooc/tocard/814953303?courseId=240632071&name=%E7%8E%8B%E5%BE%A1%E5%8F%B2%E7%A5%96%E5%A2%93%E3%80%80%E4%B8%81%E5%B1%B1%E7%99%B8%E5%90%91%E3%80%80%E4%B8%83%E8%BF%90%E6%89%A6&code=&btype=tushu
-- digest_status: done
-- image_count: 2
 
 此地离方高山贴身，出脉起墩，坤方低，巽、震涧水，流至坎、艮聚消，无朝案。
 
@@ -3420,17 +2426,9 @@ generated: 2026-06-17
 
 则先谨按：七运用三入中，运与向合十为最吉，全盘合十亦吉。凡合十则气通，八运之化凶为吉，其故殆由于此。若谓山上龙神已下水，故不主凶而反吉。此玄之又玄，可以意会，不可以言传也。
 
-### image_refs
-
-- https://special.rhky.com/res/images/special/tishi_logo.png
-- http://p.ananas.chaoxing.com/star3/248_248/34f93077509b710e3acc563be629ebbc.jpg
 
 ## SXK-109 马姓祖墓　辰山戌向　七运扦
 
-- chapter_id: 814953306
-- source_url: https://special.rhky.com/mobile/mooc/tocard/814953306?courseId=240632071&name=%E9%A9%AC%E5%A7%93%E7%A5%96%E5%A2%93%E3%80%80%E8%BE%B0%E5%B1%B1%E6%88%8C%E5%90%91%E3%80%80%E4%B8%83%E8%BF%90%E6%89%A6&code=&btype=tushu
-- digest_status: done
-- image_count: 2
 
 此地龙从卯方、乙方转巽入首，离方山活石巉岩，至坤、兑转至乾方作朝案，案外飞窜不静，穴前有水。
 
@@ -3440,17 +2438,9 @@ generated: 2026-06-17
 
 则先谨按：是地离方活石巉岩，案外又飞窜不静之煞曜，故虽旺山旺向，吉不抵凶。盖初年吉凶应验，重在峦头，一逢流年凶星加临，其应如响。壬申年，山上之九移于向上，为伤丁之征。然是年，太岁为二黑，八白入中，太岁二黑飞艮，压艮方飞星之五。《紫白赋》云：“黄遇黑时出寡”，亦伤丁之明证也。丁酉年，一入中，二到乾，又犯二五叠临，恐人口亦不利。
 
-### image_refs
-
-- https://special.rhky.com/res/images/special/tishi_logo.png
-- http://p.ananas.chaoxing.com/star3/248_248/e64623ede64a92cba801761205ad4138.jpg
 
 ## SXK-110 某姓墓　辰戌兼巽乾　八运扦
 
-- chapter_id: 814953309
-- source_url: https://special.rhky.com/mobile/mooc/tocard/814953309?courseId=240632071&name=%E6%9F%90%E5%A7%93%E5%A2%93%E3%80%80%E8%BE%B0%E6%88%8C%E5%85%BC%E5%B7%BD%E4%B9%BE%E3%80%80%E5%85%AB%E8%BF%90%E6%89%A6&code=&btype=tushu
-- digest_status: done
-- image_count: 2
 
 此地龙从辰、巽来，辰、巳方有高峰，戌、乾方有大水放光。
 
@@ -3460,17 +2450,9 @@ generated: 2026-06-17
 
 则先谨按：以天罡地煞处高峰、大水，龙运已死，龙神交战，形气两顽，挺生巨盗；加以山颠水倒，运短囚速，交一运，向上令星又吊入中宫，愈演愈烈，驯至灭族。《阴宅秘断》五十余则，以是局为最凶。学者于此，当凛四墓销铄之可畏，形气取舍之宜慎也。
 
-### image_refs
-
-- https://special.rhky.com/res/images/special/tishi_logo.png
-- http://p.ananas.chaoxing.com/star3/248_248/fc657623fefaca487603cef18e0eebfc.jpg
 
 ## SXK-111 邹状元祖墓　卯山酉向　九运扦
 
-- chapter_id: 814953312
-- source_url: https://special.rhky.com/mobile/mooc/tocard/814953312?courseId=240632071&name=%E9%82%B9%E7%8A%B6%E5%85%83%E7%A5%96%E5%A2%93%E3%80%80%E5%8D%AF%E5%B1%B1%E9%85%89%E5%90%91%E3%80%80%E4%B9%9D%E8%BF%90%E6%89%A6&code=&btype=tushu
-- digest_status: done
-- image_count: 2
 
 此地卯方高山尖顶，落脉缩细，又耸尖顶，仍落脉生石钳。钳前生土墩，紧靠墩葬，俨如圈椅，上降软砂数层作内衬。乾峰远出十余里，堂气宽大，兑方河水十余里，屈曲来朝。
 
@@ -3480,17 +2462,9 @@ generated: 2026-06-17
 
 则先谨按：秀峰主贵，发在何运，例须从山上飞星断，然有时亦可就向上飞星推也。是局独取乾峰发贵，向星三碧到乾，本主功名，而三运客星四飞乾，与运盘合成四一，实为催贵之征。故交三运，便发鼎甲。或照四运排，虽取向水屈曲来朝，而无奈向星入中，星不得令，向上之水反当作凶煞论矣！
 
-### image_refs
-
-- https://special.rhky.com/res/images/special/tishi_logo.png
-- http://p.ananas.chaoxing.com/star3/248_248/df003619ac989910d015bfeaad96707c.jpg
 
 ## SXK-112 许姓祖墓　丁山癸向　九运扦
 
-- chapter_id: 814953314
-- source_url: https://special.rhky.com/mobile/mooc/tocard/814953314?courseId=240632071&name=%E8%AE%B8%E5%A7%93%E7%A5%96%E5%A2%93%E3%80%80%E4%B8%81%E5%B1%B1%E7%99%B8%E5%90%91%E3%80%80%E4%B9%9D%E8%BF%90%E6%89%A6&code=&btype=tushu
-- digest_status: done
-- image_count: 2
 
 此地平洋，午龙入首，左低田，右河浜，前大湖。
 
@@ -3502,30 +2476,15 @@ generated: 2026-06-17
 
 则先谨按：一、九两运，无到山到向之局，立向较难，然坎一居上元之首，统领诸卦，临方到向，罄无不宜。而离九处下元之末，本元之气不复可通，一、六、八三吉中，仅取贪狼一吉，余均衰死，加以火性燥烈，形气之饶减制化，往往顾此失彼，故立向以九运为最难。是墓双星聚向，面临大湖，火过旺矣。龙神下水，水外无山，丁不保矣。且入中弥速，一运便囚，凶可知矣。或以谓“向上有此大水，当作囚不住论”，孰知双星会合于向首者，以向上飞星到山之字入中为囚，苟坐后有此大湖，犹可疑为囚不住耳。
 
-### image_refs
-
-- https://special.rhky.com/res/images/special/tishi_logo.png
-- http://p.ananas.chaoxing.com/star3/248_248/3cddfd73f1b59a5b127ef17ebf28a3ab.jpg
 
 ## SXK-113 阳宅秘断（计十七条）
 
-- chapter_id: 814953316
-- source_url: https://special.rhky.com/mobile/mooc/tocard/814953316?courseId=240632071&name=%E9%98%B3%E5%AE%85%E7%A7%98%E6%96%AD%EF%BC%88%E8%AE%A1%E5%8D%81%E4%B8%83%E6%9D%A1%EF%BC%89&code=&btype=tushu
-- digest_status: skipped
-- image_count: 1
 
 [image_only_or_section_title: raw HTML retained; no p.content text extracted]
 
-### image_refs
-
-- https://special.rhky.com/res/images/special/tishi_logo.png
 
 ## SXK-114 陶姓宅　丑山未向　五运造
 
-- chapter_id: 814953318
-- source_url: https://special.rhky.com/mobile/mooc/tocard/814953318?courseId=240632071&name=%E9%99%B6%E5%A7%93%E5%AE%85%E3%80%80%E4%B8%91%E5%B1%B1%E6%9C%AA%E5%90%91%E3%80%80%E4%BA%94%E8%BF%90%E9%80%A0&code=&btype=tushu
-- digest_status: done
-- image_count: 2
 
 向上有破屋并水，开巽方门，前有三叉水口，兑方有水至巽方门前聚消。
 
@@ -3533,17 +2492,9 @@ generated: 2026-06-17
 
 则先谨按：向上残楼参差，阳和掩蔽。宅中色气，乃祸福之主宰。黑暗阴寒，谓之“死气”。故旺运一过，二本阴卦。五为五鬼，自有病人常见女鬼之应。
 
-### image_refs
-
-- https://special.rhky.com/res/images/special/tishi_logo.png
-- http://p.ananas.chaoxing.com/star3/248_248/e5fe5fafc9bbfb84553c2bc5da2b3a4a.jpg
 
 ## SXK-115 某　宅　子午兼癸丁　五运造
 
-- chapter_id: 814953320
-- source_url: https://special.rhky.com/mobile/mooc/tocard/814953320?courseId=240632071&name=%E6%9F%90%E3%80%80%E5%AE%85%E3%80%80%E5%AD%90%E5%8D%88%E5%85%BC%E7%99%B8%E4%B8%81%E3%80%80%E4%BA%94%E8%BF%90%E9%80%A0&code=&btype=tushu
-- digest_status: done
-- image_count: 2
 
 此宅兑方有暗探，七运见鬼，八运已消，可见暗探必主出鬼，不必拘定二黑为鬼也。
 
@@ -3551,17 +2502,9 @@ generated: 2026-06-17
 
 则先谨按：此屋起造非不合运，但巽方星辰犯“水遭土克”之咎，所以迭损中年者，必是方有邻屋窒塞，掩蔽阳和，受克乃烈。否则，辟为门路，通一四之气，亦未尝不主书香也。
 
-### image_refs
-
-- https://special.rhky.com/res/images/special/tishi_logo.png
-- http://p.ananas.chaoxing.com/star3/248_248/6855eed478929ef1c8acb50fe1c0e5ee.jpg
 
 ## SXK-116 某　宅　壬丙兼亥巳　五运造
 
-- chapter_id: 814953322
-- source_url: https://special.rhky.com/mobile/mooc/tocard/814953322?courseId=240632071&name=%E6%9F%90%E3%80%80%E5%AE%85%E3%80%80%E5%A3%AC%E4%B8%99%E5%85%BC%E4%BA%A5%E5%B7%B3%E3%80%80%E4%BA%94%E8%BF%90%E9%80%A0&code=&btype=tushu
-- digest_status: done
-- image_count: 2
 
 此局用变卦，故七二入中。
 
@@ -3571,17 +2514,9 @@ generated: 2026-06-17
 
 则先谨按：二黑到向，主寡鹄；与六白同到，则主寡而得旌，六为官星故也，有水更验。二宅同断，是局从向首中宫合阐取验，凡断衰向或旺向被凶形冲射者，均宜取法，于是并阐中宫也。
 
-### image_refs
-
-- https://special.rhky.com/res/images/special/tishi_logo.png
-- http://p.ananas.chaoxing.com/star3/248_248/dfa2de24383dd16f791c1e5e94b71022.jpg
 
 ## SXK-117 某　宅　辛乙兼戌辰　五运造
 
-- chapter_id: 814953324
-- source_url: https://special.rhky.com/mobile/mooc/tocard/814953324?courseId=240632071&name=%E6%9F%90%E3%80%80%E5%AE%85%E3%80%80%E8%BE%9B%E4%B9%99%E5%85%BC%E6%88%8C%E8%BE%B0%E3%80%80%E4%BA%94%E8%BF%90%E9%80%A0&code=&btype=tushu
-- digest_status: done
-- image_count: 2
 
 此局用变卦，故二七入中。
 
@@ -3591,49 +2526,25 @@ generated: 2026-06-17
 
 则先谨按：此局不当替而用替，气自衰矣。气衰本主生女，阳卦且然，今山向中宫阴卦密布，显系多女之象。连产八、九女者，山上、向上各逢九到故也。只生一男者，运星三到向，震为长男故也。九五临山，火炎土燥，故所产愚鲁。《秘旨》云：“火见土而出愚钝 [9] 顽夫。”虽当元亦应，况衰向乎！
 
-### image_refs
-
-- https://special.rhky.com/res/images/special/tishi_logo.png
-- http://p.ananas.chaoxing.com/star3/248_248/d13e94430c6bda9ae9b049c841a8c788.jpg
 
 ## SXK-118 某　宅　子山午向兼癸丁　六运造
 
-- chapter_id: 814953326
-- source_url: https://special.rhky.com/mobile/mooc/tocard/814953326?courseId=240632071&name=%E6%9F%90%E3%80%80%E5%AE%85%E3%80%80%E5%AD%90%E5%B1%B1%E5%8D%88%E5%90%91%E5%85%BC%E7%99%B8%E4%B8%81%E3%80%80%E5%85%AD%E8%BF%90%E9%80%A0&code=&btype=tushu
-- digest_status: done
-- image_count: 2
 
 此屋财气大旺，丁气亦佳，因旺星到向，向上有水也。然辰、巽方是一、二，墙外有坟，左边当出一书腐。未、坤方有屋，门临于四、八之位，右边亦出一书腐。因一为魁星，四为文昌，皆被土压故也。若无坟屋，不过出读书之人耳。
 
 则先谨按：观此可悟一四所在，无论山向飞星，均不宜受形质上之逼压，犯则变文秀为书腐。冲射更凶，二宅同忌。
 
-### image_refs
-
-- https://special.rhky.com/res/images/special/tishi_logo.png
-- http://p.ananas.chaoxing.com/star3/248_248/43e69db8c35e7763f5de9fe34d1a4cb2.jpg
 
 ## SXK-119 某　宅　子山午向　六运造
 
-- chapter_id: 814953328
-- source_url: https://special.rhky.com/mobile/mooc/tocard/814953328?courseId=240632071&name=%E6%9F%90%E3%80%80%E5%AE%85%E3%80%80%E5%AD%90%E5%B1%B1%E5%8D%88%E5%90%91%E3%80%80%E5%85%AD%E8%BF%90%E9%80%A0&code=&btype=tushu
-- digest_status: done
-- image_count: 2
 
 此宅对宫有屋尖冲射，中子当家，因坎入中宫，坎为中男也。然屡被官府暗算，以虽属旺向，因有邻屋冲射，向上是六，六为官星故也。
 
 则先谨按：屋尖冲射，官星高耸，故屡被官府暗算。向上旺神飞到对宫高屋，犯上山，亦主耗财。六为长，长不得力，故主中子当家，取坎入中宫之验。
 
-### image_refs
-
-- https://special.rhky.com/res/images/special/tishi_logo.png
-- http://p.ananas.chaoxing.com/star3/248_248/d6a1c6e49f490b48ff58f7042877bf64.jpg
 
 ## SXK-120 某　宅　子午兼壬丙　六运造
 
-- chapter_id: 814953330
-- source_url: https://special.rhky.com/mobile/mooc/tocard/814953330?courseId=240632071&name=%E6%9F%90%E3%80%80%E5%AE%85%E3%80%80%E5%AD%90%E5%8D%88%E5%85%BC%E5%A3%AC%E4%B8%99%E3%80%80%E5%85%AD%E8%BF%90%E9%80%A0&code=&btype=tushu
-- digest_status: done
-- image_count: 3
 
 此宅向得六白，双乾到向，乾为阳首，坐子向午，为地画八卦之坎宅，阳六为坎宅生气，金生水也，且合“紫微八武同到”之妙。便门开震，巽方进内屋，巽方二黑为孤阴，为坎宅之难神。坎宅水也，水被土克，故为难神。再见一白同在巽宫，土克水也，一为魁星，主出读书人，今受土克，故读书将成而病，生水亏之症，恐夭天年。
 
@@ -3641,18 +2552,9 @@ generated: 2026-06-17
 
 则先谨按：立灶之法，以向上飞星作主，火门朝对为重，其方位可不问衰旺生死。旺方可避，则姑避之。最宜坐木向土或坐土向木，取木生火、火生土为吉。火门向一白，取“水火既济”亦吉。但飞星之二黑五黄方均为坐朝所忌，因巨属病符，廉主瘟 故也。九紫方火气太盛，虑患回禄，亦为坐朝所忌。余如向乾六兑七，犯火金相克，主有口舌、肺病、血症之咎，亦非所宜。且乾为天，火烧天门，主出逆子，九六同宫更验。宅内门方以向上飞星取三般或三白为不二法门。二黑为坎宅难神，当运不忌。余虽无一白同临，亦非所宜。因二为病符故也。
 
-### image_refs
-
-- https://special.rhky.com/res/images/special/tishi_logo.png
-- http://p.ananas.chaoxing.com/star3/248_248/475b3c6571d78361fdd470d30b6ab5c7.jpg
-- http://p.ananas.chaoxing.com/star3/origin/566f1cdb7a5cb064e8e1a9e16fbc3e4a.png
 
 ## SXK-121 会稽任宅　子午兼壬丙　七运造
 
-- chapter_id: 814953332
-- source_url: https://special.rhky.com/mobile/mooc/tocard/814953332?courseId=240632071&name=%E4%BC%9A%E7%A8%BD%E4%BB%BB%E5%AE%85%E3%80%80%E5%AD%90%E5%8D%88%E5%85%BC%E5%A3%AC%E4%B8%99%E3%80%80%E4%B8%83%E8%BF%90%E9%80%A0&code=&btype=tushu
-- digest_status: done
-- image_count: 2
 
 此宅前面地高，后有大河，乾、坎、艮方均现水光。后有大槐照水，一片绿色，屋内多阴暗。住此屋者，财丁两旺，因双七到后，后有大河故也。然屋内有身穿绿衣之女鬼，至申时出现。因双七到坎，七为兑，为少女也；二黑到乾，二为坤母，五黄到艮为廉贞，即九离为中女；五黄又为五鬼，此三方皆有大河水放光，合坐下之七，即“阴神满地成群”，故主出女鬼。于申时出现者，以坎为阴卦，申乃阴时也。穿绿者，因槐映水作绿色也。且屋阴暗，故鬼栖焉。
 
@@ -3660,17 +2562,9 @@ generated: 2026-06-17
 
 则先谨按：《易》不言鬼，凡鬼均与卦气有关，然必与环境形态相凑合，其验乃神。但屋得旺向或门开旺方，其形气亦能潜移，此“一贵当权”之义。是宅八运初，钱韫岩为就未方开门，鬼不复现，即旺门之力也。
 
-### image_refs
-
-- https://special.rhky.com/res/images/special/tishi_logo.png
-- http://p.ananas.chaoxing.com/star3/248_248/75d1a1b4d00f5d925beb4ac06062234d.jpg
 
 ## SXK-122 会稽章宅　子午兼癸丁　七运造
 
-- chapter_id: 814953334
-- source_url: https://special.rhky.com/mobile/mooc/tocard/814953334?courseId=240632071&name=%E4%BC%9A%E7%A8%BD%E7%AB%A0%E5%AE%85%E3%80%80%E5%AD%90%E5%8D%88%E5%85%BC%E7%99%B8%E4%B8%81%E3%80%80%E4%B8%83%E8%BF%90%E9%80%A0&code=&btype=tushu
-- digest_status: done
-- image_count: 2
 
 此屋运星到后，定主财丁两旺，双七临坎。至八运财大退，以坤方无水且有高楼压塞，名为上山故也。又有官讼不休，以六到坤，六为官星也。此屋若两家合住，《书》云：“一到分房宅气移，一门换作两门推。”左边所住之人居一五之位是衰方，八运上山，定主萧索；右边所住之人是八位，虽系上山，地盘尚旺，较左边之财大有高下，然总不吉耳。
 
@@ -3682,47 +2576,23 @@ generated: 2026-06-17
 
 本篇详注住左住右。左居一五之位，右处八白之方，即房分而宅运仍旧之明证也。或谓住左边者，私门向西，七运山上飞星西方是一，向上飞星西方是四，门对一四同宫，主出聪明正途之人。住右边者，私门向东，七运山上飞星东方是五，五即土也，向上飞星东方是九，九为火、为文明。门对九五，火炎土燥，顽钝之征，文明被土所压，主出一书腐。此从门向论也。今沈公注云“兑方所住之人定主采芹”，乃就地盘立论。然震方处九五之位，不出书腐者，亦未始非门对一四之补救也。门向地盘融冶饶减之理，观此便不难索解矣。
 
-### image_refs
-
-- https://special.rhky.com/res/images/special/tishi_logo.png
-- http://p.ananas.chaoxing.com/star3/248_248/e0ec4b925f758c4117ab3a851d581af1.jpg
 
 ## SXK-123 胡　宅　甲山庚向　七运造
 
-- chapter_id: 814953336
-- source_url: https://special.rhky.com/mobile/mooc/tocard/814953336?courseId=240632071&name=%E8%83%A1%E3%80%80%E5%AE%85%E3%80%80%E7%94%B2%E5%B1%B1%E5%BA%9A%E5%90%91%E3%80%80%E4%B8%83%E8%BF%90%E9%80%A0&code=&btype=tushu
-- digest_status: done
-- image_count: 2
 
 此屋丁方，有一条直路而进，山颠水倒，本主不吉。且离方门前有直路冲进，又是二四同宫，定主姑媳不睦。《书》云：“风行地而硬直难当，定有欺姑之妇。”姑受欺不至气结而死者，以门上有九到，火能生土故也。
 
 则先谨按：玄空五行之吉凶，必与实地形峦相凑合，其验乃神。风行地上，气也。硬直难当，形也。形气交会，自有悍妇欺姑之应。是屋门开二四之方，苟无路气直冲，其验亦微。然是屋本犯山颠水倒，若就震方得辟便门，亦足以资补救。今不是之图，而辟离门，纵无凌长犯上之应，亦全无生气入门，衰可知矣！
 
-### image_refs
-
-- https://special.rhky.com/res/images/special/tishi_logo.png
-- http://p.ananas.chaoxing.com/star3/248_248/5e1c5210da344c9c445f10b98cabf532.jpg
 
 ## SXK-124 某　宅　申寅兼坤艮　七运造
 
-- chapter_id: 814953338
-- source_url: https://special.rhky.com/mobile/mooc/tocard/814953338?courseId=240632071&name=%E6%9F%90%E3%80%80%E5%AE%85%E3%80%80%E7%94%B3%E5%AF%85%E5%85%BC%E5%9D%A4%E8%89%AE%E3%80%80%E4%B8%83%E8%BF%90%E9%80%A0&code=&btype=tushu
-- digest_status: done
-- image_count: 2
 
 此屋住后，财气颇佳，然巽方有高楼冲射，必有一老寡妇争田涉讼。因六为官星，二为寡宿、为田土故也。又有少女喜伴中男，因向上双七，七为少女，坎一到向，坎为中男故也。
 
-### image_refs
-
-- https://special.rhky.com/res/images/special/tishi_logo.png
-- http://p.ananas.chaoxing.com/star3/248_248/816e6b5dee9c683ba97c34d00b3af9c6.jpg
 
 ## SXK-125 张村丁宅　子午兼癸丁　七运造
 
-- chapter_id: 814953340
-- source_url: https://special.rhky.com/mobile/mooc/tocard/814953340?courseId=240632071&name=%E5%BC%A0%E6%9D%91%E4%B8%81%E5%AE%85%E3%80%80%E5%AD%90%E5%8D%88%E5%85%BC%E7%99%B8%E4%B8%81%E3%80%80%E4%B8%83%E8%BF%90%E9%80%A0&code=&btype=tushu
-- digest_status: done
-- image_count: 2
 
 此屋门开巽方，前有直路阔大，从午方引入。
 
@@ -3730,17 +2600,9 @@ generated: 2026-06-17
 
 则先谨按：一四同宫，得令主功名，失令主淫乱。然与形态丑恶之砂水相值乃验，犹发科名之必须挨到秀峰秀水方位，同一例也。二宅皆然。
 
-### image_refs
-
-- https://special.rhky.com/res/images/special/tishi_logo.png
-- http://p.ananas.chaoxing.com/star3/248_248/a979eaca822bf2d53cd21411a08d5b68.jpg
 
 ## SXK-126 许　宅　子午兼癸丁　七运造
 
-- chapter_id: 814953342
-- source_url: https://special.rhky.com/mobile/mooc/tocard/814953342?courseId=240632071&name=%E8%AE%B8%E3%80%80%E5%AE%85%E3%80%80%E5%AD%90%E5%8D%88%E5%85%BC%E7%99%B8%E4%B8%81%E3%80%80%E4%B8%83%E8%BF%90%E9%80%A0&code=&btype=tushu
-- digest_status: done
-- image_count: 2
 
 屋后有河，巽方开门，路从艮至震至巽引入门中。
 
@@ -3748,17 +2610,9 @@ generated: 2026-06-17
 
 则先谨按：进气方两犯九五，遂主出瞽。可见阳宅以门为骨，以路为筋。吉门恶路，故有酸浆入酪 [12] 之喻。
 
-### image_refs
-
-- https://special.rhky.com/res/images/special/tishi_logo.png
-- http://p.ananas.chaoxing.com/star3/248_248/9a7cddd1ba538bd1f7f90c3d6d963e0e.jpg
 
 ## SXK-127 湖塘下陈宅　亥山巳向　八运造
 
-- chapter_id: 814953344
-- source_url: https://special.rhky.com/mobile/mooc/tocard/814953344?courseId=240632071&name=%E6%B9%96%E5%A1%98%E4%B8%8B%E9%99%88%E5%AE%85%E3%80%80%E4%BA%A5%E5%B1%B1%E5%B7%B3%E5%90%91%E3%80%80%E5%85%AB%E8%BF%90%E9%80%A0&code=&btype=tushu
-- digest_status: done
-- image_count: 2
 
 屋后有窑三座，在戌、乾、亥方。巳方照墙，寅方开大门，门前有大湖放光，又有路直冲寅向。
 
@@ -3766,17 +2620,9 @@ generated: 2026-06-17
 
 则先谨按：开门之法，固取旺方，而于二十四山随时而在之阴阳，不可不辨。如前会稽任宅，八运初，钱韫岩于未方为开一门，鬼不复现。夫坤宫固为任宅八运之旺方，然不开坤申，而独取未者，何也？盖八运八入中，五到坤，天元龙四维五属阳，坤申阳也，逢阳顺行，八白不能到门，所谓“旺而不旺”；未阴也，可用五入中逆行，则旺星到门，艮方变为二黑矣。是宅艮方运盘为二，二即未坤申，此三字惟未属阴，未与丑为地元一气，故当开丑门丑向，则二入中逢阴逆飞，八白旺星亦到门矣，此“不旺而旺”也。
 
-### image_refs
-
-- https://special.rhky.com/res/images/special/tishi_logo.png
-- http://p.ananas.chaoxing.com/star3/248_259/905bcc05ecf500c6b35cc0bd34124769.jpg
 
 ## SXK-128 东溪周宅　酉卯山兼辛乙　八运造
 
-- chapter_id: 814953346
-- source_url: https://special.rhky.com/mobile/mooc/tocard/814953346?courseId=240632071&name=%E4%B8%9C%E6%BA%AA%E5%91%A8%E5%AE%85%E3%80%80%E9%85%89%E5%8D%AF%E5%B1%B1%E5%85%BC%E8%BE%9B%E4%B9%99%E3%80%80%E5%85%AB%E8%BF%90%E9%80%A0&code=&btype=tushu
-- digest_status: done
-- image_count: 2
 
 此宅坐后辛方有井，作书房，于道光乙未、丙申两年，先生打死两学生，均头上受伤而死。
 
@@ -3784,17 +2630,9 @@ generated: 2026-06-17
 
 则先谨按：此乃令星下水，丁星落在井中之咎。乙未年逢戊己大煞临井，丙申年向上之四亦移到井，故凶祸迭现。所伤之人必主肖虎与牛者，以双八到坐，八即“丑艮寅”，丑为牛，寅为虎故也。此以卦象推祸兆，而以坐山双星断年命也。
 
-### image_refs
-
-- https://special.rhky.com/res/images/special/tishi_logo.png
-- http://p.ananas.chaoxing.com/star3/248_248/febac603073d1dd0e6fdcfe3a5037db8.jpg
 
 ## SXK-129 某　宅　未山丑向　八运造
 
-- chapter_id: 814953348
-- source_url: https://special.rhky.com/mobile/mooc/tocard/814953348?courseId=240632071&name=%E6%9F%90%E3%80%80%E5%AE%85%E3%80%80%E6%9C%AA%E5%B1%B1%E4%B8%91%E5%90%91%E3%80%80%E5%85%AB%E8%BF%90%E9%80%A0&code=&btype=tushu
-- digest_status: done
-- image_count: 2
 
 乾坎二方有水放光，至丑方门前横过。
 
@@ -3802,17 +2640,9 @@ generated: 2026-06-17
 
 则先谨按：巽为索，乾为首，索系于首，缢之象也，故巽宫水路缠乾，失元主有悬梁之厄。应在女子者，乾金克巽木，四九为阴卦故也。然有水或路，其克乃力，否则亦不验。是篇合乾、坎两宫解释卦象，惟妙惟肖 [13] ，为断法精到之作。或云水路缠乾，兼形局断，如阳宅乾方有曲水缠绕，亦主此厄，然亦须太岁或年月星辰加临，其祸斯应。
 
-### image_refs
-
-- https://special.rhky.com/res/images/special/tishi_logo.png
-- http://p.ananas.chaoxing.com/star3/248_248/66ea09a91094a89f227e74a4a253afcf.jpg
 
 ## SXK-130 宁波府基　癸丁兼丑未　八运修造
 
-- chapter_id: 814953350
-- source_url: https://special.rhky.com/mobile/mooc/tocard/814953350?courseId=240632071&name=%E5%AE%81%E6%B3%A2%E5%BA%9C%E5%9F%BA%E3%80%80%E7%99%B8%E4%B8%81%E5%85%BC%E4%B8%91%E6%9C%AA%E3%80%80%E5%85%AB%E8%BF%90%E4%BF%AE%E9%80%A0&code=&btype=tushu
-- digest_status: done
-- image_count: 4
 
 此图向上挨星为三，三即乙，乙挨巨门飞星，不用三而用二入中者，用替卦法也。
 
@@ -3822,45 +2652,21 @@ generated: 2026-06-17
 
 以上断语，阴阳二宅皆须心灵目巧，形气兼观，若拘拘呆法者，不足语于玄空之道也。但求地必先积德，不善之家，须慎用之。
 
-### image_refs
-
-- https://special.rhky.com/res/images/special/tishi_logo.png
-- http://p.ananas.chaoxing.com/star3/248_248/77d8a5b6df1051ee368aaf2994221b97.jpg
-- http://p.ananas.chaoxing.com/star3/90_111/afdaadd5f3a34184be60aad06ac1ed81.jpg
-- http://p.ananas.chaoxing.com/star3/200_242/aa2dc82b6e667951c555e3b69f908694.jpg
 
 ## SXK-131 增广沈氏玄空学卷四
 
-- chapter_id: 814953352
-- source_url: https://special.rhky.com/mobile/mooc/tocard/814953352?courseId=240632071&name=%E5%A2%9E%E5%B9%BF%E6%B2%88%E6%B0%8F%E7%8E%84%E7%A9%BA%E5%AD%A6%E5%8D%B7%E5%9B%9B&code=&btype=tushu
-- digest_status: skipped
-- image_count: 1
 
 [image_only_or_section_title: raw HTML retained; no p.content text extracted]
 
-### image_refs
-
-- https://special.rhky.com/res/images/special/tishi_logo.png
 
 ## SXK-132 九运挨星立成图
 
-- chapter_id: 814953354
-- source_url: https://special.rhky.com/mobile/mooc/tocard/814953354?courseId=240632071&name=%E4%B9%9D%E8%BF%90%E6%8C%A8%E6%98%9F%E7%AB%8B%E6%88%90%E5%9B%BE&code=&btype=tushu
-- digest_status: skipped
-- image_count: 1
 
 [image_only_or_section_title: raw HTML retained; no p.content text extracted]
 
-### image_refs
-
-- https://special.rhky.com/res/images/special/tishi_logo.png
 
 ## SXK-133 九宫挨星掌诀
 
-- chapter_id: 814953356
-- source_url: https://special.rhky.com/mobile/mooc/tocard/814953356?courseId=240632071&name=%E4%B9%9D%E5%AE%AB%E6%8C%A8%E6%98%9F%E6%8E%8C%E8%AF%80&code=&btype=tushu
-- digest_status: done
-- image_count: 2
 
 下诀：“一坎、二坤、三震、四巽、五中、六乾、七兑、八艮、九离。”一为壬子癸，二为未坤申，三为甲卯乙，四为辰巽巳，五为戊己，六为戌乾亥，七为庚酉辛，八为丑艮寅，九为丙午丁。以上二十四山分为天、人、地三元。
 
@@ -3880,17 +2686,9 @@ generated: 2026-06-17
 
 下《挨星图》一卷，每山每运逐一挨明，所有旺山旺向、地运长短、合十、打劫、城门诀、反伏吟、上山下水诸法，均由先生《地理丛说》中录出，列于各山之前。其飞星之生、克、比和，则录自华氏《天心正运》，俾学者了然心目，庶免为庸术伪诀所惑。至于吉凶断验，自有仲山《宅断》与《玄空古义》在。神而明之，存乎其人耳。
 
-### image_refs
-
-- https://special.rhky.com/res/images/special/tishi_logo.png
-- http://p.ananas.chaoxing.com/star3/257_397/88e35568559d8d0a9493dd75db9a883c.jpg
 
 ## SXK-134 天元子山午向挨星图
 
-- chapter_id: 814953358
-- source_url: https://special.rhky.com/mobile/mooc/tocard/814953358?courseId=240632071&name=%E5%A4%A9%E5%85%83%E5%AD%90%E5%B1%B1%E5%8D%88%E5%90%91%E6%8C%A8%E6%98%9F%E5%9B%BE&code=&btype=tushu
-- digest_status: done
-- image_count: 4
 
 地运八十年。
 
@@ -3902,19 +2700,9 @@ generated: 2026-06-17
 
 城门：五、七、九运不用。一、四运坤巽吉。二、八运巽、三六运坤吉。
 
-### image_refs
-
-- https://special.rhky.com/res/images/special/tishi_logo.png
-- http://p.ananas.chaoxing.com/star3/630_663/e56781ea8f807bd7f71ea1d62e971756.jpg
-- http://p.ananas.chaoxing.com/star3/623_970/bcbdacb6c077dd14726dfd893e324406.jpg
-- http://p.ananas.chaoxing.com/star3/626_964/8a7adb6cacdf726bf1be54ee78615eac.jpg
 
 ## SXK-135 天元午山子向挨星图
 
-- chapter_id: 814953360
-- source_url: https://special.rhky.com/mobile/mooc/tocard/814953360?courseId=240632071&name=%E5%A4%A9%E5%85%83%E5%8D%88%E5%B1%B1%E5%AD%90%E5%90%91%E6%8C%A8%E6%98%9F%E5%9B%BE&code=&btype=tushu
-- digest_status: done
-- image_count: 4
 
 地运一百年。
 
@@ -3926,19 +2714,9 @@ generated: 2026-06-17
 
 城门：一、三、五运不用。六、九运艮吉。四、七运艮，二、八运乾吉。
 
-### image_refs
-
-- https://special.rhky.com/res/images/special/tishi_logo.png
-- http://p.ananas.chaoxing.com/star3/633_332/97c9c6adc93bdcf84466b839d02d7f71.jpg
-- http://p.ananas.chaoxing.com/star3/632_972/8103dd2c1b047374de9f272ae6a8bf67.jpg
-- http://p.ananas.chaoxing.com/star3/630_970/5cd2f298ae9f57d96ab440315568f5dd.jpg
 
 ## SXK-136 天元卯山酉向挨星图
 
-- chapter_id: 814953363
-- source_url: https://special.rhky.com/mobile/mooc/tocard/814953363?courseId=240632071&name=%E5%A4%A9%E5%85%83%E5%8D%AF%E5%B1%B1%E9%85%89%E5%90%91%E6%8C%A8%E6%98%9F%E5%9B%BE&code=&btype=tushu
-- digest_status: done
-- image_count: 4
 
 地运四十年。
 
@@ -3948,19 +2726,9 @@ generated: 2026-06-17
 
 城门：五、七运不用。六运乾坤吉。一、三、四运坤吉。二、八、九运乾吉。
 
-### image_refs
-
-- https://special.rhky.com/res/images/special/tishi_logo.png
-- http://p.ananas.chaoxing.com/star3/626_966/00cef9d83e70e34397cf0b4fe188f63f.jpg
-- http://p.ananas.chaoxing.com/star3/630_970/e7ba63a016214c985cfc875625e99961.jpg
-- http://p.ananas.chaoxing.com/star3/630_969/a413eef8d4ae345db1dba0ded4b948d1.jpg
 
 ## SXK-137 天元酉山卯向挨星图
 
-- chapter_id: 814953366
-- source_url: https://special.rhky.com/mobile/mooc/tocard/814953366?courseId=240632071&name=%E5%A4%A9%E5%85%83%E9%85%89%E5%B1%B1%E5%8D%AF%E5%90%91%E6%8C%A8%E6%98%9F%E5%9B%BE&code=&btype=tushu
-- digest_status: done
-- image_count: 4
 
 地运一百四十年
 
@@ -3970,19 +2738,9 @@ generated: 2026-06-17
 
 城门：三运不用。四运巽、艮吉。一、二、八运巽吉。六、七、九运艮吉。
 
-### image_refs
-
-- https://special.rhky.com/res/images/special/tishi_logo.png
-- http://p.ananas.chaoxing.com/star3/624_700/8159eafee275c162d98d00ec33559518.jpg
-- http://p.ananas.chaoxing.com/star3/630_964/99c3d200a39bebc48b83d7092ad1b3a0.jpg
-- http://p.ananas.chaoxing.com/star3/634_970/971920b8019999ebdd794ec60bf5af79.jpg
 
 ## SXK-138 天元乾山巽向挨星图
 
-- chapter_id: 814953369
-- source_url: https://special.rhky.com/mobile/mooc/tocard/814953369?courseId=240632071&name=%E5%A4%A9%E5%85%83%E4%B9%BE%E5%B1%B1%E5%B7%BD%E5%90%91%E6%8C%A8%E6%98%9F%E5%9B%BE&code=&btype=tushu
-- digest_status: done
-- image_count: 4
 
 地运一百六十年。
 
@@ -3996,19 +2754,9 @@ generated: 2026-06-17
 
 四、六运：犯反吟伏吟。
 
-### image_refs
-
-- https://special.rhky.com/res/images/special/tishi_logo.png
-- http://p.ananas.chaoxing.com/star3/629_326/38dd670c168555de96d6080b4e2bdf1a.jpg
-- http://p.ananas.chaoxing.com/star3/630_966/ac6f511686502d5955ae11b5482f792a.jpg
-- http://p.ananas.chaoxing.com/star3/632_968/defaf8634f279bbd2ce3b125a96792ba.jpg
 
 ## SXK-139 天元巽山乾向挨星图
 
-- chapter_id: 814953372
-- source_url: https://special.rhky.com/mobile/mooc/tocard/814953372?courseId=240632071&name=%E5%A4%A9%E5%85%83%E5%B7%BD%E5%B1%B1%E4%B9%BE%E5%90%91%E6%8C%A8%E6%98%9F%E5%9B%BE&code=&btype=tushu
-- digest_status: done
-- image_count: 4
 
 地运二十年。
 
@@ -4022,19 +2770,9 @@ generated: 2026-06-17
 
 四、六运：犯反伏吟凶。
 
-### image_refs
-
-- https://special.rhky.com/res/images/special/tishi_logo.png
-- http://p.ananas.chaoxing.com/star3/634_968/5db8a97b37474e5e828478e05643b0f1.jpg
-- http://p.ananas.chaoxing.com/star3/632_968/0a971fdee9ddf72e0d33b2b28f375a07.jpg
-- http://p.ananas.chaoxing.com/star3/631_970/fa706ba7d96be57e1627e72da93088b4.jpg
 
 ## SXK-140 天元艮山坤向挨星图
 
-- chapter_id: 814953375
-- source_url: https://special.rhky.com/mobile/mooc/tocard/814953375?courseId=240632071&name=%E5%A4%A9%E5%85%83%E8%89%AE%E5%B1%B1%E5%9D%A4%E5%90%91%E6%8C%A8%E6%98%9F%E5%9B%BE&code=&btype=tushu
-- digest_status: done
-- image_count: 4
 
 地运一百二十年。
 
@@ -4044,19 +2782,9 @@ generated: 2026-06-17
 
 二、五、八运：犯反伏吟，凶。然全局合成三般卦。
 
-### image_refs
-
-- https://special.rhky.com/res/images/special/tishi_logo.png
-- http://p.ananas.chaoxing.com/star3/630_734/d7193860ef113498b458e14be533c68c.jpg
-- http://p.ananas.chaoxing.com/star3/631_971/48e4ae01e5b7cc3f8589311d93b85023.jpg
-- http://p.ananas.chaoxing.com/star3/637_971/9168182ed715a57710855cf5b1828ecc.jpg
 
 ## SXK-141 天元坤山艮向挨星图
 
-- chapter_id: 814953378
-- source_url: https://special.rhky.com/mobile/mooc/tocard/814953378?courseId=240632071&name=%E5%A4%A9%E5%85%83%E5%9D%A4%E5%B1%B1%E8%89%AE%E5%90%91%E6%8C%A8%E6%98%9F%E5%9B%BE&code=&btype=tushu
-- digest_status: done
-- image_count: 4
 
 地运六十年。
 
@@ -4066,19 +2794,9 @@ generated: 2026-06-17
 
 二、五、八运：犯反伏吟，凶。然全局合成三般卦。
 
-### image_refs
-
-- https://special.rhky.com/res/images/special/tishi_logo.png
-- http://p.ananas.chaoxing.com/star3/638_372/61b19a35f7c8d3782e538dd6e109617e.jpg
-- http://p.ananas.chaoxing.com/star3/629_966/2a74440bd9e4d9c8363eecd0cfc863a8.jpg
-- http://p.ananas.chaoxing.com/star3/633_970/2483f08ab9acf18ffeed8772fcd5ec55.jpg
 
 ## SXK-142 人元寅山申向挨星图
 
-- chapter_id: 814953381
-- source_url: https://special.rhky.com/mobile/mooc/tocard/814953381?courseId=240632071&name=%E4%BA%BA%E5%85%83%E5%AF%85%E5%B1%B1%E7%94%B3%E5%90%91%E6%8C%A8%E6%98%9F%E5%9B%BE&code=&btype=tushu
-- digest_status: done
-- image_count: 4
 
 地运一百二十年。
 
@@ -4088,19 +2806,9 @@ generated: 2026-06-17
 
 二、五、八运：犯反伏吟，凶。然全局合成三般卦。
 
-### image_refs
-
-- https://special.rhky.com/res/images/special/tishi_logo.png
-- http://p.ananas.chaoxing.com/star3/635_964/f1af6bbf001bdf6b58673dc5e91c965b.jpg
-- http://p.ananas.chaoxing.com/star3/630_968/faeef3bf0d59f21de4842bd2bb958933.jpg
-- http://p.ananas.chaoxing.com/star3/630_970/9fa1ae549b1e6d351e8b4c18723dca36.jpg
 
 ## SXK-143 人元申山寅向挨星图
 
-- chapter_id: 814953384
-- source_url: https://special.rhky.com/mobile/mooc/tocard/814953384?courseId=240632071&name=%E4%BA%BA%E5%85%83%E7%94%B3%E5%B1%B1%E5%AF%85%E5%90%91%E6%8C%A8%E6%98%9F%E5%9B%BE&code=&btype=tushu
-- digest_status: done
-- image_count: 4
 
 地运六十年。
 
@@ -4110,19 +2818,9 @@ generated: 2026-06-17
 
 二、五、八运：犯反伏吟，凶。然全局合成三般卦。
 
-### image_refs
-
-- https://special.rhky.com/res/images/special/tishi_logo.png
-- http://p.ananas.chaoxing.com/star3/635_696/0c60605efafaf704d9c81b9cfa37aef2.jpg
-- http://p.ananas.chaoxing.com/star3/629_966/fd3ec094ab70c3b08bd281986034a662.jpg
-- http://p.ananas.chaoxing.com/star3/633_972/c673a81dba6a7430939b4df68ce91779.jpg
 
 ## SXK-144 人元巳山亥向挨星图
 
-- chapter_id: 814953387
-- source_url: https://special.rhky.com/mobile/mooc/tocard/814953387?courseId=240632071&name=%E4%BA%BA%E5%85%83%E5%B7%B3%E5%B1%B1%E4%BA%A5%E5%90%91%E6%8C%A8%E6%98%9F%E5%9B%BE&code=&btype=tushu
-- digest_status: done
-- image_count: 4
 
 地运二十年。
 
@@ -4136,19 +2834,9 @@ generated: 2026-06-17
 
 四、六运：犯反伏吟，凶。
 
-### image_refs
-
-- https://special.rhky.com/res/images/special/tishi_logo.png
-- http://p.ananas.chaoxing.com/star3/635_316/c878d5f1f47cea526b9ff03164932ebc.jpg
-- http://p.ananas.chaoxing.com/star3/624_967/850e7d92aa4b6d6ef9247324caee75b4.jpg
-- http://p.ananas.chaoxing.com/star3/630_968/8d9d172ecc94b6ff3588bd661a05dc37.jpg
 
 ## SXK-145 人元亥山巳向挨星图
 
-- chapter_id: 814953390
-- source_url: https://special.rhky.com/mobile/mooc/tocard/814953390?courseId=240632071&name=%E4%BA%BA%E5%85%83%E4%BA%A5%E5%B1%B1%E5%B7%B3%E5%90%91%E6%8C%A8%E6%98%9F%E5%9B%BE&code=&btype=tushu
-- digest_status: done
-- image_count: 4
 
 地运一百六十年。
 
@@ -4162,19 +2850,9 @@ generated: 2026-06-17
 
 四、六运：犯反伏吟，凶。
 
-### image_refs
-
-- https://special.rhky.com/res/images/special/tishi_logo.png
-- http://p.ananas.chaoxing.com/star3/633_966/abb04c87ae1e73b101d374f3b37d951d.jpg
-- http://p.ananas.chaoxing.com/star3/638_968/ff04390662fa9e650e945eff01b0391c.jpg
-- http://p.ananas.chaoxing.com/star3/634_971/81c13c0184281683f89911f663a57250.jpg
 
 ## SXK-146 人元乙山辛向挨星图
 
-- chapter_id: 814953393
-- source_url: https://special.rhky.com/mobile/mooc/tocard/814953393?courseId=240632071&name=%E4%BA%BA%E5%85%83%E4%B9%99%E5%B1%B1%E8%BE%9B%E5%90%91%E6%8C%A8%E6%98%9F%E5%9B%BE&code=&btype=tushu
-- digest_status: done
-- image_count: 4
 
 地运四十年。
 
@@ -4184,19 +2862,9 @@ generated: 2026-06-17
 
 城门：五、七运不用。六运申亥吉。一、三、四运申，二、八、九运亥吉。
 
-### image_refs
-
-- https://special.rhky.com/res/images/special/tishi_logo.png
-- http://p.ananas.chaoxing.com/star3/634_706/3c68cfd0e0ee02a6cb6abe9e1f0c7fe1.jpg
-- http://p.ananas.chaoxing.com/star3/629_968/ff7a934cb10316c4f589027a87b62712.jpg
-- http://p.ananas.chaoxing.com/star3/626_966/48a1defb9fbd20bd5e3bd0564874c12e.jpg
 
 ## SXK-147 人元辛山乙向挨星图
 
-- chapter_id: 814953396
-- source_url: https://special.rhky.com/mobile/mooc/tocard/814953396?courseId=240632071&name=%E4%BA%BA%E5%85%83%E8%BE%9B%E5%B1%B1%E4%B9%99%E5%90%91%E6%8C%A8%E6%98%9F%E5%9B%BE&code=&btype=tushu
-- digest_status: done
-- image_count: 4
 
 地运一百四十年。
 
@@ -4206,19 +2874,9 @@ generated: 2026-06-17
 
 城门：三、五运不用。四运寅巳吉。一、二、八运巳，六、七、九运寅吉。
 
-### image_refs
-
-- https://special.rhky.com/res/images/special/tishi_logo.png
-- http://p.ananas.chaoxing.com/star3/632_347/aff169e1fbaa5b3e445d29edfe18c076.jpg
-- http://p.ananas.chaoxing.com/star3/632_972/526948f65d819da57fd0aac6605c34f9.jpg
-- http://p.ananas.chaoxing.com/star3/633_966/8b6912161dde1fef875138b9a1a06885.jpg
 
 ## SXK-148 人元丁山癸向挨星图
 
-- chapter_id: 814953399
-- source_url: https://special.rhky.com/mobile/mooc/tocard/814953399?courseId=240632071&name=%E4%BA%BA%E5%85%83%E4%B8%81%E5%B1%B1%E7%99%B8%E5%90%91%E6%8C%A8%E6%98%9F%E5%9B%BE&code=&btype=tushu
-- digest_status: done
-- image_count: 4
 
 地运一百年。
 
@@ -4230,19 +2888,9 @@ generated: 2026-06-17
 
 城门：一、三、五运不用。六、九运寅亥吉。四、七运寅，二、八运亥吉。
 
-### image_refs
-
-- https://special.rhky.com/res/images/special/tishi_logo.png
-- http://p.ananas.chaoxing.com/star3/631_968/72de051d5253e8faed6eae4ada69314d.jpg
-- http://p.ananas.chaoxing.com/star3/630_971/7078f609496c6d59867c8dc45c2130e4.jpg
-- http://p.ananas.chaoxing.com/star3/632_966/b4458a7d5bf403626d5bb2c700daf63a.jpg
 
 ## SXK-149 人元癸山丁向挨星图
 
-- chapter_id: 814953402
-- source_url: https://special.rhky.com/mobile/mooc/tocard/814953402?courseId=240632071&name=%E4%BA%BA%E5%85%83%E7%99%B8%E5%B1%B1%E4%B8%81%E5%90%91%E6%8C%A8%E6%98%9F%E5%9B%BE&code=&btype=tushu
-- digest_status: done
-- image_count: 4
 
 地运八十年，五运独旺。
 
@@ -4252,19 +2900,9 @@ generated: 2026-06-17
 
 城门：五、七、九运不用。一、四运巳申吉。二、八运巳吉。三、六运申吉。
 
-### image_refs
-
-- https://special.rhky.com/res/images/special/tishi_logo.png
-- http://p.ananas.chaoxing.com/star3/634_704/7b4007fa225f8a7f22b3a13b0adc26d6.jpg
-- http://p.ananas.chaoxing.com/star3/632_966/b668f6828dc7b1f43270eb3da4521cd4.jpg
-- http://p.ananas.chaoxing.com/star3/635_976/07fcc7068c523685f2bc72b76439aea1.jpg
 
 ## SXK-150 地元辰山戌向挨星图
 
-- chapter_id: 814953405
-- source_url: https://special.rhky.com/mobile/mooc/tocard/814953405?courseId=240632071&name=%E5%9C%B0%E5%85%83%E8%BE%B0%E5%B1%B1%E6%88%8C%E5%90%91%E6%8C%A8%E6%98%9F%E5%9B%BE&code=&btype=tushu
-- digest_status: done
-- image_count: 4
 
 地运二十年。
 
@@ -4274,19 +2912,9 @@ generated: 2026-06-17
 
 城门：五、七运不用。六运壬庚吉。一、三、八运壬，二、四、九运庚吉。
 
-### image_refs
-
-- https://special.rhky.com/res/images/special/tishi_logo.png
-- http://p.ananas.chaoxing.com/star3/635_368/b3e57e15b2c3977bc7a8cc4158334e01.jpg
-- http://p.ananas.chaoxing.com/star3/634_972/27c960b24290918556d7e2a9cf85ce6e.jpg
-- http://p.ananas.chaoxing.com/star3/629_969/90f2769288b673781e6b1858fb69b7ff.jpg
 
 ## SXK-151 地元戌山辰向挨星图
 
-- chapter_id: 814953408
-- source_url: https://special.rhky.com/mobile/mooc/tocard/814953408?courseId=240632071&name=%E5%9C%B0%E5%85%83%E6%88%8C%E5%B1%B1%E8%BE%B0%E5%90%91%E6%8C%A8%E6%98%9F%E5%9B%BE&code=&btype=tushu
-- digest_status: done
-- image_count: 4
 
 地运一百六十年。
 
@@ -4296,19 +2924,9 @@ generated: 2026-06-17
 
 城门：三、五运不用。四运丙甲吉。二、七、九运丙，一、六、八运甲吉。
 
-### image_refs
-
-- https://special.rhky.com/res/images/special/tishi_logo.png
-- http://p.ananas.chaoxing.com/star3/634_971/d2c5314cc0837a4ab7455c49212c2c53.jpg
-- http://p.ananas.chaoxing.com/star3/634_967/048d37ef54a45f6053286a9b98634a9d.jpg
-- http://p.ananas.chaoxing.com/star3/637_971/4a8fef9e40f2bcd0b32ef72609983cf5.jpg
 
 ## SXK-152 地元丑山未向挨星图
 
-- chapter_id: 814953411
-- source_url: https://special.rhky.com/mobile/mooc/tocard/814953411?courseId=240632071&name=%E5%9C%B0%E5%85%83%E4%B8%91%E5%B1%B1%E6%9C%AA%E5%90%91%E6%8C%A8%E6%98%9F%E5%9B%BE&code=&btype=tushu
-- digest_status: done
-- image_count: 4
 
 地运一百二十年。
 
@@ -4320,19 +2938,9 @@ generated: 2026-06-17
 
 四、六运：全局合三般卦。
 
-### image_refs
-
-- https://special.rhky.com/res/images/special/tishi_logo.png
-- http://p.ananas.chaoxing.com/star3/625_664/c500516b01843b0337bda94609e990ee.jpg
-- http://p.ananas.chaoxing.com/star3/637_971/ecd7bf902cf889c0c7a044734ccd2a91.jpg
-- http://p.ananas.chaoxing.com/star3/634_977/4525c2a1a949325b660b118bf53e94e7.jpg
 
 ## SXK-153 地元未山丑向挨星图
 
-- chapter_id: 814953414
-- source_url: https://special.rhky.com/mobile/mooc/tocard/814953414?courseId=240632071&name=%E5%9C%B0%E5%85%83%E6%9C%AA%E5%B1%B1%E4%B8%91%E5%90%91%E6%8C%A8%E6%98%9F%E5%9B%BE&code=&btype=tushu
-- digest_status: done
-- image_count: 4
 
 地运六十年。二、五、八运当旺。
 
@@ -4342,19 +2950,9 @@ generated: 2026-06-17
 
 四、六运：全局合三般卦。
 
-### image_refs
-
-- https://special.rhky.com/res/images/special/tishi_logo.png
-- http://p.ananas.chaoxing.com/star3/637_354/247b8b804fe0e43ecca3622490e8fa33.jpg
-- http://p.ananas.chaoxing.com/star3/633_972/473ee126ea77f5c29d1e67e46eb3edfb.jpg
-- http://p.ananas.chaoxing.com/star3/631_972/5c33e62a25d50efac8796cbe38b3fd5f.jpg
 
 ## SXK-154 地元甲山庚向挨星图
 
-- chapter_id: 814953417
-- source_url: https://special.rhky.com/mobile/mooc/tocard/814953417?courseId=240632071&name=%E5%9C%B0%E5%85%83%E7%94%B2%E5%B1%B1%E5%BA%9A%E5%90%91%E6%8C%A8%E6%98%9F%E5%9B%BE&code=&btype=tushu
-- digest_status: done
-- image_count: 4
 
 地运四十年。四、六运当旺。
 
@@ -4366,19 +2964,9 @@ generated: 2026-06-17
 
 三、七运：犯反伏吟，凶。
 
-### image_refs
-
-- https://special.rhky.com/res/images/special/tishi_logo.png
-- http://p.ananas.chaoxing.com/star3/634_964/110301704de3c1caaa1c62242b88fdf7.jpg
-- http://p.ananas.chaoxing.com/star3/635_967/9f99a1ba4585b937e6842b512522e051.jpg
-- http://p.ananas.chaoxing.com/star3/634_968/429948eea18e6a46b058fc334ec800c5.jpg
 
 ## SXK-155 地元庚山甲向挨星图
 
-- chapter_id: 814953420
-- source_url: https://special.rhky.com/mobile/mooc/tocard/814953420?courseId=240632071&name=%E5%9C%B0%E5%85%83%E5%BA%9A%E5%B1%B1%E7%94%B2%E5%90%91%E6%8C%A8%E6%98%9F%E5%9B%BE&code=&btype=tushu
-- digest_status: done
-- image_count: 4
 
 地运一百四十年。四、六运当旺。
 
@@ -4390,19 +2978,9 @@ generated: 2026-06-17
 
 三、七运：犯反伏吟凶。
 
-### image_refs
-
-- https://special.rhky.com/res/images/special/tishi_logo.png
-- http://p.ananas.chaoxing.com/star3/637_675/9a1fabf385aa38f5c96ccc44ddf3f712.jpg
-- http://p.ananas.chaoxing.com/star3/630_972/a7e3d481d31c906b80f5f78bc3e98281.jpg
-- http://p.ananas.chaoxing.com/star3/634_971/e4efbc2648d4db7b905ef56d075131c7.jpg
 
 ## SXK-156 地元壬山丙向挨星图
 
-- chapter_id: 814953423
-- source_url: https://special.rhky.com/mobile/mooc/tocard/814953423?courseId=240632071&name=%E5%9C%B0%E5%85%83%E5%A3%AC%E5%B1%B1%E4%B8%99%E5%90%91%E6%8C%A8%E6%98%9F%E5%9B%BE&code=&btype=tushu
-- digest_status: done
-- image_count: 4
 
 地运八十年，无当旺运。
 
@@ -4412,19 +2990,9 @@ generated: 2026-06-17
 
 一、九运：犯反伏吟，凶。
 
-### image_refs
-
-- https://special.rhky.com/res/images/special/tishi_logo.png
-- http://p.ananas.chaoxing.com/star3/634_382/0d0c359bead6b64c7e8f48473fb6a682.jpg
-- http://p.ananas.chaoxing.com/star3/634_972/64ac745148b8810464fc91e3a808e122.jpg
-- http://p.ananas.chaoxing.com/star3/631_971/78327e5e09e4c049e91660c75fe9d8c4.jpg
 
 ## SXK-157 地元丙山壬向挨星图
 
-- chapter_id: 814953425
-- source_url: https://special.rhky.com/mobile/mooc/tocard/814953425?courseId=240632071&name=%E5%9C%B0%E5%85%83%E4%B8%99%E5%B1%B1%E5%A3%AC%E5%90%91%E6%8C%A8%E6%98%9F%E5%9B%BE&code=&btype=tushu
-- digest_status: done
-- image_count: 4
 
 地运一百年，无当旺运。
 
@@ -4438,19 +3006,9 @@ generated: 2026-06-17
 
 又按：五行生克，山向为重。《青囊奥语》之所谓“从外生入，从内生出”者，系指穴内所向之气为对象，乃从具体立论，非仅就山、向两星互辨生克也。然欲论山、向之生克，必先辨宾、主之谁属。论山当以山盘为主，向盘为宾；论向则以向盘为主，山盘为宾，此《地理精纂·生克篇》之所言为不谬也。江氏原版纯以山为主，向为客，以定生克，是山合而向背矣。顾江氏于宾、主之义，殆泥于后、先之说，似犹未深思而明辨也。今亦为之一一更正，幸阅者察之。然生克之说不仅止此，更有以山、向飞星与天盘相较量者，是在阅者之实地印证而已。以吉凶论世，固以生入、克入、比和为吉，而以生出、克出为凶。然克出亦不一其词，有以向首克出为吉者，其说基于“我克者为财”，似亦言之成理也。总之，宅兆以向星为君，五行生克之蕴酿休咎，其力远逊于向星之衰旺，则不移之理也。
 
-### image_refs
-
-- https://special.rhky.com/res/images/special/tishi_logo.png
-- http://p.ananas.chaoxing.com/star3/630_966/63e83c787241e2c69a09651ca3c26611.jpg
-- http://p.ananas.chaoxing.com/star3/634_968/32b13cda997c34c1d54f4764dd541524.jpg
-- http://p.ananas.chaoxing.com/star3/634_971/a8f0c25da4c2c01726d03c007deae72e.jpg
 
 ## SXK-158 九运二十四山向中宫飞星配卦分金表
 
-- chapter_id: 814953427
-- source_url: https://special.rhky.com/mobile/mooc/tocard/814953427?courseId=240632071&name=%E4%B9%9D%E8%BF%90%E4%BA%8C%E5%8D%81%E5%9B%9B%E5%B1%B1%E5%90%91%E4%B8%AD%E5%AE%AB%E9%A3%9E%E6%98%9F%E9%85%8D%E5%8D%A6%E5%88%86%E9%87%91%E8%A1%A8&code=&btype=tushu
-- digest_status: done
-- image_count: 4
 
 谨案：先生与袁香溪《论分金法》，系将中宫及山、向飞星配成一卦，即以此卦爻与先天六十四卦爻互校，无反伏吟者用之，有则避之。飞星逢五，则一运寄坎，二坤，三震，四巽，六乾，七兑，八艮，九离。五运逢五，则子午寄坎离，壬癸丙丁同；卯酉寄震兑，甲乙庚辛同；巽乾寄巽乾，辰巳戌亥同；艮坤寄艮坤，寅丑申未同。兹将山、向、中宫每运飞星所配之卦列表如下，八国从略，学者可例推也。
 
@@ -4463,10 +3021,3 @@ generated: 2026-06-17
 内卦、外卦，阳见阴，阴见阳，则逆排。逆排者，如姤卦初爻近丙，上爻近丁者是。
 
 六十四卦，每卦六爻，照此顺逆排去。其于避反、伏吟也，可无遗憾矣！
-
-### image_refs
-
-- https://special.rhky.com/res/images/special/tishi_logo.png
-- http://p.ananas.chaoxing.com/star3/634_417/1209fa9829bb93eaa15e7b60df176cb4.jpg
-- http://p.ananas.chaoxing.com/star3/637_437/40556f0a5f69bb5aa7a87f7bdd95b2fd.jpg
-- http://p.ananas.chaoxing.com/star3/633_420/103a7e5d955ce93becfe8b31713a3a41.jpg

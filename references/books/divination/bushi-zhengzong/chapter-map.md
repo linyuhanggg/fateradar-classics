@@ -961,8 +961,8 @@
 | `BSZZ-0955` | 用神问答第三 | done | 六爻基础规则单元。 | fulltext.md L965 | false | part 1 chapter=889452 local_row=955 |
 | `BSZZ-0956` | 或曰：仆占主人，以父母爻为用神；主人占仆，不以子孙爻为用神，何也？答曰：一切抚养庇护我身者，以父母爻为用神，即如城垣宅舍、舟车衣服等类是也。金银... | done | 六爻基础规则单元。 | fulltext.md L966 | false | part 1 chapter=889452 local_row=956 |
 | `BSZZ-0957` | 原忌仇神论第四 | done | CTP 行级文本单元；用于全书覆盖与后续细分。 | fulltext.md L967 | false | part 1 chapter=889452 local_row=957 |
-| `BSZZ-0958` | 凡占卦� | done | CTP 行级文本单元；用于全书覆盖与后续细分。 | fulltext.md L968 | false | part 1 chapter=889452 local_row=958 |
-| `BSZZ-0959` | 瘢瓤从蒙窈呜常蒙裰臣词窃褚玻缬蒙裱铡⒃缕啤⑺� | done | CTP 行级文本单元；用于全书覆盖与后续细分。 | fulltext.md L975 | false | part 2 chapter=801184 local_row=1 |
+| `BSZZ-0958` | 凡占卦 | done | CTP 行级文本单元；用于全书覆盖与后续细分。 | fulltext.md L968 | false | part 1 chapter=889452 local_row=958 |
+| `BSZZ-0959` | 瘢瓤从蒙窈呜常蒙裰臣词窃褚玻缬蒙裱铡⒃缕啤⑺ | done | CTP 行级文本单元；用于全书覆盖与后续细分。 | fulltext.md L975 | false | part 2 chapter=801184 local_row=1 |
 | `BSZZ-0960` | 弱，或伏藏不现，得原神动来生之，或日辰月建作原神生之，必待用爻出旬出破，得令值日，所求必遂矣．如用神旺相，原神休囚不动，或动而变墓变绝、变克、变... | done | 六爻基础规则单元。 | fulltext.md L976 | false | part 2 chapter=801184 local_row=2 |
 | `BSZZ-0961` | 凡占卦要知忌神，亦先看用神。克用神之爻即是忌神也，如忌神动来克用，而用爻出现不空则受克也，倘卦中又动出一爻原神生用，则忌神反生原神，是名贪生忘克... | done | 六爻基础规则单元。 | fulltext.md L977 | false | part 2 chapter=801184 local_row=3 |
 | `BSZZ-0962` | 凡占卦要知仇神，先看制克原神生扶忌神者，即是仇神也．如卦中仇神发动，则原神被伤，用神无根，忌神倍力，其祸可胜道耶． | done | 六爻基础规则单元。 | fulltext.md L978 | false | part 2 chapter=801184 local_row=4 |
@@ -1790,8 +1790,8 @@
 | `BSZZ-1784` | 衰逢扶起，日加负芨之徒；动遇冲开，时减执经之子? | done | CTP 行级文本单元；用于全书覆盖与后续细分。 | fulltext.md L1800 | false | part 2 chapter=801184 local_row=826 |
 | `BSZZ-1785` | 逢龙则俊秀聪明，遇虎则刚强顽劣? | done | CTP 行级文本单元；用于全书覆盖与后续细分。 | fulltext.md L1801 | false | part 2 chapter=801184 local_row=827 |
 | `BSZZ-1786` | 阳卦阳爻居养位，座前有刘恕之神童；阴宫阴象化财爻，帐后列马融之女乐? | done | CTP 行级文本单元；用于全书覆盖与后续细分。 | fulltext.md L1802 | false | part 2 chapter=801184 local_row=828 |
-| `BSZZ-1787` | 两福自冲，鬼谷值� | done | CTP 行级文本单元；用于全书覆盖与后续细分。 | fulltext.md L1803 | false | part 2 chapter=801184 local_row=829 |
-| `BSZZ-1788` | 镫髋愉钢茏樱蛔铀锝院希链ㄓ鲅钍庇熙≈派�? | done | CTP 行级文本单元；用于全书覆盖与后续细分。 | fulltext.md L1810 | false | part 3 chapter=944578 local_row=1 |
+| `BSZZ-1787` | 两福自冲，鬼谷值 | done | CTP 行级文本单元；用于全书覆盖与后续细分。 | fulltext.md L1803 | false | part 2 chapter=801184 local_row=829 |
+| `BSZZ-1788` | 镫髋愉钢茏樱蛔铀锝院希链ㄓ鲅钍庇熙≈派? | done | CTP 行级文本单元；用于全书覆盖与后续细分。 | fulltext.md L1810 | false | part 3 chapter=944578 local_row=1 |
 | `BSZZ-1789` | 世动妻爻，决主亲操井臼；应生财值，定然供膳饔餮? | done | CTP 行级文本单元；用于全书覆盖与后续细分。 | fulltext.md L1811 | false | part 3 chapter=944578 local_row=2 |
 | `BSZZ-1790` | 如索束修，可把妻财推究；若居伏地，还求朋友维持? | done | CTP 行级文本单元；用于全书覆盖与后续细分。 | fulltext.md L1812 | false | part 3 chapter=944578 local_row=3 |
 | `BSZZ-1791` | 出现不伤，旺相相生名曰吉；入空无救，休囚死绝号为凶? | done | CTP 行级文本单元；用于全书覆盖与后续细分。 | fulltext.md L1813 | false | part 3 chapter=944578 local_row=4 |

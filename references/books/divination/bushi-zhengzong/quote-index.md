@@ -304,8 +304,8 @@
 | BSZZ-Q298 | 发动青龙附用通，进财进禄福无穷，临仇遇忌都无益，酒色成灾在此中． | part 1 local 356 | fulltext.md L366 | false | 六爻短引 |
 | BSZZ-Q299 | 朱雀交重文印旺，煞神相并漫劳功，是非口舌皆因此，动出生身却利公． | part 1 local 357 | fulltext.md L367 | false | 六爻短引 |
 | BSZZ-Q300 | 勾陈发动忧田土，累岁迍邅为忌逢，生用有情方是吉，若然安静不迷蒙． | part 1 local 358 | fulltext.md L368 | false | 六爻短引 |
-| BSZZ-Q301 | 瘢瓤从蒙窈呜常蒙裰臣词窃褚玻缬蒙裱铡⒃缕啤⑺� | part 2 local 1 | fulltext.md L975 | false | 六爻短引 |
-| BSZZ-Q302 | 镫髋愉钢茏樱蛔铀锝院希链ㄓ鲅钍庇熙≈派�? | part 3 local 1 | fulltext.md L1810 | false | 六爻短引 |
+| BSZZ-Q301 | 瘢瓤从蒙窈呜常蒙裰臣词窃褚玻缬蒙裱铡⒃缕啤⑺ | part 2 local 1 | fulltext.md L975 | false | 六爻短引 |
+| BSZZ-Q302 | 镫髋愉钢茏樱蛔铀锝院希链ㄓ鲅钍庇熙≈派? | part 3 local 1 | fulltext.md L1810 | false | 六爻短引 |
 | BSZZ-Q303 | 伏 | part 4 local 1 | fulltext.md L2810 | false | 六爻短引 |
 
 **短引统计**：303 条；覆盖 4 个 CTP 页。
