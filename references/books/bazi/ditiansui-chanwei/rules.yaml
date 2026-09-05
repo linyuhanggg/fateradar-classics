@@ -179,13 +179,23 @@ rules:
   verified_at: null
 - rule_id: DITIANSUICHA-012
   kind: doctrine
-  statement: 八格（正官/七杀/正印/偏印/正财/偏财/食神/伤官）的取用以"扶抑"为主线，不同于格局派以"成败救应"为主线。
+  statement: 八格论先看月令、透干与司令，再取用分清浊；月逢禄刃时，另寻支中透干者参取。
   anchor:
     file: sources/fulltext/bazi/ditiansui-chanwei/fulltext.md
     start_line: 2658
-    end_line: 2658
-  quote: 财官印绶发偏正，兼论食伤八格定。
-  applicable_to: 
+    end_line: 2664
+  quote: '财官印绶发偏正，兼论食伤八格定。
+
+
+    > [注] 原注：自形象气局之外，而格为最。格之真者，月支之神，透于天干也。以散乱之天干，而寻其得所附于提纲，非格也。自八格之外，若曲直五格皆为格，而方已局气象定之者，不可言格也。五格之外，飞天合禄虽为格，而可以破害刑冲论之者，亦不可言格了也。
+
+
+    > [注] 任氏曰：八格者，命中之正理也。
+
+    先观月令所得何支，次看天干透出何神，再究司令以定真假，然后取用，以分清浊，此实依经顺理，若月逢禄刃，无格可取，须审日主之喜忌另寻别支透出天干者，借以为用。
+
+    然格局有正有变，正者必兼五行之常礼也，曰官印，曰煞印，曰财煞，曰食神制杀，曰食神生财，曰伤官佩印，曰伤官生财；'
+  applicable_to:
   - key: shishen
     value: 食神
   - key: shishen
@@ -207,8 +217,8 @@ rules:
   - key: geju
     value: 偏印格
   caveats:
-  - 与《子平真诠》视角不同
-  - 遇到月令格局精修需求时转 `bazi/ziping-zhenquan`
+  - 须按月令、透干、司令条件判断，不是任一十神出现便成格。
+  - 本条解释取格方法，不直接描述人格或现代职业。
   school: null
   verified: false
   verified_by: null

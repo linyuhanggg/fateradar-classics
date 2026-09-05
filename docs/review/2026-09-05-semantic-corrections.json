@@ -1,0 +1,325 @@
+{
+  "scope": "Textual consistency review only. No human verified or golden promotion.",
+  "changes": [
+    {
+      "book": "sanming-tonghui",
+      "rule_id": "R-01",
+      "reason": "原锚点只有生数起句，补齐包含一六同宗等成数的下文。",
+      "old_statement": "五行各有生数与成数（水一六、火二七、木三八、金四九、土五十）；命理依此分阴阳与配数。",
+      "old_anchor": {
+        "file": "sources/fulltext/bazi/sanming-tonghui/fulltext.md",
+        "start_line": 1119,
+        "end_line": 1119
+      },
+      "new_statement": "五行以水一六、火二七、木三八、金四九、土五十配生数与成数。",
+      "new_anchor": {
+        "file": "sources/fulltext/bazi/sanming-tonghui/fulltext.md",
+        "start_line": 1119,
+        "end_line": 1121
+      },
+      "review": "assistant textual review; facsimile/human verification pending"
+    },
+    {
+      "book": "sanming-tonghui",
+      "rule_id": "SANMINGTONGH-R-01",
+      "reason": "原锚点 4234 是日时格局案例，与五行生克无关。",
+      "old_statement": "相生：木→火→土→金→水→木；相克：木克土、土克水、水克火、火克金、金克木。",
+      "old_anchor": {
+        "file": "sources/fulltext/bazi/sanming-tonghui/fulltext.md",
+        "start_line": 4234,
+        "end_line": 4234
+      },
+      "new_statement": "相生为水生木、木生火、火生土、土生金、金生水；相克为木克土、土克水、水克火、火克金、金克木。",
+      "new_anchor": {
+        "file": "sources/fulltext/bazi/sanming-tonghui/fulltext.md",
+        "start_line": 76,
+        "end_line": 79
+      },
+      "review": "assistant textual review; facsimile/human verification pending"
+    },
+    {
+      "book": "sanming-tonghui",
+      "rule_id": "R-02",
+      "reason": "原锚点 1080 讲太岁；改引真正说明阴阳顺逆的段落，并去掉该段没有的例子。",
+      "old_statement": "阳干顺行十二宫，阴干逆行十二宫；如甲长生在亥，乙长生在午（与寄生十二宫相配）。",
+      "old_anchor": {
+        "file": "sources/fulltext/bazi/sanming-tonghui/fulltext.md",
+        "start_line": 1080,
+        "end_line": 1080
+      },
+      "new_statement": "十干之禄寄十二支，阳道顺行、阴道逆转，自长生起数至临官。",
+      "new_anchor": {
+        "file": "sources/fulltext/bazi/sanming-tonghui/fulltext.md",
+        "start_line": 8779,
+        "end_line": 8779
+      },
+      "review": "assistant textual review; facsimile/human verification pending"
+    },
+    {
+      "book": "sanming-tonghui",
+      "rule_id": "SANMINGTONGH-007",
+      "reason": "将概括收窄至引文直接说明的节、中气与月界。",
+      "old_statement": "八字月柱以节气分界（立春、惊蛰…），不以朔望分界；节气前后须严格区分。",
+      "old_anchor": {
+        "file": "sources/fulltext/bazi/sanming-tonghui/fulltext.md",
+        "start_line": 908,
+        "end_line": 908
+      },
+      "new_statement": "节在一月的分界，中气在月之半；本篇以丑之终、寅之始解释立节。",
+      "new_anchor": {
+        "file": "sources/fulltext/bazi/sanming-tonghui/fulltext.md",
+        "start_line": 908,
+        "end_line": 908
+      },
+      "review": "assistant textual review; facsimile/human verification pending"
+    },
+    {
+      "book": "sanming-tonghui",
+      "rule_id": "SANMINGTONGH-012",
+      "reason": "原锚点 7884 未列全五合，改引五行化气的逐项原文。",
+      "old_statement": "甲己合土、乙庚合金、丙辛合水、丁壬合木、戊癸合火。",
+      "old_anchor": {
+        "file": "sources/fulltext/bazi/sanming-tonghui/fulltext.md",
+        "start_line": 7884,
+        "end_line": 7884
+      },
+      "new_statement": "十干五合所配化气为甲己土、乙庚金、丙辛水、丁壬木、戊癸火；有组合不等于条件已经满足。",
+      "new_anchor": {
+        "file": "sources/fulltext/bazi/sanming-tonghui/fulltext.md",
+        "start_line": 1130,
+        "end_line": 1134
+      },
+      "review": "assistant textual review; facsimile/human verification pending"
+    },
+    {
+      "book": "sanming-tonghui",
+      "rule_id": "SANMINGTONGH-015",
+      "reason": "原锚点偏离支元三合篇，补齐三字缺一的限制。",
+      "old_statement": "申子辰合水局、亥卯未合木局、寅午戌合火局、巳酉丑合金局；三合局成时五行势力大增。",
+      "old_anchor": {
+        "file": "sources/fulltext/bazi/sanming-tonghui/fulltext.md",
+        "start_line": 3552,
+        "end_line": 3552
+      },
+      "new_statement": "申子辰、巳酉丑、寅午戌、亥卯未为三合组合；原文强调三字缺一不能直接按三合化局论。",
+      "new_anchor": {
+        "file": "sources/fulltext/bazi/sanming-tonghui/fulltext.md",
+        "start_line": 1216,
+        "end_line": 1218
+      },
+      "review": "assistant textual review; facsimile/human verification pending"
+    },
+    {
+      "book": "sanming-tonghui",
+      "rule_id": "SANMINGTONGH-016",
+      "reason": "原锚点 6569 是他处例断，改到论六害逐项说明。",
+      "old_statement": "子未、丑午、寅巳、卯辰、申亥、酉戌相害；多主无情、不和。",
+      "old_anchor": {
+        "file": "sources/fulltext/bazi/sanming-tonghui/fulltext.md",
+        "start_line": 6569,
+        "end_line": 6569
+      },
+      "new_statement": "六害组合为子未、丑午、寅巳、卯辰、申亥、酉戌。",
+      "new_anchor": {
+        "file": "sources/fulltext/bazi/sanming-tonghui/fulltext.md",
+        "start_line": 1244,
+        "end_line": 1248
+      },
+      "review": "assistant textual review; facsimile/human verification pending"
+    },
+    {
+      "book": "sanming-tonghui",
+      "rule_id": "SANMINGTONGH-020",
+      "reason": "原规则把作者质疑的胎元算法写成作者认可的方法。",
+      "old_statement": "胎元取法：月干进一位、月支进三位（如甲子月→乙卯为胎元）；胎元代表先天根基，看命时可作辅助参考。",
+      "old_anchor": {
+        "file": "sources/fulltext/bazi/sanming-tonghui/fulltext.md",
+        "start_line": 1023,
+        "end_line": 1023
+      },
+      "new_statement": "本篇讨论胎元并质疑通行简法，也指出固定以前三百日推受胎不能涵盖实际孕期差异。",
+      "new_anchor": {
+        "file": "sources/fulltext/bazi/sanming-tonghui/fulltext.md",
+        "start_line": 1023,
+        "end_line": 1028
+      },
+      "review": "assistant textual review; facsimile/human verification pending"
+    },
+    {
+      "book": "sanming-tonghui",
+      "rule_id": "SANMINGTONGH-021",
+      "reason": "原锚点 3666 与坐命宫取法不对应。",
+      "old_statement": "坐命宫取法以月将加时辰推算得地支，再配天干；命宫辅助看命主根基与运势。",
+      "old_anchor": {
+        "file": "sources/fulltext/bazi/sanming-tonghui/fulltext.md",
+        "start_line": 3666,
+        "end_line": 3666
+      },
+      "new_statement": "本篇安命宫先从子宫起正月逆排生月，再将生时加于月宫顺排，逢卯定位；宫干按年干起月法配。",
+      "new_anchor": {
+        "file": "sources/fulltext/bazi/sanming-tonghui/fulltext.md",
+        "start_line": 1032,
+        "end_line": 1033
+      },
+      "review": "assistant textual review; facsimile/human verification pending"
+    },
+    {
+      "book": "sanming-tonghui",
+      "rule_id": "SANMINGTONGH-061",
+      "reason": "原锚点 10310 与倒食条件无关；原概括遗漏有制合、无食两种例外。",
+      "old_statement": "偏印逢食神为倒食；食神被夺则身弱无养。",
+      "old_anchor": {
+        "file": "sources/fulltext/bazi/sanming-tonghui/fulltext.md",
+        "start_line": 10310,
+        "end_line": 10310
+      },
+      "new_statement": "倒食即偏印；用食神时忌偏印克食。有制合时可不害食，柱中无食时只以偏印论。",
+      "new_anchor": {
+        "file": "sources/fulltext/bazi/sanming-tonghui/fulltext.md",
+        "start_line": 3316,
+        "end_line": 3318
+      },
+      "review": "assistant textual review; facsimile/human verification pending"
+    },
+    {
+      "book": "sanming-tonghui",
+      "rule_id": "SANMINGTONGH-062",
+      "reason": "原锚点 1930 不支持杂气透干取用，且原 statement 遗漏冲刑过度的反例。",
+      "old_statement": "月令辰戌丑未为杂气；取格须看透干本气、中气、余气；杂气需冲透为用。",
+      "old_anchor": {
+        "file": "sources/fulltext/bazi/sanming-tonghui/fulltext.md",
+        "start_line": 1930,
+        "end_line": 1930
+      },
+      "new_statement": "辰戌丑未杂气取用须看所藏财官印、透干与节气深浅；原文喜适度冲刑，忌身弱或冲刑太过。",
+      "new_anchor": {
+        "file": "sources/fulltext/bazi/sanming-tonghui/fulltext.md",
+        "start_line": 3326,
+        "end_line": 3328
+      },
+      "review": "assistant textual review; facsimile/human verification pending"
+    },
+    {
+      "book": "sanming-tonghui",
+      "rule_id": "SANMINGTONGH-071",
+      "reason": "原 statement 的父偏印并非引文所述，且混合了不同六亲取法。",
+      "old_statement": "父—偏印；母—正印；兄弟姐妹—比劫；妻—正财；子—食伤（男）；夫—正官（女）。",
+      "old_anchor": {
+        "file": "sources/fulltext/bazi/sanming-tonghui/fulltext.md",
+        "start_line": 4797,
+        "end_line": 4797
+      },
+      "new_statement": "本篇引《神白经》的一说为阳干伤官作父、正印作母，阴干正财作父、偏印作母；这是并录的六亲异说。",
+      "new_anchor": {
+        "file": "sources/fulltext/bazi/sanming-tonghui/fulltext.md",
+        "start_line": 4797,
+        "end_line": 4797
+      },
+      "review": "assistant textual review; facsimile/human verification pending"
+    },
+    {
+      "book": "ditiansui-chanwei",
+      "rule_id": "DITIANSUICHA-012",
+      "reason": "一行八格歌诀不能支持原 statement 的学派优劣比较，更不能证明人格与职业。",
+      "old_statement": "八格（正官/七杀/正印/偏印/正财/偏财/食神/伤官）的取用以\"扶抑\"为主线，不同于格局派以\"成败救应\"为主线。",
+      "old_anchor": {
+        "file": "sources/fulltext/bazi/ditiansui-chanwei/fulltext.md",
+        "start_line": 2658,
+        "end_line": 2658
+      },
+      "new_statement": "八格论先看月令、透干与司令，再取用分清浊；月逢禄刃时，另寻支中透干者参取。",
+      "new_anchor": {
+        "file": "sources/fulltext/bazi/ditiansui-chanwei/fulltext.md",
+        "start_line": 2658,
+        "end_line": 2664
+      },
+      "review": "assistant textual review; facsimile/human verification pending"
+    },
+    {
+      "book": "yuanhai-ziping",
+      "rule_id": "YUANHAIZIPIN-023",
+      "reason": "原 statement 把只讲正财的段落扩展成父母兄弟子女全部六亲，并误写父偏印。",
+      "old_statement": "父偏印、母正印、兄弟比劫、妻正财、子食伤（男）、夫正官（女）。",
+      "old_anchor": {
+        "file": "sources/fulltext/bazi/yuanhai-ziping/fulltext.md",
+        "start_line": 438,
+        "end_line": 438
+      },
+      "new_statement": "本篇以正财作妻财之象，并强调自身须能任财；不是完整六亲对应表。",
+      "new_anchor": {
+        "file": "sources/fulltext/bazi/yuanhai-ziping/fulltext.md",
+        "start_line": 438,
+        "end_line": 438
+      },
+      "review": "assistant textual review; facsimile/human verification pending"
+    },
+    {
+      "book": "sanming-tonghui",
+      "rule_id": "SANMINGTONGH-009",
+      "reason": "原引文只说行运从月建起，没有顺逆与三日一年依据。",
+      "old_statement": "大运从月柱起；男阳女阴顺行，男阴女阳逆行；起运岁数按生时距前/后节气日数除三。",
+      "old_anchor": {
+        "file": "sources/fulltext/bazi/sanming-tonghui/fulltext.md",
+        "start_line": 1012,
+        "end_line": 1012
+      },
+      "new_statement": "本篇以三日折一年推起运，阳男阴女向出生后的节顺数、阴男阳女向出生前的节逆数；须计节令与生时的分数，不宜粗取整日。",
+      "new_anchor": {
+        "file": "sources/fulltext/bazi/sanming-tonghui/fulltext.md",
+        "start_line": 1039,
+        "end_line": 1043
+      },
+      "review": "assistant textual review; facsimile/human verification pending"
+    },
+    {
+      "book": "sanming-tonghui",
+      "rule_id": "SANMINGTONGH-003",
+      "reason": "原概括声称列齐三十纳音，实际缺项、重项且有多处讹字；收窄为原文明确的三个例子。",
+      "old_statement": "六十甲子各配纳音五行取象（海中金、炉中火、大林木、路旁土、剑锋金、山头火、涧下水、城头土、白腊金、杨柳木、泉中水、屋上土、霹雳火、松柏木、流下水、砂石金、山下火、平地木、壁上土、金箔金、灯头火、天河水、大驿土、钗钏金、桑柘木、柘榴木、大海水、石榴木、大海水），30组纳音以象喻命。",
+      "old_anchor": null,
+      "new_statement": "本篇以甲子乙丑海中金、壬申癸酉剑锋金、庚辰辛巳白蜡金为例，解释纳音如何用位置和生旺取物象。",
+      "new_anchor": {
+        "file": "sources/fulltext/bazi/sanming-tonghui/fulltext.md",
+        "start_line": 158,
+        "end_line": 159
+      },
+      "review": "assistant textual review; facsimile/human verification pending"
+    },
+    {
+      "book": "sanming-tonghui",
+      "rule_id": "SANMINGTONGH-004",
+      "reason": "原锚点 8189 为交互拱夹，与纳音性情无关；原概括把条件论述扩大为六十甲子固定判词。",
+      "old_statement": "六十甲子各有五行性质与吉凶倾向，如甲子乙丑海中金（藏而不露）、丙寅丁卯炉中火（炎上）等；可为年命/日柱论命提供甲子级判词。",
+      "old_anchor": {
+        "file": "sources/fulltext/bazi/sanming-tonghui/fulltext.md",
+        "start_line": 8189,
+        "end_line": 8189
+      },
+      "new_statement": "论海中金须配合所见火、水、木、土等条件，作者亦对部分旧说提出异议，不是单见甲子乙丑便有统一吉凶判词。",
+      "new_anchor": {
+        "file": "sources/fulltext/bazi/sanming-tonghui/fulltext.md",
+        "start_line": 464,
+        "end_line": 468
+      },
+      "review": "assistant textual review; facsimile/human verification pending"
+    },
+    {
+      "book": "sanming-tonghui",
+      "rule_id": "SANMINGTONGH-017",
+      "reason": "原单行没有自刑原文，也遗漏同篇并录的刑名异说；删去无出处的自刑较弱。",
+      "old_statement": "寅巳申无恩之刑、丑戌未持势之刑、子卯无礼之刑；辰午酉亥自刑。",
+      "old_anchor": {
+        "file": "sources/fulltext/bazi/sanming-tonghui/fulltext.md",
+        "start_line": 1259,
+        "end_line": 1259
+      },
+      "new_statement": "本段列寅巳申无恩之刑、丑戌未恃势之刑、子卯无礼之刑与辰午酉亥自刑；又并录《三车一览》将前两组名称互换的说法。",
+      "new_anchor": {
+        "file": "sources/fulltext/bazi/sanming-tonghui/fulltext.md",
+        "start_line": 1259,
+        "end_line": 1268
+      },
+      "review": "assistant textual review; facsimile/human verification pending"
+    }
+  ]
+}

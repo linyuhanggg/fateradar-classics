@@ -340,28 +340,18 @@ rules:
   verified_at: null
 - rule_id: YUANHAIZIPIN-023
   kind: doctrine
-  statement: 父偏印、母正印、兄弟比劫、妻正财、子食伤（男）、夫正官（女）。
+  statement: 本篇以正财作妻财之象，并强调自身须能任财；不是完整六亲对应表。
   anchor:
     file: sources/fulltext/bazi/yuanhai-ziping/fulltext.md
     start_line: 438
     end_line: 438
   quote: 何谓之正财？犹如正官之意；是阴见阳财，阳见阴财。大抵正财，吾妻之财也。人之女貲财以事我，必精神康强，然后可以享用之；如吾身方且自萎懦而不振，虽妻财丰厚，但能目视，终不可一毫受用。
-  applicable_to: 
+  applicable_to:
   - key: shishen
     value: 正财
-  - key: shishen
-    value: 正官
-  - key: shishen
-    value: 偏印
-  - key: shishen
-    value: 正印
-  - key: geju
-    value: 正官格
-  - key: geju
-    value: 偏印格
   caveats:
-  - 古制
-  - 现代有"父偏财"等异说
+  - 古代妻财取象不是对现实伴侣、收入或人格的测量。
+  - 不能用于证明现代岗位适合或不适合。
   school: null
   verified: false
   verified_by: null
