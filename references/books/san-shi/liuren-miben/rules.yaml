@@ -298,17 +298,16 @@ rules:
   verified_at: null
 - rule_id: LIURENMIBEN-021
   kind: doctrine
-  statement: 用户问具体求财/入账，LM-R00 已通过。
+  statement: 本段论求财，参看传中是否见财，以及青龙是否居日上；青龙在任意一传不等于龙居日本。
   anchor:
     file: sources/fulltext/san-shi/liuren-miben/fulltext.md
     start_line: 5533
     end_line: 5533
   quote: 時下無傷猶獲寶，支干俱損不如歸凡求財，傳中見財易求，無才難取；龍居日本財堪覓。
-  applicable_to: 
-  - key: tianjiang
-    value: 青龙
+  applicable_to: []
   caveats:
-  - 凶将不能推翻旺相财爻，只能限定实得和风险
+  - 原文要求日上位置；当前天将事实仅表示入三传，尚未表达日上天将及传中财的条件，因此暂不自动匹配本条。
+  - 此段不支持只凭青龙出现便保证获财，也未论原概括所称凶将不能推翻旺相财爻。
   school: null
   verified: false
   verified_by: null

@@ -114,9 +114,9 @@ def load_open_dump() -> dict[str, set[str]]:
         raise FileNotFoundError(f"missing {path}")
     dump = json.loads(path.read_text(encoding="utf-8"))
     values: dict[str, set[str]] = {k: set() for k in OPEN_KEYS}
-    for pair in dump.values():
-        for side in ("caseA", "caseB"):
-            for fact in pair[side]["facts"]:
+    for cases in dump.values():
+        for sample in cases.values():
+            for fact in sample["facts"]:
                 key = fact.get("key")
                 if key in values:
                     values[key].add(fact["value"])

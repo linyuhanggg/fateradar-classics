@@ -93,7 +93,7 @@
 |---|---|---|---|---|
 | `daliuren-daquan` | 大六壬大全 | `references/books/san-shi/daliuren-daquan/index.md` | `4c5ec0c8ea1f7b36deaf1db317cfa4407b090ad4ed909a3b8a431dced0a25d9d` | https://zh.wikisource.org/wiki/%E5%85%AD%E5%A3%AC%E5%A4%A7%E5%85%A8 |
 | `liuren-miben` | 大六壬秘本 | `references/books/san-shi/liuren-miben/index.md` | `44ea31ef43f874ffc9da03c6ed6c01eee62081db6c2faf11593ec9bbe47847e0` | https://ctext.org/wiki.pl?if=gb&res=348173 |
-| `liuren-zhiyin` | 六壬指南（一作六壬指引） | `references/books/san-shi/liuren-zhiyin/index.md` | `2298b2270daf8f8e413f9d6c768e84830a225f93779a2ebbd90e8c905885c8bc` | https://ctext.org/wiki.pl?if=gb&res=516644 |
+| `liuren-zhiyin` | 六壬指南注解（张洪注本） | `references/books/san-shi/liuren-zhiyin/index.md` | `2298b2270daf8f8e413f9d6c768e84830a225f93779a2ebbd90e8c905885c8bc` | https://ctext.org/wiki.pl?if=gb&res=516644 |
 | `qimen-dunjia-tongzhi` | 奇门遁甲统宗大全 | `references/books/san-shi/qimen-dunjia-tongzhi/index.md` | `f4feb5c389f0ac8bc8dfd0d3f011b088576bc5510248e8d8663e01e2d0b0c140` | https://book.taiyi.me/%E5%8D%9C/%E5%A5%87%E9%97%A8%E9%81%81%E7%94%B2%E7%BB%9F%E5%AE%97%E5%A4%A7%E5%85%A8 |
 | `qimen-faqiao` | 奇门法窍（V5.1 核验摘录） | `references/books/san-shi/qimen-faqiao/index.md` | `3ba3d5bf58037c342e863d17821b8e68742cdf35312bc804ff3b477a94fd4ff1` | https://github.com/dclef/xuanxuedocs/blob/8a887135add0ac9ed558105222fe2294ae398bad/docs/%E5%A5%87%E9%97%A8%E6%B3%95%E7%AA%8D/005%E5%8D%B7%E5%85%AD.md |
 | `taiyi-shenshu` | 太乙神数 | `references/books/san-shi/taiyi-shenshu/index.md` | `ecacc021ea180803b10b3b97a42ce602ea50bc342c73d30883012629cabc111c` | https://zh.wikisource.org/wiki/太乙金鏡式經_(四庫全書本) |

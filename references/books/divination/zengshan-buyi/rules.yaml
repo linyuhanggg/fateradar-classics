@@ -33,30 +33,40 @@ rules:
   verified_by: null
   verified_at: null
 - rule_id: ZR-03
-  kind: doctrine
-  statement: 以世爻五行为我，生我者父母、克我者官鬼、我生者子孙、我克者妻财、与我同者兄弟。
-  anchor: null
-  quote: 卜筮被許多人斥為迷信行為。
+  kind: procedure
+  statement: 六亲以本卦所属宫的五行为基准：同五行为兄弟，生宫五行者为父母，宫五行所生者为子孙，克宫五行者为官鬼，宫五行所克者为妻财。
+  anchor:
+    file: sources/fulltext/divination/zengshan-buyi/fulltext.md
+    start_line: 6812
+    end_line: 6816
+  quote: '* 乾兌宮金兄、土父、木財、火鬼、水子。乾兌宮八卦都屬金。
+
+    * 坎宮水兄、火財、土鬼、金父、木子。坎宮八卦都屬水。
+
+    * 坤艮宮土兄、火父、木鬼、水財、金子。坤艮宮八卦都屬土。
+
+    * 離宮火兄、水鬼、土子、木父，金財。離宮八卦都屬火。
+
+    * 震巽木兄、水父、金鬼、火子、土財。震巽宮八卦都屬木。'
   applicable_to: []
   caveats:
-  - 六亲是占断主轴
-  - 女命问夫看官鬼、男命问妻看妻财（含现代性别考量）
+  - 这里规定装六亲的五行基准，不是按世爻五行重新定六亲，也不直接规定每一问事的用神。
   school: null
   verified: false
   verified_by: null
   verified_at: null
 - rule_id: ZR-04
   kind: doctrine
-  statement: 所占之事在卦中之代表爻为用神；问占类型决定用神（详见 ZP-04 取用神流程）。
+  statement: 用神是所占之事在卦中取用的参照爻；本段举自占吉凶取世爻、占父母取父母爻为例。
   anchor:
     file: sources/fulltext/divination/zengshan-buyi/fulltext.md
-    start_line: 6417
-    end_line: 6417
-  quote: 世爻變鬼﹐占者不祥﹐鬼化六親﹐各屬不吉。世爻變鬼及隨墓助傷﹐所占之人不吉﹐兄弟妻子動而化鬼﹑鬼化兄弟父母妻子者﹐查其所犯而斷也。又有子命化鬼﹐鼠命者殃。午命變鬼﹐馬命不利﹐餘仿此。
+    start_line: 6696
+    end_line: 6696
+  quote: 要知何以謂之用神者，自占吉凶用此世爻爲主，不說世爻而曰用神，占父母以父母爻爲用神。
   applicable_to: []
   caveats:
-  - 用神为占断之根本
-  - 用神有伤则事不成
+  - 本段只举自占与父母两个例子，其他问事对象需另看对应取用原文。
+  - 不能仅凭用神受伤一项便断言事情必不成。
   school: null
   verified: false
   verified_by: null
@@ -222,7 +232,7 @@ rules:
   verified_at: null
 - rule_id: ZENGSHANBUYI-ZR-06
   kind: doctrine
-  statement: 动爻能生克他爻、亦能受他爻克生；静爻不能生克他爻，唯受日月生克。
+  statement: 变出之爻能生克冲合本位动爻，不能生克其他爻；其他爻与本位动爻也不能生克变爻。
   anchor:
     file: sources/fulltext/divination/zengshan-buyi/fulltext.md
     start_line: 7022
@@ -230,7 +240,7 @@ rules:
   quote: 卦有動爻，動而必變，夫變出之爻能生克沖合本位之動爻，不能生克他爻，而他爻與本位之動爻，亦不能生克變爻。
   applicable_to: []
   caveats:
-  - 暗动除外（ZR-06-04）
+  - 此条说明变爻的作用范围，不等于静爻不能生克；本书6998行另说明静卦旺相之爻可生克休囚之爻。
   school: null
   verified: false
   verified_by: null
@@ -298,7 +308,7 @@ rules:
   verified_at: null
 - rule_id: ZENGSHANBUYI-021
   kind: doctrine
-  statement: 一卦六爻独一爻动，此动爻为占断之主；详细参其生克墓绝。
+  statement: 五爻静一爻动为独发，五爻动一爻静为独静；事之成败与应期仍由用神判断，不得舍用神而执独发、独静断事。
   anchor:
     file: sources/fulltext/divination/zengshan-buyi/fulltext.md
     start_line: 1142
@@ -306,7 +316,7 @@ rules:
   quote: 五爻俱動﹐一爻不動﹐謂之獨靜﹔五爻不動﹐一爻獨動﹐謂之獨發。事之成敗﹐由乎用神﹔應期遲速﹐亦由乎用神﹔獨發獨靜﹐古有驗之﹐予試亦有驗也﹐皆在驗事應之後﹐如會神機﹐非初敢執之而斷禍福與應期也。況卦得獨靜𨿽少﹐而獨發者多﹐如捨其用神﹐執之而決事者﹐謬也﹐過也。
   applicable_to: []
   caveats:
-  - —
+  - 作者承认事后有独发独静应验的观察，但明确不赞成据此先断祸福与应期。
   school: null
   verified: false
   verified_by: null

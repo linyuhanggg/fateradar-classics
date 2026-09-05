@@ -1,0 +1,581 @@
+{
+  "baseline": "f1942f4",
+  "review_type": "assistant_textual_review",
+  "verified_promoted": false,
+  "fulltext_changed": false,
+  "changes": [
+    {
+      "rule_id": "ZR-03",
+      "file": "references/books/divination/zengshan-buyi/rules.yaml",
+      "reason": "旧概括把本宫五行误写为世爻五行；正文五宫六亲表及乾宫世爻戌土为父母的例子可直接核对。 该条为确定性装六亲映射，归procedure而非占断正文。",
+      "before": {
+        "rule_id": "ZR-03",
+        "kind": "doctrine",
+        "statement": "以世爻五行为我，生我者父母、克我者官鬼、我生者子孙、我克者妻财、与我同者兄弟。",
+        "anchor": null,
+        "quote": "卜筮被許多人斥為迷信行為。",
+        "applicable_to": [],
+        "caveats": [
+          "六亲是占断主轴",
+          "女命问夫看官鬼、男命问妻看妻财（含现代性别考量）"
+        ],
+        "school": null,
+        "verified": false,
+        "verified_by": null,
+        "verified_at": null
+      },
+      "after": {
+        "rule_id": "ZR-03",
+        "kind": "procedure",
+        "statement": "六亲以本卦所属宫的五行为基准：同五行为兄弟，生宫五行者为父母，宫五行所生者为子孙，克宫五行者为官鬼，宫五行所克者为妻财。",
+        "anchor": {
+          "file": "sources/fulltext/divination/zengshan-buyi/fulltext.md",
+          "start_line": 6812,
+          "end_line": 6816
+        },
+        "quote": "* 乾兌宮金兄、土父、木財、火鬼、水子。乾兌宮八卦都屬金。\n* 坎宮水兄、火財、土鬼、金父、木子。坎宮八卦都屬水。\n* 坤艮宮土兄、火父、木鬼、水財、金子。坤艮宮八卦都屬土。\n* 離宮火兄、水鬼、土子、木父，金財。離宮八卦都屬火。\n* 震巽木兄、水父、金鬼、火子、土財。震巽宮八卦都屬木。",
+        "applicable_to": [],
+        "caveats": [
+          "这里规定装六亲的五行基准，不是按世爻五行重新定六亲，也不直接规定每一问事的用神。"
+        ],
+        "school": null,
+        "verified": false,
+        "verified_by": null,
+        "verified_at": null
+      }
+    },
+    {
+      "rule_id": "ZR-04",
+      "file": "references/books/divination/zengshan-buyi/rules.yaml",
+      "reason": "原锚6417是祖坟章鬼化六亲，与用神定义不对应；6696直接解释用神及两个取用例子。",
+      "before": {
+        "rule_id": "ZR-04",
+        "kind": "doctrine",
+        "statement": "所占之事在卦中之代表爻为用神；问占类型决定用神（详见 ZP-04 取用神流程）。",
+        "anchor": {
+          "file": "sources/fulltext/divination/zengshan-buyi/fulltext.md",
+          "start_line": 6417,
+          "end_line": 6417
+        },
+        "quote": "世爻變鬼﹐占者不祥﹐鬼化六親﹐各屬不吉。世爻變鬼及隨墓助傷﹐所占之人不吉﹐兄弟妻子動而化鬼﹑鬼化兄弟父母妻子者﹐查其所犯而斷也。又有子命化鬼﹐鼠命者殃。午命變鬼﹐馬命不利﹐餘仿此。",
+        "applicable_to": [],
+        "caveats": [
+          "用神为占断之根本",
+          "用神有伤则事不成"
+        ],
+        "school": null,
+        "verified": false,
+        "verified_by": null,
+        "verified_at": null
+      },
+      "after": {
+        "rule_id": "ZR-04",
+        "kind": "doctrine",
+        "statement": "用神是所占之事在卦中取用的参照爻；本段举自占吉凶取世爻、占父母取父母爻为例。",
+        "anchor": {
+          "file": "sources/fulltext/divination/zengshan-buyi/fulltext.md",
+          "start_line": 6696,
+          "end_line": 6696
+        },
+        "quote": "要知何以謂之用神者，自占吉凶用此世爻爲主，不說世爻而曰用神，占父母以父母爻爲用神。",
+        "applicable_to": [],
+        "caveats": [
+          "本段只举自占与父母两个例子，其他问事对象需另看对应取用原文。",
+          "不能仅凭用神受伤一项便断言事情必不成。"
+        ],
+        "school": null,
+        "verified": false,
+        "verified_by": null,
+        "verified_at": null
+      }
+    },
+    {
+      "rule_id": "ZENGSHANBUYI-ZR-06",
+      "file": "references/books/divination/zengshan-buyi/rules.yaml",
+      "reason": "现锚7022讨论变爻而非静爻；旧概括将动爻、静爻、变爻混写，且静爻不能生克与6998正文相反。",
+      "before": {
+        "rule_id": "ZENGSHANBUYI-ZR-06",
+        "kind": "doctrine",
+        "statement": "动爻能生克他爻、亦能受他爻克生；静爻不能生克他爻，唯受日月生克。",
+        "anchor": {
+          "file": "sources/fulltext/divination/zengshan-buyi/fulltext.md",
+          "start_line": 7022,
+          "end_line": 7022
+        },
+        "quote": "卦有動爻，動而必變，夫變出之爻能生克沖合本位之動爻，不能生克他爻，而他爻與本位之動爻，亦不能生克變爻。",
+        "applicable_to": [],
+        "caveats": [
+          "暗动除外（ZR-06-04）"
+        ],
+        "school": null,
+        "verified": false,
+        "verified_by": null,
+        "verified_at": null
+      },
+      "after": {
+        "rule_id": "ZENGSHANBUYI-ZR-06",
+        "kind": "doctrine",
+        "statement": "变出之爻能生克冲合本位动爻，不能生克其他爻；其他爻与本位动爻也不能生克变爻。",
+        "anchor": {
+          "file": "sources/fulltext/divination/zengshan-buyi/fulltext.md",
+          "start_line": 7022,
+          "end_line": 7022
+        },
+        "quote": "卦有動爻，動而必變，夫變出之爻能生克沖合本位之動爻，不能生克他爻，而他爻與本位之動爻，亦不能生克變爻。",
+        "applicable_to": [],
+        "caveats": [
+          "此条说明变爻的作用范围，不等于静爻不能生克；本书6998行另说明静卦旺相之爻可生克休囚之爻。"
+        ],
+        "school": null,
+        "verified": false,
+        "verified_by": null,
+        "verified_at": null
+      }
+    },
+    {
+      "rule_id": "ZENGSHANBUYI-021",
+      "file": "references/books/divination/zengshan-buyi/rules.yaml",
+      "reason": "原文1142明确反对舍用神而执独发动爻决事，旧概括却写此动爻为占断之主。",
+      "before": {
+        "rule_id": "ZENGSHANBUYI-021",
+        "kind": "doctrine",
+        "statement": "一卦六爻独一爻动，此动爻为占断之主；详细参其生克墓绝。",
+        "anchor": {
+          "file": "sources/fulltext/divination/zengshan-buyi/fulltext.md",
+          "start_line": 1142,
+          "end_line": 1142
+        },
+        "quote": "五爻俱動﹐一爻不動﹐謂之獨靜﹔五爻不動﹐一爻獨動﹐謂之獨發。事之成敗﹐由乎用神﹔應期遲速﹐亦由乎用神﹔獨發獨靜﹐古有驗之﹐予試亦有驗也﹐皆在驗事應之後﹐如會神機﹐非初敢執之而斷禍福與應期也。況卦得獨靜𨿽少﹐而獨發者多﹐如捨其用神﹐執之而決事者﹐謬也﹐過也。",
+        "applicable_to": [],
+        "caveats": [
+          "—"
+        ],
+        "school": null,
+        "verified": false,
+        "verified_by": null,
+        "verified_at": null
+      },
+      "after": {
+        "rule_id": "ZENGSHANBUYI-021",
+        "kind": "doctrine",
+        "statement": "五爻静一爻动为独发，五爻动一爻静为独静；事之成败与应期仍由用神判断，不得舍用神而执独发、独静断事。",
+        "anchor": {
+          "file": "sources/fulltext/divination/zengshan-buyi/fulltext.md",
+          "start_line": 1142,
+          "end_line": 1142
+        },
+        "quote": "五爻俱動﹐一爻不動﹐謂之獨靜﹔五爻不動﹐一爻獨動﹐謂之獨發。事之成敗﹐由乎用神﹔應期遲速﹐亦由乎用神﹔獨發獨靜﹐古有驗之﹐予試亦有驗也﹐皆在驗事應之後﹐如會神機﹐非初敢執之而斷禍福與應期也。況卦得獨靜𨿽少﹐而獨發者多﹐如捨其用神﹐執之而決事者﹐謬也﹐過也。",
+        "applicable_to": [],
+        "caveats": [
+          "作者承认事后有独发独静应验的观察，但明确不赞成据此先断祸福与应期。"
+        ],
+        "school": null,
+        "verified": false,
+        "verified_by": null,
+        "verified_at": null
+      }
+    },
+    {
+      "rule_id": "DALIURENDAQU-006",
+      "file": "references/books/san-shi/daliuren-daquan/rules.yaml",
+      "reason": "原文78为遥克法，旧谓词误配涉害课；现按蒿矢/弹射命名，并将确定性起例归procedure。",
+      "before": {
+        "rule_id": "DALIURENDAQU-006",
+        "kind": "doctrine",
+        "statement": "四课上下无直接克；未进入伏吟、返吟、八专等专式无克分支。",
+        "anchor": {
+          "file": "sources/fulltext/san-shi/daliuren-daquan/fulltext.md",
+          "start_line": 78,
+          "end_line": 78
+        },
+        "quote": "神遥克日曰蒿矢，日遥克神曰弹射。四课无克号为遥，日与神兮逓互招。先取神遥克其日，如无方取日来遥。或有日克乎两神，复有两神来克日。择与日干比者用，阳日用阳阴用阴。",
+        "applicable_to": [
+          {
+            "key": "keti",
+            "value": "涉害课"
+          }
+        ],
+        "caveats": [
+          "上下关系或第二至第四课候选范围不明确时停止"
+        ],
+        "school": null,
+        "verified": false,
+        "verified_by": null,
+        "verified_at": null
+      },
+      "after": {
+        "rule_id": "DALIURENDAQU-006",
+        "kind": "procedure",
+        "statement": "遥克起例：四课上下无直接克时，先取上神遥克日干为蒿矢；无神克日再取日干遥克上神为弹射，候选不止一神时依日干阴阳比用。",
+        "anchor": {
+          "file": "sources/fulltext/san-shi/daliuren-daquan/fulltext.md",
+          "start_line": 78,
+          "end_line": 78
+        },
+        "quote": "神遥克日曰蒿矢，日遥克神曰弹射。四课无克号为遥，日与神兮逓互招。先取神遥克其日，如无方取日来遥。或有日克乎两神，复有两神来克日。择与日干比者用，阳日用阳阴用阴。",
+        "applicable_to": [
+          {
+            "key": "keti",
+            "value": "蒿矢课"
+          },
+          {
+            "key": "keti",
+            "value": "弹射课"
+          }
+        ],
+        "caveats": [
+          "此为九宗门中的取传起例，须按完整取传次序确认适用，不可代替伏吟、返吟、八专等专式。",
+          "只作为可计算起例导出，不作命中涉害课的占断结论。"
+        ],
+        "school": null,
+        "verified": false,
+        "verified_by": null,
+        "verified_at": null
+      }
+    },
+    {
+      "rule_id": "LIURENZHIYIN-017",
+      "file": "references/books/san-shi/liuren-zhiyin/rules.yaml",
+      "reason": "141行只谈元首/重审；旧谓词伏吟/涉害均不对应，末传六合也无该段出处。",
+      "before": {
+        "rule_id": "LIURENZHIYIN-017",
+        "kind": "doctrine",
+        "statement": "用户问具体事件应期，事实层日期、课体和三传完整；只有求财问题才启用末传六合分支。",
+        "anchor": {
+          "file": "sources/fulltext/san-shi/liuren-zhiyin/fulltext.md",
+          "start_line": 141,
+          "end_line": 141
+        },
+        "quote": "16. 克者動也，不克則不動。課中有幾克，即有幾事。又事之應期，亦在克中求，蓋克者，轉折也。元首主速，重審主遲；元首主喜，切防樂極生悲；重審主憂，亦詳自暗而明。",
+        "applicable_to": [
+          {
+            "key": "keti",
+            "value": "伏吟课"
+          },
+          {
+            "key": "keti",
+            "value": "涉害课"
+          }
+        ],
+        "caveats": [
+          "传统候期未经真实案例留出集校准，不得写成保证到账日"
+        ],
+        "school": null,
+        "verified": false,
+        "verified_by": null,
+        "verified_at": null
+      },
+      "after": {
+        "rule_id": "LIURENZHIYIN-017",
+        "kind": "doctrine",
+        "statement": "本段以元首课主速、主喜，重审课主迟、主忧论应期与情势，同时提醒元首防乐极生悲、重审详自暗而明。",
+        "anchor": {
+          "file": "sources/fulltext/san-shi/liuren-zhiyin/fulltext.md",
+          "start_line": 141,
+          "end_line": 141
+        },
+        "quote": "16. 克者動也，不克則不動。課中有幾克，即有幾事。又事之應期，亦在克中求，蓋克者，轉折也。元首主速，重審主遲；元首主喜，切防樂極生悲；重審主憂，亦詳自暗而明。",
+        "applicable_to": [
+          {
+            "key": "keti",
+            "value": "元首课"
+          },
+          {
+            "key": "keti",
+            "value": "重审课"
+          }
+        ],
+        "caveats": [
+          "当前全文含现代注解；此处依据《六壬指南注解》第16条，未作古本逐字归属认定。",
+          "速迟与喜忧是传统取象，不能直接换算为保证发生或到账的日期；本段未讨论求财末传六合。"
+        ],
+        "school": null,
+        "verified": false,
+        "verified_by": null,
+        "verified_at": null
+      }
+    },
+    {
+      "rule_id": "LIURENZHIYIN-013",
+      "file": "references/books/san-shi/liuren-zhiyin/rules.yaml",
+      "reason": "当前3261行是CTP题下注，归属未定；撤去无原文依据的LR流程包装和过时行号，按题下注实际内容概括。",
+      "before": {
+        "rule_id": "LIURENZHIYIN-013",
+        "kind": "doctrine",
+        "statement": "`LR-00` 至 `LR-10` 所需主盘字段齐全，且已有不含神煞的主判断。",
+        "anchor": {
+          "file": "sources/fulltext/san-shi/liuren-zhiyin/fulltext.md",
+          "start_line": 3261,
+          "end_line": 3261
+        },
+        "quote": "2. 神煞全圖 凡看神煞，須干支神將刑克，其事乃發 。",
+        "applicable_to": [],
+        "caveats": [
+          "六壬神煞不得移植到八字、择日、紫微、星命或其他系统",
+          "百家异同见 L2798"
+        ],
+        "school": null,
+        "verified": false,
+        "verified_by": null,
+        "verified_at": null
+      },
+      "after": {
+        "rule_id": "LIURENZHIYIN-013",
+        "kind": "doctrine",
+        "statement": "本注本题下注主张，神煞须结合干支神将刑克参看。",
+        "anchor": {
+          "file": "sources/fulltext/san-shi/liuren-zhiyin/fulltext.md",
+          "start_line": 3261,
+          "end_line": 3261
+        },
+        "quote": "2. 神煞全圖 凡看神煞，須干支神將刑克，其事乃發 。",
+        "applicable_to": [],
+        "caveats": [
+          "CTP题下注，作者未定，未认定为庄公远原文；当前只是电子注本层的文字依据。",
+          "六壬神煞不得直接移植为其他术数的排盘规则。"
+        ],
+        "school": null,
+        "verified": false,
+        "verified_by": null,
+        "verified_at": null
+      }
+    },
+    {
+      "rule_id": "LIURENZHIYIN-015",
+      "file": "references/books/san-shi/liuren-zhiyin/rules.yaml",
+      "reason": "38–46行是张洪现代自序，47行署北海张洪，不是占断或确定性起例。移出规则集合，全文及来源分层说明保留，原规则保存在本审计记录。",
+      "before": {
+        "rule_id": "LIURENZHIYIN-015",
+        "kind": "doctrine",
+        "statement": "准备引用、转述或生成规则。",
+        "anchor": {
+          "file": "sources/fulltext/san-shi/liuren-zhiyin/fulltext.md",
+          "start_line": 38,
+          "end_line": 46
+        },
+        "quote": "1. 六壬之術，傳之甚古，周、漢、唐、宋迄於明季，名家輩出，而今式微矣。餘出身隴畝，世業耕讀，非今慕古，雅愛五行。庚戌季秋，以百七十元，貿得上海民國江東書局《改良大六壬全書三種》，三十年間，苦讀不綴，間為人占，而實求理自娛也，雖多有應者，亦不過好之耳。然觀今者納甲、星命之書，充棟汗牛，而壬學之書，屈指可數，為之可懼，故有意將所得所感，成一帙而濫芋於壬書中，以副尊壬之意，以消永日之閒。但賢如孔聖，尚且述而不作，吾輩後生，焉敢自題曰某某著耶？竊謂所閱書中，以《大全》、《指南》最為壬學圭臬，而《大全》匯類總集，繁複不可驟讀；《指南》則言簡意賅，發人深省，但引而不發，未盡細故，令後學無由而致其道，餘因之簡注之，僭參己意，並引少許實例，稍著翼論之功，以求拋磚之效。壬學廁身，未得其徑，南畝農夫，言辭陋鄙，徒污明家之目，訛漏必多，方家指正。是為序。",
+        "applicable_to": [],
+        "caveats": [
+          "normalized 包装层永远不能升级为书中引文"
+        ],
+        "school": null,
+        "verified": false,
+        "verified_by": null,
+        "verified_at": null
+      },
+      "after": null
+    },
+    {
+      "rule_id": "LIURENMIBEN-021",
+      "file": "references/books/san-shi/liuren-miben/rules.yaml",
+      "reason": "原文5533“龙居日本”要求日上，旧青龙谓词不能表达该位置。撤去不成立的自动匹配条件并保留原文待精确适配，不用入三传替代日上。",
+      "before": {
+        "rule_id": "LIURENMIBEN-021",
+        "kind": "doctrine",
+        "statement": "用户问具体求财/入账，LM-R00 已通过。",
+        "anchor": {
+          "file": "sources/fulltext/san-shi/liuren-miben/fulltext.md",
+          "start_line": 5533,
+          "end_line": 5533
+        },
+        "quote": "時下無傷猶獲寶，支干俱損不如歸凡求財，傳中見財易求，無才難取；龍居日本財堪覓。",
+        "applicable_to": [
+          {
+            "key": "tianjiang",
+            "value": "青龙"
+          }
+        ],
+        "caveats": [
+          "凶将不能推翻旺相财爻，只能限定实得和风险"
+        ],
+        "school": null,
+        "verified": false,
+        "verified_by": null,
+        "verified_at": null
+      },
+      "after": {
+        "rule_id": "LIURENMIBEN-021",
+        "kind": "doctrine",
+        "statement": "本段论求财，参看传中是否见财，以及青龙是否居日上；青龙在任意一传不等于龙居日本。",
+        "anchor": {
+          "file": "sources/fulltext/san-shi/liuren-miben/fulltext.md",
+          "start_line": 5533,
+          "end_line": 5533
+        },
+        "quote": "時下無傷猶獲寶，支干俱損不如歸凡求財，傳中見財易求，無才難取；龍居日本財堪覓。",
+        "applicable_to": [],
+        "caveats": [
+          "原文要求日上位置；当前天将事实仅表示入三传，尚未表达日上天将及传中财的条件，因此暂不自动匹配本条。",
+          "此段不支持只凭青龙出现便保证获财，也未论原概括所称凶将不能推翻旺相财爻。"
+        ],
+        "school": null,
+        "verified": false,
+        "verified_by": null,
+        "verified_at": null
+      }
+    },
+    {
+      "rule_id": "DALIURENDAQU-012",
+      "file": "references/books/san-shi/daliuren-daquan/rules.yaml",
+      "reason": "旧条将提要版本批评包装成布将程序，并以贵人出现触发；提要并不要求贵人入传，撤错误谓词，改述实际版本差异。",
+      "before": {
+        "rule_id": "DALIURENDAQU-012",
+        "kind": "doctrine",
+        "statement": "要布十二天将或解释贵人顺逆。",
+        "anchor": {
+          "file": "sources/fulltext/san-shi/daliuren-daquan/fulltext.md",
+          "start_line": 3,
+          "end_line": 31
+        },
+        "quote": "臣等谨案：《六壬大全》十二巻，不着撰人名氏。巻首题“怀庆府推官郭载騋校”，盖明代所刋也。六壬与遁甲、太乙，世谓之“三式”，而六壬其传尤古，或谓出于黄帝元女，固属无稽，要其为术，固非后世方技家所能造。大抵数根于五行，而五行始于水，举阴以起阳，故称壬焉；举成以该生，故用六焉。其有天地盘与神将加临，虽渐近竒遁九宫之式，而由干支而有四课，则亦两仪、四象也；由发用而有三传，则亦一生二、二生三、三生万物也；以至六十四课，莫不原本羲爻，盖亦《易》象之支流，推而衍之者矣。考《国语》伶州鸠对七律，以所称“夷则”、“上宫”、“大吕”、“上宫”推之，皆有合于六壬之义。然占卜之属，特以五音、十二律定数，未可即指为六壬之源。《呉越春秋》载伍员及范蠡“鸡鸣”、“日出”、“日映”、“禺中”四术，则时将加乘，与龙、蛇、刑、徳之用，一如今世所传。而《越絶书》载公孙圣亦有“今日壬午时加南方”之语。其事虽不见经、传，似出依托，然赵煜、袁康皆后汉人，知其法着于汉代也。其书之见于史者，《隋志》二家，《唐志》六家，《宋志》三十家。而焦竑《经籍志》所列，多至八十三家，然多散佚不传；其存者，如徐道符《心镜》，蒋日新《开云观月歌》，凌福之《毕法赋》，及《五变中黄经》，术家奉为蓍蔡。而流传既久，其说多岐，或専论课体而失之拘，或専主类神而失之粗，或杂取神煞而失之支，又皆不可以为法。是书指《大全》，闲人按总集诸书遗文，首载《入手法》、《总钤》及贵神月将徳煞、加临喜忌，旁采唐以来诸论，若《括囊》、《云霄赋》、《课经》之类，而纬以《心镜》、《观月》诸篇，采撷颇为详备。案《明史艺文志》有袁祥《六壬大全》三十三巻，名目相同而巻帙不符，未必即祥所辑。要其博综简括，固六壬家之总汇也。惟是六壬所重，莫过于天乙贵神阴阳顺逆，为吉凶所自出，如匠者之凖绳矩矱。而先天之徳起于子，后天之德起于未，以五干徳合神取贵。承学之士多未究其源，我圣祖仁皇帝《御定星历考原》一书，贯串玑衡，权舆圭臬，以订曹震圭昼丑夜未之讹，实足立千古之标凖。我皇上御纂《协纪辨方书》，复申畅斯旨。谨按《呉越春秋》所载子胥之占，三月甲戌，时加鸡鸣，而以为青龙在酉，是甲日丑为阴贵也。范蠡石室之占，十二月戊寅，时加日出，而亦以为青龙临酉，功曹为螣蛇，是戊日丑为阳贵也。沿溯古义，皆与圣谟垂示先后同符，是书所取天乙尚沿俗例，巻中仅载先天贵人一图而不用，未免失之舛漏。又所载十二宫分野，亦多拘牵旧说，未能订正；今以原本所有，姑仍其旧録之，而附订其失如右。",
+        "applicable_to": [
+          {
+            "key": "tianjiang",
+            "value": "贵人"
+          }
+        ],
+        "caveats": [
+          "`guiren_profile` 缺失、只给一个全局“昼某夜某”常量或来源表不可追踪时停止布将"
+        ],
+        "school": null,
+        "verified": false,
+        "verified_by": null,
+        "verified_at": null
+      },
+      "after": {
+        "rule_id": "DALIURENDAQU-012",
+        "kind": "doctrine",
+        "statement": "《大全》提要指出，本书所取天乙贵神仍沿俗例，与《星历考原》《协纪辨方书》所倡取法有别，应辨明所用贵人取法。",
+        "anchor": {
+          "file": "sources/fulltext/san-shi/daliuren-daquan/fulltext.md",
+          "start_line": 3,
+          "end_line": 31
+        },
+        "quote": "臣等谨案：《六壬大全》十二巻，不着撰人名氏。巻首题“怀庆府推官郭载騋校”，盖明代所刋也。六壬与遁甲、太乙，世谓之“三式”，而六壬其传尤古，或谓出于黄帝元女，固属无稽，要其为术，固非后世方技家所能造。大抵数根于五行，而五行始于水，举阴以起阳，故称壬焉；举成以该生，故用六焉。其有天地盘与神将加临，虽渐近竒遁九宫之式，而由干支而有四课，则亦两仪、四象也；由发用而有三传，则亦一生二、二生三、三生万物也；以至六十四课，莫不原本羲爻，盖亦《易》象之支流，推而衍之者矣。考《国语》伶州鸠对七律，以所称“夷则”、“上宫”、“大吕”、“上宫”推之，皆有合于六壬之义。然占卜之属，特以五音、十二律定数，未可即指为六壬之源。《呉越春秋》载伍员及范蠡“鸡鸣”、“日出”、“日映”、“禺中”四术，则时将加乘，与龙、蛇、刑、徳之用，一如今世所传。而《越絶书》载公孙圣亦有“今日壬午时加南方”之语。其事虽不见经、传，似出依托，然赵煜、袁康皆后汉人，知其法着于汉代也。其书之见于史者，《隋志》二家，《唐志》六家，《宋志》三十家。而焦竑《经籍志》所列，多至八十三家，然多散佚不传；其存者，如徐道符《心镜》，蒋日新《开云观月歌》，凌福之《毕法赋》，及《五变中黄经》，术家奉为蓍蔡。而流传既久，其说多岐，或専论课体而失之拘，或専主类神而失之粗，或杂取神煞而失之支，又皆不可以为法。是书指《大全》，闲人按总集诸书遗文，首载《入手法》、《总钤》及贵神月将徳煞、加临喜忌，旁采唐以来诸论，若《括囊》、《云霄赋》、《课经》之类，而纬以《心镜》、《观月》诸篇，采撷颇为详备。案《明史艺文志》有袁祥《六壬大全》三十三巻，名目相同而巻帙不符，未必即祥所辑。要其博综简括，固六壬家之总汇也。惟是六壬所重，莫过于天乙贵神阴阳顺逆，为吉凶所自出，如匠者之凖绳矩矱。而先天之徳起于子，后天之德起于未，以五干徳合神取贵。承学之士多未究其源，我圣祖仁皇帝《御定星历考原》一书，贯串玑衡，权舆圭臬，以订曹震圭昼丑夜未之讹，实足立千古之标凖。我皇上御纂《协纪辨方书》，复申畅斯旨。谨按《呉越春秋》所载子胥之占，三月甲戌，时加鸡鸣，而以为青龙在酉，是甲日丑为阴贵也。范蠡石室之占，十二月戊寅，时加日出，而亦以为青龙临酉，功曹为螣蛇，是戊日丑为阳贵也。沿溯古义，皆与圣谟垂示先后同符，是书所取天乙尚沿俗例，巻中仅载先天贵人一图而不用，未免失之舛漏。又所载十二宫分野，亦多拘牵旧说，未能订正；今以原本所有，姑仍其旧録之，而附订其失如右。",
+        "applicable_to": [],
+        "caveats": [
+          "本条是四库提要的版本辨析，不是贵人入传的吉凶断语，也没有给出可直接执行的完整昼夜贵人表。",
+          "贵人表及昼夜界限须依据明确版本另行校核，不能从本段工程化出guiren_profile接口。"
+        ],
+        "school": null,
+        "verified": false,
+        "verified_by": null,
+        "verified_at": null
+      }
+    },
+    {
+      "rule_id": "DALIURENDAQU-013",
+      "file": "references/books/san-shi/daliuren-daquan/rules.yaml",
+      "reason": "旧条statement是工程输入检查，谓词涉害/伏吟无提要依据；改回实际方法评论，撤错误自动匹配。",
+      "before": {
+        "rule_id": "DALIURENDAQU-013",
+        "kind": "doctrine",
+        "statement": "课体与三传已由 adapter 唯一确定。",
+        "anchor": {
+          "file": "sources/fulltext/san-shi/daliuren-daquan/fulltext.md",
+          "start_line": 3,
+          "end_line": 31
+        },
+        "quote": "臣等谨案：《六壬大全》十二巻，不着撰人名氏。巻首题“怀庆府推官郭载騋校”，盖明代所刋也。六壬与遁甲、太乙，世谓之“三式”，而六壬其传尤古，或谓出于黄帝元女，固属无稽，要其为术，固非后世方技家所能造。大抵数根于五行，而五行始于水，举阴以起阳，故称壬焉；举成以该生，故用六焉。其有天地盘与神将加临，虽渐近竒遁九宫之式，而由干支而有四课，则亦两仪、四象也；由发用而有三传，则亦一生二、二生三、三生万物也；以至六十四课，莫不原本羲爻，盖亦《易》象之支流，推而衍之者矣。考《国语》伶州鸠对七律，以所称“夷则”、“上宫”、“大吕”、“上宫”推之，皆有合于六壬之义。然占卜之属，特以五音、十二律定数，未可即指为六壬之源。《呉越春秋》载伍员及范蠡“鸡鸣”、“日出”、“日映”、“禺中”四术，则时将加乘，与龙、蛇、刑、徳之用，一如今世所传。而《越絶书》载公孙圣亦有“今日壬午时加南方”之语。其事虽不见经、传，似出依托，然赵煜、袁康皆后汉人，知其法着于汉代也。其书之见于史者，《隋志》二家，《唐志》六家，《宋志》三十家。而焦竑《经籍志》所列，多至八十三家，然多散佚不传；其存者，如徐道符《心镜》，蒋日新《开云观月歌》，凌福之《毕法赋》，及《五变中黄经》，术家奉为蓍蔡。而流传既久，其说多岐，或専论课体而失之拘，或専主类神而失之粗，或杂取神煞而失之支，又皆不可以为法。是书指《大全》，闲人按总集诸书遗文，首载《入手法》、《总钤》及贵神月将徳煞、加临喜忌，旁采唐以来诸论，若《括囊》、《云霄赋》、《课经》之类，而纬以《心镜》、《观月》诸篇，采撷颇为详备。案《明史艺文志》有袁祥《六壬大全》三十三巻，名目相同而巻帙不符，未必即祥所辑。要其博综简括，固六壬家之总汇也。惟是六壬所重，莫过于天乙贵神阴阳顺逆，为吉凶所自出，如匠者之凖绳矩矱。而先天之徳起于子，后天之德起于未，以五干徳合神取贵。承学之士多未究其源，我圣祖仁皇帝《御定星历考原》一书，贯串玑衡，权舆圭臬，以订曹震圭昼丑夜未之讹，实足立千古之标凖。我皇上御纂《协纪辨方书》，复申畅斯旨。谨按《呉越春秋》所载子胥之占，三月甲戌，时加鸡鸣，而以为青龙在酉，是甲日丑为阴贵也。范蠡石室之占，十二月戊寅，时加日出，而亦以为青龙临酉，功曹为螣蛇，是戊日丑为阳贵也。沿溯古义，皆与圣谟垂示先后同符，是书所取天乙尚沿俗例，巻中仅载先天贵人一图而不用，未免失之舛漏。又所载十二宫分野，亦多拘牵旧说，未能订正；今以原本所有，姑仍其旧録之，而附订其失如右。",
+        "applicable_to": [
+          {
+            "key": "keti",
+            "value": "涉害课"
+          },
+          {
+            "key": "keti",
+            "value": "伏吟课"
+          }
+        ],
+        "caveats": [
+          "关键修正字段缺失时只说明课体定义，不给具体事件推断"
+        ],
+        "school": null,
+        "verified": false,
+        "verified_by": null,
+        "verified_at": null
+      },
+      "after": {
+        "rule_id": "DALIURENDAQU-013",
+        "kind": "doctrine",
+        "statement": "《大全》提要批评只论课体、只主类神或杂取神煞的偏执，主张避免单执一端。",
+        "anchor": {
+          "file": "sources/fulltext/san-shi/daliuren-daquan/fulltext.md",
+          "start_line": 3,
+          "end_line": 31
+        },
+        "quote": "臣等谨案：《六壬大全》十二巻，不着撰人名氏。巻首题“怀庆府推官郭载騋校”，盖明代所刋也。六壬与遁甲、太乙，世谓之“三式”，而六壬其传尤古，或谓出于黄帝元女，固属无稽，要其为术，固非后世方技家所能造。大抵数根于五行，而五行始于水，举阴以起阳，故称壬焉；举成以该生，故用六焉。其有天地盘与神将加临，虽渐近竒遁九宫之式，而由干支而有四课，则亦两仪、四象也；由发用而有三传，则亦一生二、二生三、三生万物也；以至六十四课，莫不原本羲爻，盖亦《易》象之支流，推而衍之者矣。考《国语》伶州鸠对七律，以所称“夷则”、“上宫”、“大吕”、“上宫”推之，皆有合于六壬之义。然占卜之属，特以五音、十二律定数，未可即指为六壬之源。《呉越春秋》载伍员及范蠡“鸡鸣”、“日出”、“日映”、“禺中”四术，则时将加乘，与龙、蛇、刑、徳之用，一如今世所传。而《越絶书》载公孙圣亦有“今日壬午时加南方”之语。其事虽不见经、传，似出依托，然赵煜、袁康皆后汉人，知其法着于汉代也。其书之见于史者，《隋志》二家，《唐志》六家，《宋志》三十家。而焦竑《经籍志》所列，多至八十三家，然多散佚不传；其存者，如徐道符《心镜》，蒋日新《开云观月歌》，凌福之《毕法赋》，及《五变中黄经》，术家奉为蓍蔡。而流传既久，其说多岐，或専论课体而失之拘，或専主类神而失之粗，或杂取神煞而失之支，又皆不可以为法。是书指《大全》，闲人按总集诸书遗文，首载《入手法》、《总钤》及贵神月将徳煞、加临喜忌，旁采唐以来诸论，若《括囊》、《云霄赋》、《课经》之类，而纬以《心镜》、《观月》诸篇，采撷颇为详备。案《明史艺文志》有袁祥《六壬大全》三十三巻，名目相同而巻帙不符，未必即祥所辑。要其博综简括，固六壬家之总汇也。惟是六壬所重，莫过于天乙贵神阴阳顺逆，为吉凶所自出，如匠者之凖绳矩矱。而先天之徳起于子，后天之德起于未，以五干徳合神取贵。承学之士多未究其源，我圣祖仁皇帝《御定星历考原》一书，贯串玑衡，权舆圭臬，以订曹震圭昼丑夜未之讹，实足立千古之标凖。我皇上御纂《协纪辨方书》，复申畅斯旨。谨按《呉越春秋》所载子胥之占，三月甲戌，时加鸡鸣，而以为青龙在酉，是甲日丑为阴贵也。范蠡石室之占，十二月戊寅，时加日出，而亦以为青龙临酉，功曹为螣蛇，是戊日丑为阳贵也。沿溯古义，皆与圣谟垂示先后同符，是书所取天乙尚沿俗例，巻中仅载先天贵人一图而不用，未免失之舛漏。又所载十二宫分野，亦多拘牵旧说，未能订正；今以原本所有，姑仍其旧録之，而附订其失如右。",
+        "applicable_to": [],
+        "caveats": [
+          "本条是提要的方法评论，不能替代具体课体、类神与神煞的原文条件。",
+          "提要没有指向涉害或伏吟两种特定课体，也未定义adapter流程。"
+        ],
+        "school": null,
+        "verified": false,
+        "verified_by": null,
+        "verified_at": null
+      }
+    },
+    {
+      "rule_id": "DALIURENDAQU-014",
+      "file": "references/books/san-shi/daliuren-daquan/rules.yaml",
+      "reason": "11051行是官爵课具体起例，旧条混入游子/殃咎并错配涉害/伏吟；按实际原文概括，撤错误谓词并归procedure。",
+      "before": {
+        "rule_id": "DALIURENDAQU-014",
+        "kind": "doctrine",
+        "statement": "用户或下游想标记官爵、游子、殃咎等课经复合课体。",
+        "anchor": {
+          "file": "sources/fulltext/san-shi/daliuren-daquan/fulltext.md",
+          "start_line": 11051,
+          "end_line": 11051
+        },
+        "quote": "凡课得岁月年命驿马发用，又天魁太常入传，为官爵课。驿马者，三合头冲是也，为驿递之神，传命之使也。人命行年，太岁月建并用之马，华丽异常。又戌天魁为印绶，荣加官职爵禄，名曰官爵也。占事吉庆，仕宦升擢。统益之体，为鸿鹄冲霄之课也。",
+        "applicable_to": [
+          {
+            "key": "keti",
+            "value": "涉害课"
+          },
+          {
+            "key": "keti",
+            "value": "伏吟课"
+          }
+        ],
+        "caveats": [
+          "原文条件表尚未建立的课体不得从名称猜测，应回到卷段检索"
+        ],
+        "school": null,
+        "verified": false,
+        "verified_by": null,
+        "verified_at": null
+      },
+      "after": {
+        "rule_id": "DALIURENDAQU-014",
+        "kind": "procedure",
+        "statement": "官爵课起例：课得岁月年命驿马发用，又天魁、太常入传；本段以此名官爵，并解释驿马及天魁印绶。",
+        "anchor": {
+          "file": "sources/fulltext/san-shi/daliuren-daquan/fulltext.md",
+          "start_line": 11051,
+          "end_line": 11051
+        },
+        "quote": "凡课得岁月年命驿马发用，又天魁太常入传，为官爵课。驿马者，三合头冲是也，为驿递之神，传命之使也。人命行年，太岁月建并用之马，华丽异常。又戌天魁为印绶，荣加官职爵禄，名曰官爵也。占事吉庆，仕宦升擢。统益之体，为鸿鹄冲霄之课也。",
+        "applicable_to": [],
+        "caveats": [
+          "官爵是本段所述复合课体，不等同涉害或伏吟，也不能由本段推出游子、殃咎的条件。",
+          "当前事实层尚未表达这组驿马及传中条件，因此不自动匹配，保留为待实现的起例。"
+        ],
+        "school": null,
+        "verified": false,
+        "verified_by": null,
+        "verified_at": null
+      }
+    }
+  ],
+  "book_changes": [
+    {
+      "slug": "san-shi/liuren-zhiyin",
+      "before_title": "六壬指南（一作六壬指引）",
+      "after_title": "六壬指南注解（张洪注本）",
+      "reason": "source-manifest与全文已明确张洪注本；slug不能作为“六壬指引”别名依据。规则与三个现有书目副本同步书名，原文及文件标识不变。"
+    }
+  ]
+}
