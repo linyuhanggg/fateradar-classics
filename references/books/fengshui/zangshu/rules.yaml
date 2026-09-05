@@ -1,0 +1,237 @@
+schema_version: fateradar-rules-v2
+book:
+  slug: zangshu
+  system: fengshui
+  title: 葬书
+  script: traditional
+  fulltext: sources/fulltext/fengshui/zangshu/fulltext.md
+  fulltext_sha256: e637e2c91888cd398b9d4dd31c341ba7557c7bab970ee17b481afd0ac1089a3c
+rules:
+- rule_id: ZANGSHU-R-01
+  kind: doctrine
+  statement: 葬地必须乘地中流行之生气，使遗骨与生气相合方能荫子孙；离生气则葬法不立。
+  anchor: null
+  quote: 葬地必须乘地中流行之生气，使遗骨与生气相合方能荫子孙；离生气则葬法不立。
+  applicable_to: []
+  caveats:
+  - 现代使用边界：仅作文化研究参考，"鬼福及人""反气入骨"为古代同气相感之修辞，不构成当代葬地选择依据
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: ZANGSHU-R-02
+  kind: doctrine
+  statement: 气界水则止、乘风则散；故葬地优先得水（界气止气），其次藏风（聚气不散）。
+  anchor:
+    file: sources/fulltext/fengshui/zangshu/fulltext.md
+    start_line: 53
+    end_line: 53
+  quote: 經曰：氣乘風則散，界水則止。
+  applicable_to: []
+  caveats:
+  - 现代使用边界：仅作传统聚落选址、人居环境美学参考
+  - 不替代工程地质评估
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: ZANGSHU-R-03
+  kind: doctrine
+  statement: 葬于涸燥之地宜浅，葬于坦夷之地宜深；浅深与气之聚散对应。
+  anchor:
+    file: sources/fulltext/fengshui/zangshu/fulltext.md
+    start_line: 61
+    end_line: 61
+  quote: 故藏於涸燥者宜淺，藏於坦夷者宜深。
+  applicable_to: []
+  caveats:
+  - 现代使用边界：仅作文化研究参考，不构成实际葬地施工建议
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: ZANGSHU-R-04
+  kind: doctrine
+  statement: 千尺为势、百尺为形；势来形止处为全气之地，葬应葬其止而不葬其行。
+  anchor:
+    file: sources/fulltext/fengshui/zangshu/fulltext.md
+    start_line: 72
+    end_line: 72
+  quote: 地勢原脈，山勢原骨，委蛇東西，或爲南北，千尺爲勢，百尺爲形，勢來形止，是謂全氣。
+  applicable_to: []
+  caveats:
+  - 现代使用边界：仅作景观与古典风水学习参考
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: ZANGSHU-R-05
+  kind: doctrine
+  statement: 童山（无草木生气绝）、断山（形断气不续）、石山（土行不通）、过山（龙气未止）、独山（无龙会）五者皆不可葬，强葬则消已福、生新凶。
+  anchor:
+    file: sources/fulltext/fengshui/zangshu/fulltext.md
+    start_line: 91
+    end_line: 91
+  quote: 氣因土行而石山不可葬也。
+  applicable_to: []
+  caveats:
+  - 现代使用边界：仅作文化研究参考，不构成对现代墓地、骨灰安置的现实判断依据
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: ZANGSHU-R-06
+  kind: doctrine
+  statement: 平地隐起之"支"葬于其顶（如首），高山起伏之"垄"葬于其足（如足）；支垄不辨则气脱如逐。
+  anchor:
+    file: sources/fulltext/fengshui/zangshu/fulltext.md
+    start_line: 108
+    end_line: 108
+  quote: 故支葬其巓，壠葬其麓，卜支如首，卜壠如足，形勢不經，氣脫如逐。
+  applicable_to: []
+  caveats:
+  - 现代使用边界：仅作古典葬法名词参考
+  - 现代殡葬以法律法规与地形安全为准
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: ZANGSHU-R-07
+  kind: doctrine
+  statement: 龙势千尺顿息而外无聚护、内气散于地中者为不蓄之穴；强葬则成腐骨之藏。
+  anchor:
+    file: sources/fulltext/fengshui/zangshu/fulltext.md
+    start_line: 120
+    end_line: 120
+  quote: 夫外氣所以聚内氣，過水所以止來龍，千尺之勢，宛委頓息，外無以聚，内氣散於地中，經曰：不蓄之穴，腐骨之藏也。
+  applicable_to: []
+  caveats:
+  - 现代使用边界：仅作文化研究参考
+  - '"腐骨""敗槨"为古代评价语，不作现代叙述'
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: ZANGSHU-R-08
+  kind: doctrine
+  statement: 龙虎不护、中阜叠叠、左空右缺、前旷后折、生气散于飘风者为腾漏之穴；不可葬。
+  anchor:
+    file: sources/fulltext/fengshui/zangshu/fulltext.md
+    start_line: 121
+    end_line: 121
+  quote: 夫噫氣爲能散生氣，龍虎所以衞區穴，疉㬪中阜，左空右缺，前曠後折，生氣散於飄風，經曰：騰漏之穴，敗槨之藏也。
+  applicable_to: []
+  caveats:
+  - 现代使用边界：仅作文化研究参考
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: ZANGSHU-R-09
+  kind: doctrine
+  statement: 土宜细而坚、润而不泽、备具五色（如裁肪切玉）；干如穴粟、湿如刲肉、水泉砂砾皆为凶宅。
+  anchor:
+    file: sources/fulltext/fengshui/zangshu/fulltext.md
+    start_line: 123
+    end_line: 123
+  quote: 夫乾如穴粟，濕如刲肉，水泉砂礫，皆爲凶宅。
+  applicable_to: []
+  caveats:
+  - 现代使用边界：仅作古典土质评价语参考
+  - 现代墓地以法律和地质安全规范为准
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: ZANGSHU-R-10
+  kind: doctrine
+  statement: 玄武宜垂头、朱雀宜翔舞、青龙宜蜿蜒、白虎宜驯俯；反此则法当破死（虎蹲含尸、龙踞嫉主、玄武拒尸、朱雀腾去）。
+  anchor:
+    file: sources/fulltext/fengshui/zangshu/fulltext.md
+    start_line: 127
+    end_line: 127
+  quote: 夫葬以左爲靑龍，右爲白虎，前爲朱雀，後爲玄武，玄武垂頭，朱雀翔舞，靑龍蜿蜒，白虎馴頫，形勢反此，法當破死。
+  applicable_to: []
+  caveats:
+  - 现代使用边界：仅作文化研究参考
+  - '"破死""含尸"等为古文措辞，不作当代陈述'
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: ZANGSHU-R-11
+  kind: doctrine
+  statement: 朱雀以水形相应；水流要源生派盛、朝旺泽衰、流囚顾我，每折瀦后泄方为吉；湍激直泻则为悲泣。
+  anchor:
+    file: sources/fulltext/fengshui/zangshu/fulltext.md
+    start_line: 132
+    end_line: 132
+  quote: 朱雀源於生氣，派於未盛，朝於大旺，澤於將衰，流於囚謝，以返不絕，法每一折，瀦而後洩。
+  applicable_to: []
+  caveats:
+  - 现代使用边界：仅作传统聚落与园林选址美学参考
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: ZANGSHU-R-12
+  kind: doctrine
+  statement: 山来抱、水回环则主贵寿与财；山囚水流则主败亡。
+  anchor:
+    file: sources/fulltext/fengshui/zangshu/fulltext.md
+    start_line: 135
+    end_line: 135
+  quote: 經曰：山來水囘，貴壽而財。
+  applicable_to: []
+  caveats:
+  - 现代使用边界：仅作文化研究参考
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: ZANGSHU-R-13
+  kind: doctrine
+  statement: 葬乾欲起伏长闾厚而方、葬坤欲连扆不倾广厚而长平、葬艮委蛇而顺高峙而峻、葬巽峻秀锐雄、葬震缓和耸峨、葬离驰穹崇起、葬兑大来坡垂方广平夷、葬坎曲折而长秀直而昂。
+  anchor:
+    file: sources/fulltext/fengshui/zangshu/fulltext.md
+    start_line: 176
+    end_line: 176
+  quote: 葬坤者，勢欲連扆而不傾，形欲廣厚而長平。
+  applicable_to: []
+  caveats:
+  - 现代使用边界：仅作文化研究与古典风水学习参考
+  - 不作现代选墓建议
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: ZANGSHU-R-14
+  kind: doctrine
+  statement: 穴有三吉（天光下临地德上载、阴阳冲和五土四备、目力工力趋全避缺）；葬有六凶（阴阳差错、岁时之乖、力小图大、凭福恃势、僭上逼下、变应怪见）。穴吉葬凶与弃尸同。
+  anchor:
+    file: sources/fulltext/fengshui/zangshu/fulltext.md
+    start_line: 111
+    end_line: 111
+  quote: 天光下臨，地德上載，陰陽沖和，五土四僃。
+  applicable_to: []
+  caveats:
+  - 现代使用边界：仅作文化研究参考
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: ZANGSHU-R-15
+  kind: doctrine
+  statement: 势与形顺者吉、逆者凶；势凶形吉百福希一、势吉形凶祸不旋日。
+  anchor:
+    file: sources/fulltext/fengshui/zangshu/fulltext.md
+    start_line: 163
+    end_line: 163
+  quote: 夫勢與形順者吉，勢與形逆者凶。
+  applicable_to: []
+  caveats:
+  - 现代使用边界：仅作文化研究参考
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null

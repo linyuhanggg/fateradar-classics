@@ -1,0 +1,64 @@
+schema_version: fateradar-rules-v2
+book:
+  slug: liuzhuang-xiangfa
+  system: physiognomy
+  title: 柳庄相法
+  script: simplified
+  fulltext: sources/fulltext/physiognomy/liuzhuang-xiangfa/fulltext.md
+  fulltext_sha256: d94f837fd8fb1e3f636d9cf21d73fdf6300c7cc61669c9a8f0015da4eb72adfe
+rules:
+- rule_id: LZ
+  kind: doctrine
+  statement: R01 相法必须“乘除加减”
+  anchor: null
+  quote: 'source_base: CTP《柳庄相法》Wiki 文本页抽取；本地 Wikimedia/NLC PDF 作影印锚点。'
+  applicable_to: []
+  caveats: []
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: LIUZHUANGXIA-LZ
+  kind: doctrine
+  statement: R02 五官五岳六府是索引体系，不是结论体系
+  anchor: null
+  quote: R02 五官五岳六府是索引体系，不是结论体系
+  applicable_to: []
+  caveats: []
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: LIUZHUANGXIA-003
+  kind: doctrine
+  statement: R03 气色与精神类条目不得医学化
+  anchor: null
+  quote: R03 气色与精神类条目不得医学化
+  applicable_to: []
+  caveats: []
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: LIUZHUANGXIA-004
+  kind: doctrine
+  statement: R04 儿童、孕产、女性、婚姻条目全部高风险
+  anchor: null
+  quote: R04 儿童、孕产、女性、婚姻条目全部高风险
+  applicable_to: []
+  caveats: []
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: LIUZHUANGXIA-005
+  kind: doctrine
+  statement: R05 与《神相全编》互证时分层
+  anchor: null
+  quote: R05 与《神相全编》互证时分层
+  applicable_to: []
+  caveats: []
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null

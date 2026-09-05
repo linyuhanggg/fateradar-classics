@@ -1,0 +1,342 @@
+schema_version: fateradar-rules-v2
+# verified: true 仅表示 quote 与本仓 fulltext 逐字一致，不等于与影印底本校勘。本阶段不由模型填写 verified / verified_by / verified_at。
+book:
+  slug: ziping-zhenquan
+  system: bazi
+  title: 子平真诠
+  script: traditional
+  fulltext: sources/fulltext/bazi/ziping-zhenquan/fulltext.md
+  fulltext_sha256: 5d0e11098aa076468da4bd805159550c178c1ee31d325e30be5f042d9051a053
+rules:
+- rule_id: ZPR-01
+  kind: doctrine
+  statement: 八字用神专求月令，以日干配月令地支，按生克不同分财官印食、煞伤劫刃等格局。
+  anchor:
+    file: sources/fulltext/bazi/ziping-zhenquan/fulltext.md
+    start_line: 328
+    end_line: 328
+  quote: 八字用神，專求月令，以日干配月令地支，而生尅不同，格局分焉。財官印食，此用神之善而順用之者也；煞傷劫刃，此用神之不善而逆用之者也。當順而順，當逆而逆，配合得宜，皆爲貴格。
+  applicable_to:
+  - key: yueling
+    value: "*"
+  caveats:
+  - 不向月令求用神而妄取用神，属执假失真
+  - 但建禄月劫须另取财官煞食
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: ZPR-02
+  kind: doctrine
+  statement: 财官印食为善而顺用；七煞、伤官、阳刃、月劫为不善而逆用。顺逆配合得宜皆可成贵格。
+  anchor:
+    file: sources/fulltext/bazi/ziping-zhenquan/fulltext.md
+    start_line: 328
+    end_line: 328
+  quote: 八字用神，專求月令，以日干配月令地支，而生尅不同，格局分焉。財官印食，此用神之善而順用之者也；煞傷劫刃，此用神之不善而逆用之者也。當順而順，當逆而逆，配合得宜，皆爲貴格。
+  applicable_to:
+  - key: shishen
+    value: 正财
+  - key: shishen
+    value: 正官
+  - key: shishen
+    value: 正印
+  - key: shishen
+    value: 食神
+  - key: shishen
+    value: 七杀
+  - key: shishen
+    value: 伤官
+  - key: shishen
+    value: 劫财
+  caveats:
+  - “善/不善”是格局术语，不是道德评价
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: ZPR-03
+  kind: doctrine
+  statement: 格局不能只判成败，还要看败中是否有救、成中是否被破；救应能改变格局可用性。
+  anchor:
+    file: sources/fulltext/bazi/ziping-zhenquan/fulltext.md
+    start_line: 361
+    end_line: 361
+  quote: 用神專求月令，然以四柱配之，必有成敗。
+  applicable_to:
+  - key: yueling
+    value: "*"
+  caveats:
+  - 救应判断依赖完整四柱透藏合冲，必须由结构化排盘工具供给
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: ZPR-04
+  kind: doctrine
+  statement: 月令所藏多气，透干或会支可使财变官、官变印、煞化印等，用神随之变化。
+  anchor:
+    file: sources/fulltext/bazi/ziping-zhenquan/fulltext.md
+    start_line: 419
+    end_line: 419
+  quote: 用神既主月令矣，然月令所藏不一，而用神遂有變化。如十二支中，除子午卯酉外，餘皆有藏，不必四墓也。即以寅論，甲爲本主，如郡之有府；丙其長生，如郡之有同知；戊亦長生，如郡之有通判。假使寅月爲提
+  applicable_to:
+  - key: yueling
+    value: "*"
+  caveats:
+  - 变化不是任意取用，仍须先以月令为主
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: ZPR-05
+  kind: doctrine
+  statement: 用神之外，须看相神是否得力；相神能辅成用神或救护格局，是高低成败关键。
+  anchor:
+    file: sources/fulltext/bazi/ziping-zhenquan/fulltext.md
+    start_line: 522
+    end_line: 522
+  quote: 月令既得用神，則別位亦必有相，若君之有相，輔我用神者是也。如官逢財生，則官爲用，財爲相；財旺生官，則財爲用，官爲相；煞逢食制，則煞爲用，食爲相。然此乃一定之法，非通變之妙。要而言之，凡全局之格，賴此一字而成者，均謂之相也。
+  applicable_to:
+  - key: yueling
+    value: "*"
+  caveats:
+  - 不可只看日主强弱而忽略相神位置
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: ZPR-06
+  kind: doctrine
+  statement: 辰戌丑未为杂气，取用须看所藏何神透出、会合何局，不能只按单一藏干判断。
+  anchor:
+    file: sources/fulltext/bazi/ziping-zhenquan/fulltext.md
+    start_line: 542
+    end_line: 542
+  quote: 四墓者，沖氣也，何以謂之雜氣？以其所藏者多，用神不一，故謂之雜氣也。如辰本藏戊，而又爲水庫，爲乙餘氣
+  applicable_to:
+  - key: yueling
+    value: 辰
+  - key: yueling
+    value: 戌
+  - key: yueling
+    value: 丑
+  - key: yueling
+    value: 未
+  caveats:
+  - 墓库开闭与刑冲必须结合全局
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: ZPR-07
+  kind: doctrine
+  statement: 财官印食虽为四吉神，但遇冲克混杂、护卫不当，也能破格。
+  anchor:
+    file: sources/fulltext/bazi/ziping-zhenquan/fulltext.md
+    start_line: 615
+    end_line: 615
+  quote: 財官印食，四吉神也，然用之不當，亦能破格。
+  applicable_to:
+  - key: shishen
+    value: 正财
+  - key: shishen
+    value: 正官
+  - key: shishen
+    value: 正印
+  - key: shishen
+    value: 食神
+  caveats:
+  - 不可见吉神即判吉
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: ZPR-08
+  kind: doctrine
+  statement: 煞伤劫刃虽为四凶神，但制化得宜、配合得所，也可成格。
+  anchor:
+    file: sources/fulltext/bazi/ziping-zhenquan/fulltext.md
+    start_line: 627
+    end_line: 627
+  quote: 煞傷梟刃，四凶神也，然施之得宜，亦能成格。如印綬根輕，透煞爲助，煞能成格也；財逢比劫，傷官可解，傷能成格也；食神遇官
+  applicable_to:
+  - key: shishen
+    value: 七杀
+  - key: shishen
+    value: 伤官
+  - key: shishen
+    value: 偏印
+  - key: shishen
+    value: 劫财
+  - key: shensha
+    value: 羊刃
+  caveats:
+  - 不可见凶神即判凶
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: ZPR-09
+  kind: doctrine
+  statement: 同一组十神因生克先后、位置远近、透藏关系不同，吉凶结论不同。
+  anchor:
+    file: sources/fulltext/bazi/ziping-zhenquan/fulltext.md
+    start_line: 637
+    end_line: 637
+  quote: 月令用神，配以四柱，固有每字之生尅以分吉凶。然有同此生尅，而先後之間，遂分吉凶者，尤談命之奧也。
+  applicable_to:
+  - key: yueling
+    value: "*"
+  caveats:
+  - 需要工具输出四柱位置与干支关系
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: ZPR-10
+  kind: doctrine
+  statement: 本书明确降级星辰神煞，格局判断以月令用神、相神、成败救应为主。
+  anchor:
+    file: sources/fulltext/bazi/ziping-zhenquan/fulltext.md
+    start_line: 663
+    end_line: 668
+  quote: 八字格局，專以月令配四柱，至於星辰好歹，既不能爲生尅之用，又何以操成敗之權？況於局有礙，即財官美物，尚不能濟，何論吉星？於格有用，即七煞傷官，皆爲美物，何謂凶辰乎？是以格局既成，即使滿盤孤辰入煞，何損其貴？格局既破，即使満盤天德貴人，何以爲功？今人不知輕重，見是吉星，遂至拋卻用神，不觀四柱，妄論貴賤，謬談禍福，甚可笑也。
+  applicable_to:
+  - key: shensha
+    value: "*"
+  caveats:
+  - 神煞最多作旁证，不得覆盖格局层
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: ZPR-11
+  kind: doctrine
+  statement: 外格是月令无用时的权取；若月令自有用神，不可别寻外格。
+  anchor:
+    file: sources/fulltext/bazi/ziping-zhenquan/fulltext.md
+    start_line: 697
+    end_line: 697
+  quote: 八字用神，既專主月令，何以而又有外格乎？外格者，蓋因月令無用，權而用之，故曰外格也。
+  applicable_to:
+  - key: yueling
+    value: "*"
+  caveats:
+  - “提纲有用提纲重”，有官莫寻格局
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: ZPR-12
+  kind: doctrine
+  statement: 行运不只是增减强弱，还会成格、变格、救格、破格。
+  anchor: null
+  quote: 論運與看命，無二法也。看命以四柱干支，配月令之喜忌。而取運則又以運之干支，配八字之喜忌。故運中每運行一字，即必以此一字，配命中八字而統觀之，爲喜爲忌，吉凶判然矣。
+  applicable_to:
+  - key: shishen
+    value: "*"
+    scope:
+      layer: 大运
+  caveats:
+  - 大运干支必须由历法排盘工具计算
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: ZPR-13
+  kind: doctrine
+  statement: 运中天干、地支作用不同，支中喜忌逢运透清又有特别规则。
+  anchor:
+    file: sources/fulltext/bazi/ziping-zhenquan/fulltext.md
+    start_line: 840
+    end_line: 840
+  quote: 命中喜忌，雖干支俱有，而干主天，動而有爲；支主地，靜以待用。且干主一而支藏多，爲福爲禍，安得不殊？
+  applicable_to:
+  - key: shishen
+    value: "*"
+    scope:
+      layer: 大运
+  caveats:
+  - 不可把干运支运混为一谈
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: ZPR-14
+  kind: doctrine
+  statement: 四吉神各有成格条件、破格条件和取运路径，不能用同一模板套判。
+  anchor: null
+  quote: 官以尅身，雖與【校：「與」原作「六」，據中州本改】七煞有別，終受彼制，何以切忌刑沖破害，尊之若是乎？豈知人生天地間【校：「間」字據中州本補】，必無矯焉自尊之理，雖貴極天子，亦有天祖臨之。正官者，分所當尊，如在國有君，在家有親，刑沖破害，以下犯上，烏乎可乎？
+  applicable_to:
+  - key: shishen
+    value: 正官
+  caveats:
+  - 需结合具体章目读取，不做一刀切
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: ZPR-15
+  kind: doctrine
+  statement: 四凶/特殊格须看制、化、合、配与取运，凶神得制化可成，失制化则败。
+  anchor:
+    file: sources/fulltext/bazi/ziping-zhenquan/fulltext.md
+    start_line: 1154
+    end_line: 1154
+  quote: 煞以攻身，似非美物，而大貴之格，多存七煞。蓋控制得宜，煞爲我用，如大英雄大豪傑，似難駕馭，而處之有方，則驚天動地之功，忽焉而就。此王侯將相所以多存七煞也。
+  applicable_to:
+  - key: shishen
+    value: 七杀
+  caveats:
+  - 不可用现代强弱派直接覆盖沈氏格局法
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: ZPR-16
+  kind: doctrine
+  statement: 杂格应在正格不足以取用时讨论，且须严格按原文条件，不可泛化为万能例外。
+  anchor:
+    file: sources/fulltext/bazi/ziping-zhenquan/fulltext.md
+    start_line: 1365
+    end_line: 1365
+  quote: 雜格者，月令無用，取外格而用之，其格甚多，故謂之雜。
+  applicable_to: []
+  caveats:
+  - 与外格同属边界规则，优先级低于月令正用
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: ZPR-P-01
+  kind: procedure
+  statement: 阳干顺行十二长生、阴干逆行。甲木长生在亥、死在午；乙木长生在午、死在亥。其余天干依阴阳互换。
+  anchor:
+    file: sources/fulltext/bazi/ziping-zhenquan/fulltext.md
+    start_line: 164
+    end_line: 165
+  quote: 即以甲乙論，甲爲木之陽，天之生氣流行萬木者，是故生於亥而死於午；乙爲木之陰，木之枝枝葉葉受天生氣者，是故生於午而死於亥。
+  applicable_to: []
+  caveats:
+  - 起例只锁长生十二宫顺逆，不断旺衰吉凶
+  - 阴长生力度沈氏另有「不甚有力」说，不在本条计算范围内
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: ZPR-P-02
+  kind: procedure
+  statement: 十干合化：甲己合化土、乙庚合化金、丙辛合化水、丁壬合化木、戊癸合化火。
+  anchor:
+    file: sources/fulltext/bazi/ziping-zhenquan/fulltext.md
+    start_line: 205
+    end_line: 209
+  quote: 是以甲己相合之始，則化爲土；土則生金，故乙庚化金次之；金生水，故丙辛化水又次之；水生木，故丁壬化木又次之；木生火，故戊癸化火又次之，而五行遍焉。
+  applicable_to: []
+  caveats:
+  - 合化是否成真须另看化神当令、有根、不被冲克，见合而不合章
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null

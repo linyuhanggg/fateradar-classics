@@ -1,0 +1,87 @@
+schema_version: fateradar-rules-v2
+book:
+  slug: mayi-shenxiang
+  system: physiognomy
+  title: 麻衣神相
+  script: simplified
+  fulltext: sources/fulltext/physiognomy/mayi-shenxiang/fulltext.md
+  fulltext_sha256: e804d4546ee49a45196ff5dcff51afe2d81941fda7d48d4df16a7a0e20621b5c
+rules:
+- rule_id: MR
+  kind: doctrine
+  statement: 引用本 pack 前必须先判断文本层：第 2-11 页为古籍转写层；第 1、12-14 页为现代附益层。
+  anchor:
+    file: sources/fulltext/physiognomy/mayi-shenxiang/fulltext.md
+    start_line: 15
+    end_line: 15
+  quote: 版本说明：本 normalized source 完整保留全学网 `mayixf01` 至 `mayixf14` 的网页文字。第 2-11 页作为古籍相法转写层；第 1 页为现代前言，第 12-14 页含明显现代语汇和现代面相解释，只作现代附益层，不可作为原典一线断语。NLC/Wikimedia 两卷 PDF 仅作影印锚点，尚未完成逐页 OCR 校勘。
+  applicable_to: []
+  caveats:
+  - 避免把现代医学词汇、交通词汇和现代面相解释误当原典
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: MAYISHENXIAN-MR
+  kind: doctrine
+  statement: 五官、十二宫、十三部位可作为传统相法术语定位框架。
+  anchor: null
+  quote: 五官、十二宫、十三部位可作为传统相法术语定位框架。
+  applicable_to: []
+  caveats:
+  - 真人外貌相关输出必须改写为“古籍如何说”，不得输出决定论结论
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: MAYISHENXIAN-003
+  kind: doctrine
+  statement: 金木水火土形相是传统象数分类，不是现代人格、能力或健康诊断。
+  anchor: null
+  quote: 金木水火土形相是传统象数分类，不是现代人格、能力或健康诊断。
+  applicable_to: []
+  caveats:
+  - 不得据此判断现实人的价值、职业、品行或健康
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: MAYISHENXIAN-004
+  kind: doctrine
+  statement: 骨肉、四肢、手纹条目多含寿夭、贫贱、刑伤、疾病等高风险断语。
+  anchor: null
+  quote: 夫手足者谓之四肢，以象四时，加之以首，谓之五体，以象五行。
+  applicable_to: []
+  caveats:
+  - 涉及医疗、寿命、伤残、婚育、生死、刑伤的内容必须拒绝现实化硬断
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: MAYISHENXIAN-005
+  kind: doctrine
+  statement: 石室神异赋、金锁赋等赋文适合做术语索引和跨书对读线索。
+  anchor: null
+  quote: 议论争差识者稀　附于金锁号银匙
+  applicable_to: []
+  caveats:
+  - 赋文中的强断语不得脱离文本语境应用到真人
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: MAYISHENXIAN-006
+  kind: doctrine
+  statement: 本 pack 是全学网通行网页本完整转写，不是 NLC/Wikimedia 两卷影印本逐字 OCR 校本。
+  anchor:
+    file: sources/fulltext/physiognomy/mayi-shenxiang/fulltext.md
+    start_line: 15
+    end_line: 15
+  quote: 版本说明：本 normalized source 完整保留全学网 `mayixf01` 至 `mayixf14` 的网页文字。第 2-11 页作为古籍相法转写层；第 1 页为现代前言，第 12-14 页含明显现代语汇和现代面相解释，只作现代附益层，不可作为原典一线断语。NLC/Wikimedia 两卷 PDF 仅作影印锚点，尚未完成逐页 OCR 校勘。
+  applicable_to: []
+  caveats:
+  - 对外说明必须保留“网页转写本/未校影印本”的版本限定
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null

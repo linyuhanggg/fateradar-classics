@@ -1,0 +1,659 @@
+schema_version: fateradar-rules-v2
+book:
+  slug: xingming-suyuan
+  system: xingming
+  title: 星命溯源
+  script: traditional
+  fulltext: sources/fulltext/xingming/xingming-suyuan/fulltext.md
+  fulltext_sha256: d1fdf5298e2a830cdd03140c404c7c42ec44ee15b7dc312053dad3795e6f22bd
+rules:
+- rule_id: XINGMINGSUYU-XR
+  kind: doctrine
+  statement: M01 主曜身宫与经用
+  anchor: null
+  quote: M01 主曜身宫与经用
+  applicable_to: []
+  caveats: []
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: XR-01
+  kind: doctrine
+  statement: 01 五曜连珠
+  anchor:
+    file: sources/fulltext/xingming/xingming-suyuan/fulltext.md
+    start_line: 158
+    end_line: 158
+  quote: 五曜連珠二星合璧戴天履地出乾入㢲文武兩班君臣慶㑹天地開明山澤通氣衆星朝北羣曜拱南居三隔三守一空一水火既濟風雷鼓舞縱闗横關關拱闔拱首尾隂陽居四正火羅計孛守四維
+  applicable_to: []
+  caveats: []
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: XINGMINGSUYU-XR-01
+  kind: doctrine
+  statement: 02 二星合璧
+  anchor:
+    file: sources/fulltext/xingming/xingming-suyuan/fulltext.md
+    start_line: 158
+    end_line: 158
+  quote: 五曜連珠二星合璧戴天履地出乾入㢲文武兩班君臣慶㑹天地開明山澤通氣衆星朝北羣曜拱南居三隔三守一空一水火既濟風雷鼓舞縱闗横關關拱闔拱首尾隂陽居四正火羅計孛守四維
+  applicable_to: []
+  caveats: []
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: XINGMINGSUYU-004
+  kind: doctrine
+  statement: 03 朝拱辅夹
+  anchor:
+    file: sources/fulltext/xingming/xingming-suyuan/fulltext.md
+    start_line: 177
+    end_line: 177
+  quote: 向日曰朝三合曰拱身命主及諸強宫輔弼日月之前後曰輔日月夾身命主及諸強宫曰夾
+  applicable_to: []
+  caveats: []
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: XINGMINGSUYU-005
+  kind: doctrine
+  statement: 04 经纬夹拱
+  anchor:
+    file: sources/fulltext/xingming/xingming-suyuan/fulltext.md
+    start_line: 100
+    end_line: 100
+  quote: 且論天經地緯夾拱不離者為貴有甲寅生人亥宫立命木在子水居戍命躔璧度坐天門之上此是經緯夾拱今為商賈之人何也果老聞之一哂而言曰子知其一不知其二此水木分明經緯然也斯命坐於刼殺水漂白羊之宫木入齊瓶之地何況水木乃我所用水為田宅之主曜来傷才帛木為官禄之用
+  applicable_to: []
+  caveats: []
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: XINGMINGSUYU-006
+  kind: doctrine
+  statement: 05 卦禄斗并
+  anchor:
+    file: sources/fulltext/xingming/xingming-suyuan/fulltext.md
+    start_line: 385
+    end_line: 385
+  quote: 卦氣曰卦禄宫曰禄斗杓曰斗此三者或併為一宫或併為一星或禄主居斗杓或斗杓指禄勲或禄入卦宫或卦入禄宮皆有係身命者主貴
+  applicable_to: []
+  caveats: []
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: XINGMINGSUYU-007
+  kind: doctrine
+  statement: 06 阴注阳受
+  anchor:
+    file: sources/fulltext/xingming/xingming-suyuan/fulltext.md
+    start_line: 104
+    end_line: 104
+  quote: 又問隂注陽受身命值之則可化㓙為吉更兼吉星乃是利名之人也有庚辰生人四月夘時酉土坐命坐注受之地犯刑而死者何也荅曰此金為羊刃之煞又值咸池居于命宫甲戌旬中無申酉將何為美豈不為酒色而害己亡身也
+  applicable_to: []
+  caveats: []
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: XINGMINGSUYU-008
+  kind: doctrine
+  statement: 07 七政并旺
+  anchor: null
+  quote: 日月五星各得其所富貴之原也如日午月未水居巳申金居辰酉火居夘戌木居寅亥土居子丑是也
+  applicable_to: []
+  caveats: []
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: XINGMINGSUYU-009
+  kind: doctrine
+  statement: 08 四主咸屯
+  anchor:
+    file: sources/fulltext/xingming/xingming-suyuan/fulltext.md
+    start_line: 262
+    end_line: 262
+  quote: 身主命主度主夀元主四主於内為惡曜所夾所傷而或居䧟弱失經必主貧夭
+  applicable_to: []
+  caveats: []
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: XINGMINGSUYU-010
+  kind: doctrine
+  statement: 09 拱夹不起
+  anchor:
+    file: sources/fulltext/xingming/xingming-suyuan/fulltext.md
+    start_line: 372
+    end_line: 372
+  quote: 拱三方相向也夾命宫左右相輔也不起星躔本度也如火為命而火星即躔於命垣火度是也拱夾之星如日月福官經緯財田為吉又不宜餘星混之混則拱夾不専反無力矣若㐫殺拱夾者其禍尤速原星不起非獨命元凢福官財田皆喜守照本宫本度又十干化曜福祿印貴權蔭之星夾拱者亦吉若暗
+  applicable_to: []
+  caveats: []
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: XR-02
+  kind: doctrine
+  statement: 01 度主为正
+  anchor: null
+  quote: 01 度主为正
+  applicable_to: []
+  caveats: []
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: XINGMINGSUYU-XR-02
+  kind: doctrine
+  statement: 02 三主互参
+  anchor:
+    file: sources/fulltext/xingming/xingming-suyuan/fulltext.md
+    start_line: 529
+    end_line: 529
+  quote: 一身命躔隂度者主次胎生又晝用日躔夜用月躔陽度者一三五七九隂度者二四六八十是也宫身度三主俱躔陽度者主富貴謂之三陽開泰格男純陽女純隂為妙
+  applicable_to: []
+  caveats: []
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: XINGMINGSUYU-013
+  kind: doctrine
+  statement: 03 转生取用
+  anchor: null
+  quote: 03 转生取用
+  applicable_to: []
+  caveats: []
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: XINGMINGSUYU-014
+  kind: doctrine
+  statement: 04 飞廉守照
+  anchor: null
+  quote: 04 飞廉守照
+  applicable_to: []
+  caveats: []
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: XINGMINGSUYU-015
+  kind: doctrine
+  statement: 05 一星满用
+  anchor:
+    file: sources/fulltext/xingming/xingming-suyuan/fulltext.md
+    start_line: 396
+    end_line: 396
+  quote: 一觀命局面在乎變通假如四火為命或失經於水得木氣為援吉若水孛又髙於木氣展轉互相生亦可取用飛㢘守照遇星制伏則不為害諸星沉退一星滿用大貴
+  applicable_to: []
+  caveats: []
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: XINGMINGSUYU-016
+  kind: doctrine
+  statement: 06 恩主随身
+  anchor:
+    file: sources/fulltext/xingming/xingming-suyuan/fulltext.md
+    start_line: 399
+    end_line: 399
+  quote: 一官禄星宜守照身命若化禄魁天地人三元大貴一恩主随身為富貴格假如坐四土火為恩與月同行又是夜生得令得時更遇生旺諸吉扶之為一二三品之貴如庚辰四月亥時女土泊命火炁月在畢行氐限輒登侍郎尚書最怕土退行縱有吉星為援亦終不吉一飛亷守命主夭湏看格局髙強有救有
+  applicable_to: []
+  caveats: []
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: XINGMINGSUYU-017
+  kind: doctrine
+  statement: 07 官魁化曜
+  anchor: null
+  quote: 〔炁月〕 乙〔水日〕 丙〔羅羅〕 丁〔計計〕 戊〔孛火〕
+  applicable_to: []
+  caveats: []
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: XR-03
+  kind: doctrine
+  statement: 01 五星四时令旺
+  anchor:
+    file: sources/fulltext/xingming/xingming-suyuan/fulltext.md
+    start_line: 29
+    end_line: 29
+  quote: 窠更不拘其神煞星専時令須分體用方可斷其榮枯星徤身強官而富富而夀格髙星困苗不秀秀不實是乃星躔失度若斯當問人生分野而通之更詳正闗闔拱闢拱有官禄而無用宫乃蔵其刃雄或刑囚而不妨殺不加于二主盖吉曜失時吉而不吉凶星得地㐫莫能㐫身命官福最喜三元左經右緯須
+  applicable_to: 
+  - key: xingyao
+    value: 水星
+  - key: xingyao
+    value: 金星
+  - key: xingyao
+    value: 火星
+  - key: xingyao
+    value: 木星
+  - key: xingyao
+    value: 土星
+  caveats: []
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: XINGMINGSUYU-XR-03
+  kind: doctrine
+  statement: 02 三冬之木遇水寒
+  anchor:
+    file: sources/fulltext/xingming/xingming-suyuan/fulltext.md
+    start_line: 39
+    end_line: 39
+  quote: 切以三冬之木遇水而寒九夏之土逢火而燥金埋土而反晦土渾水而致濁無根之木遇惡水而漂泛東西受制之土見猛水而崩潰四出冬金遇月飢寒刺骨春金見月淡薄無成大逢月朗則無權金得火明而煥發寒月最喜扵陽夏火不妨見月未垣安命太陽行限則柔而能剛星度為元太隂司用則懦而
+  applicable_to: []
+  caveats: []
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: XINGMINGSUYU-020
+  kind: doctrine
+  statement: 03 四火懼漂流四木怕金健
+  anchor:
+    file: sources/fulltext/xingming/xingming-suyuan/fulltext.md
+    start_line: 77
+    end_line: 77
+  quote: 既令旺相此鬼縱在側不為忌矣因閲天綱集有曰爍爍陽光火勢不忌娟娟蟾影土計為妨四火懼見漂流四木怕逢金健四金坐度惟怕炎火四土何則為忌强梁之木要得金剛四水何則為防壅遏之勢要得木〔音乂〕夀甄迦羅限度邐行而無滯福阿僧祇命源妥安而有氣〔甄迦羅阿僧祇比西竺國語數無
+  applicable_to: 
+  - key: xingyao
+    value: 火星
+  - key: xingyao
+    value: 木星
+  - key: xingyao
+    value: 金星
+  - key: xingyao
+    value: 水星
+  caveats: []
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: XINGMINGSUYU-021
+  kind: doctrine
+  statement: 04 寒月喜阳
+  anchor:
+    file: sources/fulltext/xingming/xingming-suyuan/fulltext.md
+    start_line: 39
+    end_line: 39
+  quote: 切以三冬之木遇水而寒九夏之土逢火而燥金埋土而反晦土渾水而致濁無根之木遇惡水而漂泛東西受制之土見猛水而崩潰四出冬金遇月飢寒刺骨春金見月淡薄無成大逢月朗則無權金得火明而煥發寒月最喜扵陽夏火不妨見月未垣安命太陽行限則柔而能剛星度為元太隂司用則懦而
+  applicable_to: 
+  - key: xingyao
+    value: 太阳
+  caveats: []
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: XINGMINGSUYU-022
+  kind: doctrine
+  statement: 05 时令决疑
+  anchor:
+    file: sources/fulltext/xingming/xingming-suyuan/fulltext.md
+    start_line: 29
+    end_line: 29
+  quote: 窠更不拘其神煞星専時令須分體用方可斷其榮枯星徤身強官而富富而夀格髙星困苗不秀秀不實是乃星躔失度若斯當問人生分野而通之更詳正闗闔拱闢拱有官禄而無用宫乃蔵其刃雄或刑囚而不妨殺不加于二主盖吉曜失時吉而不吉凶星得地㐫莫能㐫身命官福最喜三元左經右緯須
+  applicable_to: []
+  caveats: []
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: XR-04
+  kind: doctrine
+  statement: 01 斗杓卦气唐符国印
+  anchor:
+    file: sources/fulltext/xingming/xingming-suyuan/fulltext.md
+    start_line: 133
+    end_line: 133
+  quote: 仙曰論命以斗杓卦氣唐符國印天雄地雌為主世俗術士尚不能曉何以知命夫斗杓者北斗之柄也卦氣者天禄之餘也唐符者直年之星也國印者朝廷之印也天雄者乾象也地雌者坤象也如帝王命合局無斗杓不能致一人之位官貴命無卦氣則安可食禄武官唐符不得地難握重權正印國印值空
+  applicable_to: []
+  caveats: []
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: XINGMINGSUYU-XR-04
+  kind: doctrine
+  statement: 02 天雄阳刃在命
+  anchor:
+    file: sources/fulltext/xingming/xingming-suyuan/fulltext.md
+    start_line: 89
+    end_line: 89
+  quote: 先生曰慈心敬順善曜居命位之鄉獰然凶頑惡星纒命位之旁陽刃在命性必横加天雄者性必雄唯官星忌之〔官禄主忌㑹天雄〕
+  applicable_to: []
+  caveats: []
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: XINGMINGSUYU-025
+  kind: doctrine
+  statement: 03 飞廉浮沉羊刃
+  anchor: null
+  quote: 03 飞廉浮沉羊刃
+  applicable_to: []
+  caveats: []
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: XINGMINGSUYU-026
+  kind: doctrine
+  statement: 04 天耗地耗
+  anchor:
+    file: sources/fulltext/xingming/xingming-suyuan/fulltext.md
+    start_line: 34
+    end_line: 34
+  quote: 㑹於四㐫遇衝傷必患惡血天狗絶嗣孤寡無妻徳星坐於崇勲魁刑權重爵禄居于嵗駕伏煞官髙煞金為刃休逢刼木為灾難避天雄地雌怕居禄位天耗地耗切忌財鄉論煞論刑煞重而刑不可救說凶說吉凶多不可作吉言華盖紫氣是良辰天乙䕃星為善曜三方有氣必須叅詳四角無星未為㐫斷婦
+  applicable_to: []
+  caveats: []
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: XINGMINGSUYU-027
+  kind: doctrine
+  statement: 05 闌干煞缢死
+  anchor: null
+  quote: 05 闌干煞缢死
+  applicable_to: []
+  caveats: []
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: XINGMINGSUYU-028
+  kind: doctrine
+  statement: 06 太岁填实
+  anchor:
+    file: sources/fulltext/xingming/xingming-suyuan/fulltext.md
+    start_line: 480
+    end_line: 480
+  quote: 一太嵗填實惡星或在命限主灾犯者死
+  applicable_to: []
+  caveats: []
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: XR-05
+  kind: doctrine
+  statement: 01 量天尺定坐宫
+  anchor:
+    file: sources/fulltext/xingming/xingming-suyuan/fulltext.md
+    start_line: 138
+    end_line: 138
+  quote: 憕曰富貴貧賤盡知之矣窮通壽夭在行乎限願盡傳焉老仙曰此秘術不可轉傳於人以泄漏天機生則目盲死無棺也憕曰謹記仙曰世人都以官主論行限十不應一可哂可哂大扺行限先依量天尺上按定坐宫次依洞㣲大限行去專以生尅制化為窮通夀夭之别也假如斗角奎井安命以木為主行四
+  applicable_to: []
+  caveats: []
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: XINGMINGSUYU-XR-05
+  kind: doctrine
+  statement: 02 洞微大限行限
+  anchor:
+    file: sources/fulltext/xingming/xingming-suyuan/fulltext.md
+    start_line: 138
+    end_line: 138
+  quote: 憕曰富貴貧賤盡知之矣窮通壽夭在行乎限願盡傳焉老仙曰此秘術不可轉傳於人以泄漏天機生則目盲死無棺也憕曰謹記仙曰世人都以官主論行限十不應一可哂可哂大扺行限先依量天尺上按定坐宫次依洞㣲大限行去專以生尅制化為窮通夀夭之别也假如斗角奎井安命以木為主行四
+  applicable_to: []
+  caveats: []
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: XINGMINGSUYU-031
+  kind: doctrine
+  statement: 03 行限交宫过度
+  anchor:
+    file: sources/fulltext/xingming/xingming-suyuan/fulltext.md
+    start_line: 482
+    end_line: 482
+  quote: 一共命貧富壽夭不同吾觀時有八刻刻内有卒風暴雨隂晴晦朔是一箇時中有變兩三様天氣更有日月循行交宫過度明晦不一雖曰共時其刻有不同天時人身相合未免争差有彷彿者時刻相去不逺出處大不同者初未交界故也
+  applicable_to: []
+  caveats: []
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: XINGMINGSUYU-032
+  kind: doctrine
+  statement: 04 流年三方对照
+  anchor: null
+  quote: 04 流年三方对照
+  applicable_to: []
+  caveats: []
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: XINGMINGSUYU-033
+  kind: doctrine
+  statement: 05 限主病再延
+  anchor:
+    file: sources/fulltext/xingming/xingming-suyuan/fulltext.md
+    start_line: 500
+    end_line: 500
+  quote: 一行限遇忌星當亡若限主忌曜居旺樂廟止是病再延四年或一二年如癸亥生人命在心水土在刼尾七十一病幾死又踰十四行昴度方死其類是也
+  applicable_to: []
+  caveats: []
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: XINGMINGSUYU-034
+  kind: doctrine
+  statement: 06 衝刑壓逼
+  anchor:
+    file: sources/fulltext/xingming/xingming-suyuan/fulltext.md
+    start_line: 106
+    end_line: 106
+  quote: 又問天馬地驛吉㓙何以叅詳答曰居垣入廟則吉遇貴禄者為最妙得長生旺相者尤竒嫌值空亡不宜天耗地耗休囚死絶又忌戰衝刑尅
+  applicable_to: []
+  caveats: []
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: XR-06
+  kind: doctrine
+  statement: 01 妇命以财福为重
+  anchor:
+    file: sources/fulltext/xingming/xingming-suyuan/fulltext.md
+    start_line: 35
+    end_line: 35
+  quote: 人以財福為重官星可作天元只宜坐貴不宜衝惟忌見滛又見合桃花金水坐子夘是無禮之人金孛咸池騎四馬為勞瘵之鬼縱有朱唇粉黛難免送舊迎新須是雪月風花不無飄蓬落魄此則舉其綱領更探而索微要知造化𤣥機細騐天時得失天元玉册歴象無差細辨盈虚貴賤定矣
+  applicable_to: []
+  caveats: []
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: XINGMINGSUYU-XR-06
+  kind: doctrine
+  statement: 02 妇人陶到木躔
+  anchor:
+    file: sources/fulltext/xingming/xingming-suyuan/fulltext.md
+    start_line: 48
+    end_line: 48
+  quote: 多學少成火若當權恣行酷毒沉謀熟慮為縁土入命宫巧筭多機葢是計居垣位獨孛則為人慳吝單羅則賦性貪婪紫氣照臨必主伶俐雖然星辰如此又看月令若何女命陶到木躔防夫害子男命限到月躔招妻納妾水孛如守田財難招祖業火羅如臨父母㓜失慈親命主逢陽終富貴安身傍母必尊榮
+  applicable_to: []
+  caveats: []
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: XINGMINGSUYU-037
+  kind: doctrine
+  statement: 03 五星先天 14 等口诀
+  anchor:
+    file: sources/fulltext/xingming/xingming-suyuan/fulltext.md
+    start_line: 113
+    end_line: 113
+  quote: 先天心法者老仙有先天之機觀人之命而得於心其驗如神故謂先天心法不可輕以傳人也
+  applicable_to: []
+  caveats: []
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: XINGMINGSUYU-038
+  kind: doctrine
+  statement: 04 妇人产亡
+  anchor:
+    file: sources/fulltext/xingming/xingming-suyuan/fulltext.md
+    start_line: 536
+    end_line: 536
+  quote: 一日月拱夾陽刄宜武職刄在命又喜日月拱夾大權武貴驚人之要勢士人不祥女命主産亡
+  applicable_to: []
+  caveats: []
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: XINGMINGSUYU-039
+  kind: doctrine
+  statement: 05 鼓盆之嘆
+  anchor:
+    file: sources/fulltext/xingming/xingming-suyuan/fulltext.md
+    start_line: 91
+    end_line: 91
+  quote: 犯五星禍患尤大先生曰汝知孤寡命乎曰敢請先生指示殊愉命曰此命格局善然妻宫在亥金在巳妻宫壞矣惟木得垣妻雖有而不免鼓盆之歎餘皆凖此例
+  applicable_to: []
+  caveats: []
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: XR-07
+  kind: doctrine
+  statement: 01 化气从天官、正气从果老
+  anchor:
+    file: sources/fulltext/xingming/xingming-suyuan/fulltext.md
+    start_line: 9
+    end_line: 9
+  quote: 之書以此為鼻祖别有所謂果老星宗者葢因此本而廣之其後又有天官五星術與此頗異據理而論化氣當從天官正氣當從果老二家之術可互㕘其論星度乘除生尅及兼取值年神煞亦未可盡廢也十二月恭校上
+  applicable_to: []
+  caveats: []
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: XINGMINGSUYU-XR-07
+  kind: doctrine
+  statement: 02 与果老星宗互参原则
+  anchor:
+    file: sources/fulltext/xingming/xingming-suyuan/fulltext.md
+    start_line: 9
+    end_line: 9
+  quote: 之書以此為鼻祖别有所謂果老星宗者葢因此本而廣之其後又有天官五星術與此頗異據理而論化氣當從天官正氣當從果老二家之術可互㕘其論星度乘除生尅及兼取值年神煞亦未可盡廢也十二月恭校上
+  applicable_to: []
+  caveats: []
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: XINGMINGSUYU-042
+  kind: doctrine
+  statement: 03 不替代子平
+  anchor: null
+  quote: 03 不替代子平
+  applicable_to: []
+  caveats: []
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: XINGMINGSUYU-043
+  kind: doctrine
+  statement: 04 旁证层接受相术
+  anchor: null
+  quote: 04 旁证层接受相术
+  applicable_to: []
+  caveats: []
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: XR-08
+  kind: doctrine
+  statement: 01 卷二·后天口诀全段
+  anchor: null
+  quote: 老仙曰我之與世遇無他葢時變人輕不可與傳仙道惟汝淳愿質朴可傳憕曰仙道不願學也但星命之中願聞一二足矣
+  applicable_to: []
+  caveats: []
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: XINGMINGSUYU-XR-08
+  kind: doctrine
+  statement: 02 卷四前篇寿夭案例
+  anchor: null
+  quote: 余在江湖二十餘年訪求訣命之士甚多考藝多無實學與果老所傳大不侔矣其中間有可取條目及彷彿格局不曽該載凡例者今續附于后以俟叅用焉
+  applicable_to: []
+  caveats: []
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: XINGMINGSUYU-046
+  kind: doctrine
+  statement: 03 卷四后篇寿夭案例与具体死法
+  anchor: null
+  quote: 03 卷四后篇寿夭案例与具体死法
+  applicable_to: []
+  caveats: []
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: XINGMINGSUYU-047
+  kind: doctrine
+  statement: 04 妇人产亡 / 三嫁 / 师尼
+  anchor:
+    file: sources/fulltext/xingming/xingming-suyuan/fulltext.md
+    start_line: 536
+    end_line: 536
+  quote: 一日月拱夾陽刄宜武職刄在命又喜日月拱夾大權武貴驚人之要勢士人不祥女命主産亡
+  applicable_to: []
+  caveats: []
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: XINGMINGSUYU-048
+  kind: doctrine
+  statement: 05 共命贫富寿夭不同
+  anchor:
+    file: sources/fulltext/xingming/xingming-suyuan/fulltext.md
+    start_line: 482
+    end_line: 482
+  quote: 一共命貧富壽夭不同吾觀時有八刻刻内有卒風暴雨隂晴晦朔是一箇時中有變兩三様天氣更有日月循行交宫過度明晦不一雖曰共時其刻有不同天時人身相合未免争差有彷彿者時刻相去不逺出處大不同者初未交界故也
+  applicable_to: []
+  caveats: []
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null

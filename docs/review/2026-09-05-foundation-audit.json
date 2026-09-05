@@ -1,0 +1,657 @@
+{
+  "date": "2026-09-05",
+  "scope": "All rule packs inventoried; machine gates do not verify interpretation. 18 textual corrections reviewed separately; human/facsimile verification remains pending.",
+  "totals": {
+    "books": 55,
+    "fulltexts": 54,
+    "rules": 1357,
+    "anchored": 952,
+    "with_predicates": 256,
+    "verified": 0
+  },
+  "validation": {
+    "ok": true,
+    "errors": [],
+    "warning_count": 114
+  },
+  "checks": [
+    {
+      "command": "python tools/test-validate-gates.py",
+      "exit_code": 0
+    },
+    {
+      "command": "python tools/coverage-report.py --fail-under 54",
+      "exit_code": 0
+    },
+    {
+      "command": "python tools/predicate-report.py --max-wildcard 15 --check-open-values --check-art-keys",
+      "exit_code": 0
+    }
+  ],
+  "arts": {
+    "bazi": {
+      "total": 522,
+      "anchored": 403,
+      "coverage": 77.2
+    },
+    "ziwei": {
+      "total": 104,
+      "anchored": 70,
+      "coverage": 67.31
+    },
+    "qimen": {
+      "total": 40,
+      "anchored": 38,
+      "coverage": 95.0
+    },
+    "liuren": {
+      "total": 62,
+      "anchored": 34,
+      "coverage": 54.84
+    },
+    "liuyao": {
+      "total": 82,
+      "anchored": 56,
+      "coverage": 68.29
+    },
+    "qizheng": {
+      "total": 89,
+      "anchored": 50,
+      "coverage": 56.18
+    }
+  },
+  "predicate_coverage": {
+    "bazi": {
+      "anchored": 403,
+      "catalog_titles": 0,
+      "with_predicates": 140,
+      "coverage": 34.74,
+      "wildcard": 15,
+      "wildcard_pct": 10.71,
+      "fact_keys": 7,
+      "fact_key_names": [
+        "geju",
+        "kongwang",
+        "rizhu",
+        "rizhu_strength",
+        "shensha",
+        "shishen",
+        "yueling"
+      ]
+    },
+    "ziwei": {
+      "anchored": 70,
+      "catalog_titles": 0,
+      "with_predicates": 54,
+      "coverage": 77.14,
+      "wildcard": 0,
+      "wildcard_pct": 0.0,
+      "fact_keys": 5,
+      "fact_key_names": [
+        "daxian",
+        "liunian_taisui",
+        "sihua",
+        "ziwei_palace",
+        "ziwei_star"
+      ]
+    },
+    "qimen": {
+      "anchored": 38,
+      "catalog_titles": 0,
+      "with_predicates": 7,
+      "coverage": 18.42,
+      "wildcard": 1,
+      "wildcard_pct": 14.29,
+      "fact_keys": 4,
+      "fact_key_names": [
+        "bamen",
+        "bashen",
+        "geju_qimen",
+        "zhifu"
+      ]
+    },
+    "liuren": {
+      "anchored": 34,
+      "catalog_titles": 0,
+      "with_predicates": 15,
+      "coverage": 44.12,
+      "wildcard": 1,
+      "wildcard_pct": 6.67,
+      "fact_keys": 4,
+      "fact_key_names": [
+        "keti",
+        "kongwang",
+        "sanchuan",
+        "tianjiang"
+      ]
+    },
+    "liuyao": {
+      "anchored": 56,
+      "catalog_titles": 0,
+      "with_predicates": 21,
+      "coverage": 37.5,
+      "wildcard": 3,
+      "wildcard_pct": 14.29,
+      "fact_keys": 5,
+      "fact_key_names": [
+        "dongyao",
+        "fushen",
+        "liuqin",
+        "liushen",
+        "shiyao"
+      ]
+    },
+    "qizheng": {
+      "anchored": 50,
+      "catalog_titles": 31,
+      "with_predicates": 11,
+      "coverage": 57.89,
+      "wildcard": 1,
+      "wildcard_pct": 9.09,
+      "fact_keys": 4,
+      "fact_key_names": [
+        "gongwei",
+        "miaowang",
+        "xingyao",
+        "xiudu"
+      ]
+    }
+  },
+  "books": [
+    {
+      "book": "滴天髓阐微",
+      "path": "references/books/bazi/ditiansui-chanwei/rules.yaml",
+      "rules": 52,
+      "anchored": 37,
+      "with_predicates": 8,
+      "verified": 0,
+      "fulltext": true
+    },
+    {
+      "book": "命理约言",
+      "path": "references/books/bazi/mingli-yueyan/rules.yaml",
+      "rules": 8,
+      "anchored": 0,
+      "with_predicates": 0,
+      "verified": 0,
+      "fulltext": true
+    },
+    {
+      "book": "穷通宝鉴",
+      "path": "references/books/bazi/qiongtong-baojian/rules.yaml",
+      "rules": 53,
+      "anchored": 47,
+      "with_predicates": 45,
+      "verified": 0,
+      "fulltext": true
+    },
+    {
+      "book": "三命通会",
+      "path": "references/books/bazi/sanming-tonghui/rules.yaml",
+      "rules": 106,
+      "anchored": 90,
+      "with_predicates": 43,
+      "verified": 0,
+      "fulltext": true
+    },
+    {
+      "book": "神峰通考",
+      "path": "references/books/bazi/shenfeng-tongkao/rules.yaml",
+      "rules": 5,
+      "anchored": 0,
+      "with_predicates": 0,
+      "verified": 0,
+      "fulltext": true
+    },
+    {
+      "book": "渊海子平",
+      "path": "references/books/bazi/yuanhai-ziping/rules.yaml",
+      "rules": 39,
+      "anchored": 18,
+      "with_predicates": 11,
+      "verified": 0,
+      "fulltext": true
+    },
+    {
+      "book": "子平真诠",
+      "path": "references/books/bazi/ziping-zhenquan/rules.yaml",
+      "rules": 18,
+      "anchored": 16,
+      "with_predicates": 15,
+      "verified": 0,
+      "fulltext": true
+    },
+    {
+      "book": "卜筮正宗",
+      "path": "references/books/divination/bushi-zhengzong/rules.yaml",
+      "rules": 7,
+      "anchored": 1,
+      "with_predicates": 0,
+      "verified": 0,
+      "fulltext": true
+    },
+    {
+      "book": "皇极经世书",
+      "path": "references/books/divination/huangji-jingshi/rules.yaml",
+      "rules": 21,
+      "anchored": 9,
+      "with_predicates": 0,
+      "verified": 0,
+      "fulltext": true
+    },
+    {
+      "book": "黄金策",
+      "path": "references/books/divination/huangjin-ce/rules.yaml",
+      "rules": 18,
+      "anchored": 13,
+      "with_predicates": 6,
+      "verified": 0,
+      "fulltext": true
+    },
+    {
+      "book": "火珠林",
+      "path": "references/books/divination/huozhu-lin/rules.yaml",
+      "rules": 9,
+      "anchored": 5,
+      "with_predicates": 3,
+      "verified": 0,
+      "fulltext": true
+    },
+    {
+      "book": "梅花易数",
+      "path": "references/books/divination/meihua-yishu/rules.yaml",
+      "rules": 34,
+      "anchored": 31,
+      "with_predicates": 0,
+      "verified": 0,
+      "fulltext": true
+    },
+    {
+      "book": "增删卜易",
+      "path": "references/books/divination/zengshan-buyi/rules.yaml",
+      "rules": 48,
+      "anchored": 37,
+      "with_predicates": 12,
+      "verified": 0,
+      "fulltext": true
+    },
+    {
+      "book": "御纂周易折中",
+      "path": "references/books/divination/zhouyi-zhezhong/rules.yaml",
+      "rules": 31,
+      "anchored": 22,
+      "with_predicates": 0,
+      "verified": 0,
+      "fulltext": true
+    },
+    {
+      "book": "地理辨正",
+      "path": "references/books/fengshui/dili-bianzheng/rules.yaml",
+      "rules": 5,
+      "anchored": 0,
+      "with_predicates": 0,
+      "verified": 0,
+      "fulltext": true
+    },
+    {
+      "book": "都天宝照经",
+      "path": "references/books/fengshui/dutian-baozhao-jing/rules.yaml",
+      "rules": 14,
+      "anchored": 13,
+      "with_predicates": 0,
+      "verified": 0,
+      "fulltext": true
+    },
+    {
+      "book": "撼龙经",
+      "path": "references/books/fengshui/hanlong-jing/rules.yaml",
+      "rules": 15,
+      "anchored": 13,
+      "with_predicates": 0,
+      "verified": 0,
+      "fulltext": true
+    },
+    {
+      "book": "黄帝宅经",
+      "path": "references/books/fengshui/huangdi-zhaijing/rules.yaml",
+      "rules": 7,
+      "anchored": 6,
+      "with_predicates": 0,
+      "verified": 0,
+      "fulltext": true
+    },
+    {
+      "book": "青囊奥语",
+      "path": "references/books/fengshui/qingnang-aoyu/rules.yaml",
+      "rules": 8,
+      "anchored": 6,
+      "with_predicates": 0,
+      "verified": 0,
+      "fulltext": true
+    },
+    {
+      "book": "青囊经",
+      "path": "references/books/fengshui/qingnang-jing/rules.yaml",
+      "rules": 11,
+      "anchored": 4,
+      "with_predicates": 0,
+      "verified": 0,
+      "fulltext": true
+    },
+    {
+      "book": "青囊序",
+      "path": "references/books/fengshui/qingnang-xu/rules.yaml",
+      "rules": 11,
+      "anchored": 11,
+      "with_predicates": 0,
+      "verified": 0,
+      "fulltext": true
+    },
+    {
+      "book": "入地眼全书",
+      "path": "references/books/fengshui/rudi-yan-quanshu/rules.yaml",
+      "rules": 7,
+      "anchored": 1,
+      "with_predicates": 0,
+      "verified": 0,
+      "fulltext": true
+    },
+    {
+      "book": "沈氏玄空学",
+      "path": "references/books/fengshui/shenshi-xuankong-xue/rules.yaml",
+      "rules": 5,
+      "anchored": 1,
+      "with_predicates": 0,
+      "verified": 0,
+      "fulltext": true
+    },
+    {
+      "book": "天玉经",
+      "path": "references/books/fengshui/tianyu-jing/rules.yaml",
+      "rules": 16,
+      "anchored": 14,
+      "with_predicates": 0,
+      "verified": 0,
+      "fulltext": true
+    },
+    {
+      "book": "雪心赋",
+      "path": "references/books/fengshui/xuexin-fu/rules.yaml",
+      "rules": 5,
+      "anchored": 1,
+      "with_predicates": 0,
+      "verified": 0,
+      "fulltext": true
+    },
+    {
+      "book": "阳宅三要",
+      "path": "references/books/fengshui/yangzhai-sanyao/rules.yaml",
+      "rules": 7,
+      "anchored": 3,
+      "with_predicates": 0,
+      "verified": 0,
+      "fulltext": true
+    },
+    {
+      "book": "阳宅十书",
+      "path": "references/books/fengshui/yangzhai-shishu/rules.yaml",
+      "rules": 18,
+      "anchored": 8,
+      "with_predicates": 0,
+      "verified": 0,
+      "fulltext": true
+    },
+    {
+      "book": "疑龙经",
+      "path": "references/books/fengshui/yilong-jing/rules.yaml",
+      "rules": 25,
+      "anchored": 24,
+      "with_predicates": 0,
+      "verified": 0,
+      "fulltext": true
+    },
+    {
+      "book": "葬法倒杖",
+      "path": "references/books/fengshui/zangfa-daozhang/rules.yaml",
+      "rules": 10,
+      "anchored": 6,
+      "with_predicates": 0,
+      "verified": 0,
+      "fulltext": true
+    },
+    {
+      "book": "葬书",
+      "path": "references/books/fengshui/zangshu/rules.yaml",
+      "rules": 15,
+      "anchored": 14,
+      "with_predicates": 0,
+      "verified": 0,
+      "fulltext": true
+    },
+    {
+      "book": "兰台妙选",
+      "path": "references/books/luming-nayin/lantai-miaoxuan/rules.yaml",
+      "rules": 8,
+      "anchored": 0,
+      "with_predicates": 0,
+      "verified": 0,
+      "fulltext": true
+    },
+    {
+      "book": "李虚中命书",
+      "path": "references/books/luming-nayin/li-xuzhong-mingshu/rules.yaml",
+      "rules": 101,
+      "anchored": 100,
+      "with_predicates": 7,
+      "verified": 0,
+      "fulltext": true
+    },
+    {
+      "book": "珞琭子三命消息赋",
+      "path": "references/books/luming-nayin/luoluzi-sanming/rules.yaml",
+      "rules": 38,
+      "anchored": 26,
+      "with_predicates": 4,
+      "verified": 0,
+      "fulltext": true
+    },
+    {
+      "book": "五行精纪",
+      "path": "references/books/luming-nayin/wuxing-jingji/rules.yaml",
+      "rules": 40,
+      "anchored": 27,
+      "with_predicates": 2,
+      "verified": 0,
+      "fulltext": true
+    },
+    {
+      "book": "玉照神应真经",
+      "path": "references/books/luming-nayin/yuzhao-shenying/rules.yaml",
+      "rules": 54,
+      "anchored": 42,
+      "with_predicates": 13,
+      "verified": 0,
+      "fulltext": true
+    },
+    {
+      "book": "冰鉴",
+      "path": "references/books/physiognomy/bingjian/rules.yaml",
+      "rules": 38,
+      "anchored": 38,
+      "with_predicates": 0,
+      "verified": 0,
+      "fulltext": true
+    },
+    {
+      "book": "柳庄相法",
+      "path": "references/books/physiognomy/liuzhuang-xiangfa/rules.yaml",
+      "rules": 5,
+      "anchored": 0,
+      "with_predicates": 0,
+      "verified": 0,
+      "fulltext": true
+    },
+    {
+      "book": "麻衣神相",
+      "path": "references/books/physiognomy/mayi-shenxiang/rules.yaml",
+      "rules": 6,
+      "anchored": 2,
+      "with_predicates": 0,
+      "verified": 0,
+      "fulltext": true
+    },
+    {
+      "book": "神相全编",
+      "path": "references/books/physiognomy/shenxiang-quanbian/rules.yaml",
+      "rules": 49,
+      "anchored": 16,
+      "with_predicates": 0,
+      "verified": 0,
+      "fulltext": true
+    },
+    {
+      "book": "大六壬大全",
+      "path": "references/books/san-shi/daliuren-daquan/rules.yaml",
+      "rules": 19,
+      "anchored": 12,
+      "with_predicates": 6,
+      "verified": 0,
+      "fulltext": true
+    },
+    {
+      "book": "大六壬秘本",
+      "path": "references/books/san-shi/liuren-miben/rules.yaml",
+      "rules": 23,
+      "anchored": 14,
+      "with_predicates": 6,
+      "verified": 0,
+      "fulltext": true
+    },
+    {
+      "book": "六壬指南（一作六壬指引）",
+      "path": "references/books/san-shi/liuren-zhiyin/rules.yaml",
+      "rules": 20,
+      "anchored": 8,
+      "with_predicates": 3,
+      "verified": 0,
+      "fulltext": true
+    },
+    {
+      "book": "奇门遁甲统宗大全",
+      "path": "references/books/san-shi/qimen-dunjia-tongzhi/rules.yaml",
+      "rules": 38,
+      "anchored": 38,
+      "with_predicates": 7,
+      "verified": 0,
+      "fulltext": true
+    },
+    {
+      "book": "奇门法窍（V5.1 核验摘录）",
+      "path": "references/books/san-shi/qimen-faqiao/rules.yaml",
+      "rules": 2,
+      "anchored": 0,
+      "with_predicates": 0,
+      "verified": 0,
+      "fulltext": false
+    },
+    {
+      "book": "太乙神数",
+      "path": "references/books/san-shi/taiyi-shenshu/rules.yaml",
+      "rules": 26,
+      "anchored": 19,
+      "with_predicates": 0,
+      "verified": 0,
+      "fulltext": true
+    },
+    {
+      "book": "董公择日",
+      "path": "references/books/selection/donggong-zeri/rules.yaml",
+      "rules": 11,
+      "anchored": 4,
+      "with_predicates": 0,
+      "verified": 0,
+      "fulltext": true
+    },
+    {
+      "book": "协纪辨方书",
+      "path": "references/books/selection/xieji-bianfang-shu/rules.yaml",
+      "rules": 18,
+      "anchored": 12,
+      "with_predicates": 0,
+      "verified": 0,
+      "fulltext": true
+    },
+    {
+      "book": "星历考原",
+      "path": "references/books/selection/xingli-kaoyuan/rules.yaml",
+      "rules": 20,
+      "anchored": 14,
+      "with_predicates": 0,
+      "verified": 0,
+      "fulltext": true
+    },
+    {
+      "book": "玉匣记",
+      "path": "references/books/selection/yuqia-ji/rules.yaml",
+      "rules": 20,
+      "anchored": 9,
+      "with_predicates": 0,
+      "verified": 0,
+      "fulltext": true
+    },
+    {
+      "book": "果天经/果老星宗",
+      "path": "references/books/xingming/guotian-jing/rules.yaml",
+      "rules": 32,
+      "anchored": 8,
+      "with_predicates": 3,
+      "verified": 0,
+      "fulltext": true
+    },
+    {
+      "book": "星命溯源",
+      "path": "references/books/xingming/xingming-suyuan/rules.yaml",
+      "rules": 48,
+      "anchored": 34,
+      "with_predicates": 3,
+      "verified": 0,
+      "fulltext": true
+    },
+    {
+      "book": "星学大成",
+      "path": "references/books/xingming/xingxue-dacheng/rules.yaml",
+      "rules": 9,
+      "anchored": 8,
+      "with_predicates": 5,
+      "verified": 0,
+      "fulltext": true
+    },
+    {
+      "book": "華山陳希夷先生飛星紫微斗數原旨 / 斗數觀測錄",
+      "path": "references/books/ziwei/feixing-ziwei-doushu-yuanzhi/rules.yaml",
+      "rules": 14,
+      "anchored": 7,
+      "with_predicates": 4,
+      "verified": 0,
+      "fulltext": true
+    },
+    {
+      "book": "太微赋",
+      "path": "references/books/ziwei/taiwei-fu/rules.yaml",
+      "rules": 21,
+      "anchored": 21,
+      "with_predicates": 14,
+      "verified": 0,
+      "fulltext": true
+    },
+    {
+      "book": "紫微斗数全书",
+      "path": "references/books/ziwei/ziwei-doushu-quanshu/rules.yaml",
+      "rules": 69,
+      "anchored": 42,
+      "with_predicates": 36,
+      "verified": 0,
+      "fulltext": true
+    }
+  ]
+}

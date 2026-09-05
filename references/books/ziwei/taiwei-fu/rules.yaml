@@ -1,0 +1,398 @@
+schema_version: fateradar-rules-v2
+book:
+  slug: taiwei-fu
+  system: ziwei
+  title: 太微赋
+  script: traditional
+  fulltext: sources/fulltext/ziwei/taiwei-fu/fulltext.md
+  fulltext_sha256: 2f77ec8c47122cf18308e9c3fc06274df65695861526e4d1896e4fc59ce262c9
+rules:
+- rule_id: TR
+  kind: doctrine
+  statement: 斗数至玄至微，理旨难明；寿夭贤愚、富贵贫贱，不可一概论议。
+  anchor:
+    file: sources/fulltext/ziwei/taiwei-fu/fulltext.md
+    start_line: 5
+    end_line: 5
+  quote: 斗數至玄至微，理旨難明，雖設問於百篇之中，猶有言而未盡，至如星之分野，各有所屬，壽夭賢愚，富貴貧賤，不可一概論議。
+  applicable_to: []
+  caveats:
+  - 提醒断命须留余地，不作一概而论
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: TAIWEIFU-TR
+  kind: doctrine
+  statement: 入庙为奇，失度为虚；身命为福德之本，加以根源为穷通之资。
+  anchor:
+    file: sources/fulltext/ziwei/taiwei-fu/fulltext.md
+    start_line: 6
+    end_line: 6
+  quote: 其星分布一十二垣，數定乎三十六位，入廟為奇，失度為虛，大抵以身命為福德之本，加以根源為窮通之資。
+  applicable_to: 
+  - key: ziwei_palace
+    value: 福德
+  caveats:
+  - 入庙/失度的具体配位需查《紫微斗数全书》卷二
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: TAIWEIFU-003
+  kind: doctrine
+  statement: 禄存逢冲破，吉处藏凶。
+  anchor:
+    file: sources/fulltext/ziwei/taiwei-fu/fulltext.md
+    start_line: 15
+    end_line: 15
+  quote: 祿逢沖破，吉處藏凶。馬遇空亡，終身奔走。
+  applicable_to: 
+  - key: ziwei_star
+    value: 禄存
+  caveats:
+  - 现代教学保留为"吉中藏忧"参考，不作绝对凶论
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: TAIWEIFU-004
+  kind: doctrine
+  statement: 天马遇空亡，终身奔走。
+  anchor:
+    file: sources/fulltext/ziwei/taiwei-fu/fulltext.md
+    start_line: 15
+    end_line: 15
+  quote: 祿逢沖破，吉處藏凶。馬遇空亡，終身奔走。
+  applicable_to: 
+  - key: ziwei_star
+    value: 天马
+  caveats:
+  - 现代解读为漂泊倾向，不作绝对断语
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: TAIWEIFU-005
+  kind: doctrine
+  statement: 生逢败地发也虚花；绝处逢生，生花不败。
+  anchor:
+    file: sources/fulltext/ziwei/taiwei-fu/fulltext.md
+    start_line: 16
+    end_line: 16
+  quote: 生逢敗地，發也虛花。絕處逢生，生花不敗。
+  applicable_to: []
+  caveats:
+  - 须结合大限流年综合判断
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: TAIWEIFU-006
+  kind: doctrine
+  statement: 日月最嫌反背（日不入南、月不照北）；禄马最喜交驰（禄存与天马同会）。
+  anchor:
+    file: sources/fulltext/ziwei/taiwei-fu/fulltext.md
+    start_line: 18
+    end_line: 18
+  quote: 日月最嫌反背，祿馬最喜交馳。
+  applicable_to: []
+  caveats:
+  - 反背为不吉倾向，非铁口凶论
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: TAIWEIFU-007
+  kind: doctrine
+  statement: 紫微天府全依辅弼之功；辅弼夹帝为上品。
+  anchor:
+    file: sources/fulltext/ziwei/taiwei-fu/fulltext.md
+    start_line: 20
+    end_line: 20
+  quote: 紫微天府全依輔弼之功，七殺破軍專依羊鈴之虐。
+  applicable_to: 
+  - key: ziwei_star
+    value: 紫微
+  - key: ziwei_star
+    value: 天府
+  caveats:
+  - 须辅弼真夹（紧夹）方为上品
+  - 隔宫效力减半
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: TAIWEIFU-008
+  kind: doctrine
+  statement: 七杀破军专依羊铃之虐；诸星吉，逢凶也吉；诸星凶，逢凶也凶。
+  anchor:
+    file: sources/fulltext/ziwei/taiwei-fu/fulltext.md
+    start_line: 20
+    end_line: 20
+  quote: 紫微天府全依輔弼之功，七殺破軍專依羊鈴之虐。
+  applicable_to: []
+  caveats:
+  - 现代杀破狼格局教学已与羊铃组合分离，须按派系细分
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: TAIWEIFU-009
+  kind: doctrine
+  statement: 桃花犯主为至淫；贪居亥子，名为犯水桃花；刑遇贪狼，号曰风流彩杖。
+  anchor:
+    file: sources/fulltext/ziwei/taiwei-fu/fulltext.md
+    start_line: 36
+    end_line: 36
+  quote: 貪居亥子，名為犯水桃花。刑遇貪狼，號曰風流彩杖。
+  applicable_to: 
+  - key: ziwei_star
+    value: 贪狼
+  caveats:
+  - '"至淫"古文价值观需 reframe 为"情感繁复倾向"，不作道德定性'
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: TAIWEIFU-010
+  kind: doctrine
+  statement: 魁钺同行，位居台辅；君臣庆会，材善经邦。
+  anchor:
+    file: sources/fulltext/ziwei/taiwei-fu/fulltext.md
+    start_line: 24
+    end_line: 24
+  quote: 魁鉞同行，位居臺輔。
+  applicable_to: []
+  caveats:
+  - 现代解读为贵人扶助倾向，不作绝对仕途论
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: TAIWEIFU-011
+  kind: doctrine
+  statement: 太阳居午，谓之日丽中天，有专权之贵、敌国之富。
+  anchor:
+    file: sources/fulltext/ziwei/taiwei-fu/fulltext.md
+    start_line: 32
+    end_line: 32
+  quote: 太陽居午，謂之日麗中天，有專權之貴，敵國之富。
+  applicable_to: 
+  - key: ziwei_star
+    value: 太阳
+  caveats:
+  - 现代为富贵倾向参考，不作铁口断富
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: TAIWEIFU-012
+  kind: doctrine
+  statement: 太阴居子，号曰水澄桂萼，得清要之职、忠谏之材。
+  anchor:
+    file: sources/fulltext/ziwei/taiwei-fu/fulltext.md
+    start_line: 33
+    end_line: 33
+  quote: 太陰居子，號曰水澄桂萼，得清要之職，忠諫之材。
+  applicable_to: 
+  - key: ziwei_star
+    value: 太阴
+  caveats:
+  - 现代为清贵职业倾向参考
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: TAIWEIFU-013
+  kind: doctrine
+  statement: 太阳会文昌于官禄，皇殿朝班，富贵全美。
+  anchor:
+    file: sources/fulltext/ziwei/taiwei-fu/fulltext.md
+    start_line: 40
+    end_line: 40
+  quote: 太陽會文昌於官祿，皇殿朝班，富貴全美。
+  applicable_to: 
+  - key: ziwei_star
+    value: 太阳
+    scope:
+      palace: 事业
+  - key: ziwei_star
+    value: 文昌
+    scope:
+      palace: 事业
+  - key: ziwei_palace
+    value: 事业
+  caveats:
+  - 现代为学业仕途倾向
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: TAIWEIFU-014
+  kind: doctrine
+  statement: 太阴会文曲于妻宫，蟾宫折桂，文章全盛。
+  anchor:
+    file: sources/fulltext/ziwei/taiwei-fu/fulltext.md
+    start_line: 41
+    end_line: 41
+  quote: 太陰會文曲於妻宮，蟾宮折桂，文章全盛。
+  applicable_to: 
+  - key: ziwei_star
+    value: 太阴
+    scope:
+      palace: 夫妻
+  - key: ziwei_star
+    value: 文曲
+    scope:
+      palace: 夫妻
+  - key: ziwei_palace
+    value: 夫妻
+  caveats:
+  - 现代为文艺才情倾向
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: TAIWEIFU-015
+  kind: doctrine
+  statement: 禄居奴仆，纵有官也奔驰；帝遇凶徒，虽获吉而无道。
+  anchor:
+    file: sources/fulltext/ziwei/taiwei-fu/fulltext.md
+    start_line: 38
+    end_line: 38
+  quote: 祿居奴僕縱有官也奔馳，帝遇凶徒雖獲吉而無道。
+  applicable_to: 
+  - key: ziwei_star
+    value: 禄存
+    scope:
+      palace: 交友
+  - key: ziwei_palace
+    value: 交友
+  caveats:
+  - 现代解读为为他人作嫁倾向，不作仕途铁断
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: TAIWEIFU-016
+  kind: doctrine
+  statement: 七杀廉贞同位，路上埋尸；破军暗曜同乡，水中作冢。
+  anchor:
+    file: sources/fulltext/ziwei/taiwei-fu/fulltext.md
+    start_line: 37
+    end_line: 37
+  quote: 七殺廉貞同位，路上埋屍。破軍暗曜同鄉，水中作塚。
+  applicable_to: 
+  - key: ziwei_star
+    value: 廉贞
+  - key: ziwei_star
+    value: 七杀
+  - key: ziwei_star
+    value: 破军
+  caveats:
+  - ⚠️ 死亡断语 — 仅作文化研究参考，不得铁口断寿断病
+  - 现代 reframe 为外出风险倾向
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: TAIWEIFU-017
+  kind: doctrine
+  statement: 杀居绝地，天年夭似颜回；贪坐生乡，寿考永如彭祖。
+  anchor:
+    file: sources/fulltext/ziwei/taiwei-fu/fulltext.md
+    start_line: 44
+    end_line: 44
+  quote: 殺居絕地，天年夭似顏回。貪坐生鄉，壽考永如彭祖。
+  applicable_to: []
+  caveats:
+  - ⚠️ 寿夭断语 — 仅作文化研究参考，不得铁口断寿断病
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: TAIWEIFU-018
+  kind: doctrine
+  statement: 忌暗同居身命疾厄，沉困尪羸；凶星会于父母迁移，刑伤破祖。
+  anchor:
+    file: sources/fulltext/ziwei/taiwei-fu/fulltext.md
+    start_line: 45
+    end_line: 45
+  quote: 忌暗同居身命疾厄，沉困尪羸，凶星會於父母遷移，刑傷破祖。
+  applicable_to:
+  - {key: ziwei_palace, value: 疾厄}
+  - {key: ziwei_palace, value: 迁移}
+  caveats:
+  - ⚠️ 疾病断语 — 仅作文化研究参考，不得铁口断寿断病
+  - 不作医学结论
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: TAIWEIFU-019
+  kind: doctrine
+  statement: 七杀临于身命加恶煞，必定死亡；铃羊合于命宫遇白虎，须当刑戮。
+  anchor:
+    file: sources/fulltext/ziwei/taiwei-fu/fulltext.md
+    start_line: 48
+    end_line: 48
+  quote: 七殺臨於身命加惡殺，必定死亡。鈴羊合於命宮遇白虎，須當刑戮。
+  applicable_to: 
+  - key: ziwei_star
+    value: 七杀
+    scope:
+      palace: 命宫
+  - key: ziwei_star
+    value: 七杀
+    scope:
+      palace: 身宫
+  - key: ziwei_star
+    value: 铃星
+    scope:
+      palace: 命宫
+  - key: ziwei_star
+    value: 擎羊
+    scope:
+      palace: 命宫
+  - key: ziwei_palace
+    value: 命宫
+  caveats:
+  - ⚠️ 严重死亡/刑戮断语 — 仅作文化研究参考，不得铁口断寿断病
+  - 现代严格 reframe
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: TAIWEIFU-020
+  kind: doctrine
+  statement: 童子限如水上泡沤，老人限似风中燃烛；遇杀无制乃流年最忌。
+  anchor:
+    file: sources/fulltext/ziwei/taiwei-fu/fulltext.md
+    start_line: 51
+    end_line: 51
+  quote: 童子限如水上泡漚，老人限似風中燃燭。遇殺無制乃流年最忌，
+  applicable_to:
+  - key: liunian_taisui
+    value: 午
+  caveats:
+  - ⚠️ 寿夭断语 — 仅作文化研究参考，不得铁口断寿断病
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: TAIWEIFU-021
+  kind: doctrine
+  statement: 土星苟居其垣若可移动；金星专司财库最怕空亡；帝星动则列宿奔驰；贪守空而财源不聚。
+  anchor:
+    file: sources/fulltext/ziwei/taiwei-fu/fulltext.md
+    start_line: 8
+    end_line: 8
+  quote: 觀乎紫微舍躔，司一天儀之象，率列宿而成垣，土星苟居其垣，若可移動，金星專司財庫，最怕空亡。
+  applicable_to: []
+  caveats:
+  - 各主星本性归属，须结合宫位综合判断
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null

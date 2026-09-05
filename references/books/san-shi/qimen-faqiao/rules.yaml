@@ -1,0 +1,31 @@
+schema_version: fateradar-rules-v2
+book:
+  slug: qimen-faqiao
+  system: san-shi
+  title: 奇门法窍（V5.1 核验摘录）
+  script: simplified
+  fulltext: sources/excerpts/qimen-faqiao-chaibu-v1.md
+  fulltext_sha256: be88072e0017deebe65d6c3b75c7b489c1bcda24e8cb5270c5001ffb2bd7fab4
+rules:
+- rule_id: QM-P26
+  kind: doctrine
+  statement: 直使加地丁为守门
+  anchor: null
+  quote: 直使加地丁为守门
+  applicable_to: []
+  caveats: []
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: QM-P36
+  kind: doctrine
+  statement: 时干入墓，戊戌、壬辰、丙戌、癸未、丁丑、己丑也
+  anchor: null
+  quote: 时干入墓，戊戌、壬辰、丙戌、癸未、丁丑、己丑也
+  applicable_to: []
+  caveats: []
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null

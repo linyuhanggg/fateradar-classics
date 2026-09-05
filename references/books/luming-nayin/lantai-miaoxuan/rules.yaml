@@ -1,0 +1,97 @@
+schema_version: fateradar-rules-v2
+book:
+  slug: lantai-miaoxuan
+  system: luming-nayin
+  title: 兰台妙选
+  script: traditional
+  fulltext: sources/fulltext/luming-nayin/lantai-miaoxuan/fulltext.md
+  fulltext_sha256: 4505825efa8103ff63761b8d0f75e5ed62b39352db99f3a7428fdaaf8435d364
+rules:
+- rule_id: LT
+  kind: doctrine
+  statement: M01 三命事实框架
+  anchor: null
+  quote: M01 三命事实框架
+  applicable_to: []
+  caveats: []
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: LANTAIMIAOXU-LT
+  kind: doctrine
+  statement: R01 三命与六旬为底层框架
+  anchor: null
+  quote: R01 三命与六旬为底层框架
+  applicable_to: []
+  caveats: []
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: LANTAIMIAOXU-003
+  kind: doctrine
+  statement: R02 根基与格局必须同看
+  anchor: null
+  quote: R02 根基与格局必须同看
+  applicable_to: []
+  caveats: []
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: LANTAIMIAOXU-004
+  kind: doctrine
+  statement: R03 凶煞有制可反成光荣
+  anchor: null
+  quote: R03 凶煞有制可反成光荣
+  applicable_to: []
+  caveats: []
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: LANTAIMIAOXU-005
+  kind: doctrine
+  statement: R04 纳音地支取象形成格名
+  anchor: null
+  quote: R04 纳音地支取象形成格名
+  applicable_to: []
+  caveats: []
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: LANTAIMIAOXU-006
+  kind: doctrine
+  statement: R05 中篇风险象必须 reframe
+  anchor: null
+  quote: 'section_note: 專論惡煞、疾病，夭折、貧愚之類'
+  applicable_to: []
+  caveats: []
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: LANTAIMIAOXU-007
+  kind: doctrine
+  statement: R06 得时/失时改变同一象格的解释
+  anchor: null
+  quote: R06 得时/失时改变同一象格的解释
+  applicable_to: []
+  caveats: []
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: LANTAIMIAOXU-008
+  kind: doctrine
+  statement: R07 与子平体系冲突时分层并列
+  anchor: null
+  quote: R07 与子平体系冲突时分层并列
+  applicable_to: []
+  caveats: []
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null

@@ -1,0 +1,435 @@
+schema_version: fateradar-rules-v2
+book:
+  slug: guotian-jing
+  system: xingming
+  title: 果天经/果老星宗
+  script: simplified
+  fulltext: sources/fulltext/xingming/guotian-jing/fulltext.md
+  fulltext_sha256: 497368916cde5dc4184b5be072ab9c3b5be4c8cb3b977b788925bccd9497935d
+rules:
+- rule_id: GR-01
+  kind: procedure
+  statement: 年干起月：甲己起丙寅，乙庚起戊寅，丙辛起庚寅，丁壬起壬寅，戊癸起甲寅；日干起时：甲己起甲子，乙庚起丙子，丙辛起戊子，丁壬起庚子，戊癸起壬子。
+  anchor:
+    file: sources/fulltext/xingming/guotian-jing/fulltext.md
+    start_line: 221
+    end_line: 221
+  quote: 年上起月、此起八字法也。
+  applicable_to: []
+  caveats:
+  - 通用 1（节气换月由工具）
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: GUOTIANJING-GR-01
+  kind: doctrine
+  statement: 12 宫配西法宫名 + 五行 + 中国分野（子土宝瓶、丑土磨羯、寅木人马…亥木双鱼）。
+  anchor: null
+  quote: 子土宝瓶齐青位，
+  applicable_to: []
+  caveats:
+  - 通用 1
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: GUOTIANJING-003
+  kind: doctrine
+  statement: 28 宿各有度数（角 12、亢 9、氐 16…轸 17）；命躔哪一度即定度主。
+  anchor: null
+  quote: 28 宿各有度数（角 12、亢 9、氐 16…轸 17）；命躔哪一度即定度主。
+  applicable_to: []
+  caveats:
+  - 通用 1+6（**度数受岁差影响，工具重算**）
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: GUOTIANJING-004
+  kind: doctrine
+  statement: 原书载 24 节气太阳行度 + 太阴行度；**本规则仅作"古代观测体系"语义参考**，不作硬判断输入。
+  anchor: null
+  quote: 太阳行度、
+  applicable_to: []
+  caveats:
+  - 通用 1+6
+  - '**古值已被岁差打乱**'
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: GUOTIANJING-005
+  kind: doctrine
+  statement: 依出生时刻 + 太阳所躔之宿度 + 节气，按度推宫定命。
+  anchor: null
+  quote: 度：度主者，谓：
+  applicable_to: []
+  caveats:
+  - 通用 1+6
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: GUOTIANJING-006
+  kind: doctrine
+  statement: 大限按宫流转，每宫年数依洞微百六限分配；年分诀 / 行度诀辅助计算。
+  anchor: null
+  quote: 向：向者诸星向朝也，如日月向朝，如官福向朝，如田财向朝，如文魁向朝，如经纬向朝，如三元满用向朝，如一主专权向朝。向者有情凶星又怕向。
+  applicable_to: []
+  caveats:
+  - 通用 1+6
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: GUOTIANJING-007
+  kind: doctrine
+  statement: 童限自婴幼期起按古歌分配各宫；现代仅作语义层。
+  anchor: null
+  quote: 昼夜百刻日永日短之图、
+  applicable_to: []
+  caveats:
+  - 通用 1+3（**对个人未来年份禁用作具体吉凶判断**）
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: GUOTIANJING-008
+  kind: doctrine
+  statement: 星辰强势位分入垣 / 升殿 / 庙旺 / 喜乐 4 等；外加贵格 / 贱格双向标签。
+  anchor: null
+  quote: 星辰强势位分入垣 / 升殿 / 庙旺 / 喜乐 4 等；外加贵格 / 贱格双向标签。
+  applicable_to: []
+  caveats:
+  - 通用 1+4（**贱格条目 reframe**）
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: GR-02
+  kind: doctrine
+  statement: 十天干各化曜（甲化木、丙化火……）用于神煞起例。
+  anchor: null
+  quote: 天干化曜星例、以年干横取
+  applicable_to: []
+  caveats:
+  - 通用 1
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: GUOTIANJING-GR-02
+  kind: doctrine
+  statement: 天禄主享禄，天暗主暗昧；一吉一凶相对。
+  anchor:
+    file: sources/fulltext/xingming/guotian-jing/fulltext.md
+    start_line: 596
+    end_line: 596
+  quote: 天禄、仕人遇之主食俸禄庶人有之亦主享福。
+  applicable_to: []
+  caveats:
+  - 通用 1
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: GUOTIANJING-011
+  kind: doctrine
+  statement: 天刑（刑伤）/ 天印（官印）/ 天囚（拘禁）/ 天权（权柄）四星组合。
+  anchor: null
+  quote: 天囚、若遇阑干贯索相并主牢狱之患
+  applicable_to: []
+  caveats:
+  - 通用 1+3+4（**刑伤拘禁等条目按 safety-redlines + reframe**）
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: GUOTIANJING-012
+  kind: doctrine
+  statement: 科名 / 科甲 / 文星 / 魁星 / 官星 / 印星 / 催官 / 禄神 / 喜神 / 爵星 共 10 星，主功名利禄。
+  anchor: null
+  quote: 科名、
+  applicable_to: []
+  caveats:
+  - 通用 1+3（**对具体功名年份不作硬判**）
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: GUOTIANJING-013
+  kind: doctrine
+  statement: 天经 / 地纬 / 天马 / 地驿 / 卦气 / 三元禄 / 职元 / 局主 共 8 星，构成命盘第二层主星。
+  anchor: null
+  quote: 壬甲从干乙癸坤，
+  applicable_to: []
+  caveats:
+  - 通用 1
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: GUOTIANJING-014
+  kind: doctrine
+  statement: 斗标 / 注受 / 天乙 / 玉堂 / 文昌 / 天厨 / 岁殿 / 岁驾 共 8 星，主贵人扶持。
+  anchor: null
+  quote: 斗标．注受．天乙、
+  applicable_to: []
+  caveats:
+  - 通用 1
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: GUOTIANJING-015
+  kind: doctrine
+  statement: 阳刃 / 唐符 / 国印 / 天雄 / 地雌 / 年符 / 月符 / 大耗小耗 / 天耗地耗 共 9 星；阳刃 + 唐符 + 国印为权煞代表。
+  anchor: null
+  quote: 阳刃、
+  applicable_to: []
+  caveats:
+  - 通用 1+3+4
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: GUOTIANJING-016
+  kind: doctrine
+  statement: 月廉 / 月煞 / 值难 / 的杀 / 咸池 / 大煞 共 6 星；多与"色 / 难 / 杀"相关。
+  anchor: null
+  quote: 五十一月临巳上，
+  applicable_to: []
+  caveats:
+  - 通用 1+3+4（**咸池"无礼之人"等贬义 reframe**）
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: GUOTIANJING-017
+  kind: doctrine
+  statement: 空亡 / 孤虚 / 孤辰 / 寡宿 共 4 煞。
+  anchor: null
+  quote: 牛头大忌，又谓之破碎。
+  applicable_to: []
+  caveats:
+  - 通用 1+3+5（**婚姻硬判断 safety-redlines
+  - 女命寡宿 reframe**）
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: GUOTIANJING-018
+  kind: doctrine
+  statement: 三刑 / 六害 / 劫杀 / 亡神 / 天罗（戌亥）/ 地网（辰巳）共 6 煞群；多与"狱讼""博戏亡家""伤害"语相关。
+  anchor: null
+  quote: 金空则鸣火空发，
+  applicable_to: []
+  caveats:
+  - 通用 1+3+4（**狱讼 / 死亡 / 兵下等硬断 safety-redlines**）
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: GUOTIANJING-019
+  kind: doctrine
+  statement: 五行长生例 + 天干化曜星例 + 天干吉凶星例；用于推干合长生 + 化曜。
+  anchor: null
+  quote: 巳酉丑人马在亥，
+  applicable_to: []
+  caveats:
+  - 通用 1
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: GUOTIANJING-020
+  kind: doctrine
+  statement: 五行配四时；春木旺 / 夏火旺 / 秋金旺 / 冬水旺 / 四季土旺；旺相休囚死五态。
+  anchor: null
+  quote: 豹尾：同 上，戌未辰丑戌未辰丑戌未辰丑。
+  applicable_to: []
+  caveats:
+  - 通用 1
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: GR-03
+  kind: procedure
+  statement: 定行限度法 + 逐年行限度法；大限沿宫流转，依洞微百六限分配年数。
+  anchor:
+    file: sources/fulltext/xingming/guotian-jing/fulltext.md
+    start_line: 141
+    end_line: 141
+  quote: 诸吉星捷法例、月建吉凶星例、定行限度法、逐年行限度法、钦天监校正授时过宫度图、逐年行度图、命度图。
+  applicable_to: []
+  caveats:
+  - 通用 1+6
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: GUOTIANJING-GR-03
+  kind: doctrine
+  statement: 钦天监校正授时过宫度图 + 逐年行度图 + 命度图；古书中具体图缺。
+  anchor:
+    file: sources/fulltext/xingming/guotian-jing/fulltext.md
+    start_line: 1323
+    end_line: 1323
+  quote: 钦天监校正授时过宫度图：缺图
+  applicable_to: []
+  caveats:
+  - 通用 1+6
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: GR-04
+  kind: doctrine
+  statement: 先天心法以二十八宿为经，以十一曜为用；尊莫尊于日月，美莫美于官福；贵贱论煞，贫富论财；贤愚识其高卑，寿夭观其元气。
+  anchor: null
+  quote: 先天心法、李?问答
+  applicable_to: []
+  caveats:
+  - 通用 1+3（**寿夭硬判断屏蔽**）
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: GUOTIANJING-GR-04
+  kind: doctrine
+  statement: 后天口诀以斗杓 / 卦气 / 唐符国印 / 天雄地雌为限度核心；常人命中皆有天雄地雌空亡的煞天地二耗。
+  anchor: null
+  quote: 后天口诀、李?问答
+  applicable_to: []
+  caveats:
+  - 通用 1+3+4（**"水死兵亡蛇伤虎噬"等具体死法预测整段 safety-redlines**）
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: GUOTIANJING-025
+  kind: doctrine
+  statement: 天经地纬夹拱不离者为贵；斗杓地立身安命为富贵；唐符国印守身命为奇；阴注阳受身命值之化凶为吉。
+  anchor: null
+  quote: 至宝论、李?问答
+  applicable_to: []
+  caveats:
+  - 通用 1+3
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: GUOTIANJING-026
+  kind: doctrine
+  statement: 人生贤愚寿夭非今日为然；气禀之始终各异；以宫主 / 度主 / 身主三主论命；过犹不及泥在太拘。
+  anchor: null
+  quote: 评人生禀赋分金论、李?问答
+  applicable_to: []
+  caveats:
+  - 通用 1+3
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: GR-05
+  kind: doctrine
+  statement: 观星二十四秘法之看三主：身主 / 宫主 / 度主皆要得局，不泄气，不迟留伏逆于恶地，喜朝元升殿垣局。
+  anchor: null
+  quote: 即宫主、度主、身主是也。
+  applicable_to: []
+  caveats:
+  - 通用 1
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: GUOTIANJING-GR-05
+  kind: doctrine
+  statement: 宫强而度弱者不美，度高而宫衰者不善，必须宫度二主皆强为尽美；身主尤为切要。
+  anchor:
+    file: sources/fulltext/xingming/guotian-jing/fulltext.md
+    start_line: 4663
+    end_line: 4663
+  quote: 宫之所属是宫主也，宿之所属即度主，也凡安命处有命宫之主，有命度之主，名虽有二其论则一。
+  applicable_to: []
+  caveats:
+  - 通用 1+4
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: GUOTIANJING-029
+  kind: doctrine
+  statement: 太阴乃水之精，人之身也；昼生看命度主，夜生看身度主；月入财官夫子各宫各有断语；女命尤重身主太阴。
+  anchor:
+    file: sources/fulltext/xingming/guotian-jing/fulltext.md
+    start_line: 4988
+    end_line: 4988
+  quote: 太阴乃水之精也，人之身也。
+  applicable_to: 
+  - key: xingyao
+    value: 太阴
+  caveats:
+  - 通用 1+3+4+5（**女命"师尼""三嫁""庶生""庶出"等贬义条目按 safety-redlines + reframe**）
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: GUOTIANJING-030
+  kind: doctrine
+  statement: 金星守命夜生吉，木星照命有多般，水星在命合入庙，火星入命不堪详，土星入命主顽钝；夜生 / 昼生差异极大。
+  anchor:
+    file: sources/fulltext/xingming/guotian-jing/fulltext.md
+    start_line: 6423
+    end_line: 6423
+  quote: 金星守命夜生吉，白日生人减半力。
+  applicable_to: 
+  - key: xingyao
+    value: 金星
+  - key: xingyao
+    value: 木星
+  - key: xingyao
+    value: 水星
+  - key: xingyao
+    value: 火星
+  - key: xingyao
+    value: 土星
+  - key: miaowang
+    value: 入庙得地
+  caveats:
+  - 通用 1+4（**"顽钝""哑吃""祸殃""作恶"等贬义条目 reframe**）
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: GUOTIANJING-031
+  kind: doctrine
+  statement: 百六限依命、相貌、福德、官禄、迁移、疾厄、妻妾、奴仆、男女、田宅、兄弟、财帛次序，年数分别为 15、10、11、15、8、7、11、4.5、4.5、4.5、5、5，合计 100 年 6 个月；“百六”不得误写为 106 年。
+  anchor: null
+  quote: 天地万物莫逃乎数，二气运行三辰流转，至于人物之休咎，莫不有不期然而然者，非人力所可为也。
+  applicable_to: []
+  caveats:
+  - 通用 1+6
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: GUOTIANJING-032
+  kind: doctrine
+  statement: 限主第一急；禄星可贵；诸曜顺行可发；庙宫为发，忌星可畏；本宫见星灾福十分，对照七分，三合四分。
+  anchor:
+    file: sources/fulltext/xingming/guotian-jing/fulltext.md
+    start_line: 8395
+    end_line: 8395
+  quote: 大凡洞微所急者限主星也，所贵者禄星也，所重者诸曜顺行也，所发者庙宫也，所畏者忌星也，所好者吉神也，所辅者行年也，所助者三方也，所恶者气孛罗计也，如善星陷逆则福慢，顺行则福紧。
+  applicable_to: 
+  - key: miaowang
+    value: 入庙得地
+  caveats:
+  - 通用 1+3
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null

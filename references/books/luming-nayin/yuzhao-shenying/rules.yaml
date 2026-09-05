@@ -1,0 +1,859 @@
+schema_version: fateradar-rules-v2
+book:
+  slug: yuzhao-shenying
+  system: luming-nayin
+  title: 玉照神应真经
+  script: traditional
+  fulltext: sources/fulltext/luming-nayin/yuzhao-shenying/fulltext.md
+  fulltext_sha256: 5880e5258085e63c88009a29423f6bef6b949d3ad79411c27fcd5d415c1c62fe
+rules:
+- rule_id: YZ-01
+  kind: doctrine
+  statement: 卦逢生气天德合，仍要长生有所归；先看生我何为父，次看克我是何儿。
+  anchor:
+    file: sources/fulltext/luming-nayin/yuzhao-shenying/fulltext.md
+    start_line: 13
+    end_line: 13
+  quote: 卦逢生氣天德合世世長年〔注云生氣三合生方者為生氣亥夘未人在亥申子辰人在申巳酉丑人在巳寅午戌人在寅須要日時也又云長生亦名生氣甲乙木到亥丙丁火到寅戊己土壬癸水到申庚辛金到巳此名干隂生氣也上更帶天月德合者尤為長夀及數世之延長耳天德者正丁二坤三壬四辛
+  applicable_to: []
+  caveats:
+  - 仅作命书结构理解
+  - 不构成对家庭关系的现代判定
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: YZ-02
+  kind: doctrine
+  statement: 论命须以年/胎/月/日/时五主互参，分别尊卑、干音并重。
+  anchor:
+    file: sources/fulltext/luming-nayin/yuzhao-shenying/fulltext.md
+    start_line: 16
+    end_line: 16
+  quote: 必大敗假令庚午土人壬午日時壬午自刑正月木甲木又尅土故應上文外倣此〕四陽俱立定知難有陰尊〔注云陽干多而陰干少也陽干者甲丙戊庚壬為陽干也若胎月日時中帶陽干盛陰干孤見者定母不夀也一若時犯尅者少年母死不犯尅者亦在二十五嵗或中年母先死假令甲子年金甲為陽丙
+  applicable_to: []
+  caveats:
+  - 模型理解层次为主
+  - 不可单据其一断吉凶
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: YUZHAOSHENYI-YZ-02
+  kind: doctrine
+  statement: 干尅支为顺，主头面尊老；支尅干为逆，主身体四支与陰人小口。干尅在尊位为重，音尅在身位为切。
+  anchor:
+    file: sources/fulltext/luming-nayin/yuzhao-shenying/fulltext.md
+    start_line: 116
+    end_line: 116
+  quote: 尅四親孤尤忌二尊〔攴尅干也假令癸未木壬戌月庚午日己夘時癸丑胎皆下尅上主四親二尊人尤忌之象〕復立上宫多常退陰人小口〔干尅攴多也假令甲辰年甲戌月丙辰日己亥時上尅多隂人小口尤忌〕三來尅下官嗔〔三干尅三支也假令乙丑年甲戌月丁酉日皆是三上尅下也外頗同〕三制上時鬼
+  applicable_to: []
+  caveats:
+  - 古法身体定位仅供文化研究
+  - 不作医学判断
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: YUZHAOSHENYI-004
+  kind: doctrine
+  statement: 时柱尅日柱，干尅轻、音尅重；干音俱尅则为重伤。
+  anchor:
+    file: sources/fulltext/luming-nayin/yuzhao-shenying/fulltext.md
+    start_line: 18
+    end_line: 18
+  quote: 巳胎木巳為陰只戊寅為陽外四陰一陽也犯陽父先死也〕時來破日音凶而干見還輕〔注云凡干尅在頭面音尅在身及四支也故干輕音重也假令辛巳金人得丁亥日時丁尅辛然干尅下有土生金見之輕耳主先貧而後富先賤而後貴又須詳太常在其中無氣之鄉而言之應耳假令辛巳金人得己丑日
+  applicable_to: []
+  caveats:
+  - 仅为传统命书条文呈现
+  - 不据此预言疾病或祸患
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: YUZHAOSHENYI-005
+  kind: doctrine
+  statement: 时尅日、日尅月、月尅年，两分交战者损尊、伤本、寿促。
+  anchor:
+    file: sources/fulltext/luming-nayin/yuzhao-shenying/fulltext.md
+    start_line: 22
+    end_line: 22
+  quote: 逆不可下尅上也若時破胎者祖破敗破月門及父敗破日身及弟兄妻財敗外倣此凡命尅干主輕尅音尤重耳假令庚子年丙戌月壬寅日戊申時丁丑胎此者乃應時干尅日干日干尅月干月干尅年干也此雖傷尊人而於身輕忌之兆耳假令庚子年土壬午月木壬申日金甲辰時火此者應時納音尅日
+  applicable_to: []
+  caveats:
+  - ⚠️ 涉及寿夭断语
+  - 仅作文化研究参考，不得铁口断寿断病
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: YUZHAOSHENYI-006
+  kind: doctrine
+  statement: 二三柱犯纳音月胎者，主祖宗祸患或祖业不继。
+  anchor:
+    file: sources/fulltext/luming-nayin/yuzhao-shenying/fulltext.md
+    start_line: 23
+    end_line: 23
+  quote: 日尅月月尅主也此言上下尊人夀數天賤之兆爾〕三犯月胎祖宗尤禍〔注云二三犯納音月胎者言祖上尊人久禍患耳假令甲辰火為胎月在日時有丁丑水丙午水者定破祖尊人早亡敗之兆也〕丙戊丁甲時運戌亥道士僧人〔注云甲丙戊也丁多見戌亥者道士僧人也或曰門户出僧人也假令甲戌人乙
+  applicable_to: []
+  caveats:
+  - 历史宗族观念表述
+  - 不作现代家庭判断
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: YUZHAOSHENYI-007
+  kind: doctrine
+  statement: 干支俱合相养则贵；乖违则凶。
+  anchor: null
+  quote: 干支俱合相养则贵；乖违则凶。
+  applicable_to: []
+  caveats:
+  - 仅为命理传统判识
+  - 勿替代现实决策
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: YZ-03
+  kind: doctrine
+  statement: 功曹（寅）传送（申）+庚甲，主商旅、公吏。
+  anchor: null
+  quote: 功曹（寅）传送（申）+庚甲，主商旅、公吏。
+  applicable_to: []
+  caveats:
+  - ⚠️ 古代职业断语
+  - 仅作文化研究参考，不作现代职业归类
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: YUZHAOSHENYI-YZ-03
+  kind: doctrine
+  statement: 子午+庚甲组合主他乡外立。
+  anchor:
+    file: sources/fulltext/luming-nayin/yuzhao-shenying/fulltext.md
+    start_line: 26
+    end_line: 26
+  quote: 者商路或公吏人也又云甲為青龍庚為白虎白虎主道路青龍主文書財物故上言耳假令庚寅人甲申月時或甲申人甲申日或子午夘酉諸命但有庚甲寅申者應上文也〕子午逢之他鄉外立〔子午為陰陽二路上見庚甲者主他鄉外立也為庚甲二干至水火之真路而敗也假令甲子人逢庚戌甲午日時
+  applicable_to: []
+  caveats:
+  - 古迁徙观念
+  - 不作居所/职业现代判断
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: YUZHAOSHENYI-010
+  kind: doctrine
+  statement: 六合(乙)+太陰(辛)+螣蛇(丁)+从魁(酉)等组合，主官事陰人之扰。
+  anchor: null
+  quote: 六合(乙)+太陰(辛)+螣蛇(丁)+从魁(酉)等组合，主官事陰人之扰。
+  applicable_to: []
+  caveats:
+  - 古代官讼断语
+  - 仅作文化研究，不作司法预测
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: YUZHAOSHENYI-011
+  kind: doctrine
+  statement: 丙、戊、丁、甲重见戌亥，原文归为道士僧人或门户出僧人。
+  anchor:
+    file: sources/fulltext/luming-nayin/yuzhao-shenying/fulltext.md
+    start_line: 23
+    end_line: 23
+  quote: 日尅月月尅主也此言上下尊人夀數天賤之兆爾〕三犯月胎祖宗尤禍〔注云二三犯納音月胎者言祖上尊人久禍患耳假令甲辰火為胎月在日時有丁丑水丙午水者定破祖尊人早亡敗之兆也〕丙戊丁甲時運戌亥道士僧人〔注云甲丙戊也丁多見戌亥者道士僧人也或曰門户出僧人也假令甲戌人乙
+  applicable_to: 
+  - key: rizhu
+    value: 丙
+  caveats:
+  - ⚠️ 古代职业身份断语
+  - 仅作术数文本分类研究，不作现代职业、宗教身份预测
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: YUZHAOSHENYI-012
+  kind: doctrine
+  statement: 辰戌魁罡往来，原文按旺相休囚分作狱官、公吏、屠儿、争讼等。
+  anchor:
+    file: sources/fulltext/luming-nayin/yuzhao-shenying/fulltext.md
+    start_line: 24
+    end_line: 24
+  quote: 亥月丁亥日辛亥時者是也但甲丙戊重見戌亥者應上文耳〕魁罡上見往來加臨獄官屠訟〔辰戌往來四柱見之為公吏獄人屠兒鬪訟不義之人又云若四柱旺官相財得者因不義而得也不相得者主不義而愚下爾又云若旺多在辰戌者為獄官也相多在辰戌者為不道之人也死囚休廢者為屠兒獄吏
+  applicable_to: []
+  caveats:
+  - ⚠️ 涉及职业贬义和刑讼标签
+  - 只保留为古代社会分类语汇，不作现代品行/司法判断
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: YUZHAOSHENYI-013
+  kind: doctrine
+  statement: 癸玄武、乙六合、壬天后加卯酉私门，原文主男女私情。
+  anchor:
+    file: sources/fulltext/luming-nayin/yuzhao-shenying/fulltext.md
+    start_line: 27
+    end_line: 27
+  quote: 外頗同〕癸乙壬加夘酉男女私情〔癸為𤣥武乙為六合壬為天后夘酉為私門忌之男女多姦私也假令乙夘年壬午月癸亥日乙夘時此應耳〕乙辛丁巳亥酉官事隂人常有〔乙六合主私事辛太陰主暗昧丁主女人己亥赤口主口舌酉門户故言官事隂人常有也假令丁夘人乙巳月辛酉日己亥時應爾外頗同
+  applicable_to: 
+  - key: rizhu
+    value: 癸
+  caveats:
+  - ⚠️ 古代道德化情欲断语
+  - 现代输出必须 reframe 为“关系边界/隐私议题的文本象意”，不得指控真人
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: YUZHAOSHENYI-014
+  kind: doctrine
+  statement: 壬水多见子丑艮坎，原文归为道士、僧道、九流之人。
+  anchor:
+    file: sources/fulltext/luming-nayin/yuzhao-shenying/fulltext.md
+    start_line: 43
+    end_line: 43
+  quote: 甲申日時或甲申人庚寅日時丙子人壬午日時外倣此〕壬多艮坎道士須尊〔壬主水也水數一萬物從一生二二生三三生萬物也艮者丑也坎子也子丑為宫觀故犯子丑位壬水多者定出僧道九流之人也假令壬子人壬寅月子丑日時倣此〕戌亥連陰家生盗賊〔戌亥天空連陰者壬癸水多也如逢壬戌癸
+  applicable_to: 
+  - key: rizhu
+    value: 壬
+  caveats:
+  - ⚠️ 古代职业等级断语
+  - 只作文化研究，不给现代职业分层
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: YUZHAOSHENYI-015
+  kind: doctrine
+  statement: 壬癸水多并见戌亥天空连阴，原文主门户生盗贼。
+  anchor:
+    file: sources/fulltext/luming-nayin/yuzhao-shenying/fulltext.md
+    start_line: 43
+    end_line: 43
+  quote: 甲申日時或甲申人庚寅日時丙子人壬午日時外倣此〕壬多艮坎道士須尊〔壬主水也水數一萬物從一生二二生三三生萬物也艮者丑也坎子也子丑為宫觀故犯子丑位壬水多者定出僧道九流之人也假令壬子人壬寅月子丑日時倣此〕戌亥連陰家生盗賊〔戌亥天空連陰者壬癸水多也如逢壬戌癸
+  applicable_to: 
+  - key: rizhu
+    value: 壬
+  caveats:
+  - ⚠️ 违法犯罪标签必须屏蔽
+  - 只可描述为“古文将其归入隐匿/失范象”，不得对个人作盗贼判断
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: YUZHAOSHENYI-016
+  kind: doctrine
+  statement: 甲寅、乙卯全见，尤其落旬空，原文主门户出长发师姑。
+  anchor:
+    file: sources/fulltext/luming-nayin/yuzhao-shenying/fulltext.md
+    start_line: 45
+    end_line: 45
+  quote: 假令乙亥人夘日辰時應門户出耳〕甲乙同來寅夘定出長髪師姑〔甲寅乙夘全也若更在旬日空亡尤為應耳如甲辰旬中甲寅乙夘甲子旬中甲戌乙亥甲戌旬中甲申乙酉甲午旬中甲辰乙巳甲申旬中甲午乙未外倣此〕庚辛向申酉之方人亡兵刃〔庚申辛酉全也若更在大旺之鄉者凶兆假令寅人得庚
+  applicable_to: 
+  - key: rizhu
+    value: 甲
+  caveats:
+  - ⚠️ 宗教/性别身份标签仅作古代社会语汇，不作现代身份预测
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: YUZHAOSHENYI-017
+  kind: doctrine
+  statement: 庚辛申酉金旺多见，原文主军人、孤女、兵刃等象。
+  anchor: null
+  quote: 庚辛申酉金旺多见，原文主军人、孤女、兵刃等象。
+  applicable_to: []
+  caveats:
+  - ⚠️ 兵刃、孤女、伤亡类断语必须 reframe
+  - 只保留“金旺刚决/武职象”的文本层说明
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: YZ-04
+  kind: doctrine
+  statement: 智仁清、礼义浊、信从四时；五常对应水木清、火金浊、土因时。
+  anchor: null
+  quote: 智仁清、礼义浊、信从四时；五常对应水木清、火金浊、土因时。
+  applicable_to: []
+  caveats:
+  - 古代性情论
+  - 非现代心理学评估
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: YZ-05
+  kind: doctrine
+  statement: 干墓在辰戌丑未；有旺气者为库主储藏，无气者为墓主收藏不发。
+  anchor:
+    file: sources/fulltext/luming-nayin/yuzhao-shenying/fulltext.md
+    start_line: 28
+    end_line: 28
+  quote: 〕干神支墓須詳上下吉凶〔干者天干也支者十二支也下者納音也辨三才入墓詳其上下言之凡干者甲乙在未丙丁到戌庚辛到丑戊巳壬癸到辰此者干墓也凡有干墓若無旺氣者墓也有旺氣者庫也假令甲寅人十月乙未日己夘時十月相又得乙禄在夘復旺相有未非墓也假令甲子人五月丙申日
+  applicable_to: []
+  caveats:
+  - 文化研究层
+  - 勿替代命运决策
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: YUZHAOSHENYI-YZ-05
+  kind: doctrine
+  statement: 干防尊老、音同身、尅防同类妻妾、下防陰人小口。
+  anchor:
+    file: sources/fulltext/luming-nayin/yuzhao-shenying/fulltext.md
+    start_line: 29
+    end_line: 29
+  quote: 乙未時五月甲乙休又日時全敗此者墓也支者寅夘逢未巳午到戌申酉見丑亥子辰戌丑未到辰納音者木未火戌金丑水土辰又云干防尊老同身尅防同類妻妾下防陰小也故自古今言辰戌丑未防害為五墓在焉今以正上文而應爾假令甲子人正月乙丑日時先庫後納音墓終有陰死亡人兆假令
+  applicable_to: []
+  caveats:
+  - 古代家族观念
+  - 不构成现代亲属判断
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: YUZHAOSHENYI-021
+  kind: doctrine
+  statement: 阳干月德合在干、陰干月德合在支；同柱为近合力强，旁柱为远合力弱。
+  anchor:
+    file: sources/fulltext/luming-nayin/yuzhao-shenying/fulltext.md
+    start_line: 30
+    end_line: 30
+  quote: 甲子人四月乙未日時墓在干在尊長爾假令丙子水人四月壬辰日時支與音同墓上尊人中陰人妻妾下陰小外倣此〕德合與吉干相逢視於逺近〔德合者陽干德日女陰干在支合也甲德自干乙德在庚丙德自干丁德在壬戊德自干已德在甲庚德自干辛德在丙壬德自干癸德在戊也相逢者視其合也
+  applicable_to: []
+  caveats:
+  - 仅为合力强弱判别
+  - 不作绝对吉凶
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: YUZHAOSHENYI-022
+  kind: doctrine
+  statement: 甲寅(纳音水)+辛丑(纳音土)，下尅上主官事刑咎。
+  anchor:
+    file: sources/fulltext/luming-nayin/yuzhao-shenying/fulltext.md
+    start_line: 32
+    end_line: 32
+  quote: 吏曹官辛到丑在甲之官墓也下有辛丑丑土傷甲寅水故有因官而刑咎之象耳假令甲寅月水辛丑日時但有二干下尅上者是也〕癸未庚申盗賊亡歿〔癸者𤣥武到未為折足庚白虎到申臨亭白虎主道路道路見𤣥武故主盗賊而死亡或道路而退敗之兆假令庚申日癸未時應耳但有此二干音者應也〕火逢
+  applicable_to: 
+  - key: rizhu
+    value: 甲
+  caveats:
+  - ⚠️ 涉及刑讼断语
+  - 仅作文化研究参考，不作司法/疾病预测
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: YUZHAOSHENYI-023
+  kind: doctrine
+  statement: 卯(三光户、陰贼)+子(神后)相刑，主无礼德。
+  anchor: null
+  quote: 卯(三光户、陰贼)+子(神后)相刑，主无礼德。
+  applicable_to: []
+  caveats:
+  - 古代道德论
+  - 不作现代品行评判
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: YUZHAOSHENYI-024
+  kind: doctrine
+  statement: 丑戌未三刑见者，主四肢病。
+  anchor: null
+  quote: 丑戌未三刑见者，主四肢病。
+  applicable_to: []
+  caveats:
+  - ⚠️ 涉及疾病断语
+  - 仅作文化研究参考，不得铁口断病，不替代医学诊断
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: YUZHAOSHENYI-025
+  kind: doctrine
+  statement: 卯(陰贼)+辰(天罡)相加，主狱刑或腰脚之患。
+  anchor: null
+  quote: 卯(陰贼)+辰(天罡)相加，主狱刑或腰脚之患。
+  applicable_to: []
+  caveats:
+  - ⚠️ 涉及刑讼/疾病断语
+  - 仅作文化研究参考，不作司法/医学判断
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: YUZHAOSHENYI-026
+  kind: doctrine
+  statement: 辰午酉亥自刑+下尅上重见，主自凶。
+  anchor:
+    file: sources/fulltext/luming-nayin/yuzhao-shenying/fulltext.md
+    start_line: 107
+    end_line: 107
+  quote: 〔寅天成申天史巳太乙申天馬皆為官訟之神也若四柱見之主應刑獄官嗔之兆假令寅年巳月申日時應外同〕自刑重見自死自凶〔辰午酉亥為自刑也若更下尅上者主自凶之兆假令戊申土人得乙酉日時當先有官事而後投井死也或水病而凶又戊辰獄刑争訟戊午勾陳持戊丁酉鬼火驚憂癸酉𤣥武
+  applicable_to: []
+  caveats:
+  - ⚠️ 涉及死亡断语
+  - 仅作文化研究参考，不得铁口断寿断病
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: YUZHAOSHENYI-027
+  kind: doctrine
+  statement: 戊寅、己卯休囚，原文主四肢风病或大疾。
+  anchor:
+    file: sources/fulltext/luming-nayin/yuzhao-shenying/fulltext.md
+    start_line: 33
+    end_line: 33
+  quote: 盛土見庚而生向途中〔火有土多則化而為土庚者白虎白虎主道路若有庚午庚子庚辰者定在道路生也假令戊子納音火人丁巳月土庚午日庚辰時應耳〕戊巳俱氣休囚而生大疾〔戊寅己夘見者防生大疾不然四肢風病之象又云若在甲相者以主上疾在休囚更為應耳假令己未年火癸酉月金庚子
+  applicable_to: 
+  - key: rizhu
+    value: 戊
+  caveats:
+  - ⚠️ 疾病断语仅作医史化文本研究，不作医学判断
+  - 现实健康问题必须转现代医学
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: YUZHAOSHENYI-028
+  kind: doctrine
+  statement: 丙丁火至亥子水位，原文主投江河、水灾等。
+  anchor:
+    file: sources/fulltext/luming-nayin/yuzhao-shenying/fulltext.md
+    start_line: 35
+    end_line: 35
+  quote: 〔丙到亥丁到子日時見之主投江河因水而凶災也又須視無合而言之若丙見辛亥丙辛化真水而旺耳丁人見壬子丁壬化木而在丁相生不為前說若非二干上文應耳假令丙子人四月丁亥日時丁丑人二月丙子日時皆應上文耳〕己午庚辛男女病多心血〔庚辛金也己午火也火下金上辛巳庚午見之
+  applicable_to:
+  - {key: rizhu, value: 丙}
+  caveats:
+  - ⚠️ 死亡/水灾硬断全屏蔽
+  - 只保留“火临水位失势”的象意
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: YUZHAOSHENYI-029
+  kind: doctrine
+  statement: 己午火与庚辛金上下相见，原文主男女心血之灾。
+  anchor:
+    file: sources/fulltext/luming-nayin/yuzhao-shenying/fulltext.md
+    start_line: 35
+    end_line: 35
+  quote: 〔丙到亥丁到子日時見之主投江河因水而凶災也又須視無合而言之若丙見辛亥丙辛化真水而旺耳丁人見壬子丁壬化木而在丁相生不為前說若非二干上文應耳假令丙子人四月丁亥日時丁丑人二月丙子日時皆應上文耳〕己午庚辛男女病多心血〔庚辛金也己午火也火下金上辛巳庚午見之
+  applicable_to: 
+  - key: rizhu
+    value: 己
+  caveats:
+  - ⚠️ 疾病硬断屏蔽
+  - 只作火金相战的文本象意
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: YUZHAOSHENYI-030
+  kind: doctrine
+  statement: 甲申、乙酉木上金下，原文主小儿肝风之灾。
+  anchor:
+    file: sources/fulltext/luming-nayin/yuzhao-shenying/fulltext.md
+    start_line: 36
+    end_line: 36
+  quote: 壬生者男女多病心血之災假令庚午日辛巳時應耳〕甲申乙酉小兒風多病肝經〔甲乙木也申酉金也木上金下甲申乙酉見之主小皃多病肝風之災假令乙酉日甲申時應耳外頗同〕辛夘庚寅尤忌大人勞骨病〔金上木下庚辛主筋骨寅夘主山林山林主身身既為金所尅尤忌勞血内氣之病假令辛夘日
+  applicable_to: 
+  - key: rizhu
+    value: 甲
+  caveats:
+  - ⚠️ 涉及儿童健康，必须完全转现代医学
+  - 不可作预测或诊断
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: YUZHAOSHENYI-031
+  kind: doctrine
+  statement: 庚寅、辛卯金上木下，原文主大人劳骨、血气之病。
+  anchor:
+    file: sources/fulltext/luming-nayin/yuzhao-shenying/fulltext.md
+    start_line: 36
+    end_line: 36
+  quote: 壬生者男女多病心血之災假令庚午日辛巳時應耳〕甲申乙酉小兒風多病肝經〔甲乙木也申酉金也木上金下甲申乙酉見之主小皃多病肝風之災假令乙酉日甲申時應耳外頗同〕辛夘庚寅尤忌大人勞骨病〔金上木下庚辛主筋骨寅夘主山林山林主身身既為金所尅尤忌勞血内氣之病假令辛夘日
+  applicable_to: 
+  - key: rizhu
+    value: 庚
+  caveats:
+  - ⚠️ 疾病断语屏蔽
+  - 只保留金木相伤的象意
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: YUZHAOSHENYI-032
+  kind: doctrine
+  statement: 卯酉门户上下全土，原文主腰脚沉滞。
+  anchor:
+    file: sources/fulltext/luming-nayin/yuzhao-shenying/fulltext.md
+    start_line: 27
+    end_line: 27
+  quote: 外頗同〕癸乙壬加夘酉男女私情〔癸為𤣥武乙為六合壬為天后夘酉為私門忌之男女多姦私也假令乙夘年壬午月癸亥日乙夘時此應耳〕乙辛丁巳亥酉官事隂人常有〔乙六合主私事辛太陰主暗昧丁主女人己亥赤口主口舌酉門户故言官事隂人常有也假令丁夘人乙巳月辛酉日己亥時應爾外頗同
+  applicable_to: []
+  caveats:
+  - ⚠️ 身体部位断语不作医学诊断
+  - 只作为古文身体象位记录
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: YUZHAOSHENYI-033
+  kind: doctrine
+  statement: 甲乙木居前而见庚辛金尅，原文主头面之伤。
+  anchor:
+    file: sources/fulltext/luming-nayin/yuzhao-shenying/fulltext.md
+    start_line: 38
+    end_line: 38
+  quote: 能照物象人眼目忌為壬所尅故此假令丙子人二月壬子日時應終防眼目之灾也〕甲乙居前見庚辛忌為頭面〔甲乙木也主頭面庚辛金也主已有所傷忌於頭面假令甲子日庚午時若與本干為鬼者尤凶不尅輕應耳〕水土同來寅夘平生隔氣風痰〔水土為身到寅夘主風痰之病也假令戊申土人三月乙
+  applicable_to: 
+  - key: rizhu
+    value: 甲
+  caveats:
+  - ⚠️ 伤病硬断屏蔽
+  - 不可预测外伤
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: YUZHAOSHENYI-034
+  kind: doctrine
+  statement: 水土同至寅卯，原文主隔气风痰。
+  anchor:
+    file: sources/fulltext/luming-nayin/yuzhao-shenying/fulltext.md
+    start_line: 38
+    end_line: 38
+  quote: 能照物象人眼目忌為壬所尅故此假令丙子人二月壬子日時應終防眼目之灾也〕甲乙居前見庚辛忌為頭面〔甲乙木也主頭面庚辛金也主已有所傷忌於頭面假令甲子日庚午時若與本干為鬼者尤凶不尅輕應耳〕水土同來寅夘平生隔氣風痰〔水土為身到寅夘主風痰之病也假令戊申土人三月乙
+  applicable_to: []
+  caveats:
+  - ⚠️ 疾病术语仅作古代医命语汇，不作医学结论
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: YZ-06
+  kind: doctrine
+  statement: 月德合见于四正(子午卯酉)，主十分作福。
+  anchor:
+    file: sources/fulltext/luming-nayin/yuzhao-shenying/fulltext.md
+    start_line: 50
+    end_line: 50
+  quote: 四月甲申日時夏木休見甲申當憂男子腎病耳倣此〕月德雙加有合而十分作福〔寅午戌丙辛月合月德亥夘未甲巳德合申子辰丁壬徳合巳酉丑乙庚徳合若單見月德者有德行貴人扶助也更有合尤佳也假令丙寅人甲午月丙戌日辛夘時也假令壬申人十一月壬子丁巳日丁未時丁壬十一月德合
+  applicable_to: []
+  caveats:
+  - 福报判断为传统话语
+  - 不构成现代决策
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: YUZHAOSHENYI-YZ-06
+  kind: doctrine
+  statement: 阳干月德主贵人扶助、陰干主陰人用力。
+  anchor:
+    file: sources/fulltext/luming-nayin/yuzhao-shenying/fulltext.md
+    start_line: 51
+    end_line: 51
+  quote: 重也假令甲人二月己夘日甲子時二月月徳在甲巳月合〕見陽而貴士多昇遇陰干隂人財力〔凡見月德陽干者主貴人扶助接引也見月合者主陰人用力也假令甲子人二月甲辰日時二月月德在甲甲為陽干也假令甲子人二月己夘日時二月月合在巳者應上文若全合尤佳耳〕尊卑同視十二宫所主
+  applicable_to: []
+  caveats:
+  - 古代社交观念
+  - 不作具体人际判断
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: YUZHAOSHENYI-037
+  kind: doctrine
+  statement: 25岁前以月柱合十二宫、25-50以日柱、50后以时柱。
+  anchor:
+    file: sources/fulltext/luming-nayin/yuzhao-shenying/fulltext.md
+    start_line: 53
+    end_line: 53
+  quote: 辰己巳庚午到辛未上見己巳命宫從辛未壬申癸酉甲戌乙亥依宫起之若甲子陰人從未上逆行辛未一命庚午弟兄己巳三夫戊辰四子逆行耳又須與行年太嵗相生相尅言之外倣此〕三限見詳於四柱〔把三主月日時合十二宫言之假令二十五前將生月主事二十五已後五十之前生日為主五十後
+  applicable_to: []
+  caveats:
+  - 时段划分供命理参考
+  - 不替代人生规划
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: YUZHAOSHENYI-038
+  kind: doctrine
+  statement: 干鬼制者为官；纳音生鬼者亦为官贵。
+  anchor:
+    file: sources/fulltext/luming-nayin/yuzhao-shenying/fulltext.md
+    start_line: 54
+    end_line: 54
+  quote: 時為主十五以前胎元主事将嵗運共詳入那一宫應那一主耳〕鬼逢生旺後生兮貴氣峥嶸〔言干與納音若干有制鬼者為官也若納音為鬼後有生鬼者納音為官也假令戌人先寅後甲中旺者官也納音者土以木為鬼鬼旺後有水生官也〕進退干音識辨要明得失〔若生干則尊人見喜旺相則因富貴人進
+  applicable_to: []
+  caveats:
+  - 古代官位话语
+  - 不作现代职业预测
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: YUZHAOSHENYI-039
+  kind: doctrine
+  statement: 生干则尊人喜；生纳音则中下人吉。
+  anchor:
+    file: sources/fulltext/luming-nayin/yuzhao-shenying/fulltext.md
+    start_line: 55
+    end_line: 55
+  quote: 身生納音則中下人吉或後人進旺返此則凶退耳假令庚逢巳者生干也外干同推假令水逢金者亦佳返此為咎〕全逢本卦相應而出自尊顔〔木為身得亥夘未逢旺相火得寅午戌依上土得四季金巳酉丑水申子辰但得本家卦更犯旺相者富貴矣假令丙子水人庚子月土庚辰金日甲申時水十一月水
+  applicable_to: []
+  caveats:
+  - 古代等级话语
+  - 仅作传统命书理解
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: YUZHAOSHENYI-040
+  kind: doctrine
+  statement: 五行三合局齐者(木亥卯未/火寅午戌/金巳酉丑/水申子辰)俱旺主富贵。
+  anchor:
+    file: sources/fulltext/luming-nayin/yuzhao-shenying/fulltext.md
+    start_line: 55
+    end_line: 55
+  quote: 身生納音則中下人吉或後人進旺返此則凶退耳假令庚逢巳者生干也外干同推假令水逢金者亦佳返此為咎〕全逢本卦相應而出自尊顔〔木為身得亥夘未逢旺相火得寅午戌依上土得四季金巳酉丑水申子辰但得本家卦更犯旺相者富貴矣假令丙子水人庚子月土庚辰金日甲申時水十一月水
+  applicable_to: []
+  caveats:
+  - 富贵判断为传统话语
+  - 不作现代财运预测
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: YUZHAOSHENYI-041
+  kind: doctrine
+  statement: 胎朝月、月朝日、日朝时之朝拱关系，主倍禄。
+  anchor:
+    file: sources/fulltext/luming-nayin/yuzhao-shenying/fulltext.md
+    start_line: 106
+    end_line: 106
+  quote: 令庚午月土得甲申日時庚禄在申者門旺有父母力外日有則巳身妻財時子孫也〕三交四聚因官而借出其名〔胎朝月月朝日日朝時名倍禄也但非本禄馬四柱去换有禄馬者皆居因富貴人引薦而進耳假令乙酉水人甲申月水丙寅日火癸巳時水甲朝寅丙朝巳故借貴〕帶刑全申巳寅定有官刑嗔訟
+  applicable_to: []
+  caveats:
+  - 禄命传统语
+  - 不作具体事业判断
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: YUZHAOSHENYI-042
+  kind: doctrine
+  statement: 旬中六甲(甲子甲戌甲申甲午甲辰甲寅)全见，主尊荣。
+  anchor:
+    file: sources/fulltext/luming-nayin/yuzhao-shenying/fulltext.md
+    start_line: 129
+    end_line: 129
+  quote: 貴耳〕六儀之神有降昇〔六儀者甲子旬中甲子甲戌甲申甲午甲辰甲寅同為旬中見年順干為儀也假令辛未年得庚午者乃有儀有貴耳此者年儀也又有月建日時有月者為之月儀也假令甲午人辛未日時當年六月是辛未乃有貴有儀〕五行太盛逢吞發〔在旺相之地有干鬼到食者發祿耳〕干敗音囚忌
+  applicable_to: []
+  caveats:
+  - 极罕见格局
+  - 仅作文化记录
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: YZ-07
+  kind: doctrine
+  statement: 兄弟干同辈，相生顺则和睦、相尅逆则交争。
+  anchor: null
+  quote: 兄弟干同辈，相生顺则和睦、相尅逆则交争。
+  applicable_to: []
+  caveats:
+  - 古代宗法话语
+  - 不作现代亲属关系判断
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: YUZHAOSHENYI-YZ-07
+  kind: doctrine
+  statement: 父子夫妻儿女按尅合远近判亲疏内外。
+  anchor:
+    file: sources/fulltext/luming-nayin/yuzhao-shenying/fulltext.md
+    start_line: 92
+    end_line: 92
+  quote: 尅墓主墳墓憂患言内宅外宅也〕生逢兄弟不相親終見交争〔如甲寅水人得乙丑日時者甲乙弟兄甲兄乙弟弟在上兄在下逆也若乙夘者弟兄順也〕父子夫妻親外皆同前法〔此法定尊卑父母兄弟夫妻兒女其法一揆而推之假令甲寅人乙弟庚兒辛女丙壻戊父癸母巳妻凡逆者須與尊卑逆也順者孝
+  applicable_to: []
+  caveats:
+  - 古代亲属观念
+  - 不作现代家庭关系判断
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: YUZHAOSHENYI-045
+  kind: doctrine
+  statement: 以胎元、月柱干支推父母年命；干同主父寿、音同主母寿。
+  anchor: null
+  quote: 以胎元、月柱干支推父母年命；干同主父寿、音同主母寿。
+  applicable_to: []
+  caveats:
+  - ⚠️ 寿夭断语
+  - 仅作文化研究参考，不得铁口断寿
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: YUZHAOSHENYI-046
+  kind: doctrine
+  statement: 日柱大小定妻年龄、时柱变法定子嗣有无。
+  anchor: null
+  quote: 日柱大小定妻年龄、时柱变法定子嗣有无。
+  applicable_to: []
+  caveats:
+  - ⚠️ 涉及婚配/子嗣断语
+  - 仅作文化研究参考，不作现代家庭规划
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: YUZHAOSHENYI-047
+  kind: doctrine
+  statement: 命局夫旺则妻强，妻旺则夫强，按旺相之气。
+  anchor: null
+  quote: 命局夫旺则妻强，妻旺则夫强，按旺相之气。
+  applicable_to: []
+  caveats:
+  - ⚠️ 涉及婚配论
+  - 仅作文化研究参考，不作伴侣关系判断
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: YUZHAOSHENYI-048
+  kind: doctrine
+  statement: 命局四重干合者，主妻或夫再立、子郎重生。
+  anchor:
+    file: sources/fulltext/luming-nayin/yuzhao-shenying/fulltext.md
+    start_line: 65
+    end_line: 65
+  quote: 耳〕畧取其强足見夫妻之勢〔若夫在旺相之地者夫强妻在旺相之地者妻强假令庚午人乙酉日時者夫强也申酉上庚旺乙敗也若乙夘者妻强也假令在夘乙旺也倣此〕合逢四位後來妻再立兒郎〔四重干合也假令甲子人己巳月丁夘日壬寅時甲己丁壬四重合也應後妻立子外同〕隔合居中妻子財門
+  applicable_to: []
+  caveats:
+  - ⚠️ 涉及婚配重组断语
+  - 仅作文化研究参考，不构成婚姻预测
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: YZ-08
+  kind: doctrine
+  statement: 木见旺金主强、火入离中主旺、金向旺中须损折、土积山岗多不动、水盛防走失。
+  anchor:
+    file: sources/fulltext/luming-nayin/yuzhao-shenying/fulltext.md
+    start_line: 131
+    end_line: 131
+  quote: 未立建旺之地者以為用非但本干耳假令四十六後入辛巳運乃丙子辛巳二主皆喜以名借氣之限外同〕木見旺金多主强生合須仁反不純〔木多遇金者主强生旺多者仁多入敗地者仁中不仁之咎〕火入離中生萬物旺相生多夀不倫〔火多無水者太過太過者無後也〕金向旺中須損折有火三光保利名
+  applicable_to: []
+  caveats:
+  - 传统五行平衡论
+  - 非具体凶吉断语
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: YUZHAOSHENYI-YZ-08
+  kind: doctrine
+  statement: 干上至下为退、下至上为进；五行升降以衰兴。
+  anchor:
+    file: sources/fulltext/luming-nayin/yuzhao-shenying/fulltext.md
+    start_line: 132
+    end_line: 132
+  quote: 〔金多則損折耳有火則成器耳〕土積山岡多不動真宫有路廣田林〔土多者成山成岱也多種而不動田林廣巨薄者好逰厯也〕水盛定須防走失〔水多則走失耳〕智若逢多則不寧〔水旺相則不寧之兆〕干支進退知先後〔十干從上至下為退從下至上為進耳〕五行昇降定衰興〔干定昇降旺相興衰干音耳〕四孟全
+  applicable_to: []
+  caveats:
+  - 命书理解层
+  - 勿据此作生涯决策
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: YUZHAOSHENYI-051
+  kind: doctrine
+  statement: 四孟(寅申巳亥)有力之乡见者主发。
+  anchor:
+    file: sources/fulltext/luming-nayin/yuzhao-shenying/fulltext.md
+    start_line: 133
+    end_line: 133
+  quote: 清逢應發〔凡四孟見有力之鄉者發耳〕四仲俱安柄不輕〔子午夘酉上見旺相氣主富貴耳〕四季土刑刑忌殺犯者家宅不利尊〔辰戌丑未四季見者主上文耳〕卦見本家須富貴〔申子辰水人見本卦吉午人得之返尅凶卦同〕返尅之人定有嗔〔火人得申子辰水人得土卦土人得木卦木人得金卦金人得火卦〕三
+  applicable_to: []
+  caveats:
+  - 古代发应话语
+  - 不作现代成就预测
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: YUZHAOSHENYI-052
+  kind: doctrine
+  statement: 甲己真土/乙庚真金/丙辛真水/丁壬真木/戊癸真火，所合所化为正道。
+  anchor:
+    file: sources/fulltext/luming-nayin/yuzhao-shenying/fulltext.md
+    start_line: 121
+    end_line: 121
+  quote: 定頭面之災〔日時尅嵗干者主頭面之損耳〕音損者四肢為患〔納音日時尅嵗音者主身及四肢不全之患耳〕今施前聖諸經共作一家之論〔郭公所施諸聖為祖者以尊其上文〕正道歌用法先看真五行〔甲己真土乙庚真金丙辛真水丁壬真木戊癸真火此真五行〕假真成敗細推尋〔造化合在長生冠帶臨官建
+  applicable_to: 
+  - key: rizhu
+    value: 甲
+  caveats:
+  - 真五行与纳音五行需区分
+  - 勿混用
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: YUZHAOSHENYI-053
+  kind: doctrine
+  statement: 自家四柱干支自合为内合，旁柱合本柱为外合。
+  anchor:
+    file: sources/fulltext/luming-nayin/yuzhao-shenying/fulltext.md
+    start_line: 64
+    end_line: 64
+  quote: 丙戌年辛夘月或辛夘人丙戌胎頗同〕嵗日朝時自身舍立〔如庚人乙日時丙人辛日時是但嵗干與日時干合者自身舍居〕合分内外取於進退之方〔有内合外合也假令甲人有巳合為内合也丙辛丁壬戊癸乙庚合非本有合者此為外合也主本有合者為内合也月内合主内立外合主外立進退合而言之
+  applicable_to: []
+  caveats:
+  - 内外合力判别为命书细则
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: YUZHAOSHENYI-054
+  kind: doctrine
+  statement: 年生月、月生日、日生时之上生下，主身贫贱；返此为进发。
+  anchor:
+    file: sources/fulltext/luming-nayin/yuzhao-shenying/fulltext.md
+    start_line: 124
+    end_line: 124
+  quote: 午時者子孫孤也外同〕上來生下身貧賤〔論納音也凡年生月月生日日生時者身必貧賤也然富貴亦非長久也假令甲子金年丁丑月水戊辰日木戊午時火皆應上生下也外頗同〕下如生上進前程〔時生日日生月月生年胎者皆下生上也應進發之命假令甲子年金辛未月土己夘日土癸酉時金壬戌胎
+  applicable_to: []
+  caveats:
+  - 古代贵贱话语
+  - 不作现代经济地位判断
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null

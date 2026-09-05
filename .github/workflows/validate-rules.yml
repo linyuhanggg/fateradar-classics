@@ -1,0 +1,31 @@
+name: validate-rules
+on:
+  pull_request:
+    paths:
+      - "references/**"
+      - "sources/fulltext/**"
+      - "sources/excerpts/**"
+      - "tools/**"
+      - ".github/workflows/validate-rules.yml"
+  push:
+    branches: [main]
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          lfs: false
+          sparse-checkout: |
+            references
+            sources/fulltext
+            sources/excerpts
+            tools
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install pyyaml opencc-python-reimplemented
+      - run: python tools/validate-rules.py
+      - run: python tools/test-validate-gates.py
+      - run: python tools/coverage-report.py --fail-under 54
+      - run: python tools/predicate-report.py --max-wildcard 15 --check-open-values --check-art-keys

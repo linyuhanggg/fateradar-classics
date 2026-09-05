@@ -1,0 +1,347 @@
+schema_version: fateradar-rules-v2
+book:
+  slug: liuren-miben
+  system: san-shi
+  title: 大六壬秘本
+  script: traditional
+  fulltext: sources/fulltext/san-shi/liuren-miben/fulltext.md
+  fulltext_sha256: 3152e2446147976fe65e81483c0fd4a47c02500d35aa547cd4356c9200cd68b3
+rules:
+- rule_id: LM
+  kind: doctrine
+  statement: 用户要求具体起课、断某一件事或把本书规则套入实际盘。
+  anchor: null
+  quote: 凡占以正時為主，或為日之德合鬼墓，或為辰之破害刑衝，傳課未成，吉凶先露，故曰先鋒門。
+  applicable_to: []
+  caveats:
+  - 卷十三、卷十五的课名异文不得覆盖 adapter profile
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: LIURENMIBEN-LM
+  kind: doctrine
+  statement: 查询本书某月将、天将、地支或八卦的传统类象；若用于实际盘，LM-R00 已通过。
+  anchor: null
+  quote: 神後屬子，其數九，味咸，女虛危三宿三位。
+  applicable_to: []
+  caveats:
+  - 同一支在不同卷、不同天将下有多重类象，这是条件差异，不自动合并为同义
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: LIURENMIBEN-003
+  kind: doctrine
+  statement: 用户明确查询本书卷三六旬表，或 adapter 已按同一来源 profile 输出对应神煞。
+  anchor: null
+  quote: 甲子旬，子儀神，卯丁神，戌亥天中，壬日亥不空，醜奇神，酉閉口，未五亡神。
+  applicable_to: []
+  caveats:
+  - 其他六壬书神煞表不一致时保留双来源，不自动覆盖
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: LIURENMIBEN-004
+  kind: doctrine
+  statement: 问题明确为射覆/传统物类推演，且 LM-R00 已通过。
+  anchor: null
+  quote: 剛日先看日上神，更兼發用細詳明。柔日支上先須視，用神兼取兩邊迎。
+  applicable_to: []
+  caveats:
+  - “中末总弃”只限定卷四射覆用传，不得扩展成所有大六壬断法都忽略中末
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: LIURENMIBEN-005
+  kind: doctrine
+  statement: LM-R03 已进入射覆解释，adapter 已给发用和空亡状态。
+  anchor:
+    file: sources/fulltext/san-shi/liuren-miben/fulltext.md
+    start_line: 429
+    end_line: 429
+  quote: 天空用起又空亡，時又空亡何處詳。若問其中是何物，其中無物慢思量。
+  applicable_to: 
+  - key: kongwang
+    value: "*"
+  - key: sanchuan
+    value: 初传
+  caveats:
+  - 卷四的射覆空象与卷十五的事项空亡不是同一粒度
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: LIURENMIBEN-006
+  kind: doctrine
+  statement: 任何规则使用旺、相、死、休、囚。
+  anchor:
+    file: sources/fulltext/san-shi/liuren-miben/fulltext.md
+    start_line: 774
+    end_line: 774
+  quote: 甲乙日，春同。旺木青，相火黃，死土黑，囚金紅，休水白。
+  applicable_to: []
+  caveats:
+  - 本书内部至少并存四时定理和逐日圆机，见 conflict-notes
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: LIURENMIBEN-007
+  kind: doctrine
+  statement: 已按问题域确定类神，LM-R00 已通过。
+  anchor:
+    file: sources/fulltext/san-shi/liuren-miben/fulltext.md
+    start_line: 1474
+    end_line: 1474
+  quote: 類不逢空旺相乘，傳生支合事須成，見類日鬼空刑害，所乾不遂類中明。幹事，三傳上下相生，支神三六合乾合，所幹成。雖是見類，與今日為鬼，或刑害空亡，三傳見害，不成。傳中用事之人，須此原本作「比」字。言之。
+  applicable_to: []
+  caveats:
+  - 不同卷可能为同一事项列不同类神，按问题细分并保留来源
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: LIURENMIBEN-008
+  kind: doctrine
+  statement: adapter 或上游解释给出“多吉/多凶”的初步标签。
+  anchor:
+    file: sources/fulltext/san-shi/liuren-miben/fulltext.md
+    start_line: 1811
+    end_line: 1811
+  quote: 初凶後吉，穿針於皓月之中；
+  applicable_to: []
+  caveats:
+  - 其他卷若给出特定事项例外，按原来源并列
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: LIURENMIBEN-009
+  kind: doctrine
+  statement: 已有天将、所乘神、旺衰与生克事实。
+  anchor: null
+  quote: 日鬼加臨辰兩課，門中官事乃相榮。
+  applicable_to: []
+  caveats:
+  - 各书对某将吉凶角色可能不同，保留 book profile
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: LIURENMIBEN-010
+  kind: doctrine
+  statement: 需要用卷十四解释具体问题，LM-R00 已通过。
+  anchor:
+    file: sources/fulltext/san-shi/liuren-miben/fulltext.md
+    start_line: 3253
+    end_line: 3253
+  quote: 中式，理人事也。要分彼此、體用、內外、出入、主客、尊卑，明天時、地利、內外、喜忌、虛實、聚散，知進退、動靜、始終、遲速、存亡、勝負，識幽明、人物、器物、食物、情狀、男女、貴賤、親疏、老幼、新舊、多寡，定方向、遠近、前後、左右、高下，總三十類，而天地人三才之衢備矣。
+  applicable_to: []
+  caveats:
+  - 同一干支角色会随“我去见人/人来见我”变化，不能复用静态映射
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: LIURENMIBEN-011
+  kind: doctrine
+  statement: adapter 已给旬空、落空/陷空和三传位置。
+  anchor:
+    file: sources/fulltext/san-shi/liuren-miben/fulltext.md
+    start_line: 3335
+    end_line: 3335
+  quote: 虛者，旬中空亡也。在天曰寡宿，在地曰孤辰，吉凶相反。克我、刑我、劫我、衝我，皆取空；生我、旺我、救我，不許空。天上神臨地下空，曰落空，曰陷空，即同空論。此天地妙理。課傳既定，首觀虛實，以分吉凶焉。實者，不空不陷，受生同類比和是也。
+  applicable_to: 
+  - key: sanchuan
+    value: 初传
+  - key: sanchuan
+    value: 中传
+  - key: sanchuan
+    value: 末传
+  caveats:
+  - 卷十三、十四、十五对空亡表述粒度不同，不能互相抹平
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: LIURENMIBEN-012
+  kind: doctrine
+  statement: 盘面事实完整，准备加入聚散、初建复建或奇格。
+  anchor:
+    file: sources/fulltext/san-shi/liuren-miben/fulltext.md
+    start_line: 3354
+    end_line: 3365
+  quote: 《中黃經》云：莫執東方木旺春，夏火秋金冬季水，專以初建複建，乾多者為聚，少者為散。初建者，日乾五子元遁之也。複建者，時幹五子元遁之也。且以建干多寡，逐情而變，不執本支五行也。如巳午本火，上下癸壬，或臨水鄉，便從水論之。如丁亥春夏從火，秋冬從水。若臨火鄉，便從火論。若臨水方，還從水論。以多為勝耳。此中黃變化之妙也。須看上下，分先後、聚散、主客。又分建破鬼救，試驗實妙，錄告來茲。
+  applicable_to: []
+  caveats:
+  - 卷十四同收复杂变法与“求奇反不奇”的自我约束，应同时保留
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: LIURENMIBEN-013
+  kind: doctrine
+  statement: 已有日辰和三传，问题包含进退、过程或结果。
+  anchor:
+    file: sources/fulltext/san-shi/liuren-miben/fulltext.md
+    start_line: 3397
+    end_line: 3397
+  quote: 傳進為進，傳退為退。進空宜退，退空宜進，觀其傳，吉則進，凶則退。
+  applicable_to: 
+  - key: sanchuan
+    value: 初传
+  caveats:
+  - 特殊课体会改变过程感，但不取消三传事实
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: LIURENMIBEN-014
+  kind: doctrine
+  statement: 用户询问快慢或应期，LM-R00 已通过。
+  anchor:
+    file: sources/fulltext/san-shi/liuren-miben/fulltext.md
+    start_line: 3441
+    end_line: 3451
+  quote: 柔日伏吟、涉害、天乙逆治、用在日辰之後，主事遲也。斬關、占時發用、天乙順治、用在日辰之前，主事速也。冬占申酉入傳，天罡在日辰後，是過去事。寅卯入傳，天罡在日辰前，是未來事。第三四課為用，向去事。用二八門，主事速。陰日伏吟、關格、斗罡加卯酉、傳歲月，久遠事。日上發用，應在旬內。辰上發用，應在一月。得歲不出歲，得月不出月。得日不出日，得時不出時，得候不出候。
+  applicable_to: []
+  caveats:
+  - 卷十四和卷十七的时间口径用途不同，须标 source rule
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: LIURENMIBEN-015
+  kind: doctrine
+  statement: adapter 已输出合、鬼、墓、刑冲破害及旺衰。
+  anchor: null
+  quote: 凡合與德入傳，百事皆吉，即會凶神，亦主凶中和合。
+  applicable_to: []
+  caveats:
+  - 本书同一关系在不同事项可变义
+  - 跨书定义必须分 profile
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: LIURENMIBEN-016
+  kind: doctrine
+  statement: 用户问题属于婚姻、疾病、出行、行人、谒人、诉讼、田产、宅舍、商贾、盗失、逃亡、假借等具体门类。
+  anchor: null
+  quote: '> 原 CTP 标题附注：李批：亦可作注解入各類下'
+  applicable_to: []
+  caveats:
+  - 卷十二、十六、十七可能重复同一事项，须分别保留卷次和条件
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: LIURENMIBEN-017
+  kind: doctrine
+  statement: 用户明确采用卷十七三才应事，且 LM-R00 已通过。
+  anchor:
+    file: sources/fulltext/san-shi/liuren-miben/fulltext.md
+    start_line: 5600
+    end_line: 5600
+  quote: 天課占天人課人，地課卜宅地墳塋。罡天魁地人求貴，此訣教君最有靈。孟仲季中分順逆，地般落處見真情。仲於本位天盤取，孟季須知隔五尊。此是三才期應訣，鬼神無處可潛形。
+  applicable_to: 
+  - key: sanchuan
+    value: 初传
+  caveats:
+  - 这是一项卷十七专法，不覆盖常规四课三传解释
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: LIURENMIBEN-018
+  kind: doctrine
+  statement: 确定性 adapter 已给 `lesson_type` 和生成路径，用户要查本书如何解释该课名。
+  anchor: null
+  quote: 始入者，初起而犯上者也。凡四課中惟一下賊上者，名始入。若有一上克，複有下賊，舍克取賊發用，乃謂之重審。
+  applicable_to: []
+  caveats:
+  - 卷十三 L2894-L2896 与卷十五 L4414-L4422及通行课名定义不一致
+  - L4414 对返吟/伏吟“自克/不自克”也同句冲突
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: LIURENMIBEN-019
+  kind: doctrine
+  statement: adapter 显示巳/亥、干支同出、或生干合支/生支合干的明确结构。
+  anchor:
+    file: sources/fulltext/san-shi/liuren-miben/fulltext.md
+    start_line: 4434
+    end_line: 4434
+  quote: 或巳或亥或干支，干支生合兩事論。
+  applicable_to: []
+  caveats:
+  - 其他书对“两事”条件不同则并列，不自动合并
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: LIURENMIBEN-020
+  kind: doctrine
+  statement: 输出任何本书引文、作者归属、影印页码或“古籍原文”判断。
+  anchor: null
+  quote: '> 清·金正音 辑录。CTP URN：`ctp:wb348173`。本文以 CTP 维基区《六壬秘本》5 个 wiki chapter 为底，剥除 CTP 页面外壳与 markdown 表格列号，按正文卷次「卷之一—卷之十七」重组。原典正文未做改写、未做简繁转换、未做断句调整；CTP 三处章节切分乱码已据 NCL-06572 影印第 72、179、234 页补回，并在文末「影印补字记录」中登记。'
+  applicable_to: []
+  caveats:
+  - 目录十七卷与馆藏二十卷元数据必须同时保留
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: LIURENMIBEN-021
+  kind: doctrine
+  statement: 用户问具体求财/入账，LM-R00 已通过。
+  anchor:
+    file: sources/fulltext/san-shi/liuren-miben/fulltext.md
+    start_line: 5533
+    end_line: 5533
+  quote: 時下無傷猶獲寶，支干俱損不如歸凡求財，傳中見財易求，無才難取；龍居日本財堪覓。
+  applicable_to: 
+  - key: tianjiang
+    value: 青龙
+  caveats:
+  - 凶将不能推翻旺相财爻，只能限定实得和风险
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: LIURENMIBEN-022
+  kind: doctrine
+  statement: 用户问应期，发用、天地盘和民用日期均已验证。
+  anchor:
+    file: sources/fulltext/san-shi/liuren-miben/fulltext.md
+    start_line: 3208
+    end_line: 3208
+  quote: 凡占事吉凶應期，以發用決之。太歲發用，應在一年；月建發用，應在一月；旬首發用，應在一旬；節氣發用，應在一氣；日乾發用，應在當日。其所應之事，以乘神決之。如勾用主田宅事。又乘貴人，主貴人扶助之例。
+  applicable_to: 
+  - key: sanchuan
+    value: 初传
+  caveats:
+  - 与其他候期法不一致时并列，不静默择一
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: LIURENMIBEN-023
+  kind: doctrine
+  statement: 用户明确问消息、回复、确认、批复、合同、协议、签字、盖章或其他文书结果，LM-R00 已通过。
+  anchor:
+    file: sources/fulltext/san-shi/liuren-miben/fulltext.md
+    start_line: 1474
+    end_line: 1474
+  quote: 類不逢空旺相乘，傳生支合事須成，見類日鬼空刑害，所乾不遂類中明。幹事，三傳上下相生，支神三六合乾合，所幹成。雖是見類，與今日為鬼，或刑害空亡，三傳見害，不成。傳中用事之人，須此原本作「比」字。言之。
+  applicable_to: []
+  caveats:
+  - 类神入传与类神囚死可同时成立，前者为主证，后者为反证，不相互删除
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null

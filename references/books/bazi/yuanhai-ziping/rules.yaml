@@ -1,0 +1,598 @@
+schema_version: fateradar-rules-v2
+# verified: true 仅表示 quote 与本仓 fulltext 逐字一致，不等于与影印底本校勘。本阶段不由模型填写 verified / verified_by / verified_at。
+book:
+  slug: yuanhai-ziping
+  system: bazi
+  title: 渊海子平
+  script: simplified
+  fulltext: sources/fulltext/bazi/yuanhai-ziping/fulltext.md
+  fulltext_sha256: 08f5c689ac7059e319d8f1b2276e9ccae748c0c036aec3b7dd27ac470e9e70be
+rules:
+- rule_id: YR-01
+  kind: doctrine
+  statement: 阴阳五行为造化之源；命理以五行生克为底层规则。
+  anchor:
+    file: sources/fulltext/bazi/yuanhai-ziping/fulltext.md
+    start_line: 4740
+    end_line: 4740
+  quote: 大哉干支，生物之始，本乎天地，万象宗焉。有阴阳变化之机，时候浅深之用；故，金木水火土无正形，生剋制化理取不一。
+  applicable_to: []
+  caveats:
+  - 理论铺垫，不直接用于断命
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: YUANHAIZIPIN-YR-01
+  kind: doctrine
+  statement: 阳干顺行十二宫（长生→帝旺→墓绝），阴干逆行；判断日干在地支的旺衰状态。
+  anchor:
+    file: sources/fulltext/bazi/yuanhai-ziping/fulltext.md
+    start_line: 4111
+    end_line: 4111
+  quote: 欲识五行生死诀，容易岂与凡人说，星中但以限为凭，子平但以运为诀；运行先布十二宫，看来何格堕时节，财官印綬与食神，当知轻重审分明。
+  applicable_to: []
+  caveats:
+  - 阴干逆行说后世有争议
+  - 与《滴天髓阐微》"阴阳同死同生"说冲突
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: YUANHAIZIPIN-003
+  kind: doctrine
+  statement: 以日干为"我"，其余干支相对于日干的十神关系为论命主线。区别于早期禄命"以年为主"。
+  anchor:
+    file: sources/fulltext/bazi/yuanhai-ziping/fulltext.md
+    start_line: 105
+    end_line: 105
+  quote: 予尝观唐书所载，有李虚中者，取人所生年月日时干支生剋，论命之贵贱寿夭之说，已详之矣！至于宋时，方有子平之说；取日干为主，以年为根，以月为苗，以日为花，以时为果；以生旺死绝休囚制化，决人生休咎。其理必然矣，复有何疑哉！
+  applicable_to: []
+  caveats:
+  - 这是子平法与禄命法的根本分界
+  - 本书确立此原则但细节尚不如后世严格
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: YUANHAIZIPIN-004
+  kind: doctrine
+  statement: 月支为提纲；得令者旺、失令者衰；月令决定命局基本强弱。
+  anchor:
+    file: sources/fulltext/bazi/yuanhai-ziping/fulltext.md
+    start_line: 126
+    end_line: 126
+  quote: 月为提纲，带官星印綬，则慷慨聪明、见识高人。
+  applicable_to:
+  - key: yueling
+    value: "*"
+  caveats:
+  - 本书强调月令重要性但尚未形成后世《子平真诠》的严格"月令本气透干取格"规则
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: YR
+  kind: doctrine
+  statement: 以日为主，年为本，月为提纲，时为辅佐。
+  anchor:
+    file: sources/fulltext/bazi/yuanhai-ziping/fulltext.md
+    start_line: 116
+    end_line: 116
+  quote: 以日为主，年为本，月为提纲，时为辅佐。
+  applicable_to:
+  - key: yueling
+    value: "*"
+  caveats:
+  - 仅作方法论
+  - 不由此直接推出旺衰、格局或吉凶
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: YUANHAIZIPIN-006
+  kind: doctrine
+  statement: 当令者旺、所生者相、生我者休、克我者囚、我克者死。
+  anchor: null
+  quote: 当令者旺、所生者相、生我者休、克我者囚、我克者死。
+  applicable_to: []
+  caveats:
+  - 粗框架
+  - 精细旺衰需后世派别补充
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: YUANHAIZIPIN-007
+  kind: doctrine
+  statement: 天干五合（甲己合土等）；地支六合、三合、六冲、三刑、六害各有其成立条件与吉凶作用。
+  anchor: null
+  quote: 立春念三丙火用，餘日甲木旺提纲。
+  applicable_to: []
+  caveats:
+  - 合不一定化
+  - 冲不一定凶
+  - 刑害轻重需结合全局
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: YUANHAIZIPIN-008
+  kind: doctrine
+  statement: 月令所藏天干分本气、中气、余气；取格优先看本气透干。
+  anchor: null
+  quote: 假令月令有用神，得父母力。
+  applicable_to: []
+  caveats:
+  - 本气分配日数与《三命通会》R-02-02 互证，但细节略有差异
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: YUANHAIZIPIN-009
+  kind: doctrine
+  statement: 刑冲合害优先级：合 > 冲 > 刑 > 害（经验总论，非绝对规则）。
+  anchor: null
+  quote: 刑冲合害优先级：合 > 冲 > 刑 > 害（经验总论，非绝对规则）。
+  applicable_to: []
+  caveats:
+  - 优先级仅为一般参考
+  - 实际需结合喜忌
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: YR-02
+  kind: doctrine
+  statement: 论命总纲赋文；以"继善"为名，核心思想为顺天应命、五行配合。被《三命通会》承袭。
+  anchor: null
+  quote: 人稟天地，命属阴阳，生居覆载之内，尽在五行之中。
+  applicable_to: []
+  caveats:
+  - 归属待考（是否原属本书）
+  - 赋文非规则条文，需配合具体格局使用
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: YUANHAIZIPIN-YR-02
+  kind: doctrine
+  statement: 十神喜忌总纲赋文；正官喜印护忌伤冲、七煞喜食制忌无制等。
+  anchor:
+    file: sources/fulltext/bazi/yuanhai-ziping/fulltext.md
+    start_line: 270
+    end_line: 270
+  quote: 《未》未月阴深火渐衰，藏官藏印不藏财；近无亥卯形难变，远带刑冲库亦开。无火怕行金水去，多寒偏爱丙丁来；用神喜忌当分晓，莫把圭璋作石猜。
+  applicable_to: 
+  - key: shishen
+    value: 正官
+  - key: geju
+    value: 正官格
+  caveats:
+  - 赋文体裁，经验性描述
+  - 精细喜忌以后世《子平真诠》为准
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: YUANHAIZIPIN-012
+  kind: doctrine
+  statement: 看命次序的经验口诀汇总（先看月令、再看十神、再看合冲等）。
+  anchor: null
+  quote: 年根為本，月令為中。日生百刻，時旺時空。日主要強，月提得令。用物為財，表實為正。
+  applicable_to: []
+  caveats:
+  - 口诀为经验汇总，非绝对规则
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: YUANHAIZIPIN-013
+  kind: doctrine
+  statement: 正官一位清纯为佳（忌伤冲多见）；七煞需制化（食制/印化/合留）；正财身财两停为佳；偏财多情慷慨忌劫夺；印绶生身护身；偏印夺食为忌；食神制煞生财；伤官见官为祸；比肩劫财分夺。
+  anchor:
+    file: sources/fulltext/bazi/yuanhai-ziping/fulltext.md
+    start_line: 2202
+    end_line: 2202
+  quote: 凡识生财伤官有三：伤之不尽，多出吏道；元有物气，伤官运及印綬，岁复见官星者，多凶化气，怕逢返本；不化有变局，如化不成者，可只用本日干断。
+  applicable_to:
+  - key: shishen
+    value: "*"
+  caveats:
+  - 本书十神描述为"经验断语"级别，未严格区分顺逆用
+  - 精修以《子平真诠》为准
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: YUANHAIZIPIN-014
+  kind: doctrine
+  statement: 建禄格（日干临官在月）与阳刃格（阳干刃在月）皆不取月令格局，而以扶抑论。
+  anchor: null
+  quote: 杂气财官，刑冲则发。
+  applicable_to: []
+  caveats:
+  - 与《三命通会》R-06-14/R-06-15 互证
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: YUANHAIZIPIN-015
+  kind: doctrine
+  statement: 正官七煞同现为混杂，需去留得宜（去官留煞或去煞留官）。
+  anchor: null
+  quote: 正官七煞同现为混杂，需去留得宜（去官留煞或去煞留官）。
+  applicable_to:
+  - key: shishen
+    value: 正官
+  - key: shishen
+    value: 七杀
+  caveats:
+  - 去留细节以《子平真诠》为精修版
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: YUANHAIZIPIN-016
+  kind: doctrine
+  statement: 日主无根极弱、煞（或财）极旺无制时弃命从之为格成。
+  anchor:
+    file: sources/fulltext/bazi/yuanhai-ziping/fulltext.md
+    start_line: 4660
+    end_line: 4660
+  quote: 甲乙无根，怕逢申酉；杀合逢之，双目必朽。
+  applicable_to: 
+  - key: rizhu_strength
+    value: 极弱
+  caveats:
+  - 从格判定严格
+  - 运逢扶身则破格
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: YUANHAIZIPIN-017
+  kind: doctrine
+  statement: 月令辰戌丑未为杂气；需看透干本气中气余气取格。
+  anchor: null
+  quote: 假令月令有用神，得父母力。
+  applicable_to:
+  - key: yueling
+    value: 辰
+  - key: yueling
+    value: 戌
+  - key: yueling
+    value: 丑
+  - key: yueling
+    value: 未
+  caveats:
+  - 杂气取用复杂
+  - 与《三命通会》R-06-11 互证
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: YUANHAIZIPIN-018
+  kind: doctrine
+  statement: 天干五合化气需化神当令、有根、不被冲克方真化。
+  anchor: null
+  quote: 天干五合化气需化神当令、有根、不被冲克方真化。
+  applicable_to: []
+  caveats:
+  - 化气真伪是大变量
+  - 不真化时按原五行论
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: YUANHAIZIPIN-019
+  kind: doctrine
+  statement: 日主在月令的旺相休囚决定基本强弱倾向。
+  anchor: null
+  quote: 假令月令有用神，得父母力。
+  applicable_to: []
+  caveats:
+  - 粗框架
+  - 精细旺衰需《滴天髓阐微》
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: YUANHAIZIPIN-020
+  kind: doctrine
+  statement: 用神为命局所需之神；本书已有取用意识但框架尚不严格。
+  anchor: null
+  quote: 用神为命局所需之神；本书已有取用意识但框架尚不严格。
+  applicable_to: []
+  caveats:
+  - 本书用神概念为格局雏形
+  - 严格取用以《子平真诠》为准
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: YR-03
+  kind: doctrine
+  statement: 大运从月柱起；男阳女阴顺行、男阴女阳逆行；起运岁数按生时距前/后节气日数除三。
+  anchor: null
+  quote: 夫大运者，以天干曰『五运』，地支曰『六气』，故名『范气』。
+  applicable_to: []
+  caveats:
+  - 起运岁数为事实层，必须由 tool.bazi.paipan 计算
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: YUANHAIZIPIN-YR-03
+  kind: doctrine
+  statement: 太岁为流年；大运与流年合参看命局变化。
+  anchor:
+    file: sources/fulltext/bazi/yuanhai-ziping/fulltext.md
+    start_line: 182
+    end_line: 182
+  quote: 大运不宜与太岁相剋、相冲者凶；更刑、冲、相剋者亦忌。
+  applicable_to: []
+  caveats:
+  - 本书框架已确立但细节不如后世精密
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: YUANHAIZIPIN-023
+  kind: doctrine
+  statement: 本篇以正财作妻财之象，并强调自身须能任财；不是完整六亲对应表。
+  anchor:
+    file: sources/fulltext/bazi/yuanhai-ziping/fulltext.md
+    start_line: 438
+    end_line: 438
+  quote: 何谓之正财？犹如正官之意；是阴见阳财，阳见阴财。大抵正财，吾妻之财也。人之女貲财以事我，必精神康强，然后可以享用之；如吾身方且自萎懦而不振，虽妻财丰厚，但能目视，终不可一毫受用。
+  applicable_to:
+  - key: shishen
+    value: 正财
+  caveats:
+  - 古代妻财取象不是对现实伴侣、收入或人格的测量。
+  - 不能用于证明现代岗位适合或不适合。
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: YUANHAIZIPIN-024
+  kind: doctrine
+  statement: 女命以正官为夫、食伤为子；夫宫稳定为佳。
+  anchor:
+    file: sources/fulltext/bazi/yuanhai-ziping/fulltext.md
+    start_line: 546
+    end_line: 546
+  quote: 若月令中有正官，时干支有偏官，便难以正官言之。
+  applicable_to: 
+  - key: shishen
+    value: 正官
+  - key: geju
+    value: 正官格
+  caveats:
+  - 古文价值观需 reframe
+  - 现代中性表述
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: YUANHAIZIPIN-025
+  kind: doctrine
+  statement: 由日干五行论性情：木仁火礼土信金义水智。
+  anchor:
+    file: sources/fulltext/bazi/yuanhai-ziping/fulltext.md
+    start_line: 218
+    end_line: 218
+  quote: 性情者，乃喜怒哀乐爱恶欲之所发，仁义礼智信之所布，父精母血而成形；皆金木水火土之关係也。
+  applicable_to: []
+  caveats:
+  - 性情判断仅作参考
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: YUANHAIZIPIN-026
+  kind: doctrine
+  statement: 格局清纯有用为贵；格局破败无用为贱；身财两停为富；身弱财多为穷。
+  anchor: null
+  quote: 格局清纯有用为贵；格局破败无用为贱；身财两停为富；身弱财多为穷。
+  applicable_to: []
+  caveats:
+  - 经验断语，非绝对规则
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: YR-04
+  kind: doctrine
+  statement: 神煞作事项辅证，不主格局；与十神/格局冲突时以格局为主。
+  anchor: null
+  quote: 神煞作事项辅证，不主格局；与十神/格局冲突时以格局为主。
+  applicable_to:
+  - key: shensha
+    value: "*"
+  caveats:
+  - 本书仍保留较多唐宋禄命神煞
+  - 现代以十神+月令为主线
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: YR-05
+  kind: doctrine
+  statement: 造化元钥赋文总论命理哲学；五行配合为人命之钥。
+  anchor: null
+  quote: 造化元钥赋文总论命理哲学；五行配合为人命之钥。
+  applicable_to: []
+  caveats:
+  - 赋文体裁，非具体规则
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: YUANHAIZIPIN-YR-05
+  kind: doctrine
+  statement: 刑冲的补充辨析：冲喜用为凶、冲忌神为吉；刑入命未必凶。
+  anchor: null
+  quote: 刑冲的补充辨析：冲喜用为凶、冲忌神为吉；刑入命未必凶。
+  applicable_to: []
+  caveats:
+  - 补充卷一总论
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: YUANHAIZIPIN-030
+  kind: doctrine
+  statement: 格局取用经验心法汇总：看月令、看透干、看喜忌、看大运。
+  anchor:
+    file: sources/fulltext/bazi/yuanhai-ziping/fulltext.md
+    start_line: 4420
+    end_line: 4420
+  quote: 年根為本，月令為中。日生百刻，時旺時空。日主要強，月提得令。用物為財，表實為正。
+  applicable_to: []
+  caveats:
+  - 经验汇总
+  - 严格取格以《子平真诠》为准
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: YUANHAIZIPIN-031
+  kind: doctrine
+  statement: 小儿命局看关煞、五行偏枯、冲战过重；古法断夭折需极度谨慎。
+  anchor:
+    file: sources/fulltext/bazi/yuanhai-ziping/fulltext.md
+    start_line: 1090
+    end_line: 1090
+  quote: 小儿之命，当论时辰为主；先看关煞，次看格局。
+  applicable_to: []
+  caveats:
+  - ⚠️ 绝对禁止铁口断寿夭
+  - 现代医学事实优先
+  - 只分析五行偏枯，不作寿夭结论
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: YUANHAIZIPIN-032
+  kind: doctrine
+  statement: 干支配脏腑（甲乙肝胆、丙丁心小肠、戊己脾胃、庚辛肺大肠、壬癸肾膀胱）；五行偏枯对应脏腑有体质倾向。
+  anchor: null
+  quote: 干支配脏腑（甲乙肝胆、丙丁心小肠、戊己脾胃、庚辛肺大肠、壬癸肾膀胱）；五行偏枯对应脏腑有体质倾向。
+  applicable_to: []
+  caveats:
+  - ⚠️ 不作医学诊断
+  - 遇用户问诊一律建议就医
+  - 只作命理体质倾向参考
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: YUANHAIZIPIN-033
+  kind: doctrine
+  statement: 寿命长短的古法判断：五行流通无偏枯主寿；五行偏枯至极、大运通关不过为危。
+  anchor: null
+  quote: 夫大运者，以天干曰『五运』，地支曰『六气』，故名『范气』。
+  applicable_to: []
+  caveats:
+  - ⚠️ 绝对禁止铁口断寿！现代不作寿命结论
+  - 古法判断仅作历史记录
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: YUANHAIZIPIN-034
+  kind: doctrine
+  statement: 死亡应期的古法断语：大运流年冲克太过、五行绝地等。
+  anchor:
+    file: sources/fulltext/bazi/yuanhai-ziping/fulltext.md
+    start_line: 164
+    end_line: 164
+  quote: 夫大运者，以天干曰『五运』，地支曰『六气』，故名『范气』。
+  applicable_to: []
+  caveats:
+  - ⚠️ 绝对禁止铁口断死亡时间！现代不作死亡结论
+  - 古法判断仅作历史记录
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: YUANHAIZIPIN-035
+  kind: doctrine
+  statement: 僧道之命的古法判断：五行偏枯、印星过重、华盖重、六亲无依等。
+  anchor:
+    file: sources/fulltext/bazi/yuanhai-ziping/fulltext.md
+    start_line: 3518
+    end_line: 3518
+  quote: 身旺无依，僧道之命。
+  applicable_to: []
+  caveats:
+  - ⚠️ 现代不作职业硬断
+  - 古法社会分类仅作历史参考
+  - 不得以此断定用户职业
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: YUANHAIZIPIN-YR-04
+  kind: doctrine
+  statement: 本书神煞卷还含天罗地网、十恶大败、灾煞、元辰、勾绞、暗金的煞、六厄等；统一按 YR-04-01 神煞总则处理。
+  anchor:
+    file: sources/fulltext/bazi/yuanhai-ziping/fulltext.md
+    start_line: 4470
+    end_line: 4470
+  quote: 十惡大敗，格中不忌。若會財官，反成富貴。格局推詳，以殺為重。制煞為權，何愁損用。
+  applicable_to: 
+  - key: shensha
+    value: 灾煞
+  caveats:
+  - 神煞作辅不主主线
+  - 不可单凭神煞断吉凶
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: YUANHAIZIPIN-037
+  kind: doctrine
+  statement: 《金玉赋》《格致赋》及卷五其他杂赋均为经验断语赋文体裁，非严格规则；归属待考；与《三命通会》互见。
+  anchor: null
+  quote: 金玉赋》
+  applicable_to: []
+  caveats:
+  - 赋文体裁属经验性描述，非规则条文
+  - 归属待考
+  - 不作主结论依据
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: YUANHAIZIPIN-038
+  kind: doctrine
+  statement: 年柱起官的古法；以年柱为起点取官。
+  anchor: null
+  quote: 年柱起官的古法；以年柱为起点取官。
+  applicable_to: []
+  caveats:
+  - 古法以年为主的残留
+  - 现代子平以月令取格为主，不用年上起官
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
+- rule_id: YR-P-01
+  kind: procedure
+  statement: 起运折除以三日为一年，按一年二十四气、七十二候计。
+  anchor:
+    file: sources/fulltext/bazi/yuanhai-ziping/fulltext.md
+    start_line: 4842
+    end_line: 4842
+  quote: 折除乃三日为年；折除者乃一年二十四气，七十二候。
+  applicable_to: []
+  caveats:
+  - 只锁折除日数，不锁阳男阴女顺逆（本书此处未写）
+  - 起运时刻取真太阳时与节气，由排盘引擎计算
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
