@@ -4,7 +4,9 @@ on:
     paths:
       - "references/**"
       - "sources/fulltext/**"
+      - "sources/excerpts/**"
       - "tools/**"
+      - ".github/workflows/validate-rules.yml"
   push:
     branches: [main]
 jobs:
@@ -17,11 +19,12 @@ jobs:
           sparse-checkout: |
             references
             sources/fulltext
+            sources/excerpts
             tools
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
-      - run: pip install pyyaml
+      - run: pip install pyyaml opencc-python-reimplemented
       - run: python tools/validate-rules.py
       - run: python tools/test-validate-gates.py
       - run: python tools/coverage-report.py --fail-under 54
