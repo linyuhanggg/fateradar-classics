@@ -41,3 +41,22 @@
 - classics_audit 正完整审读子平真诠556段；other_arts_audit 修正索引分类/真实注解统计。这些任务未完成时目标仍保持active。
 
 后续必须继续：全库其余书逐段加工、完整规则语义与案例、八术内容/位置/报告证据对接、知识检索和生时比较页面、整体验收。修复本次缺陷不等于完成总方案。
+
+## 接续记录（2026-09-08）
+
+- 来源与案例：子平 e8758aa 已完整注解556段；187次原例出现，去重95组合法干支输入，1例疑字不作复算。青囊奥语/序/太微赋2bfb942，葬书b454f59，冰鉴/黄帝宅经e4a45f7，当前7包617条电子审读（含元数据处理说明，不全是理论正文）。原书案例索引已导出，重复不计独立验盘。
+- 库存生成已按真实注解统计，原段落ID保持；生成器及知识导出可重复执行。新知识页面ab0b17b，来源精确跳转e578e77，生时页面a55036a和午夜说明4551e7c，整库文字只在server包，client无整库。
+- 浏览器实际：/library可查繁简同结果、固定版本出处可访问；/birth-time未知范围得到14候选，改成13–13后得到未时1候选；加入2010公历事件+日柱相冲条件，立春前不一致/后符合，整体信息不足，没有假判准确率。所有输入修改清空旧结果。
+- 最新全产品测试基线：400项通过、lint通过；生时新页面另27项定向、typecheck通过，最终集成需再build新路由。Ego空间7仍为本目标使用；服务5188由session14995运行。select必须用真实change选择，不用fillInput（会打字到旧焦点）。
+- 重大新源问题：命理约言540段是网页导航/链接、没有正文。不能把它们翻译成理论；classics_audit正从现有NLC PDF恢复，派生到sources/normalized/bazi/mingli-yueyan/nlc-recovery.md，不覆盖旧全文/IDs。
+- 在跑的独立工作：classics_audit（命理约言导航归档+PDF正文恢复）；other_arts_audit（穷通宝鉴605段审读，首78段已落）；bazi_audit（54全文+2补充原料真实性核查，references/source-quality.json与docs/source-audits/fulltext-quality.md）。已知命理约言navigation-only已原子落source-quality，根export与library已支持textStatus/sourceNotes。
+- 仍未完成：其余全库语义/去重和案例、实际全规则执行与八术主要算法审查完善、报告/AI新规则证据接入、所有八术页面回归及总方案逐条完成证明。目标active，不因400测试过或7包注解完成而收缩目标。
+
+## 最新接续点
+
+- 产品集成验证：411 tests、tsc、lint:ci、FATERADAR_TARGET=node生产build均通过（日志 /tmp/fateradar-full-library-current-build.log）。这证明当前实现不回归，不证明全书语义与八术全部条件完备。
+- source-quality 86df5c1 已审54主文本+2补充：50有实质正文、3混合材料、1纯导航；这是有正文判断，不是全本准确证明。新发现撼龙合刊混入、麻衣重复、沈氏缺表、阳宅十书缺图，报告均有具体位置。
+- 命理约言 fb58e3a 保存540段导航去向及185页NLC恢复OCR候选：sources/normalized/bazi/mingli-yueyan/nlc-recovery.md，canonical_eligible=false。旧fulltext仍保留；下一步需要新版本段落命名空间mingli-yueyan:nlc-recovery:L...及正文校对，不能借旧导航ID。
+- 穷通注解正在持续落盘（最后观察279/605），不要把未完成条目填模板。命理OCR校核、穷通全书审读、共享影印映射修正仍由三个存活子任务执行。需继续接收其成果并校验，不重复启动同一任务。
+- 产品generated/knowledge.json由主线程拥有，目前仍待作为数据提交；它包含现有已核条目与未审原文、来源质量，最终冻结前须按源仓提交重导。知识页面与birth-time代码已提交，原main及他人.claude/admin/billing未改。
+- 原审查报告里的问题已修多项，完整总目标仍未完成；后续核心工作包括全库恢复/逐段加工、规则与案例执行、报告证据新版接入、剩余八术算法及页面验收。禁止以当前绿色检查宣告全量完成。
