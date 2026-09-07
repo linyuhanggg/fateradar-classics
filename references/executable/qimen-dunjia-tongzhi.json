@@ -1,5 +1,5 @@
 {
-  "schema_version": "fateradar-executable-v1",
+  "schema_version": "fateradar-executable-v2",
   "book": {
     "slug": "qimen-dunjia-tongzhi",
     "system": "san-shi",
@@ -14,11 +14,33 @@
       "art": "qimen",
       "theme": "伏吟落宫",
       "school": "奇门遁甲统宗",
-      "paragraph_id": "qimen-dunjia-tongzhi:L0309-L0311",
-      "quote": "反吟 星加对宫 伏吟 本星加本宫",
+      "paragraph_ids": [
+        "qimen-dunjia-tongzhi:L0309-L0309",
+        "qimen-dunjia-tongzhi:L0311-L0311"
+      ],
+      "sources": [
+        {
+          "paragraph_id": "qimen-dunjia-tongzhi:L0309-L0309",
+          "start_line": 309,
+          "end_line": 309,
+          "quote": "反吟 星加对宫"
+        },
+        {
+          "paragraph_id": "qimen-dunjia-tongzhi:L0311-L0311",
+          "start_line": 311,
+          "end_line": 311,
+          "quote": "伏吟 本星加本宫"
+        }
+      ],
+      "quote": "反吟 星加对宫\n[…]\n伏吟 本星加本宫",
       "page": "qimen",
-      "required_facts": ["zhifu.palace", "timedry.palace"],
-      "when": { "exists": "zhifu.palace" },
+      "required_facts": [
+        "zhifu.palace",
+        "timedry.palace"
+      ],
+      "when": {
+        "exists": "zhifu.palace"
+      },
       "satisfy_when": "值符归本位，天地二盘相重：只记伏吟",
       "fail_when": "值符不在本位，且也未落对宫",
       "unknown_when": "歌诀称最凶而同局仍有吉门吉星：力量未论，不得输出必败",
@@ -32,11 +54,33 @@
       "art": "qimen",
       "theme": "反吟落宫",
       "school": "奇门遁甲统宗",
-      "paragraph_id": "qimen-dunjia-tongzhi:L0309-L0311",
-      "quote": "反吟 星加对宫 伏吟 本星加本宫",
+      "paragraph_ids": [
+        "qimen-dunjia-tongzhi:L0309-L0309",
+        "qimen-dunjia-tongzhi:L0311-L0311"
+      ],
+      "sources": [
+        {
+          "paragraph_id": "qimen-dunjia-tongzhi:L0309-L0309",
+          "start_line": 309,
+          "end_line": 309,
+          "quote": "反吟 星加对宫"
+        },
+        {
+          "paragraph_id": "qimen-dunjia-tongzhi:L0311-L0311",
+          "start_line": 311,
+          "end_line": 311,
+          "quote": "伏吟 本星加本宫"
+        }
+      ],
+      "quote": "反吟 星加对宫\n[…]\n伏吟 本星加本宫",
       "page": "qimen",
-      "required_facts": ["zhifu.palace", "timedry.palace"],
-      "when": { "exists": "zhifu.palace" },
+      "required_facts": [
+        "zhifu.palace",
+        "timedry.palace"
+      ],
+      "when": {
+        "exists": "zhifu.palace"
+      },
       "satisfy_when": "值符落对宫，天盘与地盘相冲：只记反吟",
       "fail_when": "值符不在对宫，且也未归本位",
       "unknown_when": "反吟与吉格同现：原文另有进兵之论，力量未论，不得输出必变",

@@ -26,6 +26,8 @@ jobs:
           python-version: "3.12"
       - run: pip install pyyaml opencc-python-reimplemented
       - run: python tools/validate-rules.py
+      - run: python tools/validate-executable.py
+      - run: python tools/test-validate-executable.py
       - run: python tools/export-reading-notes.py
       - run: python tools/test-validate-gates.py
       - run: python tools/coverage-report.py --fail-under 54

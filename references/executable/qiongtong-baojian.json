@@ -1,5 +1,5 @@
 {
-  "schema_version": "fateradar-executable-v1",
+  "schema_version": "fateradar-executable-v2",
   "book": {
     "slug": "qiongtong-baojian",
     "system": "bazi",
@@ -14,11 +14,42 @@
       "art": "bazi",
       "theme": "调候用神透藏",
       "school": "穷通宝鉴",
-      "paragraph_id": "qiongtong-baojian:L1254-L1258",
-      "quote": "十月庚金，水冷性寒，非丁莫造，非丙不暖。……书曰：水冷金寒爱丙丁。",
+      "paragraph_ids": [
+        "qiongtong-baojian:L1254-L1254",
+        "qiongtong-baojian:L1256-L1256",
+        "qiongtong-baojian:L1258-L1258"
+      ],
+      "sources": [
+        {
+          "paragraph_id": "qiongtong-baojian:L1254-L1254",
+          "start_line": 1254,
+          "end_line": 1254,
+          "quote": "十月庚金，水冷性寒，非丁莫造，非丙不暖。丁甲两透，支无水局，一榜有之。支藏丙火，桃浪之仙。支见亥子，得己出制，亦有功名。"
+        },
+        {
+          "paragraph_id": "qiongtong-baojian:L1256-L1256",
+          "start_line": 1256,
+          "end_line": 1256,
+          "quote": "若见丙透无丁者，决无显达。丁藏甲透，武职之人。以上不合者，庸俗。"
+        },
+        {
+          "paragraph_id": "qiongtong-baojian:L1258-L1258",
+          "start_line": 1258,
+          "end_line": 1258,
+          "quote": "如金水混杂，全无丙丁者，鄙夫。支成金局，无火者，僧道之命也。书曰：水冷金寒爱丙丁。"
+        }
+      ],
+      "quote": "十月庚金，水冷性寒，非丁莫造，非丙不暖。丁甲两透，支无水局，一榜有之。支藏丙火，桃浪之仙。支见亥子，得己出制，亦有功名。\n[…]\n若见丙透无丁者，决无显达。丁藏甲透，武职之人。以上不合者，庸俗。\n[…]\n如金水混杂，全无丙丁者，鄙夫。支成金局，无火者，僧道之命也。书曰：水冷金寒爱丙丁。",
       "page": "tiaohou",
-      "required_facts": ["day.gan", "month.zhi", "stems", "hidden.gans"],
-      "when": { "exists": "month.zhi" },
+      "required_facts": [
+        "day.gan",
+        "month.zhi",
+        "stems",
+        "hidden.gans"
+      ],
+      "when": {
+        "exists": "month.zhi"
+      },
       "satisfy_when": "调候表主用出现在天干：只说明位置可见",
       "fail_when": "调候表主用四柱未见：未见不等于注定偏枯",
       "unknown_when": "调候表主用仅见藏干",

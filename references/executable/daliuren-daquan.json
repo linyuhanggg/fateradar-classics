@@ -1,5 +1,5 @@
 {
-  "schema_version": "fateradar-executable-v1",
+  "schema_version": "fateradar-executable-v2",
   "book": {
     "slug": "daliuren-daquan",
     "system": "san-shi",
@@ -14,11 +14,35 @@
       "art": "liuren",
       "theme": "贼克取传",
       "school": "六壬大全",
-      "paragraph_id": "daliuren-daquan:L0064-L0066",
-      "quote": "一 贼克法一下克上曰重审，一上克下曰元首。取课先从下贼呼，如无下贼上克初。初传之上名中次，中上加临是末居。",
+      "paragraph_ids": [
+        "daliuren-daquan:L0064-L0064",
+        "daliuren-daquan:L0066-L0066"
+      ],
+      "sources": [
+        {
+          "paragraph_id": "daliuren-daquan:L0064-L0064",
+          "start_line": 64,
+          "end_line": 64,
+          "quote": "一 贼克法一下克上曰重审，一上克下曰元首"
+        },
+        {
+          "paragraph_id": "daliuren-daquan:L0066-L0066",
+          "start_line": 66,
+          "end_line": 66,
+          "quote": "取课先从下贼呼，如无下贼上克初。初传之上名中次，中上加临是末居。三传既定天盘将，此是入式法第一。"
+        }
+      ],
+      "quote": "一 贼克法一下克上曰重审，一上克下曰元首\n[…]\n取课先从下贼呼，如无下贼上克初。初传之上名中次，中上加临是末居。三传既定天盘将，此是入式法第一。",
       "page": "liuren",
-      "required_facts": ["day.ganzhi", "four.ke", "three.chuan", "ke.style"],
-      "when": { "exists": "four.ke" },
+      "required_facts": [
+        "day.ganzhi",
+        "four.ke",
+        "three.chuan",
+        "ke.style"
+      ],
+      "when": {
+        "exists": "four.ke"
+      },
       "satisfy_when": "已按一下克上取重审、一上克下取元首，并写出三传",
       "fail_when": "四课未起出，无法取传",
       "unknown_when": "同书后文将元首/重审取名对调；或原文有问事皆实、事多不顺而旺衰未论：不得输出成败",
@@ -32,11 +56,28 @@
       "art": "liuren",
       "theme": "涉害两派分条",
       "school": "六壬大全",
-      "paragraph_id": "daliuren-daquan:L0070-L0070",
-      "quote": "若或俱比俱不比，立法别有渉害陈。",
+      "paragraph_ids": [
+        "daliuren-daquan:L0070-L0070"
+      ],
+      "sources": [
+        {
+          "paragraph_id": "daliuren-daquan:L0070-L0070",
+          "start_line": 70,
+          "end_line": 70,
+          "quote": "下贼或三二四侵，若逢上克亦同云。常将天日比神用，阳日用阳阴用阴。若或俱比俱不比，立法别有渉害陈。"
+        }
+      ],
+      "quote": "下贼或三二四侵，若逢上克亦同云。常将天日比神用，阳日用阳阴用阴。若或俱比俱不比，立法别有渉害陈。",
       "page": "liuren",
-      "required_facts": ["ke.style", "shehai.method"],
-      "when": { "equals": { "ke.style": "涉害课" } },
+      "required_facts": [
+        "ke.style",
+        "shehai.method"
+      ],
+      "when": {
+        "equals": {
+          "ke.style": "涉害课"
+        }
+      },
       "satisfy_when": "已按所选涉害方法（历数深浅或孟仲季）取出初传，并与另一派分条记录",
       "fail_when": "不是涉害课",
       "unknown_when": "两派初传不同：只并列，不投票合成一传",
@@ -50,11 +91,36 @@
       "art": "liuren",
       "theme": "伏吟取传",
       "school": "六壬大全",
-      "paragraph_id": "daliuren-daquan:L0092-L0094",
-      "quote": "伏吟有克还为用，无克刚干柔取辰。迤逦刑之作中末，从兹《玉厯》职其真。若也自刑为发用，次传颠倒日辰并。次传更复自刑者，冲取末传不论刑。",
+      "paragraph_ids": [
+        "daliuren-daquan:L0092-L0092",
+        "daliuren-daquan:L0094-L0094"
+      ],
+      "sources": [
+        {
+          "paragraph_id": "daliuren-daquan:L0092-L0092",
+          "start_line": 92,
+          "end_line": 92,
+          "quote": "八 伏吟法"
+        },
+        {
+          "paragraph_id": "daliuren-daquan:L0094-L0094",
+          "start_line": 94,
+          "end_line": 94,
+          "quote": "伏吟有克还为用，无克刚干柔取辰。迤逦刑之作中末，从兹《玉厯》职其真。若也自刑为发用，次传颠倒日辰并。次传更复自刑者，冲取末传不论刑。"
+        }
+      ],
+      "quote": "八 伏吟法\n[…]\n伏吟有克还为用，无克刚干柔取辰。迤逦刑之作中末，从兹《玉厯》职其真。若也自刑为发用，次传颠倒日辰并。次传更复自刑者，冲取末传不论刑。",
       "page": "liuren",
-      "required_facts": ["ke.style", "three.chuan", "sky.shift"],
-      "when": { "equals": { "ke.style": "伏吟课" } },
+      "required_facts": [
+        "ke.style",
+        "three.chuan",
+        "sky.shift"
+      ],
+      "when": {
+        "equals": {
+          "ke.style": "伏吟课"
+        }
+      },
       "satisfy_when": "天地盘同位，已按有克取克、无克阳取干上阴取支上，并按递刑、自刑互取、再自刑取冲写出三传",
       "fail_when": "不是伏吟课",
       "unknown_when": "原文另有神杀不动、后不为灾：旺衰与所问未论，不得输出事情已经停住或已经无灾",
@@ -68,11 +134,36 @@
       "art": "liuren",
       "theme": "返吟取传",
       "school": "六壬大全",
-      "paragraph_id": "daliuren-daquan:L0096-L0098",
-      "quote": "返吟有克亦为用，无克别有井栏名。若知六日该无克，丑未同干丁己辛。丑日登明未太乙，辰中日末识原因阳日用辰，阴日用日，辰上作中，日上作末。",
+      "paragraph_ids": [
+        "daliuren-daquan:L0096-L0096",
+        "daliuren-daquan:L0098-L0098"
+      ],
+      "sources": [
+        {
+          "paragraph_id": "daliuren-daquan:L0096-L0096",
+          "start_line": 96,
+          "end_line": 96,
+          "quote": "九 返吟法"
+        },
+        {
+          "paragraph_id": "daliuren-daquan:L0098-L0098",
+          "start_line": 98,
+          "end_line": 98,
+          "quote": "返吟有克亦为用，无克别有井栏名。若知六日该无克，丑未同干丁己辛。丑日登明未太乙，辰中日末识原因阳日用辰，阴日用日，辰上作中，日上作末。"
+        }
+      ],
+      "quote": "九 返吟法\n[…]\n返吟有克亦为用，无克别有井栏名。若知六日该无克，丑未同干丁己辛。丑日登明未太乙，辰中日末识原因阳日用辰，阴日用日，辰上作中，日上作末。",
       "page": "liuren",
-      "required_facts": ["ke.style", "three.chuan", "sky.shift"],
-      "when": { "equals": { "ke.style": "返吟课" } },
+      "required_facts": [
+        "ke.style",
+        "three.chuan",
+        "sky.shift"
+      ],
+      "when": {
+        "equals": {
+          "ke.style": "返吟课"
+        }
+      },
       "satisfy_when": "天地盘对冲，有克仍按贼克取传；无克按井栏取日支驿马为初传、支上中传、干上末传",
       "fail_when": "不是返吟课",
       "unknown_when": "井栏与有克分支已分开，但旺衰未论：不得输出事情已经反复",
@@ -86,11 +177,39 @@
       "art": "liuren",
       "theme": "遥克蒿矢弹射",
       "school": "六壬大全",
-      "paragraph_id": "daliuren-daquan:L0076-L0078",
-      "quote": "神遥克日曰蒿矢，日遥克神曰弹射。四课无克号为遥，日与神兮逓互招。先取神遥克其日，如无方取日来遥。或有日克乎两神，复有两神来克日。择与日干比者用，阳日用阳阴用阴。",
+      "paragraph_ids": [
+        "daliuren-daquan:L0076-L0076",
+        "daliuren-daquan:L0078-L0078"
+      ],
+      "sources": [
+        {
+          "paragraph_id": "daliuren-daquan:L0076-L0076",
+          "start_line": 76,
+          "end_line": 76,
+          "quote": "四 遥克法"
+        },
+        {
+          "paragraph_id": "daliuren-daquan:L0078-L0078",
+          "start_line": 78,
+          "end_line": 78,
+          "quote": "神遥克日曰蒿矢，日遥克神曰弹射。四课无克号为遥，日与神兮逓互招。先取神遥克其日，如无方取日来遥。或有日克乎两神，复有两神来克日。择与日干比者用，阳日用阳阴用阴。"
+        }
+      ],
+      "quote": "四 遥克法\n[…]\n神遥克日曰蒿矢，日遥克神曰弹射。四课无克号为遥，日与神兮逓互招。先取神遥克其日，如无方取日来遥。或有日克乎两神，复有两神来克日。择与日干比者用，阳日用阳阴用阴。",
       "page": "liuren",
-      "required_facts": ["ke.style", "three.chuan", "four.ke"],
-      "when": { "in": { "ke.style": ["蒿矢课", "弹射课"] } },
+      "required_facts": [
+        "ke.style",
+        "three.chuan",
+        "four.ke"
+      ],
+      "when": {
+        "in": {
+          "ke.style": [
+            "蒿矢课",
+            "弹射课"
+          ]
+        }
+      },
       "satisfy_when": "四课无直接克，已先取上神遥克日干为蒿矢，无则取日干遥克上神为弹射，并按与日干阴阳相比选出初传",
       "fail_when": "不是蒿矢课也不是弹射课",
       "unknown_when": "原文另有蒿矢弹射势为轻：轻重未论，不得输出事情已经轻微",
@@ -104,11 +223,36 @@
       "art": "liuren",
       "theme": "比用取传",
       "school": "六壬大全",
-      "paragraph_id": "daliuren-daquan:L0068-L0070",
-      "quote": "下贼或三二四侵，若逢上克亦同云。常将天日比神用，阳日用阳阴用阴。若或俱比俱不比，立法别有渉害陈。",
+      "paragraph_ids": [
+        "daliuren-daquan:L0068-L0068",
+        "daliuren-daquan:L0070-L0070"
+      ],
+      "sources": [
+        {
+          "paragraph_id": "daliuren-daquan:L0068-L0068",
+          "start_line": 68,
+          "end_line": 68,
+          "quote": "二 比用法即知一也"
+        },
+        {
+          "paragraph_id": "daliuren-daquan:L0070-L0070",
+          "start_line": 70,
+          "end_line": 70,
+          "quote": "下贼或三二四侵，若逢上克亦同云。常将天日比神用，阳日用阳阴用阴。若或俱比俱不比，立法别有渉害陈。"
+        }
+      ],
+      "quote": "二 比用法即知一也\n[…]\n下贼或三二四侵，若逢上克亦同云。常将天日比神用，阳日用阳阴用阴。若或俱比俱不比，立法别有渉害陈。",
       "page": "liuren",
-      "required_facts": ["ke.style", "three.chuan", "day.gan"],
-      "when": { "equals": { "ke.style": "比用课" } },
+      "required_facts": [
+        "ke.style",
+        "three.chuan",
+        "day.gan"
+      ],
+      "when": {
+        "equals": {
+          "ke.style": "比用课"
+        }
+      },
       "satisfy_when": "贼克候选多于一个，已按与日干阴阳相比取出唯一比神为初传",
       "fail_when": "不是比用课",
       "unknown_when": "原文另有占人不出邑里、占贼皆在近处：远近未论，不得输出事情已经近处",
@@ -122,11 +266,36 @@
       "art": "liuren",
       "theme": "昴星取传",
       "school": "六壬大全",
-      "paragraph_id": "daliuren-daquan:L0080-L0082",
-      "quote": "无遥无克昴星穷，阳仰阴俯酉位中论初传也。刚日先辰而后日，柔日先日而后辰论中末也。",
+      "paragraph_ids": [
+        "daliuren-daquan:L0080-L0080",
+        "daliuren-daquan:L0082-L0082"
+      ],
+      "sources": [
+        {
+          "paragraph_id": "daliuren-daquan:L0080-L0080",
+          "start_line": 80,
+          "end_line": 80,
+          "quote": "五 昴星法"
+        },
+        {
+          "paragraph_id": "daliuren-daquan:L0082-L0082",
+          "start_line": 82,
+          "end_line": 82,
+          "quote": "无遥无克昴星穷，阳仰阴俯酉位中论初传也。刚日先辰而后日，柔日先日而后辰论中末也。"
+        }
+      ],
+      "quote": "五 昴星法\n[…]\n无遥无克昴星穷，阳仰阴俯酉位中论初传也。刚日先辰而后日，柔日先日而后辰论中末也。",
       "page": "liuren",
-      "required_facts": ["ke.style", "three.chuan", "day.gan"],
-      "when": { "equals": { "ke.style": "昴星课" } },
+      "required_facts": [
+        "ke.style",
+        "three.chuan",
+        "day.gan"
+      ],
+      "when": {
+        "equals": {
+          "ke.style": "昴星课"
+        }
+      },
       "satisfy_when": "四课齐全且无克无遥，已按阳取酉上、阴取酉下取初传，中末按刚日先辰后日、柔日先日后辰",
       "fail_when": "不是昴星课",
       "unknown_when": "原文另有必主失脱、昴星蛇虎定凶危：旺衰与所问未论，不得输出已经失脱或已经凶危",
@@ -140,11 +309,36 @@
       "art": "liuren",
       "theme": "别责取传",
       "school": "六壬大全",
-      "paragraph_id": "daliuren-daquan:L0084-L0086",
-      "quote": "四课不全三课备，无遥无克别责例。刚日干合上头神，柔日支前三合取。皆以天上作初传，阴阳中末干中寄。",
+      "paragraph_ids": [
+        "daliuren-daquan:L0084-L0084",
+        "daliuren-daquan:L0086-L0086"
+      ],
+      "sources": [
+        {
+          "paragraph_id": "daliuren-daquan:L0084-L0084",
+          "start_line": 84,
+          "end_line": 84,
+          "quote": "六 别责法戊辰、戊午、丙辰三刚日各一课，辛未二课，辛丑二课，丁酉、辛酉各一课"
+        },
+        {
+          "paragraph_id": "daliuren-daquan:L0086-L0086",
+          "start_line": 86,
+          "end_line": 86,
+          "quote": "四课不全三课备，无遥无克别责例。刚日干合上头神，柔日支前三合取。皆以天上作初传，阴阳中末干中寄。刚三柔六共九课，此课先贤俱隠秘。戊午戊辰与丙辰，干上皆午是为亲。辛丑辛未各二日，下上皆是丑未真。丁酉当为己丁是，辛酉原来是酉辛。"
+        }
+      ],
+      "quote": "六 别责法戊辰、戊午、丙辰三刚日各一课，辛未二课，辛丑二课，丁酉、辛酉各一课\n[…]\n四课不全三课备，无遥无克别责例。刚日干合上头神，柔日支前三合取。皆以天上作初传，阴阳中末干中寄。刚三柔六共九课，此课先贤俱隠秘。戊午戊辰与丙辰，干上皆午是为亲。辛丑辛未各二日，下上皆是丑未真。丁酉当为己丁是，辛酉原来是酉辛。",
       "page": "liuren",
-      "required_facts": ["ke.style", "three.chuan", "four.ke"],
-      "when": { "equals": { "ke.style": "别责课" } },
+      "required_facts": [
+        "ke.style",
+        "three.chuan",
+        "four.ke"
+      ],
+      "when": {
+        "equals": {
+          "ke.style": "别责课"
+        }
+      },
       "satisfy_when": "去重后三课且无克无遥，刚日取干合上神、柔日取支前三合为初传，中末寄干上",
       "fail_when": "不是别责课",
       "unknown_when": "原文另有借途宜外助、否则败怯：外助未论，不得输出事情已经外助",
@@ -158,11 +352,36 @@
       "art": "liuren",
       "theme": "八专取传",
       "school": "六壬大全",
-      "paragraph_id": "daliuren-daquan:L0088-L0090",
-      "quote": "两课无克号八专，阳日日阳顺行三连本位数。阴日辰阴逆三位，中末总向日上眠。",
+      "paragraph_ids": [
+        "daliuren-daquan:L0088-L0088",
+        "daliuren-daquan:L0090-L0090"
+      ],
+      "sources": [
+        {
+          "paragraph_id": "daliuren-daquan:L0088-L0088",
+          "start_line": 88,
+          "end_line": 88,
+          "quote": "七 八专法论克不论遥"
+        },
+        {
+          "paragraph_id": "daliuren-daquan:L0090-L0090",
+          "start_line": 90,
+          "end_line": 90,
+          "quote": "两课无克号八专，阳日日阳顺行三连本位数。阴日辰阴逆三位，中末总向日上眠。"
+        }
+      ],
+      "quote": "七 八专法论克不论遥\n[…]\n两课无克号八专，阳日日阳顺行三连本位数。阴日辰阴逆三位，中末总向日上眠。",
       "page": "liuren",
-      "required_facts": ["ke.style", "three.chuan", "day.ganzhi"],
-      "when": { "equals": { "ke.style": "八专课" } },
+      "required_facts": [
+        "ke.style",
+        "three.chuan",
+        "day.ganzhi"
+      ],
+      "when": {
+        "equals": {
+          "ke.style": "八专课"
+        }
+      },
       "satisfy_when": "干支寄位相同且无克，阳日从干上顺数三位、阴日从支阴逆数三位取初传，中末皆干上",
       "fail_when": "不是八专课",
       "unknown_when": "原文另有八专利出奇、奸邪敌必争：战和未论，不得输出事情已经出奇",

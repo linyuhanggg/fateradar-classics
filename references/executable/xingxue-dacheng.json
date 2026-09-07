@@ -1,5 +1,5 @@
 {
-  "schema_version": "fateradar-executable-v1",
+  "schema_version": "fateradar-executable-v2",
   "book": {
     "slug": "xingxue-dacheng",
     "system": "xingming",
@@ -14,11 +14,26 @@
       "art": "qizheng",
       "theme": "命宫来源分条",
       "school": "星学大成",
-      "paragraph_id": "xingxue-dacheng:L0075-L0075",
-      "quote": "天盤之法順數天左旋也人之立命在十二宫有不同而以天盤之卯加之則同經云天盤轉出地盤上卯上分明是命宫是也",
+      "paragraph_ids": [
+        "xingxue-dacheng:L0075-L0076"
+      ],
+      "sources": [
+        {
+          "paragraph_id": "xingxue-dacheng:L0075-L0076",
+          "start_line": 75,
+          "end_line": 76,
+          "quote": "天盤之法順數天左旋也人之立命在十二宫有不同而以天盤之卯加之則同經云天盤轉出地盤上卯上分明是命宫是也耶律十二宫發明望斗經東升西没新註其説已詳矣時學不知此圖只以子宫為例而槩以十二宫者有之又有知其卯位自加寅辰疊加已丑三位加子午四正加亥未五位加申戌\n六位加酉對衝加亦但得其迹而未知其所以也"
+        }
+      ],
+      "quote": "天盤之法順數天左旋也人之立命在十二宫有不同而以天盤之卯加之則同經云天盤轉出地盤上卯上分明是命宫是也耶律十二宫發明望斗經東升西没新註其説已詳矣時學不知此圖只以子宫為例而槩以十二宫者有之又有知其卯位自加寅辰疊加已丑三位加子午四正加亥未五位加申戌\n六位加酉對衝加亦但得其迹而未知其所以也",
       "page": "qizheng",
-      "required_facts": ["ascendant.sign", "ascendant.source"],
-      "when": { "exists": "ascendant.sign" },
+      "required_facts": [
+        "ascendant.sign",
+        "ascendant.source"
+      ],
+      "when": {
+        "exists": "ascendant.sign"
+      },
       "satisfy_when": "已记录本盘上升点宫度，并标明算法为现代黄道与东地平交点",
       "fail_when": "无出生地经纬度，无法取上升点",
       "unknown_when": "原文卯上立命与上升点不是同一套逐步程序：只分条，不覆盖",
@@ -32,11 +47,27 @@
       "art": "qizheng",
       "theme": "庙旺来源分条",
       "school": "星学大成",
-      "paragraph_id": "xingxue-dacheng:L0187-L0189",
-      "quote": "星辰本宫為廟堂生我之宫為樂鄉我生之宫為旺度福與禍兮堪審詳星尅其宫名入制其星若忌號刑傷本元星主居其位貧乏之徒可較量",
+      "paragraph_ids": [
+        "xingxue-dacheng:L0189-L0197"
+      ],
+      "sources": [
+        {
+          "paragraph_id": "xingxue-dacheng:L0189-L0197",
+          "start_line": 189,
+          "end_line": 190,
+          "quote": "  星辰本宫為廟堂生我之宫為樂鄉我生之宫為旺度福與禍兮堪審詳星尅其宫名入制其星若忌號刑傷本元星主居其位貧乏之徒可較量\n  〔此宫度者號樂旺廟要與太歲相攝若處刑尅之中雖樂旺廟而無用若處帝旺駕勲朝垣入局之上者更不以刑尅為忌雖在樂旺廟而汨没凶敗休囚衝驀之宫亦不可用也〕"
+        }
+      ],
+      "quote": "  星辰本宫為廟堂生我之宫為樂鄉我生之宫為旺度福與禍兮堪審詳星尅其宫名入制其星若忌號刑傷本元星主居其位貧乏之徒可較量\n  〔此宫度者號樂旺廟要與太歲相攝若處刑尅之中雖樂旺廟而無用若處帝旺駕勲朝垣入局之上者更不以刑尅為忌雖在樂旺廟而汨没凶敗休囚衝驀之宫亦不可用也〕",
       "page": "qizheng",
-      "required_facts": ["star.name", "star.palace", "star.dignity"],
-      "when": { "exists": "star.palace" },
+      "required_facts": [
+        "star.name",
+        "star.palace",
+        "star.dignity"
+      ],
+      "when": {
+        "exists": "star.palace"
+      },
       "satisfy_when": "已按本盘取法给七政标出入庙、落陷或平宫，并标明与原文宿度旺宫不是同一套",
       "fail_when": "七政未起出，无法标庙陷",
       "unknown_when": "原文另有娄胃亢斗翼室鬼宿度旺宫，又有日月戌方入庙：与本盘黄道本宫/对宫不是同一套逐步程序，不得输出富贵或贫乏",
@@ -50,11 +81,28 @@
       "art": "qizheng",
       "theme": "日月落宫定位",
       "school": "星学大成",
-      "paragraph_id": "xingxue-dacheng:L0184-L0185",
-      "quote": "日據白羊十九間月入金牛第三度……但於旺處逢一星斷然莫作常人視〔論七政旺宫太陽躔婁宿八度是戌宫十九度也太陽躔胃宿六度是酉宫三度……〕",
+      "paragraph_ids": [
+        "xingxue-dacheng:L0184-L0185"
+      ],
+      "sources": [
+        {
+          "paragraph_id": "xingxue-dacheng:L0184-L0185",
+          "start_line": 184,
+          "end_line": 185,
+          "quote": "  七政各得居強所君看分明乘旺處日據白羊十九間月入金牛第三度土在天秤二十一火居磨蝎四與七水居女上三五中金占雙魚必當室不離七與十三前據此求之始為的木經巨蟹初入鬼此生所舉多如意但於旺處逢一星斷然莫作常人視\n  〔論七政旺宫太陽躔婁宿八度是戌宫十九度也太陽躔胃宿六度是酉宫三度土躔亢宿六度是辰宫二十一度也火躔斗十八度并二十一度是丑宫四度與七度也水躔翼八度并十度是巳宫三度與五度也金在室七度并十三度屬亥宫木在鬼初度并十三度屬未宫〕"
+        }
+      ],
+      "quote": "  七政各得居強所君看分明乘旺處日據白羊十九間月入金牛第三度土在天秤二十一火居磨蝎四與七水居女上三五中金占雙魚必當室不離七與十三前據此求之始為的木經巨蟹初入鬼此生所舉多如意但於旺處逢一星斷然莫作常人視\n  〔論七政旺宫太陽躔婁宿八度是戌宫十九度也太陽躔胃宿六度是酉宫三度土躔亢宿六度是辰宫二十一度也火躔斗十八度并二十一度是丑宫四度與七度也水躔翼八度并十度是巳宫三度與五度也金在室七度并十三度屬亥宫木在鬼初度并十三度屬未宫〕",
       "page": "qizheng",
-      "required_facts": ["sun.palace", "moon.palace", "sun.mansion", "moon.mansion"],
-      "when": { "exists": "sun.palace" },
+      "required_facts": [
+        "sun.palace",
+        "moon.palace",
+        "sun.mansion",
+        "moon.mansion"
+      ],
+      "when": {
+        "exists": "sun.palace"
+      },
       "satisfy_when": "已记录本盘太阳、太阴的黄道宫度与宿名",
       "fail_when": "出生时刻无法起七政",
       "unknown_when": "原文旺处举白羊金牛与娄胃宿度例，本盘用真黄经落宫：不得把落宫写成已经非凡",

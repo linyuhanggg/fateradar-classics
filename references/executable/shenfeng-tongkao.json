@@ -1,5 +1,5 @@
 {
-  "schema_version": "fateradar-executable-v1",
+  "schema_version": "fateradar-executable-v2",
   "book": {
     "slug": "shenfeng-tongkao",
     "system": "bazi",
@@ -14,11 +14,26 @@
       "art": "bazi",
       "theme": "流霞落柱",
       "school": "神峰通考",
-      "paragraph_id": "shenfeng-tongkao:L2545-L2546",
-      "quote": "流霞杀 解曰：甲鸡乙犬丙羊加，丁是猴乡戊见蛇，己马庚龙辛逐兔，壬猪癸虎是流霞。男主他乡死，女主产后亡。",
+      "paragraph_ids": [
+        "shenfeng-tongkao:L2280-L3197"
+      ],
+      "sources": [
+        {
+          "paragraph_id": "shenfeng-tongkao:L2280-L3197",
+          "start_line": 2545,
+          "end_line": 2546,
+          "quote": "SF-1281. [part=4 local=266] 流霞杀 解曰：甲鸡乙犬丙羊加，丁是猴乡戊见蛇，己马庚龙辛逐兔，壬猪癸虎是流霞。\nSF-1282. [part=4 local=267] 男主他乡死，女主产后亡。"
+        }
+      ],
+      "quote": "SF-1281. [part=4 local=266] 流霞杀 解曰：甲鸡乙犬丙羊加，丁是猴乡戊见蛇，己马庚龙辛逐兔，壬猪癸虎是流霞。\nSF-1282. [part=4 local=267] 男主他乡死，女主产后亡。",
       "page": "shensha",
-      "required_facts": ["day.gan", "pillars.zhi"],
-      "when": { "exists": "day.gan" },
+      "required_facts": [
+        "day.gan",
+        "pillars.zhi"
+      ],
+      "when": {
+        "exists": "day.gan"
+      },
       "satisfy_when": "日干对应的流霞支出现在四柱地支：只记录落柱名称流霞",
       "fail_when": "四柱地支未见该干的流霞支",
       "unknown_when": "《星学大成》同歌作辛逐虎；他乡死、产后亡未论完：不得输出死丧断语",
@@ -32,11 +47,26 @@
       "art": "bazi",
       "theme": "红艳落柱",
       "school": "神峰通考",
-      "paragraph_id": "shenfeng-tongkao:L2550-L2550",
-      "quote": "红艳杀 解曰：多情多欲少人知，六丙逢寅辛见鸡。癸临申上丁见未，眉开眼笑乐嬉嬉。甲乙午申庚见戌，世间只是众人妻。戊己怕辰壬怕子，禄马相逢作路妓。任是富家官宦女，花前月下会佳期。",
+      "paragraph_ids": [
+        "shenfeng-tongkao:L2280-L3197"
+      ],
+      "sources": [
+        {
+          "paragraph_id": "shenfeng-tongkao:L2280-L3197",
+          "start_line": 2550,
+          "end_line": 2550,
+          "quote": "SF-1286. [part=4 local=271] 红艳杀 解曰：多情多欲少人知，六丙逢寅辛见鸡。癸临申上丁见未，眉开眼笑乐嬉嬉。甲乙午申庚见戌，世间只是众人妻。戊己怕辰壬怕子，禄马相逢作路妓。任是富家官宦女，花前月下会佳期。"
+        }
+      ],
+      "quote": "SF-1286. [part=4 local=271] 红艳杀 解曰：多情多欲少人知，六丙逢寅辛见鸡。癸临申上丁见未，眉开眼笑乐嬉嬉。甲乙午申庚见戌，世间只是众人妻。戊己怕辰壬怕子，禄马相逢作路妓。任是富家官宦女，花前月下会佳期。",
       "page": "shensha",
-      "required_facts": ["day.gan", "pillars.zhi"],
-      "when": { "exists": "day.gan" },
+      "required_facts": [
+        "day.gan",
+        "pillars.zhi"
+      ],
+      "when": {
+        "exists": "day.gan"
+      },
       "satisfy_when": "日干对应的红艳支出现在四柱地支：只记录落柱名称红艳",
       "fail_when": "四柱地支未见该干的红艳支",
       "unknown_when": "原文甲乙午申，本盘甲乙只取午不取申；禄马相逢作路妓未论完：不得输出情欲断语",
