@@ -7,7 +7,7 @@
     "fulltext": "sources/fulltext/bazi/ziping-zhenquan/fulltext.md"
   },
   "verified": false,
-  "note": "月令取格、顺逆、伤官见官、透印、金水例外、刑冲破害记录、组外会合、合煞、食化劫、枭护食、印逢财劫合、官逢财印、伤官生财佩印带煞、财逢煞制合、煞逢食制、无刑冲破害记录。破害不套会合，力量未论，不成格不破格。verified 保持 false。",
+  "note": "月令取格、顺逆、伤官见官、透印、金水例外、刑冲破害记录、组外会合、合煞、食化劫、枭护食、印逢财劫合、官逢财印、伤官生财佩印带煞、财逢煞制合、煞逢食制、无刑冲破害记录、通根阳库分条、印根透藏。破害不套会合，通根不按阳库覆盖藏干档位，印根不是已经根深，力量未论，不成格不破格。verified 保持 false。",
   "rules": [
     {
       "id": "ZPR-E-01",
@@ -318,6 +318,42 @@
       "rescue": "ZPR-E-08",
       "vernacular": "无刑冲破害是{wu_xingchongpohai}。会合只解刑冲。不等于成格。",
       "implementation_assumption": "刑冲会合满足后不再计入未解救刑冲。破害一律信息不足。力量未论。",
+      "verified": false
+    },
+    {
+      "id": "ZPR-E-18",
+      "art": "bazi",
+      "theme": "通根阳库来源分条",
+      "school": "子平真诠",
+      "paragraph_id": "ziping-zhenquan:L0192-L0192",
+      "quote": "人之日主，不必生逢祿旺，即月令休囚，而年日時中得長生祿旺，便不爲弱；就使逢庫，亦爲有根。時說謂投庫而必沖者，俗書之謬也。但陽長生有力，而陰長生不甚有力，然亦不弱。若是逢庫，則陽爲有根，而陰爲無用。",
+      "page": "strength",
+      "required_facts": ["day.gan", "pillars.zhi", "roots.role", "roots.grade"],
+      "when": { "exists": "day.gan" },
+      "satisfy_when": "已按藏干本气中气余气记录通根档位，并标明与阳干逢库有根、阴干逢库无用不是同一套",
+      "fail_when": "四柱无从记录日主藏干",
+      "unknown_when": "长生禄旺有力、阴长生不甚有力未逐步量化；墓库须冲开是现行实现，原文以投库必冲为俗书之谬：不得覆盖藏干档位，不得把根深写成已经身强",
+      "rescue": "unimplemented",
+      "vernacular": "本盘通根按藏干{roles}分档。这与阳干逢库有根、阴干逢库无用不是同一套，不是已经身强。",
+      "implementation_assumption": "现行得地按本气根深、中气根浅、余气根微，墓库非本气加注须待冲开。不按壬逢辰、丙坐戌改成有根，也不按阴干逢库删根。身强未论。",
+      "verified": false
+    },
+    {
+      "id": "ZPR-E-19",
+      "art": "bazi",
+      "theme": "印根透藏",
+      "school": "子平真诠",
+      "paragraph_id": "ziping-zhenquan:L1223-L1223",
+      "quote": "有傷官佩印者，印能制傷，所以爲貴，反要傷官旺，身稍弱，始爲秀氣。……然印要根深，不必多見，偏正疊出，反爲不秀。故傷輕身重，而印綬多見，貧窮之格也。",
+      "page": "geju",
+      "required_facts": ["tenGodFacts.正印.layer", "tenGodFacts.偏印.layer", "tenGodFacts.正印.role", "tenGodFacts.偏印.role"],
+      "when": { "exists": "day.gan" },
+      "satisfy_when": "正印或偏印出现：只记录透干、本气、中气、余气",
+      "fail_when": "原局天干藏干均无正印偏印",
+      "unknown_when": "根深、身稍弱、秀气、贫穷未论；本气不是已经根深，不得输出成格",
+      "rescue": "unimplemented",
+      "vernacular": "印根只记透藏：{yin_positions}。本气中气余气不是已经根深，也不等于成格。",
+      "implementation_assumption": "印计正印偏印。不把本气映射成根深，不把多见映射成贫穷。伤官旺与身弱未论。completion 仍为信息不足。",
       "verified": false
     }
   ]
