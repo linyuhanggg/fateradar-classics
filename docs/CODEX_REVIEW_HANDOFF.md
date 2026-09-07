@@ -6,7 +6,7 @@
 - 分支：`codex/grok-full-library`
 - 基准：`origin/main` @ `49d3efe`（data: complete oversize facsimile release）
 - 施工时未改 `/Users/sync/code/fateradar-classics` 主工作区，也未覆盖其他工作树
-- 最终提交：见本分支 `git log -1`（推送后回填）
+- 最终提交：`1baaac827b755597821ecb6c8bf72aa9d9591125`
 - 推送：仅推自己的 `codex/grok-full-library`，不合 main、不强推
 
 ## 2. 对照总方案的完成与未完成
