@@ -6,7 +6,7 @@
 - 分支：`codex/grok-full-library`
 - 基准：`origin/main` @ `49d3efe`（data: complete oversize facsimile release）
 - 施工时未改 `/Users/sync/code/fateradar-classics` 主工作区，也未覆盖其他工作树
-- 最终提交：`15904af35d83bba0a961f267a6b2cf72e86480d3`
+- 最终提交：`b107154ca1d28db79fd5e0c6cf8e40e98d7c57f9`
 - 推送：仅推自己的 `codex/grok-full-library`，不合 main、不强推
 
 ## 2. 对照总方案的完成与未完成
@@ -16,7 +16,12 @@
 - 全库真实盘点：catalog 55 包、磁盘 55 包、全文 54、排除 4
 - 稳定段落 ID：`slug:Lxxxx-Lyyyy`
 - 去向：engine 21 / knowledge 33 / excluded_copyright 1（《奇门法窍》）
-- 可执行规则 ZPR-E-01..17 与 QTB-E-01（穷通调候透藏），全部 `verified: false`
+- 可执行规则 24 条，全部 `verified: false`
+  - 八字：ZPR-E-01..17、QTB-E-01
+  - 紫微：ZWD-E-01 生年干四化落宫
+  - 六爻：ZSB-E-01 用神旬空、ZSB-E-02 用神月破
+  - 梅花：MHY-E-01 体用生克方向
+  - 奇门：QMD-E-01 伏吟、QMD-E-02 反吟
 - 知识库检索索引：`references/inventory/knowledge-index.json`（33 包）与 `docs/KNOWLEDGE_SEARCH_INTERFACE.md`
 - 疑文段保留，不猜字进原文
 
@@ -27,6 +32,7 @@
 - 知识库没有产品检索页（只提供索引和接口）
 - 本仓没有规则解释器；产品仓实现等价条件
 - 浏览器页面验收未做（本仓无页面）
+- 六壬、七政、神煞逐步程序未抽可执行规则
 
 ## 3. 全库真实统计
 
@@ -41,7 +47,7 @@
 | 稳定段落 | 53640 |
 | 其中疑文段 | 1261 |
 | 旧 rules.yaml 候选 | 1356，verified=0 |
-| 本轮可执行规则 | 18 |
+| 本轮可执行规则 | 24 |
 | 知识库包 | 33 |
 
 清单位置：
@@ -52,16 +58,21 @@
 - `references/inventory/paragraphs/{system}/{slug}.json`
 - `references/executable/schema.md`
 - `references/executable/ziping-zhenquan.json`
+- `references/executable/ziwei-doushu-quanshu.json`
+- `references/executable/zengshan-buyi.json`
+- `references/executable/meihua-yishu.json`
+- `references/executable/qimen-dunjia-tongzhi.json`
 - `docs/KNOWLEDGE_SEARCH_INTERFACE.md`
 
 55 是资料包口径。`qimen-faqiao` 无全文、去向 `excluded_copyright`。
 
 ## 4. 修改文件与行为变化
 
-- `references/executable/ziping-zhenquan.json`：ZPR-E-01..17
-- `references/executable/qiongtong-baojian.json`：QTB-E-01 调候透藏
-- `tools/build-library-inventory.py`：可执行规则数从 JSON 实数统计
-- `tools/build-knowledge-index.py`：知识库检索索引
+- `references/executable/ziwei-doushu-quanshu.json`：ZWD-E-01
+- `references/executable/zengshan-buyi.json`：ZSB-E-01、ZSB-E-02
+- `references/executable/meihua-yishu.json`：MHY-E-01
+- `references/executable/qimen-dunjia-tongzhi.json`：QMD-E-01、QMD-E-02
+- 盘点脚本重跑，可执行规则 18→24
 - 不改 `sources/` 原文
 
 ## 5. 复现命令与检查结果
@@ -69,40 +80,46 @@
 ```bash
 cd /Users/yuhanglin/.codex/worktrees/fateradar-classics-grok-full-library
 python3 tools/build-library-inventory.py
-python3 tools/build-knowledge-index.py
-python3 -c "import json; d=json.load(open('references/inventory/library-inventory.json')); k=json.load(open('references/inventory/knowledge-index.json')); print(d['counts']); print('knowledge', k['pack_count'])"
+python3 -c "import json; d=json.load(open('references/inventory/library-inventory.json')); print(d['counts'])"
 ```
 
 实际结果（2026-09-08）：
 
 ```
 catalog_ready_packs 55, fulltext_files 54, paragraphs 53640,
-executable_rules_in_this_commit 18, knowledge packs 33
+executable_rules_in_this_commit 24, knowledge packs 33
+verified_rules 0
 faqiao destination=excluded_copyright
 ```
 
 ## 6. 代表性案例
 
-《子平真诠》`ziping-zhenquan:L0398-L0399` 透印以解；`L1116` 金水伤官可见官；`L0363-L0401` 无刑冲破害；`L0401` 刑冲而会合以解之。
+《紫微斗数全书》`ziwei-doushu-quanshu:L1770-L1776`：甲生人廉贞化禄、破军化权、武曲化科、太阳化忌。
 
-产品仓 `analyzeGeju` 实现这些条件。本仓 JSON 不被引擎 import。
+《增删卜易》`zengshan-buyi:L0539-L0539`：用神旺相而遇旬空，出空之日则出矣。`L0373-L0377`：目下虽破，出月则不破。
+
+《梅花易数》`meihua-yishu:L1239-L1239`：用克体不宜，体克用则吉；只记方向，不投票。
+
+《奇门遁甲统宗》`qimen-dunjia-tongzhi:L0309-L0311`：伏吟本星加本宫，反吟星加对宫。歌诀「最凶」不进入运行结论。
+
+产品仓实现这些条件。本仓 JSON 不被引擎 import。
 
 ## 7. Web 字段映射
 
 - 段落 ID → 引文定位
-- `page`: geju / yongshen
+- `page`: geju / yongshen / ziwei / liuyao / meihua / qimen
 - 知识库：`docs/KNOWLEDGE_SEARCH_INTERFACE.md`
 - 预览地址：无
 - 浏览器验收：未做
 
 ## 8. 争议、假设、风险
 
-- 透干优先否则本气：实现假设
-- 金水按日主五行
-- 六破用通行表
-- 会合解救要求合会支在刑冲组外；半合半会为信息不足；破害不套用
-- 会合解刑冲已实现组外合会；破害不套会合，标信息不足；财印位置与力量未论，故成格/破格不得确定
+- 紫微本命四化按斗数年干，不按节气年干覆盖安星
+- 六爻旬空按日干取旬；月破按地支六冲
+- 梅花动爻所在卦为用
+- 奇门伏吟按值符归本位，不采用「伏吟为最凶」
 - 14 套影印 `not_confirmed`，疑文 1261 段未校勘
+- 成格/破格力量未论，不得确定
 
 ## 9. 版本对应
 
