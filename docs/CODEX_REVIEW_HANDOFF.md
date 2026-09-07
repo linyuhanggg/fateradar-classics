@@ -6,7 +6,7 @@
 - 分支：`codex/grok-full-library`
 - 基准：`origin/main` @ `49d3efe`（data: complete oversize facsimile release）
 - 施工时未改 `/Users/sync/code/fateradar-classics` 主工作区，也未覆盖其他工作树
-- 最终提交：`b107154ca1d28db79fd5e0c6cf8e40e98d7c57f9`
+- 最终提交：`5215ad245b8727df91e126ed21a9b8a9414fc006`
 - 推送：仅推自己的 `codex/grok-full-library`，不合 main、不强推
 
 ## 2. 对照总方案的完成与未完成
@@ -16,12 +16,14 @@
 - 全库真实盘点：catalog 55 包、磁盘 55 包、全文 54、排除 4
 - 稳定段落 ID：`slug:Lxxxx-Lyyyy`
 - 去向：engine 21 / knowledge 33 / excluded_copyright 1（《奇门法窍》）
-- 可执行规则 24 条，全部 `verified: false`
-  - 八字：ZPR-E-01..17、QTB-E-01
+- 可执行规则 28 条，全部 `verified: false`
+  - 八字：ZPR-E-01..17、QTB-E-01、SMTH-E-01 天乙落柱
   - 紫微：ZWD-E-01 生年干四化落宫
   - 六爻：ZSB-E-01 用神旬空、ZSB-E-02 用神月破
   - 梅花：MHY-E-01 体用生克方向
   - 奇门：QMD-E-01 伏吟、QMD-E-02 反吟
+  - 六壬：DLD-E-01 贼克取传、DLD-E-02 涉害两派
+  - 七政：XXDC-E-01 命宫来源分条
 - 知识库检索索引：`references/inventory/knowledge-index.json`（33 包）与 `docs/KNOWLEDGE_SEARCH_INTERFACE.md`
 - 疑文段保留，不猜字进原文
 
@@ -32,7 +34,8 @@
 - 知识库没有产品检索页（只提供索引和接口）
 - 本仓没有规则解释器；产品仓实现等价条件
 - 浏览器页面验收未做（本仓无页面）
-- 六壬、七政、神煞逐步程序未抽可执行规则
+- 六壬、七政只有取传/来源入口，未按八字同一深度抽完全部课体与星曜规则
+- 神煞只有天乙落柱，其余仍是名单
 
 ## 3. 全库真实统计
 
@@ -47,7 +50,7 @@
 | 稳定段落 | 53640 |
 | 其中疑文段 | 1261 |
 | 旧 rules.yaml 候选 | 1356，verified=0 |
-| 本轮可执行规则 | 24 |
+| 本轮可执行规则 | 28 |
 | 知识库包 | 33 |
 
 清单位置：
@@ -72,7 +75,10 @@
 - `references/executable/zengshan-buyi.json`：ZSB-E-01、ZSB-E-02
 - `references/executable/meihua-yishu.json`：MHY-E-01
 - `references/executable/qimen-dunjia-tongzhi.json`：QMD-E-01、QMD-E-02
-- 盘点脚本重跑，可执行规则 18→24
+- `references/executable/daliuren-daquan.json`：DLD-E-01、DLD-E-02
+- `references/executable/xingxue-dacheng.json`：XXDC-E-01
+- `references/executable/sanming-tonghui.json`：SMTH-E-01
+- 盘点脚本重跑，可执行规则 24→28
 - 不改 `sources/` 原文
 
 ## 5. 复现命令与检查结果
@@ -87,7 +93,7 @@ python3 -c "import json; d=json.load(open('references/inventory/library-inventor
 
 ```
 catalog_ready_packs 55, fulltext_files 54, paragraphs 53640,
-executable_rules_in_this_commit 24, knowledge packs 33
+executable_rules_in_this_commit 28, knowledge packs 33
 verified_rules 0
 faqiao destination=excluded_copyright
 ```
@@ -102,7 +108,11 @@ faqiao destination=excluded_copyright
 
 《奇门遁甲统宗》`qimen-dunjia-tongzhi:L0309-L0311`：伏吟本星加本宫，反吟星加对宫。歌诀「最凶」不进入运行结论。
 
-产品仓实现这些条件。本仓 JSON 不被引擎 import。
+《大六壬大全》`daliuren-daquan:L0064-L0066`：一下克上曰重审，一上克下曰元首。课名只说明取传。
+
+《星学大成》`xingxue-dacheng:L0075-L0075`：卯上分明是命宫。与本盘上升点分条。
+
+《三命通会》`sanming-tonghui:L1391-L1400`：天乙落柱；歌诀泥而不通，不得输出吉神断语。
 
 ## 7. Web 字段映射
 
