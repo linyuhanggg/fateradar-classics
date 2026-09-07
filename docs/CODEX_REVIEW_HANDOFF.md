@@ -16,7 +16,7 @@
 - 全库真实盘点：catalog 55 包、磁盘 55 包、全文 54、排除 4
 - 稳定段落 ID：`slug:Lxxxx-Lyyyy`
 - 去向：engine 21 / knowledge 33 / excluded_copyright 1（《奇门法窍》）
-- 可执行规则 ZPR-E-01..13 与 QTB-E-01（穷通调候透藏），全部 `verified: false`
+- 可执行规则 ZPR-E-01..17 与 QTB-E-01（穷通调候透藏），全部 `verified: false`
 - 知识库检索索引：`references/inventory/knowledge-index.json`（33 包）与 `docs/KNOWLEDGE_SEARCH_INTERFACE.md`
 - 疑文段保留，不猜字进原文
 
@@ -41,7 +41,7 @@
 | 稳定段落 | 53640 |
 | 其中疑文段 | 1261 |
 | 旧 rules.yaml 候选 | 1356，verified=0 |
-| 本轮可执行规则 | 14 |
+| 本轮可执行规则 | 18 |
 | 知识库包 | 33 |
 
 清单位置：
@@ -58,7 +58,7 @@
 
 ## 4. 修改文件与行为变化
 
-- `references/executable/ziping-zhenquan.json`：ZPR-E-01..13
+- `references/executable/ziping-zhenquan.json`：ZPR-E-01..17
 - `references/executable/qiongtong-baojian.json`：QTB-E-01 调候透藏
 - `tools/build-library-inventory.py`：可执行规则数从 JSON 实数统计
 - `tools/build-knowledge-index.py`：知识库检索索引
@@ -77,7 +77,7 @@ python3 -c "import json; d=json.load(open('references/inventory/library-inventor
 
 ```
 catalog_ready_packs 55, fulltext_files 54, paragraphs 53640,
-executable_rules_in_this_commit 14, knowledge packs 33
+executable_rules_in_this_commit 18, knowledge packs 33
 faqiao destination=excluded_copyright
 ```
 
@@ -101,7 +101,7 @@ faqiao destination=excluded_copyright
 - 金水按日主五行
 - 六破用通行表
 - 会合解救要求合会支在刑冲组外；半合半会为信息不足；破害不套用
-- 会合解刑冲已实现组外合会，破害与财印配合未实现，故成格/破格不得确定
+- 会合解刑冲已实现组外合会；破害不套会合，标信息不足；财印位置与力量未论，故成格/破格不得确定
 - 14 套影印 `not_confirmed`，疑文 1261 段未校勘
 
 ## 9. 版本对应

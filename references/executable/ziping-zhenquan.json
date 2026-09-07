@@ -7,7 +7,7 @@
     "fulltext": "sources/fulltext/bazi/ziping-zhenquan/fulltext.md"
   },
   "verified": false,
-  "note": "月令取格、顺逆、伤官见官、透印、金水例外、刑冲破害记录、组外会合、合煞、食化劫、枭护食、印逢财劫合、官逢财印记录。破害会合与力量未算完，不成格不破格。verified 保持 false。",
+  "note": "月令取格、顺逆、伤官见官、透印、金水例外、刑冲破害记录、组外会合、合煞、食化劫、枭护食、印逢财劫合、官逢财印、伤官生财佩印带煞、财逢煞制合、煞逢食制、无刑冲破害记录。破害不套会合，力量未论，不成格不破格。verified 保持 false。",
   "rules": [
     {
       "id": "ZPR-E-01",
@@ -136,8 +136,8 @@
       "fail_when": "月令未与其余地支组成冲破害刑",
       "unknown_when": "三刑只见两支",
       "rescue": "ZPR-E-08",
-      "vernacular": "月令{month_zhi}与命局的刑冲破害记录为{hits}。刑冲走会合解救；破害会合未实现，所以不能写成已经破格。",
-      "implementation_assumption": "破用通行六破表。破害不套用刑冲会合。completion 仍为信息不足。",
+      "vernacular": "月令{month_zhi}与命局的刑冲破害记录为{hits}。刑冲走会合解救；破害不套用会合，所以不能写成已经破格。",
+      "implementation_assumption": "破用通行六破表。破害不套用刑冲会合，标信息不足。completion 仍为信息不足。",
       "verified": false
     },
     {
@@ -246,6 +246,78 @@
       "rescue": "unimplemented",
       "vernacular": "官逢财印是{cai_yin_verdict}。财印出现不等于位置妥贴，也不等于成格。",
       "implementation_assumption": "财计正财偏财，印计正印偏印。力量与破害会合未算完，completion 仍为信息不足。",
+      "verified": false
+    },
+    {
+      "id": "ZPR-E-14",
+      "art": "bazi",
+      "theme": "伤官生财佩印带煞",
+      "school": "子平真诠",
+      "paragraph_id": "ziping-zhenquan:L0369-L0407",
+      "quote": "傷官生財，或傷官佩印而傷官旺、印有根，或傷官旺、身主弱而透煞印，或傷官帶煞而無財，傷官格成也。……傷官生財，透煞而煞逢合。",
+      "page": "geju",
+      "required_facts": ["geju.name", "tenGodFacts.正财.layer", "tenGodFacts.正印.layer", "tenGodFacts.偏官.layer"],
+      "when": { "geju.name": ["伤官格"] },
+      "satisfy_when": "生财、佩印或带煞无财的透干条件出现",
+      "fail_when": "对应十神整组未见",
+      "unknown_when": "只见藏干，或带煞而财只见藏干；旺衰印根身强未论",
+      "rescue": "self",
+      "vernacular": "伤官格生财{sheng_cai}，佩印{pei_yin}，带煞无财{dai_sha}。力量未论，不等于成格。",
+      "implementation_assumption": "非金水见官没有另开救应，只标信息不足。合煞用通行五合。未论合化。",
+      "verified": false
+    },
+    {
+      "id": "ZPR-E-15",
+      "art": "bazi",
+      "theme": "财逢煞制合",
+      "school": "子平真诠",
+      "paragraph_id": "ziping-zhenquan:L0375-L0403",
+      "quote": "財輕比重，財透七煞，財格敗也。……逢煞，而食神制煞以生財、或存財而合煞。",
+      "page": "geju",
+      "required_facts": ["geju.name", "tenGodFacts.偏官.layer", "tenGodFacts.食神.layer", "stems"],
+      "when": { "geju.name": ["正财格", "偏财格"] },
+      "satisfy_when": "七杀透干，且食神透干或见合杀之干",
+      "fail_when": "七杀透干，且食神与合杀之干皆无",
+      "unknown_when": "七杀仅藏干，或救应只见藏干",
+      "rescue": "self",
+      "vernacular": "财格逢煞是{verdict}，食制或合煞是{rescue_verdict}。不得写成已经破格。",
+      "implementation_assumption": "制只计食神，不计伤官。未论力量。",
+      "verified": false
+    },
+    {
+      "id": "ZPR-E-16",
+      "art": "bazi",
+      "theme": "煞逢食制",
+      "school": "子平真诠",
+      "paragraph_id": "ziping-zhenquan:L0368-L0378",
+      "quote": "身强七煞逢制，煞格成也；……七煞逢財無制，七煞格敗也。",
+      "page": "geju",
+      "required_facts": ["geju.name", "tenGodFacts.食神.layer", "tenGodFacts.正财.layer"],
+      "when": { "geju.name": ["七杀格"] },
+      "satisfy_when": "食神透干：只说明制出现",
+      "fail_when": "原局未见食神",
+      "unknown_when": "食神只见藏干；身强未论",
+      "rescue": "self",
+      "vernacular": "七煞逢制是{sha_zhi_verdict}。身强未论，不等于成格。",
+      "implementation_assumption": "制按食神透藏记录。逢财另记干扰。completion 仍为信息不足。",
+      "verified": false
+    },
+    {
+      "id": "ZPR-E-17",
+      "art": "bazi",
+      "theme": "无刑冲破害记录",
+      "school": "子平真诠",
+      "paragraph_id": "ziping-zhenquan:L0364-L0364",
+      "quote": "如官逢財印，又無刑沖破害，官格成也。",
+      "page": "geju",
+      "required_facts": ["month.zhi", "chart.zhis", "relations.chong", "relations.po", "relations.hai"],
+      "when": { "exists": "month.zhi" },
+      "satisfy_when": "月令未见未解救的刑冲，也未见破害",
+      "fail_when": "月令刑冲出现且会合不成立",
+      "unknown_when": "三刑未全、半合半会，或见破害（原文没有会合解破害的程序）",
+      "rescue": "ZPR-E-08",
+      "vernacular": "无刑冲破害是{wu_xingchongpohai}。会合只解刑冲。不等于成格。",
+      "implementation_assumption": "刑冲会合满足后不再计入未解救刑冲。破害一律信息不足。力量未论。",
       "verified": false
     }
   ]
