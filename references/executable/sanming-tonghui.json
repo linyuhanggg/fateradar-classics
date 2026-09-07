@@ -7,7 +7,7 @@
     "fulltext": "sources/fulltext/bazi/sanming-tonghui/fulltext.md"
   },
   "verified": false,
-  "note": "接入天乙、驿马、咸池/桃花、华盖、将星落柱。歌诀泥而不通、十二驿马、纳音同类、孤寡公卿都未论完。落柱不是贵人已至，也不是行程、品行、孤寡或公卿结论。verified 保持 false。",
+  "note": "接入天乙、驿马、咸池/桃花、华盖、将星、孤辰、寡宿落柱。歌诀泥而不通、十二驿马、纳音同类、隔角惆怅、孤寡公卿都未论完。落柱不是贵人已至，也不是行程、品行、孤独、婚配或公卿结论。verified 保持 false。",
   "rules": [
     {
       "id": "SMTH-E-01",
@@ -97,6 +97,42 @@
       "rescue": "unimplemented",
       "vernacular": "{pillar}见将星。这是落柱标签，不是公卿结论。",
       "implementation_assumption": "现行表只按年支三合中位取将星。未按亡神、夹贵或库墓正印改写结论。",
+      "verified": false
+    },
+    {
+      "id": "SMTH-E-06",
+      "art": "bazi",
+      "theme": "孤辰落柱",
+      "school": "三命通会",
+      "paragraph_id": "sanming-tonghui:L1690-L1701",
+      "quote": "亥子丑逐方三位進前一辰見寅為孤退後一辰見戌為寡又過角為孤退角為寡其餘三方皆依此推",
+      "page": "shensha",
+      "required_facts": ["year.zhi", "pillars.zhi"],
+      "when": { "exists": "year.zhi" },
+      "satisfy_when": "年支三方进前一辰出现在四柱地支：只记录落柱名称孤辰",
+      "fail_when": "四柱地支未见该方孤辰支",
+      "unknown_when": "本书又说男命平生难于婚偶、入贵格不以孤寡论、隔角惆怅：未论完，不得输出孤独断语",
+      "rescue": "unimplemented",
+      "vernacular": "{pillar}见孤辰。这是落柱标签，不是孤独结论。",
+      "implementation_assumption": "现行表按年支三方进前一辰取孤辰。未按日支、隔角、惆怅煞或贵格包裹改写结论。",
+      "verified": false
+    },
+    {
+      "id": "SMTH-E-07",
+      "art": "bazi",
+      "theme": "寡宿落柱",
+      "school": "三命通会",
+      "paragraph_id": "sanming-tonghui:L1690-L1701",
+      "quote": "亥子丑逐方三位進前一辰見寅為孤退後一辰見戌為寡又過角為孤退角為寡其餘三方皆依此推",
+      "page": "shensha",
+      "required_facts": ["year.zhi", "pillars.zhi"],
+      "when": { "exists": "year.zhi" },
+      "satisfy_when": "年支三方退后一辰出现在四柱地支：只记录落柱名称寡宿",
+      "fail_when": "四柱地支未见该方寡宿支",
+      "unknown_when": "本书又说女命屡嫁不能偕老、入贵格不以孤寡论、隔角惆怅：未论完，不得输出婚配断语",
+      "rescue": "unimplemented",
+      "vernacular": "{pillar}见寡宿。这是落柱标签，不是婚配结论。",
+      "implementation_assumption": "现行表按年支三方退后一辰取寡宿。未按日支、隔角、惆怅煞或贵格包裹改写结论。",
       "verified": false
     }
   ]
