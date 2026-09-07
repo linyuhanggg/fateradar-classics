@@ -648,6 +648,44 @@
       "implementation_assumption": "并透只记年日月时干除日干外同时见所列天干。不把纯覆盖成吉，不把杂覆盖成凶。不改 GE_NAME。completion 仍为信息不足。",
       "verified": false
     }
+,
+    {
+      "id": "ZPR-E-36",
+      "art": "bazi",
+      "theme": "格局高低分条",
+      "school": "子平真诠",
+      "paragraph_id": "ziping-zhenquan:L0468-L0470",
+      "quote": "故甲透酉官，透丁合壬，是謂合傷存官，遂成貴格，以其有情也。財忌比肩，而與煞作合，劫反爲用。故甲生辰月，透戊成格，遇乙爲劫，逢庚爲煞，二者相合，皆得其用，遂成貴格，亦以其有情也。身强煞露，而食神又旺，如乙生酉月，辛金透，丁火剛，秋木盛，三者皆備，極品之貴，以其有力也。官强財透，而身坐祿刃，如丙生子月，癸水透，庚金露，丙坐寅午，三者皆均，遂成大貴，亦以其有力也。",
+      "page": "geju",
+      "required_facts": ["day.gan", "month.zhi", "zhis", "stems.except_day"],
+      "when": { "exists": "geju.name" },
+      "satisfy_when": "已按原文记录甲酉透丁合壬、甲辰遇乙逢庚、乙酉辛丁并透、丙子癸庚透而日支寅或午",
+      "fail_when": "无从记录月令",
+      "unknown_when": "有情无情、有力无力未逐步量化；相神紧要、用神配气候另见后条；合伤存官不是成格结论，辛丁并透不是已经论有力，不得输出成格或破格",
+      "rescue": "unimplemented",
+      "vernacular": "格局高低只记原文透藏。合伤存官不是成格结论，辛丁并透不是已经论有力。",
+      "implementation_assumption": "并透只记年日月时干除日干外同时见所列天干。丙子还要求日支为寅或午。不把有情有力覆盖成本盘成格。不改 GE_NAME。completion 仍为信息不足。",
+      "verified": false
+    }
+,
+    {
+      "id": "ZPR-E-37",
+      "art": "bazi",
+      "theme": "因成得败因败得成分条",
+      "school": "子平真诠",
+      "paragraph_id": "ziping-zhenquan:L0490-L0492",
+      "quote": "故化傷爲財，格之成也，然辛生亥月，透丁爲用，卯未會財，乃以黨煞，因成得敗矣。印用七煞，格之成也，然癸生申月，秋金重重，略帶財以損太過，逢煞則煞印忌財，因成得敗也。官印逢傷，格之敗也，然辛生戊戌月，年丙時壬，壬不能越戊尅丙，而反能洩身爲秀，是因敗得成矣。煞刃逢食，格之敗也，然庚生酉月，年月丙丁，時上逢壬，則食神合官留煞，而官煞不雜，煞刃局清，是因敗得成矣。",
+      "page": "geju",
+      "required_facts": ["day.gan", "month.zhi", "zhis", "year.gan", "time.gan", "stems.except_day"],
+      "when": { "exists": "geju.name" },
+      "satisfy_when": "已按原文记录辛亥透丁卯未会财、辛戌年丙时壬、庚酉年月丙丁时壬",
+      "fail_when": "无从记录月令",
+      "unknown_when": "癸生申月秋金重重未逐步量化；因成得败不是破格结论，因败得成不是成格结论，不得输出成格或破格",
+      "rescue": "unimplemented",
+      "vernacular": "因成得败因败得成只记原文透藏会支与年时干。卯未会财不是破格结论，年丙时壬不是成格结论。",
+      "implementation_assumption": "辛亥透丁卯未只记年日月时干除日干外见丁，且地支同时见卯未。辛戌年丙时壬只记年干丙且时干壬。庚酉年月丙丁时壬只记年干月干同时见丙丁且时干壬。不把因成得败覆盖成本盘破格。不改 GE_NAME。completion 仍为信息不足。",
+      "verified": false
+    }
 
   ]
 }
