@@ -61,7 +61,9 @@ def main() -> int:
     args = parser.parse_args()
     paragraphs = load_source_paragraphs(ROOT)
     errors: list[str] = []
-    books = entries = reviewed = 0
+    entries = reviewed = 0
+    book_slugs = set()
+    seen_ids = set()
     if args.annotations.is_file():
         files = [args.annotations]
     elif args.annotations.is_dir():
@@ -73,10 +75,18 @@ def main() -> int:
     for path in files:
         data = json.loads(path.read_text())
         errors.extend(validate_pack(data, paragraphs))
-        books += 1
+        if isinstance(data.get("bookSlug"), str):
+            book_slugs.add(data["bookSlug"])
+        for entry in data.get("entries", []):
+            key = entry.get("paragraphId") if isinstance(entry, dict) else None
+            if isinstance(key, str):
+                if key in seen_ids:
+                    errors.append(f"Duplicate annotation across files: {key}")
+                seen_ids.add(key)
         entries += len(data.get("entries", []))
         reviewed += sum(e.get("review") == "source-reviewed" for e in data.get("entries", []) if isinstance(e, dict))
-    result = {"ok": not errors, "books": books, "entries": entries, "source_reviewed": reviewed,
+    books = len(book_slugs)
+    result = {"ok": not errors, "books": books, "files": len(files), "entries": entries, "source_reviewed": reviewed,
               "note": "Structural and source-ID checks only; not a semantic or human review certificate.", "errors": errors}
     print(json.dumps(result, ensure_ascii=False, indent=2) if args.json else f"{books} books, {entries} entries, {len(errors)} errors\n" + "\n".join(errors))
     return int(bool(errors))

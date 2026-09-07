@@ -1,0 +1,44 @@
+{
+  "version": 1,
+  "note": "补充/恢复来源单列，不改变主索引53640段口径；图文核对不等于语义解读或算法验证。",
+  "editions": [
+    {
+      "id": "annotated-vol3-4",
+      "bookSlug": "liuren-zhiyin",
+      "label": "六壬指南卷三、四注解镜像对照层",
+      "file": "sources/fulltext/san-shi/liuren-zhiyin/supplemental-annotated-golla-vol3-4.md",
+      "paragraphs": 1967,
+      "sourceStates": {
+        "reference-text": 1967
+      },
+      "annotations": 0,
+      "reviewedBodyExplanations": 0
+    },
+    {
+      "id": "yanyi-vol4-9",
+      "bookSlug": "qimen-dunjia-tongzhi",
+      "label": "奇门演义卷四至九网页补缺对照层",
+      "file": "sources/fulltext/san-shi/qimen-dunjia-tongzhi/supplemental-taiyi-qimen-yanyi-vol4-9.md",
+      "paragraphs": 94,
+      "sourceStates": {
+        "reference-text": 94
+      },
+      "annotations": 0,
+      "reviewedBodyExplanations": 0
+    },
+    {
+      "id": "nlc-recovery",
+      "bookSlug": "mingli-yueyan",
+      "label": "精选命理约言 NLC 影印 OCR 初识稿",
+      "file": "sources/normalized/bazi/mingli-yueyan/nlc-recovery.md",
+      "paragraphs": 237,
+      "sourceStates": {
+        "ocr-draft": 184,
+        "passage-reviewed": 43,
+        "page-reviewed": 10
+      },
+      "annotations": 49,
+      "reviewedBodyExplanations": 45
+    }
+  ]
+}

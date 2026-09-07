@@ -38,6 +38,18 @@ class SourceEditions(unittest.TestCase):
             self.assertEqual([row["source_status"] for row in rows], ["ocr-draft", "page-reviewed"])
             self.assertIn("全页转写", rows[1]["source_notes"])
 
+    def test_partial_page_only_exposes_reviewed_body_range(self):
+        with tempfile.TemporaryDirectory() as folder:
+            root = Path(folder)
+            (root / "sources").mkdir()
+            (root / "references").mkdir()
+            (root / "sources/ocr.md").write_text("## PDF第021页\n\n> 未辨序号\n\n已核正文\n\n未核正文\n")
+            (root / "sources/reviews.json").write_text(json.dumps({"sourcePath": "sources/ocr.md", "pages": [{"pdfPage": 21, "status": "partial", "unresolved": ["序号"], "reviewedRanges": [{"startLine": 4, "endLine": 4, "scope": "正文已对图"}]}]}))
+            (root / "references/source-editions.json").write_text(json.dumps({"editions": [{**self.edition, "pageReviews": "sources/reviews.json"}]}))
+            rows = list(load_source_paragraphs(root).values())
+            self.assertEqual([row["source_status"] for row in rows], ["ocr-draft", "passage-reviewed", "ocr-draft"])
+            self.assertEqual(rows[1]["page_start_line"], 4)
+
     def test_ocr_annotation_cannot_be_promoted_by_semantic_review(self):
         row = split_edition(self.edition, ["未校正文"])[0]
         data = {"bookSlug": "book", "entries": [{"paragraphId": row["id"], "kind": "理论", "vernacular": "OCR解释", "terms": [], "notes": [], "review": "source-reviewed"}]}

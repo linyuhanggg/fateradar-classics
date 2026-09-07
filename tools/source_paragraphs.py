@@ -31,6 +31,8 @@ def split_edition(edition: dict, lines: list[str]) -> list[dict]:
                "source_status": edition["sourceStatus"], "source_notes": edition.get("notes", [])}
         if edition.get("pageScoped"):
             row["pdf_page"] = page
+            row["page_start_line"] = start - page_line
+            row["page_end_line"] = end - page_line
         paragraphs.append(row)
         buffer.clear()
 
@@ -80,6 +82,13 @@ def load_source_paragraphs(root: Path) -> dict[str, dict]:
                 row["source_status"] = "page-reviewed"
                 row["source_label"] = edition["label"] + " · 本页已对照影印"
                 row["source_notes"] = ["本页转写已按记录范围对照影印；不代表整本校完或命盘判断已成立。", review.get("scope", "本页转写"), *review.get("notes", [])]
+            elif row.get("pdf_page") and row["kind"] != "评注或元数据":
+                matched = next((span for span in review.get("reviewedRanges", [])
+                                if span["startLine"] <= row["page_start_line"] and row["page_end_line"] <= span["endLine"]), None)
+                if matched:
+                    row["source_status"] = "passage-reviewed"
+                    row["source_label"] = edition["label"] + " · 本段已对照影印"
+                    row["source_notes"] = ["仅本段字句与读序已核；同页范围外内容及整本仍按各自状态。", matched.get("scope", "本段正文"), *review.get("notes", [])]
             if row["id"] in result:
                 raise ValueError(f"Duplicate edition paragraph ID: {row['id']}")
             result[row["id"]] = row

@@ -48,6 +48,16 @@ class AnnotationValidation(unittest.TestCase):
             self.assertFalse(receipt["ok"])  # fixture book is absent from the real library
             self.assertEqual(result.returncode, 1)
 
+    def test_book_count_does_not_count_multiple_editions_as_multiple_books(self):
+        with tempfile.TemporaryDirectory() as folder:
+            for name in ("primary.json", "recovery.json"):
+                (Path(folder) / name).write_text(json.dumps(self.data))
+            result = subprocess.run([sys.executable, str(Path(__file__).with_name("validate-annotations.py")), "--annotations", folder, "--json"], capture_output=True, text=True)
+            receipt = json.loads(result.stdout)
+            self.assertEqual(receipt["books"], 1)
+            self.assertEqual(receipt["files"], 2)
+            self.assertTrue(any("across files" in e for e in receipt["errors"]))
+
     def test_empty_directory_is_not_an_acceptance_pass(self):
         with tempfile.TemporaryDirectory() as folder:
             result = subprocess.run([sys.executable, str(Path(__file__).with_name("validate-annotations.py")), "--annotations", folder, "--json"], capture_output=True, text=True)

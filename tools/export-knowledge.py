@@ -64,12 +64,16 @@ def build_export(root: Path, revision: str) -> dict:
         paragraph_map[row["id"]] = row
     for book in books:
         book["paragraphCount"] = sum(row["bookSlug"] == book["slug"] for row in rows)
+    bound_annotations = set()
     for path in sorted((root / "references/annotations").glob("*/*.json")):
         data = json.loads(path.read_text())
         errors = annotation_validation.validate_pack(data, sources)
         if errors:
             raise ValueError(f"{path}: " + "; ".join(errors))
         for entry in data["entries"]:
+            if entry["paragraphId"] in bound_annotations:
+                raise ValueError(f"Duplicate annotation across files: {entry['paragraphId']}")
+            bound_annotations.add(entry["paragraphId"])
             row = paragraph_map[entry["paragraphId"]]
             for field in ("kind", "vernacular", "terms", "notes", "review", "relatedParagraphIds"):
                 if field in entry:

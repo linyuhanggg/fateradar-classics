@@ -18,6 +18,20 @@ class PillarSourceChecks(unittest.TestCase):
     def test_missing_hour_is_not_filled(self):
         self.assertFalse(m.valid_pillars(["戊申", "甲子", "庚午"]))
 
+    def test_meihua_numbers_do_not_invent_birth_date_or_pillars(self):
+        fields, signature, repeated = m.case_input({"inputBasis": "meihua-numbers", "numbers": {"yearBranch": "辰", "lunarMonth": 12, "lunarDay": 17, "hourBranch": "申"}, "expected": {"main": "泽火革", "moving": 1}, "canRecompute": True})
+        self.assertTrue(fields["canRecompute"])
+        self.assertNotIn("pillars", fields)
+        self.assertNotIn("solarDate", fields)
+        self.assertEqual(fields["expected"], {"main": "泽火革", "moving": 1})
+        self.assertNotIn("mutual", fields["expected"])
+        self.assertEqual(repeated, "sameNumbersAs")
+        self.assertIsNotNone(signature)
+
+    def test_missing_meihua_hour_cannot_be_marked_recomputable(self):
+        with self.assertRaisesRegex(ValueError, "marked recomputable"):
+            m.case_input({"inputBasis": "meihua-numbers", "numbers": {"yearBranch": "辰", "lunarMonth": 12, "lunarDay": 17}, "canRecompute": True})
+
     def test_multiple_cases_and_repeated_pillars_keep_separate_source_occurrences(self):
         with tempfile.TemporaryDirectory() as directory:
             root = Path(directory)
