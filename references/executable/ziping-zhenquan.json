@@ -7,7 +7,7 @@
     "fulltext": "sources/fulltext/bazi/ziping-zhenquan/fulltext.md"
   },
   "verified": false,
-  "note": "月令取格、顺逆、伤官见官、透印、金水例外、刑冲破害记录、组外会合、合煞、食化劫、枭护食、印逢财劫合、官逢财印、伤官生财佩印带煞、财逢煞制合、煞逢食制、无刑冲破害记录、通根阳库分条、印根透藏、身强来源分条、伤官旺透藏、财有根透藏、财印位置分条、食神成路透藏、阳刃成路透藏、建禄月劫成路透藏。破害不套会合，通根不按阳库覆盖，印根不是已经根深，伤官旺不是已经旺，财有根不是已经有根，身强不按旺衰分层覆盖，有隔不是已经位置妥贴，不见伤官不是已经成格，力量未论，不成格不破格。verified 保持 false。",
+  "note": "月令取格、顺逆、伤官见官、透印、金水例外、刑冲破害记录、组外会合、合煞、食化劫、枭护食、印逢财劫合、官逢财印、伤官生财佩印带煞、财逢煞制合、煞逢食制、无刑冲破害记录、通根阳库分条、印根透藏、身强来源分条、伤官旺透藏、财有根透藏、财印位置分条、食神成路透藏、阳刃成路透藏、建禄月劫成路透藏、印格成路透藏、财格成路透藏。破害不套会合，通根不按阳库覆盖，印根不是已经根深，伤官旺不是已经旺，财有根不是已经有根，身强不按旺衰分层覆盖，有隔不是已经位置妥贴，不见伤官不是已经成格，印轻官旺未论，力量未论，不成格不破格。verified 保持 false。",
   "rules": [
     {
       "id": "ZPR-E-01",
@@ -480,6 +480,42 @@
       "rescue": "unimplemented",
       "vernacular": "建禄月劫成路只记透藏。月令本身仍不可为用，不等于成格。",
       "implementation_assumption": "透官而逢财印按官透且财印都透。透财而逢食伤按财透且食神或伤官透。透煞遇制伏按七杀透且食神透。建禄格 status 仍为格局不清。completion 仍为信息不足。",
+      "verified": false
+    },
+    {
+      "id": "ZPR-E-27",
+      "art": "bazi",
+      "theme": "印格成路透藏",
+      "school": "子平真诠",
+      "paragraph_id": "ziping-zhenquan:L0366-L0366",
+      "quote": "印輕逢煞，或官印雙全，或身印兩旺而用食傷洩氣，或印多逢財而財透根輕，印格成也；",
+      "page": "geju",
+      "required_facts": ["tenGodFacts.偏官.layer", "tenGodFacts.正官.layer", "tenGodFacts.食神.layer", "tenGodFacts.正财.layer"],
+      "when": { "geju.name": ["正印格", "偏印格"] },
+      "satisfy_when": "印格已记录逢煞、官印双全、食伤泄气、财透的透藏",
+      "fail_when": "不是印格",
+      "unknown_when": "印轻、身印两旺、根轻未论；官印双全不是已经成格，不得输出成格",
+      "rescue": "unimplemented",
+      "vernacular": "印格成路只记透藏。印轻不是透煞本身，也不等于成格。",
+      "implementation_assumption": "官印双全按正官与印都透干。食伤泄气按食神或伤官透干。印轻、身旺、根轻不映射成透藏档位。completion 仍为信息不足。",
+      "verified": false
+    },
+    {
+      "id": "ZPR-E-28",
+      "art": "bazi",
+      "theme": "财格成路透藏",
+      "school": "子平真诠",
+      "paragraph_id": "ziping-zhenquan:L0365-L0365",
+      "quote": "財生官旺，或財逢食生而身强帶比，或財格透印而位置妥貼，兩不相尅，財格成也；",
+      "page": "geju",
+      "required_facts": ["tenGodFacts.正官.layer", "tenGodFacts.食神.layer"],
+      "when": { "geju.name": ["正财格", "偏财格"] },
+      "satisfy_when": "财格已记录财生官、财逢食生的透藏",
+      "fail_when": "不是财格",
+      "unknown_when": "官旺、身强带比未论；透官不是已经官旺，不得输出成格",
+      "rescue": "unimplemented",
+      "vernacular": "财格成路只记透藏。官旺不是透官本身，也不等于成格。",
+      "implementation_assumption": "财生官按正官透干。财逢食生按食神透干。身强带比见 ZPR-E-20，位置见 ZPR-E-23。completion 仍为信息不足。",
       "verified": false
     }
   ]
