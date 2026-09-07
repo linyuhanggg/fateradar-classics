@@ -1,0 +1,146 @@
+{
+  "version": 1,
+  "notes": [
+    {
+      "id": "bazi-month-use",
+      "art": "bazi",
+      "title": "古籍读法：先看月令，再谈取用",
+      "body": "《子平真诠》把日干与月令的关系作为取格入口。这里的“用神”与现代扶抑用神的用法有区别：看页面时先认清正在用哪条分析路线，再看候选条件，不把两个同名概念混成一个。",
+      "source": {
+        "kind": "anchored_text",
+        "title": "子平真诠",
+        "anchor": {
+          "file": "sources/fulltext/bazi/ziping-zhenquan/fulltext.md",
+          "startLine": 328,
+          "endLine": 328
+        },
+        "quote": "八字用神，專求月令，以日干配月令地支，而生尅不同，格局分焉。財官印食，此用神之善而順用之者也；煞傷劫刃，此用神之不善而逆用之者也。當順而順，當逆而逆，配合得宜，皆爲貴格。"
+      },
+      "verified": false
+    },
+    {
+      "id": "ziwei-soul-body",
+      "art": "ziwei",
+      "title": "古籍读法：身命是起点，全盘是背景",
+      "body": "《紫微斗数全书》从身命与十二宫的分布谈起。白话理解：先找到命宫、身宫，再比较相关宫位的星曜组合；不把单宫或单颗星当作全部解释。本条只说明阅读起点，不搬用原文中的贵贱断语。",
+      "source": {
+        "kind": "anchored_text",
+        "title": "紫微斗数全书",
+        "anchor": {
+          "file": "sources/fulltext/ziwei/ziwei-doushu-quanshu/fulltext.md",
+          "startLine": 41,
+          "endLine": 41
+        },
+        "quote": "其星分布一十二垣，數定乎三十六位，入廟為奇，失度為虛，大抵以身命為福德之本，加以根源為窮通之資。"
+      },
+      "verified": false
+    },
+    {
+      "id": "qimen-de-shi",
+      "art": "qimen",
+      "title": "古籍读法：得使要看具体配对",
+      "body": "《奇门遁甲统宗大全》列明三奇得使的六组配对：乙加己、辛；丙加戊、庚；丁加壬、癸。白话理解：两个特定标记在同宫才构成这一项，任意三奇遇六仪都叫得使会算错；成立后仍要合看其他同宫条件。",
+      "source": {
+        "kind": "anchored_text",
+        "title": "奇门遁甲统宗大全",
+        "anchor": {
+          "file": "sources/fulltext/san-shi/qimen-dunjia-tongzhi/fulltext.md",
+          "startLine": 281,
+          "endLine": 281
+        },
+        "quote": "三奇得使 乙奇加甲午甲戌 丙奇加甲子甲申 丁奇加甲寅甲辰"
+      },
+      "verified": false
+    },
+    {
+      "id": "liuren-three-stages",
+      "art": "liuren",
+      "title": "古籍读法：三传是三个观察位置",
+      "body": "《六壬指南注解》用发端、移易、归计说明初中末传。可以依次问：从哪里开始，过程中怎样变化，最后往哪里收束。三传是取用次序，不是已经发生的三件事；要连同日干生克和问题背景来解释。",
+      "source": {
+        "kind": "anchored_text",
+        "title": "六壬指南注解（张洪注本）",
+        "anchor": {
+          "file": "sources/fulltext/san-shi/liuren-zhiyin/fulltext.md",
+          "startLine": 936,
+          "endLine": 936
+        },
+        "quote": "167. 用為發端之門，中為移易之府，末為歸計之宮。"
+      },
+      "verified": false
+    },
+    {
+      "id": "liuyao-use",
+      "art": "liuyao",
+      "title": "古籍读法：用神是本次所问对象",
+      "body": "《增删卜易》举自占取世爻、占父母取父母爻。意思是先明确这次在问谁、问什么，再找对应参照。它没有让所有婚恋、寻人或健康问题都固定使用同一个六亲。",
+      "source": {
+        "kind": "anchored_text",
+        "title": "增删卜易",
+        "anchor": {
+          "file": "sources/fulltext/divination/zengshan-buyi/fulltext.md",
+          "startLine": 6696,
+          "endLine": 6696
+        },
+        "quote": "要知何以謂之用神者，自占吉凶用此世爻爲主，不說世爻而曰用神，占父母以父母爻爲用神。"
+      },
+      "verified": false
+    },
+    {
+      "id": "liuyao-two-candidates",
+      "art": "liuyao",
+      "title": "古籍读法：多个用神候选怎样比较",
+      "body": "《增删卜易·两现章》比较同类候选的旺衰、动静、空破，又指出实际取用有别于机械取舍。先把每个候选的条件列清楚，再结合所问对象判断；不按爻位先后自动选择第一项。",
+      "source": {
+        "kind": "anchored_text",
+        "title": "增删卜易",
+        "anchor": {
+          "file": "sources/fulltext/divination/zengshan-buyi/fulltext.md",
+          "startLine": 1248,
+          "endLine": 1248
+        },
+        "quote": "用神兩現﹐如占父母卦中兩爻父母者是也。捨其休囚﹐用其旺相﹐捨其靜爻﹐而用動爻﹐捨其月破﹐而用不破﹐捨其旬空﹐用其不空﹐捨其被傷﹐用其不傷。此古法也。得其驗者﹐應乎旬空月破﹐捨其不空﹐而用旬空﹐捨其不破﹐而用月破。"
+      },
+      "verified": false
+    },
+    {
+      "id": "meihua-ti-yong",
+      "art": "meihua",
+      "title": "古籍读法：体、用、互、变各看什么",
+      "body": "《梅花易数·体用总诀》以体为主、用为事，互看中间，变看后续。白话理解：先分主体与事情，再比较过程和变化后的结构；三卦的生克可能不同，应分别说明，不能用一个总标签替代全部内容。",
+      "source": {
+        "kind": "anchored_text",
+        "title": "梅花易数",
+        "anchor": {
+          "file": "sources/fulltext/divination/meihua-yishu/fulltext.md",
+          "startLine": 1124,
+          "endLine": 1124
+        },
+        "quote": "大抵體用之說，體卦為主，用卦為事，互卦為事之中間，刻應變卦為事之終。"
+      },
+      "verified": false
+    },
+    {
+      "id": "qizheng-position",
+      "art": "qizheng",
+      "title": "计算说明：位置结果和传统解释分开读",
+      "body": "黄经是星体沿黄道的位置，顺逆行是该位置从地球视角的变化方向；这两项先回答“在哪里、怎样移动”。庙陷等传统解释要另外看，不能从天体顺行直接推出人生顺利。此条是当前计算口径的白话说明，不是古籍引文。",
+      "source": {
+        "kind": "implementation_note",
+        "title": "当前计算口径的白话说明"
+      },
+      "verified": false
+    },
+    {
+      "id": "xiaoliuren-provenance",
+      "art": "xiaoliuren",
+      "title": "来源说明：通行取法，暂不冒称古籍原文",
+      "body": "当前按大安、留连、速喜、赤口、小吉、空亡循环，以农历月、日、时逐步取宫。这里的宫名释义是现代白话整理，尚未完成可靠古籍底本逐条核对。三宫数字不作为概率，宫名也不当成事实预言。",
+      "source": {
+        "kind": "implementation_note",
+        "title": "当前计算口径的白话说明"
+      },
+      "verified": false
+    }
+  ]
+}
