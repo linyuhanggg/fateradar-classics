@@ -54,3 +54,5 @@ python3 tools/validate-annotations.py --annotations references/annotations/bazi/
 ```
 
 实际结果：49 entries、49 source-reviewed、0 errors。整书其他页仍待图文核对，不能把这49条解释称为全书语义加工完成。
+
+最新补充：PDF32—37页恢复12个已核正文段，独立nlc-recovery注释累计61条（57正文、4元数据），已通过单文件来源校验。新增内容包括日支不单独定吉凶、时柱归宿、反对分刻用事、大运干支同管十年、四柱限只作粗略参考、流年三层关系及正官财印条件。书整体仍在恢复过程中，未完成页不作可靠引文。

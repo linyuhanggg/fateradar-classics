@@ -493,6 +493,154 @@
       "rangeCoordinates": "行号相对于该页## PDF标题行；标题行为0，下一行为1，与source_paragraphs.py一致"
     },
     {
+      "pdfPage": 32,
+      "status": "partial",
+      "scope": "本页全部主体文字、版心及印刷页码已对照原图；标题前黑底排版标记不作为字句",
+      "notes": [
+        "跨页续句保留，未凭常识补后页。",
+        "修复OCR整段漏失的“木日强用金克/用火泄、木日弱用水生/用木助”，并保留土既可抑也可扶的语境。"
+      ],
+      "unresolved": [
+        "黑底排版标记未转写；已核主体正文通过reviewedRanges单独开放"
+      ],
+      "reviewedRanges": [
+        {
+          "startLine": 5,
+          "endLine": 5,
+          "scope": "本段主体字句已对图，排版标记另列元数据"
+        },
+        {
+          "startLine": 7,
+          "endLine": 8,
+          "scope": "本段主体字句已对图，排版标记另列元数据"
+        }
+      ],
+      "rangeCoordinates": "PDF页标题行为0，以下按页内相对行号计算"
+    },
+    {
+      "pdfPage": 33,
+      "status": "partial",
+      "scope": "本页全部主体文字、版心及印刷页码已对照原图；标题前黑底排版标记不作为字句",
+      "notes": [
+        "跨页续句保留，未凭常识补后页。",
+        "分刻用事属于本书反驳的旧说；这不等于否认实际跨时辰或时制换算。"
+      ],
+      "unresolved": [
+        "黑底排版标记未转写；已核主体正文通过reviewedRanges单独开放"
+      ],
+      "reviewedRanges": [
+        {
+          "startLine": 5,
+          "endLine": 5,
+          "scope": "本段主体字句已对图，排版标记另列元数据"
+        },
+        {
+          "startLine": 7,
+          "endLine": 8,
+          "scope": "本段主体字句已对图，排版标记另列元数据"
+        }
+      ],
+      "rangeCoordinates": "PDF页标题行为0，以下按页内相对行号计算"
+    },
+    {
+      "pdfPage": 34,
+      "status": "partial",
+      "scope": "本页全部主体文字、版心及印刷页码已对照原图；标题前黑底排版标记不作为字句",
+      "notes": [
+        "跨页续句保留，未凭常识补后页。",
+        "本书明确反对大运天干地支各管五年、四六或三七分配，主张共同管十年；不能抹去流派差异。"
+      ],
+      "unresolved": [
+        "黑底排版标记未转写；已核主体正文通过reviewedRanges单独开放"
+      ],
+      "reviewedRanges": [
+        {
+          "startLine": 5,
+          "endLine": 5,
+          "scope": "本段主体字句已对图，排版标记另列元数据"
+        },
+        {
+          "startLine": 7,
+          "endLine": 8,
+          "scope": "本段主体字句已对图，排版标记另列元数据"
+        }
+      ],
+      "rangeCoordinates": "PDF页标题行为0，以下按页内相对行号计算"
+    },
+    {
+      "pdfPage": 35,
+      "status": "partial",
+      "scope": "本页全部主体文字、版心及印刷页码已对照原图；标题前黑底排版标记不作为字句",
+      "notes": [
+        "跨页续句保留，未凭常识补后页。",
+        "四柱分少中晚年只是本书认可的约略法，原文明确精确年限仍看运。"
+      ],
+      "unresolved": [
+        "黑底排版标记未转写；已核主体正文通过reviewedRanges单独开放"
+      ],
+      "reviewedRanges": [
+        {
+          "startLine": 5,
+          "endLine": 5,
+          "scope": "本段主体字句已对图，排版标记另列元数据"
+        },
+        {
+          "startLine": 7,
+          "endLine": 8,
+          "scope": "本段主体字句已对图，排版标记另列元数据"
+        },
+        {
+          "startLine": 10,
+          "endLine": 11,
+          "scope": "本段主体字句已对图，排版标记另列元数据"
+        }
+      ],
+      "rangeCoordinates": "PDF页标题行为0，以下按页内相对行号计算"
+    },
+    {
+      "pdfPage": 36,
+      "status": "partial",
+      "scope": "本页全部主体文字、版心及印刷页码已对照原图；标题前黑底排版标记不作为字句",
+      "notes": [
+        "跨页续句保留，未凭常识补后页。",
+        "流年必须与原局和大运三层交互；“甲酉透辛、乙申透庚”按图保留。"
+      ],
+      "unresolved": [
+        "黑底排版标记未转写；已核主体正文通过reviewedRanges单独开放"
+      ],
+      "reviewedRanges": [
+        {
+          "startLine": 5,
+          "endLine": 5,
+          "scope": "本段主体字句已对图，排版标记另列元数据"
+        },
+        {
+          "startLine": 7,
+          "endLine": 8,
+          "scope": "本段主体字句已对图，排版标记另列元数据"
+        }
+      ],
+      "rangeCoordinates": "PDF页标题行为0，以下按页内相对行号计算"
+    },
+    {
+      "pdfPage": 37,
+      "status": "source-reviewed",
+      "scope": "本页全部主体文字、版心及印刷页码已对照原图；标题前黑底排版标记不作为字句",
+      "notes": [
+        "跨页续句保留，未凭常识补后页。",
+        "官多用食伤仍不作杀；从官与从杀分名。与部分旧说不同，不互相覆盖。"
+      ],
+      "unresolved": [],
+      "reviewedRanges": [
+        {
+          "startLine": 5,
+          "endLine": 5,
+          "scope": "本段主体字句已对图，排版标记另列元数据"
+        }
+      ],
+      "rangeCoordinates": "PDF页标题行为0，以下按页内相对行号计算"
+    },
+    {
       "pdfPage": 83,
       "scope": "卷一结页可见文字",
       "notes": [
