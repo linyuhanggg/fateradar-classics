@@ -26,7 +26,7 @@ def validate_condition(condition: dict, where: str) -> None:
     kind = condition.get("kind")
     if not isinstance(condition.get("label"), str) or not condition["label"].strip():
         raise ValueError(f"{where}: 条件缺 label")
-    if kind in {"visible", "hidden", "absent"}:
+    if kind in {"present", "visible", "hidden", "absent"}:
         if condition.get("gan") not in STEMS:
             raise ValueError(f"{where}: 条件天干无效")
         if "excludeDay" in condition and type(condition["excludeDay"]) is not bool:
