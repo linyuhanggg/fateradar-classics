@@ -6,7 +6,7 @@
 - 分支：`codex/grok-full-library`
 - 基准：`origin/main` @ `49d3efe`（data: complete oversize facsimile release）
 - 施工时未改 `/Users/sync/code/fateradar-classics` 主工作区，也未覆盖其他工作树
-- 最终提交：`0254fb14d9f283c215bbccb12051b80f69889ad2`
+- 最终提交：`9a63f06cde547e17761d27cdcdf3c684c7a36844`
 - 推送：仅推自己的 `codex/grok-full-library`，不合 main、不强推
 
 ## 2. 对照总方案的完成与未完成
@@ -16,14 +16,14 @@
 - 全库真实盘点：catalog 55 包、磁盘 55 包、全文 54、排除 4
 - 稳定段落 ID：`slug:Lxxxx-Lyyyy`
 - 去向：engine 21 / knowledge 33 / excluded_copyright 1（《奇门法窍》）
-- 可执行规则 37 条，全部 `verified: false`
-  - 八字：ZPR-E-01..17、QTB-E-01、SMTH-E-01 天乙落柱、SMTH-E-02 驿马落柱、SMTH-E-03 咸池桃花落柱
+- 可执行规则 41 条，全部 `verified: false`
+  - 八字：ZPR-E-01..17、QTB-E-01、SMTH-E-01 天乙落柱、SMTH-E-02 驿马落柱、SMTH-E-03 咸池桃花落柱、SMTH-E-04 华盖落柱、SMTH-E-05 将星落柱
   - 紫微：ZWD-E-01 生年干四化落宫
   - 六爻：ZSB-E-01 用神旬空、ZSB-E-02 用神月破
   - 梅花：MHY-E-01 体用生克方向
   - 奇门：QMD-E-01 伏吟、QMD-E-02 反吟
   - 六壬：DLD-E-01..09 九宗门取传（贼克、比用、涉害、遥克、昴星、别责、八专、伏吟、返吟）
-  - 七政：XXDC-E-01 命宫来源分条
+  - 七政：XXDC-E-01 命宫来源分条、XXDC-E-02 庙旺来源分条、XXDC-E-03 日月落宫定位
 - 知识库检索索引：`references/inventory/knowledge-index.json`（33 包）与 `docs/KNOWLEDGE_SEARCH_INTERFACE.md`
 - 疑文段保留，不猜字进原文
 
@@ -34,8 +34,8 @@
 - 知识库没有产品检索页（只提供索引和接口）
 - 本仓没有规则解释器；产品仓实现等价条件
 - 浏览器页面验收未做（本仓无页面）
-- 七政其余星曜未按八字同一深度抽完
-- 神煞除天乙、驿马、桃花落柱外仍是名单
+- 七政五星宿度旺宫、戌方入庙未按原文逐步程序接入运行；只与现行黄道本宫分条
+- 神煞除天乙、驿马、桃花、华盖、将星落柱外仍是名单
 
 ## 3. 全库真实统计
 
@@ -50,7 +50,7 @@
 | 稳定段落 | 53640 |
 | 其中疑文段 | 1261 |
 | 旧 rules.yaml 候选 | 1356，verified=0 |
-| 本轮可执行规则 | 37 |
+| 本轮可执行规则 | 41 |
 | 知识库包 | 33 |
 
 清单位置：
@@ -76,9 +76,9 @@
 - `references/executable/meihua-yishu.json`：MHY-E-01
 - `references/executable/qimen-dunjia-tongzhi.json`：QMD-E-01、QMD-E-02
 - `references/executable/daliuren-daquan.json`：DLD-E-01..09
-- `references/executable/xingxue-dacheng.json`：XXDC-E-01
-- `references/executable/sanming-tonghui.json`：SMTH-E-01 天乙、SMTH-E-02 驿马、SMTH-E-03 桃花
-- 盘点脚本重跑，可执行规则 33→37
+- `references/executable/xingxue-dacheng.json`：XXDC-E-01、XXDC-E-02、XXDC-E-03
+- `references/executable/sanming-tonghui.json`：SMTH-E-01 天乙、SMTH-E-02 驿马、SMTH-E-03 桃花、SMTH-E-04 华盖、SMTH-E-05 将星
+- 盘点脚本重跑，可执行规则 37→41
 - 不改 `sources/` 原文
 
 ## 5. 复现命令与检查结果
@@ -93,7 +93,7 @@ python3 -c "import json; d=json.load(open('references/inventory/library-inventor
 
 ```
 catalog_ready_packs 55, fulltext_files 54, paragraphs 53640,
-executable_rules_in_this_commit 37, knowledge packs 33
+executable_rules_in_this_commit 41, knowledge packs 33
 verified_rules 0
 faqiao destination=excluded_copyright
 ```
@@ -112,9 +112,10 @@ faqiao destination=excluded_copyright
 `L0092-L0094` 伏吟、`L0096-L0098` 返吟、`L0076-L0078` 蒿矢弹射、`L0068-L0070` 比用、`L0080-L0082` 昴星、`L0084-L0086` 别责、`L0088-L0090` 八专：只记取传，不是近处、失脱、外助、出奇、已经停住或已经反复。
 
 《星学大成》`xingxue-dacheng:L0075-L0075`：卯上分明是命宫。与本盘上升点分条。
+`L0187-L0189` 星辰本宫为庙堂；`L0184-L0185` 白羊金牛与娄胃宿度旺宫；`L0201` 日月戌方云入庙。三套与现行黄道本宫/对宫不是同一程序，入庙不是已经得福。
 
 《三命通会》`sanming-tonghui:L1391-L1400`：天乙落柱；歌诀泥而不通，不得输出吉神断语。
-`L1346-L1353` 驿马、`L1234-L1238` 咸池桃花：只记落柱，不是行程或品行结论。
+`L1346-L1353` 驿马、`L1234-L1238` 咸池桃花、`L1225-L1232` 华盖将星：只记落柱，不是行程、品行、孤寡或公卿结论。
 
 ## 7. Web 字段映射
 
@@ -130,6 +131,8 @@ faqiao destination=excluded_copyright
 - 六爻旬空按日干取旬；月破按地支六冲
 - 梅花动爻所在卦为用
 - 奇门伏吟按值符归本位，不采用「伏吟为最凶」
+- 七政入庙用热带黄道本宫，不按娄胃亢斗翼室鬼宿度或戌方入庙覆盖
+- 华盖将星只按年支三合库土/中位，不按日支、空破、亡神夹贵改写
 - 14 套影印 `not_confirmed`，疑文 1261 段未校勘
 - 成格/破格力量未论，不得确定
 
