@@ -7,7 +7,7 @@
     "fulltext": "sources/fulltext/bazi/sanming-tonghui/fulltext.md"
   },
   "verified": false,
-  "note": "接入天乙、驿马、咸池/桃花、华盖、将星、孤辰、寡宿、劫煞、亡神、灾煞、天喜、金舆、羊刃、飞刃、禄神、天德、月德落柱。天喜原文按四季，本盘按年支三合，只分条不覆盖。金舆禄前二辰与马前二辰不是同一套。羊刃按禄前一辰，子平阴干无刃只分条不覆盖。落柱不是欢欣、阴福、性情、倒戈、爵禄、无险或福寿。verified 保持 false。",
+  "note": "接入天乙、驿马、咸池/桃花、华盖、将星、孤辰、寡宿、劫煞、亡神、灾煞、天喜、金舆、羊刃、飞刃、禄神、天德、月德落柱，以及文昌、学堂来源分条。天喜原文按四季，本盘按年支三合，只分条不覆盖。文昌原文甲蛇乙猪，本盘按通行表，只分条不覆盖。学堂原文纳音长生，本盘按日干长生，只分条不覆盖。落柱不是欢欣、阴福、性情、倒戈、爵禄、无险、福寿、科名或学业。verified 保持 false。",
   "rules": [
     {
       "id": "SMTH-E-01",
@@ -313,6 +313,42 @@
       "rescue": "unimplemented",
       "vernacular": "{pillar}见月德贵人。这是落柱标签，不是福寿结论。",
       "implementation_assumption": "现行表按月支三合取月德干（寅午戌丙、申子辰壬、巳酉丑庚、亥卯未甲）。未按合神或伤破改写。",
+      "verified": false
+    },
+    {
+      "id": "SMTH-E-18",
+      "art": "bazi",
+      "theme": "文昌来源分条",
+      "school": "三命通会",
+      "paragraph_id": "sanming-tonghui:L1466-L1466",
+      "quote": "有文昌貴甲人蛇口乙猪頭丙狗丁龍戊向猴己午庚寅辛未貴六壬卯位癸逢牛",
+      "page": "shensha",
+      "required_facts": ["day.gan", "pillars.zhi"],
+      "when": { "exists": "day.gan" },
+      "satisfy_when": "已按本盘通行文昌表标出落柱，并标明与原文甲蛇乙猪不是同一套",
+      "fail_when": "四柱地支未见本盘通行文昌支",
+      "unknown_when": "原文甲巳乙亥丙戌丁辰戊申己午庚寅辛未壬卯癸丑；本盘甲巳乙午丙申丁酉戊申己酉庚亥辛子壬寅癸卯：不是同一套逐步程序，不得输出科名断语",
+      "rescue": "unimplemented",
+      "vernacular": "{pillar}见文昌。这是本取法的落柱标签，不是已经科名，也不是已经按甲蛇乙猪取文昌。",
+      "implementation_assumption": "现行表按日干通行文昌支取。未按甲人蛇口乙猪头覆盖。",
+      "verified": false
+    },
+    {
+      "id": "SMTH-E-19",
+      "art": "bazi",
+      "theme": "学堂来源分条",
+      "school": "三命通会",
+      "paragraph_id": "sanming-tonghui:L1471-L1474",
+      "quote": "夫學堂者如人讀書之在學堂詞館者如今官翰林謂之詞館取其學業精專文章出類長生乃學堂之正位如金命見辛巳金長生在巳辛巳納音又屬金是也",
+      "page": "shensha",
+      "required_facts": ["day.gan", "pillars.zhi"],
+      "when": { "exists": "day.gan" },
+      "satisfy_when": "已按本盘日干长生支标出学堂落柱，并标明与原文纳音学堂不是同一套",
+      "fail_when": "四柱地支未见本盘日干长生支",
+      "unknown_when": "原文学堂要纳音同类长生；词馆要纳音同类临官；官贵学堂未论完：不得输出学业或词馆断语",
+      "rescue": "unimplemented",
+      "vernacular": "{pillar}见学堂。这是本取法的落柱标签，不是已经学业，也不是已经按纳音学堂取。",
+      "implementation_assumption": "现行表按日干长生支取学堂。未按纳音长生同类覆盖。",
       "verified": false
     }
   ]
