@@ -1,0 +1,31 @@
+{
+  "schema_version": "fateradar-executable-v1",
+  "book": {
+    "slug": "xingxue-dacheng",
+    "system": "xingming",
+    "title": "星学大成",
+    "fulltext": "sources/fulltext/xingming/xingxue-dacheng/fulltext.md"
+  },
+  "verified": false,
+  "note": "只接入命宫来源分条。本盘上升点是现代天文实现，不得与原文卯上立命混成一套。verified 保持 false。",
+  "rules": [
+    {
+      "id": "XXDC-E-01",
+      "art": "qizheng",
+      "theme": "命宫来源分条",
+      "school": "星学大成",
+      "paragraph_id": "xingxue-dacheng:L0075-L0075",
+      "quote": "天盤之法順數天左旋也人之立命在十二宫有不同而以天盤之卯加之則同經云天盤轉出地盤上卯上分明是命宫是也",
+      "page": "qizheng",
+      "required_facts": ["ascendant.sign", "ascendant.source"],
+      "when": { "exists": "ascendant.sign" },
+      "satisfy_when": "已记录本盘上升点宫度，并标明算法为现代黄道与东地平交点",
+      "fail_when": "无出生地经纬度，无法取上升点",
+      "unknown_when": "原文卯上立命与上升点不是同一套逐步程序：只分条，不覆盖",
+      "rescue": "unimplemented",
+      "vernacular": "本盘命宫取上升点{sign}。这是现代天文位置，不是已经按原文卯上立命。",
+      "implementation_assumption": "七政用 Astronomy Engine 真黄经。庙旺落陷是位置分类，不是个人优劣评分。四余含近似。",
+      "verified": false
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "schema_version": "fateradar-executable-v1",
+  "book": {
+    "slug": "daliuren-daquan",
+    "system": "san-shi",
+    "title": "大六壬大全",
+    "fulltext": "sources/fulltext/san-shi/daliuren-daquan/fulltext.md"
+  },
+  "verified": false,
+  "note": "只接入贼克取传与涉害两派分条。课名不是成败。同书后文元首/重审取名对调，不改取传，也不把问事皆实写成已经办成。verified 保持 false。",
+  "rules": [
+    {
+      "id": "DLD-E-01",
+      "art": "liuren",
+      "theme": "贼克取传",
+      "school": "六壬大全",
+      "paragraph_id": "daliuren-daquan:L0064-L0066",
+      "quote": "一 贼克法一下克上曰重审，一上克下曰元首。取课先从下贼呼，如无下贼上克初。初传之上名中次，中上加临是末居。",
+      "page": "liuren",
+      "required_facts": ["day.ganzhi", "four.ke", "three.chuan", "ke.style"],
+      "when": { "exists": "four.ke" },
+      "satisfy_when": "已按一下克上取重审、一上克下取元首，并写出三传",
+      "fail_when": "四课未起出，无法取传",
+      "unknown_when": "同书后文将元首/重审取名对调；或原文有问事皆实、事多不顺而旺衰未论：不得输出成败",
+      "rescue": "unimplemented",
+      "vernacular": "本盘课体{style}。这是取传方法，不是事情已经办成或已经失败。",
+      "implementation_assumption": "取传以开篇贼克法为准，不随后文对调改名。涉害另见 DLD-E-02。",
+      "verified": false
+    },
+    {
+      "id": "DLD-E-02",
+      "art": "liuren",
+      "theme": "涉害两派分条",
+      "school": "六壬大全",
+      "paragraph_id": "daliuren-daquan:L0070-L0070",
+      "quote": "若或俱比俱不比，立法别有渉害陈。",
+      "page": "liuren",
+      "required_facts": ["ke.style", "shehai.method"],
+      "when": { "equals": { "ke.style": "涉害课" } },
+      "satisfy_when": "已按所选涉害方法（历数深浅或孟仲季）取出初传，并与另一派分条记录",
+      "fail_when": "不是涉害课",
+      "unknown_when": "两派初传不同：只并列，不投票合成一传",
+      "rescue": "unimplemented",
+      "vernacular": "涉害取法为{shehai_method}，初传{first}。两派不同时只分条记录，不合成一个虚假统一结论。",
+      "implementation_assumption": "默认历数深浅依《大全》；孟仲季依《指南注解》。页面须标明所用取法。",
+      "verified": false
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "schema_version": "fateradar-executable-v1",
+  "book": {
+    "slug": "sanming-tonghui",
+    "system": "bazi",
+    "title": "三命通会",
+    "fulltext": "sources/fulltext/bazi/sanming-tonghui/fulltext.md"
+  },
+  "verified": false,
+  "note": "只接入天乙贵人落柱。本书已说甲戊庚牛羊之歌泥而不通，且阳贵阴贵与昼夜分法未论完。落柱不是贵人已至。verified 保持 false。",
+  "rules": [
+    {
+      "id": "SMTH-E-01",
+      "art": "bazi",
+      "theme": "天乙贵人落柱",
+      "school": "三命通会",
+      "paragraph_id": "sanming-tonghui:L1391-L1400",
+      "quote": "如此則甲戊庚牛羊六辛逢馬虎明矣……其曰陽貴陰貴乃冬至用陽夏至用陰非晝夜之說……今六壬選擇諸術或分隂陽或分晝夜盖本此二説……甲戊庚牛羊之歌則泥而不通矣。",
+      "page": "shensha",
+      "required_facts": ["day.gan", "year.gan", "pillars.zhi"],
+      "when": { "exists": "day.gan" },
+      "satisfy_when": "日干或年干对应的贵人支出现在四柱地支：只记录落柱名称",
+      "fail_when": "四柱地支未见该干的贵人支",
+      "unknown_when": "阳贵阴贵、昼夜分法、入庙驳杂未论完；本书已评歌诀泥而不通：不得输出吉神断语",
+      "rescue": "unimplemented",
+      "vernacular": "{pillar}见天乙贵人。这是落柱标签，不是贵人已经到来，也不能单独断定事件。",
+      "implementation_assumption": "现行表用甲戊庚见丑未等通行歌诀查表，与本书所评泥而不通并存。未按冬夏至切换阴阳贵。",
+      "verified": false
+    }
+  ]
+}
