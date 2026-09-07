@@ -7,7 +7,7 @@
     "fulltext": "sources/fulltext/bazi/sanming-tonghui/fulltext.md"
   },
   "verified": false,
-  "note": "接入天乙、驿马、咸池/桃花、华盖、将星、孤辰、寡宿、劫煞、亡神、灾煞、天喜、金舆落柱。天喜原文按四季，本盘按年支三合，只分条不覆盖。金舆禄前二辰与马前二辰不是同一套。落柱不是欢欣或妻妾阴福。verified 保持 false。",
+  "note": "接入天乙、驿马、咸池/桃花、华盖、将星、孤辰、寡宿、劫煞、亡神、灾煞、天喜、金舆、羊刃、飞刃、禄神落柱。天喜原文按四季，本盘按年支三合，只分条不覆盖。金舆禄前二辰与马前二辰不是同一套。羊刃按禄前一辰，子平阴干无刃只分条不覆盖。落柱不是欢欣、阴福、性情、倒戈或爵禄。verified 保持 false。",
   "rules": [
     {
       "id": "SMTH-E-01",
@@ -223,6 +223,60 @@
       "rescue": "unimplemented",
       "vernacular": "{pillar}见金舆。这是落柱标签，不是妻妾阴福结论。",
       "implementation_assumption": "现行表按日干禄前二辰取金舆。未按驿马前二辰覆盖，也未按官贵夹拥改写。",
+      "verified": false
+    },
+    {
+      "id": "SMTH-E-13",
+      "art": "bazi",
+      "theme": "羊刃落柱",
+      "school": "三命通会",
+      "paragraph_id": "sanming-tonghui:L1620-L1624",
+      "quote": "所以祿前一辰為羊刃對衝為飛刃既盛而未極則溫柔和暢故刃後一辰為祿也",
+      "page": "shensha",
+      "required_facts": ["day.gan", "pillars.zhi"],
+      "when": { "exists": "day.gan" },
+      "satisfy_when": "日干禄前一辰出现在四柱地支：只记录落柱名称羊刃",
+      "fail_when": "四柱地支未见该干禄前一辰",
+      "unknown_when": "同书论阳刃谓五阴干无刃；真羊刃偏刃、刃头财鬼、朝元连珠未论完：不得输出性情或灾祸断语",
+      "rescue": "unimplemented",
+      "vernacular": "{pillar}见羊刃。这是落柱标签，不是性情结论。",
+      "implementation_assumption": "现行表按日干禄前一辰取羊刃，十干都标。未按子平五阴干无刃覆盖。",
+      "verified": false
+    },
+    {
+      "id": "SMTH-E-14",
+      "art": "bazi",
+      "theme": "飞刃落柱",
+      "school": "三命通会",
+      "paragraph_id": "sanming-tonghui:L1622-L1624",
+      "quote": "〔對宫曰飛刃又曰唐符〕……所以祿前一辰為羊刃對衝為飛刃",
+      "page": "shensha",
+      "required_facts": ["day.gan", "pillars.zhi"],
+      "when": { "exists": "day.gan" },
+      "satisfy_when": "日干羊刃的对冲支出现在四柱地支：只记录落柱名称飞刃",
+      "fail_when": "四柱地支未见该干羊刃对冲支",
+      "unknown_when": "倒戈、连珠刃、揽辔澄清未论完：不得输出倒戈或无头断语",
+      "rescue": "unimplemented",
+      "vernacular": "{pillar}见飞刃。这是落柱标签，不是倒戈结论。",
+      "implementation_assumption": "现行表按日干羊刃对冲取飞刃。未按倒戈或揽辔澄清改写。",
+      "verified": false
+    },
+    {
+      "id": "SMTH-E-15",
+      "art": "bazi",
+      "theme": "禄神落柱",
+      "school": "三命通会",
+      "paragraph_id": "sanming-tonghui:L1295-L1299",
+      "quote": "十干就支神為祿謂祿隨旺行所以甲祿寅乙祿卯庚祿申辛祿酉壬祿亥癸祿子丙祿己丁祿午戊寄己巳寄午",
+      "page": "shensha",
+      "required_facts": ["day.gan", "pillars.zhi"],
+      "when": { "exists": "day.gan" },
+      "satisfy_when": "日干临官禄支出现在四柱地支：只记录落柱名称禄神",
+      "fail_when": "四柱地支未见该干禄支",
+      "unknown_when": "福星禄破禄截路空亡、建禄格贫富未论完：不得输出爵禄已享",
+      "rescue": "unimplemented",
+      "vernacular": "{pillar}见禄神。这是落柱标签，不是爵禄结论。",
+      "implementation_assumption": "现行表按日干临官支取禄神。未按纳音破禄或建禄月令格改写。",
       "verified": false
     }
   ]
