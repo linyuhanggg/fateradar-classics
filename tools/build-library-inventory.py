@@ -380,13 +380,19 @@ def main() -> None:
         "blocked_or_excluded": excluded,
     }
 
-    # First-path executable rules are recorded after the JSON is written by hand;
-    # ziping-zhenquan gets a non-zero executable count in a second pass below.
-    for p in packs:
-        if p["slug"] == "ziping-zhenquan":
-            p["executable_rules"] = 4
-            p["plain_language"] = "first_path_geju_yongshen"
-    summary["counts"]["executable_rules_in_this_commit"] = 4
+    exe_total = 0
+    exe_dir = ROOT / "references/executable"
+    if exe_dir.is_dir():
+        for path in sorted(exe_dir.glob("*.json")):
+            payload = json.loads(path.read_text(encoding="utf-8"))
+            rules = payload.get("rules") or []
+            exe_total += len(rules)
+            slug = (payload.get("book") or {}).get("slug")
+            for p in packs:
+                if p["slug"] == slug:
+                    p["executable_rules"] = len(rules)
+                    p["plain_language"] = p.get("plain_language") or "executable_rules_defined"
+    summary["counts"]["executable_rules_in_this_commit"] = exe_total
 
     OUT_DIR.mkdir(parents=True, exist_ok=True)
     (OUT_DIR / "library-inventory.json").write_text(
@@ -407,7 +413,7 @@ def main() -> None:
         f"- catalog 另列排除项：{summary['counts']['blocked_or_excluded']}",
         f"- 稳定段落：{summary['counts']['paragraphs']}（含疑文段 {summary['counts']['doubtful_paragraphs']}）",
         f"- 旧 rules.yaml 候选：{summary['counts']['legacy_rule_candidates']}（全部 verified=false，不作运行权威）",
-        f"- 本轮接入可执行规则：{summary['counts']['executable_rules_in_this_commit']}（仅子平真诠首条通路）",
+        f"- 本轮接入可执行规则：{summary['counts']['executable_rules_in_this_commit']}（当前仅子平真诠 JSON；产品引擎实现等价条件）",
         "",
         "## 去向",
         "",
