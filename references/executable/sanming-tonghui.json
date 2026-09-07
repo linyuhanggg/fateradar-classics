@@ -7,7 +7,7 @@
     "fulltext": "sources/fulltext/bazi/sanming-tonghui/fulltext.md"
   },
   "verified": false,
-  "note": "接入天乙、驿马、咸池/桃花、华盖、将星、孤辰、寡宿、劫煞、亡神、灾煞、天喜、金舆、羊刃、飞刃、禄神、天德、月德落柱，以及文昌、学堂来源分条。天喜原文按四季，本盘按年支三合，只分条不覆盖。文昌原文甲蛇乙猪，本盘按通行表，只分条不覆盖。学堂原文纳音长生，本盘按日干长生，只分条不覆盖。落柱不是欢欣、阴福、性情、倒戈、爵禄、无险、福寿、科名或学业。verified 保持 false。",
+  "note": "接入天乙、驿马、咸池/桃花、华盖、将星、孤辰、寡宿、劫煞、亡神、灾煞、天喜、金舆、羊刃、飞刃、禄神、天德、月德、太极落柱，以及文昌、学堂来源分条。天喜、文昌、学堂与原文取法分条不覆盖。戊己太极原文喜申，本盘只取辰戌丑未，只分条不覆盖。落柱不是欢欣、阴福、性情、倒戈、爵禄、无险、福寿、科名或学业。verified 保持 false。",
   "rules": [
     {
       "id": "SMTH-E-01",
@@ -349,6 +349,24 @@
       "rescue": "unimplemented",
       "vernacular": "{pillar}见学堂。这是本取法的落柱标签，不是已经学业，也不是已经按纳音学堂取。",
       "implementation_assumption": "现行表按日干长生支取学堂。未按纳音长生同类覆盖。",
+      "verified": false
+    },
+    {
+      "id": "SMTH-E-20",
+      "art": "bazi",
+      "theme": "太极贵人落柱",
+      "school": "三命通会",
+      "paragraph_id": "sanming-tonghui:L1461-L1465",
+      "quote": "甲乙木先造乎子坎水助而生後終乎午離火焚而死丙丁火先喜出乎震卯也後喜藏乎兌酉也庚辛金得寅乃金生乎艮見亥乃金廟乎乾壬癸水先得申而生後得巳而納……戊己土也喜生乎申得辰戌丑未為正庫",
+      "page": "shensha",
+      "required_facts": ["day.gan", "year.gan", "pillars.zhi"],
+      "when": { "exists": "day.gan" },
+      "satisfy_when": "日干或年干对应的太极支出现在四柱地支：只记录落柱名称太极贵人",
+      "fail_when": "四柱地支未见该干的太极支",
+      "unknown_when": "戊己原文喜申，本盘只取辰戌丑未；四庫全时、福神扶未论完：不得输出科名断语",
+      "rescue": "unimplemented",
+      "vernacular": "{pillar}见太极贵人。这是落柱标签，不是科名结论。",
+      "implementation_assumption": "现行表按日干或年干取太极支（甲乙子午、丙丁卯酉、庚辛寅亥、壬癸巳申、戊己辰戌丑未）。未把戊己申补进表。",
       "verified": false
     }
   ]
