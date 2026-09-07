@@ -52,6 +52,12 @@ class KnowledgeExport(unittest.TestCase):
         self.assertIn("伤官与财印", row["searchText"])
         self.assertIn("傷官與財印", row["searchText"])
 
+    def test_heading_is_included_in_character_conversion(self):
+        self.write_json("references/inventory/paragraphs/bazi/book.json", {"paragraphs": [{"id": "book:L0001-L0002", "start_line": 1, "end_line": 2, "heading": "得時不旺", "kind": "理论"}]})
+        row = module.build_export(self.root, "commit")["paragraphs"][0]
+        self.assertIn("得时不旺", row["searchText"])
+        self.assertEqual(row["heading"], "得時不旺")
+
     def test_bad_annotation_fails_export(self):
         self.write_json("references/annotations/bazi/book.json", {"bookSlug": "book", "entries": [{"paragraphId": "book:L0001-L0009"}]})
         with self.assertRaisesRegex(ValueError, "unknown paragraphId"):

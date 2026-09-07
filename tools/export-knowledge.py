@@ -52,8 +52,9 @@ def build_export(root: Path, revision: str) -> dict:
                 if field in entry:
                     row[field] = entry[field]
     simplified, traditional = OpenCC("t2s"), OpenCC("s2t")
+    book_titles = {book["slug"]: book["title"] for book in books}
     for row in rows:
-        searchable = "\n".join([row["text"], row.get("vernacular", ""), " ".join(row["terms"])])
+        searchable = "\n".join([book_titles[row["bookSlug"]], row["heading"], row["text"], row.get("vernacular", ""), " ".join(row["terms"])])
         alternatives = dict.fromkeys([simplified.convert(searchable), traditional.convert(searchable)])
         alternatives.pop(searchable, None)
         if alternatives:
