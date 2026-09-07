@@ -1,0 +1,90 @@
+{
+  "schema_version": "fateradar-executable-v1",
+  "book": {
+    "slug": "ziping-zhenquan",
+    "system": "bazi",
+    "title": "子平真诠",
+    "fulltext": "sources/fulltext/bazi/ziping-zhenquan/fulltext.md"
+  },
+  "verified": false,
+  "note": "首条通路：月令取格、顺逆、成败救应边界、伤官见官。不成格不破格的确定结论。verified 保持 false。",
+  "rules": [
+    {
+      "id": "ZPR-E-01",
+      "art": "bazi",
+      "theme": "月令取格",
+      "school": "子平真诠",
+      "paragraph_id": "ziping-zhenquan:L0328-L0328",
+      "quote": "八字用神，專求月令，以日干配月令地支，而生尅不同，格局分焉。財官印食，此用神之善而順用之者也；煞傷劫刃，此用神之不善而逆用之者也。",
+      "page": "geju",
+      "required_facts": ["month.zhi", "month.hidden", "stems.except_day"],
+      "when": { "exists": "month.zhi" },
+      "satisfy_when": "已取月令藏干，并记录是否透于年/月/时干",
+      "fail_when": "无月令",
+      "unknown_when": "月令藏干表缺该支",
+      "rescue": "unimplemented",
+      "vernacular": "本盘月令{month_zhi}，{from}。这只是取格入口，还不是成格。",
+      "implementation_assumption": "透干优先，否则用本气。建禄月劫须另取，见 ZPR-E-03。",
+      "verified": false
+    },
+    {
+      "id": "ZPR-E-02",
+      "art": "bazi",
+      "theme": "顺用逆用",
+      "school": "子平真诠",
+      "paragraph_id": "ziping-zhenquan:L0328-L0338",
+      "quote": "財官印食，此用神之善而順用之者也；煞傷劫刃，此用神之不善而逆用之者也。當順而順，當逆而逆，配合得宜，皆爲貴格。是以善而順用之，則財喜食神以相生，生官以護財；……月劫喜透官以制伏，利用財而透食以化劫。此順逆之大略也。",
+      "page": "yongshen",
+      "required_facts": ["geju.tenGod", "geju.mode"],
+      "when": { "exists": "geju.tenGod" },
+      "satisfy_when": "已区分顺用或逆用，并列出该路线自己的喜忌，不与扶抑、调候拼成一条",
+      "fail_when": "没有月令用神可分顺逆",
+      "unknown_when": "建禄月劫尚未另取用神",
+      "rescue": "unimplemented",
+      "vernacular": "按《子平真诠》，{name}属{mode}。这是格局路线，不能直接改写成固定五行喜忌。",
+      "implementation_assumption": "善/不善是格局术语。不把顺用固定成官财印、逆用固定成印食官。",
+      "verified": false
+    },
+    {
+      "id": "ZPR-E-03",
+      "art": "bazi",
+      "theme": "用神成败救应",
+      "school": "子平真诠",
+      "paragraph_id": "ziping-zhenquan:L0361-L0399",
+      "quote": "用神專求月令，然以四柱配之，必有成敗。……官逢財印，又無刑沖破害，官格成也。……官逢傷尅刑沖，官格敗也。……成中有敗，必是帶忌；敗中有成，全憑救應。……何謂救應？如官逢傷，而透印以解之；",
+      "page": "geju",
+      "required_facts": [
+        "tenGodFacts.pillar",
+        "tenGodFacts.layer",
+        "relations.chong",
+        "xiangShen.layer"
+      ],
+      "when": { "exists": "geju.name" },
+      "satisfy_when": "成格所需的透藏、位置、无刑冲破害均已计算并成立",
+      "fail_when": "成格条件已计算且明确不成立",
+      "unknown_when": "位置或力量未算完，或救应规则未实现",
+      "rescue": "unimplemented",
+      "vernacular": "原文要求看成败和救应。当前只保留十神出现的柱位、透藏，不把出现写成已经成格或已经破格。",
+      "implementation_assumption": "未实现刑冲破害与救应的完整条件前，completion 只能是信息不足。",
+      "verified": false
+    },
+    {
+      "id": "ZPR-E-04",
+      "art": "bazi",
+      "theme": "伤官见官",
+      "school": "子平真诠",
+      "paragraph_id": "ziping-zhenquan:L0373-L0399",
+      "quote": "何謂敗？官逢傷尅刑沖，官格敗也。……傷官非金水而見官，或生財而帶煞身輕，或佩印而傷輕身旺，傷官格敗也。……何謂救應？如官逢傷，而透印以解之；",
+      "page": "geju",
+      "required_facts": ["geju.name", "tenGodFacts.伤官.layer", "tenGodFacts.正官.layer"],
+      "when": { "geju.name": ["正官格", "伤官格"] },
+      "satisfy_when": "干扰十神透于天干，记录为干扰出现",
+      "fail_when": "四柱天干与藏干均无该干扰十神",
+      "unknown_when": "仅藏干出现，或金水伤官见官的例外尚未按原文算完",
+      "rescue": "unimplemented",
+      "vernacular": "{interference}出现在{positions}。这是干扰候选；原文还有透印可解，当前未计算救应，所以不能写成已经破格。",
+      "implementation_assumption": "透干才按干扰出现；藏干本气/中气/余气只标信息不足。金水伤官见官例外未实现。",
+      "verified": false
+    }
+  ]
+}
