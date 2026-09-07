@@ -934,6 +934,96 @@
       "review": "source-reviewed"
     },
     {
+      "paragraphId": "meihua-yishu:L0326-L0326",
+      "kind": "术语",
+      "vernacular": "震在这张表里主雷、长男、足、草木竹苇及青绿色，也举龙蛇、乐器和马鸣作类象。选它作上卦时，应留下所观察到的那一项特征。",
+      "terms": [
+        "震",
+        "雷",
+        "长男",
+        "草木"
+      ],
+      "notes": [],
+      "review": "source-reviewed"
+    },
+    {
+      "paragraphId": "meihua-yishu:L0328-L0328",
+      "kind": "术语",
+      "vernacular": "巽归风、长女、鸡、股部、绳帆扇、香气和细长工巧之物。同一卦含人物、身体、材质等不同类别，不能一次全套用。",
+      "terms": [
+        "巽",
+        "长女",
+        "股",
+        "长物"
+      ],
+      "notes": [],
+      "review": "source-reviewed"
+    },
+    {
+      "paragraphId": "meihua-yishu:L0330-L0330",
+      "kind": "术语",
+      "vernacular": "坎的取象围绕水、雨雪、沟渠、鱼豕、耳血、黑色及藏隐危险等展开；这是查找物象的表，不是见坎就认定盗窃或疾病。",
+      "terms": [
+        "坎",
+        "水象",
+        "耳",
+        "黑色"
+      ],
+      "notes": [],
+      "review": "source-reviewed"
+    },
+    {
+      "paragraphId": "meihua-yishu:L0332-L0332",
+      "kind": "术语",
+      "vernacular": "离在本表配火、日、目、中女、文书兵器、枯木和有壳的动物，并含红赤紫色。具体问题不同，所选类象也应分别说明。",
+      "terms": [
+        "离",
+        "火日",
+        "文书",
+        "有壳之物"
+      ],
+      "notes": [],
+      "review": "source-reviewed"
+    },
+    {
+      "paragraphId": "meihua-yishu:L0334-L0334",
+      "kind": "术语",
+      "vernacular": "艮可取山土、少男童子、手指鼻、门径、瓜果与狗鼠等象。它偏向止、界限和土中之物，但这里首先是在列类别。",
+      "terms": [
+        "艮",
+        "少男",
+        "山土",
+        "门径"
+      ],
+      "notes": [],
+      "review": "source-reviewed"
+    },
+    {
+      "paragraphId": "meihua-yishu:L0336-L0336",
+      "kind": "术语",
+      "vernacular": "兑可对应泽、少女、口舌、羊、金属、有口或残缺的器具等。毁折和少女是不同的取象方向，不能只因同属兑就强行讲成同一事件。",
+      "terms": [
+        "兑",
+        "少女",
+        "口舌",
+        "毁折"
+      ],
+      "notes": [],
+      "review": "source-reviewed"
+    },
+    {
+      "paragraphId": "meihua-yishu:L0340-L0340",
+      "kind": "术语",
+      "vernacular": "简图说明离在南、坎在北、震在东、兑在西，观察者位于中间。这是后天方位关系，排图时还须说明纸面朝向。",
+      "terms": [
+        "后天四正",
+        "离南坎北",
+        "震东兑西"
+      ],
+      "notes": [],
+      "review": "source-reviewed"
+    },
+    {
       "paragraphId": "meihua-yishu:L0344-L0349",
       "kind": "案例",
       "vernacular": "观梅例给出辰年、十二月十七日、申时：原文上数34取兑，加申时数后总43取离，并得初爻动。本卦泽火革，初变为咸，互见乾、巽；这些数字与卦形能逐项复算。",
@@ -1047,6 +1137,2619 @@
       "relatedParagraphIds": [
         "meihua-yishu:L0360-L0369"
       ]
+    },
+    {
+      "paragraphId": "meihua-yishu:L0375-L0379",
+      "kind": "案例",
+      "vernacular": "叩门借物例先听一声、再听五声，分别取乾上巽下；再加酉时数，总数16取第四爻动，得姤变巽，互重乾。原文借乾金短、巽木长讨论金木工具，不能把两次敲声合成一个次数后重新排卦。",
+      "terms": [
+        "邻夜叩门",
+        "分次声音",
+        "姤变巽",
+        "第四爻"
+      ],
+      "notes": [
+        "这是分次声数起例，不是年月日时例；保留1声、5声与酉时，尚未套入时间数字案例schema。"
+      ],
+      "review": "source-reviewed"
+    },
+    {
+      "paragraphId": "meihua-yishu:L0381-L0381",
+      "kind": "案例",
+      "vernacular": "儿子把金短木长猜成锄头，先生结合冬晚借物的用途改判斧头。此例强调同一物象可对应不同工具，必须借事情背景分辨，不能把卦象当成唯一物名。",
+      "terms": [
+        "推数须明理",
+        "斧锄之辨",
+        "情境"
+      ],
+      "notes": [
+        "原书叙述的斧头答案不能作为所有同卦借物问题的固定输出。"
+      ],
+      "review": "source-reviewed",
+      "relatedParagraphIds": [
+        "meihua-yishu:L0375-L0379"
+      ]
+    },
+    {
+      "paragraphId": "meihua-yishu:L0385-L0397",
+      "kind": "案例",
+      "vernacular": "“今日动静如何”按传统四声分成两组：原文前三字合8取坤，后三字合5取巽，总13得初爻动，升变泰、互震兑。这里按声调取数，不能把六个字直接当上3下3，也没有另造年月日输入。",
+      "terms": [
+        "今日动静如何",
+        "传统四声",
+        "地风升",
+        "初爻动"
+      ],
+      "notes": [
+        "今平1、日入4、动去3、静去3、如平1、何平1是原文输入；不是普通话声调数。"
+      ],
+      "review": "source-reviewed"
+    },
+    {
+      "paragraphId": "meihua-yishu:L0399-L0399",
+      "kind": "案例",
+      "vernacular": "原例用升的登阶意义、震兑的东西席位、兑口坤腹等象解释赴宴；又以无坎、少同类和少生助解释酒食不丰。这里展示多条取象怎样拼成原书叙事，不表示现实酒量可由缺坎决定。",
+      "terms": [
+        "口腹之象",
+        "升阶",
+        "饮食占",
+        "生助"
+      ],
+      "notes": [
+        "此处“无坎”只是原例的解释材料，不能脱离情境形成固定饮酒判断。"
+      ],
+      "review": "source-reviewed"
+    },
+    {
+      "paragraphId": "meihua-yishu:L0403-L0403",
+      "kind": "案例",
+      "vernacular": "西林寺旧额例按作者认定的“西”7画、“林”8画取艮上坤下，总15取三爻动，剥变艮，互重坤。笔画数字必须按原额书写保存，不用现代字典的标准笔画悄悄改掉。",
+      "terms": [
+        "西林寺牌额",
+        "笔画占",
+        "山地剥",
+        "三爻动"
+      ],
+      "notes": [
+        "未见原额字形；这些是原文给定笔画，不代表已经校定字形。"
+      ],
+      "review": "source-reviewed"
+    },
+    {
+      "paragraphId": "meihua-yishu:L0405-L0405",
+      "kind": "案例",
+      "vernacular": "作者把寺院的纯阳身份与阴爻多的剥卦对照，讲成与女性相关的祸患，并叙述添笔画后无事。应保留为这段传说的推断，不向现实人物推广这种性别归因。",
+      "terms": [
+        "牌额取象",
+        "群阴剥阳",
+        "原例叙述"
+      ],
+      "notes": [],
+      "review": "source-reviewed"
+    },
+    {
+      "paragraphId": "meihua-yishu:L0407-L0407",
+      "kind": "案例",
+      "vernacular": "添两钩后的“林”按原文变为10画，下卦改兑，合成损，五爻动变中孚、互坤震。它说明字形输入改变会改变卦形；改字后平安属于原例叙述，不是改名改字必能化解风险的证明。",
+      "terms": [
+        "山泽损",
+        "中孚",
+        "改笔画",
+        "五爻动"
+      ],
+      "notes": [
+        "原额和添钩字形未保存，不能只输入普通文字“西林”就声称复现了同一笔画法。"
+      ],
+      "review": "source-reviewed"
+    },
+    {
+      "paragraphId": "meihua-yishu:L0409-L0409",
+      "kind": "理论",
+      "vernacular": "作者把上面观梅、牡丹、文字和笔画等例归为先取得数再得卦的先天法。不同数字来源仍各有步骤，先天并非仅指年月日时。",
+      "terms": [
+        "先天之数",
+        "先数后卦"
+      ],
+      "notes": [],
+      "review": "source-reviewed"
+    },
+    {
+      "paragraphId": "meihua-yishu:L0413-L0421",
+      "kind": "案例",
+      "vernacular": "老人例以老人取乾、往巽方取巽，配卯时总数10而得姤九四，体巽木受乾金克。原文再结合忧色、行走和爻辞，讲成五日内的食鱼祸患；保留卦、时数和推断层，不能把己丑日误当出生年。",
+      "terms": [
+        "老人忧色",
+        "后天端法",
+        "姤九四",
+        "行则应速"
+      ],
+      "notes": [
+        "原文只给己丑日卯时，未给年、月；不能伪造公历时刻或年月日时案例。",
+        "伤亡叙述不作为现实安全判断。"
+      ],
+      "review": "source-reviewed"
+    },
+    {
+      "paragraphId": "meihua-yishu:L0423-L0423",
+      "kind": "规则候选",
+      "vernacular": "此条按当时动静调整应期：行走取成卦数的一半，坐着取倍数，站立用原数。但作者随即说还要随事情节奏变通，观花等朝夕之事不能机械套成长天数。",
+      "terms": [
+        "应期",
+        "行坐立",
+        "迟速变通"
+      ],
+      "notes": [
+        "需保留所见动静及事件时间尺度；不能只给一个总数就自动定期限。"
+      ],
+      "review": "source-reviewed"
+    },
+    {
+      "paragraphId": "meihua-yishu:L0427-L0433",
+      "kind": "案例",
+      "vernacular": "少年来自离方，以艮上离下得贲，加午时数总17，五爻动变家人，互见震坎。原文借喜色、爻辞和生体解释定亲。所谓互变生体要辨所取的用互与变用，不能说两个互卦都生离火。",
+      "terms": [
+        "少年喜色",
+        "山火贲",
+        "家人",
+        "五爻动",
+        "体用互"
+      ],
+      "notes": [
+        "互中坎水与离火并非相生，不能把“互变俱生”泛化为全部互卦同向生体。",
+        "后天物象与方位起例，未改造成农历年月日输入。"
+      ],
+      "review": "source-reviewed"
+    },
+    {
+      "paragraphId": "meihua-yishu:L0437-L0437",
+      "kind": "案例",
+      "vernacular": "牛在坎方哀鸣，以坤上坎下得师，加午时数共21，三爻动变升，互见坤震。原文以坤为体，从所取用互与变用的克体关系读不利，不能把互中坤土也说成克坤体。",
+      "terms": [
+        "牛哀鸣",
+        "地水师",
+        "三爻动",
+        "师变升"
+      ],
+      "notes": [
+        "保留物象坤8、方位坎6、午7；这是端法输入，不是出生数字。"
+      ],
+      "review": "source-reviewed"
+    },
+    {
+      "paragraphId": "meihua-yishu:L0439-L0439",
+      "kind": "案例",
+      "vernacular": "这里续记牛例：原断二十一日内遭屠宰，叙事说第二十日被买去犒众。它是带时间差的原书应验记录，不把故事中的结果当作独立测试集命中。",
+      "terms": [
+        "牛例应期",
+        "原书应验"
+      ],
+      "notes": [],
+      "review": "source-reviewed"
+    },
+    {
+      "paragraphId": "meihua-yishu:L0443-L0443",
+      "kind": "案例",
+      "vernacular": "鸡在乾方悲鸣，以巽上乾下得小畜，加卯时总10得四爻动，变乾、互离兑；以乾金为体，结合离火和木火烹饪象讲鸡被烹。不能只见卦名小畜就输出同样事件。",
+      "terms": [
+        "鸡悲鸣",
+        "风天小畜",
+        "四爻动",
+        "互离兑"
+      ],
+      "notes": [
+        "本例为物象、方位、时数法；无年月资料，不套时间起卦器。"
+      ],
+      "review": "source-reviewed"
+    },
+    {
+      "paragraphId": "meihua-yishu:L0445-L0445",
+      "kind": "案例",
+      "vernacular": "本段只续记鸡例十日后被烹的叙述，没有增加新的起卦输入或取数规则。",
+      "terms": [
+        "鸡例应验",
+        "十日"
+      ],
+      "notes": [
+        "原文事后叙述与可复算的卦形分别记。"
+      ],
+      "review": "source-reviewed"
+    },
+    {
+      "paragraphId": "meihua-yishu:L0449-L0449",
+      "kind": "案例",
+      "vernacular": "枯枝无风自落到兑方，以槁木归离、来向归兑得睽，加辰时总10得四爻动，变损、互坎离。原断把兑体受离克、卦名和爻辞结合起来，数字之外还有事物情境。",
+      "terms": [
+        "枯枝坠地",
+        "火泽睽",
+        "四爻动",
+        "山泽损"
+      ],
+      "notes": [
+        "戊子是所记日干支，不能拿来填年支；未给年、月，不造公历。"
+      ],
+      "review": "source-reviewed"
+    },
+    {
+      "paragraphId": "meihua-yishu:L0451-L0451",
+      "kind": "案例",
+      "vernacular": "这里叙述树在十日后被砍来建公榭，匠人又恰巧字元夫，以此呼应前述爻辞。匠人姓名属于事后叙述，不进入起卦输入。",
+      "terms": [
+        "枯枝例应验",
+        "元夫"
+      ],
+      "notes": [],
+      "review": "source-reviewed"
+    },
+    {
+      "paragraphId": "meihua-yishu:L0453-L0453",
+      "kind": "理论",
+      "vernacular": "作者把老人、少年、牛鸡和枯枝等例归为后天法，因为先以人物、物象和方位确定卦，再合卦数取爻。",
+      "terms": [
+        "后天之数",
+        "端法案例"
+      ],
+      "notes": [],
+      "review": "source-reviewed"
+    },
+    {
+      "paragraphId": "meihua-yishu:L0457-L0457",
+      "kind": "术语",
+      "vernacular": "风觉鸟占在这里是借风、鸟等外物察变的统称，并不限定只能占风和鸟；正如观梅数也不是只对梅花适用。",
+      "terms": [
+        "风觉鸟占",
+        "寓物",
+        "观梅数"
+      ],
+      "notes": [],
+      "review": "source-reviewed"
+    },
+    {
+      "paragraphId": "meihua-yishu:L0461-L0479",
+      "kind": "规则候选",
+      "vernacular": "风占先辨来向以定卦，再看季节、夹带尘烟的颜色及声势：如南来风取巽上离下的家人。原文把风声比作马阵、波涛、悲泣或音乐等来辅助解释，不能只凭风大就自动断灾。",
+      "terms": [
+        "风占",
+        "来向",
+        "风色",
+        "声势",
+        "季节"
+      ],
+      "notes": [
+        "这些是传统取象；本段未提供完整数值动爻步骤，不编造一套。"
+      ],
+      "review": "source-reviewed"
+    },
+    {
+      "paragraphId": "meihua-yishu:L0483-L0493",
+      "kind": "规则候选",
+      "vernacular": "鸟占可数只数、察方位、听叫声、辨羽色和名称，再分别取卦或辅助解释。这里允许观察鸟群数目，与L308“群物之动不可起卦”的限制不同，应保留两条适用背景，不静默合成唯一规则。",
+      "terms": [
+        "鸟占",
+        "群鸟计数",
+        "鸣声",
+        "名义"
+      ],
+      "notes": [
+        "鸟名与吉凶的联系是本书类象主张，不能作为生态或现实风险结论。"
+      ],
+      "review": "source-reviewed",
+      "relatedParagraphIds": [
+        "meihua-yishu:L0308-L0308"
+      ]
+    },
+    {
+      "paragraphId": "meihua-yishu:L0497-L0509",
+      "kind": "操作步骤",
+      "vernacular": "只听到声音时，可选次数、来向或声源类别起卦。原文将口出声归兑、敲木声归震、金属声归乾、火声归离、土崩筑土声归坤；悲喜语气只是辅助取象，必须区分它与真正参与取数的次数。",
+      "terms": [
+        "听声音占",
+        "声源分类",
+        "次数与情绪"
+      ],
+      "notes": [],
+      "review": "source-reviewed"
+    },
+    {
+      "paragraphId": "meihua-yishu:L0513-L0513",
+      "kind": "规则候选",
+      "vernacular": "形物法按形状或质地取象：圆取乾、方取坤、长柔取巽、仰取震、覆取艮，中实外柔取坎、内虚外刚取离，破缺取兑。一个物件若有多种特征，须先说明所用观察角度。",
+      "terms": [
+        "形物占",
+        "形状",
+        "内外刚柔"
+      ],
+      "notes": [],
+      "review": "source-reviewed"
+    },
+    {
+      "paragraphId": "meihua-yishu:L0517-L0517",
+      "kind": "术语",
+      "vernacular": "颜色表把青归震，红紫赤归离，黄归坤，白归兑，黑归坎。它是取象映射，不是穿戴配色的改运建议。",
+      "terms": [
+        "颜色取象",
+        "青红黄白黑"
+      ],
+      "notes": [],
+      "review": "source-reviewed"
+    },
+    {
+      "paragraphId": "meihua-yishu:L0523-L0523",
+      "kind": "术语",
+      "vernacular": "本轮乾象补列玄黄、大赤色、金玉、镜、狮象马、天鹅及圆刚贵重之物，属于辨物时可参照的特征库。",
+      "terms": [
+        "乾类象",
+        "圆刚贵重"
+      ],
+      "notes": [],
+      "review": "source-reviewed"
+    },
+    {
+      "paragraphId": "meihua-yishu:L0525-L0525",
+      "kind": "术语",
+      "vernacular": "坎象在辨物表里包括水、带子或果核之物、猪鱼、弓轮、水具、盐酒和黑色，不能把其中任一项当唯一答案。",
+      "terms": [
+        "坎类象",
+        "带核",
+        "水具"
+      ],
+      "notes": [],
+      "review": "source-reviewed"
+    },
+    {
+      "paragraphId": "meihua-yishu:L0527-L0527",
+      "kind": "术语",
+      "vernacular": "艮的辨物类象是土石、黄色、土中物、瓜果和狗鼠虎等动物；它与前表并非只有山这一种含义。",
+      "terms": [
+        "艮类象",
+        "土石",
+        "瓜果"
+      ],
+      "notes": [],
+      "review": "source-reviewed"
+    },
+    {
+      "paragraphId": "meihua-yishu:L0529-L0529",
+      "kind": "术语",
+      "vernacular": "震的辨物类象集中在竹木、草苇、青绿色、竹木乐器及繁生鲜活之物，也取龙蛇作象。",
+      "terms": [
+        "震类象",
+        "竹木乐器",
+        "青绿"
+      ],
+      "notes": [],
+      "review": "source-reviewed"
+    },
+    {
+      "paragraphId": "meihua-yishu:L0531-L0531",
+      "kind": "术语",
+      "vernacular": "巽的辨物类象偏长直木物、禽鸟羽类、鸡、香气及工巧器具，和震的竹木类象有重叠，需靠长度、形态等条件再分。",
+      "terms": [
+        "巽类象",
+        "长直",
+        "工巧"
+      ],
+      "notes": [],
+      "review": "source-reviewed"
+    },
+    {
+      "paragraphId": "meihua-yishu:L0533-L0533",
+      "kind": "术语",
+      "vernacular": "离的辨物类象包括火、文书兵器、枯木和龟蟹螺蚌鳖等有壳物，常借外刚内柔或显明之象辨别。",
+      "terms": [
+        "离类象",
+        "外壳",
+        "文书"
+      ],
+      "notes": [],
+      "review": "source-reviewed"
+    },
+    {
+      "paragraphId": "meihua-yishu:L0535-L0535",
+      "kind": "术语",
+      "vernacular": "坤的辨物类象涵盖方而柔的物件、五谷丝棉、牛、布帛、车釜瓦器和黄色，是土与承载等类象的集合。",
+      "terms": [
+        "坤类象",
+        "方柔",
+        "布帛谷物"
+      ],
+      "notes": [],
+      "review": "source-reviewed"
+    },
+    {
+      "paragraphId": "meihua-yishu:L0537-L0537",
+      "kind": "术语",
+      "vernacular": "兑的辨物类象包括金刃金器、乐器、泽中物、白色、羊和有口缺的物件，口、缺、金是这里的主要识别方向。",
+      "terms": [
+        "兑类象",
+        "口缺",
+        "金器"
+      ],
+      "notes": [],
+      "review": "source-reviewed"
+    },
+    {
+      "paragraphId": "meihua-yishu:L0541-L0541",
+      "kind": "序跋目录",
+      "vernacular": "这里开始乾卦的分项类象表，后续各条要在乾这一表头下理解。",
+      "terms": [
+        "乾卦类象表"
+      ],
+      "notes": [],
+      "review": "source-reviewed"
+    },
+    {
+      "paragraphId": "meihua-yishu:L0543-L0543",
+      "kind": "术语",
+      "vernacular": "乾在本表的先天数为1，五行为金。后面另列的一四九是类象数目，不应替换这里的起卦数1。",
+      "terms": [
+        "乾一",
+        "乾金"
+      ],
+      "notes": [],
+      "review": "source-reviewed"
+    },
+    {
+      "paragraphId": "meihua-yishu:L0545-L0545",
+      "kind": "术语",
+      "vernacular": "乾宫所列前四卦为乾、姤、遁、否；这是卦宫名录，不是只要上卦为乾就自动落入某一吉凶结论。",
+      "terms": [
+        "乾宫",
+        "乾姤遁否"
+      ],
+      "notes": [],
+      "review": "source-reviewed"
+    },
+    {
+      "paragraphId": "meihua-yishu:L0547-L0547",
+      "kind": "术语",
+      "vernacular": "此行续乾宫名录，列观、剥、晋、大有，与前行合成该宫八卦的清单。",
+      "terms": [
+        "乾宫",
+        "观剥晋大有"
+      ],
+      "notes": [],
+      "review": "source-reviewed"
+    },
+    {
+      "paragraphId": "meihua-yishu:L0549-L0549",
+      "kind": "术语",
+      "vernacular": "乾在天时类象中取天、冰、雹和霰，具体能否用来解读天气还须看占题和其他卦象。",
+      "terms": [
+        "乾天时",
+        "冰雹霰"
+      ],
+      "notes": [],
+      "review": "source-reviewed"
+    },
+    {
+      "paragraphId": "meihua-yishu:L0551-L0551",
+      "kind": "术语",
+      "vernacular": "乾的地理类象为西北、京城大郡、高处和形势突出的地点；这里给的是类别与方位。",
+      "terms": [
+        "乾地理",
+        "西北",
+        "高亢"
+      ],
+      "notes": [],
+      "review": "source-reviewed"
+    },
+    {
+      "paragraphId": "meihua-yishu:L0553-L0553",
+      "kind": "术语",
+      "vernacular": "乾的人物类象包括君父、老人长者、官宦和公门中人，属于身份类别，不是对具体人的评价。",
+      "terms": [
+        "乾人物",
+        "君父官长"
+      ],
+      "notes": [],
+      "review": "source-reviewed"
+    },
+    {
+      "paragraphId": "meihua-yishu:L0555-L0555",
+      "kind": "待核实",
+      "vernacular": "乾的人事表列刚健武勇、果决和多动少静。末尾“高上下屈”字句不顺，暂按原字保留，不能直接补成另一条性情结论。",
+      "terms": [
+        "乾人事",
+        "刚健",
+        "果决"
+      ],
+      "notes": [
+        "“高上下屈”待核同版原页，不擅改作高亢不屈。"
+      ],
+      "review": "source-reviewed"
+    },
+    {
+      "paragraphId": "meihua-yishu:L0557-L0557",
+      "kind": "术语",
+      "vernacular": "乾在身体类象中配头、骨和肺，这是传统对应关系，不用来诊断实际疾病。",
+      "terms": [
+        "乾身体",
+        "首骨肺"
+      ],
+      "notes": [],
+      "review": "source-reviewed"
+    },
+    {
+      "paragraphId": "meihua-yishu:L0559-L0559",
+      "kind": "规则候选",
+      "vernacular": "乾的时间类象列秋季、九十月之交、戌亥年月日时，以及一四九等数字时段。它提供多个可参照的时间标签，不等于自动确定唯一应期。",
+      "terms": [
+        "乾时序",
+        "戌亥",
+        "一四九"
+      ],
+      "notes": [],
+      "review": "source-reviewed"
+    },
+    {
+      "paragraphId": "meihua-yishu:L0561-L0561",
+      "kind": "术语",
+      "vernacular": "乾在动物表中对应马、天鹅、狮和象；原书观牡丹取马只是其中一项应用。",
+      "terms": [
+        "乾动物",
+        "马象"
+      ],
+      "notes": [],
+      "review": "source-reviewed"
+    },
+    {
+      "paragraphId": "meihua-yishu:L0563-L0563",
+      "kind": "术语",
+      "vernacular": "乾的静物包括金玉珠宝、圆物、果实、刚物、冠和镜。辨物时还需结合用途和形态，不能把名单全当眼前实物。",
+      "terms": [
+        "乾静物",
+        "金玉圆物"
+      ],
+      "notes": [],
+      "review": "source-reviewed"
+    },
+    {
+      "paragraphId": "meihua-yishu:L0565-L0565",
+      "kind": "术语",
+      "vernacular": "乾在建筑类象中指官署、楼台、高堂大厦、驿舍和朝西北的住处，偏高大、公用与西北方位。",
+      "terms": [
+        "乾屋舍",
+        "公廨",
+        "高堂"
+      ],
+      "notes": [],
+      "review": "source-reviewed"
+    },
+    {
+      "paragraphId": "meihua-yishu:L0567-L0567",
+      "kind": "规则候选",
+      "vernacular": "家宅类象表以乾为参照时，原文分别列秋占兴隆、夏占有祸、冬占冷落、春占吉利。季节是本条明写的条件，不能删掉后只留“乾宅吉”。",
+      "terms": [
+        "乾家宅",
+        "季节差别"
+      ],
+      "notes": [
+        "这是古书的家宅占说法，非实际住房安全鉴定。"
+      ],
+      "review": "source-reviewed"
+    },
+    {
+      "paragraphId": "meihua-yishu:L0569-L0569",
+      "kind": "规则候选",
+      "vernacular": "乾的婚姻表偏取官贵或有名之家，并把秋占与冬夏占分开评价。人物家世类象与婚事结果不是同一个判断。",
+      "terms": [
+        "乾婚姻",
+        "秋与冬夏"
+      ],
+      "notes": [
+        "保留传统条件，不用来判断某位现实伴侣的出身或可靠性。"
+      ],
+      "review": "source-reviewed"
+    },
+    {
+      "paragraphId": "meihua-yishu:L0571-L0571",
+      "kind": "术语",
+      "vernacular": "乾在饮食类象中取珍味、带骨或干制食物、水果、圆物和辛辣味，也列马肉及脏器名。这里只供辨物，不是饮食推荐。",
+      "terms": [
+        "乾饮食",
+        "辛辣",
+        "干肉圆果"
+      ],
+      "notes": [],
+      "review": "source-reviewed"
+    },
+    {
+      "paragraphId": "meihua-yishu:L0573-L0573",
+      "kind": "规则候选",
+      "vernacular": "生产表借乾象说易生、秋占得贵子、夏占有损，并列西北朝向。这是原书孕产占断的条件组合，不可当作分娩风险或体位建议。",
+      "terms": [
+        "乾生产占",
+        "秋夏差别",
+        "西北"
+      ],
+      "notes": [
+        "仅释传统原文，不作为孕产医学判断。"
+      ],
+      "review": "source-reviewed"
+    },
+    {
+      "paragraphId": "meihua-yishu:L0575-L0575",
+      "kind": "规则候选",
+      "vernacular": "乾的求名类象偏朝廷、公权、刑官武职、使者驿官及西北任所。所列是古代职位类别，不能直接对应现代岗位适配。",
+      "terms": [
+        "乾求名",
+        "官职类象"
+      ],
+      "notes": [],
+      "review": "source-reviewed"
+    },
+    {
+      "paragraphId": "meihua-yishu:L0577-L0577",
+      "kind": "规则候选",
+      "vernacular": "谋事表把乾与公门、行动中获财相联，同时明说夏占不成、冬占谋多成少。必须保留时令限制，不能只截取“有成”。",
+      "terms": [
+        "乾谋事",
+        "公门",
+        "夏冬限制"
+      ],
+      "notes": [],
+      "review": "source-reviewed"
+    },
+    {
+      "paragraphId": "meihua-yishu:L0579-L0579",
+      "kind": "规则候选",
+      "vernacular": "乾的交易类象适合讨论金玉珍宝等贵重物，原文又把夏占列为不利条件。这里是传统物类与季节判断，不构成买卖建议。",
+      "terms": [
+        "乾交易",
+        "贵重物",
+        "夏占"
+      ],
+      "notes": [],
+      "review": "source-reviewed"
+    },
+    {
+      "paragraphId": "meihua-yishu:L0581-L0581",
+      "kind": "规则候选",
+      "vernacular": "求利表将乾归于金玉及公门来源，并分秋利、夏损、冬无财。不同季节结论相反，不能把乾一律列为财运好。",
+      "terms": [
+        "乾求利",
+        "金玉",
+        "秋夏冬"
+      ],
+      "notes": [],
+      "review": "source-reviewed"
+    },
+    {
+      "paragraphId": "meihua-yishu:L0583-L0583",
+      "kind": "规则候选",
+      "vernacular": "乾的出行类象偏京城和西北方向，原文认为一般利出行而夏占例外。它不能替代现实行程与安全信息。",
+      "terms": [
+        "乾出行",
+        "京师西北",
+        "夏占例外"
+      ],
+      "notes": [],
+      "review": "source-reviewed"
+    },
+    {
+      "paragraphId": "meihua-yishu:L0585-L0585",
+      "kind": "规则候选",
+      "vernacular": "谒见类象里，乾适合指向官长或有德行的长者；本条讨论所见对象类别和可见与否。",
+      "terms": [
+        "乾谒见",
+        "官长"
+      ],
+      "notes": [],
+      "review": "source-reviewed"
+    },
+    {
+      "paragraphId": "meihua-yishu:L0587-L0587",
+      "kind": "规则候选",
+      "vernacular": "乾的占病类象列头面、肺、筋骨和上焦，并标夏占不安。它反映传统配象，不能据此给人诊断或判病势。",
+      "terms": [
+        "乾疾病象",
+        "上焦",
+        "头肺筋骨"
+      ],
+      "notes": [
+        "实际症状不由卦象作医学判断。"
+      ],
+      "review": "source-reviewed"
+    },
+    {
+      "paragraphId": "meihua-yishu:L0589-L0589",
+      "kind": "规则候选",
+      "vernacular": "官讼表用乾取强健争讼和有人相助，又分秋占得胜、夏占失理；不能只凭乾象预测现实诉讼结果。",
+      "terms": [
+        "乾官讼",
+        "秋夏差别"
+      ],
+      "notes": [],
+      "review": "source-reviewed"
+    },
+    {
+      "paragraphId": "meihua-yishu:L0591-L0591",
+      "kind": "规则候选",
+      "vernacular": "坟墓表把乾与西北、高地、乾山气脉相联，并分别写秋占、夏占的吉凶。这里记录传统堪舆取象，不把方位直接等同墓地可用。",
+      "terms": [
+        "乾坟墓",
+        "乾山",
+        "西北高地"
+      ],
+      "notes": [],
+      "review": "source-reviewed"
+    },
+    {
+      "paragraphId": "meihua-yishu:L0593-L0593",
+      "kind": "术语",
+      "vernacular": "乾在此方位项对应西北，与前面的后天八卦方位表一致。",
+      "terms": [
+        "乾西北"
+      ],
+      "notes": [],
+      "review": "source-reviewed"
+    },
+    {
+      "paragraphId": "meihua-yishu:L0595-L0595",
+      "kind": "术语",
+      "vernacular": "乾的颜色项在此列大赤和玄色；与简化的金对白色并不完全同一口径，应保留原表差异。",
+      "terms": [
+        "乾颜色",
+        "大赤",
+        "玄色"
+      ],
+      "notes": [],
+      "review": "source-reviewed"
+    },
+    {
+      "paragraphId": "meihua-yishu:L0597-L0597",
+      "kind": "术语",
+      "vernacular": "乾在姓字类象中取带金旁、商音和一四九行位。这是古代音类、字形与数字比附，不是可靠识别人名的方法。",
+      "terms": [
+        "乾姓字",
+        "商音",
+        "金旁"
+      ],
+      "notes": [],
+      "review": "source-reviewed"
+    },
+    {
+      "paragraphId": "meihua-yishu:L0599-L0599",
+      "kind": "术语",
+      "vernacular": "这里为乾另列类象数目1、4、9；它不同于取卦时乾固定为1的先天数表。",
+      "terms": [
+        "乾类象数",
+        "一四九"
+      ],
+      "notes": [],
+      "review": "source-reviewed"
+    },
+    {
+      "paragraphId": "meihua-yishu:L0601-L0601",
+      "kind": "术语",
+      "vernacular": "乾在五味项对应辛和辣，属于味觉类象。",
+      "terms": [
+        "乾五味",
+        "辛辣"
+      ],
+      "notes": [],
+      "review": "source-reviewed"
+    },
+    {
+      "paragraphId": "meihua-yishu:L0603-L0603",
+      "kind": "序跋目录",
+      "vernacular": "此处转入坤卦分项表，以下人物、方位和问事条件均以坤为表头。",
+      "terms": [
+        "坤卦类象表"
+      ],
+      "notes": [],
+      "review": "source-reviewed"
+    },
+    {
+      "paragraphId": "meihua-yishu:L0605-L0605",
+      "kind": "术语",
+      "vernacular": "坤的先天起卦数为8，五行归土。",
+      "terms": [
+        "坤八",
+        "坤土"
+      ],
+      "notes": [],
+      "review": "source-reviewed"
+    },
+    {
+      "paragraphId": "meihua-yishu:L0607-L0607",
+      "kind": "术语",
+      "vernacular": "坤宫名录前半列坤、复、临、泰，是卦宫序列，不是同一件事的四个发展阶段。",
+      "terms": [
+        "坤宫",
+        "坤复临泰"
+      ],
+      "notes": [],
+      "review": "source-reviewed"
+    },
+    {
+      "paragraphId": "meihua-yishu:L0609-L0609",
+      "kind": "待核实",
+      "vernacular": "此行续列坤宫中的大壮、夬、需、比；电子文把夬写成“決”，应保留原字并标出通行卦名对应，不能直接改原文。",
+      "terms": [
+        "坤宫",
+        "大壮夬需比"
+      ],
+      "notes": [
+        "“澤天決”的決为待校字，检索可关联通行卦名夬。"
+      ],
+      "review": "source-reviewed"
+    },
+    {
+      "paragraphId": "meihua-yishu:L0611-L0611",
+      "kind": "术语",
+      "vernacular": "坤在天气类象中取阴云和雾气，而非无条件预报下雨。",
+      "terms": [
+        "坤天时",
+        "云雾"
+      ],
+      "notes": [],
+      "review": "source-reviewed"
+    },
+    {
+      "paragraphId": "meihua-yishu:L0613-L0613",
+      "kind": "术语",
+      "vernacular": "坤的地理对应田野、乡里、平地和西南方向，突出地面与乡野场景。",
+      "terms": [
+        "坤地理",
+        "田野平地",
+        "西南"
+      ],
+      "notes": [],
+      "review": "source-reviewed"
+    },
+    {
+      "paragraphId": "meihua-yishu:L0615-L0615",
+      "kind": "术语",
+      "vernacular": "坤的人物类象包括母辈、农夫、乡人、众人及腹部宽大者；是角色和形态取象，不作价值高低评价。",
+      "terms": [
+        "坤人物",
+        "母辈",
+        "众人"
+      ],
+      "notes": [],
+      "review": "source-reviewed"
+    },
+    {
+      "paragraphId": "meihua-yishu:L0617-L0617",
+      "kind": "术语",
+      "vernacular": "坤在人事表中列柔顺、众多，也列吝啬和懦弱等旧式描述。它们是本书象意词，不用来给现实问卦者贴人格标签。",
+      "terms": [
+        "坤人事",
+        "柔顺",
+        "众多"
+      ],
+      "notes": [],
+      "review": "source-reviewed"
+    },
+    {
+      "paragraphId": "meihua-yishu:L0619-L0619",
+      "kind": "术语",
+      "vernacular": "坤的身体配象指腹、脾、胃和肉，属于传统五行取象范畴。",
+      "terms": [
+        "坤身体",
+        "腹脾胃"
+      ],
+      "notes": [
+        "不是器官病变的诊断依据。"
+      ],
+      "review": "source-reviewed"
+    },
+    {
+      "paragraphId": "meihua-yishu:L0621-L0621",
+      "kind": "规则候选",
+      "vernacular": "坤的时序表列辰戌丑未月、未申年月日时及八五十等数字时段。它给出多组时间类象，使用时要写明采用哪组，不能混成一个固定日期。",
+      "terms": [
+        "坤时序",
+        "未申",
+        "八五十"
+      ],
+      "notes": [],
+      "review": "source-reviewed"
+    },
+    {
+      "paragraphId": "meihua-yishu:L0623-L0623",
+      "kind": "术语",
+      "vernacular": "坤的静物偏方形、柔物、布帛丝棉、五谷、车釜和瓦器，体现土、承载和日常物资的类别。",
+      "terms": [
+        "坤静物",
+        "方柔",
+        "布帛瓦器"
+      ],
+      "notes": [],
+      "review": "source-reviewed"
+    },
+    {
+      "paragraphId": "meihua-yishu:L0625-L0625",
+      "kind": "术语",
+      "vernacular": "坤在动物项取牛、走兽和母马，母马之象与乾的马象应按性别或语境分辨。",
+      "terms": [
+        "坤动物",
+        "牛",
+        "牝马"
+      ],
+      "notes": [],
+      "review": "source-reviewed"
+    },
+    {
+      "paragraphId": "meihua-yishu:L0627-L0627",
+      "kind": "术语",
+      "vernacular": "坤的建筑类象包括西南向住处、乡村田舍、矮屋、土阶和仓库，偏平低而与土地相连的场所。",
+      "terms": [
+        "坤屋舍",
+        "田舍仓库"
+      ],
+      "notes": [],
+      "review": "source-reviewed"
+    },
+    {
+      "paragraphId": "meihua-yishu:L0629-L0629",
+      "kind": "规则候选",
+      "vernacular": "坤的家宅表以安稳和阴气较多为一般象，并指出春占宅舍不安。不能省去春季这一条件，直接把坤说成永远安宅。",
+      "terms": [
+        "坤家宅",
+        "春占限制"
+      ],
+      "notes": [],
+      "review": "source-reviewed"
+    },
+    {
+      "paragraphId": "meihua-yishu:L0631-L0631",
+      "kind": "术语",
+      "vernacular": "坤在饮食项取牛肉、土中生长的食物、五谷、芋笋、甘味及腹脏类食材，是物类对照而非食谱。",
+      "terms": [
+        "坤饮食",
+        "甘味",
+        "五谷芋笋"
+      ],
+      "notes": [],
+      "review": "source-reviewed"
+    },
+    {
+      "paragraphId": "meihua-yishu:L0633-L0633",
+      "kind": "规则候选",
+      "vernacular": "婚姻表把坤与有田产、乡村或寡妇之家相联，通常说有利而春占不利。家世描述与婚事结果必须分开，也不能据卦给真实伴侣定身份。",
+      "terms": [
+        "坤婚姻",
+        "田产乡村",
+        "春占"
+      ],
+      "notes": [],
+      "review": "source-reviewed"
+    },
+    {
+      "paragraphId": "meihua-yishu:L0635-L0635",
+      "kind": "规则候选",
+      "vernacular": "生产表在坤象下写易产，但春占另有难产或伤母之说，并列西南坐向。它是古占文本的条件差异，不得转为孕产判断或分娩姿势建议。",
+      "terms": [
+        "坤生产占",
+        "春占",
+        "西南"
+      ],
+      "notes": [
+        "不用于医学诊疗或安全判断。"
+      ],
+      "review": "source-reviewed"
+    },
+    {
+      "paragraphId": "meihua-yishu:L0637-L0638",
+      "kind": "规则候选",
+      "vernacular": "本段合列求名与交易：求名偏西南、教职农职守土之职；交易偏田土、谷物、重物布帛及静中获利。两项都列春占限制，不能拆掉共同的季节条件。",
+      "terms": [
+        "坤求名",
+        "坤交易",
+        "守土",
+        "静中得财"
+      ],
+      "notes": [],
+      "review": "source-reviewed"
+    },
+    {
+      "paragraphId": "meihua-yishu:L0640-L0640",
+      "kind": "规则候选",
+      "vernacular": "坤的求利类象重土地、重物、低价大宗物和静中得财，原文又说春占无财。这里只保存传统分类，不作为现实投资建议。",
+      "terms": [
+        "坤求利",
+        "土中之利",
+        "春占"
+      ],
+      "notes": [],
+      "review": "source-reviewed"
+    },
+    {
+      "paragraphId": "meihua-yishu:L0642-L0642",
+      "kind": "规则候选",
+      "vernacular": "谋事表以坤对应乡里、安静处理或通过妇人商议，春占则少有遂意。它讲的是本表情境差别，不是要求所有事情都静止不动。",
+      "terms": [
+        "坤谋事",
+        "乡里静谋",
+        "春占"
+      ],
+      "notes": [],
+      "review": "source-reviewed"
+    },
+    {
+      "paragraphId": "meihua-yishu:L0644-L0644",
+      "kind": "规则候选",
+      "vernacular": "坤的出行类象偏西南、乡里和陆路，原文允许出行但把春占列作例外。方向只作传统取象记录。",
+      "terms": [
+        "坤出行",
+        "陆路",
+        "西南"
+      ],
+      "notes": [],
+      "review": "source-reviewed"
+    },
+    {
+      "paragraphId": "meihua-yishu:L0646-L0646",
+      "kind": "规则候选",
+      "vernacular": "谒见表以坤对应乡人、亲朋或妇女，原文说可见但春季不宜；不能因此推断某位现实人物会拒见。",
+      "terms": [
+        "坤谒见",
+        "乡人亲朋",
+        "春占"
+      ],
+      "notes": [],
+      "review": "source-reviewed"
+    },
+    {
+      "paragraphId": "meihua-yishu:L0648-L0648",
+      "kind": "规则候选",
+      "vernacular": "坤的占病类象列腹部、脾胃和饮食不化，反映土与消化部位的传统联系，不是诊断。",
+      "terms": [
+        "坤疾病象",
+        "腹脾胃",
+        "饮食停伤"
+      ],
+      "notes": [
+        "医疗判断不能据本表确定。"
+      ],
+      "review": "source-reviewed"
+    },
+    {
+      "paragraphId": "meihua-yishu:L0650-L0650",
+      "kind": "规则候选",
+      "vernacular": "坤在官讼表里取情理较顺、能得众人理解和争讼宜解散的象意；不代表真实案件已经能调解或胜诉。",
+      "terms": [
+        "坤官讼",
+        "得众情",
+        "解散"
+      ],
+      "notes": [],
+      "review": "source-reviewed"
+    },
+    {
+      "paragraphId": "meihua-yishu:L0652-L0652",
+      "kind": "规则候选",
+      "vernacular": "坤的坟墓类象偏西南、平地、近田野与低处，并有春季不用的条件。原文方位说法不能代替现场勘察。",
+      "terms": [
+        "坤坟墓",
+        "平阳",
+        "春季限制"
+      ],
+      "notes": [],
+      "review": "source-reviewed"
+    },
+    {
+      "paragraphId": "meihua-yishu:L0654-L0654",
+      "kind": "术语",
+      "vernacular": "坤在姓字表里配宫音、土旁姓氏和八五十行位；这是传统字音数类象，不用来断定某人的真实姓名。",
+      "terms": [
+        "坤姓字",
+        "宫音",
+        "土旁"
+      ],
+      "notes": [],
+      "review": "source-reviewed"
+    },
+    {
+      "paragraphId": "meihua-yishu:L0656-L0656",
+      "kind": "术语",
+      "vernacular": "坤的类象数目为8、5、10；与起卦时坤固定取8应分别使用。",
+      "terms": [
+        "坤数目",
+        "八五十"
+      ],
+      "notes": [],
+      "review": "source-reviewed"
+    },
+    {
+      "paragraphId": "meihua-yishu:L0658-L0658",
+      "kind": "术语",
+      "vernacular": "坤在方道项对应西南，是后天方位。",
+      "terms": [
+        "坤西南"
+      ],
+      "notes": [],
+      "review": "source-reviewed"
+    },
+    {
+      "paragraphId": "meihua-yishu:L0660-L0660",
+      "kind": "术语",
+      "vernacular": "坤在五味中配甘，即偏甜的味觉类象。",
+      "terms": [
+        "坤甘味"
+      ],
+      "notes": [],
+      "review": "source-reviewed"
+    },
+    {
+      "paragraphId": "meihua-yishu:L0662-L0662",
+      "kind": "术语",
+      "vernacular": "坤在此表的颜色取黄与黑，保留两色而不是只剩土黄一种。",
+      "terms": [
+        "坤颜色",
+        "黄黑"
+      ],
+      "notes": [],
+      "review": "source-reviewed"
+    },
+    {
+      "paragraphId": "meihua-yishu:L0664-L0664",
+      "kind": "序跋目录",
+      "vernacular": "此处开始震卦的分项类象表。",
+      "terms": [
+        "震卦表头"
+      ],
+      "notes": [],
+      "review": "source-reviewed"
+    },
+    {
+      "paragraphId": "meihua-yishu:L0666-L0666",
+      "kind": "术语",
+      "vernacular": "震的先天取卦数是4，五行属木。",
+      "terms": [
+        "震四",
+        "震木"
+      ],
+      "notes": [],
+      "review": "source-reviewed"
+    },
+    {
+      "paragraphId": "meihua-yishu:L0668-L0668",
+      "kind": "术语",
+      "vernacular": "震宫名录先列震、豫、解、恒，表示所属卦序，不是连续发生的事件。",
+      "terms": [
+        "震宫",
+        "震豫解恒"
+      ],
+      "notes": [],
+      "review": "source-reviewed"
+    },
+    {
+      "paragraphId": "meihua-yishu:L0670-L0670",
+      "kind": "术语",
+      "vernacular": "震宫名录后半是升、井、大过、随，与上一行合成八卦清单。",
+      "terms": [
+        "震宫",
+        "升井大过随"
+      ],
+      "notes": [],
+      "review": "source-reviewed"
+    },
+    {
+      "paragraphId": "meihua-yishu:L0672-L0672",
+      "kind": "术语",
+      "vernacular": "震在天时项取雷，突出响动和发动之象。",
+      "terms": [
+        "震雷"
+      ],
+      "notes": [],
+      "review": "source-reviewed"
+    },
+    {
+      "paragraphId": "meihua-yishu:L0674-L0674",
+      "kind": "术语",
+      "vernacular": "震的地理类象包括东方、树木竹林、繁茂草木处，以及人声活动多的闹市和大路。",
+      "terms": [
+        "震地理",
+        "东方",
+        "闹市竹林"
+      ],
+      "notes": [],
+      "review": "source-reviewed"
+    },
+    {
+      "paragraphId": "meihua-yishu:L0676-L0676",
+      "kind": "术语",
+      "vernacular": "震的人物位置在本表专指长男，即家庭子女序列中的长子类象。",
+      "terms": [
+        "震长男"
+      ],
+      "notes": [],
+      "review": "source-reviewed"
+    },
+    {
+      "paragraphId": "meihua-yishu:L0678-L0678",
+      "kind": "术语",
+      "vernacular": "震在人事中象发动、惊动、怒气和鼓噪，多动而少静；是状态词，不必把每一种同时用在一件事上。",
+      "terms": [
+        "震人事",
+        "起动",
+        "虚惊"
+      ],
+      "notes": [],
+      "review": "source-reviewed"
+    },
+    {
+      "paragraphId": "meihua-yishu:L0680-L0680",
+      "kind": "术语",
+      "vernacular": "震的身体对应为足、肝、头发和声音，属于传统类象，不是病因判断。",
+      "terms": [
+        "震身体",
+        "足肝发声"
+      ],
+      "notes": [],
+      "review": "source-reviewed"
+    },
+    {
+      "paragraphId": "meihua-yishu:L0682-L0682",
+      "kind": "规则候选",
+      "vernacular": "震的时间类象列春季、卯的年月日时，以及4、3、8等数字时间。这里给多个候选标记，不能合成唯一应期。",
+      "terms": [
+        "震时序",
+        "卯",
+        "四三八"
+      ],
+      "notes": [],
+      "review": "source-reviewed"
+    },
+    {
+      "paragraphId": "meihua-yishu:L0684-L0685",
+      "kind": "术语",
+      "vernacular": "本段把震的静物列为竹木、芦苇、竹木乐器与鲜活花草，动物则取龙蛇；材质与动物名单是两栏。",
+      "terms": [
+        "震静物",
+        "木竹乐器",
+        "震动物"
+      ],
+      "notes": [],
+      "review": "source-reviewed"
+    },
+    {
+      "paragraphId": "meihua-yishu:L0687-L0687",
+      "kind": "术语",
+      "vernacular": "震的屋舍类象为向东的住处、山林居所和楼阁。",
+      "terms": [
+        "震屋舍",
+        "东向楼阁"
+      ],
+      "notes": [],
+      "review": "source-reviewed"
+    },
+    {
+      "paragraphId": "meihua-yishu:L0689-L0689",
+      "kind": "规则候选",
+      "vernacular": "震的家宅占表说宅中可能有惊动，并分别给春冬较吉、秋季不利的评价；季节差别属于本条条件。",
+      "terms": [
+        "震家宅",
+        "春冬",
+        "秋占"
+      ],
+      "notes": [],
+      "review": "source-reviewed"
+    },
+    {
+      "paragraphId": "meihua-yishu:L0691-L0691",
+      "kind": "术语",
+      "vernacular": "震在饮食项取蹄肉、山林野味、鲜肉、酸果和菜蔬，偏鲜活、山林与酸味。",
+      "terms": [
+        "震饮食",
+        "鲜肉酸果"
+      ],
+      "notes": [],
+      "review": "source-reviewed"
+    },
+    {
+      "paragraphId": "meihua-yishu:L0693-L0693",
+      "kind": "规则候选",
+      "vernacular": "震的婚姻类象偏长男或有名声之家，原文说一般可成但秋占不宜。不能省略秋季限制。",
+      "terms": [
+        "震婚姻",
+        "长男",
+        "秋占限制"
+      ],
+      "notes": [],
+      "review": "source-reviewed"
+    },
+    {
+      "paragraphId": "meihua-yishu:L0695-L0695",
+      "kind": "规则候选",
+      "vernacular": "震的求利取象偏山林、竹木、茶货及走动经营中获得的财物，和坤的静中求财形成对照。",
+      "terms": [
+        "震求利",
+        "竹木茶货",
+        "动中求财"
+      ],
+      "notes": [],
+      "review": "source-reviewed"
+    },
+    {
+      "paragraphId": "meihua-yishu:L0697-L0697",
+      "kind": "规则候选",
+      "vernacular": "震的求名表指向东方任所、发布号令、刑狱、竹茶木税及市货管理等古代职事，体现发动与管理的类象。",
+      "terms": [
+        "震求名",
+        "号令",
+        "税课"
+      ],
+      "notes": [
+        "古代官职类象不等于现代职业适配。"
+      ],
+      "review": "source-reviewed"
+    },
+    {
+      "paragraphId": "meihua-yishu:L0699-L0699",
+      "kind": "规则候选",
+      "vernacular": "生产占中，原书把震的惊动象连到胎动不安，并列头胎男、东向和秋季有损等说法。应作为古占材料保存，不作胎儿性别或孕产风险判断。",
+      "terms": [
+        "震生产占",
+        "惊动",
+        "秋占"
+      ],
+      "notes": [
+        "不作为孕产医学依据。"
+      ],
+      "review": "source-reviewed"
+    },
+    {
+      "paragraphId": "meihua-yishu:L0701-L0701",
+      "kind": "规则候选",
+      "vernacular": "震的占病类象涉及足、肝经和惊惧不安，说明作者怎样把木与震动联系到身体表现。",
+      "terms": [
+        "震疾病象",
+        "足肝",
+        "惊怖"
+      ],
+      "notes": [
+        "具体症状须独立就医判断。"
+      ],
+      "review": "source-reviewed"
+    },
+    {
+      "paragraphId": "meihua-yishu:L0703-L0703",
+      "kind": "规则候选",
+      "vernacular": "谋事表以震强调动中求谋，认为可求可成，但秋季较难遂意。这里的“宜动”不适用于所有卦或所有问题。",
+      "terms": [
+        "震谋事",
+        "动中谋",
+        "秋不遂"
+      ],
+      "notes": [],
+      "review": "source-reviewed"
+    },
+    {
+      "paragraphId": "meihua-yishu:L0705-L0705",
+      "kind": "规则候选",
+      "vernacular": "震的交易取象偏行动促成和山林木竹茶货，秋季则较难成交；物类、行动和季节三项都要保留。",
+      "terms": [
+        "震交易",
+        "山林货物",
+        "行动"
+      ],
+      "notes": [],
+      "review": "source-reviewed"
+    },
+    {
+      "paragraphId": "meihua-yishu:L0707-L0707",
+      "kind": "待核实",
+      "vernacular": "官讼项把震取作争执有力但易虚惊、往复办理的象。“行移取甚反复”句中“取甚”不清，不能据此补出具体司法程序。",
+      "terms": [
+        "震官讼",
+        "虚惊反复"
+      ],
+      "notes": [
+        "“行移取甚”待核字句。"
+      ],
+      "review": "source-reviewed"
+    },
+    {
+      "paragraphId": "meihua-yishu:L0709-L0709",
+      "kind": "规则候选",
+      "vernacular": "震的谒见类象偏山林中人或有声名者，原文在此给可见的倾向。",
+      "terms": [
+        "震谒见",
+        "山林名人"
+      ],
+      "notes": [],
+      "review": "source-reviewed"
+    },
+    {
+      "paragraphId": "meihua-yishu:L0711-L0711",
+      "kind": "规则候选",
+      "vernacular": "震的出行表偏东方与山林，并把秋季列为不宜，另保留可能虚惊的提醒。这是书中方位取象，不能代替实际路况。",
+      "terms": [
+        "震出行",
+        "东方山林",
+        "秋占"
+      ],
+      "notes": [],
+      "review": "source-reviewed"
+    },
+    {
+      "paragraphId": "meihua-yishu:L0713-L0713",
+      "kind": "规则候选",
+      "vernacular": "震的墓地类象偏向东与山林中的穴位，秋季另列不利条件。",
+      "terms": [
+        "震坟墓",
+        "东向山林"
+      ],
+      "notes": [],
+      "review": "source-reviewed"
+    },
+    {
+      "paragraphId": "meihua-yishu:L0715-L0715",
+      "kind": "术语",
+      "vernacular": "震的姓字类象采用角音、木旁姓氏和4、8、3行位，属于字音、偏旁与数字配类。",
+      "terms": [
+        "震姓字",
+        "角音",
+        "木旁"
+      ],
+      "notes": [],
+      "review": "source-reviewed"
+    },
+    {
+      "paragraphId": "meihua-yishu:L0717-L0717",
+      "kind": "术语",
+      "vernacular": "震的类象数字为4、8、3；起卦表的震4与这组三数用途不同。",
+      "terms": [
+        "震数目",
+        "四八三"
+      ],
+      "notes": [],
+      "review": "source-reviewed"
+    },
+    {
+      "paragraphId": "meihua-yishu:L0719-L0719",
+      "kind": "术语",
+      "vernacular": "震在方道项对应东方。",
+      "terms": [
+        "震东方"
+      ],
+      "notes": [],
+      "review": "source-reviewed"
+    },
+    {
+      "paragraphId": "meihua-yishu:L0721-L0721",
+      "kind": "术语",
+      "vernacular": "震的味觉项同时列甘和酸，不能只用一般木酸的简表删去甘味。",
+      "terms": [
+        "震五味",
+        "甘酸"
+      ],
+      "notes": [],
+      "review": "source-reviewed"
+    },
+    {
+      "paragraphId": "meihua-yishu:L0723-L0723",
+      "kind": "术语",
+      "vernacular": "震的颜色类象为青、绿、碧这一组草木色。",
+      "terms": [
+        "震五色",
+        "青绿碧"
+      ],
+      "notes": [],
+      "review": "source-reviewed"
+    },
+    {
+      "paragraphId": "meihua-yishu:L0725-L0725",
+      "kind": "序跋目录",
+      "vernacular": "下面进入巽卦表，各分项均从巽的象意理解。",
+      "terms": [
+        "巽卦表头"
+      ],
+      "notes": [],
+      "review": "source-reviewed"
+    },
+    {
+      "paragraphId": "meihua-yishu:L0727-L0727",
+      "kind": "术语",
+      "vernacular": "巽的先天卦数是5，五行为木。",
+      "terms": [
+        "巽五",
+        "巽木"
+      ],
+      "notes": [],
+      "review": "source-reviewed"
+    },
+    {
+      "paragraphId": "meihua-yishu:L0729-L0729",
+      "kind": "术语",
+      "vernacular": "巽宫前半列巽、小畜、家人、益四卦。",
+      "terms": [
+        "巽宫",
+        "小畜家人益"
+      ],
+      "notes": [],
+      "review": "source-reviewed"
+    },
+    {
+      "paragraphId": "meihua-yishu:L0731-L0731",
+      "kind": "术语",
+      "vernacular": "巽宫后半列无妄、噬嗑、颐、蛊，和前行共同组成该宫清单。",
+      "terms": [
+        "巽宫",
+        "无妄噬嗑颐蛊"
+      ],
+      "notes": [],
+      "review": "source-reviewed"
+    },
+    {
+      "paragraphId": "meihua-yishu:L0733-L0733",
+      "kind": "术语",
+      "vernacular": "巽在天时项配风，以流动、入内等意义取象。",
+      "terms": [
+        "巽风"
+      ],
+      "notes": [],
+      "review": "source-reviewed"
+    },
+    {
+      "paragraphId": "meihua-yishu:L0735-L0735",
+      "kind": "术语",
+      "vernacular": "巽的地理表偏东南、草木秀茂处以及花果菜园，突出木与生长场景。",
+      "terms": [
+        "巽地理",
+        "东南",
+        "花果菜园"
+      ],
+      "notes": [],
+      "review": "source-reviewed"
+    },
+    {
+      "paragraphId": "meihua-yishu:L0737-L0737",
+      "kind": "术语",
+      "vernacular": "巽的人物类象列长女、秀士、寡妇及山林修道者，是一组不同身份取象。",
+      "terms": [
+        "巽人物",
+        "长女秀士"
+      ],
+      "notes": [],
+      "review": "source-reviewed"
+    },
+    {
+      "paragraphId": "meihua-yishu:L0739-L0739",
+      "kind": "术语",
+      "vernacular": "巽在人事表中象柔和、变化不定、鼓舞以及进退犹豫；“利市三倍”是传统象意词，不能当作实际收益倍数。",
+      "terms": [
+        "巽人事",
+        "进退不果",
+        "利市三倍"
+      ],
+      "notes": [],
+      "review": "source-reviewed"
+    },
+    {
+      "paragraphId": "meihua-yishu:L0741-L0741",
+      "kind": "术语",
+      "vernacular": "巽的身体表把肱、股、气与风疾放在一起，体现长肢与风气的传统配象。",
+      "terms": [
+        "巽身体",
+        "肱股",
+        "气"
+      ],
+      "notes": [
+        "不按卦象诊断风疾。"
+      ],
+      "review": "source-reviewed"
+    },
+    {
+      "paragraphId": "meihua-yishu:L0743-L0743",
+      "kind": "规则候选",
+      "vernacular": "巽的时序列春夏之交、辰巳月日时，以及3、5、8等数的时间。不同时间标签应分别说明取用缘由。",
+      "terms": [
+        "巽时序",
+        "辰巳",
+        "三五八"
+      ],
+      "notes": [],
+      "review": "source-reviewed"
+    },
+    {
+      "paragraphId": "meihua-yishu:L0745-L0745",
+      "kind": "术语",
+      "vernacular": "巽的静物偏香木、绳索、长直竹木物件及工巧器具，形态是辨类的重要线索。",
+      "terms": [
+        "巽静物",
+        "绳长直",
+        "工巧"
+      ],
+      "notes": [],
+      "review": "source-reviewed"
+    },
+    {
+      "paragraphId": "meihua-yishu:L0747-L0747",
+      "kind": "术语",
+      "vernacular": "巽的动物类象包括鸡、鸟类、山林禽鸟和虫，取象时还要结合具体所见种类。",
+      "terms": [
+        "巽动物",
+        "鸡禽虫"
+      ],
+      "notes": [],
+      "review": "source-reviewed"
+    },
+    {
+      "paragraphId": "meihua-yishu:L0749-L0749",
+      "kind": "术语",
+      "vernacular": "巽在屋舍项配东南向住宅、寺观楼台和山林住处。",
+      "terms": [
+        "巽屋舍",
+        "东南寺观"
+      ],
+      "notes": [],
+      "review": "source-reviewed"
+    },
+    {
+      "paragraphId": "meihua-yishu:L0751-L0751",
+      "kind": "规则候选",
+      "vernacular": "巽的家宅表说安稳且利交易，同时区分春占吉、秋占不安，反映木在时令中的强弱取法。",
+      "terms": [
+        "巽家宅",
+        "春秋差别"
+      ],
+      "notes": [],
+      "review": "source-reviewed"
+    },
+    {
+      "paragraphId": "meihua-yishu:L0753-L0753",
+      "kind": "术语",
+      "vernacular": "巽的饮食项取鸡肉、山林食物、蔬果和酸味。",
+      "terms": [
+        "巽饮食",
+        "鸡肉酸果"
+      ],
+      "notes": [],
+      "review": "source-reviewed"
+    },
+    {
+      "paragraphId": "meihua-yishu:L0755-L0755",
+      "kind": "规则候选",
+      "vernacular": "巽的婚姻表偏长女婚事，原文称可成而秋占不利；这里保留对象与季节两层条件。",
+      "terms": [
+        "巽婚姻",
+        "长女",
+        "秋占"
+      ],
+      "notes": [],
+      "review": "source-reviewed"
+    },
+    {
+      "paragraphId": "meihua-yishu:L0757-L0757",
+      "kind": "规则候选",
+      "vernacular": "生产表以巽说易生、头胎女，并列秋季损胎和东南坐向等古占断语。它们是待理解的传统取象，不能用于判断胎儿性别或分娩风险。",
+      "terms": [
+        "巽生产占",
+        "秋占",
+        "东南"
+      ],
+      "notes": [
+        "不作为孕产医学建议。"
+      ],
+      "review": "source-reviewed"
+    },
+    {
+      "paragraphId": "meihua-yishu:L0759-L0759",
+      "kind": "规则候选",
+      "vernacular": "巽的求名类象偏文职、监察风宪一类职事，以及茶果竹木税货和东南任所。所谓风宪是古代监察语境。",
+      "terms": [
+        "巽求名",
+        "风宪",
+        "文职"
+      ],
+      "notes": [],
+      "review": "source-reviewed"
+    },
+    {
+      "paragraphId": "meihua-yishu:L0761-L0761",
+      "kind": "规则候选",
+      "vernacular": "巽的求利表偏山林竹木经营，原文借“利市三倍”表达利市之象，又明确秋占不利。不可把三倍当实测回报。",
+      "terms": [
+        "巽求利",
+        "山林竹木",
+        "秋占"
+      ],
+      "notes": [],
+      "review": "source-reviewed"
+    },
+    {
+      "paragraphId": "meihua-yishu:L0763-L0763",
+      "kind": "规则候选",
+      "vernacular": "交易表以巽取可成但进退不定，并偏山林、木材和茶类货物，不能只取“可成”而删掉犹疑反复的部分。",
+      "terms": [
+        "巽交易",
+        "进退不一"
+      ],
+      "notes": [],
+      "review": "source-reviewed"
+    },
+    {
+      "paragraphId": "meihua-yishu:L0765-L0765",
+      "kind": "规则候选",
+      "vernacular": "巽的谋事表一般说可谋、有财可成，但秋占容易谋多成少，需保留这项限制。",
+      "terms": [
+        "巽谋事",
+        "秋占少遂"
+      ],
+      "notes": [],
+      "review": "source-reviewed"
+    },
+    {
+      "paragraphId": "meihua-yishu:L0767-L0767",
+      "kind": "规则候选",
+      "vernacular": "巽的出行表偏东南与往来之利，同时写秋占不利；方向与时令不是任选其一。",
+      "terms": [
+        "巽出行",
+        "东南",
+        "秋占"
+      ],
+      "notes": [],
+      "review": "source-reviewed"
+    },
+    {
+      "paragraphId": "meihua-yishu:L0769-L0769",
+      "kind": "规则候选",
+      "vernacular": "巽在谒见项指向山林之人、文人和秀士，并给出可见的象意。",
+      "terms": [
+        "巽谒见",
+        "文人秀士"
+      ],
+      "notes": [],
+      "review": "source-reviewed"
+    },
+    {
+      "paragraphId": "meihua-yishu:L0771-L0771",
+      "kind": "规则候选",
+      "vernacular": "巽的占病词汇包括股肱、风疾、肠疾、寒邪与气病，显示本表的传统身体对应范围。",
+      "terms": [
+        "巽疾病象",
+        "股肱",
+        "风气"
+      ],
+      "notes": [
+        "中风等真实医学问题不由本表判断。"
+      ],
+      "review": "source-reviewed"
+    },
+    {
+      "paragraphId": "meihua-yishu:L0773-L0773",
+      "kind": "术语",
+      "vernacular": "巽的姓字类象是角音、草木旁姓氏及5、3、8行位，与震同配角音但数目次序另列。",
+      "terms": [
+        "巽姓字",
+        "角音草木旁"
+      ],
+      "notes": [],
+      "review": "source-reviewed"
+    },
+    {
+      "paragraphId": "meihua-yishu:L0775-L0775",
+      "kind": "规则候选",
+      "vernacular": "官讼表以巽取和解为宜，并提示可能受到风宪监察责问；这是古代诉讼语境的象意。",
+      "terms": [
+        "巽官讼",
+        "和解",
+        "风宪"
+      ],
+      "notes": [],
+      "review": "source-reviewed"
+    },
+    {
+      "paragraphId": "meihua-yishu:L0777-L0777",
+      "kind": "规则候选",
+      "vernacular": "巽的坟墓类象偏东南、山林、多树木的地点，秋季另列不利。",
+      "terms": [
+        "巽坟墓",
+        "东南山林"
+      ],
+      "notes": [],
+      "review": "source-reviewed"
+    },
+    {
+      "paragraphId": "meihua-yishu:L0779-L0779",
+      "kind": "术语",
+      "vernacular": "巽的类象数目为5、3、8，与先天起卦只取5分开。",
+      "terms": [
+        "巽数目",
+        "五三八"
+      ],
+      "notes": [],
+      "review": "source-reviewed"
+    },
+    {
+      "paragraphId": "meihua-yishu:L0781-L0781",
+      "kind": "术语",
+      "vernacular": "巽的后天方位在此为东南。",
+      "terms": [
+        "巽东南"
+      ],
+      "notes": [],
+      "review": "source-reviewed"
+    },
+    {
+      "paragraphId": "meihua-yishu:L0783-L0783",
+      "kind": "术语",
+      "vernacular": "巽在味觉项配酸味。",
+      "terms": [
+        "巽酸味"
+      ],
+      "notes": [],
+      "review": "source-reviewed"
+    },
+    {
+      "paragraphId": "meihua-yishu:L0785-L0785",
+      "kind": "术语",
+      "vernacular": "巽的颜色项除青绿碧外还列洁白，需保留本表多色，而非机械只取木色。",
+      "terms": [
+        "巽五色",
+        "青绿碧白"
+      ],
+      "notes": [],
+      "review": "source-reviewed"
+    },
+    {
+      "paragraphId": "meihua-yishu:L0787-L0787",
+      "kind": "序跋目录",
+      "vernacular": "这里开始坎卦的分项类象。",
+      "terms": [
+        "坎卦表头"
+      ],
+      "notes": [],
+      "review": "source-reviewed"
+    },
+    {
+      "paragraphId": "meihua-yishu:L0789-L0789",
+      "kind": "术语",
+      "vernacular": "坎的先天取卦数为6，五行是水。",
+      "terms": [
+        "坎六",
+        "坎水"
+      ],
+      "notes": [],
+      "review": "source-reviewed"
+    },
+    {
+      "paragraphId": "meihua-yishu:L0791-L0791",
+      "kind": "术语",
+      "vernacular": "坎宫前半列坎、节、屯、既济四卦。",
+      "terms": [
+        "坎宫",
+        "节屯既济"
+      ],
+      "notes": [],
+      "review": "source-reviewed"
+    },
+    {
+      "paragraphId": "meihua-yishu:L0793-L0793",
+      "kind": "术语",
+      "vernacular": "坎宫后半列革、丰、明夷、师。宫属与卦的上下构成是不同资料项，不能因名录就改卦画。",
+      "terms": [
+        "坎宫",
+        "革丰明夷师"
+      ],
+      "notes": [],
+      "review": "source-reviewed"
+    },
+    {
+      "paragraphId": "meihua-yishu:L0795-L0795",
+      "kind": "术语",
+      "vernacular": "坎的天时类象是月、雨、雪、霜、露，偏水湿与夜月。",
+      "terms": [
+        "坎天时",
+        "雨雪霜露"
+      ],
+      "notes": [],
+      "review": "source-reviewed"
+    },
+    {
+      "paragraphId": "meihua-yishu:L0797-L0797",
+      "kind": "术语",
+      "vernacular": "坎的地理对应北方、江湖溪涧、泉井池沼和低湿地，强调实际有水或聚水的场景。",
+      "terms": [
+        "坎地理",
+        "北方水地"
+      ],
+      "notes": [],
+      "review": "source-reviewed"
+    },
+    {
+      "paragraphId": "meihua-yishu:L0799-L0799",
+      "kind": "待核实",
+      "vernacular": "坎的人物表明确列中男、江湖之人和舟人；末项写“資賊”，字义待核，暂不改写成另一身份。",
+      "terms": [
+        "坎人物",
+        "中男",
+        "舟人"
+      ],
+      "notes": [
+        "原文字样“資賊”待影印或异本核对。"
+      ],
+      "review": "source-reviewed"
+    },
+    {
+      "paragraphId": "meihua-yishu:L0801-L0801",
+      "kind": "待核实",
+      "vernacular": "坎的人事象偏险陷、卑下、外表柔和及漂泊反复。中间“內序以利”字句不清，先保留疑点，不凭猜测补成心理性格解释。",
+      "terms": [
+        "坎人事",
+        "险陷漂泊"
+      ],
+      "notes": [
+        "“內序以利”待校，不擅改原文。"
+      ],
+      "review": "source-reviewed"
+    },
+    {
+      "paragraphId": "meihua-yishu:L0803-L0803",
+      "kind": "术语",
+      "vernacular": "坎在身体表中配耳、血和肾，属于水象对应的传统术语。",
+      "terms": [
+        "坎身体",
+        "耳血肾"
+      ],
+      "notes": [
+        "不据此诊断器官或血液疾病。"
+      ],
+      "review": "source-reviewed"
+    },
+    {
+      "paragraphId": "meihua-yishu:L0805-L0805",
+      "kind": "规则候选",
+      "vernacular": "坎的时间类象是冬季十一月、子年月日时及1、6等数的月日。它提供取期线索，不是固定到某个公历日。",
+      "terms": [
+        "坎时序",
+        "子",
+        "一六"
+      ],
+      "notes": [],
+      "review": "source-reviewed"
+    },
+    {
+      "paragraphId": "meihua-yishu:L0807-L0807",
+      "kind": "术语",
+      "vernacular": "坎的静物表列带子带核的物件、弓轮、经矫揉的器物、酒器和水具，偏曲折、含藏与水用器皿。",
+      "terms": [
+        "坎静物",
+        "带核",
+        "酒器水具"
+      ],
+      "notes": [
+        "开头“水带子”句读仍按源本保留。"
+      ],
+      "review": "source-reviewed"
+    },
+    {
+      "paragraphId": "meihua-yishu:L0809-L0809",
+      "kind": "待核实",
+      "vernacular": "坎的屋舍表明确指北向、近水、水阁与江楼。后面“花酒長器”“宅中混地”等字句不清，不能直接补造成完整建筑分类。",
+      "terms": [
+        "坎屋舍",
+        "北向近水"
+      ],
+      "notes": [
+        "保留“花酒長器”“混地”原字待校。"
+      ],
+      "review": "source-reviewed"
+    },
+    {
+      "paragraphId": "meihua-yishu:L0811-L0811",
+      "kind": "术语",
+      "vernacular": "坎在饮食项列猪肉、酒、汤、鱼海味、冷食、宿食、带核或含藏之物等，类别集中在水、冷与含藏。",
+      "terms": [
+        "坎饮食",
+        "鱼酒汤",
+        "冷藏含核"
+      ],
+      "notes": [],
+      "review": "source-reviewed"
+    },
+    {
+      "paragraphId": "meihua-yishu:L0813-L0813",
+      "kind": "规则候选",
+      "vernacular": "坎的家宅表把不安、暗昧和防盗放在一起，这是险陷取象在家宅题里的表达，不证明现实房屋已经有盗情。",
+      "terms": [
+        "坎家宅",
+        "暗昧",
+        "防盗象"
+      ],
+      "notes": [],
+      "review": "source-reviewed"
+    },
+    {
+      "paragraphId": "meihua-yishu:L0815-L0815",
+      "kind": "规则候选",
+      "vernacular": "坎的婚姻表偏中男与北方婚事，但辰戌丑未月另列不可；应将四季土月限制保留。",
+      "terms": [
+        "坎婚姻",
+        "中男北方",
+        "四季土月"
+      ],
+      "notes": [],
+      "review": "source-reviewed"
+    },
+    {
+      "paragraphId": "meihua-yishu:L0817-L0817",
+      "kind": "规则候选",
+      "vernacular": "坎的生产占有难产风险、次胎、中男和北向等旧说，辰戌丑未月另称有损。这里仅解释其传统分类，不能用于判断母婴状况或性别。",
+      "terms": [
+        "坎生产占",
+        "四季土月"
+      ],
+      "notes": [
+        "不得作为孕产风险判断或分娩体位建议。"
+      ],
+      "review": "source-reviewed"
+    },
+    {
+      "paragraphId": "meihua-yishu:L0819-L0819",
+      "kind": "规则候选",
+      "vernacular": "坎的求名类象虽偏北方及鱼盐河泊职事，原文整体仍说艰难、有险；不能只摘有利方向而漏掉困难条件。",
+      "terms": [
+        "坎求名",
+        "鱼盐河泊",
+        "艰难"
+      ],
+      "notes": [],
+      "review": "source-reviewed"
+    },
+    {
+      "paragraphId": "meihua-yishu:L0821-L0821",
+      "kind": "规则候选",
+      "vernacular": "坎的求利表偏水边、鱼盐酒货，同时反复提示失陷、遗失和盗失。开头“有財失”不够清楚，不能补成确定有财或确定无财。",
+      "terms": [
+        "坎求利",
+        "水边财",
+        "失陷"
+      ],
+      "notes": [
+        "“有財失”字句待核，保留其不确定性。"
+      ],
+      "review": "source-reviewed"
+    },
+    {
+      "paragraphId": "meihua-yishu:L0823-L0823",
+      "kind": "规则候选",
+      "vernacular": "坎的交易表一般说不利、易有失陷，却又列水边、鱼盐等相应物类；相关货物不等于交易一定有利。",
+      "terms": [
+        "坎交易",
+        "鱼盐水边",
+        "失陷"
+      ],
+      "notes": [
+        "末句“點水人之交易”含义未核，不据此指定交易对象姓名。"
+      ],
+      "review": "source-reviewed"
+    },
+    {
+      "paragraphId": "meihua-yishu:L0825-L0825",
+      "kind": "规则候选",
+      "vernacular": "坎的谋事表先说不宜、难成，又明确秋冬可谋的例外。程序或白话都要保留这个季节转折。",
+      "terms": [
+        "坎谋事",
+        "秋冬例外"
+      ],
+      "notes": [],
+      "review": "source-reviewed"
+    },
+    {
+      "paragraphId": "meihua-yishu:L0827-L0827",
+      "kind": "规则候选",
+      "vernacular": "坎的出行表区分远行不宜与舟行、北行的取象，并提醒盗失和溺险。它不是现实旅行安全评估。",
+      "terms": [
+        "坎出行",
+        "舟行北行",
+        "险陷"
+      ],
+      "notes": [],
+      "review": "source-reviewed"
+    },
+    {
+      "paragraphId": "meihua-yishu:L0829-L0829",
+      "kind": "规则候选",
+      "vernacular": "坎的谒见表说较难见，但对象类别偏江湖之人或水旁姓氏。姓名偏旁只是古占象意，不能可靠识别人。",
+      "terms": [
+        "坎谒见",
+        "江湖",
+        "水旁姓氏"
+      ],
+      "notes": [],
+      "review": "source-reviewed"
+    },
+    {
+      "paragraphId": "meihua-yishu:L0831-L0831",
+      "kind": "规则候选",
+      "vernacular": "坎的占病表集中在耳、肾、血、寒冷和水泻等传统类别，也列心疾与胃冷；不能凭这些名称推断真实病症。",
+      "terms": [
+        "坎疾病象",
+        "寒水",
+        "耳肾血"
+      ],
+      "notes": [
+        "只保存古占术语，不转成医学建议。"
+      ],
+      "review": "source-reviewed"
+    },
+    {
+      "paragraphId": "meihua-yishu:L0833-L0833",
+      "kind": "规则候选",
+      "vernacular": "坎的官讼表突出不利、隐情、损失和被困的象意，没有给出可以省略现实证据的诉讼程序。",
+      "terms": [
+        "坎官讼",
+        "失陷"
+      ],
+      "notes": [],
+      "review": "source-reviewed"
+    },
+    {
+      "paragraphId": "meihua-yishu:L0835-L0835",
+      "kind": "规则候选",
+      "vernacular": "坎的墓地类象是北向、近水，原文同时说不利葬；不能只据方位符合就推为可用穴地。",
+      "terms": [
+        "坎坟墓",
+        "北向近水"
+      ],
+      "notes": [],
+      "review": "source-reviewed"
+    },
+    {
+      "paragraphId": "meihua-yishu:L0837-L0837",
+      "kind": "术语",
+      "vernacular": "坎在姓字项用羽音、水旁姓氏和1、6行位作配类，和起卦数6的用途分开。",
+      "terms": [
+        "坎姓字",
+        "羽音",
+        "水旁"
+      ],
+      "notes": [],
+      "review": "source-reviewed"
+    },
+    {
+      "paragraphId": "meihua-yishu:L0839-L0839",
+      "kind": "术语",
+      "vernacular": "坎的类象数为1、6。",
+      "terms": [
+        "坎数目",
+        "一六"
+      ],
+      "notes": [],
+      "review": "source-reviewed"
+    },
+    {
+      "paragraphId": "meihua-yishu:L0841-L0841",
+      "kind": "术语",
+      "vernacular": "坎在方位表中对应北方。",
+      "terms": [
+        "坎北方"
+      ],
+      "notes": [],
+      "review": "source-reviewed"
+    },
+    {
+      "paragraphId": "meihua-yishu:L0843-L0843",
+      "kind": "术语",
+      "vernacular": "坎在味觉项同时列咸与酸，保留这份表的双味说法。",
+      "terms": [
+        "坎五味",
+        "咸酸"
+      ],
+      "notes": [],
+      "review": "source-reviewed"
+    },
+    {
+      "paragraphId": "meihua-yishu:L0845-L0845",
+      "kind": "术语",
+      "vernacular": "坎的颜色类象为黑。",
+      "terms": [
+        "坎黑色"
+      ],
+      "notes": [],
+      "review": "source-reviewed"
+    },
+    {
+      "paragraphId": "meihua-yishu:L0847-L0847",
+      "kind": "序跋目录",
+      "vernacular": "此处转入离卦分项表。",
+      "terms": [
+        "离卦表头"
+      ],
+      "notes": [],
+      "review": "source-reviewed"
+    },
+    {
+      "paragraphId": "meihua-yishu:L0849-L0849",
+      "kind": "术语",
+      "vernacular": "离的先天数为3，五行属火。",
+      "terms": [
+        "离三",
+        "离火"
+      ],
+      "notes": [],
+      "review": "source-reviewed"
+    },
+    {
+      "paragraphId": "meihua-yishu:L0851-L0851",
+      "kind": "待核实",
+      "vernacular": "离宫前半列离、旅、鼎、未济；电子文把“未济”写作“末濟”，应标明通行卦名对应而保留原字。",
+      "terms": [
+        "离宫",
+        "旅鼎未济"
+      ],
+      "notes": [
+        "“末濟”的末字待校。"
+      ],
+      "review": "source-reviewed"
+    },
+    {
+      "paragraphId": "meihua-yishu:L0853-L0853",
+      "kind": "术语",
+      "vernacular": "离宫后半列蒙、涣、讼、同人，是宫属名录，不是互卦或变卦的一组结果。",
+      "terms": [
+        "离宫",
+        "蒙涣讼同人"
+      ],
+      "notes": [],
+      "review": "source-reviewed"
+    },
+    {
+      "paragraphId": "meihua-yishu:L0855-L0855",
+      "kind": "术语",
+      "vernacular": "离的天时象包括日光、闪电、虹霓和彩霞，偏光明与显色。",
+      "terms": [
+        "离天时",
+        "日电虹霞"
+      ],
+      "notes": [],
+      "review": "source-reviewed"
+    },
+    {
+      "paragraphId": "meihua-yishu:L0857-L0857",
+      "kind": "术语",
+      "vernacular": "离的地理取南方、向阳、高燥之地和窑灶炉冶处，强调火、燥与光照环境。",
+      "terms": [
+        "离地理",
+        "南方燥地",
+        "炉冶"
+      ],
+      "notes": [],
+      "review": "source-reviewed"
+    },
+    {
+      "paragraphId": "meihua-yishu:L0859-L0859",
+      "kind": "术语",
+      "vernacular": "离的人物类象列中女、文人、大腹者、目疾者及披甲之士，须按所问类别分别取象。",
+      "terms": [
+        "离人物",
+        "中女文人",
+        "甲胄"
+      ],
+      "notes": [],
+      "review": "source-reviewed"
+    },
+    {
+      "paragraphId": "meihua-yishu:L0861-L0861",
+      "kind": "术语",
+      "vernacular": "离在人事项配文画、才学、文书和虚心相见，借显明与文采组织象意。",
+      "terms": [
+        "离人事",
+        "文采文书"
+      ],
+      "notes": [],
+      "review": "source-reviewed"
+    },
+    {
+      "paragraphId": "meihua-yishu:L0863-L0863",
+      "kind": "术语",
+      "vernacular": "离的身体对应为目、心和上焦，属于传统火象身体分类。",
+      "terms": [
+        "离身体",
+        "目心上焦"
+      ],
+      "notes": [],
+      "review": "source-reviewed"
+    },
+    {
+      "paragraphId": "meihua-yishu:L0865-L0865",
+      "kind": "规则候选",
+      "vernacular": "离的时间类象是夏季五月、午火年月日时及3、2、7等日数；选择应期时须说明采用哪一层。",
+      "terms": [
+        "离时序",
+        "午",
+        "三二七"
+      ],
+      "notes": [],
+      "review": "source-reviewed"
+    },
+    {
+      "paragraphId": "meihua-yishu:L0867-L0867",
+      "kind": "术语",
+      "vernacular": "离的静物取火、书文、甲胄兵器以及干燥赤色之物；“槁衣”一词按原字保留，不擅自改为另一物件。",
+      "terms": [
+        "离静物",
+        "文书兵器",
+        "干燥"
+      ],
+      "notes": [
+        "“槁衣”待版本核对。"
+      ],
+      "review": "source-reviewed"
+    },
+    {
+      "paragraphId": "meihua-yishu:L0869-L0869",
+      "kind": "术语",
+      "vernacular": "离的动物类象列雉和龟鳖蟹螺蚌，后几类共同具有外壳形态。",
+      "terms": [
+        "离动物",
+        "雉",
+        "有壳水族"
+      ],
+      "notes": [],
+      "review": "source-reviewed"
+    },
+    {
+      "paragraphId": "meihua-yishu:L0871-L0871",
+      "kind": "术语",
+      "vernacular": "离的屋舍象是南向、明亮有窗、内部空敞的住处，重点在阳明与中虚。",
+      "terms": [
+        "离屋舍",
+        "南向明窗",
+        "虚室"
+      ],
+      "notes": [],
+      "review": "source-reviewed"
+    },
+    {
+      "paragraphId": "meihua-yishu:L0873-L0873",
+      "kind": "规则候选",
+      "vernacular": "离的家宅表一般说安稳平善，但冬占不安；若离火克体，又另取火灾象。季节和克体是不同条件，不能仅见离就断火灾。",
+      "terms": [
+        "离家宅",
+        "冬占",
+        "克体火象"
+      ],
+      "notes": [],
+      "review": "source-reviewed"
+    },
+    {
+      "paragraphId": "meihua-yishu:L0875-L0875",
+      "kind": "术语",
+      "vernacular": "离的饮食类象为雉肉、煎炒烧烤、干脯和热肉，取火烹与干热之意。",
+      "terms": [
+        "离饮食",
+        "烧炙干脯"
+      ],
+      "notes": [],
+      "review": "source-reviewed"
+    },
+    {
+      "paragraphId": "meihua-yishu:L0877-L0877",
+      "kind": "规则候选",
+      "vernacular": "离的婚姻表同时列不成、中女适宜、夏可成和冬不利，必须结合对象及时令分支，不能裁成一句统一吉凶。",
+      "terms": [
+        "离婚姻",
+        "中女",
+        "夏冬差别"
+      ],
+      "notes": [],
+      "review": "source-reviewed"
+    },
+    {
+      "paragraphId": "meihua-yishu:L0879-L0879",
+      "kind": "规则候选",
+      "vernacular": "生产表以离列易生、中女、南向，另有冬占有损的说法。这些是古书配象，并不提供现实孕产或胎儿性别判断。",
+      "terms": [
+        "离生产占",
+        "冬占",
+        "南向"
+      ],
+      "notes": [
+        "不作为孕产医学建议。"
+      ],
+      "review": "source-reviewed"
+    },
+    {
+      "paragraphId": "meihua-yishu:L0881-L0881",
+      "kind": "规则候选",
+      "vernacular": "离的求名类象偏南方文官、文书与炉冶场所职事，反映文采和火象的古代职位分类。",
+      "terms": [
+        "离求名",
+        "文官炉冶"
+      ],
+      "notes": [],
+      "review": "source-reviewed"
+    },
+    {
+      "paragraphId": "meihua-yishu:L0883-L0883",
+      "kind": "规则候选",
+      "vernacular": "离的求利表把财物与南方、文书联系起来，同时写冬季可能有失；保留时令条件而不只说有财。",
+      "terms": [
+        "离求利",
+        "文书之财",
+        "冬占"
+      ],
+      "notes": [],
+      "review": "source-reviewed"
+    },
+    {
+      "paragraphId": "meihua-yishu:L0885-L0885",
+      "kind": "规则候选",
+      "vernacular": "离在谋事项偏文书之事，原文说可谋；属于特定卦象题材的判断，不是所有计划都能成功。",
+      "terms": [
+        "离谋事",
+        "文书"
+      ],
+      "notes": [],
+      "review": "source-reviewed"
+    },
+    {
+      "paragraphId": "meihua-yishu:L0887-L0887",
+      "kind": "规则候选",
+      "vernacular": "离的交易取象强调有文书的交易和可成之意，适合与书契材料一起理解。",
+      "terms": [
+        "离交易",
+        "文书书契"
+      ],
+      "notes": [],
+      "review": "source-reviewed"
+    },
+    {
+      "paragraphId": "meihua-yishu:L0889-L0889",
+      "kind": "规则候选",
+      "vernacular": "离的出行表偏南方和为文书事务而出行，但冬季不宜，也不宜舟行。这些限制与通常可行的判断一并保留。",
+      "terms": [
+        "离出行",
+        "南方文书",
+        "冬季舟行限制"
+      ],
+      "notes": [],
+      "review": "source-reviewed"
+    },
+    {
+      "paragraphId": "meihua-yishu:L0891-L0891",
+      "kind": "规则候选",
+      "vernacular": "离的谒见表偏南方人及处理文书考案的人，秋季对象说明与冬季不顺的条件分别记录。",
+      "terms": [
+        "离谒见",
+        "文书考案",
+        "冬占"
+      ],
+      "notes": [],
+      "review": "source-reviewed"
+    },
+    {
+      "paragraphId": "meihua-yishu:L0893-L0893",
+      "kind": "规则候选",
+      "vernacular": "离的官讼表偏争议容易分明、文书有动和诉讼消散，是把明辨之象用于官讼题。",
+      "terms": [
+        "离官讼",
+        "文书明辨"
+      ],
+      "notes": [],
+      "review": "source-reviewed"
+    },
+    {
+      "paragraphId": "meihua-yishu:L0895-L0895",
+      "kind": "规则候选",
+      "vernacular": "离的占病类象列目、心、上焦热病，夏季又列暑热和时疫，是传统火象疾病词表。",
+      "terms": [
+        "离疾病象",
+        "上焦热",
+        "暑疫"
+      ],
+      "notes": [
+        "不能用于诊断、判断传染病或取代医疗信息。"
+      ],
+      "review": "source-reviewed"
+    },
+    {
+      "paragraphId": "meihua-yishu:L0897-L0897",
+      "kind": "规则候选",
+      "vernacular": "离的坟墓类象指南向、无树木、向阳的穴位，并分夏占出文人、冬占不利；这里的出文人属于古断语而非可验证保证。",
+      "terms": [
+        "离坟墓",
+        "南向阳穴",
+        "夏冬"
+      ],
+      "notes": [],
+      "review": "source-reviewed"
+    },
+    {
+      "paragraphId": "meihua-yishu:L0899-L0899",
+      "kind": "待核实",
+      "vernacular": "离的姓字项明确列徵音与3、2、7行位；中间“立人旁士姓氏”字句待校，不自造对应姓氏名单。",
+      "terms": [
+        "离姓字",
+        "徵音",
+        "三二七"
+      ],
+      "notes": [
+        "“立人旁士姓氏”按电子原字保留，待同版核对。"
+      ],
+      "review": "source-reviewed"
+    },
+    {
+      "paragraphId": "meihua-yishu:L0901-L0901",
+      "kind": "术语",
+      "vernacular": "离的类象数目为3、2、7，和先天离3分别用于不同环节。",
+      "terms": [
+        "离数目",
+        "三二七"
+      ],
+      "notes": [],
+      "review": "source-reviewed"
+    },
+    {
+      "paragraphId": "meihua-yishu:L0903-L0903",
+      "kind": "术语",
+      "vernacular": "离的方位对应南方。",
+      "terms": [
+        "离南方"
+      ],
+      "notes": [],
+      "review": "source-reviewed"
+    },
+    {
+      "paragraphId": "meihua-yishu:L0905-L0905",
+      "kind": "术语",
+      "vernacular": "离的颜色类象为赤、紫、红，集中在明亮暖色。",
+      "terms": [
+        "离五色",
+        "赤紫红"
+      ],
+      "notes": [],
+      "review": "source-reviewed"
+    },
+    {
+      "paragraphId": "meihua-yishu:L0907-L0907",
+      "kind": "术语",
+      "vernacular": "离在味觉项配苦味。",
+      "terms": [
+        "离苦味"
+      ],
+      "notes": [],
+      "review": "source-reviewed"
+    },
+    {
+      "paragraphId": "meihua-yishu:L0909-L0909",
+      "kind": "序跋目录",
+      "vernacular": "这里开始艮卦的类象与问事分项表。",
+      "terms": [
+        "艮卦表头"
+      ],
+      "notes": [],
+      "review": "source-reviewed"
+    },
+    {
+      "paragraphId": "meihua-yishu:L0911-L0911",
+      "kind": "术语",
+      "vernacular": "艮的先天取数为7，五行归土。",
+      "terms": [
+        "艮七",
+        "艮土"
+      ],
+      "notes": [],
+      "review": "source-reviewed"
+    },
+    {
+      "paragraphId": "meihua-yishu:L0913-L0913",
+      "kind": "术语",
+      "vernacular": "艮宫前半列艮、贲、大畜、损。",
+      "terms": [
+        "艮宫",
+        "贲大畜损"
+      ],
+      "notes": [],
+      "review": "source-reviewed"
+    },
+    {
+      "paragraphId": "meihua-yishu:L0915-L0915",
+      "kind": "术语",
+      "vernacular": "艮宫后半列睽、履、中孚、渐，与前行构成完整宫属名录。",
+      "terms": [
+        "艮宫",
+        "睽履中孚渐"
+      ],
+      "notes": [],
+      "review": "source-reviewed"
     }
   ]
 }
