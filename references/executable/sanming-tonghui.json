@@ -7,7 +7,7 @@
     "fulltext": "sources/fulltext/bazi/sanming-tonghui/fulltext.md"
   },
   "verified": false,
-  "note": "接入天乙、驿马、咸池/桃花、华盖、将星、孤辰、寡宿、劫煞、亡神、灾煞、天喜、金舆、羊刃、飞刃、禄神落柱。天喜原文按四季，本盘按年支三合，只分条不覆盖。金舆禄前二辰与马前二辰不是同一套。羊刃按禄前一辰，子平阴干无刃只分条不覆盖。落柱不是欢欣、阴福、性情、倒戈或爵禄。verified 保持 false。",
+  "note": "接入天乙、驿马、咸池/桃花、华盖、将星、孤辰、寡宿、劫煞、亡神、灾煞、天喜、金舆、羊刃、飞刃、禄神、天德、月德落柱。天喜原文按四季，本盘按年支三合，只分条不覆盖。金舆禄前二辰与马前二辰不是同一套。羊刃按禄前一辰，子平阴干无刃只分条不覆盖。落柱不是欢欣、阴福、性情、倒戈、爵禄、无险或福寿。verified 保持 false。",
   "rules": [
     {
       "id": "SMTH-E-01",
@@ -277,6 +277,42 @@
       "rescue": "unimplemented",
       "vernacular": "{pillar}见禄神。这是落柱标签，不是爵禄结论。",
       "implementation_assumption": "现行表按日干临官支取禄神。未按纳音破禄或建禄月令格改写。",
+      "verified": false
+    },
+    {
+      "id": "SMTH-E-16",
+      "art": "bazi",
+      "theme": "天德贵人落柱",
+      "school": "三命通会",
+      "paragraph_id": "sanming-tonghui:L3655-L3658",
+      "quote": "天德宜月將相扶正月丁喜亥將忌見癸傷丁二月坤宜戌將忌寅破三月壬宜酉將忌戊傷四月辛宜申將忌丁傷五月乾宜未將忌巳破六月甲宜午將忌庚傷七月癸宜已將忌己傷八月艮宜辰將忌申破九月丙宜卯將忌壬傷十月乙宜寅將忌辛傷十一月巽宜丑將忌亥破十二月庚宜",
+      "page": "shensha",
+      "required_facts": ["month.zhi", "pillars.gan", "pillars.zhi"],
+      "when": { "exists": "month.zhi" },
+      "satisfy_when": "月支对应的天德干或支出现在该柱：只记录落柱名称天德贵人",
+      "fail_when": "该柱干支未见该月天德",
+      "unknown_when": "月将相扶、伤破不成德合、临日主无险未论完：不得输出无险或科甲断语",
+      "rescue": "unimplemented",
+      "vernacular": "{pillar}见天德贵人。这是落柱标签，不是无险结论。",
+      "implementation_assumption": "现行表按月支取天德（正月丁、二月申、三月壬等），柱干或柱支命中即标。未按月将或伤破改写。",
+      "verified": false
+    },
+    {
+      "id": "SMTH-E-17",
+      "art": "bazi",
+      "theme": "月德贵人落柱",
+      "school": "三命通会",
+      "paragraph_id": "sanming-tonghui:L3659-L3659",
+      "quote": "月德寅午戌月丙合辛忌壬傷亥卯未月甲合巳忌庚傷申子辰月壬合丁忌戊傷巳酉丑月庚合乙忌丙傷若犯此忌不成德合矣",
+      "page": "shensha",
+      "required_facts": ["month.zhi", "pillars.gan"],
+      "when": { "exists": "month.zhi" },
+      "satisfy_when": "月支三合局对应的月德干出现在该柱天干：只记录落柱名称月德贵人",
+      "fail_when": "该柱天干未见该月月德干",
+      "unknown_when": "德合与伤破、临日主无险、将星名登相府未论完：不得输出福寿或相府断语",
+      "rescue": "unimplemented",
+      "vernacular": "{pillar}见月德贵人。这是落柱标签，不是福寿结论。",
+      "implementation_assumption": "现行表按月支三合取月德干（寅午戌丙、申子辰壬、巳酉丑庚、亥卯未甲）。未按合神或伤破改写。",
       "verified": false
     }
   ]
