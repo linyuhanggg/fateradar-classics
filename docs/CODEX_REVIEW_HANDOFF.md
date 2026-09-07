@@ -6,7 +6,7 @@
 - 分支：`codex/grok-full-library`
 - 基准：`origin/main` @ `49d3efe`（data: complete oversize facsimile release）
 - 施工时未改 `/Users/sync/code/fateradar-classics` 主工作区，也未覆盖其他工作树
-- 最终提交：`a1276292365d051649a9463dfecd659397b9a520`
+- 最终提交：`7df3614590070834b18258dd8e8c9359ea8a5b5c`
 - 推送：仅推自己的 `codex/grok-full-library`，不合 main、不强推
 
 ## 2. 对照总方案的完成与未完成
@@ -16,8 +16,8 @@
 - 全库真实盘点：catalog 55 包、磁盘 55 包、全文 54、排除 4
 - 稳定段落 ID：`slug:Lxxxx-Lyyyy`
 - 去向：engine 21 / knowledge 33 / excluded_copyright 1（《奇门法窍》）
-- 可执行规则 62 条，全部 `verified: false`
-  - 八字：ZPR-E-01..19、QTB-E-01、SMTH-E-01 天乙落柱、SMTH-E-02 驿马落柱、SMTH-E-03 咸池桃花落柱、SMTH-E-04 华盖落柱、SMTH-E-05 将星落柱、SMTH-E-06 孤辰落柱、SMTH-E-07 寡宿落柱、SMTH-E-08 劫煞落柱、SMTH-E-09 亡神落柱、SMTH-E-10 灾煞落柱、SMTH-E-11 天喜来源分条、SMTH-E-12 金舆落柱、SMTH-E-13 羊刃落柱、SMTH-E-14 飞刃落柱、SMTH-E-15 禄神落柱、SMTH-E-16 天德落柱、SMTH-E-17 月德落柱、SMTH-E-18 文昌来源分条、SMTH-E-19 学堂来源分条、SMTH-E-20 太极落柱、SFTK-E-01 流霞落柱、SFTK-E-02 红艳落柱、GTJ-E-01 国印落柱、XLKY-E-01 天医来源分条
+- 可执行规则 65 条，全部 `verified: false`
+  - 八字：ZPR-E-01..22、QTB-E-01、SMTH-E-01 天乙落柱、SMTH-E-02 驿马落柱、SMTH-E-03 咸池桃花落柱、SMTH-E-04 华盖落柱、SMTH-E-05 将星落柱、SMTH-E-06 孤辰落柱、SMTH-E-07 寡宿落柱、SMTH-E-08 劫煞落柱、SMTH-E-09 亡神落柱、SMTH-E-10 灾煞落柱、SMTH-E-11 天喜来源分条、SMTH-E-12 金舆落柱、SMTH-E-13 羊刃落柱、SMTH-E-14 飞刃落柱、SMTH-E-15 禄神落柱、SMTH-E-16 天德落柱、SMTH-E-17 月德落柱、SMTH-E-18 文昌来源分条、SMTH-E-19 学堂来源分条、SMTH-E-20 太极落柱、SFTK-E-01 流霞落柱、SFTK-E-02 红艳落柱、GTJ-E-01 国印落柱、XLKY-E-01 天医来源分条
   - 紫微：ZWD-E-01 生年干四化落宫
   - 六爻：ZSB-E-01 用神旬空、ZSB-E-02 用神月破
   - 梅花：MHY-E-01 体用生克方向
@@ -35,7 +35,7 @@
 - 本仓没有规则解释器；产品仓实现等价条件
 - 浏览器页面验收未做（本仓无页面）
 - 七政五星宿度旺宫、戌方入庙未按原文逐步程序接入运行；只与现行黄道本宫分条
-- 通根仍按藏干本气中气余气分档，未按阳干逢库有根、阴干逢库无用覆盖；印根只记透藏，根深身强未论，仍不能成格/破格
+- 通根仍按藏干本气中气余气分档，未按阳干逢库有根、阴干逢库无用覆盖；印根、伤官旺、财有根只记透藏；身强不按旺衰分层覆盖，仍不能成格/破格
 - 神煞除已接入落柱的条目外仍有名单未抽；天喜未按四季覆盖；阴干羊刃未按子平无刃覆盖；文昌学堂只分条未改表；戊己太极未补申；流霞未按星学大成辛逐虎覆盖；红艳甲乙未补申；国印未把三命天印并入；天医未按正月起戌或月建前二覆盖
 
 ## 3. 全库真实统计
@@ -51,7 +51,7 @@
 | 稳定段落 | 53640 |
 | 其中疑文段 | 1261 |
 | 旧 rules.yaml 候选 | 1356，verified=0 |
-| 本轮可执行规则 | 62 |
+| 本轮可执行规则 | 65 |
 | 知识库包 | 33 |
 
 清单位置：
@@ -88,8 +88,8 @@
 - `references/executable/shenfeng-tongkao.json`：SFTK-E-01、SFTK-E-02
 - `references/executable/guotian-jing.json`：GTJ-E-01
 - `references/executable/xingli-kaoyuan.json`：XLKY-E-01
-- `references/executable/ziping-zhenquan.json`：ZPR-E-18 通根阳库分条、ZPR-E-19 印根透藏
-- 盘点脚本重跑，可执行规则 60→62
+- `references/executable/ziping-zhenquan.json`：ZPR-E-18 通根阳库分条、ZPR-E-19 印根透藏、ZPR-E-20 身强来源分条、ZPR-E-21 伤官旺透藏、ZPR-E-22 财有根透藏
+- 盘点脚本重跑，可执行规则 62→65
 - 不改 `sources/` 原文
 
 ## 5. 复现命令与检查结果
@@ -104,7 +104,7 @@ python3 -c "import json; d=json.load(open('references/inventory/library-inventor
 
 ```
 catalog_ready_packs 55, fulltext_files 54, paragraphs 53640,
-executable_rules_in_this_commit 62, knowledge packs 33
+executable_rules_in_this_commit 65, knowledge packs 33
 verified_rules 0
 faqiao destination=excluded_copyright
 ```
@@ -131,7 +131,7 @@ faqiao destination=excluded_copyright
 《果天经》`guotian-jing:L900-L911` 国印禄前九位：只记落柱，不是官印。三命天印未并入。
 《星历考原》`xingli-kaoyuan:L668-L670` 天医正月起戌：与本盘月支前一位、六壬月建前二分条，不是医药。
 
-《子平真诠》`ziping-zhenquan:L0192-L0192` 通根：阳干逢库有根、阴干逢库无用、投库必冲为俗书之谬。本盘仍按藏干本气中气余气分档，墓库须冲开不覆盖。`L1223-L1223` 印根只记透藏，本气不是已经根深，不成格。
+《子平真诠》`ziping-zhenquan:L0192-L0192` 通根：阳干逢库有根、阴干逢库无用、投库必冲为俗书之谬。本盘仍按藏干本气中气余气分档，墓库须冲开不覆盖。`L1223-L1223` 印根只记透藏，本气不是已经根深。`L0365-L0368` 身强与旺衰四层分条。`L0369` 伤官旺、`L1217` 财有根只记透藏。不成格。
 
 ## 7. Web 字段映射
 
@@ -165,7 +165,8 @@ faqiao destination=excluded_copyright
 - 国印按日干或年干禄前九位；不把三命天印并入，也不按身命守照改写
 - 天医本盘按月支前一位；不按择日正月起戌或六壬月建前二覆盖
 - 通根本盘按藏干本气中气余气；不按阳干逢库有根、阴干逢库无用覆盖档位
-- 印根只记透干本气中气余气；不把本气写成已经根深
+- 印根、伤官旺、财有根只记透干本气中气余气；不把本气写成已经根深、已经旺或已经有根
+- 身强不按得令得地得势分层覆盖
 - 14 套影印 `not_confirmed`，疑文 1261 段未校勘
 - 成格/破格力量未论，不得确定
 
