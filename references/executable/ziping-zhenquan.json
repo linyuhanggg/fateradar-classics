@@ -7,7 +7,7 @@
     "fulltext": "sources/fulltext/bazi/ziping-zhenquan/fulltext.md"
   },
   "verified": false,
-  "note": "月令取格、顺逆、伤官见官、透印、金水例外、刑冲破害记录、组外会合、合煞、食化劫、枭护食、印逢财劫合、官逢财印、伤官生财佩印带煞、财逢煞制合、煞逢食制、无刑冲破害记录、通根阳库分条、印根透藏、身强来源分条、伤官旺透藏、财有根透藏。破害不套会合，通根不按阳库覆盖，印根不是已经根深，伤官旺不是已经旺，财有根不是已经有根，身强不按旺衰分层覆盖，力量未论，不成格不破格。verified 保持 false。",
+  "note": "月令取格、顺逆、伤官见官、透印、金水例外、刑冲破害记录、组外会合、合煞、食化劫、枭护食、印逢财劫合、官逢财印、伤官生财佩印带煞、财逢煞制合、煞逢食制、无刑冲破害记录、通根阳库分条、印根透藏、身强来源分条、伤官旺透藏、财有根透藏、财印位置分条。破害不套会合，通根不按阳库覆盖，印根不是已经根深，伤官旺不是已经旺，财有根不是已经有根，身强不按旺衰分层覆盖，有隔不是已经位置妥贴，力量未论，不成格不破格。verified 保持 false。",
   "rules": [
     {
       "id": "ZPR-E-01",
@@ -408,6 +408,24 @@
       "rescue": "unimplemented",
       "vernacular": "财有根只记透藏：{cai_positions}。本气中气余气不是已经有根，也不等于成格。",
       "implementation_assumption": "财计正财偏财。不把本气映射成有根。身强见 ZPR-E-20。completion 仍为信息不足。",
+      "verified": false
+    },
+    {
+      "id": "ZPR-E-23",
+      "art": "bazi",
+      "theme": "财印位置分条",
+      "school": "子平真诠",
+      "paragraph_id": "ziping-zhenquan:L0365-L0365",
+      "quote": "財生官旺，或財逢食生而身强帶比，或財格透印而位置妥貼，兩不相尅，財格成也；",
+      "page": "geju",
+      "required_facts": ["tenGodFacts.正财.layer", "tenGodFacts.偏财.layer", "tenGodFacts.正印.layer", "tenGodFacts.偏印.layer", "tenGodFacts.pillarIndex"],
+      "when": { "exists": "day.gan" },
+      "satisfy_when": "财印透干已记录是否相并或有隔，并标明位置妥贴未论",
+      "fail_when": "无从记录天干",
+      "unknown_when": "位置妥贴、两不相尅、干头两清未逐步量化；有隔不是已经位置妥贴，相并不是已经两不相能，不得输出成格",
+      "rescue": "unimplemented",
+      "vernacular": "财印位置只记透干相并或有隔。有隔不是已经位置妥贴，也不等于成格。",
+      "implementation_assumption": "柱距按年-月-日-时直线，年时不算相邻。隔以它干只记柱距，不把有隔覆盖成两不相碍，也不把相并覆盖成两不相能。completion 仍为信息不足。",
       "verified": false
     }
   ]
