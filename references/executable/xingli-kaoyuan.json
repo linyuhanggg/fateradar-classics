@@ -1,0 +1,31 @@
+{
+  "schema_version": "fateradar-executable-v1",
+  "book": {
+    "slug": "xingli-kaoyuan",
+    "system": "selection",
+    "title": "星历考原",
+    "fulltext": "sources/fulltext/selection/xingli-kaoyuan/fulltext.md"
+  },
+  "verified": false,
+  "note": "八字天医来源分条。择日正月起戌顺行、六壬月建前二、本盘月支前一位不是同一套逐步程序，不覆盖。天医不是医药结论。verified 保持 false。",
+  "rules": [
+    {
+      "id": "XLKY-E-01",
+      "art": "bazi",
+      "theme": "天医来源分条",
+      "school": "星历考原",
+      "paragraph_id": "xingli-kaoyuan:L668-L670",
+      "quote": "天醫者天之巫醫其日宜請藥避病尋巫禱祀○厯例曰天醫者正月起戌順行十二辰○曹震圭曰天醫者三合後辰能使萬物死而復生損而復益如正月建寅三合為寅午戌而戌為寅之後辰是也",
+      "page": "shensha",
+      "required_facts": ["month.zhi", "pillars.zhi"],
+      "when": { "exists": "month.zhi" },
+      "satisfy_when": "已按本盘月支前一位标出天医落柱，并标明与择日正月起戌、六壬月建前二不是同一套",
+      "fail_when": "四柱地支未见本盘月支前一位",
+      "unknown_when": "原文正月寅见戌；《大六壬大全》月建前二便是天医；本盘月支后退一位：不是同一套逐步程序，不得输出医药断语",
+      "rescue": "unimplemented",
+      "vernacular": "{pillar}见天医。这是本取法的落柱标签，不是已经医药，也不是已经按正月起戌或月建前二取天医。",
+      "implementation_assumption": "现行表按月支后退一位取天医。未按正月起戌顺行或月建前二覆盖。",
+      "verified": false
+    }
+  ]
+}
