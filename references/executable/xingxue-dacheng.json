@@ -35,8 +35,8 @@
         "exists": "ascendant.sign"
       },
       "satisfy_when": "已记录本盘上升点宫度，并标明算法为现代黄道与东地平交点",
-      "fail_when": "无出生地经纬度，无法取上升点",
-      "unknown_when": "原文卯上立命与上升点不是同一套逐步程序：只分条，不覆盖",
+      "fail_when": "无独立的不满足分支：本条记录有效输入上的取法或来源，不把缺少输入当作反例",
+      "unknown_when": "无出生地经纬度，无法取上升点；原文卯上立命与上升点不是同一套逐步程序：只分条，不覆盖",
       "rescue": "unimplemented",
       "vernacular": "本盘命宫取上升点{sign}。这是现代天文位置，不是已经按原文卯上立命。",
       "implementation_assumption": "七政用 Astronomy Engine 真黄经。庙旺落陷是位置分类，不是个人优劣评分。四余含近似。",
@@ -69,8 +69,8 @@
         "exists": "star.palace"
       },
       "satisfy_when": "已按本盘取法给七政标出入庙、落陷或平宫，并标明与原文宿度旺宫不是同一套",
-      "fail_when": "七政未起出，无法标庙陷",
-      "unknown_when": "原文另有娄胃亢斗翼室鬼宿度旺宫，又有日月戌方入庙：与本盘黄道本宫/对宫不是同一套逐步程序，不得输出富贵或贫乏",
+      "fail_when": "无独立的不满足分支：本条记录有效输入上的取法或来源，不把缺少输入当作反例",
+      "unknown_when": "七政未起出，无法标庙陷；原文另有娄胃亢斗翼室鬼宿度旺宫，又有日月戌方入庙：与本盘黄道本宫/对宫不是同一套逐步程序，不得输出富贵或贫乏",
       "rescue": "unimplemented",
       "vernacular": "{star}在{palace}，标签为{dignity}。这是本取法的位置分类，不是已经得福或已经贫乏。",
       "implementation_assumption": "现行入庙用黄道本宫（太阳狮子等），落陷用对宫。未按二十八宿旺宫，也未按戌方入庙歌覆盖。",
@@ -104,8 +104,8 @@
         "exists": "sun.palace"
       },
       "satisfy_when": "已记录本盘太阳、太阴的黄道宫度与宿名",
-      "fail_when": "出生时刻无法起七政",
-      "unknown_when": "原文旺处举白羊金牛与娄胃宿度例，本盘用真黄经落宫：不得把落宫写成已经非凡",
+      "fail_when": "无独立的不满足分支：本条记录有效输入上的取法或来源，不把缺少输入当作反例",
+      "unknown_when": "出生时刻无法起七政；原文旺处举白羊金牛与娄胃宿度例，本盘用真黄经落宫：不得把落宫写成已经非凡",
       "rescue": "unimplemented",
       "vernacular": "太阳在{sun_palace}{sun_mansion}，太阴在{moon_palace}{moon_mansion}。这是位置，不是已经非凡。",
       "implementation_assumption": "日月黄经取 Astronomy Engine。宿名按距星岁差近似，接近宿界时需要更精细对照。",

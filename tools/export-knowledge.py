@@ -68,7 +68,10 @@ def main():
     revision = subprocess.check_output(["git", "rev-parse", "HEAD"], cwd=ROOT, text=True).strip()
     data = build_export(ROOT, revision)
     args.output.parent.mkdir(parents=True, exist_ok=True)
-    args.output.write_text(json.dumps(data, ensure_ascii=False, separators=(",", ":")) + "\n")
+    # One paragraph per line keeps regenerated data reviewable in Git.
+    header = {key: value for key, value in data.items() if key != "paragraphs"}
+    body = ",\n".join(json.dumps(row, ensure_ascii=False, separators=(",", ":")) for row in data["paragraphs"])
+    args.output.write_text(json.dumps(header, ensure_ascii=False, separators=(",", ":"))[:-1] + ',"paragraphs":[\n' + body + '\n]}\n')
     print(json.dumps({"books": len(data["books"]), "paragraphs": len(data["paragraphs"]),
                       "source_reviewed": sum(p["review"] == "source-reviewed" for p in data["paragraphs"]),
                       "output": str(args.output)}, ensure_ascii=False))

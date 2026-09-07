@@ -36,8 +36,8 @@
         "exists": "month.zhi"
       },
       "satisfy_when": "已取月令藏干，并记录是否透于年/月/时干",
-      "fail_when": "无月令",
-      "unknown_when": "月令藏干表缺该支",
+      "fail_when": "无独立的不满足分支：本条记录有效输入上的取法或来源，不把缺少输入当作反例",
+      "unknown_when": "无月令；月令藏干表缺该支",
       "rescue": "unimplemented",
       "vernacular": "本盘月令{month_zhi}，{from}。这只是取格入口，还不是成格。",
       "implementation_assumption": "透干优先，否则用本气。建禄月劫须另取，见 ZPR-E-03。",
