@@ -4,6 +4,7 @@ on:
     paths:
       - "references/**"
       - "sources/fulltext/**"
+      - "sources/normalized/**"
       - "sources/excerpts/**"
       - "tools/**"
       - ".github/workflows/validate-rules.yml"
@@ -19,6 +20,7 @@ jobs:
           sparse-checkout: |
             references
             sources/fulltext
+            sources/normalized
             sources/excerpts
             tools
       - uses: actions/setup-python@v5
@@ -33,6 +35,7 @@ jobs:
       - run: python tools/test-library-inventory.py
       - run: python tools/test-export-knowledge.py
       - run: python tools/test-source-cases.py
+      - run: python tools/test-source-editions.py
       - run: python tools/export-reading-notes.py
       - run: python tools/test-validate-gates.py
       - run: python tools/coverage-report.py --fail-under 54

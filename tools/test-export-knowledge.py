@@ -16,7 +16,7 @@ class KnowledgeExport(unittest.TestCase):
         self.root = Path(self.tmp.name)
         self.write("sources/fulltext/bazi/book/fulltext.md", "原文第一行\n原文第二行\n")
         self.write_json("references/inventory/library-inventory.json", {"packs": [{"fulltext_exists": True, "destination": "engine", "slug": "book", "system": "bazi", "title": "测试底本", "actual_fulltext_path": "sources/fulltext/bazi/book/fulltext.md"}]})
-        self.write_json("references/inventory/paragraphs/bazi/book.json", {"paragraphs": [{"id": "book:L0001-L0002", "start_line": 1, "end_line": 2, "heading": "章节", "kind": "理论"}]})
+        self.write_json("references/inventory/paragraphs/bazi/book.json", {"fulltext": "sources/fulltext/bazi/book/fulltext.md", "paragraphs": [{"id": "book:L0001-L0002", "start_line": 1, "end_line": 2, "heading": "章节", "kind": "理论"}]})
 
     def tearDown(self):
         self.tmp.cleanup()
@@ -54,7 +54,7 @@ class KnowledgeExport(unittest.TestCase):
         self.assertIn("傷官與財印", row["searchText"])
 
     def test_heading_is_included_in_character_conversion(self):
-        self.write_json("references/inventory/paragraphs/bazi/book.json", {"paragraphs": [{"id": "book:L0001-L0002", "start_line": 1, "end_line": 2, "heading": "得時不旺", "kind": "理论"}]})
+        self.write_json("references/inventory/paragraphs/bazi/book.json", {"fulltext": "sources/fulltext/bazi/book/fulltext.md", "paragraphs": [{"id": "book:L0001-L0002", "start_line": 1, "end_line": 2, "heading": "得時不旺", "kind": "理论"}]})
         row = module.build_export(self.root, "commit")["paragraphs"][0]
         self.assertIn("得时不旺", row["searchText"])
         self.assertEqual(row["heading"], "得時不旺")
@@ -64,6 +64,18 @@ class KnowledgeExport(unittest.TestCase):
         book = module.build_export(self.root, "commit")["books"][0]
         self.assertEqual(book["textStatus"], "navigation-only")
         self.assertEqual(book["sourceNotes"], ["仅导航，正文恢复中"])
+
+    def test_supplement_retains_own_file_and_ocr_draft_status(self):
+        self.write("sources/recovered.md", "## PDF第021页\n\n待校OCR正文\n")
+        self.write_json("references/source-editions.json", {"version": 1, "editions": [{"id": "recovery", "bookSlug": "book", "system": "bazi", "label": "影印初稿", "file": "sources/recovered.md", "sourceStatus": "ocr-draft", "pageScoped": True, "notes": ["尚待校核"]}]})
+        data = module.build_export(self.root, "commit")
+        original, draft = data["paragraphs"]
+        self.assertEqual(original["id"], "book:L0001-L0002")
+        self.assertEqual(draft["sourceFile"], "sources/recovered.md")
+        self.assertEqual(draft["sourceStatus"], "ocr-draft")
+        self.assertEqual(draft["review"], "unreviewed")
+        self.assertEqual(draft["pdfPage"], 21)
+        self.assertEqual(data["books"][0]["paragraphCount"], 2)
 
     def test_bad_annotation_fails_export(self):
         self.write_json("references/annotations/bazi/book.json", {"bookSlug": "book", "entries": [{"paragraphId": "book:L0001-L0009"}]})

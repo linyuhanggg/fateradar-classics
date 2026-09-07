@@ -4,6 +4,7 @@ from __future__ import annotations
 import argparse
 import json
 from pathlib import Path
+from source_paragraphs import load_source_paragraphs
 
 ROOT = Path(__file__).resolve().parents[1]
 GANS = "甲乙丙丁戊己庚辛壬癸"
@@ -18,11 +19,8 @@ def valid_pillars(pillars: object) -> bool:
 
 
 def collect_cases(root: Path) -> dict:
-    locations = {}
-    for p in sorted((root / "references/inventory/paragraphs").glob("*/*.json")):
-        data = json.loads(p.read_text())
-        for row in data["paragraphs"]:
-            locations[row["id"]] = (data["fulltext"], row["start_line"], row["end_line"])
+    sources = load_source_paragraphs(root)
+    locations = {key: (row["source_file"], row["start_line"], row["end_line"]) for key, row in sources.items()}
     cases, by_pillars = [], {}
     for p in sorted((root / "references/annotations").glob("*/*.json")):
         data = json.loads(p.read_text())
@@ -33,6 +31,8 @@ def collect_cases(root: Path) -> dict:
             pid = entry["paragraphId"]
             if pid not in locations:
                 raise ValueError(f"Unknown case source: {pid}")
+            if records and sources[pid].get("source_status") == "ocr-draft":
+                raise ValueError(f"OCR draft cannot supply reviewed source cases: {pid}")
             for index, case in enumerate(records):
                 valid = valid_pillars(case.get("pillars"))
                 if case.get("canRecompute") is True and not valid:
