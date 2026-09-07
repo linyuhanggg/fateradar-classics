@@ -1,0 +1,49 @@
+{
+  "schema_version": "fateradar-executable-v1",
+  "book": {
+    "slug": "zengshan-buyi",
+    "system": "divination",
+    "title": "增删卜易",
+    "fulltext": "sources/fulltext/divination/zengshan-buyi/fulltext.md"
+  },
+  "verified": false,
+  "note": "只接入用神旬空与月破的盘面条件。出空、出月是原文观察，不是指定兑现日，也不是必败。verified 保持 false。",
+  "rules": [
+    {
+      "id": "ZSB-E-01",
+      "art": "liuyao",
+      "theme": "用神逢旬空",
+      "school": "增删卜易",
+      "paragraph_id": "zengshan-buyi:L0539-L0539",
+      "quote": "黃金策曰﹕伏居空地﹐事與心違。予得驗者﹐非此論也。凡用神旺相而遇旬空﹐出空之日則出矣。",
+      "page": "liuyao",
+      "required_facts": ["day.ganzhi", "xunkong", "yongshen.zhi", "yongshen.state"],
+      "when": { "exists": "yongshen.zhi" },
+      "satisfy_when": "用神所取之爻地支落入本日旬空：只记逢空",
+      "fail_when": "已明确用神，且该爻不在本日旬空",
+      "unknown_when": "用神对象未明确；或逢空同时旺衰、动静未论完",
+      "rescue": "unimplemented",
+      "vernacular": "日辰{day_ganzhi}旬空{kong}，{use_rel}{yao}逢空。原文给出空之日则出，不是已经失败，也不能指定哪一天兑现。",
+      "implementation_assumption": "旬空按日干取旬。用神由问事对象或显式世爻指定，模糊事项不自动定用神。",
+      "verified": false
+    },
+    {
+      "id": "ZSB-E-02",
+      "art": "liuyao",
+      "theme": "用神临月破",
+      "school": "增删卜易",
+      "paragraph_id": "zengshan-buyi:L0373-L0377",
+      "quote": "月建沖之爲月破﹐逐月之破日是也。諸書皆以用神臨月破如悖時也……野鶴曰﹕予得其驗﹐動則能傷於爻﹐變則能傷於動……目下𨿽破﹐出月則不破﹐今日𨿽破﹐實破之日則不破﹐合之日則不破。",
+      "page": "liuyao",
+      "required_facts": ["month.zhi", "yongshen.zhi", "yongshen.state"],
+      "when": { "exists": "yongshen.zhi" },
+      "satisfy_when": "用神所取之爻地支与月建相冲：只记月破",
+      "fail_when": "已明确用神，且该爻不冲月建",
+      "unknown_when": "用神对象未明确；或月破后出月、日合、动变力量未论完",
+      "rescue": "unimplemented",
+      "vernacular": "月建{month_zhi}，{use_rel}{yao}临月破。原文给出月则不破，不是所问已经失败。",
+      "implementation_assumption": "月破按地支六冲。不把诸书「如悖时」写成必败结论。",
+      "verified": false
+    }
+  ]
+}

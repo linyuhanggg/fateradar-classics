@@ -1,0 +1,31 @@
+{
+  "schema_version": "fateradar-executable-v1",
+  "book": {
+    "slug": "ziwei-doushu-quanshu",
+    "system": "ziwei",
+    "title": "紫微斗数全书",
+    "fulltext": "sources/fulltext/ziwei/ziwei-doushu-quanshu/fulltext.md"
+  },
+  "verified": false,
+  "note": "只接入生年干四化落宫记录。化禄不等于必得财，化忌不等于灾祸。verified 保持 false。",
+  "rules": [
+    {
+      "id": "ZWD-E-01",
+      "art": "ziwei",
+      "theme": "生年干四化落宫",
+      "school": "紫微斗数全书",
+      "paragraph_id": "ziwei-doushu-quanshu:L1770-L1776",
+      "quote": "甲廉破武陽為伴，乙機梁紫月交侵，丙同機昌廉貞位，丁月同機巨門尋，戊貪月弼機為主，己武貪梁曲最平，庚日武陰同為首，辛巨陽曲昌至臨，壬梁紫府武宿是，癸破巨陰貪狼停。如甲生人廉貞化祿、破軍化權、武曲化科、太陽化忌是也，余仿此。",
+      "page": "ziwei",
+      "required_facts": ["year.gan.doushu", "palace.mutagen"],
+      "when": { "exists": "year.gan.doushu" },
+      "satisfy_when": "本命盘已按斗数年干列出化禄、化权、化科、化忌的星名与落宫",
+      "fail_when": "无斗数年干，无法安四化",
+      "unknown_when": "节气年干与斗数年干不同：只记录差异，不另断一层四化",
+      "rescue": "unimplemented",
+      "vernacular": "斗数年干{doushu_year_gan}，本盘{sihua_list}。这是按年干落宫的记录。化禄不是得财结论，化忌不是祸福结论。",
+      "implementation_assumption": "本命四化用 iztro 按斗数年干安星。节气四柱另栏对照，不覆盖斗数安星。",
+      "verified": false
+    }
+  ]
+}

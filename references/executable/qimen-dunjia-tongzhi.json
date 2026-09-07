@@ -1,0 +1,49 @@
+{
+  "schema_version": "fateradar-executable-v1",
+  "book": {
+    "slug": "qimen-dunjia-tongzhi",
+    "system": "san-shi",
+    "title": "奇门遁甲统宗大全",
+    "fulltext": "sources/fulltext/san-shi/qimen-dunjia-tongzhi/fulltext.md"
+  },
+  "verified": false,
+  "note": "只接入伏吟、反吟的落宫条件。歌诀「伏吟为最凶」不得改写成必败。verified 保持 false。",
+  "rules": [
+    {
+      "id": "QMD-E-01",
+      "art": "qimen",
+      "theme": "伏吟落宫",
+      "school": "奇门遁甲统宗",
+      "paragraph_id": "qimen-dunjia-tongzhi:L0309-L0311",
+      "quote": "反吟 星加对宫 伏吟 本星加本宫",
+      "page": "qimen",
+      "required_facts": ["zhifu.palace", "timedry.palace"],
+      "when": { "exists": "zhifu.palace" },
+      "satisfy_when": "值符归本位，天地二盘相重：只记伏吟",
+      "fail_when": "值符不在本位，且也未落对宫",
+      "unknown_when": "歌诀称最凶而同局仍有吉门吉星：力量未论，不得输出必败",
+      "rescue": "unimplemented",
+      "vernacular": "值符归本位，这是伏吟的盘面条件，用来观察是否胶着在原处，不是已经判定举动无效。",
+      "implementation_assumption": "伏吟按值符落宫相对本位判断。不采用「就中伏吟为最凶」作运行结论。",
+      "verified": false
+    },
+    {
+      "id": "QMD-E-02",
+      "art": "qimen",
+      "theme": "反吟落宫",
+      "school": "奇门遁甲统宗",
+      "paragraph_id": "qimen-dunjia-tongzhi:L0309-L0311",
+      "quote": "反吟 星加对宫 伏吟 本星加本宫",
+      "page": "qimen",
+      "required_facts": ["zhifu.palace", "timedry.palace"],
+      "when": { "exists": "zhifu.palace" },
+      "satisfy_when": "值符落对宫，天盘与地盘相冲：只记反吟",
+      "fail_when": "值符不在对宫，且也未归本位",
+      "unknown_when": "反吟与吉格同现：原文另有进兵之论，力量未论，不得输出必变",
+      "rescue": "unimplemented",
+      "vernacular": "值符落对宫，这是反吟的盘面条件，用来观察往还之象，不是已经判定所谋必变。",
+      "implementation_assumption": "对宫按洛书八宫对冲。不把反吟写成必须改时。",
+      "verified": false
+    }
+  ]
+}
