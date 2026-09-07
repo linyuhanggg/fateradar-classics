@@ -1,14 +1,15 @@
 {
   "pack": "fengshui/qingnang-aoyu",
   "fulltext": "sources/fulltext/fengshui/qingnang-aoyu/fulltext.md",
-  "fulltext_sha256": "0718b133e0aaef6f7010d6d985809702ae0d8a2d92924e9fae591fc0431ffdc5",
+  "classification_note": "pattern 是文本模式初筛；annotation 来源另见注解文件；source-reviewed 不等同人工影印核验。same_text_as 仅表示忽略空白后的原文字面相同。",
   "paragraphs": [
     {
       "id": "qingnang-aoyu:L0001-L0005",
       "start_line": 1,
       "end_line": 5,
       "heading": "正文",
-      "kind": "理论",
+      "kind": "待分类",
+      "classification_method": "unclassified",
       "char_count": 58,
       "doubtful": false,
       "missing_marker": false
@@ -18,7 +19,8 @@
       "start_line": 9,
       "end_line": 9,
       "heading": "青囊奧語",
-      "kind": "理论",
+      "kind": "待分类",
+      "classification_method": "unclassified",
       "char_count": 74,
       "doubtful": false,
       "missing_marker": false
@@ -28,7 +30,8 @@
       "start_line": 11,
       "end_line": 38,
       "heading": "青囊奧語",
-      "kind": "理论",
+      "kind": "待分类",
+      "classification_method": "unclassified",
       "char_count": 548,
       "doubtful": false,
       "missing_marker": false

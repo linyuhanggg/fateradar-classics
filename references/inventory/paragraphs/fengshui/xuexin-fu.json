@@ -1,14 +1,15 @@
 {
   "pack": "fengshui/xuexin-fu",
   "fulltext": "sources/fulltext/fengshui/xuexin-fu/fulltext.md",
-  "fulltext_sha256": "5e27d9aaf634f59e97cc1afb39382ae328425c437041eeb31447b6ba2c8cef83",
+  "classification_note": "pattern 是文本模式初筛；annotation 来源另见注解文件；source-reviewed 不等同人工影印核验。same_text_as 仅表示忽略空白后的原文字面相同。",
   "paragraphs": [
     {
       "id": "xuexin-fu:L0003-L0007",
       "start_line": 3,
       "end_line": 7,
       "heading": "雪心賦",
-      "kind": "理论",
+      "kind": "待分类",
+      "classification_method": "unclassified",
       "char_count": 437,
       "doubtful": false,
       "missing_marker": false
@@ -19,6 +20,7 @@
       "end_line": 16,
       "heading": "論山川理氣",
       "kind": "理论",
+      "classification_method": "pattern",
       "char_count": 140,
       "doubtful": false,
       "missing_marker": false
@@ -29,6 +31,7 @@
       "end_line": 34,
       "heading": "論地理要略",
       "kind": "理论",
+      "classification_method": "pattern",
       "char_count": 368,
       "doubtful": false,
       "missing_marker": false
@@ -39,6 +42,7 @@
       "end_line": 42,
       "heading": "論分合向背倒杖卦例",
       "kind": "理论",
+      "classification_method": "pattern",
       "char_count": 152,
       "doubtful": false,
       "missing_marker": false
@@ -49,6 +53,7 @@
       "end_line": 58,
       "heading": "論五星",
       "kind": "理论",
+      "classification_method": "pattern",
       "char_count": 303,
       "doubtful": false,
       "missing_marker": false
@@ -59,6 +64,7 @@
       "end_line": 73,
       "heading": "論水法",
       "kind": "理论",
+      "classification_method": "pattern",
       "char_count": 270,
       "doubtful": false,
       "missing_marker": false
@@ -69,6 +75,7 @@
       "end_line": 106,
       "heading": "論龍脈",
       "kind": "理论",
+      "classification_method": "pattern",
       "char_count": 659,
       "doubtful": false,
       "missing_marker": false
@@ -79,6 +86,7 @@
       "end_line": 117,
       "heading": "論龍虎",
       "kind": "理论",
+      "classification_method": "pattern",
       "char_count": 196,
       "doubtful": false,
       "missing_marker": false
@@ -89,6 +97,7 @@
       "end_line": 156,
       "heading": "論穴法",
       "kind": "理论",
+      "classification_method": "pattern",
       "char_count": 838,
       "doubtful": false,
       "missing_marker": false
@@ -99,6 +108,7 @@
       "end_line": 167,
       "heading": "論克擇",
       "kind": "理论",
+      "classification_method": "pattern",
       "char_count": 232,
       "doubtful": false,
       "missing_marker": false
@@ -109,6 +119,7 @@
       "end_line": 192,
       "heading": "論古格宜看",
       "kind": "理论",
+      "classification_method": "pattern",
       "char_count": 477,
       "doubtful": false,
       "missing_marker": false
@@ -119,6 +130,7 @@
       "end_line": 204,
       "heading": "論羅城水口",
       "kind": "理论",
+      "classification_method": "pattern",
       "char_count": 226,
       "doubtful": false,
       "missing_marker": false
@@ -129,6 +141,7 @@
       "end_line": 214,
       "heading": "論沙水吉凶",
       "kind": "理论",
+      "classification_method": "pattern",
       "char_count": 194,
       "doubtful": false,
       "missing_marker": false
@@ -139,6 +152,7 @@
       "end_line": 234,
       "heading": "論真龍貴氣應驗",
       "kind": "理论",
+      "classification_method": "pattern",
       "char_count": 374,
       "doubtful": false,
       "missing_marker": false
@@ -149,6 +163,7 @@
       "end_line": 277,
       "heading": "論穴形異同及沙水凶形應驗",
       "kind": "理论",
+      "classification_method": "pattern",
       "char_count": 928,
       "doubtful": false,
       "missing_marker": false
@@ -158,7 +173,8 @@
       "start_line": 280,
       "end_line": 307,
       "heading": "統論山水吉凶",
-      "kind": "理论",
+      "kind": "待分类",
+      "classification_method": "unclassified",
       "char_count": 622,
       "doubtful": false,
       "missing_marker": false
@@ -169,6 +185,7 @@
       "end_line": 323,
       "heading": "論陽宅",
       "kind": "理论",
+      "classification_method": "pattern",
       "char_count": 296,
       "doubtful": false,
       "missing_marker": false
@@ -178,7 +195,8 @@
       "start_line": 326,
       "end_line": 338,
       "heading": "勉學勸善並終序著賦之意",
-      "kind": "序跋目录",
+      "kind": "待分类",
+      "classification_method": "unclassified",
       "char_count": 289,
       "doubtful": false,
       "missing_marker": false

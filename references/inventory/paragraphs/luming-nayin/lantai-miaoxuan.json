@@ -1,14 +1,15 @@
 {
   "pack": "luming-nayin/lantai-miaoxuan",
   "fulltext": "sources/fulltext/luming-nayin/lantai-miaoxuan/fulltext.md",
-  "fulltext_sha256": "4505825efa8103ff63761b8d0f75e5ed62b39352db99f3a7428fdaaf8435d364",
+  "classification_note": "pattern 是文本模式初筛；annotation 来源另见注解文件；source-reviewed 不等同人工影印核验。same_text_as 仅表示忽略空白后的原文字面相同。",
   "paragraphs": [
     {
       "id": "lantai-miaoxuan:L0003-L0007",
       "start_line": 3,
       "end_line": 7,
       "heading": "蘭臺妙選",
-      "kind": "理论",
+      "kind": "待分类",
+      "classification_method": "unclassified",
       "char_count": 355,
       "doubtful": false,
       "missing_marker": false
@@ -18,7 +19,8 @@
       "start_line": 11,
       "end_line": 12,
       "heading": "上篇",
-      "kind": "理论",
+      "kind": "待分类",
+      "classification_method": "unclassified",
       "char_count": 85,
       "doubtful": false,
       "missing_marker": false
@@ -28,7 +30,40 @@
       "start_line": 14,
       "end_line": 410,
       "heading": "上篇",
-      "kind": "理论",
+      "kind": "案例",
+      "classification_method": "pattern",
+      "four_pillar_sequences": [
+        [
+          "壬申",
+          "癸酉",
+          "庚戌",
+          "辛亥"
+        ],
+        [
+          "庚寅",
+          "辛卯",
+          "戊辰",
+          "己巳"
+        ],
+        [
+          "丙戌",
+          "丁亥",
+          "戊寅",
+          "己卯"
+        ],
+        [
+          "戊子",
+          "己丑",
+          "戊午",
+          "己未"
+        ],
+        [
+          "丙申",
+          "庚寅",
+          "乙酉",
+          "丁亥"
+        ]
+      ],
       "char_count": 12786,
       "doubtful": false,
       "missing_marker": false
@@ -38,7 +73,8 @@
       "start_line": 414,
       "end_line": 415,
       "heading": "中篇",
-      "kind": "理论",
+      "kind": "待分类",
+      "classification_method": "unclassified",
       "char_count": 86,
       "doubtful": false,
       "missing_marker": false
@@ -48,7 +84,8 @@
       "start_line": 417,
       "end_line": 482,
       "heading": "中篇",
-      "kind": "理论",
+      "kind": "待分类",
+      "classification_method": "unclassified",
       "char_count": 2778,
       "doubtful": false,
       "missing_marker": false
@@ -58,7 +95,8 @@
       "start_line": 486,
       "end_line": 487,
       "heading": "下篇",
-      "kind": "理论",
+      "kind": "待分类",
+      "classification_method": "unclassified",
       "char_count": 84,
       "doubtful": false,
       "missing_marker": false
@@ -68,7 +106,8 @@
       "start_line": 489,
       "end_line": 589,
       "heading": "下篇",
-      "kind": "理论",
+      "kind": "待分类",
+      "classification_method": "unclassified",
       "char_count": 3521,
       "doubtful": false,
       "missing_marker": false

@@ -28,6 +28,10 @@ jobs:
       - run: python tools/validate-rules.py
       - run: python tools/validate-executable.py
       - run: python tools/test-validate-executable.py
+      - run: python tools/validate-annotations.py
+      - run: python tools/test-validate-annotations.py
+      - run: python tools/test-library-inventory.py
+      - run: python tools/test-export-knowledge.py
       - run: python tools/export-reading-notes.py
       - run: python tools/test-validate-gates.py
       - run: python tools/coverage-report.py --fail-under 54

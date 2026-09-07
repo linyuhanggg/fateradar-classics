@@ -1,14 +1,15 @@
 {
   "pack": "fengshui/huangdi-zhaijing",
   "fulltext": "sources/fulltext/fengshui/huangdi-zhaijing/fulltext.md",
-  "fulltext_sha256": "30b07fbf1d391799b9288c1ef6825858f03ee112337e93c68cf5ebded52bc57d",
+  "classification_note": "pattern 是文本模式初筛；annotation 来源另见注解文件；source-reviewed 不等同人工影印核验。same_text_as 仅表示忽略空白后的原文字面相同。",
   "paragraphs": [
     {
       "id": "huangdi-zhaijing:L0003-L0008",
       "start_line": 3,
       "end_line": 8,
       "heading": "黄帝宅经",
-      "kind": "理论",
+      "kind": "待分类",
+      "classification_method": "unclassified",
       "char_count": 285,
       "doubtful": false,
       "missing_marker": false
@@ -18,7 +19,8 @@
       "start_line": 10,
       "end_line": 12,
       "heading": "黄帝宅经",
-      "kind": "理论",
+      "kind": "待分类",
+      "classification_method": "unclassified",
       "char_count": 3,
       "doubtful": false,
       "missing_marker": false
@@ -28,17 +30,20 @@
       "start_line": 14,
       "end_line": 14,
       "heading": "黄帝宅经",
-      "kind": "理论",
+      "kind": "待分类",
+      "classification_method": "unclassified",
       "char_count": 6,
       "doubtful": false,
-      "missing_marker": false
+      "missing_marker": false,
+      "same_text_as": "sanming-tonghui:L0021-L0021"
     },
     {
       "id": "huangdi-zhaijing:L0018-L0034",
       "start_line": 18,
       "end_line": 34,
       "heading": "宅經卷上",
-      "kind": "理论",
+      "kind": "待分类",
+      "classification_method": "unclassified",
       "char_count": 1915,
       "doubtful": false,
       "missing_marker": false
@@ -48,7 +53,8 @@
       "start_line": 38,
       "end_line": 47,
       "heading": "凡修宅次第法",
-      "kind": "理论",
+      "kind": "待分类",
+      "classification_method": "unclassified",
       "char_count": 1009,
       "doubtful": false,
       "missing_marker": false
@@ -58,7 +64,8 @@
       "start_line": 49,
       "end_line": 49,
       "heading": "凡修宅次第法",
-      "kind": "理论",
+      "kind": "待分类",
+      "classification_method": "unclassified",
       "char_count": 4,
       "doubtful": false,
       "missing_marker": false
@@ -68,17 +75,20 @@
       "start_line": 51,
       "end_line": 51,
       "heading": "凡修宅次第法",
-      "kind": "理论",
+      "kind": "待分类",
+      "classification_method": "unclassified",
       "char_count": 6,
       "doubtful": false,
-      "missing_marker": false
+      "missing_marker": false,
+      "same_text_as": "sanming-tonghui:L0021-L0021"
     },
     {
       "id": "huangdi-zhaijing:L0055-L0057",
       "start_line": 55,
       "end_line": 57,
       "heading": "宅經卷下",
-      "kind": "理论",
+      "kind": "待分类",
+      "classification_method": "unclassified",
       "char_count": 91,
       "doubtful": false,
       "missing_marker": false
@@ -88,7 +98,8 @@
       "start_line": 59,
       "end_line": 67,
       "heading": "宅經卷下",
-      "kind": "理论",
+      "kind": "待分类",
+      "classification_method": "unclassified",
       "char_count": 1090,
       "doubtful": true,
       "missing_marker": false
@@ -98,7 +109,8 @@
       "start_line": 69,
       "end_line": 78,
       "heading": "宅經卷下",
-      "kind": "理论",
+      "kind": "待分类",
+      "classification_method": "unclassified",
       "char_count": 1229,
       "doubtful": false,
       "missing_marker": false
@@ -108,7 +120,8 @@
       "start_line": 80,
       "end_line": 80,
       "heading": "宅經卷下",
-      "kind": "理论",
+      "kind": "待分类",
+      "classification_method": "unclassified",
       "char_count": 4,
       "doubtful": false,
       "missing_marker": false

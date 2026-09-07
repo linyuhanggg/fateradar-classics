@@ -1,14 +1,15 @@
 {
   "pack": "physiognomy/shenxiang-quanbian",
   "fulltext": "sources/fulltext/physiognomy/shenxiang-quanbian/fulltext.md",
-  "fulltext_sha256": "3d0a3bf45b5221a2f98cdd3a50cf1f4176fe385391da58b9049acdb36b77e952",
+  "classification_note": "pattern 是文本模式初筛；annotation 来源另见注解文件；source-reviewed 不等同人工影印核验。same_text_as 仅表示忽略空白后的原文字面相同。",
   "paragraphs": [
     {
       "id": "shenxiang-quanbian:L0005-L0017",
       "start_line": 5,
       "end_line": 17,
       "heading": "欽定古今圖書集成/博物彙編/藝術典/第631卷",
-      "kind": "理论",
+      "kind": "待分类",
+      "classification_method": "unclassified",
       "char_count": 247,
       "doubtful": false,
       "missing_marker": false
@@ -19,6 +20,7 @@
       "end_line": 54,
       "heading": "論相",
       "kind": "理论",
+      "classification_method": "pattern",
       "char_count": 362,
       "doubtful": false,
       "missing_marker": false
@@ -28,7 +30,8 @@
       "start_line": 57,
       "end_line": 111,
       "heading": "總論",
-      "kind": "理论",
+      "kind": "待分类",
+      "classification_method": "unclassified",
       "char_count": 1394,
       "doubtful": false,
       "missing_marker": false
@@ -38,7 +41,8 @@
       "start_line": 114,
       "end_line": 124,
       "heading": "相說",
-      "kind": "理论",
+      "kind": "待分类",
+      "classification_method": "unclassified",
       "char_count": 254,
       "doubtful": false,
       "missing_marker": false
@@ -48,7 +52,8 @@
       "start_line": 126,
       "end_line": 248,
       "heading": "十觀",
-      "kind": "理论",
+      "kind": "待分类",
+      "classification_method": "unclassified",
       "char_count": 2872,
       "doubtful": false,
       "missing_marker": false
@@ -58,7 +63,8 @@
       "start_line": 250,
       "end_line": 253,
       "heading": "五法",
-      "kind": "理论",
+      "kind": "待分类",
+      "classification_method": "unclassified",
       "char_count": 143,
       "doubtful": false,
       "missing_marker": false
@@ -68,7 +74,8 @@
       "start_line": 255,
       "end_line": 258,
       "heading": "切相歌",
-      "kind": "理论",
+      "kind": "待分类",
+      "classification_method": "unclassified",
       "char_count": 96,
       "doubtful": false,
       "missing_marker": false
@@ -79,6 +86,7 @@
       "end_line": 261,
       "heading": "論形俗",
       "kind": "理论",
+      "classification_method": "pattern",
       "char_count": 49,
       "doubtful": false,
       "missing_marker": false
@@ -89,6 +97,7 @@
       "end_line": 290,
       "heading": "論氣色",
       "kind": "理论",
+      "classification_method": "pattern",
       "char_count": 514,
       "doubtful": false,
       "missing_marker": false
@@ -98,7 +107,8 @@
       "start_line": 292,
       "end_line": 326,
       "heading": "純陽相法入門第一 〈 呂巖字洞賓 〉",
-      "kind": "理论",
+      "kind": "待分类",
+      "classification_method": "unclassified",
       "char_count": 1312,
       "doubtful": false,
       "missing_marker": false
@@ -108,7 +118,8 @@
       "start_line": 328,
       "end_line": 356,
       "heading": "鬼谷子相辨微芒第二 〈 王詡隱青溪鬼谷因號焉戰國時人 〉",
-      "kind": "理论",
+      "kind": "待分类",
+      "classification_method": "unclassified",
       "char_count": 1329,
       "doubtful": false,
       "missing_marker": false
@@ -118,7 +129,8 @@
       "start_line": 358,
       "end_line": 391,
       "heading": "林宗相五德配五行第三 〈 郭泰東漢人 〉",
-      "kind": "理论",
+      "kind": "待分类",
+      "classification_method": "unclassified",
       "char_count": 1540,
       "doubtful": false,
       "missing_marker": false
@@ -128,7 +140,8 @@
       "start_line": 393,
       "end_line": 432,
       "heading": "唐舉相神氣第四 〈 戰國時人 〉",
-      "kind": "理论",
+      "kind": "待分类",
+      "classification_method": "unclassified",
       "char_count": 1646,
       "doubtful": false,
       "missing_marker": false
@@ -138,7 +151,8 @@
       "start_line": 434,
       "end_line": 496,
       "heading": "許負相德器第五 〈 西漢時人 〉",
-      "kind": "理论",
+      "kind": "待分类",
+      "classification_method": "unclassified",
       "char_count": 2784,
       "doubtful": false,
       "missing_marker": false
@@ -148,7 +162,8 @@
       "start_line": 498,
       "end_line": 498,
       "heading": "十三部位總要之圖",
-      "kind": "理论",
+      "kind": "待分类",
+      "classification_method": "unclassified",
       "char_count": 6,
       "doubtful": false,
       "missing_marker": false
@@ -158,7 +173,8 @@
       "start_line": 500,
       "end_line": 501,
       "heading": "天中",
-      "kind": "理论",
+      "kind": "待分类",
+      "classification_method": "unclassified",
       "char_count": 34,
       "doubtful": false,
       "missing_marker": false
@@ -168,7 +184,8 @@
       "start_line": 503,
       "end_line": 504,
       "heading": "天庭",
-      "kind": "理论",
+      "kind": "待分类",
+      "classification_method": "unclassified",
       "char_count": 33,
       "doubtful": false,
       "missing_marker": false
@@ -178,7 +195,8 @@
       "start_line": 506,
       "end_line": 507,
       "heading": "司空",
-      "kind": "理论",
+      "kind": "待分类",
+      "classification_method": "unclassified",
       "char_count": 32,
       "doubtful": false,
       "missing_marker": false
@@ -188,7 +206,8 @@
       "start_line": 509,
       "end_line": 510,
       "heading": "中正",
-      "kind": "理论",
+      "kind": "待分类",
+      "classification_method": "unclassified",
       "char_count": 32,
       "doubtful": false,
       "missing_marker": false
@@ -198,7 +217,8 @@
       "start_line": 512,
       "end_line": 513,
       "heading": "印堂",
-      "kind": "理论",
+      "kind": "待分类",
+      "classification_method": "unclassified",
       "char_count": 32,
       "doubtful": false,
       "missing_marker": false
@@ -208,7 +228,8 @@
       "start_line": 515,
       "end_line": 515,
       "heading": "山根",
-      "kind": "理论",
+      "kind": "待分类",
+      "classification_method": "unclassified",
       "char_count": 33,
       "doubtful": false,
       "missing_marker": false
@@ -218,7 +239,8 @@
       "start_line": 517,
       "end_line": 518,
       "heading": "年上",
-      "kind": "理论",
+      "kind": "待分类",
+      "classification_method": "unclassified",
       "char_count": 35,
       "doubtful": false,
       "missing_marker": false
@@ -228,7 +250,8 @@
       "start_line": 520,
       "end_line": 521,
       "heading": "壽上",
-      "kind": "理论",
+      "kind": "待分类",
+      "classification_method": "unclassified",
       "char_count": 32,
       "doubtful": false,
       "missing_marker": false
@@ -238,7 +261,8 @@
       "start_line": 523,
       "end_line": 524,
       "heading": "準頭",
-      "kind": "理论",
+      "kind": "待分类",
+      "classification_method": "unclassified",
       "char_count": 32,
       "doubtful": false,
       "missing_marker": false
@@ -248,7 +272,8 @@
       "start_line": 526,
       "end_line": 527,
       "heading": "人中",
-      "kind": "理论",
+      "kind": "待分类",
+      "classification_method": "unclassified",
       "char_count": 38,
       "doubtful": false,
       "missing_marker": false
@@ -258,7 +283,8 @@
       "start_line": 529,
       "end_line": 530,
       "heading": "水星",
-      "kind": "理论",
+      "kind": "待分类",
+      "classification_method": "unclassified",
       "char_count": 36,
       "doubtful": false,
       "missing_marker": false
@@ -268,7 +294,8 @@
       "start_line": 532,
       "end_line": 533,
       "heading": "承漿",
-      "kind": "理论",
+      "kind": "待分类",
+      "classification_method": "unclassified",
       "char_count": 34,
       "doubtful": false,
       "missing_marker": false
@@ -278,7 +305,8 @@
       "start_line": 535,
       "end_line": 536,
       "heading": "地閣",
-      "kind": "理论",
+      "kind": "待分类",
+      "classification_method": "unclassified",
       "char_count": 34,
       "doubtful": false,
       "missing_marker": false
@@ -288,7 +316,8 @@
       "start_line": 539,
       "end_line": 569,
       "heading": "流年運氣部位歌",
-      "kind": "理论",
+      "kind": "待分类",
+      "classification_method": "unclassified",
       "char_count": 692,
       "doubtful": false,
       "missing_marker": false
@@ -298,7 +327,8 @@
       "start_line": 571,
       "end_line": 573,
       "heading": "運氣口訣",
-      "kind": "理论",
+      "kind": "待分类",
+      "classification_method": "unclassified",
       "char_count": 64,
       "doubtful": false,
       "missing_marker": false
@@ -308,7 +338,8 @@
       "start_line": 575,
       "end_line": 580,
       "heading": "識限歌",
-      "kind": "理论",
+      "kind": "待分类",
+      "classification_method": "unclassified",
       "char_count": 130,
       "doubtful": false,
       "missing_marker": false
@@ -318,7 +349,8 @@
       "start_line": 583,
       "end_line": 724,
       "heading": "十二宮訣",
-      "kind": "理论",
+      "kind": "待分类",
+      "classification_method": "unclassified",
       "char_count": 3104,
       "doubtful": false,
       "missing_marker": false
@@ -328,7 +360,8 @@
       "start_line": 726,
       "end_line": 734,
       "heading": "十二宮總訣",
-      "kind": "理论",
+      "kind": "待分类",
+      "classification_method": "unclassified",
       "char_count": 242,
       "doubtful": false,
       "missing_marker": false
@@ -338,7 +371,8 @@
       "start_line": 736,
       "end_line": 753,
       "heading": "相容貴賤",
-      "kind": "理论",
+      "kind": "待分类",
+      "classification_method": "unclassified",
       "char_count": 436,
       "doubtful": false,
       "missing_marker": false
@@ -348,7 +382,8 @@
       "start_line": 755,
       "end_line": 759,
       "heading": "人身通論",
-      "kind": "理论",
+      "kind": "待分类",
+      "classification_method": "unclassified",
       "char_count": 115,
       "doubtful": false,
       "missing_marker": false
@@ -358,7 +393,8 @@
       "start_line": 762,
       "end_line": 767,
       "heading": "四學堂論",
-      "kind": "理论",
+      "kind": "待分类",
+      "classification_method": "unclassified",
       "char_count": 115,
       "doubtful": false,
       "missing_marker": false
@@ -368,7 +404,8 @@
       "start_line": 769,
       "end_line": 777,
       "heading": "八學堂論",
-      "kind": "理论",
+      "kind": "待分类",
+      "classification_method": "unclassified",
       "char_count": 170,
       "doubtful": false,
       "missing_marker": false
@@ -378,7 +415,8 @@
       "start_line": 779,
       "end_line": 784,
       "heading": "學堂詩",
-      "kind": "理论",
+      "kind": "待分类",
+      "classification_method": "unclassified",
       "char_count": 96,
       "doubtful": false,
       "missing_marker": false
@@ -388,7 +426,8 @@
       "start_line": 786,
       "end_line": 794,
       "heading": "面三停",
-      "kind": "理论",
+      "kind": "待分类",
+      "classification_method": "unclassified",
       "char_count": 216,
       "doubtful": false,
       "missing_marker": false
@@ -399,6 +438,7 @@
       "end_line": 801,
       "heading": "論形有餘",
       "kind": "理论",
+      "classification_method": "pattern",
       "char_count": 130,
       "doubtful": false,
       "missing_marker": false
@@ -409,6 +449,7 @@
       "end_line": 810,
       "heading": "論神有餘",
       "kind": "理论",
+      "classification_method": "pattern",
       "char_count": 211,
       "doubtful": false,
       "missing_marker": false
@@ -419,6 +460,7 @@
       "end_line": 818,
       "heading": "論形不足",
       "kind": "理论",
+      "classification_method": "pattern",
       "char_count": 173,
       "doubtful": false,
       "missing_marker": false
@@ -429,6 +471,7 @@
       "end_line": 826,
       "heading": "論神不足",
       "kind": "理论",
+      "classification_method": "pattern",
       "char_count": 165,
       "doubtful": false,
       "missing_marker": false
@@ -439,6 +482,7 @@
       "end_line": 836,
       "heading": "論骨肉",
       "kind": "理论",
+      "classification_method": "pattern",
       "char_count": 198,
       "doubtful": false,
       "missing_marker": false
@@ -448,7 +492,8 @@
       "start_line": 838,
       "end_line": 863,
       "heading": "相骨",
-      "kind": "理论",
+      "kind": "待分类",
+      "classification_method": "unclassified",
       "char_count": 615,
       "doubtful": false,
       "missing_marker": false
@@ -458,7 +503,8 @@
       "start_line": 865,
       "end_line": 885,
       "heading": "相肉",
-      "kind": "理论",
+      "kind": "待分类",
+      "classification_method": "unclassified",
       "char_count": 595,
       "doubtful": false,
       "missing_marker": false
@@ -468,7 +514,8 @@
       "start_line": 889,
       "end_line": 897,
       "heading": "欽定古今圖書集成/博物彙編/藝術典/第632卷",
-      "kind": "理论",
+      "kind": "待分类",
+      "classification_method": "unclassified",
       "char_count": 167,
       "doubtful": false,
       "missing_marker": false
@@ -478,7 +525,8 @@
       "start_line": 901,
       "end_line": 902,
       "heading": "達摩五官總論",
-      "kind": "理论",
+      "kind": "待分类",
+      "classification_method": "unclassified",
       "char_count": 90,
       "doubtful": false,
       "missing_marker": false
@@ -488,7 +536,8 @@
       "start_line": 904,
       "end_line": 908,
       "heading": "五官說",
-      "kind": "理论",
+      "kind": "待分类",
+      "classification_method": "unclassified",
       "char_count": 110,
       "doubtful": false,
       "missing_marker": false
@@ -498,7 +547,8 @@
       "start_line": 910,
       "end_line": 911,
       "heading": "採聽官",
-      "kind": "理论",
+      "kind": "待分类",
+      "classification_method": "unclassified",
       "char_count": 39,
       "doubtful": false,
       "missing_marker": false
@@ -508,7 +558,8 @@
       "start_line": 913,
       "end_line": 914,
       "heading": "保壽官",
-      "kind": "理论",
+      "kind": "待分类",
+      "classification_method": "unclassified",
       "char_count": 41,
       "doubtful": false,
       "missing_marker": false
@@ -518,7 +569,8 @@
       "start_line": 916,
       "end_line": 917,
       "heading": "監察官",
-      "kind": "理论",
+      "kind": "待分类",
+      "classification_method": "unclassified",
       "char_count": 38,
       "doubtful": false,
       "missing_marker": false
@@ -528,7 +580,8 @@
       "start_line": 919,
       "end_line": 921,
       "heading": "審辨官",
-      "kind": "理论",
+      "kind": "待分类",
+      "classification_method": "unclassified",
       "char_count": 50,
       "doubtful": false,
       "missing_marker": false
@@ -538,7 +591,8 @@
       "start_line": 923,
       "end_line": 924,
       "heading": "出納官",
-      "kind": "理论",
+      "kind": "待分类",
+      "classification_method": "unclassified",
       "char_count": 27,
       "doubtful": false,
       "missing_marker": false
@@ -548,7 +602,8 @@
       "start_line": 926,
       "end_line": 964,
       "heading": "一曰耳為採聽官",
-      "kind": "理论",
+      "kind": "待分类",
+      "classification_method": "unclassified",
       "char_count": 1485,
       "doubtful": false,
       "missing_marker": false
@@ -558,7 +613,8 @@
       "start_line": 966,
       "end_line": 997,
       "heading": "二曰眉為保壽官",
-      "kind": "理论",
+      "kind": "待分类",
+      "classification_method": "unclassified",
       "char_count": 1302,
       "doubtful": false,
       "missing_marker": false
@@ -568,7 +624,8 @@
       "start_line": 999,
       "end_line": 1037,
       "heading": "三曰目為監察官",
-      "kind": "理论",
+      "kind": "待分类",
+      "classification_method": "unclassified",
       "char_count": 1193,
       "doubtful": false,
       "missing_marker": false
@@ -578,7 +635,8 @@
       "start_line": 1039,
       "end_line": 1132,
       "heading": "四曰鼻為審辨官",
-      "kind": "理论",
+      "kind": "待分类",
+      "classification_method": "unclassified",
       "char_count": 2581,
       "doubtful": false,
       "missing_marker": false
@@ -588,7 +646,8 @@
       "start_line": 1134,
       "end_line": 1190,
       "heading": "五曰口為出納官",
-      "kind": "理论",
+      "kind": "待分类",
+      "classification_method": "unclassified",
       "char_count": 1477,
       "doubtful": false,
       "missing_marker": false
@@ -598,7 +657,8 @@
       "start_line": 1192,
       "end_line": 1203,
       "heading": "許負論男女五官",
-      "kind": "理论",
+      "kind": "待分类",
+      "classification_method": "unclassified",
       "char_count": 283,
       "doubtful": false,
       "missing_marker": false
@@ -608,7 +668,8 @@
       "start_line": 1205,
       "end_line": 1215,
       "heading": "五嶽",
-      "kind": "理论",
+      "kind": "待分类",
+      "classification_method": "unclassified",
       "char_count": 178,
       "doubtful": false,
       "missing_marker": false
@@ -618,7 +679,8 @@
       "start_line": 1217,
       "end_line": 1223,
       "heading": "四瀆",
-      "kind": "理论",
+      "kind": "待分类",
+      "classification_method": "unclassified",
       "char_count": 183,
       "doubtful": false,
       "missing_marker": false
@@ -628,7 +690,8 @@
       "start_line": 1226,
       "end_line": 1236,
       "heading": "五星六曜說",
-      "kind": "理论",
+      "kind": "待分类",
+      "classification_method": "unclassified",
       "char_count": 224,
       "doubtful": false,
       "missing_marker": false
@@ -638,7 +701,8 @@
       "start_line": 1238,
       "end_line": 1287,
       "heading": "五星六曜訣斷詩",
-      "kind": "理论",
+      "kind": "待分类",
+      "classification_method": "unclassified",
       "char_count": 1280,
       "doubtful": false,
       "missing_marker": false
@@ -648,7 +712,8 @@
       "start_line": 1290,
       "end_line": 1294,
       "heading": "六府論",
-      "kind": "理论",
+      "kind": "待分类",
+      "classification_method": "unclassified",
       "char_count": 107,
       "doubtful": false,
       "missing_marker": false
@@ -658,7 +723,8 @@
       "start_line": 1296,
       "end_line": 1305,
       "heading": "三才三停論",
-      "kind": "理论",
+      "kind": "待分类",
+      "classification_method": "unclassified",
       "char_count": 246,
       "doubtful": false,
       "missing_marker": false
@@ -668,7 +734,8 @@
       "start_line": 1307,
       "end_line": 1307,
       "heading": "相三主",
-      "kind": "理论",
+      "kind": "待分类",
+      "classification_method": "unclassified",
       "char_count": 24,
       "doubtful": false,
       "missing_marker": false
@@ -679,6 +746,7 @@
       "end_line": 1309,
       "heading": "論三柱",
       "kind": "理论",
+      "classification_method": "pattern",
       "char_count": 15,
       "doubtful": false,
       "missing_marker": false
@@ -688,7 +756,8 @@
       "start_line": 1311,
       "end_line": 1325,
       "heading": "身相三停",
-      "kind": "理论",
+      "kind": "待分类",
+      "classification_method": "unclassified",
       "char_count": 327,
       "doubtful": false,
       "missing_marker": false
@@ -698,7 +767,8 @@
       "start_line": 1327,
       "end_line": 1336,
       "heading": "五行形相",
-      "kind": "理论",
+      "kind": "待分类",
+      "classification_method": "unclassified",
       "char_count": 335,
       "doubtful": false,
       "missing_marker": false
@@ -708,7 +778,8 @@
       "start_line": 1340,
       "end_line": 1358,
       "heading": "欽定古今圖書集成/博物彙編/藝術典/第633卷",
-      "kind": "理论",
+      "kind": "待分类",
+      "classification_method": "unclassified",
       "char_count": 421,
       "doubtful": false,
       "missing_marker": false
@@ -718,7 +789,8 @@
       "start_line": 1362,
       "end_line": 1369,
       "heading": "五行象說",
-      "kind": "理论",
+      "kind": "待分类",
+      "classification_method": "unclassified",
       "char_count": 178,
       "doubtful": false,
       "missing_marker": false
@@ -729,6 +801,7 @@
       "end_line": 1376,
       "heading": "論形",
       "kind": "理论",
+      "classification_method": "pattern",
       "char_count": 133,
       "doubtful": false,
       "missing_marker": false
@@ -739,6 +812,7 @@
       "end_line": 1394,
       "heading": "論神",
       "kind": "理论",
+      "classification_method": "pattern",
       "char_count": 403,
       "doubtful": false,
       "missing_marker": false
@@ -748,7 +822,8 @@
       "start_line": 1396,
       "end_line": 1399,
       "heading": "達摩相主神有七",
-      "kind": "理论",
+      "kind": "待分类",
+      "classification_method": "unclassified",
       "char_count": 193,
       "doubtful": false,
       "missing_marker": false
@@ -759,6 +834,7 @@
       "end_line": 1426,
       "heading": "論氣",
       "kind": "理论",
+      "classification_method": "pattern",
       "char_count": 612,
       "doubtful": false,
       "missing_marker": false
@@ -769,6 +845,7 @@
       "end_line": 1432,
       "heading": "論五音",
       "kind": "理论",
+      "classification_method": "pattern",
       "char_count": 105,
       "doubtful": false,
       "missing_marker": false
@@ -779,6 +856,7 @@
       "end_line": 1459,
       "heading": "論聲",
       "kind": "理论",
+      "classification_method": "pattern",
       "char_count": 617,
       "doubtful": false,
       "missing_marker": false
@@ -788,7 +866,8 @@
       "start_line": 1461,
       "end_line": 1468,
       "heading": "許負聽聲篇",
-      "kind": "理论",
+      "kind": "待分类",
+      "classification_method": "unclassified",
       "char_count": 186,
       "doubtful": false,
       "missing_marker": false
@@ -798,7 +877,8 @@
       "start_line": 1470,
       "end_line": 1472,
       "heading": "富格例",
-      "kind": "理论",
+      "kind": "待分类",
+      "classification_method": "unclassified",
       "char_count": 59,
       "doubtful": false,
       "missing_marker": false
@@ -808,7 +888,8 @@
       "start_line": 1474,
       "end_line": 1475,
       "heading": "大富格",
-      "kind": "理论",
+      "kind": "待分类",
+      "classification_method": "unclassified",
       "char_count": 50,
       "doubtful": false,
       "missing_marker": false
@@ -818,7 +899,8 @@
       "start_line": 1477,
       "end_line": 1478,
       "heading": "中富格",
-      "kind": "理论",
+      "kind": "待分类",
+      "classification_method": "unclassified",
       "char_count": 49,
       "doubtful": false,
       "missing_marker": false
@@ -828,7 +910,8 @@
       "start_line": 1480,
       "end_line": 1483,
       "heading": "貴格例",
-      "kind": "理论",
+      "kind": "待分类",
+      "classification_method": "unclassified",
       "char_count": 78,
       "doubtful": false,
       "missing_marker": false
@@ -838,7 +921,8 @@
       "start_line": 1485,
       "end_line": 1487,
       "heading": "大貴格",
-      "kind": "理论",
+      "kind": "待分类",
+      "classification_method": "unclassified",
       "char_count": 58,
       "doubtful": false,
       "missing_marker": false
@@ -848,7 +932,8 @@
       "start_line": 1489,
       "end_line": 1490,
       "heading": "中貴格",
-      "kind": "理论",
+      "kind": "待分类",
+      "classification_method": "unclassified",
       "char_count": 43,
       "doubtful": false,
       "missing_marker": false
@@ -858,7 +943,8 @@
       "start_line": 1492,
       "end_line": 1493,
       "heading": "小貴格",
-      "kind": "理论",
+      "kind": "待分类",
+      "classification_method": "unclassified",
       "char_count": 48,
       "doubtful": false,
       "missing_marker": false
@@ -868,7 +954,8 @@
       "start_line": 1495,
       "end_line": 1498,
       "heading": "富相口訣",
-      "kind": "理论",
+      "kind": "待分类",
+      "classification_method": "unclassified",
       "char_count": 95,
       "doubtful": false,
       "missing_marker": false
@@ -878,7 +965,8 @@
       "start_line": 1500,
       "end_line": 1504,
       "heading": "貴相口訣",
-      "kind": "理论",
+      "kind": "待分类",
+      "classification_method": "unclassified",
       "char_count": 99,
       "doubtful": false,
       "missing_marker": false
@@ -888,7 +976,8 @@
       "start_line": 1506,
       "end_line": 1516,
       "heading": "壽相格",
-      "kind": "理论",
+      "kind": "待分类",
+      "classification_method": "unclassified",
       "char_count": 246,
       "doubtful": false,
       "missing_marker": false
@@ -898,7 +987,8 @@
       "start_line": 1518,
       "end_line": 1519,
       "heading": "福德格例",
-      "kind": "理论",
+      "kind": "待分类",
+      "classification_method": "unclassified",
       "char_count": 104,
       "doubtful": false,
       "missing_marker": false
@@ -908,7 +998,8 @@
       "start_line": 1521,
       "end_line": 1522,
       "heading": "成格例",
-      "kind": "理论",
+      "kind": "待分类",
+      "classification_method": "unclassified",
       "char_count": 30,
       "doubtful": false,
       "missing_marker": false
@@ -918,7 +1009,8 @@
       "start_line": 1524,
       "end_line": 1525,
       "heading": "成敗不足格",
-      "kind": "理论",
+      "kind": "待分类",
+      "classification_method": "unclassified",
       "char_count": 43,
       "doubtful": false,
       "missing_marker": false
@@ -928,7 +1020,8 @@
       "start_line": 1527,
       "end_line": 1528,
       "heading": "進格例",
-      "kind": "理论",
+      "kind": "待分类",
+      "classification_method": "unclassified",
       "char_count": 30,
       "doubtful": false,
       "missing_marker": false
@@ -938,7 +1031,8 @@
       "start_line": 1530,
       "end_line": 1531,
       "heading": "退格例",
-      "kind": "理论",
+      "kind": "待分类",
+      "classification_method": "unclassified",
       "char_count": 50,
       "doubtful": false,
       "missing_marker": false
@@ -948,7 +1042,8 @@
       "start_line": 1533,
       "end_line": 1534,
       "heading": "動格例",
-      "kind": "理论",
+      "kind": "待分类",
+      "classification_method": "unclassified",
       "char_count": 30,
       "doubtful": false,
       "missing_marker": false
@@ -958,7 +1053,8 @@
       "start_line": 1536,
       "end_line": 1537,
       "heading": "散格例",
-      "kind": "理论",
+      "kind": "待分类",
+      "classification_method": "unclassified",
       "char_count": 40,
       "doubtful": false,
       "missing_marker": false
@@ -968,7 +1064,8 @@
       "start_line": 1539,
       "end_line": 1540,
       "heading": "發達",
-      "kind": "理论",
+      "kind": "待分类",
+      "classification_method": "unclassified",
       "char_count": 33,
       "doubtful": false,
       "missing_marker": false
@@ -978,7 +1075,8 @@
       "start_line": 1542,
       "end_line": 1543,
       "heading": "清閑安樂",
-      "kind": "理论",
+      "kind": "待分类",
+      "classification_method": "unclassified",
       "char_count": 50,
       "doubtful": false,
       "missing_marker": false
@@ -988,7 +1086,8 @@
       "start_line": 1545,
       "end_line": 1546,
       "heading": "穩厚",
-      "kind": "理论",
+      "kind": "待分类",
+      "classification_method": "unclassified",
       "char_count": 49,
       "doubtful": false,
       "missing_marker": false
@@ -998,7 +1097,8 @@
       "start_line": 1548,
       "end_line": 1550,
       "heading": "聰明",
-      "kind": "理论",
+      "kind": "待分类",
+      "classification_method": "unclassified",
       "char_count": 52,
       "doubtful": false,
       "missing_marker": false
@@ -1008,7 +1108,8 @@
       "start_line": 1552,
       "end_line": 1553,
       "heading": "愚頑慵懶",
-      "kind": "理论",
+      "kind": "待分类",
+      "classification_method": "unclassified",
       "char_count": 42,
       "doubtful": false,
       "missing_marker": false
@@ -1018,7 +1119,8 @@
       "start_line": 1555,
       "end_line": 1556,
       "heading": "剛強狠癖",
-      "kind": "理论",
+      "kind": "待分类",
+      "classification_method": "unclassified",
       "char_count": 55,
       "doubtful": false,
       "missing_marker": false
@@ -1028,7 +1130,8 @@
       "start_line": 1558,
       "end_line": 1559,
       "heading": "伎巧",
-      "kind": "理论",
+      "kind": "待分类",
+      "classification_method": "unclassified",
       "char_count": 34,
       "doubtful": false,
       "missing_marker": false
@@ -1038,7 +1141,8 @@
       "start_line": 1561,
       "end_line": 1564,
       "heading": "孤格",
-      "kind": "理论",
+      "kind": "待分类",
+      "classification_method": "unclassified",
       "char_count": 96,
       "doubtful": false,
       "missing_marker": false
@@ -1048,7 +1152,8 @@
       "start_line": 1566,
       "end_line": 1568,
       "heading": "夭相",
-      "kind": "理论",
+      "kind": "待分类",
+      "classification_method": "unclassified",
       "char_count": 73,
       "doubtful": false,
       "missing_marker": false
@@ -1058,7 +1163,8 @@
       "start_line": 1570,
       "end_line": 1572,
       "heading": "窮蹇",
-      "kind": "理论",
+      "kind": "待分类",
+      "classification_method": "unclassified",
       "char_count": 54,
       "doubtful": false,
       "missing_marker": false
@@ -1068,7 +1174,8 @@
       "start_line": 1574,
       "end_line": 1579,
       "heading": "刑剋",
-      "kind": "理论",
+      "kind": "待分类",
+      "classification_method": "unclassified",
       "char_count": 145,
       "doubtful": false,
       "missing_marker": false
@@ -1078,7 +1185,8 @@
       "start_line": 1581,
       "end_line": 1587,
       "heading": "剋妻妾",
-      "kind": "理论",
+      "kind": "待分类",
+      "classification_method": "unclassified",
       "char_count": 164,
       "doubtful": false,
       "missing_marker": false
@@ -1088,7 +1196,8 @@
       "start_line": 1589,
       "end_line": 1593,
       "heading": "剋子息",
-      "kind": "理论",
+      "kind": "待分类",
+      "classification_method": "unclassified",
       "char_count": 108,
       "doubtful": false,
       "missing_marker": false
@@ -1098,7 +1207,8 @@
       "start_line": 1595,
       "end_line": 1604,
       "heading": "孤神格",
-      "kind": "理论",
+      "kind": "待分类",
+      "classification_method": "unclassified",
       "char_count": 127,
       "doubtful": false,
       "missing_marker": false
@@ -1108,7 +1218,8 @@
       "start_line": 1606,
       "end_line": 1615,
       "heading": "寡宿格",
-      "kind": "理论",
+      "kind": "待分类",
+      "classification_method": "unclassified",
       "char_count": 112,
       "doubtful": false,
       "missing_marker": false
@@ -1118,7 +1229,8 @@
       "start_line": 1617,
       "end_line": 1624,
       "heading": "亡神格",
-      "kind": "理论",
+      "kind": "待分类",
+      "classification_method": "unclassified",
       "char_count": 76,
       "doubtful": false,
       "missing_marker": false
@@ -1128,7 +1240,8 @@
       "start_line": 1626,
       "end_line": 1633,
       "heading": "劫殺格",
-      "kind": "理论",
+      "kind": "待分类",
+      "classification_method": "unclassified",
       "char_count": 96,
       "doubtful": false,
       "missing_marker": false
@@ -1138,7 +1251,8 @@
       "start_line": 1635,
       "end_line": 1646,
       "heading": "六衝格",
-      "kind": "理论",
+      "kind": "待分类",
+      "classification_method": "unclassified",
       "char_count": 102,
       "doubtful": false,
       "missing_marker": false
@@ -1148,7 +1262,8 @@
       "start_line": 1648,
       "end_line": 1653,
       "heading": "六害格",
-      "kind": "理论",
+      "kind": "待分类",
+      "classification_method": "unclassified",
       "char_count": 73,
       "doubtful": false,
       "missing_marker": false
@@ -1158,7 +1273,8 @@
       "start_line": 1655,
       "end_line": 1661,
       "heading": "華蓋格",
-      "kind": "理论",
+      "kind": "待分类",
+      "classification_method": "unclassified",
       "char_count": 81,
       "doubtful": false,
       "missing_marker": false
@@ -1168,7 +1284,8 @@
       "start_line": 1663,
       "end_line": 1678,
       "heading": "羊刃破家紋",
-      "kind": "理论",
+      "kind": "待分类",
+      "classification_method": "unclassified",
       "char_count": 174,
       "doubtful": false,
       "missing_marker": false
@@ -1178,7 +1295,8 @@
       "start_line": 1680,
       "end_line": 1698,
       "heading": "面上十大空亡",
-      "kind": "理论",
+      "kind": "待分类",
+      "classification_method": "unclassified",
       "char_count": 388,
       "doubtful": false,
       "missing_marker": false
@@ -1188,7 +1306,8 @@
       "start_line": 1700,
       "end_line": 1702,
       "heading": "十殺格",
-      "kind": "理论",
+      "kind": "待分类",
+      "classification_method": "unclassified",
       "char_count": 75,
       "doubtful": false,
       "missing_marker": false
@@ -1198,7 +1317,8 @@
       "start_line": 1704,
       "end_line": 1707,
       "heading": "奸詐格",
-      "kind": "理论",
+      "kind": "待分类",
+      "classification_method": "unclassified",
       "char_count": 100,
       "doubtful": false,
       "missing_marker": false
@@ -1208,7 +1328,8 @@
       "start_line": 1709,
       "end_line": 1712,
       "heading": "寬大格",
-      "kind": "理论",
+      "kind": "待分类",
+      "classification_method": "unclassified",
       "char_count": 92,
       "doubtful": false,
       "missing_marker": false
@@ -1218,7 +1339,8 @@
       "start_line": 1714,
       "end_line": 1715,
       "heading": "貪食格",
-      "kind": "理论",
+      "kind": "待分类",
+      "classification_method": "unclassified",
       "char_count": 40,
       "doubtful": false,
       "missing_marker": false
@@ -1228,7 +1350,8 @@
       "start_line": 1717,
       "end_line": 1718,
       "heading": "勞碌格",
-      "kind": "理论",
+      "kind": "待分类",
+      "classification_method": "unclassified",
       "char_count": 44,
       "doubtful": false,
       "missing_marker": false
@@ -1238,7 +1361,8 @@
       "start_line": 1720,
       "end_line": 1720,
       "heading": "四反格",
-      "kind": "理论",
+      "kind": "待分类",
+      "classification_method": "unclassified",
       "char_count": 16,
       "doubtful": false,
       "missing_marker": false
@@ -1248,7 +1372,8 @@
       "start_line": 1722,
       "end_line": 1722,
       "heading": "三尖格",
-      "kind": "理论",
+      "kind": "待分类",
+      "classification_method": "unclassified",
       "char_count": 9,
       "doubtful": false,
       "missing_marker": false
@@ -1258,7 +1383,8 @@
       "start_line": 1724,
       "end_line": 1724,
       "heading": "六削格",
-      "kind": "理论",
+      "kind": "待分类",
+      "classification_method": "unclassified",
       "char_count": 24,
       "doubtful": false,
       "missing_marker": false
@@ -1268,7 +1394,8 @@
       "start_line": 1726,
       "end_line": 1728,
       "heading": "惡死格",
-      "kind": "理论",
+      "kind": "待分类",
+      "classification_method": "unclassified",
       "char_count": 62,
       "doubtful": false,
       "missing_marker": false
@@ -1278,7 +1405,8 @@
       "start_line": 1730,
       "end_line": 1732,
       "heading": "溺水格",
-      "kind": "理论",
+      "kind": "待分类",
+      "classification_method": "unclassified",
       "char_count": 71,
       "doubtful": false,
       "missing_marker": false
@@ -1288,7 +1416,8 @@
       "start_line": 1734,
       "end_line": 1738,
       "heading": "火災格",
-      "kind": "理论",
+      "kind": "待分类",
+      "classification_method": "unclassified",
       "char_count": 148,
       "doubtful": false,
       "missing_marker": false
@@ -1298,7 +1427,8 @@
       "start_line": 1740,
       "end_line": 1745,
       "heading": "人面總論",
-      "kind": "理论",
+      "kind": "待分类",
+      "classification_method": "unclassified",
       "char_count": 130,
       "doubtful": false,
       "missing_marker": false
@@ -1309,6 +1439,7 @@
       "end_line": 1759,
       "heading": "論面",
       "kind": "理论",
+      "classification_method": "pattern",
       "char_count": 310,
       "doubtful": false,
       "missing_marker": false
@@ -1318,7 +1449,8 @@
       "start_line": 1761,
       "end_line": 1774,
       "heading": "相面",
-      "kind": "理论",
+      "kind": "待分类",
+      "classification_method": "unclassified",
       "char_count": 362,
       "doubtful": false,
       "missing_marker": false
@@ -1328,7 +1460,8 @@
       "start_line": 1776,
       "end_line": 1804,
       "heading": "相頭 〈 井髮 〉",
-      "kind": "理论",
+      "kind": "待分类",
+      "classification_method": "unclassified",
       "char_count": 671,
       "doubtful": false,
       "missing_marker": false
@@ -1339,6 +1472,7 @@
       "end_line": 1817,
       "heading": "論髮",
       "kind": "理论",
+      "classification_method": "pattern",
       "char_count": 342,
       "doubtful": false,
       "missing_marker": false
@@ -1349,6 +1483,7 @@
       "end_line": 1848,
       "heading": "論眉",
       "kind": "理论",
+      "classification_method": "pattern",
       "char_count": 403,
       "doubtful": false,
       "missing_marker": false
@@ -1358,7 +1493,8 @@
       "start_line": 1850,
       "end_line": 1871,
       "heading": "相眉",
-      "kind": "理论",
+      "kind": "待分类",
+      "classification_method": "unclassified",
       "char_count": 485,
       "doubtful": false,
       "missing_marker": false
@@ -1368,7 +1504,8 @@
       "start_line": 1873,
       "end_line": 1874,
       "heading": "鬼眉",
-      "kind": "理论",
+      "kind": "待分类",
+      "classification_method": "unclassified",
       "char_count": 32,
       "doubtful": false,
       "missing_marker": false
@@ -1378,7 +1515,8 @@
       "start_line": 1876,
       "end_line": 1877,
       "heading": "疏散眉",
-      "kind": "理论",
+      "kind": "待分类",
+      "classification_method": "unclassified",
       "char_count": 32,
       "doubtful": false,
       "missing_marker": false
@@ -1388,7 +1526,8 @@
       "start_line": 1879,
       "end_line": 1880,
       "heading": "黃薄眉",
-      "kind": "理论",
+      "kind": "待分类",
+      "classification_method": "unclassified",
       "char_count": 32,
       "doubtful": false,
       "missing_marker": false
@@ -1398,7 +1537,8 @@
       "start_line": 1882,
       "end_line": 1883,
       "heading": "掃箒眉",
-      "kind": "理论",
+      "kind": "待分类",
+      "classification_method": "unclassified",
       "char_count": 34,
       "doubtful": false,
       "missing_marker": false
@@ -1408,7 +1548,8 @@
       "start_line": 1885,
       "end_line": 1886,
       "heading": "尖刀眉",
-      "kind": "理论",
+      "kind": "待分类",
+      "classification_method": "unclassified",
       "char_count": 34,
       "doubtful": false,
       "missing_marker": false
@@ -1418,7 +1559,8 @@
       "start_line": 1888,
       "end_line": 1889,
       "heading": "八字眉",
-      "kind": "理论",
+      "kind": "待分类",
+      "classification_method": "unclassified",
       "char_count": 32,
       "doubtful": false,
       "missing_marker": false
@@ -1428,7 +1570,8 @@
       "start_line": 1891,
       "end_line": 1892,
       "heading": "羅漢眉",
-      "kind": "理论",
+      "kind": "待分类",
+      "classification_method": "unclassified",
       "char_count": 32,
       "doubtful": false,
       "missing_marker": false
@@ -1438,7 +1581,8 @@
       "start_line": 1894,
       "end_line": 1895,
       "heading": "龍眉",
-      "kind": "理论",
+      "kind": "待分类",
+      "classification_method": "unclassified",
       "char_count": 32,
       "doubtful": false,
       "missing_marker": false
@@ -1448,7 +1592,8 @@
       "start_line": 1897,
       "end_line": 1898,
       "heading": "柳葉眉",
-      "kind": "理论",
+      "kind": "待分类",
+      "classification_method": "unclassified",
       "char_count": 32,
       "doubtful": false,
       "missing_marker": false
@@ -1458,7 +1603,8 @@
       "start_line": 1900,
       "end_line": 1901,
       "heading": "劍眉",
-      "kind": "理论",
+      "kind": "待分类",
+      "classification_method": "unclassified",
       "char_count": 32,
       "doubtful": false,
       "missing_marker": false
@@ -1468,7 +1614,8 @@
       "start_line": 1903,
       "end_line": 1904,
       "heading": "獅子眉",
-      "kind": "理论",
+      "kind": "待分类",
+      "classification_method": "unclassified",
       "char_count": 32,
       "doubtful": false,
       "missing_marker": false
@@ -1478,7 +1625,8 @@
       "start_line": 1906,
       "end_line": 1906,
       "heading": "前清後疏眉",
-      "kind": "理论",
+      "kind": "待分类",
+      "classification_method": "unclassified",
       "char_count": 33,
       "doubtful": false,
       "missing_marker": false
@@ -1488,7 +1636,8 @@
       "start_line": 1908,
       "end_line": 1909,
       "heading": "輕清眉",
-      "kind": "理论",
+      "kind": "待分类",
+      "classification_method": "unclassified",
       "char_count": 32,
       "doubtful": false,
       "missing_marker": false
@@ -1498,7 +1647,8 @@
       "start_line": 1911,
       "end_line": 1912,
       "heading": "短促秀眉",
-      "kind": "理论",
+      "kind": "待分类",
+      "classification_method": "unclassified",
       "char_count": 32,
       "doubtful": false,
       "missing_marker": false
@@ -1508,7 +1658,8 @@
       "start_line": 1914,
       "end_line": 1915,
       "heading": "旋螺眉",
-      "kind": "理论",
+      "kind": "待分类",
+      "classification_method": "unclassified",
       "char_count": 32,
       "doubtful": false,
       "missing_marker": false
@@ -1518,7 +1669,8 @@
       "start_line": 1917,
       "end_line": 1918,
       "heading": "一字眉",
-      "kind": "理论",
+      "kind": "待分类",
+      "classification_method": "unclassified",
       "char_count": 32,
       "doubtful": false,
       "missing_marker": false
@@ -1528,7 +1680,8 @@
       "start_line": 1920,
       "end_line": 1921,
       "heading": "臥蠶眉",
-      "kind": "理论",
+      "kind": "待分类",
+      "classification_method": "unclassified",
       "char_count": 32,
       "doubtful": false,
       "missing_marker": false
@@ -1538,7 +1691,8 @@
       "start_line": 1923,
       "end_line": 1924,
       "heading": "新月眉",
-      "kind": "理论",
+      "kind": "待分类",
+      "classification_method": "unclassified",
       "char_count": 34,
       "doubtful": false,
       "missing_marker": false
@@ -1548,7 +1702,8 @@
       "start_line": 1926,
       "end_line": 1927,
       "heading": "虎眉",
-      "kind": "理论",
+      "kind": "待分类",
+      "classification_method": "unclassified",
       "char_count": 32,
       "doubtful": false,
       "missing_marker": false
@@ -1558,7 +1713,8 @@
       "start_line": 1929,
       "end_line": 1930,
       "heading": "小掃箒眉",
-      "kind": "理论",
+      "kind": "待分类",
+      "classification_method": "unclassified",
       "char_count": 34,
       "doubtful": false,
       "missing_marker": false
@@ -1568,7 +1724,8 @@
       "start_line": 1932,
       "end_line": 1933,
       "heading": "大短促眉",
-      "kind": "理论",
+      "kind": "待分类",
+      "classification_method": "unclassified",
       "char_count": 32,
       "doubtful": false,
       "missing_marker": false
@@ -1578,7 +1735,8 @@
       "start_line": 1935,
       "end_line": 1936,
       "heading": "清秀眉",
-      "kind": "理论",
+      "kind": "待分类",
+      "classification_method": "unclassified",
       "char_count": 32,
       "doubtful": false,
       "missing_marker": false
@@ -1588,7 +1746,8 @@
       "start_line": 1938,
       "end_line": 1939,
       "heading": "間斷眉",
-      "kind": "理论",
+      "kind": "待分类",
+      "classification_method": "unclassified",
       "char_count": 32,
       "doubtful": false,
       "missing_marker": false
@@ -1598,7 +1757,8 @@
       "start_line": 1941,
       "end_line": 1942,
       "heading": "交加眉",
-      "kind": "理论",
+      "kind": "待分类",
+      "classification_method": "unclassified",
       "char_count": 32,
       "doubtful": false,
       "missing_marker": false
@@ -1608,7 +1768,8 @@
       "start_line": 1944,
       "end_line": 1957,
       "heading": "相目論",
-      "kind": "理论",
+      "kind": "待分类",
+      "classification_method": "unclassified",
       "char_count": 339,
       "doubtful": false,
       "missing_marker": false
@@ -1618,7 +1779,8 @@
       "start_line": 1959,
       "end_line": 2001,
       "heading": "達摩相眼",
-      "kind": "理论",
+      "kind": "待分类",
+      "classification_method": "unclassified",
       "char_count": 787,
       "doubtful": false,
       "missing_marker": false
@@ -1628,7 +1790,8 @@
       "start_line": 2003,
       "end_line": 2004,
       "heading": "龍眼",
-      "kind": "理论",
+      "kind": "待分类",
+      "classification_method": "unclassified",
       "char_count": 32,
       "doubtful": false,
       "missing_marker": false
@@ -1638,7 +1801,8 @@
       "start_line": 2006,
       "end_line": 2007,
       "heading": "鳳眼",
-      "kind": "理论",
+      "kind": "待分类",
+      "classification_method": "unclassified",
       "char_count": 32,
       "doubtful": false,
       "missing_marker": false
@@ -1648,7 +1812,8 @@
       "start_line": 2009,
       "end_line": 2010,
       "heading": "猴眼",
-      "kind": "理论",
+      "kind": "待分类",
+      "classification_method": "unclassified",
       "char_count": 32,
       "doubtful": false,
       "missing_marker": false
@@ -1658,7 +1823,8 @@
       "start_line": 2012,
       "end_line": 2013,
       "heading": "象眼",
-      "kind": "理论",
+      "kind": "待分类",
+      "classification_method": "unclassified",
       "char_count": 32,
       "doubtful": false,
       "missing_marker": false
@@ -1668,7 +1834,8 @@
       "start_line": 2015,
       "end_line": 2016,
       "heading": "龜眼",
-      "kind": "理论",
+      "kind": "待分类",
+      "classification_method": "unclassified",
       "char_count": 32,
       "doubtful": false,
       "missing_marker": false
@@ -1678,7 +1845,8 @@
       "start_line": 2018,
       "end_line": 2019,
       "heading": "鵲眼",
-      "kind": "理论",
+      "kind": "待分类",
+      "classification_method": "unclassified",
       "char_count": 32,
       "doubtful": false,
       "missing_marker": false
@@ -1688,7 +1856,8 @@
       "start_line": 2021,
       "end_line": 2022,
       "heading": "獅眼",
-      "kind": "理论",
+      "kind": "待分类",
+      "classification_method": "unclassified",
       "char_count": 32,
       "doubtful": false,
       "missing_marker": false
@@ -1698,7 +1867,8 @@
       "start_line": 2024,
       "end_line": 2025,
       "heading": "虎眼",
-      "kind": "理论",
+      "kind": "待分类",
+      "classification_method": "unclassified",
       "char_count": 32,
       "doubtful": false,
       "missing_marker": false
@@ -1708,7 +1878,8 @@
       "start_line": 2027,
       "end_line": 2028,
       "heading": "牛眼",
-      "kind": "理论",
+      "kind": "待分类",
+      "classification_method": "unclassified",
       "char_count": 32,
       "doubtful": false,
       "missing_marker": false
@@ -1718,7 +1889,8 @@
       "start_line": 2030,
       "end_line": 2031,
       "heading": "孔雀眼",
-      "kind": "理论",
+      "kind": "待分类",
+      "classification_method": "unclassified",
       "char_count": 32,
       "doubtful": false,
       "missing_marker": false
@@ -1728,7 +1900,8 @@
       "start_line": 2033,
       "end_line": 2034,
       "heading": "鴛鴦眼",
-      "kind": "理论",
+      "kind": "待分类",
+      "classification_method": "unclassified",
       "char_count": 32,
       "doubtful": false,
       "missing_marker": false
@@ -1738,7 +1911,8 @@
       "start_line": 2036,
       "end_line": 2037,
       "heading": "鳴鳳眼",
-      "kind": "理论",
+      "kind": "待分类",
+      "classification_method": "unclassified",
       "char_count": 32,
       "doubtful": false,
       "missing_marker": false
@@ -1748,7 +1922,8 @@
       "start_line": 2039,
       "end_line": 2040,
       "heading": "睡鳳眼",
-      "kind": "理论",
+      "kind": "待分类",
+      "classification_method": "unclassified",
       "char_count": 32,
       "doubtful": false,
       "missing_marker": false
@@ -1758,7 +1933,8 @@
       "start_line": 2042,
       "end_line": 2043,
       "heading": "瑞鳳眼",
-      "kind": "理论",
+      "kind": "待分类",
+      "classification_method": "unclassified",
       "char_count": 32,
       "doubtful": false,
       "missing_marker": false
@@ -1768,7 +1944,8 @@
       "start_line": 2045,
       "end_line": 2046,
       "heading": "鴈眼",
-      "kind": "理论",
+      "kind": "待分类",
+      "classification_method": "unclassified",
       "char_count": 32,
       "doubtful": false,
       "missing_marker": false
@@ -1778,7 +1955,8 @@
       "start_line": 2048,
       "end_line": 2049,
       "heading": "陰陽眼",
-      "kind": "理论",
+      "kind": "待分类",
+      "classification_method": "unclassified",
       "char_count": 32,
       "doubtful": false,
       "missing_marker": false
@@ -1788,7 +1966,8 @@
       "start_line": 2051,
       "end_line": 2052,
       "heading": "鶴形眼",
-      "kind": "理论",
+      "kind": "待分类",
+      "classification_method": "unclassified",
       "char_count": 32,
       "doubtful": false,
       "missing_marker": false
@@ -1798,7 +1977,8 @@
       "start_line": 2054,
       "end_line": 2055,
       "heading": "鵝眼",
-      "kind": "理论",
+      "kind": "待分类",
+      "classification_method": "unclassified",
       "char_count": 32,
       "doubtful": false,
       "missing_marker": false
@@ -1808,7 +1988,8 @@
       "start_line": 2057,
       "end_line": 2058,
       "heading": "桃花眼",
-      "kind": "理论",
+      "kind": "待分类",
+      "classification_method": "unclassified",
       "char_count": 32,
       "doubtful": false,
       "missing_marker": false
@@ -1818,7 +1999,8 @@
       "start_line": 2060,
       "end_line": 2061,
       "heading": "醉眼",
-      "kind": "理论",
+      "kind": "待分类",
+      "classification_method": "unclassified",
       "char_count": 32,
       "doubtful": false,
       "missing_marker": false
@@ -1828,7 +2010,8 @@
       "start_line": 2063,
       "end_line": 2064,
       "heading": "鶴眼",
-      "kind": "理论",
+      "kind": "待分类",
+      "classification_method": "unclassified",
       "char_count": 32,
       "doubtful": false,
       "missing_marker": false
@@ -1838,7 +2021,8 @@
       "start_line": 2066,
       "end_line": 2067,
       "heading": "羊眼",
-      "kind": "理论",
+      "kind": "待分类",
+      "classification_method": "unclassified",
       "char_count": 32,
       "doubtful": false,
       "missing_marker": false
@@ -1848,7 +2032,8 @@
       "start_line": 2069,
       "end_line": 2070,
       "heading": "魚眼",
-      "kind": "理论",
+      "kind": "待分类",
+      "classification_method": "unclassified",
       "char_count": 32,
       "doubtful": false,
       "missing_marker": false
@@ -1858,7 +2043,8 @@
       "start_line": 2072,
       "end_line": 2073,
       "heading": "馬眼",
-      "kind": "理论",
+      "kind": "待分类",
+      "classification_method": "unclassified",
       "char_count": 32,
       "doubtful": false,
       "missing_marker": false
@@ -1868,7 +2054,8 @@
       "start_line": 2075,
       "end_line": 2078,
       "heading": "豬眼",
-      "kind": "理论",
+      "kind": "待分类",
+      "classification_method": "unclassified",
       "char_count": 73,
       "doubtful": false,
       "missing_marker": false
@@ -1878,7 +2065,8 @@
       "start_line": 2080,
       "end_line": 2081,
       "heading": "鴿眼",
-      "kind": "理论",
+      "kind": "待分类",
+      "classification_method": "unclassified",
       "char_count": 32,
       "doubtful": false,
       "missing_marker": false
@@ -1888,7 +2076,8 @@
       "start_line": 2083,
       "end_line": 2084,
       "heading": "鸞眼",
-      "kind": "理论",
+      "kind": "待分类",
+      "classification_method": "unclassified",
       "char_count": 34,
       "doubtful": false,
       "missing_marker": false
@@ -1898,7 +2087,8 @@
       "start_line": 2086,
       "end_line": 2087,
       "heading": "狼目",
-      "kind": "理论",
+      "kind": "待分类",
+      "classification_method": "unclassified",
       "char_count": 32,
       "doubtful": false,
       "missing_marker": false
@@ -1908,7 +2098,8 @@
       "start_line": 2089,
       "end_line": 2090,
       "heading": "伏犀眼",
-      "kind": "理论",
+      "kind": "待分类",
+      "classification_method": "unclassified",
       "char_count": 32,
       "doubtful": false,
       "missing_marker": false
@@ -1918,7 +2109,8 @@
       "start_line": 2092,
       "end_line": 2093,
       "heading": "鷺鷥眼",
-      "kind": "理论",
+      "kind": "待分类",
+      "classification_method": "unclassified",
       "char_count": 32,
       "doubtful": false,
       "missing_marker": false
@@ -1928,7 +2120,8 @@
       "start_line": 2095,
       "end_line": 2096,
       "heading": "猿眼",
-      "kind": "理论",
+      "kind": "待分类",
+      "classification_method": "unclassified",
       "char_count": 34,
       "doubtful": false,
       "missing_marker": false
@@ -1938,7 +2131,8 @@
       "start_line": 2098,
       "end_line": 2099,
       "heading": "鹿眼",
-      "kind": "理论",
+      "kind": "待分类",
+      "classification_method": "unclassified",
       "char_count": 34,
       "doubtful": false,
       "missing_marker": false
@@ -1948,7 +2142,8 @@
       "start_line": 2101,
       "end_line": 2102,
       "heading": "熊眼",
-      "kind": "理论",
+      "kind": "待分类",
+      "classification_method": "unclassified",
       "char_count": 32,
       "doubtful": false,
       "missing_marker": false
@@ -1958,7 +2153,8 @@
       "start_line": 2104,
       "end_line": 2105,
       "heading": "蝦眼",
-      "kind": "理论",
+      "kind": "待分类",
+      "classification_method": "unclassified",
       "char_count": 36,
       "doubtful": false,
       "missing_marker": false
@@ -1968,7 +2164,8 @@
       "start_line": 2107,
       "end_line": 2108,
       "heading": "蟹眼",
-      "kind": "理论",
+      "kind": "待分类",
+      "classification_method": "unclassified",
       "char_count": 32,
       "doubtful": false,
       "missing_marker": false
@@ -1978,7 +2175,8 @@
       "start_line": 2110,
       "end_line": 2111,
       "heading": "燕眼",
-      "kind": "理论",
+      "kind": "待分类",
+      "classification_method": "unclassified",
       "char_count": 32,
       "doubtful": false,
       "missing_marker": false
@@ -1988,7 +2186,8 @@
       "start_line": 2113,
       "end_line": 2114,
       "heading": "鷓鴣眼",
-      "kind": "理论",
+      "kind": "待分类",
+      "classification_method": "unclassified",
       "char_count": 32,
       "doubtful": false,
       "missing_marker": false
@@ -1998,7 +2197,8 @@
       "start_line": 2116,
       "end_line": 2122,
       "heading": "貓眼",
-      "kind": "理论",
+      "kind": "待分类",
+      "classification_method": "unclassified",
       "char_count": 267,
       "doubtful": false,
       "missing_marker": false
@@ -2008,7 +2208,8 @@
       "start_line": 2126,
       "end_line": 2138,
       "heading": "欽定古今圖書集成/博物彙編/藝術典/第634卷",
-      "kind": "理论",
+      "kind": "待分类",
+      "classification_method": "unclassified",
       "char_count": 277,
       "doubtful": false,
       "missing_marker": false
@@ -2018,7 +2219,8 @@
       "start_line": 2142,
       "end_line": 2150,
       "heading": "相印堂",
-      "kind": "理论",
+      "kind": "待分类",
+      "classification_method": "unclassified",
       "char_count": 189,
       "doubtful": false,
       "missing_marker": false
@@ -2028,7 +2230,8 @@
       "start_line": 2152,
       "end_line": 2160,
       "heading": "相山根",
-      "kind": "理论",
+      "kind": "待分类",
+      "classification_method": "unclassified",
       "char_count": 195,
       "doubtful": false,
       "missing_marker": false
@@ -2038,7 +2241,8 @@
       "start_line": 2162,
       "end_line": 2199,
       "heading": "相鼻",
-      "kind": "理论",
+      "kind": "待分类",
+      "classification_method": "unclassified",
       "char_count": 654,
       "doubtful": false,
       "missing_marker": false
@@ -2048,7 +2252,8 @@
       "start_line": 2201,
       "end_line": 2202,
       "heading": "龍鼻",
-      "kind": "理论",
+      "kind": "待分类",
+      "classification_method": "unclassified",
       "char_count": 32,
       "doubtful": false,
       "missing_marker": false
@@ -2058,7 +2263,8 @@
       "start_line": 2204,
       "end_line": 2205,
       "heading": "虎鼻",
-      "kind": "理论",
+      "kind": "待分类",
+      "classification_method": "unclassified",
       "char_count": 34,
       "doubtful": false,
       "missing_marker": false
@@ -2068,7 +2274,8 @@
       "start_line": 2207,
       "end_line": 2210,
       "heading": "胡羊鼻",
-      "kind": "理论",
+      "kind": "待分类",
+      "classification_method": "unclassified",
       "char_count": 73,
       "doubtful": false,
       "missing_marker": false
@@ -2078,7 +2285,8 @@
       "start_line": 2212,
       "end_line": 2213,
       "heading": "懸膽鼻",
-      "kind": "理论",
+      "kind": "待分类",
+      "classification_method": "unclassified",
       "char_count": 32,
       "doubtful": false,
       "missing_marker": false
@@ -2088,7 +2296,8 @@
       "start_line": 2215,
       "end_line": 2216,
       "heading": "伏犀鼻",
-      "kind": "理论",
+      "kind": "待分类",
+      "classification_method": "unclassified",
       "char_count": 32,
       "doubtful": false,
       "missing_marker": false
@@ -2098,7 +2307,8 @@
       "start_line": 2218,
       "end_line": 2219,
       "heading": "牛鼻",
-      "kind": "理论",
+      "kind": "待分类",
+      "classification_method": "unclassified",
       "char_count": 34,
       "doubtful": false,
       "missing_marker": false
@@ -2108,7 +2318,8 @@
       "start_line": 2221,
       "end_line": 2222,
       "heading": "截筒鼻",
-      "kind": "理论",
+      "kind": "待分类",
+      "classification_method": "unclassified",
       "char_count": 32,
       "doubtful": false,
       "missing_marker": false
@@ -2118,7 +2329,8 @@
       "start_line": 2224,
       "end_line": 2225,
       "heading": "蒜鼻",
-      "kind": "理论",
+      "kind": "待分类",
+      "classification_method": "unclassified",
       "char_count": 34,
       "doubtful": false,
       "missing_marker": false
@@ -2128,7 +2340,8 @@
       "start_line": 2227,
       "end_line": 2228,
       "heading": "盛囊鼻",
-      "kind": "理论",
+      "kind": "待分类",
+      "classification_method": "unclassified",
       "char_count": 32,
       "doubtful": false,
       "missing_marker": false
@@ -2138,7 +2351,8 @@
       "start_line": 2230,
       "end_line": 2231,
       "heading": "猴鼻",
-      "kind": "理论",
+      "kind": "待分类",
+      "classification_method": "unclassified",
       "char_count": 32,
       "doubtful": false,
       "missing_marker": false
@@ -2148,7 +2362,8 @@
       "start_line": 2233,
       "end_line": 2234,
       "heading": "鷹嘴鼻",
-      "kind": "理论",
+      "kind": "待分类",
+      "classification_method": "unclassified",
       "char_count": 34,
       "doubtful": false,
       "missing_marker": false
@@ -2158,7 +2373,8 @@
       "start_line": 2236,
       "end_line": 2237,
       "heading": "狗鼻",
-      "kind": "理论",
+      "kind": "待分类",
+      "classification_method": "unclassified",
       "char_count": 32,
       "doubtful": false,
       "missing_marker": false
@@ -2168,7 +2384,8 @@
       "start_line": 2239,
       "end_line": 2240,
       "heading": "鯽魚鼻",
-      "kind": "理论",
+      "kind": "待分类",
+      "classification_method": "unclassified",
       "char_count": 32,
       "doubtful": false,
       "missing_marker": false
@@ -2178,7 +2395,8 @@
       "start_line": 2242,
       "end_line": 2243,
       "heading": "三彎三曲鼻",
-      "kind": "理论",
+      "kind": "待分类",
+      "classification_method": "unclassified",
       "char_count": 32,
       "doubtful": false,
       "missing_marker": false
@@ -2188,7 +2406,8 @@
       "start_line": 2245,
       "end_line": 2246,
       "heading": "劍鋒鼻",
-      "kind": "理论",
+      "kind": "待分类",
+      "classification_method": "unclassified",
       "char_count": 32,
       "doubtful": false,
       "missing_marker": false
@@ -2198,7 +2417,8 @@
       "start_line": 2248,
       "end_line": 2249,
       "heading": "偏凹鼻",
-      "kind": "理论",
+      "kind": "待分类",
+      "classification_method": "unclassified",
       "char_count": 32,
       "doubtful": false,
       "missing_marker": false
@@ -2208,7 +2428,8 @@
       "start_line": 2251,
       "end_line": 2252,
       "heading": "孤峰鼻",
-      "kind": "理论",
+      "kind": "待分类",
+      "classification_method": "unclassified",
       "char_count": 32,
       "doubtful": false,
       "missing_marker": false
@@ -2218,7 +2439,8 @@
       "start_line": 2254,
       "end_line": 2255,
       "heading": "露脊鼻",
-      "kind": "理论",
+      "kind": "待分类",
+      "classification_method": "unclassified",
       "char_count": 34,
       "doubtful": false,
       "missing_marker": false
@@ -2228,7 +2450,8 @@
       "start_line": 2257,
       "end_line": 2258,
       "heading": "露竈鼻",
-      "kind": "理论",
+      "kind": "待分类",
+      "classification_method": "unclassified",
       "char_count": 32,
       "doubtful": false,
       "missing_marker": false
@@ -2238,7 +2461,8 @@
       "start_line": 2260,
       "end_line": 2261,
       "heading": "獐鼻",
-      "kind": "理论",
+      "kind": "待分类",
+      "classification_method": "unclassified",
       "char_count": 32,
       "doubtful": false,
       "missing_marker": false
@@ -2248,7 +2472,8 @@
       "start_line": 2263,
       "end_line": 2264,
       "heading": "猩鼻",
-      "kind": "理论",
+      "kind": "待分类",
+      "classification_method": "unclassified",
       "char_count": 34,
       "doubtful": false,
       "missing_marker": false
@@ -2258,7 +2483,8 @@
       "start_line": 2266,
       "end_line": 2267,
       "heading": "鹿鼻",
-      "kind": "理论",
+      "kind": "待分类",
+      "classification_method": "unclassified",
       "char_count": 32,
       "doubtful": false,
       "missing_marker": false
@@ -2268,7 +2494,8 @@
       "start_line": 2269,
       "end_line": 2270,
       "heading": "猿鼻",
-      "kind": "理论",
+      "kind": "待分类",
+      "classification_method": "unclassified",
       "char_count": 32,
       "doubtful": false,
       "missing_marker": false
@@ -2278,7 +2505,8 @@
       "start_line": 2272,
       "end_line": 2287,
       "heading": "人中論",
-      "kind": "理论",
+      "kind": "待分类",
+      "classification_method": "unclassified",
       "char_count": 368,
       "doubtful": false,
       "missing_marker": false
@@ -2288,7 +2516,8 @@
       "start_line": 2289,
       "end_line": 2296,
       "heading": "相人中篇",
-      "kind": "理论",
+      "kind": "待分类",
+      "classification_method": "unclassified",
       "char_count": 188,
       "doubtful": false,
       "missing_marker": false
@@ -2298,7 +2527,8 @@
       "start_line": 2298,
       "end_line": 2322,
       "heading": "相耳",
-      "kind": "理论",
+      "kind": "待分类",
+      "classification_method": "unclassified",
       "char_count": 393,
       "doubtful": false,
       "missing_marker": false
@@ -2308,7 +2538,8 @@
       "start_line": 2324,
       "end_line": 2336,
       "heading": "許負相耳篇",
-      "kind": "理论",
+      "kind": "待分类",
+      "classification_method": "unclassified",
       "char_count": 303,
       "doubtful": false,
       "missing_marker": false
@@ -2318,7 +2549,8 @@
       "start_line": 2338,
       "end_line": 2339,
       "heading": "土耳",
-      "kind": "理论",
+      "kind": "待分类",
+      "classification_method": "unclassified",
       "char_count": 34,
       "doubtful": false,
       "missing_marker": false
@@ -2328,7 +2560,8 @@
       "start_line": 2341,
       "end_line": 2342,
       "heading": "棋子耳",
-      "kind": "理论",
+      "kind": "待分类",
+      "classification_method": "unclassified",
       "char_count": 32,
       "doubtful": false,
       "missing_marker": false
@@ -2338,7 +2571,8 @@
       "start_line": 2344,
       "end_line": 2345,
       "heading": "虎耳",
-      "kind": "理论",
+      "kind": "待分类",
+      "classification_method": "unclassified",
       "char_count": 32,
       "doubtful": false,
       "missing_marker": false
@@ -2348,7 +2582,8 @@
       "start_line": 2347,
       "end_line": 2348,
       "heading": "箭羽耳",
-      "kind": "理论",
+      "kind": "待分类",
+      "classification_method": "unclassified",
       "char_count": 32,
       "doubtful": false,
       "missing_marker": false
@@ -2358,7 +2593,8 @@
       "start_line": 2350,
       "end_line": 2351,
       "heading": "金耳",
-      "kind": "理论",
+      "kind": "待分类",
+      "classification_method": "unclassified",
       "char_count": 32,
       "doubtful": false,
       "missing_marker": false
@@ -2368,7 +2604,8 @@
       "start_line": 2353,
       "end_line": 2354,
       "heading": "木耳",
-      "kind": "理论",
+      "kind": "待分类",
+      "classification_method": "unclassified",
       "char_count": 34,
       "doubtful": false,
       "missing_marker": false
@@ -2378,7 +2615,8 @@
       "start_line": 2356,
       "end_line": 2357,
       "heading": "水耳",
-      "kind": "理论",
+      "kind": "待分类",
+      "classification_method": "unclassified",
       "char_count": 34,
       "doubtful": false,
       "missing_marker": false
@@ -2388,7 +2626,8 @@
       "start_line": 2359,
       "end_line": 2360,
       "heading": "火耳",
-      "kind": "理论",
+      "kind": "待分类",
+      "classification_method": "unclassified",
       "char_count": 32,
       "doubtful": false,
       "missing_marker": false
@@ -2398,7 +2637,8 @@
       "start_line": 2362,
       "end_line": 2363,
       "heading": "豬耳",
-      "kind": "理论",
+      "kind": "待分类",
+      "classification_method": "unclassified",
       "char_count": 32,
       "doubtful": false,
       "missing_marker": false
@@ -2408,7 +2648,8 @@
       "start_line": 2365,
       "end_line": 2366,
       "heading": "低反耳",
-      "kind": "理论",
+      "kind": "待分类",
+      "classification_method": "unclassified",
       "char_count": 32,
       "doubtful": false,
       "missing_marker": false
@@ -2418,7 +2659,8 @@
       "start_line": 2368,
       "end_line": 2369,
       "heading": "垂肩耳",
-      "kind": "理论",
+      "kind": "待分类",
+      "classification_method": "unclassified",
       "char_count": 32,
       "doubtful": false,
       "missing_marker": false
@@ -2428,7 +2670,8 @@
       "start_line": 2371,
       "end_line": 2372,
       "heading": "貼腦耳",
-      "kind": "理论",
+      "kind": "待分类",
+      "classification_method": "unclassified",
       "char_count": 32,
       "doubtful": false,
       "missing_marker": false
@@ -2438,7 +2681,8 @@
       "start_line": 2374,
       "end_line": 2375,
       "heading": "開花耳",
-      "kind": "理论",
+      "kind": "待分类",
+      "classification_method": "unclassified",
       "char_count": 32,
       "doubtful": false,
       "missing_marker": false
@@ -2448,7 +2692,8 @@
       "start_line": 2377,
       "end_line": 2377,
       "heading": "扇風耳",
-      "kind": "理论",
+      "kind": "待分类",
+      "classification_method": "unclassified",
       "char_count": 35,
       "doubtful": false,
       "missing_marker": false
@@ -2458,7 +2703,8 @@
       "start_line": 2379,
       "end_line": 2380,
       "heading": "鼠耳",
-      "kind": "理论",
+      "kind": "待分类",
+      "classification_method": "unclassified",
       "char_count": 32,
       "doubtful": false,
       "missing_marker": false
@@ -2468,7 +2714,8 @@
       "start_line": 2382,
       "end_line": 2383,
       "heading": "驢耳",
-      "kind": "理论",
+      "kind": "待分类",
+      "classification_method": "unclassified",
       "char_count": 32,
       "doubtful": false,
       "missing_marker": false
@@ -2478,7 +2725,8 @@
       "start_line": 2385,
       "end_line": 2398,
       "heading": "相口",
-      "kind": "理论",
+      "kind": "待分类",
+      "classification_method": "unclassified",
       "char_count": 366,
       "doubtful": false,
       "missing_marker": false
@@ -2488,7 +2736,8 @@
       "start_line": 2400,
       "end_line": 2417,
       "heading": "許負相口篇",
-      "kind": "理论",
+      "kind": "待分类",
+      "classification_method": "unclassified",
       "char_count": 412,
       "doubtful": false,
       "missing_marker": false
@@ -2498,7 +2747,8 @@
       "start_line": 2419,
       "end_line": 2420,
       "heading": "四字口",
-      "kind": "理论",
+      "kind": "待分类",
+      "classification_method": "unclassified",
       "char_count": 32,
       "doubtful": false,
       "missing_marker": false
@@ -2508,7 +2758,8 @@
       "start_line": 2422,
       "end_line": 2423,
       "heading": "方口",
-      "kind": "理论",
+      "kind": "待分类",
+      "classification_method": "unclassified",
       "char_count": 34,
       "doubtful": false,
       "missing_marker": false
@@ -2518,7 +2769,8 @@
       "start_line": 2425,
       "end_line": 2426,
       "heading": "仰月口",
-      "kind": "理论",
+      "kind": "待分类",
+      "classification_method": "unclassified",
       "char_count": 32,
       "doubtful": false,
       "missing_marker": false
@@ -2528,7 +2780,8 @@
       "start_line": 2428,
       "end_line": 2429,
       "heading": "彎弓口",
-      "kind": "理论",
+      "kind": "待分类",
+      "classification_method": "unclassified",
       "char_count": 32,
       "doubtful": false,
       "missing_marker": false
@@ -2538,7 +2791,8 @@
       "start_line": 2431,
       "end_line": 2432,
       "heading": "牛口",
-      "kind": "理论",
+      "kind": "待分类",
+      "classification_method": "unclassified",
       "char_count": 32,
       "doubtful": false,
       "missing_marker": false
@@ -2548,7 +2802,8 @@
       "start_line": 2434,
       "end_line": 2435,
       "heading": "龍口",
-      "kind": "理论",
+      "kind": "待分类",
+      "classification_method": "unclassified",
       "char_count": 32,
       "doubtful": false,
       "missing_marker": false
@@ -2558,7 +2813,8 @@
       "start_line": 2437,
       "end_line": 2438,
       "heading": "虎口",
-      "kind": "理论",
+      "kind": "待分类",
+      "classification_method": "unclassified",
       "char_count": 34,
       "doubtful": false,
       "missing_marker": false
@@ -2568,7 +2824,8 @@
       "start_line": 2440,
       "end_line": 2441,
       "heading": "羊口",
-      "kind": "理论",
+      "kind": "待分类",
+      "classification_method": "unclassified",
       "char_count": 32,
       "doubtful": false,
       "missing_marker": false
@@ -2578,7 +2835,8 @@
       "start_line": 2443,
       "end_line": 2444,
       "heading": "豬口",
-      "kind": "理论",
+      "kind": "待分类",
+      "classification_method": "unclassified",
       "char_count": 32,
       "doubtful": false,
       "missing_marker": false
@@ -2588,7 +2846,8 @@
       "start_line": 2446,
       "end_line": 2447,
       "heading": "吹火口",
-      "kind": "理论",
+      "kind": "待分类",
+      "classification_method": "unclassified",
       "char_count": 32,
       "doubtful": false,
       "missing_marker": false
@@ -2598,7 +2857,8 @@
       "start_line": 2449,
       "end_line": 2450,
       "heading": "皺紋口",
-      "kind": "理论",
+      "kind": "待分类",
+      "classification_method": "unclassified",
       "char_count": 32,
       "doubtful": false,
       "missing_marker": false
@@ -2608,7 +2868,8 @@
       "start_line": 2452,
       "end_line": 2453,
       "heading": "櫻桃口",
-      "kind": "理论",
+      "kind": "待分类",
+      "classification_method": "unclassified",
       "char_count": 34,
       "doubtful": false,
       "missing_marker": false
@@ -2618,7 +2879,8 @@
       "start_line": 2455,
       "end_line": 2456,
       "heading": "猴口",
-      "kind": "理论",
+      "kind": "待分类",
+      "classification_method": "unclassified",
       "char_count": 33,
       "doubtful": false,
       "missing_marker": false
@@ -2628,7 +2890,8 @@
       "start_line": 2458,
       "end_line": 2459,
       "heading": "鯰魚口",
-      "kind": "理论",
+      "kind": "待分类",
+      "classification_method": "unclassified",
       "char_count": 32,
       "doubtful": false,
       "missing_marker": false
@@ -2638,7 +2901,8 @@
       "start_line": 2461,
       "end_line": 2462,
       "heading": "鯽魚口",
-      "kind": "理论",
+      "kind": "待分类",
+      "classification_method": "unclassified",
       "char_count": 32,
       "doubtful": false,
       "missing_marker": false
@@ -2648,7 +2912,8 @@
       "start_line": 2464,
       "end_line": 2465,
       "heading": "覆船口",
-      "kind": "理论",
+      "kind": "待分类",
+      "classification_method": "unclassified",
       "char_count": 32,
       "doubtful": false,
       "missing_marker": false
@@ -2659,6 +2924,7 @@
       "end_line": 2477,
       "heading": "論脣",
       "kind": "理论",
+      "classification_method": "pattern",
       "char_count": 328,
       "doubtful": false,
       "missing_marker": false
@@ -2668,7 +2934,8 @@
       "start_line": 2479,
       "end_line": 2485,
       "heading": "許負相脣篇",
-      "kind": "理论",
+      "kind": "待分类",
+      "classification_method": "unclassified",
       "char_count": 152,
       "doubtful": false,
       "missing_marker": false
@@ -2679,6 +2946,7 @@
       "end_line": 2499,
       "heading": "論齒",
       "kind": "理论",
+      "classification_method": "pattern",
       "char_count": 334,
       "doubtful": false,
       "missing_marker": false
@@ -2688,7 +2956,8 @@
       "start_line": 2501,
       "end_line": 2509,
       "heading": "許負相齒篇",
-      "kind": "理论",
+      "kind": "待分类",
+      "classification_method": "unclassified",
       "char_count": 213,
       "doubtful": false,
       "missing_marker": false
@@ -2699,6 +2968,7 @@
       "end_line": 2524,
       "heading": "論舌",
       "kind": "理论",
+      "classification_method": "pattern",
       "char_count": 365,
       "doubtful": false,
       "missing_marker": false
@@ -2708,7 +2978,8 @@
       "start_line": 2526,
       "end_line": 2531,
       "heading": "許負相舌篇",
-      "kind": "理论",
+      "kind": "待分类",
+      "classification_method": "unclassified",
       "char_count": 154,
       "doubtful": false,
       "missing_marker": false
@@ -2719,6 +2990,7 @@
       "end_line": 2540,
       "heading": "論髭髯",
       "kind": "理论",
+      "classification_method": "pattern",
       "char_count": 167,
       "doubtful": false,
       "missing_marker": false
@@ -2728,7 +3000,8 @@
       "start_line": 2542,
       "end_line": 2542,
       "heading": "相魚尾",
-      "kind": "理论",
+      "kind": "待分类",
+      "classification_method": "unclassified",
       "char_count": 24,
       "doubtful": false,
       "missing_marker": false
@@ -2739,6 +3012,7 @@
       "end_line": 2559,
       "heading": "論頸項",
       "kind": "理论",
+      "classification_method": "pattern",
       "char_count": 369,
       "doubtful": false,
       "missing_marker": false
@@ -2749,6 +3023,7 @@
       "end_line": 2568,
       "heading": "論背",
       "kind": "理论",
+      "classification_method": "pattern",
       "char_count": 167,
       "doubtful": false,
       "missing_marker": false
@@ -2758,7 +3033,8 @@
       "start_line": 2570,
       "end_line": 2575,
       "heading": "相背",
-      "kind": "理论",
+      "kind": "待分类",
+      "classification_method": "unclassified",
       "char_count": 142,
       "doubtful": false,
       "missing_marker": false
@@ -2769,6 +3045,7 @@
       "end_line": 2583,
       "heading": "論腰",
       "kind": "理论",
+      "classification_method": "pattern",
       "char_count": 159,
       "doubtful": false,
       "missing_marker": false
@@ -2778,7 +3055,8 @@
       "start_line": 2585,
       "end_line": 2590,
       "heading": "相腰",
-      "kind": "理论",
+      "kind": "待分类",
+      "classification_method": "unclassified",
       "char_count": 126,
       "doubtful": false,
       "missing_marker": false
@@ -2789,6 +3067,7 @@
       "end_line": 2597,
       "heading": "論腹",
       "kind": "理论",
+      "classification_method": "pattern",
       "char_count": 135,
       "doubtful": false,
       "missing_marker": false
@@ -2798,7 +3077,8 @@
       "start_line": 2599,
       "end_line": 2603,
       "heading": "相腹",
-      "kind": "理论",
+      "kind": "待分类",
+      "classification_method": "unclassified",
       "char_count": 115,
       "doubtful": false,
       "missing_marker": false
@@ -2809,6 +3089,7 @@
       "end_line": 2621,
       "heading": "論胸乳",
       "kind": "理论",
+      "classification_method": "pattern",
       "char_count": 455,
       "doubtful": false,
       "missing_marker": false
@@ -2818,7 +3099,8 @@
       "start_line": 2623,
       "end_line": 2632,
       "heading": "相胸乳",
-      "kind": "理论",
+      "kind": "待分类",
+      "classification_method": "unclassified",
       "char_count": 236,
       "doubtful": false,
       "missing_marker": false
@@ -2828,7 +3110,8 @@
       "start_line": 2634,
       "end_line": 2654,
       "heading": "麻衣相心",
-      "kind": "理论",
+      "kind": "待分类",
+      "classification_method": "unclassified",
       "char_count": 568,
       "doubtful": false,
       "missing_marker": false
@@ -2838,7 +3121,8 @@
       "start_line": 2656,
       "end_line": 2661,
       "heading": "相臍",
-      "kind": "理论",
+      "kind": "待分类",
+      "classification_method": "unclassified",
       "char_count": 120,
       "doubtful": false,
       "missing_marker": false
@@ -2848,7 +3132,8 @@
       "start_line": 2663,
       "end_line": 2674,
       "heading": "相下部",
-      "kind": "理论",
+      "kind": "待分类",
+      "classification_method": "unclassified",
       "char_count": 398,
       "doubtful": false,
       "missing_marker": false
@@ -2858,7 +3143,8 @@
       "start_line": 2678,
       "end_line": 2688,
       "heading": "欽定古今圖書集成/博物彙編/藝術典/第635卷",
-      "kind": "理论",
+      "kind": "待分类",
+      "classification_method": "unclassified",
       "char_count": 216,
       "doubtful": false,
       "missing_marker": false
@@ -2868,7 +3154,8 @@
       "start_line": 2692,
       "end_line": 2707,
       "heading": "相行論",
-      "kind": "理论",
+      "kind": "待分类",
+      "classification_method": "unclassified",
       "char_count": 386,
       "doubtful": false,
       "missing_marker": false
@@ -2878,7 +3165,8 @@
       "start_line": 2709,
       "end_line": 2715,
       "heading": "相行篇",
-      "kind": "理论",
+      "kind": "待分类",
+      "classification_method": "unclassified",
       "char_count": 155,
       "doubtful": false,
       "missing_marker": false
@@ -2888,7 +3176,8 @@
       "start_line": 2717,
       "end_line": 2725,
       "heading": "相坐",
-      "kind": "理论",
+      "kind": "待分类",
+      "classification_method": "unclassified",
       "char_count": 206,
       "doubtful": false,
       "missing_marker": false
@@ -2899,6 +3188,7 @@
       "end_line": 2735,
       "heading": "論臥",
       "kind": "理论",
+      "classification_method": "pattern",
       "char_count": 219,
       "doubtful": false,
       "missing_marker": false
@@ -2908,7 +3198,8 @@
       "start_line": 2737,
       "end_line": 2742,
       "heading": "相臥",
-      "kind": "理论",
+      "kind": "待分类",
+      "classification_method": "unclassified",
       "char_count": 128,
       "doubtful": false,
       "missing_marker": false
@@ -2919,6 +3210,7 @@
       "end_line": 2760,
       "heading": "論食",
       "kind": "理论",
+      "classification_method": "pattern",
       "char_count": 407,
       "doubtful": false,
       "missing_marker": false
@@ -2928,7 +3220,8 @@
       "start_line": 2762,
       "end_line": 2774,
       "heading": "相德",
-      "kind": "理论",
+      "kind": "待分类",
+      "classification_method": "unclassified",
       "char_count": 286,
       "doubtful": false,
       "missing_marker": false
@@ -2938,7 +3231,8 @@
       "start_line": 2776,
       "end_line": 2780,
       "heading": "相善",
-      "kind": "理论",
+      "kind": "待分类",
+      "classification_method": "unclassified",
       "char_count": 189,
       "doubtful": false,
       "missing_marker": false
@@ -2948,7 +3242,8 @@
       "start_line": 2782,
       "end_line": 2788,
       "heading": "相惡",
-      "kind": "理论",
+      "kind": "待分类",
+      "classification_method": "unclassified",
       "char_count": 153,
       "doubtful": false,
       "missing_marker": false
@@ -2958,7 +3253,8 @@
       "start_line": 2790,
       "end_line": 2795,
       "heading": "相名標",
-      "kind": "理论",
+      "kind": "待分类",
+      "classification_method": "unclassified",
       "char_count": 130,
       "doubtful": false,
       "missing_marker": false
@@ -2968,7 +3264,8 @@
       "start_line": 2797,
       "end_line": 2802,
       "heading": "相蹇難",
-      "kind": "理论",
+      "kind": "待分类",
+      "classification_method": "unclassified",
       "char_count": 128,
       "doubtful": false,
       "missing_marker": false
@@ -2978,7 +3275,8 @@
       "start_line": 2804,
       "end_line": 2805,
       "heading": "相忠信慈孝",
-      "kind": "理论",
+      "kind": "待分类",
+      "classification_method": "unclassified",
       "char_count": 34,
       "doubtful": false,
       "missing_marker": false
@@ -2988,7 +3286,8 @@
       "start_line": 2807,
       "end_line": 2812,
       "heading": "相愚僻凶暴",
-      "kind": "理论",
+      "kind": "待分类",
+      "classification_method": "unclassified",
       "char_count": 132,
       "doubtful": false,
       "missing_marker": false
@@ -2998,7 +3297,8 @@
       "start_line": 2814,
       "end_line": 2816,
       "heading": "相形帶殺",
-      "kind": "理论",
+      "kind": "待分类",
+      "classification_method": "unclassified",
       "char_count": 90,
       "doubtful": false,
       "missing_marker": false
@@ -3008,7 +3308,8 @@
       "start_line": 2818,
       "end_line": 2822,
       "heading": "相疾病",
-      "kind": "理论",
+      "kind": "待分类",
+      "classification_method": "unclassified",
       "char_count": 120,
       "doubtful": false,
       "missing_marker": false
@@ -3018,7 +3319,8 @@
       "start_line": 2824,
       "end_line": 2841,
       "heading": "觀人八相法",
-      "kind": "理论",
+      "kind": "待分类",
+      "classification_method": "unclassified",
       "char_count": 365,
       "doubtful": false,
       "missing_marker": false
@@ -3028,7 +3330,8 @@
       "start_line": 2843,
       "end_line": 2862,
       "heading": "相富",
-      "kind": "理论",
+      "kind": "待分类",
+      "classification_method": "unclassified",
       "char_count": 452,
       "doubtful": false,
       "missing_marker": false
@@ -3038,7 +3341,8 @@
       "start_line": 2864,
       "end_line": 2884,
       "heading": "相貴",
-      "kind": "理论",
+      "kind": "待分类",
+      "classification_method": "unclassified",
       "char_count": 450,
       "doubtful": false,
       "missing_marker": false
@@ -3048,7 +3352,8 @@
       "start_line": 2886,
       "end_line": 2907,
       "heading": "相貧賤",
-      "kind": "理论",
+      "kind": "待分类",
+      "classification_method": "unclassified",
       "char_count": 506,
       "doubtful": false,
       "missing_marker": false
@@ -3058,7 +3363,8 @@
       "start_line": 2909,
       "end_line": 2918,
       "heading": "相孤苦",
-      "kind": "理论",
+      "kind": "待分类",
+      "classification_method": "unclassified",
       "char_count": 227,
       "doubtful": false,
       "missing_marker": false
@@ -3068,7 +3374,8 @@
       "start_line": 2920,
       "end_line": 2935,
       "heading": "相壽",
-      "kind": "理论",
+      "kind": "待分类",
+      "classification_method": "unclassified",
       "char_count": 338,
       "doubtful": false,
       "missing_marker": false
@@ -3078,7 +3385,8 @@
       "start_line": 2937,
       "end_line": 2949,
       "heading": "相夭",
-      "kind": "理论",
+      "kind": "待分类",
+      "classification_method": "unclassified",
       "char_count": 274,
       "doubtful": false,
       "missing_marker": false
@@ -3088,7 +3396,8 @@
       "start_line": 2951,
       "end_line": 2963,
       "heading": "相分七字法",
-      "kind": "理论",
+      "kind": "待分类",
+      "classification_method": "unclassified",
       "char_count": 234,
       "doubtful": false,
       "missing_marker": false
@@ -3098,7 +3407,8 @@
       "start_line": 2965,
       "end_line": 2972,
       "heading": "五行歌",
-      "kind": "理论",
+      "kind": "待分类",
+      "classification_method": "unclassified",
       "char_count": 168,
       "doubtful": false,
       "missing_marker": false
@@ -3108,7 +3418,8 @@
       "start_line": 2974,
       "end_line": 2976,
       "heading": "五行所生",
-      "kind": "理论",
+      "kind": "待分类",
+      "classification_method": "unclassified",
       "char_count": 75,
       "doubtful": false,
       "missing_marker": false
@@ -3118,7 +3429,8 @@
       "start_line": 2978,
       "end_line": 2980,
       "heading": "五臟所出",
-      "kind": "理论",
+      "kind": "待分类",
+      "classification_method": "unclassified",
       "char_count": 56,
       "doubtful": false,
       "missing_marker": false
@@ -3128,7 +3440,8 @@
       "start_line": 2982,
       "end_line": 2988,
       "heading": "五行相應",
-      "kind": "理论",
+      "kind": "待分类",
+      "classification_method": "unclassified",
       "char_count": 163,
       "doubtful": false,
       "missing_marker": false
@@ -3138,7 +3451,8 @@
       "start_line": 2990,
       "end_line": 2994,
       "heading": "五行相生歌",
-      "kind": "理论",
+      "kind": "待分类",
+      "classification_method": "unclassified",
       "char_count": 96,
       "doubtful": false,
       "missing_marker": false
@@ -3148,7 +3462,8 @@
       "start_line": 2996,
       "end_line": 3002,
       "heading": "五行相剋歌",
-      "kind": "理论",
+      "kind": "待分类",
+      "classification_method": "unclassified",
       "char_count": 162,
       "doubtful": false,
       "missing_marker": false
@@ -3158,7 +3473,8 @@
       "start_line": 3004,
       "end_line": 3005,
       "heading": "五行比和相應",
-      "kind": "理论",
+      "kind": "待分类",
+      "classification_method": "unclassified",
       "char_count": 50,
       "doubtful": false,
       "missing_marker": false
@@ -3168,7 +3484,8 @@
       "start_line": 3007,
       "end_line": 3015,
       "heading": "相五長",
-      "kind": "理论",
+      "kind": "待分类",
+      "classification_method": "unclassified",
       "char_count": 200,
       "doubtful": false,
       "missing_marker": false
@@ -3178,7 +3495,8 @@
       "start_line": 3017,
       "end_line": 3024,
       "heading": "相五短",
-      "kind": "理论",
+      "kind": "待分类",
+      "classification_method": "unclassified",
       "char_count": 171,
       "doubtful": false,
       "missing_marker": false
@@ -3188,7 +3506,8 @@
       "start_line": 3026,
       "end_line": 3032,
       "heading": "相五合",
-      "kind": "理论",
+      "kind": "待分类",
+      "classification_method": "unclassified",
       "char_count": 152,
       "doubtful": false,
       "missing_marker": false
@@ -3198,7 +3517,8 @@
       "start_line": 3034,
       "end_line": 3039,
       "heading": "相五露",
-      "kind": "理论",
+      "kind": "待分类",
+      "classification_method": "unclassified",
       "char_count": 156,
       "doubtful": false,
       "missing_marker": false
@@ -3208,7 +3528,8 @@
       "start_line": 3041,
       "end_line": 3045,
       "heading": "相五小",
-      "kind": "理论",
+      "kind": "待分类",
+      "classification_method": "unclassified",
       "char_count": 107,
       "doubtful": false,
       "missing_marker": false
@@ -3218,7 +3539,8 @@
       "start_line": 3047,
       "end_line": 3050,
       "heading": "相六大",
-      "kind": "理论",
+      "kind": "待分类",
+      "classification_method": "unclassified",
       "char_count": 186,
       "doubtful": false,
       "missing_marker": false
@@ -3228,7 +3550,8 @@
       "start_line": 3052,
       "end_line": 3055,
       "heading": "相六小極",
-      "kind": "理论",
+      "kind": "待分类",
+      "classification_method": "unclassified",
       "char_count": 160,
       "doubtful": false,
       "missing_marker": false
@@ -3238,7 +3561,8 @@
       "start_line": 3057,
       "end_line": 3060,
       "heading": "相六惡",
-      "kind": "理论",
+      "kind": "待分类",
+      "classification_method": "unclassified",
       "char_count": 109,
       "doubtful": false,
       "missing_marker": false
@@ -3248,7 +3572,8 @@
       "start_line": 3062,
       "end_line": 3064,
       "heading": "相六賤",
-      "kind": "理论",
+      "kind": "待分类",
+      "classification_method": "unclassified",
       "char_count": 68,
       "doubtful": false,
       "missing_marker": false
@@ -3258,7 +3583,8 @@
       "start_line": 3066,
       "end_line": 3070,
       "heading": "相六小貴",
-      "kind": "理论",
+      "kind": "待分类",
+      "classification_method": "unclassified",
       "char_count": 97,
       "doubtful": false,
       "missing_marker": false
@@ -3268,7 +3594,8 @@
       "start_line": 3072,
       "end_line": 3079,
       "heading": "相貴中賤",
-      "kind": "理论",
+      "kind": "待分类",
+      "classification_method": "unclassified",
       "char_count": 196,
       "doubtful": false,
       "missing_marker": false
@@ -3278,7 +3605,8 @@
       "start_line": 3081,
       "end_line": 3084,
       "heading": "相八大",
-      "kind": "理论",
+      "kind": "待分类",
+      "classification_method": "unclassified",
       "char_count": 86,
       "doubtful": false,
       "missing_marker": false
@@ -3288,7 +3616,8 @@
       "start_line": 3086,
       "end_line": 3089,
       "heading": "相八小",
-      "kind": "理论",
+      "kind": "待分类",
+      "classification_method": "unclassified",
       "char_count": 84,
       "doubtful": false,
       "missing_marker": false
@@ -3298,7 +3627,8 @@
       "start_line": 3091,
       "end_line": 3099,
       "heading": "辨美惡二十種",
-      "kind": "理论",
+      "kind": "待分类",
+      "classification_method": "unclassified",
       "char_count": 199,
       "doubtful": false,
       "missing_marker": false
@@ -3308,7 +3638,8 @@
       "start_line": 3101,
       "end_line": 3108,
       "heading": "形神",
-      "kind": "理论",
+      "kind": "待分类",
+      "classification_method": "unclassified",
       "char_count": 170,
       "doubtful": false,
       "missing_marker": false
@@ -3318,7 +3649,8 @@
       "start_line": 3110,
       "end_line": 3112,
       "heading": "精神",
-      "kind": "理论",
+      "kind": "待分类",
+      "classification_method": "unclassified",
       "char_count": 66,
       "doubtful": false,
       "missing_marker": false
@@ -3328,7 +3660,8 @@
       "start_line": 3114,
       "end_line": 3118,
       "heading": "相十天羅",
-      "kind": "理论",
+      "kind": "待分类",
+      "classification_method": "unclassified",
       "char_count": 118,
       "doubtful": false,
       "missing_marker": false
@@ -3338,7 +3671,8 @@
       "start_line": 3120,
       "end_line": 3139,
       "heading": "相十一天羅",
-      "kind": "理论",
+      "kind": "待分类",
+      "classification_method": "unclassified",
       "char_count": 464,
       "doubtful": false,
       "missing_marker": false
@@ -3348,7 +3682,8 @@
       "start_line": 3141,
       "end_line": 3180,
       "heading": "神氣章",
-      "kind": "理论",
+      "kind": "待分类",
+      "classification_method": "unclassified",
       "char_count": 928,
       "doubtful": false,
       "missing_marker": false
@@ -3358,7 +3693,8 @@
       "start_line": 3182,
       "end_line": 3198,
       "heading": "體論章",
-      "kind": "理论",
+      "kind": "待分类",
+      "classification_method": "unclassified",
       "char_count": 391,
       "doubtful": false,
       "missing_marker": false
@@ -3368,7 +3704,8 @@
       "start_line": 3200,
       "end_line": 3216,
       "heading": "器氣章",
-      "kind": "理论",
+      "kind": "待分类",
+      "classification_method": "unclassified",
       "char_count": 518,
       "doubtful": false,
       "missing_marker": false
@@ -3378,7 +3715,8 @@
       "start_line": 3220,
       "end_line": 3225,
       "heading": "欽定古今圖書集成/博物彙編/藝術典/第636卷",
-      "kind": "理论",
+      "kind": "待分类",
+      "classification_method": "unclassified",
       "char_count": 51,
       "doubtful": false,
       "missing_marker": false
@@ -3388,7 +3726,8 @@
       "start_line": 3228,
       "end_line": 3791,
       "heading": "神相全編六",
-      "kind": "理论",
+      "kind": "待分类",
+      "classification_method": "unclassified",
       "char_count": 18038,
       "doubtful": false,
       "missing_marker": false
@@ -3398,7 +3737,8 @@
       "start_line": 3795,
       "end_line": 3801,
       "heading": "欽定古今圖書集成/博物彙編/藝術典/第637卷",
-      "kind": "理论",
+      "kind": "待分类",
+      "classification_method": "unclassified",
       "char_count": 77,
       "doubtful": false,
       "missing_marker": false
@@ -3408,7 +3748,8 @@
       "start_line": 3804,
       "end_line": 4116,
       "heading": "神相全編七",
-      "kind": "理论",
+      "kind": "待分类",
+      "classification_method": "unclassified",
       "char_count": 9316,
       "doubtful": false,
       "missing_marker": false
@@ -3418,7 +3759,8 @@
       "start_line": 4120,
       "end_line": 4125,
       "heading": "欽定古今圖書集成/博物彙編/藝術典/第638卷",
-      "kind": "理论",
+      "kind": "待分类",
+      "classification_method": "unclassified",
       "char_count": 96,
       "doubtful": false,
       "missing_marker": false
@@ -3428,7 +3770,8 @@
       "start_line": 4128,
       "end_line": 4605,
       "heading": "神相全編八",
-      "kind": "理论",
+      "kind": "待分类",
+      "classification_method": "unclassified",
       "char_count": 11649,
       "doubtful": false,
       "missing_marker": false
@@ -3438,7 +3781,8 @@
       "start_line": 4609,
       "end_line": 4617,
       "heading": "欽定古今圖書集成/博物彙編/藝術典/第639卷",
-      "kind": "理论",
+      "kind": "待分类",
+      "classification_method": "unclassified",
       "char_count": 162,
       "doubtful": false,
       "missing_marker": false
@@ -3448,7 +3792,8 @@
       "start_line": 4619,
       "end_line": 5429,
       "heading": "相術部彙考九",
-      "kind": "理论",
+      "kind": "待分类",
+      "classification_method": "unclassified",
       "char_count": 18187,
       "doubtful": false,
       "missing_marker": false

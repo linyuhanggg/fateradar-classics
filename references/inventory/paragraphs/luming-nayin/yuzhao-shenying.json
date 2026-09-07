@@ -1,14 +1,15 @@
 {
   "pack": "luming-nayin/yuzhao-shenying",
   "fulltext": "sources/fulltext/luming-nayin/yuzhao-shenying/fulltext.md",
-  "fulltext_sha256": "5880e5258085e63c88009a29423f6bef6b949d3ad79411c27fcd5d415c1c62fe",
+  "classification_note": "pattern 是文本模式初筛；annotation 来源另见注解文件；source-reviewed 不等同人工影印核验。same_text_as 仅表示忽略空白后的原文字面相同。",
   "paragraphs": [
     {
       "id": "yuzhao-shenying:L0003-L0009",
       "start_line": 3,
       "end_line": 9,
       "heading": "玉照神应真经",
-      "kind": "理论",
+      "kind": "待分类",
+      "classification_method": "unclassified",
       "char_count": 337,
       "doubtful": false,
       "missing_marker": false
@@ -18,7 +19,8 @@
       "start_line": 11,
       "end_line": 138,
       "heading": "玉照神应真经",
-      "kind": "理论",
+      "kind": "操作步骤",
+      "classification_method": "pattern",
       "char_count": 15528,
       "doubtful": false,
       "missing_marker": false

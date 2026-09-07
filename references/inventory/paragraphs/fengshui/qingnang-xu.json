@@ -1,7 +1,7 @@
 {
   "pack": "fengshui/qingnang-xu",
   "fulltext": "sources/fulltext/fengshui/qingnang-xu/fulltext.md",
-  "fulltext_sha256": "c3865ecf1be5c5037d98699c0d4af47695c581f3591024edb4cdaa0fd873763c",
+  "classification_note": "pattern 是文本模式初筛；annotation 来源另见注解文件；source-reviewed 不等同人工影印核验。same_text_as 仅表示忽略空白后的原文字面相同。",
   "paragraphs": [
     {
       "id": "qingnang-xu:L0003-L0017",
@@ -9,6 +9,7 @@
       "end_line": 17,
       "heading": "青囊序",
       "kind": "序跋目录",
+      "classification_method": "pattern",
       "char_count": 1168,
       "doubtful": false,
       "missing_marker": false

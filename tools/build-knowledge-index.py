@@ -24,8 +24,12 @@ def main() -> None:
         samples = []
         if para_path.is_file():
             payload = json.loads(para_path.read_text(encoding="utf-8"))
-            for para in payload.get("paragraphs") or []:
-                if para.get("kind") != "理论":
+            paragraphs = sorted(payload.get("paragraphs") or [], key=lambda p: (
+                p.get("annotation_review") != "source-reviewed",
+                not p.get("has_vernacular", False),
+            ))
+            for para in paragraphs:
+                if para.get("kind") in {"序跋目录", "评注或元数据", "重复"}:
                     continue
                 if para.get("doubtful") or para.get("missing_marker"):
                     continue
@@ -37,6 +41,10 @@ def main() -> None:
                         "heading": para.get("heading") or "",
                         "start_line": para["start_line"],
                         "end_line": para["end_line"],
+                        "kind": para["kind"],
+                        "classification_method": para.get("classification_method", "unclassified"),
+                        "annotation_review": para.get("annotation_review"),
+                        "has_vernacular": bool(para.get("has_vernacular")),
                     }
                 )
                 if len(samples) >= 5:
@@ -57,7 +65,7 @@ def main() -> None:
         )
     payload = {
         "schema_version": "fateradar-knowledge-index-v1",
-        "note": "风水/相法/择日/姓名等暂无对应页面。本索引供检索，不冒充已接入八术。",
+        "note": "风水/相法/择日/姓名等暂无对应页面。本索引供检索，不冒充已接入八术。原文样本可以尚未分类或注解；电子审读和白话状态按字段明示，不把检索样本当作审读完成。",
         "pack_count": len(packs),
         "packs": packs,
         "web_contract": {
