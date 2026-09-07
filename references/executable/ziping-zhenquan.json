@@ -7,7 +7,7 @@
     "fulltext": "sources/fulltext/bazi/ziping-zhenquan/fulltext.md"
   },
   "verified": false,
-  "note": "月令取格、顺逆、伤官见官、透印、金水例外、刑冲破害记录、组外会合、合煞、食化劫、枭护食、印逢财劫合、官逢财印、伤官生财佩印带煞、财逢煞制合、煞逢食制、无刑冲破害记录、通根阳库分条、印根透藏、身强来源分条、伤官旺透藏、财有根透藏、财印位置分条。破害不套会合，通根不按阳库覆盖，印根不是已经根深，伤官旺不是已经旺，财有根不是已经有根，身强不按旺衰分层覆盖，有隔不是已经位置妥贴，力量未论，不成格不破格。verified 保持 false。",
+  "note": "月令取格、顺逆、伤官见官、透印、金水例外、刑冲破害记录、组外会合、合煞、食化劫、枭护食、印逢财劫合、官逢财印、伤官生财佩印带煞、财逢煞制合、煞逢食制、无刑冲破害记录、通根阳库分条、印根透藏、身强来源分条、伤官旺透藏、财有根透藏、财印位置分条、食神成路透藏、阳刃成路透藏、建禄月劫成路透藏。破害不套会合，通根不按阳库覆盖，印根不是已经根深，伤官旺不是已经旺，财有根不是已经有根，身强不按旺衰分层覆盖，有隔不是已经位置妥贴，不见伤官不是已经成格，力量未论，不成格不破格。verified 保持 false。",
   "rules": [
     {
       "id": "ZPR-E-01",
@@ -426,6 +426,60 @@
       "rescue": "unimplemented",
       "vernacular": "财印位置只记透干相并或有隔。有隔不是已经位置妥贴，也不等于成格。",
       "implementation_assumption": "柱距按年-月-日-时直线，年时不算相邻。隔以它干只记柱距，不把有隔覆盖成两不相碍，也不把相并覆盖成两不相能。completion 仍为信息不足。",
+      "verified": false
+    },
+    {
+      "id": "ZPR-E-24",
+      "art": "bazi",
+      "theme": "食神成路透藏",
+      "school": "子平真诠",
+      "paragraph_id": "ziping-zhenquan:L0367-L0367",
+      "quote": "食神生財，或食帶煞而無財，棄食就煞而透印，食神格成也；",
+      "page": "geju",
+      "required_facts": ["tenGodFacts.正财.layer", "tenGodFacts.偏财.layer", "tenGodFacts.偏官.layer", "tenGodFacts.正印.layer"],
+      "when": { "geju.name": ["食神格"] },
+      "satisfy_when": "食神格已记录生财、带煞无财、弃食就煞透印的透藏",
+      "fail_when": "不是食神格",
+      "unknown_when": "弃食、身强未论；透财不是已经成格，不得输出成格",
+      "rescue": "unimplemented",
+      "vernacular": "食神格成路只记透藏。生财出现不等于成格。",
+      "implementation_assumption": "弃食不是透干本身。带煞无财按七杀透干且原局无财记录。completion 仍为信息不足。",
+      "verified": false
+    },
+    {
+      "id": "ZPR-E-25",
+      "art": "bazi",
+      "theme": "阳刃成路透藏",
+      "school": "子平真诠",
+      "paragraph_id": "ziping-zhenquan:L0370-L0370",
+      "quote": "陽刃透官煞而露財印，不見傷官，陽刃格成也；",
+      "page": "geju",
+      "required_facts": ["tenGodFacts.正官.layer", "tenGodFacts.偏官.layer", "tenGodFacts.正财.layer", "tenGodFacts.正印.layer", "tenGodFacts.伤官.layer"],
+      "when": { "geju.name": ["月刃格"] },
+      "satisfy_when": "月刃格已按原文阳刃成路记录透官煞、露财印、不见伤官",
+      "fail_when": "不是月刃格",
+      "unknown_when": "制刃力量未论；不见伤官不是已经成格，见伤官透干不是已经败格，不得输出成格",
+      "rescue": "unimplemented",
+      "vernacular": "阳刃成路只记透藏。本盘格局名仍是月刃格，不等于成格。",
+      "implementation_assumption": "露财印按财与印都透干。不见伤官：无伤官为满足，只见藏干为信息不足，透干为不满足。不把月刃格改名为阳刃格。completion 仍为信息不足。",
+      "verified": false
+    },
+    {
+      "id": "ZPR-E-26",
+      "art": "bazi",
+      "theme": "建禄月劫成路透藏",
+      "school": "子平真诠",
+      "paragraph_id": "ziping-zhenquan:L0371-L0371",
+      "quote": "建祿月劫，透官而逢財印，透財而逢食傷，透煞而遇制伏，建祿月劫之格成也。",
+      "page": "geju",
+      "required_facts": ["tenGodFacts.正官.layer", "tenGodFacts.正财.layer", "tenGodFacts.食神.layer", "tenGodFacts.偏官.layer"],
+      "when": { "geju.name": ["建禄格"] },
+      "satisfy_when": "建禄格已记录透官逢财印、透财逢食伤、透煞遇制伏的透藏",
+      "fail_when": "不是建禄格",
+      "unknown_when": "另取用神未完成；透官逢财印不是已经成格，不得输出成格",
+      "rescue": "unimplemented",
+      "vernacular": "建禄月劫成路只记透藏。月令本身仍不可为用，不等于成格。",
+      "implementation_assumption": "透官而逢财印按官透且财印都透。透财而逢食伤按财透且食神或伤官透。透煞遇制伏按七杀透且食神透。建禄格 status 仍为格局不清。completion 仍为信息不足。",
       "verified": false
     }
   ]
