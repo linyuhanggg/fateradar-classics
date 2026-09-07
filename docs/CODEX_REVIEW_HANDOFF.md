@@ -6,7 +6,7 @@
 - 分支：`codex/grok-full-library`
 - 基准：`origin/main` @ `49d3efe`（data: complete oversize facsimile release）
 - 施工时未改 `/Users/sync/code/fateradar-classics` 主工作区，也未覆盖其他工作树
-- 最终提交：`38941f955ab1e5c523a90875b1e7769c4c76a5f8`
+- 最终提交：`25412a57ca1849b9f6771f21c05e92283a86d220`
 - 推送：仅推自己的 `codex/grok-full-library`，不合 main、不强推
 
 ## 2. 对照总方案的完成与未完成
@@ -16,8 +16,8 @@
 - 全库真实盘点：catalog 55 包、磁盘 55 包、全文 54、排除 4
 - 稳定段落 ID：`slug:Lxxxx-Lyyyy`
 - 去向：engine 21 / knowledge 33 / excluded_copyright 1（《奇门法窍》）
-- 可执行规则 58 条，全部 `verified: false`
-  - 八字：ZPR-E-01..17、QTB-E-01、SMTH-E-01 天乙落柱、SMTH-E-02 驿马落柱、SMTH-E-03 咸池桃花落柱、SMTH-E-04 华盖落柱、SMTH-E-05 将星落柱、SMTH-E-06 孤辰落柱、SMTH-E-07 寡宿落柱、SMTH-E-08 劫煞落柱、SMTH-E-09 亡神落柱、SMTH-E-10 灾煞落柱、SMTH-E-11 天喜来源分条、SMTH-E-12 金舆落柱、SMTH-E-13 羊刃落柱、SMTH-E-14 飞刃落柱、SMTH-E-15 禄神落柱、SMTH-E-16 天德落柱、SMTH-E-17 月德落柱、SMTH-E-18 文昌来源分条、SMTH-E-19 学堂来源分条、SMTH-E-20 太极落柱、SFTK-E-01 流霞落柱、SFTK-E-02 红艳落柱
+- 可执行规则 60 条，全部 `verified: false`
+  - 八字：ZPR-E-01..17、QTB-E-01、SMTH-E-01 天乙落柱、SMTH-E-02 驿马落柱、SMTH-E-03 咸池桃花落柱、SMTH-E-04 华盖落柱、SMTH-E-05 将星落柱、SMTH-E-06 孤辰落柱、SMTH-E-07 寡宿落柱、SMTH-E-08 劫煞落柱、SMTH-E-09 亡神落柱、SMTH-E-10 灾煞落柱、SMTH-E-11 天喜来源分条、SMTH-E-12 金舆落柱、SMTH-E-13 羊刃落柱、SMTH-E-14 飞刃落柱、SMTH-E-15 禄神落柱、SMTH-E-16 天德落柱、SMTH-E-17 月德落柱、SMTH-E-18 文昌来源分条、SMTH-E-19 学堂来源分条、SMTH-E-20 太极落柱、SFTK-E-01 流霞落柱、SFTK-E-02 红艳落柱、GTJ-E-01 国印落柱、XLKY-E-01 天医来源分条
   - 紫微：ZWD-E-01 生年干四化落宫
   - 六爻：ZSB-E-01 用神旬空、ZSB-E-02 用神月破
   - 梅花：MHY-E-01 体用生克方向
@@ -35,7 +35,7 @@
 - 本仓没有规则解释器；产品仓实现等价条件
 - 浏览器页面验收未做（本仓无页面）
 - 七政五星宿度旺宫、戌方入庙未按原文逐步程序接入运行；只与现行黄道本宫分条
-- 神煞除已接入落柱的条目外仍有名单未抽；天喜未按四季覆盖；阴干羊刃未按子平无刃覆盖；文昌学堂只分条未改表；戊己太极未补申；流霞未按星学大成辛逐虎覆盖；红艳甲乙未补申；国印未把三命天印并入；天医月支前一位与择日正月戌、六壬月建前二不是同一套
+- 神煞除已接入落柱的条目外仍有名单未抽；天喜未按四季覆盖；阴干羊刃未按子平无刃覆盖；文昌学堂只分条未改表；戊己太极未补申；流霞未按星学大成辛逐虎覆盖；红艳甲乙未补申；国印未把三命天印并入；天医未按正月起戌或月建前二覆盖
 
 ## 3. 全库真实统计
 
@@ -50,7 +50,7 @@
 | 稳定段落 | 53640 |
 | 其中疑文段 | 1261 |
 | 旧 rules.yaml 候选 | 1356，verified=0 |
-| 本轮可执行规则 | 58 |
+| 本轮可执行规则 | 60 |
 | 知识库包 | 33 |
 
 清单位置：
@@ -69,6 +69,8 @@
 - `references/executable/xingxue-dacheng.json`
 - `references/executable/sanming-tonghui.json`
 - `references/executable/shenfeng-tongkao.json`
+- `references/executable/guotian-jing.json`
+- `references/executable/xingli-kaoyuan.json`
 - `docs/KNOWLEDGE_SEARCH_INTERFACE.md`
 
 55 是资料包口径。`qimen-faqiao` 无全文、去向 `excluded_copyright`。
@@ -81,10 +83,11 @@
 - `references/executable/qimen-dunjia-tongzhi.json`：QMD-E-01、QMD-E-02
 - `references/executable/daliuren-daquan.json`：DLD-E-01..09
 - `references/executable/xingxue-dacheng.json`：XXDC-E-01、XXDC-E-02、XXDC-E-03
-- `references/executable/sanming-tonghui.json`
-- `references/executable/shenfeng-tongkao.json`：SMTH-E-01..20
+- `references/executable/sanming-tonghui.json`：SMTH-E-01..20
 - `references/executable/shenfeng-tongkao.json`：SFTK-E-01、SFTK-E-02
-- 盘点脚本重跑，可执行规则 56→58
+- `references/executable/guotian-jing.json`：GTJ-E-01
+- `references/executable/xingli-kaoyuan.json`：XLKY-E-01
+- 盘点脚本重跑，可执行规则 58→60
 - 不改 `sources/` 原文
 
 ## 5. 复现命令与检查结果
@@ -99,7 +102,7 @@ python3 -c "import json; d=json.load(open('references/inventory/library-inventor
 
 ```
 catalog_ready_packs 55, fulltext_files 54, paragraphs 53640,
-executable_rules_in_this_commit 58, knowledge packs 33
+executable_rules_in_this_commit 60, knowledge packs 33
 verified_rules 0
 faqiao destination=excluded_copyright
 ```
@@ -123,6 +126,8 @@ faqiao destination=excluded_copyright
 《三命通会》`sanming-tonghui:L1391-L1400`：天乙落柱；歌诀泥而不通，不得输出吉神断语。
 `L1466` 文昌甲蛇乙猪与本盘通行表分条、`L1471-L1474` 纳音学堂与本盘日干长生分条、`L1461-L1465` 太极贵人：只记落柱，不是科名或学业。戊己喜申未覆盖。
 《神峰通考》`shenfeng-tongkao:L2545-L2546` 流霞、`L2550` 红艳：只记落柱，不是死丧或情欲。辛逐虎、甲乙申未覆盖。
+《果天经》`guotian-jing:L900-L911` 国印禄前九位：只记落柱，不是官印。三命天印未并入。
+《星历考原》`xingli-kaoyuan:L668-L670` 天医正月起戌：与本盘月支前一位、六壬月建前二分条，不是医药。
 
 ## 7. Web 字段映射
 
@@ -153,6 +158,8 @@ faqiao destination=excluded_copyright
 - 太极按甲乙子午、丙丁卯酉、庚辛寅亥、壬癸巳申、戊己辰戌丑未；不把戊己申补进表
 - 流霞按日干甲酉乙戌丙未丁申戊巳己午庚辰辛卯壬亥癸寅；不按星学大成辛逐虎覆盖
 - 红艳按日干甲午乙午丙寅丁未戊辰己辰庚戌辛酉壬子癸申；不把甲乙申补进表
+- 国印按日干或年干禄前九位；不把三命天印并入，也不按身命守照改写
+- 天医本盘按月支前一位；不按择日正月起戌或六壬月建前二覆盖
 - 14 套影印 `not_confirmed`，疑文 1261 段未校勘
 - 成格/破格力量未论，不得确定
 
