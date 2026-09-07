@@ -7,7 +7,7 @@
     "fulltext": "sources/fulltext/bazi/sanming-tonghui/fulltext.md"
   },
   "verified": false,
-  "note": "只接入天乙贵人落柱。本书已说甲戊庚牛羊之歌泥而不通，且阳贵阴贵与昼夜分法未论完。落柱不是贵人已至。verified 保持 false。",
+  "note": "接入天乙、驿马、咸池/桃花落柱。歌诀泥而不通、十二驿马、纳音同类都未论完。落柱不是贵人已至，也不是行程或品行结论。verified 保持 false。",
   "rules": [
     {
       "id": "SMTH-E-01",
@@ -25,6 +25,42 @@
       "rescue": "unimplemented",
       "vernacular": "{pillar}见天乙贵人。这是落柱标签，不是贵人已经到来，也不能单独断定事件。",
       "implementation_assumption": "现行表用甲戊庚见丑未等通行歌诀查表，与本书所评泥而不通并存。未按冬夏至切换阴阳贵。",
+      "verified": false
+    },
+    {
+      "id": "SMTH-E-02",
+      "art": "bazi",
+      "theme": "驿马落柱",
+      "school": "三命通会",
+      "paragraph_id": "sanming-tonghui:L1346-L1353",
+      "quote": "所谓驛馬者乃先天三合數也……寅午戌生人馬在申……申子辰人馬在寅……己酉丑人馬在亥……亥卯未人馬在已",
+      "page": "shensha",
+      "required_facts": ["year.zhi", "day.zhi", "pillars.zhi"],
+      "when": { "exists": "year.zhi" },
+      "satisfy_when": "年支或日支三合局对应的驿马支出现在四柱地支：只记录落柱名称",
+      "fail_when": "四柱地支未见该局驿马支",
+      "unknown_when": "本书又说不必执寅午戌申然后为马；十二驿马、空亡破败、与禄同乡未论完：不得输出行程或迁官断语",
+      "rescue": "unimplemented",
+      "vernacular": "{pillar}见驿马。这是落柱标签，不是行程结论。",
+      "implementation_assumption": "现行表按年支与日支两套三合局取马，标签写作驿马。未按纳音、空亡或十二驿马分类改写结论。",
+      "verified": false
+    },
+    {
+      "id": "SMTH-E-03",
+      "art": "bazi",
+      "theme": "咸池桃花落柱",
+      "school": "三命通会",
+      "paragraph_id": "sanming-tonghui:L1234-L1238",
+      "quote": "淮南子曰日出扶桑入於咸池故五行沐浴之地名咸池是也……寅午戍卯巳酉丑午申子辰酉亥卯未子即長生第二位沐浴之宫是也一名敗神一名桃花煞",
+      "page": "shensha",
+      "required_facts": ["year.zhi", "day.zhi", "pillars.zhi"],
+      "when": { "exists": "year.zhi" },
+      "satisfy_when": "年支或日支三合局对应的沐浴支出现在四柱地支：只记录落柱名称桃花",
+      "fail_when": "四柱地支未见该局沐浴支",
+      "unknown_when": "本书按语谓须天干纳音于地同类方是；生旺死绝、日時与水命未论完：不得输出品行或破败断语",
+      "rescue": "unimplemented",
+      "vernacular": "{pillar}见桃花。这是落柱标签，不是品行结论。",
+      "implementation_assumption": "现行表用三合沐浴支，标签写作桃花，对应本书咸池。未按纳音同类筛选。",
       "verified": false
     }
   ]

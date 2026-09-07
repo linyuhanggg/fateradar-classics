@@ -7,7 +7,7 @@
     "fulltext": "sources/fulltext/san-shi/daliuren-daquan/fulltext.md"
   },
   "verified": false,
-  "note": "只接入贼克取传与涉害两派分条。课名不是成败。同书后文元首/重审取名对调，不改取传，也不把问事皆实写成已经办成。verified 保持 false。",
+  "note": "接入贼克、涉害、伏吟、返吟、遥克取传。课名不是成败。同书后文元首/重审取名对调，不改取传。神杀不动、后不为灾、蒿矢弹射势为轻都不得写成事情已经停住、已经反复或已经轻微。verified 保持 false。",
   "rules": [
     {
       "id": "DLD-E-01",
@@ -43,6 +43,60 @@
       "rescue": "unimplemented",
       "vernacular": "涉害取法为{shehai_method}，初传{first}。两派不同时只分条记录，不合成一个虚假统一结论。",
       "implementation_assumption": "默认历数深浅依《大全》；孟仲季依《指南注解》。页面须标明所用取法。",
+      "verified": false
+    },
+    {
+      "id": "DLD-E-03",
+      "art": "liuren",
+      "theme": "伏吟取传",
+      "school": "六壬大全",
+      "paragraph_id": "daliuren-daquan:L0092-L0094",
+      "quote": "伏吟有克还为用，无克刚干柔取辰。迤逦刑之作中末，从兹《玉厯》职其真。若也自刑为发用，次传颠倒日辰并。次传更复自刑者，冲取末传不论刑。",
+      "page": "liuren",
+      "required_facts": ["ke.style", "three.chuan", "sky.shift"],
+      "when": { "equals": { "ke.style": "伏吟课" } },
+      "satisfy_when": "天地盘同位，已按有克取克、无克阳取干上阴取支上，并按递刑、自刑互取、再自刑取冲写出三传",
+      "fail_when": "不是伏吟课",
+      "unknown_when": "原文另有神杀不动、后不为灾：旺衰与所问未论，不得输出事情已经停住或已经无灾",
+      "rescue": "unimplemented",
+      "vernacular": "本盘伏吟。这是天地盘同位后的取传，不是事情已经停住。",
+      "implementation_assumption": "伏吟以月将加时差为零判定。中末按地支三刑，自刑则日辰互取，再自刑取冲。",
+      "verified": false
+    },
+    {
+      "id": "DLD-E-04",
+      "art": "liuren",
+      "theme": "返吟取传",
+      "school": "六壬大全",
+      "paragraph_id": "daliuren-daquan:L0096-L0098",
+      "quote": "返吟有克亦为用，无克别有井栏名。若知六日该无克，丑未同干丁己辛。丑日登明未太乙，辰中日末识原因阳日用辰，阴日用日，辰上作中，日上作末。",
+      "page": "liuren",
+      "required_facts": ["ke.style", "three.chuan", "sky.shift"],
+      "when": { "equals": { "ke.style": "返吟课" } },
+      "satisfy_when": "天地盘对冲，有克仍按贼克取传；无克按井栏取日支驿马为初传、支上中传、干上末传",
+      "fail_when": "不是返吟课",
+      "unknown_when": "井栏与有克分支已分开，但旺衰未论：不得输出事情已经反复",
+      "rescue": "unimplemented",
+      "vernacular": "本盘返吟。这是天地盘对冲后的取传，不是事情已经反复。",
+      "implementation_assumption": "返吟以月将加时差为六判定。无克井栏取日支三合驿马，不固定取干上。",
+      "verified": false
+    },
+    {
+      "id": "DLD-E-05",
+      "art": "liuren",
+      "theme": "遥克蒿矢弹射",
+      "school": "六壬大全",
+      "paragraph_id": "daliuren-daquan:L0076-L0078",
+      "quote": "神遥克日曰蒿矢，日遥克神曰弹射。四课无克号为遥，日与神兮逓互招。先取神遥克其日，如无方取日来遥。或有日克乎两神，复有两神来克日。择与日干比者用，阳日用阳阴用阴。",
+      "page": "liuren",
+      "required_facts": ["ke.style", "three.chuan", "four.ke"],
+      "when": { "in": { "ke.style": ["蒿矢课", "弹射课"] } },
+      "satisfy_when": "四课无直接克，已先取上神遥克日干为蒿矢，无则取日干遥克上神为弹射，并按与日干阴阳相比选出初传",
+      "fail_when": "不是蒿矢课也不是弹射课",
+      "unknown_when": "原文另有蒿矢弹射势为轻：轻重未论，不得输出事情已经轻微",
+      "rescue": "unimplemented",
+      "vernacular": "本盘{style}。这是四课无克后的遥克取传，不是事情已经射中或已经轻微。",
+      "implementation_assumption": "遥克只在贼克未取出初传、且不是伏吟返吟八专时启用。比日干阴阳取用。",
       "verified": false
     }
   ]
