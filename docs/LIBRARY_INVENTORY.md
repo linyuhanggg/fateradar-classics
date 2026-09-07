@@ -10,7 +10,7 @@
 - catalog 另列排除项：4
 - 稳定段落：53640（含疑文段 1261）
 - 旧 rules.yaml 候选：1356（全部 verified=false，不作运行权威）
-- 本轮接入可执行规则：62（`references/executable/*.json` 实数；产品引擎实现等价条件）
+- 本轮接入可执行规则：65（`references/executable/*.json` 实数；产品引擎实现等价条件）
 
 ## 去向
 
