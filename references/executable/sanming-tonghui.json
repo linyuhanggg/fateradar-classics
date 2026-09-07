@@ -7,7 +7,7 @@
     "fulltext": "sources/fulltext/bazi/sanming-tonghui/fulltext.md"
   },
   "verified": false,
-  "note": "接入天乙、驿马、咸池/桃花落柱。歌诀泥而不通、十二驿马、纳音同类都未论完。落柱不是贵人已至，也不是行程或品行结论。verified 保持 false。",
+  "note": "接入天乙、驿马、咸池/桃花、华盖、将星落柱。歌诀泥而不通、十二驿马、纳音同类、孤寡公卿都未论完。落柱不是贵人已至，也不是行程、品行、孤寡或公卿结论。verified 保持 false。",
   "rules": [
     {
       "id": "SMTH-E-01",
@@ -61,6 +61,42 @@
       "rescue": "unimplemented",
       "vernacular": "{pillar}见桃花。这是落柱标签，不是品行结论。",
       "implementation_assumption": "现行表用三合沐浴支，标签写作桃花，对应本书咸池。未按纳音同类筛选。",
+      "verified": false
+    },
+    {
+      "id": "SMTH-E-04",
+      "art": "bazi",
+      "theme": "华盖落柱",
+      "school": "三命通会",
+      "paragraph_id": "sanming-tonghui:L1225-L1232",
+      "quote": "華葢者喻如寳葢天有此星其形如葢常覆乎大帝之座故以三合底處得庫謂之華葢",
+      "page": "shensha",
+      "required_facts": ["year.zhi", "pillars.zhi"],
+      "when": { "exists": "year.zhi" },
+      "satisfy_when": "年支三合局对应的库土支出现在四柱地支：只记录落柱名称华盖",
+      "fail_when": "四柱地支未见该局库土支",
+      "unknown_when": "本书又说凡人命得华盖多主孤寡、作僧道艺术、出将入相：空破时坐重金重盖未论完，不得输出孤寡或公卿断语",
+      "rescue": "unimplemented",
+      "vernacular": "{pillar}见华盖。这是落柱标签，不是孤寡或僧道结论。",
+      "implementation_assumption": "现行表只按年支三合库土取华盖。未按日支三合、空破、时坐或重金重盖改写结论。",
+      "verified": false
+    },
+    {
+      "id": "SMTH-E-05",
+      "art": "bazi",
+      "theme": "将星落柱",
+      "school": "三命通会",
+      "paragraph_id": "sanming-tonghui:L1225-L1232",
+      "quote": "将星者如将劄中军也故以三合中位谓之将星",
+      "page": "shensha",
+      "required_facts": ["year.zhi", "pillars.zhi"],
+      "when": { "exists": "year.zhi" },
+      "satisfy_when": "年支三合局对应的中位支出现在四柱地支：只记录落柱名称将星",
+      "fail_when": "四柱地支未见该局中位支",
+      "unknown_when": "理愚歌云将星若用亡神临为国栋梁臣：亡神夹贵未论完，不得输出出将入相",
+      "rescue": "unimplemented",
+      "vernacular": "{pillar}见将星。这是落柱标签，不是公卿结论。",
+      "implementation_assumption": "现行表只按年支三合中位取将星。未按亡神、夹贵或库墓正印改写结论。",
       "verified": false
     }
   ]

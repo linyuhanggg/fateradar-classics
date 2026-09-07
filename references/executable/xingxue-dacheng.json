@@ -7,7 +7,7 @@
     "fulltext": "sources/fulltext/xingming/xingxue-dacheng/fulltext.md"
   },
   "verified": false,
-  "note": "只接入命宫来源分条。本盘上升点是现代天文实现，不得与原文卯上立命混成一套。verified 保持 false。",
+  "note": "接入命宫来源分条、庙旺来源分条、日月落宫定位。本盘上升点与入庙是现代黄道实现，不得与原文卯上立命、宿度旺宫混成一套。入庙不是已经得福。verified 保持 false。",
   "rules": [
     {
       "id": "XXDC-E-01",
@@ -25,6 +25,42 @@
       "rescue": "unimplemented",
       "vernacular": "本盘命宫取上升点{sign}。这是现代天文位置，不是已经按原文卯上立命。",
       "implementation_assumption": "七政用 Astronomy Engine 真黄经。庙旺落陷是位置分类，不是个人优劣评分。四余含近似。",
+      "verified": false
+    },
+    {
+      "id": "XXDC-E-02",
+      "art": "qizheng",
+      "theme": "庙旺来源分条",
+      "school": "星学大成",
+      "paragraph_id": "xingxue-dacheng:L0187-L0189",
+      "quote": "星辰本宫為廟堂生我之宫為樂鄉我生之宫為旺度福與禍兮堪審詳星尅其宫名入制其星若忌號刑傷本元星主居其位貧乏之徒可較量",
+      "page": "qizheng",
+      "required_facts": ["star.name", "star.palace", "star.dignity"],
+      "when": { "exists": "star.palace" },
+      "satisfy_when": "已按本盘取法给七政标出入庙、落陷或平宫，并标明与原文宿度旺宫不是同一套",
+      "fail_when": "七政未起出，无法标庙陷",
+      "unknown_when": "原文另有娄胃亢斗翼室鬼宿度旺宫，又有日月戌方入庙：与本盘黄道本宫/对宫不是同一套逐步程序，不得输出富贵或贫乏",
+      "rescue": "unimplemented",
+      "vernacular": "{star}在{palace}，标签为{dignity}。这是本取法的位置分类，不是已经得福或已经贫乏。",
+      "implementation_assumption": "现行入庙用黄道本宫（太阳狮子等），落陷用对宫。未按二十八宿旺宫，也未按戌方入庙歌覆盖。",
+      "verified": false
+    },
+    {
+      "id": "XXDC-E-03",
+      "art": "qizheng",
+      "theme": "日月落宫定位",
+      "school": "星学大成",
+      "paragraph_id": "xingxue-dacheng:L0184-L0185",
+      "quote": "日據白羊十九間月入金牛第三度……但於旺處逢一星斷然莫作常人視〔論七政旺宫太陽躔婁宿八度是戌宫十九度也太陽躔胃宿六度是酉宫三度……〕",
+      "page": "qizheng",
+      "required_facts": ["sun.palace", "moon.palace", "sun.mansion", "moon.mansion"],
+      "when": { "exists": "sun.palace" },
+      "satisfy_when": "已记录本盘太阳、太阴的黄道宫度与宿名",
+      "fail_when": "出生时刻无法起七政",
+      "unknown_when": "原文旺处举白羊金牛与娄胃宿度例，本盘用真黄经落宫：不得把落宫写成已经非凡",
+      "rescue": "unimplemented",
+      "vernacular": "太阳在{sun_palace}{sun_mansion}，太阴在{moon_palace}{moon_mansion}。这是位置，不是已经非凡。",
+      "implementation_assumption": "日月黄经取 Astronomy Engine。宿名按距星岁差近似，接近宿界时需要更精细对照。",
       "verified": false
     }
   ]
