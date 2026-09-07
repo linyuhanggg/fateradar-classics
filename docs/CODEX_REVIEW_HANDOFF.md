@@ -6,7 +6,7 @@
 - 分支：`codex/grok-full-library`
 - 基准：`origin/main` @ `49d3efe`（data: complete oversize facsimile release）
 - 施工时未改 `/Users/sync/code/fateradar-classics` 主工作区，也未覆盖其他工作树
-- 最终提交：`43b340e29c47dd4a7e98b10ee43089d29ba13d42`
+- 最终提交：`7df0913b06f54f848c60c2ca08ac391c3dab4929`
 - 推送：仅推自己的 `codex/grok-full-library`，不合 main、不强推
 
 ## 2. 对照总方案的完成与未完成
@@ -16,8 +16,8 @@
 - 全库真实盘点：catalog 55 包、磁盘 55 包、全文 54、排除 4
 - 稳定段落 ID：`slug:Lxxxx-Lyyyy`
 - 去向：engine 21 / knowledge 33 / excluded_copyright 1（《奇门法窍》）
-- 可执行规则 53 条，全部 `verified: false`
-  - 八字：ZPR-E-01..17、QTB-E-01、SMTH-E-01 天乙落柱、SMTH-E-02 驿马落柱、SMTH-E-03 咸池桃花落柱、SMTH-E-04 华盖落柱、SMTH-E-05 将星落柱、SMTH-E-06 孤辰落柱、SMTH-E-07 寡宿落柱、SMTH-E-08 劫煞落柱、SMTH-E-09 亡神落柱、SMTH-E-10 灾煞落柱、SMTH-E-11 天喜来源分条、SMTH-E-12 金舆落柱、SMTH-E-13 羊刃落柱、SMTH-E-14 飞刃落柱、SMTH-E-15 禄神落柱、SMTH-E-16 天德落柱、SMTH-E-17 月德落柱
+- 可执行规则 55 条，全部 `verified: false`（条数碰巧与资料包 55 相同，不是 55 部完整书）
+  - 八字：ZPR-E-01..17、QTB-E-01、SMTH-E-01 天乙落柱、SMTH-E-02 驿马落柱、SMTH-E-03 咸池桃花落柱、SMTH-E-04 华盖落柱、SMTH-E-05 将星落柱、SMTH-E-06 孤辰落柱、SMTH-E-07 寡宿落柱、SMTH-E-08 劫煞落柱、SMTH-E-09 亡神落柱、SMTH-E-10 灾煞落柱、SMTH-E-11 天喜来源分条、SMTH-E-12 金舆落柱、SMTH-E-13 羊刃落柱、SMTH-E-14 飞刃落柱、SMTH-E-15 禄神落柱、SMTH-E-16 天德落柱、SMTH-E-17 月德落柱、SMTH-E-18 文昌来源分条、SMTH-E-19 学堂来源分条
   - 紫微：ZWD-E-01 生年干四化落宫
   - 六爻：ZSB-E-01 用神旬空、ZSB-E-02 用神月破
   - 梅花：MHY-E-01 体用生克方向
@@ -35,7 +35,7 @@
 - 本仓没有规则解释器；产品仓实现等价条件
 - 浏览器页面验收未做（本仓无页面）
 - 七政五星宿度旺宫、戌方入庙未按原文逐步程序接入运行；只与现行黄道本宫分条
-- 神煞除已接入落柱的条目外仍有名单未抽；天喜未按四季覆盖；阴干羊刃未按子平无刃覆盖；文昌学堂与原文取法未对齐
+- 神煞除已接入落柱的条目外仍有名单未抽；天喜未按四季覆盖；阴干羊刃未按子平无刃覆盖；文昌学堂只分条未改表
 
 ## 3. 全库真实统计
 
@@ -50,7 +50,7 @@
 | 稳定段落 | 53640 |
 | 其中疑文段 | 1261 |
 | 旧 rules.yaml 候选 | 1356，verified=0 |
-| 本轮可执行规则 | 53 |
+| 本轮可执行规则 | 55 |
 | 知识库包 | 33 |
 
 清单位置：
@@ -77,8 +77,8 @@
 - `references/executable/qimen-dunjia-tongzhi.json`：QMD-E-01、QMD-E-02
 - `references/executable/daliuren-daquan.json`：DLD-E-01..09
 - `references/executable/xingxue-dacheng.json`：XXDC-E-01、XXDC-E-02、XXDC-E-03
-- `references/executable/sanming-tonghui.json`：SMTH-E-01..17
-- 盘点脚本重跑，可执行规则 51→53
+- `references/executable/sanming-tonghui.json`：SMTH-E-01..19
+- 盘点脚本重跑，可执行规则 53→55
 - 不改 `sources/` 原文
 
 ## 5. 复现命令与检查结果
@@ -93,7 +93,7 @@ python3 -c "import json; d=json.load(open('references/inventory/library-inventor
 
 ```
 catalog_ready_packs 55, fulltext_files 54, paragraphs 53640,
-executable_rules_in_this_commit 53, knowledge packs 33
+executable_rules_in_this_commit 55, knowledge packs 33
 verified_rules 0
 faqiao destination=excluded_copyright
 ```
@@ -115,7 +115,7 @@ faqiao destination=excluded_copyright
 `L0187-L0189` 星辰本宫为庙堂；`L0184-L0185` 白羊金牛与娄胃宿度旺宫；`L0201` 日月戌方云入庙。三套与现行黄道本宫/对宫不是同一程序，入庙不是已经得福。
 
 《三命通会》`sanming-tonghui:L1391-L1400`：天乙落柱；歌诀泥而不通，不得输出吉神断语。
-`L1620-L1624` 羊刃飞刃、`L1295-L1299` 十干禄、`L3655-L3659` 天月二德：只记落柱，不是性情、倒戈、爵禄、无险或福寿。
+`L3655-L3659` 天月二德、`L1466` 文昌甲蛇乙猪与本盘通行表分条、`L1471-L1474` 纳音学堂与本盘日干长生分条：只记落柱，不是无险、福寿、科名或学业。
 
 ## 7. Web 字段映射
 
@@ -141,6 +141,8 @@ faqiao destination=excluded_copyright
 - 飞刃按羊刃对冲；禄神按日干临官支
 - 天德按月支正月丁二月申等，柱干或柱支命中即标；月将伤破未论
 - 月德按月支三合丙壬庚甲；德合伤破未论
+- 文昌本盘按通行表，不按甲蛇乙猪覆盖
+- 学堂本盘按日干长生，不按纳音长生同类覆盖
 - 14 套影印 `not_confirmed`，疑文 1261 段未校勘
 - 成格/破格力量未论，不得确定
 
