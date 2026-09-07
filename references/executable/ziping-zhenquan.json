@@ -686,6 +686,44 @@
       "implementation_assumption": "辛亥透丁卯未只记年日月时干除日干外见丁，且地支同时见卯未。辛戌年丙时壬只记年干丙且时干壬。庚酉年月丙丁时壬只记年干月干同时见丙丁且时干壬。不把因成得败覆盖成本盘破格。不改 GE_NAME。completion 仍为信息不足。",
       "verified": false
     }
+,
+    {
+      "id": "ZPR-E-38",
+      "art": "bazi",
+      "theme": "用神配气候分条",
+      "school": "子平真诠",
+      "paragraph_id": "ziping-zhenquan:L0504-L0512",
+      "quote": "是以印綬遇官，此謂官印雙全，無人不貴。而木逢冬水，雖透官星，亦難必貴。……假如庚生申月，而支中或子或辰，會成水局，天干透丁以爲官星，只要壬癸不透露干頭，便爲貴格，與金水傷官喜見官之說同論，亦調候之道也。",
+      "page": "geju",
+      "required_facts": ["day.gan", "month.zhi", "zhis", "stems.except_day"],
+      "when": { "exists": "geju.name" },
+      "satisfy_when": "已按原文记录庚申会子或辰透丁无壬癸、春木逢火、秋金遇水",
+      "fail_when": "无从记录月令",
+      "unknown_when": "不覆盖月令调候表；木逢冬水虽透官星难必贵未逐步量化；透丁为官不是成格结论，木火通明不是已经调候，不得输出成格或破格",
+      "rescue": "unimplemented",
+      "vernacular": "用神配气候只记原文透藏。透丁为官不是成格结论，木火通明不是已经调候。",
+      "implementation_assumption": "庚申会水只记地支见子或辰，年日月时干除日干外见丁且不见壬癸。春木逢火只记甲乙日寅卯月且除日干外见丙或丁。秋金遇水只记庚辛日申酉月且除日干外见壬或癸。不覆盖调候表。不改 GE_NAME。completion 仍为信息不足。",
+      "verified": false
+    }
+,
+    {
+      "id": "ZPR-E-39",
+      "art": "bazi",
+      "theme": "相神紧要分条",
+      "school": "子平真诠",
+      "paragraph_id": "ziping-zhenquan:L0525-L0532",
+      "quote": "如甲用酉官，透丁逢壬，則合傷存官以成格者，全賴於壬之相；戊用子財，透甲並己，則合煞存財以成格者，全賴於己之相；乙用酉煞，年丁月癸，時上逢戊，則合去癸印，以使丁得制煞者，全賴於戊之相；癸生亥月，透丙爲財，財逢月劫，而卯未來會，則化水爲木，而轉劫以生財者，全賴於卯未之相；庚生申月，透水洩氣，不通月令而金氣不甚靈，子辰會局，則化金爲水，而成金水相涵者，全賴於子辰之相。相神無破，貴格已成；相神有傷，立敗其格。",
+      "page": "geju",
+      "required_facts": ["day.gan", "month.zhi", "zhis", "year.gan", "month.gan", "time.gan", "stems.except_day"],
+      "when": { "exists": "geju.name" },
+      "satisfy_when": "已按原文记录甲酉透丁逢壬、戊子透甲并己、乙酉年丁月癸时戊、癸亥透丙卯未、庚申透水子辰、甲酉透丁逢癸又逢戊、丁酉透癸逢己又透甲",
+      "fail_when": "无从记录月令",
+      "unknown_when": "相神无破贵格已成、相神有伤立败其格不是本盘成格或破格结论；全赖壬相不是成格结论，相神有伤不是破格结论，不得输出成格或破格",
+      "rescue": "unimplemented",
+      "vernacular": "相神紧要只记原文透藏会支与年时干。全赖壬相不是成格结论，相神有伤不是破格结论。",
+      "implementation_assumption": "并透只记年日月时干除日干外同时见所列天干。乙酉年丁月癸时戊只记年干丁、月干癸、时干戊。癸亥透丙卯未还要求地支见卯未。庚申透水子辰还要求除日干外见壬或癸且地支见子辰。不把相神无破覆盖成本盘成格。不改 GE_NAME。completion 仍为信息不足。",
+      "verified": false
+    }
 
   ]
 }
