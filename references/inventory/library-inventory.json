@@ -1,7 +1,7 @@
 {
   "generated_on": "2026-09-08",
   "schema_version": "fateradar-library-inventory-v2",
-  "note": "资料包、基础段落索引、语义注解、白话和规则定义分开统计；规则 JSON 条数不证明引擎已经接入，source-reviewed 不等同人工影印核验。全文以磁盘 fulltext.md 实数为准。",
+  "note": "资料包、基础段落索引、语义注解、白话和规则定义分开统计；规则 JSON 条数不证明引擎已经接入，source-reviewed 不等同人工影印核验。文字文件按磁盘 fulltext.md 实数统计，不证明正文齐全；in_repo 只表示已存相关影印或候选底本。",
   "counts": {
     "catalog_ready_packs": 55,
     "disk_packs": 55,
@@ -15,28 +15,28 @@
     "verified_rule_flags": 0,
     "legacy_verified_rule_flags": 0,
     "reading_notes": 11,
-    "annotated_paragraphs": 617,
-    "source_reviewed_paragraphs": 617,
-    "vernacular_paragraphs": 617,
-    "source_reviewed_vernacular_paragraphs": 617,
-    "unannotated_paragraphs": 53023,
-    "paragraphs_without_vernacular": 53023,
+    "annotated_paragraphs": 1535,
+    "source_reviewed_paragraphs": 1535,
+    "vernacular_paragraphs": 1535,
+    "source_reviewed_vernacular_paragraphs": 1535,
+    "unannotated_paragraphs": 52105,
+    "paragraphs_without_vernacular": 52105,
     "literal_duplicate_paragraphs": 9220,
     "paragraph_kinds": {
-      "待分类": 49813,
-      "评注或元数据": 156,
-      "理论": 2423,
-      "案例": 316,
+      "待分类": 48970,
+      "评注或元数据": 651,
+      "理论": 2421,
+      "规则候选": 458,
+      "案例": 356,
       "序跋目录": 368,
       "操作步骤": 402,
       "术语": 13,
-      "规则候选": 148,
       "重复": 1
     },
     "classification_methods": {
-      "unclassified": 49813,
-      "pattern": 3210,
-      "annotation": 617
+      "unclassified": 48970,
+      "annotation": 1535,
+      "pattern": 3135
     },
     "destinations": {
       "engine": 21,
@@ -485,8 +485,10 @@
       "art_label": "八字",
       "destination": "engine",
       "purpose": "接入对应术数引擎与免费解释，不把资料包数当成已完成规则数。",
-      "facsimile_status": "not_confirmed",
-      "facsimile_paths": [],
+      "facsimile_status": "in_repo",
+      "facsimile_paths": [
+        "sources/facsimile/wikisource/files/SSID-11335994 滴天髓闡微.pdf"
+      ],
       "oversize_release": null
     },
     {
@@ -822,12 +824,12 @@
       "rule_definitions_with_vernacular": 0,
       "verified_rule_flags": 0,
       "reading_notes": 0,
-      "annotated_paragraphs": 0,
-      "source_reviewed_paragraphs": 0,
-      "vernacular_paragraphs": 0,
-      "source_reviewed_vernacular_paragraphs": 0,
-      "unannotated_paragraphs": 540,
-      "paragraphs_without_vernacular": 540,
+      "annotated_paragraphs": 540,
+      "source_reviewed_paragraphs": 540,
+      "vernacular_paragraphs": 540,
+      "source_reviewed_vernacular_paragraphs": 540,
+      "unannotated_paragraphs": 0,
+      "paragraphs_without_vernacular": 0,
       "literal_duplicate_paragraphs": 437,
       "art": "bazi",
       "art_label": "八字",
@@ -1214,12 +1216,12 @@
       "rule_definitions_with_vernacular": 1,
       "verified_rule_flags": 0,
       "reading_notes": 0,
-      "annotated_paragraphs": 0,
-      "source_reviewed_paragraphs": 0,
-      "vernacular_paragraphs": 0,
-      "source_reviewed_vernacular_paragraphs": 0,
-      "unannotated_paragraphs": 605,
-      "paragraphs_without_vernacular": 605,
+      "annotated_paragraphs": 378,
+      "source_reviewed_paragraphs": 378,
+      "vernacular_paragraphs": 378,
+      "source_reviewed_vernacular_paragraphs": 378,
+      "unannotated_paragraphs": 227,
+      "paragraphs_without_vernacular": 227,
       "literal_duplicate_paragraphs": 1,
       "art": "bazi",
       "art_label": "八字",
@@ -8165,12 +8167,12 @@
       "purpose": "接入对应术数引擎与免费解释，不把资料包数当成已完成规则数。",
       "facsimile_status": "in_repo",
       "facsimile_paths": [
-        "sources/facsimile/other/bushi-zhengzong/part-06.pdf",
-        "sources/facsimile/other/bushi-zhengzong/part-04.pdf",
-        "sources/facsimile/other/bushi-zhengzong/part-05.pdf",
         "sources/facsimile/other/bushi-zhengzong/part-01.pdf",
         "sources/facsimile/other/bushi-zhengzong/part-02.pdf",
-        "sources/facsimile/other/bushi-zhengzong/part-03.pdf"
+        "sources/facsimile/other/bushi-zhengzong/part-03.pdf",
+        "sources/facsimile/other/bushi-zhengzong/part-04.pdf",
+        "sources/facsimile/other/bushi-zhengzong/part-05.pdf",
+        "sources/facsimile/other/bushi-zhengzong/part-06.pdf"
       ],
       "oversize_release": null
     },
@@ -68706,12 +68708,12 @@
       "purpose": "当前页面没有对应输入，进入可检索知识库，不冒充已接入八术。",
       "facsimile_status": "in_repo",
       "facsimile_paths": [
-        "sources/facsimile/other/dili-bianzheng/part-06.pdf",
-        "sources/facsimile/other/dili-bianzheng/part-04.pdf",
-        "sources/facsimile/other/dili-bianzheng/part-05.pdf",
         "sources/facsimile/other/dili-bianzheng/part-01.pdf",
         "sources/facsimile/other/dili-bianzheng/part-02.pdf",
-        "sources/facsimile/other/dili-bianzheng/part-03.pdf"
+        "sources/facsimile/other/dili-bianzheng/part-03.pdf",
+        "sources/facsimile/other/dili-bianzheng/part-04.pdf",
+        "sources/facsimile/other/dili-bianzheng/part-05.pdf",
+        "sources/facsimile/other/dili-bianzheng/part-06.pdf"
       ],
       "oversize_release": null
     },
@@ -68783,8 +68785,15 @@
       "art_label": "风水",
       "destination": "knowledge",
       "purpose": "当前页面没有对应输入，进入可检索知识库，不冒充已接入八术。",
-      "facsimile_status": "not_confirmed",
-      "facsimile_paths": [],
+      "facsimile_status": "in_repo",
+      "facsimile_paths": [
+        "sources/facsimile/other/dili-bianzheng/part-01.pdf",
+        "sources/facsimile/other/dili-bianzheng/part-02.pdf",
+        "sources/facsimile/other/dili-bianzheng/part-03.pdf",
+        "sources/facsimile/other/dili-bianzheng/part-04.pdf",
+        "sources/facsimile/other/dili-bianzheng/part-05.pdf",
+        "sources/facsimile/other/dili-bianzheng/part-06.pdf"
+      ],
       "oversize_release": null
     },
     {
@@ -68837,8 +68846,11 @@
       "art_label": "风水",
       "destination": "knowledge",
       "purpose": "当前页面没有对应输入，进入可检索知识库，不冒充已接入八术。",
-      "facsimile_status": "not_confirmed",
-      "facsimile_paths": [],
+      "facsimile_status": "in_repo",
+      "facsimile_paths": [
+        "sources/facsimile/wikisource/files/CADAL06054153 撼龍經·撼龍經~疑龍經.djvu",
+        "sources/facsimile/wikisource/files/文淵閣四庫全書 0808冊.djvu"
+      ],
       "oversize_release": null
     },
     {
@@ -68909,8 +68921,11 @@
       "art_label": "风水",
       "destination": "knowledge",
       "purpose": "当前页面没有对应输入，进入可检索知识库，不冒充已接入八术。",
-      "facsimile_status": "not_confirmed",
-      "facsimile_paths": [],
+      "facsimile_status": "in_repo",
+      "facsimile_paths": [
+        "sources/facsimile/wikisource/files/文淵閣四庫全書 0808冊.djvu",
+        "sources/facsimile/wikisource/files/明刻本夷門廣牘24.djvu"
+      ],
       "oversize_release": null
     },
     {
@@ -68963,8 +68978,10 @@
       "art_label": "风水",
       "destination": "knowledge",
       "purpose": "当前页面没有对应输入，进入可检索知识库，不冒充已接入八术。",
-      "facsimile_status": "not_confirmed",
-      "facsimile_paths": [],
+      "facsimile_status": "in_repo",
+      "facsimile_paths": [
+        "sources/facsimile/wikisource/files/文淵閣四庫全書 0808冊.djvu"
+      ],
       "oversize_release": null
     },
     {
@@ -69077,8 +69094,11 @@
       "art_label": "风水",
       "destination": "knowledge",
       "purpose": "当前页面没有对应输入，进入可检索知识库，不冒充已接入八术。",
-      "facsimile_status": "not_confirmed",
-      "facsimile_paths": [],
+      "facsimile_status": "in_repo",
+      "facsimile_paths": [
+        "sources/facsimile/wikisource/files/CADAL06054155 青囊序.djvu",
+        "sources/facsimile/wikisource/files/文淵閣四庫全書 0808冊.djvu"
+      ],
       "oversize_release": null
     },
     {
@@ -70211,8 +70231,10 @@
       "art_label": "风水",
       "destination": "knowledge",
       "purpose": "当前页面没有对应输入，进入可检索知识库，不冒充已接入八术。",
-      "facsimile_status": "not_confirmed",
-      "facsimile_paths": [],
+      "facsimile_status": "in_repo",
+      "facsimile_paths": [
+        "sources/facsimile/wikisource/files/文淵閣四庫全書 0808冊.djvu"
+      ],
       "oversize_release": null
     },
     {
@@ -70552,8 +70574,11 @@
       "art_label": "风水",
       "destination": "knowledge",
       "purpose": "当前页面没有对应输入，进入可检索知识库，不冒充已接入八术。",
-      "facsimile_status": "not_confirmed",
-      "facsimile_paths": [],
+      "facsimile_status": "in_repo",
+      "facsimile_paths": [
+        "sources/facsimile/wikisource/files/CADAL06054153 撼龍經·撼龍經~疑龍經.djvu",
+        "sources/facsimile/wikisource/files/文淵閣四庫全書 0808冊.djvu"
+      ],
       "oversize_release": null
     },
     {
@@ -70636,8 +70661,11 @@
       "art_label": "风水",
       "destination": "knowledge",
       "purpose": "当前页面没有对应输入，进入可检索知识库，不冒充已接入八术。",
-      "facsimile_status": "not_confirmed",
-      "facsimile_paths": [],
+      "facsimile_status": "in_repo",
+      "facsimile_paths": [
+        "sources/facsimile/wikisource/files/CADAL06054154 撼龍經·葬法倒杖.djvu",
+        "sources/facsimile/wikisource/files/文淵閣四庫全書 0808冊.djvu"
+      ],
       "oversize_release": null
     },
     {
@@ -70762,8 +70790,11 @@
       "art_label": "风水",
       "destination": "knowledge",
       "purpose": "当前页面没有对应输入，进入可检索知识库，不冒充已接入八术。",
-      "facsimile_status": "not_confirmed",
-      "facsimile_paths": [],
+      "facsimile_status": "in_repo",
+      "facsimile_paths": [
+        "sources/facsimile/wikisource/files/CADAL06054152 葬書.djvu",
+        "sources/facsimile/wikisource/files/文淵閣四庫全書 0808冊.djvu"
+      ],
       "oversize_release": null
     },
     {
@@ -71026,12 +71057,12 @@
       "purpose": "当前页面没有对应输入，进入可检索知识库，不冒充已接入八术。",
       "facsimile_status": "in_repo",
       "facsimile_paths": [
-        "sources/facsimile/other/wuxing-jingji/part-06.pdf",
-        "sources/facsimile/other/wuxing-jingji/part-04.pdf",
-        "sources/facsimile/other/wuxing-jingji/part-05.pdf",
         "sources/facsimile/other/wuxing-jingji/part-01.pdf",
         "sources/facsimile/other/wuxing-jingji/part-02.pdf",
-        "sources/facsimile/other/wuxing-jingji/part-03.pdf"
+        "sources/facsimile/other/wuxing-jingji/part-03.pdf",
+        "sources/facsimile/other/wuxing-jingji/part-04.pdf",
+        "sources/facsimile/other/wuxing-jingji/part-05.pdf",
+        "sources/facsimile/other/wuxing-jingji/part-06.pdf"
       ],
       "oversize_release": null
     },
@@ -71085,8 +71116,10 @@
       "art_label": "禄命纳音",
       "destination": "knowledge",
       "purpose": "当前页面没有对应输入，进入可检索知识库，不冒充已接入八术。",
-      "facsimile_status": "not_confirmed",
-      "facsimile_paths": [],
+      "facsimile_status": "in_repo",
+      "facsimile_paths": [
+        "sources/facsimile/wikisource/files/文淵閣四庫全書 0809冊.djvu"
+      ],
       "oversize_release": null
     },
     {
@@ -74972,8 +75005,10 @@
       "art_label": "六壬",
       "destination": "engine",
       "purpose": "接入对应术数引擎与免费解释，不把资料包数当成已完成规则数。",
-      "facsimile_status": "not_confirmed",
-      "facsimile_paths": [],
+      "facsimile_status": "in_repo",
+      "facsimile_paths": [
+        "sources/facsimile/wikisource/files/文淵閣四庫全書 0808冊.djvu"
+      ],
       "oversize_release": null
     },
     {
@@ -94497,32 +94532,32 @@
       "purpose": "当前页面没有对应输入，进入可检索知识库，不冒充已接入八术。",
       "facsimile_status": "in_repo",
       "facsimile_paths": [
-        "sources/facsimile/other/xieji-bianfang-shu/part-16.djvu",
-        "sources/facsimile/other/xieji-bianfang-shu/part-20.djvu",
-        "sources/facsimile/other/xieji-bianfang-shu/part-21.djvu",
         "sources/facsimile/other/xieji-bianfang-shu/part-01.djvu",
-        "sources/facsimile/other/xieji-bianfang-shu/part-17.djvu",
-        "sources/facsimile/other/xieji-bianfang-shu/part-26.djvu",
-        "sources/facsimile/other/xieji-bianfang-shu/part-10.djvu",
+        "sources/facsimile/other/xieji-bianfang-shu/part-02.djvu",
+        "sources/facsimile/other/xieji-bianfang-shu/part-03.djvu",
+        "sources/facsimile/other/xieji-bianfang-shu/part-04.djvu",
+        "sources/facsimile/other/xieji-bianfang-shu/part-05.djvu",
         "sources/facsimile/other/xieji-bianfang-shu/part-06.djvu",
         "sources/facsimile/other/xieji-bianfang-shu/part-07.djvu",
-        "sources/facsimile/other/xieji-bianfang-shu/part-11.djvu",
-        "sources/facsimile/other/xieji-bianfang-shu/part-24.djvu",
         "sources/facsimile/other/xieji-bianfang-shu/part-08.djvu",
-        "sources/facsimile/other/xieji-bianfang-shu/part-04.djvu",
+        "sources/facsimile/other/xieji-bianfang-shu/part-09.djvu",
+        "sources/facsimile/other/xieji-bianfang-shu/part-10.djvu",
+        "sources/facsimile/other/xieji-bianfang-shu/part-11.djvu",
         "sources/facsimile/other/xieji-bianfang-shu/part-12.djvu",
         "sources/facsimile/other/xieji-bianfang-shu/part-13.djvu",
-        "sources/facsimile/other/xieji-bianfang-shu/part-05.djvu",
-        "sources/facsimile/other/xieji-bianfang-shu/part-09.djvu",
-        "sources/facsimile/other/xieji-bianfang-shu/part-25.djvu",
-        "sources/facsimile/other/xieji-bianfang-shu/part-02.djvu",
         "sources/facsimile/other/xieji-bianfang-shu/part-14.djvu",
-        "sources/facsimile/other/xieji-bianfang-shu/part-22.djvu",
+        "sources/facsimile/other/xieji-bianfang-shu/part-15.djvu",
+        "sources/facsimile/other/xieji-bianfang-shu/part-16.djvu",
+        "sources/facsimile/other/xieji-bianfang-shu/part-17.djvu",
         "sources/facsimile/other/xieji-bianfang-shu/part-18.djvu",
         "sources/facsimile/other/xieji-bianfang-shu/part-19.djvu",
+        "sources/facsimile/other/xieji-bianfang-shu/part-20.djvu",
+        "sources/facsimile/other/xieji-bianfang-shu/part-21.djvu",
+        "sources/facsimile/other/xieji-bianfang-shu/part-22.djvu",
         "sources/facsimile/other/xieji-bianfang-shu/part-23.djvu",
-        "sources/facsimile/other/xieji-bianfang-shu/part-15.djvu",
-        "sources/facsimile/other/xieji-bianfang-shu/part-03.djvu"
+        "sources/facsimile/other/xieji-bianfang-shu/part-24.djvu",
+        "sources/facsimile/other/xieji-bianfang-shu/part-25.djvu",
+        "sources/facsimile/other/xieji-bianfang-shu/part-26.djvu"
       ],
       "oversize_release": null
     },
@@ -96426,12 +96461,12 @@
       "purpose": "当前页面没有对应输入，进入可检索知识库，不冒充已接入八术。",
       "facsimile_status": "in_repo",
       "facsimile_paths": [
-        "sources/facsimile/other/xingli-kaoyuan/part-06.pdf",
-        "sources/facsimile/other/xingli-kaoyuan/part-04.pdf",
-        "sources/facsimile/other/xingli-kaoyuan/part-05.pdf",
         "sources/facsimile/other/xingli-kaoyuan/part-01.pdf",
         "sources/facsimile/other/xingli-kaoyuan/part-02.pdf",
-        "sources/facsimile/other/xingli-kaoyuan/part-03.pdf"
+        "sources/facsimile/other/xingli-kaoyuan/part-03.pdf",
+        "sources/facsimile/other/xingli-kaoyuan/part-04.pdf",
+        "sources/facsimile/other/xingli-kaoyuan/part-05.pdf",
+        "sources/facsimile/other/xingli-kaoyuan/part-06.pdf"
       ],
       "oversize_release": null
     },
@@ -98591,8 +98626,10 @@
       "art_label": "七政四余",
       "destination": "engine",
       "purpose": "接入对应术数引擎与免费解释，不把资料包数当成已完成规则数。",
-      "facsimile_status": "not_confirmed",
-      "facsimile_paths": [],
+      "facsimile_status": "in_repo",
+      "facsimile_paths": [
+        "sources/facsimile/wikisource/files/文淵閣四庫全書 0809冊.djvu"
+      ],
       "oversize_release": null
     },
     {
@@ -106805,8 +106842,10 @@
       "art_label": "七政四余",
       "destination": "engine",
       "purpose": "接入对应术数引擎与免费解释，不把资料包数当成已完成规则数。",
-      "facsimile_status": "not_confirmed",
-      "facsimile_paths": [],
+      "facsimile_status": "in_repo",
+      "facsimile_paths": [
+        "sources/facsimile/wikisource/files/文淵閣四庫全書 0809冊.djvu"
+      ],
       "oversize_release": null
     },
     {

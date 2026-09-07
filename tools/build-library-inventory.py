@@ -48,6 +48,32 @@ OVERSIZE = {
     "liuren-miben": "Release facsimiles-oversize-2026-09-04 / NCL-06572-daliuren-miben.pdf",
 }
 
+# 来源关系已在 sources/facsimile/wikisource/MANIFEST.md 的 F01–F08，
+# 以及 other/MANIFEST.md 的《都天宝照经》条目记录。共享文件不以 slug 命名。
+# 这里只确认本地存在的相关影印／候选底本，不断言与电子文本同版或逐字一致。
+SHARED_FACSIMILE_WORKS = {
+    "wikisource/files/SSID-11335994 滴天髓闡微.pdf": ("ditiansui-chanwei",),
+    "wikisource/files/CADAL06054153 撼龍經·撼龍經~疑龍經.djvu": ("hanlong-jing", "yilong-jing"),
+    "wikisource/files/明刻本夷門廣牘24.djvu": ("huangdi-zhaijing",),
+    "wikisource/files/CADAL06054155 青囊序.djvu": ("qingnang-xu",),
+    "wikisource/files/CADAL06054154 撼龍經·葬法倒杖.djvu": ("zangfa-daozhang",),
+    "wikisource/files/CADAL06054152 葬書.djvu": ("zangshu",),
+    "wikisource/files/文淵閣四庫全書 0808冊.djvu": (
+        "huangdi-zhaijing", "zangshu", "hanlong-jing", "yilong-jing",
+        "zangfa-daozhang", "qingnang-xu", "qingnang-aoyu", "tianyu-jing", "daliuren-daquan",
+    ),
+    "wikisource/files/文淵閣四庫全書 0809冊.djvu": (
+        "yuzhao-shenying", "xingming-suyuan", "xingxue-dacheng",
+    ),
+    **{f"other/dili-bianzheng/part-{part:02}.pdf": ("dutian-baozhao-jing",) for part in range(1, 7)},
+}
+
+FACSIMILE_LABEL = {
+    "in_repo": "已存影印／候选底本",
+    "oversize_release": "Release 影印／候选底本",
+    "not_confirmed": "尚未确认影印",
+}
+
 SLUG_ART = {
     "qimen-dunjia-tongzhi": ("qimen", "奇门", "engine"),
     "qimen-faqiao": ("qimen", "奇门", "excluded_copyright"),
@@ -228,7 +254,14 @@ def facsimile_index() -> dict[str, list[str]]:
         rel = str(path.relative_to(ROOT))
         for part in path.parts:
             found.setdefault(part, []).append(rel)
-    return found
+    for relative, slugs in SHARED_FACSIMILE_WORKS.items():
+        path = FACSIMILE / relative
+        if not path.is_file():
+            continue
+        rel = str(path.relative_to(ROOT))
+        for slug in slugs:
+            found.setdefault(slug, []).append(rel)
+    return {key: sorted(set(paths)) for key, paths in found.items()}
 
 
 def art_of(system: str, slug: str) -> tuple[str, str, str]:
@@ -469,7 +502,7 @@ def main() -> None:
     summary = {
         "generated_on": date.today().isoformat(),
         "schema_version": "fateradar-library-inventory-v2",
-        "note": "资料包、基础段落索引、语义注解、白话和规则定义分开统计；规则 JSON 条数不证明引擎已经接入，source-reviewed 不等同人工影印核验。全文以磁盘 fulltext.md 实数为准。",
+        "note": "资料包、基础段落索引、语义注解、白话和规则定义分开统计；规则 JSON 条数不证明引擎已经接入，source-reviewed 不等同人工影印核验。文字文件按磁盘 fulltext.md 实数统计，不证明正文齐全；in_repo 只表示已存相关影印或候选底本。",
         "counts": {
             "catalog_ready_packs": len(catalog.get("ready_reference_packs", [])),
             "disk_packs": len(packs),
@@ -535,7 +568,17 @@ def main() -> None:
         ("missing_fulltext", "缺全文"),
     ]:
         lines.append(f"- {label}：{dest.get(key, 0)}")
-    lines += ["", "## 资料包", "", "| 系统 | slug | 书名 | 全文 | 段落 | 注解 | 段落白话 | 规则定义 | 去向 | 影印 |", "|---|---|---|---:|---:|---:|---:|---:|---|---|"]
+    fac_counts = Counter(p["facsimile_status"] for p in packs)
+    fac_files = {path for p in packs for path in p["facsimile_paths"]}
+    lines += [
+        "", "## 影印可用性", "",
+        f"- 已存影印／候选底本：{fac_counts['in_repo']} 个资料包，关联 {len(fac_files)} 个不同本地文件。合刊与四库同册可以关联多书，不重复保存或计为多个文件。",
+        f"- 超限原件位于既有 Release：{fac_counts['oversize_release']} 个资料包；未计入上述本地文件数。",
+        f"- 当前未确认影印：{fac_counts['not_confirmed']} 个资料包；这不是世界范围不存在底本的结论。",
+        "- 文件存在不代表与电子本文字完全一致，也不证明同版、卷页齐全或已经逐页校勘。",
+        "- 共享底本关联依据：`sources/facsimile/wikisource/MANIFEST.md` F01–F08，以及 `sources/facsimile/other/MANIFEST.md` 的都天宝照经条目；不存在的文件不会算作 in_repo。",
+        "", "## 资料包", "", "| 系统 | slug | 书名 | 文字文件 | 段落 | 注解 | 段落白话 | 规则定义 | 去向 | 影印 |", "|---|---|---|---:|---:|---:|---:|---:|---|---|",
+    ]
     for p in packs:
         lines.append(
             "| {system} | {slug} | {title} | {ft} | {pc} | {annotations} | {vernacular} | {rules} | {dest} | {fac} |".format(
@@ -548,7 +591,7 @@ def main() -> None:
                 vernacular=p["vernacular_paragraphs"],
                 rules=p["rule_definitions"],
                 dest=p["destination"],
-                fac=p["facsimile_status"],
+                fac=FACSIMILE_LABEL[p["facsimile_status"]],
             )
         )
     lines += ["", "## 排除项", ""]

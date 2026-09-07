@@ -20,6 +20,52 @@ KNOWLEDGE_SPEC.loader.exec_module(knowledge)
 ROOT = Path(__file__).resolve().parents[1]
 
 
+class FacsimileMappingTests(unittest.TestCase):
+    def setUp(self):
+        temporary = tempfile.TemporaryDirectory()
+        self.addCleanup(temporary.cleanup)
+        self.root = Path(temporary.name)
+
+    def create_file(self, relative):
+        path = self.root / relative
+        path.parent.mkdir(parents=True, exist_ok=True)
+        path.write_bytes(b"fixture: inventory checks file presence, not image collation")
+        return relative
+
+    def build_index(self):
+        with patch.multiple(inventory, ROOT=self.root, FACSIMILE=self.root / "sources/facsimile"):
+            return inventory.facsimile_index()
+
+    def test_ditiansui_shared_files_directory_is_attached_to_its_book(self):
+        path = self.create_file("sources/facsimile/wikisource/files/SSID-11335994 滴天髓闡微.pdf")
+        self.assertEqual(self.build_index().get("ditiansui-chanwei"), [path])
+
+    def test_shared_0808_volume_can_support_each_named_work_without_duplicate_files(self):
+        path = self.create_file("sources/facsimile/wikisource/files/文淵閣四庫全書 0808冊.djvu")
+        found = self.build_index()
+        for slug in ("hanlong-jing", "yilong-jing", "huangdi-zhaijing", "qingnang-aoyu", "qingnang-xu", "zangfa-daozhang", "zangshu", "tianyu-jing", "daliuren-daquan"):
+            self.assertEqual(found.get(slug), [path], slug)
+        self.assertNotIn("qingnang-jing", found, "0808 does not contain 青囊经 merely because its title is similar")
+
+    def test_shared_0809_volume_covers_the_three_documented_xingming_works(self):
+        path = self.create_file("sources/facsimile/wikisource/files/文淵閣四庫全書 0809冊.djvu")
+        found = self.build_index()
+        for slug in ("yuzhao-shenying", "xingming-suyuan", "xingxue-dacheng"):
+            self.assertEqual(found.get(slug), [path], slug)
+
+    def test_dutian_uses_only_dili_bianzheng_parts_actually_present(self):
+        second = self.create_file("sources/facsimile/other/dili-bianzheng/part-02.pdf")
+        first = self.create_file("sources/facsimile/other/dili-bianzheng/part-01.pdf")
+        found = self.build_index()
+        self.assertEqual(found.get("dutian-baozhao-jing"), [first, second])
+        self.assertEqual(found.get("dili-bianzheng"), [first, second])
+
+    def test_a_manifest_association_without_a_local_file_is_not_in_repo(self):
+        self.create_file("sources/facsimile/wikisource/MANIFEST.md")
+        self.assertNotIn("ditiansui-chanwei", self.build_index())
+        self.assertNotIn("hanlong-jing", self.build_index())
+
+
 class ClassificationTests(unittest.TestCase):
     def test_original_shu_shangshu_case_keeps_its_range(self):
         lines = (ROOT / "sources/fulltext/bazi/ziping-zhenquan/fulltext.md").read_text(encoding="utf-8").splitlines()
@@ -108,6 +154,18 @@ class ProgressTests(unittest.TestCase):
         self.assertEqual(result["counts"].get("annotated_paragraphs"), 0)
         self.assertEqual(result["counts"].get("vernacular_paragraphs"), 0)
         self.assertEqual(result["counts"].get("rule_definitions_with_vernacular"), 1)
+
+    def test_local_facsimile_is_a_candidate_not_a_collation_result(self):
+        path = self.root / "sources/facsimile/other/sample/part-01.pdf"
+        path.parent.mkdir(parents=True)
+        path.write_bytes(b"fixture facsimile")
+        result = self.build()
+        self.assertEqual(result["packs"][0]["facsimile_status"], "in_repo")
+        self.assertEqual(result["counts"]["source_reviewed_paragraphs"], 0)
+        self.assertEqual(result["counts"]["verified_rule_flags"], 0)
+        report = (self.root / "docs/LIBRARY_INVENTORY.md").read_text(encoding="utf-8")
+        self.assertIn("已存影印／候选底本", report)
+        self.assertIn("不代表与电子本文字完全一致", report)
 
     def test_unknown_paragraph_does_not_inflate_progress(self):
         self.annotation["entries"][0]["paragraphId"] = "sample:L0003-L0005"
