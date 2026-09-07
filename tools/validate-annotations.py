@@ -61,7 +61,15 @@ def main() -> int:
             paragraphs[paragraph["id"]] = paragraph
     errors: list[str] = []
     books = entries = reviewed = 0
-    for path in sorted(args.annotations.glob("*/*.json")):
+    if args.annotations.is_file():
+        files = [args.annotations]
+    elif args.annotations.is_dir():
+        files = sorted(args.annotations.rglob("*.json"))
+    else:
+        files = []
+    if not files:
+        errors.append(f"No annotation JSON files found: {args.annotations}")
+    for path in files:
         data = json.loads(path.read_text())
         errors.extend(validate_pack(data, paragraphs))
         books += 1

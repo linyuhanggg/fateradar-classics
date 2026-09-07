@@ -36,6 +36,7 @@ class KnowledgeExport(unittest.TestCase):
         self.assertEqual(row["review"], "unreviewed")
         self.assertNotIn("vernacular", row)
         self.assertEqual(result["sourceRevision"], "source-commit")
+        self.assertEqual(result["books"][0]["textStatus"], "unassessed")
 
     def test_annotation_is_joined_by_real_id(self):
         entry = {"paragraphId": "book:L0001-L0002", "kind": "规则候选", "vernacular": "这是已核对的具体白话。", "terms": ["术语"], "notes": ["例外待核"], "review": "source-reviewed"}
@@ -57,6 +58,12 @@ class KnowledgeExport(unittest.TestCase):
         row = module.build_export(self.root, "commit")["paragraphs"][0]
         self.assertIn("得时不旺", row["searchText"])
         self.assertEqual(row["heading"], "得時不旺")
+
+    def test_navigation_only_source_is_not_presented_as_full_text(self):
+        self.write_json("references/source-quality.json", {"version": 1, "books": [{"slug": "book", "status": "navigation-only", "notes": ["仅导航，正文恢复中"]}]})
+        book = module.build_export(self.root, "commit")["books"][0]
+        self.assertEqual(book["textStatus"], "navigation-only")
+        self.assertEqual(book["sourceNotes"], ["仅导航，正文恢复中"])
 
     def test_bad_annotation_fails_export(self):
         self.write_json("references/annotations/bazi/book.json", {"bookSlug": "book", "entries": [{"paragraphId": "book:L0001-L0009"}]})

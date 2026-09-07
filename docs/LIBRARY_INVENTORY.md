@@ -16,10 +16,10 @@
 
 ## 实际语义加工进度
 
-- 已有段落注解：204 / 53640
-- 标记电子原文审读 source-reviewed：204（不是人工影印核验）
-- 有非空白话或处理说明的段落：204（其中 source-reviewed：204）
-- 尚无注解：53436；尚无段落白话：53436
+- 已有段落注解：617 / 53640
+- 标记电子原文审读 source-reviewed：617（不是人工影印核验）
+- 有非空白话或处理说明的段落：617（其中 source-reviewed：617）
+- 尚无注解：53023；尚无段落白话：53023
 - 原文字面重复段：9220（仅忽略空白比较，same_text_as 不代表流派或理论等价）
 
 上述是文件中实际存在的产物统计，不是全库完成率。模式分类只帮助找材料，未分类、只有规则标题或未审读白话都不能算完成。
@@ -41,7 +41,7 @@
 | bazi | sanming-tonghui | 三命通会 | 是 | 970 | 0 | 0 | 20 | engine | in_repo |
 | bazi | shenfeng-tongkao | 神峰通考 | 是 | 15 | 0 | 0 | 2 | engine | in_repo |
 | bazi | yuanhai-ziping | 渊海子平 | 是 | 2409 | 0 | 0 | 0 | engine | in_repo |
-| bazi | ziping-zhenquan | 子平真诠 | 是 | 556 | 204 | 204 | 39 | engine | in_repo |
+| bazi | ziping-zhenquan | 子平真诠 | 是 | 556 | 556 | 556 | 39 | engine | in_repo |
 | divination | bushi-zhengzong | 卜筮正宗 | 是 | 9 | 0 | 0 | 0 | engine | in_repo |
 | divination | huangji-jingshi | 皇极经世书 | 是 | 8789 | 0 | 0 | 0 | knowledge | oversize_release |
 | divination | huangjin-ce | 黄金策 | 是 | 849 | 0 | 0 | 0 | knowledge | not_confirmed |
@@ -52,10 +52,10 @@
 | fengshui | dili-bianzheng | 地理辨正 | 是 | 2 | 0 | 0 | 0 | knowledge | in_repo |
 | fengshui | dutian-baozhao-jing | 都天宝照经 | 是 | 101 | 0 | 0 | 0 | knowledge | not_confirmed |
 | fengshui | hanlong-jing | 撼龙经 | 是 | 6 | 0 | 0 | 0 | knowledge | not_confirmed |
-| fengshui | huangdi-zhaijing | 黄帝宅经 | 是 | 11 | 0 | 0 | 0 | knowledge | not_confirmed |
-| fengshui | qingnang-aoyu | 青囊奥语 | 是 | 3 | 0 | 0 | 0 | knowledge | not_confirmed |
+| fengshui | huangdi-zhaijing | 黄帝宅经 | 是 | 11 | 11 | 11 | 0 | knowledge | not_confirmed |
+| fengshui | qingnang-aoyu | 青囊奥语 | 是 | 3 | 3 | 3 | 0 | knowledge | not_confirmed |
 | fengshui | qingnang-jing | 青囊经 | 是 | 24 | 0 | 0 | 0 | knowledge | not_confirmed |
-| fengshui | qingnang-xu | 青囊序 | 是 | 1 | 0 | 0 | 0 | knowledge | not_confirmed |
+| fengshui | qingnang-xu | 青囊序 | 是 | 1 | 1 | 1 | 0 | knowledge | not_confirmed |
 | fengshui | rudi-yan-quanshu | 入地眼全书 | 是 | 126 | 0 | 0 | 0 | knowledge | not_confirmed |
 | fengshui | shenshi-xuankong-xue | 沈氏玄空学 | 是 | 1191 | 0 | 0 | 0 | knowledge | not_confirmed |
 | fengshui | tianyu-jing | 天玉经 | 是 | 224 | 0 | 0 | 0 | knowledge | not_confirmed |
@@ -64,13 +64,13 @@
 | fengshui | yangzhai-shishu | 阳宅十书 | 是 | 9 | 0 | 0 | 0 | knowledge | not_confirmed |
 | fengshui | yilong-jing | 疑龙经 | 是 | 96 | 0 | 0 | 0 | knowledge | not_confirmed |
 | fengshui | zangfa-daozhang | 葬法倒杖 | 是 | 13 | 0 | 0 | 0 | knowledge | not_confirmed |
-| fengshui | zangshu | 葬书 | 是 | 17 | 0 | 0 | 0 | knowledge | not_confirmed |
+| fengshui | zangshu | 葬书 | 是 | 17 | 17 | 17 | 0 | knowledge | not_confirmed |
 | luming-nayin | lantai-miaoxuan | 兰台妙选 | 是 | 7 | 0 | 0 | 0 | knowledge | not_confirmed |
 | luming-nayin | li-xuzhong-mingshu | 李虚中命书 | 是 | 8 | 0 | 0 | 0 | knowledge | in_repo |
 | luming-nayin | luoluzi-sanming | 珞琭子三命消息赋 | 是 | 156 | 0 | 0 | 0 | knowledge | in_repo |
 | luming-nayin | wuxing-jingji | 五行精纪 | 是 | 4294 | 0 | 0 | 0 | knowledge | in_repo |
 | luming-nayin | yuzhao-shenying | 玉照神应真经 | 是 | 2 | 0 | 0 | 0 | knowledge | not_confirmed |
-| physiognomy | bingjian | 冰鉴 | 是 | 26 | 0 | 0 | 0 | knowledge | not_confirmed |
+| physiognomy | bingjian | 冰鉴 | 是 | 26 | 26 | 26 | 0 | knowledge | not_confirmed |
 | physiognomy | liuzhuang-xiangfa | 柳庄相法 | 是 | 2 | 0 | 0 | 0 | knowledge | in_repo |
 | physiognomy | mayi-shenxiang | 麻衣神相 | 是 | 1627 | 0 | 0 | 0 | knowledge | in_repo |
 | physiognomy | shenxiang-quanbian | 神相全编 | 是 | 345 | 0 | 0 | 0 | knowledge | not_confirmed |
@@ -88,7 +88,7 @@
 | xingming | xingming-suyuan | 星命溯源 | 是 | 75 | 0 | 0 | 0 | engine | not_confirmed |
 | xingming | xingxue-dacheng | 星学大成 | 是 | 1392 | 0 | 0 | 3 | engine | not_confirmed |
 | ziwei | feixing-ziwei-doushu-yuanzhi | 華山陳希夷先生飛星紫微斗數原旨 / 斗數觀測錄 | 是 | 336 | 0 | 0 | 0 | engine | in_repo |
-| ziwei | taiwei-fu | 太微赋 | 是 | 3 | 0 | 0 | 0 | engine | not_confirmed |
+| ziwei | taiwei-fu | 太微赋 | 是 | 3 | 3 | 3 | 0 | engine | not_confirmed |
 | ziwei | ziwei-doushu-quanshu | 紫微斗数全书 | 是 | 1981 | 0 | 0 | 1 | engine | not_confirmed |
 
 ## 排除项
@@ -100,18 +100,19 @@
 
 ## 段落分类来源
 
-- pattern 文本模式初筛：3537；annotation 实际语义注解：204；unclassified 待分类：49899
+- pattern 文本模式初筛：3210；annotation 实际语义注解：617；unclassified 待分类：49813
 - 四柱案例从正文命造或带评语的四组干支识别；起例、先取后取与月起顺逆等操作从正文识别。模式结果仍可能需修订，不当作人工审读。
 - 目录、序跋不硬造解读；无分类依据时保留待分类。疑字只标记，不由模型补字。
 
-- 待分类：49899
-- 理论：2508
-- 操作步骤：387
-- 序跋目录：347
-- 案例：301
+- 待分类：49813
+- 理论：2423
+- 操作步骤：402
+- 序跋目录：368
+- 案例：316
 - 评注或元数据：156
-- 规则候选：40
-- 术语：2
+- 规则候选：148
+- 术语：13
+- 重复：1
 
 段落 ID 形如 `slug:L0123-L0125`，对应 `sources/fulltext/.../fulltext.md` 行号，明细在 `references/inventory/paragraphs/`。
 

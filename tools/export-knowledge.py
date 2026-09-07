@@ -17,6 +17,8 @@ spec.loader.exec_module(annotation_validation)
 
 def build_export(root: Path, revision: str) -> dict:
     inventory = json.loads((root / "references/inventory/library-inventory.json").read_text())
+    quality_path = root / "references/source-quality.json"
+    quality = {book["slug"]: book for book in json.loads(quality_path.read_text())["books"]} if quality_path.exists() else {}
     books = []
     rows = []
     paragraph_map = {}
@@ -29,7 +31,9 @@ def build_export(root: Path, revision: str) -> dict:
         paragraph_file = root / "references/inventory/paragraphs" / system / f"{slug}.json"
         data = json.loads(paragraph_file.read_text())
         books.append({"slug": slug, "title": pack["title"], "system": system,
-                      "fulltext": fulltext, "paragraphCount": len(data["paragraphs"])})
+                      "fulltext": fulltext, "paragraphCount": len(data["paragraphs"]),
+                      "textStatus": quality.get(slug, {}).get("status", "unassessed"),
+                      "sourceNotes": quality.get(slug, {}).get("notes", [])})
         for paragraph in data["paragraphs"]:
             start, end = paragraph["start_line"], paragraph["end_line"]
             if not 1 <= start <= end <= len(lines):

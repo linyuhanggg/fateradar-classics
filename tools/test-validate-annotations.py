@@ -1,5 +1,9 @@
 #!/usr/bin/env python3
 import copy
+import json
+import subprocess
+import sys
+import tempfile
 import importlib.util
 import unittest
 from pathlib import Path
@@ -32,6 +36,23 @@ class AnnotationValidation(unittest.TestCase):
     def test_review_does_not_promote_verified(self):
         self.data["entries"][0]["verified"] = True
         self.assertTrue(any("human verified" in x for x in module.validate_pack(self.data, self.paragraphs)))
+
+    def test_cli_checks_a_single_file_instead_of_succeeding_on_zero_files(self):
+        with tempfile.TemporaryDirectory() as folder:
+            path = Path(folder) / "annotation.json"
+            path.write_text(json.dumps(self.data))
+            result = subprocess.run([sys.executable, str(Path(__file__).with_name("validate-annotations.py")), "--annotations", str(path), "--json"], capture_output=True, text=True)
+            receipt = json.loads(result.stdout)
+            self.assertEqual(receipt["books"], 1)
+            self.assertEqual(receipt["entries"], 1)
+            self.assertFalse(receipt["ok"])  # fixture book is absent from the real library
+            self.assertEqual(result.returncode, 1)
+
+    def test_empty_directory_is_not_an_acceptance_pass(self):
+        with tempfile.TemporaryDirectory() as folder:
+            result = subprocess.run([sys.executable, str(Path(__file__).with_name("validate-annotations.py")), "--annotations", folder, "--json"], capture_output=True, text=True)
+            self.assertEqual(result.returncode, 1)
+            self.assertFalse(json.loads(result.stdout)["ok"])
 
     def test_related_references_must_resolve(self):
         self.data["entries"][0]["relatedParagraphIds"] = ["other:L0001-L0001"]
