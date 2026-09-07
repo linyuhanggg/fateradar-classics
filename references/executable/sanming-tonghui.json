@@ -7,7 +7,7 @@
     "fulltext": "sources/fulltext/bazi/sanming-tonghui/fulltext.md"
   },
   "verified": false,
-  "note": "接入天乙、驿马、咸池/桃花、华盖、将星、孤辰、寡宿落柱。歌诀泥而不通、十二驿马、纳音同类、隔角惆怅、孤寡公卿都未论完。落柱不是贵人已至，也不是行程、品行、孤独、婚配或公卿结论。verified 保持 false。",
+  "note": "接入天乙、驿马、咸池/桃花、华盖、将星、孤辰、寡宿、劫煞、亡神、灾煞落柱。歌诀泥而不通、十二驿马、纳音同类、隔角惆怅、十六般分类都未论完。落柱不是贵人已至，也不是行程、品行、孤独、婚配、祖业、贫穷或横祸结论。verified 保持 false。",
   "rules": [
     {
       "id": "SMTH-E-01",
@@ -133,6 +133,60 @@
       "rescue": "unimplemented",
       "vernacular": "{pillar}见寡宿。这是落柱标签，不是婚配结论。",
       "implementation_assumption": "现行表按年支三方退后一辰取寡宿。未按日支、隔角、惆怅煞或贵格包裹改写结论。",
+      "verified": false
+    },
+    {
+      "id": "SMTH-E-08",
+      "art": "bazi",
+      "theme": "劫煞落柱",
+      "school": "三命通会",
+      "paragraph_id": "sanming-tonghui:L1515-L1520",
+      "quote": "刼在五行絶處亡在五行臨官俱屬寅申巳亥水絶在巳申子辰以巳為刼煞巳中戊土刼水也火絶在亥寅午戌以亥為刼煞亥中壬水刼火也金絶在寅巳酉丑以寅為刼煞寅中丙火刼金也木絶在申亥卯未以申為刼煞申中庚金刼木也",
+      "page": "shensha",
+      "required_facts": ["year.zhi", "pillars.zhi"],
+      "when": { "exists": "year.zhi" },
+      "satisfy_when": "年支三合局对应的五行绝处支出现在四柱地支：只记录落柱名称劫煞",
+      "fail_when": "四柱地支未见该局劫煞支",
+      "unknown_when": "古歌云劫煞为灾不可当、须防祖业消亡尽：生旺官贵包裹与十六般未论完，不得输出祖业断语",
+      "rescue": "unimplemented",
+      "vernacular": "{pillar}见劫煞。这是落柱标签，不是祖业结论。",
+      "implementation_assumption": "现行表按年支三合绝处取劫煞。未按日支或十六般吉凶分类改写结论。",
+      "verified": false
+    },
+    {
+      "id": "SMTH-E-09",
+      "art": "bazi",
+      "theme": "亡神落柱",
+      "school": "三命通会",
+      "paragraph_id": "sanming-tonghui:L1515-L1520",
+      "quote": "水生木申子辰以亥為亡神亥中甲木洩水也火生土寅午戌以巳為亡神巳中戊土洩火也金生水巳酉丑以申為亡神申中壬水洩金也木生火亥卯未以寅為亡神寅中丙火洩木也",
+      "page": "shensha",
+      "required_facts": ["year.zhi", "pillars.zhi"],
+      "when": { "exists": "year.zhi" },
+      "satisfy_when": "年支三合局对应的临官泄气支出现在四柱地支：只记录落柱名称亡神",
+      "fail_when": "四柱地支未见该局亡神支",
+      "unknown_when": "古歌云亡神七煞祸非轻、身命若还居此地贫穷蹇滞：长生贵人天地合未论完，不得输出贫穷断语",
+      "rescue": "unimplemented",
+      "vernacular": "{pillar}见亡神。这是落柱标签，不是贫穷结论。",
+      "implementation_assumption": "现行表按年支三合临官处取亡神。未按十六般或日支改写结论。",
+      "verified": false
+    },
+    {
+      "id": "SMTH-E-10",
+      "art": "bazi",
+      "theme": "灾煞落柱",
+      "school": "三命通会",
+      "paragraph_id": "sanming-tonghui:L1676-L1678",
+      "quote": "災煞者其性勇猛常居刼煞之前衝破將星謂之災煞如申子辰將星在子午却去衝子寅午戌在午子却去衝己酉丑在酉卯却去衝亥卯未在卯酉却去衝是災煞也",
+      "page": "shensha",
+      "required_facts": ["year.zhi", "pillars.zhi"],
+      "when": { "exists": "year.zhi" },
+      "satisfy_when": "年支三合局对应的冲将星支出现在四柱地支：只记录落柱名称灾煞",
+      "fail_when": "四柱地支未见该局灾煞支",
+      "unknown_when": "本书又说此煞主血光横死、有福神相助多是武权：官星印绶生旺未论完，不得输出横祸断语",
+      "rescue": "unimplemented",
+      "vernacular": "{pillar}见灾煞。这是落柱标签，不是横祸结论。",
+      "implementation_assumption": "现行表按年支三合冲将星取灾煞。未按白虎与灾煞微不同、福神相助改写结论。",
       "verified": false
     }
   ]
