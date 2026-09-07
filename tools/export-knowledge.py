@@ -91,7 +91,7 @@ def build_export(root: Path, revision: str) -> dict:
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("--output", type=Path, default=ROOT / "dist/knowledge/library.json")
+    parser.add_argument("--output", type=Path, default=ROOT / "dist/knowledge/library")
     args = parser.parse_args()
     revision = subprocess.check_output(["git", "rev-parse", "HEAD"], cwd=ROOT, text=True).strip()
     # Publish only a committed source snapshot. OCR page edits can otherwise shift
@@ -103,11 +103,18 @@ def main():
         with tarfile.open(fileobj=io.BytesIO(archive)) as bundle:
             bundle.extractall(folder, filter="data")
         data = build_export(Path(folder), revision)
-    args.output.parent.mkdir(parents=True, exist_ok=True)
-    # One paragraph per line keeps regenerated data reviewable in Git.
+    if args.output.suffix:
+        raise ValueError("--output now names the knowledge directory, not a single JSON file")
+    args.output.mkdir(parents=True, exist_ok=True)
     header = {key: value for key, value in data.items() if key != "paragraphs"}
-    body = ",\n".join(json.dumps(row, ensure_ascii=False, separators=(",", ":")) for row in data["paragraphs"])
-    args.output.write_text(json.dumps(header, ensure_ascii=False, separators=(",", ":"))[:-1] + ',"paragraphs":[\n' + body + '\n]}\n')
+    (args.output / "index.json").write_text(json.dumps(header, ensure_ascii=False, indent=2) + "\n")
+    by_book = {book["slug"]: [] for book in data["books"]}
+    for row in data["paragraphs"]:
+        by_book[row["bookSlug"]].append(row)
+    for slug, rows in by_book.items():
+        body = ",\n".join(json.dumps(row, ensure_ascii=False, separators=(",", ":")) for row in rows)
+        prefix = json.dumps({"sourceRevision": revision, "bookSlug": slug}, separators=(",", ":"))[:-1]
+        (args.output / f"{slug}.json").write_text(prefix + ',"paragraphs":[\n' + body + '\n]}\n')
     print(json.dumps({"books": len(data["books"]), "paragraphs": len(data["paragraphs"]),
                       "source_reviewed": sum(p["review"] == "source-reviewed" for p in data["paragraphs"]),
                       "output": str(args.output)}, ensure_ascii=False))
