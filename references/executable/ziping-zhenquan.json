@@ -7,7 +7,7 @@
     "fulltext": "sources/fulltext/bazi/ziping-zhenquan/fulltext.md"
   },
   "verified": false,
-  "note": "月令取格、顺逆、伤官见官、透印救应、金水例外、月令刑冲破害记录。成格仍因会合解救与财印配合未算完而不确定。verified 保持 false。",
+  "note": "月令取格、顺逆、伤官见官、透印救应、金水例外、月令刑冲破害记录、刑冲组外会合解救。成格仍因破害会合与财印配合未算完而不确定。verified 保持 false。",
   "rules": [
     {
       "id": "ZPR-E-01",
@@ -135,9 +135,27 @@
       "satisfy_when": "月令与四柱组成冲、破、害，或三刑三支齐全、自刑两见、子卯两见",
       "fail_when": "月令未与其余地支组成冲破害刑",
       "unknown_when": "三刑只见两支",
-      "rescue": "unimplemented",
-      "vernacular": "月令{month_zhi}与命局的刑冲破害记录为{hits}。会合解救未实现，所以不能写成已经破格。",
-      "implementation_assumption": "破用通行六破表。会合解刑冲未实现，completion 仍为信息不足。",
+      "rescue": "ZPR-E-08",
+      "vernacular": "月令{month_zhi}与命局的刑冲破害记录为{hits}。刑冲走会合解救；破害会合未实现，所以不能写成已经破格。",
+      "implementation_assumption": "破用通行六破表。破害不套用刑冲会合。completion 仍为信息不足。",
+      "verified": false
+    },
+    {
+      "id": "ZPR-E-08",
+      "art": "bazi",
+      "theme": "刑冲会合以解",
+      "school": "子平真诠",
+      "paragraph_id": "ziping-zhenquan:L0401-L0401",
+      "quote": "刑沖，而會合以解之。",
+      "page": "geju",
+      "required_facts": ["month.zhi", "chart.zhis", "relations.he", "relations.hui"],
+      "when": { "interference.id": ["month-chong", "month-xing"] },
+      "satisfy_when": "刑冲组外另有六合、三合或三会支",
+      "fail_when": "刑冲组外不见六合、三合、三会",
+      "unknown_when": "只见半合或半会",
+      "rescue": "self",
+      "vernacular": "月令刑冲的会合救应是{rescue_verdict}。组内自合不算解救。救应出现不等于成格；不成立也不等于已经破格。",
+      "implementation_assumption": "合会支必须在刑冲组外。半合半会标信息不足。破害不走这条。未论合化。",
       "verified": false
     }
   ]
