@@ -38,3 +38,19 @@ python3 tools/validate-annotations.py --annotations references/annotations/bazi/
 - PDF83、163页卷末文字已对照，但没有理论内容；第1页封面仍有未辨字，第10页只抽检。
 
 正文已有可定位恢复文本；新版本以PDF页隔离生成ID，由主任务多来源管道处理，旧540个导航ID不承载新正文。整书canonical_eligible仍为false。
+
+## 已核正文的独立知识注释
+
+`references/annotations/bazi/mingli-yueyan--nlc-recovery.json` 已建立49条实际新来源注释：45条正文与旧说讨论、4条卷末元数据。它与旧540条导航分文件保存，bookSlug相同但段落ID带`nlc-recovery:Pxxx`独立命名空间。
+
+这些正文只取多来源管道确认的page-reviewed或passage-reviewed范围，未引用第23页待辨日干行。标题之前的黑底项目标记与版心属于独立元数据，未核标记不被升成正文证据，也不阻塞已经逐字对图的正文段。
+
+内容已具体说明：普通取用的生克扶抑路径、六格主从与从化目录、日主与六神的用神关系、生年/月令权衡，以及本书如何质疑固定分日用事。旧例表在这里明确标作被引旧说，不能反向证明本书支持该表。
+
+与《子平真诠》的比较仅在已核段建立：本版用神段着重扶抑功能，而《子平真诠》所引段从月令格局入手。保留各自词义侧重和上下文，没有拼成一个统一算法。新正文没有给完整四柱命例，未补造案例或公历日期。
+
+```sh
+python3 tools/validate-annotations.py --annotations references/annotations/bazi/mingli-yueyan--nlc-recovery.json --json
+```
+
+实际结果：49 entries、49 source-reviewed、0 errors。整书其他页仍待图文核对，不能把这49条解释称为全书语义加工完成。
