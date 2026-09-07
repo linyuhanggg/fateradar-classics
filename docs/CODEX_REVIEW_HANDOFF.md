@@ -16,7 +16,7 @@
 - 全库真实盘点：catalog 55 包、磁盘 55 包、全文 54、排除 4
 - 稳定段落 ID：`slug:Lxxxx-Lyyyy`
 - 去向：engine 21 / knowledge 33 / excluded_copyright 1（《奇门法窍》）
-- 可执行规则 ZPR-E-01..08（取格、顺逆、伤官见官、透印救应、金水例外、月令刑冲破害记录、刑冲组外会合），全部 `verified: false`
+- 可执行规则 ZPR-E-01..13 与 QTB-E-01（穷通调候透藏），全部 `verified: false`
 - 知识库检索索引：`references/inventory/knowledge-index.json`（33 包）与 `docs/KNOWLEDGE_SEARCH_INTERFACE.md`
 - 疑文段保留，不猜字进原文
 
@@ -41,7 +41,7 @@
 | 稳定段落 | 53640 |
 | 其中疑文段 | 1261 |
 | 旧 rules.yaml 候选 | 1356，verified=0 |
-| 本轮可执行规则 | 8 |
+| 本轮可执行规则 | 14 |
 | 知识库包 | 33 |
 
 清单位置：
@@ -58,7 +58,8 @@
 
 ## 4. 修改文件与行为变化
 
-- `references/executable/ziping-zhenquan.json`：ZPR-E-05 透印、E-06 金水、E-07 月令刑冲破害、E-08 刑冲组外会合
+- `references/executable/ziping-zhenquan.json`：ZPR-E-01..13
+- `references/executable/qiongtong-baojian.json`：QTB-E-01 调候透藏
 - `tools/build-library-inventory.py`：可执行规则数从 JSON 实数统计
 - `tools/build-knowledge-index.py`：知识库检索索引
 - 不改 `sources/` 原文
@@ -76,7 +77,7 @@ python3 -c "import json; d=json.load(open('references/inventory/library-inventor
 
 ```
 catalog_ready_packs 55, fulltext_files 54, paragraphs 53640,
-executable_rules_in_this_commit 8, knowledge packs 33
+executable_rules_in_this_commit 14, knowledge packs 33
 faqiao destination=excluded_copyright
 ```
 

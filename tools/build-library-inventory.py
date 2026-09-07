@@ -413,7 +413,7 @@ def main() -> None:
         f"- catalog 另列排除项：{summary['counts']['blocked_or_excluded']}",
         f"- 稳定段落：{summary['counts']['paragraphs']}（含疑文段 {summary['counts']['doubtful_paragraphs']}）",
         f"- 旧 rules.yaml 候选：{summary['counts']['legacy_rule_candidates']}（全部 verified=false，不作运行权威）",
-        f"- 本轮接入可执行规则：{summary['counts']['executable_rules_in_this_commit']}（当前仅子平真诠 JSON；产品引擎实现等价条件）",
+        f"- 本轮接入可执行规则：{summary['counts']['executable_rules_in_this_commit']}（`references/executable/*.json` 实数；产品引擎实现等价条件）",
         "",
         "## 去向",
         "",
