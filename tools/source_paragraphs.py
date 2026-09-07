@@ -68,7 +68,18 @@ def load_source_paragraphs(root: Path) -> dict[str, dict]:
                 raise ValueError(f"Duplicate paragraph ID: {row['id']}")
             result[row["id"]] = row
     for edition in supplemental_editions(root):
+        reviews = {}
+        if edition.get("pageReviews"):
+            review_data = json.loads((root / edition["pageReviews"]).read_text())
+            if review_data["sourcePath"] != edition["file"]:
+                raise ValueError(f"Page review refers to another edition: {edition['id']}")
+            reviews = {item["pdfPage"]: item for item in review_data["pages"]}
         for row in split_edition(edition, (root / edition["file"]).read_text().splitlines()):
+            review = reviews.get(row.get("pdf_page"), {})
+            if review.get("status") == "source-reviewed" and not review.get("unresolved"):
+                row["source_status"] = "page-reviewed"
+                row["source_label"] = edition["label"] + " · 本页已对照影印"
+                row["source_notes"] = ["本页转写已按记录范围对照影印；不代表整本校完或命盘判断已成立。", review.get("scope", "本页转写"), *review.get("notes", [])]
             if row["id"] in result:
                 raise ValueError(f"Duplicate edition paragraph ID: {row['id']}")
             result[row["id"]] = row

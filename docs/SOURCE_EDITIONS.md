@@ -6,7 +6,7 @@
 
 命理约言NLC恢复稿采用`mingli-yueyan:nlc-recovery:P021:L002-L009`一类页内ID。P是PDF页，L是该页标题后相对行范围；全局start_line/end_line仍对应当前文件，以固定提交生成GitHub引用。前页拆列校正不会改下一页的ID，当前页校正后需重核该页的段落注解。未冻结OCR稿不是可随意引用的原典。
 
-OCR片段保持`source_status=ocr-draft`。语义注解可存draft，但不能仅把review写成source-reviewed就升级；新校验器拒绝该组合，原书案例导出同样拒绝未校OCR。逐页校核记录将由恢复任务继续补，当前并未根据非空页数或单页抽检自动升级整稿。
+OCR片段保持`source_status=ocr-draft`。语义注解可存draft，但不能仅把review写成source-reviewed就升级；新校验器拒绝该组合，原书案例导出同样拒绝未校OCR。逐页校核记录由恢复任务继续补；仅status=source-reviewed且无未决项的具体页可转为page-reviewed，partial/spot-checked与未列页仍是草稿。不会根据非空页数或单页抽检升级整稿。
 
 产品书房显示补充来源名称，OCR另显“影印识别草稿·待校对”、PDF页码与使用范围。搜索命中不是规则满足；OCR草稿不会通过新规则来源导出进入已校依据。
 

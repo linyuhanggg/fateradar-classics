@@ -8,7 +8,10 @@
       "label": "六壬指南卷三、四注解镜像对照层",
       "file": "sources/fulltext/san-shi/liuren-zhiyin/supplemental-annotated-golla-vol3-4.md",
       "sourceStatus": "reference-text",
-      "notes": ["补缺对照材料含注者说明与重编章节，不能冒充未注原典。", "已有电子文字可查阅，不代表该版本已与影印逐字校勘。"]
+      "notes": [
+        "补缺对照材料含注者说明与重编章节，不能冒充未注原典。",
+        "已有电子文字可查阅，不代表该版本已与影印逐字校勘。"
+      ]
     },
     {
       "id": "yanyi-vol4-9",
@@ -17,7 +20,10 @@
       "label": "奇门演义卷四至九网页补缺对照层",
       "file": "sources/fulltext/san-shi/qimen-dunjia-tongzhi/supplemental-taiyi-qimen-yanyi-vol4-9.md",
       "sourceStatus": "reference-text",
-      "notes": ["网页题为奇门演义、统宗卷四至九补缺，保留独立来源，不替换主文本。", "材料明确标出缺注和缺赋，不能按卷名推定全卷齐备。"]
+      "notes": [
+        "网页题为奇门演义、统宗卷四至九补缺，保留独立来源，不替换主文本。",
+        "材料明确标出缺注和缺赋，不能按卷名推定全卷齐备。"
+      ]
     },
     {
       "id": "nlc-recovery",
@@ -27,7 +33,11 @@
       "file": "sources/normalized/bazi/mingli-yueyan/nlc-recovery.md",
       "sourceStatus": "ocr-draft",
       "pageScoped": true,
-      "notes": ["按 PDF 页保持顺序，仍有错字、双列混读和夹注读序问题。", "仅供定位及校对，不能作为已校原文或命盘运行依据。"]
+      "notes": [
+        "按 PDF 页保持顺序，仍有错字、双列混读和夹注读序问题。",
+        "仅供定位及校对，不能作为已校原文或命盘运行依据。"
+      ],
+      "pageReviews": "sources/normalized/bazi/mingli-yueyan/page-reviews.json"
     }
   ]
 }
