@@ -7,7 +7,7 @@
     "fulltext": "sources/fulltext/bazi/sanming-tonghui/fulltext.md"
   },
   "verified": false,
-  "note": "接入天乙、驿马、咸池/桃花、华盖、将星、孤辰、寡宿、劫煞、亡神、灾煞落柱。歌诀泥而不通、十二驿马、纳音同类、隔角惆怅、十六般分类都未论完。落柱不是贵人已至，也不是行程、品行、孤独、婚配、祖业、贫穷或横祸结论。verified 保持 false。",
+  "note": "接入天乙、驿马、咸池/桃花、华盖、将星、孤辰、寡宿、劫煞、亡神、灾煞、天喜、金舆落柱。天喜原文按四季，本盘按年支三合，只分条不覆盖。金舆禄前二辰与马前二辰不是同一套。落柱不是欢欣或妻妾阴福。verified 保持 false。",
   "rules": [
     {
       "id": "SMTH-E-01",
@@ -187,6 +187,42 @@
       "rescue": "unimplemented",
       "vernacular": "{pillar}见灾煞。这是落柱标签，不是横祸结论。",
       "implementation_assumption": "现行表按年支三合冲将星取灾煞。未按白虎与灾煞微不同、福神相助改写结论。",
+      "verified": false
+    },
+    {
+      "id": "SMTH-E-11",
+      "art": "bazi",
+      "theme": "天喜来源分条",
+      "school": "三命通会",
+      "paragraph_id": "sanming-tonghui:L1456-L1456",
+      "quote": "此外又有天喜神春戌夏丑秋辰冬未遇者主歡欣",
+      "page": "shensha",
+      "required_facts": ["year.zhi", "month.zhi", "pillars.zhi"],
+      "when": { "exists": "year.zhi" },
+      "satisfy_when": "已按本盘年支三合标出天喜落柱，并标明与原文四季天喜不是同一套",
+      "fail_when": "四柱地支未见本盘年支三合天喜支",
+      "unknown_when": "原文春戌夏丑秋辰冬未按月令四季；本盘按年支三合：不是同一套逐步程序，不得输出欢欣断语",
+      "rescue": "unimplemented",
+      "vernacular": "{pillar}见天喜。这是本取法的落柱标签，不是已经欢欣，也不是已经按四季取天喜。",
+      "implementation_assumption": "现行表按年支三合取天喜（寅午戌未、申子辰丑、巳酉丑戌、亥卯未辰）。未按春戌夏丑秋辰冬未覆盖。",
+      "verified": false
+    },
+    {
+      "id": "SMTH-E-12",
+      "art": "bazi",
+      "theme": "金舆落柱",
+      "school": "三命通会",
+      "paragraph_id": "sanming-tonghui:L1341-L1344",
+      "quote": "金轝常居祿前二辰如甲子人祿在寅辰為金轝是也……八字金書云驛馬前辰居二位此名金轝在其中",
+      "page": "shensha",
+      "required_facts": ["day.gan", "pillars.zhi"],
+      "when": { "exists": "day.gan" },
+      "satisfy_when": "日干禄前二辰出现在四柱地支：只记录落柱名称金舆",
+      "fail_when": "四柱地支未见该干禄前二辰",
+      "unknown_when": "本书又以马前二辰为金轝：与禄前二辰不是同一套，官贵夹拥未论完，不得输出妻妾阴福或作赘",
+      "rescue": "unimplemented",
+      "vernacular": "{pillar}见金舆。这是落柱标签，不是妻妾阴福结论。",
+      "implementation_assumption": "现行表按日干禄前二辰取金舆。未按驿马前二辰覆盖，也未按官贵夹拥改写。",
       "verified": false
     }
   ]
