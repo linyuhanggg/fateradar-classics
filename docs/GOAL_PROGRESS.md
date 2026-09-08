@@ -4,6 +4,15 @@
 
 两仓均为 `codex/full-library-completion`：古籍 `/Users/yuhanglin/.codex/worktrees/fateradar-classics-grok-full-library`；产品 `/Users/yuhanglin/.codex/worktrees/fateradar-product-grok-full-library`。原接手基准古籍2396e4c、产品8f1ca84。原main及他人admin/billing/.claude不改。本目标尚未合main或部署。
 
+## 最新接续：阳宅第105–106页15图记录，累计77有页内证据
+
+上一轮efb8911/f8e1d38第104页已推送，属实际进展。本轮0ef93c3实际查Page105/106（修订1899506/1899507）扫描及三栏，另开pic1945/1947/1952确认图面。
+
+- 移徙五方首中题实东、末缺题中；四季首冬题实春、末缺题冬，共4完整旁注。火庵青石/扫描黄石差异不改原文；太岁穿宅甲子起甲寅的前后不合在扫描也存在，不仅电子转录错误。
+- 四邻三道符扫描有三幅，pic1945/1947仅左右两幅且不含中图，确认漏收中幅，旁记位置不虚构URL。穿井pic1952实际在106扫描页，网页跨页不改变归属。
+- 累计77既有图有题名/邻文证据，59未看；漏收图2个、未识字形另列。复杂笔画和仪式功效未验证，父段draft，现有全文200节不变。
+- docs/review/yangzhai-vol678-images-2026-09-09/更新11截图和manifest/报告；9entries验证0错，原文/ID/verified保持，无产品导出，知识555f606/21780、运行e43cd38。nmem上下文及恢复授权检索成功，全目标active，未合main或部署；继续107–108页和全库八术余项。
+
 ## 最新接续：阳宅第104页24图记录，累计62有页内证据
 
 上一轮c3ce3e3/06ac8e5第103页核对已推送，属实际进展。本轮efb8911使用ego-browser34查看Page104修订1899505、整页上中下与题字放大，并独立打开pic1918/1919核实复合图。
