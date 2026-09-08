@@ -4,6 +4,14 @@
 
 两仓均为 `codex/full-library-completion`：古籍 `/Users/yuhanglin/.codex/worktrees/fateradar-classics-grok-full-library`；产品 `/Users/yuhanglin/.codex/worktrees/fateradar-product-grok-full-library`。原接手基准古籍2396e4c、产品8f1ca84。原main及他人admin/billing/.claude不改。本目标尚未合main或部署。
 
+## 最新接续：六爻伏变入口及数字卦链接修复
+
+上一轮有实际进展。本轮补页面明爻之外的候选入口，伏神/变爻定位所属爻，月日单列；不误标明爻身份。网页发现gua=100000被默认路由解析成number，旧校验丢弃后退回时间起卦，真实把复换成井。已修复六位01数字卦体及数字seed回字符串；其他参数规则不扩张。
+
+- 用真实TanStack默认解析/序列化测试64全静卦、动爻字符串、seed，先红后绿。30相关测试、typecheck/改动ESLint通过。ego旧空间7消失且列表确认无本任务，另建34“FateRadar 全库开发验收”，勿动31–33其他任务空间。
+- 空间34实核2023-04-06 12:00上海gua100000为地雷复；选父母有二爻下伏父母乙巳入口，点入二爻；改子孙后父母入口及日月参照消失、卦体仍100000。仅DOM/交互验收，不称截图全验。未调用模型。
+- 全量目标active，未改原文/verified/golden，未合main或部署；继续其余算法与全库范围。
+
 ## 最新接续：六爻总览补齐伏神变爻候选
 
 上一轮有实际进展。本轮对照黄金策与现有代码发现真实消费者漏接：详细analysis.use已含伏神/变爻/月日，但patterns和meta只重扫本卦明爻，复卦父母伏巳的空破支持被漏掉。产品改为同一候选来源，复用节点标签，资料标明下伏/变出/月日；不改变取用优先或作用计算。
