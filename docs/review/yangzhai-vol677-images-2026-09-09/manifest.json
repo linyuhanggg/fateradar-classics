@@ -550,8 +550,10 @@
       "rawCaptionLine": 2600,
       "rawCaption": "圖",
       "mappingBasis": "Same order among 46 figure elements and 46 raw image placeholders; not original edition collation",
-      "imageReview": "not-viewed",
-      "verified": false
+      "imageReview": "svg-day-range-viewed",
+      "verified": false,
+      "screenshot": "pic1870-table.png",
+      "observation": "太阴表头与初一至初四；尚未逐格转录。"
     },
     {
       "alt": "图",
@@ -562,11 +564,30 @@
       "rawCaptionLine": 2603,
       "rawCaption": "圖",
       "mappingBasis": "Same order among 46 figure elements and 46 raw image placeholders; not original edition collation",
-      "imageReview": "not-viewed",
-      "verified": false
+      "imageReview": "svg-day-range-viewed",
+      "verified": false,
+      "screenshot": "pic1872-table.png",
+      "observation": "太阴表二十三至三十的续表，不是太阳表。"
     }
   ],
   "observedAt": "2026-09-09",
   "scope": "第677卷图链接恢复。网页使用简体显示，原始文字保留繁体；链接恢复不等逐图审读。",
-  "rawSource": "sources/fulltext/fengshui/yangzhai-shishu/fulltext.md"
+  "rawSource": "sources/fulltext/fengshui/yangzhai-shishu/fulltext.md",
+  "fullPageRecovery": {
+    "sourcePage": "https://zh.wikisource.org/wiki/Page:Gujin_Tushu_Jicheng,_Volume_476_(1700-1725).djvu/101",
+    "pageRevision": 1899502,
+    "scanUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b8/Gujin_Tushu_Jicheng%2C_Volume_476_%281700-1725%29.djvu/page101-3840px-Gujin_Tushu_Jicheng%2C_Volume_476_%281700-1725%29.djvu.jpg",
+    "screenshots": [
+      "page101-overview.png",
+      "page101-moon-middle.png",
+      "page101-solar.png"
+    ],
+    "observations": [
+      "正文页末只链接pic1870和pic1872，无pic1871。",
+      "Page页另提示缺少pic1873。插图，文件名带句号。",
+      "扫描中初五至二十二实际存在，太阴表可见初一至三十，尚未逐格转录。",
+      "扫描左侧标题为逐月太陽過宮定局修造逢之大吉，底部十二月表及逐月節氣遲早每年時曆可考可读。"
+    ],
+    "verified": false
+  }
 }
