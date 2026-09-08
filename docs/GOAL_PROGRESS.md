@@ -4,6 +4,14 @@
 
 两仓均为 `codex/full-library-completion`：古籍 `/Users/yuhanglin/.codex/worktrees/fateradar-classics-grok-full-library`；产品 `/Users/yuhanglin/.codex/worktrees/fateradar-product-grok-full-library`。原接手基准古籍2396e4c、产品8f1ca84。原main及他人admin/billing/.claude不改。本目标尚未合main或部署。
 
+## 最新接续：阳宅676卷49节文字已入库，下一1865
+
+上一轮有实际进展。本轮555f606新增7节L1766–1859，第二卷49节电子文字已审；前两卷66+49=115节，9主段5审4未审。下一L1863元信息、L1865第677卷正文。
+
+- 安门择日多项详选择部非全起法；巳巳非法干支与債木方句疑留。大小月忌日与门光吉日不同，门光水点/上下方向缺图不生成全表。鲁班八寸未定现代尺长不换厘米，四正门金不是改卦五行。
+- 图形/缺题/尺图门光仍未核，source-reviewed只现有电子文字。固定555f606059acec2754760db5b5b9cc51fcfdc44b导出55包80889段source_reviewed21780，18知识测试过，115小节切片一致连续；5entries注释验证0错。
+- 原文/ID/verified保持，运行仍e43cd38未改算法；nmem继续502未反复重试。全目标active，未合main或部署；继续677卷与图源、其余全库八术工作。
+
 ## 最新接续：阳宅元空装卦42节，下一1766开门
 
 上一轮有实际进展。本轮f3721ae新增8节L1681–1765，第二正文连续L1219–1765共42节，元空文字读完；下一L1766开门修造。
