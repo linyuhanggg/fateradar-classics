@@ -4,6 +4,13 @@
 
 两仓均为 `codex/full-library-completion`：古籍 `/Users/yuhanglin/.codex/worktrees/fateradar-classics-grok-full-library`；产品 `/Users/yuhanglin/.codex/worktrees/fateradar-product-grok-full-library`。原接手基准古籍2396e4c、产品8f1ca84。原main及他人admin/billing/.claude不改。本目标尚未合main或部署。
 
+## 最新接续：地理辨正青囊序及蒋注，下一行933
+
+上一轮有实际进展。本轮662e4f2新增S024–S046共23子节，长正文工作稿连续覆盖L7–932。青囊序原句、蒋注和所驳俗说分别记录；四十八局只说明一山顺逆两用，未冒充完整运行表。前后两处净阴净阳含义不同，山水分用和同源理论不混；秘传未书的主张不由别派表格补齐。
+
+- 2entries验证0错，46节相邻行连续断言通过。父段仍draft，L933青囊奥语起未读；未导出本批不完整正文到产品，产品仍固定e64f15d/19338审读。原文/ID/verified不改。
+- 下一步奥语、天玉、宝照及余文继续；全量目标active，未合main或部署，不重复旧代码全验。
+
 ## 最新接续：地理辨正青囊经及蒋注工作稿，下一行498
 
 上一轮有实际进展。本轮2a16163开读地理辨正，元数据L3–5已审，长正文L7–1863仅完成L7–497的23连续子节，父段仍draft，不计整卷完成。本批未导出不完整正文，产品仍固定e64f15d/19338审读。
