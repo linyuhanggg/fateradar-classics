@@ -4,6 +4,15 @@
 
 两仓均为 `codex/full-library-completion`：古籍 `/Users/yuhanglin/.codex/worktrees/fateradar-classics-grok-full-library`；产品 `/Users/yuhanglin/.codex/worktrees/fateradar-product-grok-full-library`。原接手基准古籍2396e4c、产品8f1ca84。原main及他人admin/billing/.claude不改。本目标尚未合main或部署。
 
+## 最新接续：渊海魁罡金神六亲440主段，下一行972
+
+上一轮有实际进展。本轮ae44fcc新增38主段至L970，魁罡金神六亲总论及论父，累计440段；下一L972论母。
+
+- 魁罡四日与诗壬戌异字、忌财官与财官福反说关联；金神仅三时，甲午时上句疑不扩第四时。空亡本生年起与现日旬不同不改算法。
+- 六亲宫位/星/男女映射分层，食神孙女/男孙及杀多女/杀男差异保留，不据道德灾亲字词判断真人。论父仍有庚申救应不摘仅克字。
+- 440entries验证0错；固定ae44fcccb75de8cad7c799ab2bced5ad98cef82d导出55包80889段source_reviewed19806，18知识测试通过，440主段切片一致，参考1988未审。
+- 原文/ID/verified保持，运行引擎未改；全目标active，未合main或部署。继续六亲后文与其余资料、实际规则核对。
+
 ## 最新接续：渊海阳刃日贵日德402主段，下一行880
 
 上一轮有实际进展。本轮560c288新增49主段至L878，读阳刃日刃日贵日德，累计402段；下一L880。
