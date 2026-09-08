@@ -104,6 +104,64 @@ class PillarSourceChecks(unittest.TestCase):
         with self.assertRaisesRegex(ValueError, "marked recomputable"):
             m.case_input(broken)
 
+    def test_qimen_raw_five_is_not_replaced_by_a_hosting_palace_or_fake_date(self):
+        fields, _, _ = m.case_input({"inputBasis": "qimen-layout", "input": {
+            "dun": "yang", "ju": 1, "timePillar": "壬申"},
+            "expected": {"chiefStar": "天蓬", "starPalaceRaw": 5}, "canRecompute": True})
+        self.assertTrue(fields["canRecompute"])
+        self.assertEqual(fields["expected"]["starPalaceRaw"], 5)
+        self.assertEqual(fields["scope"], ["值符星名", "值符原宫数"])
+        self.assertNotIn("birthDate", fields["input"])
+        self.assertNotIn("dayPillar", fields["input"])
+        self.assertNotIn("chiefDoor", fields["expected"])
+
+    def test_page_relative_case_anchor_tracks_inserted_earlier_pages_and_keeps_quote(self):
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            source_path = "sources/layouts.md"
+            (root / "sources").mkdir()
+            original = "# 局式\n\n## PDF第093页\n\n陽局\n上元一局\n甲己日\n乙丑\n蓬休\n九二\n"
+            (root / source_path).write_text(original)
+            edition = {"id": "nlc-layouts", "bookSlug": "book", "label": "原图转写", "file": source_path,
+                       "sourceStatus": "reference-text", "pageScoped": True}
+            (root / "references").mkdir()
+            (root / "references/source-editions.json").write_text(json.dumps({"editions": [edition]}))
+            pid = "book:nlc-layouts:P093:L002-L007"
+            folder = root / "references/annotations/san-shi"
+            folder.mkdir(parents=True)
+            entry = {"paragraphId": pid, "review": "source-reviewed", "kind": "案例", "vernacular": "乙丑蓬休九二", "notes": []}
+            (folder / "book.json").write_text(json.dumps({"bookSlug": "book", "entries": [entry]}))
+            candidates = root / "references/cases"
+            candidates.mkdir()
+            case = {"id": "Q1", "name": "乙丑时", "inputBasis": "qimen-layout",
+                    "input": {"dun": "yang", "ju": 1, "timePillar": "乙丑"},
+                    "expected": {"chiefStar": "天蓬", "chiefDoor": "休门", "starPalaceRaw": 9, "doorPalaceRaw": 2},
+                    "canRecompute": True, "sourceContext": {"dayStemGroup": ["甲", "己"]},
+                    "source": {"paragraphId": pid, "file": source_path, "pdfPage": 93, "pageStartLine": 2, "pageEndLine": 7,
+                               "quote": "陽局\n上元一局\n甲己日\n乙丑\n蓬休\n九二"}}
+            (candidates / "qimen-component-candidates.json").write_text(json.dumps({"bookSlug": "book", "cases": [case]}))
+            before = m.collect_cases(root)["cases"][0]
+            (root / source_path).write_text(original.replace("## PDF第093页", "## PDF第092页\n\n> 前页图版说明\n\n## PDF第093页"))
+            after = m.collect_cases(root)["cases"][0]
+            self.assertEqual(before["source"]["paragraphId"], after["source"]["paragraphId"])
+            self.assertEqual(before["source"]["quote"], after["source"]["quote"])
+            self.assertEqual(after["source"]["startLine"], before["source"]["startLine"] + 4)
+            self.assertEqual(after["sourceContext"]["dayStemGroup"], ["甲", "己"])
+            self.assertNotIn("dayPillar", after["input"])
+            # Each time row can cite only its own cells, with the shared header
+            # cited separately, while both retain their reviewed parent id.
+            case["source"].update(pageStartLine=5, pageEndLine=7, quote="乙丑\n蓬休\n九二")
+            case["sources"] = [case.pop("source"), {"paragraphId": pid, "file": source_path,
+                "pdfPage": 93, "pageStartLine": 2, "pageEndLine": 4, "quote": "陽局\n上元一局\n甲己日"}]
+            (candidates / "qimen-component-candidates.json").write_text(json.dumps({"bookSlug": "book", "cases": [case]}))
+            split = m.collect_cases(root)["cases"][0]
+            self.assertEqual(split["sources"][0]["quote"], "乙丑\n蓬休\n九二")
+            self.assertEqual(split["sources"][1]["quote"], "陽局\n上元一局\n甲己日")
+            case["expectationStatus"] = "source-conflict"
+            fields, _, _ = m.case_input(case)
+            self.assertTrue(fields["canRecompute"])
+            self.assertEqual(fields["expectationStatus"], "source-conflict")
+
     def test_liuyao_diagram_keeps_multiple_sources_and_reported_outcome_separate(self):
         rows = m.collect_cases(m.ROOT)["cases"]
         case = next(row for row in rows if row["id"] == "zengshan-buyi:ZS-LY-L0379")

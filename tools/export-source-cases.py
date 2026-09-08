@@ -148,6 +148,30 @@ def case_input(case: dict) -> tuple[dict, tuple | None, str]:
         # not make the same six line symbols an independent placement case.
         signature = (basis, *given["linesBottomUp"]) if valid else None
         repeated = "sameComponentInputAs"
+    elif basis == "qimen-layout":
+        given, expected = case.get("input", {}), case.get("expected", {})
+        names = {"chiefStar": "值符星名", "chiefDoor": "值使门名",
+                 "starPalaceRaw": "值符原宫数", "doorPalaceRaw": "值使原宫数"}
+        pair = given.get("timePillar") if isinstance(given, dict) else None
+        valid = (isinstance(given, dict) and set(given) == {"dun", "ju", "timePillar"}
+                 and given.get("dun") in {"yang", "yin"}
+                 and type(given.get("ju")) is int and 1 <= given["ju"] <= 9
+                 and isinstance(pair, str) and len(pair) == 2 and pair[0] in GANS and pair[1] in ZHIS
+                 and GANS.index(pair[0]) % 2 == ZHIS.index(pair[1]) % 2
+                 and isinstance(expected, dict) and bool(expected) and set(expected) <= names.keys())
+        if valid:
+            valid = all((type(value) is int and 1 <= value <= 9) if key.endswith("Raw")
+                        else isinstance(value, str) and bool(value.strip())
+                        for key, value in expected.items())
+        fields = {"input": given, "inputBasis": basis,
+                  "scope": [names[key] for key in expected if key in names] if isinstance(expected, dict) else [],
+                  "unavailable": ["绝对公历日期", "具体日干", "未给全九宫的星门仪神", "依日干判断的五不遇时", "现实应验的独立记录"]}
+        expectation_status = case.get("expectationStatus", "clear")
+        if expectation_status not in {"clear", "source-conflict"}:
+            raise ValueError(f"Unsupported source expectation status: {expectation_status}")
+        fields["expectationStatus"] = expectation_status
+        signature = (basis, given["dun"], given["ju"], pair) if valid else None
+        repeated = "sameComponentInputAs"
     else:
         raise ValueError(f"Unsupported case input basis: {basis}")
     if case.get("canRecompute") is True and not valid:
@@ -198,7 +222,8 @@ def collect_cases(root: Path) -> dict:
         data = json.loads(path.read_text())
         seen = set()
         for case in data["cases"]:
-            fragments = case.get("sources") or ([case["source"]] if case.get("source") else [])
+            fragments = [dict(source) for source in
+                         (case.get("sources") or ([case["source"]] if case.get("source") else []))]
             if not fragments:
                 raise ValueError(f"Component case requires a reviewed source: {case['id']}")
             for source in fragments:
@@ -209,7 +234,19 @@ def collect_cases(root: Path) -> dict:
                     raise ValueError(f"Component case book mismatch: {pid}")
                 if sources[pid].get("source_status") == "ocr-draft":
                     raise ValueError(f"OCR draft cannot supply reviewed source cases: {pid}")
-                if (source["file"], source["startLine"], source["endLine"]) != locations[pid]:
+                if "pageStartLine" in source:
+                    paragraph = sources[pid]
+                    start, end = source.get("pageStartLine"), source.get("pageEndLine")
+                    if (source.get("pdfPage") != paragraph.get("pdf_page") or
+                        type(start) is not int or type(end) is not int or
+                        not paragraph.get("page_start_line", 0) <= start <= end <= paragraph.get("page_end_line", -1)):
+                        raise ValueError(f"Component case source page range mismatch: {pid}")
+                    # A newly restored earlier page changes global line numbers,
+                    # but not this reviewed page-relative identity or its quote.
+                    offset = paragraph["start_line"] - paragraph["page_start_line"]
+                    source.update(startLine=offset + start, endLine=offset + end)
+                file, start, end = locations[pid]
+                if source["file"] != file or not start <= source["startLine"] <= source["endLine"] <= end:
                     raise ValueError(f"Component case source range mismatch: {pid}")
                 if "quote" in source:
                     raw = (root / source["file"]).read_text().splitlines()
@@ -228,7 +265,7 @@ def collect_cases(root: Path) -> dict:
                    "source": source, "verified": False}
             if case.get("sources"):
                 row["sources"] = fragments
-            for field in ("question", "sourceReading", "reportedOutcome", "relatedCaseIds"):
+            for field in ("question", "sourceReading", "reportedOutcome", "relatedCaseIds", "sourceContext"):
                 if field in case:
                     row[field] = case[field]
             if signature is not None and row["canRecompute"]:
