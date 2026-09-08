@@ -4,6 +4,15 @@
 
 两仓均为 `codex/full-library-completion`：古籍 `/Users/yuhanglin/.codex/worktrees/fateradar-classics-grok-full-library`；产品 `/Users/yuhanglin/.codex/worktrees/fateradar-product-grok-full-library`。原接手基准古籍2396e4c、产品8f1ca84。原main及他人admin/billing/.claude不改。本目标尚未合main或部署。
 
+## 最新接续：渊海从杀五言2260主段，下一行4742
+
+上一轮有实际进展。本轮d8435a2新增39主段至L4740，弃命从杀五言结束、五行生克开头，累计2260段；下一L4742。
+
+- 从财会财/从杀会杀根气限制明确，章节内扶弱从势不同不一刀；二子不冲午/二寅不冲申无全范围不删基础冲，大运上下五年未指定独占不改时间算法。
+- 五行死位括注只阳干不泛阴干，旧病德贵贱不当事实，原文/ID/verified保持，运行引擎未改。本轮nmem又502未反复重试或切换。
+- 2260entries验证0错；固定d8435a294e7ed497d0319b308ec07092de08c191导出55包80889段source_reviewed21626，18知识测试通过，2260主段切片一致，参考1988未审。
+- 全目标active，未合main或部署；继续五行生克及全库、八术条件和联动。
+
 ## 最新接续：渊海再录末身弱2221主段，下一行4658
 
 上一轮有实际进展。本轮daa19aa新增38主段至L4656，四言再录结束、身弱论，69711db修正注释从财用词，累计2221段；下一L4658弃命从杀。
