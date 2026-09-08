@@ -1,6 +1,6 @@
 # 识典来源接入 · 2026-09-08
 
-本批将已取得的33个对应/候选版本、21553个原文段落接到独立来源层，不改55套主包和53640主段的ID。原文保留异体字与行型，网站译文不导入；图像以明确占位及原图URI保存。通过上游paragraphId去重父子章节重复返回，不凭目录完整率提升校勘/语义审读状态。
+本批将已取得的33个对应/候选版本、21553个原文段落接到独立来源层，不改55套主包和53640主段的ID。原文保留异体字与行型，网站译文不导入；图像以明确占位及原图URI保存。独立复核修复1174处charPic遗漏，图像引用共1508处；另保留SK1618实际267张1×1表格，其中83张有文字、184张为空单元格，不能当作无文字版面删除。通过上游paragraphId去重父子章节重复返回，不凭目录完整率提升校勘/语义审读状态。
 
 `tools/import-shidian.py --source <已取得书籍目录> --slug <实际书目slug>` 生成 `sources/normalized/shidianguji/<bookId>/` 的text.md、paragraphs.json、original-paragraphs.json、book.json、figures.json、provenance.json。新ID形如 `sanming-tonghui:shidian-HY1521:P...`，前章文字长度变化不改后段ID；本地行号用于固定提交链接，上游链接用于对照。
 
