@@ -4,6 +4,15 @@
 
 两仓均为 `codex/full-library-completion`：古籍 `/Users/yuhanglin/.codex/worktrees/fateradar-classics-grok-full-library`；产品 `/Users/yuhanglin/.codex/worktrees/fateradar-product-grok-full-library`。原接手基准古籍2396e4c、产品8f1ca84。原main及他人admin/billing/.claude不改。本目标尚未合main或部署。
 
+## 最新接续：阳宅图说文字21节，下一行378
+
+上一轮有实际进展。本轮6c4b126新增6组L242–377图说文字，第675卷连续L12–377共21节，父段仍draft；L378起未读。
+
+- 交道与东水西路四神、前水后丘与曲水后高、巽门可贵与前泛忌分条保留，图缺不统一方位吉凶。后半断曰尖括段混排及L372图占位不补缺字或虚画形状。
+- 六十步百步无古尺度不转米，大石镇为原书文本不实际施工；阴宅安坟语不全改住房。旧病德亲属断非现实事实。
+- 3entries验证0错，6节连续；不导出未读全父段，产品知识仍0f4138f/21775，运行e43cd38。nmem继续502未反复重试或切换。
+- 全目标active，未合main或部署；下一L378图说，须继续取得图源并核图文，不把文字审读当图形已验，随后福元及全库/八术未完工作。
+
 ## 最新接续：阳宅十书图说文字15节，下一行242
 
 上一轮有实际进展。本轮0670f4f新增6组外形图说文字注释，正文连续L12–241共15节，父段L12–1213仍draft；L242起未读。
