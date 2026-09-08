@@ -4,7 +4,30 @@
 
 两仓均为 `codex/full-library-completion`：古籍 `/Users/yuhanglin/.codex/worktrees/fateradar-classics-grok-full-library`；产品 `/Users/yuhanglin/.codex/worktrees/fateradar-product-grok-full-library`。原接手基准古籍2396e4c、产品8f1ca84。原main及他人admin/billing/.claude不改。本目标尚未合main或部署。
 
-## 当前接续点：2026-09-08 12:45
+## 最新接续点：2026-09-08 17:05
+
+此段优先于下方旧接续记录。完整目标仍active；本命与六爻新增批次有固定提交验证，但全库/八术完整目标尚未总验收，没有合main或部署。
+
+- 当前固定清单1497b01取源ffed8d1：55资料包、54主文件、53640主段，14163已注解、39477未注解；5补充版3516段。主段ID与范围逐项比旧索引全同，没有重切编号。229来源规则记录/433引文范围是定义数量，不能说全都执行。17inventory测试过，固定源注解校验19books/23files/15712entries、15333 source-reviewed、0error；其中379为draft元数据。
+- 全知识产品4a22d99固定源5379881：57156段，15333 source-reviewed。新增雪心18、葬法13、都天101、疑龙96全部逐段对当前电子源；都天根重写33处、疑龙78段。疑龙本仓合刊对照出外无拦、阳宅怕穴小、中央过等较明读法，同时合刊变星篇末自记缺文；保留异版，不覆原字、不计独立支持。此前三份Grok任务均已收齐；新《入地眼全书》126段草稿运行中，session17086，目录/tmp/fateradar-grok-rudi-20260908，尚未验读/入库。新提示词加了现代白话、非简体重述、古文收束不当元数据及相邻条件要求。临时原JSON/草稿在/tmp/fateradar-grok-{zangfa,dutian,yilong}-20260908；Grok疑龙session01a08018-0784-73b0-b2a1-3cd25fe5d700。绝不输出wrapper.thought。疑龙5379881已提交，50知识/reading测试过。
+- 源案例references/cases/source-cases.json已更新固定5379881：2201次出现、2184组件输入可复算、149重复输入关系、69异表期望争议、verified全false；原书叙述应验与可复算字段分开。产品奇门fixture仍固定7bdd1b5/1106条，来源引用均在已提交历史内。
+- 奇门18局总表5178ac2完整：1080输入（18局×6旬×10时）、1106出现；67条含103异表争议字段。根83bbfd1比较4284一致字段，4字段为阴五丁酉两处九八→按同书一般法八八、阴八丙申两处三三→按法一三，原expected/clear保持。6ce1c93同版方法和圆图支持时干法；具名差异断言与六丁/六丙一般法检查，1136相关测试通过，不能算1106完整盘全一致。b29a176已补10时附格可辨部分；当前classics_audit继续原纸卷4–9的圆图和逐时附断，未全完。P97己丑“但非伏吟”纠正了尚未提交稿的错拼“但非入墓”，不能建免墓规则。
+- 本命格局：正官f26146f、财052f258、印379a2a7、食伤5aec9f4、七杀7bd9511、禄劫/阳刃11af74a已生产。禄刃19原例+17真实日期，相关252项与36原文锚核过。fe8009b共享五合：日主严格更近参与排他而不合去，同距既定顺序保留。root60b7dea公共execution接所有family、luren优先、monthKind、真实entryFacts；夏主月劫己藏伤制时杀不再留在局部食伤；脱脱年壬＋月辰藏癸不造辰藏壬；原源与变用后财/官名称分开。
+- 免费/病药/报告/追问：ecae2ba补实际作用者位置与空病药的未成/未知理由，bazi-evidence E01消费真实entryFacts，实际execution源范围各有自己的version/anchor，ID不是伪造算法规则。263cc42再修yongshen只认展示字“成格”的漏接：采用公共execution.verdict，月比“配合成立”也正确进入格局取用。Ego实测1981-07-08 14:00男上海clock（辛酉乙未丁亥丁未）修前错退扶抑水土金，修后总览/喜忌格局取用土金，显示真实月藏己食、年辛财，扶抑/调候分列。
+- 六爻producer至5f65fd8/古籍ffed8d1，共19规则：逐爻日月空破墓绝进退飞伏；45829d8端位三合、4371be6主卦实际三位置候选；1f1cd26寅巳申论刑不论生；25b3897日冲回克解除、不能把月冲或自身旬空一并删除；5f65fd8内外反吟/伏吟与恒豫具体合护、已旺且活动确认戌才自冲辰墓。49分析行为、7文件110相关测试/tsc/lint/19真源出口过。root394524d/c64bd43/bcf1ff1/e88e38e把threeHarmony/punishments/backControls/reversals完整转交模型；31chat测试过。静变只作卦形、不造活动节点，组合不重复加力。不存在全面应期或事项终断完成的宣称。
+- 固定审查worktree/private/tmp/fateradar-review-20260908-1610：83bbfd1旧全测5fail已真实修；8259cbf 71files/1984pass；60b7dea 73files/2028pass，typecheck/lint:ci/Nodebuild均过。固定263cc42全测73files/2033项、tsc/lint:ci/Nodebuild均已通过；日志/private/tmp/fateradar-263cc42-{tests,typecheck,lint,build}.log。日志按提交分文件，不把并行工作区当已验。review worktree有node_modules软链，无.env复制。原golden不刷新。
+- 预览仍Ego空间7、5188服务session14995，原5186用户tab不动。8月印例pmts5rsg070ff保留存储；最新月比合成档案pmtsfqxm801pm当前在tab7AAB7B8FE3B15670F8B90CCE0DD5E0D8。按钮click可能无效，DOM表单requestSubmit确实保存并导航；新建而未覆旧档案。六爻tabAE76363261D505E35162C8D7A3FC2127仍2000-04-20父母例。书房tab452402...当前都天乾流已读回白话/原文/固定行号，另一个书房tab仍增删枯根。只做语义/DOM交互读回；Screenshot帮助和CDP两次失败，不宣称视觉截图已验。
+- Web消息仍未发送：工具仅list/read/wait，无create/send；原生CUA getApp(Codex)明确禁止com.openai.codex，不能绕过。已读computer-use技能，已向用户说明具体阻塞。docs/ART_READING_FIELD_MAP.md、GEJU_EXECUTION_DELIVERY.md、LIUYAO_ENGINE_WEB_DELIVERY.md已更新具体接口和样例，不冒双方已沟通。继续其余独立工作。
+- 最近已推送：产品固定8259cbf、古籍8ca2150；后面的263cc42/1497b01与其祖先待本批核后推自己的completion分支。根当前仅有doc措辞小修和GOAL_PROGRESS未提交；不要包含agent的liuren/qimen工作稿。
+
+## 当前存活分工（替代下方旧角色记录）
+
+- classics_audit：只负责奇门原纸卷4–9恢复/图式/附断、对应annotations/page-reviews/source-cases候选/书评。root拥有registry/exporters及产品qimen算法。还有大量原附格图文，不能改称不存在。
+- bazi_audit：六爻本批已完成，已转大六壬。发现壬癸GUIREN昼夜两支写反：当前卯巳，原大全L17771夜卯、L17739昼巳/夜卯、L4832正月壬子辰时亥将加时贵加戌倒行支持昼巳。正在修liuren.ts＋源例/真实日期/原字符化测试，四课三传地支未改；拟generalPlacement={dayStem,dayTime,daylightRule:fixed-06-18,localTime,selectedBranch,earthBranch,forward,source?}。root接chat/免费位置投影。6/18保持现口径，未据未定流派改5/17。
+- other_arts_audit：禄刃11af74a后进入岁运，已授权拥有bazi/types、geju-strength、各producer上下文、geju.ts、yunsui.ts、bazi/index与bazi.ts岁运输入传递。原四柱gans/zhis仍四项，新增context.externalPillars；actorId natal:year/month/day/time与dayun/liunian分层。当前所取财/印与来源family分开，不重置原出生主格；先明文官的运支植根、运干合官/混杀和干支不同效应，再继续各族。返回助力/牵制/交织/未定及before/after条件，不换成新分数。root已明确批准无需逐个常规文件再询问。
+- root：共同projection/free/yongshen/bingyao/readings/chat/UI、通用出口和全库其它古籍。岁运将由root接模型/页面，同张图选岁运后同步解释；当前静态xi评分仍在，但agent正实现替换，别并行再写它。继续剩39477主段与各未完算法，不缩成当前完成子集。
+
+## 历史接续点：2026-09-08 12:45
 
 - 原文真实性、来源外键、缺失正文和补充版本协议已修。55资料包、54主文本、主索引53640段；导航与正文、正文与盘表、重复与独立支持分别统计。固定快照190cbab包含4份补充/对照来源3137段，总知识56777段，14105条source-reviewed注解；其中大量盘表、导航、目录，不是14105条理论或算法。主索引13196有注解，40444尚无注解。
 - 当前源案例快照190cbab：1095次出现，1078具备所列组件复算输入，123重复输入关系，2项紫微原表期望冲突，全部verified=false。记录见references/cases/source-cases.json。模型自审、测试通过不升人工verified，不刷新原golden。
