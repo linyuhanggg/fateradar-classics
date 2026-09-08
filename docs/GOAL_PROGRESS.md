@@ -4,6 +4,13 @@
 
 两仓均为 `codex/full-library-completion`：古籍 `/Users/yuhanglin/.codex/worktrees/fateradar-classics-grok-full-library`；产品 `/Users/yuhanglin/.codex/worktrees/fateradar-product-grok-full-library`。原接手基准古籍2396e4c、产品8f1ca84。原main及他人admin/billing/.claude不改。本目标尚未合main或部署。
 
+## 最新接续：黄金策求财家宅，下一行1146
+
+上一轮有实际进展。本轮82cbe90新增L958–1144共93原段，累计548/849前二十章电子审读，余301从L1146坟墓继续。求财分合伙、公门、囤货/脱货；L981后附注记区分兄官动克世与兄化官；L1104起新增家宅分爻法作者未明分层保留。不得把六爻家宅句“三传克世”擅接成六壬算法。
+
+- 新增ID集合对应、548entries校验0错。产品固定82cbe902d79b83e784bc40f44b63e0f8cb18bbaa出口55资料/80889段/19031 source-reviewed；实际548原段、附注及坟墓以后unreviewed核对，18检索/分包测试通过。原文/ID/verified/golden和运行规则未改，不称全代码/网页总验收。
+- 全量目标active，继续古籍分门及八术原范围；未合main或部署。
+
 ## 最新接续：黄金策种作至仕宦，下一行957
 
 上一轮有实际进展。本轮c86bee8新增L777–955共88原段，累计455/849前十八章电子审读，余394从L957求财继续。种作、蚕桑、畜养分体与收益；求名父官与仕宦职位俸禄、保职与升迁、剿捕子孙有利等所问差别保留。L785空缺不补猜。
