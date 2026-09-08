@@ -4,6 +4,15 @@
 
 两仓均为 `codex/full-library-completion`：古籍 `/Users/yuhanglin/.codex/worktrees/fateradar-classics-grok-full-library`；产品 `/Users/yuhanglin/.codex/worktrees/fateradar-product-grok-full-library`。原接手基准古籍2396e4c、产品8f1ca84。原main及他人admin/billing/.claude不改。本目标尚未合main或部署。
 
+## 最新接续：渊海女命诗赋597主段，下一行1306
+
+上一轮有实际进展。本轮8321bf0新增65主段至L1304，阴命赋、总断歌及富贵贫贱篇前段，累计597段；下一L1306。
+
+- 女身强甚/无夫子身旺昌与前喜弱、俱休囚福寿与衰不利、官桃花福与咸池忌不同层关联。缺配合定义不自动翻译成可算规则，古代身份道德婚病断仅历史文本。
+- 食神需全身强与防枭干扰、库冲财用等保留前提；原文/ID/verified保持，运行引擎未改。
+- 597entries验证0错；固定8321bf01a196133ba883e55eadd129bc6ff3ff29导出55包80889段source_reviewed19963，18知识测试通过，597主段切片一致，参考1988未审。
+- 全目标active，未合main或部署；继续L1306和后续全部材料、八术条件及联动验收。
+
 ## 最新接续：渊海小儿女命532主段，下一行1170
 
 上一轮有实际进展。本轮327c235新增47主段至L1168，子息末、小儿关煞与妇人总诀开头，累计532段；下一L1170。
