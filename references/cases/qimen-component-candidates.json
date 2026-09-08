@@ -1,0 +1,3612 @@
+{
+  "bookSlug": "qimen-dunjia-tongzhi",
+  "note": "独立原纸符使组件；clear只表示转录期望清楚，不表示预测验证；source-conflict保留书内差异。",
+  "cases": [
+    {
+      "id": "QMTZ-NLC-P091-C01-R01",
+      "name": "文瑞本阳一局总表·甲子时",
+      "inputBasis": "qimen-layout",
+      "input": {
+        "dun": "yang",
+        "ju": 1,
+        "timePillar": "甲子"
+      },
+      "expected": {
+        "chiefStar": "天蓬",
+        "chiefDoor": "休门",
+        "starPalaceRaw": 1,
+        "doorPalaceRaw": 1
+      },
+      "expectationStatus": "clear",
+      "canRecompute": true,
+      "verified": false,
+      "sources": [
+        {
+          "paragraphId": "qimen-dunjia-tongzhi:nlc-layouts:P091:L011-L021",
+          "file": "sources/normalized/san-shi/qimen-dunjia-tongzhi/nlc-layouts.md",
+          "pdfPage": 91,
+          "pageStartLine": 12,
+          "pageEndLine": 12,
+          "quote": "子一一"
+        },
+        {
+          "paragraphId": "qimen-dunjia-tongzhi:nlc-layouts:P091:L011-L021",
+          "file": "sources/normalized/san-shi/qimen-dunjia-tongzhi/nlc-layouts.md",
+          "pdfPage": 91,
+          "pageStartLine": 11,
+          "pageEndLine": 11,
+          "quote": "蓬休"
+        },
+        {
+          "paragraphId": "qimen-dunjia-tongzhi:nlc-layouts:P091:L006-L007",
+          "file": "sources/normalized/san-shi/qimen-dunjia-tongzhi/nlc-layouts.md",
+          "pdfPage": 91,
+          "pageStartLine": 6,
+          "pageEndLine": 7,
+          "quote": "陽一局\n甲乙丙丁戊己庚辛壬癸"
+        }
+      ],
+      "sourceContext": {
+        "printedJu": "陽一局",
+        "printedStemHeader": "甲乙丙丁戊己庚辛壬癸",
+        "printedColumn": 1,
+        "printedRow": 1,
+        "printedStarDoor": "蓬休",
+        "printedCell": "子一一",
+        "readingMethod": "时柱由纸面共享十干行头与该格时支合读；数字由格中原数直接转录。"
+      },
+      "notes": [
+        "只核符星、使门与原宫数，不代表全九宫布局或应验。"
+      ]
+    },
+    {
+      "id": "QMTZ-NLC-P091-C01-R02",
+      "name": "文瑞本阳一局总表·乙丑时",
+      "inputBasis": "qimen-layout",
+      "input": {
+        "dun": "yang",
+        "ju": 1,
+        "timePillar": "乙丑"
+      },
+      "expected": {
+        "chiefStar": "天蓬",
+        "chiefDoor": "休门",
+        "starPalaceRaw": 9,
+        "doorPalaceRaw": 2
+      },
+      "expectationStatus": "clear",
+      "canRecompute": true,
+      "verified": false,
+      "sources": [
+        {
+          "paragraphId": "qimen-dunjia-tongzhi:nlc-layouts:P091:L011-L021",
+          "file": "sources/normalized/san-shi/qimen-dunjia-tongzhi/nlc-layouts.md",
+          "pdfPage": 91,
+          "pageStartLine": 13,
+          "pageEndLine": 13,
+          "quote": "丑九二"
+        },
+        {
+          "paragraphId": "qimen-dunjia-tongzhi:nlc-layouts:P091:L011-L021",
+          "file": "sources/normalized/san-shi/qimen-dunjia-tongzhi/nlc-layouts.md",
+          "pdfPage": 91,
+          "pageStartLine": 11,
+          "pageEndLine": 11,
+          "quote": "蓬休"
+        },
+        {
+          "paragraphId": "qimen-dunjia-tongzhi:nlc-layouts:P091:L006-L007",
+          "file": "sources/normalized/san-shi/qimen-dunjia-tongzhi/nlc-layouts.md",
+          "pdfPage": 91,
+          "pageStartLine": 6,
+          "pageEndLine": 7,
+          "quote": "陽一局\n甲乙丙丁戊己庚辛壬癸"
+        }
+      ],
+      "sourceContext": {
+        "printedJu": "陽一局",
+        "printedStemHeader": "甲乙丙丁戊己庚辛壬癸",
+        "printedColumn": 1,
+        "printedRow": 2,
+        "printedStarDoor": "蓬休",
+        "printedCell": "丑九二",
+        "readingMethod": "时柱由纸面共享十干行头与该格时支合读；数字由格中原数直接转录。"
+      },
+      "notes": [
+        "只核符星、使门与原宫数，不代表全九宫布局或应验。"
+      ]
+    },
+    {
+      "id": "QMTZ-NLC-P091-C01-R03",
+      "name": "文瑞本阳一局总表·丙寅时",
+      "inputBasis": "qimen-layout",
+      "input": {
+        "dun": "yang",
+        "ju": 1,
+        "timePillar": "丙寅"
+      },
+      "expected": {
+        "chiefStar": "天蓬",
+        "chiefDoor": "休门",
+        "starPalaceRaw": 8,
+        "doorPalaceRaw": 3
+      },
+      "expectationStatus": "clear",
+      "canRecompute": true,
+      "verified": false,
+      "sources": [
+        {
+          "paragraphId": "qimen-dunjia-tongzhi:nlc-layouts:P091:L011-L021",
+          "file": "sources/normalized/san-shi/qimen-dunjia-tongzhi/nlc-layouts.md",
+          "pdfPage": 91,
+          "pageStartLine": 14,
+          "pageEndLine": 14,
+          "quote": "寅八三"
+        },
+        {
+          "paragraphId": "qimen-dunjia-tongzhi:nlc-layouts:P091:L011-L021",
+          "file": "sources/normalized/san-shi/qimen-dunjia-tongzhi/nlc-layouts.md",
+          "pdfPage": 91,
+          "pageStartLine": 11,
+          "pageEndLine": 11,
+          "quote": "蓬休"
+        },
+        {
+          "paragraphId": "qimen-dunjia-tongzhi:nlc-layouts:P091:L006-L007",
+          "file": "sources/normalized/san-shi/qimen-dunjia-tongzhi/nlc-layouts.md",
+          "pdfPage": 91,
+          "pageStartLine": 6,
+          "pageEndLine": 7,
+          "quote": "陽一局\n甲乙丙丁戊己庚辛壬癸"
+        }
+      ],
+      "sourceContext": {
+        "printedJu": "陽一局",
+        "printedStemHeader": "甲乙丙丁戊己庚辛壬癸",
+        "printedColumn": 1,
+        "printedRow": 3,
+        "printedStarDoor": "蓬休",
+        "printedCell": "寅八三",
+        "readingMethod": "时柱由纸面共享十干行头与该格时支合读；数字由格中原数直接转录。"
+      },
+      "notes": [
+        "只核符星、使门与原宫数，不代表全九宫布局或应验。"
+      ]
+    },
+    {
+      "id": "QMTZ-NLC-P091-C01-R04",
+      "name": "文瑞本阳一局总表·丁卯时",
+      "inputBasis": "qimen-layout",
+      "input": {
+        "dun": "yang",
+        "ju": 1,
+        "timePillar": "丁卯"
+      },
+      "expected": {
+        "chiefStar": "天蓬",
+        "chiefDoor": "休门",
+        "starPalaceRaw": 7,
+        "doorPalaceRaw": 4
+      },
+      "expectationStatus": "clear",
+      "canRecompute": true,
+      "verified": false,
+      "sources": [
+        {
+          "paragraphId": "qimen-dunjia-tongzhi:nlc-layouts:P091:L011-L021",
+          "file": "sources/normalized/san-shi/qimen-dunjia-tongzhi/nlc-layouts.md",
+          "pdfPage": 91,
+          "pageStartLine": 15,
+          "pageEndLine": 15,
+          "quote": "卯七四"
+        },
+        {
+          "paragraphId": "qimen-dunjia-tongzhi:nlc-layouts:P091:L011-L021",
+          "file": "sources/normalized/san-shi/qimen-dunjia-tongzhi/nlc-layouts.md",
+          "pdfPage": 91,
+          "pageStartLine": 11,
+          "pageEndLine": 11,
+          "quote": "蓬休"
+        },
+        {
+          "paragraphId": "qimen-dunjia-tongzhi:nlc-layouts:P091:L006-L007",
+          "file": "sources/normalized/san-shi/qimen-dunjia-tongzhi/nlc-layouts.md",
+          "pdfPage": 91,
+          "pageStartLine": 6,
+          "pageEndLine": 7,
+          "quote": "陽一局\n甲乙丙丁戊己庚辛壬癸"
+        }
+      ],
+      "sourceContext": {
+        "printedJu": "陽一局",
+        "printedStemHeader": "甲乙丙丁戊己庚辛壬癸",
+        "printedColumn": 1,
+        "printedRow": 4,
+        "printedStarDoor": "蓬休",
+        "printedCell": "卯七四",
+        "readingMethod": "时柱由纸面共享十干行头与该格时支合读；数字由格中原数直接转录。"
+      },
+      "notes": [
+        "只核符星、使门与原宫数，不代表全九宫布局或应验。"
+      ]
+    },
+    {
+      "id": "QMTZ-NLC-P091-C01-R05",
+      "name": "文瑞本阳一局总表·戊辰时",
+      "inputBasis": "qimen-layout",
+      "input": {
+        "dun": "yang",
+        "ju": 1,
+        "timePillar": "戊辰"
+      },
+      "expected": {
+        "chiefStar": "天蓬",
+        "chiefDoor": "休门",
+        "starPalaceRaw": 1,
+        "doorPalaceRaw": 5
+      },
+      "expectationStatus": "clear",
+      "canRecompute": true,
+      "verified": false,
+      "sources": [
+        {
+          "paragraphId": "qimen-dunjia-tongzhi:nlc-layouts:P091:L011-L021",
+          "file": "sources/normalized/san-shi/qimen-dunjia-tongzhi/nlc-layouts.md",
+          "pdfPage": 91,
+          "pageStartLine": 16,
+          "pageEndLine": 16,
+          "quote": "辰一五"
+        },
+        {
+          "paragraphId": "qimen-dunjia-tongzhi:nlc-layouts:P091:L011-L021",
+          "file": "sources/normalized/san-shi/qimen-dunjia-tongzhi/nlc-layouts.md",
+          "pdfPage": 91,
+          "pageStartLine": 11,
+          "pageEndLine": 11,
+          "quote": "蓬休"
+        },
+        {
+          "paragraphId": "qimen-dunjia-tongzhi:nlc-layouts:P091:L006-L007",
+          "file": "sources/normalized/san-shi/qimen-dunjia-tongzhi/nlc-layouts.md",
+          "pdfPage": 91,
+          "pageStartLine": 6,
+          "pageEndLine": 7,
+          "quote": "陽一局\n甲乙丙丁戊己庚辛壬癸"
+        }
+      ],
+      "sourceContext": {
+        "printedJu": "陽一局",
+        "printedStemHeader": "甲乙丙丁戊己庚辛壬癸",
+        "printedColumn": 1,
+        "printedRow": 5,
+        "printedStarDoor": "蓬休",
+        "printedCell": "辰一五",
+        "readingMethod": "时柱由纸面共享十干行头与该格时支合读；数字由格中原数直接转录。"
+      },
+      "notes": [
+        "只核符星、使门与原宫数，不代表全九宫布局或应验。"
+      ]
+    },
+    {
+      "id": "QMTZ-NLC-P091-C01-R06",
+      "name": "文瑞本阳一局总表·己巳时",
+      "inputBasis": "qimen-layout",
+      "input": {
+        "dun": "yang",
+        "ju": 1,
+        "timePillar": "己巳"
+      },
+      "expected": {
+        "chiefStar": "天蓬",
+        "chiefDoor": "休门",
+        "starPalaceRaw": 2,
+        "doorPalaceRaw": 6
+      },
+      "expectationStatus": "clear",
+      "canRecompute": true,
+      "verified": false,
+      "sources": [
+        {
+          "paragraphId": "qimen-dunjia-tongzhi:nlc-layouts:P091:L011-L021",
+          "file": "sources/normalized/san-shi/qimen-dunjia-tongzhi/nlc-layouts.md",
+          "pdfPage": 91,
+          "pageStartLine": 17,
+          "pageEndLine": 17,
+          "quote": "巳二六"
+        },
+        {
+          "paragraphId": "qimen-dunjia-tongzhi:nlc-layouts:P091:L011-L021",
+          "file": "sources/normalized/san-shi/qimen-dunjia-tongzhi/nlc-layouts.md",
+          "pdfPage": 91,
+          "pageStartLine": 11,
+          "pageEndLine": 11,
+          "quote": "蓬休"
+        },
+        {
+          "paragraphId": "qimen-dunjia-tongzhi:nlc-layouts:P091:L006-L007",
+          "file": "sources/normalized/san-shi/qimen-dunjia-tongzhi/nlc-layouts.md",
+          "pdfPage": 91,
+          "pageStartLine": 6,
+          "pageEndLine": 7,
+          "quote": "陽一局\n甲乙丙丁戊己庚辛壬癸"
+        }
+      ],
+      "sourceContext": {
+        "printedJu": "陽一局",
+        "printedStemHeader": "甲乙丙丁戊己庚辛壬癸",
+        "printedColumn": 1,
+        "printedRow": 6,
+        "printedStarDoor": "蓬休",
+        "printedCell": "巳二六",
+        "readingMethod": "时柱由纸面共享十干行头与该格时支合读；数字由格中原数直接转录。"
+      },
+      "notes": [
+        "只核符星、使门与原宫数，不代表全九宫布局或应验。"
+      ]
+    },
+    {
+      "id": "QMTZ-NLC-P091-C01-R07",
+      "name": "文瑞本阳一局总表·庚午时",
+      "inputBasis": "qimen-layout",
+      "input": {
+        "dun": "yang",
+        "ju": 1,
+        "timePillar": "庚午"
+      },
+      "expected": {
+        "chiefStar": "天蓬",
+        "chiefDoor": "休门",
+        "starPalaceRaw": 3,
+        "doorPalaceRaw": 7
+      },
+      "expectationStatus": "clear",
+      "canRecompute": true,
+      "verified": false,
+      "sources": [
+        {
+          "paragraphId": "qimen-dunjia-tongzhi:nlc-layouts:P091:L011-L021",
+          "file": "sources/normalized/san-shi/qimen-dunjia-tongzhi/nlc-layouts.md",
+          "pdfPage": 91,
+          "pageStartLine": 18,
+          "pageEndLine": 18,
+          "quote": "午三七"
+        },
+        {
+          "paragraphId": "qimen-dunjia-tongzhi:nlc-layouts:P091:L011-L021",
+          "file": "sources/normalized/san-shi/qimen-dunjia-tongzhi/nlc-layouts.md",
+          "pdfPage": 91,
+          "pageStartLine": 11,
+          "pageEndLine": 11,
+          "quote": "蓬休"
+        },
+        {
+          "paragraphId": "qimen-dunjia-tongzhi:nlc-layouts:P091:L006-L007",
+          "file": "sources/normalized/san-shi/qimen-dunjia-tongzhi/nlc-layouts.md",
+          "pdfPage": 91,
+          "pageStartLine": 6,
+          "pageEndLine": 7,
+          "quote": "陽一局\n甲乙丙丁戊己庚辛壬癸"
+        }
+      ],
+      "sourceContext": {
+        "printedJu": "陽一局",
+        "printedStemHeader": "甲乙丙丁戊己庚辛壬癸",
+        "printedColumn": 1,
+        "printedRow": 7,
+        "printedStarDoor": "蓬休",
+        "printedCell": "午三七",
+        "readingMethod": "时柱由纸面共享十干行头与该格时支合读；数字由格中原数直接转录。"
+      },
+      "notes": [
+        "只核符星、使门与原宫数，不代表全九宫布局或应验。"
+      ]
+    },
+    {
+      "id": "QMTZ-NLC-P091-C01-R08",
+      "name": "文瑞本阳一局总表·辛未时",
+      "inputBasis": "qimen-layout",
+      "input": {
+        "dun": "yang",
+        "ju": 1,
+        "timePillar": "辛未"
+      },
+      "expected": {
+        "chiefStar": "天蓬",
+        "chiefDoor": "休门",
+        "starPalaceRaw": 4,
+        "doorPalaceRaw": 8
+      },
+      "expectationStatus": "clear",
+      "canRecompute": true,
+      "verified": false,
+      "sources": [
+        {
+          "paragraphId": "qimen-dunjia-tongzhi:nlc-layouts:P091:L011-L021",
+          "file": "sources/normalized/san-shi/qimen-dunjia-tongzhi/nlc-layouts.md",
+          "pdfPage": 91,
+          "pageStartLine": 19,
+          "pageEndLine": 19,
+          "quote": "未四八"
+        },
+        {
+          "paragraphId": "qimen-dunjia-tongzhi:nlc-layouts:P091:L011-L021",
+          "file": "sources/normalized/san-shi/qimen-dunjia-tongzhi/nlc-layouts.md",
+          "pdfPage": 91,
+          "pageStartLine": 11,
+          "pageEndLine": 11,
+          "quote": "蓬休"
+        },
+        {
+          "paragraphId": "qimen-dunjia-tongzhi:nlc-layouts:P091:L006-L007",
+          "file": "sources/normalized/san-shi/qimen-dunjia-tongzhi/nlc-layouts.md",
+          "pdfPage": 91,
+          "pageStartLine": 6,
+          "pageEndLine": 7,
+          "quote": "陽一局\n甲乙丙丁戊己庚辛壬癸"
+        }
+      ],
+      "sourceContext": {
+        "printedJu": "陽一局",
+        "printedStemHeader": "甲乙丙丁戊己庚辛壬癸",
+        "printedColumn": 1,
+        "printedRow": 8,
+        "printedStarDoor": "蓬休",
+        "printedCell": "未四八",
+        "readingMethod": "时柱由纸面共享十干行头与该格时支合读；数字由格中原数直接转录。"
+      },
+      "notes": [
+        "只核符星、使门与原宫数，不代表全九宫布局或应验。"
+      ]
+    },
+    {
+      "id": "QMTZ-NLC-P091-C01-R09",
+      "name": "文瑞本阳一局总表·壬申时",
+      "inputBasis": "qimen-layout",
+      "input": {
+        "dun": "yang",
+        "ju": 1,
+        "timePillar": "壬申"
+      },
+      "expected": {
+        "chiefStar": "天蓬",
+        "chiefDoor": "休门",
+        "starPalaceRaw": 5,
+        "doorPalaceRaw": 9
+      },
+      "expectationStatus": "clear",
+      "canRecompute": true,
+      "verified": false,
+      "sources": [
+        {
+          "paragraphId": "qimen-dunjia-tongzhi:nlc-layouts:P091:L011-L021",
+          "file": "sources/normalized/san-shi/qimen-dunjia-tongzhi/nlc-layouts.md",
+          "pdfPage": 91,
+          "pageStartLine": 20,
+          "pageEndLine": 20,
+          "quote": "申五九"
+        },
+        {
+          "paragraphId": "qimen-dunjia-tongzhi:nlc-layouts:P091:L011-L021",
+          "file": "sources/normalized/san-shi/qimen-dunjia-tongzhi/nlc-layouts.md",
+          "pdfPage": 91,
+          "pageStartLine": 11,
+          "pageEndLine": 11,
+          "quote": "蓬休"
+        },
+        {
+          "paragraphId": "qimen-dunjia-tongzhi:nlc-layouts:P091:L006-L007",
+          "file": "sources/normalized/san-shi/qimen-dunjia-tongzhi/nlc-layouts.md",
+          "pdfPage": 91,
+          "pageStartLine": 6,
+          "pageEndLine": 7,
+          "quote": "陽一局\n甲乙丙丁戊己庚辛壬癸"
+        }
+      ],
+      "sourceContext": {
+        "printedJu": "陽一局",
+        "printedStemHeader": "甲乙丙丁戊己庚辛壬癸",
+        "printedColumn": 1,
+        "printedRow": 9,
+        "printedStarDoor": "蓬休",
+        "printedCell": "申五九",
+        "readingMethod": "时柱由纸面共享十干行头与该格时支合读；数字由格中原数直接转录。"
+      },
+      "notes": [
+        "只核符星、使门与原宫数，不代表全九宫布局或应验。"
+      ]
+    },
+    {
+      "id": "QMTZ-NLC-P091-C01-R10",
+      "name": "文瑞本阳一局总表·癸酉时",
+      "inputBasis": "qimen-layout",
+      "input": {
+        "dun": "yang",
+        "ju": 1,
+        "timePillar": "癸酉"
+      },
+      "expected": {
+        "chiefStar": "天蓬",
+        "chiefDoor": "休门",
+        "starPalaceRaw": 6,
+        "doorPalaceRaw": 1
+      },
+      "expectationStatus": "clear",
+      "canRecompute": true,
+      "verified": false,
+      "sources": [
+        {
+          "paragraphId": "qimen-dunjia-tongzhi:nlc-layouts:P091:L011-L021",
+          "file": "sources/normalized/san-shi/qimen-dunjia-tongzhi/nlc-layouts.md",
+          "pdfPage": 91,
+          "pageStartLine": 21,
+          "pageEndLine": 21,
+          "quote": "酉六一"
+        },
+        {
+          "paragraphId": "qimen-dunjia-tongzhi:nlc-layouts:P091:L011-L021",
+          "file": "sources/normalized/san-shi/qimen-dunjia-tongzhi/nlc-layouts.md",
+          "pdfPage": 91,
+          "pageStartLine": 11,
+          "pageEndLine": 11,
+          "quote": "蓬休"
+        },
+        {
+          "paragraphId": "qimen-dunjia-tongzhi:nlc-layouts:P091:L006-L007",
+          "file": "sources/normalized/san-shi/qimen-dunjia-tongzhi/nlc-layouts.md",
+          "pdfPage": 91,
+          "pageStartLine": 6,
+          "pageEndLine": 7,
+          "quote": "陽一局\n甲乙丙丁戊己庚辛壬癸"
+        }
+      ],
+      "sourceContext": {
+        "printedJu": "陽一局",
+        "printedStemHeader": "甲乙丙丁戊己庚辛壬癸",
+        "printedColumn": 1,
+        "printedRow": 10,
+        "printedStarDoor": "蓬休",
+        "printedCell": "酉六一",
+        "readingMethod": "时柱由纸面共享十干行头与该格时支合读；数字由格中原数直接转录。"
+      },
+      "notes": [
+        "只核符星、使门与原宫数，不代表全九宫布局或应验。"
+      ]
+    },
+    {
+      "id": "QMTZ-NLC-P091-C02-R01",
+      "name": "文瑞本阳一局总表·甲戌时",
+      "inputBasis": "qimen-layout",
+      "input": {
+        "dun": "yang",
+        "ju": 1,
+        "timePillar": "甲戌"
+      },
+      "expected": {
+        "chiefStar": "天芮",
+        "chiefDoor": "死门",
+        "starPalaceRaw": 2,
+        "doorPalaceRaw": 2
+      },
+      "expectationStatus": "clear",
+      "canRecompute": true,
+      "verified": false,
+      "sources": [
+        {
+          "paragraphId": "qimen-dunjia-tongzhi:nlc-layouts:P091:L025-L035",
+          "file": "sources/normalized/san-shi/qimen-dunjia-tongzhi/nlc-layouts.md",
+          "pdfPage": 91,
+          "pageStartLine": 26,
+          "pageEndLine": 26,
+          "quote": "戌二二"
+        },
+        {
+          "paragraphId": "qimen-dunjia-tongzhi:nlc-layouts:P091:L025-L035",
+          "file": "sources/normalized/san-shi/qimen-dunjia-tongzhi/nlc-layouts.md",
+          "pdfPage": 91,
+          "pageStartLine": 25,
+          "pageEndLine": 25,
+          "quote": "芮死"
+        },
+        {
+          "paragraphId": "qimen-dunjia-tongzhi:nlc-layouts:P091:L006-L007",
+          "file": "sources/normalized/san-shi/qimen-dunjia-tongzhi/nlc-layouts.md",
+          "pdfPage": 91,
+          "pageStartLine": 6,
+          "pageEndLine": 7,
+          "quote": "陽一局\n甲乙丙丁戊己庚辛壬癸"
+        }
+      ],
+      "sourceContext": {
+        "printedJu": "陽一局",
+        "printedStemHeader": "甲乙丙丁戊己庚辛壬癸",
+        "printedColumn": 2,
+        "printedRow": 1,
+        "printedStarDoor": "芮死",
+        "printedCell": "戌二二",
+        "readingMethod": "时柱由纸面共享十干行头与该格时支合读；数字由格中原数直接转录。"
+      },
+      "notes": [
+        "只核符星、使门与原宫数，不代表全九宫布局或应验。"
+      ]
+    },
+    {
+      "id": "QMTZ-NLC-P091-C02-R02",
+      "name": "文瑞本阳一局总表·乙亥时",
+      "inputBasis": "qimen-layout",
+      "input": {
+        "dun": "yang",
+        "ju": 1,
+        "timePillar": "乙亥"
+      },
+      "expected": {
+        "chiefStar": "天芮",
+        "chiefDoor": "死门",
+        "starPalaceRaw": 9,
+        "doorPalaceRaw": 3
+      },
+      "expectationStatus": "clear",
+      "canRecompute": true,
+      "verified": false,
+      "sources": [
+        {
+          "paragraphId": "qimen-dunjia-tongzhi:nlc-layouts:P091:L025-L035",
+          "file": "sources/normalized/san-shi/qimen-dunjia-tongzhi/nlc-layouts.md",
+          "pdfPage": 91,
+          "pageStartLine": 27,
+          "pageEndLine": 27,
+          "quote": "亥九三"
+        },
+        {
+          "paragraphId": "qimen-dunjia-tongzhi:nlc-layouts:P091:L025-L035",
+          "file": "sources/normalized/san-shi/qimen-dunjia-tongzhi/nlc-layouts.md",
+          "pdfPage": 91,
+          "pageStartLine": 25,
+          "pageEndLine": 25,
+          "quote": "芮死"
+        },
+        {
+          "paragraphId": "qimen-dunjia-tongzhi:nlc-layouts:P091:L006-L007",
+          "file": "sources/normalized/san-shi/qimen-dunjia-tongzhi/nlc-layouts.md",
+          "pdfPage": 91,
+          "pageStartLine": 6,
+          "pageEndLine": 7,
+          "quote": "陽一局\n甲乙丙丁戊己庚辛壬癸"
+        }
+      ],
+      "sourceContext": {
+        "printedJu": "陽一局",
+        "printedStemHeader": "甲乙丙丁戊己庚辛壬癸",
+        "printedColumn": 2,
+        "printedRow": 2,
+        "printedStarDoor": "芮死",
+        "printedCell": "亥九三",
+        "readingMethod": "时柱由纸面共享十干行头与该格时支合读；数字由格中原数直接转录。"
+      },
+      "notes": [
+        "只核符星、使门与原宫数，不代表全九宫布局或应验。"
+      ]
+    },
+    {
+      "id": "QMTZ-NLC-P091-C02-R03",
+      "name": "文瑞本阳一局总表·丙子时",
+      "inputBasis": "qimen-layout",
+      "input": {
+        "dun": "yang",
+        "ju": 1,
+        "timePillar": "丙子"
+      },
+      "expected": {
+        "chiefStar": "天芮",
+        "chiefDoor": "死门",
+        "starPalaceRaw": 8,
+        "doorPalaceRaw": 4
+      },
+      "expectationStatus": "clear",
+      "canRecompute": true,
+      "verified": false,
+      "sources": [
+        {
+          "paragraphId": "qimen-dunjia-tongzhi:nlc-layouts:P091:L025-L035",
+          "file": "sources/normalized/san-shi/qimen-dunjia-tongzhi/nlc-layouts.md",
+          "pdfPage": 91,
+          "pageStartLine": 28,
+          "pageEndLine": 28,
+          "quote": "子八四"
+        },
+        {
+          "paragraphId": "qimen-dunjia-tongzhi:nlc-layouts:P091:L025-L035",
+          "file": "sources/normalized/san-shi/qimen-dunjia-tongzhi/nlc-layouts.md",
+          "pdfPage": 91,
+          "pageStartLine": 25,
+          "pageEndLine": 25,
+          "quote": "芮死"
+        },
+        {
+          "paragraphId": "qimen-dunjia-tongzhi:nlc-layouts:P091:L006-L007",
+          "file": "sources/normalized/san-shi/qimen-dunjia-tongzhi/nlc-layouts.md",
+          "pdfPage": 91,
+          "pageStartLine": 6,
+          "pageEndLine": 7,
+          "quote": "陽一局\n甲乙丙丁戊己庚辛壬癸"
+        }
+      ],
+      "sourceContext": {
+        "printedJu": "陽一局",
+        "printedStemHeader": "甲乙丙丁戊己庚辛壬癸",
+        "printedColumn": 2,
+        "printedRow": 3,
+        "printedStarDoor": "芮死",
+        "printedCell": "子八四",
+        "readingMethod": "时柱由纸面共享十干行头与该格时支合读；数字由格中原数直接转录。"
+      },
+      "notes": [
+        "只核符星、使门与原宫数，不代表全九宫布局或应验。"
+      ]
+    },
+    {
+      "id": "QMTZ-NLC-P091-C02-R04",
+      "name": "文瑞本阳一局总表·丁丑时",
+      "inputBasis": "qimen-layout",
+      "input": {
+        "dun": "yang",
+        "ju": 1,
+        "timePillar": "丁丑"
+      },
+      "expected": {
+        "chiefStar": "天芮",
+        "chiefDoor": "死门",
+        "starPalaceRaw": 7,
+        "doorPalaceRaw": 5
+      },
+      "expectationStatus": "clear",
+      "canRecompute": true,
+      "verified": false,
+      "sources": [
+        {
+          "paragraphId": "qimen-dunjia-tongzhi:nlc-layouts:P091:L025-L035",
+          "file": "sources/normalized/san-shi/qimen-dunjia-tongzhi/nlc-layouts.md",
+          "pdfPage": 91,
+          "pageStartLine": 29,
+          "pageEndLine": 29,
+          "quote": "丑七五"
+        },
+        {
+          "paragraphId": "qimen-dunjia-tongzhi:nlc-layouts:P091:L025-L035",
+          "file": "sources/normalized/san-shi/qimen-dunjia-tongzhi/nlc-layouts.md",
+          "pdfPage": 91,
+          "pageStartLine": 25,
+          "pageEndLine": 25,
+          "quote": "芮死"
+        },
+        {
+          "paragraphId": "qimen-dunjia-tongzhi:nlc-layouts:P091:L006-L007",
+          "file": "sources/normalized/san-shi/qimen-dunjia-tongzhi/nlc-layouts.md",
+          "pdfPage": 91,
+          "pageStartLine": 6,
+          "pageEndLine": 7,
+          "quote": "陽一局\n甲乙丙丁戊己庚辛壬癸"
+        }
+      ],
+      "sourceContext": {
+        "printedJu": "陽一局",
+        "printedStemHeader": "甲乙丙丁戊己庚辛壬癸",
+        "printedColumn": 2,
+        "printedRow": 4,
+        "printedStarDoor": "芮死",
+        "printedCell": "丑七五",
+        "readingMethod": "时柱由纸面共享十干行头与该格时支合读；数字由格中原数直接转录。"
+      },
+      "notes": [
+        "只核符星、使门与原宫数，不代表全九宫布局或应验。"
+      ]
+    },
+    {
+      "id": "QMTZ-NLC-P091-C02-R05",
+      "name": "文瑞本阳一局总表·戊寅时",
+      "inputBasis": "qimen-layout",
+      "input": {
+        "dun": "yang",
+        "ju": 1,
+        "timePillar": "戊寅"
+      },
+      "expected": {
+        "chiefStar": "天芮",
+        "chiefDoor": "死门",
+        "starPalaceRaw": 1,
+        "doorPalaceRaw": 6
+      },
+      "expectationStatus": "clear",
+      "canRecompute": true,
+      "verified": false,
+      "sources": [
+        {
+          "paragraphId": "qimen-dunjia-tongzhi:nlc-layouts:P091:L025-L035",
+          "file": "sources/normalized/san-shi/qimen-dunjia-tongzhi/nlc-layouts.md",
+          "pdfPage": 91,
+          "pageStartLine": 30,
+          "pageEndLine": 30,
+          "quote": "寅一六"
+        },
+        {
+          "paragraphId": "qimen-dunjia-tongzhi:nlc-layouts:P091:L025-L035",
+          "file": "sources/normalized/san-shi/qimen-dunjia-tongzhi/nlc-layouts.md",
+          "pdfPage": 91,
+          "pageStartLine": 25,
+          "pageEndLine": 25,
+          "quote": "芮死"
+        },
+        {
+          "paragraphId": "qimen-dunjia-tongzhi:nlc-layouts:P091:L006-L007",
+          "file": "sources/normalized/san-shi/qimen-dunjia-tongzhi/nlc-layouts.md",
+          "pdfPage": 91,
+          "pageStartLine": 6,
+          "pageEndLine": 7,
+          "quote": "陽一局\n甲乙丙丁戊己庚辛壬癸"
+        }
+      ],
+      "sourceContext": {
+        "printedJu": "陽一局",
+        "printedStemHeader": "甲乙丙丁戊己庚辛壬癸",
+        "printedColumn": 2,
+        "printedRow": 5,
+        "printedStarDoor": "芮死",
+        "printedCell": "寅一六",
+        "readingMethod": "时柱由纸面共享十干行头与该格时支合读；数字由格中原数直接转录。"
+      },
+      "notes": [
+        "只核符星、使门与原宫数，不代表全九宫布局或应验。"
+      ]
+    },
+    {
+      "id": "QMTZ-NLC-P091-C02-R06",
+      "name": "文瑞本阳一局总表·己卯时",
+      "inputBasis": "qimen-layout",
+      "input": {
+        "dun": "yang",
+        "ju": 1,
+        "timePillar": "己卯"
+      },
+      "expected": {
+        "chiefStar": "天芮",
+        "chiefDoor": "死门",
+        "starPalaceRaw": 2,
+        "doorPalaceRaw": 7
+      },
+      "expectationStatus": "clear",
+      "canRecompute": true,
+      "verified": false,
+      "sources": [
+        {
+          "paragraphId": "qimen-dunjia-tongzhi:nlc-layouts:P091:L025-L035",
+          "file": "sources/normalized/san-shi/qimen-dunjia-tongzhi/nlc-layouts.md",
+          "pdfPage": 91,
+          "pageStartLine": 31,
+          "pageEndLine": 31,
+          "quote": "卯二七"
+        },
+        {
+          "paragraphId": "qimen-dunjia-tongzhi:nlc-layouts:P091:L025-L035",
+          "file": "sources/normalized/san-shi/qimen-dunjia-tongzhi/nlc-layouts.md",
+          "pdfPage": 91,
+          "pageStartLine": 25,
+          "pageEndLine": 25,
+          "quote": "芮死"
+        },
+        {
+          "paragraphId": "qimen-dunjia-tongzhi:nlc-layouts:P091:L006-L007",
+          "file": "sources/normalized/san-shi/qimen-dunjia-tongzhi/nlc-layouts.md",
+          "pdfPage": 91,
+          "pageStartLine": 6,
+          "pageEndLine": 7,
+          "quote": "陽一局\n甲乙丙丁戊己庚辛壬癸"
+        }
+      ],
+      "sourceContext": {
+        "printedJu": "陽一局",
+        "printedStemHeader": "甲乙丙丁戊己庚辛壬癸",
+        "printedColumn": 2,
+        "printedRow": 6,
+        "printedStarDoor": "芮死",
+        "printedCell": "卯二七",
+        "readingMethod": "时柱由纸面共享十干行头与该格时支合读；数字由格中原数直接转录。"
+      },
+      "notes": [
+        "只核符星、使门与原宫数，不代表全九宫布局或应验。"
+      ]
+    },
+    {
+      "id": "QMTZ-NLC-P091-C02-R07",
+      "name": "文瑞本阳一局总表·庚辰时",
+      "inputBasis": "qimen-layout",
+      "input": {
+        "dun": "yang",
+        "ju": 1,
+        "timePillar": "庚辰"
+      },
+      "expected": {
+        "chiefStar": "天芮",
+        "chiefDoor": "死门",
+        "starPalaceRaw": 3,
+        "doorPalaceRaw": 8
+      },
+      "expectationStatus": "clear",
+      "canRecompute": true,
+      "verified": false,
+      "sources": [
+        {
+          "paragraphId": "qimen-dunjia-tongzhi:nlc-layouts:P091:L025-L035",
+          "file": "sources/normalized/san-shi/qimen-dunjia-tongzhi/nlc-layouts.md",
+          "pdfPage": 91,
+          "pageStartLine": 32,
+          "pageEndLine": 32,
+          "quote": "辰三八"
+        },
+        {
+          "paragraphId": "qimen-dunjia-tongzhi:nlc-layouts:P091:L025-L035",
+          "file": "sources/normalized/san-shi/qimen-dunjia-tongzhi/nlc-layouts.md",
+          "pdfPage": 91,
+          "pageStartLine": 25,
+          "pageEndLine": 25,
+          "quote": "芮死"
+        },
+        {
+          "paragraphId": "qimen-dunjia-tongzhi:nlc-layouts:P091:L006-L007",
+          "file": "sources/normalized/san-shi/qimen-dunjia-tongzhi/nlc-layouts.md",
+          "pdfPage": 91,
+          "pageStartLine": 6,
+          "pageEndLine": 7,
+          "quote": "陽一局\n甲乙丙丁戊己庚辛壬癸"
+        }
+      ],
+      "sourceContext": {
+        "printedJu": "陽一局",
+        "printedStemHeader": "甲乙丙丁戊己庚辛壬癸",
+        "printedColumn": 2,
+        "printedRow": 7,
+        "printedStarDoor": "芮死",
+        "printedCell": "辰三八",
+        "readingMethod": "时柱由纸面共享十干行头与该格时支合读；数字由格中原数直接转录。"
+      },
+      "notes": [
+        "只核符星、使门与原宫数，不代表全九宫布局或应验。"
+      ]
+    },
+    {
+      "id": "QMTZ-NLC-P091-C02-R08",
+      "name": "文瑞本阳一局总表·辛巳时",
+      "inputBasis": "qimen-layout",
+      "input": {
+        "dun": "yang",
+        "ju": 1,
+        "timePillar": "辛巳"
+      },
+      "expected": {
+        "chiefStar": "天芮",
+        "chiefDoor": "死门",
+        "starPalaceRaw": 4,
+        "doorPalaceRaw": 9
+      },
+      "expectationStatus": "clear",
+      "canRecompute": true,
+      "verified": false,
+      "sources": [
+        {
+          "paragraphId": "qimen-dunjia-tongzhi:nlc-layouts:P091:L025-L035",
+          "file": "sources/normalized/san-shi/qimen-dunjia-tongzhi/nlc-layouts.md",
+          "pdfPage": 91,
+          "pageStartLine": 33,
+          "pageEndLine": 33,
+          "quote": "巳四九"
+        },
+        {
+          "paragraphId": "qimen-dunjia-tongzhi:nlc-layouts:P091:L025-L035",
+          "file": "sources/normalized/san-shi/qimen-dunjia-tongzhi/nlc-layouts.md",
+          "pdfPage": 91,
+          "pageStartLine": 25,
+          "pageEndLine": 25,
+          "quote": "芮死"
+        },
+        {
+          "paragraphId": "qimen-dunjia-tongzhi:nlc-layouts:P091:L006-L007",
+          "file": "sources/normalized/san-shi/qimen-dunjia-tongzhi/nlc-layouts.md",
+          "pdfPage": 91,
+          "pageStartLine": 6,
+          "pageEndLine": 7,
+          "quote": "陽一局\n甲乙丙丁戊己庚辛壬癸"
+        }
+      ],
+      "sourceContext": {
+        "printedJu": "陽一局",
+        "printedStemHeader": "甲乙丙丁戊己庚辛壬癸",
+        "printedColumn": 2,
+        "printedRow": 8,
+        "printedStarDoor": "芮死",
+        "printedCell": "巳四九",
+        "readingMethod": "时柱由纸面共享十干行头与该格时支合读；数字由格中原数直接转录。"
+      },
+      "notes": [
+        "只核符星、使门与原宫数，不代表全九宫布局或应验。"
+      ]
+    },
+    {
+      "id": "QMTZ-NLC-P091-C02-R09",
+      "name": "文瑞本阳一局总表·壬午时",
+      "inputBasis": "qimen-layout",
+      "input": {
+        "dun": "yang",
+        "ju": 1,
+        "timePillar": "壬午"
+      },
+      "expected": {
+        "chiefStar": "天芮",
+        "chiefDoor": "死门",
+        "starPalaceRaw": 5,
+        "doorPalaceRaw": 1
+      },
+      "expectationStatus": "clear",
+      "canRecompute": true,
+      "verified": false,
+      "sources": [
+        {
+          "paragraphId": "qimen-dunjia-tongzhi:nlc-layouts:P091:L025-L035",
+          "file": "sources/normalized/san-shi/qimen-dunjia-tongzhi/nlc-layouts.md",
+          "pdfPage": 91,
+          "pageStartLine": 34,
+          "pageEndLine": 34,
+          "quote": "午五一"
+        },
+        {
+          "paragraphId": "qimen-dunjia-tongzhi:nlc-layouts:P091:L025-L035",
+          "file": "sources/normalized/san-shi/qimen-dunjia-tongzhi/nlc-layouts.md",
+          "pdfPage": 91,
+          "pageStartLine": 25,
+          "pageEndLine": 25,
+          "quote": "芮死"
+        },
+        {
+          "paragraphId": "qimen-dunjia-tongzhi:nlc-layouts:P091:L006-L007",
+          "file": "sources/normalized/san-shi/qimen-dunjia-tongzhi/nlc-layouts.md",
+          "pdfPage": 91,
+          "pageStartLine": 6,
+          "pageEndLine": 7,
+          "quote": "陽一局\n甲乙丙丁戊己庚辛壬癸"
+        }
+      ],
+      "sourceContext": {
+        "printedJu": "陽一局",
+        "printedStemHeader": "甲乙丙丁戊己庚辛壬癸",
+        "printedColumn": 2,
+        "printedRow": 9,
+        "printedStarDoor": "芮死",
+        "printedCell": "午五一",
+        "readingMethod": "时柱由纸面共享十干行头与该格时支合读；数字由格中原数直接转录。"
+      },
+      "notes": [
+        "只核符星、使门与原宫数，不代表全九宫布局或应验。"
+      ]
+    },
+    {
+      "id": "QMTZ-NLC-P091-C02-R10",
+      "name": "文瑞本阳一局总表·癸未时",
+      "inputBasis": "qimen-layout",
+      "input": {
+        "dun": "yang",
+        "ju": 1,
+        "timePillar": "癸未"
+      },
+      "expected": {
+        "chiefStar": "天芮",
+        "chiefDoor": "死门",
+        "starPalaceRaw": 6,
+        "doorPalaceRaw": 2
+      },
+      "expectationStatus": "clear",
+      "canRecompute": true,
+      "verified": false,
+      "sources": [
+        {
+          "paragraphId": "qimen-dunjia-tongzhi:nlc-layouts:P091:L025-L035",
+          "file": "sources/normalized/san-shi/qimen-dunjia-tongzhi/nlc-layouts.md",
+          "pdfPage": 91,
+          "pageStartLine": 35,
+          "pageEndLine": 35,
+          "quote": "未六二"
+        },
+        {
+          "paragraphId": "qimen-dunjia-tongzhi:nlc-layouts:P091:L025-L035",
+          "file": "sources/normalized/san-shi/qimen-dunjia-tongzhi/nlc-layouts.md",
+          "pdfPage": 91,
+          "pageStartLine": 25,
+          "pageEndLine": 25,
+          "quote": "芮死"
+        },
+        {
+          "paragraphId": "qimen-dunjia-tongzhi:nlc-layouts:P091:L006-L007",
+          "file": "sources/normalized/san-shi/qimen-dunjia-tongzhi/nlc-layouts.md",
+          "pdfPage": 91,
+          "pageStartLine": 6,
+          "pageEndLine": 7,
+          "quote": "陽一局\n甲乙丙丁戊己庚辛壬癸"
+        }
+      ],
+      "sourceContext": {
+        "printedJu": "陽一局",
+        "printedStemHeader": "甲乙丙丁戊己庚辛壬癸",
+        "printedColumn": 2,
+        "printedRow": 10,
+        "printedStarDoor": "芮死",
+        "printedCell": "未六二",
+        "readingMethod": "时柱由纸面共享十干行头与该格时支合读；数字由格中原数直接转录。"
+      },
+      "notes": [
+        "只核符星、使门与原宫数，不代表全九宫布局或应验。"
+      ]
+    },
+    {
+      "id": "QMTZ-NLC-P091-C03-R01",
+      "name": "文瑞本阳一局总表·甲申时",
+      "inputBasis": "qimen-layout",
+      "input": {
+        "dun": "yang",
+        "ju": 1,
+        "timePillar": "甲申"
+      },
+      "expected": {
+        "chiefStar": "天冲",
+        "chiefDoor": "伤门",
+        "starPalaceRaw": 3,
+        "doorPalaceRaw": 3
+      },
+      "expectationStatus": "clear",
+      "canRecompute": true,
+      "verified": false,
+      "sources": [
+        {
+          "paragraphId": "qimen-dunjia-tongzhi:nlc-layouts:P091:L039-L049",
+          "file": "sources/normalized/san-shi/qimen-dunjia-tongzhi/nlc-layouts.md",
+          "pdfPage": 91,
+          "pageStartLine": 40,
+          "pageEndLine": 40,
+          "quote": "申三三"
+        },
+        {
+          "paragraphId": "qimen-dunjia-tongzhi:nlc-layouts:P091:L039-L049",
+          "file": "sources/normalized/san-shi/qimen-dunjia-tongzhi/nlc-layouts.md",
+          "pdfPage": 91,
+          "pageStartLine": 39,
+          "pageEndLine": 39,
+          "quote": "沖傷"
+        },
+        {
+          "paragraphId": "qimen-dunjia-tongzhi:nlc-layouts:P091:L006-L007",
+          "file": "sources/normalized/san-shi/qimen-dunjia-tongzhi/nlc-layouts.md",
+          "pdfPage": 91,
+          "pageStartLine": 6,
+          "pageEndLine": 7,
+          "quote": "陽一局\n甲乙丙丁戊己庚辛壬癸"
+        }
+      ],
+      "sourceContext": {
+        "printedJu": "陽一局",
+        "printedStemHeader": "甲乙丙丁戊己庚辛壬癸",
+        "printedColumn": 3,
+        "printedRow": 1,
+        "printedStarDoor": "沖傷",
+        "printedCell": "申三三",
+        "readingMethod": "时柱由纸面共享十干行头与该格时支合读；数字由格中原数直接转录。"
+      },
+      "notes": [
+        "只核符星、使门与原宫数，不代表全九宫布局或应验。"
+      ]
+    },
+    {
+      "id": "QMTZ-NLC-P091-C03-R02",
+      "name": "文瑞本阳一局总表·乙酉时",
+      "inputBasis": "qimen-layout",
+      "input": {
+        "dun": "yang",
+        "ju": 1,
+        "timePillar": "乙酉"
+      },
+      "expected": {
+        "chiefStar": "天冲",
+        "chiefDoor": "伤门",
+        "starPalaceRaw": 9,
+        "doorPalaceRaw": 4
+      },
+      "expectationStatus": "clear",
+      "canRecompute": true,
+      "verified": false,
+      "sources": [
+        {
+          "paragraphId": "qimen-dunjia-tongzhi:nlc-layouts:P091:L039-L049",
+          "file": "sources/normalized/san-shi/qimen-dunjia-tongzhi/nlc-layouts.md",
+          "pdfPage": 91,
+          "pageStartLine": 41,
+          "pageEndLine": 41,
+          "quote": "酉九四"
+        },
+        {
+          "paragraphId": "qimen-dunjia-tongzhi:nlc-layouts:P091:L039-L049",
+          "file": "sources/normalized/san-shi/qimen-dunjia-tongzhi/nlc-layouts.md",
+          "pdfPage": 91,
+          "pageStartLine": 39,
+          "pageEndLine": 39,
+          "quote": "沖傷"
+        },
+        {
+          "paragraphId": "qimen-dunjia-tongzhi:nlc-layouts:P091:L006-L007",
+          "file": "sources/normalized/san-shi/qimen-dunjia-tongzhi/nlc-layouts.md",
+          "pdfPage": 91,
+          "pageStartLine": 6,
+          "pageEndLine": 7,
+          "quote": "陽一局\n甲乙丙丁戊己庚辛壬癸"
+        }
+      ],
+      "sourceContext": {
+        "printedJu": "陽一局",
+        "printedStemHeader": "甲乙丙丁戊己庚辛壬癸",
+        "printedColumn": 3,
+        "printedRow": 2,
+        "printedStarDoor": "沖傷",
+        "printedCell": "酉九四",
+        "readingMethod": "时柱由纸面共享十干行头与该格时支合读；数字由格中原数直接转录。"
+      },
+      "notes": [
+        "只核符星、使门与原宫数，不代表全九宫布局或应验。"
+      ]
+    },
+    {
+      "id": "QMTZ-NLC-P091-C03-R03",
+      "name": "文瑞本阳一局总表·丙戌时",
+      "inputBasis": "qimen-layout",
+      "input": {
+        "dun": "yang",
+        "ju": 1,
+        "timePillar": "丙戌"
+      },
+      "expected": {
+        "chiefStar": "天冲",
+        "chiefDoor": "伤门",
+        "starPalaceRaw": 8,
+        "doorPalaceRaw": 5
+      },
+      "expectationStatus": "clear",
+      "canRecompute": true,
+      "verified": false,
+      "sources": [
+        {
+          "paragraphId": "qimen-dunjia-tongzhi:nlc-layouts:P091:L039-L049",
+          "file": "sources/normalized/san-shi/qimen-dunjia-tongzhi/nlc-layouts.md",
+          "pdfPage": 91,
+          "pageStartLine": 42,
+          "pageEndLine": 42,
+          "quote": "戌八五"
+        },
+        {
+          "paragraphId": "qimen-dunjia-tongzhi:nlc-layouts:P091:L039-L049",
+          "file": "sources/normalized/san-shi/qimen-dunjia-tongzhi/nlc-layouts.md",
+          "pdfPage": 91,
+          "pageStartLine": 39,
+          "pageEndLine": 39,
+          "quote": "沖傷"
+        },
+        {
+          "paragraphId": "qimen-dunjia-tongzhi:nlc-layouts:P091:L006-L007",
+          "file": "sources/normalized/san-shi/qimen-dunjia-tongzhi/nlc-layouts.md",
+          "pdfPage": 91,
+          "pageStartLine": 6,
+          "pageEndLine": 7,
+          "quote": "陽一局\n甲乙丙丁戊己庚辛壬癸"
+        }
+      ],
+      "sourceContext": {
+        "printedJu": "陽一局",
+        "printedStemHeader": "甲乙丙丁戊己庚辛壬癸",
+        "printedColumn": 3,
+        "printedRow": 3,
+        "printedStarDoor": "沖傷",
+        "printedCell": "戌八五",
+        "readingMethod": "时柱由纸面共享十干行头与该格时支合读；数字由格中原数直接转录。"
+      },
+      "notes": [
+        "只核符星、使门与原宫数，不代表全九宫布局或应验。"
+      ]
+    },
+    {
+      "id": "QMTZ-NLC-P091-C03-R04",
+      "name": "文瑞本阳一局总表·丁亥时",
+      "inputBasis": "qimen-layout",
+      "input": {
+        "dun": "yang",
+        "ju": 1,
+        "timePillar": "丁亥"
+      },
+      "expected": {
+        "chiefStar": "天冲",
+        "chiefDoor": "伤门",
+        "starPalaceRaw": 7,
+        "doorPalaceRaw": 6
+      },
+      "expectationStatus": "clear",
+      "canRecompute": true,
+      "verified": false,
+      "sources": [
+        {
+          "paragraphId": "qimen-dunjia-tongzhi:nlc-layouts:P091:L039-L049",
+          "file": "sources/normalized/san-shi/qimen-dunjia-tongzhi/nlc-layouts.md",
+          "pdfPage": 91,
+          "pageStartLine": 43,
+          "pageEndLine": 43,
+          "quote": "亥七六"
+        },
+        {
+          "paragraphId": "qimen-dunjia-tongzhi:nlc-layouts:P091:L039-L049",
+          "file": "sources/normalized/san-shi/qimen-dunjia-tongzhi/nlc-layouts.md",
+          "pdfPage": 91,
+          "pageStartLine": 39,
+          "pageEndLine": 39,
+          "quote": "沖傷"
+        },
+        {
+          "paragraphId": "qimen-dunjia-tongzhi:nlc-layouts:P091:L006-L007",
+          "file": "sources/normalized/san-shi/qimen-dunjia-tongzhi/nlc-layouts.md",
+          "pdfPage": 91,
+          "pageStartLine": 6,
+          "pageEndLine": 7,
+          "quote": "陽一局\n甲乙丙丁戊己庚辛壬癸"
+        }
+      ],
+      "sourceContext": {
+        "printedJu": "陽一局",
+        "printedStemHeader": "甲乙丙丁戊己庚辛壬癸",
+        "printedColumn": 3,
+        "printedRow": 4,
+        "printedStarDoor": "沖傷",
+        "printedCell": "亥七六",
+        "readingMethod": "时柱由纸面共享十干行头与该格时支合读；数字由格中原数直接转录。"
+      },
+      "notes": [
+        "只核符星、使门与原宫数，不代表全九宫布局或应验。"
+      ]
+    },
+    {
+      "id": "QMTZ-NLC-P091-C03-R05",
+      "name": "文瑞本阳一局总表·戊子时",
+      "inputBasis": "qimen-layout",
+      "input": {
+        "dun": "yang",
+        "ju": 1,
+        "timePillar": "戊子"
+      },
+      "expected": {
+        "chiefStar": "天冲",
+        "chiefDoor": "伤门",
+        "starPalaceRaw": 1,
+        "doorPalaceRaw": 7
+      },
+      "expectationStatus": "clear",
+      "canRecompute": true,
+      "verified": false,
+      "sources": [
+        {
+          "paragraphId": "qimen-dunjia-tongzhi:nlc-layouts:P091:L039-L049",
+          "file": "sources/normalized/san-shi/qimen-dunjia-tongzhi/nlc-layouts.md",
+          "pdfPage": 91,
+          "pageStartLine": 44,
+          "pageEndLine": 44,
+          "quote": "子一七"
+        },
+        {
+          "paragraphId": "qimen-dunjia-tongzhi:nlc-layouts:P091:L039-L049",
+          "file": "sources/normalized/san-shi/qimen-dunjia-tongzhi/nlc-layouts.md",
+          "pdfPage": 91,
+          "pageStartLine": 39,
+          "pageEndLine": 39,
+          "quote": "沖傷"
+        },
+        {
+          "paragraphId": "qimen-dunjia-tongzhi:nlc-layouts:P091:L006-L007",
+          "file": "sources/normalized/san-shi/qimen-dunjia-tongzhi/nlc-layouts.md",
+          "pdfPage": 91,
+          "pageStartLine": 6,
+          "pageEndLine": 7,
+          "quote": "陽一局\n甲乙丙丁戊己庚辛壬癸"
+        }
+      ],
+      "sourceContext": {
+        "printedJu": "陽一局",
+        "printedStemHeader": "甲乙丙丁戊己庚辛壬癸",
+        "printedColumn": 3,
+        "printedRow": 5,
+        "printedStarDoor": "沖傷",
+        "printedCell": "子一七",
+        "readingMethod": "时柱由纸面共享十干行头与该格时支合读；数字由格中原数直接转录。"
+      },
+      "notes": [
+        "只核符星、使门与原宫数，不代表全九宫布局或应验。"
+      ]
+    },
+    {
+      "id": "QMTZ-NLC-P091-C03-R06",
+      "name": "文瑞本阳一局总表·己丑时",
+      "inputBasis": "qimen-layout",
+      "input": {
+        "dun": "yang",
+        "ju": 1,
+        "timePillar": "己丑"
+      },
+      "expected": {
+        "chiefStar": "天冲",
+        "chiefDoor": "伤门",
+        "starPalaceRaw": 2,
+        "doorPalaceRaw": 8
+      },
+      "expectationStatus": "clear",
+      "canRecompute": true,
+      "verified": false,
+      "sources": [
+        {
+          "paragraphId": "qimen-dunjia-tongzhi:nlc-layouts:P091:L039-L049",
+          "file": "sources/normalized/san-shi/qimen-dunjia-tongzhi/nlc-layouts.md",
+          "pdfPage": 91,
+          "pageStartLine": 45,
+          "pageEndLine": 45,
+          "quote": "丑二八"
+        },
+        {
+          "paragraphId": "qimen-dunjia-tongzhi:nlc-layouts:P091:L039-L049",
+          "file": "sources/normalized/san-shi/qimen-dunjia-tongzhi/nlc-layouts.md",
+          "pdfPage": 91,
+          "pageStartLine": 39,
+          "pageEndLine": 39,
+          "quote": "沖傷"
+        },
+        {
+          "paragraphId": "qimen-dunjia-tongzhi:nlc-layouts:P091:L006-L007",
+          "file": "sources/normalized/san-shi/qimen-dunjia-tongzhi/nlc-layouts.md",
+          "pdfPage": 91,
+          "pageStartLine": 6,
+          "pageEndLine": 7,
+          "quote": "陽一局\n甲乙丙丁戊己庚辛壬癸"
+        }
+      ],
+      "sourceContext": {
+        "printedJu": "陽一局",
+        "printedStemHeader": "甲乙丙丁戊己庚辛壬癸",
+        "printedColumn": 3,
+        "printedRow": 6,
+        "printedStarDoor": "沖傷",
+        "printedCell": "丑二八",
+        "readingMethod": "时柱由纸面共享十干行头与该格时支合读；数字由格中原数直接转录。"
+      },
+      "notes": [
+        "只核符星、使门与原宫数，不代表全九宫布局或应验。"
+      ]
+    },
+    {
+      "id": "QMTZ-NLC-P091-C03-R07",
+      "name": "文瑞本阳一局总表·庚寅时",
+      "inputBasis": "qimen-layout",
+      "input": {
+        "dun": "yang",
+        "ju": 1,
+        "timePillar": "庚寅"
+      },
+      "expected": {
+        "chiefStar": "天冲",
+        "chiefDoor": "伤门",
+        "starPalaceRaw": 3,
+        "doorPalaceRaw": 9
+      },
+      "expectationStatus": "clear",
+      "canRecompute": true,
+      "verified": false,
+      "sources": [
+        {
+          "paragraphId": "qimen-dunjia-tongzhi:nlc-layouts:P091:L039-L049",
+          "file": "sources/normalized/san-shi/qimen-dunjia-tongzhi/nlc-layouts.md",
+          "pdfPage": 91,
+          "pageStartLine": 46,
+          "pageEndLine": 46,
+          "quote": "寅三九"
+        },
+        {
+          "paragraphId": "qimen-dunjia-tongzhi:nlc-layouts:P091:L039-L049",
+          "file": "sources/normalized/san-shi/qimen-dunjia-tongzhi/nlc-layouts.md",
+          "pdfPage": 91,
+          "pageStartLine": 39,
+          "pageEndLine": 39,
+          "quote": "沖傷"
+        },
+        {
+          "paragraphId": "qimen-dunjia-tongzhi:nlc-layouts:P091:L006-L007",
+          "file": "sources/normalized/san-shi/qimen-dunjia-tongzhi/nlc-layouts.md",
+          "pdfPage": 91,
+          "pageStartLine": 6,
+          "pageEndLine": 7,
+          "quote": "陽一局\n甲乙丙丁戊己庚辛壬癸"
+        }
+      ],
+      "sourceContext": {
+        "printedJu": "陽一局",
+        "printedStemHeader": "甲乙丙丁戊己庚辛壬癸",
+        "printedColumn": 3,
+        "printedRow": 7,
+        "printedStarDoor": "沖傷",
+        "printedCell": "寅三九",
+        "readingMethod": "时柱由纸面共享十干行头与该格时支合读；数字由格中原数直接转录。"
+      },
+      "notes": [
+        "只核符星、使门与原宫数，不代表全九宫布局或应验。"
+      ]
+    },
+    {
+      "id": "QMTZ-NLC-P091-C03-R08",
+      "name": "文瑞本阳一局总表·辛卯时",
+      "inputBasis": "qimen-layout",
+      "input": {
+        "dun": "yang",
+        "ju": 1,
+        "timePillar": "辛卯"
+      },
+      "expected": {
+        "chiefStar": "天冲",
+        "chiefDoor": "伤门",
+        "starPalaceRaw": 4,
+        "doorPalaceRaw": 1
+      },
+      "expectationStatus": "clear",
+      "canRecompute": true,
+      "verified": false,
+      "sources": [
+        {
+          "paragraphId": "qimen-dunjia-tongzhi:nlc-layouts:P091:L039-L049",
+          "file": "sources/normalized/san-shi/qimen-dunjia-tongzhi/nlc-layouts.md",
+          "pdfPage": 91,
+          "pageStartLine": 47,
+          "pageEndLine": 47,
+          "quote": "卯四一"
+        },
+        {
+          "paragraphId": "qimen-dunjia-tongzhi:nlc-layouts:P091:L039-L049",
+          "file": "sources/normalized/san-shi/qimen-dunjia-tongzhi/nlc-layouts.md",
+          "pdfPage": 91,
+          "pageStartLine": 39,
+          "pageEndLine": 39,
+          "quote": "沖傷"
+        },
+        {
+          "paragraphId": "qimen-dunjia-tongzhi:nlc-layouts:P091:L006-L007",
+          "file": "sources/normalized/san-shi/qimen-dunjia-tongzhi/nlc-layouts.md",
+          "pdfPage": 91,
+          "pageStartLine": 6,
+          "pageEndLine": 7,
+          "quote": "陽一局\n甲乙丙丁戊己庚辛壬癸"
+        }
+      ],
+      "sourceContext": {
+        "printedJu": "陽一局",
+        "printedStemHeader": "甲乙丙丁戊己庚辛壬癸",
+        "printedColumn": 3,
+        "printedRow": 8,
+        "printedStarDoor": "沖傷",
+        "printedCell": "卯四一",
+        "readingMethod": "时柱由纸面共享十干行头与该格时支合读；数字由格中原数直接转录。"
+      },
+      "notes": [
+        "只核符星、使门与原宫数，不代表全九宫布局或应验。"
+      ]
+    },
+    {
+      "id": "QMTZ-NLC-P091-C03-R09",
+      "name": "文瑞本阳一局总表·壬辰时",
+      "inputBasis": "qimen-layout",
+      "input": {
+        "dun": "yang",
+        "ju": 1,
+        "timePillar": "壬辰"
+      },
+      "expected": {
+        "chiefStar": "天冲",
+        "chiefDoor": "伤门",
+        "starPalaceRaw": 5,
+        "doorPalaceRaw": 2
+      },
+      "expectationStatus": "clear",
+      "canRecompute": true,
+      "verified": false,
+      "sources": [
+        {
+          "paragraphId": "qimen-dunjia-tongzhi:nlc-layouts:P091:L039-L049",
+          "file": "sources/normalized/san-shi/qimen-dunjia-tongzhi/nlc-layouts.md",
+          "pdfPage": 91,
+          "pageStartLine": 48,
+          "pageEndLine": 48,
+          "quote": "辰五二"
+        },
+        {
+          "paragraphId": "qimen-dunjia-tongzhi:nlc-layouts:P091:L039-L049",
+          "file": "sources/normalized/san-shi/qimen-dunjia-tongzhi/nlc-layouts.md",
+          "pdfPage": 91,
+          "pageStartLine": 39,
+          "pageEndLine": 39,
+          "quote": "沖傷"
+        },
+        {
+          "paragraphId": "qimen-dunjia-tongzhi:nlc-layouts:P091:L006-L007",
+          "file": "sources/normalized/san-shi/qimen-dunjia-tongzhi/nlc-layouts.md",
+          "pdfPage": 91,
+          "pageStartLine": 6,
+          "pageEndLine": 7,
+          "quote": "陽一局\n甲乙丙丁戊己庚辛壬癸"
+        }
+      ],
+      "sourceContext": {
+        "printedJu": "陽一局",
+        "printedStemHeader": "甲乙丙丁戊己庚辛壬癸",
+        "printedColumn": 3,
+        "printedRow": 9,
+        "printedStarDoor": "沖傷",
+        "printedCell": "辰五二",
+        "readingMethod": "时柱由纸面共享十干行头与该格时支合读；数字由格中原数直接转录。"
+      },
+      "notes": [
+        "只核符星、使门与原宫数，不代表全九宫布局或应验。"
+      ]
+    },
+    {
+      "id": "QMTZ-NLC-P091-C03-R10",
+      "name": "文瑞本阳一局总表·癸巳时",
+      "inputBasis": "qimen-layout",
+      "input": {
+        "dun": "yang",
+        "ju": 1,
+        "timePillar": "癸巳"
+      },
+      "expected": {
+        "chiefStar": "天冲",
+        "chiefDoor": "伤门",
+        "starPalaceRaw": 6,
+        "doorPalaceRaw": 3
+      },
+      "expectationStatus": "clear",
+      "canRecompute": true,
+      "verified": false,
+      "sources": [
+        {
+          "paragraphId": "qimen-dunjia-tongzhi:nlc-layouts:P091:L039-L049",
+          "file": "sources/normalized/san-shi/qimen-dunjia-tongzhi/nlc-layouts.md",
+          "pdfPage": 91,
+          "pageStartLine": 49,
+          "pageEndLine": 49,
+          "quote": "巳六三"
+        },
+        {
+          "paragraphId": "qimen-dunjia-tongzhi:nlc-layouts:P091:L039-L049",
+          "file": "sources/normalized/san-shi/qimen-dunjia-tongzhi/nlc-layouts.md",
+          "pdfPage": 91,
+          "pageStartLine": 39,
+          "pageEndLine": 39,
+          "quote": "沖傷"
+        },
+        {
+          "paragraphId": "qimen-dunjia-tongzhi:nlc-layouts:P091:L006-L007",
+          "file": "sources/normalized/san-shi/qimen-dunjia-tongzhi/nlc-layouts.md",
+          "pdfPage": 91,
+          "pageStartLine": 6,
+          "pageEndLine": 7,
+          "quote": "陽一局\n甲乙丙丁戊己庚辛壬癸"
+        }
+      ],
+      "sourceContext": {
+        "printedJu": "陽一局",
+        "printedStemHeader": "甲乙丙丁戊己庚辛壬癸",
+        "printedColumn": 3,
+        "printedRow": 10,
+        "printedStarDoor": "沖傷",
+        "printedCell": "巳六三",
+        "readingMethod": "时柱由纸面共享十干行头与该格时支合读；数字由格中原数直接转录。"
+      },
+      "notes": [
+        "只核符星、使门与原宫数，不代表全九宫布局或应验。"
+      ]
+    },
+    {
+      "id": "QMTZ-NLC-P091-C04-R01",
+      "name": "文瑞本阳一局总表·甲午时",
+      "inputBasis": "qimen-layout",
+      "input": {
+        "dun": "yang",
+        "ju": 1,
+        "timePillar": "甲午"
+      },
+      "expected": {
+        "chiefStar": "天辅",
+        "chiefDoor": "杜门",
+        "starPalaceRaw": 4,
+        "doorPalaceRaw": 4
+      },
+      "expectationStatus": "clear",
+      "canRecompute": true,
+      "verified": false,
+      "sources": [
+        {
+          "paragraphId": "qimen-dunjia-tongzhi:nlc-layouts:P091:L053-L063",
+          "file": "sources/normalized/san-shi/qimen-dunjia-tongzhi/nlc-layouts.md",
+          "pdfPage": 91,
+          "pageStartLine": 54,
+          "pageEndLine": 54,
+          "quote": "午四四"
+        },
+        {
+          "paragraphId": "qimen-dunjia-tongzhi:nlc-layouts:P091:L053-L063",
+          "file": "sources/normalized/san-shi/qimen-dunjia-tongzhi/nlc-layouts.md",
+          "pdfPage": 91,
+          "pageStartLine": 53,
+          "pageEndLine": 53,
+          "quote": "輔杜"
+        },
+        {
+          "paragraphId": "qimen-dunjia-tongzhi:nlc-layouts:P091:L006-L007",
+          "file": "sources/normalized/san-shi/qimen-dunjia-tongzhi/nlc-layouts.md",
+          "pdfPage": 91,
+          "pageStartLine": 6,
+          "pageEndLine": 7,
+          "quote": "陽一局\n甲乙丙丁戊己庚辛壬癸"
+        }
+      ],
+      "sourceContext": {
+        "printedJu": "陽一局",
+        "printedStemHeader": "甲乙丙丁戊己庚辛壬癸",
+        "printedColumn": 4,
+        "printedRow": 1,
+        "printedStarDoor": "輔杜",
+        "printedCell": "午四四",
+        "readingMethod": "时柱由纸面共享十干行头与该格时支合读；数字由格中原数直接转录。"
+      },
+      "notes": [
+        "只核符星、使门与原宫数，不代表全九宫布局或应验。"
+      ]
+    },
+    {
+      "id": "QMTZ-NLC-P091-C04-R02",
+      "name": "文瑞本阳一局总表·乙未时",
+      "inputBasis": "qimen-layout",
+      "input": {
+        "dun": "yang",
+        "ju": 1,
+        "timePillar": "乙未"
+      },
+      "expected": {
+        "chiefStar": "天辅",
+        "chiefDoor": "杜门",
+        "starPalaceRaw": 9,
+        "doorPalaceRaw": 5
+      },
+      "expectationStatus": "clear",
+      "canRecompute": true,
+      "verified": false,
+      "sources": [
+        {
+          "paragraphId": "qimen-dunjia-tongzhi:nlc-layouts:P091:L053-L063",
+          "file": "sources/normalized/san-shi/qimen-dunjia-tongzhi/nlc-layouts.md",
+          "pdfPage": 91,
+          "pageStartLine": 55,
+          "pageEndLine": 55,
+          "quote": "未九五"
+        },
+        {
+          "paragraphId": "qimen-dunjia-tongzhi:nlc-layouts:P091:L053-L063",
+          "file": "sources/normalized/san-shi/qimen-dunjia-tongzhi/nlc-layouts.md",
+          "pdfPage": 91,
+          "pageStartLine": 53,
+          "pageEndLine": 53,
+          "quote": "輔杜"
+        },
+        {
+          "paragraphId": "qimen-dunjia-tongzhi:nlc-layouts:P091:L006-L007",
+          "file": "sources/normalized/san-shi/qimen-dunjia-tongzhi/nlc-layouts.md",
+          "pdfPage": 91,
+          "pageStartLine": 6,
+          "pageEndLine": 7,
+          "quote": "陽一局\n甲乙丙丁戊己庚辛壬癸"
+        }
+      ],
+      "sourceContext": {
+        "printedJu": "陽一局",
+        "printedStemHeader": "甲乙丙丁戊己庚辛壬癸",
+        "printedColumn": 4,
+        "printedRow": 2,
+        "printedStarDoor": "輔杜",
+        "printedCell": "未九五",
+        "readingMethod": "时柱由纸面共享十干行头与该格时支合读；数字由格中原数直接转录。"
+      },
+      "notes": [
+        "只核符星、使门与原宫数，不代表全九宫布局或应验。"
+      ]
+    },
+    {
+      "id": "QMTZ-NLC-P091-C04-R03",
+      "name": "文瑞本阳一局总表·丙申时",
+      "inputBasis": "qimen-layout",
+      "input": {
+        "dun": "yang",
+        "ju": 1,
+        "timePillar": "丙申"
+      },
+      "expected": {
+        "chiefStar": "天辅",
+        "chiefDoor": "杜门",
+        "starPalaceRaw": 8,
+        "doorPalaceRaw": 6
+      },
+      "expectationStatus": "clear",
+      "canRecompute": true,
+      "verified": false,
+      "sources": [
+        {
+          "paragraphId": "qimen-dunjia-tongzhi:nlc-layouts:P091:L053-L063",
+          "file": "sources/normalized/san-shi/qimen-dunjia-tongzhi/nlc-layouts.md",
+          "pdfPage": 91,
+          "pageStartLine": 56,
+          "pageEndLine": 56,
+          "quote": "申八六"
+        },
+        {
+          "paragraphId": "qimen-dunjia-tongzhi:nlc-layouts:P091:L053-L063",
+          "file": "sources/normalized/san-shi/qimen-dunjia-tongzhi/nlc-layouts.md",
+          "pdfPage": 91,
+          "pageStartLine": 53,
+          "pageEndLine": 53,
+          "quote": "輔杜"
+        },
+        {
+          "paragraphId": "qimen-dunjia-tongzhi:nlc-layouts:P091:L006-L007",
+          "file": "sources/normalized/san-shi/qimen-dunjia-tongzhi/nlc-layouts.md",
+          "pdfPage": 91,
+          "pageStartLine": 6,
+          "pageEndLine": 7,
+          "quote": "陽一局\n甲乙丙丁戊己庚辛壬癸"
+        }
+      ],
+      "sourceContext": {
+        "printedJu": "陽一局",
+        "printedStemHeader": "甲乙丙丁戊己庚辛壬癸",
+        "printedColumn": 4,
+        "printedRow": 3,
+        "printedStarDoor": "輔杜",
+        "printedCell": "申八六",
+        "readingMethod": "时柱由纸面共享十干行头与该格时支合读；数字由格中原数直接转录。"
+      },
+      "notes": [
+        "只核符星、使门与原宫数，不代表全九宫布局或应验。"
+      ]
+    },
+    {
+      "id": "QMTZ-NLC-P091-C04-R04",
+      "name": "文瑞本阳一局总表·丁酉时",
+      "inputBasis": "qimen-layout",
+      "input": {
+        "dun": "yang",
+        "ju": 1,
+        "timePillar": "丁酉"
+      },
+      "expected": {
+        "chiefStar": "天辅",
+        "chiefDoor": "杜门",
+        "starPalaceRaw": 7,
+        "doorPalaceRaw": 7
+      },
+      "expectationStatus": "clear",
+      "canRecompute": true,
+      "verified": false,
+      "sources": [
+        {
+          "paragraphId": "qimen-dunjia-tongzhi:nlc-layouts:P091:L053-L063",
+          "file": "sources/normalized/san-shi/qimen-dunjia-tongzhi/nlc-layouts.md",
+          "pdfPage": 91,
+          "pageStartLine": 57,
+          "pageEndLine": 57,
+          "quote": "酉七七"
+        },
+        {
+          "paragraphId": "qimen-dunjia-tongzhi:nlc-layouts:P091:L053-L063",
+          "file": "sources/normalized/san-shi/qimen-dunjia-tongzhi/nlc-layouts.md",
+          "pdfPage": 91,
+          "pageStartLine": 53,
+          "pageEndLine": 53,
+          "quote": "輔杜"
+        },
+        {
+          "paragraphId": "qimen-dunjia-tongzhi:nlc-layouts:P091:L006-L007",
+          "file": "sources/normalized/san-shi/qimen-dunjia-tongzhi/nlc-layouts.md",
+          "pdfPage": 91,
+          "pageStartLine": 6,
+          "pageEndLine": 7,
+          "quote": "陽一局\n甲乙丙丁戊己庚辛壬癸"
+        }
+      ],
+      "sourceContext": {
+        "printedJu": "陽一局",
+        "printedStemHeader": "甲乙丙丁戊己庚辛壬癸",
+        "printedColumn": 4,
+        "printedRow": 4,
+        "printedStarDoor": "輔杜",
+        "printedCell": "酉七七",
+        "readingMethod": "时柱由纸面共享十干行头与该格时支合读；数字由格中原数直接转录。"
+      },
+      "notes": [
+        "只核符星、使门与原宫数，不代表全九宫布局或应验。"
+      ]
+    },
+    {
+      "id": "QMTZ-NLC-P091-C04-R05",
+      "name": "文瑞本阳一局总表·戊戌时",
+      "inputBasis": "qimen-layout",
+      "input": {
+        "dun": "yang",
+        "ju": 1,
+        "timePillar": "戊戌"
+      },
+      "expected": {
+        "chiefStar": "天辅",
+        "chiefDoor": "杜门",
+        "starPalaceRaw": 1,
+        "doorPalaceRaw": 8
+      },
+      "expectationStatus": "clear",
+      "canRecompute": true,
+      "verified": false,
+      "sources": [
+        {
+          "paragraphId": "qimen-dunjia-tongzhi:nlc-layouts:P091:L053-L063",
+          "file": "sources/normalized/san-shi/qimen-dunjia-tongzhi/nlc-layouts.md",
+          "pdfPage": 91,
+          "pageStartLine": 58,
+          "pageEndLine": 58,
+          "quote": "戌一八"
+        },
+        {
+          "paragraphId": "qimen-dunjia-tongzhi:nlc-layouts:P091:L053-L063",
+          "file": "sources/normalized/san-shi/qimen-dunjia-tongzhi/nlc-layouts.md",
+          "pdfPage": 91,
+          "pageStartLine": 53,
+          "pageEndLine": 53,
+          "quote": "輔杜"
+        },
+        {
+          "paragraphId": "qimen-dunjia-tongzhi:nlc-layouts:P091:L006-L007",
+          "file": "sources/normalized/san-shi/qimen-dunjia-tongzhi/nlc-layouts.md",
+          "pdfPage": 91,
+          "pageStartLine": 6,
+          "pageEndLine": 7,
+          "quote": "陽一局\n甲乙丙丁戊己庚辛壬癸"
+        },
+        {
+          "paragraphId": "qimen-dunjia-tongzhi:nlc-layouts:P099:L006-L008",
+          "file": "sources/normalized/san-shi/qimen-dunjia-tongzhi/nlc-layouts.md",
+          "pdfPage": 99,
+          "pageStartLine": 6,
+          "pageEndLine": 8,
+          "quote": "戊戌\n輔杜\n八"
+        }
+      ],
+      "sourceContext": {
+        "printedJu": "陽一局",
+        "printedStemHeader": "甲乙丙丁戊己庚辛壬癸",
+        "printedColumn": 4,
+        "printedRow": 5,
+        "printedStarDoor": "輔杜",
+        "printedCell": "戌一八",
+        "readingMethod": "时柱由纸面共享十干行头与该格时支合读；数字由格中原数直接转录。"
+      },
+      "notes": [
+        "只核符星、使门与原宫数，不代表全九宫布局或应验。"
+      ]
+    },
+    {
+      "id": "QMTZ-NLC-P091-C04-R06",
+      "name": "文瑞本阳一局总表·己亥时",
+      "inputBasis": "qimen-layout",
+      "input": {
+        "dun": "yang",
+        "ju": 1,
+        "timePillar": "己亥"
+      },
+      "expected": {
+        "chiefStar": "天辅",
+        "chiefDoor": "杜门",
+        "starPalaceRaw": 2,
+        "doorPalaceRaw": 9
+      },
+      "expectationStatus": "source-conflict",
+      "canRecompute": true,
+      "verified": false,
+      "sources": [
+        {
+          "paragraphId": "qimen-dunjia-tongzhi:nlc-layouts:P091:L053-L063",
+          "file": "sources/normalized/san-shi/qimen-dunjia-tongzhi/nlc-layouts.md",
+          "pdfPage": 91,
+          "pageStartLine": 59,
+          "pageEndLine": 59,
+          "quote": "亥二九"
+        },
+        {
+          "paragraphId": "qimen-dunjia-tongzhi:nlc-layouts:P091:L053-L063",
+          "file": "sources/normalized/san-shi/qimen-dunjia-tongzhi/nlc-layouts.md",
+          "pdfPage": 91,
+          "pageStartLine": 53,
+          "pageEndLine": 53,
+          "quote": "輔杜"
+        },
+        {
+          "paragraphId": "qimen-dunjia-tongzhi:nlc-layouts:P091:L006-L007",
+          "file": "sources/normalized/san-shi/qimen-dunjia-tongzhi/nlc-layouts.md",
+          "pdfPage": 91,
+          "pageStartLine": 6,
+          "pageEndLine": 7,
+          "quote": "陽一局\n甲乙丙丁戊己庚辛壬癸"
+        },
+        {
+          "paragraphId": "qimen-dunjia-tongzhi:nlc-layouts:P099:L012-L014",
+          "file": "sources/normalized/san-shi/qimen-dunjia-tongzhi/nlc-layouts.md",
+          "pdfPage": 99,
+          "pageStartLine": 12,
+          "pageEndLine": 14,
+          "quote": "己亥\n輔杜\n一九"
+        }
+      ],
+      "sourceContext": {
+        "printedJu": "陽一局",
+        "printedStemHeader": "甲乙丙丁戊己庚辛壬癸",
+        "printedColumn": 4,
+        "printedRow": 6,
+        "printedStarDoor": "輔杜",
+        "printedCell": "亥二九",
+        "readingMethod": "时柱由纸面共享十干行头与该格时支合读；数字由格中原数直接转录。"
+      },
+      "notes": [
+        "只核符星、使门与原宫数，不代表全九宫布局或应验。",
+        "己亥总表二九、逐时条一九，原期望冲突未决。"
+      ]
+    },
+    {
+      "id": "QMTZ-NLC-P091-C04-R07",
+      "name": "文瑞本阳一局总表·庚子时",
+      "inputBasis": "qimen-layout",
+      "input": {
+        "dun": "yang",
+        "ju": 1,
+        "timePillar": "庚子"
+      },
+      "expected": {
+        "chiefStar": "天辅",
+        "chiefDoor": "杜门",
+        "starPalaceRaw": 3,
+        "doorPalaceRaw": 1
+      },
+      "expectationStatus": "clear",
+      "canRecompute": true,
+      "verified": false,
+      "sources": [
+        {
+          "paragraphId": "qimen-dunjia-tongzhi:nlc-layouts:P091:L053-L063",
+          "file": "sources/normalized/san-shi/qimen-dunjia-tongzhi/nlc-layouts.md",
+          "pdfPage": 91,
+          "pageStartLine": 60,
+          "pageEndLine": 60,
+          "quote": "子三一"
+        },
+        {
+          "paragraphId": "qimen-dunjia-tongzhi:nlc-layouts:P091:L053-L063",
+          "file": "sources/normalized/san-shi/qimen-dunjia-tongzhi/nlc-layouts.md",
+          "pdfPage": 91,
+          "pageStartLine": 53,
+          "pageEndLine": 53,
+          "quote": "輔杜"
+        },
+        {
+          "paragraphId": "qimen-dunjia-tongzhi:nlc-layouts:P091:L006-L007",
+          "file": "sources/normalized/san-shi/qimen-dunjia-tongzhi/nlc-layouts.md",
+          "pdfPage": 91,
+          "pageStartLine": 6,
+          "pageEndLine": 7,
+          "quote": "陽一局\n甲乙丙丁戊己庚辛壬癸"
+        }
+      ],
+      "sourceContext": {
+        "printedJu": "陽一局",
+        "printedStemHeader": "甲乙丙丁戊己庚辛壬癸",
+        "printedColumn": 4,
+        "printedRow": 7,
+        "printedStarDoor": "輔杜",
+        "printedCell": "子三一",
+        "readingMethod": "时柱由纸面共享十干行头与该格时支合读；数字由格中原数直接转录。"
+      },
+      "notes": [
+        "只核符星、使门与原宫数，不代表全九宫布局或应验。"
+      ]
+    },
+    {
+      "id": "QMTZ-NLC-P091-C04-R08",
+      "name": "文瑞本阳一局总表·辛丑时",
+      "inputBasis": "qimen-layout",
+      "input": {
+        "dun": "yang",
+        "ju": 1,
+        "timePillar": "辛丑"
+      },
+      "expected": {
+        "chiefStar": "天辅",
+        "chiefDoor": "杜门",
+        "starPalaceRaw": 4,
+        "doorPalaceRaw": 2
+      },
+      "expectationStatus": "clear",
+      "canRecompute": true,
+      "verified": false,
+      "sources": [
+        {
+          "paragraphId": "qimen-dunjia-tongzhi:nlc-layouts:P091:L053-L063",
+          "file": "sources/normalized/san-shi/qimen-dunjia-tongzhi/nlc-layouts.md",
+          "pdfPage": 91,
+          "pageStartLine": 61,
+          "pageEndLine": 61,
+          "quote": "丑四二"
+        },
+        {
+          "paragraphId": "qimen-dunjia-tongzhi:nlc-layouts:P091:L053-L063",
+          "file": "sources/normalized/san-shi/qimen-dunjia-tongzhi/nlc-layouts.md",
+          "pdfPage": 91,
+          "pageStartLine": 53,
+          "pageEndLine": 53,
+          "quote": "輔杜"
+        },
+        {
+          "paragraphId": "qimen-dunjia-tongzhi:nlc-layouts:P091:L006-L007",
+          "file": "sources/normalized/san-shi/qimen-dunjia-tongzhi/nlc-layouts.md",
+          "pdfPage": 91,
+          "pageStartLine": 6,
+          "pageEndLine": 7,
+          "quote": "陽一局\n甲乙丙丁戊己庚辛壬癸"
+        }
+      ],
+      "sourceContext": {
+        "printedJu": "陽一局",
+        "printedStemHeader": "甲乙丙丁戊己庚辛壬癸",
+        "printedColumn": 4,
+        "printedRow": 8,
+        "printedStarDoor": "輔杜",
+        "printedCell": "丑四二",
+        "readingMethod": "时柱由纸面共享十干行头与该格时支合读；数字由格中原数直接转录。"
+      },
+      "notes": [
+        "只核符星、使门与原宫数，不代表全九宫布局或应验。"
+      ]
+    },
+    {
+      "id": "QMTZ-NLC-P091-C04-R09",
+      "name": "文瑞本阳一局总表·壬寅时",
+      "inputBasis": "qimen-layout",
+      "input": {
+        "dun": "yang",
+        "ju": 1,
+        "timePillar": "壬寅"
+      },
+      "expected": {
+        "chiefStar": "天辅",
+        "chiefDoor": "杜门",
+        "starPalaceRaw": 5,
+        "doorPalaceRaw": 3
+      },
+      "expectationStatus": "clear",
+      "canRecompute": true,
+      "verified": false,
+      "sources": [
+        {
+          "paragraphId": "qimen-dunjia-tongzhi:nlc-layouts:P091:L053-L063",
+          "file": "sources/normalized/san-shi/qimen-dunjia-tongzhi/nlc-layouts.md",
+          "pdfPage": 91,
+          "pageStartLine": 62,
+          "pageEndLine": 62,
+          "quote": "寅五三"
+        },
+        {
+          "paragraphId": "qimen-dunjia-tongzhi:nlc-layouts:P091:L053-L063",
+          "file": "sources/normalized/san-shi/qimen-dunjia-tongzhi/nlc-layouts.md",
+          "pdfPage": 91,
+          "pageStartLine": 53,
+          "pageEndLine": 53,
+          "quote": "輔杜"
+        },
+        {
+          "paragraphId": "qimen-dunjia-tongzhi:nlc-layouts:P091:L006-L007",
+          "file": "sources/normalized/san-shi/qimen-dunjia-tongzhi/nlc-layouts.md",
+          "pdfPage": 91,
+          "pageStartLine": 6,
+          "pageEndLine": 7,
+          "quote": "陽一局\n甲乙丙丁戊己庚辛壬癸"
+        }
+      ],
+      "sourceContext": {
+        "printedJu": "陽一局",
+        "printedStemHeader": "甲乙丙丁戊己庚辛壬癸",
+        "printedColumn": 4,
+        "printedRow": 9,
+        "printedStarDoor": "輔杜",
+        "printedCell": "寅五三",
+        "readingMethod": "时柱由纸面共享十干行头与该格时支合读；数字由格中原数直接转录。"
+      },
+      "notes": [
+        "只核符星、使门与原宫数，不代表全九宫布局或应验。"
+      ]
+    },
+    {
+      "id": "QMTZ-NLC-P091-C04-R10",
+      "name": "文瑞本阳一局总表·癸卯时",
+      "inputBasis": "qimen-layout",
+      "input": {
+        "dun": "yang",
+        "ju": 1,
+        "timePillar": "癸卯"
+      },
+      "expected": {
+        "chiefStar": "天辅",
+        "chiefDoor": "杜门",
+        "starPalaceRaw": 6,
+        "doorPalaceRaw": 4
+      },
+      "expectationStatus": "clear",
+      "canRecompute": true,
+      "verified": false,
+      "sources": [
+        {
+          "paragraphId": "qimen-dunjia-tongzhi:nlc-layouts:P091:L053-L063",
+          "file": "sources/normalized/san-shi/qimen-dunjia-tongzhi/nlc-layouts.md",
+          "pdfPage": 91,
+          "pageStartLine": 63,
+          "pageEndLine": 63,
+          "quote": "卯六四"
+        },
+        {
+          "paragraphId": "qimen-dunjia-tongzhi:nlc-layouts:P091:L053-L063",
+          "file": "sources/normalized/san-shi/qimen-dunjia-tongzhi/nlc-layouts.md",
+          "pdfPage": 91,
+          "pageStartLine": 53,
+          "pageEndLine": 53,
+          "quote": "輔杜"
+        },
+        {
+          "paragraphId": "qimen-dunjia-tongzhi:nlc-layouts:P091:L006-L007",
+          "file": "sources/normalized/san-shi/qimen-dunjia-tongzhi/nlc-layouts.md",
+          "pdfPage": 91,
+          "pageStartLine": 6,
+          "pageEndLine": 7,
+          "quote": "陽一局\n甲乙丙丁戊己庚辛壬癸"
+        }
+      ],
+      "sourceContext": {
+        "printedJu": "陽一局",
+        "printedStemHeader": "甲乙丙丁戊己庚辛壬癸",
+        "printedColumn": 4,
+        "printedRow": 10,
+        "printedStarDoor": "輔杜",
+        "printedCell": "卯六四",
+        "readingMethod": "时柱由纸面共享十干行头与该格时支合读；数字由格中原数直接转录。"
+      },
+      "notes": [
+        "只核符星、使门与原宫数，不代表全九宫布局或应验。"
+      ]
+    },
+    {
+      "id": "QMTZ-NLC-P091-C05-R01",
+      "name": "文瑞本阳一局总表·甲辰时",
+      "inputBasis": "qimen-layout",
+      "input": {
+        "dun": "yang",
+        "ju": 1,
+        "timePillar": "甲辰"
+      },
+      "expected": {
+        "chiefStar": "天禽",
+        "chiefDoor": "死门",
+        "starPalaceRaw": 5,
+        "doorPalaceRaw": 5
+      },
+      "expectationStatus": "clear",
+      "canRecompute": true,
+      "verified": false,
+      "sources": [
+        {
+          "paragraphId": "qimen-dunjia-tongzhi:nlc-layouts:P091:L067-L077",
+          "file": "sources/normalized/san-shi/qimen-dunjia-tongzhi/nlc-layouts.md",
+          "pdfPage": 91,
+          "pageStartLine": 68,
+          "pageEndLine": 68,
+          "quote": "辰五五"
+        },
+        {
+          "paragraphId": "qimen-dunjia-tongzhi:nlc-layouts:P091:L067-L077",
+          "file": "sources/normalized/san-shi/qimen-dunjia-tongzhi/nlc-layouts.md",
+          "pdfPage": 91,
+          "pageStartLine": 67,
+          "pageEndLine": 67,
+          "quote": "禽死"
+        },
+        {
+          "paragraphId": "qimen-dunjia-tongzhi:nlc-layouts:P091:L006-L007",
+          "file": "sources/normalized/san-shi/qimen-dunjia-tongzhi/nlc-layouts.md",
+          "pdfPage": 91,
+          "pageStartLine": 6,
+          "pageEndLine": 7,
+          "quote": "陽一局\n甲乙丙丁戊己庚辛壬癸"
+        }
+      ],
+      "sourceContext": {
+        "printedJu": "陽一局",
+        "printedStemHeader": "甲乙丙丁戊己庚辛壬癸",
+        "printedColumn": 5,
+        "printedRow": 1,
+        "printedStarDoor": "禽死",
+        "printedCell": "辰五五",
+        "readingMethod": "时柱由纸面共享十干行头与该格时支合读；数字由格中原数直接转录。"
+      },
+      "notes": [
+        "只核符星、使门与原宫数，不代表全九宫布局或应验。"
+      ]
+    },
+    {
+      "id": "QMTZ-NLC-P091-C05-R02",
+      "name": "文瑞本阳一局总表·乙巳时",
+      "inputBasis": "qimen-layout",
+      "input": {
+        "dun": "yang",
+        "ju": 1,
+        "timePillar": "乙巳"
+      },
+      "expected": {
+        "chiefStar": "天禽",
+        "chiefDoor": "死门",
+        "starPalaceRaw": 9,
+        "doorPalaceRaw": 6
+      },
+      "expectationStatus": "clear",
+      "canRecompute": true,
+      "verified": false,
+      "sources": [
+        {
+          "paragraphId": "qimen-dunjia-tongzhi:nlc-layouts:P091:L067-L077",
+          "file": "sources/normalized/san-shi/qimen-dunjia-tongzhi/nlc-layouts.md",
+          "pdfPage": 91,
+          "pageStartLine": 69,
+          "pageEndLine": 69,
+          "quote": "巳九六"
+        },
+        {
+          "paragraphId": "qimen-dunjia-tongzhi:nlc-layouts:P091:L067-L077",
+          "file": "sources/normalized/san-shi/qimen-dunjia-tongzhi/nlc-layouts.md",
+          "pdfPage": 91,
+          "pageStartLine": 67,
+          "pageEndLine": 67,
+          "quote": "禽死"
+        },
+        {
+          "paragraphId": "qimen-dunjia-tongzhi:nlc-layouts:P091:L006-L007",
+          "file": "sources/normalized/san-shi/qimen-dunjia-tongzhi/nlc-layouts.md",
+          "pdfPage": 91,
+          "pageStartLine": 6,
+          "pageEndLine": 7,
+          "quote": "陽一局\n甲乙丙丁戊己庚辛壬癸"
+        }
+      ],
+      "sourceContext": {
+        "printedJu": "陽一局",
+        "printedStemHeader": "甲乙丙丁戊己庚辛壬癸",
+        "printedColumn": 5,
+        "printedRow": 2,
+        "printedStarDoor": "禽死",
+        "printedCell": "巳九六",
+        "readingMethod": "时柱由纸面共享十干行头与该格时支合读；数字由格中原数直接转录。"
+      },
+      "notes": [
+        "只核符星、使门与原宫数，不代表全九宫布局或应验。"
+      ]
+    },
+    {
+      "id": "QMTZ-NLC-P091-C05-R03",
+      "name": "文瑞本阳一局总表·丙午时",
+      "inputBasis": "qimen-layout",
+      "input": {
+        "dun": "yang",
+        "ju": 1,
+        "timePillar": "丙午"
+      },
+      "expected": {
+        "chiefStar": "天禽",
+        "chiefDoor": "死门",
+        "starPalaceRaw": 8,
+        "doorPalaceRaw": 7
+      },
+      "expectationStatus": "clear",
+      "canRecompute": true,
+      "verified": false,
+      "sources": [
+        {
+          "paragraphId": "qimen-dunjia-tongzhi:nlc-layouts:P091:L067-L077",
+          "file": "sources/normalized/san-shi/qimen-dunjia-tongzhi/nlc-layouts.md",
+          "pdfPage": 91,
+          "pageStartLine": 70,
+          "pageEndLine": 70,
+          "quote": "午八七"
+        },
+        {
+          "paragraphId": "qimen-dunjia-tongzhi:nlc-layouts:P091:L067-L077",
+          "file": "sources/normalized/san-shi/qimen-dunjia-tongzhi/nlc-layouts.md",
+          "pdfPage": 91,
+          "pageStartLine": 67,
+          "pageEndLine": 67,
+          "quote": "禽死"
+        },
+        {
+          "paragraphId": "qimen-dunjia-tongzhi:nlc-layouts:P091:L006-L007",
+          "file": "sources/normalized/san-shi/qimen-dunjia-tongzhi/nlc-layouts.md",
+          "pdfPage": 91,
+          "pageStartLine": 6,
+          "pageEndLine": 7,
+          "quote": "陽一局\n甲乙丙丁戊己庚辛壬癸"
+        }
+      ],
+      "sourceContext": {
+        "printedJu": "陽一局",
+        "printedStemHeader": "甲乙丙丁戊己庚辛壬癸",
+        "printedColumn": 5,
+        "printedRow": 3,
+        "printedStarDoor": "禽死",
+        "printedCell": "午八七",
+        "readingMethod": "时柱由纸面共享十干行头与该格时支合读；数字由格中原数直接转录。"
+      },
+      "notes": [
+        "只核符星、使门与原宫数，不代表全九宫布局或应验。"
+      ]
+    },
+    {
+      "id": "QMTZ-NLC-P091-C05-R04",
+      "name": "文瑞本阳一局总表·丁未时",
+      "inputBasis": "qimen-layout",
+      "input": {
+        "dun": "yang",
+        "ju": 1,
+        "timePillar": "丁未"
+      },
+      "expected": {
+        "chiefStar": "天禽",
+        "chiefDoor": "死门",
+        "starPalaceRaw": 7,
+        "doorPalaceRaw": 8
+      },
+      "expectationStatus": "clear",
+      "canRecompute": true,
+      "verified": false,
+      "sources": [
+        {
+          "paragraphId": "qimen-dunjia-tongzhi:nlc-layouts:P091:L067-L077",
+          "file": "sources/normalized/san-shi/qimen-dunjia-tongzhi/nlc-layouts.md",
+          "pdfPage": 91,
+          "pageStartLine": 71,
+          "pageEndLine": 71,
+          "quote": "未七八"
+        },
+        {
+          "paragraphId": "qimen-dunjia-tongzhi:nlc-layouts:P091:L067-L077",
+          "file": "sources/normalized/san-shi/qimen-dunjia-tongzhi/nlc-layouts.md",
+          "pdfPage": 91,
+          "pageStartLine": 67,
+          "pageEndLine": 67,
+          "quote": "禽死"
+        },
+        {
+          "paragraphId": "qimen-dunjia-tongzhi:nlc-layouts:P091:L006-L007",
+          "file": "sources/normalized/san-shi/qimen-dunjia-tongzhi/nlc-layouts.md",
+          "pdfPage": 91,
+          "pageStartLine": 6,
+          "pageEndLine": 7,
+          "quote": "陽一局\n甲乙丙丁戊己庚辛壬癸"
+        }
+      ],
+      "sourceContext": {
+        "printedJu": "陽一局",
+        "printedStemHeader": "甲乙丙丁戊己庚辛壬癸",
+        "printedColumn": 5,
+        "printedRow": 4,
+        "printedStarDoor": "禽死",
+        "printedCell": "未七八",
+        "readingMethod": "时柱由纸面共享十干行头与该格时支合读；数字由格中原数直接转录。"
+      },
+      "notes": [
+        "只核符星、使门与原宫数，不代表全九宫布局或应验。"
+      ]
+    },
+    {
+      "id": "QMTZ-NLC-P091-C05-R05",
+      "name": "文瑞本阳一局总表·戊申时",
+      "inputBasis": "qimen-layout",
+      "input": {
+        "dun": "yang",
+        "ju": 1,
+        "timePillar": "戊申"
+      },
+      "expected": {
+        "chiefStar": "天禽",
+        "chiefDoor": "死门",
+        "starPalaceRaw": 1,
+        "doorPalaceRaw": 9
+      },
+      "expectationStatus": "clear",
+      "canRecompute": true,
+      "verified": false,
+      "sources": [
+        {
+          "paragraphId": "qimen-dunjia-tongzhi:nlc-layouts:P091:L067-L077",
+          "file": "sources/normalized/san-shi/qimen-dunjia-tongzhi/nlc-layouts.md",
+          "pdfPage": 91,
+          "pageStartLine": 72,
+          "pageEndLine": 72,
+          "quote": "申一九"
+        },
+        {
+          "paragraphId": "qimen-dunjia-tongzhi:nlc-layouts:P091:L067-L077",
+          "file": "sources/normalized/san-shi/qimen-dunjia-tongzhi/nlc-layouts.md",
+          "pdfPage": 91,
+          "pageStartLine": 67,
+          "pageEndLine": 67,
+          "quote": "禽死"
+        },
+        {
+          "paragraphId": "qimen-dunjia-tongzhi:nlc-layouts:P091:L006-L007",
+          "file": "sources/normalized/san-shi/qimen-dunjia-tongzhi/nlc-layouts.md",
+          "pdfPage": 91,
+          "pageStartLine": 6,
+          "pageEndLine": 7,
+          "quote": "陽一局\n甲乙丙丁戊己庚辛壬癸"
+        }
+      ],
+      "sourceContext": {
+        "printedJu": "陽一局",
+        "printedStemHeader": "甲乙丙丁戊己庚辛壬癸",
+        "printedColumn": 5,
+        "printedRow": 5,
+        "printedStarDoor": "禽死",
+        "printedCell": "申一九",
+        "readingMethod": "时柱由纸面共享十干行头与该格时支合读；数字由格中原数直接转录。"
+      },
+      "notes": [
+        "只核符星、使门与原宫数，不代表全九宫布局或应验。"
+      ]
+    },
+    {
+      "id": "QMTZ-NLC-P091-C05-R06",
+      "name": "文瑞本阳一局总表·己酉时",
+      "inputBasis": "qimen-layout",
+      "input": {
+        "dun": "yang",
+        "ju": 1,
+        "timePillar": "己酉"
+      },
+      "expected": {
+        "chiefStar": "天禽",
+        "chiefDoor": "死门",
+        "starPalaceRaw": 2,
+        "doorPalaceRaw": 1
+      },
+      "expectationStatus": "clear",
+      "canRecompute": true,
+      "verified": false,
+      "sources": [
+        {
+          "paragraphId": "qimen-dunjia-tongzhi:nlc-layouts:P091:L067-L077",
+          "file": "sources/normalized/san-shi/qimen-dunjia-tongzhi/nlc-layouts.md",
+          "pdfPage": 91,
+          "pageStartLine": 73,
+          "pageEndLine": 73,
+          "quote": "酉二一"
+        },
+        {
+          "paragraphId": "qimen-dunjia-tongzhi:nlc-layouts:P091:L067-L077",
+          "file": "sources/normalized/san-shi/qimen-dunjia-tongzhi/nlc-layouts.md",
+          "pdfPage": 91,
+          "pageStartLine": 67,
+          "pageEndLine": 67,
+          "quote": "禽死"
+        },
+        {
+          "paragraphId": "qimen-dunjia-tongzhi:nlc-layouts:P091:L006-L007",
+          "file": "sources/normalized/san-shi/qimen-dunjia-tongzhi/nlc-layouts.md",
+          "pdfPage": 91,
+          "pageStartLine": 6,
+          "pageEndLine": 7,
+          "quote": "陽一局\n甲乙丙丁戊己庚辛壬癸"
+        }
+      ],
+      "sourceContext": {
+        "printedJu": "陽一局",
+        "printedStemHeader": "甲乙丙丁戊己庚辛壬癸",
+        "printedColumn": 5,
+        "printedRow": 6,
+        "printedStarDoor": "禽死",
+        "printedCell": "酉二一",
+        "readingMethod": "时柱由纸面共享十干行头与该格时支合读；数字由格中原数直接转录。"
+      },
+      "notes": [
+        "只核符星、使门与原宫数，不代表全九宫布局或应验。"
+      ]
+    },
+    {
+      "id": "QMTZ-NLC-P091-C05-R07",
+      "name": "文瑞本阳一局总表·庚戌时",
+      "inputBasis": "qimen-layout",
+      "input": {
+        "dun": "yang",
+        "ju": 1,
+        "timePillar": "庚戌"
+      },
+      "expected": {
+        "chiefStar": "天禽",
+        "chiefDoor": "死门",
+        "starPalaceRaw": 3,
+        "doorPalaceRaw": 2
+      },
+      "expectationStatus": "clear",
+      "canRecompute": true,
+      "verified": false,
+      "sources": [
+        {
+          "paragraphId": "qimen-dunjia-tongzhi:nlc-layouts:P091:L067-L077",
+          "file": "sources/normalized/san-shi/qimen-dunjia-tongzhi/nlc-layouts.md",
+          "pdfPage": 91,
+          "pageStartLine": 74,
+          "pageEndLine": 74,
+          "quote": "戌三二"
+        },
+        {
+          "paragraphId": "qimen-dunjia-tongzhi:nlc-layouts:P091:L067-L077",
+          "file": "sources/normalized/san-shi/qimen-dunjia-tongzhi/nlc-layouts.md",
+          "pdfPage": 91,
+          "pageStartLine": 67,
+          "pageEndLine": 67,
+          "quote": "禽死"
+        },
+        {
+          "paragraphId": "qimen-dunjia-tongzhi:nlc-layouts:P091:L006-L007",
+          "file": "sources/normalized/san-shi/qimen-dunjia-tongzhi/nlc-layouts.md",
+          "pdfPage": 91,
+          "pageStartLine": 6,
+          "pageEndLine": 7,
+          "quote": "陽一局\n甲乙丙丁戊己庚辛壬癸"
+        }
+      ],
+      "sourceContext": {
+        "printedJu": "陽一局",
+        "printedStemHeader": "甲乙丙丁戊己庚辛壬癸",
+        "printedColumn": 5,
+        "printedRow": 7,
+        "printedStarDoor": "禽死",
+        "printedCell": "戌三二",
+        "readingMethod": "时柱由纸面共享十干行头与该格时支合读；数字由格中原数直接转录。"
+      },
+      "notes": [
+        "只核符星、使门与原宫数，不代表全九宫布局或应验。"
+      ]
+    },
+    {
+      "id": "QMTZ-NLC-P091-C05-R08",
+      "name": "文瑞本阳一局总表·辛亥时",
+      "inputBasis": "qimen-layout",
+      "input": {
+        "dun": "yang",
+        "ju": 1,
+        "timePillar": "辛亥"
+      },
+      "expected": {
+        "chiefStar": "天禽",
+        "chiefDoor": "死门",
+        "starPalaceRaw": 4,
+        "doorPalaceRaw": 3
+      },
+      "expectationStatus": "clear",
+      "canRecompute": true,
+      "verified": false,
+      "sources": [
+        {
+          "paragraphId": "qimen-dunjia-tongzhi:nlc-layouts:P091:L067-L077",
+          "file": "sources/normalized/san-shi/qimen-dunjia-tongzhi/nlc-layouts.md",
+          "pdfPage": 91,
+          "pageStartLine": 75,
+          "pageEndLine": 75,
+          "quote": "亥四三"
+        },
+        {
+          "paragraphId": "qimen-dunjia-tongzhi:nlc-layouts:P091:L067-L077",
+          "file": "sources/normalized/san-shi/qimen-dunjia-tongzhi/nlc-layouts.md",
+          "pdfPage": 91,
+          "pageStartLine": 67,
+          "pageEndLine": 67,
+          "quote": "禽死"
+        },
+        {
+          "paragraphId": "qimen-dunjia-tongzhi:nlc-layouts:P091:L006-L007",
+          "file": "sources/normalized/san-shi/qimen-dunjia-tongzhi/nlc-layouts.md",
+          "pdfPage": 91,
+          "pageStartLine": 6,
+          "pageEndLine": 7,
+          "quote": "陽一局\n甲乙丙丁戊己庚辛壬癸"
+        }
+      ],
+      "sourceContext": {
+        "printedJu": "陽一局",
+        "printedStemHeader": "甲乙丙丁戊己庚辛壬癸",
+        "printedColumn": 5,
+        "printedRow": 8,
+        "printedStarDoor": "禽死",
+        "printedCell": "亥四三",
+        "readingMethod": "时柱由纸面共享十干行头与该格时支合读；数字由格中原数直接转录。"
+      },
+      "notes": [
+        "只核符星、使门与原宫数，不代表全九宫布局或应验。"
+      ]
+    },
+    {
+      "id": "QMTZ-NLC-P091-C05-R09",
+      "name": "文瑞本阳一局总表·壬子时",
+      "inputBasis": "qimen-layout",
+      "input": {
+        "dun": "yang",
+        "ju": 1,
+        "timePillar": "壬子"
+      },
+      "expected": {
+        "chiefStar": "天禽",
+        "chiefDoor": "死门",
+        "starPalaceRaw": 5,
+        "doorPalaceRaw": 4
+      },
+      "expectationStatus": "clear",
+      "canRecompute": true,
+      "verified": false,
+      "sources": [
+        {
+          "paragraphId": "qimen-dunjia-tongzhi:nlc-layouts:P091:L067-L077",
+          "file": "sources/normalized/san-shi/qimen-dunjia-tongzhi/nlc-layouts.md",
+          "pdfPage": 91,
+          "pageStartLine": 76,
+          "pageEndLine": 76,
+          "quote": "子五四"
+        },
+        {
+          "paragraphId": "qimen-dunjia-tongzhi:nlc-layouts:P091:L067-L077",
+          "file": "sources/normalized/san-shi/qimen-dunjia-tongzhi/nlc-layouts.md",
+          "pdfPage": 91,
+          "pageStartLine": 67,
+          "pageEndLine": 67,
+          "quote": "禽死"
+        },
+        {
+          "paragraphId": "qimen-dunjia-tongzhi:nlc-layouts:P091:L006-L007",
+          "file": "sources/normalized/san-shi/qimen-dunjia-tongzhi/nlc-layouts.md",
+          "pdfPage": 91,
+          "pageStartLine": 6,
+          "pageEndLine": 7,
+          "quote": "陽一局\n甲乙丙丁戊己庚辛壬癸"
+        }
+      ],
+      "sourceContext": {
+        "printedJu": "陽一局",
+        "printedStemHeader": "甲乙丙丁戊己庚辛壬癸",
+        "printedColumn": 5,
+        "printedRow": 9,
+        "printedStarDoor": "禽死",
+        "printedCell": "子五四",
+        "readingMethod": "时柱由纸面共享十干行头与该格时支合读；数字由格中原数直接转录。"
+      },
+      "notes": [
+        "只核符星、使门与原宫数，不代表全九宫布局或应验。"
+      ]
+    },
+    {
+      "id": "QMTZ-NLC-P091-C05-R10",
+      "name": "文瑞本阳一局总表·癸丑时",
+      "inputBasis": "qimen-layout",
+      "input": {
+        "dun": "yang",
+        "ju": 1,
+        "timePillar": "癸丑"
+      },
+      "expected": {
+        "chiefStar": "天禽",
+        "chiefDoor": "死门",
+        "starPalaceRaw": 6,
+        "doorPalaceRaw": 5
+      },
+      "expectationStatus": "clear",
+      "canRecompute": true,
+      "verified": false,
+      "sources": [
+        {
+          "paragraphId": "qimen-dunjia-tongzhi:nlc-layouts:P091:L067-L077",
+          "file": "sources/normalized/san-shi/qimen-dunjia-tongzhi/nlc-layouts.md",
+          "pdfPage": 91,
+          "pageStartLine": 77,
+          "pageEndLine": 77,
+          "quote": "丑六五"
+        },
+        {
+          "paragraphId": "qimen-dunjia-tongzhi:nlc-layouts:P091:L067-L077",
+          "file": "sources/normalized/san-shi/qimen-dunjia-tongzhi/nlc-layouts.md",
+          "pdfPage": 91,
+          "pageStartLine": 67,
+          "pageEndLine": 67,
+          "quote": "禽死"
+        },
+        {
+          "paragraphId": "qimen-dunjia-tongzhi:nlc-layouts:P091:L006-L007",
+          "file": "sources/normalized/san-shi/qimen-dunjia-tongzhi/nlc-layouts.md",
+          "pdfPage": 91,
+          "pageStartLine": 6,
+          "pageEndLine": 7,
+          "quote": "陽一局\n甲乙丙丁戊己庚辛壬癸"
+        }
+      ],
+      "sourceContext": {
+        "printedJu": "陽一局",
+        "printedStemHeader": "甲乙丙丁戊己庚辛壬癸",
+        "printedColumn": 5,
+        "printedRow": 10,
+        "printedStarDoor": "禽死",
+        "printedCell": "丑六五",
+        "readingMethod": "时柱由纸面共享十干行头与该格时支合读；数字由格中原数直接转录。"
+      },
+      "notes": [
+        "只核符星、使门与原宫数，不代表全九宫布局或应验。"
+      ]
+    },
+    {
+      "id": "QMTZ-NLC-P091-C06-R01",
+      "name": "文瑞本阳一局总表·甲寅时",
+      "inputBasis": "qimen-layout",
+      "input": {
+        "dun": "yang",
+        "ju": 1,
+        "timePillar": "甲寅"
+      },
+      "expected": {
+        "chiefStar": "天心",
+        "chiefDoor": "开门",
+        "starPalaceRaw": 6,
+        "doorPalaceRaw": 6
+      },
+      "expectationStatus": "clear",
+      "canRecompute": true,
+      "verified": false,
+      "sources": [
+        {
+          "paragraphId": "qimen-dunjia-tongzhi:nlc-layouts:P091:L081-L091",
+          "file": "sources/normalized/san-shi/qimen-dunjia-tongzhi/nlc-layouts.md",
+          "pdfPage": 91,
+          "pageStartLine": 82,
+          "pageEndLine": 82,
+          "quote": "寅六六"
+        },
+        {
+          "paragraphId": "qimen-dunjia-tongzhi:nlc-layouts:P091:L081-L091",
+          "file": "sources/normalized/san-shi/qimen-dunjia-tongzhi/nlc-layouts.md",
+          "pdfPage": 91,
+          "pageStartLine": 81,
+          "pageEndLine": 81,
+          "quote": "心開"
+        },
+        {
+          "paragraphId": "qimen-dunjia-tongzhi:nlc-layouts:P091:L006-L007",
+          "file": "sources/normalized/san-shi/qimen-dunjia-tongzhi/nlc-layouts.md",
+          "pdfPage": 91,
+          "pageStartLine": 6,
+          "pageEndLine": 7,
+          "quote": "陽一局\n甲乙丙丁戊己庚辛壬癸"
+        }
+      ],
+      "sourceContext": {
+        "printedJu": "陽一局",
+        "printedStemHeader": "甲乙丙丁戊己庚辛壬癸",
+        "printedColumn": 6,
+        "printedRow": 1,
+        "printedStarDoor": "心開",
+        "printedCell": "寅六六",
+        "readingMethod": "时柱由纸面共享十干行头与该格时支合读；数字由格中原数直接转录。"
+      },
+      "notes": [
+        "只核符星、使门与原宫数，不代表全九宫布局或应验。"
+      ]
+    },
+    {
+      "id": "QMTZ-NLC-P091-C06-R02",
+      "name": "文瑞本阳一局总表·乙卯时",
+      "inputBasis": "qimen-layout",
+      "input": {
+        "dun": "yang",
+        "ju": 1,
+        "timePillar": "乙卯"
+      },
+      "expected": {
+        "chiefStar": "天心",
+        "chiefDoor": "开门",
+        "starPalaceRaw": 9,
+        "doorPalaceRaw": 7
+      },
+      "expectationStatus": "clear",
+      "canRecompute": true,
+      "verified": false,
+      "sources": [
+        {
+          "paragraphId": "qimen-dunjia-tongzhi:nlc-layouts:P091:L081-L091",
+          "file": "sources/normalized/san-shi/qimen-dunjia-tongzhi/nlc-layouts.md",
+          "pdfPage": 91,
+          "pageStartLine": 83,
+          "pageEndLine": 83,
+          "quote": "卯九七"
+        },
+        {
+          "paragraphId": "qimen-dunjia-tongzhi:nlc-layouts:P091:L081-L091",
+          "file": "sources/normalized/san-shi/qimen-dunjia-tongzhi/nlc-layouts.md",
+          "pdfPage": 91,
+          "pageStartLine": 81,
+          "pageEndLine": 81,
+          "quote": "心開"
+        },
+        {
+          "paragraphId": "qimen-dunjia-tongzhi:nlc-layouts:P091:L006-L007",
+          "file": "sources/normalized/san-shi/qimen-dunjia-tongzhi/nlc-layouts.md",
+          "pdfPage": 91,
+          "pageStartLine": 6,
+          "pageEndLine": 7,
+          "quote": "陽一局\n甲乙丙丁戊己庚辛壬癸"
+        }
+      ],
+      "sourceContext": {
+        "printedJu": "陽一局",
+        "printedStemHeader": "甲乙丙丁戊己庚辛壬癸",
+        "printedColumn": 6,
+        "printedRow": 2,
+        "printedStarDoor": "心開",
+        "printedCell": "卯九七",
+        "readingMethod": "时柱由纸面共享十干行头与该格时支合读；数字由格中原数直接转录。"
+      },
+      "notes": [
+        "只核符星、使门与原宫数，不代表全九宫布局或应验。"
+      ]
+    },
+    {
+      "id": "QMTZ-NLC-P091-C06-R03",
+      "name": "文瑞本阳一局总表·丙辰时",
+      "inputBasis": "qimen-layout",
+      "input": {
+        "dun": "yang",
+        "ju": 1,
+        "timePillar": "丙辰"
+      },
+      "expected": {
+        "chiefStar": "天心",
+        "chiefDoor": "开门",
+        "starPalaceRaw": 8,
+        "doorPalaceRaw": 8
+      },
+      "expectationStatus": "clear",
+      "canRecompute": true,
+      "verified": false,
+      "sources": [
+        {
+          "paragraphId": "qimen-dunjia-tongzhi:nlc-layouts:P091:L081-L091",
+          "file": "sources/normalized/san-shi/qimen-dunjia-tongzhi/nlc-layouts.md",
+          "pdfPage": 91,
+          "pageStartLine": 84,
+          "pageEndLine": 84,
+          "quote": "辰八八"
+        },
+        {
+          "paragraphId": "qimen-dunjia-tongzhi:nlc-layouts:P091:L081-L091",
+          "file": "sources/normalized/san-shi/qimen-dunjia-tongzhi/nlc-layouts.md",
+          "pdfPage": 91,
+          "pageStartLine": 81,
+          "pageEndLine": 81,
+          "quote": "心開"
+        },
+        {
+          "paragraphId": "qimen-dunjia-tongzhi:nlc-layouts:P091:L006-L007",
+          "file": "sources/normalized/san-shi/qimen-dunjia-tongzhi/nlc-layouts.md",
+          "pdfPage": 91,
+          "pageStartLine": 6,
+          "pageEndLine": 7,
+          "quote": "陽一局\n甲乙丙丁戊己庚辛壬癸"
+        }
+      ],
+      "sourceContext": {
+        "printedJu": "陽一局",
+        "printedStemHeader": "甲乙丙丁戊己庚辛壬癸",
+        "printedColumn": 6,
+        "printedRow": 3,
+        "printedStarDoor": "心開",
+        "printedCell": "辰八八",
+        "readingMethod": "时柱由纸面共享十干行头与该格时支合读；数字由格中原数直接转录。"
+      },
+      "notes": [
+        "只核符星、使门与原宫数，不代表全九宫布局或应验。"
+      ]
+    },
+    {
+      "id": "QMTZ-NLC-P091-C06-R04",
+      "name": "文瑞本阳一局总表·丁巳时",
+      "inputBasis": "qimen-layout",
+      "input": {
+        "dun": "yang",
+        "ju": 1,
+        "timePillar": "丁巳"
+      },
+      "expected": {
+        "chiefStar": "天心",
+        "chiefDoor": "开门",
+        "starPalaceRaw": 7,
+        "doorPalaceRaw": 9
+      },
+      "expectationStatus": "clear",
+      "canRecompute": true,
+      "verified": false,
+      "sources": [
+        {
+          "paragraphId": "qimen-dunjia-tongzhi:nlc-layouts:P091:L081-L091",
+          "file": "sources/normalized/san-shi/qimen-dunjia-tongzhi/nlc-layouts.md",
+          "pdfPage": 91,
+          "pageStartLine": 85,
+          "pageEndLine": 85,
+          "quote": "巳七九"
+        },
+        {
+          "paragraphId": "qimen-dunjia-tongzhi:nlc-layouts:P091:L081-L091",
+          "file": "sources/normalized/san-shi/qimen-dunjia-tongzhi/nlc-layouts.md",
+          "pdfPage": 91,
+          "pageStartLine": 81,
+          "pageEndLine": 81,
+          "quote": "心開"
+        },
+        {
+          "paragraphId": "qimen-dunjia-tongzhi:nlc-layouts:P091:L006-L007",
+          "file": "sources/normalized/san-shi/qimen-dunjia-tongzhi/nlc-layouts.md",
+          "pdfPage": 91,
+          "pageStartLine": 6,
+          "pageEndLine": 7,
+          "quote": "陽一局\n甲乙丙丁戊己庚辛壬癸"
+        }
+      ],
+      "sourceContext": {
+        "printedJu": "陽一局",
+        "printedStemHeader": "甲乙丙丁戊己庚辛壬癸",
+        "printedColumn": 6,
+        "printedRow": 4,
+        "printedStarDoor": "心開",
+        "printedCell": "巳七九",
+        "readingMethod": "时柱由纸面共享十干行头与该格时支合读；数字由格中原数直接转录。"
+      },
+      "notes": [
+        "只核符星、使门与原宫数，不代表全九宫布局或应验。"
+      ]
+    },
+    {
+      "id": "QMTZ-NLC-P091-C06-R05",
+      "name": "文瑞本阳一局总表·戊午时",
+      "inputBasis": "qimen-layout",
+      "input": {
+        "dun": "yang",
+        "ju": 1,
+        "timePillar": "戊午"
+      },
+      "expected": {
+        "chiefStar": "天心",
+        "chiefDoor": "开门",
+        "starPalaceRaw": 1,
+        "doorPalaceRaw": 1
+      },
+      "expectationStatus": "clear",
+      "canRecompute": true,
+      "verified": false,
+      "sources": [
+        {
+          "paragraphId": "qimen-dunjia-tongzhi:nlc-layouts:P091:L081-L091",
+          "file": "sources/normalized/san-shi/qimen-dunjia-tongzhi/nlc-layouts.md",
+          "pdfPage": 91,
+          "pageStartLine": 86,
+          "pageEndLine": 86,
+          "quote": "午一一"
+        },
+        {
+          "paragraphId": "qimen-dunjia-tongzhi:nlc-layouts:P091:L081-L091",
+          "file": "sources/normalized/san-shi/qimen-dunjia-tongzhi/nlc-layouts.md",
+          "pdfPage": 91,
+          "pageStartLine": 81,
+          "pageEndLine": 81,
+          "quote": "心開"
+        },
+        {
+          "paragraphId": "qimen-dunjia-tongzhi:nlc-layouts:P091:L006-L007",
+          "file": "sources/normalized/san-shi/qimen-dunjia-tongzhi/nlc-layouts.md",
+          "pdfPage": 91,
+          "pageStartLine": 6,
+          "pageEndLine": 7,
+          "quote": "陽一局\n甲乙丙丁戊己庚辛壬癸"
+        }
+      ],
+      "sourceContext": {
+        "printedJu": "陽一局",
+        "printedStemHeader": "甲乙丙丁戊己庚辛壬癸",
+        "printedColumn": 6,
+        "printedRow": 5,
+        "printedStarDoor": "心開",
+        "printedCell": "午一一",
+        "readingMethod": "时柱由纸面共享十干行头与该格时支合读；数字由格中原数直接转录。"
+      },
+      "notes": [
+        "只核符星、使门与原宫数，不代表全九宫布局或应验。"
+      ]
+    },
+    {
+      "id": "QMTZ-NLC-P091-C06-R06",
+      "name": "文瑞本阳一局总表·己未时",
+      "inputBasis": "qimen-layout",
+      "input": {
+        "dun": "yang",
+        "ju": 1,
+        "timePillar": "己未"
+      },
+      "expected": {
+        "chiefStar": "天心",
+        "chiefDoor": "开门",
+        "starPalaceRaw": 2,
+        "doorPalaceRaw": 2
+      },
+      "expectationStatus": "clear",
+      "canRecompute": true,
+      "verified": false,
+      "sources": [
+        {
+          "paragraphId": "qimen-dunjia-tongzhi:nlc-layouts:P091:L081-L091",
+          "file": "sources/normalized/san-shi/qimen-dunjia-tongzhi/nlc-layouts.md",
+          "pdfPage": 91,
+          "pageStartLine": 87,
+          "pageEndLine": 87,
+          "quote": "未二二"
+        },
+        {
+          "paragraphId": "qimen-dunjia-tongzhi:nlc-layouts:P091:L081-L091",
+          "file": "sources/normalized/san-shi/qimen-dunjia-tongzhi/nlc-layouts.md",
+          "pdfPage": 91,
+          "pageStartLine": 81,
+          "pageEndLine": 81,
+          "quote": "心開"
+        },
+        {
+          "paragraphId": "qimen-dunjia-tongzhi:nlc-layouts:P091:L006-L007",
+          "file": "sources/normalized/san-shi/qimen-dunjia-tongzhi/nlc-layouts.md",
+          "pdfPage": 91,
+          "pageStartLine": 6,
+          "pageEndLine": 7,
+          "quote": "陽一局\n甲乙丙丁戊己庚辛壬癸"
+        }
+      ],
+      "sourceContext": {
+        "printedJu": "陽一局",
+        "printedStemHeader": "甲乙丙丁戊己庚辛壬癸",
+        "printedColumn": 6,
+        "printedRow": 6,
+        "printedStarDoor": "心開",
+        "printedCell": "未二二",
+        "readingMethod": "时柱由纸面共享十干行头与该格时支合读；数字由格中原数直接转录。"
+      },
+      "notes": [
+        "只核符星、使门与原宫数，不代表全九宫布局或应验。"
+      ]
+    },
+    {
+      "id": "QMTZ-NLC-P091-C06-R07",
+      "name": "文瑞本阳一局总表·庚申时",
+      "inputBasis": "qimen-layout",
+      "input": {
+        "dun": "yang",
+        "ju": 1,
+        "timePillar": "庚申"
+      },
+      "expected": {
+        "chiefStar": "天心",
+        "chiefDoor": "开门",
+        "starPalaceRaw": 3,
+        "doorPalaceRaw": 3
+      },
+      "expectationStatus": "clear",
+      "canRecompute": true,
+      "verified": false,
+      "sources": [
+        {
+          "paragraphId": "qimen-dunjia-tongzhi:nlc-layouts:P091:L081-L091",
+          "file": "sources/normalized/san-shi/qimen-dunjia-tongzhi/nlc-layouts.md",
+          "pdfPage": 91,
+          "pageStartLine": 88,
+          "pageEndLine": 88,
+          "quote": "申三三"
+        },
+        {
+          "paragraphId": "qimen-dunjia-tongzhi:nlc-layouts:P091:L081-L091",
+          "file": "sources/normalized/san-shi/qimen-dunjia-tongzhi/nlc-layouts.md",
+          "pdfPage": 91,
+          "pageStartLine": 81,
+          "pageEndLine": 81,
+          "quote": "心開"
+        },
+        {
+          "paragraphId": "qimen-dunjia-tongzhi:nlc-layouts:P091:L006-L007",
+          "file": "sources/normalized/san-shi/qimen-dunjia-tongzhi/nlc-layouts.md",
+          "pdfPage": 91,
+          "pageStartLine": 6,
+          "pageEndLine": 7,
+          "quote": "陽一局\n甲乙丙丁戊己庚辛壬癸"
+        }
+      ],
+      "sourceContext": {
+        "printedJu": "陽一局",
+        "printedStemHeader": "甲乙丙丁戊己庚辛壬癸",
+        "printedColumn": 6,
+        "printedRow": 7,
+        "printedStarDoor": "心開",
+        "printedCell": "申三三",
+        "readingMethod": "时柱由纸面共享十干行头与该格时支合读；数字由格中原数直接转录。"
+      },
+      "notes": [
+        "只核符星、使门与原宫数，不代表全九宫布局或应验。"
+      ]
+    },
+    {
+      "id": "QMTZ-NLC-P091-C06-R08",
+      "name": "文瑞本阳一局总表·辛酉时",
+      "inputBasis": "qimen-layout",
+      "input": {
+        "dun": "yang",
+        "ju": 1,
+        "timePillar": "辛酉"
+      },
+      "expected": {
+        "chiefStar": "天心",
+        "chiefDoor": "开门",
+        "starPalaceRaw": 4,
+        "doorPalaceRaw": 4
+      },
+      "expectationStatus": "clear",
+      "canRecompute": true,
+      "verified": false,
+      "sources": [
+        {
+          "paragraphId": "qimen-dunjia-tongzhi:nlc-layouts:P091:L081-L091",
+          "file": "sources/normalized/san-shi/qimen-dunjia-tongzhi/nlc-layouts.md",
+          "pdfPage": 91,
+          "pageStartLine": 89,
+          "pageEndLine": 89,
+          "quote": "酉四四"
+        },
+        {
+          "paragraphId": "qimen-dunjia-tongzhi:nlc-layouts:P091:L081-L091",
+          "file": "sources/normalized/san-shi/qimen-dunjia-tongzhi/nlc-layouts.md",
+          "pdfPage": 91,
+          "pageStartLine": 81,
+          "pageEndLine": 81,
+          "quote": "心開"
+        },
+        {
+          "paragraphId": "qimen-dunjia-tongzhi:nlc-layouts:P091:L006-L007",
+          "file": "sources/normalized/san-shi/qimen-dunjia-tongzhi/nlc-layouts.md",
+          "pdfPage": 91,
+          "pageStartLine": 6,
+          "pageEndLine": 7,
+          "quote": "陽一局\n甲乙丙丁戊己庚辛壬癸"
+        }
+      ],
+      "sourceContext": {
+        "printedJu": "陽一局",
+        "printedStemHeader": "甲乙丙丁戊己庚辛壬癸",
+        "printedColumn": 6,
+        "printedRow": 8,
+        "printedStarDoor": "心開",
+        "printedCell": "酉四四",
+        "readingMethod": "时柱由纸面共享十干行头与该格时支合读；数字由格中原数直接转录。"
+      },
+      "notes": [
+        "只核符星、使门与原宫数，不代表全九宫布局或应验。"
+      ]
+    },
+    {
+      "id": "QMTZ-NLC-P091-C06-R09",
+      "name": "文瑞本阳一局总表·壬戌时",
+      "inputBasis": "qimen-layout",
+      "input": {
+        "dun": "yang",
+        "ju": 1,
+        "timePillar": "壬戌"
+      },
+      "expected": {
+        "chiefStar": "天心",
+        "chiefDoor": "开门",
+        "starPalaceRaw": 5,
+        "doorPalaceRaw": 5
+      },
+      "expectationStatus": "clear",
+      "canRecompute": true,
+      "verified": false,
+      "sources": [
+        {
+          "paragraphId": "qimen-dunjia-tongzhi:nlc-layouts:P091:L081-L091",
+          "file": "sources/normalized/san-shi/qimen-dunjia-tongzhi/nlc-layouts.md",
+          "pdfPage": 91,
+          "pageStartLine": 90,
+          "pageEndLine": 90,
+          "quote": "戌五五"
+        },
+        {
+          "paragraphId": "qimen-dunjia-tongzhi:nlc-layouts:P091:L081-L091",
+          "file": "sources/normalized/san-shi/qimen-dunjia-tongzhi/nlc-layouts.md",
+          "pdfPage": 91,
+          "pageStartLine": 81,
+          "pageEndLine": 81,
+          "quote": "心開"
+        },
+        {
+          "paragraphId": "qimen-dunjia-tongzhi:nlc-layouts:P091:L006-L007",
+          "file": "sources/normalized/san-shi/qimen-dunjia-tongzhi/nlc-layouts.md",
+          "pdfPage": 91,
+          "pageStartLine": 6,
+          "pageEndLine": 7,
+          "quote": "陽一局\n甲乙丙丁戊己庚辛壬癸"
+        }
+      ],
+      "sourceContext": {
+        "printedJu": "陽一局",
+        "printedStemHeader": "甲乙丙丁戊己庚辛壬癸",
+        "printedColumn": 6,
+        "printedRow": 9,
+        "printedStarDoor": "心開",
+        "printedCell": "戌五五",
+        "readingMethod": "时柱由纸面共享十干行头与该格时支合读；数字由格中原数直接转录。"
+      },
+      "notes": [
+        "只核符星、使门与原宫数，不代表全九宫布局或应验。"
+      ]
+    },
+    {
+      "id": "QMTZ-NLC-P091-C06-R10",
+      "name": "文瑞本阳一局总表·癸亥时",
+      "inputBasis": "qimen-layout",
+      "input": {
+        "dun": "yang",
+        "ju": 1,
+        "timePillar": "癸亥"
+      },
+      "expected": {
+        "chiefStar": "天心",
+        "chiefDoor": "开门",
+        "starPalaceRaw": 6,
+        "doorPalaceRaw": 6
+      },
+      "expectationStatus": "clear",
+      "canRecompute": true,
+      "verified": false,
+      "sources": [
+        {
+          "paragraphId": "qimen-dunjia-tongzhi:nlc-layouts:P091:L081-L091",
+          "file": "sources/normalized/san-shi/qimen-dunjia-tongzhi/nlc-layouts.md",
+          "pdfPage": 91,
+          "pageStartLine": 91,
+          "pageEndLine": 91,
+          "quote": "亥六六"
+        },
+        {
+          "paragraphId": "qimen-dunjia-tongzhi:nlc-layouts:P091:L081-L091",
+          "file": "sources/normalized/san-shi/qimen-dunjia-tongzhi/nlc-layouts.md",
+          "pdfPage": 91,
+          "pageStartLine": 81,
+          "pageEndLine": 81,
+          "quote": "心開"
+        },
+        {
+          "paragraphId": "qimen-dunjia-tongzhi:nlc-layouts:P091:L006-L007",
+          "file": "sources/normalized/san-shi/qimen-dunjia-tongzhi/nlc-layouts.md",
+          "pdfPage": 91,
+          "pageStartLine": 6,
+          "pageEndLine": 7,
+          "quote": "陽一局\n甲乙丙丁戊己庚辛壬癸"
+        }
+      ],
+      "sourceContext": {
+        "printedJu": "陽一局",
+        "printedStemHeader": "甲乙丙丁戊己庚辛壬癸",
+        "printedColumn": 6,
+        "printedRow": 10,
+        "printedStarDoor": "心開",
+        "printedCell": "亥六六",
+        "readingMethod": "时柱由纸面共享十干行头与该格时支合读；数字由格中原数直接转录。"
+      },
+      "notes": [
+        "只核符星、使门与原宫数，不代表全九宫布局或应验。"
+      ]
+    },
+    {
+      "id": "QMTZ-NLC-P093-Y1-YICHOU",
+      "name": "文瑞本阳一局乙丑逐时条",
+      "inputBasis": "qimen-layout",
+      "input": {
+        "dun": "yang",
+        "ju": 1,
+        "timePillar": "乙丑"
+      },
+      "expected": {
+        "chiefStar": "天蓬",
+        "chiefDoor": "休门",
+        "starPalaceRaw": 9,
+        "doorPalaceRaw": 2
+      },
+      "expectationStatus": "clear",
+      "canRecompute": true,
+      "verified": false,
+      "sources": [
+        {
+          "paragraphId": "qimen-dunjia-tongzhi:nlc-layouts:P093:L005-L010",
+          "file": "sources/normalized/san-shi/qimen-dunjia-tongzhi/nlc-layouts.md",
+          "pdfPage": 93,
+          "pageStartLine": 8,
+          "pageEndLine": 10,
+          "quote": "乙丑\n蓬休\n九二"
+        },
+        {
+          "paragraphId": "qimen-dunjia-tongzhi:nlc-layouts:P093:L005-L010",
+          "file": "sources/normalized/san-shi/qimen-dunjia-tongzhi/nlc-layouts.md",
+          "pdfPage": 93,
+          "pageStartLine": 5,
+          "pageEndLine": 7,
+          "quote": "陽局\n上元一局\n甲己日"
+        }
+      ],
+      "sourceContext": {
+        "dayStemGroup": [
+          "甲",
+          "己"
+        ],
+        "printedJu": "上元一局",
+        "entryPosition": "右起第二条"
+      },
+      "notes": [
+        "与总表同输入是书内复引，不计两次独立应验。"
+      ]
+    },
+    {
+      "id": "QMTZ-NLC-P099-Y1-WUXU",
+      "name": "文瑞本阳一局戊戌逐时异文条",
+      "inputBasis": "qimen-layout",
+      "input": {
+        "dun": "yang",
+        "ju": 1,
+        "timePillar": "戊戌"
+      },
+      "expected": {
+        "chiefStar": "天辅",
+        "chiefDoor": "杜门",
+        "doorPalaceRaw": 8
+      },
+      "expectationStatus": "clear",
+      "canRecompute": true,
+      "verified": false,
+      "sources": [
+        {
+          "paragraphId": "qimen-dunjia-tongzhi:nlc-layouts:P099:L006-L008",
+          "file": "sources/normalized/san-shi/qimen-dunjia-tongzhi/nlc-layouts.md",
+          "pdfPage": 99,
+          "pageStartLine": 6,
+          "pageEndLine": 8,
+          "quote": "戊戌\n輔杜\n八"
+        },
+        {
+          "paragraphId": "qimen-dunjia-tongzhi:nlc-layouts:P091:L006-L007",
+          "file": "sources/normalized/san-shi/qimen-dunjia-tongzhi/nlc-layouts.md",
+          "pdfPage": 91,
+          "pageStartLine": 6,
+          "pageEndLine": 7,
+          "quote": "陽一局\n甲乙丙丁戊己庚辛壬癸"
+        },
+        {
+          "paragraphId": "qimen-dunjia-tongzhi:nlc-layouts:P091:L053-L063",
+          "file": "sources/normalized/san-shi/qimen-dunjia-tongzhi/nlc-layouts.md",
+          "pdfPage": 91,
+          "pageStartLine": 58,
+          "pageEndLine": 58,
+          "quote": "戌一八"
+        },
+        {
+          "paragraphId": "qimen-dunjia-tongzhi:nlc-layouts:P091:L053-L063",
+          "file": "sources/normalized/san-shi/qimen-dunjia-tongzhi/nlc-layouts.md",
+          "pdfPage": 91,
+          "pageStartLine": 53,
+          "pageEndLine": 53,
+          "quote": "輔杜"
+        }
+      ],
+      "sourceContext": {
+        "printedJuContext": "承阳一局",
+        "entryPosition": "右起第二条",
+        "comparison": "戊戌总表一八、条中缺星宫；己亥总表二九、条中一九。"
+      },
+      "notes": [
+        "原纸未给的数不填；原冲突不由产品结果改正。"
+      ]
+    },
+    {
+      "id": "QMTZ-NLC-P099-Y1-JIHAI",
+      "name": "文瑞本阳一局己亥逐时异文条",
+      "inputBasis": "qimen-layout",
+      "input": {
+        "dun": "yang",
+        "ju": 1,
+        "timePillar": "己亥"
+      },
+      "expected": {
+        "chiefStar": "天辅",
+        "chiefDoor": "杜门",
+        "starPalaceRaw": 1,
+        "doorPalaceRaw": 9
+      },
+      "expectationStatus": "source-conflict",
+      "canRecompute": true,
+      "verified": false,
+      "sources": [
+        {
+          "paragraphId": "qimen-dunjia-tongzhi:nlc-layouts:P099:L012-L014",
+          "file": "sources/normalized/san-shi/qimen-dunjia-tongzhi/nlc-layouts.md",
+          "pdfPage": 99,
+          "pageStartLine": 12,
+          "pageEndLine": 14,
+          "quote": "己亥\n輔杜\n一九"
+        },
+        {
+          "paragraphId": "qimen-dunjia-tongzhi:nlc-layouts:P091:L006-L007",
+          "file": "sources/normalized/san-shi/qimen-dunjia-tongzhi/nlc-layouts.md",
+          "pdfPage": 91,
+          "pageStartLine": 6,
+          "pageEndLine": 7,
+          "quote": "陽一局\n甲乙丙丁戊己庚辛壬癸"
+        },
+        {
+          "paragraphId": "qimen-dunjia-tongzhi:nlc-layouts:P091:L053-L063",
+          "file": "sources/normalized/san-shi/qimen-dunjia-tongzhi/nlc-layouts.md",
+          "pdfPage": 91,
+          "pageStartLine": 59,
+          "pageEndLine": 59,
+          "quote": "亥二九"
+        },
+        {
+          "paragraphId": "qimen-dunjia-tongzhi:nlc-layouts:P091:L053-L063",
+          "file": "sources/normalized/san-shi/qimen-dunjia-tongzhi/nlc-layouts.md",
+          "pdfPage": 91,
+          "pageStartLine": 53,
+          "pageEndLine": 53,
+          "quote": "輔杜"
+        }
+      ],
+      "sourceContext": {
+        "printedJuContext": "承阳一局",
+        "entryPosition": "右起第三条",
+        "comparison": "戊戌总表一八、条中缺星宫；己亥总表二九、条中一九。"
+      },
+      "notes": [
+        "原纸未给的数不填；原冲突不由产品结果改正。"
+      ]
+    }
+  ]
+}

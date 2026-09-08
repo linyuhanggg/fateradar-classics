@@ -6,6 +6,55 @@
   "note": "只认定所列正文范围已按原影印对字；一条简表不能代表整页、整局或全部六卷。",
   "pages": [
     {
+      "pdfPage": 91,
+      "status": "partial",
+      "scope": "阳一局局题、共享干头及60时符使原宫总表；不是整页版心或后续11页格断全转录",
+      "reviewedRanges": [
+        {
+          "startLine": 6,
+          "endLine": 7,
+          "scope": "原局题和共享十干行头逐字对图"
+        },
+        {
+          "startLine": 11,
+          "endLine": 21,
+          "scope": "原列题符使及十条时支、原宫数已逐项对图"
+        },
+        {
+          "startLine": 25,
+          "endLine": 35,
+          "scope": "原列题符使及十条时支、原宫数已逐项对图"
+        },
+        {
+          "startLine": 39,
+          "endLine": 49,
+          "scope": "原列题符使及十条时支、原宫数已逐项对图"
+        },
+        {
+          "startLine": 53,
+          "endLine": 63,
+          "scope": "原列题符使及十条时支、原宫数已逐项对图"
+        },
+        {
+          "startLine": 67,
+          "endLine": 77,
+          "scope": "原列题符使及十条时支、原宫数已逐项对图"
+        },
+        {
+          "startLine": 81,
+          "endLine": 91,
+          "scope": "原列题符使及十条时支、原宫数已逐项对图"
+        }
+      ],
+      "unresolved": [
+        "全部九宫层次不在本简表逐条列出；逐时附加格断另行恢复。"
+      ],
+      "rangeCoordinates": "PDF标题行0，其后按页内相对行号",
+      "notes": [
+        "纸本总表戊戌一八、己亥二九；PDF99逐时条戊戌主星宫空白、己亥一九，需保留内部异文。"
+      ]
+    },
+    {
       "pdfPage": 93,
       "status": "partial",
       "scope": "阳一局乙丑时条的原局/日组/时柱/符使/原宫数与节令栏",
@@ -24,6 +73,31 @@
           "endLine": 10,
           "scope": "纸本局题、日组、时柱、符使和两项原宫数，原字已核；不含现代释字"
         }
+      ]
+    },
+    {
+      "pdfPage": 99,
+      "status": "partial",
+      "scope": "戊戌与己亥两条符使及纸面宫数；保留缺数和异数",
+      "rangeCoordinates": "PDF标题行0，其后按页内相对行号",
+      "reviewedRanges": [
+        {
+          "startLine": 6,
+          "endLine": 8,
+          "scope": "戊戌、輔杜、使门原八；星原数空位未补"
+        },
+        {
+          "startLine": 12,
+          "endLine": 14,
+          "scope": "己亥、輔杜、原一九，确为纸面字而与总表不同"
+        }
+      ],
+      "unresolved": [
+        "戊戌星原宫未印；己亥星宫与总表二九不一致。",
+        "本页其余时条与格断尚未正式全文恢复。"
+      ],
+      "notes": [
+        "PDF99 戊戌、己亥已放大对图核字；与PDF91对照不改任一原字。"
       ]
     }
   ]
