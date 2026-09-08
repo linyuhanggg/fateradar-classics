@@ -115,6 +115,26 @@ class PillarSourceChecks(unittest.TestCase):
         self.assertNotIn("dayPillar", fields["input"])
         self.assertNotIn("chiefDoor", fields["expected"])
 
+    def test_printed_qimen_time_can_be_readable_but_not_a_recomputable_input(self):
+        case = {"inputBasis": "qimen-layout", "input": {
+            "dun": "yang", "ju": 3, "timePillar": "丁卯"},
+            "expected": {"chiefStar": "天禽", "chiefDoor": "死门", "starPalaceRaw": 6, "doorPalaceRaw": 3},
+            "expectationStatus": "clear", "canRecompute": False,
+            "inputStatus": "source-uncertain",
+            "inputUncertainty": "原题丁卯，但槽位及丙辛日组提示可能辛卯，未校定"}
+        fields, signature, _ = m.case_input(case)
+        self.assertFalse(fields["canRecompute"])
+        self.assertEqual(fields["input"]["timePillar"], "丁卯")
+        self.assertEqual(fields["expected"]["starPalaceRaw"], 6)
+        self.assertEqual(fields["expectationStatus"], "clear")
+        self.assertEqual(fields["inputStatus"], "source-uncertain")
+        self.assertEqual(fields["scope"], [])
+        self.assertIsNone(signature)
+        with self.assertRaisesRegex(ValueError, "cannot be marked recomputable"):
+            m.case_input({**case, "canRecompute": True})
+        with self.assertRaisesRegex(ValueError, "specific reason"):
+            m.case_input({**case, "inputUncertainty": ""})
+
     def test_page_relative_case_anchor_tracks_inserted_earlier_pages_and_keeps_quote(self):
         with tempfile.TemporaryDirectory() as directory:
             root = Path(directory)

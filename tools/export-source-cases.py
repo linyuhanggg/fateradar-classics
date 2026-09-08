@@ -181,6 +181,18 @@ def case_input(case: dict) -> tuple[dict, tuple | None, str]:
         repeated = "sameComponentInputAs"
     else:
         raise ValueError(f"Unsupported case input basis: {basis}")
+    if "inputStatus" in case:
+        reason = case.get("inputUncertainty")
+        if (basis != "qimen-layout" or case["inputStatus"] != "source-uncertain"
+                or not isinstance(reason, str) or not reason.strip()):
+            raise ValueError("Uncertain Qimen source input requires its specific reason")
+        if case.get("canRecompute") is True:
+            raise ValueError("Uncertain source input cannot be marked recomputable")
+        fields.update(inputStatus="source-uncertain", inputUncertainty=reason)
+        fields["unavailable"].append(reason)
+        # Printed characters remain available for reading. They cannot identify
+        # an independently established layout or create a false duplicate case.
+        signature = None
     if case.get("canRecompute") is True and not valid:
         raise ValueError("Incomplete or invalid case input marked recomputable")
     fields["canRecompute"] = bool(case.get("canRecompute") and valid)
@@ -304,6 +316,7 @@ def main():
     args.output.write_text(json.dumps(data, ensure_ascii=False, indent=2) + "\n")
     print(json.dumps({"source_revision": revision, "cases": len(data["cases"]), "recomputable": sum(c["canRecompute"] for c in data["cases"]),
                       "expected_unresolved": sum(c.get("expectationStatus") == "source-conflict" for c in data["cases"]),
+                      "source_input_uncertain": sum(c.get("inputStatus") == "source-uncertain" for c in data["cases"]),
                       "repeated_inputs": sum(any(field in c for field in ("samePillarsAs", "sameNumbersAs", "sameHexagramInputAs", "sameComponentInputAs")) for c in data["cases"]), "verified": 0}, ensure_ascii=False))
 
 
