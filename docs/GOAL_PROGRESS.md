@@ -4,6 +4,13 @@
 
 两仓均为 `codex/full-library-completion`：古籍 `/Users/yuhanglin/.codex/worktrees/fateradar-classics-grok-full-library`；产品 `/Users/yuhanglin/.codex/worktrees/fateradar-product-grok-full-library`。原接手基准古籍2396e4c、产品8f1ca84。原main及他人admin/billing/.claude不改。本目标尚未合main或部署。
 
+## 最新接续：黄金策坟墓求师学馆，下一行1313
+
+上一轮有实际进展。本轮8ebfe56新增L1147–1311共82原段，累计630/849前二十三章电子审读，余219从L1313词讼继续。坟墓地形类象不当实测；L1217缺字保留待核。求师与学馆分别家长求师/教师求馆，世应、财薪父馆子学生各按事项，不混用。
+
+- 新增ID集合对应，630entries验证0错。产品固定8ebfe569081e02bef1ed4e93cc8bc875087e9257出口55资料/80889段/19113 source-reviewed；实际630段、缺字待核、词讼以后unreviewed核对，18检索/分包测试通过。未改原文/ID/verified/golden或运行规则，不称全代码/网页总验收。
+- 全量目标active，继续其余分门与八术原范围；未合main或部署。
+
 ## 最新接续：黄金策求财家宅，下一行1146
 
 上一轮有实际进展。本轮82cbe90新增L958–1144共93原段，累计548/849前二十章电子审读，余301从L1146坟墓继续。求财分合伙、公门、囤货/脱货；L981后附注记区分兄官动克世与兄化官；L1104起新增家宅分爻法作者未明分层保留。不得把六爻家宅句“三传克世”擅接成六壬算法。
