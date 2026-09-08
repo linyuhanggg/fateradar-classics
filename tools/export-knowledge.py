@@ -84,13 +84,13 @@ def build_export(root: Path, revision: str) -> dict:
                 raise ValueError(f"Duplicate annotation across files: {entry['paragraphId']}")
             bound_annotations.add(entry["paragraphId"])
             row = paragraph_map[entry["paragraphId"]]
-            for field in ("kind", "vernacular", "terms", "notes", "review", "relatedParagraphIds"):
+            for field in ("kind", "vernacular", "terms", "notes", "review", "relatedParagraphIds", "sourceAttribution"):
                 if field in entry:
                     row[field] = list(dict.fromkeys(row[field] + entry[field])) if field == "notes" else entry[field]
     simplified, traditional = OpenCC("t2s"), OpenCC("s2t")
     book_titles = {book["slug"]: book["title"] for book in books}
     for row in rows:
-        searchable = "\n".join([book_titles[row["bookSlug"]], row["heading"], row["text"], row.get("vernacular", ""), " ".join(row["terms"])])
+        searchable = "\n".join([book_titles[row["bookSlug"]], row["heading"], row["text"], row.get("vernacular", ""), " ".join(row["terms"]), row.get("sourceAttribution", {}).get("work", "")])
         alternatives = dict.fromkeys([simplified.convert(searchable), traditional.convert(searchable)])
         alternatives.pop(searchable, None)
         if alternatives:

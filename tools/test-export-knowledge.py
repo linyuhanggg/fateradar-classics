@@ -91,6 +91,16 @@ class KnowledgeExport(unittest.TestCase):
         self.assertNotIn("vernacular", row)
         self.assertEqual(result["books"][1]["textStatus"], "unassessed")
 
+    def test_mixed_work_attribution_survives_without_rewriting_container_or_quote(self):
+        attribution = {"work": "另一部书", "relation": "mixed-in", "note": "当前收录文件混入此书正文。"}
+        self.write_json("references/annotations/bazi/book.json", {"bookSlug": "book", "entries": [{"paragraphId": "book:L0001-L0002", "kind": "重复", "vernacular": "这一段来自另一部书。", "terms": [], "notes": [], "review": "source-reviewed", "sourceAttribution": attribution}]})
+        result = module.build_export(self.root, "fixed")
+        row = result["paragraphs"][0]
+        self.assertEqual(row["sourceAttribution"], attribution)
+        self.assertEqual(row["bookSlug"], "book")
+        self.assertEqual(row["text"], "原文第一行\n原文第二行")
+        self.assertIn("另一部書", row.get("searchText", ""))
+
     def test_bad_annotation_fails_export(self):
         self.write_json("references/annotations/bazi/book.json", {"bookSlug": "book", "entries": [{"paragraphId": "book:L0001-L0009"}]})
         with self.assertRaisesRegex(ValueError, "unknown paragraphId"):

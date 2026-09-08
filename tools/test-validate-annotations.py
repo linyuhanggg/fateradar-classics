@@ -18,6 +18,13 @@ class AnnotationValidation(unittest.TestCase):
         self.paragraphs = {"book:L0001-L0002": {}, "book:L0004-L0004": {}}
         self.data = {"bookSlug": "book", "entries": [{"paragraphId": "book:L0001-L0002", "kind": "理论", "vernacular": "季节还需结合根气判断。", "terms": ["月令"], "notes": [], "review": "source-reviewed"}]}
 
+    def test_attribution_requires_actual_work_relation_and_explanation(self):
+        entry = self.data["entries"][0]
+        entry["sourceAttribution"] = {"work": "", "relation": "guess", "note": ""}
+        self.assertTrue(any("sourceAttribution" in e for e in module.validate_pack(self.data, self.paragraphs)))
+        entry["sourceAttribution"] = {"work": "撼龙经", "relation": "mixed-in", "note": "主文件混入另一书正文，保留容器出处。"}
+        self.assertEqual(module.validate_pack(self.data, self.paragraphs), [])
+
     def test_real_reference(self):
         self.assertEqual(module.validate_pack(self.data, self.paragraphs), [])
 
