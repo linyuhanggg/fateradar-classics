@@ -1,0 +1,510 @@
+{
+  "version": 1,
+  "bookSlug": "zengshan-buyi",
+  "scopeNote": "六爻原书候选的独立暂存协议，尚不加入旧source-cases。最小输入为源图初至上六个爻符及原书明确的占月、日干支；不补公历年或种子。canRecompute仅指所列数学组件输入足够，verified保持false，不代表应验验证。",
+  "cases": [
+    {
+      "id": "ZS-LY-L0379",
+      "name": "将来有官：兑之讼",
+      "kind": "source_case",
+      "inputBasis": "liuyao-line-symbols",
+      "question": "将来有官否",
+      "input": {
+        "monthBranch": "亥",
+        "dayGanzhi": "己丑",
+        "linesBottomUp": [
+          "○",
+          "⚊",
+          "⚋",
+          "⚊",
+          "⚊",
+          "ㄨ"
+        ]
+      },
+      "expected": {
+        "mainGua": "兑为泽",
+        "shi": 6,
+        "ying": 3,
+        "mainLines": [
+          {
+            "position": 1,
+            "kinship": "官鬼",
+            "branch": "巳",
+            "element": "火"
+          },
+          {
+            "position": 2,
+            "kinship": "妻财",
+            "branch": "卯",
+            "element": "木"
+          },
+          {
+            "position": 3,
+            "kinship": "父母",
+            "branch": "丑",
+            "element": "土"
+          },
+          {
+            "position": 4,
+            "kinship": "子孙",
+            "branch": "亥",
+            "element": "水"
+          },
+          {
+            "position": 5,
+            "kinship": "兄弟",
+            "branch": "酉",
+            "element": "金"
+          },
+          {
+            "position": 6,
+            "kinship": "父母",
+            "branch": "未",
+            "element": "土"
+          }
+        ],
+        "changedGua": "天水讼",
+        "changedLines": [
+          {
+            "position": 1,
+            "kinship": "妻财",
+            "branch": "寅",
+            "element": "木"
+          },
+          {
+            "position": 2,
+            "kinship": "父母",
+            "branch": "辰",
+            "element": "土"
+          },
+          {
+            "position": 3,
+            "kinship": "官鬼",
+            "branch": "午",
+            "element": "火"
+          },
+          {
+            "position": 4,
+            "kinship": "官鬼",
+            "branch": "午",
+            "element": "火"
+          },
+          {
+            "position": 5,
+            "kinship": "兄弟",
+            "branch": "申",
+            "element": "金"
+          },
+          {
+            "position": 6,
+            "kinship": "父母",
+            "branch": "戌",
+            "element": "土"
+          }
+        ]
+      },
+      "sourceReading": "官动生世、世动进；官月破世空，先存疑再占合断。",
+      "reportedOutcome": "原文称巳年承袭长房世职。",
+      "canRecompute": true,
+      "recomputeScope": [
+        "原卦阴阳与动爻",
+        "原文明确的变卦",
+        "主卦宫六亲与世应"
+      ],
+      "unavailable": [
+        "绝对公历年份",
+        "实际投币正背序列或随机种子",
+        "现代独立应验记录"
+      ],
+      "review": "source-reviewed",
+      "verified": false,
+      "sources": [
+        {
+          "paragraphId": "zengshan-buyi:L0379-L0379",
+          "file": "sources/fulltext/divination/zengshan-buyi/fulltext.md",
+          "startLine": 379,
+          "endLine": 379,
+          "quote": "如亥月己丑日占將來有官否。得兌化訟卦"
+        },
+        {
+          "paragraphId": "zengshan-buyi:L0381-L0381",
+          "file": "sources/fulltext/divination/zengshan-buyi/fulltext.md",
+          "startLine": 381,
+          "endLine": 381,
+          "quote": "父母未土ㄨ世 父母戌土⚊"
+        },
+        {
+          "paragraphId": "zengshan-buyi:L0383-L0383",
+          "file": "sources/fulltext/divination/zengshan-buyi/fulltext.md",
+          "startLine": 383,
+          "endLine": 383,
+          "quote": "兄弟酉金⚊  兄弟申金⚊"
+        },
+        {
+          "paragraphId": "zengshan-buyi:L0385-L0385",
+          "file": "sources/fulltext/divination/zengshan-buyi/fulltext.md",
+          "startLine": 385,
+          "endLine": 385,
+          "quote": "子孫亥水⚊  官鬼午火⚊"
+        },
+        {
+          "paragraphId": "zengshan-buyi:L0387-L0387",
+          "file": "sources/fulltext/divination/zengshan-buyi/fulltext.md",
+          "startLine": 387,
+          "endLine": 387,
+          "quote": "父母丑土⚋應 官鬼午火⚋"
+        },
+        {
+          "paragraphId": "zengshan-buyi:L0389-L0389",
+          "file": "sources/fulltext/divination/zengshan-buyi/fulltext.md",
+          "startLine": 389,
+          "endLine": 389,
+          "quote": "妻財卯木⚊  父母辰土⚊"
+        },
+        {
+          "paragraphId": "zengshan-buyi:L0391-L0391",
+          "file": "sources/fulltext/divination/zengshan-buyi/fulltext.md",
+          "startLine": 391,
+          "endLine": 391,
+          "quote": "官鬼巳火○  妻財寅木⚋"
+        },
+        {
+          "paragraphId": "zengshan-buyi:L0393-L0393",
+          "file": "sources/fulltext/divination/zengshan-buyi/fulltext.md",
+          "startLine": 393,
+          "endLine": 393,
+          "quote": "此卦官動而生世﹐世動化進神﹐𨿽然有官之象﹐但官逢月破﹐世遇旬空﹐然空者猶月日辰相沖﹐沖空則實不爲空矣﹐而破者又無日辰動爻之生﹐占以日建亦生不起﹐況無日建動爻以生乎﹖予疑之卽無所用﹐何故動而生世﹖命之再占﹐又得出水地比卦。"
+        },
+        {
+          "paragraphId": "zengshan-buyi:L0407-L0407",
+          "file": "sources/fulltext/divination/zengshan-buyi/fulltext.md",
+          "startLine": 407,
+          "endLine": 407,
+          "quote": "斷曰﹕命若無官﹐官不得生世持世﹐今卽前卦動。官相生﹐後得官臨世位﹐食祿王家終須有日。彼問﹕應在何年﹖予曰﹕前卦官臨月破﹐定於實破之年﹐果於巳年承襲長房世職﹐若以月破﹐百無所用﹐霄壤之隔也。"
+        }
+      ],
+      "notes": [
+        "expected只转录源图与题句明确值；年月日属于占问而非出生。原断语和原称应验单列，不作为数学回归预期。"
+      ],
+      "relatedCaseIds": [
+        "ZS-LY-L0393"
+      ]
+    },
+    {
+      "id": "ZS-LY-L0393",
+      "name": "将来有官复占：水地比",
+      "kind": "source_case",
+      "inputBasis": "liuyao-line-symbols",
+      "question": "同前问将来有官否",
+      "input": {
+        "linesBottomUp": [
+          "⚋",
+          "⚋",
+          "⚋",
+          "⚋",
+          "⚊",
+          "⚋"
+        ]
+      },
+      "expected": {
+        "mainGua": "水地比",
+        "shi": 3,
+        "ying": 6,
+        "mainLines": [
+          {
+            "position": 1,
+            "kinship": "兄弟",
+            "branch": "未",
+            "element": "土"
+          },
+          {
+            "position": 2,
+            "kinship": "父母",
+            "branch": "巳",
+            "element": "火"
+          },
+          {
+            "position": 3,
+            "kinship": "官鬼",
+            "branch": "卯",
+            "element": "木"
+          },
+          {
+            "position": 4,
+            "kinship": "子孙",
+            "branch": "申",
+            "element": "金"
+          },
+          {
+            "position": 5,
+            "kinship": "兄弟",
+            "branch": "戌",
+            "element": "土"
+          },
+          {
+            "position": 6,
+            "kinship": "妻财",
+            "branch": "子",
+            "element": "水"
+          }
+        ]
+      },
+      "sourceReading": "复占官鬼卯木持世，与前卦官生世合看。",
+      "reportedOutcome": "与前占共用同一官事结局，不是独立第二次应验。",
+      "canRecompute": true,
+      "recomputeScope": [
+        "原卦阴阳与动爻",
+        "主卦宫六亲与世应"
+      ],
+      "unavailable": [
+        "绝对公历年份",
+        "实际投币正背序列或随机种子",
+        "现代独立应验记录"
+      ],
+      "review": "source-reviewed",
+      "verified": false,
+      "sources": [
+        {
+          "paragraphId": "zengshan-buyi:L0393-L0393",
+          "file": "sources/fulltext/divination/zengshan-buyi/fulltext.md",
+          "startLine": 393,
+          "endLine": 393,
+          "quote": "此卦官動而生世﹐世動化進神﹐𨿽然有官之象﹐但官逢月破﹐世遇旬空﹐然空者猶月日辰相沖﹐沖空則實不爲空矣﹐而破者又無日辰動爻之生﹐占以日建亦生不起﹐況無日建動爻以生乎﹖予疑之卽無所用﹐何故動而生世﹖命之再占﹐又得出水地比卦。"
+        },
+        {
+          "paragraphId": "zengshan-buyi:L0395-L0395",
+          "file": "sources/fulltext/divination/zengshan-buyi/fulltext.md",
+          "startLine": 395,
+          "endLine": 395,
+          "quote": "妻財子水⚋應"
+        },
+        {
+          "paragraphId": "zengshan-buyi:L0397-L0397",
+          "file": "sources/fulltext/divination/zengshan-buyi/fulltext.md",
+          "startLine": 397,
+          "endLine": 397,
+          "quote": "兄弟戌土⚊"
+        },
+        {
+          "paragraphId": "zengshan-buyi:L0399-L0399",
+          "file": "sources/fulltext/divination/zengshan-buyi/fulltext.md",
+          "startLine": 399,
+          "endLine": 399,
+          "quote": "子孫申金⚋"
+        },
+        {
+          "paragraphId": "zengshan-buyi:L0401-L0401",
+          "file": "sources/fulltext/divination/zengshan-buyi/fulltext.md",
+          "startLine": 401,
+          "endLine": 401,
+          "quote": "官鬼卯木⚋世"
+        },
+        {
+          "paragraphId": "zengshan-buyi:L0403-L0403",
+          "file": "sources/fulltext/divination/zengshan-buyi/fulltext.md",
+          "startLine": 403,
+          "endLine": 403,
+          "quote": "父母巳火⚋"
+        },
+        {
+          "paragraphId": "zengshan-buyi:L0405-L0405",
+          "file": "sources/fulltext/divination/zengshan-buyi/fulltext.md",
+          "startLine": 405,
+          "endLine": 405,
+          "quote": "兄弟未土⚋"
+        },
+        {
+          "paragraphId": "zengshan-buyi:L0407-L0407",
+          "file": "sources/fulltext/divination/zengshan-buyi/fulltext.md",
+          "startLine": 407,
+          "endLine": 407,
+          "quote": "斷曰﹕命若無官﹐官不得生世持世﹐今卽前卦動。官相生﹐後得官臨世位﹐食祿王家終須有日。彼問﹕應在何年﹖予曰﹕前卦官臨月破﹐定於實破之年﹐果於巳年承襲長房世職﹐若以月破﹐百無所用﹐霄壤之隔也。"
+        }
+      ],
+      "notes": [
+        "expected只转录源图与题句明确值；年月日属于占问而非出生。原断语和原称应验单列，不作为数学回归预期。",
+        "本次复占未重述月日，不擅继承为同日；仅可比较其卦形与装卦组件。"
+      ],
+      "relatedCaseIds": [
+        "ZS-LY-L0379"
+      ]
+    },
+    {
+      "id": "ZS-LY-L0409",
+      "name": "问父何日归：乾之夬",
+      "kind": "source_case",
+      "inputBasis": "liuyao-line-symbols",
+      "question": "父何日归",
+      "input": {
+        "monthBranch": "辰",
+        "dayGanzhi": "戊子",
+        "linesBottomUp": [
+          "⚊",
+          "⚊",
+          "⚊",
+          "⚊",
+          "⚊",
+          "○"
+        ]
+      },
+      "expected": {
+        "mainGua": "乾为天",
+        "shi": 6,
+        "ying": 3,
+        "mainLines": [
+          {
+            "position": 1,
+            "kinship": "子孙",
+            "branch": "子",
+            "element": "水"
+          },
+          {
+            "position": 2,
+            "kinship": "妻财",
+            "branch": "寅",
+            "element": "木"
+          },
+          {
+            "position": 3,
+            "kinship": "父母",
+            "branch": "辰",
+            "element": "土"
+          },
+          {
+            "position": 4,
+            "kinship": "官鬼",
+            "branch": "午",
+            "element": "火"
+          },
+          {
+            "position": 5,
+            "kinship": "兄弟",
+            "branch": "申",
+            "element": "金"
+          },
+          {
+            "position": 6,
+            "kinship": "父母",
+            "branch": "戌",
+            "element": "土"
+          }
+        ],
+        "changedGua": "泽天夬",
+        "changedLines": [
+          {
+            "position": 1,
+            "kinship": "子孙",
+            "branch": "子",
+            "element": "水"
+          },
+          {
+            "position": 2,
+            "kinship": "妻财",
+            "branch": "寅",
+            "element": "木"
+          },
+          {
+            "position": 3,
+            "kinship": "父母",
+            "branch": "辰",
+            "element": "土"
+          },
+          {
+            "position": 4,
+            "kinship": "子孙",
+            "branch": "亥",
+            "element": "水"
+          },
+          {
+            "position": 5,
+            "kinship": "兄弟",
+            "branch": "酉",
+            "element": "金"
+          },
+          {
+            "position": 6,
+            "kinship": "父母",
+            "branch": "未",
+            "element": "土"
+          }
+        ]
+      },
+      "sourceReading": "父戌持世月破、动化未空；作者取卯合破得信、未出空归家。",
+      "reportedOutcome": "原文报卯日得信，乙未日到家。",
+      "canRecompute": true,
+      "recomputeScope": [
+        "原卦阴阳与动爻",
+        "原文明确的变卦",
+        "主卦宫六亲与世应"
+      ],
+      "unavailable": [
+        "绝对公历年份",
+        "实际投币正背序列或随机种子",
+        "现代独立应验记录"
+      ],
+      "review": "source-reviewed",
+      "verified": false,
+      "sources": [
+        {
+          "paragraphId": "zengshan-buyi:L0409-L0409",
+          "file": "sources/fulltext/divination/zengshan-buyi/fulltext.md",
+          "startLine": 409,
+          "endLine": 409,
+          "quote": "又如辰月戊子日占父何日歸得乾之夬"
+        },
+        {
+          "paragraphId": "zengshan-buyi:L0411-L0411",
+          "file": "sources/fulltext/divination/zengshan-buyi/fulltext.md",
+          "startLine": 411,
+          "endLine": 411,
+          "quote": "父母戌土○世 父母未土⚋"
+        },
+        {
+          "paragraphId": "zengshan-buyi:L0413-L0413",
+          "file": "sources/fulltext/divination/zengshan-buyi/fulltext.md",
+          "startLine": 413,
+          "endLine": 413,
+          "quote": "兄弟申金⚊  兄弟酉金⚊"
+        },
+        {
+          "paragraphId": "zengshan-buyi:L0415-L0415",
+          "file": "sources/fulltext/divination/zengshan-buyi/fulltext.md",
+          "startLine": 415,
+          "endLine": 415,
+          "quote": "官鬼午火⚊  子孫亥水⚊"
+        },
+        {
+          "paragraphId": "zengshan-buyi:L0417-L0417",
+          "file": "sources/fulltext/divination/zengshan-buyi/fulltext.md",
+          "startLine": 417,
+          "endLine": 417,
+          "quote": "父母辰土⚊應 父母辰土⚊"
+        },
+        {
+          "paragraphId": "zengshan-buyi:L0419-L0419",
+          "file": "sources/fulltext/divination/zengshan-buyi/fulltext.md",
+          "startLine": 419,
+          "endLine": 419,
+          "quote": "妻財寅木⚊  妻財寅木⚊"
+        },
+        {
+          "paragraphId": "zengshan-buyi:L0421-L0421",
+          "file": "sources/fulltext/divination/zengshan-buyi/fulltext.md",
+          "startLine": 421,
+          "endLine": 421,
+          "quote": "子孫子水⚊  子孫子水⚊"
+        },
+        {
+          "paragraphId": "zengshan-buyi:L0423-L0427",
+          "file": "sources/fulltext/divination/zengshan-buyi/fulltext.md",
+          "startLine": 423,
+          "endLine": 427,
+          "quote": "父母持世﹐破而化空﹐旣無日生﹐又無動助﹐以古法斷者﹐作用神而無气﹐其父不能歸也。\n予不以此論之﹐竟斷朱雀臨父動而持世﹐卯日有信﹐午未日必歸﹐果於卯日得信﹐乙未日到家﹐應卯日得信者﹐破而逢合之日也。\n應未日歸者﹐父化未土旬空出空之日到也。\n古訣用神之論謂之動逢月破﹐我位旣失﹐化月建﹐爲退之不及。\n此卦父爻破而動而化空﹐競退以歸家。"
+        }
+      ],
+      "notes": [
+        "expected只转录源图与题句明确值；年月日属于占问而非出生。原断语和原称应验单列，不作为数学回归预期。"
+      ]
+    }
+  ]
+}
