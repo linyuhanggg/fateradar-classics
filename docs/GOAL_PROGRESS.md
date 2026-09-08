@@ -4,6 +4,15 @@
 
 两仓均为 `codex/full-library-completion`：古籍 `/Users/yuhanglin/.codex/worktrees/fateradar-classics-grok-full-library`；产品 `/Users/yuhanglin/.codex/worktrees/fateradar-product-grok-full-library`。原接手基准古籍2396e4c、产品8f1ca84。原main及他人admin/billing/.claude不改。本目标尚未合main或部署。
 
+## 最新接续：阳宅第675卷文字66节已入库，下一1219
+
+上一轮有实际进展。本轮c21147c新增11节L1050–1213，首卷正文L12–1213共66节电子文字已审、2元信息已审；9主段中3审6未审。图形/子图对应并未核，原文注释明确区分source-reviewed与影印/图像校定。
+
+- 八福元门房井灶磨栏水用途分开，天乙=巨门非八字贵人，生气/延年等游年非天文星；艮方丑寅可门正艮别法忌不混八方24山。甲寅东北、巽己、西牝等疑字不改。
+- 五鬼注1130前断尾及图缺保留，艮南房六煞与起诀对应待图核，不擅修。生肖福元/宅向/门山/房间层次不套现代房号。
+- 3entries验证0错，固定c21147cc3ac0ca819aaa060b1e4d59b3232a1e83导出55包80889段source_reviewed21778，18知识测试通过，66小节原文切片一致连续；运行仍e43cd38，未改算法/原文/ID/verified。
+- 下一L1217第676卷元信息与L1219正文大游年、穿宫等；图源核对仍欠，不以文字读完勾销。nmem本轮恢复。全目标active，未合main或部署，其他全库/八术继续。
+
 ## 最新接续：阳宅福元表180年一致，55节至1049
 
 上一轮有实际进展。本轮2cae55c新增5节L846–1049，累计L12–1049共55节文字，父段draft；下一L1050坎宫用例。
