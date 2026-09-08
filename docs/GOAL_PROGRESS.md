@@ -4,6 +4,15 @@
 
 两仓均为 `codex/full-library-completion`：古籍 `/Users/yuhanglin/.codex/worktrees/fateradar-classics-grok-full-library`；产品 `/Users/yuhanglin/.codex/worktrees/fateradar-product-grok-full-library`。原接手基准古籍2396e4c、产品8f1ca84。原main及他人admin/billing/.claude不改。本目标尚未合main或部署。
 
+## 最新接续：阳宅福元表180年一致，55节至1049
+
+上一轮有实际进展。本轮2cae55c新增5节L846–1049，累计L12–1049共55节文字，父段draft；下一L1050坎宫用例。
+
+- 用前文男1/4/7逆女5/2/8顺、中五男坤女艮，对表上中下各60年共180条360宫位逐项核对，全部宫位一致。唯一年名中元offset55 L968己末与干支序己未不齐，原字保留且该行男震女震正确。
+- 逐行证据docs/review/yangzhai-fuyuan-table-2026-09-09.json保留源行、源年名、男女原读与期望。仅电子表算法一致性，非公历元界/影印校定。表后婚元另有男7/1/4女5/2/5，不擅改或混宅元。
+- 东四夫妻异福元分房说为旧院落方法，未图验不套现代公寓；3entries验证0错。原文/ID/verified保持，父段未完不导出，知识0f4138f/21775运行e43cd38。
+- nmem继续502未反复重试。全目标active，未合main或部署；继续L1050后各宫用例，及图源/其他全库八术未完工作。
+
 ## 最新接续：阳宅福元50节，下一行846定局表
 
 上一轮外形文字读完有实际进展。本轮c0c8e33新增9节L767–845，连续L12–845共50节文字，父段仍draft；L846三元甲子定局表起未读。
