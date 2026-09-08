@@ -1,5 +1,7 @@
 # 全库书目与覆盖清单
 
+统计源提交：`37bbde0ab2f43ba1f6fd22ec90b70c18a08cce3a`。此处为固定快照，不随未提交工作稿变化。
+
 生成日期：2026-09-08。由 `tools/build-library-inventory.py` 从磁盘实数生成，不沿用 55 部完整古籍的说法。
 
 ## 口径
@@ -10,16 +12,16 @@
 - catalog 另列排除项：4
 - 稳定段落：53640（含疑文段 1261）
 - 旧 rules.yaml 候选记录：1356（其中 declared verified=true：0；不作运行权威）
-- 新规则定义记录：247，有规则白话 247（仅统计 `references/executable/*.json`；不据此认定运行接入或分支验证完成）
+- 新规则定义记录：249，有规则白话 249（仅统计 `references/executable/*.json`；不据此认定运行接入或分支验证完成）
 - 新规则 declared verified=true：0（只读已有标记，不自动提升）
 - 独立盘面读法：14（`references/readings/chart-notes.json`；不换算成全文白话覆盖）
 
 ## 实际语义加工进度
 
-- 已有段落注解：16125 / 53640
-- 标记电子原文审读 source-reviewed：16125（不是人工影印核验）
-- 有非空白话或处理说明的段落：16125（其中 source-reviewed：16125）
-- 尚无注解：37515；尚无段落白话：37515
+- 已有段落注解：16155 / 53640
+- 标记电子原文审读 source-reviewed：16155（不是人工影印核验）
+- 有非空白话或处理说明的段落：16155（其中 source-reviewed：16155）
+- 尚无注解：37485；尚无段落白话：37485
 - 原文字面重复段：9220（仅忽略空白比较，same_text_as 不代表流派或理论等价）
 
 上述是文件中实际存在的产物统计，不是全库完成率。模式分类只帮助找材料，未分类、只有规则标题或未审读白话都不能算完成。
@@ -73,18 +75,18 @@
 | fengshui | yilong-jing | 疑龙经 | 是 | 96 | 96 | 96 | 0 | knowledge | 已存影印／候选底本 |
 | fengshui | zangfa-daozhang | 葬法倒杖 | 是 | 13 | 13 | 13 | 0 | knowledge | 已存影印／候选底本 |
 | fengshui | zangshu | 葬书 | 是 | 17 | 17 | 17 | 0 | knowledge | 已存影印／候选底本 |
-| luming-nayin | lantai-miaoxuan | 兰台妙选 | 是 | 7 | 0 | 0 | 0 | knowledge | 尚未确认影印 |
-| luming-nayin | li-xuzhong-mingshu | 李虚中命书 | 是 | 8 | 0 | 0 | 0 | knowledge | 已存影印／候选底本 |
+| luming-nayin | lantai-miaoxuan | 兰台妙选 | 是 | 7 | 7 | 7 | 0 | knowledge | 尚未确认影印 |
+| luming-nayin | li-xuzhong-mingshu | 李虚中命书 | 是 | 8 | 8 | 8 | 0 | knowledge | 已存影印／候选底本 |
 | luming-nayin | luoluzi-sanming | 珞琭子三命消息赋 | 是 | 156 | 156 | 156 | 0 | knowledge | 已存影印／候选底本 |
 | luming-nayin | wuxing-jingji | 五行精纪 | 是 | 4294 | 0 | 0 | 0 | knowledge | 已存影印／候选底本 |
-| luming-nayin | yuzhao-shenying | 玉照神应真经 | 是 | 2 | 0 | 0 | 0 | knowledge | 已存影印／候选底本 |
+| luming-nayin | yuzhao-shenying | 玉照神应真经 | 是 | 2 | 2 | 2 | 0 | knowledge | 已存影印／候选底本 |
 | physiognomy | bingjian | 冰鉴 | 是 | 26 | 26 | 26 | 0 | knowledge | 尚未确认影印 |
 | physiognomy | liuzhuang-xiangfa | 柳庄相法 | 是 | 2 | 0 | 0 | 0 | knowledge | 已存影印／候选底本 |
 | physiognomy | mayi-shenxiang | 麻衣神相 | 是 | 1627 | 0 | 0 | 0 | knowledge | 已存影印／候选底本 |
 | physiognomy | shenxiang-quanbian | 神相全编 | 是 | 345 | 345 | 345 | 0 | knowledge | 尚未确认影印 |
-| san-shi | daliuren-daquan | 大六壬大全 | 是 | 6893 | 0 | 0 | 20 | engine | 已存影印／候选底本 |
+| san-shi | daliuren-daquan | 大六壬大全 | 是 | 6893 | 0 | 0 | 22 | engine | 已存影印／候选底本 |
 | san-shi | liuren-miben | 大六壬秘本 | 是 | 2643 | 0 | 0 | 0 | engine | Release 影印／候选底本 |
-| san-shi | liuren-zhiyin | 六壬指南注解（张洪注本） | 是 | 13 | 0 | 0 | 1 | engine | 已存影印／候选底本 |
+| san-shi | liuren-zhiyin | 六壬指南注解（张洪注本） | 是 | 13 | 13 | 13 | 1 | engine | 已存影印／候选底本 |
 | san-shi | qimen-dunjia-tongzhi | 奇门遁甲统宗大全 | 是 | 739 | 739 | 739 | 6 | engine | 已存影印／候选底本 |
 | san-shi | qimen-faqiao | 奇门法窍（V5.1 核验摘录） | 否 | 0 | 0 | 0 | 0 | excluded_copyright | 尚未确认影印 |
 | san-shi | taiyi-shenshu | 太乙神数 | 是 | 209 | 209 | 209 | 0 | knowledge | Release 影印／候选底本 |
@@ -108,18 +110,18 @@
 
 ## 段落分类来源
 
-- pattern 文本模式初筛：2507；annotation 实际语义注解：16125；unclassified 待分类：35008
+- pattern 文本模式初筛：2498；annotation 实际语义注解：16155；unclassified 待分类：34987
 - 四柱案例从正文命造或带评语的四组干支识别；起例、先取后取与月起顺逆等操作从正文识别。模式结果仍可能需修订，不当作人工审读。
 - 目录、序跋不硬造解读；无分类依据时保留待分类。疑字只标记，不由模型补字。
 
-- 待分类：35008
-- 评注或元数据：5626
-- 理论：3761
-- 规则候选：3286
-- 案例：3014
-- 序跋目录：967
+- 待分类：34987
+- 评注或元数据：5637
+- 理论：3767
+- 规则候选：3290
+- 案例：3012
+- 序跋目录：973
 - 术语：726
-- 操作步骤：641
+- 操作步骤：637
 - 重复：447
 - 待核实：164
 

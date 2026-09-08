@@ -1052,54 +1052,34 @@
       "not_an_art_page": true,
       "sample_paragraphs": [
         {
-          "id": "lantai-miaoxuan:L0003-L0007",
-          "heading": "蘭臺妙選",
-          "start_line": 3,
-          "end_line": 7,
-          "kind": "待分类",
-          "classification_method": "unclassified",
-          "annotation_review": null,
-          "has_vernacular": false
-        },
-        {
-          "id": "lantai-miaoxuan:L0011-L0012",
-          "heading": "上篇",
-          "start_line": 11,
-          "end_line": 12,
-          "kind": "待分类",
-          "classification_method": "unclassified",
-          "annotation_review": null,
-          "has_vernacular": false
-        },
-        {
           "id": "lantai-miaoxuan:L0014-L0410",
           "heading": "上篇",
           "start_line": 14,
           "end_line": 410,
-          "kind": "案例",
-          "classification_method": "pattern",
-          "annotation_review": null,
-          "has_vernacular": false
-        },
-        {
-          "id": "lantai-miaoxuan:L0414-L0415",
-          "heading": "中篇",
-          "start_line": 414,
-          "end_line": 415,
-          "kind": "待分类",
-          "classification_method": "unclassified",
-          "annotation_review": null,
-          "has_vernacular": false
+          "kind": "规则候选",
+          "classification_method": "annotation",
+          "annotation_review": "source-reviewed",
+          "has_vernacular": true
         },
         {
           "id": "lantai-miaoxuan:L0417-L0482",
           "heading": "中篇",
           "start_line": 417,
           "end_line": 482,
-          "kind": "待分类",
-          "classification_method": "unclassified",
-          "annotation_review": null,
-          "has_vernacular": false
+          "kind": "规则候选",
+          "classification_method": "annotation",
+          "annotation_review": "source-reviewed",
+          "has_vernacular": true
+        },
+        {
+          "id": "lantai-miaoxuan:L0489-L0589",
+          "heading": "下篇",
+          "start_line": 489,
+          "end_line": 589,
+          "kind": "规则候选",
+          "classification_method": "annotation",
+          "annotation_review": "source-reviewed",
+          "has_vernacular": true
         }
       ]
     },
@@ -1115,44 +1095,34 @@
       "not_an_art_page": true,
       "sample_paragraphs": [
         {
-          "id": "li-xuzhong-mingshu:L0003-L0011",
-          "heading": "李虛中命書",
-          "start_line": 3,
-          "end_line": 11,
-          "kind": "待分类",
-          "classification_method": "unclassified",
-          "annotation_review": null,
-          "has_vernacular": false
-        },
-        {
           "id": "li-xuzhong-mingshu:L0021-L0085",
           "heading": "李虛中命書卷上",
           "start_line": 21,
           "end_line": 85,
-          "kind": "待分类",
-          "classification_method": "unclassified",
-          "annotation_review": null,
-          "has_vernacular": false
+          "kind": "规则候选",
+          "classification_method": "annotation",
+          "annotation_review": "source-reviewed",
+          "has_vernacular": true
         },
         {
           "id": "li-xuzhong-mingshu:L0091-L0181",
           "heading": "李虛中命書卷中",
           "start_line": 91,
           "end_line": 181,
-          "kind": "案例",
-          "classification_method": "pattern",
-          "annotation_review": null,
-          "has_vernacular": false
+          "kind": "理论",
+          "classification_method": "annotation",
+          "annotation_review": "source-reviewed",
+          "has_vernacular": true
         },
         {
           "id": "li-xuzhong-mingshu:L0187-L0242",
           "heading": "李虛中命書卷下",
           "start_line": 187,
           "end_line": 242,
-          "kind": "案例",
-          "classification_method": "pattern",
-          "annotation_review": null,
-          "has_vernacular": false
+          "kind": "理论",
+          "classification_method": "annotation",
+          "annotation_review": "source-reviewed",
+          "has_vernacular": true
         }
       ]
     },
@@ -1294,24 +1264,14 @@
       "not_an_art_page": true,
       "sample_paragraphs": [
         {
-          "id": "yuzhao-shenying:L0003-L0009",
-          "heading": "玉照神应真经",
-          "start_line": 3,
-          "end_line": 9,
-          "kind": "待分类",
-          "classification_method": "unclassified",
-          "annotation_review": null,
-          "has_vernacular": false
-        },
-        {
           "id": "yuzhao-shenying:L0011-L0138",
           "heading": "玉照神应真经",
           "start_line": 11,
           "end_line": 138,
-          "kind": "操作步骤",
-          "classification_method": "pattern",
-          "annotation_review": null,
-          "has_vernacular": false
+          "kind": "理论",
+          "classification_method": "annotation",
+          "annotation_review": "source-reviewed",
+          "has_vernacular": true
         }
       ]
     },
@@ -1867,5 +1827,5 @@
       "invent eight-arts verdicts"
     ]
   },
-  "sourceRevision": "0003e08f96ba81ac2e6bcbd671300e1b9b288655"
+  "sourceRevision": "37bbde0ab2f43ba1f6fd22ec90b70c18a08cce3a"
 }
