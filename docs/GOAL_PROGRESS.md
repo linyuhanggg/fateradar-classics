@@ -4,6 +4,13 @@
 
 两仓均为 `codex/full-library-completion`：古籍 `/Users/yuhanglin/.codex/worktrees/fateradar-classics-grok-full-library`；产品 `/Users/yuhanglin/.codex/worktrees/fateradar-product-grok-full-library`。原接手基准古籍2396e4c、产品8f1ca84。原main及他人admin/billing/.claude不改。本目标尚未合main或部署。
 
+## 最新接续：撼龙疑龙倒杖合刊现文审读完成
+
+上一轮有实际进展。本轮e64f15d完成倒杖L227–341共45子节，合刊6原主段均source-reviewed、103子节。四象十六法及倒杖/二十四砂分适用形势，L237四法仅三名、L269十二法只十一标题、L260阙文、L337疑句均保留，不补数凑文。只是现文电子审读，不等于原书底本完整或影像校勘。
+
+- 6entries注解0错，倒杖子节连续覆盖。产品固定e64f15d564c798c304945a7d0fb2897768d9a701出口55资料/80889段/19338 source-reviewed；6主状态及103实际引文行切片逐项核对，18检索/分包测试通过。原字/主ID/verified不变，无新运行风水规则，不重复旧全代码测试。
+- 继续其他未读材料及八术条件，合刊复录不计独立支持。全量目标active，未合main或部署。
+
 ## 最新接续：合刊疑龙正附篇26子节完成
 
 上一轮有实际进展。本轮7c3f37e读完L128–173疑龙正篇14节、L175–225附篇12节，合刊累计58子节。补齐结构归属中的卫龙篇（此前只列十问/变星），保留L173/224阙文。干枝、回抱背面、真假朝案、公位诸问与卫龙形势逐节解释；不借另一版本审读状态或补猜缺句。
