@@ -25,6 +25,10 @@ class AnnotationValidation(unittest.TestCase):
         entry["sourceAttribution"] = {"work": "撼龙经", "relation": "mixed-in", "note": "主文件混入另一书正文，保留容器出处。"}
         self.assertEqual(module.validate_pack(self.data, self.paragraphs), [])
 
+    def test_named_work_in_an_anthology_is_not_forced_to_be_misfiled(self):
+        self.data["entries"][0]["sourceAttribution"] = {"work": "相儿经", "relation": "anthology", "note": "图书集成相术部所收篇目。"}
+        self.assertEqual(module.validate_pack(self.data, self.paragraphs), [])
+
     def test_real_reference(self):
         self.assertEqual(module.validate_pack(self.data, self.paragraphs), [])
 

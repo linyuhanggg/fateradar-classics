@@ -45,7 +45,7 @@ def validate_pack(data: dict, paragraphs: dict[str, dict]) -> list[str]:
                 errors.append(f"{key}: {field} must be an array of nonempty strings")
         if "sourceAttribution" in entry:
             attribution = entry["sourceAttribution"]
-            if not isinstance(attribution, dict) or attribution.get("relation") not in {"mixed-in", "modern-commentary"} or any(not isinstance(attribution.get(field), str) or not attribution[field].strip() for field in ("work", "note")):
+            if not isinstance(attribution, dict) or attribution.get("relation") not in {"mixed-in", "modern-commentary", "anthology"} or any(not isinstance(attribution.get(field), str) or not attribution[field].strip() for field in ("work", "note")):
                 errors.append(f"{key}: sourceAttribution requires work, relation and note")
         source = paragraphs.get(key, {}) if isinstance(key, str) else {}
         if source.get("source_status") == "ocr-draft" and entry.get("review") == "source-reviewed":
