@@ -32,6 +32,46 @@ class PillarSourceChecks(unittest.TestCase):
         with self.assertRaisesRegex(ValueError, "marked recomputable"):
             m.case_input({"inputBasis": "meihua-numbers", "numbers": {"yearBranch": "辰", "lunarMonth": 12, "lunarDay": 17}, "canRecompute": True})
 
+    def test_ziwei_component_keeps_only_source_supplied_input(self):
+        case = {"inputBasis": "ziwei-component", "component": "soul-body", "input": {"lunarMonth": 1, "hourBranch": "丑"}, "expected": {"soulBranch": "丑", "bodyBranch": "卯"}, "canRecompute": True}
+        fields, _, repeated = m.case_input(case)
+        self.assertEqual(fields["input"], case["input"])
+        self.assertEqual(fields["expected"], case["expected"])
+        self.assertEqual(fields["scope"], ["命身宫位置"])
+        self.assertNotIn("solarDate", fields)
+        self.assertNotIn("pillars", fields)
+        self.assertEqual(repeated, "sameComponentInputAs")
+
+    def test_ziwei_component_does_not_ignore_missing_or_unhandled_conditions(self):
+        base = {"inputBasis": "ziwei-component", "component": "soul-body", "expected": {"soulBranch": "寅"}, "canRecompute": True}
+        for given in ({"lunarMonth": 1}, {"lunarMonth": 1, "hourBranch": "子", "isLeapMonth": True}):
+            with self.subTest(given=given), self.assertRaisesRegex(ValueError, "marked recomputable"):
+                m.case_input({**base, "input": given})
+
+    def test_component_cannot_publish_unreviewed_or_shifted_source(self):
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            para = root / "references/inventory/paragraphs/ziwei/book.json"
+            para.parent.mkdir(parents=True)
+            para.write_text(json.dumps({"fulltext": "sources/book.md", "paragraphs": [{"id": "book:L0001-L0002", "start_line": 1, "end_line": 2}]}))
+            annotation = root / "references/annotations/ziwei/book.json"
+            annotation.parent.mkdir(parents=True)
+            entry = {"paragraphId": "book:L0001-L0002", "review": "draft", "vernacular": "正月子时命身寅", "notes": []}
+            annotation.write_text(json.dumps({"bookSlug": "book", "entries": [entry]}))
+            candidate = root / "references/cases/ziwei-component-candidates.json"
+            candidate.parent.mkdir(parents=True)
+            case = {"id": "C1", "name": "原例", "inputBasis": "ziwei-component", "component": "soul-body", "input": {"lunarMonth": 1, "hourBranch": "子"}, "expected": {"soulBranch": "寅"}, "canRecompute": True, "source": {"paragraphId": entry["paragraphId"], "file": "sources/book.md", "startLine": 1, "endLine": 2}}
+            candidate.write_text(json.dumps({"bookSlug": "book", "cases": [case]}))
+            with self.assertRaisesRegex(ValueError, "requires a reviewed source"):
+                m.collect_cases(root)
+            entry["review"] = "source-reviewed"
+            annotation.write_text(json.dumps({"bookSlug": "book", "entries": [entry]}))
+            self.assertEqual(m.collect_cases(root)["cases"][0]["expected"], case["expected"])
+            case["source"]["endLine"] = 3
+            candidate.write_text(json.dumps({"bookSlug": "book", "cases": [case]}))
+            with self.assertRaisesRegex(ValueError, "source range mismatch"):
+                m.collect_cases(root)
+
     def test_direct_hexagram_does_not_invent_numbers_or_mutual_method(self):
         case = {"inputBasis": "meihua-hexagram", "input": {"upper": "乾", "lower": "坤", "moving": 2}, "expected": {"mutualUpper": "巽", "mutualLower": "离"}, "canRecompute": True}
         fields, _, repeated = m.case_input(case)
