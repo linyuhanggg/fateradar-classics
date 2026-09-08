@@ -4,6 +4,14 @@
 
 两仓均为 `codex/full-library-completion`：古籍 `/Users/yuhanglin/.codex/worktrees/fateradar-classics-grok-full-library`；产品 `/Users/yuhanglin/.codex/worktrees/fateradar-product-grok-full-library`。原接手基准古籍2396e4c、产品8f1ca84。原main及他人admin/billing/.claude不改。本目标尚未合main或部署。
 
+## 最新接续：阳宅677卷放水开头10节，下一1976
+
+上一轮第二卷入库有实际进展。本轮68f48ea建立第三卷元信息与L1865–1975共10节，父段L1865–2605仍draft；下一L1976定局表。
+
+- 来去水分方向，贪武来、禄文廉破去、巨辅双向与后歌的巨去败/文去病/辅凶等异说分层。长生学堂华盖为水法术语非八字神煞。净阴阳分组不同于东西四宅/卦阴阳，不硬拼同表。
+- 定局以山龙为前提，无真龙山另福元门向脱龙就局不论阴阳；出口与折经方不同，未测地形不任意选。7entries验证0错，10节连续，原文/ID/verified保持。
+- 父段未完不导出，知识555f606/21780运行e43cd38；nmem本轮恢复。全目标active，未合main或部署；继续定局及图源/全库八术余项。
+
 ## 最新接续：阳宅676卷49节文字已入库，下一1865
 
 上一轮有实际进展。本轮555f606新增7节L1766–1859，第二卷49节电子文字已审；前两卷66+49=115节，9主段5审4未审。下一L1863元信息、L1865第677卷正文。
