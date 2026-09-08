@@ -4,6 +4,14 @@
 
 两仓均为 `codex/full-library-completion`：古籍 `/Users/yuhanglin/.codex/worktrees/fateradar-classics-grok-full-library`；产品 `/Users/yuhanglin/.codex/worktrees/fateradar-product-grok-full-library`。原接手基准古籍2396e4c、产品8f1ca84。原main及他人admin/billing/.claude不改。本目标尚未合main或部署。
 
+## 最新接续：神峰六神与气象开头50节，下一行3790
+
+上一轮有实际进展。本轮d2b3d12新增9节，第五正文连续L3204–3789共50节，读完六神篇及气象篇开头。父段draft，L3790起未读。
+
+- 此六神为财官印食杀关系非六爻六兽。印多泄官可财、财多身弱可印、食制失效另查印化，不能吉凶神名称定终断。轻财行旺与财旺身弱再生财不同，所生对象不省略。
+- 气象先规模后用，过寒过燥须看救应能否起效，不以名义水火调剂判已中和；君子小人、贪污婚丧等旧价值断语不作现实事实。11entries验证0错，9节连续断言过。
+- 未导出未读全父段，知识仍8e92efe/19360，运行引擎未改，原文/ID/verified保持。继续L3790气象后文至章末；完整目标active，未合main或部署。
+
 ## 最新接续：神峰继善末段41节，下一行3673
 
 上一轮有实际进展。本轮8ad31c7新增9节，第五正文连续L3204–3672共41节，读完继善及歌释。父段draft，L3673六神篇起未读。
