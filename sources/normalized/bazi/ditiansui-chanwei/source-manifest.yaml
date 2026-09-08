@@ -32,4 +32,14 @@ license_or_usage_notes:
 distillation_allowed: true
 output_contract: 仓库annotations逐段去向、白话、术语、notes、真实关联及case/cases协议；不新增独立算命skill或改engine。
 verified: false
-review_status: in_progress
+review_status: electronic_source_review_complete
+
+review_coverage:
+  source_reviewed_paragraphs: 5681
+  prose_and_commentary: 977
+  chart_data_entries: 4704
+  source_case_occurrences: 517
+  distinct_four_pillar_inputs: 508
+  facsimile_corrected_case_inputs: 3
+  remaining_electronic_paragraphs: 0
+  facsimile_collation_scope: 定点页码与原句见collation-notes.md，不宣称516页全部逐字校勘
