@@ -1,5 +1,7 @@
 # Codex 验收交接 · 古籍仓
 
+> 当前施工状态：下文保留首次交付与接手记录。当前按完整方案在 `codex/full-library-completion` 持续施工，尚未总验收、未合main、未部署；最新真实进度、两仓版本、复现检查与剩余范围以 [GOAL_PROGRESS.md](GOAL_PROGRESS.md) 为准。已加入整书语义、独立恢复版本、原书最小组件案例与实际产品消费者，不能沿用旧记录判断当前已完成或未完成范围。
+
 ## 1. 工作树、分支、提交
 
 - 工作树：`/Users/yuhanglin/.codex/worktrees/fateradar-classics-grok-full-library`
@@ -185,6 +187,3 @@ faqiao destination=excluded_copyright
 - 未刷新 golden
 - 未合 main、未部署、未改生产库、未购买服务
 - 未抓取《奇门法窍》
-# 当前施工状态
-
-下文保留首次交付与接手记录。当前按完整方案在 `codex/full-library-completion` 持续施工，尚未总验收、未合main、未部署；最新真实进度、两仓版本、复现检查与剩余范围以 [GOAL_PROGRESS.md](GOAL_PROGRESS.md) 为准。已加入整书语义、独立恢复版本、原书最小组件案例与实际产品消费者，不能沿用旧记录判断当前已完成或未完成范围。
