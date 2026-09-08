@@ -4,6 +4,15 @@
 
 两仓均为 `codex/full-library-completion`：古籍 `/Users/yuhanglin/.codex/worktrees/fateradar-classics-grok-full-library`；产品 `/Users/yuhanglin/.codex/worktrees/fateradar-product-grok-full-library`。原接手基准古籍2396e4c、产品8f1ca84。原main及他人admin/billing/.claude不改。本目标尚未合main或部署。
 
+## 最新接续：阳宅十书图说文字15节，下一行242
+
+上一轮有实际进展。本轮0670f4f新增6组外形图说文字注释，正文连续L12–241共15节，父段L12–1213仍draft；L242起未读。
+
+- 按图占位124/143/162/182/202/222分组，并未复原每组多图边界。左右长短、前后高山与丘坟方向相反判断保留，缺图和尺度不填成现代户型规则。仅图说文字审读，图像未核。
+- references/books/fengshui/yangzhai-shishu/index.md旧称248图锚且指references/fulltext/...路径，该文件当前不存在；现sources/fulltext仅图占位，不能据旧统计认图像齐备。全篇外形至福元标题L767，仍须继续读与核图。
+- 3entries验证0错，6新节连续；未导出未读全父段，产品知识仍0f4138f/21775，运行代码仍e43cd38。原文/ID/verified保持。nmem本轮继续502未反复重试或切换。
+- 全目标active，未合main或部署；继续L242图说和可获取图源核对，再后福元及其余全库/八术工作。
+
 ## 最新接续：阳宅十书开头9节，下一行124
 
 上一轮印用官替代官修复有实际进展。本轮复查财用杀印采用者均为透印，现索引未发现混取藏干错误，不改该分支。随后推进15套未建主文注释之一阳宅十书。
