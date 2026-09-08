@@ -4,6 +4,15 @@
 
 两仓均为 `codex/full-library-completion`：古籍 `/Users/yuhanglin/.codex/worktrees/fateradar-classics-grok-full-library`；产品 `/Users/yuhanglin/.codex/worktrees/fateradar-product-grok-full-library`。原接手基准古籍2396e4c、产品8f1ca84。原main及他人admin/billing/.claude不改。本目标尚未合main或部署。
 
+## 最新接续：印绶用官岁运替代官误判已修
+
+上一轮渊海主文完成入库有实际进展。本轮转运行条件检查，产品e43cd38修正geju-transits中印用官“旧官全部被合”必要条件：只有当前没有其他可作用正官才可据此直接判不满足；有替代官保留完整复查结果。
+
+- 合成结构丙寅戊戌辛酉戊子、辛亥运丙午年，旧丙合绊而新丙仍可用。旧代码错误强制不满足；现保留寅午戌火局齐、化印变用未决的“信息不足”，不擅升满足。此例非公历出生验证。
+- 先加反例旧代码失败，再修代码。四文件27测试通过，tsc与修改文件eslint通过。原无替代官失败路径仍过。未刷新golden、verified或改原局基础算法。
+- 产品报告docs/implementation/yinge-transit-replacement-officer-2026-09-09.md；本轮未做新浏览器验收、未部署。知识仍0f4138f/21775，不因运行修复重导全文。
+- 全目标active，仍有15套主文及规则/版本/八术条件未完；下一继续运行规则真实缺口与剩余主资料，未合main。本轮nmem继续502，未阻塞或切换系统。
+
 ## 最新接续：渊海主文本2409段全部审读并接入
 
 上一轮有实际进展。本轮0f4138f新增末58主段至L5082，珞琭子末、撮要、生死引用及会要编后说明，2409主ID与inventory全量一致，全部source-reviewed且verified=false。
