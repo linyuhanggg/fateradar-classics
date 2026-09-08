@@ -4,6 +4,15 @@
 
 两仓均为 `codex/full-library-completion`：古籍 `/Users/yuhanglin/.codex/worktrees/fateradar-classics-grok-full-library`；产品 `/Users/yuhanglin/.codex/worktrees/fateradar-product-grok-full-library`。原接手基准古籍2396e4c、产品8f1ca84。原main及他人admin/billing/.claude不改。本目标尚未合main或部署。
 
+## 最新接续：渊海女命目录定真开头663主段，下一行1448
+
+上一轮有实际进展。本轮6b60784新增66主段至L1446，女命收尾、贵贱组合目录、子平举要歌、详解定真开头，累计663段；下一L1448。
+
+- 目录组合名不等完整成立条件；金神带刃贵/贱、财官印可用/遇印贱、伤官见官等链接异说。满杀反福未擅补从杀条件，择日之法题语实际三元四柱不移成择日起法。
+- 详解定真与神峰同源框架不计多份独立支持，原文/ID/verified保持，运行引擎未改。
+- 663entries验证0错；固定6b6078465dcb02b1c9b931df3f328336985d2dbe导出55包80889段source_reviewed20029，18知识测试通过，663主段切片一致，参考1988未审。
+- 全目标active，未合main或部署；继续主文及全库、八术条件和联动工作。
+
 ## 最新接续：渊海女命诗赋597主段，下一行1306
 
 上一轮有实际进展。本轮8321bf0新增65主段至L1304，阴命赋、总断歌及富贵贫贱篇前段，累计597段；下一L1306。
