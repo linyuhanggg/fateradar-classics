@@ -4,6 +4,15 @@
 
 两仓均为 `codex/full-library-completion`：古籍 `/Users/yuhanglin/.codex/worktrees/fateradar-classics-grok-full-library`；产品 `/Users/yuhanglin/.codex/worktrees/fateradar-product-grok-full-library`。原接手基准古籍2396e4c、产品8f1ca84。原main及他人admin/billing/.claude不改。本目标尚未合main或部署。
 
+## 最新接续：三命86段至591，砂土两例区分纳音水与天干水
+
+上一轮97851a0/f62f8b5/5814d02已推送，属实际进展。本轮51fb52f新增天上火至砂中土12主段L520–591，累计86/970主段、79小节；下一L595路傍土。
+
+- 天上火木多与月桂芬芳、山下火风助/风多、杨柳石榴春夏反例、城头已成不用火/未成需火等分前提，不合并喜忌。山水、地支与纳音象义不混实际地形/天气输入。
+- L589–591两原书四柱例加入cases：丙辰乙未癸酉戊午、丁巳癸卯己未壬申。用产品tyme4ts1.5.2实际复算，两例各2纳音金、0纳音水但天干均含水，验证原全无水口径为纳音层。原贵/寿夭未作expected或golden，详docs/review/sanming-sand-earth-case-layer-audit-2026-09-09.json。
+- 固定51fb52fbff19df89b467ec682a6ea9fd198aa88b重导案例，dbd309d收录：3023总/3005可复算输入，仅新增本轮2、删除0；冲突145、输入不确定1、重复962、verified0保持。此批无运行代码改动，不重复全量回归。
+- 注释86entries验证0错，原文/ID/verified保持，知识未导出本批，产品仍8f75566/21849、运行e43cd38。nmem上下文及纳音检索成功，全目标active，未合main或部署；继续余书规则与八术/页面完整范围。
+
 ## 最新接续：三命74段至516，两新四柱例及统一案例索引补齐
 
 上一轮8f75566/05a15b8及产品2cb9308已推送，属实际进展。本轮97851a0新增海中金至覆灯火9主段L464–516，累计74/970主段、67小节；下一L520天上火。
