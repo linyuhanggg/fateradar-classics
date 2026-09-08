@@ -90,7 +90,10 @@ def build_export(root: Path, revision: str) -> dict:
     simplified, traditional = OpenCC("t2s"), OpenCC("s2t")
     book_titles = {book["slug"]: book["title"] for book in books}
     for row in rows:
-        searchable = "\n".join([book_titles[row["bookSlug"]], row["heading"], row["text"], row.get("vernacular", ""), " ".join(row["terms"]), row.get("sourceAttribution", {}).get("work", "")])
+        search_parts = [book_titles[row["bookSlug"]], row["heading"], row["text"], row.get("vernacular", ""), " ".join(row["terms"])]
+        if row.get("sourceAttribution"):
+            search_parts.append(row["sourceAttribution"]["work"])
+        searchable = "\n".join(search_parts)
         alternatives = dict.fromkeys([simplified.convert(searchable), traditional.convert(searchable)])
         alternatives.pop(searchable, None)
         if alternatives:
