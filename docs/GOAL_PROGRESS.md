@@ -4,6 +4,13 @@
 
 两仓均为 `codex/full-library-completion`：古籍 `/Users/yuhanglin/.codex/worktrees/fateradar-classics-grok-full-library`；产品 `/Users/yuhanglin/.codex/worktrees/fateradar-product-grok-full-library`。原接手基准古籍2396e4c、产品8f1ca84。原main及他人admin/billing/.claude不改。本目标尚未合main或部署。
 
+## 最新接续：黄金策前三至六章，下一行401
+
+上一轮有实际进展。本轮8e888be新增L183–399年时、国朝、征战、身命107原段，累计183/849主段已电子审读，余666从L401婚姻章继续。历史人物多作譬例，不是完整输入占验，未造案例数据。身命末句明确寿夭另卜，不以概说生成寿命结论；L387维基转换标记保留原字并注疑。
+
+- 全部新增ID与范围集合核对、183entries验证0错。产品固定8e888beba31a822b0bb13aa15e758c118f6fae6d出口55资料/80889段/18666 source-reviewed；实际183原段状态与婚姻以后unreviewed核对过，18检索/分包测试通过。未改原文、ID、verified、golden或运行算法，未把数据验证称全代码/网页总验收。
+- 全量目标active，后续继续黄金策分门条件及其余古籍八术完整范围；未合main或部署。
+
 ## 最新接续：黄金策总断与天时76段
 
 上一轮有实际进展。本轮4aa6f83逐段审读黄金策L1–180共76原主段（含2元数据），完成总断千金赋与天时章。L182年时及后续未读，不称全书完成。原文/ID/verified不变。
