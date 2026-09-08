@@ -37,6 +37,7 @@ jobs:
       - run: python tools/test-source-cases.py
       - run: python tools/test-source-editions.py
       - run: python tools/test-export-runtime-evidence.py
+      - run: python tools/test-export-tiaohou.py
       - run: python tools/export-reading-notes.py
       - run: python tools/test-validate-gates.py
       - run: python tools/coverage-report.py --fail-under 54
