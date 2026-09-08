@@ -4,6 +4,14 @@
 
 两仓均为 `codex/full-library-completion`：古籍 `/Users/yuhanglin/.codex/worktrees/fateradar-classics-grok-full-library`；产品 `/Users/yuhanglin/.codex/worktrees/fateradar-product-grok-full-library`。原接手基准古籍2396e4c、产品8f1ca84。原main及他人admin/billing/.claude不改。本目标尚未合main或部署。
 
+## 最新接续：三命104段至781，长生禄死30位置与运行相合
+
+上一轮5e0645f/b7bf766已推送，属实际进展。本轮bc523f0完成L740–781天干阴阳生死长段13小节，累计104/970主段、117小节；下一L785论地支。
+
+- 十干生禄死明确位置与产品src/lib/engine/shensha.ts的changSheng实际调用30项全部一致，阳顺阴逆、戊随丙己随丁口径无需修复。证据docs/review/sanming-growth-runtime-audit-2026-09-09.json，未以30位证明全部流派、120状态来源或根气权重。
+- 后文土随水/医家土生及阴阳一体反论与末看命以前说为是分层。甲乙死活木取象不等永久无根状态；丁木燥湿、辛坐禄厚土不埋、戊旺印再生过中、壬财身不同与癸虚冲不可填真实四柱等保留。
+- 注释104entries验证0错，原文/ID/verified保持，无运行代码变更。本批未导出，产品知识仍6ef7fae/21881，运行e43cd38，案例3023项未变。nmem上下文及长生检索成功，全目标active，未合main或部署，继续地支及全库八术/页面余项。
+
 ## 最新接续：三命卷一语义读完，103段至736，下一740
 
 上一轮6ef7fae/945fcc8及产品16c9f54已推送，属实际进展。本轮5e0645f新增木水火土4主段、卷二题记及洪范首段，共6主段L685–736。卷一现有电子文字语义读完，累计103/970主段、104小节；下一L740论天干阴阳生死。
