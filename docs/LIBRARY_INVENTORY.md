@@ -16,10 +16,10 @@
 
 ## 实际语义加工进度
 
-- 已有段落注解：12147 / 53640
-- 标记电子原文审读 source-reviewed：12147（不是人工影印核验）
-- 有非空白话或处理说明的段落：12147（其中 source-reviewed：12147）
-- 尚无注解：41493；尚无段落白话：41493
+- 已有段落注解：13196 / 53640
+- 标记电子原文审读 source-reviewed：13196（不是人工影印核验）
+- 有非空白话或处理说明的段落：13196（其中 source-reviewed：13196）
+- 尚无注解：40444；尚无段落白话：40444
 - 原文字面重复段：9220（仅忽略空白比较，same_text_as 不代表流派或理论等价）
 
 上述是文件中实际存在的产物统计，不是全库完成率。模式分类只帮助找材料，未分类、只有规则标题或未审读白话都不能算完成。
@@ -43,7 +43,7 @@
 
 | 系统 | slug | 书名 | 文字文件 | 段落 | 注解 | 段落白话 | 规则定义 | 去向 | 影印 |
 |---|---|---|---:|---:|---:|---:|---:|---|---|
-| bazi | ditiansui-chanwei | 滴天髓阐微 | 是 | 5681 | 5124 | 5124 | 0 | engine | 已存影印／候选底本 |
+| bazi | ditiansui-chanwei | 滴天髓阐微 | 是 | 5681 | 5681 | 5681 | 0 | engine | 已存影印／候选底本 |
 | bazi | mingli-yueyan | 命理约言 | 是 | 540 | 540 | 540 | 0 | engine | 已存影印／候选底本 |
 | bazi | qiongtong-baojian | 穷通宝鉴 | 是 | 605 | 605 | 605 | 120 | engine | 尚未确认影印 |
 | bazi | sanming-tonghui | 三命通会 | 是 | 970 | 0 | 0 | 20 | engine | 已存影印／候选底本 |
@@ -55,14 +55,14 @@
 | divination | huangjin-ce | 黄金策 | 是 | 849 | 0 | 0 | 0 | knowledge | 尚未确认影印 |
 | divination | huozhu-lin | 火珠林 | 是 | 314 | 0 | 0 | 0 | engine | Release 影印／候选底本 |
 | divination | meihua-yishu | 梅花易数 | 是 | 623 | 623 | 623 | 1 | engine | 尚未确认影印 |
-| divination | zengshan-buyi | 增删卜易 | 是 | 3125 | 2657 | 2657 | 2 | engine | 尚未确认影印 |
+| divination | zengshan-buyi | 增删卜易 | 是 | 3125 | 3125 | 3125 | 2 | engine | 尚未确认影印 |
 | divination | zhouyi-zhezhong | 御纂周易折中 | 是 | 1622 | 0 | 0 | 0 | knowledge | Release 影印／候选底本 |
 | fengshui | dili-bianzheng | 地理辨正 | 是 | 2 | 0 | 0 | 0 | knowledge | 已存影印／候选底本 |
 | fengshui | dutian-baozhao-jing | 都天宝照经 | 是 | 101 | 0 | 0 | 0 | knowledge | 已存影印／候选底本 |
 | fengshui | hanlong-jing | 撼龙经 | 是 | 6 | 0 | 0 | 0 | knowledge | 已存影印／候选底本 |
 | fengshui | huangdi-zhaijing | 黄帝宅经 | 是 | 11 | 11 | 11 | 0 | knowledge | 已存影印／候选底本 |
 | fengshui | qingnang-aoyu | 青囊奥语 | 是 | 3 | 3 | 3 | 0 | knowledge | 已存影印／候选底本 |
-| fengshui | qingnang-jing | 青囊经 | 是 | 24 | 0 | 0 | 0 | knowledge | 尚未确认影印 |
+| fengshui | qingnang-jing | 青囊经 | 是 | 24 | 24 | 24 | 0 | knowledge | 尚未确认影印 |
 | fengshui | qingnang-xu | 青囊序 | 是 | 1 | 1 | 1 | 0 | knowledge | 已存影印／候选底本 |
 | fengshui | rudi-yan-quanshu | 入地眼全书 | 是 | 126 | 0 | 0 | 0 | knowledge | 尚未确认影印 |
 | fengshui | shenshi-xuankong-xue | 沈氏玄空学 | 是 | 1191 | 0 | 0 | 0 | knowledge | 尚未确认影印 |
@@ -108,20 +108,20 @@
 
 ## 段落分类来源
 
-- pattern 文本模式初筛：2647；annotation 实际语义注解：12147；unclassified 待分类：38846
+- pattern 文本模式初筛：2647；annotation 实际语义注解：13196；unclassified 待分类：37797
 - 四柱案例从正文命造或带评语的四组干支识别；起例、先取后取与月起顺逆等操作从正文识别。模式结果仍可能需修订，不当作人工审读。
 - 目录、序跋不硬造解读；无分类依据时保留待分类。疑字只标记，不由模型补字。
 
-- 待分类：38846
-- 评注或元数据：5102
-- 理论：2974
-- 案例：2867
-- 规则候选：2027
-- 序跋目录：705
-- 操作步骤：549
-- 术语：349
+- 待分类：37797
+- 评注或元数据：5576
+- 理论：3074
+- 案例：2975
+- 规则候选：2039
+- 序跋目录：772
+- 操作步骤：614
+- 术语：376
+- 重复：296
 - 待核实：121
-- 重复：100
 
 段落 ID 形如 `slug:L0123-L0125`，对应 `sources/fulltext/.../fulltext.md` 行号，明细在 `references/inventory/paragraphs/`。
 
