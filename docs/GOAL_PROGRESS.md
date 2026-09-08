@@ -4,6 +4,15 @@
 
 两仓均为 `codex/full-library-completion`：古籍 `/Users/yuhanglin/.codex/worktrees/fateradar-classics-grok-full-library`；产品 `/Users/yuhanglin/.codex/worktrees/fateradar-product-grok-full-library`。原接手基准古籍2396e4c、产品8f1ca84。原main及他人admin/billing/.claude不改。本目标尚未合main或部署。
 
+## 最新接续：阳宅星宫生克24节，下一1577穿宫
+
+上一轮有实际进展。本轮5db739e新增5节L1452–1576，第二正文连续L1219–1576共24节，五行生克诀读完；下一L1577穿宫九星。
+
+- 五星类×五宫类25组方向分别说明。武曲/破军同金、巨门/禄存同土却异判，生气木生火还怕过火，文曲廉贞被克仍凶；末相生吉相克凶不能覆盖具体例外。
+- 廉贞本宫凶与穿宫本宫荣保留；武曲乾兑俱阳入阴疑句不修，旧子数病灾亲属不作事实。5entries验证0错，5新节连续，图形未核。
+- 父段未完不导出，知识c21147c/21778运行e43cd38；原文/ID/verified保持，nmem继续502未反复重试。
+- 全目标active，未合main或部署；继续穿宫装卦图源及全库/八术余项。
+
 ## 最新接续：阳宅676卷五鬼九星19节，下一1452
 
 上一轮有实际进展。本轮b9ee727新增9节L1341–1451，第二正文连续L1219–1451共19节，父段draft；下一L1452五行生克诀。
