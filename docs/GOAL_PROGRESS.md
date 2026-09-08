@@ -4,6 +4,23 @@
 
 两仓均为 `codex/full-library-completion`：古籍 `/Users/yuhanglin/.codex/worktrees/fateradar-classics-grok-full-library`；产品 `/Users/yuhanglin/.codex/worktrees/fateradar-product-grok-full-library`。原接手基准古籍2396e4c、产品8f1ca84。原main及他人admin/billing/.claude不改。本目标尚未合main或部署。
 
+## 最新接手点：2026-09-08 · 识典来源与消费者已接通
+
+本节优先于下方旧记录。用户在核验识典后要求本助手接手继续完整开发；此前暂停已解除。持续Goal在任务`01a08089-4206-73c2-9357-33c374c713d5` active，原“查看古籍算法进度”已interrupted。不要把本批验收当全库完成。
+
+- 沿用两仓`codex/full-library-completion`施工树。接手时未提交稿已备份`/tmp/fateradar-takeover-20260908`，未动他人`.claude`/后台/billing/main/生产。
+- 识典：原审计59项，55包36候选对应/母书、19未检出对应；柳庄656字短篇和3本仅相关书未冒替。e006d96引入33版本21553段；78ef6f7修复267张表格及1174处charPic遗漏，33版图像引用1508，ID/顺序不变。父子返回用上游ID去重，网站译文不导入，不猜variants补字。新source段ID=slug:shidian-bookId:P上游ID，本地行锚独立。候选《命海全编》只在书房未校参考，不解除原算法排除或提升verified。
+- 原入地眼126段审读稿已8163946收尾，复查半纪六年/阴阳分组/游星七政/相生方向/八栋末重；未冒称全书对图。星命溯源主75段已072133d语义审读；ae4f88a补识典卷五23章115段/12299字符及独立注解，原主75ID不改。fa34424登记SK1603总247段、整体仍缺61章，33版净增88至21641段。
+- 固定主索引aa7f9c6取源：55主包/54主文件/53640主段，14364已注解、39276未注解，主ID/范围全不变。247规则定义/verified0，不能称全部运行。38补充版本在此快照26109段。后续卷五115语义与新奇门批次未混入旧统计，按实际新版本再更新。
+- 八字f51a580/9b64c9c：真实externalPillars与before/after actors/救应；本命月令/格名不变，流年同时加入所属大运。财用杀印来财/合财存印和印用官运合官已有原文分支；不以支藏财伪透财。旧五行喜忌评分撤下，待综合不等于平。未覆盖岁运隔位/禄劫支藏取用仍unknown，具体来源缺口在文档，不按第5/6柱距离假算。30文件350相关测试通过。
+- 六壬99bd855/091901a：DLD16–20共13组合分支，实际成员/逐边方向、空冲与阶段未定分开。七政e5fd7f7/8e14af3：11曜宫主表对照、紫气28/29年文本异说与未核105度历元分开，四余文案“本盘未判”非“古法不论”。小六壬d2b05af保留通行象义/起例，撤直接现实预言。
+- root消费者3d6e6b3：八字完整时间选择传服务端重算；timing.before/after/transitChecks与sourceIDs给追问；各期history/pending/error分开、旧请求闭包回写旧期，共享busy避免并发。六壬季节/贵人异说/组合、七政basis/rulerChecks、小六壬step/how都进同一context。书房新增识典原页与图像提示。针对性41chat测试通过。
+- 产品固定378e99cf115775b03c1a71b76849bbab93666b14全验：84文件2529测试、typecheck、lint:ci、Node生产build均过。目录`/tmp/fateradar-verify-378e99cf`，日志`/tmp/fateradar-378e99cf-{tests,types,lint,build}.log`。古籍固定aa7f9c6899edd0855ae7c14824a1322d8bfb9a67稀疏快照16组CI同类检查全过，含新import测试、coverage>=54、wildcard<=15；日志`/tmp/fateradar-classics-aa7f9c68-checks.log`。这些精确版本通过不代表之后新增批次已做全量验证。
+- 知识初次产品固定8733dc1：55份资料/79443段/15900电子审读，已实查命海“五星起例”原字/字图/待校/来源链接。fa34424新增卷五正做下一次固定导出，数据变更只跑来源和检索必要校验，不重复全代码构建。
+- ego仍空间7，旧5186用户页不动；新库页localhost5188，八字测试tab7AAB7B8FE3B15670F8B90CCE0DD5E0D8为合成档案pmtsfqxm801pm。工具click无效时DOM click已确认，2024甲辰→2025乙巳时流月列表与年度要点同步；比劫本命不变，运年未算完明确unknown。未调用真实付费模型。只有DOM/语义验收，不宣称截图视觉全验。
+
+当前分工：qimen_finish继续阳八及后续原纸，独占奇门normalized/annotations/component-candidates/产品fixture；bazi_transits审读珞琭子156主段；liuren_finish审读火珠林314主段；root拥有通用索引/出口、消费者和总验收。各agent已完的小提交不能冒充其下一批完成。继续39276主段及尚未完成算法/真实消费者范围，不做通用待核批量填充。
+
 ## 最新接续点：2026-09-08 17:05
 
 此段优先于下方旧接续记录。完整目标仍active；本命与六爻新增批次有固定提交验证，但全库/八术完整目标尚未总验收，没有合main或部署。
