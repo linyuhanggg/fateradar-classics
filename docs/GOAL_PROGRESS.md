@@ -4,6 +4,15 @@
 
 两仓均为 `codex/full-library-completion`：古籍 `/Users/yuhanglin/.codex/worktrees/fateradar-classics-grok-full-library`；产品 `/Users/yuhanglin/.codex/worktrees/fateradar-product-grok-full-library`。原接手基准古籍2396e4c、产品8f1ca84。原main及他人admin/billing/.claude不改。本目标尚未合main或部署。
 
+## 最新接续：渊海地支体象伤官160主段，下一行356
+
+上一轮有实际进展。本轮fe3599c新增50主段至L354，十二支体象及论伤官，累计160段；下一L356伤官说。
+
+- 伤官泛忌官与五类诗金水见官/水木财官等不同层用relatedParagraphIds关联；重复月伤官、才傲物不计独立证据。官透、财运支有根与干虚露不混，伤尽身弱财运句不改旺，印绶若伤尽/若有伤官祸随等疑字留。
+- 地支别称非神将，未藏官印不藏财未指日主不改实际藏干；辰开库三冲诗无范围不造阈值。原文/ID/verified保持，运行引擎未改。
+- 160entries验证0错；固定fe3599c8c60fb46c9a2eb7119f700c0ce55af5f0导出55包80889段source_reviewed19526，18知识测试通过，160主段切片一致，参考1988段仍未审。
+- 完整目标active，未合main或部署；继续L356及后续财官印格原文，再对照现有运行条件。
+
 ## 最新接续：渊海征岁大运体象110主段，下一行254
 
 上一轮有实际进展。本轮80475b9新增47主段至L252，读征太岁、大运、疾病、性情与十天干体象，累计110段；下一L254地支体象。
