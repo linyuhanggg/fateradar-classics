@@ -4,6 +4,15 @@
 
 两仓均为 `codex/full-library-completion`：古籍 `/Users/yuhanglin/.codex/worktrees/fateradar-classics-grok-full-library`；产品 `/Users/yuhanglin/.codex/worktrees/fateradar-product-grok-full-library`。原接手基准古籍2396e4c、产品8f1ca84。原main及他人admin/billing/.claude不改。本目标尚未合main或部署。
 
+## 最新接续：渊海印绶倒食劫财353主段，下一行774
+
+上一轮有实际进展。本轮58e7dda新增52主段至L772，读印绶、倒食、劫财，累计353段；下一L774神煞部分。
+
+- 印忌财与印过财救通过relatedParagraphIds关联，印多为上仍有身旺过扶例外；官生我省略印中介不改五行。倒食断食财/破坏食制杀分链，三丁例幼印助后财杀坏印不按名称吉凶。
+- 酉称金库、丙丁火属木等疑文不改基础；逆刃为劫财别名不添羊刃，败财/劫财亲属说内部差异保留。原文/ID/verified保持，运行引擎未改。
+- 353entries验证0错；固定58e7ddacbf77296d501b4108ea4bb4474c3cf609导出55包80889段source_reviewed19719，18知识测试通过，353主段切片一致，参考1988未审。
+- 完整目标active，未合main或部署。继续神煞及后续主文，并对照已实现规则出处/边界。
+
 ## 最新接续：渊海偏官七杀301主段，下一行664
 
 上一轮有实际进展。本轮6be9943新增47主段至L662，正官诗末、偏官七杀与官多/混杂论，累计301段；下一L664印绶。
