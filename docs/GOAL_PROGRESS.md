@@ -4,6 +4,14 @@
 
 两仓均为 `codex/full-library-completion`：古籍 `/Users/yuhanglin/.codex/worktrees/fateradar-classics-grok-full-library`；产品 `/Users/yuhanglin/.codex/worktrees/fateradar-product-grok-full-library`。原接手基准古籍2396e4c、产品8f1ca84。原main及他人admin/billing/.claude不改。本目标尚未合main或部署。
 
+## 最新接续：黄金策总断与天时76段
+
+上一轮有实际进展。本轮4aa6f83逐段审读黄金策L1–180共76原主段（含2元数据），完成总断千金赋与天时章。L182年时及后续未读，不称全书完成。原文/ID/verified不变。
+
+- L88赋文与L89–101后附注释分层，附注作者未明，不归刘基原说；旧题作者不当考定。生扶/刑冲、旺空/墓、伏飞、暗动/合绊、进退与六神六亲联合条件及前后例外保留，不从概论直接扩应期/医学/天气运行规则。
+- 单文件76entries验证0错，目标原段ID集合与L1–180完全对应。产品固定4aa6f830f70157f4aeb14483ef49204515cad743出口55资料/80889段/18559 source-reviewed；实际76行及后附注释说明保留，年时以后主段仍unreviewed，18检索/分包测试通过。没有重复旧全代码/网页总验收。
+- 下一步从黄金策L182年时章继续，余773主段尚未审读（849总主段口径）。库存报告仍上轮固定37bbde0/16155主注解，下一批有必要再刷新，不将两时点混用。全量目标active，未合main或部署。
+
 ## 最新接续：全库固定库存与真实剩余量
 
 上一轮有实际进展。本轮从固定37bbde0ab2f43ba1f6fd22ec90b70c18a08cce3a稀疏快照重建主库、补充版、知识栏目三索引，三个JSON记录sourceRevision，两份报告注明固定源。主53640 ID及行范围逐项与重建前相同，未改原文。
