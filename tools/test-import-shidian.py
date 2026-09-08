@@ -70,6 +70,78 @@ class ImportShidian(unittest.TestCase):
             self.assertFalse(result['catalogComplete'])
             self.assertEqual(result['missingChapters'][0]['chapterId'], 'b')
 
+    def test_real_table_cell_text_is_kept_with_row_column_address(self):
+        with tempfile.TemporaryDirectory() as temp:
+            root = Path(temp); source = self.fixture(root)
+            path = source / 'chapters/a.json'; data = json.loads(path.read_text())
+            # SK1618 P7639154009312411657 的真实表格结构。
+            table = {'head': '', 'rows': [{'cells': [{'paraList': [{'lines': [
+                {'lineId': '', 'lineNum': 1107, 'lineType': 1, 'content': '行狼了戾孤辰單陰純陰',
+                 'logicSentenceId': '0', 'marginNoteIdList': None, 'pinYin': None}],
+                'indent': 0, 'textIndent': False}], 'cellType': 2, 'rows': 1, 'cols': 1}]}]}
+            data['paragraphs'][0]['content'] = json.dumps({'lines': [
+                {'lineId': '973', 'lineNum': 0, 'lineType': 12, 'content': '', 'table': table}]})
+            path.write_text(json.dumps(data))
+            result = module.import_book(source, root, 'book')
+            text = (root / result['file']).read_text()
+            self.assertIn('第1行，第1列：行狼了戾孤辰單陰純陰', text)
+            self.assertNotIn('源段仅含版面标记', text)
+
+    def test_real_char_picture_keeps_its_place_uri_and_unicode_without_guessing_variant(self):
+        with tempfile.TemporaryDirectory() as temp:
+            root = Path(temp); source = self.fixture(root)
+            path = source / 'chapters/a.json'; data = json.loads(path.read_text())
+            # HY1521 缺字图与 HY0057 卦图的实际字段。
+            data['paragraphs'][0]['content'] = json.dumps({'lines': [
+                {'lineId': '1', 'lineType': 1, 'content': '烈可'},
+                {'lineId': '2', 'lineType': 1, 'content': ' ', 'charPic': {
+                    'unicode': ' ', 'uri': 'read/HY0785/1/ref/1kodyq71ljm6r/1-fcf90ee2befff516.webp',
+                    'components': '亠丷冖古攵', 'variants': '敵', 'charPicId': '7456690885151096895'}},
+                {'lineId': '3', 'lineType': 1, 'content': '剛'},
+                {'lineId': '4', 'lineType': 1, 'content': '', 'charPic': {
+                    'unicode': '&#22270;', 'uri': 'read/HY0057/1/ref/figure.webp'}}]})
+            path.write_text(json.dumps(data))
+            result = module.import_book(source, root, 'book')
+            text = (root / result['file']).read_text()
+            self.assertIn('烈可\n〔此处为字形或图像', text)
+            self.assertIn('源字符：图', text)
+            self.assertNotIn('烈可\n敵\n剛', text)
+            rows = json.loads((root / result['paragraphIndex']).read_text())['paragraphs']
+            figures = json.loads((root / result['file']).with_name('figures.json').read_text())
+            self.assertEqual(rows[0]['figureCount'], 2)
+            self.assertEqual(figures[0]['kind'], 'charPic')
+            self.assertEqual(figures[0]['uri'], 'read/HY0785/1/ref/1kodyq71ljm6r/1-fcf90ee2befff516.webp')
+
+    def test_empty_table_is_preserved_as_an_empty_cell_not_a_page_marker(self):
+        with tempfile.TemporaryDirectory() as temp:
+            root = Path(temp); source = self.fixture(root)
+            path = source / 'chapters/a.json'; data = json.loads(path.read_text())
+            data['paragraphs'][0]['content'] = json.dumps({'lines': [
+                {'lineId': '974', 'lineType': 12, 'content': '', 'table': {'head': '', 'rows': [
+                    {'cells': [{'paraList': [], 'cellType': 2, 'rows': 1, 'cols': 1}]}]}}]})
+            path.write_text(json.dumps(data))
+            result = module.import_book(source, root, 'book')
+            self.assertIn('第1行，第1列：〔空单元格〕', (root / result['file']).read_text())
+
+    def test_repeated_paragraph_must_compare_embedded_cell_text_and_image_identity(self):
+        for payload in [
+            {'lineId': '1', 'content': '', 'table': {'head': '', 'rows': [
+                {'cells': [{'paraList': [{'lines': [{'content': '行狼了戾孤辰單陰純陰'}]}],
+                            'cellType': 2, 'rows': 1, 'cols': 1}]}]}},
+            {'lineId': '1', 'content': '', 'charPic': {'unicode': '&#22270;', 'uri': 'real-figure.webp'}},
+        ]:
+            with self.subTest(payload=payload), tempfile.TemporaryDirectory() as temp:
+                root = Path(temp); source = self.fixture(root)
+                path = source / 'chapters/b.json'; data = json.loads(path.read_text())
+                # Leave top-level text empty in both copies, vary only the embedded original field.
+                other = source / 'chapters/a.json'; original = json.loads(other.read_text())
+                original['paragraphs'][1]['content'] = json.dumps({'lines': [{'lineId': '1', 'content': ''}]})
+                other.write_text(json.dumps(original))
+                data['paragraphs'][0]['content'] = json.dumps({'lines': [payload]})
+                path.write_text(json.dumps(data))
+                with self.assertRaisesRegex(ValueError, 'Conflicting.*200'):
+                    module.import_book(source, root, 'book')
+
     def test_conflicting_text_for_same_source_id_cannot_be_silently_overwritten(self):
         with tempfile.TemporaryDirectory() as temp:
             root = Path(temp); source = self.fixture(root)

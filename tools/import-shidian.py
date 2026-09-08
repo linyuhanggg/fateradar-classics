@@ -4,6 +4,7 @@ from __future__ import annotations
 
 import argparse
 import json
+from html import unescape
 from collections import Counter
 from pathlib import Path
 
@@ -21,7 +22,25 @@ def original_lines(paragraph):
 
 
 def content_identity(paragraph):
-    return [(line.get('content', ''), line.get('figure', {}).get('uri')) for line in original_lines(paragraph)]
+    # Signed URLs and reading annotations may change between saved chapter responses;
+    # compare the actual text / image identity / table cells, not those derived fields.
+    return [(line.get('content', ''), line.get('figure', {}).get('uri'),
+             {key: line.get('charPic', {}).get(key) for key in ('uri', 'unicode', 'components', 'variants')},
+             line.get('table')) for line in original_lines(paragraph)]
+
+
+def table_lines(table):
+    """Keep source cell addresses; the saved Shidian tables have no merged cells."""
+    lines = ['〔原表开始；以下行列号用于保留单元格对应〕']
+    if table.get('head'):
+        lines.append(f"表题：{table['head']}")
+    for row_number, row in enumerate(table['rows'], 1):
+        for column_number, cell in enumerate(row['cells'], 1):
+            content = '\n'.join(line['content'] for para in cell['paraList']
+                                for line in para['lines'] if line.get('content', '').strip())
+            lines.append(f"第{row_number}行，第{column_number}列：{content or '〔空单元格〕'}")
+    lines.append('〔原表结束〕')
+    return lines
 
 
 def import_book(source: Path, root: Path, slug: str) -> dict:
@@ -64,6 +83,17 @@ def import_book(source: Path, root: Path, slug: str) -> dict:
                     figures.append({'paragraphId': paragraph['paragraphId'], 'chapterId': paragraph['chapterId'],
                                     'lineId': line['lineId'], 'uri': line['figure'].get('uri'),
                                     'upstreamUrl': f"https://www.shidianguji.com/book/{book_id}/chapter/{paragraph['chapterId']}"})
+                if line.get('charPic'):
+                    picture = line['charPic']
+                    char = unescape(picture.get('unicode', '')).strip()
+                    body.append('〔此处为字形或图像，' + (f'源字符：{char}；' if char else '') +
+                                '原图保留，未据异体字提示补字；请对照本段原网页。〕')
+                    figures.append({'paragraphId': paragraph['paragraphId'], 'chapterId': paragraph['chapterId'],
+                                    'lineId': line['lineId'], 'kind': 'charPic', 'uri': picture.get('uri'),
+                                    'unicode': picture.get('unicode', ''),
+                                    'upstreamUrl': f"https://www.shidianguji.com/book/{book_id}/chapter/{paragraph['chapterId']}"})
+                if line.get('table'):
+                    body.extend(table_lines(line['table']))
                 if line.get('content', '').strip():
                     body.append(line['content'])
             if not body:
@@ -77,7 +107,7 @@ def import_book(source: Path, root: Path, slug: str) -> dict:
                          'upstreamChapterId': paragraph['chapterId'],
                          'upstreamPageIds': list(dict.fromkeys([paragraph['startPageId'], paragraph['endPageId']])),
                          'upstreamUrl': f"https://www.shidianguji.com/book/{book_id}/chapter/{paragraph['chapterId']}",
-                         'figureCount': sum(bool(line.get('figure')) for line in source_lines)})
+                         'figureCount': sum(bool(line.get('figure')) + bool(line.get('charPic')) for line in source_lines)})
             lines.append('')
             # Preserve actual source line types and page markers, excluding derived translations.
             originals.append({key: value for key, value in paragraph.items() if key != 'translateContent'})
