@@ -4,6 +4,14 @@
 
 两仓均为 `codex/full-library-completion`：古籍 `/Users/yuhanglin/.codex/worktrees/fateradar-classics-grok-full-library`；产品 `/Users/yuhanglin/.codex/worktrees/fateradar-product-grok-full-library`。原接手基准古籍2396e4c、产品8f1ca84。原main及他人admin/billing/.claude不改。本目标尚未合main或部署。
 
+## 最新接续：六壬点选组合联动与追问验收
+
+上一轮有实际进展。本轮查到新组合在总览/追问有数据，但课传分析选宫只显示基础信息。产品eae87c4补按成员实际天盘支+地盘支关联的组合解释，复用同盘points稳定ID；点传/课/宫均通过currentPalace定位，不按名字搜索。形态满足而当前unknown仍展示真实限制。
+
+- 配对函数先红后绿，20组合相关测试通过；43对话测试验证新DLD21/22位置、sourceFragmentIndex及条件不丢，typecheck/改动ESLint通过，未调用付费模型。
+- ego空间7实际本地2023-03-05 20:00上海盘：点戌宫亥神显示进连茹、自取乱首，链接固定a6c0182 L16015和L12677；改选午宫未神关联栏为0，不残留旧组合。只DOM/交互验收，未称截图视觉全验。保留任务空间用于完整目标，5186用户旧页未动。
+- 未改排盘事实/原文/verified/golden，未合main或部署。全量目标active，继续真实算法与全库缺口，不把本页局部联动当八术总验收。
+
 ## 最新接续：日辰加临四方向进入运行解释
 
 上一轮有实际进展。本轮核贵人时制/盘位一致，无虚构故障；实际新增a6c0182 DLD-E-22订讹乱首赘婿4引文片段，表达自取乱首、上门乱首、干临支赘婿、支临干赘婿。实际ring定位与日干五行分离，乙寄辰仍为乙木；未发用不取消基本形态，发用另标加强。
