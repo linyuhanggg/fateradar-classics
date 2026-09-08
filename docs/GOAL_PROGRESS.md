@@ -4,6 +4,13 @@
 
 两仓均为 `codex/full-library-completion`：古籍 `/Users/yuhanglin/.codex/worktrees/fateradar-classics-grok-full-library`；产品 `/Users/yuhanglin/.codex/worktrees/fateradar-product-grok-full-library`。原接手基准古籍2396e4c、产品8f1ca84。原main及他人admin/billing/.claude不改。本目标尚未合main或部署。
 
+## 最新接续：地理辨正天玉29节，下一行1266
+
+上一轮有实际进展。本轮1d42165新增S065–S093，正文工作稿连续覆盖L7–1265。天玉内传上中下与蒋注逐节区分；零正分别作用山/向/水，父母子息与六爻六亲不同，水交战救制、公位受不受、出卦返卦等条件保留。所驳八宫四吉表不采纳，打劫及倒排未书细诀不猜补。
+
+- 2entries注解0错，93节相邻行连续断言通过。长父段仍draft，L1266宝照经起未读；本批未导出不完整正文，产品仍固定e64f15d/19338。原文/ID/verified不变。
+- 下一步宝照及余文，全文真正读完才提升source-reviewed。全量目标active，未合main或部署，不重复旧全代码验证。
+
 ## 最新接续：地理辨正奥语18节，下一行1089
 
 上一轮有实际进展。本轮17ea5d3新增S047–S064，连续覆盖L7–1088。原文、姜氏说、蒋注及所驳俗说分层。四组山星不是固定等号；传送功曹为护龙形势；十义实际前八加末二叮咛；倒杖两节限山龙、化气兼平地；生克在此有生旺衰败特殊解释，未嫁接其他术数算法。L948五凶名数及语句疑点保留。
