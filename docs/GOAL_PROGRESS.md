@@ -4,6 +4,15 @@
 
 两仓均为 `codex/full-library-completion`：古籍 `/Users/yuhanglin/.codex/worktrees/fateradar-classics-grok-full-library`；产品 `/Users/yuhanglin/.codex/worktrees/fateradar-product-grok-full-library`。原接手基准古籍2396e4c、产品8f1ca84。原main及他人admin/billing/.claude不改。本目标尚未合main或部署。
 
+## 最新接续：渊海六亲485主段，下一行1070
+
+上一轮有实际进展。本轮a65c8e6新增45主段至L1068，母兄弟妻妾子息开头，累计485段；下一L1070子息后文。
+
+- 女食伤子女映射与总论相反、生成数旺倍死半/十二运子数/一杀一子数法相异建立关联，原无杀运来可有子也保留。不用历史数法输出真实生育数量性别。
+- 六亲宫星、合克与亲属道德婚史健康旧断分开，未造实际人物事实；原文/ID/verified保持，运行引擎未改。
+- 485entries验证0错；固定a65c8e654aec75dade27542b0f01478f0228ef03导出55包80889段source_reviewed19851，18知识测试通过，485主段切片一致，参考1988未审。
+- 全目标active，未合main或部署；继续主文后续、其余资料和运行规则对照。
+
 ## 最新接续：渊海魁罡金神六亲440主段，下一行972
 
 上一轮有实际进展。本轮ae44fcc新增38主段至L970，魁罡金神六亲总论及论父，累计440段；下一L972论母。
