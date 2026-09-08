@@ -4,6 +4,14 @@
 
 两仓均为 `codex/full-library-completion`：古籍 `/Users/yuhanglin/.codex/worktrees/fateradar-classics-grok-full-library`；产品 `/Users/yuhanglin/.codex/worktrees/fateradar-product-grok-full-library`。原接手基准古籍2396e4c、产品8f1ca84。原main及他人admin/billing/.claude不改。本目标尚未合main或部署。
 
+## 最新接续：固定a32902d完整回归与Node构建通过
+
+上一轮有实际进展。本轮对近期六壬/六爻及URL改动做跨功能自动验收，固定产品a32902d4aeaf21d2b77388a29fa8e263a1c7e4c8的git archive快照，88文件2972项测试、typecheck、lint:ci全过。默认Cloudflare构建及部署脚本实际使用的FATERADAR_TARGET=node构建分别通过，Node产物preset=node-server且index.mjs存在。没有刷新golden或改算法迎合测试。
+
+- 快照/var/folders/0h/69k_81w53y16rjs7vnbvj7y80000gn/T/fateradar-fullcheck-a32902d-wuaxqdff；日志/tmp/fateradar-a32902d-{tests,types,lint,build,build-node}.log。构建有大分包/插件耗时提示，不冒称零警告。完整报告在产品docs/implementation/full-regression-2026-09-08-a32902d.md。
+- 各内容模块固定版本单列：知识dc1029f、六壬a6c0182、六爻4628d5d、reading-notes a8edc92。完整自动检查不证明全文影像校勘、现实预测或全库八术已全部交付。
+- 这是验证得到的新证据，不是停工。完整目标active；下一步继续真实未处理书文/算法条件，已经固定通过的检查不无故重跑。未合main或部署。
+
 ## 最新接续：六爻伏变入口及数字卦链接修复
 
 上一轮有实际进展。本轮补页面明爻之外的候选入口，伏神/变爻定位所属爻，月日单列；不误标明爻身份。网页发现gua=100000被默认路由解析成number，旧校验丢弃后退回时间起卦，真实把复换成井。已修复六位01数字卦体及数字seed回字符串；其他参数规则不扩张。
