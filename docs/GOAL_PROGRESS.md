@@ -4,6 +4,15 @@
 
 两仓均为 `codex/full-library-completion`：古籍 `/Users/yuhanglin/.codex/worktrees/fateradar-classics-grok-full-library`；产品 `/Users/yuhanglin/.codex/worktrees/fateradar-product-grok-full-library`。原接手基准古籍2396e4c、产品8f1ca84。原main及他人admin/billing/.claude不改。本目标尚未合main或部署。
 
+## 最新接续：阳宅十书开头9节，下一行124
+
+上一轮印用官替代官修复有实际进展。本轮复查财用杀印采用者均为透印，现索引未发现混取藏干错误，不改该分支。随后推进15套未建主文注释之一阳宅十书。
+
+- 9ea4d2e建立references/annotations/fengshui/yangzhai-shishu.json：开头2元信息已审，第675卷正文L12–123共9节部分审读，父段L12–1213仍draft。已读外形总论、坑坎、何知、桥梁；L124图说起待审。
+- 一至四是图书集成收录分段不径判原十书后六论缺；四兽山形非别术神将/行星，何知含阴宅语境不全作阳宅。图L94占位未复原，后图说错排不可忽略，旧病灾亲属断不当现场工程事实。
+- 3entries验证0错，9小节连续；未导出未完成父段，产品知识仍0f4138f/21775，代码仍e43cd38。原文/ID/verified保持。nmem本轮继续502，未反复重试或切换。
+- 下一L124图说与后福元章，且继续全库/八术未完条件；全目标active，未合main或部署。本轮没有新运行bug，不制造发现或重复测试。
+
 ## 最新接续：印绶用官岁运替代官误判已修
 
 上一轮渊海主文完成入库有实际进展。本轮转运行条件检查，产品e43cd38修正geju-transits中印用官“旧官全部被合”必要条件：只有当前没有其他可作用正官才可据此直接判不满足；有替代官保留完整复查结果。
