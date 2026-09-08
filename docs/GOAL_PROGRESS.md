@@ -4,6 +4,15 @@
 
 两仓均为 `codex/full-library-completion`：古籍 `/Users/yuhanglin/.codex/worktrees/fateradar-classics-grok-full-library`；产品 `/Users/yuhanglin/.codex/worktrees/fateradar-product-grok-full-library`。原接手基准古籍2396e4c、产品8f1ca84。原main及他人admin/billing/.claude不改。本目标尚未合main或部署。
 
+## 最新接续：卜筮正宗四静卦组件原例回归
+
+上一轮有实际进展，独发独静已接运行。本轮fe83225转录原书四张静卦：L4216复辛卯申月、L3538贲壬辰卯月、L4329小畜庚子未月、L4098否甲午卯月。逐项录主卦六爻支亲/世应，源文明确月日；不补变卦、公元年或投币种子。
+
+- 沿既有export-source-cases校验审读父段和逐片引文，固定fe8322586af67c4d813bc2c9d00b9a065c731d3f导出4cases/4recomputable/verified0。canRecompute只限装卦组件，报告的后验不进入expected；复的问新子转旧子、小畜复述及否的未定位清明时刻保留。
+- 原题、24条主爻支亲五行、世应都与现引擎相符，无需改盘。复上酉实际暗动且BSZZ-E-01独发，贲午伏父空、小畜辰空未不空另核通过。初次测试误以带宫序展示name比纯卦名失败，改用buildLiuyaoStructure.name而未改原书预期。
+- 新6测试+相关独发和既有原书组件共3文件22测试通过，tsc及新增测试eslint通过。仅增加真实来源回归，运行代码、知识库和引擎来源版本未变；未重新宣称全代码总验收。
+- 全量目标active，仍需更多可复算案例/未完成算法条件与其余书/版本审读。未合main或部署，原文/verified不改，未把4组件通过当预测有效性验证。
+
 ## 最新接续：六爻独发独静条件与免费解释已接入
 
 上一轮有实际进展，卜筮正宗现有文字全审。本轮从L4175–4176第十五问落实BSZZ-E-01/02，古籍b8150a7固定来源，执行定义验证14包251规则511片段通过，六爻来源包21条。未把结构分布当吉凶或应期。
