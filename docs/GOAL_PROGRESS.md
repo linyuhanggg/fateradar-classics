@@ -4,6 +4,15 @@
 
 两仓均为 `codex/full-library-completion`：古籍 `/Users/yuhanglin/.codex/worktrees/fateradar-classics-grok-full-library`；产品 `/Users/yuhanglin/.codex/worktrees/fateradar-product-grok-full-library`。原接手基准古籍2396e4c、产品8f1ca84。原main及他人admin/billing/.claude不改。本目标尚未合main或部署。
 
+## 最新接续：渊海寸金搜髓978主段，下一行2124
+
+上一轮有实际进展。本轮ac9401a新增46主段至L2122，寸金寒暖相济、亲属旧象与日柱诗，累计978段；下一L2124。
+
+- 火炎水寒调剂须实际强弱，印身过旺财官可转用关联前文；乙巳贵妻/孤穷诗差异与仅日柱非完整盘保留。坐财官统称不补每支三神，亦不把无财官等同无用。
+- 病产亲属品行旧象不作现实结论，原文/ID/verified保持，运行引擎未改。
+- 978entries验证0错；固定ac9401a2761391ee2c9a7efaf24e42c607d7d13a导出55包80889段source_reviewed20344，18知识测试通过，978主段切片一致，参考1988未审。
+- 全目标active，未合main或部署；继续寸金及其余主文、八术条件与联动工作。
+
 ## 最新接续：渊海兴亡宝法932主段，下一行2032
 
 上一轮有实际进展。本轮7eba4f7新增29主段至L2030，群兴末、兴亡、宝法两篇与寸金搜髓开头，累计932段；下一L2032。
