@@ -97,8 +97,8 @@ def main():
     # Publish only a committed source snapshot. OCR page edits can otherwise shift
     # global line anchors while the export still labels itself with the old HEAD.
     source_paths = ["references/inventory", "references/annotations", "references/source-editions.json", "references/source-quality.json", "sources/fulltext", "sources/normalized"]
-    present = [path for path in source_paths if subprocess.check_output(["git", "ls-tree", "HEAD", "--", path], cwd=ROOT)]
-    archive = subprocess.check_output(["git", "archive", "--format=tar", "HEAD", "--", *present], cwd=ROOT)
+    present = [path for path in source_paths if subprocess.check_output(["git", "ls-tree", revision, "--", path], cwd=ROOT)]
+    archive = subprocess.check_output(["git", "archive", "--format=tar", revision, "--", *present], cwd=ROOT)
     with tempfile.TemporaryDirectory(prefix="fateradar-knowledge-export-") as folder:
         with tarfile.open(fileobj=io.BytesIO(archive)) as bundle:
             bundle.extractall(folder, filter="data")
