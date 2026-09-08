@@ -4,6 +4,15 @@
 
 两仓均为 `codex/full-library-completion`：古籍 `/Users/yuhanglin/.codex/worktrees/fateradar-classics-grok-full-library`；产品 `/Users/yuhanglin/.codex/worktrees/fateradar-product-grok-full-library`。原接手基准古籍2396e4c、产品8f1ca84。原main及他人admin/billing/.claude不改。本目标尚未合main或部署。
 
+## 最新接续：渊海偏官七杀301主段，下一行664
+
+上一轮有实际进展。本轮6be9943新增47主段至L662，正官诗末、偏官七杀与官多/混杂论，累计301段；下一L664印绶。
+
+- 制伏不足/过量与原制后运分开，日杀怕冲刃与时杀不怕按位置关联。偏官七杀有制命名是作用非改十神；同类官虽多纯与正偏混不可按数量一刀判断。
+- 戊癸合例癸藏子属该例暗合文本，不静默扩透干运行规则；寅午火局不补戌。重复诗句不计独立支持，旧人物/灾病句不作事实。
+- 301entries验证0错；固定6be9943ecbd1b94b6a05439aa7951d293ef0c014导出55包80889段source_reviewed19667，18知识测试通过，301主段切片一致，参考1988未审。
+- 原文/ID/verified保持，运行引擎未改；完整目标active，未合main或部署。继续印绶及后文，再与现有可计算条件逐项对照。
+
 ## 最新接续：渊海财官254主段，下一行564
 
 上一轮有实际进展。本轮1046ec0新增42主段至L562，读正财后半、偏财与正官论当前段落，累计254段；下一L564。
