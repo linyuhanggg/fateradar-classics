@@ -1,0 +1,30 @@
+{
+  "version": 1,
+  "sourcePath": "sources/normalized/san-shi/qimen-dunjia-tongzhi/nlc-layouts.md",
+  "sourcePdf": "sources/facsimile/other/qimen-dunjia-tongzhi/NLC416-12jh003951-48665.pdf",
+  "verified": false,
+  "note": "只认定所列正文范围已按原影印对字；一条简表不能代表整页、整局或全部六卷。",
+  "pages": [
+    {
+      "pdfPage": 93,
+      "status": "partial",
+      "scope": "阳一局乙丑时条的原局/日组/时柱/符使/原宫数与节令栏",
+      "notes": [
+        "原宫数按纸面九二记录，没有从产品输出填期望。",
+        "甲己日只表示原文日干组，不在输入中选定其中一个日干。",
+        "未给全九宫星门仪神，不由符使简表倒填完整布局。"
+      ],
+      "unresolved": [
+        "同页其余时条与附加格断本轮未转录；后续补充保持此条相对行范围。"
+      ],
+      "rangeCoordinates": "PDF标题行0，其后按页内相对行号",
+      "reviewedRanges": [
+        {
+          "startLine": 5,
+          "endLine": 10,
+          "scope": "纸本局题、日组、时柱、符使和两项原宫数，原字已核；不含现代释字"
+        }
+      ]
+    }
+  ]
+}
