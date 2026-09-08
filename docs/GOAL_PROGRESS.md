@@ -4,6 +4,16 @@
 
 两仓均为 `codex/full-library-completion`：古籍 `/Users/yuhanglin/.codex/worktrees/fateradar-classics-grok-full-library`；产品 `/Users/yuhanglin/.codex/worktrees/fateradar-product-grok-full-library`。原接手基准古籍2396e4c、产品8f1ca84。原main及他人admin/billing/.claude不改。本目标尚未合main或部署。
 
+## 最新接续：阳宅677卷62节文字至末，找回月日缺图及太阳表
+
+上一轮4f9d830/bb84faa已推送，属实际进展。本轮c9a78ac新增2节L2598–2605，第三正文62节完整覆盖电子文字L1865–2605，但父段继续draft：图文仍待逐格核齐，不导出正式产品。
+
+- ego-browser34看pic1870是太阴初一至初四，pic1872是二十三至三十，不能把第二张叫太阳表。第677卷渲染无1871，Page第101（修订1899502）提示缺pic1873。图。
+- 实际打开Page:Gujin Tushu Jicheng, Volume 476 (1700-1725).djvu/101的3840×5420整页：太阴初五至二十二存在，太阳十二月表也存在，是网页图文未收齐而非据此宣称古本缺文。原扫描实题逐月太阳、目录逐日，分别保留。
+- 太阳12月/24节气宫位目读旁录solar-table-transcription.json（draft/verified=false），按节气转换且原注每年时历可考；未接入算法，不假定农历初一换宫。太阴全30日来源已定位，360格及换宫时辰尚未逐格转录核验。
+- 图源报告目录增加整页/中栏/太阳/两太阴图证据；既有46链接中6图局部视觉证据、40未审，新增整页另记。7entries验证0错，62节连续，原文/ID/verified保持。知识仍555f606/21780、运行e43cd38。
+- nmem上下文及恢复授权检索成功，全目标active，未合main或部署。接下来继续缺图逐格恢复和第四卷2611起，其余全库八术工作仍保留。
+
 ## 最新接续：阳宅677卷60节，月表540宫比较，下一2598
 
 上一轮733a6f3/2f9d56b生命表核对已推送，属实际进展。本轮4f9d830新增9节L2523–2597，第三正文60节连续L1865–2597，父段draft。下一L2598逐日太阴及卷末两图，再接第四卷。
