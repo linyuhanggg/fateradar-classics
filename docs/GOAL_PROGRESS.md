@@ -4,6 +4,15 @@
 
 两仓均为 `codex/full-library-completion`：古籍 `/Users/yuhanglin/.codex/worktrees/fateradar-classics-grok-full-library`；产品 `/Users/yuhanglin/.codex/worktrees/fateradar-product-grok-full-library`。原接手基准古籍2396e4c、产品8f1ca84。原main及他人admin/billing/.claude不改。本目标尚未合main或部署。
 
+## 最新接续：渊海金玉1565主段，下一行3320
+
+上一轮有实际进展。本轮8ec178e新增45主段至L3318，金玉实际伤用条件与运时区别，累计1565段；下一L3320。
+
+- 克战非伤日不灾、岁运并临若损用才祸明确条件，不以事件标签终断。贵处隐凶/凶处露吉和虚格专属忌合分别存；运十年不等出生即首运。
+- 荧惑太白五行象不误天文，腹?缺字保留，旧病亲属道德不当事实，原文/ID/verified保持，运行引擎未改。
+- 1565entries验证0错；固定8ec178efab20147896a543fe904f20e1ec1c0744导出55包80889段source_reviewed20931，18知识测试通过，1565主段切片一致，参考1988未审。
+- 全目标active，未合main或部署；继续金玉及全库、八术条件和联动。
+
 ## 最新接续：渊海金玉1520主段，下一行3230
 
 上一轮有实际进展。本轮9fc85c9新增45主段至L3228，金玉财用六亲与位置，累计1520段；下一L3230。
