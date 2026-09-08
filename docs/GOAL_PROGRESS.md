@@ -4,6 +4,13 @@
 
 两仓均为 `codex/full-library-completion`：古籍 `/Users/yuhanglin/.codex/worktrees/fateradar-classics-grok-full-library`；产品 `/Users/yuhanglin/.codex/worktrees/fateradar-product-grok-full-library`。原接手基准古籍2396e4c、产品8f1ca84。原main及他人admin/billing/.claude不改。本目标尚未合main或部署。
 
+## 最新接续：撼龙正文32子节已审读
+
+上一轮有实际进展。本轮d9d1eee逐节读完撼龙正文L12–126约11139字，32子节连续覆盖并嵌原主ID。平洋水夹、九星正变形、剥换护送、官鬼山/旬空不同义、关栏明堂、辅弼显隐和末歌例外均保留。合刊另3正文（疑龙正篇、十问变星、倒杖）仍draft，未借别本审读状态冒充本本完成。
+
+- 6entries注解0错，32节连续断言；产品固定d9d1eee6eaa5546cc91a90dba7058348ca75edcb出口55资料/80889段/19335 source-reviewed。32出口引文逐项等原文行切片，3reviewed/3draft核对，18检索/分包测试通过。原文/主ID/verified不改，不新增运行风水规则。
+- 下一步合刊L128–173疑龙正篇、175–225十问/变星与227–341倒杖；保留已标阙文及作品归属。全量目标active，未合main或部署，未重复旧代码全验。
+
 ## 最新接续：撼龙合刊段落归属接入，正文仍待读
 
 上一轮为固定版本验证进展。本轮检查撼龙6主段，现有source-quality早已说明合刊，此次不是新发现混入，而是c10043a将既有边界落实为段落sourceAttribution：L130疑龙、L175十问/变星附篇、L229葬法倒杖，均anthology。前书尾题L128/227保留说明，不误当后文题名。
