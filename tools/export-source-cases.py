@@ -91,7 +91,11 @@ def case_input(case: dict) -> tuple[dict, tuple | None, str]:
         repeated = "sameHexagramInputAs"
     elif basis == "ziwei-component":
         valid, label = ziwei_component_input(case)
+        expectation_status = case.get("expectationStatus", "clear")
+        if expectation_status not in {"clear", "source-conflict"}:
+            raise ValueError(f"Unsupported source expectation status: {expectation_status}")
         fields = {"component": case["component"], "input": case.get("input", {}), "inputBasis": basis,
+                  "expectationStatus": expectation_status,
                   "scope": [label], "unavailable": ["完整公历或农历生日", "完整命盘", "未给字段的安星结果", "现实命运的独立记录"]}
         signature = (basis, case["component"], json.dumps(fields["input"], ensure_ascii=False, sort_keys=True)) if valid else None
         repeated = "sameComponentInputAs"
@@ -192,6 +196,7 @@ def main():
     args.output.parent.mkdir(parents=True, exist_ok=True)
     args.output.write_text(json.dumps(data, ensure_ascii=False, indent=2) + "\n")
     print(json.dumps({"source_revision": revision, "cases": len(data["cases"]), "recomputable": sum(c["canRecompute"] for c in data["cases"]),
+                      "expected_unresolved": sum(c.get("expectationStatus") == "source-conflict" for c in data["cases"]),
                       "repeated_inputs": sum(any(field in c for field in ("samePillarsAs", "sameNumbersAs", "sameHexagramInputAs", "sameComponentInputAs")) for c in data["cases"]), "verified": 0}, ensure_ascii=False))
 
 

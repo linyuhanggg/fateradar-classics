@@ -48,6 +48,13 @@ class PillarSourceChecks(unittest.TestCase):
             with self.subTest(given=given), self.assertRaisesRegex(ValueError, "marked recomputable"):
                 m.case_input({**base, "input": given})
 
+    def test_computable_day_does_not_resolve_a_conflicting_source_table(self):
+        case = {"inputBasis": "ziwei-component", "component": "purple-star", "input": {"fiveElementsClass": "木三局", "lunarDay": 9}, "expected": {"ziweiBranch": "寅"}, "expectationStatus": "source-conflict", "canRecompute": True}
+        fields, _, _ = m.case_input(case)
+        self.assertTrue(fields["canRecompute"])
+        self.assertEqual(fields["expectationStatus"], "source-conflict")
+        self.assertEqual(fields["expected"], {"ziweiBranch": "寅"})
+
     def test_component_cannot_publish_unreviewed_or_shifted_source(self):
         with tempfile.TemporaryDirectory() as directory:
             root = Path(directory)
