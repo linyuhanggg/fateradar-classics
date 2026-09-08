@@ -4,6 +4,14 @@
 
 两仓均为 `codex/full-library-completion`：古籍 `/Users/yuhanglin/.codex/worktrees/fateradar-classics-grok-full-library`；产品 `/Users/yuhanglin/.codex/worktrees/fateradar-product-grok-full-library`。原接手基准古籍2396e4c、产品8f1ca84。原main及他人admin/billing/.claude不改。本目标尚未合main或部署。
 
+## 最新接续：撼龙合刊段落归属接入，正文仍待读
+
+上一轮为固定版本验证进展。本轮检查撼龙6主段，现有source-quality早已说明合刊，此次不是新发现混入，而是c10043a将既有边界落实为段落sourceAttribution：L130疑龙、L175十问/变星附篇、L229葬法倒杖，均anthology。前书尾题L128/227保留说明，不误当后文题名。
+
+- 提要L3–10及尾题L343完成电子审读；4正文长段仍draft，未因别本已有审读而冒充本底本完成。阙文L173/224只记录不猜补。6entries验证0错，原6ID与行范围不动。
+- 产品固定c10043af33ed552fac6ae55e7990b52ee5317ba0出口55资料/80889段/19334 source-reviewed；6原ID、2reviewed/4draft和疑龙/葬法归属逐项核对，18查询/分包测试通过。未重复上轮2972全验，未称本批网页视觉验收。
+- 下一步逐段读本合刊正文，优先撼龙L12–126约11139字；其余全库/八术目标不变，active，未合main或部署。
+
 ## 最新接续：固定a32902d完整回归与Node构建通过
 
 上一轮有实际进展。本轮对近期六壬/六爻及URL改动做跨功能自动验收，固定产品a32902d4aeaf21d2b77388a29fa8e263a1c7e4c8的git archive快照，88文件2972项测试、typecheck、lint:ci全过。默认Cloudflare构建及部署脚本实际使用的FATERADAR_TARGET=node构建分别通过，Node产物preset=node-server且index.mjs存在。没有刷新golden或改算法迎合测试。
