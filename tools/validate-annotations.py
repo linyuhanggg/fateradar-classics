@@ -48,6 +48,29 @@ def validate_pack(data: dict, paragraphs: dict[str, dict]) -> list[str]:
             if not isinstance(attribution, dict) or attribution.get("relation") not in {"mixed-in", "modern-commentary", "anthology"} or any(not isinstance(attribution.get(field), str) or not attribution[field].strip() for field in ("work", "note")):
                 errors.append(f"{key}: sourceAttribution requires work, relation and note")
         source = paragraphs.get(key, {}) if isinstance(key, str) else {}
+        if "subsections" in entry:
+            parts = entry["subsections"]
+            if not isinstance(parts, list):
+                errors.append(f"{key}: subsections must be an array")
+            else:
+                part_ids = set()
+                for part in parts:
+                    if not isinstance(part, dict):
+                        errors.append(f"{key}: invalid subsection")
+                        continue
+                    pid = part.get("id")
+                    if not isinstance(pid, str) or not pid.strip() or pid in part_ids:
+                        errors.append(f"{key}: subsection requires a unique stable id")
+                    else:
+                        part_ids.add(pid)
+                    if any(not isinstance(part.get(f), str) or not part[f].strip() for f in ("title", "vernacular")):
+                        errors.append(f"{key}: subsection requires title and explanation")
+                    start, end = part.get("startLine"), part.get("endLine")
+                    if type(start) is not int or type(end) is not int or not source.get("start_line", 1) <= start <= end <= source.get("end_line", 0):
+                        errors.append(f"{key}: subsection range escapes parent source")
+                    for f in ("terms", "notes"):
+                        if not isinstance(part.get(f), list) or any(not isinstance(v, str) or not v.strip() for v in part[f]):
+                            errors.append(f"{key}: subsection {f} must be nonempty strings")
         if source.get("source_status") == "ocr-draft" and entry.get("review") == "source-reviewed":
             errors.append(f"{key}: OCR draft requires transcription review before source-reviewed annotation")
         if entry.get("verified") is True:

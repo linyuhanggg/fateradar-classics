@@ -87,17 +87,25 @@ def build_export(root: Path, revision: str) -> dict:
             for field in ("kind", "vernacular", "terms", "notes", "review", "relatedParagraphIds", "sourceAttribution"):
                 if field in entry:
                     row[field] = list(dict.fromkeys(row[field] + entry[field])) if field == "notes" else entry[field]
+            if entry.get("subsections"):
+                lines = source_lines[sources[entry["paragraphId"]]["source_file"]]
+                row["subsections"] = [{**part, "text": "\n".join(lines[part["startLine"] - 1:part["endLine"]])} for part in entry["subsections"]]
     simplified, traditional = OpenCC("t2s"), OpenCC("s2t")
+    def add_search_text(record, parts):
+        text = "\n".join(parts)
+        alternatives = dict.fromkeys([simplified.convert(text), traditional.convert(text)])
+        alternatives.pop(text, None)
+        if alternatives:
+            record["searchText"] = "\n".join(alternatives)
+
     book_titles = {book["slug"]: book["title"] for book in books}
     for row in rows:
         search_parts = [book_titles[row["bookSlug"]], row["heading"], row["text"], row.get("vernacular", ""), " ".join(row["terms"])]
         if row.get("sourceAttribution"):
             search_parts.append(row["sourceAttribution"]["work"])
-        searchable = "\n".join(search_parts)
-        alternatives = dict.fromkeys([simplified.convert(searchable), traditional.convert(searchable)])
-        alternatives.pop(searchable, None)
-        if alternatives:
-            row["searchText"] = "\n".join(alternatives)
+        add_search_text(row, search_parts)
+        for part in row.get("subsections", []):
+            add_search_text(part, [part["title"], part["text"], part["vernacular"], " ".join(part["terms"])])
     return {"version": 1, "sourceRevision": revision, "books": books, "paragraphs": rows}
 
 

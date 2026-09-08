@@ -101,6 +101,16 @@ class KnowledgeExport(unittest.TestCase):
         self.assertEqual(row["text"], "原文第一行\n原文第二行")
         self.assertIn("另一部書", row.get("searchText", ""))
 
+    def test_reviewed_subsections_export_exact_lines_without_inflating_source_count(self):
+        self.write_json("references/annotations/bazi/book.json", {"bookSlug": "book", "entries": [{"paragraphId": "book:L0001-L0002", "kind": "理论", "vernacular": "整段解释", "terms": [], "notes": [], "review": "source-reviewed", "subsections": [{"id": "S001", "title": "傷官", "startLine": 2, "endLine": 2, "vernacular": "子节说明", "terms": [], "notes": ["保留条件"]}]}]})
+        data = module.build_export(self.root, "fixed")
+        self.assertEqual(data["books"][0]["paragraphCount"], 1)
+        self.assertEqual(len(data["paragraphs"]), 1)
+        part = data["paragraphs"][0]["subsections"][0]
+        self.assertEqual(part["id"], "S001")
+        self.assertEqual(part["text"], "原文第二行")
+        self.assertIn("伤官", part["searchText"])
+
     def test_bad_annotation_fails_export(self):
         self.write_json("references/annotations/bazi/book.json", {"bookSlug": "book", "entries": [{"paragraphId": "book:L0001-L0009"}]})
         with self.assertRaisesRegex(ValueError, "unknown paragraphId"):

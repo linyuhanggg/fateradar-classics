@@ -29,6 +29,16 @@ class AnnotationValidation(unittest.TestCase):
         self.data["entries"][0]["sourceAttribution"] = {"work": "相儿经", "relation": "anthology", "note": "图书集成相术部所收篇目。"}
         self.assertEqual(module.validate_pack(self.data, self.paragraphs), [])
 
+    def test_subsections_cannot_escape_parent_or_duplicate_identity(self):
+        entry = self.data["entries"][0]
+        entry["subsections"] = [{"id": "S001", "title": "子节", "startLine": 1, "endLine": 4, "vernacular": "具体解释", "terms": [], "notes": []}]
+        self.paragraphs[entry["paragraphId"]] = {"start_line": 1, "end_line": 2}
+        self.assertTrue(any("subsection" in e for e in module.validate_pack(self.data, self.paragraphs)))
+        entry["subsections"][0]["endLine"] = 2
+        self.assertEqual(module.validate_pack(self.data, self.paragraphs), [])
+        entry["subsections"].append(copy.deepcopy(entry["subsections"][0]))
+        self.assertTrue(any("subsection" in e for e in module.validate_pack(self.data, self.paragraphs)))
+
     def test_real_reference(self):
         self.assertEqual(module.validate_pack(self.data, self.paragraphs), [])
 
