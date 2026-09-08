@@ -505,6 +505,967 @@
       "notes": [
         "expected只转录源图与题句明确值；年月日属于占问而非出生。原断语和原称应验单列，不作为数学回归预期。"
       ]
+    },
+    {
+      "id": "ZS-LY-V1-L0231",
+      "name": "父近病：乾之小畜",
+      "kind": "source_case",
+      "inputBasis": "liuyao-line-symbols",
+      "question": "父近病何日愈",
+      "input": {
+        "monthBranch": "辰",
+        "dayGanzhi": "戊申",
+        "linesBottomUp": [
+          "⚊",
+          "⚊",
+          "⚊",
+          "○",
+          "⚊",
+          "⚊"
+        ]
+      },
+      "expected": {
+        "mainGua": "乾为天",
+        "shi": 6,
+        "ying": 3,
+        "mainLines": [
+          {
+            "position": 1,
+            "kinship": "子孫",
+            "branch": "子",
+            "element": "水"
+          },
+          {
+            "position": 2,
+            "kinship": "妻財",
+            "branch": "寅",
+            "element": "木"
+          },
+          {
+            "position": 3,
+            "kinship": "父母",
+            "branch": "辰",
+            "element": "土"
+          },
+          {
+            "position": 4,
+            "kinship": "官鬼",
+            "branch": "午",
+            "element": "火"
+          },
+          {
+            "position": 5,
+            "kinship": "兄弟",
+            "branch": "申",
+            "element": "金"
+          },
+          {
+            "position": 6,
+            "kinship": "父母",
+            "branch": "戌",
+            "element": "土"
+          }
+        ],
+        "changedGua": "风天小畜",
+        "changedLines": [
+          {
+            "position": 1,
+            "kinship": "子孫",
+            "branch": "子",
+            "element": "水"
+          },
+          {
+            "position": 2,
+            "kinship": "妻財",
+            "branch": "寅",
+            "element": "木"
+          },
+          {
+            "position": 3,
+            "kinship": "父母",
+            "branch": "辰",
+            "element": "土"
+          },
+          {
+            "position": 4,
+            "kinship": "父母",
+            "branch": "未",
+            "element": "土"
+          },
+          {
+            "position": 5,
+            "kinship": "官鬼",
+            "branch": "巳",
+            "element": "火"
+          },
+          {
+            "position": 6,
+            "kinship": "妻財",
+            "branch": "卯",
+            "element": "木"
+          }
+        ]
+      },
+      "sourceReading": "三父择临月辰父；寅被申冲，午元动化未合绊，暂不生辰。取丑冲未解除绊。",
+      "reportedOutcome": "原文记丑日起床。",
+      "canRecompute": true,
+      "recomputeScope": [
+        "原卦阴阳与动爻",
+        "原文明确的变卦",
+        "主卦宫六亲与世应"
+      ],
+      "unavailable": [
+        "绝对公历年份",
+        "实际投币正背序列或随机种子",
+        "现代独立应验记录"
+      ],
+      "review": "source-reviewed",
+      "verified": false,
+      "sources": [
+        {
+          "paragraphId": "zengshan-buyi:wikisource-volume1:L0231-L0231",
+          "file": "sources/normalized/divination/zengshan-buyi/wikisource-volume1.md",
+          "startLine": 231,
+          "endLine": 231,
+          "quote": "例：辰月戊申日占父近病，得乾爲天變風天小畜。"
+        },
+        {
+          "paragraphId": "zengshan-buyi:wikisource-volume1:L0233-L0238",
+          "file": "sources/normalized/divination/zengshan-buyi/wikisource-volume1.md",
+          "startLine": 233,
+          "endLine": 238,
+          "quote": "父母戌土⚊世　妻財卯木⚊\n兄弟申金⚊　　官鬼巳火⚊\n官鬼午火○　　父母未土⚋\n父母辰土⚊應　父母辰土⚊\n妻財寅木⚊　　妻財寅木⚊\n子孫子水⚊　　子孫子水⚊"
+        },
+        {
+          "paragraphId": "zengshan-buyi:wikisource-volume1:L0240-L0240",
+          "file": "sources/normalized/divination/zengshan-buyi/wikisource-volume1.md",
+          "startLine": 240,
+          "endLine": 240,
+          "quote": "一人持此卦而問予曰：近病逢沖卽愈。此卦乃系六沖，但父病之甚，再爾看愈於何日？予說此卦辰土⚊未土⚊戌土⚊三重父母爻，當擇其旺者而用之，今辰土父母臨月建，卽用辰土爲用神，目下病重者，乃因申日沖寅木而暗動，木動以克辰土。彼問：卦中午火發動，寅木𨿽動，不克辰土。予曰：午火𨿽動化出未土，午與未合，午未相合不生辰土，所以此辰土單受寅木之克，不得午火之生，故此病體沈重，須待丑日沖去未土而午火無合，其土災退。果於丑日起牀。"
+        }
+      ],
+      "notes": [
+        "源文月日是占问时间；expected只录原图组件，作者判词不作为数学计算预期。",
+        "未父在变卦，三父两显一变，不能当本卦三个明现父爻。"
+      ]
+    },
+    {
+      "id": "ZS-LY-V1-L0250",
+      "name": "求财：兑之解",
+      "kind": "source_case",
+      "inputBasis": "liuyao-line-symbols",
+      "question": "求财",
+      "input": {
+        "monthBranch": "酉",
+        "dayGanzhi": "辛亥",
+        "linesBottomUp": [
+          "○",
+          "⚊",
+          "⚋",
+          "⚊",
+          "○",
+          "⚋"
+        ]
+      },
+      "expected": {
+        "mainGua": "兑为泽",
+        "shi": 6,
+        "ying": 3,
+        "mainLines": [
+          {
+            "position": 1,
+            "kinship": "官鬼",
+            "branch": "巳",
+            "element": "火"
+          },
+          {
+            "position": 2,
+            "kinship": "妻財",
+            "branch": "卯",
+            "element": "木"
+          },
+          {
+            "position": 3,
+            "kinship": "父母",
+            "branch": "丑",
+            "element": "土"
+          },
+          {
+            "position": 4,
+            "kinship": "子孫",
+            "branch": "亥",
+            "element": "水"
+          },
+          {
+            "position": 5,
+            "kinship": "兄弟",
+            "branch": "酉",
+            "element": "金"
+          },
+          {
+            "position": 6,
+            "kinship": "父母",
+            "branch": "未",
+            "element": "土"
+          }
+        ],
+        "changedGua": "雷水解",
+        "changedLines": [
+          {
+            "position": 1,
+            "kinship": "妻財",
+            "branch": "寅",
+            "element": "木"
+          },
+          {
+            "position": 2,
+            "kinship": "父母",
+            "branch": "辰",
+            "element": "土"
+          },
+          {
+            "position": 3,
+            "kinship": "官鬼",
+            "branch": "午",
+            "element": "火"
+          },
+          {
+            "position": 4,
+            "kinship": "官鬼",
+            "branch": "午",
+            "element": "火"
+          },
+          {
+            "position": 5,
+            "kinship": "兄弟",
+            "branch": "申",
+            "element": "金"
+          },
+          {
+            "position": 6,
+            "kinship": "父母",
+            "branch": "戌",
+            "element": "土"
+          }
+        ]
+      },
+      "sourceReading": "卯财空破，作者改从巳动化寅空取甲寅出空，财生官再生世。",
+      "reportedOutcome": "原文记寅日得财。",
+      "canRecompute": true,
+      "recomputeScope": [
+        "原卦阴阳与动爻",
+        "原文明确的变卦",
+        "主卦宫六亲与世应"
+      ],
+      "unavailable": [
+        "绝对公历年份",
+        "实际投币正背序列或随机种子",
+        "现代独立应验记录"
+      ],
+      "review": "source-reviewed",
+      "verified": false,
+      "sources": [
+        {
+          "paragraphId": "zengshan-buyi:wikisource-volume1:L0250-L0250",
+          "file": "sources/normalized/divination/zengshan-buyi/wikisource-volume1.md",
+          "startLine": 250,
+          "endLine": 250,
+          "quote": "例：酉月辛亥日占求財得兌爲澤卦變雷水解卦"
+        },
+        {
+          "paragraphId": "zengshan-buyi:wikisource-volume1:L0252-L0257",
+          "file": "sources/normalized/divination/zengshan-buyi/wikisource-volume1.md",
+          "startLine": 252,
+          "endLine": 257,
+          "quote": "父母未土⚋世　父母戌土⚋\n兄弟酉金○　　兄弟申金⚋\n子孫亥水⚊　　官鬼午火⚊\n父母丑土⚋應　官鬼午火⚋\n妻財卯木⚊　　父母辰土⚊\n官鬼巳火○　　妻財寅木⚋"
+        },
+        {
+          "paragraphId": "zengshan-buyi:wikisource-volume1:L0259-L0259",
+          "file": "sources/normalized/divination/zengshan-buyi/wikisource-volume1.md",
+          "startLine": 259,
+          "endLine": 259,
+          "quote": "斷曰：寅日得見財，亦如心。彼曰：卯木妻財爻空而月破，又被金克，初爻巳火官𨿽生世，亥日沖散又化旬空何以爲吉。予曰：神兆機於動，予從來不言散，正因巳火化空，所以目下不見，待甲寅日出空而相見。寅木之財以生官，官來生世，果於寅日早見木日得財。"
+        }
+      ],
+      "notes": [
+        "源文月日是占问时间；expected只录原图组件，作者判词不作为数学计算预期。",
+        "作者使用财→官→世链，不自动改成财用唯一元神水的普通模板。"
+      ]
+    },
+    {
+      "id": "ZS-LY-V1-L0267",
+      "name": "自病用无根：大过之鼎",
+      "kind": "source_case",
+      "inputBasis": "liuyao-line-symbols",
+      "question": "自占病",
+      "input": {
+        "monthBranch": "巳",
+        "dayGanzhi": "乙未",
+        "linesBottomUp": [
+          "⚋",
+          "⚊",
+          "⚊",
+          "⚊",
+          "○",
+          "ㄨ"
+        ]
+      },
+      "expected": {
+        "mainGua": "泽风大过",
+        "shi": 4,
+        "ying": 1,
+        "mainLines": [
+          {
+            "position": 1,
+            "kinship": "妻財",
+            "branch": "丑",
+            "element": "土"
+          },
+          {
+            "position": 2,
+            "kinship": "父母",
+            "branch": "亥",
+            "element": "水"
+          },
+          {
+            "position": 3,
+            "kinship": "官鬼",
+            "branch": "酉",
+            "element": "金"
+          },
+          {
+            "position": 4,
+            "kinship": "父母",
+            "branch": "亥",
+            "element": "水"
+          },
+          {
+            "position": 5,
+            "kinship": "官鬼",
+            "branch": "酉",
+            "element": "金"
+          },
+          {
+            "position": 6,
+            "kinship": "妻財",
+            "branch": "未",
+            "element": "土"
+          }
+        ],
+        "changedGua": "火风鼎",
+        "changedLines": [
+          {
+            "position": 1,
+            "kinship": "妻財",
+            "branch": "丑",
+            "element": "土"
+          },
+          {
+            "position": 2,
+            "kinship": "父母",
+            "branch": "亥",
+            "element": "水"
+          },
+          {
+            "position": 3,
+            "kinship": "官鬼",
+            "branch": "酉",
+            "element": "金"
+          },
+          {
+            "position": 4,
+            "kinship": "官鬼",
+            "branch": "酉",
+            "element": "金"
+          },
+          {
+            "position": 5,
+            "kinship": "妻財",
+            "branch": "未",
+            "element": "土"
+          },
+          {
+            "position": 6,
+            "kinship": "子孫",
+            "branch": "巳",
+            "element": "火"
+          }
+        ]
+      },
+      "sourceReading": "未忌与酉元同动虽可构成土金水相生，亥世却月破日克无根，作者说生之不起。",
+      "reportedOutcome": "原文记癸卯日死亡，以卯冲酉元解释。",
+      "canRecompute": true,
+      "recomputeScope": [
+        "原卦阴阳与动爻",
+        "原文明确的变卦",
+        "主卦宫六亲与世应"
+      ],
+      "unavailable": [
+        "绝对公历年份",
+        "实际投币正背序列或随机种子",
+        "现代独立应验记录"
+      ],
+      "review": "source-reviewed",
+      "verified": false,
+      "sources": [
+        {
+          "paragraphId": "zengshan-buyi:wikisource-volume1:L0267-L0267",
+          "file": "sources/normalized/divination/zengshan-buyi/wikisource-volume1.md",
+          "startLine": 267,
+          "endLine": 267,
+          "quote": "例：巳月乙未日自占病得澤風大過變火風鼎卦"
+        },
+        {
+          "paragraphId": "zengshan-buyi:wikisource-volume1:L0269-L0274",
+          "file": "sources/normalized/divination/zengshan-buyi/wikisource-volume1.md",
+          "startLine": 269,
+          "endLine": 274,
+          "quote": "妻財未土ㄨ　　子孫巳火⚊\n官鬼酉金○　　妻財未土⚋\n父母亥水⚊世　官鬼酉金⚊\n官鬼酉金⚊　　官鬼酉金⚊\n父母亥水⚊　　父母亥水⚊\n妻財丑土⚋應　妻財丑土⚋"
+        },
+        {
+          "paragraphId": "zengshan-buyi:wikisource-volume1:L0276-L0276",
+          "file": "sources/normalized/divination/zengshan-buyi/wikisource-volume1.md",
+          "startLine": 276,
+          "endLine": 276,
+          "quote": "自占病世爻亥水爲用神，被未土忌神動而克水，幸得酉金元神亦動，忌神未土反生元神之酉金，金生亥水，接續相生，化凶而爲吉。其如亥水月沖日克，值月破而被克，𨿽有生扶生之不起，如樹無根，寒谷不回春也。果卒於癸卯日，應卯日者沖去元神之日也。此謂之用神無根，元神有力亦難生。"
+        }
+      ],
+      "notes": [
+        "源文月日是占问时间；expected只录原图组件，作者判词不作为数学计算预期。",
+        "保留否定例：忌元同动不必化凶为吉，必须有用神有气前提。"
+      ]
+    },
+    {
+      "id": "ZS-LY-V1-L0416",
+      "name": "月建旬内仍空：大有",
+      "kind": "source_case",
+      "inputBasis": "liuyao-line-symbols",
+      "question": "求财",
+      "input": {
+        "monthBranch": "寅",
+        "dayGanzhi": "庚戌",
+        "linesBottomUp": [
+          "⚊",
+          "⚊",
+          "⚊",
+          "⚊",
+          "⚋",
+          "⚊"
+        ]
+      },
+      "expected": {
+        "mainGua": "火天大有",
+        "ying": 6,
+        "shi": 3,
+        "mainLines": [
+          {
+            "position": 1,
+            "kinship": "子孫",
+            "branch": "子",
+            "element": "水"
+          },
+          {
+            "position": 2,
+            "kinship": "妻財",
+            "branch": "寅",
+            "element": "木"
+          },
+          {
+            "position": 3,
+            "kinship": "父母",
+            "branch": "辰",
+            "element": "土"
+          },
+          {
+            "position": 4,
+            "kinship": "兄弟",
+            "branch": "酉",
+            "element": "金"
+          },
+          {
+            "position": 5,
+            "kinship": "父母",
+            "branch": "未",
+            "element": "土"
+          },
+          {
+            "position": 6,
+            "kinship": "官鬼",
+            "branch": "巳",
+            "element": "火"
+          }
+        ]
+      },
+      "sourceReading": "寅财临月克辰世可得，但在当前旬仍空，作者定甲寅出空。",
+      "reportedOutcome": "原文记甲寅得财。",
+      "canRecompute": true,
+      "recomputeScope": [
+        "原卦阴阳与动爻",
+        "主卦宫六亲与世应"
+      ],
+      "unavailable": [
+        "绝对公历年份",
+        "实际投币正背序列或随机种子",
+        "现代独立应验记录"
+      ],
+      "review": "source-reviewed",
+      "verified": false,
+      "sources": [
+        {
+          "paragraphId": "zengshan-buyi:wikisource-volume1:L0416-L0416",
+          "file": "sources/normalized/divination/zengshan-buyi/wikisource-volume1.md",
+          "startLine": 416,
+          "endLine": 416,
+          "quote": "如寅月庚戌日占求財得火天大有"
+        },
+        {
+          "paragraphId": "zengshan-buyi:wikisource-volume1:L0418-L0423",
+          "file": "sources/normalized/divination/zengshan-buyi/wikisource-volume1.md",
+          "startLine": 418,
+          "endLine": 423,
+          "quote": "官鬼巳火⚊應\n父母未土⚋\n兄弟酉金⚊\n父母辰土⚊世\n妻財寅木⚊\n子孫子水⚊"
+        },
+        {
+          "paragraphId": "zengshan-buyi:wikisource-volume1:L0425-L0425",
+          "file": "sources/normalized/divination/zengshan-buyi/wikisource-volume1.md",
+          "startLine": 425,
+          "endLine": 425,
+          "quote": "斷曰：寅木財爻爲用神，財爻克世，此財必得，但目下尙空，要到甲寅日出空可得。果於甲寅得之。若以逢空不空非也。若在旬內還作空亡，待出旬不爲空也。"
+        }
+      ],
+      "notes": [
+        "源文月日是占问时间；expected只录原图组件，作者判词不作为数学计算预期。",
+        "旺不是删除当前旬空标签，而是待出旬可用。"
+      ]
+    },
+    {
+      "id": "ZS-LY-V1-L0429",
+      "name": "谒贵等待解除回克：蛊之蒙",
+      "kind": "source_case",
+      "inputBasis": "liuyao-line-symbols",
+      "question": "谒贵",
+      "input": {
+        "monthBranch": "酉",
+        "dayGanzhi": "丙寅",
+        "linesBottomUp": [
+          "⚋",
+          "⚊",
+          "○",
+          "⚋",
+          "⚋",
+          "⚊"
+        ]
+      },
+      "expected": {
+        "mainGua": "山风蛊",
+        "ying": 6,
+        "shi": 3,
+        "mainLines": [
+          {
+            "position": 1,
+            "kinship": "妻財",
+            "branch": "丑",
+            "element": "土"
+          },
+          {
+            "position": 2,
+            "kinship": "父母",
+            "branch": "亥",
+            "element": "水"
+          },
+          {
+            "position": 3,
+            "kinship": "官鬼",
+            "branch": "酉",
+            "element": "金"
+          },
+          {
+            "position": 4,
+            "kinship": "妻財",
+            "branch": "戌",
+            "element": "土"
+          },
+          {
+            "position": 5,
+            "kinship": "父母",
+            "branch": "子",
+            "element": "水"
+          },
+          {
+            "position": 6,
+            "kinship": "兄弟",
+            "branch": "寅",
+            "element": "木"
+          }
+        ],
+        "changedGua": "山水蒙",
+        "changedLines": [
+          {
+            "position": 1,
+            "kinship": "兄弟",
+            "branch": "寅",
+            "element": "木"
+          },
+          {
+            "position": 2,
+            "kinship": "妻財",
+            "branch": "辰",
+            "element": "土"
+          },
+          {
+            "position": 3,
+            "kinship": "子孫",
+            "branch": "午",
+            "element": "火"
+          },
+          {
+            "position": 4,
+            "kinship": "妻財",
+            "branch": "戌",
+            "element": "土"
+          },
+          {
+            "position": 5,
+            "kinship": "父母",
+            "branch": "子",
+            "element": "水"
+          },
+          {
+            "position": 6,
+            "kinship": "兄弟",
+            "branch": "寅",
+            "element": "木"
+          }
+        ]
+      },
+      "sourceReading": "酉官世临月，却化午火回克，待子日冲午再拜见。",
+      "reportedOutcome": "原文记丙子见到贵人。",
+      "canRecompute": true,
+      "recomputeScope": [
+        "原卦阴阳与动爻",
+        "原文明确的变卦",
+        "主卦宫六亲与世应"
+      ],
+      "unavailable": [
+        "绝对公历年份",
+        "实际投币正背序列或随机种子",
+        "现代独立应验记录"
+      ],
+      "review": "source-reviewed",
+      "verified": false,
+      "sources": [
+        {
+          "paragraphId": "zengshan-buyi:wikisource-volume1:L0429-L0429",
+          "file": "sources/normalized/divination/zengshan-buyi/wikisource-volume1.md",
+          "startLine": 429,
+          "endLine": 429,
+          "quote": "如酉月丙寅日占謁貴得山風蠱變山水蒙"
+        },
+        {
+          "paragraphId": "zengshan-buyi:wikisource-volume1:L0431-L0436",
+          "file": "sources/normalized/divination/zengshan-buyi/wikisource-volume1.md",
+          "startLine": 431,
+          "endLine": 436,
+          "quote": "兄弟寅木⚊應　兄弟寅木⚊\n父母子水⚋　　父母子水⚋\n妻財戌土⚋　　妻財戌土⚋\n官鬼酉金○世　子孫午火⚋\n父母亥水⚊　　妻財辰土⚊\n妻財丑土⚋　　兄弟寅木⚋"
+        },
+        {
+          "paragraphId": "zengshan-buyi:wikisource-volume1:L0438-L0438",
+          "file": "sources/normalized/divination/zengshan-buyi/wikisource-volume1.md",
+          "startLine": 438,
+          "endLine": 438,
+          "quote": "世臨月建之官，定得面見，但被午火回頭之克，須待子日沖去午火方得拜謁，果得見於丙子日，故曰逢傷亦傷卻有待時之用。"
+        }
+      ],
+      "notes": [
+        "源文月日是占问时间；expected只录原图组件，作者判词不作为数学计算预期。",
+        "日月旺也不能忽略本位变爻回克。"
+      ]
+    },
+    {
+      "id": "ZS-LY-V1-L0444",
+      "name": "官月旺得水局生：艮之颐",
+      "kind": "source_case",
+      "inputBasis": "liuyao-line-symbols",
+      "question": "官之升迁",
+      "input": {
+        "monthBranch": "寅",
+        "dayGanzhi": "丙申",
+        "linesBottomUp": [
+          "ㄨ",
+          "⚋",
+          "○",
+          "⚋",
+          "⚋",
+          "⚊"
+        ]
+      },
+      "expected": {
+        "mainGua": "艮为山",
+        "shi": 6,
+        "ying": 3,
+        "mainLines": [
+          {
+            "position": 1,
+            "kinship": "兄弟",
+            "branch": "辰",
+            "element": "土"
+          },
+          {
+            "position": 2,
+            "kinship": "父母",
+            "branch": "午",
+            "element": "火"
+          },
+          {
+            "position": 3,
+            "kinship": "子孫",
+            "branch": "申",
+            "element": "金"
+          },
+          {
+            "position": 4,
+            "kinship": "兄弟",
+            "branch": "戌",
+            "element": "土"
+          },
+          {
+            "position": 5,
+            "kinship": "妻財",
+            "branch": "子",
+            "element": "水"
+          },
+          {
+            "position": 6,
+            "kinship": "官鬼",
+            "branch": "寅",
+            "element": "木"
+          }
+        ],
+        "changedGua": "山雷颐",
+        "changedLines": [
+          {
+            "position": 1,
+            "kinship": "妻財",
+            "branch": "子",
+            "element": "水"
+          },
+          {
+            "position": 2,
+            "kinship": "官鬼",
+            "branch": "寅",
+            "element": "木"
+          },
+          {
+            "position": 3,
+            "kinship": "兄弟",
+            "branch": "辰",
+            "element": "土"
+          },
+          {
+            "position": 4,
+            "kinship": "兄弟",
+            "branch": "戌",
+            "element": "土"
+          },
+          {
+            "position": 5,
+            "kinship": "妻財",
+            "branch": "子",
+            "element": "水"
+          },
+          {
+            "position": 6,
+            "kinship": "官鬼",
+            "branch": "寅",
+            "element": "木"
+          }
+        ]
+      },
+      "sourceReading": "寅官世临月受申日冲克，作者取申子辰合水生官，定辰月出空。",
+      "reportedOutcome": "原文记三月升任云南太守。",
+      "canRecompute": true,
+      "recomputeScope": [
+        "原卦阴阳与动爻",
+        "原文明确的变卦",
+        "主卦宫六亲与世应"
+      ],
+      "unavailable": [
+        "绝对公历年份",
+        "实际投币正背序列或随机种子",
+        "现代独立应验记录"
+      ],
+      "review": "source-reviewed",
+      "verified": false,
+      "sources": [
+        {
+          "paragraphId": "zengshan-buyi:wikisource-volume1:L0444-L0444",
+          "file": "sources/normalized/divination/zengshan-buyi/wikisource-volume1.md",
+          "startLine": 444,
+          "endLine": 444,
+          "quote": "如：寅月丙申日占官之升遷得艮卦變山雷頤"
+        },
+        {
+          "paragraphId": "zengshan-buyi:wikisource-volume1:L0446-L0451",
+          "file": "sources/normalized/divination/zengshan-buyi/wikisource-volume1.md",
+          "startLine": 446,
+          "endLine": 451,
+          "quote": "官鬼寅木⚊世　官鬼寅木⚊\n妻財子水⚋　　妻財子水⚋\n兄弟戌土⚋　　兄弟戌土⚋\n子孫申金○應　兄弟辰土⚋\n父母午火⚋　　官鬼寅木⚋\n兄弟辰土ㄨ　　妻財子水⚊"
+        },
+        {
+          "paragraphId": "zengshan-buyi:wikisource-volume1:L0453-L0453",
+          "file": "sources/normalized/divination/zengshan-buyi/wikisource-volume1.md",
+          "startLine": 453,
+          "endLine": 453,
+          "quote": "寅木官星持世臨月建而旺相，𨿽被申日沖克，喜申子辰合成水局，以生官，不獨無害，定然三月高遷，果於三月升任云南太守，卽升者乃因爻得水局生扶，應三月者辰土出空之月也，應云南者，世與官星皆在六爻之故耳。"
+        }
+      ],
+      "notes": [
+        "源文月日是占问时间；expected只录原图组件，作者判词不作为数学计算预期。",
+        "申子辰局须区分动申、初辰与变子，不能只搜全图三字。云南方位解释不属于组件复算。"
+      ]
+    },
+    {
+      "id": "ZS-LY-V1-L0455",
+      "name": "弟讼忌月入卦：困之恒",
+      "kind": "source_case",
+      "inputBasis": "liuyao-line-symbols",
+      "question": "弟被讼吉凶",
+      "input": {
+        "monthBranch": "午",
+        "dayGanzhi": "丁未",
+        "linesBottomUp": [
+          "⚋",
+          "⚊",
+          "ㄨ",
+          "⚊",
+          "○",
+          "⚋"
+        ]
+      },
+      "expected": {
+        "mainGua": "泽水困",
+        "ying": 4,
+        "shi": 1,
+        "mainLines": [
+          {
+            "position": 1,
+            "kinship": "妻財",
+            "branch": "寅",
+            "element": "木"
+          },
+          {
+            "position": 2,
+            "kinship": "父母",
+            "branch": "辰",
+            "element": "土"
+          },
+          {
+            "position": 3,
+            "kinship": "官鬼",
+            "branch": "午",
+            "element": "火"
+          },
+          {
+            "position": 4,
+            "kinship": "子孫",
+            "branch": "亥",
+            "element": "水"
+          },
+          {
+            "position": 5,
+            "kinship": "兄弟",
+            "branch": "酉",
+            "element": "金"
+          },
+          {
+            "position": 6,
+            "kinship": "父母",
+            "branch": "未",
+            "element": "土"
+          }
+        ],
+        "changedGua": "雷风恒",
+        "changedLines": [
+          {
+            "position": 1,
+            "kinship": "父母",
+            "branch": "丑",
+            "element": "土"
+          },
+          {
+            "position": 2,
+            "kinship": "子孫",
+            "branch": "亥",
+            "element": "水"
+          },
+          {
+            "position": 3,
+            "kinship": "兄弟",
+            "branch": "酉",
+            "element": "金"
+          },
+          {
+            "position": 4,
+            "kinship": "官鬼",
+            "branch": "午",
+            "element": "火"
+          },
+          {
+            "position": 5,
+            "kinship": "兄弟",
+            "branch": "申",
+            "element": "金"
+          },
+          {
+            "position": 6,
+            "kinship": "父母",
+            "branch": "戌",
+            "element": "土"
+          }
+        ]
+      },
+      "sourceReading": "酉兄受午月克而未日生，又有午忌发动加克；兄化退，作者区分辰年合可暂缓与申年退到位。",
+      "reportedOutcome": "原文记当年下狱、申年重刑。",
+      "canRecompute": true,
+      "recomputeScope": [
+        "原卦阴阳与动爻",
+        "原文明确的变卦",
+        "主卦宫六亲与世应"
+      ],
+      "unavailable": [
+        "绝对公历年份",
+        "实际投币正背序列或随机种子",
+        "现代独立应验记录"
+      ],
+      "review": "source-reviewed",
+      "verified": false,
+      "sources": [
+        {
+          "paragraphId": "zengshan-buyi:wikisource-volume1:L0455-L0455",
+          "file": "sources/normalized/divination/zengshan-buyi/wikisource-volume1.md",
+          "startLine": 455,
+          "endLine": 455,
+          "quote": "又如：午月丁未日占弟被訟吉凶得困卦變雷風恆卦。"
+        },
+        {
+          "paragraphId": "zengshan-buyi:wikisource-volume1:L0457-L0462",
+          "file": "sources/normalized/divination/zengshan-buyi/wikisource-volume1.md",
+          "startLine": 457,
+          "endLine": 462,
+          "quote": "父母未土⚋　　父母戌土⚋\n兄弟酉金○　　兄弟申金⚋\n子孫亥水⚊應　官鬼午火⚊\n官鬼午火ㄨ　　兄弟酉金⚊\n父母辰土⚊　　子孫亥水⚊\n妻財寅木⚋世　父母丑土⚋"
+        },
+        {
+          "paragraphId": "zengshan-buyi:wikisource-volume1:L0464-L0464",
+          "file": "sources/normalized/divination/zengshan-buyi/wikisource-volume1.md",
+          "startLine": 464,
+          "endLine": 464,
+          "quote": "酉金兄爻爲用神，午月克之，未日生之，可以相敵，但不宜又動出午火相克，正所謂最怕他爻增克制。彼問有害否？予曰：午火爲月建動於卦中，謂之入卦者更見剛彊，又謂之月建作忌神，爲禍不淺，大凶之象，又問凶在何時？予曰：酉金兄爻化退神，今歲辰年太歲相合，自是無妨恐，退至申年而無路矣，果於本年下獄至申年而重刑。"
+        }
+      ],
+      "notes": [
+        "源文月日是占问时间；expected只录原图组件，作者判词不作为数学计算预期。",
+        "作者先说今岁可暂保，后述当年已下狱；不得把暂缓解释成全年无事。"
+      ]
     }
   ]
 }
