@@ -4,6 +4,13 @@
 
 两仓均为 `codex/full-library-completion`：古籍 `/Users/yuhanglin/.codex/worktrees/fateradar-classics-grok-full-library`；产品 `/Users/yuhanglin/.codex/worktrees/fateradar-product-grok-full-library`。原接手基准古籍2396e4c、产品8f1ca84。原main及他人admin/billing/.claude不改。本目标尚未合main或部署。
 
+## 最新接续：合刊疑龙正附篇26子节完成
+
+上一轮有实际进展。本轮7c3f37e读完L128–173疑龙正篇14节、L175–225附篇12节，合刊累计58子节。补齐结构归属中的卫龙篇（此前只列十问/变星），保留L173/224阙文。干枝、回抱背面、真假朝案、公位诸问与卫龙形势逐节解释；不借另一版本审读状态或补猜缺句。
+
+- 6entries验证0错，子节连续覆盖各主段。产品固定7c3f37ecb1aa461242ddaedbf9132ac6e54730fc出口55资料/80889段/19337 source-reviewed；58实际引文切片核对、卫龙归属保留、5reviewed/倒杖正文1draft核对，18检索/分包测试通过。原字/主ID/verified未改，无新风水运行规则。
+- 下一步L227–341葬法倒杖，完成后也只代表合刊现有文本电子审读，不是影像全校。全量目标active，未合main或部署。
+
 ## 最新接续：撼龙正文32子节已审读
 
 上一轮有实际进展。本轮d9d1eee逐节读完撼龙正文L12–126约11139字，32子节连续覆盖并嵌原主ID。平洋水夹、九星正变形、剥换护送、官鬼山/旬空不同义、关栏明堂、辅弼显隐和末歌例外均保留。合刊另3正文（疑龙正篇、十问变星、倒杖）仍draft，未借别本审读状态冒充本本完成。
