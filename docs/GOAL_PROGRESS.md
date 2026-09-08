@@ -4,6 +4,15 @@
 
 两仓均为 `codex/full-library-completion`：古籍 `/Users/yuhanglin/.codex/worktrees/fateradar-classics-grok-full-library`；产品 `/Users/yuhanglin/.codex/worktrees/fateradar-product-grok-full-library`。原接手基准古籍2396e4c、产品8f1ca84。原main及他人admin/billing/.claude不改。本目标尚未合main或部署。
 
+## 最新接续：阳宅福元50节，下一行846定局表
+
+上一轮外形文字读完有实际进展。本轮c0c8e33新增9节L767–845，连续L12–845共50节文字，父段仍draft；L846三元甲子定局表起未读。
+
+- 福元=八宅生年卦/伏位非紫微福德宫；男一四七逆女五二八顺，中五男坤女艮。掌寅至戌借九宫位置非出生支，甲寅男女及中元乙丑/丙寅四例分清生年与甲子起点。
+- 大门家长为主不尽主全宅，墙门隔院重新起算，非现代楼层房号自动套法。历史元界原记未自造交年公历时刻，掌图和门位仍未核图。
+- 3entries验证0错，9节连续；父段未完不导出，产品知识0f4138f/21775，运行e43cd38，原文/ID/verified保持。nmem继续502未反复重试或切换。
+- 全目标active，未合main或部署；下一核L846定局表与已读算法例是否一致，继续图源恢复和全库/八术剩余工作。
+
 ## 最新接续：阳宅外形文字读至766，共41节；下一福元767
 
 上一轮有实际进展。本轮e9ca860新增8节L612–766，外形图说文字读完，第675卷连续L12–766共41节，父段仍draft；L767福元起未读。
