@@ -4,6 +4,15 @@
 
 两仓均为 `codex/full-library-completion`：古籍 `/Users/yuhanglin/.codex/worktrees/fateradar-classics-grok-full-library`；产品 `/Users/yuhanglin/.codex/worktrees/fateradar-product-grok-full-library`。原接手基准古籍2396e4c、产品8f1ca84。原main及他人admin/billing/.claude不改。本目标尚未合main或部署。
 
+## 最新接续：渊海神趣八法818主段，下一行1766
+
+上一轮有实际进展。本轮2524539新增44主段至L1764，继善末、看命入式、神趣八法及杂论开头，累计818段；下一L1766。
+
+- 类象方齐无破/属象寅卯未疑字、从象无根与纯类、化象争妒合、伏象午藏丁不透分开，未改真实支或透干规则。水值火伤与前土伤异字保留。
+- 得令与能任、月取用与日时发用分别记录，旧病德职业断不作现实事实；原文/ID/verified保持，运行引擎未改。
+- 818entries验证0错；固定252453911abbf2abfdd261bbe514cb3286913cb6导出55包80889段source_reviewed20184，18知识测试通过，818主段切片一致，参考1988未审。
+- 全目标active，未合main或部署；继续杂论及其余全库、八术条件与联动工作。
+
 ## 最新接续：渊海继善774主段，下一行1672
 
 上一轮已提交入库有实际进展。本轮6869d1b新增52主段至L1670，继善轻重取用、官鬼与岁君救应，累计774段；下一L1672。
