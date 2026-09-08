@@ -4,6 +4,13 @@
 
 两仓均为 `codex/full-library-completion`：古籍 `/Users/yuhanglin/.codex/worktrees/fateradar-classics-grok-full-library`；产品 `/Users/yuhanglin/.codex/worktrees/fateradar-product-grok-full-library`。原接手基准古籍2396e4c、产品8f1ca84。原main及他人admin/billing/.claude不改。本目标尚未合main或部署。
 
+## 最新接续：黄金策病症至鬼神，下一行776
+
+上一轮有实际进展。本轮b09a746新增L591–774共91原段，累计367/849（前十三章）电子审读，余482从种作章L776继续。病症/病体/医药的病象、安危、医者药物对象区分；鬼神为宗教文化类象，不把原书治法、祈祷和鬼祟归因直接接成现实诊疗输出。字疑、维基残留及不同空鬼读法照留。
+
+- 新增ID范围集合对应，367entries验证0错。产品固定b09a7467d08a8f6ed9c940a5192c62712a091db6出口55资料/80889段/18850 source-reviewed；实际367段与种作以后unreviewed核对，18检索/分包测试通过。未改原文/ID/verified/golden或新增运行规则，不冒称影像校勘、全代码或网页总验收。
+- 全量目标active，继续其他分门与古籍/八术原范围；未合main或部署。
+
 ## 最新接续：黄金策婚姻产育进人口，下一行590
 
 上一轮有实际进展。本轮73a794c新增L402–588共93原段，累计276/849（前九章）电子审读，余573从L590病症继续。婚姻末L472明确不同亲属代问不可概官夫财妇；L483疑脱漏标待核实；L529收生间爻句与前文语义张力保留；古代主仆/收养语境不当现代人员评判或行动建议。
