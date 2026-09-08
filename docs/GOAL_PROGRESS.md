@@ -4,6 +4,15 @@
 
 两仓均为 `codex/full-library-completion`：古籍 `/Users/yuhanglin/.codex/worktrees/fateradar-classics-grok-full-library`；产品 `/Users/yuhanglin/.codex/worktrees/fateradar-product-grok-full-library`。原接手基准古籍2396e4c、产品8f1ca84。原main及他人admin/billing/.claude不改。本目标尚未合main或部署。
 
+## 最新接续：阳宅树形图说文字33节，下一行612
+
+上一轮有实际进展。本轮e6e6e27新增6节L496–611，第675卷连续L12–611共33节文字，父段仍draft；L612起未读。
+
+- 牛轭拖尸蜒蚰、临水竹树、藤缠肿树空心树按断曰文字分组，未见图不倒推轮廓。L600图截病句留缺，不补病名；药无效除树语是历史主张，不治疗或实际砍树建议。
+- 禄存文曲与黄泉方位/二房未起法不套命盘星；神怪亲属病灾旧断不当事实。3entries验证0错，6新节连续。
+- 未导出未读全父段，产品知识仍0f4138f/21775，运行e43cd38，原文/ID/verified保持。nmem继续502未反复重试或切换。
+- 全目标active，未合main或部署；下一L612余图说并继续核图源，后福元及其他全库/八术工作。
+
 ## 最新接续：阳宅明堂图说文字27节，下一行496
 
 上一轮有实际进展。本轮2346660新增6节L378–495，第675卷连续L12–495共27节文字，父段仍draft；L496起未读。
