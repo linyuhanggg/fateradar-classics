@@ -4,6 +4,16 @@
 
 两仓均为 `codex/full-library-completion`：古籍 `/Users/yuhanglin/.codex/worktrees/fateradar-classics-grok-full-library`；产品 `/Users/yuhanglin/.codex/worktrees/fateradar-product-grok-full-library`。原接手基准古籍2396e4c、产品8f1ca84。原main及他人admin/billing/.claude不改。本目标尚未合main或部署。
 
+## 最新接续：固定双仓回归2990测试与17古籍检查通过
+
+上一轮有实际进展。本轮产品07a5166d12964af47209a722b83ef04e5045c969、古籍be1c6a58de70391b05ac91fd3052ab4414e8b0e3固定快照核近期独发/原例/四余对照对其他功能的影响。没有发现运行回归，不为通过而改算法或golden。
+
+- 产品90文件2990测试，typecheck、lint:ci、默认Cloudflare构建、FATERADAR_TARGET=node构建全部通过；node-server预设与server/index.mjs确认存在。快照不含.env和他人.claude，链接已有依赖。
+- 古籍CI17项最终全过，包括规则/执行源/注释/案例/版本/识典导入/内容导出测试、coverage54与predicate15/open-values/art-keys。初次快照漏sources/excerpts导致validate-rules缺奇门节录，从同一固定提交补回后仅重跑该项通过。Git依赖export-reading-notes在仍为固定be1c6a5的工作树读取HEAD执行，其他在快照。
+- 114条既有来源文字警告和构建分包提示保留，没有声称零警告。54阈值是旧规则CI门槛，不是全量任务完成比例；测试通过不等古籍完整或现实预测有效。
+- 详情在产品docs/implementation/full-regression-2026-09-09-07a5166.md，日志/tmp/fateradar-07a5166-*及/tmp/fateradar-be1c6a5-*。知识c6485d0/19351、六爻b8150a7、七政3fbef8c分别固定。
+- 完整目标active，仍需未审书/补充版本与八术未覆盖条件，不因这轮全自动检查结束总范围。未合main或部署，无新运行代码改动。
+
 ## 最新接续：七政四余庙宫逐条对照与网页更新
 
 上一轮有实际进展。本轮从已读星学大成201及5651落实XXDC-E-06，古籍3fbef8c固定导出七政6规则；全部执行定义14包252规则513片段验证通过。现四余位置与原文庙宫比较，不冒充古法完整庙旺。
