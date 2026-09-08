@@ -4,6 +4,15 @@
 
 两仓均为 `codex/full-library-completion`：古籍 `/Users/yuhanglin/.codex/worktrees/fateradar-classics-grok-full-library`；产品 `/Users/yuhanglin/.codex/worktrees/fateradar-product-grok-full-library`。原接手基准古籍2396e4c、产品8f1ca84。原main及他人admin/billing/.claude不改。本目标尚未合main或部署。
 
+## 最新接续：渊海论命细法1019主段，下一行2216
+
+上一轮有实际进展。本轮a77c12d新增41主段至L2214，寸金结束、论命细法前部，累计1019段；下一L2216。
+
+- 支藏忌后运透的显隐分开，化不成仍原日干明确保留；坐杀忌杀运与原有制可杀运关联，不统一禁止。庚化火相非基础五合，胎位顶发旧象不还原真实出生。
+- 亲属隐私道德与疾病断仅历史文本，原文/ID/verified保持，运行引擎未改。
+- 1019entries验证0错；固定a77c12d252d620761f0b0d249c89508d1e4f76ac导出55包80889段source_reviewed20385，18知识测试通过，1019主段切片一致，参考1988未审。
+- 全目标active，未合main或部署；继续细法及全库、八术条件和联动。
+
 ## 最新接续：渊海寸金搜髓978主段，下一行2124
 
 上一轮有实际进展。本轮ac9401a新增46主段至L2122，寸金寒暖相济、亲属旧象与日柱诗，累计978段；下一L2124。
