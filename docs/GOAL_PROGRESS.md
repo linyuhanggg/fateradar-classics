@@ -4,6 +4,13 @@
 
 两仓均为 `codex/full-library-completion`：古籍 `/Users/yuhanglin/.codex/worktrees/fateradar-classics-grok-full-library`；产品 `/Users/yuhanglin/.codex/worktrees/fateradar-product-grok-full-library`。原接手基准古籍2396e4c、产品8f1ca84。原main及他人admin/billing/.claude不改。本目标尚未合main或部署。
 
+## 最新接续：黄金策种作至仕宦，下一行957
+
+上一轮有实际进展。本轮c86bee8新增L777–955共88原段，累计455/849前十八章电子审读，余394从L957求财继续。种作、蚕桑、畜养分体与收益；求名父官与仕宦职位俸禄、保职与升迁、剿捕子孙有利等所问差别保留。L785空缺不补猜。
+
+- 新增原ID集合与范围对应、455entries校验0错。产品固定c86bee8df48e5df461a49f631d70d0421b74c8dd出口55资料/80889段/18938 source-reviewed；实际455段及求财以后unreviewed核对，18检索/分包测试通过。原文/ID/verified/golden与运行规则未改，不称全代码/网页总验收。
+- 全量目标active，继续分门原文和八术全范围；未合main或部署。
+
 ## 最新接续：黄金策病症至鬼神，下一行776
 
 上一轮有实际进展。本轮b09a746新增L591–774共91原段，累计367/849（前十三章）电子审读，余482从种作章L776继续。病症/病体/医药的病象、安危、医者药物对象区分；鬼神为宗教文化类象，不把原书治法、祈祷和鬼祟归因直接接成现实诊疗输出。字疑、维基残留及不同空鬼读法照留。
