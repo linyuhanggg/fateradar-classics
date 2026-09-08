@@ -4,6 +4,15 @@
 
 两仓均为 `codex/full-library-completion`：古籍 `/Users/yuhanglin/.codex/worktrees/fateradar-classics-grok-full-library`；产品 `/Users/yuhanglin/.codex/worktrees/fateradar-product-grok-full-library`。原接手基准古籍2396e4c、产品8f1ca84。原main及他人admin/billing/.claude不改。本目标尚未合main或部署。
 
+## 最新接续：渊海杂论866主段，下一行1862
+
+上一轮有实际进展。本轮ff659d7新增48主段至L1860，杂论口诀财官印杀及明暗合用，累计866段；下一L1862。
+
+- 明杀合去/暗杀合来分对象方向，时杀喜冲与灾句衔接疑处保留，伤官用印/财两路相连。六阴朝阳季月按印不删基本事实，一二格与三四格未定义不按命中数分贵贱。
+- 旧出身职业人格灾亲断不作真实结论，原文/ID/verified保持，运行引擎未改。
+- 866entries验证0错；固定ff659d7dec66d8ef4b9efc313df79080661f30e9导出55包80889段source_reviewed20232，18知识测试通过，866主段切片一致，参考1988未审。
+- 全目标active，未合main或部署；继续杂论与全库/八术剩余条件及联动。
+
 ## 最新接续：渊海神趣八法818主段，下一行1766
 
 上一轮有实际进展。本轮2524539新增44主段至L1764，继善末、看命入式、神趣八法及杂论开头，累计818段；下一L1766。
