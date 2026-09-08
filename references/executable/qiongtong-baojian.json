@@ -303,9 +303,9 @@
           },
           {
             "id": "QTB-M-01-03-C02",
-            "label": "金局才考虑丁",
+            "label": "金聚集结构下补充丁候选",
             "role": "support",
-            "effect": "none",
+            "effect": "add",
             "priority": [
               [
                 "丁"
@@ -313,20 +313,13 @@
             ],
             "conditions": [
               {
-                "kind": "branches",
-                "branches": [
-                  "巳",
-                  "酉",
-                  "丑"
-                ],
-                "label": "地支具备巳、酉、丑这些字"
-              },
-              {
-                "kind": "unknown",
-                "label": "三字齐不等于金局已有效，成局与力量仍待核"
+                "kind": "branch-group",
+                "element": "金",
+                "absent": false,
+                "label": "已见金的完整三合／三会成员聚集结构（不判合化）"
               }
             ],
-            "explanation": "保留可见支组与原文成局要求的差别。",
+            "explanation": "把原文金局先按现有三合／三会成员聚集结构操作化，允许补充丁候选；不认合化已成或丁已经发挥作用，也不编追加项与基础主辅的新次序。",
             "sourceParagraphIds": [
               "qiongtong-baojian:L0099-L0099"
             ]
@@ -844,9 +837,9 @@
         "checks": [
           {
             "id": "QTB-M-01-08-C01",
-            "label": "木局比劫多时庚先",
+            "label": "木聚集且另见比劫时庚先丁后",
             "role": "alternative",
-            "effect": "none",
+            "effect": "replace",
             "priority": [
               [
                 "庚"
@@ -857,20 +850,22 @@
             ],
             "conditions": [
               {
-                "kind": "branches",
-                "branches": [
-                  "亥",
-                  "卯",
-                  "未"
-                ],
-                "label": "地支具备亥、卯、未这些字"
+                "kind": "branch-group",
+                "element": "木",
+                "absent": false,
+                "label": "已见木的完整三合／三会成员聚集结构（不判合化）"
               },
               {
-                "kind": "unknown",
-                "label": "木局是否成势及比劫是否过多未量化"
+                "kind": "visible-any",
+                "gans": [
+                  "甲",
+                  "乙"
+                ],
+                "excludeDay": true,
+                "label": "日干以外可见甲或乙"
               }
             ],
-            "explanation": "若地支成木局、天干又透比劫，秋甲的排序改成庚先、丁后。木实际是否成群，会改变前文以丁优先的一般次序。",
+            "explanation": "按原文支局与比劫透出的明示条件选择庚丁候选；聚集仅是可复算结构口径，力量及实际成局效果仍另算。",
             "sourceParagraphIds": [
               "qiongtong-baojian:L0161-L0161"
             ]
@@ -4335,43 +4330,43 @@
           },
           {
             "id": "QTB-M-04-05-C02",
-            "label": "火局中的庚壬配合",
+            "label": "火聚集且火、庚壬透时的候选",
             "role": "alternative",
-            "effect": "none",
+            "effect": "replace",
             "priority": [
               [
-                "壬"
-              ],
-              [
+                "壬",
                 "庚"
               ]
             ],
             "conditions": [
               {
-                "kind": "branches",
-                "branches": [
-                  "寅",
-                  "午",
-                  "戌"
+                "kind": "branch-group",
+                "element": "火",
+                "absent": false,
+                "label": "已见火的完整三合／三会成员聚集结构（不判合化）"
+              },
+              {
+                "kind": "visible-any",
+                "gans": [
+                  "丙",
+                  "丁"
                 ],
-                "label": "地支具备寅、午、戌这些字"
+                "excludeDay": true,
+                "label": "日干以外可见丙或丁"
               },
               {
                 "kind": "visible",
                 "gan": "庚",
-                "label": "庚见于天干"
+                "label": "庚透干"
               },
               {
                 "kind": "visible",
                 "gan": "壬",
-                "label": "壬见于天干"
-              },
-              {
-                "kind": "unknown",
-                "label": "原文火局是否成势及水能否制火未定"
+                "label": "壬透干"
               }
             ],
-            "explanation": "年壬隔位且不与丁贪合、火局中庚壬两透、土制壬、壬藏或一癸透，都是本段不同配合。位置与合的干扰不能被“有水就好”代替。",
+            "explanation": "三合／三会成员聚集与天干火、庚壬可见共同触发候选；庚壬并列，未将聚集结构当合化或制火力量已成。",
             "sourceParagraphIds": [
               "qiongtong-baojian:L0658-L0658"
             ]
@@ -4380,7 +4375,7 @@
             "id": "QTB-M-04-05-C03",
             "label": "无火局、水透时的甲庚",
             "role": "alternative",
-            "effect": "none",
+            "effect": "replace",
             "priority": [
               [
                 "甲"
@@ -4391,11 +4386,22 @@
             ],
             "conditions": [
               {
-                "kind": "unknown",
-                "label": "原文无火局与丁强弱未定，不能把三合未齐等同无火势"
+                "kind": "branch-group",
+                "element": "火",
+                "absent": true,
+                "label": "未见火的完整三合／三会成员聚集结构（不判合化）"
+              },
+              {
+                "kind": "visible-any",
+                "gans": [
+                  "壬",
+                  "癸"
+                ],
+                "excludeDay": false,
+                "label": "天干可见壬或癸"
               }
             ],
-            "explanation": "若干支未成火局而有水透，作者又取甲，并借庚劈甲引火；若木少火多，把木耗尽，则不能照前一组合评价。五月是否成火势，是此处取甲的前提。",
+            "explanation": "将本条无火局先操作化为未见完整火三合／三会成员，并核水透，选甲庚候选；这不表示火弱，最终效用还需力量判据。",
             "sourceParagraphIds": [
               "qiongtong-baojian:L0662-L0662"
             ]
@@ -9932,9 +9938,9 @@
         "checks": [
           {
             "id": "QTB-M-08-08-C01",
-            "label": "金局无壬时的丁候选",
+            "label": "金聚集、比肩透且无壬时改丁",
             "role": "alternative",
-            "effect": "none",
+            "effect": "replace",
             "priority": [
               [
                 "丁"
@@ -9942,26 +9948,25 @@
             ],
             "conditions": [
               {
-                "kind": "branches",
-                "branches": [
-                  "巳",
-                  "酉",
-                  "丑"
-                ],
-                "label": "地支具备巳、酉、丑这些字"
+                "kind": "branch-group",
+                "element": "金",
+                "absent": false,
+                "label": "已见金的完整三合／三会成员聚集结构（不判合化）"
+              },
+              {
+                "kind": "visible",
+                "gan": "辛",
+                "excludeDay": true,
+                "label": "日干以外辛比肩透出"
               },
               {
                 "kind": "absent",
                 "gan": "壬",
                 "scope": "all",
-                "label": "天干和地支藏干均未见壬"
-              },
-              {
-                "kind": "unknown",
-                "label": "金局是否成势、比肩是否重未定"
+                "label": "天干及藏干未见壬"
               }
             ],
-            "explanation": "金局加比肩而无壬时，作者容许用丁作另一处理；若壬高透，则又走泄金的一清到底路线。它是金群无水的特例，不抹去前文普通辛金慎用红炉的说法。",
+            "explanation": "原文明列金局、比肩、无壬三项；此处以三合／三会聚集结构加透藏筛出丁候选，不直接宣称丁已炼金得用。",
             "sourceParagraphIds": [
               "qiongtong-baojian:L1418-L1418"
             ]

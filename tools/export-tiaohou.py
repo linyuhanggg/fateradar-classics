@@ -38,6 +38,14 @@ def validate_condition(condition: dict, where: str) -> None:
             raise ValueError(f"{where}: 条件柱位无效")
         if kind == "absent" and condition.get("scope") not in {"visible", "all"}:
             raise ValueError(f"{where}: absent scope 无效")
+    elif kind == "visible-any":
+        if not isinstance(condition.get("gans"), list) or not condition["gans"] or any(gan not in STEMS for gan in condition["gans"]):
+            raise ValueError(f"{where}: visible-any 天干组无效")
+    elif kind == "branch-group":
+        if condition.get("element") not in {"木", "火", "金", "水"}:
+            raise ValueError(f"{where}: 聚集结构五行无效")
+        if "absent" in condition and type(condition["absent"]) is not bool:
+            raise ValueError(f"{where}: absent 必须是布尔值")
     elif kind == "no-combine":
         if "".join(condition.get("pair", [])) not in {"甲己", "己甲", "乙庚", "庚乙", "丙辛", "辛丙", "丁壬", "壬丁", "戊癸", "癸戊"}:
             raise ValueError(f"{where}: 不是当前支持的五合对")
