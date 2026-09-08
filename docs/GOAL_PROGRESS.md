@@ -4,6 +4,15 @@
 
 两仓均为 `codex/full-library-completion`：古籍 `/Users/yuhanglin/.codex/worktrees/fateradar-classics-grok-full-library`；产品 `/Users/yuhanglin/.codex/worktrees/fateradar-product-grok-full-library`。原接手基准古籍2396e4c、产品8f1ca84。原main及他人admin/billing/.claude不改。本目标尚未合main或部署。
 
+## 最新接续：渊海再录末身弱2221主段，下一行4658
+
+上一轮有实际进展。本轮daa19aa新增38主段至L4656，四言再录结束、身弱论，69711db修正注释从财用词，累计2221段；下一L4658弃命从杀。
+
+- 前后套有合/无合、乙/己卯、金印火/水旺等异文保留关联；阴阳水无根火乡不同、阳木乙木丑月不同，不把一般身弱均从。癸巳从财要无根，不改实际根气。
+- 原文/ID/verified保持，运行引擎未改；nmem本轮恢复context与定向search成功。
+- 2221entries验证通过（后仅修正一词），固定69711db3fc3e2ac72e602aa836cbc74b6668fdb4导出55包80889段source_reviewed21587，18知识测试通过，2221主段切片一致，参考1988未审。
+- 全目标active，未合main或部署；继续弃命从杀及全库、八术条件和联动。
+
 ## 最新接续：渊海四言再录2183主段，下一行4580
 
 上一轮有实际进展。本轮13bcd50新增40主段至L4578，四言再录，累计2183段；下一L4580。
