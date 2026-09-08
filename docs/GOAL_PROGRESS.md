@@ -4,6 +4,13 @@
 
 两仓均为 `codex/full-library-completion`：古籍 `/Users/yuhanglin/.codex/worktrees/fateradar-classics-grok-full-library`；产品 `/Users/yuhanglin/.codex/worktrees/fateradar-product-grok-full-library`。原接手基准古籍2396e4c、产品8f1ca84。原main及他人admin/billing/.claude不改。本目标尚未合main或部署。
 
+## 最新接续：六爻总览补齐伏神变爻候选
+
+上一轮有实际进展。本轮对照黄金策与现有代码发现真实消费者漏接：详细analysis.use已含伏神/变爻/月日，但patterns和meta只重扫本卦明爻，复卦父母伏巳的空破支持被漏掉。产品改为同一候选来源，复用节点标签，资料标明下伏/变出/月日；不改变取用优先或作用计算。
+
+- 三项pattern用结构化kong、月冲、临日/同月五行判断，不解析展示字符串；月日参照不伪作卦内爻自指支持。新增3测试先红后绿，覆盖复卦伏父空破/支持及乾初变姤辛丑父月破，静变位不假发动。
+- 六爻/对话7文件121项通过，typecheck/修改ESLint通过。未改原文、verified、golden或规则定义，未作本批网页视觉验收。全量目标active，继续真实运行条件及其他全库材料；未合main或部署。
+
 ## 最新接续：黄金策现有主文件完整电子审读
 
 上一轮有实际进展。本轮dc1029f新增最后145原段，849/849主ID全部对应独立语义记录。完成失脱、新增痘疹、出行、行人、舟船、娼家及附船家宅/何知章。新增与附录标anthology，模板/分类残留为元数据；缺字待核保留。仅主文件阅读完成，非影像校勘、底本完整性或案例实证/算法全覆盖。
