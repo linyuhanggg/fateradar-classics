@@ -4,6 +4,15 @@
 
 两仓均为 `codex/full-library-completion`：古籍 `/Users/yuhanglin/.codex/worktrees/fateradar-classics-grok-full-library`；产品 `/Users/yuhanglin/.codex/worktrees/fateradar-product-grok-full-library`。原接手基准古籍2396e4c、产品8f1ca84。原main及他人admin/billing/.claude不改。本目标尚未合main或部署。
 
+## 最新接续：七政四余庙宫逐条对照与网页更新
+
+上一轮有实际进展。本轮从已读星学大成201及5651落实XXDC-E-06，古籍3fbef8c固定导出七政6规则；全部执行定义14包252规则513片段验证通过。现四余位置与原文庙宫比较，不冒充古法完整庙旺。
+
+- 罗寅午、计巳亥、孛未、炁申与紫炁论丑分成5条templeChecks。各有稳定ID、实际星/宫支、referenceBranches、shapeStatus、status、未算项和准确source片段。紫气历元未核status未知，全部traditionalVerdict未知；原黄经/交点/宿度/上升点/dignity不变。
+- 免费points与AI追问消费同一份结果，紫气两条分别连201/5651，宫主表不混庙宫。测试含计都庙匹配而宫主不匹配，防交叉替代。新增测试先红后绿，3文件23测试通过（含原golden特征及独立交点）；tsc发现显式图表类型漏字段，补齐后通过，改动文件eslint过。
+- ego空间34/5188确认五标题及原文链接。七政只读p档案，t参数未换盘不得算验证；通过页面既有验收档案实际切换，1990-01-01罗子不匹配→1981-07-08罗午匹配，旧结果更新。未新增或改真实档案。
+- 古法宫宿换算、太岁/刑克救应、紫气历元仍未全做；完整目标active，知识正文仍c6485d0/19351，七政规则独立3fbef8c。原文/verified不改，未合main或部署。
+
 ## 最新接续：卜筮正宗四静卦组件原例回归
 
 上一轮有实际进展，独发独静已接运行。本轮fe83225转录原书四张静卦：L4216复辛卯申月、L3538贲壬辰卯月、L4329小畜庚子未月、L4098否甲午卯月。逐项录主卦六爻支亲/世应，源文明确月日；不补变卦、公元年或投币种子。
