@@ -4,6 +4,15 @@
 
 两仓均为 `codex/full-library-completion`：古籍 `/Users/yuhanglin/.codex/worktrees/fateradar-classics-grok-full-library`；产品 `/Users/yuhanglin/.codex/worktrees/fateradar-product-grok-full-library`。原接手基准古籍2396e4c、产品8f1ca84。原main及他人admin/billing/.claude不改。本目标尚未合main或部署。
 
+## 最新接续：渊海小儿女命532主段，下一行1170
+
+上一轮有实际进展。本轮327c235新增47主段至L1168，子息末、小儿关煞与妇人总诀开头，累计532段；下一L1170。
+
+- 关煞五行数推岁为传统数法不作儿童风险年龄；偏官关偏财煞与其他起表分开。被合例丙辛为合、丁庚辛乙为克，不改五合表。
+- 女命财薄/财生官、弱身/身强制伏等异说关联，透官无支根退气不算有效根。孤鸾短诀仅本列五日候选，不补其他表。母婴婚史道德旧断不当事实。
+- 532entries验证0错；固定327c235cdd77b30759b3e0569aad25de00f5c944导出55包80889段source_reviewed19898，18知识测试通过，532主段切片一致，参考1988未审。
+- 原文/ID/verified保持，运行引擎未改；全目标active，未合main或部署。继续主文和全库/八术剩余条件。
+
 ## 最新接续：渊海六亲485主段，下一行1070
 
 上一轮有实际进展。本轮a65c8e6新增45主段至L1068，母兄弟妻妾子息开头，累计485段；下一L1070子息后文。
