@@ -4,6 +4,15 @@
 
 两仓均为 `codex/full-library-completion`：古籍 `/Users/yuhanglin/.codex/worktrees/fateradar-classics-grok-full-library`；产品 `/Users/yuhanglin/.codex/worktrees/fateradar-product-grok-full-library`。原接手基准古籍2396e4c、产品8f1ca84。原main及他人admin/billing/.claude不改。本目标尚未合main或部署。
 
+## 最新接续：阳宅明堂图说文字27节，下一行496
+
+上一轮有实际进展。本轮2346660新增6节L378–495，第675卷连续L12–495共27节文字，父段仍draft；L496起未读。
+
+- 破军文曲禄存为山形明堂取象不套紫微/游年；顺逆水L426/428图占位切句不补公式，三尖井四尖疑字不改。此个山头依缺图不可据病象反推轮廓。
+- 树/塘/尖砂左右与旧亲属病德断分开，图形朝向尺度与子图边界仍未核，不能称图文已审。3entries验证0错，6新节连续。
+- 未导出未读全父段，产品知识仍0f4138f/21775，运行e43cd38，原文/ID/verified保持。nmem继续502未反复重试或切换。
+- 全目标active，未合main或部署；继续L496余图说并核图源，随后福元与其他全库/八术工作。
+
 ## 最新接续：阳宅图说文字21节，下一行378
 
 上一轮有实际进展。本轮6c4b126新增6组L242–377图说文字，第675卷连续L12–377共21节，父段仍draft；L378起未读。
