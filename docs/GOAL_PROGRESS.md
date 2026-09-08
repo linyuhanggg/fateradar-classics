@@ -4,6 +4,15 @@
 
 两仓均为 `codex/full-library-completion`：古籍 `/Users/yuhanglin/.codex/worktrees/fateradar-classics-grok-full-library`；产品 `/Users/yuhanglin/.codex/worktrees/fateradar-product-grok-full-library`。原接手基准古籍2396e4c、产品8f1ca84。原main及他人admin/billing/.claude不改。本目标尚未合main或部署。
 
+## 最新接续：阳宅穿宫34节，下一1681元空
+
+上一轮有实际进展。本轮9c51ae3新增10节L1577–1680，第二正文连续L1219–1680共34节，穿宫文字读完；下一L1681元空装卦。
+
+- 原一进至十进非现代楼层；墙门分院重起、首层门朝内/朝外改计层，离门四正属金为穿宫起法不改离卦火。同乾/巽/坤/艮门不同宅向层数不同，不能只门卦统一表。
+- 贪狼中宫及吉星凶方仍不宜高，L1641额外图未题不补，图形/子图与真实进数未核。5entries验证0错，10节连续。
+- 父段未完不导出，知识c21147c/21778运行e43cd38，原文/ID/verified保持，nmem继续502未反复重试。
+- 全目标active，未合main或部署；继续元空开门及图源、全库/八术余项。
+
 ## 最新接续：阳宅星宫生克24节，下一1577穿宫
 
 上一轮有实际进展。本轮5db739e新增5节L1452–1576，第二正文连续L1219–1576共24节，五行生克诀读完；下一L1577穿宫九星。
