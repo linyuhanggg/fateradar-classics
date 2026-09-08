@@ -60,6 +60,21 @@ def supplemental_editions(root: Path) -> list[dict]:
     return data["editions"]
 
 
+def edition_paragraphs(root: Path, edition: dict) -> list[dict]:
+    if not edition.get("paragraphIndex"):
+        return split_edition(edition, (root / edition["file"]).read_text().splitlines())
+    data = json.loads((root / edition["paragraphIndex"]).read_text())
+    if data["sourceFile"] != edition["file"]:
+        raise ValueError(f"Paragraph index refers to another edition: {edition['id']}")
+    rows = []
+    for paragraph in data["paragraphs"]:
+        if not paragraph["id"].startswith(f"{edition['bookSlug']}:{edition['id']}:"):
+            raise ValueError(f"Paragraph ID belongs to another edition: {paragraph['id']}")
+        rows.append({**paragraph, "source_file": edition["file"], "source_label": edition["label"],
+                     "source_status": edition["sourceStatus"], "source_notes": edition.get("notes", [])})
+    return rows
+
+
 def load_source_paragraphs(root: Path) -> dict[str, dict]:
     result = {}
     for path in sorted((root / "references/inventory/paragraphs").glob("*/*.json")):
@@ -76,7 +91,7 @@ def load_source_paragraphs(root: Path) -> dict[str, dict]:
             if review_data["sourcePath"] != edition["file"]:
                 raise ValueError(f"Page review refers to another edition: {edition['id']}")
             reviews = {item["pdfPage"]: item for item in review_data["pages"]}
-        for row in split_edition(edition, (root / edition["file"]).read_text().splitlines()):
+        for row in edition_paragraphs(root, edition):
             review = reviews.get(row.get("pdf_page"), {})
             if review.get("status") == "source-reviewed" and not review.get("unresolved"):
                 row["source_status"] = "page-reviewed"

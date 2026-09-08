@@ -1,0 +1,11 @@
+# 识典来源接入 · 2026-09-08
+
+本批将已取得的33个对应/候选版本、21553个原文段落接到独立来源层，不改55套主包和53640主段的ID。原文保留异体字与行型，网站译文不导入；图像以明确占位及原图URI保存。通过上游paragraphId去重父子章节重复返回，不凭目录完整率提升校勘/语义审读状态。
+
+`tools/import-shidian.py --source <已取得书籍目录> --slug <实际书目slug>` 生成 `sources/normalized/shidianguji/<bookId>/` 的text.md、paragraphs.json、original-paragraphs.json、book.json、figures.json、provenance.json。新ID形如 `sanming-tonghui:shidian-HY1521:P...`，前章文字长度变化不改后段ID；本地行号用于固定提交链接，上游链接用于对照。
+
+现有书的识典版本在source-editions单列。《命海全编》新取得1058段，进入书房待校参考；原catalog的算法证据排除不解除，不生成候选规则/人工verified。《柳庄相法》656字短篇及三种仅相关书暂不作为目标书版本加入；识典的全部检索审计仍在 `/Users/yuhanglin/.agent-reach/shidian-audit-20260908/REPORT.md`。
+
+识典外层卷名可能与正文不同，例如HY0057网页卷六实际正文卷四。卷号必须核正文/影印，不能照搬导航。现成文字省的是重复识字成本，未覆盖图表、校勘和语义审读。
+
+验证：导入器测试覆盖去重、原字/译文分离、图像占位、稳定ID、缺章及冲突；来源加载测试覆盖上游ID和索引；知识出口测试覆盖未校参考不升级、上游链接不丢失。网页和产品固定导出另在本轮整体验收记录。

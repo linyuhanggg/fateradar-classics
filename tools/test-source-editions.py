@@ -50,6 +50,20 @@ class SourceEditions(unittest.TestCase):
             self.assertEqual([row["source_status"] for row in rows], ["ocr-draft", "passage-reviewed", "ocr-draft"])
             self.assertEqual(rows[1]["page_start_line"], 4)
 
+    def test_explicit_web_paragraph_index_keeps_source_ids_and_omits_header(self):
+        with tempfile.TemporaryDirectory() as folder:
+            root = Path(folder)
+            (root / "sources").mkdir()
+            (root / "references").mkdir()
+            (root / "sources/web.md").write_text("# 网站说明\n\n原字未改\n")
+            edition = {"id": "shidian-HY1", "bookSlug": "book", "label": "识典待校", "file": "sources/web.md", "sourceStatus": "reference-text", "paragraphIndex": "sources/index.json"}
+            (root / "sources/index.json").write_text(json.dumps({"sourceFile": "sources/web.md", "paragraphs": [{"id": "book:shidian-HY1:P100", "start_line": 3, "end_line": 3, "heading": "网站章节", "kind": "待分类", "upstreamUrl": "https://www.shidianguji.com/book/HY1/chapter/a"}]}))
+            (root / "references/source-editions.json").write_text(json.dumps({"editions": [edition]}))
+            rows = list(load_source_paragraphs(root).values())
+            self.assertEqual([r["id"] for r in rows], ["book:shidian-HY1:P100"])
+            self.assertEqual(rows[0]["source_status"], "reference-text")
+            self.assertEqual(rows[0]["upstreamUrl"], "https://www.shidianguji.com/book/HY1/chapter/a")
+
     def test_ocr_annotation_cannot_be_promoted_by_semantic_review(self):
         row = split_edition(self.edition, ["未校正文"])[0]
         data = {"bookSlug": "book", "entries": [{"paragraphId": row["id"], "kind": "理论", "vernacular": "OCR解释", "terms": [], "notes": [], "review": "source-reviewed"}]}

@@ -77,6 +77,20 @@ class KnowledgeExport(unittest.TestCase):
         self.assertEqual(draft["pdfPage"], 21)
         self.assertEqual(data["books"][0]["paragraphCount"], 2)
 
+    def test_research_book_and_upstream_reference_are_searchable_without_promotion(self):
+        self.write("sources/candidate.md", "待校新原文\n")
+        self.write_json("sources/candidate-index.json", {"sourceFile": "sources/candidate.md", "paragraphs": [{"id": "candidate:shidian-HY2:P200", "start_line": 1, "end_line": 1, "heading": "网站卷名待核", "kind": "待分类", "upstreamUrl": "https://www.shidianguji.com/book/HY2/chapter/c", "figureCount": 1}]})
+        self.write_json("references/source-editions.json", {"books": [{"slug": "candidate", "title": "候选新书", "system": "san-shi", "fulltext": "sources/candidate.md", "textStatus": "unassessed", "sourceNotes": ["仅供研究，不作为算法依据"]}], "editions": [{"id": "shidian-HY2", "bookSlug": "candidate", "label": "新版本待校", "file": "sources/candidate.md", "paragraphIndex": "sources/candidate-index.json", "sourceStatus": "reference-text", "notes": ["未逐字校勘"]}]})
+        result = module.build_export(self.root, "fixed")
+        self.assertEqual(len(result["books"]), 2)
+        row = next(p for p in result["paragraphs"] if p["bookSlug"] == "candidate")
+        self.assertEqual(row["review"], "unreviewed")
+        self.assertEqual(row["sourceStatus"], "reference-text")
+        self.assertEqual(row["upstreamUrl"], "https://www.shidianguji.com/book/HY2/chapter/c")
+        self.assertEqual(row["figureCount"], 1)
+        self.assertNotIn("vernacular", row)
+        self.assertEqual(result["books"][1]["textStatus"], "unassessed")
+
     def test_bad_annotation_fails_export(self):
         self.write_json("references/annotations/bazi/book.json", {"bookSlug": "book", "entries": [{"paragraphId": "book:L0001-L0009"}]})
         with self.assertRaisesRegex(ValueError, "unknown paragraphId"):

@@ -38,6 +38,12 @@ def build_export(root: Path, revision: str) -> dict:
                       "fulltext": fulltext, "paragraphCount": len(data["paragraphs"]),
                       "textStatus": quality.get(slug, {}).get("status", "unassessed"),
                       "sourceNotes": quality.get(slug, {}).get("notes", [])})
+    registry = root / "references/source-editions.json"
+    if registry.exists():
+        for book in json.loads(registry.read_text()).get("books", []):
+            if any(existing["slug"] == book["slug"] for existing in books):
+                raise ValueError(f"Duplicate research book: {book['slug']}")
+            books.append({**book, "paragraphCount": 0})
     sources = load_source_paragraphs(root)
     book_map = {book["slug"]: book for book in books}
     source_lines = {}
@@ -55,11 +61,14 @@ def build_export(root: Path, revision: str) -> dict:
         row = {"id": paragraph["id"], "bookSlug": slug, "heading": paragraph["heading"],
                "text": "\n".join(lines[start - 1:end]), "kind": paragraph["kind"],
                "startLine": start, "endLine": end, "terms": [], "notes": [], "review": "unreviewed"}
-        if source_file != book_map[slug]["fulltext"]:
+        if source_file != book_map[slug]["fulltext"] or paragraph.get("source_label"):
             row.update({"sourceFile": source_file, "sourceLabel": paragraph.get("source_label", "补充来源"),
                         "sourceStatus": paragraph["source_status"], "notes": paragraph.get("source_notes", [])})
             if paragraph.get("pdf_page", 0) > 0:
                 row["pdfPage"] = paragraph["pdf_page"]
+        for field in ("upstreamUrl", "upstreamParagraphId", "upstreamPageIds", "figureCount"):
+            if field in paragraph:
+                row[field] = paragraph[field]
         rows.append(row)
         paragraph_map[row["id"]] = row
     for book in books:
