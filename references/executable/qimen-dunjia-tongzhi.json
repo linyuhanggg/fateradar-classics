@@ -7,7 +7,7 @@
     "fulltext": "sources/fulltext/san-shi/qimen-dunjia-tongzhi/fulltext.md"
   },
   "verified": false,
-  "note": "只接入伏吟、反吟的落宫条件。歌诀「伏吟为最凶」不得改写成必败。verified 保持 false。",
+  "note": "伏反吟基础定义与三奇得使/三种入墓段落分别保留。定义导出不是当前盘已满足；运行须读取真实奇仪位置，不能拿值符宫替本奇宫。三种墓说有异，不多数投票，也不据名称推现实成败。",
   "rules": [
     {
       "id": "QMD-E-01",
@@ -87,6 +87,184 @@
       "rescue": "unimplemented",
       "vernacular": "值符落对宫，这是反吟的盘面条件，用来观察往还之象，不是已经判定所谋必变。",
       "implementation_assumption": "对宫按洛书八宫对冲。不把反吟写成必须改时。",
+      "verified": false
+    },
+    {
+      "id": "QMD-E-03",
+      "art": "qimen",
+      "theme": "三奇得使的实际天地干配对",
+      "chapter": "三奇得使的实际天地干配对",
+      "school": "奇门遁甲统宗",
+      "paragraph_ids": [
+        "qimen-dunjia-tongzhi:L0281-L0281",
+        "qimen-dunjia-tongzhi:L0491-L0491"
+      ],
+      "sources": [
+        {
+          "paragraph_id": "qimen-dunjia-tongzhi:L0281-L0281",
+          "start_line": 281,
+          "end_line": 281,
+          "quote": "三奇得使 乙奇加甲午甲戌 丙奇加甲子甲申 丁奇加甲寅甲辰"
+        },
+        {
+          "paragraph_id": "qimen-dunjia-tongzhi:L0491-L0491",
+          "start_line": 491,
+          "end_line": 491,
+          "quote": "六仪：戊己庚辛壬癸为六仪。甲子遁于六戊，甲戌遁于六己，甲申遁于六庚，甲午遁于六辛，甲辰遁于六壬，甲寅遁于六癸。"
+        }
+      ],
+      "quote": "三奇得使 乙奇加甲午甲戌 丙奇加甲子甲申 丁奇加甲寅甲辰\n[…]\n六仪：戊己庚辛壬癸为六仪。甲子遁于六戊，甲戌遁于六己，甲申遁于六庚，甲午遁于六辛，甲辰遁于六壬，甲寅遁于六癸。",
+      "page": "qimen",
+      "required_facts": [
+        "sky.stem",
+        "earth.stems",
+        "palace"
+      ],
+      "when": {
+        "skyStemIn": [
+          "乙",
+          "丙",
+          "丁"
+        ],
+        "locationBasis": "actual-sky-stem-palace"
+      },
+      "satisfy_when": "天乙遇地己辛、天丙遇地戊庚、天丁遇地壬癸；寄干以现行寄宫真实位置同查",
+      "fail_when": "本奇在本宫未遇列明六仪",
+      "unknown_when": "得使成立不代表墓、门迫或其它限制已解除；缺天地层信息时不能判断",
+      "rescue": "unimplemented",
+      "vernacular": "三奇得使看本宫天盘奇与地盘仪的具体配对，不是只见三奇或吉门就成立。",
+      "implementation_assumption": "六甲隐于六仪按L491映射；不要求配对地仪恰为当旬旬首。中五寄坤/禽芮随转沿用既有盘法，不由本条另起盘。",
+      "verified": false
+    },
+    {
+      "id": "QMD-E-04",
+      "art": "qimen",
+      "theme": "三奇入墓：原简表口径",
+      "chapter": "三奇入墓：原简表口径",
+      "school": "奇门遁甲统宗",
+      "paragraph_ids": [
+        "qimen-dunjia-tongzhi:L0315-L0315"
+      ],
+      "sources": [
+        {
+          "paragraph_id": "qimen-dunjia-tongzhi:L0315-L0315",
+          "start_line": 315,
+          "end_line": 315,
+          "quote": "三奇入墓 乙奇坤宫 丙奇乾宫 丁奇艮宫"
+        }
+      ],
+      "quote": "三奇入墓 乙奇坤宫 丙奇乾宫 丁奇艮宫",
+      "page": "qimen",
+      "required_facts": [
+        "sky.stem",
+        "palace"
+      ],
+      "when": {
+        "skyStemIn": [
+          "乙",
+          "丙",
+          "丁"
+        ],
+        "locationBasis": "actual-sky-stem-palace"
+      },
+      "satisfy_when": "本宫天乙在坤二、天丙在乾六、天丁在艮八",
+      "fail_when": "按这份简表，当前奇不在所列墓宫",
+      "unknown_when": "与本书其他段落不同的宫位不得合成统一断语；单条成立不作现实凶断",
+      "rescue": "unimplemented",
+      "vernacular": "这份简表把乙坤、丙乾、丁艮列为入墓位置。它和另段取法有不同，需要按各自原文分别看。",
+      "implementation_assumption": "只执行该行列明墓宫；不偷偷改成L1634的乙乾，也不将值符落宫当作本奇落宫。",
+      "verified": false
+    },
+    {
+      "id": "QMD-E-05",
+      "art": "qimen",
+      "theme": "三奇入墓：阴阳干长生分论",
+      "chapter": "三奇入墓：阴阳干长生分论",
+      "school": "奇门遁甲统宗",
+      "paragraph_ids": [
+        "qimen-dunjia-tongzhi:L1632-L1632",
+        "qimen-dunjia-tongzhi:L1634-L1634"
+      ],
+      "sources": [
+        {
+          "paragraph_id": "qimen-dunjia-tongzhi:L1632-L1632",
+          "start_line": 1632,
+          "end_line": 1632,
+          "quote": "入墓丁艮乙丙乾，所谋吉事一无成。"
+        },
+        {
+          "paragraph_id": "qimen-dunjia-tongzhi:L1634-L1634",
+          "start_line": 1634,
+          "end_line": 1634,
+          "quote": "三奇入墓，闭塞不通，暗昧不振，诸事皆凶。乙阴木长生在午墓于戌，丙火长生在寅墓于戌，故乙丙到乾为墓。丁阴火长生在酉墓于丑，故丁到艮为墓。是谓三奇入墓，所谋诸事百无一成。"
+        }
+      ],
+      "quote": "入墓丁艮乙丙乾，所谋吉事一无成。\n[…]\n三奇入墓，闭塞不通，暗昧不振，诸事皆凶。乙阴木长生在午墓于戌，丙火长生在寅墓于戌，故乙丙到乾为墓。丁阴火长生在酉墓于丑，故丁到艮为墓。是谓三奇入墓，所谋诸事百无一成。",
+      "page": "qimen",
+      "required_facts": [
+        "sky.stem",
+        "palace"
+      ],
+      "when": {
+        "skyStemIn": [
+          "乙",
+          "丙",
+          "丁"
+        ],
+        "locationBasis": "actual-sky-stem-palace"
+      },
+      "satisfy_when": "本宫天乙或天丙在乾六、天丁在艮八",
+      "fail_when": "按阴阳干分论，该奇不在所列墓宫",
+      "unknown_when": "本书乙墓简表及丙丁合论首句另有取法，不能互相覆盖；未判组合总结果",
+      "rescue": "unimplemented",
+      "vernacular": "这段按阴阳干的长生墓位分别说乙丙到乾、丁到艮；本盘判断只限这条取法。",
+      "implementation_assumption": "按本段明列宫位计算，保留与L315、L1543的差异；不按当前程序默认主星宫定位三奇。",
+      "verified": false
+    },
+    {
+      "id": "QMD-E-06",
+      "art": "qimen",
+      "theme": "三奇入墓：演义首句丙丁合论",
+      "chapter": "三奇入墓：演义首句丙丁合论",
+      "school": "奇门遁甲统宗",
+      "paragraph_ids": [
+        "qimen-dunjia-tongzhi:L1541-L1541",
+        "qimen-dunjia-tongzhi:L1543-L1543"
+      ],
+      "sources": [
+        {
+          "paragraph_id": "qimen-dunjia-tongzhi:L1541-L1541",
+          "start_line": 1541,
+          "end_line": 1541,
+          "quote": "若遇三奇多入墓，求之美格亦为祸。譬如鬼遁用伏藏，此为用格正相当。"
+        },
+        {
+          "paragraph_id": "qimen-dunjia-tongzhi:L1543-L1543",
+          "start_line": 1543,
+          "end_line": 1543,
+          "quote": "凡局中得三奇者，固吉无不利，然乙木到坤、丙丁火到乾，皆为入墓，虽值美亦不为吉，用之有凶祸。譬如丁奇与开门休合，上临九地，为鬼遁，利于伏藏、偷劫，此谓用格之法。若在艮宫，为丁奇入墓，用之必主败亡。须在他宫则吉。"
+        }
+      ],
+      "quote": "若遇三奇多入墓，求之美格亦为祸。譬如鬼遁用伏藏，此为用格正相当。\n[…]\n凡局中得三奇者，固吉无不利，然乙木到坤、丙丁火到乾，皆为入墓，虽值美亦不为吉，用之有凶祸。譬如丁奇与开门休合，上临九地，为鬼遁，利于伏藏、偷劫，此谓用格之法。若在艮宫，为丁奇入墓，用之必主败亡。须在他宫则吉。",
+      "page": "qimen",
+      "required_facts": [
+        "sky.stem",
+        "palace"
+      ],
+      "when": {
+        "skyStemIn": [
+          "乙",
+          "丙",
+          "丁"
+        ],
+        "locationBasis": "actual-sky-stem-palace"
+      },
+      "satisfy_when": "按该段首句，本宫天乙在坤二、天丙或天丁在乾六",
+      "fail_when": "按该段首句，该奇不在列明墓宫",
+      "unknown_when": "同段后半另谈鬼遁丁艮之墓；不是首句表可统包的通用救应，必须连同原段保留",
+      "rescue": "unimplemented",
+      "vernacular": "这段首句把丙丁到乾一并论墓，因此丁在乾时，得使和受墓限制可以同时出现。",
+      "implementation_assumption": "本条仅明示执行该段首句，完整原段同时提供。同段后半丁艮及其他墓表不删除；本书通行合并墓法仍有分歧，不据此断全局凶。",
       "verified": false
     }
   ]
