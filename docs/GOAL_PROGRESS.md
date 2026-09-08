@@ -4,6 +4,13 @@
 
 两仓均为 `codex/full-library-completion`：古籍 `/Users/yuhanglin/.codex/worktrees/fateradar-classics-grok-full-library`；产品 `/Users/yuhanglin/.codex/worktrees/fateradar-product-grok-full-library`。原接手基准古籍2396e4c、产品8f1ca84。原main及他人admin/billing/.claude不改。本目标尚未合main或部署。
 
+## 最新接续：阳宅三要艮震巽主24组，下一行1040
+
+上一轮有实际进展。本轮247aae2新增S068–S091，艮/震/巽主各8门每门8灶，共24组192灶条，工作稿连续覆盖L7–1039。各灶配门配主的生克、同阴阳限制、初吉久限和解神半吉分别保留。L1002兑门坤灶称门五鬼、L1038巽艮称六煞与前例不齐，未擅改。
+
+- 2entries验证0错，91节连续断言通过。长父段仍draft，L1040乾门离主起未读，本批不导出不完整正文；产品仍f6f302d/19340。原文/ID/verified不变，未将旧亲属病灾说变运行规则。
+- 下一步离坤兑乾主各组及尾文，全量目标active，未合main或部署，不重复旧全代码验证。
+
 ## 最新接续：阳宅三要图示与坎主，下一行824
 
 上一轮有实际进展。本轮c46e778新增S049–S067共19节，正文连续覆盖7–823。衙署五七八进图文字、多栏未复原限制、压煞暂吉非全吉、卷一主的用途差别与卷后现代重述分别记录；坎主八门各配八灶逐组解释。
