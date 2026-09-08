@@ -4,6 +4,15 @@
 
 两仓均为 `codex/full-library-completion`：古籍 `/Users/yuhanglin/.codex/worktrees/fateradar-classics-grok-full-library`；产品 `/Users/yuhanglin/.codex/worktrees/fateradar-product-grok-full-library`。原接手基准古籍2396e4c、产品8f1ca84。原main及他人admin/billing/.claude不改。本目标尚未合main或部署。
 
+## 最新接续：阳宅678卷第102页21符题名核对，补出漏收方组
+
+上一轮5d83ac1/80af3c8末卷文字和图索引已推送，属实际进展。本轮0c63ab8使用ego-browser34查看Page102修订1899503的整页及上中下截图，核对五岳5、十二年12、四方4共21符的题名和页内归属。
+
+- 原北岳题对应中岳，亥年题对应子年，申酉戌题对应寅卯辰；三个模板缺题分别为北岳、亥年、申酉戌。6处旁注有扫描证据，未改原始文字/主ID。
+- 亥子丑年符实际在扫描下栏四方组最右侧，网页未单收。manifest.recoveredUnindexedFigures记录来源与位置，不虚构独立图URL或文件编号。20既有图获题名证据+1漏图，现136既有符图仍116未看，字形图另待识。
+- 题名确认不等符式每笔/异体字已释读；第四正文仍draft，23节，整书200节首读状态不变。注释9entries验证0错；知识仍555f606/21780，运行e43cd38，无产品导出。
+- 图源证据docs/review/yangzhai-vol678-images-2026-09-09/。nmem上下文及恢复授权检索成功，全目标active，未合main或部署。继续余页符图、疑表和全库八术工作。
+
 ## 最新接续：阳宅第四卷23节首读完成，全书现有正文200节
 
 上一轮e2720e3/ae1b2f7太阴全格初录已推送，属实际进展。本轮5d83ac1新增第四卷元信息L2609及正文L2611–3051共23节，现9主段均有注释，四正文66/49/62/23合200节。后两正文仍draft，未把图文未齐称全书校定。
