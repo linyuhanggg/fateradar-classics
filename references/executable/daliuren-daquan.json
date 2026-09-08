@@ -443,6 +443,170 @@
       "vernacular": "本次{day_gan}日按{period}取贵人，贵人乘{guiren_sky}、落地盘{guiren_earth}；从这个位置布十二天将，三传所乘随之确定。",
       "implementation_assumption": "L4832壬子亥将加辰，贵人落戌逆行，只能对应巳乘贵；L17739明确癸昼巳夜卯，L17771明确壬癸卯为夜贵，三段互证。当前06–18为既有产品固定时界，本次只明示而不声称出自这些段落。既有日干四课、月将与三传地支取法不因贵人表改写。原断迟慢、脱耗不是运行输出。",
       "verified": false
+    },
+    {
+      "id": "DLD-E-11",
+      "art": "liuren",
+      "theme": "三传天盘旬空与地盘落空",
+      "chapter": "喜惧空亡、昼夜贵加求两贵",
+      "school": "六壬大全",
+      "paragraph_ids": [
+        "daliuren-daquan:L18462-L18466",
+        "daliuren-daquan:L17785-L17785",
+        "daliuren-daquan:L5931-L5956"
+      ],
+      "sources": [
+        {
+          "paragraph_id": "daliuren-daquan:L18462-L18466",
+          "start_line": 18463,
+          "end_line": 18464,
+          "quote": "盖天盘作空亡者，谓之游行空亡，其吉凶有七八分，如地盘作空亡者，谓之落底空亡，其吉凶有十分。\n此不可不知者也。"
+        },
+        {
+          "paragraph_id": "daliuren-daquan:L17785-L17785",
+          "start_line": 17785,
+          "end_line": 17785,
+          "quote": "凡昼夜贵人皆空亡者，如干投贵人，事已蒙许允，后却被人搀越，凡占若值此，事事成拙，或有人报喜且勿信，恐为同名姓人，后非我喜，诚为虚喜，而己反有所费也，故俗谚云：争似不来还不往，亦无欢喜亦无忧。如丁丑日酉加未作空，亥加酉又落空之类，主告贵先允而事未决，后换旬始可有望。"
+        },
+        {
+          "paragraph_id": "daliuren-daquan:L5931-L5956",
+          "start_line": 5953,
+          "end_line": 5953,
+          "quote": "空亡者，甲子旬戌亥空，余仿此。"
+        }
+      ],
+      "quote": "盖天盘作空亡者，谓之游行空亡，其吉凶有七八分，如地盘作空亡者，谓之落底空亡，其吉凶有十分。\n此不可不知者也。\n[…]\n凡昼夜贵人皆空亡者，如干投贵人，事已蒙许允，后却被人搀越，凡占若值此，事事成拙，或有人报喜且勿信，恐为同名姓人，后非我喜，诚为虚喜，而己反有所费也，故俗谚云：争似不来还不往，亦无欢喜亦无忧。如丁丑日酉加未作空，亥加酉又落空之类，主告贵先允而事未决，后换旬始可有望。\n[…]\n空亡者，甲子旬戌亥空，余仿此。",
+      "page": "liuren",
+      "required_facts": [
+        "day.ganzhi",
+        "three.chuan",
+        "sky.shift",
+        "month.zhi"
+      ],
+      "when": {
+        "exists": "three.chuan"
+      },
+      "satisfy_when": "三传本支或所落地盘支属于当前日柱的旬空支，分开记录各自是否成立",
+      "fail_when": "两个位置均非本日旬空支；不能把地盘落空当成天盘本支也空",
+      "unknown_when": "这些是两层位置事实，未计算所有救应，不直接断应期和事件成败",
+      "rescue": "self",
+      "vernacular": "对照天盘本支与该神所落地盘，分别检查旬空。一个位置为空，不自动改写另一个位置。",
+      "implementation_assumption": "天盘本支是否旬空、地盘所落是否旬空分别检查；DLD-E-11成立仅指至少一项空位事实存在。L17785丁丑酉加未作空、亥加酉落空是直接区分的原例；不使用原文七八分/十分作概率。",
+      "verified": false
+    },
+    {
+      "id": "DLD-E-12",
+      "art": "liuren",
+      "theme": "三传月冲事实",
+      "chapter": "月破",
+      "school": "六壬大全",
+      "paragraph_ids": [
+        "daliuren-daquan:L5151-L5151",
+        "daliuren-daquan:L5147-L5147",
+        "daliuren-daquan:L5149-L5149"
+      ],
+      "sources": [
+        {
+          "paragraph_id": "daliuren-daquan:L5151-L5151",
+          "start_line": 5151,
+          "end_line": 5151,
+          "quote": "月破即月冲。"
+        },
+        {
+          "paragraph_id": "daliuren-daquan:L5147-L5147",
+          "start_line": 5147,
+          "end_line": 5147,
+          "quote": "岁破加临月破中，上下相逢财物空。吉将逢来忧可容，若见凶神凶更凶。"
+        },
+        {
+          "paragraph_id": "daliuren-daquan:L5149-L5149",
+          "start_line": 5149,
+          "end_line": 5149,
+          "quote": "月破人情有不和，失财疾病扰求多。凡事不成争奈何，惟解冤仇自消磨。"
+        }
+      ],
+      "quote": "月破即月冲。\n[…]\n岁破加临月破中，上下相逢财物空。吉将逢来忧可容，若见凶神凶更凶。\n[…]\n月破人情有不和，失财疾病扰求多。凡事不成争奈何，惟解冤仇自消磨。",
+      "page": "liuren",
+      "required_facts": [
+        "day.ganzhi",
+        "three.chuan",
+        "sky.shift",
+        "month.zhi"
+      ],
+      "when": {
+        "exists": "three.chuan"
+      },
+      "satisfy_when": "三传天盘支与本次节月的月建支相冲，记录本传月冲",
+      "fail_when": "本传与月建支不冲；不以月将支替代月建",
+      "unknown_when": "月冲与季节关系、旬空分开，未由本项判断现实受损或诸事不成",
+      "rescue": "self",
+      "vernacular": "月建支与这传的支是否对冲单独列出，不能拿月将去查月破。",
+      "implementation_assumption": "月建取同次历算ganZhi.month的地支，月将取中气过宫，两者不混用。相冲仅作结构事实，不执行原文诸事不成等终断。",
+      "verified": false
+    },
+    {
+      "id": "DLD-E-13",
+      "art": "liuren",
+      "theme": "月建五行基础状态",
+      "chapter": "四时旺相与四季土旺",
+      "school": "六壬大全",
+      "paragraph_ids": [
+        "daliuren-daquan:L5027-L5044",
+        "daliuren-daquan:L9199-L9244",
+        "daliuren-daquan:L9359-L9359",
+        "daliuren-daquan:L16240-L16254",
+        "daliuren-daquan:L16621-L16642"
+      ],
+      "sources": [
+        {
+          "paragraph_id": "daliuren-daquan:L5027-L5044",
+          "start_line": 5037,
+          "end_line": 5037,
+          "quote": "旺相气发必欲速，休囚死气皆迟延春木旺、火相，四时各以类推。"
+        },
+        {
+          "paragraph_id": "daliuren-daquan:L9199-L9244",
+          "start_line": 9225,
+          "end_line": 9225,
+          "quote": "旺气言官职，春木旺，夏火旺，秋金旺，冬水旺，四季土旺。"
+        },
+        {
+          "paragraph_id": "daliuren-daquan:L9359-L9359",
+          "start_line": 9359,
+          "end_line": 9359,
+          "quote": "一下贼上，卑犯尊，贱犯贵之象，占事多不顺，事起女人。如春占，土加寅卯，其土死木旺，是旺鬼贼上，正应此课体。若夏得巳午火加亥子水，下贼上为用，则火旺水囚，不能贼上，有乖违之患。大抵生金不畏死火，生水不畏死土，生旺不畏死囚也，不可执一而论之。"
+        },
+        {
+          "paragraph_id": "daliuren-daquan:L16240-L16254",
+          "start_line": 16253,
+          "end_line": 16253,
+          "quote": "惟土守中宫，分旺四季，每季前各旺十八日，总七十二日，合而成岁，故辰中有余木，未有余火，戌中有余金，丑中有余水，各十二日。"
+        },
+        {
+          "paragraph_id": "daliuren-daquan:L16621-L16642",
+          "start_line": 16626,
+          "end_line": 16628,
+          "quote": "土居中央，分旺四季，故春夏秋冬辰戌丑未月，各寄旺十八日，四季共七十二日。\n五行之旺，各为三百六十日，以为一岁功成。\n故辰中有余木，未中有余火，戌中有余金，丑中有余水也，各十二日。"
+        }
+      ],
+      "quote": "旺相气发必欲速，休囚死气皆迟延春木旺、火相，四时各以类推。\n[…]\n旺气言官职，春木旺，夏火旺，秋金旺，冬水旺，四季土旺。\n[…]\n一下贼上，卑犯尊，贱犯贵之象，占事多不顺，事起女人。如春占，土加寅卯，其土死木旺，是旺鬼贼上，正应此课体。若夏得巳午火加亥子水，下贼上为用，则火旺水囚，不能贼上，有乖违之患。大抵生金不畏死火，生水不畏死土，生旺不畏死囚也，不可执一而论之。\n[…]\n惟土守中宫，分旺四季，每季前各旺十八日，总七十二日，合而成岁，故辰中有余木，未有余火，戌中有余金，丑中有余水，各十二日。\n[…]\n土居中央，分旺四季，故春夏秋冬辰戌丑未月，各寄旺十八日，四季共七十二日。\n五行之旺，各为三百六十日，以为一岁功成。\n故辰中有余木，未中有余火，戌中有余金，丑中有余水也，各十二日。",
+      "page": "liuren",
+      "required_facts": [
+        "day.ganzhi",
+        "three.chuan",
+        "sky.shift",
+        "month.zhi"
+      ],
+      "when": {
+        "exists": "three.chuan"
+      },
+      "satisfy_when": "本传五行与月建支五行同类或受月支所生，在月支基础关系口径下标旺或相",
+      "fail_when": "按月支基础关系为休、囚、死，不等于没有其他日辰或位置支持",
+      "unknown_when": "季月另有十二日余气与十八日土旺，当前月支基础标签不替代逐日司令；不输出总体强弱或事件吉凶",
+      "rescue": "self",
+      "vernacular": "先按月建支比较五行基本关系，再分开看旬空和相冲。旺相休囚死是这个口径的标签，不是现实结果。",
+      "implementation_assumption": "本条先明确输出month-branch-elements口径，采用同气旺、月生传相、传生月休、传克月囚、月克传死的五行基础换算。原文四季土十八日和余气十二日同时保留；未将整季月的月支标签冒称每天司令已计算。",
+      "verified": false
     }
   ]
 }
