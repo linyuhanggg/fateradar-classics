@@ -4,6 +4,15 @@
 
 两仓均为 `codex/full-library-completion`：古籍 `/Users/yuhanglin/.codex/worktrees/fateradar-classics-grok-full-library`；产品 `/Users/yuhanglin/.codex/worktrees/fateradar-product-grok-full-library`。原接手基准古籍2396e4c、产品8f1ca84。原main及他人admin/billing/.claude不改。本目标尚未合main或部署。
 
+## 最新接续：太阴全30日360格初录，疑字仍待校定
+
+上一轮c9a78ac/cd2eac1找回整页已推送，属实际进展。本轮e2720e3按Page101原扫描逐格目读完成太阴30日×12月360格，草稿旁录及三张局部放大截图见docs/review/yangzhai-vol677-images-2026-09-09/。
+
+- 218格驻宫、142格时支换宫，逐格保留sourceText，不补前宫/分钟/时区；初一栏另卯时过亥小字与正月在亥关系未定，独存不覆盖。换宫不能按日内固定宫位解释。
+- 初八时支跳跃、十三日及二十一至二十三日重复丑、二十四日八月未时过辰及二十五日八月在辰等按图初读保留reviewNotes，不按规律修平。全格初录完成不等疑字校定，review=draft/verified=false，尚未接入算法。
+- 已检查30日期顺序、每行12个月及360格字段结构，注释7entries验证0错；正文62小节仍draft，其他40图未审。原文/主ID/verified保持，知识仍555f606/21780、运行e43cd38，无产品导出。
+- nmem上下文及恢复授权检索成功，全目标active，未合main或部署。继续底本疑格复核、其他图文与第四卷2611起，其余全库八术目标不缩减。
+
 ## 最新接续：阳宅677卷62节文字至末，找回月日缺图及太阳表
 
 上一轮4f9d830/bb84faa已推送，属实际进展。本轮c9a78ac新增2节L2598–2605，第三正文62节完整覆盖电子文字L1865–2605，但父段继续draft：图文仍待逐格核齐，不导出正式产品。
