@@ -7,14 +7,198 @@
   "pages": [
     {
       "pdfPage": 1,
-      "scope": "封面可辨题字",
+      "status": "partial",
+      "scope": "封面可辨署名已核，题名字迹缺失与篆印另记",
       "notes": [
-        "书法中间字未辨清，保留缺字标记；印章未释读。"
+        "封面命与约之间无字迹，题名不据其他页补字；许世英题可辨；篆印未释读，非理论正文。"
       ],
       "unresolved": [
-        "封面未辨字与印章"
+        "封面题名缺字；印文未释读，不影响正文"
       ],
-      "status": "partial"
+      "reviewedRanges": [
+        {
+          "startLine": 7,
+          "endLine": 7,
+          "scope": "序文、原凡例或可辨署名字句已核，不作理论正文"
+        }
+      ],
+      "rangeCoordinates": "PDF标题行0，其后按页内相对行号"
+    },
+    {
+      "pdfPage": 2,
+      "status": "partial",
+      "scope": "全部序文已核，馆藏手写号与条码另作元数据",
+      "notes": [
+        "原书十卷/实见抄本二卷由袁序明确记载；旧OCR乱码已逐栏恢复，书志不是理论规则。"
+      ],
+      "unresolved": [
+        "页外手写分类号未逐字释读，不影响序文"
+      ],
+      "reviewedRanges": [
+        {
+          "startLine": 5,
+          "endLine": 6,
+          "scope": "序文、原凡例或可辨署名字句已核，不作理论正文"
+        }
+      ],
+      "rangeCoordinates": "PDF标题行0，其后按页内相对行号"
+    },
+    {
+      "pdfPage": 3,
+      "status": "source-reviewed",
+      "scope": "全页序文及版心已核",
+      "notes": [
+        "宣本缺起例三十六则，前期OCR二十六已纠正；本选本四卷不是原书十卷全本。"
+      ],
+      "unresolved": [],
+      "reviewedRanges": [
+        {
+          "startLine": 5,
+          "endLine": 5,
+          "scope": "序文、原凡例或可辨署名字句已核，不作理论正文"
+        }
+      ],
+      "rangeCoordinates": "PDF标题行0，其后按页内相对行号"
+    },
+    {
+      "pdfPage": 4,
+      "status": "source-reviewed",
+      "scope": "全页序文及版心已核",
+      "notes": [
+        "袁序说明精选节杂论12则，原书凡例另附；起例36/赋20/论24按原图。"
+      ],
+      "unresolved": [],
+      "reviewedRanges": [
+        {
+          "startLine": 5,
+          "endLine": 5,
+          "scope": "序文、原凡例或可辨署名字句已核，不作理论正文"
+        },
+        {
+          "startLine": 7,
+          "endLine": 9,
+          "scope": "序文、原凡例或可辨署名字句已核，不作理论正文"
+        },
+        {
+          "startLine": 11,
+          "endLine": 12,
+          "scope": "序文、原凡例或可辨署名字句已核，不作理论正文"
+        },
+        {
+          "startLine": 14,
+          "endLine": 15,
+          "scope": "序文、原凡例或可辨署名字句已核，不作理论正文"
+        }
+      ],
+      "rangeCoordinates": "PDF标题行0，其后按页内相对行号"
+    },
+    {
+      "pdfPage": 5,
+      "status": "source-reviewed",
+      "scope": "全页序文及版心已核",
+      "notes": [
+        "原书凡例卷二下法14、卷三上20、卷三下14、卷四上24、杂论40，不能混成现选本篇数。"
+      ],
+      "unresolved": [],
+      "reviewedRanges": [
+        {
+          "startLine": 5,
+          "endLine": 6,
+          "scope": "序文、原凡例或可辨署名字句已核，不作理论正文"
+        },
+        {
+          "startLine": 8,
+          "endLine": 9,
+          "scope": "序文、原凡例或可辨署名字句已核，不作理论正文"
+        },
+        {
+          "startLine": 11,
+          "endLine": 12,
+          "scope": "序文、原凡例或可辨署名字句已核，不作理论正文"
+        },
+        {
+          "startLine": 14,
+          "endLine": 15,
+          "scope": "序文、原凡例或可辨署名字句已核，不作理论正文"
+        },
+        {
+          "startLine": 17,
+          "endLine": 18,
+          "scope": "序文、原凡例或可辨署名字句已核，不作理论正文"
+        },
+        {
+          "startLine": 20,
+          "endLine": 20,
+          "scope": "序文、原凡例或可辨署名字句已核，不作理论正文"
+        }
+      ],
+      "rangeCoordinates": "PDF标题行0，其后按页内相对行号"
+    },
+    {
+      "pdfPage": 6,
+      "status": "source-reviewed",
+      "scope": "全页序文及版心已核",
+      "notes": [
+        "原书第五至十卷是旧书编纂；袁树珊序署民国22年、春分节日期照录，不折成现代生日数据。"
+      ],
+      "unresolved": [],
+      "reviewedRanges": [
+        {
+          "startLine": 5,
+          "endLine": 5,
+          "scope": "序文、原凡例或可辨署名字句已核，不作理论正文"
+        },
+        {
+          "startLine": 7,
+          "endLine": 8,
+          "scope": "序文、原凡例或可辨署名字句已核，不作理论正文"
+        },
+        {
+          "startLine": 10,
+          "endLine": 10,
+          "scope": "序文、原凡例或可辨署名字句已核，不作理论正文"
+        }
+      ],
+      "rangeCoordinates": "PDF标题行0，其后按页内相对行号"
+    },
+    {
+      "pdfPage": 7,
+      "status": "source-reviewed",
+      "scope": "全页序文及版心已核",
+      "notes": [
+        "蒋序与袁序共同记录抄本交换及补起例36，属来源沿革；括注人名保留。"
+      ],
+      "unresolved": [],
+      "reviewedRanges": [
+        {
+          "startLine": 5,
+          "endLine": 6,
+          "scope": "序文、原凡例或可辨署名字句已核，不作理论正文"
+        }
+      ],
+      "rangeCoordinates": "PDF标题行0，其后按页内相对行号"
+    },
+    {
+      "pdfPage": 8,
+      "status": "source-reviewed",
+      "scope": "全页序文及版心已核",
+      "notes": [
+        "韦千里取选本、加诠注由蒋序明确，不能把小注全署陈氏；蒋善瀅清渠为署名。"
+      ],
+      "unresolved": [],
+      "reviewedRanges": [
+        {
+          "startLine": 5,
+          "endLine": 5,
+          "scope": "序文、原凡例或可辨署名字句已核，不作理论正文"
+        },
+        {
+          "startLine": 7,
+          "endLine": 7,
+          "scope": "序文、原凡例或可辨署名字句已核，不作理论正文"
+        }
+      ],
+      "rangeCoordinates": "PDF标题行0，其后按页内相对行号"
     },
     {
       "pdfPage": 10,
