@@ -4,6 +4,13 @@
 
 两仓均为 `codex/full-library-completion`：古籍 `/Users/yuhanglin/.codex/worktrees/fateradar-classics-grok-full-library`；产品 `/Users/yuhanglin/.codex/worktrees/fateradar-product-grok-full-library`。原接手基准古籍2396e4c、产品8f1ca84。原main及他人admin/billing/.claude不改。本目标尚未合main或部署。
 
+## 最新接续：黄金策婚姻产育进人口，下一行590
+
+上一轮有实际进展。本轮73a794c新增L402–588共93原段，累计276/849（前九章）电子审读，余573从L590病症继续。婚姻末L472明确不同亲属代问不可概官夫财妇；L483疑脱漏标待核实；L529收生间爻句与前文语义张力保留；古代主仆/收养语境不当现代人员评判或行动建议。
+
+- 新增ID集合与范围逐一对应，276entries校验0错。产品固定73a794c386983fa5e32a76b53da8909e19720ccd出口55资料/80889段/18759 source-reviewed；实际276段、缺文kind与范围说明保留，病症以后仍unreviewed，18检索/分包测试通过。未改原字/ID/verified/golden或新增运行规则，未冒称全代码/网页总验收。
+- 全量目标active，继续分门原文与八术全范围，未合main或部署。
+
 ## 最新接续：黄金策前三至六章，下一行401
 
 上一轮有实际进展。本轮8e888be新增L183–399年时、国朝、征战、身命107原段，累计183/849主段已电子审读，余666从L401婚姻章继续。历史人物多作譬例，不是完整输入占验，未造案例数据。身命末句明确寿夭另卜，不以概说生成寿命结论；L387维基转换标记保留原字并注疑。
