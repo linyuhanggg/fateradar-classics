@@ -32,6 +32,16 @@ class PillarSourceChecks(unittest.TestCase):
         with self.assertRaisesRegex(ValueError, "marked recomputable"):
             m.case_input({"inputBasis": "meihua-numbers", "numbers": {"yearBranch": "辰", "lunarMonth": 12, "lunarDay": 17}, "canRecompute": True})
 
+    def test_direct_hexagram_does_not_invent_numbers_or_mutual_method(self):
+        case = {"inputBasis": "meihua-hexagram", "input": {"upper": "乾", "lower": "坤", "moving": 2}, "expected": {"mutualUpper": "巽", "mutualLower": "离"}, "canRecompute": True}
+        fields, _, repeated = m.case_input(case)
+        self.assertNotIn("numbers", fields)
+        self.assertNotIn("pillars", fields)
+        self.assertNotIn("互卦", fields["scope"])
+        self.assertIn("未明说的取互对象", fields["unavailable"])
+        self.assertEqual(fields["expected"], case["expected"])
+        self.assertEqual(repeated, "sameHexagramInputAs")
+
     def test_multiple_cases_and_repeated_pillars_keep_separate_source_occurrences(self):
         with tempfile.TemporaryDirectory() as directory:
             root = Path(directory)

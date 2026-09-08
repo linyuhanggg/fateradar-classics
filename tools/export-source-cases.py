@@ -37,6 +37,16 @@ def case_input(case: dict) -> tuple[dict, tuple | None, str]:
                   "unavailable": ["绝对公历年份", "节气月令与体用旺衰", "现实应验的独立记录"]}
         signature = (basis, numbers["yearBranch"], month, day, numbers["hourBranch"]) if valid else None
         repeated = "sameNumbersAs"
+    elif basis == "meihua-hexagram":
+        given = case.get("input", {})
+        moving = given.get("moving")
+        names = {"乾", "兑", "離", "离", "震", "巽", "坎", "艮", "坤", "兌"}
+        valid = given.get("upper") in names and given.get("lower") in names and type(moving) is int and 1 <= moving <= 6
+        fields = {"input": given, "inputBasis": basis,
+                  "scope": ["已给主卦", "动爻变卦"],
+                  "unavailable": ["起卦日期与原始取数", "未明说的取互对象", "节气月令与体用旺衰", "现实应验的独立记录"]}
+        signature = (basis, given["upper"], given["lower"], moving) if valid else None
+        repeated = "sameHexagramInputAs"
     else:
         raise ValueError(f"Unsupported case input basis: {basis}")
     if case.get("canRecompute") is True and not valid:
@@ -91,7 +101,7 @@ def main():
     args.output.parent.mkdir(parents=True, exist_ok=True)
     args.output.write_text(json.dumps(data, ensure_ascii=False, indent=2) + "\n")
     print(json.dumps({"cases": len(data["cases"]), "recomputable": sum(c["canRecompute"] for c in data["cases"]),
-                      "repeated_inputs": sum("samePillarsAs" in c or "sameNumbersAs" in c for c in data["cases"]), "verified": 0}, ensure_ascii=False))
+                      "repeated_inputs": sum("samePillarsAs" in c or "sameNumbersAs" in c or "sameHexagramInputAs" in c for c in data["cases"]), "verified": 0}, ensure_ascii=False))
 
 
 if __name__ == "__main__":
