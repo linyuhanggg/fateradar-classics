@@ -4,6 +4,15 @@
 
 两仓均为 `codex/full-library-completion`：古籍 `/Users/yuhanglin/.codex/worktrees/fateradar-classics-grok-full-library`；产品 `/Users/yuhanglin/.codex/worktrees/fateradar-product-grok-full-library`。原接手基准古籍2396e4c、产品8f1ca84。原main及他人admin/billing/.claude不改。本目标尚未合main或部署。
 
+## 最新接续：阳宅第103页18符，既有38符有题名/归属证据
+
+上一轮0c63ab8/c66a4ef第102页核对已推送，属实际进展。本轮c3ce3e3以ego-browser34实际查看Page103修订1899504整页及上中下截图，新增18符题名/邻文归属证据。
+
+- 三教八方实际乾坎艮震巽离坤兑：原L2706兑方旁注乾方，L2720缺题兑方。金刚前四黄赤定贤青：原L2728青旁注黄，L2734缺题青。共4处校读旁注，原文/主ID未改。
+- 前5无题符按庚辛/壬癸/小凶/大凶/五鬼邻文，老宅1符按段归属，不编造原题。后四金刚在下一页未本轮校读，不声称八金刚全部完成。
+- 136既有符图累计38有整页题名或邻文证据，98未看；字形仍待识，102页漏收亥子丑符另列。复杂符式笔画未逐笔释读，父段draft，书现有正文200节状态不变。
+- docs/review/yangzhai-vol678-images-2026-09-09/更新manifest/报告/4截图；9entries验证0错。知识仍555f606/21780、运行e43cd38，无产品导出。nmem上下文及恢复授权检索成功，全目标active，未合main或部署。
+
 ## 最新接续：阳宅678卷第102页21符题名核对，补出漏收方组
 
 上一轮5d83ac1/80af3c8末卷文字和图索引已推送，属实际进展。本轮0c63ab8使用ego-browser34查看Page102修订1899503的整页及上中下截图，核对五岳5、十二年12、四方4共21符的题名和页内归属。
