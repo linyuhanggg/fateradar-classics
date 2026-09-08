@@ -25408,6 +25408,78 @@
       "verified": false
     },
     {
+      "id": "sanming-tonghui:L0589-L0591:case-1",
+      "bookSlug": "sanming-tonghui",
+      "name": "砂中土二金无纳音水、戊午照例",
+      "kind": "source_case",
+      "pillars": [
+        "丙辰",
+        "乙未",
+        "癸酉",
+        "戊午"
+      ],
+      "inputBasis": "four-pillars",
+      "scope": [
+        "十神关系",
+        "四柱组合条件"
+      ],
+      "unavailable": [
+        "公历生日",
+        "交节后天数",
+        "出生地与时制",
+        "起运"
+      ],
+      "canRecompute": true,
+      "reading": "清金养砂土须水相涵，若无水而日時天上火照也有贵例。丙辰乙未癸酉戊午与丁巳癸卯己未壬申两例各有二纳音金，四柱纳音均无水，虽然天干含癸/壬，原全无水指纳音层，不能按天干元素统计。两例原说戊午太燥己未稍缓寿夭不同，不当已验证寿命预期。海水坏造化与丙人癸亥运显又有例外，木土刑破和救水条件保留。",
+      "notes": [
+        "纳音图象、干支作用及格名条件分层；原书吉凶表述不等已验证结果。",
+        "两例只录原文四柱；缺公历地点交节起运。原贵及寿夭不同不作为实际效验或golden答案。"
+      ],
+      "source": {
+        "paragraphId": "sanming-tonghui:L0589-L0591",
+        "file": "sources/fulltext/bazi/sanming-tonghui/fulltext.md",
+        "startLine": 589,
+        "endLine": 591
+      },
+      "verified": false
+    },
+    {
+      "id": "sanming-tonghui:L0589-L0591:case-2",
+      "bookSlug": "sanming-tonghui",
+      "name": "砂中土二金、己未照例",
+      "kind": "source_case",
+      "pillars": [
+        "丁巳",
+        "癸卯",
+        "己未",
+        "壬申"
+      ],
+      "inputBasis": "four-pillars",
+      "scope": [
+        "十神关系",
+        "四柱组合条件"
+      ],
+      "unavailable": [
+        "公历生日",
+        "交节后天数",
+        "出生地与时制",
+        "起运"
+      ],
+      "canRecompute": true,
+      "reading": "清金养砂土须水相涵，若无水而日時天上火照也有贵例。丙辰乙未癸酉戊午与丁巳癸卯己未壬申两例各有二纳音金，四柱纳音均无水，虽然天干含癸/壬，原全无水指纳音层，不能按天干元素统计。两例原说戊午太燥己未稍缓寿夭不同，不当已验证寿命预期。海水坏造化与丙人癸亥运显又有例外，木土刑破和救水条件保留。",
+      "notes": [
+        "纳音图象、干支作用及格名条件分层；原书吉凶表述不等已验证结果。",
+        "两例只录原文四柱；缺公历地点交节起运。原贵及寿夭不同不作为实际效验或golden答案。"
+      ],
+      "source": {
+        "paragraphId": "sanming-tonghui:L0589-L0591",
+        "file": "sources/fulltext/bazi/sanming-tonghui/fulltext.md",
+        "startLine": 589,
+        "endLine": 591
+      },
+      "verified": false
+    },
+    {
       "id": "ziping-zhenquan:L0251-L0255",
       "bookSlug": "ziping-zhenquan",
       "name": "五、論十干合而不合·正文命例1",
@@ -219943,5 +220015,5 @@
       "verified": false
     }
   ],
-  "sourceRevision": "97851a077c7c4e64f6adb90b301d30f60d814582"
+  "sourceRevision": "51fb52fbff19df89b467ec682a6ea9fd198aa88b"
 }

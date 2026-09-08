@@ -1,0 +1,42 @@
+{
+  "sourceParagraph": "sanming-tonghui:L0589-L0591",
+  "library": "tyme4ts 1.5.2",
+  "scope": "Only checks two metal and no water on the nayin layer; no prediction, birthday, or timing validation.",
+  "verified": false,
+  "cases": [
+    {
+      "pillars": [
+        "丙辰",
+        "乙未",
+        "癸酉",
+        "戊午"
+      ],
+      "nayin": [
+        "沙中土",
+        "沙中金",
+        "剑锋金",
+        "天上火"
+      ],
+      "metalCount": 2,
+      "nayinWaterCount": 0,
+      "heavenStemWaterPresent": true
+    },
+    {
+      "pillars": [
+        "丁巳",
+        "癸卯",
+        "己未",
+        "壬申"
+      ],
+      "nayin": [
+        "沙中土",
+        "金箔金",
+        "天上火",
+        "剑锋金"
+      ],
+      "metalCount": 2,
+      "nayinWaterCount": 0,
+      "heavenStemWaterPresent": true
+    }
+  ]
+}
