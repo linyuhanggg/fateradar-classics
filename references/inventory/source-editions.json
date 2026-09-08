@@ -29,16 +29,28 @@
     {
       "id": "nlc-recovery",
       "bookSlug": "mingli-yueyan",
-      "label": "精选命理约言 NLC 影印 OCR 初识稿",
+      "label": "精选命理约言 · 韦千里四卷选本 · NLC影印校读",
       "file": "sources/normalized/bazi/mingli-yueyan/nlc-recovery.md",
-      "paragraphs": 237,
+      "paragraphs": 781,
       "sourceStates": {
-        "ocr-draft": 184,
-        "passage-reviewed": 43,
-        "page-reviewed": 10
+        "ocr-draft": 162,
+        "passage-reviewed": 537,
+        "page-reviewed": 82
       },
-      "annotations": 49,
-      "reviewedBodyExplanations": 45
+      "annotations": 781,
+      "reviewedBodyExplanations": 406
+    },
+    {
+      "id": "wikisource-volume1",
+      "bookSlug": "zengshan-buyi",
+      "label": "增删卜易卷一 · 维基分章固定版本恢复",
+      "file": "sources/normalized/divination/zengshan-buyi/wikisource-volume1.md",
+      "paragraphs": 295,
+      "sourceStates": {
+        "reference-text": 295
+      },
+      "annotations": 295,
+      "reviewedBodyExplanations": 242
     }
   ]
 }

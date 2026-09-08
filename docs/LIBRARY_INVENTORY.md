@@ -10,16 +10,16 @@
 - catalog 另列排除项：4
 - 稳定段落：53640（含疑文段 1261）
 - 旧 rules.yaml 候选记录：1356（其中 declared verified=true：0；不作运行权威）
-- 新规则定义记录：82，有规则白话 82（仅统计 `references/executable/*.json`；不据此认定运行接入或分支验证完成）
+- 新规则定义记录：212，有规则白话 212（仅统计 `references/executable/*.json`；不据此认定运行接入或分支验证完成）
 - 新规则 declared verified=true：0（只读已有标记，不自动提升）
-- 独立盘面读法：11（`references/readings/chart-notes.json`；不换算成全文白话覆盖）
+- 独立盘面读法：14（`references/readings/chart-notes.json`；不换算成全文白话覆盖）
 
 ## 实际语义加工进度
 
-- 已有段落注解：1535 / 53640
-- 标记电子原文审读 source-reviewed：1535（不是人工影印核验）
-- 有非空白话或处理说明的段落：1535（其中 source-reviewed：1535）
-- 尚无注解：52105；尚无段落白话：52105
+- 已有段落注解：12147 / 53640
+- 标记电子原文审读 source-reviewed：12147（不是人工影印核验）
+- 有非空白话或处理说明的段落：12147（其中 source-reviewed：12147）
+- 尚无注解：41493；尚无段落白话：41493
 - 原文字面重复段：9220（仅忽略空白比较，same_text_as 不代表流派或理论等价）
 
 上述是文件中实际存在的产物统计，不是全库完成率。模式分类只帮助找材料，未分类、只有规则标题或未审读白话都不能算完成。
@@ -43,9 +43,9 @@
 
 | 系统 | slug | 书名 | 文字文件 | 段落 | 注解 | 段落白话 | 规则定义 | 去向 | 影印 |
 |---|---|---|---:|---:|---:|---:|---:|---|---|
-| bazi | ditiansui-chanwei | 滴天髓阐微 | 是 | 5681 | 0 | 0 | 0 | engine | 已存影印／候选底本 |
+| bazi | ditiansui-chanwei | 滴天髓阐微 | 是 | 5681 | 5124 | 5124 | 0 | engine | 已存影印／候选底本 |
 | bazi | mingli-yueyan | 命理约言 | 是 | 540 | 540 | 540 | 0 | engine | 已存影印／候选底本 |
-| bazi | qiongtong-baojian | 穷通宝鉴 | 是 | 605 | 378 | 378 | 1 | engine | 尚未确认影印 |
+| bazi | qiongtong-baojian | 穷通宝鉴 | 是 | 605 | 605 | 605 | 120 | engine | 尚未确认影印 |
 | bazi | sanming-tonghui | 三命通会 | 是 | 970 | 0 | 0 | 20 | engine | 已存影印／候选底本 |
 | bazi | shenfeng-tongkao | 神峰通考 | 是 | 15 | 0 | 0 | 2 | engine | 已存影印／候选底本 |
 | bazi | yuanhai-ziping | 渊海子平 | 是 | 2409 | 0 | 0 | 0 | engine | 已存影印／候选底本 |
@@ -54,8 +54,8 @@
 | divination | huangji-jingshi | 皇极经世书 | 是 | 8789 | 0 | 0 | 0 | knowledge | Release 影印／候选底本 |
 | divination | huangjin-ce | 黄金策 | 是 | 849 | 0 | 0 | 0 | knowledge | 尚未确认影印 |
 | divination | huozhu-lin | 火珠林 | 是 | 314 | 0 | 0 | 0 | engine | Release 影印／候选底本 |
-| divination | meihua-yishu | 梅花易数 | 是 | 623 | 0 | 0 | 1 | engine | 尚未确认影印 |
-| divination | zengshan-buyi | 增删卜易 | 是 | 3125 | 0 | 0 | 2 | engine | 尚未确认影印 |
+| divination | meihua-yishu | 梅花易数 | 是 | 623 | 623 | 623 | 1 | engine | 尚未确认影印 |
+| divination | zengshan-buyi | 增删卜易 | 是 | 3125 | 2657 | 2657 | 2 | engine | 尚未确认影印 |
 | divination | zhouyi-zhezhong | 御纂周易折中 | 是 | 1622 | 0 | 0 | 0 | knowledge | Release 影印／候选底本 |
 | fengshui | dili-bianzheng | 地理辨正 | 是 | 2 | 0 | 0 | 0 | knowledge | 已存影印／候选底本 |
 | fengshui | dutian-baozhao-jing | 都天宝照经 | 是 | 101 | 0 | 0 | 0 | knowledge | 已存影印／候选底本 |
@@ -97,7 +97,7 @@
 | xingming | xingxue-dacheng | 星学大成 | 是 | 1392 | 0 | 0 | 3 | engine | 已存影印／候选底本 |
 | ziwei | feixing-ziwei-doushu-yuanzhi | 華山陳希夷先生飛星紫微斗數原旨 / 斗數觀測錄 | 是 | 336 | 0 | 0 | 0 | engine | 已存影印／候选底本 |
 | ziwei | taiwei-fu | 太微赋 | 是 | 3 | 3 | 3 | 0 | engine | 尚未确认影印 |
-| ziwei | ziwei-doushu-quanshu | 紫微斗数全书 | 是 | 1981 | 0 | 0 | 1 | engine | 尚未确认影印 |
+| ziwei | ziwei-doushu-quanshu | 紫微斗数全书 | 是 | 1981 | 1981 | 1981 | 12 | engine | 尚未确认影印 |
 
 ## 排除项
 
@@ -108,19 +108,20 @@
 
 ## 段落分类来源
 
-- pattern 文本模式初筛：3135；annotation 实际语义注解：1535；unclassified 待分类：48970
+- pattern 文本模式初筛：2647；annotation 实际语义注解：12147；unclassified 待分类：38846
 - 四柱案例从正文命造或带评语的四组干支识别；起例、先取后取与月起顺逆等操作从正文识别。模式结果仍可能需修订，不当作人工审读。
 - 目录、序跋不硬造解读；无分类依据时保留待分类。疑字只标记，不由模型补字。
 
-- 待分类：48970
-- 理论：2421
-- 评注或元数据：651
-- 规则候选：458
-- 操作步骤：402
-- 序跋目录：368
-- 案例：356
-- 术语：13
-- 重复：1
+- 待分类：38846
+- 评注或元数据：5102
+- 理论：2974
+- 案例：2867
+- 规则候选：2027
+- 序跋目录：705
+- 操作步骤：549
+- 术语：349
+- 待核实：121
+- 重复：100
 
 段落 ID 形如 `slug:L0123-L0125`，对应 `sources/fulltext/.../fulltext.md` 行号，明细在 `references/inventory/paragraphs/`。
 

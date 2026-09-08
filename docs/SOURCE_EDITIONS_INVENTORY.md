@@ -6,7 +6,8 @@
 |---|---:|---|---:|---:|
 | 六壬指南卷三、四注解镜像对照层 | 1967 | reference-text: 1967 | 0 | 0 |
 | 奇门演义卷四至九网页补缺对照层 | 94 | reference-text: 94 | 0 | 0 |
-| 精选命理约言 NLC 影印 OCR 初识稿 | 237 | ocr-draft: 184、passage-reviewed: 43、page-reviewed: 10 | 49 | 45 |
+| 精选命理约言 · 韦千里四卷选本 · NLC影印校读 | 781 | ocr-draft: 162、passage-reviewed: 537、page-reviewed: 82 | 781 | 406 |
+| 增删卜易卷一 · 维基分章固定版本恢复 | 295 | reference-text: 295 | 295 | 242 |
 
 reference-text表示收录的补充对照文字；ocr-draft表示未校识别稿；page-reviewed仅限已核整页，passage-reviewed仅限已核正文范围。未校字句不得因相邻页已校而升级。
 
