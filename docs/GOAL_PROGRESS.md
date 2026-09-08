@@ -48,3 +48,14 @@
 ## 尚不能总验收
 
 尚有四万余主文本段落未审读；不能靠模式分类/待处理清单宣布完成。原书尚未解决的真实路线、其他格局、整体旺衰与局部力量口径、岁运静态喜忌评分、其他术数复合规则和时间层、全部主要栏目联动仍在范围内。各模块具体未决见执行文档。交付证明文字来源、计算实现与页面一致性，不证明传统术数的现实预测有效性。目标没有完成；继续推进。
+
+## 接续补充：13:12，依赖中的改动不要误提交成完整版本
+
+- 已推送产品35f105b、古籍5c3ca9e，知识固定190cbab，source-reviewed14105、原书case1095/可复算1078/重复123/原表期望冲突2。Ego已实查增删“枯根”默认白话带野鹤反驳，不再把旧说当最终断法；31章齐备但错置的来源说明也已显示。
+- 根新增雪心赋18/18完整审读bbadd60（尚未重导到产品），正文否定与例外写入白话，现代网页尾注和典故不当古籍规则/真实案例。青囊经24/24先前已在b7647e0及190cbab知识版本里。
+- 根工作区已接shishang进geju.execution，family扩食神/伤官；checks/effects/monthSupport/balance/transformation/notes进details，adopted仅最终满足才出。geju-reading已补食神/伤官白话。与21原书源例合测27项通过；财多带印只取丁、罗例月亥甲年透取正财而来源伤官、夏例主月劫仍未知，不借局部成立生成全局喜用。
+- 根工作区bazi-evidence另把execution.sources的实际专章引用加入sources，ID形如execution:ziping-zhenquan:1046-1051。它是原文范围ID，不是新增算法规则或虚构段落ID；只使用带anchor/revision/quote/bookSlug的真实Source，每条有自己的sourceRevision和URL，不与总论E02/E03版本混同。没有paragraphId的范围不伪造fragments。chat.server输出说明改为“依据ID”。报告/对话相关48项通过，完整新批次尚未验。
+- 根已把应爻接到chat.ts enum、chatSource直接读chart.analysis.use.requested，及chart.liuyao下拉与主爻高亮。原有useConsultationState持久键保持，原流程没有use的URL参数，不另造一个不消费的参数。新增应爻传输/服务端复算测试通过。六爻完整新analysis尚未进board/sources，这仍由根在producer交付后完成。
+- 以上根消费者文件尚未提交，依赖other_arts_audit正在写的shishang.ts/geju.ts及bazi_audit的liuyao.ts/liuyao-analysis.ts；不要先提交造成HEAD缺producer。根拥有geju-execution/geju-reading/bazi-evidence/chat/chat.server/chart.liuyao/tests-chat和geju-execution-consumers；两agent不改这些消费者。
+- other_arts_audit的shishang接口已稳定，仍在原例外的真实边界与白话校正，源例21首轮通过。夏例待后续月劫主格模块衔接，不是可以永久排除的未决。bazi_audit的7条行为测试曾通过，正在空破墓绝、进退、飞伏等规则闭合；interactions.scope=structural-relation，只表名义关系，生效情况在node.state.movement/supportPaths/ruleChecks，不能拿每条边当已经有力。
+- classics_audit正在奇门：本地NLC PDF15–16目录显示原卷4–9是阴阳18局图，网页标卷4–9的91正文不是那些排局图。主文本739＋补充94分别在审；补充91正文全与主本重复。真实原局图的恢复/组件案例很有价值，尚未建入registry，不能继续说已补齐纸本卷4–9。
