@@ -81,9 +81,12 @@ def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--root", type=Path, default=ROOT)
     parser.add_argument("--source-revision", default="HEAD")
+    parser.add_argument("--art", choices=sorted(VALIDATOR.ARTS), help="Export only this art's source definitions")
     parser.add_argument("--output", type=Path, default=Path("dist/executable-evidence.json"))
     args = parser.parse_args()
     data = build_export(args.root, args.source_revision)
+    if args.art:
+        data["rules"] = [rule for rule in data["rules"] if rule["art"] == args.art]
     output = args.output if args.output.is_absolute() else args.root / args.output
     output.parent.mkdir(parents=True, exist_ok=True)
     temporary = output.with_suffix(output.suffix + ".tmp")
