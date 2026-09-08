@@ -4,6 +4,15 @@
 
 两仓均为 `codex/full-library-completion`：古籍 `/Users/yuhanglin/.codex/worktrees/fateradar-classics-grok-full-library`；产品 `/Users/yuhanglin/.codex/worktrees/fateradar-product-grok-full-library`。原接手基准古籍2396e4c、产品8f1ca84。原main及他人admin/billing/.claude不改。本目标尚未合main或部署。
 
+## 最新接续：渊海征岁大运体象110主段，下一行254
+
+上一轮有实际进展。本轮80475b9新增47主段至L252，读征太岁、大运、疾病、性情与十天干体象，累计110段；下一L254地支体象。
+
+- 征包含日岁运不同方向需救应；岁克运吉与泛忌岁运冲克原文张力保留。大运自称死法譬喻须随格局，接木缺巳午未组与出癸入甲/甲戌接癸亥方向疑处不补表。
+- 疾病性情仅历史知识，诗中甲无根丙太阳辛珠玉不改真实根气五行纳音。旺衰、印比及调候条件不凭字面自动定吉凶。
+- 110entries验证0错；固定80475b97febb6da6346d7f627d3f8e33ad2c6034导出55包80889段source_reviewed19476，18知识测试通过，110主段文本切片一致，识典参考1988仍未审。
+- 原文/ID/verified保持，运行引擎本轮未改；完整目标active，未合main或部署。继续L254地支体象及后文。
+
 ## 最新接续：渊海开头63主段已接入，下一行152
 
 上一轮神峰现有全文读完入库是实际进展。本轮566b66f开始渊海子平主文本，原有63段读至L150，卷首甲乙十神、司令分日、藏干、生克、日主月令与太岁吉凶；下一L152论征太岁。
