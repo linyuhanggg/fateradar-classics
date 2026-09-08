@@ -158,9 +158,12 @@ class PillarSourceChecks(unittest.TestCase):
             self.assertEqual(split["sources"][0]["quote"], "乙丑\n蓬休\n九二")
             self.assertEqual(split["sources"][1]["quote"], "陽局\n上元一局\n甲己日")
             case["expectationStatus"] = "source-conflict"
+            case["conflictingFields"] = ["chiefStar"]
             fields, _, _ = m.case_input(case)
             self.assertTrue(fields["canRecompute"])
             self.assertEqual(fields["expectationStatus"], "source-conflict")
+            self.assertEqual(fields["conflictingFields"], ["chiefStar"])
+            self.assertEqual(fields["expected"]["starPalaceRaw"], 9)
 
     def test_liuyao_diagram_keeps_multiple_sources_and_reported_outcome_separate(self):
         rows = m.collect_cases(m.ROOT)["cases"]

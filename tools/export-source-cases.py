@@ -170,6 +170,13 @@ def case_input(case: dict) -> tuple[dict, tuple | None, str]:
         if expectation_status not in {"clear", "source-conflict"}:
             raise ValueError(f"Unsupported source expectation status: {expectation_status}")
         fields["expectationStatus"] = expectation_status
+        if "conflictingFields" in case:
+            disputed = case["conflictingFields"]
+            if (expectation_status != "source-conflict" or not isinstance(disputed, list) or not disputed
+                or not all(isinstance(field, str) and field in expected for field in disputed)
+                or len(disputed) != len(set(disputed))):
+                raise ValueError("Conflicting fields must name the disputed recorded expectation fields")
+            fields["conflictingFields"] = disputed
         signature = (basis, given["dun"], given["ju"], pair) if valid else None
         repeated = "sameComponentInputAs"
     else:
