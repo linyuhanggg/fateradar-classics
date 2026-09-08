@@ -525,54 +525,54 @@
       "not_an_art_page": true,
       "sample_paragraphs": [
         {
-          "id": "rudi-yan-quanshu:L0009-L0027",
-          "heading": "入地眼全書",
-          "start_line": 9,
-          "end_line": 27,
-          "kind": "待分类",
-          "classification_method": "unclassified",
-          "annotation_review": null,
-          "has_vernacular": false
-        },
-        {
-          "id": "rudi-yan-quanshu:L0031-L0051",
-          "heading": "入地眼全書",
-          "start_line": 31,
-          "end_line": 51,
-          "kind": "待分类",
-          "classification_method": "unclassified",
-          "annotation_review": null,
-          "has_vernacular": false
-        },
-        {
           "id": "rudi-yan-quanshu:L0055-L0076",
           "heading": "入地眼全書",
           "start_line": 55,
           "end_line": 76,
-          "kind": "待分类",
-          "classification_method": "unclassified",
-          "annotation_review": null,
-          "has_vernacular": false
+          "kind": "待核实",
+          "classification_method": "annotation",
+          "annotation_review": "source-reviewed",
+          "has_vernacular": true
         },
         {
-          "id": "rudi-yan-quanshu:L0080-L0080",
+          "id": "rudi-yan-quanshu:L0086-L0086",
           "heading": "入地眼全書",
-          "start_line": 80,
-          "end_line": 80,
-          "kind": "待分类",
-          "classification_method": "unclassified",
-          "annotation_review": null,
-          "has_vernacular": false
+          "start_line": 86,
+          "end_line": 86,
+          "kind": "待核实",
+          "classification_method": "annotation",
+          "annotation_review": "source-reviewed",
+          "has_vernacular": true
         },
         {
-          "id": "rudi-yan-quanshu:L0082-L0082",
+          "id": "rudi-yan-quanshu:L0096-L0123",
           "heading": "入地眼全書",
-          "start_line": 82,
-          "end_line": 82,
-          "kind": "待分类",
-          "classification_method": "unclassified",
-          "annotation_review": null,
-          "has_vernacular": false
+          "start_line": 96,
+          "end_line": 123,
+          "kind": "理论",
+          "classification_method": "annotation",
+          "annotation_review": "source-reviewed",
+          "has_vernacular": true
+        },
+        {
+          "id": "rudi-yan-quanshu:L0125-L0147",
+          "heading": "入地眼全書",
+          "start_line": 125,
+          "end_line": 147,
+          "kind": "理论",
+          "classification_method": "annotation",
+          "annotation_review": "source-reviewed",
+          "has_vernacular": true
+        },
+        {
+          "id": "rudi-yan-quanshu:L0151-L0169",
+          "heading": "入地眼全書",
+          "start_line": 151,
+          "end_line": 169,
+          "kind": "理论",
+          "classification_method": "annotation",
+          "annotation_review": "source-reviewed",
+          "has_vernacular": true
         }
       ]
     },
@@ -1867,5 +1867,5 @@
       "invent eight-arts verdicts"
     ]
   },
-  "sourceRevision": "ffed8d12a52d41130ce6dd2e7307fd07c8e75c91"
+  "sourceRevision": "aa7f9c6899edd0855ae7c14824a1322d8bfb9a67"
 }
