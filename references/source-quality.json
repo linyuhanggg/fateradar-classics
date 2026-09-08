@@ -285,9 +285,9 @@
       "slug": "zengshan-buyi",
       "status": "text-present",
       "notes": [
-        "主文件L299–361的卷一31个章题没有正文，属于旧抓取漏掉实际分章链接；已从各章固定维基版本恢复到独立wikisource-volume1补充来源。",
-        "卷首若干纳甲、世应、旬空等材料明示现代原剑增订，不用它们冒充缺失古文。",
-        "主文件有实质正文，但有正文不等于完整古本；新增恢复仅证明电子文字已取得，影印校勘状态另论。"
+        "主文件L299–361只列卷一章题，但大量卷一正文错置在L6619–7728；不能据目录后缺正文推断整卷未采入。",
+        "卷首若干纳甲、世应、旬空等材料明示现代原剑增订，不用它们冒充原书正文。",
+        "wikisource-volume1是从31个分章固定维基版本整理的独立对照层，与主文件书末存在大量重复，不全算新增内容。电子文本取得与影印校勘状态分别记录。"
       ],
       "evidence": [
         {
@@ -309,6 +309,11 @@
           "file": "sources/fulltext/divination/zengshan-buyi/fulltext.md",
           "startLine": 299,
           "endLine": 363
+        },
+        {
+          "file": "sources/fulltext/divination/zengshan-buyi/fulltext.md",
+          "startLine": 6619,
+          "endLine": 7728
         }
       ]
     },
