@@ -89,6 +89,32 @@ class PillarSourceChecks(unittest.TestCase):
         self.assertEqual(fields["expected"], case["expected"])
         self.assertEqual(repeated, "sameHexagramInputAs")
 
+    def test_liuyao_repeated_cast_preserves_missing_month_day(self):
+        data = json.loads((m.ROOT / "references/cases/zengshan-liuyao-component-candidates.json").read_text())
+        case = next(case for case in data["cases"] if case["id"] == "ZS-LY-L0393")
+        fields, signature, repeated = m.case_input(case)
+        self.assertTrue(fields["canRecompute"])
+        self.assertEqual(set(fields["input"]), {"linesBottomUp"})
+        self.assertNotIn("changedGua", fields["expected"])
+        self.assertNotIn("pillars", fields)
+        self.assertEqual(fields["expected"]["shi"], 3)
+        self.assertEqual(repeated, "sameComponentInputAs")
+        self.assertIsNotNone(signature)
+        broken = {**case, "input": {"linesBottomUp": case["input"]["linesBottomUp"][:5]}}
+        with self.assertRaisesRegex(ValueError, "marked recomputable"):
+            m.case_input(broken)
+
+    def test_liuyao_diagram_keeps_multiple_sources_and_reported_outcome_separate(self):
+        rows = m.collect_cases(m.ROOT)["cases"]
+        case = next(row for row in rows if row["id"] == "zengshan-buyi:ZS-LY-L0379")
+        self.assertGreater(len(case["sources"]), 6)
+        self.assertEqual(case["source"], case["sources"][0])
+        self.assertIn("巳年", case["reportedOutcome"])
+        self.assertNotIn("reportedOutcome", case["expected"])
+        self.assertIn("官动生世", case["sourceReading"])
+        self.assertEqual(case["relatedCaseIds"], ["ZS-LY-L0393"])
+        self.assertFalse(case["verified"])
+
     def test_multiple_cases_and_repeated_pillars_keep_separate_source_occurrences(self):
         with tempfile.TemporaryDirectory() as directory:
             root = Path(directory)

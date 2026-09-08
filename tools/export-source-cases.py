@@ -60,6 +60,43 @@ def valid_pillars(pillars: object) -> bool:
     )
 
 
+def liuyao_component_input(case: dict) -> bool:
+    given, expected = case.get("input", {}), case.get("expected", {})
+    if not isinstance(given, dict) or not isinstance(expected, dict):
+        return False
+    lines = given.get("linesBottomUp", [])
+    valid = (set(given) <= {"linesBottomUp", "monthBranch", "dayGanzhi"}
+             and isinstance(lines, list) and len(lines) == 6
+             and all(line in {"⚊", "⚋", "○", "ㄨ"} for line in lines))
+    if "monthBranch" in given:
+        valid &= given["monthBranch"] in list(ZHIS)
+    if "dayGanzhi" in given:
+        pair = given["dayGanzhi"]
+        valid &= (isinstance(pair, str) and len(pair) == 2 and pair[0] in GANS and pair[1] in ZHIS
+                  and GANS.index(pair[0]) % 2 == ZHIS.index(pair[1]) % 2)
+    valid &= (isinstance(expected.get("mainGua"), str) and bool(expected["mainGua"])
+              and type(expected.get("shi")) is int and 1 <= expected["shi"] <= 6
+              and type(expected.get("ying")) is int and 1 <= expected["ying"] <= 6)
+    fields = ["mainLines"]
+    if any(line in {"○", "ㄨ"} for line in lines):
+        valid &= isinstance(expected.get("changedGua"), str) and bool(expected["changedGua"])
+        fields.append("changedLines")
+    else:
+        valid &= "changedGua" not in expected and "changedLines" not in expected
+    for field in fields:
+        rows = expected.get(field)
+        if not isinstance(rows, list) or len(rows) != 6:
+            return False
+        valid &= all(isinstance(row, dict) and type(row.get("position")) is int for row in rows)
+        if not valid:
+            return False
+        valid &= sorted(row["position"] for row in rows) == list(range(1, 7))
+        valid &= all(row.get("kinship") in {"父母", "兄弟", "子孙", "子孫", "妻财", "妻財", "官鬼"}
+                     and row.get("branch") in list(ZHIS) and row.get("element") in list("木火土金水")
+                     for row in rows)
+    return bool(valid)
+
+
 def case_input(case: dict) -> tuple[dict, tuple | None, str]:
     basis = case.get("inputBasis", "four-pillars")
     if basis == "four-pillars":
@@ -98,6 +135,18 @@ def case_input(case: dict) -> tuple[dict, tuple | None, str]:
                   "expectationStatus": expectation_status,
                   "scope": [label], "unavailable": ["完整公历或农历生日", "完整命盘", "未给字段的安星结果", "现实命运的独立记录"]}
         signature = (basis, case["component"], json.dumps(fields["input"], ensure_ascii=False, sort_keys=True)) if valid else None
+        repeated = "sameComponentInputAs"
+    elif basis == "liuyao-line-symbols":
+        valid = liuyao_component_input(case)
+        given = case.get("input", {})
+        fields = {"input": given, "inputBasis": basis,
+                  "scope": ["原卦阴阳与动爻", "主卦纳支五行六亲与世应"],
+                  "unavailable": list(dict.fromkeys(case.get("unavailable", []) + ["绝对公历年份", "现代独立应验记录"]))}
+        if any(line in {"○", "ㄨ"} for line in given.get("linesBottomUp", [])):
+            fields["scope"].append("变卦纳支五行与本宫六亲")
+        # This export compares diagram components. A different stated day does
+        # not make the same six line symbols an independent placement case.
+        signature = (basis, *given["linesBottomUp"]) if valid else None
         repeated = "sameComponentInputAs"
     else:
         raise ValueError(f"Unsupported case input basis: {basis}")
@@ -149,25 +198,39 @@ def collect_cases(root: Path) -> dict:
         data = json.loads(path.read_text())
         seen = set()
         for case in data["cases"]:
-            source = case["source"]
-            pid = source["paragraphId"]
-            if pid not in reviewed_entries or pid not in locations:
-                raise ValueError(f"Component case requires a reviewed source: {pid}")
-            if not pid.startswith(data["bookSlug"] + ":"):
-                raise ValueError(f"Component case book mismatch: {pid}")
-            if sources[pid].get("source_status") == "ocr-draft":
-                raise ValueError(f"OCR draft cannot supply reviewed source cases: {pid}")
-            if (source["file"], source["startLine"], source["endLine"]) != locations[pid]:
-                raise ValueError(f"Component case source range mismatch: {pid}")
+            fragments = case.get("sources") or ([case["source"]] if case.get("source") else [])
+            if not fragments:
+                raise ValueError(f"Component case requires a reviewed source: {case['id']}")
+            for source in fragments:
+                pid = source["paragraphId"]
+                if pid not in reviewed_entries or pid not in locations:
+                    raise ValueError(f"Component case requires a reviewed source: {pid}")
+                if not pid.startswith(data["bookSlug"] + ":"):
+                    raise ValueError(f"Component case book mismatch: {pid}")
+                if sources[pid].get("source_status") == "ocr-draft":
+                    raise ValueError(f"OCR draft cannot supply reviewed source cases: {pid}")
+                if (source["file"], source["startLine"], source["endLine"]) != locations[pid]:
+                    raise ValueError(f"Component case source range mismatch: {pid}")
+                if "quote" in source:
+                    raw = (root / source["file"]).read_text().splitlines()
+                    text = "\n".join(raw[source["startLine"]-1:source["endLine"]])
+                    if not source["quote"] or source["quote"] not in text:
+                        raise ValueError(f"Component case quote mismatch: {pid}")
             if case["id"] in seen or case.get("verified") is True:
                 raise ValueError(f"Duplicate or automatically verified component case: {case['id']}")
             seen.add(case["id"])
             fields, signature, repeated = case_input(case)
-            entry = reviewed_entries[pid]
+            source = fragments[0]
+            entry = reviewed_entries[source["paragraphId"]]
             case_id = f"{data['bookSlug']}:{case['id']}"
             row = {"id": case_id, "bookSlug": data["bookSlug"], "name": case["name"], "kind": "source_component_case", **fields,
                    "reading": entry["vernacular"], "notes": list(dict.fromkeys(entry["notes"] + case.get("notes", []))),
                    "source": source, "verified": False}
+            if case.get("sources"):
+                row["sources"] = fragments
+            for field in ("question", "sourceReading", "reportedOutcome", "relatedCaseIds"):
+                if field in case:
+                    row[field] = case[field]
             if signature is not None and row["canRecompute"]:
                 if signature in by_input:
                     row[repeated] = by_input[signature]
