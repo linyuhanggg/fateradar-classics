@@ -17,12 +17,12 @@
       "id": "yanyi-vol4-9",
       "bookSlug": "qimen-dunjia-tongzhi",
       "system": "san-shi",
-      "label": "奇门演义卷四至九网页补缺对照层",
+      "label": "奇门演义网页对照层 · 与主文本重叠",
       "file": "sources/fulltext/san-shi/qimen-dunjia-tongzhi/supplemental-taiyi-qimen-yanyi-vol4-9.md",
       "sourceStatus": "reference-text",
       "notes": [
-        "网页题为奇门演义、统宗卷四至九补缺，保留独立来源，不替换主文本。",
-        "材料明确标出缺注和缺赋，不能按卷名推定全卷齐备。"
+        "网页题为奇门演义、统宗卷四至九补缺，但其中91正文段全部与主文本重叠，另3段为元数据；保留对照记录，不重复算新增正文或独立支持。",
+        "文瑞书局影印本目录的卷四至九实际为阴阳18局图及逐时简表，本网页材料未补到这些原卷，不按网页卷名宣称原六卷齐备。"
       ]
     },
     {
@@ -50,6 +50,20 @@
         "旧主文件卷一目录之后缺正文，31章的263个正文段实际齐备而错置于书末L6504–7730；本对照层从分章固定维基revision整理，重叠内容不另算独立来源支持或新增正文，旧文件保持不变。",
         "网页正文与页外附注分别保留，来源与转换见同目录wikisource-volume1.provenance.json；这是另一电子版本的分章整理，不是影印校勘。"
       ]
+    },
+    {
+      "id": "nlc-layouts",
+      "bookSlug": "qimen-dunjia-tongzhi",
+      "system": "san-shi",
+      "label": "奇门遁甲统宗 · 文瑞书局影印局式校读",
+      "file": "sources/normalized/san-shi/qimen-dunjia-tongzhi/nlc-layouts.md",
+      "sourceStatus": "ocr-draft",
+      "pageScoped": true,
+      "notes": [
+        "原卷四至九阴阳局式正在按纸本恢复；只按pageReviews明确核过的条目供引用，不把一条简表算作完整九宫盘或整卷完成。",
+        "符使及宫数保留原纸面值，原宫五不先改寄坤二；日干组、局元与时柱按原题记录，不补公历日期。"
+      ],
+      "pageReviews": "sources/normalized/san-shi/qimen-dunjia-tongzhi/nlc-layout-page-reviews.json"
     }
   ]
 }
