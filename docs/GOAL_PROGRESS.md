@@ -4,6 +4,15 @@
 
 两仓均为 `codex/full-library-completion`：古籍 `/Users/yuhanglin/.codex/worktrees/fateradar-classics-grok-full-library`；产品 `/Users/yuhanglin/.codex/worktrees/fateradar-product-grok-full-library`。原接手基准古籍2396e4c、产品8f1ca84。原main及他人admin/billing/.claude不改。本目标尚未合main或部署。
 
+## 最新接续：阳宅676卷五鬼九星19节，下一1452
+
+上一轮有实际进展。本轮b9ee727新增9节L1341–1451，第二正文连续L1219–1451共19节，父段draft；下一L1452五行生克诀。
+
+- 五鬼火本宫凶与穿宫廉贞本宫荣并存，不改字统一；内克外/外克内方向分开但起法未全不补。四阴四阳非东西四宅，辅弼凶与伏位无祸不同层。
+- 九星动物征兆、房份人数、疾病刑盗仅历史文本，不现实风险或人格判断；L1415缺图物名不补。5entries验证0错，9节连续。
+- 未导出父段，知识c21147c/21778，运行e43cd38，原文/ID/verified保持。nmem继续502未反复重试。
+- 全目标active，未合main或部署；下一星宫生克，再穿宫装卦及图源/全库八术余项。
+
 ## 最新接续：阳宅676卷大游年开头10节，下一1341
 
 上一轮首卷文字入库有实际进展。本轮24fbc76建立第676卷元信息及正文L1219–1340共10节，父段L1219–1859仍draft；下一L1341五鬼制爻。
