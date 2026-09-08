@@ -4,6 +4,15 @@
 
 两仓均为 `codex/full-library-completion`：古籍 `/Users/yuhanglin/.codex/worktrees/fateradar-classics-grok-full-library`；产品 `/Users/yuhanglin/.codex/worktrees/fateradar-product-grok-full-library`。原接手基准古籍2396e4c、产品8f1ca84。原main及他人admin/billing/.claude不改。本目标尚未合main或部署。
 
+## 最新接续：渊海兴亡宝法932主段，下一行2032
+
+上一轮有实际进展。本轮7eba4f7新增29主段至L2030，群兴末、兴亡、宝法两篇与寸金搜髓开头，累计932段；下一L2032。
+
+- 身刃旺后杀运与身弱后扶不同，纯杀得制再财助杀失控、官受伤无印救分链；运变不据旧结果预测现实死亡官职。
+- 宝法月令所藏为入口年日时定轻重，反对按五行最多改取用；六格看法第一缺项第二四句分别保留。印净题署不混西山易鉴，原文/ID/verified保持，运行引擎未改。
+- 932entries验证0错；固定7eba4f7a0985e1dfd31e8b6fe6128b4bda3b131b导出55包80889段source_reviewed20298，18知识测试通过，932主段切片一致，参考1988未审。
+- 全目标active，未合main或部署；继续寸金搜髓及全部主资料、八术条件和联动。
+
 ## 最新接续：渊海杂论末群兴903主段，下一行1957
 
 上一轮有实际进展。本轮66fe9ec新增37主段至L1955，杂论结束、群兴当兴崛起聚兴，累计903段；下一L1957。
