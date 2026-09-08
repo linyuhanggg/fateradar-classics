@@ -36,6 +36,7 @@ jobs:
       - run: python tools/test-export-knowledge.py
       - run: python tools/test-source-cases.py
       - run: python tools/test-source-editions.py
+      - run: python tools/test-import-shidian.py
       - run: python tools/test-export-runtime-evidence.py
       - run: python tools/test-export-tiaohou.py
       - run: python tools/export-reading-notes.py
