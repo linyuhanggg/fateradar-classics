@@ -4,6 +4,14 @@
 
 两仓均为 `codex/full-library-completion`：古籍 `/Users/yuhanglin/.codex/worktrees/fateradar-classics-grok-full-library`；产品 `/Users/yuhanglin/.codex/worktrees/fateradar-product-grok-full-library`。原接手基准古籍2396e4c、产品8f1ca84。原main及他人admin/billing/.claude不改。本目标尚未合main或部署。
 
+## 最新接续：渊海开头63主段已接入，下一行152
+
+上一轮神峰现有全文读完入库是实际进展。本轮566b66f开始渊海子平主文本，原有63段读至L150，卷首甲乙十神、司令分日、藏干、生克、日主月令与太岁吉凶；下一L152论征太岁。
+
+- 主文本维基文库杨淙增补整理本，未分原五卷；识典NGJ892411999032112149610参考版1988段独立保留未审，不互换来源。司令分日有念三、天数缺区、己/戊等疑文，不改藏干或生成百分比。日犯岁君制泄合救应与灾句一同保留。
+- 63entries验证0错；固定566b66f0ce582f5e576a1e1ad8cec5f14ba0f04e导出55包80889段source_reviewed19429。知识查询/书库18测试通过，2409主段中63审且原文切片一致；全包4397段，参考1988段仍未审。
+- 不同于神峰巨段，这63主段各自完整，故可立即发布。运行引擎本轮未改，原文/ID/verified保持；完整目标active，未合main或部署。继续L152论征太岁及后文，剩余主资料与八术条件仍须推进。
+
 ## 最新接续：神峰现有全文15主段435小节已接入
 
 上一轮有实际进展。本轮2fe06d8完成第七正文L4826–5106共21节和元信息，七正文75/64/61/71/68/75/21共435节，15主段全部source-reviewed，verified仍false。
