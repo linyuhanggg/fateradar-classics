@@ -4,6 +4,13 @@
 
 两仓均为 `codex/full-library-completion`：古籍 `/Users/yuhanglin/.codex/worktrees/fateradar-classics-grok-full-library`；产品 `/Users/yuhanglin/.codex/worktrees/fateradar-product-grok-full-library`。原接手基准古籍2396e4c、产品8f1ca84。原main及他人admin/billing/.claude不改。本目标尚未合main或部署。
 
+## 最新接续：黄金策词讼避乱逃亡，下一行1464
+
+上一轮有实际进展。本轮9519bbb新增L1314–1462共74原段，累计704/849前二十六章电子审读，余145从失脱L1464继续。胜诉/止争、避乱脱困、追寻/归留与消息分别记录；生扶对敌可能不利、空在脱困可能有利等事项条件保留。残字和网页标记不补猜，不将古法当现代法律或人身安全结论。
+
+- 新增ID集合对应、704entries验证0错。产品固定9519bbbebf87e9ff6e64be8bc09ff2bf4a6f6fb9出口55资料/80889段/19187 source-reviewed；实际704段与失脱以后unreviewed核对，18检索/分包测试通过。原字/ID/verified/golden及运行规则不改，不称全代码/网页总验收。
+- 全量目标active，继续分门余文及八术全范围；未合main或部署。
+
 ## 最新接续：黄金策坟墓求师学馆，下一行1313
 
 上一轮有实际进展。本轮8ebfe56新增L1147–1311共82原段，累计630/849前二十三章电子审读，余219从L1313词讼继续。坟墓地形类象不当实测；L1217缺字保留待核。求师与学馆分别家长求师/教师求馆，世应、财薪父馆子学生各按事项，不混用。
