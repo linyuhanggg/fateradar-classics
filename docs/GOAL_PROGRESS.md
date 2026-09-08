@@ -4,6 +4,15 @@
 
 两仓均为 `codex/full-library-completion`：古籍 `/Users/yuhanglin/.codex/worktrees/fateradar-classics-grok-full-library`；产品 `/Users/yuhanglin/.codex/worktrees/fateradar-product-grok-full-library`。原接手基准古籍2396e4c、产品8f1ca84。原main及他人admin/billing/.claude不改。本目标尚未合main或部署。
 
+## 最新接续：阳宅外形文字读至766，共41节；下一福元767
+
+上一轮有实际进展。本轮e9ca860新增8节L612–766，外形图说文字读完，第675卷连续L12–766共41节，父段仍draft；L767福元起未读。
+
+- 川/元/八字等指水路形非命盘，暗箭与此塘此路不可据旧灾逆造缺图。L669/741/762图截句、L761未闭合Annotation保留，未补歌句。后塘填泥仅历史主张不实际施工。
+- 图形方位尺度及子图边界未核，外形文字读完不等图文验证，3entries验证0错，8节连续。
+- 未导出未读全父段，产品知识仍0f4138f/21775，运行e43cd38，原文/ID/verified保持。nmem继续502未反复重试或切换。
+- 全目标active，未合main或部署；下一福元L767，同时保留外形图源恢复核对工作，不以文字注释替代图像处理。继续全库与八术未完条件。
+
 ## 最新接续：阳宅树形图说文字33节，下一行612
 
 上一轮有实际进展。本轮e6e6e27新增6节L496–611，第675卷连续L12–611共33节文字，父段仍draft；L612起未读。
