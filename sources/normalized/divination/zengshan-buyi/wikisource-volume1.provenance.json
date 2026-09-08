@@ -2,7 +2,7 @@
   "version": 1,
   "bookSlug": "zengshan-buyi",
   "editionId": "wikisource-volume1",
-  "sourceType": "wikisource-electronic-recovery",
+  "sourceType": "wikisource-fixed-electronic-reference",
   "retrievedAt": "2026-09-08T02:48:22.527895+00:00",
   "sourceRootRevision": 2572918,
   "normalizedFile": "sources/normalized/divination/zengshan-buyi/wikisource-volume1.md",
@@ -17,8 +17,9 @@
   ],
   "notes": [
     "站内50%为文字整理标签，不是预测准确率。",
-    "第三章仍保留八卦各宮全圖链接；该图与相关附文已在旧fulltext末端存在，未在本恢复卷重复混入。",
-    "原旧fulltext保持原样；本文件含31章完整onlyinclude正文，不表示古籍所有传本都已比勘。"
+    "完整通读确认31章263个正文段已全部错位置于旧fulltext L6504–7730；本文件为按章固定版本对照，不是整卷全新增恢复。",
+    "第三章保留八卦各宮全圖链接；该64卦并排全图在旧fulltext L7732–7964，未复制进对照正文。",
+    "原旧fulltext与当前normalized正文行号均保持；只取31章onlyinclude并保留其附注，不表示古籍所有传本都已影印比勘。"
   ],
   "verified": false,
   "chapters": [
