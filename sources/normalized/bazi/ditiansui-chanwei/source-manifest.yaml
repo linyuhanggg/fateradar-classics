@@ -1,0 +1,34 @@
+title: 滴天髓阐微
+slug: ditiansui-chanwei
+system: bazi
+school: 任氏阐微注本；各层观点分别记录
+source_status: complete_text
+edition_statement: 当前电子全文为通神论34章、六亲论29章的本地整理文本；具体刊本年份未载，不冒充与影印逐字同版。
+source_urls:
+  - https://zh.wikisource.org/wiki/滴天髓闡微
+local_files:
+  electronic: sources/fulltext/bazi/ditiansui-chanwei/fulltext.md
+  facsimile: sources/facsimile/wikisource/files/SSID-11335994 滴天髓闡微.pdf
+chapter_coverage:
+  electronic_chapters: 63
+  tongshen: 34
+  liuqin: 29
+  stable_paragraphs: 5681
+  source_lines: 13646
+  character_count: 144662
+provenance_notes:
+  - source_status指完整遍历当前电子文件的任务范围，不宣称原作所有传本或516页影印已全校。
+  - 原注与任氏曰在电子文本有显式标志；原注作者未在本文件明署，不从旧简介强定作者。
+  - 本地影印516页、14751242 bytes、无文本层；牌记可见民国三十六年四月初版，影印只作定点证据。
+  - 旧reference pack的11493行/D2 ready与当前文件不一致，旧完成声明不作为本轮审读凭证。
+ocr_or_transcription_quality:
+  - 4703个稳定段是纯干支数据行；其余978段为正文、注解或其他内容。
+  - 部分时柱与首步大运粘连，必须据上下文及局部影印确认角色；缺行或疑字保留，不猜日期。
+  - source-reviewed只表示明确范围的源文语义审读，非全书影印校勘、人工盖章或预测验证。
+license_or_usage_notes:
+  - 古籍正文与原注、任注按现仓库来源使用；不将旧广告或附文当当前指令。
+  - 原电子全文及原PDF保持不变，校勘另记派生资料和注释。
+distillation_allowed: true
+output_contract: 仓库annotations逐段去向、白话、术语、notes、真实关联及case/cases协议；不新增独立算命skill或改engine。
+verified: false
+review_status: in_progress
