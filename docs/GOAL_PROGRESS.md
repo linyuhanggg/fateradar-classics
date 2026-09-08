@@ -4,6 +4,15 @@
 
 两仓均为 `codex/full-library-completion`：古籍 `/Users/yuhanglin/.codex/worktrees/fateradar-classics-grok-full-library`；产品 `/Users/yuhanglin/.codex/worktrees/fateradar-product-grok-full-library`。原接手基准古籍2396e4c、产品8f1ca84。原main及他人admin/billing/.claude不改。本目标尚未合main或部署。
 
+## 最新接续：阳宅677卷图源恢复与30节，下一2244
+
+上一轮89bb4a6/d5ad0c1已实际提交推送，本轮586739a新增8节L2112–2243，第三正文现30节连续L1865–2243，父段draft。下一L2244九宫建宅；完整目标仍active。
+
+- ego-browser沿用34，实际打开第677卷修订1942640，46个正文图链接与46个原文占位按序建立manifest，41个在内形段。已看pic1820原PNG及pic1843 SVG预览，另44图未审。图源报告和两张截图见docs/review/yangzhai-vol677-images-2026-09-09/。
+- L2152模板缺题在pic1843图上可读纯阳房；L2112同名alt却接pic1820庭院图，需整页底本核对，未擅调换。L2189文件名左右脊射仅线索不算图题确认。SVG为自动矢量化，原PNG路径可以从文件页查到；没有声称全图已校。
+- 命前五神四个例子实算3合1不合：丙辛年巳命在戌，从庚寅遁应戊戌仓库，原例明喜有内部冲突；记录docs/review/yangzhai-five-gods-examples-2026-09-09.json。丁壬口诀起干缺字不补原文。
+- 7entries验证0错，30小节连续；原文/ID/verified保持，父段未完不导出。知识仍555f606/21780，运行e43cd38。nmem上下文及恢复授权检索成功；未合main、部署或新增付费调用。
+
 ## 最新接续：阳宅677卷22节，下一2112内形图题
 
 be2239b新增8节L1976–2071，89bb4a6继续4节L2072–2111；第三正文现22节连续L1865–2111，父段仍draft，下一L2112内形图题与图源恢复。
