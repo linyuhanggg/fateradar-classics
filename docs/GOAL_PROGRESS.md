@@ -4,6 +4,15 @@
 
 两仓均为 `codex/full-library-completion`：古籍 `/Users/yuhanglin/.codex/worktrees/fateradar-classics-grok-full-library`；产品 `/Users/yuhanglin/.codex/worktrees/fateradar-product-grok-full-library`。原接手基准古籍2396e4c、产品8f1ca84。原main及他人admin/billing/.claude不改。本目标尚未合main或部署。
 
+## 最新接续：三命主本12段至171，纳音60项运行对照全部一致
+
+上一轮75ca0e4/bc3b786已推送，属实际进展。本轮7ee20a5新增纳音总论、同类娶妻隔八生子、取象3主段L115–171，累计12/970主段、32小节，下一L175六十甲子性质吉凶；2662其他版本未本批处理。
+
+- 已读两套明确纳音元素算法：六微含首尾数干7金3火9木1土5水；太玄49减配偶四数、除5余数相生。产品calendar.ts使用tyme4ts1.5.2的SixtyCycle.getSound().getName，实际枚举60干支，两法与运行五行全部相合，不制造代码修复。
+- docs/review/sanming-nayin-runtime-audit-2026-09-09.json存60条原法数值及运行名；井泉/泉中、金泊/金箔、白鑞/白蜡、路傍/路旁另列异名。核对仅元素映射，非历法时间转换或纳音吉凶效验。
+- 隔八明确起点索引+8/配偶含首尾8，不从起点含首尾错到辛未；上下生不自动等数组正负。诸算法中间数不可混用，太玄重复及闕保留，取象不可执泥、干禄支命纳音身不套日主强弱分数。
+- 12entries验证0错，原文/ID/verified保持，尚未导出本书小批；产品知识仍56cbe8e/21784，运行e43cd38。nmem上下文和相关纳音检索成功，全目标active，未合main或部署。继续余文及八术全范围。
+
 ## 最新接续：三命主本9段至111，下一115纳音
 
 上一轮8c21159/7e06ab8开篇已推送，属实际进展。本轮75ca0e4新增5主段L61–111，五行生成、生克、支干源流、十干名义、十二支名义全部现有文字已读。累计9/970主段、19正文小节；2662其他版本尚未本批处理。
