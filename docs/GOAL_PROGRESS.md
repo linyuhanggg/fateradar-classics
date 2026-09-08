@@ -4,6 +4,13 @@
 
 两仓均为 `codex/full-library-completion`：古籍 `/Users/yuhanglin/.codex/worktrees/fateradar-classics-grok-full-library`；产品 `/Users/yuhanglin/.codex/worktrees/fateradar-product-grok-full-library`。原接手基准古籍2396e4c、产品8f1ca84。原main及他人admin/billing/.claude不改。本目标尚未合main或部署。
 
+## 最新接续：卷三至讨债总法，下一行2499
+
+上一轮有实际进展。本轮8554623新增S079–S107共29子节，连续审读至L2498。完成仕宦14–37例、求财总法及2增补、买卖与讨债总法；卷三父段仍draft，余L2499–3252及卷四未读，产品不更新、不增加整卷审读计数。
+
+- 官职案例保留月将空墓受克不能自动有效、同三传不同季节年命天将、延后拿旧课解读不重排等实际区别。己丑朱酉昆初卯盘标六合而断称玄武，戊寅例“巳未时”字疑，均未修源。财例分成交五千与净利四千多，未月占回述五月六月不冒充事前预测。
+- 注解11entries验证0错，107节相邻行连续断言通过；原字/ID/verified/golden与产品代码不改。下一段L2499现代讨债例继续，整卷完成前不提升父review。全量目标active，未合main或部署。
+
 ## 最新接续：卷三至仕宦十三，下一行2157
 
 上一轮有实际进展。本轮820824f新增S041–S078共38子节，卷三工作稿连续覆盖L1313–2156。已读行人4原例2增补、趋谒选举总法、选举2例、乡试9例、武举1例以及仕宦前13例和粹言对照例。父段仍draft，卷三未读完，不更新产品或source-reviewed计数。
