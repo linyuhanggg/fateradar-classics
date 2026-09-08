@@ -17,14 +17,14 @@
     {
       "id": "yanyi-vol4-9",
       "bookSlug": "qimen-dunjia-tongzhi",
-      "label": "奇门演义卷四至九网页补缺对照层",
+      "label": "奇门演义网页对照层 · 与主文本重叠",
       "file": "sources/fulltext/san-shi/qimen-dunjia-tongzhi/supplemental-taiyi-qimen-yanyi-vol4-9.md",
       "paragraphs": 94,
       "sourceStates": {
         "reference-text": 94
       },
-      "annotations": 0,
-      "reviewedBodyExplanations": 0
+      "annotations": 94,
+      "reviewedBodyExplanations": 91
     },
     {
       "id": "nlc-recovery",
@@ -51,6 +51,20 @@
       },
       "annotations": 295,
       "reviewedBodyExplanations": 242
+    },
+    {
+      "id": "nlc-layouts",
+      "bookSlug": "qimen-dunjia-tongzhi",
+      "label": "奇门遁甲统宗 · 文瑞书局影印局式校读",
+      "file": "sources/normalized/san-shi/qimen-dunjia-tongzhi/nlc-layouts.md",
+      "paragraphs": 379,
+      "sourceStates": {
+        "ocr-draft": 212,
+        "passage-reviewed": 167
+      },
+      "annotations": 379,
+      "reviewedBodyExplanations": 167
     }
-  ]
+  ],
+  "sourceRevision": "ffed8d12a52d41130ce6dd2e7307fd07c8e75c91"
 }

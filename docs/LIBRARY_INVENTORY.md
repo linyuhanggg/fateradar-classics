@@ -1,5 +1,7 @@
 # 全库书目与覆盖清单
 
+本次清单对应固定古籍提交：`ffed8d12a52d41130ce6dd2e7307fd07c8e75c91`。
+
 生成日期：2026-09-08。由 `tools/build-library-inventory.py` 从磁盘实数生成，不沿用 55 部完整古籍的说法。
 
 ## 口径
@@ -10,16 +12,16 @@
 - catalog 另列排除项：4
 - 稳定段落：53640（含疑文段 1261）
 - 旧 rules.yaml 候选记录：1356（其中 declared verified=true：0；不作运行权威）
-- 新规则定义记录：212，有规则白话 212（仅统计 `references/executable/*.json`；不据此认定运行接入或分支验证完成）
+- 新规则定义记录：229，有规则白话 229（仅统计 `references/executable/*.json`；不据此认定运行接入或分支验证完成）
 - 新规则 declared verified=true：0（只读已有标记，不自动提升）
 - 独立盘面读法：14（`references/readings/chart-notes.json`；不换算成全文白话覆盖）
 
 ## 实际语义加工进度
 
-- 已有段落注解：13196 / 53640
-- 标记电子原文审读 source-reviewed：13196（不是人工影印核验）
-- 有非空白话或处理说明的段落：13196（其中 source-reviewed：13196）
-- 尚无注解：40444；尚无段落白话：40444
+- 已有段落注解：14163 / 53640
+- 标记电子原文审读 source-reviewed：14163（不是人工影印核验）
+- 有非空白话或处理说明的段落：14163（其中 source-reviewed：14163）
+- 尚无注解：39477；尚无段落白话：39477
 - 原文字面重复段：9220（仅忽略空白比较，same_text_as 不代表流派或理论等价）
 
 上述是文件中实际存在的产物统计，不是全库完成率。模式分类只帮助找材料，未分类、只有规则标题或未审读白话都不能算完成。
@@ -55,10 +57,10 @@
 | divination | huangjin-ce | 黄金策 | 是 | 849 | 0 | 0 | 0 | knowledge | 尚未确认影印 |
 | divination | huozhu-lin | 火珠林 | 是 | 314 | 0 | 0 | 0 | engine | Release 影印／候选底本 |
 | divination | meihua-yishu | 梅花易数 | 是 | 623 | 623 | 623 | 1 | engine | 尚未确认影印 |
-| divination | zengshan-buyi | 增删卜易 | 是 | 3125 | 3125 | 3125 | 2 | engine | 尚未确认影印 |
+| divination | zengshan-buyi | 增删卜易 | 是 | 3125 | 3125 | 3125 | 19 | engine | 尚未确认影印 |
 | divination | zhouyi-zhezhong | 御纂周易折中 | 是 | 1622 | 0 | 0 | 0 | knowledge | Release 影印／候选底本 |
 | fengshui | dili-bianzheng | 地理辨正 | 是 | 2 | 0 | 0 | 0 | knowledge | 已存影印／候选底本 |
-| fengshui | dutian-baozhao-jing | 都天宝照经 | 是 | 101 | 0 | 0 | 0 | knowledge | 已存影印／候选底本 |
+| fengshui | dutian-baozhao-jing | 都天宝照经 | 是 | 101 | 101 | 101 | 0 | knowledge | 已存影印／候选底本 |
 | fengshui | hanlong-jing | 撼龙经 | 是 | 6 | 0 | 0 | 0 | knowledge | 已存影印／候选底本 |
 | fengshui | huangdi-zhaijing | 黄帝宅经 | 是 | 11 | 11 | 11 | 0 | knowledge | 已存影印／候选底本 |
 | fengshui | qingnang-aoyu | 青囊奥语 | 是 | 3 | 3 | 3 | 0 | knowledge | 已存影印／候选底本 |
@@ -67,11 +69,11 @@
 | fengshui | rudi-yan-quanshu | 入地眼全书 | 是 | 126 | 0 | 0 | 0 | knowledge | 尚未确认影印 |
 | fengshui | shenshi-xuankong-xue | 沈氏玄空学 | 是 | 1191 | 0 | 0 | 0 | knowledge | 尚未确认影印 |
 | fengshui | tianyu-jing | 天玉经 | 是 | 224 | 0 | 0 | 0 | knowledge | 已存影印／候选底本 |
-| fengshui | xuexin-fu | 雪心赋 | 是 | 18 | 0 | 0 | 0 | knowledge | 已存影印／候选底本 |
+| fengshui | xuexin-fu | 雪心赋 | 是 | 18 | 18 | 18 | 0 | knowledge | 已存影印／候选底本 |
 | fengshui | yangzhai-sanyao | 阳宅三要 | 是 | 2 | 0 | 0 | 0 | knowledge | 已存影印／候选底本 |
 | fengshui | yangzhai-shishu | 阳宅十书 | 是 | 9 | 0 | 0 | 0 | knowledge | 尚未确认影印 |
-| fengshui | yilong-jing | 疑龙经 | 是 | 96 | 0 | 0 | 0 | knowledge | 已存影印／候选底本 |
-| fengshui | zangfa-daozhang | 葬法倒杖 | 是 | 13 | 0 | 0 | 0 | knowledge | 已存影印／候选底本 |
+| fengshui | yilong-jing | 疑龙经 | 是 | 96 | 96 | 96 | 0 | knowledge | 已存影印／候选底本 |
+| fengshui | zangfa-daozhang | 葬法倒杖 | 是 | 13 | 13 | 13 | 0 | knowledge | 已存影印／候选底本 |
 | fengshui | zangshu | 葬书 | 是 | 17 | 17 | 17 | 0 | knowledge | 已存影印／候选底本 |
 | luming-nayin | lantai-miaoxuan | 兰台妙选 | 是 | 7 | 0 | 0 | 0 | knowledge | 尚未确认影印 |
 | luming-nayin | li-xuzhong-mingshu | 李虚中命书 | 是 | 8 | 0 | 0 | 0 | knowledge | 已存影印／候选底本 |
@@ -85,7 +87,7 @@
 | san-shi | daliuren-daquan | 大六壬大全 | 是 | 6893 | 0 | 0 | 9 | engine | 已存影印／候选底本 |
 | san-shi | liuren-miben | 大六壬秘本 | 是 | 2643 | 0 | 0 | 0 | engine | Release 影印／候选底本 |
 | san-shi | liuren-zhiyin | 六壬指南注解（张洪注本） | 是 | 13 | 0 | 0 | 0 | engine | 已存影印／候选底本 |
-| san-shi | qimen-dunjia-tongzhi | 奇门遁甲统宗大全 | 是 | 739 | 0 | 0 | 2 | engine | 已存影印／候选底本 |
+| san-shi | qimen-dunjia-tongzhi | 奇门遁甲统宗大全 | 是 | 739 | 739 | 739 | 2 | engine | 已存影印／候选底本 |
 | san-shi | qimen-faqiao | 奇门法窍（V5.1 核验摘录） | 否 | 0 | 0 | 0 | 0 | excluded_copyright | 尚未确认影印 |
 | san-shi | taiyi-shenshu | 太乙神数 | 是 | 209 | 0 | 0 | 0 | knowledge | Release 影印／候选底本 |
 | selection | donggong-zeri | 董公择日 | 是 | 198 | 0 | 0 | 0 | knowledge | 已存影印／候选底本 |
@@ -108,20 +110,20 @@
 
 ## 段落分类来源
 
-- pattern 文本模式初筛：2647；annotation 实际语义注解：13196；unclassified 待分类：37797
+- pattern 文本模式初筛：2629；annotation 实际语义注解：14163；unclassified 待分类：36848
 - 四柱案例从正文命造或带评语的四组干支识别；起例、先取后取与月起顺逆等操作从正文识别。模式结果仍可能需修订，不当作人工审读。
 - 目录、序跋不硬造解读；无分类依据时保留待分类。疑字只标记，不由模型补字。
 
-- 待分类：37797
-- 评注或元数据：5576
-- 理论：3074
-- 案例：2975
-- 规则候选：2039
-- 序跋目录：772
-- 操作步骤：614
-- 术语：376
-- 重复：296
-- 待核实：121
+- 待分类：36848
+- 评注或元数据：5608
+- 理论：3470
+- 案例：2987
+- 规则候选：2206
+- 序跋目录：831
+- 操作步骤：655
+- 术语：503
+- 重复：387
+- 待核实：145
 
 段落 ID 形如 `slug:L0123-L0125`，对应 `sources/fulltext/.../fulltext.md` 行号，明细在 `references/inventory/paragraphs/`。
 
