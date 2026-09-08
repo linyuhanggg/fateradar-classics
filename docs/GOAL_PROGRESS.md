@@ -4,6 +4,15 @@
 
 两仓均为 `codex/full-library-completion`：古籍 `/Users/yuhanglin/.codex/worktrees/fateradar-classics-grok-full-library`；产品 `/Users/yuhanglin/.codex/worktrees/fateradar-product-grok-full-library`。原接手基准古籍2396e4c、产品8f1ca84。原main及他人admin/billing/.claude不改。本目标尚未合main或部署。
 
+## 最新接续：渊海四言2143主段，下一行4500
+
+上一轮有实际进展。本轮e21f87f新增41主段至L4498，四言第一套与再录开头，累计2143段；下一L4500。
+
+- 印根杀根轻重与旺运效果分开，伤官官不损用神明确例外；冲运/冲用对象不可混。己日戌不合法、临成/商官等疑字不改，甲己金神喜火差异原留。
+- 再录年本/月主字与前日主分层，不计独立证据，原文/ID/verified保持，运行引擎未改。本轮nmem继续502未反复重试或切换。
+- 2143entries验证0错；固定e21f87fcd151f7bb5cd8a7ef51440b599f3c91ff导出55包80889段source_reviewed21509，18知识测试通过，2143主段切片一致，参考1988未审。
+- 全目标active，未合main或部署；继续四言再录及全库、八术条件和联动。
+
 ## 最新接续：渊海集说科甲2102主段，下一行4411
 
 上一轮有实际进展。本轮337ce95新增43主段至L4409，渊源集说结束、科甲歌开头，累计2102段；下一L4411。
