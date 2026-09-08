@@ -29,15 +29,27 @@
       "id": "nlc-recovery",
       "bookSlug": "mingli-yueyan",
       "system": "bazi",
-      "label": "精选命理约言 NLC 影印 OCR 初识稿",
+      "label": "精选命理约言 · 韦千里四卷选本 · NLC影印校读",
       "file": "sources/normalized/bazi/mingli-yueyan/nlc-recovery.md",
       "sourceStatus": "ocr-draft",
       "pageScoped": true,
       "notes": [
-        "按 PDF 页保持顺序，仍有错字、双列混读和夹注读序问题。",
-        "仅供定位及校对，不能作为已校原文或命盘运行依据。"
+        "现有185页扫描本已逐页审校；正文、各家评按、附录、广告及恢复元记录分别处理，逐段状态见审校记录。",
+        "这是现存四卷选本，不等于陈氏原十卷或全部传本；原书观点和编者评按不混成同一判断。"
       ],
       "pageReviews": "sources/normalized/bazi/mingli-yueyan/page-reviews.json"
+    },
+    {
+      "id": "wikisource-volume1",
+      "bookSlug": "zengshan-buyi",
+      "system": "divination",
+      "label": "增删卜易卷一 · 维基分章固定版本恢复",
+      "file": "sources/normalized/divination/zengshan-buyi/wikisource-volume1.md",
+      "sourceStatus": "reference-text",
+      "notes": [
+        "旧主文件漏抓卷一31个实际分章链接；本补充从各章固定维基revision一次恢复，旧文件保持不变。",
+        "网页正文与页外附注分别保留，来源与转换见同目录wikisource-volume1.provenance.json；这是电子文本恢复，不是影印校勘。"
+      ]
     }
   ]
 }

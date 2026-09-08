@@ -29,8 +29,8 @@
       "slug": "mingli-yueyan",
       "status": "navigation-only",
       "notes": [
-        "当前49个网页分节均为上一篇、下一篇、返回列表和相关文章标题；未见《命理约言》实质正文，不能按全文或理论段落使用。",
-        "已保存《精选命理约言》NLC扫描，正文恢复另行进行；这不证明全部异本已覆盖。"
+        "旧主文件只有540个导航/来源条目，正文贡献为零，原文件保留。",
+        "可靠正文另在NLC《精选命理约言》185页四卷选本恢复层；该选本已有逐页校读与全部段落去向，不代表陈氏原十卷全本。"
       ],
       "evidence": [
         {
@@ -285,7 +285,9 @@
       "slug": "zengshan-buyi",
       "status": "text-present",
       "notes": [
-        "已核看分散位置的实质正文，不是仅有目录或导航；卷页齐全与逐字准确性尚未据影印核定。"
+        "主文件L299–361的卷一31个章题没有正文，属于旧抓取漏掉实际分章链接；已从各章固定维基版本恢复到独立wikisource-volume1补充来源。",
+        "卷首若干纳甲、世应、旬空等材料明示现代原剑增订，不用它们冒充缺失古文。",
+        "主文件有实质正文，但有正文不等于完整古本；新增恢复仅证明电子文字已取得，影印校勘状态另论。"
       ],
       "evidence": [
         {
@@ -302,6 +304,11 @@
           "file": "sources/fulltext/divination/zengshan-buyi/fulltext.md",
           "startLine": 7181,
           "endLine": 7181
+        },
+        {
+          "file": "sources/fulltext/divination/zengshan-buyi/fulltext.md",
+          "startLine": 299,
+          "endLine": 363
         }
       ]
     },
