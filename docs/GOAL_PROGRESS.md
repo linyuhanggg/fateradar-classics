@@ -4,6 +4,14 @@
 
 两仓均为 `codex/full-library-completion`：古籍 `/Users/yuhanglin/.codex/worktrees/fateradar-classics-grok-full-library`；产品 `/Users/yuhanglin/.codex/worktrees/fateradar-product-grok-full-library`。原接手基准古籍2396e4c、产品8f1ca84。原main及他人admin/billing/.claude不改。本目标尚未合main或部署。
 
+## 最新接续：神峰喜忌收尾继善开头32节，下一行3561
+
+上一轮有实际进展。本轮e246c71新增10节，第五正文连续L3204–3560共32节，读喜忌余文及继善/歌释开头。父段draft，L3561起未读。
+
+- 弱身用刃、官印受伤与杀刃有制，按实际作用非星名吉凶；背禄、合官/合杀与印伤各有前提。胎元受气为绝处得生解释，不与现代月柱推胎元混同；七杀全彰广义三种伤害不只数偏官。
+- 女命不取官财与其他篇取官夫等源内矛盾、甲申卯乙被说财妻、旧身杀旺解被前注疑等保留；名人四柱不据姓名补日历。11entries验证0错，10节连续断言过。
+- 未导出未读全父段，知识仍8e92efe/19360，运行代码未改，原文/ID/verified保持。继续L3561继善后文；完整目标active，未合main或部署。
+
 ## 最新接续：神峰喜忌篇后段22节，下一行3436
 
 上一轮有实际进展。本轮2a95a7c新增12节，第五正文连续L3204–3435共22节，读虚格重解至官旺身弱、旺甚无依和印绶财破。父段draft，L3436起未读。
