@@ -59,7 +59,7 @@ def build_export(root: Path, source_revision: str = "HEAD") -> dict:
                 })
             rules.append({
                 "id": rule["id"], "art": rule["art"], "theme": rule["theme"],
-                "bookSlug": book["slug"], "book": book["title"], "chapter": " / ".join(chapters),
+                "bookSlug": book["slug"], "book": book["title"], "chapter": rule.get("chapter") or " / ".join(chapters),
                 "school": rule["school"], "page": rule["page"],
                 "definitionFile": str(path.relative_to(root)),
                 "quote": rule["quote"], "fragments": fragments,

@@ -79,6 +79,16 @@ class RuntimeEvidenceExportTests(unittest.TestCase):
         self.assertNotIn("matched", result["rules"][0])
         self.assertEqual(result["rules"][0]["when"], self.rule["when"])
 
+    def test_reviewed_chapter_can_override_inherited_markdown_heading_without_moving_quotes(self):
+        # Merged books can leave later bare chapter titles under an earlier Markdown heading.
+        self.rule["chapter"] = "论救应 / 位置与力量"
+        self.write_package()
+        result = exporter.build_export(self.root)
+        rule = result["rules"][0]
+        self.assertEqual(rule["chapter"], "论救应 / 位置与力量")
+        self.assertEqual(rule["fragments"][0]["quote"], "官逢傷，而透印以解之。")
+        self.assertEqual(rule["fragments"][0]["url"], f"https://github.com/linyuhanggg/fateradar-classics/blob/{self.revision}/{self.file}?plain=1#L3-L3")
+
 
 if __name__ == "__main__":
     unittest.main()

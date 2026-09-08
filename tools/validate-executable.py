@@ -65,6 +65,8 @@ def validate(root: Path) -> dict:
             for key in TEXT_FIELDS:
                 if not isinstance(rule.get(key), str) or not rule[key].strip():
                     error("FIELDS", rel, rid, f"{key} 必须是非空文本")
+            if "chapter" in rule and (not isinstance(rule["chapter"], str) or not rule["chapter"].strip()):
+                error("FIELDS", rel, rid, "显式 chapter 必须是已审读的非空章节说明")
             if rid in rule_ids:
                 error("DUPLICATE_ID", rel, rid, "规则 ID 全库重复")
             rule_ids.add(rid)
