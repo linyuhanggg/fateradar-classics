@@ -80,7 +80,7 @@
       "unknown_when": "建禄月劫尚未另取用神",
       "rescue": "unimplemented",
       "vernacular": "按《子平真诠》，{name}属{mode}。这是格局路线，不能直接改写成固定五行喜忌。",
-      "implementation_assumption": "善/不善是格局术语。已接入的正官执行路线按实际参与的财、印或合绊印列辅助候选；不把顺用固定成官财印、逆用固定成印食官。未成立或未接入的路线保留具体缺项，不默认生成五行套餐。",
+      "implementation_assumption": "善/不善是格局术语。已接入路线通过geju.execution列出实际参与的财、官、食伤、印或合绊作用者，藏干与透干分开；不把顺用固定成官财印、逆用固定成印食官。未成立或未接入的路线保留具体缺项，不默认生成五行套餐。",
       "verified": false
     },
     {
@@ -141,17 +141,17 @@
         "tenGodFacts.layer",
         "relations.chong",
         "xiangShen.layer",
-        "geju.zhengguan"
+        "geju.execution"
       ],
       "when": {
         "exists": "geju.name"
       },
-      "satisfy_when": "当前所选正官路线的透藏、根气、位置、干扰及有依据的解救均已检查，未决项为空且实际成立条件满足；不是任意格共现即成立",
+      "satisfy_when": "当前所选且已接入的格局路线的透藏、根气、位置、干扰及有依据的解救均已检查，未决项为空且实际成立条件满足；不是任意格共现即成立",
       "fail_when": "成格条件已计算且明确不成立",
       "unknown_when": "所选路线还有未操作化的刑冲破害、力量或变用条件；尚未接入执行器的其它格局仍保留具体缺项",
       "rescue": "unimplemented",
       "vernacular": "原文要求看成败和救应。当前只保留十神出现的柱位、透藏，不把出现写成已经成格或已经破格。",
-      "implementation_assumption": "正官路线采用公开的定性根气、得令、生扶、合绊与财印作用判据。原文没有给出这些程序分档；结果须同时保留方法假设和未决项。其它格局、未明破害及救应不默认算完，completion按该盘实际执行结果给出，不固定为信息不足，也不能仅有十神共现就满判。",
+      "implementation_assumption": "正官与财格的实际执行结果经geju.execution统一传给取用、病药和解读。各路线采用公开的定性根气、得令、生扶、合绊与财印作用判据。原文没有给出这些程序分档；结果须同时保留方法假设和未决项。其它格局、未明破害及救应不默认算完，completion按该盘实际执行结果给出，不固定为信息不足，也不能仅有十神共现就满判。",
       "verified": false
     },
     {
