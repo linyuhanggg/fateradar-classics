@@ -1,0 +1,105 @@
+{
+  "bookSlug": "hanlong-jing",
+  "sourceTitle": "撼龙经、疑龙经、葬法倒杖合刊",
+  "scopeNote": "先完成作品归属与提要/尾题审读；4正文长段仍draft。原文件、6主ID、行范围和verified不变，不将合刊复录视为独立支持，也不冒称三书逐节语义审读完成。",
+  "entries": [
+    {
+      "paragraphId": "hanlong-jing:L0003-L0010",
+      "kind": "序跋目录",
+      "vernacular": "四库提要合论撼龙、疑龙、法倒杖三书。旧题杨筠松，但史传缺载，术家玉函逃难等传闻被馆臣认为不足尽信；宋书录载疑龙、辨龙无名氏，撼龙是否辨龙亦不可考。提要概述九星山势、疑龙干枝和到头法、倒杖诸法，并说明删去旧李国本注与图。馆臣的删评不等于现有电子文本已完整校勘。",
+      "terms": [
+        "撼龙经合刊"
+      ],
+      "notes": [
+        "旧题作者与宋代无名氏记录同时保留，不升级为作者已考定。"
+      ],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "hanlong-jing:L0012-L0126",
+      "kind": "理论",
+      "vernacular": "本段为合刊中的《撼龙经》正文，论九星山势及寻龙形态；当前只确认作品范围，逐节语义审读尚未完成。",
+      "terms": [
+        "撼龙经合刊"
+      ],
+      "notes": [
+        "归属定位完成不等于正文已审读，保持draft。"
+      ],
+      "review": "draft",
+      "verified": false
+    },
+    {
+      "paragraphId": "hanlong-jing:L0128-L0173",
+      "kind": "理论",
+      "vernacular": "本段先保留上一书尾题，L130起明确题《疑龙经》，包含其上中下篇。当前只确认作品归属，正文逐节释义未完成；L173末自记阙文，不能补猜。",
+      "terms": [
+        "疑龙经"
+      ],
+      "notes": [
+        "L128撼龙经为前书尾题，L130疑龙经为本书题署。",
+        "正文未完成语义审读，保持draft；不复用另一底本的审读状态。"
+      ],
+      "review": "draft",
+      "verified": false,
+      "sourceAttribution": {
+        "work": "疑龙经",
+        "relation": "anthology",
+        "note": "本地文件为三书合刊转写，按书内题名区分作品；保留物理文件及原ID，不计作另一书的独立证据。"
+      }
+    },
+    {
+      "paragraphId": "hanlong-jing:L0175-L0225",
+      "kind": "理论",
+      "vernacular": "本段为《疑龙经》所附疑龙十问及变星篇，L221明题变星篇附，L224有阙字标记。只定位篇目和缺文，尚未完成逐节释义。",
+      "terms": [
+        "疑龙经·疑龙十问、变星篇"
+      ],
+      "notes": [
+        "附篇与正篇的关系保留；阙文未经底本核定，不凭别本默补。"
+      ],
+      "review": "draft",
+      "verified": false,
+      "sourceAttribution": {
+        "work": "疑龙经·疑龙十问、变星篇",
+        "relation": "anthology",
+        "note": "本地文件为三书合刊转写，按书内题名区分作品；保留物理文件及原ID，不计作另一书的独立证据。"
+      }
+    },
+    {
+      "paragraphId": "hanlong-jing:L0227-L0341",
+      "kind": "理论",
+      "vernacular": "本段开头是疑龙经尾题，L229起明确为《葬法倒杖》，含认太极、分两仪、四象及后续倒杖砂法。只确认书内归属，正文释义尚未完成。",
+      "terms": [
+        "葬法倒杖"
+      ],
+      "notes": [
+        "L227是前书尾题；本条不因此把葬法内容归给疑龙。",
+        "归属定位不提升整段语义审读状态。"
+      ],
+      "review": "draft",
+      "verified": false,
+      "sourceAttribution": {
+        "work": "葬法倒杖",
+        "relation": "anthology",
+        "note": "本地文件为三书合刊转写，按书内题名区分作品；保留物理文件及原ID，不计作另一书的独立证据。"
+      }
+    },
+    {
+      "paragraphId": "hanlong-jing:L0343-L0343",
+      "kind": "评注或元数据",
+      "vernacular": "合刊末尾重复《葬法倒杖》书名，属于尾题，不是新的葬法规则。",
+      "terms": [
+        "葬法倒杖"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false,
+      "sourceAttribution": {
+        "work": "葬法倒杖",
+        "relation": "anthology",
+        "note": "本地文件为三书合刊转写，按书内题名区分作品；保留物理文件及原ID，不计作另一书的独立证据。"
+      }
+    }
+  ]
+}
