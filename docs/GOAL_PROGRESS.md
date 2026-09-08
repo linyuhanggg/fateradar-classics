@@ -4,6 +4,15 @@
 
 两仓均为 `codex/full-library-completion`：古籍 `/Users/yuhanglin/.codex/worktrees/fateradar-classics-grok-full-library`；产品 `/Users/yuhanglin/.codex/worktrees/fateradar-product-grok-full-library`。原接手基准古籍2396e4c、产品8f1ca84。原main及他人admin/billing/.claude不改。本目标尚未合main或部署。
 
+## 最新接续：阳宅第104页24图记录，累计62有页内证据
+
+上一轮c3ce3e3/06ac8e5第103页核对已推送，属实际进展。本轮efb8911使用ego-browser34查看Page104修订1899505、整页上中下与题字放大，并独立打开pic1918/1919核实复合图。
+
+- 后四金刚末缺题为大神，首幅原大神题不符，可读〔首字待辨〕青金刚，文件名辟青仅线索。预镇五方东西南北中央接十二方：原亥方旁注东方、末缺题亥方，共3完整补题，1首字待辨。
+- pic1918上下两形同图，pic1919左右两式和小注同图，不制造漏图问题。右注四片同符随处换张光主文等名；左六甲护宅下注用天师符即此，为后文见前提供线索。
+- 本页24既有图记录（不等24符式），累计62有题名/邻文证据、74未看；1漏收亥子丑符另列，字形仍待识。图式未逐笔释读，父段draft，现有全文200小节状态不变。
+- docs/review/yangzhai-vol678-images-2026-09-09/更新7截图、manifest和报告；9entries验证0错。原文/ID/verified保持，无产品导出，知识555f606/21780，运行e43cd38。nmem上下文及恢复授权检索成功，全目标active，未合main或部署，继续105页及全库八术余项。
+
 ## 最新接续：阳宅第103页18符，既有38符有题名/归属证据
 
 上一轮0c63ab8/c66a4ef第102页核对已推送，属实际进展。本轮c3ce3e3以ego-browser34实际查看Page103修订1899504整页及上中下截图，新增18符题名/邻文归属证据。
