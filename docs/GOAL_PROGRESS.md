@@ -4,6 +4,14 @@
 
 两仓均为 `codex/full-library-completion`：古籍 `/Users/yuhanglin/.codex/worktrees/fateradar-classics-grok-full-library`；产品 `/Users/yuhanglin/.codex/worktrees/fateradar-product-grok-full-library`。原接手基准古籍2396e4c、产品8f1ca84。原main及他人admin/billing/.claude不改。本目标尚未合main或部署。
 
+## 接续：文献归属纠正与追加审读
+
+- 上一轮为实际进展：接手/来源导入/消费者/固定快照均已落地。本轮root独立确认天玉主224段中L486起恰59混入尾段，L931恰一个现代白话段。dcac13c完成224注解；58 mixed-in归撼龙，1 modern-commentary，旧主ID/原字不变。18fac53增加sourceAttribution验证/出口，产品6d47f94/cdbcc49支持搜索/默认显示及现代文本标签；6866033区分正常anthology汇编所收篇目，不一律叫错混。06d3d37保留无归属段的既有搜索字串，避免无意义全库换行改动。
+- 新语义批次：火珠林7ed438b主314段、董公择日9780ee8主198段已完成具体读法/例外/疑点并各自过validator，verified0。未新增风水/择日运行算法。后续仍按真实缺口逐书处理，不以段数等同规则或独立证据。
+- 本轮11注解验证测试、9知识出口测试、17产品查询/分包测试、typecheck及修改文件ESLint均通过；不重复上一轮完整2529测试。固定dcac13c知识出口55书/80135段/17011电子审读，59个归属字段逐项保留；之后06d3d37再次固定更新，具体sourceRevision看产品generated/knowledge/index.json。
+- ego空间7网页核L486–493混入说明及L931现代标签，引用指正确固定dcac13c文件/行号；清除筛选SPA跳转timeOrigin不变。旧5188服务确无监听后已启动新预览session17204。首次依赖优化时报React重复加载，优化/刷新后实际页面和SPA交互正常，未改生产代码/依赖；不能把启动日志误称从未报错。仅本地DOM/交互验收，不称截图视觉全验。
+- 当前qimen_finish阳九33ab3a4/85d1843后完成阴一27fba90/b42f9a5，继续阴二：1682原例/1681可复算/111争议/1输入待核/verified0，1688聚焦测试绿。bazi_transits在神相全编345段（图书集成汇编，含相儿经/人相篇，标anthology）；liuren_finish在星历考原315段。root负责固定索引/出口、文献归属和消费者；不覆盖这些进行中稿。
+
 ## 最新接手点：2026-09-08 · 识典来源与消费者已接通
 
 本节优先于下方旧记录。用户在核验识典后要求本助手接手继续完整开发；此前暂停已解除。持续Goal在任务`01a08089-4206-73c2-9357-33c374c713d5` active，原“查看古籍算法进度”已interrupted。不要把本批验收当全库完成。
