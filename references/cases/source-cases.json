@@ -39293,6 +39293,72 @@
       "verified": false
     },
     {
+      "id": "sanming-tonghui:L4477-L4478",
+      "bookSlug": "sanming-tonghui",
+      "name": "冲夭煞原例（不设寿命预期）",
+      "kind": "source_case",
+      "pillars": [
+        "甲寅",
+        "丁酉",
+        "戊申",
+        "甲寅"
+      ],
+      "inputBasis": "four-pillars",
+      "scope": [
+        "十神关系",
+        "四柱组合条件"
+      ],
+      "unavailable": [
+        "公历生日",
+        "交节后天数",
+        "出生地与时制",
+        "起运"
+      ],
+      "canRecompute": true,
+      "reading": "冲夭与短命煞的原文反驳。\n\n【不能仅以日时冲断寿，L4477–4477】原诗对冲短命，作者随即说亲见多不短命、须四柱并详难以对冲断，另说冲不破无害。此反驳必须与诗同读，不能日时冲即输出死亡风险。寅年申月午日子时缺干不补四柱。\n\n【原例与内嵌短命煞，L4478–4478】甲寅丁酉戊申甲寅原幼亡说只存四柱不设年龄expected；后内嵌短命煞又名夭年与隔宿同例，并身能克煞可免。相关断语不作健康、育儿或寿命指引。",
+      "notes": [
+        "保留作者明确反对仅对冲断寿的意见，原病例不是独立临床证据。"
+      ],
+      "source": {
+        "paragraphId": "sanming-tonghui:L4477-L4478",
+        "file": "sources/fulltext/bazi/sanming-tonghui/fulltext.md",
+        "startLine": 4477,
+        "endLine": 4478
+      },
+      "verified": false
+    },
+    {
+      "id": "sanming-tonghui:L4482-L4485",
+      "bookSlug": "sanming-tonghui",
+      "name": "五行满数原例（九月三十，缺月柱，丁夘原字）",
+      "kind": "source_case",
+      "pillars": [
+        "己亥",
+        "己酉",
+        "丁夘"
+      ],
+      "inputBasis": "four-pillars",
+      "scope": [],
+      "unavailable": [
+        "公历生日",
+        "交节后天数",
+        "出生地与时制",
+        "起运"
+      ],
+      "canRecompute": false,
+      "reading": "急脚截推与五行满数。\n\n【多类神煞不同起法，L4482–4483】急脚按干见支及支干全、天鬼截路空又别名；截命命前一支、推命命后一支按二三重，纳音生死位又不同。不混入通用截路空亡日时表，更不以计数判寿命。原丙子亥子疑文保留。\n\n【月日阴阳与缺项原例，L4484–4485】上半月阳下半阴，初六至十木、十六至二十火、二十六至三十水，其余五行与日期未列，不补全表。己亥年九月三十己酉日丁夘时原只给三柱与月数，月干未明、夘异字保留不可复算，不补公历或死亡结果。",
+      "notes": [
+        "原年己亥、九月三十日、己酉日、丁夘时完整抄在说明，结构仅原给三柱，不将缺月干/异字正规化造全盘。"
+      ],
+      "source": {
+        "paragraphId": "sanming-tonghui:L4482-L4485",
+        "file": "sources/fulltext/bazi/sanming-tonghui/fulltext.md",
+        "startLine": 4482,
+        "endLine": 4485
+      },
+      "verified": false
+    },
+    {
       "id": "ziping-zhenquan:L0251-L0255",
       "bookSlug": "ziping-zhenquan",
       "name": "五、論十干合而不合·正文命例1",
@@ -233835,5 +233901,5 @@
       "verified": false
     }
   ],
-  "sourceRevision": "72408659aa95f7154772e3caf1c85e3d44bfd9c1"
+  "sourceRevision": "b15deae0346ecfb68f1e02766e1e10c422abe86a"
 }
