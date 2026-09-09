@@ -81,18 +81,18 @@
 
 ## R-02-06 太岁与犯太岁
 
-- **rule_statement**：流年为太岁；命局与太岁冲、刑、合者皆有应；不限于值太岁、冲太岁。
+- **rule_statement**：太岁分当生太岁与逐年游行太岁，入命未必为凶；日犯岁君仍须看制化救应和相合有情。
 - **source_chapter**：vol-02/taisui
 - **applicable_to**：流年判断
-- **caveats**：现代流派"犯太岁"包装多有夸大；本书强调辨明冲、刑、合的具体类型，不一概而论。
+- **caveats**：以 L1080–1083 为依据，制与合须核实际作用；不以冲刑合名称直接保证事件发生。
 - **verification_status**：pending_verification
 
 ## R-02-07 岁运合参
 
-- **rule_statement**：大运与流年合参，看与命局喜忌的生克冲合；岁运并临往往应大事。
-- **source_chapter**：vol-02/zonglun-suiyun
-- **applicable_to**：流年具体事项判断
-- **caveats**：具体事件应期需配合神煞与十神；具体事件层可叠加六爻 `divination/*`。
+- **rule_statement**：大运流年同干支为岁运并临，原文分羊刃七杀与财官印绶，不一概为凶或必有大事。
+- **source_chapter**：vol-02/taisui（L1084）
+- **applicable_to**：岁运组合理论辨析
+- **caveats**：并临仅确认同干支形态，仍须取用、救应及实际作用；未形成自动事件预测规则。
 - **verification_status**：pending_verification
 
 ## R-02-08 十干五合
