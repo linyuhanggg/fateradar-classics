@@ -41364,6 +41364,77 @@
       "verified": false
     },
     {
+      "id": "sanming-tonghui:L8547-L8557:case-1",
+      "bookSlug": "sanming-tonghui",
+      "name": "明太祖大林龙原例",
+      "kind": "source_case",
+      "pillars": [
+        "戊辰",
+        "壬戌",
+        "丁丑",
+        "丁未"
+      ],
+      "inputBasis": "four-pillars",
+      "scope": [
+        "十神关系",
+        "四柱组合条件"
+      ],
+      "unavailable": [
+        "公历生日",
+        "交节后天数",
+        "出生地与时制",
+        "起运"
+      ],
+      "canRecompute": true,
+      "reading": "大运折除成岁小运逆顺由时为库存合并十一行，含文库武库、飞龙离天、大林龙、长流龙，不拆ID。二註巳引首卷论大运小运中，不把岁运当出生柱。明太祖命戊辰壬戌丁丑丁未、王陽明封新建伯壬辰辛亥癸亥癸亥二造入案例，无expected。年见亥月建辰、年见亥时见辰日月会水不是完整四柱，不串配。九五大人近侍丧家罢职翰苑林泉是历史帝室官职贫贱分类，不转换成对现实用户的帝室、官职或贫贱判断。",
+      "notes": [
+        "大运小运与龙格仅文献归档。原文/ID/verified保持。巳引巳字寜㑹絶原留。二造无expected。嵗運不把运柱当出生柱。"
+      ],
+      "source": {
+        "paragraphId": "sanming-tonghui:L8547-L8557",
+        "file": "sources/fulltext/bazi/sanming-tonghui/fulltext.md",
+        "startLine": 8547,
+        "endLine": 8557
+      },
+      "verified": false,
+      "samePillarsAs": "sanming-tonghui:L4179-L4179:case-2"
+    },
+    {
+      "id": "sanming-tonghui:L8547-L8557:case-2",
+      "bookSlug": "sanming-tonghui",
+      "name": "王陽明长流龙原例",
+      "kind": "source_case",
+      "pillars": [
+        "壬辰",
+        "辛亥",
+        "癸亥",
+        "癸亥"
+      ],
+      "inputBasis": "four-pillars",
+      "scope": [
+        "十神关系",
+        "四柱组合条件"
+      ],
+      "unavailable": [
+        "公历生日",
+        "交节后天数",
+        "出生地与时制",
+        "起运"
+      ],
+      "canRecompute": true,
+      "reading": "大运折除成岁小运逆顺由时为库存合并十一行，含文库武库、飞龙离天、大林龙、长流龙，不拆ID。二註巳引首卷论大运小运中，不把岁运当出生柱。明太祖命戊辰壬戌丁丑丁未、王陽明封新建伯壬辰辛亥癸亥癸亥二造入案例，无expected。年见亥月建辰、年见亥时见辰日月会水不是完整四柱，不串配。九五大人近侍丧家罢职翰苑林泉是历史帝室官职贫贱分类，不转换成对现实用户的帝室、官职或贫贱判断。",
+      "notes": [
+        "大运小运与龙格仅文献归档。原文/ID/verified保持。巳引巳字寜㑹絶原留。二造无expected。嵗運不把运柱当出生柱。"
+      ],
+      "source": {
+        "paragraphId": "sanming-tonghui:L8547-L8557",
+        "file": "sources/fulltext/bazi/sanming-tonghui/fulltext.md",
+        "startLine": 8547,
+        "endLine": 8557
+      },
+      "verified": false
+    },
+    {
       "id": "ziping-zhenquan:L0251-L0255",
       "bookSlug": "ziping-zhenquan",
       "name": "五、論十干合而不合·正文命例1",
@@ -235906,5 +235977,5 @@
       "verified": false
     }
   ],
-  "sourceRevision": "0bd2158982eb9ebd79806c35b34e418c62cea82d"
+  "sourceRevision": "835223525a764c501fa86967c44ed422aabdebe1"
 }
