@@ -39121,6 +39121,41 @@
       "verified": false
     },
     {
+      "id": "sanming-tonghui:L4308-L4308",
+      "bookSlug": "sanming-tonghui",
+      "name": "清肃宪台原构型",
+      "kind": "source_case",
+      "pillars": [
+        "乙丑",
+        "乙酉",
+        "乙巳",
+        "乙酉"
+      ],
+      "inputBasis": "four-pillars",
+      "scope": [
+        "十神关系",
+        "四柱组合条件"
+      ],
+      "unavailable": [
+        "公历生日",
+        "交节后天数",
+        "出生地与时制",
+        "起运"
+      ],
+      "canRecompute": true,
+      "reading": "清肃宪台。乙丑乙酉乙巳乙酉原以乙真金配巳酉丑金位，不改乙正五行木。胎月马只是附加未给胎不补，台谏原说不作职业expected。",
+      "notes": [
+        "原文/ID/verified保持，纳音真五行虚拱与实际干支分层，不由格名直接生成取用结论。"
+      ],
+      "source": {
+        "paragraphId": "sanming-tonghui:L4308-L4308",
+        "file": "sources/fulltext/bazi/sanming-tonghui/fulltext.md",
+        "startLine": 4308,
+        "endLine": 4308
+      },
+      "verified": false
+    },
+    {
       "id": "ziping-zhenquan:L0251-L0255",
       "bookSlug": "ziping-zhenquan",
       "name": "五、論十干合而不合·正文命例1",
@@ -233663,5 +233698,5 @@
       "verified": false
     }
   ],
-  "sourceRevision": "9b1b17327674508a862d96cb7c221039be3cbfc0"
+  "sourceRevision": "e459c777977a8c9e74dc1e9b643fff55597a028f"
 }
