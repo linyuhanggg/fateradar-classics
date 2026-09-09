@@ -41435,6 +41435,38 @@
       "verified": false
     },
     {
+      "id": "sanming-tonghui:L9098-L9098",
+      "bookSlug": "sanming-tonghui",
+      "name": "翁仲益进士原例",
+      "kind": "source_case",
+      "pillars": [
+        "戊申",
+        "甲寅",
+        "巳丑",
+        "丙寅"
+      ],
+      "inputBasis": "four-pillars",
+      "scope": [],
+      "unavailable": [
+        "公历生日",
+        "交节后天数",
+        "出生地与时制",
+        "起运"
+      ],
+      "canRecompute": false,
+      "reading": "真官时遇命强早受金紫之封：此月令正官格也以下详言格局如戊申甲寅巳丑丙寅翁仲益进士。巳丑日柱两支非法干支，不复算。进士金紫是历史官职分类，不转换成对现实用户的官职判断。戊申甲寅巳丑丙寅入案例，无expected，canRecompute false。",
+      "notes": [
+        "真官时遇仅文献归档。原文/ID/verified保持。巳丑原字不改正。进士不转现实官职判断。"
+      ],
+      "source": {
+        "paragraphId": "sanming-tonghui:L9098-L9098",
+        "file": "sources/fulltext/bazi/sanming-tonghui/fulltext.md",
+        "startLine": 9098,
+        "endLine": 9098
+      },
+      "verified": false
+    },
+    {
       "id": "ziping-zhenquan:L0251-L0255",
       "bookSlug": "ziping-zhenquan",
       "name": "五、論十干合而不合·正文命例1",
@@ -235977,5 +236009,5 @@
       "verified": false
     }
   ],
-  "sourceRevision": "835223525a764c501fa86967c44ed422aabdebe1"
+  "sourceRevision": "31c84eac02c04c60506002757cb46b10c8a832af"
 }
