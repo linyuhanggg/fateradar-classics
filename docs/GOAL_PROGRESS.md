@@ -4,6 +4,15 @@
 
 两仓均为 `codex/full-library-completion`：古籍 `/Users/yuhanglin/.codex/worktrees/fateradar-classics-grok-full-library`；产品 `/Users/yuhanglin/.codex/worktrees/fateradar-product-grok-full-library`。原接手基准古籍2396e4c、产品8f1ca84。原main及他人admin/billing/.claude不改。本目标尚未合main或部署。
 
+## 最新接续：三命127段至1028，遁月时240关系核对及胎元不完整例
+
+上一轮f44148e/07fe9c9及产品8cdee64已推送，属实际进展。本轮a5fbaf3新增遁月时、两古歌、年月日時、胎元5主段L992–1028，累计127/970主段176小节；下一L1032坐命宫。
+
+- 通过产品calendar.ts#eightCharAt实际检查120个月干、120个时干关系，全部符合五虎/五鼠公式，证据docs/review/sanming-dun-month-hour-audit-2026-09-09.json。用实际返回支作关系核对，未验证全部交节天文边界；23时项目既有午夜模式只改日不改时的约定已有测试明确锁定，未用一般口诀覆盖或误报新bug。
+- 三主三限25/25/50不当大运，年本日主及六亲柱位多说分层。胎元先批月推/倡300日，后以长短胎例反问固定300，原论辩完整保留，不当实际受孕/寿命计算。
+- 两不完整原例戊子甲寅乙丑、辛未壬辰按原柱数入case，不补缺日时；固定a5fbaf38329604f6d4e7ea99984e84116bf39030导出，4f69347收录案例3025总/3005可复算输入，新2均canRecompute=false、scope空、无日期/预期，删除0，其余冲突/重复及verified0保持。
+- 注释127entries验证0错，原文/ID/verified保持，本批知识未导出，产品仍f44148e/21906，行为运行e43cd38。nmem上下文和日界相关历史检索成功，全目标active，未合main或部署，继续命宫与全库八术总范围。
+
 ## 最新接续：三命122段至988同步产品，25旺衰关系核对通过
 
 上一轮afd6bc4/bcb8e79及产品87b93d1注释修正已推送，属实际进展。本轮f44148e完成四时节气、日刻、时刻长段3主段L908–988，共15小节，累计122/970主段166小节；下一L992遁月时。
