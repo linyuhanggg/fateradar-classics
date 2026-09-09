@@ -4,6 +4,15 @@
 
 两仓均为 `codex/full-library-completion`：古籍 `/Users/yuhanglin/.codex/worktrees/fateradar-classics-grok-full-library`；产品 `/Users/yuhanglin/.codex/worktrees/fateradar-product-grok-full-library`。原接手基准古籍2396e4c、产品8f1ca84。原main及他人admin/billing/.claude不改。本目标尚未合main或部署。
 
+## 最新接续：三命119段至904，人元分日多表与SILING注释修正
+
+上一轮73fa61a/500a8f4已推送，属实际进展。本轮afd6bc4读地支属相、人元司事及12月再表/醉醒子评论，共12主段L847–904，累计119/970主段151小节；下一L908四时节气。
+
+- 属相段王充反例与身体缺陷比附分层，不用作动物学或生肖吉凶规则。首分日表各月30合360；玉井列八干各35+戊己各50合380但称360；再表酉32、子26合年358。原数不补凑，原气名已/巳/艮坤土保留。
+- 醉醒子四行各72+四季土18合360，继而批评固定三五七日划限，末仅月论指司权方法不删年日時藏干事实。原书多表及反论不能混成唯一SILING表，第二表列举顺序不等时间顺序。
+- 实际读当前SILING数组，修复注释本气独占之误：子卯酉10+20，午丙己丁各10；产品87b93d1已推送，只有注释及docs/implementation/siling-source-comparison-2026-09-09.md，无运行数组/判断修改，因此未重复算法回归。现用分日来源依据及影响仍需后续审查，不冒称三命原表。
+- 比较证据docs/review/sanming-siling-source-comparison-2026-09-09.json，注释119entries验证0错，原文/ID/verified保持。本批知识未导出，仍6ef7fae/21881；行为运行仍e43cd38，案例3023项未变。nmem两工具失败未反复重试。全目标active，未合main或部署，继续月令规则及全库八术总范围。
+
 ## 最新接续：三命107段至843，地支和天文地理取象分层
 
 上一轮bc523f0/f56caa2已推送，属实际进展。本轮73fa61a新增论地支、十干分配天文、十二支分配地理3主段L785–843，共17小节，累计107/970主段、134小节；核原书下一L847为论地支属相。
