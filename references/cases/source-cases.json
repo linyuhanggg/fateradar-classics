@@ -25543,6 +25543,41 @@
       "verified": false
     },
     {
+      "id": "sanming-tonghui:L1080-L1087",
+      "bookSlug": "sanming-tonghui",
+      "name": "太岁篇戊土羊刃倒戈匿名例",
+      "kind": "source_case",
+      "pillars": [
+        "戊辰",
+        "戊午",
+        "戊戍",
+        "甲寅"
+      ],
+      "inputBasis": "four-pillars",
+      "scope": [],
+      "unavailable": [
+        "公历生日",
+        "交节后天数",
+        "出生地与时制",
+        "起运"
+      ],
+      "canRecompute": false,
+      "reading": "太岁、救应与并临。\n\n【当生游行与克岁救应，L1080–1082】生年当生太岁、流年游行太岁不同，入命未必凶。日克岁较岁克日重为原比喻，但甲日戊岁有庚申制甲或癸合戊可救，两者全/一有/俱无分列；实际制合是否成效未可单凭元素出现判定。\n\n【真征太岁和并临，L1083–1084】生年同岁真太岁、日运干支与岁冲克征太岁、运岁同干支并临、日岁同柱相并分别命名，不混成一个犯太岁标签。并临原分刃杀凶和财官印亦吉，不能无条件说灾至或必大事；旧贵贱身份取象不作为现代人格等级判断。\n\n【实列案例与末尾减免，L1085–1087】戊辰戊午戊戍甲寅例（日支戍疑戌，未改）记壬申年四月灾亡，匿名旧记不当真实效验golden。次例乙乙丑乙亥壬申乙巳首串及庚申日支等文字损坏，不推断改成可复算四柱。末又言日干天月德/太岁用神可反获、原有天冲地击再遇无大咎，例外不能截掉。",
+      "notes": [
+        "电子语义阅读，岁运名称与实际有用/救应分开；未验证现实效验。",
+        "原例仅给四柱及壬申年四月的旧灾记，无公历地点起运，不把灾亡当expected。",
+        "第二例原串乙乙丑乙亥壬申乙巳暂置疑文，未按猜测结构化，后须底本核。",
+        "首例日柱原字戊戍（戍疑戌），作为原字疑例保留，不规范化为合法干支；canRecompute=false。"
+      ],
+      "source": {
+        "paragraphId": "sanming-tonghui:L1080-L1087",
+        "file": "sources/fulltext/bazi/sanming-tonghui/fulltext.md",
+        "startLine": 1080,
+        "endLine": 1087
+      },
+      "verified": false
+    },
+    {
       "id": "ziping-zhenquan:L0251-L0255",
       "bookSlug": "ziping-zhenquan",
       "name": "五、論十干合而不合·正文命例1",
@@ -220078,5 +220113,5 @@
       "verified": false
     }
   ],
-  "sourceRevision": "a5fbaf38329604f6d4e7ea99984e84116bf39030"
+  "sourceRevision": "e4bc29be51b1b19051a90e7eecafe806327d9c0e"
 }
