@@ -1,0 +1,62 @@
+{
+  "sourceParagraph": "sanming-tonghui:L1348-L1382",
+  "lines": [
+    1361,
+    1369
+  ],
+  "procedures": [
+    "sanming-tonghui:L0996-L0997",
+    "sanming-tonghui:L1001-L1003"
+  ],
+  "scope": "月时干由明确原给输入及本书遁月时公式派生，不是逐字引文；无公历地点，未验证吉凶。",
+  "verified": false,
+  "cases": [
+    {
+      "name": "乘軺例",
+      "year": "丁亥",
+      "month": 4,
+      "day": "壬寅",
+      "hourBranch": "酉",
+      "sourceHour": "己酉",
+      "expected": [
+        "丁亥",
+        "乙巳",
+        "壬寅",
+        "己酉"
+      ],
+      "derivedFields": [
+        "monthStem"
+      ],
+      "computed": [
+        "丁亥",
+        "乙巳",
+        "壬寅",
+        "己酉"
+      ]
+    },
+    {
+      "name": "御策例",
+      "year": "甲子",
+      "month": 1,
+      "day": "辛丑",
+      "hourBranch": "卯",
+      "sourceHour": null,
+      "expected": [
+        "甲子",
+        "丙寅",
+        "辛丑",
+        "辛卯"
+      ],
+      "derivedFields": [
+        "monthStem",
+        "hourStem"
+      ],
+      "computed": [
+        "甲子",
+        "丙寅",
+        "辛丑",
+        "辛卯"
+      ]
+    }
+  ]
+}
