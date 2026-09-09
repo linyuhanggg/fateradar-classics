@@ -25480,6 +25480,69 @@
       "verified": false
     },
     {
+      "id": "sanming-tonghui:L1023-L1028:case-1",
+      "bookSlug": "sanming-tonghui",
+      "name": "胎月三百日论的戊子甲寅乙丑不完整例",
+      "kind": "source_case",
+      "pillars": [
+        "戊子",
+        "甲寅",
+        "乙丑"
+      ],
+      "inputBasis": "four-pillars",
+      "scope": [],
+      "unavailable": [
+        "公历生日",
+        "交节后天数",
+        "出生地与时制",
+        "起运"
+      ],
+      "canRecompute": false,
+      "reading": "胎元不同取法与作者反问。\n\n【月推法与三百日说，L1023–1024】先论胎月重要，批评从生月推胎元及干支合日法不精当，继提生日前300日为十月气。属于文本提出的取法，不能把库中传统胎元当真实受孕日期，也不通过干支重现就验证妊娠长度。\n\n【不完整例及胎生元命反例，L1025–1026】戊子甲寅月乙丑日有前三柱无时，辛未壬辰月以癸未胎有年/月而无日时；只按原信息记录。辛未纳音土受癸未木制用于反驳胎生元命，不把胎干支合当必吉。胎数折寿说不作寿命公式。\n\n【长短胎事例与三百日质疑，L1027–1028】引270日、医家月数及长胎短胎，作者举贫家多月、杜拯与吴渊颖宋濂七月生的自述/传闻，再反问贵人定300日何据。前提出300日与后质疑需同读；不把传闻当现代妊娠资料，也不以贵贱验证受孕日期。",
+      "notes": [
+        "电子语义阅读；排干支公式与多派取象分开，不以取象覆盖现代历法口径。",
+        "两例缺时柱或日时柱，不生成完整四柱复算或实际受孕/寿命预期；所列部分干支仅按原文位置。"
+      ],
+      "source": {
+        "paragraphId": "sanming-tonghui:L1023-L1028",
+        "file": "sources/fulltext/bazi/sanming-tonghui/fulltext.md",
+        "startLine": 1023,
+        "endLine": 1028
+      },
+      "verified": false
+    },
+    {
+      "id": "sanming-tonghui:L1023-L1028:case-2",
+      "bookSlug": "sanming-tonghui",
+      "name": "辛未壬辰月推癸未胎的反例",
+      "kind": "source_case",
+      "pillars": [
+        "辛未",
+        "壬辰"
+      ],
+      "inputBasis": "four-pillars",
+      "scope": [],
+      "unavailable": [
+        "公历生日",
+        "交节后天数",
+        "出生地与时制",
+        "起运"
+      ],
+      "canRecompute": false,
+      "reading": "胎元不同取法与作者反问。\n\n【月推法与三百日说，L1023–1024】先论胎月重要，批评从生月推胎元及干支合日法不精当，继提生日前300日为十月气。属于文本提出的取法，不能把库中传统胎元当真实受孕日期，也不通过干支重现就验证妊娠长度。\n\n【不完整例及胎生元命反例，L1025–1026】戊子甲寅月乙丑日有前三柱无时，辛未壬辰月以癸未胎有年/月而无日时；只按原信息记录。辛未纳音土受癸未木制用于反驳胎生元命，不把胎干支合当必吉。胎数折寿说不作寿命公式。\n\n【长短胎事例与三百日质疑，L1027–1028】引270日、医家月数及长胎短胎，作者举贫家多月、杜拯与吴渊颖宋濂七月生的自述/传闻，再反问贵人定300日何据。前提出300日与后质疑需同读；不把传闻当现代妊娠资料，也不以贵贱验证受孕日期。",
+      "notes": [
+        "电子语义阅读；排干支公式与多派取象分开，不以取象覆盖现代历法口径。",
+        "两例缺时柱或日时柱，不生成完整四柱复算或实际受孕/寿命预期；所列部分干支仅按原文位置。"
+      ],
+      "source": {
+        "paragraphId": "sanming-tonghui:L1023-L1028",
+        "file": "sources/fulltext/bazi/sanming-tonghui/fulltext.md",
+        "startLine": 1023,
+        "endLine": 1028
+      },
+      "verified": false
+    },
+    {
       "id": "ziping-zhenquan:L0251-L0255",
       "bookSlug": "ziping-zhenquan",
       "name": "五、論十干合而不合·正文命例1",
@@ -220015,5 +220078,5 @@
       "verified": false
     }
   ],
-  "sourceRevision": "51fb52fbff19df89b467ec682a6ea9fd198aa88b"
+  "sourceRevision": "a5fbaf38329604f6d4e7ea99984e84116bf39030"
 }
