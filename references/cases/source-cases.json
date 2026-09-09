@@ -31975,6 +31975,76 @@
       "verified": false
     },
     {
+      "id": "sanming-tonghui:L3447-L3447",
+      "bookSlug": "sanming-tonghui",
+      "name": "原题陈朝议墨池涌泉例",
+      "kind": "source_case",
+      "pillars": [
+        "辛巳",
+        "壬辰",
+        "癸巳",
+        "癸亥"
+      ],
+      "inputBasis": "four-pillars",
+      "scope": [
+        "十神关系",
+        "四柱组合条件"
+      ],
+      "unavailable": [
+        "公历生日",
+        "交节后天数",
+        "出生地与时制",
+        "起运"
+      ],
+      "canRecompute": true,
+      "reading": "墨池涌泉。辛巳见癸巳癸亥，陈朝议辛巳壬辰癸巳癸亥原例以年辛食癸等取法，不全等日癸食神。后丙寅戊寅等为类推配柱，不当同一命例或凭格名判文才。",
+      "notes": [
+        "原文、主ID、verified保持；虚邀不新增实际藏干或官星，姓名官职仅原题，无生日或效验expected。"
+      ],
+      "source": {
+        "paragraphId": "sanming-tonghui:L3447-L3447",
+        "file": "sources/fulltext/bazi/sanming-tonghui/fulltext.md",
+        "startLine": 3447,
+        "endLine": 3447
+      },
+      "verified": false
+    },
+    {
+      "id": "sanming-tonghui:L3451-L3453",
+      "bookSlug": "sanming-tonghui",
+      "name": "原题胡懋功参将专印例",
+      "kind": "source_case",
+      "pillars": [
+        "丁酉",
+        "甲辰",
+        "癸酉",
+        "庚申"
+      ],
+      "inputBasis": "four-pillars",
+      "scope": [
+        "十神关系",
+        "四柱组合条件"
+      ],
+      "unavailable": [
+        "公历生日",
+        "交节后天数",
+        "出生地与时制",
+        "起运"
+      ],
+      "canRecompute": true,
+      "reading": "专印合禄。癸庚申时印禄，原庚戊同宫虚合巳戊官、庚乙爵星、丙戊财三奇为虚取链，不补实际乙丙戊或巳支。原忌戊巳己午及丙克庚寅冲申、喜身印旺运，诗秋冬喜春夏忌与胡懋功丁酉甲辰癸酉庚申辰月例不完全一致，保留来源差异不改月。作者末明虽非食伤分出与食同格并论，不能把庚正印改食神。",
+      "notes": [
+        "原文、主ID、verified保持；虚邀不新增实际藏干或官星，姓名官职仅原题，无生日或效验expected。"
+      ],
+      "source": {
+        "paragraphId": "sanming-tonghui:L3451-L3453",
+        "file": "sources/fulltext/bazi/sanming-tonghui/fulltext.md",
+        "startLine": 3451,
+        "endLine": 3453
+      },
+      "verified": false
+    },
+    {
       "id": "ziping-zhenquan:L0251-L0255",
       "bookSlug": "ziping-zhenquan",
       "name": "五、論十干合而不合·正文命例1",
@@ -226514,5 +226584,5 @@
       "verified": false
     }
   ],
-  "sourceRevision": "2a5690bb791a575bb4a8ceac300d5854ce6d1b5f"
+  "sourceRevision": "acae1aa2fba81880345485868d81862857257d84"
 }
