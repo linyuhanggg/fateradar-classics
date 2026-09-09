@@ -39226,6 +39226,73 @@
       "verified": false
     },
     {
+      "id": "sanming-tonghui:L4447-L4452",
+      "bookSlug": "sanming-tonghui",
+      "name": "四形未备原构型（夘字原留）",
+      "kind": "source_case",
+      "pillars": [
+        "甲子",
+        "庚子",
+        "己夘",
+        "癸夘"
+      ],
+      "inputBasis": "four-pillars",
+      "scope": [],
+      "unavailable": [
+        "公历生日",
+        "交节后天数",
+        "出生地与时制",
+        "起运"
+      ],
+      "canRecompute": false,
+      "reading": "贫贱凶恶历史分类。\n\n【失气分福与建禄食救，L4447–4449】原贫类列空亡死绝福聚分散等，建禄食神可救是原条件，非身份判断。鬼谷配例有五个柱或非法字不强裁成四柱；甲子庚子己夘癸夘四形未备原构型保留异体字不可复算，不改卯。\n\n【旺而战与救神，L4450–4452】凶类包括无气相克也包括全旺互战、空孤重杀；贵三奇华盖夹贵又可解。不是五行越旺越好，也不从比劫神煞或穷困推人格凶恶、犯罪风险；仅文献分组。",
+      "notes": [
+        "疾病、贫富、道德与寿命只记录历史文本，不作现代医学、人物身份或实际死亡预测；原文/ID/verified保持，不生成效验expected。"
+      ],
+      "source": {
+        "paragraphId": "sanming-tonghui:L4447-L4452",
+        "file": "sources/fulltext/bazi/sanming-tonghui/fulltext.md",
+        "startLine": 4447,
+        "endLine": 4452
+      },
+      "verified": false
+    },
+    {
+      "id": "sanming-tonghui:L4456-L4473",
+      "bookSlug": "sanming-tonghui",
+      "name": "原文丙申官杀例（不设寿命预期）",
+      "kind": "source_case",
+      "pillars": [
+        "乙酉",
+        "壬辰",
+        "丙申",
+        "癸巳"
+      ],
+      "inputBasis": "four-pillars",
+      "scope": [
+        "十神关系",
+        "四柱组合条件"
+      ],
+      "unavailable": [
+        "公历生日",
+        "交节后天数",
+        "出生地与时制",
+        "起运"
+      ],
+      "canRecompute": true,
+      "reading": "寿夭多家命理说。\n\n【年龄分段与有救生旺，L4456–4459】原月1–30日31–45时45–100及死绝45/30等具体年龄是历史断法，和他篇分限不同，不用作实际寿命算法。旺中有损反夭、败死有救更寿与起首旺寿绝夭的例外分别保留。\n\n【纳音年月与朝元还生，L4460–4463】癸亥四月丁巳土克水、癸丑三月丙辰木克土、真五行比合纳音朝元等多法，与子平印重均平又不同。仅年干月位不补生日，五虎月序可作文本输入但不能证明寿限因果。\n\n【返魂绝体空亡与建命，L4464–4468】死而复旺返魂、墓体、四大空亡和邻支建命皆原命理术语，不等现实复生或可算死亡；颜回归因未有独立历史因果证据。\n\n【缺字与唯一完整原例，L4469–4471】原兼〔原本无字〕死绝明确缺文，保留不补一个无字使句通；乙酉壬辰丙申癸巳原凶夭例只四柱输入，不记录死亡expected或具体年份，前后生旺印救引句不统一寿命模型。\n\n【鬼门配位与收束，L4472–4473】金火水土木忌各纳音柱及骑马跨牛等诗喻是原鬼门煞类，不转实际旅行禁忌或就医建议；多组仅候选柱不拼四柱病人，干支异体原留。",
+      "notes": [
+        "疾病、贫富、道德与寿命只记录历史文本，不作现代医学、人物身份或实际死亡预测；原文/ID/verified保持，不生成效验expected。"
+      ],
+      "source": {
+        "paragraphId": "sanming-tonghui:L4456-L4473",
+        "file": "sources/fulltext/bazi/sanming-tonghui/fulltext.md",
+        "startLine": 4456,
+        "endLine": 4473
+      },
+      "verified": false
+    },
+    {
       "id": "ziping-zhenquan:L0251-L0255",
       "bookSlug": "ziping-zhenquan",
       "name": "五、論十干合而不合·正文命例1",
@@ -233768,5 +233835,5 @@
       "verified": false
     }
   ],
-  "sourceRevision": "632348bfbf88ec9ac9160d057715e980c8a7e99a"
+  "sourceRevision": "72408659aa95f7154772e3caf1c85e3d44bfd9c1"
 }
