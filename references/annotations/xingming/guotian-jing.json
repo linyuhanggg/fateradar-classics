@@ -2,7 +2,7 @@
   "schemaVersion": "fateradar-annotations-v1",
   "bookSlug": "guotian-jing",
   "sourceFile": "sources/fulltext/xingming/guotian-jing/fulltext.md",
-  "reviewScope": "已逐段阅读卷一入门起例至卷二禄勋阳刃唐符国印（guotian-jing:L0003 至 L0895-L0911）并作语义注解。source-reviewed只指对照电子主文本，不代表影印人工核验。国印表与已落地 GTJ-E-01 一致，本批只归档不改算法。全书其余段落未完。",
+  "reviewScope": "已逐段阅读卷一入门起例至卷四禀赋分金论卷末（guotian-jing:L0003 至 L1873-L1874）并作语义注解。source-reviewed只指对照电子主文本，不代表影印人工核验。国印表与已落地 GTJ-E-01 一致，本批只归档不改算法。其后三块巨型合并段（十一曜定格、谈星奥论、三辰通载）尚未注解。全书未完。",
   "entries": [
     {
       "paragraphId": "guotian-jing:L0003-L0003",
@@ -2482,6 +2482,1805 @@
             "丙戊、丁己合并行，不要拆成冲突表"
           ]
         }
+      ]
+    },
+    {
+      "paragraphId": "guotian-jing:L0913-L0917",
+      "kind": "理论",
+      "vernacular": "天雄即白虎，地雌即丧门。歌：驾前三位与九宫分吉凶，忌临官禄和身命，若再与锋、刃、廉同见则说不善终。本段只给歌诀，起法在下段。",
+      "terms": [
+        "天雄：白虎",
+        "地雌：丧门"
+      ],
+      "notes": [
+        "不善终是原文死亡套语，不转成寿命或横祸预测",
+        "与后文驾前歌「九是白虎即天雄」不是同一宫次，两说并存"
+      ],
+      "review": "source-reviewed",
+      "verified": false,
+      "relatedParagraphIds": [
+        "guotian-jing:L0919-L0919",
+        "guotian-jing:L1082-L1094"
+      ]
+    },
+    {
+      "paragraphId": "guotian-jing:L0919-L0919",
+      "kind": "理论",
+      "vernacular": "起法一：岁驾前三宫为天雄，前九宫为地雌。起法二：地雌的对宫为天雄。又忌见禄主。",
+      "terms": [
+        "岁驾：生年支宫"
+      ],
+      "notes": [
+        "两说不要合成一表",
+        "忌见禄主是附加条件，不是官职应验"
+      ],
+      "review": "source-reviewed",
+      "verified": false,
+      "relatedParagraphIds": [
+        "guotian-jing:L0888-L0893",
+        "guotian-jing:L0913-L0917"
+      ]
+    },
+    {
+      "paragraphId": "guotian-jing:L0921-L0925",
+      "kind": "理论",
+      "vernacular": "年符即年官符，又名五鬼、飞符。取年支顺数第五位，该宫神为官符鬼；若再加阳刃杀，坐命临身则说非横悔。",
+      "terms": [
+        "年符：年支前五位",
+        "五鬼飞符：年符别名"
+      ],
+      "notes": [
+        "非横悔是原文灾咎套语，不转成意外事件",
+        "与月符起法不同"
+      ],
+      "review": "source-reviewed",
+      "verified": false,
+      "relatedParagraphIds": [
+        "guotian-jing:L0933-L0933"
+      ]
+    },
+    {
+      "paragraphId": "guotian-jing:L0927-L0931",
+      "kind": "理论",
+      "vernacular": "月符即月官符：从午起顺数，数到生月所在宫。临之则说多争斗。",
+      "terms": [
+        "月符：正月起午数到生月"
+      ],
+      "notes": [
+        "争斗不转成诉讼或人际冲突预测"
+      ],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "guotian-jing:L0933-L0933",
+      "kind": "理论",
+      "vernacular": "年符：岁驾前五位，又名飞符、年符、五鬼。月符：正月起午，数至生月。二者都怕临身命、限途。",
+      "terms": [],
+      "notes": [
+        "限途是大限小限经过之宫，不是第五出生柱",
+        "与驾前歌第五位官符五鬼飞符一致"
+      ],
+      "review": "source-reviewed",
+      "verified": false,
+      "relatedParagraphIds": [
+        "guotian-jing:L0921-L0925",
+        "guotian-jing:L0927-L0931",
+        "guotian-jing:L1082-L1094"
+      ]
+    },
+    {
+      "paragraphId": "guotian-jing:L0935-L0939",
+      "kind": "理论",
+      "vernacular": "大耗小耗：驾前六、七位相连。身命田财都值此，则说纵然发达也破家筵。",
+      "terms": [
+        "小耗、大耗：岁驾前六位与七位"
+      ],
+      "notes": [
+        "破家筵、发达是原文贫富套语，不转成破产或致富"
+      ],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "guotian-jing:L0941-L0941",
+      "kind": "理论",
+      "vernacular": "太岁第六位为小耗，第七宫为大耗。怕在身命、田财宫，或身命田财之主遇到它们。",
+      "terms": [],
+      "notes": [
+        "宫位遇耗与用星遇耗要分开看",
+        "与驾前歌第六小耗、第七大耗一致"
+      ],
+      "review": "source-reviewed",
+      "verified": false,
+      "relatedParagraphIds": [
+        "guotian-jing:L0935-L0939",
+        "guotian-jing:L1082-L1094"
+      ]
+    },
+    {
+      "paragraphId": "guotian-jing:L0943-L0947",
+      "kind": "理论",
+      "vernacular": "天耗按月：正七在子寅，三九四十在辰午，五十一在申，并提到丑未戌。歌末说必主雷轰虎咬亡——这是原文死法套语。",
+      "terms": [
+        "天耗：按生月所起的耗杀"
+      ],
+      "notes": [
+        "雷轰虎咬亡不转成死因判断",
+        "月份与地支对应以紧接着的凡例为准"
+      ],
+      "review": "source-reviewed",
+      "verified": false,
+      "relatedParagraphIds": [
+        "guotian-jing:L0620-L0624"
+      ]
+    },
+    {
+      "paragraphId": "guotian-jing:L0949-L0949",
+      "kind": "理论",
+      "vernacular": "正七月在子、二八月在寅，名为天耗，又谓之雷霆杀。本句只落实正七、二八，其余月份见上段歌。",
+      "terms": [
+        "雷霆杀：天耗别名"
+      ],
+      "notes": [
+        "此天耗按月起，与年干变曜天耗不是同一取法"
+      ],
+      "review": "source-reviewed",
+      "verified": false,
+      "relatedParagraphIds": [
+        "guotian-jing:L0943-L0947",
+        "guotian-jing:L0620-L0624"
+      ]
+    },
+    {
+      "paragraphId": "guotian-jing:L0951-L0955",
+      "kind": "理论",
+      "vernacular": "地耗按月：正七二八酉亥，三九四十丑卯，五十一巳，六十二丑未。",
+      "terms": [
+        "地耗：按生月所起的另一耗杀"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "guotian-jing:L0957-L0957",
+      "kind": "理论",
+      "vernacular": "正七月在酉、二八月在亥名为地耗。此二耗与前面大耗小耗同断。",
+      "terms": [],
+      "notes": [
+        "同前耗断之，不另造吉凶等级",
+        "按月天耗地耗与岁驾大小耗是三套"
+      ],
+      "review": "source-reviewed",
+      "verified": false,
+      "relatedParagraphIds": [
+        "guotian-jing:L0951-L0955",
+        "guotian-jing:L0941-L0941"
+      ]
+    },
+    {
+      "paragraphId": "guotian-jing:L0959-L0963",
+      "kind": "理论",
+      "vernacular": "月廉：正月起申，顺数到本生月。此星来克命，则说横夭不须评。",
+      "terms": [
+        "月廉：正月起申数到生月"
+      ],
+      "notes": [
+        "横夭不转成夭折预测"
+      ],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "guotian-jing:L0965-L0965",
+      "kind": "理论",
+      "vernacular": "月廉星人罕用：月廉宫较轻，月廉主起而克命限则说其凶莫解。例：正月生廉在申，以水为廉主。",
+      "terms": [],
+      "notes": [
+        "宫轻、主重，不能只看落宫",
+        "正月申水只是示例，不收案例",
+        "其凶莫解是原文套语，不转成不可挽救的灾祸"
+      ],
+      "review": "source-reviewed",
+      "verified": false,
+      "relatedParagraphIds": [
+        "guotian-jing:L0959-L0963"
+      ]
+    },
+    {
+      "paragraphId": "guotian-jing:L0967-L0973",
+      "kind": "理论",
+      "vernacular": "月煞与月廉同断。按月：正戌、二巳、三午、四未、五寅、六卯、七辰、八亥、九子、十丑、十一申、十二酉。犯此杀说最为刑。",
+      "terms": [
+        "月煞：按生月固定落宫的煞"
+      ],
+      "notes": [
+        "最为刑不转成刑罚",
+        "歌中「正戌二巳七居辰」把七月插在前半句，按后文月份顺序读"
+      ],
+      "review": "source-reviewed",
+      "verified": false,
+      "relatedParagraphIds": [
+        "guotian-jing:L0959-L0963"
+      ]
+    },
+    {
+      "paragraphId": "guotian-jing:L0975-L0982",
+      "kind": "理论",
+      "vernacular": "值难按生月取一颗星：正二太阳，三四月（太阴），五六火罗，七八水孛，九十木气，十一十二金星。正二月生人以太阳为值难，忌再与他煞同见。",
+      "terms": [
+        "值难：当月所值的凶曜"
+      ],
+      "notes": [
+        "「三四月」未写出太阴二字，按对仗与十一曜习惯理解，不改原文",
+        "神仙口诀是套语，不是来源认证"
+      ],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "guotian-jing:L0984-L0994",
+      "kind": "理论",
+      "vernacular": "的杀即破碎：子午卯酉为蛇头问口，寅申巳亥鸡头粉碎，辰戌丑未牛头大忌。歌说人命逢之破财如汤浇雪；行年运限再临则说官事连绵。",
+      "terms": [
+        "的杀：破碎杀",
+        "蛇头、鸡头、牛头：三类支的破碎形象"
+      ],
+      "notes": [
+        "破财、官事是原文词讼财耗套语，不转成诉讼或财务预测",
+        "行年运限不是出生柱"
+      ],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "guotian-jing:L0996-L1000",
+      "kind": "理论",
+      "vernacular": "咸池：申子辰在酉（鸡），寅午戌在卯（兔），巳酉丑在午（马），亥卯未在子（鼠）。",
+      "terms": [
+        "咸池：三合见沐浴之支",
+        "桃花：后文别名"
+      ],
+      "notes": [
+        "「乱人伦」「茅里出」是原文情色套语，不转成性或婚姻判断"
+      ],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "guotian-jing:L1002-L1002",
+      "kind": "理论",
+      "vernacular": "身命坐咸池，或咸池星入身命，再会金、水、孛：男为痨瘵，女为风尘，又名桃花。",
+      "terms": [],
+      "notes": [
+        "痨瘵、风尘是疾病与女命历史分类，不转成对现实用户的疾病、性或职业判断",
+        "必须金水孛同会才用这条，不能单见咸池就套用"
+      ],
+      "review": "source-reviewed",
+      "verified": false,
+      "relatedParagraphIds": [
+        "guotian-jing:L0996-L1000"
+      ]
+    },
+    {
+      "paragraphId": "guotian-jing:L1004-L1011",
+      "kind": "理论",
+      "vernacular": "大煞即飞廉，按年支：子猴、丑鸡、寅犬、卯蛇、辰午、巳未、午虎、未兔、申龙、酉猪、戌鼠、亥牛。身命限度俱忌，为祸尤速。",
+      "terms": [
+        "大煞：飞廉",
+        "飞廉：大煞别名"
+      ],
+      "notes": [
+        "为祸尤速不转成灾祸预测",
+        "限度指大限小限经过，不是出生柱"
+      ],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "guotian-jing:L1013-L1019",
+      "kind": "理论",
+      "vernacular": "空亡按旬：甲子旬戌亥，甲戌申酉，甲申午未，甲午辰巳，甲辰寅卯，甲寅子丑。",
+      "terms": [
+        "空亡：旬空的两支"
+      ],
+      "notes": [
+        "这是年旬空亡，后文还分阴阳年空与亡"
+      ],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "guotian-jing:L1021-L1021",
+      "kind": "理论",
+      "vernacular": "阳年空阳宫、阴年空阴位；阳年为空，阴年为亡。",
+      "terms": [],
+      "notes": [
+        "空与亡按年阴阳拆开，不能把旬中两支同等看待"
+      ],
+      "review": "source-reviewed",
+      "verified": false,
+      "relatedParagraphIds": [
+        "guotian-jing:L1013-L1019"
+      ]
+    },
+    {
+      "paragraphId": "guotian-jing:L1023-L1027",
+      "kind": "理论",
+      "vernacular": "孤虚口诀讲空的五行后果：金空则鸣、火空发、水空流、木空折、土空崩；又说昼喜日空、夜宜月空。",
+      "terms": [
+        "孤虚：空亡对宫"
+      ],
+      "notes": [
+        "金鸣火发在这里是空的性质，不是一律作吉",
+        "昼日空、夜月空是附加取用，不是取消旬空"
+      ],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "guotian-jing:L1029-L1029",
+      "kind": "理论",
+      "vernacular": "空亡的对宫即孤虚。如甲子旬空戌亥，对宫为孤虚；阳为孤、阴为虚。本文称为秘法。",
+      "terms": [],
+      "notes": [
+        "对宫取孤虚，不能把空亡宫本身叫孤虚",
+        "阳孤阴虚与阳空阴亡是两层"
+      ],
+      "review": "source-reviewed",
+      "verified": false,
+      "relatedParagraphIds": [
+        "guotian-jing:L1023-L1027",
+        "guotian-jing:L1013-L1019"
+      ]
+    },
+    {
+      "paragraphId": "guotian-jing:L1031-L1035",
+      "kind": "理论",
+      "vernacular": "孤辰：寅卯辰人怕己丑，巳午未畏申辰，申酉戌嫌亥未，亥子丑嗔寅戌。",
+      "terms": [
+        "孤辰：三合前一支对后一季"
+      ],
+      "notes": [
+        "「怕己丑」原文作己，不改巳；与通行孤辰表对照时保留疑文"
+      ],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "guotian-jing:L1037-L1042",
+      "kind": "理论",
+      "vernacular": "寡宿与孤辰对举：孤辰说男妨妇，寡宿说女害夫，并及兄弟离别、骨肉不同居。男怕孤辰、女怕寡宿；身命坐、夫妻宫犯、男女宫守，主鳏寡孤独。",
+      "terms": [
+        "寡宿：与孤辰成对的另一支"
+      ],
+      "notes": [
+        "妨妇、害夫、鳏寡、骨肉离别是婚姻亲属历史分类，不转成对现实用户的婚姻、生育或家庭判断",
+        "本段未列出寡宿十二支，不能按别书补表后冒称本书已给出"
+      ],
+      "review": "source-reviewed",
+      "verified": false,
+      "relatedParagraphIds": [
+        "guotian-jing:L1031-L1035"
+      ]
+    },
+    {
+      "paragraphId": "guotian-jing:L1044-L1048",
+      "kind": "理论",
+      "vernacular": "三刑：寅刑巳、巳刑申；丑戌相刑未与辰；子刑卯、卯刑子；辰午酉亥自刑。",
+      "terms": [
+        "三刑：寅巳申、丑戌未、子卯、辰午酉亥自刑"
+      ],
+      "notes": [
+        "「丑戌相刑未与辰」把丑戌未辰写在一句，不拆改"
+      ],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "guotian-jing:L1050-L1054",
+      "kind": "理论",
+      "vernacular": "六害：子未、丑午、寅巳、卯辰、申亥、酉戌。",
+      "terms": [
+        "六害：十二支六对相害"
+      ],
+      "notes": [
+        "「大少情」保持原句"
+      ],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "guotian-jing:L1056-L1056",
+      "kind": "理论",
+      "vernacular": "三刑六害说主残伤、不测官灾、妻子克破、为官死他乡。二煞在身命、夫妻、子宫和行限都怕逢。",
+      "terms": [],
+      "notes": [
+        "残伤、官灾、克妻、死他乡是刑伤官职婚姻死亡历史分类，不转成对现实用户的判断",
+        "行限不是出生柱"
+      ],
+      "review": "source-reviewed",
+      "verified": false,
+      "relatedParagraphIds": [
+        "guotian-jing:L1044-L1048",
+        "guotian-jing:L1050-L1054"
+      ]
+    },
+    {
+      "paragraphId": "guotian-jing:L1058-L1062",
+      "kind": "理论",
+      "vernacular": "劫杀亦名天官符；劫杀前一位灾杀、第二位天杀，总称三杀。三合起法：申子辰见巳，寅午戌见亥，巳酉丑见寅，亥卯未见申。",
+      "terms": [
+        "劫杀：三合见驿马前一位的对冲支",
+        "三杀：劫杀、灾杀、天杀"
+      ],
+      "notes": [
+        "天官符是劫杀别名，与年符官符不是同一宫",
+        "前一位、第二位的具体支未在本段列出，不补"
+      ],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "guotian-jing:L1064-L1068",
+      "kind": "理论",
+      "vernacular": "亡神：申子辰见亥，寅午戌见巳，巳酉丑见申，亥卯未见寅。",
+      "terms": [
+        "亡神：与劫杀相对的那一支"
+      ],
+      "notes": [
+        "「动纸笔」是原文词讼套语，不转成文书诉讼"
+      ],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "guotian-jing:L1070-L1070",
+      "kind": "理论",
+      "vernacular": "亡神与劫杀相对，吉凶同断。",
+      "terms": [],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false,
+      "relatedParagraphIds": [
+        "guotian-jing:L1058-L1062",
+        "guotian-jing:L1064-L1068"
+      ]
+    },
+    {
+      "paragraphId": "guotian-jing:L1072-L1075",
+      "kind": "理论",
+      "vernacular": "天罗地网：辰为天罗忌乙生人，戌为地网怕辛生人。经云辰戌为恶弱之地、天乙不临；又云乙辛生人切莫遇之。",
+      "terms": [
+        "天罗：辰",
+        "地网：戌"
+      ],
+      "notes": [
+        "只特标乙、辛，不能把所有干遇辰戌都写成天罗地网",
+        "天乙不临是贵人不入辰戌，不是官职"
+      ],
+      "review": "source-reviewed",
+      "verified": false,
+      "relatedParagraphIds": [
+        "guotian-jing:L0852-L0857"
+      ]
+    },
+    {
+      "paragraphId": "guotian-jing:L1077-L1080",
+      "kind": "理论",
+      "vernacular": "反吟为太岁宫，伏吟为岁破宫。经云反吟伏吟悲哭淋淋；又云反吟相见是绝灭，伏吟相见泪淋淋。",
+      "terms": [
+        "反吟：太岁宫",
+        "伏吟：岁破宫"
+      ],
+      "notes": [
+        "悲哭、绝灭是原文凶象套语，不转成死亡或哭丧事件",
+        "太岁宫即岁驾，岁破是其对宫"
+      ],
+      "review": "source-reviewed",
+      "verified": false,
+      "relatedParagraphIds": [
+        "guotian-jing:L0888-L0893"
+      ]
+    },
+    {
+      "paragraphId": "guotian-jing:L1082-L1094",
+      "kind": "理论",
+      "vernacular": "驾前神杀歌按年支顺数十二位：一岁驾上剑锋、伏尸；二天空；三丧门、地雌、孝服；四贯索、勾神；五官符、五鬼、飞符；六死符、小耗、月德；七岁破、大耗、阑干；八暴败、天厄；九白虎即天雄、天德、绞杀、卷舌；十（承接九句）天德绞杀卷舌；十一吊客、天狗；十二病符、蓦越。",
+      "terms": [
+        "驾前神杀：从岁驾顺数的十二位神煞"
+      ],
+      "notes": [
+        "歌中九是白虎即天雄，与 L0919「驾前三位为天雄」并存，不删任一说",
+        "月德、天德夹在凶煞口诀里，不能因此把六、九位改算成吉神专宫",
+        "孝服、缧绁类名是丧葬刑狱历史分类，不转成事件"
+      ],
+      "review": "source-reviewed",
+      "verified": false,
+      "relatedParagraphIds": [
+        "guotian-jing:L0919-L0919",
+        "guotian-jing:L0933-L0933",
+        "guotian-jing:L0941-L0941"
+      ]
+    },
+    {
+      "paragraphId": "guotian-jing:L1096-L1104",
+      "kind": "理论",
+      "vernacular": "驾后神煞歌按年逆数。子年：红鸾从卯起，天喜在对宫酉，血刃、浮沉、解神，戌上牢掣肘，天哭午，披头辰。流年诸杀逆认地支轮宫守。",
+      "terms": [
+        "驾后神煞：从年支逆数的红鸾天喜等",
+        "红鸾、天喜：子年卯酉对宫"
+      ],
+      "notes": [
+        "只详写子年示例，其余年支要逆轮，不能把卯酉固定为所有年的红鸾天喜",
+        "血刃、牢狱套语不转成伤害或监禁",
+        "流年诸杀不是出生柱"
+      ],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "guotian-jing:L1106-L1126",
+      "kind": "理论",
+      "vernacular": "羊刃详解按年干横取，分阴刃、阳刃、飞刃、刃宫、刃星、刃度六层。阳年（甲丙戊庚壬）昼忌阳刃，阴年（乙丁己辛癸）夜忌阴刃。另有自刃年壬子癸丑丙午丁未戊午己未，飞刃年壬午癸未丙子丁丑戊子己丑。倒限遇太岁：有杀刃则说必伤，无杀刃纵凶不死。",
+      "terms": [
+        "刃宫、刃星、刃度：羊刃的宫、星、宿度三层",
+        "自刃年、飞刃年：年柱干支本身成刃的年份"
+      ],
+      "notes": [
+        "必伤、不死是原文死伤套语，不转成人身伤害",
+        "倒限、太岁不是出生柱",
+        "甲年卯为刃宫、火为刃星、四火刃度只是示例，不收案例",
+        "与禄前一位刃表配套，本段补昼夜与星度，不另起冲突表"
+      ],
+      "review": "source-reviewed",
+      "verified": false,
+      "relatedParagraphIds": [
+        "guotian-jing:L0895-L0911"
+      ],
+      "subsections": [
+        {
+          "id": "guotian-jing:L1106-L1126:yang-blade",
+          "title": "阳干阳刃飞刃",
+          "startLine": 1106,
+          "endLine": 1113,
+          "vernacular": "甲卯刃宫、火刃星、四火刃度，飞刃在酉、金、四金度；丙戊午、日、四日度，飞刃子、土、四土度；庚酉、金、四金度，飞刃卯、火、四火度；壬子、土、四土度，飞刃午、日、四日度。阳刃忌昼。",
+          "terms": [
+            "阳刃忌昼"
+          ],
+          "notes": [
+            "表是按年横排，不要按列误读成甲丙同宫"
+          ]
+        },
+        {
+          "id": "guotian-jing:L1106-L1126:yin-blade",
+          "title": "阴干阴刃飞刃",
+          "startLine": 1114,
+          "endLine": 1120,
+          "vernacular": "乙辰、金、四金度，飞刃戌、火、四火度；丁己未、月、四月度，飞刃丑、土、四土度；辛戌、火、四火度，飞刃辰、金、四金度；癸丑、土、四土度，飞刃未、月、四月度。阴刃忌夜。",
+          "terms": [
+            "阴刃忌夜"
+          ],
+          "notes": [
+            "阴刃宫是阳刃前一位，与禄前阴刃表一致"
+          ]
+        },
+        {
+          "id": "guotian-jing:L1106-L1126:year-and-six",
+          "title": "自刃飞刃年与六论",
+          "startLine": 1121,
+          "endLine": 1126,
+          "vernacular": "列出自刃年、飞刃年，并总结六层：阴刃、阳刃、飞刃、刃宫、刃星、刃度。有杀刃遇太岁说必伤，无则纵凶不死。",
+          "terms": [],
+          "notes": [
+            "壬子等是年柱举例，不是人名四柱案例"
+          ]
+        }
+      ]
+    },
+    {
+      "paragraphId": "guotian-jing:L1128-L1138",
+      "kind": "理论",
+      "vernacular": "马前诸杀按年支驿马起，顺排：驿马、六害、华盖、劫杀、灾杀、天杀、地杀、年杀、月杀、亡神、将星、扳鞍。申子辰马寅，寅午戌马申，巳酉丑马亥，亥卯未马巳，再按表顺数十二支。",
+      "terms": [
+        "马前诸杀：从驿马起的十二位",
+        "将星、华盖、六害：马前序列中的名目"
+      ],
+      "notes": [
+        "表头「驿六华劫灾天地年月亡将扳 / 马害盖杀杀杀杀杀杀神星鞍」是两行拆字，按十二名读",
+        "与劫杀三合起法同宫者应对上，不另造第三套劫杀"
+      ],
+      "review": "source-reviewed",
+      "verified": false,
+      "relatedParagraphIds": [
+        "guotian-jing:L1058-L1062"
+      ]
+    },
+    {
+      "paragraphId": "guotian-jing:L1140-L1150",
+      "kind": "理论",
+      "vernacular": "五行长生按生年纳音：木亥起，火寅起，土水申起，金巳起，以下败冠官旺衰病死墓绝胎养。生即长生，败即沐浴，冠即冠带，官即临官，帝即帝旺。",
+      "terms": [
+        "长生十二宫：长生沐浴冠带临官帝旺衰病死墓绝胎养"
+      ],
+      "notes": [
+        "土水同行申起，不能把土改成随四季或火墓",
+        "取生年纳音，不是日干长生"
+      ],
+      "review": "source-reviewed",
+      "verified": false,
+      "relatedParagraphIds": [
+        "guotian-jing:L0145-L0207"
+      ]
+    },
+    {
+      "paragraphId": "guotian-jing:L1152-L1175",
+      "kind": "理论",
+      "vernacular": "天干化曜星例按年干横取，先重复禄暗福耗荫贵刑印囚权十变曜，再列出天官、生官、伤官、禄元、马元、仁元、寿元，最后用六十甲子纳音给寿元/仁元所依的金火木土水。马元取驿马宫主，又曰贵元。",
+      "terms": [
+        "天干化曜星例：年干横表",
+        "禄元、马元、仁元、寿元：后增的干化名目"
+      ],
+      "notes": [
+        "前十行与卷二变曜同序，用来对照而不是新表",
+        "天官行与前面官星表同序，生官、伤官是本表新增",
+        "禄元行「木火水日水日水金木土」保持原字，不按五行改顺",
+        "寿元行未填十一曜，只用后面纳音"
+      ],
+      "review": "source-reviewed",
+      "verified": false,
+      "relatedParagraphIds": [
+        "guotian-jing:L0568-L0574"
+      ],
+      "subsections": [
+        {
+          "id": "guotian-jing:L1152-L1175:bianyao",
+          "title": "十变曜横表",
+          "startLine": 1152,
+          "endLine": 1163,
+          "vernacular": "甲至癸对应火孛木金土月水气计罗及其轮转，职名仍是禄暗福耗荫贵刑印囚权。",
+          "terms": [],
+          "notes": [
+            "与 L0568 一致，作为总表重出"
+          ]
+        },
+        {
+          "id": "guotian-jing:L1152-L1175:extra",
+          "title": "天官至寿元",
+          "startLine": 1164,
+          "endLine": 1170,
+          "vernacular": "天官、生官、伤官给出十一曜序；禄元给出十个字；马元不填星而指向驿马宫主；仁元按年干五行木火土金水各两位；寿元有名无星行。",
+          "terms": [
+            "伤官：本表主坏名的干化星"
+          ],
+          "notes": [
+            "伤官、坏名不转成名誉事件",
+            "马元又曰贵元，不要拆成两星"
+          ]
+        },
+        {
+          "id": "guotian-jing:L1152-L1175:nayin",
+          "title": "六十甲子纳音",
+          "startLine": 1171,
+          "endLine": 1175,
+          "vernacular": "重录金火木土水纳音，供仁元、寿元按年柱纳音取用。",
+          "terms": [],
+          "notes": [
+            "与入门六甲纳音相同，不另造第五柱"
+          ]
+        }
+      ]
+    },
+    {
+      "paragraphId": "guotian-jing:L1177-L1196",
+      "kind": "理论",
+      "vernacular": "天干吉凶星例把前面分散的文魁官印催官禄神喜神科名，以及禄勋阳刃飞刃唐符国印、天乙玉堂文昌天厨，收成一张年干横表。科甲不填星，而取命宫对宫宫主，即妻星。唐符即飞刃：会凶以飞刃断，会吉以唐符论。国印十支为戌亥丑寅丑寅辰巳未申，与禄前九位及 GTJ-E-01 一致。",
+      "terms": [
+        "天干吉凶星例：年干总表",
+        "唐符即飞刃：同一禄前八位的吉凶两称"
+      ],
+      "notes": [
+        "主能文、夺魁、官职、掌印、登第是原文仕宦套语，不转成学历或职官",
+        "国印只归档，不改已落地算法",
+        "天乙行「未申酉亥丑子丑寅卯巳」与 L0852 昼贵人一致",
+        "玉堂行与 L0859 夜贵人对照，不改字"
+      ],
+      "review": "source-reviewed",
+      "verified": false,
+      "relatedParagraphIds": [
+        "guotian-jing:L0895-L0911",
+        "guotian-jing:L0852-L0857",
+        "guotian-jing:L0859-L0864"
+      ],
+      "subsections": [
+        {
+          "id": "guotian-jing:L1177-L1196:wen-ke",
+          "title": "文魁官印催禄喜科名科甲",
+          "startLine": 1177,
+          "endLine": 1187,
+          "vernacular": "文星魁星官星印星催官禄神喜神科名按年干填十一曜或五行；科甲改为对宫宫主。",
+          "terms": [],
+          "notes": [
+            "科甲即妻星是宫主对应，不转成婚姻"
+          ]
+        },
+        {
+          "id": "guotian-jing:L1177-L1196:lu-yin",
+          "title": "禄勋刃符印贵人文昌天厨",
+          "startLine": 1188,
+          "endLine": 1196,
+          "vernacular": "禄勋列出十干禄支，阳刃飞刃唐符国印列出对应支，天乙玉堂文昌天厨列出贵人与食神禄支。唐符与飞刃同宫而分吉凶称呼。",
+          "terms": [],
+          "notes": [
+            "阳刃主横祸不转成事故",
+            "国印主掌印不转成职权"
+          ]
+        }
+      ]
+    },
+    {
+      "paragraphId": "guotian-jing:L1198-L1221",
+      "kind": "理论",
+      "vernacular": "地支吉凶星例一按年支横取。前半给出爵星、天马、地驿及血支、血忌、产星的十一曜或五行，岁殿仍用岁驾起甲数到年干，岁驾与太岁即十二支本身。后半开始驾前序列：天空、丧门、贯索、五鬼等只写出落宫轮转，剑锋、伏尸、地雌、地丧、地？、勾神、官符、飞符、年符有的有宫、有的只注「同前断」。",
+      "terms": [
+        "地支吉凶星例：年支横表",
+        "血支、血忌、产星：年支相关的血光产难名目"
+      ],
+      "notes": [
+        "血光、血毒、产难、丧服、缧绁、词讼是疾病生育丧葬刑狱历史分类，不转成对现实用户的判断",
+        "「地？」缺字不补",
+        "爵星行土水木气孛木水火火金金水，与 L0743 子申土、亥未火等应对，有出入则两表并存",
+        "天马地驿此表按年支填星，与五虎遁果老法不是同一列"
+      ],
+      "review": "source-reviewed",
+      "verified": false,
+      "relatedParagraphIds": [
+        "guotian-jing:L0743-L0747",
+        "guotian-jing:L0803-L0811",
+        "guotian-jing:L1082-L1094"
+      ],
+      "subsections": [
+        {
+          "id": "guotian-jing:L1198-L1221:jue-sui",
+          "title": "爵星至太岁",
+          "startLine": 1198,
+          "endLine": 1208,
+          "vernacular": "爵星、天马、地驿、血支、血忌、产星按年支填星；岁殿用起甲法；岁驾、太岁即年支本宫。",
+          "terms": [],
+          "notes": [
+            "调升、迁除、爵尊不转成职级"
+          ]
+        },
+        {
+          "id": "guotian-jing:L1198-L1221:jiaqian",
+          "title": "剑锋至年符",
+          "startLine": 1209,
+          "endLine": 1221,
+          "vernacular": "从剑锋、伏尸起接驾前诸杀。天空丑起、丧门寅起、贯索卯起、五鬼辰起，各顺轮十二支；其余同前断。地？缺字。",
+          "terms": [],
+          "notes": [
+            "怕迭刃、怕逢凶是原文忌例，不转成灾祸"
+          ]
+        }
+      ]
+    },
+    {
+      "paragraphId": "guotian-jing:L1223-L1240",
+      "kind": "理论",
+      "vernacular": "地支吉凶星例二接驾前序列，按年支横排：月德从巳起、岁破从午起、暴败从未起、白虎/天雄从申起、天德/卷舌/绞杀从酉起、天狗/吊客从戌起、病符蓦越从亥起。死符、小耗与月德同宫，大耗、阑干与岁破同宫，天厄与暴败同宫，天雄与白虎同宫。月德主化凶，天德能化煞；其余标身命、田财、命限、子宫、吊孝、疾病等忌口。",
+      "terms": [
+        "月德、天德：夹在驾前序列里能化煞的两位",
+        "病符、蓦越：驾前末位"
+      ],
+      "notes": [
+        "子年白虎在申，即驾前第九，与驾前歌「九是白虎即天雄」一致，与 L0919 前三天雄并存",
+        "吊孝、疾病是丧病历史分类，不转成事件",
+        "命限不是出生柱"
+      ],
+      "review": "source-reviewed",
+      "verified": false,
+      "relatedParagraphIds": [
+        "guotian-jing:L1082-L1094",
+        "guotian-jing:L1198-L1221"
+      ]
+    },
+    {
+      "paragraphId": "guotian-jing:L1242-L1259",
+      "kind": "理论",
+      "vernacular": "地支吉凶星例三把前面的杀、咸池、大杀、孤寡、三刑六害、劫杀亡神收成年支横表，并展开空亡、孤虚。的杀/破碎按巳丑酉循环；咸池/桃花按酉午卯子循环；大杀/飞廉按申酉戌巳午未寅卯辰亥子丑；孤辰寅寅巳巳巳申申申亥亥亥寅，寡宿戌戌丑丑丑辰辰辰未未未戌。空亡以下改按六十甲子列空支，不再只按年支一格。",
+      "terms": [
+        "的杀即破碎",
+        "孤虚：空亡对宫"
+      ],
+      "notes": [
+        "破败、色欲、淫泆、横祸、孤克、寡居、刑伤、危亡是原文套语，不转成性、婚姻、灾祸或死亡判断",
+        "孤辰表是亥子丑寅、寅卯辰巳、巳午未申、申酉戌亥；与 L1031「寅卯辰人怕己丑」不是同一写法，两说并存，己字不改",
+        "空亡四行按干支给空支，不能压成十二支一列"
+      ],
+      "review": "source-reviewed",
+      "verified": false,
+      "relatedParagraphIds": [
+        "guotian-jing:L0984-L0994",
+        "guotian-jing:L0996-L1000",
+        "guotian-jing:L1004-L1011",
+        "guotian-jing:L1031-L1035",
+        "guotian-jing:L1013-L1019"
+      ]
+    },
+    {
+      "paragraphId": "guotian-jing:L1261-L1276",
+      "kind": "理论",
+      "vernacular": "地支吉凶星例四：红鸾从卯逆排、天喜从酉逆排，血刃、浮沉、天解同从戌逆排；地解未未申申酉酉戌戌亥亥午午；天哭午起但午后插寅；披头从辰逆排；黄旛辰丑未戌循环，豹尾戌未辰丑循环。擎天、游奕改按六十甲子隔节布十宫，起子终卯，丑寅与未申不入；擎天属火、游奕属水，游奕为擎天对宫。男怕擎天、女怕游奕。表头年支写作辰己午，己字不改巳。",
+      "terms": [
+        "红鸾、天喜：驾后喜神",
+        "擎天、游奕：六十甲子隔节神煞"
+      ],
+      "notes": [
+        "血光、没溺、哭泣、孝服、刑克是疾病丧葬伤害历史分类，不转成对现实用户的判断",
+        "「辰己午」与后文地耗「己未」均作己，不补成巳",
+        "天哭行「午巳辰卯寅丑子寅戌酉申未」第二处寅保持原字",
+        "只详子年红鸾在卯，与 L1096 一致，其余年逆轮"
+      ],
+      "review": "source-reviewed",
+      "verified": false,
+      "relatedParagraphIds": [
+        "guotian-jing:L1096-L1104"
+      ]
+    },
+    {
+      "paragraphId": "guotian-jing:L1278-L1285",
+      "kind": "理论",
+      "vernacular": "五行四时例：春木火水金土，夏火土木水金，四季土金火木水，秋金水土火木，冬水木金土火，对应旺相休囚死。当时者旺、我生者相、生我者休、克我者囚、我克者死。观星要按时令看盛衰，不能离四时只凭星名。",
+      "terms": [
+        "旺相休囚死：四时五行气势"
+      ],
+      "notes": [
+        "福厚祸深是称量语气，不转成祸福等级"
+      ],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "guotian-jing:L1287-L1298",
+      "kind": "理论",
+      "vernacular": "卷三诸吉星捷法用五虎遁：年干从寅起甲丙戊庚壬。天元禄以虎顺命何干化禄，地元禄以卦逆命何干属某，人元禄以虎顺官何干受克；天经以虎顺命何干属某，地纬以命宫支神所属；天马以虎顺官何干禄支，地驿以官马支神所属；职元以卦顺命何干化禄，局元以职干合何干化禄。假如甲子年即甲己之年丙作首，从丙寅起。",
+      "terms": [
+        "五虎遁：年干从寅起甲丙戊庚壬",
+        "天元禄、地元禄、人元禄：捷法三禄",
+        "职元、局元：捷法职局"
+      ],
+      "notes": [
+        "此天马地驿是五虎遁捷法，与果老本法 L0803 及年支填星 L1198 不是同一列",
+        "卦逆、卦顺指十二支卦气盘，不与年干卦气、天禄卦气混成一套",
+        "甲子年丙寅只是起例，不收案例"
+      ],
+      "review": "source-reviewed",
+      "verified": false,
+      "relatedParagraphIds": [
+        "guotian-jing:L0751-L0755",
+        "guotian-jing:L0803-L0811",
+        "guotian-jing:L1198-L1221"
+      ]
+    },
+    {
+      "paragraphId": "guotian-jing:L1300-L1311",
+      "kind": "理论",
+      "vernacular": "月建吉凶星例按生月：月廉申起、月杀戌巳午未寅卯辰亥子丑申酉、天耗子寅辰午申戌循环、地耗酉亥丑卯己未循环、月符午起、值难日日月月火罗水孛木气金金。另有注受、斗标、卦气。斗标：以戌时加月建宫，顺数到生时；本文称北斗之柄，术家多不知取用。卦气：以卦逆，昼取日禄宫、夜取月禄宫。",
+      "terms": [
+        "斗标：戌时加月建顺数生时",
+        "注受：按月所列化凶位"
+      ],
+      "notes": [
+        "地耗「己未」作己，不改巳",
+        "帝王尊严、为人尊重是原文贵格套语，不转成身份",
+        "此卦气按月、分昼夜禄宫，与年干卦气、天禄卦气分开",
+        "值难与 L0975 一致"
+      ],
+      "review": "source-reviewed",
+      "verified": false,
+      "relatedParagraphIds": [
+        "guotian-jing:L0959-L0963",
+        "guotian-jing:L0967-L0973",
+        "guotian-jing:L0975-L0982",
+        "guotian-jing:L0759-L0763",
+        "guotian-jing:L0828-L0832",
+        "guotian-jing:L0836-L0841"
+      ]
+    },
+    {
+      "paragraphId": "guotian-jing:L1313-L1319",
+      "kind": "理论",
+      "vernacular": "定行限度法给出各宫管年与每年行度：相貌十年、一年三度；宫禄十五年、一年二度；福德妻妾各十一年；迁移八年；疾厄七年；奴仆男女田宅各四年半；兄弟财帛各五年。并换算到几个月行一度。百秒为一分、百分为一度。",
+      "terms": [
+        "行限：按宫分配年数并按度推进"
+      ],
+      "notes": [
+        "行限不是第五、第六出生柱",
+        "妻妾、奴仆是宫名历史分类，不转成婚姻或社会身份",
+        "四年半、七十二分七秒等数字保持原文，不改成现代历法"
+      ],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "guotian-jing:L1321-L1321",
+      "kind": "评注或元数据",
+      "vernacular": "逐年行限度法原有附图，电子主文本只保留「缺图」占位。",
+      "terms": [],
+      "notes": [
+        "不能按别本插图补出逐年行限"
+      ],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "guotian-jing:L1323-L1323",
+      "kind": "评注或元数据",
+      "vernacular": "钦天监校正授时过宫度图原有附图，电子主文本只保留「缺图」占位。",
+      "terms": [],
+      "notes": [
+        "过宫度以已见文字为准，不按缺图推算"
+      ],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "guotian-jing:L1325-L1325",
+      "kind": "评注或元数据",
+      "vernacular": "命度图原有附图，电子主文本只保留「缺图」占位。",
+      "terms": [],
+      "notes": [
+        "命度仍用二十八宿文字，不补图"
+      ],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "guotian-jing:L1327-L1336",
+      "kind": "理论",
+      "vernacular": "卷四先天心法托为张果与李?问答。推命顺序：先观主曜即命度主，次察身星即月躔处；以二十八宿、三百六十五度为本，十一曜木火土金水日月气孛罗计为用。李?名缺字，不补。",
+      "terms": [
+        "主曜：命度主",
+        "身星：月躔处",
+        "先天心法：本卷托名口授的看盘顺序"
+      ],
+      "notes": [
+        "李?缺字不补成憕或其他名",
+        "仙道、验如神是托名叙事，不是作者事实",
+        "十一曜用神与八字用神不是同一套"
+      ],
+      "review": "source-reviewed",
+      "verified": false,
+      "relatedParagraphIds": [
+        "guotian-jing:L0003-L0003"
+      ]
+    },
+    {
+      "paragraphId": "guotian-jing:L1338-L1348",
+      "kind": "理论",
+      "vernacular": "先天大要：尊看日月，美看官福；贵贱用文武两班、君臣庆会或乾坤否塞、风雷相薄等格；贫富看财居财位、田入田垣或失陷空耗；贤愚看木气扶身、金水坐命对土孛混杂、金水背驰；寿夭看田星司令、寿元逢生对主宿失垣、身星傍鬼。举例：命泊尾火虎并箕水，以水火二星为主。",
+      "terms": [
+        "官福：官星与福星",
+        "命度主、身星：先天先后观察的两个点"
+      ],
+      "notes": [
+        "贵贱贫富贤愚寿夭僧道官职是历史分类，不转成对现实用户的判断",
+        "尾箕水火只是度主示例，无四柱人名，不收案例"
+      ],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "guotian-jing:L1350-L1355",
+      "kind": "理论",
+      "vernacular": "假令寅宫坐命分五等：木水入轸、月井、日昴、火尾且夜生，称一品；二曜朝阳、一星伴月称二品；火入奎娄、金水会翼轸、太乙抱蟾等称二至五品；火土得牛、长庚朝斗等称五品至杂流；前项受伤而田财有好星则称巨富。二曜指火，一星指水。",
+      "terms": [],
+      "notes": [
+        "品级、巨富是原文仕宦贫富套语，不转成职级或财产",
+        "假令寅命、无人名四柱，不收案例",
+        "「日居昴」保持昴字"
+      ],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "guotian-jing:L1357-L1365",
+      "kind": "理论",
+      "vernacular": "续假令寅命：水木入命称医卜；罗入命、刑杀高称武将；气照身命、妻子官福俱背或命主入三宫称僧道；身守迁移、主居六三称过房；主前杀后、身命受克、八宫恶星称残疾。女命另分身清夫明子秀、杂金孛入命、气照而夫子受伤、身入迁移孛罗计守命等，对应富贵、娼妓、师尼、三嫁等旧分类。",
+      "terms": [],
+      "notes": [
+        "医卜、武将、僧道、过房、残疾、女命婚姻生育职业是历史分类，不转成对现实用户的职业、宗教、身体或婚姻判断",
+        "仍是假令，不收案例"
+      ],
+      "review": "source-reviewed",
+      "verified": false,
+      "relatedParagraphIds": [
+        "guotian-jing:L1350-L1355"
+      ]
+    },
+    {
+      "paragraphId": "guotian-jing:L1367-L1384",
+      "kind": "理论",
+      "vernacular": "后天口诀改以斗杓、卦气、唐符、国印、天雄、地雌为主。斗杓是北斗之柄，卦气是天禄之余，唐符是值年之星，国印是朝廷之印，天雄干象、地雌坤象。帝王无斗杓、官贵无卦气、武臣唐符不得地、国印值空亡，各有原文贵贱死任套语。常人若天雄地雌空亡的杀天地二耗同见，则说上无片瓦。问水死兵亡蛇伤虎咬缢死雷轰：用劫杀阳刃的杀贯索浮沈天厄桃花；例：身命逢水孛、八煞值浮沈、流年再逢水孛则说溺死；身命坐阳刃、金火与命主同度则说兵亡。",
+      "terms": [
+        "斗杓：北斗之柄",
+        "后天口诀：斗杓卦气唐符国印天雄地雌"
+      ],
+      "notes": [
+        "帝王官贵武臣死任、片瓦立锥、溺死兵亡是贵贱死亡历史分类，不转成对现实用户的判断",
+        "流年水孛不是出生柱",
+        "唐符、国印取法仍用前面禄前八位、九位，本段只给职用，不改 GTJ-E-01"
+      ],
+      "review": "source-reviewed",
+      "verified": false,
+      "relatedParagraphIds": [
+        "guotian-jing:L0895-L0911",
+        "guotian-jing:L1300-L1311"
+      ]
+    },
+    {
+      "paragraphId": "guotian-jing:L1386-L1399",
+      "kind": "理论",
+      "vernacular": "续后天死法与女命僧道行限。巳酉丑生人安命寅、限逢计孛说虎咬；子午卯酉生人巳宫安命、行限井鬼逢火罗，又云火孛可断蛇伤；八煞犯贯索、身命带勾绞、限遇火星说缢死；命在天厄、火在八宫、限行箕风鬼度觜火说雷伤。女命看福德、身宫、夫宫、相貌，分后妃、夫人、入赘。僧道都带孤寡：僧是气照身宫、火居命位；道是命主居闲极、水入命宫。穷通寿夭归于行限，本文称为不轻传。",
+      "terms": [],
+      "notes": [
+        "虎咬蛇伤缢死雷伤、后妃夫人娼尼僧道是死亡婚姻宗教历史分类，不转成对现实用户的判断",
+        "巳酉丑安命寅等是假令，无连续四柱人名，不收案例",
+        "行限不是出生柱",
+        "玉函经只被引一句，不把外书整套并入"
+      ],
+      "review": "source-reviewed",
+      "verified": false,
+      "relatedParagraphIds": [
+        "guotian-jing:L1367-L1384"
+      ]
+    },
+    {
+      "paragraphId": "guotian-jing:L1401-L1407",
+      "kind": "理论",
+      "vernacular": "至宝论先问天经地纬夹拱。甲寅生人亥宫立命、木在子、水在戌、命躔壁度：看起来经纬夹拱，但坐劫杀，水入白羊、木入齐瓶，水伤田宅、木损福德，子丑皆土故伤福，入格而破局。又说若水子木戌则另论。辛卯生人命立卯宫、木寅金辰：金为天经、木为地纬，入垣夹拱为上格，不克冲生破为中格，破局失垣或斗杓指破为下格。经纬之理四余也可用。",
+      "terms": [
+        "天经、地纬：夹拱身命的一对用星",
+        "入格破局：结构像格但用星受损"
+      ],
+      "notes": [
+        "甲寅亥命、辛卯卯命都无全名和连续四柱，不收案例",
+        "商贾、上中下格是原文职业贵贱套语，不转成职业判断",
+        "白羊、齐瓶是宫宿西名，保持原称"
+      ],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "guotian-jing:L1409-L1415",
+      "kind": "理论",
+      "vernacular": "问斗杓安身立命。戊寅正月巳时、命坐酉宫：虽得斗柄，但命居败乡、地耗破碎守照，只称寒儒，不得富贵科甲。甲戌十月丑时、寅上立命：斗杓兼禄勋长生得局为上格；无贵禄而守命生旺为中格；劫刃耗的相刑为下格；又嫌经纬破局。",
+      "terms": [],
+      "notes": [
+        "戊寅正月巳时、甲戌十月丑时都缺日柱且无人名，不收案例",
+        "寒儒、科甲、皓首是仕宦学业历史分类，不转成学历判断"
+      ],
+      "review": "source-reviewed",
+      "verified": false,
+      "relatedParagraphIds": [
+        "guotian-jing:L1300-L1311"
+      ]
+    },
+    {
+      "paragraphId": "guotian-jing:L1417-L1419",
+      "kind": "理论",
+      "vernacular": "卦气在身命本来说荣，若被劫刃雄雌拱夹，或天耗地耗守照，则可能是执鞭坠镫；用法与斗杓相似，要查这些破局条件。唐符国印守命本说奇，丙辰生人安命在丑、身在子，二星分守身命，但甲寅旬子丑空亡，土空则崩，故不富贵。阴注阳受本可化凶，庚辰四月卯时立命酉上，却因金为阳刃、咸池居命、甲戌旬空申酉，原文归为酒色亡身。",
+      "terms": [],
+      "notes": [
+        "执鞭坠镫、到任、犯刑而死、酒色亡身是职业死亡情色历史分类，不转成对现实用户的判断",
+        "丙辰、庚辰例均缺全名或日柱，不收案例",
+        "国印逢空只作本书条件归档，不改 GTJ-E-01"
+      ],
+      "review": "source-reviewed",
+      "verified": false,
+      "relatedParagraphIds": [
+        "guotian-jing:L0895-L0911",
+        "guotian-jing:L1013-L1019"
+      ]
+    },
+    {
+      "paragraphId": "guotian-jing:L1421-L1424",
+      "kind": "理论",
+      "vernacular": "天马地驿：归垣入庙、遇贵禄、长生旺相为美；空亡、天耗地耗、休囚死绝、克战刑冲为嫌。天地人三元：会官福、命度主或田财为美，还要看十干变曜与入垣升殿；三元皆会官福称贵格，会田财称富翁，会命度主满用称奇，驳杂要细推。",
+      "terms": [],
+      "notes": [
+        "贵格、富翁不转成财富或职官",
+        "三元取法见捷法 L1287，不与八字三元混用"
+      ],
+      "review": "source-reviewed",
+      "verified": false,
+      "relatedParagraphIds": [
+        "guotian-jing:L1287-L1298"
+      ]
+    },
+    {
+      "paragraphId": "guotian-jing:L1426-L1429",
+      "kind": "理论",
+      "vernacular": "寿元星照本家：宜在命位、临禄贵生旺、论不杂。官朝阳是否贵：格局高强兼官禄朝阳才称至贵；命元弱则官主朝阳也无补。",
+      "terms": [],
+      "notes": [
+        "至贵不转成职级",
+        "寿元取法见天干化曜星例，不另造寿命算法"
+      ],
+      "review": "source-reviewed",
+      "verified": false,
+      "relatedParagraphIds": [
+        "guotian-jing:L1152-L1175"
+      ]
+    },
+    {
+      "paragraphId": "guotian-jing:L1431-L1442",
+      "kind": "理论",
+      "vernacular": "评人生禀赋分金论托袁天纲、李?会星于竺罗。经为二十八宿、纬为十一曜。后文主张用度主，不以宫主为是。宫主：子丑土、寅卯木、卯戌火、辰酉金、巳申水、午日、未月。度主：四日、四月、四木、四火、四土、四金、四水度。",
+      "terms": [
+        "宫主：十二支所配五行或日月",
+        "度主：二十八宿所配的日日月月及五行度"
+      ],
+      "notes": [
+        "宫主与度主与支神三套五行不可互换",
+        "「卯、戌、火」把卯既写在木又写在火，保持原句不改",
+        "竺罗、天渊是托名地理，不是核验过的出处",
+        "李?缺字不补"
+      ],
+      "review": "source-reviewed",
+      "verified": false,
+      "relatedParagraphIds": [
+        "guotian-jing:L0145-L0207"
+      ]
+    },
+    {
+      "paragraphId": "guotian-jing:L1444-L1462",
+      "kind": "理论",
+      "vernacular": "续分金论：开元间李?约张果于衡庐，果老自谓命气禀井木犴，限行左旋于亢。宫左旋（子至丑、寅至卯），度右旋（角至亢、氐至房）。昨夜火逼金龙，限到亢金被流火克，金星午时退辰，火金交战，限宫限度皆伤。随后插入明皇诏试毒药、齿落再生的神异。",
+      "terms": [],
+      "notes": [
+        "左旋右旋是宫与度的两种计数方向，不能合成一条",
+        "火逼金龙、大难是原文限上克战，不转成灾难事件",
+        "毒药齿落是托名神异，不是可核验传记",
+        "无连续四柱，不收案例"
+      ],
+      "review": "source-reviewed",
+      "verified": false,
+      "relatedParagraphIds": [
+        "guotian-jing:L1431-L1442"
+      ]
+    },
+    {
+      "paragraphId": "guotian-jing:L1464-L1481",
+      "kind": "理论",
+      "vernacular": "福禄拱夹：三合曰拱、两傍曰夹，不能一见拱夹就断富贵；有贫有贱。五星六曜资我者吉、伤我者凶，且随岁而变。金克木为用时，乙丑庚申生人金掌刃雄，称杀中包刃。因此另作羊刃六说。随后取王勃命作示，只交代其人与滕王阁序，四柱未出。",
+      "terms": [
+        "拱：三合",
+        "夹：两傍",
+        "随岁而变：神煞随年干年支改职"
+      ],
+      "notes": [
+        "富贵贫贱不转成现实判断",
+        "乙丑庚申只举年柱，无人名全四柱，不收案例",
+        "王勃有名无四柱，不收入 cases",
+        "羊刃六说见 L1106，本段是引用说明"
+      ],
+      "review": "source-reviewed",
+      "verified": false,
+      "relatedParagraphIds": [
+        "guotian-jing:L1106-L1126"
+      ]
+    },
+    {
+      "paragraphId": "guotian-jing:L1483-L1490",
+      "kind": "理论",
+      "vernacular": "王勃命坐翼火，水退躔轸：水既是官禄朝阳，又是官禄克命；木作救援，气对照奎壁，故说以名立身又以名败身。金曜躔斗。金水本应不离太阳前后三宫，此例离五宫，本文怀疑唐朝历法与授时不同。",
+      "terms": [
+        "朝阳：用星趋向太阳",
+        "援：相生救援"
+      ],
+      "notes": [
+        "王勃有名无连续四柱，不收入 cases",
+        "以名立身败身、历法差异是原文解释，不转成文名或死亡事件"
+      ],
+      "review": "source-reviewed",
+      "verified": false,
+      "relatedParagraphIds": [
+        "guotian-jing:L1464-L1481"
+      ]
+    },
+    {
+      "paragraphId": "guotian-jing:L1492-L1505",
+      "kind": "理论",
+      "vernacular": "王勃限行井木，对照斗木被金克，孛罗一锋一刃交战；是年属丁，阳刃又临，经云无杀刃岂能伤。后又辨火罗对宫：命在宝瓶女土、火罗旺午对宫相生则福；命躔星日马而火罗对照、日火争光则祸；纳音属火则火罗是本家反吉。",
+      "terms": [],
+      "notes": [
+        "二十九岁溺死是原文传记套语，不转成寿命预测",
+        "无四柱，不收案例",
+        "「星日马」与房日兔等同为四日度，不改正文",
+        "杀刃、太岁、行限都不是出生柱"
+      ],
+      "review": "source-reviewed",
+      "verified": false,
+      "relatedParagraphIds": [
+        "guotian-jing:L1483-L1490",
+        "guotian-jing:L1106-L1126"
+      ]
+    },
+    {
+      "paragraphId": "guotian-jing:L1507-L1514",
+      "kind": "理论",
+      "vernacular": "凡纳音星照命克命不为忌，四日度房昴虚皆然。怕丑年以火罗为地雌、甲年以火罗掌羊刃。火躔昴称火烧牛角：火命人不忌，因为纳音是火、无自克自。木虚、金尾、土翼、水娄同例，皆为星照本家。",
+      "terms": [
+        "星照本家：纳音与照命之星同五行",
+        "火烧牛角：火躔昴的天纲用语"
+      ],
+      "notes": [
+        "夭、贫困不转成命运判断",
+        "丑甲是年干年支举例，不收案例",
+        "「昴」保持原字，与他处「昂」并存"
+      ],
+      "review": "source-reviewed",
+      "verified": false,
+      "relatedParagraphIds": [
+        "guotian-jing:L1140-L1150"
+      ]
+    },
+    {
+      "paragraphId": "guotian-jing:L1516-L1534",
+      "kind": "理论",
+      "vernacular": "煽炽怕伤金位：火居辰酉。杨国忠丑时生子，命坐昴日酉宫，火罗两夹，一为天雄、一为羊刃，又是咸池；客星犯金火，原文说其寿不出当日。国忠自请详命：虽得卦气，身元坐刃、刃星逼命；贵因度主禄主起从阳于福德、三合有吉星，但本文不保令终。",
+      "terms": [],
+      "notes": [
+        "杨国忠及其子均无连续四柱，不收案例",
+        "当日不救、不得其死是死亡历史叙述，不转成对现实用户的判断",
+        "咸池即桃花，不转成情色事件",
+        "卦气得而仍坐刃，说明单见卦气不成贵"
+      ],
+      "review": "source-reviewed",
+      "verified": false,
+      "relatedParagraphIds": [
+        "guotian-jing:L1367-L1384",
+        "guotian-jing:L0996-L1000"
+      ]
+    },
+    {
+      "paragraphId": "guotian-jing:L1536-L1551",
+      "kind": "理论",
+      "vernacular": "续国忠：命主禄主辅太阳于福德、钓起生本元，格高则贵显，因身元坐刃故不得其死；后天宝乱被陈元礼等所杀。日为火精、君父、左目、命所从出；月为水副、后母、右目、身所从生。四日度坐命以日为主。",
+      "terms": [
+        "度主：命度之主",
+        "禄主：官禄之主"
+      ],
+      "notes": [
+        "陈元礼所杀是历史叙述，不转成死亡预测",
+        "目、父母是取象，不转成疾病或亲缘判断",
+        "无四柱，不收案例"
+      ],
+      "review": "source-reviewed",
+      "verified": false,
+      "relatedParagraphIds": [
+        "guotian-jing:L1516-L1534"
+      ]
+    },
+    {
+      "paragraphId": "guotian-jing:L1553-L1572",
+      "kind": "理论",
+      "vernacular": "四日度星日马、房日兔、昴日鸡、虚日鼠，昼生忌火罗争光，火掌羊刃、罗掌岐锋；不则早丧父，亦主伤盲。四月度张月鹿、危月燕、心月狐、毕月乌，夜生怕土计掩月，土计是羊刃杀。张巡命坐心月狐、限历张月鹿，计前土后迎斗；天宝二载刃杀复随、流计加踏，原文说必死于兵。岐字未详。",
+      "terms": [
+        "四日度、四月度：二十八宿中的日、月宿",
+        "岐锋：罗的锋杀，岐字未详"
+      ],
+      "notes": [
+        "丧父丧母伤盲兵死是亲属疾病死亡历史分类，不转成对现实用户的判断",
+        "张巡有名无四柱，不收案例",
+        "流年刃杀不是出生柱",
+        "「星日马」不改正文"
+      ],
+      "review": "source-reviewed",
+      "verified": false,
+      "relatedParagraphIds": [
+        "guotian-jing:L1536-L1551"
+      ],
+      "subsections": [
+        {
+          "id": "guotian-jing:L1553-L1572:day-month",
+          "title": "四日度与四月度",
+          "startLine": 1553,
+          "endLine": 1561,
+          "vernacular": "四日度昼忌火罗，四月度夜忌土计；各附丧亲或伤盲的旧断，并注明岐字未详。",
+          "terms": [],
+          "notes": [
+            "不转成疾病或亲缘判断"
+          ]
+        },
+        {
+          "id": "guotian-jing:L1553-L1572:zhangxun",
+          "title": "张巡示命",
+          "startLine": 1562,
+          "endLine": 1572,
+          "vernacular": "张巡坐心限张，土计迎斗；天宝二载流计加踏，原文归于兵死。贵盛不能胜天。",
+          "terms": [],
+          "notes": [
+            "无四柱，不收案例",
+            "兵死是历史叙述"
+          ]
+        }
+      ]
+    },
+    {
+      "paragraphId": "guotian-jing:L1574-L1590",
+      "kind": "理论",
+      "vernacular": "张巡果死禄山兵手。四木角斗奎井：安命以木为主，金曜强则木危，说坏祖破家，得地也须先破后成。四火翼觜室尾：宜木盛则寿坚福壮；木弱火得所只是清淡；火又弱、失经失次则为贫贱。举一隅以三隅反。",
+      "terms": [],
+      "notes": [
+        "禄山兵手、坏祖破家、贫贱清淡是历史与贫富套语，不转成对现实用户的判断",
+        "无四柱，不收案例",
+        "失经指火居水度，失次指火入水宫"
+      ],
+      "review": "source-reviewed",
+      "verified": false,
+      "relatedParagraphIds": [
+        "guotian-jing:L1553-L1572"
+      ]
+    },
+    {
+      "paragraphId": "guotian-jing:L1592-L1612",
+      "kind": "理论",
+      "vernacular": "四土柳女氐胃、四水轸参箕壁、四金亢鬼牛娄，皆准四木四火之例。先生示天图，谓李?命泊轸、以水为主，计攻水于奎，天纲谓水泛白羊；水势盛而复梗于计、又困于奎木，金远不在本宫，只为清贫。四十七岁限行参水，土躔参水，命限两伤。李?缺字不补。",
+      "terms": [
+        "水泛白羊：水星失陷的天纲用语",
+        "天图：命图"
+      ],
+      "notes": [
+        "清贫、决死是贫富寿命套语，不转成对现实用户的判断",
+        "李?无全名无四柱，不收案例",
+        "壁水俞保持俞字"
+      ],
+      "review": "source-reviewed",
+      "verified": false,
+      "relatedParagraphIds": [
+        "guotian-jing:L1574-L1590"
+      ],
+      "subsections": [
+        {
+          "id": "guotian-jing:L1592-L1612:four-earth",
+          "title": "四土四水四金",
+          "startLine": 1592,
+          "endLine": 1596,
+          "vernacular": "四土、四水、四金度坐命，皆同前四木四火例推。",
+          "terms": [],
+          "notes": []
+        },
+        {
+          "id": "guotian-jing:L1592-L1612:li-ming",
+          "title": "李?命泊轸",
+          "startLine": 1597,
+          "endLine": 1612,
+          "vernacular": "水为主、计攻于奎，金远则清贫；限行参水、土躔参，原文说命限两伤。",
+          "terms": [],
+          "notes": [
+            "李?缺字不补",
+            "不收案例"
+          ]
+        }
+      ]
+    },
+    {
+      "paragraphId": "guotian-jing:L1614-L1635",
+      "kind": "理论",
+      "vernacular": "水土木火日月等星受克，限行顶度处原文说必死，详见倒限篇。世人只按命度受生为吉、受克为凶不够：限主之星壮旺为福、衰弱失陷为凶；命去生限度为窃气，若所生之星失次陷弱则不能窃。末以大觉寺金刚塑像年月日时为戏引，先生先不视。",
+      "terms": [
+        "顶度：限度被克的危处",
+        "窃气：命去生限"
+      ],
+      "notes": [
+        "必死是原文套语，不转成寿命预测",
+        "倒限篇当时尚未出，不把岁运当出生柱",
+        "金刚塑像不是人名四柱，不收案例"
+      ],
+      "review": "source-reviewed",
+      "verified": false,
+      "relatedParagraphIds": [
+        "guotian-jing:L1592-L1612"
+      ],
+      "subsections": [
+        {
+          "id": "guotian-jing:L1614-L1635:limit",
+          "title": "行限视度休危",
+          "startLine": 1614,
+          "endLine": 1633,
+          "vernacular": "受克顶度、限主旺衰、命生限为窃气，皆要看当生星起躔，不能只看度的生克方向。",
+          "terms": [],
+          "notes": [
+            "行限不是出生柱"
+          ]
+        },
+        {
+          "id": "guotian-jing:L1614-L1635:jingang-intro",
+          "title": "金刚命引入",
+          "startLine": 1634,
+          "endLine": 1635,
+          "vernacular": "坐大觉寺，或指金刚命、以塑日为生，先生先不看。",
+          "terms": [],
+          "notes": [
+            "塑像不是案例"
+          ]
+        }
+      ]
+    },
+    {
+      "paragraphId": "guotian-jing:L1637-L1657",
+      "kind": "理论",
+      "vernacular": "炉中火星堕地，先生说此寺经旬灰于火，并声明不是因金刚命而知。课其命限行虚日：太阳为用，罗申火辰攻破日鼠，三合拱限；今年天雄在子、阳刃在午照限，原文说是人命亦恶死。",
+      "terms": [],
+      "notes": [
+        "寺焚、恶死是原文灾异死亡套语，不转成事件预测",
+        "塑像年月日时不是人名四柱，不收案例",
+        "天雄阳刃在流年，不是出生柱"
+      ],
+      "review": "source-reviewed",
+      "verified": false,
+      "relatedParagraphIds": [
+        "guotian-jing:L1614-L1635"
+      ],
+      "subsections": [
+        {
+          "id": "guotian-jing:L1637-L1657:temple",
+          "title": "炉火与寺焚",
+          "startLine": 1637,
+          "endLine": 1648,
+          "vernacular": "以炉中火星堕地断寺将焚，明确不是因金刚命。",
+          "terms": [],
+          "notes": [
+            "不转成火灾预测"
+          ]
+        },
+        {
+          "id": "guotian-jing:L1637-L1657:xu-limit",
+          "title": "虚日限与天雄阳刃",
+          "startLine": 1649,
+          "endLine": 1657,
+          "vernacular": "限行虚日，火罗攻日；天雄在子、阳刃在午，原文说恶死。",
+          "terms": [],
+          "notes": [
+            "不收案例"
+          ]
+        }
+      ]
+    },
+    {
+      "paragraphId": "guotian-jing:L1659-L1676",
+      "kind": "理论",
+      "vernacular": "论限皆仿此。试一人命坐氐土，金守照为飞廉之主；甲辰火命纳音属火，我克廉故能延，木命则不能。今限行井木，飞廉月符官符同守照，又加流星等杀，其人已在囹圄。又引天罡语：劫刃地雌见夫星则扬鞭再醮；命坐空亡、妻宫为气罗所伤。",
+      "terms": [],
+      "notes": [
+        "囹圄、再醮、孤克是刑狱婚姻历史分类，不转成对现实用户的判断",
+        "甲辰火命无全名无四柱，不收案例",
+        "飞廉金与月廉杀主同见本例，不把两套合成一星"
+      ],
+      "review": "source-reviewed",
+      "verified": false,
+      "relatedParagraphIds": [
+        "guotian-jing:L1004-L1011",
+        "guotian-jing:L0959-L0963"
+      ]
+    },
+    {
+      "paragraphId": "guotian-jing:L1678-L1695",
+      "kind": "理论",
+      "vernacular": "水遇孛气称缁黄娼妓，五宫逢孛称男女虚花，皆主孤克；嗣主受伤而余气强可有继子。孤寡：无妻鳏、无夫寡、无父孤、无子独。殊愉或曰人名，坐命巳、妻宫在亥，金巳对克亥木，虽木得垣亦不免鼓盆。罗?缺字不补。",
+      "terms": [],
+      "notes": [
+        "缁黄娼妓、继子、鼓盆是宗教婚姻生育丧偶历史分类，不转成对现实用户的判断",
+        "殊愉名字本身存疑，无四柱，不收案例",
+        "「罗?」缺字不补"
+      ],
+      "review": "source-reviewed",
+      "verified": false,
+      "relatedParagraphIds": [
+        "guotian-jing:L1037-L1042"
+      ]
+    },
+    {
+      "paragraphId": "guotian-jing:L1697-L1713",
+      "kind": "理论",
+      "vernacular": "鼓盆用庄子丧妻典。一行僧安命寅，孤辰劫杀守命，木气掌孤劫伴身又在申妻位，水为妻元失经又坐阳刃，故清孤为僧；近贵因身坐斗杓、又是注受，但禄主退远，不得爵禄，只为名僧。姚崇守天耗又坐破碎，却为宰相，问其故。",
+      "terms": [],
+      "notes": [
+        "僧道、近贵不得爵、宰相是宗教官职历史分类，不转成对现实用户的判断",
+        "一行僧、姚崇均无连续四柱，不收案例"
+      ],
+      "review": "source-reviewed",
+      "verified": false,
+      "relatedParagraphIds": [
+        "guotian-jing:L1300-L1311",
+        "guotian-jing:L0935-L0939"
+      ]
+    },
+    {
+      "paragraphId": "guotian-jing:L1715-L1735",
+      "kind": "理论",
+      "vernacular": "姚崇：禄元是日，金水引从卯位，日出扶桑，故贵；平生不创府第、寓居罔极寺，仍是清淡，正应耗破。又问命坐午守唐符、孛星破局当贫当富：午乃太阳从火，孛为福元，申为福德以水为主，福元克命反为上格。随后取安禄山：巳宫安命，水为禄主朝阳，金为天地二元，又坐斗杓禄勋，然身命坐劫刃夹土计，原文说决不善终。",
+      "terms": [],
+      "notes": [
+        "宰相清贫、贫富、不善终是官职贫富死亡历史分类，不转成对现实用户的判断",
+        "姚崇、安禄山均无四柱，不收案例",
+        "唐符即飞刃的吉称，本例孛破局仍可因福元克命而富，不能一见唐符就定贵"
+      ],
+      "review": "source-reviewed",
+      "verified": false,
+      "relatedParagraphIds": [
+        "guotian-jing:L0895-L0911",
+        "guotian-jing:L1697-L1713"
+      ],
+      "subsections": [
+        {
+          "id": "guotian-jing:L1715-L1735:yaochong",
+          "title": "姚崇耗破仍贵",
+          "startLine": 1715,
+          "endLine": 1722,
+          "vernacular": "禄元日、金水引从卯，故贵；守耗坐破碎故清淡不造府第。",
+          "terms": [],
+          "notes": [
+            "不转成官职或财产"
+          ]
+        },
+        {
+          "id": "guotian-jing:L1715-L1735:tangfu-an",
+          "title": "唐符孛破与禄山引入",
+          "startLine": 1723,
+          "endLine": 1735,
+          "vernacular": "午守唐符而孛为福元克命则富。安禄山巳命水禄朝阳、斗杓禄勋，坐劫刃夹土计则说不善终。",
+          "terms": [],
+          "notes": [
+            "不收案例"
+          ]
+        }
+      ]
+    },
+    {
+      "paragraphId": "guotian-jing:L1737-L1758",
+      "kind": "理论",
+      "vernacular": "安禄山：限到参水发，五十二岁酉限昴日，孛罗两夹，原文说必不在世，并记庆绪使李猪儿杀之。金水日坐命本当文士，禄山为武夫乃用火罗计孛。裴寂命泊子、坐斗杓，火为官禄朝阳于注受，月坐官禄，天禄地禄夹辅，原文归于佐太宗。",
+      "terms": [],
+      "notes": [
+        "谋废立、帐中被杀、佐太宗是历史叙述，不转成对现实用户的判断",
+        "无四柱，不收案例",
+        "文武用星：金水日对火罗计孛，是取象分工，不是人格测验"
+      ],
+      "review": "source-reviewed",
+      "verified": false,
+      "relatedParagraphIds": [
+        "guotian-jing:L1715-L1735",
+        "guotian-jing:L1287-L1298"
+      ],
+      "subsections": [
+        {
+          "id": "guotian-jing:L1737-L1758:anlushan",
+          "title": "安禄山限上不善终",
+          "startLine": 1737,
+          "endLine": 1748,
+          "vernacular": "参水发、昴日孛罗夹，原文记其年被杀。",
+          "terms": [],
+          "notes": [
+            "历史叙述，不收案例"
+          ]
+        },
+        {
+          "id": "guotian-jing:L1737-L1758:peiji",
+          "title": "裴寂斗杓夹辅",
+          "startLine": 1749,
+          "endLine": 1758,
+          "vernacular": "子命斗杓，火禄朝阳注受，天禄地禄夹身主，原文归于佐太宗。",
+          "terms": [],
+          "notes": [
+            "不转成官职"
+          ]
+        }
+      ]
+    },
+    {
+      "paragraphId": "guotian-jing:L1760-L1788",
+      "kind": "理论",
+      "vernacular": "万乘主与人臣不同：必阴阳拱夹、日月拱夹官福、五曜连珠。唐天子命乙酉，五星环拱天门亥，日月分躔危室，金娄水壁从阳，木火土辅太阴，命坐室宿。限行角木则有离宫之厄，不至伤寿；翼火不出。今限行氐土，并说到李林甫当国。令星：春木夏火秋金冬水季土，当时旺、我生相、生我休、克我囚、我克死，各约七十二日。",
+      "terms": [
+        "万乘主：帝王格",
+        "五曜连珠：木火土金水次序不间",
+        "令星：当时当令之星"
+      ],
+      "notes": [
+        "帝王、离宫、伤寿、李林甫当国是历史政治套语，不转成对现实用户的判断",
+        "乙酉只有年干支，无全名四柱，不收案例",
+        "令星与 L1278 四时例相表里，不另造第五套五行"
+      ],
+      "review": "source-reviewed",
+      "verified": false,
+      "relatedParagraphIds": [
+        "guotian-jing:L1278-L1285"
+      ],
+      "subsections": [
+        {
+          "id": "guotian-jing:L1760-L1788:emperor",
+          "title": "万乘主与乙酉示命",
+          "startLine": 1760,
+          "endLine": 1775,
+          "vernacular": "帝王要日月拱夹、五星连珠。乙酉五星环拱亥、日月危室，命坐室度。",
+          "terms": [],
+          "notes": [
+            "年支不足四柱，不收案例"
+          ]
+        },
+        {
+          "id": "guotian-jing:L1760-L1788:jiao-ling",
+          "title": "角木翼火与令星",
+          "startLine": 1776,
+          "endLine": 1788,
+          "vernacular": "角木限说离宫之厄，翼火说寿止；并重申四时旺相休囚死及七十二日。",
+          "terms": [],
+          "notes": [
+            "不转成寿命"
+          ]
+        }
+      ]
+    },
+    {
+      "paragraphId": "guotian-jing:L1790-L1814",
+      "kind": "理论",
+      "vernacular": "四土坐命，火罗临旺、命度受生则福炽，钓起居垣庙，纵逢木气不为忌。天纲集：昼日度忌火罗，夜月度防土计；四火忌水，四木怕金，四金怕火；四土忌木、要金制木；四水畏土、要木制土。寿甄迦罗、福阿僧祗是西竺无限数套语，用来形容限度无滞、命源有气。",
+      "terms": [
+        "援制：用所克之星制住忌星",
+        "甄迦罗、阿僧祗：西竺极大数词"
+      ],
+      "notes": [
+        "高寿享福不转成寿命财富预测",
+        "四日四月四火四木宿名与前段一致，不另改字"
+      ],
+      "review": "source-reviewed",
+      "verified": false,
+      "relatedParagraphIds": [
+        "guotian-jing:L1553-L1572",
+        "guotian-jing:L1574-L1590"
+      ],
+      "subsections": [
+        {
+          "id": "guotian-jing:L1790-L1814:earth-fire",
+          "title": "四土得火与诸度所忌",
+          "startLine": 1790,
+          "endLine": 1803,
+          "vernacular": "四土喜火罗临旺；日度忌火罗，月度防土计，四火忌水，四木怕金，四金怕火。",
+          "terms": [],
+          "notes": []
+        },
+        {
+          "id": "guotian-jing:L1790-L1814:control",
+          "title": "四土四水制化与西竺套语",
+          "startLine": 1804,
+          "endLine": 1814,
+          "vernacular": "四土忌木用金，四水畏土用木。限度无滞、命源有气，借用甄迦罗、阿僧祗形容。",
+          "terms": [],
+          "notes": [
+            "不转成寿命"
+          ]
+        }
+      ]
+    },
+    {
+      "paragraphId": "guotian-jing:L1816-L1850",
+      "kind": "理论",
+      "vernacular": "刃并天雄，有吉助则说险处获财；劫加地?，原文自注疑是地雌，或加剑锋，身命两危则说恶死。大小耗并于刃宫，说盗劫身辱或死在囹圄；加金孛则说风流丧身、痨瘵。诸煞不并会不可概论。貌性：善曜居命称慈心，恶星躔命称凶顽；刃在命有疾，加天雄破相，坐阳刃性横，坐天雄性雄。淳风木在命长躯加气多须，本文明说不足信。后述六甲、纳音、二十八宿、七政的传说来历。地?缺字不补。",
+      "terms": [
+        "地?：原文缺字，旁注疑地雌"
+      ],
+      "notes": [
+        "恶死、盗劫、囹圄、风流、痨瘵、破相是刑病死亡情色历史分类，不转成对现实用户的判断",
+        "性格美丑长短须髯不转成人格或外貌预测",
+        "轩辕大挠颛帝是传说，不是年代考证",
+        "地?不改成地雌，只保留原文自注"
+      ],
+      "review": "source-reviewed",
+      "verified": false,
+      "relatedParagraphIds": [
+        "guotian-jing:L1106-L1126",
+        "guotian-jing:L0913-L0917"
+      ],
+      "subsections": [
+        {
+          "id": "guotian-jing:L1816-L1850:sha-bing",
+          "title": "刃雄劫雌耗并",
+          "startLine": 1816,
+          "endLine": 1826,
+          "vernacular": "刃并天雄、劫加地?、耗并刃宫、再加金孛，各有原文凶断；不并会则不可概论。地?缺字。",
+          "terms": [],
+          "notes": [
+            "缺字不补",
+            "不转成灾祸"
+          ]
+        },
+        {
+          "id": "guotian-jing:L1816-L1850:xing-mao",
+          "title": "貌性与淳风不足信",
+          "startLine": 1827,
+          "endLine": 1841,
+          "vernacular": "善恶曜论性情，刃雄论疾与破相；木命长躯多须被本文判为不足信。",
+          "terms": [],
+          "notes": [
+            "不转成性格外貌"
+          ]
+        },
+        {
+          "id": "guotian-jing:L1816-L1850:liushi",
+          "title": "六甲纳音星宿来历",
+          "startLine": 1842,
+          "endLine": 1850,
+          "vernacular": "六甲大挠、纳音洪范、二十八宿天纲、古人惟齐七政，皆作传说交代。",
+          "terms": [],
+          "notes": [
+            "不是可核验年代"
+          ]
+        }
+      ]
+    },
+    {
+      "paragraphId": "guotian-jing:L1852-L1871",
+      "kind": "理论",
+      "vernacular": "四曜气孛罗计是余气，七政是君子，火罗计孛经中又称小人。水余孛、木余气、火余罗、土余计。宁五星犯余气，莫余气犯五星。秦阶未详。淳风昼火夜土：四火坐命忌水，得土为援曜；四土坐命忌木，得火为益资。若土火本身是度主且飞起朝阳，则不可概作忌曜。文末张果拂衣而去，李?记语编为禀赋分金。",
+      "terms": [
+        "余气：气孛罗计",
+        "援曜：解救忌克的星",
+        "忌曜：按度所防的克星"
+      ],
+      "notes": [
+        "君子小人是星象取譬，不转成道德判断",
+        "祸患必大不转成灾祸预测",
+        "李?缺字不补",
+        "拂衣长啸是托名收束，不是传记事实"
+      ],
+      "review": "source-reviewed",
+      "verified": false,
+      "relatedParagraphIds": [
+        "guotian-jing:L1790-L1814"
+      ],
+      "subsections": [
+        {
+          "id": "guotian-jing:L1852-L1871:yuyao",
+          "title": "七政与四余",
+          "startLine": 1852,
+          "endLine": 1862,
+          "vernacular": "气孛罗计为余气；宁我克余气，莫余气犯五星。",
+          "terms": [],
+          "notes": []
+        },
+        {
+          "id": "guotian-jing:L1852-L1871:jiyao",
+          "title": "忌曜援曜与卷末",
+          "startLine": 1863,
+          "endLine": 1871,
+          "vernacular": "昼火夜土要看是否度主朝阳；四火忌水得土援，四土忌木得火资。李?编为禀赋分金。",
+          "terms": [],
+          "notes": [
+            "秦阶未详，不补"
+          ]
+        }
+      ]
+    },
+    {
+      "paragraphId": "guotian-jing:L1873-L1874",
+      "kind": "序跋目录",
+      "vernacular": "卷末七言诗托中都石室山人李?记于嘉平二年九月朔旦，戒勿轻泄天机。紧接着的评语说明前后问答多涉唐世朝臣与安史之乱，因文语聱牙、用事诡异而有所删节，但仍认作谈星之要。李?缺字不补。",
+      "terms": [
+        "禀赋分金：本卷问答的编名"
+      ],
+      "notes": [
+        "嘉平二年、鬼神罚前程是托名纪年与劝诫，不是可核验版本记录",
+        "「节之也」表明电子主文本已非未删全文，后文巨型段仍按现存文字注解",
+        "李?缺字不补"
+      ],
+      "review": "source-reviewed",
+      "verified": false,
+      "relatedParagraphIds": [
+        "guotian-jing:L1852-L1871"
       ]
     }
   ]
