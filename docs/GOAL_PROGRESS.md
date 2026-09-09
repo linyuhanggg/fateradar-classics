@@ -4,6 +4,15 @@
 
 两仓均为 `codex/full-library-completion`：古籍 `/Users/yuhanglin/.codex/worktrees/fateradar-classics-grok-full-library`；产品 `/Users/yuhanglin/.codex/worktrees/fateradar-product-grok-full-library`。原接手基准古籍2396e4c、产品8f1ca84。原main及他人admin/billing/.claude不改。本目标尚未合main或部署。
 
+## 最新接续：三命122段至988同步产品，25旺衰关系核对通过
+
+上一轮afd6bc4/bcb8e79及产品87b93d1注释修正已推送，属实际进展。本轮f44148e完成四时节气、日刻、时刻长段3主段L908–988，共15小节，累计122/970主段166小节；下一L992遁月时。
+
+- 节/中气、百刻大小刻与子正分日、旧周天365.25度、宿度古今及授时历范围分开；大寒昼43夜17等疑数不凑100，不用旧日出入表套全球时区纬度。月相配卦的作者反论保留，坤纳乙等不覆盖六爻表。
+- 实际调用siLingState，L982–983五季五行25关系全部相合；证据docs/review/sanming-season-state-audit-2026-09-09.json。仅关系映射，不证明SILING分日选值、整体旺衰或现实效验。末生旺非必吉、死绝非必凶及十二宫不同起序明确保留。
+- 固定f44148eb78b847b0398df526b243090e2f3ca410导出55包80889段source_reviewed21906。970主段及166小节切片一致、122主段已读、2662参考版本保留；18知识测试过，产品8cdee64已推送，仅generated/knowledge入提交，.claude未动。
+- 注释122entries验证0错，原文/ID/verified保持，行为运行仍e43cd38，案例3023未变。nmem两工具本轮失败未反复重试。全目标active，未合main或部署；继续遁月时、干支作用与全库八术/页面总验收。
+
 ## 最新接续：三命119段至904，人元分日多表与SILING注释修正
 
 上一轮73fa61a/500a8f4已推送，属实际进展。本轮afd6bc4读地支属相、人元司事及12月再表/醉醒子评论，共12主段L847–904，累计119/970主段151小节；下一L908四时节气。
