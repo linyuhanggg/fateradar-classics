@@ -4,6 +4,14 @@
 
 两仓均为 `codex/full-library-completion`：古籍 `/Users/yuhanglin/.codex/worktrees/fateradar-classics-grok-full-library`；产品 `/Users/yuhanglin/.codex/worktrees/fateradar-product-grok-full-library`。原接手基准古籍2396e4c、产品8f1ca84。原main及他人admin/billing/.claude不改。本目标尚未合main或部署。
 
+## 最新接续：岁运免费解释改消费格局复查
+
+古籍仍527d5bb/539段。本轮不新增注释，改产品八字12入口的岁运栏：`annotateLuck` 已固定待综合并调用 `compareGejuTransit`，免费正文却仍写成喜忌加权。现 `buildBaziFreeReading().luck` 展示本命路线、加入岁运后的 after、summary、unresolved 与 limitation。
+
+- 待综合不是顺逆分，也不是事件预测；未覆盖的外来支藏直接取用和隔位救应仍信息不足，不改本命格局。未启用成格/破格，未刷新 golden/verified。
+- 产品531b558：free-reading、对应测试、ART_READING_FIELD_MAP 与 implementation 记录；.claude 未动。bazi-free-reading 26、连同 luck/luren 岁运测试共42通过。未做浏览器总验收，未宣称全回归。
+- 三命下一仍安静守分4560–4561、横夭少年4565–4567。禄劫外来支藏/隔位与其他七术栏目免费解释仍待做。全目标 active，未合main或部署。
+
 ## 最新接续：三命539段至4556，浊滥娼滛与伤夫伤子
 
 交接账本f366ada已推送，产品当时仍a94773f。本轮3d4543c完成浊4522–4523、滥4527–4529、娼4533–4535、滛4539–4541、旺夫伤子4545–4546、旺子伤夫4550–4551、伤夫克子4555–4556七主段七小节，累计539/970主段1038小节；下一安静守分4560–4561、横夭少年4565–4567，边界已从包读取。
