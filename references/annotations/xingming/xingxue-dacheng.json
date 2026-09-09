@@ -2,7 +2,7 @@
   "schemaVersion": "fateradar-annotations-v1",
   "bookSlug": "xingxue-dacheng",
   "sourceFile": "sources/fulltext/xingming/xingxue-dacheng/fulltext.md",
-  "reviewScope": "已逐段阅读提要、原序、凡例前引至论玉堂（xingxue-dacheng:L0003-L0011 至 L0218-L0218）并作语义注解。source-reviewed只指对照电子主文本，不代表影印人工核验。乔庙提要批评与入庙三套（本宫庙堂、宿度旺宫、日月戌方入庙）只归档，不改已落地 XXDC 与七政 DIGNITY 表。其后昼贵人诗尚未注解。识典SK1609补页未纳入本批。",
+  "reviewScope": "已逐段阅读提要原序至地煞（xingxue-dacheng:L0003-L0011 至 L0465-L0465）并作语义注解。source-reviewed只指对照电子主文本，不代表影印人工核验。昼夜贵人与通书阴阳贵、五行精纪分套；入庙三套、唐符国印、华盖起法只归档，不改已落地算法。其后年煞尚未注解。识典SK1609补页未纳入本批。",
   "entries": [
     {
       "paragraphId": "xingxue-dacheng:L0003-L0011",
@@ -538,6 +538,667 @@
       ],
       "notes": [
         "不在本段展开贵人表"
+      ],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "xingxue-dacheng:L0222-L0222",
+      "kind": "理论",
+      "vernacular": "昼贵人：甲戊庚牛，乙己鼠，丙猪，丁猪壬癸蛇，穴辛逢马。这是台历昼贵口诀，穴辛原字不改。与夜贵、通书冬夏阴阳贵不是同一套。",
+      "terms": [
+        "昼贵人：台历昼天乙"
+      ],
+      "notes": [
+        "穴辛不改正文",
+        "䑕原字不改"
+      ],
+      "review": "source-reviewed",
+      "verified": false,
+      "relatedParagraphIds": [
+        "xingxue-dacheng:L0218-L0218",
+        "xingxue-dacheng:L0226-L0229"
+      ]
+    },
+    {
+      "paragraphId": "xingxue-dacheng:L0226-L0229",
+      "kind": "理论",
+      "vernacular": "夜贵人：甲戊庚羊，乙己猴，丙丁鸡，辛虎，壬癸兔。夹注：台历昼夜贵与通书不同，通书冬至后用阳贵、夏至后用阴贵，阳贵出先天坤顺数、阴贵出后天坤逆数；干德之合气才是贵。五行精纪所论又不同。三套必须分开。诗称命宫全带福深；女命休须带贵人、空亡驿马不堪闻，是旧式女命分类。",
+      "terms": [
+        "夜贵人：台历夜天乙",
+        "阴阳贵：冬至后阳贵、夏至后阴贵"
+      ],
+      "notes": [
+        "台历昼夜贵、通书阴阳贵、五行精纪三套不合并",
+        "女命空亡驿马休囚是历史分类，不转成婚姻或人格判断"
+      ],
+      "review": "source-reviewed",
+      "verified": false,
+      "relatedParagraphIds": [
+        "xingxue-dacheng:L0222-L0222",
+        "xingxue-dacheng:L0218-L0218"
+      ]
+    },
+    {
+      "paragraphId": "xingxue-dacheng:L0233-L0234",
+      "kind": "理论",
+      "vernacular": "文星：甲罗乙计丙戊金，丁火己气庚木，辛土壬日癸月。夹注以五行相济成文，独不以水孛为文，以其无质。文星不是文昌，也不是科名科甲。辛见上则秀气的上字不改正文。",
+      "terms": [
+        "文星：十干所配相济之曜"
+      ],
+      "notes": [
+        "文星与文昌、科名、科甲分开",
+        "炁、斵原字不改"
+      ],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "xingxue-dacheng:L0238-L0239",
+      "kind": "理论",
+      "vernacular": "魁星：甲月乙日丙罗丁计戊火，己金庚水辛孛壬气癸水。夹注阴阳和合相生而成魁，独不以土为魁，以土愚浊。魁星不是文昌或科甲。",
+      "terms": [],
+      "notes": [
+        "魁光愚浊是星性套语，不转成人格",
+        "炁原字不改"
+      ],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "xingxue-dacheng:L0243-L0244",
+      "kind": "理论",
+      "vernacular": "文昌：甲乙巳午，丙戊申，丁巳酉，庚亥辛戌，壬寅癸卯。夹注为天干生地支所藏人元；辛不以所生而以戌，因从魁河魁夹之。子丑辰未不与，因文昌欲显不欲隐，子丑地下、辰未为库。文昌不是文星。丁巳鷄的巳按原文。",
+      "terms": [
+        "文昌：干生支藏人元"
+      ],
+      "notes": [
+        "与文星、科名分开",
+        "巳午酉亥按原文"
+      ],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "xingxue-dacheng:L0248-L0251",
+      "kind": "理论",
+      "vernacular": "科名星按十干配木火土水金，庙旺七强顺段说名位高，五弱留逆说虽中科甲名次低。科甲星另取对命宫之星；假令人马宫为命与阴阳宫相对即以水星为科甲星。科名与科甲是两条。假令无全名四柱。状元高第是套语。",
+      "terms": [
+        "科名星：十干配五星",
+        "科甲星：对命宫之星"
+      ],
+      "notes": [
+        "科名与科甲分开，不转成现实科第",
+        "人马宫假令不收案例",
+        "留逆不是出生柱"
+      ],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "xingxue-dacheng:L0255-L0256",
+      "kind": "理论",
+      "vernacular": "官星：甲气乙水丙罗丁计戊孛，己火庚金辛木壬月癸土。夹注是十干官星之禄星，琴堂谓对禄：甲以辛为官、辛以气为禄，故甲人用气为官星。阳君太阳不与。此官星是星曜，不是八字正官成格。",
+      "terms": [],
+      "notes": [
+        "不覆盖八字官杀格局",
+        "功名是套语"
+      ],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "xingxue-dacheng:L0260-L0261",
+      "kind": "理论",
+      "vernacular": "印星：甲木乙日丙火丁月戊土己罗，庚金辛计壬水癸孛。五阳干取本行，五阴干取日月罗计孛相生相类；十一曜独气不与，以其善柔。此印星不是前面变曜天印，也不是国印或后文五行正印。",
+      "terms": [
+        "印星：十干相类之印曜"
+      ],
+      "notes": [
+        "与天印、国印、正印分开",
+        "炁原字不改"
+      ],
+      "review": "source-reviewed",
+      "verified": false,
+      "relatedParagraphIds": [
+        "xingxue-dacheng:L0140-L0141",
+        "xingxue-dacheng:L0422-L0424"
+      ]
+    },
+    {
+      "paragraphId": "xingxue-dacheng:L0265-L0266",
+      "kind": "理论",
+      "vernacular": "催官星主迁官进职，与禄主相催克：甲禄火见金则催，乙禄孛见水则催，余仿此。十一曜独火不与，以其有太阳在焉。迁官是套语。",
+      "terms": [],
+      "notes": [
+        "迁官进职不转成官职判断",
+        "扺原字不改"
+      ],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "xingxue-dacheng:L0270-L0271",
+      "kind": "理论",
+      "vernacular": "禄神：甲兼木孛，乙水，丙计丁罗戊土，己火庚金辛紫气，壬日癸月。夹注为正禄神，遇之主食正禄俸；甲独兼木孛，以其阳干之首。与天元禄口序不是同一条用法说明。",
+      "terms": [],
+      "notes": [
+        "正禄俸是历史分类，不转成判断"
+      ],
+      "review": "source-reviewed",
+      "verified": false,
+      "relatedParagraphIds": [
+        "xingxue-dacheng:L0214-L0214"
+      ]
+    },
+    {
+      "paragraphId": "xingxue-dacheng:L0275-L0276",
+      "kind": "理论",
+      "vernacular": "喜神：甲罗乙计丙气丁水戊月，己土庚金辛水壬孛癸火。夹注人命月逆行，喜神逆禄：禄序火孛木金土月水气计罗，喜神序正好倒过来。月逆行不是出生柱。",
+      "terms": [],
+      "notes": [
+        "喜神逆布与禄神顺布分开"
+      ],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "xingxue-dacheng:L0280-L0282",
+      "kind": "理论",
+      "vernacular": "天厨即食神禄。甲乙巳午，丙子，丁戊己午己申，庚寅辛午，壬酉癸亥。指南：甲食丙、丙禄在巳，故甲见巳。歌称命宫为福，福德迁移次之；男人财旺、女命封号是套语。八宫宫主号天厨，陷了人无寿。女命封号麒麟儿不转成生育或封赠。",
+      "terms": [
+        "天厨：食神禄地"
+      ],
+      "notes": [
+        "女命封号无寿是历史分类，不转成判断",
+        "己申储的己按原文"
+      ],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "xingxue-dacheng:L0286-L0287",
+      "kind": "理论",
+      "vernacular": "天嗣：甲月乙水丙气丁计戊罗己火，庚孛辛木壬金癸土。夹注六合为夫妇，禄之余与子，故变曜中化贵者即天嗣。是星名取子嗣条件，不是对现实用户的生育判断。",
+      "terms": [],
+      "notes": [
+        "子女夫妇是历史分类，不转成生育判断"
+      ],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "xingxue-dacheng:L0291-L0293",
+      "kind": "理论",
+      "vernacular": "岁殿只看他命天元干神宫主。如丙辰生人从辰上起甲数至午见丙便是岁殿。须福主权财命主身主官星科甲科名居其上才称登殿；殿中无星而身命日月福禄官魁拱之也可说大贵。飞星迁上兼囚煞称客曜临朝、飞星破殿。丙辰只有年，不收案例。拖青纡紫是套语。",
+      "terms": [
+        "岁殿：年干在年支上起甲数到本干的宫"
+      ],
+      "notes": [
+        "丙辰生人无全名四柱，不收案例",
+        "贵贱朝堂是历史分类，不转成判断",
+        "飞星客曜不是出生柱"
+      ],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "xingxue-dacheng:L0297-L0298",
+      "kind": "理论",
+      "vernacular": "岁驾只看他命支神宫主，子年生子宫便是驾。主星居其上称临驾；驾上无星得身命日月福禄官魁禄马拱之亦主富贵。飞星迁上称客曜临朝、飞星破驾。诗称假使为官是荫封，是套语。岁驾不是出生年太岁柱本身的第五柱。",
+      "terms": [
+        "岁驾：年支本宫"
+      ],
+      "notes": [
+        "荫封为官是历史分类，不转成判断",
+        "䕃原字不改"
+      ],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "xingxue-dacheng:L0302-L0303",
+      "kind": "理论",
+      "vernacular": "地爵按年支：子申土，亥未火，午丑水，卯气，寅巳木，酉戌金，辰孛。遇之进爵除拜，要官福身命为之。红鸾天喜：红鸾子年加卯逆数，天喜子年加酉逆数，二者相对。限坐其上说夫妻喜事。限不是出生柱。炁孤神原字不改。",
+      "terms": [
+        "地爵：年支所配爵星",
+        "红鸾天喜：子年卯酉起逆数、相对"
+      ],
+      "notes": [
+        "进爵夫妻喜事是历史分类，不转成判断",
+        "行限不是出生柱"
+      ],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "xingxue-dacheng:L0307-L0307",
+      "kind": "理论",
+      "vernacular": "天德子年加酉顺数，月德子年加巳顺数，二星为三合。坐命说男女大贵，又名压煞。与后文天德贵人歌、月德贵人不是同一套起例。",
+      "terms": [
+        "天德月德：子年酉巳起顺数"
+      ],
+      "notes": [
+        "男女大贵不转成判断",
+        "与天德贵人歌、月德贵人分开"
+      ],
+      "review": "source-reviewed",
+      "verified": false,
+      "relatedParagraphIds": [
+        "xingxue-dacheng:L0325-L0326",
+        "xingxue-dacheng:L0330-L0332"
+      ]
+    },
+    {
+      "paragraphId": "xingxue-dacheng:L0311-L0316",
+      "kind": "理论",
+      "vernacular": "解神有天解地解。天解从辰上起子年挨宫顺轮值本年岁君；地解子丑未、寅卯申、辰巳酉、午未戌、申酉亥、戌亥午，只居六阴。能解凶兴善。同段还有赦文（命之父母星飞来生我）、唐符禄前八位、国印禄前九位、福星贵人歌。唐符国印与已落地 GTJ-E-01 一致，只归档。以上俱依台历吉神次序。福星贵人甲丙寅子、戊猴己未等是又一套贵人，不与天乙昼夜贵合并。",
+      "terms": [
+        "天解地解：年支两套解神",
+        "赦文：父母星失地而母曜来生"
+      ],
+      "notes": [
+        "唐符国印只归档，不改 GTJ-E-01",
+        "福星贵人与天乙昼夜贵、阴阳贵分开",
+        "科甲宠光是套语"
+      ],
+      "review": "source-reviewed",
+      "verified": false,
+      "relatedParagraphIds": [
+        "xingxue-dacheng:L0222-L0222",
+        "xingxue-dacheng:L0214-L0214"
+      ]
+    },
+    {
+      "paragraphId": "xingxue-dacheng:L0320-L0321",
+      "kind": "理论",
+      "vernacular": "官星贵人：甲酉乙申，丁亥丙子己寅，戊卯庚壬午，辛癸巳。甲以辛为官、辛禄在酉。士人公侯是套语。与前面十干官星之禄星不是同一条诗。䑕原字不改。",
+      "terms": [],
+      "notes": [
+        "公侯仕位不转成官职",
+        "与 L0255 官星分开"
+      ],
+      "review": "source-reviewed",
+      "verified": false,
+      "relatedParagraphIds": [
+        "xingxue-dacheng:L0255-L0256"
+      ]
+    },
+    {
+      "paragraphId": "xingxue-dacheng:L0325-L0326",
+      "kind": "理论",
+      "vernacular": "天德贵人按月：正丁二坤三壬四辛五乾六甲七癸八寅九丙十乙子巽丑庚。若临时日、限运说吉。登科甲是套语。与子年加酉的天德不是同一套。限运不是出生柱。",
+      "terms": [],
+      "notes": [
+        "与 L0307 天德顺数分开",
+        "科甲富贵不转成判断"
+      ],
+      "review": "source-reviewed",
+      "verified": false,
+      "relatedParagraphIds": [
+        "xingxue-dacheng:L0307-L0307"
+      ]
+    },
+    {
+      "paragraphId": "xingxue-dacheng:L0330-L0332",
+      "kind": "理论",
+      "vernacular": "月德贵人：寅午戌丙，申子辰壬，亥卯未甲，巳酉丑庚。从寅上起丙甲壬庚逐月顺数。诗称士农工贾、兄弟妻儿无破克、贵比汾阳，是套语。与子年加巳的月德不是同一套。",
+      "terms": [],
+      "notes": [
+        "与 L0307 月德顺数分开",
+        "汾阳石崇科甲不转成判断"
+      ],
+      "review": "source-reviewed",
+      "verified": false,
+      "relatedParagraphIds": [
+        "xingxue-dacheng:L0307-L0307"
+      ]
+    },
+    {
+      "paragraphId": "xingxue-dacheng:L0336-L0336",
+      "kind": "理论",
+      "vernacular": "月合：寅午戌辛，申子辰丁，亥卯未己，巳酉丑乙。从寅上起辛巳丁乙顺数。题雁塔是套语。",
+      "terms": [],
+      "notes": [
+        "科名不转成判断",
+        "巳丁乙的巳按原文"
+      ],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "xingxue-dacheng:L0340-L0340",
+      "kind": "理论",
+      "vernacular": "月空：寅午戌壬，申子辰丙，亥卯未庚，巳酉丑甲。从寅上起壬庚丙甲顺数。天书九重是套语。",
+      "terms": [],
+      "notes": [
+        "官贵不转成判断"
+      ],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "xingxue-dacheng:L0344-L0344",
+      "kind": "序跋目录",
+      "vernacular": "卷一末钦定四库全书题署，不含取用规则。",
+      "terms": [],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "xingxue-dacheng:L0348-L0348",
+      "kind": "序跋目录",
+      "vernacular": "卷二题明万民英撰，不含取用规则。",
+      "terms": [],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "xingxue-dacheng:L0352-L0357",
+      "kind": "理论",
+      "vernacular": "干神妙用：世人只论十二支，星盘亥子之间著壬、子丑之间著癸，十二宫各有一干一支，按宫阔狭分半度。命宫命主俱临干神位数，又值岁德月德月空月合卦气六合有用，原文用来说明资性刚明。三台八座州长官富家是套语。支神亦有富贵而必须星度十分合格。干神与地支神煞不是同一层。",
+      "terms": [
+        "干神：十二宫隔界所著甲庚丙壬乙辛丁癸乾坤艮巽"
+      ],
+      "notes": [
+        "官职资性蠢弱是历史分类，不转成判断",
+        "栁原字不改柳"
+      ],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "xingxue-dacheng:L0361-L0365",
+      "kind": "理论",
+      "vernacular": "歌：十二支神阴德、十二干神阳德，止论支神只算一半。剑锋大煞本干神，四仲月前金位称真剑。乙辛丁巳癸阴干比重。岁驾号吉神。卦气从来止论干。假如未年生命在未为岁驾，偏傍丁坤则无煞；甲庚丙壬乙辛丁癸乾坤艮巽神藏煞没故为天德。未年无全名四柱。带角披毛畜类是套语，不转成对现实用户的判断。女子小人鳏寡是历史分类。",
+      "terms": [],
+      "notes": [
+        "未年生命不收案例",
+        "畜类刑伤鳏寡公侯不转成判断",
+        "剑锋与果老剑锋表分开，不合并"
+      ],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "xingxue-dacheng:L0369-L0370",
+      "kind": "理论",
+      "vernacular": "岁君对位亦凶，帝座冲干曰一星即太岁。人命莫当一星正，偏干庶可免刑。太岁支干有真合，甲己乙庚。午辰酉亥四年生又向支神安命，若无刑囚则另说六亲。岁刑子午互换、寅巳申参错、丑戌未相妨。六害年看互换。四废干神喜在阳神干位。空亡宜向干傍。十干官星五阴配五阳，阴人见合为官贵，克我我克有双伤。太岁不是第五出生柱。",
+      "terms": [],
+      "notes": [
+        "六亲重妻异子是历史分类，不转成判断",
+        "午辰酉亥年例不收案例"
+      ],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "xingxue-dacheng:L0374-L0374",
+      "kind": "理论",
+      "vernacular": "进神只此四位：甲子、甲午、己卯、己酉。",
+      "terms": [
+        "进神：甲子甲午己卯己酉"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "xingxue-dacheng:L0378-L0378",
+      "kind": "理论",
+      "vernacular": "天上三奇甲戊庚，地下三奇乙丙丁。命值三奇贵、三元及第是套语。太乙妙旨云乙丙丁甲戊庚命局相成。不作蓬莱三岛客是套语。",
+      "terms": [],
+      "notes": [
+        "三元及第金殿不转成科名判断"
+      ],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "xingxue-dacheng:L0382-L0382",
+      "kind": "理论",
+      "vernacular": "夹禄：壬癸生人见辰，丙丁生人见戌。得此二位主贵。主贵是套语。",
+      "terms": [],
+      "notes": [
+        "主贵不转成判断"
+      ],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "xingxue-dacheng:L0386-L0387",
+      "kind": "理论",
+      "vernacular": "拱禄：戊辰与丙午、丁巳与己未前后相拱，只此四位。交禄：甲申与庚寅之类。暗禄：甲逢亥合寅、乙逢戌合卯。诗称状元金满屋是套语。甲申戊辰等无人名连续四柱，不收案例。",
+      "terms": [
+        "拱禄交禄暗禄：年日支组合的三种禄"
+      ],
+      "notes": [
+        "状元诸侯不转成判断",
+        "年日支例不收案例"
+      ],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "xingxue-dacheng:L0391-L0392",
+      "kind": "理论",
+      "vernacular": "飞腾禄：甲申甲子甲辰见寅，因禄马俱在寅；庚寅庚午庚戌见申，因禄马俱在申。命得此者原文说大贵。五侯筵是套语。",
+      "terms": [],
+      "notes": [
+        "大贵不转成判断",
+        "三支例不收案例"
+      ],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "xingxue-dacheng:L0396-L0396",
+      "kind": "理论",
+      "vernacular": "禄马食神：甲申甲子甲辰见丙寅，庚寅庚午庚戌见壬申，只此六位。原文说大显贵。",
+      "terms": [],
+      "notes": [
+        "显贵不转成判断"
+      ],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "xingxue-dacheng:L0400-L0400",
+      "kind": "理论",
+      "vernacular": "连珠食神：甲食丙、丙食戊、戊食庚、庚食壬，年月日時胎相顺自上食下。胎不另造第五出生柱。",
+      "terms": [],
+      "notes": [
+        "胎不是第五出生柱"
+      ],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "xingxue-dacheng:L0404-L0404",
+      "kind": "理论",
+      "vernacular": "食神名歌：甲食丙乙食丁，丙食戊丁食已，已食卒上戊食庚，庚壬辛癸相喜。食神骑禄马说豪富。不食空亡阳刃煞、不食休囚死绝。已食卒上疑文不改正文。",
+      "terms": [],
+      "notes": [
+        "豪富功名不转成判断",
+        "已、卒不改正文"
+      ],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "xingxue-dacheng:L0408-L0410",
+      "kind": "理论",
+      "vernacular": "学堂：身宫主星是学堂星。假令太阴在人马为身宫，即木为宫主，看木星在何方；四正七强顺旺入庙说文章，留逆五弱说不大会文章、虽登第必出他人之力。又云纳音生处为学堂：金巳辛巳正，木亥己亥正，水申甲申正，土申戊申正，火寅丙寅正。假令无人名四柱。登第文章是套语。",
+      "terms": [
+        "学堂：身宫主星所在，一说纳音长生"
+      ],
+      "notes": [
+        "两说并存，不合成一套",
+        "人马宫假令不收案例",
+        "文章登第寿不长是历史分类，不转成判断",
+        "䧟夀原字不改"
+      ],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "xingxue-dacheng:L0414-L0414",
+      "kind": "理论",
+      "vernacular": "学馆：甲乙木得寅庚寅为正，丙丁火得巳乙巳为正，戊己土得申戊申为正，庚辛金得申壬申为正，壬癸水得亥癸亥为正。与学堂不是同一条。",
+      "terms": [],
+      "notes": [
+        "与学堂、官贵学堂分开"
+      ],
+      "review": "source-reviewed",
+      "verified": false,
+      "relatedParagraphIds": [
+        "xingxue-dacheng:L0408-L0410"
+      ]
+    },
+    {
+      "paragraphId": "xingxue-dacheng:L0418-L0418",
+      "kind": "理论",
+      "vernacular": "官贵学堂学馆：甲乙见巳为学堂、申为学馆，因用庚辛为官、金生巳临官申。丙丁见申学堂、亥学馆，因用壬癸为官、水生申临官亥。此是以官星长生临官取学堂学馆，与身宫主星学堂、纳音学堂不是同一套。",
+      "terms": [],
+      "notes": [
+        "三套学堂学馆分开"
+      ],
+      "review": "source-reviewed",
+      "verified": false,
+      "relatedParagraphIds": [
+        "xingxue-dacheng:L0408-L0410",
+        "xingxue-dacheng:L0414-L0414"
+      ]
+    },
+    {
+      "paragraphId": "xingxue-dacheng:L0422-L0424",
+      "kind": "理论",
+      "vernacular": "正印：金命乙丑，水命壬辰，木命癸未，火命甲戌，土命丙辰。空则为僧道，旺则为贵人。丙丁得甲戌、壬癸得丙辰又谓之夹贵印。水生人得正印吉中有凶。僧道华盖功名是套语。此正印是五行墓库印，不是十干印星或变曜天印。",
+      "terms": [
+        "正印：五命墓库印",
+        "夹贵印：丙丁甲戌、壬癸丙辰"
+      ],
+      "notes": [
+        "僧道贵人功名是历史分类，不转成宗教或官职判断",
+        "与 L0260 印星、L0140 天印分开"
+      ],
+      "review": "source-reviewed",
+      "verified": false,
+      "relatedParagraphIds": [
+        "xingxue-dacheng:L0260-L0261"
+      ]
+    },
+    {
+      "paragraphId": "xingxue-dacheng:L0428-L0428",
+      "kind": "理论",
+      "vernacular": "官贵六合印：庚子得乙丑，戊午得癸未，丁酉得壬辰，己卯得甲戌，辛酉得丙辰。是年日组合例，无人名连续四柱。",
+      "terms": [],
+      "notes": [
+        "年日组合不收案例",
+        "已夘原字不改"
+      ],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "xingxue-dacheng:L0432-L0432",
+      "kind": "理论",
+      "vernacular": "五命财库：金命木财未库，木命土财辰库，水命火财戌库，火命金财丑库，土命水财辰库。",
+      "terms": [],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "xingxue-dacheng:L0436-L0436",
+      "kind": "理论",
+      "vernacular": "外财只取长生宫。如甲用戊己为财见戊申，癸用丙丁为财见丙寅。原文说此类多得外财。",
+      "terms": [],
+      "notes": [
+        "外财不转成财产判断"
+      ],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "xingxue-dacheng:L0440-L0441",
+      "kind": "理论",
+      "vernacular": "驿马歌：五行驿马更遇生官禄贵神，君子成名加爵、庶人营运足珍；病绝驿马值空亡则士庶半吉、工商技艺术劳。君子庶人工商是身份分类，不转成职业判断。此是歌断，未列十二位支表；起例以标题「定驿马十二位」为准，不与果老天马三套合并。",
+      "terms": [],
+      "notes": [
+        "爵位珠珍工商不转成判断",
+        "不与果老天马地驿三套混"
+      ],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "xingxue-dacheng:L0445-L0445",
+      "kind": "理论",
+      "vernacular": "六害在马前。月上说损弟兄，胎中父母、日時妻子是旧式六亲分类。只宜僧道、又逢沐浴阳刃、奴隶四体不完是套语。胎不另造第五柱。",
+      "terms": [],
+      "notes": [
+        "六亲僧道奴隶残疾是历史分类，不转成判断",
+        "胎不是第五出生柱"
+      ],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "xingxue-dacheng:L0449-L0449",
+      "kind": "理论",
+      "vernacular": "华盖歌称聪明科名、天德官印位至公卿；女命纵然多色欲也须荣贵；华盖空亡僧道、更兼阳刃则百事无成。这是歌断，不是年支三合库土的起法表。已落地华盖起法不在本批改。女命色欲僧道公卿是历史分类。",
+      "terms": [],
+      "notes": [
+        "不改已落地华盖起法",
+        "女命色欲僧道公卿不转成判断"
+      ],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "xingxue-dacheng:L0453-L0453",
+      "kind": "理论",
+      "vernacular": "劫煞歌：为灾奔走、祖业消亡、妻子不久；四位逢生又可振业；兼官贵居时上称鲠直御史；包裏遇官星称兵权。时上不是出生时柱的第五柱以外用法，仍就四柱时位读。刼煞原字不改。官职兵权是套语。",
+      "terms": [],
+      "notes": [
+        "祖业妻子御史兵权是历史分类，不转成判断",
+        "刼褁乆原字不改"
+      ],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "xingxue-dacheng:L0457-L0457",
+      "kind": "理论",
+      "vernacular": "灾煞身多祸殃，更逢阳沐；临日月时上说兄弟妻儿夭亡；加帝旺兼禄贵则变灾为福、一举成名。夭亡成名是套语。",
+      "terms": [],
+      "notes": [
+        "六亲夭亡科名是历史分类，不转成判断"
+      ],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "xingxue-dacheng:L0461-L0461",
+      "kind": "理论",
+      "vernacular": "天煞难招父命长、缠绵宿疾；除非祖业先磨灭。加冠带乡则另说衣粮福禄。父母疾病是历史分类。䧟原字不改。",
+      "terms": [],
+      "notes": [
+        "父命宿疾祖业不转成疾病或亲属判断"
+      ],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "xingxue-dacheng:L0465-L0465",
+      "kind": "理论",
+      "vernacular": "地煞难招母命长，须知前后唤人娘；在舍愁闷、南北衣资另说。逢贵禄乡则修学文章或营运财宝。前后唤人娘是旧式再婚套语，不转成对现实用户的婚姻判断。",
+      "terms": [],
+      "notes": [
+        "母命再婚文章财宝是历史分类，不转成判断"
       ],
       "review": "source-reviewed",
       "verified": false
