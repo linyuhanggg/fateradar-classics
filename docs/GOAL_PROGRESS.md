@@ -4,6 +4,15 @@
 
 两仓均为 `codex/full-library-completion`：古籍 `/Users/yuhanglin/.codex/worktrees/fateradar-classics-grok-full-library`；产品 `/Users/yuhanglin/.codex/worktrees/fateradar-product-grok-full-library`。原接手基准古籍2396e4c、产品8f1ca84。原main及他人admin/billing/.claude不改。本目标尚未合main或部署。
 
+## 最新接续：三命148段至1382，金舆异说及两例明确派生输入
+
+上一轮592e434/7182229已推送，属实际进展。本轮cf06e78完成金舆L1343–1344、驿马L1348–1382两主段8小节，累计148/970主段257小节；下一L1386总论禄马。
+
+- 金舆禄前二辰与马前二辰为两说；马支、二十马柱、十二马类、御策鞭策、四专生旺纳音等不同层不混成标签即用。嘶风缺起法、壬亥/丙巳及语段断裂原留，不编补。
+- 乘軺原丁亥年四月壬寅日己酉时，月干乙依五虎推；御策原甲子年正月辛丑日卯时，月丙寅/时辛卯依公式推。两例在名称和notes明确原给/派生区别，不冒称原文逐字四柱；公式核对记录docs/review/sanming-horse-derived-inputs-2026-09-09.json，无公历地点及结果预期。
+- 固定cf06e78728043d9bf1612c71ec0e574a2d1a6def导出，2078e30收录案例3028/3007可复算输入，仅新增2无删除，冲突/重复及verified0保持；核notes派生说明保留、无solarDate/expected。注释148entries验证0错。
+- 原文/ID/verified保持，无运行修改；知识未导出，产品仍abb9316/21927、行为运行e43cd38。nmem上下文与金舆检索成功（仅Nowledge通道），全目标active，未合main或部署；继续总论禄马及全库八术/页面总范围。
+
 ## 最新接续：三命卷三禄论至1339，146主段249小节
 
 上一轮7b2afc9/abb9316/7ac7275及产品09725da已推送，属实际进展。本轮592e434新增卷三题记、十干禄L1297–1310、多类禄L1314–1339，共3主段12小节，累计146/970主段249小节；下一L1343金舆。
