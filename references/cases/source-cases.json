@@ -31336,6 +31336,112 @@
       "verified": false
     },
     {
+      "id": "sanming-tonghui:L3234-L3235:case-1",
+      "bookSlug": "sanming-tonghui",
+      "name": "专财丙申原例一",
+      "kind": "source_case",
+      "pillars": [
+        "甲辰",
+        "戊辰",
+        "丙申",
+        "丙申"
+      ],
+      "inputBasis": "four-pillars",
+      "scope": [
+        "十神关系",
+        "四柱组合条件"
+      ],
+      "unavailable": [
+        "公历生日",
+        "交节后天数",
+        "出生地与时制",
+        "起运"
+      ],
+      "canRecompute": true,
+      "reading": "专财。\n\n【丙申与甲己巳两种，L3234–3235】丙申时两丙、申虚引巳禄又巳申合取庚财为原格论，不补实盘巳或抹巳申刑合不同层。甲己巳时需身财俱旺，木旺月土多、土旺月木多看相称。两完整丙例已坐申有实际庚财，虚引不冒称真实四柱新增禄。",
+      "notes": [
+        "原文/ID/verified保持，财星与实际财富不同，原人物官职亲属寿夭仅文献称谓；无生日或效验expected。"
+      ],
+      "source": {
+        "paragraphId": "sanming-tonghui:L3234-L3235",
+        "file": "sources/fulltext/bazi/sanming-tonghui/fulltext.md",
+        "startLine": 3234,
+        "endLine": 3235
+      },
+      "verified": false
+    },
+    {
+      "id": "sanming-tonghui:L3234-L3235:case-2",
+      "bookSlug": "sanming-tonghui",
+      "name": "专财丙申原例二",
+      "kind": "source_case",
+      "pillars": [
+        "癸酉",
+        "庚申",
+        "丙子",
+        "丙申"
+      ],
+      "inputBasis": "four-pillars",
+      "scope": [
+        "十神关系",
+        "四柱组合条件"
+      ],
+      "unavailable": [
+        "公历生日",
+        "交节后天数",
+        "出生地与时制",
+        "起运"
+      ],
+      "canRecompute": true,
+      "reading": "专财。\n\n【丙申与甲己巳两种，L3234–3235】丙申时两丙、申虚引巳禄又巳申合取庚财为原格论，不补实盘巳或抹巳申刑合不同层。甲己巳时需身财俱旺，木旺月土多、土旺月木多看相称。两完整丙例已坐申有实际庚财，虚引不冒称真实四柱新增禄。",
+      "notes": [
+        "原文/ID/verified保持，财星与实际财富不同，原人物官职亲属寿夭仅文献称谓；无生日或效验expected。"
+      ],
+      "source": {
+        "paragraphId": "sanming-tonghui:L3234-L3235",
+        "file": "sources/fulltext/bazi/sanming-tonghui/fulltext.md",
+        "startLine": 3234,
+        "endLine": 3235
+      },
+      "verified": false,
+      "samePillarsAs": "sanming-tonghui:L1774-L1855:case-17"
+    },
+    {
+      "id": "sanming-tonghui:L3243-L3243",
+      "bookSlug": "sanming-tonghui",
+      "name": "原题毕状元天财例",
+      "kind": "source_case",
+      "pillars": [
+        "己巳",
+        "癸酉",
+        "庚辰",
+        "甲申"
+      ],
+      "inputBasis": "four-pillars",
+      "scope": [
+        "十神关系",
+        "四柱组合条件"
+      ],
+      "unavailable": [
+        "公历生日",
+        "交节后天数",
+        "出生地与时制",
+        "起运"
+      ],
+      "canRecompute": true,
+      "reading": "日坐天财。\n\n【年干克墓与日坐库，L3243–3243】原先戊己土克水墓辰，再诗年干克下为天财，毕状元己巳癸酉庚辰甲申例日庚财木非水；年己土与日辰水库、日主庚财需分层，不能一概叫庚日坐水财。原题身份不考补具体人物生日。",
+      "notes": [
+        "原文/ID/verified保持，财星与实际财富不同，原人物官职亲属寿夭仅文献称谓；无生日或效验expected。"
+      ],
+      "source": {
+        "paragraphId": "sanming-tonghui:L3243-L3243",
+        "file": "sources/fulltext/bazi/sanming-tonghui/fulltext.md",
+        "startLine": 3243,
+        "endLine": 3243
+      },
+      "verified": false
+    },
+    {
       "id": "ziping-zhenquan:L0251-L0255",
       "bookSlug": "ziping-zhenquan",
       "name": "五、論十干合而不合·正文命例1",
@@ -225875,5 +225981,5 @@
       "verified": false
     }
   ],
-  "sourceRevision": "0e7d148884ca634f80b12464db656673d20a7abf"
+  "sourceRevision": "afc0901412731e0c0fc6e3b55bdc1defc09920f6"
 }
