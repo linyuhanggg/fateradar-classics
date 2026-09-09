@@ -4,6 +4,14 @@
 
 两仓均为 `codex/full-library-completion`：古籍 `/Users/yuhanglin/.codex/worktrees/fateradar-classics-grok-full-library`；产品 `/Users/yuhanglin/.codex/worktrees/fateradar-product-grok-full-library`。原接手基准古籍2396e4c、产品8f1ca84。原main及他人admin/billing/.claude不改。本目标尚未合main或部署。
 
+## 最新接续：禄劫外来支藏直接取用
+
+古籍仍999a69e/539段。本轮不新增注释，补产品禄劫岁运里「外来支藏直接取用」：本命尚未成路线时，来支本气财或食伤有另一处真根、来干又不是同类透出，按李知府支财生无根透官、食伤化劫生无根透财复查，不把岁运当第5/6出生柱。
+
+- 来干已透财/透食伤则明确不能把同柱支藏当支藏取用。隔位救应、印护伤官、官通财印仍信息不足，不调用完整 `assessLuRen(context)`，不改本命，不推事件，未启用成格/破格。
+- 产品3889935：geju-transits 新增 `luren-incoming-branch-wealth` / `luren-incoming-branch-food`，测试与 ART_READING_FIELD_MAP、implementation 记录；.claude 未动。禄劫岁运相关测试 13 项及同源回归通过。未做浏览器总验收，未宣称全回归。
+- 三命下一仍安静守分4560–4561、横夭少年4565–4567。隔位救应与其他七术栏目免费解释仍待做。全目标 active，未合main或部署。
+
 ## 最新接续：岁运免费解释改消费格局复查
 
 古籍仍527d5bb/539段。本轮不新增注释，改产品八字12入口的岁运栏：`annotateLuck` 已固定待综合并调用 `compareGejuTransit`，免费正文却仍写成喜忌加权。现 `buildBaziFreeReading().luck` 展示本命路线、加入岁运后的 after、summary、unresolved 与 limitation。
