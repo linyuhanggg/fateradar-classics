@@ -14679,6 +14679,374 @@
           "notes": []
         }
       ]
+    },
+    {
+      "paragraphId": "sanming-tonghui:L3602-L3607",
+      "kind": "理论",
+      "vernacular": "六乙鼠贵。\n\n【丙子遥巳申与官杀显露，L3602–3603】乙丙子时子贵不用申，丙遥巳合申带庚是虚官链，不添实巳申辰；需木印月身旺，忌丑午冲绊及庚辛显，但辛弱丙丁制合另可。\n\n【两子夹忌与月令改格，L3604–3607】两子夹卯或丑原作交夹贵例，不是子卯刑子丑合不存在。夏伤官、庚申月实官、季财库应以实际月令取用；首忌辛原壬寅辛亥例辛可合制，原例外不隐去。",
+      "terms": [],
+      "notes": [
+        "三原例四柱直接给出，无生日或expected，verified false。"
+      ],
+      "review": "source-reviewed",
+      "verified": false,
+      "subsections": [
+        {
+          "id": "S001",
+          "title": "丙子遥巳申与官杀显露",
+          "startLine": 3602,
+          "endLine": 3603,
+          "vernacular": "乙丙子时子贵不用申，丙遥巳合申带庚是虚官链，不添实巳申辰；需木印月身旺，忌丑午冲绊及庚辛显，但辛弱丙丁制合另可。",
+          "terms": [],
+          "notes": []
+        },
+        {
+          "id": "S002",
+          "title": "两子夹忌与月令改格",
+          "startLine": 3604,
+          "endLine": 3607,
+          "vernacular": "两子夹卯或丑原作交夹贵例，不是子卯刑子丑合不存在。夏伤官、庚申月实官、季财库应以实际月令取用；首忌辛原壬寅辛亥例辛可合制，原例外不隐去。",
+          "terms": [],
+          "notes": []
+        }
+      ],
+      "cases": [
+        {
+          "kind": "source_case",
+          "name": "鼠贵辛亥月原例",
+          "pillars": [
+            "壬寅",
+            "辛亥",
+            "乙未",
+            "丙子"
+          ],
+          "inputBasis": "four-pillars",
+          "canRecompute": true
+        },
+        {
+          "kind": "source_case",
+          "name": "两子夹卯鼠贵原例",
+          "pillars": [
+            "己丑",
+            "丙子",
+            "乙卯",
+            "丙子"
+          ],
+          "inputBasis": "four-pillars",
+          "canRecompute": true
+        },
+        {
+          "kind": "source_case",
+          "name": "两子夹丑鼠贵原例",
+          "pillars": [
+            "丁巳",
+            "壬子",
+            "乙丑",
+            "丙子"
+          ],
+          "inputBasis": "four-pillars",
+          "canRecompute": true
+        }
+      ]
+    },
+    {
+      "paragraphId": "sanming-tonghui:L3611-L3620",
+      "kind": "理论",
+      "vernacular": "日禄归时诸法。\n\n【七干禄时与别格，L3611–3612】首甲寅丁午等为日干加时支列表，不当非法完整日柱；乙己卯时偏财、丙癸巳官、辛丁酉杀排除，后例却收乙丙，保留前限定与后广论不一致。月有财官按财官；聚福、互换年时/日時另分，不把所有禄互见同法。\n\n【建禄分禄与前两例，L3613–3614】重月禄改建禄、同干分禄与各自归禄不同。壬午庾戌壬子辛亥非法庾戌照原不可复算，戊辰科不是出生柱。三丙申癸巳原以官星坐禄并虚冲寅生，不能实盘补寅。\n\n【印德伤官互制，L3615–3616】二辛丙合去、丁壬木合、丙戌戊午印化、己亥伤官庚合乙等原各路，根气与作用成立未独立验证。原戊互禄、庚真金等层与基础五行不混，不从合字删除原官杀事实。\n\n【杀财归禄与能任，L3617–3618】戊申自生是土随水口径，年甲杀寅禄与二申制甲不同于日主禄巳。丁丑财库亥壬制丙、戊子多财日印归巳等各路，官杀岁运能否任须气势，不按没官星一条抹去这些例子。\n\n【诗诀无官与原例官杀并存，L3619–3620】末不喜官杀与前官星坐禄、逢杀多例有范围分歧，保留而不统一为归禄必无官。原子刑卯局不破不取消真实刑关系；所有名利亲属断语只原文。",
+      "terms": [],
+      "notes": [
+        "11组原给，庾戌非法柱保留不改庚戌；原官职年份不补公历，案例无expected。相同旧例另出处解释保留。"
+      ],
+      "review": "source-reviewed",
+      "verified": false,
+      "subsections": [
+        {
+          "id": "S001",
+          "title": "七干禄时与别格",
+          "startLine": 3611,
+          "endLine": 3612,
+          "vernacular": "首甲寅丁午等为日干加时支列表，不当非法完整日柱；乙己卯时偏财、丙癸巳官、辛丁酉杀排除，后例却收乙丙，保留前限定与后广论不一致。月有财官按财官；聚福、互换年时/日時另分，不把所有禄互见同法。",
+          "terms": [],
+          "notes": []
+        },
+        {
+          "id": "S002",
+          "title": "建禄分禄与前两例",
+          "startLine": 3613,
+          "endLine": 3614,
+          "vernacular": "重月禄改建禄、同干分禄与各自归禄不同。壬午庾戌壬子辛亥非法庾戌照原不可复算，戊辰科不是出生柱。三丙申癸巳原以官星坐禄并虚冲寅生，不能实盘补寅。",
+          "terms": [],
+          "notes": []
+        },
+        {
+          "id": "S003",
+          "title": "印德伤官互制",
+          "startLine": 3615,
+          "endLine": 3616,
+          "vernacular": "二辛丙合去、丁壬木合、丙戌戊午印化、己亥伤官庚合乙等原各路，根气与作用成立未独立验证。原戊互禄、庚真金等层与基础五行不混，不从合字删除原官杀事实。",
+          "terms": [],
+          "notes": []
+        },
+        {
+          "id": "S004",
+          "title": "杀财归禄与能任",
+          "startLine": 3617,
+          "endLine": 3618,
+          "vernacular": "戊申自生是土随水口径，年甲杀寅禄与二申制甲不同于日主禄巳。丁丑财库亥壬制丙、戊子多财日印归巳等各路，官杀岁运能否任须气势，不按没官星一条抹去这些例子。",
+          "terms": [],
+          "notes": []
+        },
+        {
+          "id": "S005",
+          "title": "诗诀无官与原例官杀并存",
+          "startLine": 3619,
+          "endLine": 3620,
+          "vernacular": "末不喜官杀与前官星坐禄、逢杀多例有范围分歧，保留而不统一为归禄必无官。原子刑卯局不破不取消真实刑关系；所有名利亲属断语只原文。",
+          "terms": [],
+          "notes": []
+        }
+      ],
+      "cases": [
+        {
+          "kind": "source_case",
+          "name": "青云得路乙日原例",
+          "pillars": [
+            "戊子",
+            "甲寅",
+            "乙亥",
+            "己卯"
+          ],
+          "inputBasis": "four-pillars",
+          "canRecompute": true
+        },
+        {
+          "kind": "source_case",
+          "name": "归禄原庾戌月疑例",
+          "pillars": [
+            "壬午",
+            "庾戌",
+            "壬子",
+            "辛亥"
+          ],
+          "inputBasis": "four-pillars",
+          "canRecompute": false
+        },
+        {
+          "kind": "source_case",
+          "name": "官星坐禄丙日原例",
+          "pillars": [
+            "丙申",
+            "丙申",
+            "丙申",
+            "癸巳"
+          ],
+          "inputBasis": "four-pillars",
+          "canRecompute": true
+        },
+        {
+          "kind": "source_case",
+          "name": "归禄二德原例",
+          "pillars": [
+            "辛亥",
+            "辛卯",
+            "甲寅",
+            "丙寅"
+          ],
+          "inputBasis": "four-pillars",
+          "canRecompute": true
+        },
+        {
+          "kind": "source_case",
+          "name": "归禄印绶原例一",
+          "pillars": [
+            "丁未",
+            "壬子",
+            "甲子",
+            "丙寅"
+          ],
+          "inputBasis": "four-pillars",
+          "canRecompute": true
+        },
+        {
+          "kind": "source_case",
+          "name": "归禄印绶原例二",
+          "pillars": [
+            "壬寅",
+            "丙午",
+            "甲辰",
+            "丙寅"
+          ],
+          "inputBasis": "four-pillars",
+          "canRecompute": true
+        },
+        {
+          "kind": "source_case",
+          "name": "归禄印化刃原例",
+          "pillars": [
+            "丙戌",
+            "癸巳",
+            "戊午",
+            "丁巳"
+          ],
+          "inputBasis": "four-pillars",
+          "canRecompute": true
+        },
+        {
+          "kind": "source_case",
+          "name": "归禄伤官原例",
+          "pillars": [
+            "壬辰",
+            "乙巳",
+            "己亥",
+            "庚午"
+          ],
+          "inputBasis": "four-pillars",
+          "canRecompute": true
+        },
+        {
+          "kind": "source_case",
+          "name": "归禄逢杀原例",
+          "pillars": [
+            "甲申",
+            "丙寅",
+            "戊申",
+            "丁巳"
+          ],
+          "inputBasis": "four-pillars",
+          "canRecompute": true
+        },
+        {
+          "kind": "source_case",
+          "name": "归禄逢财原例一",
+          "pillars": [
+            "己亥",
+            "丙寅",
+            "丁丑",
+            "丙午"
+          ],
+          "inputBasis": "four-pillars",
+          "canRecompute": true
+        },
+        {
+          "kind": "source_case",
+          "name": "归禄逢财原例二",
+          "pillars": [
+            "甲子",
+            "丙子",
+            "戊子",
+            "丁巳"
+          ],
+          "inputBasis": "four-pillars",
+          "canRecompute": true
+        }
+      ]
+    },
+    {
+      "paragraphId": "sanming-tonghui:L3624-L3629",
+      "kind": "理论",
+      "vernacular": "拱禄拱贵。\n\n【同干日时虚夹，L3624–3625】五组拱禄五组拱贵须同干日時、月气、身禄贵旺，虚位忌填实空亡及刑冲伤害。癸亥癸丑拱子等不补子实支，贵包括官与天乙不能只用一个贵人表。\n\n【大小范围与提纲优先，L3626–3629】小中大方面虚拱含物是什么、能否承受克制与会气，原大范围不可乱取；戊子甲寅被克不能拱例与一般夹支不同。月令有用先取提纲，无月用才用此奇，不以相邻时支自动判拱格。",
+      "terms": [],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false,
+      "subsections": [
+        {
+          "id": "S001",
+          "title": "同干日时虚夹",
+          "startLine": 3624,
+          "endLine": 3625,
+          "vernacular": "五组拱禄五组拱贵须同干日時、月气、身禄贵旺，虚位忌填实空亡及刑冲伤害。癸亥癸丑拱子等不补子实支，贵包括官与天乙不能只用一个贵人表。",
+          "terms": [],
+          "notes": []
+        },
+        {
+          "id": "S002",
+          "title": "大小范围与提纲优先",
+          "startLine": 3626,
+          "endLine": 3629,
+          "vernacular": "小中大方面虚拱含物是什么、能否承受克制与会气，原大范围不可乱取；戊子甲寅被克不能拱例与一般夹支不同。月令有用先取提纲，无月用才用此奇，不以相邻时支自动判拱格。",
+          "terms": [],
+          "notes": []
+        }
+      ]
+    },
+    {
+      "paragraphId": "sanming-tonghui:L3633-L3633",
+      "kind": "理论",
+      "vernacular": "冲禄。\n\n【无实禄再同支并冲，L3633–3633】庚寅再寅冲申、甲申再申冲寅无实禄为前提；三例原有巳或辛卯转取不同干禄，基础作用不可只凭标题定。乙卯甲申辛卯辛卯之辛卯实际冲酉虚禄，不增真实酉。",
+      "terms": [],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false,
+      "subsections": [
+        {
+          "id": "S001",
+          "title": "无实禄再同支并冲",
+          "startLine": 3633,
+          "endLine": 3633,
+          "vernacular": "庚寅再寅冲申、甲申再申冲寅无实禄为前提；三例原有巳或辛卯转取不同干禄，基础作用不可只凭标题定。乙卯甲申辛卯辛卯之辛卯实际冲酉虚禄，不增真实酉。",
+          "terms": [],
+          "notes": []
+        }
+      ],
+      "cases": [
+        {
+          "kind": "source_case",
+          "name": "冲禄庚寅原例",
+          "pillars": [
+            "己巳",
+            "丁丑",
+            "庚寅",
+            "戊寅"
+          ],
+          "inputBasis": "four-pillars",
+          "canRecompute": true
+        },
+        {
+          "kind": "source_case",
+          "name": "冲禄甲申原例",
+          "pillars": [
+            "辛巳",
+            "乙未",
+            "甲申",
+            "壬申"
+          ],
+          "inputBasis": "four-pillars",
+          "canRecompute": true
+        },
+        {
+          "kind": "source_case",
+          "name": "冲禄辛卯原例",
+          "pillars": [
+            "乙卯",
+            "甲申",
+            "辛卯",
+            "辛卯"
+          ],
+          "inputBasis": "four-pillars",
+          "canRecompute": true
+        }
+      ]
+    },
+    {
+      "paragraphId": "sanming-tonghui:L3637-L3638",
+      "kind": "理论",
+      "vernacular": "六壬趋艮。\n\n【寅时暗禄与食财路线，L3637–3638】壬甲寅时合出亥禄，壬寅壬辰为正；甲食生丙财及暗邀己官辛印又是并列路径，忌午合申冲/实官财。明财印透可奇与忌填实区别未完全定义，不补虚亥己辛，不能用一次日时匹配代替取用。",
+      "terms": [],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false,
+      "subsections": [
+        {
+          "id": "S001",
+          "title": "寅时暗禄与食财路线",
+          "startLine": 3637,
+          "endLine": 3638,
+          "vernacular": "壬甲寅时合出亥禄，壬寅壬辰为正；甲食生丙财及暗邀己官辛印又是并列路径，忌午合申冲/实官财。明财印透可奇与忌填实区别未完全定义，不补虚亥己辛，不能用一次日时匹配代替取用。",
+          "terms": [],
+          "notes": []
+        }
+      ]
     }
   ]
 }
