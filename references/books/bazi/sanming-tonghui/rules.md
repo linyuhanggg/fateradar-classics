@@ -281,50 +281,50 @@
 
 ## R-03-12 元辰（大耗）
 
-- **rule_statement**：元辰（大耗）取法以年支查（子年见未、丑年见申等）；主损耗、失脱、变动。
+- **rule_statement**：元辰冲前后法须分阳男阴女与阴男阳女，且有遇合反吉及子平原有七煞岁运复遇的另一解释，不能只用固定年支对照判损耗。
 - **source_chapter**：vol-03/yuanchen
 - **applicable_to**：神煞辅证
-- **caveats**：元辰为凶煞但非必应；需结合十神与格局判断。
+- **caveats**：阳男阴女冲前一位，阴男阳女冲后一位；原例甲子男乙未、乙丑男甲午。；作者批评不分男女的旧歌，并举巫伋滕康反例；身体品行及灾病旧断不作现实事实。 原文 L1662–L1667。
 - **verification_status**：pending_verification
 
 ## R-03-13 暗金的煞
 
-- **rule_statement**：暗金的煞取法以年支日支查（子午年日见巳、丑未年日见酉等）；为五行金之煞气，主刑伤意外。
+- **rule_statement**：暗金的煞以四仲子午卯酉取巳、四孟寅申巳亥取酉、四季辰戌丑未取丑，分吟呻破碎白衣；旺相吉神救且入贵格原可无害。
 - **source_chapter**：vol-03/anjin-desha
 - **applicable_to**：神煞辅证
-- **caveats**：煞名虽凶，需有刑冲引动方验；不可一见即断凶。
+- **caveats**：旧摘要丑未取酉错误，应属四季取丑；本篇还区分择日以月取，不无据固定年日并查。；原并神、旺衰及救应条件保留，没有必须刑冲引动才验的统一前提；不据标签断刑伤。 原文 L1671–L1676。
 - **verification_status**：pending_verification
 
 ## R-03-14 灾煞
 
-- **rule_statement**：灾煞取法为三合局之沐浴位（申子辰见午、亥卯未见酉等）；主突发灾祸、意外变动。
+- **rule_statement**：灾煞取三合局将星的对冲位：申子辰午、寅午戌子、巳酉丑卯、亥卯未酉；须分克身与官印生旺福神扶助，不能称三合沐浴位。
 - **source_chapter**：vol-03/zaisha
 - **applicable_to**：神煞辅证
-- **caveats**：灾煞需有冲克引动方验；流年遇之需结合全局判断。
+- **caveats**：作者说申子辰全遇午才白虎，与灾煞微不同；不要混同全部白虎法。；原明确福神官印生旺可用，不以单一落柱预言意外。 原文 L1676–L1678。
 - **verification_status**：pending_verification
 
 ## R-03-15 六厄
 
-- **rule_statement**：六厄煞取法以日干查地支（甲见卯、乙见辰等）；主困厄阻滞。
+- **rule_statement**：六厄按三合局五行死位取申子辰卯、寅午戌酉、亥卯未午、巳酉丑子，有救护扶持、生旺贵气另论。
 - **source_chapter**：vol-03/lui-e
 - **applicable_to**：神煞辅证
-- **caveats**：六厄为凶煞但力量较轻；不可独断厄运。
+- **caveats**：不是日干甲卯乙辰表；马前一辰劫后二辰为本段解释。；可吉与究竟蹇滞原说并存，不擅造轻重权重或现实厄运。 原文 L1682–L1682。
 - **verification_status**：pending_verification
 
 ## R-03-16 勾绞
 
-- **rule_statement**：勾煞、绞煞取法以年支日支查（子见卯、丑见辰等）；主口舌是非、牵连纠缠。
+- **rule_statement**：勾绞以命前三辰与后三辰分取，并依阳男阴女、阴男阳女互换勾绞；须再看身煞生克、福救及两位是否俱全。
 - **source_chapter**：vol-03/goujiao
 - **applicable_to**：神煞辅证
-- **caveats**：勾绞主口舌但非决定性因素；需结合官非类十神综合判断。
+- **caveats**：阳男阴女前三勾后三绞，阴男阳女反之，不是统一年日支表。；身克煞与煞克身方向不同，无克与福同宫另论，不据名称直接判口舌官非。 原文 L1686–L1688。
 - **verification_status**：pending_verification
 
 ## R-03-17 十恶大败
 
-- **rule_statement**：十恶大败日以年柱干支查日柱，特定日柱（甲辰、乙巳、丙申等十日）为十恶大败；主破败不顺、仓库空乏。
+- **rule_statement**：十恶大败篇并列日禄入旬空、元白经特定年日冲、玄黄经年月日与旬等不同取法，原明有吉神贵气可吉，不是固定年查十日即断破败。
 - **source_chapter**：vol-03/shi-e-dabai
 - **applicable_to**：古法日柱禁忌
-- **caveats**：古法日柱禁忌，现代仅作参考；十恶大败日有贵人解救者可减凶。
+- **caveats**：首日表乙丑与后两说己丑不一致，保留原字待校，不默改表。；原以日上见为是，但后说另加年/月/旬条件，须分法；四废与天地转另论。 原文 L1712–L1716。
 - **verification_status**：pending_verification
 
 ## R-05-01 印食官财之名义
