@@ -1,7 +1,7 @@
 {
   "bookSlug": "sanming-tonghui",
   "sourceTitle": "三命通会（四库全书本主文本）",
-  "scopeNote": "主本逐段校读中，当前107主段至L843、134小节，下一L847论地支属相。地支、天文/地理比附和纳音分层；四原书四柱案例及2662其他版本保留。source-reviewed为电子语义阅读，非原刊校勘或效验验证，verified均false。",
+  "scopeNote": "主本逐段校读中，当前119主段至L904、151小节，下一L908论四时节气。人元多表与醉醒子反定日分层，算术不合不修凑；四原书四柱案例、2662其他版本保留。source-reviewed为电子语义阅读，非原刊校勘或效验验证，verified均false。",
   "entries": [
     {
       "paragraphId": "sanming-tonghui:L0003-L0006",
@@ -2668,6 +2668,313 @@
           "startLine": 840,
           "endLine": 843,
           "vernacular": "湿泥蔽炉金、剑成再火坏、木浮水泛不能生火、冬湿土难堤水等限定材性和作用。末固用不如固本、花繁不若根深指基础支持，不是仅统计根的个数。北金恋水等说明生助过度也害，既不能生即吉，也不能把死木水论等差异默默润平。",
+          "terms": [],
+          "notes": []
+        }
+      ]
+    },
+    {
+      "paragraphId": "sanming-tonghui:L0847-L0852",
+      "kind": "理论",
+      "vernacular": "属相取象及王充反论。\n\n【属相阴阳与字形，L847–848】地支属相以阴阳单双、三十六禽首者等解释，原丑属午明显与后牛组不合，保留疑牛不改原文。动物足数及蛇无足是此书象义，不用作真实动物学定义或改十二生肖映射。\n\n【兽体有缺旧说，L849–849】鼠牛虎兔等身体有缺之说属于传统比附，包含不能按现代解剖采信的说法；不从此生成医学或生物学知识断言，也不因同生肖给人贴缺陷标签。\n\n【相胜不完全随五行，L850–852】引王充先列虎犬牛羊等相胜，再用鼠不逐马、鸡不啄兔等反问五行相克不能机械解释禽兽，最后归牙齿筋力差异。反论是审读正文的一部分，不能只摘前半相克作生肖吉凶规则。",
+      "terms": [],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false,
+      "subsections": [
+        {
+          "id": "S001",
+          "title": "属相阴阳与字形",
+          "startLine": 847,
+          "endLine": 848,
+          "vernacular": "地支属相以阴阳单双、三十六禽首者等解释，原丑属午明显与后牛组不合，保留疑牛不改原文。动物足数及蛇无足是此书象义，不用作真实动物学定义或改十二生肖映射。",
+          "terms": [],
+          "notes": []
+        },
+        {
+          "id": "S002",
+          "title": "兽体有缺旧说",
+          "startLine": 849,
+          "endLine": 849,
+          "vernacular": "鼠牛虎兔等身体有缺之说属于传统比附，包含不能按现代解剖采信的说法；不从此生成医学或生物学知识断言，也不因同生肖给人贴缺陷标签。",
+          "terms": [],
+          "notes": []
+        },
+        {
+          "id": "S003",
+          "title": "相胜不完全随五行",
+          "startLine": 850,
+          "endLine": 852,
+          "vernacular": "引王充先列虎犬牛羊等相胜，再用鼠不逐马、鸡不啄兔等反问五行相克不能机械解释禽兽，最后归牙齿筋力差异。反论是审读正文的一部分，不能只摘前半相克作生肖吉凶规则。",
+          "terms": [],
+          "notes": []
+        }
+      ]
+    },
+    {
+      "paragraphId": "sanming-tonghui:L0856-L0860",
+      "kind": "理论",
+      "vernacular": "人元初分日表与年度不合。\n\n【三元与月令用神口径，L856–856】天干天元主禄、地支地元主身、支藏人元主命，和先前干禄支命纳音身三分体系不同。月令用神在此指司事之神，不自动等于已经定出的全盘喜用神。\n\n【首表分日与玉井年度数，L857–860】首表12月各30日，寅艮土5丙5甲20、四仲前气7本气23、四季余7墓5本18等，与当前7/7/16实现不同；艮坤土及巳土原字不擅指定新藏干。玉井段阳干四个各35、阴干四个各35、戊己各50相加380，原称360不合。各表只记录原数，不能选看似整齐的数覆盖原文。",
+      "terms": [],
+      "notes": [
+        "分日数字与当前SILING差异见docs/review/sanming-siling-source-comparison-2026-09-09.json；未修原文或假造缺失日期。"
+      ],
+      "review": "source-reviewed",
+      "verified": false,
+      "subsections": [
+        {
+          "id": "S001",
+          "title": "三元与月令用神口径",
+          "startLine": 856,
+          "endLine": 856,
+          "vernacular": "天干天元主禄、地支地元主身、支藏人元主命，和先前干禄支命纳音身三分体系不同。月令用神在此指司事之神，不自动等于已经定出的全盘喜用神。",
+          "terms": [],
+          "notes": []
+        },
+        {
+          "id": "S002",
+          "title": "首表分日与玉井年度数",
+          "startLine": 857,
+          "endLine": 860,
+          "vernacular": "首表12月各30日，寅艮土5丙5甲20、四仲前气7本气23、四季余7墓5本18等，与当前7/7/16实现不同；艮坤土及巳土原字不擅指定新藏干。玉井段阳干四个各35、阴干四个各35、戊己各50相加380，原称360不合。各表只记录原数，不能选看似整齐的数覆盖原文。",
+          "terms": [],
+          "notes": []
+        }
+      ]
+    },
+    {
+      "paragraphId": "sanming-tonghui:L0864-L0864",
+      "kind": "理论",
+      "vernacular": "寅卯再列分日。\n\n【寅卯再列分日，L864–864】正月已土7丙5甲18，二月乙18甲9癸3，两月各30；后一条与首表卯甲7乙23不同且有癸。这里列举先后不一定等司权时间顺序，不按正文顺序直接编轮值。",
+      "terms": [],
+      "notes": [
+        "分日数字与当前SILING差异见docs/review/sanming-siling-source-comparison-2026-09-09.json；未修原文或假造缺失日期。"
+      ],
+      "review": "source-reviewed",
+      "verified": false,
+      "subsections": [
+        {
+          "id": "S001",
+          "title": "寅卯再列分日",
+          "startLine": 864,
+          "endLine": 864,
+          "vernacular": "正月已土7丙5甲18，二月乙18甲9癸3，两月各30；后一条与首表卯甲7乙23不同且有癸。这里列举先后不一定等司权时间顺序，不按正文顺序直接编轮值。",
+          "terms": [],
+          "notes": []
+        }
+      ]
+    },
+    {
+      "paragraphId": "sanming-tonghui:L0868-L0868",
+      "kind": "理论",
+      "vernacular": "辰月再列分日。\n\n【辰月再列分日，L868–868】戊18乙9癸3共30，与首表乙7壬5戊18在干与日数均不同；墓水壬/癸的层次不能静默按标准藏干修正。",
+      "terms": [],
+      "notes": [
+        "分日数字与当前SILING差异见docs/review/sanming-siling-source-comparison-2026-09-09.json；未修原文或假造缺失日期。"
+      ],
+      "review": "source-reviewed",
+      "verified": false,
+      "subsections": [
+        {
+          "id": "S001",
+          "title": "辰月再列分日",
+          "startLine": 868,
+          "endLine": 868,
+          "vernacular": "戊18乙9癸3共30，与首表乙7壬5戊18在干与日数均不同；墓水壬/癸的层次不能静默按标准藏干修正。",
+          "terms": [],
+          "notes": []
+        }
+      ]
+    },
+    {
+      "paragraphId": "sanming-tonghui:L0872-L0872",
+      "kind": "理论",
+      "vernacular": "巳月再列分日。\n\n【巳月再列分日，L872–872】丙18戊7庚5共30，首表相同日数但次序不同；不能仅数值合计就确认列举顺序为时间顺序。四月已标题原字保留。",
+      "terms": [],
+      "notes": [
+        "分日数字与当前SILING差异见docs/review/sanming-siling-source-comparison-2026-09-09.json；未修原文或假造缺失日期。"
+      ],
+      "review": "source-reviewed",
+      "verified": false,
+      "subsections": [
+        {
+          "id": "S001",
+          "title": "巳月再列分日",
+          "startLine": 872,
+          "endLine": 872,
+          "vernacular": "丙18戊7庚5共30，首表相同日数但次序不同；不能仅数值合计就确认列举顺序为时间顺序。四月已标题原字保留。",
+          "terms": [],
+          "notes": []
+        }
+      ]
+    },
+    {
+      "paragraphId": "sanming-tonghui:L0876-L0876",
+      "kind": "理论",
+      "vernacular": "午月再列分日。\n\n【午月再列分日，L876–876】丁18丙9乙3共30，与首表丙7丁23、运行丙己丁各10均不同；乙三日不能据此改固定午藏干集合。",
+      "terms": [],
+      "notes": [
+        "分日数字与当前SILING差异见docs/review/sanming-siling-source-comparison-2026-09-09.json；未修原文或假造缺失日期。"
+      ],
+      "review": "source-reviewed",
+      "verified": false,
+      "subsections": [
+        {
+          "id": "S001",
+          "title": "午月再列分日",
+          "startLine": 876,
+          "endLine": 876,
+          "vernacular": "丁18丙9乙3共30，与首表丙7丁23、运行丙己丁各10均不同；乙三日不能据此改固定午藏干集合。",
+          "terms": [],
+          "notes": []
+        }
+      ]
+    },
+    {
+      "paragraphId": "sanming-tonghui:L0880-L0880",
+      "kind": "理论",
+      "vernacular": "未月再列分日。\n\n【未月再列分日，L880–880】已18乙5丁7共30，首表甲墓5而此乙5，不能把墓库司事说与固定藏干本中余气混成一表。",
+      "terms": [],
+      "notes": [
+        "分日数字与当前SILING差异见docs/review/sanming-siling-source-comparison-2026-09-09.json；未修原文或假造缺失日期。"
+      ],
+      "review": "source-reviewed",
+      "verified": false,
+      "subsections": [
+        {
+          "id": "S001",
+          "title": "未月再列分日",
+          "startLine": 880,
+          "endLine": 880,
+          "vernacular": "已18乙5丁7共30，首表甲墓5而此乙5，不能把墓库司事说与固定藏干本中余气混成一表。",
+          "terms": [],
+          "notes": []
+        }
+      ]
+    },
+    {
+      "paragraphId": "sanming-tonghui:L0884-L0884",
+      "kind": "理论",
+      "vernacular": "申酉合段及酉32日。\n\n【申酉合段及酉32日，L884–884】申庚17已7戊3壬3共30，酉辛20庚7丁5共32；两月共处同一主段，不拆改ID。酉的32是原数字合计，不擅减丁两日凑30。",
+      "terms": [],
+      "notes": [
+        "分日数字与当前SILING差异见docs/review/sanming-siling-source-comparison-2026-09-09.json；未修原文或假造缺失日期。"
+      ],
+      "review": "source-reviewed",
+      "verified": false,
+      "subsections": [
+        {
+          "id": "S001",
+          "title": "申酉合段及酉32日",
+          "startLine": 884,
+          "endLine": 884,
+          "vernacular": "申庚17已7戊3壬3共30，酉辛20庚7丁5共32；两月共处同一主段，不拆改ID。酉的32是原数字合计，不擅减丁两日凑30。",
+          "terms": [],
+          "notes": []
+        }
+      ]
+    },
+    {
+      "paragraphId": "sanming-tonghui:L0888-L0888",
+      "kind": "理论",
+      "vernacular": "戌月再列分日。\n\n【戌月再列分日，L888–888】戊18辛7丁5共30，首表丙墓5而此丁5，干别分歧留存，不在无版本依据时择一冒称唯一。",
+      "terms": [],
+      "notes": [
+        "分日数字与当前SILING差异见docs/review/sanming-siling-source-comparison-2026-09-09.json；未修原文或假造缺失日期。"
+      ],
+      "review": "source-reviewed",
+      "verified": false,
+      "subsections": [
+        {
+          "id": "S001",
+          "title": "戌月再列分日",
+          "startLine": 888,
+          "endLine": 888,
+          "vernacular": "戊18辛7丁5共30，首表丙墓5而此丁5，干别分歧留存，不在无版本依据时择一冒称唯一。",
+          "terms": [],
+          "notes": []
+        }
+      ]
+    },
+    {
+      "paragraphId": "sanming-tonghui:L0892-L0892",
+      "kind": "理论",
+      "vernacular": "亥月再列分日。\n\n【亥月再列分日，L892–892】壬18甲5戊7共30，不同于首表戊5甲5壬20及运行戊7甲7壬16。亥内戊用事之说不直接更改标准亥藏干。",
+      "terms": [],
+      "notes": [
+        "分日数字与当前SILING差异见docs/review/sanming-siling-source-comparison-2026-09-09.json；未修原文或假造缺失日期。"
+      ],
+      "review": "source-reviewed",
+      "verified": false,
+      "subsections": [
+        {
+          "id": "S001",
+          "title": "亥月再列分日",
+          "startLine": 892,
+          "endLine": 892,
+          "vernacular": "壬18甲5戊7共30，不同于首表戊5甲5壬20及运行戊7甲7壬16。亥内戊用事之说不直接更改标准亥藏干。",
+          "terms": [],
+          "notes": []
+        }
+      ]
+    },
+    {
+      "paragraphId": "sanming-tonghui:L0896-L0896",
+      "kind": "理论",
+      "vernacular": "子月26日未补。\n\n【子月26日未补，L896–896】癸18壬5辛3共26，与首表壬7癸23不同。缺少的四日没有可靠归属，不自动给癸或辛；副表全年合358并不能消去本月不足。",
+      "terms": [],
+      "notes": [
+        "分日数字与当前SILING差异见docs/review/sanming-siling-source-comparison-2026-09-09.json；未修原文或假造缺失日期。"
+      ],
+      "review": "source-reviewed",
+      "verified": false,
+      "subsections": [
+        {
+          "id": "S001",
+          "title": "子月26日未补",
+          "startLine": 896,
+          "endLine": 896,
+          "vernacular": "癸18壬5辛3共26，与首表壬7癸23不同。缺少的四日没有可靠归属，不自动给癸或辛；副表全年合358并不能消去本月不足。",
+          "terms": [],
+          "notes": []
+        }
+      ]
+    },
+    {
+      "paragraphId": "sanming-tonghui:L0900-L0904",
+      "kind": "理论",
+      "vernacular": "丑月与醉醒子反对定日。\n\n【丑月另一组日数，L900–900】已18癸7辛5共30，与首表庚墓5相异。原已字保留；不能单凭正五行支藏常识删除此异文。\n\n【醉醒子四季72日说，L901–902】木火金水各72与土四季各18合360，立春阳木36、惊蛰后六日阴木36、清明后十二日土18是一套另述口径。其后批评渊源渊海余气分野长生等各几日，不能与前两表混填成第三张表。\n\n【不以三五七日限气与仅月论，L903–904】作者支持醉醒子主气纳客、初中末浅深而非固定三五七日划限，末强调这里支藏以月论、年日時不论。限定的是此处司权用事论，不据此从四柱事实中删除年日时藏干；多套方法需显式范围，尚不据本批更换运行表。",
+      "terms": [],
+      "notes": [
+        "分日数字与当前SILING差异见docs/review/sanming-siling-source-comparison-2026-09-09.json；未修原文或假造缺失日期。"
+      ],
+      "review": "source-reviewed",
+      "verified": false,
+      "subsections": [
+        {
+          "id": "S001",
+          "title": "丑月另一组日数",
+          "startLine": 900,
+          "endLine": 900,
+          "vernacular": "已18癸7辛5共30，与首表庚墓5相异。原已字保留；不能单凭正五行支藏常识删除此异文。",
+          "terms": [],
+          "notes": []
+        },
+        {
+          "id": "S002",
+          "title": "醉醒子四季72日说",
+          "startLine": 901,
+          "endLine": 902,
+          "vernacular": "木火金水各72与土四季各18合360，立春阳木36、惊蛰后六日阴木36、清明后十二日土18是一套另述口径。其后批评渊源渊海余气分野长生等各几日，不能与前两表混填成第三张表。",
+          "terms": [],
+          "notes": []
+        },
+        {
+          "id": "S003",
+          "title": "不以三五七日限气与仅月论",
+          "startLine": 903,
+          "endLine": 904,
+          "vernacular": "作者支持醉醒子主气纳客、初中末浅深而非固定三五七日划限，末强调这里支藏以月论、年日時不论。限定的是此处司权用事论，不据此从四柱事实中删除年日时藏干；多套方法需显式范围，尚不据本批更换运行表。",
           "terms": [],
           "notes": []
         }
