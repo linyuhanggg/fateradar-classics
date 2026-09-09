@@ -39156,6 +39156,76 @@
       "verified": false
     },
     {
+      "id": "sanming-tonghui:L4321-L4321",
+      "bookSlug": "sanming-tonghui",
+      "name": "包裹旗旌原例",
+      "kind": "source_case",
+      "pillars": [
+        "庚辰",
+        "丙戌",
+        "庚午",
+        "丙子"
+      ],
+      "inputBasis": "four-pillars",
+      "scope": [
+        "十神关系",
+        "四柱组合条件"
+      ],
+      "unavailable": [
+        "公历生日",
+        "交节后天数",
+        "出生地与时制",
+        "起运"
+      ],
+      "canRecompute": true,
+      "reading": "包裹旗旌。劫旗亡旌须两者，庚辰丙戌庚午丙子以庚辰庚午夹虚巳、丙戌丙子夹虚亥为包裹，实盘无巳亥不补劫亡落柱。身克杀杀克身与刃是附加判断，不据旌旗名断战争或死亡。",
+      "notes": [
+        "原文/ID/verified保持；虚拱、纳音与实际干支分别记录。胎元另记不并出生柱，无日期或效验expected。"
+      ],
+      "source": {
+        "paragraphId": "sanming-tonghui:L4321-L4321",
+        "file": "sources/fulltext/bazi/sanming-tonghui/fulltext.md",
+        "startLine": 4321,
+        "endLine": 4321
+      },
+      "verified": false
+    },
+    {
+      "id": "sanming-tonghui:L4349-L4349",
+      "bookSlug": "sanming-tonghui",
+      "name": "主旺本成原例（丁丑胎）",
+      "kind": "source_case",
+      "pillars": [
+        "庚子",
+        "丙戌",
+        "庚辰",
+        "癸未"
+      ],
+      "inputBasis": "four-pillars",
+      "scope": [
+        "十神关系",
+        "四柱组合条件"
+      ],
+      "unavailable": [
+        "公历生日",
+        "交节后天数",
+        "出生地与时制",
+        "起运"
+      ],
+      "canRecompute": true,
+      "reading": "主旺本成会一方。庚子壁上土命、丙戌屋上土月、丁丑涧下水胎、庚辰金日、癸未木时各层分开，喜无破会本气及禄马。四柱原庚子丙戌庚辰癸未、胎丁丑另记，不能称全五位同土。",
+      "notes": [
+        "原文/ID/verified保持；虚拱、纳音与实际干支分别记录。胎元另记不并出生柱，无日期或效验expected。"
+      ],
+      "source": {
+        "paragraphId": "sanming-tonghui:L4349-L4349",
+        "file": "sources/fulltext/bazi/sanming-tonghui/fulltext.md",
+        "startLine": 4349,
+        "endLine": 4349
+      },
+      "verified": false
+    },
+    {
       "id": "ziping-zhenquan:L0251-L0255",
       "bookSlug": "ziping-zhenquan",
       "name": "五、論十干合而不合·正文命例1",
@@ -233698,5 +233768,5 @@
       "verified": false
     }
   ],
-  "sourceRevision": "e459c777977a8c9e74dc1e9b643fff55597a028f"
+  "sourceRevision": "632348bfbf88ec9ac9160d057715e980c8a7e99a"
 }
