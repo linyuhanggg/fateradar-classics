@@ -2,7 +2,7 @@
   "schemaVersion": "fateradar-annotations-v1",
   "bookSlug": "wuxing-jingji",
   "sourceFile": "sources/fulltext/luming-nayin/wuxing-jingji/fulltext.md",
-  "reviewScope": "已逐段阅读电子文本宋-廖中至卷四转角进化王徽献（wuxing-jingji:L0005-L0005 至 L1775-L1775）并作语义注解。source-reviewed只指对照电子主文本，不代表影印人工核验。本批收王徽献一条人名连续四柱。",
+  "reviewScope": "已逐段阅读电子文本宋-廖中至卷四甲坤黄数五标目（wuxing-jingji:L0005-L0005 至 L1815-L1815）并作语义注解。source-reviewed只指对照电子主文本，不代表影印人工核验。本批收董德元一条人名连续四柱。",
   "entries": [
     {
       "paragraphId": "wuxing-jingji:L0005-L0005",
@@ -17062,6 +17062,450 @@
             "倌原字不改。"
           ]
         }
+      ]
+    },
+    {
+      "paragraphId": "wuxing-jingji:L1777-L1777",
+      "kind": "序跋目录",
+      "vernacular": "【转角退化】是卷四分节标目。",
+      "terms": [
+        "转角退化"
+      ],
+      "notes": [
+        "待分类作序跋目录",
+        "无人名连续四柱不收案例",
+        "目录不作理论条或现代操作步骤"
+      ],
+      "review": "source-reviewed",
+      "verified": false,
+      "relatedParagraphIds": [
+        "wuxing-jingji:L1775-L1775",
+        "wuxing-jingji:L1779-L1779"
+      ]
+    },
+    {
+      "paragraphId": "wuxing-jingji:L1779-L1779",
+      "kind": "术语",
+      "vernacular": "转角退化干支短目：甲午己巳、乙巳庚辰、丁卯壬寅、戊子癸亥、壬申丁未、辛酉丙申。是类举标目，不是人名连续四柱。",
+      "terms": [
+        "转角退化"
+      ],
+      "notes": [
+        "待分类作术语",
+        "无人名连续四柱不收案例",
+        "干支纳音类举无名，不收案例",
+        "标目不作现代操作步骤",
+        "纳音分套只归档，不改已落地子平或纳音算法"
+      ],
+      "review": "source-reviewed",
+      "verified": false,
+      "relatedParagraphIds": [
+        "wuxing-jingji:L1777-L1777",
+        "wuxing-jingji:L1781-L1781"
+      ]
+    },
+    {
+      "paragraphId": "wuxing-jingji:L1781-L1781",
+      "kind": "术语",
+      "vernacular": "转角退化干支短目：己亥甲戌、戊寅癸丑。醜原字不改。是类举标目，不是人名连续四柱。",
+      "terms": [
+        "转角退化"
+      ],
+      "notes": [
+        "待分类作术语",
+        "无人名连续四柱不收案例",
+        "醜廣信闕字兇原字不改",
+        "干支纳音类举无名，不收案例",
+        "标目不作现代操作步骤",
+        "纳音分套只归档，不改已落地子平或纳音算法"
+      ],
+      "review": "source-reviewed",
+      "verified": false,
+      "relatedParagraphIds": [
+        "wuxing-jingji:L1779-L1779",
+        "wuxing-jingji:L1783-L1783"
+      ]
+    },
+    {
+      "paragraphId": "wuxing-jingji:L1783-L1783",
+      "kind": "理论",
+      "vernacular": "以上须得日時遇之，主功名差晚到，好处有退减，岁运逢之亦歇灭，月令得地亦作贵人（此处缺字）。假令丙子年、戊戌月、辛酉日、丙申时，五十二岁作殿科，五十九岁入参政，董德元命。（广信集）。闕字廣信原字不改。董德元有人名且年月日时连续四柱，收一条source_case。不把岁运当出生柱。功名殿科参政是历史分类，不是对现实用户的判断。",
+      "terms": [
+        "转角退化",
+        "董德元",
+        "广信集"
+      ],
+      "notes": [
+        "待分类作理论",
+        "醜廣信闕字兇原字不改",
+        "官职贫富刑死是历史分类，不转成对现实用户的判断",
+        "纳音分套只归档，不改已落地子平或纳音算法",
+        "董德元收案例",
+        "不把岁运当出生柱",
+        "此处缺字原样保留"
+      ],
+      "review": "source-reviewed",
+      "verified": false,
+      "relatedParagraphIds": [
+        "wuxing-jingji:L1781-L1781",
+        "wuxing-jingji:L1785-L1785"
+      ],
+      "cases": [
+        {
+          "kind": "source_case",
+          "name": "董德元",
+          "pillars": [
+            "丙子",
+            "戊戌",
+            "辛酉",
+            "丙申"
+          ],
+          "inputBasis": "four-pillars",
+          "canRecompute": true,
+          "sourceClaim": "假令丙子年戊戌月辛酉日丙申时，五十二岁作殿科，五十九岁入参政，董德元命。",
+          "notes": [
+            "四柱齐列可按给定四柱讨论；五十二岁五十九岁不把行限当出生柱。",
+            "殿科参政是来源历史分类，不转成对现实用户的判断。"
+          ]
+        }
+      ]
+    },
+    {
+      "paragraphId": "wuxing-jingji:L1785-L1785",
+      "kind": "序跋目录",
+      "vernacular": "【天元喜纳音为财】是卷四分节标目。",
+      "terms": [
+        "天元喜纳音为财"
+      ],
+      "notes": [
+        "待分类作序跋目录",
+        "无人名连续四柱不收案例",
+        "目录不作理论条或现代操作步骤"
+      ],
+      "review": "source-reviewed",
+      "verified": false,
+      "relatedParagraphIds": [
+        "wuxing-jingji:L1783-L1783",
+        "wuxing-jingji:L1787-L1787"
+      ]
+    },
+    {
+      "paragraphId": "wuxing-jingji:L1787-L1787",
+      "kind": "术语",
+      "vernacular": "天元喜纳音为财短目：甲己喜水，乙庚喜木，丙辛喜火，丁壬喜土，戊癸喜金。是类举标目，不是人名连续四柱。",
+      "terms": [
+        "天元喜纳音为财"
+      ],
+      "notes": [
+        "待分类作术语",
+        "无人名连续四柱不收案例",
+        "干支纳音类举无名，不收案例",
+        "标目不作现代操作步骤",
+        "纳音分套只归档，不改已落地子平或纳音算法"
+      ],
+      "review": "source-reviewed",
+      "verified": false,
+      "relatedParagraphIds": [
+        "wuxing-jingji:L1785-L1785",
+        "wuxing-jingji:L1789-L1789"
+      ]
+    },
+    {
+      "paragraphId": "wuxing-jingji:L1789-L1789",
+      "kind": "序跋目录",
+      "vernacular": "【天元喜纳音四时正旺】是卷四分节标目。",
+      "terms": [
+        "天元喜纳音四时正旺"
+      ],
+      "notes": [
+        "待分类作序跋目录",
+        "无人名连续四柱不收案例",
+        "目录不作理论条或现代操作步骤"
+      ],
+      "review": "source-reviewed",
+      "verified": false,
+      "relatedParagraphIds": [
+        "wuxing-jingji:L1787-L1787",
+        "wuxing-jingji:L1791-L1791"
+      ]
+    },
+    {
+      "paragraphId": "wuxing-jingji:L1791-L1791",
+      "kind": "术语",
+      "vernacular": "天元喜纳音四时正旺短目：甲己喜土四季生，乙庚喜金秋生，丙辛喜水冬生，丁壬喜木春生。是类举标目，不是人名连续四柱。",
+      "terms": [
+        "天元喜纳音四时正旺"
+      ],
+      "notes": [
+        "待分类作术语",
+        "无人名连续四柱不收案例",
+        "干支纳音类举无名，不收案例",
+        "标目不作现代操作步骤",
+        "纳音分套只归档，不改已落地子平或纳音算法"
+      ],
+      "review": "source-reviewed",
+      "verified": false,
+      "relatedParagraphIds": [
+        "wuxing-jingji:L1789-L1789",
+        "wuxing-jingji:L1793-L1793"
+      ]
+    },
+    {
+      "paragraphId": "wuxing-jingji:L1793-L1793",
+      "kind": "术语",
+      "vernacular": "戊癸喜火夏生。（神白经）。是类举收束兼称引署，不是人名连续四柱。",
+      "terms": [
+        "戊癸",
+        "神白经"
+      ],
+      "notes": [
+        "待分类作术语",
+        "无人名连续四柱不收案例",
+        "干支纳音类举无名，不收案例",
+        "标目不作现代操作步骤",
+        "纳音分套只归档，不改已落地子平或纳音算法"
+      ],
+      "review": "source-reviewed",
+      "verified": false,
+      "relatedParagraphIds": [
+        "wuxing-jingji:L1791-L1791",
+        "wuxing-jingji:L1795-L1795"
+      ]
+    },
+    {
+      "paragraphId": "wuxing-jingji:L1795-L1795",
+      "kind": "序跋目录",
+      "vernacular": "【类破杀】是卷四分节标目。",
+      "terms": [
+        "类破杀"
+      ],
+      "notes": [
+        "待分类作序跋目录",
+        "无人名连续四柱不收案例",
+        "目录不作理论条或现代操作步骤"
+      ],
+      "review": "source-reviewed",
+      "verified": false,
+      "relatedParagraphIds": [
+        "wuxing-jingji:L1793-L1793",
+        "wuxing-jingji:L1797-L1797"
+      ]
+    },
+    {
+      "paragraphId": "wuxing-jingji:L1797-L1797",
+      "kind": "术语",
+      "vernacular": "类破杀短目：甲己人见乙，乙庚人见丙，丙辛人见丁，丁壬人见戊，戊癸人见己。甲己人等是干支类举标目，不是人名连续四柱。",
+      "terms": [
+        "类破杀"
+      ],
+      "notes": [
+        "待分类作术语",
+        "无人名连续四柱不收案例",
+        "干支纳音类举无名，不收案例",
+        "标目不作现代操作步骤",
+        "纳音分套只归档，不改已落地子平或纳音算法"
+      ],
+      "review": "source-reviewed",
+      "verified": false,
+      "relatedParagraphIds": [
+        "wuxing-jingji:L1795-L1795",
+        "wuxing-jingji:L1799-L1799"
+      ]
+    },
+    {
+      "paragraphId": "wuxing-jingji:L1799-L1799",
+      "kind": "理论",
+      "vernacular": "以上又称妒合杀，谓合中见克也，主好事被人破害。（广信集）。廣信原字不改。破害是书中取象，不是对现实用户的判断。无连续四柱。",
+      "terms": [
+        "妒合杀",
+        "广信集"
+      ],
+      "notes": [
+        "待分类作理论",
+        "无人名连续四柱不收案例",
+        "醜廣信闕字兇原字不改",
+        "官职贫富刑死是历史分类，不转成对现实用户的判断",
+        "纳音分套只归档，不改已落地子平或纳音算法"
+      ],
+      "review": "source-reviewed",
+      "verified": false,
+      "relatedParagraphIds": [
+        "wuxing-jingji:L1797-L1797",
+        "wuxing-jingji:L1801-L1801"
+      ]
+    },
+    {
+      "paragraphId": "wuxing-jingji:L1801-L1801",
+      "kind": "序跋目录",
+      "vernacular": "【真鬼刑疾】是卷四分节标目。",
+      "terms": [
+        "真鬼刑疾"
+      ],
+      "notes": [
+        "待分类作序跋目录",
+        "无人名连续四柱不收案例",
+        "目录不作理论条或现代操作步骤"
+      ],
+      "review": "source-reviewed",
+      "verified": false,
+      "relatedParagraphIds": [
+        "wuxing-jingji:L1799-L1799",
+        "wuxing-jingji:L1803-L1803"
+      ]
+    },
+    {
+      "paragraphId": "wuxing-jingji:L1803-L1803",
+      "kind": "术语",
+      "vernacular": "真鬼刑疾短目：甲己人忌见丁壬日時。甲己人是干支类举，不是人名连续四柱。",
+      "terms": [
+        "真鬼刑疾",
+        "甲己"
+      ],
+      "notes": [
+        "待分类作术语",
+        "无人名连续四柱不收案例",
+        "干支纳音类举无名，不收案例",
+        "标目不作现代操作步骤",
+        "纳音分套只归档，不改已落地子平或纳音算法"
+      ],
+      "review": "source-reviewed",
+      "verified": false,
+      "relatedParagraphIds": [
+        "wuxing-jingji:L1801-L1801",
+        "wuxing-jingji:L1805-L1805"
+      ]
+    },
+    {
+      "paragraphId": "wuxing-jingji:L1805-L1805",
+      "kind": "术语",
+      "vernacular": "真鬼刑疾短目：乙庚人忌见戊癸日時。乙庚人是干支类举，不是人名连续四柱。",
+      "terms": [
+        "真鬼刑疾",
+        "乙庚"
+      ],
+      "notes": [
+        "待分类作术语",
+        "无人名连续四柱不收案例",
+        "干支纳音类举无名，不收案例",
+        "标目不作现代操作步骤",
+        "纳音分套只归档，不改已落地子平或纳音算法"
+      ],
+      "review": "source-reviewed",
+      "verified": false,
+      "relatedParagraphIds": [
+        "wuxing-jingji:L1803-L1803",
+        "wuxing-jingji:L1807-L1807"
+      ]
+    },
+    {
+      "paragraphId": "wuxing-jingji:L1807-L1807",
+      "kind": "术语",
+      "vernacular": "真鬼刑疾短目：丙辛人忌见甲己日時（官鬼有气得地者富）。丙辛人是干支类举。富是书中取象，不是对现实用户的判断。",
+      "terms": [
+        "真鬼刑疾",
+        "丙辛"
+      ],
+      "notes": [
+        "待分类作术语",
+        "无人名连续四柱不收案例",
+        "干支纳音类举无名，不收案例",
+        "官职贫富刑死是历史分类，不转成对现实用户的判断",
+        "标目不作现代操作步骤",
+        "纳音分套只归档，不改已落地子平或纳音算法"
+      ],
+      "review": "source-reviewed",
+      "verified": false,
+      "relatedParagraphIds": [
+        "wuxing-jingji:L1805-L1805",
+        "wuxing-jingji:L1809-L1809"
+      ]
+    },
+    {
+      "paragraphId": "wuxing-jingji:L1809-L1809",
+      "kind": "术语",
+      "vernacular": "真鬼刑疾短目：丁壬人忌见乙庚日時。丁壬人是干支类举，不是人名连续四柱。",
+      "terms": [
+        "真鬼刑疾",
+        "丁壬"
+      ],
+      "notes": [
+        "待分类作术语",
+        "无人名连续四柱不收案例",
+        "干支纳音类举无名，不收案例",
+        "标目不作现代操作步骤",
+        "纳音分套只归档，不改已落地子平或纳音算法"
+      ],
+      "review": "source-reviewed",
+      "verified": false,
+      "relatedParagraphIds": [
+        "wuxing-jingji:L1807-L1807",
+        "wuxing-jingji:L1811-L1811"
+      ]
+    },
+    {
+      "paragraphId": "wuxing-jingji:L1811-L1811",
+      "kind": "术语",
+      "vernacular": "真鬼刑疾短目：戊癸人忌见丙辛日時。（神白经）。戊癸人是干支类举，不是人名连续四柱。",
+      "terms": [
+        "真鬼刑疾",
+        "戊癸",
+        "神白经"
+      ],
+      "notes": [
+        "待分类作术语",
+        "无人名连续四柱不收案例",
+        "干支纳音类举无名，不收案例",
+        "标目不作现代操作步骤",
+        "纳音分套只归档，不改已落地子平或纳音算法"
+      ],
+      "review": "source-reviewed",
+      "verified": false,
+      "relatedParagraphIds": [
+        "wuxing-jingji:L1809-L1809",
+        "wuxing-jingji:L1813-L1813"
+      ]
+    },
+    {
+      "paragraphId": "wuxing-jingji:L1813-L1813",
+      "kind": "理论",
+      "vernacular": "玉霄宝鉴云：假令甲己人不见丁壬全，而见壬寅或丁亥、丁卯、丁未者亦是真鬼；若于福繁之地及贵人禄马上见者谓之变鬼为官，反为福，主凶中有吉。雲兇原字不改。假令甲己人是干支类举无名，不收案例。福凶吉是书中取象，不是对现实用户的判断。",
+      "terms": [
+        "真鬼",
+        "玉霄宝鉴"
+      ],
+      "notes": [
+        "待分类作理论",
+        "无人名连续四柱不收案例",
+        "醜廣信闕字兇原字不改",
+        "干支纳音类举无名，不收案例",
+        "官职贫富刑死是历史分类，不转成对现实用户的判断",
+        "纳音分套只归档，不改已落地子平或纳音算法",
+        "假令甲己人无名不收案例"
+      ],
+      "review": "source-reviewed",
+      "verified": false,
+      "relatedParagraphIds": [
+        "wuxing-jingji:L1811-L1811",
+        "wuxing-jingji:L1815-L1815"
+      ]
+    },
+    {
+      "paragraphId": "wuxing-jingji:L1815-L1815",
+      "kind": "序跋目录",
+      "vernacular": "【甲坤黄数五】是卷四分节标目。",
+      "terms": [
+        "甲坤黄数五"
+      ],
+      "notes": [
+        "待分类作序跋目录",
+        "无人名连续四柱不收案例",
+        "目录不作理论条或现代操作步骤"
+      ],
+      "review": "source-reviewed",
+      "verified": false,
+      "relatedParagraphIds": [
+        "wuxing-jingji:L1813-L1813",
+        "wuxing-jingji:L1817-L1817"
       ]
     }
   ]
