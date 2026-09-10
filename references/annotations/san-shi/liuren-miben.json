@@ -1,7 +1,7 @@
 {
   "bookSlug": "liuren-miben",
   "sourceTitle": "大六壬秘本（现有电子主文本）",
-  "scopeNote": "本文件只覆盖已逐段实读范围：卷十三 L2985–L3248（119段）；卷十四五要权衡全卷 L3253–L3841（218段）。不代表全书 2643 段已审。source-reviewed 不是影印校勘或人工 verified；案例 verified=false。课名并行：卷十三始入＝惟一下贼；卷十四 L3461 例把一上克下也称始入。土旺只写十八日，不宣称产品季月12/18缺失。毕法略说正反句全留；七处/六处/八法/九处并行；司天苗达过将法与中气月将并行。高下前失抄左右、器用粘连、过将法时刻叠字保持 draft。",
+  "scopeNote": "本文件只覆盖已逐段实读范围：卷十三 L2985–3248；卷十四 L3253–3841；论终身至论空亡作鬼 L3846–4046。不代表全书 2643 段已审。source-reviewed 不是影印校勘或人工 verified；案例保持 verified=false。空亡：凶宜空、生救不宜空；填实不空；久病空死 vs 暴病空吉；空鬼作鬼与凶空免祸分读。金氏增文胎喜分读。",
   "entries": [
     {
       "paragraphId": "liuren-miben:L2985-L2985",
@@ -5012,6 +5012,1101 @@
       "vernacular": "卷之十四终。",
       "terms": [
         "卷之十四"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "liuren-miben:L3846-L3846",
+      "kind": "术语",
+      "vernacular": "论终身标题。看干支课传安身，不是取传口诀。",
+      "terms": [
+        "终身"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "liuren-miben:L3848-L3848",
+      "kind": "理论",
+      "vernacular": "干支传课作提纲，先审安身无所伤。事业一生经历处，存亡隐见莫胡详。先安身无伤，再论经历。",
+      "terms": [
+        "安身"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "liuren-miben:L3850-L3857",
+      "kind": "规则候选",
+      "vernacular": "六壬课以乾为主，乾者我也。干支课传上神皆我之用。终身经历五路并行：首课入传、支起入传、干阴起传、支阴起传、初末作鬼归干支，皆以生干比干为上吉。次吉：干克干上神、支课用上神，是安身无所伤。下等：干支上神、用传上神或克害刑冲破干，我身无所安著，以至绝嗣败家、灾讼丧命、终身无成。例外：占功名则以克我者为官，又从贵论，不在此限。五路不得收成只看初传；功名克我为官是否定凡克干皆下等。电子本干/幹混用，不改字。",
+      "terms": [
+        "乾",
+        "终身",
+        "官星"
+      ],
+      "notes": [
+        "功名克我从贵，不在安身下等限。"
+      ],
+      "review": "source-reviewed",
+      "verified": false,
+      "subsections": [
+        {
+          "id": "S001",
+          "title": "五路经历与上吉次吉",
+          "startLine": 3850,
+          "endLine": 3854,
+          "vernacular": "乾为我。五路入传论经历。生干比干上吉，干克上神次吉为安身无伤。",
+          "terms": [
+            "安身"
+          ],
+          "notes": []
+        },
+        {
+          "id": "S002",
+          "title": "下等与功名例外",
+          "startLine": 3855,
+          "endLine": 3857,
+          "vernacular": "上神克害刑冲破干则无安著。占功名克我为官从贵，不在此限。",
+          "terms": [
+            "官星"
+          ],
+          "notes": [
+            "不在此限不得删。"
+          ]
+        }
+      ]
+    },
+    {
+      "paragraphId": "liuren-miben:L3859-L3859",
+      "kind": "理论",
+      "vernacular": "干禄得地可荣身，略有些伤支用寻。寻到好地方住脚，有些疑惑不堪停。禄伤则改寻支、用。",
+      "terms": [
+        "干禄"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "liuren-miben:L3861-L3865",
+      "kind": "规则候选",
+      "vernacular": "既审上无所伤，尤看乾上之禄神：得地则求名有禄，庶人有禄可用，九流百工可资。要不空陷，且年命干支传用又不来刑冲克破，此禄无所伤，终身可守富贵。禄被刑冲破陷则寻支上神之禄；或无禄则寻用传上之禄神，无空陷刑冲破克害为吉。干禄自身营为，支禄家中现成，用传之禄往来营求。三者得一为美数。三者俱无或有禄不吉，则无所立脚，不可停守。空陷刑冲是禄伤，三者得一是否定必须干禄。",
+      "terms": [
+        "干禄",
+        "支禄",
+        "用禄"
+      ],
+      "notes": [
+        "空陷并刑冲才叫禄伤，缺一不在本行废禄。"
+      ],
+      "review": "source-reviewed",
+      "verified": false,
+      "relatedParagraphIds": [
+        "liuren-miben:L3335-L3335"
+      ],
+      "subsections": [
+        {
+          "id": "S001",
+          "title": "干禄得地无伤",
+          "startLine": 3861,
+          "endLine": 3861,
+          "vernacular": "乾上禄得地、不空陷、年命干支传用不刑冲克破，终身可守。",
+          "terms": [
+            "干禄"
+          ],
+          "notes": []
+        },
+        {
+          "id": "S002",
+          "title": "支禄用禄与三者得一",
+          "startLine": 3862,
+          "endLine": 3865,
+          "vernacular": "干禄伤则寻支禄，再无则寻用传禄。三者得一为美。俱无或有禄不吉则不可停守。",
+          "terms": [
+            "支禄"
+          ],
+          "notes": [
+            "有禄不吉仍不可守。"
+          ]
+        }
+      ]
+    },
+    {
+      "paragraphId": "liuren-miben:L3867-L3867",
+      "kind": "理论",
+      "vernacular": "或财或比或生身，无伤无克细推寻。得个稳中堪下脚，莫令衰败又无存。无禄则寻财、比、生。",
+      "terms": [
+        "财",
+        "比",
+        "生"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "liuren-miben:L3869-L3869",
+      "kind": "规则候选",
+      "vernacular": "课传无禄可依，当寻我之财、或比、或生，俱要无刑冲克破害，方为平稳可立脚。若有所伤而又入衰败之乡，则无靠。伤且衰败是无靠的双条件。",
+      "terms": [
+        "财",
+        "比劫",
+        "长生"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "liuren-miben:L3871-L3871",
+      "kind": "规则候选",
+      "vernacular": "先审干上作元因，次把用传配合寻。初不成传方看二，方知此事得何因。下文夹「原本作若不成传方看救，要知救我有何神」。歌句与原本异文粘连，不据本行改「看二」或「看救」。",
+      "terms": [
+        "干上",
+        "用传"
+      ],
+      "notes": [
+        "原本作看救，与看二并存待核。"
+      ],
+      "review": "draft",
+      "verified": false
+    },
+    {
+      "paragraphId": "liuren-miben:L3873-L3882",
+      "kind": "规则候选",
+      "vernacular": "课无全吉，先寻干上以究其原因，次看用传以审运用。电子本「共原因」疑「其」。初传空克有伤，则看中末有何救我之神、何方可靠、何人可依、何事可为，虽不能成大富贵，亦为终身之依；数中无依斯为下。壬课有吉有凶，不可执一。占功名：明无官星或官星变空克，则以暗遁得官星，父母得地无伤、所临吉神吉煞，亦可取贵；遁再凶则功名不成。常人：明无财星或财星空克，暗遁得财星，父母得地无伤、所临吉神吉煞，亦可取财；遁干又无所取则财不聚。又有明吉而遁凶亦为有害。又察年命上神与日干并用神，或生或比或刑克冲破害，方为得体。明空可取暗遁是对「无官无财即无成」的否定；明吉遁凶是对明吉的再限制。",
+      "terms": [
+        "暗遁",
+        "官星",
+        "财星"
+      ],
+      "notes": [
+        "初伤看中末救，无依才为下。",
+        "明吉遁凶亦害，不得只看明盘。"
+      ],
+      "review": "source-reviewed",
+      "verified": false,
+      "subsections": [
+        {
+          "id": "S001",
+          "title": "干上用传与中末救",
+          "startLine": 3873,
+          "endLine": 3876,
+          "vernacular": "先干上次用传。初空克则中末寻救依。不可执一。",
+          "terms": [
+            "救神"
+          ],
+          "notes": [
+            "共原因待核。"
+          ]
+        },
+        {
+          "id": "S002",
+          "title": "暗遁官财与年命",
+          "startLine": 3877,
+          "endLine": 3882,
+          "vernacular": "功名明无官可取暗遁官星，父母得地吉神亦可贵。常人财同例。明吉遁凶有害。年命与日用生比或刑冲得体。",
+          "terms": [
+            "暗遁"
+          ],
+          "notes": [
+            "遁再凶则不成。"
+          ]
+        }
+      ]
+    },
+    {
+      "paragraphId": "liuren-miben:L3884-L3884",
+      "kind": "术语",
+      "vernacular": "论空亡标题。吉凶神空否分论。",
+      "terms": [
+        "空亡"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false,
+      "relatedParagraphIds": [
+        "liuren-miben:L3335-L3335"
+      ]
+    },
+    {
+      "paragraphId": "liuren-miben:L3886-L3886",
+      "kind": "理论",
+      "vernacular": "却有空亡临吉神，吉神无倚不和平。惟有凶神临日辰，就言其事主灾迍。吉空无力；凶空临日辰仍言灾——与后文「凶宜空」须分临日辰与否，不在本歌删后文宜空。",
+      "terms": [
+        "空亡"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "liuren-miben:L3888-L3906",
+      "kind": "规则候选",
+      "vernacular": "日辰空亡为真空亡，作事无力。在地曰孤无妻可依，在天曰寡无夫可依。凡凶神刑冲破害宜空；若生我救我者不宜空。初传空、末传实，先虽无著后却有成；中传空，事将成而中止；末传空，事终无结果。占暴病、忧贼、争讼，空则吉；久病占如空必主死；余不吉，主人财走失。惟金水不嫌空，有生不为空；月将、太岁、月建、日、时、年、命填实为不空，不可全以空论。占坟宅取支，左空空左，右空空右，先吉而后空不嫌。占六畜逢空看地分，采加不得位必有损伤，采加得地临生气虽空不妨。占子孙带空，纵有子是空中来，或奸生或过继，不然主有伤。占才名先实后空，主后有阻隔不遂、破财。占买卖带空不成。宜空/不宜空与卷十四克我取空、生我不许空同向。填实不空比卷十四多时；久病空死是否定凡病空皆吉。金水不嫌空、有生不为空、填实不空三条救应不得删。",
+      "terms": [
+        "真空亡",
+        "填实"
+      ],
+      "notes": [
+        "凶宜空、生救不宜空必须并列。",
+        "久病空死与暴病空吉分占类。"
+      ],
+      "review": "source-reviewed",
+      "verified": false,
+      "relatedParagraphIds": [
+        "liuren-miben:L3335-L3335",
+        "liuren-miben:L3339-L3339"
+      ],
+      "subsections": [
+        {
+          "id": "S001",
+          "title": "真空与宜空不宜空",
+          "startLine": 3888,
+          "endLine": 3892,
+          "vernacular": "日辰空为真空无力。孤寡分天地。凶神刑冲宜空，生我救我不宜空。",
+          "terms": [
+            "真空亡"
+          ],
+          "notes": []
+        },
+        {
+          "id": "S002",
+          "title": "初中末空与占类",
+          "startLine": 3893,
+          "endLine": 3898,
+          "vernacular": "初空末实后成，中空中止，末空无结果。暴病贼讼空吉，久病空死，余走失。",
+          "terms": [
+            "空亡"
+          ],
+          "notes": [
+            "久病空死不得扩到暴病。"
+          ]
+        },
+        {
+          "id": "S003",
+          "title": "金水填实与分占",
+          "startLine": 3899,
+          "endLine": 3906,
+          "vernacular": "金水不嫌空，有生不为空，岁建将日时年命填实不空。坟宅左右、六畜得地生气虽空不妨。子孙空则奸生过继或有伤。才名先实后空阻隔。买卖空不成。",
+          "terms": [
+            "填实"
+          ],
+          "notes": [
+            "填实不可全以空论。"
+          ]
+        }
+      ]
+    },
+    {
+      "paragraphId": "liuren-miben:L3908-L3908",
+      "kind": "规则候选",
+      "vernacular": "旬中空亡，当以类推。类见下行六亲空。",
+      "terms": [
+        "旬空"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "liuren-miben:L3910-L3910",
+      "kind": "规则候选",
+      "vernacular": "甲子旬空戌亥：甲子乙丑空财、父，既入空虽吉不可用；丙寅卯空官、子；戊辰己巳空兄、财；庚午辛未空父、子；壬申癸酉空官、兄。本表只甲子旬，余旬以类推，不得把戌亥空直接套他旬六亲。虽吉不可用是否定空财父仍可用。",
+      "terms": [
+        "旬空",
+        "六亲"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "liuren-miben:L3912-L3912",
+      "kind": "规则候选",
+      "vernacular": "十恶大败日，名无禄日：甲戌、乙巳、壬申、丙申、丁亥、庚辰、戊戌、癸亥、辛巳、己丑。此十日无禄财空亡，故曰大败。占身无财禄决然不安，占寿无财禄亦不美。但看传中有生，亦不死；直符克年方死。占官求财俱为不利。有生亦不死是否定无禄日必死人；直符克年才死是第二条件。",
+      "terms": [
+        "十恶大败",
+        "无禄日"
+      ],
+      "notes": [
+        "传中有生亦不死不得删。"
+      ],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "liuren-miben:L3914-L3914",
+      "kind": "规则候选",
+      "vernacular": "用空入生，废事再来。遇阴而昧，还是沈埋。天空入空，旺相所合，中虽见阻，婚姻必吉。同段两事：用空入生再发；天空入空旺合则婚姻中阻终吉。细则见下行。两句粘连，婚姻吉不得扩到凡用空入生。",
+      "terms": [
+        "用空",
+        "天空"
+      ],
+      "notes": [],
+      "review": "draft",
+      "verified": false
+    },
+    {
+      "paragraphId": "liuren-miben:L3916-L3916",
+      "kind": "规则候选",
+      "vernacular": "用空居长生之地，是事不成而再发；传入太阴在上，事虽露机而又入暗昧，将成又废，毕竟是空，不可以值长生而谓事得再成。太阴在上是否定「长生即再成」。",
+      "terms": [
+        "长生",
+        "太阴"
+      ],
+      "notes": [
+        "毕竟是空不得写成长生救实。"
+      ],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "liuren-miben:L3918-L3918",
+      "kind": "规则候选",
+      "vernacular": "用空入末，旧事再发。凶则宜避，凶则莫合。第二「凶」与下行吉神当为分读，见下行吉为、凶逃。",
+      "terms": [
+        "用空"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "liuren-miben:L3920-L3920",
+      "kind": "规则候选",
+      "vernacular": "用作空亡而末传归于日上，主旧事再发。带吉神良将则当为而不可舍；带凶神恶将则宜逃而不可为。吉为凶逃必须并列。",
+      "terms": [
+        "旧事再发"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "liuren-miben:L3922-L3922",
+      "kind": "规则候选",
+      "vernacular": "空于其妻，其妻复归。初虽有伤，后当再为。天空入空，又休又刑，婚姻虚喜，终见无成。妻空可再，与天空休刑虚喜终无成是两条，不得合成凡妻空皆再娶或皆无成。",
+      "terms": [
+        "妻空",
+        "天空"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "liuren-miben:L3924-L3924",
+      "kind": "规则候选",
+      "vernacular": "支为宅为妻，入空是空于其妻。若财亦然。先见其空而后有妻财入实，未娶者先难后成，既娶者先奸后娶。若先空而末得子孙生之，亦主再娶。入实、末得子孙生是再成条件。",
+      "terms": [
+        "妻空",
+        "财空"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "liuren-miben:L3926-L3926",
+      "kind": "理论",
+      "vernacular": "用见其妻，后入于空，半路断弦，何日续终？",
+      "terms": [
+        "断弦"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "liuren-miben:L3928-L3928",
+      "kind": "规则候选",
+      "vernacular": "发用见其妻财，或中末入空，主断弦难续。与先空后实再娶对翻，顺序不同不得混。",
+      "terms": [
+        "断弦"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "liuren-miben:L3930-L3930",
+      "kind": "规则候选",
+      "vernacular": "妻虽入空，旺气所钟，一则有喜，一则病冲。旺气把空妻改成喜病并见，不是无空。",
+      "terms": [
+        "旺气"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "liuren-miben:L3932-L3932",
+      "kind": "规则候选",
+      "vernacular": "初传入空而中末归旺，是空中有病、旺中有喜，是病中而得子。金氏旁注「一喜一忧」。病中得子是本条件占象，不得写成凡空妻皆得子。",
+      "terms": [
+        "空亡",
+        "旺"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "liuren-miben:L3934-L3934",
+      "kind": "理论",
+      "vernacular": "空于其子，复见其子。子虽初乖，后还有济。",
+      "terms": [
+        "子空"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "liuren-miben:L3936-L3936",
+      "kind": "规则候选",
+      "vernacular": "子发用入空，是初年难为子。中末二传而子星入实，是后终有子。如末得父母生之，亦为有子。入实或父母生是有子条件。",
+      "terms": [
+        "子空"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "liuren-miben:L3938-L3938",
+      "kind": "理论",
+      "vernacular": "用见其子，复入于空。子虽相连，不见其终。",
+      "terms": [
+        "子空"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "liuren-miben:L3940-L3940",
+      "kind": "规则候选",
+      "vernacular": "用见子本有子，传入空亡死绝乡，中年必丧成家子，不然残疾病破家门。离乡背井，不送父母终。死绝乡是加重，空而不死绝不在本行套必丧。",
+      "terms": [
+        "死绝"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "liuren-miben:L3942-L3942",
+      "kind": "理论",
+      "vernacular": "贵人于空，干贵反凶。当谒莫谒，当逢莫逢。",
+      "terms": [
+        "贵人"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "liuren-miben:L3944-L3944",
+      "kind": "规则候选",
+      "vernacular": "贵人能解祸生福，若入空则不得力。空贵是对解祸的否定，不是贵人改凶神。",
+      "terms": [
+        "贵人",
+        "空亡"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "liuren-miben:L3946-L3946",
+      "kind": "理论",
+      "vernacular": "贵入于空，求名虚声，传入二死，不善其事。",
+      "terms": [
+        "二死"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "liuren-miben:L3948-L3948",
+      "kind": "规则候选",
+      "vernacular": "中末入二死，是慕功名终身无成。中末逢生助，后犹有望。生助是否定无成。",
+      "terms": [
+        "二死",
+        "生助"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "liuren-miben:L3950-L3950",
+      "kind": "规则候选",
+      "vernacular": "地入于空，可免诸凶。任尔出入，自迪其功。凶将入空，诸凶可免，而出入有功。起句「地入」与后句「凶将入空」是否同一条未明，不改正文。凶将入空可免是对吉神空无力的对翻。",
+      "terms": [
+        "凶将",
+        "空亡"
+      ],
+      "notes": [
+        "地入待核。"
+      ],
+      "review": "draft",
+      "verified": false
+    },
+    {
+      "paragraphId": "liuren-miben:L3952-L3952",
+      "kind": "理论",
+      "vernacular": "朱入于空，望文不就，执不如舍，进则难售。",
+      "terms": [
+        "朱雀"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "liuren-miben:L3954-L3954",
+      "kind": "规则候选",
+      "vernacular": "雀为文书，入空虽旺不就，不如别谋，是非则免。虽旺不就是对旺相填实的分占类限制，文书空不因旺就。",
+      "terms": [
+        "朱雀"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "liuren-miben:L3956-L3956",
+      "kind": "理论",
+      "vernacular": "六合入空，求财难通。不宜卖买，互见相攻。",
+      "terms": [
+        "六合"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "liuren-miben:L3958-L3958",
+      "kind": "规则候选",
+      "vernacular": "六合为财，婚姻和合之神，空则彼此不合而相攻。财、婚两象皆空则攻。",
+      "terms": [
+        "六合"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "liuren-miben:L3960-L3960",
+      "kind": "理论",
+      "vernacular": "勾入于空，官无讼凶。在外莫见，在后莫容。",
+      "terms": [
+        "勾陈"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "liuren-miben:L3962-L3962",
+      "kind": "规则候选",
+      "vernacular": "勾乃争斗之神，入空讼无。外見有勾引，末传见有后祸。金氏注：一云日前属外，日后为内。入空讼无与外見勾引、末见后祸必须并列，不得写成勾空全无事。内外注与正文外/后并行。",
+      "terms": [
+        "勾陈"
+      ],
+      "notes": [
+        "末传后祸不得删。"
+      ],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "liuren-miben:L3964-L3964",
+      "kind": "理论",
+      "vernacular": "龙入于空，仍作我妻。我妻见伤，难再言归。",
+      "terms": [
+        "青龙"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "liuren-miben:L3966-L3966",
+      "kind": "规则候选",
+      "vernacular": "青龙乃贤德之神，入空则伤妻。妻者，干支上神合也。伤妻绑干支上神合，不是凡龙空皆妻死。",
+      "terms": [
+        "青龙",
+        "妻"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "liuren-miben:L3968-L3968",
+      "kind": "理论",
+      "vernacular": "龙入于空，仍作我财，一半可得，一半可谐。",
+      "terms": [
+        "青龙"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "liuren-miben:L3970-L3970",
+      "kind": "规则候选",
+      "vernacular": "龙乃财喜之神，空则财可半得，不能全获。半得是否定全无，也否定全获。",
+      "terms": [
+        "青龙"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "liuren-miben:L3972-L3972",
+      "kind": "规则候选",
+      "vernacular": "龙入于空，仍作我官。志虽慕贵，不得成欢。龙乃官贵之神，空则云云。龙空三读：妻伤、财半、官不成，按所作用神分，不得合成一条。",
+      "terms": [
+        "青龙",
+        "官"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "liuren-miben:L3974-L3974",
+      "kind": "规则候选",
+      "vernacular": "天空入空，诸事无踪。吉不作吉，凶不作凶。两边不成。",
+      "terms": [
+        "天空"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "liuren-miben:L3976-L3976",
+      "kind": "规则候选",
+      "vernacular": "凡劫煞凶神加天空入空，俱有影无凶，凶吉不成。有影无凶是否定实祸，也不是无影。",
+      "terms": [
+        "天空",
+        "劫煞"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "liuren-miben:L3978-L3978",
+      "kind": "理论",
+      "vernacular": "白虎入空，见凶不凶，宜于出往，反得其功。",
+      "terms": [
+        "白虎"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "liuren-miben:L3980-L3980",
+      "kind": "规则候选",
+      "vernacular": "白虎凶空，更末传吉将，反得其功，可任意出外。末吉将是反功条件，缺末吉不在本行套任意出外。",
+      "terms": [
+        "白虎"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "liuren-miben:L3982-L3982",
+      "kind": "理论",
+      "vernacular": "常入于空，丧吊又逢，为亲为服，何事匆匆？",
+      "terms": [
+        "太常",
+        "丧吊"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "liuren-miben:L3984-L3984",
+      "kind": "规则候选",
+      "vernacular": "太常孝服神，带丧吊，主亲服，百事不遂，安得匆匆。须带丧吊，常空无丧吊不在本行套亲服。",
+      "terms": [
+        "太常",
+        "丧吊"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "liuren-miben:L3986-L3986",
+      "kind": "评注或元数据",
+      "vernacular": "胎喜入空，有鬼在上，即日离身，子母无恙。此条想是金氏所增。作者已标为增文，不并入正文空亡常法，也不据本行改产课算法。",
+      "terms": [
+        "胎喜"
+      ],
+      "notes": [
+        "金氏所增，与正文分读。"
+      ],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "liuren-miben:L3988-L3988",
+      "kind": "理论",
+      "vernacular": "常入于空，作官不蒙。虽有天马，亦莫腾通。天马救不了空印。",
+      "terms": [
+        "太常",
+        "天马"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "liuren-miben:L3990-L3990",
+      "kind": "规则候选",
+      "vernacular": "常又为印绶，空则不沐朝赐，安能飞腾。虽有天马上句是否定天马填实本条。",
+      "terms": [
+        "印绶"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "liuren-miben:L3992-L3992",
+      "kind": "理论",
+      "vernacular": "常入于空，求财不成。当安不安，当行不行。旁注安作守、行作穷。旁注与正文并行。",
+      "terms": [
+        "太常"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "liuren-miben:L3994-L3994",
+      "kind": "规则候选",
+      "vernacular": "常又为财神，空则财不能就。若传课无依，当守穷而不可妄动妄为。无依才守穷。",
+      "terms": [
+        "太常"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "liuren-miben:L3996-L3996",
+      "kind": "评注或元数据",
+      "vernacular": "胎喜无空，无鬼不旺。云子云亡，焉云得当。此条亦必金氏所增。与 L3986 同属增文，不并入常法。电子本云/雲混。",
+      "terms": [
+        "胎喜"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false,
+      "relatedParagraphIds": [
+        "liuren-miben:L3986-L3986"
+      ]
+    },
+    {
+      "paragraphId": "liuren-miben:L3998-L3998",
+      "kind": "规则候选",
+      "vernacular": "玄入于空，谋害不凶。疑其盗失，无入吾宫。玄武为谋害神。空则谋害不实、盗不入宫。",
+      "terms": [
+        "玄武"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "liuren-miben:L4000-L4000",
+      "kind": "规则候选",
+      "vernacular": "阴后入空，女诈不逢。反得阴利，而有后通。太阴、天后，女诈之象。空则女诈不逢，反有阴利后通。反得是否定凡阴后空皆凶。",
+      "terms": [
+        "太阴",
+        "天后"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "liuren-miben:L4002-L4002",
+      "kind": "术语",
+      "vernacular": "论空亡作鬼标题。空鬼带煞另断，不是凡空皆鬼。",
+      "terms": [
+        "空鬼"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "liuren-miben:L4004-L4004",
+      "kind": "规则候选",
+      "vernacular": "空亡作鬼带负谩，阴空相乘事欺慢。",
+      "terms": [
+        "负谩"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "liuren-miben:L4006-L4006",
+      "kind": "规则候选",
+      "vernacular": "空鬼带负谩，乘天空太阴，主有欺瞒骗害。谩语，正午顺十二。须空鬼+负谩+阴空，缺件不套骗害。",
+      "terms": [
+        "负谩",
+        "天空",
+        "太阴"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "liuren-miben:L4008-L4008",
+      "kind": "规则候选",
+      "vernacular": "空亡作鬼带五盗，大耗相乘有失耗。",
+      "terms": [
+        "五盗",
+        "大耗"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "liuren-miben:L4010-L4010",
+      "kind": "规则候选",
+      "vernacular": "空鬼乘玄武五盗二耗，其贼必自空中而来，财是空中而去，失耗不免。五盗正丑逆十二，大耗正戌逆十二，小耗正卯逆十二。凡神煞下见于《六壬经纬》者朱标出之，此条晴崖朱批。神煞起例指向经纬，本行不补全表，也不把朱批当正文算法。",
+      "terms": [
+        "五盗",
+        "大耗",
+        "小耗"
+      ],
+      "notes": [
+        "朱批出处不是本课取传。"
+      ],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "liuren-miben:L4012-L4012",
+      "kind": "规则候选",
+      "vernacular": "空亡作鬼带马丁，有人逃出事忙忙。",
+      "terms": [
+        "丁马"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "liuren-miben:L4014-L4014",
+      "kind": "规则候选",
+      "vernacular": "空鬼带丁马，必有人逃出，不然则主离乡过继。逃出与离乡过继两可，不是必逃。",
+      "terms": [
+        "丁马"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "liuren-miben:L4016-L4016",
+      "kind": "规则候选",
+      "vernacular": "支是天空，行人信通。带喜尤妙，不宜入空。天空加支有信，入空则否。",
+      "terms": [
+        "天空"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "liuren-miben:L4018-L4018",
+      "kind": "规则候选",
+      "vernacular": "天空乃文书走报神，加支上有外信入家；入空，不以信论。入空是否定信通。",
+      "terms": [
+        "天空"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "liuren-miben:L4020-L4020",
+      "kind": "规则候选",
+      "vernacular": "空亡克日却无依，孤单冷淡过生时。发用空鬼，主人无依，单冷过一生。空鬼克日无依，与前「凶宜空」分占：作鬼克日则孤，不是凡空皆孤。",
+      "terms": [
+        "空鬼"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "liuren-miben:L4022-L4022",
+      "kind": "规则候选",
+      "vernacular": "贵雀作鬼入于空亡，文字贵物乃是其赃。",
+      "terms": [
+        "贵人",
+        "朱雀"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "liuren-miben:L4024-L4024",
+      "kind": "规则候选",
+      "vernacular": "用乘贵雀空鬼，文书贵物乃当自嗔，余以神煞详之。自嗔不是必获赃。",
+      "terms": [
+        "空鬼"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "liuren-miben:L4026-L4026",
+      "kind": "规则候选",
+      "vernacular": "螣蛇作鬼入于空亡，惊惶走失，又作火类。用虽入空，不免惊惶走失火光。蛇空鬼仍有惊火，是否定「凡凶空皆无事」。",
+      "terms": [
+        "螣蛇"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "liuren-miben:L4028-L4028",
+      "kind": "规则候选",
+      "vernacular": "朱雀作鬼入于空亡，不无虚诞，信息为狂。",
+      "terms": [
+        "朱雀"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "liuren-miben:L4030-L4030",
+      "kind": "规则候选",
+      "vernacular": "六合作鬼入于空亡，文词为美，亦宜自防。文词喜美中亦宜慎之。美中自防，不是全吉。",
+      "terms": [
+        "六合"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "liuren-miben:L4032-L4032",
+      "kind": "规则候选",
+      "vernacular": "勾陈作鬼入于空亡。内勾外连，尤防其殃。",
+      "terms": [
+        "勾陈"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "liuren-miben:L4034-L4034",
+      "kind": "规则候选",
+      "vernacular": "青龙作鬼入于空亡，喜中见贼，亦宜自防。",
+      "terms": [
+        "青龙"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "liuren-miben:L4036-L4036",
+      "kind": "规则候选",
+      "vernacular": "天空作鬼入于空亡，尤防暗损，诸事微茫。",
+      "terms": [
+        "天空"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "liuren-miben:L4038-L4038",
+      "kind": "规则候选",
+      "vernacular": "白虎作鬼入于空亡，杀伤斗讼，又作惊惶。虎空作鬼仍有杀伤，与虎空见凶不凶分：作鬼则仍凶。",
+      "terms": [
+        "白虎"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "liuren-miben:L4040-L4040",
+      "kind": "规则候选",
+      "vernacular": "太常作鬼入于空亡，钱谷酒印，并失衣裳。",
+      "terms": [
+        "太常"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "liuren-miben:L4042-L4042",
+      "kind": "规则候选",
+      "vernacular": "玄琥作鬼入于空亡，走失盗贼，亦当预防。电子本「玄琥」疑玄武，不改正文。",
+      "terms": [
+        "玄武"
+      ],
+      "notes": [
+        "玄琥待核。"
+      ],
+      "review": "draft",
+      "verified": false
+    },
+    {
+      "paragraphId": "liuren-miben:L4044-L4044",
+      "kind": "规则候选",
+      "vernacular": "太阴作鬼入于空亡，阴谋相妒，婢妾死亡。",
+      "terms": [
+        "太阴"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "liuren-miben:L4046-L4046",
+      "kind": "规则候选",
+      "vernacular": "天后作鬼入于空亡，衣裳首饰，走失须防。",
+      "terms": [
+        "天后"
       ],
       "notes": [],
       "review": "source-reviewed",
