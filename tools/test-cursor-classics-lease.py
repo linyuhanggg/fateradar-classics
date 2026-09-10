@@ -95,16 +95,30 @@ class LeaseLogic(unittest.TestCase):
 
 
 class TemplateAudit(unittest.TestCase):
-    def test_sk1610_copy_template_count_is_281(self) -> None:
+    def test_detector_flags_原文_dumps_only(self) -> None:
+        self.assertTrue(lease.is_copy_template("元理赋节。原文：两干不杂。"))
+        self.assertFalse(lease.is_copy_template("两干不杂不可一概言贵，缺格局则不定贵。"))
+
+    def test_sk1610_completed_ids_are_not_still_templates(self) -> None:
         root = Path(__file__).resolve().parents[1]
         path = root / "references/annotations/bazi/sanming-tonghui--shidian-SK1610.json"
+        progress = json.loads((root / lease.PROGRESS_REL).read_text())
         data = json.loads(path.read_text())
         good, templates = lease.annotation_template_ids(path)
         self.assertEqual(len(data["entries"]), 322)
         self.assertEqual(len(good) + len(templates), 322)
-        self.assertEqual(len(templates), 281)
+        self.assertTrue(all(entry.get("verified") is False for entry in data["entries"]))
+        completed = set(progress["package"].get("completedIds") or [])
+        in_progress = set(progress["package"].get("inProgressIds") or [])
         by_id = {entry["paragraphId"]: entry for entry in data["entries"]}
-        self.assertTrue(all("原文：" in by_id[pid]["vernacular"] for pid in templates[:5]))
+        for pid in completed | in_progress:
+            self.assertIn(pid, by_id)
+            self.assertFalse(lease.is_copy_template(by_id[pid]["vernacular"]), pid)
+        # Baseline defect was 281; this file must not silently grow templates.
+        self.assertLessEqual(len(templates), 281)
+        self.assertEqual(len(templates), 281 - len(completed) - len([
+            pid for pid in in_progress if pid not in completed
+        ]))
 
 
 class GitPushCompetition(unittest.TestCase):
