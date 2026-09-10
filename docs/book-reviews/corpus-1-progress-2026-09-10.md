@@ -621,3 +621,20 @@ PYTHONDONTWRITEBYTECODE=1 python3 tools/validate-annotations.py --annotations re
   - 832/836 雍巳 vs 845 雍己并存，不改正文
 - 校验：`{"ok": true, "books": 1, "files": 1, "entries": 900, "source_reviewed": 895, "errors": []}`。校验器只做结构与 ID，不是语义证书。
 - 未决项：皇极 CP4– 段 900–2260；玉匣记补本；麻衣主本；地理辨正。
+- commit：`3abe341`
+
+## P2 皇极经世 · 识典 DZ1040 · checkpoint 4
+
+- 段 900–1199：`huangji-jingshi:shidian-DZ1040:P7451218753779646518` … `P7451218760813379595`
+- 累计 1200 条：source-reviewed 1195，draft 5（verified 全 false）
+- CP4 本段 300 条：source-reviewed 300，draft 0
+- 关键条件/否定/疑字：
+  - 卷第五之上终、卷第五之中起；运经世之四=观物篇之二十八
+  - 998/999 经世之子二千一百八十五重出两存
+  - 951 河亶甲之徙居相，疑立、徙，不改正文
+  - 1006 弟沃丁立 vs 1031 沃甲，疑沃丁/沃甲并存
+  - 祖丁崩国乱沃甲之子南庚立，不是祖丁之子；南庚崩祖丁之子阳甲立诸侯不朝
+  - 1032 沃甲崩国乱兄祖丁立，传兄不传弟
+  - 盘庚复归亳改号曰殷；武丁高宗甘盘为相以梦求傅说
+- 校验：`{"ok": true, "books": 1, "files": 1, "entries": 1200, "source_reviewed": 1195, "errors": []}`。校验器只做结构与 ID，不是语义证书。
+- 未决项：皇极 CP5– 段 1200–2260；玉匣记补本；麻衣主本；地理辨正。
