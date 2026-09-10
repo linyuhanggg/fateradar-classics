@@ -1,7 +1,7 @@
 {
   "bookSlug": "daliuren-daquan",
   "sourceTitle": "大六壬大全（现有电子主文本）",
-  "scopeNote": "本文件只覆盖已逐段实读范围：卷一起例/入手法 L56–98；卷七课经集一元首至龙德 L9101–11045；卷八官爵、富贵、轩盖、铸印 L11047–11344。不代表全书 6893 段已审。source-reviewed 不是影印校勘或人工 verified；案例保持 verified=false。轩盖午用遇卯子 vs 袖中金卯乘天马龙常；铸印戌加巳中传 vs 巳戌卯 vs 丙子戌加干上；真体两读。",
+  "scopeNote": "本文件只覆盖已逐段实读范围：卷一起例/入手法 L56–98；卷七课经集一元首至龙德 L9101–11045；卷八官爵、富贵、轩盖、铸印、斫轮 L11047–11444。不代表全书 6893 段已审。source-reviewed 不是影印校勘或人工 verified；案例保持 verified=false。斫轮正文卯加庚或辛 vs 订讹庚辛申酉 vs 袖中金申酉；寅天梁不作斫轮；春伤斧秋伤轮 vs 袖中金秋三月伤斧。",
   "entries": [
     {
       "paragraphId": "daliuren-daquan:L0056-L0056",
@@ -13467,6 +13467,577 @@
       ],
       "review": "draft",
       "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L11346-L11346",
+      "kind": "术语",
+      "vernacular": "斫轮课标题。吉课叠层，不是九宗门取传。",
+      "terms": [
+        "斫轮"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L11348-L11348",
+      "kind": "规则候选",
+      "vernacular": "凡课卯加庚或加辛为用，曰斫轮课。卯为车轮，庚辛为刀斧，木就金斫。占者官禄位高迁，统颐之体，乃革故鼎新之课。正文取法绑卯加庚或辛为用，缺发用或未加庚辛不在本行套斫轮。后文订讹扩到卯加庚辛申酉，袖中金写卯加申酉，并行。本课不改九宗门发用。",
+      "terms": [
+        "斫轮",
+        "太冲"
+      ],
+      "notes": [
+        "正文卯加庚或辛为用，不得用后文申酉废本行，也不得把本行扩成凡卯见金皆斫轮。"
+      ],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L11350-L11356",
+      "kind": "规则候选",
+      "vernacular": "象：木欲成器须假金斫；孕病凶险，财喜欢跃，禄位加增官职超擢；戌印常绶遇之犹乐。孕病凶险是否定凡斫轮皆吉。太冲加庚为上、加辛次之，缘卯中乙木与申中庚金作合乃成贵器；更遇天乙、龙、常、阴、合及驿马德合入传，主官爵践公卿。或壬癸日见水神为舟楫，初末有马引从为轩车，能任重致远，有除授官职之喜。否定：木休囚乘白虎为棺椁；值空亡为朽木难雕；春季甲乙日寅卯时为伤斧；秋季庚辛日申酉时为伤轮返凶。或辛卯日干上卯为财就人象，宜急取之，缓则被卯木克其戊土反有害。电子本「戊土」与下行订讹「戌土」异文，不改正文。棺椁、朽木、伤斧、伤轮、缓取反害五支分条件，不得写成凡斫轮皆迁官。",
+      "terms": [
+        "斫轮",
+        "棺椁",
+        "朽木难雕",
+        "伤斧",
+        "伤轮"
+      ],
+      "notes": [
+        "孕病凶险不得删。",
+        "加庚为上加辛次之；伤斧绑春甲乙寅卯时，伤轮绑秋庚辛申酉时。",
+        "电子本戊土与订讹戌土并行，不据订讹改正文。"
+      ],
+      "review": "source-reviewed",
+      "verified": false,
+      "subsections": [
+        {
+          "id": "S001",
+          "title": "象辞与加庚为上",
+          "startLine": 11350,
+          "endLine": 11351,
+          "vernacular": "孕病凶、财禄吉。太冲加庚为上加辛次之，乙庚作合。贵龙常阴合及驿马德合入传践公卿。壬癸水神为舟楫，初末马引从为轩车。",
+          "terms": [
+            "太冲"
+          ],
+          "notes": [
+            "缺吉将德合不在本行套公卿。"
+          ]
+        },
+        {
+          "id": "S002",
+          "title": "棺椁朽木伤斧伤轮",
+          "startLine": 11352,
+          "endLine": 11355,
+          "vernacular": "木休囚乘虎为棺椁。空亡朽木难雕。春甲乙寅卯时伤斧。秋庚辛申酉时伤轮返凶。",
+          "terms": [
+            "棺椁",
+            "伤斧",
+            "伤轮"
+          ],
+          "notes": []
+        },
+        {
+          "id": "S003",
+          "title": "辛卯财就人",
+          "startLine": 11356,
+          "endLine": 11356,
+          "vernacular": "辛卯干上卯宜急取，缓则卯克戊土反害。",
+          "terms": [
+            "财就人"
+          ],
+          "notes": [
+            "戊土待核。"
+          ]
+        }
+      ]
+    },
+    {
+      "paragraphId": "daliuren-daquan:L11358-L11358",
+      "kind": "规则候选",
+      "vernacular": "乙未日未加乙同，当颐初九观我颐之凶象。与辛卯干上卯同属缓则有害一路，不是另立课名。",
+      "terms": [
+        "斫轮",
+        "乙未"
+      ],
+      "notes": [
+        "乙未未加乙与辛卯干上卯同论，不得删凶象。"
+      ],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L11360-L11360",
+      "kind": "案例",
+      "vernacular": "辛丑日辰时亥将：一下克上，卯加申为用，曰斫轮课。演示下贼上与斫轮叠见。卯加申是金位，订讹把申并入取法；本例不改元首取传，也不用本例废正文「卯加庚或辛」。",
+      "terms": [
+        "斫轮",
+        "辛丑"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false,
+      "relatedParagraphIds": [
+        "daliuren-daquan:L9103-L9103"
+      ]
+    },
+    {
+      "paragraphId": "daliuren-daquan:L11362-L11362",
+      "kind": "案例",
+      "vernacular": "同例初传：卯乘元武。太冲为用。",
+      "terms": [
+        "三传",
+        "太冲"
+      ],
+      "notes": [
+        "盘图待影印核。"
+      ],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L11364-L11364",
+      "kind": "案例",
+      "vernacular": "同例中传：戌乘勾陈。",
+      "terms": [
+        "三传"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L11366-L11366",
+      "kind": "案例",
+      "vernacular": "同例末传：巳乘天后。三传卯戌巳。",
+      "terms": [
+        "三传"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L11368-L11368",
+      "kind": "案例",
+      "vernacular": "同例四课天将：元、朱、空、后。",
+      "terms": [
+        "四课",
+        "天将"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L11370-L11370",
+      "kind": "案例",
+      "vernacular": "同例四课上神：卯、申、子、巳。",
+      "terms": [
+        "四课"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L11372-L11372",
+      "kind": "案例",
+      "vernacular": "同例四课下神：申、丑、巳、辛。辛寄戌。",
+      "terms": [
+        "四课"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L11374-L11374",
+      "kind": "案例",
+      "vernacular": "同例地盘上一行：子丑寅卯。",
+      "terms": [
+        "地盘"
+      ],
+      "notes": [
+        "待影印核。"
+      ],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L11376-L11376",
+      "kind": "案例",
+      "vernacular": "同例地盘「亥    辰」一行。",
+      "terms": [
+        "地盘"
+      ],
+      "notes": [
+        "待影印核。"
+      ],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L11378-L11378",
+      "kind": "案例",
+      "vernacular": "同例地盘「戌    巳」一行。",
+      "terms": [
+        "地盘"
+      ],
+      "notes": [
+        "待影印核。"
+      ],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L11380-L11380",
+      "kind": "案例",
+      "vernacular": "同例地盘下一行：酉申未午。卯加申为用。",
+      "terms": [
+        "地盘"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L11382-L11382",
+      "kind": "评注或元数据",
+      "vernacular": "斫轮《订讹》标题。",
+      "terms": [
+        "订讹"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L11384-L11384",
+      "kind": "规则候选",
+      "vernacular": "订讹：卯加庚辛申酉发用。卯为车轮，金为斧斤，木就金斫。比正文「卯加庚或辛」多出申酉两地盘，与袖中金卯加申酉、观月经申酉庚辛位并行，不得用订讹废正文，也不得用正文废申酉路。",
+      "terms": [
+        "斫轮"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false,
+      "relatedParagraphIds": [
+        "daliuren-daquan:L11348-L11348"
+      ]
+    },
+    {
+      "paragraphId": "daliuren-daquan:L11386-L11393",
+      "kind": "规则候选",
+      "vernacular": "占主禄位高迁、革故鼎新，更喜戌为印、太常为绶入传。卯加庚与申为上，辛酉次之；缘卯中乙木与申中庚金作合成器。或壬癸日见水神为舟辑，初末有马引从为轩车，除官必矣。来意主谋望官事，先历艰难后却有成，盖木畏金。将得龙、常、阴、合方成其体，求财大获；缺四将不在本行套成体。否定：寅亦是木如何不作斫轮，盖寅乃天梁，成器不须斫。寅不加本课，不得把凡木加金写成斫轮。电子本「舟辑」不改楫。",
+      "terms": [
+        "斫轮",
+        "天梁"
+      ],
+      "notes": [
+        "卯加庚与申为上、辛酉次之，与正文加庚为上加辛次之并行。",
+        "寅乃天梁不须斫，不得删。",
+        "龙常阴合方成其体。"
+      ],
+      "review": "source-reviewed",
+      "verified": false,
+      "subsections": [
+        {
+          "id": "S001",
+          "title": "印绶与加等",
+          "startLine": 11386,
+          "endLine": 11389,
+          "vernacular": "喜戌印太常绶。卯加庚与申为上辛酉次之。壬癸水神舟楫，初末马引从轩车则除官。",
+          "terms": [
+            "印绶"
+          ],
+          "notes": []
+        },
+        {
+          "id": "S002",
+          "title": "先难后成与寅不作",
+          "startLine": 11390,
+          "endLine": 11393,
+          "vernacular": "谋望官事先艰难后成。龙常阴合方成体求财大获。寅天梁成器不须斫，不作斫轮。",
+          "terms": [
+            "天梁"
+          ],
+          "notes": []
+        }
+      ]
+    },
+    {
+      "paragraphId": "daliuren-daquan:L11395-L11407",
+      "kind": "规则候选",
+      "vernacular": "此课多主事成迟晚，占孕与病讼忌之。或木休囚乘白虎为棺椁；值空亡为朽木难雕，须另改业。春季甲乙日寅卯时木太重为伤斧；秋季庚辛日申酉时金太重为伤轮，反凶。或辛卯日干上卯为财就人，宜速取，缓则被木克其戌土反有害；与乙未日未加乙同。订讹此处写戌土，与正文戊土异文，并行。若传见本日墓神，名曰旧轮再斫，来意主退官失职、再谋复兴。大都斫轮课：木日艰难；火日灾疾；金日获福；水日心不定、变易艰难中遂意；土日流转。五行分日不得写成凡斫轮皆获福。孕病讼忌、迟晚、旧轮再斫不得删。",
+      "terms": [
+        "旧轮再斫",
+        "伤斧",
+        "伤轮",
+        "棺椁"
+      ],
+      "notes": [
+        "占孕与病讼忌之不得写成斫轮无凶。",
+        "旧轮再斫绑本日墓神入传。",
+        "土日流转与后文袖中金土日流传并行。"
+      ],
+      "review": "source-reviewed",
+      "verified": false,
+      "subsections": [
+        {
+          "id": "S001",
+          "title": "迟晚孕病与伤斧伤轮",
+          "startLine": 11395,
+          "endLine": 11399,
+          "vernacular": "事成迟晚，孕病讼忌。休囚乘虎棺椁，空亡朽木须改业。春甲乙寅卯时伤斧，秋庚辛申酉时伤轮。",
+          "terms": [
+            "伤斧",
+            "伤轮"
+          ],
+          "notes": []
+        },
+        {
+          "id": "S002",
+          "title": "财就人与旧轮再斫",
+          "startLine": 11400,
+          "endLine": 11402,
+          "vernacular": "辛卯干上卯宜速取，缓克戌土有害，乙未未加乙同。传见本日墓神＝旧轮再斫，退官失职再谋复兴。",
+          "terms": [
+            "旧轮再斫"
+          ],
+          "notes": [
+            "戌土与正文戊土分读。"
+          ]
+        },
+        {
+          "id": "S003",
+          "title": "五行分日",
+          "startLine": 11403,
+          "endLine": 11407,
+          "vernacular": "木日艰难，火日灾疾，金日获福，水日心不定变易艰难中遂意，土日流转。",
+          "terms": [
+            "斫轮"
+          ],
+          "notes": []
+        }
+      ]
+    },
+    {
+      "paragraphId": "daliuren-daquan:L11409-L11409",
+      "kind": "评注或元数据",
+      "vernacular": "《观月经》名飞龙入渊，忌占病。别名不改取法。忌占病与正文孕病凶险同向，不得删。",
+      "terms": [
+        "飞龙入渊",
+        "斫轮"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L11411-L11411",
+      "kind": "理论",
+      "vernacular": "斫轮团圆象，本自太冲生。太冲原是木，车轮因甚成。",
+      "terms": [
+        "太冲",
+        "斫轮"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L11413-L11413",
+      "kind": "评注或元数据",
+      "vernacular": "夹注：太冲为舟车之类。不是另取法。",
+      "terms": [
+        "太冲"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L11415-L11415",
+      "kind": "理论",
+      "vernacular": "成形须仗器，斤斧自然明。木成器须金斫。",
+      "terms": [
+        "斫轮"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L11417-L11417",
+      "kind": "规则候选",
+      "vernacular": "庚申辛酉为斤斧，若申加太冲是斫轮卦也。与正文卯加庚辛、订讹卯加庚辛申酉、后文太冲上头行/太冲加申方向不一致。电子本「申加太冲」不改正文，不据后文改本行，也不据本行改卯加申。",
+      "terms": [
+        "斫轮",
+        "太冲"
+      ],
+      "notes": [
+        "申加太冲与太冲加申待核。"
+      ],
+      "review": "draft",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L11419-L11419",
+      "kind": "规则候选",
+      "vernacular": "申酉庚辛位，太冲上头行，破伤斤斧得，发用斫轮名。辛丑正月辰时，太冲传送上发用得其情。太冲上头行/传送上＝卯加申，与正文发用同向，与上行申加太冲分读。",
+      "terms": [
+        "斫轮",
+        "传送"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L11421-L11425",
+      "kind": "规则候选",
+      "vernacular": "如辛丑日卯申丑：亥将辰时，太冲加申金，斫卯木贼上发用，为斫轮卦，三传卯戌巳。辛酉返吟一课，卯酉子。尉山人取法，末传取破，与卯加金为用不是同一条，并行，不插入正文取法。乙丑、癸酉、丁丑、癸未、己丑、癸巳、辛巳、癸丑、癸亥九日，第三课俱卯戌巳三传。丁卯、己卯、乙酉、辛卯、丁酉、癸卯、乙卯、己酉、辛酉九日俱返吟，俱卯酉子，斫轮卦。日表是观月经举例，不得用十八日废他日卯加金，也不得把表外日默认为非斫轮。返吟九日与第三课九日分表。",
+      "terms": [
+        "斫轮",
+        "尉山人"
+      ],
+      "notes": [
+        "尉山人末传取破与卯加金发用并行，不改 adapter。",
+        "日表不得作闭集。"
+      ],
+      "review": "source-reviewed",
+      "verified": false,
+      "subsections": [
+        {
+          "id": "S001",
+          "title": "辛丑卯戌巳与辛酉返吟",
+          "startLine": 11421,
+          "endLine": 11423,
+          "vernacular": "辛丑亥将辰时太冲加申贼上发用，三传卯戌巳。辛酉返吟卯酉子。尉山人末传取破。",
+          "terms": [
+            "尉山人"
+          ],
+          "notes": []
+        },
+        {
+          "id": "S002",
+          "title": "九日第三课与九日返吟",
+          "startLine": 11424,
+          "endLine": 11425,
+          "vernacular": "九日第三课卯戌巳；九日返吟卯酉子，皆称斫轮。",
+          "terms": [
+            "返吟"
+          ],
+          "notes": [
+            "举例不是闭集。"
+          ]
+        }
+      ]
+    },
+    {
+      "paragraphId": "daliuren-daquan:L11427-L11427",
+      "kind": "理论",
+      "vernacular": "求官必获禄，逢事得均平。立事先敲磕，后乃立身荣。先难后成。",
+      "terms": [
+        "斫轮"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L11429-L11429",
+      "kind": "评注或元数据",
+      "vernacular": "夹注：敲磕即先雕琢而后成器。不是另取法。",
+      "terms": [
+        "斫轮"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L11431-L11431",
+      "kind": "理论",
+      "vernacular": "莫嫌职位小，官朝好弟兄。占象。",
+      "terms": [
+        "斫轮"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L11433-L11433",
+      "kind": "规则候选",
+      "vernacular": "官本朝迁职，亦先费力而后成。庶人亦得官。传得太阴、龙、合尤妙。观月经庶人亦得官，与铸印等课庶人不吉分课，不得写成凡吉课庶人皆不吉，也不得用本行废他课庶人限制。阴龙合是加重，缺三将不废成课。",
+      "terms": [
+        "斫轮"
+      ],
+      "notes": [
+        "庶人亦得官只绑本课观月经，不覆盖铸印庶人不吉。"
+      ],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L11435-L11435",
+      "kind": "评注或元数据",
+      "vernacular": "《袖中金》标题。",
+      "terms": [
+        "袖中金"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L11437-L11444",
+      "kind": "规则候选",
+      "vernacular": "卯加申酉为用，名斫轮卦。庚申辛酉金俱为斧斤，若太冲加其上者是。卯为车轮加申酉上为斫削之象。若天将龙、常、阴、合，方成其体。占人有除授营运之事。木日艰难，火日灾疾，金日成器，水日心不定、变易艰难中遂意，土日流传。若秋三月庚辛日得之，将乘阴、虎，名曰斫轮伤斧，其金太过。凡卯木坐空，谓之朽木难雕，宜弃业别作生理营运。袖中金取法绑卯加申酉，比正文少庚辛寄宫、比订讹少庚辛二字并列，并行。秋三月庚辛乘阴虎名伤斧，与正文春季伤斧、秋季伤轮分读，不得用本行废春伤斧，也不得用正文废秋三月伤斧。金日成器 vs 订讹金日获福；土日流传 vs 订讹土日流转，分绑。",
+      "terms": [
+        "斫轮",
+        "斫轮伤斧",
+        "朽木难雕"
+      ],
+      "notes": [
+        "龙常阴合方成其体不得删。",
+        "袖中金秋三月伤斧 ≠ 正文秋伤轮。"
+      ],
+      "review": "source-reviewed",
+      "verified": false,
+      "relatedParagraphIds": [
+        "daliuren-daquan:L11348-L11348",
+        "daliuren-daquan:L11384-L11384"
+      ],
+      "subsections": [
+        {
+          "id": "S001",
+          "title": "卯加申酉与成体",
+          "startLine": 11437,
+          "endLine": 11441,
+          "vernacular": "卯加申酉为用。太冲加庚申辛酉上。龙常阴合方成体。除授营运。",
+          "terms": [
+            "斫轮"
+          ],
+          "notes": []
+        },
+        {
+          "id": "S002",
+          "title": "五行分日与秋伤斧",
+          "startLine": 11442,
+          "endLine": 11444,
+          "vernacular": "木艰难火灾疾金成器水心不定土流传。秋三月庚辛乘阴虎＝斫轮伤斧金太过。卯坐空朽木难雕宜弃业。",
+          "terms": [
+            "斫轮伤斧"
+          ],
+          "notes": [
+            "伤斧时令与正文分读。"
+          ]
+        }
+      ]
     }
   ]
 }
