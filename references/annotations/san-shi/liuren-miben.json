@@ -1,7 +1,7 @@
 {
   "bookSlug": "liuren-miben",
   "sourceTitle": "大六壬秘本（现有电子主文本）",
-  "scopeNote": "本文件只覆盖已逐段实读范围：卷十三 L2985–3248；卷十四 L3253–3841；论终身至论空亡作鬼 L3846–4046。不代表全书 2643 段已审。source-reviewed 不是影印校勘或人工 verified；案例保持 verified=false。空亡：凶宜空、生救不宜空；填实不空；久病空死 vs 暴病空吉；空鬼作鬼与凶空免祸分读。金氏增文胎喜分读。",
+  "scopeNote": "本文件只覆盖已逐段实读范围：卷十三 L2985–3248；卷十四 L3253–3841；论终身至论空亡作鬼 L3846–4046；论破神至论刑冲害 L4048–4174。不代表全书 2643 段已审。source-reviewed 不是影印校勘或人工 verified；案例保持 verified=false。破神阳后三阴前三与金氏月破并行；凶见破不成凶；破碎煞≠六冲；刑吉多辅吉、旺刑衰福；冲吉不宜冲凶则散。",
   "entries": [
     {
       "paragraphId": "liuren-miben:L2985-L2985",
@@ -6111,6 +6111,594 @@
       "notes": [],
       "review": "source-reviewed",
       "verified": false
+    },
+    {
+      "paragraphId": "liuren-miben:L4048-L4048",
+      "kind": "术语",
+      "vernacular": "论破神标题。破神与后文破碎煞、四破分条，不合成一条。",
+      "terms": [
+        "破神"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "liuren-miben:L4050-L4050",
+      "kind": "理论",
+      "vernacular": "破神最不相宜。入干则内人欺，临支则外侮，交游总不如。内外分干支。",
+      "terms": [
+        "破神"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "liuren-miben:L4052-L4070",
+      "kind": "规则候选",
+      "vernacular": "破神：阳日后三辰，如子日见酉、寅日见亥；阴日前三辰，如丑日见辰、卯日见午。电子本「醜」不改字。二破在日干上主家内邻人欺；在支上主外人朋友侮；干支互破则外破内、内破外交相破害。大抵逢破凡事不成，财见破财，失物见破物；凶见破不成凶。十二将见破各断所主不成：贵人功名荐引干贵；蛇牵连不久；雀文书口舌暗捺；合买卖交关婚姻纳子；勾争斗田庄坟墓交关；龙求财婚姻公文案卷；空文书进纳奴婢文学举业；武阴谋贼党投师立学；阴阴谋金钱关节；后恩泽诏赦婚姻；常荐本推官婚姻酒食；虎道路防劫武举。金氏旁注：即月破，又隔四位相加。金氏月破/隔四位与正文阳后三阴前三并行，不据旁注改正文起例。凶见破不成凶是否定凡破皆凶；将破是所主事不成，不是改起例。",
+      "terms": [
+        "破神",
+        "月破"
+      ],
+      "notes": [
+        "凶见破不成凶不得删。",
+        "金氏月破与阳后三阴前三分读。"
+      ],
+      "review": "source-reviewed",
+      "verified": false,
+      "subsections": [
+        {
+          "id": "S001",
+          "title": "起例与内外",
+          "startLine": 4052,
+          "endLine": 4056,
+          "vernacular": "阳日后三、阴日前三。干上内欺，支上外侮，互破交相害。",
+          "terms": [
+            "破神"
+          ],
+          "notes": [
+            "醜日待核。"
+          ]
+        },
+        {
+          "id": "S002",
+          "title": "不成与凶破",
+          "startLine": 4057,
+          "endLine": 4057,
+          "vernacular": "逢破事不成、财破、物破；凶见破则不成凶。",
+          "terms": [
+            "破神"
+          ],
+          "notes": [
+            "凶破是救应。"
+          ]
+        },
+        {
+          "id": "S003",
+          "title": "十二将破与金氏",
+          "startLine": 4058,
+          "endLine": 4070,
+          "vernacular": "贵蛇雀合勾龙空武阴后常虎各主所事不成。金氏谓即月破、隔四位相加。",
+          "terms": [
+            "月破"
+          ],
+          "notes": [
+            "旁注不改正文。"
+          ]
+        }
+      ]
+    },
+    {
+      "paragraphId": "liuren-miben:L4072-L4072",
+      "kind": "规则候选",
+      "vernacular": "契者如便论神煞，必有损破不能饶。破即四破，验神煞以审所破之由。电子本「契者如便」疑字，不改正文。四破≠上行日破起例，审由靠神煞，不在本行补全四破表。",
+      "terms": [
+        "四破"
+      ],
+      "notes": [
+        "契者如便待核。"
+      ],
+      "review": "draft",
+      "verified": false
+    },
+    {
+      "paragraphId": "liuren-miben:L4074-L4074",
+      "kind": "理论",
+      "vernacular": "岁破加于月破中，吉将相逢也不容。更有凶神与凶将，破财坏事主贫穷。岁加月是二破。",
+      "terms": [
+        "岁破",
+        "月破"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "liuren-miben:L4076-L4076",
+      "kind": "规则候选",
+      "vernacular": "岁月破入课为用，一破难为；又兼二破为用，则吉事不成、凶所不免。更有凶神凶将，财破事坏，贫穷到底无成立。一破难为≠二破吉不成凶不免；吉将不容绑在岁加月支，本行加重是凶神凶将。不得写成凡破必贫穷。",
+      "terms": [
+        "岁破",
+        "月破"
+      ],
+      "notes": [
+        "二破为用才凶所不免。"
+      ],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "liuren-miben:L4078-L4078",
+      "kind": "理论",
+      "vernacular": "冲者如何论神煞，必有横祸审所招。下行冲即破碎煞，不是六冲专条。",
+      "terms": [
+        "破碎煞"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "liuren-miben:L4080-L4080",
+      "kind": "规则候选",
+      "vernacular": "冲即破碎煞：子午卯酉在巳，寅申巳亥在酉，辰戌丑未在丑。再详神煞以审所招。本表是破碎，与后文论刑冲害之冲（击动六冲）分名，不得合成一条。电子本「正醜」不改字。",
+      "terms": [
+        "破碎煞"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false,
+      "relatedParagraphIds": [
+        "liuren-miben:L4148-L4158"
+      ]
+    },
+    {
+      "paragraphId": "liuren-miben:L4082-L4082",
+      "kind": "理论",
+      "vernacular": "或破或废传上居，事皆破废不须疑。",
+      "terms": [
+        "破",
+        "废"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "liuren-miben:L4084-L4084",
+      "kind": "规则候选",
+      "vernacular": "破者，年月日時四破；废者，四废。若用带破废煞，凡事不遂。四破与四废合取才破废，缺废不在本行套凡破皆废。四废表本行未列，不补。",
+      "terms": [
+        "四破",
+        "四废"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "liuren-miben:L4086-L4086",
+      "kind": "理论",
+      "vernacular": "碎在三传事不成，中则狐疑末无后。",
+      "terms": [
+        "破碎煞"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "liuren-miben:L4088-L4088",
+      "kind": "规则候选",
+      "vernacular": "破碎煞：财遇破财，事遇破事，物遇破物。初传得之即不成，中传狐疑不决，末传终无归著。初中末三层不得塌成凡碎皆无成。",
+      "terms": [
+        "破碎煞"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "liuren-miben:L4090-L4090",
+      "kind": "理论",
+      "vernacular": "巳亥相冲有贵空，迷神关隔又相逢，要行不行语不通，凡事萧条竟没踪。",
+      "terms": [
+        "巳亥",
+        "迷神",
+        "关隔"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "liuren-miben:L4092-L4092",
+      "kind": "规则候选",
+      "vernacular": "巳亥相加上乘贵人、天空，巳亥自相冲，再加迷神、关隔，要行不行、要语不语，主事趑趄。须巳亥相加+贵空+迷神关隔，缺件不套没踪。",
+      "terms": [
+        "天空",
+        "贵人"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "liuren-miben:L4094-L4094",
+      "kind": "规则候选",
+      "vernacular": "人情断绝见刑破，又临衰败主无亲。刑破且衰败是无亲的双条件。",
+      "terms": [
+        "刑破",
+        "衰败"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "liuren-miben:L4096-L4096",
+      "kind": "理论",
+      "vernacular": "或破或废俱入传，不是破残带疾籲。电子本「籲」疑「欤」，不改正文。细则见下行病符天鬼。",
+      "terms": [
+        "破",
+        "废"
+      ],
+      "notes": [
+        "籲待核。"
+      ],
+      "review": "draft",
+      "verified": false
+    },
+    {
+      "paragraphId": "liuren-miben:L4098-L4098",
+      "kind": "规则候选",
+      "vernacular": "用传带破废，凡事不成、谋不遂；若带病符、天鬼，主残疾之人。残疾绑病符天鬼，破废 alone 不在本行套残疾。",
+      "terms": [
+        "病符",
+        "天鬼"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "liuren-miben:L4100-L4100",
+      "kind": "理论",
+      "vernacular": "破侮须知忍在心，谩将狂语出伤人。但宜速闭毋令缓，好计方成胜且赢。",
+      "terms": [
+        "闭口"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "liuren-miben:L4102-L4102",
+      "kind": "规则候选",
+      "vernacular": "用见四破，又见刑害、闭口、朱雀、谩语等神：人侮勿即以言伤人，宜当闭口含思，以计胜之，则破者岂能坏我。闭口计胜是否定破必坏我。须四破+刑害闭口雀谩，缺件不套本救。",
+      "terms": [
+        "四破",
+        "闭口",
+        "谩语"
+      ],
+      "notes": [
+        "破者岂能坏我不得删。"
+      ],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "liuren-miben:L4104-L4104",
+      "kind": "理论",
+      "vernacular": "月破加于辰戌宫，其年必有跌伤凶。若加死气患蒙胧，生气加之喜气浓。",
+      "terms": [
+        "月破",
+        "死气",
+        "生气"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "liuren-miben:L4106-L4106",
+      "kind": "规则候选",
+      "vernacular": "辰戌乃跌倒杀。发用月破加其上，主跌扑灾。加死气主蒙胧之难。加生气虽危无事。生气是否定必跌伤。发用是本条条件，月破加辰戌不发用不在本行套必跌。",
+      "terms": [
+        "跌倒杀",
+        "生气"
+      ],
+      "notes": [
+        "加生气虽危无事不得删。"
+      ],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "liuren-miben:L4108-L4108",
+      "kind": "规则候选",
+      "vernacular": "岁破月上加玄空，必有逃走人不容。下行注作日上乘玄武天空又加岁破。歌月上与注日上并行，不据一行改正文。",
+      "terms": [
+        "岁破",
+        "玄武",
+        "天空"
+      ],
+      "notes": [
+        "月上与日上待核。"
+      ],
+      "review": "draft",
+      "verified": false
+    },
+    {
+      "paragraphId": "liuren-miben:L4110-L4110",
+      "kind": "规则候选",
+      "vernacular": "日上乘玄武、天空，又加岁破，必有逃走出外之人。须日上武空+岁破，缺件不套必逃。",
+      "terms": [
+        "岁破",
+        "玄武",
+        "天空"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false,
+      "relatedParagraphIds": [
+        "liuren-miben:L4108-L4108"
+      ]
+    },
+    {
+      "paragraphId": "liuren-miben:L4112-L4112",
+      "kind": "术语",
+      "vernacular": "论刑冲害标题。刑、冲、害三节分读，冲≠上行破碎煞。",
+      "terms": [
+        "三刑",
+        "六冲",
+        "六害"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "liuren-miben:L4114-L4114",
+      "kind": "规则候选",
+      "vernacular": "刑者杀之象，即三刑。上下不合，刚柔不济，燥暴自害夹刃。入课为吉为凶：吉多则辅吉为吉，凶多则辅凶为凶。旺相如乘车得马，休囚如被禁加笞，主口舌凶恶忧扰失时。不空占病干谒宾主。常人取罪戾，惟宜捕捉；君子得之为威权。其名有四。吉多辅吉、旺相、君子威权、宜捕捉是否定凡刑皆祸。",
+      "terms": [
+        "三刑"
+      ],
+      "notes": [
+        "吉多辅吉、君子威权不得写成凡刑皆凶。"
+      ],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "liuren-miben:L4116-L4116",
+      "kind": "术语",
+      "vernacular": "一曰自刑。",
+      "terms": [
+        "自刑"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "liuren-miben:L4118-L4118",
+      "kind": "规则候选",
+      "vernacular": "辰午酉亥自相刑害。落败则别改更。自高自大、自作自受、自逞其能、自受其祸，死于非命。自刑占象，不是改三刑表。",
+      "terms": [
+        "自刑"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "liuren-miben:L4120-L4120",
+      "kind": "术语",
+      "vernacular": "二曰无礼刑。",
+      "terms": [
+        "无礼刑"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "liuren-miben:L4122-L4122",
+      "kind": "规则候选",
+      "vernacular": "子刑卯、卯刑子。阳精生日，阳气在子；卯为日门，子为卯之卑位而无卑恭。子贪狼、卯阴贼，死败相刑，门户不利，大小淫乱。如卯加子，明入暗出，水陆不通，子息不律。无礼只绑子卯，不得扩到他支。",
+      "terms": [
+        "无礼刑"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "liuren-miben:L4124-L4124",
+      "kind": "术语",
+      "vernacular": "三曰无恩之刑。",
+      "terms": [
+        "无恩刑"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "liuren-miben:L4126-L4126",
+      "kind": "规则候选",
+      "vernacular": "寅刑巳、巳刑申、申刑寅。寅中杂火、巳中杂金、申中杂水。寅刑巳：刑中有害，举动艰难，彼刑我斗，官事灾殃。巳刑申：刑中有合，长幼不顺，先犯后合，彼刑我解，冤仇相报。申刑寅：刑中冲破，人鬼侵凌，男女相系，彼刑我动，残贼相施。三层有害/有合/冲破不得塌成一律无恩皆斗。",
+      "terms": [
+        "无恩刑"
+      ],
+      "notes": [
+        "巳刑申先犯后合不得写成无解。"
+      ],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "liuren-miben:L4128-L4128",
+      "kind": "术语",
+      "vernacular": "四曰恃势刑。",
+      "terms": [
+        "恃势刑"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "liuren-miben:L4130-L4130",
+      "kind": "规则候选",
+      "vernacular": "上位在戌，寄旺四季，正旺在未。未恃旺而刑丑之冠带；丑恃冠带而刑戌；戌恃天刑而刑未之正旺。恃势只戌未丑。",
+      "terms": [
+        "恃势刑"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "liuren-miben:L4132-L4144",
+      "kind": "规则候选",
+      "vernacular": "又曰：丑刑戌，戌迁其怒，自恃旬首而刑未。丑刑戌刑中有暗鬼，贵刑贱、大刑小，刑禁官事。戌刑未刑中有破，卑少凌长，妻财不丰，举动不利。未刑曰丑，刑中不破，大小不和，兄弟不顺，或有丧服。电子本「未刑日醜」疑「曰丑」，不改正文。发用逢之多生灾害。刑干伤男，刑辰伤女。旺刑衰则福生，死刑旺则祸起。时刑干则忧小人，用刑时则行不利。善刑恶则无忧，恶刑善则凶至。刑月建不可讼人。刑日辰不可远行。刑支干则人宅不安，干刑者速、支刑者缓。若上下相刑又见日鬼，气象乖戾，反复公讼无忧，不少缓矣。「无忧」与上文凶象并见，疑「无休」，不改正文。旺刑衰福生、善刑恶无忧是救应，不得删。上下相刑+日鬼才公讼不少缓。",
+      "terms": [
+        "恃势刑",
+        "日鬼"
+      ],
+      "notes": [
+        "旺刑衰福生、善刑恶无忧不得删。",
+        "公讼无忧待核。"
+      ],
+      "review": "draft",
+      "verified": false,
+      "subsections": [
+        {
+          "id": "S001",
+          "title": "恃势又曰三向",
+          "startLine": 4132,
+          "endLine": 4136,
+          "vernacular": "丑刑戌贵刑贱官事；戌刑未破凌长；未刑丑不破丧服。发用多灾害。",
+          "terms": [
+            "恃势刑"
+          ],
+          "notes": [
+            "未刑日醜待核。"
+          ]
+        },
+        {
+          "id": "S002",
+          "title": "旺衰善恶与处所",
+          "startLine": 4137,
+          "endLine": 4144,
+          "vernacular": "刑干男刑辰女。旺刑衰福，死刑旺祸。善刑恶无忧，恶刑善凶。月建不可讼，日辰不可远行。干速支缓。上下相刑见日鬼则公讼不少缓。",
+          "terms": [
+            "三刑"
+          ],
+          "notes": [
+            "无忧疑无休。"
+          ]
+        }
+      ]
+    },
+    {
+      "paragraphId": "liuren-miben:L4146-L4146",
+      "kind": "规则候选",
+      "vernacular": "制御之刑：十干聚克，逆乱乃生，故加刑以制御。凡干支所加，战斗不出其下。甲刑申，乙刑酉，丙刑子，丁刑亥，戌刑寅，己刑卯，庚刑午，辛刑巳，壬刑戌，癸刑未。此是十干制御，不是三刑四名。电子本「戌刑寅」疑戊，不改正文。",
+      "terms": [
+        "制御之刑"
+      ],
+      "notes": [
+        "戌刑寅待核。"
+      ],
+      "review": "draft",
+      "verified": false
+    },
+    {
+      "paragraphId": "liuren-miben:L4148-L4158",
+      "kind": "规则候选",
+      "vernacular": "冲者，击动之煞。初虽有得，后必倾覆，主摇动反复不宁：在日身有迁，在辰宅有动。乘凶将损动，乘玄武逃动，乘后阴暗动，乘玄合盗失淫佚出入更改，乘勾私邪争竞改易。子午冲道路驰驱男女交争谋动变迁；卯酉相加门户分异失脱更改；寅申冲人鬼刑伤男女异心；巳亥冲事多反复重求轻得；丑未冲兄弟异心谋事不遂；辰戌冲悲喜杂异贵贱不明奴仆逃走关节不行。大抵吉不宜冲，凶则散。吉不宜冲、凶则散是否定凡冲皆祸，与破神「凶见破不成凶」同向而分名：此冲是六冲击动，上行冲是破碎煞。",
+      "terms": [
+        "六冲"
+      ],
+      "notes": [
+        "吉不宜冲、凶则散不得删。"
+      ],
+      "review": "source-reviewed",
+      "verified": false,
+      "relatedParagraphIds": [
+        "liuren-miben:L4080-L4080"
+      ],
+      "subsections": [
+        {
+          "id": "S001",
+          "title": "击动与乘将",
+          "startLine": 4148,
+          "endLine": 4150,
+          "vernacular": "初得后覆。日迁辰动。凶将损、武逃、后阴暗、玄合盗淫、勾私争。",
+          "terms": [
+            "六冲"
+          ],
+          "notes": []
+        },
+        {
+          "id": "S002",
+          "title": "六冲分象与凶散",
+          "startLine": 4151,
+          "endLine": 4158,
+          "vernacular": "子午道路，卯酉门户，寅申人鬼，巳亥反复，丑未兄弟，辰戌贵贱奴仆。吉不宜冲，凶则散。",
+          "terms": [
+            "六冲"
+          ],
+          "notes": [
+            "谋动变迁属子午条。"
+          ]
+        }
+      ]
+    },
+    {
+      "paragraphId": "liuren-miben:L4160-L4174",
+      "kind": "规则候选",
+      "vernacular": "害者，侵损凌害之象。阴阳不顺，如水壅滞、如血未行，事多阻抑。子加未事无终始官灾口舌；未加子营谋阻滞出入有灾；丑加午病讼多凶夫妇不睦；午加丑卑小凌犯长上事多不明难得成就；寅加巳争进相害出入改动退利进阻；巳加寅作事艰难；卯加辰下凌上有虚声争财阻隔；辰加卯心绪不宁；申加亥疾诡之害先阻后得必无终始；亥加申图谋未遂事无本末；酉加戌暗昧凶。凡占口舌官非，守旧少恩。达者妨也，在刑煞之间。电子本「达者」疑「害者」，不改正文。十二害加向不同不得合成一律阻抑；本段未列戌加酉，不补。先阻后得只绑申加亥。",
+      "terms": [
+        "六害"
+      ],
+      "notes": [
+        "达者待核。"
+      ],
+      "review": "draft",
+      "verified": false,
+      "subsections": [
+        {
+          "id": "S001",
+          "title": "害象与子午丑未寅巳",
+          "startLine": 4160,
+          "endLine": 4167,
+          "vernacular": "害为阻抑。子未、未子、丑午、午丑、寅巳、巳寅各象不同。",
+          "terms": [
+            "六害"
+          ],
+          "notes": []
+        },
+        {
+          "id": "S002",
+          "title": "卯辰申亥酉戌与总断",
+          "startLine": 4168,
+          "endLine": 4174,
+          "vernacular": "卯辰下凌上，辰卯心绪，申亥先阻后得无终，亥申无本末，酉戌暗昧。口舌官非守旧少恩。达者妨也在刑煞间。",
+          "terms": [
+            "六害"
+          ],
+          "notes": [
+            "先阻后得不得扩到凡害。"
+          ]
+        }
+      ]
     }
   ]
 }
