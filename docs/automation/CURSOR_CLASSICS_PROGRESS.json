@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "worker": "cursor-native-classics",
   "lease": {
-    "status": "active",
+    "status": "released",
     "worker": "cursor-native-classics",
     "holderId": "bc-f2e6d978-e536-4bbf-8e3b-da79c9a72d64",
     "runBranch": "cursor/fateradar-classics-processing-738a",
@@ -12,7 +12,8 @@
     "ttlSeconds": 10800,
     "staleSeconds": 5400,
     "acquireReason": "expired-or-absent",
-    "runUrl": "https://cursor.com/agents/bc-f2e6d978-e536-4bbf-8e3b-da79c9a72d64"
+    "runUrl": "https://cursor.com/agents/bc-f2e6d978-e536-4bbf-8e3b-da79c9a72d64",
+    "releasedAt": 1789072517.2313826
   },
   "package": {
     "id": "sanming-tonghui-shidian-SK1610",
@@ -240,9 +241,7 @@
       "sanming-tonghui:shidian-SK1610:P7426253719257382921",
       "sanming-tonghui:shidian-SK1610:P7426253719257399305",
       "sanming-tonghui:shidian-SK1610:P7426253719257415689",
-      "sanming-tonghui:shidian-SK1610:P7426253719257432073"
-    ],
-    "inProgressIds": [
+      "sanming-tonghui:shidian-SK1610:P7426253719257432073",
       "sanming-tonghui:shidian-SK1610:P7426253719257448457",
       "sanming-tonghui:shidian-SK1610:P7426253719257464841",
       "sanming-tonghui:shidian-SK1610:P7426253719257481225",
@@ -305,6 +304,7 @@
       "sanming-tonghui:shidian-SK1610:P7426253719907532809",
       "sanming-tonghui:shidian-SK1610:P7426253719907549193"
     ],
+    "inProgressIds": [],
     "remainingIds": [],
     "crashRecoveredIds": [],
     "preexistingNonTemplateIds": [
@@ -353,9 +353,8 @@
     "baseline": "d47f77d18bae74240986d04ce830ec094436ce39",
     "filenameNote": "Prompt path xingxue-dacheng--shidian-SK1610.json does not exist. SK1610 is 三命通会 (322 entries, 281 原文： dumps). xingxue-dacheng SK1609 is a live owner file and was not touched.",
     "thisRun": {
-      "completedCount": 0,
-      "completedIds": [],
-      "claimedIds": [
+      "completedCount": 61,
+      "completedIds": [
         "sanming-tonghui:shidian-SK1610:P7426253719257448457",
         "sanming-tonghui:shidian-SK1610:P7426253719257464841",
         "sanming-tonghui:shidian-SK1610:P7426253719257481225",
@@ -428,14 +427,23 @@
     {
       "name": "tools/test-cursor-classics-lease.py",
       "result": "11 tests OK"
+    },
+    {
+      "name": "tools/test-validate-annotations.py",
+      "result": "12 tests OK"
+    },
+    {
+      "name": "tools/validate-annotations.py --annotations references/annotations/bazi/sanming-tonghui--shidian-SK1610.json --json",
+      "result": "ok=true entries=322 source_reviewed=322 errors=[] structural-only"
     }
   ],
   "notes": [
     "Nowledge Mem MCP/nmem CLI unavailable this run; task state is in-repo only.",
-    "No PAUSE/STOP/COMPLETE. Lease acquired; 61 remaining 原文： dumps claimed, not yet rewritten.",
-    "Prompt path xingxue-dacheng--shidian-SK1610.json does not exist; working sanming-tonghui SK1610 only.",
+    "No PAUSE/STOP/COMPLETE. Package is not accepted: 0 原文： dumps remain, but 2 待核实 truncations and no human certificate.",
+    "Prompt path xingxue-dacheng--shidian-SK1610.json does not exist; worked sanming-tonghui SK1610 only.",
     "Did not touch SK1609 / 玉匣记 / 渊海NGJ / 卜筮HY0057 / inventory / public exports.",
-    "Lease competed by ordinary push; unfinished claims stay inProgress until this run completes or TTL/stale recovery."
+    "Lease acquired by ordinary push 92f6efd; this checkpoint completes 61 claimed ids then releases.",
+    "No further owner=cursor-native-classics package is queued; stop claiming."
   ],
-  "updatedAt": 1789072338.2512167
+  "updatedAt": 1789072517.2313826
 }
