@@ -146,7 +146,7 @@ PYTHONDONTWRITEBYTECODE=1 python3 tools/validate-annotations.py --annotations re
 
 ## 未决项
 
-- P1 紫微全书 SDZJ0170 1070 段已覆盖（CP4 待提交）。三命通会 HY1521 已迁出本 lane，不改。P2 其余 job 未开始。
+- P1 紫微全书 SDZJ0170 1070 段已覆盖。三命通会 HY1521 已迁出本 lane，不改。P2 太乙 SK1615 / 宅经 DZ0282 进行中；其余 P2 未开始。
 - 1423 条 OCR-draft 门槛不在本队列，不消除。
 - 残表、金氏旁注、一云别说、两套游神、日干墓/五行墓、乙丙利明/丁利暗、旺禄临身两套、毕法与 818 分层保持并存；疑字不改正文。
 - 电子阅读 ≠ 影印校勘，≠ 人工 verified。
@@ -345,3 +345,45 @@ PYTHONDONTWRITEBYTECODE=1 python3 tools/validate-annotations.py --annotations re
 - 长段 subsections：1067（3322–3348）、1069（3354–3385）
 - 疑字/残：908/944/954/1035 段末截断；𤎉貞/𨺻/㐫/冨/龯不改正文
 - 校验：`{"ok": true, "books": 1, "files": 1, "entries": 1070, "source_reviewed": 1024, "errors": []}`。校验器只做结构与 ID，不是语义证书。
+- commit：`dc98f2a`
+
+## P2 太乙金镜式经 · 识典 SK1615
+
+- 文件：`sources/normalized/shidianguji/SK1615/text.md`
+- SHA256：`fd0a36f892723a37c79c9fedc54db3283f9d638d1f033270722b85e53b86bacd`（与队列一致）
+- 105 段：`taiyi-shenshu:shidian-SK1615:P7537527844114743322` … `P7537528226231926793`
+- 新增 `references/annotations/san-shi/taiyi-shenshu--shidian-SK1615.json`：105 条，source-reviewed 105，draft 0，verified 全 false
+- 未改主本 `taiyi-shenshu.json`。本次仅收录部分章节，缺卷不补
+- 关键条件/否定/救应：
+  - 上元周厉王三十七年甲子，至开元十二年甲子积 1561 年；六纪循环，敬王四十三年回到第一纪
+  - 三门开休生：天目在开、生为两门不具，在休为三门不具；三吉大吉，景门小吉，死惊伤杜大凶
+  - 直门：积年与小游同，二百四十去之，三十约为直门，年命起开门次休生左行；上元甲子开门直使满三十年改休门
+  - 年月日時直使同法；时计八门在卷一，本补本未收不补
+  - 分野不取费直蔡邕，止取玉历森罗纪
+  - 天子巡狩须太乙与天目在四维之岁；不出则遣使；阴德东、和德南、大炅西、大武北
+- 校验：`{"ok": true, "books": 1, "files": 1, "entries": 105, "source_reviewed": 105, "errors": []}`。校验器只做结构与 ID，不是语义证书。
+
+## P2 黄帝宅经 · 识典 DZ0282
+
+- 文件：`sources/normalized/shidianguji/DZ0282/text.md`
+- SHA256：`b0ccd3f2f0d6d7298a1249aca54e5704d2208eeb9c9cef78babfac66224bdfde`（与队列一致）
+- 31 段：`huangdi-zhaijing:shidian-DZ0282:PDZ0282_1_2` … `PDZ0282_1_64`
+- 新增 `references/annotations/fengshui/huangdi-zhaijing--shidian-DZ0282.json`：31 条，source-reviewed 29，draft 2（22 明堂未完、25 子位牛屋未完），verified 全 false
+- 未改主本 `huangdi-zhaijing.json`
+- 关键条件/否定/救应：
+  - 犯者有灾，镇而祸止
+  - 居安昌吉不安衰微；坟墓川冈并同
+  - 五姓八宅黄道白方违犯大经；不出前二宅
+  - 阳不独王以阴为得故阳宅宜修阴方；重阴重阳则凶；阳宅更招东北阴宅更招西南为重
+  - 巽向乾等入阳，乾向巽等入阴
+  - 福德方天德月德生气到才修；再入无气、三度无魂、四入无魄灭门；一阴阳往来合天道；重往须住四十五/七十五日且福德方
+  - 辨宅取移来方位，不以街北街东为阳；修造不避将军太岁豹尾黄幡黑方及音姓
+  - 刑杀在刑祸方天德月德到亦须避；神杀在福德方待德气修则不避
+  - 刑祸不得太缩，福德不得太过
+  - 墓宅吉凶四组合；得地得宫四层；人宅相扶不可独信命
+  - 先刑后福吉、先福后刑凶；阴宅巳起阳宅亥起；刑一百工福二百工压之
+  - 来路吉抵路凶；龟头午易主；四王神春三月不得东户，犯帝车杀父帝辂杀母帝舍杀子孙
+  - 修月生气福来，犯死气凶灾；土气所冲宜禳
+  - 官羽姓不宜三月七月即吉；坤人门宜荒缺低薄；艮缺薄即贫穷
+- 长段 subsections：7、8、11
+- 校验：`{"ok": true, "books": 1, "files": 1, "entries": 31, "source_reviewed": 29, "errors": []}`。校验器只做结构与 ID，不是语义证书。
