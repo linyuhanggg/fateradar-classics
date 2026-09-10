@@ -2,7 +2,7 @@
   "schemaVersion": "fateradar-annotations-v1",
   "bookSlug": "xingxue-dacheng",
   "sourceFile": "sources/fulltext/xingming/xingxue-dacheng/fulltext.md",
-  "reviewScope": "已逐段阅读提要原序至穿心六害（xingxue-dacheng:L0003-L0011 至 L0894-L0894）并作语义注解。source-reviewed只指对照电子主文本，不代表影印人工核验。管辰积日、阳刃禄前一位、天空与空亡、刃锋与阳刃只归档，不改已落地算法。其后三刑尚未注解。识典SK1609补页未纳入本批。",
+  "reviewScope": "已逐段阅读提要原序至看星凡例冲合贴衬（xingxue-dacheng:L0003-L0011 至 L1186-L1190）并作语义注解。source-reviewed只指对照电子主文本，不代表影印人工核验。大运小运大限小限流年变曜、黄幡与华盖同位、身取命对宫度只归档，不改已落地算法。其后看星节要八十一条尚未注解。识典SK1609补页未纳入本批。",
   "entries": [
     {
       "paragraphId": "xingxue-dacheng:L0003-L0011",
@@ -2475,6 +2475,611 @@
       "terms": [],
       "notes": [
         "六亲刑克不转成亲属判断"
+      ],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "xingxue-dacheng:L0898-L0899",
+      "kind": "理论",
+      "vernacular": "三刑：身体伤残、不测官灾、妻子克破，为官死他乡是套语。夹注寅刑巳、巳刑申、申刑寅，转转相刑。伤残官灾妻子是历史分类。",
+      "terms": [
+        "三刑：寅巳申转转相刑"
+      ],
+      "notes": [
+        "伤残官灾死他乡不转成判断"
+      ],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "xingxue-dacheng:L0903-L0904",
+      "kind": "理论",
+      "vernacular": "吞啖煞以二十八宿大禽吞小禽：猪犬羊逢虎、猴蛇、鸡犬、兔蛇、䑕犬、马牛逢虎、兔猴逢犬、龙米未上。时日值之更加三合主骨肉刑并。时日不是第五出生柱。䑕、㗖、兎原字不改。龙米的米按原文。",
+      "terms": [
+        "吞啖煞：二十八宿大禽吞小禽"
+      ],
+      "notes": [
+        "徒配恶死骨肉不转成判断",
+        "时日不是出生柱"
+      ],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "xingxue-dacheng:L0908-L0909",
+      "kind": "理论",
+      "vernacular": "流霞：甲鸡乙犬丙羊丁猴戊蛇巳马庚龙辛虎壬猪癸虎。犯之男主他乡死、女主产后亡，是历史分类。巳马的巳按原文。",
+      "terms": [
+        "流霞：十干所配地支"
+      ],
+      "notes": [
+        "他乡死产后亡不转成刑死或生育判断"
+      ],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "xingxue-dacheng:L0913-L0913",
+      "kind": "理论",
+      "vernacular": "年头为伏吟、对宫为返吟。忌行运到此主刑陷六亲。行运不是出生柱。䧟原字不改。",
+      "terms": [
+        "伏吟：年头本宫",
+        "返吟：对宫"
+      ],
+      "notes": [
+        "行运不是出生柱",
+        "六亲刑陷不转成判断"
+      ],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "xingxue-dacheng:L0917-L0917",
+      "kind": "理论",
+      "vernacular": "孤辰寡宿：寅卯辰怕巳丑，巳午未畏申辰，申酉戌嫌亥未，亥子丑寅戌嗔。值此多孤寡损六亲；男遇孤辰、女逢寡宿。孤寡六亲是历史分类。",
+      "terms": [
+        "孤辰寡宿：三合局所怕的前后支"
+      ],
+      "notes": [
+        "孤寡独眠不转成婚姻判断"
+      ],
+      "review": "source-reviewed",
+      "verified": false,
+      "relatedParagraphIds": [
+        "xingxue-dacheng:L0921-L0922"
+      ]
+    },
+    {
+      "paragraphId": "xingxue-dacheng:L0921-L0922",
+      "kind": "理论",
+      "vernacular": "孤辰寡宿歌断：男妨妇、女害夫、兄弟离别、爷娘不同居；好为僧，庶俗伶仃，穿心守破或带疾双盲。僧道疾盲是历史分类。",
+      "terms": [],
+      "notes": [
+        "僧道婚姻疾盲不转成判断"
+      ],
+      "review": "source-reviewed",
+      "verified": false,
+      "relatedParagraphIds": [
+        "xingxue-dacheng:L0917-L0917"
+      ]
+    },
+    {
+      "paragraphId": "xingxue-dacheng:L0926-L0926",
+      "kind": "理论",
+      "vernacular": "黄幡豹尾：申子辰年辰黄幡戌豹尾，巳酉丑年丑黄幡未豹尾，寅午戌戌是，亥卯未未是。此煞是太岁墓。犯之主孤寡损六畜及疾病官灾退财。黄幡落在三合库地，与已落地华盖年支三合库土同位，本段只归档，不改华盖起法。太岁不是出生柱。",
+      "terms": [
+        "黄幡：太岁墓",
+        "豹尾：黄幡对冲"
+      ],
+      "notes": [
+        "孤寡六畜疾病官灾不转成判断",
+        "不改已落地华盖起法",
+        "太岁不是出生柱"
+      ],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "xingxue-dacheng:L0930-L0930",
+      "kind": "理论",
+      "vernacular": "红艳煞：六丙逢寅、辛见鸡、癸临申、丁见未、甲乙午申、庚见戌、戊巳怕辰、壬怕子。原文用众人妻、路妓、官宦女偷期，是历史分类，不转成情欲或婚姻判断。",
+      "terms": [],
+      "notes": [
+        "路妓偷期不转成婚姻或人格判断"
+      ],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "xingxue-dacheng:L0934-L0934",
+      "kind": "理论",
+      "vernacular": "阴错阳差列十二日：辛卯壬辰癸巳、丙午丁未戊申、辛酉壬戌癸亥、丙子丁丑戊寅。原文花烛孝娶残房续弦是历史婚姻分类。这些是日，不是连续四柱，不收案例。",
+      "terms": [
+        "阴错阳差：所列十二日"
+      ],
+      "notes": [
+        "所列是日不是四柱",
+        "婚姻续弦不转成判断"
+      ],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "xingxue-dacheng:L0938-L0938",
+      "kind": "理论",
+      "vernacular": "呻吟煞一名孤鸾：木火蛇丁巳乙巳，金猪木虎辛亥甲寅，赤黄马丙午戊午，黑䑕土猴壬子戊申。夹注所列为日柱，不是连续四柱，不收案例。无婿独卧孀是历史分类。䑕原字不改。",
+      "terms": [
+        "孤鸾：一名呻吟，所列日柱"
+      ],
+      "notes": [
+        "日柱不收案例",
+        "无婿孀居不转成婚姻判断"
+      ],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "xingxue-dacheng:L0942-L0944",
+      "kind": "理论",
+      "vernacular": "驾前神煞顺行十二位：一太岁剑锋伏尸，二太阳天空，三丧门，四太阴贯索勾绞，五官符，六死符月德，七岁破月空栏干，八龙德暴败天厄，九白虎飞廉，十天德福星卷舌，十一吊客天狗，十二病符。驾后神煞一年一宫逆行：子年红鸾卯、天喜酉、血刃解神戌、天哭午、披头辰。流年诸煞逆认地支。库存标操作步骤，注释仍作理论。太岁流年不是出生柱。㢘原字不改。",
+      "terms": [
+        "驾前神煞：太岁起顺行十二位",
+        "驾后神煞：逆行红鸾天喜等"
+      ],
+      "notes": [
+        "库存标操作步骤，注释仍作理论",
+        "孝事杖责不转成判断",
+        "太岁流年不是出生柱"
+      ],
+      "review": "source-reviewed",
+      "verified": false,
+      "relatedParagraphIds": [
+        "xingxue-dacheng:L0820-L0820",
+        "xingxue-dacheng:L0800-L0800"
+      ]
+    },
+    {
+      "paragraphId": "xingxue-dacheng:L0948-L0951",
+      "kind": "理论",
+      "vernacular": "地煞赋总断：岁殿以登殿为本，岁驾以登驾为先。勋者天禄，马者扶身之宝，欲会玉堂驿马。空亡阳为空阴为亡。刑害、的煞、四柱逢空等只作歌赋归档。四柱相冲是原文套语，不收无名四柱。阙字原缺不补。暴亡酒色官高是套语。",
+      "terms": [],
+      "notes": [
+        "暴亡酒色官高不转成判断",
+        "阙不补"
+      ],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "xingxue-dacheng:L0955-L0961",
+      "kind": "理论",
+      "vernacular": "百煞经：未论禄马贵人先论胎息神煞。君子带煞权贵、庶人带煞乡党、女人带煞子夫刑伤，是历史分类。年日月时带煞分损身父兄夫妻子女，不把四位写成第五出生柱。阳刃怕金、劫煞忌火、的煞亡神六害隔角孤神桃花大耗金神呻吟白虎等并见。男怕擎天女怕游奕，男爱红鸾女爱天喜。限行运限太岁不是出生柱。胎息不另造第五柱。仵作道人断弦是套语。",
+      "terms": [],
+      "notes": [
+        "权贵刑伤僧道死亡是历史分类，不转成判断",
+        "胎不是第五出生柱",
+        "限行太岁不是出生柱"
+      ],
+      "review": "source-reviewed",
+      "verified": false,
+      "relatedParagraphIds": [
+        "xingxue-dacheng:L0858-L0858"
+      ]
+    },
+    {
+      "paragraphId": "xingxue-dacheng:L0965-L0970",
+      "kind": "理论",
+      "vernacular": "运限起例先列支中人元：子癸，丑巳癸辛，寅甲丙戊，卯乙，辰乙癸戊，巳丙戊庚，午丁及巳，未乙丁巳，申庚壬，酉辛，戌辛丁戊，亥壬甲。年上起月即五虎遁，日上起时即五鼠遁。这是起运前的干支法，只归档，不改已落地四柱与遁干。库存标操作步骤，注释仍作理论。丑巳癸辛、午中丁及巳、未乙丁巳的巳按原文。",
+      "terms": [
+        "支中人元：十二支藏干",
+        "五虎遁：年上起月",
+        "五鼠遁：日上起时"
+      ],
+      "notes": [
+        "库存标操作步骤，注释仍作理论",
+        "只归档，不改四柱引擎",
+        "巳己按原文不改正"
+      ],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "xingxue-dacheng:L0974-L0974",
+      "kind": "理论",
+      "vernacular": "起立命：看太阳在何宫，以生时加太阳宫起顺数，数至卯便是立命宫；再以太阳躔度对量天尺看立命宿度。生时加太阳不是把时柱另造第五柱。库存标操作步骤，注释仍作理论。只归档，不改已落地安命。",
+      "terms": [
+        "立命：生时加太阳宫顺数至卯"
+      ],
+      "notes": [
+        "只归档，不改安命算法",
+        "时柱不是第五出生柱"
+      ],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "xingxue-dacheng:L0978-L0981",
+      "kind": "理论",
+      "vernacular": "起大运：阳男阴女顺行，阴男阳女逆行，从本生月起；顺数未来节气、逆数已往节气，三日为一岁，论节不论气。醉醒子辨零借：多一时零一旬，欠一时借一旬；又甲子年正月初一日子时正一刻生之假如，有闰当退还。行运在干兼用地支之神，在支则弃天干。甲子年正月初一日无人名，不收案例。大运不是出生柱。只归档，不改已落地大运。",
+      "terms": [
+        "大运：阳男阴女顺、阴男阳女逆，三日一岁"
+      ],
+      "notes": [
+        "甲子年假令不收案例",
+        "大运不是出生柱",
+        "只归档，不改大运算法"
+      ],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "xingxue-dacheng:L0985-L0988",
+      "kind": "理论",
+      "vernacular": "起小运两说并存：一凡小运不论阴阳，男一岁起丙寅顺行、女一岁起壬申逆行；一醉醒子见秘书，男女小运皆由时生而行，逆顺以年定，如阳命阳年甲子时生堕地即行乙丑。古人男丙寅女壬申鲜有左验，后说尝试屡验。童限未交大运专用此法。两说不合成一套。甲子时生只有时，不收案例。小运不是出生柱。死亡孝服是套语。",
+      "terms": [
+        "小运古法：男丙寅顺、女壬申逆",
+        "小运时生法：由时柱起、以年定逆顺"
+      ],
+      "notes": [
+        "两说并存，不合并",
+        "甲子时生不收案例",
+        "小运不是出生柱",
+        "死亡孝服不转成判断"
+      ],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "xingxue-dacheng:L0991-L0994",
+      "kind": "理论",
+      "vernacular": "起大限，夹注琴堂洞微皆同。命宫十五为例，以太阳正处为中度，遇交宫随宫交三度起一岁。如立命在子，女二至女四共三度起十一岁。八月十四日太阳在已翼十度是度例，十三岁出童限入寅等。行限遇生我之星定福、克我之星定祸。太阳在已的已按原文。大限行限不是出生柱。只归档，不改洞微倒限。无人名四柱。",
+      "terms": [
+        "大限：命宫十五，交宫三度一岁"
+      ],
+      "notes": [
+        "八月十四日度例不收案例",
+        "大限不是出生柱",
+        "只归档，不改倒限算法"
+      ],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "xingxue-dacheng:L0998-L1004",
+      "kind": "理论",
+      "vernacular": "起小限：从命宫起逆转。如亥生人立命在丑，就丑上数亥。宫分右转一命至十二相貌，限度左旋一命至十二财帛。小限是流年生日后交过宫。小限宫中起生月为月限，一年休咎在小限一宫，十二月吉凶散居十二宫。月限从小限行到太阴所泊之宫起生月逆数。假如午生人午上安命戌年小限在寅三月生、戊子年丑宫安命，是年支月例，不收案例。流年太岁不是出生柱。库存标操作步骤，注释仍作理论。炁、刼原字不改。",
+      "terms": [
+        "小限：命宫逆转流年过宫",
+        "月限：小限宫起生月逆行"
+      ],
+      "notes": [
+        "亥生人、午生人、戊子年假令不收案例",
+        "小限流年不是出生柱"
+      ],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "xingxue-dacheng:L1008-L1011",
+      "kind": "理论",
+      "vernacular": "日宿者直日之宿。月限又将日宿兼推，以太阴为主，流年太阴即人之身，两日半过一宫。如命坐巳未申三宫以月水为主。日宿遇亢牛娄鬼金度、斗奎井角木度、参箕轸壁水度、心危毕张月度、女氐柳胃土度、尾翼觜室火度，各有宜忌。辰酉安命以金为主。流月太阴不是出生柱。䧟、栁原字不改。",
+      "terms": [
+        "日宿：直日之二十八宿"
+      ],
+      "notes": [
+        "迁官灾病不转成判断",
+        "流月不是出生柱"
+      ],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "xingxue-dacheng:L1015-L1016",
+      "kind": "理论",
+      "vernacular": "流年吉凶星照身命十二宫各有日数。如命坐未宫喜金忌土，流金入子午九日好等。甲己子午九、乙庚丑未八、丙辛寅申七、丁壬卯酉六、戊癸辰戌五、巳亥得数四。原文丙辛庚申七，庚字按原文不改正。流年不是出生柱。",
+      "terms": [],
+      "notes": [
+        "流年不是出生柱",
+        "丙辛庚申的庚按原文"
+      ],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "xingxue-dacheng:L1020-L1021",
+      "kind": "理论",
+      "vernacular": "已上即先天数。十二神煞歌与驾前神煞基本相同，四太阴贯索勾绞又曰天医。先天数只归档，不另造新表。库存标操作步骤，注释仍作理论。",
+      "terms": [],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false,
+      "relatedParagraphIds": [
+        "xingxue-dacheng:L0942-L0944"
+      ]
+    },
+    {
+      "paragraphId": "xingxue-dacheng:L1025-L1026",
+      "kind": "理论",
+      "vernacular": "流年十二变曜起例，本段为子年变曜：流土太岁太阳天空，流木丧门病符亡神驿，流火太阴吊狗勾神，流金天喜天德官符披，流水月德劫虎廉的，流阳天哭。只归档，不改引擎。流年不是出生柱。刼、㢘原字不改。",
+      "terms": [
+        "流年变曜：按年支将流曜配神煞"
+      ],
+      "notes": [
+        "只归档，不改流年算法",
+        "流年不是出生柱"
+      ],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "xingxue-dacheng:L1030-L1032",
+      "kind": "理论",
+      "vernacular": "库存题流阴天厄，正文是丑年变曜：流土太岁病的，木太阳鸾驿空吊劫，火天德披丧，金太阴天解虎廉的，水天喜厄哭官，阳月德死符。只归档。",
+      "terms": [],
+      "notes": [
+        "流年不是出生柱"
+      ],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "xingxue-dacheng:L1036-L1039",
+      "kind": "理论",
+      "vernacular": "库存题阴地解岁破，正文是寅年变曜。流木太岁披劫，火太阳天空虎廉，金哭丧暴的，水太阴驿解勾破血刃，阳官符，阴天喜月德死符。只归档。",
+      "terms": [],
+      "notes": [
+        "流年不是出生柱"
+      ],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "xingxue-dacheng:L1043-L1046",
+      "kind": "理论",
+      "vernacular": "库存题土鸾吊病，正文是卯年变曜。流火太岁哭暴，金太阳天空，水月德地解丧廉的劫，阳天喜太阴勾，阴天解官符，木白虎病符。只归档。",
+      "terms": [],
+      "notes": [
+        "流年不是出生柱"
+      ],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "xingxue-dacheng:L1050-L1053",
+      "kind": "理论",
+      "vernacular": "库存题土天德鸾披吊，正文是辰年变曜。流金太岁月德地解死符，水太阳喜空官符，阳天解丧廉，阴太阴勾，火岁破病符，木鸾驿厄哭吊。只归档。",
+      "terms": [],
+      "notes": [
+        "流年不是出生柱"
+      ],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "xingxue-dacheng:L1057-L1059",
+      "kind": "理论",
+      "vernacular": "库存题土虎披绞，正文是巳年变曜。流水太岁天解太阴，阳太阳天空，阴丧廉，金天喜地解病官的，火鸾月德吊死，木天德驿披破劫。只归档。",
+      "terms": [],
+      "notes": [
+        "流年不是出生柱"
+      ],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "xingxue-dacheng:L1063-L1066",
+      "kind": "理论",
+      "vernacular": "库存题土厄虎哭，正文是午年变曜。流阳太岁，阴太阳天空，水驿爵丧病的，金太阴鸾吊天解，火天喜天德地解官披，木月德死虎廉劫，土破哭厄。只归档。",
+      "terms": [],
+      "notes": [
+        "流年不是出生柱"
+      ],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "xingxue-dacheng:L1070-L1072",
+      "kind": "理论",
+      "vernacular": "未年变曜：流阴太岁，水太阳驿鸾空吊劫，金天德披丧，火太阴解神虎廉，木天喜官哭厄，土月德死的。只归档。",
+      "terms": [],
+      "notes": [
+        "流年不是出生柱"
+      ],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "xingxue-dacheng:L1076-L1080",
+      "kind": "理论",
+      "vernacular": "库存题阳病符，正文是申年变曜。流水太岁天德披劫，金太阳空虎廉的，火天马哭丧厄，木太阴解神驿勾，土天喜月德官死，阳吊，阴鸾病。只归档。",
+      "terms": [],
+      "notes": [
+        "流年不是出生柱"
+      ],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "xingxue-dacheng:L1084-L1086",
+      "kind": "理论",
+      "vernacular": "酉年变曜：流金太岁爵哭厄，火太阳天空，木驿地解月德丧廉死劫，土天喜解神太阴勾官，水虎病的，阳鸾天德绞。只归档。",
+      "terms": [],
+      "notes": [
+        "流年不是出生柱"
+      ],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "xingxue-dacheng:L1090-L1094",
+      "kind": "理论",
+      "vernacular": "库存题阴披吊，正文是戌年变曜。流火太岁死符，木太阳天空飞符劫，土太阴丧廉血刃勾的，金爵破病，水厄哭吊驿亡，阳虎披，阴绞。只归档。",
+      "terms": [],
+      "notes": [
+        "流年不是出生柱"
+      ],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "xingxue-dacheng:L1098-L1100",
+      "kind": "理论",
+      "vernacular": "亥年变曜：流木太岁勾，土太阳天空丧廉，火太阴喜病官，金鸾月德死的，水驿天德披绞劫，阳地解厄。只归档。",
+      "terms": [],
+      "notes": [
+        "流年不是出生柱"
+      ],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "xingxue-dacheng:L1104-L1107",
+      "kind": "理论",
+      "vernacular": "变曜从冬至日为始。假如今年丙戌，子为丧门寅官符午白虎申吊客酉病符戌太岁，即乙酉年十一月冬至日始变丙戌年星煞。丙戌年冬至又变丁亥。断法先以命宫为主，随各宫主星飞出与原守流岁生克制化冲照拱合参看。如戊子年丑宫安命者流土为太岁等。丙戌、戊子年丑宫安命是年支宫例，不收案例。流年太岁不是出生柱。",
+      "terms": [],
+      "notes": [
+        "丙戌戊子假令不收案例",
+        "孝服破财不转成判断",
+        "流年不是出生柱"
+      ],
+      "review": "source-reviewed",
+      "verified": false,
+      "relatedParagraphIds": [
+        "xingxue-dacheng:L1025-L1026"
+      ]
+    },
+    {
+      "paragraphId": "xingxue-dacheng:L1111-L1111",
+      "kind": "序跋目录",
+      "vernacular": "星学大成卷三题署：钦定四库全书。无术数条件。",
+      "terms": [],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "xingxue-dacheng:L1115-L1115",
+      "kind": "序跋目录",
+      "vernacular": "星学大成卷四题署：明万民英撰。无术数条件。",
+      "terms": [],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "xingxue-dacheng:L1119-L1136",
+      "kind": "理论",
+      "vernacular": "观星节要为星盘或问。育吾子答客：以五星推禄命；十二宫名次序自命至相貌；午未属天、子丑属地、亥寅木、卯戌火、辰酉金、巳申水，与地支十二维不同而理贯；以太阳立命太阴安身，东出西没。加关之说：地盘卯酉定地不易，天盘卯酉房昴，以卯加命宫为三才合一。古准今差由七十年差一度及世运国运。末问万民英独得：不可直指太阴为身，当以命对宫之度为身，身命一般般。长庚太白、曼倩岁德、郎官应宿是典故，无人名四柱。尘字、鄊、厯按原文。十八行连续覆盖，不拆ID。",
+      "terms": [
+        "身度：命对宫之度，不直指太阴为身",
+        "加关：卯加命宫"
+      ],
+      "notes": [
+        "太白曼倩只提名，不收案例",
+        "贵贱祸福不转成判断",
+        "独得身度说只归档，不改安身"
+      ],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "xingxue-dacheng:L1140-L1153",
+      "kind": "理论",
+      "vernacular": "括苍季宗舒琴堂五星总断。先看身命二主空实强弱夹拱冲蓦，次福禄恩官田财，次十一曜及的刃劫煞三煞白虎华盖六害以分君子小人。大小二限太岁流旬直难不是出生柱。琴堂玄妙只在空实、祸福只在夹拱。克父母用计犯月、罗犯日、日月合朔对望、阴阳反背，是历史分类。市井帮闲江湖医卜公府皂隶是身份分类。问目下生死以流年太岁吊起三方。华盖只作神煞名，不改已落地起法。𤣥原字不改。无连续四柱。",
+      "terms": [],
+      "notes": [
+        "君子小人克亲寿夭官事不转成判断",
+        "太岁流旬限不是出生柱",
+        "华盖不改起法"
+      ],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "xingxue-dacheng:L1157-L1161",
+      "kind": "理论",
+      "vernacular": "括苍二十字例之恩煞制化气。恩者水生木之类，煞者水克火之类，制者如甲子旬中无戌亥空亡，化者命主财帛田宅主福德官禄身主并天元禄主六主不作煞，气者盛衰消长。此旬空是制的举例，与阴阳年空亡、太岁前天空不是同一套。",
+      "terms": [
+        "恩：相生",
+        "煞：相克",
+        "制：旬空之类",
+        "化：六主不作煞"
+      ],
+      "notes": [
+        "旬空举例不与天空、阴阳年空亡合并"
+      ],
+      "review": "source-reviewed",
+      "verified": false,
+      "relatedParagraphIds": [
+        "xingxue-dacheng:L0862-L0862",
+        "xingxue-dacheng:L0800-L0800"
+      ]
+    },
+    {
+      "paragraphId": "xingxue-dacheng:L1165-L1167",
+      "kind": "理论",
+      "vernacular": "库存题迁而观之，正文是体用星。体静：四柱中八个干支为无形不动之定位。用动：十一曜迟留伏逆。星：日月五星孛罗气计天禄天马催官。四柱八干支是原局，不另造第五柱。",
+      "terms": [
+        "体：四柱干支定位",
+        "用：十一曜行度"
+      ],
+      "notes": [
+        "四柱不是第五出生柱以外的柱"
+      ],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "xingxue-dacheng:L1171-L1173",
+      "kind": "理论",
+      "vernacular": "库存题文魁之类，正文是曜原流。曜：驾殿天月二德并阳刃劫的禄马蓦越天空白虎华盖六害长生临官帝旺咸池。原守谓生下之时天星地曜所躔之宫。流年谓各年太岁流星三煞流旬空亡。强：七强宫谓命宫财帛田宅福德官禄。流年太岁不是出生柱。华盖阳刃只列名，不改起法。",
+      "terms": [],
+      "notes": [
+        "流年不是出生柱",
+        "华盖阳刃不改起法"
+      ],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "xingxue-dacheng:L1177-L1177",
+      "kind": "理论",
+      "vernacular": "库存题被截在「也男女妻妾皆是强宫」。正文：弱为五弱宫，谓兄弟奴仆迁移疾厄相貌；空谓当生四柱旬中之空亡，流年旬中空处依后条。不拆ID。",
+      "terms": [
+        "五弱：兄弟奴仆迁移疾厄相貌",
+        "空：当生旬空与流年旬空"
+      ],
+      "notes": [
+        "旬空不与天空、阴阳年空亡合并"
+      ],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "xingxue-dacheng:L1181-L1182",
+      "kind": "理论",
+      "vernacular": "库存题上断之。实：四支中所有四字填于十二宫本位。拱：三方拱向如申子辰，要四柱有字为实拱；有用之星喜拱，煞星的刃有拱极祸。夹：左右夹起如子寅二位实能夹丑宫，与拱同断。四柱有字是原局填实，不收无名四柱。",
+      "terms": [
+        "实：四支填宫",
+        "拱：三合有字",
+        "夹：左右夹起"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "xingxue-dacheng:L1186-L1190",
+      "kind": "理论",
+      "vernacular": "库存题同断。冲：对宫有实字能冲起本宫；空者喜有用之星被冲、煞星落空不喜冲。合即上文拱。贴衬：命宫身星官福田财等主星飞起别宫或值四柱空亡及流旬空，他宫虽空而我命限支上有字填起。看星凡例八条起首：一看命宫有星无星并主星飞出何宫。流年岁驾太岁不是出生柱。死亡灾败是套语。",
+      "terms": [
+        "冲：对宫实字冲起",
+        "贴衬：他宫空而本支有字"
+      ],
+      "notes": [
+        "死亡灾败不转成判断",
+        "太岁岁驾不是出生柱"
       ],
       "review": "source-reviewed",
       "verified": false
