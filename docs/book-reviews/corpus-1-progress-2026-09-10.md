@@ -603,3 +603,21 @@ PYTHONDONTWRITEBYTECODE=1 python3 tools/validate-annotations.py --annotations re
 - 长段 subsections：303
 - 校验：`{"ok": true, "books": 1, "files": 1, "entries": 600, "source_reviewed": 596, "errors": []}`。校验器只做结构与 ID，不是语义证书。
 - 未决项：皇极 CP3– 段 600–2260；玉匣记补本；麻衣主本；地理辨正。
+- commit：`cb12100`
+
+## P2 皇极经世 · 识典 DZ1040 · checkpoint 3
+
+- 段 600–899：`huangji-jingshi:shidian-DZ1040:P7451218752345079819` … `P7451218753779630134`
+- 累计 900 条：source-reviewed 895，draft 5（verified 全 false）
+- CP3 本段 300 条：source-reviewed 299，draft 1（712 还至大垌未完）
+- 关键条件/否定/疑字：
+  - 606 丙辰丁巳两格同段，不拆格
+  - 616/617 经世之子二千一百七十三重出两存
+  - 成汤即诸侯位、徙亳、始用伊尹，不是灭夏；荐伊尹于夏王不是相汤伐桀
+  - 712 伊尹相汤伐桀鸣条、放桀南巢；原文三𦡙；段末还至大垌未完
+  - 713 建国曰商，以丑月为岁始曰祀，与尧建寅月为始曰载分层
+  - 太甲不明放桐宫 vs 思庸伊尹返政
+  - 沃丁崩弟太庚立、小甲崩弟雍巳立、雍己崩弟太戊立中宗：传弟
+  - 832/836 雍巳 vs 845 雍己并存，不改正文
+- 校验：`{"ok": true, "books": 1, "files": 1, "entries": 900, "source_reviewed": 895, "errors": []}`。校验器只做结构与 ID，不是语义证书。
+- 未决项：皇极 CP4– 段 900–2260；玉匣记补本；麻衣主本；地理辨正。
