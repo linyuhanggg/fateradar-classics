@@ -586,3 +586,20 @@ PYTHONDONTWRITEBYTECODE=1 python3 tools/validate-annotations.py --annotations re
 - 长段 subsections：206
 - 校验：`{"ok": true, "books": 1, "files": 1, "entries": 300, "source_reviewed": 296, "errors": []}`。校验器只做结构与 ID，不是语义证书。
 - 未决项：皇极 CP2– 段 300–2260；玉匣记补本 NA09036；麻衣主本；地理辨正 SDZJ0504。三命通会 HY1521 已迁出本 lane。
+- commit：`a10b958`
+
+## P2 皇极经世 · 识典 DZ1040 · checkpoint 2
+
+- 段 300–599：`huangji-jingshi:shidian-DZ1040:P7451218750755487755` … `P7451218752345063435`
+- 累计 600 条：source-reviewed 596，draft 4（verified 全 false）
+- CP2 本段 300 条：source-reviewed 300，draft 0
+- 关键条件/否定/疑字：
+  - 年表单元格仍不展开为占断；经世寅二千一百六十三至亥二千一百七十二只记坐标
+  - 太康失邦盘游十旬不返；后羿距于河而死，原文不改主词；仲康立；壬戌征羲和；癸亥无纪事
+  - 仲康崩子相继立依斟灌斟鄩；寒浞杀羿灭相，靡逃有鬲，后还有仍生少康
+  - 367 少康生二十三年 vs 398 少康立十三年，生年与即位分层，不并成一义
+  - 靡灭寒浞立少康；少康灭浇于过、灭豷于戈绝有穷
+  - 不降崩弟扃立，传弟不传子；廑崩不降子孔甲立，不是廑之子
+- 长段 subsections：303
+- 校验：`{"ok": true, "books": 1, "files": 1, "entries": 600, "source_reviewed": 596, "errors": []}`。校验器只做结构与 ID，不是语义证书。
+- 未决项：皇极 CP3– 段 600–2260；玉匣记补本；麻衣主本；地理辨正。
