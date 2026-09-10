@@ -655,3 +655,20 @@ PYTHONDONTWRITEBYTECODE=1 python3 tools/validate-annotations.py --annotations re
 - 长段 subsections：1392
 - 校验：`{"ok": true, "books": 1, "files": 1, "entries": 1500, "source_reviewed": 1494, "errors": []}`。校验器只做结构与 ID，不是语义证书。
 - 未决项：皇极 CP6– 段 1500–2260；玉匣记补本；麻衣主本；地理辨正。
+- commit：`cfcdea5`
+
+## P2 皇极经世 · 识典 DZ1040 · checkpoint 6
+
+- 段 1500–1799：`huangji-jingshi:shidian-DZ1040:P7377302207181422629` … `P7377302230510223387`
+- 累计 1800 条：source-reviewed 1793，draft 7（verified 全 false）
+- CP6 本段 300 条：source-reviewed 299，draft 1（1790 徙武后于上阳宫未完）
+- 关键条件/否定/疑字：
+  - 卷五中终跳卷六下，运经世之十=观物篇三十四，中间缺卷不补
+  - 孝王是穆王子不是懿王子；夷王是懿王子，国自此衰矣是书中史断不是预测有效
+  - 1676 共和：周召二伯行政；丁巳戊午己未无纪事；文武之德尽矣是书中史断
+  - 1682 厉王四十二年在彘，不是京师
+  - 1777 武后载初以建子月为岁首、改国为周天授称皇帝；1786 久视复旧正朔对举；1791 除周号
+  - 原文嗣聖皇后、哲烏、天𠕋、阎知㣲、𠕋郢王，不改正文
+- 长段 subsections：1676、1777、1799
+- 校验：`{"ok": true, "books": 1, "files": 1, "entries": 1800, "source_reviewed": 1793, "errors": []}`。校验器只做结构与 ID，不是语义证书。
+- 未决项：皇极 CP7– 段 1800–2260；玉匣记补本；麻衣主本；地理辨正。
