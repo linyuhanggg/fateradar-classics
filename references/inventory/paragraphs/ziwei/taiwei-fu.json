@@ -1,0 +1,52 @@
+{
+  "pack": "ziwei/taiwei-fu",
+  "fulltext": "sources/fulltext/ziwei/taiwei-fu/fulltext.md",
+  "classification_note": "pattern 是文本模式初筛；annotation 来源另见注解文件；source-reviewed 不等同人工影印核验。same_text_as 仅表示忽略空白后的原文字面相同。",
+  "paragraphs": [
+    {
+      "id": "taiwei-fu:L0005-L0011",
+      "start_line": 5,
+      "end_line": 11,
+      "heading": "太微賦",
+      "kind": "理论",
+      "classification_method": "annotation",
+      "char_count": 226,
+      "doubtful": false,
+      "missing_marker": false,
+      "automatic_kind": "待分类",
+      "annotation_file": "references/annotations/ziwei/taiwei-fu.json",
+      "annotation_review": "source-reviewed",
+      "has_vernacular": true
+    },
+    {
+      "id": "taiwei-fu:L0013-L0013",
+      "start_line": 13,
+      "end_line": 13,
+      "heading": "太微賦",
+      "kind": "序跋目录",
+      "classification_method": "annotation",
+      "char_count": 2,
+      "doubtful": false,
+      "missing_marker": false,
+      "automatic_kind": "待分类",
+      "annotation_file": "references/annotations/ziwei/taiwei-fu.json",
+      "annotation_review": "source-reviewed",
+      "has_vernacular": true
+    },
+    {
+      "id": "taiwei-fu:L0015-L0052",
+      "start_line": 15,
+      "end_line": 52,
+      "heading": "太微賦",
+      "kind": "规则候选",
+      "classification_method": "annotation",
+      "char_count": 760,
+      "doubtful": false,
+      "missing_marker": false,
+      "automatic_kind": "待分类",
+      "annotation_file": "references/annotations/ziwei/taiwei-fu.json",
+      "annotation_review": "source-reviewed",
+      "has_vernacular": true
+    }
+  ]
+}

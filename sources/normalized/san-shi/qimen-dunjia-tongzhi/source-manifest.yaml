@@ -1,0 +1,37 @@
+book_slug: qimen-dunjia-tongzhi
+actual_electronic_title: 奇门遁甲统宗大全
+facsimile_title: 奇門遁甲統宗
+facsimile_publisher: 上海文瑞書局
+facsimile_date_status: not-established
+facsimile_path: sources/facsimile/other/qimen-dunjia-tongzhi/NLC416-12jh003951-48665.pdf
+facsimile_pdf_pages: 408
+primary_source:
+  path: sources/fulltext/san-shi/qimen-dunjia-tongzhi/fulltext.md
+  stable_paragraphs: 739
+  semantic_reviewed_paragraphs: 739
+  status: current-electronic-text-reviewed
+supplemental_yanyi:
+  path: sources/fulltext/san-shi/qimen-dunjia-tongzhi/supplemental-taiyi-qimen-yanyi-vol4-9.md
+  stable_paragraphs: 94
+  reviewed_paragraphs: 94
+  metadata_paragraphs: 3
+  body_paragraphs: 91
+  body_relation: all-already-in-primary
+paper_layout_recovery:
+  path: sources/normalized/san-shi/qimen-dunjia-tongzhi/nlc-layouts.md
+  page_reviews: sources/normalized/san-shi/qimen-dunjia-tongzhi/nlc-layout-page-reviews.json
+  status: in-progress
+  transcribed_summary_tables: [91, 104, 117, 131, 144, 157, 171, 184, 198, 213, 226, 239, 253, 266, 279, 299, 312, 325]
+  transcribed_summary_cells: 1080
+  component_records: 1106
+  distinct_component_inputs: 1080
+  conflicting_expectation_records: 67
+  first_reviewed_passage: qimen-dunjia-tongzhi:nlc-layouts:P093:L005-L010
+  first_passage_scope: 原局题、日干组、乙丑时、蓬休及原宫九二；不是完整九宫盘
+  canonical_eligible: false
+verified: false
+notes:
+  - 电子全段审读不等于408页影印校完。
+  - PDF15至16目录的真正卷四至九是阳一至九与阴一至九局式，网页演义补充不含这些完整图表。
+  - PDF3至4见电子主本未收序，本轮未计作已恢复正文。
+  - 纸本关键对读页和疑字见collation-notes.md；未核字不猜，未恢复页不升状态。

@@ -1,0 +1,70 @@
+{
+  "bookSlug": "ditiansui-chanwei",
+  "sourceFile": "sources/facsimile/wikisource/files/SSID-11335994 滴天髓闡微.pdf",
+  "sourceReview": "passage-reviewed",
+  "verified": false,
+  "note": "保留原电子全文、错位/讹字表格及稳定IDs。仅entries所列案例的case.pillars采用影印核定值；其他疑例不自动改成推测值。",
+  "entries": [
+    {
+      "paragraphId": "ditiansui-chanwei:L10644-L10644",
+      "electronicTableStartLine": 10626,
+      "electronicPillars": [
+        "丁未",
+        "壬寅",
+        "甲子",
+        "丙寅"
+      ],
+      "collatedPillars": [
+        "己巳",
+        "甲戌",
+        "戊寅",
+        "丙辰"
+      ],
+      "facsimilePage": 416,
+      "facsimilePosition": "右半页首例",
+      "electronicTableActuallyMatches": "ditiansui-chanwei:L10664-L10664",
+      "scope": "四柱字形与所附例解对应关系已对图；不含全部大运与正文逐字校定"
+    },
+    {
+      "paragraphId": "ditiansui-chanwei:L10664-L10664",
+      "electronicTableStartLine": 10646,
+      "electronicPillars": [
+        "丁亥",
+        "壬寅",
+        "甲戌",
+        "甲子"
+      ],
+      "collatedPillars": [
+        "丁未",
+        "壬寅",
+        "甲子",
+        "丙寅"
+      ],
+      "facsimilePage": 416,
+      "facsimilePosition": "左半页第二例",
+      "electronicTableActuallyMatches": "ditiansui-chanwei:L10684-L10684",
+      "scope": "四柱字形与所附例解对应关系已对图；末例正确表另核PDF417"
+    },
+    {
+      "paragraphId": "ditiansui-chanwei:L12002-L12007",
+      "electronicTableStartLine": 11984,
+      "electronicPillars": [
+        "丁亥",
+        "辛亥",
+        "辛未",
+        "午辰"
+      ],
+      "collatedPillars": [
+        "丁亥",
+        "辛亥",
+        "辛未",
+        "壬辰"
+      ],
+      "facsimilePage": 459,
+      "facsimilePosition": "左侧辛未日例",
+      "electronicTableActuallyMatches": "ditiansui-chanwei:L12002-L12007",
+      "scope": "时柱壬辰已对图，电子午辰首字误；其余三柱与相连解说亦对应",
+      "correctionKind": "character-error"
+    }
+  ]
+}

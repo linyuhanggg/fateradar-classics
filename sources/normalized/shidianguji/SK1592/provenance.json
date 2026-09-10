@@ -1,0 +1,46 @@
+{
+  "id": "shidian-SK1592",
+  "bookSlug": "tianyu-jing",
+  "label": "天玉經 · 识典 SK1592 · 待校参考",
+  "file": "sources/normalized/shidianguji/SK1592/text.md",
+  "paragraphIndex": "sources/normalized/shidianguji/SK1592/paragraphs.json",
+  "sourceStatus": "reference-text",
+  "notes": [
+    "识典现成原文字段，未采用网站译文；未完成逐字影印校勘。",
+    "网站章节名与印本卷号可能不一致，引用卷号须以正文或影印核定。",
+    "网页目录段落取齐不等于古本全帙无缺；同版子篇不计独立来源。",
+    "本次仅收录部分章节，缺失范围见来源清单。"
+  ],
+  "upstreamBookId": "SK1592",
+  "upstreamVersion": 5,
+  "catalogComplete": false,
+  "missingChapters": [
+    {
+      "chapterId": "1m1otqr4ibuai",
+      "expected": 2,
+      "actual": 0
+    },
+    {
+      "chapterId": "1m1otqr4ic6xm",
+      "expected": 6,
+      "actual": 0
+    },
+    {
+      "chapterId": "1m1otqr4icjkq",
+      "expected": 4,
+      "actual": 0
+    },
+    {
+      "chapterId": "1m1otqr4icw7u",
+      "expected": 4,
+      "actual": 0
+    },
+    {
+      "chapterId": "1m1otqr4idli2",
+      "expected": 2,
+      "actual": 0
+    }
+  ],
+  "paragraphCount": 190,
+  "figureCount": 1
+}

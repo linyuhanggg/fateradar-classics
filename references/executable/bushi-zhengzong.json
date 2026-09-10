@@ -1,0 +1,81 @@
+{
+  "schema_version": "fateradar-executable-v2",
+  "book": {
+    "slug": "bushi-zhengzong",
+    "system": "divination",
+    "title": "卜筮正宗",
+    "fulltext": "sources/fulltext/divination/bushi-zhengzong/fulltext.md"
+  },
+  "verified": false,
+  "note": "独发独静的结构条件，不断实际吉凶或应期。暗动判别沿现有引擎，疑义保持未知。",
+  "rules": [
+    {
+      "id": "BSZZ-E-01",
+      "art": "liuyao",
+      "theme": "独发",
+      "school": "卜筮正宗",
+      "chapter": "第十五问独静独发",
+      "paragraph_ids": [
+        "bushi-zhengzong:L3471-L4448"
+      ],
+      "sources": [
+        {
+          "paragraph_id": "bushi-zhengzong:L3471-L4448",
+          "start_line": 4175,
+          "end_line": 4176,
+          "quote": "BSZZ-3264. [part=4 local=483] 第十五问： 独静，独发如何应验？\nBSZZ-3265. [part=4 local=484] 答曰： 五爻俱动，惟一爻安静，谓之独静．五爻安静，惟一爻发动，谓之独发．若卦中六爻有一爻明动，有一爻遇日辰冲者，非云独发也．倘六爻安静，内有一爻日冲动者，亦云独发也．然独静，独发，不过观事之成败迟速，至于吉凶当推用神，如舍用神而决事者，迂且谬也．"
+        }
+      ],
+      "quote": "BSZZ-3264. [part=4 local=483] 第十五问： 独静，独发如何应验？\nBSZZ-3265. [part=4 local=484] 答曰： 五爻俱动，惟一爻安静，谓之独静．五爻安静，惟一爻发动，谓之独发．若卦中六爻有一爻明动，有一爻遇日辰冲者，非云独发也．倘六爻安静，内有一爻日冲动者，亦云独发也．然独静，独发，不过观事之成败迟速，至于吉凶当推用神，如舍用神而决事者，迂且谬也．",
+      "page": "liuyao",
+      "required_facts": [
+        "positions.main.moving",
+        "positions.main.activity"
+      ],
+      "when": {
+        "exists": "positions"
+      },
+      "satisfy_when": "六个主爻中有且仅有1个明确发动（明动或已确认日冲启动），其余明确未发动",
+      "fail_when": "明确发动数范围不能等于1",
+      "unknown_when": "日冲是否启动尚待辨，可能改变独发或独静是否成立",
+      "rescue": "self",
+      "vernacular": "本盘独发只说明动静分布，吉凶仍看用神与具体生克。",
+      "implementation_assumption": "采用现有引擎的日冲启动状态（暗动/冲空），不把日破当暗动；未决状态保留可能范围。明动受合墓等牵制仍是明动结构，作用有效性另算；仅六个主爻参与计数，变、伏、日月节点不增加动爻数。",
+      "verified": false
+    },
+    {
+      "id": "BSZZ-E-02",
+      "art": "liuyao",
+      "theme": "独静",
+      "school": "卜筮正宗",
+      "chapter": "第十五问独静独发",
+      "paragraph_ids": [
+        "bushi-zhengzong:L3471-L4448"
+      ],
+      "sources": [
+        {
+          "paragraph_id": "bushi-zhengzong:L3471-L4448",
+          "start_line": 4175,
+          "end_line": 4176,
+          "quote": "BSZZ-3264. [part=4 local=483] 第十五问： 独静，独发如何应验？\nBSZZ-3265. [part=4 local=484] 答曰： 五爻俱动，惟一爻安静，谓之独静．五爻安静，惟一爻发动，谓之独发．若卦中六爻有一爻明动，有一爻遇日辰冲者，非云独发也．倘六爻安静，内有一爻日冲动者，亦云独发也．然独静，独发，不过观事之成败迟速，至于吉凶当推用神，如舍用神而决事者，迂且谬也．"
+        }
+      ],
+      "quote": "BSZZ-3264. [part=4 local=483] 第十五问： 独静，独发如何应验？\nBSZZ-3265. [part=4 local=484] 答曰： 五爻俱动，惟一爻安静，谓之独静．五爻安静，惟一爻发动，谓之独发．若卦中六爻有一爻明动，有一爻遇日辰冲者，非云独发也．倘六爻安静，内有一爻日冲动者，亦云独发也．然独静，独发，不过观事之成败迟速，至于吉凶当推用神，如舍用神而决事者，迂且谬也．",
+      "page": "liuyao",
+      "required_facts": [
+        "positions.main.moving",
+        "positions.main.activity"
+      ],
+      "when": {
+        "exists": "positions"
+      },
+      "satisfy_when": "六个主爻中有且仅有5个明确发动（明动或已确认日冲启动），其余明确未发动",
+      "fail_when": "明确发动数范围不能等于5",
+      "unknown_when": "日冲是否启动尚待辨，可能改变独发或独静是否成立",
+      "rescue": "self",
+      "vernacular": "本盘独静只说明动静分布，吉凶仍看用神与具体生克。",
+      "implementation_assumption": "采用现有引擎的日冲启动状态（暗动/冲空），不把日破当暗动；未决状态保留可能范围。明动受合墓等牵制仍是明动结构，作用有效性另算；仅六个主爻参与计数，变、伏、日月节点不增加动爻数。",
+      "verified": false
+    }
+  ]
+}
