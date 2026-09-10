@@ -2,18 +2,17 @@
   "schemaVersion": 1,
   "worker": "cursor-native-classics",
   "lease": {
-    "status": "released",
+    "status": "active",
     "worker": "cursor-native-classics",
-    "holderId": "bc-e36144c2-f909-4067-baeb-d8ac9fd1244f",
-    "runBranch": "cursor/classics-library-processing-64ae",
-    "acquiredAt": 1789061986.2185805,
-    "heartbeatAt": 1789062202.5567145,
-    "expiresAt": 1789073002.5567145,
+    "holderId": "bc-eeb30909-a6bc-41fd-a97b-82e3f4ed6e37",
+    "runBranch": "cursor/classics-library-processing-af2d",
+    "acquiredAt": 1789063292.074108,
+    "heartbeatAt": 1789063292.074108,
+    "expiresAt": 1789074092.074108,
     "ttlSeconds": 10800,
     "staleSeconds": 5400,
     "acquireReason": "expired-or-absent",
-    "runUrl": "https://cursor.com/agents/bc-e36144c2-f909-4067-baeb-d8ac9fd1244f",
-    "releasedAt": 1789062224.5651264
+    "runUrl": "https://cursor.com/agents/bc-eeb30909-a6bc-41fd-a97b-82e3f4ed6e37"
   },
   "package": {
     "id": "sanming-tonghui-shidian-SK1610",
@@ -64,8 +63,7 @@
       "sanming-tonghui:shidian-SK1610:P7426253695060443146",
       "sanming-tonghui:shidian-SK1610:P7426253695060459530"
     ],
-    "inProgressIds": [],
-    "remainingIds": [
+    "inProgressIds": [
       "sanming-tonghui:shidian-SK1610:P7426253695060475914",
       "sanming-tonghui:shidian-SK1610:P7426253695060492298",
       "sanming-tonghui:shidian-SK1610:P7426253695060508682",
@@ -101,7 +99,9 @@
       "sanming-tonghui:shidian-SK1610:P7426253695844679718",
       "sanming-tonghui:shidian-SK1610:P7426253695844696102",
       "sanming-tonghui:shidian-SK1610:P7426253695844712486",
-      "sanming-tonghui:shidian-SK1610:P7426253695844728870",
+      "sanming-tonghui:shidian-SK1610:P7426253695844728870"
+    ],
+    "remainingIds": [
       "sanming-tonghui:shidian-SK1610:P7426253695844745254",
       "sanming-tonghui:shidian-SK1610:P7426253695844761638",
       "sanming-tonghui:shidian-SK1610:P7426253695844778022",
@@ -424,5 +424,5 @@
     "Prompt path xingxue-dacheng--shidian-SK1610.json does not exist; worked sanming-tonghui SK1610 only.",
     "Did not touch SK1609 / 玉匣记 / 渊海NGJ / 卜筮HY0057 / inventory / public exports."
   ],
-  "updatedAt": 1789062224.5651264
+  "updatedAt": 1789063292.074108
 }
