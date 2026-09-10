@@ -638,3 +638,20 @@ PYTHONDONTWRITEBYTECODE=1 python3 tools/validate-annotations.py --annotations re
   - 盘庚复归亳改号曰殷；武丁高宗甘盘为相以梦求傅说
 - 校验：`{"ok": true, "books": 1, "files": 1, "entries": 1200, "source_reviewed": 1195, "errors": []}`。校验器只做结构与 ID，不是语义证书。
 - 未决项：皇极 CP5– 段 1200–2260；玉匣记补本；麻衣主本；地理辨正。
+- commit：`094a3a9`
+
+## P2 皇极经世 · 识典 DZ1040 · checkpoint 5
+
+- 段 1200–1499：`huangji-jingshi:shidian-DZ1040:P7451218760813395979` … `P7451218762369515531`
+- 累计 1500 条：source-reviewed 1494，draft 6（verified 全 false）
+- CP5 本段 300 条：source-reviewed 299，draft 1（1239 句首句号残）
+- 关键条件/否定/疑字：
+  - 高宗崩弟祖庚立；1238 无句末标点、1239 句首句号残不补
+  - 文王生、始即诸侯位不是天子；次子受辛立是谓之纣
+  - 1390 东观兵盟津不是牧野杀纣；1392 牧野杀纣后以子月为岁始曰年，与尧建寅曰载、商丑月曰祀分层
+  - 三监有定义；三监叛周公东征；戊子三监平、微子宋、康叔卫、箕子高丽是书中史事
+  - 成王崩须召公毕公受顾命才辅康王
+  - 1375/1376 经世之子二千一百九十七重出；1469 经世之卯二千二百不补余数
+- 长段 subsections：1392
+- 校验：`{"ok": true, "books": 1, "files": 1, "entries": 1500, "source_reviewed": 1494, "errors": []}`。校验器只做结构与 ID，不是语义证书。
+- 未决项：皇极 CP6– 段 1500–2260；玉匣记补本；麻衣主本；地理辨正。
