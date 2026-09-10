@@ -2,18 +2,17 @@
   "schemaVersion": 1,
   "worker": "cursor-native-classics",
   "lease": {
-    "status": "released",
+    "status": "active",
     "worker": "cursor-native-classics",
-    "holderId": "bc-9f80a318-c763-4ba4-8e59-7c5b2f51e23b",
-    "runBranch": "cursor/fateradar-classics-processing-f993",
-    "acquiredAt": 1789065064.0859737,
-    "heartbeatAt": 1789065064.0859737,
-    "expiresAt": 1789075864.0859737,
+    "holderId": "bc-21381695-bb1e-4ae8-8b3a-fb320cd8c0f2",
+    "runBranch": "cursor/fateradar-classics-processing-3257",
+    "acquiredAt": 1789066888.9010613,
+    "heartbeatAt": 1789066888.9010613,
+    "expiresAt": 1789077688.9010613,
     "ttlSeconds": 10800,
     "staleSeconds": 5400,
     "acquireReason": "expired-or-absent",
-    "runUrl": "https://cursor.com/agents/bc-9f80a318-c763-4ba4-8e59-7c5b2f51e23b",
-    "releasedAt": 1789065249.3320339
+    "runUrl": "https://cursor.com/agents/bc-21381695-bb1e-4ae8-8b3a-fb320cd8c0f2"
   },
   "package": {
     "id": "sanming-tonghui-shidian-SK1610",
@@ -135,8 +134,7 @@
       "sanming-tonghui:shidian-SK1610:P7426253696553484314",
       "sanming-tonghui:shidian-SK1610:P7426253696553500698"
     ],
-    "inProgressIds": [],
-    "remainingIds": [
+    "inProgressIds": [
       "sanming-tonghui:shidian-SK1610:P7426253696553517082",
       "sanming-tonghui:shidian-SK1610:P7426253696553533466",
       "sanming-tonghui:shidian-SK1610:P7426253696553549850",
@@ -172,7 +170,9 @@
       "sanming-tonghui:shidian-SK1610:P7426253698206007334",
       "sanming-tonghui:shidian-SK1610:P7426253698206023718",
       "sanming-tonghui:shidian-SK1610:P7426253698206040102",
-      "sanming-tonghui:shidian-SK1610:P7426253698206056486",
+      "sanming-tonghui:shidian-SK1610:P7426253698206056486"
+    ],
+    "remainingIds": [
       "sanming-tonghui:shidian-SK1610:P7426253698206072870",
       "sanming-tonghui:shidian-SK1610:P7426253698206089254",
       "sanming-tonghui:shidian-SK1610:P7426253698206105638",
@@ -415,10 +415,10 @@
   ],
   "notes": [
     "Nowledge Mem MCP/nmem CLI unavailable this run; task state is in-repo only.",
-    "No PAUSE/STOP/COMPLETE. Package is not accepted: 169 原文： dumps remain.",
-    "Prompt path xingxue-dacheng--shidian-SK1610.json does not exist; worked sanming-tonghui SK1610 only.",
+    "No PAUSE/STOP/COMPLETE. Package is not accepted until remaining 原文 dumps are gone.",
+    "Prompt path xingxue-dacheng--shidian-SK1610.json does not exist; working sanming-tonghui SK1610 only.",
     "Did not touch SK1609 / 玉匣记 / 渊海NGJ / 卜筮HY0057 / inventory / public exports.",
-    "Lease acquired by ordinary push defe707; this checkpoint completes 36 claimed ids then releases."
+    "Lease acquire expired-or-absent; claimed 36 remaining template ids."
   ],
-  "updatedAt": 1789065249.3320339
+  "updatedAt": 1789066888.9010613
 }
