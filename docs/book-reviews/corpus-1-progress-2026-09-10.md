@@ -722,4 +722,20 @@ PYTHONDONTWRITEBYTECODE=1 python3 tools/validate-annotations.py --annotations re
 - 长段 subsections：2021、2028、2029
 - 校验：`{"ok": true, "books": 1, "files": 1, "entries": 2261, "source_reviewed": 2221, "errors": []}`。校验器只做结构与 ID，不是语义证书。全书 ID 与 dump 一一对应，verified 全 false。
 - 未决项：玉匣记补本 NA09036；麻衣主本；地理辨正。皇极补本本 lane 完成。
-- commit：`a4697da`（CP7）；本 checkpoint 待提交。
+- commit：`a4697da`（CP7）；`20ae56f`（CP8）。
+
+## P2 増廣玉匣記通書 · 识典 NA09036 · checkpoint 1（小六壬先做）
+
+- 文件：`sources/normalized/shidianguji/NA09036/text.md`
+- SHA256：`9af5cf8f9dcf844c42eebacf583dcfc8f03e0df76db2cb3b30909106e791b3f9`（与队列一致）
+- 段 2236–2260：`yuqia-ji:shidian-NA09036:P7655682857755705390` … `P7655682857901260851`
+- 本补本无「小六壬」四字，标题是○李淳風六壬時課。未改主本 `yuqia-ji.json`。
+- 关键条件/否定/疑字：
+  - 起法每从大安起；例三月初五日辰时，三月在速喜，初五在大安，数至辰时以小吉推占
+  - 六宫分层：大安木青龙一五七身未动事事昌；畱连水立武二八十事难成去者未回；速喜火朱雀三六九喜来临；赤口金白虎四七十官事凶主口舌；小吉木六合一五七最吉昌行人便至；空亡勾陈三六九事不长失物寻不见官事刑伤
+  - 大安与小吉同数一五七、速喜与空亡同数三六九，宫别不混
+  - 原文犬安/亦口/小言/微此/立武/佛五/时属十/喰人/末财/暗酲，不改正文
+  - 2236 图像占位不转写；2239 起法截断、2260 暗酲疑窜为 draft
+- 长段 subsections：2240、2260
+- 校验：`{"ok": true, "books": 1, "files": 1, "entries": 25, "source_reviewed": 22, "errors": []}`。校验器只做结构与 ID，不是语义证书。
+- 未决项：玉匣记补本其余 0–2235、2261–2987；麻衣主本；地理辨正。择日/符咒/时课不是算法覆盖，不是预测有效。
