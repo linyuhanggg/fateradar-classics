@@ -1,7 +1,7 @@
 {
   "bookSlug": "liuren-miben",
   "sourceTitle": "大六壬秘本（现有电子主文本）",
-  "scopeNote": "本文件只覆盖已逐段实读范围：卷十三 L2985–3248；卷十四 L3253–3841；论终身至论空亡作鬼 L3846–4046；论破神至论刑冲害 L4048–4174；论丁神 L4176–4307；神煞起例至太岁 L4309–4367。不代表全书 2643 段已审。source-reviewed 不是影印校勘或人工 verified；案例保持 verified=false。神煞表游者魯者待核；丁临刃空墓关隔休囚自取其祸；丧吊合取；太岁临支空或不克不可断丧。",
+  "scopeNote": "本文件只覆盖已逐段实读范围：卷十三 L2985–3248；卷十四 L3253–3841；论终身至论空亡作鬼 L3846–4046；论破神至论刑冲害 L4048–4174；论丁神 L4176–4307；神煞起例至太岁 L4309–4367；干支总论至金氏隔角 L4369–4480。不代表全书 2643 段已审。source-reviewed 不是影印校勘或人工 verified；案例保持 verified=false。凶神受制不加于人；日鬼受克为吉；无子不寻暗遁；德旺刑反为用；两鬼忧喜得半。",
   "entries": [
     {
       "paragraphId": "liuren-miben:L2985-L2985",
@@ -7581,6 +7581,535 @@
           ]
         }
       ]
+    },
+    {
+      "paragraphId": "liuren-miben:L4369-L4369",
+      "kind": "术语",
+      "vernacular": "干支总论标题。审干支与用传，不是取传口诀。",
+      "terms": [
+        "干支总论"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "liuren-miben:L4371-L4371",
+      "kind": "规则候选",
+      "vernacular": "课以干为主，审干上所加：或生或比，或克刑冲破害空脱。以支为宅，审支上所加同例。吉神居生旺之地吉而愈吉；凶神居所制之地，则吉凶不加于人。吉神：喜、合、龙、常、阴、后；凶神：蛇、朱、勾、空、白、玄。凶神受制则不加于人，是否定凡见凶将皆祸。",
+      "terms": [
+        "干",
+        "支",
+        "吉神",
+        "凶神"
+      ],
+      "notes": [
+        "凶神居所制则吉凶不加于人不得删。"
+      ],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "liuren-miben:L4373-L4373",
+      "kind": "规则候选",
+      "vernacular": "既审干支，尤当审用传。发用为心之所主、事之所向，故名用神，不可损伤，必须与神将上下相生比和为吉。上下相克、入休败之地则凶。用在日之阴阳为外事，亦主远出摇动；用在辰之阴阳为内事，目前立见。内外分日辰阴阳，不得写成凡用皆外事。",
+      "terms": [
+        "用神",
+        "日之阴阳",
+        "辰之阴阳"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "liuren-miben:L4375-L4385",
+      "kind": "规则候选",
+      "vernacular": "凡事蓦然兴发蓦然成就、事在意外，谓之蓦越课。发用地盘克天将、贵人又克天将，名逼迫煞，主身不自由、被人抑伏。若天将为财、上下夹克，主财不自由；金氏旁注：由己费。夹克财不自由 vs 由己费并行。或日之同类受克乃身不由己。惟日鬼受克则为吉。天官为神、天头为将；天官入本位则无暇治事，干托不得其力。天将立中布上下相生则事皆和美；天将居中而上下相克谓之隔将，事遭阻滞。电子本「天头」不改字。日鬼受克为吉是否定凡夹克皆不自由。",
+      "terms": [
+        "蓦越课",
+        "逼迫煞",
+        "隔将"
+      ],
+      "notes": [
+        "惟日鬼受克则为吉不得删。",
+        "金氏由己费与夹克不自由分读。"
+      ],
+      "review": "source-reviewed",
+      "verified": false,
+      "subsections": [
+        {
+          "id": "S001",
+          "title": "蓦越逼迫夹克",
+          "startLine": 4375,
+          "endLine": 4380,
+          "vernacular": "蓦越＝意外骤成。地盘克将且贵又克将＝逼迫煞身不自由。将为财夹克＝财不自由，金氏由己费。同类受克身不由己。日鬼受克为吉。",
+          "terms": [
+            "逼迫煞"
+          ],
+          "notes": []
+        },
+        {
+          "id": "S002",
+          "title": "天官隔将",
+          "startLine": 4381,
+          "endLine": 4385,
+          "vernacular": "天官神、天头将。天官入本位干托不得力。将中上下相生和美，上下相克＝隔将阻滞。",
+          "terms": [
+            "隔将"
+          ],
+          "notes": [
+            "天头待核。"
+          ]
+        }
+      ]
+    },
+    {
+      "paragraphId": "liuren-miben:L4387-L4409",
+      "kind": "规则候选",
+      "vernacular": "用临长生百事称心；用临死败事多囚谢；用临绝地事休重兴，信息至、行人来。用官鬼举动不利。用墓事主沉晦；用墓加生事宜再发。用克见相害事主艰难。用刑恩中成怨、欢里成仇。用破暗里生灾、隐中阻隔。用空吉凶不成、事多虚诈。用冲事多反覆、聚散不定。用克岁岁中有灾；克月月中有祸；用克日鬼贼病讼、尊长有灾；用克辰宅中不宁，金氏旁注主动忧惊、小口奴婢灾病；用克时心动忧惊、小口奴婢灾病；用克末有头无尾、先易后难；用克命命运颠倒；用克行年年中休咎。用财宜求财，用印宜承旧庇，用官宜求官干贵。用二马生干有出行进财之喜；用二马克干及年命主损手足之灾，乘马行程登舟。用见月厌作事不成；用见吊丧事干孝服。绝地重兴与墓加生再发是救应，不得写成凡绝墓皆休。二马生干 vs 克干年命分绑。金氏克辰注与正文克时同辞，并行不合并。",
+      "terms": [
+        "用神",
+        "长生",
+        "绝地",
+        "二马"
+      ],
+      "notes": [
+        "用墓加生再发、绝地事休重兴不得删。",
+        "二马生干进财 vs 克干年命损手足。"
+      ],
+      "review": "source-reviewed",
+      "verified": false,
+      "subsections": [
+        {
+          "id": "S001",
+          "title": "生败绝墓刑破空冲",
+          "startLine": 4387,
+          "endLine": 4397,
+          "vernacular": "长生称心，死败囚谢，绝地事休重兴信息行人。官鬼不利。墓沉晦，墓加生再发。克害艰难，刑恩仇，破暗阻，空虚诈，冲反覆。",
+          "terms": [
+            "绝地"
+          ],
+          "notes": []
+        },
+        {
+          "id": "S002",
+          "title": "用克岁月至行年",
+          "startLine": 4398,
+          "endLine": 4406,
+          "vernacular": "克岁岁灾，克月月祸，克日病讼尊长，克辰宅不宁，克时小口奴婢，克末有头无尾，克命颠倒，克行年休咎。",
+          "terms": [
+            "用克"
+          ],
+          "notes": [
+            "金氏克辰注与克时同辞。"
+          ]
+        },
+        {
+          "id": "S003",
+          "title": "财印官马月厌吊丧",
+          "startLine": 4407,
+          "endLine": 4409,
+          "vernacular": "用财求财，用印承旧，用官干贵。二马生干出行进财，克干年命损手足。月厌不成，吊丧孝服。",
+          "terms": [
+            "二马"
+          ],
+          "notes": []
+        }
+      ]
+    },
+    {
+      "paragraphId": "liuren-miben:L4411-L4418",
+      "kind": "规则候选",
+      "vernacular": "用临寅申巳亥，事有发生之逃。春寅夏巳秋申冬亥为用＝机发当时，无往不利。春巳夏申秋亥冬寅＝将来者进，亦获荣昌。春亥夏寅秋巳冬申＝功成者退，乐享无涯，培养以知其枝。春申夏亥秋寅冬巳＝反弓相射、四废无依，当晦名以敛其迹。电子本「发生之逃」不改正文。四孟季节四路不得塌成凡用临四孟皆吉；反弓四废是否定。",
+      "terms": [
+        "机发当时",
+        "将来者进",
+        "功成者退",
+        "反弓相射"
+      ],
+      "notes": [
+        "反弓相射四废不得删。",
+        "发生之逃待核。"
+      ],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "liuren-miben:L4420-L4420",
+      "kind": "规则候选",
+      "vernacular": "子午卯酉乃四正之神。若临四仲神而归传四正者，有正大之规模。须用临四仲且传归四正，缺归传不在本行套正大。",
+      "terms": [
+        "四正",
+        "四仲"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "liuren-miben:L4422-L4422",
+      "kind": "规则候选",
+      "vernacular": "辰戌丑未四墓之神。若用临四墓而传出墓库者，有脱俗之志。传出墓库是条件，与上行用墓沉晦分读：未传出不得称脱俗。",
+      "terms": [
+        "四墓"
+      ],
+      "notes": [
+        "传出墓库才脱俗，不得写成凡用墓皆脱俗。"
+      ],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "liuren-miben:L4424-L4424",
+      "kind": "理论",
+      "vernacular": "事之先兆，发用预知。学者当潜心焉。收束用神总论。",
+      "terms": [
+        "用神"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "liuren-miben:L4426-L4426",
+      "kind": "规则候选",
+      "vernacular": "干人支宅。干为君、父、夫、尊长、己身；支为臣、子、弟、妻、卑小、奴婢、他人。六亲配位，后文金氏歌注沿用此分。",
+      "terms": [
+        "干人支宅"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "liuren-miben:L4428-L4428",
+      "kind": "评注或元数据",
+      "vernacular": "此章之上，金氏又录一条。金氏补录与正文干支总论分读，不据补录废上行。",
+      "terms": [
+        "金氏"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "liuren-miben:L4430-L4430",
+      "kind": "规则候选",
+      "vernacular": "占式法：暗遁扶鬼方作党，无子不须寻暗遁。细则见注。",
+      "terms": [
+        "暗遁",
+        "明鬼"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "liuren-miben:L4432-L4432",
+      "kind": "规则候选",
+      "vernacular": "用作鬼是明鬼；旬遁作干鬼是暗鬼。若用作鬼，传中必得子孙救之；或子孙寡而临于败绝之地，旬遁干神扶鬼作党胜于子孙，则明鬼愈炽。若传中绝无子孙救之，则明鬼之克尚不能当，亦不须寻遁干之暗鬼。无子不寻暗遁是否定凡见遁鬼皆党。须明鬼在用且子孙能救才论暗党；无子孙则只断明鬼。",
+      "terms": [
+        "明鬼",
+        "暗鬼",
+        "子孙"
+      ],
+      "notes": [
+        "无子不须寻暗遁不得删。"
+      ],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "liuren-miben:L4434-L4434",
+      "kind": "规则候选",
+      "vernacular": "或巳或亥或干支，干支生合两事论。细则见注。",
+      "terms": [
+        "两事"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "liuren-miben:L4436-L4436",
+      "kind": "规则候选",
+      "vernacular": "巳为双女、亥为双鱼，乃两事之象。或干支同出即在传中，亦有两事之象。或生干合支、或生支合干，亦为两事之象。三路皆以两事言，缺象不套两事。",
+      "terms": [
+        "两事",
+        "双女",
+        "双鱼"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "liuren-miben:L4438-L4438",
+      "kind": "理论",
+      "vernacular": "午克年神入关吏，此年必定见争官。更带关迷并戏咒，缧绁相干欲脱难。德不胜刑君子滞，更看助刑党恶是。文章劾谤不如归，君子道消何所济。歌句，细则见注。电子本「戏咒」与注「戏神」分读。",
+      "terms": [
+        "关隔",
+        "吏神"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "liuren-miben:L4440-L4440",
+      "kind": "规则候选",
+      "vernacular": "关即关隔，吏即吏神。游神春丑夏子秋戌冬亥。戏神春巳夏子秋酉冬辰。德为君子、刑为小人。君子怀德而得时旺相，则小人仰君子，刑反为用。若休囚不旺，而小人之用刑者反成其党，则德不胜刑、君子道消。不知机而文章谤劾则不容己，君子当明哲保身。德胜刑须德旺相；休囚则刑党，不得写成凡见德皆君子亨。",
+      "terms": [
+        "关隔",
+        "游神",
+        "戏神"
+      ],
+      "notes": [
+        "德不胜刑绑休囚，旺相则刑反为用。"
+      ],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "liuren-miben:L4442-L4442",
+      "kind": "理论",
+      "vernacular": "用被众害来相亲，不宜再见助害人。助害人多根已深，欲逃无可取前程。",
+      "terms": [
+        "助害"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "liuren-miben:L4444-L4444",
+      "kind": "规则候选",
+      "vernacular": "用被党恶来害：害是传中之鬼相合而成。又遁暗建之鬼助党为恶，祸根深固不可解，欲免其祸尚不可得，安望取前程。须用被合鬼来害且暗建助党，缺暗党不在本行套不可解。",
+      "terms": [
+        "暗建",
+        "党恶"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "liuren-miben:L4446-L4446",
+      "kind": "理论",
+      "vernacular": "客邀我入见以去，路必防之免其祸。防是救应。",
+      "terms": [
+        "客邀"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "liuren-miben:L4448-L4448",
+      "kind": "规则候选",
+      "vernacular": "初传与干相合是客来邀我。末传作鬼克干，加劫煞丁马刑害，是见一去而后有害我心，宜防以免祸。须初合+末鬼克干+劫煞丁马刑害。防之可免，不得写成凡初合皆祸。",
+      "terms": [
+        "劫煞",
+        "丁马"
+      ],
+      "notes": [
+        "宜防以免祸不得删。"
+      ],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "liuren-miben:L4450-L4450",
+      "kind": "理论",
+      "vernacular": "干辰上神克日上神，害刑负克作杀两相侵。更有迷神并谩语，却有冤家未遇人。歌「干辰」与注「支上」待对读。",
+      "terms": [
+        "迷神",
+        "谩语"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "liuren-miben:L4452-L4452",
+      "kind": "规则候选",
+      "vernacular": "支为他人、干为我。支上神克干上神是人来害我，更凶神助、刑害、迷神、谩语，有仇人害我之事，预防之可也。电子本歌作「干辰上神克日上神」，注作支上克干上，歌注用词不一，不据注改正歌。预防可免。",
+      "terms": [
+        "迷神",
+        "谩语"
+      ],
+      "notes": [
+        "歌干辰 vs 注支上待核，不合并。"
+      ],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "liuren-miben:L4454-L4454",
+      "kind": "理论",
+      "vernacular": "未上巳午，谩负相害，克有口舌，相争不停。",
+      "terms": [
+        "口舌"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "liuren-miben:L4456-L4456",
+      "kind": "规则候选",
+      "vernacular": "巳午加未上，带谩语刑害，尤有口舌相争之事。须巳午加未+谩语刑害，缺件不套相争不停。",
+      "terms": [
+        "谩语"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "liuren-miben:L4458-L4458",
+      "kind": "理论",
+      "vernacular": "一鬼一鬼复一鬼，鬼害相临灾病起。破讼累年常生斗，涉我忧愁何日已？",
+      "terms": [
+        "鬼"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "liuren-miben:L4460-L4460",
+      "kind": "理论",
+      "vernacular": "一牛二换，东走西行，所事不得，嗟籲不已经。黄本作「东走西起」。歌「一牛二换」与下注「一牛二鬼」用词不一；嗟籲待核。不据注改歌，不据黄本改东走西行。",
+      "terms": [
+        "一牛"
+      ],
+      "notes": [
+        "一牛二换 vs 一牛二鬼、黄本东走西起待核。"
+      ],
+      "review": "draft",
+      "verified": false
+    },
+    {
+      "paragraphId": "liuren-miben:L4462-L4462",
+      "kind": "规则候选",
+      "vernacular": "丑为牛，加天牛之煞，是一牛二鬼。又加天鬼、天马克干，是牛之东西起，主人事不得意。再加官符、病符，则灾害嗟籲。人事不得意须丑+天牛+天鬼天马克干；灾害须再加官符病符。黄本「东西起」与本注同向。",
+      "terms": [
+        "天牛",
+        "天鬼",
+        "天马"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "liuren-miben:L4464-L4464",
+      "kind": "理论",
+      "vernacular": "有人前行，不可不顾。后虽有追，借其回护。借前回护是救应。",
+      "terms": [
+        "回护"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "liuren-miben:L4466-L4466",
+      "kind": "规则候选",
+      "vernacular": "马临初传是有人前行、与我作合；末见劫煞是有人追我。或为我之害，当借前人之合我以回避之，方可免祸。须初马合+末劫煞。借合回避可免，不得写成凡末见劫煞皆不免。",
+      "terms": [
+        "驿马",
+        "劫煞"
+      ],
+      "notes": [
+        "借前合回避方可免祸不得删。"
+      ],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "liuren-miben:L4468-L4468",
+      "kind": "理论",
+      "vernacular": "两鬼相斗不相容，一个歌樽一个哭。歌者喜之哭者悲，若是幽人利空谷。电子本「歌樽」不改字。",
+      "terms": [
+        "两鬼"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "liuren-miben:L4470-L4470",
+      "kind": "规则候选",
+      "vernacular": "用传中鬼相刑害，是两鬼相斗不相容。一个带喜神而歌，一个带哭神而哭。哭神遗悲、喜神遗乐，忧喜得半而無事。天喜春戌夏丑秋辰冬未。忧喜得半是否定两鬼皆大凶。须两鬼相刑害且一喜一哭。",
+      "terms": [
+        "天喜",
+        "哭神"
+      ],
+      "notes": [
+        "忧喜得半而無事不得写成凡两鬼皆凶。"
+      ],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "liuren-miben:L4472-L4472",
+      "kind": "理论",
+      "vernacular": "一个鬼时传上立，口不言时心里设。切毋谩语作相交，免致其中成怨结。",
+      "terms": [
+        "谩语"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "liuren-miben:L4474-L4474",
+      "kind": "规则候选",
+      "vernacular": "初传鬼克干，是不言而设心害我；加谩语相负煞，宜慎之。须初鬼克干+谩语相负。",
+      "terms": [
+        "谩语"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "liuren-miben:L4476-L4476",
+      "kind": "理论",
+      "vernacular": "隔地莫说投机话，被他直性前行骂。有时半路一些言，随入他乡有牵挂。",
+      "terms": [
+        "隔角"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "liuren-miben:L4478-L4478",
+      "kind": "规则候选",
+      "vernacular": "课中带隔角煞为隔地，不可说投机话。用传入带合神，是因其暂合之相投而即说同心之话。若传入刑害或劫煞，则一言不合终变为隔角之态，心事反为他知而入圈套。隔角煞：辰巳未申戌亥丑寅。暂合可说 vs 传入刑害劫煞则不可，分条件。",
+      "terms": [
+        "隔角煞"
+      ],
+      "notes": [
+        "隔角煞辰巳未申戌亥丑寅，缺角不套隔地。"
+      ],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "liuren-miben:L4480-L4480",
+      "kind": "理论",
+      "vernacular": "初见其良两相协，中间有诈不相入。谁知堕在诈陷中，欲结不结徒自说。歌句，注在下行。",
+      "terms": [
+        "诈陷"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
     }
   ]
 }

@@ -1,7 +1,7 @@
 {
   "bookSlug": "daliuren-daquan",
   "sourceTitle": "大六壬大全（现有电子主文本）",
-  "scopeNote": "本文件只覆盖已逐段实读范围：卷一起例/入手法 L56–98；卷七课经集一元首至龙德 L9101–11045；卷八官爵、富贵、轩盖、铸印、斫轮 L11047–11444。不代表全书 6893 段已审。source-reviewed 不是影印校勘或人工 verified；案例保持 verified=false。斫轮正文卯加庚或辛 vs 订讹庚辛申酉 vs 袖中金申酉；寅天梁不作斫轮；春伤斧秋伤轮 vs 袖中金秋三月伤斧。",
+  "scopeNote": "本文件只覆盖已逐段实读范围：卷一起例/入手法 L56–98；卷七课经集一元首至龙德 L9101–11045；卷八官爵至亨通 L11047–11538。不代表全书 6893 段已审。source-reviewed 不是影印校勘或人工 verified；案例保持 verified=false。引从初末夹干支贵禄分格，墓鬼须冲克才散；亨通三路与订讹五格并行，空破刑克、恩多怨深、罗网不得删。",
   "entries": [
     {
       "paragraphId": "daliuren-daquan:L0056-L0056",
@@ -14037,6 +14037,542 @@
             "伤斧时令与正文分读。"
           ]
         }
+      ]
+    },
+    {
+      "paragraphId": "daliuren-daquan:L11446-L11446",
+      "kind": "术语",
+      "vernacular": "引从课标题。吉课叠层，不是九宗门取传。",
+      "terms": [
+        "引从"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L11448-L11457",
+      "kind": "规则候选",
+      "vernacular": "凡课日辰干支前后上神发用为初末传，曰引从课。前引后从，不改九宗门发用。分格：庚辰日干上丑昼贵，初传寅加酉居日前、末传子加未居日后＝拱天干，又为拱贵，主官职升擢。壬子日干上辰，初巳末卯＝两贵引从，主上人提携或众贵引荐成合，大利。甲午日初传子居支前、末传戌居支后＝拱地支，主迁修家宅大利。丁酉日酉夜贵加丁干、亥昼贵加酉支、年命在申＝贵临支干拱年命，宜告贵用事，必得两贵成就。丁巳、己巳、癸亥日伏吟＝干支拱日禄，宜占食禄事。庚午、己酉日伏吟拱夜贵。甲子日伏吟拱昼贵＝干支拱贵，宜告贵处事。电子本「宜千告贵」不改正文。缺前后夹拱不得称本行引从。伏吟三日拱禄与庚午己酉拱夜贵、甲子拱昼贵分日，不得写成凡伏吟皆引从。",
+      "terms": [
+        "引从",
+        "拱天干",
+        "拱地支",
+        "拱贵",
+        "两贵引从"
+      ],
+      "notes": [
+        "初末夹干/支/贵/禄分格，不得塌成凡初末夹一神。",
+        "伏吟拱禄/拱贵只绑所举日。"
+      ],
+      "review": "source-reviewed",
+      "verified": false,
+      "subsections": [
+        {
+          "id": "S001",
+          "title": "拱天干与两贵",
+          "startLine": 11448,
+          "endLine": 11451,
+          "vernacular": "干支前后上神为初末传。庚辰拱天干又拱贵。壬子两贵引从。",
+          "terms": [
+            "拱天干",
+            "两贵引从"
+          ],
+          "notes": []
+        },
+        {
+          "id": "S002",
+          "title": "拱支拱年命",
+          "startLine": 11452,
+          "endLine": 11454,
+          "vernacular": "甲午拱地支迁修家宅。丁酉贵临支干拱年命两贵成就。",
+          "terms": [
+            "拱地支"
+          ],
+          "notes": [
+            "年命在申是本例条件。"
+          ]
+        },
+        {
+          "id": "S003",
+          "title": "伏吟拱禄拱贵",
+          "startLine": 11455,
+          "endLine": 11457,
+          "vernacular": "丁巳己巳癸亥伏吟拱日禄。庚午己酉拱夜贵。甲子拱昼贵。故名前引后从。",
+          "terms": [
+            "拱日禄",
+            "拱贵"
+          ],
+          "notes": [
+            "千告待核。"
+          ]
+        }
+      ]
+    },
+    {
+      "paragraphId": "daliuren-daquan:L11459-L11459",
+      "kind": "规则候选",
+      "vernacular": "象：拱夹支干，仕人佳兆，官职升迁，名利荣耀，孕生英儿，出行取财，干贵欢笑。电子本「婚招玉」疑缺字，不改正文。否定/救应：日辰上乘墓鬼遇引从，六处有冲克，凶散最吉。或干支并初中及中末拱地贵，告贵谋事亦吉。电子本「拱拱地贵」叠字，不据叠字另立两拱。墓鬼遇引从须六处冲克才凶散，缺冲克不在本行套最吉。",
+      "terms": [
+        "引从",
+        "墓鬼"
+      ],
+      "notes": [
+        "婚招玉、拱拱待核。",
+        "墓鬼+六处冲克凶散不得写成凡引从无凶。"
+      ],
+      "review": "draft",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L11461-L11461",
+      "kind": "案例",
+      "vernacular": "壬子日巳时戌将：初传巳加子，末传卯加戌，拱定干神为二贵引从天干格。与正文壬子两贵引从同向。",
+      "terms": [
+        "引从",
+        "壬子"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L11463-L11463",
+      "kind": "案例",
+      "vernacular": "同例初传：巳乘贵人。",
+      "terms": [
+        "三传",
+        "贵人"
+      ],
+      "notes": [
+        "盘图待影印核。"
+      ],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L11465-L11465",
+      "kind": "案例",
+      "vernacular": "同例中传：戌乘青龙。",
+      "terms": [
+        "三传"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L11467-L11467",
+      "kind": "案例",
+      "vernacular": "同例末传：卯乘太阴。初巳末卯夹拱。",
+      "terms": [
+        "三传"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L11469-L11469",
+      "kind": "案例",
+      "vernacular": "同例四课天将：青、贵、勾、后。",
+      "terms": [
+        "四课",
+        "天将"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L11471-L11471",
+      "kind": "案例",
+      "vernacular": "同例四课上神：戌、巳、酉、辰。",
+      "terms": [
+        "四课"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L11473-L11473",
+      "kind": "案例",
+      "vernacular": "同例四课下神：巳、子、辰、壬。壬寄亥。",
+      "terms": [
+        "四课"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L11475-L11475",
+      "kind": "案例",
+      "vernacular": "同例地盘上一行：戌亥子丑。",
+      "terms": [
+        "地盘"
+      ],
+      "notes": [
+        "待影印核。"
+      ],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L11477-L11477",
+      "kind": "案例",
+      "vernacular": "同例地盘「酉    寅」一行。",
+      "terms": [
+        "地盘"
+      ],
+      "notes": [
+        "待影印核。"
+      ],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L11479-L11479",
+      "kind": "案例",
+      "vernacular": "同例地盘「申    卯」一行。",
+      "terms": [
+        "地盘"
+      ],
+      "notes": [
+        "待影印核。"
+      ],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L11481-L11481",
+      "kind": "案例",
+      "vernacular": "同例地盘下一行：未午巳辰。巳加子为用。",
+      "terms": [
+        "地盘"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L11483-L11483",
+      "kind": "评注或元数据",
+      "vernacular": "引从《订讹》标题。",
+      "terms": [
+        "订讹"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L11485-L11485",
+      "kind": "规则候选",
+      "vernacular": "订讹：前引后从。或初末传拱干，主得人提携成合事大利。或两贵拱干，主官职升擢。或初末传拱支，或两贵拱支，主家宅吉庆。或贵临干支拱年命，主得两贵成就。或干支拱日禄，宜占食禄事。或干支拱贵，宜占告贵事。又有干支并初中及中末拱地贵亦是。与正文分格同向。订讹未写墓鬼冲克凶散，不据本行废正文救应。",
+      "terms": [
+        "引从",
+        "拱干",
+        "拱支"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false,
+      "relatedParagraphIds": [
+        "daliuren-daquan:L11448-L11457"
+      ]
+    },
+    {
+      "paragraphId": "daliuren-daquan:L11487-L11487",
+      "kind": "规则候选",
+      "vernacular": "占主求官、求财、出行、婚孕皆宜。订讹吉占总断，不覆盖正文墓鬼须冲克才散。",
+      "terms": [
+        "引从"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L11489-L11489",
+      "kind": "术语",
+      "vernacular": "亨通课标题。吉课叠层，不是九宗门取传。",
+      "terms": [
+        "亨通"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L11491-L11499",
+      "kind": "规则候选",
+      "vernacular": "凡课用神生日，及三传递生日干，或干支俱互生旺，为亨通课。三路并列，缺一路仍可走其余，不得要求三件齐备。丙申日三传申亥寅：初生中、中生末、末生日干。癸丑日三传酉丑巳：末生中、中生初、初生日干，为递生。主上人推荐或官员请举及文状事，始终成就。辛卯日干上亥、支上辰为互生。丙寅干上寅生丙、支上亥生寅为俱生，主彼此和顺两相有益，遇生气两家合本求利。甲申日干上酉为支旺、支上卯为干旺为互旺，主客两相投奔。壬寅日干上子、支上卯为俱旺，自在坐用谋为省力，或事已失欲复旧，或本职迁转，或坐待无心中得人照扶。电子本「事己失」「坐待通太」不改正文。俱生遇生气才合本求利，缺生气不在本行套合本。",
+      "terms": [
+        "亨通",
+        "递生",
+        "互生",
+        "俱生",
+        "互旺",
+        "俱旺"
+      ],
+      "notes": [
+        "用神生日、三传递生、干支生旺三路并行。",
+        "遇生气两家合本不得扩到凡俱生。"
+      ],
+      "review": "source-reviewed",
+      "verified": false,
+      "subsections": [
+        {
+          "id": "S001",
+          "title": "递生两例",
+          "startLine": 11491,
+          "endLine": 11494,
+          "vernacular": "用神生日或三传递生或干支生旺。丙申申亥寅顺递生；癸丑酉丑巳逆递生。主推荐文状始终成就。",
+          "terms": [
+            "递生"
+          ],
+          "notes": []
+        },
+        {
+          "id": "S002",
+          "title": "互生俱生互旺俱旺",
+          "startLine": 11495,
+          "endLine": 11499,
+          "vernacular": "辛卯互生。丙寅俱生，遇生气合本。甲申互旺。壬寅俱旺坐用省力或复旧迁转。",
+          "terms": [
+            "互生",
+            "俱生",
+            "互旺",
+            "俱旺"
+          ],
+          "notes": [
+            "通太待核。"
+          ]
+        }
+      ]
+    },
+    {
+      "paragraphId": "daliuren-daquan:L11501-L11510",
+      "kind": "规则候选",
+      "vernacular": "象：三传相生，干支有情，官逢荐擢，士获科名，婚姻合和，财利生成。三传递生俱要与日干有情，则隔三隔四有人于上位推荐。电子本「日干干有情」叠字，不另立两干。或末助初传生日，主傍人暗助吹嘘。或末助初传作日财，主暗地人以财相助。或支加干生日为自在格，主人来资助于我。或三传生日俱为大吉。否定：递生值空亡、破、刑、克、害，无甚解救为凶，凡事亦难就。或初生中、中生末、末克日干为恩多怨深，作事美中致怨。或干支俱旺及禄临身，传财逢空，不可舍此别谋动作；倘意外图远，则羊刃变为罗网缠身；六处有冲为破罗破网，无冲克为凶。空破刑克害、恩多怨深、罗网三支不得写成凡亨通皆大吉。破罗须六处有冲。",
+      "terms": [
+        "亨通",
+        "自在格",
+        "恩多怨深",
+        "破罗破网"
+      ],
+      "notes": [
+        "递生空破刑克害无解救为凶不得删。",
+        "末克日干恩多怨深不得删。",
+        "禄身传财空不可别谋；无冲则罗网为凶。"
+      ],
+      "review": "source-reviewed",
+      "verified": false,
+      "subsections": [
+        {
+          "id": "S001",
+          "title": "有情暗助自在",
+          "startLine": 11501,
+          "endLine": 11506,
+          "vernacular": "递生须与日干有情才上位推荐。末助初生日＝傍人吹嘘；末助初作日财＝暗地财助。支加干生日＝自在格人来资助。三传生日大吉。",
+          "terms": [
+            "自在格"
+          ],
+          "notes": [
+            "干干叠字待核。"
+          ]
+        },
+        {
+          "id": "S002",
+          "title": "空破恩怨与罗网",
+          "startLine": 11507,
+          "endLine": 11510,
+          "vernacular": "递生空破刑克害无解救则凶。末克日＝恩多怨深。旺禄临身传财空不可别谋，远图则刃变罗网；六处有冲才破网，无冲为凶。",
+          "terms": [
+            "恩多怨深",
+            "破罗破网"
+          ],
+          "notes": []
+        }
+      ]
+    },
+    {
+      "paragraphId": "daliuren-daquan:L11512-L11512",
+      "kind": "案例",
+      "vernacular": "丙戌日申时亥将：申加丙为用，初申生中亥，亥生末寅，寅生日干丙火，为亨通课。演示用神生日与三传递生同盘。",
+      "terms": [
+        "亨通",
+        "丙戌"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L11514-L11514",
+      "kind": "案例",
+      "vernacular": "同例初传：申乘六合。",
+      "terms": [
+        "三传",
+        "六合"
+      ],
+      "notes": [
+        "盘图待影印核。"
+      ],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L11516-L11516",
+      "kind": "案例",
+      "vernacular": "同例中传：亥乘贵人。",
+      "terms": [
+        "三传"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L11518-L11518",
+      "kind": "案例",
+      "vernacular": "同例末传：寅乘元武。三传申亥寅。",
+      "terms": [
+        "三传"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L11520-L11520",
+      "kind": "案例",
+      "vernacular": "同例四课天将：白、阴、贵、六。",
+      "terms": [
+        "四课",
+        "天将"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L11522-L11522",
+      "kind": "案例",
+      "vernacular": "同例四课上神：辰、丑、亥、申。",
+      "terms": [
+        "四课"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L11524-L11524",
+      "kind": "案例",
+      "vernacular": "同例四课下神：丑、戌、申、丙。丙寄巳。",
+      "terms": [
+        "四课"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L11526-L11526",
+      "kind": "案例",
+      "vernacular": "同例地盘上一行：申酉戌亥。",
+      "terms": [
+        "地盘"
+      ],
+      "notes": [
+        "待影印核。"
+      ],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L11528-L11528",
+      "kind": "案例",
+      "vernacular": "同例地盘「未    子」一行。",
+      "terms": [
+        "地盘"
+      ],
+      "notes": [
+        "待影印核。"
+      ],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L11530-L11530",
+      "kind": "案例",
+      "vernacular": "同例地盘「午    丑」一行。",
+      "terms": [
+        "地盘"
+      ],
+      "notes": [
+        "待影印核。"
+      ],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L11532-L11532",
+      "kind": "案例",
+      "vernacular": "同例地盘下一行：巳辰卯寅。申加丙为用。",
+      "terms": [
+        "地盘"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L11534-L11534",
+      "kind": "评注或元数据",
+      "vernacular": "亨通《订讹》标题。",
+      "terms": [
+        "订讹"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L11536-L11536",
+      "kind": "规则候选",
+      "vernacular": "订讹分五格：递生＝初生中中生末末生干，或末生中中生初初生干；俱生＝干上生干、支上生支；互生＝干上生支、支上生干；俱旺＝干上干旺、支上支旺；互旺＝干上支旺、支上干旺。电子本「用语末生中」不改正文，疑与「或」末生中粘连。订讹把正文「干支俱互生旺」拆成四格，与正文三路并列并行，不据订讹废用神生日，也不据正文废五格名。",
+      "terms": [
+        "递生格",
+        "俱生格",
+        "互生格",
+        "俱旺格",
+        "互旺格"
+      ],
+      "notes": [
+        "用语末生中待核。"
+      ],
+      "review": "draft",
+      "verified": false,
+      "relatedParagraphIds": [
+        "daliuren-daquan:L11491-L11499"
+      ]
+    },
+    {
+      "paragraphId": "daliuren-daquan:L11538-L11538",
+      "kind": "规则候选",
+      "vernacular": "占主大吉。递生得人重重举荐，始终成就。末助初传生日傍人暗助；末助初传作日财暗地人财相助。俱生人宅各安；互生彼此相助和合；俱旺谋用省力；互旺彼此投奔互有兴旺。订讹吉占未写空破刑克、恩多怨深、罗网，不据本行废正文否定。",
+      "terms": [
+        "亨通"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false,
+      "relatedParagraphIds": [
+        "daliuren-daquan:L11501-L11510"
       ]
     }
   ]
