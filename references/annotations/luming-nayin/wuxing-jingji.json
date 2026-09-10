@@ -2,7 +2,7 @@
   "schemaVersion": "fateradar-annotations-v1",
   "bookSlug": "wuxing-jingji",
   "sourceFile": "sources/fulltext/luming-nayin/wuxing-jingji/fulltext.md",
-  "reviewScope": "已逐段阅读电子文本宋-廖中至卷二癸亥水取象（wuxing-jingji:L0005-L0005 至 L0854-L0854）并作语义注解。source-reviewed只指对照电子主文本，不代表影印人工核验。本批无新增人名连续四柱。",
+  "reviewScope": "已逐段阅读电子文本宋-廖中至卷二己巳禄库八专（wuxing-jingji:L0005-L0005 至 L0920-L0920）并作语义注解。source-reviewed只指对照电子主文本，不代表影印人工核验。本批无新增人名连续四柱。",
   "entries": [
     {
       "paragraphId": "wuxing-jingji:L0005-L0005",
@@ -8198,6 +8198,520 @@
       "relatedParagraphIds": [
         "wuxing-jingji:L0852-L0852",
         "wuxing-jingji:L0856-L0856"
+      ]
+    },
+    {
+      "paragraphId": "wuxing-jingji:L0856-L0856",
+      "kind": "术语",
+      "vernacular": "癸亥水宜忌标目：喜金土火。不是现代操作步骤。",
+      "terms": [
+        "喜金土火",
+        "癸亥水"
+      ],
+      "notes": [
+        "待分类作术语",
+        "无人名连续四柱不收案例",
+        "标目不作现代操作步骤",
+        "纳音分套只归档，不改已落地子平或纳音算法"
+      ],
+      "review": "source-reviewed",
+      "verified": false,
+      "relatedParagraphIds": [
+        "wuxing-jingji:L0854-L0854",
+        "wuxing-jingji:L0858-L0884"
+      ]
+    },
+    {
+      "paragraphId": "wuxing-jingji:L0858-L0884",
+      "kind": "理论",
+      "vernacular": "右件六十甲子大小变论：盛大忌变为小弱，小弱欲变为盛大；先贫后富则荣华，先富后贫则卑辱，不可以先前一端废后变。年木假令庚寅辛卯盛大，月日時胎不见他木则以松柏论，若见杨柳或石榴则舍大就小。壬午癸未生人木小弱，不见他木则以杨柳论，若见松柏或大林木则弃小论大。天上火、剑锋金、大海水、大驿土等盛大，覆灯火、金萡金、井泉水、沙中土等小弱，月日時胎见同纳音而大小相反，或引凡入圣或先重后轻，皆从变者而论，不可拘于一端。（广录）。假令庚寅辛卯、壬午癸未生人是纳音类举，不是人名连续四柱。span=27，五条subsections连续覆盖0858-0884。",
+      "terms": [
+        "大小变",
+        "松柏",
+        "杨柳",
+        "广录"
+      ],
+      "notes": [
+        "待分类作理论",
+        "无人名连续四柱不收案例",
+        "己醜吉兇華蓋曲腳闕字祿刑聾啞鬆柏金萡廣錄原字不改",
+        "官职贫富刑死是历史分类，不转成对现实用户的判断",
+        "span=27五条subsections连续覆盖0858-0884",
+        "假令庚寅辛卯、壬午癸未生人是纳音类举，不收案例"
+      ],
+      "review": "source-reviewed",
+      "verified": false,
+      "relatedParagraphIds": [
+        "wuxing-jingji:L0856-L0856",
+        "wuxing-jingji:L0886-L0886"
+      ],
+      "subsections": [
+        {
+          "id": "wuxing-jingji:L0858-L0884:daxiao-bian",
+          "title": "大小变总论",
+          "startLine": 858,
+          "endLine": 859,
+          "vernacular": "六十甲子盛大者忌变为小弱，小弱者欲变为盛大。譬如先贫贱而后富贵则荣华，先富贵而后贫贱则卑辱，不可以其先贫贱而不论其富贵，亦不可以其先则不论其贫贱。贫富贵贱是书中取象，不是对现实用户的判断。",
+          "terms": [
+            "盛大",
+            "小弱"
+          ],
+          "notes": [
+            "待分类作理论",
+            "无人名连续四柱不收案例",
+            "官职贫富刑死是历史分类，不转成对现实用户的判断"
+          ]
+        },
+        {
+          "id": "wuxing-jingji:L0858-L0884:nian-mu-songbai",
+          "title": "年木假令松柏",
+          "startLine": 860,
+          "endLine": 860,
+          "vernacular": "且年属木，假令是庚寅辛卯，则木之盛大可知；若月日時胎不见他木，则以松柏论；万一月日時胎上见杨柳木或石榴木，则当舍大就小，不以松柏论。假令庚寅辛卯是纳音类举，不是人名四柱。鬆柏原字不改。",
+          "terms": [
+            "假令",
+            "庚寅辛卯",
+            "松柏"
+          ],
+          "notes": [
+            "待分类作理论",
+            "无人名连续四柱不收案例",
+            "假令庚寅辛卯是议论，不收案例",
+            "己醜吉兇華蓋曲腳闕字祿刑聾啞鬆柏金萡廣錄原字不改"
+          ]
+        },
+        {
+          "id": "wuxing-jingji:L0858-L0884:yangliu-bian-da",
+          "title": "壬午癸未杨柳变大",
+          "startLine": 861,
+          "endLine": 868,
+          "vernacular": "壬午癸未生人则木之小弱可知；若月日時胎不见他木，则以杨柳论；万一月日時胎上见松柏木或大林木，则弃小论大，不可以杨柳木论。壬午癸未生人无名，不是人名连续四柱。",
+          "terms": [
+            "壬午癸未",
+            "杨柳"
+          ],
+          "notes": [
+            "待分类作理论",
+            "无人名连续四柱不收案例",
+            "壬午癸未生人无名，不收案例"
+          ]
+        },
+        {
+          "id": "wuxing-jingji:L0858-L0884:yin-fan-ru-sheng",
+          "title": "盛大小弱从变",
+          "startLine": 869,
+          "endLine": 883,
+          "vernacular": "以至天上火、剑锋金、大海水、大驿土生人，月日時胎别见他位纳音同而小弱者；又如覆灯火、金萡金、井泉水、沙中土生人，月日時胎别见他位纳音同而盛大者，或引凡而入圣，或先重而后轻，皆当从其变者而论之，不可拘于一端。金萡原字不改。所列是纳音类举，不是人名四柱。",
+          "terms": [
+            "引凡入圣",
+            "从其变者"
+          ],
+          "notes": [
+            "待分类作理论",
+            "无人名连续四柱不收案例",
+            "己醜吉兇華蓋曲腳闕字祿刑聾啞鬆柏金萡廣錄原字不改",
+            "纳音分套只归档，不改已落地子平或纳音算法"
+          ]
+        },
+        {
+          "id": "wuxing-jingji:L0858-L0884:guanglu",
+          "title": "广录署",
+          "startLine": 884,
+          "endLine": 884,
+          "vernacular": "（广录）是称引署，不是断法条文。廣錄原字不改。",
+          "terms": [
+            "广录"
+          ],
+          "notes": [
+            "待分类作理论",
+            "无人名连续四柱不收案例",
+            "己醜吉兇華蓋曲腳闕字祿刑聾啞鬆柏金萡廣錄原字不改"
+          ]
+        }
+      ]
+    },
+    {
+      "paragraphId": "wuxing-jingji:L0886-L0886",
+      "kind": "序跋目录",
+      "vernacular": "【释六十甲子吉凶例】是卷二分节标目，提示下文是干支吉凶神煞短目，不是古书新增断法。吉兇原字不改。",
+      "terms": [
+        "释六十甲子吉凶例"
+      ],
+      "notes": [
+        "待分类作序跋目录",
+        "无人名连续四柱不收案例",
+        "己醜吉兇華蓋曲腳闕字祿刑聾啞鬆柏金萡廣錄原字不改",
+        "目录不作理论条或现代操作步骤"
+      ],
+      "review": "source-reviewed",
+      "verified": false,
+      "relatedParagraphIds": [
+        "wuxing-jingji:L0858-L0884",
+        "wuxing-jingji:L0888-L0888"
+      ]
+    },
+    {
+      "paragraphId": "wuxing-jingji:L0888-L0888",
+      "kind": "术语",
+      "vernacular": "吉凶例标目：甲子。这是干支标目，不是人名四柱。",
+      "terms": [
+        "甲子"
+      ],
+      "notes": [
+        "待分类作术语",
+        "无人名连续四柱不收案例",
+        "纳音分套只归档，不改已落地子平或纳音算法"
+      ],
+      "review": "source-reviewed",
+      "verified": false,
+      "relatedParagraphIds": [
+        "wuxing-jingji:L0886-L0886",
+        "wuxing-jingji:L0890-L0890"
+      ]
+    },
+    {
+      "paragraphId": "wuxing-jingji:L0890-L0890",
+      "kind": "术语",
+      "vernacular": "甲子吉神标目：进神、喜神、福星。不是现代操作步骤。",
+      "terms": [
+        "进神",
+        "喜神",
+        "福星",
+        "甲子"
+      ],
+      "notes": [
+        "待分类作术语",
+        "无人名连续四柱不收案例",
+        "标目不作现代操作步骤",
+        "纳音分套只归档，不改已落地子平或纳音算法"
+      ],
+      "review": "source-reviewed",
+      "verified": false,
+      "relatedParagraphIds": [
+        "wuxing-jingji:L0888-L0888",
+        "wuxing-jingji:L0892-L0892"
+      ]
+    },
+    {
+      "paragraphId": "wuxing-jingji:L0892-L0892",
+      "kind": "术语",
+      "vernacular": "甲子字形神煞标目：平头、悬针、破字。不是现代操作步骤，也不作字形诊断。",
+      "terms": [
+        "平头",
+        "悬针",
+        "破字",
+        "甲子"
+      ],
+      "notes": [
+        "待分类作术语",
+        "无人名连续四柱不收案例",
+        "标目不作现代操作步骤"
+      ],
+      "review": "source-reviewed",
+      "verified": false,
+      "relatedParagraphIds": [
+        "wuxing-jingji:L0890-L0890",
+        "wuxing-jingji:L0894-L0894"
+      ]
+    },
+    {
+      "paragraphId": "wuxing-jingji:L0894-L0894",
+      "kind": "术语",
+      "vernacular": "吉凶例标目：乙醜。乙醜原字不改。这是干支标目，不是人名四柱。",
+      "terms": [
+        "乙醜"
+      ],
+      "notes": [
+        "待分类作术语",
+        "无人名连续四柱不收案例",
+        "己醜吉兇華蓋曲腳闕字祿刑聾啞鬆柏金萡廣錄原字不改",
+        "纳音分套只归档，不改已落地子平或纳音算法"
+      ],
+      "review": "source-reviewed",
+      "verified": false,
+      "relatedParagraphIds": [
+        "wuxing-jingji:L0892-L0892",
+        "wuxing-jingji:L0896-L0896"
+      ]
+    },
+    {
+      "paragraphId": "wuxing-jingji:L0896-L0896",
+      "kind": "术语",
+      "vernacular": "乙醜吉神标目：福星、华盖、正印。華蓋原字不改。不是现代操作步骤。",
+      "terms": [
+        "福星",
+        "华盖",
+        "正印",
+        "乙醜"
+      ],
+      "notes": [
+        "待分类作术语",
+        "无人名连续四柱不收案例",
+        "己醜吉兇華蓋曲腳闕字祿刑聾啞鬆柏金萡廣錄原字不改",
+        "标目不作现代操作步骤",
+        "纳音分套只归档，不改已落地子平或纳音算法"
+      ],
+      "review": "source-reviewed",
+      "verified": false,
+      "relatedParagraphIds": [
+        "wuxing-jingji:L0894-L0894",
+        "wuxing-jingji:L0898-L0898"
+      ]
+    },
+    {
+      "paragraphId": "wuxing-jingji:L0898-L0898",
+      "kind": "术语",
+      "vernacular": "乙醜字形神煞标目：曲脚、阙字。曲腳闕字原字不改。不是现代操作步骤。",
+      "terms": [
+        "曲脚",
+        "阙字",
+        "乙醜"
+      ],
+      "notes": [
+        "待分类作术语",
+        "无人名连续四柱不收案例",
+        "己醜吉兇華蓋曲腳闕字祿刑聾啞鬆柏金萡廣錄原字不改",
+        "标目不作现代操作步骤"
+      ],
+      "review": "source-reviewed",
+      "verified": false,
+      "relatedParagraphIds": [
+        "wuxing-jingji:L0896-L0896",
+        "wuxing-jingji:L0900-L0900"
+      ]
+    },
+    {
+      "paragraphId": "wuxing-jingji:L0900-L0900",
+      "kind": "术语",
+      "vernacular": "吉凶例标目：丙寅。这是干支标目，不是人名四柱。",
+      "terms": [
+        "丙寅"
+      ],
+      "notes": [
+        "待分类作术语",
+        "无人名连续四柱不收案例",
+        "纳音分套只归档，不改已落地子平或纳音算法"
+      ],
+      "review": "source-reviewed",
+      "verified": false,
+      "relatedParagraphIds": [
+        "wuxing-jingji:L0898-L0898",
+        "wuxing-jingji:L0902-L0902"
+      ]
+    },
+    {
+      "paragraphId": "wuxing-jingji:L0902-L0902",
+      "kind": "术语",
+      "vernacular": "丙寅神煞标目：福星、禄刑。祿刑原字不改。不是现代操作步骤。",
+      "terms": [
+        "福星",
+        "禄刑",
+        "丙寅"
+      ],
+      "notes": [
+        "待分类作术语",
+        "无人名连续四柱不收案例",
+        "己醜吉兇華蓋曲腳闕字祿刑聾啞鬆柏金萡廣錄原字不改",
+        "标目不作现代操作步骤",
+        "纳音分套只归档，不改已落地子平或纳音算法"
+      ],
+      "review": "source-reviewed",
+      "verified": false,
+      "relatedParagraphIds": [
+        "wuxing-jingji:L0900-L0900",
+        "wuxing-jingji:L0904-L0904"
+      ]
+    },
+    {
+      "paragraphId": "wuxing-jingji:L0904-L0904",
+      "kind": "术语",
+      "vernacular": "丙寅字形神煞标目：平头、聋哑。聾啞原字不改。书中标目不是医学诊断。",
+      "terms": [
+        "平头",
+        "聋哑",
+        "丙寅"
+      ],
+      "notes": [
+        "待分类作术语",
+        "无人名连续四柱不收案例",
+        "己醜吉兇華蓋曲腳闕字祿刑聾啞鬆柏金萡廣錄原字不改",
+        "标目不作现代操作步骤",
+        "官职贫富刑死是历史分类，不转成对现实用户的判断"
+      ],
+      "review": "source-reviewed",
+      "verified": false,
+      "relatedParagraphIds": [
+        "wuxing-jingji:L0902-L0902",
+        "wuxing-jingji:L0906-L0906"
+      ]
+    },
+    {
+      "paragraphId": "wuxing-jingji:L0906-L0906",
+      "kind": "术语",
+      "vernacular": "吉凶例标目：丁卯。这是干支标目，不是人名四柱。",
+      "terms": [
+        "丁卯"
+      ],
+      "notes": [
+        "待分类作术语",
+        "无人名连续四柱不收案例",
+        "纳音分套只归档，不改已落地子平或纳音算法"
+      ],
+      "review": "source-reviewed",
+      "verified": false,
+      "relatedParagraphIds": [
+        "wuxing-jingji:L0904-L0904",
+        "wuxing-jingji:L0908-L0908"
+      ]
+    },
+    {
+      "paragraphId": "wuxing-jingji:L0908-L0908",
+      "kind": "术语",
+      "vernacular": "丁卯神煞标目：平头、截路。不是现代操作步骤。",
+      "terms": [
+        "平头",
+        "截路",
+        "丁卯"
+      ],
+      "notes": [
+        "待分类作术语",
+        "无人名连续四柱不收案例",
+        "标目不作现代操作步骤",
+        "纳音分套只归档，不改已落地子平或纳音算法"
+      ],
+      "review": "source-reviewed",
+      "verified": false,
+      "relatedParagraphIds": [
+        "wuxing-jingji:L0906-L0906",
+        "wuxing-jingji:L0910-L0910"
+      ]
+    },
+    {
+      "paragraphId": "wuxing-jingji:L0910-L0910",
+      "kind": "术语",
+      "vernacular": "丁卯字形神煞标目：悬针。不是现代操作步骤。",
+      "terms": [
+        "悬针",
+        "丁卯"
+      ],
+      "notes": [
+        "待分类作术语",
+        "无人名连续四柱不收案例",
+        "标目不作现代操作步骤"
+      ],
+      "review": "source-reviewed",
+      "verified": false,
+      "relatedParagraphIds": [
+        "wuxing-jingji:L0908-L0908",
+        "wuxing-jingji:L0912-L0912"
+      ]
+    },
+    {
+      "paragraphId": "wuxing-jingji:L0912-L0912",
+      "kind": "术语",
+      "vernacular": "吉凶例标目：戊辰。这是干支标目，不是人名四柱。",
+      "terms": [
+        "戊辰"
+      ],
+      "notes": [
+        "待分类作术语",
+        "无人名连续四柱不收案例",
+        "纳音分套只归档，不改已落地子平或纳音算法"
+      ],
+      "review": "source-reviewed",
+      "verified": false,
+      "relatedParagraphIds": [
+        "wuxing-jingji:L0910-L0910",
+        "wuxing-jingji:L0914-L0914"
+      ]
+    },
+    {
+      "paragraphId": "wuxing-jingji:L0914-L0914",
+      "kind": "术语",
+      "vernacular": "戊辰神煞标目：禄库、华盖、水禄、马。不是现代操作步骤。",
+      "terms": [
+        "禄库",
+        "华盖",
+        "水禄",
+        "马",
+        "戊辰"
+      ],
+      "notes": [
+        "待分类作术语",
+        "无人名连续四柱不收案例",
+        "己醜吉兇華蓋曲腳闕字祿刑聾啞鬆柏金萡廣錄原字不改",
+        "标目不作现代操作步骤",
+        "纳音分套只归档，不改已落地子平或纳音算法"
+      ],
+      "review": "source-reviewed",
+      "verified": false,
+      "relatedParagraphIds": [
+        "wuxing-jingji:L0912-L0912",
+        "wuxing-jingji:L0916-L0916"
+      ]
+    },
+    {
+      "paragraphId": "wuxing-jingji:L0916-L0916",
+      "kind": "术语",
+      "vernacular": "戊辰神煞标目：库、捧祸、伏神、平头。不是现代操作步骤。",
+      "terms": [
+        "库",
+        "捧祸",
+        "伏神",
+        "平头",
+        "戊辰"
+      ],
+      "notes": [
+        "待分类作术语",
+        "无人名连续四柱不收案例",
+        "标目不作现代操作步骤"
+      ],
+      "review": "source-reviewed",
+      "verified": false,
+      "relatedParagraphIds": [
+        "wuxing-jingji:L0914-L0914",
+        "wuxing-jingji:L0918-L0918"
+      ]
+    },
+    {
+      "paragraphId": "wuxing-jingji:L0918-L0918",
+      "kind": "术语",
+      "vernacular": "吉凶例标目：己巳。这是干支标目，不是人名四柱。",
+      "terms": [
+        "己巳"
+      ],
+      "notes": [
+        "待分类作术语",
+        "无人名连续四柱不收案例",
+        "纳音分套只归档，不改已落地子平或纳音算法"
+      ],
+      "review": "source-reviewed",
+      "verified": false,
+      "relatedParagraphIds": [
+        "wuxing-jingji:L0916-L0916",
+        "wuxing-jingji:L0920-L0920"
+      ]
+    },
+    {
+      "paragraphId": "wuxing-jingji:L0920-L0920",
+      "kind": "术语",
+      "vernacular": "己巳神煞标目：禄库、八专。不是现代操作步骤。",
+      "terms": [
+        "禄库",
+        "八专",
+        "己巳"
+      ],
+      "notes": [
+        "待分类作术语",
+        "无人名连续四柱不收案例",
+        "标目不作现代操作步骤",
+        "纳音分套只归档，不改已落地子平或纳音算法"
+      ],
+      "review": "source-reviewed",
+      "verified": false,
+      "relatedParagraphIds": [
+        "wuxing-jingji:L0918-L0918",
+        "wuxing-jingji:L0922-L0922"
       ]
     }
   ]
