@@ -4,6 +4,15 @@
 
 两仓均为 `codex/full-library-completion`：古籍 `/Users/yuhanglin/.codex/worktrees/fateradar-classics-grok-full-library`；产品 `/Users/yuhanglin/.codex/worktrees/fateradar-product-grok-full-library`。原接手基准古籍2396e4c、产品8f1ca84。原main及他人admin/billing/.claude不改。本目标尚未合main或部署。
 
+## 最新接续：星学大成1318段，卷三十二交木水土至二交金木水
+
+1298账本88631ce已推。本轮58cced4完成星学大成二交木水土至二交金木水二十主段，累计1318/1392主文本；无新增四柱案例，案例统计仍33d92f4。下一二交木水火，边界已从包读取。
+
+- 炁、髙、闗、㬋、竒、闕、滛、䭾原字不改。贵贱官职刑死贫富是历史分类，不转换成对现实用户的判断。无人名连续四柱，不收案例。不把行限当出生柱。〔阙〕缺字不补。此船格局据原文。
+- 库存合并段不拆ID。二交金水火span=2含〔阙〕、二交金木水span=4均不强制subsections。待分类作理论。二交叠月分套，只归档不改算法。
+- 案例未增删，仍3486总/3410可复算、冲突145、输入不确定1、重复995、verified0。固定58cced42c7ed415786122b7e92169a7755ffff3c导出55包80889段source_reviewed24319，含本批二十段；18知识测试通过。产品f84942d仅generated/knowledge，.claude未动。
+- 注释43书25747 entries零错；无规则或运行修改，未宣称全回归/Web总验收。全目标active，未合main或部署。隔位救应与其他七术栏目免费解释仍待做。果天经主段已尽，不等于全库完成。
+
 ## 最新接续：星学大成1298段，卷三十星性善恶至二交木水火
 
 1278账本83de1b0已推。本轮c9cde45完成星学大成星性善恶、论刚柔、论轻耀（span=163十条subsections）及金木水火土至二交木水火二十主段，累计1298/1392主文本；无新增四柱案例，案例统计仍33d92f4。下一二交木水土，边界已从包读取。
