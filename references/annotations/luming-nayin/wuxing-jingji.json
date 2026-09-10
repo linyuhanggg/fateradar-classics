@@ -2,7 +2,7 @@
   "schemaVersion": "fateradar-annotations-v1",
   "bookSlug": "wuxing-jingji",
   "sourceFile": "sources/fulltext/luming-nayin/wuxing-jingji/fulltext.md",
-  "reviewScope": "已逐段阅读电子文本宋-廖中至卷三陷迷赋（wuxing-jingji:L0005-L0005 至 L1510-L1510）并作语义注解。source-reviewed只指对照电子主文本，不代表影印人工核验。本批无新增人名连续四柱。",
+  "reviewScope": "已逐段阅读电子文本宋-廖中至卷四十干合甲乙（wuxing-jingji:L0005-L0005 至 L1575-L1575）并作语义注解。source-reviewed只指对照电子主文本，不代表影印人工核验。本批收李待制、王相公两条人名连续四柱。",
   "entries": [
     {
       "paragraphId": "wuxing-jingji:L0005-L0005",
@@ -14353,6 +14353,538 @@
       "relatedParagraphIds": [
         "wuxing-jingji:L1506-L1508",
         "wuxing-jingji:L1512-L1512"
+      ]
+    },
+    {
+      "paragraphId": "wuxing-jingji:L1512-L1512",
+      "kind": "序跋目录",
+      "vernacular": "【伏凶格】是卷三分节标目。伏兇原字不改。",
+      "terms": [
+        "伏凶格"
+      ],
+      "notes": [
+        "待分类作序跋目录",
+        "无人名连续四柱不收案例",
+        "伏兇壞纂醜餘彷廣信夭壽兇幹原字不改",
+        "目录不作理论条或现代操作步骤"
+      ],
+      "review": "source-reviewed",
+      "verified": false,
+      "relatedParagraphIds": [
+        "wuxing-jingji:L1510-L1510",
+        "wuxing-jingji:L1514-L1537"
+      ]
+    },
+    {
+      "paragraphId": "wuxing-jingji:L1514-L1537",
+      "kind": "理论",
+      "vernacular": "伏凶格：如丁巳人不畏癸水为鬼，缘巳上有暗戊合却癸化真火发用，名曰伏凶；一重癸水化一重真火，更自是丁巳禄旺，切宜真水既清得之者最贵，既用癸水为秀气则不可复坏去癸。譬如丁巳年癸丑月壬辰日辛亥时，辛生壬壬助癸作丁之发用，又身受水印亥上临官有气；如丁巳见癸丑己卯被己土克去癸水用神，纵得好时亦无厚福。如癸巳不畏辛倒食，为巳间有丙合辛变为真水为喜神发用；李待制癸巳年辛酉月庚寅日辛巳时，两辛为喜神又就壬子胎，人庚辛壬癸名乾神连珠故贵，余准此推之。（天元变化书）。【壞】醜餘伏兇原字不改。譬如丁巳年无名不收案例。李待制有人名且年月日时连续四柱，收一条source_case；壬子胎不把胎元当出生时柱。贵厚福是历史分类，不是对现实用户的判断。span=24，四条subsections连续覆盖1514-1537。",
+      "terms": [
+        "伏凶格",
+        "李待制",
+        "天元变化书"
+      ],
+      "notes": [
+        "待分类作理论",
+        "伏兇壞纂醜餘彷廣信夭壽兇幹原字不改",
+        "官职贫富刑死是历史分类，不转成对现实用户的判断",
+        "纳音分套只归档，不改已落地子平或纳音算法",
+        "span=24四条subsections连续覆盖1514-1537",
+        "譬如丁巳年无名不收案例",
+        "李待制收案例"
+      ],
+      "review": "source-reviewed",
+      "verified": false,
+      "relatedParagraphIds": [
+        "wuxing-jingji:L1512-L1512",
+        "wuxing-jingji:L1539-L1539"
+      ],
+      "subsections": [
+        {
+          "id": "wuxing-jingji:L1514-L1537:ding-si-fu-xiong",
+          "title": "丁巳伏凶总论",
+          "startLine": 1514,
+          "endLine": 1525,
+          "vernacular": "如丁巳人不畏癸水为鬼，缘巳上有暗戊合却癸化真火发用，名曰伏凶；一重癸水化一重真火，更自是丁巳禄旺，切宜真水既清得之者最贵，既用癸水为秀气则不可复【坏】去癸。【壞】伏兇原字不改。丁巳人是干支类举。贵是书中取象，不是对现实用户的判断。",
+          "terms": [
+            "伏凶",
+            "丁巳"
+          ],
+          "notes": [
+            "待分类作理论",
+            "无人名连续四柱不收案例",
+            "伏兇壞纂醜餘彷廣信夭壽兇幹原字不改",
+            "干支纳音类举无名，不收案例",
+            "官职贫富刑死是历史分类，不转成对现实用户的判断"
+          ]
+        },
+        {
+          "id": "wuxing-jingji:L1514-L1537:pi-ru-ding-si",
+          "title": "譬如丁巳四柱",
+          "startLine": 1526,
+          "endLine": 1535,
+          "vernacular": "譬如丁巳年癸丑月壬辰日辛亥时，辛生壬、壬助癸作丁之发用，又身受水印、亥上临官有气；如丁巳见癸丑己卯被己土克去癸水用神，纵得好时亦无厚福。譬如无名，不是人名连续四柱，不收案例。醜原字不改。厚福是书中取象，不是对现实用户的判断。",
+          "terms": [
+            "譬如"
+          ],
+          "notes": [
+            "待分类作理论",
+            "无人名连续四柱不收案例",
+            "伏兇壞纂醜餘彷廣信夭壽兇幹原字不改",
+            "干支纳音类举无名，不收案例",
+            "官职贫富刑死是历史分类，不转成对现实用户的判断",
+            "譬如无名不收案例"
+          ]
+        },
+        {
+          "id": "wuxing-jingji:L1514-L1537:li-daizhi",
+          "title": "李待制乾神连珠",
+          "startLine": 1536,
+          "endLine": 1536,
+          "vernacular": "如癸巳不畏辛倒食，为巳间有丙合辛变为真水为喜神发用；李待制癸巳年辛酉月庚寅日辛巳时，两辛为喜神，又就壬子胎，人庚辛壬癸名乾神连珠故贵，余准此推之。餘原字不改。李待制有人名且年月日时连续四柱，收案例；壬子胎不把胎元当出生时柱。贵是历史分类，不是对现实用户的判断。",
+          "terms": [
+            "李待制",
+            "乾神连珠"
+          ],
+          "notes": [
+            "待分类作理论",
+            "伏兇壞纂醜餘彷廣信夭壽兇幹原字不改",
+            "官职贫富刑死是历史分类，不转成对现实用户的判断",
+            "李待制收案例",
+            "不把胎元当出生时柱"
+          ]
+        },
+        {
+          "id": "wuxing-jingji:L1514-L1537:tianyuan-shu",
+          "title": "天元变化书署",
+          "startLine": 1537,
+          "endLine": 1537,
+          "vernacular": "（天元变化书）是称引署，不是断法条文。",
+          "terms": [
+            "天元变化书"
+          ],
+          "notes": [
+            "待分类作理论",
+            "无人名连续四柱不收案例"
+          ]
+        }
+      ],
+      "cases": [
+        {
+          "kind": "source_case",
+          "name": "李待制",
+          "pillars": [
+            "癸巳",
+            "辛酉",
+            "庚寅",
+            "辛巳"
+          ],
+          "inputBasis": "four-pillars",
+          "canRecompute": true,
+          "sourceClaim": "李待制癸巳年辛酉月庚寅日辛巳时，两辛为喜神，又就壬子胎，人庚辛壬癸名乾神连珠故贵。",
+          "notes": [
+            "四柱齐列可按给定四柱讨论；壬子胎不把胎元当出生时柱。",
+            "贵是来源历史分类，不转成对现实用户的判断。"
+          ]
+        }
+      ]
+    },
+    {
+      "paragraphId": "wuxing-jingji:L1539-L1539",
+      "kind": "序跋目录",
+      "vernacular": "【乾神相克】是卷三分节标目。",
+      "terms": [
+        "乾神相克"
+      ],
+      "notes": [
+        "待分类作序跋目录",
+        "无人名连续四柱不收案例",
+        "目录不作理论条或现代操作步骤"
+      ],
+      "review": "source-reviewed",
+      "verified": false,
+      "relatedParagraphIds": [
+        "wuxing-jingji:L1514-L1537",
+        "wuxing-jingji:L1541-L1541"
+      ]
+    },
+    {
+      "paragraphId": "wuxing-jingji:L1541-L1541",
+      "kind": "理论",
+      "vernacular": "丙人怕二壬，壬人怕二戊，乙人则怕二辛，余仿此。歌曰：乙木生人怕二辛，不遭鞭配也遭刑，若能免得诸刑害，两目盲盲不见人。（三命【纂】局）。餘彷【纂】原字不改。丙人乙人是干支类举。鞭配刑盲是历史分类，不是对现实用户的判断。",
+      "terms": [
+        "乾神相克",
+        "三命纂局"
+      ],
+      "notes": [
+        "待分类作理论",
+        "无人名连续四柱不收案例",
+        "伏兇壞纂醜餘彷廣信夭壽兇幹原字不改",
+        "干支纳音类举无名，不收案例",
+        "官职贫富刑死是历史分类，不转成对现实用户的判断",
+        "纳音分套只归档，不改已落地子平或纳音算法"
+      ],
+      "review": "source-reviewed",
+      "verified": false,
+      "relatedParagraphIds": [
+        "wuxing-jingji:L1539-L1539",
+        "wuxing-jingji:L1543-L1543"
+      ]
+    },
+    {
+      "paragraphId": "wuxing-jingji:L1543-L1543",
+      "kind": "序跋目录",
+      "vernacular": "【鬼合格】是卷三分节标目。",
+      "terms": [
+        "鬼合格"
+      ],
+      "notes": [
+        "待分类作序跋目录",
+        "无人名连续四柱不收案例",
+        "目录不作理论条或现代操作步骤"
+      ],
+      "review": "source-reviewed",
+      "verified": false,
+      "relatedParagraphIds": [
+        "wuxing-jingji:L1541-L1541",
+        "wuxing-jingji:L1545-L1545"
+      ]
+    },
+    {
+      "paragraphId": "wuxing-jingji:L1545-L1545",
+      "kind": "术语",
+      "vernacular": "鬼合格干支短目：甲人见庚乙、乙人见辛丙、丙人见壬丁、丁人见癸戊、戊人见甲己。是类举标目，不是人名连续四柱。",
+      "terms": [
+        "鬼合格"
+      ],
+      "notes": [
+        "待分类作术语",
+        "无人名连续四柱不收案例",
+        "干支纳音类举无名，不收案例",
+        "标目不作现代操作步骤",
+        "纳音分套只归档，不改已落地子平或纳音算法"
+      ],
+      "review": "source-reviewed",
+      "verified": false,
+      "relatedParagraphIds": [
+        "wuxing-jingji:L1543-L1543",
+        "wuxing-jingji:L1547-L1547"
+      ]
+    },
+    {
+      "paragraphId": "wuxing-jingji:L1547-L1547",
+      "kind": "术语",
+      "vernacular": "鬼合格干支短目：己人见乙庚、庚人见丙辛、辛人见丁壬、壬人见戊癸、癸人见己甲。是类举标目，不是人名连续四柱。",
+      "terms": [
+        "鬼合格"
+      ],
+      "notes": [
+        "待分类作术语",
+        "无人名连续四柱不收案例",
+        "干支纳音类举无名，不收案例",
+        "标目不作现代操作步骤",
+        "纳音分套只归档，不改已落地子平或纳音算法"
+      ],
+      "review": "source-reviewed",
+      "verified": false,
+      "relatedParagraphIds": [
+        "wuxing-jingji:L1545-L1545",
+        "wuxing-jingji:L1549-L1549"
+      ]
+    },
+    {
+      "paragraphId": "wuxing-jingji:L1549-L1549",
+      "kind": "理论",
+      "vernacular": "以上官鬼相伤，公立庶几。（广信集）。廣信原字不改。所列是干支类举。无连续四柱。",
+      "terms": [
+        "鬼合格",
+        "广信集"
+      ],
+      "notes": [
+        "待分类作理论",
+        "无人名连续四柱不收案例",
+        "伏兇壞纂醜餘彷廣信夭壽兇幹原字不改",
+        "干支纳音类举无名，不收案例",
+        "纳音分套只归档，不改已落地子平或纳音算法"
+      ],
+      "review": "source-reviewed",
+      "verified": false,
+      "relatedParagraphIds": [
+        "wuxing-jingji:L1547-L1547",
+        "wuxing-jingji:L1551-L1551"
+      ]
+    },
+    {
+      "paragraphId": "wuxing-jingji:L1551-L1551",
+      "kind": "理论",
+      "vernacular": "鬼啸分明祸更加，设使以前逢富贵，定知日后厌年华。富贵年华是书中取象，不是对现实用户的判断。无连续四柱。",
+      "terms": [
+        "鬼啸"
+      ],
+      "notes": [
+        "待分类作理论",
+        "无人名连续四柱不收案例",
+        "官职贫富刑死是历史分类，不转成对现实用户的判断",
+        "纳音分套只归档，不改已落地子平或纳音算法"
+      ],
+      "review": "source-reviewed",
+      "verified": false,
+      "relatedParagraphIds": [
+        "wuxing-jingji:L1549-L1549",
+        "wuxing-jingji:L1553-L1555"
+      ]
+    },
+    {
+      "paragraphId": "wuxing-jingji:L1553-L1555",
+      "kind": "理论",
+      "vernacular": "如甲人逢庚金克木，又值丙火克庚金，乃贫贱恶死之命，遇合干尤可，如丙见辛是也。若支神纳音好，已前须主富贵，向后定不吉，更加刑杀鬼克主恶死。如王相公：己未年乙亥月丙寅日辛卯时，逢三合生更遇寅卯为己人官乡，丙与辛合大贵，奈犯鬼啸格，己阴土逢乙阴木作鬼，又遇辛阴金作阴木鬼，变寅卯之官作己土鬼，在亥卯未三合位又是鬼克，故主恶死也。幹原字不改。甲人是干支类举。王相公有人名且年月日时连续四柱，收一条source_case。贫贱恶死大贵是历史分类，不是对现实用户的判断。span=3不强制subsections。",
+      "terms": [
+        "鬼啸格",
+        "王相公"
+      ],
+      "notes": [
+        "待分类作理论",
+        "伏兇壞纂醜餘彷廣信夭壽兇幹原字不改",
+        "官职贫富刑死是历史分类，不转成对现实用户的判断",
+        "纳音分套只归档，不改已落地子平或纳音算法",
+        "王相公收案例",
+        "甲人干支类举不收案例",
+        "span=3不强制subsections"
+      ],
+      "review": "source-reviewed",
+      "verified": false,
+      "relatedParagraphIds": [
+        "wuxing-jingji:L1551-L1551",
+        "wuxing-jingji:L1557-L1557"
+      ],
+      "cases": [
+        {
+          "kind": "source_case",
+          "name": "王相公",
+          "pillars": [
+            "己未",
+            "乙亥",
+            "丙寅",
+            "辛卯"
+          ],
+          "inputBasis": "four-pillars",
+          "canRecompute": true,
+          "sourceClaim": "如王相公己未年乙亥月丙寅日辛卯时，逢三合生更遇寅卯为己人官乡丙与辛合大贵，奈犯鬼啸格故主恶死。",
+          "notes": [
+            "四柱齐列可按给定四柱讨论。",
+            "大贵恶死是来源历史分类，不转成对现实用户的判断。"
+          ]
+        }
+      ]
+    },
+    {
+      "paragraphId": "wuxing-jingji:L1557-L1557",
+      "kind": "理论",
+      "vernacular": "三吞三耦未为恶，重耦伤怕逢着，若非夭寿父母凶，户力虽高亦衰败。夭壽兇原字不改。夭寿衰败是历史分类，不是对现实用户的判断。无连续四柱。",
+      "terms": [
+        "三吞",
+        "三耦"
+      ],
+      "notes": [
+        "待分类作理论",
+        "无人名连续四柱不收案例",
+        "伏兇壞纂醜餘彷廣信夭壽兇幹原字不改",
+        "官职贫富刑死是历史分类，不转成对现实用户的判断",
+        "纳音分套只归档，不改已落地子平或纳音算法"
+      ],
+      "review": "source-reviewed",
+      "verified": false,
+      "relatedParagraphIds": [
+        "wuxing-jingji:L1553-L1555",
+        "wuxing-jingji:L1559-L1559"
+      ]
+    },
+    {
+      "paragraphId": "wuxing-jingji:L1559-L1559",
+      "kind": "理论",
+      "vernacular": "三吞者如甲人逢三壬，三耦者如甲人逢三己，未为贱贱命；重耦者如甲人逢两己曰重耦；重伤者如甲人逢两庚曰重伤，乃夭寿退家之命。（沉芝源髓）。夭壽原字不改。甲人是干支类举。夭寿退家是历史分类，不是对现实用户的判断。",
+      "terms": [
+        "三吞",
+        "重耦",
+        "沉芝源髓"
+      ],
+      "notes": [
+        "待分类作理论",
+        "无人名连续四柱不收案例",
+        "伏兇壞纂醜餘彷廣信夭壽兇幹原字不改",
+        "干支纳音类举无名，不收案例",
+        "官职贫富刑死是历史分类，不转成对现实用户的判断",
+        "纳音分套只归档，不改已落地子平或纳音算法"
+      ],
+      "review": "source-reviewed",
+      "verified": false,
+      "relatedParagraphIds": [
+        "wuxing-jingji:L1557-L1557",
+        "wuxing-jingji:L1561-L1561"
+      ]
+    },
+    {
+      "paragraphId": "wuxing-jingji:L1561-L1561",
+      "kind": "序跋目录",
+      "vernacular": "第四卷是卷次标目，不是古书新增断法。",
+      "terms": [
+        "第四卷"
+      ],
+      "notes": [
+        "待分类作序跋目录",
+        "无人名连续四柱不收案例",
+        "目录不作理论条或现代操作步骤"
+      ],
+      "review": "source-reviewed",
+      "verified": false,
+      "relatedParagraphIds": [
+        "wuxing-jingji:L1559-L1559",
+        "wuxing-jingji:L1563-L1563"
+      ]
+    },
+    {
+      "paragraphId": "wuxing-jingji:L1563-L1563",
+      "kind": "序跋目录",
+      "vernacular": "论乾神二是卷四篇题，不是古书新增断法。",
+      "terms": [
+        "论乾神二"
+      ],
+      "notes": [
+        "待分类作序跋目录",
+        "无人名连续四柱不收案例",
+        "目录不作理论条或现代操作步骤"
+      ],
+      "review": "source-reviewed",
+      "verified": false,
+      "relatedParagraphIds": [
+        "wuxing-jingji:L1561-L1561",
+        "wuxing-jingji:L1565-L1565"
+      ]
+    },
+    {
+      "paragraphId": "wuxing-jingji:L1565-L1565",
+      "kind": "序跋目录",
+      "vernacular": "【十干合】是卷四分节标目。",
+      "terms": [
+        "十干合"
+      ],
+      "notes": [
+        "待分类作序跋目录",
+        "无人名连续四柱不收案例",
+        "目录不作理论条或现代操作步骤"
+      ],
+      "review": "source-reviewed",
+      "verified": false,
+      "relatedParagraphIds": [
+        "wuxing-jingji:L1563-L1563",
+        "wuxing-jingji:L1567-L1567"
+      ]
+    },
+    {
+      "paragraphId": "wuxing-jingji:L1567-L1567",
+      "kind": "术语",
+      "vernacular": "十干合短目：甲己化土、乙庚化金、丙辛化水、丁壬化木、戊癸化火。是类举标目，不是人名连续四柱。",
+      "terms": [
+        "十干合"
+      ],
+      "notes": [
+        "待分类作术语",
+        "无人名连续四柱不收案例",
+        "干支纳音类举无名，不收案例",
+        "标目不作现代操作步骤",
+        "纳音分套只归档，不改已落地子平或纳音算法"
+      ],
+      "review": "source-reviewed",
+      "verified": false,
+      "relatedParagraphIds": [
+        "wuxing-jingji:L1565-L1565",
+        "wuxing-jingji:L1569-L1569"
+      ]
+    },
+    {
+      "paragraphId": "wuxing-jingji:L1569-L1569",
+      "kind": "理论",
+      "vernacular": "天元变化书称天干合：阳得阴合福慢，因得阳合福紧，故甲得己合为财，己得甲合为官。雲原字不改。甲己是干支类举。福财官是书中取象，不是对现实用户的判断。",
+      "terms": [
+        "天干合",
+        "天元变化书"
+      ],
+      "notes": [
+        "待分类作理论",
+        "无人名连续四柱不收案例",
+        "伏兇壞纂醜餘彷廣信夭壽兇幹原字不改",
+        "干支纳音类举无名，不收案例",
+        "官职贫富刑死是历史分类，不转成对现实用户的判断",
+        "纳音分套只归档，不改已落地子平或纳音算法"
+      ],
+      "review": "source-reviewed",
+      "verified": false,
+      "relatedParagraphIds": [
+        "wuxing-jingji:L1567-L1567",
+        "wuxing-jingji:L1571-L1571"
+      ]
+    },
+    {
+      "paragraphId": "wuxing-jingji:L1571-L1571",
+      "kind": "理论",
+      "vernacular": "十干仿此。三命提要称：如阳干遇阴干合只得干合之福，阴干遇阳干合又得正官之。幹倣原字不改。是接上条议论，不是人名连续四柱。",
+      "terms": [
+        "十干合",
+        "三命提要"
+      ],
+      "notes": [
+        "待分类作理论",
+        "无人名连续四柱不收案例",
+        "伏兇壞纂醜餘彷廣信夭壽兇幹原字不改",
+        "纳音分套只归档，不改已落地子平或纳音算法"
+      ],
+      "review": "source-reviewed",
+      "verified": false,
+      "relatedParagraphIds": [
+        "wuxing-jingji:L1569-L1569",
+        "wuxing-jingji:L1573-L1573"
+      ]
+    },
+    {
+      "paragraphId": "wuxing-jingji:L1573-L1573",
+      "kind": "理论",
+      "vernacular": "辅，为两重福。是上条三命提要文句跨行，不是独立断法，也不是人名四柱。",
+      "terms": [
+        "两重福"
+      ],
+      "notes": [
+        "待分类作理论",
+        "无人名连续四柱不收案例",
+        "纳音分套只归档，不改已落地子平或纳音算法",
+        "跨行接上条三命提要"
+      ],
+      "review": "source-reviewed",
+      "verified": false,
+      "relatedParagraphIds": [
+        "wuxing-jingji:L1571-L1571",
+        "wuxing-jingji:L1575-L1575"
+      ]
+    },
+    {
+      "paragraphId": "wuxing-jingji:L1575-L1575",
+      "kind": "理论",
+      "vernacular": "十干者五行之精纪，甲阳木乙阴木也，位旺东方，以比者为兄弟，则乙者甲之妹也。是干支阴阳类举，不是人名连续四柱。",
+      "terms": [
+        "十干",
+        "阳木",
+        "阴木"
+      ],
+      "notes": [
+        "待分类作理论",
+        "无人名连续四柱不收案例",
+        "干支纳音类举无名，不收案例",
+        "纳音分套只归档，不改已落地子平或纳音算法"
+      ],
+      "review": "source-reviewed",
+      "verified": false,
+      "relatedParagraphIds": [
+        "wuxing-jingji:L1573-L1573",
+        "wuxing-jingji:L1577-L1577"
       ]
     }
   ]
