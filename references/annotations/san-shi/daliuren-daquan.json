@@ -1,7 +1,7 @@
 {
   "bookSlug": "daliuren-daquan",
   "sourceTitle": "大六壬大全（现有电子主文本）",
-  "scopeNote": "本文件只覆盖已逐段实读范围：卷一起例/入手法 L56–98；卷七课经集一元首至龙德 L9101–11045；卷八官爵至繁昌 L11047–11615。不代表全书 6893 段已审。source-reviewed 不是影印校勘或人工 verified；案例保持 verified=false。繁昌正文年立德方发用 vs 观月经不论三传；互克零丁、败绝不育；产期法未演算不得默认为真。",
+  "scopeNote": "本文件只覆盖已逐段实读范围：卷一起例/入手法 L56–98；卷七课经集一元首至龙德 L9101–11045；卷八官爵至旺孕格 L11047–11671。不代表全书 6893 段已审。source-reviewed 不是影印校勘或人工 verified；案例保持 verified=false。旺孕三合 ≠ 繁昌德合；受孕后三/产前三与冲位干、戌戊巳己分读；不干三传。",
   "entries": [
     {
       "paragraphId": "daliuren-daquan:L0056-L0056",
@@ -14976,6 +14976,341 @@
       "notes": [],
       "review": "source-reviewed",
       "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L11617-L11617",
+      "kind": "术语",
+      "vernacular": "旺孕格标题。行年三合旺相叠层，不是九宗门取传，也不是繁昌德合。",
+      "terms": [
+        "旺孕格"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L11619-L11625",
+      "kind": "规则候选",
+      "vernacular": "凡夫妻行年俱随旺相气三合位上，为旺孕格。三合异方同类相望，又逢兴旺之时，当主胎孕。与繁昌德合分格，不得把三合成德合，也不得把德合成三合。受孕法：如妻行年见己，主正月壬日申时受孕。取妻年上神后三位受气为孕月，冲位干为孕日，亦分十干次第。辰戌月用戊，丑未月用己，前三位临官为孕时。妻行年上见午，二月癸日酉时当受孕，余仿此。未演算的月日时不得默认为真。与繁昌产期法分读：繁昌前三临官为生月、后三绝为生时、辰戌月用戌、丑未月用巳；本行后三受气为孕月、前三临官为孕时、辰戌月用戊、丑未月用己。戌/戊、巳/己不据一课改另一课。",
+      "terms": [
+        "旺孕格",
+        "受孕法",
+        "三合"
+      ],
+      "notes": [
+        "三合旺相 ≠ 繁昌德合。",
+        "辰戌月用戊、丑未月用己，与繁昌用戌用巳并行。",
+        "未演算月日时不得默认为真。"
+      ],
+      "review": "source-reviewed",
+      "verified": false,
+      "relatedParagraphIds": [
+        "daliuren-daquan:L11542-L11542",
+        "daliuren-daquan:L11544-L11561"
+      ],
+      "subsections": [
+        {
+          "id": "S001",
+          "title": "三合旺相取格",
+          "startLine": 11619,
+          "endLine": 11620,
+          "vernacular": "夫妻行年随旺相气三合位上。异方同类相望又逢兴旺。",
+          "terms": [
+            "旺孕格"
+          ],
+          "notes": []
+        },
+        {
+          "id": "S002",
+          "title": "受孕法",
+          "startLine": 11621,
+          "endLine": 11625,
+          "vernacular": "妻年见己＝正月壬日申时。后三受气孕月，冲位干孕日，辰戌月戊、丑未月己，前三临官孕时。妻年上午＝二月癸日酉时。",
+          "terms": [
+            "受孕法"
+          ],
+          "notes": [
+            "戊己与繁昌戌巳分读。"
+          ]
+        }
+      ]
+    },
+    {
+      "paragraphId": "daliuren-daquan:L11627-L11627",
+      "kind": "评注或元数据",
+      "vernacular": "《观月经》标题。",
+      "terms": [
+        "观月经"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L11629-L11629",
+      "kind": "规则候选",
+      "vernacular": "夫妻年命上，旺相两般推。妻金三十四，夫水三十七。女命亥上觅，夫年寅上推。七月未时占，妊孕无改移。从魁临在该，金旺更无疑。电子本「临在该」不改正文，不据酉亥改字。",
+      "terms": [
+        "旺孕",
+        "从魁"
+      ],
+      "notes": [
+        "从魁临在该待核。"
+      ],
+      "review": "draft",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L11631-L11631",
+      "kind": "评注或元数据",
+      "vernacular": "夹注：妻命是金，年上见酉，金旺也。七月金旺占。",
+      "terms": [
+        "金旺"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L11633-L11633",
+      "kind": "规则候选",
+      "vernacular": "神后立于寅，夫运五行知。夫年寅上见子。",
+      "terms": [
+        "神后"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L11635-L11635",
+      "kind": "评注或元数据",
+      "vernacular": "夹注：夫命是水，行年上见子，是水旺也。",
+      "terms": [
+        "水旺"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L11637-L11637",
+      "kind": "规则候选",
+      "vernacular": "二旺当怀孕，合卦宜所归。两行年俱旺是合取。",
+      "terms": [
+        "旺孕"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L11639-L11639",
+      "kind": "评注或元数据",
+      "vernacular": "夹注：夫妻行年俱旺，当怀孕生子也。",
+      "terms": [
+        "旺孕"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L11641-L11641",
+      "kind": "规则候选",
+      "vernacular": "阴阳生是子，胎命合如斯。他年依此起，电子本句末逗号无收束，不补未见的下句。",
+      "terms": [
+        "旺孕"
+      ],
+      "notes": [
+        "句末待核。"
+      ],
+      "review": "draft",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L11643-L11643",
+      "kind": "评注或元数据",
+      "vernacular": "夹注：其它夫妻行年亦依此起。他年例推，不是闭集。",
+      "terms": [
+        "行年"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L11645-L11645",
+      "kind": "规则候选",
+      "vernacular": "旺孕卦推移。不干三传事，此课少人知。与繁昌观月经不论三传同向，与正文繁昌年立德方发用分课并行。",
+      "terms": [
+        "旺孕格"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false,
+      "relatedParagraphIds": [
+        "daliuren-daquan:L11603-L11603"
+      ]
+    },
+    {
+      "paragraphId": "daliuren-daquan:L11647-L11647",
+      "kind": "评注或元数据",
+      "vernacular": "夹注：不与四课三传事同。旺孕不是取传。",
+      "terms": [
+        "旺孕格"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L11649-L11649",
+      "kind": "评注或元数据",
+      "vernacular": "《心镜》标题。",
+      "terms": [
+        "心镜"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L11651-L11651",
+      "kind": "规则候选",
+      "vernacular": "夫妻行年旺相神，异方三类合同群。春占有孕在何处，妻午夫年立在寅。电子本「三类」与下行「三合」用词不一，不据注改歌。",
+      "terms": [
+        "旺相",
+        "异方"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L11653-L11653",
+      "kind": "规则候选",
+      "vernacular": "如春占木旺火相，夫年三十七行年在寅，妻年二十七行年在午，故云夫妻行年旺相神。寅在东方、午在南方，寅午三合，故曰异方三合。心镜春例妻午夫寅，与下行曾门春例夫午妻寅对翻，并行，不据一处改正另一处。",
+      "terms": [
+        "异方三合"
+      ],
+      "notes": [
+        "心镜夫寅妻午 vs 曾门夫午妻寅，分读。"
+      ],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L11655-L11655",
+      "kind": "规则候选",
+      "vernacular": "受气于秋何以决，妻在子兮夫立申。秋例申子。",
+      "terms": [
+        "受气"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L11657-L11657",
+      "kind": "评注或元数据",
+      "vernacular": "夹注：或秋占金旺水相，申子亦是三合也。",
+      "terms": [
+        "三合"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L11659-L11659",
+      "kind": "规则候选",
+      "vernacular": "此类悉皆为合类，欲求他年在区分。合类可推他年，不是闭集。",
+      "terms": [
+        "合类"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L11661-L11661",
+      "kind": "评注或元数据",
+      "vernacular": "《曾门》标题。",
+      "terms": [
+        "曾门"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L11663-L11663",
+      "kind": "规则候选",
+      "vernacular": "年立旺相，子孙有象。谓夫妇行年立旺相之乡，三五相望，同类异位，时立旺相气，其岁中必有受孕生贵子。曾门合取：旺相乡+三五相望+同类异位+时立旺相气。缺一件不在本行套岁中贵子。",
+      "terms": [
+        "三五相望",
+        "同类异位"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L11665-L11665",
+      "kind": "规则候选",
+      "vernacular": "定章：夫妻之年同类异位者，寅午戌、亥卯未、巳酉丑、申子辰。如寅午戌俱火相与同类，寅本东方、午本南方、戌本西方，此同类而各一方，为异方同类。三辰相去五位，谓之三五相望为合。三合局作异方同类，与正文「三合位上」同向而用语不同，不改成只取相邻三合。",
+      "terms": [
+        "异方同类",
+        "三五相望"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L11667-L11667",
+      "kind": "案例",
+      "vernacular": "如春占，夫年立午，妻年立寅，春木旺火相，是夫妻之年俱立旺相之乡，受气岁中必产贵子。如子临年，当八月丁丑日卯时受孕大吉。曾门春例夫午妻寅，与心镜夫寅妻午对翻。子临年八月丁丑卯时是本例，未演算不得套他年。",
+      "terms": [
+        "旺孕"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false,
+      "relatedParagraphIds": [
+        "daliuren-daquan:L11653-L11653"
+      ]
+    },
+    {
+      "paragraphId": "daliuren-daquan:L11669-L11669",
+      "kind": "案例",
+      "vernacular": "如寅加年四月庚日亥时产。本例，不据本行改受孕法通式。",
+      "terms": [
+        "旺孕"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L11671-L11671",
+      "kind": "规则候选",
+      "vernacular": "法曰：取妻年上神后三位为受孕之月，再后三三为受孕日时。取妻年上神前三位为生月，再前三三是当产日时。曾门把孕与产分成后三/前三两套，与正文旺孕冲位干为孕日、繁昌冲位干为生日不同路。电子本「再后三三」「再前三三」不补成未见算法，不据冲位干废三三，也不据三三废冲位干。",
+      "terms": [
+        "受孕法",
+        "产期法"
+      ],
+      "notes": [
+        "曾门后三孕、前三产 vs 正文冲位干，并行。",
+        "三三不补未见步骤。"
+      ],
+      "review": "source-reviewed",
+      "verified": false,
+      "relatedParagraphIds": [
+        "daliuren-daquan:L11619-L11625",
+        "daliuren-daquan:L11544-L11561"
+      ]
     }
   ]
 }

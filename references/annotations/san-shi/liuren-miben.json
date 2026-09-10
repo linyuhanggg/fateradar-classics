@@ -1,7 +1,7 @@
 {
   "bookSlug": "liuren-miben",
   "sourceTitle": "大六壬秘本（现有电子主文本）",
-  "scopeNote": "本文件只覆盖已逐段实读范围：卷十三 L2985–3248；卷十四 L3253–3841；论终身至论空亡作鬼 L3846–4046；论破神至论刑冲害 L4048–4174；论丁神 L4176–4307；神煞起例至太岁 L4309–4367；干支总论至金氏空脱 L4369–4550。不代表全书 2643 段已审。source-reviewed 不是影印校勘或人工 verified；案例保持 verified=false。救神可免、身强鬼不侵、子旺可救、木比水生鬼罢；天马≠驿马；绳索当缚莫缚。",
+  "scopeNote": "本文件只覆盖已逐段实读范围：卷十三 L2985–3248；卷十四 L3253–3841；论终身至论空亡作鬼 L3846–4046；论破神至论刑冲害 L4048–4174；论丁神 L4176–4307；神煞起例至太岁 L4309–4367；干支总论至金氏空脱 L4369–4550；论争讼起至多须吏 L4552–4612。不代表全书 2643 段已审。source-reviewed 不是影印校勘或人工 verified；案例保持 verified=false。连茹过年 vs 月建从月；不见金生外人分田；皇书奇仪天解讼释；蒿矢见金带二血才刑狱。",
   "entries": [
     {
       "paragraphId": "liuren-miben:L2985-L2985",
@@ -8555,6 +8555,399 @@
         "谩语"
       ],
       "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "liuren-miben:L4552-L4552",
+      "kind": "术语",
+      "vernacular": "论争讼标题。占讼象，不是取传口诀。",
+      "terms": [
+        "争讼"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "liuren-miben:L4554-L4554",
+      "kind": "理论",
+      "vernacular": "两敌相逢是有争，马丁若动起官心。前者输来更得胜，后者赢来便不赢。输赢难定见注。",
+      "terms": [
+        "马丁"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "liuren-miben:L4556-L4556",
+      "kind": "规则候选",
+      "vernacular": "干支相克为两敌，带马丁，官心动摇更变，输赢难定矣。须干支相克+马丁。缺马丁不在本行套输赢难定。",
+      "terms": [
+        "两敌",
+        "马丁"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "liuren-miben:L4558-L4558",
+      "kind": "评注或元数据",
+      "vernacular": "连年词讼未经决，却似相持蚌与鹬。当宜推之再过年，宜无视不近岂知识。金氏改下二句云「尚且推之再过年，移远就近宜知识。」意较醒。金氏改文与正文分读，不据改句废正文，也不据正文废金氏。电子本「宜无视不近」不改正文。",
+      "terms": [
+        "鹬蚌"
+      ],
+      "notes": [
+        "金氏改句与正文并行。",
+        "宜无视不近待核。"
+      ],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "liuren-miben:L4560-L4560",
+      "kind": "规则候选",
+      "vernacular": "太岁发用为年。如子年发用而丑寅卯连去，为鹬蚌相持，连年不决，不可以近日言之。如子年发用而传入寅卯作月建，是以年之连茹者则从月论，又不可论其过年。连茹过年 vs 传入月建从月论，两路不得塌成凡太岁发用皆过年，也不得写成凡连茹皆近日。",
+      "terms": [
+        "太岁",
+        "连茹"
+      ],
+      "notes": [
+        "传入月建从月论，不可论过年，不得删。"
+      ],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "liuren-miben:L4562-L4562",
+      "kind": "规则候选",
+      "vernacular": "土入木乡争田宅，忌见朱勾并贼劫。详后。忌见是加重，细则见注。",
+      "terms": [
+        "争田宅"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "liuren-miben:L4564-L4564",
+      "kind": "规则候选",
+      "vernacular": "土入木乡，带朱勾协助杀克干，主争田宅。须土入木+朱勾协助杀+克干。缺克干不在本行套争田宅。",
+      "terms": [
+        "朱雀",
+        "勾陈"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "liuren-miben:L4566-L4566",
+      "kind": "规则候选",
+      "vernacular": "土加水上争田宅，吏神直符临其处。详后。直符表见下行。",
+      "terms": [
+        "直符",
+        "吏神"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "liuren-miben:L4568-L4568",
+      "kind": "规则候选",
+      "vernacular": "直符：正戌、二丑、三辰、四未、五子、六卯、七午、八酉、九亥、十寅、十一巳、十二申。按月序，不改成别家直符。",
+      "terms": [
+        "直符"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "liuren-miben:L4570-L4570",
+      "kind": "理论",
+      "vernacular": "辰戌天吏守官符，带忧争讼入牢狱。合取见注。",
+      "terms": [
+        "天吏",
+        "官符"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "liuren-miben:L4572-L4572",
+      "kind": "规则候选",
+      "vernacular": "辰戌为罗网牢狱神，带天吏、官符，主争讼牢狱之灾。须辰戌+天吏官符，缺件不套入牢狱。",
+      "terms": [
+        "罗网",
+        "天吏",
+        "官符"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "liuren-miben:L4574-L4574",
+      "kind": "理论",
+      "vernacular": "申临寅卯有官符，口舌文状主不宁。寅旺官符又见伤，老人争认况财伤。",
+      "terms": [
+        "官符"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "liuren-miben:L4576-L4576",
+      "kind": "规则候选",
+      "vernacular": "申临寅卯，金克木也，若带官符，主有口舌文状之事。定为老人，旺则将衰，又见官符作鬼克干，主老人争财。口舌文状绑申临寅卯+官符；老人争财另须旺将衰+官符作鬼克干。两支不得合成凡申临寅卯皆老人争财。",
+      "terms": [
+        "官符"
+      ],
+      "notes": [
+        "老人争财须旺将衰+鬼克干。"
+      ],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "liuren-miben:L4578-L4578",
+      "kind": "理论",
+      "vernacular": "亥上官符不见金，田宅相争外人分。不见金是条件。",
+      "terms": [
+        "官符"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "liuren-miben:L4580-L4580",
+      "kind": "规则候选",
+      "vernacular": "亥为用，见寅为破，带官符，传中不见金生，必有外人争田产。须亥用+寅破+官符+传中不见金生。有金生不在本行套外人分。",
+      "terms": [
+        "官符"
+      ],
+      "notes": [
+        "不见金生不得删。"
+      ],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "liuren-miben:L4582-L4582",
+      "kind": "理论",
+      "vernacular": "囚脱讼释因皇书，德奇仪解赦诏除。救应总句。",
+      "terms": [
+        "皇书",
+        "三奇",
+        "六仪"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "liuren-miben:L4584-L4584",
+      "kind": "规则候选",
+      "vernacular": "占讼遇皇书、天诏、天赦、三奇、六仪、天解，主囚脱、讼释、罪赦。救应六件见一即本行所主，不得写成凡争讼无赦。与大全三奇六仪吉课分章，本行只作讼释条件，不改取传。",
+      "terms": [
+        "皇书",
+        "天诏",
+        "天赦",
+        "三奇",
+        "六仪",
+        "天解"
+      ],
+      "notes": [
+        "囚脱讼释罪赦不得删。"
+      ],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "liuren-miben:L4586-L4586",
+      "kind": "规则候选",
+      "vernacular": "三奇：甲子戌旬丑，甲申午旬子，甲辰寅旬亥。与大全旬奇子戌丑、申午子、辰寅亥同向。六仪：甲午、乙巳、丙辰、丁卯、戊寅、己丑、庚未、辛申、壬酉、癸戌。电子本「庚未」不改午。解神：正二申、三四酉、五六戌、七八亥、九十子、十一十二丑。三表只供本篇讼释引用，不据本行改大全三奇止有干奇、六仪止有支仪之辨。",
+      "terms": [
+        "三奇",
+        "六仪",
+        "解神"
+      ],
+      "notes": [
+        "庚未待核，不改正文。"
+      ],
+      "review": "source-reviewed",
+      "verified": false,
+      "relatedParagraphIds": [
+        "daliuren-daquan:L10705-L10705"
+      ]
+    },
+    {
+      "paragraphId": "liuren-miben:L4588-L4588",
+      "kind": "理论",
+      "vernacular": "土入木乡争田宅，朱雀官符来相厄。卯加居上又克干，破碎相临田宅干。",
+      "terms": [
+        "破碎"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "liuren-miben:L4590-L4590",
+      "kind": "规则候选",
+      "vernacular": "土受木克，田宅不安。朱雀、官符、破碎相临，田宅争讼。与上行土入木乡+朱勾贼劫分条，本行加朱雀官符破碎。",
+      "terms": [
+        "朱雀",
+        "官符",
+        "破碎"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false,
+      "relatedParagraphIds": [
+        "liuren-miben:L4564-L4564"
+      ]
+    },
+    {
+      "paragraphId": "liuren-miben:L4592-L4592",
+      "kind": "理论",
+      "vernacular": "木土官符灾入狱，关锁二神常自逐。水上土下带争风，田宅不安讼相攻。",
+      "terms": [
+        "关锁"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "liuren-miben:L4594-L4594",
+      "kind": "规则候选",
+      "vernacular": "木加土上带官符关锁，牢狱灾。水上土下带朱雀官符，主田宅相争讼。木土入狱 vs 水土田宅争，分绑。",
+      "terms": [
+        "关锁",
+        "官符"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "liuren-miben:L4596-L4596",
+      "kind": "理论",
+      "vernacular": "木金口舌看相临，破耗钱财劫争起。口舌与劫争分见注。",
+      "terms": [
+        "口舌"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "liuren-miben:L4598-L4598",
+      "kind": "规则候选",
+      "vernacular": "金木相加主口舌。带破碎、二耗主口舌破才。若带劫煞、勾陈，因口舌争讼。电子本「破才」读破财，不改正文。口舌、破财、争讼三层分所带，不得写成凡金木皆争讼。",
+      "terms": [
+        "破碎",
+        "二耗",
+        "劫煞",
+        "勾陈"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "liuren-miben:L4600-L4600",
+      "kind": "理论",
+      "vernacular": "丑未作勾争田宅，官符刑害空相逐。血光却入蒿矢金，被责公廷见讼神。",
+      "terms": [
+        "蒿矢"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "liuren-miben:L4602-L4602",
+      "kind": "规则候选",
+      "vernacular": "蒿矢见金带二血，勾陈二狱主刑狱。蒿矢见金能伤与大全遥克蒿矢带金土同向，本行再加二血勾陈二狱才刑狱，不改蒿矢取传。",
+      "terms": [
+        "蒿矢",
+        "二血",
+        "二狱"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false,
+      "relatedParagraphIds": [
+        "daliuren-daquan:L9657-L9657"
+      ]
+    },
+    {
+      "paragraphId": "liuren-miben:L4604-L4604",
+      "kind": "规则候选",
+      "vernacular": "血支正丑顺十二。血忌正丑、二未、三寅、四申、五卯、六酉、七辰、八戌、九巳、十亥、十一午、十二子。天狱春子夏卯秋午冬酉。地狱春辰夏午秋戌冬子。二血二狱起例，供上行刑狱引用。",
+      "terms": [
+        "血支",
+        "血忌",
+        "天狱",
+        "地狱"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "liuren-miben:L4606-L4606",
+      "kind": "理论",
+      "vernacular": "支鬼刑干人不安，灾生祸发惹惊官。",
+      "terms": [
+        "支鬼"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "liuren-miben:L4608-L4608",
+      "kind": "规则候选",
+      "vernacular": "支上作鬼刑干，是宅不容人。带二狱、天吏，主灾祸官非事。宅不容人绑支鬼刑干；官非另须二狱天吏。",
+      "terms": [
+        "二狱",
+        "天吏"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "liuren-miben:L4610-L4610",
+      "kind": "理论",
+      "vernacular": "贵立直符旺身合，多须为吏争相涉。电子本「多须」不改正文。",
+      "terms": [
+        "直符"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "liuren-miben:L4612-L4612",
+      "kind": "规则候选",
+      "vernacular": "寅发用乘旺，或合干克支，必主多须之吏来争。以用传方之。电子本「多须」不改字。须寅用乘旺，或合干克支。以用传方之是取象方向，不改取传。",
+      "terms": [
+        "直符"
+      ],
+      "notes": [
+        "多须待核。"
+      ],
       "review": "source-reviewed",
       "verified": false
     }
