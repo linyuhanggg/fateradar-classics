@@ -2,7 +2,7 @@
   "schemaVersion": "fateradar-annotations-v1",
   "bookSlug": "wuxing-jingji",
   "sourceFile": "sources/fulltext/luming-nayin/wuxing-jingji/fulltext.md",
-  "reviewScope": "已逐段阅读电子文本宋-廖中至卷六十二支合标目（wuxing-jingji:L0005-L0005 至 L2215-L2215）并作语义注解。source-reviewed只指对照电子主文本，不代表影印人工核验。本批无新增人名连续四柱。",
+  "reviewScope": "已逐段阅读电子文本宋-廖中至卷六大吉小吉王氏注（wuxing-jingji:L0005-L0005 至 L2258-L2263）并作语义注解。source-reviewed只指对照电子主文本，不代表影印人工核验。本批新收曾布、萧注两条人名连续四柱。",
   "entries": [
     {
       "paragraphId": "wuxing-jingji:L0005-L0005",
@@ -21635,6 +21635,468 @@
       "relatedParagraphIds": [
         "wuxing-jingji:L2213-L2213",
         "wuxing-jingji:L2217-L2217"
+      ]
+    },
+    {
+      "paragraphId": "wuxing-jingji:L2217-L2217",
+      "kind": "术语",
+      "vernacular": "子醜寅亥卯戍辰酉午未巳申是十二支合序。醜戍原字不改。干支类举无名，不收案例。",
+      "terms": [
+        "十二支合"
+      ],
+      "notes": [
+        "待分类作术语",
+        "无人名连续四柱不收案例",
+        "雲醜戍纂已亥兇幹廣闕鴯衝原字不改",
+        "干支纳音类举无名，不收案例",
+        "短目不作现代操作步骤",
+        "纳音分套只归档，不改已落地子平或纳音算法"
+      ],
+      "review": "source-reviewed",
+      "verified": false,
+      "relatedParagraphIds": [
+        "wuxing-jingji:L2215-L2215",
+        "wuxing-jingji:L2219-L2219"
+      ]
+    },
+    {
+      "paragraphId": "wuxing-jingji:L2219-L2219",
+      "kind": "理论",
+      "vernacular": "天元变化书雲：子合醜福轻，醜合子福盛，寅合亥福清，亥合寅福慢，戍合卯福虚，卯合戍福厚，辰合酉福弱，酉合辰大利，午合未福慢，未合午大利，巳合申福慢，申合巳官气盛。如甲午、辛未、乙未只是身旺却命禄弱合衰气多也，如乙未、壬午虽禄弱艰得。雲醜戍原字不改。如甲午辛未乙未、如乙未壬午无名，不收案例。福轻官气是历史分类，不是对现实用户的判断。",
+      "terms": [
+        "十二支合",
+        "天元变化书"
+      ],
+      "notes": [
+        "待分类作理论",
+        "无人名连续四柱不收案例",
+        "雲醜戍纂已亥兇幹廣闕鴯衝原字不改",
+        "干支纳音类举无名，不收案例",
+        "官职贫富刑死是历史分类，不转成对现实用户的判断",
+        "纳音分套只归档，不改已落地子平或纳音算法"
+      ],
+      "review": "source-reviewed",
+      "verified": false,
+      "relatedParagraphIds": [
+        "wuxing-jingji:L2217-L2217",
+        "wuxing-jingji:L2221-L2221"
+      ]
+    },
+    {
+      "paragraphId": "wuxing-jingji:L2221-L2221",
+      "kind": "序跋目录",
+      "vernacular": "【三合】是卷六分节标目。",
+      "terms": [
+        "三合"
+      ],
+      "notes": [
+        "待分类作序跋目录",
+        "无人名连续四柱不收案例",
+        "目录不作理论条或现代操作步骤"
+      ],
+      "review": "source-reviewed",
+      "verified": false,
+      "relatedParagraphIds": [
+        "wuxing-jingji:L2219-L2219",
+        "wuxing-jingji:L2223-L2223"
+      ]
+    },
+    {
+      "paragraphId": "wuxing-jingji:L2223-L2223",
+      "kind": "术语",
+      "vernacular": "寅午戍（火）巳酉醜（金）申子辰（水）亥卯未（木）（三合纂局）是三合例。戍醜纂原字不改。干支类举无名，不收案例。",
+      "terms": [
+        "三合"
+      ],
+      "notes": [
+        "待分类作术语",
+        "无人名连续四柱不收案例",
+        "雲醜戍纂已亥兇幹廣闕鴯衝原字不改",
+        "干支纳音类举无名，不收案例",
+        "短目不作现代操作步骤",
+        "纳音分套只归档，不改已落地子平或纳音算法"
+      ],
+      "review": "source-reviewed",
+      "verified": false,
+      "relatedParagraphIds": [
+        "wuxing-jingji:L2221-L2221",
+        "wuxing-jingji:L2225-L2225"
+      ]
+    },
+    {
+      "paragraphId": "wuxing-jingji:L2225-L2225",
+      "kind": "序跋目录",
+      "vernacular": "【阴阳】是卷六分节标目。",
+      "terms": [
+        "阴阳"
+      ],
+      "notes": [
+        "待分类作序跋目录",
+        "无人名连续四柱不收案例",
+        "目录不作理论条或现代操作步骤"
+      ],
+      "review": "source-reviewed",
+      "verified": false,
+      "relatedParagraphIds": [
+        "wuxing-jingji:L2223-L2223",
+        "wuxing-jingji:L2227-L2227"
+      ]
+    },
+    {
+      "paragraphId": "wuxing-jingji:L2227-L2227",
+      "kind": "术语",
+      "vernacular": "子为一阳醜二寅三卯四辰五巳为六阳极。醜原字不改。干支类举无名，不收案例。",
+      "terms": [
+        "阴阳"
+      ],
+      "notes": [
+        "待分类作术语",
+        "无人名连续四柱不收案例",
+        "雲醜戍纂已亥兇幹廣闕鴯衝原字不改",
+        "干支纳音类举无名，不收案例",
+        "短目不作现代操作步骤",
+        "纳音分套只归档，不改已落地子平或纳音算法"
+      ],
+      "review": "source-reviewed",
+      "verified": false,
+      "relatedParagraphIds": [
+        "wuxing-jingji:L2225-L2225",
+        "wuxing-jingji:L2229-L2229"
+      ]
+    },
+    {
+      "paragraphId": "wuxing-jingji:L2229-L2229",
+      "kind": "术语",
+      "vernacular": "午为一阴未二申三酉四戍五亥为六阴极。戍原字不改。干支类举无名，不收案例。",
+      "terms": [
+        "阴阳"
+      ],
+      "notes": [
+        "待分类作术语",
+        "无人名连续四柱不收案例",
+        "雲醜戍纂已亥兇幹廣闕鴯衝原字不改",
+        "干支纳音类举无名，不收案例",
+        "短目不作现代操作步骤",
+        "纳音分套只归档，不改已落地子平或纳音算法"
+      ],
+      "review": "source-reviewed",
+      "verified": false,
+      "relatedParagraphIds": [
+        "wuxing-jingji:L2227-L2227",
+        "wuxing-jingji:L2231-L2231"
+      ]
+    },
+    {
+      "paragraphId": "wuxing-jingji:L2231-L2231",
+      "kind": "序跋目录",
+      "vernacular": "【支神一字格】是卷六分节标目。",
+      "terms": [
+        "支神一字格"
+      ],
+      "notes": [
+        "待分类作序跋目录",
+        "无人名连续四柱不收案例",
+        "目录不作理论条或现代操作步骤"
+      ],
+      "review": "source-reviewed",
+      "verified": false,
+      "relatedParagraphIds": [
+        "wuxing-jingji:L2229-L2229",
+        "wuxing-jingji:L2233-L2233"
+      ]
+    },
+    {
+      "paragraphId": "wuxing-jingji:L2233-L2233",
+      "kind": "理论",
+      "vernacular": "福神多可作两府，兇杀多则穷夭。如曾布乙亥年丁亥月辛亥日已亥时戊寅胎，乙亥火虽自死，得已亥木自生，四亥与寅胎合，故作两府。如萧注癸醜年乙醜月乙醜日丁醜时丙辰胎，以四柱带杀多，故换武官，止于两製而无寿。兇醜已亥製原字不改。戊寅胎丙辰胎不把胎元当出生时柱。两府穷夭武官是历史分类，不是对现实用户的判断。",
+      "terms": [
+        "支神一字格"
+      ],
+      "notes": [
+        "待分类作理论",
+        "雲醜戍纂已亥兇幹廣闕鴯衝原字不改",
+        "官职贫富刑死是历史分类，不转成对现实用户的判断",
+        "纳音分套只归档，不改已落地子平或纳音算法",
+        "不把胎元当出生柱"
+      ],
+      "review": "source-reviewed",
+      "verified": false,
+      "relatedParagraphIds": [
+        "wuxing-jingji:L2231-L2231",
+        "wuxing-jingji:L2235-L2235"
+      ],
+      "cases": [
+        {
+          "kind": "source_case",
+          "name": "曾布",
+          "pillars": [
+            "乙亥",
+            "丁亥",
+            "辛亥",
+            "己亥"
+          ],
+          "inputBasis": "four-pillars",
+          "canRecompute": true,
+          "sourceClaim": "曾布乙亥年丁亥月辛亥日已亥时…又就戊寅胎…四亥与寅胎合，故作两府。",
+          "notes": [
+            "四柱齐列。原文已亥时，柱用己亥。戊寅胎不把胎元当出生时柱。",
+            "两府是来源历史分类，不转成对现实用户的判断。"
+          ]
+        },
+        {
+          "kind": "source_case",
+          "name": "萧注",
+          "pillars": [
+            "癸丑",
+            "乙丑",
+            "乙丑",
+            "丁丑"
+          ],
+          "inputBasis": "four-pillars",
+          "canRecompute": true,
+          "sourceClaim": "萧注癸醜年乙醜月乙醜日丁醜时…又就丙辰胎…四柱带杀多，故换武官，止于两製而无寿。",
+          "notes": [
+            "四柱齐列。原文癸醜乙醜丁醜，柱用癸丑乙丑丁丑。丙辰胎不把胎元当出生时柱。",
+            "武官两製无寿是来源历史分类，不转成对现实用户的判断。"
+          ]
+        }
+      ]
+    },
+    {
+      "paragraphId": "wuxing-jingji:L2235-L2235",
+      "kind": "理论",
+      "vernacular": "玉霄宝鉴雲：有芝兰并秀格，支神一字而乾神灵是也，仍须幹神和会，而福聚于支神上者为应格。雲幹原字不改。",
+      "terms": [
+        "芝兰并秀格",
+        "玉霄宝鉴"
+      ],
+      "notes": [
+        "待分类作理论",
+        "无人名连续四柱不收案例",
+        "雲醜戍纂已亥兇幹廣闕鴯衝原字不改",
+        "纳音分套只归档，不改已落地子平或纳音算法"
+      ],
+      "review": "source-reviewed",
+      "verified": false,
+      "relatedParagraphIds": [
+        "wuxing-jingji:L2233-L2233",
+        "wuxing-jingji:L2237-L2237"
+      ]
+    },
+    {
+      "paragraphId": "wuxing-jingji:L2237-L2237",
+      "kind": "序跋目录",
+      "vernacular": "【六合双鴯格】是卷六分节标目。鴯原字不改。",
+      "terms": [
+        "六合双鴯格"
+      ],
+      "notes": [
+        "待分类作序跋目录",
+        "无人名连续四柱不收案例",
+        "雲醜戍纂已亥兇幹廣闕鴯衝原字不改",
+        "目录不作理论条或现代操作步骤"
+      ],
+      "review": "source-reviewed",
+      "verified": false,
+      "relatedParagraphIds": [
+        "wuxing-jingji:L2235-L2235",
+        "wuxing-jingji:L2239-L2239"
+      ]
+    },
+    {
+      "paragraphId": "wuxing-jingji:L2239-L2239",
+      "kind": "理论",
+      "vernacular": "六合双鸳坐槐庭而布政，假如戊辰年癸亥月戊寅日甲寅时，一亥合两寅马也。鬼谷命格。假如戊辰年无名，不收案例。布政是历史分类，不是对现实用户的判断。",
+      "terms": [
+        "六合双鴯格",
+        "鬼谷命格"
+      ],
+      "notes": [
+        "待分类作理论",
+        "无人名连续四柱不收案例",
+        "干支纳音类举无名，不收案例",
+        "官职贫富刑死是历史分类，不转成对现实用户的判断",
+        "纳音分套只归档，不改已落地子平或纳音算法"
+      ],
+      "review": "source-reviewed",
+      "verified": false,
+      "relatedParagraphIds": [
+        "wuxing-jingji:L2237-L2237",
+        "wuxing-jingji:L2241-L2241"
+      ]
+    },
+    {
+      "paragraphId": "wuxing-jingji:L2241-L2241",
+      "kind": "序跋目录",
+      "vernacular": "【衝合格】是卷六分节标目。衝原字不改。",
+      "terms": [
+        "衝合格"
+      ],
+      "notes": [
+        "待分类作序跋目录",
+        "无人名连续四柱不收案例",
+        "雲醜戍纂已亥兇幹廣闕鴯衝原字不改",
+        "目录不作理论条或现代操作步骤"
+      ],
+      "review": "source-reviewed",
+      "verified": false,
+      "relatedParagraphIds": [
+        "wuxing-jingji:L2239-L2239",
+        "wuxing-jingji:L2243-L2243"
+      ]
+    },
+    {
+      "paragraphId": "wuxing-jingji:L2243-L2243",
+      "kind": "理论",
+      "vernacular": "大凡命前六辰贵气冲和也，假令丁亥土人得甲辰丙辰是也，更天幹纳音稍有和气，富贵极盛，为阴阳六辰自然清贵，变天乙贵神之意。天元变化书。幹原字不改。假令丁亥土人无名纳音类举，不收案例。富贵清贵是历史分类，不是对现实用户的判断。",
+      "terms": [
+        "衝合格",
+        "天元变化书"
+      ],
+      "notes": [
+        "待分类作理论",
+        "无人名连续四柱不收案例",
+        "雲醜戍纂已亥兇幹廣闕鴯衝原字不改",
+        "干支纳音类举无名，不收案例",
+        "官职贫富刑死是历史分类，不转成对现实用户的判断",
+        "纳音分套只归档，不改已落地子平或纳音算法"
+      ],
+      "review": "source-reviewed",
+      "verified": false,
+      "relatedParagraphIds": [
+        "wuxing-jingji:L2241-L2241",
+        "wuxing-jingji:L2245-L2245"
+      ]
+    },
+    {
+      "paragraphId": "wuxing-jingji:L2245-L2245",
+      "kind": "序跋目录",
+      "vernacular": "【支神往来有五行之气】是卷六分节标目。",
+      "terms": [
+        "支神往来有五行之气"
+      ],
+      "notes": [
+        "待分类作序跋目录",
+        "无人名连续四柱不收案例",
+        "目录不作理论条或现代操作步骤"
+      ],
+      "review": "source-reviewed",
+      "verified": false,
+      "relatedParagraphIds": [
+        "wuxing-jingji:L2243-L2243",
+        "wuxing-jingji:L2247-L2247"
+      ]
+    },
+    {
+      "paragraphId": "wuxing-jingji:L2247-L2247",
+      "kind": "理论",
+      "vernacular": "寅午往来有甲己土气，子巳往来有戊癸火气，巳酉往来有丙辛水气，卯申往来有乙庚金气，亥午往来有丁壬木气，皆在禄上也。又子巳午亥谓之隔六合，盖一阳至六阳，一阴至六阴也。广录。甲己戊癸是干支类举。",
+      "terms": [
+        "支神往来有五行之气",
+        "隔六合"
+      ],
+      "notes": [
+        "待分类作理论",
+        "无人名连续四柱不收案例",
+        "干支纳音类举无名，不收案例",
+        "纳音分套只归档，不改已落地子平或纳音算法"
+      ],
+      "review": "source-reviewed",
+      "verified": false,
+      "relatedParagraphIds": [
+        "wuxing-jingji:L2245-L2245",
+        "wuxing-jingji:L2249-L2249"
+      ]
+    },
+    {
+      "paragraphId": "wuxing-jingji:L2249-L2249",
+      "kind": "理论",
+      "vernacular": "天元变化书雲：此系支辰之论，更得天幹纳音有交涉者大利，福厚坚固。雲幹原字不改。福厚是历史分类，不是对现实用户的判断。",
+      "terms": [
+        "支神往来有五行之气",
+        "天元变化书"
+      ],
+      "notes": [
+        "待分类作理论",
+        "无人名连续四柱不收案例",
+        "雲醜戍纂已亥兇幹廣闕鴯衝原字不改",
+        "官职贫富刑死是历史分类，不转成对现实用户的判断",
+        "纳音分套只归档，不改已落地子平或纳音算法"
+      ],
+      "review": "source-reviewed",
+      "verified": false,
+      "relatedParagraphIds": [
+        "wuxing-jingji:L2247-L2247",
+        "wuxing-jingji:L2251-L2254"
+      ]
+    },
+    {
+      "paragraphId": "wuxing-jingji:L2251-L2254",
+      "kind": "理论",
+      "vernacular": "五行本位者，寅午戌火之位丙丁人遇之贵，亥卯未木之位甲乙人遇之贵，巳酉醜金之位庚辛人遇之贵，申子辰水土之位戊己壬癸人遇之贵；五行各三位与四贵三位同，惟闕胎贵一位，其主贵之福亦与四贵同。阳禄贵在临官，阴禄贵在旺，若阳禄遇旺、阴禄遇临官，虽为本位其福差减于建处也。有遇一两贵位却为兇杀刑害破得深重无禄者也。三命提要。醜闕兇原字不改。原文闕（缺？）保留。丙丁人甲乙人是干支类举。贵无禄是历史分类，不是对现实用户的判断。span=4不拆ID、不另作subsections。",
+      "terms": [
+        "五行本位",
+        "三命提要"
+      ],
+      "notes": [
+        "待分类作理论",
+        "无人名连续四柱不收案例",
+        "雲醜戍纂已亥兇幹廣闕鴯衝原字不改",
+        "干支纳音类举无名，不收案例",
+        "官职贫富刑死是历史分类，不转成对现实用户的判断",
+        "纳音分套只归档，不改已落地子平或纳音算法",
+        "库存合并段不拆ID"
+      ],
+      "review": "source-reviewed",
+      "verified": false,
+      "relatedParagraphIds": [
+        "wuxing-jingji:L2249-L2249",
+        "wuxing-jingji:L2256-L2256"
+      ]
+    },
+    {
+      "paragraphId": "wuxing-jingji:L2256-L2256",
+      "kind": "序跋目录",
+      "vernacular": "【大吉生逢小吉，反寿长年，天罡运至天魁，实生续寿。】是卷六分节标目。",
+      "terms": [
+        "大吉生逢小吉"
+      ],
+      "notes": [
+        "待分类作序跋目录",
+        "无人名连续四柱不收案例",
+        "目录不作理论条或现代操作步骤"
+      ],
+      "review": "source-reviewed",
+      "verified": false,
+      "relatedParagraphIds": [
+        "wuxing-jingji:L2251-L2254",
+        "wuxing-jingji:L2258-L2263"
+      ]
+    },
+    {
+      "paragraphId": "wuxing-jingji:L2258-L2263",
+      "kind": "理论",
+      "vernacular": "王氏注雲：醜为大吉乃金之墓，未属小吉乃木之库，以醜中金气来克未中之木气，上克下曰冶金，未变化仁义相济则反寿长年，或未人得醜则尊辱卑荣，不为寿而为夭矣。天罡是辰，辰之中有水气之所重也。天魁是戌，戌之中有火气之所重也。辰中之水克戌中之火，为精为神，水火既济则寄生续寿。或戌人得辰则阴阳不正，为返吟之破命矣。雲醜原字不改。未人戌人是干支类举。寿夭是历史分类，不是对现实用户的判断。span=6不拆ID、不另作subsections。",
+      "terms": [
+        "大吉",
+        "小吉",
+        "天罡",
+        "天魁"
+      ],
+      "notes": [
+        "待分类作理论",
+        "无人名连续四柱不收案例",
+        "雲醜戍纂已亥兇幹廣闕鴯衝原字不改",
+        "干支纳音类举无名，不收案例",
+        "官职贫富刑死是历史分类，不转成对现实用户的判断",
+        "纳音分套只归档，不改已落地子平或纳音算法",
+        "库存合并段不拆ID"
+      ],
+      "review": "source-reviewed",
+      "verified": false,
+      "relatedParagraphIds": [
+        "wuxing-jingji:L2256-L2256",
+        "wuxing-jingji:L2265-L2265"
       ]
     }
   ]
