@@ -1,0 +1,52 @@
+{
+  "pack": "fengshui/qingnang-aoyu",
+  "fulltext": "sources/fulltext/fengshui/qingnang-aoyu/fulltext.md",
+  "classification_note": "pattern 是文本模式初筛；annotation 来源另见注解文件；source-reviewed 不等同人工影印核验。same_text_as 仅表示忽略空白后的原文字面相同。",
+  "paragraphs": [
+    {
+      "id": "qingnang-aoyu:L0001-L0005",
+      "start_line": 1,
+      "end_line": 5,
+      "heading": "正文",
+      "kind": "评注或元数据",
+      "classification_method": "annotation",
+      "char_count": 58,
+      "doubtful": false,
+      "missing_marker": false,
+      "automatic_kind": "待分类",
+      "annotation_file": "references/annotations/fengshui/qingnang-aoyu.json",
+      "annotation_review": "source-reviewed",
+      "has_vernacular": true
+    },
+    {
+      "id": "qingnang-aoyu:L0009-L0009",
+      "start_line": 9,
+      "end_line": 9,
+      "heading": "青囊奧語",
+      "kind": "评注或元数据",
+      "classification_method": "annotation",
+      "char_count": 74,
+      "doubtful": false,
+      "missing_marker": false,
+      "automatic_kind": "待分类",
+      "annotation_file": "references/annotations/fengshui/qingnang-aoyu.json",
+      "annotation_review": "source-reviewed",
+      "has_vernacular": true
+    },
+    {
+      "id": "qingnang-aoyu:L0011-L0038",
+      "start_line": 11,
+      "end_line": 38,
+      "heading": "青囊奧語",
+      "kind": "操作步骤",
+      "classification_method": "annotation",
+      "char_count": 548,
+      "doubtful": false,
+      "missing_marker": false,
+      "automatic_kind": "待分类",
+      "annotation_file": "references/annotations/fengshui/qingnang-aoyu.json",
+      "annotation_review": "source-reviewed",
+      "has_vernacular": true
+    }
+  ]
+}

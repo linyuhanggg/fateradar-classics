@@ -1,0 +1,248 @@
+{
+  "sourceParagraph": "sanming-tonghui:L0740-L0781",
+  "runtime": "src/lib/engine/shensha.ts#changSheng",
+  "scope": "30 explicit birth, lu and death positions in the first opinion only. Later alternative schools, root strength and real outcomes are not validated by this check.",
+  "verified": false,
+  "checks": [
+    {
+      "stem": "甲",
+      "branch": "亥",
+      "expected": "长生",
+      "actual": "长生",
+      "startLine": 740,
+      "endLine": 743
+    },
+    {
+      "stem": "甲",
+      "branch": "寅",
+      "expected": "临官",
+      "actual": "临官",
+      "startLine": 740,
+      "endLine": 743
+    },
+    {
+      "stem": "甲",
+      "branch": "午",
+      "expected": "死",
+      "actual": "死",
+      "startLine": 740,
+      "endLine": 743
+    },
+    {
+      "stem": "乙",
+      "branch": "午",
+      "expected": "长生",
+      "actual": "长生",
+      "startLine": 744,
+      "endLine": 746
+    },
+    {
+      "stem": "乙",
+      "branch": "卯",
+      "expected": "临官",
+      "actual": "临官",
+      "startLine": 744,
+      "endLine": 746
+    },
+    {
+      "stem": "乙",
+      "branch": "亥",
+      "expected": "死",
+      "actual": "死",
+      "startLine": 744,
+      "endLine": 746
+    },
+    {
+      "stem": "丙",
+      "branch": "寅",
+      "expected": "长生",
+      "actual": "长生",
+      "startLine": 747,
+      "endLine": 749
+    },
+    {
+      "stem": "丙",
+      "branch": "巳",
+      "expected": "临官",
+      "actual": "临官",
+      "startLine": 747,
+      "endLine": 749
+    },
+    {
+      "stem": "丙",
+      "branch": "酉",
+      "expected": "死",
+      "actual": "死",
+      "startLine": 747,
+      "endLine": 749
+    },
+    {
+      "stem": "丁",
+      "branch": "酉",
+      "expected": "长生",
+      "actual": "长生",
+      "startLine": 750,
+      "endLine": 752
+    },
+    {
+      "stem": "丁",
+      "branch": "午",
+      "expected": "临官",
+      "actual": "临官",
+      "startLine": 750,
+      "endLine": 752
+    },
+    {
+      "stem": "丁",
+      "branch": "寅",
+      "expected": "死",
+      "actual": "死",
+      "startLine": 750,
+      "endLine": 752
+    },
+    {
+      "stem": "戊",
+      "branch": "寅",
+      "expected": "长生",
+      "actual": "长生",
+      "startLine": 753,
+      "endLine": 755
+    },
+    {
+      "stem": "戊",
+      "branch": "巳",
+      "expected": "临官",
+      "actual": "临官",
+      "startLine": 753,
+      "endLine": 755
+    },
+    {
+      "stem": "戊",
+      "branch": "酉",
+      "expected": "死",
+      "actual": "死",
+      "startLine": 753,
+      "endLine": 755
+    },
+    {
+      "stem": "己",
+      "branch": "酉",
+      "expected": "长生",
+      "actual": "长生",
+      "startLine": 756,
+      "endLine": 758
+    },
+    {
+      "stem": "己",
+      "branch": "午",
+      "expected": "临官",
+      "actual": "临官",
+      "startLine": 756,
+      "endLine": 758
+    },
+    {
+      "stem": "己",
+      "branch": "寅",
+      "expected": "死",
+      "actual": "死",
+      "startLine": 756,
+      "endLine": 758
+    },
+    {
+      "stem": "庚",
+      "branch": "巳",
+      "expected": "长生",
+      "actual": "长生",
+      "startLine": 759,
+      "endLine": 761
+    },
+    {
+      "stem": "庚",
+      "branch": "申",
+      "expected": "临官",
+      "actual": "临官",
+      "startLine": 759,
+      "endLine": 761
+    },
+    {
+      "stem": "庚",
+      "branch": "子",
+      "expected": "死",
+      "actual": "死",
+      "startLine": 759,
+      "endLine": 761
+    },
+    {
+      "stem": "辛",
+      "branch": "子",
+      "expected": "长生",
+      "actual": "长生",
+      "startLine": 762,
+      "endLine": 764
+    },
+    {
+      "stem": "辛",
+      "branch": "酉",
+      "expected": "临官",
+      "actual": "临官",
+      "startLine": 762,
+      "endLine": 764
+    },
+    {
+      "stem": "辛",
+      "branch": "巳",
+      "expected": "死",
+      "actual": "死",
+      "startLine": 762,
+      "endLine": 764
+    },
+    {
+      "stem": "壬",
+      "branch": "申",
+      "expected": "长生",
+      "actual": "长生",
+      "startLine": 765,
+      "endLine": 767
+    },
+    {
+      "stem": "壬",
+      "branch": "亥",
+      "expected": "临官",
+      "actual": "临官",
+      "startLine": 765,
+      "endLine": 767
+    },
+    {
+      "stem": "壬",
+      "branch": "卯",
+      "expected": "死",
+      "actual": "死",
+      "startLine": 765,
+      "endLine": 767
+    },
+    {
+      "stem": "癸",
+      "branch": "卯",
+      "expected": "长生",
+      "actual": "长生",
+      "startLine": 768,
+      "endLine": 770
+    },
+    {
+      "stem": "癸",
+      "branch": "子",
+      "expected": "临官",
+      "actual": "临官",
+      "startLine": 768,
+      "endLine": 770
+    },
+    {
+      "stem": "癸",
+      "branch": "申",
+      "expected": "死",
+      "actual": "死",
+      "startLine": 768,
+      "endLine": 770
+    }
+  ]
+}
