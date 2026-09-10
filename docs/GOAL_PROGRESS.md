@@ -4,6 +4,15 @@
 
 两仓均为 `codex/full-library-completion`：古籍 `/Users/yuhanglin/.codex/worktrees/fateradar-classics-grok-full-library`；产品 `/Users/yuhanglin/.codex/worktrees/fateradar-product-grok-full-library`。原接手基准古籍2396e4c、产品8f1ca84。原main及他人admin/billing/.claude不改。本目标尚未合main或部署。
 
+## 最新接续：星学大成1218段，卷二十七星躔摘金集
+
+1217账本1a68b3d已推。本轮ed092fa完成星学大成星躔摘金集十六（span=35五条subsections）一主段，累计1218/1392主文本；无新增四柱案例，案例统计仍33d92f4。下一星辰杂断歌，边界已从包读取。
+
+- 𤣥、炁、㝛、太隂、䧟、邜、毌、枮、閫、刼、闗、䦨、㣲、髙原字不改。贵贱刑死贫富是历史分类，不转换成对现实用户的判断。子丑寅亥辰酉巳申未垣戌命午宫安命假令均无人名连续四柱，不收案例。不把行限当出生柱。
+- 库存合并段不拆ID。星躔摘金集span=35五条subsections连续覆盖8394-8428。待分类作理论。安身傍鬼命母亥卯未木局巳酉丑金局寅午戌火局西洋人马白羊卦气殿驾闲神亡神的煞阳刃三煞倒限关阑罗计分套，只归档不改算法。
+- 案例未增删，仍3486总/3410可复算、冲突145、输入不确定1、重复995、verified0。固定ed092fa1ad2093d51c3bcacc6e3fc80927c7d734导出55包80889段source_reviewed24219，含本批一段；18知识测试通过。产品3bf454e仅generated/knowledge，.claude未动。
+- 注释43书25647 entries零错；无规则或运行修改，未宣称全回归/Web总验收。全目标active，未合main或部署。隔位救应与其他七术栏目免费解释仍待做。果天经主段已尽，不等于全库完成。
+
 ## 最新接续：星学大成1217段，卷二十七一寸金续步天经
 
 1215账本a80e7d3已推。本轮8b214d5完成星学大成一寸金（span=28四条subsections）与续步天经警句（span=44六条subsections）二主段，累计1217/1392主文本；无新增四柱案例，案例统计仍33d92f4。下一星躔摘金集十六，边界已从包读取。
