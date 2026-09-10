@@ -920,3 +920,20 @@ PYTHONDONTWRITEBYTECODE=1 python3 tools/validate-annotations.py --annotations re
   - 卷六地母经年占农谚不是预测有效
 - 校验：`{"ok": true, "books": 1, "files": 1, "entries": 2860, "source_reviewed": 2594, "errors": []}`。校验器只做结构与 ID，不是语义证书。
 - 未决项：玉匣记补本 2860–2987；麻衣主本；地理辨正。
+- commit：`97362e4`
+
+## P2 増廣玉匣記通書 · 识典 NA09036 · checkpoint 12（地母经年占收束 2860–2987）
+
+- 段 2860–2987：`yuqia-ji:shidian-NA09036:P7655682862100529202` … `P7655682864306110491`
+- 累计 2988 条：source-reviewed 2721，draft 267（verified 全 false）。覆盖全书 2988 段，缺 0。
+- CP12 本段 128 条：规则候选 128
+- 关键条件/否定：
+  - 干支年与燕鲁荆吴等分野分层，不是一岁一律
+  - 己丑金玉满街与罗绮不成钱分层
+  - 祈保收成却得六分成，不是祈则全收
+  - 壬寅人民虽富乐、六畜尽遭凶
+  - 蚕娘虽哭叶还得秤头丝
+  - 创未须及早莫待极寒天
+  - 年占农谚不是预测有效，不是算法覆盖
+- 校验：`{"ok": true, "books": 1, "files": 1, "entries": 2988, "source_reviewed": 2721, "errors": []}`。校验器只做结构与 ID，不是语义证书。
+- 未决项：麻衣主本；地理辨正 SDZJ0504。玉匣记补本本 lane 完成。未改主本 `yuqia-ji.json`。
