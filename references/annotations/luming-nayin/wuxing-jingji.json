@@ -2,7 +2,7 @@
   "schemaVersion": "fateradar-annotations-v1",
   "bookSlug": "wuxing-jingji",
   "sourceFile": "sources/fulltext/luming-nayin/wuxing-jingji/fulltext.md",
-  "reviewScope": "已逐段阅读电子文本宋-廖中至卷一壬戌癸亥大海水（wuxing-jingji:L0005-L0005 至 L0262-L0262）并作语义注解。source-reviewed只指对照电子主文本，不代表影印人工核验。本批无新增人名连续四柱。",
+  "reviewScope": "已逐段阅读电子文本宋-廖中至卷一壬申临官之金（wuxing-jingji:L0005-L0005 至 L0317-L0317）并作语义注解。source-reviewed只指对照电子主文本，不代表影印人工核验。本批无新增人名连续四柱。",
   "entries": [
     {
       "paragraphId": "wuxing-jingji:L0005-L0005",
@@ -2419,6 +2419,420 @@
       "relatedParagraphIds": [
         "wuxing-jingji:L0260-L0260",
         "wuxing-jingji:L0264-L0264"
+      ]
+    },
+    {
+      "paragraphId": "wuxing-jingji:L0264-L0264",
+      "kind": "理论",
+      "vernacular": "六十甲子起于轩辕、作于大挠。这是本书对六十甲子来历的说法，不是推步程序。",
+      "terms": [
+        "六十甲子",
+        "轩辕",
+        "大挠"
+      ],
+      "notes": [
+        "待分类作理论",
+        "无人名连续四柱不收案例",
+        "軒轅大撓原字不改"
+      ],
+      "review": "source-reviewed",
+      "verified": false,
+      "relatedParagraphIds": [
+        "wuxing-jingji:L0262-L0262",
+        "wuxing-jingji:L0266-L0266"
+      ]
+    },
+    {
+      "paragraphId": "wuxing-jingji:L0266-L0266",
+      "kind": "理论",
+      "vernacular": "大挠是轩辕史官，考天书三式，以十干十二支衍成六十甲子。三式即轩辕感玄女所授烛神经。传说托名不是案例。",
+      "terms": [
+        "大挠",
+        "三式",
+        "烛神经"
+      ],
+      "notes": [
+        "待分类作理论",
+        "无人名连续四柱不收案例",
+        "十幹燭神經原字不改",
+        "玄女烛神经是传说，不收案例"
+      ],
+      "review": "source-reviewed",
+      "verified": false,
+      "relatedParagraphIds": [
+        "wuxing-jingji:L0264-L0264",
+        "wuxing-jingji:L0268-L0268"
+      ]
+    },
+    {
+      "paragraphId": "wuxing-jingji:L0268-L0268",
+      "kind": "序跋目录",
+      "vernacular": "论六甲纳音法。与目录 L0054 同文，是卷一子目起标。",
+      "terms": [
+        "六甲纳音"
+      ],
+      "notes": [
+        "待分类作序跋目录",
+        "无人名连续四柱不收案例",
+        "same_text_as L0054，篇题不作算法"
+      ],
+      "review": "source-reviewed",
+      "verified": false,
+      "relatedParagraphIds": [
+        "wuxing-jingji:L0266-L0266",
+        "wuxing-jingji:L0270-L0285"
+      ]
+    },
+    {
+      "paragraphId": "wuxing-jingji:L0270-L0285",
+      "kind": "规则候选",
+      "vernacular": "六微指论：天气始于甲、地气始于子，子甲相合曰岁，十干配十二支成六甲。纳音取数：子午数至庚、丑未数至辛、寅申数至戊、卯酉数至己、辰戌数至丙、巳亥数至丁。得七西方素皇之气属金，得三南方丹天之气属火，得九东方阳九之气属木，得一中央总统之气属土，得五北方玄极之气属水。颂：七金三是火，九木一中央，得五皆为水。假如甲子甲午从甲至庚、乙丑乙未从乙至辛皆七属金；丙寅丙申、丁卯丁酉皆三属火；戊辰戊戌、己巳己亥皆九属木；庚子庚午辛未辛丑皆一属土；丙子丙午、丁未丁丑皆五属水。只数其干不数其支。出三历会同。这是书中纳音取数法，只归档，不改已落地算法。假令甲子甲午是计数例，不是人名四柱。",
+      "terms": [
+        "纳音取数",
+        "六微指论",
+        "三历会同"
+      ],
+      "notes": [
+        "待分类作规则候选",
+        "醜未、雲、素皇、彷此、乾原字不改",
+        "假令甲子甲午是计数例，不收案例",
+        "纳音分套只归档，不改已落地子平或纳音算法"
+      ],
+      "review": "source-reviewed",
+      "verified": false,
+      "relatedParagraphIds": [
+        "wuxing-jingji:L0268-L0268",
+        "wuxing-jingji:L0287-L0287"
+      ]
+    },
+    {
+      "paragraphId": "wuxing-jingji:L0287-L0287",
+      "kind": "理论",
+      "vernacular": "甲子从革之金，气散，得戊申土、癸巳水相之则吉。戊申为金临官，土旺于子；癸巳金生于巳、水旺于子，又为朝元禄。忌丁卯丁酉戊午之火。这是纳音宜忌议论，不是案例。",
+      "terms": [
+        "从革之金",
+        "朝元禄"
+      ],
+      "notes": [
+        "待分类作理论",
+        "无人名连续四柱不收案例",
+        "纳音分套只归档，不改已落地子平或纳音算法"
+      ],
+      "review": "source-reviewed",
+      "verified": false,
+      "relatedParagraphIds": [
+        "wuxing-jingji:L0270-L0285",
+        "wuxing-jingji:L0289-L0289"
+      ]
+    },
+    {
+      "paragraphId": "wuxing-jingji:L0289-L0289",
+      "kind": "理论",
+      "vernacular": "阎东叟：甲子金为进神，禀潜灵中之德，四时皆吉，入贵格承旺气则术业精微、主魁夺之荣。阎东叟是称引，不是人名连续四柱。魁夺科名是历史分类。",
+      "terms": [
+        "阎东叟",
+        "进神",
+        "甲子金"
+      ],
+      "notes": [
+        "待分类作理论",
+        "无人名连续四柱不收案例",
+        "官职科甲贫富刑死是历史分类，不转成对现实用户的判断"
+      ],
+      "review": "source-reviewed",
+      "verified": false,
+      "relatedParagraphIds": [
+        "wuxing-jingji:L0287-L0287",
+        "wuxing-jingji:L0291-L0291"
+      ]
+    },
+    {
+      "paragraphId": "wuxing-jingji:L0291-L0291",
+      "kind": "理论",
+      "vernacular": "乙丑自库之金，火不能克，退藏之金，无刑害冲破则显荣，独忌己丑戊午己未之火。乙醜原字不改。",
+      "terms": [
+        "自库之金",
+        "乙丑"
+      ],
+      "notes": [
+        "待分类作理论",
+        "无人名连续四柱不收案例",
+        "乙醜、衝破原字不改",
+        "纳音分套只归档，不改已落地子平或纳音算法"
+      ],
+      "review": "source-reviewed",
+      "verified": false,
+      "relatedParagraphIds": [
+        "wuxing-jingji:L0289-L0289",
+        "wuxing-jingji:L0293-L0293"
+      ]
+    },
+    {
+      "paragraphId": "wuxing-jingji:L0293-L0293",
+      "kind": "理论",
+      "vernacular": "阎东叟：乙丑金为正印，具大福德，秋冬富贵寿考，春夏吉中有凶，入格则建功享福，带煞类为凶会。玉霄宝鉴：甲子乙丑未成器金，见火则成，多见则吉。富贵寿考是历史分类。",
+      "terms": [
+        "正印",
+        "玉霄宝鉴"
+      ],
+      "notes": [
+        "待分类作理论",
+        "无人名连续四柱不收案例",
+        "乙醜吉兇原字不改",
+        "官职科甲贫富刑死是历史分类，不转成对现实用户的判断"
+      ],
+      "review": "source-reviewed",
+      "verified": false,
+      "relatedParagraphIds": [
+        "wuxing-jingji:L0291-L0291",
+        "wuxing-jingji:L0295-L0295"
+      ]
+    },
+    {
+      "paragraphId": "wuxing-jingji:L0295-L0295",
+      "kind": "理论",
+      "vernacular": "丙寅赫祭之火，无水制则为燔灼炎烈，水不可过，独爱甲寅之水就位济之，又名朝元禄。赫祭原字不改。",
+      "terms": [
+        "赫祭之火",
+        "朝元禄"
+      ],
+      "notes": [
+        "待分类作理论",
+        "无人名连续四柱不收案例",
+        "赫祭原字不改"
+      ],
+      "review": "source-reviewed",
+      "verified": false,
+      "relatedParagraphIds": [
+        "wuxing-jingji:L0293-L0293",
+        "wuxing-jingji:L0297-L0297"
+      ]
+    },
+    {
+      "paragraphId": "wuxing-jingji:L0297-L0297",
+      "kind": "理论",
+      "vernacular": "五行要论：丙寅火食灵明冲粹之气，四时生生之德，入贵格则文彩发应，主科甲之贵。科甲是历史分类。",
+      "terms": [
+        "五行要论",
+        "丙寅火"
+      ],
+      "notes": [
+        "待分类作理论",
+        "无人名连续四柱不收案例",
+        "官职科甲贫富刑死是历史分类，不转成对现实用户的判断",
+        "髮應原字不改"
+      ],
+      "review": "source-reviewed",
+      "verified": false,
+      "relatedParagraphIds": [
+        "wuxing-jingji:L0295-L0295",
+        "wuxing-jingji:L0299-L0299"
+      ]
+    },
+    {
+      "paragraphId": "wuxing-jingji:L0299-L0299",
+      "kind": "理论",
+      "vernacular": "丁卯伏明之火，气弱宜木生之，遇水则凶，乙卯乙酉水最毒。",
+      "terms": [
+        "伏明之火",
+        "丁卯"
+      ],
+      "notes": [
+        "待分类作理论",
+        "无人名连续四柱不收案例",
+        "兇原字不改"
+      ],
+      "review": "source-reviewed",
+      "verified": false,
+      "relatedParagraphIds": [
+        "wuxing-jingji:L0297-L0297",
+        "wuxing-jingji:L0301-L0301"
+      ]
+    },
+    {
+      "paragraphId": "wuxing-jingji:L0301-L0301",
+      "kind": "理论",
+      "vernacular": "五行要论：丁卯沐浴之火，含雷动风作之气，水济则达，土载则基厚，以木资之为文彩，以金椽之，更逢夏令则凶暴。金櫞原字不改。凶暴是书中取象。",
+      "terms": [
+        "沐浴之火",
+        "丁卯"
+      ],
+      "notes": [
+        "待分类作理论",
+        "无人名连续四柱不收案例",
+        "金櫞、兇暴原字不改",
+        "官职科甲贫富刑死是历史分类，不转成对现实用户的判断"
+      ],
+      "review": "source-reviewed",
+      "verified": false,
+      "relatedParagraphIds": [
+        "wuxing-jingji:L0299-L0299",
+        "wuxing-jingji:L0303-L0303"
+      ]
+    },
+    {
+      "paragraphId": "wuxing-jingji:L0303-L0303",
+      "kind": "理论",
+      "vernacular": "珞琭子：丙寅丁卯秋天宜以保持。莹和尚注：举火之类，秋天保持言水生于秋。鬼谷遗文：丙寅丁卯秋冬宜以保持；注木不南奔、火无西旺，火至秋冬势恐不久。称引不是案例。",
+      "terms": [
+        "珞琭子",
+        "莹和尚",
+        "鬼谷遗文"
+      ],
+      "notes": [
+        "待分类作理论",
+        "无人名连续四柱不收案例",
+        "珞琭瑩和尚雲原字不改"
+      ],
+      "review": "source-reviewed",
+      "verified": false,
+      "relatedParagraphIds": [
+        "wuxing-jingji:L0301-L0301",
+        "wuxing-jingji:L0305-L0305"
+      ]
+    },
+    {
+      "paragraphId": "wuxing-jingji:L0305-L0305",
+      "kind": "理论",
+      "vernacular": "戊辰两土下木，众金不能克，盖生金有母子之道，得土生之为佳。",
+      "terms": [
+        "戊辰",
+        "两土下木"
+      ],
+      "notes": [
+        "待分类作理论",
+        "无人名连续四柱不收案例",
+        "纳音分套只归档，不改已落地子平或纳音算法"
+      ],
+      "review": "source-reviewed",
+      "verified": false,
+      "relatedParagraphIds": [
+        "wuxing-jingji:L0303-L0303",
+        "wuxing-jingji:L0307-L0307"
+      ]
+    },
+    {
+      "paragraphId": "wuxing-jingji:L0307-L0307",
+      "kind": "理论",
+      "vernacular": "五行要论：戊辰庚寅癸丑三辰挺木德清健之数，生于春夏能转立独处随变成功，更成旺气则有凌霄耸壑之志，惟忌秋生虽怀志节屈而不伸。己巳为近火之木，金自此生於我无伤，忌见生旺之火。戊辰庚寅癸丑是纳音类举，不是人名四柱。",
+      "terms": [
+        "五行要论",
+        "戊辰",
+        "己巳"
+      ],
+      "notes": [
+        "待分类作理论",
+        "无人名连续四柱不收案例",
+        "癸醜原字不改",
+        "官职科甲贫富刑死是历史分类，不转成对现实用户的判断"
+      ],
+      "review": "source-reviewed",
+      "verified": false,
+      "relatedParagraphIds": [
+        "wuxing-jingji:L0305-L0305",
+        "wuxing-jingji:L0309-L0309"
+      ]
+    },
+    {
+      "paragraphId": "wuxing-jingji:L0309-L0309",
+      "kind": "理论",
+      "vernacular": "阎东叟：己巳在巽为风动之木，根危易拔，和之以金土，运归东南方成材用。外阳内阴别无辅助则气灵散，更为生鬼所克，乃不材之本。",
+      "terms": [
+        "阎东叟",
+        "风动之木",
+        "己巳"
+      ],
+      "notes": [
+        "待分类作理论",
+        "无人名连续四柱不收案例",
+        "官职科甲贫富刑死是历史分类，不转成对现实用户的判断"
+      ],
+      "review": "source-reviewed",
+      "verified": false,
+      "relatedParagraphIds": [
+        "wuxing-jingji:L0307-L0307",
+        "wuxing-jingji:L0311-L0311"
+      ]
+    },
+    {
+      "paragraphId": "wuxing-jingji:L0311-L0311",
+      "kind": "理论",
+      "vernacular": "珞琭子：己巳戊辰度乾宫而脱厄。莹和尚：举木之数，西方金鬼旺乡纳音之木至此绝，是厄会；若度乾亥之宫，木得水以生长故脱厄。",
+      "terms": [
+        "珞琭子",
+        "脱厄",
+        "乾宫"
+      ],
+      "notes": [
+        "待分类作理论",
+        "无人名连续四柱不收案例",
+        "珞琭瑩原字不改"
+      ],
+      "review": "source-reviewed",
+      "verified": false,
+      "relatedParagraphIds": [
+        "wuxing-jingji:L0309-L0309",
+        "wuxing-jingji:L0313-L0313"
+      ]
+    },
+    {
+      "paragraphId": "wuxing-jingji:L0313-L0313",
+      "kind": "理论",
+      "vernacular": "庚午辛未始生之土，木不能克，惟忌水多反伤其气，木多却有归，盖归未也。",
+      "terms": [
+        "始生之土",
+        "庚午辛未"
+      ],
+      "notes": [
+        "待分类作理论",
+        "无人名连续四柱不收案例",
+        "纳音分套只归档，不改已落地子平或纳音算法"
+      ],
+      "review": "source-reviewed",
+      "verified": false,
+      "relatedParagraphIds": [
+        "wuxing-jingji:L0311-L0311",
+        "wuxing-jingji:L0315-L0315"
+      ]
+    },
+    {
+      "paragraphId": "wuxing-jingji:L0315-L0315",
+      "kind": "理论",
+      "vernacular": "阎东叟：庚午辛未戊申丁巳皆厚德之土，含容镇静和气融怡福禄优裕，入格则多历方岳之任，有普惠博爱之功。方岳之任是历史官职分类。庚午辛未戊申丁巳是纳音类举，不是人名四柱。",
+      "terms": [
+        "厚德之土",
+        "阎东叟"
+      ],
+      "notes": [
+        "待分类作理论",
+        "无人名连续四柱不收案例",
+        "官职科甲贫富刑死是历史分类，不转成对现实用户的判断"
+      ],
+      "review": "source-reviewed",
+      "verified": false,
+      "relatedParagraphIds": [
+        "wuxing-jingji:L0313-L0313",
+        "wuxing-jingji:L0317-L0317"
+      ]
+    },
+    {
+      "paragraphId": "wuxing-jingji:L0317-L0317",
+      "kind": "理论",
+      "vernacular": "壬申临官之金，利见水土，若丙申丙寅戊午之火则为灾害。",
+      "terms": [
+        "临官之金",
+        "壬申"
+      ],
+      "notes": [
+        "待分类作理论",
+        "无人名连续四柱不收案例",
+        "纳音分套只归档，不改已落地子平或纳音算法"
+      ],
+      "review": "source-reviewed",
+      "verified": false,
+      "relatedParagraphIds": [
+        "wuxing-jingji:L0315-L0315",
+        "wuxing-jingji:L0319-L0319"
       ]
     }
   ]
