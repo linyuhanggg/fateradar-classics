@@ -1,7 +1,7 @@
 {
   "bookSlug": "daliuren-daquan",
   "sourceTitle": "大六壬大全（现有电子主文本）",
-  "scopeNote": "本文件只覆盖已逐段实读范围：卷一起例/入手法 L56–98；卷七课经元首、重审、知一、涉害至指要 L9101–9655。不代表全书 6893 段已审。source-reviewed 不是影印校勘或人工 verified；案例保持 verified=false。涉害取传订正链：深浅 → 孟（见机）→ 仲（察微）→ 干/支上（缀瑕/复等）。正文见机「以孟神用」、察微「取仲季」、课经比用格、尉山人天盘孟仲、《指南》孟仲法均并行，不插入订讹主链。袖中金补「无孟仲方取季」；订讹未写取季，季的缺省信息不足。",
+  "scopeNote": "本文件只覆盖已逐段实读范围：卷一起例/入手法 L56–98；卷七课经元首至返吟 L9101–10530。不代表全书 6893 段已审。source-reviewed 不是影印校勘或人工 verified；案例保持 verified=false。九宗门至返吟：遥克先蒿矢后弹射；昴星刚仰柔俯；别责阴日存疑、芜淫分名；八专论克不论遥；伏吟自刑杜传；返吟井栏正文四日与订讹六日、观月经丁未己未八专读并行。",
   "entries": [
     {
       "paragraphId": "daliuren-daquan:L0056-L0056",
@@ -3722,6 +3722,5135 @@
       ],
       "review": "source-reviewed",
       "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L9657-L9657",
+      "kind": "术语",
+      "vernacular": "遥克课标题。前提是四课无克，才取日干与上神遥相克。",
+      "terms": [
+        "遥克"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false,
+      "relatedParagraphIds": [
+        "daliuren-daquan:L0078-L0078"
+      ]
+    },
+    {
+      "paragraphId": "daliuren-daquan:L9659-L9667",
+      "kind": "规则候选",
+      "vernacular": "四课无克，取日干与四课上神相克为用，曰遥克。两克则相比为用。蒿矢无镞、弹射无丸，射物难中，不足为畏。先尽四课上神克日干为蒿矢格：遥神克日缓而且轻，折蒿为矢，力弱难伤；占事始而雷吼、终却无妨。统睽之体，狐假虎威；睽乖异，小事吉。忧在西南、喜在西北，干阳方。顺序：无克才遥克；有上神克日先蒿矢，不得先弹射。不足为畏是否定「遥克即实伤」。",
+      "terms": [
+        "遥克",
+        "蒿矢",
+        "弹射",
+        "比用"
+      ],
+      "notes": [
+        "先尽上神克日，与起例先蒿矢后弹射一致。",
+        "两克相比，不是涉害数克。"
+      ],
+      "review": "source-reviewed",
+      "verified": false,
+      "relatedParagraphIds": [
+        "daliuren-daquan:L0078-L0078",
+        "daliuren-daquan:L9733-L9733"
+      ],
+      "subsections": [
+        {
+          "id": "S001",
+          "title": "无克取遥克与两克相比",
+          "startLine": 9659,
+          "endLine": 9661,
+          "vernacular": "无克才取日与上神相克。两克相比。蒿矢无镞弹射无丸不足为畏。",
+          "terms": [
+            "遥克"
+          ],
+          "notes": [
+            "不足为畏是否定实伤。"
+          ]
+        },
+        {
+          "id": "S002",
+          "title": "蒿矢格",
+          "startLine": 9662,
+          "endLine": 9667,
+          "vernacular": "先尽上神克日为蒿矢。缓而且轻，始惊终无妨。睽体小事吉。忧西南喜西北。",
+          "terms": [
+            "蒿矢"
+          ],
+          "notes": [
+            "终却无妨是对始惊的收束。"
+          ]
+        }
+      ]
+    },
+    {
+      "paragraphId": "daliuren-daquan:L9669-L9669",
+      "kind": "规则候选",
+      "vernacular": "蒿矢象：始有凶势、愈久愈休；忧喜未实、文书虚谋；外祸干己、有客为仇；兵利为主、不利他求。凶支：神将凶、贵逆、日辰用神无气→盗贼阴谋、载鬼一车。吉支：神将吉、贵顺、日辰用神有气→干贵有喜、行人来、访人见、事成、灾渐安、婚媾遇雨。两侧都必须留，不得写成凡蒿矢皆虚惊无事。",
+      "terms": [
+        "蒿矢",
+        "贵顺",
+        "贵逆"
+      ],
+      "notes": [
+        "无气/有气是吉凶翻转条件，不是改发用。"
+      ],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L9671-L9671",
+      "kind": "案例",
+      "vernacular": "壬辰日巳时申将：课上下俱无克，取遥克，辰上阴神戌土克日干壬水为用，曰蒿矢格。本例演示神克日，不是弹射。",
+      "terms": [
+        "蒿矢",
+        "戌克壬"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L9673-L9673",
+      "kind": "案例",
+      "vernacular": "同例初传：戌乘青龙。",
+      "terms": [
+        "三传",
+        "青龙"
+      ],
+      "notes": [
+        "盘图待影印核。"
+      ],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L9675-L9675",
+      "kind": "案例",
+      "vernacular": "同例中传：丑乘太常。",
+      "terms": [
+        "三传",
+        "太常"
+      ],
+      "notes": [
+        "盘图待影印核。"
+      ],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L9677-L9677",
+      "kind": "案例",
+      "vernacular": "同例末传：辰乘天后。",
+      "terms": [
+        "三传",
+        "天后"
+      ],
+      "notes": [
+        "盘图待影印核。"
+      ],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L9679-L9679",
+      "kind": "案例",
+      "vernacular": "同例四课天将：龙、朱、贵、元。",
+      "terms": [
+        "四课",
+        "天将"
+      ],
+      "notes": [
+        "将序方向待核。"
+      ],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L9681-L9681",
+      "kind": "案例",
+      "vernacular": "同例四课上神：戌、未、巳、寅。",
+      "terms": [
+        "四课"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L9683-L9683",
+      "kind": "案例",
+      "vernacular": "同例四课下神：未、辰、寅、壬。戌加未为辰阴，与取戌克壬一致。",
+      "terms": [
+        "四课"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L9685-L9685",
+      "kind": "案例",
+      "vernacular": "同例地盘上一行：申酉戌亥。",
+      "terms": [
+        "地盘"
+      ],
+      "notes": [
+        "待影印核。"
+      ],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L9687-L9687",
+      "kind": "案例",
+      "vernacular": "同例地盘「未    子」一行。",
+      "terms": [
+        "地盘"
+      ],
+      "notes": [
+        "待影印核。"
+      ],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L9689-L9689",
+      "kind": "案例",
+      "vernacular": "同例地盘「午    丑」一行。",
+      "terms": [
+        "地盘"
+      ],
+      "notes": [
+        "待影印核。"
+      ],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L9691-L9691",
+      "kind": "案例",
+      "vernacular": "同例地盘下一行电子本作「巳辰卯宙」，「宙」疑寅，不改正文。",
+      "terms": [
+        "地盘"
+      ],
+      "notes": [],
+      "review": "draft",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L9693-L9693",
+      "kind": "规则候选",
+      "vernacular": "上下无克、又无神克日，才以日干遥克课上神为用，曰弹射。我去克他如弹丸遥射，傍物难中。占事远难就，纵成虚名虚得、不得实用。日克两神为箭中双鹿，事尤多心两意。无蒿矢才弹射；虚名虚得是否定「日克神即实得」；双鹿是两克相比之后的占象，不是改取两个发用。",
+      "terms": [
+        "弹射",
+        "箭中双鹿"
+      ],
+      "notes": [
+        "不得在有神克日时改取日克神。"
+      ],
+      "review": "source-reviewed",
+      "verified": false,
+      "relatedParagraphIds": [
+        "daliuren-daquan:L0078-L0078"
+      ]
+    },
+    {
+      "paragraphId": "daliuren-daquan:L9695-L9695",
+      "kind": "规则候选",
+      "vernacular": "弹射象：己谋他事、祸从内施；兵用客利、事宜后为；访人不见、行人未归。空亡发用，动作尤虚。凶：神将凶带刑害、贵逆→不睦冤仇盗贼。吉：神将遇德合、贵顺→亲朋和气。空亡发用是对成事的再否定；兵用客利与蒿矢兵利为主方向相反。",
+      "terms": [
+        "弹射",
+        "空亡"
+      ],
+      "notes": [
+        "空亡发用动作尤虚不得删。"
+      ],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L9697-L9697",
+      "kind": "案例",
+      "vernacular": "壬申日申时亥将：用日克神、巳加寅为用，曰弹射。本例是日克神，不是蒿矢。",
+      "terms": [
+        "弹射",
+        "巳加寅"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L9699-L9699",
+      "kind": "案例",
+      "vernacular": "同例初传：巳乘贵人。",
+      "terms": [
+        "三传",
+        "贵人"
+      ],
+      "notes": [
+        "盘图待影印核。"
+      ],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L9701-L9701",
+      "kind": "案例",
+      "vernacular": "同例中传：申乘六合。",
+      "terms": [
+        "三传",
+        "六合"
+      ],
+      "notes": [
+        "盘图待影印核。"
+      ],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L9703-L9703",
+      "kind": "案例",
+      "vernacular": "同例末传：亥乘天空。",
+      "terms": [
+        "三传",
+        "天空"
+      ],
+      "notes": [
+        "盘图待影印核。"
+      ],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L9705-L9705",
+      "kind": "案例",
+      "vernacular": "同例四课天将：元、空、贵、元。",
+      "terms": [
+        "四课",
+        "天将"
+      ],
+      "notes": [
+        "将名重出待核。"
+      ],
+      "review": "draft",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L9707-L9707",
+      "kind": "案例",
+      "vernacular": "同例四课上神：寅、亥、巳、寅。",
+      "terms": [
+        "四课"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L9709-L9709",
+      "kind": "案例",
+      "vernacular": "同例四课下神：亥、申、寅、壬。巳加寅为第三课，日克巳。",
+      "terms": [
+        "四课"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L9711-L9711",
+      "kind": "案例",
+      "vernacular": "同例地盘上一行：申酉戌亥。",
+      "terms": [
+        "地盘"
+      ],
+      "notes": [
+        "待影印核。"
+      ],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L9713-L9713",
+      "kind": "案例",
+      "vernacular": "同例地盘「未    子」一行。",
+      "terms": [
+        "地盘"
+      ],
+      "notes": [
+        "待影印核。"
+      ],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L9715-L9715",
+      "kind": "案例",
+      "vernacular": "同例地盘「午    丑」一行。",
+      "terms": [
+        "地盘"
+      ],
+      "notes": [
+        "待影印核。"
+      ],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L9717-L9717",
+      "kind": "案例",
+      "vernacular": "同例地盘下一行：巳辰卯寅。",
+      "terms": [
+        "地盘"
+      ],
+      "notes": [
+        "待影印核。"
+      ],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L9719-L9719",
+      "kind": "评注或元数据",
+      "vernacular": "遥克《订讹》标题。",
+      "terms": [
+        "订讹"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L9721-L9721",
+      "kind": "规则候选",
+      "vernacular": "订讹蒿矢：上下俱无克，取神遥克日为用。神虽遥克，力弱难伤，不能为害，如折蒿为矢。与正文蒿矢定义同向。",
+      "terms": [
+        "蒿矢"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false,
+      "relatedParagraphIds": [
+        "daliuren-daquan:L9659-L9667"
+      ]
+    },
+    {
+      "paragraphId": "daliuren-daquan:L9723-L9723",
+      "kind": "理论",
+      "vernacular": "蒿矢占：始如雷吼、终却无事，愈远愈小。此时有客不可容纳，主小人口舌。忧西南、喜西北，干天门。人谋己，利主不利客，利后动，利小不利大。神将凶日辰无气→盗贼阴谋；神将吉日辰有气→干贵有喜、行人来、访人见。利主不利客与弹射对翻；有客不可留是否定「凡客皆可纳」。电子本「愈远逾小」不改字。",
+      "terms": [
+        "蒿矢"
+      ],
+      "notes": [
+        "利小不利大、有客不可留必须保留。"
+      ],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L9725-L9725",
+      "kind": "规则候选",
+      "vernacular": "订讹弹射：无神遥克日，才取日遥克神。日虽克神，终不能害神，如弹丸为箭。终不能害神是否定「日克即伤」。",
+      "terms": [
+        "弹射"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L9727-L9727",
+      "kind": "理论",
+      "vernacular": "弹射占：己谋人，利客不利主，利先动，利上不利下。神将吉遇德合顺贵→亲朋和气；神将凶带刑害逆贵→不睦冤仇盗贼，访人不见、行人不来。克两神为一箭射双鹿，多心两意。与蒿矢利主后动小对翻。",
+      "terms": [
+        "弹射",
+        "一箭射双鹿"
+      ],
+      "notes": [
+        "访人不见是弹射口径，蒿矢访人见，不得混断。"
+      ],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L9729-L9729",
+      "kind": "规则候选",
+      "vernacular": "蒿矢弹射俱主远事、虚惊不实，纵成亦虚名虚利。救应/加重：带金土煞则能伤人——蒿矢见金为有镞，弹射见土为有丸，主蓦然有灾。传空又名遗镞失矢，不能成事，大端祸福俱轻。见太阴、元武、天空当有欺诈而祸起。有镞有丸是否定「凡遥克皆不足畏」；传空是对有镞有丸的再否定。",
+      "terms": [
+        "有镞",
+        "有丸",
+        "遗镞失矢"
+      ],
+      "notes": [
+        "金镞土丸是伤人条件，缺金土不得改判实伤。",
+        "传空不能成事，与空亡发用尤虚同方向。"
+      ],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L9731-L9731",
+      "kind": "规则候选",
+      "vernacular": "近射远射：第二课发用为近射，日之两课自战，多主外事不干内，凶势略大，不可出尖。第三、四课发用为远射，凶势渐小；第三课辰阳与日干相竞，尚觉凶重有力，不可先动；第四课无力。近远不是改发用，只修饰缓急。第三课不得因「远射」写成无力。",
+      "terms": [
+        "近射",
+        "远射"
+      ],
+      "notes": [
+        "第二课凶势略大、第三课仍凶重、第四课无力，三层不得塌成「凡远皆轻」。"
+      ],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L9733-L9733",
+      "kind": "规则候选",
+      "vernacular": "遥克中克多论比，涉害论深，以后凡克多者皆如此论。遥克两克走比用，不走涉害深浅。这是对「俱比俱不比」在遥克层的口径：比，不是数克。观月经「俱比俱不比先举」不得用来插入涉害链。",
+      "terms": [
+        "比用",
+        "涉害"
+      ],
+      "notes": [
+        "不得因克多把遥克改成涉害。"
+      ],
+      "review": "source-reviewed",
+      "verified": false,
+      "relatedParagraphIds": [
+        "daliuren-daquan:L0070-L0070",
+        "daliuren-daquan:L9589-L9599"
+      ]
+    },
+    {
+      "paragraphId": "daliuren-daquan:L9735-L9735",
+      "kind": "评注或元数据",
+      "vernacular": "《观月经》标题。",
+      "terms": [
+        "观月经"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L9737-L9737",
+      "kind": "术语",
+      "vernacular": "观月经小标题：蒿矢卦。",
+      "terms": [
+        "蒿矢"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L9739-L9739",
+      "kind": "规则候选",
+      "vernacular": "神遥克日名蒿矢。与订讹同向。",
+      "terms": [
+        "蒿矢"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L9741-L9741",
+      "kind": "规则候选",
+      "vernacular": "四课俱无克，须看日本因。日本见下行夹注。",
+      "terms": [
+        "日本"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L9743-L9743",
+      "kind": "规则候选",
+      "vernacular": "四课无克以神遥克日为用。日本即十干。日本是日干，不是长生帝旺之日本。",
+      "terms": [
+        "日本",
+        "蒿矢"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L9745-L9745",
+      "kind": "规则候选",
+      "vernacular": "歌句：三神何地类。三神定义见下行。",
+      "terms": [
+        "三神"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L9747-L9747",
+      "kind": "规则候选",
+      "vernacular": "三神：日之阴神、辰之阳神、辰之阴神。第一课日阳不在「三神」内，因蒿矢是上神克日，日阳若克日则不是无克前提。本行未说第一课永不遥克，不补。",
+      "terms": [
+        "三神"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L9749-L9749",
+      "kind": "规则候选",
+      "vernacular": "类内阿谁嗔。俱比俱不比，先举用为真。两克时相比；俱比俱不比则先举。先举未定义是否等于发用时间先后或课序，待与订讹「克多论比」对读，不在本行改成涉害。",
+      "terms": [
+        "先举",
+        "俱比",
+        "俱不比"
+      ],
+      "notes": [],
+      "review": "draft",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L9751-L9751",
+      "kind": "规则候选",
+      "vernacular": "两课克日干，以今日比者为用。比者乃举也。本夹注把比落实为阴阳相比，与九宗门比用同向；「比者乃举」未证明「先举」等于比。",
+      "terms": [
+        "比用"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L9753-L9753",
+      "kind": "理论",
+      "vernacular": "歌句：吉将朝天去。",
+      "terms": [
+        "吉将"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L9755-L9755",
+      "kind": "理论",
+      "vernacular": "初中末俱见吉将，乃出外朝天去，触类而言之。三传皆吉将是条件，缺一不得套朝天。",
+      "terms": [
+        "吉将"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L9757-L9757",
+      "kind": "理论",
+      "vernacular": "歌句：凶神祸到身。",
+      "terms": [
+        "凶神"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L9759-L9759",
+      "kind": "规则候选",
+      "vernacular": "三传凶将动：阴将主盗贼阴谋，阳将主人来害己身。吉凶灾祸在重审卦注定。阴将/阳将分内外贼，不是凡凶将皆盗。重审卦是推吉凶法，不是把遥克改成重审取传。",
+      "terms": [
+        "阴将",
+        "阳将"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false,
+      "relatedParagraphIds": [
+        "daliuren-daquan:L9331-L9351"
+      ]
+    },
+    {
+      "paragraphId": "daliuren-daquan:L9761-L9761",
+      "kind": "术语",
+      "vernacular": "观月经小标题：弹射卦。",
+      "terms": [
+        "弹射"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L9763-L9763",
+      "kind": "规则候选",
+      "vernacular": "日遥克神名弹射。",
+      "terms": [
+        "弹射"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L9765-L9765",
+      "kind": "规则候选",
+      "vernacular": "欲知弹射卦，日克卦中神。",
+      "terms": [
+        "弹射"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L9767-L9767",
+      "kind": "规则候选",
+      "vernacular": "四课无克又无神遥克日，以日遥克神为用；或日克两神，以今日比者为用。无蒿矢才弹射；两克相比，与订讹克多论比一致。",
+      "terms": [
+        "弹射",
+        "比用"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L9769-L9769",
+      "kind": "理论",
+      "vernacular": "歌句：求财合吉将。",
+      "terms": [
+        "求财"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L9771-L9771",
+      "kind": "规则候选",
+      "vernacular": "三传不比，与今日三合或六合，逢吉将者必为喜庆。合与吉将是双条件；「三传不比」是本歌求财句的前提，不是取消比用取传。",
+      "terms": [
+        "三合",
+        "六合"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L9773-L9773",
+      "kind": "理论",
+      "vernacular": "歌句：凶害遇仇人。",
+      "terms": [
+        "六害"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L9775-L9775",
+      "kind": "规则候选",
+      "vernacular": "凶将与六害动，主欲为报仇。六害者合冲助仇。例：甲日冲申得巳为六害发用；丙戊日得寅发用亦害。日上六害乘凶将发用为外动，仇怨是他人；辰上六害乘凶将发用为内动，仇怨是己身。内外因日上/辰上而分，不得凡六害皆外仇。",
+      "terms": [
+        "六害",
+        "外动",
+        "内动"
+      ],
+      "notes": [
+        "须凶将与六害同动，缺一不套报仇。"
+      ],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L9777-L9777",
+      "kind": "理论",
+      "vernacular": "歌句：刑动阴谋窃。",
+      "terms": [
+        "三刑"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L9779-L9779",
+      "kind": "规则候选",
+      "vernacular": "日干克神更与三刑并、又用凶将，主窃盗。三条件：日克神、三刑、凶将。",
+      "terms": [
+        "三刑",
+        "弹射"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L9781-L9781",
+      "kind": "理论",
+      "vernacular": "歌句：相生各自伸。",
+      "terms": [
+        "相生"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L9783-L9783",
+      "kind": "规则候选",
+      "vernacular": "相生或吉将主各自伸舒。相生与吉将是救应，对刑害盗贼的收束。",
+      "terms": [
+        "相生",
+        "吉将"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L9785-L9785",
+      "kind": "理论",
+      "vernacular": "歌句：谋刑劫盗贼。",
+      "terms": [
+        "三刑"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L9787-L9787",
+      "kind": "规则候选",
+      "vernacular": "三刑有杀害之意。如子日得卯，子刑卯，为内动，己身谋害他人。内动绑在日刑发用，与辰上六害内动同「内」不同条件。",
+      "terms": [
+        "子刑卯",
+        "内动"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L9789-L9789",
+      "kind": "理论",
+      "vernacular": "歌句：合来喜事频。",
+      "terms": [
+        "六合"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L9791-L9791",
+      "kind": "规则候选",
+      "vernacular": "三合六合主喜庆。甲子亥发用为六合，或寅午戌三合，更得吉将，主内动喜事或青龙财帛婚姻。合且吉将，缺吉将不在本行改判必喜。",
+      "terms": [
+        "三合",
+        "六合",
+        "青龙"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L9793-L9793",
+      "kind": "理论",
+      "vernacular": "分明是两卦，体段一般陈。蒿矢弹射分名而体段同类。",
+      "terms": [
+        "蒿矢",
+        "弹射"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L9795-L9795",
+      "kind": "规则候选",
+      "vernacular": "陈，说也。一名蒿矢，一名弹射。支德亦喜，子日在巳顺十二支。支德是喜庆附加，不是取传。",
+      "terms": [
+        "支德"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L9797-L9797",
+      "kind": "评注或元数据",
+      "vernacular": "《心镜》标题。",
+      "terms": [
+        "心镜"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L9799-L9799",
+      "kind": "理论",
+      "vernacular": "《心镜》：神遥克日名蒿矢，射我虽端不足畏。日克课神名弹射，纵饶得中还无利。贵神逆转子无良，天乙顺行臣不义。家有宾来不可留，每忧口舌西南至。不足畏与还无利是两边虚；贵逆子无良、贵顺臣不义，本歌顺逆都有咎，与正文「贵顺吉贵逆凶」不完全同向，并行不合并。宾来不可留与订讹有客不可容纳同向。",
+      "terms": [
+        "心镜",
+        "蒿矢",
+        "弹射"
+      ],
+      "notes": [
+        "不得用本歌废正文贵顺吉支。"
+      ],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L9801-L9801",
+      "kind": "评注或元数据",
+      "vernacular": "《袖中金》标题。",
+      "terms": [
+        "袖中金"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L9803-L9813",
+      "kind": "规则候选",
+      "vernacular": "《袖中金》：神遥克日蒿矢，日克神弹射。事多动摇不定、人情倒置。带金土煞足能伤人。祸福俱轻、求事难成。以蒿为矢、以泥为丸，无利势。第二课为用：日上两课自战，作事无力多虚，不干内事，不可出尖。第三课为用：辰阳自战，两阳相克，作事凶重有力，不可先动。用第四课又无力。蒿矢利主不利客、利小不利大、利后动；占行人来、访人见。若朱雀勾陈当有官事，祸从外来。",
+      "terms": [
+        "袖中金",
+        "近射",
+        "远射"
+      ],
+      "notes": [
+        "金土煞伤人、第三课凶重、第四课无力、朱雀勾陈官事外来，四条都要留。"
+      ],
+      "review": "source-reviewed",
+      "verified": false,
+      "relatedParagraphIds": [
+        "daliuren-daquan:L9729-L9729",
+        "daliuren-daquan:L9731-L9731"
+      ],
+      "subsections": [
+        {
+          "id": "S001",
+          "title": "虚势与金土煞",
+          "startLine": 9803,
+          "endLine": 9807,
+          "vernacular": "蒿矢弹射动摇不定。带金土煞能伤人。祸福轻求事难成。蒿矢泥丸无利势。",
+          "terms": [
+            "金土煞"
+          ],
+          "notes": [
+            "能伤人是例外。"
+          ]
+        },
+        {
+          "id": "S002",
+          "title": "近远射与蒿矢利主",
+          "startLine": 9808,
+          "endLine": 9813,
+          "vernacular": "二课自战无力多虚。三课凶重不可先动。四课无力。蒿矢利主小后动，行人来访人见。朱勾官事外来。",
+          "terms": [
+            "近射"
+          ],
+          "notes": [
+            "祸从外来只绑蒿矢朱勾。"
+          ]
+        }
+      ]
+    },
+    {
+      "paragraphId": "daliuren-daquan:L9815-L9815",
+      "kind": "规则候选",
+      "vernacular": "弹射利客不利主，利上不利下，利先动，不利占讼，行人不来，访人不见，忧事主散。见太阴、元武、天空当有欺诈虚诞，祸从内起。蒿矢传金为有镞，弹射传土为有丸，蓦然有灾。传空亡又名遗镞失丸，不成事。与蒿矢利主外来对翻；有镞有丸与传空必须并列。",
+      "terms": [
+        "弹射",
+        "遗镞失丸"
+      ],
+      "notes": [
+        "祸从内起绑弹射见阴玄武空，不得扩到蒿矢。"
+      ],
+      "review": "source-reviewed",
+      "verified": false,
+      "relatedParagraphIds": [
+        "daliuren-daquan:L9729-L9729"
+      ]
+    },
+    {
+      "paragraphId": "daliuren-daquan:L9817-L9817",
+      "kind": "术语",
+      "vernacular": "昴星课标题。前提：四课无克又无遥克。",
+      "terms": [
+        "昴星"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false,
+      "relatedParagraphIds": [
+        "daliuren-daquan:L0082-L0082"
+      ]
+    },
+    {
+      "paragraphId": "daliuren-daquan:L9819-L9828",
+      "kind": "规则候选",
+      "vernacular": "无上下克又无遥克，取从魁上下神为用，曰昴星。酉中有昴宿，西方白虎金，主刑杀决断、死生出入门户。刚日仰视地盘酉上神为用，中传辰上神，末传日上神，为虎视转蓬格。一曰春虎视、夏转蓬、秋昴星、冬蛇掩目——这是时令别称，不替代刚柔取法。刚阳性从天，男子气浮，仰视如虎视转蓬而动。占事惊恐，守静则吉。统履之体，蛇虎当道；履虎尾而不见伤。刚日三传顺序：酉上→辰上→日上，不得与柔日对调。",
+      "terms": [
+        "昴星",
+        "虎视转蓬",
+        "从魁"
+      ],
+      "notes": [
+        "无遥无克才昴星，不得有克时改取酉。",
+        "四季别名与刚柔格并行，不按春夏改取传。"
+      ],
+      "review": "source-reviewed",
+      "verified": false,
+      "relatedParagraphIds": [
+        "daliuren-daquan:L0082-L0082"
+      ],
+      "subsections": [
+        {
+          "id": "S001",
+          "title": "无克无遥取酉",
+          "startLine": 9819,
+          "endLine": 9822,
+          "vernacular": "无克无遥克，取从魁上下神。酉主刑杀门户，故名昴星。",
+          "terms": [
+            "昴星",
+            "从魁"
+          ],
+          "notes": []
+        },
+        {
+          "id": "S002",
+          "title": "刚日虎视转蓬",
+          "startLine": 9823,
+          "endLine": 9828,
+          "vernacular": "刚日仰视地盘酉上为用，中辰上、末日上。守静则吉。四季别名不改刚柔法。",
+          "terms": [
+            "虎视转蓬"
+          ],
+          "notes": [
+            "守静则吉是否定妄动。"
+          ]
+        }
+      ]
+    },
+    {
+      "paragraphId": "daliuren-daquan:L9830-L9830",
+      "kind": "规则候选",
+      "vernacular": "虎视象：关梁闭塞、越度稽留；行人作禁；孕男无忧；事恐惟外、祸起无由；家居守静方免闲忧。大凶条件：用囚死、罡乘死气、蛇虎入传→病死、讼狱，见龙亦凶，应履虎尾咥人。吉条件：日用旺相见魁罡龙虎→科举高中，视履考祥元吉。见龙在囚死蛇虎支为凶，在旺相魁罡支为吉，不得写成凡龙皆凶或皆吉。",
+      "terms": [
+        "虎视",
+        "死气",
+        "旺相"
+      ],
+      "notes": [
+        "囚死大凶与旺相高中必须并列。"
+      ],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L9832-L9832",
+      "kind": "案例",
+      "vernacular": "戊申日卯时辰将：刚日昴星取酉上戌为用，曰虎视格。演示刚日仰视酉上。",
+      "terms": [
+        "虎视",
+        "酉上戌"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L9834-L9834",
+      "kind": "案例",
+      "vernacular": "同例初传：戌乘元武。",
+      "terms": [
+        "三传",
+        "元武"
+      ],
+      "notes": [
+        "盘图待影印核。"
+      ],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L9836-L9836",
+      "kind": "案例",
+      "vernacular": "同例中传：酉乘太常。辰上酉，与刚日中传辰上一致。",
+      "terms": [
+        "三传",
+        "太常"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L9838-L9838",
+      "kind": "案例",
+      "vernacular": "同例末传：午乘青龙。日上午，与刚日末传日上一致。",
+      "terms": [
+        "三传",
+        "青龙"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L9840-L9840",
+      "kind": "案例",
+      "vernacular": "同例四课天将：元、常、空、青。",
+      "terms": [
+        "四课",
+        "天将"
+      ],
+      "notes": [
+        "将序方向待核。"
+      ],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L9842-L9842",
+      "kind": "案例",
+      "vernacular": "同例四课上神：戌、酉、未、午。",
+      "terms": [
+        "四课"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L9844-L9844",
+      "kind": "案例",
+      "vernacular": "同例四课下神：酉、申、午、戊。",
+      "terms": [
+        "四课"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L9846-L9846",
+      "kind": "案例",
+      "vernacular": "同例地盘上一行：午未申酉。酉上见戌，与发用戌一致。",
+      "terms": [
+        "地盘"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L9848-L9848",
+      "kind": "案例",
+      "vernacular": "同例地盘「巳    戌」一行。",
+      "terms": [
+        "地盘"
+      ],
+      "notes": [
+        "待影印核。"
+      ],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L9850-L9850",
+      "kind": "案例",
+      "vernacular": "同例地盘「辰    亥」一行。",
+      "terms": [
+        "地盘"
+      ],
+      "notes": [
+        "待影印核。"
+      ],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L9852-L9852",
+      "kind": "案例",
+      "vernacular": "同例地盘下一行：卯寅丑子。",
+      "terms": [
+        "地盘"
+      ],
+      "notes": [
+        "待影印核。"
+      ],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L9854-L9854",
+      "kind": "规则候选",
+      "vernacular": "柔日伏视天盘酉下神为用，曰冬蛇掩目格。中传日上神，末传辰上神。阴性从地、女子气沉，伏视如冬蛇掩目。刚日本乎天亲上，末传归干；柔日本乎地亲下，末传归辰。占事多暗昧、犹豫难行，惟欲潜藏者吉。柔日三传：酉下→日上→辰上，与刚日酉上→辰上→日上对调，不得混用。",
+      "terms": [
+        "冬蛇掩目",
+        "昴星"
+      ],
+      "notes": [
+        "潜藏者吉是否定柔日出行。"
+      ],
+      "review": "source-reviewed",
+      "verified": false,
+      "relatedParagraphIds": [
+        "daliuren-daquan:L0082-L0082"
+      ]
+    },
+    {
+      "paragraphId": "daliuren-daquan:L9856-L9856",
+      "kind": "规则候选",
+      "vernacular": "冬蛇象：人情失意、进退无凭；女多淫泆、内有忧惊；访人不见、作事难成；行者淹滞、逃亡隐形。加重：螣蛇尤多怪梦忧疑；申加卯为车轮倒斫，传见虎武甚凶。救应：午加卯为明堂，万事昌隆——午离明、卯天驷房心明堂，纵遇衰败凶神亦主吉。午加卯遇凶亦吉是否定「凡昴星皆暗滞」。",
+      "terms": [
+        "冬蛇掩目",
+        "车轮倒斫",
+        "明堂"
+      ],
+      "notes": [
+        "虎武甚凶与午卯明堂必须并列。"
+      ],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L9858-L9858",
+      "kind": "案例",
+      "vernacular": "丁丑日辰时丑将：柔日昴宿取酉下神为用子。演示俯视酉下得子。",
+      "terms": [
+        "冬蛇掩目",
+        "酉下子"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L9860-L9860",
+      "kind": "案例",
+      "vernacular": "同例初传：子乘螣蛇。",
+      "terms": [
+        "三传",
+        "螣蛇"
+      ],
+      "notes": [
+        "盘图待影印核。"
+      ],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L9862-L9862",
+      "kind": "案例",
+      "vernacular": "同例中传：辰乘青龙。日上辰，与柔日中传日上一致。",
+      "terms": [
+        "三传",
+        "青龙"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L9864-L9864",
+      "kind": "案例",
+      "vernacular": "同例末传：戌乘天后。辰上戌，与柔日末传辰上一致。",
+      "terms": [
+        "三传",
+        "天后"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L9866-L9866",
+      "kind": "案例",
+      "vernacular": "同例四课天将：常、后、朱、龙。",
+      "terms": [
+        "四课",
+        "天将"
+      ],
+      "notes": [
+        "将序方向待核。"
+      ],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L9868-L9868",
+      "kind": "案例",
+      "vernacular": "同例四课上神：未、戌、丑、辰。",
+      "terms": [
+        "四课"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L9870-L9870",
+      "kind": "案例",
+      "vernacular": "同例四课下神：戌、丑、辰、丁。",
+      "terms": [
+        "四课"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L9872-L9872",
+      "kind": "案例",
+      "vernacular": "同例地盘上一行：寅卯辰巳。",
+      "terms": [
+        "地盘"
+      ],
+      "notes": [
+        "待影印核。"
+      ],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L9874-L9874",
+      "kind": "案例",
+      "vernacular": "同例地盘「丑    午」一行。",
+      "terms": [
+        "地盘"
+      ],
+      "notes": [
+        "待影印核。"
+      ],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L9876-L9876",
+      "kind": "案例",
+      "vernacular": "同例地盘「子    未」一行。子加酉，酉下为子，与柔日发用一致。",
+      "terms": [
+        "地盘"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L9878-L9878",
+      "kind": "案例",
+      "vernacular": "同例地盘下一行：亥戌酉申。",
+      "terms": [
+        "地盘"
+      ],
+      "notes": [
+        "待影印核。"
+      ],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L9880-L9880",
+      "kind": "评注或元数据",
+      "vernacular": "昴星《订讹》标题。",
+      "terms": [
+        "订讹"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L9882-L9882",
+      "kind": "规则候选",
+      "vernacular": "订讹虎视转蓬：刚日四课无上下克又无遥克，取酉宫上神为用，中传支上，末传干上。酉中昴宿属秋分，天地关梁、日月门户，白虎金肃杀决断。阳性从天仰视如虎视转蓬。与正文刚日法同向。",
+      "terms": [
+        "虎视转蓬"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false,
+      "relatedParagraphIds": [
+        "daliuren-daquan:L9819-L9828"
+      ]
+    },
+    {
+      "paragraphId": "daliuren-daquan:L9884-L9884",
+      "kind": "理论",
+      "vernacular": "虎视占：惊恐，关梁闭塞，津渡稽留。出行身不得归，恐死于外。祸从外起，惟家居守静则吉。出行恐死是刚日外祸，不是柔日隐形。",
+      "terms": [
+        "虎视"
+      ],
+      "notes": [
+        "家居守静则吉是否定刚日远行。"
+      ],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L9886-L9886",
+      "kind": "规则候选",
+      "vernacular": "日用囚死、罡乘死气、蛇虎入传则大凶，病死讼狱。若日用旺相，又不在此论。旺相是对大凶支的明确否定，不得删。",
+      "terms": [
+        "囚死",
+        "旺相"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false,
+      "relatedParagraphIds": [
+        "daliuren-daquan:L9830-L9830"
+      ]
+    },
+    {
+      "paragraphId": "daliuren-daquan:L9888-L9888",
+      "kind": "规则候选",
+      "vernacular": "冬蛇掩目：柔日无克无遥克，取酉下神为用，中传干上，末传支上。俯视如冬蛇掩目。与正文柔日法同向。",
+      "terms": [
+        "冬蛇掩目"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L9890-L9890",
+      "kind": "理论",
+      "vernacular": "冬蛇占：事暗昧不明，进止两难，女多淫泆，祸从内起，访人不见，行者淹滞，逃亡隐形。祸从内起与刚日祸从外起对翻。",
+      "terms": [
+        "冬蛇掩目"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L9892-L9892",
+      "kind": "规则候选",
+      "vernacular": "螣蛇入传尤多怪梦忧疑。申加卯车轮倒斫，传见元武凶甚。惟午加卯为明堂，万事昌隆；午离明、卯天驷房心，遇凶亦吉。订讹此处只写传见元武，正文写虎武，武是否兼白虎信息不足，不合并。",
+      "terms": [
+        "车轮倒斫",
+        "明堂"
+      ],
+      "notes": [
+        "遇凶亦吉不得扩成凡昴星遇凶皆吉。"
+      ],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L9894-L9898",
+      "kind": "规则候选",
+      "vernacular": "刚日亲上，传终归干；柔日亲下，传终归支。天道：昴星阴气用事，微霜始降枯槁皆死，决断收敛之时。人事：金、义，言不必信、行不必果，惟义所在然后决之；断之以义亦归责于己，故末从日辰。酉为天狱，二课最忌刑狱，惟潜藏稍吉。归责于己、潜藏稍吉是限制，不是无条件决断。",
+      "terms": [
+        "昴星",
+        "天狱"
+      ],
+      "notes": [
+        "最忌刑狱不得写成昴星可决讼。"
+      ],
+      "review": "source-reviewed",
+      "verified": false,
+      "subsections": [
+        {
+          "id": "S001",
+          "title": "刚归干柔归支",
+          "startLine": 9894,
+          "endLine": 9895,
+          "vernacular": "刚日传终归干从天，柔日传终归支从地。",
+          "terms": [
+            "刚日",
+            "柔日"
+          ],
+          "notes": []
+        },
+        {
+          "id": "S002",
+          "title": "义决与天狱",
+          "startLine": 9896,
+          "endLine": 9898,
+          "vernacular": "昴星金义，惟义所在然后决，末仍从日辰。酉天狱最忌刑狱，潜藏稍吉。",
+          "terms": [
+            "天狱"
+          ],
+          "notes": [
+            "潜藏稍吉是救应。"
+          ]
+        }
+      ]
+    },
+    {
+      "paragraphId": "daliuren-daquan:L9900-L9900",
+      "kind": "评注或元数据",
+      "vernacular": "《观月经》标题。",
+      "terms": [
+        "观月经"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L9902-L9902",
+      "kind": "术语",
+      "vernacular": "虎视转蓬：阳日昴星，名蓬游无止。别名不改取法。",
+      "terms": [
+        "蓬游无止"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L9904-L9904",
+      "kind": "规则候选",
+      "vernacular": "四课无遥克，神仙立此门。五阳看酉上，见发卦基根。刚日取酉上。",
+      "terms": [
+        "昴星",
+        "五阳"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L9906-L9906",
+      "kind": "规则候选",
+      "vernacular": "四课无克贼又无遥克，刚日看酉上所得天盘之神为发用初传。落实仰视酉上。",
+      "terms": [
+        "刚日",
+        "酉上"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L9908-L9908",
+      "kind": "规则候选",
+      "vernacular": "辰作中传用，末传日上论。刚日中末。",
+      "terms": [
+        "中传",
+        "末传"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L9910-L9910",
+      "kind": "规则候选",
+      "vernacular": "辰上所得为中传，日上所得为末传。与订讹刚日中支末干一致。",
+      "terms": [
+        "虎视转蓬"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L9912-L9912",
+      "kind": "理论",
+      "vernacular": "出行遭禁系，淫乱暗乾坤。",
+      "terms": [
+        "昴星"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L9914-L9914",
+      "kind": "理论",
+      "vernacular": "昴星主淫乱奸邪之事。占象，不是取传。",
+      "terms": [
+        "昴星"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L9916-L9916",
+      "kind": "术语",
+      "vernacular": "冬蛇掩目卦：柔日昴宿，名蝙蝠遇昼。别名不改取法。",
+      "terms": [
+        "蝙蝠遇昼"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L9918-L9918",
+      "kind": "规则候选",
+      "vernacular": "冬蛇交掩目，万事不相从。五日柔为用，从魁初传临。中传在日上，末传在辰宫。柔日三传与正文一致。",
+      "terms": [
+        "冬蛇掩目"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L9920-L9920",
+      "kind": "案例",
+      "vernacular": "五柔日看天上从魁临地盘下之神为用。乙未日寅时辰将：一课寅乙、二课子寅、三课巳未、四课卯巳，上下无克又无遥克。从魁加亥，亥为初传；下文又写「寅作初传，巳作末传，取上卦为例」。按柔日法应亥、寅、巳（初酉下、中日上、末辰上），「寅作初传」与「亥为初传」同段冲突，不改正文、不据本例改算法。",
+      "terms": [
+        "冬蛇掩目",
+        "乙未"
+      ],
+      "notes": [
+        "亥为初传与寅作初传并存待核。"
+      ],
+      "review": "draft",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L9922-L9922",
+      "kind": "理论",
+      "vernacular": "伏罪何须出，无劳西与东。不宜出行。",
+      "terms": [
+        "昴星"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L9924-L9924",
+      "kind": "规则候选",
+      "vernacular": "主匿罪不通，不宜出行。此凶神之卦，再遇凶将尤凶。凶将是加重，不是改发用。",
+      "terms": [
+        "冬蛇掩目"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L9926-L9926",
+      "kind": "评注或元数据",
+      "vernacular": "《心镜》标题。",
+      "terms": [
+        "心镜"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L9928-L9928",
+      "kind": "理论",
+      "vernacular": "《心镜》：用起昴宿为虎视，秋分在酉知生死。出入关梁日月门，举事稽留难进止。刚日出身身不归，柔日伏匿忧难起。女人淫泆问何因，此地名为难禁止。刚外出不归、柔伏匿，与订讹外/内对翻一致。",
+      "terms": [
+        "心镜",
+        "昴星"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L9930-L9930",
+      "kind": "评注或元数据",
+      "vernacular": "《袖中金》标题。",
+      "terms": [
+        "袖中金"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L9932-L9939",
+      "kind": "规则候选",
+      "vernacular": "《袖中金》：刚日看酉所得之神为用，虎视转蓬；柔日视从魁所临地盘之神为用，冬蛇掩目。人事稽留伏匿：阳日如虎睛转运不息，病多惊恐；阴日如冬蛇蛰藏掩目不动，事多暗昧进退迟疑。阳日稽留于外，阴日隐伏于内。酉为天私门肃杀之地，故仰俯取用。后又云：刚日昴星取鸡鸣必仰，柔日虎视取虎视必伏。柔日在本段先称冬蛇掩目、后称虎视，与正文「刚日虎视、柔日蛇掩目」命名交叉，取法仍刚仰柔俯，名称并行不覆盖。尤忌子午卯酉日得之，昴星虎视必灾危。四仲日是加重忌日，不是改取传。",
+      "terms": [
+        "袖中金",
+        "昴星",
+        "四仲"
+      ],
+      "notes": [
+        "命名交叉不得改刚仰柔俯。",
+        "子午卯酉日必灾危是否定「凡昴星守静则吉」的四仲例外。"
+      ],
+      "review": "source-reviewed",
+      "verified": false,
+      "subsections": [
+        {
+          "id": "S001",
+          "title": "刚仰柔俯与内外",
+          "startLine": 9932,
+          "endLine": 9936,
+          "vernacular": "刚日酉上虎视，柔日从魁所临冬蛇。阳外稽留，阴内隐伏。",
+          "terms": [
+            "虎视转蓬",
+            "冬蛇掩目"
+          ],
+          "notes": []
+        },
+        {
+          "id": "S002",
+          "title": "鸡仰虎伏与四仲忌",
+          "startLine": 9937,
+          "endLine": 9939,
+          "vernacular": "刚日鸡鸣必仰，柔日虎视必伏。尤忌子午卯酉日，昴星虎视必灾危。",
+          "terms": [
+            "四仲"
+          ],
+          "notes": [
+            "柔日称虎视是本段用字，不改取法。"
+          ]
+        }
+      ]
+    },
+    {
+      "paragraphId": "daliuren-daquan:L9941-L9941",
+      "kind": "术语",
+      "vernacular": "别责课标题。前提是三课无克（课不备），不能走昴星取酉。",
+      "terms": [
+        "别责"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false,
+      "relatedParagraphIds": [
+        "daliuren-daquan:L0084-L0084"
+      ]
+    },
+    {
+      "paragraphId": "daliuren-daquan:L9943-L9943",
+      "kind": "规则候选",
+      "vernacular": "三课无克，别取一神为用，曰别责格。阳干常动易位，刚日初传用干合上神：如戊癸合，癸寄丑，即丑上神为用。阴支常静守位，柔日以支三合前一辰：如未日三合前一辰即亥为初传。中末俱并日上。三课不备，别从其类责取一合神，故名别责。占凡事不备，主留连。刚日取合干所寄支的上神，不是取合干本身；柔日正文写取三合前一辰之地支为初传，订讹存疑见 L9989。",
+      "terms": [
+        "别责",
+        "干合",
+        "三合"
+      ],
+      "notes": [
+        "课不备才别责，四课备走昴星。",
+        "中末并日上，三传有两课相同。"
+      ],
+      "review": "source-reviewed",
+      "verified": false,
+      "relatedParagraphIds": [
+        "daliuren-daquan:L0084-L0084"
+      ]
+    },
+    {
+      "paragraphId": "daliuren-daquan:L9945-L9945",
+      "kind": "规则候选",
+      "vernacular": "别责象：谋为处正、财物不全；临兵选将、欲渡寻船；求婚别娶、胎孕多延；损而能益、事遇神仙。神将凶、日用休囚则凶；神将吉、日用旺相则吉。旺衰翻转吉凶，不得只留留连。",
+      "terms": [
+        "别责",
+        "旺相",
+        "休囚"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L9947-L9947",
+      "kind": "案例",
+      "vernacular": "丙辰日卯时辰将：昴星四课不备，刚日取丙合辛，辛寄于戌，即戌上亥发用。本例先点出本应昴星但课不备，才改别责，不是昴星取酉。",
+      "terms": [
+        "别责",
+        "丙合辛"
+      ],
+      "notes": [
+        "「昴星四课不备」是否定本例走昴星。"
+      ],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L9949-L9949",
+      "kind": "案例",
+      "vernacular": "同例初传：亥乘贵人。戌上亥。",
+      "terms": [
+        "三传",
+        "贵人"
+      ],
+      "notes": [
+        "盘图待影印核。"
+      ],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L9951-L9951",
+      "kind": "案例",
+      "vernacular": "同例中传：午乘青龙。日上午，中末并日上。",
+      "terms": [
+        "三传",
+        "青龙"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L9953-L9953",
+      "kind": "案例",
+      "vernacular": "同例末传：午乘青龙。与中传同，并日上。",
+      "terms": [
+        "三传",
+        "青龙"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L9955-L9955",
+      "kind": "案例",
+      "vernacular": "同例四课天将：龙、空、勾、龙。",
+      "terms": [
+        "四课",
+        "天将"
+      ],
+      "notes": [
+        "将序方向待核。"
+      ],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L9957-L9957",
+      "kind": "案例",
+      "vernacular": "同例四课上神：午、巳、未、午。仅三课之象，课不备。",
+      "terms": [
+        "四课",
+        "不备"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L9959-L9959",
+      "kind": "案例",
+      "vernacular": "同例四课下神：巳、辰、午、丙。",
+      "terms": [
+        "四课"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L9961-L9961",
+      "kind": "案例",
+      "vernacular": "同例地盘上一行：午未申酉。",
+      "terms": [
+        "地盘"
+      ],
+      "notes": [
+        "待影印核。"
+      ],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L9963-L9963",
+      "kind": "案例",
+      "vernacular": "同例地盘「巳    戌」一行。戌上见亥，与发用亥一致。",
+      "terms": [
+        "地盘"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L9965-L9965",
+      "kind": "案例",
+      "vernacular": "同例地盘「辰    亥」一行。",
+      "terms": [
+        "地盘"
+      ],
+      "notes": [
+        "待影印核。"
+      ],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L9967-L9967",
+      "kind": "案例",
+      "vernacular": "同例地盘下一行：卯寅丑子。",
+      "terms": [
+        "地盘"
+      ],
+      "notes": [
+        "待影印核。"
+      ],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L9969-L9969",
+      "kind": "评注或元数据",
+      "vernacular": "别责《订讹》标题。",
+      "terms": [
+        "订讹"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L9971-L9981",
+      "kind": "规则候选",
+      "vernacular": "订讹：别责亦名芜淫。不备课无克又无遥克，别取一合神为用，中末重并干上。阳日取干合上神：戊合癸寄丑取丑上，丙合辛寄戌取戌上。阴日取支前三合神为用：未日未前三合亥，酉日酉前三合丑。四课不全又不克，欲如昴星取酉而课又不备，只得别从类责取合神。阴阳全无克制：二阳一阴如二男争一女，二阴一阳如二女争一男，舍正别求合，故亦名芜淫。阴日「支前三合神」未写清是地支本身还是其上神，见 L9989 存疑。芜淫作为别名，后文 L9991 又把有克芜淫拆成另一课，两读并行。",
+      "terms": [
+        "别责",
+        "芜淫",
+        "不备"
+      ],
+      "notes": [
+        "课不备是否定昴星取酉。",
+        "阴日取法存疑，不在本行裁定取支或取上神。"
+      ],
+      "review": "source-reviewed",
+      "verified": false,
+      "subsections": [
+        {
+          "id": "S001",
+          "title": "阳日干合上神",
+          "startLine": 9971,
+          "endLine": 9975,
+          "vernacular": "不备无克无遥。阳日戊癸取丑上、丙辛取戌上。中末并干上。",
+          "terms": [
+            "干合"
+          ],
+          "notes": []
+        },
+        {
+          "id": "S002",
+          "title": "阴日三合与芜淫名",
+          "startLine": 9976,
+          "endLine": 9981,
+          "vernacular": "阴日未取亥、酉取丑。欲昴星而课不备才别责。二男一女等象故亦名芜淫。",
+          "terms": [
+            "三合",
+            "芜淫"
+          ],
+          "notes": [
+            "有克芜淫见后文另一格。"
+          ]
+        }
+      ]
+    },
+    {
+      "paragraphId": "daliuren-daquan:L9983-L9983",
+      "kind": "理论",
+      "vernacular": "凡事不备，谋为欠正，合神主留连。临兵欲进不进，胎孕多延。凡事倚仗他人、借径而行，吉凶多系于人、不干己。求婚另娶；占家宅夫妻事当以淫断。淫断只绑家宅夫妻，不得扩到所有占类。",
+      "terms": [
+        "别责"
+      ],
+      "notes": [
+        "吉凶系于人是否定「自作即成」。"
+      ],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L9985-L9985",
+      "kind": "规则候选",
+      "vernacular": "此外四课备而日辰互克各生者，亦名芜淫。例甲子日戌甲、午戌、申子、辰申，三传戌午寅。甲欲从子忧申克，子欲就甲畏戌克，申子又自相生，乃妻与人有私；夫上戌为用，传逢三合，内外生奸各相背。这是有克、四课备的另一芜淫，不是别责无克取合。不得用本格改别责算法。",
+      "terms": [
+        "芜淫",
+        "互克各生"
+      ],
+      "notes": [
+        "与别责同名不同取法，并行。"
+      ],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L9987-L9987",
+      "kind": "规则候选",
+      "vernacular": "别责日课口诀：戊午、戊辰与丙辰，干上皆午是为亲。辛丑、辛未各二日，干上皆是丑未真。丁酉当为巳丁是，辛酉原来是酉辛。这是原书列举的不备日干支组合，不是完整日表；未列之日不得补入。",
+      "terms": [
+        "别责"
+      ],
+      "notes": [
+        "口诀只约束所列日，不推广。"
+      ],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L9989-L9989",
+      "kind": "规则候选",
+      "vernacular": "法云：皆以天上作初传，刚日人皆知取天盘矣；柔日人皆取支前三合，独不用三合上之神，何也？如巳日取酉上神非取酉也，存疑。这是阴日别责的明确存疑：一说取三合地支本身，一说取三合上神。两读不得静默合并，也不得用其中一说改 adapter。",
+      "terms": [
+        "别责",
+        "柔日",
+        "存疑"
+      ],
+      "notes": [
+        "原文自标存疑，信息不足。",
+        "与起例阴日别责 stop_pending 同缺口，保持并行。"
+      ],
+      "review": "draft",
+      "verified": false,
+      "relatedParagraphIds": [
+        "daliuren-daquan:L0084-L0084"
+      ]
+    },
+    {
+      "paragraphId": "daliuren-daquan:L9991-L9991",
+      "kind": "规则候选",
+      "vernacular": "别责虽亦名芜淫，其实芜淫乃另一取三课有克者是也，别责无克。订讹把同名拆开：别责＝无克不备；芜淫＝三课有克。L9971「亦名芜淫」与本行「其实另一」必须并存，不得删一。",
+      "terms": [
+        "别责",
+        "芜淫"
+      ],
+      "notes": [
+        "有克芜淫见 L9985，无克别责不得改走互克各生。"
+      ],
+      "review": "source-reviewed",
+      "verified": false,
+      "relatedParagraphIds": [
+        "daliuren-daquan:L9971-L9981",
+        "daliuren-daquan:L9985-L9985"
+      ]
+    },
+    {
+      "paragraphId": "daliuren-daquan:L9993-L9993",
+      "kind": "术语",
+      "vernacular": "八专课标题。取传前提见下行：干支同位且无克，才阳顺阴逆。",
+      "terms": [
+        "八专"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false,
+      "relatedParagraphIds": [
+        "daliuren-daquan:L0088-L0088"
+      ]
+    },
+    {
+      "paragraphId": "daliuren-daquan:L9995-L10005",
+      "kind": "规则候选",
+      "vernacular": "干支同位无克，取阳顺阴逆三神为用，曰八专。八专日有五：癸丑、甲寅、丁未、己未、庚申；除癸丑日俱有克外，无克者甲寅、庚申刚日从阳超进顺布，己未、丁未柔日退缩逆行。中末传俱并日上神。例：甲寅日干上阳神亥，顺数至丑，三传丑亥亥；丁未日辰上阴神卯，逆数三辰至丑，三传丑巳巳。日辰阴阳共处，如八家同井事专，故名八专。占理家务重轻易举，不利奔波于外。统同人之体。起例「论克不论遥」与本段「无克才顺逆」同向：有克仍走贼克比涉，不得因八专日改找遥克。本段未写连根本位，连根见订讹 L10095。",
+      "terms": [
+        "八专",
+        "阳顺阴逆"
+      ],
+      "notes": [
+        "五日集合含癸丑，无克专法只绑甲寅庚申丁未己未。",
+        "中末并日上，不得另取辰上。"
+      ],
+      "review": "source-reviewed",
+      "verified": false,
+      "relatedParagraphIds": [
+        "daliuren-daquan:L0088-L0088",
+        "daliuren-daquan:L0090-L0090"
+      ],
+      "subsections": [
+        {
+          "id": "S001",
+          "title": "五日与无克刚柔",
+          "startLine": 9995,
+          "endLine": 9999,
+          "vernacular": "干支同位无克才八专。五日癸丑甲寅丁未己未庚申，无克刚甲寅庚申顺、柔丁未己未逆。中末并日上。",
+          "terms": [
+            "八专"
+          ],
+          "notes": [
+            "癸丑有克不走顺逆专法。"
+          ]
+        },
+        {
+          "id": "S002",
+          "title": "亥顺丑、卯逆丑例",
+          "startLine": 10000,
+          "endLine": 10005,
+          "vernacular": "甲寅亥顺至丑为丑亥亥。丁未卯逆三辰至丑为丑巳巳。不利外奔。",
+          "terms": [
+            "八专"
+          ],
+          "notes": [
+            "两课共处是命名，不是改四课算法。"
+          ]
+        }
+      ]
+    },
+    {
+      "paragraphId": "daliuren-daquan:L10007-L10015",
+      "kind": "规则候选",
+      "vernacular": "八专象：二人同心其利断金。阳进男喜，阴进女淫。兵资众捷，物失内寻。成功异路，显擢士林。本课为两课阴阳并，事虽乖疏，以两课决之。阳日尊长欺卑幼、超进欲速出；阴日夫妻怀背、奴婢反主，柔退缩欲归。占婚姻进人口主口舌分离，应同人九三凶。救应：龙、常、天乙吉将及天月二德善神，应同人九五吉。吉将德神是否定「凡八专皆乖疏分离」。象曰「阴进」与阴日退缩并行，不把阴进改成阴日顺数。",
+      "terms": [
+        "八专",
+        "天月二德"
+      ],
+      "notes": [
+        "婚姻进人口口舌分离不得扩到所有占类。"
+      ],
+      "review": "source-reviewed",
+      "verified": false,
+      "subsections": [
+        {
+          "id": "S001",
+          "title": "阳进阴退与两课决",
+          "startLine": 10007,
+          "endLine": 10012,
+          "vernacular": "两课阴阳并，以两课决。阳日超进速出，阴日退缩欲归。",
+          "terms": [
+            "八专"
+          ],
+          "notes": [
+            "阴进女淫是象辞，取法仍阴逆。"
+          ]
+        },
+        {
+          "id": "S002",
+          "title": "婚口舌与德将救",
+          "startLine": 10013,
+          "endLine": 10015,
+          "vernacular": "婚与进人口主分离。龙常天乙及天月二德则同人协力。",
+          "terms": [
+            "天乙",
+            "天月二德"
+          ],
+          "notes": [
+            "缺吉将德神不套九五。"
+          ]
+        }
+      ]
+    },
+    {
+      "paragraphId": "daliuren-daquan:L10017-L10017",
+      "kind": "案例",
+      "vernacular": "甲寅日辰时丑将：刚日顺数至丑用，曰八专课。与正文亥顺至丑一致。",
+      "terms": [
+        "八专",
+        "甲寅"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L10019-L10019",
+      "kind": "案例",
+      "vernacular": "同例初传：丑乘贵人。",
+      "terms": [
+        "三传",
+        "贵人"
+      ],
+      "notes": [
+        "盘图待影印核。"
+      ],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L10021-L10021",
+      "kind": "案例",
+      "vernacular": "同例中传：亥乘太阴。并日上亥。",
+      "terms": [
+        "三传",
+        "太阴"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L10023-L10023",
+      "kind": "案例",
+      "vernacular": "同例末传：亥乘太阴。中末皆日上。",
+      "terms": [
+        "三传",
+        "太阴"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L10025-L10025",
+      "kind": "案例",
+      "vernacular": "同例四课天将：虎、阴、虎、阴。两课重出。",
+      "terms": [
+        "四课",
+        "天将"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L10027-L10027",
+      "kind": "案例",
+      "vernacular": "同例四课上神：申、亥、申、亥。干支同位。",
+      "terms": [
+        "四课"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L10029-L10029",
+      "kind": "案例",
+      "vernacular": "同例四课下神：亥、寅、亥、甲。甲寄寅，干支同宫。",
+      "terms": [
+        "四课",
+        "寄宫"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L10031-L10031",
+      "kind": "案例",
+      "vernacular": "同例地盘上一行：寅卯辰巳。",
+      "terms": [
+        "地盘"
+      ],
+      "notes": [
+        "待影印核。"
+      ],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L10033-L10033",
+      "kind": "案例",
+      "vernacular": "同例地盘「丑    午」一行。丑为发用。",
+      "terms": [
+        "地盘"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L10035-L10035",
+      "kind": "案例",
+      "vernacular": "同例地盘「子    未」一行。",
+      "terms": [
+        "地盘"
+      ],
+      "notes": [
+        "待影印核。"
+      ],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L10037-L10037",
+      "kind": "案例",
+      "vernacular": "同例地盘下一行：亥戌酉申。亥加寅为日上。",
+      "terms": [
+        "地盘"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L10039-L10039",
+      "kind": "规则候选",
+      "vernacular": "八专课遇天后、六合、元武一将入传，为帷簿不修格。阴阳共处又遇后合阴私之神，主私泆不明、内失其礼。这是「入传见后合武」口径。订讹把帷薄不修改绑在无克顺逆、有克不可淫泆断，两读并行，不得用本行废有克禁淫断。",
+      "terms": [
+        "帷簿不修",
+        "天后",
+        "六合",
+        "元武"
+      ],
+      "notes": [
+        "一将入传即成格，未要求三将同见。"
+      ],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L10041-L10041",
+      "kind": "案例",
+      "vernacular": "丁未日丑时辰将：八专课遇天后入传，名帷薄不修格。演示柔日八专见天后。",
+      "terms": [
+        "帷薄不修",
+        "丁未"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L10043-L10043",
+      "kind": "案例",
+      "vernacular": "同例初传：亥乘太阴。电子本「亥阴」无间隔。",
+      "terms": [
+        "三传",
+        "太阴"
+      ],
+      "notes": [
+        "盘图待影印核。"
+      ],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L10045-L10045",
+      "kind": "案例",
+      "vernacular": "同例中传：戌乘天后。天后入传，应帷簿格。",
+      "terms": [
+        "三传",
+        "天后"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L10047-L10047",
+      "kind": "案例",
+      "vernacular": "同例末传：戌乘天后。中末并日上戌。",
+      "terms": [
+        "三传",
+        "天后"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L10049-L10049",
+      "kind": "案例",
+      "vernacular": "同例四课天将：常、后、常、后。",
+      "terms": [
+        "四课",
+        "天将"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L10051-L10051",
+      "kind": "案例",
+      "vernacular": "同例四课上神：丑、戌、丑、戌。",
+      "terms": [
+        "四课"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L10053-L10053",
+      "kind": "案例",
+      "vernacular": "同例四课下神：戌、未、戌、丁。丁寄未。",
+      "terms": [
+        "四课"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L10055-L10055",
+      "kind": "案例",
+      "vernacular": "同例地盘上一行：申酉戌亥。",
+      "terms": [
+        "地盘"
+      ],
+      "notes": [
+        "待影印核。"
+      ],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L10057-L10057",
+      "kind": "案例",
+      "vernacular": "同例地盘「未    子」一行。",
+      "terms": [
+        "地盘"
+      ],
+      "notes": [
+        "待影印核。"
+      ],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L10059-L10059",
+      "kind": "案例",
+      "vernacular": "同例地盘「午    丑」一行。",
+      "terms": [
+        "地盘"
+      ],
+      "notes": [
+        "待影印核。"
+      ],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L10061-L10061",
+      "kind": "案例",
+      "vernacular": "同例地盘下一行：巳辰卯寅。",
+      "terms": [
+        "地盘"
+      ],
+      "notes": [
+        "待影印核。"
+      ],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L10063-L10063",
+      "kind": "规则候选",
+      "vernacular": "八专课逆数到日、中末相并，为独足格。三传皆归一神，如驿递无人传送、独展一足难行。凡事不能动移，自己尤多费力；中末传皆空亦然。惟利乘舟。中末空是第二成立条件，不得只认三神同一。不能动移是否定商贾陆行。",
+      "terms": [
+        "独足",
+        "八专"
+      ],
+      "notes": [
+        "惟利乘舟是对难行的唯一开许。"
+      ],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L10065-L10065",
+      "kind": "案例",
+      "vernacular": "己未日未时酉将：三传皆日上神归，为独足格。演示三传同一。",
+      "terms": [
+        "独足",
+        "己未"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L10067-L10067",
+      "kind": "案例",
+      "vernacular": "同例初传：酉乘六合。",
+      "terms": [
+        "三传",
+        "六合"
+      ],
+      "notes": [
+        "盘图待影印核。"
+      ],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L10069-L10069",
+      "kind": "案例",
+      "vernacular": "同例中传：酉乘六合。与初同。",
+      "terms": [
+        "三传",
+        "六合"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L10071-L10071",
+      "kind": "案例",
+      "vernacular": "同例末传：酉乘六合。三传酉酉酉。",
+      "terms": [
+        "三传",
+        "六合"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L10073-L10073",
+      "kind": "案例",
+      "vernacular": "同例四课天将：蛇、六、蛇、六。",
+      "terms": [
+        "四课",
+        "天将"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L10075-L10075",
+      "kind": "案例",
+      "vernacular": "同例四课上神：亥、酉、亥、酉。",
+      "terms": [
+        "四课"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L10077-L10077",
+      "kind": "案例",
+      "vernacular": "同例四课下神：酉、未、酉、己。己寄未。",
+      "terms": [
+        "四课"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L10079-L10079",
+      "kind": "案例",
+      "vernacular": "同例地盘上一行：未申酉戌。酉加未为日上。",
+      "terms": [
+        "地盘"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L10081-L10081",
+      "kind": "案例",
+      "vernacular": "同例地盘「午    亥」一行。",
+      "terms": [
+        "地盘"
+      ],
+      "notes": [
+        "待影印核。"
+      ],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L10083-L10083",
+      "kind": "案例",
+      "vernacular": "同例地盘「巳    子」一行。",
+      "terms": [
+        "地盘"
+      ],
+      "notes": [
+        "待影印核。"
+      ],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L10085-L10085",
+      "kind": "案例",
+      "vernacular": "同例地盘下一行：辰卯寅丑。",
+      "terms": [
+        "地盘"
+      ],
+      "notes": [
+        "待影印核。"
+      ],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L10087-L10087",
+      "kind": "评注或元数据",
+      "vernacular": "八专《订讹》标题。",
+      "terms": [
+        "订讹"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L10089-L10089",
+      "kind": "规则候选",
+      "vernacular": "订讹：八专四课缺二、止有两课。有克照常以克、贼、比、涉等项论。干支同位专聚一处，故名八专。这是起例「论克不论遥」的课经落实：有克不进遥克，也不先走顺逆三神。",
+      "terms": [
+        "八专",
+        "论克不论遥"
+      ],
+      "notes": [
+        "有克八专日仍走九宗门前四门，不得因课名改顺逆。"
+      ],
+      "review": "source-reviewed",
+      "verified": false,
+      "relatedParagraphIds": [
+        "daliuren-daquan:L0088-L0088"
+      ]
+    },
+    {
+      "paragraphId": "daliuren-daquan:L10091-L10091",
+      "kind": "理论",
+      "vernacular": "占：二人同心其利断金，兵资众捷，物失内寻。阳日尊长欺卑幼、超进迅速；阴日妻奴背夫主、退缩迟缓。占婚及进人口主口舌分离。占忧喜事俱重叠。重叠是两课并的占象，不是取两个发用。",
+      "terms": [
+        "八专"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L10093-L10093",
+      "kind": "规则候选",
+      "vernacular": "若逢龙、常、天乙吉将及天月二德，则同人协力、众轻易举。吉将德神是对乖疏口舌的救应，缺一不套协力。",
+      "terms": [
+        "天乙",
+        "天月二德"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false,
+      "relatedParagraphIds": [
+        "daliuren-daquan:L10007-L10015"
+      ]
+    },
+    {
+      "paragraphId": "daliuren-daquan:L10095-L10100",
+      "kind": "规则候选",
+      "vernacular": "订讹帷簿不修：八专无克又无遥克，刚日从干之阳神连根顺数第三位为用，柔日从支之阴神连根逆数第三位为用，中末俱重并干上。例仍甲寅亥顺三位至丑为丑亥亥，丁未卯逆三位至丑为丑巳巳。有克者尚有制缚，不可以淫泆断；独无克者全无克制防范，故名帷薄不修。连根＝本位算第一。本口径把帷簿不修绑在无克顺逆，与正文「后合武入传」不同，并行不覆盖。有克不可以淫泆断是否定凡八专皆淫。",
+      "terms": [
+        "帷簿不修",
+        "连根"
+      ],
+      "notes": [
+        "无克又无遥克才顺逆，与论克不论遥一致。",
+        "有克禁淫断不得删。"
+      ],
+      "review": "source-reviewed",
+      "verified": false,
+      "relatedParagraphIds": [
+        "daliuren-daquan:L10039-L10039",
+        "daliuren-daquan:L0090-L0090"
+      ],
+      "subsections": [
+        {
+          "id": "S001",
+          "title": "连根顺逆三神",
+          "startLine": 10095,
+          "endLine": 10097,
+          "vernacular": "无克无遥。刚日干阳连根顺第三，柔日支阴连根逆第三，中末并干上。",
+          "terms": [
+            "连根"
+          ],
+          "notes": [
+            "连根不是跳过本位再数三。"
+          ]
+        },
+        {
+          "id": "S002",
+          "title": "有克不淫无克帷薄",
+          "startLine": 10098,
+          "endLine": 10100,
+          "vernacular": "尊卑共室。有克有制不可淫泆断。无克顺逆全无防范才帷薄不修。",
+          "terms": [
+            "帷薄不修"
+          ],
+          "notes": [
+            "与入传见后合武口径并行。"
+          ]
+        }
+      ]
+    },
+    {
+      "paragraphId": "daliuren-daquan:L10102-L10102",
+      "kind": "规则候选",
+      "vernacular": "占：外不隔内，不备事多重叠，忧喜再来，干涉妇人，久而反背。若后全元阴入传，淫必矣。电子本「后全元阴」与正文后、合、元、阴四将不完全同形，不改正文、不据本行扩将表。",
+      "terms": [
+        "帷簿不修"
+      ],
+      "notes": [
+        "后全元阴四字待核。"
+      ],
+      "review": "draft",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L10104-L10104",
+      "kind": "规则候选",
+      "vernacular": "独足：八专课内己未日未时酉将，三传皆日上酉酉酉。路遥无人传送、独占一足难行。不能动移极是费力，商贾不可行，占胎不成，远行宜舟。商贾不可行、占胎不成是加重限制，远行宜舟与正文惟利乘舟同向。",
+      "terms": [
+        "独足"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false,
+      "relatedParagraphIds": [
+        "daliuren-daquan:L10063-L10063"
+      ]
+    },
+    {
+      "paragraphId": "daliuren-daquan:L10106-L10106",
+      "kind": "规则候选",
+      "vernacular": "此课外有八专中末传皆空者亦如此断。中末空＝独足同类，不是另起课名。",
+      "terms": [
+        "独足",
+        "空亡"
+      ],
+      "notes": [
+        "不得把中末空改判成可动。"
+      ],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L10108-L10108",
+      "kind": "评注或元数据",
+      "vernacular": "《观月经》标题。",
+      "terms": [
+        "观月经"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L10110-L10110",
+      "kind": "术语",
+      "vernacular": "两课无克名曰八专。无克才用本门专法。",
+      "terms": [
+        "八专"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L10112-L10112",
+      "kind": "规则候选",
+      "vernacular": "日辰同一位，便是八专门。五日阴阳配。日表见下行。",
+      "terms": [
+        "八专"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L10114-L10114",
+      "kind": "规则候选",
+      "vernacular": "五日：癸丑、甲寅、丁未、己未、庚申。与正文五日集合一致，仍须再看有克无克。",
+      "terms": [
+        "八专日"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L10116-L10116",
+      "kind": "规则候选",
+      "vernacular": "三传逆顺存。阳来顺数去，阴至逆行奔。",
+      "terms": [
+        "阳顺阴逆"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L10118-L10118",
+      "kind": "规则候选",
+      "vernacular": "两课无克：刚日从日上之神顺数三辰为用传。与连根第三位同向。",
+      "terms": [
+        "八专",
+        "刚日"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L10120-L10120",
+      "kind": "规则候选",
+      "vernacular": "伏观日辰上，中末此处论。中末在日辰上，本歌未分刚柔。订讹中末并干上，并行时以课经刚柔例为准，不把本句改成中末在辰。",
+      "terms": [
+        "中传",
+        "末传"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L10122-L10122",
+      "kind": "案例",
+      "vernacular": "阳日：庚申日亥将申时，一课亥庚、二课寅亥，下二课同，无克；从申上亥顺数三辰得丑为初传，日辰上亥为中末，三传丑亥亥。阴日：己未日亥时酉将，一课酉己、二课亥酉，辰上二课同无克；从亥逆数三辰至酉，本日所得之神见酉为中末，三酉，是独脚课。两例落实刚顺柔逆与独足。己未亥时酉将与订讹己未未时酉将时刻不同，皆三酉，时刻差不改独足取法。",
+      "terms": [
+        "八专",
+        "独脚"
+      ],
+      "notes": [
+        "独脚即独足。"
+      ],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L10124-L10124",
+      "kind": "理论",
+      "vernacular": "奸邪惊怪起，淫欲乱乾坤。占象，不是改取传。",
+      "terms": [
+        "八专"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L10126-L10126",
+      "kind": "规则候选",
+      "vernacular": "主阴罪。凶将自不教觉，吉将事不彰露，重审卦注。电子本「不教觉」费解，吉将不彰露是对奸邪公开的否定。不据本行改重审取传。",
+      "terms": [
+        "八专",
+        "阴罪"
+      ],
+      "notes": [
+        "不教觉待核。"
+      ],
+      "review": "draft",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L10128-L10128",
+      "kind": "规则候选",
+      "vernacular": "逆到日辰上，三传别起根。神仙隐秘法，此课少人温。强调阴日逆数是隐秘取法。",
+      "terms": [
+        "逆数"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L10130-L10130",
+      "kind": "评注或元数据",
+      "vernacular": "逆行三辰者，神仙隐秘之术，诸人错用，不得明显。作者称今已明之尽。这是否定当时俗用阳顺或未连根，不在本行补俗例步骤。",
+      "terms": [
+        "逆行三辰"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L10132-L10132",
+      "kind": "评注或元数据",
+      "vernacular": "《心镜》标题。",
+      "terms": [
+        "心镜"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L10134-L10134",
+      "kind": "理论",
+      "vernacular": "日值八专为两课，阴阳并杂不分明。不修帷薄何存礼，夫妻占之总不宜。厌翳合门元武袭——将名见下行。夫妻不宜是占类限制，不是凡占皆淫。",
+      "terms": [
+        "帷薄不修"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L10136-L10136",
+      "kind": "规则候选",
+      "vernacular": "天后为厌翳，六合是私门。初传见此二神，或见元武，主淫乱。心镜绑初传，正文绑入传，范围不同，并行不把入传收成只初传。",
+      "terms": [
+        "厌翳",
+        "私门",
+        "元武"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false,
+      "relatedParagraphIds": [
+        "daliuren-daquan:L10039-L10039"
+      ]
+    },
+    {
+      "paragraphId": "daliuren-daquan:L10138-L10138",
+      "kind": "理论",
+      "vernacular": "嫂通于叔、妹淫兄。人间密事难测。占象。",
+      "terms": [
+        "帷薄不修"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L10140-L10140",
+      "kind": "规则候选",
+      "vernacular": "传见元武、太阴、天后主淫乱。将表含太阴，比正文后合武多阴，与订讹「后全元阴」近，将表差异并行，不合并成四将必备。",
+      "terms": [
+        "元武",
+        "太阴",
+        "天后"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L10142-L10142",
+      "kind": "评注或元数据",
+      "vernacular": "《袖中金》标题。",
+      "terms": [
+        "袖中金"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L10144-L10144",
+      "kind": "规则候选",
+      "vernacular": "《袖中金》：帷薄即八专卦。干支共位、阴阳两课，尊卑同处、人品不分。凡事忧喜再来，事干妇人，多不正。五日四辰，表里拱于八极，故曰八专。内不隔而外不遏，干涉妇人久而反蔽。后合入传则男不知耻、女不知守。五日四辰是日数说明，不是改五日表。后合入传与正文同向，未写元武，不删心镜元武。",
+      "terms": [
+        "帷薄",
+        "八专"
+      ],
+      "notes": [
+        "后合入传是加重淫断，不是改顺逆取传。"
+      ],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L10146-L10146",
+      "kind": "评注或元数据",
+      "vernacular": "《指要》标题。",
+      "terms": [
+        "指要"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L10148-L10148",
+      "kind": "规则候选",
+      "vernacular": "《指要》：八专日顺逆数为用者曰帷簿不修，名为芜淫卦。日辰一位而无别，奸邪所由生。占多不正、不能分析，须存心正大。占婚及进人口有口舌离别。尤忌太阴、六合临日辰。凡所占只于日辰上神将决之。本段把帷簿不修＝顺逆数为用，又别称芜淫。别责订讹亦名芜淫且后文拆成有克另一课，与本芜淫同名不同门，不得合并，也不得用本行改别责。尤忌阴合临日辰是加重，不是改发用。",
+      "terms": [
+        "帷簿不修",
+        "芜淫"
+      ],
+      "notes": [
+        "与别责芜淫分名并行。"
+      ],
+      "review": "source-reviewed",
+      "verified": false,
+      "relatedParagraphIds": [
+        "daliuren-daquan:L9991-L9991"
+      ]
+    },
+    {
+      "paragraphId": "daliuren-daquan:L10150-L10150",
+      "kind": "评注或元数据",
+      "vernacular": "《曾门》标题。",
+      "terms": [
+        "曾门"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L10152-L10152",
+      "kind": "规则候选",
+      "vernacular": "《曾门》：一神二神阴阳共焉，日辰重之惟用二神。阴阳不克，逆顺数之，数至三辰上神为用，中末二传日上神当。此时内乱淫泆，父子同妻，姑嫂共夫。取法与订讹无克顺逆、中末日上一致。父子同妻是占象，不是取传。",
+      "terms": [
+        "八专"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L10154-L10154",
+      "kind": "规则候选",
+      "vernacular": "定章：日辰合为一神、阴阳不相克，刚日从阳顺数至三神，柔日从阴逆数至三神，中末在日上，名曰八专。主父子同妻、姑嫂共夫、尊卑不分。与起例阳顺阴逆、中末日上同向。",
+      "terms": [
+        "八专"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false,
+      "relatedParagraphIds": [
+        "daliuren-daquan:L0090-L0090"
+      ]
+    },
+    {
+      "paragraphId": "daliuren-daquan:L10156-L10156",
+      "kind": "术语",
+      "vernacular": "伏吟课标题。盘式是月将加时、十二神各居本宫，取传分支见下行。",
+      "terms": [
+        "伏吟"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false,
+      "relatedParagraphIds": [
+        "daliuren-daquan:L0092-L0092"
+      ]
+    },
+    {
+      "paragraphId": "daliuren-daquan:L10158-L10158",
+      "kind": "规则候选",
+      "vernacular": "月将加时十二神各居本宫，取神克日为用，曰伏吟。如子加子。以神克日干为初传，取刑为中末传。六癸日初传丑、中戌、末未。天地神自居本家，日辰阴阳伏而不动、自相克贼，独隐呻吟。占事静中有动，统艮之体，守旧待新。本段是有克取克、刑递中末；无克自任自信、自刑杜传见后文，不得用本段覆盖无克。",
+      "terms": [
+        "伏吟",
+        "三刑"
+      ],
+      "notes": [
+        "有克才神克日为用，无克不得套本段。"
+      ],
+      "review": "source-reviewed",
+      "verified": false,
+      "relatedParagraphIds": [
+        "daliuren-daquan:L0094-L0094"
+      ]
+    },
+    {
+      "paragraphId": "daliuren-daquan:L10160-L10160",
+      "kind": "规则候选",
+      "vernacular": "伏吟象：科举高中、求名荣归；病忧土怪、讼争田庐。春冬灾浅，秋夏势危——春木旺能克土鬼，冬水旺不畏土克，季忧土鬼乘旺，秋鬼为崇更乘凶将则势危。救应：天马、天喜、恩德吉神入传且日辰旺相，科举中魁求官职则敦艮吉。季节深浅与吉神旺相必须并列，不得写成凡伏吟皆危或皆中魁。",
+      "terms": [
+        "伏吟",
+        "土鬼",
+        "天马",
+        "天喜"
+      ],
+      "notes": [
+        "秋夏势危有季土旺与秋鬼崇两层，春冬浅是对危象的否定。"
+      ],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L10162-L10162",
+      "kind": "案例",
+      "vernacular": "癸丑日午时午将：日上神丑加癸用，为伏吟课。演示六癸有克取丑。",
+      "terms": [
+        "伏吟",
+        "六癸"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L10164-L10164",
+      "kind": "案例",
+      "vernacular": "同例初传：丑乘勾陈。",
+      "terms": [
+        "三传",
+        "勾陈"
+      ],
+      "notes": [
+        "盘图待影印核。"
+      ],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L10166-L10166",
+      "kind": "案例",
+      "vernacular": "同例中传：戌乘白虎。丑刑戌。",
+      "terms": [
+        "三传",
+        "白虎"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L10168-L10168",
+      "kind": "案例",
+      "vernacular": "同例末传：未乘太阴。戌刑未。",
+      "terms": [
+        "三传",
+        "太阴"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L10170-L10170",
+      "kind": "案例",
+      "vernacular": "同例四课天将：勾、勾、勾、勾。伏吟将亦伏。",
+      "terms": [
+        "四课",
+        "天将"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L10172-L10172",
+      "kind": "案例",
+      "vernacular": "同例四课上神：丑、丑、丑、丑。",
+      "terms": [
+        "四课"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L10174-L10174",
+      "kind": "案例",
+      "vernacular": "同例四课下神：丑、丑、丑、癸。癸寄丑。",
+      "terms": [
+        "四课"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L10176-L10176",
+      "kind": "案例",
+      "vernacular": "同例地盘上一行：巳午未申。伏吟本宫，此行是天盘亦同本宫的上沿。",
+      "terms": [
+        "地盘"
+      ],
+      "notes": [
+        "待影印核。"
+      ],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L10178-L10178",
+      "kind": "案例",
+      "vernacular": "同例地盘「辰    酉」一行。",
+      "terms": [
+        "地盘"
+      ],
+      "notes": [
+        "待影印核。"
+      ],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L10180-L10180",
+      "kind": "案例",
+      "vernacular": "同例地盘「卯    戌」一行。",
+      "terms": [
+        "地盘"
+      ],
+      "notes": [
+        "待影印核。"
+      ],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L10182-L10182",
+      "kind": "案例",
+      "vernacular": "同例地盘下一行：寅丑子亥。",
+      "terms": [
+        "地盘"
+      ],
+      "notes": [
+        "待影印核。"
+      ],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L10184-L10191",
+      "kind": "规则候选",
+      "vernacular": "伏吟无克，刚日自以日神为用，曰自任格。日辰阴阳各居本家并无相克。甲日自用寅，三传寅巳申；丙戊日自用巳，三传巳申寅；庚日自用申，三传申寅巳。自任未免强暴用刑，故以刑为中末。天地神不动不克，无所取，择自任己刚进用于时。占者自强出头，此当闭塞，为柔顺吉而事可成。闭塞柔顺是否定刚暴自任。本段未列壬日，壬日亥自刑走杜传，不得用自任三刑表硬套壬。",
+      "terms": [
+        "自任",
+        "伏吟"
+      ],
+      "notes": [
+        "无克才自任；有克仍神克日。",
+        "柔顺吉是对强暴用刑的收束。"
+      ],
+      "review": "source-reviewed",
+      "verified": false,
+      "relatedParagraphIds": [
+        "daliuren-daquan:L0094-L0094"
+      ],
+      "subsections": [
+        {
+          "id": "S001",
+          "title": "刚日日神与三刑表",
+          "startLine": 10184,
+          "endLine": 10188,
+          "vernacular": "无克刚日用日神。甲寅巳申，丙戊巳申寅，庚申寅巳。刑为中末。",
+          "terms": [
+            "自任"
+          ],
+          "notes": [
+            "未列壬日。"
+          ]
+        },
+        {
+          "id": "S002",
+          "title": "闭塞柔顺",
+          "startLine": 10189,
+          "endLine": 10191,
+          "vernacular": "自任出头当闭塞，柔顺吉而事可成。",
+          "terms": [
+            "自任"
+          ],
+          "notes": [
+            "否定刚暴。"
+          ]
+        }
+      ]
+    },
+    {
+      "paragraphId": "daliuren-daquan:L10193-L10193",
+      "kind": "规则候选",
+      "vernacular": "自任象：任己刚暴必成过愆；行人近至，逃亡眼前；胎孕哑聋，祸患留连；干谒不出，株守吉言。救应：甲日春占、丙戊日夏占、庚日秋占，三刑全有气无克，传逢驿马劫煞，主守己待时，或不获已而动，亦动中有成。例外：惟庚寅日三传申寅巳，末太乙为勾陈刑克日干，非秋占者多凶。季节有气与庚寅非秋凶必须并列。",
+      "terms": [
+        "自任",
+        "驿马",
+        "劫煞"
+      ],
+      "notes": [
+        "庚寅非秋占多凶不得扩到凡庚日。"
+      ],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L10195-L10195",
+      "kind": "案例",
+      "vernacular": "丙辰日申时申将：伏吟无克，刚日以巳为用，曰自任格。丙寄巳。",
+      "terms": [
+        "自任",
+        "丙辰"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L10197-L10197",
+      "kind": "案例",
+      "vernacular": "同例初传：巳乘天空。",
+      "terms": [
+        "三传",
+        "天空"
+      ],
+      "notes": [
+        "盘图待影印核。"
+      ],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L10199-L10199",
+      "kind": "案例",
+      "vernacular": "同例中传：申乘元武。巳刑申。",
+      "terms": [
+        "三传",
+        "元武"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L10201-L10201",
+      "kind": "案例",
+      "vernacular": "同例末传：寅乘六合。申刑寅。",
+      "terms": [
+        "三传",
+        "六合"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L10203-L10203",
+      "kind": "案例",
+      "vernacular": "同例四课天将：青、青、空、空。",
+      "terms": [
+        "四课",
+        "天将"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L10205-L10205",
+      "kind": "案例",
+      "vernacular": "同例四课上神：辰、辰、巳、巳。",
+      "terms": [
+        "四课"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L10207-L10207",
+      "kind": "案例",
+      "vernacular": "同例四课下神：辰、辰、巳、丙。丙寄巳。",
+      "terms": [
+        "四课"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L10209-L10209",
+      "kind": "案例",
+      "vernacular": "同例地盘上一行：巳午未申。",
+      "terms": [
+        "地盘"
+      ],
+      "notes": [
+        "待影印核。"
+      ],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L10211-L10211",
+      "kind": "案例",
+      "vernacular": "同例地盘「辰    酉」一行。",
+      "terms": [
+        "地盘"
+      ],
+      "notes": [
+        "待影印核。"
+      ],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L10213-L10213",
+      "kind": "案例",
+      "vernacular": "同例地盘「卯    戌」一行。",
+      "terms": [
+        "地盘"
+      ],
+      "notes": [
+        "待影印核。"
+      ],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L10215-L10215",
+      "kind": "案例",
+      "vernacular": "同例地盘下一行：寅丑子亥。",
+      "terms": [
+        "地盘"
+      ],
+      "notes": [
+        "待影印核。"
+      ],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L10217-L10217",
+      "kind": "规则候选",
+      "vernacular": "伏吟无克，柔日以支神为用，曰自信格。天地神不动不克。丁巳、辛巳、己巳自用巳，三传巳申寅；丁丑、辛丑、己丑用丑，三传丑戌未；丁未、辛未、己未用未，三传未丑戌。自信其己之柔进用于人。凡事不能动身，家宅不宁。柔日用支不是用干上；未丑戌是未刑丑、丑刑戌，不得改成未戌丑。",
+      "terms": [
+        "自信",
+        "伏吟"
+      ],
+      "notes": [
+        "无克才自信。丁巳类用巳与刚日丙戊用巳同传不同格名。"
+      ],
+      "review": "source-reviewed",
+      "verified": false,
+      "relatedParagraphIds": [
+        "daliuren-daquan:L0094-L0094"
+      ]
+    },
+    {
+      "paragraphId": "daliuren-daquan:L10219-L10219",
+      "kind": "规则候选",
+      "vernacular": "自信象：潜藏伏匿身不自由；逃亡近觅，盗贼内搜；病人喑哑，行者淹留；检身谨恪无不优悠。三刑全有气主不获己协动；四季全争讼田土。日用休囚神将凶则凶，日用旺相神将吉则吉。旺衰翻转不得只留淹留。",
+      "terms": [
+        "自信",
+        "三刑",
+        "四季"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L10221-L10221",
+      "kind": "案例",
+      "vernacular": "丁丑日未时未将：伏吟无克，柔日用丑，为自信格。",
+      "terms": [
+        "自信",
+        "丁丑"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L10223-L10223",
+      "kind": "案例",
+      "vernacular": "同例初传：丑乘朱雀。",
+      "terms": [
+        "三传",
+        "朱雀"
+      ],
+      "notes": [
+        "盘图待影印核。"
+      ],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L10225-L10225",
+      "kind": "案例",
+      "vernacular": "同例中传：戌乘天后。丑刑戌。",
+      "terms": [
+        "三传",
+        "天后"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L10227-L10227",
+      "kind": "案例",
+      "vernacular": "同例末传：未乘太常。戌刑未。",
+      "terms": [
+        "三传",
+        "太常"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L10229-L10229",
+      "kind": "案例",
+      "vernacular": "同例四课天将：朱、朱、常、常。",
+      "terms": [
+        "四课",
+        "天将"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L10231-L10231",
+      "kind": "案例",
+      "vernacular": "同例四课上神：丑、丑、未、未。丁寄未、支丑。",
+      "terms": [
+        "四课"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L10233-L10233",
+      "kind": "案例",
+      "vernacular": "同例下一行电子本作「巳  午  未  申」，按常例此时应为四课下神或地盘上沿，与邻行「丑丑未丁」疑错位，不改正文。",
+      "terms": [
+        "四课"
+      ],
+      "notes": [
+        "行序疑错位。"
+      ],
+      "review": "draft",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L10235-L10235",
+      "kind": "案例",
+      "vernacular": "同例电子本「丑丑未丁」，似四课下神丑、丑、未、丁挤在一行，与 L10233 地盘行疑互换，待影印。",
+      "terms": [
+        "四课"
+      ],
+      "notes": [],
+      "review": "draft",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L10237-L10237",
+      "kind": "案例",
+      "vernacular": "同例地盘「辰    酉」一行。",
+      "terms": [
+        "地盘"
+      ],
+      "notes": [
+        "待影印核。"
+      ],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L10239-L10239",
+      "kind": "案例",
+      "vernacular": "同例地盘「卯    戌」一行。",
+      "terms": [
+        "地盘"
+      ],
+      "notes": [
+        "待影印核。"
+      ],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L10241-L10241",
+      "kind": "案例",
+      "vernacular": "同例地盘下一行：寅丑子亥。",
+      "terms": [
+        "地盘"
+      ],
+      "notes": [
+        "待影印核。"
+      ],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L10243-L10253",
+      "kind": "规则候选",
+      "vernacular": "伏吟用起自刑之神，传行杜塞，为杜传格。用日则终投于辰，用辰则终投日。次传复自刑，以冲为末传；次传非自刑，以刑为末传。初用日自刑、中支又自刑取冲末：壬辰亥辰戌，壬午亥午子，乙亥辰亥巳，乙酉辰酉卯。柔日用辰、卯刑子、子卯两刑不复再传、以子冲午为末：丁卯己卯辛卯卯子午。用日自刑、中支非自刑、以刑为末：壬申亥申寅，壬戌亥戌未，壬子亥子卯，壬寅亥寅巳，乙丑辰丑戌，乙未辰未丑，乙巳辰巳申，乙卯辰卯子。用支自刑、中用日、日刑为末：丁酉己酉酉未丑，辛酉酉戌未，丁亥己亥亥未丑，辛亥亥戌未。用起辰午酉亥自刑，传刑杜塞，故名杜传。占事中止，改求则可成。自刑对调日辰、再自刑改冲，是对「迤逦刑之」的两层例外，不得塌成凡伏吟皆刑递。",
+      "terms": [
+        "杜传",
+        "自刑"
+      ],
+      "notes": [
+        "用日投辰、用辰投日，不得两端都取刑。",
+        "次传再自刑才冲末；非自刑仍刑末。"
+      ],
+      "review": "source-reviewed",
+      "verified": false,
+      "relatedParagraphIds": [
+        "daliuren-daquan:L0094-L0094"
+      ],
+      "subsections": [
+        {
+          "id": "S001",
+          "title": "日辰对调与冲末",
+          "startLine": 10243,
+          "endLine": 10246,
+          "vernacular": "发用自刑则次传日辰对调。次再自刑冲末，次非自刑刑末。",
+          "terms": [
+            "杜传"
+          ],
+          "notes": []
+        },
+        {
+          "id": "S002",
+          "title": "日自刑又支自刑冲末",
+          "startLine": 10247,
+          "endLine": 10248,
+          "vernacular": "壬辰亥辰戌、壬午亥午子、乙亥辰亥巳、乙酉辰酉卯。",
+          "terms": [
+            "自刑"
+          ],
+          "notes": [
+            "末取冲。"
+          ]
+        },
+        {
+          "id": "S003",
+          "title": "卯日两刑冲午",
+          "startLine": 10249,
+          "endLine": 10249,
+          "vernacular": "丁卯己卯辛卯用卯，刑子，子卯两刑不复再传，冲午为末。",
+          "terms": [
+            "两刑"
+          ],
+          "notes": [
+            "不复再传是否定第三刑。"
+          ]
+        },
+        {
+          "id": "S004",
+          "title": "日自刑支非自刑刑末",
+          "startLine": 10250,
+          "endLine": 10250,
+          "vernacular": "壬申亥申寅等八日，中支非自刑，末仍取刑。",
+          "terms": [
+            "杜传"
+          ],
+          "notes": []
+        },
+        {
+          "id": "S005",
+          "title": "支自刑中日刑末",
+          "startLine": 10251,
+          "endLine": 10253,
+          "vernacular": "酉亥日用支自刑，中投日，末取日刑。占事中止，改求可成。",
+          "terms": [
+            "杜传"
+          ],
+          "notes": [
+            "改求是对中止的开许。"
+          ]
+        }
+      ]
+    },
+    {
+      "paragraphId": "daliuren-daquan:L10255-L10268",
+      "kind": "规则候选",
+      "vernacular": "杜传象：居者将移，合者将离；道由中止，事宜改为；传阳人至，传阴未归；求物不出庭除。将乘龙常贵人，身吉坐获喜。见虎合二马，静中有动、人信到门。见勾陈沉屈不伸。见太阴阴私难明。见天空主虚诈。见六合孟神，传阳生男子；或子午全主道路望信；卯酉全主门户；四季全争讼田产；四孟全不获己与人协动。日用旺相有吉象。各将各全是条件，缺该将不得套该象；传阴未归是否定传阳人至的对翻。",
+      "terms": [
+        "杜传",
+        "天马"
+      ],
+      "notes": [
+        "中止改图与坐获喜、人信到门必须按将神分，不得凡杜传皆改。"
+      ],
+      "review": "source-reviewed",
+      "verified": false,
+      "subsections": [
+        {
+          "id": "S001",
+          "title": "中止与将神",
+          "startLine": 10255,
+          "endLine": 10262,
+          "vernacular": "中止宜改。龙常贵坐喜，虎合马则动有信，勾屈，阴私，空诈。",
+          "terms": [
+            "杜传"
+          ],
+          "notes": []
+        },
+        {
+          "id": "S002",
+          "title": "子午卯酉孟季",
+          "startLine": 10263,
+          "endLine": 10268,
+          "vernacular": "六合孟神传阳生男。子午道路，卯酉门户，四季田讼，四孟协动。旺相有吉。",
+          "terms": [
+            "四孟",
+            "四季"
+          ],
+          "notes": [
+            "日用旺相是总救应。"
+          ]
+        }
+      ]
+    },
+    {
+      "paragraphId": "daliuren-daquan:L10270-L10270",
+      "kind": "案例",
+      "vernacular": "壬辰日酉时酉将：刚日用自刑，中传支辰又自刑，取冲戌为末传，曰杜传格。三传亥辰戌。",
+      "terms": [
+        "杜传",
+        "壬辰"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L10272-L10272",
+      "kind": "案例",
+      "vernacular": "同例初传：亥乘天空。壬寄亥自刑。",
+      "terms": [
+        "三传",
+        "天空"
+      ],
+      "notes": [
+        "盘图待影印核。"
+      ],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L10274-L10274",
+      "kind": "案例",
+      "vernacular": "同例中传：辰乘螣蛇。投支。",
+      "terms": [
+        "三传",
+        "螣蛇"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L10276-L10276",
+      "kind": "案例",
+      "vernacular": "同例末传：戌乘白虎。辰冲戌。",
+      "terms": [
+        "三传",
+        "白虎"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L10278-L10278",
+      "kind": "案例",
+      "vernacular": "同例四课天将：蛇、蛇、空、空。",
+      "terms": [
+        "四课",
+        "天将"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L10280-L10280",
+      "kind": "案例",
+      "vernacular": "同例四课上神：辰、辰、亥、亥。",
+      "terms": [
+        "四课"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L10282-L10282",
+      "kind": "案例",
+      "vernacular": "同例四课下神：辰、辰、亥、壬。",
+      "terms": [
+        "四课"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L10284-L10284",
+      "kind": "案例",
+      "vernacular": "同例地盘上一行：巳午未申。",
+      "terms": [
+        "地盘"
+      ],
+      "notes": [
+        "待影印核。"
+      ],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L10286-L10286",
+      "kind": "案例",
+      "vernacular": "同例地盘「辰    酉」一行。",
+      "terms": [
+        "地盘"
+      ],
+      "notes": [
+        "待影印核。"
+      ],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L10288-L10288",
+      "kind": "案例",
+      "vernacular": "同例地盘「卯    戌」一行。",
+      "terms": [
+        "地盘"
+      ],
+      "notes": [
+        "待影印核。"
+      ],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L10290-L10290",
+      "kind": "案例",
+      "vernacular": "同例地盘下一行：寅丑子亥。",
+      "terms": [
+        "地盘"
+      ],
+      "notes": [
+        "待影印核。"
+      ],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L10292-L10292",
+      "kind": "评注或元数据",
+      "vernacular": "伏吟《订讹》标题。",
+      "terms": [
+        "订讹"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L10294-L10294",
+      "kind": "规则候选",
+      "vernacular": "订讹伏吟：十二神各居本位，如子加子、丑加丑。有克以克者为用，中取初传所刑，末取中传所刑。俯伏本家不能变动，只有呻吟愁叹。与正文有克取克、刑递中末同向。",
+      "terms": [
+        "伏吟"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false,
+      "relatedParagraphIds": [
+        "daliuren-daquan:L10158-L10158"
+      ]
+    },
+    {
+      "paragraphId": "daliuren-daquan:L10296-L10296",
+      "kind": "理论",
+      "vernacular": "占主屈不得伸，静中思动。",
+      "terms": [
+        "伏吟"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L10298-L10298",
+      "kind": "规则候选",
+      "vernacular": "自任：伏吟阳日无克，取干上神为用，中末取刑。天地鬼神不动不克无所取，择自任己刚进用于时。伏吟干上神即日寄宫，与正文「日神」同向。",
+      "terms": [
+        "自任"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L10300-L10300",
+      "kind": "理论",
+      "vernacular": "占：自强出头而当闭塞，惟柔顺守静吉而事成。任己过刚必成愆咎。行人立至，然亦本家暂出之人，原非远也。失物逃亡俱不远。胎孕哑聋，祸患流连。病不语而呻吟，淹滞岁月，干谒不出。行人立至＝本家暂出，是否定远行人至。",
+      "terms": [
+        "自任"
+      ],
+      "notes": [
+        "原非远也不得删。"
+      ],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L10302-L10302",
+      "kind": "规则候选",
+      "vernacular": "甲日春占、丙日夏占、庚日秋占、壬日冬占，三刑有气无克，传逢驿马，或不得已而动，亦动中有成。订讹补壬日冬占，正文自任表未列壬；壬日多自刑杜传，季节有气是占象救应，不得把壬日改回自任三刑表。",
+      "terms": [
+        "驿马"
+      ],
+      "notes": [
+        "壬日冬占与杜传日表并行。"
+      ],
+      "review": "source-reviewed",
+      "verified": false,
+      "relatedParagraphIds": [
+        "daliuren-daquan:L10193-L10193"
+      ]
+    },
+    {
+      "paragraphId": "daliuren-daquan:L10304-L10304",
+      "kind": "规则候选",
+      "vernacular": "自信：伏吟阴日无克，取支上神为用，中末取刑，自信其在己之柔而自用。与正文柔日支神同向。",
+      "terms": [
+        "自信"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L10306-L10306",
+      "kind": "理论",
+      "vernacular": "占主不能动身，乃家宅不宁之兆。",
+      "terms": [
+        "自信"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L10308-L10308",
+      "kind": "规则候选",
+      "vernacular": "自信与自任：病产盗逃俱同；讼狱俱主土田，关梁俱主杜塞。惟行人则自任立至、自信难期；出行则自任欲行中止、自信潜藏不出。若有丁马俱可言动。行人阴阳分迟速，丁马是对「不能动身」的明确例外，不得删。",
+      "terms": [
+        "丁神",
+        "驿马"
+      ],
+      "notes": [
+        "无丁马不得改判可动。"
+      ],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L10310-L10310",
+      "kind": "规则候选",
+      "vernacular": "杜传：发用干自刑则次传取支；发用支自刑则次传取干。次传非自刑，末传仍取刑；次传复自刑，末传取冲。与正文同向，是起例自刑两层例外的课经复述。",
+      "terms": [
+        "杜传"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false,
+      "relatedParagraphIds": [
+        "daliuren-daquan:L0094-L0094",
+        "daliuren-daquan:L10243-L10253"
+      ]
+    },
+    {
+      "paragraphId": "daliuren-daquan:L10312-L10312",
+      "kind": "理论",
+      "vernacular": "占主事中止，改图则可成。",
+      "terms": [
+        "杜传"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L10314-L10314",
+      "kind": "评注或元数据",
+      "vernacular": "《观月经》标题。",
+      "terms": [
+        "观月经"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L10316-L10316",
+      "kind": "术语",
+      "vernacular": "自任卦：刚日伏吟，名隔山照水。别名不改取法。",
+      "terms": [
+        "隔山照水"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L10318-L10318",
+      "kind": "规则候选",
+      "vernacular": "天地伏吟卦，阴阳归本家。",
+      "terms": [
+        "伏吟"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L10320-L10320",
+      "kind": "规则候选",
+      "vernacular": "十二神将各归本家，如子加子、丑加丑。",
+      "terms": [
+        "伏吟"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L10322-L10322",
+      "kind": "规则候选",
+      "vernacular": "刚以日来用，刑处作中涯。刚日用日，刑为中。",
+      "terms": [
+        "自任"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L10324-L10324",
+      "kind": "规则候选",
+      "vernacular": "刚日取日为用：甲用寅、丙戊用巳、庚日用申、壬日用亥为初传，刑处为中传。观月经刚日表含壬用亥，与正文自任未列壬、杜传壬日用亥自刑并行：壬日发用仍亥，中末是否刑递或投支看自刑规则，不得把本行写成壬日永不杜传。",
+      "terms": [
+        "自任",
+        "壬日"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L10326-L10326",
+      "kind": "规则候选",
+      "vernacular": "末在刑冲处，三传立爪牙。末取刑或冲。",
+      "terms": [
+        "杜传"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L10328-L10328",
+      "kind": "规则候选",
+      "vernacular": "中传刑处为末传；若遇自刑，更用冲处。与订讹次自刑冲末一致。",
+      "terms": [
+        "自刑"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L10330-L10330",
+      "kind": "理论",
+      "vernacular": "居者将离析，逃亡路不遐。不远。",
+      "terms": [
+        "伏吟"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L10332-L10332",
+      "kind": "理论",
+      "vernacular": "刚日伏吟自任，主家中不宁，的有哭泣，定主分离。占逃亡不远。哭泣分离是刚日占象，不是改发用。",
+      "terms": [
+        "自任"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L10334-L10334",
+      "kind": "术语",
+      "vernacular": "自信卦，柔日伏吟。",
+      "terms": [
+        "自信"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L10336-L10336",
+      "kind": "规则候选",
+      "vernacular": "自信伏吟体，同前分两者。六辰柔日用。柔日用支。",
+      "terms": [
+        "自信"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L10338-L10338",
+      "kind": "规则候选",
+      "vernacular": "柔日用辰为初传，巳酉丑亥卯未是也。六阴支皆可作自信发用，遇自刑则转杜传，不得把本表写成六支皆刑递到底。",
+      "terms": [
+        "自信"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L10340-L10340",
+      "kind": "规则候选",
+      "vernacular": "刑处作中程。末在刑冲处。",
+      "terms": [
+        "三刑"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L10342-L10342",
+      "kind": "规则候选",
+      "vernacular": "初传刑处为中，中传刑处为末；中传自刑以冲处为末。例：丑日丑为初，丑刑戌为中，戌刑未为末。本例中戌非自刑，故末仍刑，不是冲。",
+      "terms": [
+        "自信",
+        "丑戌未"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L10344-L10344",
+      "kind": "理论",
+      "vernacular": "三传为兄弟。忽然值恶将，破散别离情。",
+      "terms": [
+        "恶将"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L10346-L10346",
+      "kind": "规则候选",
+      "vernacular": "值恶将者，主破散、哭泣、逃亡、离别。恶将是加重，缺恶将不套破散。",
+      "terms": [
+        "恶将"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L10348-L10348",
+      "kind": "理论",
+      "vernacular": "刚日刑中正，柔日宅内惊。",
+      "terms": [
+        "自任",
+        "自信"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L10350-L10350",
+      "kind": "规则候选",
+      "vernacular": "刚日伏吟欲刑中正，柔日主家宅动摇不宁。刚柔占象分内外，不是改取传。",
+      "terms": [
+        "伏吟"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L10352-L10352",
+      "kind": "评注或元数据",
+      "vernacular": "《心镜》标题。",
+      "terms": [
+        "心镜"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L10354-L10354",
+      "kind": "理论",
+      "vernacular": "《心镜》：任信伏吟神，行人立到门。失物家内盗，逃者隐乡邻。病合难言语，占胎聋哑人。访人藏不出，行者却回轮。行人立到门后文指要收束为本家暂出，不得写成远客必至。",
+      "terms": [
+        "心镜",
+        "伏吟"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false,
+      "relatedParagraphIds": [
+        "daliuren-daquan:L10300-L10300"
+      ]
+    },
+    {
+      "paragraphId": "daliuren-daquan:L10356-L10356",
+      "kind": "评注或元数据",
+      "vernacular": "《袖中金》标题。",
+      "terms": [
+        "袖中金"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L10358-L10363",
+      "kind": "规则候选",
+      "vernacular": "《袖中金》：伏吟支干各居其位，日辰只有两课，用刑以起传。刚日自任，柔日自信。静则宜、动则滞，藏匿不动。屈不得伸，静中鬼动。用见日则舍阴、用辰则舍阳，天地不备、阴阳独彰，不足之体。然有克无克、三刑自刑须分看：六乙日财多害己；六癸日否极泰来；六甲丙庚有禄有马；六戊日有三奇；六壬日自刑，壬辰壬午重犯，壬申日不为空亡；丁巳、辛日用支无德。阳日先刑后冲以见伏外，阴日刑害破冲以见伏内，皆刑中有害、破中有合，凶中有吉，祸福倚伏，不可一概而推。更有助刑戕德，岁月日辰冲破空亡，全在五行德、马、天官、神煞、刑冲破害详之。日干专条不得合成一条吉凶；不可一概而推是否定凡伏吟皆滞。",
+      "terms": [
+        "袖中金",
+        "伏吟"
+      ],
+      "notes": [
+        "六乙害己与六癸泰来必须分日。",
+        "壬申不为空亡是空亡例外，不得删。"
+      ],
+      "review": "source-reviewed",
+      "verified": false,
+      "subsections": [
+        {
+          "id": "S001",
+          "title": "两课刑传与不足体",
+          "startLine": 10358,
+          "endLine": 10360,
+          "vernacular": "伏吟两课用刑起传。刚自任柔自信。静宜动滞。用日舍阴用辰舍阳为不足体。",
+          "terms": [
+            "自任",
+            "自信"
+          ],
+          "notes": []
+        },
+        {
+          "id": "S002",
+          "title": "六干专条与祸福倚伏",
+          "startLine": 10361,
+          "endLine": 10363,
+          "vernacular": "乙财害己，癸否极泰来，甲丙庚禄马，戊三奇，壬自刑，壬申不空，丁巳辛用支无德。不可一概。",
+          "terms": [
+            "三奇",
+            "空亡"
+          ],
+          "notes": [
+            "壬申不为空亡是否定凡空皆空。"
+          ]
+        }
+      ]
+    },
+    {
+      "paragraphId": "daliuren-daquan:L10365-L10365",
+      "kind": "评注或元数据",
+      "vernacular": "《指要》标题。",
+      "terms": [
+        "指要"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L10367-L10367",
+      "kind": "规则候选",
+      "vernacular": "《指要》：自任自信，天地如一，隐伏未发。静则宜，动则滞。一云藏匿不动，静中求劳，屈不得伸。失物不远，访人不出，病不言语而呻吟。《心镜》行人立至门者，是本家暂出之人，非远行人至。阳日尚可言立归，阴日则难期。所主皆迟。阳立归、阴难期与订讹自任立至自信难期同向；非远行人是否定心镜字面。所主皆迟与返吟指要「所主皆速」对翻，不得混。",
+      "terms": [
+        "指要",
+        "伏吟"
+      ],
+      "notes": [
+        "非远行人、阴日难期、所主皆迟三条都要留。"
+      ],
+      "review": "source-reviewed",
+      "verified": false,
+      "relatedParagraphIds": [
+        "daliuren-daquan:L10354-L10354",
+        "daliuren-daquan:L10308-L10308"
+      ]
+    },
+    {
+      "paragraphId": "daliuren-daquan:L10369-L10369",
+      "kind": "术语",
+      "vernacular": "返吟课标题。盘式是十二神各居冲位。有克取克，无克井栏见后文。",
+      "terms": [
+        "返吟"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false,
+      "relatedParagraphIds": [
+        "daliuren-daquan:L0096-L0096"
+      ]
+    },
+    {
+      "paragraphId": "daliuren-daquan:L10371-L10371",
+      "kind": "规则候选",
+      "vernacular": "十二神各居冲位，取相克为用，曰返吟。诸神返位，坎离交易、震兑互换，日辰阴阳往来克贼，反复呻吟。占来者思去、离者思归，得失未可一定，惟有利复旧事。统震之体。本段是有克取克；无克不得套本段改井栏。",
+      "terms": [
+        "返吟",
+        "无依"
+      ],
+      "notes": [
+        "惟利复旧是否定凡动皆宜新谋。"
+      ],
+      "review": "source-reviewed",
+      "verified": false,
+      "relatedParagraphIds": [
+        "daliuren-daquan:L0098-L0098"
+      ]
+    },
+    {
+      "paragraphId": "daliuren-daquan:L10373-L10381",
+      "kind": "规则候选",
+      "vernacular": "返吟象：高岸为谷、深谷为陵；得物乃失、败物反成；安营离散、出阵虚惊；得生于外、害人自承。巳亥巳多主改动取索、财物文章；卯酉卯占家宅门户道路；寅申寅占远行移动争讼。遇凶神凶将主损失，虽动无益，重重惊恼。遇吉神将主赴省求恩、转官之喜。三组三传字面是占类，不是另取发用；吉将是否定「凡返吟皆惊恼」。",
+      "terms": [
+        "返吟",
+        "巳亥",
+        "卯酉",
+        "寅申"
+      ],
+      "notes": [
+        "凶将损失与吉将转官必须并列。"
+      ],
+      "review": "source-reviewed",
+      "verified": false,
+      "subsections": [
+        {
+          "id": "S001",
+          "title": "反复象与三组占类",
+          "startLine": 10373,
+          "endLine": 10378,
+          "vernacular": "反复陵谷。巳亥改动文财，卯酉门户道路，寅申远行争讼。",
+          "terms": [
+            "返吟"
+          ],
+          "notes": []
+        },
+        {
+          "id": "S002",
+          "title": "凶将无益吉将转官",
+          "startLine": 10379,
+          "endLine": 10381,
+          "vernacular": "凶神将虽动无益。吉神将赴省转官。",
+          "terms": [
+            "吉将"
+          ],
+          "notes": [
+            "缺吉将不套转官。"
+          ]
+        }
+      ]
+    },
+    {
+      "paragraphId": "daliuren-daquan:L10383-L10383",
+      "kind": "案例",
+      "vernacular": "庚戌日寅时申将：十二神各居冲位，为返吟格。演示有克返吟，不是井栏。",
+      "terms": [
+        "返吟",
+        "庚戌"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L10385-L10385",
+      "kind": "案例",
+      "vernacular": "同例初传：寅乘白虎。",
+      "terms": [
+        "三传",
+        "白虎"
+      ],
+      "notes": [
+        "盘图待影印核。"
+      ],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L10387-L10387",
+      "kind": "案例",
+      "vernacular": "同例中传：申乘螣蛇。返吟中传冲位。",
+      "terms": [
+        "三传",
+        "螣蛇"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L10389-L10389",
+      "kind": "案例",
+      "vernacular": "同例末传：寅乘白虎。三传寅申寅。",
+      "terms": [
+        "三传",
+        "白虎"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L10391-L10391",
+      "kind": "案例",
+      "vernacular": "同例四课天将：六、元、蛇、白。",
+      "terms": [
+        "四课",
+        "天将"
+      ],
+      "notes": [
+        "将序方向待核。"
+      ],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L10393-L10393",
+      "kind": "案例",
+      "vernacular": "同例四课上神：戌、辰、申、寅。",
+      "terms": [
+        "四课"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L10395-L10395",
+      "kind": "案例",
+      "vernacular": "同例四课下神：辰、戌、寅、庚。庚寄申，返吟冲位。",
+      "terms": [
+        "四课"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L10397-L10397",
+      "kind": "案例",
+      "vernacular": "同例地盘上一行：亥子丑寅。",
+      "terms": [
+        "地盘"
+      ],
+      "notes": [
+        "待影印核。"
+      ],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L10399-L10399",
+      "kind": "案例",
+      "vernacular": "同例地盘「戌    卯」一行。",
+      "terms": [
+        "地盘"
+      ],
+      "notes": [
+        "待影印核。"
+      ],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L10401-L10401",
+      "kind": "案例",
+      "vernacular": "同例地盘「酉    辰」一行。",
+      "terms": [
+        "地盘"
+      ],
+      "notes": [
+        "待影印核。"
+      ],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L10403-L10403",
+      "kind": "案例",
+      "vernacular": "同例地盘下一行：申未午巳。",
+      "terms": [
+        "地盘"
+      ],
+      "notes": [
+        "待影印核。"
+      ],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L10405-L10412",
+      "kind": "规则候选",
+      "vernacular": "返吟无相克，以支辰傍射敌上神为用，曰井栏格。返吟多相克，无克惟四日：己丑、丁丑、辛未、辛丑。丑无克，以丑宫癸水遥射巳宫丙火，故丑日以巳上亥神为用；未无克，以未宫己土遥射亥宫壬水，故未日以亥上巳神为用。如傍井倚栏斜冲射之、不易井外，故名井栏射。井栏无来去，必中投辰上神、末投日上神。占者无事依倚、一身两用。正文无克四日不含丁未己未；订讹作六日、观月经丁未己未另走八专逆退，三表并行，不得用本段删丁未己未，也不得把六日压进本段。中辰上、末日上，不得与昴星刚柔中末对调混淆。",
+      "terms": [
+        "井栏射",
+        "返吟"
+      ],
+      "notes": [
+        "有克不得改井栏。",
+        "正文四日与订讹六日、观月经八专读并行。"
+      ],
+      "review": "source-reviewed",
+      "verified": false,
+      "relatedParagraphIds": [
+        "daliuren-daquan:L0098-L0098"
+      ],
+      "subsections": [
+        {
+          "id": "S001",
+          "title": "无克四日与丑亥未巳",
+          "startLine": 10405,
+          "endLine": 10409,
+          "vernacular": "无克惟己丑丁丑辛未辛丑。丑日巳上亥，未日亥上巳。",
+          "terms": [
+            "井栏射"
+          ],
+          "notes": [
+            "四日表不含丁未己未。"
+          ]
+        },
+        {
+          "id": "S002",
+          "title": "中辰末日",
+          "startLine": 10410,
+          "endLine": 10412,
+          "vernacular": "中投辰上，末投日上。一身两用。",
+          "terms": [
+            "井栏射"
+          ],
+          "notes": []
+        }
+      ]
+    },
+    {
+      "paragraphId": "daliuren-daquan:L10414-L10414",
+      "kind": "规则候选",
+      "vernacular": "井栏象：行人阻遏，盗贼相攻；内外多怪，上下不恭。傍求事就，直求道穷。三传救护，喜见青龙。神将凶则凶，吉则吉。傍求易就是否定直道；青龙是救护条件，缺青龙不套翻祸。",
+      "terms": [
+        "井栏射",
+        "青龙"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L10416-L10416",
+      "kind": "案例",
+      "vernacular": "正月辛丑日巳时亥将：反吟无克，以丑支遥射巳上亥为用，曰井栏射格。三传见后文亥、未、辰，与中辰上末日上一致。电子本「反吟」不改字。",
+      "terms": [
+        "井栏射",
+        "辛丑"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L10418-L10418",
+      "kind": "案例",
+      "vernacular": "同例初传：亥乘青龙。巳上亥。",
+      "terms": [
+        "三传",
+        "青龙"
+      ],
+      "notes": [
+        "盘图待影印核。"
+      ],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L10420-L10420",
+      "kind": "案例",
+      "vernacular": "同例中传：未乘螣蛇。辰上未。",
+      "terms": [
+        "三传",
+        "螣蛇"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L10422-L10422",
+      "kind": "案例",
+      "vernacular": "同例末传：辰乘太阴。日上辰。",
+      "terms": [
+        "三传",
+        "太阴"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L10424-L10424",
+      "kind": "案例",
+      "vernacular": "同例四课天将：白、蛇、勾、阴。",
+      "terms": [
+        "四课",
+        "天将"
+      ],
+      "notes": [
+        "将序方向待核。"
+      ],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L10426-L10426",
+      "kind": "案例",
+      "vernacular": "同例四课上神：丑、未、戌、辰。",
+      "terms": [
+        "四课"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L10428-L10428",
+      "kind": "案例",
+      "vernacular": "同例四课下神：未、丑、辰、辛。辛寄戌。",
+      "terms": [
+        "四课"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L10430-L10430",
+      "kind": "案例",
+      "vernacular": "同例地盘上一行：亥子丑寅。亥为发用。",
+      "terms": [
+        "地盘"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L10432-L10432",
+      "kind": "案例",
+      "vernacular": "同例地盘「戌    卯」一行。",
+      "terms": [
+        "地盘"
+      ],
+      "notes": [
+        "待影印核。"
+      ],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L10434-L10434",
+      "kind": "案例",
+      "vernacular": "同例地盘「酉    辰」一行。",
+      "terms": [
+        "地盘"
+      ],
+      "notes": [
+        "待影印核。"
+      ],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L10436-L10436",
+      "kind": "案例",
+      "vernacular": "同例地盘下一行：申未午巳。巳上见亥。",
+      "terms": [
+        "地盘"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L10438-L10438",
+      "kind": "评注或元数据",
+      "vernacular": "返吟《订讹》标题。",
+      "terms": [
+        "订讹"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L10440-L10440",
+      "kind": "规则候选",
+      "vernacular": "订讹：返吟亦名无依。十二神互换其位，有克照常克贼比涉等项论。彼此相冲往来咨嗟不宁，故名返吟；各易本位无所凭借，故名无依。有克走前四门，不得因返吟盘改井栏。",
+      "terms": [
+        "返吟",
+        "无依"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false,
+      "relatedParagraphIds": [
+        "daliuren-daquan:L0098-L0098"
+      ]
+    },
+    {
+      "paragraphId": "daliuren-daquan:L10442-L10451",
+      "kind": "规则候选",
+      "vernacular": "占：事带两途，远近系心，往返无常，欲动不动。祸自外来，事从下起。背逆分离，有疑莫决。安营离散，出阵败奔。来者思去，去者复来。得失未有一定。巢穴改宫易位，亲情无始终，病亦两症相侵，行多反复。惟利复旧事。凡动无凭，但当久动思静。巳亥巳占改动取索财物文字，卯酉卯占家宅门户道路，寅申寅占远行移动争讼。神将凶俱主凶动，有重重惊恼。惟利复旧、久动思静是否定持续新动。",
+      "terms": [
+        "返吟"
+      ],
+      "notes": [
+        "病两症、行反复不得写成单一病程。"
+      ],
+      "review": "source-reviewed",
+      "verified": false,
+      "subsections": [
+        {
+          "id": "S001",
+          "title": "两途与复旧",
+          "startLine": 10442,
+          "endLine": 10448,
+          "vernacular": "事带两途欲动不动。惟利复旧，久动思静。",
+          "terms": [
+            "返吟"
+          ],
+          "notes": [
+            "复旧是否定新谋。"
+          ]
+        },
+        {
+          "id": "S002",
+          "title": "巳亥卯酉寅申",
+          "startLine": 10449,
+          "endLine": 10451,
+          "vernacular": "巳亥改动文财，卯酉门户，寅申远行争讼。凶将重重惊恼。",
+          "terms": [
+            "巳亥"
+          ],
+          "notes": []
+        }
+      ]
+    },
+    {
+      "paragraphId": "daliuren-daquan:L10453-L10453",
+      "kind": "规则候选",
+      "vernacular": "此课多主动，若去来空亡又不以动论。空亡是否定「凡返吟皆动」，不得删。",
+      "terms": [
+        "返吟",
+        "空亡"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L10455-L10461",
+      "kind": "规则候选",
+      "vernacular": "井栏射亦名无亲。返吟无克，以支辰斜射为用，中传取支，末传取干。无克者惟丁未、己未、辛未、丁丑、己丑、辛丑六日。丑无克以丑宫癸水遥射巳宫丙火，未无克以未宫己土遥射亥宫壬水，故丑日巳上亥、未日亥上巳。傍井倚栏斜冲不出井外。全是冲开涣散不属，故又名无亲。订讹六日比正文四日多丁未、己未。取法丑亥未巳、中支末干与正文同向。六日表与正文四日、观月经丁未己未八专读三线并行，不在本行裁定日表。",
+      "terms": [
+        "井栏射",
+        "无亲"
+      ],
+      "notes": [
+        "六日不得覆盖正文四日。"
+      ],
+      "review": "source-reviewed",
+      "verified": false,
+      "relatedParagraphIds": [
+        "daliuren-daquan:L10405-L10412"
+      ],
+      "subsections": [
+        {
+          "id": "S001",
+          "title": "六日与斜射",
+          "startLine": 10455,
+          "endLine": 10459,
+          "vernacular": "无克六日丁己辛之未丑。丑日巳上亥，未日亥上巳。中支末干。",
+          "terms": [
+            "井栏射"
+          ],
+          "notes": [
+            "中取支即辰上，末取干即日上。"
+          ]
+        },
+        {
+          "id": "S002",
+          "title": "无亲",
+          "startLine": 10460,
+          "endLine": 10461,
+          "vernacular": "冲开涣散不属，又名无亲。",
+          "terms": [
+            "无亲"
+          ],
+          "notes": []
+        }
+      ]
+    },
+    {
+      "paragraphId": "daliuren-daquan:L10463-L10463",
+      "kind": "理论",
+      "vernacular": "占：内外多怪，上下睽隔。井上架木易欹易斜，不能长久。动则宜，静则扰。事无凭依，一身两用，傍求易就，直道难容，凡事速成易破。动宜静扰与伏吟静宜动滞对翻；速成易破是否定可久。",
+      "terms": [
+        "井栏射"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L10465-L10465",
+      "kind": "规则候选",
+      "vernacular": "遇吉神良将，凡事半遂，尤喜见青龙救护。半遂是否定全遂；青龙是加重救护，缺青龙不升全吉。",
+      "terms": [
+        "青龙"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false,
+      "relatedParagraphIds": [
+        "daliuren-daquan:L10414-L10414"
+      ]
+    },
+    {
+      "paragraphId": "daliuren-daquan:L10467-L10467",
+      "kind": "评注或元数据",
+      "vernacular": "《观月经》标题。",
+      "terms": [
+        "观月经"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L10469-L10469",
+      "kind": "术语",
+      "vernacular": "返吟无依卦。无依是返吟别名。",
+      "terms": [
+        "无依"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L10471-L10471",
+      "kind": "规则候选",
+      "vernacular": "己未连丁未，返吟是两般。点出丁未己未在返吟中另有一读，细则见下行。",
+      "terms": [
+        "丁未",
+        "己未"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L10473-L10473",
+      "kind": "规则候选",
+      "vernacular": "此二卦为无依。假令亥将巳时占丁未日：一课丑丁、二课未丑，以未直中亥上见太乙为初传。此二课犹属八专，阴日逆退三辰为用，初传日上丑，辰上亦是丑作中末传。己未日同。同段先写未直冲亥上巳为初传（井栏口径），又写属八专逆退三辰、三传丑丑丑（八专独足口径）。两套取法粘连，与正文井栏四日不含丁未己未、订讹六日含此二日冲突。不改正文、不据本段改 adapter，井栏/八专在丁未己未返吟上保持并行与信息不足。",
+      "terms": [
+        "井栏射",
+        "八专",
+        "丁未"
+      ],
+      "notes": [
+        "未直中亥上太乙与逆退三辰丑丑丑同段并存。",
+        "C-008 井栏粘连，不得静默合并。"
+      ],
+      "review": "draft",
+      "verified": false,
+      "relatedParagraphIds": [
+        "daliuren-daquan:L0098-L0098",
+        "daliuren-daquan:L10405-L10412",
+        "daliuren-daquan:L10455-L10461"
+      ]
+    },
+    {
+      "paragraphId": "daliuren-daquan:L10475-L10475",
+      "kind": "理论",
+      "vernacular": "臣背明君意，子欺怨父心。无端须绝后，有罪自相擒。更若逢凶将，乖狡祸尤深。凶将是加重。",
+      "terms": [
+        "返吟"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L10477-L10477",
+      "kind": "规则候选",
+      "vernacular": "此返吟二课更逢凶将，故主灾祸。二课指丁未己未无依，须逢凶将才加深，缺凶将不套尤深。",
+      "terms": [
+        "凶将"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L10479-L10479",
+      "kind": "术语",
+      "vernacular": "返吟小标题，下文另起无克取法。",
+      "terms": [
+        "返吟"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L10481-L10481",
+      "kind": "规则候选",
+      "vernacular": "返吟居易位，坎户入离宫。返吟有不克，柔日以辰冲。无克用辰冲，刚日无克是否另法本行未写。",
+      "terms": [
+        "井栏射"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L10483-L10483",
+      "kind": "规则候选",
+      "vernacular": "无克者：丁丑、辛丑、丁未、己未、辛未、己丑，以辰直冲为用。与订讹六日同表，比正文四日多丁未己未。直冲与傍射同方向不同用字，不在本行改成冲支本身。",
+      "terms": [
+        "井栏射"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false,
+      "relatedParagraphIds": [
+        "daliuren-daquan:L10455-L10461"
+      ]
+    },
+    {
+      "paragraphId": "daliuren-daquan:L10485-L10485",
+      "kind": "规则候选",
+      "vernacular": "冲处初传发，临辰却作中。虽然看日上，所见乃为终。初冲处、中辰上、末日上，与正文井栏中末同向。",
+      "terms": [
+        "井栏射"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L10487-L10487",
+      "kind": "案例",
+      "vernacular": "正月将辛丑日巳时：一课辰辛、二课戌辰、三课未丑、四课丑未，俱不相克，用丑直冲，巳上见登明为初传，辰上见小吉为中传，日上见天罡为末传。三传亥未辰，与正文辛丑例一致，可作井栏有克否的正例。不得用本例去裁定丁未己未。",
+      "terms": [
+        "井栏射",
+        "辛丑"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false,
+      "relatedParagraphIds": [
+        "daliuren-daquan:L10416-L10416"
+      ]
+    },
+    {
+      "paragraphId": "daliuren-daquan:L10489-L10489",
+      "kind": "评注或元数据",
+      "vernacular": "此是课家法，学人莫乱攻。诫勿乱改取法。",
+      "terms": [
+        "井栏射"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L10491-L10491",
+      "kind": "规则候选",
+      "vernacular": "看是辰冲何神为用，辰中、日末是课法。落实中支末日。",
+      "terms": [
+        "井栏射"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L10493-L10493",
+      "kind": "理论",
+      "vernacular": "凶卦盗贼起。",
+      "terms": [
+        "返吟"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L10495-L10495",
+      "kind": "理论",
+      "vernacular": "凶卦为伤，盗贼以应。须凶卦条件。",
+      "terms": [
+        "返吟"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L10497-L10497",
+      "kind": "理论",
+      "vernacular": "去者路难通。父子不和睦。",
+      "terms": [
+        "返吟"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L10499-L10499",
+      "kind": "理论",
+      "vernacular": "主父子分离，有路难通不和顺。",
+      "terms": [
+        "返吟"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L10501-L10501",
+      "kind": "规则候选",
+      "vernacular": "亲情无始终。三传如有救，翻祸见青龙。青龙是救，缺则不翻。",
+      "terms": [
+        "青龙"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L10503-L10503",
+      "kind": "规则候选",
+      "vernacular": "青龙是卦中喜神，重审卦注，定主反祸为福。指回重审注，不是把返吟改成重审取传。",
+      "terms": [
+        "青龙"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false,
+      "relatedParagraphIds": [
+        "daliuren-daquan:L9331-L9351"
+      ]
+    },
+    {
+      "paragraphId": "daliuren-daquan:L10505-L10505",
+      "kind": "评注或元数据",
+      "vernacular": "《心镜》标题。",
+      "terms": [
+        "心镜"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L10507-L10507",
+      "kind": "理论",
+      "vernacular": "《心镜》：无依是返吟，逃者远追寻。合者应分散，安巢别改林。守官须易位，结友也分襟。臣子俱怀怨，夫妻有外心。所为多重复，占病两般侵。逃者远寻与伏吟逃者不远对翻；病两般与订讹两症同向。",
+      "terms": [
+        "心镜",
+        "无依"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L10509-L10509",
+      "kind": "评注或元数据",
+      "vernacular": "《袖中金》标题。",
+      "terms": [
+        "袖中金"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L10511-L10526",
+      "kind": "规则候选",
+      "vernacular": "《袖中金》：返吟阴阳各异其位，刑冲破害，事带两端。天地乖隔，南北相违。睽而复合，反而复往。欲不动则扰乱。又云无依是返吟，远近系心，更相仇怨，反复呻吟，无预夺而叹息。欲动不动，疑贰不决，事从外起，臣慢君、子逆父、夫妻离背、朋友失义，凡动无得，何以依恋，惟当久动思静。柔日非一事须有两事，事成亦破。子午乘蛇官病灾凶；卯酉乘合人离财散；寅申乘龙隔墙有祸；巳亥辛日减德；辰戌多凶不论空亡；丑未不吉；惟癸日约期不爽。六阴日谓之井栏课，井上架木易欹不能长久。六阴日井栏比正文四日、订讹六日更宽，并行不覆盖。辰戌不论空亡是空亡例外；去来空亡不以动论见订讹，两空亡口径分绑，不合并成凡空皆不论。",
+      "terms": [
+        "袖中金",
+        "井栏"
+      ],
+      "notes": [
+        "子午蛇、卯酉合、寅申龙、巳亥辛减德、辰戌不论空、癸日约期，分条不得合成一断。",
+        "六阴日井栏不覆盖正文四日。"
+      ],
+      "review": "source-reviewed",
+      "verified": false,
+      "subsections": [
+        {
+          "id": "S001",
+          "title": "两端与久动思静",
+          "startLine": 10511,
+          "endLine": 10518,
+          "vernacular": "刑冲两端，睽复合。欲动不动，凡动无得，久动思静。柔日两事成亦破。",
+          "terms": [
+            "无依"
+          ],
+          "notes": [
+            "事成亦破是否定可久。"
+          ]
+        },
+        {
+          "id": "S002",
+          "title": "乘将日条与六阴井栏",
+          "startLine": 10519,
+          "endLine": 10526,
+          "vernacular": "子午蛇官病，卯酉合离散，寅申龙隔祸，巳亥辛减德，辰戌多凶不论空，丑未不吉，癸日约期。六阴日称井栏，易欹不久。",
+          "terms": [
+            "井栏"
+          ],
+          "notes": [
+            "辰戌不论空亡是否定凡空皆空。"
+          ]
+        }
+      ]
+    },
+    {
+      "paragraphId": "daliuren-daquan:L10528-L10528",
+      "kind": "评注或元数据",
+      "vernacular": "《指要》标题。",
+      "terms": [
+        "指要"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L10530-L10530",
+      "kind": "规则候选",
+      "vernacular": "《指要》：天地乘隔、南北相违。占事动则宜、静则扰，主两事。俱阴主滞，用旺相始宜。所主皆速。卯酉上发用主门户动摇。若遇井栏射取传，占事难成易破，虽遇吉神亦是半遂。一云反复不定，病主两症。动宜静扰、所主皆速与伏吟静宜动滞、所主皆迟对翻。井栏虽吉神半遂，与订讹半遂同向，是否定全遂。俱阴主滞、用旺相始宜是限制，缺旺相不套宜动。",
+      "terms": [
+        "指要",
+        "井栏射"
+      ],
+      "notes": [
+        "所主皆速不得写成伏吟之迟。"
+      ],
+      "review": "source-reviewed",
+      "verified": false,
+      "relatedParagraphIds": [
+        "daliuren-daquan:L10367-L10367",
+        "daliuren-daquan:L10465-L10465"
+      ]
     }
   ]
 }
