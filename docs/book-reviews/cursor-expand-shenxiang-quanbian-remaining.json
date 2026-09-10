@@ -5,10 +5,10 @@
   "sourceSha256": "00e07f58ba93fe506087bb82875a63e93123d01cce809238da235c8b37362580",
   "annotationFile": "references/annotations/physiognomy/shenxiang-quanbian--shidian-SDZJ0174.json",
   "totalSourceParagraphs": 748,
-  "completedCount": 697,
-  "remainingCount": 51,
+  "completedCount": 748,
+  "remainingCount": 0,
   "verified": false,
-  "note": "completed = 本轮已对照原文重写或核验保留的段落ID；不重复处理。总数以源文748为准。corpus-3初稿748条不是语义验收。",
+  "note": "completed = 已对照原文重写或核验保留的段落ID。总数以源文748为准。748/0。corpus-3初稿不是语义验收。verified仍false。结构校验通过不是人工校勘。",
   "chapters": [
     {
       "heading": "网站章节：神相全编",
@@ -43,14 +43,14 @@
     {
       "heading": "网站章节：神相全□卷之十二",
       "total": 3,
-      "done": 0,
-      "remaining": 3
+      "done": 3,
+      "remaining": 0
     },
     {
       "heading": "网站章节：黄色吉㐫相",
       "total": 48,
-      "done": 0,
-      "remaining": 48
+      "done": 48,
+      "remaining": 0
     }
   ],
   "completedIds": [
@@ -750,9 +750,7 @@
     "shenxiang-quanbian:shidian-SDZJ0174:P7426635516994682889",
     "shenxiang-quanbian:shidian-SDZJ0174:P7426635516994699273",
     "shenxiang-quanbian:shidian-SDZJ0174:P7426635517397041178",
-    "shenxiang-quanbian:shidian-SDZJ0174:P7426635517397057562"
-  ],
-  "remainingIds": [
+    "shenxiang-quanbian:shidian-SDZJ0174:P7426635517397057562",
     "shenxiang-quanbian:shidian-SDZJ0174:P7380241998470479898",
     "shenxiang-quanbian:shidian-SDZJ0174:P7380241998470496282",
     "shenxiang-quanbian:shidian-SDZJ0174:P7380241998470512666",
@@ -804,5 +802,6 @@
     "shenxiang-quanbian:shidian-SDZJ0174:P7617873406952112163",
     "shenxiang-quanbian:shidian-SDZJ0174:P7617873406952128547",
     "shenxiang-quanbian:shidian-SDZJ0174:P7380241998470561818"
-  ]
+  ],
+  "remainingIds": []
 }
