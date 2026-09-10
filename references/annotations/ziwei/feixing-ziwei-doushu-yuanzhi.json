@@ -2,7 +2,7 @@
   "schemaVersion": "fateradar-annotations-v1",
   "bookSlug": "feixing-ziwei-doushu-yuanzhi",
   "sourceFile": "sources/fulltext/ziwei/feixing-ziwei-doushu-yuanzhi/fulltext.md",
-  "reviewScope": "已逐段阅读电子文本头信息至天有象地有形（feixing-ziwei-doushu-yuanzhi:L0003-L0004 至 L0192-L0192）并作语义注解。source-reviewed只指对照电子主文本，不代表影印人工核验。飞星桃花四相天地人象数分套与已落地紫微算法分套只归档。其后page-008墓田阴阳宅尚未注解。",
+  "reviewScope": "已逐段阅读电子文本头信息至page-014对图标记（feixing-ziwei-doushu-yuanzhi:L0003-L0004 至 L0394-L0394）并作语义注解。source-reviewed只指对照电子主文本，不代表影印人工核验。飞星桃花四相天地人象数阴阳宅文曲孤暗红鸾大耗坤方母道分套与已落地紫微算法分套只归档。其后小儿生时白虎冲身命尚未注解。",
   "entries": [
     {
       "paragraphId": "feixing-ziwei-doushu-yuanzhi:L0003-L0004",
@@ -563,6 +563,578 @@
       "relatedParagraphIds": [
         "feixing-ziwei-doushu-yuanzhi:L0169-L0190",
         "feixing-ziwei-doushu-yuanzhi:L0197-L0197"
+      ]
+    },
+    {
+      "paragraphId": "feixing-ziwei-doushu-yuanzhi:L0197-L0197",
+      "kind": "评注或元数据",
+      "vernacular": "page-008 对图审读标记 reviewed_against_image: page-008.png。是电子文本校次说明，不是古书断法。",
+      "terms": [
+        "reviewed_against_image",
+        "page-008"
+      ],
+      "notes": [
+        "待分类作评注或元数据",
+        "对图标记不等于本批 verified",
+        "无人名连续四柱不收案例"
+      ],
+      "review": "source-reviewed",
+      "verified": false,
+      "relatedParagraphIds": [
+        "feixing-ziwei-doushu-yuanzhi:L0192-L0192",
+        "feixing-ziwei-doushu-yuanzhi:L0199-L0199"
+      ]
+    },
+    {
+      "paragraphId": "feixing-ziwei-doushu-yuanzhi:L0199-L0199",
+      "kind": "序跋目录",
+      "vernacular": "斗数观测录。page-008 卷题或书眉。",
+      "terms": [
+        "斗数观测录"
+      ],
+      "notes": [
+        "待分类作序跋目录",
+        "卷题不入算法",
+        "无人名连续四柱不收案例"
+      ],
+      "review": "source-reviewed",
+      "verified": false,
+      "relatedParagraphIds": [
+        "feixing-ziwei-doushu-yuanzhi:L0197-L0197",
+        "feixing-ziwei-doushu-yuanzhi:L0201-L0246"
+      ]
+    },
+    {
+      "paragraphId": "feixing-ziwei-doushu-yuanzhi:L0201-L0246",
+      "kind": "理论",
+      "vernacular": "墓田为先天谓之阴宅，住所为后天谓之阳宅。欲求后世子孙昌盛当由墓田入手。看阴阳宅必用向，子午线不能改易，以南北为正向。乾南坤北，相面又关乎阴阳宅。左观高则龙砂之方必高，右观高则虎砂之方。子孙风水形貌是历史分类，不转写。无人名连续四柱，不收案例。span=46，三条subsections连续覆盖0201-0246。",
+      "terms": [
+        "阴宅",
+        "阳宅",
+        "二十四向",
+        "子午线",
+        "龙砂",
+        "虎砂"
+      ],
+      "notes": [
+        "待分类作理论；span=46三条subsections连续覆盖0201-0246",
+        "无人名连续四柱不收案例；子孙风水形貌不转写",
+        "阴阳宅分套只归档；不改已落地风水或紫微算法"
+      ],
+      "review": "source-reviewed",
+      "verified": false,
+      "relatedParagraphIds": [
+        "feixing-ziwei-doushu-yuanzhi:L0199-L0199",
+        "feixing-ziwei-doushu-yuanzhi:L0253-L0282"
+      ],
+      "subsections": [
+        {
+          "id": "feixing-ziwei-doushu-yuanzhi:L0201-L0246:yinzhai-yangzhai",
+          "title": "阴宅阳宅",
+          "startLine": 201,
+          "endLine": 218,
+          "vernacular": "墓田为先天谓之阴宅，住所为后天谓之阳宅。既生以后列在后天之位，与墓田如合符节。培植先天涵养后天，此要好儿孙之法。",
+          "terms": [
+            "先天阴宅",
+            "后天阳宅"
+          ],
+          "notes": [
+            "子孙风水不转写"
+          ]
+        },
+        {
+          "id": "feixing-ziwei-doushu-yuanzhi:L0201-L0246:xiang-and-xiang",
+          "title": "向与子午",
+          "startLine": 219,
+          "endLine": 237,
+          "vernacular": "见了好儿孙他说是祖德坟地风水好。大凡看阴阳宅必用向，有二十四向之说。余意无论何向，子午线不能改易，以南北为正向，其余配向各有得失。",
+          "terms": [
+            "二十四向",
+            "子午线"
+          ],
+          "notes": [
+            "风水向法分套只归档"
+          ]
+        },
+        {
+          "id": "feixing-ziwei-doushu-yuanzhi:L0201-L0246:longhu-sha",
+          "title": "相面龙虎",
+          "startLine": 238,
+          "endLine": 246,
+          "vernacular": "乾南坤北自然之象，所以相面又关乎阴阳宅。左观高则阴宅左方龙砂之方必高，右观高则虎砂之方。",
+          "terms": [
+            "乾南坤北",
+            "龙砂",
+            "虎砂"
+          ],
+          "notes": [
+            "形貌风水不转写"
+          ]
+        }
+      ]
+    },
+    {
+      "paragraphId": "feixing-ziwei-doushu-yuanzhi:L0251-L0251",
+      "kind": "评注或元数据",
+      "vernacular": "page-009 对图审读标记 reviewed_against_image: page-009.png。是电子文本校次说明，不是古书断法。",
+      "terms": [
+        "reviewed_against_image",
+        "page-009"
+      ],
+      "notes": [
+        "待分类作评注或元数据",
+        "对图标记不等于本批 verified",
+        "无人名连续四柱不收案例"
+      ],
+      "review": "source-reviewed",
+      "verified": false,
+      "relatedParagraphIds": [
+        "feixing-ziwei-doushu-yuanzhi:L0201-L0246",
+        "feixing-ziwei-doushu-yuanzhi:L0253-L0282"
+      ]
+    },
+    {
+      "paragraphId": "feixing-ziwei-doushu-yuanzhi:L0253-L0282",
+      "kind": "理论",
+      "vernacular": "接上页虎砂：必高。两观高耸龙虎必然得配。正南有道悬针现，南低则天庭不满，北低则地阁陷落。面薄则地薄，面善地善，面恶地亦恶。形貌贵贱是历史分类，不转写。无人名连续四柱，不收案例。span=30，两条subsections连续覆盖0253-0282。",
+      "terms": [
+        "龙虎",
+        "悬针",
+        "天庭",
+        "地阁"
+      ],
+      "notes": [
+        "待分类作理论；span=30两条subsections连续覆盖0253-0282",
+        "无人名连续四柱不收案例；形貌贵贱不转写",
+        "相面配阴宅分套只归档"
+      ],
+      "review": "source-reviewed",
+      "verified": false,
+      "relatedParagraphIds": [
+        "feixing-ziwei-doushu-yuanzhi:L0251-L0251",
+        "feixing-ziwei-doushu-yuanzhi:L0284-L0284"
+      ],
+      "subsections": [
+        {
+          "id": "feixing-ziwei-doushu-yuanzhi:L0253-L0282:longhu-ting",
+          "title": "龙虎天庭",
+          "startLine": 253,
+          "endLine": 267,
+          "vernacular": "必高。两观高耸，龙虎必然得配。正南有道悬针现。南低则天庭不满，北低则地阁陷落。西北窪左顋下陷，东北窪右顋下陷。左额角巽巳，右额角坤未，内外饱满当然两角丰隆。",
+          "terms": [
+            "悬针",
+            "天庭",
+            "地阁",
+            "巽巳",
+            "坤未"
+          ],
+          "notes": [
+            "形貌不转写；窪、顋原字"
+          ]
+        },
+        {
+          "id": "feixing-ziwei-doushu-yuanzhi:L0253-L0282:mian-di",
+          "title": "面地相配",
+          "startLine": 268,
+          "endLine": 282,
+          "vernacular": "定主大发。面薄则地薄，面皮紧则其地亦紧，面善地善，面恶地亦恶。面窪之人多青黑，因地窪属水。详考之自然慧悟。",
+          "terms": [
+            "面薄地薄",
+            "面善地善"
+          ],
+          "notes": [
+            "贵贱形貌不转写"
+          ]
+        }
+      ]
+    },
+    {
+      "paragraphId": "feixing-ziwei-doushu-yuanzhi:L0284-L0284",
+      "kind": "理论",
+      "vernacular": "面有重痣，阴宅内外局必有孤坟，一痣一座，按卦位看方向。所以文曲为痣，即知其星之孤暗。临至亥子利于林泉，临至寅卯又是众水朝东。俗云面无善痣。孤坟孤暗是历史分类，不转写。无人名连续四柱，不收案例。",
+      "terms": [
+        "文曲为痣",
+        "孤坟",
+        "孤暗"
+      ],
+      "notes": [
+        "待分类作理论",
+        "无人名连续四柱不收案例；孤坟孤暗不转写",
+        "文曲孤暗分套只归档；不改已落地紫微算法"
+      ],
+      "review": "source-reviewed",
+      "verified": false,
+      "relatedParagraphIds": [
+        "feixing-ziwei-doushu-yuanzhi:L0253-L0282",
+        "feixing-ziwei-doushu-yuanzhi:L0291-L0291"
+      ]
+    },
+    {
+      "paragraphId": "feixing-ziwei-doushu-yuanzhi:L0289-L0289",
+      "kind": "评注或元数据",
+      "vernacular": "page-010 对图审读标记 reviewed_against_image: page-010.png。是电子文本校次说明，不是古书断法。",
+      "terms": [
+        "reviewed_against_image",
+        "page-010"
+      ],
+      "notes": [
+        "待分类作评注或元数据",
+        "对图标记不等于本批 verified",
+        "无人名连续四柱不收案例"
+      ],
+      "review": "source-reviewed",
+      "verified": false,
+      "relatedParagraphIds": [
+        "feixing-ziwei-doushu-yuanzhi:L0284-L0284",
+        "feixing-ziwei-doushu-yuanzhi:L0291-L0291"
+      ]
+    },
+    {
+      "paragraphId": "feixing-ziwei-doushu-yuanzhi:L0291-L0291",
+      "kind": "理论",
+      "vernacular": "研究命理必要研究相理，相理通则地理易明。地如人也，能相人则易相地。人假地假，人真地真。已发未发不发或另选。发与不发是历史分类，不转写。无人名连续四柱，不收案例。",
+      "terms": [
+        "命理",
+        "相理",
+        "地理"
+      ],
+      "notes": [
+        "待分类作理论",
+        "无人名连续四柱不收案例；发与不发不转写",
+        "命理相理地理分套只归档"
+      ],
+      "review": "source-reviewed",
+      "verified": false,
+      "relatedParagraphIds": [
+        "feixing-ziwei-doushu-yuanzhi:L0289-L0289",
+        "feixing-ziwei-doushu-yuanzhi:L0293-L0293"
+      ]
+    },
+    {
+      "paragraphId": "feixing-ziwei-doushu-yuanzhi:L0293-L0293",
+      "kind": "理论",
+      "vernacular": "命理亦是相法之一。相天者天文，相地者地理，相人者相面，看命者即是相命。相面骨格易气色难。遇年运月令日時顺境气色自然愉快，逆境自然滞暗。不把行限当出生柱。无人名连续四柱，不收案例。",
+      "terms": [
+        "相天",
+        "相地",
+        "相面",
+        "相命"
+      ],
+      "notes": [
+        "待分类作理论",
+        "无人名连续四柱不收案例；不把行限当出生柱",
+        "相命气色分套只归档"
+      ],
+      "review": "source-reviewed",
+      "verified": false,
+      "relatedParagraphIds": [
+        "feixing-ziwei-doushu-yuanzhi:L0291-L0291",
+        "feixing-ziwei-doushu-yuanzhi:L0295-L0295"
+      ]
+    },
+    {
+      "paragraphId": "feixing-ziwei-doushu-yuanzhi:L0295-L0295",
+      "kind": "理论",
+      "vernacular": "谈命者大非易事。平日考验工夫与记忆力固不必论。惟遇谈命时先具有心理学，而后由原书文理意义发挥。不作对现实用户的操作指令。无人名连续四柱，不收案例。",
+      "terms": [
+        "谈命",
+        "心理学",
+        "原书文理"
+      ],
+      "notes": [
+        "待分类作理论；不作现代操作步骤",
+        "无人名连续四柱不收案例",
+        "谈命法分套只归档"
+      ],
+      "review": "source-reviewed",
+      "verified": false,
+      "relatedParagraphIds": [
+        "feixing-ziwei-doushu-yuanzhi:L0293-L0293",
+        "feixing-ziwei-doushu-yuanzhi:L0302-L0302"
+      ]
+    },
+    {
+      "paragraphId": "feixing-ziwei-doushu-yuanzhi:L0300-L0300",
+      "kind": "评注或元数据",
+      "vernacular": "page-011 对图审读标记 reviewed_against_image: page-011.png。是电子文本校次说明，不是古书断法。",
+      "terms": [
+        "reviewed_against_image",
+        "page-011"
+      ],
+      "notes": [
+        "待分类作评注或元数据",
+        "对图标记不等于本批 verified",
+        "无人名连续四柱不收案例"
+      ],
+      "review": "source-reviewed",
+      "verified": false,
+      "relatedParagraphIds": [
+        "feixing-ziwei-doushu-yuanzhi:L0295-L0295",
+        "feixing-ziwei-doushu-yuanzhi:L0302-L0302"
+      ]
+    },
+    {
+      "paragraphId": "feixing-ziwei-doushu-yuanzhi:L0302-L0302",
+      "kind": "理论",
+      "vernacular": "接谈命：或俗话或方言或土语必要使人明白，或形容或比拟或因人而施。顺乎社会潮流随机应变。遇外国人应具有相当言语智识。外洋多讲究占卜相法。不作对现实用户的操作指令。无人名连续四柱，不收案例。",
+      "terms": [
+        "俗话方言",
+        "随机应变",
+        "占卜相法"
+      ],
+      "notes": [
+        "待分类作理论；不作现代操作步骤",
+        "无人名连续四柱不收案例",
+        "谈命法分套只归档"
+      ],
+      "review": "source-reviewed",
+      "verified": false,
+      "relatedParagraphIds": [
+        "feixing-ziwei-doushu-yuanzhi:L0300-L0300",
+        "feixing-ziwei-doushu-yuanzhi:L0304-L0304"
+      ]
+    },
+    {
+      "paragraphId": "feixing-ziwei-doushu-yuanzhi:L0304-L0304",
+      "kind": "理论",
+      "vernacular": "命盘全部诸星曜并非如所写排列一齐，原似天上星辰罗列一般，有远近大小尖圆高低明暗连贯隔离，参差不齐。地理相法亦然。无人名连续四柱，不收案例。",
+      "terms": [
+        "命盘星曜",
+        "参差不齐"
+      ],
+      "notes": [
+        "待分类作理论",
+        "无人名连续四柱不收案例",
+        "星曜罗列分套只归档；不改已落地紫微算法"
+      ],
+      "review": "source-reviewed",
+      "verified": false,
+      "relatedParagraphIds": [
+        "feixing-ziwei-doushu-yuanzhi:L0302-L0302",
+        "feixing-ziwei-doushu-yuanzhi:L0306-L0306"
+      ]
+    },
+    {
+      "paragraphId": "feixing-ziwei-doushu-yuanzhi:L0306-L0306",
+      "kind": "理论",
+      "vernacular": "古语有女子十四岁天癸至之说。如女命十四岁必行其生年之桃花限运，或者身命垣再遇流年红鸾天喜咸池。其早为十七，中则十八，晚而十九。文末截于尤為心性不。女命婚姻是历史分类，不转写。不把行限当出生柱。无人名连续四柱，不收案例。",
+      "terms": [
+        "天癸",
+        "桃花限运",
+        "红鸾天喜咸池"
+      ],
+      "notes": [
+        "待分类作理论；与下页L0313截句相连",
+        "无人名连续四柱不收案例；女命婚姻不转写；不把行限当出生柱",
+        "桃花红鸾咸池分套只归档；不改已落地紫微算法"
+      ],
+      "review": "source-reviewed",
+      "verified": false,
+      "relatedParagraphIds": [
+        "feixing-ziwei-doushu-yuanzhi:L0304-L0304",
+        "feixing-ziwei-doushu-yuanzhi:L0313-L0357"
+      ]
+    },
+    {
+      "paragraphId": "feixing-ziwei-doushu-yuanzhi:L0311-L0311",
+      "kind": "评注或元数据",
+      "vernacular": "page-012 对图审读标记 reviewed_against_image: page-012.png。是电子文本校次说明，不是古书断法。",
+      "terms": [
+        "reviewed_against_image",
+        "page-012"
+      ],
+      "notes": [
+        "待分类作评注或元数据",
+        "对图标记不等于本批 verified",
+        "无人名连续四柱不收案例"
+      ],
+      "review": "source-reviewed",
+      "verified": false,
+      "relatedParagraphIds": [
+        "feixing-ziwei-doushu-yuanzhi:L0306-L0306",
+        "feixing-ziwei-doushu-yuanzhi:L0313-L0357"
+      ]
+    },
+    {
+      "paragraphId": "feixing-ziwei-doushu-yuanzhi:L0313-L0357",
+      "kind": "理论",
+      "vernacular": "接上页心性不定之危险期。出嫁在此时期最为适宜。子平有冲辰之说。每遇劫路旬空流羊等星有被阻隔。红鸾大耗同宫行限遇之。男子十六岁真精全。红鸾限老年人不喜。原书所载在民初袁氏时代京兆尹王治馨枪决。王治馨是历史人名，无连续四柱，不收案例。女命刑死疾病婚配是历史分类，不转写。不把行限当出生柱。span=45，三条subsections连续覆盖0313-0357。",
+      "terms": [
+        "危险期",
+        "劫路旬空流羊",
+        "红鸾大耗",
+        "四马地"
+      ],
+      "notes": [
+        "待分类作理论；span=45三条subsections连续覆盖0313-0357；与上页L0306截句相连",
+        "王治馨无人名连续四柱不收案例；女命刑死疾病婚配不转写；不把行限当出生柱",
+        "红鸾大耗劫路分套只归档"
+      ],
+      "review": "source-reviewed",
+      "verified": false,
+      "relatedParagraphIds": [
+        "feixing-ziwei-doushu-yuanzhi:L0311-L0311",
+        "feixing-ziwei-doushu-yuanzhi:L0364-L0364"
+      ],
+      "subsections": [
+        {
+          "id": "feixing-ziwei-doushu-yuanzhi:L0313-L0357:weixian-hongluan",
+          "title": "危险期红鸾",
+          "startLine": 313,
+          "endLine": 330,
+          "vernacular": "定之危险期。因发育已达极点，出嫁在此时期最为适宜。子平有冲辰之说。每遇劫路旬空流羊有被阻隔。红鸾大耗同宫行限遇之紧要。",
+          "terms": [
+            "危险期",
+            "冲辰",
+            "红鸾大耗"
+          ],
+          "notes": [
+            "女命婚配疾病不转写"
+          ]
+        },
+        {
+          "id": "feixing-ziwei-doushu-yuanzhi:L0313-L0357:nanming-sima",
+          "title": "男命四马",
+          "startLine": 331,
+          "endLine": 351,
+          "vernacular": "男子十六岁真精全，男命亦在十七十八，晚则十九岁。十八岁合生年咸池煞。十四十七岁均行四马地。古以廿岁为冠。",
+          "terms": [
+            "真精全",
+            "咸池煞",
+            "四马地"
+          ],
+          "notes": [
+            "男命婚配不转写；不把行限当出生柱"
+          ]
+        },
+        {
+          "id": "feixing-ziwei-doushu-yuanzhi:L0313-L0357:wang-zhixin",
+          "title": "红鸾限王治馨",
+          "startLine": 352,
+          "endLine": 357,
+          "vernacular": "红鸾限老年人不喜。原书所载在民初袁氏时代，京兆尹王治馨枪决后，又有德胜桥某巷。王治馨无人名连续四柱，不收案例。",
+          "terms": [
+            "红鸾限",
+            "王治馨"
+          ],
+          "notes": [
+            "历史刑死不转写；文末截于某巷"
+          ]
+        }
+      ]
+    },
+    {
+      "paragraphId": "feixing-ziwei-doushu-yuanzhi:L0362-L0362",
+      "kind": "评注或元数据",
+      "vernacular": "page-013 对图审读标记 reviewed_against_image: page-013.png。是电子文本校次说明，不是古书断法。",
+      "terms": [
+        "reviewed_against_image",
+        "page-013"
+      ],
+      "notes": [
+        "待分类作评注或元数据",
+        "对图标记不等于本批 verified",
+        "无人名连续四柱不收案例"
+      ],
+      "review": "source-reviewed",
+      "verified": false,
+      "relatedParagraphIds": [
+        "feixing-ziwei-doushu-yuanzhi:L0313-L0357",
+        "feixing-ziwei-doushu-yuanzhi:L0364-L0364"
+      ]
+    },
+    {
+      "paragraphId": "feixing-ziwei-doushu-yuanzhi:L0364-L0364",
+      "kind": "理论",
+      "vernacular": "接德胜桥某巷：一老翁七十余因行红鸾桃花限，强奸九岁女，亦被枪决德胜门外校场。二八者所谓九还七返八归六居，十六为男，十四为女。刑死女命是历史分类，不转写。不把行限当出生柱。无人名连续四柱，不收案例。",
+      "terms": [
+        "红鸾桃花限",
+        "二八",
+        "九还七返八归六居"
+      ],
+      "notes": [
+        "待分类作理论；与上页L0357截句相连",
+        "无人名连续四柱不收案例；刑死女命不转写；不把行限当出生柱",
+        "红鸾桃花二八分套只归档"
+      ],
+      "review": "source-reviewed",
+      "verified": false,
+      "relatedParagraphIds": [
+        "feixing-ziwei-doushu-yuanzhi:L0362-L0362",
+        "feixing-ziwei-doushu-yuanzhi:L0366-L0389"
+      ]
+    },
+    {
+      "paragraphId": "feixing-ziwei-doushu-yuanzhi:L0366-L0389",
+      "kind": "理论",
+      "vernacular": "人每以阴宅坤方低窪与放水沟渠坑道均不在意。余考之坤方低窪放水等多主母道不善理家或操劳身弱，甚者死亡续娶。申酉一方内部低窪，女媳两方贞洁难操。克母女命续娶是历史分类，不转写。无人名连续四柱，不收案例。span=24，两条subsections连续覆盖0366-0389。",
+      "terms": [
+        "坤方低窪",
+        "母道",
+        "乾纲",
+        "申酉"
+      ],
+      "notes": [
+        "待分类作理论；span=24两条subsections连续覆盖0366-0389",
+        "无人名连续四柱不收案例；克母女命续娶不转写",
+        "坤方母道分套只归档"
+      ],
+      "review": "source-reviewed",
+      "verified": false,
+      "relatedParagraphIds": [
+        "feixing-ziwei-doushu-yuanzhi:L0364-L0364",
+        "feixing-ziwei-doushu-yuanzhi:L0394-L0394"
+      ],
+      "subsections": [
+        {
+          "id": "feixing-ziwei-doushu-yuanzhi:L0366-L0389:kun-low",
+          "title": "坤方低窪",
+          "startLine": 366,
+          "endLine": 378,
+          "vernacular": "阴宅坤方低窪与放水沟渠坑道。多主母道不善理家或操劳身弱，或阴险暗昧，甚者死亡续娶。坤纲不持与乾纲不振同等关系。",
+          "terms": [
+            "坤方低窪",
+            "母道",
+            "乾纲"
+          ],
+          "notes": [
+            "克母续娶不转写"
+          ]
+        },
+        {
+          "id": "feixing-ziwei-doushu-yuanzhi:L0366-L0389:shenyou-nuxi",
+          "title": "申酉女媳",
+          "startLine": 379,
+          "endLine": 389,
+          "vernacular": "女子浮荡不静亦不为善。坤母不稳，子孙亦易衰微失教。申酉一方内部低窪成下坡之势，女媳两方贞洁难操。",
+          "terms": [
+            "申酉低窪",
+            "女媳"
+          ],
+          "notes": [
+            "女命子孙不转写"
+          ]
+        }
+      ]
+    },
+    {
+      "paragraphId": "feixing-ziwei-doushu-yuanzhi:L0394-L0394",
+      "kind": "评注或元数据",
+      "vernacular": "page-014 对图审读标记 reviewed_against_image: page-014.png。是电子文本校次说明，不是古书断法。",
+      "terms": [
+        "reviewed_against_image",
+        "page-014"
+      ],
+      "notes": [
+        "待分类作评注或元数据",
+        "对图标记不等于本批 verified",
+        "无人名连续四柱不收案例"
+      ],
+      "review": "source-reviewed",
+      "verified": false,
+      "relatedParagraphIds": [
+        "feixing-ziwei-doushu-yuanzhi:L0366-L0389",
+        "feixing-ziwei-doushu-yuanzhi:L0396-L0396"
       ]
     }
   ]
