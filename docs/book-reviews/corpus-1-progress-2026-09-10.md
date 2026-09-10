@@ -563,3 +563,26 @@ PYTHONDONTWRITEBYTECODE=1 python3 tools/validate-annotations.py --annotations re
   - 薄者纵有食必夭；俗者纵有衣食亦多迍
 - 疑字/残：图像未转写、□□、水形不得/得水、神异赋末与八相/七字法多残；史例陶朱/王恺石崇/高祖/老子/尧舜不是核验
 - 校验：`{"ok": true, "books": 1, "files": 1, "entries": 849, "source_reviewed": 627, "errors": []}`。校验器只做结构与 ID，不是语义证书。
+- commit：`553ae97`
+
+## P2 皇极经世 · 识典 DZ1040 · checkpoint 1
+
+- 文件：`sources/normalized/shidianguji/DZ1040/text.md`
+- SHA256：`79ac49e33b2737232b8b0fbd9875131dfe922176a818458f62531712a553c409`（与队列一致）
+- catalogComplete false：缺卷（卷1中–4下、5下、6上中等）不补
+- 段 0–299：`huangji-jingshi:shidian-DZ1040:P7377235377121378355` … `P7451218750755471371`
+- 新增 `references/annotations/divination/huangji-jingshi--shidian-DZ1040.json`：300 条
+  - source-reviewed 296，draft 4（20/21 辰。/辰无地支疑阙辰辰；43 辰辰四百一十五疑四百二十五；54 辰酉五百六十一一疑五百六十二）
+  - 未改主本；verified 全 false
+- 关键条件/否定/疑字：
+  - 星辰表/年表只记单元格，不展开为占断，不连成全表，不补缺年
+  - 以元经会之一–六=观物篇之一–六；以运经世之一–六=观物篇之二十五–三十
+  - 82/83 经世之子二千一百四十九重出两存；243/244 二千一百六十一重出两存
+  - 经会巳六转午七、经运癸一百八十转甲一百八十一，只记坐标
+  - 甲辰尧肇位；建寅月为始是书中岁首，不是已实现历法
+  - 尧求禅/舜受命齐七政流四凶/舜格文祖命九官/禹受命神宗/涂山万国/启甘之野/太康践位：书中编年史例不是核验
+  - 206 段末丁亥至癸巳只列干支无纪事
+  - 原文明明扬测陋疑侧陋；四聦；不改正文
+- 长段 subsections：206
+- 校验：`{"ok": true, "books": 1, "files": 1, "entries": 300, "source_reviewed": 296, "errors": []}`。校验器只做结构与 ID，不是语义证书。
+- 未决项：皇极 CP2– 段 300–2260；玉匣记补本 NA09036；麻衣主本；地理辨正 SDZJ0504。三命通会 HY1521 已迁出本 lane。
