@@ -146,7 +146,7 @@ PYTHONDONTWRITEBYTECODE=1 python3 tools/validate-annotations.py --annotations re
 
 ## 未决项
 
-- P1/P2 其余 12 个 job 未开始。
+- P1 紫微全书 SDZJ0170、三命通会 HY1521 及 P2 其余 10 个 job 未开始。
 - 1423 条 OCR-draft 门槛不在本队列，不消除。
 - 残表、金氏旁注、一云别说、两套游神、日干墓/五行墓、乙丙利明/丁利暗、旺禄临身两套、毕法与 818 分层保持并存；疑字不改正文。
 - 电子阅读 ≠ 影印校勘，≠ 人工 verified。
@@ -156,4 +156,31 @@ PYTHONDONTWRITEBYTECODE=1 python3 tools/validate-annotations.py --annotations re
 - CP1：`c79b4dcf3129e5e9442a1e32b7d1e2ef40e00b81`
 - CP2：`4b01f22738cd9f777d2e65a3345e0cffe18604d0`
 - CP3：`9cf7fd88e406bab4842e4b5f09aaf78ba3d801f6`
-- CP4：提交后回填。
+- CP4：`13a0ab256061780a5029b87113cf88e274e78591`
+
+## P1 珞琭子三命消息赋注 · 识典 SK1605
+
+- 文件：`sources/normalized/shidianguji/SK1605/text.md`
+- SHA256：`a5b639ad155b4de2b12ac23a8e37028c46d07923bc5a16a4f406eed8855b97c8`（与队列一致）
+- 16 段：`luoluzi-sanming:shidian-SK1605:P7640185840559357962` … `P7640185856267976750`
+- 新增 `references/annotations/luming-nayin/luoluzi-sanming--shidian-SK1605.json`：16 条，source-reviewed 15，draft 1（段 5 版面标记无字），verified 全 false
+- 未改主本 `luoluzi-sanming.json`，不替代主文本、不计独立投票
+- 关键条件/否定/救应：
+  - 生时天元居旺相则佳，死囚见多而晚成
+  - 干向禄无禄则向财向寿；甲六月下旬有官、上旬中气无官，年月时申巳酉丑运行西方却有官
+  - 将星扶德而本主休囚只虚名
+  - 紧用不可受害；不损外尊则克战逢灾自愈
+  - 闻喜不喜：金囚休虽见不成庆；十月十一月火无气不能制金
+  - 当忧不忧：有乙卯或春生或丙丁制金则不忧
+  - 财命有气背禄不贫；财绝命衰纵建禄不富
+  - 生月带禄 ≠ 建禄不富：甲乙秋、丙丁冬、戊己春、庚辛夏、壬癸四季才是带官禄；八月火死木绝，有火不损官、有木不劫财
+  - 身旺鬼绝虽破命长年；鬼旺身衰逢建命夭寿
+  - 夹禄被太岁填实则华而不实；五阳劫财克妻、五阴败财不克妻
+  - 与生地相逢宜退身避位；伏吟吉会凶会两存
+  - 三宫元吉则凶运祸迟；始末皆凶则吉运灾速
+  - 甲见己乙见戊为仁，甲见戊乙见己为不仁；逢之为灾去之为福
+  - 杀克身是官来克我为贵，身克杀则不贵
+  - 根本元无则运临贵地不发、晚年归聚无所长
+- 疑字/残：段 5 版面无字；段 9/10、14/15 跨段未完句；干推两重注云未详；段 15 末图像未转写。𧰼/㐫/已瘧編等不改正文
+- 长段 subsections：9/10/14/15
+- 校验：`{"ok": true, "books": 1, "files": 1, "entries": 16, "source_reviewed": 15, "errors": []}`。校验器只做结构与 ID，不是语义证书。
