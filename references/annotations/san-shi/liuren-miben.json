@@ -1,7 +1,7 @@
 {
   "bookSlug": "liuren-miben",
   "sourceTitle": "大六壬秘本（现有电子主文本）",
-  "scopeNote": "本文件只覆盖已逐段实读范围：卷十三 L2985–3248；卷十四 L3253–3841；论终身至论空亡作鬼 L3846–4046；论破神至论刑冲害 L4048–4174；论丁神 L4176–4307；神煞起例至太岁 L4309–4367；干支总论至金氏隔角 L4369–4480。不代表全书 2643 段已审。source-reviewed 不是影印校勘或人工 verified；案例保持 verified=false。凶神受制不加于人；日鬼受克为吉；无子不寻暗遁；德旺刑反为用；两鬼忧喜得半。",
+  "scopeNote": "本文件只覆盖已逐段实读范围：卷十三 L2985–3248；卷十四 L3253–3841；论终身至论空亡作鬼 L3846–4046；论破神至论刑冲害 L4048–4174；论丁神 L4176–4307；神煞起例至太岁 L4309–4367；干支总论至金氏空脱 L4369–4550。不代表全书 2643 段已审。source-reviewed 不是影印校勘或人工 verified；案例保持 verified=false。救神可免、身强鬼不侵、子旺可救、木比水生鬼罢；天马≠驿马；绳索当缚莫缚。",
   "entries": [
     {
       "paragraphId": "liuren-miben:L2985-L2985",
@@ -8106,6 +8106,453 @@
       "vernacular": "初见其良两相协，中间有诈不相入。谁知堕在诈陷中，欲结不结徒自说。歌句，注在下行。",
       "terms": [
         "诈陷"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "liuren-miben:L4482-L4482",
+      "kind": "规则候选",
+      "vernacular": "用马干合是见良与协，因不虞其诈而以腹心相待；次入空亡日害，是中见其诈，不相入乃知为其所欺，反以计术害我，始之不慎，悔之何用。注上行歌。须用马+干合才初见良；次入空亡日害才中见诈。缺次入空害不在本行套诈陷。",
+      "terms": [
+        "用马",
+        "空亡"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false,
+      "relatedParagraphIds": [
+        "liuren-miben:L4480-L4480"
+      ]
+    },
+    {
+      "paragraphId": "liuren-miben:L4484-L4484",
+      "kind": "理论",
+      "vernacular": "程途月是行将去，却有良朋相遇见，同有忧心不可醒，他人藉是成婚眷。",
+      "terms": [
+        "良朋"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "liuren-miben:L4486-L4486",
+      "kind": "规则候选",
+      "vernacular": "道路神加于望日，是程途月是行将去；中传巳为良朋，带德作合，是良朋相遇。同道之中为见同心之忧，即效陈雷之欢，终成秦晋之好。须道路神加望日+中传巳带德作合。电子本「道路神」起例未见本段，不补未见之表。",
+      "terms": [
+        "道路神",
+        "望日"
+      ],
+      "notes": [
+        "道路神起例信息不足，不默认。"
+      ],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "liuren-miben:L4488-L4488",
+      "kind": "理论",
+      "vernacular": "干上骑马兮下骑羊，意在踌躇兼刃方，欲乘不成徒自伤，纵然相合也开张。",
+      "terms": [
+        "羊刃"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "liuren-miben:L4490-L4490",
+      "kind": "规则候选",
+      "vernacular": "午未相加偶合，是有刃争也，主意在两事之间而踌躇不定，传入刑冲破害，虽合有变，虽成不成，凡事终久开张。须午未相加+传入刑冲破害。开张是散变，是否定凡相合皆成。",
+      "terms": [
+        "午未",
+        "开张"
+      ],
+      "notes": [
+        "传入刑冲破害才虽合有变。"
+      ],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "liuren-miben:L4492-L4492",
+      "kind": "理论",
+      "vernacular": "有鬼相迷入祸方，要个人来救我良。救而不救恐自慌，不如先走跳高墙。有救、救而不救、跳墙三支见注。",
+      "terms": [
+        "救神"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "liuren-miben:L4494-L4494",
+      "kind": "规则候选",
+      "vernacular": "初传作鬼克干带迷神，是鬼来迷我入祸方。得救神可免祸。若子孙或生或祸，是救而不救，而我自慌。若传见丁神，或见辰戌，不如跳墙避之。电子本「或生或祸」不改正文。救神可免 vs 子孙或生或祸则自慌 vs 丁或辰戌则避，三支不得塌成凡鬼迷皆跳墙，也不得写成无救仍免。",
+      "terms": [
+        "迷神",
+        "救神",
+        "丁神"
+      ],
+      "notes": [
+        "得救神可免祸不得删。",
+        "或生或祸待核。"
+      ],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "liuren-miben:L4496-L4496",
+      "kind": "理论",
+      "vernacular": "课中有鬼与我祸，不得进兮不得退。旁得人来捉住他，也得平安可無事。年命有救见注。",
+      "terms": [
+        "救神"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "liuren-miben:L4498-L4498",
+      "kind": "规则候选",
+      "vernacular": "用鬼克干是与我为仇，前后遇空，是不得进退，计亦穷矣。年命上神有救，可以制鬼，则我無事。进退不得绑用鬼+前后空；無事须年命有救制鬼。",
+      "terms": [
+        "用鬼",
+        "空亡"
+      ],
+      "notes": [
+        "年命有救制鬼则無事不得删。"
+      ],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "liuren-miben:L4500-L4500",
+      "kind": "理论",
+      "vernacular": "有鬼附鬼不为凶，任他丁马兴迷蒙。三三五五自相穷，总是人强鬼不凶。人强是条件。",
+      "terms": [
+        "身强鬼不侵"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "liuren-miben:L4502-L4502",
+      "kind": "规则候选",
+      "vernacular": "日干旺相得时，带德禄神天喜，支传上见鬼虽多，不敢动。任其丁马、迷神三三五五，反为财，身强鬼不侵。须干旺相得时+德禄天喜。缺件不套有鬼附鬼不为凶，也不得写成凡鬼多皆凶。",
+      "terms": [
+        "德禄",
+        "天喜"
+      ],
+      "notes": [
+        "身强鬼不侵不得扩到休囚无德禄。"
+      ],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "liuren-miben:L4504-L4504",
+      "kind": "理论",
+      "vernacular": "陷入其功不可前，马居鸣后自萧然。子宜速转毋轻进，庶使吾功得保全。电子本「鸣后」与下注「背马」用词不一，不据注改歌。",
+      "terms": [
+        "背马"
+      ],
+      "notes": [
+        "鸣后 vs 背马待核。"
+      ],
+      "review": "draft",
+      "verified": false
+    },
+    {
+      "paragraphId": "liuren-miben:L4506-L4506",
+      "kind": "规则候选",
+      "vernacular": "干被上神克，用乘太阴、天空为自陷奇功，而不前矣。二马居干之后，在传中谓之背马，而马必不可进，只宜速转毋往保功，庶不终败。须干被上克+用乘阴空+二马居干后在传。速转保功是救应，不得写成背马仍可进。",
+      "terms": [
+        "背马",
+        "太阴",
+        "天空"
+      ],
+      "notes": [
+        "只宜速转毋往保功不得删。"
+      ],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "liuren-miben:L4508-L4508",
+      "kind": "理论",
+      "vernacular": "当缚莫缚，缚则有凶，当打莫打，打则有祸。歌句总断，细则见注分绳索/羊刃。",
+      "terms": [
+        "绳索",
+        "羊刃"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "liuren-miben:L4510-L4510",
+      "kind": "规则候选",
+      "vernacular": "用传带绳索杀，是缚人之象，作鬼克干，当缚莫缚可也。用传带羊刃、勾陈为打人之象，作鬼克干，当打莫打可也。必欲缚人打人，必致凶祸。绳煞正酉逆四仲。索煞正卯逆四仲。缚、打分煞，皆须作鬼克干。缺鬼克不在本行套当缚当打。",
+      "terms": [
+        "绳煞",
+        "索煞",
+        "羊刃",
+        "勾陈"
+      ],
+      "notes": [
+        "必欲缚打必致凶祸不得写成可缚可打。"
+      ],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "liuren-miben:L4512-L4512",
+      "kind": "理论",
+      "vernacular": "合浦明珠何日逢，一木三金三火熔。推事不久复沉蒙，毕竟三回两次中。电子本「三火」与下注「二火」不一致，不据注改歌。",
+      "terms": [
+        "争财"
+      ],
+      "notes": [
+        "三火 vs 二火待核。"
+      ],
+      "review": "draft",
+      "verified": false
+    },
+    {
+      "paragraphId": "liuren-miben:L4514-L4514",
+      "kind": "规则候选",
+      "vernacular": "明珠虽逢，课传中一木三金二火，金固为日之财，二火又为日之比。木既生我而亦生他，兄弟争财而金不得专矣。再加劫煞凶神，至争讼不宁而事情多滞。不三回两次，安得顺乎。注用二火，与歌三火分读。争财滞须一木三金二火+劫煞。",
+      "terms": [
+        "比劫",
+        "劫煞"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false,
+      "relatedParagraphIds": [
+        "liuren-miben:L4512-L4512"
+      ]
+    },
+    {
+      "paragraphId": "liuren-miben:L4516-L4516",
+      "kind": "理论",
+      "vernacular": "适遇子木又入水，劫有阴私劫人起。得才又得劫人钱，一路迢迢主有喜。电子本「才」读财，不改正文。",
+      "terms": [
+        "阴私"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "liuren-miben:L4518-L4518",
+      "kind": "规则候选",
+      "vernacular": "木加子，又木得子水相生，亦为木之沐浴地，乘太阴、天后为日之财，又为生气喜气，是与劫人有阴私之情，即得其劫奸而得财，又得其利，一路迢迢。须木加子+阴后为日财+生气喜气。占象条件，不改取传。",
+      "terms": [
+        "沐浴",
+        "太阴",
+        "天后"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "liuren-miben:L4520-L4520",
+      "kind": "理论",
+      "vernacular": "家有祸起，惟父不喜。支子无良，令人生死。干父支子见注。",
+      "terms": [
+        "干父支子"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "liuren-miben:L4522-L4522",
+      "kind": "规则候选",
+      "vernacular": "干父支子，以干克支，是父怒子。干为人、支为宅，支带咸池、劫煞、盗神，是家有祸起，乃子之不良而父欲克之，则子之祸可迨。若支上见生则其罪犹可，支上见死气罪不容诛。家祸须干克支+支带咸池劫煞盗神。见生罪犹可是否定凡父克子皆死。",
+      "terms": [
+        "咸池",
+        "劫煞",
+        "盗神"
+      ],
+      "notes": [
+        "支上见生罪犹可不得删。"
+      ],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "liuren-miben:L4524-L4524",
+      "kind": "理论",
+      "vernacular": "人有私事，不可以言。子露其风，死遭子残。",
+      "terms": [
+        "闭口"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "liuren-miben:L4526-L4526",
+      "kind": "规则候选",
+      "vernacular": "干父支子。干神带劫煞，乘太阴闭口，是父有阴私事，谋人之行，不可与人言。支神反克干神，或与传用以克干神带朱雀、丁神、谩语，是子露风于人而致父之死于非命。阴私绑干劫煞+太阴闭口；露风致死须支或传用克干+朱雀丁神谩语。两支不得合成凡父有私皆死。",
+      "terms": [
+        "闭口",
+        "谩语",
+        "朱雀"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "liuren-miben:L4528-L4528",
+      "kind": "理论",
+      "vernacular": "先庚三日后庚三，此日云为进退间。务宜准此自盘桓，马住马行不脱鞍。",
+      "terms": [
+        "先庚后庚"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "liuren-miben:L4530-L4530",
+      "kind": "规则候选",
+      "vernacular": "先庚三日，丁也，丁主变动；后庚三日，辛也，辛主外隐之神。丁主动，辛主退，是不进退而盘桓矣。天马者月之马，驿马者日之马。一马出行有前往之劳，一马落空有欲止之机，是一行一住而不脱鞍，欲行又止、欲成又败。天马≠驿马。一行一住须一马出行+一马落空，缺落空不在本行套不脱鞍。",
+      "terms": [
+        "天马",
+        "驿马",
+        "丁",
+        "辛"
+      ],
+      "notes": [
+        "天马月马、驿马日马分绑，不得写成凡马皆同。"
+      ],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "liuren-miben:L4532-L4532",
+      "kind": "理论",
+      "vernacular": "有马不行，诸事宜停，子无前往，诸事不成。落空见注。",
+      "terms": [
+        "马"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "liuren-miben:L4534-L4534",
+      "kind": "规则候选",
+      "vernacular": "马主动，或落空则为不能行，诸事不成，岂能往乎。落空才不行，缺落空不套有马不行。",
+      "terms": [
+        "马",
+        "空亡"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "liuren-miben:L4536-L4536",
+      "kind": "理论",
+      "vernacular": "上有鬼兮不可上，下有鬼命不可下。中倚一个水木地，上下鬼来终是罢。水木救见注。电子本「鬼命」不改正文。",
+      "terms": [
+        "救神"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "liuren-miben:L4538-L4538",
+      "kind": "规则候选",
+      "vernacular": "木神作用，上见太阴，是上有鬼不可上也。下乘申酉，是下有鬼不可下也。上下逼迫将何以望。或见木比，或见水生，是有救神，上下之鬼罢矣，余仿此。上下鬼分太阴/申酉。有木比或水生则鬼罢，是否定凡上下有鬼皆不可。",
+      "terms": [
+        "太阴",
+        "申酉"
+      ],
+      "notes": [
+        "木比水生则上下之鬼罢不得删。"
+      ],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "liuren-miben:L4540-L4540",
+      "kind": "理论",
+      "vernacular": "一鬼有情，一鬼无情。相逢何日，解我疑谋。",
+      "terms": [
+        "二鬼"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "liuren-miben:L4542-L4542",
+      "kind": "规则候选",
+      "vernacular": "课见二鬼，一鬼落空，一鬼克干，一鬼欲害我，一鬼不害我，凶吉不成而我之疑谋说不得解矣。须二鬼分空与克干。凶吉不成是否定二鬼皆成祸。",
+      "terms": [
+        "二鬼",
+        "空亡"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "liuren-miben:L4544-L4544",
+      "kind": "理论",
+      "vernacular": "一鬼二鬼并立鬼，只要有个好儿子。不分前后事如何，他日家财还兴起。子旺可救。",
+      "terms": [
+        "子孙"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "liuren-miben:L4546-L4546",
+      "kind": "规则候选",
+      "vernacular": "课传官鬼虽多，有子旺相，为吉可救。事败复兴，岂鬼多而忌哉。子旺相可救是否定凡鬼多皆忌。缺子旺不在本行套复兴。",
+      "terms": [
+        "官鬼",
+        "子孙"
+      ],
+      "notes": [
+        "有子旺相为吉可救不得删。"
+      ],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "liuren-miben:L4548-L4548",
+      "kind": "理论",
+      "vernacular": "阴空辰戌，用鬼达刑，被人赚脱，谩语无因。电子本「达刑」不改正文。",
+      "terms": [
+        "谩语"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "liuren-miben:L4550-L4550",
+      "kind": "规则候选",
+      "vernacular": "辰戌乘空阴为用，作鬼克干，若带谩语，主无中生有之事而空脱我之财也。须辰戌乘空阴为用+鬼克干+谩语。缺谩语不在本行套赚脱。",
+      "terms": [
+        "天空",
+        "太阴",
+        "谩语"
       ],
       "notes": [],
       "review": "source-reviewed",

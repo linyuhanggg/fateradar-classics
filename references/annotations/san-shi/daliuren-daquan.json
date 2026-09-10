@@ -1,7 +1,7 @@
 {
   "bookSlug": "daliuren-daquan",
   "sourceTitle": "大六壬大全（现有电子主文本）",
-  "scopeNote": "本文件只覆盖已逐段实读范围：卷一起例/入手法 L56–98；卷七课经集一元首至龙德 L9101–11045；卷八官爵至亨通 L11047–11538。不代表全书 6893 段已审。source-reviewed 不是影印校勘或人工 verified；案例保持 verified=false。引从初末夹干支贵禄分格，墓鬼须冲克才散；亨通三路与订讹五格并行，空破刑克、恩多怨深、罗网不得删。",
+  "scopeNote": "本文件只覆盖已逐段实读范围：卷一起例/入手法 L56–98；卷七课经集一元首至龙德 L9101–11045；卷八官爵至繁昌 L11047–11615。不代表全书 6893 段已审。source-reviewed 不是影印校勘或人工 verified；案例保持 verified=false。繁昌正文年立德方发用 vs 观月经不论三传；互克零丁、败绝不育；产期法未演算不得默认为真。",
   "entries": [
     {
       "paragraphId": "daliuren-daquan:L0056-L0056",
@@ -14574,6 +14574,408 @@
       "relatedParagraphIds": [
         "daliuren-daquan:L11501-L11510"
       ]
+    },
+    {
+      "paragraphId": "daliuren-daquan:L11540-L11540",
+      "kind": "术语",
+      "vernacular": "繁昌课标题。行年德孕叠层，不是九宗门取传。",
+      "terms": [
+        "繁昌"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L11542-L11542",
+      "kind": "规则候选",
+      "vernacular": "凡夫妻年立德方发用，为繁昌课。盖夫妻行年乘本命旺相气，又值干支德合，或年立时令旺相之乡，阴阳俱胜、运气交接，夫妻合好情欲必动，妊娠繁华昌盛。占者人丁旺相，胎孕招贵，统咸之体。正文取法绑行年立德方且发用，后文观月经写不论三传，并行。缺行年德合旺相不在本行套繁昌。本课不改九宗门发用。",
+      "terms": [
+        "繁昌",
+        "德孕",
+        "行年"
+      ],
+      "notes": [
+        "正文年立德方发用 vs 观月经不论三传，不得合并。"
+      ],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L11544-L11561",
+      "kind": "规则候选",
+      "vernacular": "象：阴阳和合，万物生成，命招贵孕，娠必男形，谋为大利，家道自兴。否定：如逢互克，分散零丁。例：夫命水、行年甲寅上见子水；妻命金、行年己亥上见酉金；甲己合、寅亥合，各乘本命旺气，为德孕格。电子本「或用用此二命」叠字，不改正文。主怀孕年内必生贵子；或已有孕，妻年上酉，法主十一月乙日行时当产。甲己合主生子黄色壮大端厚好读书得官。产期法：妻年位上神前三临官位为生月，冲位干为生日，乃分十干次第推；辰戌月用戌，丑未月用巳；后三绝位为生时。如妻行年上见申，主十月甲日巳时分产，余仿此。不据本行推未算过的月日时。生子情性：丙辛合黑色肥满多力凶恶好武得官；丁壬青色目深秀多道艺文学得官；乙庚白色清俊好音律善兵法得官；戊癸赤色上尖下大爱畋游善伎术得官。行年值败绝刑害，为德孕不育。互克零丁、败绝不育不得写成凡繁昌必生贵子。娠必男形只绑本象，不得扩到十干合皆男。",
+      "terms": [
+        "德孕格",
+        "产期法",
+        "繁昌"
+      ],
+      "notes": [
+        "互克分散零丁、败绝刑害不育不得删。",
+        "产期法只录原文条件，未演算的月日时不得默认为真。",
+        "用用叠字待核。"
+      ],
+      "review": "source-reviewed",
+      "verified": false,
+      "subsections": [
+        {
+          "id": "S001",
+          "title": "象辞互克与德孕例",
+          "startLine": 11544,
+          "endLine": 11551,
+          "vernacular": "和合贵孕男形。互克则零丁。甲寅己亥子酉、甲己寅亥合乘本命旺气＝德孕格，年内贵子。已孕妻年上酉主十一月乙日产。甲己合黄厚好读书得官。",
+          "terms": [
+            "德孕格"
+          ],
+          "notes": [
+            "用用待核。"
+          ]
+        },
+        {
+          "id": "S002",
+          "title": "产期法",
+          "startLine": 11552,
+          "endLine": 11557,
+          "vernacular": "妻年位上神前三临官为生月，冲位干为生日分十干次第。辰戌月用戌，丑未月用巳。后三绝位为生时。妻年上申＝十月甲日巳时，余仿此。",
+          "terms": [
+            "产期法"
+          ],
+          "notes": [
+            "未演算不得默认为真。"
+          ]
+        },
+        {
+          "id": "S003",
+          "title": "十干合情性与不育",
+          "startLine": 11558,
+          "endLine": 11561,
+          "vernacular": "丙辛黑武，丁壬青文，乙庚白兵，戊癸赤畋游，皆得官。行年败绝刑害＝德孕不育。",
+          "terms": [
+            "德孕不育"
+          ],
+          "notes": []
+        }
+      ]
+    },
+    {
+      "paragraphId": "daliuren-daquan:L11563-L11563",
+      "kind": "案例",
+      "vernacular": "壬申日未时巳将：夫行年甲寅，妻行年己亥，上下相生作合，乘本命旺气，为繁昌课德孕课。演示繁昌与德孕同盘，不另改取传。",
+      "terms": [
+        "繁昌",
+        "德孕",
+        "壬申"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L11565-L11565",
+      "kind": "案例",
+      "vernacular": "同例初传：午乘天后。",
+      "terms": [
+        "三传"
+      ],
+      "notes": [
+        "盘图待影印核。"
+      ],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L11567-L11567",
+      "kind": "案例",
+      "vernacular": "同例中传：辰乘螣蛇。",
+      "terms": [
+        "三传"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L11569-L11569",
+      "kind": "案例",
+      "vernacular": "同例末传：寅乘六合。",
+      "terms": [
+        "三传"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L11571-L11571",
+      "kind": "案例",
+      "vernacular": "同例四课天将：蛇、后、阴、常。",
+      "terms": [
+        "四课",
+        "天将"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L11573-L11573",
+      "kind": "案例",
+      "vernacular": "同例四课上神：辰、午、未、酉。",
+      "terms": [
+        "四课"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L11575-L11575",
+      "kind": "案例",
+      "vernacular": "同例四课下神：午、申、酉、壬。壬寄亥。",
+      "terms": [
+        "四课"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L11577-L11577",
+      "kind": "案例",
+      "vernacular": "同例地盘上一行：卯辰巳午。",
+      "terms": [
+        "地盘"
+      ],
+      "notes": [
+        "待影印核。"
+      ],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L11579-L11579",
+      "kind": "案例",
+      "vernacular": "同例地盘「寅    未」一行。",
+      "terms": [
+        "地盘"
+      ],
+      "notes": [
+        "待影印核。"
+      ],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L11581-L11581",
+      "kind": "案例",
+      "vernacular": "同例地盘「丑    申」一行。",
+      "terms": [
+        "地盘"
+      ],
+      "notes": [
+        "待影印核。"
+      ],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L11583-L11583",
+      "kind": "案例",
+      "vernacular": "同例地盘下一行：子亥戌酉。",
+      "terms": [
+        "地盘"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L11585-L11585",
+      "kind": "案例",
+      "vernacular": "同例标注夫、妻。行年分位，不是四课。",
+      "terms": [
+        "行年"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L11587-L11587",
+      "kind": "案例",
+      "vernacular": "同例标注年、年。与上行夫妻行年对读。",
+      "terms": [
+        "行年"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L11589-L11589",
+      "kind": "评注或元数据",
+      "vernacular": "《观月经》标题。",
+      "terms": [
+        "观月经"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L11591-L11591",
+      "kind": "规则候选",
+      "vernacular": "夫妻行年上，德孕卦如何。夫年四十九岁在甲寅落。妻年三十四，己亥五行科。与正文甲寅己亥德孕例同向，绑行年不绑三传。",
+      "terms": [
+        "德孕"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L11593-L11593",
+      "kind": "规则候选",
+      "vernacular": "男行年一岁起丙寅，逆总顺零，四十九在甲寅。妇行年一岁起壬申，顺总逆零，三十四在己亥。观月经行年起法，与他处五家行年并行，不插入九宗门，也不据本行废他起法。",
+      "terms": [
+        "行年"
+      ],
+      "notes": [
+        "男起丙寅逆总顺零、妇起壬申顺总逆零，与五家行年并行。"
+      ],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L11595-L11595",
+      "kind": "规则候选",
+      "vernacular": "己得亥上甲，产子更无过。甲己、寅亥合取。",
+      "terms": [
+        "德孕"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L11597-L11597",
+      "kind": "评注或元数据",
+      "vernacular": "夹注：甲己合，寅与亥合。不是另取法。",
+      "terms": [
+        "甲己合"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L11599-L11599",
+      "kind": "规则候选",
+      "vernacular": "此年的有子，依理定无差。此为怀孕卦，行年若调和。电子本「的有子」不改得。调和是条件。",
+      "terms": [
+        "怀孕卦"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L11601-L11601",
+      "kind": "评注或元数据",
+      "vernacular": "夹注：男女行年若相调和也。",
+      "terms": [
+        "行年"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L11603-L11603",
+      "kind": "规则候选",
+      "vernacular": "不论三传事，学人奈如何。他例还依此，欢唱是高歌。观月经德孕不论三传，与正文「年立德方发用」并行，不得用本行废发用，也不得用正文废不论三传。",
+      "terms": [
+        "德孕"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false,
+      "relatedParagraphIds": [
+        "daliuren-daquan:L11542-L11542"
+      ]
+    },
+    {
+      "paragraphId": "daliuren-daquan:L11605-L11605",
+      "kind": "评注或元数据",
+      "vernacular": "《心镜》标题。",
+      "terms": [
+        "心镜"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L11607-L11607",
+      "kind": "规则候选",
+      "vernacular": "德孕行年课十干，还如甲己类同攒。夫年立甲妻居己，孕即灵胎贵复安。乙将会庚丙辛合。电子本句末停在丙辛合，未见丁壬戊癸收束，不补未见的合，不据后注改正文。",
+      "terms": [
+        "德孕",
+        "十干合"
+      ],
+      "notes": [
+        "乙将会庚丙辛合句末待核。"
+      ],
+      "review": "draft",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L11609-L11609",
+      "kind": "规则候选",
+      "vernacular": "夹注：干合即甲己之类。如夫年立庚、妻年立乙，皆主福德之孕。心镜以十干合类推，与正文甲己例同向，不把庚乙默认为正文唯一例。",
+      "terms": [
+        "干合",
+        "福德之孕"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L11611-L11611",
+      "kind": "规则候选",
+      "vernacular": "受气妻年上是端，午上有神须觅取。日月时皆递互看。与正文产期法妻年位上神前三临官、冲位干、后三绝位用词不同，不据本行改产期法，也不据产期法改午上有神。电子本不改正文。",
+      "terms": [
+        "产期法"
+      ],
+      "notes": [
+        "午上有神须觅取待核。"
+      ],
+      "review": "draft",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L11613-L11613",
+      "kind": "评注或元数据",
+      "vernacular": "《曾门》标题。",
+      "terms": [
+        "曾门"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L11615-L11615",
+      "kind": "规则候选",
+      "vernacular": "夫妻之年，甲己相合，更立德乡，子孙繁昌。曾门合取甲己+立德乡，缺德乡不在本行套繁昌。",
+      "terms": [
+        "繁昌",
+        "德乡"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
     }
   ]
 }
