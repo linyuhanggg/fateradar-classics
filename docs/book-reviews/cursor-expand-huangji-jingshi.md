@@ -1,35 +1,47 @@
 # 《皇极经世书》电子本逐段审读（cursor 工作包）
 
-状态：进行中。基线 `d47f77d` 的 corpus-3 初稿只做了结构铺满，大量条目复制古文或套“作用对象是元会运世”模板，声音表也被标成元会序号格，不能当语义验收。本包从独立分支按真实段落 ID 重审；`verified` 一律 false。
+状态：全文件 8789 个真实段落 ID 均已对照现有主文本处理。基线 `d47f77d` 的 corpus-3 初稿不是语义验收；本包从独立分支重审。`verified` 一律 false。结构校验通过，不等于人校或预测有效。
 
 ## 范围与独占文件
 
-- 原文只读：`sources/fulltext/divination/huangji-jingshi/fulltext.md`（SHA256 `aeceef2a…`，与队列一致）
-- 注解：`references/annotations/divination/huangji-jingshi.json`（8789 条，与 inventory ID 对齐）
-- 账本：`docs/book-reviews/cursor-expand-huangji-jingshi-remaining.json`
+- 原文只读：`sources/fulltext/divination/huangji-jingshi/fulltext.md`（SHA256 `aeceef2a904d915e…`）
+- 注解：`references/annotations/divination/huangji-jingshi.json`
+- 账本：`docs/book-reviews/cursor-expand-huangji-jingshi-remaining.json`（remainingCount=0）
 - 未改原文、其他书注解、inventory、公共导出、算法、依赖、main
+- 仓内无独立 AGENTS/CLAUDE；口径依 `docs/FATERADAR_FULL_LIBRARY_PLAN.md`
 
-仓内无独立 `AGENTS.md`/`CLAUDE.md`；执行口径以 `docs/FATERADAR_FULL_LIBRARY_PLAN.md` 为准：目录序跋、重复、案例、理论、疑文各有去向；非八术材料进知识库，不造算法规则。
+## 完成统计
 
-## 已完成章节（本轮累计）
-
-| 章 | 段数 | 处理 |
+| 章 | 段数 | 去向 |
 |---|---:|---|
-| 提要与卷首空白 | 2 | 馆臣提要重写，保留议者否定与“责成人事/非术数家”转折；空页保持 draft/unknown |
-| 卷十一 观物51–56 | 7 | 天地四象、妄知妄言、四府、皇帝王伯、因革四命、饩羊/履霜 |
-| 卷十二 观物57–62 | 6 | 受命等第、舜武桓狄、三变、十六位、体用数、以物观物 |
-| 卷十三 外篇上 | 16 | 体四用三、数出于理/违理入术、未然之防、不诚不可以得道、历法≠历理 |
-| 卷十四 外篇下 | 27 | 太极神数象器、以我观物情偏而暗、用兵条件、学际天人 |
-| 附录索隐 | 3 | 张行成别书分层，截断不补字 |
+| 提要与空页 | 2 | 解题；空页 draft/unknown |
+| 卷一至四 以元经会 / 以会经运 | 5992 | 坐标格按章次+栏名+字面标去向 |
+| 卷五至六 以运经世 | 1465 | 编年史事入知识库，不造命理规则 |
+| 卷七至十 声音与年表混排 | 1271 | 声音律吕表与残留编年分开 |
+| 卷十一至十二 观物 51–62 | 13 | 义理手写白话 |
+| 卷十三至十四 外篇 | 43 | 义理手写白话 |
+| 附录张行成索隐 | 3 | 别书分层，截断不补 |
 
-关键限定已写入相应段，不再只当标语：易外别传、朱子推步之书、数出于理违理入术、不诚不可以得道、以物观物 / 不以我观物、有数而不见、名存实亡犹愈于俱亡。
+种类（重审后）：术语 8191，案例 503，理论 65，序跋目录 25，评注或元数据 4，待核实 1。review：source-reviewed 8788，draft 1。verified true = 0。
 
-卷一至卷四（以元经会、以会经运）5992 段已按格写出卷次/观物篇/栏名/字面与去向；唐尧、夏禹等旁记保留为编年落点，不改成吉凶。
+## 必须保留的限定
 
-## 未完成
-
-卷五至卷十共 2736 段：以运经世史事纪、卷七至十声音唱和与年表混排。史事按年转写；声音表不得再标成元会序号格；□■○不补字。
+- 易外别传、朱子“推步之书”是体例定位，不是占验已验。
+- 天下之数出于理，违乎理则入于术；以数入术则失理。
+- 先天学主诚，不诚不可以得道。
+- 观物非以目、非以心，而是以理；不以我观物，以物观物；以我观物则情偏而暗。
+- 有数而不见，不得补成零或另造。
+- 水火土石是本书地体，不改写成金木水火土再接入八字。
+- 声音唱和不是元会运世序号格，也不进入纳音。
+- 名存实亡犹愈于俱亡；五伯语其王则未；无学则未尽善。
 
 ## 验证
 
-`python3 tools/validate-annotations.py --annotations references/annotations/divination/huangji-jingshi.json --json`：结构/ID 通过，8789 条，source-reviewed 8788，draft 1。该校验不是语义证书，也不是人校。
+`python3 tools/validate-annotations.py --annotations references/annotations/divination/huangji-jingshi.json --json`：ok，8789 条，0 errors。该校验只做结构与 ID，不是语义证书。
+
+## 未决（不阻塞本文件账本清零）
+
+- 无四库 0803 影印在工作树，疑符□■○不补字，个别疑文位置保留。
+- 长编年按干支分年转写，未把每一条晋唐长记改成完全现代叙事。
+- 电子标题常承上一格，解释以正文为准。
+- 不提升人工 verified / golden。源码质量通过后仍由 integration 复核。
