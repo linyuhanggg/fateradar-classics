@@ -1,7 +1,7 @@
 {
   "bookSlug": "daliuren-daquan",
   "sourceTitle": "大六壬大全（现有电子主文本）",
-  "scopeNote": "本文件只覆盖已逐段实读范围：卷一起例/入手法 L56–98；卷七课经集一元首至龙德 L9101–11045；卷八官爵、富贵 L11047–11210。不代表全书 6893 段已审。source-reviewed 不是影印校勘或人工 verified；案例保持 verified=false。官爵正文马发用+魁常入传 vs 订讹互用 vs 观月经四路时马 vs 心镜行年马。富贵正文合取 vs 订讹禄马亦是 vs 观月经凡天乙发用；入狱乙辛辰戌例外；遍地贵人；不论发用。",
+  "scopeNote": "本文件只覆盖已逐段实读范围：卷一起例/入手法 L56–98；卷七课经集一元首至龙德 L9101–11045；卷八官爵、富贵、轩盖、铸印 L11047–11344。不代表全书 6893 段已审。source-reviewed 不是影印校勘或人工 verified；案例保持 verified=false。轩盖午用遇卯子 vs 袖中金卯乘天马龙常；铸印戌加巳中传 vs 巳戌卯 vs 丙子戌加干上；真体两读。",
   "entries": [
     {
       "paragraphId": "daliuren-daquan:L0056-L0056",
@@ -12672,6 +12672,801 @@
       "relatedParagraphIds": [
         "daliuren-daquan:L11137-L11137"
       ]
+    },
+    {
+      "paragraphId": "daliuren-daquan:L11212-L11212",
+      "kind": "术语",
+      "vernacular": "轩盖课标题。又名华盖。吉课叠层，不是九宗门取传。",
+      "terms": [
+        "轩盖",
+        "华盖"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L11214-L11214",
+      "kind": "规则候选",
+      "vernacular": "胜光为用，遇太冲、神后，为轩盖课。神后子为紫微华盖，太冲卯为天驷天车，胜光午为天马。三神并遇如乘驷马轩车高张华盖。占者加官荣显，统升。午为用且传见卯、子是合取，缺一件不得称正文轩盖。本课不改九宗门发用。",
+      "terms": [
+        "轩盖",
+        "胜光",
+        "太冲",
+        "神后"
+      ],
+      "notes": [
+        "缺午用或未逢卯子不在本行套华盖。"
+      ],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L11216-L11223",
+      "kind": "规则候选",
+      "vernacular": "象：车马皆全，朱轮诏用，求财大获；疾病难延；干贵欢会，行者必旋。病难延是否定凡轩盖皆吉。正七月胜光又作月内天马、太冲又作月内天车则加重。车马既动：出者必行，闻贼必来。余月轩盖又带三交：出军冲野决防战斗，论讼换司易衙，病者魂游千里。年命有龙，出行大雨。车马作财，更日用旺相又为太岁月将，德神上乘贵人龙常后合，出入见君拜官，官爵践公卿。否定：三传带杀、乘蛇虎死气、克年命日辰，或空亡，或卯作丧车，则从凶而动变为三交，身弱人衰＝乘轩落马，伤躬被脱，望事无成。落马条件与余月三交战斗分绑，不得写成凡轩盖皆乘轩。",
+      "terms": [
+        "轩盖",
+        "三交",
+        "乘轩落马"
+      ],
+      "notes": [
+        "疾病难延、病魂游千里不得删。",
+        "带杀蛇虎死气或空亡或卯丧车才落马。"
+      ],
+      "review": "source-reviewed",
+      "verified": false,
+      "subsections": [
+        {
+          "id": "S001",
+          "title": "象辞与正七月",
+          "startLine": 11216,
+          "endLine": 11217,
+          "vernacular": "财获行人旋；病难延。正七月午作天马、卯作天车加重。",
+          "terms": [
+            "天马",
+            "天车"
+          ],
+          "notes": [
+            "病与财分占。"
+          ]
+        },
+        {
+          "id": "S002",
+          "title": "车马动与余月三交",
+          "startLine": 11218,
+          "endLine": 11221,
+          "vernacular": "出者必行、贼必来。余月带三交出军战斗、讼换司、病魂游。年命有龙出行大雨。财+旺相岁将贵龙常后合则见君拜官。",
+          "terms": [
+            "三交"
+          ],
+          "notes": [
+            "余月三交不得扩到正七月。"
+          ]
+        },
+        {
+          "id": "S003",
+          "title": "乘轩落马",
+          "startLine": 11222,
+          "endLine": 11223,
+          "vernacular": "三传带杀乘蛇虎死气克年命日辰，或空亡，或卯作丧车，变为三交落马。",
+          "terms": [
+            "乘轩落马"
+          ],
+          "notes": []
+        }
+      ]
+    },
+    {
+      "paragraphId": "daliuren-daquan:L11225-L11225",
+      "kind": "案例",
+      "vernacular": "甲子日卯时子将，三传卯午子，为轩盖课。正文定义胜光为用，下行盘图作午青、卯朱、子后，观月经亦写午卯子。本行「卯午子」与午用、盘图顺序不一致，不据本行改三传序，也不据盘图改正文。",
+      "terms": [
+        "轩盖",
+        "甲子"
+      ],
+      "notes": [
+        "卯午子与午用/午卯子待核。"
+      ],
+      "review": "draft",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L11227-L11227",
+      "kind": "案例",
+      "vernacular": "同例一传：午乘青龙。若此为初传则胜光为用。",
+      "terms": [
+        "三传",
+        "青龙"
+      ],
+      "notes": [
+        "盘图待影印核。"
+      ],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L11229-L11229",
+      "kind": "案例",
+      "vernacular": "同例一传：卯乘朱雀。太冲入传。",
+      "terms": [
+        "三传",
+        "太冲"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L11231-L11231",
+      "kind": "案例",
+      "vernacular": "同例一传：子乘天后。神后入传。",
+      "terms": [
+        "三传",
+        "神后"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L11233-L11233",
+      "kind": "案例",
+      "vernacular": "同例四课天将：青、常、白、阴。",
+      "terms": [
+        "四课",
+        "天将"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L11235-L11235",
+      "kind": "案例",
+      "vernacular": "同例四课上神：午、酉、申、亥。",
+      "terms": [
+        "四课"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L11237-L11237",
+      "kind": "案例",
+      "vernacular": "同例四课下神：酉、子、亥、甲。甲寄寅。",
+      "terms": [
+        "四课"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L11239-L11239",
+      "kind": "案例",
+      "vernacular": "同例地盘上一行：寅卯辰巳。",
+      "terms": [
+        "地盘"
+      ],
+      "notes": [
+        "待影印核。"
+      ],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L11241-L11241",
+      "kind": "案例",
+      "vernacular": "同例地盘「丑    午」一行。",
+      "terms": [
+        "地盘"
+      ],
+      "notes": [
+        "待影印核。"
+      ],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L11243-L11243",
+      "kind": "案例",
+      "vernacular": "同例地盘「子    未」一行。",
+      "terms": [
+        "地盘"
+      ],
+      "notes": [
+        "待影印核。"
+      ],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L11245-L11245",
+      "kind": "案例",
+      "vernacular": "同例地盘下一行：亥戌酉申。",
+      "terms": [
+        "地盘"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L11247-L11247",
+      "kind": "评注或元数据",
+      "vernacular": "《订讹》意同。本行声明订讹与正文同向，未另出条件，不补未见条文。",
+      "terms": [
+        "订讹",
+        "轩盖"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L11249-L11249",
+      "kind": "评注或元数据",
+      "vernacular": "《观月经》名鹏得摇风。别名不改取法。",
+      "terms": [
+        "鹏得摇风"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L11251-L11251",
+      "kind": "规则候选",
+      "vernacular": "胜光本是马，太冲本是车，神后为华盖，三传有不虚。与正文三神并遇同向。",
+      "terms": [
+        "胜光",
+        "太冲",
+        "神后"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L11253-L11253",
+      "kind": "案例",
+      "vernacular": "正月己酉日寅时：发用天马，午胜光加酉上克下，中传太冲为车。演示午为用、上克下与轩盖叠见，不改元首取传。",
+      "terms": [
+        "轩盖",
+        "己酉"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false,
+      "relatedParagraphIds": [
+        "daliuren-daquan:L9103-L9103"
+      ]
+    },
+    {
+      "paragraphId": "daliuren-daquan:L11255-L11255",
+      "kind": "案例",
+      "vernacular": "同例终末传神后，华盖下铺书。三传午卯子。",
+      "terms": [
+        "神后"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L11257-L11257",
+      "kind": "规则候选",
+      "vernacular": "午卯子三传便是甲子日首课。癸酉、丙子、戊子、丁酉、庚子、己酉、壬子、辛酉九日首一课。午卯子三传，反吟者有六日，丙子、壬子等。午卯子三传是华盖卦。观月经把华盖绑在午卯子日表，与正文「胜光为用遇卯子」并行；反吟六日是另一路，不得用日表废午用条件，也不得把反吟华盖写成必须非反吟。电子本「巳上九日」不改字。",
+      "terms": [
+        "华盖",
+        "午卯子"
+      ],
+      "notes": [
+        "反吟六日与九日首课分表。"
+      ],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L11259-L11259",
+      "kind": "理论",
+      "vernacular": "明君加宠禄，圣主赐天书，官职自特别，皇宫亲不疏。从前圣天子，目下自相如。占象。",
+      "terms": [
+        "轩盖"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L11261-L11261",
+      "kind": "评注或元数据",
+      "vernacular": "相如即有气度之官也。夹注，不是取法。",
+      "terms": [
+        "轩盖"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L11263-L11263",
+      "kind": "评注或元数据",
+      "vernacular": "《袖中金》标题。",
+      "terms": [
+        "袖中金"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L11265-L11265",
+      "kind": "规则候选",
+      "vernacular": "《袖中金》：卯乘天马或龙常为华盖，轩车之象，占宜加官喜庆事论，见三交卦。取法改成卯乘天马或龙常，与正文午用遇卯子不同路，并行。见三交是叠见，不改三交专课，也不用本行废午为用。",
+      "terms": [
+        "华盖",
+        "三交"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false,
+      "relatedParagraphIds": [
+        "daliuren-daquan:L11214-L11214"
+      ]
+    },
+    {
+      "paragraphId": "daliuren-daquan:L11267-L11267",
+      "kind": "评注或元数据",
+      "vernacular": "《心镜》标题。",
+      "terms": [
+        "心镜"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L11269-L11269",
+      "kind": "规则候选",
+      "vernacular": "紫微华盖居神后，天驷房星是太冲。马既胜光正月骑，六阳行处顺同申。华盖乘轩又骑马，更得龙常禄位丰。正月午、六阳顺行是天马起例；更得龙常是禄位加重，缺龙常不在本行套禄位丰。",
+      "terms": [
+        "天马",
+        "青龙",
+        "太常"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L11271-L11271",
+      "kind": "规则候选",
+      "vernacular": "太冲卯即天驷房星，又为轩车。天马正月午顺行六阳。华盖是紫微宫在神后上。凡得此入传，主恩诏加官。心镜「入传」比正文「胜光为用」宽，并行。",
+      "terms": [
+        "华盖",
+        "天马"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L11273-L11273",
+      "kind": "术语",
+      "vernacular": "铸印课标题。吉课叠层。",
+      "terms": [
+        "铸印"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L11275-L11275",
+      "kind": "规则候选",
+      "vernacular": "戌加巳而戌在中传，为铸印课。戌天魁为印，巳太乙为炉。戌中辛金与巳中丙火作合，火炼成符印。占者符命入手，官增权柄，统鼎。戌加巳中传是正文取法，后文订讹写成三传巳戌卯，并行。本课不改九宗门发用。",
+      "terms": [
+        "铸印",
+        "天魁",
+        "太乙"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L11277-L11281",
+      "kind": "规则候选",
+      "vernacular": "象：顽金铸篆，官职高擢，诏命重宣，产孕大吉，干谒良缘；庶人不吉，疾病官愆。庶人、病讼是否定凡铸印皆吉。戊己日又为生日之印，更遇太常为绶，印绶双全。传见太冲为车轮则铸印乘轩：科举求官见君进策，乘贵龙常阴合且日用旺相大利。否定：春夏巳午日时火旺，戌值空亡月破，日辰俱无气＝破印损模；遇神将凶主先成后破，庶人反主官灾刑害。破印须火旺+戌空月破+日辰无气，缺件不套损模。",
+      "terms": [
+        "铸印乘轩",
+        "破印损模",
+        "印绶"
+      ],
+      "notes": [
+        "庶人不吉、疾病官愆不得删。"
+      ],
+      "review": "source-reviewed",
+      "verified": false,
+      "subsections": [
+        {
+          "id": "S001",
+          "title": "象辞与乘轩印绶",
+          "startLine": 11277,
+          "endLine": 11279,
+          "vernacular": "官擢产吉；庶人病讼不吉。戊己+太常印绶双全。见太冲乘轩，贵龙常阴合旺相大利。",
+          "terms": [
+            "铸印乘轩"
+          ],
+          "notes": []
+        },
+        {
+          "id": "S002",
+          "title": "破印损模",
+          "startLine": 11280,
+          "endLine": 11281,
+          "vernacular": "春夏火旺、戌空月破、日辰无气则损模。神将凶先成后破，庶人官灾。",
+          "terms": [
+            "破印损模"
+          ],
+          "notes": []
+        }
+      ]
+    },
+    {
+      "paragraphId": "daliuren-daquan:L11283-L11283",
+      "kind": "案例",
+      "vernacular": "丙子日未时子将：巳加子用，传遇天魁，末乘太常，为铸印课。后盘三传巳戌卯。巳用、中戌、末常，与富贵壬子铸印叠见同类，不互相覆盖。",
+      "terms": [
+        "铸印",
+        "丙子"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false,
+      "relatedParagraphIds": [
+        "daliuren-daquan:L11196-L11196"
+      ]
+    },
+    {
+      "paragraphId": "daliuren-daquan:L11285-L11285",
+      "kind": "案例",
+      "vernacular": "同例初传：巳乘天空。炉为用。",
+      "terms": [
+        "三传",
+        "太乙"
+      ],
+      "notes": [
+        "盘图待影印核。"
+      ],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L11287-L11287",
+      "kind": "案例",
+      "vernacular": "同例中传：戌乘螣蛇。印在中。",
+      "terms": [
+        "三传",
+        "天魁"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L11289-L11289",
+      "kind": "案例",
+      "vernacular": "同例末传：卯乘太常。模/车在末。",
+      "terms": [
+        "三传",
+        "太常"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L11291-L11291",
+      "kind": "案例",
+      "vernacular": "同例四课天将：蛇、空、常、蛇。",
+      "terms": [
+        "四课",
+        "天将"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L11293-L11293",
+      "kind": "案例",
+      "vernacular": "同例四课上神：戌、巳、卯、戌。",
+      "terms": [
+        "四课"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L11295-L11295",
+      "kind": "案例",
+      "vernacular": "同例四课下神：巳、子、戌、丙。丙寄巳。",
+      "terms": [
+        "四课"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L11297-L11297",
+      "kind": "案例",
+      "vernacular": "同例地盘上一行：戌亥子丑。",
+      "terms": [
+        "地盘"
+      ],
+      "notes": [
+        "待影印核。"
+      ],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L11299-L11299",
+      "kind": "案例",
+      "vernacular": "同例地盘「酉    寅」一行。",
+      "terms": [
+        "地盘"
+      ],
+      "notes": [
+        "待影印核。"
+      ],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L11301-L11301",
+      "kind": "案例",
+      "vernacular": "同例地盘「申    卯」一行。",
+      "terms": [
+        "地盘"
+      ],
+      "notes": [
+        "待影印核。"
+      ],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L11303-L11303",
+      "kind": "案例",
+      "vernacular": "同例地盘下一行：未午巳辰。巳加子为用。",
+      "terms": [
+        "地盘"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L11305-L11305",
+      "kind": "评注或元数据",
+      "vernacular": "铸印《订讹》标题。",
+      "terms": [
+        "订讹"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L11307-L11307",
+      "kind": "规则候选",
+      "vernacular": "订讹：三传巳戌卯。巳为炉，戌为印，卯为印模。戌中辛逢巳中丙作合煅炼成符印。卯为车，又名铸印乘轩。比正文「戌加巳中传」收成必须三传巳戌卯，并行。",
+      "terms": [
+        "铸印",
+        "铸印乘轩"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false,
+      "relatedParagraphIds": [
+        "daliuren-daquan:L11275-L11275"
+      ]
+    },
+    {
+      "paragraphId": "daliuren-daquan:L11309-L11309",
+      "kind": "规则候选",
+      "vernacular": "占主符命入手，科甲官爵俱高，干谒吉。戊己又为生日之印，更遇太常为绶，印绶双全，定主转迁超擢。与正文同向。",
+      "terms": [
+        "印绶"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L11311-L11320",
+      "kind": "规则候选",
+      "vernacular": "此课多主事成迟晚。惟利官，庶人不吉，更不利于病、讼、忧、产四事。夏月巳午日时或值蛇雀火太旺，戌卯或值空亡，则为破印损模，官必不迁；兼遇神将凶，先成后破。大都铸印乘轩须得驿马、太阳、六合乃为真体。又有丙子日戌加干上得吉将，亦名铸印。春夏丙丁日火太过，不在此论。然须白虎、太阴、蛇、雀金火之将入传。若金少火多或火少金多，为五行不备，必有所伤。或末传得天后、元武，更临水乡，与日相破，名曰铸印不成，望官欲成中阻。又铸印课乘日墓，主退失或旧事再新。真体驿马太阳六合，与后文袖中金不见太阴天马即非真体并行。丙子戌加干上是另一成课路，不得用巳戌卯废此路。病讼忧产、庶人不吉、铸印不成、日墓退失不得删。",
+      "terms": [
+        "铸印不成",
+        "破印损模",
+        "真体"
+      ],
+      "notes": [
+        "病讼忧产四事不利不得写成铸印无凶。",
+        "真体两读：驿马太阳六合 vs 太阴天马。"
+      ],
+      "review": "source-reviewed",
+      "verified": false,
+      "subsections": [
+        {
+          "id": "S001",
+          "title": "迟晚庶人与损模真体",
+          "startLine": 11311,
+          "endLine": 11314,
+          "vernacular": "事成迟晚，惟利官。夏火旺或戌卯空则损模。真体须驿马太阳六合。丙子戌加干上得吉将亦名铸印。",
+          "terms": [
+            "真体"
+          ],
+          "notes": [
+            "亦名是另路。"
+          ]
+        },
+        {
+          "id": "S002",
+          "title": "火过不成与日墓",
+          "startLine": 11315,
+          "endLine": 11320,
+          "vernacular": "春夏丙丁火太过不在此论。金火将不备则有伤。末后武临水乡日破＝铸印不成。乘日墓退失或旧事再新。",
+          "terms": [
+            "铸印不成"
+          ],
+          "notes": []
+        }
+      ]
+    },
+    {
+      "paragraphId": "daliuren-daquan:L11322-L11322",
+      "kind": "评注或元数据",
+      "vernacular": "《观月经》名鹏翼冲天。别名不改取法。",
+      "terms": [
+        "鹏翼冲天"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L11324-L11324",
+      "kind": "规则候选",
+      "vernacular": "河魁本是印，火至自然成。火炼成印。",
+      "terms": [
+        "河魁"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L11326-L11326",
+      "kind": "规则候选",
+      "vernacular": "三传见河魁加巳名铸印卦。与戌加巳同向。",
+      "terms": [
+        "铸印"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L11328-L11328",
+      "kind": "案例",
+      "vernacular": "丙子正月午时无改更。传中逢印绶，此是卦中情。",
+      "terms": [
+        "铸印",
+        "丙子"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L11330-L11330",
+      "kind": "规则候选",
+      "vernacular": "河魁到巳便是铸印印绶之卦。丁卯、己卯、己巳、丙子、丁丑、癸未、丁亥、戊子、己丑、己未、乙未、己亥、庚子、丁未、壬子、丁巳，以上系巳戌卯三传。日表是观月经举例，不得用十六日废他日戌加巳，也不得把表外日默认为非铸印。",
+      "terms": [
+        "巳戌卯"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L11332-L11332",
+      "kind": "理论",
+      "vernacular": "在职重逢职，居官更举荣，宣命看看到，天书驿马程。",
+      "terms": [
+        "铸印"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L11334-L11334",
+      "kind": "规则候选",
+      "vernacular": "将有使命加官进职而必应者也。使命是加重。",
+      "terms": [
+        "铸印"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L11336-L11336",
+      "kind": "规则候选",
+      "vernacular": "庶人逢此卦，官事自然生。与正文庶人不吉同向。",
+      "terms": [
+        "铸印"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L11338-L11338",
+      "kind": "规则候选",
+      "vernacular": "庶人难消此印绶，故主官事也。难消是否定庶人亦迁官。",
+      "terms": [
+        "印绶"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L11340-L11340",
+      "kind": "评注或元数据",
+      "vernacular": "《袖中金》标题。",
+      "terms": [
+        "袖中金"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L11342-L11342",
+      "kind": "规则候选",
+      "vernacular": "戌加巳，传中见卯。戌印、巳炉、卯轩车，三者为传，名铸印乘轩。得吉将，有职加官迁擢；庶人主官讼。与订讹巳戌卯同向。吉将是迁擢条件。",
+      "terms": [
+        "铸印乘轩"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "daliuren-daquan:L11344-L11344",
+      "kind": "规则候选",
+      "vernacular": "铸印，戌加巳丙，传有太冲。不见太阴、天马，即非真体。常人反生灾，且为事迟钝。夏三月丙丁日又乘蛇雀，名曰印模损，火太过反为凶。电子本「巳丙」不改正文。真体绑太阴天马，与订讹驿马太阳六合并行，缺太阴天马不得称袖中金真体。",
+      "terms": [
+        "真体",
+        "印模损"
+      ],
+      "notes": [
+        "不见太阴天马即非真体不得删。"
+      ],
+      "review": "draft",
+      "verified": false
     }
   ]
 }

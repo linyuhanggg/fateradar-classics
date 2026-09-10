@@ -1,7 +1,7 @@
 {
   "bookSlug": "liuren-miben",
   "sourceTitle": "大六壬秘本（现有电子主文本）",
-  "scopeNote": "本文件只覆盖已逐段实读范围：卷十三 L2985–3248；卷十四 L3253–3841；论终身至论空亡作鬼 L3846–4046；论破神至论刑冲害 L4048–4174。不代表全书 2643 段已审。source-reviewed 不是影印校勘或人工 verified；案例保持 verified=false。破神阳后三阴前三与金氏月破并行；凶见破不成凶；破碎煞≠六冲；刑吉多辅吉、旺刑衰福；冲吉不宜冲凶则散。",
+  "scopeNote": "本文件只覆盖已逐段实读范围：卷十三 L2985–3248；卷十四 L3253–3841；论终身至论空亡作鬼 L3846–4046；论破神至论刑冲害 L4048–4174；论丁神 L4176–4307。不代表全书 2643 段已审。source-reviewed 不是影印校勘或人工 verified；案例保持 verified=false。丁神惟庚辛凶动壬癸财动；癸丑不取财；带吉则吉动；刚柔伏吟丁马分；九日无任无信；有救可免。",
   "entries": [
     {
       "paragraphId": "liuren-miben:L2985-L2985",
@@ -6696,6 +6696,560 @@
           ],
           "notes": [
             "先阻后得不得扩到凡害。"
+          ]
+        }
+      ]
+    },
+    {
+      "paragraphId": "liuren-miben:L4176-L4176",
+      "kind": "术语",
+      "vernacular": "论丁神标题。丁为变动，不是取传口诀。",
+      "terms": [
+        "丁神"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "liuren-miben:L4178-L4185",
+      "kind": "规则候选",
+      "vernacular": "丁神乃变动之神。凡占惟庚辛日为凶动，壬癸日为财动。甲乙丙丁戊己不在本「惟」字内，不得扩到十日皆凶动。庚午辛未见卯因妻凶动、因财祸起；庚辰辛巳见丑因墓田凶动，旺相为田、死囚为墓；庚寅辛卯见亥因子婿；庚子辛丑见酉因兄弟并及己身，庚为兄、辛为弟及己；庚戌辛亥见未因父母长上灾；庚申辛酉见巳因官鬼。电子本「見醜」不改字。旺田死墓是否定凡墓田丁皆葬事。",
+      "terms": [
+        "丁神",
+        "凶动"
+      ],
+      "notes": [
+        "惟庚辛凶动、壬癸财动，不得扩十日。"
+      ],
+      "review": "source-reviewed",
+      "verified": false,
+      "subsections": [
+        {
+          "id": "S001",
+          "title": "庚辛凶动六日",
+          "startLine": 4178,
+          "endLine": 4185,
+          "vernacular": "庚辛见遁丁：午未卯妻财，辰巳丑墓田分旺死，寅卯亥子婿，子丑酉兄弟己身，戌亥未父母，申酉巳官鬼。",
+          "terms": [
+            "凶动"
+          ],
+          "notes": [
+            "死囚为墓不得扩到旺相。"
+          ]
+        }
+      ]
+    },
+    {
+      "paragraphId": "liuren-miben:L4187-L4194",
+      "kind": "规则候选",
+      "vernacular": "旬壬乃归藏之所，与六丁相加岂无所为。壬申癸酉见卯因子息之财而凶动；壬午癸未见丑因官鬼之财；壬辰癸巳见亥因己身及兄弟之财；壬寅癸卯见酉因父母长上之财；壬子癸丑见未因官司之财；壬戌癸亥见巳因妻妾之财。电子本「才」读财，不改正文。例外：癸丑日乾上未作初传，不取其财，缘三传火鬼，如蜜中砒。不取其财是否定壬癸见丁皆财动。",
+      "terms": [
+        "旬壬",
+        "财动",
+        "蜜中砒"
+      ],
+      "notes": [
+        "癸丑乾上未初传不取财，不得删。"
+      ],
+      "review": "source-reviewed",
+      "verified": false,
+      "subsections": [
+        {
+          "id": "S001",
+          "title": "壬癸六日财类",
+          "startLine": 4187,
+          "endLine": 4193,
+          "vernacular": "壬癸见遁丁分子息/官鬼/兄弟己身/父母/官司/妻妾之财而凶动。",
+          "terms": [
+            "财动"
+          ],
+          "notes": []
+        },
+        {
+          "id": "S002",
+          "title": "癸丑不取财",
+          "startLine": 4194,
+          "endLine": 4194,
+          "vernacular": "癸丑乾上未作初传不取其财，三传火鬼蜜中砒。",
+          "terms": [
+            "蜜中砒"
+          ],
+          "notes": []
+        }
+      ]
+    },
+    {
+      "paragraphId": "liuren-miben:L4196-L4222",
+      "kind": "规则候选",
+      "vernacular": "丁神分占：逃亡万里远遁；盗贼隐匿难获；婚姻聚散成奸；病讼幽冥难伸；为官巡行查核。带将：蛇马逃亡，虎忧思，阴后女人走，天空奴婢逃亡，玄武贼盗走失，朱雀音信，勾陈兵远来，青龙飞腾，六合远行。带三阳、三光、六仪、三奇等课，主官升财遂。带三阴、魄化、丧门、伏殃、吊客，主病不可生。带天网、天狱、官符、变动，有抑可伸，合中有变，新故有更。带孤神、绝嗣、无禄，内中有复续之图。乱首、赘婿、龙战，有非常之变。闭口不可开，斩关可断。三交欲移，游子不返。八专、泆女，久而生病。元首则吉凶在长上，犯者必动；重审则吉凶在下，犯者必成。比用有反戾之心，涉害有生祸之势。反吟动于远思，伏吟动其归舆。又附蛇朱，却来生怪。吉课叠丁是官升财遂，凶煞叠丁是病不可生，两支不得塌成凡丁皆祸或皆财。元首/重审只论犯者吉凶所在，不改九宗门取传。",
+      "terms": [
+        "丁神",
+        "三阳",
+        "三阴"
+      ],
+      "notes": [
+        "带三阳三光六仪三奇官升财遂不得删。",
+        "病不可生只绑三阴魄化丧吊伏殃。"
+      ],
+      "review": "source-reviewed",
+      "verified": false,
+      "subsections": [
+        {
+          "id": "S001",
+          "title": "五占类与十二将",
+          "startLine": 4196,
+          "endLine": 4209,
+          "vernacular": "逃远、盗隐、婚奸、病讼难伸、官巡行。将：蛇马逃、虎忧、阴后女走、空奴、武盗、雀信、勾兵、龙飞、合远。",
+          "terms": [
+            "丁神"
+          ],
+          "notes": []
+        },
+        {
+          "id": "S002",
+          "title": "吉课凶煞与课体",
+          "startLine": 4210,
+          "endLine": 4222,
+          "vernacular": "三阳三光六仪三奇官升财遂。三阴魄化丧吊病不可生。天网官符有抑可伸。孤神无禄有复续。乱首龙战非常。闭口不可开斩关可断。三交游子不返。八专泆女久病。元首吉凶在上，重审在下。比用反戾，涉害生祸。反吟远思，伏吟归舆。附蛇朱生怪。",
+          "terms": [
+            "元首",
+            "重审"
+          ],
+          "notes": [
+            "不改取传。"
+          ]
+        }
+      ]
+    },
+    {
+      "paragraphId": "liuren-miben:L4224-L4224",
+      "kind": "规则候选",
+      "vernacular": "静者欲动，动者不停。闲事欲起，旧事再生，游子不返。带吉则吉动，带凶则凶动。吉凶随所带，是否定凡丁皆凶动。",
+      "terms": [
+        "丁神"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "liuren-miben:L4226-L4226",
+      "kind": "规则候选",
+      "vernacular": "刚日伏吟有丁马，行人即日见归程；柔日马丁虽出现，行人未必转回程。刚柔分，不得写成凡伏吟丁马皆即归。",
+      "terms": [
+        "伏吟",
+        "丁马"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "liuren-miben:L4228-L4228",
+      "kind": "规则候选",
+      "vernacular": "伏吟课凡事迟滞，行人不来。刚日带马丁、游煞则可以望其来。柔日暂出可以至家，远行未到。游煞正卯顺十二。刚日可望来须马丁+游煞；柔日只限暂出至家。",
+      "terms": [
+        "伏吟",
+        "游煞"
+      ],
+      "notes": [
+        "远行未到不得写成柔日亦即归。"
+      ],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "liuren-miben:L4230-L4230",
+      "kind": "规则候选",
+      "vernacular": "刚日伏吟名自任，可以委托于他人；柔日伏吟我自信，可以取信于自己。与大全伏吟自任自信同向，本行不改取传。",
+      "terms": [
+        "自任",
+        "自信"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "liuren-miben:L4232-L4238",
+      "kind": "规则候选",
+      "vernacular": "干之神固已主动，若传于支上有旬中之丁，或乘天驿二马，亦静而求动。壬辰、戊午、丙辰、甲寅、庚申五日伏吟有旬丁在传；又癸未、己酉、辛亥、癸丑，通前共九日，访人必出，先允后改，故名无任无信。无任无信是否定九日仍用自任自信。天马逐月而论，课内无二马旬丁者，谋事伏而不起。若无丁马而人年命乘魁罡者，尤主速动。如庚子二八月占，天马随白虎入庙，反主不动，若访人亦在外相遇。天马正月起午，顺行六阳位。无丁马魁罡速动、庚子二三八月白虎入庙反不动，两条救应/反例不得删。",
+      "terms": [
+        "无任无信",
+        "旬丁",
+        "天马"
+      ],
+      "notes": [
+        "九日先允后改不得仍套自任自信。",
+        "庚子二八月天马随虎入庙反不动。"
+      ],
+      "review": "source-reviewed",
+      "verified": false,
+      "subsections": [
+        {
+          "id": "S001",
+          "title": "九日无任无信",
+          "startLine": 4232,
+          "endLine": 4234,
+          "vernacular": "支上传见旬丁或天驿马则静中求动。九日伏吟有旬丁，访人必出先允后改，名无任无信。",
+          "terms": [
+            "无任无信"
+          ],
+          "notes": []
+        },
+        {
+          "id": "S002",
+          "title": "无马不起与反不动",
+          "startLine": 4235,
+          "endLine": 4238,
+          "vernacular": "无二马旬丁则伏而不起。无丁马而年命魁罡尤速动。庚子二八月天马随白虎入庙反主不动。天马正月午顺六阳。",
+          "terms": [
+            "天马"
+          ],
+          "notes": []
+        }
+      ]
+    },
+    {
+      "paragraphId": "liuren-miben:L4240-L4240",
+      "kind": "理论",
+      "vernacular": "丁神灵灵，入于宅神，门移户改，欲宁不宁。",
+      "terms": [
+        "丁神",
+        "宅"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "liuren-miben:L4242-L4242",
+      "kind": "规则候选",
+      "vernacular": "丁神旺相加宅，主家宅不宁、门哀改移。若年命传课中有生支之神，此宅主修改，尤可居。若无生支之神，又带刑克破耗空亡，则宅已变故而不可居。可居须有生支；不可居须无生支且刑克破耗空亡，两支不得塌成凡丁加宅皆不可居。",
+      "terms": [
+        "丁神",
+        "生支"
+      ],
+      "notes": [
+        "有生支可居不得删。"
+      ],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "liuren-miben:L4244-L4244",
+      "kind": "理论",
+      "vernacular": "丁神灵灵，必主死人。歌句过宽，细则见下行有喜有救，不据歌句废救应。",
+      "terms": [
+        "丁神"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "liuren-miben:L4246-L4257",
+      "kind": "规则候选",
+      "vernacular": "带月厌为鬼，损财畜。带三合喜神，有喜。带劫煞、飞廉、飞祸、羊刃，有谋害。在卯辰巳午未申，祸生于日，日宜防；在酉戌亥子丑寅，祸生于夜，夜宜防。有救神可免其祸，无救神利于藏匿。满日月之数方可出。丁神临午合干，有贵人提带或招饭，出外立事。其吉神有皇书等吉，主功名事。飞廉正申顺十二。飞祸春申夏寅秋巳冬亥。月厌正戌逆十二。有喜、有救可免、临午合干贵提，是否定「必主死人」。无救神只利于藏匿，满日月数方可出。",
+      "terms": [
+        "月厌",
+        "飞廉",
+        "救神"
+      ],
+      "notes": [
+        "有救神可免其祸不得删。"
+      ],
+      "review": "source-reviewed",
+      "verified": false,
+      "subsections": [
+        {
+          "id": "S001",
+          "title": "喜害昼夜与救匿",
+          "startLine": 4246,
+          "endLine": 4252,
+          "vernacular": "月厌鬼损财畜。三合喜神有喜。劫煞飞廉飞祸羊刃谋害。六阳支日防，六阴支夜防。有救可免，无救藏匿，满日月数方可出。",
+          "terms": [
+            "救神"
+          ],
+          "notes": []
+        },
+        {
+          "id": "S002",
+          "title": "临午贵提与煞表",
+          "startLine": 4253,
+          "endLine": 4257,
+          "vernacular": "丁临午合干有贵提或招饭出外立事。皇书等吉主功名。飞廉正申顺十二，飞祸四季，月厌正戌逆十二。",
+          "terms": [
+            "皇书"
+          ],
+          "notes": []
+        }
+      ]
+    },
+    {
+      "paragraphId": "liuren-miben:L4259-L4259",
+      "kind": "理论",
+      "vernacular": "丁神灵灵，而为我财，带煞冲破，妻死离哀。带煞才死离。",
+      "terms": [
+        "丁神",
+        "妻财"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "liuren-miben:L4261-L4261",
+      "kind": "规则候选",
+      "vernacular": "丁神为妻财。带劫煞、女煞、阴煞来冲其妻财，或带巳酉丑从革隔角煞，主妻生离。带二死，妻居墓绝，主死别。带二耗、月破、二碎之煞，则为冲财，则难守业。生离、死别、冲财三支分条件，不得合成凡丁财皆丧妻。",
+      "terms": [
+        "生离",
+        "死别",
+        "冲财"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "liuren-miben:L4263-L4263",
+      "kind": "理论",
+      "vernacular": "丁神灵灵，作鬼克身，灾祸不已，禳祭堪生。禳祭是救应。",
+      "terms": [
+        "丁鬼"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "liuren-miben:L4265-L4265",
+      "kind": "规则候选",
+      "vernacular": "丁神旺相作鬼，乘亥子丑寅位，与月鬼、火神、生气克干者，灾祸不已。若见天巫、咒诅、仪神，必须祭禳神佛，方曰安泰。火神春丑夏子秋戌冬亥；生气正子顺十二；天巫正辰顺十二；天咒正子顺四仲。灾祸不已须旺丁作鬼+亥子丑寅+月鬼火神生气克干；祭禳须见天巫咒诅仪神。",
+      "terms": [
+        "天巫",
+        "火神"
+      ],
+      "notes": [
+        "祭禳方安泰不得写成丁鬼无救。"
+      ],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "liuren-miben:L4267-L4267",
+      "kind": "理论",
+      "vernacular": "丁神灵灵，贼侵户域，干乘生旺，未免流血。干生旺才流血。",
+      "terms": [
+        "丁神"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "liuren-miben:L4269-L4269",
+      "kind": "规则候选",
+      "vernacular": "丁神乘玄武、盗神、劫煞侵我之域。若干被伤带刑冲二血，是我被伤流血。若支带刑冲二血，是家幼小被伤流血。盗神春巳夏卯秋酉冬子；劫杀寅午戌在亥，亥卯未在申，申子辰在巳，巳酉丑在寅。干伤我、支伤家幼，分绑。须武盗劫侵域，缺件不套流血。",
+      "terms": [
+        "盗神",
+        "劫煞"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "liuren-miben:L4271-L4271",
+      "kind": "理论",
+      "vernacular": "丁神灵灵，主敕兼行。一差未了，二差又行。",
+      "terms": [
+        "丁神"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "liuren-miben:L4273-L4273",
+      "kind": "规则候选",
+      "vernacular": "丁神旺相而带皇书、天诏在岁上作丁者，乃天子之差。带皇诏在日辰月建作丁者，乃台部之差使，主迭任差使。皇书春寅夏巳秋申冬亥。天诏正亥顺二十。电子本「顺二十」疑十二，不改正文。岁上天子差 vs 日辰月建台部差，不得合成凡丁皆王差。",
+      "terms": [
+        "皇书",
+        "天诏"
+      ],
+      "notes": [
+        "顺二十待核。"
+      ],
+      "review": "draft",
+      "verified": false
+    },
+    {
+      "paragraphId": "liuren-miben:L4275-L4275",
+      "kind": "评注或元数据",
+      "vernacular": "丁神灵灵，皇诏临辰，使者皇恩，赴我家庭。旁注：皇恩，金氏改作早晚。金氏改文与正文皇恩分读，不据改字废皇恩表。",
+      "terms": [
+        "皇恩"
+      ],
+      "notes": [
+        "金氏改作早晚，与正文并行。"
+      ],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "liuren-miben:L4277-L4277",
+      "kind": "规则候选",
+      "vernacular": "丁神旺相作贵人，加支而带皇恩、天诏，必有封赠超升之喜而入我家庭。皇恩正戌、二丑、三辰、四未、五酉、六卯、七子、八午、九亥、十寅、十一巳、十二申。金氏注：此为皇恩大赦也。须旺丁作贵+加支+皇恩天诏。金氏大赦与封赠超升分读，不据注改封赠。",
+      "terms": [
+        "皇恩",
+        "天诏"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "liuren-miben:L4279-L4279",
+      "kind": "理论",
+      "vernacular": "丁神灵灵，凶煞刑辰，家门颓败，过房继人。",
+      "terms": [
+        "丁神"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "liuren-miben:L4281-L4281",
+      "kind": "规则候选",
+      "vernacular": "丁神旺相乘凶煞以刑支神，又带破耗，主家败。若三交、游煞、孤寡，或加子星上，必主过继。孤神春巳夏申秋亥冬寅，寡宿春丑夏辰秋未冬戌。家败须旺丁凶煞刑支+破耗；过继须三交游煞孤寡或加子星，两支不得合成凡丁刑支皆过继。",
+      "terms": [
+        "孤神",
+        "寡宿",
+        "过继"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "liuren-miben:L4283-L4283",
+      "kind": "理论",
+      "vernacular": "丁神灵灵，德合加申，早晚有庆，福凑寿人。",
+      "terms": [
+        "德合"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "liuren-miben:L4285-L4285",
+      "kind": "规则候选",
+      "vernacular": "丁神带天德、月合、德禄来生日干者，主福寿安宁。须德合禄来生干，缺生干不套福寿。",
+      "terms": [
+        "天德",
+        "月合",
+        "德禄"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "liuren-miben:L4287-L4287",
+      "kind": "规则候选",
+      "vernacular": "天德：正丁、二坤、三壬、四辛、五乾、六甲、七癸、八艮、九丙、十乙、十一巽、十二庚。用干与卦名混列，按原文月序，不改成一律天干。",
+      "terms": [
+        "天德"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "liuren-miben:L4289-L4289",
+      "kind": "规则候选",
+      "vernacular": "月合：正辛、二巳、三丁、四乙、五辛、六己、七丁、八乙、九辛、十己、十一丁、十二乙。与天德分表。",
+      "terms": [
+        "月合"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "liuren-miben:L4291-L4291",
+      "kind": "理论",
+      "vernacular": "丁神灵灵，带鬼不宁，之子生祸，如何得停？子星生祸。",
+      "terms": [
+        "丁神"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "liuren-miben:L4293-L4293",
+      "kind": "规则候选",
+      "vernacular": "丁神旺相乘子位克支，带劫煞破耗，是子败家生祸。须旺丁乘子克支+劫煞破耗。",
+      "terms": [
+        "劫煞"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "liuren-miben:L4295-L4295",
+      "kind": "理论",
+      "vernacular": "丁神灵灵，大祸刑干，当躲莫躲，当安莫安。细则见下行分将当躲。",
+      "terms": [
+        "大祸"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "liuren-miben:L4297-L4307",
+      "kind": "规则候选",
+      "vernacular": "旺丁带大祸、劫煞、飞廉、亡神、二死刑克其干，是大难数。又丁神主动，必有出入路途之事。传见青龙劫煞、风雨雷煞，必有风雨之难所当躲。传见玄武带三盗二都，途中遇劫贼当避。传见白虎又带虎煞，乘蛇带蛇煞，有虎蛇难当躲。传见阴后带奸门、咸池、女祸，主女人奸淫，不能安。传虎蛇带病符月厌，主瘟疫不安。传勾朱带官符、吏神、关隔、天地盘结，有牢狱不安。随其变化而因事详审之。大难数须旺丁+大祸劫煞飞廉亡神二死+刑克其干。当躲分将：龙风雨、武盗、虎蛇、阴后奸淫、病符瘟疫、勾朱牢狱，不得写成凡丁皆当躲。电子本「二都」下空格不改正文。",
+      "terms": [
+        "大祸",
+        "亡神",
+        "关隔"
+      ],
+      "notes": [
+        "因事详审，不得一概当躲。"
+      ],
+      "review": "source-reviewed",
+      "verified": false,
+      "subsections": [
+        {
+          "id": "S001",
+          "title": "大难数与路途",
+          "startLine": 4297,
+          "endLine": 4298,
+          "vernacular": "旺丁带大祸劫煞飞廉亡神二死刑克其干为大难。丁主动必有出入路途。",
+          "terms": [
+            "大祸"
+          ],
+          "notes": []
+        },
+        {
+          "id": "S002",
+          "title": "分将当躲",
+          "startLine": 4299,
+          "endLine": 4307,
+          "vernacular": "龙+风雨雷当躲风雨；武+三盗二都避劫贼；虎蛇带虎蛇煞躲虎蛇难；阴后奸门咸池女祸不能安；虎蛇病符月厌瘟疫；勾朱官符吏神关隔盘结牢狱。因事详审。",
+          "terms": [
+            "关隔"
+          ],
+          "notes": [
+            "二都待核。"
           ]
         }
       ]
