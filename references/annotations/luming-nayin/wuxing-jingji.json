@@ -2,7 +2,7 @@
   "schemaVersion": "fateradar-annotations-v1",
   "bookSlug": "wuxing-jingji",
   "sourceFile": "sources/fulltext/luming-nayin/wuxing-jingji/fulltext.md",
-  "reviewScope": "已逐段阅读电子文本宋-廖中至卷十二申七月（wuxing-jingji:L0005-L0005 至 L4260-L4267）并作语义注解。source-reviewed只指对照电子主文本，不代表影印人工核验。六月起正文繁简混排，處署幹雲醜日碌等原字不改。长段保留壬子不為厚福、辛巳無權、丙子近貴閒人。",
+  "reviewScope": "已逐段阅读电子文本宋-廖中至卷十二酉八月（wuxing-jingji:L0005-L0005 至 L4279-L4279）并作语义注解。source-reviewed只指对照电子主文本，不代表影印人工核验。六月起正文繁简混排，處署幹雲醜日碌等原字不改。长段保留丙午戊午遭刑、乙木不衰、丁火不死。",
   "entries": [
     {
       "paragraphId": "wuxing-jingji:L0005-L0005",
@@ -39643,6 +39643,152 @@
             "日碌閒福貴原字不改"
           ]
         }
+      ]
+    },
+    {
+      "paragraphId": "wuxing-jingji:L4269-L4269",
+      "kind": "序跋目录",
+      "vernacular": "【酉八月】是卷十二按月分节标目。",
+      "terms": [
+        "酉八月"
+      ],
+      "notes": [
+        "待分类作序跋目录",
+        "无人名连续四柱不收案例",
+        "目录不作理论条或现代操作步骤"
+      ],
+      "review": "source-reviewed",
+      "verified": false,
+      "relatedParagraphIds": [
+        "wuxing-jingji:L4260-L4267",
+        "wuxing-jingji:L4271-L4271"
+      ]
+    },
+    {
+      "paragraphId": "wuxing-jingji:L4271-L4271",
+      "kind": "术语",
+      "vernacular": "白露八月節、秋分八月中，是酉八月节气标目。",
+      "terms": [
+        "白露",
+        "秋分"
+      ],
+      "notes": [
+        "待分类作术语",
+        "无人名连续四柱不收案例",
+        "节气标目不作四柱案例"
+      ],
+      "review": "source-reviewed",
+      "verified": false,
+      "relatedParagraphIds": [
+        "wuxing-jingji:L4269-L4269",
+        "wuxing-jingji:L4273-L4273"
+      ]
+    },
+    {
+      "paragraphId": "wuxing-jingji:L4273-L4273",
+      "kind": "理论",
+      "vernacular": "八月寅為天德，庚為月德，乙為月合，甲為月空。壬癸寅辛為月中秀氣，支宜巳酉醜申子辰，及納音金水，畏見丙己二幹。廣信集。天德月德是月令名目，不是对现实用户的判断。幹醜原字不改。",
+      "terms": [
+        "天德",
+        "月德",
+        "壬癸寅辛"
+      ],
+      "notes": [
+        "待分类作理论",
+        "如字假令无名不收案例",
+        "官职贫富贵贱刑死疾病过房是历史分类，不转成对现实用户的判断",
+        "纳音分套只归档，不改已落地子平或纳音算法",
+        "幹醜原字不改"
+      ],
+      "review": "source-reviewed",
+      "verified": false,
+      "relatedParagraphIds": [
+        "wuxing-jingji:L4271-L4271",
+        "wuxing-jingji:L4275-L4277"
+      ]
+    },
+    {
+      "paragraphId": "wuxing-jingji:L4275-L4277",
+      "kind": "理论",
+      "vernacular": "秀在庚辛壬癸，乃通明之氣，木殘水死，土濁水清。八月庚辛金木交平，俱藏秀氣，己醜秀墓之金，遇之皆顯達之人也。辛巳辛醜若癸巳時，從金得貴；壬辰時秀麗通仙，名冠世間，才清容廣也。若丙午戊午之辰，如犯之，遭刑殘疾，下賤之命。吉兇貴賤不可一見而言之，更分主客、引用巧拙而言也。如乙木不衰，由庚之德，在巳酉醜上，乙化為金，乃從其庚性，與庚同行此不衰也。如字無名，不收案例。醜兇顯廣原字不改。顯達遭刑是历史分类，不是对现实用户的判断。",
+      "terms": [
+        "通明之氣",
+        "丙午戊午",
+        "乙木不衰"
+      ],
+      "notes": [
+        "待分类作理论",
+        "如字假令无名不收案例",
+        "官职贫富贵贱刑死疾病过房是历史分类，不转成对现实用户的判断",
+        "纳音分套只归档，不改已落地子平或纳音算法",
+        "為時節幹雲醜兇顯廣原字不改"
+      ],
+      "review": "source-reviewed",
+      "verified": false,
+      "relatedParagraphIds": [
+        "wuxing-jingji:L4273-L4273",
+        "wuxing-jingji:L4279-L4279"
+      ],
+      "subsections": [
+        {
+          "id": "wuxing-jingji:L4275-L4277:tongming",
+          "title": "通明之氣與丙午戊午遭刑",
+          "startLine": 4275,
+          "endLine": 4276,
+          "vernacular": "秀在庚辛壬癸，乃通明之氣，木殘水死，土濁水清。八月庚辛金木交平，俱藏秀氣，己醜秀墓之金，遇之皆顯達之人也。辛巳辛醜若癸巳時，從金得貴；壬辰時秀麗通仙，名冠世間，才清容廣也。若丙午戊午之辰，如犯之，遭刑殘疾，下賤之命。吉兇貴賤不可一見而言之，更分主客、引用巧拙而言也。如字無名，不收案例。醜兇顯廣原字不改。顯達遭刑是历史分类，不是对现实用户的判断。",
+          "terms": [
+            "通明之氣",
+            "己醜",
+            "丙午戊午"
+          ],
+          "notes": [
+            "待分类作理论",
+            "如字假令无名不收案例",
+            "官职贫富贵贱刑死疾病过房是历史分类，不转成对现实用户的判断",
+            "纳音分套只归档，不改已落地子平或纳音算法",
+            "為時節幹雲醜兇顯廣原字不改"
+          ]
+        },
+        {
+          "id": "wuxing-jingji:L4275-L4277:yi-mu",
+          "title": "乙木不衰從庚",
+          "startLine": 4277,
+          "endLine": 4277,
+          "vernacular": "如乙木不衰，由庚之德，在巳酉醜上，乙化為金，乃從其庚性，與庚同行此不衰也。如字無名，不收案例。醜為原字不改。",
+          "terms": [
+            "乙木不衰",
+            "乙化為金"
+          ],
+          "notes": [
+            "待分类作理论",
+            "如字假令无名不收案例",
+            "官职贫富贵贱刑死疾病过房是历史分类，不转成对现实用户的判断",
+            "纳音分套只归档，不改已落地子平或纳音算法",
+            "醜為原字不改"
+          ]
+        }
+      ]
+    },
+    {
+      "paragraphId": "wuxing-jingji:L4279-L4279",
+      "kind": "理论",
+      "vernacular": "丁火不死。古法雲：陽死之氣陰生。又乃金中火氣不絕，而藏於金，丁火是也。若居巳酉醜之位，亦為小通也。神白經。古法雲是引文，不是另立时柱案例。雲醜原字不改。小通是历史分类，不是对现实用户的判断。",
+      "terms": [
+        "丁火不死",
+        "陽死之氣陰生"
+      ],
+      "notes": [
+        "待分类作理论",
+        "如字假令无名不收案例",
+        "官职贫富贵贱刑死疾病过房是历史分类，不转成对现实用户的判断",
+        "纳音分套只归档，不改已落地子平或纳音算法",
+        "雲醜原字不改"
+      ],
+      "review": "source-reviewed",
+      "verified": false,
+      "relatedParagraphIds": [
+        "wuxing-jingji:L4275-L4277",
+        "wuxing-jingji:L4281-L4281"
       ]
     }
   ]
