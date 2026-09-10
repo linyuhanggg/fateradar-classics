@@ -2,7 +2,7 @@
   "schemaVersion": "fateradar-annotations-v1",
   "bookSlug": "feixing-ziwei-doushu-yuanzhi",
   "sourceFile": "sources/fulltext/ziwei/feixing-ziwei-doushu-yuanzhi/fulltext.md",
-  "reviewScope": "已逐段阅读电子文本头信息至page-063十二宫朋友（feixing-ziwei-doushu-yuanzhi:L0003-L0004 至 L2438-L2474）并作语义注解。source-reviewed只指对照电子主文本，不代表影印人工核验。吴先生夫人顾瑞年叶字英谢先生顾叔明四柱收入注解案例；其后三宝药房尚未注解。",
+  "reviewScope": "已逐段阅读电子文本头信息至page-069魏王氏（feixing-ziwei-doushu-yuanzhi:L0003-L0004 至 L2686-L2686）并作语义注解。source-reviewed只指对照电子主文本，不代表影印人工核验。吴先生夫人顾瑞年叶字英谢先生顾叔明四柱收入注解案例；其后韩恒忠之母尚未注解。",
   "entries": [
     {
       "paragraphId": "feixing-ziwei-doushu-yuanzhi:L0003-L0004",
@@ -5778,6 +5778,575 @@
             "官职婚配不转写"
           ]
         }
+      ]
+    },
+    {
+      "paragraphId": "feixing-ziwei-doushu-yuanzhi:L2476-L2476",
+      "kind": "理论",
+      "vernacular": "为三宝药房横额题辞。其词曰天有三宝日月星地有三宝水火风。文末截句。无人名连续四柱，不收案例。",
+      "terms": [
+        "三宝药房",
+        "天有三宝日月星",
+        "地有三宝水火风"
+      ],
+      "notes": [
+        "待分类作理论；文末截句与下页L2483相连",
+        "无人名连续四柱不收案例",
+        "三宝题辞不作现代操作步骤"
+      ],
+      "review": "source-reviewed",
+      "verified": false,
+      "relatedParagraphIds": [
+        "feixing-ziwei-doushu-yuanzhi:L2438-L2474",
+        "feixing-ziwei-doushu-yuanzhi:L2483-L2498"
+      ]
+    },
+    {
+      "paragraphId": "feixing-ziwei-doushu-yuanzhi:L2481-L2481",
+      "kind": "评注或元数据",
+      "vernacular": "page-064 对图审读标记 reviewed_against_image: page-064.png。是电子文本校次说明，不是古书断法。",
+      "terms": [
+        "reviewed_against_image",
+        "page-064"
+      ],
+      "notes": [
+        "待分类作评注或元数据",
+        "对图标记不等于本批 verified",
+        "无人名连续四柱不收案例"
+      ],
+      "review": "source-reviewed",
+      "verified": false,
+      "relatedParagraphIds": [
+        "feixing-ziwei-doushu-yuanzhi:L2476-L2476",
+        "feixing-ziwei-doushu-yuanzhi:L2483-L2498"
+      ]
+    },
+    {
+      "paragraphId": "feixing-ziwei-doushu-yuanzhi:L2483-L2498",
+      "kind": "理论",
+      "vernacular": "接上页人有三宝精气神。故吾人立身世间对于精气神三宝为当务之急。三宝药房之设专备固精养气炼神之药。余亦乐为之祝。又有皈依三宝之意乃佛法僧也。僧道是历史分类，不转写。无人名连续四柱，不收案例。span=16不强制subsections。",
+      "terms": [
+        "人有三宝精气神",
+        "固精养气炼神",
+        "皈依三宝佛法僧"
+      ],
+      "notes": [
+        "待分类作理论；与上页L2476截句相连",
+        "无人名连续四柱不收案例；僧道不转写",
+        "三宝药房题辞不作现代操作步骤"
+      ],
+      "review": "source-reviewed",
+      "verified": false,
+      "relatedParagraphIds": [
+        "feixing-ziwei-doushu-yuanzhi:L2481-L2481",
+        "feixing-ziwei-doushu-yuanzhi:L2500-L2525"
+      ]
+    },
+    {
+      "paragraphId": "feixing-ziwei-doushu-yuanzhi:L2500-L2525",
+      "kind": "理论",
+      "vernacular": "阴年男命丁亥二月初四日未时生。同梁守命垣在申宜於文职又有作吏之说而孤高不群难屈人下。禄权科三奇加会名誉昭彰。丁亥二月初四日未时是历日不是连续四柱，阴年男命无名，不收案例。官职僧道贫富是历史分类，不转写。不把行限当出生柱。文末截于魁钺夹身。span=26，两条subsections连续覆盖2500-2525。",
+      "terms": [
+        "阴年男命丁亥二月初四日未时",
+        "同梁守命垣在申",
+        "禄权科三奇"
+      ],
+      "notes": [
+        "待分类作理论；span=26两条subsections连续覆盖2500-2525；文末截句与下页L2532相连",
+        "阴年男命仅历日无名不收案例；官职僧道贫富不转写；不把行限当出生柱",
+        "同梁三奇魁钺分套只归档"
+      ],
+      "review": "source-reviewed",
+      "verified": false,
+      "relatedParagraphIds": [
+        "feixing-ziwei-doushu-yuanzhi:L2483-L2498",
+        "feixing-ziwei-doushu-yuanzhi:L2532-L2532"
+      ],
+      "subsections": [
+        {
+          "id": "feixing-ziwei-doushu-yuanzhi:L2500-L2525:tongliang-shouming",
+          "title": "同梁守命",
+          "startLine": 2500,
+          "endLine": 2512,
+          "vernacular": "阴年男命丁亥二月初四日未时生。同梁守命垣在申宜於文职又有作吏之说而孤高不群难屈人下。书云寅申最喜同梁会又梁同申位利业聪明又天同会吉寿元辰天同化气为福天梁化气为寿。",
+          "terms": [
+            "同梁守命垣在申",
+            "寅申最喜同梁会"
+          ],
+          "notes": [
+            "历日无名不收案例"
+          ]
+        },
+        {
+          "id": "feixing-ziwei-doushu-yuanzhi:L2500-L2525:luquan-sanqi",
+          "title": "禄权科三奇",
+          "startLine": 2513,
+          "endLine": 2525,
+          "vernacular": "禄权科三奇加会名誉昭彰。紫府夹迁移在外得高人辅助之力。天姚尚风流宜於道门峥嵘。财禄因日月相反火星地空有亦难存又恐有失惟化禄有根不至缺乏。羊刃七煞夹命多刚强魁钺夹身。",
+          "terms": [
+            "禄权科三奇",
+            "羊刃七煞夹命",
+            "魁钺夹身"
+          ],
+          "notes": [
+            "官职僧道贫富不转写；文末截句"
+          ]
+        }
+      ]
+    },
+    {
+      "paragraphId": "feixing-ziwei-doushu-yuanzhi:L2530-L2530",
+      "kind": "评注或元数据",
+      "vernacular": "page-065 对图审读标记 reviewed_against_image: page-065.png。是电子文本校次说明，不是古书断法。",
+      "terms": [
+        "reviewed_against_image",
+        "page-065"
+      ],
+      "notes": [
+        "待分类作评注或元数据",
+        "对图标记不等于本批 verified",
+        "无人名连续四柱不收案例"
+      ],
+      "review": "source-reviewed",
+      "verified": false,
+      "relatedParagraphIds": [
+        "feixing-ziwei-doushu-yuanzhi:L2500-L2525",
+        "feixing-ziwei-doushu-yuanzhi:L2532-L2532"
+      ]
+    },
+    {
+      "paragraphId": "feixing-ziwei-doushu-yuanzhi:L2532-L2532",
+      "kind": "理论",
+      "vernacular": "接上页多贵人拥护。田园孤小而浮动。现行大运诸多生变飘泊任性宜作道中生活。其後入劫美中不足。僧道贫富是历史分类，不转写。不把行限当出生柱。不新增案例。",
+      "terms": [
+        "魁钺夹身",
+        "宜作道中生活",
+        "其後入劫"
+      ],
+      "notes": [
+        "待分类作理论；与上页L2525截句相连",
+        "不新增案例；僧道贫富不转写；不把行限当出生柱",
+        "魁钺入劫分套只归档"
+      ],
+      "review": "source-reviewed",
+      "verified": false,
+      "relatedParagraphIds": [
+        "feixing-ziwei-doushu-yuanzhi:L2530-L2530",
+        "feixing-ziwei-doushu-yuanzhi:L2534-L2568"
+      ]
+    },
+    {
+      "paragraphId": "feixing-ziwei-doushu-yuanzhi:L2534-L2568",
+      "kind": "理论",
+      "vernacular": "陈君己丑五十岁十月廿六日子时生。天梁守命垣在亥陷宫遇天马。书云天梁天马陷飘荡无疑。化科乃上界应试主掌文墨之星。己丑十月廿六日子时是历日不是连续四柱，不收案例。官职刑伤贫富是历史分类，不转写。不把行限当出生柱。文末截于尚能。span=35，两条subsections连续覆盖2534-2568。",
+      "terms": [
+        "陈君己丑十月廿六日子时",
+        "天梁天马陷",
+        "化科主掌文墨"
+      ],
+      "notes": [
+        "待分类作理论；span=35两条subsections连续覆盖2534-2568；文末截句与下页L2575相连",
+        "陈君仅历日不收案例；官职刑伤贫富不转写；不把行限当出生柱",
+        "天梁天马空劫羊火分套只归档"
+      ],
+      "review": "source-reviewed",
+      "verified": false,
+      "relatedParagraphIds": [
+        "feixing-ziwei-doushu-yuanzhi:L2532-L2532",
+        "feixing-ziwei-doushu-yuanzhi:L2575-L2598"
+      ],
+      "subsections": [
+        {
+          "id": "feixing-ziwei-doushu-yuanzhi:L2534-L2568:tianliang-tianma",
+          "title": "天梁天马",
+          "startLine": 2534,
+          "endLine": 2550,
+          "vernacular": "陈君己丑五十岁十月廿六日子时生。天梁守命垣在亥陷宫遇天马。书云天梁天马陷飘荡无疑空劫羊火加会方论无此亦难免。附有空劫生平坎坷劳碌不堪羊火陀罗共冲亦多走极端东奔西驰在所难免。为人心性孤高情深化科乃上界应试主掌文墨之星如逢恶曜亦为文章秀士可作群英师范天梁虽失陷亦主孤则有福。",
+          "terms": [
+            "天梁天马陷",
+            "空劫羊火",
+            "化科"
+          ],
+          "notes": [
+            "历日不收案例"
+          ]
+        },
+        {
+          "id": "feixing-ziwei-doushu-yuanzhi:L2534-L2568:chuyun-juji",
+          "title": "初运巨机",
+          "startLine": 2551,
+          "endLine": 2568,
+          "vernacular": "饶上代之余荫聪明阅历当有专长。初行运有孤苦克伤飘泊之状况多情者必冷於情内部损伤亦造因於此。交十六岁後文艺突进颇具风光堪称美运。三十岁後是非不展中途多见挫折巨机卯酉主破荡尚能。",
+          "terms": [
+            "初行运孤苦",
+            "巨机卯酉主破荡"
+          ],
+          "notes": [
+            "刑伤贫富不转写；不把行限当出生柱；文末截句"
+          ]
+        }
+      ]
+    },
+    {
+      "paragraphId": "feixing-ziwei-doushu-yuanzhi:L2573-L2573",
+      "kind": "评注或元数据",
+      "vernacular": "page-066 对图审读标记 reviewed_against_image: page-066.png。是电子文本校次说明，不是古书断法。",
+      "terms": [
+        "reviewed_against_image",
+        "page-066"
+      ],
+      "notes": [
+        "待分类作评注或元数据",
+        "对图标记不等于本批 verified",
+        "无人名连续四柱不收案例"
+      ],
+      "review": "source-reviewed",
+      "verified": false,
+      "relatedParagraphIds": [
+        "feixing-ziwei-doushu-yuanzhi:L2534-L2568",
+        "feixing-ziwei-doushu-yuanzhi:L2575-L2598"
+      ]
+    },
+    {
+      "paragraphId": "feixing-ziwei-doushu-yuanzhi:L2575-L2598",
+      "kind": "理论",
+      "vernacular": "接上页尚能支持者当别有可图因合官禄宫。四十岁左右闹中进步花开锦绣。四十六岁後主持文事有燮理阴阳之妙惟羊刃作冲生变。本年小运入劫有奔走有进益闹中可取可称中吉。官职贫富是历史分类，不转写。不把行限当出生柱。不新增案例。span=24，两条subsections连续覆盖2575-2598。",
+      "terms": [
+        "合官禄宫",
+        "羊刃作冲",
+        "小运入劫"
+      ],
+      "notes": [
+        "待分类作理论；span=24两条subsections连续覆盖2575-2598；与上页L2568截句相连",
+        "不新增案例；官职贫富不转写；不把行限当出生柱",
+        "羊刃天马流禄分套只归档"
+      ],
+      "review": "source-reviewed",
+      "verified": false,
+      "relatedParagraphIds": [
+        "feixing-ziwei-doushu-yuanzhi:L2573-L2573",
+        "feixing-ziwei-doushu-yuanzhi:L2600-L2600"
+      ],
+      "subsections": [
+        {
+          "id": "feixing-ziwei-doushu-yuanzhi:L2575-L2598:guanlu-yangren",
+          "title": "官禄羊刃",
+          "startLine": 2575,
+          "endLine": 2586,
+          "vernacular": "支持者当别有可图因合官禄宫。四十岁左右闹中进步花开锦绣绚烂一时。四十六岁後主持文事有燮理阴阳之妙惟羊刃作冲生变何能安静。",
+          "terms": [
+            "合官禄宫",
+            "羊刃作冲"
+          ],
+          "notes": [
+            "官职不转写"
+          ]
+        },
+        {
+          "id": "feixing-ziwei-doushu-yuanzhi:L2575-L2598:xiaoyun-rujie",
+          "title": "小运入劫",
+          "startLine": 2587,
+          "endLine": 2598,
+          "vernacular": "三合火星天马当有争战之挠又合身命垣与官禄宫。晚景潜居逸乐而遇大耗之乡恐难如意也。本年小运入劫有奔走指流马流禄有进益指流文昌闹中可取指贪狼喜贵并论可称中吉。流禄到迁移当有来财之处。",
+          "terms": [
+            "火星天马",
+            "小运入劫",
+            "流禄到迁移"
+          ],
+          "notes": [
+            "贫富不转写；不把行限当出生柱"
+          ]
+        }
+      ]
+    },
+    {
+      "paragraphId": "feixing-ziwei-doushu-yuanzhi:L2600-L2600",
+      "kind": "理论",
+      "vernacular": "李永和针科医士戊寅六十一岁正月十六日戌时生。命天同身天梁附文昌故习医颇有心得。大运行申酉方均非佳境。本年流羊冲身即患癫痫症在正月初一日被刺激出走。妻宫续娶刚强致使李君闷气成病皆机月化忌为害。戊寅正月十六日戌时是历日不是连续四柱，不收案例。疾病婚配官职是历史分类，不转写。不把行限当出生柱。",
+      "terms": [
+        "李永和戊寅正月十六日戌时",
+        "命天同身天梁",
+        "流羊冲身"
+      ],
+      "notes": [
+        "待分类作理论",
+        "李永和仅历日不收案例；疾病婚配官职不转写；不把行限当出生柱",
+        "天同天梁文昌流羊分套只归档"
+      ],
+      "review": "source-reviewed",
+      "verified": false,
+      "relatedParagraphIds": [
+        "feixing-ziwei-doushu-yuanzhi:L2575-L2598",
+        "feixing-ziwei-doushu-yuanzhi:L2602-L2602"
+      ]
+    },
+    {
+      "paragraphId": "feixing-ziwei-doushu-yuanzhi:L2602-L2602",
+      "kind": "理论",
+      "vernacular": "厨役之妻癸卯三十六岁五月廿一日卯时生。八字戊癸合。父没母嫁。文末截句。癸卯五月廿一日卯时是历日戊癸合不是连续四柱，厨役之妻无名，不收案例。刑死女命是历史分类，不转写。",
+      "terms": [
+        "厨役之妻癸卯五月廿一日卯时",
+        "戊癸合"
+      ],
+      "notes": [
+        "待分类作理论；文末截句与下页L2609相连",
+        "厨役之妻仅历日无名不收案例；刑死女命不转写",
+        "戊癸合分套只归档"
+      ],
+      "review": "source-reviewed",
+      "verified": false,
+      "relatedParagraphIds": [
+        "feixing-ziwei-doushu-yuanzhi:L2600-L2600",
+        "feixing-ziwei-doushu-yuanzhi:L2609-L2609"
+      ]
+    },
+    {
+      "paragraphId": "feixing-ziwei-doushu-yuanzhi:L2607-L2607",
+      "kind": "评注或元数据",
+      "vernacular": "page-067 对图审读标记 reviewed_against_image: page-067.png。是电子文本校次说明，不是古书断法。",
+      "terms": [
+        "reviewed_against_image",
+        "page-067"
+      ],
+      "notes": [
+        "待分类作评注或元数据",
+        "对图标记不等于本批 verified",
+        "无人名连续四柱不收案例"
+      ],
+      "review": "source-reviewed",
+      "verified": false,
+      "relatedParagraphIds": [
+        "feixing-ziwei-doushu-yuanzhi:L2602-L2602",
+        "feixing-ziwei-doushu-yuanzhi:L2609-L2609"
+      ]
+    },
+    {
+      "paragraphId": "feixing-ziwei-doushu-yuanzhi:L2609-L2609",
+      "kind": "理论",
+      "vernacular": "接上页父没母嫁。又裁缝之妻辛亥廿八岁十一月十三日卯时生为再醮之妇。八字丙辛合。父没其母三嫁。按斗数命盘详考颇有研究处。辛亥十一月十三日卯时是历日丙辛合不是连续四柱，裁缝之妻无名，不收案例。女命刑死婚配是历史分类，不转写。",
+      "terms": [
+        "裁缝之妻辛亥十一月十三日卯时",
+        "丙辛合",
+        "再醮之妇"
+      ],
+      "notes": [
+        "待分类作理论；与上页L2602截句相连",
+        "裁缝之妻仅历日无名不收案例；女命刑死婚配不转写",
+        "丙辛合分套只归档"
+      ],
+      "review": "source-reviewed",
+      "verified": false,
+      "relatedParagraphIds": [
+        "feixing-ziwei-doushu-yuanzhi:L2607-L2607",
+        "feixing-ziwei-doushu-yuanzhi:L2611-L2647"
+      ]
+    },
+    {
+      "paragraphId": "feixing-ziwei-doushu-yuanzhi:L2611-L2647",
+      "kind": "理论",
+      "vernacular": "戊寅八月十一日寅时余在沉睡中忽说出一个殊字遂醒。曾见似是壁上有文殊菩萨四字。即取斗数法按年月日時卜之天梁福荫之星守命垣在未旺宫坐贵向贵红喜助之昌曲夹命果主文事可称上吉。戊寅八月十一日寅时是占梦历日不是连续四柱，不收案例。僧道是历史分类，不转写。文末截于孤高则。span=37，两条subsections连续覆盖2611-2647。",
+      "terms": [
+        "戊寅八月十一日寅时",
+        "文殊菩萨",
+        "天梁守命垣在未"
+      ],
+      "notes": [
+        "待分类作理论；span=37两条subsections连续覆盖2611-2647；文末截句与下页L2654相连",
+        "占梦历日不收案例；僧道不转写",
+        "占课不作现代操作步骤；天梁昌曲分套只归档"
+      ],
+      "review": "source-reviewed",
+      "verified": false,
+      "relatedParagraphIds": [
+        "feixing-ziwei-doushu-yuanzhi:L2609-L2609",
+        "feixing-ziwei-doushu-yuanzhi:L2654-L2675"
+      ],
+      "subsections": [
+        {
+          "id": "feixing-ziwei-doushu-yuanzhi:L2611-L2647:wenshu-yizi",
+          "title": "文殊一字",
+          "startLine": 2611,
+          "endLine": 2628,
+          "vernacular": "戊寅八月十一日寅时余在沉睡中忽说出一个殊字遂醒。室人问余所遇何景子而直呼余当告之曾见似是壁上有文殊菩萨四字颇真切作颜鲁公体势每字约四寸余旁站有一中年不识之人请问此殊字不意大声说出一个殊字以告其人。窃思甚奇或者有文艺之进步而指示此四字亦未可知虽未睹其真像。",
+          "terms": [
+            "文殊菩萨",
+            "殊字"
+          ],
+          "notes": [
+            "占梦历日不收案例"
+          ]
+        },
+        {
+          "id": "feixing-ziwei-doushu-yuanzhi:L2611-L2647:tianliang-changqu",
+          "title": "天梁昌曲",
+          "startLine": 2629,
+          "endLine": 2647,
+          "vernacular": "而获观其徽号或是文字之缘深远令人想向。中年人所指为殊字殊字深也与文字有深缘或勉於余亦不敢忆断。即取斗数法按年月日時卜之天梁福荫之星守命垣在未旺宫坐贵向贵红喜助之昌曲夹命果主文事可称上吉不过天机化忌多管事无大碍武曲守身垣孤高则。",
+          "terms": [
+            "天梁守命垣在未",
+            "昌曲夹命",
+            "武曲守身垣"
+          ],
+          "notes": [
+            "占课不作现代操作步骤；文末截句"
+          ]
+        }
+      ]
+    },
+    {
+      "paragraphId": "feixing-ziwei-doushu-yuanzhi:L2652-L2652",
+      "kind": "评注或元数据",
+      "vernacular": "page-068 对图审读标记 reviewed_against_image: page-068.png。是电子文本校次说明，不是古书断法。",
+      "terms": [
+        "reviewed_against_image",
+        "page-068"
+      ],
+      "notes": [
+        "待分类作评注或元数据",
+        "对图标记不等于本批 verified",
+        "无人名连续四柱不收案例"
+      ],
+      "review": "source-reviewed",
+      "verified": false,
+      "relatedParagraphIds": [
+        "feixing-ziwei-doushu-yuanzhi:L2611-L2647",
+        "feixing-ziwei-doushu-yuanzhi:L2654-L2675"
+      ]
+    },
+    {
+      "paragraphId": "feixing-ziwei-doushu-yuanzhi:L2654-L2675",
+      "kind": "理论",
+      "vernacular": "接上页孤高则宜於道。贪狼化禄当见财禄而无多。因流陀有残伤之象白虎丧门又为凶煞。所好者武贪尚能怀柔而命中又有贵也不至为祸。或即文殊菩萨之身命欤。僧道贫富刑伤是历史分类，不转写。不把行限当出生柱。不新增案例。span=22，两条subsections连续覆盖2654-2675。",
+      "terms": [
+        "宜於道",
+        "贪狼化禄",
+        "文殊菩萨身命"
+      ],
+      "notes": [
+        "待分类作理论；span=22两条subsections连续覆盖2654-2675；与上页L2647截句相连",
+        "不新增案例；僧道贫富刑伤不转写；不把行限当出生柱",
+        "武贪白虎丧门分套只归档"
+      ],
+      "review": "source-reviewed",
+      "verified": false,
+      "relatedParagraphIds": [
+        "feixing-ziwei-doushu-yuanzhi:L2652-L2652",
+        "feixing-ziwei-doushu-yuanzhi:L2677-L2677"
+      ],
+      "subsections": [
+        {
+          "id": "feixing-ziwei-doushu-yuanzhi:L2654-L2675:wutan-huailou",
+          "title": "武贪怀柔",
+          "startLine": 2654,
+          "endLine": 2664,
+          "vernacular": "宜於道。贪狼化禄当见财禄而无多因流陀有残伤之象白虎丧门又为凶煞。所好者武贪尚能怀柔而命中又有贵也不至为祸。来时亦在辰方而十一日在紫府太岁方七煞朝斗。",
+          "terms": [
+            "贪狼化禄",
+            "武贪怀柔",
+            "七煞朝斗"
+          ],
+          "notes": [
+            "僧道贫富不转写"
+          ]
+        },
+        {
+          "id": "feixing-ziwei-doushu-yuanzhi:L2654-L2675:wenshu-shenming",
+          "title": "文殊身命",
+          "startLine": 2665,
+          "endLine": 2675,
+          "vernacular": "流年文昌来合亦主清高文书之事是示以文字缘深推进之意无疑。在初十日白天有文书之论作为已办之事可证。按天梁土守命昌曲相夹两贵坐向则武曲金守身合贪狼武曲为金钢不坏之身贪狼为仙佛之像与各加会或即文殊菩萨之身命欤。",
+          "terms": [
+            "天梁土守命",
+            "武曲金守身",
+            "文殊菩萨身命"
+          ],
+          "notes": [
+            "僧道不转写"
+          ]
+        }
+      ]
+    },
+    {
+      "paragraphId": "feixing-ziwei-doushu-yuanzhi:L2677-L2677",
+      "kind": "理论",
+      "vernacular": "某医士戊申三十一岁四月十三日卯时生。八字戊申丁巳丁卯癸卯。同梁守命垣在寅。书云寅申最喜同梁会。文艺飘泊惟此造天梁遇马飘荡无疑又遇旬空则奔走多犹豫。身命垣地空地劫主孤克劳碌宜入道门。近年研究医学将来有成。某医士无名虽列四柱，不收案例。僧道官职是历史分类，不转写。不把行限当出生柱。文末截于大运行卯。",
+      "terms": [
+        "某医士戊申丁巳丁卯癸卯",
+        "同梁守命垣在寅",
+        "天梁遇马"
+      ],
+      "notes": [
+        "待分类作理论；库存标案例因某医士无名不收；文末截句与下页L2684相连",
+        "某医士无名不收案例；僧道官职不转写；不把行限当出生柱",
+        "同梁天马地空地劫分套只归档"
+      ],
+      "review": "source-reviewed",
+      "verified": false,
+      "relatedParagraphIds": [
+        "feixing-ziwei-doushu-yuanzhi:L2654-L2675",
+        "feixing-ziwei-doushu-yuanzhi:L2684-L2684"
+      ]
+    },
+    {
+      "paragraphId": "feixing-ziwei-doushu-yuanzhi:L2682-L2682",
+      "kind": "评注或元数据",
+      "vernacular": "page-069 对图审读标记 reviewed_against_image: page-069.png。是电子文本校次说明，不是古书断法。",
+      "terms": [
+        "reviewed_against_image",
+        "page-069"
+      ],
+      "notes": [
+        "待分类作评注或元数据",
+        "对图标记不等于本批 verified",
+        "无人名连续四柱不收案例"
+      ],
+      "review": "source-reviewed",
+      "verified": false,
+      "relatedParagraphIds": [
+        "feixing-ziwei-doushu-yuanzhi:L2677-L2677",
+        "feixing-ziwei-doushu-yuanzhi:L2684-L2684"
+      ]
+    },
+    {
+      "paragraphId": "feixing-ziwei-doushu-yuanzhi:L2684-L2684",
+      "kind": "理论",
+      "vernacular": "接上页大运行卯。大耗之乡父没兄亡。行辰日月并明渐入佳昌。行巳双禄为用廉贪为辅名噪一时。刑死贫富是历史分类，不转写。不把行限当出生柱。不新增案例。",
+      "terms": [
+        "大运行卯大耗",
+        "行辰日月并明",
+        "行巳双禄"
+      ],
+      "notes": [
+        "待分类作理论；与上页L2677截句相连",
+        "不新增案例；刑死贫富不转写；不把行限当出生柱",
+        "大耗双禄廉贪分套只归档"
+      ],
+      "review": "source-reviewed",
+      "verified": false,
+      "relatedParagraphIds": [
+        "feixing-ziwei-doushu-yuanzhi:L2682-L2682",
+        "feixing-ziwei-doushu-yuanzhi:L2686-L2686"
+      ]
+    },
+    {
+      "paragraphId": "feixing-ziwei-doushu-yuanzhi:L2686-L2686",
+      "kind": "理论",
+      "vernacular": "魏王氏三十八岁十一月二十五日子时生。贪狼守身命在子。因夫主宫廉贞羊刃化忌在甲戌年克夫。子女宫禄存主孤只遗一子十四岁七月十三日子时生。按贪狼居子主泛滥故出外生活。十一月二十五日子时是历日不是连续四柱，不收案例。女命刑死子嗣是历史分类，不转写。不把行限当出生柱。",
+      "terms": [
+        "魏王氏十一月二十五日子时",
+        "贪狼守身命在子",
+        "廉贞羊刃化忌克夫"
+      ],
+      "notes": [
+        "待分类作理论",
+        "魏王氏仅历日不收案例；女命刑死子嗣不转写；不把行限当出生柱",
+        "贪狼廉贞羊刃分套只归档"
+      ],
+      "review": "source-reviewed",
+      "verified": false,
+      "relatedParagraphIds": [
+        "feixing-ziwei-doushu-yuanzhi:L2684-L2684",
+        "feixing-ziwei-doushu-yuanzhi:L2688-L2688"
       ]
     }
   ]
