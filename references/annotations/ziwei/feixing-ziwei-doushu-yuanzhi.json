@@ -2,7 +2,7 @@
   "schemaVersion": "fateradar-annotations-v1",
   "bookSlug": "feixing-ziwei-doushu-yuanzhi",
   "sourceFile": "sources/fulltext/ziwei/feixing-ziwei-doushu-yuanzhi/fulltext.md",
-  "reviewScope": "已逐段阅读电子文本头信息至page-096天气用意（feixing-ziwei-doushu-yuanzhi:L0003-L0004 至 L3779-L3779）并作语义注解。source-reviewed只指对照电子主文本，不代表影印人工核验。吴先生夫人顾瑞年叶字英谢先生顾叔明四柱收入注解案例；其后看村镇气脉尚未注解。",
+  "reviewScope": "已逐段阅读电子文本头信息至page-103崔铭初（feixing-ziwei-doushu-yuanzhi:L0003-L0004 至 L4081-L4081）并作语义注解。source-reviewed只指对照电子主文本，不代表影印人工核验。吴先生夫人顾瑞年叶字英谢先生顾叔明四柱收入注解案例；其后戊寅占候尚未注解。",
   "entries": [
     {
       "paragraphId": "feixing-ziwei-doushu-yuanzhi:L0003-L0004",
@@ -8921,6 +8921,663 @@
       ],
       "review": "source-reviewed",
       "verified": false
+    },
+    {
+      "paragraphId": "feixing-ziwei-doushu-yuanzhi:L3781-L3781",
+      "kind": "理论",
+      "vernacular": "接上页风雨阴晴之用意与吾人有何等关系是否为鑑吾人多不知也。若每日动静间必要看看自己运限月令因果报应祸福昭然若能再看看人家运限月令又可以人为鑑。人人若能引镜自照庶几可以为人矣无异看天气道寒温并可审透世态炎凉滋味。无人名连续四柱，不收案例。不把行限当出生柱。",
+      "terms": [
+        "运限月令",
+        "引镜自照",
+        "世态炎凉"
+      ],
+      "notes": [
+        "待分类作理论；与上页L3774截句相连",
+        "无人名连续四柱不收案例；不把行限当出生柱",
+        "格言不作现代操作步骤"
+      ],
+      "review": "source-reviewed",
+      "verified": false,
+      "relatedParagraphIds": [
+        "feixing-ziwei-doushu-yuanzhi:L3779-L3779",
+        "feixing-ziwei-doushu-yuanzhi:L3783-L3809"
+      ]
+    },
+    {
+      "paragraphId": "feixing-ziwei-doushu-yuanzhi:L3783-L3809",
+      "kind": "理论",
+      "vernacular": "看村镇气脉先以村中村头庙宇定之。若庙宇坍塌倒坏残破不整必是阖村善人少内部不一致互相争伐飘流死亡何能言富何能发旺。若见村庄庙宇重新村中必有能主事之人出焉。惟庙宇砖石不论何家运走购去窃去使用定遭凶祸灾殃。与残破庙宇相近之住户必然有残暴不仁者或破荡败业寒苦艰难之家决无发展。参看阳宅爱众篇诸庙宇神煞表最灵不过该表尚有未尽者宜考查确实最好随笔记之。生乎天地间为人成人之后当作之事。文末截句。无人名连续四柱，不收案例。贫富刑死是历史分类，不转写。span=27，两条subsections连续覆盖3783-3809。",
+      "terms": [
+        "村镇气脉",
+        "庙宇",
+        "阳宅爱众篇",
+        "神煞表"
+      ],
+      "notes": [
+        "待分类作理论；span=27两条subsections连续覆盖3783-3809；文末截句与下页L3816相连",
+        "无人名连续四柱不收案例；贫富刑死不转写",
+        "阳宅神煞表分套只归档；不改已落地风水算法；格言不作现代操作步骤"
+      ],
+      "review": "source-reviewed",
+      "verified": false,
+      "relatedParagraphIds": [
+        "feixing-ziwei-doushu-yuanzhi:L3781-L3781",
+        "feixing-ziwei-doushu-yuanzhi:L3814-L3814"
+      ],
+      "subsections": [
+        {
+          "id": "feixing-ziwei-doushu-yuanzhi:L3783-L3809:cunzhen-qimai",
+          "title": "村镇气脉庙宇",
+          "startLine": 3783,
+          "endLine": 3796,
+          "vernacular": "看村镇气脉先以村中村头庙宇定之。若庙宇坍塌倒坏残破不整必是阖村善人少内部不一致互相争伐飘流死亡等等情形何能言富何能发旺。若见村庄庙宇重新村中必有能主事之人出焉。惟庙宇砖石不论何家运走购去窃去使用。",
+          "terms": [
+            "村镇气脉",
+            "庙宇"
+          ],
+          "notes": [
+            "贫富刑死不转写"
+          ]
+        },
+        {
+          "id": "feixing-ziwei-doushu-yuanzhi:L3783-L3809:yangzhai-aizhong",
+          "title": "阳宅爱众截句",
+          "startLine": 3797,
+          "endLine": 3809,
+          "vernacular": "定遭凶祸灾殃。与残破庙宇相近之住户必然有残暴不仁者或破荡败业寒苦艰难之家决无发展。参看阳宅爱众篇诸庙宇神煞表最灵不过该表尚有未尽者宜考查确实最好随笔记之。生乎天地间为人成人之后当作之事。",
+          "terms": [
+            "阳宅爱众篇",
+            "神煞表"
+          ],
+          "notes": [
+            "阳宅神煞表分套只归档；不改已落地风水算法"
+          ]
+        }
+      ]
+    },
+    {
+      "paragraphId": "feixing-ziwei-doushu-yuanzhi:L3814-L3814",
+      "kind": "评注或元数据",
+      "vernacular": "page-097 对图审读标记 reviewed_against_image: page-097.png。是电子文本校次说明，不是古书断法。",
+      "terms": [
+        "reviewed_against_image",
+        "page-097"
+      ],
+      "notes": [
+        "待分类作评注或元数据",
+        "对图标记不等于本批 verified",
+        "无人名连续四柱不收案例"
+      ],
+      "review": "source-reviewed",
+      "verified": false,
+      "relatedParagraphIds": [
+        "feixing-ziwei-doushu-yuanzhi:L3783-L3809",
+        "feixing-ziwei-doushu-yuanzhi:L3816-L3816"
+      ]
+    },
+    {
+      "paragraphId": "feixing-ziwei-doushu-yuanzhi:L3816-L3816",
+      "kind": "理论",
+      "vernacular": "接上页当作之事即是仁字。故人之第二即是为仁。书云当仁不让於师他人始能敬之为人为仁人。不然人自之上只看加以何字。无人名连续四柱，不收案例。",
+      "terms": [
+        "为仁",
+        "当仁不让於师"
+      ],
+      "notes": [
+        "待分类作理论；与上页L3783截句相连",
+        "无人名连续四柱不收案例",
+        "格言不作现代操作步骤"
+      ],
+      "review": "source-reviewed",
+      "verified": false,
+      "relatedParagraphIds": [
+        "feixing-ziwei-doushu-yuanzhi:L3814-L3814",
+        "feixing-ziwei-doushu-yuanzhi:L3818-L3855"
+      ]
+    },
+    {
+      "paragraphId": "feixing-ziwei-doushu-yuanzhi:L3818-L3855",
+      "kind": "理论",
+      "vernacular": "甲辰廿四年十月廿六日未时生。天同合巨门守命垣为是非多管之宿。太阳天刑守身垣太阳居午日丽中天虽属光明之象乃流动之曜而天刑主法律若为僧能任戒师其他亦好多管事故为律师亦颇合宜。妻宫禄马主财禄流动财宫机月又相争。在乙亥年元配因吸白面自请下堂而去因乙亥年红鸾大耗流羊入命垣小限合大耗岁破主破财生变剋妻官禄宫又遇太阴化忌合妻宫。况禄遇马决难静守太阳化忌素性刚暴恐中年后目疾引年双化忌不利。文末截於丙子年。无名仅历日，不收案例。僧道官职婚配疾病是历史分类，不转写。不把行限当出生柱。span=38，两条subsections连续覆盖3818-3855。",
+      "terms": [
+        "天同合巨门",
+        "天刑",
+        "日丽中天",
+        "红鸾大耗"
+      ],
+      "notes": [
+        "待分类作理论；span=38两条subsections连续覆盖3818-3855；文末截句与下页L3862相连",
+        "甲辰十月廿六日未时无名历日不收案例；僧道官职婚配疾病不转写；不把行限当出生柱",
+        "天同巨门天刑分套只归档；不改已落地紫微算法；占断不作现代操作步骤"
+      ],
+      "review": "source-reviewed",
+      "verified": false,
+      "relatedParagraphIds": [
+        "feixing-ziwei-doushu-yuanzhi:L3816-L3816",
+        "feixing-ziwei-doushu-yuanzhi:L3860-L3860"
+      ],
+      "subsections": [
+        {
+          "id": "feixing-ziwei-doushu-yuanzhi:L3818-L3855:jiachen-tianxing",
+          "title": "甲辰天刑律师",
+          "startLine": 3818,
+          "endLine": 3836,
+          "vernacular": "甲辰廿四年十月廿六日未时生。天同合巨门守命垣为是非多管之宿。太阳天刑守身垣太阳居午日丽中天虽属光明之象乃流动之曜而天刑主法律天刑主刑法若为僧能任戒师其他亦好多管事。附有化忌亦主好多管事波折风浪等等不一有以上种种故为律师亦颇合宜。",
+          "terms": [
+            "天同合巨门",
+            "太阳天刑",
+            "日丽中天"
+          ],
+          "notes": [
+            "无名历日不收案例；僧道官职不转写"
+          ]
+        },
+        {
+          "id": "feixing-ziwei-doushu-yuanzhi:L3818-L3855:yihai-keqi",
+          "title": "乙亥红鸾剋妻",
+          "startLine": 3837,
+          "endLine": 3855,
+          "vernacular": "妻宫禄马主财禄流动财宫机月又相争书云寅申机月福须轻。在乙亥年元配因吸白面自请下堂而去因乙亥年红鸾大耗流羊入命垣小限合大耗岁破主破财生变剋妻官禄宫又遇太阴化忌合妻宫故有如是之波折。况禄遇马决难静守太阳化忌素性刚暴恐中年后目疾引年双化忌不利。丙子年。",
+          "terms": [
+            "妻宫禄马",
+            "红鸾大耗",
+            "岁破"
+          ],
+          "notes": [
+            "婚配疾病不转写；不把行限当出生柱"
+          ]
+        }
+      ]
+    },
+    {
+      "paragraphId": "feixing-ziwei-doushu-yuanzhi:L3860-L3860",
+      "kind": "评注或元数据",
+      "vernacular": "page-098 对图审读标记 reviewed_against_image: page-098.png。是电子文本校次说明，不是古书断法。",
+      "terms": [
+        "reviewed_against_image",
+        "page-098"
+      ],
+      "notes": [
+        "待分类作评注或元数据",
+        "对图标记不等于本批 verified",
+        "无人名连续四柱不收案例"
+      ],
+      "review": "source-reviewed",
+      "verified": false,
+      "relatedParagraphIds": [
+        "feixing-ziwei-doushu-yuanzhi:L3818-L3855",
+        "feixing-ziwei-doushu-yuanzhi:L3862-L3884"
+      ]
+    },
+    {
+      "paragraphId": "feixing-ziwei-doushu-yuanzhi:L3862-L3884",
+      "kind": "理论",
+      "vernacular": "接上页丙子年小限行午流羊冲身陀罗冲命遇词讼事颇不顺手终未救出该案中人之生命也。父母宫红鸾武破铃星故为庶出。为人一生不到法庭幸福匪浅而社会上专有一般勾结之流叉圈弄套时常出入法院为荣现在虽有律师此辈亦难免也。真冤屈者到法院必须如逛公园方能养气观前代廷尉之事迹便得梗概从古如斯为之奈何。无名历日不收案例。诉讼刑死是历史分类，不转写。不把行限当出生柱。span=23，两条subsections连续覆盖3862-3884。",
+      "terms": [
+        "小限行午",
+        "流羊冲身",
+        "庶出",
+        "廷尉"
+      ],
+      "notes": [
+        "待分类作理论；span=23两条subsections连续覆盖3862-3884；与上页L3818截句相连",
+        "无名历日不收案例；诉讼刑死不转写；不把行限当出生柱",
+        "流羊陀罗红鸾分套只归档；不改已落地紫微算法；词讼格言不作现代操作步骤"
+      ],
+      "review": "source-reviewed",
+      "verified": false,
+      "relatedParagraphIds": [
+        "feixing-ziwei-doushu-yuanzhi:L3860-L3860",
+        "feixing-ziwei-doushu-yuanzhi:L3886-L3902"
+      ],
+      "subsections": [
+        {
+          "id": "feixing-ziwei-doushu-yuanzhi:L3862-L3884:bingzi-cisong",
+          "title": "丙子词讼庶出",
+          "startLine": 3862,
+          "endLine": 3872,
+          "vernacular": "小限行午流羊冲身陀罗冲命遇词讼事颇不顺手终未救出该案中人之生命也。父母宫红鸾武破铃星故为庶出。为人一生不到法庭幸福匪浅。",
+          "terms": [
+            "小限行午",
+            "流羊冲身",
+            "庶出"
+          ],
+          "notes": [
+            "诉讼刑死不转写；不把行限当出生柱"
+          ]
+        },
+        {
+          "id": "feixing-ziwei-doushu-yuanzhi:L3862-L3884:goujie-fayuan",
+          "title": "勾结法院廷尉",
+          "startLine": 3873,
+          "endLine": 3884,
+          "vernacular": "而社会上专有一般勾结之流叉圈弄套时常出入法院为荣现在虽有律师此辈亦难免也。真冤屈者到法院必须如逛公园方能养气观前代廷尉之事迹便得梗概从古如斯为之奈何。",
+          "terms": [
+            "勾结",
+            "律师",
+            "廷尉"
+          ],
+          "notes": [
+            "诉讼不转写；格言不作现代操作步骤"
+          ]
+        }
+      ]
+    },
+    {
+      "paragraphId": "feixing-ziwei-doushu-yuanzhi:L3886-L3902",
+      "kind": "理论",
+      "vernacular": "房山刘彩轩辛巳年五月十四日戌时生。紫府守命附有陀罗破其格为煤商经理。戊寅年流陀入身腰腿疼痛下寒之疾。原疾厄宫天同合太阴目疾甚重头晕失眠太阴阴分亏损。今年流耗入相貌宫火旺屡药无效。余问以西邻去年白虎即凶今年流耗太阴仍主不吉当有妇女死火灾因其病之情形即测该方。声称西邻白姓故去一老。文末截句。刘彩轩仅历日无连续四柱，不收案例。疾病刑死贫富是历史分类，不转写。不把行限当出生柱。span=17不强制subsections。",
+      "terms": [
+        "刘彩轩",
+        "紫府守命",
+        "流陀入身",
+        "白虎"
+      ],
+      "notes": [
+        "待分类作理论；span=17不强制subsections；文末截句与下页L3909相连",
+        "刘彩轩辛巳五月十四日戌时仅历日不收案例；疾病刑死贫富不转写；不把行限当出生柱",
+        "紫府陀罗太阴分套只归档；不改已落地紫微算法；占断不作现代操作步骤"
+      ],
+      "review": "source-reviewed",
+      "verified": false,
+      "relatedParagraphIds": [
+        "feixing-ziwei-doushu-yuanzhi:L3862-L3884",
+        "feixing-ziwei-doushu-yuanzhi:L3907-L3907"
+      ]
+    },
+    {
+      "paragraphId": "feixing-ziwei-doushu-yuanzhi:L3907-L3907",
+      "kind": "评注或元数据",
+      "vernacular": "page-099 对图审读标记 reviewed_against_image: page-099.png。是电子文本校次说明，不是古书断法。",
+      "terms": [
+        "reviewed_against_image",
+        "page-099"
+      ],
+      "notes": [
+        "待分类作评注或元数据",
+        "对图标记不等于本批 verified",
+        "无人名连续四柱不收案例"
+      ],
+      "review": "source-reviewed",
+      "verified": false,
+      "relatedParagraphIds": [
+        "feixing-ziwei-doushu-yuanzhi:L3886-L3902",
+        "feixing-ziwei-doushu-yuanzhi:L3909-L3944"
+      ]
+    },
+    {
+      "paragraphId": "feixing-ziwei-doushu-yuanzhi:L3909-L3944",
+      "kind": "理论",
+      "vernacular": "接上页白姓故去一老太太。本人被嫌虚惊其高大南房五间因无人被焚而伊院内饱受虚惊亦见火势熖熖并焚去大树一株太阴主树遇大耗。余又问以南邻有田园之损失伊称该方安姓所种白菜因雨水不潔全坏。东北之方因七杀太岁主凶当有官灾伊称曾死二人其弟远逃未归官事仍未了也。按其小限辰方流陀压身天哭丧门白虎作冲其小女正月卅日病亡难称顺利。余又问所作之事因流羊冲官禄宫在五月必生变故答以四月初已辞去回家。此七月陀马相遇必见往返之劳又告以十月十一月家宅不安明年波折不顺未敢道及因其多忧多虑看命对于此等处当慎言之。照人之命盘按每年月作推测加以四邻考验。文末截於描寫。刘彩轩仍历日，不收案例。刑死疾病官职是历史分类，不转写。不把行限当出生柱。熖原字不改。span=36，两条subsections连续覆盖3909-3944。",
+      "terms": [
+        "熖熖",
+        "七杀太岁",
+        "流陀压身",
+        "陀马"
+      ],
+      "notes": [
+        "待分类作理论；span=36两条subsections连续覆盖3909-3944；与上页L3886截句相连文末又与下页L3951相连",
+        "刘彩轩历日不收案例；刑死疾病官职不转写；不把行限当出生柱；熖原字不改",
+        "七杀太岁流陀分套只归档；不改已落地紫微算法；占断不作现代操作步骤"
+      ],
+      "review": "source-reviewed",
+      "verified": false,
+      "relatedParagraphIds": [
+        "feixing-ziwei-doushu-yuanzhi:L3907-L3907",
+        "feixing-ziwei-doushu-yuanzhi:L3949-L3949"
+      ],
+      "subsections": [
+        {
+          "id": "feixing-ziwei-doushu-yuanzhi:L3909-L3944:xilin-huozai",
+          "title": "西邻火灾官灾",
+          "startLine": 3909,
+          "endLine": 3924,
+          "vernacular": "太太。本人被嫌虚惊其高大南房五间因无人被焚而伊院内饱受虚惊亦见火势熖熖与其病有同等模样并焚去大树一株太阴主树遇大耗。余又问以南邻有田园之损失伊称该方安姓所种白菜因雨水不潔全坏因流羊在午借酉方为田园太阴是水浇地遇大耗之故去年白虎亦不吉。东北之方因七杀太岁主凶当有官灾伊称曾死二人其弟远逃未归官事仍未了也。",
+          "terms": [
+            "熖熖",
+            "七杀太岁",
+            "大耗"
+          ],
+          "notes": [
+            "刑死不转写；熖原字不改"
+          ]
+        },
+        {
+          "id": "feixing-ziwei-doushu-yuanzhi:L3909-L3944:xiaoxian-shenyan",
+          "title": "小限慎言截句",
+          "startLine": 3925,
+          "endLine": 3944,
+          "vernacular": "按其小限辰方流陀压身天哭丧门白虎作冲其小女正月卅日病亡难称顺利。余又问所作之事因流羊冲官禄宫在五月必生变故答以四月初已辞去回家今来有他事。此七月陀马相遇必见往返之劳余又告以十月十一月家宅不安等事明年波折不顺未敢道及因其多忧多虑看命对于此等处当慎言之。照人之命盘按每年月作推测加以四邻考验。描寫。",
+          "terms": [
+            "流陀压身",
+            "陀马",
+            "慎言"
+          ],
+          "notes": [
+            "刑死疾病不转写；不把行限当出生柱"
+          ]
+        }
+      ]
+    },
+    {
+      "paragraphId": "feixing-ziwei-doushu-yuanzhi:L3949-L3949",
+      "kind": "评注或元数据",
+      "vernacular": "page-100 对图审读标记 reviewed_against_image: page-100.png。是电子文本校次说明，不是古书断法。",
+      "terms": [
+        "reviewed_against_image",
+        "page-100"
+      ],
+      "notes": [
+        "待分类作评注或元数据",
+        "对图标记不等于本批 verified",
+        "无人名连续四柱不收案例"
+      ],
+      "review": "source-reviewed",
+      "verified": false,
+      "relatedParagraphIds": [
+        "feixing-ziwei-doushu-yuanzhi:L3909-L3944",
+        "feixing-ziwei-doushu-yuanzhi:L3951-L3990"
+      ]
+    },
+    {
+      "paragraphId": "feixing-ziwei-doushu-yuanzhi:L3951-L3990",
+      "kind": "理论",
+      "vernacular": "接上页描寫情诊之轻重非十余纸不能尽也。普通人每以此等哲学看成街市上算卦推命为一小道耳或以迷信视之无关重要。岂不知观测一切对于修身齐家等事以至家庭常识预防病机故分出十二宫令人审查无不包罗在内。中庸大学论孟书经易经诸子百家之书尽在其中诚有益於人世不可须臾离之要道。再者此项哲学较诗赋词章为严明扬雄谓诗赋小道壮夫不为。韩非说难而死於难商鞅变法而死於法屈原之美无补於正贾谊之论徒成祸端其他历代清流又不计其贻害所以误矣。无人名连续四柱，不收案例。刑死是历史分类，不转写。span=40，三条subsections连续覆盖3951-3990。",
+      "terms": [
+        "十二宫",
+        "修身齐家",
+        "扬雄",
+        "韩非说难"
+      ],
+      "notes": [
+        "待分类作理论；span=40三条subsections连续覆盖3951-3990；与上页L3909截句相连",
+        "无人名连续四柱不收案例；刑死不转写",
+        "十二宫分套只归档；不改已落地紫微算法；格言不作现代操作步骤"
+      ],
+      "review": "source-reviewed",
+      "verified": false,
+      "relatedParagraphIds": [
+        "feixing-ziwei-doushu-yuanzhi:L3949-L3949",
+        "feixing-ziwei-doushu-yuanzhi:L3995-L3995"
+      ],
+      "subsections": [
+        {
+          "id": "feixing-ziwei-doushu-yuanzhi:L3951-L3990:xiushen-qijia",
+          "title": "观测修身齐家",
+          "startLine": 3951,
+          "endLine": 3966,
+          "vernacular": "情诊之轻重非十余纸不能尽也。普通人每以此等哲学看成街市上算卦推命为一小道耳或以迷信视之无关重要。岂不知观测一切对于修身齐家等事以至家庭常识预防病机故分出十二宫令人审查无不包罗在内。中庸大学论孟书经易经诸子百家之书尽在其中诚有益於人世不可须臾离之要道其他尤为神妙万不可忽有失古人之苦心。",
+          "terms": [
+            "修身齐家",
+            "十二宫",
+            "诸子百家"
+          ],
+          "notes": [
+            "格言不作现代操作步骤"
+          ]
+        },
+        {
+          "id": "feixing-ziwei-doushu-yuanzhi:L3951-L3990:shifu-xiaodao",
+          "title": "诗赋小道文豪",
+          "startLine": 3967,
+          "endLine": 3979,
+          "vernacular": "再者此项哲学较诗赋词章为严明每多不究。扬雄谓诗赋小道壮夫不为古人已看破将来必有被误者至今亦多不省。其终日推敲诗酒放怀号称文豪之流欲以酸味为能事而又不知所读之书为何事亦可哀矣。",
+          "terms": [
+            "扬雄",
+            "诗赋小道",
+            "文豪"
+          ],
+          "notes": [
+            "格言不作现代操作步骤"
+          ]
+        },
+        {
+          "id": "feixing-ziwei-doushu-yuanzhi:L3951-L3990:hanfei-shangyang",
+          "title": "韩非商鞅清流",
+          "startLine": 3980,
+          "endLine": 3990,
+          "vernacular": "韩非说难而死於难。商鞅变法而死於法。屈原之美无补於正。贾谊之论徒成祸端。其他历代清流又不计其贻害所以误矣。",
+          "terms": [
+            "韩非说难",
+            "商鞅变法",
+            "清流"
+          ],
+          "notes": [
+            "刑死不转写"
+          ]
+        }
+      ]
+    },
+    {
+      "paragraphId": "feixing-ziwei-doushu-yuanzhi:L3995-L3995",
+      "kind": "评注或元数据",
+      "vernacular": "page-101 对图审读标记 reviewed_against_image: page-101.png。是电子文本校次说明，不是古书断法。",
+      "terms": [
+        "reviewed_against_image",
+        "page-101"
+      ],
+      "notes": [
+        "待分类作评注或元数据",
+        "对图标记不等于本批 verified",
+        "无人名连续四柱不收案例"
+      ],
+      "review": "source-reviewed",
+      "verified": false,
+      "relatedParagraphIds": [
+        "feixing-ziwei-doushu-yuanzhi:L3951-L3990",
+        "feixing-ziwei-doushu-yuanzhi:L3997-L3997"
+      ]
+    },
+    {
+      "paragraphId": "feixing-ziwei-doushu-yuanzhi:L3997-L3997",
+      "kind": "理论",
+      "vernacular": "谈命一道有不敢说不能说不可说不便说不得说不懇说不必说不宜说不暇说又有劝说解说直说不得不说之分。此谈命者临机应变之秘。无人名连续四柱，不收案例。懇原字不改。",
+      "terms": [
+        "谈命一道",
+        "临机应变",
+        "不懇说"
+      ],
+      "notes": [
+        "待分类作理论",
+        "无人名连续四柱不收案例；懇原字不改",
+        "格言不作现代操作步骤"
+      ],
+      "review": "source-reviewed",
+      "verified": false,
+      "relatedParagraphIds": [
+        "feixing-ziwei-doushu-yuanzhi:L3995-L3995",
+        "feixing-ziwei-doushu-yuanzhi:L3999-L4027"
+      ]
+    },
+    {
+      "paragraphId": "feixing-ziwei-doushu-yuanzhi:L3999-L4027",
+      "kind": "理论",
+      "vernacular": "陶律师庚辰五十六岁二月廿二日巳时生。天同天刑化忌合巨门守命垣故宜於法界经管是非争持之事体。禄存守身垣主孤主财生平即拥有厚金不过以此为名耳。五十五岁小运行辰为天罗遇巨暗限太岁岁破冲命官符入官禄宫经手刑事案件几乎不救复由他人援助始转危为安。所以巨门天刑官符众凶曜相缠亦难免有词讼之累。五十六岁小运行巳天喜限合武破红耗流年太阴化忌又合身垣并妻妾宫流年大耗入迁移合巨门与命垣妻病甚重。原书云红鸾天喜晚年不宜见按红鸾天喜咸池与大耗同宫大小限均主剋。文末截句。陶律师仅历日无连续四柱，不收案例。官职贫富诉讼疾病是历史分类，不转写。不把行限当出生柱。span=29，两条subsections连续覆盖3999-4027。",
+      "terms": [
+        "陶律师",
+        "天同天刑",
+        "天罗",
+        "红鸾天喜"
+      ],
+      "notes": [
+        "待分类作理论；span=29两条subsections连续覆盖3999-4027；文末截句与下页L4034相连",
+        "陶律师庚辰二月廿二日巳时仅历日不收案例；官职贫富诉讼疾病不转写；不把行限当出生柱",
+        "天同天刑天罗红鸾分套只归档；不改已落地紫微算法；占断不作现代操作步骤"
+      ],
+      "review": "source-reviewed",
+      "verified": false,
+      "relatedParagraphIds": [
+        "feixing-ziwei-doushu-yuanzhi:L3997-L3997",
+        "feixing-ziwei-doushu-yuanzhi:L4032-L4032"
+      ],
+      "subsections": [
+        {
+          "id": "feixing-ziwei-doushu-yuanzhi:L3999-L4027:taolvshi-tianluo",
+          "title": "陶律师天罗官符",
+          "startLine": 3999,
+          "endLine": 4014,
+          "vernacular": "陶律师庚辰五十六岁二月廿二日巳时生。天同天刑化忌合巨门守命垣故宜於法界经管是非争持之事体。禄存守身垣主孤主财生平即拥有厚金不过以此为名耳。五十五岁小运行辰为天罗遇巨暗限太岁岁破冲命官符入官禄宫经手刑事案件几乎不救复由他人援助始转危为安。",
+          "terms": [
+            "陶律师",
+            "天罗",
+            "官符"
+          ],
+          "notes": [
+            "仅历日不收案例；官职贫富诉讼不转写"
+          ]
+        },
+        {
+          "id": "feixing-ziwei-doushu-yuanzhi:L3999-L4027:hongluan-keqi",
+          "title": "红鸾天喜剋妻",
+          "startLine": 4015,
+          "endLine": 4027,
+          "vernacular": "所以巨门天刑官符众凶曜相缠亦难免有词讼之累。五十六岁小运行巳天喜限合武破红耗流年太阴化忌又合身垣并妻妾宫流年大耗入迁移合巨门与命垣妻病甚重。原书云红鸾天喜晚年不宜见按红鸾天喜咸池与大耗同宫大小限均主剋。",
+          "terms": [
+            "红鸾天喜",
+            "武破红耗",
+            "咸池"
+          ],
+          "notes": [
+            "疾病婚配不转写；不把行限当出生柱"
+          ]
+        }
+      ]
+    },
+    {
+      "paragraphId": "feixing-ziwei-doushu-yuanzhi:L4032-L4032",
+      "kind": "评注或元数据",
+      "vernacular": "page-102 对图审读标记 reviewed_against_image: page-102.png。是电子文本校次说明，不是古书断法。",
+      "terms": [
+        "reviewed_against_image",
+        "page-102"
+      ],
+      "notes": [
+        "待分类作评注或元数据",
+        "对图标记不等于本批 verified",
+        "无人名连续四柱不收案例"
+      ],
+      "review": "source-reviewed",
+      "verified": false,
+      "relatedParagraphIds": [
+        "feixing-ziwei-doushu-yuanzhi:L3999-L4027",
+        "feixing-ziwei-doushu-yuanzhi:L4034-L4034"
+      ]
+    },
+    {
+      "paragraphId": "feixing-ziwei-doushu-yuanzhi:L4034-L4034",
+      "kind": "理论",
+      "vernacular": "接上页大小限均主剋制妻妾或有外遇。因红鸾而耗金钱或为娶亲定亲之年或遇此等限运有嫖妓恋爱之事或女死妻亡之类。无人名连续四柱，不收案例。女命婚配刑死贫富是历史分类，不转写。不把行限当出生柱。",
+      "terms": [
+        "红鸾",
+        "剋制妻妾",
+        "女死妻亡"
+      ],
+      "notes": [
+        "待分类作理论；与上页L3999截句相连",
+        "无人名连续四柱不收案例；女命婚配刑死贫富不转写；不把行限当出生柱",
+        "红鸾分套只归档；不改已落地紫微算法；占断不作现代操作步骤"
+      ],
+      "review": "source-reviewed",
+      "verified": false,
+      "relatedParagraphIds": [
+        "feixing-ziwei-doushu-yuanzhi:L4032-L4032",
+        "feixing-ziwei-doushu-yuanzhi:L4036-L4047"
+      ]
+    },
+    {
+      "paragraphId": "feixing-ziwei-doushu-yuanzhi:L4036-L4047",
+      "kind": "理论",
+      "vernacular": "上代若是同梁巨机日月等星守身命垣或三合弔照则所生之子女一代必是七杀破军贪狼武曲天相廉贞紫府等星守身命垣或三合弔照而孙辈又是日月同梁巨机等曜。可查祖先牌位生辰推演便知以上得失只看福禄吉旺之星拥护之力为何如可见天运循环之理再看坟地之厚薄亦可批判并知其上代与后世所得所失。无人名连续四柱，不收案例。子嗣贫富是历史分类，不转写。弔原字不改。span=12不强制subsections。",
+      "terms": [
+        "同梁巨机",
+        "弔照",
+        "天运循环",
+        "坟地"
+      ],
+      "notes": [
+        "待分类作理论；span=12不强制subsections",
+        "无人名连续四柱不收案例；子嗣贫富不转写；弔原字不改",
+        "同梁巨机七杀破军分套只归档；不改已落地紫微或风水算法；占断不作现代操作步骤"
+      ],
+      "review": "source-reviewed",
+      "verified": false,
+      "relatedParagraphIds": [
+        "feixing-ziwei-doushu-yuanzhi:L4034-L4034",
+        "feixing-ziwei-doushu-yuanzhi:L4049-L4076"
+      ]
+    },
+    {
+      "paragraphId": "feixing-ziwei-doushu-yuanzhi:L4049-L4076",
+      "kind": "理论",
+      "vernacular": "余在十六岁时有山东海阳夏村附近某村崔铭初字鼎三先生来京曾执弟子礼其后偶为观感之说请改正批云少年常有英发之气不宜为此文戒之戒之其说至今犹记之。呜呼人生尘寰之中如在梦境之内百忧感其心万事劳其形忽而为六欲忽而为七情或者为祸福或者为荣辱每匆匆与碌碌倏百年而忽终。识时务者心存定见俱达观者推倒愁城古往今来无非一大舞台也又何必藉荐於优伶。详查该年乃遇流年文昌与巨门同宫故有此一段牢骚。崔铭初无连续四柱，不收案例。不把行限当出生柱。span=28，两条subsections连续覆盖4049-4076。",
+      "terms": [
+        "崔铭初",
+        "流年文昌",
+        "巨门同宫"
+      ],
+      "notes": [
+        "待分类作理论；span=28两条subsections连续覆盖4049-4076",
+        "崔铭初无连续四柱不收案例；不把行限当出生柱",
+        "流年文昌巨门分套只归档；不改已落地紫微算法；赠序牢骚不作现代操作步骤"
+      ],
+      "review": "source-reviewed",
+      "verified": false,
+      "relatedParagraphIds": [
+        "feixing-ziwei-doushu-yuanzhi:L4036-L4047",
+        "feixing-ziwei-doushu-yuanzhi:L4081-L4081"
+      ],
+      "subsections": [
+        {
+          "id": "feixing-ziwei-doushu-yuanzhi:L4049-L4076:cui-mingchu",
+          "title": "崔铭初弟子礼",
+          "startLine": 4049,
+          "endLine": 4062,
+          "vernacular": "余在十六岁时有山东海阳夏村附近某村崔铭初字鼎三先生来京曾执弟子礼其后偶为观感之说请改正批云少年常有英发之气不宜为此文戒之戒之其说至今犹记之。呜呼人生尘寰之中如在梦境之内百忧感其心万事劳其形忽而为六欲。",
+          "terms": [
+            "崔铭初",
+            "弟子礼",
+            "英发之气"
+          ],
+          "notes": [
+            "崔铭初无连续四柱不收案例"
+          ]
+        },
+        {
+          "id": "feixing-ziwei-doushu-yuanzhi:L4049-L4076:liunian-wenchang",
+          "title": "流年文昌牢骚",
+          "startLine": 4063,
+          "endLine": 4076,
+          "vernacular": "忽而为七情或者为祸福或者为荣辱每匆匆与碌碌倏百年而忽终。识时务者心存定见俱达观者推倒愁城古往今来无非一大舞台也又何必藉荐於优伶。详查该年乃遇流年文昌与巨门同宫故有此一段牢骚。",
+          "terms": [
+            "流年文昌",
+            "巨门同宫",
+            "达观"
+          ],
+          "notes": [
+            "不把行限当出生柱"
+          ]
+        }
+      ]
+    },
+    {
+      "paragraphId": "feixing-ziwei-doushu-yuanzhi:L4081-L4081",
+      "kind": "评注或元数据",
+      "vernacular": "page-103 对图审读标记 reviewed_against_image: page-103.png。是电子文本校次说明，不是古书断法。",
+      "terms": [
+        "reviewed_against_image",
+        "page-103"
+      ],
+      "notes": [
+        "待分类作评注或元数据",
+        "对图标记不等于本批 verified",
+        "无人名连续四柱不收案例"
+      ],
+      "review": "source-reviewed",
+      "verified": false,
+      "relatedParagraphIds": [
+        "feixing-ziwei-doushu-yuanzhi:L4049-L4076",
+        "feixing-ziwei-doushu-yuanzhi:L4083-L4116"
+      ]
     }
   ]
 }
