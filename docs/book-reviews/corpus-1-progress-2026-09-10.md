@@ -146,7 +146,7 @@ PYTHONDONTWRITEBYTECODE=1 python3 tools/validate-annotations.py --annotations re
 
 ## 未决项
 
-- P1 紫微全书 SDZJ0170、三命通会 HY1521 及 P2 其余 10 个 job 未开始。
+- P1 紫微全书 SDZJ0170 CP2–4（段 300–1069）、三命通会 HY1521 及 P2 其余 10 个 job 未开始。
 - 1423 条 OCR-draft 门槛不在本队列，不消除。
 - 残表、金氏旁注、一云别说、两套游神、日干墓/五行墓、乙丙利明/丁利暗、旺禄临身两套、毕法与 818 分层保持并存；疑字不改正文。
 - 电子阅读 ≠ 影印校勘，≠ 人工 verified。
@@ -184,3 +184,29 @@ PYTHONDONTWRITEBYTECODE=1 python3 tools/validate-annotations.py --annotations re
 - 疑字/残：段 5 版面无字；段 9/10、14/15 跨段未完句；干推两重注云未详；段 15 末图像未转写。𧰼/㐫/已瘧編等不改正文
 - 长段 subsections：9/10/14/15
 - 校验：`{"ok": true, "books": 1, "files": 1, "entries": 16, "source_reviewed": 15, "errors": []}`。校验器只做结构与 ID，不是语义证书。
+- commit：`218f436`
+
+## P1 紫微斗数全书 · 识典 SDZJ0170 · checkpoint 1
+
+- 文件：`sources/normalized/shidianguji/SDZJ0170/text.md`
+- SHA256：`b4850fddeac0fc7b5fad40a7a93865f47c70622e348ca4f2c79b98f37a15a790`（与队列一致）
+- 段 0–299：`ziwei-doushu-quanshu:shidian-SDZJ0170:P7356158859225989146` … `P7356158877584424997`
+- 新增 `references/annotations/ziwei/ziwei-doushu-quanshu--shidian-SDZJ0170.json`：300 条，source-reviewed 279，draft 21，verified 全 false
+- 未改主本 `ziwei-doushu-quanshu.json`。目录壹卷太微赋与正文跳到卷之三并存，缺卷不补
+- 关键条件/否定/救应：
+  - 禄逢冲破则吉处藏凶；马遇空亡宜僧道；败地可因金生在巳母救子，亦可因禄存化禄扶持反美
+  - 金空则鸣火空则发反为福，水泛木折土陷为祸
+  - 辅弼夹帝贪狼受制则不拘桃花犯主；无正曜辅弼单守则离宗庶出
+  - 君臣庆会可被刑忌四耗同度反为奴欺主
+  - 七杀破军有制反可；杀居绝地纵有吉曜合照限临则凶
+  - 日月守不如照；荫福身命逢吉则刑忌不论
+  - 七杀临身命须流杀并临才死；羊铃须白虎又临才刑戮
+  - 童限老人不宜、中年尚平和
+  - 闰月依二月内起安身命；大限阳男阴女前一宫、阴男阳女后一宫；小限只分男女不分阴阳
+  - 红鸾年少婚姻、老人丧妻，三十年前吉五十年后不宜
+  - 丑未金锁病有救、辰戌死；大小二限相遇作死限
+  - 土水长生皆起申，不据他本改水局
+  - 紫微无左右为孤君，与破军同为胥吏；二杀逢之寿不长只好空门
+  - 天机化忌落闲宫纵有财官亦不终；女命与太阴同终不美
+- 疑字/残：太微赋吉多凶少句疑脱；纳音歌未完；火局■缺字；十二宫星表无庙旺标注；流羊段切断；图像占位。㣲/冨/㐫/𤎉貞/𨺻不改正文
+- 校验：`{"ok": true, "books": 1, "files": 1, "entries": 300, "source_reviewed": 279, "errors": []}`。校验器只做结构与 ID，不是语义证书。
