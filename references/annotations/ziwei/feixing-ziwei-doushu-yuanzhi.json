@@ -2,7 +2,7 @@
   "schemaVersion": "fateradar-annotations-v1",
   "bookSlug": "feixing-ziwei-doushu-yuanzhi",
   "sourceFile": "sources/fulltext/ziwei/feixing-ziwei-doushu-yuanzhi/fulltext.md",
-  "reviewScope": "已逐段阅读电子文本头信息至page-050天有阴阳（feixing-ziwei-doushu-yuanzhi:L0003-L0004 至 L1956-L1956）并作语义注解。source-reviewed只指对照电子主文本，不代表影印人工核验。吴先生及夫人四柱收入注解案例；其后天圆地方尚未注解。",
+  "reviewScope": "已逐段阅读电子文本头信息至page-057叶君无嗣（feixing-ziwei-doushu-yuanzhi:L0003-L0004 至 L2211-L2242）并作语义注解。source-reviewed只指对照电子主文本，不代表影印人工核验。吴先生夫人顾瑞年叶字英四柱收入注解案例；其后奇门乙部占课尚未注解。",
   "entries": [
     {
       "paragraphId": "feixing-ziwei-doushu-yuanzhi:L0003-L0004",
@@ -4473,6 +4473,725 @@
       "relatedParagraphIds": [
         "feixing-ziwei-doushu-yuanzhi:L1930-L1954",
         "feixing-ziwei-doushu-yuanzhi:L1963-L1999"
+      ]
+    },
+    {
+      "paragraphId": "feixing-ziwei-doushu-yuanzhi:L1961-L1961",
+      "kind": "评注或元数据",
+      "vernacular": "page-051 对图审读标记 reviewed_against_image: page-051.png。是电子文本校次说明，不是古书断法。",
+      "terms": [
+        "reviewed_against_image",
+        "page-051"
+      ],
+      "notes": [
+        "待分类作评注或元数据",
+        "对图标记不等于本批 verified",
+        "无人名连续四柱不收案例"
+      ],
+      "review": "source-reviewed",
+      "verified": false,
+      "relatedParagraphIds": [
+        "feixing-ziwei-doushu-yuanzhi:L1956-L1956",
+        "feixing-ziwei-doushu-yuanzhi:L1963-L1999"
+      ]
+    },
+    {
+      "paragraphId": "feixing-ziwei-doushu-yuanzhi:L1963-L1999",
+      "kind": "理论",
+      "vernacular": "接上页并非一个阳。天圆地方不言而喻。道家为阴为方佛家为阳为圆。人道阴阳并用故二者不能须臾离也。天主动为阳地主静为阴。阴中亦有阳阳中亦有阴。僧道是历史分类，不转写。无人名连续四柱，不收案例。span=37，两条subsections连续覆盖1963-1999。",
+      "terms": [
+        "天圆地方",
+        "道家外阳内阴",
+        "佛家外阴内阳"
+      ],
+      "notes": [
+        "待分类作理论；span=37两条subsections连续覆盖1963-1999；与上页L1956截句相连",
+        "无人名连续四柱不收案例；僧道不转写",
+        "阴阳方圆分套只归档"
+      ],
+      "review": "source-reviewed",
+      "verified": false,
+      "relatedParagraphIds": [
+        "feixing-ziwei-doushu-yuanzhi:L1961-L1961",
+        "feixing-ziwei-doushu-yuanzhi:L2001-L2001"
+      ],
+      "subsections": [
+        {
+          "id": "feixing-ziwei-doushu-yuanzhi:L1963-L1999:tianyuan-difang",
+          "title": "天圆地方",
+          "startLine": 1963,
+          "endLine": 1980,
+          "vernacular": "天圆地方不言而喻。道家为阴为方佛家为阳为圆。却阴而至纯阳是道家所希望却阳而至极阴又是佛家所希望其实两家均不能退去阴阳。道家外阳而内阴佛家外阴而内阳人道阴阳并用故二者不能须臾离也。从古如斯何有先後不过在多与少之分有高必有低。",
+          "terms": [
+            "天圆地方",
+            "道家外阳内阴",
+            "佛家外阴内阳"
+          ],
+          "notes": [
+            "僧道不转写"
+          ]
+        },
+        {
+          "id": "feixing-ziwei-doushu-yuanzhi:L1963-L1999:tiandi-yinyang",
+          "title": "天地阴阳",
+          "startLine": 1981,
+          "endLine": 1999,
+          "vernacular": "有凸必有凹有起必有伏。天主动为阳地主静为阴。天地开辟阴阳二气同时而出天地亦是阴阳造成。天有阴阳地亦有阴阳非是阴自阴阳自阳而阴中亦有阳阳中亦有阴非是单独的就是单独亦有包藏而未宣也。故不知以自误。",
+          "terms": [
+            "天主动为阳",
+            "地主静为阴",
+            "阴中有阳阳中有阴"
+          ],
+          "notes": [
+            "无人名连续四柱不收案例"
+          ]
+        }
+      ]
+    },
+    {
+      "paragraphId": "feixing-ziwei-doushu-yuanzhi:L2001-L2001",
+      "kind": "理论",
+      "vernacular": "比如到法院辩曲直即是道家工夫。又如到法院要作逛公园思想便易修道。人要处在逆境作顺境看处在顺境要作逆境看则不至於太方而归於圆通矣。合乎中庸之道亦是长久之道。不论男性女性。文末截句。僧道是历史分类，不转写。无人名连续四柱，不收案例。",
+      "terms": [
+        "法院辩曲直",
+        "逆境作顺境看",
+        "中庸之道"
+      ],
+      "notes": [
+        "待分类作理论；文末截句与下页L2008相连",
+        "无人名连续四柱不收案例；僧道不转写",
+        "方圆中庸分套只归档"
+      ],
+      "review": "source-reviewed",
+      "verified": false,
+      "relatedParagraphIds": [
+        "feixing-ziwei-doushu-yuanzhi:L1963-L1999",
+        "feixing-ziwei-doushu-yuanzhi:L2008-L2034"
+      ]
+    },
+    {
+      "paragraphId": "feixing-ziwei-doushu-yuanzhi:L2006-L2006",
+      "kind": "评注或元数据",
+      "vernacular": "page-052 对图审读标记 reviewed_against_image: page-052.png。是电子文本校次说明，不是古书断法。",
+      "terms": [
+        "reviewed_against_image",
+        "page-052"
+      ],
+      "notes": [
+        "待分类作评注或元数据",
+        "对图标记不等于本批 verified",
+        "无人名连续四柱不收案例"
+      ],
+      "review": "source-reviewed",
+      "verified": false,
+      "relatedParagraphIds": [
+        "feixing-ziwei-doushu-yuanzhi:L2001-L2001",
+        "feixing-ziwei-doushu-yuanzhi:L2008-L2034"
+      ]
+    },
+    {
+      "paragraphId": "feixing-ziwei-doushu-yuanzhi:L2008-L2034",
+      "kind": "理论",
+      "vernacular": "接上页朋友均是两个形势接触。世间一切不过两个形势的关系。若能将两个形势成为一团即是名教中之真工夫。小儿在胎胞内是圆形出胎胞後四肢俱伸则方形矣。才是圆幹是方有才有幹即是有圆有方。无人名连续四柱，不收案例。span=27，两条subsections连续覆盖2008-2034。",
+      "terms": [
+        "两个形势",
+        "外圆内方",
+        "才幹方圆并用"
+      ],
+      "notes": [
+        "待分类作理论；span=27两条subsections连续覆盖2008-2034；与上页L2001截句相连",
+        "无人名连续四柱不收案例",
+        "方圆才幹分套只归档"
+      ],
+      "review": "source-reviewed",
+      "verified": false,
+      "relatedParagraphIds": [
+        "feixing-ziwei-doushu-yuanzhi:L2006-L2006",
+        "feixing-ziwei-doushu-yuanzhi:L2036-L2036"
+      ],
+      "subsections": [
+        {
+          "id": "feixing-ziwei-doushu-yuanzhi:L2008-L2034:liangge-xingshi",
+          "title": "两个形势",
+          "startLine": 2008,
+          "endLine": 2020,
+          "vernacular": "朋友均是两个形势接触。至於一物与设想亦无如此。世间一切不过两个形势的关系。若能将两个形势成为一团即是名教中之真工夫又不仅儒释道为然。比如小儿在胎胞内是圆形出胎胞後四肢俱伸则方形矣。又是外圆内方头圆脚方气圆血方又必须方圆并用。",
+          "terms": [
+            "两个形势",
+            "外圆内方"
+          ],
+          "notes": [
+            "僧道不转写"
+          ]
+        },
+        {
+          "id": "feixing-ziwei-doushu-yuanzhi:L2008-L2034:caigan-fangyuan",
+          "title": "才幹方圆",
+          "startLine": 2021,
+          "endLine": 2034,
+          "vernacular": "始能为人。所谓慈悲感应忠恕皆是方圆并用之名词。比如才幹二字才是圆幹是方。有才无幹不得谓之才幹有幹无才亦不得谓之才幹。有才有幹即是有圆有方故谓之才幹便是方圆并用之道。",
+          "terms": [
+            "才幹",
+            "方圆并用"
+          ],
+          "notes": [
+            "无人名连续四柱不收案例"
+          ]
+        }
+      ]
+    },
+    {
+      "paragraphId": "feixing-ziwei-doushu-yuanzhi:L2036-L2036",
+      "kind": "理论",
+      "vernacular": "又如理治君子法治小人之说。理是圆法是方其实圆理之中又用方方法之中又用圆便得其当然之道矣。故方圆又不能纯用一面。而天理国法与人情其实方中之圆圆中有方。以上各种哲理难。文末截句。贵贱是历史分类，不转写。无人名连续四柱，不收案例。",
+      "terms": [
+        "理治君子法治小人",
+        "方中有圆圆中有方"
+      ],
+      "notes": [
+        "待分类作理论；文末截句与下页L2043相连",
+        "无人名连续四柱不收案例；贵贱不转写",
+        "理法方圆分套只归档"
+      ],
+      "review": "source-reviewed",
+      "verified": false,
+      "relatedParagraphIds": [
+        "feixing-ziwei-doushu-yuanzhi:L2008-L2034",
+        "feixing-ziwei-doushu-yuanzhi:L2043-L2066"
+      ]
+    },
+    {
+      "paragraphId": "feixing-ziwei-doushu-yuanzhi:L2041-L2041",
+      "kind": "评注或元数据",
+      "vernacular": "page-053 对图审读标记 reviewed_against_image: page-053.png。是电子文本校次说明，不是古书断法。",
+      "terms": [
+        "reviewed_against_image",
+        "page-053"
+      ],
+      "notes": [
+        "待分类作评注或元数据",
+        "对图标记不等于本批 verified",
+        "无人名连续四柱不收案例"
+      ],
+      "review": "source-reviewed",
+      "verified": false,
+      "relatedParagraphIds": [
+        "feixing-ziwei-doushu-yuanzhi:L2036-L2036",
+        "feixing-ziwei-doushu-yuanzhi:L2043-L2066"
+      ]
+    },
+    {
+      "paragraphId": "feixing-ziwei-doushu-yuanzhi:L2043-L2066",
+      "kind": "理论",
+      "vernacular": "接上页难以毕述。慧心者当有超悟。相书云腿小膝尖下贱身之句阴宅北边与龙虎方必低陷。又男面似女定家破之句必是阴宅该方有低陷而生此人。形貌贫富是历史分类，不转写。无人名连续四柱，不收案例。span=24，两条subsections连续覆盖2043-2066。",
+      "terms": [
+        "腿小膝尖",
+        "阴宅低陷",
+        "黑子是孤坟"
+      ],
+      "notes": [
+        "待分类作理论；span=24两条subsections连续覆盖2043-2066；与上页L2036截句相连",
+        "无人名连续四柱不收案例；形貌贫富不转写",
+        "相法阴宅分套只归档；不改已落地风水算法"
+      ],
+      "review": "source-reviewed",
+      "verified": false,
+      "relatedParagraphIds": [
+        "feixing-ziwei-doushu-yuanzhi:L2041-L2041",
+        "feixing-ziwei-doushu-yuanzhi:L2068-L2089"
+      ],
+      "subsections": [
+        {
+          "id": "feixing-ziwei-doushu-yuanzhi:L2043-L2066:xiangshu-yinzhai",
+          "title": "相书阴宅",
+          "startLine": 2043,
+          "endLine": 2054,
+          "vernacular": "以毕述。慧心者当有超悟。相书云腿小膝尖下贱身之句阴宅北边与龙虎方必低陷。又男面似女定家破之句必是阴宅该方有低陷而生此人。面皮紧面皮急必是其阴宅地皮紧水法急或低处而水急下之故。",
+          "terms": [
+            "腿小膝尖",
+            "阴宅低陷",
+            "面皮紧"
+          ],
+          "notes": [
+            "形貌贫富不转写"
+          ]
+        },
+        {
+          "id": "feixing-ziwei-doushu-yuanzhi:L2043-L2066:shuifa-heizi",
+          "title": "水法黑子",
+          "startLine": 2055,
+          "endLine": 2066,
+          "vernacular": "牙齿不好水法坏水口亦不佳与好说是非有同等关系。墓後低洼虽是胖子而焉能有臀。山地水紧势急横发横破两宅皆然。黑子是孤坟犯何吉凶当看相书。",
+          "terms": [
+            "水法坏",
+            "横发横破",
+            "黑子是孤坟"
+          ],
+          "notes": [
+            "形貌贫富不转写"
+          ]
+        }
+      ]
+    },
+    {
+      "paragraphId": "feixing-ziwei-doushu-yuanzhi:L2068-L2089",
+      "kind": "案例",
+      "vernacular": "癸亥己未壬午辛亥。同治二年六月初七日生。此顾瑞年辑甫老先生八字。生於保阳寄居济南。破军守命垣在申紫微守身垣在午。人名加连续四柱收入案例。官职僧道疾病是历史分类，不转写。不把行限当出生柱。文末截于流禄临身。span=22，两条subsections连续覆盖2068-2089。",
+      "terms": [
+        "顾瑞年",
+        "癸亥己未壬午辛亥",
+        "破军守命垣"
+      ],
+      "notes": [
+        "待分类作案例；span=22两条subsections连续覆盖2068-2089；文末截句与下页L2096相连",
+        "顾瑞年四柱齐列收入案例；官职僧道疾病不转写；不把行限当出生柱",
+        "杀破狼分套只归档"
+      ],
+      "review": "source-reviewed",
+      "verified": false,
+      "relatedParagraphIds": [
+        "feixing-ziwei-doushu-yuanzhi:L2043-L2066",
+        "feixing-ziwei-doushu-yuanzhi:L2096-L2121"
+      ],
+      "cases": [
+        {
+          "kind": "source_case",
+          "name": "顾瑞年",
+          "pillars": [
+            "癸亥",
+            "己未",
+            "壬午",
+            "辛亥"
+          ],
+          "inputBasis": "four-pillars",
+          "canRecompute": true,
+          "sourceClaim": "同治二年六月初七日生。破军守命垣在申紫微守身垣在午。山左称三老之一。",
+          "notes": [
+            "四柱齐列可按给定四柱讨论；同治二年六月初七日及小限大运不把行限当出生柱。",
+            "道学武术出继是来源历史分类，不转成对现实用户的判断。"
+          ]
+        }
+      ],
+      "subsections": [
+        {
+          "id": "feixing-ziwei-doushu-yuanzhi:L2068-L2089:guruinian-sizhu",
+          "title": "顾瑞年四柱",
+          "startLine": 2068,
+          "endLine": 2078,
+          "vernacular": "癸亥己未壬午辛亥同治二年六月初七日生。此顾瑞年辑甫老先生八字。生於保阳寄居济南。破军守命垣在申紫微守身垣在午。破军宜出外故远处为贵。山左称三老之一为道学之宗。",
+          "terms": [
+            "顾瑞年",
+            "癸亥己未壬午辛亥",
+            "破军守命垣"
+          ],
+          "notes": [
+            "人名连续四柱收入案例"
+          ]
+        },
+        {
+          "id": "feixing-ziwei-doushu-yuanzhi:L2068-L2089:shapolang-chuangye",
+          "title": "杀破狼创业",
+          "startLine": 2079,
+          "endLine": 2089,
+          "vernacular": "专长於武术人多习之。按杀破狼为创事立业星宿得之峥嵘然多先破後成。闻出继外亲。本年丁丑小限太阳虽大放光明当见克制。流禄临身。",
+          "terms": [
+            "杀破狼",
+            "先破後成",
+            "丁丑小限太阳"
+          ],
+          "notes": [
+            "官职僧道不转写；不把行限当出生柱；文末截句"
+          ]
+        }
+      ]
+    },
+    {
+      "paragraphId": "feixing-ziwei-doushu-yuanzhi:L2094-L2094",
+      "kind": "评注或元数据",
+      "vernacular": "page-054 对图审读标记 reviewed_against_image: page-054.png。是电子文本校次说明，不是古书断法。",
+      "terms": [
+        "reviewed_against_image",
+        "page-054"
+      ],
+      "notes": [
+        "待分类作评注或元数据",
+        "对图标记不等于本批 verified",
+        "无人名连续四柱不收案例"
+      ],
+      "review": "source-reviewed",
+      "verified": false,
+      "relatedParagraphIds": [
+        "feixing-ziwei-doushu-yuanzhi:L2068-L2089",
+        "feixing-ziwei-doushu-yuanzhi:L2096-L2121"
+      ]
+    },
+    {
+      "paragraphId": "feixing-ziwei-doushu-yuanzhi:L2096-L2121",
+      "kind": "理论",
+      "vernacular": "接上页流禄临身垣力士诸星必有挤兑。正月流羊作冲赴保定应武术会之约。戊寅年小限行辰红鸾大耗必因红鸾而消财盖生女出阁事也。己卯小限行巳丧门。疾病婚配贫富是历史分类，不转写。不把行限当出生柱。span=26，两条subsections连续覆盖2096-2121。",
+      "terms": [
+        "流羊作冲",
+        "红鸾大耗",
+        "双折足马"
+      ],
+      "notes": [
+        "待分类作理论；span=26两条subsections连续覆盖2096-2121；与上页L2089截句相连",
+        "不新增案例；疾病婚配贫富不转写；不把行限当出生柱",
+        "红鸾丧门羊陀分套只归档"
+      ],
+      "review": "source-reviewed",
+      "verified": false,
+      "relatedParagraphIds": [
+        "feixing-ziwei-doushu-yuanzhi:L2094-L2094",
+        "feixing-ziwei-doushu-yuanzhi:L2123-L2123"
+      ],
+      "subsections": [
+        {
+          "id": "feixing-ziwei-doushu-yuanzhi:L2096-L2121:lishi-liuyang",
+          "title": "力士流羊",
+          "startLine": 2096,
+          "endLine": 2108,
+          "vernacular": "垣力士诸星必有挤兑生气不安之事又称极刚之象而大耗咸池难免劳神消财虚花疾病等事。正月流羊作冲赴保定应武术会之约六月患腹泻之疾及其他虚花等情事。戊寅年小限行辰红鸾大耗必因红鸾而消财盖生女出阁事也。",
+          "terms": [
+            "力士",
+            "流羊作冲",
+            "红鸾大耗"
+          ],
+          "notes": [
+            "疾病婚配贫富不转写"
+          ]
+        },
+        {
+          "id": "feixing-ziwei-doushu-yuanzhi:L2096-L2121:jimao-sangmen",
+          "title": "己卯丧门",
+          "startLine": 2109,
+          "endLine": 2121,
+          "vernacular": "妻宫亦有离别之忧因流羊冲身垣为妻妾宫太岁岁破冲命垣化忌合田宅多波折不宁之事。己卯小限行巳丧门双马遇双陀为双折足马身垣羊陀相夹大耗入命垣化忌到疾厄身命夹力士白虎入田宅均非吉兆。",
+          "terms": [
+            "丧门",
+            "双折足马",
+            "白虎入田宅"
+          ],
+          "notes": [
+            "婚配疾病不转写；不把行限当出生柱"
+          ]
+        }
+      ]
+    },
+    {
+      "paragraphId": "feixing-ziwei-doushu-yuanzhi:L2123-L2123",
+      "kind": "理论",
+      "vernacular": "定兴北幸村张君函称光绪庚子二月十四日戌时生。家道小康五世同堂八世同居有清旌表。不意民国二十年因购蜂赔累甚重家业荡然。按二十年辛未行巳流马落空太岁岁破冲身垣并财宫故破败。光绪庚子二月十四日戌时是历日不是连续四柱，不收案例。贫富是历史分类，不转写。不把行限当出生柱。文末截于壬申癸酉甲。",
+      "terms": [
+        "张君光绪庚子二月十四日戌时",
+        "辛未行巳",
+        "流马落空"
+      ],
+      "notes": [
+        "待分类作理论；文末截句与下页L2130相连",
+        "张君仅历日不收案例；贫富不转写；不把行限当出生柱",
+        "流马岁破分套只归档"
+      ],
+      "review": "source-reviewed",
+      "verified": false,
+      "relatedParagraphIds": [
+        "feixing-ziwei-doushu-yuanzhi:L2096-L2121",
+        "feixing-ziwei-doushu-yuanzhi:L2130-L2130"
+      ]
+    },
+    {
+      "paragraphId": "feixing-ziwei-doushu-yuanzhi:L2128-L2128",
+      "kind": "评注或元数据",
+      "vernacular": "page-055 对图审读标记 reviewed_against_image: page-055.png。是电子文本校次说明，不是古书断法。",
+      "terms": [
+        "reviewed_against_image",
+        "page-055"
+      ],
+      "notes": [
+        "待分类作评注或元数据",
+        "对图标记不等于本批 verified",
+        "无人名连续四柱不收案例"
+      ],
+      "review": "source-reviewed",
+      "verified": false,
+      "relatedParagraphIds": [
+        "feixing-ziwei-doushu-yuanzhi:L2123-L2123",
+        "feixing-ziwei-doushu-yuanzhi:L2130-L2130"
+      ]
+    },
+    {
+      "paragraphId": "feixing-ziwei-doushu-yuanzhi:L2130-L2130",
+      "kind": "理论",
+      "vernacular": "接上页甲戌均不吉。大运行未破耗之乡天相财来财去流通而不聚。财宫地空又是身垣在此限内能不毁家。贪心之害有以使之耳。贫富是历史分类，不转写。不把行限当出生柱。无人名连续四柱，不收案例。",
+      "terms": [
+        "大运行未",
+        "天相财来财去",
+        "财宫地空"
+      ],
+      "notes": [
+        "待分类作理论；与上页L2123截句相连",
+        "无人名连续四柱不收案例；贫富不转写；不把行限当出生柱",
+        "破耗地空分套只归档"
+      ],
+      "review": "source-reviewed",
+      "verified": false,
+      "relatedParagraphIds": [
+        "feixing-ziwei-doushu-yuanzhi:L2128-L2128",
+        "feixing-ziwei-doushu-yuanzhi:L2132-L2132"
+      ]
+    },
+    {
+      "paragraphId": "feixing-ziwei-doushu-yuanzhi:L2132-L2132",
+      "kind": "理论",
+      "vernacular": "紫微如黄蓍甘草之属。天府如参朮之类。羊刃如芒硝。破军如川军。其余皆可以药性配星曜知药性便知星性凉热寒温自然明白。五行五色亦均在其中。无人名连续四柱，不收案例。",
+      "terms": [
+        "紫微黄蓍甘草",
+        "天府参朮",
+        "药性配星曜"
+      ],
+      "notes": [
+        "待分类作理论",
+        "无人名连续四柱不收案例",
+        "药性配星曜分套只归档"
+      ],
+      "review": "source-reviewed",
+      "verified": false,
+      "relatedParagraphIds": [
+        "feixing-ziwei-doushu-yuanzhi:L2130-L2130",
+        "feixing-ziwei-doushu-yuanzhi:L2134-L2156"
+      ]
+    },
+    {
+      "paragraphId": "feixing-ziwei-doushu-yuanzhi:L2134-L2156",
+      "kind": "案例",
+      "vernacular": "叶字英先生昌平北山人。壬辰四十五岁八月二十日酉时生。八字壬辰庚戌乙亥乙酉。巨门守命垣在子为石中隐玉格。人名加连续四柱收入案例。官职贫富是历史分类，不转写。不把行限当出生柱。span=23，两条subsections连续覆盖2134-2156。",
+      "terms": [
+        "叶字英",
+        "壬辰庚戌乙亥乙酉",
+        "石中隐玉格"
+      ],
+      "notes": [
+        "待分类作案例；span=23两条subsections连续覆盖2134-2156",
+        "叶字英四柱齐列收入案例；官职贫富不转写；不把行限当出生柱",
+        "巨门羊刃石中隐玉分套只归档"
+      ],
+      "review": "source-reviewed",
+      "verified": false,
+      "relatedParagraphIds": [
+        "feixing-ziwei-doushu-yuanzhi:L2132-L2132",
+        "feixing-ziwei-doushu-yuanzhi:L2163-L2204"
+      ],
+      "cases": [
+        {
+          "kind": "source_case",
+          "name": "叶字英",
+          "pillars": [
+            "壬辰",
+            "庚戌",
+            "乙亥",
+            "乙酉"
+          ],
+          "inputBasis": "four-pillars",
+          "canRecompute": true,
+          "sourceClaim": "昌平北山人。巨门守命垣在子为石中隐玉格。二十三岁赴唐山煤矿。",
+          "notes": [
+            "四柱齐列可按给定四柱讨论；壬辰四十五岁八月二十日酉时及行运岁数不把行限当出生柱。",
+            "武职工头贫富是来源历史分类，不转成对现实用户的判断。"
+          ]
+        }
+      ],
+      "subsections": [
+        {
+          "id": "feixing-ziwei-doushu-yuanzhi:L2134-L2156:yeziying-sizhu",
+          "title": "叶字英四柱",
+          "startLine": 2134,
+          "endLine": 2144,
+          "vernacular": "叶字英先生昌平北山人壬辰四十五岁八月二十日酉时生八字壬辰庚戌乙亥乙酉。巨门守命垣在子为石中隐玉格附有擎羊主武职离乡远处为荣。所以巨机无论其庙陷均多破荡先破後成而复破盖先破其家而方出门也。",
+          "terms": [
+            "叶字英",
+            "壬辰庚戌乙亥乙酉",
+            "石中隐玉格"
+          ],
+          "notes": [
+            "人名连续四柱收入案例；官职贫富不转写"
+          ]
+        },
+        {
+          "id": "feixing-ziwei-doushu-yuanzhi:L2134-L2156:tianji-tangshan",
+          "title": "天机唐山",
+          "startLine": 2145,
+          "endLine": 2156,
+          "vernacular": "离家远处亦是破局。天机守身垣与命垣相合。二十三岁入正劫赴唐山煤矿三十三岁後渐至大工头率领工人亦是武职之意。四十三岁後本主美运而太阳为浮动之象。",
+          "terms": [
+            "天机守身垣",
+            "唐山煤矿",
+            "太阳浮动"
+          ],
+          "notes": [
+            "官职不转写；不把行限当出生柱"
+          ]
+        }
+      ]
+    },
+    {
+      "paragraphId": "feixing-ziwei-doushu-yuanzhi:L2161-L2161",
+      "kind": "评注或元数据",
+      "vernacular": "page-056 对图审读标记 reviewed_against_image: page-056.png。是电子文本校次说明，不是古书断法。",
+      "terms": [
+        "reviewed_against_image",
+        "page-056"
+      ],
+      "notes": [
+        "待分类作评注或元数据",
+        "对图标记不等于本批 verified",
+        "无人名连续四柱不收案例"
+      ],
+      "review": "source-reviewed",
+      "verified": false,
+      "relatedParagraphIds": [
+        "feixing-ziwei-doushu-yuanzhi:L2134-L2156",
+        "feixing-ziwei-doushu-yuanzhi:L2163-L2204"
+      ]
+    },
+    {
+      "paragraphId": "feixing-ziwei-doushu-yuanzhi:L2163-L2204",
+      "kind": "理论",
+      "vernacular": "书云巨门羊刃虽富贵不久。大运未至辰宫遇壬申年小限行午辞去工头职务来京安居。妻妾各一只有女孩一人即咸池也。命垣巨门羊刃如僧如道。考其祖茔建於山间坐西向东。僧道婚配贫富是历史分类，不转写。不把行限当出生柱。span=42，三条subsections连续覆盖2163-2204。",
+      "terms": [
+        "巨门羊刃虽富贵不久",
+        "桃花犯主",
+        "祖茔坐西向东"
+      ],
+      "notes": [
+        "待分类作理论；span=42三条subsections连续覆盖2163-2204；文末截句与下页L2211相连",
+        "不新增案例；僧道婚配贫富不转写；不把行限当出生柱",
+        "巨门羊刃天府桃花分套只归档"
+      ],
+      "review": "source-reviewed",
+      "verified": false,
+      "relatedParagraphIds": [
+        "feixing-ziwei-doushu-yuanzhi:L2161-L2161",
+        "feixing-ziwei-doushu-yuanzhi:L2211-L2242"
+      ],
+      "subsections": [
+        {
+          "id": "feixing-ziwei-doushu-yuanzhi:L2163-L2204:jumen-yangren-fugui",
+          "title": "巨门羊刃富贵",
+          "startLine": 2163,
+          "endLine": 2176,
+          "vernacular": "书云巨门羊刃虽富贵不久。大运未至辰宫遇壬申年小限行午三会哭虚流羊冲身命垣并小限辞去工头职务来京安居拥资四五万以半数分给胞弟。廉贪禄存临於兄弟宫故得其利益。其弟当业按廉贪禄存亦切乎其职而武杀化忌为官禄宫其年父歿又因化忌大耗入田宅多不吉。",
+          "terms": [
+            "巨门羊刃",
+            "廉贪禄存",
+            "武杀化忌"
+          ],
+          "notes": [
+            "贫富刑死不转写"
+          ]
+        },
+        {
+          "id": "feixing-ziwei-doushu-yuanzhi:L2163-L2204:xianchi-taohua",
+          "title": "咸池桃花",
+          "startLine": 2177,
+          "endLine": 2190,
+          "vernacular": "妻妾各一只有女孩一人即咸池也。按天府当有三人合武曲亦有二人而化忌作难。天府为主桃花同宫又无其他助星所谓桃花犯主为至淫淫者贪也过也非桃花之过是天府之贪花故天府土如泥。",
+          "terms": [
+            "咸池",
+            "桃花犯主",
+            "天府土"
+          ],
+          "notes": [
+            "婚配女命不转写"
+          ]
+        },
+        {
+          "id": "feixing-ziwei-doushu-yuanzhi:L2163-L2204:zuying-zuoxi",
+          "title": "祖茔坐西",
+          "startLine": 2191,
+          "endLine": 2204,
+          "vernacular": "天府土临於酉金力薄所以子女少。命垣巨门羊刃如僧如道亦不看多故花而不实并可考。其行卯运纳妾及其他一切皆是桃花使然又合大耗破军。考其祖茔建於山间坐西向东正西是高山即天府正东是高山一远一近即武曲七杀南北皆有山。",
+          "terms": [
+            "祖茔坐西向东",
+            "天府",
+            "武曲七杀"
+          ],
+          "notes": [
+            "僧道纳妾不转写；文末截句"
+          ]
+        }
+      ]
+    },
+    {
+      "paragraphId": "feixing-ziwei-doushu-yuanzhi:L2209-L2209",
+      "kind": "评注或元数据",
+      "vernacular": "page-057 对图审读标记 reviewed_against_image: page-057.png。是电子文本校次说明，不是古书断法。",
+      "terms": [
+        "reviewed_against_image",
+        "page-057"
+      ],
+      "notes": [
+        "待分类作评注或元数据",
+        "对图标记不等于本批 verified",
+        "无人名连续四柱不收案例"
+      ],
+      "review": "source-reviewed",
+      "verified": false,
+      "relatedParagraphIds": [
+        "feixing-ziwei-doushu-yuanzhi:L2163-L2204",
+        "feixing-ziwei-doushu-yuanzhi:L2211-L2242"
+      ]
+    },
+    {
+      "paragraphId": "feixing-ziwei-doushu-yuanzhi:L2211-L2242",
+      "kind": "理论",
+      "vernacular": "接上页南北皆有山。正北由山上向下行有山口道路即巨门羊刃也。此向大发十年後始分给其弟。叶君无嗣由其弟屋男孩继承。长门居左而北方一带低又空不及次门得其饱满之宜。贫富子嗣是历史分类，不转写。不把行限当出生柱。span=32，两条subsections连续覆盖2211-2242。",
+      "terms": [
+        "巨门羊刃山口",
+        "紫破化权",
+        "长门次门"
+      ],
+      "notes": [
+        "待分类作理论；span=32两条subsections连续覆盖2211-2242；与上页L2204截句相连",
+        "不新增案例；贫富子嗣不转写；不把行限当出生柱",
+        "祖茔龙脉分套只归档；不改已落地风水算法"
+      ],
+      "review": "source-reviewed",
+      "verified": false,
+      "relatedParagraphIds": [
+        "feixing-ziwei-doushu-yuanzhi:L2209-L2209",
+        "feixing-ziwei-doushu-yuanzhi:L2244-L2244"
+      ],
+      "subsections": [
+        {
+          "id": "feixing-ziwei-doushu-yuanzhi:L2211-L2242:shankou-zifu",
+          "title": "山口紫府",
+          "startLine": 2211,
+          "endLine": 2226,
+          "vernacular": "正北由山上向下行有山口道路即巨门羊刃也。东南未出山口之上有大山岗即太阳。西南高山为紫破较近龙脉仍是紫府。此向大发十年後始分给其弟而其弟得此巨资亦发而自为破财也。",
+          "terms": [
+            "巨门羊刃山口",
+            "紫破",
+            "紫府龙脉"
+          ],
+          "notes": [
+            "贫富不转写"
+          ]
+        },
+        {
+          "id": "feixing-ziwei-doushu-yuanzhi:L2211-L2242:yejun-wusi",
+          "title": "叶君无嗣",
+          "startLine": 2227,
+          "endLine": 2242,
+          "vernacular": "以兄弟宫为其弟之命垣大运行卯方发故差十年之数均得紫府与杀破狼武曲禄存天魁左右科权之力。若看财帛宫不过地劫天姚何能如此。叶君无嗣由其弟屋男孩继承将来皆归其弟之子所有权。按坟地论长门居左而北方一带低又空不及次门得其饱满之宜。此种地理颇可研究之。",
+          "terms": [
+            "叶君无嗣",
+            "长门次门",
+            "杀破狼"
+          ],
+          "notes": [
+            "子嗣贫富不转写"
+          ]
+        }
       ]
     }
   ]
