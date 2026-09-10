@@ -2,7 +2,7 @@
   "schemaVersion": "fateradar-annotations-v1",
   "bookSlug": "xingxue-dacheng",
   "sourceFile": "sources/fulltext/xingming/xingxue-dacheng/fulltext.md",
-  "reviewScope": "已逐段阅读提要原序至卷八七五赋后限不如前（xingxue-dacheng:L0003-L0011 至 L2510-L2512）并作语义注解。source-reviewed只指对照电子主文本，不代表影印人工核验。华盖阳刃太乙抱蟾宫主度主大限命宫十五分套只归档。其后昼夜虚实五脏六腑条尚未注解。识典SK1609补页未纳入本批。",
+  "reviewScope": "已逐段阅读提要原序至卷八七五赋五脏六腑犯煞致疾（xingxue-dacheng:L0003-L0011 至 L2546-L2548）并作语义注解。source-reviewed只指对照电子主文本，不代表影印人工核验。昼夜空亡飞钓五脏配星与已落地算法分套只归档。其后天锋地尾三日宫条尚未注解。识典SK1609补页未纳入本批。",
   "entries": [
     {
       "paragraphId": "xingxue-dacheng:L0003-L0011",
@@ -7384,6 +7384,154 @@
       "relatedParagraphIds": [
         "xingxue-dacheng:L2504-L2506",
         "xingxue-dacheng:L2319-L2320"
+      ]
+    },
+    {
+      "paragraphId": "xingxue-dacheng:L2516-L2516",
+      "kind": "理论",
+      "vernacular": "昼日夜月难一例，金鸣火终昩。日月行乎虚实须分昼夜不可一例作空。言金空则鸣，火空则发，火空终归煨烬也。昼夜虚实只归档。昩原字。",
+      "terms": [
+        "昼夜分虚实金空则鸣火空则烬"
+      ],
+      "notes": [
+        "昼夜虚实只归档"
+      ],
+      "review": "source-reviewed",
+      "verified": false,
+      "relatedParagraphIds": [
+        "xingxue-dacheng:L2510-L2512",
+        "xingxue-dacheng:L2407-L2407"
+      ]
+    },
+    {
+      "paragraphId": "xingxue-dacheng:L2520-L2520",
+      "kind": "理论",
+      "vernacular": "限空元脱嵗空星，亦向此中行。此与上文不相同特相反尔。流年限空不是出生柱。嵗原字。",
+      "terms": [
+        "限空元脱与岁空星相反"
+      ],
+      "notes": [
+        "流年限空不是出生柱"
+      ],
+      "review": "source-reviewed",
+      "verified": false,
+      "relatedParagraphIds": [
+        "xingxue-dacheng:L2516-L2516",
+        "xingxue-dacheng:L2510-L2512"
+      ]
+    },
+    {
+      "paragraphId": "xingxue-dacheng:L2524-L2524",
+      "kind": "理论",
+      "vernacular": "其间或有𤣥机隐，按图难索骏。谓八字原带实地或身命生守本根或三合守照有二星照朗煞星唤起之类也。以上十六句为一条论限而当审虚实也。行限不是出生柱。𤣥原字。",
+      "terms": [
+        "实地本根三合照朗不按图索骏"
+      ],
+      "notes": [
+        "行限不是出生柱"
+      ],
+      "review": "source-reviewed",
+      "verified": false,
+      "relatedParagraphIds": [
+        "xingxue-dacheng:L2520-L2520",
+        "xingxue-dacheng:L2510-L2512"
+      ]
+    },
+    {
+      "paragraphId": "xingxue-dacheng:L2528-L2528",
+      "kind": "理论",
+      "vernacular": "煞星照命反为亨，主在别宫生。如命坐亥木为主忌金，金在巳本凶，得命元木星落别处逢水孛滋生反亨。亥上安命例无人名连续四柱，不收案例。",
+      "terms": [
+        "煞照命而命主别宫逢生反亨"
+      ],
+      "notes": [
+        "亥上安命例不收案例"
+      ],
+      "review": "source-reviewed",
+      "verified": false,
+      "relatedParagraphIds": [
+        "xingxue-dacheng:L2524-L2524",
+        "xingxue-dacheng:L2310-L2315"
+      ]
+    },
+    {
+      "paragraphId": "xingxue-dacheng:L2532-L2532",
+      "kind": "理论",
+      "vernacular": "生曜临官福作殃，星起受其伤。如命坐戍宫得木临之岂不为福，若主火落在他宫水孛夹之反为殃也。以上四句为一条论飞钓也。戍宫安命例无人名连续四柱，不收案例。飞钓只归档。戍原字。",
+      "terms": [
+        "生曜临官福而命主他宫受伤反殃",
+        "飞钓"
+      ],
+      "notes": [
+        "戍宫安命例不收案例",
+        "飞钓只归档",
+        "戍原字"
+      ],
+      "review": "source-reviewed",
+      "verified": false,
+      "relatedParagraphIds": [
+        "xingxue-dacheng:L2528-L2528",
+        "xingxue-dacheng:L2324-L2325"
+      ]
+    },
+    {
+      "paragraphId": "xingxue-dacheng:L2536-L2536",
+      "kind": "理论",
+      "vernacular": "已酉丑人亥木命，逢金足有病。已酉丑生人马在亥，木为马元逢金克之主手足有疾。大凡马元受伤多主足疾。已酉丑年支例无人名连续四柱，不收案例。疾病不转写。已酉丑原作已不改巳。",
+      "terms": [
+        "已酉丑马在亥木为马元逢金足疾"
+      ],
+      "notes": [
+        "已酉丑年支例不收案例",
+        "疾病不转写",
+        "已酉丑原字不改巳"
+      ],
+      "review": "source-reviewed",
+      "verified": false,
+      "relatedParagraphIds": [
+        "xingxue-dacheng:L2532-L2532",
+        "xingxue-dacheng:L2470-L2470"
+      ]
+    },
+    {
+      "paragraphId": "xingxue-dacheng:L2540-L2542",
+      "kind": "理论",
+      "vernacular": "五脏六腑要源流，七政四余求。算星之道须当推其源流病症。五星配五脏余气配六腑，又以日为魂月为魄。木为东震甲乙之宿属肝，紫炁是木之余胆是肝之腑炁即为胆。火为南离丙丁之宿属心，罗是火之余小肠乃心之腑故罗为小肠。金是西方庚辛之宿属肺为大肠，盖金为煞曜无余气故脏腑俱属金。水为北方壬癸之宿属肾，孛为水之余膀胱为水之腑故孛为膀胱。土为中镇戊巳之宿属脾，计是土之余胃是脾之腑故计为胃。五脏通于九窍：眼病起于肝，舌病起于心，鼻壅连于心肺，耳溃干于肾，唇口干燥通于脾胃。人之精神皆形于目，苟与煞曜同行则丧明矣。疾病不转写。五脏配星只归档不改算法。筭、炁、戊巳、䘮原字。",
+      "terms": [
+        "五星五脏四余六腑",
+        "金无余气脏腑俱属金",
+        "精神形于目煞同行丧明"
+      ],
+      "notes": [
+        "疾病不转写",
+        "五脏配星只归档"
+      ],
+      "review": "source-reviewed",
+      "verified": false,
+      "relatedParagraphIds": [
+        "xingxue-dacheng:L2536-L2536",
+        "xingxue-dacheng:L2504-L2506"
+      ]
+    },
+    {
+      "paragraphId": "xingxue-dacheng:L2546-L2548",
+      "kind": "理论",
+      "vernacular": "劫的刃蓦不逢空，限遇不善终。劫的刃蓦四煞原守坐实不逢空者，大限见此主非横之灾不善终也。以上六句为一条论犯煞致疾也。春金夏水变为囚，金命喜逢秋；得令值煞反为权，妻子福不全。春金夏火秋木冬土变为囚曜，虽为身命元用星终减力；若身命元用星得令虽有煞克终为得力，身命元得令遇煞为权但不免克妻子。大限不是出生柱。刑死疾病女命不转写。阳刃劫煞只归档。刼、驀原字。",
+      "terms": [
+        "劫的刃蓦坐实不空大限不善终",
+        "得令遇煞为权不免克妻子",
+        "四季囚曜"
+      ],
+      "notes": [
+        "大限不是出生柱",
+        "刑死疾病女命不转写",
+        "阳刃劫煞只归档"
+      ],
+      "review": "source-reviewed",
+      "verified": false,
+      "relatedParagraphIds": [
+        "xingxue-dacheng:L2540-L2542",
+        "xingxue-dacheng:L2390-L2394"
       ]
     }
   ]
