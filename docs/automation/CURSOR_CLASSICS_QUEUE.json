@@ -1,26 +1,33 @@
 {
   "schemaVersion": 1,
-  "updatedAt": 1789063561.3952074,
+  "updatedAt": 1789064785.6633532,
   "taskMarker": null,
   "ownerLane": "cursor-native-classics",
   "preferredStateBranch": "codex/cursor-classics-autonomy-state",
   "fallbackBranch": "codex/full-library-completion",
   "notes": [
     "No PAUSE/STOP/COMPLETE. COMPLETE is forbidden without validator + source-hash + remainingIds empty + human-acceptable evidence.",
-    "Subsequent packages only if owner=cursor-native-classics is explicit. No guessing live workers."
+    "Subsequent packages only if owner=cursor-native-classics is explicit. No guessing live workers.",
+    "SK1610 real file is references/annotations/bazi/sanming-tonghui--shidian-SK1610.json. Do not create xingming/xingxue-dacheng--shidian-SK1610.json. Six 02:22 expansion files are API-bridge exclusive; native must not dispatch them."
   ],
   "forbiddenLiveOwnerFiles": [
     "references/annotations/xingming/xingxue-dacheng--shidian-SK1609.json",
     "references/annotations/selection/yuqia-ji.json",
     "references/annotations/selection/yuqia-ji--shidian-DZ1480.json",
     "references/annotations/bazi/yuanhai-ziping--shidian-NGJ892411999032112149610.json",
-    "references/annotations/divination/bushi-zhengzong--shidian-HY0057.json"
+    "references/annotations/divination/bushi-zhengzong--shidian-HY0057.json",
+    "references/annotations/luming-nayin/wuxing-jingji--shidian-7533808921945833506.json",
+    "references/annotations/luming-nayin/li-xuzhong-mingshu--shidian-SK1601.json",
+    "references/annotations/xingming/minghai-quanbian--shidian-HY1442.json",
+    "references/annotations/physiognomy/shenxiang-quanbian--shidian-SDZJ0174.json",
+    "references/annotations/fengshui/shenshi-xuankong-xue.json",
+    "references/annotations/divination/huangji-jingshi.json",
+    "references/annotations/xingming/xingxue-dacheng--shidian-SK1610.json"
   ],
   "packages": [
     {
       "id": "sanming-tonghui-shidian-SK1610",
       "file": "references/annotations/bazi/sanming-tonghui--shidian-SK1610.json",
-      "assignedPathHint": "references/annotations/xingming/xingxue-dacheng--shidian-SK1610.json",
       "owner": "cursor-native-classics",
       "exclusive": true,
       "status": "in_progress",
@@ -69,7 +76,8 @@
         "sanming-tonghui:shidian-SK1610:P7426253695844728870"
       ],
       "completedThisRun": 36,
-      "remainingTemplates": 205
+      "remainingTemplates": 205,
+      "doNotCreate": "references/annotations/xingming/xingxue-dacheng--shidian-SK1610.json"
     }
   ]
 }
