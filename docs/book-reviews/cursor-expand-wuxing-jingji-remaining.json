@@ -5,8 +5,8 @@
   "sourceFile": "sources/normalized/shidianguji/7533808921945833506/text.md",
   "annotationFile": "references/annotations/luming-nayin/wuxing-jingji--shidian-7533808921945833506.json",
   "sourceParagraphCount": 493,
-  "completedCount": 118,
-  "remainingCount": 375,
+  "completedCount": 384,
+  "remainingCount": 109,
   "baseline": "d47f77d18bae74240986d04ce830ec094436ce39",
   "baselineNote": "corpus-3 draft is not semantic acceptance; IDs must not be reused as done until this package rewrites or confirms them.",
   "verifiedPolicy": "all verified remain false; source-reviewed is electronic-text review only",
@@ -128,11 +128,7 @@
     "wuxing-jingji:shidian-7533808921945833506:P7538051193337528366",
     "wuxing-jingji:shidian-7533808921945833506:P7538051193337544750",
     "wuxing-jingji:shidian-7533808921945833506:P7538051193337561134",
-    "wuxing-jingji:shidian-7533808921945833506:P7538051193337577518"
-  ],
-  "remainingIds": [
-    "wuxing-jingji:shidian-7533808921945833506:P7538051193337593902",
-    "wuxing-jingji:shidian-7533808921945833506:P7538051600774856731",
+    "wuxing-jingji:shidian-7533808921945833506:P7538051193337577518",
     "wuxing-jingji:shidian-7533808921945833506:P7538051619923476490",
     "wuxing-jingji:shidian-7533808921945833506:P7538051620483891209",
     "wuxing-jingji:shidian-7533808921945833506:P7538051620483907593",
@@ -398,7 +394,11 @@
     "wuxing-jingji:shidian-7533808921945833506:P7538051622779781146",
     "wuxing-jingji:shidian-7533808921945833506:P7538051622779797530",
     "wuxing-jingji:shidian-7533808921945833506:P7538051622987890714",
-    "wuxing-jingji:shidian-7533808921945833506:P7538051622987907098",
+    "wuxing-jingji:shidian-7533808921945833506:P7538051622987907098"
+  ],
+  "remainingIds": [
+    "wuxing-jingji:shidian-7533808921945833506:P7538051193337593902",
+    "wuxing-jingji:shidian-7533808921945833506:P7538051600774856731",
     "wuxing-jingji:shidian-7533808921945833506:P7538051635668434982",
     "wuxing-jingji:shidian-7533808921945833506:P7538051635668451366",
     "wuxing-jingji:shidian-7533808921945833506:P7538051635668467750",
@@ -773,8 +773,8 @@
     {
       "heading": "网站章节：甲子日",
       "total": 266,
-      "completedCount": 0,
-      "remainingCount": 266,
+      "completedCount": 266,
+      "remainingCount": 0,
       "ids": [
         "wuxing-jingji:shidian-7533808921945833506:P7538051619923476490",
         "wuxing-jingji:shidian-7533808921945833506:P7538051620483891209",
@@ -1043,8 +1043,7 @@
         "wuxing-jingji:shidian-7533808921945833506:P7538051622987890714",
         "wuxing-jingji:shidian-7533808921945833506:P7538051622987907098"
       ],
-      "completedIds": [],
-      "remainingIds": [
+      "completedIds": [
         "wuxing-jingji:shidian-7533808921945833506:P7538051619923476490",
         "wuxing-jingji:shidian-7533808921945833506:P7538051620483891209",
         "wuxing-jingji:shidian-7533808921945833506:P7538051620483907593",
@@ -1311,7 +1310,8 @@
         "wuxing-jingji:shidian-7533808921945833506:P7538051622779797530",
         "wuxing-jingji:shidian-7533808921945833506:P7538051622987890714",
         "wuxing-jingji:shidian-7533808921945833506:P7538051622987907098"
-      ]
+      ],
+      "remainingIds": []
     },
     {
       "heading": "网站章节：乗又何避之有",
