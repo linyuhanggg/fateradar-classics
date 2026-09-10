@@ -2,7 +2,7 @@
   "schemaVersion": "fateradar-annotations-v1",
   "bookSlug": "wuxing-jingji",
   "sourceFile": "sources/fulltext/luming-nayin/wuxing-jingji/fulltext.md",
-  "reviewScope": "已逐段阅读电子文本宋-廖中至卷六连珠入局标目（wuxing-jingji:L0005-L0005 至 L2448-L2448）并作语义注解。source-reviewed只指对照电子主文本，不代表影印人工核验。本批无新增人名连续四柱。",
+  "reviewScope": "已逐段阅读电子文本宋-廖中至卷六曲脚杀（wuxing-jingji:L0005-L0005 至 L2488-L2488）并作语义注解。source-reviewed只指对照电子主文本，不代表影印人工核验。本批无新增人名连续四柱。",
   "entries": [
     {
       "paragraphId": "wuxing-jingji:L0005-L0005",
@@ -23840,6 +23840,413 @@
       "relatedParagraphIds": [
         "wuxing-jingji:L2446-L2446",
         "wuxing-jingji:L2450-L2450"
+      ]
+    },
+    {
+      "paragraphId": "wuxing-jingji:L2450-L2450",
+      "kind": "理论",
+      "vernacular": "如甲乙丙丁子丑寅卯之类，干支顺者谓之入局，若相刑克者不入局。理愚歌。如甲乙丙丁无名，不收案例。",
+      "terms": [
+        "连珠入局"
+      ],
+      "notes": [
+        "待分类作理论",
+        "无人名连续四柱不收案例",
+        "干支纳音类举无名，不收案例",
+        "如字假令无名不收案例",
+        "纳音分套只归档，不改已落地子平或纳音算法"
+      ],
+      "review": "source-reviewed",
+      "verified": false,
+      "relatedParagraphIds": [
+        "wuxing-jingji:L2448-L2448",
+        "wuxing-jingji:L2452-L2452"
+      ]
+    },
+    {
+      "paragraphId": "wuxing-jingji:L2452-L2452",
+      "kind": "序跋目录",
+      "vernacular": "【连珠贵格】是卷六分节标目。",
+      "terms": [
+        "连珠贵格"
+      ],
+      "notes": [
+        "待分类作序跋目录",
+        "无人名连续四柱不收案例",
+        "目录不作理论条或现代操作步骤"
+      ],
+      "review": "source-reviewed",
+      "verified": false,
+      "relatedParagraphIds": [
+        "wuxing-jingji:L2450-L2450",
+        "wuxing-jingji:L2454-L2454"
+      ]
+    },
+    {
+      "paragraphId": "wuxing-jingji:L2454-L2454",
+      "kind": "术语",
+      "vernacular": "甲午乙未丙申丁酉戊戌己亥，余皆彷此。三命纂局。纂原字不改。干支类举无名，不收案例。",
+      "terms": [
+        "连珠贵格"
+      ],
+      "notes": [
+        "待分类作术语",
+        "无人名连续四柱不收案例",
+        "戍闕纂及缺字标记原字不改",
+        "干支纳音类举无名，不收案例",
+        "短目不作现代操作步骤",
+        "纳音分套只归档，不改已落地子平或纳音算法"
+      ],
+      "review": "source-reviewed",
+      "verified": false,
+      "relatedParagraphIds": [
+        "wuxing-jingji:L2452-L2452",
+        "wuxing-jingji:L2456-L2456"
+      ]
+    },
+    {
+      "paragraphId": "wuxing-jingji:L2456-L2456",
+      "kind": "理论",
+      "vernacular": "八字金书云：若甲子生下有乙丑，此为连珠福神，能押众杀，更加禄马十分之命。诗云：命中生处得连珠，足食丰衣与众殊；若有杀神居位内，自然为福与消除。若甲子生下有乙丑无名，不收案例。足食丰衣是历史分类，不是对现实用户的判断。",
+      "terms": [
+        "连珠福神"
+      ],
+      "notes": [
+        "待分类作理论",
+        "无人名连续四柱不收案例",
+        "干支纳音类举无名，不收案例",
+        "如字假令无名不收案例",
+        "官职贫富刑死是历史分类，不转成对现实用户的判断",
+        "纳音分套只归档，不改已落地子平或纳音算法"
+      ],
+      "review": "source-reviewed",
+      "verified": false,
+      "relatedParagraphIds": [
+        "wuxing-jingji:L2454-L2454",
+        "wuxing-jingji:L2458-L2458"
+      ]
+    },
+    {
+      "paragraphId": "wuxing-jingji:L2458-L2458",
+      "kind": "序跋目录",
+      "vernacular": "【连珠进退】是卷六分节标目。",
+      "terms": [
+        "连珠进退"
+      ],
+      "notes": [
+        "待分类作序跋目录",
+        "无人名连续四柱不收案例",
+        "目录不作理论条或现代操作步骤"
+      ],
+      "review": "source-reviewed",
+      "verified": false,
+      "relatedParagraphIds": [
+        "wuxing-jingji:L2456-L2456",
+        "wuxing-jingji:L2460-L2460"
+      ]
+    },
+    {
+      "paragraphId": "wuxing-jingji:L2460-L2460",
+      "kind": "理论",
+      "vernacular": "凡见同气连珠，如丙寅见丁卯损气，是名退气连珠；丁卯见丙寅退一辰却是进，名贡气连珠；如丙辰土入见丁巳不佳，丁巳见丙辰最上。天元变化书。如丙寅、如丙辰无名，不收案例。",
+      "terms": [
+        "退气连珠",
+        "贡气连珠"
+      ],
+      "notes": [
+        "待分类作理论",
+        "无人名连续四柱不收案例",
+        "干支纳音类举无名，不收案例",
+        "如字假令无名不收案例",
+        "纳音分套只归档，不改已落地子平或纳音算法"
+      ],
+      "review": "source-reviewed",
+      "verified": false,
+      "relatedParagraphIds": [
+        "wuxing-jingji:L2458-L2458",
+        "wuxing-jingji:L2462-L2462"
+      ]
+    },
+    {
+      "paragraphId": "wuxing-jingji:L2462-L2462",
+      "kind": "序跋目录",
+      "vernacular": "论干支诸字杂犯是卷六篇题。",
+      "terms": [
+        "干支诸字杂犯"
+      ],
+      "notes": [
+        "待分类作序跋目录",
+        "无人名连续四柱不收案例",
+        "目录不作理论条或现代操作步骤"
+      ],
+      "review": "source-reviewed",
+      "verified": false,
+      "relatedParagraphIds": [
+        "wuxing-jingji:L2460-L2460",
+        "wuxing-jingji:L2464-L2464"
+      ]
+    },
+    {
+      "paragraphId": "wuxing-jingji:L2464-L2464",
+      "kind": "序跋目录",
+      "vernacular": "【凡甲丙丁壬辰字平头】是卷六分节标目。",
+      "terms": [
+        "平头"
+      ],
+      "notes": [
+        "待分类作序跋目录",
+        "无人名连续四柱不收案例",
+        "目录不作理论条或现代操作步骤"
+      ],
+      "review": "source-reviewed",
+      "verified": false,
+      "relatedParagraphIds": [
+        "wuxing-jingji:L2462-L2462",
+        "wuxing-jingji:L2466-L2466"
+      ]
+    },
+    {
+      "paragraphId": "wuxing-jingji:L2466-L2466",
+      "kind": "理论",
+      "vernacular": "若见三四字带空亡者，定为僧道。僧道是历史分类，不是对现实用户的判断。",
+      "terms": [
+        "平头"
+      ],
+      "notes": [
+        "待分类作理论",
+        "无人名连续四柱不收案例",
+        "官职贫富刑死是历史分类，不转成对现实用户的判断",
+        "纳音分套只归档，不改已落地子平或纳音算法"
+      ],
+      "review": "source-reviewed",
+      "verified": false,
+      "relatedParagraphIds": [
+        "wuxing-jingji:L2464-L2464",
+        "wuxing-jingji:L2468-L2468"
+      ]
+    },
+    {
+      "paragraphId": "wuxing-jingji:L2468-L2468",
+      "kind": "序跋目录",
+      "vernacular": "【甲癸未申酉属破字】是卷六分节标目。",
+      "terms": [
+        "破字"
+      ],
+      "notes": [
+        "待分类作序跋目录",
+        "无人名连续四柱不收案例",
+        "目录不作理论条或现代操作步骤"
+      ],
+      "review": "source-reviewed",
+      "verified": false,
+      "relatedParagraphIds": [
+        "wuxing-jingji:L2466-L2466",
+        "wuxing-jingji:L2470-L2470"
+      ]
+    },
+    {
+      "paragraphId": "wuxing-jingji:L2470-L2470",
+      "kind": "理论",
+      "vernacular": "甲癸酉必损眼，未申患心腹疾，更看时入害乡，干神受制者必不虚矣。甲癸是干支类举无名，不收案例。损眼心腹疾是历史分类，不是对现实用户的判断。",
+      "terms": [
+        "破字"
+      ],
+      "notes": [
+        "待分类作理论",
+        "无人名连续四柱不收案例",
+        "干支纳音类举无名，不收案例",
+        "官职贫富刑死是历史分类，不转成对现实用户的判断",
+        "纳音分套只归档，不改已落地子平或纳音算法"
+      ],
+      "review": "source-reviewed",
+      "verified": false,
+      "relatedParagraphIds": [
+        "wuxing-jingji:L2468-L2468",
+        "wuxing-jingji:L2472-L2472"
+      ]
+    },
+    {
+      "paragraphId": "wuxing-jingji:L2472-L2472",
+      "kind": "序跋目录",
+      "vernacular": "【甲辛卯午申属悬针】是卷六分节标目。",
+      "terms": [
+        "悬针"
+      ],
+      "notes": [
+        "待分类作序跋目录",
+        "无人名连续四柱不收案例",
+        "目录不作理论条或现代操作步骤"
+      ],
+      "review": "source-reviewed",
+      "verified": false,
+      "relatedParagraphIds": [
+        "wuxing-jingji:L2470-L2470",
+        "wuxing-jingji:L2474-L2474"
+      ]
+    },
+    {
+      "paragraphId": "wuxing-jingji:L2474-L2474",
+      "kind": "理论",
+      "vernacular": "五行无气，不值德神，定是军人。军人是历史分类，不是对现实用户的判断。",
+      "terms": [
+        "悬针"
+      ],
+      "notes": [
+        "待分类作理论",
+        "无人名连续四柱不收案例",
+        "官职贫富刑死是历史分类，不转成对现实用户的判断",
+        "纳音分套只归档，不改已落地子平或纳音算法"
+      ],
+      "review": "source-reviewed",
+      "verified": false,
+      "relatedParagraphIds": [
+        "wuxing-jingji:L2472-L2472",
+        "wuxing-jingji:L2476-L2476"
+      ]
+    },
+    {
+      "paragraphId": "wuxing-jingji:L2476-L2476",
+      "kind": "理论",
+      "vernacular": "三命纂局云：悬针三四字，号悬针眼疾，还多险厄临，被刑带杀须徙配，怎不为军刺面人。纂原字不改。眼疾徙配军人是历史分类，不是对现实用户的判断。",
+      "terms": [
+        "悬针"
+      ],
+      "notes": [
+        "待分类作理论",
+        "无人名连续四柱不收案例",
+        "戍闕纂及缺字标记原字不改",
+        "官职贫富刑死是历史分类，不转成对现实用户的判断",
+        "纳音分套只归档，不改已落地子平或纳音算法"
+      ],
+      "review": "source-reviewed",
+      "verified": false,
+      "relatedParagraphIds": [
+        "wuxing-jingji:L2474-L2474",
+        "wuxing-jingji:L2478-L2478"
+      ]
+    },
+    {
+      "paragraphId": "wuxing-jingji:L2478-L2478",
+      "kind": "序跋目录",
+      "vernacular": "【戊庚戍属杖刑锋刃】是卷六分节标目。戍原字不改。",
+      "terms": [
+        "杖刑锋刃"
+      ],
+      "notes": [
+        "待分类作序跋目录",
+        "无人名连续四柱不收案例",
+        "戍闕纂及缺字标记原字不改",
+        "目录不作理论条或现代操作步骤"
+      ],
+      "review": "source-reviewed",
+      "verified": false,
+      "relatedParagraphIds": [
+        "wuxing-jingji:L2476-L2476",
+        "wuxing-jingji:L2480-L2480"
+      ]
+    },
+    {
+      "paragraphId": "wuxing-jingji:L2480-L2480",
+      "kind": "理论",
+      "vernacular": "若带羊刃蚀神，定犯徙流。徙流是历史分类，不是对现实用户的判断。",
+      "terms": [
+        "杖刑锋刃"
+      ],
+      "notes": [
+        "待分类作理论",
+        "无人名连续四柱不收案例",
+        "官职贫富刑死是历史分类，不转成对现实用户的判断",
+        "纳音分套只归档，不改已落地子平或纳音算法"
+      ],
+      "review": "source-reviewed",
+      "verified": false,
+      "relatedParagraphIds": [
+        "wuxing-jingji:L2478-L2478",
+        "wuxing-jingji:L2482-L2482"
+      ]
+    },
+    {
+      "paragraphId": "wuxing-jingji:L2482-L2482",
+      "kind": "序跋目录",
+      "vernacular": "【乙己丑巳属阙字】曲脚杀附。阙原字不改。",
+      "terms": [
+        "阙字",
+        "曲脚杀"
+      ],
+      "notes": [
+        "待分类作序跋目录",
+        "无人名连续四柱不收案例",
+        "戍闕纂及缺字标记原字不改",
+        "目录不作理论条或现代操作步骤"
+      ],
+      "review": "source-reviewed",
+      "verified": false,
+      "relatedParagraphIds": [
+        "wuxing-jingji:L2480-L2480",
+        "wuxing-jingji:L2484-L2484"
+      ]
+    },
+    {
+      "paragraphId": "wuxing-jingji:L2484-L2484",
+      "kind": "理论",
+      "vernacular": "犯多者必有阙唇、穿耳、肢体不全，若无德合，五行无气，缺字读音谷、帛不充，寄食他门。阙及缺字标记原字不改。阙唇穿耳肢体不全寄食是历史分类，不是对现实用户的判断。",
+      "terms": [
+        "阙字"
+      ],
+      "notes": [
+        "待分类作理论",
+        "无人名连续四柱不收案例",
+        "戍闕纂及缺字标记原字不改",
+        "官职贫富刑死是历史分类，不转成对现实用户的判断",
+        "纳音分套只归档，不改已落地子平或纳音算法"
+      ],
+      "review": "source-reviewed",
+      "verified": false,
+      "relatedParagraphIds": [
+        "wuxing-jingji:L2482-L2482",
+        "wuxing-jingji:L2486-L2486"
+      ]
+    },
+    {
+      "paragraphId": "wuxing-jingji:L2486-L2486",
+      "kind": "理论",
+      "vernacular": "李九万云：凡巳酉丑三合全，天干带己字者，主唇齿不全之疾，一生招人唇吻。李九万是称引。凡巳酉丑无名，不收案例。唇齿不全是历史分类，不是对现实用户的判断。",
+      "terms": [
+        "阙字"
+      ],
+      "notes": [
+        "待分类作理论",
+        "无人名连续四柱不收案例",
+        "干支纳音类举无名，不收案例",
+        "官职贫富刑死是历史分类，不转成对现实用户的判断",
+        "纳音分套只归档，不改已落地子平或纳音算法"
+      ],
+      "review": "source-reviewed",
+      "verified": false,
+      "relatedParagraphIds": [
+        "wuxing-jingji:L2484-L2484",
+        "wuxing-jingji:L2488-L2488"
+      ]
+    },
+    {
+      "paragraphId": "wuxing-jingji:L2488-L2488",
+      "kind": "理论",
+      "vernacular": "八字金书云：四柱中乙己巳者名曲脚杀，带多主他养为子，不然养他人子，主两姓故也。乙己巳是干支类举无名，不收案例。他养为子两姓是历史分类，不是对现实用户的判断。",
+      "terms": [
+        "曲脚杀"
+      ],
+      "notes": [
+        "待分类作理论",
+        "无人名连续四柱不收案例",
+        "干支纳音类举无名，不收案例",
+        "官职贫富刑死是历史分类，不转成对现实用户的判断",
+        "纳音分套只归档，不改已落地子平或纳音算法"
+      ],
+      "review": "source-reviewed",
+      "verified": false,
+      "relatedParagraphIds": [
+        "wuxing-jingji:L2486-L2486",
+        "wuxing-jingji:L2490-L2490"
       ]
     }
   ]
