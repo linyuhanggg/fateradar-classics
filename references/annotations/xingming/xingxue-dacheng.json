@@ -2,7 +2,7 @@
   "schemaVersion": "fateradar-annotations-v1",
   "bookSlug": "xingxue-dacheng",
   "sourceFile": "sources/fulltext/xingming/xingxue-dacheng/fulltext.md",
-  "reviewScope": "已逐段阅读提要原序至岁德朝垣（xingxue-dacheng:L0003-L0011 至 L0680-L0681）并作语义注解。source-reviewed只指对照电子主文本，不代表影印人工核验。天马地驿捷法、卦气年干纳卦、禄元两法、三套魁星只归档，不改已落地算法。其后入局尚未注解。识典SK1609补页未纳入本批。",
+  "reviewScope": "已逐段阅读提要原序至穿心六害（xingxue-dacheng:L0003-L0011 至 L0894-L0894）并作语义注解。source-reviewed只指对照电子主文本，不代表影印人工核验。管辰积日、阳刃禄前一位、天空与空亡、刃锋与阳刃只归档，不改已落地算法。其后三刑尚未注解。识典SK1609补页未纳入本批。",
   "entries": [
     {
       "paragraphId": "xingxue-dacheng:L0003-L0011",
@@ -1824,6 +1824,657 @@
         "卯生人假令不收案例",
         "丞相一品不转成官职判断",
         "嵗原字不改"
+      ],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "xingxue-dacheng:L0685-L0686",
+      "kind": "理论",
+      "vernacular": "入局看贵元局。如乙巳䑕猴之类，主星居其上则曰入局；昼夜不相背、星辰不相反则曰天乙吉神，相背相反则曰天官凶位。三方主星不要相克战。不系主星居其上则曰闲神入局，为凶。人命主星临局原文说无不贵。乙巳䑕猴是局例，无人名四柱。䑕原字不改。",
+      "terms": [
+        "入局：主星居贵元局上"
+      ],
+      "notes": [
+        "乙巳䑕猴假令不收案例",
+        "公卿摄职是套语，不转成官职判断",
+        "䑕不改"
+      ],
+      "review": "source-reviewed",
+      "verified": false,
+      "relatedParagraphIds": [
+        "xingxue-dacheng:L0661-L0669",
+        "xingxue-dacheng:L0673-L0676"
+      ]
+    },
+    {
+      "paragraphId": "xingxue-dacheng:L0690-L0691",
+      "kind": "理论",
+      "vernacular": "升殿歌须会玉堂。第一狮子，次宝瓶虚日䑕，第三昴金牛，第四蝎宫房日兎；危月燕在子，昼太阳夜太阴，午张宿，酉毕对宫卯日心。夹注须与日月为三元与太岁相摄；太岁者酉为金牛、卯为天蝎，或乙巳生人宝瓶、壬癸天蝎、丙丁金牛、六辛狮子以日为入殿。不是三元主则无用。既得日月为三元主而入殿，更不以五星为用。太岁不是出生柱。乙巳生人、六辛是年例，不收案例。䑕、兎原字不改。",
+      "terms": [
+        "升殿：日月为三元主而入殿"
+      ],
+      "notes": [
+        "乙巳六辛年例不收案例",
+        "上品之位不转成官职判断",
+        "太岁不是出生柱"
+      ],
+      "review": "source-reviewed",
+      "verified": false,
+      "relatedParagraphIds": [
+        "xingxue-dacheng:L0218-L0218"
+      ]
+    },
+    {
+      "paragraphId": "xingxue-dacheng:L0695-L0695",
+      "kind": "理论",
+      "vernacular": "临驾：一星作三四主号受权临驾，为二主星号选职临驾，为一主则无用。岁驾怕空。岁驾不是出生柱。",
+      "terms": [
+        "临驾：一星兼二三主"
+      ],
+      "notes": [
+        "岁驾不是出生柱"
+      ],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "xingxue-dacheng:L0699-L0701",
+      "kind": "理论",
+      "vernacular": "登籍：帝座加命、崇勋临卯、太岁守勋。夹注甲子以宝瓶为第一座加天命；人马寅宫为崇勋；宝瓶子加寅、人马寅加子、巨蟹加丑、磨蝎加未为天地合仪，星处其中名曰登籍。第一限主原文称一品二品之禄，第二运主为次，第三宫主为不明之禄。合仪之星须定三元而后用。同段论崇勋：只看禄宫主，如甲禄寅乙禄卯有主居其上则曰崇勋，遇驾殿亦为临驾登殿；飞星临之则曰飞星破禄。甲子、甲禄寅是年干例，限运不是出生柱。一品是套语。",
+      "terms": [
+        "登籍：帝座崇勋太岁合仪",
+        "崇勋：禄宫有主星居其上"
+      ],
+      "notes": [
+        "甲子宝瓶、甲禄寅是年例，不收案例",
+        "一品二品不转成官职判断",
+        "限运太岁不是出生柱"
+      ],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "xingxue-dacheng:L0705-L0708",
+      "kind": "理论",
+      "vernacular": "远禄入崇勋。男命值马必贵、女命值马必贫是历史分类。活马、病绝死、六害、玉堂天乙不临辰戌、卦气临命、岁破逢身、阳刃怕在命官四柱又忌劫亡、亡为官符劫为大煞、蓦为悖逆衝为白虎、飞廉、汨没诸条并见于此歌，起法各见后专条，本段只作歌断。君子小人女命产厄横死金榜是套语。四柱此处是原文套语，不另收无名四柱。运行、岁破不是出生柱。刼、驀、㢘原字不改。",
+      "terms": [],
+      "notes": [
+        "女命贫、产厄、横死、金榜是历史分类，不转成判断",
+        "阳刃亡劫蓦越飞廉起法见后专条，本段不另造表",
+        "运行岁破不是出生柱"
+      ],
+      "review": "source-reviewed",
+      "verified": false,
+      "relatedParagraphIds": [
+        "xingxue-dacheng:L0218-L0218",
+        "xingxue-dacheng:L0875-L0875",
+        "xingxue-dacheng:L0804-L0804"
+      ]
+    },
+    {
+      "paragraphId": "xingxue-dacheng:L0712-L0714",
+      "kind": "理论",
+      "vernacular": "特进：人马双鱼木守春，火居天蝎白羊，秋金天秤金牛，双女阴阳冬水，四季主星登此进。夹注主星先进，昼生在太阳之前、夜生在太阴之前在此宫曰庙进；在驾勋曰特进；宫分乐旺庙兼与太岁相摄曰入进。特进原文称一品二品，庙进为第二，入进难言其位。位隔或前进隔日月两位名漏关，处日月之后名末后。要系三元主星。太岁不是出生柱。一品是套语。",
+      "terms": [
+        "特进：主星在驾勋",
+        "庙进：昼夜在日月之前",
+        "入进：乐旺庙与太岁相摄"
+      ],
+      "notes": [
+        "一品二品不转成官职判断",
+        "太岁不是出生柱"
+      ],
+      "review": "source-reviewed",
+      "verified": false,
+      "relatedParagraphIds": [
+        "xingxue-dacheng:L0730-L0731"
+      ]
+    },
+    {
+      "paragraphId": "xingxue-dacheng:L0718-L0718",
+      "kind": "理论",
+      "vernacular": "近帝座：假令天蝎卯宫为帝座，若二三主居天秤号近帝座。假令只有宫名，不收案例。一二三品是套语。",
+      "terms": [],
+      "notes": [
+        "天蝎卯宫假令不收案例",
+        "品级不转成官职判断"
+      ],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "xingxue-dacheng:L0722-L0722",
+      "kind": "理论",
+      "vernacular": "受职星：取本宫对宫上逆数至太岁。如戊申人自地盘寅上逆数甲至太岁上得庚，以水为受职星。受职星临本生太岁宜为贵人。戊申人只有年柱，不收案例。太岁不是第五出生柱。",
+      "terms": [
+        "受职星：对宫逆数至太岁所得之星"
+      ],
+      "notes": [
+        "戊申人年例不收案例",
+        "太岁不是出生柱"
+      ],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "xingxue-dacheng:L0726-L0726",
+      "kind": "理论",
+      "vernacular": "食邑星：午太阳、未月、申巳水、辰酉金、卯戌火、寅亥木、子丑土。庙顺原文称万户侯，怒逆难为荣上爵。万户侯是套语。申巳的巳按原文。",
+      "terms": [],
+      "notes": [
+        "万户侯不转成官职判断"
+      ],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "xingxue-dacheng:L0730-L0731",
+      "kind": "理论",
+      "vernacular": "漏关：四方三位不相攀。夹注星坐之处即照六阳宫，每宫星连对照三合漏关六位；不在对照三合之内。如申子辰为三合、巳亥为四方，则午戌为漏关，常在前后二宫。与特进条「隔日月两位名漏关」相表里，不是另一套出生柱。",
+      "terms": [
+        "漏关：不在对照三合之内的前后二宫"
+      ],
+      "notes": [
+        "库存与特进漏关并存，不合成新表"
+      ],
+      "review": "source-reviewed",
+      "verified": false,
+      "relatedParagraphIds": [
+        "xingxue-dacheng:L0712-L0714"
+      ]
+    },
+    {
+      "paragraphId": "xingxue-dacheng:L0735-L0736",
+      "kind": "理论",
+      "vernacular": "冲殿：岁后一辰为冲殿，乃阴刃；驾后一宫名蓦越。人命防冲越。驾前宫度岁后辰更恐其星行退逆；冲勋冲岁亦为凶。夹注本命太岁后一辰为冲殿，驾后一位为蓦殿，帝座前一辰为近驾。太岁、行退不是出生柱。隂刃原字不改。",
+      "terms": [
+        "冲殿：太岁后一辰，一名阴刃",
+        "蓦越：驾后一宫"
+      ],
+      "notes": [
+        "太岁不是出生柱"
+      ],
+      "review": "source-reviewed",
+      "verified": false,
+      "relatedParagraphIds": [
+        "xingxue-dacheng:L0804-L0804"
+      ]
+    },
+    {
+      "paragraphId": "xingxue-dacheng:L0740-L0740",
+      "kind": "理论",
+      "vernacular": "救陷宫：相奴兄疾名为陷，陷了星辰禄不昌；若陷岁时必无妨。相貌、奴仆、兄弟、疾厄四宫为陷宫名，不是疾病诊断。岁时不是出生柱。䧟原字不改。",
+      "terms": [],
+      "notes": [
+        "疾厄不转成疾病判断"
+      ],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "xingxue-dacheng:L0744-L0745",
+      "kind": "理论",
+      "vernacular": "管辰星：以本生月初一日属亢、十四日属奎为例，看该宿有何曜。起法先置积日，以十七万一千三百单九算去之，余者又以二十八算去之，不满者从角宿轮起。积日算法只归档，本批不改引擎。贫富寿夭是套语。",
+      "terms": [
+        "管辰星：按积日轮二十八宿所值之星"
+      ],
+      "notes": [
+        "积日算法只归档，不改引擎",
+        "祸福寿夭不转成判断"
+      ],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "xingxue-dacheng:L0749-L0749",
+      "kind": "序跋目录",
+      "vernacular": "星学大成卷二题署：钦定四库全书。无术数条件。",
+      "terms": [],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "xingxue-dacheng:L0753-L0753",
+      "kind": "序跋目录",
+      "vernacular": "星学大成卷三题署：明万民英撰。无术数条件。",
+      "terms": [],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "xingxue-dacheng:L0757-L0760",
+      "kind": "理论",
+      "vernacular": "十二宫管库星：今人只论原来曜，此宿为管库，主人祸福。夹注十二宫有主星，如寅属木；较之十二宫管库主星则又验前宫主。欲十二宫祸福，推管库星在何宫分得地失时。宫主与管库主星不是同一套。㣲原字不改。",
+      "terms": [
+        "管库星：十二宫所值之宿星",
+        "宫主：寅木之类的宫属星"
+      ],
+      "notes": [
+        "宫主与管库主星分开，不合并"
+      ],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "xingxue-dacheng:L0764-L0767",
+      "kind": "理论",
+      "vernacular": "得地失时：十二宫有强弱，七强五弱。命宫官禄最高，福德妻宫次强，近强男女田宅、第九迁移；五弱疾宫相貌、兄弟奴仆八宫。古人虽有推详例，洞天宫法更重失地逢时庙旺，不问强弱宿星地。得时则享福，失时则陷害，官之强弱固不必执定。同段论得地不得地：先论庙与不庙、强与不强；木星在寅亥为乐庙好之宫。用福星得地照临其福百倍；为煞失地不可解，得地或转煞为福。假令为福而不得地是套语，不收案例。妻宫奴仆疾宫是宫名。",
+      "terms": [
+        "得时：星得庙旺好乐",
+        "七强五弱：命官禄等强、疾相貌兄弟奴仆八宫弱"
+      ],
+      "notes": [
+        "贫富祸福不转成判断",
+        "假令不收案例"
+      ],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "xingxue-dacheng:L0771-L0772",
+      "kind": "理论",
+      "vernacular": "强弱先后：五星善恶混照须辨强弱先后。刘少白问，强譬大国、弱譬小国。夹注前后指入宫前后；或强而后入或弱而先入，当以强弱论；若强先弱后当以前后论。刘少白只提名，无四柱。",
+      "terms": [],
+      "notes": [
+        "刘少白不收案例"
+      ],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "xingxue-dacheng:L0776-L0777",
+      "kind": "理论",
+      "vernacular": "留顺伏逆：五星近太阳则伏、对太阳则逆、三合见太阳则留。顺而有用则十分之福；光芒不见不能为福亦不能为祸。夹注留顺伏逆与强弱先后并看；前进而留、后进而顺则后者反在前；强者伏、弱者逆则强亦不能作福而弱者反兴祸。",
+      "terms": [
+        "伏：近太阳",
+        "逆：对太阳",
+        "留：三合见太阳"
+      ],
+      "notes": [],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "xingxue-dacheng:L0781-L0783",
+      "kind": "理论",
+      "vernacular": "吉凶星：火罗计孛四凶神，炁水金阳本吉星。当究生时善恶用，莫专自古吉凶名。夹注名者炁金水火孛罗，用者福权财禄囚煞忌刑。火孛罗计亦能为福星权曜禄主财元，不纯乎恶；炁金水木亦能为煞曜刑星囚星疾宿，不纯乎善。炁原字不改。贫穷富贵是套语。",
+      "terms": [],
+      "notes": [
+        "吉凶名与用分开，不按星名固定善恶",
+        "贫穷富贵不转成判断"
+      ],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "xingxue-dacheng:L0787-L0787",
+      "kind": "理论",
+      "vernacular": "休囚歌：水土卯星居其乡，三元主落定为殃；木居午未宫刑战；火星戌上无星管，运行冲破；金向丑边为正局。运行不是出生柱。卒他乡是套语。",
+      "terms": [],
+      "notes": [
+        "运行不是出生柱",
+        "卒他乡不转成判断"
+      ],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "xingxue-dacheng:L0790-L0792",
+      "kind": "理论",
+      "vernacular": "汨没：水绝己、木绝申之夹注。申子辰居双女，亥卯未申上，寅午戌怕双鱼，己酉丑来人马。另说定乾湿沈没宫：巳午为乾宫，亥子为湿宫；更是丑亥未为湿宫、寅卯酉辰为乾宫，卯为沈宫、酉为没宫。水绝己的己、己酉丑的己按原文。两说并存，不合成一套。",
+      "terms": [
+        "汨没：三合局所怕的沈没宫",
+        "乾湿沈没：另一套乾湿沈没宫"
+      ],
+      "notes": [
+        "两说并存",
+        "己不改巳"
+      ],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "xingxue-dacheng:L0795-L0796",
+      "kind": "理论",
+      "vernacular": "五行沈泄法，夹注通于子平。火见水而死、金沈怕水乡等生克沈泄口诀。只归档，不改已落地子平取用。",
+      "terms": [],
+      "notes": [
+        "通于子平只归档，不改子平引擎"
+      ],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "xingxue-dacheng:L0800-L0800",
+      "kind": "理论",
+      "vernacular": "天空：太岁前一位。天地诸般煞星逢之不能为祸，有用之星逢之无力不能为福。身命二星逢之说有艺业、多学少成。阳刃与的煞夹之多不吉。流年岁驾前一位亦能空其吉凶之星。太岁、流年岁驾不是出生柱。与后文空亡阴阳年不是同一套。",
+      "terms": [
+        "天空：太岁前一位"
+      ],
+      "notes": [
+        "艺业少恩不转成人格判断",
+        "太岁流年不是出生柱",
+        "不与空亡合并"
+      ],
+      "review": "source-reviewed",
+      "verified": false,
+      "relatedParagraphIds": [
+        "xingxue-dacheng:L0862-L0862"
+      ]
+    },
+    {
+      "paragraphId": "xingxue-dacheng:L0804-L0804",
+      "kind": "理论",
+      "vernacular": "蓦越：驾后一位，赶驾有蓦越之象。有用之星逢之减一半力。煞星逢之或化直难，与身星并见阳刃的煞，行限或太岁流年填之原文说多主恶死，冲之必见官事。行限流年不是出生柱。恶死官事是套语。驀原字不改。",
+      "terms": [
+        "蓦越：驾后一位"
+      ],
+      "notes": [
+        "恶死官事不转成判断",
+        "行限流年不是出生柱"
+      ],
+      "review": "source-reviewed",
+      "verified": false,
+      "relatedParagraphIds": [
+        "xingxue-dacheng:L0735-L0736"
+      ]
+    },
+    {
+      "paragraphId": "xingxue-dacheng:L0808-L0808",
+      "kind": "理论",
+      "vernacular": "天厄：天空对位。不宜诸煞交入此宫，极忌同于八厄。男女犯之定主厄难是套语。",
+      "terms": [],
+      "notes": [
+        "厄难不转成判断"
+      ],
+      "review": "source-reviewed",
+      "verified": false,
+      "relatedParagraphIds": [
+        "xingxue-dacheng:L0800-L0800"
+      ]
+    },
+    {
+      "paragraphId": "xingxue-dacheng:L0812-L0812",
+      "kind": "理论",
+      "vernacular": "血刃：以子年加戌逆数，一年一位至本生年。主有血光，行限犯之恶死；然必阳刃剑锋聚会或天星罗孛交战而后为灾。库存标操作步骤，注释仍作理论。行限不是出生柱。血光恶死是套语。",
+      "terms": [
+        "血刃：子年加戌逆数至本生年"
+      ],
+      "notes": [
+        "血光恶死不转成疾病或刑死判断",
+        "行限不是出生柱"
+      ],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "xingxue-dacheng:L0816-L0816",
+      "kind": "理论",
+      "vernacular": "勾绞：勾以子年加卯逐年顺数，绞以子年加酉逐年顺数，二煞相对。主刑囚，然必加三刑或流年白虎官符太岁冲动方断。流年太岁不是出生柱。刑囚是套语。",
+      "terms": [
+        "勾：子年加卯顺数",
+        "绞：子年加酉顺数"
+      ],
+      "notes": [
+        "刑囚不转成判断",
+        "流年太岁不是出生柱"
+      ],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "xingxue-dacheng:L0820-L0820",
+      "kind": "理论",
+      "vernacular": "丧门白虎吊客病符：当年太岁所布。假如子年，太岁子、三丧门寅、九白虎申、十一吊客戌、十二病符亥。丧门吊客主孝服哭泣，白虎病符主官非病破；有赦文天解天德月德解救。子年是年支例，不收案例。太岁不是出生柱。孝服官非是套语。",
+      "terms": [
+        "丧门：太岁后二辰",
+        "白虎：太岁后八辰",
+        "吊客：太岁后十辰",
+        "病符：太岁后十一辰"
+      ],
+      "notes": [
+        "子年假令不收案例",
+        "孝服官非病破不转成判断",
+        "太岁不是出生柱"
+      ],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "xingxue-dacheng:L0824-L0824",
+      "kind": "理论",
+      "vernacular": "天哭披头：天哭以子年加午逆数，披头以子年加辰逆数。与丧吊并主有丧服；更值恶星而太岁亦到则孝服不可免。库存标操作步骤，注释仍作理论。太岁不是出生柱。丧服是套语。",
+      "terms": [
+        "天哭：子年加午逆数",
+        "披头：子年加辰逆数"
+      ],
+      "notes": [
+        "丧服不转成判断"
+      ],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "xingxue-dacheng:L0828-L0828",
+      "kind": "理论",
+      "vernacular": "飞符暴败：飞符以子年加辰顺数，暴败以子年加未顺数。主横灾官事，天月二德解神可救。暴败最怕身命相值，飞符忌日時同到。日時不是第五出生柱。横灾官事是套语。",
+      "terms": [
+        "飞符：子年加辰顺数",
+        "暴败：子年加未顺数"
+      ],
+      "notes": [
+        "横灾官事不转成判断"
+      ],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "xingxue-dacheng:L0832-L0832",
+      "kind": "理论",
+      "vernacular": "天狗在驾后二辰五位。值之主多生少养；若火孛交攻、子星落陷方以无嗣续断之。多生少养无嗣是历史分类，不转成生育判断。䧟原字不改。",
+      "terms": [
+        "天狗：驾后二辰"
+      ],
+      "notes": [
+        "多生少养无嗣不转成生育判断"
+      ],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "xingxue-dacheng:L0836-L0840",
+      "kind": "理论",
+      "vernacular": "刃锋：刃者子年子位，十二支依此；锋者子年癸、丑年戊、寅甲、卯乙、辰已、巳丙、午丁、未巳、申庚、酉辛、戌戊、亥壬，大抵取比肩禄旺，亦阳刃之意。身命值之更加阳刃主恶死；身命高强反成威福。经云马头带剑威镇边疆，利在马前。耶律云女人切忌刃锋辰。同段定伏尸卷舌栏干贯索四刑星：四正宫中取四刑，子年起子寻戌亥。有用之星反能制福。辰已、未巳的已按原文。女命恶死边疆是套语。此刃锋与后文禄前一位阳刃不是同一套起法。",
+      "terms": [
+        "刃：年支本支",
+        "锋：年支所配比肩禄旺之干",
+        "四刑：伏尸卷舌栏干贯索"
+      ],
+      "notes": [
+        "女命恶死兵权不转成判断",
+        "辰已、未巳的已不改",
+        "不与禄前一位阳刃合并"
+      ],
+      "review": "source-reviewed",
+      "verified": false,
+      "relatedParagraphIds": [
+        "xingxue-dacheng:L0875-L0875"
+      ]
+    },
+    {
+      "paragraphId": "xingxue-dacheng:L0843-L0846",
+      "kind": "理论",
+      "vernacular": "沐死墓绝四煞宫度，夹注生年纳音算。最忌沐浴死绝墓，身宫多殃，限若逢之招死祸；火罗计孛相侵原文说赶入黄泉。分列木金水土木火生人绝墓死沐宿度。同段论产星：申子辰年金、巳酉丑年水、寅午戌年木、亥卯未年火；男主血光女主生产。限不是出生柱。死祸黄泉血光生产是历史分类。䕃原字不改。",
+      "terms": [
+        "四煞度：纳音沐浴死绝墓所值宿度",
+        "产星：三合年所配五行"
+      ],
+      "notes": [
+        "死祸血光生产不转成疾病、刑死或生育判断",
+        "限不是出生柱"
+      ],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "xingxue-dacheng:L0850-L0850",
+      "kind": "理论",
+      "vernacular": "血支：丑寅土、子卯木、辰亥火、巳戌金、午酉水、未日申月，即星盘所属而移一位。犯之男血光女产厄。血光产厄是历史分类。",
+      "terms": [
+        "血支：星盘所属移一位"
+      ],
+      "notes": [
+        "男血光女产厄不转成疾病或生育判断"
+      ],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "xingxue-dacheng:L0854-L0854",
+      "kind": "理论",
+      "vernacular": "血忌：丑寅土、子日卯月、辰亥木、巳戌水、午酉火、未申金。凶祸与血支同。与血支是两套表。",
+      "terms": [
+        "血忌：另一套移位表"
+      ],
+      "notes": [
+        "不与血支合成一套",
+        "血光产厄不转成判断"
+      ],
+      "review": "source-reviewed",
+      "verified": false,
+      "relatedParagraphIds": [
+        "xingxue-dacheng:L0850-L0850"
+      ]
+    },
+    {
+      "paragraphId": "xingxue-dacheng:L0858-L0858",
+      "kind": "理论",
+      "vernacular": "擎天属火、游奕属水。数以六十花甲隔节布于十宫，起于子终于卯，而丑寅不与、未申飞变，以河汉始于丑寅终于未申，擎天属火不入故也。男怕擎天、女怕游奕，皆主刑克。男女刑克是历史分类。",
+      "terms": [
+        "擎天：属火",
+        "游奕：属水"
+      ],
+      "notes": [
+        "男女刑克不转成判断"
+      ],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "xingxue-dacheng:L0862-L0862",
+      "kind": "理论",
+      "vernacular": "空亡：阳谓之空、阴谓之亡；阳年空阳、阴年空阴。这是阴阳年空法，与太岁前一位天空、与四柱旬空都不是同一套。",
+      "terms": [
+        "空亡：阳年空阳、阴年空阴"
+      ],
+      "notes": [
+        "不与天空或旬空合并"
+      ],
+      "review": "source-reviewed",
+      "verified": false,
+      "relatedParagraphIds": [
+        "xingxue-dacheng:L0800-L0800"
+      ]
+    },
+    {
+      "paragraphId": "xingxue-dacheng:L0866-L0866",
+      "kind": "理论",
+      "vernacular": "空亡歌：为害最愁人，只可为僧并艺术；又云金空则鸣、火空发、水空日夜流，不惟财宝官爵。僧道艺术官爵是历史分类。两说吉凶并存于同一首歌。",
+      "terms": [],
+      "notes": [
+        "僧道贫富官爵不转成判断"
+      ],
+      "review": "source-reviewed",
+      "verified": false,
+      "relatedParagraphIds": [
+        "xingxue-dacheng:L0862-L0862"
+      ]
+    },
+    {
+      "paragraphId": "xingxue-dacheng:L0870-L0871",
+      "kind": "理论",
+      "vernacular": "直难星：正二太阳、三四太阴、五六火星、七八水孛、九十木炁、十一十二金星；一说十一十二土星。直难者难星直月，虽日月金木善星以为难直则反吉为凶。假如丑宫命正二月夜生则太阳为直难，寅宫命昼生则太阴为直难。假令只有月建与昼夜，不收案例。炁原字不改。",
+      "terms": [
+        "直难：按月序所值的难星"
+      ],
+      "notes": [
+        "丑宫寅宫假令不收案例",
+        "两说十一十二金或土并存"
+      ],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "xingxue-dacheng:L0875-L0875",
+      "kind": "理论",
+      "vernacular": "阳刃煞：在天为紫暗星，在地为阳刃，命吉则吉命凶则凶。禄前一位为阳刃。日月逢之也不明，更怕禄星居其上。只宜君子掌权，五行逢生旺原文称兵机帅臣。君子小人刑妻害子配递徒流是历史分类。禄前一位只归档，不改已落地阳刃起法。此与刃锋年支本支不是同一套。",
+      "terms": [
+        "阳刃：禄前一位"
+      ],
+      "notes": [
+        "刑妻配递兵权不转成判断",
+        "禄前一位只归档，不改引擎",
+        "不与刃锋年支法合并"
+      ],
+      "review": "source-reviewed",
+      "verified": false,
+      "relatedParagraphIds": [
+        "xingxue-dacheng:L0836-L0840"
+      ]
+    },
+    {
+      "paragraphId": "xingxue-dacheng:L0879-L0880",
+      "kind": "理论",
+      "vernacular": "的煞一名破碎煞。子午卯酉的在巳，寅申巳亥的在酉，辰戌丑未的在丑。人命犯更坐在恶限，又逢凶星被火土忌星孛计奴星守照、主星沈没，原文说多主恶死贫穷带疾徒配；身命逢星辰或入体格或吉星飞起在命为福用之星则原文称官显重权。恶限行年运限不是出生柱。恶死徒配是套语。",
+      "terms": [
+        "的煞：三合的地，一名破碎"
+      ],
+      "notes": [
+        "恶死贫穷徒配官显不转成判断",
+        "行年运限不是出生柱"
+      ],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "xingxue-dacheng:L0884-L0886",
+      "kind": "理论",
+      "vernacular": "飞廉煞一名大煞：子猴、丑鸡、寅犬、卯蛇、辰午、巳未、午虎、未兔、申龙、酉猪、戌䑕、亥牛。逢吉则主威权，逢凶则主横死。指南云不可执一，入格视刑煞如将帅驱兵，不入格则忌。同段亡神劫煞：亡为官符、劫为大煞，二煞相对俱在寅申巳亥，吉凶歌断在前。䑕、㢘、刼原字不改。将帅横死是套语。与前面亡神专条并存。",
+      "terms": [
+        "飞廉：一名大煞，年支所配地支",
+        "亡劫：相对在寅申巳亥"
+      ],
+      "notes": [
+        "威权横死不转成判断",
+        "不与亡神专条合成新表"
+      ],
+      "review": "source-reviewed",
+      "verified": false,
+      "relatedParagraphIds": [
+        "xingxue-dacheng:L0476-L0477"
+      ]
+    },
+    {
+      "paragraphId": "xingxue-dacheng:L0890-L0890",
+      "kind": "理论",
+      "vernacular": "大耗煞：鼠羊、牛马、虎鸡、兔猴、龙猪、蛇犬。有人犯此煞财食散伶仃。煞谓之耗谓之劫，惟怕田财二位。六畜相对是年支例，不收案例。刼原字不改。",
+      "terms": [],
+      "notes": [
+        "财食散不转成财产判断"
+      ],
+      "review": "source-reviewed",
+      "verified": false
+    },
+    {
+      "paragraphId": "xingxue-dacheng:L0894-L0894",
+      "kind": "理论",
+      "vernacular": "穿心六害：祸非轻，克陷爷娘及弟兄；双亲无损害则刑自身妻子。六亲刑克是历史分类。䧟原字不改。",
+      "terms": [],
+      "notes": [
+        "六亲刑克不转成亲属判断"
       ],
       "review": "source-reviewed",
       "verified": false
