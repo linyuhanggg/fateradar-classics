@@ -1,0 +1,47 @@
+{
+  "schema_version": "fateradar-executable-v2",
+  "book": {
+    "slug": "meihua-yishu",
+    "system": "divination",
+    "title": "梅花易数",
+    "fulltext": "sources/fulltext/divination/meihua-yishu/fulltext.md"
+  },
+  "verified": false,
+  "note": "古籍部分记录体用生克方向及盛衰要求；产品 tone 仍按旧启发式权重与本卦体月令状态分类。现代分类与古籍逐步判断分开，不将分数冒充原文方法或现实成功率。verified 保持 false。",
+  "rules": [
+    {
+      "id": "MHY-E-01",
+      "art": "meihua",
+      "theme": "体用生克方向",
+      "school": "梅花易数",
+      "paragraph_ids": [
+        "meihua-yishu:L1239-L1239"
+      ],
+      "sources": [
+        {
+          "paragraph_id": "meihua-yishu:L1239-L1239",
+          "start_line": 1239,
+          "end_line": 1239,
+          "quote": "人事之占，詳觀體用。體卦為主，用卦為賓。用克體不宜，體克用則吉。用生體有進益之喜，體生用有耗失之患。體用比和，謀為吉利。更詳觀互卦、變卦，以斷吉凶；複究盛衰，以明休咎。"
+        }
+      ],
+      "quote": "人事之占，詳觀體用。體卦為主，用卦為賓。用克體不宜，體克用則吉。用生體有進益之喜，體生用有耗失之患。體用比和，謀為吉利。更詳觀互卦、變卦，以斷吉凶；複究盛衰，以明休咎。",
+      "page": "meihua",
+      "required_facts": [
+        "meihua.ti.element",
+        "meihua.yong.element",
+        "meihua.role"
+      ],
+      "when": {
+        "exists": "meihua.ti.element"
+      },
+      "satisfy_when": "本卦、互卦、变卦各自记录体用五行生克方向",
+      "fail_when": "未起出体卦或用卦",
+      "unknown_when": "原文所要求的盛衰、互变与所问背景尚未完整论定；现行 tone 是现代启发式分类，不代表这些古籍组合条件已经判断完毕",
+      "rescue": "unimplemented",
+      "vernacular": "{role}体{ti}用{yong}，关系为{relation}。这是生克方向，不是进退命令。",
+      "implementation_assumption": "动爻所在之卦为用、另一卦为体。现有 tone 保留旧权重：用生体+2，比和、体克用+1，体生用-1，用克体-2；三卦求和，本卦体在月令为休囚死时优先归凶，否则总和≥2归吉、≤-2归凶，其余归平。这些数值实际影响分类，并非只作计数，也不是原文给出的统一算法或成功率。解释须列各卦实际关系及月令影响，体克用不可写成用生体；原文不宜、则吉不改写成必败或必成。",
+      "verified": false
+    }
+  ]
+}

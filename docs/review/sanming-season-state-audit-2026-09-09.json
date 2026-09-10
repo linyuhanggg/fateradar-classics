@@ -1,0 +1,187 @@
+{
+  "sourceParagraph": "sanming-tonghui:L0934-L0988",
+  "lines": [
+    982,
+    983
+  ],
+  "runtime": "src/lib/engine/bazi/tables.ts#siLingState",
+  "scope": "25 element-to-command-element relationships only; does not validate the SILING day-split choice, calendar times, strength verdict or real outcomes.",
+  "verified": false,
+  "checks": [
+    {
+      "season": "春",
+      "monthElement": "木",
+      "dayElement": "木",
+      "sourceState": "旺",
+      "actual": "旺"
+    },
+    {
+      "season": "春",
+      "monthElement": "木",
+      "dayElement": "火",
+      "sourceState": "相",
+      "actual": "相"
+    },
+    {
+      "season": "春",
+      "monthElement": "木",
+      "dayElement": "水",
+      "sourceState": "休",
+      "actual": "休"
+    },
+    {
+      "season": "春",
+      "monthElement": "木",
+      "dayElement": "金",
+      "sourceState": "囚",
+      "actual": "囚"
+    },
+    {
+      "season": "春",
+      "monthElement": "木",
+      "dayElement": "土",
+      "sourceState": "死",
+      "actual": "死"
+    },
+    {
+      "season": "夏",
+      "monthElement": "火",
+      "dayElement": "火",
+      "sourceState": "旺",
+      "actual": "旺"
+    },
+    {
+      "season": "夏",
+      "monthElement": "火",
+      "dayElement": "土",
+      "sourceState": "相",
+      "actual": "相"
+    },
+    {
+      "season": "夏",
+      "monthElement": "火",
+      "dayElement": "木",
+      "sourceState": "休",
+      "actual": "休"
+    },
+    {
+      "season": "夏",
+      "monthElement": "火",
+      "dayElement": "水",
+      "sourceState": "囚",
+      "actual": "囚"
+    },
+    {
+      "season": "夏",
+      "monthElement": "火",
+      "dayElement": "金",
+      "sourceState": "死",
+      "actual": "死"
+    },
+    {
+      "season": "季夏",
+      "monthElement": "土",
+      "dayElement": "土",
+      "sourceState": "旺",
+      "actual": "旺"
+    },
+    {
+      "season": "季夏",
+      "monthElement": "土",
+      "dayElement": "金",
+      "sourceState": "相",
+      "actual": "相"
+    },
+    {
+      "season": "季夏",
+      "monthElement": "土",
+      "dayElement": "火",
+      "sourceState": "休",
+      "actual": "休"
+    },
+    {
+      "season": "季夏",
+      "monthElement": "土",
+      "dayElement": "木",
+      "sourceState": "囚",
+      "actual": "囚"
+    },
+    {
+      "season": "季夏",
+      "monthElement": "土",
+      "dayElement": "水",
+      "sourceState": "死",
+      "actual": "死"
+    },
+    {
+      "season": "秋",
+      "monthElement": "金",
+      "dayElement": "金",
+      "sourceState": "旺",
+      "actual": "旺"
+    },
+    {
+      "season": "秋",
+      "monthElement": "金",
+      "dayElement": "水",
+      "sourceState": "相",
+      "actual": "相"
+    },
+    {
+      "season": "秋",
+      "monthElement": "金",
+      "dayElement": "土",
+      "sourceState": "休",
+      "actual": "休"
+    },
+    {
+      "season": "秋",
+      "monthElement": "金",
+      "dayElement": "火",
+      "sourceState": "囚",
+      "actual": "囚"
+    },
+    {
+      "season": "秋",
+      "monthElement": "金",
+      "dayElement": "木",
+      "sourceState": "死",
+      "actual": "死"
+    },
+    {
+      "season": "冬",
+      "monthElement": "水",
+      "dayElement": "水",
+      "sourceState": "旺",
+      "actual": "旺"
+    },
+    {
+      "season": "冬",
+      "monthElement": "水",
+      "dayElement": "木",
+      "sourceState": "相",
+      "actual": "相"
+    },
+    {
+      "season": "冬",
+      "monthElement": "水",
+      "dayElement": "金",
+      "sourceState": "休",
+      "actual": "休"
+    },
+    {
+      "season": "冬",
+      "monthElement": "水",
+      "dayElement": "土",
+      "sourceState": "囚",
+      "actual": "囚"
+    },
+    {
+      "season": "冬",
+      "monthElement": "水",
+      "dayElement": "火",
+      "sourceState": "死",
+      "actual": "死"
+    }
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "schema_version": "fateradar-executable-v2",
+  "book": {
+    "slug": "guotian-jing",
+    "system": "xingming",
+    "title": "果天经/果老星宗",
+    "fulltext": "sources/fulltext/xingming/guotian-jing/fulltext.md"
+  },
+  "verified": false,
+  "note": "接入八字国印落柱。表与禄前九位一致。本盘按日干或年干查地支，不是身命守照膺显爵。《三命通会》天印另表，不得并入。verified 保持 false。",
+  "rules": [
+    {
+      "id": "GTJ-E-01",
+      "art": "bazi",
+      "theme": "国印落柱",
+      "school": "果老星宗",
+      "paragraph_ids": [
+        "guotian-jing:L0895-L0911"
+      ],
+      "sources": [
+        {
+          "paragraph_id": "guotian-jing:L0895-L0911",
+          "start_line": 900,
+          "end_line": 911,
+          "quote": "  禄前八位号唐符，\n  第九名为国印宫。\n  身命逢之膺显爵，\n  倘逢空陷主贫穷。\n甲禄到寅、卯为阳刃、酉为飞刃唐符，戌为国印。\n乙禄到卯、辰为阴刃、戌为飞刃唐符、亥为国印。\n丙戊禄在巳、午为阳刃、子为飞刃唐符、丑为国印。\n丁己禄在午、未为阴刃、丑为飞刃唐符、寅为国印。\n庚禄居申、酉为阳刃、卯为飞刃唐符、辰为国印。\n辛禄到酉、戌为阴刃、辰为飞刃唐符、巳为国印。\n壬禄居亥、子为阳刃、午为飞刃唐符，未为国印。\n癸禄居子、丑为阴刃、未为飞刃唐符、申为国印。"
+        }
+      ],
+      "quote": "  禄前八位号唐符，\n  第九名为国印宫。\n  身命逢之膺显爵，\n  倘逢空陷主贫穷。\n甲禄到寅、卯为阳刃、酉为飞刃唐符，戌为国印。\n乙禄到卯、辰为阴刃、戌为飞刃唐符、亥为国印。\n丙戊禄在巳、午为阳刃、子为飞刃唐符、丑为国印。\n丁己禄在午、未为阴刃、丑为飞刃唐符、寅为国印。\n庚禄居申、酉为阳刃、卯为飞刃唐符、辰为国印。\n辛禄到酉、戌为阴刃、辰为飞刃唐符、巳为国印。\n壬禄居亥、子为阳刃、午为飞刃唐符，未为国印。\n癸禄居子、丑为阴刃、未为飞刃唐符、申为国印。",
+      "page": "shensha",
+      "required_facts": [
+        "day.gan",
+        "year.gan",
+        "pillars.zhi"
+      ],
+      "when": {
+        "exists": "day.gan"
+      },
+      "satisfy_when": "日干或年干禄前九位的国印支出现在四柱地支：只记录落柱名称国印贵人",
+      "fail_when": "四柱地支未见该干的国印支",
+      "unknown_when": "原文论身命守照、空陷贫穷；《三命通会》天印甲寅乙亥丁酉戊申丙戌己未等与本表不是同一套：不得并入，不得输出官印断语",
+      "rescue": "unimplemented",
+      "vernacular": "{pillar}见国印贵人。这是落柱标签，不是官印结论，也不是已经按天印起法。",
+      "implementation_assumption": "现行表按日干或年干取国印支（甲戌乙亥丙丑丁寅戊丑己寅庚辰辛巳壬未癸申），与本书禄前九位一致。未按身命宫覆盖，也未把天印并入。",
+      "verified": false
+    }
+  ]
+}
