@@ -2,18 +2,17 @@
   "schemaVersion": 1,
   "worker": "cursor-native-classics",
   "lease": {
-    "status": "released",
+    "status": "active",
     "worker": "cursor-native-classics",
-    "holderId": "bc-d61a2010-8f65-4fd4-9eac-fae3b8b966a6",
-    "runBranch": "cursor/fateradar-classics-processing-0449",
-    "acquiredAt": 1789084970.5584168,
-    "heartbeatAt": 1789084970.5584168,
-    "expiresAt": 1789095770.5584168,
+    "holderId": "bc-fcfb0e5c-a632-4c75-bebb-47e8817301d7",
+    "runBranch": "cursor/fateradar-classics-processing-cf1b",
+    "acquiredAt": 1789090421.130781,
+    "heartbeatAt": 1789090421.130781,
+    "expiresAt": 1789101221.130781,
     "ttlSeconds": 10800,
     "staleSeconds": 5400,
     "acquireReason": "expired-or-absent",
-    "runUrl": "https://cursor.com/agents/bc-d61a2010-8f65-4fd4-9eac-fae3b8b966a6",
-    "releasedAt": 1789085014.8035529
+    "runUrl": "https://cursor.com/agents/bc-fcfb0e5c-a632-4c75-bebb-47e8817301d7"
   },
   "package": {
     "id": "sanming-tonghui-shidian-SK1610",
@@ -353,21 +352,16 @@
     "baseline": "d47f77d18bae74240986d04ce830ec094436ce39",
     "filenameNote": "Prompt path xingxue-dacheng--shidian-SK1610.json does not exist. SK1610 is 三命通会 (322 entries, 281 原文： dumps). xingxue-dacheng SK1609 is a live owner file and was not touched.",
     "thisRun": {
-      "completedCount": 3,
-      "completedIds": [
-        "sanming-tonghui:shidian-SK1610:P7426253719257333769",
-        "sanming-tonghui:shidian-SK1610:P7426253719341350922",
-        "sanming-tonghui:shidian-SK1610:P7426253719907549193"
-      ],
+      "completedCount": 0,
+      "completedIds": [],
       "reviewIds": [
         "sanming-tonghui:shidian-SK1610:P7426253719257333769",
-        "sanming-tonghui:shidian-SK1610:P7426253719341350922",
         "sanming-tonghui:shidian-SK1610:P7426253719907549193"
       ],
       "remainingCount": 0,
       "sourceHash": "9833d244847f53b83b4e746dd8d4a49cb9a01c0a92c2dfc7b4f19cf001e39a7e",
-      "checkpointBranch": "cursor/fateradar-classics-processing-0449",
-      "report": "docs/automation/CURSOR_CLASSICS_SK1610_ROUND_20260911-0000.md",
+      "checkpointBranch": "cursor/fateradar-classics-processing-cf1b",
+      "report": "docs/automation/CURSOR_CLASSICS_SK1610_ROUND_20260911-0130.md",
       "mode": "delivered-scope-review"
     }
   },
@@ -387,10 +381,10 @@
   ],
   "notes": [
     "Nowledge Mem MCP/nmem CLI unavailable this run; task state is in-repo only.",
-    "No PAUSE/STOP/COMPLETE. Package is not accepted: 0 原文： dumps; 2 待核实 remain (欄缺上字, 必膺大截断); 暴夫按已有字改规则候选.",
+    "No PAUSE/STOP/COMPLETE. Package is not accepted: 0 原文： dumps; 2 待核实 remain (欄缺上字, 必膺大截断).",
     "Did not claim a new package. Did not touch SK1609 / 玉匣记 / 渊海NGJ / 卜筮HY0057 / inventory / public exports.",
-    "Lease acquired by ordinary push 3cdebdc; this checkpoint reviews 3 ids then releases.",
+    "Lease acquire in progress; review-only of delivered SK1610 scope.",
     "No further owner=cursor-native-classics package is queued; stop claiming."
   ],
-  "updatedAt": 1789085014.8035529
+  "updatedAt": 1789090421.130781
 }
