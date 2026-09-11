@@ -1045,4 +1045,20 @@ PYTHONDONTWRITEBYTECODE=1 python3 tools/validate-annotations.py --annotations re
   - 现代白话不可作为原典一线，不作用户命运或健康判断
 - 校验：`{"ok": true, "books": 1, "files": 1, "entries": 1500, "source_reviewed": 1489, "errors": []}`。校验器只做结构与 ID，不是语义证书。
 - 未决项：麻衣主本 1500–1626；地理辨正 SDZJ0504。
+- commit：`38d6ace`
+
+## P2 麻衣相法主本 · checkpoint 6（QX-14 现代十二宫收束 1500–1626）
+
+- 段 1500–1626：`mayi-shenxiang:L5257-L5257` … `mayi-shenxiang:L5611-L5611`
+- 累计 1627 条：source-reviewed 1608，draft 19（verified 全 false）。覆盖全书 1627 段，缺 0。
+- CP6 本段 127 条全部 modern-commentary
+- 关键分层：
+  - 备注男女对象不同；女命通奸说是当代发挥不是原典
+  - 眉短纵好也各自奔忙
+  - 四十岁前后毫毛吉凶反转
+  - 左眼子女宫男、右眼女
+  - 天仓下库金旺必女难产、必男无妨，不作产科判断
+- 全书：第1页与第12–14页现代层标 modern-commentary；第2–11页为古籍转写层。相法进入可检索知识库，不冒充已接入八术，不是算法覆盖，不是预测有效。
+- 校验：`{"ok": true, "books": 1, "files": 1, "entries": 1627, "source_reviewed": 1608, "errors": []}`。校验器只做结构与 ID，不是语义证书。
+- 未决项：地理辨正 SDZJ0504。麻衣主本本 lane 完成。未改识典补本。
 - commit：待提交
