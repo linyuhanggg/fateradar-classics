@@ -45,5 +45,6 @@
 - 不含 MING-439 命理约言五段 draft 回改 JSON；不含 442–445 在跑文件。
 
 ## 交付 tip
-- 内容合入 tip（16 审查/验收稿）：`0ca6fb698b84521193c0451a5a0e1992923b6e77`
-- 账本核对 tip：以 ledger commit / 远端 `origin/codex/multica-ming-447` 为准（施工分支，非 main）
+- 内容合入 tip（16 审查/验收稿）：
+- 账本核对 tip（首次 push）：
+- 远端 tip：（，施工分支，非 main）
