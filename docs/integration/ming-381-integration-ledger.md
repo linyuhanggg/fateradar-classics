@@ -37,7 +37,7 @@
 ## 交付 tip
 - 内容 cherry-pick tip：`f10fa0fdb49626508c9d903ad360ebeb03a4731f`
 - 内容+账本首推 tip：`192f6337d87edb21b3bf915fd635f0187049d64d`
-- 候选/远端 tip：`80bb026e657bf0a060c45aaa3b7f41b3af329bac`（`origin/codex/multica-ming-381` @ 2026-09-11T16:39:47Z）
+- 候选/远端 tip：`a9a520a195f0549603fd30f17777bcce972a7179`（交包时 `origin/codex/multica-ming-381`；若随后仅账本自指提交则以交包评论远端 SHA 为准）
 
 ## 远端验证
-- `origin/codex/multica-ming-381` = `80bb026e657bf0a060c45aaa3b7f41b3af329bac` @ 2026-09-11T16:39:47Z
+- `origin/codex/multica-ming-381` @ `a9a520a195f0549603fd30f17777bcce972a7179` recorded `2026-09-11T16:40:17Z`
