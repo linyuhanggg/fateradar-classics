@@ -33,10 +33,9 @@
 - 不是古籍全书完成；不是五行精纪 / 紫微斗数全书全文交付；不是人工 verified。
 
 ## 交付 tip
-- 分支 HEAD / 远端：
-- 内容 cherry-pick tip：
-- 账本首次提交：
+- 分支 HEAD / 远端：`fd2b45930a131aafaf116023b4060de737dfc4c1`
+- 内容 cherry-pick tip：`874f37a93b96eef5b2bca11e65192831b00864d1`
+- 账本首次提交：`3e25f3dc3122f83034f43e072d615f10ac72535e`
 
 ## 远端验证
--  @  @ 
-
+- `origin/codex/multica-ming-351` @ `fd2b45930a131aafaf116023b4060de737dfc4c1` @ `2026-09-11T15:35:24Z`
