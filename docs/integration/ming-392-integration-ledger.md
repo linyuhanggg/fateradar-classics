@@ -39,5 +39,7 @@
 - 未合入 MING-387 CP13。
 
 ## 交付 tip
-- 内容合入 tip（10 审查/验收稿）：见交包时 `contentImportTip`
-- 内容+账本 tip：见交包时 `candidateIntegrationSha` / `origin/codex/multica-ming-392`
+- 内容合入 tip（10 审查/验收稿）：`b67018647300878ce5e1637cd4c14259e2a2a62b`
+- 内容+账本首推 tip：`7a675fdf13a25c48f560aef4ea6d2648b2320abd`
+- 账本记录 tip：`f0d76b40e9a57c624b4fb8412e5a4557d675d0e7`
+- 远端 tip：`origin/codex/multica-ming-392` @ `e5bb79caebd4c2a830f36a544aad0507d18cf052`（交包时以 push 后 `git rev-parse origin/codex/multica-ming-392` 为准）
