@@ -148,3 +148,54 @@ PYTHONDONTWRITEBYTECODE=1 python3 tools/validate-annotations.py \
 ```
 
 结果：`{"ok": true, "books": 1, "files": 1, "entries": 900, "source_reviewed": 844, "errors": []}`。校验器只做结构与 ID，不是语义证书。
+
+---
+
+## WORK_PACKAGE_COMPLETE（CP4 · MING-369 · 收口）
+
+本包 CP4 索引 **900–1069**（170 段）全部有实质处理：本批 `source-reviewed` 166，`draft` 4；累计 entries=**1070**（`source-reviewed` 1010，`draft` 60），`verified` 全 false。这是识典 SDZJ0170 段落注解收口，**不是**紫微斗数全书（主本）完成，也不是人工 verified，也不是引擎包，也不宣称预测有效。
+
+### 前置核验
+
+- worktree：`/Users/yuhanglin/.codex/worktrees/fateradar-multica-ming-369`
+- 分支：`codex/multica-ming-369`（基线继承已审合入 tip `origin/codex/multica-ming-360` @ `afeddaf39c4ae5a17969e38667799b793febbd39`；审查 [MING-363](mention://issue/01a0912d-3afb-75d5-9cd5-238116ad8cfc) 已通过）
+- `sources/normalized/shidianguji/SDZJ0170/text.md` SHA256 = `b4850fddeac0fc7b5fad40a7a93865f47c70622e348ca4f2c79b98f37a15a790`（与 CP1–CP3/队列一致）
+- `paragraphs.json` 唯一 ID = 1070；已交 0–899 与源 ID 集合完全重合且与基线 **全等**；本批差集 = 索引 900–1069，**未改写 0–899**
+- 继承 corpus-1 检查点 `dc98f2a`（CP4 900–1069）切片；对照源文做轻量边界润色（截断 draft / 异体不改正文），禁止从 CP1 再写一遍，禁止覆盖 `wuxing-jingji.json`
+
+### 段落账本（170/170 · CP4）
+
+| 区段 | 索引 | 起讫 paragraphId 尾 | 处理摘要 |
+|---|---|---|---|
+| 廉贞专论收束 | 900–912 | P…95376760841 → P…95401730098 一带 | 申未无杀/加杀、庙旺积富 vs 陷地化忌、四杀刑戮、白虎刑杖、女命清白宫位 |
+| 巨门 | 913–932 | 星题→巨日/巨机/羊陀火铃 | 寅申亥巳对宫食禄与反不佳分层；化忌入庙反奇；女命卯酉破荡 |
+| 七杀 | 933–947 | 朝斗/羊铃/流羊/福德 | 朝斗格；同位埋尸；流年刑忌可解；羊铃白虎；女命单居福德 |
+| 破军→羊铃陀火 | 948–978 | 庙旺表与下格 | 无杀三公年干三等；火铃夹命败局与吉多尚可分层 |
+| 魁钺左右禄马科权 | 979–1014 | 夹贵/台辅/冲破 | 夹命奇格；双禄冲破转凶；科权禄三会分职；奴仆位奔波 |
+| 劫空伤使命身纳音 | 1015–1035 | 夹败/二姓/绝处逢生 | 三夹六夹名单；身命吉凶对举；纳音墓库；绝处逢生 draft 截 |
+| 财帛至疾厄 + 卷终 | 1036–1064 | 宫题与专断 | 日月夹财；迁移外死；官禄枷杻；妻宫封赠；五卷终 |
+| 谭命活套卷之七 | 1065–1069 | 批贵命/又 | 套语模板，某星某限占位；制伏/救护/畏忌分层；非核验命造 |
+
+- 起始：`ziwei-doushu-quanshu:shidian-SDZJ0170:P7356158895376760841`（索引 900）
+- 本批止：`ziwei-doushu-quanshu:shidian-SDZJ0170:P7356158905573064714`（索引 1069）
+- **nextId**：无（识典 SDZJ0170 段落注解 remaining **0**）
+- **remaining**：0（索引已覆盖 0–1069；全书识典 1070 段注解收口。主本/其他版本/引擎不在本包）
+
+### 质量要点（CP4 节录）
+
+- 廉贞申未无杀才富贵、加杀退平常；庙旺积富与陷地化忌贫残对举
+- 巨日对宫：亥巨巳日食禄 vs 巳巨亥日反不佳，不能凡对宫皆食禄
+- 七杀临身流年刑忌可因紫相禄存解；羊铃须流年白虎；女命单居福德与男威权分层
+- 科权禄三会分职；双禄冲破吉也成凶；魁钺重逢羊铃空劫才痼疾烟霞
+- 命逢吉曜则岁限不利未为凶；须太岁与二限皆凶且本限所忌才凶
+- 批贵命/又活套：模板占位，制伏救护与畏忌黄梁分层；不是核验命造
+- draft 4：908 四杀「终身」截（原文安饰）；944 七杀重逢段末截；954 破军男女命论未展；1035 绝处逢生「吉同吉」截（原文在得已）。异体/鿄/㣲不改正文
+
+### 校验（CP4 交包）
+
+```text
+PYTHONDONTWRITEBYTECODE=1 python3 tools/validate-annotations.py \
+  --annotations references/annotations/ziwei/ziwei-doushu-quanshu--shidian-SDZJ0170.json --json
+```
+
+结果：`{"ok": true, "books": 1, "files": 1, "entries": 1070, "source_reviewed": 1010, "errors": []}`。校验器只做结构与 ID，不是语义证书。`verified=true`：**0**。
