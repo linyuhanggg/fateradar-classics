@@ -17,7 +17,7 @@ origin/main 仍是收尾 `4cb96e3` / `48f68a8`。
 | 项 | 数量/状态 | 为何不能标完成 |
 |---|---|---|
 | draft | **2905** | 奇门 NLC 1261、约言 162 为 ocr-draft，校验器禁止升；大六壬 812 中 695 为待核实 |
-| 规则判断 L4 | 绝大多数 ID | 仅 8 条三态齐全；穷通无信息不足盘 |
+| 规则判断 L4 | 部分 | 488 八条三态；另有多包满足/不满足。穷通与若干点位探针 cannot_unknown / cannot_fail |
 | 全仓 CI | 产品侧绿 | `bun run test` 3354；node build；`test:e2e` 19。不合 main 因 draft 2905 与判断覆盖缺口 |
 | 浏览器 | 部分 | 无稳定截图（CDP timeout）；未做导出文件回读点击 |
 | origin/main | 未合 | 独立审查 PASS_WITH_GAPS；上述缺口仍可自行继续，但不足交付门槛 |
