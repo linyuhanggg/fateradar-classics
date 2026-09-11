@@ -1087,16 +1087,17 @@
     {
       "paragraphId": "mingli-yueyan:nlc-recovery:P024:L002-L003",
       "kind": "评注或元数据",
-      "vernacular": "本段为恢复稿PDF第024页的校核状态、版心或定位信息，由本次整理生成，用于解释该页可引用范围；不属于古籍理论，不进入个人断语。",
+      "vernacular": "PDF第024页恢复元数据：页审记为全页正文、版心与印刷页码七均已对图，并标明正文跨页保留衔接；版心作「精選命理約言 卷一 法」。只作定位与引用范围说明，不是命理正文或规则。",
       "terms": [
-        "恢复元数据",
-        "引用范围"
+        "卷一法",
+        "印刷页码七",
+        "跨页衔接"
       ],
       "notes": [
-        "只作来源追踪；不计正文白话或规则候选。",
-        "整页是否可引用仍由page-reviews的具体范围决定。"
+        "对应 page-reviews：该页主体已逐行校核；source-reviewed 为 AI 图文对照，非人工 verified。",
+        "不计规则候选或个人断语。"
       ],
-      "review": "draft"
+      "review": "source-reviewed"
     },
     {
       "paragraphId": "mingli-yueyan:nlc-recovery:P024:L005-L005",
@@ -1332,16 +1333,17 @@
     {
       "paragraphId": "mingli-yueyan:nlc-recovery:P029:L002-L003",
       "kind": "评注或元数据",
-      "vernacular": "本段为恢复稿PDF第029页的校核状态、版心或定位信息，由本次整理生成，用于解释该页可引用范围；不属于古籍理论，不进入个人断语。",
+      "vernacular": "PDF第029页恢复元数据：页审记主体文字及版心已对图，印刷页码一二，版心「精選命理約言 卷一 法」；具体可引范围见 page-reviews，不释读黑底项目符号。属版面定位，不是藏干分日理论正文。",
       "terms": [
-        "恢复元数据",
-        "引用范围"
+        "卷一法",
+        "印刷页码一二",
+        "版心"
       ],
       "notes": [
-        "只作来源追踪；不计正文白话或规则候选。",
-        "整页是否可引用仍由page-reviews的具体范围决定。"
+        "同页后文批旧例分日与三百六十五／三百七十二矛盾，另段处理；本段不承载该论断。",
+        "source-reviewed 不等于人工影印 verified。"
       ],
-      "review": "draft"
+      "review": "source-reviewed"
     },
     {
       "paragraphId": "mingli-yueyan:nlc-recovery:P029:L005-L005",
@@ -1949,16 +1951,17 @@
     {
       "paragraphId": "mingli-yueyan:nlc-recovery:P037:L002-L003",
       "kind": "评注或元数据",
-      "vernacular": "本段为恢复稿PDF第037页的校核状态、版心或定位信息，由本次整理生成，用于解释该页可引用范围；不属于古籍理论，不进入个人断语。",
+      "vernacular": "PDF第037页恢复元数据：页审记全部主体文字、版心与印刷页码二〇已对图；版心「精選命理約言 卷一 法」，标题前黑底排版标记不作字句。只说明校核状态与可引范围，不是看官法正文。",
       "terms": [
-        "恢复元数据",
-        "引用范围"
+        "卷一法",
+        "印刷页码二〇",
+        "版面标记"
       ],
       "notes": [
-        "只作来源追踪；不计正文白话或规则候选。",
-        "整页是否可引用仍由page-reviews的具体范围决定。"
+        "同页正文含官多用食伤仍不作杀、从官与从杀分名等条件，另段注解；本段不混入规则。",
+        "source-reviewed 为 AI 对图状态，非预测验证。"
       ],
-      "review": "draft"
+      "review": "source-reviewed"
     },
     {
       "paragraphId": "mingli-yueyan:nlc-recovery:P037:L005-L005",
@@ -3879,16 +3882,17 @@
     {
       "paragraphId": "mingli-yueyan:nlc-recovery:P083:L002-L002",
       "kind": "评注或元数据",
-      "vernacular": "本段为恢复稿PDF第083页的校核状态、版心或定位信息，由本次整理生成，用于解释该页可引用范围；不属于古籍理论，不进入个人断语。",
+      "vernacular": "PDF第083页图像对照补录：本页为卷一卷末装饰页。可辨文字仅卷名「精選命理約言 卷一 法」与印刷页码六六及装饰图案；无正文规则可转写。",
       "terms": [
-        "恢复元数据",
-        "引用范围"
+        "卷一结页",
+        "装饰页",
+        "印刷页码六六"
       ],
       "notes": [
-        "只作来源追踪；不计正文白话或规则候选。",
-        "整页是否可引用仍由page-reviews的具体范围决定。"
+        "page-reviews 记 reviewedRanges 为空；装饰与卷标不作理论或断语。",
+        "不据他页补造本页正文。"
       ],
-      "review": "draft"
+      "review": "source-reviewed"
     },
     {
       "paragraphId": "mingli-yueyan:nlc-recovery:P083:L004-L004",
@@ -9526,16 +9530,16 @@
     {
       "paragraphId": "mingli-yueyan:nlc-recovery:P163:L002-L002",
       "kind": "评注或元数据",
-      "vernacular": "本段为恢复稿PDF第163页的校核状态、版心或定位信息，由本次整理生成，用于解释该页可引用范围；不属于古籍理论，不进入个人断语。",
+      "vernacular": "PDF第163页图像对照补录：本页为卷三卷末页。可辨文字仅卷名「精選命理約言 卷三 論」与印刷页码五二；无正文规则可转写。",
       "terms": [
-        "恢复元数据",
-        "引用范围"
+        "卷三结页",
+        "印刷页码五二"
       ],
       "notes": [
-        "只作来源追踪；不计正文白话或规则候选。",
-        "整页是否可引用仍由page-reviews的具体范围决定。"
+        "page-reviews 记可见文字已转写、无正文规则；不作杂论或附录内容。",
+        "不据他页补造本页正文。"
       ],
-      "review": "draft"
+      "review": "source-reviewed"
     },
     {
       "paragraphId": "mingli-yueyan:nlc-recovery:P163:L004-L004",
