@@ -1030,4 +1030,19 @@ PYTHONDONTWRITEBYTECODE=1 python3 tools/validate-annotations.py --annotations re
   - 卷六现代白话不可作为原典一线
 - 校验：`{"ok": true, "books": 1, "files": 1, "entries": 1200, "source_reviewed": 1196, "errors": []}`。校验器只做结构与 ID，不是语义证书。
 - 未决项：麻衣主本 1200–1626；地理辨正 SDZJ0504。
+- commit：`aac0fd1`
+
+## P2 麻衣相法主本 · checkpoint 5（QX-12/13 现代面相手相续 1200–1499）
+
+- 段 1200–1499：`mayi-shenxiang:L4481-L4481` … `mayi-shenxiang:L5255-L5255`
+- 累计 1500 条：source-reviewed 1489，draft 11（verified 全 false）
+- CP5 本段 300 条全部 `sourceAttribution.relation=modern-commentary`
+- 关键分层：
+  - 口相汇编摘录缩囊纵然有子必主别房，仍是现代页摘录不是原典校定
+  - 坐相子宫后屈与金鱼运动是当代医学附益，不作妇科判断
+  - QX-13/14 来源行 layer=modern_appendix
+  - 官禄宫最忌黑暗气色是现代编者强调
+  - 现代白话不可作为原典一线，不作用户命运或健康判断
+- 校验：`{"ok": true, "books": 1, "files": 1, "entries": 1500, "source_reviewed": 1489, "errors": []}`。校验器只做结构与 ID，不是语义证书。
+- 未决项：麻衣主本 1500–1626；地理辨正 SDZJ0504。
 - commit：待提交
