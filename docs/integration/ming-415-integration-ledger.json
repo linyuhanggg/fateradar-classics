@@ -1,0 +1,196 @@
+{
+  "schemaVersion": 1,
+  "issue": "MING-415",
+  "issueId": "01a0918b-3a18-7df9-8f7e-854d0c033a43",
+  "generatedAt": "2026-09-11T17:40:00Z",
+  "repo": "https://github.com/linyuhanggg/fateradar-classics",
+  "integrationBranch": "codex/multica-ming-415",
+  "worktree": "fateradar-multica-ming-415",
+  "parentBatch": {
+    "issue": "MING-407",
+    "tip": "e371f3a83b1d160915817cc1b0e757675419dfc4",
+    "independentReview": "MING-411",
+    "independentReviewSha": "b935d17",
+    "note": "Stack on independently accepted 407 tip; import reviewed daliuren CP17–21 + miben CP7/CP9 review md only; no annotation JSON; do not wait for CP8/CP22/CP23; do not take MING-397 miben JSON; do not take MING-406 CP8"
+  },
+  "baseline": {
+    "ref": "origin/codex/multica-ming-407",
+    "sha": "e371f3a83b1d160915817cc1b0e757675419dfc4",
+    "note": "MING-411 passed on 407 tip; includes CP13–16 review md"
+  },
+  "acceptedBaselineSha": "e371f3a83b1d160915817cc1b0e757675419dfc4",
+  "stackBaseSha": "e371f3a83b1d160915817cc1b0e757675419dfc4",
+  "policies": [
+    "review markdown only; do not change references/annotations/**/*.json",
+    "do not overwrite 识典/大六壬/秘本 JSON",
+    "do not take MING-397 秘本 JSON",
+    "do not take MING-406 CP8",
+    "do not whole-tree import from review tips",
+    "do not wait for CP8/CP22/CP23",
+    "do not promote product unique line 6c1dfa3b",
+    "source-reviewed != human verified; verified stays false",
+    "not full library / 大六壬全书 completion"
+  ],
+  "annotationIntegrity": {
+    "shidianSdzj0170": {
+      "path": "references/annotations/ziwei/ziwei-doushu-quanshu--shidian-SDZJ0170.json",
+      "sha256": "d65d93d8f579d2cf181a27d4af707d20d2bac276b785eb4b8c6442fd2982a261",
+      "blob": "1f369f996da7ea96c6e4bd3388510af24e8d1ea7",
+      "unchangedVs407": true
+    },
+    "daliurenDaquan": {
+      "path": "references/annotations/san-shi/daliuren-daquan.json",
+      "sha256": "c9321794bbea0e9df31069bdbf146ec18b61529fb85b9d34729c19ca3d74059a",
+      "blob": "66db69fdf39120e4e37733cb59b5ea01a154dcd9",
+      "unchangedVs407": true
+    },
+    "liurenMiben": {
+      "path": "references/annotations/san-shi/liuren-miben.json",
+      "sha256": "30b9b2b915089ead2c54bf88999131b4e7558097d996453fc27bf135d3054821",
+      "blob": "a7b3659fe2f951a2f4a5631bbbe6274b428c7d9f",
+      "unchangedVs407": true,
+      "note": "MING-397 not integrated"
+    }
+  },
+  "inventory": {
+    "mergedThisBatch": [
+      "MING-398",
+      "MING-402",
+      "MING-404",
+      "MING-405",
+      "MING-410",
+      "MING-401",
+      "MING-408"
+    ],
+    "skipped": [
+      {
+        "issue": "MING-406",
+        "reason": "CP8 owned elsewhere; do not take"
+      },
+      {
+        "issue": "MING-397",
+        "reason": "秘本 JSON owned elsewhere / next batch; do not take"
+      },
+      {
+        "issue": "CP22/CP23",
+        "reason": "not required for this batch; do not wait"
+      }
+    ]
+  },
+  "batch": {
+    "description": "Stack 407 tip: import independently reviewed daliuren-daquan CP17–CP21 and liuren-miben CP7/CP9 review md",
+    "reviews": [
+      {
+        "packKey": "daliuren-daquan-cp17",
+        "path": "docs/book-reviews/daliuren-daquan-cp17-review.md",
+        "sourceIssue": "MING-398",
+        "sourceSha": "307f4ed043b107ad5a9cc3b0a8a7bb4e4dad7d42",
+        "importMethod": "cherry-pick -x",
+        "localSha": "5562e90630b59ccfadc8435db113b8c5400ce805",
+        "reviewBlob": "ba54d35a4d38a583adee959be609d7958cd2ae49",
+        "status": "integrated_pending_acceptance"
+      },
+      {
+        "packKey": "daliuren-daquan-cp18",
+        "path": "docs/book-reviews/daliuren-daquan-cp18-review.md",
+        "sourceIssue": "MING-402",
+        "sourceSha": "aafe566a6dbbae77f845823eaa89fbf842418670",
+        "importMethod": "cherry-pick -x",
+        "localSha": "ac5f38c6f29096fc112ed6c2f6b961c4359e0175",
+        "reviewBlob": "1e03f1916c9d1e52623bee6c84a1994e321237dd",
+        "status": "integrated_pending_acceptance"
+      },
+      {
+        "packKey": "daliuren-daquan-cp19",
+        "path": "docs/book-reviews/daliuren-daquan-cp19-review.md",
+        "sourceIssue": "MING-404",
+        "sourceSha": "d6d7aa255480ce6eef3da2d9134e2bfc84784ba8",
+        "importMethod": "cherry-pick -x",
+        "localSha": "4829e89fd56d36718468b43e25d5cd902ce6ed37",
+        "reviewBlob": "46791e9051369e7e5ae0e50aeee48591431fbf18",
+        "status": "integrated_pending_acceptance"
+      },
+      {
+        "packKey": "daliuren-daquan-cp20",
+        "path": "docs/book-reviews/daliuren-daquan-cp20-review.md",
+        "sourceIssue": "MING-405",
+        "sourceSha": "7c99eabd99b0bb5b908e6de7cb34e999faeffee5",
+        "importMethod": "cherry-pick -x",
+        "localSha": "2c1598be205fdcf4e91ec57e2ffd89191236fc8b",
+        "reviewBlob": "647124ab931c7dcc38ed634a97b8953820a47602",
+        "status": "integrated_pending_acceptance"
+      },
+      {
+        "packKey": "daliuren-daquan-cp21",
+        "path": "docs/book-reviews/daliuren-daquan-cp21-review.md",
+        "sourceIssue": "MING-410",
+        "sourceSha": "b82e6074d23a7e36c7eb221c18a0d8fb6d0eeb05",
+        "importMethod": "cherry-pick -x",
+        "localSha": "0753f04d69a888105c1f05799d57c20baa1f54fb",
+        "reviewBlob": "8cc4179b5d9366e5322956c41d257d78c69afba1",
+        "status": "integrated_pending_acceptance"
+      },
+      {
+        "packKey": "liuren-miben-cp7",
+        "path": "docs/book-reviews/liuren-miben-cp7-review.md",
+        "sourceIssue": "MING-401",
+        "sourceSha": "9df671c01ec2caf3e48098725b78c998fbfcec76",
+        "importMethod": "cherry-pick -x",
+        "localSha": "1bae97d2109f815a780ec69cb9a4799e4e409637",
+        "reviewBlob": "83a3257ead5f9e0331bcab58afc94520dd1617d0",
+        "status": "integrated_pending_acceptance"
+      },
+      {
+        "packKey": "liuren-miben-cp9",
+        "path": "docs/book-reviews/liuren-miben-cp9-review.md",
+        "sourceIssue": "MING-408",
+        "sourceSha": "c7eb6be4f90d08b444340e89b6cadde24c2ec1ca",
+        "importMethod": "cherry-pick -x",
+        "localSha": "ea1572ada7f9a11d78d36bfc904a6efddaedb8d6",
+        "reviewBlob": "2a2fc19f23f121649096e2158e04c65ac885f0ef",
+        "status": "integrated_pending_acceptance"
+      }
+    ]
+  },
+  "validation": {
+    "validateAnnotations": {
+      "ok": true,
+      "books": 48,
+      "files": 58,
+      "entries": 42834,
+      "source_reviewed": 40405,
+      "errors": []
+    },
+    "batchFileVerifiedTrue": 0,
+    "libraryVerifiedTrue": 0,
+    "annotationSha256Unchanged": true,
+    "reviewBlobsEqualToSources": true,
+    "diffVsBaseForbids": {
+      "anyAnnotationJsonChanged": false,
+      "shidianJsonChanged": false,
+      "daliurenJsonChanged": false,
+      "mibenJsonChanged": false,
+      "wholeTreeImport": false,
+      "productUniqueLineTouched": false,
+      "ming397MibenTaken": false,
+      "ming406Cp8Taken": false
+    }
+  },
+  "excludedThisBatch": [
+    "any references/annotations/**/*.json",
+    "MING-406 CP8",
+    "MING-397 秘本 JSON",
+    "CP22/CP23",
+    "product unique line 6c1dfa3b",
+    "product repos",
+    "main merge / deploy",
+    "full library / 大六壬全书 completion claim"
+  ],
+  "contentImportTip": "ea1572ada7f9a11d78d36bfc904a6efddaedb8d6",
+  "candidateIntegrationSha": null,
+  "pendingIndependentReview": true,
+  "integrationBranchTipAtDelivery": null,
+  "remoteVerifiedAt": null,
+  "remoteRef": "origin/codex/multica-ming-415",
+  "note": "candidateIntegrationSha / tip filled after ledger commit + push; measure with git rev-parse origin/codex/multica-ming-415"
+}
