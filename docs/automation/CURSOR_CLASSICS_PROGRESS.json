@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "worker": "cursor-native-classics",
   "lease": {
-    "status": "active",
+    "status": "released",
     "worker": "cursor-native-classics",
     "holderId": "bc-d61a2010-8f65-4fd4-9eac-fae3b8b966a6",
     "runBranch": "cursor/fateradar-classics-processing-0449",
@@ -12,7 +12,8 @@
     "ttlSeconds": 10800,
     "staleSeconds": 5400,
     "acquireReason": "expired-or-absent",
-    "runUrl": "https://cursor.com/agents/bc-d61a2010-8f65-4fd4-9eac-fae3b8b966a6"
+    "runUrl": "https://cursor.com/agents/bc-d61a2010-8f65-4fd4-9eac-fae3b8b966a6",
+    "releasedAt": 1789085014.8035529
   },
   "package": {
     "id": "sanming-tonghui-shidian-SK1610",
@@ -303,11 +304,7 @@
       "sanming-tonghui:shidian-SK1610:P7426253719907532809",
       "sanming-tonghui:shidian-SK1610:P7426253719907549193"
     ],
-    "inProgressIds": [
-      "sanming-tonghui:shidian-SK1610:P7426253719257333769",
-      "sanming-tonghui:shidian-SK1610:P7426253719341350922",
-      "sanming-tonghui:shidian-SK1610:P7426253719907549193"
-    ],
+    "inProgressIds": [],
     "remainingIds": [],
     "crashRecoveredIds": [],
     "preexistingNonTemplateIds": [
@@ -356,8 +353,12 @@
     "baseline": "d47f77d18bae74240986d04ce830ec094436ce39",
     "filenameNote": "Prompt path xingxue-dacheng--shidian-SK1610.json does not exist. SK1610 is 三命通会 (322 entries, 281 原文： dumps). xingxue-dacheng SK1609 is a live owner file and was not touched.",
     "thisRun": {
-      "completedCount": 0,
-      "completedIds": [],
+      "completedCount": 3,
+      "completedIds": [
+        "sanming-tonghui:shidian-SK1610:P7426253719257333769",
+        "sanming-tonghui:shidian-SK1610:P7426253719341350922",
+        "sanming-tonghui:shidian-SK1610:P7426253719907549193"
+      ],
       "reviewIds": [
         "sanming-tonghui:shidian-SK1610:P7426253719257333769",
         "sanming-tonghui:shidian-SK1610:P7426253719341350922",
@@ -386,8 +387,10 @@
   ],
   "notes": [
     "Nowledge Mem MCP/nmem CLI unavailable this run; task state is in-repo only.",
-    "No PAUSE/STOP/COMPLETE. Not accepted. remainingTemplates=0; reviewing 3 待核实 ids already in completedIds.",
-    "Did not claim a new package. Did not touch SK1609 / 玉匣记 / 渊海NGJ / 卜筮HY0057 / inventory / public exports."
+    "No PAUSE/STOP/COMPLETE. Package is not accepted: 0 原文： dumps; 2 待核实 remain (欄缺上字, 必膺大截断); 暴夫按已有字改规则候选.",
+    "Did not claim a new package. Did not touch SK1609 / 玉匣记 / 渊海NGJ / 卜筮HY0057 / inventory / public exports.",
+    "Lease acquired by ordinary push 3cdebdc; this checkpoint reviews 3 ids then releases.",
+    "No further owner=cursor-native-classics package is queued; stop claiming."
   ],
-  "updatedAt": 1789084970.5584168
+  "updatedAt": 1789085014.8035529
 }
