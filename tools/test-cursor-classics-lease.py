@@ -154,6 +154,44 @@ class Sk1610UnresolvedSource(unittest.TestCase):
         self.assertIn("不把「巳」写入", vernacular)
         self.assertTrue(all(entry.get("verified") is False for entry in data["entries"]))
 
+    def test_sk1610_ji_branch_or_xun_glyphs_stay_unknown_not_rewritten_to_si(self) -> None:
+        root = Path(__file__).resolve().parents[1]
+        path = root / "references/annotations/bazi/sanming-tonghui--shidian-SK1610.json"
+        lines = (root / "sources/normalized/shidianguji/SK1610/text.md").read_text().splitlines()
+        data = json.loads(path.read_text())
+        by_id = {entry["paragraphId"]: entry for entry in data["entries"]}
+
+        sit = "sanming-tonghui:shidian-SK1610:P7426253719341203466"
+        self.assertIn("地支坐己", lines[1665])
+        sit_v = by_id[sit]["vernacular"]
+        self.assertIn("地支坐己", sit_v)
+        self.assertNotIn("地支坐巳", sit_v)
+        self.assertIn("不把「巳」写入", sit_v)
+
+        xun = "sanming-tonghui:shidian-SK1610:P7426253719257530377"
+        self.assertIn("得一己為巽風", lines[1635])
+        xun_v = by_id[xun]["vernacular"]
+        self.assertIn("得一己为巽风", xun_v)
+        self.assertNotIn("无己无亥", xun_v)
+        self.assertNotIn("得一巳", xun_v)
+        self.assertIn("不以「无己」为门闩", xun_v)
+
+        fire = "sanming-tonghui:shidian-SK1610:P7426253719257382921"
+        self.assertIn("丙丁午己火盛", lines[1600])
+        fire_v = by_id[fire]["vernacular"]
+        self.assertIn("午己火盛", fire_v)
+        self.assertNotIn("午巳火盛", fire_v)
+        self.assertNotIn("丙丁午巳", fire_v)
+        self.assertIn("不把「巳」写入", fire_v)
+
+        yun = "sanming-tonghui:shidian-SK1610:P7426253719257399305"
+        self.assertIn("邀合己字", lines[1605])
+        yun_v = by_id[yun]["vernacular"]
+        self.assertIn("邀合己字", yun_v)
+        self.assertNotIn("邀合巳字", yun_v)
+        self.assertIn("不把「巳」写入", yun_v)
+        self.assertTrue(all(entry.get("verified") is False for entry in data["entries"]))
+
 
 class GitPushCompetition(unittest.TestCase):
     def test_second_ordinary_push_loses_and_does_not_force(self) -> None:
