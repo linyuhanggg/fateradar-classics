@@ -2,17 +2,18 @@
   "schemaVersion": 1,
   "worker": "cursor-native-classics",
   "lease": {
-    "status": "active",
+    "status": "released",
     "worker": "cursor-native-classics",
     "holderId": "bc-327ee2da-185e-4233-b8f4-fd8b08d30518",
     "runBranch": "cursor/fateradar-classics-processing-56a8",
     "acquiredAt": 1789095693.3139477,
-    "heartbeatAt": 1789095693.3139477,
-    "expiresAt": 1789106493.3139477,
+    "heartbeatAt": 1789095847.3853512,
+    "expiresAt": 1789106647.3853512,
     "ttlSeconds": 10800,
     "staleSeconds": 5400,
     "acquireReason": "expired-or-absent",
-    "runUrl": "https://cursor.com/agents/bc-327ee2da-185e-4233-b8f4-fd8b08d30518"
+    "runUrl": "https://cursor.com/agents/bc-327ee2da-185e-4233-b8f4-fd8b08d30518",
+    "releasedAt": 1789095847.3853512
   },
   "package": {
     "id": "sanming-tonghui-shidian-SK1610",
@@ -354,7 +355,16 @@
     "thisRun": {
       "completedCount": 0,
       "completedIds": [],
-      "reviewIds": [],
+      "reviewIds": [
+        "sanming-tonghui:shidian-SK1610:P7426253719257333769",
+        "sanming-tonghui:shidian-SK1610:P7426253719907549193",
+        "sanming-tonghui:shidian-SK1610:P7426253719257317385",
+        "sanming-tonghui:shidian-SK1610:P7426253719257448457",
+        "sanming-tonghui:shidian-SK1610:P7426253719341105162",
+        "sanming-tonghui:shidian-SK1610:P7426253719341219850",
+        "sanming-tonghui:shidian-SK1610:P7426253719349510194",
+        "sanming-tonghui:shidian-SK1610:P7426253719349739570"
+      ],
       "remainingCount": 0,
       "sourceHash": "9833d244847f53b83b4e746dd8d4a49cb9a01c0a92c2dfc7b4f19cf001e39a7e",
       "checkpointBranch": "cursor/fateradar-classics-processing-56a8",
@@ -365,7 +375,7 @@
   "testEvidence": [
     {
       "name": "tools/test-cursor-classics-lease.py",
-      "result": "11 tests OK"
+      "result": "12 tests OK"
     },
     {
       "name": "tools/test-validate-annotations.py",
@@ -380,8 +390,8 @@
     "Nowledge Mem MCP/nmem CLI unavailable this run; task state is in-repo only.",
     "No PAUSE/STOP/COMPLETE. Package is not accepted: 0 原文： dumps; 2 待核实 remain (欄缺上字, 必膺大截断).",
     "Did not claim a new package. Did not touch SK1609 / 玉匣记 / 渊海NGJ / 卜筮HY0057 / inventory / public exports.",
-    "Lease acquire in progress; review-only of delivered SK1610 scope.",
+    "Lease acquired by ordinary push d135903; this checkpoint reviews delivered scope then releases.",
     "No further owner=cursor-native-classics package is queued; stop claiming."
   ],
-  "updatedAt": 1789095693.3139477
+  "updatedAt": 1789095847.3853512
 }

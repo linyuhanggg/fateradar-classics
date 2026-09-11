@@ -121,6 +121,25 @@ class TemplateAudit(unittest.TestCase):
         ]))
 
 
+class Sk1610UnresolvedSource(unittest.TestCase):
+    def test_page_cut_glyphs_stay_unknown_while_source_truncated(self) -> None:
+        root = Path(__file__).resolve().parents[1]
+        path = root / "references/annotations/bazi/sanming-tonghui--shidian-SK1610.json"
+        lines = (root / "sources/normalized/shidianguji/SK1610/text.md").read_text().splitlines()
+        data = json.loads(path.read_text())
+        by_id = {entry["paragraphId"]: entry for entry in data["entries"]}
+        lan = "sanming-tonghui:shidian-SK1610:P7426253719257333769"
+        da = "sanming-tonghui:shidian-SK1610:P7426253719907549193"
+        self.assertTrue(lines[1588].startswith("欄"), lines[1588][:20])
+        self.assertTrue(lines[1846].endswith("必膺大"), lines[1846][-12:])
+        self.assertEqual(by_id[lan]["kind"], "待核实")
+        self.assertEqual(by_id[da]["kind"], "待核实")
+        self.assertTrue(all(entry.get("verified") is False for entry in data["entries"]))
+        self.assertNotEqual(by_id[lan].get("kind"), "规则候选")
+        self.assertFalse(lease.is_copy_template(by_id[lan]["vernacular"]))
+        self.assertFalse(lease.is_copy_template(by_id[da]["vernacular"]))
+
+
 class GitPushCompetition(unittest.TestCase):
     def test_second_ordinary_push_loses_and_does_not_force(self) -> None:
         with tempfile.TemporaryDirectory() as folder:

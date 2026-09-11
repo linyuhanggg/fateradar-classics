@@ -5400,7 +5400,8 @@
       "notes": [
         "识典SK1610补本，未经影印校勘；不能当主本独立投票。",
         "网站章节名不等于印本卷号。",
-        "电子原文对照；不是影印校勘，也不是人工 verified。"
+        "电子原文对照；不是影印校勘，也不是人工 verified。",
+        "03:00Z复核：original-paragraphs 在谭论例前有空 pagePass 到 7424506779001274406；赋句仍止于「自生」，谭论/胡宗宪续在换页后。下一段「欄」是独立上游段，不并入本段。"
       ],
       "review": "source-reviewed",
       "verified": false
@@ -5419,7 +5420,8 @@
         "网站章节名不等于印本卷号。",
         "电子原文对照；不是影印校勘，也不是人工 verified。",
         "本段SK1610与仓库fulltext均以「欄」起句；章名「井欄斜义」不能当缺字补入引文。",
-        "02:30Z复核：figures.json空、figureCount=0；upstreamPageId 7424506779001274406。无本地影印，缺上字仍 unknown，不发明。"
+        "02:30Z复核：figures.json空、figureCount=0；upstreamPageId 7424506779001274406。无本地影印，缺上字仍 unknown，不发明。",
+        "03:00Z复核：original-paragraphs 本段首行即「欄」；上一段含 pagePass 到同页，欄是新段不是三奇拆行。仓库 HY1521 电子亦在换页后以「欄义」起句，只作他本对照，不补「井」。缺上字仍 unknown。"
       ],
       "review": "source-reviewed",
       "verified": false
@@ -6966,7 +6968,8 @@
         "网站章节名不等于印本卷号。",
         "电子原文对照；不是影印校勘，也不是人工 verified。",
         "SK1610 text.md 止于「必膺大」。他本「貴」及后解不写入本段原文，不发明字句。",
-        "02:30Z复核：figures.json空、figureCount=0；upstreamPageId 7424506809513164840。text.md 末行即本段，后无续行；缺下字仍 unknown。"
+        "02:30Z复核：figures.json空、figureCount=0；upstreamPageId 7424506809513164840。text.md 末行即本段，后无续行；缺下字仍 unknown。",
+        "03:00Z复核：original-paragraphs 为本册最后一条，仅一行止于「必膺大」，无续段。他本「貴」不写入引文。缺下字仍 unknown。"
       ],
       "review": "source-reviewed",
       "verified": false
