@@ -12,7 +12,7 @@
     "note": "Multica classics review authority (orphan snapshot vs origin/main). origin/main is NOT the Multica annotation delivery line."
   },
   "acceptedBaselineSha": "bc798566da77c30e149abf9673c88ecc386702b2",
-  "candidateIntegrationSha": null,
+  "candidateIntegrationSha": "de2105601a59f5afa18b63cc16dc4e5b7cb57fff",
   "policies": [
     "dedupe by annotation path + paragraphId + content hash; do not treat mere ancestry as missing",
     "preserve source-reviewed / draft / verified=false; never forge human verified",
