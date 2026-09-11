@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "issue": "MING-464",
   "issueId": "01a091de-9848-7445-b624-ab42b10efea9",
-  "generatedAt": "2026-09-11T19:15:00Z",
+  "generatedAt": "2026-09-11T19:12:37Z",
   "repo": "https://github.com/linyuhanggg/fateradar-classics",
   "integrationBranch": "codex/multica-ming-464",
   "worktree": "fateradar-multica-ming-464",
@@ -302,10 +302,11 @@
     "raising verified=true"
   ],
   "contentImportTip": "893cff12f7bfd12323fe05542568c679472e8e2b",
-  "candidateIntegrationSha": null,
+  "candidateIntegrationSha": "4241da01c6cae3e577fdde2f945805dd90718a52",
   "pendingIndependentReview": true,
-  "integrationBranchTipAtDelivery": null,
+  "integrationBranchTipAtDelivery": "4241da01c6cae3e577fdde2f945805dd90718a52",
   "remoteVerifiedAt": null,
   "remoteRef": "origin/codex/multica-ming-464",
-  "note": "Authoritative tip after ledger commit + push is origin/codex/multica-ming-464; measure with git rev-parse / ls-remote (not frozen to contentImportTip)"
+  "note": "Authoritative tip after pin/verify commits is origin/codex/multica-ming-464; measure with git rev-parse / ls-remote (not frozen to this SHA)",
+  "contentAndLedgerFirstPushSha": "4241da01c6cae3e577fdde2f945805dd90718a52"
 }

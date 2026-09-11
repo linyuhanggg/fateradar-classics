@@ -43,4 +43,5 @@
 
 ## 交付 tip
 - 内容合入 tip（14 审查/验收/修复路径 + 1 JSON）：`893cff12f7bfd12323fe05542568c679472e8e2b`
-- 账本核对 tip：以本文件提交后 `HEAD` / 交包评论中 `git rev-parse origin/codex/multica-ming-464` / `git ls-remote` 为准（施工分支，非 main）
+- 账本核对 tip（首次 ledger commit）：`4241da01c6cae3e577fdde2f945805dd90718a52`
+- 远端 tip：以交包评论中 `git rev-parse origin/codex/multica-ming-464` / `git ls-remote` 为准（施工分支，非 main）
