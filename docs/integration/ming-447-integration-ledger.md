@@ -45,6 +45,6 @@
 - 不含 MING-439 命理约言五段 draft 回改 JSON；不含 442–445 在跑文件。
 
 ## 交付 tip
-- 内容合入 tip（16 审查/验收稿）：
-- 账本核对 tip（首次 push）：
-- 远端 tip：（，施工分支，非 main）
+- 内容合入 tip（16 审查/验收稿）：`0ca6fb698b84521193c0451a5a0e1992923b6e77`
+- 账本核对 tip（首次 push）：`c3a911ac03d9be483c2243d6b9e86cd8228338cf`
+- 远端 tip：以交包评论中 `git rev-parse origin/codex/multica-ming-447` / `git ls-remote` 为准（施工分支，非 main）
