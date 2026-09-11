@@ -1,0 +1,110 @@
+"""Shared source paragraph loading; retained primary IDs plus separately named editions."""
+from __future__ import annotations
+import json
+import re
+from pathlib import Path
+
+PAGE = re.compile(r"^## PDF第(\d+)页")
+HEADING = re.compile(r"^#{1,6}\s+(.+)$")
+
+
+def split_edition(edition: dict, lines: list[str]) -> list[dict]:
+    paragraphs = []
+    buffer = []
+    heading = edition["label"]
+    page, page_line = 0, 0
+
+    def flush():
+        if not buffer:
+            return
+        start, end = buffer[0], buffer[-1]
+        if edition.get("pageScoped"):
+            suffix = f"P{page:03d}:L{start - page_line:03d}-L{end - page_line:03d}"
+        else:
+            suffix = f"L{start:04d}-L{end:04d}"
+        text = "\n".join(lines[start-1:end])
+        metadata = all(not line.strip() or line.lstrip().startswith((">", "<!--", "Source:", "来源：")) for line in text.splitlines())
+        row = {"id": f"{edition['bookSlug']}:{edition['id']}:{suffix}",
+               "start_line": start, "end_line": end, "heading": heading,
+               "kind": "评注或元数据" if metadata else "待分类",
+               "source_file": edition["file"], "source_label": edition["label"],
+               "source_status": edition["sourceStatus"], "source_notes": edition.get("notes", [])}
+        if edition.get("pageScoped"):
+            row["pdf_page"] = page
+            row["page_start_line"] = start - page_line
+            row["page_end_line"] = end - page_line
+        paragraphs.append(row)
+        buffer.clear()
+
+    for number, line in enumerate(lines, 1):
+        match = HEADING.match(line)
+        if match:
+            flush()
+            heading = match.group(1)
+            match_page = PAGE.match(line)
+            if match_page:
+                page, page_line = int(match_page.group(1)), number
+        elif not line.strip():
+            flush()
+        else:
+            buffer.append(number)
+    flush()
+    return paragraphs
+
+
+def supplemental_editions(root: Path) -> list[dict]:
+    registry = root / "references/source-editions.json"
+    if not registry.exists():
+        return []
+    data = json.loads(registry.read_text())
+    return data["editions"]
+
+
+def edition_paragraphs(root: Path, edition: dict) -> list[dict]:
+    if not edition.get("paragraphIndex"):
+        return split_edition(edition, (root / edition["file"]).read_text().splitlines())
+    data = json.loads((root / edition["paragraphIndex"]).read_text())
+    if data["sourceFile"] != edition["file"]:
+        raise ValueError(f"Paragraph index refers to another edition: {edition['id']}")
+    rows = []
+    for paragraph in data["paragraphs"]:
+        if not paragraph["id"].startswith(f"{edition['bookSlug']}:{edition['id']}:"):
+            raise ValueError(f"Paragraph ID belongs to another edition: {paragraph['id']}")
+        rows.append({**paragraph, "source_file": edition["file"], "source_label": edition["label"],
+                     "source_status": edition["sourceStatus"], "source_notes": edition.get("notes", [])})
+    return rows
+
+
+def load_source_paragraphs(root: Path) -> dict[str, dict]:
+    result = {}
+    for path in sorted((root / "references/inventory/paragraphs").glob("*/*.json")):
+        data = json.loads(path.read_text())
+        for paragraph in data["paragraphs"]:
+            row = {**paragraph, "source_file": data["fulltext"], "source_status": "reference-text"}
+            if row["id"] in result:
+                raise ValueError(f"Duplicate paragraph ID: {row['id']}")
+            result[row["id"]] = row
+    for edition in supplemental_editions(root):
+        reviews = {}
+        if edition.get("pageReviews"):
+            review_data = json.loads((root / edition["pageReviews"]).read_text())
+            if review_data["sourcePath"] != edition["file"]:
+                raise ValueError(f"Page review refers to another edition: {edition['id']}")
+            reviews = {item["pdfPage"]: item for item in review_data["pages"]}
+        for row in edition_paragraphs(root, edition):
+            review = reviews.get(row.get("pdf_page"), {})
+            if review.get("status") == "source-reviewed" and not review.get("unresolved"):
+                row["source_status"] = "page-reviewed"
+                row["source_label"] = edition["label"] + " · 本页已对照影印"
+                row["source_notes"] = ["本页转写已按记录范围对照影印；不代表整本校完或命盘判断已成立。", review.get("scope", "本页转写"), *review.get("notes", [])]
+            elif row.get("pdf_page") and row["kind"] != "评注或元数据":
+                matched = next((span for span in review.get("reviewedRanges", [])
+                                if span["startLine"] <= row["page_start_line"] and row["page_end_line"] <= span["endLine"]), None)
+                if matched:
+                    row["source_status"] = "passage-reviewed"
+                    row["source_label"] = edition["label"] + " · 本段已对照影印"
+                    row["source_notes"] = ["仅本段字句与读序已核；同页范围外内容及整本仍按各自状态。", matched.get("scope", "本段正文"), *review.get("notes", [])]
+            if row["id"] in result:
+                raise ValueError(f"Duplicate edition paragraph ID: {row['id']}")
+            result[row["id"]] = row
+    return result

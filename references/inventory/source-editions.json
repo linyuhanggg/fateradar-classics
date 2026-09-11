@@ -1,0 +1,466 @@
+{
+  "version": 1,
+  "note": "补充/恢复来源单列，不改变主索引53640段口径；图文核对不等于语义解读或算法验证。",
+  "editions": [
+    {
+      "id": "annotated-vol3-4",
+      "bookSlug": "liuren-zhiyin",
+      "label": "六壬指南卷三、四注解镜像对照层",
+      "file": "sources/fulltext/san-shi/liuren-zhiyin/supplemental-annotated-golla-vol3-4.md",
+      "paragraphs": 1967,
+      "sourceStates": {
+        "reference-text": 1967
+      },
+      "annotations": 0,
+      "reviewedBodyExplanations": 0
+    },
+    {
+      "id": "yanyi-vol4-9",
+      "bookSlug": "qimen-dunjia-tongzhi",
+      "label": "奇门演义网页对照层 · 与主文本重叠",
+      "file": "sources/fulltext/san-shi/qimen-dunjia-tongzhi/supplemental-taiyi-qimen-yanyi-vol4-9.md",
+      "paragraphs": 94,
+      "sourceStates": {
+        "reference-text": 94
+      },
+      "annotations": 94,
+      "reviewedBodyExplanations": 91
+    },
+    {
+      "id": "nlc-recovery",
+      "bookSlug": "mingli-yueyan",
+      "label": "精选命理约言 · 韦千里四卷选本 · NLC影印校读",
+      "file": "sources/normalized/bazi/mingli-yueyan/nlc-recovery.md",
+      "paragraphs": 781,
+      "sourceStates": {
+        "ocr-draft": 162,
+        "passage-reviewed": 537,
+        "page-reviewed": 82
+      },
+      "annotations": 781,
+      "reviewedBodyExplanations": 406
+    },
+    {
+      "id": "wikisource-volume1",
+      "bookSlug": "zengshan-buyi",
+      "label": "增删卜易卷一 · 维基分章固定版本对照",
+      "file": "sources/normalized/divination/zengshan-buyi/wikisource-volume1.md",
+      "paragraphs": 295,
+      "sourceStates": {
+        "reference-text": 295
+      },
+      "annotations": 295,
+      "reviewedBodyExplanations": 242
+    },
+    {
+      "id": "nlc-layouts",
+      "bookSlug": "qimen-dunjia-tongzhi",
+      "label": "奇门遁甲统宗 · 文瑞书局影印局式校读",
+      "file": "sources/normalized/san-shi/qimen-dunjia-tongzhi/nlc-layouts.md",
+      "paragraphs": 2471,
+      "sourceStates": {
+        "ocr-draft": 1261,
+        "passage-reviewed": 1210
+      },
+      "annotations": 2471,
+      "reviewedBodyExplanations": 1209
+    },
+    {
+      "id": "shidian-SK1610",
+      "bookSlug": "sanming-tonghui",
+      "label": "三命通會 · 识典 SK1610 · 待校参考",
+      "file": "sources/normalized/shidianguji/SK1610/text.md",
+      "paragraphs": 322,
+      "sourceStates": {
+        "reference-text": 322
+      },
+      "annotations": 0,
+      "reviewedBodyExplanations": 0
+    },
+    {
+      "id": "shidian-HY1521",
+      "bookSlug": "sanming-tonghui",
+      "label": "三命通會 · 识典 HY1521 · 待校参考",
+      "file": "sources/normalized/shidianguji/HY1521/text.md",
+      "paragraphs": 2340,
+      "sourceStates": {
+        "reference-text": 2340
+      },
+      "annotations": 0,
+      "reviewedBodyExplanations": 0
+    },
+    {
+      "id": "shidian-NGJ892411999032112149610",
+      "bookSlug": "yuanhai-ziping",
+      "label": "新刊合併官板音義評注淵海子平 · 识典 NGJ892411999032112149610 · 待校参考",
+      "file": "sources/normalized/shidianguji/NGJ892411999032112149610/text.md",
+      "paragraphs": 1988,
+      "sourceStates": {
+        "reference-text": 1988
+      },
+      "annotations": 0,
+      "reviewedBodyExplanations": 0
+    },
+    {
+      "id": "shidian-HY0057",
+      "bookSlug": "bushi-zhengzong",
+      "label": "卜筮正宗 · 识典 HY0057 · 待校参考",
+      "file": "sources/normalized/shidianguji/HY0057/text.md",
+      "paragraphs": 627,
+      "sourceStates": {
+        "reference-text": 627
+      },
+      "annotations": 0,
+      "reviewedBodyExplanations": 0
+    },
+    {
+      "id": "shidian-DZ1040",
+      "bookSlug": "huangji-jingshi",
+      "label": "皇極經世 · 识典 DZ1040 · 待校参考",
+      "file": "sources/normalized/shidianguji/DZ1040/text.md",
+      "paragraphs": 2261,
+      "sourceStates": {
+        "reference-text": 2261
+      },
+      "annotations": 0,
+      "reviewedBodyExplanations": 0
+    },
+    {
+      "id": "shidian-SK1573",
+      "bookSlug": "huangji-jingshi",
+      "label": "皇極經世書 · 识典 SK1573 · 待校参考",
+      "file": "sources/normalized/shidianguji/SK1573/text.md",
+      "paragraphs": 670,
+      "sourceStates": {
+        "reference-text": 670
+      },
+      "annotations": 0,
+      "reviewedBodyExplanations": 0
+    },
+    {
+      "id": "shidian-XYXZSBY",
+      "bookSlug": "zengshan-buyi",
+      "label": "增刪卜易 · 识典 XYXZSBY · 待校参考",
+      "file": "sources/normalized/shidianguji/XYXZSBY/text.md",
+      "paragraphs": 616,
+      "sourceStates": {
+        "reference-text": 616
+      },
+      "annotations": 0,
+      "reviewedBodyExplanations": 0
+    },
+    {
+      "id": "shidian-HY2301",
+      "bookSlug": "zhouyi-zhezhong",
+      "label": "御纂周易折中 · 识典 HY2301 · 待校参考",
+      "file": "sources/normalized/shidianguji/HY2301/text.md",
+      "paragraphs": 681,
+      "sourceStates": {
+        "reference-text": 681
+      },
+      "annotations": 0,
+      "reviewedBodyExplanations": 0
+    },
+    {
+      "id": "shidian-SDZJ0504",
+      "bookSlug": "dili-bianzheng",
+      "label": "地理辨正直解 · 识典 SDZJ0504 · 待校参考",
+      "file": "sources/normalized/shidianguji/SDZJ0504/text.md",
+      "paragraphs": 993,
+      "sourceStates": {
+        "reference-text": 993
+      },
+      "annotations": 0,
+      "reviewedBodyExplanations": 0
+    },
+    {
+      "id": "shidian-SK1589",
+      "bookSlug": "hanlong-jing",
+      "label": "撼龍經 · 识典 SK1589 · 待校参考",
+      "file": "sources/normalized/shidianguji/SK1589/text.md",
+      "paragraphs": 86,
+      "sourceStates": {
+        "reference-text": 86
+      },
+      "annotations": 0,
+      "reviewedBodyExplanations": 0
+    },
+    {
+      "id": "shidian-DZ0282",
+      "bookSlug": "huangdi-zhaijing",
+      "label": "黃帝宅經 · 识典 DZ0282 · 待校参考",
+      "file": "sources/normalized/shidianguji/DZ0282/text.md",
+      "paragraphs": 31,
+      "sourceStates": {
+        "reference-text": 31
+      },
+      "annotations": 0,
+      "reviewedBodyExplanations": 0
+    },
+    {
+      "id": "shidian-SK1591",
+      "bookSlug": "qingnang-aoyu",
+      "label": "青囊奧語 · 识典 SK1591 · 待校参考",
+      "file": "sources/normalized/shidianguji/SK1591/text.md",
+      "paragraphs": 3,
+      "sourceStates": {
+        "reference-text": 3
+      },
+      "annotations": 0,
+      "reviewedBodyExplanations": 0
+    },
+    {
+      "id": "shidian-SK1590",
+      "bookSlug": "qingnang-xu",
+      "label": "青囊序 · 识典 SK1590 · 待校参考",
+      "file": "sources/normalized/shidianguji/SK1590/text.md",
+      "paragraphs": 40,
+      "sourceStates": {
+        "reference-text": 40
+      },
+      "annotations": 0,
+      "reviewedBodyExplanations": 0
+    },
+    {
+      "id": "shidian-SK1592",
+      "bookSlug": "tianyu-jing",
+      "label": "天玉經 · 识典 SK1592 · 待校参考",
+      "file": "sources/normalized/shidianguji/SK1592/text.md",
+      "paragraphs": 190,
+      "sourceStates": {
+        "reference-text": 190
+      },
+      "annotations": 0,
+      "reviewedBodyExplanations": 0
+    },
+    {
+      "id": "shidian-SDZJ0175",
+      "bookSlug": "xuexin-fu",
+      "label": "重订校正魁板句解消砂经节图地理诀要雪心赋 · 识典 SDZJ0175 · 待校参考",
+      "file": "sources/normalized/shidianguji/SDZJ0175/text.md",
+      "paragraphs": 326,
+      "sourceStates": {
+        "reference-text": 326
+      },
+      "annotations": 0,
+      "reviewedBodyExplanations": 0
+    },
+    {
+      "id": "shidian-SK1588",
+      "bookSlug": "zangshu",
+      "label": "葬書 · 识典 SK1588 · 待校参考",
+      "file": "sources/normalized/shidianguji/SK1588/text.md",
+      "paragraphs": 30,
+      "sourceStates": {
+        "reference-text": 30
+      },
+      "annotations": 0,
+      "reviewedBodyExplanations": 0
+    },
+    {
+      "id": "shidian-SK1601",
+      "bookSlug": "li-xuzhong-mingshu",
+      "label": "李虛中命書 · 识典 SK1601 · 待校参考",
+      "file": "sources/normalized/shidianguji/SK1601/text.md",
+      "paragraphs": 76,
+      "sourceStates": {
+        "reference-text": 76
+      },
+      "annotations": 0,
+      "reviewedBodyExplanations": 0
+    },
+    {
+      "id": "shidian-SK1605",
+      "bookSlug": "luoluzi-sanming",
+      "label": "珞琭子三命消息賦註 · 识典 SK1605 · 待校参考",
+      "file": "sources/normalized/shidianguji/SK1605/text.md",
+      "paragraphs": 16,
+      "sourceStates": {
+        "reference-text": 16
+      },
+      "annotations": 0,
+      "reviewedBodyExplanations": 0
+    },
+    {
+      "id": "shidian-7533808921945833506",
+      "bookSlug": "wuxing-jingji",
+      "label": "五行精纪.三十四卷(存卷01至33).宋..清代海虞瞿氏恬裕斋抄本 · 识典 7533808921945833506 · 待校参考",
+      "file": "sources/normalized/shidianguji/7533808921945833506/text.md",
+      "paragraphs": 493,
+      "sourceStates": {
+        "reference-text": 493
+      },
+      "annotations": 0,
+      "reviewedBodyExplanations": 0
+    },
+    {
+      "id": "shidian-SK1602",
+      "bookSlug": "yuzhao-shenying",
+      "label": "玉照定真經 · 识典 SK1602 · 待校参考",
+      "file": "sources/normalized/shidianguji/SK1602/text.md",
+      "paragraphs": 13,
+      "sourceStates": {
+        "reference-text": 13
+      },
+      "annotations": 0,
+      "reviewedBodyExplanations": 0
+    },
+    {
+      "id": "shidian-NGJ89241199903149974518",
+      "bookSlug": "mayi-shenxiang",
+      "label": "新刊圖相麻衣相法 · 识典 NGJ89241199903149974518 · 待校参考",
+      "file": "sources/normalized/shidianguji/NGJ89241199903149974518/text.md",
+      "paragraphs": 849,
+      "sourceStates": {
+        "reference-text": 849
+      },
+      "annotations": 0,
+      "reviewedBodyExplanations": 0
+    },
+    {
+      "id": "shidian-SDZJ0174",
+      "bookSlug": "shenxiang-quanbian",
+      "label": "神相全编 · 识典 SDZJ0174 · 待校参考",
+      "file": "sources/normalized/shidianguji/SDZJ0174/text.md",
+      "paragraphs": 748,
+      "sourceStates": {
+        "reference-text": 748
+      },
+      "annotations": 0,
+      "reviewedBodyExplanations": 0
+    },
+    {
+      "id": "shidian-SK1599",
+      "bookSlug": "daliuren-daquan",
+      "label": "六壬大全 · 识典 SK1599 · 待校参考",
+      "file": "sources/normalized/shidianguji/SK1599/text.md",
+      "paragraphs": 438,
+      "sourceStates": {
+        "reference-text": 438
+      },
+      "annotations": 0,
+      "reviewedBodyExplanations": 0
+    },
+    {
+      "id": "shidian-SDZJ0628",
+      "bookSlug": "liuren-miben",
+      "label": "大六壬秘本 · 识典 SDZJ0628 · 待校参考",
+      "file": "sources/normalized/shidianguji/SDZJ0628/text.md",
+      "paragraphs": 1179,
+      "sourceStates": {
+        "reference-text": 1179
+      },
+      "annotations": 0,
+      "reviewedBodyExplanations": 0
+    },
+    {
+      "id": "shidian-SK1615",
+      "bookSlug": "taiyi-shenshu",
+      "label": "太乙金鏡式經 · 识典 SK1615 · 待校参考",
+      "file": "sources/normalized/shidianguji/SK1615/text.md",
+      "paragraphs": 105,
+      "sourceStates": {
+        "reference-text": 105
+      },
+      "annotations": 0,
+      "reviewedBodyExplanations": 0
+    },
+    {
+      "id": "shidian-SK1619",
+      "bookSlug": "xieji-bianfang-shu",
+      "label": "欽定協紀辨方書 · 识典 SK1619 · 待校参考",
+      "file": "sources/normalized/shidianguji/SK1619/text.md",
+      "paragraphs": 293,
+      "sourceStates": {
+        "reference-text": 293
+      },
+      "annotations": 0,
+      "reviewedBodyExplanations": 0
+    },
+    {
+      "id": "shidian-SK1618",
+      "bookSlug": "xingli-kaoyuan",
+      "label": "御定星歷考原 · 识典 SK1618 · 待校参考",
+      "file": "sources/normalized/shidianguji/SK1618/text.md",
+      "paragraphs": 312,
+      "sourceStates": {
+        "reference-text": 312
+      },
+      "annotations": 0,
+      "reviewedBodyExplanations": 0
+    },
+    {
+      "id": "shidian-DZ1480",
+      "bookSlug": "yuqia-ji",
+      "label": "許真君玉匣記 · 识典 DZ1480 · 待校参考",
+      "file": "sources/normalized/shidianguji/DZ1480/text.md",
+      "paragraphs": 154,
+      "sourceStates": {
+        "reference-text": 154
+      },
+      "annotations": 0,
+      "reviewedBodyExplanations": 0
+    },
+    {
+      "id": "shidian-NA09036",
+      "bookSlug": "yuqia-ji",
+      "label": "増廣玉匣記通書 · 识典 NA09036 · 待校参考",
+      "file": "sources/normalized/shidianguji/NA09036/text.md",
+      "paragraphs": 2988,
+      "sourceStates": {
+        "reference-text": 2988
+      },
+      "annotations": 0,
+      "reviewedBodyExplanations": 0
+    },
+    {
+      "id": "shidian-SK1603",
+      "bookSlug": "xingming-suyuan",
+      "label": "星命溯源 · 识典 SK1603 · 待校参考",
+      "file": "sources/normalized/shidianguji/SK1603/text.md",
+      "paragraphs": 247,
+      "sourceStates": {
+        "reference-text": 247
+      },
+      "annotations": 115,
+      "reviewedBodyExplanations": 87
+    },
+    {
+      "id": "shidian-SK1609",
+      "bookSlug": "xingxue-dacheng",
+      "label": "星學大成 · 识典 SK1609 · 待校参考",
+      "file": "sources/normalized/shidianguji/SK1609/text.md",
+      "paragraphs": 398,
+      "sourceStates": {
+        "reference-text": 398
+      },
+      "annotations": 0,
+      "reviewedBodyExplanations": 0
+    },
+    {
+      "id": "shidian-SDZJ0170",
+      "bookSlug": "ziwei-doushu-quanshu",
+      "label": "新锓希夷陈先生紫微斗数全书 · 识典 SDZJ0170 · 待校参考",
+      "file": "sources/normalized/shidianguji/SDZJ0170/text.md",
+      "paragraphs": 1070,
+      "sourceStates": {
+        "reference-text": 1070
+      },
+      "annotations": 0,
+      "reviewedBodyExplanations": 0
+    },
+    {
+      "id": "shidian-HY1442",
+      "bookSlug": "minghai-quanbian",
+      "label": "新刻星平總會命海全編 · 识典 HY1442 · 待校参考",
+      "file": "sources/normalized/shidianguji/HY1442/text.md",
+      "paragraphs": 1058,
+      "sourceStates": {
+        "reference-text": 1058
+      },
+      "annotations": 0,
+      "reviewedBodyExplanations": 0
+    }
+  ],
+  "sourceRevision": "37bbde0ab2f43ba1f6fd22ec90b70c18a08cce3a"
+}

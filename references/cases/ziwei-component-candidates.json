@@ -1,0 +1,711 @@
+{
+  "version": 1,
+  "bookSlug": "ziwei-doushu-quanshu",
+  "scopeNote": "原书明确输入的组件例；canRecompute只指组件输入足以核数学位置，不是完整命盘，不验证现实命运。由source-cases校验段落审读状态后导出；是否通过引擎回归以测试为准。",
+  "cases": [
+    {
+      "id": "ZWQS-C01",
+      "name": "正月子时命身",
+      "kind": "source_component_case",
+      "inputBasis": "ziwei-component",
+      "component": "soul-body",
+      "input": {
+        "lunarMonth": 1,
+        "hourBranch": "子"
+      },
+      "expected": {
+        "soulBranch": "寅",
+        "bodyBranch": "寅"
+      },
+      "canRecompute": true,
+      "verified": false,
+      "notes": [],
+      "source": {
+        "paragraphId": "ziwei-doushu-quanshu:L1693-L1698",
+        "file": "sources/fulltext/ziwei/ziwei-doushu-quanshu/fulltext.md",
+        "startLine": 1693,
+        "endLine": 1698
+      }
+    },
+    {
+      "id": "ZWQS-C02",
+      "name": "正月丑时命身",
+      "kind": "source_component_case",
+      "inputBasis": "ziwei-component",
+      "component": "soul-body",
+      "input": {
+        "lunarMonth": 1,
+        "hourBranch": "丑"
+      },
+      "expected": {
+        "soulBranch": "丑",
+        "bodyBranch": "卯"
+      },
+      "canRecompute": true,
+      "verified": false,
+      "notes": [],
+      "source": {
+        "paragraphId": "ziwei-doushu-quanshu:L1693-L1698",
+        "file": "sources/fulltext/ziwei/ziwei-doushu-quanshu/fulltext.md",
+        "startLine": 1693,
+        "endLine": 1698
+      }
+    },
+    {
+      "id": "ZWQS-C03",
+      "name": "正月寅时命身",
+      "kind": "source_component_case",
+      "inputBasis": "ziwei-component",
+      "component": "soul-body",
+      "input": {
+        "lunarMonth": 1,
+        "hourBranch": "寅"
+      },
+      "expected": {
+        "soulBranch": "子",
+        "bodyBranch": "辰"
+      },
+      "canRecompute": true,
+      "verified": false,
+      "notes": [],
+      "source": {
+        "paragraphId": "ziwei-doushu-quanshu:L1693-L1698",
+        "file": "sources/fulltext/ziwei/ziwei-doushu-quanshu/fulltext.md",
+        "startLine": 1693,
+        "endLine": 1698
+      }
+    },
+    {
+      "id": "ZWQS-C04",
+      "name": "火局初一紫微酉",
+      "kind": "source_component_case",
+      "inputBasis": "ziwei-component",
+      "component": "purple-star",
+      "input": {
+        "fiveElementsClass": "火六局",
+        "lunarDay": 1
+      },
+      "expected": {
+        "ziweiBranch": "酉"
+      },
+      "canRecompute": true,
+      "verified": false,
+      "notes": [
+        "原段称火局；火六局名称及局数见L2152与L2160–2184，不补完整生日。"
+      ],
+      "source": {
+        "paragraphId": "ziwei-doushu-quanshu:L1693-L1698",
+        "file": "sources/fulltext/ziwei/ziwei-doushu-quanshu/fulltext.md",
+        "startLine": 1693,
+        "endLine": 1698
+      }
+    },
+    {
+      "id": "ZWQS-C05",
+      "name": "子时文昌戌",
+      "kind": "source_component_case",
+      "inputBasis": "ziwei-component",
+      "component": "chang-qu",
+      "input": {
+        "hourBranch": "子"
+      },
+      "expected": {
+        "wenChangBranch": "戌"
+      },
+      "canRecompute": true,
+      "verified": false,
+      "notes": [],
+      "source": {
+        "paragraphId": "ziwei-doushu-quanshu:L1732-L1732",
+        "file": "sources/fulltext/ziwei/ziwei-doushu-quanshu/fulltext.md",
+        "startLine": 1732,
+        "endLine": 1732
+      }
+    },
+    {
+      "id": "ZWQS-C06",
+      "name": "丑时文昌酉",
+      "kind": "source_component_case",
+      "inputBasis": "ziwei-component",
+      "component": "chang-qu",
+      "input": {
+        "hourBranch": "丑"
+      },
+      "expected": {
+        "wenChangBranch": "酉"
+      },
+      "canRecompute": true,
+      "verified": false,
+      "notes": [],
+      "source": {
+        "paragraphId": "ziwei-doushu-quanshu:L1732-L1732",
+        "file": "sources/fulltext/ziwei/ziwei-doushu-quanshu/fulltext.md",
+        "startLine": 1732,
+        "endLine": 1732
+      }
+    },
+    {
+      "id": "ZWQS-C07",
+      "name": "子时文曲辰",
+      "kind": "source_component_case",
+      "inputBasis": "ziwei-component",
+      "component": "chang-qu",
+      "input": {
+        "hourBranch": "子"
+      },
+      "expected": {
+        "wenQuBranch": "辰"
+      },
+      "canRecompute": true,
+      "verified": false,
+      "notes": [],
+      "source": {
+        "paragraphId": "ziwei-doushu-quanshu:L1734-L1734",
+        "file": "sources/fulltext/ziwei/ziwei-doushu-quanshu/fulltext.md",
+        "startLine": 1734,
+        "endLine": 1734
+      }
+    },
+    {
+      "id": "ZWQS-C08",
+      "name": "丑时文曲巳",
+      "kind": "source_component_case",
+      "inputBasis": "ziwei-component",
+      "component": "chang-qu",
+      "input": {
+        "hourBranch": "丑"
+      },
+      "expected": {
+        "wenQuBranch": "巳"
+      },
+      "canRecompute": true,
+      "verified": false,
+      "notes": [],
+      "source": {
+        "paragraphId": "ziwei-doushu-quanshu:L1734-L1734",
+        "file": "sources/fulltext/ziwei/ziwei-doushu-quanshu/fulltext.md",
+        "startLine": 1734,
+        "endLine": 1734
+      }
+    },
+    {
+      "id": "ZWQS-C09",
+      "name": "正月辅弼辰戌",
+      "kind": "source_component_case",
+      "inputBasis": "ziwei-component",
+      "component": "zuo-you",
+      "input": {
+        "lunarMonth": 1
+      },
+      "expected": {
+        "zuoFuBranch": "辰",
+        "youBiBranch": "戌"
+      },
+      "canRecompute": true,
+      "verified": false,
+      "notes": [],
+      "source": {
+        "paragraphId": "ziwei-doushu-quanshu:L1740-L1740",
+        "file": "sources/fulltext/ziwei/ziwei-doushu-quanshu/fulltext.md",
+        "startLine": 1740,
+        "endLine": 1740
+      }
+    },
+    {
+      "id": "ZWQS-C10",
+      "name": "二月辅弼巳酉",
+      "kind": "source_component_case",
+      "inputBasis": "ziwei-component",
+      "component": "zuo-you",
+      "input": {
+        "lunarMonth": 2
+      },
+      "expected": {
+        "zuoFuBranch": "巳",
+        "youBiBranch": "酉"
+      },
+      "canRecompute": true,
+      "verified": false,
+      "notes": [],
+      "source": {
+        "paragraphId": "ziwei-doushu-quanshu:L1740-L1740",
+        "file": "sources/fulltext/ziwei/ziwei-doushu-quanshu/fulltext.md",
+        "startLine": 1740,
+        "endLine": 1740
+      }
+    },
+    {
+      "id": "ZWQS-C11",
+      "name": "癸年禄羊陀",
+      "kind": "source_component_case",
+      "inputBasis": "ziwei-component",
+      "component": "lu-yang-tuo",
+      "input": {
+        "yearStem": "癸"
+      },
+      "expected": {
+        "luCunBranch": "子",
+        "qingYangBranch": "丑",
+        "tuoLuoBranch": "亥"
+      },
+      "canRecompute": true,
+      "verified": false,
+      "notes": [],
+      "source": {
+        "paragraphId": "ziwei-doushu-quanshu:L1762-L1762",
+        "file": "sources/fulltext/ziwei/ziwei-doushu-quanshu/fulltext.md",
+        "startLine": 1762,
+        "endLine": 1762
+      }
+    },
+    {
+      "id": "ZWQS-C12",
+      "name": "甲年四化次序",
+      "kind": "source_component_case",
+      "inputBasis": "ziwei-component",
+      "component": "mutagens",
+      "input": {
+        "yearStem": "甲"
+      },
+      "expected": {
+        "禄": "廉贞",
+        "权": "破军",
+        "科": "武曲",
+        "忌": "太阳"
+      },
+      "canRecompute": true,
+      "verified": false,
+      "notes": [],
+      "source": {
+        "paragraphId": "ziwei-doushu-quanshu:L1776-L1776",
+        "file": "sources/fulltext/ziwei/ziwei-doushu-quanshu/fulltext.md",
+        "startLine": 1776,
+        "endLine": 1776
+      }
+    },
+    {
+      "id": "ZWQS-C13",
+      "name": "子时空劫亥",
+      "kind": "source_component_case",
+      "inputBasis": "ziwei-component",
+      "component": "kong-jie",
+      "input": {
+        "hourBranch": "子"
+      },
+      "expected": {
+        "sourceTianKongBranch": "亥",
+        "diJieBranch": "亥"
+      },
+      "canRecompute": true,
+      "verified": false,
+      "notes": [
+        "本书天空按亥子逆数，对应当前iztro地空；不能拿软件年支天空比较。"
+      ],
+      "source": {
+        "paragraphId": "ziwei-doushu-quanshu:L1782-L1782",
+        "file": "sources/fulltext/ziwei/ziwei-doushu-quanshu/fulltext.md",
+        "startLine": 1782,
+        "endLine": 1782
+      }
+    },
+    {
+      "id": "ZWQS-C14",
+      "name": "丑时劫子空戌",
+      "kind": "source_component_case",
+      "inputBasis": "ziwei-component",
+      "component": "kong-jie",
+      "input": {
+        "hourBranch": "丑"
+      },
+      "expected": {
+        "sourceTianKongBranch": "戌",
+        "diJieBranch": "子"
+      },
+      "canRecompute": true,
+      "verified": false,
+      "notes": [
+        "本书天空按亥子逆数，对应当前iztro地空。"
+      ],
+      "source": {
+        "paragraphId": "ziwei-doushu-quanshu:L1782-L1782",
+        "file": "sources/fulltext/ziwei/ziwei-doushu-quanshu/fulltext.md",
+        "startLine": 1782,
+        "endLine": 1782
+      }
+    },
+    {
+      "id": "ZWQS-C15",
+      "name": "午时空劫巳",
+      "kind": "source_component_case",
+      "inputBasis": "ziwei-component",
+      "component": "kong-jie",
+      "input": {
+        "hourBranch": "午"
+      },
+      "expected": {
+        "sourceTianKongBranch": "巳",
+        "diJieBranch": "巳"
+      },
+      "canRecompute": true,
+      "verified": false,
+      "notes": [
+        "本书天空按亥子逆数，对应当前iztro地空。"
+      ],
+      "source": {
+        "paragraphId": "ziwei-doushu-quanshu:L1782-L1782",
+        "file": "sources/fulltext/ziwei/ziwei-doushu-quanshu/fulltext.md",
+        "startLine": 1782,
+        "endLine": 1782
+      }
+    },
+    {
+      "id": "ZWQS-C16",
+      "name": "己丑流年禄羊陀",
+      "kind": "source_component_case",
+      "inputBasis": "ziwei-component",
+      "component": "transit-lu-yang-tuo",
+      "input": {
+        "transitYearStem": "己",
+        "transitYearBranch": "丑"
+      },
+      "expected": {
+        "luCunBranch": "午",
+        "qingYangBranch": "未",
+        "tuoLuoBranch": "巳"
+      },
+      "canRecompute": true,
+      "verified": false,
+      "notes": [
+        "只核流年干组件；同段甲子命巳小限亥例缺完整年龄与生日，不并入本例。"
+      ],
+      "source": {
+        "paragraphId": "ziwei-doushu-quanshu:L1915-L1915",
+        "file": "sources/fulltext/ziwei/ziwei-doushu-quanshu/fulltext.md",
+        "startLine": 1915,
+        "endLine": 1915
+      }
+    },
+    {
+      "id": "ZWQS-C17",
+      "name": "水二局初一丑",
+      "kind": "source_component_case",
+      "inputBasis": "ziwei-component",
+      "component": "purple-star",
+      "input": {
+        "fiveElementsClass": "水二局",
+        "lunarDay": 1
+      },
+      "expected": {
+        "ziweiBranch": "丑"
+      },
+      "canRecompute": true,
+      "verified": false,
+      "notes": [
+        "原书局数或卦宫组件例，不补公历出生年月日。"
+      ],
+      "source": {
+        "paragraphId": "ziwei-doushu-quanshu:L2022-L2022",
+        "file": "sources/fulltext/ziwei/ziwei-doushu-quanshu/fulltext.md",
+        "startLine": 2022,
+        "endLine": 2022
+      }
+    },
+    {
+      "id": "ZWQS-C18",
+      "name": "水二局初二寅",
+      "kind": "source_component_case",
+      "inputBasis": "ziwei-component",
+      "component": "purple-star",
+      "input": {
+        "fiveElementsClass": "水二局",
+        "lunarDay": 2
+      },
+      "expected": {
+        "ziweiBranch": "寅"
+      },
+      "canRecompute": true,
+      "verified": false,
+      "notes": [
+        "原书局数或卦宫组件例，不补公历出生年月日。"
+      ],
+      "source": {
+        "paragraphId": "ziwei-doushu-quanshu:L2022-L2022",
+        "file": "sources/fulltext/ziwei/ziwei-doushu-quanshu/fulltext.md",
+        "startLine": 2022,
+        "endLine": 2022
+      }
+    },
+    {
+      "id": "ZWQS-C19",
+      "name": "木三局初一辰",
+      "kind": "source_component_case",
+      "inputBasis": "ziwei-component",
+      "component": "purple-star",
+      "input": {
+        "fiveElementsClass": "木三局",
+        "lunarDay": 1
+      },
+      "expected": {
+        "ziweiBranch": "辰"
+      },
+      "canRecompute": true,
+      "verified": false,
+      "notes": [
+        "原书局数或卦宫组件例，不补公历出生年月日。"
+      ],
+      "source": {
+        "paragraphId": "ziwei-doushu-quanshu:L2052-L2052",
+        "file": "sources/fulltext/ziwei/ziwei-doushu-quanshu/fulltext.md",
+        "startLine": 2052,
+        "endLine": 2052
+      }
+    },
+    {
+      "id": "ZWQS-C20",
+      "name": "木三局初二丑",
+      "kind": "source_component_case",
+      "inputBasis": "ziwei-component",
+      "component": "purple-star",
+      "input": {
+        "fiveElementsClass": "木三局",
+        "lunarDay": 2
+      },
+      "expected": {
+        "ziweiBranch": "丑"
+      },
+      "canRecompute": true,
+      "verified": false,
+      "notes": [
+        "原书局数或卦宫组件例，不补公历出生年月日。"
+      ],
+      "source": {
+        "paragraphId": "ziwei-doushu-quanshu:L2052-L2052",
+        "file": "sources/fulltext/ziwei/ziwei-doushu-quanshu/fulltext.md",
+        "startLine": 2052,
+        "endLine": 2052
+      }
+    },
+    {
+      "id": "ZWQS-C21",
+      "name": "金四局初一亥",
+      "kind": "source_component_case",
+      "inputBasis": "ziwei-component",
+      "component": "purple-star",
+      "input": {
+        "fiveElementsClass": "金四局",
+        "lunarDay": 1
+      },
+      "expected": {
+        "ziweiBranch": "亥"
+      },
+      "canRecompute": true,
+      "verified": false,
+      "notes": [
+        "原书局数或卦宫组件例，不补公历出生年月日。"
+      ],
+      "source": {
+        "paragraphId": "ziwei-doushu-quanshu:L2084-L2084",
+        "file": "sources/fulltext/ziwei/ziwei-doushu-quanshu/fulltext.md",
+        "startLine": 2084,
+        "endLine": 2084
+      }
+    },
+    {
+      "id": "ZWQS-C22",
+      "name": "金四局初二辰",
+      "kind": "source_component_case",
+      "inputBasis": "ziwei-component",
+      "component": "purple-star",
+      "input": {
+        "fiveElementsClass": "金四局",
+        "lunarDay": 2
+      },
+      "expected": {
+        "ziweiBranch": "辰"
+      },
+      "canRecompute": true,
+      "verified": false,
+      "notes": [
+        "原书局数或卦宫组件例，不补公历出生年月日。"
+      ],
+      "source": {
+        "paragraphId": "ziwei-doushu-quanshu:L2084-L2084",
+        "file": "sources/fulltext/ziwei/ziwei-doushu-quanshu/fulltext.md",
+        "startLine": 2084,
+        "endLine": 2084
+      }
+    },
+    {
+      "id": "ZWQS-C23",
+      "name": "土五局初一午",
+      "kind": "source_component_case",
+      "inputBasis": "ziwei-component",
+      "component": "purple-star",
+      "input": {
+        "fiveElementsClass": "土五局",
+        "lunarDay": 1
+      },
+      "expected": {
+        "ziweiBranch": "午"
+      },
+      "canRecompute": true,
+      "verified": false,
+      "notes": [
+        "原书局数或卦宫组件例，不补公历出生年月日。"
+      ],
+      "source": {
+        "paragraphId": "ziwei-doushu-quanshu:L2116-L2116",
+        "file": "sources/fulltext/ziwei/ziwei-doushu-quanshu/fulltext.md",
+        "startLine": 2116,
+        "endLine": 2116
+      }
+    },
+    {
+      "id": "ZWQS-C24",
+      "name": "土五局初二亥",
+      "kind": "source_component_case",
+      "inputBasis": "ziwei-component",
+      "component": "purple-star",
+      "input": {
+        "fiveElementsClass": "土五局",
+        "lunarDay": 2
+      },
+      "expected": {
+        "ziweiBranch": "亥"
+      },
+      "canRecompute": true,
+      "verified": false,
+      "notes": [
+        "原书局数或卦宫组件例，不补公历出生年月日。"
+      ],
+      "source": {
+        "paragraphId": "ziwei-doushu-quanshu:L2116-L2116",
+        "file": "sources/fulltext/ziwei/ziwei-doushu-quanshu/fulltext.md",
+        "startLine": 2116,
+        "endLine": 2116
+      }
+    },
+    {
+      "id": "ZWQS-C25",
+      "name": "火六局初二午",
+      "kind": "source_component_case",
+      "inputBasis": "ziwei-component",
+      "component": "purple-star",
+      "input": {
+        "fiveElementsClass": "火六局",
+        "lunarDay": 2
+      },
+      "expected": {
+        "ziweiBranch": "午"
+      },
+      "canRecompute": true,
+      "verified": false,
+      "notes": [
+        "原书局数或卦宫组件例，不补公历出生年月日。"
+      ],
+      "source": {
+        "paragraphId": "ziwei-doushu-quanshu:L2152-L2152",
+        "file": "sources/fulltext/ziwei/ziwei-doushu-quanshu/fulltext.md",
+        "startLine": 2152,
+        "endLine": 2152
+      }
+    },
+    {
+      "id": "ZWQS-C26",
+      "name": "火六局初四辰",
+      "kind": "source_component_case",
+      "inputBasis": "ziwei-component",
+      "component": "purple-star",
+      "input": {
+        "fiveElementsClass": "火六局",
+        "lunarDay": 4
+      },
+      "expected": {
+        "ziweiBranch": "辰"
+      },
+      "canRecompute": true,
+      "verified": false,
+      "notes": [
+        "原书局数或卦宫组件例，不补公历出生年月日。"
+      ],
+      "source": {
+        "paragraphId": "ziwei-doushu-quanshu:L2152-L2152",
+        "file": "sources/fulltext/ziwei/ziwei-doushu-quanshu/fulltext.md",
+        "startLine": 2152,
+        "endLine": 2152
+      }
+    },
+    {
+      "id": "ZWQS-C27",
+      "name": "紫微丑天府卯",
+      "kind": "source_component_case",
+      "inputBasis": "ziwei-component",
+      "component": "tian-fu",
+      "input": {
+        "ziweiBranch": "丑"
+      },
+      "expected": {
+        "tianFuBranch": "卯"
+      },
+      "canRecompute": true,
+      "verified": false,
+      "notes": [
+        "原书局数或卦宫组件例，不补公历出生年月日。"
+      ],
+      "source": {
+        "paragraphId": "ziwei-doushu-quanshu:L2186-L2210",
+        "file": "sources/fulltext/ziwei/ziwei-doushu-quanshu/fulltext.md",
+        "startLine": 2186,
+        "endLine": 2210
+      }
+    },
+    {
+      "id": "ZWQS-C28",
+      "name": "紫府寅同宫",
+      "kind": "source_component_case",
+      "inputBasis": "ziwei-component",
+      "component": "tian-fu",
+      "input": {
+        "ziweiBranch": "寅"
+      },
+      "expected": {
+        "tianFuBranch": "寅"
+      },
+      "canRecompute": true,
+      "verified": false,
+      "notes": [
+        "原书局数或卦宫组件例，不补公历出生年月日。"
+      ],
+      "source": {
+        "paragraphId": "ziwei-doushu-quanshu:L2186-L2210",
+        "file": "sources/fulltext/ziwei/ziwei-doushu-quanshu/fulltext.md",
+        "startLine": 2186,
+        "endLine": 2210
+      }
+    },
+    {
+      "id": "ZWQS-C29",
+      "name": "紫府申同宫",
+      "kind": "source_component_case",
+      "inputBasis": "ziwei-component",
+      "component": "tian-fu",
+      "input": {
+        "ziweiBranch": "申"
+      },
+      "expected": {
+        "tianFuBranch": "申"
+      },
+      "canRecompute": true,
+      "verified": false,
+      "notes": [
+        "原书局数或卦宫组件例，不补公历出生年月日。"
+      ],
+      "source": {
+        "paragraphId": "ziwei-doushu-quanshu:L2186-L2210",
+        "file": "sources/fulltext/ziwei/ziwei-doushu-quanshu/fulltext.md",
+        "startLine": 2186,
+        "endLine": 2210
+      }
+    }
+  ]
+}
