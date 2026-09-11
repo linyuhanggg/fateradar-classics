@@ -21,3 +21,8 @@
 - 产品 MING-320/321/322 不在本批
 
 source-reviewed ≠ 人工 verified。不宣称全库/产品完成。
+
+## 远端核验
+- batch1 merge: `de2105601a59f5afa18b63cc16dc4e5b7cb57fff`
+- branch tip after ledger pin: `1552362ff324566eda86ef2c13c1a37ae2baf9d0`
+- remote: `origin/codex/multica-ming-324`
