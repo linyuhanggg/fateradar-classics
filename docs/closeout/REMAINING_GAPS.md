@@ -18,7 +18,7 @@ origin/main 仍是收尾 `4cb96e3` / `48f68a8`。
 |---|---|---|
 | draft | **2905** | 奇门 NLC 1261、约言 162 为 ocr-draft，校验器禁止升；大六壬 812 中 695 为待核实 |
 | 规则判断 L4 | 绝大多数 ID | 仅 8 条三态齐全；穷通无信息不足盘 |
-| 全仓 CI | 未跑 | `bun run test` ~3283、node/worker build、Playwright e2e |
+| 全仓 CI | 部分 | 产品 `bun run test` 173/3354 通过；未跑 node/worker build 与 Playwright e2e |
 | 浏览器 | 部分 | 无稳定截图（CDP timeout）；未做导出文件回读点击 |
 | origin/main | 未合 | 独立审查 PASS_WITH_GAPS；上述缺口仍可自行继续，但不足交付门槛 |
 
