@@ -38,4 +38,5 @@
 
 ## 交付 tip
 - 内容合入 tip（7 审查稿）：`ea1572ada7f9a11d78d36bfc904a6efddaedb8d6`
-- 内容+账本 tip：交包后以 `git rev-parse origin/codex/multica-ming-415` 为准（施工分支，非 main）
+- 内容+账本首推 tip：交包 push 后以 `git rev-parse origin/codex/multica-ming-415` 为准（施工分支，非 main）
+- 远端 tip：同上；本账本 tip 字段在 push 后核对补记
