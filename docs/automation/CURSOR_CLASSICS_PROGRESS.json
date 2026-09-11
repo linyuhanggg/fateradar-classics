@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "worker": "cursor-native-classics",
   "lease": {
-    "status": "active",
+    "status": "released",
     "worker": "cursor-native-classics",
     "holderId": "bc-fcfb0e5c-a632-4c75-bebb-47e8817301d7",
     "runBranch": "cursor/fateradar-classics-processing-cf1b",
@@ -12,7 +12,8 @@
     "ttlSeconds": 10800,
     "staleSeconds": 5400,
     "acquireReason": "expired-or-absent",
-    "runUrl": "https://cursor.com/agents/bc-fcfb0e5c-a632-4c75-bebb-47e8817301d7"
+    "runUrl": "https://cursor.com/agents/bc-fcfb0e5c-a632-4c75-bebb-47e8817301d7",
+    "releasedAt": 1789090457.413336
   },
   "package": {
     "id": "sanming-tonghui-shidian-SK1610",
@@ -383,8 +384,8 @@
     "Nowledge Mem MCP/nmem CLI unavailable this run; task state is in-repo only.",
     "No PAUSE/STOP/COMPLETE. Package is not accepted: 0 原文： dumps; 2 待核实 remain (欄缺上字, 必膺大截断).",
     "Did not claim a new package. Did not touch SK1609 / 玉匣记 / 渊海NGJ / 卜筮HY0057 / inventory / public exports.",
-    "Lease acquire in progress; review-only of delivered SK1610 scope.",
+    "Lease acquired by ordinary push 0145c4d; this checkpoint reviews delivered scope then releases.",
     "No further owner=cursor-native-classics package is queued; stop claiming."
   ],
-  "updatedAt": 1789090421.130781
+  "updatedAt": 1789090457.413336
 }
