@@ -1,0 +1,198 @@
+{
+  "schemaVersion": 1,
+  "issue": "MING-424",
+  "issueId": "01a0919e-da7e-7858-b9d0-b8dfe6040954",
+  "generatedAt": "2026-09-11T18:00:19Z",
+  "repo": "https://github.com/linyuhanggg/fateradar-classics",
+  "integrationBranch": "codex/multica-ming-424",
+  "worktree": "fateradar-multica-ming-424",
+  "parentBatch": {
+    "issue": "MING-415",
+    "tip": "065af4177522e59152afdbd1c0fc8f54f80ce703",
+    "independentReview": "MING-419",
+    "independentReviewSha": "e788977f",
+    "note": "Stack on independently accepted 415 tip; import MING-397/403 miben CP4 vern fix + CP8/CP22/CP23 review md + this-round SK1573 CP3 / feixing CP1–CP2 review md"
+  },
+  "baseline": {
+    "ref": "origin/codex/multica-ming-415",
+    "sha": "065af4177522e59152afdbd1c0fc8f54f80ce703",
+    "note": "MING-419 passed on 415 tip; includes daliuren CP17–21 + miben CP7/CP9 review md"
+  },
+  "acceptedBaselineSha": "065af4177522e59152afdbd1c0fc8f54f80ce703",
+  "stackBaseSha": "065af4177522e59152afdbd1c0fc8f54f80ce703",
+  "policies": [
+    "cherry-pick / merge only reviewed paths",
+    "MING-397 miben JSON: only L5920–L5926 vernacular/notes (4 entries)",
+    "do not whole-file overwrite already-reviewed annotation increments",
+    "source-reviewed != human verified; verified stays false",
+    "识典 / 大六壬 annotation SHA must match 415; 秘本 SHA only changes via 397 fix",
+    "do not promote product unique line / main merge / deploy / force push",
+    "not full library completion"
+  ],
+  "annotationIntegrity": {
+    "shidianSdzj0170": {
+      "path": "references/annotations/ziwei/ziwei-doushu-quanshu--shidian-SDZJ0170.json",
+      "sha256": "d65d93d8f579d2cf181a27d4af707d20d2bac276b785eb4b8c6442fd2982a261",
+      "blob": "1f369f996da7ea96c6e4bd3388510af24e8d1ea7",
+      "unchangedVs415": true
+    },
+    "daliurenDaquan": {
+      "path": "references/annotations/san-shi/daliuren-daquan.json",
+      "sha256": "c9321794bbea0e9df31069bdbf146ec18b61529fb85b9d34729c19ca3d74059a",
+      "blob": "66db69fdf39120e4e37733cb59b5ea01a154dcd9",
+      "unchangedVs415": true
+    },
+    "liurenMiben": {
+      "path": "references/annotations/san-shi/liuren-miben.json",
+      "sha256Baseline415": "30b9b2b915089ead2c54bf88999131b4e7558097d996453fc27bf135d3054821",
+      "sha256After397": "2789a72972a3a1521ae2d0dfa5179e8b6affd92189445064419d1cf4414ad347",
+      "blobAfter397": "c9940ca0125443608cc5487e15d8174427d36fc7",
+      "entriesTotal": 2643,
+      "changedParagraphIds": [
+        "liuren-miben:L5920-L5920",
+        "liuren-miben:L5922-L5922",
+        "liuren-miben:L5924-L5924",
+        "liuren-miben:L5926-L5926"
+      ],
+      "changedFields": ["vernacular", "notes"],
+      "equalToSourceTip6f9ae513": true,
+      "note": "Only MING-397 CP4 博戏 vern realignment; remaining 2639 entries identical to 415"
+    },
+    "feixingZiweiYuanzhi": {
+      "path": "references/annotations/ziwei/feixing-ziwei-doushu-yuanzhi.json",
+      "unchangedVs415": true
+    },
+    "huangjiSk1573": {
+      "path": "references/annotations/divination/huangji-jingshi--shidian-SK1573.json",
+      "unchangedVs415": true
+    }
+  },
+  "inventory": {
+    "mergedThisBatch": [
+      "MING-397",
+      "MING-403",
+      "MING-406",
+      "MING-412",
+      "MING-413",
+      "MING-416",
+      "MING-417",
+      "MING-418"
+    ],
+    "skipped": []
+  },
+  "batch": {
+    "description": "Stack 415 tip: import reviewed miben CP4 JSON fix + miben CP8 / daliuren CP22–23 / SK1573 CP3 / feixing CP1–CP2 review markdown",
+    "annotationFix": {
+      "packKey": "liuren-miben-cp4-vern-fix",
+      "path": "references/annotations/san-shi/liuren-miben.json",
+      "sourceIssue": "MING-397",
+      "independentReview": "MING-403",
+      "sourceSha": "6f9ae5139f3a1cdd6e26496a12f0961e8ff5cdc6",
+      "importMethod": "cherry-pick -x",
+      "localSha": "85b65a3ff43431e85d8a119455fe860d3ef44c07",
+      "blob": "c9940ca0125443608cc5487e15d8174427d36fc7",
+      "sha256": "2789a72972a3a1521ae2d0dfa5179e8b6affd92189445064419d1cf4414ad347",
+      "status": "integrated_pending_acceptance"
+    },
+    "reviews": [
+      {
+        "packKey": "liuren-miben-cp8",
+        "path": "docs/book-reviews/liuren-miben-cp8-review.md",
+        "sourceIssue": "MING-406",
+        "sourceSha": "8197f92f566d260b3f290a59b2827bc1107b6cc6",
+        "importMethod": "cherry-pick -x",
+        "localSha": "8b7c5ce7496ab7eb9e737131879634ace3ccf503",
+        "reviewBlob": "bb3754108ecc032ef68ad3999c9ff25024189a2d",
+        "status": "integrated_pending_acceptance"
+      },
+      {
+        "packKey": "daliuren-daquan-cp22",
+        "path": "docs/book-reviews/daliuren-daquan-cp22-review.md",
+        "sourceIssue": "MING-412",
+        "sourceSha": "f40840fd819810e192fa72581464fa377bb3a14d",
+        "importMethod": "cherry-pick -x",
+        "localSha": "69732154c8bdb78c54d34fb2ef6fd1c627b27353",
+        "reviewBlob": "9d6e7b417af13899a64a110ad6701060f0175939",
+        "status": "integrated_pending_acceptance"
+      },
+      {
+        "packKey": "daliuren-daquan-cp23",
+        "path": "docs/book-reviews/daliuren-daquan-cp23-review.md",
+        "sourceIssue": "MING-413",
+        "sourceSha": "75b9e2ba216484ef2c8a86310b0acd11cdd7994d",
+        "importMethod": "cherry-pick -x",
+        "localSha": "f50a95b26ed846fa68529b18413e3240d7a5295a",
+        "reviewBlob": "9934f6928ab98dbea9ecf7921f48b2a15b0417d3",
+        "status": "integrated_pending_acceptance"
+      },
+      {
+        "packKey": "huangji-jingshi-sk1573-cp3",
+        "path": "docs/book-reviews/huangji-jingshi-sk1573-cp3-review.md",
+        "sourceIssue": "MING-416",
+        "sourceSha": "a66d5d96ab9f84cfa52e0808d230e9a7dd9973f8",
+        "importMethod": "cherry-pick -x",
+        "localSha": "800e09e23340991c3266cda318b0fcaba5a4c352",
+        "reviewBlob": "fc7dce60e7bd1db15fee95166d0a7c98178c1c48",
+        "status": "integrated_pending_acceptance"
+      },
+      {
+        "packKey": "feixing-ziwei-doushu-yuanzhi-cp1",
+        "path": "docs/book-reviews/feixing-ziwei-doushu-yuanzhi-cp1-review.md",
+        "sourceIssue": "MING-417",
+        "sourceSha": "19fb31b973891ea549c3d66e3a0506149111ea50",
+        "importMethod": "cherry-pick -x",
+        "localSha": "62bef5a27c4919f84b36d0b189cb89fcf013777a",
+        "reviewBlob": "88d2951f1b1850c745a24ca0dc57c514fc125cc9",
+        "status": "integrated_pending_acceptance"
+      },
+      {
+        "packKey": "feixing-ziwei-doushu-yuanzhi-cp2",
+        "path": "docs/book-reviews/feixing-ziwei-doushu-yuanzhi-cp2-review.md",
+        "sourceIssue": "MING-418",
+        "sourceSha": "21d06e608c47a5da1d3c802bebcbec82a60b4edf",
+        "importMethod": "cherry-pick -x",
+        "localSha": "fd4106ac33e19d32c93d34b9eb4a018f86c0b09f",
+        "reviewBlob": "23beda55115cd931b2cd66993cc403819cf43528",
+        "status": "integrated_pending_acceptance"
+      }
+    ]
+  },
+  "validation": {
+    "validateAnnotations": {
+      "ok": true,
+      "books": 48,
+      "files": 58,
+      "entries": 42834,
+      "source_reviewed": 40405,
+      "errors": []
+    },
+    "batchFileVerifiedTrue": 0,
+    "libraryVerifiedTrue": 0,
+    "shidianAndDaliurenSha256UnchangedVs415": true,
+    "mibenOnlyFourParagraphsChanged": true,
+    "reviewBlobsEqualToSources": true,
+    "mibenBlobEqualTo6f9ae513": true,
+    "diffVsBaseForbids": {
+      "shidianJsonChanged": false,
+      "daliurenJsonChanged": false,
+      "mibenWholeFileOverwriteBeyond397": false,
+      "feixingJsonChanged": false,
+      "huangjiSk1573JsonChanged": false,
+      "wholeTreeImport": false,
+      "productUniqueLineTouched": false
+    }
+  },
+  "excludedThisBatch": [
+    "product unique line / product repos",
+    "main merge / deploy / force push",
+    "full library / 大六壬全书 / 秘本全书 completion claim",
+    "raising verified=true"
+  ],
+  "contentImportTip": "fd4106ac33e19d32c93d34b9eb4a018f86c0b09f",
+  "candidateIntegrationSha": null,
+  "pendingIndependentReview": true,
+  "integrationBranchTipAtDelivery": null,
+  "remoteVerifiedAt": null,
+  "remoteRef": "origin/codex/multica-ming-424",
+  "note": "Authoritative tip after ledger+push verify commit is origin/codex/multica-ming-424; measure with git rev-parse / ls-remote"
+}
