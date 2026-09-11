@@ -1,0 +1,2583 @@
+{
+  "sourcePage": "https://zh.wikisource.org/wiki/Page:Gujin_Tushu_Jicheng,_Volume_476_(1700-1725).djvu/101",
+  "sourceTitle": "逐日太陰過宮定局",
+  "evidence": [
+    "moon-days01-04.png",
+    "moon-days05-18.png",
+    "moon-days19-30.png"
+  ],
+  "review": "draft",
+  "verified": false,
+  "method": "放大整页扫描逐格目读，不按规律生成缺值；巳字按地支上下文转录，仍待复核。",
+  "scope": "初一至三十全30日×12月=360格图面初稿；未完成二次校字及原表算法有效性验证。",
+  "interpretationLimits": [
+    "在某宫只保留原说，不额外推断瞬时真实月球位置。",
+    "某时过某宫只记录时支和目标宫，未补起止分钟、时区或前一宫。",
+    "农历月日映射、闰月、各年天文位置及原表实效均未验证。"
+  ],
+  "rows": [
+    {
+      "lunarDay": 1,
+      "cells": [
+        {
+          "month": 1,
+          "sourceText": "在亥",
+          "kind": "resident",
+          "palace": "亥"
+        },
+        {
+          "month": 2,
+          "sourceText": "辰時過戌",
+          "kind": "transition",
+          "transitionHourBranch": "辰",
+          "destinationPalace": "戌"
+        },
+        {
+          "month": 3,
+          "sourceText": "辰時過酉",
+          "kind": "transition",
+          "transitionHourBranch": "辰",
+          "destinationPalace": "酉"
+        },
+        {
+          "month": 4,
+          "sourceText": "辰時過申",
+          "kind": "transition",
+          "transitionHourBranch": "辰",
+          "destinationPalace": "申"
+        },
+        {
+          "month": 5,
+          "sourceText": "巳時過未",
+          "kind": "transition",
+          "transitionHourBranch": "巳",
+          "destinationPalace": "未"
+        },
+        {
+          "month": 6,
+          "sourceText": "巳時過午",
+          "kind": "transition",
+          "transitionHourBranch": "巳",
+          "destinationPalace": "午"
+        },
+        {
+          "month": 7,
+          "sourceText": "未時過巳",
+          "kind": "transition",
+          "transitionHourBranch": "未",
+          "destinationPalace": "巳"
+        },
+        {
+          "month": 8,
+          "sourceText": "未時過辰",
+          "kind": "transition",
+          "transitionHourBranch": "未",
+          "destinationPalace": "辰"
+        },
+        {
+          "month": 9,
+          "sourceText": "未時過卯",
+          "kind": "transition",
+          "transitionHourBranch": "未",
+          "destinationPalace": "卯"
+        },
+        {
+          "month": 10,
+          "sourceText": "未時過寅",
+          "kind": "transition",
+          "transitionHourBranch": "未",
+          "destinationPalace": "寅"
+        },
+        {
+          "month": 11,
+          "sourceText": "未時過丑",
+          "kind": "transition",
+          "transitionHourBranch": "未",
+          "destinationPalace": "丑"
+        },
+        {
+          "month": 12,
+          "sourceText": "午時過子",
+          "kind": "transition",
+          "transitionHourBranch": "午",
+          "destinationPalace": "子"
+        }
+      ]
+    },
+    {
+      "lunarDay": 2,
+      "cells": [
+        {
+          "month": 1,
+          "sourceText": "在亥",
+          "kind": "resident",
+          "palace": "亥"
+        },
+        {
+          "month": 2,
+          "sourceText": "在戌",
+          "kind": "resident",
+          "palace": "戌"
+        },
+        {
+          "month": 3,
+          "sourceText": "在酉",
+          "kind": "resident",
+          "palace": "酉"
+        },
+        {
+          "month": 4,
+          "sourceText": "在申",
+          "kind": "resident",
+          "palace": "申"
+        },
+        {
+          "month": 5,
+          "sourceText": "在未",
+          "kind": "resident",
+          "palace": "未"
+        },
+        {
+          "month": 6,
+          "sourceText": "在午",
+          "kind": "resident",
+          "palace": "午"
+        },
+        {
+          "month": 7,
+          "sourceText": "在巳",
+          "kind": "resident",
+          "palace": "巳"
+        },
+        {
+          "month": 8,
+          "sourceText": "在辰",
+          "kind": "resident",
+          "palace": "辰"
+        },
+        {
+          "month": 9,
+          "sourceText": "在卯",
+          "kind": "resident",
+          "palace": "卯"
+        },
+        {
+          "month": 10,
+          "sourceText": "在寅",
+          "kind": "resident",
+          "palace": "寅"
+        },
+        {
+          "month": 11,
+          "sourceText": "在丑",
+          "kind": "resident",
+          "palace": "丑"
+        },
+        {
+          "month": 12,
+          "sourceText": "在子",
+          "kind": "resident",
+          "palace": "子"
+        }
+      ]
+    },
+    {
+      "lunarDay": 3,
+      "cells": [
+        {
+          "month": 1,
+          "sourceText": "在亥",
+          "kind": "resident",
+          "palace": "亥"
+        },
+        {
+          "month": 2,
+          "sourceText": "戌時過酉",
+          "kind": "transition",
+          "transitionHourBranch": "戌",
+          "destinationPalace": "酉"
+        },
+        {
+          "month": 3,
+          "sourceText": "戌時過申",
+          "kind": "transition",
+          "transitionHourBranch": "戌",
+          "destinationPalace": "申"
+        },
+        {
+          "month": 4,
+          "sourceText": "亥時過未",
+          "kind": "transition",
+          "transitionHourBranch": "亥",
+          "destinationPalace": "未"
+        },
+        {
+          "month": 5,
+          "sourceText": "亥時過午",
+          "kind": "transition",
+          "transitionHourBranch": "亥",
+          "destinationPalace": "午"
+        },
+        {
+          "month": 6,
+          "sourceText": "亥時過巳",
+          "kind": "transition",
+          "transitionHourBranch": "亥",
+          "destinationPalace": "巳"
+        },
+        {
+          "month": 7,
+          "sourceText": "在巳",
+          "kind": "resident",
+          "palace": "巳"
+        },
+        {
+          "month": 8,
+          "sourceText": "在辰",
+          "kind": "resident",
+          "palace": "辰"
+        },
+        {
+          "month": 9,
+          "sourceText": "在卯",
+          "kind": "resident",
+          "palace": "卯"
+        },
+        {
+          "month": 10,
+          "sourceText": "在寅",
+          "kind": "resident",
+          "palace": "寅"
+        },
+        {
+          "month": 11,
+          "sourceText": "在丑",
+          "kind": "resident",
+          "palace": "丑"
+        },
+        {
+          "month": 12,
+          "sourceText": "在子",
+          "kind": "resident",
+          "palace": "子"
+        }
+      ]
+    },
+    {
+      "lunarDay": 4,
+      "cells": [
+        {
+          "month": 1,
+          "sourceText": "在戌",
+          "kind": "resident",
+          "palace": "戌"
+        },
+        {
+          "month": 2,
+          "sourceText": "在酉",
+          "kind": "resident",
+          "palace": "酉"
+        },
+        {
+          "month": 3,
+          "sourceText": "在申",
+          "kind": "resident",
+          "palace": "申"
+        },
+        {
+          "month": 4,
+          "sourceText": "在未",
+          "kind": "resident",
+          "palace": "未"
+        },
+        {
+          "month": 5,
+          "sourceText": "在午",
+          "kind": "resident",
+          "palace": "午"
+        },
+        {
+          "month": 6,
+          "sourceText": "在巳",
+          "kind": "resident",
+          "palace": "巳"
+        },
+        {
+          "month": 7,
+          "sourceText": "丑時過辰",
+          "kind": "transition",
+          "transitionHourBranch": "丑",
+          "destinationPalace": "辰"
+        },
+        {
+          "month": 8,
+          "sourceText": "巳時過卯",
+          "kind": "transition",
+          "transitionHourBranch": "巳",
+          "destinationPalace": "卯"
+        },
+        {
+          "month": 9,
+          "sourceText": "丑時過寅",
+          "kind": "transition",
+          "transitionHourBranch": "丑",
+          "destinationPalace": "寅"
+        },
+        {
+          "month": 10,
+          "sourceText": "丑時過丑",
+          "kind": "transition",
+          "transitionHourBranch": "丑",
+          "destinationPalace": "丑"
+        },
+        {
+          "month": 11,
+          "sourceText": "丑時過子",
+          "kind": "transition",
+          "transitionHourBranch": "丑",
+          "destinationPalace": "子"
+        },
+        {
+          "month": 12,
+          "sourceText": "寅時過亥",
+          "kind": "transition",
+          "transitionHourBranch": "寅",
+          "destinationPalace": "亥"
+        }
+      ]
+    },
+    {
+      "lunarDay": 5,
+      "cells": [
+        {
+          "month": 1,
+          "sourceText": "在戌",
+          "kind": "resident",
+          "palace": "戌"
+        },
+        {
+          "month": 2,
+          "sourceText": "在酉",
+          "kind": "resident",
+          "palace": "酉"
+        },
+        {
+          "month": 3,
+          "sourceText": "在申",
+          "kind": "resident",
+          "palace": "申"
+        },
+        {
+          "month": 4,
+          "sourceText": "在未",
+          "kind": "resident",
+          "palace": "未"
+        },
+        {
+          "month": 5,
+          "sourceText": "在午",
+          "kind": "resident",
+          "palace": "午"
+        },
+        {
+          "month": 6,
+          "sourceText": "在巳",
+          "kind": "resident",
+          "palace": "巳"
+        },
+        {
+          "month": 7,
+          "sourceText": "在辰",
+          "kind": "resident",
+          "palace": "辰"
+        },
+        {
+          "month": 8,
+          "sourceText": "在卯",
+          "kind": "resident",
+          "palace": "卯"
+        },
+        {
+          "month": 9,
+          "sourceText": "在寅",
+          "kind": "resident",
+          "palace": "寅"
+        },
+        {
+          "month": 10,
+          "sourceText": "在丑",
+          "kind": "resident",
+          "palace": "丑"
+        },
+        {
+          "month": 11,
+          "sourceText": "在子",
+          "kind": "resident",
+          "palace": "子"
+        },
+        {
+          "month": 12,
+          "sourceText": "在亥",
+          "kind": "resident",
+          "palace": "亥"
+        }
+      ]
+    },
+    {
+      "lunarDay": 6,
+      "cells": [
+        {
+          "month": 1,
+          "sourceText": "辰時過酉",
+          "kind": "transition",
+          "transitionHourBranch": "辰",
+          "destinationPalace": "酉"
+        },
+        {
+          "month": 2,
+          "sourceText": "辰時過申",
+          "kind": "transition",
+          "transitionHourBranch": "辰",
+          "destinationPalace": "申"
+        },
+        {
+          "month": 3,
+          "sourceText": "巳時過未",
+          "kind": "transition",
+          "transitionHourBranch": "巳",
+          "destinationPalace": "未"
+        },
+        {
+          "month": 4,
+          "sourceText": "巳時過午",
+          "kind": "transition",
+          "transitionHourBranch": "巳",
+          "destinationPalace": "午"
+        },
+        {
+          "month": 5,
+          "sourceText": "巳時過巳",
+          "kind": "transition",
+          "transitionHourBranch": "巳",
+          "destinationPalace": "巳"
+        },
+        {
+          "month": 6,
+          "sourceText": "未時過辰",
+          "kind": "transition",
+          "transitionHourBranch": "未",
+          "destinationPalace": "辰"
+        },
+        {
+          "month": 7,
+          "sourceText": "未時過卯",
+          "kind": "transition",
+          "transitionHourBranch": "未",
+          "destinationPalace": "卯"
+        },
+        {
+          "month": 8,
+          "sourceText": "未時過寅",
+          "kind": "transition",
+          "transitionHourBranch": "未",
+          "destinationPalace": "寅"
+        },
+        {
+          "month": 9,
+          "sourceText": "未時過丑",
+          "kind": "transition",
+          "transitionHourBranch": "未",
+          "destinationPalace": "丑"
+        },
+        {
+          "month": 10,
+          "sourceText": "未時過子",
+          "kind": "transition",
+          "transitionHourBranch": "未",
+          "destinationPalace": "子"
+        },
+        {
+          "month": 11,
+          "sourceText": "申時過亥",
+          "kind": "transition",
+          "transitionHourBranch": "申",
+          "destinationPalace": "亥"
+        },
+        {
+          "month": 12,
+          "sourceText": "酉時過戌",
+          "kind": "transition",
+          "transitionHourBranch": "酉",
+          "destinationPalace": "戌"
+        }
+      ]
+    },
+    {
+      "lunarDay": 7,
+      "cells": [
+        {
+          "month": 1,
+          "sourceText": "在酉",
+          "kind": "resident",
+          "palace": "酉"
+        },
+        {
+          "month": 2,
+          "sourceText": "在申",
+          "kind": "resident",
+          "palace": "申"
+        },
+        {
+          "month": 3,
+          "sourceText": "在未",
+          "kind": "resident",
+          "palace": "未"
+        },
+        {
+          "month": 4,
+          "sourceText": "在午",
+          "kind": "resident",
+          "palace": "午"
+        },
+        {
+          "month": 5,
+          "sourceText": "在巳",
+          "kind": "resident",
+          "palace": "巳"
+        },
+        {
+          "month": 6,
+          "sourceText": "在辰",
+          "kind": "resident",
+          "palace": "辰"
+        },
+        {
+          "month": 7,
+          "sourceText": "在卯",
+          "kind": "resident",
+          "palace": "卯"
+        },
+        {
+          "month": 8,
+          "sourceText": "在寅",
+          "kind": "resident",
+          "palace": "寅"
+        },
+        {
+          "month": 9,
+          "sourceText": "在丑",
+          "kind": "resident",
+          "palace": "丑"
+        },
+        {
+          "month": 10,
+          "sourceText": "在子",
+          "kind": "resident",
+          "palace": "子"
+        },
+        {
+          "month": 11,
+          "sourceText": "在亥",
+          "kind": "resident",
+          "palace": "亥"
+        },
+        {
+          "month": 12,
+          "sourceText": "在戌",
+          "kind": "resident",
+          "palace": "戌"
+        }
+      ]
+    },
+    {
+      "lunarDay": 8,
+      "cells": [
+        {
+          "month": 1,
+          "sourceText": "戌時過申",
+          "kind": "transition",
+          "transitionHourBranch": "戌",
+          "destinationPalace": "申"
+        },
+        {
+          "month": 2,
+          "sourceText": "子時過未",
+          "kind": "transition",
+          "transitionHourBranch": "子",
+          "destinationPalace": "未"
+        },
+        {
+          "month": 3,
+          "sourceText": "子時過午",
+          "kind": "transition",
+          "transitionHourBranch": "子",
+          "destinationPalace": "午"
+        },
+        {
+          "month": 4,
+          "sourceText": "戌時過巳",
+          "kind": "transition",
+          "transitionHourBranch": "戌",
+          "destinationPalace": "巳"
+        },
+        {
+          "month": 5,
+          "sourceText": "在巳",
+          "kind": "resident",
+          "palace": "巳"
+        },
+        {
+          "month": 6,
+          "sourceText": "在辰",
+          "kind": "resident",
+          "palace": "辰"
+        },
+        {
+          "month": 7,
+          "sourceText": "在卯",
+          "kind": "resident",
+          "palace": "卯"
+        },
+        {
+          "month": 8,
+          "sourceText": "在寅",
+          "kind": "resident",
+          "palace": "寅"
+        },
+        {
+          "month": 9,
+          "sourceText": "在丑",
+          "kind": "resident",
+          "palace": "丑"
+        },
+        {
+          "month": 10,
+          "sourceText": "在子",
+          "kind": "resident",
+          "palace": "子"
+        },
+        {
+          "month": 11,
+          "sourceText": "在亥",
+          "kind": "resident",
+          "palace": "亥"
+        },
+        {
+          "month": 12,
+          "sourceText": "在戌",
+          "kind": "resident",
+          "palace": "戌"
+        }
+      ]
+    },
+    {
+      "lunarDay": 9,
+      "cells": [
+        {
+          "month": 1,
+          "sourceText": "在申",
+          "kind": "resident",
+          "palace": "申"
+        },
+        {
+          "month": 2,
+          "sourceText": "在未",
+          "kind": "resident",
+          "palace": "未"
+        },
+        {
+          "month": 3,
+          "sourceText": "在午",
+          "kind": "resident",
+          "palace": "午"
+        },
+        {
+          "month": 4,
+          "sourceText": "在巳",
+          "kind": "resident",
+          "palace": "巳"
+        },
+        {
+          "month": 5,
+          "sourceText": "丑時過辰",
+          "kind": "transition",
+          "transitionHourBranch": "丑",
+          "destinationPalace": "辰"
+        },
+        {
+          "month": 6,
+          "sourceText": "丑時過卯",
+          "kind": "transition",
+          "transitionHourBranch": "丑",
+          "destinationPalace": "卯"
+        },
+        {
+          "month": 7,
+          "sourceText": "丑時過寅",
+          "kind": "transition",
+          "transitionHourBranch": "丑",
+          "destinationPalace": "寅"
+        },
+        {
+          "month": 8,
+          "sourceText": "丑時過丑",
+          "kind": "transition",
+          "transitionHourBranch": "丑",
+          "destinationPalace": "丑"
+        },
+        {
+          "month": 9,
+          "sourceText": "丑時過子",
+          "kind": "transition",
+          "transitionHourBranch": "丑",
+          "destinationPalace": "子"
+        },
+        {
+          "month": 10,
+          "sourceText": "寅時過亥",
+          "kind": "transition",
+          "transitionHourBranch": "寅",
+          "destinationPalace": "亥"
+        },
+        {
+          "month": 11,
+          "sourceText": "卯時過戌",
+          "kind": "transition",
+          "transitionHourBranch": "卯",
+          "destinationPalace": "戌"
+        },
+        {
+          "month": 12,
+          "sourceText": "卯時過酉",
+          "kind": "transition",
+          "transitionHourBranch": "卯",
+          "destinationPalace": "酉"
+        }
+      ]
+    },
+    {
+      "lunarDay": 10,
+      "cells": [
+        {
+          "month": 1,
+          "sourceText": "在申",
+          "kind": "resident",
+          "palace": "申"
+        },
+        {
+          "month": 2,
+          "sourceText": "在未",
+          "kind": "resident",
+          "palace": "未"
+        },
+        {
+          "month": 3,
+          "sourceText": "在午",
+          "kind": "resident",
+          "palace": "午"
+        },
+        {
+          "month": 4,
+          "sourceText": "在巳",
+          "kind": "resident",
+          "palace": "巳"
+        },
+        {
+          "month": 5,
+          "sourceText": "在辰",
+          "kind": "resident",
+          "palace": "辰"
+        },
+        {
+          "month": 6,
+          "sourceText": "在卯",
+          "kind": "resident",
+          "palace": "卯"
+        },
+        {
+          "month": 7,
+          "sourceText": "在寅",
+          "kind": "resident",
+          "palace": "寅"
+        },
+        {
+          "month": 8,
+          "sourceText": "在丑",
+          "kind": "resident",
+          "palace": "丑"
+        },
+        {
+          "month": 9,
+          "sourceText": "在子",
+          "kind": "resident",
+          "palace": "子"
+        },
+        {
+          "month": 10,
+          "sourceText": "在亥",
+          "kind": "resident",
+          "palace": "亥"
+        },
+        {
+          "month": 11,
+          "sourceText": "在戌",
+          "kind": "resident",
+          "palace": "戌"
+        },
+        {
+          "month": 12,
+          "sourceText": "在酉",
+          "kind": "resident",
+          "palace": "酉"
+        }
+      ]
+    },
+    {
+      "lunarDay": 11,
+      "cells": [
+        {
+          "month": 1,
+          "sourceText": "巳時過未",
+          "kind": "transition",
+          "transitionHourBranch": "巳",
+          "destinationPalace": "未"
+        },
+        {
+          "month": 2,
+          "sourceText": "巳時過午",
+          "kind": "transition",
+          "transitionHourBranch": "巳",
+          "destinationPalace": "午"
+        },
+        {
+          "month": 3,
+          "sourceText": "巳時過巳",
+          "kind": "transition",
+          "transitionHourBranch": "巳",
+          "destinationPalace": "巳"
+        },
+        {
+          "month": 4,
+          "sourceText": "未時過辰",
+          "kind": "transition",
+          "transitionHourBranch": "未",
+          "destinationPalace": "辰"
+        },
+        {
+          "month": 5,
+          "sourceText": "未時過卯",
+          "kind": "transition",
+          "transitionHourBranch": "未",
+          "destinationPalace": "卯"
+        },
+        {
+          "month": 6,
+          "sourceText": "未時過寅",
+          "kind": "transition",
+          "transitionHourBranch": "未",
+          "destinationPalace": "寅"
+        },
+        {
+          "month": 7,
+          "sourceText": "未時過丑",
+          "kind": "transition",
+          "transitionHourBranch": "未",
+          "destinationPalace": "丑"
+        },
+        {
+          "month": 8,
+          "sourceText": "未時過子",
+          "kind": "transition",
+          "transitionHourBranch": "未",
+          "destinationPalace": "子"
+        },
+        {
+          "month": 9,
+          "sourceText": "申時過亥",
+          "kind": "transition",
+          "transitionHourBranch": "申",
+          "destinationPalace": "亥"
+        },
+        {
+          "month": 10,
+          "sourceText": "酉時過戌",
+          "kind": "transition",
+          "transitionHourBranch": "酉",
+          "destinationPalace": "戌"
+        },
+        {
+          "month": 11,
+          "sourceText": "酉時過酉",
+          "kind": "transition",
+          "transitionHourBranch": "酉",
+          "destinationPalace": "酉"
+        },
+        {
+          "month": 12,
+          "sourceText": "酉時過申",
+          "kind": "transition",
+          "transitionHourBranch": "酉",
+          "destinationPalace": "申"
+        }
+      ]
+    },
+    {
+      "lunarDay": 12,
+      "cells": [
+        {
+          "month": 1,
+          "sourceText": "在未",
+          "kind": "resident",
+          "palace": "未"
+        },
+        {
+          "month": 2,
+          "sourceText": "在午",
+          "kind": "resident",
+          "palace": "午"
+        },
+        {
+          "month": 3,
+          "sourceText": "在巳",
+          "kind": "resident",
+          "palace": "巳"
+        },
+        {
+          "month": 4,
+          "sourceText": "在辰",
+          "kind": "resident",
+          "palace": "辰"
+        },
+        {
+          "month": 5,
+          "sourceText": "在卯",
+          "kind": "resident",
+          "palace": "卯"
+        },
+        {
+          "month": 6,
+          "sourceText": "在寅",
+          "kind": "resident",
+          "palace": "寅"
+        },
+        {
+          "month": 7,
+          "sourceText": "在丑",
+          "kind": "resident",
+          "palace": "丑"
+        },
+        {
+          "month": 8,
+          "sourceText": "在子",
+          "kind": "resident",
+          "palace": "子"
+        },
+        {
+          "month": 9,
+          "sourceText": "在亥",
+          "kind": "resident",
+          "palace": "亥"
+        },
+        {
+          "month": 10,
+          "sourceText": "在戌",
+          "kind": "resident",
+          "palace": "戌"
+        },
+        {
+          "month": 11,
+          "sourceText": "在酉",
+          "kind": "resident",
+          "palace": "酉"
+        },
+        {
+          "month": 12,
+          "sourceText": "在申",
+          "kind": "resident",
+          "palace": "申"
+        }
+      ]
+    },
+    {
+      "lunarDay": 13,
+      "cells": [
+        {
+          "month": 1,
+          "sourceText": "亥時過午",
+          "kind": "transition",
+          "transitionHourBranch": "亥",
+          "destinationPalace": "午"
+        },
+        {
+          "month": 2,
+          "sourceText": "亥時過巳",
+          "kind": "transition",
+          "transitionHourBranch": "亥",
+          "destinationPalace": "巳"
+        },
+        {
+          "month": 3,
+          "sourceText": "在巳",
+          "kind": "resident",
+          "palace": "巳"
+        },
+        {
+          "month": 4,
+          "sourceText": "在辰",
+          "kind": "resident",
+          "palace": "辰"
+        },
+        {
+          "month": 5,
+          "sourceText": "在卯",
+          "kind": "resident",
+          "palace": "卯"
+        },
+        {
+          "month": 6,
+          "sourceText": "丑時過丑",
+          "kind": "transition",
+          "transitionHourBranch": "丑",
+          "destinationPalace": "丑"
+        },
+        {
+          "month": 7,
+          "sourceText": "在丑",
+          "kind": "resident",
+          "palace": "丑"
+        },
+        {
+          "month": 8,
+          "sourceText": "在子",
+          "kind": "resident",
+          "palace": "子"
+        },
+        {
+          "month": 9,
+          "sourceText": "在亥",
+          "kind": "resident",
+          "palace": "亥"
+        },
+        {
+          "month": 10,
+          "sourceText": "在戌",
+          "kind": "resident",
+          "palace": "戌"
+        },
+        {
+          "month": 11,
+          "sourceText": "在酉",
+          "kind": "resident",
+          "palace": "酉"
+        },
+        {
+          "month": 12,
+          "sourceText": "在申",
+          "kind": "resident",
+          "palace": "申"
+        }
+      ]
+    },
+    {
+      "lunarDay": 14,
+      "cells": [
+        {
+          "month": 1,
+          "sourceText": "在午",
+          "kind": "resident",
+          "palace": "午"
+        },
+        {
+          "month": 2,
+          "sourceText": "在巳",
+          "kind": "resident",
+          "palace": "巳"
+        },
+        {
+          "month": 3,
+          "sourceText": "丑時過辰",
+          "kind": "transition",
+          "transitionHourBranch": "丑",
+          "destinationPalace": "辰"
+        },
+        {
+          "month": 4,
+          "sourceText": "丑時過卯",
+          "kind": "transition",
+          "transitionHourBranch": "丑",
+          "destinationPalace": "卯"
+        },
+        {
+          "month": 5,
+          "sourceText": "丑時過寅",
+          "kind": "transition",
+          "transitionHourBranch": "丑",
+          "destinationPalace": "寅"
+        },
+        {
+          "month": 6,
+          "sourceText": "在丑",
+          "kind": "resident",
+          "palace": "丑"
+        },
+        {
+          "month": 7,
+          "sourceText": "丑時過子",
+          "kind": "transition",
+          "transitionHourBranch": "丑",
+          "destinationPalace": "子"
+        },
+        {
+          "month": 8,
+          "sourceText": "卯時過亥",
+          "kind": "transition",
+          "transitionHourBranch": "卯",
+          "destinationPalace": "亥"
+        },
+        {
+          "month": 9,
+          "sourceText": "卯時過戌",
+          "kind": "transition",
+          "transitionHourBranch": "卯",
+          "destinationPalace": "戌"
+        },
+        {
+          "month": 10,
+          "sourceText": "卯時過酉",
+          "kind": "transition",
+          "transitionHourBranch": "卯",
+          "destinationPalace": "酉"
+        },
+        {
+          "month": 11,
+          "sourceText": "卯時過申",
+          "kind": "transition",
+          "transitionHourBranch": "卯",
+          "destinationPalace": "申"
+        },
+        {
+          "month": 12,
+          "sourceText": "辰時過未",
+          "kind": "transition",
+          "transitionHourBranch": "辰",
+          "destinationPalace": "未"
+        }
+      ]
+    },
+    {
+      "lunarDay": 15,
+      "cells": [
+        {
+          "month": 1,
+          "sourceText": "在午",
+          "kind": "resident",
+          "palace": "午"
+        },
+        {
+          "month": 2,
+          "sourceText": "在巳",
+          "kind": "resident",
+          "palace": "巳"
+        },
+        {
+          "month": 3,
+          "sourceText": "在辰",
+          "kind": "resident",
+          "palace": "辰"
+        },
+        {
+          "month": 4,
+          "sourceText": "在卯",
+          "kind": "resident",
+          "palace": "卯"
+        },
+        {
+          "month": 5,
+          "sourceText": "在寅",
+          "kind": "resident",
+          "palace": "寅"
+        },
+        {
+          "month": 6,
+          "sourceText": "在丑",
+          "kind": "resident",
+          "palace": "丑"
+        },
+        {
+          "month": 7,
+          "sourceText": "在子",
+          "kind": "resident",
+          "palace": "子"
+        },
+        {
+          "month": 8,
+          "sourceText": "在亥",
+          "kind": "resident",
+          "palace": "亥"
+        },
+        {
+          "month": 9,
+          "sourceText": "在戌",
+          "kind": "resident",
+          "palace": "戌"
+        },
+        {
+          "month": 10,
+          "sourceText": "在酉",
+          "kind": "resident",
+          "palace": "酉"
+        },
+        {
+          "month": 11,
+          "sourceText": "在申",
+          "kind": "resident",
+          "palace": "申"
+        },
+        {
+          "month": 12,
+          "sourceText": "在未",
+          "kind": "resident",
+          "palace": "未"
+        }
+      ]
+    },
+    {
+      "lunarDay": 16,
+      "cells": [
+        {
+          "month": 1,
+          "sourceText": "巳時過巳",
+          "kind": "transition",
+          "transitionHourBranch": "巳",
+          "destinationPalace": "巳"
+        },
+        {
+          "month": 2,
+          "sourceText": "未時過辰",
+          "kind": "transition",
+          "transitionHourBranch": "未",
+          "destinationPalace": "辰"
+        },
+        {
+          "month": 3,
+          "sourceText": "未時過卯",
+          "kind": "transition",
+          "transitionHourBranch": "未",
+          "destinationPalace": "卯"
+        },
+        {
+          "month": 4,
+          "sourceText": "未時過寅",
+          "kind": "transition",
+          "transitionHourBranch": "未",
+          "destinationPalace": "寅"
+        },
+        {
+          "month": 5,
+          "sourceText": "未時過丑",
+          "kind": "transition",
+          "transitionHourBranch": "未",
+          "destinationPalace": "丑"
+        },
+        {
+          "month": 6,
+          "sourceText": "未時過子",
+          "kind": "transition",
+          "transitionHourBranch": "未",
+          "destinationPalace": "子"
+        },
+        {
+          "month": 7,
+          "sourceText": "申時過亥",
+          "kind": "transition",
+          "transitionHourBranch": "申",
+          "destinationPalace": "亥"
+        },
+        {
+          "month": 8,
+          "sourceText": "酉時過戌",
+          "kind": "transition",
+          "transitionHourBranch": "酉",
+          "destinationPalace": "戌"
+        },
+        {
+          "month": 9,
+          "sourceText": "酉時過酉",
+          "kind": "transition",
+          "transitionHourBranch": "酉",
+          "destinationPalace": "酉"
+        },
+        {
+          "month": 10,
+          "sourceText": "酉時過申",
+          "kind": "transition",
+          "transitionHourBranch": "酉",
+          "destinationPalace": "申"
+        },
+        {
+          "month": 11,
+          "sourceText": "戌時過未",
+          "kind": "transition",
+          "transitionHourBranch": "戌",
+          "destinationPalace": "未"
+        },
+        {
+          "month": 12,
+          "sourceText": "戌時過午",
+          "kind": "transition",
+          "transitionHourBranch": "戌",
+          "destinationPalace": "午"
+        }
+      ]
+    },
+    {
+      "lunarDay": 17,
+      "cells": [
+        {
+          "month": 1,
+          "sourceText": "在巳",
+          "kind": "resident",
+          "palace": "巳"
+        },
+        {
+          "month": 2,
+          "sourceText": "在辰",
+          "kind": "resident",
+          "palace": "辰"
+        },
+        {
+          "month": 3,
+          "sourceText": "在卯",
+          "kind": "resident",
+          "palace": "卯"
+        },
+        {
+          "month": 4,
+          "sourceText": "在寅",
+          "kind": "resident",
+          "palace": "寅"
+        },
+        {
+          "month": 5,
+          "sourceText": "在丑",
+          "kind": "resident",
+          "palace": "丑"
+        },
+        {
+          "month": 6,
+          "sourceText": "在子",
+          "kind": "resident",
+          "palace": "子"
+        },
+        {
+          "month": 7,
+          "sourceText": "在亥",
+          "kind": "resident",
+          "palace": "亥"
+        },
+        {
+          "month": 8,
+          "sourceText": "在戌",
+          "kind": "resident",
+          "palace": "戌"
+        },
+        {
+          "month": 9,
+          "sourceText": "在酉",
+          "kind": "resident",
+          "palace": "酉"
+        },
+        {
+          "month": 10,
+          "sourceText": "在申",
+          "kind": "resident",
+          "palace": "申"
+        },
+        {
+          "month": 11,
+          "sourceText": "在未",
+          "kind": "resident",
+          "palace": "未"
+        },
+        {
+          "month": 12,
+          "sourceText": "在午",
+          "kind": "resident",
+          "palace": "午"
+        }
+      ]
+    },
+    {
+      "lunarDay": 18,
+      "cells": [
+        {
+          "month": 1,
+          "sourceText": "戌時過辰",
+          "kind": "transition",
+          "transitionHourBranch": "戌",
+          "destinationPalace": "辰"
+        },
+        {
+          "month": 2,
+          "sourceText": "在辰",
+          "kind": "resident",
+          "palace": "辰"
+        },
+        {
+          "month": 3,
+          "sourceText": "在卯",
+          "kind": "resident",
+          "palace": "卯"
+        },
+        {
+          "month": 4,
+          "sourceText": "在寅",
+          "kind": "resident",
+          "palace": "寅"
+        },
+        {
+          "month": 5,
+          "sourceText": "在丑",
+          "kind": "resident",
+          "palace": "丑"
+        },
+        {
+          "month": 6,
+          "sourceText": "在子",
+          "kind": "resident",
+          "palace": "子"
+        },
+        {
+          "month": 7,
+          "sourceText": "在亥",
+          "kind": "resident",
+          "palace": "亥"
+        },
+        {
+          "month": 8,
+          "sourceText": "在戌",
+          "kind": "resident",
+          "palace": "戌"
+        },
+        {
+          "month": 9,
+          "sourceText": "在酉",
+          "kind": "resident",
+          "palace": "酉"
+        },
+        {
+          "month": 10,
+          "sourceText": "在申",
+          "kind": "resident",
+          "palace": "申"
+        },
+        {
+          "month": 11,
+          "sourceText": "在未",
+          "kind": "resident",
+          "palace": "未"
+        },
+        {
+          "month": 12,
+          "sourceText": "在午",
+          "kind": "resident",
+          "palace": "午"
+        }
+      ]
+    },
+    {
+      "lunarDay": 19,
+      "cells": [
+        {
+          "month": 1,
+          "sourceText": "在辰",
+          "kind": "resident",
+          "palace": "辰"
+        },
+        {
+          "month": 2,
+          "sourceText": "丑時過卯",
+          "kind": "transition",
+          "transitionHourBranch": "丑",
+          "destinationPalace": "卯"
+        },
+        {
+          "month": 3,
+          "sourceText": "丑時過寅",
+          "kind": "transition",
+          "transitionHourBranch": "丑",
+          "destinationPalace": "寅"
+        },
+        {
+          "month": 4,
+          "sourceText": "丑時過丑",
+          "kind": "transition",
+          "transitionHourBranch": "丑",
+          "destinationPalace": "丑"
+        },
+        {
+          "month": 5,
+          "sourceText": "丑時過子",
+          "kind": "transition",
+          "transitionHourBranch": "丑",
+          "destinationPalace": "子"
+        },
+        {
+          "month": 6,
+          "sourceText": "寅時過亥",
+          "kind": "transition",
+          "transitionHourBranch": "寅",
+          "destinationPalace": "亥"
+        },
+        {
+          "month": 7,
+          "sourceText": "丑時過戌",
+          "kind": "transition",
+          "transitionHourBranch": "丑",
+          "destinationPalace": "戌"
+        },
+        {
+          "month": 8,
+          "sourceText": "丑時過酉",
+          "kind": "transition",
+          "transitionHourBranch": "丑",
+          "destinationPalace": "酉"
+        },
+        {
+          "month": 9,
+          "sourceText": "卯時過申",
+          "kind": "transition",
+          "transitionHourBranch": "卯",
+          "destinationPalace": "申"
+        },
+        {
+          "month": 10,
+          "sourceText": "辰時過未",
+          "kind": "transition",
+          "transitionHourBranch": "辰",
+          "destinationPalace": "未"
+        },
+        {
+          "month": 11,
+          "sourceText": "辰時過午",
+          "kind": "transition",
+          "transitionHourBranch": "辰",
+          "destinationPalace": "午"
+        },
+        {
+          "month": 12,
+          "sourceText": "戌時過巳",
+          "kind": "transition",
+          "transitionHourBranch": "戌",
+          "destinationPalace": "巳"
+        }
+      ]
+    },
+    {
+      "lunarDay": 20,
+      "cells": [
+        {
+          "month": 1,
+          "sourceText": "在辰",
+          "kind": "resident",
+          "palace": "辰"
+        },
+        {
+          "month": 2,
+          "sourceText": "在卯",
+          "kind": "resident",
+          "palace": "卯"
+        },
+        {
+          "month": 3,
+          "sourceText": "在寅",
+          "kind": "resident",
+          "palace": "寅"
+        },
+        {
+          "month": 4,
+          "sourceText": "在丑",
+          "kind": "resident",
+          "palace": "丑"
+        },
+        {
+          "month": 5,
+          "sourceText": "在子",
+          "kind": "resident",
+          "palace": "子"
+        },
+        {
+          "month": 6,
+          "sourceText": "在亥",
+          "kind": "resident",
+          "palace": "亥"
+        },
+        {
+          "month": 7,
+          "sourceText": "在戌",
+          "kind": "resident",
+          "palace": "戌"
+        },
+        {
+          "month": 8,
+          "sourceText": "在酉",
+          "kind": "resident",
+          "palace": "酉"
+        },
+        {
+          "month": 9,
+          "sourceText": "在申",
+          "kind": "resident",
+          "palace": "申"
+        },
+        {
+          "month": 10,
+          "sourceText": "在未",
+          "kind": "resident",
+          "palace": "未"
+        },
+        {
+          "month": 11,
+          "sourceText": "在午",
+          "kind": "resident",
+          "palace": "午"
+        },
+        {
+          "month": 12,
+          "sourceText": "在巳",
+          "kind": "resident",
+          "palace": "巳"
+        }
+      ]
+    },
+    {
+      "lunarDay": 21,
+      "cells": [
+        {
+          "month": 1,
+          "sourceText": "未時過卯",
+          "kind": "transition",
+          "transitionHourBranch": "未",
+          "destinationPalace": "卯"
+        },
+        {
+          "month": 2,
+          "sourceText": "未時過寅",
+          "kind": "transition",
+          "transitionHourBranch": "未",
+          "destinationPalace": "寅"
+        },
+        {
+          "month": 3,
+          "sourceText": "未時過丑",
+          "kind": "transition",
+          "transitionHourBranch": "未",
+          "destinationPalace": "丑"
+        },
+        {
+          "month": 4,
+          "sourceText": "未時過丑",
+          "kind": "transition",
+          "transitionHourBranch": "未",
+          "destinationPalace": "丑"
+        },
+        {
+          "month": 5,
+          "sourceText": "申時過亥",
+          "kind": "transition",
+          "transitionHourBranch": "申",
+          "destinationPalace": "亥"
+        },
+        {
+          "month": 6,
+          "sourceText": "酉時過戌",
+          "kind": "transition",
+          "transitionHourBranch": "酉",
+          "destinationPalace": "戌"
+        },
+        {
+          "month": 7,
+          "sourceText": "酉時過酉",
+          "kind": "transition",
+          "transitionHourBranch": "酉",
+          "destinationPalace": "酉"
+        },
+        {
+          "month": 8,
+          "sourceText": "酉時過申",
+          "kind": "transition",
+          "transitionHourBranch": "酉",
+          "destinationPalace": "申"
+        },
+        {
+          "month": 9,
+          "sourceText": "戌時過未",
+          "kind": "transition",
+          "transitionHourBranch": "戌",
+          "destinationPalace": "未"
+        },
+        {
+          "month": 10,
+          "sourceText": "在未",
+          "kind": "resident",
+          "palace": "未"
+        },
+        {
+          "month": 11,
+          "sourceText": "戌時過巳",
+          "kind": "transition",
+          "transitionHourBranch": "戌",
+          "destinationPalace": "巳"
+        },
+        {
+          "month": 12,
+          "sourceText": "在巳",
+          "kind": "resident",
+          "palace": "巳"
+        }
+      ]
+    },
+    {
+      "lunarDay": 22,
+      "cells": [
+        {
+          "month": 1,
+          "sourceText": "在卯",
+          "kind": "resident",
+          "palace": "卯"
+        },
+        {
+          "month": 2,
+          "sourceText": "在寅",
+          "kind": "resident",
+          "palace": "寅"
+        },
+        {
+          "month": 3,
+          "sourceText": "在丑",
+          "kind": "resident",
+          "palace": "丑"
+        },
+        {
+          "month": 4,
+          "sourceText": "在丑",
+          "kind": "resident",
+          "palace": "丑"
+        },
+        {
+          "month": 5,
+          "sourceText": "在亥",
+          "kind": "resident",
+          "palace": "亥"
+        },
+        {
+          "month": 6,
+          "sourceText": "在戌",
+          "kind": "resident",
+          "palace": "戌"
+        },
+        {
+          "month": 7,
+          "sourceText": "在酉",
+          "kind": "resident",
+          "palace": "酉"
+        },
+        {
+          "month": 8,
+          "sourceText": "在申",
+          "kind": "resident",
+          "palace": "申"
+        },
+        {
+          "month": 9,
+          "sourceText": "在未",
+          "kind": "resident",
+          "palace": "未"
+        },
+        {
+          "month": 10,
+          "sourceText": "戌時過午",
+          "kind": "transition",
+          "transitionHourBranch": "戌",
+          "destinationPalace": "午"
+        },
+        {
+          "month": 11,
+          "sourceText": "在巳",
+          "kind": "resident",
+          "palace": "巳"
+        },
+        {
+          "month": 12,
+          "sourceText": "子時過辰",
+          "kind": "transition",
+          "transitionHourBranch": "子",
+          "destinationPalace": "辰"
+        }
+      ]
+    },
+    {
+      "lunarDay": 23,
+      "cells": [
+        {
+          "month": 1,
+          "sourceText": "丑時過寅",
+          "kind": "transition",
+          "transitionHourBranch": "丑",
+          "destinationPalace": "寅"
+        },
+        {
+          "month": 2,
+          "sourceText": "在寅",
+          "kind": "resident",
+          "palace": "寅"
+        },
+        {
+          "month": 3,
+          "sourceText": "在丑",
+          "kind": "resident",
+          "palace": "丑"
+        },
+        {
+          "month": 4,
+          "sourceText": "在丑",
+          "kind": "resident",
+          "palace": "丑"
+        },
+        {
+          "month": 5,
+          "sourceText": "在亥",
+          "kind": "resident",
+          "palace": "亥"
+        },
+        {
+          "month": 6,
+          "sourceText": "在戌",
+          "kind": "resident",
+          "palace": "戌"
+        },
+        {
+          "month": 7,
+          "sourceText": "在酉",
+          "kind": "resident",
+          "palace": "酉"
+        },
+        {
+          "month": 8,
+          "sourceText": "在申",
+          "kind": "resident",
+          "palace": "申"
+        },
+        {
+          "month": 9,
+          "sourceText": "在未",
+          "kind": "resident",
+          "palace": "未"
+        },
+        {
+          "month": 10,
+          "sourceText": "在午",
+          "kind": "resident",
+          "palace": "午"
+        },
+        {
+          "month": 11,
+          "sourceText": "在巳",
+          "kind": "resident",
+          "palace": "巳"
+        },
+        {
+          "month": 12,
+          "sourceText": "在辰",
+          "kind": "resident",
+          "palace": "辰"
+        }
+      ]
+    },
+    {
+      "lunarDay": 24,
+      "cells": [
+        {
+          "month": 1,
+          "sourceText": "在寅",
+          "kind": "resident",
+          "palace": "寅"
+        },
+        {
+          "month": 2,
+          "sourceText": "子時過丑",
+          "kind": "transition",
+          "transitionHourBranch": "子",
+          "destinationPalace": "丑"
+        },
+        {
+          "month": 3,
+          "sourceText": "丑時過子",
+          "kind": "transition",
+          "transitionHourBranch": "丑",
+          "destinationPalace": "子"
+        },
+        {
+          "month": 4,
+          "sourceText": "寅時過亥",
+          "kind": "transition",
+          "transitionHourBranch": "寅",
+          "destinationPalace": "亥"
+        },
+        {
+          "month": 5,
+          "sourceText": "卯時過戌",
+          "kind": "transition",
+          "transitionHourBranch": "卯",
+          "destinationPalace": "戌"
+        },
+        {
+          "month": 6,
+          "sourceText": "卯時過酉",
+          "kind": "transition",
+          "transitionHourBranch": "卯",
+          "destinationPalace": "酉"
+        },
+        {
+          "month": 7,
+          "sourceText": "卯時過申",
+          "kind": "transition",
+          "transitionHourBranch": "卯",
+          "destinationPalace": "申"
+        },
+        {
+          "month": 8,
+          "sourceText": "未時過辰",
+          "kind": "transition",
+          "transitionHourBranch": "未",
+          "destinationPalace": "辰"
+        },
+        {
+          "month": 9,
+          "sourceText": "辰時過午",
+          "kind": "transition",
+          "transitionHourBranch": "辰",
+          "destinationPalace": "午"
+        },
+        {
+          "month": 10,
+          "sourceText": "辰時過巳",
+          "kind": "transition",
+          "transitionHourBranch": "辰",
+          "destinationPalace": "巳"
+        },
+        {
+          "month": 11,
+          "sourceText": "午時過辰",
+          "kind": "transition",
+          "transitionHourBranch": "午",
+          "destinationPalace": "辰"
+        },
+        {
+          "month": 12,
+          "sourceText": "午時過卯",
+          "kind": "transition",
+          "transitionHourBranch": "午",
+          "destinationPalace": "卯"
+        }
+      ]
+    },
+    {
+      "lunarDay": 25,
+      "cells": [
+        {
+          "month": 1,
+          "sourceText": "在寅",
+          "kind": "resident",
+          "palace": "寅"
+        },
+        {
+          "month": 2,
+          "sourceText": "在丑",
+          "kind": "resident",
+          "palace": "丑"
+        },
+        {
+          "month": 3,
+          "sourceText": "在子",
+          "kind": "resident",
+          "palace": "子"
+        },
+        {
+          "month": 4,
+          "sourceText": "在亥",
+          "kind": "resident",
+          "palace": "亥"
+        },
+        {
+          "month": 5,
+          "sourceText": "在戌",
+          "kind": "resident",
+          "palace": "戌"
+        },
+        {
+          "month": 6,
+          "sourceText": "在酉",
+          "kind": "resident",
+          "palace": "酉"
+        },
+        {
+          "month": 7,
+          "sourceText": "在申",
+          "kind": "resident",
+          "palace": "申"
+        },
+        {
+          "month": 8,
+          "sourceText": "在辰",
+          "kind": "resident",
+          "palace": "辰"
+        },
+        {
+          "month": 9,
+          "sourceText": "在午",
+          "kind": "resident",
+          "palace": "午"
+        },
+        {
+          "month": 10,
+          "sourceText": "在巳",
+          "kind": "resident",
+          "palace": "巳"
+        },
+        {
+          "month": 11,
+          "sourceText": "在辰",
+          "kind": "resident",
+          "palace": "辰"
+        },
+        {
+          "month": 12,
+          "sourceText": "在卯",
+          "kind": "resident",
+          "palace": "卯"
+        }
+      ]
+    },
+    {
+      "lunarDay": 26,
+      "cells": [
+        {
+          "month": 1,
+          "sourceText": "未時過丑",
+          "kind": "transition",
+          "transitionHourBranch": "未",
+          "destinationPalace": "丑"
+        },
+        {
+          "month": 2,
+          "sourceText": "未時過子",
+          "kind": "transition",
+          "transitionHourBranch": "未",
+          "destinationPalace": "子"
+        },
+        {
+          "month": 3,
+          "sourceText": "申時過亥",
+          "kind": "transition",
+          "transitionHourBranch": "申",
+          "destinationPalace": "亥"
+        },
+        {
+          "month": 4,
+          "sourceText": "酉時過戌",
+          "kind": "transition",
+          "transitionHourBranch": "酉",
+          "destinationPalace": "戌"
+        },
+        {
+          "month": 5,
+          "sourceText": "酉時過酉",
+          "kind": "transition",
+          "transitionHourBranch": "酉",
+          "destinationPalace": "酉"
+        },
+        {
+          "month": 6,
+          "sourceText": "酉時過申",
+          "kind": "transition",
+          "transitionHourBranch": "酉",
+          "destinationPalace": "申"
+        },
+        {
+          "month": 7,
+          "sourceText": "戌時過未",
+          "kind": "transition",
+          "transitionHourBranch": "戌",
+          "destinationPalace": "未"
+        },
+        {
+          "month": 8,
+          "sourceText": "戌時過午",
+          "kind": "transition",
+          "transitionHourBranch": "戌",
+          "destinationPalace": "午"
+        },
+        {
+          "month": 9,
+          "sourceText": "寅時過巳",
+          "kind": "transition",
+          "transitionHourBranch": "寅",
+          "destinationPalace": "巳"
+        },
+        {
+          "month": 10,
+          "sourceText": "在巳",
+          "kind": "resident",
+          "palace": "巳"
+        },
+        {
+          "month": 11,
+          "sourceText": "在辰",
+          "kind": "resident",
+          "palace": "辰"
+        },
+        {
+          "month": 12,
+          "sourceText": "在卯",
+          "kind": "resident",
+          "palace": "卯"
+        }
+      ]
+    },
+    {
+      "lunarDay": 27,
+      "cells": [
+        {
+          "month": 1,
+          "sourceText": "在丑",
+          "kind": "resident",
+          "palace": "丑"
+        },
+        {
+          "month": 2,
+          "sourceText": "在子",
+          "kind": "resident",
+          "palace": "子"
+        },
+        {
+          "month": 3,
+          "sourceText": "在亥",
+          "kind": "resident",
+          "palace": "亥"
+        },
+        {
+          "month": 4,
+          "sourceText": "在戌",
+          "kind": "resident",
+          "palace": "戌"
+        },
+        {
+          "month": 5,
+          "sourceText": "在酉",
+          "kind": "resident",
+          "palace": "酉"
+        },
+        {
+          "month": 6,
+          "sourceText": "在申",
+          "kind": "resident",
+          "palace": "申"
+        },
+        {
+          "month": 7,
+          "sourceText": "在未",
+          "kind": "resident",
+          "palace": "未"
+        },
+        {
+          "month": 8,
+          "sourceText": "在午",
+          "kind": "resident",
+          "palace": "午"
+        },
+        {
+          "month": 9,
+          "sourceText": "在巳",
+          "kind": "resident",
+          "palace": "巳"
+        },
+        {
+          "month": 10,
+          "sourceText": "子時過辰",
+          "kind": "transition",
+          "transitionHourBranch": "子",
+          "destinationPalace": "辰"
+        },
+        {
+          "month": 11,
+          "sourceText": "子時過卯",
+          "kind": "transition",
+          "transitionHourBranch": "子",
+          "destinationPalace": "卯"
+        },
+        {
+          "month": 12,
+          "sourceText": "子時過寅",
+          "kind": "transition",
+          "transitionHourBranch": "子",
+          "destinationPalace": "寅"
+        }
+      ]
+    },
+    {
+      "lunarDay": 28,
+      "cells": [
+        {
+          "month": 1,
+          "sourceText": "在丑",
+          "kind": "resident",
+          "palace": "丑"
+        },
+        {
+          "month": 2,
+          "sourceText": "在子",
+          "kind": "resident",
+          "palace": "子"
+        },
+        {
+          "month": 3,
+          "sourceText": "在亥",
+          "kind": "resident",
+          "palace": "亥"
+        },
+        {
+          "month": 4,
+          "sourceText": "在戌",
+          "kind": "resident",
+          "palace": "戌"
+        },
+        {
+          "month": 5,
+          "sourceText": "在酉",
+          "kind": "resident",
+          "palace": "酉"
+        },
+        {
+          "month": 6,
+          "sourceText": "在申",
+          "kind": "resident",
+          "palace": "申"
+        },
+        {
+          "month": 7,
+          "sourceText": "在未",
+          "kind": "resident",
+          "palace": "未"
+        },
+        {
+          "month": 8,
+          "sourceText": "在午",
+          "kind": "resident",
+          "palace": "午"
+        },
+        {
+          "month": 9,
+          "sourceText": "在巳",
+          "kind": "resident",
+          "palace": "巳"
+        },
+        {
+          "month": 10,
+          "sourceText": "在辰",
+          "kind": "resident",
+          "palace": "辰"
+        },
+        {
+          "month": 11,
+          "sourceText": "在卯",
+          "kind": "resident",
+          "palace": "卯"
+        },
+        {
+          "month": 12,
+          "sourceText": "在寅",
+          "kind": "resident",
+          "palace": "寅"
+        }
+      ]
+    },
+    {
+      "lunarDay": 29,
+      "cells": [
+        {
+          "month": 1,
+          "sourceText": "丑時過子",
+          "kind": "transition",
+          "transitionHourBranch": "丑",
+          "destinationPalace": "子"
+        },
+        {
+          "month": 2,
+          "sourceText": "寅時過亥",
+          "kind": "transition",
+          "transitionHourBranch": "寅",
+          "destinationPalace": "亥"
+        },
+        {
+          "month": 3,
+          "sourceText": "寅時過戌",
+          "kind": "transition",
+          "transitionHourBranch": "寅",
+          "destinationPalace": "戌"
+        },
+        {
+          "month": 4,
+          "sourceText": "卯時過酉",
+          "kind": "transition",
+          "transitionHourBranch": "卯",
+          "destinationPalace": "酉"
+        },
+        {
+          "month": 5,
+          "sourceText": "卯時過申",
+          "kind": "transition",
+          "transitionHourBranch": "卯",
+          "destinationPalace": "申"
+        },
+        {
+          "month": 6,
+          "sourceText": "辰時過未",
+          "kind": "transition",
+          "transitionHourBranch": "辰",
+          "destinationPalace": "未"
+        },
+        {
+          "month": 7,
+          "sourceText": "辰時過午",
+          "kind": "transition",
+          "transitionHourBranch": "辰",
+          "destinationPalace": "午"
+        },
+        {
+          "month": 8,
+          "sourceText": "卯時過巳",
+          "kind": "transition",
+          "transitionHourBranch": "卯",
+          "destinationPalace": "巳"
+        },
+        {
+          "month": 9,
+          "sourceText": "午時過辰",
+          "kind": "transition",
+          "transitionHourBranch": "午",
+          "destinationPalace": "辰"
+        },
+        {
+          "month": 10,
+          "sourceText": "午時過卯",
+          "kind": "transition",
+          "transitionHourBranch": "午",
+          "destinationPalace": "卯"
+        },
+        {
+          "month": 11,
+          "sourceText": "午時過寅",
+          "kind": "transition",
+          "transitionHourBranch": "午",
+          "destinationPalace": "寅"
+        },
+        {
+          "month": 12,
+          "sourceText": "午時過丑",
+          "kind": "transition",
+          "transitionHourBranch": "午",
+          "destinationPalace": "丑"
+        }
+      ]
+    },
+    {
+      "lunarDay": 30,
+      "cells": [
+        {
+          "month": 1,
+          "sourceText": "在子",
+          "kind": "resident",
+          "palace": "子"
+        },
+        {
+          "month": 2,
+          "sourceText": "在亥",
+          "kind": "resident",
+          "palace": "亥"
+        },
+        {
+          "month": 3,
+          "sourceText": "在戌",
+          "kind": "resident",
+          "palace": "戌"
+        },
+        {
+          "month": 4,
+          "sourceText": "在酉",
+          "kind": "resident",
+          "palace": "酉"
+        },
+        {
+          "month": 5,
+          "sourceText": "在申",
+          "kind": "resident",
+          "palace": "申"
+        },
+        {
+          "month": 6,
+          "sourceText": "在未",
+          "kind": "resident",
+          "palace": "未"
+        },
+        {
+          "month": 7,
+          "sourceText": "在午",
+          "kind": "resident",
+          "palace": "午"
+        },
+        {
+          "month": 8,
+          "sourceText": "在巳",
+          "kind": "resident",
+          "palace": "巳"
+        },
+        {
+          "month": 9,
+          "sourceText": "在辰",
+          "kind": "resident",
+          "palace": "辰"
+        },
+        {
+          "month": 10,
+          "sourceText": "在卯",
+          "kind": "resident",
+          "palace": "卯"
+        },
+        {
+          "month": 11,
+          "sourceText": "在寅",
+          "kind": "resident",
+          "palace": "寅"
+        },
+        {
+          "month": 12,
+          "sourceText": "在丑",
+          "kind": "resident",
+          "palace": "丑"
+        }
+      ]
+    }
+  ],
+  "reviewNotes": [
+    {
+      "day": 8,
+      "months": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "note": "图面初读戌时、子时、子时、戌时。时支不按邻月规律修平，需二次核字。"
+    },
+    {
+      "day": 13,
+      "months": [
+        6,
+        7
+      ],
+      "note": "六月丑时过丑，七月在丑，重复保留；未按宫序改成子。"
+    },
+    {
+      "day": 14,
+      "months": [
+        6,
+        7
+      ],
+      "note": "六月在丑，七月丑时过子，居宫和换宫分格记录。"
+    },
+    {
+      "day": 4,
+      "months": [
+        8
+      ],
+      "note": "初读巳时过卯，不依邻格丑时自动修正。"
+    },
+    {
+      "day": 19,
+      "months": [
+        7,
+        8,
+        12
+      ],
+      "note": "初读丑时、丑时、戌时，时序跳跃保留待核。"
+    },
+    {
+      "day": 21,
+      "months": [
+        3,
+        4
+      ],
+      "note": "两格均初读未时过丑，未按序改第四月为子。"
+    },
+    {
+      "day": 22,
+      "months": [
+        3,
+        4
+      ],
+      "note": "两格均在丑，与二十三日同见重复，保留。"
+    },
+    {
+      "day": 23,
+      "months": [
+        3,
+        4
+      ],
+      "note": "两格均在丑，保留图面文字。"
+    },
+    {
+      "day": 24,
+      "months": [
+        8
+      ],
+      "note": "初读未时过辰，未按邻月或预期互换为辰时过未。"
+    },
+    {
+      "day": 25,
+      "months": [
+        8
+      ],
+      "note": "初读在辰，与月序不同，保留。"
+    },
+    {
+      "day": 26,
+      "months": [
+        9
+      ],
+      "note": "初读寅时过巳，待复核字形。"
+    },
+    {
+      "day": 29,
+      "months": [
+        8
+      ],
+      "note": "初读卯时过巳，未按邻月时辰自动递推。"
+    }
+  ],
+  "unassignedMarginalText": [
+    {
+      "sourceText": "卯時過亥",
+      "location": "初一栏标题下、正月在亥格上方",
+      "note": "关系未定，单列保留，不擅覆盖初一正月在亥格。"
+    }
+  ],
+  "counts": {
+    "days": 30,
+    "monthsPerDay": 12,
+    "cells": 360,
+    "residentCells": 218,
+    "transitionCells": 142,
+    "unassignedMarginalTexts": 1
+  }
+}

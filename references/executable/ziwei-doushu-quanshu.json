@@ -1,0 +1,516 @@
+{
+  "schema_version": "fateradar-executable-v2",
+  "book": {
+    "slug": "ziwei-doushu-quanshu",
+    "system": "ziwei",
+    "title": "紫微斗数全书",
+    "fulltext": "sources/fulltext/ziwei/ziwei-doushu-quanshu/fulltext.md"
+  },
+  "verified": false,
+  "note": "生年四化与来源结构定义分开。组合JSON不是命中结果；产品同次本命星对象执行后才返回满足/不满足/未知。结构名不承诺财富官位寿命。原文取表与现行iztro差异保留，verified保持false。",
+  "rules": [
+    {
+      "id": "ZWD-E-01",
+      "art": "ziwei",
+      "theme": "生年干四化落宫",
+      "school": "紫微斗数全书",
+      "paragraph_ids": [
+        "ziwei-doushu-quanshu:L1770-L1770",
+        "ziwei-doushu-quanshu:L1772-L1772",
+        "ziwei-doushu-quanshu:L1774-L1774",
+        "ziwei-doushu-quanshu:L1776-L1776"
+      ],
+      "sources": [
+        {
+          "paragraph_id": "ziwei-doushu-quanshu:L1770-L1770",
+          "start_line": 1770,
+          "end_line": 1770,
+          "quote": "甲廉破武陽為伴，乙機梁紫月交侵，丙同機昌廉貞位，丁月同機巨門尋，"
+        },
+        {
+          "paragraph_id": "ziwei-doushu-quanshu:L1772-L1772",
+          "start_line": 1772,
+          "end_line": 1772,
+          "quote": "戊貪月弼機為主，己武貪梁曲最平，庚日武陰同為首，辛巨陽曲昌至臨，"
+        },
+        {
+          "paragraph_id": "ziwei-doushu-quanshu:L1774-L1774",
+          "start_line": 1774,
+          "end_line": 1774,
+          "quote": "壬梁紫府武宿是，癸破巨陰貪狼停。"
+        },
+        {
+          "paragraph_id": "ziwei-doushu-quanshu:L1776-L1776",
+          "start_line": 1776,
+          "end_line": 1776,
+          "quote": "如甲生人廉貞化祿、破軍化權、武曲化科、太陽化忌是也，余仿此。"
+        }
+      ],
+      "quote": "甲廉破武陽為伴，乙機梁紫月交侵，丙同機昌廉貞位，丁月同機巨門尋，\n[…]\n戊貪月弼機為主，己武貪梁曲最平，庚日武陰同為首，辛巨陽曲昌至臨，\n[…]\n壬梁紫府武宿是，癸破巨陰貪狼停。\n[…]\n如甲生人廉貞化祿、破軍化權、武曲化科、太陽化忌是也，余仿此。",
+      "page": "ziwei",
+      "required_facts": [
+        "year.gan.doushu",
+        "palace.mutagen"
+      ],
+      "when": {
+        "exists": "year.gan.doushu"
+      },
+      "satisfy_when": "本命盘已按斗数年干列出化禄、化权、化科、化忌的星名与落宫",
+      "fail_when": "无独立的不满足分支：本条记录有效输入上的取法或来源，不把缺少输入当作反例",
+      "unknown_when": "无斗数年干，无法安四化；节气年干与斗数年干不同：只记录差异，不另断一层四化",
+      "rescue": "unimplemented",
+      "vernacular": "斗数年干{doushu_year_gan}，本盘{sihua_list}。{source_comparison}这是按所用年干表的落宫记录；化禄不是得财结论，化忌不是祸福结论。",
+      "implementation_assumption": "本命四化用现行 iztro 按斗数年干安星。甲乙丙丁戊己庚辛癸的四星与本电子底本一致；壬年原文“壬梁紫府武”取天府化科，现行表取左辅化科，正文必须逐干明确并列，不能声称全部同表，也不把天府另安入本盘。节气四柱另栏对照，不覆盖斗数安星。",
+      "verified": false
+    },
+    {
+      "id": "ZWD-E-02",
+      "art": "ziwei",
+      "theme": "辅弼夹帝",
+      "school": "紫微斗数全书·当前三卷电子本",
+      "paragraph_ids": [
+        "ziwei-doushu-quanshu:L0069-L0069",
+        "ziwei-doushu-quanshu:L1593-L1593"
+      ],
+      "sources": [
+        {
+          "paragraph_id": "ziwei-doushu-quanshu:L0069-L0069",
+          "start_line": 69,
+          "end_line": 69,
+          "quote": "輔弼夾帝為上品，桃花犯主為至淫。"
+        },
+        {
+          "paragraph_id": "ziwei-doushu-quanshu:L1593-L1593",
+          "start_line": 1593,
+          "end_line": 1593,
+          "quote": "輔弼拱主 紫微守命二星來拱是也，夾之亦然。"
+        }
+      ],
+      "quote": "輔弼夾帝為上品，桃花犯主為至淫。\n[…]\n輔弼拱主 紫微守命二星來拱是也，夾之亦然。",
+      "page": "ziwei",
+      "required_facts": [
+        "raw.palaces.name",
+        "raw.palaces.earthlyBranch",
+        "raw.palaces.majorStars",
+        "raw.palaces.minorStars",
+        "raw.palaces.isBodyPalace"
+      ],
+      "when": {
+        "scope": "natal-structure",
+        "definition": "辅弼夹帝"
+      },
+      "satisfy_when": "紫微所在宫两侧相邻地支分别为左辅和右弼，不限定紫微必须在命宫",
+      "fail_when": "两辅未分居紫微两侧；同宫或三合不代替邻宫",
+      "unknown_when": "本命紫微或辅弼位置未提供",
+      "rescue": "unimplemented",
+      "vernacular": "{locations}。本盘{status}这条来源定义的结构。{conditions}。{limitations}",
+      "implementation_assumption": "只核L69夹帝结构；L1593的拱主还有命宫/拱照支路，本条不并入。三方煞破与贵贱效力未由此结构决定。",
+      "verified": false
+    },
+    {
+      "id": "ZWD-E-03",
+      "art": "ziwei",
+      "theme": "日月夹财",
+      "school": "紫微斗数全书·当前三卷电子本",
+      "paragraph_ids": [
+        "ziwei-doushu-quanshu:L1572-L1572",
+        "ziwei-doushu-quanshu:L4822-L4822"
+      ],
+      "sources": [
+        {
+          "paragraph_id": "ziwei-doushu-quanshu:L1572-L1572",
+          "start_line": 1572,
+          "end_line": 1572,
+          "quote": "日月夾財 武守命日月來夾是也，財帛宮亦然。"
+        },
+        {
+          "paragraph_id": "ziwei-doushu-quanshu:L4822-L4822",
+          "start_line": 4822,
+          "end_line": 4822,
+          "quote": "日月夾財加吉曜不貴則富  如財帛宮在未天府星守，日在午月在申夾財是也，余仿此。"
+        }
+      ],
+      "quote": "日月夾財 武守命日月來夾是也，財帛宮亦然。\n[…]\n日月夾財加吉曜不貴則富  如財帛宮在未天府星守，日在午月在申夾財是也，余仿此。",
+      "page": "ziwei",
+      "required_facts": [
+        "raw.palaces.name",
+        "raw.palaces.earthlyBranch",
+        "raw.palaces.majorStars",
+        "raw.palaces.minorStars",
+        "raw.palaces.isBodyPalace"
+      ],
+      "when": {
+        "scope": "natal-structure",
+        "definition": "日月夹财"
+      },
+      "satisfy_when": "武曲守命或财帛且日月分居两邻；或天府守未财帛、太阳午太阴申来夹",
+      "fail_when": "中心不在该源限定宫，或日月同居一个邻宫、并未分夹两侧",
+      "unknown_when": "相关星宫未提供",
+      "rescue": "unimplemented",
+      "vernacular": "{locations}。本盘{status}这条来源定义的结构。{conditions}。{limitations}",
+      "implementation_assumption": "分别执行L1572武曲中心与L4822天府未财帛中心；状态只核结构，原句加吉/财官效力不算已全部核定。",
+      "verified": false
+    },
+    {
+      "id": "ZWD-E-04",
+      "art": "ziwei",
+      "theme": "君臣庆会",
+      "school": "紫微斗数全书·当前三卷电子本",
+      "paragraph_ids": [
+        "ziwei-doushu-quanshu:L1595-L1595",
+        "ziwei-doushu-quanshu:L4266-L4266"
+      ],
+      "sources": [
+        {
+          "paragraph_id": "ziwei-doushu-quanshu:L1595-L1595",
+          "start_line": 1595,
+          "end_line": 1595,
+          "quote": "君臣慶會 紫微左右同守命是也，更會相武陰妙上。"
+        },
+        {
+          "paragraph_id": "ziwei-doushu-quanshu:L4266-L4266",
+          "start_line": 4266,
+          "end_line": 4266,
+          "quote": "紫微輔弼同宮一呼百諾居上品  或作三方為次吉，在財帛宮則為財賦之官。"
+        }
+      ],
+      "quote": "君臣慶會 紫微左右同守命是也，更會相武陰妙上。\n[…]\n紫微輔弼同宮一呼百諾居上品  或作三方為次吉，在財帛宮則為財賦之官。",
+      "page": "ziwei",
+      "required_facts": [
+        "raw.palaces.name",
+        "raw.palaces.earthlyBranch",
+        "raw.palaces.majorStars",
+        "raw.palaces.minorStars",
+        "raw.palaces.isBodyPalace"
+      ],
+      "when": {
+        "scope": "natal-structure",
+        "definition": "君臣庆会"
+      },
+      "satisfy_when": "紫微、左辅、右弼同在本命命宫",
+      "fail_when": "三者不同时守命；辅弼三方或夹不代替同宫",
+      "unknown_when": "紫微辅弼或命宫未提供",
+      "rescue": "unimplemented",
+      "vernacular": "{locations}。本盘{status}这条来源定义的结构。{conditions}。{limitations}",
+      "implementation_assumption": "只核L1595基本同守结构；相武阴来会为原文增强条件，不冒充已据此获得官位。",
+      "verified": false
+    },
+    {
+      "id": "ZWD-E-05",
+      "art": "ziwei",
+      "theme": "日出扶桑",
+      "school": "紫微斗数全书·当前三卷电子本",
+      "paragraph_ids": [
+        "ziwei-doushu-quanshu:L1587-L1587"
+      ],
+      "sources": [
+        {
+          "paragraph_id": "ziwei-doushu-quanshu:L1587-L1587",
+          "start_line": 1587,
+          "end_line": 1587,
+          "quote": "日出扶桑 日在卯守命是也，守官祿宮亦然。"
+        }
+      ],
+      "quote": "日出扶桑 日在卯守命是也，守官祿宮亦然。",
+      "page": "ziwei",
+      "required_facts": [
+        "raw.palaces.name",
+        "raw.palaces.earthlyBranch",
+        "raw.palaces.majorStars",
+        "raw.palaces.minorStars",
+        "raw.palaces.isBodyPalace"
+      ],
+      "when": {
+        "scope": "natal-structure",
+        "definition": "日出扶桑"
+      },
+      "satisfy_when": "太阳在卯宫并守命宫或官禄宫",
+      "fail_when": "太阳不在卯，或太阳虽在卯却为其他宫名",
+      "unknown_when": "太阳或命宫宫名未提供",
+      "rescue": "unimplemented",
+      "vernacular": "{locations}。本盘{status}这条来源定义的结构。{conditions}。{limitations}",
+      "implementation_assumption": "地支和宫名同时核，原文两种主题宫分别记录，不把出生卯时当落卯。",
+      "verified": false
+    },
+    {
+      "id": "ZWD-E-06",
+      "art": "ziwei",
+      "theme": "月朗天门",
+      "school": "紫微斗数全书·当前三卷电子本",
+      "paragraph_ids": [
+        "ziwei-doushu-quanshu:L1589-L1589",
+        "ziwei-doushu-quanshu:L4400-L4400"
+      ],
+      "sources": [
+        {
+          "paragraph_id": "ziwei-doushu-quanshu:L1589-L1589",
+          "start_line": 1589,
+          "end_line": 1589,
+          "quote": "月落亥宮 月在亥守命是也，又名月朗天門。"
+        },
+        {
+          "paragraph_id": "ziwei-doushu-quanshu:L4400-L4400",
+          "start_line": 4400,
+          "end_line": 4400,
+          "quote": "月朗天門於亥地登雲職掌大權  子生人夜時生合局。不貴則大富。"
+        }
+      ],
+      "quote": "月落亥宮 月在亥守命是也，又名月朗天門。\n[…]\n月朗天門於亥地登雲職掌大權  子生人夜時生合局。不貴則大富。",
+      "page": "ziwei",
+      "required_facts": [
+        "raw.palaces.name",
+        "raw.palaces.earthlyBranch",
+        "raw.palaces.majorStars",
+        "raw.palaces.minorStars",
+        "raw.palaces.isBodyPalace"
+      ],
+      "when": {
+        "scope": "natal-structure",
+        "definition": "月朗天门"
+      },
+      "satisfy_when": "太阴在亥宫守命",
+      "fail_when": "太阴不在亥命宫",
+      "unknown_when": "太阴或命宫信息未提供",
+      "rescue": "unimplemented",
+      "vernacular": "{locations}。本盘{status}这条来源定义的结构。{conditions}。{limitations}",
+      "implementation_assumption": "本条核L1589位置格名。L4400附加子生夜生涉及作用口径，未把位置符合宣称为该附注全部合局。",
+      "verified": false
+    },
+    {
+      "id": "ZWD-E-07",
+      "art": "ziwei",
+      "theme": "月生沧海",
+      "school": "紫微斗数全书·当前三卷电子本",
+      "paragraph_ids": [
+        "ziwei-doushu-quanshu:L1591-L1591"
+      ],
+      "sources": [
+        {
+          "paragraph_id": "ziwei-doushu-quanshu:L1591-L1591",
+          "start_line": 1591,
+          "end_line": 1591,
+          "quote": "月生滄海 月在子宮守田宅是也。"
+        }
+      ],
+      "quote": "月生滄海 月在子宮守田宅是也。",
+      "page": "ziwei",
+      "required_facts": [
+        "raw.palaces.name",
+        "raw.palaces.earthlyBranch",
+        "raw.palaces.majorStars",
+        "raw.palaces.minorStars",
+        "raw.palaces.isBodyPalace"
+      ],
+      "when": {
+        "scope": "natal-structure",
+        "definition": "月生沧海"
+      },
+      "satisfy_when": "太阴在子宫守田宅",
+      "fail_when": "太阴不在子田宅，命宫子太阴也不代替",
+      "unknown_when": "太阴或田宅宫信息未提供",
+      "rescue": "unimplemented",
+      "vernacular": "{locations}。本盘{status}这条来源定义的结构。{conditions}。{limitations}",
+      "implementation_assumption": "按L1591双重位置限定，只记录结构，不推资产或财产数量。",
+      "verified": false
+    },
+    {
+      "id": "ZWD-E-08",
+      "art": "ziwei",
+      "theme": "金灿光辉",
+      "school": "紫微斗数全书·当前三卷电子本",
+      "paragraph_ids": [
+        "ziwei-doushu-quanshu:L1580-L1580"
+      ],
+      "sources": [
+        {
+          "paragraph_id": "ziwei-doushu-quanshu:L1580-L1580",
+          "start_line": 1580,
+          "end_line": 1580,
+          "quote": "金燦光輝 太陽單守，命在午宮是也。"
+        }
+      ],
+      "quote": "金燦光輝 太陽單守，命在午宮是也。",
+      "page": "ziwei",
+      "required_facts": [
+        "raw.palaces.name",
+        "raw.palaces.earthlyBranch",
+        "raw.palaces.majorStars",
+        "raw.palaces.minorStars",
+        "raw.palaces.isBodyPalace"
+      ],
+      "when": {
+        "scope": "natal-structure",
+        "definition": "金灿光辉"
+      },
+      "satisfy_when": "太阳是午命宫唯一十四主星",
+      "fail_when": "太阳不在午命宫或午命宫另有十四主星",
+      "unknown_when": "太阳或命宫主星数据未提供",
+      "rescue": "unimplemented",
+      "vernacular": "{locations}。本盘{status}这条来源定义的结构。{conditions}。{limitations}",
+      "implementation_assumption": "单守限定十四主星，辅星杂曜不等于第二主星；不把无其他所有星当单守。",
+      "verified": false
+    },
+    {
+      "id": "ZWD-E-09",
+      "art": "ziwei",
+      "theme": "魁命钺身",
+      "school": "紫微斗数全书·当前三卷电子本",
+      "paragraph_ids": [
+        "ziwei-doushu-quanshu:L0927-L0937"
+      ],
+      "sources": [
+        {
+          "paragraph_id": "ziwei-doushu-quanshu:L0927-L0937",
+          "start_line": 927,
+          "end_line": 928,
+          "quote": "希夷先生答曰：魁鉞斗中司科之星，入命坐貴向貴，或得左右吉聚無不富貴。\n況二星又為上界和合之神，若魁臨命，鉞守身，更迭相守。"
+        }
+      ],
+      "quote": "希夷先生答曰：魁鉞斗中司科之星，入命坐貴向貴，或得左右吉聚無不富貴。\n況二星又為上界和合之神，若魁臨命，鉞守身，更迭相守。",
+      "page": "ziwei",
+      "required_facts": [
+        "raw.palaces.name",
+        "raw.palaces.earthlyBranch",
+        "raw.palaces.majorStars",
+        "raw.palaces.minorStars",
+        "raw.palaces.isBodyPalace"
+      ],
+      "when": {
+        "scope": "natal-structure",
+        "definition": "魁命钺身"
+      },
+      "satisfy_when": "天魁在命宫、天钺在实际身宫所附宫",
+      "fail_when": "只魁命但钺不在身，或魁钺位置互换",
+      "unknown_when": "命宫、身宫标记或魁钺未提供",
+      "rescue": "unimplemented",
+      "vernacular": "{locations}。本盘{status}这条来源定义的结构。{conditions}。{limitations}",
+      "implementation_assumption": "按此明确分支不交换魁钺；位置符合不代表整段吉聚及年龄/墓库行限条件都已成立。",
+      "verified": false
+    },
+    {
+      "id": "ZWD-E-10",
+      "art": "ziwei",
+      "theme": "禄马同宫",
+      "school": "紫微斗数全书·当前三卷电子本",
+      "paragraph_ids": [
+        "ziwei-doushu-quanshu:L0976-L0987",
+        "ziwei-doushu-quanshu:L3146-L3147"
+      ],
+      "sources": [
+        {
+          "paragraph_id": "ziwei-doushu-quanshu:L0976-L0987",
+          "start_line": 976,
+          "end_line": 987,
+          "quote": "希夷先生答曰：諸宮各有制化，如身命臨之謂之驛馬。\n喜祿存、紫府、昌曲，守照為吉。\n如大小二限臨之，更遇祿存紫府，流昌必利。\n如與祿存同宮，謂之祿馬交馳，又曰折鞭馬；\n紫府同宮謂之扶轝馬；\n刑殺同宮謂之負屍馬；\n火星同宮謂之戰馬；\n日月同宮謂雌雄馬；\n逢空亡謂之死馬、亡馬；\n居絕死謂之死馬；\n遇陀羅謂之折足馬。\n以上犯此數者，俱主災病，流年值之依此斷。"
+        },
+        {
+          "paragraph_id": "ziwei-doushu-quanshu:L3146-L3147",
+          "start_line": 3146,
+          "end_line": 3146,
+          "quote": "天馬火，最喜會祿存，極忌截路空亡。"
+        }
+      ],
+      "quote": "希夷先生答曰：諸宮各有制化，如身命臨之謂之驛馬。\n喜祿存、紫府、昌曲，守照為吉。\n如大小二限臨之，更遇祿存紫府，流昌必利。\n如與祿存同宮，謂之祿馬交馳，又曰折鞭馬；\n紫府同宮謂之扶轝馬；\n刑殺同宮謂之負屍馬；\n火星同宮謂之戰馬；\n日月同宮謂雌雄馬；\n逢空亡謂之死馬、亡馬；\n居絕死謂之死馬；\n遇陀羅謂之折足馬。\n以上犯此數者，俱主災病，流年值之依此斷。\n[…]\n天馬火，最喜會祿存，極忌截路空亡。",
+      "page": "ziwei",
+      "required_facts": [
+        "raw.palaces.name",
+        "raw.palaces.earthlyBranch",
+        "raw.palaces.majorStars",
+        "raw.palaces.minorStars",
+        "raw.palaces.isBodyPalace"
+      ],
+      "when": {
+        "scope": "natal-structure",
+        "definition": "禄马同宫"
+      },
+      "satisfy_when": "本命禄存、天马同在一宫",
+      "fail_when": "两星各在不同宫；化禄不能替代禄存",
+      "unknown_when": "本命禄存或天马位置未提供",
+      "rescue": "unimplemented",
+      "vernacular": "{locations}。本盘{status}这条来源定义的结构。{conditions}。{limitations}",
+      "implementation_assumption": "只核原书禄马交驰的同宫支路，名称显示禄马同宫；截路空亡、死绝及煞破的效力不由同宫本身决定。",
+      "verified": false
+    },
+    {
+      "id": "ZWD-E-11",
+      "art": "ziwei",
+      "theme": "武曲守垣",
+      "school": "紫微斗数全书·当前三卷电子本",
+      "paragraph_ids": [
+        "ziwei-doushu-quanshu:L1619-L1619"
+      ],
+      "sources": [
+        {
+          "paragraph_id": "ziwei-doushu-quanshu:L1619-L1619",
+          "start_line": 1619,
+          "end_line": 1619,
+          "quote": "武曲守垣 武守命卯宮是也，余不是。"
+        }
+      ],
+      "quote": "武曲守垣 武守命卯宮是也，余不是。",
+      "page": "ziwei",
+      "required_facts": [
+        "raw.palaces.name",
+        "raw.palaces.earthlyBranch",
+        "raw.palaces.majorStars",
+        "raw.palaces.minorStars",
+        "raw.palaces.isBodyPalace"
+      ],
+      "when": {
+        "scope": "natal-structure",
+        "definition": "武曲守垣"
+      },
+      "satisfy_when": "武曲在卯宫守命",
+      "fail_when": "武曲不在卯命，其他武曲得地不属此源格名",
+      "unknown_when": "武曲或命宫信息未提供",
+      "rescue": "unimplemented",
+      "vernacular": "{locations}。本盘{status}这条来源定义的结构。{conditions}。{limitations}",
+      "implementation_assumption": "保留原文余不是，不能用任意武曲庙旺宫代替卯命；可满足结构但不推贵贱。",
+      "verified": false
+    },
+    {
+      "id": "ZWD-E-12",
+      "art": "ziwei",
+      "theme": "贪火相逢",
+      "school": "紫微斗数全书·当前三卷电子本",
+      "paragraph_ids": [
+        "ziwei-doushu-quanshu:L1617-L1617",
+        "ziwei-doushu-quanshu:L1069-L1069"
+      ],
+      "sources": [
+        {
+          "paragraph_id": "ziwei-doushu-quanshu:L1617-L1617",
+          "start_line": 1617,
+          "end_line": 1617,
+          "quote": "貪火相逢 謂二星守命同居廟旺是也。"
+        },
+        {
+          "paragraph_id": "ziwei-doushu-quanshu:L1069-L1069",
+          "start_line": 1069,
+          "end_line": 1069,
+          "quote": "三方無殺破，中年後始興，僧道多飄蕩，不守規戒心，女人旺地潔，陷地主邪淫，"
+        }
+      ],
+      "quote": "貪火相逢 謂二星守命同居廟旺是也。\n[…]\n三方無殺破，中年後始興，僧道多飄蕩，不守規戒心，女人旺地潔，陷地主邪淫，",
+      "page": "ziwei",
+      "required_facts": [
+        "raw.palaces.name",
+        "raw.palaces.earthlyBranch",
+        "raw.palaces.majorStars",
+        "raw.palaces.minorStars",
+        "raw.palaces.isBodyPalace"
+      ],
+      "when": {
+        "scope": "natal-structure",
+        "definition": "贪火相逢"
+      },
+      "satisfy_when": "贪狼火星同守本命命宫且二星亮度均为庙或旺",
+      "fail_when": "两星不同时在命宫，或任一星已知亮度非庙旺",
+      "unknown_when": "同命成立但所需任一亮度字段缺失",
+      "rescue": "unimplemented",
+      "vernacular": "{locations}。本盘{status}这条来源定义的结构。{conditions}。{limitations}",
+      "implementation_assumption": "只核L1617同命庙旺结构；不与L1384三合火贵合并。返回三方四正实际已见的羊陀铃地空地劫化忌供后续读，不把未发现已知干扰当三方无凶已满足。",
+      "verified": false
+    }
+  ]
+}

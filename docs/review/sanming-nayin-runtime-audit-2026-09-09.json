@@ -1,0 +1,655 @@
+{
+  "library": "tyme4ts",
+  "version": "1.5.2",
+  "runtimeCall": "SixtyCycle.fromName(ganzhi).getSound().getName()",
+  "rows": [
+    {
+      "index": 0,
+      "ganzhi": "甲子",
+      "naYin": "海中金",
+      "sourceCount": 7,
+      "sourceElement": "金",
+      "taixuanFourSum": 34,
+      "taixuanRemainder": 5,
+      "taixuanElement": "金"
+    },
+    {
+      "index": 1,
+      "ganzhi": "乙丑",
+      "naYin": "海中金",
+      "sourceCount": 7,
+      "sourceElement": "金",
+      "taixuanFourSum": 34,
+      "taixuanRemainder": 5,
+      "taixuanElement": "金"
+    },
+    {
+      "index": 2,
+      "ganzhi": "丙寅",
+      "naYin": "炉中火",
+      "sourceCount": 3,
+      "sourceElement": "火",
+      "taixuanFourSum": 26,
+      "taixuanRemainder": 3,
+      "taixuanElement": "火"
+    },
+    {
+      "index": 3,
+      "ganzhi": "丁卯",
+      "naYin": "炉中火",
+      "sourceCount": 3,
+      "sourceElement": "火",
+      "taixuanFourSum": 26,
+      "taixuanRemainder": 3,
+      "taixuanElement": "火"
+    },
+    {
+      "index": 4,
+      "ganzhi": "戊辰",
+      "naYin": "大林木",
+      "sourceCount": 9,
+      "sourceElement": "木",
+      "taixuanFourSum": 23,
+      "taixuanRemainder": 1,
+      "taixuanElement": "木"
+    },
+    {
+      "index": 5,
+      "ganzhi": "己巳",
+      "naYin": "大林木",
+      "sourceCount": 9,
+      "sourceElement": "木",
+      "taixuanFourSum": 23,
+      "taixuanRemainder": 1,
+      "taixuanElement": "木"
+    },
+    {
+      "index": 6,
+      "ganzhi": "庚午",
+      "naYin": "路旁土",
+      "sourceCount": 1,
+      "sourceElement": "土",
+      "taixuanFourSum": 32,
+      "taixuanRemainder": 2,
+      "taixuanElement": "土"
+    },
+    {
+      "index": 7,
+      "ganzhi": "辛未",
+      "naYin": "路旁土",
+      "sourceCount": 1,
+      "sourceElement": "土",
+      "taixuanFourSum": 32,
+      "taixuanRemainder": 2,
+      "taixuanElement": "土"
+    },
+    {
+      "index": 8,
+      "ganzhi": "壬申",
+      "naYin": "剑锋金",
+      "sourceCount": 7,
+      "sourceElement": "金",
+      "taixuanFourSum": 24,
+      "taixuanRemainder": 5,
+      "taixuanElement": "金"
+    },
+    {
+      "index": 9,
+      "ganzhi": "癸酉",
+      "naYin": "剑锋金",
+      "sourceCount": 7,
+      "sourceElement": "金",
+      "taixuanFourSum": 24,
+      "taixuanRemainder": 5,
+      "taixuanElement": "金"
+    },
+    {
+      "index": 10,
+      "ganzhi": "甲戌",
+      "naYin": "山头火",
+      "sourceCount": 3,
+      "sourceElement": "火",
+      "taixuanFourSum": 26,
+      "taixuanRemainder": 3,
+      "taixuanElement": "火"
+    },
+    {
+      "index": 11,
+      "ganzhi": "乙亥",
+      "naYin": "山头火",
+      "sourceCount": 3,
+      "sourceElement": "火",
+      "taixuanFourSum": 26,
+      "taixuanRemainder": 3,
+      "taixuanElement": "火"
+    },
+    {
+      "index": 12,
+      "ganzhi": "丙子",
+      "naYin": "涧下水",
+      "sourceCount": 5,
+      "sourceElement": "水",
+      "taixuanFourSum": 30,
+      "taixuanRemainder": 4,
+      "taixuanElement": "水"
+    },
+    {
+      "index": 13,
+      "ganzhi": "丁丑",
+      "naYin": "涧下水",
+      "sourceCount": 5,
+      "sourceElement": "水",
+      "taixuanFourSum": 30,
+      "taixuanRemainder": 4,
+      "taixuanElement": "水"
+    },
+    {
+      "index": 14,
+      "ganzhi": "戊寅",
+      "naYin": "城头土",
+      "sourceCount": 1,
+      "sourceElement": "土",
+      "taixuanFourSum": 27,
+      "taixuanRemainder": 2,
+      "taixuanElement": "土"
+    },
+    {
+      "index": 15,
+      "ganzhi": "己卯",
+      "naYin": "城头土",
+      "sourceCount": 1,
+      "sourceElement": "土",
+      "taixuanFourSum": 27,
+      "taixuanRemainder": 2,
+      "taixuanElement": "土"
+    },
+    {
+      "index": 16,
+      "ganzhi": "庚辰",
+      "naYin": "白蜡金",
+      "sourceCount": 7,
+      "sourceElement": "金",
+      "taixuanFourSum": 24,
+      "taixuanRemainder": 5,
+      "taixuanElement": "金"
+    },
+    {
+      "index": 17,
+      "ganzhi": "辛巳",
+      "naYin": "白蜡金",
+      "sourceCount": 7,
+      "sourceElement": "金",
+      "taixuanFourSum": 24,
+      "taixuanRemainder": 5,
+      "taixuanElement": "金"
+    },
+    {
+      "index": 18,
+      "ganzhi": "壬午",
+      "naYin": "杨柳木",
+      "sourceCount": 9,
+      "sourceElement": "木",
+      "taixuanFourSum": 28,
+      "taixuanRemainder": 1,
+      "taixuanElement": "木"
+    },
+    {
+      "index": 19,
+      "ganzhi": "癸未",
+      "naYin": "杨柳木",
+      "sourceCount": 9,
+      "sourceElement": "木",
+      "taixuanFourSum": 28,
+      "taixuanRemainder": 1,
+      "taixuanElement": "木"
+    },
+    {
+      "index": 20,
+      "ganzhi": "甲申",
+      "naYin": "泉中水",
+      "sourceCount": 5,
+      "sourceElement": "水",
+      "taixuanFourSum": 30,
+      "taixuanRemainder": 4,
+      "taixuanElement": "水"
+    },
+    {
+      "index": 21,
+      "ganzhi": "乙酉",
+      "naYin": "泉中水",
+      "sourceCount": 5,
+      "sourceElement": "水",
+      "taixuanFourSum": 30,
+      "taixuanRemainder": 4,
+      "taixuanElement": "水"
+    },
+    {
+      "index": 22,
+      "ganzhi": "丙戌",
+      "naYin": "屋上土",
+      "sourceCount": 1,
+      "sourceElement": "土",
+      "taixuanFourSum": 22,
+      "taixuanRemainder": 2,
+      "taixuanElement": "土"
+    },
+    {
+      "index": 23,
+      "ganzhi": "丁亥",
+      "naYin": "屋上土",
+      "sourceCount": 1,
+      "sourceElement": "土",
+      "taixuanFourSum": 22,
+      "taixuanRemainder": 2,
+      "taixuanElement": "土"
+    },
+    {
+      "index": 24,
+      "ganzhi": "戊子",
+      "naYin": "霹雳火",
+      "sourceCount": 3,
+      "sourceElement": "火",
+      "taixuanFourSum": 31,
+      "taixuanRemainder": 3,
+      "taixuanElement": "火"
+    },
+    {
+      "index": 25,
+      "ganzhi": "己丑",
+      "naYin": "霹雳火",
+      "sourceCount": 3,
+      "sourceElement": "火",
+      "taixuanFourSum": 31,
+      "taixuanRemainder": 3,
+      "taixuanElement": "火"
+    },
+    {
+      "index": 26,
+      "ganzhi": "庚寅",
+      "naYin": "松柏木",
+      "sourceCount": 9,
+      "sourceElement": "木",
+      "taixuanFourSum": 28,
+      "taixuanRemainder": 1,
+      "taixuanElement": "木"
+    },
+    {
+      "index": 27,
+      "ganzhi": "辛卯",
+      "naYin": "松柏木",
+      "sourceCount": 9,
+      "sourceElement": "木",
+      "taixuanFourSum": 28,
+      "taixuanRemainder": 1,
+      "taixuanElement": "木"
+    },
+    {
+      "index": 28,
+      "ganzhi": "壬辰",
+      "naYin": "长流水",
+      "sourceCount": 5,
+      "sourceElement": "水",
+      "taixuanFourSum": 20,
+      "taixuanRemainder": 4,
+      "taixuanElement": "水"
+    },
+    {
+      "index": 29,
+      "ganzhi": "癸巳",
+      "naYin": "长流水",
+      "sourceCount": 5,
+      "sourceElement": "水",
+      "taixuanFourSum": 20,
+      "taixuanRemainder": 4,
+      "taixuanElement": "水"
+    },
+    {
+      "index": 30,
+      "ganzhi": "甲午",
+      "naYin": "沙中金",
+      "sourceCount": 7,
+      "sourceElement": "金",
+      "taixuanFourSum": 34,
+      "taixuanRemainder": 5,
+      "taixuanElement": "金"
+    },
+    {
+      "index": 31,
+      "ganzhi": "乙未",
+      "naYin": "沙中金",
+      "sourceCount": 7,
+      "sourceElement": "金",
+      "taixuanFourSum": 34,
+      "taixuanRemainder": 5,
+      "taixuanElement": "金"
+    },
+    {
+      "index": 32,
+      "ganzhi": "丙申",
+      "naYin": "山下火",
+      "sourceCount": 3,
+      "sourceElement": "火",
+      "taixuanFourSum": 26,
+      "taixuanRemainder": 3,
+      "taixuanElement": "火"
+    },
+    {
+      "index": 33,
+      "ganzhi": "丁酉",
+      "naYin": "山下火",
+      "sourceCount": 3,
+      "sourceElement": "火",
+      "taixuanFourSum": 26,
+      "taixuanRemainder": 3,
+      "taixuanElement": "火"
+    },
+    {
+      "index": 34,
+      "ganzhi": "戊戌",
+      "naYin": "平地木",
+      "sourceCount": 9,
+      "sourceElement": "木",
+      "taixuanFourSum": 23,
+      "taixuanRemainder": 1,
+      "taixuanElement": "木"
+    },
+    {
+      "index": 35,
+      "ganzhi": "己亥",
+      "naYin": "平地木",
+      "sourceCount": 9,
+      "sourceElement": "木",
+      "taixuanFourSum": 23,
+      "taixuanRemainder": 1,
+      "taixuanElement": "木"
+    },
+    {
+      "index": 36,
+      "ganzhi": "庚子",
+      "naYin": "壁上土",
+      "sourceCount": 1,
+      "sourceElement": "土",
+      "taixuanFourSum": 32,
+      "taixuanRemainder": 2,
+      "taixuanElement": "土"
+    },
+    {
+      "index": 37,
+      "ganzhi": "辛丑",
+      "naYin": "壁上土",
+      "sourceCount": 1,
+      "sourceElement": "土",
+      "taixuanFourSum": 32,
+      "taixuanRemainder": 2,
+      "taixuanElement": "土"
+    },
+    {
+      "index": 38,
+      "ganzhi": "壬寅",
+      "naYin": "金箔金",
+      "sourceCount": 7,
+      "sourceElement": "金",
+      "taixuanFourSum": 24,
+      "taixuanRemainder": 5,
+      "taixuanElement": "金"
+    },
+    {
+      "index": 39,
+      "ganzhi": "癸卯",
+      "naYin": "金箔金",
+      "sourceCount": 7,
+      "sourceElement": "金",
+      "taixuanFourSum": 24,
+      "taixuanRemainder": 5,
+      "taixuanElement": "金"
+    },
+    {
+      "index": 40,
+      "ganzhi": "甲辰",
+      "naYin": "覆灯火",
+      "sourceCount": 3,
+      "sourceElement": "火",
+      "taixuanFourSum": 26,
+      "taixuanRemainder": 3,
+      "taixuanElement": "火"
+    },
+    {
+      "index": 41,
+      "ganzhi": "乙巳",
+      "naYin": "覆灯火",
+      "sourceCount": 3,
+      "sourceElement": "火",
+      "taixuanFourSum": 26,
+      "taixuanRemainder": 3,
+      "taixuanElement": "火"
+    },
+    {
+      "index": 42,
+      "ganzhi": "丙午",
+      "naYin": "天河水",
+      "sourceCount": 5,
+      "sourceElement": "水",
+      "taixuanFourSum": 30,
+      "taixuanRemainder": 4,
+      "taixuanElement": "水"
+    },
+    {
+      "index": 43,
+      "ganzhi": "丁未",
+      "naYin": "天河水",
+      "sourceCount": 5,
+      "sourceElement": "水",
+      "taixuanFourSum": 30,
+      "taixuanRemainder": 4,
+      "taixuanElement": "水"
+    },
+    {
+      "index": 44,
+      "ganzhi": "戊申",
+      "naYin": "大驿土",
+      "sourceCount": 1,
+      "sourceElement": "土",
+      "taixuanFourSum": 27,
+      "taixuanRemainder": 2,
+      "taixuanElement": "土"
+    },
+    {
+      "index": 45,
+      "ganzhi": "己酉",
+      "naYin": "大驿土",
+      "sourceCount": 1,
+      "sourceElement": "土",
+      "taixuanFourSum": 27,
+      "taixuanRemainder": 2,
+      "taixuanElement": "土"
+    },
+    {
+      "index": 46,
+      "ganzhi": "庚戌",
+      "naYin": "钗钏金",
+      "sourceCount": 7,
+      "sourceElement": "金",
+      "taixuanFourSum": 24,
+      "taixuanRemainder": 5,
+      "taixuanElement": "金"
+    },
+    {
+      "index": 47,
+      "ganzhi": "辛亥",
+      "naYin": "钗钏金",
+      "sourceCount": 7,
+      "sourceElement": "金",
+      "taixuanFourSum": 24,
+      "taixuanRemainder": 5,
+      "taixuanElement": "金"
+    },
+    {
+      "index": 48,
+      "ganzhi": "壬子",
+      "naYin": "桑柘木",
+      "sourceCount": 9,
+      "sourceElement": "木",
+      "taixuanFourSum": 28,
+      "taixuanRemainder": 1,
+      "taixuanElement": "木"
+    },
+    {
+      "index": 49,
+      "ganzhi": "癸丑",
+      "naYin": "桑柘木",
+      "sourceCount": 9,
+      "sourceElement": "木",
+      "taixuanFourSum": 28,
+      "taixuanRemainder": 1,
+      "taixuanElement": "木"
+    },
+    {
+      "index": 50,
+      "ganzhi": "甲寅",
+      "naYin": "大溪水",
+      "sourceCount": 5,
+      "sourceElement": "水",
+      "taixuanFourSum": 30,
+      "taixuanRemainder": 4,
+      "taixuanElement": "水"
+    },
+    {
+      "index": 51,
+      "ganzhi": "乙卯",
+      "naYin": "大溪水",
+      "sourceCount": 5,
+      "sourceElement": "水",
+      "taixuanFourSum": 30,
+      "taixuanRemainder": 4,
+      "taixuanElement": "水"
+    },
+    {
+      "index": 52,
+      "ganzhi": "丙辰",
+      "naYin": "沙中土",
+      "sourceCount": 1,
+      "sourceElement": "土",
+      "taixuanFourSum": 22,
+      "taixuanRemainder": 2,
+      "taixuanElement": "土"
+    },
+    {
+      "index": 53,
+      "ganzhi": "丁巳",
+      "naYin": "沙中土",
+      "sourceCount": 1,
+      "sourceElement": "土",
+      "taixuanFourSum": 22,
+      "taixuanRemainder": 2,
+      "taixuanElement": "土"
+    },
+    {
+      "index": 54,
+      "ganzhi": "戊午",
+      "naYin": "天上火",
+      "sourceCount": 3,
+      "sourceElement": "火",
+      "taixuanFourSum": 31,
+      "taixuanRemainder": 3,
+      "taixuanElement": "火"
+    },
+    {
+      "index": 55,
+      "ganzhi": "己未",
+      "naYin": "天上火",
+      "sourceCount": 3,
+      "sourceElement": "火",
+      "taixuanFourSum": 31,
+      "taixuanRemainder": 3,
+      "taixuanElement": "火"
+    },
+    {
+      "index": 56,
+      "ganzhi": "庚申",
+      "naYin": "石榴木",
+      "sourceCount": 9,
+      "sourceElement": "木",
+      "taixuanFourSum": 28,
+      "taixuanRemainder": 1,
+      "taixuanElement": "木"
+    },
+    {
+      "index": 57,
+      "ganzhi": "辛酉",
+      "naYin": "石榴木",
+      "sourceCount": 9,
+      "sourceElement": "木",
+      "taixuanFourSum": 28,
+      "taixuanRemainder": 1,
+      "taixuanElement": "木"
+    },
+    {
+      "index": 58,
+      "ganzhi": "壬戌",
+      "naYin": "大海水",
+      "sourceCount": 5,
+      "sourceElement": "水",
+      "taixuanFourSum": 20,
+      "taixuanRemainder": 4,
+      "taixuanElement": "水"
+    },
+    {
+      "index": 59,
+      "ganzhi": "癸亥",
+      "naYin": "大海水",
+      "sourceCount": 5,
+      "sourceElement": "水",
+      "taixuanFourSum": 20,
+      "taixuanRemainder": 4,
+      "taixuanElement": "水"
+    }
+  ],
+  "scope": "六微旨论含首尾数干及太玄49减四数两法与产品当前库60条纳音五行核对；不校吉凶解释、历法日期转换或名称每字异文。",
+  "sourceParagraph": "sanming-tonghui:L0120-L0142",
+  "sourceLines": {
+    "stemCount": [
+      125,
+      127
+    ],
+    "taixuan": [
+      131,
+      133
+    ]
+  },
+  "matches": 60,
+  "verified": false,
+  "nameVariants": [
+    {
+      "source": "井泉水",
+      "runtime": "泉中水",
+      "lines": [
+        153,
+        165
+      ]
+    },
+    {
+      "source": "金泊金",
+      "runtime": "金箔金",
+      "lines": [
+        148,
+        160
+      ]
+    },
+    {
+      "source": "白鑞金",
+      "runtime": "白蜡金",
+      "lines": [
+        149,
+        159
+      ]
+    },
+    {
+      "source": "路傍土",
+      "runtime": "路旁土",
+      "lines": [
+        156,
+        163
+      ]
+    }
+  ]
+}
