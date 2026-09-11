@@ -216,12 +216,13 @@
     "raising verified=true"
   ],
   "contentImportTip": "2314c3b4672849d57ee4d1031f0ef20334cd8401",
-  "candidateIntegrationSha": "PENDING_LEDGER_COMMIT",
+  "candidateIntegrationSha": "63ecf0b6610e8114f77d2453a22d9c6fe420da2f",
   "pendingIndependentReview": true,
-  "integrationBranchTipAtDelivery": "PENDING_REMOTE_VERIFY",
-  "remoteVerifiedAt": null,
+  "integrationBranchTipAtDelivery": "63ecf0b6610e8114f77d2453a22d9c6fe420da2f",
+  "remoteVerifiedAt": "2026-09-11T19:38:00Z",
   "remoteRef": "origin/codex/multica-ming-477",
-  "note": "Authoritative tip is origin/codex/multica-ming-477 via git ls-remote; candidateIntegrationSha records the tip after remote-verify commit",
+  "note": "Authoritative tip is origin/codex/multica-ming-477 via git ls-remote after final push; firstPushRemoteSha is tip before tip-pin commit",
   "contentAndLedgerFirstPushSha": "96bf844a08fed268b072cfa50a47ed8f013f9dfb",
-  "remoteSha": "PENDING_REMOTE_VERIFY"
+  "remoteSha": "63ecf0b6610e8114f77d2453a22d9c6fe420da2f",
+  "firstPushRemoteSha": "63ecf0b6610e8114f77d2453a22d9c6fe420da2f"
 }
