@@ -36,4 +36,5 @@
 
 ## 交付 tip
 - 内容合入 tip（JSON + 6 审查稿）：`fd4106ac33e19d32c93d34b9eb4a018f86c0b09f`
-- 账本核对基线 tip：交包后以 `origin/codex/multica-ming-424` 为准（施工分支，非 main）
+- 账本核对基线 tip（首次 push）：`b3850048a9b0261ddf8b01521a0fe9215fdf16dd`
+- 远端 tip：以交包评论中 `git rev-parse origin/codex/multica-ming-424` / `git ls-remote` 为准（施工分支，非 main）

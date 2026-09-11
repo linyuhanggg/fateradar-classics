@@ -189,10 +189,11 @@
     "raising verified=true"
   ],
   "contentImportTip": "fd4106ac33e19d32c93d34b9eb4a018f86c0b09f",
-  "candidateIntegrationSha": null,
+  "candidateIntegrationSha": "b3850048a9b0261ddf8b01521a0fe9215fdf16dd",
   "pendingIndependentReview": true,
-  "integrationBranchTipAtDelivery": null,
-  "remoteVerifiedAt": null,
+  "integrationBranchTipAtDelivery": "b3850048a9b0261ddf8b01521a0fe9215fdf16dd",
+  "contentAndLedgerFirstPushSha": "b3850048a9b0261ddf8b01521a0fe9215fdf16dd",
+  "remoteVerifiedAt": "2026-09-11T18:01:30Z",
   "remoteRef": "origin/codex/multica-ming-424",
-  "note": "Authoritative tip after ledger+push verify commit is origin/codex/multica-ming-424; measure with git rev-parse / ls-remote"
+  "note": "Authoritative tip after this verify commit is origin/codex/multica-ming-424; measure with git rev-parse / ls-remote"
 }
