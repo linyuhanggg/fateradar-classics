@@ -37,7 +37,8 @@
 ## 交付 tip
 - 内容 cherry-pick tip：`f10fa0fdb49626508c9d903ad360ebeb03a4731f`
 - 内容+账本首推 tip：`192f6337d87edb21b3bf915fd635f0187049d64d`
-- 分支 HEAD / 远端：`97d3cf688a4fb80ae2e3f0f03cfe548e969e5321`（与 `origin/codex/multica-ming-381` 对齐）
+- 候选验收 tip（内容+账本）：`192f6337d87edb21b3bf915fd635f0187049d64d`
+- 分支远端 tip：push 后以 `git rev-parse origin/codex/multica-ming-381` 为准（见交包评论）
 
 ## 远端验证
-- `origin/codex/multica-ming-381` 精确 SHA 以 JSON `candidateIntegrationSha` / `remoteVerifiedAt` 为准
+- `origin/codex/multica-ming-381` 精确 SHA 以交包评论与 JSON 更新为准
