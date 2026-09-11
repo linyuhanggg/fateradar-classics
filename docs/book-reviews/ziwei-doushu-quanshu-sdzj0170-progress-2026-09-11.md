@@ -99,3 +99,52 @@ PYTHONDONTWRITEBYTECODE=1 python3 tools/validate-annotations.py \
 ```
 
 结果：`{"ok": true, "books": 1, "files": 1, "entries": 600, "source_reviewed": 563, "errors": []}`。校验器只做结构与 ID，不是语义证书。
+
+
+---
+
+## WORK_PACKAGE_COMPLETE（CP3 · MING-345）
+
+本包 CP3 索引 **600–899**（300 段）全部有实质处理：本批 `source-reviewed` 281，`draft` 19；累计 entries=900（`source-reviewed` 844，`draft` 56），`verified` 全 false。不是紫微斗数全书完成，也不是人工 verified，也不是引擎包。索引 900–1069（remaining **170**）留给后续 Multica 包。
+
+### 前置核验
+
+- worktree：`/Users/yuhanglin/.codex/worktrees/fateradar-multica-ming-345`
+- 分支：`codex/multica-ming-345`（基线继承 `origin/codex/multica-ming-333` @ `60495cc6b29bb9bc6478c3073b824cbcbbb4b4a0`）
+- `sources/normalized/shidianguji/SDZJ0170/text.md` SHA256 = `b4850fddeac0fc7b5fad40a7a93865f47c70622e348ca4f2c79b98f37a15a790`（与 CP1/CP2 一致）
+- `paragraphs.json` 唯一 ID = 1070；已交 0–599 与源 ID 集合完全重合；本批差集 = 索引 600–899，**未改写 0–599**
+- 起始 ID / 止 ID 与派工一致；同版本源文 hash 核验通过
+
+### 段落账本（300/300 · CP3）
+
+| 区段 | 索引 | 起讫 paragraphId 尾 | 处理摘要 |
+|---|---|---|---|
+| 卷之三岁君/斗君收束 + 全书下 | 600–605 | P…82164621338 → P…82164703258 | 化曜会聚/太岁扶救与伤使分层；斗君正月例 |
+| 卷之四二兄弟 | 606–628 | P…83284434981 → P…83645177906 | 按主星断兄弟人数与和睦；煞减半/分居分层 |
+| 谭星要论总法 | 629–687 | P…90129506341 → P…91736219657 | 八座看命次序、入格/星数九等、男女小儿、限岁阴骘、羊陀迭并七杀重逢、十二夫人忌 |
+| 流年子–亥岁限例 | 688–721 | P…91920457779 → P…91971002418 | 入庙化吉 / 不入庙化凶 / 所值吉凶星减半论 |
+| 诸星专论（紫微→贪狼）+ 廉贞起 | 722–899 | P…91971018802 → P…95376744457 | 庙旺表与格局；太阴/日月块 819–837 重刊标重复；廉贞庙旺止 |
+
+- 起始：`ziwei-doushu-quanshu:shidian-SDZJ0170:P7356158882164621338`（索引 600）
+- 本批止：`ziwei-doushu-quanshu:shidian-SDZJ0170:P7356158895376744457`（索引 899）
+- **nextId**：`ziwei-doushu-quanshu:shidian-SDZJ0170:P7356158895376760841`（索引 900，不在本包）
+- **remaining**：170（索引 900–1069；全书识典 1070 段）
+
+### 质量要点（CP3 节录）
+
+- 太岁扶救灾少仍防六畜 vs 羊陀火铃伤使财破身亡；斗君逢凶不因二限美覆盖
+- 兄弟宫：庙旺人数与陷地/煞见减半、分居、孤单分层
+- 谭星：八座上下格；女命七杀单居福德娼婢；阴骘可解倒限；羊陀迭并/七杀重逢入庙减轻、吉众转吉
+- 流年：入庙化吉与不入庙化凶按年干分列；所值凶星「减半论」不是全无吉
+- 紫微七杀化权反祥 vs 空亡虚名；紫破四墓加吉富贵 vs 辰戌君臣不义
+- 819–837 太阴/日月拱照为源内重刊，kind=重复并回链 799–818；836 为反背合刊全文
+- draft 19：残表庙旺、段末截断、女命错简、𤎉貝疑、反背断行、贪泛水桃花吉曜夺句等；异体/鿄不改正文
+
+### 校验（CP3 交包）
+
+```text
+PYTHONDONTWRITEBYTECODE=1 python3 tools/validate-annotations.py \
+  --annotations references/annotations/ziwei/ziwei-doushu-quanshu--shidian-SDZJ0170.json --json
+```
+
+结果：`{"ok": true, "books": 1, "files": 1, "entries": 900, "source_reviewed": 844, "errors": []}`。校验器只做结构与 ID，不是语义证书。
