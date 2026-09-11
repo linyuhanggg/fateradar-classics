@@ -937,3 +937,31 @@ PYTHONDONTWRITEBYTECODE=1 python3 tools/validate-annotations.py --annotations re
   - 年占农谚不是预测有效，不是算法覆盖
 - 校验：`{"ok": true, "books": 1, "files": 1, "entries": 2988, "source_reviewed": 2721, "errors": []}`。校验器只做结构与 ID，不是语义证书。
 - 未决项：麻衣主本；地理辨正 SDZJ0504。玉匣记补本本 lane 完成。未改主本 `yuqia-ji.json`。
+
+## P2 麻衣相法主本 · checkpoint 1（来源分层 / 十三部位 / 五官五岳 / 论眉相目 0–299）
+
+- 文件：`sources/fulltext/physiognomy/mayi-shenxiang/fulltext.md`
+- SHA256：`e804d4546ee49a45196ff5dcff51afe2d81941fda7d48d4df16a7a0e20621b5c`
+- 段 0–299：`mayi-shenxiang:L0001-L0011` … `mayi-shenxiang:L1283-L1283`
+- 新增 `references/annotations/physiognomy/mayi-shenxiang.json`：300 条（verified 全 false）
+  - source-reviewed 300，draft 0
+  - 规则候选 179，术语 52，序跋目录 38，评注或元数据 23，理论 8
+  - 现代前言/释意 `sourceAttribution.relation=modern-commentary` 17 条
+  - 长段 subsections：土宿紫气月孛罗计日月、论神、论声
+- 关键条件/否定/例外：
+  - 第1页现代前言、夹入释意不可作为原典一线断语；第2–11页才是古籍转写层
+  - 男左女右；一官成十年、不成十年困苦
+  - 中岳薄则四岳无主，纵别有好处不至大贵
+  - 有天无地先富后贫；天薄地丰始贫终富
+  - 左三阳枯克男，右三阴枯克女
+  - 月孛宜高不宜低
+  - 旋螺眉平常之人皆不利，英雄武职应天机
+  - 剑眉纵贫不日成清贵是时间条件，不是当下即贵
+  - 黄薄眉部位虽好发不久
+  - 左眼为日父象、右眼为月母象；右眼小则女怕夫，左眼小则夫怕妇
+  - 眼下卧蚕此处作绝嗣，与男女宫卧蚕生贵子分层，不合成一条
+  - 猪眼富贵也遭刑，否定以富抵凶
+- 相法进入可检索知识库，不冒充已接入八术，不是算法覆盖，不是预测有效。source-reviewed 仅对照本电子原文，不是影印校勘。
+- 校验：`{"ok": true, "books": 1, "files": 1, "entries": 300, "source_reviewed": 300, "errors": []}`。校验器只做结构与 ID，不是语义证书。
+- 未决项：麻衣主本 300–1626；地理辨正 SDZJ0504。未改识典补本，未改玉匣记主本。
+- commit：待提交
