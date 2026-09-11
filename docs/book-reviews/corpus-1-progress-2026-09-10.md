@@ -1009,4 +1009,25 @@ PYTHONDONTWRITEBYTECODE=1 python3 tools/validate-annotations.py --annotations re
   - 三阳火旺诞男、三阴木多生女；女人山根黑子若无宿疾必刑夫
 - 校验：`{"ok": true, "books": 1, "files": 1, "entries": 900, "source_reviewed": 897, "errors": []}`。校验器只做结构与 ID，不是语义证书。
 - 未决项：麻衣主本 900–1626；地理辨正 SDZJ0504。
+- commit：`752d17e`
+
+## P2 麻衣相法主本 · checkpoint 4（石室收束 / 金锁赋银匙歌 / 气色 / QX-12现代附益 900–1199）
+
+- 段 900–1199：`mayi-shenxiang:L3507-L3509` … `mayi-shenxiang:L4479-L4479`
+- 累计 1200 条：source-reviewed 1196，draft 4（verified 全 false）
+- CP4 本段 300 条：规则候选 211，评注或元数据 86，待核实 1，案例 1，理论 1
+- QX-12 `layer=modern_appendix` 86 条全部 `sourceAttribution.relation=modern-commentary`
+- 长段 subsections：五行形局、金锁赋、银匙歌
+- 关键条件/否定/救应：
+  - 形清神浊虽富后贫；得意凄惨先富后贫、遭窘温和早穷晚发
+  - 眼三角妇人刑夫克子、男子克妻儿
+  - 土逢乙木若土多木少润泽亦可疏通
+  - 金锁赋纵然有寿亦孤贫；恢弘又怕肥；老年/少年色嫩不同
+  - 银匙歌僧道孤独亦无妨；水星来救护；假饶凶处不为凶
+  - 老人不宜色嫩，少年不宜色枯
+  - 黄气如油抹必下第；滞中有明反化为吉
+  - 神宜藏不宜露；法令入口虽贵不免
+  - 卷六现代白话不可作为原典一线
+- 校验：`{"ok": true, "books": 1, "files": 1, "entries": 1200, "source_reviewed": 1196, "errors": []}`。校验器只做结构与 ID，不是语义证书。
+- 未决项：麻衣主本 1200–1626；地理辨正 SDZJ0504。
 - commit：待提交
