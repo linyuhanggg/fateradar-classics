@@ -1,0 +1,148 @@
+{
+  "schemaVersion": 1,
+  "issue": "MING-339",
+  "issueId": "01a090fc-bc90-7663-9fa8-0eea8ce79691",
+  "generatedAt": "2026-09-11T15:05:49Z",
+  "repo": "https://github.com/linyuhanggg/fateradar-classics",
+  "integrationBranch": "codex/multica-ming-339",
+  "worktree": "fateradar-multica-ming-339",
+  "parentBatch": {
+    "issue": "MING-329",
+    "tip": "6effd8e4f951fd17e1b1e0454942946ebc765da9",
+    "independentReview": "MING-331",
+    "independentReviewSha": "9ed9c624",
+    "note": "Stack on independently reviewed 329 tip; docs-only incremental reviews"
+  },
+  "baseline": {
+    "ref": "origin/codex/multica-ming-329",
+    "sha": "6effd8e4f951fd17e1b1e0454942946ebc765da9",
+    "note": "Ancestor includes 324 tip 9118a787 and authority bc798566"
+  },
+  "acceptedBaselineSha": "6effd8e4f951fd17e1b1e0454942946ebc765da9",
+  "stackBaseSha": "6effd8e4f951fd17e1b1e0454942946ebc765da9",
+  "policies": [
+    "docs/book-reviews only this batch",
+    "skip any commit touching references/annotations/*.json",
+    "do not merge SDZJ0170",
+    "do not overwrite wuxing-jingji.json (baseline newer than pack tips)",
+    "do not rewrite ming-324-* or ming-329-* ledgers",
+    "source-reviewed != human verified"
+  ],
+  "inventory": {
+    "alreadyOn329Tip": [
+      {
+        "issue": "MING-315",
+        "path": "docs/book-reviews/shenxiang-quanbian-cp2-review.md",
+        "blobEqual": true
+      },
+      {
+        "issue": "MING-316",
+        "path": "docs/book-reviews/wuxing-jingji-cp2-review.md",
+        "blobEqual": true
+      },
+      {
+        "issue": "MING-318",
+        "path": "docs/book-reviews/wuxing-jingji-cp4-review.md",
+        "blobEqual": true
+      },
+      {
+        "issue": "MING-319",
+        "path": "docs/book-reviews/wuxing-jingji-cp5-review.md",
+        "blobEqual": true
+      }
+    ],
+    "mergedThisBatch": [
+      "MING-312",
+      "MING-313",
+      "MING-317",
+      "MING-335"
+    ],
+    "skipped": [
+      {
+        "issue": "MING-334",
+        "path": "docs/book-reviews/wuxing-jingji-cp6-review.md",
+        "reason": "status in_review (not done); tip 9d15790 review-only but wait for done"
+      },
+      {
+        "issue": "MING-333",
+        "reason": "SDZJ0170 CP2 production; annotation JSON forbidden this batch"
+      }
+    ]
+  },
+  "batch": {
+    "description": "Review-doc incremental merge onto MING-329 tip: missing done review-only commits",
+    "reviews": [
+      {
+        "packKey": "shenxiang-quanbian-cp1-review",
+        "path": "docs/book-reviews/shenxiang-quanbian-cp1-review.md",
+        "sourceIssue": "MING-312",
+        "sourceSha": "28a23af6ae6a61a9bdd45f409d3fd7aded833ef7",
+        "sourceRemote": "origin/codex/multica-ming-312",
+        "cherryPickSha": "3a94c6546cf9bfddf1e9c2915408176fc37b09c8",
+        "blob": "c808ca675b356f0fabb22db69e0999dc83bb15e9",
+        "status": "integrated_pending_acceptance",
+        "notes": "神相全编 CP1 0–299；审查-only；已 done"
+      },
+      {
+        "packKey": "wuxing-jingji-cp1-review",
+        "path": "docs/book-reviews/wuxing-jingji-cp1-review.md",
+        "sourceIssue": "MING-313",
+        "sourceSha": "2eacfd480c47ea08405361a4f0f7de17df60cae3",
+        "sourceRemote": "origin/codex/multica-ming-313",
+        "cherryPickSha": "56f0af46429e80006df04469662d17480d499cac",
+        "blob": "0e6ba50947eb900cf21e243103d6886e01e60c12",
+        "status": "integrated_pending_acceptance",
+        "notes": "五行精纪 CP1 0–299；审查-only；已 done"
+      },
+      {
+        "packKey": "wuxing-jingji-cp3-review",
+        "path": "docs/book-reviews/wuxing-jingji-cp3-review.md",
+        "sourceIssue": "MING-317",
+        "sourceSha": "d8e979896522d21450cb419683eb9d1218c8ae01",
+        "sourceRemote": "origin/codex/multica-ming-317",
+        "cherryPickSha": "626ee01d1a0d7ea9840a61b7d333456a77cc9870",
+        "blob": "545a6efb520c44cbe39c79286fd1b3462eeae88c",
+        "status": "integrated_pending_acceptance",
+        "notes": "五行精纪 CP3 600–899；审查-only；已 done"
+      },
+      {
+        "packKey": "wuxing-jingji-cp7-review",
+        "path": "docs/book-reviews/wuxing-jingji-cp7-review.md",
+        "sourceIssue": "MING-335",
+        "sourceSha": "26e22fc681149662c328d7ce45e1ae317eccdb11",
+        "sourceRemote": "origin/codex/multica-ming-335",
+        "cherryPickSha": "a0f01b1007060000a030b678a34af1b1eb51f45f",
+        "blob": "455f6823771aff0ff4b4f4a7517bb8e89540c703",
+        "status": "integrated_pending_acceptance",
+        "notes": "五行精纪 CP7 1800–2099；审查-only；已 done；同系列缺口补入"
+      }
+    ]
+  },
+  "validation": {
+    "validateAnnotations": {
+      "ok": true,
+      "books": 48,
+      "files": 57,
+      "entries": 41764,
+      "source_reviewed": 39395,
+      "errors": []
+    },
+    "verifiedTrue": 0,
+    "diffVsBaseForbids": {
+      "annotationJson": false,
+      "sdzj0170": false,
+      "wuxingJingjiJsonChanged": false,
+      "ming324ElevenFilesChanged": false,
+      "ming329LedgerChanged": false
+    }
+  },
+  "excludedThisBatch": [
+    "SDZJ0170 annotations / CP2",
+    "wuxing-jingji.json overwrite",
+    "MING-334 CP6 (in_review)",
+    "product repos",
+    "main merge / deploy"
+  ],
+  "candidateIntegrationSha": null,
+  "pendingIndependentReview": true
+}
