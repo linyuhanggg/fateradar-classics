@@ -370,7 +370,8 @@
       "notes": [
         "识典SK1610补本，未经影印校勘；不能当主本独立投票。",
         "网站章节名不等于印本卷号。",
-        "电子原文对照；不是影印校勘，也不是人工 verified。"
+        "电子原文对照；不是影印校勘，也不是人工 verified。",
+        "03:30Z复核：text.md L401 与 original-paragraphs、仓库 fulltext 均作「化象是上」。HY1521 同句作「化象是土」（又作化奐）。他本不写入引文，不补土。"
       ],
       "review": "source-reviewed",
       "verified": false
@@ -5421,7 +5422,8 @@
         "电子原文对照；不是影印校勘，也不是人工 verified。",
         "本段SK1610与仓库fulltext均以「欄」起句；章名「井欄斜义」不能当缺字补入引文。",
         "02:30Z复核：figures.json空、figureCount=0；upstreamPageId 7424506779001274406。无本地影印，缺上字仍 unknown，不发明。",
-        "03:00Z复核：original-paragraphs 本段首行即「欄」；上一段含 pagePass 到同页，欄是新段不是三奇拆行。仓库 HY1521 电子亦在换页后以「欄义」起句，只作他本对照，不补「井」。缺上字仍 unknown。"
+        "03:00Z复核：original-paragraphs 本段首行即「欄」；上一段含 pagePass 到同页，欄是新段不是三奇拆行。仓库 HY1521 电子亦在换页后以「欄义」起句，只作他本对照，不补「井」。缺上字仍 unknown。",
+        "03:30Z复核：text.md L1589 仍以「欄」起；figures.json 空。缺上字仍 unknown，不发明。"
       ],
       "review": "source-reviewed",
       "verified": false
@@ -6392,7 +6394,7 @@
     {
       "paragraphId": "sanming-tonghui:shidian-SK1610:P7426253719349657650",
       "kind": "规则候选",
-      "vernacular": "午时、年支得己、日主辛金，金用巽木为财、离火为官，才内得巽顺、外得离明。若巽居月令则非入格大贵——这是否定。非午时、年无己、或日非阴金，则三台不取。电子离巽分行，按原文读。官职名是原书品级语言。",
+      "vernacular": "午时、日主辛金（阴金），金用巽木为财、离火为官，才内得巽顺、外得离明。若巽居月令则非入格大贵——这是否定。非午时或日非阴金，则三台不取。识典SK1610作「年支得己字」：年支不能是天干己，字形未核，不把「己」当成已核年支条件，也不把「巳」写入本段引文。仓库全文与HY1521作「巳」，只作他本对照，不能当主本投票。电子离巽分行，按原文读。官职名是原书品级语言。",
       "terms": [
         "午时",
         "巽",
@@ -6402,7 +6404,8 @@
       "notes": [
         "识典SK1610补本，未经影印校勘；不能当主本独立投票。",
         "网站章节名不等于印本卷号。",
-        "电子原文对照；不是影印校勘，也不是人工 verified。"
+        "电子原文对照；不是影印校勘，也不是人工 verified。",
+        "03:30Z复核：text.md L1754 与 original-paragraphs 均作「年支得己字」。年支不能是天干；他本「巳」不写入引文。不以年支己为可执行条件。"
       ],
       "review": "source-reviewed",
       "verified": false,
@@ -6412,7 +6415,7 @@
           "title": "时离岁巽日阴金",
           "startLine": 1749,
           "endLine": 1763,
-          "vernacular": "午时、年己、日辛，才内巽外离、三台之贵。",
+          "vernacular": "午时、日辛，才内巽外离。年支SK1610作己，未核，不写入巳。",
           "terms": [
             "午时",
             "辛"
@@ -6969,7 +6972,8 @@
         "电子原文对照；不是影印校勘，也不是人工 verified。",
         "SK1610 text.md 止于「必膺大」。他本「貴」及后解不写入本段原文，不发明字句。",
         "02:30Z复核：figures.json空、figureCount=0；upstreamPageId 7424506809513164840。text.md 末行即本段，后无续行；缺下字仍 unknown。",
-        "03:00Z复核：original-paragraphs 为本册最后一条，仅一行止于「必膺大」，无续段。他本「貴」不写入引文。缺下字仍 unknown。"
+        "03:00Z复核：original-paragraphs 为本册最后一条，仅一行止于「必膺大」，无续段。他本「貴」不写入引文。缺下字仍 unknown。",
+        "03:30Z复核：text.md L1847 仍止于「必膺大」，后无续行。他本「貴」不写入引文。缺下字仍 unknown。"
       ],
       "review": "source-reviewed",
       "verified": false

@@ -139,6 +139,21 @@ class Sk1610UnresolvedSource(unittest.TestCase):
         self.assertFalse(lease.is_copy_template(by_id[lan]["vernacular"]))
         self.assertFalse(lease.is_copy_template(by_id[da]["vernacular"]))
 
+    def test_sk1610_year_branch_ji_stays_unknown_not_rewritten_to_si(self) -> None:
+        root = Path(__file__).resolve().parents[1]
+        path = root / "references/annotations/bazi/sanming-tonghui--shidian-SK1610.json"
+        lines = (root / "sources/normalized/shidianguji/SK1610/text.md").read_text().splitlines()
+        data = json.loads(path.read_text())
+        by_id = {entry["paragraphId"]: entry for entry in data["entries"]}
+        pid = "sanming-tonghui:shidian-SK1610:P7426253719349657650"
+        self.assertIn("年支得己字", lines[1753])
+        vernacular = by_id[pid]["vernacular"]
+        self.assertIn("年支得己字", vernacular)
+        self.assertNotIn("年支得巳", vernacular)
+        self.assertNotIn("年无己", vernacular)
+        self.assertIn("不把「巳」写入", vernacular)
+        self.assertTrue(all(entry.get("verified") is False for entry in data["entries"]))
+
 
 class GitPushCompetition(unittest.TestCase):
     def test_second_ordinary_push_loses_and_does_not_force(self) -> None:
