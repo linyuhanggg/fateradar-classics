@@ -2,6 +2,7 @@
 """Export reviewed chart-reading notes; quoted text must match its source lines."""
 import argparse
 import json
+import subprocess
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -12,7 +13,11 @@ def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--output", default="dist/readings/chart-notes.json")
     args = parser.parse_args()
-    data = json.loads((ROOT / "references/readings/chart-notes.json").read_text())
+    revision = subprocess.check_output(["git", "rev-parse", "HEAD"], cwd=ROOT, text=True).strip()
+    def committed_text(path):
+        return subprocess.check_output(["git", "show", f"{revision}:{path}"], cwd=ROOT, text=True)
+    data = json.loads(committed_text("references/readings/chart-notes.json"))
+    data["sourceRevision"] = revision
     seen = set()
     for note in data["notes"]:
         if note["id"] in seen or note["art"] not in ARTS:
@@ -23,7 +28,7 @@ def main():
         source = note["source"]
         if source["kind"] == "anchored_text":
             anchor = source["anchor"]
-            lines = (ROOT / anchor["file"]).read_text().splitlines()
+            lines = committed_text(anchor["file"]).splitlines()
             start, end = anchor["startLine"], anchor["endLine"]
             if not 1 <= start <= end <= len(lines):
                 raise ValueError(f"Invalid source lines: {note['id']}")

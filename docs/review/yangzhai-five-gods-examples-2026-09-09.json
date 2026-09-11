@@ -1,0 +1,49 @@
+{
+  "scope": "Internal consistency of four printed examples; no calendar-date conversion or real-world effects validated",
+  "cases": [
+    {
+      "line": 2227,
+      "yearStem": "甲",
+      "birthBranch": "子",
+      "targetBranch": "巳",
+      "computedStem": "己",
+      "computedGod": "仓库",
+      "sourceStem": "己",
+      "sourceGod": "仓库",
+      "matches": true
+    },
+    {
+      "line": 2229,
+      "yearStem": "甲",
+      "birthBranch": "丑",
+      "targetBranch": "午",
+      "computedStem": "庚",
+      "computedGod": "白虎",
+      "sourceStem": "庚",
+      "sourceGod": "白虎",
+      "matches": true
+    },
+    {
+      "line": 2231,
+      "yearStem": "庚",
+      "birthBranch": "戌",
+      "targetBranch": "卯",
+      "computedStem": "己",
+      "computedGod": "仓库",
+      "sourceStem": "己",
+      "sourceGod": "仓库",
+      "matches": true
+    },
+    {
+      "line": 2235,
+      "yearStem": "丙",
+      "birthBranch": "巳",
+      "targetBranch": "戌",
+      "computedStem": "戊",
+      "computedGod": "仓库",
+      "sourceStem": null,
+      "sourceGod": "明喜",
+      "matches": false
+    }
+  ]
+}

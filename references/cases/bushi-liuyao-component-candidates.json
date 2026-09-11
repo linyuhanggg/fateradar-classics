@@ -1,0 +1,395 @@
+{
+  "version": 1,
+  "bookSlug": "bushi-zhengzong",
+  "scopeNote": "本批四张静卦只核原书明确输入和主卦组件；不补变卦、公元年或后验准确率。题盘矛盾者留注释待核未选入。",
+  "cases": [
+    {
+      "id": "BSZZ-LY-L4216",
+      "name": "复卦问子嗣，原文明言上爻暗动独发",
+      "kind": "source_case",
+      "inputBasis": "liuyao-line-symbols",
+      "question": "将来有子否",
+      "input": {
+        "monthBranch": "申",
+        "dayGanzhi": "辛卯",
+        "linesBottomUp": [
+          "⚊",
+          "⚋",
+          "⚋",
+          "⚋",
+          "⚋",
+          "⚋"
+        ]
+      },
+      "expected": {
+        "mainGua": "地雷复",
+        "shi": 1,
+        "ying": 4,
+        "mainLines": [
+          {
+            "position": 1,
+            "branch": "子",
+            "element": "水",
+            "kinship": "妻财"
+          },
+          {
+            "position": 2,
+            "branch": "寅",
+            "element": "木",
+            "kinship": "官鬼"
+          },
+          {
+            "position": 3,
+            "branch": "辰",
+            "element": "土",
+            "kinship": "兄弟"
+          },
+          {
+            "position": 4,
+            "branch": "丑",
+            "element": "土",
+            "kinship": "兄弟"
+          },
+          {
+            "position": 5,
+            "branch": "亥",
+            "element": "水",
+            "kinship": "妻财"
+          },
+          {
+            "position": 6,
+            "branch": "酉",
+            "element": "金",
+            "kinship": "子孙"
+          }
+        ]
+      },
+      "sourceReading": "问者已告知有一失散子，作者取上酉孙暗动生世并称独发，解释旧子归来。",
+      "reportedOutcome": "原文称明岁甲辰年失子归来，问意从未来子嗣转旧子，不当现代独立预测验证。",
+      "canRecompute": true,
+      "recomputeScope": [
+        "原卦阴阳",
+        "主卦六亲纳支与世应",
+        "明确日月的旬空与活动条件"
+      ],
+      "unavailable": [
+        "绝对公历年份",
+        "原投币序列或随机种子",
+        "现代独立应验记录"
+      ],
+      "review": "source-reviewed",
+      "verified": false,
+      "sources": [
+        {
+          "paragraphId": "bushi-zhengzong:L3471-L4448",
+          "file": "sources/fulltext/divination/bushi-zhengzong/fulltext.md",
+          "startLine": 4206,
+          "endLine": 4208,
+          "quote": "BSZZ-3283. [part=4 local=502] 占事 占子嗣 占事 占雨久伤麦可否？\nBSZZ-3284. [part=4 local=503] 卦名 地雷复 卦名 天火同人之泽火革\nBSZZ-3285. [part=4 local=504] 卦宫 坤土 空亡 午未 缺爻 父 卦宫 离火 空亡 午未 缺爻"
+        },
+        {
+          "paragraphId": "bushi-zhengzong:L3471-L4448",
+          "file": "sources/fulltext/divination/bushi-zhengzong/fulltext.md",
+          "startLine": 4216,
+          "endLine": 4224,
+          "quote": "BSZZ-3293. [part=4 local=512] 蛇 酉 孙 辛 申 龙 应 Ｏ 戌 孙 未 孙 甲 午\nBSZZ-3294. [part=4 local=513] 陈 亥 财 卯 武 申 财 申\nBSZZ-3295. [part=4 local=514] 雀 应 丑 兄 虎 午 兄\nBSZZ-3296. [part=4 local=515] 龙 辰 兄 蛇 世 亥 官\nBSZZ-3297. [part=4 local=516] 武 寅 官 巳父 陈 丑 孙\nBSZZ-3298. [part=4 local=517] 虎 世 子 财 雀 卯 父\nBSZZ-3299. [part=4 local=518] 来占人曰：我有一子因乱失散今无子，特问将来有子否？\n断曰：子水持世，月建作子孙生世，有子之兆．第六爻酉金子孙暗动生世，亦云独发，在外卦动，所失之子必来之象，问曰：何时得见？\n予曰：明岁甲辰年与酉金相合，定得意而归，后果验．此用神独发冲而逄合之年也． 一友执此卦问？"
+        }
+      ],
+      "notes": [
+        "expected仅逐项转录原题与主爻表；静卦不补变卦。双栏来源只使用本例一侧，另一例文本作为邻接上下文保留。",
+        "电子文字审读不是影印校定，后验不放入数学预期。"
+      ]
+    },
+    {
+      "id": "BSZZ-LY-L3538",
+      "name": "贲卦候文书，伏午父旬空",
+      "kind": "source_case",
+      "inputBasis": "liuyao-line-symbols",
+      "question": "文书何日领",
+      "input": {
+        "monthBranch": "卯",
+        "dayGanzhi": "壬辰",
+        "linesBottomUp": [
+          "⚊",
+          "⚋",
+          "⚊",
+          "⚋",
+          "⚋",
+          "⚊"
+        ]
+      },
+      "expected": {
+        "mainGua": "山火贲",
+        "shi": 1,
+        "ying": 4,
+        "mainLines": [
+          {
+            "position": 1,
+            "branch": "卯",
+            "element": "木",
+            "kinship": "官鬼"
+          },
+          {
+            "position": 2,
+            "branch": "丑",
+            "element": "土",
+            "kinship": "兄弟"
+          },
+          {
+            "position": 3,
+            "branch": "亥",
+            "element": "水",
+            "kinship": "妻财"
+          },
+          {
+            "position": 4,
+            "branch": "戌",
+            "element": "土",
+            "kinship": "兄弟"
+          },
+          {
+            "position": 5,
+            "branch": "子",
+            "element": "水",
+            "kinship": "妻财"
+          },
+          {
+            "position": 6,
+            "branch": "寅",
+            "element": "木",
+            "kinship": "官鬼"
+          }
+        ]
+      },
+      "sourceReading": "父母午火伏二爻丑土下且旬空，原断甲午领文，当前只核装卦和空伏结构。",
+      "reportedOutcome": "原文称甲午日领文；无公元年，不补历史公历。",
+      "canRecompute": true,
+      "recomputeScope": [
+        "原卦阴阳",
+        "主卦六亲纳支与世应",
+        "明确日月的旬空与活动条件"
+      ],
+      "unavailable": [
+        "绝对公历年份",
+        "原投币序列或随机种子",
+        "现代独立应验记录"
+      ],
+      "review": "source-reviewed",
+      "verified": false,
+      "sources": [
+        {
+          "paragraphId": "bushi-zhengzong:L3471-L4448",
+          "file": "sources/fulltext/divination/bushi-zhengzong/fulltext.md",
+          "startLine": 3528,
+          "endLine": 3530,
+          "quote": "BSZZ-2821. [part=4 local=40] 占事 占侯文书何日领？ 占事 占逃仆\nBSZZ-2822. [part=4 local=41] 卦名 山火贲 卦名 水山蹇\nBSZZ-2823. [part=4 local=42] 卦宫 艮土 空亡 午未 缺爻 孙，父 卦宫 兑金 空亡 子丑 缺爻 财"
+        },
+        {
+          "paragraphId": "bushi-zhengzong:L3471-L4448",
+          "file": "sources/fulltext/divination/bushi-zhengzong/fulltext.md",
+          "startLine": 3538,
+          "endLine": 3557,
+          "quote": "BSZZ-2831. [part=4 local=50] 虎 寅 官 壬 卯 龙 子 孙 丁 辰\nBSZZ-2832. [part=4 local=51] 蛇 子 财 辰 武 戌 父 巳\nBSZZ-2833. [part=4 local=52] 陈 应 戌 兄 虎 世 申 兄\nBSZZ-2834. [part=4 local=53] 雀 亥 财 申孙 蛇 申 兄\nBSZZ-2835. [part=4 local=54] 龙 丑 兄 午父 陈 午 官 卯财\nBSZZ-2836. [part=4 local=55] 武 世 卯 官 雀 应 辰 父\nBSZZ-2837. [part=4 local=56] 断曰：午火父母为用神，\n伏于二爻丑土之下，\n又值旬空，\n许甲午日出空必领．果验此应出旬之日也． 断曰：占仆以财爻为用神，\n取兑卦二爻卯木伏于本卦二爻午火之下，\n午火为飞神，\n卯木为伏神．今申金持世克制卯木，\n终不能逃．但因伏去生飞名为泄气．盗去财物必尽于炉火之家．许甲子日拿获．果于子日得窝赌铁匠之家，\n申时拿获．应子日者，\n冲克午火之飞神，\n生起卯木之伏神也．黄金策云：伏无提挈，\n终徒尔飞，\n不推开亦枉然，\n此卦应验是矣．"
+        }
+      ],
+      "notes": [
+        "expected仅逐项转录原题与主爻表；静卦不补变卦。双栏来源只使用本例一侧，另一例文本作为邻接上下文保留。",
+        "电子文字审读不是影印校定，后验不放入数学预期。"
+      ]
+    },
+    {
+      "id": "BSZZ-LY-L4329",
+      "name": "小畜求财，月财与空财并存",
+      "kind": "source_case",
+      "inputBasis": "liuyao-line-symbols",
+      "question": "求财",
+      "input": {
+        "monthBranch": "未",
+        "dayGanzhi": "庚子",
+        "linesBottomUp": [
+          "⚊",
+          "⚊",
+          "⚊",
+          "⚋",
+          "⚊",
+          "⚊"
+        ]
+      },
+      "expected": {
+        "mainGua": "风天小畜",
+        "shi": 1,
+        "ying": 4,
+        "mainLines": [
+          {
+            "position": 1,
+            "branch": "子",
+            "element": "水",
+            "kinship": "父母"
+          },
+          {
+            "position": 2,
+            "branch": "寅",
+            "element": "木",
+            "kinship": "兄弟"
+          },
+          {
+            "position": 3,
+            "branch": "辰",
+            "element": "土",
+            "kinship": "妻财"
+          },
+          {
+            "position": 4,
+            "branch": "未",
+            "element": "土",
+            "kinship": "妻财"
+          },
+          {
+            "position": 5,
+            "branch": "巳",
+            "element": "火",
+            "kinship": "子孙"
+          },
+          {
+            "position": 6,
+            "branch": "卯",
+            "element": "木",
+            "kinship": "兄弟"
+          }
+        ]
+      },
+      "sourceReading": "月未财不空提供总势，辰财旬空被作者另取作到手时间，二者都保留。",
+      "reportedOutcome": "原称甲辰日巳时得财；同一月日小畜场景前文已有，属于同书复述不作独立新增验证。",
+      "canRecompute": true,
+      "recomputeScope": [
+        "原卦阴阳",
+        "主卦六亲纳支与世应",
+        "明确日月的旬空与活动条件"
+      ],
+      "unavailable": [
+        "绝对公历年份",
+        "原投币序列或随机种子",
+        "现代独立应验记录"
+      ],
+      "review": "source-reviewed",
+      "verified": false,
+      "sources": [
+        {
+          "paragraphId": "bushi-zhengzong:L3471-L4448",
+          "file": "sources/fulltext/divination/bushi-zhengzong/fulltext.md",
+          "startLine": 4317,
+          "endLine": 4321,
+          "quote": "BSZZ-3369. [part=4 local=588] 第十七问： 问用神多现，何以取之？\nBSZZ-3370. [part=4 local=589] 答曰： 予屡验者，舍其闲爻而用持世，舍其无权而用月日，舍其不破而用月破，舍用不空而用旬空，天机尽泄于有病之间，断法总在医药之处．\nBSZZ-3371. [part=4 local=590] 占事 占求财 占事 占升迁\nBSZZ-3372. [part=4 local=591] 卦名 风天小畜 卦名 地水师之风水涣\nBSZZ-3373. [part=4 local=592] 卦宫 巽木 空亡 辰巳 缺爻 卦宫 坎水 空亡 辰巳 缺爻"
+        },
+        {
+          "paragraphId": "bushi-zhengzong:L3471-L4448",
+          "file": "sources/fulltext/divination/bushi-zhengzong/fulltext.md",
+          "startLine": 4329,
+          "endLine": 4337,
+          "quote": "BSZZ-3381. [part=4 local=600] 蛇 卯 兄 庚 未 武 应 ｘ 酉 父 卯 孙 甲 未 卯\nBSZZ-3382. [part=4 local=601] 陈 巳 孙 子 虎 ｘ 亥 兄 巳 财 午\nBSZZ-3383. [part=4 local=602] 雀 应 未 财 蛇 丑 官\nBSZZ-3384. [part=4 local=603] 龙 辰 财 陈 世 午 财\nBSZZ-3385. [part=4 local=604] 武 寅 兄 雀 辰 官\nBSZZ-3386. [part=4 local=605] 虎 世 子 父 龙 寅 孙\nBSZZ-3387. [part=4 local=606] 断曰：未土月建为用，何以辰土旬空，空必关因，竟断月内辰日得财．果甲辰日巳时到手，此应出空之日时也，正是舍其不空而用空者． 断曰：日辰世爻极旺，得月建作官星合世，但卦中两现官星一空一破，将何爻为用？\n断其何年升迁？\n则曰：今岁是卯年，来岁辰年，必以辰爻为用，来岁可升，但外卦反吟，常得验者去而复来，果辰年调至河南，五月又调回，十月开督府，一年两调一升，皆应实空之年也．"
+        }
+      ],
+      "notes": [
+        "expected仅逐项转录原题与主爻表；静卦不补变卦。双栏来源只使用本例一侧，另一例文本作为邻接上下文保留。",
+        "电子文字审读不是影印校定，后验不放入数学预期。"
+      ]
+    },
+    {
+      "id": "BSZZ-LY-L4098",
+      "name": "否卦赶去寄信，保留未定位节界",
+      "kind": "source_case",
+      "inputBasis": "liuyao-line-symbols",
+      "question": "赶去寄信可遇否",
+      "input": {
+        "monthBranch": "卯",
+        "dayGanzhi": "甲午",
+        "linesBottomUp": [
+          "⚋",
+          "⚋",
+          "⚋",
+          "⚊",
+          "⚊",
+          "⚊"
+        ]
+      },
+      "expected": {
+        "mainGua": "天地否",
+        "shi": 3,
+        "ying": 6,
+        "mainLines": [
+          {
+            "position": 1,
+            "branch": "未",
+            "element": "土",
+            "kinship": "父母"
+          },
+          {
+            "position": 2,
+            "branch": "巳",
+            "element": "火",
+            "kinship": "官鬼"
+          },
+          {
+            "position": 3,
+            "branch": "卯",
+            "element": "木",
+            "kinship": "妻财"
+          },
+          {
+            "position": 4,
+            "branch": "午",
+            "element": "火",
+            "kinship": "官鬼"
+          },
+          {
+            "position": 5,
+            "branch": "申",
+            "element": "金",
+            "kinship": "兄弟"
+          },
+          {
+            "position": 6,
+            "branch": "戌",
+            "element": "土",
+            "kinship": "父母"
+          }
+        ]
+      },
+      "sourceReading": "应戌父代表所会者/寄信相对方，原要求下一清明前赶去；当前只核六爻结构，不验证未知公元年的交节时刻。",
+      "reportedOutcome": "原文称赶去寄到、次日启程，翌未时清明缺绝对年份不能核成固定日期。",
+      "canRecompute": true,
+      "recomputeScope": [
+        "原卦阴阳",
+        "主卦六亲纳支与世应",
+        "明确日月的旬空与活动条件"
+      ],
+      "unavailable": [
+        "绝对公历年份",
+        "原投币序列或随机种子",
+        "现代独立应验记录"
+      ],
+      "review": "source-reviewed",
+      "verified": false,
+      "sources": [
+        {
+          "paragraphId": "bushi-zhengzong:L3471-L4448",
+          "file": "sources/fulltext/divination/bushi-zhengzong/fulltext.md",
+          "startLine": 4088,
+          "endLine": 4090,
+          "quote": "BSZZ-3195. [part=4 local=414] 占事 占赶去寄信可遇否？ 占事 有同乡人占借贷？\nBSZZ-3196. [part=4 local=415] 卦名 天地否 卦名 地雷复之雷地豫\nBSZZ-3197. [part=4 local=416] 卦宫 干金 空亡 辰巳 缺爻 孙 卦宫 坤土 空亡 申酉 缺爻"
+        },
+        {
+          "paragraphId": "bushi-zhengzong:L3471-L4448",
+          "file": "sources/fulltext/divination/bushi-zhengzong/fulltext.md",
+          "startLine": 4098,
+          "endLine": 4111,
+          "quote": "BSZZ-3205. [part=4 local=424] 武 应 戌 父 甲 卯 武 酉 孙 甲 巳\nBSZZ-3206. [part=4 local=425] 虎 申 兄 午 虎 亥 财 戌\nBSZZ-3207. [part=4 local=426] 蛇 午 官 蛇 应 Ｘ 丑 兄 午 父 午父\nBSZZ-3208. [part=4 local=427] 陈 世 卯 财 陈 辰 兄\nBSZZ-3209. [part=4 local=428] 雀 巳 官 雀 寅 官\nBSZZ-3210. [part=4 local=429] 龙 未 父 子孙 龙 世 Ｏ 子 财 未 兄\nBSZZ-3211. [part=4 local=430] 断曰：卦得六合，\n凡事成就．但明日未时清明节，\n宜星夜赶去，\n必会．恐交清明月建是辰，\n则应被月冲，\n冲即去不能会也，\n果赶去寄之，\n次日即开丹矣． 断曰：六合变六合，"
+        }
+      ],
+      "notes": [
+        "expected仅逐项转录原题与主爻表；静卦不补变卦。双栏来源只使用本例一侧，另一例文本作为邻接上下文保留。",
+        "电子文字审读不是影印校定，后验不放入数学预期。"
+      ]
+    }
+  ]
+}

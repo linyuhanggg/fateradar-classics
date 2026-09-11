@@ -1,0 +1,37 @@
+{
+  "pack": "luming-nayin/yuzhao-shenying",
+  "fulltext": "sources/fulltext/luming-nayin/yuzhao-shenying/fulltext.md",
+  "classification_note": "pattern 是文本模式初筛；annotation 来源另见注解文件；source-reviewed 不等同人工影印核验。same_text_as 仅表示忽略空白后的原文字面相同。",
+  "paragraphs": [
+    {
+      "id": "yuzhao-shenying:L0003-L0009",
+      "start_line": 3,
+      "end_line": 9,
+      "heading": "玉照神应真经",
+      "kind": "序跋目录",
+      "classification_method": "annotation",
+      "char_count": 337,
+      "doubtful": false,
+      "missing_marker": false,
+      "automatic_kind": "待分类",
+      "annotation_file": "references/annotations/luming-nayin/yuzhao-shenying.json",
+      "annotation_review": "source-reviewed",
+      "has_vernacular": true
+    },
+    {
+      "id": "yuzhao-shenying:L0011-L0138",
+      "start_line": 11,
+      "end_line": 138,
+      "heading": "玉照神应真经",
+      "kind": "理论",
+      "classification_method": "annotation",
+      "char_count": 15528,
+      "doubtful": false,
+      "missing_marker": false,
+      "automatic_kind": "操作步骤",
+      "annotation_file": "references/annotations/luming-nayin/yuzhao-shenying.json",
+      "annotation_review": "source-reviewed",
+      "has_vernacular": true
+    }
+  ]
+}
