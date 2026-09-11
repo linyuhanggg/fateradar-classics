@@ -192,6 +192,43 @@ class Sk1610UnresolvedSource(unittest.TestCase):
         self.assertIn("不把「巳」写入", yun_v)
         self.assertTrue(all(entry.get("verified") is False for entry in data["entries"]))
 
+    def test_sk1610_ji_you_chou_and_ji_changsheng_stay_unknown_not_rewritten_to_si(self) -> None:
+        root = Path(__file__).resolve().parents[1]
+        path = root / "references/annotations/bazi/sanming-tonghui--shidian-SK1610.json"
+        lines = (root / "sources/normalized/shidianguji/SK1610/text.md").read_text().splitlines()
+        data = json.loads(path.read_text())
+        by_id = {entry["paragraphId"]: entry for entry in data["entries"]}
+
+        month = "sanming-tonghui:shidian-SK1610:P7426253718758293541"
+        self.assertIn("生己酉丑月", lines[1537])
+        month_v = by_id[month]["vernacular"]
+        self.assertIn("生己酉丑月", month_v)
+        self.assertNotIn("生巳酉丑", month_v)
+        self.assertIn("不把「巳」写入", month_v)
+
+        chang = "sanming-tonghui:shidian-SK1610:P7426253719257317385"
+        self.assertIn("得己字長生", lines[1584])
+        chang_v = by_id[chang]["vernacular"]
+        self.assertIn("得己字长生", chang_v)
+        self.assertNotIn("得巳字", chang_v)
+        self.assertIn("不把「巳」写入", chang_v)
+
+        metal = "sanming-tonghui:shidian-SK1610:P7426253719257366537"
+        self.assertIn("己酉丑金局", lines[1596])
+        metal_v = by_id[metal]["vernacular"]
+        self.assertIn("己酉丑金局", metal_v)
+        self.assertNotIn("柱中巳酉丑", metal_v)
+        self.assertNotIn("「巳酉丑金局」", metal_v)
+        self.assertIn("不把「巳」写入", metal_v)
+
+        root_cut = "sanming-tonghui:shidian-SK1610:P7426253719349542962"
+        self.assertIn("己酉丑栽根帶刃", lines[1711])
+        root_v = by_id[root_cut]["vernacular"]
+        self.assertIn("己酉丑栽根带刃", root_v)
+        self.assertNotIn("巳酉丑栽根", root_v)
+        self.assertIn("不把「巳」写入", root_v)
+        self.assertTrue(all(entry.get("verified") is False for entry in data["entries"]))
+
 
 class GitPushCompetition(unittest.TestCase):
     def test_second_ordinary_push_loses_and_does_not_force(self) -> None:
