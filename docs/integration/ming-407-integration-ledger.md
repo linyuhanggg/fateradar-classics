@@ -34,5 +34,7 @@
 - 未合入 MING-398 CP17；未合入 MING-397 秘本 JSON。
 
 ## 交付 tip
-- 内容合入 tip（4 审查稿）：`1c50bbd02ef77780bf91fdbac3974ad47becdcaa`
-- 内容+账本 tip：交包评论中 `git rev-parse origin/codex/multica-ming-407` 为准（施工分支，非 main）
+- 内容合入 tip（4 审查稿）：
+- 内容+账本首推 tip：
+- 账本 tip 指针提交：
+- 远端 tip：（，施工分支，非 main）
