@@ -1,0 +1,1151 @@
+{
+  "id": "shidian-SK1615",
+  "bookSlug": "taiyi-shenshu",
+  "label": "太乙金鏡式經 · 识典 SK1615 · 待校参考",
+  "file": "sources/normalized/shidianguji/SK1615/text.md",
+  "paragraphIndex": "sources/normalized/shidianguji/SK1615/paragraphs.json",
+  "sourceStatus": "reference-text",
+  "notes": [
+    "识典现成原文字段，未采用网站译文；未完成逐字影印校勘。",
+    "网站章节名与印本卷号可能不一致，引用卷号须以正文或影印核定。",
+    "网页目录段落取齐不等于古本全帙无缺；同版子篇不计独立来源。",
+    "本次仅收录部分章节，缺失范围见来源清单。"
+  ],
+  "upstreamBookId": "SK1615",
+  "upstreamVersion": 4,
+  "catalogComplete": false,
+  "missingChapters": [
+    {
+      "chapterId": "1l9lincecu6fd",
+      "expected": 4,
+      "actual": 0
+    },
+    {
+      "chapterId": "1l9linced179l",
+      "expected": 3,
+      "actual": 0
+    },
+    {
+      "chapterId": "1l9lir71oidda",
+      "expected": 16,
+      "actual": 0
+    },
+    {
+      "chapterId": "1l9lir71olvse",
+      "expected": 5,
+      "actual": 0
+    },
+    {
+      "chapterId": "1l9lir71onmzy",
+      "expected": 2,
+      "actual": 0
+    },
+    {
+      "chapterId": "1l9lir71onzn2",
+      "expected": 2,
+      "actual": 0
+    },
+    {
+      "chapterId": "1l9lir71ooca6",
+      "expected": 2,
+      "actual": 0
+    },
+    {
+      "chapterId": "1l9lir71oooxa",
+      "expected": 2,
+      "actual": 0
+    },
+    {
+      "chapterId": "1l9lir71op1ke",
+      "expected": 2,
+      "actual": 0
+    },
+    {
+      "chapterId": "1l9lir71ope7i",
+      "expected": 2,
+      "actual": 0
+    },
+    {
+      "chapterId": "1l9lir71opqum",
+      "expected": 8,
+      "actual": 0
+    },
+    {
+      "chapterId": "1l9lir71oq3hq",
+      "expected": 2,
+      "actual": 0
+    },
+    {
+      "chapterId": "1l9lir71oqg4u",
+      "expected": 4,
+      "actual": 0
+    },
+    {
+      "chapterId": "1l9lir71or5f2",
+      "expected": 2,
+      "actual": 0
+    },
+    {
+      "chapterId": "1l9lir71ori26",
+      "expected": 2,
+      "actual": 0
+    },
+    {
+      "chapterId": "1l9lir71orupa",
+      "expected": 2,
+      "actual": 0
+    },
+    {
+      "chapterId": "1l9lir71os7ce",
+      "expected": 3,
+      "actual": 0
+    },
+    {
+      "chapterId": "1l9lir71otyjy",
+      "expected": 2,
+      "actual": 0
+    },
+    {
+      "chapterId": "1l9lir71oub72",
+      "expected": 2,
+      "actual": 0
+    },
+    {
+      "chapterId": "1l9lir71ounu6",
+      "expected": 2,
+      "actual": 0
+    },
+    {
+      "chapterId": "1l9lir71ov0ha",
+      "expected": 4,
+      "actual": 0
+    },
+    {
+      "chapterId": "1l9lir71ovd4e",
+      "expected": 3,
+      "actual": 0
+    },
+    {
+      "chapterId": "1l9lir71ow2em",
+      "expected": 2,
+      "actual": 0
+    },
+    {
+      "chapterId": "1l9lir739cyru",
+      "expected": 2,
+      "actual": 0
+    },
+    {
+      "chapterId": "1l9lir739dbey",
+      "expected": 2,
+      "actual": 0
+    },
+    {
+      "chapterId": "1l9lir739do22",
+      "expected": 2,
+      "actual": 0
+    },
+    {
+      "chapterId": "1l9lir739e0p6",
+      "expected": 2,
+      "actual": 0
+    },
+    {
+      "chapterId": "1l9lir739edca",
+      "expected": 2,
+      "actual": 0
+    },
+    {
+      "chapterId": "1l9lir739epze",
+      "expected": 2,
+      "actual": 0
+    },
+    {
+      "chapterId": "1l9lir739f2mi",
+      "expected": 2,
+      "actual": 0
+    },
+    {
+      "chapterId": "1l9lir739ff9m",
+      "expected": 3,
+      "actual": 0
+    },
+    {
+      "chapterId": "1l9lir739frwq",
+      "expected": 5,
+      "actual": 0
+    },
+    {
+      "chapterId": "1l9lir739g4ju",
+      "expected": 8,
+      "actual": 0
+    },
+    {
+      "chapterId": "1l9lir739gh6y",
+      "expected": 3,
+      "actual": 0
+    },
+    {
+      "chapterId": "1l9lir739h6h6",
+      "expected": 2,
+      "actual": 0
+    },
+    {
+      "chapterId": "1l9lir739hj4a",
+      "expected": 2,
+      "actual": 0
+    },
+    {
+      "chapterId": "1l9lir739hvre",
+      "expected": 2,
+      "actual": 0
+    },
+    {
+      "chapterId": "1l9lir739i8ei",
+      "expected": 5,
+      "actual": 0
+    },
+    {
+      "chapterId": "1l9lir739il1m",
+      "expected": 20,
+      "actual": 0
+    },
+    {
+      "chapterId": "1l9lir739ixoq",
+      "expected": 5,
+      "actual": 0
+    },
+    {
+      "chapterId": "1l9lir739jabu",
+      "expected": 2,
+      "actual": 0
+    },
+    {
+      "chapterId": "1l9lir739jmyy",
+      "expected": 4,
+      "actual": 0
+    },
+    {
+      "chapterId": "1l9lir739jzm2",
+      "expected": 2,
+      "actual": 0
+    },
+    {
+      "chapterId": "1l9lir739kc96",
+      "expected": 3,
+      "actual": 0
+    },
+    {
+      "chapterId": "1l9lir739kowa",
+      "expected": 2,
+      "actual": 0
+    },
+    {
+      "chapterId": "1l9lir7w2k3dm",
+      "expected": 8,
+      "actual": 0
+    },
+    {
+      "chapterId": "1l9lir7w2ksnu",
+      "expected": 2,
+      "actual": 0
+    },
+    {
+      "chapterId": "1l9lir7w2l5ay",
+      "expected": 2,
+      "actual": 0
+    },
+    {
+      "chapterId": "1l9lir7w2lhy2",
+      "expected": 3,
+      "actual": 0
+    },
+    {
+      "chapterId": "1l9lir7w2lul6",
+      "expected": 2,
+      "actual": 0
+    },
+    {
+      "chapterId": "1l9lir7w2m78a",
+      "expected": 15,
+      "actual": 0
+    },
+    {
+      "chapterId": "1l9lir7w2mjve",
+      "expected": 2,
+      "actual": 0
+    },
+    {
+      "chapterId": "1l9lir7w2mwii",
+      "expected": 3,
+      "actual": 0
+    },
+    {
+      "chapterId": "1l9lir7w2n95m",
+      "expected": 7,
+      "actual": 0
+    },
+    {
+      "chapterId": "1l9lir7w2nlsq",
+      "expected": 2,
+      "actual": 0
+    },
+    {
+      "chapterId": "1l9lir7yw2oez",
+      "expected": 2,
+      "actual": 0
+    },
+    {
+      "chapterId": "1l9lir8uo9qu2",
+      "expected": 7,
+      "actual": 0
+    },
+    {
+      "chapterId": "1l9lir8uoag4a",
+      "expected": 2,
+      "actual": 0
+    },
+    {
+      "chapterId": "1l9lir8uoasre",
+      "expected": 2,
+      "actual": 0
+    },
+    {
+      "chapterId": "1l9lir8uob5ei",
+      "expected": 2,
+      "actual": 0
+    },
+    {
+      "chapterId": "1l9lir8uobi1m",
+      "expected": 2,
+      "actual": 0
+    },
+    {
+      "chapterId": "1l9lir8uobuoq",
+      "expected": 2,
+      "actual": 0
+    },
+    {
+      "chapterId": "1l9lir8uoc7bu",
+      "expected": 2,
+      "actual": 0
+    },
+    {
+      "chapterId": "1l9lir8uocjyy",
+      "expected": 2,
+      "actual": 0
+    },
+    {
+      "chapterId": "1l9lir8uocwm2",
+      "expected": 2,
+      "actual": 0
+    },
+    {
+      "chapterId": "1l9lir8uod996",
+      "expected": 2,
+      "actual": 0
+    },
+    {
+      "chapterId": "1l9lir8uodlwa",
+      "expected": 2,
+      "actual": 0
+    },
+    {
+      "chapterId": "1l9lir8uodyje",
+      "expected": 2,
+      "actual": 0
+    },
+    {
+      "chapterId": "1l9lir8uoeb6i",
+      "expected": 3,
+      "actual": 0
+    },
+    {
+      "chapterId": "1l9lir8uoentm",
+      "expected": 19,
+      "actual": 0
+    },
+    {
+      "chapterId": "1l9lir8uof0gq",
+      "expected": 13,
+      "actual": 0
+    },
+    {
+      "chapterId": "1l9lir8uofd3u",
+      "expected": 18,
+      "actual": 0
+    },
+    {
+      "chapterId": "1l9lir8uofpqy",
+      "expected": 2,
+      "actual": 0
+    },
+    {
+      "chapterId": "1l9lir94logsp",
+      "expected": 2,
+      "actual": 0
+    },
+    {
+      "chapterId": "1l9lir94lotft",
+      "expected": 2,
+      "actual": 0
+    },
+    {
+      "chapterId": "1l9lir94lp62x",
+      "expected": 2,
+      "actual": 0
+    },
+    {
+      "chapterId": "1l9lir94lpiq1",
+      "expected": 2,
+      "actual": 0
+    },
+    {
+      "chapterId": "1l9lir94lpvd5",
+      "expected": 3,
+      "actual": 0
+    },
+    {
+      "chapterId": "1l9lir94lq809",
+      "expected": 2,
+      "actual": 0
+    },
+    {
+      "chapterId": "1l9lir94lqknd",
+      "expected": 2,
+      "actual": 0
+    },
+    {
+      "chapterId": "1l9lir94lqxah",
+      "expected": 2,
+      "actual": 0
+    },
+    {
+      "chapterId": "1l9lir94lr9xl",
+      "expected": 2,
+      "actual": 0
+    },
+    {
+      "chapterId": "1l9lir94lrmkp",
+      "expected": 2,
+      "actual": 0
+    },
+    {
+      "chapterId": "1l9lir94lrz7t",
+      "expected": 2,
+      "actual": 0
+    },
+    {
+      "chapterId": "1l9lira3crymh",
+      "expected": 8,
+      "actual": 0
+    },
+    {
+      "chapterId": "1l9lira3csnwp",
+      "expected": 2,
+      "actual": 0
+    },
+    {
+      "chapterId": "1l9lira3ct0jt",
+      "expected": 2,
+      "actual": 0
+    },
+    {
+      "chapterId": "1l9lira3ctd6x",
+      "expected": 2,
+      "actual": 0
+    },
+    {
+      "chapterId": "1l9lira3ctpu1",
+      "expected": 2,
+      "actual": 0
+    },
+    {
+      "chapterId": "1l9lira3cu2h5",
+      "expected": 10,
+      "actual": 0
+    },
+    {
+      "chapterId": "1l9lira3cuf49",
+      "expected": 3,
+      "actual": 0
+    },
+    {
+      "chapterId": "1l9lira3currd",
+      "expected": 2,
+      "actual": 0
+    },
+    {
+      "chapterId": "1l9lira3cv4eh",
+      "expected": 3,
+      "actual": 0
+    },
+    {
+      "chapterId": "1l9lira3cvh1l",
+      "expected": 3,
+      "actual": 0
+    },
+    {
+      "chapterId": "1l9lira3cvtop",
+      "expected": 2,
+      "actual": 0
+    },
+    {
+      "chapterId": "1l9lira3cw6bt",
+      "expected": 9,
+      "actual": 0
+    },
+    {
+      "chapterId": "1l9lira3cwiyx",
+      "expected": 2,
+      "actual": 0
+    },
+    {
+      "chapterId": "1l9lira3cwvm1",
+      "expected": 2,
+      "actual": 0
+    },
+    {
+      "chapterId": "1l9lira3cx895",
+      "expected": 2,
+      "actual": 0
+    },
+    {
+      "chapterId": "1l9lira3cxkw9",
+      "expected": 2,
+      "actual": 0
+    },
+    {
+      "chapterId": "1l9lira54w6cz",
+      "expected": 2,
+      "actual": 0
+    },
+    {
+      "chapterId": "1l9lira54wj03",
+      "expected": 2,
+      "actual": 0
+    },
+    {
+      "chapterId": "1l9lira54wvn7",
+      "expected": 2,
+      "actual": 0
+    },
+    {
+      "chapterId": "1l9lira54x8ab",
+      "expected": 2,
+      "actual": 0
+    },
+    {
+      "chapterId": "1l9lira54xkxf",
+      "expected": 2,
+      "actual": 0
+    },
+    {
+      "chapterId": "1l9lira54xxkj",
+      "expected": 2,
+      "actual": 0
+    },
+    {
+      "chapterId": "1l9lira54ya7n",
+      "expected": 2,
+      "actual": 0
+    },
+    {
+      "chapterId": "1l9lira54ymur",
+      "expected": 2,
+      "actual": 0
+    },
+    {
+      "chapterId": "1l9lira54yzhv",
+      "expected": 2,
+      "actual": 0
+    },
+    {
+      "chapterId": "1l9lira54zc4z",
+      "expected": 2,
+      "actual": 0
+    },
+    {
+      "chapterId": "1l9lira54zos3",
+      "expected": 2,
+      "actual": 0
+    },
+    {
+      "chapterId": "1l9lira5501f7",
+      "expected": 2,
+      "actual": 0
+    },
+    {
+      "chapterId": "1l9lira550e2b",
+      "expected": 2,
+      "actual": 0
+    },
+    {
+      "chapterId": "1l9lira550qpf",
+      "expected": 2,
+      "actual": 0
+    },
+    {
+      "chapterId": "1l9lira5513cj",
+      "expected": 2,
+      "actual": 0
+    },
+    {
+      "chapterId": "1l9lira551fzn",
+      "expected": 2,
+      "actual": 0
+    },
+    {
+      "chapterId": "1l9lira551smr",
+      "expected": 2,
+      "actual": 0
+    },
+    {
+      "chapterId": "1l9lira55259v",
+      "expected": 2,
+      "actual": 0
+    },
+    {
+      "chapterId": "1l9lira552hwz",
+      "expected": 2,
+      "actual": 0
+    },
+    {
+      "chapterId": "1l9lira552uk3",
+      "expected": 2,
+      "actual": 0
+    },
+    {
+      "chapterId": "1l9lira553777",
+      "expected": 2,
+      "actual": 0
+    },
+    {
+      "chapterId": "1l9lira553jub",
+      "expected": 2,
+      "actual": 0
+    },
+    {
+      "chapterId": "1l9lira553whf",
+      "expected": 2,
+      "actual": 0
+    },
+    {
+      "chapterId": "1l9lira55494j",
+      "expected": 2,
+      "actual": 0
+    },
+    {
+      "chapterId": "1l9lira554lrn",
+      "expected": 2,
+      "actual": 0
+    },
+    {
+      "chapterId": "1l9lira554yer",
+      "expected": 2,
+      "actual": 0
+    },
+    {
+      "chapterId": "1l9lira555b1v",
+      "expected": 2,
+      "actual": 0
+    },
+    {
+      "chapterId": "1l9lira555noz",
+      "expected": 2,
+      "actual": 0
+    },
+    {
+      "chapterId": "1l9lira5560c3",
+      "expected": 2,
+      "actual": 0
+    },
+    {
+      "chapterId": "1l9lira556cz7",
+      "expected": 2,
+      "actual": 0
+    },
+    {
+      "chapterId": "1l9lira556pmb",
+      "expected": 2,
+      "actual": 0
+    },
+    {
+      "chapterId": "1l9lira55729f",
+      "expected": 2,
+      "actual": 0
+    },
+    {
+      "chapterId": "1l9lira557ewj",
+      "expected": 2,
+      "actual": 0
+    },
+    {
+      "chapterId": "1l9lira557rjn",
+      "expected": 2,
+      "actual": 0
+    },
+    {
+      "chapterId": "1l9lira55846r",
+      "expected": 2,
+      "actual": 0
+    },
+    {
+      "chapterId": "1l9lira558gtv",
+      "expected": 2,
+      "actual": 0
+    },
+    {
+      "chapterId": "1l9lira558tgz",
+      "expected": 2,
+      "actual": 0
+    },
+    {
+      "chapterId": "1l9lira559643",
+      "expected": 2,
+      "actual": 0
+    },
+    {
+      "chapterId": "1l9lira559ir7",
+      "expected": 2,
+      "actual": 0
+    },
+    {
+      "chapterId": "1l9lira559veb",
+      "expected": 2,
+      "actual": 0
+    },
+    {
+      "chapterId": "1l9lira55a81f",
+      "expected": 2,
+      "actual": 0
+    },
+    {
+      "chapterId": "1l9lira55akoj",
+      "expected": 2,
+      "actual": 0
+    },
+    {
+      "chapterId": "1l9lira55axbn",
+      "expected": 2,
+      "actual": 0
+    },
+    {
+      "chapterId": "1l9lira55b9yr",
+      "expected": 2,
+      "actual": 0
+    },
+    {
+      "chapterId": "1l9lira55bmlv",
+      "expected": 2,
+      "actual": 0
+    },
+    {
+      "chapterId": "1l9lira55bz8z",
+      "expected": 2,
+      "actual": 0
+    },
+    {
+      "chapterId": "1l9lira55cbw3",
+      "expected": 2,
+      "actual": 0
+    },
+    {
+      "chapterId": "1l9lira55coj7",
+      "expected": 2,
+      "actual": 0
+    },
+    {
+      "chapterId": "1l9lira55d16b",
+      "expected": 2,
+      "actual": 0
+    },
+    {
+      "chapterId": "1l9lira55ddtf",
+      "expected": 2,
+      "actual": 0
+    },
+    {
+      "chapterId": "1l9lira55dqgj",
+      "expected": 2,
+      "actual": 0
+    },
+    {
+      "chapterId": "1l9lira55e33n",
+      "expected": 5,
+      "actual": 0
+    },
+    {
+      "chapterId": "1l9lirahs2a7n",
+      "expected": 8,
+      "actual": 0
+    },
+    {
+      "chapterId": "1l9lirahs2zhv",
+      "expected": 2,
+      "actual": 0
+    },
+    {
+      "chapterId": "1l9lirahs3c4z",
+      "expected": 3,
+      "actual": 0
+    },
+    {
+      "chapterId": "1l9lirahs3os3",
+      "expected": 2,
+      "actual": 0
+    },
+    {
+      "chapterId": "1l9lirahs41f7",
+      "expected": 2,
+      "actual": 0
+    },
+    {
+      "chapterId": "1l9lirahs4e2b",
+      "expected": 2,
+      "actual": 0
+    },
+    {
+      "chapterId": "1l9lirahs4qpf",
+      "expected": 2,
+      "actual": 0
+    },
+    {
+      "chapterId": "1l9lirahs53cj",
+      "expected": 2,
+      "actual": 0
+    },
+    {
+      "chapterId": "1l9lirahs5fzn",
+      "expected": 2,
+      "actual": 0
+    },
+    {
+      "chapterId": "1l9lirahs5smr",
+      "expected": 2,
+      "actual": 0
+    },
+    {
+      "chapterId": "1l9lirahs659v",
+      "expected": 2,
+      "actual": 0
+    },
+    {
+      "chapterId": "1l9lirahs6hwz",
+      "expected": 2,
+      "actual": 0
+    },
+    {
+      "chapterId": "1l9lirahs6uk3",
+      "expected": 2,
+      "actual": 0
+    },
+    {
+      "chapterId": "1l9lirahs7777",
+      "expected": 2,
+      "actual": 0
+    },
+    {
+      "chapterId": "1l9lirahs7jub",
+      "expected": 2,
+      "actual": 0
+    },
+    {
+      "chapterId": "1l9lirahs7whf",
+      "expected": 2,
+      "actual": 0
+    },
+    {
+      "chapterId": "1l9lirahs894j",
+      "expected": 2,
+      "actual": 0
+    },
+    {
+      "chapterId": "1l9lirb4iscga",
+      "expected": 8,
+      "actual": 0
+    },
+    {
+      "chapterId": "1l9lirb4it1qi",
+      "expected": 2,
+      "actual": 0
+    },
+    {
+      "chapterId": "1l9lirb4itedm",
+      "expected": 2,
+      "actual": 0
+    },
+    {
+      "chapterId": "1l9lirb4itr0q",
+      "expected": 2,
+      "actual": 0
+    },
+    {
+      "chapterId": "1l9lirb4iu3nu",
+      "expected": 2,
+      "actual": 0
+    },
+    {
+      "chapterId": "1l9lirb4iugay",
+      "expected": 2,
+      "actual": 0
+    },
+    {
+      "chapterId": "1l9lirb4iusy2",
+      "expected": 2,
+      "actual": 0
+    },
+    {
+      "chapterId": "1l9lirb4iv5l6",
+      "expected": 2,
+      "actual": 0
+    },
+    {
+      "chapterId": "1l9lirb4ivi8a",
+      "expected": 2,
+      "actual": 0
+    },
+    {
+      "chapterId": "1l9lirb4ivuve",
+      "expected": 2,
+      "actual": 0
+    },
+    {
+      "chapterId": "1l9lirb4iw7ii",
+      "expected": 2,
+      "actual": 0
+    },
+    {
+      "chapterId": "1l9lirb4iwk5m",
+      "expected": 2,
+      "actual": 0
+    },
+    {
+      "chapterId": "1l9lirb4iwwsq",
+      "expected": 2,
+      "actual": 0
+    },
+    {
+      "chapterId": "1l9lirb4ix9fu",
+      "expected": 2,
+      "actual": 0
+    },
+    {
+      "chapterId": "1l9lirb4ixm2y",
+      "expected": 2,
+      "actual": 0
+    },
+    {
+      "chapterId": "1l9lirb4ixyq2",
+      "expected": 2,
+      "actual": 0
+    },
+    {
+      "chapterId": "1l9lirb4iybd6",
+      "expected": 2,
+      "actual": 0
+    },
+    {
+      "chapterId": "1l9lirb4iyo0a",
+      "expected": 13,
+      "actual": 0
+    },
+    {
+      "chapterId": "1l9lirbongtgb",
+      "expected": 4,
+      "actual": 0
+    },
+    {
+      "chapterId": "1l9lirbonhiqj",
+      "expected": 2,
+      "actual": 0
+    },
+    {
+      "chapterId": "1l9lirboni80r",
+      "expected": 3,
+      "actual": 0
+    },
+    {
+      "chapterId": "1l9lirboniknv",
+      "expected": 3,
+      "actual": 0
+    },
+    {
+      "chapterId": "1l9lirbonixaz",
+      "expected": 3,
+      "actual": 0
+    },
+    {
+      "chapterId": "1l9lirbonj9y3",
+      "expected": 3,
+      "actual": 0
+    },
+    {
+      "chapterId": "1l9lirbonjml7",
+      "expected": 3,
+      "actual": 0
+    },
+    {
+      "chapterId": "1l9lirbonjz8b",
+      "expected": 3,
+      "actual": 0
+    },
+    {
+      "chapterId": "1l9lirbonkbvf",
+      "expected": 2,
+      "actual": 0
+    },
+    {
+      "chapterId": "1l9lirbonkoij",
+      "expected": 4,
+      "actual": 0
+    },
+    {
+      "chapterId": "1l9lirbonl15n",
+      "expected": 3,
+      "actual": 0
+    },
+    {
+      "chapterId": "1l9lirbonldsr",
+      "expected": 2,
+      "actual": 0
+    },
+    {
+      "chapterId": "1l9lirbonlqfv",
+      "expected": 3,
+      "actual": 0
+    },
+    {
+      "chapterId": "1l9lirbpy31gb",
+      "expected": 3,
+      "actual": 0
+    },
+    {
+      "chapterId": "1l9lirbpz13q3",
+      "expected": 5,
+      "actual": 0
+    },
+    {
+      "chapterId": "1l9lirbpz1t0b",
+      "expected": 1,
+      "actual": 0
+    },
+    {
+      "chapterId": "1l9lirc3yij9l",
+      "expected": 2,
+      "actual": 0
+    },
+    {
+      "chapterId": "1l9lirc3yivwp",
+      "expected": 2,
+      "actual": 0
+    },
+    {
+      "chapterId": "1l9lirc3yj8jt",
+      "expected": 2,
+      "actual": 0
+    },
+    {
+      "chapterId": "1l9lirc3yjl6x",
+      "expected": 2,
+      "actual": 0
+    },
+    {
+      "chapterId": "1l9lirc3yjxu1",
+      "expected": 8,
+      "actual": 0
+    },
+    {
+      "chapterId": "1l9lirc3ykah5",
+      "expected": 6,
+      "actual": 0
+    },
+    {
+      "chapterId": "1l9lirc3ykn49",
+      "expected": 2,
+      "actual": 0
+    },
+    {
+      "chapterId": "1l9lirc3ykzrd",
+      "expected": 2,
+      "actual": 0
+    },
+    {
+      "chapterId": "1l9lirckc7x9u",
+      "expected": 2,
+      "actual": 0
+    },
+    {
+      "chapterId": "1l9lirckc89wy",
+      "expected": 2,
+      "actual": 0
+    },
+    {
+      "chapterId": "1l9lirckc8mk2",
+      "expected": 2,
+      "actual": 0
+    },
+    {
+      "chapterId": "1l9lirckc8z76",
+      "expected": 2,
+      "actual": 0
+    },
+    {
+      "chapterId": "1l9lirckc9bua",
+      "expected": 3,
+      "actual": 0
+    },
+    {
+      "chapterId": "1l9lirckc9ohe",
+      "expected": 2,
+      "actual": 0
+    },
+    {
+      "chapterId": "1l9lirckca14i",
+      "expected": 2,
+      "actual": 0
+    },
+    {
+      "chapterId": "1l9lirckcadrm",
+      "expected": 2,
+      "actual": 0
+    },
+    {
+      "chapterId": "1l9lirckcaqeq",
+      "expected": 2,
+      "actual": 0
+    },
+    {
+      "chapterId": "1l9lirckcb31u",
+      "expected": 2,
+      "actual": 0
+    },
+    {
+      "chapterId": "1l9lirckcbfoy",
+      "expected": 2,
+      "actual": 0
+    },
+    {
+      "chapterId": "1l9lirckcbsc2",
+      "expected": 2,
+      "actual": 0
+    },
+    {
+      "chapterId": "1l9lirckcc4z6",
+      "expected": 3,
+      "actual": 0
+    },
+    {
+      "chapterId": "1l9lirckcchma",
+      "expected": 2,
+      "actual": 0
+    },
+    {
+      "chapterId": "1l9lirckccu9e",
+      "expected": 2,
+      "actual": 0
+    }
+  ],
+  "paragraphCount": 105,
+  "figureCount": 0
+}

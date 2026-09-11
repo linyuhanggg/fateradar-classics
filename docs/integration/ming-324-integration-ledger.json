@@ -1,0 +1,218 @@
+{
+  "schemaVersion": 1,
+  "issue": "MING-324",
+  "issueId": "01a090d4-99c1-7843-bf5d-2ecc030fdfb2",
+  "generatedAt": "2026-09-11T14:24:51.611121+00:00",
+  "repo": "https://github.com/linyuhanggg/fateradar-classics",
+  "integrationBranch": "codex/multica-ming-324",
+  "worktree": "fateradar-multica-ming-324",
+  "baseline": {
+    "ref": "origin/codex/full-library-completion",
+    "sha": "bc798566da77c30e149abf9673c88ecc386702b2",
+    "note": "Multica classics review authority (orphan snapshot vs origin/main). origin/main is NOT the Multica annotation delivery line."
+  },
+  "acceptedBaselineSha": "bc798566da77c30e149abf9673c88ecc386702b2",
+  "candidateIntegrationSha": "de2105601a59f5afa18b63cc16dc4e5b7cb57fff",
+  "policies": [
+    "dedupe by annotation path + paragraphId + content hash; do not treat mere ancestry as missing",
+    "preserve source-reviewed / draft / verified=false; never forge human verified",
+    "do not whole-file overwrite newer baseline packs (e.g. keep baseline wuxing-jingji.json)",
+    "do not merge in_review packages",
+    "product MING-320/321/322 out of scope"
+  ],
+  "batch1": {
+    "description": "First content merge: three independently reviewed shidian annotation packs missing from full-library-completion",
+    "packs": [
+      {
+        "sourceIssue": "MING-98",
+        "sourceSha": "9e2f2f2df140d72244a47fa2dc93b8b7f8069499",
+        "sourceRemote": "origin/codex/multica-ming-98",
+        "reviewIssue": "MING-130",
+        "reviewSha": "71a417553831c1ef9c746668b07cde0170205886",
+        "reviewRemote": "origin/codex/multica-ming-130",
+        "textSha256": "707ac9bc6796bdb679833fc280040485d95b36da6f7aca0b3e2adbb9e57d19d3",
+        "notes": "HY1521 full edition 0-2339; source-reviewed≠verified; draft=2 retained",
+        "packKey": "HY1521",
+        "annotationPath": "references/annotations/bazi/sanming-tonghui--shidian-HY1521.json",
+        "annotationBlob": "3b98d6441e59f3947d14cc34bc9f1a20709c3db9",
+        "annotationContentSha256": "82ff378aae954036de11b47f3479f8a8fd2f28b3e438905b03f1c6738b218f3f",
+        "entries": 2340,
+        "sourceReviewed": 2338,
+        "draft": 2,
+        "verifiedTrue": 0,
+        "status": "integrated_pending_acceptance",
+        "blocker": null
+      },
+      {
+        "sourceIssue": "MING-102",
+        "sourceSha": "5f9a25a1ceddad888e3656022038af24c746cc11",
+        "sourceRemote": "origin/codex/multica-ming-102",
+        "reviewIssue": "MING-107",
+        "reviewSha": "8fa7dedd394228f13c2e4f95dcd8e9d74661d579",
+        "reviewRemote": "origin/codex/multica-ming-107",
+        "textSha256": "a5b639ad155b4de2b12ac23a8e37028c46d07923bc5a16a4f406eed8855b97c8",
+        "notes": "16 entries; draft=1 retained; source-reviewed≠verified",
+        "packKey": "SK1605",
+        "annotationPath": "references/annotations/luming-nayin/luoluzi-sanming--shidian-SK1605.json",
+        "annotationBlob": "2c028a7c17ebd9e894894206309fd37deca70e8b",
+        "annotationContentSha256": "3db6dca03a55761a2cdbe970756e28943eeea8aa6a675ecc273d40397219fcfa",
+        "entries": 16,
+        "sourceReviewed": 15,
+        "draft": 1,
+        "verifiedTrue": 0,
+        "status": "integrated_pending_acceptance",
+        "blocker": null
+      },
+      {
+        "sourceIssue": "MING-168",
+        "sourceSha": "a4c1eda8d1a0d21564c4f8bc8967eba5b46f72f5",
+        "sourceRemote": "origin/codex/multica-ming-168",
+        "reviewIssue": "MING-174",
+        "reviewSha": "e3336c0133dd7b9c01ea74812a4512dc70f28779",
+        "reviewRemote": "origin/codex/multica-ming-174",
+        "reviewIssueCp1": "MING-163",
+        "reviewShaCp1": "005690c76f90796ae0cad9ba8de2250c64909b43",
+        "textSha256": "c101c5a29e96da89e45fdb3b01c879308c74767d1071531e202706c50791e34a",
+        "notes": "CP1+CP2 cumulative 670; source-reviewed≠verified; CP1 review MING-163 also integrated",
+        "packKey": "SK1573",
+        "annotationPath": "references/annotations/divination/huangji-jingshi--shidian-SK1573.json",
+        "annotationBlob": "f13177dc55c0e9bf4f49923bbd594e0c23f70659",
+        "annotationContentSha256": "05a054d299a123ed20d5c6edaf3a921f0eb3e9fe13a2d9854ecd6ce82effb513",
+        "entries": 670,
+        "sourceReviewed": 670,
+        "draft": 0,
+        "verifiedTrue": 0,
+        "status": "integrated_pending_acceptance",
+        "blocker": null
+      }
+    ],
+    "validation": {
+      "validateAnnotationsBatch": [
+        {
+          "file": "sanming-tonghui--shidian-HY1521.json",
+          "ok": true,
+          "entries": 2340,
+          "source_reviewed": 2338
+        },
+        {
+          "file": "luoluzi-sanming--shidian-SK1605.json",
+          "ok": true,
+          "entries": 16,
+          "source_reviewed": 15
+        },
+        {
+          "file": "huangji-jingshi--shidian-SK1573.json",
+          "ok": true,
+          "entries": 670,
+          "source_reviewed": 670
+        }
+      ],
+      "validateAnnotationsFull": {
+        "ok": true,
+        "files": 53,
+        "entries": 31817,
+        "source_reviewed": 30386,
+        "errors": []
+      },
+      "duplicateParagraphIdsInBatch": 0,
+      "mainEditionOverwrite": "none (shidian files are additive; wuxing-jingji.json unchanged)"
+    },
+    "mergeCommit": "de2105601a59f5afa18b63cc16dc4e5b7cb57fff"
+  },
+  "pendingMissingOnBaseline": [
+    {
+      "packKey": "daliuren-daquan",
+      "path": "references/annotations/san-shi/daliuren-daquan.json",
+      "sourceIssue": "MING-97",
+      "sourceRemote": "origin/codex/multica-ming-97",
+      "sourceSha": "d84e26ba88",
+      "status": "reviewed_or_accepted_not_on_baseline",
+      "blocker": "content merge next batch; confirm independent review evidence"
+    },
+    {
+      "packKey": "liuren-miben",
+      "path": "references/annotations/san-shi/liuren-miben.json",
+      "sourceIssue": "MING-97",
+      "sourceRemote": "origin/codex/multica-ming-97",
+      "status": "reviewed_or_accepted_not_on_baseline",
+      "blocker": "next batch"
+    },
+    {
+      "packKey": "SK1602",
+      "path": "references/annotations/luming-nayin/yuzhao-shenying--shidian-SK1602.json",
+      "sourceIssue": "MING-114",
+      "reviewIssue": "MING-124",
+      "status": "reviewed_not_on_baseline",
+      "blocker": "next batch"
+    },
+    {
+      "packKey": "SK1609",
+      "path": "references/annotations/xingming/xingxue-dacheng--shidian-SK1609.json",
+      "sourceIssue": "MING-135",
+      "reviewIssue": "MING-150",
+      "status": "reviewed_not_on_baseline",
+      "blocker": "next batch"
+    },
+    {
+      "packKey": "SDZJ0170",
+      "path": "references/annotations/ziwei/ziwei-doushu-quanshu--shidian-SDZJ0170.json",
+      "sourceIssue": "MING-128",
+      "reviewIssue": "MING-138",
+      "status": "reviewed_not_on_baseline",
+      "blocker": "next batch; tip blob may need CP2 tip"
+    }
+  ],
+  "pendingIndependentReview": [
+    {
+      "issue": "MING-315",
+      "title": "神相全编 CP2",
+      "status": "in_review",
+      "blocker": "do not merge until independent review done"
+    },
+    {
+      "issue": "MING-316",
+      "title": "五行精纪 CP2",
+      "status": "in_review",
+      "blocker": "do not merge until independent review done"
+    },
+    {
+      "issue": "MING-318",
+      "title": "五行精纪 CP4",
+      "status": "in_review",
+      "blocker": "do not merge until independent review done"
+    },
+    {
+      "issue": "MING-319",
+      "title": "五行精纪 CP5",
+      "status": "in_review",
+      "blocker": "do not merge until independent review done"
+    }
+  ],
+  "excludedThisBatch": [
+    {
+      "item": "MING-322 product preview/dual-repo mapping",
+      "reason": "out of scope"
+    },
+    {
+      "item": "MING-320/321 product unique-line merges",
+      "reason": "product repo; do not steal"
+    },
+    {
+      "item": "origin/main merge",
+      "reason": "forbidden; also divergent history"
+    },
+    {
+      "item": "overwrite wuxing-jingji.json from Multica package tips",
+      "reason": "baseline tip newer (2634 sr); package tips older"
+    }
+  ],
+  "nextBatchCandidates": [
+    "MING-97 liuren daquan/miben annotations + review evidence",
+    "MING-114/124 SK1602",
+    "MING-123/135/137/150 SK1609",
+    "MING-128/138 SDZJ0170",
+    "cherry-pick done review-only docs already 1-commit ahead of full-library (MING-270..317) onto integration line"
+  ],
+  "batch1MergeSha": "de2105601a59f5afa18b63cc16dc4e5b7cb57fff",
+  "integrationBranchTipAtDelivery": null
+}

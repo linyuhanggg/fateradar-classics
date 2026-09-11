@@ -1,0 +1,1671 @@
+{
+  "schema_version": "fateradar-executable-v2",
+  "book": {
+    "slug": "ziping-zhenquan",
+    "system": "bazi",
+    "title": "子平真诠",
+    "fulltext": "sources/fulltext/bazi/ziping-zhenquan/fulltext.md"
+  },
+  "verified": false,
+  "note": "月令取格、顺逆、伤官见官、透印、金水例外、刑冲破害记录、组外会合、合煞、食化劫、枭护食、印逢财劫合、官逢财印、伤官生财佩印带煞、财逢煞制合、煞逢食制、无刑冲破害记录、通根阳库分条、印根透藏、身强来源分条、伤官旺透藏、财有根透藏、财印位置分条、食神成路透藏、阳刃成路透藏、建禄月劫成路透藏、印格成路透藏、财格成路透藏、阳刃无官煞败格透藏、建禄无财官透煞印败格透藏、食神生财露煞败格透藏、用神变化分条、变之善不善分条、变而不失本格分条、用神纯杂分条。破害不套会合，通根不按阳库覆盖，印根不是已经根深，伤官旺不是已经旺，财有根不是已经有根，身强不按旺衰分层覆盖，有隔不是已经位置妥贴，不见伤官不是已经成格，无官煞不是败格结论，透煞印不是破格结论，化为印不是已经改格，化财为官不是已经改格，透甲兼格不是成格结论，印轻官旺未论，力量未论，不成格不破格。verified 保持 false。",
+  "rules": [
+    {
+      "id": "ZPR-E-01",
+      "art": "bazi",
+      "theme": "月令取格",
+      "school": "子平真诠",
+      "paragraph_ids": [
+        "ziping-zhenquan:L0328-L0328"
+      ],
+      "sources": [
+        {
+          "paragraph_id": "ziping-zhenquan:L0328-L0328",
+          "start_line": 328,
+          "end_line": 328,
+          "quote": "八字用神，專求月令，以日干配月令地支，而生尅不同，格局分焉。財官印食，此用神之善而順用之者也；煞傷劫刃，此用神之不善而逆用之者也。當順而順，當逆而逆，配合得宜，皆爲貴格。"
+        }
+      ],
+      "quote": "八字用神，專求月令，以日干配月令地支，而生尅不同，格局分焉。財官印食，此用神之善而順用之者也；煞傷劫刃，此用神之不善而逆用之者也。當順而順，當逆而逆，配合得宜，皆爲貴格。",
+      "page": "geju",
+      "required_facts": [
+        "month.zhi",
+        "month.hidden",
+        "stems.except_day"
+      ],
+      "when": {
+        "exists": "month.zhi"
+      },
+      "satisfy_when": "已取月令藏干，并记录是否透于年/月/时干",
+      "fail_when": "无独立的不满足分支：本条记录有效输入上的取法或来源，不把缺少输入当作反例",
+      "unknown_when": "无月令；月令藏干表缺该支",
+      "rescue": "unimplemented",
+      "vernacular": "本盘月令{month_zhi}，{from}。这只是取格入口，还不是成格。",
+      "implementation_assumption": "透干优先，否则用本气。建禄月劫须另取，见 ZPR-E-03。",
+      "verified": false
+    },
+    {
+      "id": "ZPR-E-02",
+      "art": "bazi",
+      "theme": "顺用逆用",
+      "school": "子平真诠",
+      "paragraph_ids": [
+        "ziping-zhenquan:L0328-L0328",
+        "ziping-zhenquan:L0330-L0338"
+      ],
+      "sources": [
+        {
+          "paragraph_id": "ziping-zhenquan:L0328-L0328",
+          "start_line": 328,
+          "end_line": 328,
+          "quote": "八字用神，專求月令，以日干配月令地支，而生尅不同，格局分焉。財官印食，此用神之善而順用之者也；煞傷劫刃，此用神之不善而逆用之者也。當順而順，當逆而逆，配合得宜，皆爲貴格。"
+        },
+        {
+          "paragraph_id": "ziping-zhenquan:L0330-L0338",
+          "start_line": 330,
+          "end_line": 338,
+          "quote": "是以善而順用之，則財喜食神以相生，生官以護財；\n官喜透財以相生，生印以護官；\n印喜官煞以相生，劫才以護印；\n食喜身旺以相生，生財以護食。\n不善而逆用之，則七煞喜食神以制伏，忌財印以資扶；\n傷官喜佩印以制伏，生財以化傷；\n陽刃喜官煞以制伏，忌官煞之俱無；\n月劫喜透官以制伏，利用財而透食以化劫。\n此順逆之大略也。"
+        }
+      ],
+      "quote": "八字用神，專求月令，以日干配月令地支，而生尅不同，格局分焉。財官印食，此用神之善而順用之者也；煞傷劫刃，此用神之不善而逆用之者也。當順而順，當逆而逆，配合得宜，皆爲貴格。\n[…]\n是以善而順用之，則財喜食神以相生，生官以護財；\n官喜透財以相生，生印以護官；\n印喜官煞以相生，劫才以護印；\n食喜身旺以相生，生財以護食。\n不善而逆用之，則七煞喜食神以制伏，忌財印以資扶；\n傷官喜佩印以制伏，生財以化傷；\n陽刃喜官煞以制伏，忌官煞之俱無；\n月劫喜透官以制伏，利用財而透食以化劫。\n此順逆之大略也。",
+      "page": "yongshen",
+      "required_facts": [
+        "geju.tenGod",
+        "geju.mode"
+      ],
+      "when": {
+        "exists": "geju.tenGod"
+      },
+      "satisfy_when": "已区分顺用或逆用，并列出该路线自己的喜忌，不与扶抑、调候拼成一条",
+      "fail_when": "没有月令用神可分顺逆",
+      "unknown_when": "建禄月劫尚未另取用神",
+      "rescue": "unimplemented",
+      "vernacular": "按《子平真诠》，{name}属{mode}。这是格局路线，不能直接改写成固定五行喜忌。",
+      "implementation_assumption": "善/不善是格局术语。已接入路线通过geju.execution列出实际参与的财、官、食伤、印或合绊作用者，藏干与透干分开；不把顺用固定成官财印、逆用固定成印食官。未成立或未接入的路线保留具体缺项，不默认生成五行套餐。",
+      "verified": false
+    },
+    {
+      "id": "ZPR-E-03",
+      "art": "bazi",
+      "theme": "用神成败救应",
+      "school": "子平真诠",
+      "paragraph_ids": [
+        "ziping-zhenquan:L0361-L0361",
+        "ziping-zhenquan:L0363-L0371",
+        "ziping-zhenquan:L0373-L0381",
+        "ziping-zhenquan:L0383-L0383",
+        "ziping-zhenquan:L0385-L0396",
+        "ziping-zhenquan:L0398-L0409"
+      ],
+      "sources": [
+        {
+          "paragraph_id": "ziping-zhenquan:L0361-L0361",
+          "start_line": 361,
+          "end_line": 361,
+          "quote": "用神專求月令，然以四柱配之，必有成敗。"
+        },
+        {
+          "paragraph_id": "ziping-zhenquan:L0363-L0371",
+          "start_line": 363,
+          "end_line": 371,
+          "quote": "何謂成？\n如官逢財印，又無刑沖破害，官格成也；\n財生官旺，或財逢食生而身强帶比，或財格透印而位置妥貼，兩不相尅，財格成也；\n印輕逢煞，或官印雙全，或身印兩旺而用食傷洩氣，或印多逢財而財透根輕，印格成也；\n食神生財，或食帶煞而無財，棄食就煞而透印，食神格成也；\n身强七煞逢制，煞格成也；\n傷官生財，或傷官佩印而傷官旺、印有根，或傷官旺、身主弱而透煞印，或傷官帶煞而無財，傷官格成也；\n陽刃透官煞而露財印，不見傷官，陽刃格成也；\n建祿月劫，透官而逢財印，透財而逢食傷，透煞而遇制伏，建祿月劫之格成也。"
+        },
+        {
+          "paragraph_id": "ziping-zhenquan:L0373-L0381",
+          "start_line": 373,
+          "end_line": 381,
+          "quote": "何謂敗？\n官逢傷尅刑沖，官格敗也；\n財輕比重，財透七煞，財格敗也；\n印輕逢財，或身强印重而透煞，印格敗也；\n食神逢梟，或生財露煞，食神格敗也；\n七煞逢財無制，七煞格敗也；\n傷官非金水而見官，或生財而帶煞身輕，或佩印而傷輕身旺，傷官格敗也；\n陽刃無官煞，陽刃格敗也；\n建祿月劫，無財官，透煞印，建祿月劫之格敗也。"
+        },
+        {
+          "paragraph_id": "ziping-zhenquan:L0383-L0383",
+          "start_line": 383,
+          "end_line": 383,
+          "quote": "成中有敗，必是帶忌；敗中有成，全憑救應。"
+        },
+        {
+          "paragraph_id": "ziping-zhenquan:L0385-L0396",
+          "start_line": 385,
+          "end_line": 396,
+          "quote": "何謂帶忌？\n如正官逢財而又逢傷，透官而又逢合。\n財旺生官，而官又逢傷逢合。\n印透食神以洩其氣，而又遇財露；\n透煞以生印，而又透財以去印存煞。\n食神帶煞印而又逢財。\n七煞逢食制，而又逢印。\n傷官生財，而財又逢合；\n佩印而印又遭傷。\n陽刃透官而又被傷，透煞而又被合。\n建祿月劫，透官而逢傷，透財而逢煞。\n是皆謂之帶忌也。"
+        },
+        {
+          "paragraph_id": "ziping-zhenquan:L0398-L0409",
+          "start_line": 398,
+          "end_line": 399,
+          "quote": "何謂救應？\n如官逢傷，而透印以解之；"
+        }
+      ],
+      "quote": "用神專求月令，然以四柱配之，必有成敗。\n[…]\n何謂成？\n如官逢財印，又無刑沖破害，官格成也；\n財生官旺，或財逢食生而身强帶比，或財格透印而位置妥貼，兩不相尅，財格成也；\n印輕逢煞，或官印雙全，或身印兩旺而用食傷洩氣，或印多逢財而財透根輕，印格成也；\n食神生財，或食帶煞而無財，棄食就煞而透印，食神格成也；\n身强七煞逢制，煞格成也；\n傷官生財，或傷官佩印而傷官旺、印有根，或傷官旺、身主弱而透煞印，或傷官帶煞而無財，傷官格成也；\n陽刃透官煞而露財印，不見傷官，陽刃格成也；\n建祿月劫，透官而逢財印，透財而逢食傷，透煞而遇制伏，建祿月劫之格成也。\n[…]\n何謂敗？\n官逢傷尅刑沖，官格敗也；\n財輕比重，財透七煞，財格敗也；\n印輕逢財，或身强印重而透煞，印格敗也；\n食神逢梟，或生財露煞，食神格敗也；\n七煞逢財無制，七煞格敗也；\n傷官非金水而見官，或生財而帶煞身輕，或佩印而傷輕身旺，傷官格敗也；\n陽刃無官煞，陽刃格敗也；\n建祿月劫，無財官，透煞印，建祿月劫之格敗也。\n[…]\n成中有敗，必是帶忌；敗中有成，全憑救應。\n[…]\n何謂帶忌？\n如正官逢財而又逢傷，透官而又逢合。\n財旺生官，而官又逢傷逢合。\n印透食神以洩其氣，而又遇財露；\n透煞以生印，而又透財以去印存煞。\n食神帶煞印而又逢財。\n七煞逢食制，而又逢印。\n傷官生財，而財又逢合；\n佩印而印又遭傷。\n陽刃透官而又被傷，透煞而又被合。\n建祿月劫，透官而逢傷，透財而逢煞。\n是皆謂之帶忌也。\n[…]\n何謂救應？\n如官逢傷，而透印以解之；",
+      "page": "geju",
+      "required_facts": [
+        "tenGodFacts.pillar",
+        "tenGodFacts.layer",
+        "relations.chong",
+        "xiangShen.layer",
+        "geju.execution"
+      ],
+      "when": {
+        "exists": "geju.name"
+      },
+      "satisfy_when": "当前所选且已接入的格局路线的透藏、根气、位置、干扰及有依据的解救均已检查，未决项为空且实际成立条件满足；不是任意格共现即成立",
+      "fail_when": "成格条件已计算且明确不成立",
+      "unknown_when": "所选路线还有未操作化的刑冲破害、力量或变用条件；尚未接入执行器的其它格局仍保留具体缺项",
+      "rescue": "unimplemented",
+      "vernacular": "原文要求看成败和救应。当前只保留十神出现的柱位、透藏，不把出现写成已经成格或已经破格。",
+      "implementation_assumption": "正官与财格的实际执行结果经geju.execution统一传给取用、病药和解读。各路线采用公开的定性根气、得令、生扶、合绊与财印作用判据。原文没有给出这些程序分档；结果须同时保留方法假设和未决项。其它格局、未明破害及救应不默认算完，completion按该盘实际执行结果给出，不固定为信息不足，也不能仅有十神共现就满判。",
+      "verified": false
+    },
+    {
+      "id": "ZPR-E-04",
+      "art": "bazi",
+      "theme": "伤官见官",
+      "school": "子平真诠",
+      "paragraph_ids": [
+        "ziping-zhenquan:L0373-L0381",
+        "ziping-zhenquan:L0383-L0383",
+        "ziping-zhenquan:L0385-L0396",
+        "ziping-zhenquan:L0398-L0409"
+      ],
+      "sources": [
+        {
+          "paragraph_id": "ziping-zhenquan:L0373-L0381",
+          "start_line": 373,
+          "end_line": 381,
+          "quote": "何謂敗？\n官逢傷尅刑沖，官格敗也；\n財輕比重，財透七煞，財格敗也；\n印輕逢財，或身强印重而透煞，印格敗也；\n食神逢梟，或生財露煞，食神格敗也；\n七煞逢財無制，七煞格敗也；\n傷官非金水而見官，或生財而帶煞身輕，或佩印而傷輕身旺，傷官格敗也；\n陽刃無官煞，陽刃格敗也；\n建祿月劫，無財官，透煞印，建祿月劫之格敗也。"
+        },
+        {
+          "paragraph_id": "ziping-zhenquan:L0383-L0383",
+          "start_line": 383,
+          "end_line": 383,
+          "quote": "成中有敗，必是帶忌；敗中有成，全憑救應。"
+        },
+        {
+          "paragraph_id": "ziping-zhenquan:L0385-L0396",
+          "start_line": 385,
+          "end_line": 396,
+          "quote": "何謂帶忌？\n如正官逢財而又逢傷，透官而又逢合。\n財旺生官，而官又逢傷逢合。\n印透食神以洩其氣，而又遇財露；\n透煞以生印，而又透財以去印存煞。\n食神帶煞印而又逢財。\n七煞逢食制，而又逢印。\n傷官生財，而財又逢合；\n佩印而印又遭傷。\n陽刃透官而又被傷，透煞而又被合。\n建祿月劫，透官而逢傷，透財而逢煞。\n是皆謂之帶忌也。"
+        },
+        {
+          "paragraph_id": "ziping-zhenquan:L0398-L0409",
+          "start_line": 398,
+          "end_line": 399,
+          "quote": "何謂救應？\n如官逢傷，而透印以解之；"
+        }
+      ],
+      "quote": "何謂敗？\n官逢傷尅刑沖，官格敗也；\n財輕比重，財透七煞，財格敗也；\n印輕逢財，或身强印重而透煞，印格敗也；\n食神逢梟，或生財露煞，食神格敗也；\n七煞逢財無制，七煞格敗也；\n傷官非金水而見官，或生財而帶煞身輕，或佩印而傷輕身旺，傷官格敗也；\n陽刃無官煞，陽刃格敗也；\n建祿月劫，無財官，透煞印，建祿月劫之格敗也。\n[…]\n成中有敗，必是帶忌；敗中有成，全憑救應。\n[…]\n何謂帶忌？\n如正官逢財而又逢傷，透官而又逢合。\n財旺生官，而官又逢傷逢合。\n印透食神以洩其氣，而又遇財露；\n透煞以生印，而又透財以去印存煞。\n食神帶煞印而又逢財。\n七煞逢食制，而又逢印。\n傷官生財，而財又逢合；\n佩印而印又遭傷。\n陽刃透官而又被傷，透煞而又被合。\n建祿月劫，透官而逢傷，透財而逢煞。\n是皆謂之帶忌也。\n[…]\n何謂救應？\n如官逢傷，而透印以解之；",
+      "page": "geju",
+      "required_facts": [
+        "geju.name",
+        "tenGodFacts.伤官.layer",
+        "tenGodFacts.正官.layer"
+      ],
+      "when": {
+        "geju.name": [
+          "正官格",
+          "伤官格"
+        ]
+      },
+      "satisfy_when": "干扰十神透于天干，记录为干扰出现",
+      "fail_when": "四柱天干与藏干均无该干扰十神",
+      "unknown_when": "仅藏干出现",
+      "rescue": "ZPR-E-05",
+      "vernacular": "{interference}出现在{positions}。正官格走透印救应；伤官格先看金水例外。都不能写成已经破格。",
+      "implementation_assumption": "透干才按干扰出现；藏干只标信息不足。",
+      "verified": false
+    },
+    {
+      "id": "ZPR-E-05",
+      "art": "bazi",
+      "theme": "官逢伤透印以解",
+      "school": "子平真诠",
+      "paragraph_ids": [
+        "ziping-zhenquan:L0398-L0409"
+      ],
+      "sources": [
+        {
+          "paragraph_id": "ziping-zhenquan:L0398-L0409",
+          "start_line": 398,
+          "end_line": 399,
+          "quote": "何謂救應？\n如官逢傷，而透印以解之；"
+        }
+      ],
+      "quote": "何謂救應？\n如官逢傷，而透印以解之；",
+      "page": "geju",
+      "required_facts": [
+        "geju.name",
+        "tenGodFacts.伤官.layer",
+        "tenGodFacts.正印.layer",
+        "tenGodFacts.偏印.layer"
+      ],
+      "when": {
+        "geju.name": [
+          "正官格"
+        ]
+      },
+      "satisfy_when": "伤官透干，且正印或偏印透干",
+      "fail_when": "伤官透干，且四柱天干藏干均无正印偏印",
+      "unknown_when": "伤官仅藏干，或印仅藏干",
+      "rescue": "self",
+      "vernacular": "正官格下，伤官见{positions}。透印救应是{rescue_verdict}。救应出现不等于成格；救应不成立也不等于已经破格。",
+      "implementation_assumption": "正印偏印都算印。未论印的根气与伤官力量。",
+      "verified": false
+    },
+    {
+      "id": "ZPR-E-06",
+      "art": "bazi",
+      "theme": "金水伤官见官例外",
+      "school": "子平真诠",
+      "paragraph_ids": [
+        "ziping-zhenquan:L0373-L0381",
+        "ziping-zhenquan:L0506-L0506",
+        "ziping-zhenquan:L1111-L1116",
+        "ziping-zhenquan:L1234-L1234"
+      ],
+      "sources": [
+        {
+          "paragraph_id": "ziping-zhenquan:L0373-L0381",
+          "start_line": 379,
+          "end_line": 379,
+          "quote": "傷官非金水而見官，或生財而帶煞身輕，或佩印而傷輕身旺，傷官格敗也；"
+        },
+        {
+          "paragraph_id": "ziping-zhenquan:L0506-L0506",
+          "start_line": 506,
+          "end_line": 506,
+          "quote": "傷官見官，爲禍百端，而金水見之，反爲秀氣。非官之不畏夫傷，而調候爲急【校：「爲」原作謂「謂」，據中州本改】，權而用之也。傷官帶煞，隨時可用，而用之冬金，其秀百倍。傷官佩印，隨時可用，而用之夏木，其秀百倍，火濟水，水濟火也。"
+        },
+        {
+          "paragraph_id": "ziping-zhenquan:L1111-L1116",
+          "start_line": 1116,
+          "end_line": 1116,
+          "quote": "食神忌官，金水不忌，即金水傷官可見官之謂【校：原作「即金水傷官可以見矣」，據中州本改】。"
+        },
+        {
+          "paragraph_id": "ziping-zhenquan:L1234-L1234",
+          "start_line": 1234,
+          "end_line": 1234,
+          "quote": "有傷官用官者，他格不用，金水獨宜，然要財印爲輔，不可傷、官並透。如戊申、甲子、庚午、丁丑，藏癸露丁，戊甲爲輔，官又得祿，所以爲丞相之格【校：「爲」字據中州本補】。若孤官無輔，或官傷並透，則發福不大矣。若冬金用官，而又化傷爲財，則尤爲極秀極貴。如丙申、己亥、辛未、己亥，鄭丞相命是也。"
+        }
+      ],
+      "quote": "傷官非金水而見官，或生財而帶煞身輕，或佩印而傷輕身旺，傷官格敗也；\n[…]\n傷官見官，爲禍百端，而金水見之，反爲秀氣。非官之不畏夫傷，而調候爲急【校：「爲」原作謂「謂」，據中州本改】，權而用之也。傷官帶煞，隨時可用，而用之冬金，其秀百倍。傷官佩印，隨時可用，而用之夏木，其秀百倍，火濟水，水濟火也。\n[…]\n食神忌官，金水不忌，即金水傷官可見官之謂【校：原作「即金水傷官可以見矣」，據中州本改】。\n[…]\n有傷官用官者，他格不用，金水獨宜，然要財印爲輔，不可傷、官並透。如戊申、甲子、庚午、丁丑，藏癸露丁，戊甲爲輔，官又得祿，所以爲丞相之格【校：「爲」字據中州本補】。若孤官無輔，或官傷並透，則發福不大矣。若冬金用官，而又化傷爲財，則尤爲極秀極貴。如丙申、己亥、辛未、己亥，鄭丞相命是也。",
+      "page": "geju",
+      "required_facts": [
+        "day.gan",
+        "day.gan.element",
+        "month.zhi",
+        "geju.name",
+        "tenGodFacts.伤官.element",
+        "tenGodFacts.伤官.layer",
+        "tenGodFacts.正官.layer",
+        "tenGodFacts.正财.layer",
+        "tenGodFacts.偏财.layer",
+        "tenGodFacts.正印.layer",
+        "tenGodFacts.偏印.layer",
+        "climate.winter_metal",
+        "support.cai_yin.effective",
+        "interference.shang_guan.both_exposed"
+      ],
+      "when": {
+        "geju.name": [
+          "伤官格"
+        ],
+        "day.gan": [
+          "庚",
+          "辛"
+        ],
+        "day.gan.element": [
+          "金"
+        ],
+        "tenGodFacts.伤官.element": [
+          "水"
+        ],
+        "month.zhi": [
+          "亥",
+          "子",
+          "丑"
+        ]
+      },
+      "satisfy_when": "当前实现不输出满足。仅当冬金调候需要、财印辅佐有效及伤官正官不并透均有完整计算证据时，才可另行启用本条满足分支；即使满足也不等于全局成格",
+      "fail_when": "已知不是伤官格、日主不是庚辛金或伤官不是水，则不属于金水伤官；已知月令不在亥子丑，则不属于本条冬金分支；伤官与正官均透干，则不满足本条不可并透条件。不满足本例外不等于破格",
+      "unknown_when": "日主、伤官五行或月令缺失；金日水伤官逢冬月而不见伤官正官并透时，仍须核对财印辅佐与调候力量。当前未计算其有效性，保持信息不足，applies=false，不得移除伤官见官干扰",
+      "rescue": "self",
+      "vernacular": "本盘日主{day_gan}属{day_element}。{exception_note}金水伤官指金日主以水为伤官，能否用官还要结合气候、财印辅佐与透藏配合。",
+      "implementation_assumption": "当前范围仅为庚辛金日、水伤官、亥子丑月的冬金用官分支。L506说明调候为急，L1234明列财印为辅、不可伤官并透；两者并透可判本条不满足，其余冬金藏伤露官仍因财印力量未核而信息不足。原书戊申、甲子、庚午、丁丑也不自动成格。秋金等其他语境分条审查，不能由本条不满足反推破格。",
+      "verified": false
+    },
+    {
+      "id": "ZPR-E-07",
+      "art": "bazi",
+      "theme": "月令刑冲破害记录",
+      "school": "子平真诠",
+      "paragraph_ids": [
+        "ziping-zhenquan:L0363-L0371",
+        "ziping-zhenquan:L0373-L0381",
+        "ziping-zhenquan:L0383-L0383",
+        "ziping-zhenquan:L0385-L0396",
+        "ziping-zhenquan:L0398-L0409"
+      ],
+      "sources": [
+        {
+          "paragraph_id": "ziping-zhenquan:L0363-L0371",
+          "start_line": 363,
+          "end_line": 371,
+          "quote": "何謂成？\n如官逢財印，又無刑沖破害，官格成也；\n財生官旺，或財逢食生而身强帶比，或財格透印而位置妥貼，兩不相尅，財格成也；\n印輕逢煞，或官印雙全，或身印兩旺而用食傷洩氣，或印多逢財而財透根輕，印格成也；\n食神生財，或食帶煞而無財，棄食就煞而透印，食神格成也；\n身强七煞逢制，煞格成也；\n傷官生財，或傷官佩印而傷官旺、印有根，或傷官旺、身主弱而透煞印，或傷官帶煞而無財，傷官格成也；\n陽刃透官煞而露財印，不見傷官，陽刃格成也；\n建祿月劫，透官而逢財印，透財而逢食傷，透煞而遇制伏，建祿月劫之格成也。"
+        },
+        {
+          "paragraph_id": "ziping-zhenquan:L0373-L0381",
+          "start_line": 373,
+          "end_line": 381,
+          "quote": "何謂敗？\n官逢傷尅刑沖，官格敗也；\n財輕比重，財透七煞，財格敗也；\n印輕逢財，或身强印重而透煞，印格敗也；\n食神逢梟，或生財露煞，食神格敗也；\n七煞逢財無制，七煞格敗也；\n傷官非金水而見官，或生財而帶煞身輕，或佩印而傷輕身旺，傷官格敗也；\n陽刃無官煞，陽刃格敗也；\n建祿月劫，無財官，透煞印，建祿月劫之格敗也。"
+        },
+        {
+          "paragraph_id": "ziping-zhenquan:L0383-L0383",
+          "start_line": 383,
+          "end_line": 383,
+          "quote": "成中有敗，必是帶忌；敗中有成，全憑救應。"
+        },
+        {
+          "paragraph_id": "ziping-zhenquan:L0385-L0396",
+          "start_line": 385,
+          "end_line": 396,
+          "quote": "何謂帶忌？\n如正官逢財而又逢傷，透官而又逢合。\n財旺生官，而官又逢傷逢合。\n印透食神以洩其氣，而又遇財露；\n透煞以生印，而又透財以去印存煞。\n食神帶煞印而又逢財。\n七煞逢食制，而又逢印。\n傷官生財，而財又逢合；\n佩印而印又遭傷。\n陽刃透官而又被傷，透煞而又被合。\n建祿月劫，透官而逢傷，透財而逢煞。\n是皆謂之帶忌也。"
+        },
+        {
+          "paragraph_id": "ziping-zhenquan:L0398-L0409",
+          "start_line": 398,
+          "end_line": 401,
+          "quote": "何謂救應？\n如官逢傷，而透印以解之；\n雜煞，而合煞以清之；\n刑沖，而會合以解之。"
+        }
+      ],
+      "quote": "何謂成？\n如官逢財印，又無刑沖破害，官格成也；\n財生官旺，或財逢食生而身强帶比，或財格透印而位置妥貼，兩不相尅，財格成也；\n印輕逢煞，或官印雙全，或身印兩旺而用食傷洩氣，或印多逢財而財透根輕，印格成也；\n食神生財，或食帶煞而無財，棄食就煞而透印，食神格成也；\n身强七煞逢制，煞格成也；\n傷官生財，或傷官佩印而傷官旺、印有根，或傷官旺、身主弱而透煞印，或傷官帶煞而無財，傷官格成也；\n陽刃透官煞而露財印，不見傷官，陽刃格成也；\n建祿月劫，透官而逢財印，透財而逢食傷，透煞而遇制伏，建祿月劫之格成也。\n[…]\n何謂敗？\n官逢傷尅刑沖，官格敗也；\n財輕比重，財透七煞，財格敗也；\n印輕逢財，或身强印重而透煞，印格敗也；\n食神逢梟，或生財露煞，食神格敗也；\n七煞逢財無制，七煞格敗也；\n傷官非金水而見官，或生財而帶煞身輕，或佩印而傷輕身旺，傷官格敗也；\n陽刃無官煞，陽刃格敗也；\n建祿月劫，無財官，透煞印，建祿月劫之格敗也。\n[…]\n成中有敗，必是帶忌；敗中有成，全憑救應。\n[…]\n何謂帶忌？\n如正官逢財而又逢傷，透官而又逢合。\n財旺生官，而官又逢傷逢合。\n印透食神以洩其氣，而又遇財露；\n透煞以生印，而又透財以去印存煞。\n食神帶煞印而又逢財。\n七煞逢食制，而又逢印。\n傷官生財，而財又逢合；\n佩印而印又遭傷。\n陽刃透官而又被傷，透煞而又被合。\n建祿月劫，透官而逢傷，透財而逢煞。\n是皆謂之帶忌也。\n[…]\n何謂救應？\n如官逢傷，而透印以解之；\n雜煞，而合煞以清之；\n刑沖，而會合以解之。",
+      "page": "geju",
+      "required_facts": [
+        "month.zhi",
+        "chart.zhis"
+      ],
+      "when": {
+        "exists": "month.zhi"
+      },
+      "satisfy_when": "月令与四柱组成冲、破、害，或三刑三支齐全、自刑两见、子卯两见",
+      "fail_when": "月令未与其余地支组成冲破害刑",
+      "unknown_when": "三刑只见两支",
+      "rescue": "ZPR-E-08",
+      "vernacular": "月令{month_zhi}与命局的刑冲破害记录为{hits}。刑冲走会合解救；破害不套用会合，所以不能写成已经破格。",
+      "implementation_assumption": "破用通行六破表。破害不套用刑冲会合，标信息不足。completion 仍为信息不足。",
+      "verified": false
+    },
+    {
+      "id": "ZPR-E-08",
+      "art": "bazi",
+      "theme": "刑冲会合以解",
+      "school": "子平真诠",
+      "paragraph_ids": [
+        "ziping-zhenquan:L0398-L0409"
+      ],
+      "sources": [
+        {
+          "paragraph_id": "ziping-zhenquan:L0398-L0409",
+          "start_line": 401,
+          "end_line": 401,
+          "quote": "刑沖，而會合以解之。"
+        }
+      ],
+      "quote": "刑沖，而會合以解之。",
+      "page": "geju",
+      "required_facts": [
+        "month.zhi",
+        "chart.zhis",
+        "relations.he",
+        "relations.hui"
+      ],
+      "when": {
+        "interference.id": [
+          "month-chong",
+          "month-xing"
+        ]
+      },
+      "satisfy_when": "刑冲组外另有六合、三合或三会支",
+      "fail_when": "刑冲组外不见六合、三合、三会",
+      "unknown_when": "只见半合或半会",
+      "rescue": "self",
+      "vernacular": "月令刑冲的会合救应是{rescue_verdict}。组内自合不算解救。救应出现不等于成格；不成立也不等于已经破格。",
+      "implementation_assumption": "合会支必须在刑冲组外。半合半会标信息不足。破害不走这条。未论合化。",
+      "verified": false
+    },
+    {
+      "id": "ZPR-E-09",
+      "art": "bazi",
+      "theme": "杂煞合煞以清",
+      "school": "子平真诠",
+      "paragraph_ids": [
+        "ziping-zhenquan:L0398-L0409"
+      ],
+      "sources": [
+        {
+          "paragraph_id": "ziping-zhenquan:L0398-L0409",
+          "start_line": 400,
+          "end_line": 400,
+          "quote": "雜煞，而合煞以清之；"
+        }
+      ],
+      "quote": "雜煞，而合煞以清之；",
+      "page": "geju",
+      "required_facts": [
+        "geju.name",
+        "tenGodFacts.偏官.layer",
+        "stems"
+      ],
+      "when": {
+        "geju.name": [
+          "正官格"
+        ]
+      },
+      "satisfy_when": "七杀透干，且四柱天干见其五合之干",
+      "fail_when": "七杀透干但不见合杀之干，或七杀未透且原局无杀",
+      "unknown_when": "七杀仅藏干",
+      "rescue": "self",
+      "vernacular": "正官格下杂煞是{verdict}，合煞救应是{rescue_verdict}。合出现不等于合化，也不等于成格。",
+      "implementation_assumption": "五合用通行天干合表。未论合化与力量。",
+      "verified": false
+    },
+    {
+      "id": "ZPR-E-10",
+      "art": "bazi",
+      "theme": "财逢劫透食或生官",
+      "school": "子平真诠",
+      "paragraph_ids": [
+        "ziping-zhenquan:L0398-L0409"
+      ],
+      "sources": [
+        {
+          "paragraph_id": "ziping-zhenquan:L0398-L0409",
+          "start_line": 402,
+          "end_line": 403,
+          "quote": "財逢劫，而透食以化之、生官以制之；\n逢煞，而食神制煞以生財、或存財而合煞。"
+        }
+      ],
+      "quote": "財逢劫，而透食以化之、生官以制之；\n逢煞，而食神制煞以生財、或存財而合煞。",
+      "page": "geju",
+      "required_facts": [
+        "geju.name",
+        "tenGodFacts.劫财.layer",
+        "tenGodFacts.食神.layer",
+        "tenGodFacts.正官.layer"
+      ],
+      "when": {
+        "geju.name": [
+          "正财格",
+          "偏财格"
+        ]
+      },
+      "satisfy_when": "劫财透干，且食神或正官透干",
+      "fail_when": "劫财透干，且食神与正官天干藏干皆无",
+      "unknown_when": "劫财仅藏干，或救应只见藏干",
+      "rescue": "self",
+      "vernacular": "财格见劫是{verdict}，透食或生官救应是{rescue_verdict}。不得写成已经破格。",
+      "implementation_assumption": "生官只计正官，不计七杀。未论力量。",
+      "verified": false
+    },
+    {
+      "id": "ZPR-E-11",
+      "art": "bazi",
+      "theme": "食逢枭就煞或生财",
+      "school": "子平真诠",
+      "paragraph_ids": [
+        "ziping-zhenquan:L0398-L0409"
+      ],
+      "sources": [
+        {
+          "paragraph_id": "ziping-zhenquan:L0398-L0409",
+          "start_line": 405,
+          "end_line": 405,
+          "quote": "食逢梟，而就煞以成格，或生財以護食。"
+        }
+      ],
+      "quote": "食逢梟，而就煞以成格，或生財以護食。",
+      "page": "geju",
+      "required_facts": [
+        "geju.name",
+        "tenGodFacts.偏印.layer",
+        "tenGodFacts.偏官.layer",
+        "tenGodFacts.正财.layer"
+      ],
+      "when": {
+        "geju.name": [
+          "食神格"
+        ]
+      },
+      "satisfy_when": "偏印透干，且七杀或财透干",
+      "fail_when": "偏印透干，且七杀与财皆无",
+      "unknown_when": "偏印仅藏干，或救应只见藏干",
+      "rescue": "self",
+      "vernacular": "枭神夺食是{verdict}，就煞或护食是{rescue_verdict}。就煞不等于已经改成杀格。",
+      "implementation_assumption": "财计正财偏财。未论力量。",
+      "verified": false
+    },
+    {
+      "id": "ZPR-E-12",
+      "art": "bazi",
+      "theme": "印逢财劫合",
+      "school": "子平真诠",
+      "paragraph_ids": [
+        "ziping-zhenquan:L0398-L0409"
+      ],
+      "sources": [
+        {
+          "paragraph_id": "ziping-zhenquan:L0398-L0409",
+          "start_line": 404,
+          "end_line": 404,
+          "quote": "印逢財，而劫財以解之，或合財而存印。"
+        }
+      ],
+      "quote": "印逢財，而劫財以解之，或合財而存印。",
+      "page": "geju",
+      "required_facts": [
+        "geju.name",
+        "tenGodFacts.正财.layer",
+        "tenGodFacts.劫财.layer",
+        "stems"
+      ],
+      "when": {
+        "geju.name": [
+          "正印格",
+          "偏印格"
+        ]
+      },
+      "satisfy_when": "正财透干，且劫财透干或见合财之干",
+      "fail_when": "正财透干，且劫财不见、合财之干不见",
+      "unknown_when": "正财仅藏干，或救应只见藏干",
+      "rescue": "self",
+      "vernacular": "财星坏印是{verdict}，劫财或合财救应是{rescue_verdict}。",
+      "implementation_assumption": "干扰十神仍只记正财，与现有 INTERFERENCE_OF 一致。未把偏财扩进去。",
+      "verified": false
+    },
+    {
+      "id": "ZPR-E-13",
+      "art": "bazi",
+      "theme": "官逢财印记录",
+      "school": "子平真诠",
+      "paragraph_ids": [
+        "ziping-zhenquan:L0363-L0371"
+      ],
+      "sources": [
+        {
+          "paragraph_id": "ziping-zhenquan:L0363-L0371",
+          "start_line": 364,
+          "end_line": 364,
+          "quote": "如官逢財印，又無刑沖破害，官格成也；"
+        }
+      ],
+      "quote": "如官逢財印，又無刑沖破害，官格成也；",
+      "page": "geju",
+      "required_facts": [
+        "geju.name",
+        "tenGodFacts.正财.layer",
+        "tenGodFacts.正印.layer"
+      ],
+      "when": {
+        "geju.name": [
+          "正官格"
+        ]
+      },
+      "satisfy_when": "财与印都透干",
+      "fail_when": "财或印整组未见",
+      "unknown_when": "财或印只见藏干",
+      "rescue": "unimplemented",
+      "vernacular": "官逢财印是{cai_yin_verdict}。财印出现不等于位置妥贴，也不等于成格。",
+      "implementation_assumption": "财计正财偏财，印计正印偏印。力量与破害会合未算完，completion 仍为信息不足。",
+      "verified": false
+    },
+    {
+      "id": "ZPR-E-14",
+      "art": "bazi",
+      "theme": "伤官生财佩印带煞",
+      "school": "子平真诠",
+      "paragraph_ids": [
+        "ziping-zhenquan:L0363-L0371",
+        "ziping-zhenquan:L0373-L0381",
+        "ziping-zhenquan:L0383-L0383",
+        "ziping-zhenquan:L0385-L0396",
+        "ziping-zhenquan:L0398-L0409"
+      ],
+      "sources": [
+        {
+          "paragraph_id": "ziping-zhenquan:L0363-L0371",
+          "start_line": 369,
+          "end_line": 371,
+          "quote": "傷官生財，或傷官佩印而傷官旺、印有根，或傷官旺、身主弱而透煞印，或傷官帶煞而無財，傷官格成也；\n陽刃透官煞而露財印，不見傷官，陽刃格成也；\n建祿月劫，透官而逢財印，透財而逢食傷，透煞而遇制伏，建祿月劫之格成也。"
+        },
+        {
+          "paragraph_id": "ziping-zhenquan:L0373-L0381",
+          "start_line": 373,
+          "end_line": 381,
+          "quote": "何謂敗？\n官逢傷尅刑沖，官格敗也；\n財輕比重，財透七煞，財格敗也；\n印輕逢財，或身强印重而透煞，印格敗也；\n食神逢梟，或生財露煞，食神格敗也；\n七煞逢財無制，七煞格敗也；\n傷官非金水而見官，或生財而帶煞身輕，或佩印而傷輕身旺，傷官格敗也；\n陽刃無官煞，陽刃格敗也；\n建祿月劫，無財官，透煞印，建祿月劫之格敗也。"
+        },
+        {
+          "paragraph_id": "ziping-zhenquan:L0383-L0383",
+          "start_line": 383,
+          "end_line": 383,
+          "quote": "成中有敗，必是帶忌；敗中有成，全憑救應。"
+        },
+        {
+          "paragraph_id": "ziping-zhenquan:L0385-L0396",
+          "start_line": 385,
+          "end_line": 396,
+          "quote": "何謂帶忌？\n如正官逢財而又逢傷，透官而又逢合。\n財旺生官，而官又逢傷逢合。\n印透食神以洩其氣，而又遇財露；\n透煞以生印，而又透財以去印存煞。\n食神帶煞印而又逢財。\n七煞逢食制，而又逢印。\n傷官生財，而財又逢合；\n佩印而印又遭傷。\n陽刃透官而又被傷，透煞而又被合。\n建祿月劫，透官而逢傷，透財而逢煞。\n是皆謂之帶忌也。"
+        },
+        {
+          "paragraph_id": "ziping-zhenquan:L0398-L0409",
+          "start_line": 398,
+          "end_line": 407,
+          "quote": "何謂救應？\n如官逢傷，而透印以解之；\n雜煞，而合煞以清之；\n刑沖，而會合以解之。\n財逢劫，而透食以化之、生官以制之；\n逢煞，而食神制煞以生財、或存財而合煞。\n印逢財，而劫財以解之，或合財而存印。\n食逢梟，而就煞以成格，或生財以護食。\n煞逢食制，印來護煞，而逢財以去印存食。\n傷官生財，透煞而煞逢合。"
+        }
+      ],
+      "quote": "傷官生財，或傷官佩印而傷官旺、印有根，或傷官旺、身主弱而透煞印，或傷官帶煞而無財，傷官格成也；\n陽刃透官煞而露財印，不見傷官，陽刃格成也；\n建祿月劫，透官而逢財印，透財而逢食傷，透煞而遇制伏，建祿月劫之格成也。\n[…]\n何謂敗？\n官逢傷尅刑沖，官格敗也；\n財輕比重，財透七煞，財格敗也；\n印輕逢財，或身强印重而透煞，印格敗也；\n食神逢梟，或生財露煞，食神格敗也；\n七煞逢財無制，七煞格敗也；\n傷官非金水而見官，或生財而帶煞身輕，或佩印而傷輕身旺，傷官格敗也；\n陽刃無官煞，陽刃格敗也；\n建祿月劫，無財官，透煞印，建祿月劫之格敗也。\n[…]\n成中有敗，必是帶忌；敗中有成，全憑救應。\n[…]\n何謂帶忌？\n如正官逢財而又逢傷，透官而又逢合。\n財旺生官，而官又逢傷逢合。\n印透食神以洩其氣，而又遇財露；\n透煞以生印，而又透財以去印存煞。\n食神帶煞印而又逢財。\n七煞逢食制，而又逢印。\n傷官生財，而財又逢合；\n佩印而印又遭傷。\n陽刃透官而又被傷，透煞而又被合。\n建祿月劫，透官而逢傷，透財而逢煞。\n是皆謂之帶忌也。\n[…]\n何謂救應？\n如官逢傷，而透印以解之；\n雜煞，而合煞以清之；\n刑沖，而會合以解之。\n財逢劫，而透食以化之、生官以制之；\n逢煞，而食神制煞以生財、或存財而合煞。\n印逢財，而劫財以解之，或合財而存印。\n食逢梟，而就煞以成格，或生財以護食。\n煞逢食制，印來護煞，而逢財以去印存食。\n傷官生財，透煞而煞逢合。",
+      "page": "geju",
+      "required_facts": [
+        "geju.name",
+        "tenGodFacts.正财.layer",
+        "tenGodFacts.正印.layer",
+        "tenGodFacts.偏官.layer"
+      ],
+      "when": {
+        "geju.name": [
+          "伤官格"
+        ]
+      },
+      "satisfy_when": "生财、佩印或带煞无财的透干条件出现",
+      "fail_when": "对应十神整组未见",
+      "unknown_when": "只见藏干，或带煞而财只见藏干；旺衰印根身强未论",
+      "rescue": "self",
+      "vernacular": "伤官格生财{sheng_cai}，佩印{pei_yin}，带煞无财{dai_sha}。力量未论，不等于成格。",
+      "implementation_assumption": "非金水见官没有另开救应，只标信息不足。合煞用通行五合。未论合化。",
+      "verified": false
+    },
+    {
+      "id": "ZPR-E-15",
+      "art": "bazi",
+      "theme": "财逢煞制合",
+      "school": "子平真诠",
+      "paragraph_ids": [
+        "ziping-zhenquan:L0373-L0381",
+        "ziping-zhenquan:L0383-L0383",
+        "ziping-zhenquan:L0385-L0396",
+        "ziping-zhenquan:L0398-L0409"
+      ],
+      "sources": [
+        {
+          "paragraph_id": "ziping-zhenquan:L0373-L0381",
+          "start_line": 375,
+          "end_line": 381,
+          "quote": "財輕比重，財透七煞，財格敗也；\n印輕逢財，或身强印重而透煞，印格敗也；\n食神逢梟，或生財露煞，食神格敗也；\n七煞逢財無制，七煞格敗也；\n傷官非金水而見官，或生財而帶煞身輕，或佩印而傷輕身旺，傷官格敗也；\n陽刃無官煞，陽刃格敗也；\n建祿月劫，無財官，透煞印，建祿月劫之格敗也。"
+        },
+        {
+          "paragraph_id": "ziping-zhenquan:L0383-L0383",
+          "start_line": 383,
+          "end_line": 383,
+          "quote": "成中有敗，必是帶忌；敗中有成，全憑救應。"
+        },
+        {
+          "paragraph_id": "ziping-zhenquan:L0385-L0396",
+          "start_line": 385,
+          "end_line": 396,
+          "quote": "何謂帶忌？\n如正官逢財而又逢傷，透官而又逢合。\n財旺生官，而官又逢傷逢合。\n印透食神以洩其氣，而又遇財露；\n透煞以生印，而又透財以去印存煞。\n食神帶煞印而又逢財。\n七煞逢食制，而又逢印。\n傷官生財，而財又逢合；\n佩印而印又遭傷。\n陽刃透官而又被傷，透煞而又被合。\n建祿月劫，透官而逢傷，透財而逢煞。\n是皆謂之帶忌也。"
+        },
+        {
+          "paragraph_id": "ziping-zhenquan:L0398-L0409",
+          "start_line": 398,
+          "end_line": 403,
+          "quote": "何謂救應？\n如官逢傷，而透印以解之；\n雜煞，而合煞以清之；\n刑沖，而會合以解之。\n財逢劫，而透食以化之、生官以制之；\n逢煞，而食神制煞以生財、或存財而合煞。"
+        }
+      ],
+      "quote": "財輕比重，財透七煞，財格敗也；\n印輕逢財，或身强印重而透煞，印格敗也；\n食神逢梟，或生財露煞，食神格敗也；\n七煞逢財無制，七煞格敗也；\n傷官非金水而見官，或生財而帶煞身輕，或佩印而傷輕身旺，傷官格敗也；\n陽刃無官煞，陽刃格敗也；\n建祿月劫，無財官，透煞印，建祿月劫之格敗也。\n[…]\n成中有敗，必是帶忌；敗中有成，全憑救應。\n[…]\n何謂帶忌？\n如正官逢財而又逢傷，透官而又逢合。\n財旺生官，而官又逢傷逢合。\n印透食神以洩其氣，而又遇財露；\n透煞以生印，而又透財以去印存煞。\n食神帶煞印而又逢財。\n七煞逢食制，而又逢印。\n傷官生財，而財又逢合；\n佩印而印又遭傷。\n陽刃透官而又被傷，透煞而又被合。\n建祿月劫，透官而逢傷，透財而逢煞。\n是皆謂之帶忌也。\n[…]\n何謂救應？\n如官逢傷，而透印以解之；\n雜煞，而合煞以清之；\n刑沖，而會合以解之。\n財逢劫，而透食以化之、生官以制之；\n逢煞，而食神制煞以生財、或存財而合煞。",
+      "page": "geju",
+      "required_facts": [
+        "geju.name",
+        "tenGodFacts.偏官.layer",
+        "tenGodFacts.食神.layer",
+        "stems"
+      ],
+      "when": {
+        "geju.name": [
+          "正财格",
+          "偏财格"
+        ]
+      },
+      "satisfy_when": "七杀透干，且食神透干或见合杀之干",
+      "fail_when": "七杀透干，且食神与合杀之干皆无",
+      "unknown_when": "七杀仅藏干，或救应只见藏干",
+      "rescue": "self",
+      "vernacular": "财格逢煞是{verdict}，食制或合煞是{rescue_verdict}。不得写成已经破格。",
+      "implementation_assumption": "制只计食神，不计伤官。未论力量。",
+      "verified": false
+    },
+    {
+      "id": "ZPR-E-16",
+      "art": "bazi",
+      "theme": "煞逢食制",
+      "school": "子平真诠",
+      "paragraph_ids": [
+        "ziping-zhenquan:L0363-L0371",
+        "ziping-zhenquan:L0373-L0381"
+      ],
+      "sources": [
+        {
+          "paragraph_id": "ziping-zhenquan:L0363-L0371",
+          "start_line": 368,
+          "end_line": 371,
+          "quote": "身强七煞逢制，煞格成也；\n傷官生財，或傷官佩印而傷官旺、印有根，或傷官旺、身主弱而透煞印，或傷官帶煞而無財，傷官格成也；\n陽刃透官煞而露財印，不見傷官，陽刃格成也；\n建祿月劫，透官而逢財印，透財而逢食傷，透煞而遇制伏，建祿月劫之格成也。"
+        },
+        {
+          "paragraph_id": "ziping-zhenquan:L0373-L0381",
+          "start_line": 373,
+          "end_line": 378,
+          "quote": "何謂敗？\n官逢傷尅刑沖，官格敗也；\n財輕比重，財透七煞，財格敗也；\n印輕逢財，或身强印重而透煞，印格敗也；\n食神逢梟，或生財露煞，食神格敗也；\n七煞逢財無制，七煞格敗也；"
+        }
+      ],
+      "quote": "身强七煞逢制，煞格成也；\n傷官生財，或傷官佩印而傷官旺、印有根，或傷官旺、身主弱而透煞印，或傷官帶煞而無財，傷官格成也；\n陽刃透官煞而露財印，不見傷官，陽刃格成也；\n建祿月劫，透官而逢財印，透財而逢食傷，透煞而遇制伏，建祿月劫之格成也。\n[…]\n何謂敗？\n官逢傷尅刑沖，官格敗也；\n財輕比重，財透七煞，財格敗也；\n印輕逢財，或身强印重而透煞，印格敗也；\n食神逢梟，或生財露煞，食神格敗也；\n七煞逢財無制，七煞格敗也；",
+      "page": "geju",
+      "required_facts": [
+        "geju.name",
+        "tenGodFacts.食神.layer",
+        "tenGodFacts.正财.layer"
+      ],
+      "when": {
+        "geju.name": [
+          "七杀格"
+        ]
+      },
+      "satisfy_when": "食神透干：只说明制出现",
+      "fail_when": "原局未见食神",
+      "unknown_when": "食神只见藏干；身强未论",
+      "rescue": "self",
+      "vernacular": "七煞逢制是{sha_zhi_verdict}。身强未论，不等于成格。",
+      "implementation_assumption": "制按食神透藏记录。逢财另记干扰。completion 仍为信息不足。",
+      "verified": false
+    },
+    {
+      "id": "ZPR-E-17",
+      "art": "bazi",
+      "theme": "无刑冲破害记录",
+      "school": "子平真诠",
+      "paragraph_ids": [
+        "ziping-zhenquan:L0363-L0371"
+      ],
+      "sources": [
+        {
+          "paragraph_id": "ziping-zhenquan:L0363-L0371",
+          "start_line": 364,
+          "end_line": 364,
+          "quote": "如官逢財印，又無刑沖破害，官格成也；"
+        }
+      ],
+      "quote": "如官逢財印，又無刑沖破害，官格成也；",
+      "page": "geju",
+      "required_facts": [
+        "month.zhi",
+        "chart.zhis",
+        "relations.chong",
+        "relations.po",
+        "relations.hai"
+      ],
+      "when": {
+        "exists": "month.zhi"
+      },
+      "satisfy_when": "月令未见未解救的刑冲，也未见破害",
+      "fail_when": "月令刑冲出现且会合不成立",
+      "unknown_when": "三刑未全、半合半会，或见破害（原文没有会合解破害的程序）",
+      "rescue": "ZPR-E-08",
+      "vernacular": "无刑冲破害是{wu_xingchongpohai}。会合只解刑冲。不等于成格。",
+      "implementation_assumption": "刑冲会合满足后不再计入未解救刑冲。破害一律信息不足。力量未论。",
+      "verified": false
+    },
+    {
+      "id": "ZPR-E-18",
+      "art": "bazi",
+      "theme": "通根阳库来源分条",
+      "school": "子平真诠",
+      "paragraph_ids": [
+        "ziping-zhenquan:L0192-L0192"
+      ],
+      "sources": [
+        {
+          "paragraph_id": "ziping-zhenquan:L0192-L0192",
+          "start_line": 192,
+          "end_line": 192,
+          "quote": "人之日主，不必生逢祿旺，即月令休囚【校：「令」字據中州本補；「休」原作「非」，據中州本改】，而年日時中,得長生祿旺，便不爲弱；就使逢庫，亦爲有根。時說謂投庫而必沖者，俗書之謬也。但陽長生有力，而陰長生不甚有力，然亦不弱。若是逢庫，則陽爲有根，而陰爲無用。蓋陽大陰小，陽得兼陰，陰不能兼陽，自然之理也。"
+        }
+      ],
+      "quote": "人之日主，不必生逢祿旺，即月令休囚【校：「令」字據中州本補；「休」原作「非」，據中州本改】，而年日時中,得長生祿旺，便不爲弱；就使逢庫，亦爲有根。時說謂投庫而必沖者，俗書之謬也。但陽長生有力，而陰長生不甚有力，然亦不弱。若是逢庫，則陽爲有根，而陰爲無用。蓋陽大陰小，陽得兼陰，陰不能兼陽，自然之理也。",
+      "page": "strength",
+      "required_facts": [
+        "day.gan",
+        "pillars.zhi",
+        "roots.role",
+        "roots.grade"
+      ],
+      "when": {
+        "exists": "day.gan"
+      },
+      "satisfy_when": "已按藏干本气中气余气记录通根档位，并标明与阳干逢库有根、阴干逢库无用不是同一套",
+      "fail_when": "四柱无从记录日主藏干",
+      "unknown_when": "长生禄旺有力、阴长生不甚有力未逐步量化；墓库须冲开是现行实现，原文以投库必冲为俗书之谬：不得覆盖藏干档位，不得把根深写成已经身强",
+      "rescue": "unimplemented",
+      "vernacular": "本盘通根按藏干{roles}分档。这与阳干逢库有根、阴干逢库无用不是同一套，不是已经身强。",
+      "implementation_assumption": "现行得地按本气根深、中气根浅、余气根微，墓库非本气加注须待冲开。不按壬逢辰、丙坐戌改成有根，也不按阴干逢库删根。身强未论。",
+      "verified": false
+    },
+    {
+      "id": "ZPR-E-19",
+      "art": "bazi",
+      "theme": "印根透藏",
+      "school": "子平真诠",
+      "paragraph_ids": [
+        "ziping-zhenquan:L1223-L1223"
+      ],
+      "sources": [
+        {
+          "paragraph_id": "ziping-zhenquan:L1223-L1223",
+          "start_line": 1223,
+          "end_line": 1223,
+          "quote": "有傷官佩印者，印能制傷，所以爲貴，反要傷官旺，身稍弱，始爲秀氣。如索羅平【校：「索羅平」，中州本作「孛罗平章」】命，壬申、丙午、甲午、壬申，傷官旺，印根深，身又弱，又是夏木逢潤，其秀百倍，所以爲一品之貴。然印要根深，不必多見，偏正疊出，反爲不秀。故傷輕身重，而印綬多見，貧窮之格也。"
+        }
+      ],
+      "quote": "有傷官佩印者，印能制傷，所以爲貴，反要傷官旺，身稍弱，始爲秀氣。如索羅平【校：「索羅平」，中州本作「孛罗平章」】命，壬申、丙午、甲午、壬申，傷官旺，印根深，身又弱，又是夏木逢潤，其秀百倍，所以爲一品之貴。然印要根深，不必多見，偏正疊出，反爲不秀。故傷輕身重，而印綬多見，貧窮之格也。",
+      "page": "geju",
+      "required_facts": [
+        "tenGodFacts.正印.layer",
+        "tenGodFacts.偏印.layer",
+        "tenGodFacts.正印.role",
+        "tenGodFacts.偏印.role"
+      ],
+      "when": {
+        "exists": "day.gan"
+      },
+      "satisfy_when": "正印或偏印出现：只记录透干、本气、中气、余气",
+      "fail_when": "原局天干藏干均无正印偏印",
+      "unknown_when": "根深、身稍弱、秀气、贫穷未论；本气不是已经根深，不得输出成格",
+      "rescue": "unimplemented",
+      "vernacular": "印根只记透藏：{yin_positions}。本气中气余气不是已经根深，也不等于成格。",
+      "implementation_assumption": "印计正印偏印。不把本气映射成根深，不把多见映射成贫穷。伤官旺见 ZPR-E-21。completion 仍为信息不足。",
+      "verified": false
+    },
+    {
+      "id": "ZPR-E-20",
+      "art": "bazi",
+      "theme": "身强来源分条",
+      "school": "子平真诠",
+      "paragraph_ids": [
+        "ziping-zhenquan:L0363-L0371"
+      ],
+      "sources": [
+        {
+          "paragraph_id": "ziping-zhenquan:L0363-L0371",
+          "start_line": 365,
+          "end_line": 368,
+          "quote": "財生官旺，或財逢食生而身强帶比，或財格透印而位置妥貼，兩不相尅，財格成也；\n印輕逢煞，或官印雙全，或身印兩旺而用食傷洩氣，或印多逢財而財透根輕，印格成也；\n食神生財，或食帶煞而無財，棄食就煞而透印，食神格成也；\n身强七煞逢制，煞格成也；"
+        }
+      ],
+      "quote": "財生官旺，或財逢食生而身强帶比，或財格透印而位置妥貼，兩不相尅，財格成也；\n印輕逢煞，或官印雙全，或身印兩旺而用食傷洩氣，或印多逢財而財透根輕，印格成也；\n食神生財，或食帶煞而無財，棄食就煞而透印，食神格成也；\n身强七煞逢制，煞格成也；",
+      "page": "strength",
+      "required_facts": [
+        "strength.tier",
+        "strength.siling",
+        "strength.roots"
+      ],
+      "when": {
+        "exists": "day.gan"
+      },
+      "satisfy_when": "已记录得令得地得势分层，并标明与原文身强不是同一套",
+      "fail_when": "无从记录日主",
+      "unknown_when": "身强带比、身强七煞逢制、身强而财有根未逐步量化；不得把分层结果写成已经身强，不得输出成格",
+      "rescue": "unimplemented",
+      "vernacular": "本盘旺衰是得令得地得势分层。这与原文身强不是同一套，不是已经身强。",
+      "implementation_assumption": "现行四层旺衰（得令/通根档位/党众）不覆盖成子平身强。不把偏强、极强、根深或党众得势写成已经身强。",
+      "verified": false
+    },
+    {
+      "id": "ZPR-E-21",
+      "art": "bazi",
+      "theme": "伤官旺透藏",
+      "school": "子平真诠",
+      "paragraph_ids": [
+        "ziping-zhenquan:L0363-L0371"
+      ],
+      "sources": [
+        {
+          "paragraph_id": "ziping-zhenquan:L0363-L0371",
+          "start_line": 369,
+          "end_line": 369,
+          "quote": "傷官生財，或傷官佩印而傷官旺、印有根，或傷官旺、身主弱而透煞印，或傷官帶煞而無財，傷官格成也；"
+        }
+      ],
+      "quote": "傷官生財，或傷官佩印而傷官旺、印有根，或傷官旺、身主弱而透煞印，或傷官帶煞而無財，傷官格成也；",
+      "page": "geju",
+      "required_facts": [
+        "tenGodFacts.伤官.layer",
+        "tenGodFacts.伤官.role"
+      ],
+      "when": {
+        "exists": "day.gan"
+      },
+      "satisfy_when": "伤官出现：只记录透干、本气、中气、余气",
+      "fail_when": "原局天干藏干均无伤官",
+      "unknown_when": "旺、身主弱未论；本气不是已经旺，不得输出成格",
+      "rescue": "unimplemented",
+      "vernacular": "伤官旺只记透藏：{shangguan_positions}。本气中气余气不是已经旺，也不等于成格。",
+      "implementation_assumption": "不把月令本气映射成已经旺。身主弱见 ZPR-E-20，印根见 ZPR-E-19。completion 仍为信息不足。",
+      "verified": false
+    },
+    {
+      "id": "ZPR-E-22",
+      "art": "bazi",
+      "theme": "财有根透藏",
+      "school": "子平真诠",
+      "paragraph_ids": [
+        "ziping-zhenquan:L1217-L1217"
+      ],
+      "sources": [
+        {
+          "paragraph_id": "ziping-zhenquan:L1217-L1217",
+          "start_line": 1217,
+          "end_line": 1217,
+          "quote": "故有傷官用財者，蓋傷不利於官，所以爲凶。傷官生財，則以傷官者生生官之具，轉凶爲吉，故最利之。只要身强而財有根，便爲貴格，如壬午、己酉、戊午、庚申，史春芳命也。"
+        }
+      ],
+      "quote": "故有傷官用財者，蓋傷不利於官，所以爲凶。傷官生財，則以傷官者生生官之具，轉凶爲吉，故最利之。只要身强而財有根，便爲貴格，如壬午、己酉、戊午、庚申，史春芳命也。",
+      "page": "geju",
+      "required_facts": [
+        "tenGodFacts.正财.layer",
+        "tenGodFacts.偏财.layer",
+        "tenGodFacts.正财.role",
+        "tenGodFacts.偏财.role"
+      ],
+      "when": {
+        "exists": "day.gan"
+      },
+      "satisfy_when": "正财或偏财出现：只记录透干、本气、中气、余气",
+      "fail_when": "原局天干藏干均无财星",
+      "unknown_when": "有根、身强、贵格未论；本气不是已经有根，不得输出成格",
+      "rescue": "unimplemented",
+      "vernacular": "财有根只记透藏：{cai_positions}。本气中气余气不是已经有根，也不等于成格。",
+      "implementation_assumption": "财计正财偏财。不把本气映射成有根。身强见 ZPR-E-20。completion 仍为信息不足。",
+      "verified": false
+    },
+    {
+      "id": "ZPR-E-23",
+      "art": "bazi",
+      "theme": "财印位置分条",
+      "school": "子平真诠",
+      "paragraph_ids": [
+        "ziping-zhenquan:L0363-L0371"
+      ],
+      "sources": [
+        {
+          "paragraph_id": "ziping-zhenquan:L0363-L0371",
+          "start_line": 365,
+          "end_line": 365,
+          "quote": "財生官旺，或財逢食生而身强帶比，或財格透印而位置妥貼，兩不相尅，財格成也；"
+        }
+      ],
+      "quote": "財生官旺，或財逢食生而身强帶比，或財格透印而位置妥貼，兩不相尅，財格成也；",
+      "page": "geju",
+      "required_facts": [
+        "tenGodFacts.正财.layer",
+        "tenGodFacts.偏财.layer",
+        "tenGodFacts.正印.layer",
+        "tenGodFacts.偏印.layer",
+        "tenGodFacts.pillarIndex"
+      ],
+      "when": {
+        "exists": "day.gan"
+      },
+      "satisfy_when": "财印透干已记录是否相并或有隔，并标明位置妥贴未论",
+      "fail_when": "无从记录天干",
+      "unknown_when": "位置妥贴、两不相尅、干头两清未逐步量化；有隔不是已经位置妥贴，相并不是已经两不相能，不得输出成格",
+      "rescue": "unimplemented",
+      "vernacular": "财印位置只记透干相并或有隔。有隔不是已经位置妥贴，也不等于成格。",
+      "implementation_assumption": "柱距按年-月-日-时直线，年时不算相邻。隔以它干只记柱距，不把有隔覆盖成两不相碍，也不把相并覆盖成两不相能。completion 仍为信息不足。",
+      "verified": false
+    },
+    {
+      "id": "ZPR-E-24",
+      "art": "bazi",
+      "theme": "食神成路透藏",
+      "school": "子平真诠",
+      "paragraph_ids": [
+        "ziping-zhenquan:L0363-L0371"
+      ],
+      "sources": [
+        {
+          "paragraph_id": "ziping-zhenquan:L0363-L0371",
+          "start_line": 367,
+          "end_line": 367,
+          "quote": "食神生財，或食帶煞而無財，棄食就煞而透印，食神格成也；"
+        }
+      ],
+      "quote": "食神生財，或食帶煞而無財，棄食就煞而透印，食神格成也；",
+      "page": "geju",
+      "required_facts": [
+        "tenGodFacts.正财.layer",
+        "tenGodFacts.偏财.layer",
+        "tenGodFacts.偏官.layer",
+        "tenGodFacts.正印.layer"
+      ],
+      "when": {
+        "geju.name": [
+          "食神格"
+        ]
+      },
+      "satisfy_when": "食神格已记录生财、带煞无财、弃食就煞透印的透藏",
+      "fail_when": "不是食神格",
+      "unknown_when": "弃食、身强未论；透财不是已经成格，不得输出成格",
+      "rescue": "unimplemented",
+      "vernacular": "食神格成路只记透藏。生财出现不等于成格。",
+      "implementation_assumption": "弃食不是透干本身。带煞无财按七杀透干且原局无财记录。completion 仍为信息不足。",
+      "verified": false
+    },
+    {
+      "id": "ZPR-E-25",
+      "art": "bazi",
+      "theme": "阳刃成路透藏",
+      "school": "子平真诠",
+      "paragraph_ids": [
+        "ziping-zhenquan:L0363-L0371"
+      ],
+      "sources": [
+        {
+          "paragraph_id": "ziping-zhenquan:L0363-L0371",
+          "start_line": 370,
+          "end_line": 370,
+          "quote": "陽刃透官煞而露財印，不見傷官，陽刃格成也；"
+        }
+      ],
+      "quote": "陽刃透官煞而露財印，不見傷官，陽刃格成也；",
+      "page": "geju",
+      "required_facts": [
+        "tenGodFacts.正官.layer",
+        "tenGodFacts.偏官.layer",
+        "tenGodFacts.正财.layer",
+        "tenGodFacts.正印.layer",
+        "tenGodFacts.伤官.layer"
+      ],
+      "when": {
+        "geju.name": [
+          "月刃格"
+        ]
+      },
+      "satisfy_when": "月刃格已按原文阳刃成路记录透官煞、露财印、不见伤官",
+      "fail_when": "不是月刃格",
+      "unknown_when": "制刃力量未论；不见伤官不是已经成格，见伤官透干不是已经败格，不得输出成格",
+      "rescue": "unimplemented",
+      "vernacular": "阳刃成路只记透藏。本盘格局名仍是月刃格，不等于成格。",
+      "implementation_assumption": "露财印按财与印都透干。不见伤官：无伤官为满足，只见藏干为信息不足，透干为不满足。不把月刃格改名为阳刃格。completion 仍为信息不足。",
+      "verified": false
+    },
+    {
+      "id": "ZPR-E-26",
+      "art": "bazi",
+      "theme": "建禄月劫成路透藏",
+      "school": "子平真诠",
+      "paragraph_ids": [
+        "ziping-zhenquan:L0363-L0371"
+      ],
+      "sources": [
+        {
+          "paragraph_id": "ziping-zhenquan:L0363-L0371",
+          "start_line": 371,
+          "end_line": 371,
+          "quote": "建祿月劫，透官而逢財印，透財而逢食傷，透煞而遇制伏，建祿月劫之格成也。"
+        }
+      ],
+      "quote": "建祿月劫，透官而逢財印，透財而逢食傷，透煞而遇制伏，建祿月劫之格成也。",
+      "page": "geju",
+      "required_facts": [
+        "tenGodFacts.正官.layer",
+        "tenGodFacts.正财.layer",
+        "tenGodFacts.食神.layer",
+        "tenGodFacts.偏官.layer"
+      ],
+      "when": {
+        "geju.name": [
+          "建禄格"
+        ]
+      },
+      "satisfy_when": "建禄格已记录透官逢财印、透财逢食伤、透煞遇制伏的透藏",
+      "fail_when": "不是建禄格",
+      "unknown_when": "另取用神未完成；透官逢财印不是已经成格，不得输出成格",
+      "rescue": "unimplemented",
+      "vernacular": "建禄月劫成路只记透藏。月令本身仍不可为用，不等于成格。",
+      "implementation_assumption": "透官而逢财印按官透且财印都透。透财而逢食伤按财透且食神或伤官透。透煞遇制伏按七杀透且食神透。建禄格 status 仍为格局不清。completion 仍为信息不足。",
+      "verified": false
+    },
+    {
+      "id": "ZPR-E-27",
+      "art": "bazi",
+      "theme": "印格成路透藏",
+      "school": "子平真诠",
+      "paragraph_ids": [
+        "ziping-zhenquan:L0363-L0371"
+      ],
+      "sources": [
+        {
+          "paragraph_id": "ziping-zhenquan:L0363-L0371",
+          "start_line": 366,
+          "end_line": 366,
+          "quote": "印輕逢煞，或官印雙全，或身印兩旺而用食傷洩氣，或印多逢財而財透根輕，印格成也；"
+        }
+      ],
+      "quote": "印輕逢煞，或官印雙全，或身印兩旺而用食傷洩氣，或印多逢財而財透根輕，印格成也；",
+      "page": "geju",
+      "required_facts": [
+        "tenGodFacts.偏官.layer",
+        "tenGodFacts.正官.layer",
+        "tenGodFacts.食神.layer",
+        "tenGodFacts.正财.layer"
+      ],
+      "when": {
+        "geju.name": [
+          "正印格",
+          "偏印格"
+        ]
+      },
+      "satisfy_when": "印格已记录逢煞、官印双全、食伤泄气、财透的透藏",
+      "fail_when": "不是印格",
+      "unknown_when": "印轻、身印两旺、根轻未论；官印双全不是已经成格，不得输出成格",
+      "rescue": "unimplemented",
+      "vernacular": "印格成路只记透藏。印轻不是透煞本身，也不等于成格。",
+      "implementation_assumption": "官印双全按正官与印都透干。食伤泄气按食神或伤官透干。印轻、身旺、根轻不映射成透藏档位。completion 仍为信息不足。",
+      "verified": false
+    },
+    {
+      "id": "ZPR-E-28",
+      "art": "bazi",
+      "theme": "财格成路透藏",
+      "school": "子平真诠",
+      "paragraph_ids": [
+        "ziping-zhenquan:L0363-L0371"
+      ],
+      "sources": [
+        {
+          "paragraph_id": "ziping-zhenquan:L0363-L0371",
+          "start_line": 365,
+          "end_line": 365,
+          "quote": "財生官旺，或財逢食生而身强帶比，或財格透印而位置妥貼，兩不相尅，財格成也；"
+        }
+      ],
+      "quote": "財生官旺，或財逢食生而身强帶比，或財格透印而位置妥貼，兩不相尅，財格成也；",
+      "page": "geju",
+      "required_facts": [
+        "tenGodFacts.正官.layer",
+        "tenGodFacts.食神.layer"
+      ],
+      "when": {
+        "geju.name": [
+          "正财格",
+          "偏财格"
+        ]
+      },
+      "satisfy_when": "财格已记录财生官、财逢食生的透藏",
+      "fail_when": "不是财格",
+      "unknown_when": "官旺、身强带比未论；透官不是已经官旺，不得输出成格",
+      "rescue": "unimplemented",
+      "vernacular": "财格成路只记透藏。官旺不是透官本身，也不等于成格。",
+      "implementation_assumption": "财生官按正官透干。财逢食生按食神透干。身强带比见 ZPR-E-20，位置见 ZPR-E-23。completion 仍为信息不足。",
+      "verified": false
+    },
+    {
+      "id": "ZPR-E-29",
+      "art": "bazi",
+      "theme": "阳刃无官煞败格透藏",
+      "school": "子平真诠",
+      "paragraph_ids": [
+        "ziping-zhenquan:L0373-L0381"
+      ],
+      "sources": [
+        {
+          "paragraph_id": "ziping-zhenquan:L0373-L0381",
+          "start_line": 380,
+          "end_line": 380,
+          "quote": "陽刃無官煞，陽刃格敗也；"
+        }
+      ],
+      "quote": "陽刃無官煞，陽刃格敗也；",
+      "page": "geju",
+      "required_facts": [
+        "tenGodFacts.正官.layer",
+        "tenGodFacts.偏官.layer"
+      ],
+      "when": {
+        "geju.name": [
+          "月刃格"
+        ]
+      },
+      "satisfy_when": "月刃格已按原文阳刃败格记录无官煞的透藏",
+      "fail_when": "不是月刃格",
+      "unknown_when": "制刃力量未论；无官煞不是败格结论，见官煞透干也不是已经成格，不得输出破格",
+      "rescue": "unimplemented",
+      "vernacular": "阳刃败格只记透藏。无官煞出现不等于破格。",
+      "implementation_assumption": "无官煞：原局不见正官偏官为满足，只见藏干为信息不足，透干为不满足。不把月刃格改名为阳刃格。completion 仍为信息不足，不得输出破格。",
+      "verified": false
+    },
+    {
+      "id": "ZPR-E-30",
+      "art": "bazi",
+      "theme": "建禄无财官透煞印败格透藏",
+      "school": "子平真诠",
+      "paragraph_ids": [
+        "ziping-zhenquan:L0373-L0381"
+      ],
+      "sources": [
+        {
+          "paragraph_id": "ziping-zhenquan:L0373-L0381",
+          "start_line": 381,
+          "end_line": 381,
+          "quote": "建祿月劫，無財官，透煞印，建祿月劫之格敗也。"
+        }
+      ],
+      "quote": "建祿月劫，無財官，透煞印，建祿月劫之格敗也。",
+      "page": "geju",
+      "required_facts": [
+        "tenGodFacts.正财.layer",
+        "tenGodFacts.正官.layer",
+        "tenGodFacts.偏官.layer",
+        "tenGodFacts.正印.layer"
+      ],
+      "when": {
+        "geju.name": [
+          "建禄格"
+        ]
+      },
+      "satisfy_when": "建禄格已记录无财官、透煞印的透藏",
+      "fail_when": "不是建禄格",
+      "unknown_when": "另取用神未完成；无财官透煞印不是破格结论，不得输出破格",
+      "rescue": "unimplemented",
+      "vernacular": "建禄月劫败格只记透藏。透煞印出现不等于破格。",
+      "implementation_assumption": "无财官按不见正财偏财且不见正官。透煞印按七杀与印都透干。官不含七杀，否则与透煞矛盾。建禄格 status 仍为格局不清。completion 仍为信息不足，不得输出破格。",
+      "verified": false
+    },
+    {
+      "id": "ZPR-E-31",
+      "art": "bazi",
+      "theme": "食神生财露煞败格透藏",
+      "school": "子平真诠",
+      "paragraph_ids": [
+        "ziping-zhenquan:L0373-L0381"
+      ],
+      "sources": [
+        {
+          "paragraph_id": "ziping-zhenquan:L0373-L0381",
+          "start_line": 377,
+          "end_line": 377,
+          "quote": "食神逢梟，或生財露煞，食神格敗也；"
+        }
+      ],
+      "quote": "食神逢梟，或生財露煞，食神格敗也；",
+      "page": "geju",
+      "required_facts": [
+        "tenGodFacts.正财.layer",
+        "tenGodFacts.偏官.layer"
+      ],
+      "when": {
+        "geju.name": [
+          "食神格"
+        ]
+      },
+      "satisfy_when": "食神格已记录生财露煞的透藏",
+      "fail_when": "不是食神格",
+      "unknown_when": "逢枭已另记；生财露煞不是破格结论，不得输出破格",
+      "rescue": "unimplemented",
+      "vernacular": "食神败格只记透藏。生财露煞出现不等于破格。",
+      "implementation_assumption": "生财露煞按财透且七杀透。逢枭仍走既有枭神夺食。completion 仍为信息不足，不得输出破格。",
+      "verified": false
+    },
+    {
+      "id": "ZPR-E-32",
+      "art": "bazi",
+      "theme": "用神变化分条",
+      "school": "子平真诠",
+      "paragraph_ids": [
+        "ziping-zhenquan:L0421-L0421"
+      ],
+      "sources": [
+        {
+          "paragraph_id": "ziping-zhenquan:L0421-L0421",
+          "start_line": 421,
+          "end_line": 421,
+          "quote": "故若丁生亥月，本爲正官，支全卯未，則化爲印；己生申月，本屬傷官，藏庚透壬，則化爲財。凡此之類，皆用神之變化也。"
+        }
+      ],
+      "quote": "故若丁生亥月，本爲正官，支全卯未，則化爲印；己生申月，本屬傷官，藏庚透壬，則化爲財。凡此之類，皆用神之變化也。",
+      "page": "geju",
+      "required_facts": [
+        "day.gan",
+        "month.zhi",
+        "zhis",
+        "stems.except_day"
+      ],
+      "when": {
+        "exists": "geju.name"
+      },
+      "satisfy_when": "已按原文两例记录丁生亥月支全卯未、己生申月藏庚透壬",
+      "fail_when": "无从记录月令",
+      "unknown_when": "变之善不善另见 ZPR-E-33；不失本格、纯杂另见 ZPR-E-34、ZPR-E-35；格局高低未论；化为印不是已经改格，不得输出成格",
+      "rescue": "unimplemented",
+      "vernacular": "用神变化只记原文例的透藏会支。化为印不是已经改格。",
+      "implementation_assumption": "丁生亥月本盘按亥本气壬取正官格，与化为印分条，不覆盖成已经改格。支全卯未只记地支同时见卯未。己生申月透壬只记年日月时干除日干外见壬。不按寅藏甲丙戊重写取格。completion 仍为信息不足。",
+      "verified": false
+    },
+    {
+      "id": "ZPR-E-33",
+      "art": "bazi",
+      "theme": "变之善不善分条",
+      "school": "子平真诠",
+      "paragraph_ids": [
+        "ziping-zhenquan:L0425-L0430",
+        "ziping-zhenquan:L0432-L0432"
+      ],
+      "sources": [
+        {
+          "paragraph_id": "ziping-zhenquan:L0425-L0430",
+          "start_line": 426,
+          "end_line": 430,
+          "quote": "如辛生寅月，逢丙而化財爲官；\n壬生戌月，逢辛而化煞爲印；\n癸生寅月，藏甲透丙，會午會戌【校：自「逢辛」至「會戌」共十九字，原書缺，據中州本補】，而化傷爲財，即使透官，可作財旺生官論，不作傷官見官；\n乙生寅月，透戊爲財，會午會戌，則月劫化爲食傷【校：「食傷」原作「月生」，據中州本改】。\n如此之類，不可勝數，皆變之善者也。"
+        },
+        {
+          "paragraph_id": "ziping-zhenquan:L0432-L0432",
+          "start_line": 432,
+          "end_line": 432,
+          "quote": "何謂變之而不善？如丙生寅月，本爲印綬，甲不透干，而會午會戌，則化爲劫；丙生申月，本屬偏財，藏庚透壬，會子會辰，則化爲煞。如此之類亦多，皆變之不善者也。"
+        }
+      ],
+      "quote": "如辛生寅月，逢丙而化財爲官；\n壬生戌月，逢辛而化煞爲印；\n癸生寅月，藏甲透丙，會午會戌【校：自「逢辛」至「會戌」共十九字，原書缺，據中州本補】，而化傷爲財，即使透官，可作財旺生官論，不作傷官見官；\n乙生寅月，透戊爲財，會午會戌，則月劫化爲食傷【校：「食傷」原作「月生」，據中州本改】。\n如此之類，不可勝數，皆變之善者也。\n[…]\n何謂變之而不善？如丙生寅月，本爲印綬，甲不透干，而會午會戌，則化爲劫；丙生申月，本屬偏財，藏庚透壬，會子會辰，則化爲煞。如此之類亦多，皆變之不善者也。",
+      "page": "geju",
+      "required_facts": [
+        "day.gan",
+        "month.zhi",
+        "zhis",
+        "stems.except_day"
+      ],
+      "when": {
+        "exists": "geju.name"
+      },
+      "satisfy_when": "已按原文记录辛生寅月逢丙、壬生戌月逢辛、丙生寅月甲不透会午戌、丙生申月透壬会子辰",
+      "fail_when": "无从记录月令",
+      "unknown_when": "格局高低未论；化财为官不是已经改格，化为劫不是败格结论，不得输出成格或破格",
+      "rescue": "unimplemented",
+      "vernacular": "变之善不善只记原文例的透藏会支。化财为官、化为劫不是已经改格。",
+      "implementation_assumption": "辛生寅月逢丙只记年日月时干除日干外见丙，本盘仍按寅藏甲取正财格。壬生戌月逢辛只记见辛，本盘仍按戌本气戊取七杀格。丙生寅月甲不透且支见午戌，本盘仍按寅本气甲取偏印格。丙生申月透壬且支见子辰，本盘仍按申本气庚取偏财格。不按寅藏甲丙戊重写取格。completion 仍为信息不足。",
+      "verified": false
+    },
+    {
+      "id": "ZPR-E-34",
+      "art": "bazi",
+      "theme": "变而不失本格分条",
+      "school": "子平真诠",
+      "paragraph_ids": [
+        "ziping-zhenquan:L0434-L0440"
+      ],
+      "sources": [
+        {
+          "paragraph_id": "ziping-zhenquan:L0434-L0440",
+          "start_line": 435,
+          "end_line": 439,
+          "quote": "如辛生寅月，透丙化官，而又透甲，格成正財，正官乃其兼格也；\n乙生申月，透壬化印，而又透戊，則財能生官，印逢財而退位，難通月氣【校：中州本作「雖通月令」】，格成正官，而印爲兼格；\n癸生寅月，透丙化財，而又透甲，格成傷官，而戊官忌見；\n丙生寅月，午戌會劫，而又或透甲【校：「或透甲」三字據中州本補】，或透壬，則仍爲印而格不破；\n丙生申月，逢壬化煞，而又透戊，則食神能制煞生財，仍爲財格，不失富貴。"
+        }
+      ],
+      "quote": "如辛生寅月，透丙化官，而又透甲，格成正財，正官乃其兼格也；\n乙生申月，透壬化印，而又透戊，則財能生官，印逢財而退位，難通月氣【校：中州本作「雖通月令」】，格成正官，而印爲兼格；\n癸生寅月，透丙化財，而又透甲，格成傷官，而戊官忌見；\n丙生寅月，午戌會劫，而又或透甲【校：「或透甲」三字據中州本補】，或透壬，則仍爲印而格不破；\n丙生申月，逢壬化煞，而又透戊，則食神能制煞生財，仍爲財格，不失富貴。",
+      "page": "geju",
+      "required_facts": [
+        "day.gan",
+        "month.zhi",
+        "zhis",
+        "stems.except_day"
+      ],
+      "when": {
+        "exists": "geju.name"
+      },
+      "satisfy_when": "已按原文记录辛寅透丙又透甲、乙申透壬又透戊、癸寅透丙又透甲、丙寅会劫又透甲或壬、丙申逢壬又透戊",
+      "fail_when": "无从记录月令",
+      "unknown_when": "格局高低未论；原文格成正财、格不破不是本盘成格或破格结论，不得输出成格或破格",
+      "rescue": "unimplemented",
+      "vernacular": "变而不失本格只记原文并透。透甲兼格不是成格结论，格不破不是破格结论。",
+      "implementation_assumption": "并透只记年日月时干除日干外同时见所列天干。丙寅会劫又要求地支见午戌。不把原文格成正财覆盖成本盘成格。不改 GE_NAME。completion 仍为信息不足。",
+      "verified": false
+    },
+    {
+      "id": "ZPR-E-35",
+      "art": "bazi",
+      "theme": "用神纯杂分条",
+      "school": "子平真诠",
+      "paragraph_ids": [
+        "ziping-zhenquan:L0452-L0452",
+        "ziping-zhenquan:L0454-L0454"
+      ],
+      "sources": [
+        {
+          "paragraph_id": "ziping-zhenquan:L0452-L0452",
+          "start_line": 452,
+          "end_line": 452,
+          "quote": "何謂純？互【校：「互」原作「五」，據中州本改，下一「互」字同】用而兩相得者是也。如辛生寅月，甲丙並透，財與官相生，兩相得也；戊生申月，庚壬並透，財與食相生，兩相得也；癸生未月，乙己並透，煞與食相尅，相尅而得其當，亦兩相得也。如此之類，皆用神之純者也。"
+        },
+        {
+          "paragraph_id": "ziping-zhenquan:L0454-L0454",
+          "start_line": 454,
+          "end_line": 454,
+          "quote": "何謂雜？互用而兩不相謀者是也。如壬生未月，乙己並透，官與傷相尅，兩不相謀也；甲生辰月，戊壬並透，印與財相尅，亦兩不相謀也；癸生午月，丁己並透，財與煞相生，相生而適爲累，亦兩不相謀也。如此之類，皆用神之雜者也。"
+        }
+      ],
+      "quote": "何謂純？互【校：「互」原作「五」，據中州本改，下一「互」字同】用而兩相得者是也。如辛生寅月，甲丙並透，財與官相生，兩相得也；戊生申月，庚壬並透，財與食相生，兩相得也；癸生未月，乙己並透，煞與食相尅，相尅而得其當，亦兩相得也。如此之類，皆用神之純者也。\n[…]\n何謂雜？互用而兩不相謀者是也。如壬生未月，乙己並透，官與傷相尅，兩不相謀也；甲生辰月，戊壬並透，印與財相尅，亦兩不相謀也；癸生午月，丁己並透，財與煞相生，相生而適爲累，亦兩不相謀也。如此之類，皆用神之雜者也。",
+      "page": "geju",
+      "required_facts": [
+        "day.gan",
+        "month.zhi",
+        "stems.except_day"
+      ],
+      "when": {
+        "exists": "geju.name"
+      },
+      "satisfy_when": "已按原文记录辛寅甲丙、戊申庚壬、癸未乙己、壬未乙己、甲辰戊壬、癸午丁己并透",
+      "fail_when": "无从记录月令",
+      "unknown_when": "两相得、两不相谋未论吉凶；格局高低未论；并透不是已经论纯或已经论杂，不得输出成格或破格",
+      "rescue": "unimplemented",
+      "vernacular": "用神纯杂只记原文并透。甲丙并透不是已经论纯，乙己并透不是已经论杂。",
+      "implementation_assumption": "并透只记年日月时干除日干外同时见所列天干。不把纯覆盖成吉，不把杂覆盖成凶。不改 GE_NAME。completion 仍为信息不足。",
+      "verified": false
+    },
+    {
+      "id": "ZPR-E-36",
+      "art": "bazi",
+      "theme": "格局高低分条",
+      "school": "子平真诠",
+      "paragraph_ids": [
+        "ziping-zhenquan:L0468-L0468",
+        "ziping-zhenquan:L0470-L0470"
+      ],
+      "sources": [
+        {
+          "paragraph_id": "ziping-zhenquan:L0468-L0468",
+          "start_line": 468,
+          "end_line": 468,
+          "quote": "如正官佩印，不如透財，而四柱帶傷，反推佩印。故甲透酉官，透丁合壬，是謂合傷存官，遂成貴格，以其有情也。財忌比肩，而與煞作合，劫反爲用。故甲生辰月，透戊成格，遇乙爲劫，逢庚爲煞，二者相合，皆得其用，遂成貴格，亦以其有情也。"
+        },
+        {
+          "paragraph_id": "ziping-zhenquan:L0470-L0470",
+          "start_line": 470,
+          "end_line": 470,
+          "quote": "身强煞露，而食神又旺，如乙生酉月，辛金透，丁火剛，秋木盛，三者皆備，極品之貴，以其有力也。官强財透，而身坐祿刃，如丙生子月，癸水透，庚金露，丙坐寅午，三者皆均，遂成大貴，亦以其有力也。"
+        }
+      ],
+      "quote": "如正官佩印，不如透財，而四柱帶傷，反推佩印。故甲透酉官，透丁合壬，是謂合傷存官，遂成貴格，以其有情也。財忌比肩，而與煞作合，劫反爲用。故甲生辰月，透戊成格，遇乙爲劫，逢庚爲煞，二者相合，皆得其用，遂成貴格，亦以其有情也。\n[…]\n身强煞露，而食神又旺，如乙生酉月，辛金透，丁火剛，秋木盛，三者皆備，極品之貴，以其有力也。官强財透，而身坐祿刃，如丙生子月，癸水透，庚金露，丙坐寅午，三者皆均，遂成大貴，亦以其有力也。",
+      "page": "geju",
+      "required_facts": [
+        "day.gan",
+        "month.zhi",
+        "zhis",
+        "stems.except_day"
+      ],
+      "when": {
+        "exists": "geju.name"
+      },
+      "satisfy_when": "已按原文记录甲酉透丁合壬、甲辰遇乙逢庚、乙酉辛丁并透、丙子癸庚透而日支寅或午",
+      "fail_when": "无从记录月令",
+      "unknown_when": "有情无情、有力无力未逐步量化；相神紧要、用神配气候另见后条；合伤存官不是成格结论，辛丁并透不是已经论有力，不得输出成格或破格",
+      "rescue": "unimplemented",
+      "vernacular": "格局高低只记原文透藏。合伤存官不是成格结论，辛丁并透不是已经论有力。",
+      "implementation_assumption": "并透只记年日月时干除日干外同时见所列天干。丙子还要求日支为寅或午。不把有情有力覆盖成本盘成格。不改 GE_NAME。completion 仍为信息不足。",
+      "verified": false
+    },
+    {
+      "id": "ZPR-E-37",
+      "art": "bazi",
+      "theme": "因成得败因败得成分条",
+      "school": "子平真诠",
+      "paragraph_ids": [
+        "ziping-zhenquan:L0490-L0490",
+        "ziping-zhenquan:L0492-L0492"
+      ],
+      "sources": [
+        {
+          "paragraph_id": "ziping-zhenquan:L0490-L0490",
+          "start_line": 490,
+          "end_line": 490,
+          "quote": "故化傷爲財，格之成也，然辛生亥月，透丁爲用，卯未會財，乃以黨煞，因成得敗矣。印用七煞，格之成也，然癸生申月，秋金重重，略帶財以損太過，逢煞則煞印忌財，因成得敗也。如此之類，不可勝數，皆因成得敗之例也。"
+        },
+        {
+          "paragraph_id": "ziping-zhenquan:L0492-L0492",
+          "start_line": 492,
+          "end_line": 492,
+          "quote": "官印逢傷，格之敗也，然辛生戊戌月，年丙時壬，壬不能越戊尅丙，而反能洩身爲秀，是因敗得成矣。煞刃逢食，格之敗也，然庚生酉月，年月丙丁，時上逢壬，則食神合官留煞，而官煞不雜，煞刃局清，是因敗得成矣。如此之類，亦不可勝數，皆因敗得成之例也。"
+        }
+      ],
+      "quote": "故化傷爲財，格之成也，然辛生亥月，透丁爲用，卯未會財，乃以黨煞，因成得敗矣。印用七煞，格之成也，然癸生申月，秋金重重，略帶財以損太過，逢煞則煞印忌財，因成得敗也。如此之類，不可勝數，皆因成得敗之例也。\n[…]\n官印逢傷，格之敗也，然辛生戊戌月，年丙時壬，壬不能越戊尅丙，而反能洩身爲秀，是因敗得成矣。煞刃逢食，格之敗也，然庚生酉月，年月丙丁，時上逢壬，則食神合官留煞，而官煞不雜，煞刃局清，是因敗得成矣。如此之類，亦不可勝數，皆因敗得成之例也。",
+      "page": "geju",
+      "required_facts": [
+        "day.gan",
+        "month.zhi",
+        "zhis",
+        "year.gan",
+        "time.gan",
+        "stems.except_day"
+      ],
+      "when": {
+        "exists": "geju.name"
+      },
+      "satisfy_when": "已按原文记录辛亥透丁卯未会财、辛戌年丙时壬、庚酉年月丙丁时壬",
+      "fail_when": "无从记录月令",
+      "unknown_when": "癸生申月秋金重重未逐步量化；因成得败不是破格结论，因败得成不是成格结论，不得输出成格或破格",
+      "rescue": "unimplemented",
+      "vernacular": "因成得败因败得成只记原文透藏会支与年时干。卯未会财不是破格结论，年丙时壬不是成格结论。",
+      "implementation_assumption": "辛亥透丁卯未只记年日月时干除日干外见丁，且地支同时见卯未。辛戌年丙时壬只记年干丙且时干壬。庚酉年月丙丁时壬只记年干月干同时见丙丁且时干壬。不把因成得败覆盖成本盘破格。不改 GE_NAME。completion 仍为信息不足。",
+      "verified": false
+    },
+    {
+      "id": "ZPR-E-38",
+      "art": "bazi",
+      "theme": "用神配气候分条",
+      "school": "子平真诠",
+      "paragraph_ids": [
+        "ziping-zhenquan:L0504-L0504",
+        "ziping-zhenquan:L0506-L0506",
+        "ziping-zhenquan:L0508-L0508",
+        "ziping-zhenquan:L0510-L0510",
+        "ziping-zhenquan:L0512-L0512"
+      ],
+      "sources": [
+        {
+          "paragraph_id": "ziping-zhenquan:L0504-L0504",
+          "start_line": 504,
+          "end_line": 504,
+          "quote": "是以印綬遇官，此謂官印雙全，無人不貴。而木逢冬水，雖透官星，亦難必貴。蓋金寒而水益凍，凍水不能生木，其理然也。身印兩旺，透食則貴，凡印格皆然。而用之冬木，尤爲秀【校：「秀」原作「透」，據中州本改】氣，以冬木逢火，不惟可以洩身，而即可以調候也。"
+        },
+        {
+          "paragraph_id": "ziping-zhenquan:L0506-L0506",
+          "start_line": 506,
+          "end_line": 506,
+          "quote": "傷官見官，爲禍百端，而金水見之，反爲秀氣。非官之不畏夫傷，而調候爲急【校：「爲」原作謂「謂」，據中州本改】，權而用之也。傷官帶煞，隨時可用，而用之冬金，其秀百倍。傷官佩印，隨時可用，而用之夏木，其秀百倍，火濟水，水濟火也。"
+        },
+        {
+          "paragraph_id": "ziping-zhenquan:L0508-L0508",
+          "start_line": 508,
+          "end_line": 508,
+          "quote": "傷官用財，本爲貴格，而用之冬金【校：「金」原作「水」，據文意改】，即使小富，亦多不貴，凍水不能生木也。傷官用財，即爲秀氣，而用之夏木，貴而不甚秀，燥土不甚靈秀也。"
+        },
+        {
+          "paragraph_id": "ziping-zhenquan:L0510-L0510",
+          "start_line": 510,
+          "end_line": 510,
+          "quote": "春木逢火，則爲木火通明，而夏木不作此論；秋金遇水，則爲金水相涵，而冬金不作此論。氣有衰旺，取用不同也。春木逢火，木火通明，不利見官；而秋金遇水，金水相涵，見官無礙。"
+        },
+        {
+          "paragraph_id": "ziping-zhenquan:L0512-L0512",
+          "start_line": 512,
+          "end_line": 512,
+          "quote": "假如庚生申月，而支中或子或辰，會成水局，天干透丁以爲官星，只要壬癸不透露干頭，便爲貴格，與金水傷官喜見官之說同論，亦調候之道也。食神雖逢正印，亦謂奪食，而夏木火盛，輕用之亦秀而貴，與木火傷官喜見水同論，亦調候之謂也。"
+        }
+      ],
+      "quote": "是以印綬遇官，此謂官印雙全，無人不貴。而木逢冬水，雖透官星，亦難必貴。蓋金寒而水益凍，凍水不能生木，其理然也。身印兩旺，透食則貴，凡印格皆然。而用之冬木，尤爲秀【校：「秀」原作「透」，據中州本改】氣，以冬木逢火，不惟可以洩身，而即可以調候也。\n[…]\n傷官見官，爲禍百端，而金水見之，反爲秀氣。非官之不畏夫傷，而調候爲急【校：「爲」原作謂「謂」，據中州本改】，權而用之也。傷官帶煞，隨時可用，而用之冬金，其秀百倍。傷官佩印，隨時可用，而用之夏木，其秀百倍，火濟水，水濟火也。\n[…]\n傷官用財，本爲貴格，而用之冬金【校：「金」原作「水」，據文意改】，即使小富，亦多不貴，凍水不能生木也。傷官用財，即爲秀氣，而用之夏木，貴而不甚秀，燥土不甚靈秀也。\n[…]\n春木逢火，則爲木火通明，而夏木不作此論；秋金遇水，則爲金水相涵，而冬金不作此論。氣有衰旺，取用不同也。春木逢火，木火通明，不利見官；而秋金遇水，金水相涵，見官無礙。\n[…]\n假如庚生申月，而支中或子或辰，會成水局，天干透丁以爲官星，只要壬癸不透露干頭，便爲貴格，與金水傷官喜見官之說同論，亦調候之道也。食神雖逢正印，亦謂奪食，而夏木火盛，輕用之亦秀而貴，與木火傷官喜見水同論，亦調候之謂也。",
+      "page": "geju",
+      "required_facts": [
+        "day.gan",
+        "month.zhi",
+        "zhis",
+        "stems.except_day"
+      ],
+      "when": {
+        "exists": "geju.name"
+      },
+      "satisfy_when": "已按原文记录庚申会子或辰透丁无壬癸、春木逢火、秋金遇水",
+      "fail_when": "无从记录月令",
+      "unknown_when": "不覆盖月令调候表；木逢冬水虽透官星难必贵未逐步量化；透丁为官不是成格结论，木火通明不是已经调候，不得输出成格或破格",
+      "rescue": "unimplemented",
+      "vernacular": "用神配气候只记原文透藏。透丁为官不是成格结论，木火通明不是已经调候。",
+      "implementation_assumption": "庚申会水只记地支见子或辰，年日月时干除日干外见丁且不见壬癸。春木逢火只记甲乙日寅卯月且除日干外见丙或丁。秋金遇水只记庚辛日申酉月且除日干外见壬或癸。不覆盖调候表。不改 GE_NAME。completion 仍为信息不足。",
+      "verified": false
+    },
+    {
+      "id": "ZPR-E-39",
+      "art": "bazi",
+      "theme": "相神紧要分条",
+      "school": "子平真诠",
+      "paragraph_ids": [
+        "ziping-zhenquan:L0524-L0530",
+        "ziping-zhenquan:L0532-L0532"
+      ],
+      "sources": [
+        {
+          "paragraph_id": "ziping-zhenquan:L0524-L0530",
+          "start_line": 525,
+          "end_line": 530,
+          "quote": "如甲用酉官，透丁逢壬，則合傷存官以成格者，全賴於壬之相；\n戊用子財，透甲並己，則合煞存財以成格者，全賴於己之相；\n乙用酉煞，年丁月癸，時上逢戊，則合去癸印，以使丁得制煞者，全賴於戊之相；\n癸生亥月，透丙爲財，財逢月劫，而卯未來會，則化水爲木，而轉劫以生財者，全賴於卯未之相；\n庚生申月，透水【校：「水」中州本作「癸」】洩氣，不通月令而金氣不甚靈，子辰會局，則化金爲水，而成金水相涵者，全賴於子辰之相。\n如此之等類，相神之緊要也。"
+        },
+        {
+          "paragraph_id": "ziping-zhenquan:L0532-L0532",
+          "start_line": 532,
+          "end_line": 532,
+          "quote": "相神無破，貴格已成；相神有傷，立敗其格。如甲用酉官，透丁逢癸，印制傷以護官矣，而又逢戊，癸合戊而不制丁，癸水之相傷矣；丁用酉財，透癸逢己，食制煞以生財矣，而又並透甲，己合甲而不制癸，己土之相傷矣。是皆有情而化無情，有用而成無用之格也。"
+        }
+      ],
+      "quote": "如甲用酉官，透丁逢壬，則合傷存官以成格者，全賴於壬之相；\n戊用子財，透甲並己，則合煞存財以成格者，全賴於己之相；\n乙用酉煞，年丁月癸，時上逢戊，則合去癸印，以使丁得制煞者，全賴於戊之相；\n癸生亥月，透丙爲財，財逢月劫，而卯未來會，則化水爲木，而轉劫以生財者，全賴於卯未之相；\n庚生申月，透水【校：「水」中州本作「癸」】洩氣，不通月令而金氣不甚靈，子辰會局，則化金爲水，而成金水相涵者，全賴於子辰之相。\n如此之等類，相神之緊要也。\n[…]\n相神無破，貴格已成；相神有傷，立敗其格。如甲用酉官，透丁逢癸，印制傷以護官矣，而又逢戊，癸合戊而不制丁，癸水之相傷矣；丁用酉財，透癸逢己，食制煞以生財矣，而又並透甲，己合甲而不制癸，己土之相傷矣。是皆有情而化無情，有用而成無用之格也。",
+      "page": "geju",
+      "required_facts": [
+        "day.gan",
+        "month.zhi",
+        "zhis",
+        "year.gan",
+        "month.gan",
+        "time.gan",
+        "stems.except_day"
+      ],
+      "when": {
+        "exists": "geju.name"
+      },
+      "satisfy_when": "已按原文记录甲酉透丁逢壬、戊子透甲并己、乙酉年丁月癸时戊、癸亥透丙卯未、庚申透水子辰、甲酉透丁逢癸又逢戊、丁酉透癸逢己又透甲",
+      "fail_when": "无从记录月令",
+      "unknown_when": "相神无破贵格已成、相神有伤立败其格不是本盘成格或破格结论；全赖壬相不是成格结论，相神有伤不是破格结论，不得输出成格或破格",
+      "rescue": "unimplemented",
+      "vernacular": "相神紧要只记原文透藏会支与年时干。全赖壬相不是成格结论，相神有伤不是破格结论。",
+      "implementation_assumption": "并透只记年日月时干除日干外同时见所列天干。乙酉年丁月癸时戊只记年干丁、月干癸、时干戊。癸亥透丙卯未还要求地支见卯未。庚申透水子辰还要求除日干外见壬或癸且地支见子辰。不把相神无破覆盖成本盘成格。不改 GE_NAME。completion 仍为信息不足。",
+      "verified": false
+    }
+  ]
+}

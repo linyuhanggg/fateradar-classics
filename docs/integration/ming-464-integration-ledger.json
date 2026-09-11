@@ -1,0 +1,313 @@
+{
+  "schemaVersion": 1,
+  "issue": "MING-464",
+  "issueId": "01a091de-9848-7445-b624-ab42b10efea9",
+  "generatedAt": "2026-09-11T19:12:37Z",
+  "repo": "https://github.com/linyuhanggg/fateradar-classics",
+  "integrationBranch": "codex/multica-ming-464",
+  "worktree": "fateradar-multica-ming-464",
+  "parentBatch": {
+    "issue": "MING-447",
+    "tip": "77291945bc3d1290099fb6ef617cf07934bfd42d",
+    "independentReview": "MING-454",
+    "independentReviewSha": "2b56087ae8f445516ef899c9f45c8f10b37580a6",
+    "note": "Stack on independently accepted 447 tip; import MING-439 reviewed NLC JSON + this-round reviewed review markdown; exclude 452 product IDs and running 458-463 files"
+  },
+  "baseline": {
+    "ref": "origin/codex/multica-ming-447",
+    "sha": "77291945bc3d1290099fb6ef617cf07934bfd42d",
+    "note": "MING-454 passed on 447 tip; includes 424 stack + prior review md; 439 JSON intentionally excluded until this batch"
+  },
+  "acceptedBaselineSha": "77291945bc3d1290099fb6ef617cf07934bfd42d",
+  "stackBaseSha": "77291945bc3d1290099fb6ef617cf07934bfd42d",
+  "policies": [
+    "cherry-pick / merge only reviewed paths",
+    "do not whole-file overwrite already-reviewed annotation increments or CP review markdown from 447",
+    "source-reviewed != human verified; verified stays false",
+    "import reviewed MING-439 JSON only (SHA256 pinned)",
+    "do not import unreviewed 452 product definition IDs",
+    "do not touch running 458-463 exclusive files",
+    "do not promote product unique line 6c1dfa3b / main merge / deploy / force push",
+    "not full library completion"
+  ],
+  "annotationIntegrity": {
+    "mingliYueyanNlcRecovery": {
+      "path": "references/annotations/bazi/mingli-yueyan--nlc-recovery.json",
+      "sha256": "09cdbccf314e365dc4a416aec31f1d5c336fd56a93520b86282e423c0faa3928",
+      "blob": "b78b2aaed02653306fa546b763445131053a98ea",
+      "unchangedVs447": false,
+      "sourceIssue": "MING-439",
+      "sourceSha": "e4870ee31d5ad59834d94cd749b00be447549897",
+      "independentReview": "MING-442",
+      "independentReviewSha": "cadfad3dee1e56dfb65377d1865a0df404e0b8ef",
+      "note": "Intentionally imported this batch after independent review; target SHA256 matched"
+    },
+    "shidianSdzj0170": {
+      "path": "references/annotations/ziwei/ziwei-doushu-quanshu--shidian-SDZJ0170.json",
+      "sha256": "d65d93d8f579d2cf181a27d4af707d20d2bac276b785eb4b8c6442fd2982a261",
+      "blob": "1f369f996da7ea96c6e4bd3388510af24e8d1ea7",
+      "unchangedVs447": true
+    },
+    "daliurenDaquan": {
+      "path": "references/annotations/san-shi/daliuren-daquan.json",
+      "sha256": "c9321794bbea0e9df31069bdbf146ec18b61529fb85b9d34729c19ca3d74059a",
+      "blob": "66db69fdf39120e4e37733cb59b5ea01a154dcd9",
+      "unchangedVs447": true
+    },
+    "liurenMiben": {
+      "path": "references/annotations/san-shi/liuren-miben.json",
+      "sha256": "2789a72972a3a1521ae2d0dfa5179e8b6affd92189445064419d1cf4414ad347",
+      "blob": "c9940ca0125443608cc5487e15d8174427d36fc7",
+      "unchangedVs447": true
+    },
+    "xingxueDacheng": {
+      "path": "references/annotations/xingming/xingxue-dacheng.json",
+      "sha256": "11316f4428dd25142e7cbfba26c8eb5e17ef9ff10d0033655dbe33335e92dd20",
+      "blob": "ad59a73379148f9ba45a4634ca4d1d2f1d886d65",
+      "unchangedVs447": true
+    },
+    "qimenNlcLayouts": {
+      "path": "references/annotations/san-shi/qimen-dunjia-tongzhi--nlc-layouts.json",
+      "sha256": "86eb7aa43138fe67d1247a5e520411cfb26f71beb9a220a3cd28d6dcb87bf5ca",
+      "blob": "a7a4c66578d108cf44a1ab70b3fd161ca6ff54e4",
+      "unchangedVs447": true
+    },
+    "otherAnnotationFilesUnchangedVs447": {
+      "totalAnnotationFiles": 58,
+      "changedThisBatch": 1,
+      "unchanged": 57
+    }
+  },
+  "inventory": {
+    "mergedThisBatch": [
+      "MING-454",
+      "MING-439",
+      "MING-442",
+      "MING-443",
+      "MING-444",
+      "MING-445",
+      "MING-448",
+      "MING-449",
+      "MING-450",
+      "MING-451",
+      "MING-453",
+      "MING-455",
+      "MING-456",
+      "MING-457"
+    ],
+    "skipped": [
+      "MING-452 product definition IDs (product repo; independent review incomplete)",
+      "MING-458/459/460/461/462/463 exclusive running files"
+    ]
+  },
+  "batch": {
+    "description": "Stack accepted 447 tip: import MING-447 acceptance review, reviewed MING-439 mingli-yueyan NLC JSON + five-draft repair note/review, and this-round reviewed markdown (xingxue CP5, qimen NLC CP5–CP7, xuexin-fu, zangshu, qingnang-jing, huangdi-zhaijing, hanlong-jing, zangfa-daozhang, qingnang-aoyu)",
+    "reviews": [
+      {
+        "packKey": "ming-447-acceptance-review",
+        "path": "docs/integration/ming-447-acceptance-review.md",
+        "sourceIssue": "MING-454",
+        "sourceSha": "2b56087ae8f445516ef899c9f45c8f10b37580a6",
+        "sourceRemoteRef": "origin/codex/multica-ming-454",
+        "importMethod": "cherry-pick -x",
+        "localSha": "9d0fae1fc1ac0f2906412b1d44a73b33497cb041",
+        "reviewBlob": "e5efab96a21893307d2644956a65e9c2a31ab365",
+        "status": "integrated_pending_acceptance"
+      },
+      {
+        "packKey": "mingli-yueyan-nlc-five-draft-json",
+        "path": "references/annotations/bazi/mingli-yueyan--nlc-recovery.json",
+        "sourceIssue": "MING-439",
+        "sourceSha": "e4870ee31d5ad59834d94cd749b00be447549897",
+        "sourceRemoteRef": "origin/codex/multica-ming-439",
+        "importMethod": "cherry-pick -x",
+        "localSha": "0827d1fe8fca3265faa974fea70c8f1a59c976e9",
+        "reviewBlob": "b78b2aaed02653306fa546b763445131053a98ea",
+        "sha256": "09cdbccf314e365dc4a416aec31f1d5c336fd56a93520b86282e423c0faa3928",
+        "status": "integrated_pending_acceptance"
+      },
+      {
+        "packKey": "mingli-yueyan-nlc-five-draft-repair-note",
+        "path": "docs/book-reviews/mingli-yueyan-nlc-recovery-five-draft-repair.md",
+        "sourceIssue": "MING-439",
+        "sourceSha": "e4870ee31d5ad59834d94cd749b00be447549897",
+        "sourceRemoteRef": "origin/codex/multica-ming-439",
+        "importMethod": "cherry-pick -x",
+        "localSha": "0827d1fe8fca3265faa974fea70c8f1a59c976e9",
+        "reviewBlob": "e128ea66cf1a00e751adcdfed0d0179dcd2566f9",
+        "status": "integrated_pending_acceptance"
+      },
+      {
+        "packKey": "mingli-yueyan-nlc-five-draft-repair-review",
+        "path": "docs/book-reviews/mingli-yueyan-nlc-recovery-five-draft-repair-review.md",
+        "sourceIssue": "MING-442",
+        "sourceSha": "cadfad3dee1e56dfb65377d1865a0df404e0b8ef",
+        "sourceRemoteRef": "origin/codex/multica-ming-442",
+        "importMethod": "cherry-pick -x",
+        "localSha": "095aaa82408e87e9a705aa4a760c390335ad3e1e",
+        "reviewBlob": "cd34682578ac7d6a4d283d13d78ec19b4e638461",
+        "status": "integrated_pending_acceptance"
+      },
+      {
+        "packKey": "xingxue-dacheng-cp5",
+        "path": "docs/book-reviews/xingxue-dacheng-cp5-review.md",
+        "sourceIssue": "MING-443",
+        "sourceSha": "057619eb3a3256eef07868b11e749a2acaf19404",
+        "sourceRemoteRef": "origin/codex/multica-ming-443",
+        "importMethod": "cherry-pick -x",
+        "localSha": "c0b761c72351856011ac404c57c5dbb212e87ed5",
+        "reviewBlob": "a6b99eb9d79cc43fff55b6602f808c088069f5f8",
+        "status": "integrated_pending_acceptance"
+      },
+      {
+        "packKey": "qimen-nlc-layouts-cp5",
+        "path": "docs/book-reviews/qimen-dunjia-tongzhi-nlc-layouts-cp5-review.md",
+        "sourceIssue": "MING-444",
+        "sourceSha": "1ba8a44ec43e9da25531621339393cbfa0fad366",
+        "sourceRemoteRef": "origin/codex/multica-ming-444",
+        "importMethod": "cherry-pick -x",
+        "localSha": "2850fb949933382d6a56c4bd77d51e6bf3f55bc5",
+        "reviewBlob": "896dd9de5cccf6bfce1172a9c33beb4666c31b7d",
+        "status": "integrated_pending_acceptance"
+      },
+      {
+        "packKey": "xuexin-fu-independent",
+        "path": "docs/book-reviews/xuexin-fu-independent-review.md",
+        "sourceIssue": "MING-445",
+        "sourceSha": "4a3b5fe8f3d2ffadd7a1a9de9b1ffb3a16300dd4",
+        "sourceRemoteRef": "origin/codex/multica-ming-445",
+        "importMethod": "cherry-pick -x",
+        "localSha": "478d7f002391d6de31290e180031f28d879bc80a",
+        "reviewBlob": "ef8e58a01b3266a6a78b2bf8f8dd2e1396387824",
+        "status": "integrated_pending_acceptance"
+      },
+      {
+        "packKey": "zangshu-independent",
+        "path": "docs/book-reviews/zangshu-independent-review.md",
+        "sourceIssue": "MING-448",
+        "sourceSha": "8965ddd9a858963de36c4c67c15609dd91a4c048",
+        "sourceRemoteRef": "origin/codex/multica-ming-448",
+        "importMethod": "cherry-pick -x",
+        "localSha": "b27175becaf4381e9d993c0e342a377a21d409a9",
+        "reviewBlob": "757ee0a47c5fef0df16b9ca07e74d86a83bd42bb",
+        "status": "integrated_pending_acceptance"
+      },
+      {
+        "packKey": "qimen-nlc-layouts-cp6",
+        "path": "docs/book-reviews/qimen-dunjia-tongzhi-nlc-layouts-cp6-review.md",
+        "sourceIssue": "MING-449",
+        "sourceSha": "99421c59f1b08ab926add0a29c7683cb6f194a0a",
+        "sourceRemoteRef": "origin/codex/multica-ming-449",
+        "importMethod": "cherry-pick -x",
+        "localSha": "84cb0f788f43716bec020b3e35152103582c6386",
+        "reviewBlob": "9a30a2801de30779c5c21ae5c01fa6b24089207e",
+        "status": "integrated_pending_acceptance"
+      },
+      {
+        "packKey": "qingnang-jing-independent",
+        "path": "docs/book-reviews/qingnang-jing-independent-review.md",
+        "sourceIssue": "MING-450",
+        "sourceSha": "091c2de609465a4df2ac02895a3b7fb2ae73744d",
+        "sourceRemoteRef": "origin/codex/multica-ming-450",
+        "importMethod": "cherry-pick -x",
+        "localSha": "e5b57f5ac5ea8d51fd4e1c8f0ab3054bd6abcb87",
+        "reviewBlob": "33c20705f827777f840e411122db7475737f6ce2",
+        "status": "integrated_pending_acceptance"
+      },
+      {
+        "packKey": "huangdi-zhaijing-independent",
+        "path": "docs/book-reviews/huangdi-zhaijing-independent-review.md",
+        "sourceIssue": "MING-451",
+        "sourceSha": "63917f80c5ec021d52b6d766b92be266d08d083c",
+        "sourceRemoteRef": "origin/codex/multica-ming-451",
+        "importMethod": "cherry-pick -x",
+        "localSha": "773e976175cb51e376b9e5eb0ddab11ef03f3d93",
+        "reviewBlob": "677238f491cf43840f3a301f81ebc6ab47fe9293",
+        "status": "integrated_pending_acceptance"
+      },
+      {
+        "packKey": "hanlong-jing-independent",
+        "path": "docs/book-reviews/hanlong-jing-independent-review.md",
+        "sourceIssue": "MING-453",
+        "sourceSha": "90ae6a6cb518ee5051d4b0305035b538d07c2546",
+        "sourceRemoteRef": "origin/codex/multica-ming-453",
+        "importMethod": "cherry-pick -x",
+        "localSha": "0b9c6ad33cd52469219f07f0b602fde52e211c6a",
+        "reviewBlob": "4e54612ecbce884a3d85205f730d56691e9b95ab",
+        "status": "integrated_pending_acceptance"
+      },
+      {
+        "packKey": "qimen-nlc-layouts-cp7",
+        "path": "docs/book-reviews/qimen-dunjia-tongzhi-nlc-layouts-cp7-review.md",
+        "sourceIssue": "MING-455",
+        "sourceSha": "cf154ddee43fb61d5a7041678aba6e713b0e1d3c",
+        "sourceRemoteRef": "origin/codex/multica-ming-455",
+        "importMethod": "cherry-pick -x",
+        "localSha": "99414f913f10e9cca17b47b98ee5eb6ab1ccf392",
+        "reviewBlob": "d5fe4f94bf4e357fa1a28ada14ea33aea1548431",
+        "status": "integrated_pending_acceptance"
+      },
+      {
+        "packKey": "zangfa-daozhang-independent",
+        "path": "docs/book-reviews/zangfa-daozhang-independent-review.md",
+        "sourceIssue": "MING-456",
+        "sourceSha": "4c2b0f99204619a843d8b6c605c5f2d77be5f8a6",
+        "sourceRemoteRef": "origin/codex/multica-ming-456",
+        "importMethod": "cherry-pick -x",
+        "localSha": "4e4fa2772546492028146b025272e4728b9172ba",
+        "reviewBlob": "802b99f8ecda2d099d0da8f55b33fb7854f4acf7",
+        "status": "integrated_pending_acceptance"
+      },
+      {
+        "packKey": "qingnang-aoyu-independent",
+        "path": "docs/book-reviews/qingnang-aoyu-independent-review.md",
+        "sourceIssue": "MING-457",
+        "sourceSha": "4a79f218d36398005b1405386b11d4b044c16221",
+        "sourceRemoteRef": "origin/codex/multica-ming-457",
+        "importMethod": "cherry-pick -x",
+        "localSha": "893cff12f7bfd12323fe05542568c679472e8e2b",
+        "reviewBlob": "a1f1ed11a2db0c146125fec2220b0170db44c3a2",
+        "status": "integrated_pending_acceptance"
+      }
+    ]
+  },
+  "validation": {
+    "validateAnnotations": {
+      "ok": true,
+      "books": 48,
+      "files": 58,
+      "entries": 42834,
+      "source_reviewed": 40410,
+      "errors": []
+    },
+    "batchFileVerifiedTrue": 0,
+    "libraryVerifiedTrue": 0,
+    "mingliYueyanSha256MatchedTarget": true,
+    "existingMingliCpReviewMarkdownUnchangedVs447": true,
+    "reviewBlobsEqualToSources": true,
+    "diffVsBaseForbids": {
+      "product452Imported": false,
+      "files458to463Touched": false,
+      "wholeTreeImport": false,
+      "productUniqueLineTouched": false,
+      "overwrote447MingliCpReviews": false
+    }
+  },
+  "excludedThisBatch": [
+    "MING-452 product definition IDs",
+    "MING-458/459/460/461/462/463 exclusive running files",
+    "product unique line 6c1dfa3b / product repos",
+    "main merge / deploy / force push",
+    "full library completion claim",
+    "raising verified=true"
+  ],
+  "contentImportTip": "893cff12f7bfd12323fe05542568c679472e8e2b",
+  "candidateIntegrationSha": "8792ca32354a7108ff500fb365b972ea61fc31a6",
+  "pendingIndependentReview": true,
+  "integrationBranchTipAtDelivery": "8792ca32354a7108ff500fb365b972ea61fc31a6",
+  "remoteVerifiedAt": "2026-09-11T19:13:19Z",
+  "remoteRef": "origin/codex/multica-ming-464",
+  "note": "Authoritative tip is origin/codex/multica-ming-464 via git ls-remote; candidateIntegrationSha records the tip after remote-verify commit",
+  "contentAndLedgerFirstPushSha": "4241da01c6cae3e577fdde2f945805dd90718a52",
+  "remoteSha": "8792ca32354a7108ff500fb365b972ea61fc31a6"
+}

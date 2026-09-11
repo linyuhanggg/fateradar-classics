@@ -1,0 +1,17 @@
+{
+  "sourceParagraph": "sanming-tonghui:L1032-L1034",
+  "library": "tyme4ts 1.5.2",
+  "runtime": "calendar.ts uses EightChar.getOwnSign()",
+  "checked": 1440,
+  "coverage": "10 year stems × 12 month numbers × 12 hour branches",
+  "sourceFormula": "branch=(4-monthNumber-hourBranchIndex) mod12; stem uses five-tiger month sequence for that branch",
+  "example": {
+    "sourceYear": "甲子",
+    "sourceMonthNumber": 3,
+    "sourceHourBranch": "戌",
+    "sourceExpected": "丁卯",
+    "actual": "丁卯"
+  },
+  "scope": "Component relationship only. Constructor day 甲子 is synthetic and unused by getOwnSign; not recorded as a historical case. Does not validate calendar month selection, unknown birth dates, star transits or fortune outcomes.",
+  "verified": false
+}

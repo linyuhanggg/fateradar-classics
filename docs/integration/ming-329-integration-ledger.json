@@ -1,0 +1,208 @@
+{
+  "schemaVersion": 1,
+  "issue": "MING-329",
+  "issueId": "01a090e2-2884-7121-98be-633d6928f4f1",
+  "generatedAt": "2026-09-11T14:38:27Z",
+  "repo": "https://github.com/linyuhanggg/fateradar-classics",
+  "integrationBranch": "codex/multica-ming-329",
+  "worktree": "fateradar-multica-ming-329",
+  "parentBatch": {
+    "issue": "MING-324",
+    "tip": "9118a78741f7a593105db09c058616cc4e0b7eec",
+    "note": "Fast-forward stack on 324 tip; 324's 11 files untouched"
+  },
+  "baseline": {
+    "ref": "origin/codex/full-library-completion",
+    "sha": "bc798566da77c30e149abf9673c88ecc386702b2",
+    "note": "Multica classics review authority. origin/main is NOT the Multica annotation delivery line."
+  },
+  "acceptedBaselineSha": "bc798566da77c30e149abf9673c88ecc386702b2",
+  "stackBaseSha": "9118a78741f7a593105db09c058616cc4e0b7eec",
+  "policies": [
+    "dedupe by annotation path + paragraphId + content hash",
+    "preserve source-reviewed / draft / verified=false",
+    "do not rewrite MING-324 batch1 files",
+    "do not merge SDZJ0170 this batch",
+    "do not touch product MING-320/322/327",
+    "optional cherry-pick done review-only docs without annotation JSON overwrite"
+  ],
+  "batch2": {
+    "description": "Second content merge: independently reviewed packs confirmed missing on full-library-completion and 324 tip",
+    "packs": [
+      {
+        "packKey": "daliuren-daquan",
+        "annotationPath": "references/annotations/san-shi/daliuren-daquan.json",
+        "sourceIssue": "MING-97",
+        "sourceSha": "d84e26ba883f31d403eedb4cef8c6ac034f2aeae",
+        "sourceRemote": "origin/codex/multica-ming-97",
+        "reviewIssue": "MING-97-acceptance",
+        "reviewEvidence": "Issue comment 01a08f5c WORK_PACKAGE_COMPLETE; inventory 6893/6893 validator ok; source-reviewed≠verified",
+        "textSha256": "e0c5cd12773bdf00a73cf2ce2e00fc8b0522b55d4855f09c0af290e155904441",
+        "textPath": "sources/fulltext/san-shi/daliuren-daquan/fulltext.md",
+        "annotationBlob": "66db69fdf39120e4e37733cb59b5ea01a154dcd9",
+        "annotationContentSha256": "c9321794bbea0e9df31069bdbf146ec18b61529fb85b9d34729c19ca3d74059a",
+        "entries": 6893,
+        "sourceReviewed": 6048,
+        "draft": 845,
+        "verifiedTrue": 0,
+        "status": "integrated_pending_acceptance",
+        "blocker": null,
+        "notes": "六壬大全 inventory 尽；draft 845 保留；verified 全 false"
+      },
+      {
+        "packKey": "liuren-miben",
+        "annotationPath": "references/annotations/san-shi/liuren-miben.json",
+        "sourceIssue": "MING-97",
+        "sourceSha": "d84e26ba883f31d403eedb4cef8c6ac034f2aeae",
+        "sourceRemote": "origin/codex/multica-ming-97",
+        "reviewIssue": "MING-97-acceptance",
+        "reviewEvidence": "Same MING-97 acceptance; inventory 2643/2643",
+        "textSha256": "3152e2446147976fe65e81483c0fd4a47c02500d35aa547cd4356c9200cd68b3",
+        "textPath": "sources/fulltext/san-shi/liuren-miben/fulltext.md",
+        "annotationBlob": "a7b3659fe2f951a2f4a5631bbbe6274b428c7d9f",
+        "annotationContentSha256": "30b9b2b915089ead2c54bf88999131b4e7558097d996453fc27bf135d3054821",
+        "entries": 2643,
+        "sourceReviewed": 2554,
+        "draft": 89,
+        "verifiedTrue": 0,
+        "status": "integrated_pending_acceptance",
+        "blocker": null,
+        "notes": "六壬秘本 inventory 尽；draft 89 保留"
+      },
+      {
+        "packKey": "SK1602",
+        "annotationPath": "references/annotations/luming-nayin/yuzhao-shenying--shidian-SK1602.json",
+        "sourceIssue": "MING-114",
+        "sourceSha": "59de8bf6f5a268ff6525fec570420251769fec08",
+        "sourceRemote": "origin/codex/multica-ming-114",
+        "reviewIssue": "MING-124",
+        "reviewSha": "562681f0ef25b4a966689cee54bf70d4048626d6",
+        "reviewRemote": "origin/codex/multica-ming-124",
+        "textSha256": "996873796425cdcd58e36c6e5971757e2de572577b5c161c9b3ba8f02e92f8bc",
+        "textPath": "sources/normalized/shidianguji/SK1602/text.md",
+        "annotationBlob": "b8853cb49b03e217fa7c2c61a392759db08becd6",
+        "annotationContentSha256": "622fc897613ebee6829b191cbd803e2bdafde5769d72038fee4c69d62e17d982",
+        "entries": 13,
+        "sourceReviewed": 11,
+        "draft": 2,
+        "verifiedTrue": 0,
+        "status": "integrated_pending_acceptance",
+        "blocker": null,
+        "notes": "识典补本；主本 yuzhao-shenying.json 未覆盖；source blob 与审查树一致"
+      },
+      {
+        "packKey": "SK1609",
+        "annotationPath": "references/annotations/xingming/xingxue-dacheng--shidian-SK1609.json",
+        "sourceIssue": "MING-135",
+        "sourceSha": "3b578879499082cc67d9eb12ed7c9efb54515bd1",
+        "sourceRemote": "origin/codex/multica-ming-135",
+        "reviewIssue": "MING-150",
+        "reviewSha": "8dec744768bfbdac4da95d172071491c3f55fb8d",
+        "reviewRemote": "origin/codex/multica-ming-150",
+        "cp1Pin": "8def9f05e75e98d8e7594780f836f02f252023c0",
+        "textSha256": "0d0f3106f2865b4e4b2f10a9c9433785b6009575b53105bbf8718dde48ffa948",
+        "textPath": "sources/normalized/shidianguji/SK1609/text.md",
+        "annotationBlob": "a10d1dc5d103b1cd9688db563002c504da98393c",
+        "annotationContentSha256": "ea891c69a787e63ac18a53ad9edba0ec5a2e5b0d69dad087e4b4ed5308e93799",
+        "entries": 398,
+        "sourceReviewed": 396,
+        "draft": 2,
+        "verifiedTrue": 0,
+        "status": "integrated_pending_acceptance",
+        "blocker": null,
+        "notes": "CP1+CP2 cumulative 398；主本 xingxue-dacheng.json 未覆盖"
+      }
+    ],
+    "reviewDocsAdded": [
+      "docs/book-reviews/yuzhao-shenying-sk1602-review.md",
+      "docs/book-reviews/yuzhao-shenying-sk1602-progress-2026-09-11.md",
+      "docs/book-reviews/xingxue-dacheng-sk1609-cp2-review.md",
+      "docs/book-reviews/xingxue-dacheng-sk1609-progress-2026-09-11.md",
+      "docs/book-reviews/liuren-multica-remaining-ledger-2026-09-11.json",
+      "docs/book-reviews/liuren-priority-reading-2026-09-10.md",
+      "docs/book-reviews/shenxiang-quanbian-cp2-review.md",
+      "docs/book-reviews/wuxing-jingji-cp2-review.md",
+      "docs/book-reviews/wuxing-jingji-cp4-review.md",
+      "docs/book-reviews/wuxing-jingji-cp5-review.md"
+    ],
+    "optionalReviewOnlyDocs": [
+      {
+        "issue": "MING-315",
+        "path": "docs/book-reviews/shenxiang-quanbian-cp2-review.md",
+        "sourceSha": "88786a861cc2696181129764b350fcd0de813879"
+      },
+      {
+        "issue": "MING-316",
+        "path": "docs/book-reviews/wuxing-jingji-cp2-review.md",
+        "sourceSha": "d710dd2d530f837127b7ecee9d702a06f74f6bd7"
+      },
+      {
+        "issue": "MING-318",
+        "path": "docs/book-reviews/wuxing-jingji-cp4-review.md",
+        "sourceSha": "0bafc0e6b43bb07805306d82da14df3c445cba6e"
+      },
+      {
+        "issue": "MING-319",
+        "path": "docs/book-reviews/wuxing-jingji-cp5-review.md",
+        "sourceSha": "0c316b11b7bac02b3e8d82f77001733837d72621"
+      }
+    ],
+    "validation": {
+      "validateAnnotationsBatch": [
+        {
+          "file": "daliuren-daquan.json",
+          "ok": true,
+          "entries": 6893,
+          "source_reviewed": 6048
+        },
+        {
+          "file": "liuren-miben.json",
+          "ok": true,
+          "entries": 2643,
+          "source_reviewed": 2554
+        },
+        {
+          "file": "yuzhao-shenying--shidian-SK1602.json",
+          "ok": true,
+          "entries": 13,
+          "source_reviewed": 11
+        },
+        {
+          "file": "xingxue-dacheng--shidian-SK1609.json",
+          "ok": true,
+          "entries": 398,
+          "source_reviewed": 396
+        }
+      ],
+      "validateAnnotationsFull": {
+        "ok": true,
+        "files": 57,
+        "entries": 41764,
+        "source_reviewed": 39395
+      },
+      "batchParagraphIdCrossDup": 0,
+      "batchVerifiedTrue": 0,
+      "ming324FilesDiffBytes": 0
+    }
+  },
+  "excludedThisBatch": [
+    {
+      "packKey": "SDZJ0170",
+      "reason": "ledger marks tip blob may miss CP2; explicit do-not-merge"
+    },
+    {
+      "note": "product MING-320/322/327 out of scope"
+    },
+    {
+      "note": "do not rewrite MING-324 eleven files; do not race MING-328"
+    }
+  ],
+  "nextBatchCandidates": [
+    "SDZJ0170 after CP2 tip blob confirmed",
+    "remaining done review-only docs ahead of full-library",
+    "any newly reviewed packs missing on integration tip"
+  ],
+  "candidateIntegrationSha": "968319089be97adec38f726205ad850bfd6060db",
+  "integrationBranchTipAtDelivery": "87e59dc1c587fe266f1f123513d9b1df46ad6c9e",
+  "batch2MergeSha": "968319089be97adec38f726205ad850bfd6060db"
+}

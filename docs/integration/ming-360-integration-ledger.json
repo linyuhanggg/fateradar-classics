@@ -1,0 +1,154 @@
+{
+  "schemaVersion": 1,
+  "issue": "MING-360",
+  "issueId": "01a09126-f7e1-7072-ba40-25973a4a86cc",
+  "generatedAt": "2026-09-11T15:51:56Z",
+  "repo": "https://github.com/linyuhanggg/fateradar-classics",
+  "integrationBranch": "codex/multica-ming-360",
+  "worktree": "fateradar-multica-ming-360",
+  "parentBatch": {
+    "issue": "MING-351",
+    "tip": "306aaecb4ad54aa923d89999b97a5a4b0cdb0e94",
+    "independentReview": "MING-355",
+    "note": "Stack on independently reviewed 351 tip; add SDZJ0170 CP3 annotation/progress + cp3-review minimal paths"
+  },
+  "baseline": {
+    "ref": "origin/codex/multica-ming-351",
+    "sha": "306aaecb4ad54aa923d89999b97a5a4b0cdb0e94",
+    "note": "MING-355 passed on 351 tip; includes CP6/8/9 review docs + SDZJ0170 CP1+CP2"
+  },
+  "acceptedBaselineSha": "306aaecb4ad54aa923d89999b97a5a4b0cdb0e94",
+  "stackBaseSha": "306aaecb4ad54aa923d89999b97a5a4b0cdb0e94",
+  "policies": [
+    "do not overwrite wuxing-jingji.json / references/annotations/luming-nayin/wuxing-jingji.json",
+    "do not whole-tree import from MING-345",
+    "do not open CP4 (remaining 170) in this batch",
+    "do not rewrite 351 already-integrated CP6/8/9 review docs unless fast-forward",
+    "SDZJ0170 minimal paths only: annotation + progress + cp3-review + this ledger",
+    "source-reviewed != human verified; verified stays false"
+  ],
+  "preMergeDiff": {
+    "annotationPath": "references/annotations/ziwei/ziwei-doushu-quanshu--shidian-SDZJ0170.json",
+    "baselineEntries": 600,
+    "sourceSha": "68aa9c19cfef05751dee366e263f3ea01bb4cd38",
+    "sourceBlob": "5ecc472f7ef5e4325fdb83371a8315aad628cd07",
+    "sourceSha256": "4409bcdd3cb6c9e8be76d428a9fa2584f0d9acfa1f81682b6c9c297aad8f5172",
+    "paragraphIdDelta": {
+      "added": 300,
+      "removed": 0,
+      "changed": 0
+    },
+    "entryCounts": {
+      "sourceReviewed": 844,
+      "draft": 56,
+      "verifiedTrue": 0,
+      "total": 900
+    },
+    "cp3Slice": {
+      "indices": "600-899",
+      "sourceReviewed": 281,
+      "draft": 19,
+      "verifiedTrue": 0
+    },
+    "relativeTo333Cp1Cp2": {
+      "sourceSha": "60495cc6b29bb9bc6478c3073b824cbcbbb4b4a0",
+      "indices0to599Equal": true
+    },
+    "note": "JSON after merge blob/SHA256-equal to MING-345 tip; 0–599 still equal to MING-333"
+  },
+  "inventory": {
+    "alreadyOn351Tip": [
+      {
+        "issue": "MING-334",
+        "path": "docs/book-reviews/wuxing-jingji-cp6-review.md",
+        "blobEqual": true
+      },
+      {
+        "issue": "MING-337",
+        "path": "docs/book-reviews/wuxing-jingji-cp8-review.md",
+        "blobEqual": true
+      },
+      {
+        "issue": "MING-338",
+        "path": "docs/book-reviews/wuxing-jingji-cp9-review.md",
+        "blobEqual": true
+      },
+      {
+        "issue": "MING-333",
+        "path": "docs/book-reviews/ziwei-doushu-quanshu-sdzj0170-cp2-review.md",
+        "blobEqual": true
+      }
+    ],
+    "mergedThisBatch": [
+      "MING-345",
+      "MING-354"
+    ],
+    "skipped": [
+      {
+        "issue": "SDZJ0170-CP4",
+        "reason": "remaining 170 deferred until after this pack acceptance"
+      }
+    ]
+  },
+  "batch": {
+    "description": "Stack 351 tip: SDZJ0170 CP3 annotation/progress (900 entries) + independent cp3-review",
+    "annotations": [
+      {
+        "packKey": "ziwei-doushu-quanshu-sdzj0170-cp3",
+        "path": "references/annotations/ziwei/ziwei-doushu-quanshu--shidian-SDZJ0170.json",
+        "progressPath": "docs/book-reviews/ziwei-doushu-quanshu-sdzj0170-progress-2026-09-11.md",
+        "reviewPath": "docs/book-reviews/ziwei-doushu-quanshu-sdzj0170-cp3-review.md",
+        "sourceIssue": "MING-345",
+        "sourceSha": "68aa9c19cfef05751dee366e263f3ea01bb4cd38",
+        "sourceRemote": "origin/codex/multica-ming-345",
+        "independentReview": "MING-354",
+        "independentReviewSha": "706a4c10879985e5339838aea170239973379308",
+        "independentReviewIssue": "MING-354",
+        "cherryPickShaAnnotation": "10f1c1f731b321a1a9fe451eb38978aeebda1519",
+        "cherryPickShaReview": "ecfc9a9c5c624937b2524f8f983faf1c789d7a3d",
+        "annotationBlob": "5ecc472f7ef5e4325fdb83371a8315aad628cd07",
+        "annotationSha256": "4409bcdd3cb6c9e8be76d428a9fa2584f0d9acfa1f81682b6c9c297aad8f5172",
+        "progressBlob": "6c121e322b63853b267e02017d28690dfc12ac01",
+        "reviewBlob": "2b6757e7fed10c7e436cd47633455154d6c0541c",
+        "status": "integrated_pending_acceptance",
+        "notes": "CP3 indices 600–899; full file 900 entries; verified all false; not CP4"
+      }
+    ]
+  },
+  "validation": {
+    "validateAnnotations": {
+      "ok": true,
+      "books": 48,
+      "files": 58,
+      "entries": 42664,
+      "source_reviewed": 40239,
+      "errors": []
+    },
+    "batchFileVerifiedTrue": 0,
+    "libraryVerifiedTrue": 0,
+    "annotationEqualTo345": true,
+    "indices0to599EqualTo333": true,
+    "diffVsBaseForbids": {
+      "wuxingJingjiJsonChanged": false,
+      "ming351Cp689ReviewDocsChanged": false,
+      "extraBooksFrom345Tree": false,
+      "cp4Opened": false
+    }
+  },
+  "excludedThisBatch": [
+    "SDZJ0170 CP4 (remaining 170)",
+    "wuxing-jingji.json overwrite",
+    "345 whole-tree import",
+    "rewrite 351 CP6/8/9 review docs",
+    "product repos",
+    "main merge / deploy",
+    "full library completion claim"
+  ],
+  "candidateIntegrationSha": "68dcbc3f90833996ed33d74d3b57886e852f0b44",
+  "pendingIndependentReview": true,
+  "integrationBranchTipAtDelivery": "68dcbc3f90833996ed33d74d3b57886e852f0b44",
+  "remoteVerifiedAt": "2026-09-11T15:51:56Z",
+  "remoteRef": "origin/codex/multica-ming-360",
+  "contentAndLedgerFirstPushSha": "9f9aa8218d9d4c4f6414e61764c838d89814a0d5",
+  "contentCherryPickTip": "ecfc9a9c5c624937b2524f8f983faf1c789d7a3d"
+}

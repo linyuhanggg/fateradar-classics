@@ -1,0 +1,232 @@
+{
+  "schema_version": "fateradar-executable-v2",
+  "book": {
+    "slug": "xingxue-dacheng",
+    "system": "xingming",
+    "title": "星学大成",
+    "fulltext": "sources/fulltext/xingming/xingxue-dacheng/fulltext.md"
+  },
+  "verified": false,
+  "note": "接入命宫来源分条、庙旺来源分条、日月落宫定位。本盘上升点与入庙是现代黄道实现，不得与原文卯上立命、宿度旺宫混成一套。入庙不是已经得福。verified 保持 false。 新增宫主表逐星对照与紫气周期/历元边界，四余未判不等于古法不论。",
+  "rules": [
+    {
+      "id": "XXDC-E-01",
+      "art": "qizheng",
+      "theme": "命宫来源分条",
+      "school": "星学大成",
+      "paragraph_ids": [
+        "xingxue-dacheng:L0075-L0076"
+      ],
+      "sources": [
+        {
+          "paragraph_id": "xingxue-dacheng:L0075-L0076",
+          "start_line": 75,
+          "end_line": 76,
+          "quote": "天盤之法順數天左旋也人之立命在十二宫有不同而以天盤之卯加之則同經云天盤轉出地盤上卯上分明是命宫是也耶律十二宫發明望斗經東升西没新註其説已詳矣時學不知此圖只以子宫為例而槩以十二宫者有之又有知其卯位自加寅辰疊加已丑三位加子午四正加亥未五位加申戌\n六位加酉對衝加亦但得其迹而未知其所以也"
+        }
+      ],
+      "quote": "天盤之法順數天左旋也人之立命在十二宫有不同而以天盤之卯加之則同經云天盤轉出地盤上卯上分明是命宫是也耶律十二宫發明望斗經東升西没新註其説已詳矣時學不知此圖只以子宫為例而槩以十二宫者有之又有知其卯位自加寅辰疊加已丑三位加子午四正加亥未五位加申戌\n六位加酉對衝加亦但得其迹而未知其所以也",
+      "page": "qizheng",
+      "required_facts": [
+        "ascendant.sign",
+        "ascendant.source"
+      ],
+      "when": {
+        "exists": "ascendant.sign"
+      },
+      "satisfy_when": "已记录本盘上升点宫度，并标明算法为现代黄道与东地平交点",
+      "fail_when": "无独立的不满足分支：本条记录有效输入上的取法或来源，不把缺少输入当作反例",
+      "unknown_when": "无出生地经纬度，无法取上升点；原文卯上立命与上升点不是同一套逐步程序：只分条，不覆盖",
+      "rescue": "unimplemented",
+      "vernacular": "本盘命宫取上升点{sign}。这是现代天文位置，不是已经按原文卯上立命。",
+      "implementation_assumption": "七政用 Astronomy Engine 真黄经。庙旺落陷是位置分类，不是个人优劣评分。四余含近似。",
+      "verified": false
+    },
+    {
+      "id": "XXDC-E-02",
+      "art": "qizheng",
+      "theme": "庙旺来源分条",
+      "school": "星学大成",
+      "paragraph_ids": [
+        "xingxue-dacheng:L0189-L0197"
+      ],
+      "sources": [
+        {
+          "paragraph_id": "xingxue-dacheng:L0189-L0197",
+          "start_line": 189,
+          "end_line": 190,
+          "quote": "  星辰本宫為廟堂生我之宫為樂鄉我生之宫為旺度福與禍兮堪審詳星尅其宫名入制其星若忌號刑傷本元星主居其位貧乏之徒可較量\n  〔此宫度者號樂旺廟要與太歲相攝若處刑尅之中雖樂旺廟而無用若處帝旺駕勲朝垣入局之上者更不以刑尅為忌雖在樂旺廟而汨没凶敗休囚衝驀之宫亦不可用也〕"
+        }
+      ],
+      "quote": "  星辰本宫為廟堂生我之宫為樂鄉我生之宫為旺度福與禍兮堪審詳星尅其宫名入制其星若忌號刑傷本元星主居其位貧乏之徒可較量\n  〔此宫度者號樂旺廟要與太歲相攝若處刑尅之中雖樂旺廟而無用若處帝旺駕勲朝垣入局之上者更不以刑尅為忌雖在樂旺廟而汨没凶敗休囚衝驀之宫亦不可用也〕",
+      "page": "qizheng",
+      "required_facts": [
+        "star.name",
+        "star.palace",
+        "star.dignity"
+      ],
+      "when": {
+        "exists": "star.palace"
+      },
+      "satisfy_when": "已按本盘取法给七政标出入庙、落陷或平宫，并标明与原文宿度旺宫不是同一套",
+      "fail_when": "无独立的不满足分支：本条记录有效输入上的取法或来源，不把缺少输入当作反例",
+      "unknown_when": "七政未起出，无法标庙陷；原文另有娄胃亢斗翼室鬼宿度旺宫，又有日月戌方入庙：与本盘黄道本宫/对宫不是同一套逐步程序，不得输出富贵或贫乏",
+      "rescue": "unimplemented",
+      "vernacular": "{star}在{palace}，标签为{dignity}。这是本取法的位置分类，不是已经得福或已经贫乏。",
+      "implementation_assumption": "现行入庙用黄道本宫（太阳狮子等），落陷用对宫。未按二十八宿旺宫，也未按戌方入庙歌覆盖。",
+      "verified": false
+    },
+    {
+      "id": "XXDC-E-03",
+      "art": "qizheng",
+      "theme": "日月落宫定位",
+      "school": "星学大成",
+      "paragraph_ids": [
+        "xingxue-dacheng:L0184-L0185"
+      ],
+      "sources": [
+        {
+          "paragraph_id": "xingxue-dacheng:L0184-L0185",
+          "start_line": 184,
+          "end_line": 185,
+          "quote": "  七政各得居強所君看分明乘旺處日據白羊十九間月入金牛第三度土在天秤二十一火居磨蝎四與七水居女上三五中金占雙魚必當室不離七與十三前據此求之始為的木經巨蟹初入鬼此生所舉多如意但於旺處逢一星斷然莫作常人視\n  〔論七政旺宫太陽躔婁宿八度是戌宫十九度也太陽躔胃宿六度是酉宫三度土躔亢宿六度是辰宫二十一度也火躔斗十八度并二十一度是丑宫四度與七度也水躔翼八度并十度是巳宫三度與五度也金在室七度并十三度屬亥宫木在鬼初度并十三度屬未宫〕"
+        }
+      ],
+      "quote": "  七政各得居強所君看分明乘旺處日據白羊十九間月入金牛第三度土在天秤二十一火居磨蝎四與七水居女上三五中金占雙魚必當室不離七與十三前據此求之始為的木經巨蟹初入鬼此生所舉多如意但於旺處逢一星斷然莫作常人視\n  〔論七政旺宫太陽躔婁宿八度是戌宫十九度也太陽躔胃宿六度是酉宫三度土躔亢宿六度是辰宫二十一度也火躔斗十八度并二十一度是丑宫四度與七度也水躔翼八度并十度是巳宫三度與五度也金在室七度并十三度屬亥宫木在鬼初度并十三度屬未宫〕",
+      "page": "qizheng",
+      "required_facts": [
+        "sun.palace",
+        "moon.palace",
+        "sun.mansion",
+        "moon.mansion"
+      ],
+      "when": {
+        "exists": "sun.palace"
+      },
+      "satisfy_when": "已记录本盘太阳、太阴的黄道宫度与宿名",
+      "fail_when": "无独立的不满足分支：本条记录有效输入上的取法或来源，不把缺少输入当作反例",
+      "unknown_when": "出生时刻无法起七政；原文旺处举白羊金牛与娄胃宿度例，本盘用真黄经落宫：不得把落宫写成已经非凡",
+      "rescue": "unimplemented",
+      "vernacular": "太阳在{sun_palace}{sun_mansion}，太阴在{moon_palace}{moon_mansion}。这是位置，不是已经非凡。",
+      "implementation_assumption": "日月黄经取 Astronomy Engine。宿名按距星岁差近似，接近宿界时需要更精细对照。",
+      "verified": false
+    },
+    {
+      "id": "XXDC-E-04",
+      "art": "qizheng",
+      "theme": "十一曜宫主表与四余庙宫分条",
+      "school": "星学大成",
+      "paragraph_ids": [
+        "xingxue-dacheng:L0201-L0203",
+        "xingxue-dacheng:L5647-L5655"
+      ],
+      "sources": [
+        {
+          "paragraph_id": "xingxue-dacheng:L0201-L0203",
+          "start_line": 201,
+          "end_line": 202,
+          "quote": "欲識星辰躔廟宫土丑羅寅火卯中金在辰宫計在巳水羅午地好相逢孛星惟向未中取紫炁申宫總一同日月戌方云入廟計都木亥盡亨通 更有諸星乘旺方水瓶火丑孛寅當土羅計在卯中旺辰位土宿再榮昌水日巳宫金到午木居未上紫乾揚太隂在酉天尾戌金木之星亥上藏 又㸔諸星入樂鄉但\n尋宫主在何方土星子丑金辰酉未屬太隂午太陽火星卯戌水巳申木星躔到亥兼寅羅㬋午上計都子紫來戌上孛逢辰 十二宫中有喜星日寅月亥水辰清土居午上木居未火申羅戌便昌榮 更識星辰所好局但尋次舍星何屬太隂太陽與土星子午卯酉為垣局木星辰戌及丑未水火寅申及巳亥羅計"
+        },
+        {
+          "paragraph_id": "xingxue-dacheng:L5647-L5655",
+          "start_line": 5651,
+          "end_line": 5651,
+          "quote": "  此星廟在丑旺在亥好在寅樂在申午戌宫安皆喜惟未為怒"
+        }
+      ],
+      "quote": "欲識星辰躔廟宫土丑羅寅火卯中金在辰宫計在巳水羅午地好相逢孛星惟向未中取紫炁申宫總一同日月戌方云入廟計都木亥盡亨通 更有諸星乘旺方水瓶火丑孛寅當土羅計在卯中旺辰位土宿再榮昌水日巳宫金到午木居未上紫乾揚太隂在酉天尾戌金木之星亥上藏 又㸔諸星入樂鄉但\n尋宫主在何方土星子丑金辰酉未屬太隂午太陽火星卯戌水巳申木星躔到亥兼寅羅㬋午上計都子紫來戌上孛逢辰 十二宫中有喜星日寅月亥水辰清土居午上木居未火申羅戌便昌榮 更識星辰所好局但尋次舍星何屬太隂太陽與土星子午卯酉為垣局木星辰戌及丑未水火寅申及巳亥羅計\n[…]\n  此星廟在丑旺在亥好在寅樂在申午戌宫安皆喜惟未為怒",
+      "page": "qizheng",
+      "required_facts": [
+        "star.name",
+        "star.palace",
+        "star.position.method"
+      ],
+      "when": {
+        "exists": "star.palace"
+      },
+      "satisfy_when": "按202宫主表逐星核本盘黄道宫支是否在该星所列宫支；匹配仅是现代位置与古表的支名对照",
+      "fail_when": "本盘位置不在202该星所列宫支，记录不匹配，不据此宣布古法落陷",
+      "unknown_when": "四余古法庙旺未实现；紫气起算黄经缺少校准，表内匹配不证明实历躔宫；201紫炁庙申与5651庙丑分条，不合成一个通用庙宫表",
+      "rescue": "unimplemented",
+      "vernacular": "先核当前计算位置与原文表是否相同；取法边界另列，不把位置匹配写成人生结论。",
+      "implementation_assumption": "202明确土子丑、金辰酉、月未、日午、火卯戌、水巳申、木亥寅、罗午、计子、炁戌、孛辰。201与5651显示古籍也论四余庙宫，因此产品只能写未判，不能写四余不论庙落。保留本盘等分宫度，不替代古法宫宿历算。",
+      "verified": false
+    },
+    {
+      "id": "XXDC-E-05",
+      "art": "qizheng",
+      "theme": "紫气周期与历元来源边界",
+      "school": "星学大成",
+      "paragraph_ids": [
+        "xingxue-dacheng:L5647-L5655"
+      ],
+      "sources": [
+        {
+          "paragraph_id": "xingxue-dacheng:L5647-L5655",
+          "start_line": 5647,
+          "end_line": 5648,
+          "quote": "  紫炁論\n天乙紫炁星續木之餘吉祥之曜也一名景星乃天華盖之氣百川霧露之源又名道徳之星順行天輪或隠或見其行宫度一日行三分五十七秒一宫住二十八箇月二十八年行一周天行道有黄赤之不同喜怒之無定此星名太極文昌之星山遇此炁服藥有冲天之人海遇此炁水族有化龍之象國遇此"
+        }
+      ],
+      "quote": "  紫炁論\n天乙紫炁星續木之餘吉祥之曜也一名景星乃天華盖之氣百川霧露之源又名道徳之星順行天輪或隠或見其行宫度一日行三分五十七秒一宫住二十八箇月二十八年行一周天行道有黄赤之不同喜怒之無定此星名太極文昌之星山遇此炁服藥有冲天之人海遇此炁水族有化龍之象國遇此",
+      "page": "qizheng",
+      "required_facts": [
+        "star.name",
+        "star.palace",
+        "star.position.method"
+      ],
+      "when": {
+        "exists": "star.palace"
+      },
+      "satisfy_when": "当前约法采用28年周期，能在本身给定历元下计算角度差",
+      "fail_when": "当前采用周期若非本条28年口径，不称采用本条；不同周期另存来源",
+      "unknown_when": "原文未提供J2000黄经105度历元的校准；卷首标题L96另题炁曜二十九年一周天，保留异文而不替换既有角度或判原文唯一正确",
+      "rescue": "unimplemented",
+      "vernacular": "先核当前计算位置与原文表是否相同；取法边界另列，不把位置匹配写成人生结论。",
+      "implementation_assumption": "产品保留既有28年/365.2422日年长、J2000起点105度约法，但105度无已核原文依据，去掉万历以来通行的无据说法。5648的日行分秒不可未经古度换算直接当现代角分。标题L96为独立异文线索，需影印对校；其为标题未进入现有正文段落清单，不伪造段落ID。",
+      "verified": false
+    },
+    {
+      "id": "XXDC-E-06",
+      "art": "qizheng",
+      "theme": "四余庙宫两处原文位置分条对照",
+      "school": "星学大成",
+      "paragraph_ids": [
+        "xingxue-dacheng:L0201-L0203",
+        "xingxue-dacheng:L5647-L5655"
+      ],
+      "sources": [
+        {
+          "paragraph_id": "xingxue-dacheng:L0201-L0203",
+          "start_line": 201,
+          "end_line": 201,
+          "quote": "欲識星辰躔廟宫土丑羅寅火卯中金在辰宫計在巳水羅午地好相逢孛星惟向未中取紫炁申宫總一同日月戌方云入廟計都木亥盡亨通 更有諸星乘旺方水瓶火丑孛寅當土羅計在卯中旺辰位土宿再榮昌水日巳宫金到午木居未上紫乾揚太隂在酉天尾戌金木之星亥上藏 又㸔諸星入樂鄉但"
+        },
+        {
+          "paragraph_id": "xingxue-dacheng:L5647-L5655",
+          "start_line": 5651,
+          "end_line": 5651,
+          "quote": "  此星廟在丑旺在亥好在寅樂在申午戌宫安皆喜惟未為怒"
+        }
+      ],
+      "quote": "欲識星辰躔廟宫土丑羅寅火卯中金在辰宫計在巳水羅午地好相逢孛星惟向未中取紫炁申宫總一同日月戌方云入廟計都木亥盡亨通 更有諸星乘旺方水瓶火丑孛寅當土羅計在卯中旺辰位土宿再榮昌水日巳宫金到午木居未上紫乾揚太隂在酉天尾戌金木之星亥上藏 又㸔諸星入樂鄉但\n[…]\n  此星廟在丑旺在亥好在寅樂在申午戌宫安皆喜惟未為怒",
+      "page": "qizheng",
+      "required_facts": [
+        "star.name",
+        "star.palace",
+        "star.position.method"
+      ],
+      "when": {
+        "exists": "star.palace"
+      },
+      "satisfy_when": "当前黄道宫支与对应原文四余庙宫支名匹配，仅为位置对照",
+      "fail_when": "当前宫支不在该条所列庙宫支名，不等于古法落陷",
+      "unknown_when": "紫气历元未核，位置判断保留未知；所有古法综合庙旺结论均未判，紫气申丑异文各算不合并",
+      "rescue": "unimplemented",
+      "vernacular": "当前{star}在{branch}宫，与本条庙宫{reference_branches}分别比较；位置匹配不是古法综合庙旺或现实吉凶。",
+      "implementation_assumption": "201只取庙宫部分：罗寅午、计巳亥、孛未、炁申；5651炁丑独立，不把旺宫/乐乡/宫主表混入。当前坐标沿既有现代黄道位置，传统换算及太岁刑克救应尚未完成。",
+      "verified": false,
+      "chapter": "星曜喜宫歌 / 紫炁论"
+    }
+  ]
+}
