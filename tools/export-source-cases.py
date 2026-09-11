@@ -107,6 +107,14 @@ def case_input(case: dict) -> tuple[dict, tuple | None, str]:
                   "unavailable": ["公历生日", "交节后天数", "出生地与时制", "起运"]}
         signature = (basis, *pillars) if valid else None
         repeated = "samePillarsAs"
+    elif basis in {"year-hour", "year-month-day-hour"}:
+        # Partial historical dates are evidence, not complete four-pillar inputs.
+        fields = {"pillars": case.get("pillars", []), "inputBasis": basis,
+                  "scope": [],
+                  "unavailable": ["完整四柱干支", "可复算的历法日期", "现实应验的独立记录"]}
+        valid = False
+        signature = None
+        repeated = "samePartialInputAs"
     elif basis == "meihua-numbers":
         numbers = case.get("numbers", {})
         month, day = numbers.get("lunarMonth"), numbers.get("lunarDay")

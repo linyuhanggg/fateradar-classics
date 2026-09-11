@@ -185,6 +185,18 @@ class PillarSourceChecks(unittest.TestCase):
             self.assertEqual(fields["conflictingFields"], ["chiefStar"])
             self.assertEqual(fields["expected"]["starPalaceRaw"], 9)
 
+    def test_partial_historical_dates_remain_non_recomputable(self):
+        for basis, pillars in [("year-hour", ["丙寅", "丙寅"]),
+                               ("year-month-day-hour", ["己卯", "十一月", "己卯", "戊辰"])]:
+            case = {"inputBasis": basis, "pillars": pillars, "canRecompute": False}
+            fields, signature, _ = m.case_input(case)
+            self.assertEqual(fields["pillars"], pillars)
+            self.assertFalse(fields["canRecompute"])
+            self.assertEqual(fields["scope"], [])
+            self.assertIsNone(signature)
+            with self.assertRaises(ValueError):
+                m.case_input({**case, "canRecompute": True})
+
     def test_liuyao_diagram_keeps_multiple_sources_and_reported_outcome_separate(self):
         rows = m.collect_cases(m.ROOT)["cases"]
         case = next(row for row in rows if row["id"] == "zengshan-buyi:ZS-LY-L0379")
