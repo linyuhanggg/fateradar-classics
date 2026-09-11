@@ -1,0 +1,1693 @@
+{
+  "sources": [
+    "sanming-tonghui:L0996-L0997",
+    "sanming-tonghui:L1001-L1003"
+  ],
+  "runtime": "calendar.ts#eightCharAt",
+  "scope": "120 month-stem and 120 hour-stem relationships. Uses actual returned branches; does not independently validate astronomical boundary times or the separately configured 23:00 day-boundary convention. Source 甲巳 interpreted as 甲己 by ten-stem pairing context, raw text unchanged.",
+  "verified": false,
+  "monthChecks": [
+    {
+      "year": 2020,
+      "month": 1,
+      "yearPillar": "己亥",
+      "monthPillar": "丁丑",
+      "expectedMonthStem": "丁"
+    },
+    {
+      "year": 2020,
+      "month": 2,
+      "yearPillar": "庚子",
+      "monthPillar": "戊寅",
+      "expectedMonthStem": "戊"
+    },
+    {
+      "year": 2020,
+      "month": 3,
+      "yearPillar": "庚子",
+      "monthPillar": "己卯",
+      "expectedMonthStem": "己"
+    },
+    {
+      "year": 2020,
+      "month": 4,
+      "yearPillar": "庚子",
+      "monthPillar": "庚辰",
+      "expectedMonthStem": "庚"
+    },
+    {
+      "year": 2020,
+      "month": 5,
+      "yearPillar": "庚子",
+      "monthPillar": "辛巳",
+      "expectedMonthStem": "辛"
+    },
+    {
+      "year": 2020,
+      "month": 6,
+      "yearPillar": "庚子",
+      "monthPillar": "壬午",
+      "expectedMonthStem": "壬"
+    },
+    {
+      "year": 2020,
+      "month": 7,
+      "yearPillar": "庚子",
+      "monthPillar": "癸未",
+      "expectedMonthStem": "癸"
+    },
+    {
+      "year": 2020,
+      "month": 8,
+      "yearPillar": "庚子",
+      "monthPillar": "甲申",
+      "expectedMonthStem": "甲"
+    },
+    {
+      "year": 2020,
+      "month": 9,
+      "yearPillar": "庚子",
+      "monthPillar": "乙酉",
+      "expectedMonthStem": "乙"
+    },
+    {
+      "year": 2020,
+      "month": 10,
+      "yearPillar": "庚子",
+      "monthPillar": "丙戌",
+      "expectedMonthStem": "丙"
+    },
+    {
+      "year": 2020,
+      "month": 11,
+      "yearPillar": "庚子",
+      "monthPillar": "丁亥",
+      "expectedMonthStem": "丁"
+    },
+    {
+      "year": 2020,
+      "month": 12,
+      "yearPillar": "庚子",
+      "monthPillar": "戊子",
+      "expectedMonthStem": "戊"
+    },
+    {
+      "year": 2021,
+      "month": 1,
+      "yearPillar": "庚子",
+      "monthPillar": "己丑",
+      "expectedMonthStem": "己"
+    },
+    {
+      "year": 2021,
+      "month": 2,
+      "yearPillar": "辛丑",
+      "monthPillar": "庚寅",
+      "expectedMonthStem": "庚"
+    },
+    {
+      "year": 2021,
+      "month": 3,
+      "yearPillar": "辛丑",
+      "monthPillar": "辛卯",
+      "expectedMonthStem": "辛"
+    },
+    {
+      "year": 2021,
+      "month": 4,
+      "yearPillar": "辛丑",
+      "monthPillar": "壬辰",
+      "expectedMonthStem": "壬"
+    },
+    {
+      "year": 2021,
+      "month": 5,
+      "yearPillar": "辛丑",
+      "monthPillar": "癸巳",
+      "expectedMonthStem": "癸"
+    },
+    {
+      "year": 2021,
+      "month": 6,
+      "yearPillar": "辛丑",
+      "monthPillar": "甲午",
+      "expectedMonthStem": "甲"
+    },
+    {
+      "year": 2021,
+      "month": 7,
+      "yearPillar": "辛丑",
+      "monthPillar": "乙未",
+      "expectedMonthStem": "乙"
+    },
+    {
+      "year": 2021,
+      "month": 8,
+      "yearPillar": "辛丑",
+      "monthPillar": "丙申",
+      "expectedMonthStem": "丙"
+    },
+    {
+      "year": 2021,
+      "month": 9,
+      "yearPillar": "辛丑",
+      "monthPillar": "丁酉",
+      "expectedMonthStem": "丁"
+    },
+    {
+      "year": 2021,
+      "month": 10,
+      "yearPillar": "辛丑",
+      "monthPillar": "戊戌",
+      "expectedMonthStem": "戊"
+    },
+    {
+      "year": 2021,
+      "month": 11,
+      "yearPillar": "辛丑",
+      "monthPillar": "己亥",
+      "expectedMonthStem": "己"
+    },
+    {
+      "year": 2021,
+      "month": 12,
+      "yearPillar": "辛丑",
+      "monthPillar": "庚子",
+      "expectedMonthStem": "庚"
+    },
+    {
+      "year": 2022,
+      "month": 1,
+      "yearPillar": "辛丑",
+      "monthPillar": "辛丑",
+      "expectedMonthStem": "辛"
+    },
+    {
+      "year": 2022,
+      "month": 2,
+      "yearPillar": "壬寅",
+      "monthPillar": "壬寅",
+      "expectedMonthStem": "壬"
+    },
+    {
+      "year": 2022,
+      "month": 3,
+      "yearPillar": "壬寅",
+      "monthPillar": "癸卯",
+      "expectedMonthStem": "癸"
+    },
+    {
+      "year": 2022,
+      "month": 4,
+      "yearPillar": "壬寅",
+      "monthPillar": "甲辰",
+      "expectedMonthStem": "甲"
+    },
+    {
+      "year": 2022,
+      "month": 5,
+      "yearPillar": "壬寅",
+      "monthPillar": "乙巳",
+      "expectedMonthStem": "乙"
+    },
+    {
+      "year": 2022,
+      "month": 6,
+      "yearPillar": "壬寅",
+      "monthPillar": "丙午",
+      "expectedMonthStem": "丙"
+    },
+    {
+      "year": 2022,
+      "month": 7,
+      "yearPillar": "壬寅",
+      "monthPillar": "丁未",
+      "expectedMonthStem": "丁"
+    },
+    {
+      "year": 2022,
+      "month": 8,
+      "yearPillar": "壬寅",
+      "monthPillar": "戊申",
+      "expectedMonthStem": "戊"
+    },
+    {
+      "year": 2022,
+      "month": 9,
+      "yearPillar": "壬寅",
+      "monthPillar": "己酉",
+      "expectedMonthStem": "己"
+    },
+    {
+      "year": 2022,
+      "month": 10,
+      "yearPillar": "壬寅",
+      "monthPillar": "庚戌",
+      "expectedMonthStem": "庚"
+    },
+    {
+      "year": 2022,
+      "month": 11,
+      "yearPillar": "壬寅",
+      "monthPillar": "辛亥",
+      "expectedMonthStem": "辛"
+    },
+    {
+      "year": 2022,
+      "month": 12,
+      "yearPillar": "壬寅",
+      "monthPillar": "壬子",
+      "expectedMonthStem": "壬"
+    },
+    {
+      "year": 2023,
+      "month": 1,
+      "yearPillar": "壬寅",
+      "monthPillar": "癸丑",
+      "expectedMonthStem": "癸"
+    },
+    {
+      "year": 2023,
+      "month": 2,
+      "yearPillar": "癸卯",
+      "monthPillar": "甲寅",
+      "expectedMonthStem": "甲"
+    },
+    {
+      "year": 2023,
+      "month": 3,
+      "yearPillar": "癸卯",
+      "monthPillar": "乙卯",
+      "expectedMonthStem": "乙"
+    },
+    {
+      "year": 2023,
+      "month": 4,
+      "yearPillar": "癸卯",
+      "monthPillar": "丙辰",
+      "expectedMonthStem": "丙"
+    },
+    {
+      "year": 2023,
+      "month": 5,
+      "yearPillar": "癸卯",
+      "monthPillar": "丁巳",
+      "expectedMonthStem": "丁"
+    },
+    {
+      "year": 2023,
+      "month": 6,
+      "yearPillar": "癸卯",
+      "monthPillar": "戊午",
+      "expectedMonthStem": "戊"
+    },
+    {
+      "year": 2023,
+      "month": 7,
+      "yearPillar": "癸卯",
+      "monthPillar": "己未",
+      "expectedMonthStem": "己"
+    },
+    {
+      "year": 2023,
+      "month": 8,
+      "yearPillar": "癸卯",
+      "monthPillar": "庚申",
+      "expectedMonthStem": "庚"
+    },
+    {
+      "year": 2023,
+      "month": 9,
+      "yearPillar": "癸卯",
+      "monthPillar": "辛酉",
+      "expectedMonthStem": "辛"
+    },
+    {
+      "year": 2023,
+      "month": 10,
+      "yearPillar": "癸卯",
+      "monthPillar": "壬戌",
+      "expectedMonthStem": "壬"
+    },
+    {
+      "year": 2023,
+      "month": 11,
+      "yearPillar": "癸卯",
+      "monthPillar": "癸亥",
+      "expectedMonthStem": "癸"
+    },
+    {
+      "year": 2023,
+      "month": 12,
+      "yearPillar": "癸卯",
+      "monthPillar": "甲子",
+      "expectedMonthStem": "甲"
+    },
+    {
+      "year": 2024,
+      "month": 1,
+      "yearPillar": "癸卯",
+      "monthPillar": "乙丑",
+      "expectedMonthStem": "乙"
+    },
+    {
+      "year": 2024,
+      "month": 2,
+      "yearPillar": "甲辰",
+      "monthPillar": "丙寅",
+      "expectedMonthStem": "丙"
+    },
+    {
+      "year": 2024,
+      "month": 3,
+      "yearPillar": "甲辰",
+      "monthPillar": "丁卯",
+      "expectedMonthStem": "丁"
+    },
+    {
+      "year": 2024,
+      "month": 4,
+      "yearPillar": "甲辰",
+      "monthPillar": "戊辰",
+      "expectedMonthStem": "戊"
+    },
+    {
+      "year": 2024,
+      "month": 5,
+      "yearPillar": "甲辰",
+      "monthPillar": "己巳",
+      "expectedMonthStem": "己"
+    },
+    {
+      "year": 2024,
+      "month": 6,
+      "yearPillar": "甲辰",
+      "monthPillar": "庚午",
+      "expectedMonthStem": "庚"
+    },
+    {
+      "year": 2024,
+      "month": 7,
+      "yearPillar": "甲辰",
+      "monthPillar": "辛未",
+      "expectedMonthStem": "辛"
+    },
+    {
+      "year": 2024,
+      "month": 8,
+      "yearPillar": "甲辰",
+      "monthPillar": "壬申",
+      "expectedMonthStem": "壬"
+    },
+    {
+      "year": 2024,
+      "month": 9,
+      "yearPillar": "甲辰",
+      "monthPillar": "癸酉",
+      "expectedMonthStem": "癸"
+    },
+    {
+      "year": 2024,
+      "month": 10,
+      "yearPillar": "甲辰",
+      "monthPillar": "甲戌",
+      "expectedMonthStem": "甲"
+    },
+    {
+      "year": 2024,
+      "month": 11,
+      "yearPillar": "甲辰",
+      "monthPillar": "乙亥",
+      "expectedMonthStem": "乙"
+    },
+    {
+      "year": 2024,
+      "month": 12,
+      "yearPillar": "甲辰",
+      "monthPillar": "丙子",
+      "expectedMonthStem": "丙"
+    },
+    {
+      "year": 2025,
+      "month": 1,
+      "yearPillar": "甲辰",
+      "monthPillar": "丁丑",
+      "expectedMonthStem": "丁"
+    },
+    {
+      "year": 2025,
+      "month": 2,
+      "yearPillar": "乙巳",
+      "monthPillar": "戊寅",
+      "expectedMonthStem": "戊"
+    },
+    {
+      "year": 2025,
+      "month": 3,
+      "yearPillar": "乙巳",
+      "monthPillar": "己卯",
+      "expectedMonthStem": "己"
+    },
+    {
+      "year": 2025,
+      "month": 4,
+      "yearPillar": "乙巳",
+      "monthPillar": "庚辰",
+      "expectedMonthStem": "庚"
+    },
+    {
+      "year": 2025,
+      "month": 5,
+      "yearPillar": "乙巳",
+      "monthPillar": "辛巳",
+      "expectedMonthStem": "辛"
+    },
+    {
+      "year": 2025,
+      "month": 6,
+      "yearPillar": "乙巳",
+      "monthPillar": "壬午",
+      "expectedMonthStem": "壬"
+    },
+    {
+      "year": 2025,
+      "month": 7,
+      "yearPillar": "乙巳",
+      "monthPillar": "癸未",
+      "expectedMonthStem": "癸"
+    },
+    {
+      "year": 2025,
+      "month": 8,
+      "yearPillar": "乙巳",
+      "monthPillar": "甲申",
+      "expectedMonthStem": "甲"
+    },
+    {
+      "year": 2025,
+      "month": 9,
+      "yearPillar": "乙巳",
+      "monthPillar": "乙酉",
+      "expectedMonthStem": "乙"
+    },
+    {
+      "year": 2025,
+      "month": 10,
+      "yearPillar": "乙巳",
+      "monthPillar": "丙戌",
+      "expectedMonthStem": "丙"
+    },
+    {
+      "year": 2025,
+      "month": 11,
+      "yearPillar": "乙巳",
+      "monthPillar": "丁亥",
+      "expectedMonthStem": "丁"
+    },
+    {
+      "year": 2025,
+      "month": 12,
+      "yearPillar": "乙巳",
+      "monthPillar": "戊子",
+      "expectedMonthStem": "戊"
+    },
+    {
+      "year": 2026,
+      "month": 1,
+      "yearPillar": "乙巳",
+      "monthPillar": "己丑",
+      "expectedMonthStem": "己"
+    },
+    {
+      "year": 2026,
+      "month": 2,
+      "yearPillar": "丙午",
+      "monthPillar": "庚寅",
+      "expectedMonthStem": "庚"
+    },
+    {
+      "year": 2026,
+      "month": 3,
+      "yearPillar": "丙午",
+      "monthPillar": "辛卯",
+      "expectedMonthStem": "辛"
+    },
+    {
+      "year": 2026,
+      "month": 4,
+      "yearPillar": "丙午",
+      "monthPillar": "壬辰",
+      "expectedMonthStem": "壬"
+    },
+    {
+      "year": 2026,
+      "month": 5,
+      "yearPillar": "丙午",
+      "monthPillar": "癸巳",
+      "expectedMonthStem": "癸"
+    },
+    {
+      "year": 2026,
+      "month": 6,
+      "yearPillar": "丙午",
+      "monthPillar": "甲午",
+      "expectedMonthStem": "甲"
+    },
+    {
+      "year": 2026,
+      "month": 7,
+      "yearPillar": "丙午",
+      "monthPillar": "乙未",
+      "expectedMonthStem": "乙"
+    },
+    {
+      "year": 2026,
+      "month": 8,
+      "yearPillar": "丙午",
+      "monthPillar": "丙申",
+      "expectedMonthStem": "丙"
+    },
+    {
+      "year": 2026,
+      "month": 9,
+      "yearPillar": "丙午",
+      "monthPillar": "丁酉",
+      "expectedMonthStem": "丁"
+    },
+    {
+      "year": 2026,
+      "month": 10,
+      "yearPillar": "丙午",
+      "monthPillar": "戊戌",
+      "expectedMonthStem": "戊"
+    },
+    {
+      "year": 2026,
+      "month": 11,
+      "yearPillar": "丙午",
+      "monthPillar": "己亥",
+      "expectedMonthStem": "己"
+    },
+    {
+      "year": 2026,
+      "month": 12,
+      "yearPillar": "丙午",
+      "monthPillar": "庚子",
+      "expectedMonthStem": "庚"
+    },
+    {
+      "year": 2027,
+      "month": 1,
+      "yearPillar": "丙午",
+      "monthPillar": "辛丑",
+      "expectedMonthStem": "辛"
+    },
+    {
+      "year": 2027,
+      "month": 2,
+      "yearPillar": "丁未",
+      "monthPillar": "壬寅",
+      "expectedMonthStem": "壬"
+    },
+    {
+      "year": 2027,
+      "month": 3,
+      "yearPillar": "丁未",
+      "monthPillar": "癸卯",
+      "expectedMonthStem": "癸"
+    },
+    {
+      "year": 2027,
+      "month": 4,
+      "yearPillar": "丁未",
+      "monthPillar": "甲辰",
+      "expectedMonthStem": "甲"
+    },
+    {
+      "year": 2027,
+      "month": 5,
+      "yearPillar": "丁未",
+      "monthPillar": "乙巳",
+      "expectedMonthStem": "乙"
+    },
+    {
+      "year": 2027,
+      "month": 6,
+      "yearPillar": "丁未",
+      "monthPillar": "丙午",
+      "expectedMonthStem": "丙"
+    },
+    {
+      "year": 2027,
+      "month": 7,
+      "yearPillar": "丁未",
+      "monthPillar": "丁未",
+      "expectedMonthStem": "丁"
+    },
+    {
+      "year": 2027,
+      "month": 8,
+      "yearPillar": "丁未",
+      "monthPillar": "戊申",
+      "expectedMonthStem": "戊"
+    },
+    {
+      "year": 2027,
+      "month": 9,
+      "yearPillar": "丁未",
+      "monthPillar": "己酉",
+      "expectedMonthStem": "己"
+    },
+    {
+      "year": 2027,
+      "month": 10,
+      "yearPillar": "丁未",
+      "monthPillar": "庚戌",
+      "expectedMonthStem": "庚"
+    },
+    {
+      "year": 2027,
+      "month": 11,
+      "yearPillar": "丁未",
+      "monthPillar": "辛亥",
+      "expectedMonthStem": "辛"
+    },
+    {
+      "year": 2027,
+      "month": 12,
+      "yearPillar": "丁未",
+      "monthPillar": "壬子",
+      "expectedMonthStem": "壬"
+    },
+    {
+      "year": 2028,
+      "month": 1,
+      "yearPillar": "丁未",
+      "monthPillar": "癸丑",
+      "expectedMonthStem": "癸"
+    },
+    {
+      "year": 2028,
+      "month": 2,
+      "yearPillar": "戊申",
+      "monthPillar": "甲寅",
+      "expectedMonthStem": "甲"
+    },
+    {
+      "year": 2028,
+      "month": 3,
+      "yearPillar": "戊申",
+      "monthPillar": "乙卯",
+      "expectedMonthStem": "乙"
+    },
+    {
+      "year": 2028,
+      "month": 4,
+      "yearPillar": "戊申",
+      "monthPillar": "丙辰",
+      "expectedMonthStem": "丙"
+    },
+    {
+      "year": 2028,
+      "month": 5,
+      "yearPillar": "戊申",
+      "monthPillar": "丁巳",
+      "expectedMonthStem": "丁"
+    },
+    {
+      "year": 2028,
+      "month": 6,
+      "yearPillar": "戊申",
+      "monthPillar": "戊午",
+      "expectedMonthStem": "戊"
+    },
+    {
+      "year": 2028,
+      "month": 7,
+      "yearPillar": "戊申",
+      "monthPillar": "己未",
+      "expectedMonthStem": "己"
+    },
+    {
+      "year": 2028,
+      "month": 8,
+      "yearPillar": "戊申",
+      "monthPillar": "庚申",
+      "expectedMonthStem": "庚"
+    },
+    {
+      "year": 2028,
+      "month": 9,
+      "yearPillar": "戊申",
+      "monthPillar": "辛酉",
+      "expectedMonthStem": "辛"
+    },
+    {
+      "year": 2028,
+      "month": 10,
+      "yearPillar": "戊申",
+      "monthPillar": "壬戌",
+      "expectedMonthStem": "壬"
+    },
+    {
+      "year": 2028,
+      "month": 11,
+      "yearPillar": "戊申",
+      "monthPillar": "癸亥",
+      "expectedMonthStem": "癸"
+    },
+    {
+      "year": 2028,
+      "month": 12,
+      "yearPillar": "戊申",
+      "monthPillar": "甲子",
+      "expectedMonthStem": "甲"
+    },
+    {
+      "year": 2029,
+      "month": 1,
+      "yearPillar": "戊申",
+      "monthPillar": "乙丑",
+      "expectedMonthStem": "乙"
+    },
+    {
+      "year": 2029,
+      "month": 2,
+      "yearPillar": "己酉",
+      "monthPillar": "丙寅",
+      "expectedMonthStem": "丙"
+    },
+    {
+      "year": 2029,
+      "month": 3,
+      "yearPillar": "己酉",
+      "monthPillar": "丁卯",
+      "expectedMonthStem": "丁"
+    },
+    {
+      "year": 2029,
+      "month": 4,
+      "yearPillar": "己酉",
+      "monthPillar": "戊辰",
+      "expectedMonthStem": "戊"
+    },
+    {
+      "year": 2029,
+      "month": 5,
+      "yearPillar": "己酉",
+      "monthPillar": "己巳",
+      "expectedMonthStem": "己"
+    },
+    {
+      "year": 2029,
+      "month": 6,
+      "yearPillar": "己酉",
+      "monthPillar": "庚午",
+      "expectedMonthStem": "庚"
+    },
+    {
+      "year": 2029,
+      "month": 7,
+      "yearPillar": "己酉",
+      "monthPillar": "辛未",
+      "expectedMonthStem": "辛"
+    },
+    {
+      "year": 2029,
+      "month": 8,
+      "yearPillar": "己酉",
+      "monthPillar": "壬申",
+      "expectedMonthStem": "壬"
+    },
+    {
+      "year": 2029,
+      "month": 9,
+      "yearPillar": "己酉",
+      "monthPillar": "癸酉",
+      "expectedMonthStem": "癸"
+    },
+    {
+      "year": 2029,
+      "month": 10,
+      "yearPillar": "己酉",
+      "monthPillar": "甲戌",
+      "expectedMonthStem": "甲"
+    },
+    {
+      "year": 2029,
+      "month": 11,
+      "yearPillar": "己酉",
+      "monthPillar": "乙亥",
+      "expectedMonthStem": "乙"
+    },
+    {
+      "year": 2029,
+      "month": 12,
+      "yearPillar": "己酉",
+      "monthPillar": "丙子",
+      "expectedMonthStem": "丙"
+    }
+  ],
+  "hourChecks": [
+    {
+      "day": 1,
+      "hour": 0,
+      "dayPillar": "乙亥",
+      "hourPillar": "丙子",
+      "expectedHourStem": "丙"
+    },
+    {
+      "day": 1,
+      "hour": 2,
+      "dayPillar": "乙亥",
+      "hourPillar": "丁丑",
+      "expectedHourStem": "丁"
+    },
+    {
+      "day": 1,
+      "hour": 4,
+      "dayPillar": "乙亥",
+      "hourPillar": "戊寅",
+      "expectedHourStem": "戊"
+    },
+    {
+      "day": 1,
+      "hour": 6,
+      "dayPillar": "乙亥",
+      "hourPillar": "己卯",
+      "expectedHourStem": "己"
+    },
+    {
+      "day": 1,
+      "hour": 8,
+      "dayPillar": "乙亥",
+      "hourPillar": "庚辰",
+      "expectedHourStem": "庚"
+    },
+    {
+      "day": 1,
+      "hour": 10,
+      "dayPillar": "乙亥",
+      "hourPillar": "辛巳",
+      "expectedHourStem": "辛"
+    },
+    {
+      "day": 1,
+      "hour": 12,
+      "dayPillar": "乙亥",
+      "hourPillar": "壬午",
+      "expectedHourStem": "壬"
+    },
+    {
+      "day": 1,
+      "hour": 14,
+      "dayPillar": "乙亥",
+      "hourPillar": "癸未",
+      "expectedHourStem": "癸"
+    },
+    {
+      "day": 1,
+      "hour": 16,
+      "dayPillar": "乙亥",
+      "hourPillar": "甲申",
+      "expectedHourStem": "甲"
+    },
+    {
+      "day": 1,
+      "hour": 18,
+      "dayPillar": "乙亥",
+      "hourPillar": "乙酉",
+      "expectedHourStem": "乙"
+    },
+    {
+      "day": 1,
+      "hour": 20,
+      "dayPillar": "乙亥",
+      "hourPillar": "丙戌",
+      "expectedHourStem": "丙"
+    },
+    {
+      "day": 1,
+      "hour": 22,
+      "dayPillar": "乙亥",
+      "hourPillar": "丁亥",
+      "expectedHourStem": "丁"
+    },
+    {
+      "day": 2,
+      "hour": 0,
+      "dayPillar": "丙子",
+      "hourPillar": "戊子",
+      "expectedHourStem": "戊"
+    },
+    {
+      "day": 2,
+      "hour": 2,
+      "dayPillar": "丙子",
+      "hourPillar": "己丑",
+      "expectedHourStem": "己"
+    },
+    {
+      "day": 2,
+      "hour": 4,
+      "dayPillar": "丙子",
+      "hourPillar": "庚寅",
+      "expectedHourStem": "庚"
+    },
+    {
+      "day": 2,
+      "hour": 6,
+      "dayPillar": "丙子",
+      "hourPillar": "辛卯",
+      "expectedHourStem": "辛"
+    },
+    {
+      "day": 2,
+      "hour": 8,
+      "dayPillar": "丙子",
+      "hourPillar": "壬辰",
+      "expectedHourStem": "壬"
+    },
+    {
+      "day": 2,
+      "hour": 10,
+      "dayPillar": "丙子",
+      "hourPillar": "癸巳",
+      "expectedHourStem": "癸"
+    },
+    {
+      "day": 2,
+      "hour": 12,
+      "dayPillar": "丙子",
+      "hourPillar": "甲午",
+      "expectedHourStem": "甲"
+    },
+    {
+      "day": 2,
+      "hour": 14,
+      "dayPillar": "丙子",
+      "hourPillar": "乙未",
+      "expectedHourStem": "乙"
+    },
+    {
+      "day": 2,
+      "hour": 16,
+      "dayPillar": "丙子",
+      "hourPillar": "丙申",
+      "expectedHourStem": "丙"
+    },
+    {
+      "day": 2,
+      "hour": 18,
+      "dayPillar": "丙子",
+      "hourPillar": "丁酉",
+      "expectedHourStem": "丁"
+    },
+    {
+      "day": 2,
+      "hour": 20,
+      "dayPillar": "丙子",
+      "hourPillar": "戊戌",
+      "expectedHourStem": "戊"
+    },
+    {
+      "day": 2,
+      "hour": 22,
+      "dayPillar": "丙子",
+      "hourPillar": "己亥",
+      "expectedHourStem": "己"
+    },
+    {
+      "day": 3,
+      "hour": 0,
+      "dayPillar": "丁丑",
+      "hourPillar": "庚子",
+      "expectedHourStem": "庚"
+    },
+    {
+      "day": 3,
+      "hour": 2,
+      "dayPillar": "丁丑",
+      "hourPillar": "辛丑",
+      "expectedHourStem": "辛"
+    },
+    {
+      "day": 3,
+      "hour": 4,
+      "dayPillar": "丁丑",
+      "hourPillar": "壬寅",
+      "expectedHourStem": "壬"
+    },
+    {
+      "day": 3,
+      "hour": 6,
+      "dayPillar": "丁丑",
+      "hourPillar": "癸卯",
+      "expectedHourStem": "癸"
+    },
+    {
+      "day": 3,
+      "hour": 8,
+      "dayPillar": "丁丑",
+      "hourPillar": "甲辰",
+      "expectedHourStem": "甲"
+    },
+    {
+      "day": 3,
+      "hour": 10,
+      "dayPillar": "丁丑",
+      "hourPillar": "乙巳",
+      "expectedHourStem": "乙"
+    },
+    {
+      "day": 3,
+      "hour": 12,
+      "dayPillar": "丁丑",
+      "hourPillar": "丙午",
+      "expectedHourStem": "丙"
+    },
+    {
+      "day": 3,
+      "hour": 14,
+      "dayPillar": "丁丑",
+      "hourPillar": "丁未",
+      "expectedHourStem": "丁"
+    },
+    {
+      "day": 3,
+      "hour": 16,
+      "dayPillar": "丁丑",
+      "hourPillar": "戊申",
+      "expectedHourStem": "戊"
+    },
+    {
+      "day": 3,
+      "hour": 18,
+      "dayPillar": "丁丑",
+      "hourPillar": "己酉",
+      "expectedHourStem": "己"
+    },
+    {
+      "day": 3,
+      "hour": 20,
+      "dayPillar": "丁丑",
+      "hourPillar": "庚戌",
+      "expectedHourStem": "庚"
+    },
+    {
+      "day": 3,
+      "hour": 22,
+      "dayPillar": "丁丑",
+      "hourPillar": "辛亥",
+      "expectedHourStem": "辛"
+    },
+    {
+      "day": 4,
+      "hour": 0,
+      "dayPillar": "戊寅",
+      "hourPillar": "壬子",
+      "expectedHourStem": "壬"
+    },
+    {
+      "day": 4,
+      "hour": 2,
+      "dayPillar": "戊寅",
+      "hourPillar": "癸丑",
+      "expectedHourStem": "癸"
+    },
+    {
+      "day": 4,
+      "hour": 4,
+      "dayPillar": "戊寅",
+      "hourPillar": "甲寅",
+      "expectedHourStem": "甲"
+    },
+    {
+      "day": 4,
+      "hour": 6,
+      "dayPillar": "戊寅",
+      "hourPillar": "乙卯",
+      "expectedHourStem": "乙"
+    },
+    {
+      "day": 4,
+      "hour": 8,
+      "dayPillar": "戊寅",
+      "hourPillar": "丙辰",
+      "expectedHourStem": "丙"
+    },
+    {
+      "day": 4,
+      "hour": 10,
+      "dayPillar": "戊寅",
+      "hourPillar": "丁巳",
+      "expectedHourStem": "丁"
+    },
+    {
+      "day": 4,
+      "hour": 12,
+      "dayPillar": "戊寅",
+      "hourPillar": "戊午",
+      "expectedHourStem": "戊"
+    },
+    {
+      "day": 4,
+      "hour": 14,
+      "dayPillar": "戊寅",
+      "hourPillar": "己未",
+      "expectedHourStem": "己"
+    },
+    {
+      "day": 4,
+      "hour": 16,
+      "dayPillar": "戊寅",
+      "hourPillar": "庚申",
+      "expectedHourStem": "庚"
+    },
+    {
+      "day": 4,
+      "hour": 18,
+      "dayPillar": "戊寅",
+      "hourPillar": "辛酉",
+      "expectedHourStem": "辛"
+    },
+    {
+      "day": 4,
+      "hour": 20,
+      "dayPillar": "戊寅",
+      "hourPillar": "壬戌",
+      "expectedHourStem": "壬"
+    },
+    {
+      "day": 4,
+      "hour": 22,
+      "dayPillar": "戊寅",
+      "hourPillar": "癸亥",
+      "expectedHourStem": "癸"
+    },
+    {
+      "day": 5,
+      "hour": 0,
+      "dayPillar": "己卯",
+      "hourPillar": "甲子",
+      "expectedHourStem": "甲"
+    },
+    {
+      "day": 5,
+      "hour": 2,
+      "dayPillar": "己卯",
+      "hourPillar": "乙丑",
+      "expectedHourStem": "乙"
+    },
+    {
+      "day": 5,
+      "hour": 4,
+      "dayPillar": "己卯",
+      "hourPillar": "丙寅",
+      "expectedHourStem": "丙"
+    },
+    {
+      "day": 5,
+      "hour": 6,
+      "dayPillar": "己卯",
+      "hourPillar": "丁卯",
+      "expectedHourStem": "丁"
+    },
+    {
+      "day": 5,
+      "hour": 8,
+      "dayPillar": "己卯",
+      "hourPillar": "戊辰",
+      "expectedHourStem": "戊"
+    },
+    {
+      "day": 5,
+      "hour": 10,
+      "dayPillar": "己卯",
+      "hourPillar": "己巳",
+      "expectedHourStem": "己"
+    },
+    {
+      "day": 5,
+      "hour": 12,
+      "dayPillar": "己卯",
+      "hourPillar": "庚午",
+      "expectedHourStem": "庚"
+    },
+    {
+      "day": 5,
+      "hour": 14,
+      "dayPillar": "己卯",
+      "hourPillar": "辛未",
+      "expectedHourStem": "辛"
+    },
+    {
+      "day": 5,
+      "hour": 16,
+      "dayPillar": "己卯",
+      "hourPillar": "壬申",
+      "expectedHourStem": "壬"
+    },
+    {
+      "day": 5,
+      "hour": 18,
+      "dayPillar": "己卯",
+      "hourPillar": "癸酉",
+      "expectedHourStem": "癸"
+    },
+    {
+      "day": 5,
+      "hour": 20,
+      "dayPillar": "己卯",
+      "hourPillar": "甲戌",
+      "expectedHourStem": "甲"
+    },
+    {
+      "day": 5,
+      "hour": 22,
+      "dayPillar": "己卯",
+      "hourPillar": "乙亥",
+      "expectedHourStem": "乙"
+    },
+    {
+      "day": 6,
+      "hour": 0,
+      "dayPillar": "庚辰",
+      "hourPillar": "丙子",
+      "expectedHourStem": "丙"
+    },
+    {
+      "day": 6,
+      "hour": 2,
+      "dayPillar": "庚辰",
+      "hourPillar": "丁丑",
+      "expectedHourStem": "丁"
+    },
+    {
+      "day": 6,
+      "hour": 4,
+      "dayPillar": "庚辰",
+      "hourPillar": "戊寅",
+      "expectedHourStem": "戊"
+    },
+    {
+      "day": 6,
+      "hour": 6,
+      "dayPillar": "庚辰",
+      "hourPillar": "己卯",
+      "expectedHourStem": "己"
+    },
+    {
+      "day": 6,
+      "hour": 8,
+      "dayPillar": "庚辰",
+      "hourPillar": "庚辰",
+      "expectedHourStem": "庚"
+    },
+    {
+      "day": 6,
+      "hour": 10,
+      "dayPillar": "庚辰",
+      "hourPillar": "辛巳",
+      "expectedHourStem": "辛"
+    },
+    {
+      "day": 6,
+      "hour": 12,
+      "dayPillar": "庚辰",
+      "hourPillar": "壬午",
+      "expectedHourStem": "壬"
+    },
+    {
+      "day": 6,
+      "hour": 14,
+      "dayPillar": "庚辰",
+      "hourPillar": "癸未",
+      "expectedHourStem": "癸"
+    },
+    {
+      "day": 6,
+      "hour": 16,
+      "dayPillar": "庚辰",
+      "hourPillar": "甲申",
+      "expectedHourStem": "甲"
+    },
+    {
+      "day": 6,
+      "hour": 18,
+      "dayPillar": "庚辰",
+      "hourPillar": "乙酉",
+      "expectedHourStem": "乙"
+    },
+    {
+      "day": 6,
+      "hour": 20,
+      "dayPillar": "庚辰",
+      "hourPillar": "丙戌",
+      "expectedHourStem": "丙"
+    },
+    {
+      "day": 6,
+      "hour": 22,
+      "dayPillar": "庚辰",
+      "hourPillar": "丁亥",
+      "expectedHourStem": "丁"
+    },
+    {
+      "day": 7,
+      "hour": 0,
+      "dayPillar": "辛巳",
+      "hourPillar": "戊子",
+      "expectedHourStem": "戊"
+    },
+    {
+      "day": 7,
+      "hour": 2,
+      "dayPillar": "辛巳",
+      "hourPillar": "己丑",
+      "expectedHourStem": "己"
+    },
+    {
+      "day": 7,
+      "hour": 4,
+      "dayPillar": "辛巳",
+      "hourPillar": "庚寅",
+      "expectedHourStem": "庚"
+    },
+    {
+      "day": 7,
+      "hour": 6,
+      "dayPillar": "辛巳",
+      "hourPillar": "辛卯",
+      "expectedHourStem": "辛"
+    },
+    {
+      "day": 7,
+      "hour": 8,
+      "dayPillar": "辛巳",
+      "hourPillar": "壬辰",
+      "expectedHourStem": "壬"
+    },
+    {
+      "day": 7,
+      "hour": 10,
+      "dayPillar": "辛巳",
+      "hourPillar": "癸巳",
+      "expectedHourStem": "癸"
+    },
+    {
+      "day": 7,
+      "hour": 12,
+      "dayPillar": "辛巳",
+      "hourPillar": "甲午",
+      "expectedHourStem": "甲"
+    },
+    {
+      "day": 7,
+      "hour": 14,
+      "dayPillar": "辛巳",
+      "hourPillar": "乙未",
+      "expectedHourStem": "乙"
+    },
+    {
+      "day": 7,
+      "hour": 16,
+      "dayPillar": "辛巳",
+      "hourPillar": "丙申",
+      "expectedHourStem": "丙"
+    },
+    {
+      "day": 7,
+      "hour": 18,
+      "dayPillar": "辛巳",
+      "hourPillar": "丁酉",
+      "expectedHourStem": "丁"
+    },
+    {
+      "day": 7,
+      "hour": 20,
+      "dayPillar": "辛巳",
+      "hourPillar": "戊戌",
+      "expectedHourStem": "戊"
+    },
+    {
+      "day": 7,
+      "hour": 22,
+      "dayPillar": "辛巳",
+      "hourPillar": "己亥",
+      "expectedHourStem": "己"
+    },
+    {
+      "day": 8,
+      "hour": 0,
+      "dayPillar": "壬午",
+      "hourPillar": "庚子",
+      "expectedHourStem": "庚"
+    },
+    {
+      "day": 8,
+      "hour": 2,
+      "dayPillar": "壬午",
+      "hourPillar": "辛丑",
+      "expectedHourStem": "辛"
+    },
+    {
+      "day": 8,
+      "hour": 4,
+      "dayPillar": "壬午",
+      "hourPillar": "壬寅",
+      "expectedHourStem": "壬"
+    },
+    {
+      "day": 8,
+      "hour": 6,
+      "dayPillar": "壬午",
+      "hourPillar": "癸卯",
+      "expectedHourStem": "癸"
+    },
+    {
+      "day": 8,
+      "hour": 8,
+      "dayPillar": "壬午",
+      "hourPillar": "甲辰",
+      "expectedHourStem": "甲"
+    },
+    {
+      "day": 8,
+      "hour": 10,
+      "dayPillar": "壬午",
+      "hourPillar": "乙巳",
+      "expectedHourStem": "乙"
+    },
+    {
+      "day": 8,
+      "hour": 12,
+      "dayPillar": "壬午",
+      "hourPillar": "丙午",
+      "expectedHourStem": "丙"
+    },
+    {
+      "day": 8,
+      "hour": 14,
+      "dayPillar": "壬午",
+      "hourPillar": "丁未",
+      "expectedHourStem": "丁"
+    },
+    {
+      "day": 8,
+      "hour": 16,
+      "dayPillar": "壬午",
+      "hourPillar": "戊申",
+      "expectedHourStem": "戊"
+    },
+    {
+      "day": 8,
+      "hour": 18,
+      "dayPillar": "壬午",
+      "hourPillar": "己酉",
+      "expectedHourStem": "己"
+    },
+    {
+      "day": 8,
+      "hour": 20,
+      "dayPillar": "壬午",
+      "hourPillar": "庚戌",
+      "expectedHourStem": "庚"
+    },
+    {
+      "day": 8,
+      "hour": 22,
+      "dayPillar": "壬午",
+      "hourPillar": "辛亥",
+      "expectedHourStem": "辛"
+    },
+    {
+      "day": 9,
+      "hour": 0,
+      "dayPillar": "癸未",
+      "hourPillar": "壬子",
+      "expectedHourStem": "壬"
+    },
+    {
+      "day": 9,
+      "hour": 2,
+      "dayPillar": "癸未",
+      "hourPillar": "癸丑",
+      "expectedHourStem": "癸"
+    },
+    {
+      "day": 9,
+      "hour": 4,
+      "dayPillar": "癸未",
+      "hourPillar": "甲寅",
+      "expectedHourStem": "甲"
+    },
+    {
+      "day": 9,
+      "hour": 6,
+      "dayPillar": "癸未",
+      "hourPillar": "乙卯",
+      "expectedHourStem": "乙"
+    },
+    {
+      "day": 9,
+      "hour": 8,
+      "dayPillar": "癸未",
+      "hourPillar": "丙辰",
+      "expectedHourStem": "丙"
+    },
+    {
+      "day": 9,
+      "hour": 10,
+      "dayPillar": "癸未",
+      "hourPillar": "丁巳",
+      "expectedHourStem": "丁"
+    },
+    {
+      "day": 9,
+      "hour": 12,
+      "dayPillar": "癸未",
+      "hourPillar": "戊午",
+      "expectedHourStem": "戊"
+    },
+    {
+      "day": 9,
+      "hour": 14,
+      "dayPillar": "癸未",
+      "hourPillar": "己未",
+      "expectedHourStem": "己"
+    },
+    {
+      "day": 9,
+      "hour": 16,
+      "dayPillar": "癸未",
+      "hourPillar": "庚申",
+      "expectedHourStem": "庚"
+    },
+    {
+      "day": 9,
+      "hour": 18,
+      "dayPillar": "癸未",
+      "hourPillar": "辛酉",
+      "expectedHourStem": "辛"
+    },
+    {
+      "day": 9,
+      "hour": 20,
+      "dayPillar": "癸未",
+      "hourPillar": "壬戌",
+      "expectedHourStem": "壬"
+    },
+    {
+      "day": 9,
+      "hour": 22,
+      "dayPillar": "癸未",
+      "hourPillar": "癸亥",
+      "expectedHourStem": "癸"
+    },
+    {
+      "day": 10,
+      "hour": 0,
+      "dayPillar": "甲申",
+      "hourPillar": "甲子",
+      "expectedHourStem": "甲"
+    },
+    {
+      "day": 10,
+      "hour": 2,
+      "dayPillar": "甲申",
+      "hourPillar": "乙丑",
+      "expectedHourStem": "乙"
+    },
+    {
+      "day": 10,
+      "hour": 4,
+      "dayPillar": "甲申",
+      "hourPillar": "丙寅",
+      "expectedHourStem": "丙"
+    },
+    {
+      "day": 10,
+      "hour": 6,
+      "dayPillar": "甲申",
+      "hourPillar": "丁卯",
+      "expectedHourStem": "丁"
+    },
+    {
+      "day": 10,
+      "hour": 8,
+      "dayPillar": "甲申",
+      "hourPillar": "戊辰",
+      "expectedHourStem": "戊"
+    },
+    {
+      "day": 10,
+      "hour": 10,
+      "dayPillar": "甲申",
+      "hourPillar": "己巳",
+      "expectedHourStem": "己"
+    },
+    {
+      "day": 10,
+      "hour": 12,
+      "dayPillar": "甲申",
+      "hourPillar": "庚午",
+      "expectedHourStem": "庚"
+    },
+    {
+      "day": 10,
+      "hour": 14,
+      "dayPillar": "甲申",
+      "hourPillar": "辛未",
+      "expectedHourStem": "辛"
+    },
+    {
+      "day": 10,
+      "hour": 16,
+      "dayPillar": "甲申",
+      "hourPillar": "壬申",
+      "expectedHourStem": "壬"
+    },
+    {
+      "day": 10,
+      "hour": 18,
+      "dayPillar": "甲申",
+      "hourPillar": "癸酉",
+      "expectedHourStem": "癸"
+    },
+    {
+      "day": 10,
+      "hour": 20,
+      "dayPillar": "甲申",
+      "hourPillar": "甲戌",
+      "expectedHourStem": "甲"
+    },
+    {
+      "day": 10,
+      "hour": 22,
+      "dayPillar": "甲申",
+      "hourPillar": "乙亥",
+      "expectedHourStem": "乙"
+    }
+  ]
+}

@@ -1,0 +1,152 @@
+{
+  "pack": "luming-nayin/li-xuzhong-mingshu",
+  "fulltext": "sources/fulltext/luming-nayin/li-xuzhong-mingshu/fulltext.md",
+  "classification_note": "pattern 是文本模式初筛；annotation 来源另见注解文件；source-reviewed 不等同人工影印核验。same_text_as 仅表示忽略空白后的原文字面相同。",
+  "paragraphs": [
+    {
+      "id": "li-xuzhong-mingshu:L0003-L0011",
+      "start_line": 3,
+      "end_line": 11,
+      "heading": "李虛中命書",
+      "kind": "序跋目录",
+      "classification_method": "annotation",
+      "char_count": 618,
+      "doubtful": false,
+      "missing_marker": false,
+      "automatic_kind": "待分类",
+      "annotation_file": "references/annotations/luming-nayin/li-xuzhong-mingshu.json",
+      "annotation_review": "source-reviewed",
+      "has_vernacular": true
+    },
+    {
+      "id": "li-xuzhong-mingshu:L0013-L0015",
+      "start_line": 13,
+      "end_line": 15,
+      "heading": "李虛中命書",
+      "kind": "序跋目录",
+      "classification_method": "annotation",
+      "char_count": 214,
+      "doubtful": false,
+      "missing_marker": true,
+      "automatic_kind": "待分类",
+      "annotation_file": "references/annotations/luming-nayin/li-xuzhong-mingshu.json",
+      "annotation_review": "source-reviewed",
+      "has_vernacular": true
+    },
+    {
+      "id": "li-xuzhong-mingshu:L0017-L0017",
+      "start_line": 17,
+      "end_line": 17,
+      "heading": "李虛中命書",
+      "kind": "序跋目录",
+      "classification_method": "annotation",
+      "char_count": 6,
+      "doubtful": false,
+      "missing_marker": false,
+      "same_text_as": "sanming-tonghui:L0021-L0021",
+      "automatic_kind": "待分类",
+      "annotation_file": "references/annotations/luming-nayin/li-xuzhong-mingshu.json",
+      "annotation_review": "source-reviewed",
+      "has_vernacular": true
+    },
+    {
+      "id": "li-xuzhong-mingshu:L0021-L0085",
+      "start_line": 21,
+      "end_line": 85,
+      "heading": "李虛中命書卷上",
+      "kind": "规则候选",
+      "classification_method": "annotation",
+      "char_count": 4362,
+      "doubtful": false,
+      "missing_marker": false,
+      "automatic_kind": "待分类",
+      "annotation_file": "references/annotations/luming-nayin/li-xuzhong-mingshu.json",
+      "annotation_review": "source-reviewed",
+      "has_vernacular": true
+    },
+    {
+      "id": "li-xuzhong-mingshu:L0087-L0087",
+      "start_line": 87,
+      "end_line": 87,
+      "heading": "李虛中命書卷上",
+      "kind": "序跋目录",
+      "classification_method": "annotation",
+      "char_count": 6,
+      "doubtful": false,
+      "missing_marker": false,
+      "same_text_as": "sanming-tonghui:L0021-L0021",
+      "automatic_kind": "待分类",
+      "annotation_file": "references/annotations/luming-nayin/li-xuzhong-mingshu.json",
+      "annotation_review": "source-reviewed",
+      "has_vernacular": true
+    },
+    {
+      "id": "li-xuzhong-mingshu:L0091-L0181",
+      "start_line": 91,
+      "end_line": 181,
+      "heading": "李虛中命書卷中",
+      "kind": "理论",
+      "classification_method": "annotation",
+      "four_pillar_sequences": [
+        [
+          "壬辰",
+          "丁亥",
+          "甲午",
+          "己未"
+        ]
+      ],
+      "char_count": 10977,
+      "doubtful": false,
+      "missing_marker": false,
+      "automatic_kind": "案例",
+      "annotation_file": "references/annotations/luming-nayin/li-xuzhong-mingshu.json",
+      "annotation_review": "source-reviewed",
+      "has_vernacular": true
+    },
+    {
+      "id": "li-xuzhong-mingshu:L0183-L0183",
+      "start_line": 183,
+      "end_line": 183,
+      "heading": "李虛中命書卷中",
+      "kind": "序跋目录",
+      "classification_method": "annotation",
+      "char_count": 6,
+      "doubtful": false,
+      "missing_marker": false,
+      "same_text_as": "sanming-tonghui:L0021-L0021",
+      "automatic_kind": "待分类",
+      "annotation_file": "references/annotations/luming-nayin/li-xuzhong-mingshu.json",
+      "annotation_review": "source-reviewed",
+      "has_vernacular": true
+    },
+    {
+      "id": "li-xuzhong-mingshu:L0187-L0242",
+      "start_line": 187,
+      "end_line": 242,
+      "heading": "李虛中命書卷下",
+      "kind": "理论",
+      "classification_method": "annotation",
+      "four_pillar_sequences": [
+        [
+          "辛亥",
+          "丙寅",
+          "己亥",
+          "甲寅"
+        ],
+        [
+          "壬子",
+          "癸丑",
+          "甲寅",
+          "乙卯"
+        ]
+      ],
+      "char_count": 6820,
+      "doubtful": false,
+      "missing_marker": false,
+      "automatic_kind": "案例",
+      "annotation_file": "references/annotations/luming-nayin/li-xuzhong-mingshu.json",
+      "annotation_review": "source-reviewed",
+      "has_vernacular": true
+    }
+  ]
+}
