@@ -37,6 +37,5 @@
 - 未合入 MING-406 CP8；未合入 MING-397 秘本 JSON；未等 CP22/CP23。
 
 ## 交付 tip
-- 内容合入 tip（7 审查稿）：
-- 内容+账本首推 tip：
-- 远端 tip： @ （施工分支，非 main）
+- 内容合入 tip（7 审查稿）：`ea1572ada7f9a11d78d36bfc904a6efddaedb8d6`
+- 内容+账本 tip：以交包评论中 `git rev-parse origin/codex/multica-ming-415` 为准（施工分支，非 main）
