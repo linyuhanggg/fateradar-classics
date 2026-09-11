@@ -6,6 +6,7 @@
 
 - 古籍 origin/main：`4cb96e35e545c8496906f9d36081d211f35f86c7`
 - 产品 origin/main：`48f68a8af0fd0ac56d69a4b6c7e733c5bffe63c2`
+- 隔离分支 HEAD：古籍 `8910542`（draft round2）；产品 `de332e3`（/knowledge + QTB 判断）
 - 隔离工作树（唯一写入）：
   - `/Users/yuhanglin/fateradar-goal-20260912/classics` 分支 `dsh/full-library-classics`
   - `/Users/yuhanglin/fateradar-goal-20260912/product` 分支 `dsh/full-library-product`
