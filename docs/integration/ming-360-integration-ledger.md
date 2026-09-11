@@ -33,9 +33,9 @@
 - 不是古籍全书完成；不是紫微斗数全书全文交付；不是人工 verified；未开 CP4。
 
 ## 交付 tip
-- 分支 HEAD / 远端：见 ledger JSON（账本提交后回填）
+- 内容+账本 tip（首推）：
 - 内容 cherry-pick tip：`ecfc9a9c5c624937b2524f8f983faf1c789d7a3d`
-- 账本提交：待本文件首提交
+- 账本首提交：
 
 ## 远端验证
 - push 后以 `origin/codex/multica-ming-360` 精确 SHA 回填
