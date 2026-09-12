@@ -44,7 +44,7 @@
       "satisfy_when": "值符归本位，天地二盘相重：只记伏吟",
       "fail_when": "值符不在本位，且也未落对宫",
       "unknown_when": "歌诀称最凶而同局仍有吉门吉星：力量未论，不得输出必败",
-      "rescue": "unimplemented",
+      "rescue": "none",
       "vernacular": "值符归本位，这是伏吟的盘面条件，用来观察是否胶着在原处，不是已经判定举动无效。",
       "implementation_assumption": "伏吟按值符落宫相对本位判断。不采用「就中伏吟为最凶」作运行结论。",
       "verified": false
@@ -131,7 +131,7 @@
       "satisfy_when": "天乙遇地己辛、天丙遇地戊庚、天丁遇地壬癸；寄干以现行寄宫真实位置同查",
       "fail_when": "本奇在本宫未遇列明六仪",
       "unknown_when": "得使成立不代表墓、门迫或其它限制已解除；缺天地层信息时不能判断",
-      "rescue": "unimplemented",
+      "rescue": "none",
       "vernacular": "三奇得使看本宫天盘奇与地盘仪的具体配对，不是只见三奇或吉门就成立。",
       "implementation_assumption": "六甲隐于六仪按L491映射；不要求配对地仪恰为当旬旬首。中五寄坤/禽芮随转沿用既有盘法，不由本条另起盘。",
       "verified": false
@@ -170,7 +170,7 @@
       "satisfy_when": "本宫天乙在坤二、天丙在乾六、天丁在艮八",
       "fail_when": "按这份简表，当前奇不在所列墓宫",
       "unknown_when": "与本书其他段落不同的宫位不得合成统一断语；单条成立不作现实凶断",
-      "rescue": "unimplemented",
+      "rescue": "none",
       "vernacular": "这份简表把乙坤、丙乾、丁艮列为入墓位置。它和另段取法有不同，需要按各自原文分别看。",
       "implementation_assumption": "只执行该行列明墓宫；不偷偷改成L1634的乙乾，也不将值符落宫当作本奇落宫。",
       "verified": false
@@ -216,7 +216,7 @@
       "satisfy_when": "本宫天乙或天丙在乾六、天丁在艮八",
       "fail_when": "按阴阳干分论，该奇不在所列墓宫",
       "unknown_when": "本书乙墓简表及丙丁合论首句另有取法，不能互相覆盖；未判组合总结果",
-      "rescue": "unimplemented",
+      "rescue": "none",
       "vernacular": "这段按阴阳干的长生墓位分别说乙丙到乾、丁到艮；本盘判断只限这条取法。",
       "implementation_assumption": "按本段明列宫位计算，保留与L315、L1543的差异；不按当前程序默认主星宫定位三奇。",
       "verified": false
