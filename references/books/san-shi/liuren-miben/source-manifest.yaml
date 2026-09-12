@@ -32,15 +32,44 @@ source_urls:
   - "https://commons.wikimedia.org/wiki/File:NCL-06572_%E5%A4%A7%E5%85%AD%E5%A3%AC%E7%A7%98%E6%9C%AC.pdf"
   - "https://upload.wikimedia.org/wikipedia/commons/0/0a/NCL-06572_%E5%A4%A7%E5%85%AD%E5%A3%AC%E7%A7%98%E6%9C%AC.pdf"
 
+# 2026-09-12 逐条实测审计（按声明的 sha256 在 `sources/**` + `references/**` 共 988 个候选中反查，
+# 不按文件名猜测）。与本文件其余声明分开看：
+#   - 8 条声明中，**0 条的 sha256 能在仓内找到**。
+#   - fulltext.md 实际存在，但路径不同且正文已增长（旧 sha 如上保留为 superseded_sha256）。
+#   - 真正缺失的是**原始取得件**：5 个 CTP 分章转写（ctp:ws582039 / ws594002 / ws758162 /
+#     ws199134 / ws593318）与 NCL-06572 扫描本。缺失后果：归一化 fulltext 无法在本地由原始件
+#     重新推导，NCL 影印页锚点（第 72、179、234 页）也不可在本仓复核。
+#   - 因此 source_state_summary 的「十七卷完整可检索转写已入库」成立（合并文本确实在仓内），
+#     但「原始分章与扫描见证已入库」不成立。
+local_files_audit:
+  audited_on: "2026-09-12"
+  method: "sha256 of every file under sources/ and references/ (988 files), matched against each declared sha256"
+  declared_count: 8
+  matched_by_declared_hash: 0
+  present_but_hash_changed: 1
+  truly_absent: 6
+  truly_absent_roles:
+    - "ctp_chapter_transcription x5 (chapter_1..5_ctext_*.md)"
+    - "original_scan_witness (NCL-06572_daliuren-miben.pdf)"
+  consequence: >-
+    归一化文本可读，但其原始取得件与扫描见证不在仓内；依赖 CTP 分章或 NCL 影印页的结论
+    只能引用其固定来源标识与页号，不能声称可在本仓复核。
+
 local_files:
-  - path: "references/fulltext/san-shi/liuren-miben/fulltext.md"
+  # 2026-09-12 实测更正：原声明路径 `references/fulltext/...` 不存在，实际在
+  # `sources/fulltext/<system>/<slug>/fulltext.md`；正文此后有增长，旧 sha256 保留在 superseded_sha256。
+  - path: "sources/fulltext/san-shi/liuren-miben/fulltext.md"
     role: "normalized_complete_text"
-    extent: "5354 lines; 295312 bytes"
-    sha256: "44ea31ef43f874ffc9da03c6ed6c01eee62081db6c2faf11593ec9bbe47847e0"
-  - path: "references/fulltext/san-shi/liuren-miben/fulltext.md"
+    extent: "6018 lines; 295975 bytes (2026-09-12 实测)"
+    sha256: "3152e2446147976fe65e81483c0fd4a47c02500d35aa547cd4356c9200cd68b3"
+    superseded_sha256: "44ea31ef43f874ffc9da03c6ed6c01eee62081db6c2faf11593ec9bbe47847e0"
+  # 本条原与上一条声明同一路径、同一 sha256：仓内只有一份该文本，并不存在可单独核对的第二份
+  # 「skill runtime exact copy」。保留作历史声明，不再声称是独立文件。
+  - path: "sources/fulltext/san-shi/liuren-miben/fulltext.md"
     role: "skill_runtime_exact_copy"
-    extent: "5354 lines; exact byte copy of normalized source"
-    sha256: "44ea31ef43f874ffc9da03c6ed6c01eee62081db6c2faf11593ec9bbe47847e0"
+    duplicate_of: "sources/fulltext/san-shi/liuren-miben/fulltext.md"
+    extent: "同上一条（同一文件，不是独立副本）"
+    sha256: "3152e2446147976fe65e81483c0fd4a47c02500d35aa547cd4356c9200cd68b3"
   - path: "sources/raw/san-shi/liuren-miben/chapter_1_ctext_582039.md"
     role: "ctp_chapter_transcription"
     ctp_urn: "ctp:ws582039"
