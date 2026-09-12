@@ -12,6 +12,7 @@ rules:
   statement: 一元 = 12 会 = 360 运 = 4320 世 = 129600 年；为天地一开辟之大周期。
   anchor: null
   quote: 一元 = 12 会 = 360 运 = 4320 世 = 129600 年；为天地一开辟之大周期。
+  quote_kind: restatement
   applicable_to: []
   caveats:
   - 本数为术数史观符号，不等于现代地质 / 天文学时间尺度
@@ -48,6 +49,7 @@ rules:
   statement: 一元 12 会以 12 地支配；子开寅生午盛申退戌闭亥归；现今天地正处于"午会"中后期。
   anchor: null
   quote: 一元 12 会以 12 地支配；子开寅生午盛申退戌闭亥归；现今天地正处于"午会"中后期。
+  quote_kind: restatement
   applicable_to: []
   caveats:
   - 邵雍立场视点为北宋，"午会"判断含历史时代背景
@@ -60,6 +62,7 @@ rules:
   statement: 以六十四卦配岁；卦气消息按月配中孚 / 复 / 临 / 泰……剥 / 坤；亦按经世配元会运世。
   anchor: null
   quote: 以六十四卦配岁；卦气消息按月配中孚 / 复 / 临 / 泰……剥 / 坤；亦按经世配元会运世。
+  quote_kind: restatement
   applicable_to: []
   caveats:
   - 与汉孟喜卦气、京房八宫卦气取义不同
@@ -73,6 +76,7 @@ rules:
   statement: 经世卦序以乾坤为始、咸恒为人事之序；与《周易》上下经卦序有结构相通。
   anchor: null
   quote: 经世卦序以乾坤为始、咸恒为人事之序；与《周易》上下经卦序有结构相通。
+  quote_kind: restatement
   applicable_to: []
   caveats:
   - —
@@ -85,6 +89,7 @@ rules:
   statement: 本书不涉个人卜筮取用神；元会运世为时间数理框架，非占断系统。
   anchor: null
   quote: 本书不涉个人卜筮取用神；元会运世为时间数理框架，非占断系统。
+  quote_kind: restatement
   applicable_to: []
   caveats:
   - 用户问占断 → 转 `meihua-yishu` 或 `zengshan-buyi`
@@ -143,6 +148,7 @@ rules:
   statement: 六十四卦两两为偶（反对）；非反即对；卦序之理本于此。
   anchor: null
   quote: 六十四卦两两为偶（反对）；非反即对；卦序之理本于此。
+  quote_kind: restatement
   applicable_to: []
   caveats:
   - —
@@ -273,6 +279,7 @@ rules:
   statement: 本书数理框架虽含史观，但邵雍未明言"国运"预测；后世以此预言朝代兴衰多属附会。
   anchor: null
   quote: 本书数理框架虽含史观，但邵雍未明言"国运"预测；后世以此预言朝代兴衰多属附会。
+  quote_kind: restatement
   applicable_to: []
   caveats:
   - 避免据本书推断现代国运 / 政治
@@ -286,6 +293,7 @@ rules:
   statement: 本书是宇宙史观数理，非个人命术；不可用本书直接推个人吉凶。
   anchor: null
   quote: 本书是宇宙史观数理，非个人命术；不可用本书直接推个人吉凶。
+  quote_kind: restatement
   applicable_to: []
   caveats:
   - 个人命术应转 `bazi/*` 或 `divination/{meihua-yishu, zengshan-buyi}`

@@ -108,6 +108,7 @@ rules:
   statement: 干支俱合相养则贵；乖违则凶。
   anchor: null
   quote: 干支俱合相养则贵；乖违则凶。
+  quote_kind: restatement
   applicable_to: []
   caveats:
   - 仅为命理传统判识
@@ -121,6 +122,7 @@ rules:
   statement: 功曹（寅）传送（申）+庚甲，主商旅、公吏。
   anchor: null
   quote: 功曹（寅）传送（申）+庚甲，主商旅、公吏。
+  quote_kind: restatement
   applicable_to: []
   caveats:
   - ⚠️ 古代职业断语
@@ -150,6 +152,7 @@ rules:
   statement: 六合(乙)+太陰(辛)+螣蛇(丁)+从魁(酉)等组合，主官事陰人之扰。
   anchor: null
   quote: 六合(乙)+太陰(辛)+螣蛇(丁)+从魁(酉)等组合，主官事陰人之扰。
+  quote_kind: restatement
   applicable_to: []
   caveats:
   - 古代官讼断语
@@ -268,6 +271,7 @@ rules:
   statement: 庚辛申酉金旺多见，原文主军人、孤女、兵刃等象。
   anchor: null
   quote: 庚辛申酉金旺多见，原文主军人、孤女、兵刃等象。
+  quote_kind: restatement
   applicable_to: []
   caveats:
   - ⚠️ 兵刃、孤女、伤亡类断语必须 reframe
@@ -281,6 +285,7 @@ rules:
   statement: 智仁清、礼义浊、信从四时；五常对应水木清、火金浊、土因时。
   anchor: null
   quote: 智仁清、礼义浊、信从四时；五常对应水木清、火金浊、土因时。
+  quote_kind: restatement
   applicable_to: []
   caveats:
   - 古代性情论
@@ -360,6 +365,7 @@ rules:
   statement: 卯(三光户、陰贼)+子(神后)相刑，主无礼德。
   anchor: null
   quote: 卯(三光户、陰贼)+子(神后)相刑，主无礼德。
+  quote_kind: restatement
   applicable_to: []
   caveats:
   - 古代道德论
@@ -373,6 +379,7 @@ rules:
   statement: 丑戌未三刑见者，主四肢病。
   anchor: null
   quote: 丑戌未三刑见者，主四肢病。
+  quote_kind: restatement
   applicable_to: []
   caveats:
   - ⚠️ 涉及疾病断语
@@ -386,6 +393,7 @@ rules:
   statement: 卯(陰贼)+辰(天罡)相加，主狱刑或腰脚之患。
   anchor: null
   quote: 卯(陰贼)+辰(天罡)相加，主狱刑或腰脚之患。
+  quote_kind: restatement
   applicable_to: []
   caveats:
   - ⚠️ 涉及刑讼/疾病断语
@@ -681,6 +689,7 @@ rules:
   statement: 兄弟干同辈，相生顺则和睦、相尅逆则交争。
   anchor: null
   quote: 兄弟干同辈，相生顺则和睦、相尅逆则交争。
+  quote_kind: restatement
   applicable_to: []
   caveats:
   - 古代宗法话语
@@ -710,6 +719,7 @@ rules:
   statement: 以胎元、月柱干支推父母年命；干同主父寿、音同主母寿。
   anchor: null
   quote: 以胎元、月柱干支推父母年命；干同主父寿、音同主母寿。
+  quote_kind: restatement
   applicable_to: []
   caveats:
   - ⚠️ 寿夭断语
@@ -723,6 +733,7 @@ rules:
   statement: 日柱大小定妻年龄、时柱变法定子嗣有无。
   anchor: null
   quote: 日柱大小定妻年龄、时柱变法定子嗣有无。
+  quote_kind: restatement
   applicable_to: []
   caveats:
   - ⚠️ 涉及婚配/子嗣断语
@@ -736,6 +747,7 @@ rules:
   statement: 命局夫旺则妻强，妻旺则夫强，按旺相之气。
   anchor: null
   quote: 命局夫旺则妻强，妻旺则夫强，按旺相之气。
+  quote_kind: restatement
   applicable_to: []
   caveats:
   - ⚠️ 涉及婚配论

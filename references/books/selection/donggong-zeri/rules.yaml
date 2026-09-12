@@ -126,6 +126,7 @@ rules:
   statement: 本书属于民间通书系；遇到《协纪辨方书》《星历考原》对神煞、宜忌、起例的不同说法时，本书只能作为旁证或民间异说，不能覆盖官方系统。
   anchor: null
   quote: 本书属于民间通书系；遇到《协纪辨方书》《星历考原》对神煞、宜忌、起例的不同说法时，本书只能作为旁证或民间异说，不能覆盖官方系统。
+  quote_kind: restatement
   applicable_to: []
   caveats:
   - 官方书未覆盖的民间用法，也要保留“通书异说”标注
@@ -150,6 +151,7 @@ rules:
   statement: 状态
   anchor: null
   quote: 状态
+  quote_kind: restatement
   applicable_to: []
   caveats: []
   school: null

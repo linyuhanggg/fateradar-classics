@@ -95,6 +95,7 @@ rules:
   statement: 当令者旺、所生者相、生我者休、克我者囚、我克者死。
   anchor: null
   quote: 当令者旺、所生者相、生我者休、克我者囚、我克者死。
+  quote_kind: restatement
   applicable_to: []
   caveats:
   - 粗框架
@@ -134,6 +135,7 @@ rules:
   statement: 刑冲合害优先级：合 > 冲 > 刑 > 害（经验总论，非绝对规则）。
   anchor: null
   quote: 刑冲合害优先级：合 > 冲 > 刑 > 害（经验总论，非绝对规则）。
+  quote_kind: restatement
   applicable_to: []
   caveats:
   - 优先级仅为一般参考
@@ -222,6 +224,7 @@ rules:
   statement: 正官七煞同现为混杂，需去留得宜（去官留煞或去煞留官）。
   anchor: null
   quote: 正官七煞同现为混杂，需去留得宜（去官留煞或去煞留官）。
+  quote_kind: restatement
   applicable_to:
   - key: shishen
     value: 正官
@@ -277,6 +280,7 @@ rules:
   statement: 天干五合化气需化神当令、有根、不被冲克方真化。
   anchor: null
   quote: 天干五合化气需化神当令、有根、不被冲克方真化。
+  quote_kind: restatement
   applicable_to: []
   caveats:
   - 化气真伪是大变量
@@ -303,6 +307,7 @@ rules:
   statement: 用神为命局所需之神；本书已有取用意识但框架尚不严格。
   anchor: null
   quote: 用神为命局所需之神；本书已有取用意识但框架尚不严格。
+  quote_kind: restatement
   applicable_to: []
   caveats:
   - 本书用神概念为格局雏形
@@ -396,6 +401,7 @@ rules:
   statement: 格局清纯有用为贵；格局破败无用为贱；身财两停为富；身弱财多为穷。
   anchor: null
   quote: 格局清纯有用为贵；格局破败无用为贱；身财两停为富；身弱财多为穷。
+  quote_kind: restatement
   applicable_to: []
   caveats:
   - 经验断语，非绝对规则
@@ -408,6 +414,7 @@ rules:
   statement: 神煞作事项辅证，不主格局；与十神/格局冲突时以格局为主。
   anchor: null
   quote: 神煞作事项辅证，不主格局；与十神/格局冲突时以格局为主。
+  quote_kind: restatement
   applicable_to:
   - key: shensha
     value: "*"
@@ -423,6 +430,7 @@ rules:
   statement: 造化元钥赋文总论命理哲学；五行配合为人命之钥。
   anchor: null
   quote: 造化元钥赋文总论命理哲学；五行配合为人命之钥。
+  quote_kind: restatement
   applicable_to: []
   caveats:
   - 赋文体裁，非具体规则
@@ -435,6 +443,7 @@ rules:
   statement: 刑冲的补充辨析：冲喜用为凶、冲忌神为吉；刑入命未必凶。
   anchor: null
   quote: 刑冲的补充辨析：冲喜用为凶、冲忌神为吉；刑入命未必凶。
+  quote_kind: restatement
   applicable_to: []
   caveats:
   - 补充卷一总论
@@ -480,6 +489,7 @@ rules:
   statement: 干支配脏腑（甲乙肝胆、丙丁心小肠、戊己脾胃、庚辛肺大肠、壬癸肾膀胱）；五行偏枯对应脏腑有体质倾向。
   anchor: null
   quote: 干支配脏腑（甲乙肝胆、丙丁心小肠、戊己脾胃、庚辛肺大肠、壬癸肾膀胱）；五行偏枯对应脏腑有体质倾向。
+  quote_kind: restatement
   applicable_to: []
   caveats:
   - ⚠️ 不作医学诊断
@@ -572,6 +582,7 @@ rules:
   statement: 年柱起官的古法；以年柱为起点取官。
   anchor: null
   quote: 年柱起官的古法；以年柱为起点取官。
+  quote_kind: restatement
   applicable_to: []
   caveats:
   - 古法以年为主的残留

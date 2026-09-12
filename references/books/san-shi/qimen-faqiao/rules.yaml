@@ -10,8 +10,9 @@ rules:
 - rule_id: QM-P26
   kind: doctrine
   statement: 直使加地丁为守门
-  anchor: null
+  anchor: {file: sources/excerpts/qimen-faqiao-chaibu-v1.md, start_line: 32, end_line: 32}
   quote: 直使加地丁为守门
+  quote_kind: verbatim
   applicable_to: []
   caveats: []
   school: null
@@ -21,8 +22,9 @@ rules:
 - rule_id: QM-P36
   kind: doctrine
   statement: 时干入墓，戊戌、壬辰、丙戌、癸未、丁丑、己丑也
-  anchor: null
+  anchor: {file: sources/excerpts/qimen-faqiao-chaibu-v1.md, start_line: 36, end_line: 36}
   quote: 时干入墓，戊戌、壬辰、丙戌、癸未、丁丑、己丑也
+  quote_kind: verbatim
   applicable_to: []
   caveats: []
   school: null

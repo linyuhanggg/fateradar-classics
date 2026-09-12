@@ -32,6 +32,10 @@ SYSTEMS = {
 SCRIPTS = {"traditional", "simplified"}
 KINDS = {"doctrine", "procedure"}
 BOOK_FIELDS = ("slug", "system", "title", "script", "fulltext", "fulltext_sha256")
+# `quote_kind` 是后加的**可选**字段：`verbatim`＝逐字原文摘录（必须带 anchor），
+# `restatement`＝编者按原文重述（anchor 可为 null）。加它的原因：实测 1,356 条规则里有 156 条的
+# `quote` 与 `statement` 逐字相同且 anchor 为 null，而其中只有 2 条能在 fulltext 里逐字找到——
+# 其余 154 条不是原句。不标出来，读者会把「重述」当「引文」。见 V15。
 RULE_FIELDS = (
     "rule_id",
     "kind",
@@ -464,6 +468,7 @@ def validate_book(
         statement = rule.get("statement")
         quote = rule.get("quote")
         kind = rule.get("kind")
+        anchor_here = rule.get("anchor")  # V11/V15 在「anchor 为 null 就 continue」之前要用它
         if not isinstance(rule_id, str) or not rule_id:
             reporter.add("V2", f"{loc}: 字段 rule_id 应为非空字符串", book=book_key)
             rule_id = f"<missing:{i}>"
@@ -498,22 +503,48 @@ def validate_book(
         if not quote.strip():
             reporter.add("V9", f"{loc}: quote 为空", rule_id=rule_id, book=book_key)
 
+
         if script and quote.strip():
             trad, simp = script_scores(quote)
-            if script == "traditional" and simp > trad and simp > 0:
-                reporter.warn(
-                    "V11",
-                    f"{loc}: quote 简体特征字 {simp} > 繁体 {trad}，与 book.script=traditional 不一致",
-                    rule_id=rule_id,
-                    book=book_key,
-                )
-            elif script == "simplified" and trad > simp and trad > 0:
-                reporter.warn(
-                    "V11",
-                    f"{loc}: quote 繁体特征字 {trad} > 简体 {simp}，与 book.script=simplified 不一致",
-                    rule_id=rule_id,
-                    book=book_key,
-                )
+            mismatched = (script == "traditional" and simp > trad and simp > 0) or (
+                script == "simplified" and trad > simp and trad > 0
+            )
+            a_file_ok = bool(
+                anchor_here
+                and isinstance(anchor_here, dict)
+                and isinstance(anchor_here.get("file"), str)
+                and anchor_here.get("start_line")
+                and isinstance(anchor_here.get("start_line"), int)
+            )
+            if mismatched:
+                # 逐字核对优先于特征字计数：quote 若与 anchor 所指源行逐字相同，
+                # 那么「繁简不一致」是**特征字表**的误报（它把 禄、余 这类字当成简体特征），
+                # 不是转写错误。实测 111 条 V11 里，27 条有 anchor 的**全部**逐字相同 →
+                # 另 84 条 anchor 为 null，本工具无从核对（既不能证明错，也不能证明对）。
+                verdict = "未核对（anchor 为 null，无从逐字比对）"
+                if anchor_here and a_file_ok:
+                    try:
+                        src_line = (root / anchor_here["file"]).read_text(encoding="utf-8").split("\n")[
+                            int(anchor_here["start_line"]) - 1
+                        ]
+                    except Exception:
+                        src_line = None
+                    if src_line is not None and WS_RE.sub("", quote) in WS_RE.sub("", src_line):
+                        verdict = "误报（quote 与源行逐字相同，是特征字表的偏差）"
+                if verdict.startswith("误报"):
+                    reporter.warn(
+                        "V11",
+                        f"{loc}: quote 与 book.script={script} 的特征字统计不一致，但**与 anchor 源行逐字相同** → 判为特征字表误报（{verdict}）",
+                        rule_id=rule_id,
+                        book=book_key,
+                    )
+                else:
+                    reporter.warn(
+                        "V11",
+                        f"{loc}: quote 简体特征字 {simp} / 繁体特征字 {trad}，与 book.script={script} 统计不一致；{verdict}",
+                        rule_id=rule_id,
+                        book=book_key,
+                    )
 
         validate_predicates(
             rule.get("applicable_to"),
@@ -556,6 +587,23 @@ def validate_book(
             if verified_at not in (None, ""):
                 reporter.add("V2", f"{loc}: verified=false 时 verified_at 应为 null", rule_id=rule_id, book=book_key)
 
+        # V15：quote 与 statement 逐字相同、且没有 anchor —— 这不是引文，是重述。
+
+        # 必须显式声明 quote_kind=restatement；声明了 verbatim 就必须给 anchor（引文要能落到行）。
+        qk = rule.get("quote_kind")
+        if isinstance(qk, str) and qk not in ("verbatim", "restatement"):
+            reporter.add("V15", f"{loc}: quote_kind 应为 verbatim|restatement，实际 {qk!r}", rule_id=rule_id, book=book_key)
+        if isinstance(statement, str) and isinstance(quote, str):
+            same = quote.strip() != "" and quote.strip() == statement.strip()
+            if same and anchor_here is None and qk != "restatement":
+                reporter.warn(
+                    "V15",
+                    f"{loc}: quote 与 statement 逐字相同且 anchor 为 null，应为 quote_kind=restatement（否则读者会把重述当引文）",
+                    rule_id=rule_id,
+                    book=book_key,
+                )
+            if qk == "verbatim" and anchor_here is None:
+                reporter.add("V15", f"{loc}: quote_kind=verbatim 必须给出 anchor", rule_id=rule_id, book=book_key)
         anchor = rule.get("anchor")
         if anchor is None:
             continue
