@@ -82,7 +82,11 @@ def validate(root: Path) -> dict:
             if not isinstance(rule.get("when"), dict) or not rule["when"]:
                 error("FIELDS", rel, rid, "when 必须说明适用范围")
             rescue = rule.get("rescue")
-            if isinstance(rescue, str) and rescue not in ("self", "unimplemented"):
+            # `none` 是第 29 批新增的取值：原文**根本没有**救应条款，本条没有可实现的救应。
+            # 与 `unimplemented`（原文有救应条款、引擎尚未实现）分开，是因为把前者写成后者会把
+            # 「无可实现」冒充成「待实现」，虚增未决清单。加入理由与逐条审计见
+            # docs/closeout/RESCUE-LABEL-AUDIT-20260912.md。
+            if isinstance(rescue, str) and rescue not in ("self", "unimplemented", "none"):
                 dependencies.append((str(rel), rid, rescue))
             sources = rule.get("sources")
             if not isinstance(sources, list) or not sources:

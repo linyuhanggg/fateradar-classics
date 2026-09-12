@@ -33,7 +33,7 @@
 | satisfy_when | 满足 |
 | fail_when | 不满足 |
 | unknown_when | 信息不足 |
-| rescue | `unimplemented`、本条自身 `self` 或真实救应规则 ID |
+| rescue | `self`（本条自身即救应条款）、`unimplemented`（原文有救应条款、引擎尚未实现）、`none`（原文没有救应条款，本条无可实现）、或真实救应规则 ID |
 | vernacular | 白话模板，必须能填入本盘位置 |
 | implementation_assumption | 原文未明说、实现需要的假设 |
 | verified | 当前全部 false；电子文本匹配、模型审查和测试不能代替人工影印核验 |

@@ -884,7 +884,7 @@
       "satisfy_when": "正印或偏印出现：只记录透干、本气、中气、余气",
       "fail_when": "原局天干藏干均无正印偏印",
       "unknown_when": "根深、身稍弱、秀气、贫穷未论；本气不是已经根深，不得输出成格",
-      "rescue": "unimplemented",
+      "rescue": "none",
       "vernacular": "印根只记透藏：{yin_positions}。本气中气余气不是已经根深，也不等于成格。",
       "implementation_assumption": "印计正印偏印。不把本气映射成根深，不把多见映射成贫穷。伤官旺见 ZPR-E-21。completion 仍为信息不足。",
       "verified": false
@@ -918,7 +918,7 @@
       "satisfy_when": "已记录得令得地得势分层，并标明与原文身强不是同一套",
       "fail_when": "无从记录日主",
       "unknown_when": "身强带比、身强七煞逢制、身强而财有根未逐步量化；不得把分层结果写成已经身强，不得输出成格",
-      "rescue": "unimplemented",
+      "rescue": "none",
       "vernacular": "本盘旺衰是得令得地得势分层。这与原文身强不是同一套，不是已经身强。",
       "implementation_assumption": "现行四层旺衰（得令/通根档位/党众）不覆盖成子平身强。不把偏强、极强、根深或党众得势写成已经身强。",
       "verified": false
@@ -951,7 +951,7 @@
       "satisfy_when": "伤官出现：只记录透干、本气、中气、余气",
       "fail_when": "原局天干藏干均无伤官",
       "unknown_when": "旺、身主弱未论；本气不是已经旺，不得输出成格",
-      "rescue": "unimplemented",
+      "rescue": "none",
       "vernacular": "伤官旺只记透藏：{shangguan_positions}。本气中气余气不是已经旺，也不等于成格。",
       "implementation_assumption": "不把月令本气映射成已经旺。身主弱见 ZPR-E-20，印根见 ZPR-E-19。completion 仍为信息不足。",
       "verified": false
@@ -1097,7 +1097,7 @@
       "satisfy_when": "月刃格已按原文阳刃成路记录透官煞、露财印、不见伤官",
       "fail_when": "不是月刃格",
       "unknown_when": "制刃力量未论；不见伤官不是已经成格，见伤官透干不是已经败格，不得输出成格",
-      "rescue": "unimplemented",
+      "rescue": "none",
       "vernacular": "阳刃成路只记透藏。本盘格局名仍是月刃格，不等于成格。",
       "implementation_assumption": "露财印按财与印都透干。不见伤官：无伤官为满足，只见藏干为信息不足，透干为不满足。不把月刃格改名为阳刃格。completion 仍为信息不足。",
       "verified": false
@@ -1134,7 +1134,7 @@
       "satisfy_when": "建禄格已记录透官逢财印、透财逢食伤、透煞遇制伏的透藏",
       "fail_when": "不是建禄格",
       "unknown_when": "另取用神未完成；透官逢财印不是已经成格，不得输出成格",
-      "rescue": "unimplemented",
+      "rescue": "none",
       "vernacular": "建禄月劫成路只记透藏。月令本身仍不可为用，不等于成格。",
       "implementation_assumption": "透官而逢财印按官透且财印都透。透财而逢食伤按财透且食神或伤官透。透煞遇制伏按七杀透且食神透。建禄格 status 仍为格局不清。completion 仍为信息不足。",
       "verified": false
@@ -1280,7 +1280,7 @@
       "satisfy_when": "建禄格已记录无财官、透煞印的透藏",
       "fail_when": "不是建禄格",
       "unknown_when": "另取用神未完成；无财官透煞印不是破格结论，不得输出破格",
-      "rescue": "unimplemented",
+      "rescue": "none",
       "vernacular": "建禄月劫败格只记透藏。透煞印出现不等于破格。",
       "implementation_assumption": "无财官按不见正财偏财且不见正官。透煞印按七杀与印都透干。官不含七杀，否则与透煞矛盾。建禄格 status 仍为格局不清。completion 仍为信息不足，不得输出破格。",
       "verified": false
@@ -1350,7 +1350,7 @@
       "satisfy_when": "已按原文两例记录丁生亥月支全卯未、己生申月藏庚透壬",
       "fail_when": "无从记录月令",
       "unknown_when": "变之善不善另见 ZPR-E-33；不失本格、纯杂另见 ZPR-E-34、ZPR-E-35；格局高低未论；化为印不是已经改格，不得输出成格",
-      "rescue": "unimplemented",
+      "rescue": "none",
       "vernacular": "用神变化只记原文例的透藏会支。化为印不是已经改格。",
       "implementation_assumption": "丁生亥月本盘按亥本气壬取正官格，与化为印分条，不覆盖成已经改格。支全卯未只记地支同时见卯未。己生申月透壬只记年日月时干除日干外见壬。不按寅藏甲丙戊重写取格。completion 仍为信息不足。",
       "verified": false
@@ -1427,7 +1427,7 @@
       "satisfy_when": "已按原文记录辛寅透丙又透甲、乙申透壬又透戊、癸寅透丙又透甲、丙寅会劫又透甲或壬、丙申逢壬又透戊",
       "fail_when": "无从记录月令",
       "unknown_when": "格局高低未论；原文格成正财、格不破不是本盘成格或破格结论，不得输出成格或破格",
-      "rescue": "unimplemented",
+      "rescue": "none",
       "vernacular": "变而不失本格只记原文并透。透甲兼格不是成格结论，格不破不是破格结论。",
       "implementation_assumption": "并透只记年日月时干除日干外同时见所列天干。丙寅会劫又要求地支见午戌。不把原文格成正财覆盖成本盘成格。不改 GE_NAME。completion 仍为信息不足。",
       "verified": false
