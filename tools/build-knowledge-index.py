@@ -6,12 +6,26 @@ These packs have no eight-arts page. The index is for retrieval, not fake charts
 from __future__ import annotations
 
 import json
+import subprocess
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 INV = ROOT / "references/inventory/library-inventory.json"
 PARA_DIR = ROOT / "references/inventory/paragraphs"
 OUT = ROOT / "references/inventory/knowledge-index.json"
+
+
+def source_revision() -> str:
+    """导出所用的古籍仓 commit。
+
+    与 `export-knowledge.py` 等导出脚本同一约定（`git rev-parse HEAD`）：产物必须能对回
+    具体版本，否则「内容导出与代码版本可对应」这一条不成立。此前本脚本不写该字段，
+    重新生成会**静默丢掉**已提交产物里的 `sourceRevision`，属于回退，故补上。
+    """
+    try:
+        return subprocess.check_output(["git", "rev-parse", "HEAD"], cwd=ROOT, text=True).strip()
+    except Exception:
+        return ""
 
 
 def main() -> None:
@@ -65,6 +79,7 @@ def main() -> None:
         )
     payload = {
         "schema_version": "fateradar-knowledge-index-v1",
+        "sourceRevision": source_revision(),
         "note": "风水/相法/择日/姓名等暂无对应页面。本索引供检索，不冒充已接入八术。原文样本可以尚未分类或注解；电子审读和白话状态按字段明示，不把检索样本当作审读完成。",
         "pack_count": len(packs),
         "packs": packs,
