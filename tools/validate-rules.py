@@ -596,9 +596,11 @@ def validate_book(
         if isinstance(statement, str) and isinstance(quote, str):
             same = quote.strip() != "" and quote.strip() == statement.strip()
             if same and anchor_here is None and qk != "restatement":
-                reporter.warn(
+                # 第 19 批起这是**错误**而非警告：156 条同类写法已逐条核实并标注，
+                # 新增规则再这么写就必须显式声明 restatement，否则读者会把重述当引文。
+                reporter.add(
                     "V15",
-                    f"{loc}: quote 与 statement 逐字相同且 anchor 为 null，应为 quote_kind=restatement（否则读者会把重述当引文）",
+                    f"{loc}: quote 与 statement 逐字相同且 anchor 为 null，必须声明 quote_kind=restatement（否则读者会把重述当引文）",
                     rule_id=rule_id,
                     book=book_key,
                 )

@@ -1,7 +1,13 @@
 #!/usr/bin/env python3
-"""Per-art anchor coverage for the six product arts.
+"""Per-art anchor coverage for the six product arts, plus the evidence kind of each rule's quote.
 
 coverage(art) = anchored_rules / total_rules
+
+另报 evidence 列（第 19 批加）：每条规则的 quote 是**逐字引文**还是**编者重述**——
+`verbatim`（带 anchor，quote 与源行逐字相同）、`restatement`（显式声明为重述，anchor 可为 null）、
+`empty`（没有 quote）。三列相加等于 total。加这一列的原因：实测 156 条规则的 quote 与 statement
+逐字相同且无 anchor，其中只有 2 条能在 fulltext 逐字找到；不分开报，读者会把重述当引文。
+
 fengshui / physiognomy / selection / taiyi are not product arts and are omitted.
 """
 
@@ -53,7 +59,10 @@ def main() -> int:
     args = parser.parse_args()
 
     tracked = ARTS + REFERENCE_ARTS
-    stats: dict[str, dict[str, int]] = {art: {"total": 0, "anchored": 0} for art in tracked}
+    stats: dict[str, dict[str, int]] = {
+        art: {"total": 0, "anchored": 0, "verbatim": 0, "restatement": 0, "no_quote": 0}
+        for art in tracked
+    }
     per_book: list[dict] = []
 
     for path in sorted((ROOT / "references/books").glob("*/*/rules.yaml")):
@@ -64,6 +73,13 @@ def main() -> int:
         rules = [r for r in (data.get("rules") or []) if isinstance(r, dict)]
         total = len(rules)
         anchored = sum(1 for r in rules if isinstance(r.get("anchor"), dict))
+        # 证据种类：空 quote / 显式重述 / 其余按逐字引文计（V15 保证「quote==statement 且无 anchor」
+        # 只能是 restatement，故其余情形不会把重述混进 verbatim）。
+        verbatim = sum(
+            1 for r in rules if (r.get("quote") or "").strip() and r.get("quote_kind") != "restatement"
+        )
+        restatement = sum(1 for r in rules if r.get("quote_kind") == "restatement")
+        no_quote = sum(1 for r in rules if not (r.get("quote") or "").strip())
         rec = {
             "book": f"{system}/{slug}",
             "art": art,
@@ -71,15 +87,28 @@ def main() -> int:
             "anchored": anchored,
             "coverage": (anchored / total * 100.0) if total else 0.0,
         }
+        rec["verbatim"] = verbatim
+        rec["restatement"] = restatement
+        rec["no_quote"] = no_quote
         per_book.append(rec)
         if art in stats:
             stats[art]["total"] += total
             stats[art]["anchored"] += anchored
+            stats[art]["verbatim"] += verbatim
+            stats[art]["restatement"] += restatement
+            stats[art]["no_quote"] += no_quote
 
     def pack(art: str) -> dict:
         t, a = stats[art]["total"], stats[art]["anchored"]
         cov = (a / t * 100.0) if t else 0.0
-        return {"total": t, "anchored": a, "coverage": round(cov, 2)}
+        return {
+            "total": t,
+            "anchored": a,
+            "coverage": round(cov, 2),
+            "quote_verbatim": stats[art]["verbatim"],
+            "quote_restatement": stats[art]["restatement"],
+            "quote_empty": stats[art]["no_quote"],
+        }
 
     arts_out = {art: pack(art) for art in ARTS}
     ref_out = {art: pack(art) for art in REFERENCE_ARTS}
@@ -99,14 +128,20 @@ def main() -> int:
         json.dump(payload, sys.stdout, ensure_ascii=False, indent=2)
         sys.stdout.write("\n")
     else:
-        print(f"{'art':8} {'total':>6} {'anchored':>8} {'coverage':>9}")
+        print(f"{'art':8} {'total':>6} {'anchored':>8} {'coverage':>9} {'引文':>6} {'重述':>6} {'无quote':>7}")
         for art in ARTS:
             d = arts_out[art]
-            print(f"{art:8} {d['total']:6d} {d['anchored']:8d} {d['coverage']:8.1f}%")
+            print(
+                f"{art:8} {d['total']:6d} {d['anchored']:8d} {d['coverage']:8.1f}%"
+                f" {d['quote_verbatim']:6d} {d['quote_restatement']:6d} {d['quote_empty']:7d}"
+            )
         print("reference (not gated)")
         for art in REFERENCE_ARTS:
             d = ref_out[art]
-            print(f"{art:8} {d['total']:6d} {d['anchored']:8d} {d['coverage']:8.1f}%")
+            print(
+                f"{art:8} {d['total']:6d} {d['anchored']:8d} {d['coverage']:8.1f}%"
+                f" {d['quote_verbatim']:6d} {d['quote_restatement']:6d} {d['quote_empty']:7d}"
+            )
         if args.fail_under is not None:
             print(f"threshold {args.fail_under:.1f}%")
 

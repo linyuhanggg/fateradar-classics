@@ -10,7 +10,7 @@ rules:
 - rule_id: LM
   kind: doctrine
   statement: 用户要求具体起课、断某一件事或把本书规则套入实际盘。
-  anchor: null
+  anchor: {file: sources/fulltext/san-shi/liuren-miben/fulltext.md, start_line: 3106, end_line: 3106}
   quote: 凡占以正時為主，或為日之德合鬼墓，或為辰之破害刑衝，傳課未成，吉凶先露，故曰先鋒門。
   applicable_to: []
   caveats:
@@ -22,7 +22,7 @@ rules:
 - rule_id: LIURENMIBEN-LM
   kind: doctrine
   statement: 查询本书某月将、天将、地支或八卦的传统类象；若用于实际盘，LM-R00 已通过。
-  anchor: null
+  anchor: {file: sources/fulltext/san-shi/liuren-miben/fulltext.md, start_line: 84, end_line: 84}
   quote: 神後屬子，其數九，味咸，女虛危三宿三位。
   applicable_to: []
   caveats:
@@ -34,7 +34,7 @@ rules:
 - rule_id: LIURENMIBEN-003
   kind: doctrine
   statement: 用户明确查询本书卷三六旬表，或 adapter 已按同一来源 profile 输出对应神煞。
-  anchor: null
+  anchor: {file: sources/fulltext/san-shi/liuren-miben/fulltext.md, start_line: 362, end_line: 362}
   quote: 甲子旬，子儀神，卯丁神，戌亥天中，壬日亥不空，醜奇神，酉閉口，未五亡神。
   applicable_to: []
   caveats:
@@ -46,7 +46,7 @@ rules:
 - rule_id: LIURENMIBEN-004
   kind: doctrine
   statement: 问题明确为射覆/传统物类推演，且 LM-R00 已通过。
-  anchor: null
+  anchor: {file: sources/fulltext/san-shi/liuren-miben/fulltext.md, start_line: 381, end_line: 381}
   quote: 剛日先看日上神，更兼發用細詳明。柔日支上先須視，用神兼取兩邊迎。
   applicable_to: []
   caveats:
@@ -122,7 +122,7 @@ rules:
 - rule_id: LIURENMIBEN-009
   kind: doctrine
   statement: 已有天将、所乘神、旺衰与生克事实。
-  anchor: null
+  anchor: {file: sources/fulltext/san-shi/liuren-miben/fulltext.md, start_line: 2269, end_line: 2269}
   quote: 日鬼加臨辰兩課，門中官事乃相榮。
   applicable_to: []
   caveats:
@@ -217,7 +217,7 @@ rules:
 - rule_id: LIURENMIBEN-015
   kind: doctrine
   statement: adapter 已输出合、鬼、墓、刑冲破害及旺衰。
-  anchor: null
+  anchor: {file: sources/fulltext/san-shi/liuren-miben/fulltext.md, start_line: 3132, end_line: 3132}
   quote: 凡合與德入傳，百事皆吉，即會凶神，亦主凶中和合。
   applicable_to: []
   caveats:
@@ -232,6 +232,7 @@ rules:
   statement: 用户问题属于婚姻、疾病、出行、行人、谒人、诉讼、田产、宅舍、商贾、盗失、逃亡、假借等具体门类。
   anchor: null
   quote: '> 原 CTP 标题附注：李批：亦可作注解入各類下'
+  quote_kind: restatement
   applicable_to: []
   caveats:
   - 卷十二、十六、十七可能重复同一事项，须分别保留卷次和条件
@@ -259,7 +260,7 @@ rules:
 - rule_id: LIURENMIBEN-018
   kind: doctrine
   statement: 确定性 adapter 已给 `lesson_type` 和生成路径，用户要查本书如何解释该课名。
-  anchor: null
+  anchor: {file: sources/fulltext/san-shi/liuren-miben/fulltext.md, start_line: 3013, end_line: 3013}
   quote: 始入者，初起而犯上者也。凡四課中惟一下賊上者，名始入。若有一上克，複有下賊，舍克取賊發用，乃謂之重審。
   applicable_to: []
   caveats:
@@ -289,6 +290,7 @@ rules:
   statement: 输出任何本书引文、作者归属、影印页码或“古籍原文”判断。
   anchor: null
   quote: '> 清·金正音 辑录。CTP URN：`ctp:wb348173`。本文以 CTP 维基区《六壬秘本》5 个 wiki chapter 为底，剥除 CTP 页面外壳与 markdown 表格列号，按正文卷次「卷之一—卷之十七」重组。原典正文未做改写、未做简繁转换、未做断句调整；CTP 三处章节切分乱码已据 NCL-06572 影印第 72、179、234 页补回，并在文末「影印补字记录」中登记。'
+  quote_kind: restatement
   applicable_to: []
   caveats:
   - 目录十七卷与馆藏二十卷元数据必须同时保留

@@ -231,7 +231,7 @@ rules:
 - rule_id: ZPR-12
   kind: doctrine
   statement: 行运不只是增减强弱，还会成格、变格、救格、破格。
-  anchor: null
+  anchor: {file: sources/fulltext/bazi/ziping-zhenquan/fulltext.md, start_line: 783, end_line: 783}
   quote: 論運與看命，無二法也。看命以四柱干支，配月令之喜忌。而取運則又以運之干支，配八字之喜忌。故運中每運行一字，即必以此一字，配命中八字而統觀之，爲喜爲忌，吉凶判然矣。
   applicable_to:
   - key: shishen
@@ -266,7 +266,7 @@ rules:
 - rule_id: ZPR-14
   kind: doctrine
   statement: 四吉神各有成格条件、破格条件和取运路径，不能用同一模板套判。
-  anchor: null
+  anchor: {file: sources/fulltext/bazi/ziping-zhenquan/fulltext.md, start_line: 927, end_line: 927}
   quote: 官以尅身，雖與【校：「與」原作「六」，據中州本改】七煞有別，終受彼制，何以切忌刑沖破害，尊之若是乎？豈知人生天地間【校：「間」字據中州本補】，必無矯焉自尊之理，雖貴極天子，亦有天祖臨之。正官者，分所當尊，如在國有君，在家有親，刑沖破害，以下犯上，烏乎可乎？
   applicable_to:
   - key: shishen

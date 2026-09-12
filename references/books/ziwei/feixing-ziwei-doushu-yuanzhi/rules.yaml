@@ -12,6 +12,7 @@ rules:
   statement: 调用本 pack 时须称其为《華山陳希夷先生飛星紫微斗數原旨 / 斗數觀測錄》民国观测注释层，不得把它冒称为《斗数管见》，也不得当作古法紫微一线原典。
   anchor: null
   quote: 華山陳希夷先生飛星紫微斗數原旨
+  quote_kind: restatement
   applicable_to: []
   caveats:
   - 作者题署和正文书名存在层次差异
@@ -23,7 +24,7 @@ rules:
 - rule_id: FEIXINGZIWEI-FZ
   kind: doctrine
   statement: 本书“观测之道”把天气变化、人事起伏、富贵剥复视为可观察对象；用于分析时只能作为对既有盘面事实的旁证和解释框架，不能替代排盘、历法、事实层。
-  anchor: null
+  anchor: {file: sources/fulltext/ziwei/feixing-ziwei-doushu-yuanzhi/fulltext.md, start_line: 134, end_line: 134}
   quote: 觀測之道。
   applicable_to: []
   caveats:
@@ -35,7 +36,7 @@ rules:
 - rule_id: FEIXINGZIWEI-003
   kind: doctrine
   statement: 本书称斗数“先布出身命垣”，说明一切占课和观察须先有身命/盘面定位；没有命身宫、十二宫、星曜、限运等事实，不应使用本 pack 下判断。
-  anchor: null
+  anchor: {file: sources/fulltext/ziwei/feixing-ziwei-doushu-yuanzhi/fulltext.md, start_line: 1082, end_line: 1082}
   quote: 故先布出身命垣。
   applicable_to: []
   caveats: []
@@ -206,7 +207,7 @@ rules:
 - rule_id: FEIXINGZIWEI-012
   kind: doctrine
   statement: 本书观察村镇气脉时先看村头庙宇，庙宇坍塌/重新等被作为村中人事兴衰的旁证，并提到《阳宅爱众篇》诸庙宇神煞表。
-  anchor: null
+  anchor: {file: sources/fulltext/ziwei/feixing-ziwei-doushu-yuanzhi/fulltext.md, start_line: 3803, end_line: 3803}
   quote: 諸廟宇神煞表最靈不過。
   applicable_to: []
   caveats:
