@@ -37,6 +37,30 @@ source_urls:
 #   - 1 条 fulltext.md：文件在仓内，但路径与 sha256 均已过期，已在上方更正。
 #   - 1 条 0808 册影印：文件在仓内且 sha256 完全一致，只是路径不同，已在上方更正。
 # 本块只记录实测事实，不改动上述原始声明条目；缺件条目保留原样以便追溯当初的取得记录。
+# 2026-09-12 新增取得（不在上方原始 17 条声明之内）：《總鈐》所需的四庫影印。
+# 该包此前的注解自述阻塞原因为「残格仍无法定列，须总钤影印页」；本件即为该影印。
+acquired_after_audit:
+  - path: "sources/facsimile/other/daliuren-daquan/liuren-daquan-juan1-siku-archive-06054168.pdf"
+    role: "siku_scan_witness_for_zongqian"
+    source_url: "https://archive.org/download/06054168.cn/06054168.cn.pdf"
+    source_item: "archive.org 06054168.cn（题《六壬大全·卷一》）"
+    bytes: 3458653
+    sha256: "7790f774ec92e5c1fe7bf728d7e9daf0706bf8388987ff65e4cc543b49c2df5f"
+    pages: 112
+    native_scan_resolution: "1914x2718 @600ppi（内嵌图像）"
+    verified_by_image_read:
+      - "p1 四庫全書蓝面（子部）；p2「欽定四庫全書 子部 六壬大全卷一」并带标准校上署名块（詳校官中書臣瞿照、靈臺郎臣倪廷梅覆勘、總校官降調編修臣倉聖脉、校對官中書臣羅國俊、謄錄監生臣王宗奈）"
+      - "《總鈐》= PDF 第 15 页章节标题（同页另有「九返吟法」在其前）"
+      - "格线指纹独立复核：p14 无长格线（正文页），p15–p26 连续有长横格线 —— 有框表页自 p15 起"
+      - "六甲日=p16、六乙日=p17、六丙日=p18、六丁日=p19（已读四表）"
+      - "p16 与 p19 版式相同：中央标题格「六X日」、每侧 4 列×3 行格子带、行标在带顶（右带 申酉戌亥／左带 巳辰卯寅，两表一致）"
+    caveats:
+      - "阁未定：所查页未见木記/印記标明閣名，故记为「四庫本，閣未定」；**不得**据此计入与仓内文淵閣 0808 册相互独立的第二 witness。"
+      - "卷次不符：元数据称 12 卷 10 册，而扫描自带提要作「六壬大全三十三卷」，故前次审计的叶码（卷一 葉 4a–8a）不可迁移，一律以本件自身页码为准。"
+      - "内嵌文本层为 OCR 噪声（实测乱码），不得引用；一切内容以图像为准。"
+      - "666 条不得建模为「格数 × 行数」：每格含多项三合。"
+    promotion_status: "not_promoted — 本件到目前只读了一页章节标目与四张表的版式，逐格转写未完成；未改任何注解状态、未新增 page-review。"
+
 local_files_audit:
   audited_on: "2026-09-12"
   method: "sha256 of every candidate file under sources/ and references/ (988 files), matched against each declared sha256"
