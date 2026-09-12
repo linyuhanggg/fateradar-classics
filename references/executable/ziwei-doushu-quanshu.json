@@ -146,7 +146,7 @@
       "satisfy_when": "武曲守命或财帛且日月分居两邻；或天府守未财帛、太阳午太阴申来夹",
       "fail_when": "中心不在该源限定宫，或日月同居一个邻宫、并未分夹两侧",
       "unknown_when": "相关星宫未提供",
-      "rescue": "unimplemented",
+      "rescue": "none",
       "vernacular": "{locations}。本盘{status}这条来源定义的结构。{conditions}。{limitations}",
       "implementation_assumption": "分别执行L1572武曲中心与L4822天府未财帛中心；状态只核结构，原句加吉/财官效力不算已全部核定。",
       "verified": false
@@ -190,7 +190,7 @@
       "satisfy_when": "紫微、左辅、右弼同在本命命宫",
       "fail_when": "三者不同时守命；辅弼三方或夹不代替同宫",
       "unknown_when": "紫微辅弼或命宫未提供",
-      "rescue": "unimplemented",
+      "rescue": "none",
       "vernacular": "{locations}。本盘{status}这条来源定义的结构。{conditions}。{limitations}",
       "implementation_assumption": "只核L1595基本同守结构；相武阴来会为原文增强条件，不冒充已据此获得官位。",
       "verified": false
@@ -271,7 +271,7 @@
       "satisfy_when": "太阴在亥宫守命",
       "fail_when": "太阴不在亥命宫",
       "unknown_when": "太阴或命宫信息未提供",
-      "rescue": "unimplemented",
+      "rescue": "none",
       "vernacular": "{locations}。本盘{status}这条来源定义的结构。{conditions}。{limitations}",
       "implementation_assumption": "本条核L1589位置格名。L4400附加子生夜生涉及作用口径，未把位置符合宣称为该附注全部合局。",
       "verified": false
@@ -308,7 +308,7 @@
       "satisfy_when": "太阴在子宫守田宅",
       "fail_when": "太阴不在子田宅，命宫子太阴也不代替",
       "unknown_when": "太阴或田宅宫信息未提供",
-      "rescue": "unimplemented",
+      "rescue": "none",
       "vernacular": "{locations}。本盘{status}这条来源定义的结构。{conditions}。{limitations}",
       "implementation_assumption": "按L1591双重位置限定，只记录结构，不推资产或财产数量。",
       "verified": false
@@ -345,7 +345,7 @@
       "satisfy_when": "太阳是午命宫唯一十四主星",
       "fail_when": "太阳不在午命宫或午命宫另有十四主星",
       "unknown_when": "太阳或命宫主星数据未提供",
-      "rescue": "unimplemented",
+      "rescue": "none",
       "vernacular": "{locations}。本盘{status}这条来源定义的结构。{conditions}。{limitations}",
       "implementation_assumption": "单守限定十四主星，辅星杂曜不等于第二主星；不把无其他所有星当单守。",
       "verified": false
@@ -463,7 +463,7 @@
       "satisfy_when": "武曲在卯宫守命",
       "fail_when": "武曲不在卯命，其他武曲得地不属此源格名",
       "unknown_when": "武曲或命宫信息未提供",
-      "rescue": "unimplemented",
+      "rescue": "none",
       "vernacular": "{locations}。本盘{status}这条来源定义的结构。{conditions}。{limitations}",
       "implementation_assumption": "保留原文余不是，不能用任意武曲庙旺宫代替卯命；可满足结构但不推贵贱。",
       "verified": false
@@ -507,7 +507,7 @@
       "satisfy_when": "贪狼火星同守本命命宫且二星亮度均为庙或旺",
       "fail_when": "两星不同时在命宫，或任一星已知亮度非庙旺",
       "unknown_when": "同命成立但所需任一亮度字段缺失",
-      "rescue": "unimplemented",
+      "rescue": "none",
       "vernacular": "{locations}。本盘{status}这条来源定义的结构。{conditions}。{limitations}",
       "implementation_assumption": "只核L1617同命庙旺结构；不与L1384三合火贵合并。返回三方四正实际已见的羊陀铃地空地劫化忌供后续读，不把未发现已知干扰当三方无凶已满足。",
       "verified": false

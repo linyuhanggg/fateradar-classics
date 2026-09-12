@@ -37,7 +37,7 @@
       "satisfy_when": "已记录本盘上升点宫度，并标明算法为现代黄道与东地平交点",
       "fail_when": "无独立的不满足分支：本条记录有效输入上的取法或来源，不把缺少输入当作反例",
       "unknown_when": "无出生地经纬度，无法取上升点；原文卯上立命与上升点不是同一套逐步程序：只分条，不覆盖",
-      "rescue": "unimplemented",
+      "rescue": "none",
       "vernacular": "本盘命宫取上升点{sign}。这是现代天文位置，不是已经按原文卯上立命。",
       "implementation_assumption": "七政用 Astronomy Engine 真黄经。庙旺落陷是位置分类，不是个人优劣评分。四余含近似。",
       "verified": false
@@ -106,7 +106,7 @@
       "satisfy_when": "已记录本盘太阳、太阴的黄道宫度与宿名",
       "fail_when": "无独立的不满足分支：本条记录有效输入上的取法或来源，不把缺少输入当作反例",
       "unknown_when": "出生时刻无法起七政；原文旺处举白羊金牛与娄胃宿度例，本盘用真黄经落宫：不得把落宫写成已经非凡",
-      "rescue": "unimplemented",
+      "rescue": "none",
       "vernacular": "太阳在{sun_palace}{sun_mansion}，太阴在{moon_palace}{moon_mansion}。这是位置，不是已经非凡。",
       "implementation_assumption": "日月黄经取 Astronomy Engine。宿名按距星岁差近似，接近宿界时需要更精细对照。",
       "verified": false

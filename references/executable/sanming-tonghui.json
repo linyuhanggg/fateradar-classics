@@ -106,7 +106,7 @@
       "satisfy_when": "年支或日支三合局对应的沐浴支出现在四柱地支：只记录落柱名称桃花",
       "fail_when": "四柱地支未见该局沐浴支",
       "unknown_when": "本书按语谓须天干纳音于地同类方是；生旺死绝、日時与水命未论完：不得输出品行或破败断语",
-      "rescue": "unimplemented",
+      "rescue": "none",
       "vernacular": "{pillar}见桃花。这是落柱标签，不是品行结论。",
       "implementation_assumption": "现行表用三合沐浴支，标签写作桃花，对应本书咸池。未按纳音同类筛选。",
       "verified": false
@@ -172,7 +172,7 @@
       "satisfy_when": "年支三合局对应的中位支出现在四柱地支：只记录落柱名称将星",
       "fail_when": "四柱地支未见该局中位支",
       "unknown_when": "理愚歌云将星若用亡神临为国栋梁臣：亡神夹贵未论完，不得输出出将入相",
-      "rescue": "unimplemented",
+      "rescue": "none",
       "vernacular": "{pillar}见将星。这是落柱标签，不是公卿结论。",
       "implementation_assumption": "现行表只按年支三合中位取将星。未按亡神、夹贵或库墓正印改写结论。",
       "verified": false
@@ -371,7 +371,7 @@
       "satisfy_when": "已按本盘年支三合标出天喜落柱，并标明与原文四季天喜不是同一套",
       "fail_when": "四柱地支未见本盘年支三合天喜支",
       "unknown_when": "原文春戌夏丑秋辰冬未按月令四季；本盘按年支三合：不是同一套逐步程序，不得输出欢欣断语",
-      "rescue": "unimplemented",
+      "rescue": "none",
       "vernacular": "{pillar}见天喜。这是本取法的落柱标签，不是已经欢欣，也不是已经按四季取天喜。",
       "implementation_assumption": "现行表按年支三合取天喜（寅午戌未、申子辰丑、巳酉丑戌、亥卯未辰）。未按春戌夏丑秋辰冬未覆盖。",
       "verified": false
@@ -404,7 +404,7 @@
       "satisfy_when": "日干禄前二辰出现在四柱地支：只记录落柱名称金舆",
       "fail_when": "四柱地支未见该干禄前二辰",
       "unknown_when": "本书又以马前二辰为金轝：与禄前二辰不是同一套，官贵夹拥未论完，不得输出妻妾阴福或作赘",
-      "rescue": "unimplemented",
+      "rescue": "none",
       "vernacular": "{pillar}见金舆。这是落柱标签，不是妻妾阴福结论。",
       "implementation_assumption": "现行表按日干禄前二辰取金舆。未按驿马前二辰覆盖，也未按官贵夹拥改写。",
       "verified": false
@@ -503,7 +503,7 @@
       "satisfy_when": "日干临官禄支出现在四柱地支：只记录落柱名称禄神",
       "fail_when": "四柱地支未见该干禄支",
       "unknown_when": "福星禄破禄截路空亡、建禄格贫富未论完：不得输出爵禄已享",
-      "rescue": "unimplemented",
+      "rescue": "none",
       "vernacular": "{pillar}见禄神。这是落柱标签，不是爵禄结论。",
       "implementation_assumption": "现行表按日干临官支取禄神。未按纳音破禄或建禄月令格改写。",
       "verified": false
@@ -603,7 +603,7 @@
       "satisfy_when": "已按本盘通行文昌表标出落柱，并标明与原文甲蛇乙猪不是同一套",
       "fail_when": "四柱地支未见本盘通行文昌支",
       "unknown_when": "原文甲巳乙亥丙戌丁辰戊申己午庚寅辛未壬卯癸丑；本盘甲巳乙午丙申丁酉戊申己酉庚亥辛子壬寅癸卯：不是同一套逐步程序，不得输出科名断语",
-      "rescue": "unimplemented",
+      "rescue": "none",
       "vernacular": "{pillar}见文昌。这是本取法的落柱标签，不是已经科名，也不是已经按甲蛇乙猪取文昌。",
       "implementation_assumption": "现行表按日干通行文昌支取。未按甲人蛇口乙猪头覆盖。",
       "verified": false
@@ -636,7 +636,7 @@
       "satisfy_when": "已按本盘日干长生支标出学堂落柱，并标明与原文纳音学堂不是同一套",
       "fail_when": "四柱地支未见本盘日干长生支",
       "unknown_when": "原文学堂要纳音同类长生；词馆要纳音同类临官；官贵学堂未论完：不得输出学业或词馆断语",
-      "rescue": "unimplemented",
+      "rescue": "none",
       "vernacular": "{pillar}见学堂。这是本取法的落柱标签，不是已经学业，也不是已经按纳音学堂取。",
       "implementation_assumption": "现行表按日干长生支取学堂。未按纳音长生同类覆盖。",
       "verified": false

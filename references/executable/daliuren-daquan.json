@@ -109,7 +109,7 @@
       "satisfy_when": "比用后仍不能唯一，已从地盘前行归本家只数沿途克数，最深者取用；深浅同则孟、仲、复等按实际分支取用",
       "fail_when": "没有进入涉害或本次选用指南孟仲季法，不能称执行本条历数",
       "unknown_when": "源内版本不同不得合成一传；当次记录采用的来源和实际候选，不将深浅数值当准确率",
-      "rescue": "unimplemented",
+      "rescue": "none",
       "vernacular": "本次按大全历数，把每个候选沿途遇到的地支与寄干列出；起点与本家不重复计，深浅相同才继续比较宫层。",
       "implementation_assumption": "L9593–9599庚子午二戌一、丁卯丑一亥五支持排除起点与本家重复计。L9603/9607/9611分别说明深浅相同后孟、仲、复等。指南孟仲季另由LRZY-E-01引用，不用本条冒充另一派。取用步骤保留最终课名与具体分支的不同层次。",
       "verified": false,
@@ -153,7 +153,7 @@
       "satisfy_when": "天地盘同位，已按有克取克、无克阳取干上阴取支上，并按递刑、自刑互取、再自刑取冲写出三传",
       "fail_when": "不是伏吟课",
       "unknown_when": "原文另有神杀不动、后不为灾：旺衰与所问未论，不得输出事情已经停住或已经无灾",
-      "rescue": "unimplemented",
+      "rescue": "none",
       "vernacular": "本盘伏吟。这是天地盘同位后的取传，不是事情已经停住。",
       "implementation_assumption": "伏吟以月将加时差为零判定。中末按地支三刑，自刑则日辰互取，再自刑取冲。",
       "verified": false
@@ -196,7 +196,7 @@
       "satisfy_when": "天地盘对冲，有克仍按贼克取传；无克按井栏取日支驿马为初传、支上中传、干上末传",
       "fail_when": "不是返吟课",
       "unknown_when": "井栏与有克分支已分开，但旺衰未论：不得输出事情已经反复",
-      "rescue": "unimplemented",
+      "rescue": "none",
       "vernacular": "本盘返吟。这是天地盘对冲后的取传，不是事情已经反复。",
       "implementation_assumption": "返吟以月将加时差为六判定。无克井栏取日支三合驿马，不固定取干上。",
       "verified": false
@@ -285,7 +285,7 @@
       "satisfy_when": "贼克候选多于一个，已按与日干阴阳相比取出唯一比神为初传",
       "fail_when": "不是比用课",
       "unknown_when": "原文另有占人不出邑里、占贼皆在近处：远近未论，不得输出事情已经近处",
-      "rescue": "unimplemented",
+      "rescue": "none",
       "vernacular": "本盘比用。这是多个贼克候选后的阴阳比取，不是事情已经近处。",
       "implementation_assumption": "比用只在唯一比神时成立；俱比俱不比改走涉害，不在本条投票。",
       "verified": false
@@ -328,7 +328,7 @@
       "satisfy_when": "四课齐全且无克无遥，已按阳取酉上、阴取酉下取初传，中末按刚日先辰后日、柔日先日后辰",
       "fail_when": "不是昴星课",
       "unknown_when": "原文另有必主失脱、昴星蛇虎定凶危：旺衰与所问未论，不得输出已经失脱或已经凶危",
-      "rescue": "unimplemented",
+      "rescue": "none",
       "vernacular": "本盘昴星。这是无克无遥后的取传，不是事情已经失脱。",
       "implementation_assumption": "昴星在别责（三课）之后；四课去重为四且无克无遥才走本条。",
       "verified": false
@@ -371,7 +371,7 @@
       "satisfy_when": "去重后三课且无克无遥，刚日取干合上神、柔日取支前三合为初传，中末寄干上",
       "fail_when": "不是别责课",
       "unknown_when": "原文另有借途宜外助、否则败怯：外助未论，不得输出事情已经外助",
-      "rescue": "unimplemented",
+      "rescue": "none",
       "vernacular": "本盘别责。这是三课不全后的取传，不是事情已经外助。",
       "implementation_assumption": "支前三合按地支顺数四位实现。中末皆取干上。",
       "verified": false

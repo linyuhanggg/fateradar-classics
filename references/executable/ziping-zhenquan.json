@@ -38,7 +38,7 @@
       "satisfy_when": "已取月令藏干，并记录是否透于年/月/时干",
       "fail_when": "无独立的不满足分支：本条记录有效输入上的取法或来源，不把缺少输入当作反例",
       "unknown_when": "无月令；月令藏干表缺该支",
-      "rescue": "unimplemented",
+      "rescue": "none",
       "vernacular": "本盘月令{month_zhi}，{from}。这只是取格入口，还不是成格。",
       "implementation_assumption": "透干优先，否则用本气。建禄月劫须另取，见 ZPR-E-03。",
       "verified": false
@@ -611,7 +611,7 @@
       "satisfy_when": "财与印都透干",
       "fail_when": "财或印整组未见",
       "unknown_when": "财或印只见藏干",
-      "rescue": "unimplemented",
+      "rescue": "none",
       "vernacular": "官逢财印是{cai_yin_verdict}。财印出现不等于位置妥贴，也不等于成格。",
       "implementation_assumption": "财计正财偏财，印计正印偏印。力量与破害会合未算完，completion 仍为信息不足。",
       "verified": false
@@ -849,7 +849,7 @@
       "satisfy_when": "已按藏干本气中气余气记录通根档位，并标明与阳干逢库有根、阴干逢库无用不是同一套",
       "fail_when": "四柱无从记录日主藏干",
       "unknown_when": "长生禄旺有力、阴长生不甚有力未逐步量化；墓库须冲开是现行实现，原文以投库必冲为俗书之谬：不得覆盖藏干档位，不得把根深写成已经身强",
-      "rescue": "unimplemented",
+      "rescue": "none",
       "vernacular": "本盘通根按藏干{roles}分档。这与阳干逢库有根、阴干逢库无用不是同一套，不是已经身强。",
       "implementation_assumption": "现行得地按本气根深、中气根浅、余气根微，墓库非本气加注须待冲开。不按壬逢辰、丙坐戌改成有根，也不按阴干逢库删根。身强未论。",
       "verified": false
@@ -986,7 +986,7 @@
       "satisfy_when": "正财或偏财出现：只记录透干、本气、中气、余气",
       "fail_when": "原局天干藏干均无财星",
       "unknown_when": "有根、身强、贵格未论；本气不是已经有根，不得输出成格",
-      "rescue": "unimplemented",
+      "rescue": "none",
       "vernacular": "财有根只记透藏：{cai_positions}。本气中气余气不是已经有根，也不等于成格。",
       "implementation_assumption": "财计正财偏财。不把本气映射成有根。身强见 ZPR-E-20。completion 仍为信息不足。",
       "verified": false
@@ -1022,7 +1022,7 @@
       "satisfy_when": "财印透干已记录是否相并或有隔，并标明位置妥贴未论",
       "fail_when": "无从记录天干",
       "unknown_when": "位置妥贴、两不相尅、干头两清未逐步量化；有隔不是已经位置妥贴，相并不是已经两不相能，不得输出成格",
-      "rescue": "unimplemented",
+      "rescue": "none",
       "vernacular": "财印位置只记透干相并或有隔。有隔不是已经位置妥贴，也不等于成格。",
       "implementation_assumption": "柱距按年-月-日-时直线，年时不算相邻。隔以它干只记柱距，不把有隔覆盖成两不相碍，也不把相并覆盖成两不相能。completion 仍为信息不足。",
       "verified": false
@@ -1059,7 +1059,7 @@
       "satisfy_when": "食神格已记录生财、带煞无财、弃食就煞透印的透藏",
       "fail_when": "不是食神格",
       "unknown_when": "弃食、身强未论；透财不是已经成格，不得输出成格",
-      "rescue": "unimplemented",
+      "rescue": "none",
       "vernacular": "食神格成路只记透藏。生财出现不等于成格。",
       "implementation_assumption": "弃食不是透干本身。带煞无财按七杀透干且原局无财记录。completion 仍为信息不足。",
       "verified": false
@@ -1172,7 +1172,7 @@
       "satisfy_when": "印格已记录逢煞、官印双全、食伤泄气、财透的透藏",
       "fail_when": "不是印格",
       "unknown_when": "印轻、身印两旺、根轻未论；官印双全不是已经成格，不得输出成格",
-      "rescue": "unimplemented",
+      "rescue": "none",
       "vernacular": "印格成路只记透藏。印轻不是透煞本身，也不等于成格。",
       "implementation_assumption": "官印双全按正官与印都透干。食伤泄气按食神或伤官透干。印轻、身旺、根轻不映射成透藏档位。completion 仍为信息不足。",
       "verified": false
@@ -1208,7 +1208,7 @@
       "satisfy_when": "财格已记录财生官、财逢食生的透藏",
       "fail_when": "不是财格",
       "unknown_when": "官旺、身强带比未论；透官不是已经官旺，不得输出成格",
-      "rescue": "unimplemented",
+      "rescue": "none",
       "vernacular": "财格成路只记透藏。官旺不是透官本身，也不等于成格。",
       "implementation_assumption": "财生官按正官透干。财逢食生按食神透干。身强带比见 ZPR-E-20，位置见 ZPR-E-23。completion 仍为信息不足。",
       "verified": false
@@ -1468,7 +1468,7 @@
       "satisfy_when": "已按原文记录辛寅甲丙、戊申庚壬、癸未乙己、壬未乙己、甲辰戊壬、癸午丁己并透",
       "fail_when": "无从记录月令",
       "unknown_when": "两相得、两不相谋未论吉凶；格局高低未论；并透不是已经论纯或已经论杂，不得输出成格或破格",
-      "rescue": "unimplemented",
+      "rescue": "none",
       "vernacular": "用神纯杂只记原文并透。甲丙并透不是已经论纯，乙己并透不是已经论杂。",
       "implementation_assumption": "并透只记年日月时干除日干外同时见所列天干。不把纯覆盖成吉，不把杂覆盖成凶。不改 GE_NAME。completion 仍为信息不足。",
       "verified": false

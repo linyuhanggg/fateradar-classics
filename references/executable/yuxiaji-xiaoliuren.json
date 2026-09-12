@@ -38,7 +38,7 @@
       "satisfy_when": "农历月、日与时辰齐全时，已按「大安上起正月、月上起日、日上起时」逐步数出月宫、日宫、时宫，起点算第一位，且三宫取数可逐步复算",
       "fail_when": "无独立不满足分支：给定月、日、时之后本节只给这一种数法，不是可被反例推翻的条件；引擎偏离该数法属于实现缺陷，不为凑三态虚构反例",
       "unknown_when": "缺农历月或日、或时辰不是十二地支之一时不能起课，越界月日不改成正月、初一或子时；闰月本节未给起例，另按 YXJ-E-06 记为信息不足",
-      "rescue": "unimplemented",
+      "rescue": "none",
       "vernacular": "农历{lunar_month}月{lunar_day}日{hour_branch}时：月宫{month_palace}、日宫{day_palace}、时宫{hour_palace}。这是本节数法的逐步结果，不是吉凶结论。",
       "implementation_assumption": "起点算第一位；六神按大安、留连、速喜、赤口、小吉、空亡循环。",
       "verified": false
@@ -75,7 +75,7 @@
       "satisfy_when": "本盘恰为农历三月初五日辰时，逐步数为月宫速喜、日宫大安、时宫小吉，与原文用例逐宫一致",
       "fail_when": "本盘同为农历三月初五日辰时，但三宫与原文用例不一致：这是引擎与来源冲突，须按缺陷处理，不是可用合法输入构造的反例",
       "unknown_when": "闰三月本节未给起例，不能当作与用例同一组输入；其他月日时只按同一数法另算，不套用该用例结论",
-      "rescue": "unimplemented",
+      "rescue": "none",
       "vernacular": "原书用例如农历三月初五日辰时，逐步为月宫速喜、日宫大安、时宫小吉。本盘{lunar_month}月{lunar_day}日{hour_branch}时逐步为月宫{month_palace}、日宫{day_palace}、时宫{hour_palace}。",
       "implementation_assumption": "用例只固定三月初五日辰时这一组输入；其余月日时按同一数法另算，不外推用例的时宫。",
       "verified": false
@@ -109,7 +109,7 @@
       "satisfy_when": "推占落点等于时宫；月宫只给日宫提供起算位置，日宫只给时宫提供起算位置",
       "fail_when": "把月宫或日宫当成推占落点：落点与时宫不同却以月宫或日宫定性",
       "unknown_when": "三宫未数全或时辰无法识别时不能确定落点；时宫与月宫同名时不能只靠宫名分辨落点，须回读数法过程",
-      "rescue": "unimplemented",
+      "rescue": "none",
       "vernacular": "本次落点取时宫{hour_palace}；月宫{month_palace}与日宫{day_palace}是数法中的起算位置，不是三个并列结论。",
       "implementation_assumption": "原文「就以小吉推占」的落点是时宫，未把月、日、时三宫当三件独立预测，也不按吉类数量投票。",
       "verified": false
@@ -220,7 +220,7 @@
       "satisfy_when": "解释层只给宫名象义、数法过程与吉类或凶类标签计数，不把三宫吉类数量当成功率或多数票，断曰歌诀不重编为本盘新断语",
       "fail_when": "把三宫吉类数量相加当成结论、用多数票保证结局，或用断曰歌诀替代本盘事实",
       "unknown_when": "三宫合参与救应关系本节未给，信息不足，不执行；赤口断曰「赤日主口舌」「更須訪咒詛」有疑字，不改字也不据此下断",
-      "rescue": "unimplemented",
+      "rescue": "none",
       "vernacular": "三宫中{good_count}宫用「吉」类标签、{evil_count}宫用「凶」类标签；它们是位置分类计数，不是三次独立预测，也不能换成成功率。",
       "implementation_assumption": "断曰歌诀属原书断语，本节不重编为产品断语；吉凶是宫名通行分类，不是原文给出的组合胜负。",
       "verified": false
@@ -252,7 +252,7 @@
       "satisfy_when": "本盘农历月不是闰月：本节未规定闰月，故该实现口径不适用",
       "fail_when": "无独立不满足分支：本节没有闰月起例，无法用原文反例判定对错",
       "unknown_when": "本盘为闰月：本节未给闰月起例，原文信息不足；现行实现按所闰之月同数，属实现口径，不得写成古文规定",
-      "rescue": "unimplemented",
+      "rescue": "none",
       "vernacular": "本盘农历月为{lunar_month}：本节未给闰月起例。现行按所闰之月同数取宫，是实现口径，不是原文规定。",
       "implementation_assumption": "闰月同月取数是实现口径，不可写成《玉匣记》规定。",
       "verified": false
