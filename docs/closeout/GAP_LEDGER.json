@@ -4663,5 +4663,30 @@
       "QTB-M-02-12 规则存在性待裁决",
       "月令续段完整声明未做（缺 1,125 行）"
     ]
+  },
+  "progress_round36": {
+    "id": "全库处理去向报告（方案完成条件第 1、5 条）",
+    "what": "按方案「全部现有资料都有处理去向」生成逐书去向表（注解/审读/draft/全文底本/影印/可执行规则/救应标签，脚本实测非手抄），并给出 draft 2,835 条逐书定位与处置、明确排除与缺本清单、案例三类分开统计（原书可复算 3,568 / 独立已知盘 140 / 合成边界）。",
+    "evidence": "classics/docs/closeout/FULL-LIBRARY-DISPOSITION-20260912.md；数字来源 references/annotations/**（79 文件 62,839 条）、sources/fulltext（54）、sources/facsimile（41 PDF）、references/executable（15 文件 258 条）。",
+    "counts": {
+      "annotation_total": 62839,
+      "source_reviewed": 60004,
+      "draft": 2835,
+      "draft_books": 15,
+      "executable_rules": 258,
+      "rescue": {
+        "self": 116,
+        "unimplemented": 32,
+        "none": 105,
+        "cross_ref": 5
+      },
+      "source_cases": 3568,
+      "independent_known_charts": 140
+    },
+    "not_claimed": [
+      "不等于人工影印核验",
+      "不等于预测准确率",
+      "draft 余量未解决，只是逐项可定位"
+    ]
   }
 }
