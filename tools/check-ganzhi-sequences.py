@@ -28,6 +28,11 @@ PAIR = rf"[{GAN}][{ZHI}]"
 # 只认**长度 ≥3** 的连续干支串：两字相邻在散文里极常见（「庚子 壬子」不是序列），
 # 三字以上才基本可以肯定是「行标列/六十甲子环/逐日表」这类序列语境。
 RUN = re.compile(rf"(?:{PAIR}(?:[\s·・、,，|｜]*)){{3,}}")
+
+# 日柱标目（如「甲己日」「辛日」「丁壬」「戊癸日」）与行标同为大字两字格，混在串里会让步长失真。
+# 它们以「…日」结尾或以「干支＋干支」连写出现，故在判据前先剔除这两类：
+DAY_LABEL = re.compile(rf"(?:{PAIR}|[{GAN}{ZHI}]{{1,2}})日")
+PAIR_GLUED = re.compile(rf"{PAIR}{PAIR}")
 PAIR_RE = re.compile(PAIR)
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -49,6 +54,10 @@ def check_file(path: Path):
     problems = []
     total = 0
     for start, items in sequences(text):
+        # 该串一旦落在「…日」标目或「干支干支」连写里，就整串跳过（不是行标序列）。
+        seg = text[start : start + 80]
+        if DAY_LABEL.search(seg) or PAIR_GLUED.search(seg):
+            continue
         idx = [INDEX[i] for i in items]
         total += 1
         # 合规判据：步长恒定（升或降均可）。六十甲子为 +1，十五日/三元分节为 +15，旬首为 +10；
