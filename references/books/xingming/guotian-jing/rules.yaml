@@ -163,8 +163,8 @@ rules:
 - rule_id: GUOTIANJING-013
   kind: doctrine
   statement: 天经 / 地纬 / 天马 / 地驿 / 卦气 / 三元禄 / 职元 / 局主 共 8 星，构成命盘第二层主星。
-  anchor: {file: sources/fulltext/xingming/guotian-jing/fulltext.md, start_line: 758, end_line: 760}
-  quote: 壬甲从干乙癸坤，
+  anchor: {file: sources/fulltext/xingming/guotian-jing/fulltext.md, start_line: 87, end_line: 93}
+  quote: "天经、地纬、天马、地驿、职元、局主、卦气、"
   applicable_to: []
   caveats:
   - 通用 1
@@ -211,8 +211,8 @@ rules:
 - rule_id: GUOTIANJING-017
   kind: doctrine
   statement: 空亡 / 孤虚 / 孤辰 / 寡宿 共 4 煞。
-  anchor: {file: sources/fulltext/xingming/guotian-jing/fulltext.md, start_line: 988, end_line: 994}
-  quote: 牛头大忌，又谓之破碎。
+  anchor: {file: sources/fulltext/xingming/guotian-jing/fulltext.md, start_line: 117, end_line: 120}
+  quote: "空亡、孤虚、孤辰、寡宿、"
   applicable_to: []
   caveats:
   - 通用 1+3+5（**婚姻硬判断 safety-redlines
@@ -224,8 +224,8 @@ rules:
 - rule_id: GUOTIANJING-018
   kind: doctrine
   statement: 三刑 / 六害 / 劫杀 / 亡神 / 天罗（戌亥）/ 地网（辰巳）共 6 煞群；多与"狱讼""博戏亡家""伤害"语相关。
-  anchor: {file: sources/fulltext/xingming/guotian-jing/fulltext.md, start_line: 1019, end_line: 1024}
-  quote: 金空则鸣火空发，
+  anchor: {file: sources/fulltext/xingming/guotian-jing/fulltext.md, start_line: 121, end_line: 126}
+  quote: "三刑、六害、劫杀、亡神、天罗、地网、"
   applicable_to: []
   caveats:
   - 通用 1+3+4（**狱讼 / 死亡 / 兵下等硬断 safety-redlines**）
@@ -236,8 +236,8 @@ rules:
 - rule_id: GUOTIANJING-019
   kind: doctrine
   statement: 五行长生例 + 天干化曜星例 + 天干吉凶星例；用于推干合长生 + 化曜。
-  anchor: {file: sources/fulltext/xingming/guotian-jing/fulltext.md, start_line: 1134, end_line: 1137}
-  quote: 巳酉丑人马在亥，
+  anchor: {file: sources/fulltext/xingming/guotian-jing/fulltext.md, start_line: 132, end_line: 134}
+  quote: "五行长生例、天干化曜星例、天干吉凶星例、"
   applicable_to: []
   caveats:
   - 通用 1
