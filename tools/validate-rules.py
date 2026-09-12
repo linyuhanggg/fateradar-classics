@@ -606,6 +606,17 @@ def validate_book(
                 )
             if qk == "verbatim" and anchor_here is None:
                 reporter.add("V15", f"{loc}: quote_kind=verbatim 必须给出 anchor", rule_id=rule_id, book=book_key)
+            if not same and not (quote.strip() == "" ) and anchor_here is None and qk != "restatement":
+                # quote 与 statement 不同、又不是重述、又没有 anchor：这是「自称引文但落不到行」。
+                # 第 21 批发现 3 条这样的记录（两批改动叠加漏掉），它会让「引文」列虚高、
+                # 并让读者以为这条引文有出处。要么补 anchor（quote 能在 fulltext 逐字找到），
+                # 要么标 restatement。
+                reporter.add(
+                    "V15",
+                    f"{loc}: quote 与 statement 不同却既无 anchor 又未声明 restatement —— 自称引文但落不到行",
+                    rule_id=rule_id,
+                    book=book_key,
+                )
             if qk == "restatement" and isinstance(anchor_here, dict) and not same:
                 # quote 与 statement 不同、又给了 anchor：这是引文，不是重述。
                 # 实测有 4 条规则被两批改动叠出这个矛盾（先标重述、后被补上 anchor），
