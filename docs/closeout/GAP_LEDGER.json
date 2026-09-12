@@ -4507,5 +4507,17 @@
       "why": "八术之一的小六壬此前在 executable 定义里为 0 条：其来源《玉匣记》雜占篇「李淳風六壬時課」整本按择日归入知识库，未产出定义——这是范围与实现映射问题，不是引擎缺算法。pack13 把该节写成 6 条真实定义（YXJ-E-01–06），故真实分母由 252 增至 258；历史 252 不改判。"
     },
     "per_rule_level_note": "本文件的 rules[].level 仍是旧快照（level1=164 / level2=88），落后于当前接线状态。以产品仓 docs/implementation/art-verdict-judgment-gap-matrix.json（由代码与测试断言生成）为准。"
+  },
+  "progress_round29": {
+    "id": "ZPR-E-06",
+    "what": "把「财印为辅」按原文算出来，于是该条的满足分支启用；此前它是产品仓 252 条绑定里唯一一个 satisfy gap。",
+    "source": "ziping-zhenquan.json ZPR-E-06 的 satisfy_when 原写「当前实现不输出满足……才可另行启用本条满足分支」，本批按这个门禁启用，并同步改写 satisfy_when / unknown_when / implementation_assumption。",
+    "evidence": "原文 L1234 自带命例「戊申、甲子、庚午、丁丑，藏癸露丁，戊甲爲輔，官又得祿」＝1968-12-26 02:00 上海（由产品仓 scripts/art-verdict-find-chart.ts 按四柱反查，引擎自己的历法给出的四柱就是这四个字）。",
+    "measured": {
+      "satisfy_gap_before": 1,
+      "satisfy_gap_after": 0,
+      "guan_alone_unreachable_scan": "1930–2010 三个冬月共 3,961 张金水伤官盘，原文「若孤官無輔」一支 0 例——月支亥必藏甲（财）、丑必藏己（印），只剩子月且四支限子酉，而庚日酉时的时干按五鼠遁为乙（财），一透即 cai=true。条件照原文写出并逐盘可读，但无真实反例，故不伪造夹具。"
+    },
+    "not_done": "L1234「若冬金用官，而又化傷爲財，則尤爲極秀極貴」需合化，本引擎未算合化，仍在范围外；`verified` 保持 false。"
   }
 }
