@@ -124,8 +124,9 @@ rules:
 - rule_id: YZS-R010
   kind: doctrine
   statement: 安门专主福元旺合吉星，同时要避直冲尖射、砂水斜割、恶石、神庙等乘杀入门，并须慎选月日。
-  anchor: {file: sources/fulltext/fengshui/yangzhai-shishu/fulltext.md, start_line: 1227, end_line: 1227}
+  anchor: null
   quote: 論開門修造門第六
+  quote_kind: restatement
   applicable_to: []
   caveats: []
   school: null
@@ -188,8 +189,9 @@ rules:
 - rule_id: YZS-R015
   kind: doctrine
   statement: 修造择日线中，书中明确先起命前五神，再进入九宫建宅、行年建宅等；必须走择日 adapter。
-  anchor: {file: sources/fulltext/fengshui/yangzhai-shishu/fulltext.md, start_line: 2197, end_line: 2197}
+  anchor: null
   quote: ===論選擇第九
+  quote_kind: restatement
   applicable_to: []
   caveats: []
   school: null

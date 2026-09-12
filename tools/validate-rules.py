@@ -657,9 +657,18 @@ def validate_book(
             )
         score = correspondence(statement, quote)
         if score < 0.15:
+            # 低对应度分两种，判据不同、处置不同，所以这里把区别写在警告里：
+            #   ① quote 本身不是断辞（标题行/归属行/目录路径/行号）→ 客观问题，quote 字段用错了；
+            #   ② quote 是正常原文，只是 statement 是**现代概括**（把原文几行合成一句判据）——
+            #      字符重叠天然低，不算缺陷。
+            # 实测：第 20 批给 240 条规则补 anchor 后，210 条 V14 里 20 条属①、其余属②；
+            # ①已按 V13 判据处置（摘锚 + quote_kind: restatement）。
+            shape = "quote 形态可疑（疑似标题/归属/目录行）" if (
+                len(quote.strip()) <= 12 and not re.search(r"[。！？；：，、]", quote)
+            ) or quote.strip().startswith(">") else "quote 是正常原文，低分来自 statement 的概括性"
             reporter.warn(
                 "V14",
-                f"{loc}: statement/quote 对应度 {score:.3f} < 0.15",
+                f"{loc}: statement/quote 对应度 {score:.3f} < 0.15（{shape}）",
                 rule_id=rule_id,
                 book=book_key,
             )

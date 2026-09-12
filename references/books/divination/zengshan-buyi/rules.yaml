@@ -182,8 +182,9 @@ rules:
 - rule_id: ZENGSHANBUYI-012
   kind: doctrine
   statement: 月令当令的本气五行为旺，月令所生五行为相，其余先记作休囚候选；四时标签须与日辰、空破、动变和生克合参。
-  anchor: {file: sources/fulltext/divination/zengshan-buyi/fulltext.md, start_line: 367, end_line: 367}
+  anchor: null
   quote: 楚江李坦我平鑑定
+  quote_kind: restatement
   applicable_to: []
   caveats:
   - 只裁定月令季节带，不单独形成候选综合旺衰、成败、吉凶或应期结论
@@ -206,8 +207,9 @@ rules:
 - rule_id: ZENGSHANBUYI-014
   kind: doctrine
   statement: 日辰为占断之最大旺衰主宰；可生扶可克破，可冲实空爻、合住动爻。
-  anchor: {file: sources/fulltext/divination/zengshan-buyi/fulltext.md, start_line: 367, end_line: 367}
+  anchor: null
   quote: 楚江李坦我平鑑定
+  quote_kind: restatement
   applicable_to: []
   caveats:
   - 日辰之权最大
@@ -325,8 +327,9 @@ rules:
 - rule_id: ZR-07
   kind: doctrine
   statement: 子丑、寅亥、卯戌、辰酉、巳申、午未六合；合则成事、合则停、合住忌神则解凶。
-  anchor: {file: sources/fulltext/divination/zengshan-buyi/fulltext.md, start_line: 367, end_line: 367}
+  anchor: null
   quote: 楚江李坦我平鑑定
+  quote_kind: restatement
   applicable_to: []
   caveats:
   - 合住用神有时反不利（事不动）
@@ -337,8 +340,9 @@ rules:
 - rule_id: ZENGSHANBUYI-ZR-07
   kind: doctrine
   statement: 子午、丑未、寅申、卯酉、辰戌、巳亥六冲；冲散事、冲实空、冲开合。
-  anchor: {file: sources/fulltext/divination/zengshan-buyi/fulltext.md, start_line: 367, end_line: 367}
+  anchor: null
   quote: 楚江李坦我平鑑定
+  quote_kind: restatement
   applicable_to: []
   caveats:
   - 六冲卦不一定凶，看用神状态
@@ -379,8 +383,9 @@ rules:
 - rule_id: ZR-08
   kind: doctrine
   statement: 动爻变出之爻有回头生 / 克 / 比合 / 墓 / 绝；其中入墓主收藏停滞、入绝主断绝。
-  anchor: {file: sources/fulltext/divination/zengshan-buyi/fulltext.md, start_line: 367, end_line: 367}
+  anchor: null
   quote: 楚江李坦我平鑑定
+  quote_kind: restatement
   applicable_to: []
   caveats:
   - —
