@@ -42,5 +42,10 @@ jobs:
       - run: python tools/export-reading-notes.py
       - run: python tools/test-export-reading-notes.py
       - run: python tools/test-validate-gates.py
+      - run: python tools/test-check-ganzhi-sequences.py
+      # 步长筛查：与「已登记待核」集合对账（现有 3 条全部指向奇门 p281 第 6 列的「巳/卯」，
+      # 已在 ocr-batch-0280-0298.md 的 doubt_281 登记，需原生读图复读一次才能结案）。
+      # 四柱列举类假警已由判据排除并有测试；集合一变即红。
+      - run: python tools/check-ganzhi-registered.py -v
       - run: python tools/coverage-report.py --fail-under 54
       - run: python tools/predicate-report.py --max-wildcard 15 --check-open-values --check-art-keys
