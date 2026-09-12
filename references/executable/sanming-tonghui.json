@@ -38,7 +38,7 @@
       "satisfy_when": "日干或年干对应的贵人支出现在四柱地支：只记录落柱名称",
       "fail_when": "四柱地支未见该干的贵人支",
       "unknown_when": "阳贵阴贵、昼夜分法、入庙驳杂未论完；本书已评歌诀泥而不通：不得输出吉神断语",
-      "rescue": "unimplemented",
+      "rescue": "self",
       "vernacular": "{pillar}见天乙贵人。这是落柱标签，不是贵人已经到来，也不能单独断定事件。",
       "implementation_assumption": "现行表用甲戊庚见丑未等通行歌诀查表，与本书所评泥而不通并存。未按冬夏至切换阴阳贵。",
       "verified": false
@@ -537,7 +537,7 @@
       "satisfy_when": "月支对应的天德干或支出现在该柱：只记录落柱名称天德贵人",
       "fail_when": "该柱干支未见该月天德",
       "unknown_when": "月将相扶、伤破不成德合、临日主无险未论完：不得输出无险或科甲断语",
-      "rescue": "unimplemented",
+      "rescue": "self",
       "vernacular": "{pillar}见天德贵人。这是落柱标签，不是无险结论。",
       "implementation_assumption": "现行表按月支取天德（正月丁、二月申、三月壬等），柱干或柱支命中即标。未按月将或伤破改写。",
       "verified": false
@@ -570,7 +570,7 @@
       "satisfy_when": "月支三合局对应的月德干出现在该柱天干：只记录落柱名称月德贵人",
       "fail_when": "该柱天干未见该月月德干",
       "unknown_when": "德合与伤破、临日主无险、将星名登相府未论完：不得输出福寿或相府断语",
-      "rescue": "unimplemented",
+      "rescue": "self",
       "vernacular": "{pillar}见月德贵人。这是落柱标签，不是福寿结论。",
       "implementation_assumption": "现行表按月支三合取月德干（寅午戌丙、申子辰壬、巳酉丑庚、亥卯未甲）。未按合神或伤破改写。",
       "verified": false
