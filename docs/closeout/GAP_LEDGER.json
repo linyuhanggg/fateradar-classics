@@ -4519,5 +4519,23 @@
       "guan_alone_unreachable_scan": "1930–2010 三个冬月共 3,961 张金水伤官盘，原文「若孤官無輔」一支 0 例——月支亥必藏甲（财）、丑必藏己（印），只剩子月且四支限子酉，而庚日酉时的时干按五鼠遁为乙（财），一透即 cai=true。条件照原文写出并逐盘可读，但无真实反例，故不伪造夹具。"
     },
     "not_done": "L1234「若冬金用官，而又化傷爲財，則尤爲極秀極貴」需合化，本引擎未算合化，仍在范围外；`verified` 保持 false。"
+  },
+  "progress_round30": {
+    "id": "SMTH-E-13 / SMTH-E-08",
+    "what": "神煞救应由 3 条扩到 5 条：羊刃（SMTH-E-13）四条件全可判→满足可达，改标 self；劫煞（SMTH-E-08）只建条件层，同句合取项「包裏」原文未界定→结论封顶信息不足、永不给满足，仍记 unimplemented。",
+    "source": "references/executable/sanming-tonghui.json SMTH-E-13 / SMTH-E-08 的 rescue、unknown_when、implementation_assumption 三字段本次同步改写。",
+    "evidence": "产品仓 src/lib/engine/bazi/shensha-rescue.ts；3,060 张盘实测：E-13 满足 100／信息不足 606／不满足 2354；E-08 满足 0（设计结果）／信息不足 509／不满足 2551。",
+    "rescue_census_after": {
+      "none": 106,
+      "unimplemented": 97,
+      "self": 50,
+      "cross_ref": 5,
+      "total": 258
+    },
+    "not_claimed": [
+      "不是人工影印核验",
+      "不是预测准确率",
+      "E-08 的「包裏」判据仍缺，原文不给即不补"
+    ]
   }
 }
