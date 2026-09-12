@@ -334,8 +334,8 @@ rules:
 - rule_id: SHENXIANGQUA-SR-04
   kind: doctrine
   statement: 口分仰月 / 吹火 / 樱桃 / 鲇鱼 / 覆船 等；唇红齿白为相之贵征。
-  anchor: {file: sources/fulltext/physiognomy/shenxiang-quanbian/fulltext.md, start_line: 2282, end_line: 2283}
-  quote: 針者，絕子，貧寒。」上有黑子者，多子。下有黑子者多女，
+  anchor: {file: sources/fulltext/physiognomy/shenxiang-quanbian/fulltext.md, start_line: 173, end_line: 175}
+  quote: 口為出納官，脣紅齒白，兩脣齊豐，人中深長，仰月灣弓，四字口方，牛龍虎口，兩脣不反不昂，不掀不尖，此出納官成也。或豬狗羊口覆船，鯰魚鯽魚，鼠食羊餐，
   applicable_to: []
   caveats:
   - 通用 1+6
@@ -346,8 +346,8 @@ rules:
 - rule_id: SHENXIANGQUA-026
   kind: doctrine
   statement: 耳分垂肩 / 贴脑 / 棋子 / 鼠耳 / 猪耳 等；轮廓分明、贴脑、垂珠为佳。
-  anchor: {file: sources/fulltext/physiognomy/shenxiang-quanbian/fulltext.md, start_line: 2396, end_line: 2397}
-  quote: 音》欲清。《口德》欲端。《口脣》欲厚。
+  anchor: {file: sources/fulltext/physiognomy/shenxiang-quanbian/fulltext.md, start_line: 2361, end_line: 2372}
+  quote: "###豬耳無廓有輪耳雖厚，或前或後或垂珠。縱然富貴成何濟，晚景多兇災害生。###低反耳耳低廓反又輪開，年幼刑孤且損財。應有家財也消耗，他年恐死沒人埋。###垂肩耳耳厚廓豐珠橐肩，過眉潤澤色明鮮。頭圓額潤形容異，九五之尊奪尚賢。###貼腦耳兩耳貼腦輪廓堅，壓眉壓眼是高賢。六親昆玉皆豪貴，百世流芳樂自然。"
   applicable_to: []
   caveats:
   - 通用 1+6（**"鼠耳""猪耳"贬义喻象不输出**）
@@ -478,8 +478,8 @@ rules:
 - rule_id: SHENXIANGQUA-036
   kind: doctrine
   statement: 原书列相富 / 相贵 / 相贵中贱 / 相贫贱 / 相蹇难。
-  anchor: {file: sources/fulltext/physiognomy/shenxiang-quanbian/fulltext.md, start_line: 3045, end_line: 3047}
-  quote: 「頭面耳鼻口腹」六者，反常而不得其正也。
+  anchor: {file: sources/fulltext/physiognomy/shenxiang-quanbian/fulltext.md, start_line: 2682, end_line: 2684}
+  quote: 相惡　相名標　相蹇難　相忠信慈孝　相愚僻凶暴　相形帶殺　相疾病　觀人八相法　相富　相貴　相貧賤　相孤苦　相壽　相夭　相分七字法　五行歌　五行所生五臟所出　五行相應　五行相生歌　五行相剋歌　五行比和相應　相五長　相五
   applicable_to: []
   caveats:
   - 通用 1+3+4（**禁用于具体个人富贵贫贱判断**
@@ -491,8 +491,8 @@ rules:
 - rule_id: SHENXIANGQUA-037
   kind: doctrine
   statement: 原书列相寿 / 相夭 / 相孤苦 / 相疾病。
-  anchor: {file: sources/fulltext/physiognomy/shenxiang-quanbian/fulltext.md, start_line: 3085, end_line: 3087}
-  quote: 方，耳雖小堅且圓，額雖小平且正，聲雖小宮且商，面
+  anchor: {file: sources/fulltext/physiognomy/shenxiang-quanbian/fulltext.md, start_line: 2682, end_line: 2683}
+  quote: 相惡　相名標　相蹇難　相忠信慈孝　相愚僻凶暴　相形帶殺　相疾病　觀人八相法　相富　相貴　相貧賤　相孤苦　相壽　相夭　相分七字法　五行歌　五行所生
   applicable_to: []
   caveats:
   - 通用 1+3+4
@@ -504,8 +504,8 @@ rules:
 - rule_id: SHENXIANGQUA-038
   kind: doctrine
   statement: 原书列相坐 / 相卧 / 相行篇 / 相行论 / 论卧 / 论食。
-  anchor: {file: sources/fulltext/physiognomy/shenxiang-quanbian/fulltext.md, start_line: 3126, end_line: 3127}
-  quote: 來到底貧。鰥寡天羅赤色多，更看兩角旋成螺，語
+  anchor: {file: sources/fulltext/physiognomy/shenxiang-quanbian/fulltext.md, start_line: 2681, end_line: 2682}
+  quote: 神相全編五 〈 相行論　相行篇　相坐　論臥　相臥　論食　相德　相善相惡　相名標　相蹇難　相忠信慈孝　相愚僻凶暴　相形帶殺　相疾病　觀人八相
   applicable_to: []
   caveats:
   - 通用 1+5（**不接受真人录像 / 监控影像**）
