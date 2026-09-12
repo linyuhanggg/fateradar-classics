@@ -5,8 +5,8 @@
 ## 当前提交
 
 - origin/main 古籍 `4cb96e3` / 产品 `48f68a8`（未合）
-- 古籍 `dsh/full-library-classics` **`3ff348e`**
-- 产品 `dsh/full-library-product` **`c3a798d`**
+- 古籍 `dsh/full-library-classics` **`61f7645`**
+- 产品 `dsh/full-library-product` **`660e648`**
 - 工作树：`/Users/yuhanglin/fateradar-goal-20260912/{classics,product}`
 - 禁止：`/Users/sync/code/fateradar-classics`、`/Users/sync/code/cosmic-fortune-lab`
 
