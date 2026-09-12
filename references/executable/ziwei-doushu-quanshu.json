@@ -58,7 +58,7 @@
       "satisfy_when": "本命盘已按斗数年干列出化禄、化权、化科、化忌的星名与落宫",
       "fail_when": "无独立的不满足分支：本条记录有效输入上的取法或来源，不把缺少输入当作反例",
       "unknown_when": "无斗数年干，无法安四化；节气年干与斗数年干不同：只记录差异，不另断一层四化",
-      "rescue": "unimplemented",
+      "rescue": "none",
       "vernacular": "斗数年干{doushu_year_gan}，本盘{sihua_list}。{source_comparison}这是按所用年干表的落宫记录；化禄不是得财结论，化忌不是祸福结论。",
       "implementation_assumption": "本命四化用现行 iztro 按斗数年干安星。甲乙丙丁戊己庚辛癸的四星与本电子底本一致；壬年原文“壬梁紫府武”取天府化科，现行表取左辅化科，正文必须逐干明确并列，不能声称全部同表，也不把天府另安入本盘。节气四柱另栏对照，不覆盖斗数安星。",
       "verified": false
@@ -227,7 +227,7 @@
       "satisfy_when": "太阳在卯宫并守命宫或官禄宫",
       "fail_when": "太阳不在卯，或太阳虽在卯却为其他宫名",
       "unknown_when": "太阳或命宫宫名未提供",
-      "rescue": "unimplemented",
+      "rescue": "none",
       "vernacular": "{locations}。本盘{status}这条来源定义的结构。{conditions}。{limitations}",
       "implementation_assumption": "地支和宫名同时核，原文两种主题宫分别记录，不把出生卯时当落卯。",
       "verified": false

@@ -84,7 +84,7 @@
       "satisfy_when": "值符落对宫，天盘与地盘相冲：只记反吟",
       "fail_when": "值符不在对宫，且也未归本位",
       "unknown_when": "反吟与吉格同现：原文另有进兵之论，力量未论，不得输出必变",
-      "rescue": "unimplemented",
+      "rescue": "none",
       "vernacular": "值符落对宫，这是反吟的盘面条件，用来观察往还之象，不是已经判定所谋必变。",
       "implementation_assumption": "对宫按洛书八宫对冲。不把反吟写成必须改时。",
       "verified": false
@@ -269,7 +269,7 @@
       "satisfy_when": "按该段首句，本宫天乙在坤二、天丙或天丁在乾六",
       "fail_when": "按该段首句，该奇不在列明墓宫",
       "unknown_when": "同段后半另谈鬼遁丁艮之墓；不是首句表可统包的通用救应，必须连同原段保留",
-      "rescue": "unimplemented",
+      "rescue": "none",
       "vernacular": "这段首句把丙丁到乾一并论墓，因此丁在乾时，得使和受墓限制可以同时出现。",
       "implementation_assumption": "本条仅明示执行该段首句，完整原段同时提供。同段后半丁艮及其他墓表不删除；本书通行合并墓法仍有分歧，不据此断全局凶。 卷一歌诀L127亦列乙二丙丁六；它与演义互证文字，并非另一份独立应验案例。",
       "verified": false

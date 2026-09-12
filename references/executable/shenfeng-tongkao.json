@@ -37,7 +37,7 @@
       "satisfy_when": "日干对应的流霞支出现在四柱地支：只记录落柱名称流霞",
       "fail_when": "四柱地支未见该干的流霞支",
       "unknown_when": "《星学大成》同歌作辛逐虎；他乡死、产后亡未论完：不得输出死丧断语",
-      "rescue": "unimplemented",
+      "rescue": "none",
       "vernacular": "{pillar}见流霞。这是落柱标签，不是死丧结论。",
       "implementation_assumption": "现行表按日干取流霞支（甲酉乙戌丙未丁申戊巳己午庚辰辛卯壬亥癸寅），与本书辛逐兔一致。未按《星学大成》辛逐虎覆盖。",
       "verified": false
@@ -70,7 +70,7 @@
       "satisfy_when": "日干对应的红艳支出现在四柱地支：只记录落柱名称红艳",
       "fail_when": "四柱地支未见该干的红艳支",
       "unknown_when": "原文甲乙午申，本盘甲乙只取午不取申；禄马相逢作路妓未论完：不得输出情欲断语",
-      "rescue": "unimplemented",
+      "rescue": "none",
       "vernacular": "{pillar}见红艳。这是落柱标签，不是情欲结论。",
       "implementation_assumption": "现行表按日干取红艳支（甲午乙午丙寅丁未戊辰己辰庚戌辛酉壬子癸申）。未把甲乙申补进表。",
       "verified": false

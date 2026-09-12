@@ -87,6 +87,19 @@ class SourceIntegrityTests(unittest.TestCase):
         self.rule["rescue"] = "EX-E-NOT-IMPLEMENTED"
         self.rejects("DEPENDENCY")
 
+    def test_rescue_none_is_a_value_not_a_dependency(self):
+        """`none`＝原文没有救应条款（无可实现），是合法取值，不能被当成「指向别的规则 ID」。
+
+        第 29 批新增该取值：把「无可实现」写成 `unimplemented` 会虚增待实现清单。
+        这里钉住两件事——`none` 不被记成依赖（不报 DEPENDENCY），以及它仍然是一个**字符串**
+        取值（若哪天有人写成 null，校验要拒绝）。
+        """
+        self.rule["rescue"] = "none"
+        result = self.result()
+        self.assertTrue(result["ok"], [e["code"] for e in result["errors"]])
+        self.rule["rescue"] = None
+        self.rejects("FIELDS")
+
     def test_duplicate_rule_id_fails(self):
         self.data["rules"].append(dict(self.rule))
         self.rejects("DUPLICATE_ID")

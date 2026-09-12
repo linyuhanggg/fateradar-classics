@@ -72,7 +72,7 @@
       "satisfy_when": "年支或日支三合局对应的驿马支出现在四柱地支：只记录落柱名称",
       "fail_when": "四柱地支未见该局驿马支",
       "unknown_when": "本书又说不必执寅午戌申然后为马；十二驿马、空亡破败、与禄同乡未论完：不得输出行程或迁官断语",
-      "rescue": "unimplemented",
+      "rescue": "none",
       "vernacular": "{pillar}见驿马。这是落柱标签，不是行程结论。",
       "implementation_assumption": "现行表按年支与日支两套三合局取马，标签写作驿马。未按纳音、空亡或十二驿马分类改写结论。",
       "verified": false
@@ -670,7 +670,7 @@
       "satisfy_when": "日干或年干对应的太极支出现在四柱地支：只记录落柱名称太极贵人",
       "fail_when": "四柱地支未见该干的太极支",
       "unknown_when": "戊己原文喜申，本盘只取辰戌丑未；四庫全时、福神扶未论完：不得输出科名断语",
-      "rescue": "unimplemented",
+      "rescue": "none",
       "vernacular": "{pillar}见太极贵人。这是落柱标签，不是科名结论。",
       "implementation_assumption": "现行表按日干或年干取太极支（甲乙子午、丙丁卯酉、庚辛寅亥、壬癸巳申、戊己辰戌丑未）。未把戊己申补进表。",
       "verified": false

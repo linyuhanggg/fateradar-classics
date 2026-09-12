@@ -46,7 +46,7 @@
       "satisfy_when": "已按一下克上取重审、一上克下取元首，并写出三传",
       "fail_when": "无独立的不满足分支：本条记录有效输入上的取法或来源，不把缺少输入当作反例",
       "unknown_when": "四课未起出，无法取传；同书后文将元首/重审取名对调；或原文有问事皆实、事多不顺而旺衰未论：不得输出成败",
-      "rescue": "unimplemented",
+      "rescue": "none",
       "vernacular": "本盘课体{style}。这是取传方法，不是事情已经办成或已经失败。",
       "implementation_assumption": "取传以开篇贼克法为准，不随后文对调改名。涉害另见 DLD-E-02。",
       "verified": false
@@ -242,7 +242,7 @@
       "satisfy_when": "四课无直接克，已先取上神遥克日干为蒿矢，无则取日干遥克上神为弹射，并按与日干阴阳相比选出初传",
       "fail_when": "不是蒿矢课也不是弹射课",
       "unknown_when": "原文另有蒿矢弹射势为轻：轻重未论，不得输出事情已经轻微",
-      "rescue": "unimplemented",
+      "rescue": "none",
       "vernacular": "本盘{style}。这是四课无克后的遥克取传，不是事情已经射中或已经轻微。",
       "implementation_assumption": "遥克只在贼克未取出初传、且不是伏吟返吟八专时启用。比日干阴阳取用。",
       "verified": false
