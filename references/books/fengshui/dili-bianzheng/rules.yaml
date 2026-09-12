@@ -12,6 +12,7 @@ rules:
   statement: R01 经文与蒋注必须分层
   anchor: null
   quote: R01 经文与蒋注必须分层
+  quote_kind: restatement
   applicable_to: []
   caveats: []
   school: null
@@ -23,6 +24,7 @@ rules:
   statement: R02 雌雄优先于简单阴阳
   anchor: null
   quote: R02 雌雄优先于简单阴阳
+  quote_kind: restatement
   applicable_to: []
   caveats: []
   school: null
@@ -34,6 +36,7 @@ rules:
   statement: R03 理气问题需要工具，不让 LLM 手算
   anchor: null
   quote: R03 理气问题需要工具，不让 LLM 手算
+  quote_kind: restatement
   applicable_to: []
   caveats: []
   school: null
@@ -45,6 +48,7 @@ rules:
   statement: R04 与形势法冲突时并列
   anchor: null
   quote: R04 与形势法冲突时并列
+  quote_kind: restatement
   applicable_to: []
   caveats: []
   school: null
@@ -56,6 +60,7 @@ rules:
   statement: R05 辨伪段落用于冲突裁判
   anchor: null
   quote: R05 辨伪段落用于冲突裁判
+  quote_kind: restatement
   applicable_to: []
   caveats: []
   school: null
