@@ -64,7 +64,7 @@ rules:
 - rule_id: WX-03-01
   kind: doctrine
   statement: 支神藏干（人元）
-  anchor: {file: sources/fulltext/luming-nayin/wuxing-jingji/fulltext.md, start_line: 2213, end_line: 2213}
+  anchor: {file: sources/fulltext/luming-nayin/wuxing-jingji/fulltext.md, start_line: 2206, end_line: 2213}
   quote: 亥子(水)寅卯(木)巳午(火)申酉(金)辰戍醜未(土)
   applicable_to: []
   caveats: []
@@ -126,8 +126,9 @@ rules:
 - rule_id: WX-04-03
   kind: doctrine
   statement: 凶中凶格
-  anchor: {file: sources/fulltext/luming-nayin/wuxing-jingji/fulltext.md, start_line: 3773, end_line: 3773}
+  anchor: null
   quote: 甲子日丁卯时甲戌时
+  quote_kind: restatement
   applicable_to: []
   caveats: []
   school: null
@@ -198,7 +199,7 @@ rules:
 - rule_id: WX-05-05
   kind: doctrine
   statement: 华盖主孤高僧道
-  anchor: {file: sources/fulltext/luming-nayin/wuxing-jingji/fulltext.md, start_line: 6765, end_line: 6765}
+  anchor: {file: sources/fulltext/luming-nayin/wuxing-jingji/fulltext.md, start_line: 6758, end_line: 6765}
   quote: 寅午戌人在戌巳酉醜人在醜申子辰人在辰亥卯未人在未
   applicable_to: []
   caveats: []

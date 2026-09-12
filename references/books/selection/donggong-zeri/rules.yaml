@@ -26,8 +26,9 @@ rules:
 - rule_id: DONGGONGZERI-DR
   kind: doctrine
   statement: 全书主体按正月寅月至十二月丑月，每月列 12 个建除日（建、除、满、平、定、执、破、危、成、收、开、闭）并给出宜忌、应事与凶验叙述。
-  anchor: {file: sources/fulltext/selection/donggong-zeri/fulltext.md, start_line: 786, end_line: 786}
+  anchor: null
   quote: 小寒 小寒後三煞在東
+  quote_kind: restatement
   applicable_to: []
   caveats:
   - 不得让 LLM 手算日期
@@ -83,7 +84,7 @@ rules:
 - rule_id: DONGGONGZERI-006
   kind: doctrine
   statement: 本书将煞贡、直星、人专列为可用于上官赴任、临政亲民、入学等事的吉日类；可作民间通书“通用吉日”证据层。
-  anchor: {file: sources/fulltext/selection/donggong-zeri/fulltext.md, start_line: 870, end_line: 870}
+  anchor: {file: sources/fulltext/selection/donggong-zeri/fulltext.md, start_line: 867, end_line: 870}
   quote: 正、四、七、十，四孟之月：
   applicable_to: []
   caveats:

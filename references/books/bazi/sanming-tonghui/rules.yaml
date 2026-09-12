@@ -350,8 +350,9 @@ rules:
 - rule_id: SANMINGTONGH-018
   kind: doctrine
   statement: 子午、丑未、寅申、卯酉、辰戌、巳亥相冲；冲动、移动、变化之象。
-  anchor: {file: sources/fulltext/bazi/sanming-tonghui/fulltext.md, start_line: 1158, end_line: 1158}
+  anchor: null
   quote: 正月節   二月節   三月節
+  quote_kind: restatement
   applicable_to: []
   caveats:
   - 冲不一定凶

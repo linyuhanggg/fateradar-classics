@@ -10,8 +10,9 @@ rules:
 - rule_id: LR
   kind: doctrine
   statement: 用户给出可校验的占时，或给出已由同一算法生成的完整课盘。
-  anchor: {file: sources/fulltext/san-shi/liuren-zhiyin/fulltext.md, start_line: 107, end_line: 107}
+  anchor: null
   quote: 8. 以月將加占時之上
+  quote_kind: restatement
   applicable_to: []
   caveats:
   - L59 对正时、报时、报数有注本偏好
@@ -23,8 +24,9 @@ rules:
 - rule_id: LIURENZHIYIN-LR
   kind: doctrine
   statement: '`LR-00` 已通过，四课上下关系可确定。'
-  anchor: {file: sources/fulltext/san-shi/liuren-zhiyin/fulltext.md, start_line: 134, end_line: 134}
+  anchor: null
   quote: 14. 賊克為初用之始，相因作中末之身。
+  quote_kind: restatement
   applicable_to: []
   caveats:
   - 不得在已有下贼时因上克数量更多而改选上克
@@ -62,8 +64,9 @@ rules:
 - rule_id: LIURENZHIYIN-005
   kind: doctrine
   statement: 恰为四课，既无直接克又无遥克，且不是伏吟或反吟专式。
-  anchor: {file: sources/fulltext/san-shi/liuren-zhiyin/fulltext.md, start_line: 168, end_line: 168}
+  anchor: null
   quote: 24. 若昴星當俯仰於酉上。
+  quote_kind: restatement
   applicable_to: []
   caveats:
   - “酉上/酉下”的实现必须由 adapter 的《指南》口径定义，语言模型不得凭图形直觉手算
@@ -74,8 +77,9 @@ rules:
 - rule_id: LIURENZHIYIN-006
   kind: doctrine
   statement: 四课去重后恰为三课，且无直接克、无遥克。
-  anchor: {file: sources/fulltext/san-shi/liuren-zhiyin/fulltext.md, start_line: 176, end_line: 176}
+  anchor: null
   quote: 27. 若別責取干支之合神。
+  quote_kind: restatement
   applicable_to: []
   caveats:
   - 三合“前一位”的方向和天干寄宫须由 adapter 明确定义，不能靠模型默算
@@ -86,8 +90,9 @@ rules:
 - rule_id: LIURENZHIYIN-007
   kind: doctrine
   statement: 天地盘同位，adapter 标记 `is_fuyin=true`。
-  anchor: {file: sources/fulltext/san-shi/liuren-zhiyin/fulltext.md, start_line: 186, end_line: 186}
+  anchor: null
   quote: 29. 伏返以刑衝為定
+  quote_kind: restatement
   applicable_to: []
   caveats:
   - 刑、冲表必须来自同一 adapter 版本
@@ -125,8 +130,9 @@ rules:
 - rule_id: LIURENZHIYIN-010
   kind: doctrine
   statement: 三传已由前述规则或 adapter 唯一生成。
-  anchor: {file: sources/fulltext/san-shi/liuren-zhiyin/fulltext.md, start_line: 936, end_line: 936}
+  anchor: null
   quote: 167. 用為發端之門，中為移易之府，末為歸計之宮。
+  quote_kind: restatement
   applicable_to: []
   caveats:
   - 历史占验的事后叙述不能反推为通用应期公式

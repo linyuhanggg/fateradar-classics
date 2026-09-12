@@ -334,7 +334,7 @@ rules:
 - rule_id: SHENXIANGQUA-SR-04
   kind: doctrine
   statement: 口分仰月 / 吹火 / 樱桃 / 鲇鱼 / 覆船 等；唇红齿白为相之贵征。
-  anchor: {file: sources/fulltext/physiognomy/shenxiang-quanbian/fulltext.md, start_line: 2283, end_line: 2283}
+  anchor: {file: sources/fulltext/physiognomy/shenxiang-quanbian/fulltext.md, start_line: 2282, end_line: 2283}
   quote: 針者，絕子，貧寒。」上有黑子者，多子。下有黑子者多女，
   applicable_to: []
   caveats:
@@ -346,7 +346,7 @@ rules:
 - rule_id: SHENXIANGQUA-026
   kind: doctrine
   statement: 耳分垂肩 / 贴脑 / 棋子 / 鼠耳 / 猪耳 等；轮廓分明、贴脑、垂珠为佳。
-  anchor: {file: sources/fulltext/physiognomy/shenxiang-quanbian/fulltext.md, start_line: 2397, end_line: 2397}
+  anchor: {file: sources/fulltext/physiognomy/shenxiang-quanbian/fulltext.md, start_line: 2396, end_line: 2397}
   quote: 音》欲清。《口德》欲端。《口脣》欲厚。
   applicable_to: []
   caveats:
@@ -358,7 +358,7 @@ rules:
 - rule_id: SHENXIANGQUA-027
   kind: doctrine
   statement: 人中深长清晰为相之吉征；古文与子嗣寿命相关之论按 safety-redlines 屏蔽。
-  anchor: {file: sources/fulltext/physiognomy/shenxiang-quanbian/fulltext.md, start_line: 2447, end_line: 2447}
+  anchor: {file: sources/fulltext/physiognomy/shenxiang-quanbian/fulltext.md, start_line: 2444, end_line: 2447}
   quote: 夭，廕下須教破且休。
   applicable_to: []
   caveats:
@@ -415,7 +415,7 @@ rules:
 - rule_id: SR-05
   kind: doctrine
   statement: 五行金木水火土相生相克之理用于相术；五脏所出对应五行外华。
-  anchor: {file: sources/fulltext/physiognomy/shenxiang-quanbian/fulltext.md, start_line: 2697, end_line: 2697}
+  anchor: {file: sources/fulltext/physiognomy/shenxiang-quanbian/fulltext.md, start_line: 2696, end_line: 2697}
   quote: 暴，太緩則遲，周旋不失其節，進退各中其度者，至貴」
   applicable_to: []
   caveats:
@@ -427,7 +427,7 @@ rules:
 - rule_id: SHENXIANGQUA-SR-05
   kind: doctrine
   statement: 器气章 + 形神章并论；形以载神，气以养神，器以承气。
-  anchor: {file: sources/fulltext/physiognomy/shenxiang-quanbian/fulltext.md, start_line: 2777, end_line: 2777}
+  anchor: null
   quote: 則心曲，故曰「觀其表則知其裡矣。」
   applicable_to: []
   caveats:
@@ -439,10 +439,7 @@ rules:
 - rule_id: SHENXIANGQUA-033
   kind: doctrine
   statement: 相五合（大小相称）/ 相五小（小而灵）/ 相五短（短而清）/ 相五长（长而秀）/ 相五露（皆为不足）/ 相八大 / 相八小 / 相六大 / 相六小极 / 相六小贵。
-  anchor:
-    file: sources/fulltext/physiognomy/shenxiang-quanbian/fulltext.md
-    start_line: 2685
-    end_line: 2685
+  anchor: {file: sources/fulltext/physiognomy/shenxiang-quanbian/fulltext.md, start_line: 2684, end_line: 2685}
   quote: 短　相五合　相五露　相五小　相六大　相六小極　相六惡　相六賤　相六小貴
   applicable_to: []
   caveats:
@@ -481,7 +478,7 @@ rules:
 - rule_id: SHENXIANGQUA-036
   kind: doctrine
   statement: 原书列相富 / 相贵 / 相贵中贱 / 相贫贱 / 相蹇难。
-  anchor: {file: sources/fulltext/physiognomy/shenxiang-quanbian/fulltext.md, start_line: 3047, end_line: 3047}
+  anchor: null
   quote: 「頭面耳鼻口腹」六者，反常而不得其正也。
   applicable_to: []
   caveats:
@@ -494,8 +491,9 @@ rules:
 - rule_id: SHENXIANGQUA-037
   kind: doctrine
   statement: 原书列相寿 / 相夭 / 相孤苦 / 相疾病。
-  anchor: {file: sources/fulltext/physiognomy/shenxiang-quanbian/fulltext.md, start_line: 3087, end_line: 3087}
+  anchor: {file: sources/fulltext/physiognomy/shenxiang-quanbian/fulltext.md, start_line: 3085, end_line: 3087}
   quote: 方，耳雖小堅且圓，額雖小平且正，聲雖小宮且商，面
+  quote_kind: restatement
   applicable_to: []
   caveats:
   - 通用 1+3+4
@@ -507,8 +505,9 @@ rules:
 - rule_id: SHENXIANGQUA-038
   kind: doctrine
   statement: 原书列相坐 / 相卧 / 相行篇 / 相行论 / 论卧 / 论食。
-  anchor: {file: sources/fulltext/physiognomy/shenxiang-quanbian/fulltext.md, start_line: 3127, end_line: 3127}
+  anchor: {file: sources/fulltext/physiognomy/shenxiang-quanbian/fulltext.md, start_line: 3126, end_line: 3127}
   quote: 來到底貧。鰥寡天羅赤色多，更看兩角旋成螺，語
+  quote_kind: restatement
   applicable_to: []
   caveats:
   - 通用 1+5（**不接受真人录像 / 监控影像**）
@@ -519,7 +518,7 @@ rules:
 - rule_id: SHENXIANGQUA-039
   kind: doctrine
   statement: 观人八相法：威 / 厚 / 清 / 古 / 孤 / 薄 / 恶 / 俗；前四为吉相，后四为不足相。
-  anchor: {file: sources/fulltext/physiognomy/shenxiang-quanbian/fulltext.md, start_line: 3177, end_line: 3177}
+  anchor: {file: sources/fulltext/physiognomy/shenxiang-quanbian/fulltext.md, start_line: 3176, end_line: 3177}
   quote: 中，每與天地相流通。神流如夢如影響，目力觀兮如
   applicable_to: []
   caveats:
@@ -560,8 +559,9 @@ rules:
 - rule_id: SHENXIANGQUA-SR-07
   kind: doctrine
   statement: 麻衣金锁赋 + 银匙歌为麻衣派根本相赋；二者互为表里。
-  anchor: {file: sources/fulltext/physiognomy/shenxiang-quanbian/fulltext.md, start_line: 3903, end_line: 3903}
+  anchor: null
   quote: 郎君面，男子郎君命不長。女子郎君好媱慾，僧道孤
+  quote_kind: restatement
   applicable_to: []
   caveats:
   - 通用 1+2
@@ -574,6 +574,7 @@ rules:
   statement: 人伦大统赋上篇为张行简集大成之作；从总论起依次论部位。
   anchor: {file: sources/fulltext/physiognomy/shenxiang-quanbian/fulltext.md, start_line: 4003, end_line: 4003}
   quote: 「塵蒙」而身無所資，玉潤而名高先唱。
+  quote_kind: restatement
   applicable_to: []
   caveats:
   - 通用 1+2
@@ -584,10 +585,7 @@ rules:
 - rule_id: SR-08
   kind: doctrine
   statement: 人伦大统赋下篇承上篇详论部位；含"鼻嵩岳论"等专题。
-  anchor:
-    file: sources/fulltext/physiognomy/shenxiang-quanbian/fulltext.md
-    start_line: 4992
-    end_line: 4992
+  anchor: {file: sources/fulltext/physiognomy/shenxiang-quanbian/fulltext.md, start_line: 4991, end_line: 4992}
   quote: 粗、古而露、清而寒、秀而薄者，皆非美相。古人論部位
   applicable_to: []
   caveats:
@@ -626,8 +624,9 @@ rules:
 - rule_id: SHENXIANGQUA-SR-09
   kind: doctrine
   statement: 杨氏论神气 + 达摩动静论 + 袁柳庄杂论 + 麻衣杂论；神气动静合论。
-  anchor: {file: sources/fulltext/physiognomy/shenxiang-quanbian/fulltext.md, start_line: 4820, end_line: 4820}
+  anchor: null
   quote: 巧。鼠齒漏而多非，猴面長而不飽。黨結奸邪之輩，讎
+  quote_kind: restatement
   applicable_to: []
   caveats:
   - 通用 1
@@ -638,7 +637,7 @@ rules:
 - rule_id: SHENXIANGQUA-048
   kind: doctrine
   statement: 原书列何知歌 / 何知诀 / 凶暴歌 / 刑害歌 / 无子歌 / 恶死歌 等八篇韵语；以"何知人……"句式列举具体相征对应人生境遇。
-  anchor: {file: sources/fulltext/physiognomy/shenxiang-quanbian/fulltext.md, start_line: 5170, end_line: 5170}
+  anchor: {file: sources/fulltext/physiognomy/shenxiang-quanbian/fulltext.md, start_line: 5169, end_line: 5170}
   quote: 吟，言祕密謹似珠金，若人收得得意集，此法須收拾，
   applicable_to: []
   caveats:
