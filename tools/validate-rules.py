@@ -606,6 +606,16 @@ def validate_book(
                 )
             if qk == "verbatim" and anchor_here is None:
                 reporter.add("V15", f"{loc}: quote_kind=verbatim 必须给出 anchor", rule_id=rule_id, book=book_key)
+            if qk == "restatement" and isinstance(anchor_here, dict) and not same:
+                # quote 与 statement 不同、又给了 anchor：这是引文，不是重述。
+                # 实测有 4 条规则被两批改动叠出这个矛盾（先标重述、后被补上 anchor），
+                # 它会同时拉低「引文」列并让读者以为这条没有出处。
+                reporter.add(
+                    "V15",
+                    f"{loc}: 声明 quote_kind=restatement，但 quote 与 statement 不同且已有 anchor —— 应为引文（删掉 quote_kind）",
+                    rule_id=rule_id,
+                    book=book_key,
+                )
         anchor = rule.get("anchor")
         if anchor is None:
             continue
