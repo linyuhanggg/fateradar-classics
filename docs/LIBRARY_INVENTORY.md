@@ -10,15 +10,15 @@
 - catalog 另列排除项：4
 - 稳定段落：53640（含疑文段 1261）
 - 旧 rules.yaml 候选记录：1356（其中 declared verified=true：0；不作运行权威）
-- 新规则定义记录：252，有规则白话 252（仅统计 `references/executable/*.json`；不据此认定运行接入或分支验证完成）
+- 新规则定义记录：258，有规则白话 258（仅统计 `references/executable/*.json`；不据此认定运行接入或分支验证完成）
 - 新规则 declared verified=true：0（只读已有标记，不自动提升）
 - 独立盘面读法：14（`references/readings/chart-notes.json`；不换算成全文白话覆盖）
 
 ## 实际语义加工进度
 
 - 已有段落注解：41900 / 53640
-- 标记电子原文审读 source-reviewed：40947（不是人工影印核验）
-- 有非空白话或处理说明的段落：41900（其中 source-reviewed：40947）
+- 标记电子原文审读 source-reviewed：41036（不是人工影印核验）
+- 有非空白话或处理说明的段落：41900（其中 source-reviewed：41036）
 - 尚无注解：11740；尚无段落白话：11740
 - 原文字面重复段：9220（仅忽略空白比较，same_text_as 不代表流派或理论等价）
 
@@ -91,7 +91,7 @@
 | selection | donggong-zeri | 董公择日 | 是 | 198 | 198 | 198 | 0 | knowledge | 已存影印／候选底本 |
 | selection | xieji-bianfang-shu | 协纪辨方书 | 是 | 2399 | 2399 | 2399 | 0 | knowledge | 已存影印／候选底本 |
 | selection | xingli-kaoyuan | 星历考原 | 是 | 315 | 315 | 315 | 1 | knowledge | 已存影印／候选底本 |
-| selection | yuqia-ji | 玉匣记 | 是 | 1779 | 19 | 19 | 0 | knowledge | 尚未确认影印 |
+| selection | yuqia-ji | 玉匣记 | 是 | 1779 | 19 | 19 | 6 | knowledge | 尚未确认影印 |
 | xingming | guotian-jing | 果天经/果老星宗 | 是 | 247 | 247 | 247 | 1 | engine | 尚未确认影印 |
 | xingming | xingming-suyuan | 星命溯源 | 是 | 75 | 75 | 75 | 0 | engine | 已存影印／候选底本 |
 | xingming | xingxue-dacheng | 星学大成 | 是 | 1392 | 1392 | 1392 | 6 | engine | 已存影印／候选底本 |
