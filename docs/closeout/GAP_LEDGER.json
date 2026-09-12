@@ -4573,5 +4573,32 @@
     "self_corrections": [
       "月令标记正则漏「六月之丁」这类带「之」的写法，曾把 QTB-M-04-06 的续段误判为五月丁；修正后 50 条补入的一致性复核为 50/50 一致"
     ]
+  },
+  "progress_round33": {
+    "id": "调候救应第一批 28 条实现（unimplemented→self）",
+    "what": "在出处补齐之后实现第一批 28 条调候救应：只判原文点名的天干在不在盘上（透/出干/露→透干；见/有/得→透干或藏支，仅藏支时两读并列给信息不足）；未操作化的（如需大运相扶）不列入。",
+    "evidence": "产品仓 src/lib/engine/bazi/tiaohou-rescue.ts + tests/engine/tiaohou-rescue.test.ts（6 条：规格↔经典 sources 逐字校验、28 条满足见证、同档案三态、非规格档案 null、边界）；1,848 张盘实测：判定盘 433，三态齐出 6 条，28/28 有满足见证。",
+    "label_change": {
+      "before": {
+        "self": 50,
+        "unimplemented": 98,
+        "none": 105,
+        "cross_ref": 5
+      },
+      "after": {
+        "self": 78,
+        "unimplemented": 70,
+        "none": 105,
+        "cross_ref": 5
+      }
+    },
+    "open": [
+      "其余 48 条调候救应未实现",
+      "QTB-M-02-12 规则存在性待裁决",
+      "月令续段完整声明未做（缺 1,125 行）"
+    ],
+    "self_corrections": [
+      "第一版 4 条引文多加了原文没有的句号（QTB-M-02-10/03-07/04-01/07-09），被「引文必须逐字落在经典 sources 内」的测试判红后改为逐字"
+    ]
   }
 }
