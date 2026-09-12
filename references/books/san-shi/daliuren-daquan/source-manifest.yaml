@@ -5,7 +5,7 @@ school:
   - "大六壬"
   - "六壬总集"
 source_status: "complete_chapter_set"
-source_state_summary: "完整电子文本与文渊阁十二卷独立转写均已入库，文渊阁影印已取得；卷次异构与逐页校勘尚未解决。"
+source_state_summary: "完整电子文本已入库，文渊阁影印已取得（在影印总库，见下方审计）。⚠️ 原述「文渊阁十二卷独立转写均已入库」不成立：Kanripo KR3g0031 的 14 个文件按声明 sha256 在仓内不存在（2026-09-12 实测审计）。卷次异构与逐页校勘尚未解决。"
 distillation_allowed: true
 distillation_scope: >-
   允许建立整书结构索引、来源分层、精选规则卡和短引证据。当前规则卡是选择性蒸馏，
@@ -28,19 +28,47 @@ source_urls:
   - "https://github.com/kanripo/KR3g0031"
   - "https://commons.wikimedia.org/wiki/File:%E6%96%87%E6%B7%B5%E9%96%A3%E5%9B%9B%E5%BA%AB%E5%85%A8%E6%9B%B8_0808%E5%86%8A.djvu"
 
+# 2026-09-12 逐条实测审计（按声明的 sha256 在 `sources/**` + `references/**` 共 988 个候选中反查，
+# 而非按文件名猜测）。结果必须与 original 声明分开看：
+#   - 17 条声明路径中，**15 条在仓内不存在任何具有该 sha256 的文件**：
+#     1 条 wikisource_raw.txt + 14 条 Kanripo（Readme.org 与 KR3g0031_000–012）。
+#     → 因此本包声明的「独立见证」（Kanripo 文渊阁十二卷转写，固定于提交
+#       320cbc13a9048aa0f028d996ab32f8bf7b362ef7）**在本地不可复现**，不能据此宣称已入库。
+#   - 1 条 fulltext.md：文件在仓内，但路径与 sha256 均已过期，已在上方更正。
+#   - 1 条 0808 册影印：文件在仓内且 sha256 完全一致，只是路径不同，已在上方更正。
+# 本块只记录实测事实，不改动上述原始声明条目；缺件条目保留原样以便追溯当初的取得记录。
+local_files_audit:
+  audited_on: "2026-09-12"
+  method: "sha256 of every candidate file under sources/ and references/ (988 files), matched against each declared sha256"
+  declared_count: 17
+  present_in_repo: 2
+  absent_from_repo: 15
+  absent_roles:
+    - "raw_wikisource_export (sources/raw/san-shi/daliuren-daquan/wikisource_raw.txt)"
+    - "kanripo_table_of_contents + kanripo_wyg_preface + kanripo_wyg_juan_1..12 (14 files under sources/raw/san-shi/daliuren-daquan/kanripo/)"
+  consequence: >-
+    本包的 Kanripo 独立见证不可本地复现。凡依赖「两套卷次互校」的结论，只能引用其固定提交号，
+    不能声称可在本仓复核；不得据此把电子主文本的卷号当作文渊阁原卷号。
+
 local_files:
-  - path: "references/fulltext/san-shi/daliuren-daquan/fulltext.md"
+  # 2026-09-12 实测更正：原路径 `references/fulltext/...` 在仓内不存在；实际文件在
+  # `sources/fulltext/<system>/<slug>/fulltext.md`。原 extent/sha256 也已过期（正文后来增长）。
+  - path: "sources/fulltext/san-shi/daliuren-daquan/fulltext.md"
     role: "normalized_search_text"
-    extent: "13800 lines; 836523 bytes"
-    sha256: "4c5ec0c8ea1f7b36deaf1db317cfa4407b090ad4ed909a3b8a431dced0a25d9d"
+    extent: "18573 lines; 841295 bytes (2026-09-12 实测)"
+    sha256: "e0c5cd12773bdf00a73cf2ce2e00fc8b0522b55d4855f09c0af290e155904441"
+    superseded_sha256: "4c5ec0c8ea1f7b36deaf1db317cfa4407b090ad4ed909a3b8a431dced0a25d9d"
     quality: "complete searchable composite; edition identity and tables not fully collated"
   - path: "sources/raw/san-shi/daliuren-daquan/wikisource_raw.txt"
     role: "raw_wikisource_export"
     extent: "13 Wikisource containers"
     sha256: "06321fb8bf3f28a09be9a06868bd89ab205f85d091268d77dfcf0292cdbf9090"
-  - path: "sources/raw/san-shi/daliuren-daquan/Siku-Wenyuange-0808.djvu"
+  # 2026-09-12 实测更正：影印确实在仓内，但不在原声明的 `sources/raw/...` 路径下，
+  # 而在影印总库（`sources/facsimile/wikisource/MANIFEST.md` F07 有正式著录）。sha256 与原声明一致。
+  - path: "sources/facsimile/wikisource/files/文淵閣四庫全書 0808冊.djvu"
     role: "wenyuange_scan_witness"
     extent: "987 pages; 98547126 bytes; whole volume 0808, not all pages are this book"
+    declared_path_before_audit: "sources/raw/san-shi/daliuren-daquan/Siku-Wenyuange-0808.djvu"
     sha256: "38d40b5cb9beb1282ea33c794224cee148012c8c1fcba7b2f3952901f816f2db"
     collation_status: "acquired_pending_book_page_map_and_line_collation"
   - path: "sources/raw/san-shi/daliuren-daquan/kanripo/Readme.org"

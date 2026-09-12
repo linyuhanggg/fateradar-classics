@@ -24,11 +24,35 @@ source_urls:
   - "https://ctext.org/wiki.pl?if=gb&res=516644"
   - "https://upload.wikimedia.org/wikipedia/commons/9/9b/NLC416-12jh005348-45347_%E5%85%AD%E5%A3%AC%E6%8C%87%E5%8D%97.pdf"
 
+# 2026-09-12 逐条实测审计（按声明的 sha256 在 `sources/**` + `references/**` 共 988 个候选中反查，
+# 不按文件名猜测）。与本文件其余声明分开看：
+#   - 11 条声明中，2 条的 sha256 在仓内找到且**完全一致**，只是路径不同（影印 PDF 与补充本，均已在上方更正）。
+#   - fulltext.md 实际存在，但路径不同且正文已增长（旧 sha 保留为 superseded_sha256）。
+#   - 真正缺失 8 条，都是**原始取得件**：CTP 行数据与 5 个分卷 HTML、2 个代之阁镜像 txt。
+#     缺失后果：归一化 fulltext 与注本无法在本地由原始件重新推导。
+#   - source_state_summary 的「完整可检索注本已入库、原本影印已取得」成立；缺的是原始取得链路。
+local_files_audit:
+  audited_on: "2026-09-12"
+  method: "sha256 of every file under sources/ and references/ (988 files), matched against each declared sha256"
+  declared_count: 11
+  matched_by_declared_hash: 2
+  present_but_hash_changed: 1
+  truly_absent: 8
+  truly_absent_roles:
+    - "complete_searchable_annotation_rows (ctext_liuren-zhinan-zhujie_rows.txt)"
+    - "ctp_chapter_html x5 (front + juan1..juan4)"
+    - "cleaner_original_mirror_volumes_1_2 + complete_annotated_mirror (daizhige x2)"
+  consequence: >-
+    注本与影印可读，但 CTP/代之阁原始取得件不在仓内；依赖这些原始件的重新推导不可在本仓复现。
+
 local_files:
-  - path: "references/fulltext/san-shi/liuren-zhiyin/fulltext.md"
-    sha256: "2298b2270daf8f8e413f9d6c768e84830a225f93779a2ebbd90e8c905885c8bc"
+  # 2026-09-12 实测更正：原声明路径 `references/fulltext/...` 不存在，实际在
+  # `sources/fulltext/<system>/<slug>/fulltext.md`；正文此后有增长，旧 sha256 保留在 superseded_sha256。
+  - path: "sources/fulltext/san-shi/liuren-zhiyin/fulltext.md"
+    sha256: "d39e8de1e1f3a0a6ad934458fb4ad0673d4843c8d1bc914af35c483eac4de804"
     role: "normalized_fulltext"
-    extent: "2798 lines; five CTP containers"
+    extent: "3649 lines; 313570 bytes (2026-09-12 实测)"
+    superseded_sha256: "2298b2270daf8f8e413f9d6c768e84830a225f93779a2ebbd90e8c905885c8bc"
   - path: "sources/raw/san-shi/liuren-zhiyin/ctext/ctext_liuren-zhinan-zhujie_rows.txt"
     sha256: "f29a16e115736f83bb3911eed394470c9bb622858ae66ffecf529d8968f7a510"
     role: "complete_searchable_annotation_rows"
@@ -55,13 +79,17 @@ local_files:
     sha256: "eaff275f55dc4a3eb6a57a2dfce25b6082e60f8d91fe77cfdd08ac8b2f8252eb"
     role: "complete_annotated_mirror"
     provenance: "文件名所示代之阁镜像；精确下载 URL 未随文件保存。"
-  - path: "sources/raw/san-shi/liuren-zhiyin/NLC416-12jh005348-45347_liuren-zhinan.pdf"
+  # 2026-09-12 实测更正：sha256 完全一致，文件在影印总库，只是路径不同。
+  - path: "sources/facsimile/other/liuren-zhiyin/NLC416-12jh005348-45347.pdf"
     sha256: "b2c24631dcc855bd0e2b1578b1050b26c792bc8e52b7bab6dbeae6ed2bc3db5d"
     role: "original_scan_witness"
     extent: "248 pages; 6568701 bytes"
-  - path: "references/fulltext/san-shi/liuren-zhiyin/supplemental-annotated-golla-vol3-4.md"
+    declared_path_before_audit: "sources/raw/san-shi/liuren-zhiyin/NLC416-12jh005348-45347_liuren-zhinan.pdf"
+  # 2026-09-12 实测更正：sha256 完全一致，只是路径不同。
+  - path: "sources/fulltext/san-shi/liuren-zhiyin/supplemental-annotated-golla-vol3-4.md"
     sha256: "2d03b731c84ad3a0f26c02bd1a3bdac860e7984632136c203d3daf4bc85012ae"
     role: "supplemental_mirror_only"
+    declared_path_before_audit: "references/fulltext/san-shi/liuren-zhiyin/supplemental-annotated-golla-vol3-4.md"
 
 chapter_coverage:
   expected: "传统书目四卷；张洪注本五个电子容器（含卷首）"
