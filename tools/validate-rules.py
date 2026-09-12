@@ -531,6 +531,13 @@ def validate_book(
                         src_line = None
                     if src_line is not None and WS_RE.sub("", quote) in WS_RE.sub("", src_line):
                         verdict = "误报（quote 与源行逐字相同，是特征字表的偏差）"
+                # ⚠ 第 24 批实测：本条只能说明「quote 的繁简特征与 book.script 声明不同向」，
+                # **不能**说明转写有错：
+                #   · 有 anchor 的 27 条**全部**与源行逐字相同（quote 与出处完全一致）；
+                #   · 其余 84 条没有 anchor，本工具无从比对，而它们的 fulltext 本身多为繁体
+                #     （如 sanming-tonghui 源文件 35,039 : 1,974 繁简比），
+                #     即「书是繁体本、这条 quote 用简体概述」——是**引用形态**问题，不是抄错字。
+                # 要把它变成能判对错的量，得逐条补 anchor 或给出引文来源；在那之前不要据它否定规则。
                 if verdict.startswith("误报"):
                     reporter.warn(
                         "V11",
