@@ -8,6 +8,18 @@
 - 只检查**长度 ≥ 3** 的连续干支串（两字相邻在散文中太常见，不作为序列）（相邻两字之间只允许分隔符：空格、·、・、、、,、，、|、换行）。
 - 合规 = 整串在六十甲子环上**步长恒定**（含 +1 的六十甲子、+15 的十五日/三元分节、+10 的旬首等，
   升序或降序均可）。步长不恒定才是可疑：某字读错或漏抄会打断等差。
+- **排除两类「本来就不该等差」的写法**（否则会刷出假警，第一次跑就出现 4 例）：
+  1. `…日` 标目与 `干支干支` 连写（原有）。
+  2. **独立柱位列举**：四个干支是四个各自独立的柱（四柱、大运列，如「庚申 庚辰 戊辰 戊午」、
+     「丙申 乙未 甲午 癸巳」），不是同一环上的连续序列。
+     判据（**串长恰为 4 且附近有列举标记**）：四个干支都是合法干支，且串所在行/邻行出现
+     「四柱／盘例／运列／例／大运」这类**盘例列举语**。此时四个干支是四个各自独立的柱，
+     不是环上的连续序列。
+     只对**四柱**适用：连续时支列、六十甲子环、大运**整列**（8 个以上）都不在此列，
+     它们照样要满足步长恒定。
+     为什么不用「干支位步长」之类的结构判据：四柱的天干形态不固定（庚庚戊戊、壬壬甲庚、
+     癸甲癸辛都有），而真正该报的误读串（连续列里末字读错）其天干恰好是连续 +1——
+     结构判据要么漏掉前三者，要么吃掉后者；**列举标记是更可靠、也更可复核的判据**。
 - 输出每条不合规的串及其所在文件行号，供人工按图复核。
 
 退出码：0 = 无非连续；1 = 存在非连续（供 CI 或人工核查使用）。
@@ -49,9 +61,23 @@ def sequences(text: str):
             yield m.start(), items
 
 
+PILLAR_CONTEXT = re.compile(r"四柱|盘例|运列|大运|另盘|例")
+
+
+def is_pillar_list(text: str, start: int, seg: str) -> bool:
+    """
+    四柱列举：串长恰为 4，且串所在行或邻行出现盘例列举语（四柱／盘例／运列／大运／例）。
+    """
+    line_start = text.rfind("\n", 0, start) + 1
+    line_end = text.find("\n", start)
+    line = text[line_start : line_end if line_end >= 0 else len(text)]
+    return bool(PILLAR_CONTEXT.search(line))
+
+
 def check_file(path: Path):
     text = path.read_text(encoding="utf-8")
     problems = []
+    pillars = []
     total = 0
     for start, items in sequences(text):
         # 该串一旦落在「…日」标目或「干支干支」连写里，就整串跳过（不是行标序列）。
@@ -59,14 +85,18 @@ def check_file(path: Path):
         if DAY_LABEL.search(seg) or PAIR_GLUED.search(seg):
             continue
         idx = [INDEX[i] for i in items]
+        steps = {(b - a) % 60 for a, b in zip(idx, idx[1:])}
+        line = text.count("\n", 0, start) + 1
+        # 独立柱位列举（四柱／大运列）本来就不等差，单独计数，不算发现。
+        if len(items) == 4 and is_pillar_list(text, start, seg):
+            pillars.append((line, items))
+            continue
         total += 1
         # 合规判据：步长恒定（升或降均可）。六十甲子为 +1，十五日/三元分节为 +15，旬首为 +10；
         # 步长**不恒定**才是可疑——读错或漏抄一个字就会打断等差。
-        steps = {(b - a) % 60 for a, b in zip(idx, idx[1:])}
         if len(steps) != 1:
-            line = text.count("\n", 0, start) + 1
             problems.append((line, items))
-    return total, problems
+    return total, problems, pillars
 
 
 def main() -> int:
@@ -86,15 +116,20 @@ def main() -> int:
 
     checked = 0
     bad = 0
+    excluded = 0
     for f in files:
-        total, problems = check_file(f)
+        total, problems, pillars = check_file(f)
         checked += total
+        excluded += len(pillars)
         if problems:
             bad += len(problems)
             print(f"{f.relative_to(ROOT)}: {len(problems)} 处步长不恒定")
             for line, items in problems[:5]:
                 print(f"    L{line}: {' '.join(items)}")
-    print(f"\n文件 {len(files)} 个｜干支串 {checked} 条｜步长不恒定 {bad} 条")
+    print(
+        f"\n文件 {len(files)} 个｜被判为序列的干支串 {checked} 条｜其中步长不恒定 {bad} 条"
+        f"｜另排除独立柱位列举（四柱／大运列）{excluded} 条（不计入发现，见文件头判据）"
+    )
     return 1 if bad else 0
 
 
