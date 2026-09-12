@@ -64,7 +64,7 @@ rules:
 - rule_id: WX-03-01
   kind: doctrine
   statement: 支神藏干（人元）
-  anchor: null
+  anchor: {file: sources/fulltext/luming-nayin/wuxing-jingji/fulltext.md, start_line: 2213, end_line: 2213}
   quote: 亥子(水)寅卯(木)巳午(火)申酉(金)辰戍醜未(土)
   applicable_to: []
   caveats: []
@@ -115,7 +115,7 @@ rules:
 - rule_id: WX-04-02
   kind: doctrine
   statement: 日时贵格识别
-  anchor: null
+  anchor: {file: sources/fulltext/luming-nayin/wuxing-jingji/fulltext.md, start_line: 86, end_line: 86}
   quote: 釋日時貴格
   applicable_to: []
   caveats: []
@@ -126,7 +126,7 @@ rules:
 - rule_id: WX-04-03
   kind: doctrine
   statement: 凶中凶格
-  anchor: null
+  anchor: {file: sources/fulltext/luming-nayin/wuxing-jingji/fulltext.md, start_line: 3773, end_line: 3773}
   quote: 甲子日丁卯时甲戌时
   applicable_to: []
   caveats: []
@@ -137,7 +137,7 @@ rules:
 - rule_id: WX-04-04
   kind: doctrine
   statement: 节气浅深起运
-  anchor: null
+  anchor: {file: sources/fulltext/luming-nayin/wuxing-jingji/fulltext.md, start_line: 4111, end_line: 4111}
   quote: 立春正月节雨水正月中
   applicable_to: []
   caveats: []
@@ -148,7 +148,7 @@ rules:
 - rule_id: WX-05-01
   kind: doctrine
   statement: 天乙贵神识别
-  anchor: null
+  anchor: {file: sources/fulltext/luming-nayin/wuxing-jingji/fulltext.md, start_line: 96, end_line: 96}
   quote: 第十四卷論天乙貴神
   applicable_to: []
   caveats: []
@@ -159,7 +159,7 @@ rules:
 - rule_id: WX-05-02
   kind: doctrine
   statement: 祿馬同乡上贵
-  anchor: null
+  anchor: {file: sources/fulltext/luming-nayin/wuxing-jingji/fulltext.md, start_line: 102, end_line: 102}
   quote: 第十七卷並論祿馬
   applicable_to: []
   caveats: []
@@ -198,7 +198,7 @@ rules:
 - rule_id: WX-05-05
   kind: doctrine
   statement: 华盖主孤高僧道
-  anchor: null
+  anchor: {file: sources/fulltext/luming-nayin/wuxing-jingji/fulltext.md, start_line: 6765, end_line: 6765}
   quote: 寅午戌人在戌巳酉醜人在醜申子辰人在辰亥卯未人在未
   applicable_to: []
   caveats: []
@@ -473,7 +473,7 @@ rules:
 - rule_id: WX-10-01
   kind: doctrine
   statement: 大运起例
-  anchor: null
+  anchor: {file: sources/fulltext/luming-nayin/wuxing-jingji/fulltext.md, start_line: 10711, end_line: 10711}
   quote: 乃是一歲奇九月之大運，
   applicable_to: []
   caveats: []

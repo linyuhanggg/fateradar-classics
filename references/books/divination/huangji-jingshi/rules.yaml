@@ -25,6 +25,7 @@ rules:
   statement: 邵雍以"子会"开物（万物始）、"丑会"立地、"寅会"生人；亥会闭物（万物归）。
   anchor: null
   quote: 皇極經世書卷五上    宋 邵雍 撰
+  quote_kind: restatement
   applicable_to: []
   caveats:
   - 属术数史观，非自然演化论
@@ -37,6 +38,7 @@ rules:
   statement: 以元经会主天之运（卷一至二）、以会经运主地之化（卷三至四）、以运经世主人物之事（卷五至六）；以世经世落具体年甲子（卷七至十）。
   anchor: null
   quote: 皇極經世書卷六下    宋 邵雍 撰觀物篇三十四  以運經世十
+  quote_kind: restatement
   applicable_to: []
   caveats:
   - —
@@ -205,7 +207,7 @@ rules:
 - rule_id: HR-06
   kind: doctrine
   statement: 天声 10 类配地音 12 类、平上去入 4 调 × 开发收闭 4 等；声音之数皆受元会运世数管摄。
-  anchor: null
+  anchor: {file: sources/fulltext/divination/huangji-jingshi/fulltext.md, start_line: 36954, end_line: 36954}
   quote: 剛少剛之用數是謂水火土石之化數日月星辰之變數一萬七千二十四謂之動數水火土石之化數一萬七千二十四謂之植數再唱和日月星辰水火土石之變化通數二萬八千九百八十一萬六千五百七十六謂之動植通數
   applicable_to: []
   caveats:
@@ -264,7 +266,7 @@ rules:
 - rule_id: HUANGJIJINGS-HR-09
   kind: doctrine
   statement: 邵雍以唐尧元年甲辰（公元前 2357 年）为经世表元始首甲；后续年甲子均依此推。
-  anchor: null
+  anchor: {file: sources/fulltext/divination/huangji-jingshi/fulltext.md, start_line: 13475, end_line: 13475}
   quote: 經辰之申二千一百五十七
   applicable_to: []
   caveats:

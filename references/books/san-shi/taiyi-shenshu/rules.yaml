@@ -123,7 +123,7 @@ rules:
 - rule_id: TR-09
   kind: doctrine
   statement: 本 profile 只输出下表中可由年计主盘逐字段验证的掩、囚、格、对子谓词；不得把未具备门位或先后方向数据的击、迫、关、四郭固、四郭杜、执提、提挟伪报为已计算
-  anchor: null
+  anchor: {file: sources/fulltext/san-shi/taiyi-shenshu/fulltext.md, start_line: 470, end_line: 470}
   quote: 經曰始擊將臨太乙宫謂之掩嵗計遇之王綱失序臣張君弱宜修徳以禳之盖掩襲刼殺之義若掩太乙在陽絶之地君凶隂絶之地臣誅掩主大將主人筭和吉不和凶參擊之勝
   applicable_to: []
   caveats:
@@ -276,7 +276,7 @@ rules:
 - rule_id: TR-10
   kind: doctrine
   statement: 计算君基、臣基、民基、五福、大游、小游、四神、天乙、地乙、直符的确定位置与独立 epoch_profile
-  anchor: null
+  anchor: {file: sources/fulltext/san-shi/taiyi-shenshu/fulltext.md, start_line: 656, end_line: 656}
   quote: 推積年法      推君基太乙法
   applicable_to: []
   caveats:
@@ -303,7 +303,7 @@ rules:
 - rule_id: TR-12
   kind: doctrine
   statement: 卷五三元五纪立成钤作为四神、天乙、地乙、直符 180 年周期的独立验算表
-  anchor: null
+  anchor: {file: sources/fulltext/san-shi/taiyi-shenshu/fulltext.md, start_line: 708, end_line: 708}
   quote: 〔與四神天乙地乙直符同用〕
   applicable_to: []
   caveats: []
