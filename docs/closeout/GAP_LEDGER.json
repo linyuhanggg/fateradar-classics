@@ -20,16 +20,16 @@
     "6": "已合入并验收"
   },
   "counts": {
-    "executable_definitions": 252,
-    "wired_ids": 252,
+    "executable_definitions": 258,
+    "wired_ids": 258,
     "unwired_ids": 0,
     "unwired_qtb": 0,
     "unwired_non_qtb": 0,
     "annotations_total": 62839,
     "source_reviewed": 59934,
     "draft": 2905,
-    "draft_files": 18,
-    "judgment_fixture_sides": 252,
+    "draft_files": 17,
+    "judgment_fixture_sides": 258,
     "three_state_complete": false,
     "merged_main": false
   },
@@ -109,7 +109,7 @@
     ],
     "bazi_free_reading": "src/lib/engine/bazi/free-reading.ts -> bazi-workspace-summary / evidence-panel / personal-reading / reading-input-export",
     "other_arts": "chart.points + EvidencePanel keyword matcher; dedicated free-reading builders missing except bazi",
-    "xiaoliuren": "no executable definition IDs in 252; engine+source points exist; do not invent IDs"
+    "xiaoliuren": "pack13 起有 6 条 executable 定义（YXJ-E-01–06），接到 src/lib/engine/xiaoliuren.ts 的真实输出；页面/导出/免费解释沿用既有 xiaoliuren 消费者。此前记 0 条是定义缺失，不是算法缺失。"
   },
   "drafts_by_file": [
     {
@@ -124,30 +124,16 @@
     {
       "file": "references/annotations/san-shi/daliuren-daquan.json",
       "bookSlug": "daliuren-daquan",
-      "draft": 845,
-      "source_reviewed": 6048,
+      "draft": 812,
+      "source_reviewed": 6081,
       "draft_kinds": {
-        "规则候选": 109,
-        "案例": 21,
         "待核实": 695,
-        "理论": 3,
-        "评注或元数据": 7,
-        "操作步骤": 2,
-        "术语": 8
-      }
-    },
-    {
-      "file": "references/annotations/selection/yuqia-ji--shidian-NA09036.json",
-      "bookSlug": "yuqia-ji",
-      "draft": 267,
-      "source_reviewed": 2721,
-      "draft_kinds": {
-        "待核实": 34,
-        "评注或元数据": 126,
-        "规则候选": 27,
-        "术语": 60,
-        "操作步骤": 11,
-        "案例": 9
+        "规则候选": 81,
+        "案例": 21,
+        "术语": 6,
+        "评注或元数据": 5,
+        "理论": 2,
+        "操作步骤": 2
       }
     },
     {
@@ -156,22 +142,26 @@
       "draft": 222,
       "source_reviewed": 627,
       "draft_kinds": {
-        "序跋目录": 3,
+        "规则候选": 128,
         "评注或元数据": 42,
-        "理论": 4,
-        "案例": 18,
         "术语": 27,
-        "规则候选": 128
+        "案例": 18,
+        "理论": 4,
+        "序跋目录": 3
       }
     },
     {
-      "file": "references/annotations/selection/xingli-kaoyuan--shidian-SK1618.json",
-      "bookSlug": "xingli-kaoyuan",
-      "draft": 185,
-      "source_reviewed": 127,
+      "file": "references/annotations/selection/yuqia-ji--shidian-NA09036.json",
+      "bookSlug": "yuqia-ji",
+      "draft": 180,
+      "source_reviewed": 2808,
       "draft_kinds": {
-        "评注或元数据": 1,
-        "术语": 184
+        "评注或元数据": 55,
+        "术语": 54,
+        "待核实": 34,
+        "规则候选": 23,
+        "案例": 9,
+        "操作步骤": 5
       }
     },
     {
@@ -187,14 +177,14 @@
     {
       "file": "references/annotations/san-shi/liuren-miben.json",
       "bookSlug": "liuren-miben",
-      "draft": 89,
-      "source_reviewed": 2554,
+      "draft": 86,
+      "source_reviewed": 2557,
       "draft_kinds": {
-        "规则候选": 49,
-        "案例": 4,
-        "术语": 5,
-        "理论": 4,
+        "规则候选": 46,
         "待核实": 25,
+        "术语": 5,
+        "案例": 4,
+        "理论": 4,
         "评注或元数据": 2
       }
     },
@@ -206,8 +196,8 @@
       "draft_kinds": {
         "待核实": 26,
         "规则候选": 23,
-        "重复": 2,
         "评注或元数据": 5,
+        "重复": 2,
         "术语": 2,
         "操作步骤": 2,
         "序跋目录": 1
@@ -216,13 +206,13 @@
     {
       "file": "references/annotations/ziwei/ziwei-doushu-quanshu--shidian-SDZJ0170.json",
       "bookSlug": "ziwei-doushu-quanshu",
-      "draft": 60,
-      "source_reviewed": 1010,
+      "draft": 48,
+      "source_reviewed": 1022,
       "draft_kinds": {
-        "规则候选": 41,
-        "操作步骤": 2,
+        "规则候选": 29,
+        "待核实": 12,
         "术语": 5,
-        "待核实": 12
+        "操作步骤": 2
       }
     },
     {
@@ -231,29 +221,19 @@
       "draft": 40,
       "source_reviewed": 2221,
       "draft_kinds": {
-        "术语": 12,
         "案例": 21,
+        "术语": 12,
         "理论": 7
       }
     },
     {
       "file": "references/annotations/physiognomy/mayi-shenxiang.json",
       "bookSlug": "mayi-shenxiang",
-      "draft": 19,
-      "source_reviewed": 1608,
+      "draft": 17,
+      "source_reviewed": 1610,
       "draft_kinds": {
-        "术语": 2,
-        "序跋目录": 1,
-        "待核实": 16
-      }
-    },
-    {
-      "file": "references/annotations/fengshui/tianyu-jing--shidian-SK1592.json",
-      "bookSlug": "tianyu-jing",
-      "draft": 5,
-      "source_reviewed": 185,
-      "draft_kinds": {
-        "规则候选": 5
+        "待核实": 16,
+        "序跋目录": 1
       }
     },
     {
@@ -266,21 +246,12 @@
       }
     },
     {
-      "file": "references/annotations/fengshui/huangdi-zhaijing--shidian-DZ0282.json",
-      "bookSlug": "huangdi-zhaijing",
-      "draft": 2,
-      "source_reviewed": 29,
+      "file": "references/annotations/fengshui/tianyu-jing--shidian-SK1592.json",
+      "bookSlug": "tianyu-jing",
+      "draft": 4,
+      "source_reviewed": 186,
       "draft_kinds": {
-        "规则候选": 2
-      }
-    },
-    {
-      "file": "references/annotations/luming-nayin/yuzhao-shenying--shidian-SK1602.json",
-      "bookSlug": "yuzhao-shenying",
-      "draft": 2,
-      "source_reviewed": 11,
-      "draft_kinds": {
-        "待核实": 2
+        "规则候选": 4
       }
     },
     {
@@ -288,6 +259,15 @@
       "bookSlug": "sanming-tonghui",
       "draft": 2,
       "source_reviewed": 2338,
+      "draft_kinds": {
+        "待核实": 2
+      }
+    },
+    {
+      "file": "references/annotations/luming-nayin/yuzhao-shenying--shidian-SK1602.json",
+      "bookSlug": "yuzhao-shenying",
+      "draft": 2,
+      "source_reviewed": 11,
       "draft_kinds": {
         "待核实": 2
       }
@@ -308,6 +288,15 @@
       "source_reviewed": 15,
       "draft_kinds": {
         "待核实": 1
+      }
+    },
+    {
+      "file": "references/annotations/selection/xingli-kaoyuan--shidian-SK1618.json",
+      "bookSlug": "xingli-kaoyuan",
+      "draft": 1,
+      "source_reviewed": 311,
+      "draft_kinds": {
+        "评注或元数据": 1
       }
     }
   ],
@@ -4491,5 +4480,32 @@
   "progress_round4": {
     "promoted": 16,
     "draft_after": 2905
+  },
+  "executable_rules_by_pack": {
+    "bushi-zhengzong.json": 2,
+    "daliuren-daquan.json": 22,
+    "guotian-jing.json": 1,
+    "liuren-zhiyin.json": 1,
+    "meihua-yishu.json": 1,
+    "qimen-dunjia-tongzhi.json": 6,
+    "qiongtong-baojian.json": 120,
+    "sanming-tonghui.json": 20,
+    "shenfeng-tongkao.json": 2,
+    "xingli-kaoyuan.json": 1,
+    "xingxue-dacheng.json": 6,
+    "yuxiaji-xiaoliuren.json": 6,
+    "zengshan-buyi.json": 19,
+    "ziping-zhenquan.json": 39,
+    "ziwei-doushu-quanshu.json": 12
+  },
+  "revision": {
+    "revised_by": "pack13 xiaoliuren",
+    "why": "drafts_by_file 与 counts 原先按旧快照写，与真实 Git 对象不符（例：daliuren-daquan 记 845 实为 812；yuqia-ji 记 267 实为 180；xingli-kaoyuan 记 185 实为 1）。本次按 references/annotations/**/*.json 与 references/executable/*.json 实测重写，未改任何注解状态。",
+    "executable_denominator": {
+      "before_pack13": 252,
+      "current": 258,
+      "why": "八术之一的小六壬此前在 executable 定义里为 0 条：其来源《玉匣记》雜占篇「李淳風六壬時課」整本按择日归入知识库，未产出定义——这是范围与实现映射问题，不是引擎缺算法。pack13 把该节写成 6 条真实定义（YXJ-E-01–06），故真实分母由 252 增至 258；历史 252 不改判。"
+    },
+    "per_rule_level_note": "本文件的 rules[].level 仍是旧快照（level1=164 / level2=88），落后于当前接线状态。以产品仓 docs/implementation/art-verdict-judgment-gap-matrix.json（由代码与测试断言生成）为准。"
   }
 }

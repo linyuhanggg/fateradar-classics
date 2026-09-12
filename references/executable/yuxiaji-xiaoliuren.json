@@ -1,0 +1,261 @@
+{
+  "schema_version": "fateradar-executable-v2",
+  "book": {
+    "slug": "yuqia-ji",
+    "system": "selection",
+    "title": "玉匣记 · 雜占篇 李淳風六壬時課",
+    "fulltext": "sources/fulltext/selection/yuqia-ji/fulltext.md"
+  },
+  "verified": false,
+  "note": "本包只覆盖《玉匣记》雜占篇「李淳風六壬時課」一节电子文本（维基文库），把产品引擎已实现的小六壬起课数法、原书用例、时宫落点、六宫象义、断曰边界与闰月口径写成可执行规则定义。标题托名李淳风未证实；电子文本锚定不是影印校勘；verified 保持 false。《玉匣记》其余择日与符咒内容仍只进知识库，不因本包接入算法。",
+  "rules": [
+    {
+      "id": "YXJ-E-01",
+      "art": "xiaoliuren",
+      "theme": "起课数法（大安上起正月、月上起日、日上起时）",
+      "school": "玉匣记·李淳風六壬時課（托名，未证实）",
+      "paragraph_ids": [
+        "yuqia-ji:L4213-L4213"
+      ],
+      "sources": [
+        {
+          "paragraph_id": "yuqia-ji:L4213-L4213",
+          "start_line": 4213,
+          "end_line": 4213,
+          "quote": "其法：每從“大安”上起正月，月上起日，日上起時。假如三月初五日辰時，三月在“速喜”上，就“速喜”上起初一，初五在“大安”，“大安”上起子時，數至辰時是“小吉”，就以“小吉”推占。餘皆仿此。"
+        }
+      ],
+      "quote": "其法：每從“大安”上起正月，月上起日，日上起時。假如三月初五日辰時，三月在“速喜”上，就“速喜”上起初一，初五在“大安”，“大安”上起子時，數至辰時是“小吉”，就以“小吉”推占。餘皆仿此。",
+      "page": "xiaoliuren",
+      "required_facts": [
+        "xiaoliuren.lunar.month",
+        "xiaoliuren.lunar.day",
+        "xiaoliuren.hour.branch"
+      ],
+      "when": {
+        "exists": "xiaoliuren.hour.branch"
+      },
+      "satisfy_when": "农历月、日与时辰齐全时，已按「大安上起正月、月上起日、日上起时」逐步数出月宫、日宫、时宫，起点算第一位，且三宫取数可逐步复算",
+      "fail_when": "无独立不满足分支：给定月、日、时之后本节只给这一种数法，不是可被反例推翻的条件；引擎偏离该数法属于实现缺陷，不为凑三态虚构反例",
+      "unknown_when": "缺农历月或日、或时辰不是十二地支之一时不能起课，越界月日不改成正月、初一或子时；闰月本节未给起例，另按 YXJ-E-06 记为信息不足",
+      "rescue": "unimplemented",
+      "vernacular": "农历{lunar_month}月{lunar_day}日{hour_branch}时：月宫{month_palace}、日宫{day_palace}、时宫{hour_palace}。这是本节数法的逐步结果，不是吉凶结论。",
+      "implementation_assumption": "起点算第一位；六神按大安、留连、速喜、赤口、小吉、空亡循环。",
+      "verified": false
+    },
+    {
+      "id": "YXJ-E-02",
+      "art": "xiaoliuren",
+      "theme": "原书用例复核（农历三月初五日辰时落小吉）",
+      "school": "玉匣记·李淳風六壬時課（托名，未证实）",
+      "paragraph_ids": [
+        "yuqia-ji:L4213-L4213"
+      ],
+      "sources": [
+        {
+          "paragraph_id": "yuqia-ji:L4213-L4213",
+          "start_line": 4213,
+          "end_line": 4213,
+          "quote": "其法：每從“大安”上起正月，月上起日，日上起時。假如三月初五日辰時，三月在“速喜”上，就“速喜”上起初一，初五在“大安”，“大安”上起子時，數至辰時是“小吉”，就以“小吉”推占。餘皆仿此。"
+        }
+      ],
+      "quote": "其法：每從“大安”上起正月，月上起日，日上起時。假如三月初五日辰時，三月在“速喜”上，就“速喜”上起初一，初五在“大安”，“大安”上起子時，數至辰時是“小吉”，就以“小吉”推占。餘皆仿此。",
+      "page": "xiaoliuren",
+      "required_facts": [
+        "xiaoliuren.lunar.month",
+        "xiaoliuren.lunar.day",
+        "xiaoliuren.hour.branch",
+        "xiaoliuren.palace.month",
+        "xiaoliuren.palace.day",
+        "xiaoliuren.palace.hour"
+      ],
+      "when": {
+        "exists": "xiaoliuren.palace.hour"
+      },
+      "satisfy_when": "本盘恰为农历三月初五日辰时，逐步数为月宫速喜、日宫大安、时宫小吉，与原文用例逐宫一致",
+      "fail_when": "本盘同为农历三月初五日辰时，但三宫与原文用例不一致：这是引擎与来源冲突，须按缺陷处理，不是可用合法输入构造的反例",
+      "unknown_when": "闰三月本节未给起例，不能当作与用例同一组输入；其他月日时只按同一数法另算，不套用该用例结论",
+      "rescue": "unimplemented",
+      "vernacular": "原书用例如农历三月初五日辰时，逐步为月宫速喜、日宫大安、时宫小吉。本盘{lunar_month}月{lunar_day}日{hour_branch}时逐步为月宫{month_palace}、日宫{day_palace}、时宫{hour_palace}。",
+      "implementation_assumption": "用例只固定三月初五日辰时这一组输入；其余月日时按同一数法另算，不外推用例的时宫。",
+      "verified": false
+    },
+    {
+      "id": "YXJ-E-03",
+      "art": "xiaoliuren",
+      "theme": "以时宫为推占落点（月宫日宫只作起算）",
+      "school": "玉匣记·李淳風六壬時課（托名，未证实）",
+      "paragraph_ids": [
+        "yuqia-ji:L4213-L4213"
+      ],
+      "sources": [
+        {
+          "paragraph_id": "yuqia-ji:L4213-L4213",
+          "start_line": 4213,
+          "end_line": 4213,
+          "quote": "其法：每從“大安”上起正月，月上起日，日上起時。假如三月初五日辰時，三月在“速喜”上，就“速喜”上起初一，初五在“大安”，“大安”上起子時，數至辰時是“小吉”，就以“小吉”推占。餘皆仿此。"
+        }
+      ],
+      "quote": "其法：每從“大安”上起正月，月上起日，日上起時。假如三月初五日辰時，三月在“速喜”上，就“速喜”上起初一，初五在“大安”，“大安”上起子時，數至辰時是“小吉”，就以“小吉”推占。餘皆仿此。",
+      "page": "xiaoliuren",
+      "required_facts": [
+        "xiaoliuren.palace.month",
+        "xiaoliuren.palace.day",
+        "xiaoliuren.palace.hour"
+      ],
+      "when": {
+        "exists": "xiaoliuren.palace.hour"
+      },
+      "satisfy_when": "推占落点等于时宫；月宫只给日宫提供起算位置，日宫只给时宫提供起算位置",
+      "fail_when": "把月宫或日宫当成推占落点：落点与时宫不同却以月宫或日宫定性",
+      "unknown_when": "三宫未数全或时辰无法识别时不能确定落点；时宫与月宫同名时不能只靠宫名分辨落点，须回读数法过程",
+      "rescue": "unimplemented",
+      "vernacular": "本次落点取时宫{hour_palace}；月宫{month_palace}与日宫{day_palace}是数法中的起算位置，不是三个并列结论。",
+      "implementation_assumption": "原文「就以小吉推占」的落点是时宫，未把月、日、时三宫当三件独立预测，也不按吉类数量投票。",
+      "verified": false
+    },
+    {
+      "id": "YXJ-E-04",
+      "art": "xiaoliuren",
+      "theme": "时宫六宫象义读取（时候、五行、六神）",
+      "school": "玉匣记·李淳風六壬時課（托名，未证实）",
+      "paragraph_ids": [
+        "yuqia-ji:L4215-L4215",
+        "yuqia-ji:L4221-L4221",
+        "yuqia-ji:L4227-L4227",
+        "yuqia-ji:L4233-L4233",
+        "yuqia-ji:L4239-L4239",
+        "yuqia-ji:L4245-L4245"
+      ],
+      "sources": [
+        {
+          "paragraph_id": "yuqia-ji:L4215-L4215",
+          "start_line": 4215,
+          "end_line": 4215,
+          "quote": "大安 身不動時，屬木青龍，凡謀事主一、五、七；"
+        },
+        {
+          "paragraph_id": "yuqia-ji:L4221-L4221",
+          "start_line": 4221,
+          "end_line": 4221,
+          "quote": "留連 卒未妝時，屬水玄武，凡謀事主二、八、十；"
+        },
+        {
+          "paragraph_id": "yuqia-ji:L4227-L4227",
+          "start_line": 4227,
+          "end_line": 4227,
+          "quote": "速喜 人便至時，屬火朱雀，凡謀事立三、六、九；"
+        },
+        {
+          "paragraph_id": "yuqia-ji:L4233-L4233",
+          "start_line": 4233,
+          "end_line": 4233,
+          "quote": "赤口 官事凶時，屬金白虎，凡謀事主四、七、十；"
+        },
+        {
+          "paragraph_id": "yuqia-ji:L4239-L4239",
+          "start_line": 4239,
+          "end_line": 4239,
+          "quote": "小吉 人來喜時，屬木六合，凡謀事主一、五、七；"
+        },
+        {
+          "paragraph_id": "yuqia-ji:L4245-L4245",
+          "start_line": 4245,
+          "end_line": 4245,
+          "quote": "空亡 信音稀時，屬土勾陳，凡謀事主一、五、七；"
+        }
+      ],
+      "quote": "大安 身不動時，屬木青龍，凡謀事主一、五、七；\n[…]\n留連 卒未妝時，屬水玄武，凡謀事主二、八、十；\n[…]\n速喜 人便至時，屬火朱雀，凡謀事立三、六、九；\n[…]\n赤口 官事凶時，屬金白虎，凡謀事主四、七、十；\n[…]\n小吉 人來喜時，屬木六合，凡謀事主一、五、七；\n[…]\n空亡 信音稀時，屬土勾陳，凡謀事主一、五、七；",
+      "page": "xiaoliuren",
+      "required_facts": [
+        "xiaoliuren.palace.hour",
+        "xiaoliuren.spirit.timeSense",
+        "xiaoliuren.spirit.element",
+        "xiaoliuren.spirit.animal"
+      ],
+      "when": {
+        "exists": "xiaoliuren.palace.hour"
+      },
+      "satisfy_when": "时宫名称命中本节六宫名单，并记录该宫原文所写的当时候义、五行与所配六神",
+      "fail_when": "无独立不满足分支：本节只列大安、留连、速喜、赤口、小吉、空亡六个宫名；命中不到即不补写象义，不构成反例",
+      "unknown_when": "「凡謀事主」所列日数（如一、五、七）本节没有展开用法，信息不足，不执行；本节象义不是对本盘现实事件成败的确认",
+      "rescue": "unimplemented",
+      "vernacular": "时宫{hour_palace}的当时候义是「{time_sense}」，属{element}、配{animal}。这是宫名象义，不是对本盘现实结果的确认。",
+      "implementation_assumption": "六宫名单按本节原文顺序；「凡謀事主」日数用法未展开，不换算成应期。原文疑字（卒未妝時等）不改。",
+      "verified": false
+    },
+    {
+      "id": "YXJ-E-05",
+      "art": "xiaoliuren",
+      "theme": "断曰歌诀与三宫组合不并入本盘断语",
+      "school": "玉匣记·李淳風六壬時課（托名，未证实）",
+      "paragraph_ids": [
+        "yuqia-ji:L4217-L4217",
+        "yuqia-ji:L4235-L4235"
+      ],
+      "sources": [
+        {
+          "paragraph_id": "yuqia-ji:L4217-L4217",
+          "start_line": 4217,
+          "end_line": 4217,
+          "quote": "斷曰：大安事事昌，求謀在神方，失物去不遠，宅舍保安康，"
+        },
+        {
+          "paragraph_id": "yuqia-ji:L4235-L4235",
+          "start_line": 4235,
+          "end_line": 4235,
+          "quote": "斷曰：赤日主口舌，官非切要防，失物急去尋，行人有驚慌，"
+        }
+      ],
+      "quote": "斷曰：大安事事昌，求謀在神方，失物去不遠，宅舍保安康，\n[…]\n斷曰：赤日主口舌，官非切要防，失物急去尋，行人有驚慌，",
+      "page": "xiaoliuren",
+      "required_facts": [
+        "xiaoliuren.palace.hour",
+        "xiaoliuren.count.good",
+        "xiaoliuren.count.evil"
+      ],
+      "when": {
+        "exists": "xiaoliuren.count.good"
+      },
+      "satisfy_when": "解释层只给宫名象义、数法过程与吉类或凶类标签计数，不把三宫吉类数量当成功率或多数票，断曰歌诀不重编为本盘新断语",
+      "fail_when": "把三宫吉类数量相加当成结论、用多数票保证结局，或用断曰歌诀替代本盘事实",
+      "unknown_when": "三宫合参与救应关系本节未给，信息不足，不执行；赤口断曰「赤日主口舌」「更須訪咒詛」有疑字，不改字也不据此下断",
+      "rescue": "unimplemented",
+      "vernacular": "三宫中{good_count}宫用「吉」类标签、{evil_count}宫用「凶」类标签；它们是位置分类计数，不是三次独立预测，也不能换成成功率。",
+      "implementation_assumption": "断曰歌诀属原书断语，本节不重编为产品断语；吉凶是宫名通行分类，不是原文给出的组合胜负。",
+      "verified": false
+    },
+    {
+      "id": "YXJ-E-06",
+      "art": "xiaoliuren",
+      "theme": "闰月起课口径（本节未规定）",
+      "school": "玉匣记·李淳風六壬時課（托名，未证实）",
+      "paragraph_ids": [
+        "yuqia-ji:L4213-L4213"
+      ],
+      "sources": [
+        {
+          "paragraph_id": "yuqia-ji:L4213-L4213",
+          "start_line": 4213,
+          "end_line": 4213,
+          "quote": "其法：每從“大安”上起正月，月上起日，日上起時。假如三月初五日辰時，三月在“速喜”上，就“速喜”上起初一，初五在“大安”，“大安”上起子時，數至辰時是“小吉”，就以“小吉”推占。餘皆仿此。"
+        }
+      ],
+      "quote": "其法：每從“大安”上起正月，月上起日，日上起時。假如三月初五日辰時，三月在“速喜”上，就“速喜”上起初一，初五在“大安”，“大安”上起子時，數至辰時是“小吉”，就以“小吉”推占。餘皆仿此。",
+      "page": "xiaoliuren",
+      "required_facts": [
+        "xiaoliuren.lunar.month"
+      ],
+      "when": {
+        "exists": "xiaoliuren.lunar.month"
+      },
+      "satisfy_when": "本盘农历月不是闰月：本节未规定闰月，故该实现口径不适用",
+      "fail_when": "无独立不满足分支：本节没有闰月起例，无法用原文反例判定对错",
+      "unknown_when": "本盘为闰月：本节未给闰月起例，原文信息不足；现行实现按所闰之月同数，属实现口径，不得写成古文规定",
+      "rescue": "unimplemented",
+      "vernacular": "本盘农历月为{lunar_month}：本节未给闰月起例。现行按所闰之月同数取宫，是实现口径，不是原文规定。",
+      "implementation_assumption": "闰月同月取数是实现口径，不可写成《玉匣记》规定。",
+      "verified": false
+    }
+  ]
+}
