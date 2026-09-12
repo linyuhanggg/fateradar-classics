@@ -1243,7 +1243,7 @@
       "satisfy_when": "月刃格已按原文阳刃败格记录无官煞的透藏",
       "fail_when": "不是月刃格",
       "unknown_when": "制刃力量未论；无官煞不是败格结论，见官煞透干也不是已经成格，不得输出破格",
-      "rescue": "unimplemented",
+      "rescue": "ZPR-E-03",
       "vernacular": "阳刃败格只记透藏。无官煞出现不等于破格。",
       "implementation_assumption": "无官煞：原局不见正官偏官为满足，只见藏干为信息不足，透干为不满足。不把月刃格改名为阳刃格。completion 仍为信息不足，不得输出破格。",
       "verified": false
@@ -1315,7 +1315,7 @@
       "satisfy_when": "食神格已记录生财露煞的透藏",
       "fail_when": "不是食神格",
       "unknown_when": "逢枭已另记；生财露煞不是破格结论，不得输出破格",
-      "rescue": "unimplemented",
+      "rescue": "ZPR-E-03",
       "vernacular": "食神败格只记透藏。生财露煞出现不等于破格。",
       "implementation_assumption": "生财露煞按财透且七杀透。逢枭仍走既有枭神夺食。completion 仍为信息不足，不得输出破格。",
       "verified": false
