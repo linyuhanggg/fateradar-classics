@@ -1,6 +1,6 @@
 {
   "schema": "fateradar-delivery-acceptance-v1",
-  "generated_at": "2026-09-13T05:45:00Z",
+  "generated_at": "2026-09-13T05:55:00Z",
   "generated_by": "DSH captain（本会话 goal round 1/256）",
   "authority": "classics:docs/FATERADAR_FULL_LIBRARY_PLAN.md（含 2026-09-13 收尾执行修订）",
   "purpose": "唯一收尾状态账本：逐项对应权威方案「总验收与完成条件」1–8。引用既有矩阵与报告，不新造重复指标。",
@@ -384,6 +384,11 @@
           "path": "product:docs/implementation/ART-VERDICT-SOURCE-CASE-RECONCILIATION.md（algo-impl，已提交 product cf0c1f7）",
           "shows": "原书案例『人读断语对账』第一份：10 条挂接（去重 7 个命例）逐条并排读「原书断语要点 vs 引擎判定」。结果：1 条**不适用**（QTB-M-01-09 四柱自身不成立——甲子日无甲申时，原文自标疑例）、5 条**相符**、1 条引擎**信息不足但与原文不矛盾**（ZPR-E-06 财只见藏干，原文同样以财印为辅为条件）。**零例出现「引擎判不满足、原书作正面例」的方向性冲突**（但仅覆盖 7 例，不得外推）。另含一条自查更正：第 41 轮「QTB-M-10-03 缺月内时段粒度」是错的——该条早已有 term-phase 路线 QTB-M-10-03-C01/C02（谷雨前/后），真正缺口是 QTB-M-09-12 与 QTB-M-10-06，已由第 43 轮补齐十二个月中气",
           "kind": "member-produced + captain-read"
+        },
+        {
+          "path": "product:docs/implementation/QIMEN-CASE-DIFF-TRIAGE-20260913.md（168 行，t10 归档）",
+          "shows": "奇门差异四类判定成文：1,919 条结构化案例中 **77 条差异，0 条可归因于引擎实现缺陷**——73 条是**原书同书两处印值互不一致**（引擎与其中一处一致，已登记 conflictingFields）、4 条是**原印数与同书正文一般法冲突**（P266/P273 阴五丁酉 9 vs 8、P312/P319 阴八丙申 3 vs 1，引擎取正文法，仓库 methodDifferences 早已登记同一批）；历史上的 1,543 条「starPalaceRaw 系统性错位」= **比对侧字段映射错**，修正后归零。**关键：captain 的起手假设被用「构造输入法」严格检验**——3 局 × 6 旬 × 10 时 = **180 条构造用例**（不依赖任何原书案例），命题「`starPalaceRaw` == 时干在地盘之宫（时干为甲时用旬首之仪）」**180/180 全部成立、0 例外** → 假设(a)（抽取侧取错字段）成立、假设(b)（引擎漏逐时移宫）**被排除**；该命题已钉成回归测试 `tests/engine/qimen-star-palace-semantics.test.ts`。纪律声明：未改引擎、未刷 golden、未为降低差异数迁就原书",
+          "kind": "member-produced + captain-read（含构造输入反证）"
         }
       ],
       "remaining": [
