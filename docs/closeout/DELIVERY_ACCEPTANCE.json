@@ -1,6 +1,6 @@
 {
   "schema": "fateradar-delivery-acceptance-v1",
-  "generated_at": "2026-09-13T08:15:00Z",
+  "generated_at": "2026-09-13T08:25:00Z",
   "generated_by": "DSH captain（本会话 goal round 1/256）",
   "authority": "classics:docs/FATERADAR_FULL_LIBRARY_PLAN.md（含 2026-09-13 收尾执行修订）",
   "purpose": "唯一收尾状态账本：逐项对应权威方案「总验收与完成条件」1–8。引用既有矩阵与报告，不新造重复指标。",
@@ -216,6 +216,11 @@
           "path": "classics:docs/closeout/review/INDEPENDENT-VERIFICATION-20260913.md + scripts-20260913/",
           "shows": "reviewer 独立核对：643/643 条带 anchor 的可执行规则，其全部引文在 pin 3dc9d01 与当前 classics main eb4cabe 两个 revision 下都精确落在锚点行区间（0 漂移）。这把「引文可回到准确原文范围」从抽样提升到该 643 条锚点集合的全量，且是跨两个 revision 的双向核对",
           "kind": "independent-verification"
+        },
+        {
+          "path": "captain 实测分组：a1-draft-disposition-20260913.json#entries（1,296 条 entry-review-pending 按书/kind 分组）",
+          "shows": "**批次已按实测落地，可直接派工**：`entry-review-pending` 共 **1,296** 条 —— **按书**：daliuren-daquan **769**、mayi-shenxiang 193、yuqia-ji 125、liuren-miben 114、huangji-jingshi 40、ziwei-doushu-quanshu 40、dili-bianzheng 4、tianyu-jing 4；**按 kind**：待核实 **794**、规则候选 297、术语 106、案例 73、理论 16、操作步骤 10；**最大交叉批**：(daliuren-daquan, 待核实) **684** ／ (mayi-shenxiang, 规则候选) 128 ／ (liuren-miben, 规则候选) 60 ／ (daliuren-daquan, 规则候选) 58 ／ (yuqia-ji, 术语) 54。→ t23 的「最大一批」有确定答案：**daliuren-daquan × 待核实 = 684 条**（该书的另 58 条规则候选可作第二批）。这批是扩大 A2 可引用锚点基数的主力；纪律仍是**逐条依据、不批量提升、补充来源不作投票**。",
+          "kind": "captain-measured-now"
         }
       ],
       "remaining": [
