@@ -1,6 +1,6 @@
 {
   "schema": "fateradar-delivery-acceptance-v1",
-  "generated_at": "2026-09-13T03:55:00Z",
+  "generated_at": "2026-09-13T04:05:00Z",
   "generated_by": "DSH captain（本会话 goal round 1/256）",
   "authority": "classics:docs/FATERADAR_FULL_LIBRARY_PLAN.md（含 2026-09-13 收尾执行修订）",
   "purpose": "唯一收尾状态账本：逐项对应权威方案「总验收与完成条件」1–8。引用既有矩阵与报告，不新造重复指标。",
@@ -632,11 +632,16 @@
           "path": "product:src/lib/rules/source-link.ts + .github/workflows/ci.yml（captain 实测 diff）",
           "shows": "版本钉已前移且**三处一致**：`CLASSICS_REV` 由 `3dc9d01b…` 更新为 `c45dfdb4…`（当前 classics main），`.github/workflows/ci.yml` 的 classics checkout `ref:` **同为 `c45dfdb497a3ba802881a4191b976a6786a7f3d1`**，`bazi-anchor-rule-index.json` 的 `sourceRevision` 亦为 `c45dfdb…` → 消除「CI 检出 ref 与 CLASSICS_REV 不一致会让测试读不到原文」的风险。成员自述前移前逐条核过 7 份生成产物共 578 个锚点「在其自身 sourceRevision 与该 main 上文本一致（0 漂移）」——**该数字待独立复核**；且其注释引用的 `docs/implementation/A8-CONTENT-REVISION-PIN-AUDIT.md` **当前尚不存在**（悬空引用，需补或删）",
           "kind": "captain-measured-now（工作树未提交，属 t9 进行中）"
+        },
+        {
+          "path": "captain 独立锚点核对（classics 仓 git show 取文本，空白归一后逐字比对）",
+          "shows": "①**重生成产物与新钉相符**：`bazi-anchor-rule-index.json`（sourceRevision=c45dfdb）的 **362 个 fragment 覆盖全部 183 条规则**，每个 fragment 的 quote 与该钉上对应行区间文本**逐字一致，0 处不符**（方法：git show c45dfdb:<file> 切片后空白归一比对，判定 quote ⊆ 源文本 或 源文本 ⊆ quote）。②**未重生成的产物对新钉不漂移**：`reading-notes.json`（sourceRevision=a8edc922，旧钉）的 12 个带 anchor 的条目，在其自身 sourceRevision 与 c45dfdb 两处的行区间文本**完全相同（0 漂移）**，且 12/12 quote 与 c45dfdb 上文本一致。→ 支持「前移 CLASSICS_REV 不改变链接语义」这一结论；成员自述的 578 锚点覆盖 7 份产物，captain 本次独立覆盖其中 2 份（374 锚点），其余由 reviewer-2 在 t15 独立复跑",
+          "kind": "captain-reverified-now"
         }
       ],
       "remaining": [
         {
-          "item": "内容导出与代码版本可对应【硬缺口，修复进行中】：`bazi-anchor-rule-index.json` 已重生成（sourceRevision df73f232→c45dfdb，54/183 行补回缺失救应句片段）；`CLASSICS_REV` 已由 3dc9d01b 前移到 c45dfdb，且 **ci.yml 的 ref 已同步为同一 SHA**（captain 实测三处一致）。**仍待**：①成员声称的「578 锚点 0 漂移」需独立复核 ②其注释引用的 A8-CONTENT-REVISION-PIN-AUDIT.md 尚不存在（悬空引用）③生成器改动需确认只涉取源逻辑、对同一 pin 可复现",
+          "item": "内容导出与代码版本可对应【基本修复，待收口】：bazi-anchor 已重生成（df73f232→c45dfdb，54/183 行补回救应句片段）；CLASSICS_REV 与 ci.yml ref 三处同步为 c45dfdb；captain 独立核到 362/362 fragment 与新钉逐字相符、reading-notes 12 锚点在两钉间 0 漂移。**仍待**：①成员声称的 578 锚点/7 产物全量由 reviewer-2 独立复跑（captain 已覆盖其中 374）②`A8-CONTENT-REVISION-PIN-AUDIT.md` 悬空引用需补或删 ③生成器改动确认只涉取源逻辑",
           "kind": "implementation-gap",
           "scope": "product 内容导出 ↔ classics main（bazi-anchor-rule-index 内容漂移）",
           "blocks": "A8 working→pass（硬缺口）"
