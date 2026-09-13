@@ -8410,36 +8410,36 @@
     {
       "pdfPage": 308,
       "status": "partial",
-      "scope": "卷九印页一〇，阴七局逐时表六时支列（癸卯至戊申）行标、宫数、已读断语",
+      "scope": "卷九印页一〇，阴七局逐时表六时支列（癸卯至戊申）行标、宫数、已读断语；本页版心在右，无前页续文栏",
       "reviewedRanges": [
         {
-          "startLine": 7,
-          "endLine": 10,
+          "startLine": 8,
+          "endLine": 11,
           "scope": "癸卯行标宫数短标与断语已对图"
         },
         {
-          "startLine": 12,
-          "endLine": 15,
+          "startLine": 13,
+          "endLine": 16,
           "scope": "甲辰人遁列已对图"
         },
         {
-          "startLine": 17,
-          "endLine": 19,
+          "startLine": 18,
+          "endLine": 20,
           "scope": "乙巳列已对图"
         },
         {
-          "startLine": 21,
-          "endLine": 24,
+          "startLine": 22,
+          "endLine": 25,
           "scope": "丙午三奇得使列已对图"
         },
         {
-          "startLine": 26,
-          "endLine": 28,
+          "startLine": 27,
+          "endLine": 29,
           "scope": "丁未列已对图"
         },
         {
-          "startLine": 30,
-          "endLine": 33,
+          "startLine": 31,
+          "endLine": 34,
           "scope": "戊申真天遁列已对图"
         }
       ],
@@ -8454,7 +8454,7 @@
     {
       "pdfPage": 309,
       "status": "partial",
-      "scope": "卷九印页一一，阴七局逐时表；戊癸日标目与己酉至甲寅列",
+      "scope": "卷九印页一一，阴七局逐时表；戊癸日标目与己酉至甲寅行标；甲寅断语跨至310页最右",
       "reviewedRanges": [
         {
           "startLine": 7,
@@ -8463,51 +8463,68 @@
         },
         {
           "startLine": 9,
-          "endLine": 30,
-          "scope": "己酉至甲寅行标宫数与已读断语已对图；甲寅短列照实"
+          "endLine": 27,
+          "scope": "己酉至癸丑行标宫数与双列先右后左断语已对图"
+        },
+        {
+          "startLine": 29,
+          "endLine": 32,
+          "scope": "甲寅行标宫数已对图；本页无断语"
         }
       ],
       "rangeCoordinates": "PDF标题行0，其后按页内相对行号",
       "unresolved": [
-        "甲寅列断语仅见芮死二二，其余未列。"
+        "甲寅本页无左侧断语；续文在 PDF 第310页最右，不在本页。"
       ],
       "notes": [
-        "戊癸日不计入行标序。"
+        "戊癸日不计入行标序。",
+        "本页版心在左。甲寅不是无断语短列。"
       ]
     },
     {
       "pdfPage": 310,
       "status": "partial",
-      "scope": "卷九印页一二，阴七局逐时表乙卯至庚申及右缘短标",
+      "scope": "卷九印页一二，阴七局逐时表；最右为甲寅续文，乙卯至庚申行标；庚申断语跨至311页最右",
       "reviewedRanges": [
         {
           "startLine": 7,
-          "endLine": 7,
-          "scope": "右缘戌日五不遇短标已对图"
+          "endLine": 9,
+          "scope": "最右甲寅续文（戌日五不遇至飞干格）已对图，归属前页甲寅"
         },
         {
-          "startLine": 9,
-          "endLine": 30,
-          "scope": "乙卯至庚申已对图；庚申短列照实"
+          "startLine": 11,
+          "endLine": 29,
+          "scope": "乙卯至己未断语已对图；己未含刑格景兌迫"
+        },
+        {
+          "startLine": 31,
+          "endLine": 34,
+          "scope": "庚申行标宫数已对图；本页无断语"
         }
       ],
       "rangeCoordinates": "PDF标题行0，其后按页内相对行号",
       "unresolved": [
-        "庚申列仅见死五芮五。"
+        "庚申本页无左侧断语；续文在 PDF 第311页最右，不在本页。"
       ],
       "notes": [
-        "右缘短标不并入乙卯。"
+        "最右小字不是无时支短标，也不并入乙卯。",
+        "本页版心在右。"
       ]
     },
     {
       "pdfPage": 311,
       "status": "partial",
-      "scope": "卷九印页一三，阴七局逐时表辛酉壬戌癸亥三列",
+      "scope": "卷九印页一三，阴七局逐时表；最右为庚申续文，辛酉壬戌癸亥三时支断语在各自大字左侧",
       "reviewedRanges": [
         {
           "startLine": 7,
-          "endLine": 19,
-          "scope": "三时支列与左缘收束标已对图"
+          "endLine": 9,
+          "scope": "最右庚申续文已对图"
+        },
+        {
+          "startLine": 11,
+          "endLine": 21,
+          "scope": "辛酉壬戌癸亥三列归属已对图；小字在对应时支左侧"
         }
       ],
       "rangeCoordinates": "PDF标题行0，其后按页内相对行号",
@@ -8515,6 +8532,7 @@
         "本页仅三组时支，不据前页六组补列。"
       ],
       "notes": [
+        "旧误：辛酉断语错配壬戌、壬戌错配癸亥、癸亥断语成无时支孤段、庚申续文错配辛酉。已按列左断语重配。",
         "次页312为阴八局总表，本页断语不续入。"
       ]
     },

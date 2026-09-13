@@ -5,22 +5,22 @@
  "verified": false,
  "canonical_eligible": false,
  "counts": {
-  "zongqian_set_total": 666,
-  "zongqian_samples_in_this_file": 666,
+  "zongqian_set_total": 664,
+  "zongqian_samples_in_this_file": 664,
   "unconfirmed_facsimile_listed": 16,
   "precise_undecided_not_blocking": 682,
   "blocks_main_capability": 0,
   "inventory_arithmetic": "已存影印 34 + Release 影印 5 + 尚未确认影印 16 = 55（catalog ready）",
-  "zongqian_items_listed": 666,
+  "zongqian_items_listed": 664,
   "zongqian_items_with_facsimile_page": 664
  },
  "discrepancy_note": "计划文档 FATERADAR_FULL_LIBRARY_PLAN.md 与账本 A1 写「未确认底本 14 套」；磁盘实数（LIBRARY_INVENTORY.md，2026-09-12 脚本生成）为 **16 套**，且 34+5+16=55 正好等于 catalog ready 55，故以磁盘实数 16 为准；「14」少计 2 套，差在哪两套未查明（不猜），请 captain 裁定以哪一数为账本口径。",
  "items": [
   {
-   "id": "總鈐残格·daliuren-daquan:L1010-L1010",
-   "what_is_missing": "**影印在仓、逐格归属不可判**（旧记「缺影印件」已推翻）：四庫本卷一影印在仓内（sources/facsimile/other/daliuren-daquan/liuren-daquan-juan1-siku-archive-06054168.pdf，112 页，sha256 7790f774…；《總鈐》＝PDF p15 标题、十表连号 p16–p25，另有逐格转录件 zongqian-cells-016-020／021-025）。仍未决的是**逐格内容的归属**：该印本字心距≈70px、字面宽≈100–110px，同列相邻字粘连成 200–250px 墨条、相邻两栏在 x 上重叠 → 「某处有哪些字」可读，「该字属哪一格」不可判。本条即此精确未决登记。",
-   "attempts": "类级口径（666 条同）：① B2 溯源（docs/closeout/B2-DALIUREN-RESIDUE-SOURCE-HUNT.md）识别集合与重算指令；② B4（docs/closeout/B4-SHIDIAN-SK1599-ZONGQIAN-FETCH.md）实抓识典 SK1599「總鈐」章比对，六壬指南／大六壬秘本／六壬秘本无同表平行本；③ t10 复核：影印已在仓、十表连号 p16–p25；④ t7/t11 影印线：版式普查（可列性成立）＋逐格转录两半批；⑤ DRAFT_DISPOSITION_ROUND6.md §3：666/666 已追加更正 note（旧阻塞理由过时），原文与正文字段未改。",
-   "product_handling": "保留〔?〕**不入规则**：保持 draft（kind=待核实），不入 references/executable、不进算法、不猜字、不补格、不连成月日全表、不升 verified；只作「已披露限制」参与验收。**解锁条件＝取得可判归属的清晰影印或平行本**（能把「字→格」归属定下来；现有转录件已覆盖部分格但归属未定），再由独立复核把已定格升 passage-reviewed。",
+   "id": "十二月神煞疑字·daliuren-daquan:L1010-L1010",
+   "what_is_missing": "本条是十二月辰神煞表（fulltext.md L1010），不是《總鈐》残格。全文「总钤」始于 L1040。未决：浴神未见前起例，疑浴盆，不改正文、不径改浴盆。",
+   "attempts": "2026-09-14：对照 fulltext.md L1000–L1040 与注解 vernacular。L1010 为十二月辰神煞名单。t2/t10 总钤残格 notes 是批次粘贴，已加 t30 边界更正。",
+   "product_handling": "保持 draft；不入 executable；不以总钤残格消费。解锁＝神煞名平行本或可核印本，不是总钤「字→格」归属。",
    "class": "precise-undecided-not-blocking",
    "locator": {
     "paragraphId": "daliuren-daquan:L1010-L1010",
@@ -40,18 +40,18 @@
      "螣蛇"
     ],
     "facsimile_page": null,
-    "facsimile_page_basis": "本条未自述可映射标目（月表/其它起式），页级映射未建立",
-    "facsimile_scope": "《總鈐》十表连号引 p16–p25（PDF 页；六甲日…六癸日，一页一表）；电子本↔影印的逐格/逐列映射未建立，故页码只到「表（页）·标目组」一级，列与格位不填。",
-    "column_within_table": "未建立（电子本↔影印逐列映射不存在；不得据内容推算填空）",
+    "facsimile_page_basis": "十二月神煞表，不映射總鈐 p16–p25。",
+    "facsimile_scope": "本条不在《總鈐》十表。页级映射未建立。",
+    "column_within_table": "不适用（非总钤格）",
     "kind": "待核实",
     "review": "draft"
    }
   },
   {
-   "id": "總鈐残格·daliuren-daquan:L1038-L1038",
-   "what_is_missing": "**影印在仓、逐格归属不可判**（旧记「缺影印件」已推翻）：四庫本卷一影印在仓内（sources/facsimile/other/daliuren-daquan/liuren-daquan-juan1-siku-archive-06054168.pdf，112 页，sha256 7790f774…；《總鈐》＝PDF p15 标题、十表连号 p16–p25，另有逐格转录件 zongqian-cells-016-020／021-025）。仍未决的是**逐格内容的归属**：该印本字心距≈70px、字面宽≈100–110px，同列相邻字粘连成 200–250px 墨条、相邻两栏在 x 上重叠 → 「某处有哪些字」可读，「该字属哪一格」不可判。本条即此精确未决登记。",
-   "attempts": "类级口径（666 条同）：① B2 溯源（docs/closeout/B2-DALIUREN-RESIDUE-SOURCE-HUNT.md）识别集合与重算指令；② B4（docs/closeout/B4-SHIDIAN-SK1599-ZONGQIAN-FETCH.md）实抓识典 SK1599「總鈐」章比对，六壬指南／大六壬秘本／六壬秘本无同表平行本；③ t10 复核：影印已在仓、十表连号 p16–p25；④ t7/t11 影印线：版式普查（可列性成立）＋逐格转录两半批；⑤ DRAFT_DISPOSITION_ROUND6.md §3：666/666 已追加更正 note（旧阻塞理由过时），原文与正文字段未改。",
-   "product_handling": "保留〔?〕**不入规则**：保持 draft（kind=待核实），不入 references/executable、不进算法、不猜字、不补格、不连成月日全表、不升 verified；只作「已披露限制」参与验收。**解锁条件＝取得可判归属的清晰影印或平行本**（能把「字→格」归属定下来；现有转录件已覆盖部分格但归属未定），再由独立复核把已定格升 passage-reviewed。",
+   "id": "十二月神煞疑字·daliuren-daquan:L1038-L1038",
+   "what_is_missing": "本条是十二月亥神煞表（fulltext.md L1038），不是《總鈐》残格。全文「总钤」始于 L1040。未决：灾神未见前起例，疑灾煞，不改正文、不径改灾煞。",
+   "attempts": "2026-09-14：对照 fulltext.md L1000–L1040 与注解 vernacular。L1038 为十二月亥神煞名单。t2/t10 总钤残格 notes 是批次粘贴，已加 t30 边界更正。",
+   "product_handling": "保持 draft；不入 executable；不以总钤残格消费。解锁＝神煞名平行本或可核印本，不是总钤「字→格」归属。",
    "class": "precise-undecided-not-blocking",
    "locator": {
     "paragraphId": "daliuren-daquan:L1038-L1038",
@@ -71,9 +71,9 @@
      "天猴"
     ],
     "facsimile_page": null,
-    "facsimile_page_basis": "本条未自述可映射标目（月表/其它起式），页级映射未建立",
-    "facsimile_scope": "《總鈐》十表连号引 p16–p25（PDF 页；六甲日…六癸日，一页一表）；电子本↔影印的逐格/逐列映射未建立，故页码只到「表（页）·标目组」一级，列与格位不填。",
-    "column_within_table": "未建立（电子本↔影印逐列映射不存在；不得据内容推算填空）",
+    "facsimile_page_basis": "十二月神煞表，不映射總鈐 p16–p25。",
+    "facsimile_scope": "本条不在《總鈐》十表。页级映射未建立。",
+    "column_within_table": "不适用（非总钤格）",
     "kind": "待核实",
     "review": "draft"
    }
@@ -17270,5 +17270,5 @@
    }
   }
  ],
- "note_expansion": "2026-09-13：按 captain 指令，總鈐残格由 10 条抽样扩展为**全量 666 条**（四栏同构、类级口径复用，未为 666 条重做取证）；未确认影印底本 16 套不变。"
+ "note_expansion": "2026-09-13：按 captain 指令，總鈐残格由 10 条抽样扩展为**全量 666 条**（四栏同构、类级口径复用，未为 666 条重做取证）；未确认影印底本 16 套不变。2026-09-14：L1010/L1038 移出總鈐集合（现 664）；两条改为十二月神煞疑字，不是格归属。"
 }
