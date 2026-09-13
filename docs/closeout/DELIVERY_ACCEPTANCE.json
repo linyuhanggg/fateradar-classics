@@ -1,6 +1,6 @@
 {
   "schema": "fateradar-delivery-acceptance-v1",
-  "generated_at": "2026-09-13T02:27:00Z",
+  "generated_at": "2026-09-13T02:30:00Z",
   "generated_by": "DSH captain（本会话 goal round 1/256）",
   "authority": "classics:docs/FATERADAR_FULL_LIBRARY_PLAN.md（含 2026-09-13 收尾执行修订）",
   "purpose": "唯一收尾状态账本：逐项对应权威方案「总验收与完成条件」1–8。引用既有矩阵与报告，不新造重复指标。",
@@ -530,13 +530,18 @@
           "path": "classics:docs/closeout/review/INDEPENDENT-VERIFICATION-20260913.md",
           "shows": "gh 独立核实 run 34731428150（classics eb4cabe）与 34731425370（product 230effd，19 步含 typecheck/test/build:worker/playwright e2e）均 success；643/643 带 anchor 规则全引文在 pin 3dc9d01 与 eb4cabe 双 revision 锚点行区间 0 漂移",
           "kind": "independent-verification"
+        },
+        {
+          "path": "product:.github/workflows/ci.yml（captain 实测）",
+          "shows": "CI 以 ref=3dc9d01b… checkout fateradar-classics 到 .fateradar-classics，注释写明用途是验证 CLASSICS_REV 可定位；因此“钉旧”本身不是缺陷，A8 的实质缺口是导出内容漂移",
+          "kind": "captain-verified-now"
         }
       ],
       "remaining": [
         {
-          "item": "内容导出与代码版本可对应【实测不成立，可复现】：src/lib/engine/generated/bazi-anchor-rule-index.json（sourceRevision df73f232，183 条）与在 classics main（eb4cabe）重生成相比 54 条不同（救应句来源段未随导出）；classics_rev 钉 3dc9d01 落后 main 1750 个提交，CI 的 classics 检出也钉该旧提交。复核产物：docs/closeout/review/bazi-anchor-rule-index-REGEN-20260913.json",
+          "item": "内容导出与代码版本可对应【硬缺口，可复现】：src/lib/engine/generated/bazi-anchor-rule-index.json（sourceRevision df73f232，183 条）与在 classics main（eb4cabe）重生成相比 54 条不同（救应句来源段未随导出）。复核产物：docs/closeout/review/bazi-anchor-rule-index-REGEN-20260913.json",
           "kind": "implementation-gap",
-          "scope": "product 内容导出 ↔ classics main（bazi-anchor-rule-index + CLASSICS_REV/CI pin）",
+          "scope": "product 内容导出 ↔ classics main（bazi-anchor-rule-index 内容漂移）",
           "blocks": "A8 working→pass（硬缺口）"
         },
         {
@@ -550,6 +555,12 @@
           "kind": "evidence-or-semantics-uncertainty",
           "scope": "product:deploy/**",
           "blocks": "不阻塞 A8（合入 main ≠ 已部署）"
+        },
+        {
+          "item": "CLASSICS_REV / product CI 的 classics 检出钉在 3dc9d01（落后 main 1750 提交）——captain 实测 ci.yml：该 checkout 的用途是「验证含 CLASSICS_REV 的 fateradar-classics 可定位」，钉旧提交是设计意图而非缺陷；且 reviewer 已核 643/643 条 anchor 引文在3dc9d01 与 eb4cabe 双 revision 下 0 漂移。因此**只需具名说明口径**，不必为“落后”本身改动；但若导出内容改钉，必须同步 ref 与源链接并重验定位与锚点",
+          "kind": "evidence-or-semantics-uncertainty",
+          "scope": "CLASSICS_REV / .github/workflows/ci.yml ref",
+          "blocks": "不阻塞 A8（需口径具名），导出内容若改钉则需同步"
         }
       ],
       "owner": "captain（唯一集成者）+ page-acceptance",
