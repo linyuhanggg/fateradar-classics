@@ -1,6 +1,6 @@
 {
   "schema": "fateradar-delivery-acceptance-v1",
-  "generated_at": "2026-09-13T05:35:00Z",
+  "generated_at": "2026-09-13T05:45:00Z",
   "generated_by": "DSH captain（本会话 goal round 1/256）",
   "authority": "classics:docs/FATERADAR_FULL_LIBRARY_PLAN.md（含 2026-09-13 收尾执行修订）",
   "purpose": "唯一收尾状态账本：逐项对应权威方案「总验收与完成条件」1–8。引用既有矩阵与报告，不新造重复指标。",
@@ -124,9 +124,20 @@
           "path": "classics:docs/closeout/review/a1-draft-disposition-20260913.json",
           "shows": "逐条去向表（2,835 行，一行一条，含重算 source_status 与 action）",
           "kind": "recomputed-now"
+        },
+        {
+          "path": "classics:docs/closeout/review/a1-draft-disposition-20260913.json（2,835 行逐条）+ A1-DRAFT-ACCOUNT-20260913.md（t7）",
+          "shows": "draft 去向分账已完成：**一行一条**（file / bookSlug / paragraphId / kind / source_status / disposition / action）共 2,835 条。四类：**台账元数据 1,531**（qimen nlc-layouts 1,261 + mingli-yueyan nlc-recovery 161 + 其余 109；去向＝保持 draft、不提升、不入审读队列）／**实质条目待审 1,296**（待核实 795、规则候选 297、术语 106、案例 73、理论 16、操作步骤 10）／**待影印转写 1**／**归档 7**（重复 2、序跋目录 5）。关键读数：**「已处理但尚未正式入库」（用户四分类的第 4 类）实测 0 条**（逐条重算源段落状态，含影印层 reviewedRanges 判定）——即 A1 的余量不是「搬运」，而是审读/转写尚未做。与 B1b 的 1,423 条闸门结论吻合（1,422 评注或元数据 + 1 待核实）：闸门拦的是台账。",
+          "kind": "member-produced + captain-read"
         }
       ],
       "remaining": [
+        {
+          "item": "draft 去向分账【已闭环】：2,835 条逐条有去向（一行一条），且第 4 类「已处理未入库」实测 0 条。**A1 距 pass 只剩两项需具名条目**：①《總鈐》666 残格（缺影印，仅列轴）逐项证据条目 ②14 套未确认底本逐项证据条目；另按流程需 **独立复核**确认 pass（captain 不自行判 pass）。注：账本 A1 pass_definition 的原意是「余量逐项登记为可定位状态（不要求清零）」——该前半已满足；若按「1,296 条实质条目必须审读完」理解，则它是**真实审读工作量**（属后续批次），不改变 A1 的「去向可定位」判定",
+          "kind": "evidence-or-semantics-uncertainty",
+          "scope": "A1 收尾：兩项具名条目 + 独立复核",
+          "blocks": "A1 working→pass"
+        },
         {
           "item": "2,835 条 draft 已四类分账并逐条登记去向（台账 1,531／实质待审 1,296／待转写 1／归档 7）；「已处理未入库」实测 0 条。A1 working→pass 余量＝1,296 条实质条目逐条审读（不批量升级）",
           "kind": "evidence-or-semantics-uncertainty",
@@ -358,6 +369,11 @@
           "path": "product:docs/implementation/QIMEN-CASE-DIFF-TRIAGE-20260913.md（algo-impl，未提交）",
           "shows": "奇门原书案例差异分类（t10 请求的四类判定，按已取消任务的问题给出正式归档）：①**抽取口径/字段映射错（比对侧）= 1,543 条历史值，已归零**——原书「星宫数」列跟**落宫**走（阳一局甲子旬乙丑时记 9，而值符原宫恒为 1），原先误比引擎 originPalace；改比 starPalaceRaw 后 **1,888/1,917** 逐值相同，其中 205 条「原书记 5（中五）/ 引擎寄坤 2」两种口径引擎都取得到，不构成差异。②**引擎实现缺陷 = 0 条**（77 条逐条追根：无一凭空算错，差异按页/表成组出现）。③**流派约定差异 = 0 条独立差异**（中五记 5 vs 寄坤 2 由 starPalaceRaw/starPalace 并列输出吸收）。④**原表歧义/两说并存 = 77 条**：73 条同书两处印值不一致（经典仓已登记 conflictingFields，72 条有同输入 sibling 印值等于引擎值）+ 4 条原印数与同书正文一般法冲突（P266/P273 阴五丁酉 9 vs 8、P312/P319 阴八丙申 3 vs 1，仓库 methodDifferences 已登记）。含 20 条跨阴阳遁/局/旬抽样逐条表、引擎字段语义代码路径（qimen.ts:284/298/301/302/340-341/362-365）与置信度分级。**纪律**：未改引擎实现、未刷 golden、未为让差异数下降迁就原书；独立复核仍走 t15",
           "kind": "triage + fix-record（本轮）"
+        },
+        {
+          "path": "product:tests/engine/qimen-star-palace-semantics.test.ts（algo-impl，未提交）",
+          "shows": "把符使表字段语义钉成回归测试（构造输入，不依赖原书案例）：①3 局 × 6 旬 × 10 时 = 180 条，`starPalaceRaw` 全部等于「时干（旬首用旬首仪）地盘宫」**180/180**、`doorPalaceRaw` 全部等于「旬首宫起阳顺阴逆」raw 落宫 **180/180** → **推翻**「引擎漏逐时移宫」；②阳一局甲子旬逐时原表第一列 1,9,8,7,1,2,3,4,5 与引擎 starPalaceRaw 逐项相同，同旬 originPalace 恒 1（证明 1,543 条假差异来自错比 originPalace）；③三字段语义互异样例：阳一局乙丑 originPalace=1 / starPalaceRaw=9，壬申 starPalaceRaw=5（中五 raw）/ starPalace=2（寄坤）；④阴遁同例亦通过。判定并入 QIMEN-CASE-DIFF-TRIAGE §1b（含跨（遁,局）18 条抽样表：与原书星宫数列一致 17/18，唯一例外 P198 阳九甲子属已登记「总表八八 / 逐时九九」来源冲突）。结论：**引擎无需改动**，差异分类维持 77 条（0 条引擎缺陷）",
+          "kind": "test + verification（本轮）"
         },
         {
           "path": "product:docs/implementation/ART-VERDICT-SOURCE-CASE-RECOMPUTE.json#batch2（algo-impl t6，已提交 product cf0c1f7；captain 于 10:34 复读当前文件）",
