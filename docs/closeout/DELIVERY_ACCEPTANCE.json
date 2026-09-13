@@ -1,6 +1,6 @@
 {
   "schema": "fateradar-delivery-acceptance-v1",
-  "generated_at": "2026-09-13T02:50:00Z",
+  "generated_at": "2026-09-13T02:55:00Z",
   "generated_by": "DSH captain（本会话 goal round 1/256）",
   "authority": "classics:docs/FATERADAR_FULL_LIBRARY_PLAN.md（含 2026-09-13 收尾执行修订）",
   "purpose": "唯一收尾状态账本：逐项对应权威方案「总验收与完成条件」1–8。引用既有矩阵与报告，不新造重复指标。",
@@ -334,22 +334,27 @@
           "kind": "ledger"
         },
         {
-          "path": "product:docs/implementation/ART-VERDICT-SOURCE-CASE-RECOMPUTE.json#batch2（algo-impl t6，未提交）",
-          "shows": "批次2 结构化复算（原书输入 + 原书期望 逐字段比对）：案例全集 3,568，结构化比较 1,932 行。byArt：liuyao 13（matchedAll 4 / withDiff 9）、qimen 1,919（matchedAll 365 / withDiff 1,554）。差异字段分布（captain 实测）：starPalaceRaw 1,543、chiefStar 41、chiefDoor 40、doorPalaceRaw 27、mainGua 5。skippedByInputBasis：liuyao-line-symbols 1、ziwei-component 178（引擎无按组件取命身宫/紫微星位的入口 → 登记不适用，不猜不补造生日）。meihuaMonthInvariance.checked = 0（未检查）",
-          "kind": "generated-diff（差异未分类，不得当缺陷数，也不得当 pass）"
+          "path": "product:docs/implementation/ART-VERDICT-SOURCE-CASE-RECONCILIATION.md#第二批（algo-impl t6，未提交）",
+          "shows": "逐条人读断语对账 27 条：六爻 13（盘面 21/34 字段全一致；按断语所指对象显式取用后逐条给出候选与优先：11 相符、2 部分相符、1 具名限制）＋梅花 2（起卦算式与卦形 7/7 相符）＋奇门 5（4 一致、1 来源冲突）＋八字 7（满足/不满足/信息不足三态都出现；3 处口径差异或「座次≠用例」已具名）",
+          "kind": "human-read-reconciliation（本轮）"
+        },
+        {
+          "path": "product:docs/implementation/ART-VERDICT-SOURCE-CASE-RECOMPUTE.json#batch2（algo-impl t6，未提交；captain 于 10:34 复读当前文件）",
+          "shows": "批次2 当前状态（已修正抽取口径后重生成）：qimen 1,919 条 → matchedAll **1,842** / withDiff **77**；liuyao 13 → matchedAll 13 / withDiff 0；meihua 2 → matchedAll 2 / withDiff 0；合计 differenceCount **77**。starPalaceSemantics（1,917 可比）：matchesRawLandingPalace **1,888**、matchesAdjustedStarPalace 1,684、matchesOriginPalace 376 → 原表两列数确实跟**落宫**走，不是「原宫」；引擎对落宫口径的正确率约 98.5%。captain 另用引擎直接复算 阳一局 乙丑时：starPalaceRaw=9（原书 9）、doorPalaceRaw=2（原书 2）、originPalace=1 → 引擎该例正确，此前 1,543 条 starPalaceRaw「差异」系抽取口径未对齐所致的假差异",
+          "kind": "captain-reverified-now（含引擎直算复现）"
         }
       ],
       "remaining": [
         {
-          "item": "原书案例机械挂接仅 10/3,568（第 41 轮：10 条逐条复算＋人读断语对账）",
+          "item": "原书案例机械挂接：第一批 10 条（四柱逐字出现在规则 sources.quote）＋本批 1,934 条结构化逐字段复算＋17 条同段落座次（新增 14 例）。仍未覆盖全库 3,568 条：ziwei-component 178 条引擎无组件级入口（不适用）、meihua-hexagram 3 条无入口、并列柱/缺输入若干；四柱族（1,442 条）座次挂接只到 28 例",
           "kind": "implementation-gap",
-          "scope": "source-cases.json → product 测试/断言",
-          "blocks": "A5 working→pass（主要缺口）"
+          "scope": "source-cases.json → product 复算链与 fixture",
+          "blocks": "A5 working→pass（主要缺口：覆盖率仍低，且证据链只到机械层）"
         },
         {
-          "item": "人读断语对账模板已有 10 条，需扩面到主要能力相关样本",
+          "item": "人读断语对账由 10 条扩到 37 条（本批 +27：六爻 13/梅花 2/奇门 5/八字 7）；仍需扩面到各术主要能力样本（奇门 1,919 条结构化案例只做了 5 条断语级对账 ＋ 全量机械复算）",
           "kind": "implementation-gap",
-          "scope": "product:docs/cases/**",
+          "scope": "product:docs/implementation/ART-VERDICT-SOURCE-CASE-RECONCILIATION.md",
           "blocks": "A5"
         },
         {
@@ -359,10 +364,10 @@
           "blocks": "分账已满足，人工验证仍待"
         },
         {
-          "item": "批次2 的 1,563 条差异必须先分类，不得直接当缺陷数也不得当通过：最大宗是奇门 starPalaceRaw 1,543 条。captain 已实测排除「恒定值 bug」——引擎取值与原书取值都是变化的，呈系统性错位，疑似抽取口径（原表表头写「后两数分别记主星和主门的原宫」）或引擎字段语义（qimen.ts 同时存在 originPalace/starPalaceRaw/starPalace/doorPalaceRaw 多个近义字段）不一致。已派 t10：抽样 20–30 条逐条读原表+引擎代码，判定为 抽取口径错／引擎缺陷／流派约定差异／原表歧义，并给出整体推定",
+          "item": "批次2 差异已分类（不再有「1,563 条未分类」）：77 条差异中 73 条为经典仓已登记来源冲突、72 条有同输入另一处印值佐证、4 条为原印数与同书正文一般法冲突（仓库 methodDifferences 已记）。原先怀疑的 starPalaceRaw 1,543 条错位已查明为**比对口径**（该列跟落宫走；引擎 starPalaceRaw 1,888/1,917 对上），不是引擎缺陷。t10 若继续，建议改为**独立复核本分类与 4 条待查项**，不要重跑同一问题",
           "kind": "implementation-gap",
-          "scope": "奇门 1,919 条结构化案例（starPalaceRaw 为主）",
-          "blocks": "A5 working→pass；若判定为引擎缺陷则同时阻塞 A7"
+          "scope": "奇门 1,919 条结构化案例",
+          "blocks": "A5 证据可信度（结论待独立复核）"
         }
       ],
       "owner": "case-wiring（案例挂接）+ independent-review",
