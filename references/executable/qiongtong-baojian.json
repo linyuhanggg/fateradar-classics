@@ -11946,7 +11946,7 @@
             "甲"
           ]
         ],
-        "note": "腊月仍需分上下半月；丙为共同先手，丁甲在不同句中辅助，不能凭天数自行裁判先后。",
+        "note": "腊月仍需分上下半月；丙为共同先手，丁甲在不同句中辅助，不能凭天数自行裁判先后。「上半月／下半月」按**本月中气前后**操作化（与 QTB-M-02-05 夏至、02-08 秋分、10-03 谷雨 同例），**不用「第 15 日」近似**；精确中气时刻来自历算，缺该时刻时引擎给信息不足。",
         "sourceParagraphIds": [
           "qiongtong-baojian:L1668-L1668",
           "qiongtong-baojian:L1674-L1674"
@@ -11954,28 +11954,51 @@
         "checks": [
           {
             "id": "QTB-M-09-12-C01",
-            "label": "上下半月不靠天数代填",
-            "role": "base",
-            "effect": "none",
+            "label": "上半月（大寒前）癸辛主事故旺，专用丙火",
+            "role": "alternative",
+            "effect": "replace",
+            "priority": [
+              [
+                "丙"
+              ]
+            ],
+            "conditions": [
+              {
+                "kind": "term-phase",
+                "term": "大寒",
+                "phase": "before",
+                "label": "出生在本月大寒之前（上半月）"
+              }
+            ],
+            "explanation": "原文「十二月壬水，旺极复衰，何也？上半月癸辛主事，故旺，专用丙火。」",
+            "sourceParagraphIds": [
+              "qiongtong-baojian:L1668-L1668"
+            ]
+          },
+          {
+            "id": "QTB-M-09-12-C02",
+            "label": "下半月（大寒后）己土主事故衰，亦用丙火、甲木佐之",
+            "role": "alternative",
+            "effect": "replace",
             "priority": [
               [
                 "丙"
               ],
               [
-                "丁",
                 "甲"
               ]
             ],
             "conditions": [
               {
-                "kind": "unknown",
-                "label": "原文上下半月主事口径未落实，不能把交节15日当确切边界"
+                "kind": "term-phase",
+                "term": "大寒",
+                "phase": "after",
+                "label": "出生在本月大寒之后（下半月，含交气时刻）"
               }
             ],
-            "explanation": "十二月壬按上、下半月分癸辛主事与己主事，作者因此说旺极复衰；两段都用丙，下半另甲辅助。一个月份标签不足代表整月同样强弱。",
+            "explanation": "原文「下半月己土主事，故衰。亦用丙火，甲木佐之。」",
             "sourceParagraphIds": [
-              "qiongtong-baojian:L1668-L1668",
-              "qiongtong-baojian:L1674-L1674"
+              "qiongtong-baojian:L1668-L1668"
             ]
           }
         ]
@@ -12607,16 +12630,44 @@
             "辛"
           ]
         ],
-        "note": "六月上下半月庚辛气力不同，前半还要比助；原文分半月口径未落实，不强用交节第15日分界。",
+        "note": "六月上下半月庚辛气力不同，前半还要比助；原文分半月口径未落实，不强用交节第15日分界。「上半月／下半月」按**本月中气前后**操作化（与 QTB-M-02-05 夏至、02-08 秋分、10-03 谷雨 同例），**不用「第 15 日」近似**；精确中气时刻来自历算，缺该时刻时引擎给信息不足。",
         "sourceParagraphIds": [
           "qiongtong-baojian:L1734-L1742"
         ],
         "checks": [
           {
             "id": "QTB-M-10-06-C01",
-            "label": "上下半月金力不可凭15日猜",
-            "role": "base",
-            "effect": "none",
+            "label": "上半月（大暑前）庚辛休囚，宜比劫助身",
+            "role": "alternative",
+            "effect": "replace",
+            "priority": [
+              [
+                "庚",
+                "辛"
+              ],
+              [
+                "壬",
+                "癸"
+              ]
+            ],
+            "conditions": [
+              {
+                "kind": "term-phase",
+                "term": "大暑",
+                "phase": "before",
+                "label": "出生在本月大暑之前（上半月）"
+              }
+            ],
+            "explanation": "原文「上半月庚辛休囚…如上半月金神衰弱，火气炎烈，宜比劫助身，可云富贵。」",
+            "sourceParagraphIds": [
+              "qiongtong-baojian:L1734-L1742"
+            ]
+          },
+          {
+            "id": "QTB-M-10-06-C02",
+            "label": "下半月（大暑后）庚辛有气，即无比劫亦可，又忌丁透",
+            "role": "alternative",
+            "effect": "replace",
             "priority": [
               [
                 "庚",
@@ -12625,11 +12676,19 @@
             ],
             "conditions": [
               {
-                "kind": "unknown",
-                "label": "上半月／下半月的原典主事分段未落实，金力不可由交节天数硬定"
+                "kind": "term-phase",
+                "term": "大暑",
+                "phase": "after",
+                "label": "出生在本月大暑之后（下半月，含交气时刻）"
+              },
+              {
+                "kind": "absent",
+                "gan": "丁",
+                "scope": "all",
+                "label": "忌丁透（丁在支亦不吉）"
               }
             ],
-            "explanation": "六月癸分上下半月：前半金弱火烈，仍需比水相助；后半庚辛渐有气，未必再需比劫，但忌丁伤金。作者又以未中乙己同宫说明癸难从杀，不能只见季土旺就取从。",
+            "explanation": "原文「下半月庚辛有气，即无比劫亦可，又忌丁透，即丁在支亦不吉。」",
             "sourceParagraphIds": [
               "qiongtong-baojian:L1734-L1742"
             ]
