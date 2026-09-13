@@ -1,6 +1,6 @@
 {
   "schema": "fateradar-delivery-acceptance-v1",
-  "generated_at": "2026-09-13T02:30:00Z",
+  "generated_at": "2026-09-13T02:35:00Z",
   "generated_by": "DSH captain（本会话 goal round 1/256）",
   "authority": "classics:docs/FATERADAR_FULL_LIBRARY_PLAN.md（含 2026-09-13 收尾执行修订）",
   "purpose": "唯一收尾状态账本：逐项对应权威方案「总验收与完成条件」1–8。引用既有矩阵与报告，不新造重复指标。",
@@ -327,6 +327,11 @@
           "path": "classics:docs/closeout/GAP_LEDGER.json",
           "shows": "judgment_fixture_sides=258；三类不折算口径",
           "kind": "ledger"
+        },
+        {
+          "path": "product:docs/implementation/ART-VERDICT-SOURCE-CASE-RECOMPUTE.json#batch2（algo-impl t6，未提交）",
+          "shows": "批次2 结构化复算（原书输入 + 原书期望 逐字段比对）：案例全集 3,568，结构化比较 1,932 行。byArt：liuyao 13（matchedAll 4 / withDiff 9）、qimen 1,919（matchedAll 365 / withDiff 1,554）。差异字段分布（captain 实测）：starPalaceRaw 1,543、chiefStar 41、chiefDoor 40、doorPalaceRaw 27、mainGua 5。skippedByInputBasis：liuyao-line-symbols 1、ziwei-component 178（引擎无按组件取命身宫/紫微星位的入口 → 登记不适用，不猜不补造生日）。meihuaMonthInvariance.checked = 0（未检查）",
+          "kind": "generated-diff（差异未分类，不得当缺陷数，也不得当 pass）"
         }
       ],
       "remaining": [
@@ -347,6 +352,12 @@
           "kind": "evidence-or-semantics-uncertainty",
           "scope": "全库",
           "blocks": "分账已满足，人工验证仍待"
+        },
+        {
+          "item": "批次2 的 1,563 条差异必须先分类，不得直接当缺陷数也不得当通过：最大宗是奇门 starPalaceRaw 1,543 条。captain 已实测排除「恒定值 bug」——引擎取值与原书取值都是变化的，呈系统性错位，疑似抽取口径（原表表头写「后两数分别记主星和主门的原宫」）或引擎字段语义（qimen.ts 同时存在 originPalace/starPalaceRaw/starPalace/doorPalaceRaw 多个近义字段）不一致。已派 t10：抽样 20–30 条逐条读原表+引擎代码，判定为 抽取口径错／引擎缺陷／流派约定差异／原表歧义，并给出整体推定",
+          "kind": "implementation-gap",
+          "scope": "奇门 1,919 条结构化案例（starPalaceRaw 为主）",
+          "blocks": "A5 working→pass；若判定为引擎缺陷则同时阻塞 A7"
         }
       ],
       "owner": "case-wiring（案例挂接）+ independent-review",
