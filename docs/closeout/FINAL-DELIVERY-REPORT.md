@@ -10,8 +10,8 @@
 | 项 | 当前值 | 依据 |
 |---|---|---|
 | 八项总验收 | A1–A8 全部 `working`，**0 项 pass** | `DELIVERY_ACCEPTANCE.json#criteria` |
-| classics main | **`fe76a0b`**（`3b90bbd` 已实测 CI success；`fe76a0b` CI 运行中）；A7 具名登记 + 账本 + 审查产物已合入 main | `gh run list -R linyuhanggg/fateradar-classics --branch main` |
-| product main | **`f030441`**（A6 批次已过独立审查门并合入；CI 运行中，含 typecheck/test/build/playwright e2e）；A5 候选 `cf0c1f7` **明确未合**，等 t15 独立复核 | `gh run list -R linyuhanggg/cosmic-fortune-lab --branch main` |
+| classics main | **`fe76a0b`**（CI success）；分支 `89d69e3` 领先（措辞统一 + A1 分账 + 账本）**待审后合** | `gh run list -R linyuhanggg/fateradar-classics --branch main` |
+| product main | **`f030441`**（A6 批次已过独立审查门并合入，CI **success** 含 playwright e2e）；分支 `20ac19b` 含 A5 候选与 A8 候选 `c300610`，**均未合**（等 t15 / t18 独立复核） | `gh run list -R linyuhanggg/cosmic-fortune-lab --branch main` |
 | 未合 main 的分支成果 | classics 分支领先 main 1 个账本提交；product 分支领先 main 1 个矩阵提交 + **A6 批次未提交**（等 reviewer t8 审查门） | `git rev-list --count origin/main..HEAD` |
 | 生产部署 | **未部署**（合入 main ≠ 已部署；部署另等用户授权） | — |
 
@@ -24,7 +24,17 @@
 
 ## 2. 全库材料去向与正式入库结果（待填）
 
-引用而非重算：`docs/closeout/FULL-LIBRARY-DISPOSITION-20260912.md`（逐书去向）、`docs/closeout/GAP_LEDGER.json`（台账，**部分字段已登记为过期**，见 CAPTAIN-VERIFICATION-20260913.md）。
+引用而非重算：`docs/closeout/FULL-LIBRARY-DISPOSITION-20260912.md`（逐书去向，§0 已更正两行过期值）、`docs/closeout/GAP_LEDGER.json`（台账，**部分字段已登记为过期**，见 CAPTAIN-VERIFICATION-20260913.md）、`docs/closeout/A1-DRAFT-ACCOUNT-20260913.md` + `review/a1-draft-disposition-20260913.json`。
+
+**draft 余量去向（t7，captain 独立复核为「与注解集合一一对应」）**：2,835 行分账表与 annotations 的 draft 集合**双向一对一**（2,835/2,835 命中、0 多余行），分类：
+台账元数据 **1,531**（去向＝保持 draft、不提升、不入审读队列）／实质条目待审 **1,296**／待影印转写 **1**／归档 **7**。
+**用户四分类中的第 4 类「已处理但尚未正式入库」实测 0 条** —— 即余量是「审读/转写未做」，不是「数据没搬」。
+
+**A7 口径修正（t14 全文重审，非截断检索）**：30 条 `unimplemented` = **实现缺口 22**（必须实现，跨 QTB 10 / ZPR 6 / SMTH 1 / ZWD 3 / XXDC 2）＋ **证据未决 8**。
+22 条**全部落在主要页面**（tiaohou 10、geju 5、shensha 1、yongshen 1、ziwei 3、qizheng 2），已开 t19（先做调候 10）。
+
+**奇门案例差异（t10 归档）**：结构化 1,919 条 → 逐字段一致 **1,842**、差异 **77**（其中 **0 条引擎缺陷**：73 条同书两处印值不一致、4 条原印数与正文一般法冲突）；历史 1,543 条 `starPalaceRaw`「错位」= 比对脚本取错字段（`originPalace`），已修正并有 180/180 构造输入回归测试。
+
 
 必须写明的实测基线（2026-09-13 captain 实测，并经 reviewer 独立复算）：
 - 注解 62,839 = source-reviewed 60,004 + draft 2,835（53 书，其中 15 书有 draft）。
@@ -57,13 +67,13 @@
 
 | 仓 | main SHA | CI | 工作树分支 | 分支领先 main |
 |---|---|---|---|---|
-| `linyuhanggg/fateradar-classics` | `fe76a0b` | `3b90bbd` success；`fe76a0b` 运行中 | `dsh/full-library-classics` | 1（账本提交） |
-| `linyuhanggg/cosmic-fortune-lab` | `f030441` | 运行中（A6 批次首次合入 main） | `dsh/full-library-product` | 1（矩阵）+ A6 批次待审 |
+| `linyuhanggg/fateradar-classics` | `fe76a0b` | success | `dsh/full-library-classics` | 1（账本提交） |
+| `linyuhanggg/cosmic-fortune-lab` | `f030441` | **success**（含 playwright e2e） | `dsh/full-library-product` | 1（矩阵）+ A6 批次待审 |
 
 内容钉 ↔ 代码版本：10/10 个生成物 `sourceRevision` 均可解析为真实 classics 提交且为 main 祖先（captain 实测）；
 **但 `bazi-anchor-rule-index.json` 的内容与其来源已不一致（54/183），是 A8 硬缺口（t9）**。
 
-> 版本块实测时间：2026-09-13 round 16（`git rev-parse` + `gh run list`，非转抄）。
+> 版本块实测时间：2026-09-13 round 34（SHA 复核）／round 16 初版（`git rev-parse` + `gh run list`，非转抄）。
 > 两仓**分支均领先 main**：classics 3 / product 2 —— 按方案「独立审核通过后及时合 main」，
 > classics 的 A7 具名登记（`d383143`）正在被 reviewer-2 做 id 一致性复核，A6 候选（`f030441`）正在做审查门；
 > 两者通过后一次性推 main 并跑各自 CI。
