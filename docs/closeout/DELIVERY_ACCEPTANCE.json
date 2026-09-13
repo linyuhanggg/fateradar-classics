@@ -1,6 +1,6 @@
 {
   "schema": "fateradar-delivery-acceptance-v1",
-  "generated_at": "2026-09-13T02:22:00Z",
+  "generated_at": "2026-09-13T02:25:00Z",
   "generated_by": "DSH captain（本会话 goal round 1/256）",
   "authority": "classics:docs/FATERADAR_FULL_LIBRARY_PLAN.md（含 2026-09-13 收尾执行修订）",
   "purpose": "唯一收尾状态账本：逐项对应权威方案「总验收与完成条件」1–8。引用既有矩阵与报告，不新造重复指标。",
@@ -166,13 +166,18 @@
           "path": "classics:tools/test-validate-annotations.py",
           "shows": "注解校验测试",
           "kind": "test"
+        },
+        {
+          "path": "classics:docs/closeout/review/INDEPENDENT-VERIFICATION-20260913.md + scripts-20260913/",
+          "shows": "reviewer 独立核对：643/643 条带 anchor 的可执行规则，其全部引文在 pin 3dc9d01 与当前 classics main eb4cabe 两个 revision 下都精确落在锚点行区间（0 漂移）。这把「引文可回到准确原文范围」从抽样提升到该 643 条锚点集合的全量，且是跨两个 revision 的双向核对",
+          "kind": "independent-verification"
         }
       ],
       "remaining": [
         {
-          "item": "引用级核对只做了穷通专章部分，未覆盖全部 258 条规则及页面实际展示引文",
+          "item": "引用级核对已由独立复核覆盖到 643/643 条带 anchor 规则（双 revision 0 漂移），但**页面实际展示的引文**仍未逐条回读；穷通专章之外的逐章出处核对也未做",
           "kind": "implementation-gap",
-          "scope": "product 页面/导出实际渲染引文 ↔ classics 原文范围",
+          "scope": "product 页面/导出实际渲染引文 ↔ classics 原文范围（锚点集合已全量核对）",
           "blocks": "A2 working→pass"
         },
         {
