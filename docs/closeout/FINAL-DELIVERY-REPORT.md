@@ -10,8 +10,8 @@
 | 项 | 当前值 | 依据 |
 |---|---|---|
 | 八项总验收 | A1–A8 全部 `working`，**0 项 pass** | `DELIVERY_ACCEPTANCE.json#criteria` |
-| classics main | `fcf9a26`（CI success：`fca8d34` 已核实 success；`d36b9cd`/`fcf9a26` 为文档类提交） | `gh run list -R linyuhanggg/fateradar-classics --branch main` |
-| product main | `230effd`（CI success） | `gh run list -R linyuhanggg/cosmic-fortune-lab --branch main` |
+| classics main | `c45dfdb`（CI **success**，实测 gh run）；分支 `6460e66` 领先 3 个提交（A7 具名登记 + 两条账本），**待独立复核后合 main** | `gh run list -R linyuhanggg/fateradar-classics --branch main` |
+| product main | `230effd`（CI **success**，实测 gh run）；分支 `f030441` 领先 2 个提交（矩阵重生成 + A6 候选），**A6 候选正在独立审查中** | `gh run list -R linyuhanggg/cosmic-fortune-lab --branch main` |
 | 未合 main 的分支成果 | classics 分支领先 main 1 个账本提交；product 分支领先 main 1 个矩阵提交 + **A6 批次未提交**（等 reviewer t8 审查门） | `git rev-list --count origin/main..HEAD` |
 | 生产部署 | **未部署**（合入 main ≠ 已部署；部署另等用户授权） | — |
 
@@ -57,11 +57,16 @@
 
 | 仓 | main SHA | CI | 工作树分支 | 分支领先 main |
 |---|---|---|---|---|
-| `linyuhanggg/fateradar-classics` | `fcf9a26` | success | `dsh/full-library-classics` | 1（账本提交） |
+| `linyuhanggg/fateradar-classics` | `c45dfdb` | success | `dsh/full-library-classics` | 1（账本提交） |
 | `linyuhanggg/cosmic-fortune-lab` | `230effd` | success | `dsh/full-library-product` | 1（矩阵）+ A6 批次待审 |
 
 内容钉 ↔ 代码版本：10/10 个生成物 `sourceRevision` 均可解析为真实 classics 提交且为 main 祖先（captain 实测）；
 **但 `bazi-anchor-rule-index.json` 的内容与其来源已不一致（54/183），是 A8 硬缺口（t9）**。
+
+> 版本块实测时间：2026-09-13 round 16（`git rev-parse` + `gh run list`，非转抄）。
+> 两仓**分支均领先 main**：classics 3 / product 2 —— 按方案「独立审核通过后及时合 main」，
+> classics 的 A7 具名登记（`d383143`）正在被 reviewer-2 做 id 一致性复核，A6 候选（`f030441`）正在做审查门；
+> 两者通过后一次性推 main 并跑各自 CI。
 
 ## 6. 真实限制与安全清理结果（待填）
 
