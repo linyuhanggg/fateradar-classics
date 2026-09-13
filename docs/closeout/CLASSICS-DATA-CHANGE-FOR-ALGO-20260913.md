@@ -1,7 +1,7 @@
 # 给算法任务的数据变更说明（古籍专项滚交）
 
 - 仓：`https://github.com/linyuhanggg/fateradar-classics`
-- **精确版本**：以本批合入 `main` 的 SHA 为准（施工父提交 `e90da1abd98fb3e71dfe3210500305d05ba19940`；合入 SHA 待独立复核后填写）
+- **精确版本**：`31554216cb4097819b3f4a088cd2ce01b4d749ed`（父提交 `e90da1abd98fb3e71dfe3210500305d05ba19940`；合入 main 后以远端 SHA 为准）
 - 本批 **不改** `references/executable/**`、**不改** `references/cases/source-cases.json`
 
 ## 奇门 308–311（消费方必须改读法）
