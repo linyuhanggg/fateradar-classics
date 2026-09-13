@@ -1,6 +1,6 @@
 {
   "schema": "fateradar-delivery-acceptance-v1",
-  "generated_at": "2026-09-13T07:30:00Z",
+  "generated_at": "2026-09-13T07:40:00Z",
   "generated_by": "DSH captain（本会话 goal round 1/256）",
   "authority": "classics:docs/FATERADAR_FULL_LIBRARY_PLAN.md（含 2026-09-13 收尾执行修订）",
   "purpose": "唯一收尾状态账本：逐项对应权威方案「总验收与完成条件」1–8。引用既有矩阵与报告，不新造重复指标。",
@@ -820,6 +820,11 @@
           "path": "captain 实测：product:playwright.config.ts + tests/e2e/ + CI run（f030441 success）",
           "shows": "A8 的「网页项目完成集成验收」已有机器证据的一半：仓库自带 Playwright 配置（自起 webServer，端口 4173）与 7 个 spec，其中八术导出回读、逐术选位/时制/岁运同步、紫微运限层跟随、认证与后台基础均被覆盖；这些 e2e 在 CI 的 19 步中执行，`f030441`（A6 批次，当前 product main）CI **success**。剩余为：逐术覆盖清单（哪些栏目**没有**被 spec 覆盖要明说）+ 最新 HEAD 上重跑一次。※ 工具链更正：地雷已排除——`ego-browser` 只是「嵌入式 Node 运行时 + Ego API」、**没有现成的 ready 类命令**，不该用它做页面验收；正确路径是仓库自带 Playwright（这也解释了 page-acceptance 长期卡住的原因）",
           "kind": "captain-measured-now + 工具链更正"
+        },
+        {
+          "path": "captain 实测：product:tests/e2e/start-server.sh + npx playwright test（本地复现失败并定位根因）",
+          "shows": "e2e 的**前置依赖链**（不按顺序做会直接 `Process from config.webServer exited early`）：`tests/e2e/start-server.sh` 在开头硬检查三件产物，缺一即 exit 1 —— ①`artifacts/backend-foundation/e2e.runtime.env`（由 `bun tests/e2e/prepare.ts` 生成）②`.output/server/index.mjs`（`FATERADAR_TARGET=node bun run build`）③`dist/worker.mjs`（`bun run build:worker`）。正确顺序：`bun tests/e2e/prepare.ts` → `FATERADAR_TARGET=node bun run build` → `bun run build:worker` → `npx playwright test`（webServer 自起 4173，**不需要**自起 dev server）。captain 本地实测**未做前置即失败**，故此项本地验收需要数分钟构建；CI 侧无此问题（CI 的 19 步本来就含 prepare/build/build:worker + playwright）。→ 记录以免后续把「本地跑不起来」误判为测试坏或产品坏",
+          "kind": "captain-measured-now"
         }
       ],
       "remaining": [
