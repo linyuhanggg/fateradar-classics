@@ -123,6 +123,7 @@ class SourceIntegrityTests(unittest.TestCase):
             "term": "相神",
             "status": "source-undefined",
             "claim_checked": "计划条件称该术语已界定",
+            "search_scope": "例文全文逐字检索「相神」：1 处／1 行",
             "finding": "例文只在「相神有傷，立敗其格」处出现，未给判据。",
             "occurrences": 1,
             "lines_with_term": 1,
@@ -137,6 +138,12 @@ class SourceIntegrityTests(unittest.TestCase):
         result = self.result()
         self.assertTrue(result["ok"], [e["code"] for e in result["errors"]])
         self.assertEqual(result["named_gaps"], 1)
+
+    def test_named_gap_search_scope_is_required(self):
+        gap = self.named_gap()
+        del gap["search_scope"]
+        self.rule["named_gaps"] = [gap]
+        self.rejects("NAMED_GAPS")
 
     def test_named_gap_count_must_match_recomputed_fulltext(self):
         gap = self.named_gap()
@@ -201,6 +208,49 @@ class SourceIntegrityTests(unittest.TestCase):
     def test_named_gap_evidence_paragraph_must_exist(self):
         gap = self.named_gap()
         gap["evidence"][0]["paragraph_id"] = "example:L0005-L0005"
+        self.rule["named_gaps"] = [gap]
+        self.rejects("NAMED_GAPS_EVIDENCE")
+
+    # --- unimplemented-reason：区分「实现缺口」与「证据未决」 --------------------------
+
+    def unimpl_gap(self):
+        src = self.rule["sources"][0]
+        return {
+            "kind": "unimplemented-reason",
+            "reason_class": "implementation-gap",
+            "claim_checked": "既有理由：条件未实现",
+            "search_scope": "例文全文逐字检索：相神 1 处/1 行",
+            "finding": "原文给出条件（见 evidence），缺的是引擎实现。",
+            "evidence": [dict(src)],
+            "effect": "rescue 保持 unimplemented。解锁条件：实现该条件。",
+        }
+
+    def test_unimplemented_reason_registration_passes(self):
+        self.rule["named_gaps"] = [self.unimpl_gap()]
+        result = self.result()
+        self.assertTrue(result["ok"], [e["code"] for e in result["errors"]])
+
+    def test_unimplemented_reason_class_must_be_known(self):
+        gap = self.unimpl_gap()
+        gap["reason_class"] = "mystery"
+        self.rule["named_gaps"] = [gap]
+        self.rejects("NAMED_GAPS")
+
+    def test_unimplemented_reason_only_on_unimplemented_rules(self):
+        self.rule["rescue"] = "self"
+        self.rule["named_gaps"] = [self.unimpl_gap()]
+        self.rejects("NAMED_GAPS")
+
+    def test_unimplemented_reason_evidence_must_come_from_its_own_sources(self):
+        # 另建一条真实段落，引它作证据（原文逐字无误），但它不在本条的 sources 里 → 必须被拒。
+        self.source.write_text(self.source.read_text() + "\n另有一句原文。\n", encoding="utf-8")
+        paragraphs = json.loads(self.root.joinpath("references/inventory/paragraphs/bazi/example.json").read_text(encoding="utf-8"))
+        paragraphs["paragraphs"].append({"id": "example:L0005-L0005", "start_line": 5, "end_line": 5})
+        self.root.joinpath("references/inventory/paragraphs/bazi/example.json").write_text(
+            json.dumps(paragraphs, ensure_ascii=False), encoding="utf-8")
+        gap = self.unimpl_gap()
+        gap["evidence"] = [{"paragraph_id": "example:L0005-L0005", "start_line": 5, "end_line": 5,
+                            "quote": "另有一句原文。"}]
         self.rule["named_gaps"] = [gap]
         self.rejects("NAMED_GAPS_EVIDENCE")
 

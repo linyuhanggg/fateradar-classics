@@ -1,6 +1,6 @@
 {
   "schema": "fateradar-delivery-acceptance-v1",
-  "generated_at": "2026-09-13T04:40:00Z",
+  "generated_at": "2026-09-13T04:55:00Z",
   "generated_by": "DSH captain（本会话 goal round 1/256）",
   "authority": "classics:docs/FATERADAR_FULL_LIBRARY_PLAN.md（含 2026-09-13 收尾执行修订）",
   "purpose": "唯一收尾状态账本：逐项对应权威方案「总验收与完成条件」1–8。引用既有矩阵与报告，不新造重复指标。",
@@ -358,7 +358,7 @@
           "blocks": "A5 working→pass（主要缺口：覆盖率仍低，且证据链只到机械层）"
         },
         {
-          "item": "人读断语对账由 10 条扩到 38 条（本批 +28：六爻 14/梅花 2/奇门 5/八字 7）；仍需扩面到各术主要能力样本（奇门 1,919 条结构化案例只做了 5 条断语级对账 ＋ 全量机械复算）",
+          "item": "人读断语对账由 10 条扩到 38 条（本批 +28：六爻 14/梅花 2/奇门 5/八字 7）；其中 **10 条**（六爻 6/梅花 2/八字 2）已补做对账链最后一环「导出 → 读回」，断言在 product:tests/engine/source-case-export-readback-batch2.test.ts（11 条）；仍未扩面到各术主要能力样本（奇门 1,919 条结构化案例只做了 5 条断语级对账 ＋ 全量机械复算）",
           "kind": "implementation-gap",
           "scope": "product:docs/implementation/ART-VERDICT-SOURCE-CASE-RECONCILIATION.md",
           "blocks": "A5"
@@ -567,9 +567,31 @@
           "path": "captain 实测（round 23）：python3 tools/test-validate-executable.py + tools/validate-rules.py",
           "shows": "t14 的校验覆盖随数据一起长：`test-validate-executable.py` 由 **22 → 27 tests（全 OK）**（新增失败分支用于 named_gaps 的计数/证据行校验），`validate-executable.py` OK 15 packages/258 records/579 spans/**42 named gaps**，`validate-rules.py` OK 55 files/285 warnings（与基线同）。→ 具名登记是「有校验的正式数据」，不是自由文本",
           "kind": "captain-reverified-now"
+        },
+        {
+          "path": "classics:references/executable/*.json#named_gaps（kind=unimplemented-reason）",
+          "shows": "30 条 unimplemented 逐条全文重审并分类：实现缺口 22／证据未决 8；每条带全文检索计数（非截断检索）、条款自身来源逐字证据、解锁条件",
+          "kind": "recomputed-now"
+        },
+        {
+          "path": "captain 实测（classics 工作树）：按 kind=unimplemented-reason / reason_class 计数 + tools 校验器",
+          "shows": "t14 完成并**经 captain 独立计数确认**：`named_gaps` 共 42 条 = source-term 11 + unimplemented-reason **30** + verdict-scope 1；30 条 unimplemented-reason 的 `reason_class` 分布 = **implementation-gap 22 / evidence-undecided 8**（ID 清单已入 remaining）。机制加固：该 kind 只许用于 rescue=unimplemented；`evidence` 必须逐字取自该条款自身 sources（引他处报错）；`effect` 须写解锁条件；并新增 `search_scope`（全文行数＋sha256＋逐词处数/行数）以显式暴露「原判只搜前 2000 行」这类截断风险。校验：validate-executable OK（258 records / 579 spans / 42 named gaps）、test-validate-executable 27 tests OK、validate-annotations 62,839 entries 0 errors、validate-rules OK 55 files",
+          "kind": "captain-reverified-now"
         }
       ],
       "remaining": [
+        {
+          "item": "【全文重审已完成，结论改变工作范围】30 条 unimplemented 的理由已用**全文（非截断）检索**逐条重审并写进规则本体 `named_gaps`（kind=unimplemented-reason）：**实现缺口 22 条**：SMTH-E-04、ZPR-E-02、ZPR-E-33、ZPR-E-36、ZPR-E-37、ZPR-E-38、ZPR-E-39、QTB-M-02-04、QTB-M-02-07、QTB-M-06-07、QTB-M-06-11、QTB-M-06-12、QTB-M-07-12、QTB-M-08-04、QTB-M-08-11、QTB-M-09-12、QTB-M-10-09、ZWD-E-02、ZWD-E-09、ZWD-E-10、XXDC-E-04、XXDC-E-06；**证据未决 8 条**：SMTH-E-06、SMTH-E-07、SMTH-E-08、SMTH-E-09、SMTH-E-10、DLD-E-09、YXJ-E-04、XXDC-E-05。按方案「实现缺口＝来源与输入足够、代码尚未实现，必须继续实现，不能改写为不支持结项」——这 22 条是必须实现项，其中凡影响八术主要能力者不得计入完成；需按「影响主要能力 vs 边缘」逐条处置（实现或具名说明其不阻塞主要能力）",
+          "kind": "implementation-gap",
+          "scope": "22 条实现缺口（跨 SMTH/ZPR/QTB/ZWD/XXDC）+ 8 条证据未决",
+          "blocks": "A7 working→pass（这是 A7 最大的一块工作量）"
+        },
+        {
+          "item": "30 条 unimplemented 理由已完成全文重审并分类（实现缺口 22／证据未决 8），登记在条款自身字段的 named_gaps（kind=unimplemented-reason）",
+          "kind": "evidence-or-semantics-uncertainty",
+          "scope": "references/executable：daliuren-daquan 1、qiongtong-baojian 10、sanming-tonghui 6、xingxue-dacheng 3、yuxiaji-xiaoliuren 1、ziping-zhenquan 6、ziwei-doushu-quanshu 3",
+          "blocks": "不阻塞；供「明确不支持的学派/能力单列」与 product:docs/SCHOOL_DIVERGENCE.md 对齐使用（分类即对齐口径）"
+        },
         {
           "item": "SMTH-E-04「夾貴」经重算改判为「原文有取法、引擎未实现」（〈夾貴夾禄〉L4244/L4245/L4246、L1415），术语本身不再是「未界定」项；是否按原文取法实现华盖救应属算法侧待办",
           "kind": "implementation-gap",
@@ -601,7 +623,7 @@
           "blocks": "A7（登记已完成）"
         },
         {
-          "item": "明确不支持的学派/能力单列清单需与 unimplemented 30 条对齐",
+          "item": "明确不支持的学派/能力单列清单需与 unimplemented 30 条对齐；30 条理由已逐条分类（实现缺口 22／证据未决 8），可直接作为对齐口径",
           "kind": "implementation-gap",
           "scope": "references/executable + product docs/SCHOOL_DIVERGENCE.md",
           "blocks": "A7"
@@ -617,12 +639,6 @@
           "kind": "implementation-gap",
           "scope": "product 侧（本成员不得改产品仓）",
           "blocks": "A7 局部（等 captain／algo-impl 同步）"
-        },
-        {
-          "item": "【方法论风险，可能改变多项分类】t1 的独立重算发现：此前审计对术语的「全书检索」实际只覆盖了前 2000 行左右（SMTH-E-04 報「8 命中」，全文重算为 28 处/24 行；SMTH-E-10 報「7 命中」，重算为 46 处/39 行），而后文专章（〈夾貴夾禄〉L4244-4246、〈福神相還〉L4252、〈包裹旗旌〉L4319/L4321）正落在被漏检区间。本批只重算了 SMTH 系列；**其余 unimplemented 的「原文未界定」理由尚未按全文重算**，其中可能还有把「实现缺口」误记为「证据未决」的情况（实现缺口必须实现，不能结项）",
-          "kind": "implementation-gap",
-          "scope": "references/executable/*.json 中其余 unimplemented 条目的理由复核（全文检索，不用截断结果）",
-          "blocks": "A7 working→pass（分类正确性）"
         }
       ],
       "owner": "independent-review + classics-audit",
@@ -710,10 +726,10 @@
           "blocks": "不阻塞 A8（合入 main ≠ 已部署）"
         },
         {
-          "item": "CLASSICS_REV / product CI 的 classics 检出钉在 3dc9d01（落后 main 1750 提交）——captain 实测 ci.yml：该 checkout 的用途是「验证含 CLASSICS_REV 的 fateradar-classics 可定位」，钉旧提交是设计意图而非缺陷；且 reviewer 已核 643/643 条 anchor 引文在3dc9d01 与 eb4cabe 双 revision 下 0 漂移。因此**只需具名说明口径**，不必为“落后”本身改动；但若导出内容改钉，必须同步 ref 与源链接并重验定位与锚点",
+          "item": "CLASSICS_REV / CI classics 检出【本批已改钉，口径具名收口】：原值 3dc9d01（落后 main 1,769 提交）已前移到 c45dfdb4（当时 main），并**三处同步**——src/lib/rules/source-link.ts 的 CLASSICS_REV、.github/workflows/ci.yml 的 checkout ref、bazi-anchor-rule-index.json 的 sourceRevision。改钉前的口径说明仍有效（钉 commit 而非 main 是设计意图；reviewer 已核 643/643 anchor 在 3dc9d01 与 eb4cabe 双 revision 0 漂移），本批另外验证 7 份产物 578 锚点在各自 revision 与 c45dfdb4 之间 0 漂移。**若后续再改钉，必须同样三处同步并重验锚点**（测试用 git show ${CLASSICS_REV}:<path>，fetch-depth 1 下检出别的 commit 会读不到对象）",
           "kind": "evidence-or-semantics-uncertainty",
           "scope": "CLASSICS_REV / .github/workflows/ci.yml ref",
-          "blocks": "不阻塞 A8（需口径具名），导出内容若改钉则需同步"
+          "blocks": "不阻塞 A8（本批已同步并验证）"
         }
       ],
       "owner": "captain（唯一集成者）+ page-acceptance",

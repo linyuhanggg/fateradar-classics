@@ -417,7 +417,25 @@
       "rescue": "unimplemented",
       "vernacular": "本盘八专。这是干支同位后的取传，不论遥克，不是事情已经出奇。",
       "implementation_assumption": "八专以日干寄宫等于日支判定。无克不论遥，先于蒿矢弹射。",
-      "verified": false
+      "verified": false,
+      "named_gaps": [
+        {
+          "kind": "unimplemented-reason",
+          "reason_class": "evidence-undecided",
+          "claim_checked": "本条 rescue=unimplemented 的既有理由（见 implementation_assumption／unknown_when）",
+          "search_scope": "《大六壬大全》全文 18573 行逐字检索：八专 33 处/30 行；八專 0 处（含异体写法均已检索）（不用截断检索；如为异体字或简体另计）",
+          "finding": "八专取传的救应口径（「利出奇、奸邪敌必争」与战和取舍）原文没有给出可判定的读法，属证据未决；实现假设（以日干寄宫等于日支判定八专）不能代替原文口径。",
+          "evidence": [
+            {
+              "paragraph_id": "daliuren-daquan:L0088-L0088",
+              "start_line": 88,
+              "end_line": 88,
+              "quote": "七 八专法论克不论遥"
+            }
+          ],
+          "effect": "rescue 保持 unimplemented（本登记只分类理由，不改变判定语义）。解锁条件：需先判定八专救应口径；在此之前不实现、不改标。"
+        }
+      ]
     },
     {
       "id": "DLD-E-10",

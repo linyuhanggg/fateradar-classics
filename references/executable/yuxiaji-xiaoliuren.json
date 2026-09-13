@@ -182,7 +182,25 @@
       "rescue": "unimplemented",
       "vernacular": "时宫{hour_palace}的当时候义是「{time_sense}」，属{element}、配{animal}。这是宫名象义，不是对本盘现实结果的确认。",
       "implementation_assumption": "六宫名单按本节原文顺序；「凡謀事主」日数用法未展开，不换算成应期。原文疑字（卒未妝時等）不改。",
-      "verified": false
+      "verified": false,
+      "named_gaps": [
+        {
+          "kind": "unimplemented-reason",
+          "reason_class": "evidence-undecided",
+          "claim_checked": "本条 rescue=unimplemented 的既有理由（见 implementation_assumption／unknown_when）",
+          "search_scope": "《玉匣记 · 雜占篇 李淳風六壬時課》全文 4249 行逐字检索：凡謀事主 5 处/5 行（不用截断检索；如为异体字或简体另计）",
+          "finding": "「凡謀事主一、五、七」等日数用法在本节没有展开，六宫象义也不构成本盘现实事件的成败确认；原文未给用法，属证据未决。",
+          "evidence": [
+            {
+              "paragraph_id": "yuqia-ji:L4215-L4215",
+              "start_line": 4215,
+              "end_line": 4215,
+              "quote": "大安 身不動時，屬木青龍，凡謀事主一、五、七；"
+            }
+          ],
+          "effect": "rescue 保持 unimplemented（本登记只分类理由，不改变判定语义）。解锁条件：需原文别处给出日数用法或另立口径；在此之前只读数、不推应期。"
+        }
+      ]
     },
     {
       "id": "YXJ-E-05",

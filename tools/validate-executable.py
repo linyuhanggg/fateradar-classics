@@ -14,9 +14,10 @@ TEXT_FIELDS = ("id", "art", "theme", "school", "page", "satisfy_when", "fail_whe
 # 必须写在条款内并带可复算的计数与逐字证据行，不能只写在过程稿里。两种 kind：
 #   source-term    ：某个术语/读法（term）+ 原文状态（status）+ 全文计数 + 原文证据行
 #   verdict-scope  ：某条口径（topic + cue + decision），说明为何给信息不足
-NAMED_GAP_KINDS = ("source-term", "verdict-scope")
+NAMED_GAP_KINDS = ("source-term", "verdict-scope", "unimplemented-reason")
 NAMED_GAP_TERM_STATUSES = ("criterion-stated", "partially-stated", "source-undefined", "reading-undetermined")
 NAMED_GAP_SCOPE_STATUSES = ("named-scope-decision",)
+NAMED_GAP_REASON_CLASSES = ("implementation-gap", "evidence-undecided", "out-of-scope")
 
 
 def validate_named_gaps(rule: dict, rel, rid: str, lines: list[str], paragraphs: dict, fulltext: str, error) -> int:
@@ -50,7 +51,7 @@ def validate_named_gaps(rule: dict, rel, rid: str, lines: list[str], paragraphs:
             if term in seen_terms:
                 error("NAMED_GAPS", rel, rid, f"同一规则内术语重复登记：{term}")
             seen_terms.add(term)
-            for key in ("claim_checked", "finding"):
+            for key in ("claim_checked", "finding", "search_scope"):
                 if not isinstance(gap.get(key), str) or not gap[key].strip():
                     error("NAMED_GAPS", rel, rid, f"{key} 必须是非空文本")
             occurrences = fulltext.count(term)
@@ -63,7 +64,7 @@ def validate_named_gaps(rule: dict, rel, rid: str, lines: list[str], paragraphs:
             if gap.get("status") == "reading-undetermined":
                 if not isinstance(readings, list) or len(readings) < 2 or not all(isinstance(x, str) and x.strip() for x in readings):
                     error("NAMED_GAPS", rel, rid, "reading-undetermined 必须逐条列出至少两条读法")
-        else:
+        elif kind == "verdict-scope":
             for key in ("topic", "decision"):
                 if not isinstance(gap.get(key), str) or not gap[key].strip():
                     error("NAMED_GAPS", rel, rid, f"verdict-scope 的 {key} 必须是非空文本")
@@ -83,6 +84,15 @@ def validate_named_gaps(rule: dict, rel, rid: str, lines: list[str], paragraphs:
                     error("NAMED_GAPS_COUNT", rel, rid, f"「{cue}」cue_occurrences 与全文重算不符：{gap.get('cue_occurrences')} != {cue_occurrences}")
                 if gap.get("cue_lines") != cue_lines:
                     error("NAMED_GAPS_COUNT", rel, rid, f"「{cue}」cue_lines 与全文重算不符：{gap.get('cue_lines')} != {cue_lines}")
+        else:
+            # unimplemented-reason：把「为什么还是 unimplemented」分成实现缺口／证据未决，并钉在条款自己的来源上。
+            if rule.get("rescue") != "unimplemented":
+                error("NAMED_GAPS", rel, rid, f"unimplemented-reason 登记只适用于 rescue=unimplemented 的条款，本条是 {rule.get('rescue')!r}")
+            if gap.get("reason_class") not in NAMED_GAP_REASON_CLASSES:
+                error("NAMED_GAPS", rel, rid, f"reason_class 只允许 {'／'.join(NAMED_GAP_REASON_CLASSES)}：{gap.get('reason_class')}")
+            for key in ("claim_checked", "search_scope", "finding"):
+                if not isinstance(gap.get(key), str) or not gap[key].strip():
+                    error("NAMED_GAPS", rel, rid, f"unimplemented-reason 的 {key} 必须是非空文本")
         evidence = gap.get("evidence")
         if not isinstance(evidence, list) or not evidence:
             error("NAMED_GAPS", rel, rid, "必须给出 evidence 原文行；无证据的登记不予承认")
@@ -106,6 +116,14 @@ def validate_named_gaps(rule: dict, rel, rid: str, lines: list[str], paragraphs:
                 error("NAMED_GAPS_EVIDENCE", rel, rid, f"evidence L{start}-L{end} 摘录不是该行原文的逐字片段")
                 continue
             collected += quote
+        if kind == "unimplemented-reason":
+            declared = {(s.get("paragraph_id"), s.get("start_line"), s.get("end_line"), s.get("quote")) for s in rule.get("sources", []) if isinstance(s, dict)}
+            for item in evidence:
+                if not isinstance(item, dict):
+                    continue
+                key = (item.get("paragraph_id"), item.get("start_line"), item.get("end_line"), item.get("quote"))
+                if key not in declared:
+                    error("NAMED_GAPS_EVIDENCE", rel, rid, "unimplemented-reason 的证据必须逐字取自本条自己声明的 sources，不得另引他处")
         if anchor and anchor not in collected:
             error("NAMED_GAPS_EVIDENCE", rel, rid, f"证据行里没有出现登记词「{anchor}」")
     return len(gaps)

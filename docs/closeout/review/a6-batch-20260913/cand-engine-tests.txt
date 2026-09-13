@@ -1,0 +1,150 @@
+
+ RUN  v4.1.11 /private/tmp/rev/a6-cand
+
+ ✓ tests/engine/c-export-readback-seven-arts.test.ts (20 tests) 370ms
+ ✓ tests/engine/reading-input-export-link.test.ts (16 tests) 213ms
+ ✓ tests/engine/ziwei-viewdate-free-reading.test.ts (1 test) 65ms
+ ✓ tests/engine/a6-liuyao-ziwei-free-reading-consumers.test.ts (10 tests) 4ms
+ ✓ tests/engine/art-verdict-probe-audit-batch2.test.ts (15 tests) 13212ms
+     ✓ 逐盘与引擎三态一致；旧的点位存在性语义在真盘上出错（1940-1-1 0h 是首例）  1441ms
+     ✓ 逐盘与引擎三态一致；旧的点位存在性语义在真盘上出错  1422ms
+     ✓ 逐盘与引擎选传步骤一致；比用/涉害/伏吟/八专等盘不再假满足  6294ms
+     ✓ XXDC-E-01/02/03/05：满足恒成立，且引擎侧确实不存在这四条的三态检查  703ms
+     ✓ ZPR-E-20：strength.layers 恒 4 层、shenQiang.verdict 恒信息不足，探针读的正是这两项  447ms
+     ✓ ZWD-E-01：四化（禄权科忌）星名与落宫恒在，探针的满足条件是规则 satisfy_when 本身  2893ms
+ ✓ tests/engine/art-verdict-probe-semantics.test.ts (20 tests) 7876ms
+     ✓ 3348 张真盘：假阳性恒为 0，且「满足/不满足」与引擎逐盘一致（修复前 100% 假阳性）  4418ms
+     ✓ 11 条 ZPR-E-* 在 1940–1941 共 432 张真盘上逐盘一致，且旧语义在样本上确实出错  3390ms
+ ✓ tests/engine/ziwei-boundary-unknowns.test.ts (6 tests) 7700ms
+     ✓ 太阳相对紫微固定偏移 9，严格邻夹金舆扶驾不可达  2896ms
+     ✓ 现行主星几何下财荫夹印无整数解，且抽样盘无严格邻夹命中  4737ms
+ ✓ tests/engine/art-verdict-judgment-a2-closure.test.ts (13 tests) 2603ms
+     ✓ 真实排盘穷举：120 组档案全覆盖，probeQtbProfile 永不返回信息不足  2400ms
+ ✓ tests/engine/bazi-hour-inference.test.ts (16 tests) 1135ms
+     ✓ 未知时辰列出十二时辰和夜子，且不给概率  809ms
+ ✓ tests/engine/ziwei-combinations.test.ts (36 tests) 582ms
+ ✓ tests/engine/art-verdict-judgment-ming-459.test.ts (21 tests) 307ms
+ ✓ tests/engine/art-verdict-judgment-qtb-pack12.test.ts (2 tests) 521ms
+     ✓ every remaining QTB ID matches its birth fixture and misses the other chart  515ms
+ ✓ tests/engine/art-verdict-definition-ids-ming-487.test.ts (4 tests) 523ms
+     ✓ after-pack9 probes cover all 120 wired IDs  370ms
+ ✓ tests/engine/art-verdict-definition-ids-ming-468.test.ts (4 tests) 320ms
+ ✓ tests/engine/ziwei-detail.test.ts (21 tests) 438ms
+ ✓ tests/engine/c-export-provenance-version-seven-arts.test.ts (15 tests) 322ms
+ ✓ tests/engine/ziwei-timeline.test.ts (8 tests) 305ms
+ ✓ tests/engine/art-verdict-definition-ids-ming-452.test.ts (12 tests) 310ms
+ ✓ tests/engine/art-verdict-definition-ids-ming-436.test.ts (12 tests) 305ms
+ ✓ tests/engine/ziwei-palace-reading.test.ts (9 tests) 241ms
+ ✓ tests/engine/art-verdict-definition-ids-ming-pack12-qtb.test.ts (2 tests) 260ms
+ ✓ tests/engine/art-verdict-definition-ids-ming-427.test.ts (12 tests) 244ms
+ ✓ tests/engine/ziwei-reading-source-link.test.ts (4 tests) 257ms
+ ✓ tests/engine/art-verdict-definition-ids-ming-414.test.ts (12 tests) 224ms
+ ✓ tests/engine/tiaohou-rescue.test.ts (12 tests) 229ms
+ ✓ tests/engine/ziwei-source-components.test.ts (178 tests) 224ms
+ ✓ tests/engine/art-verdict-judgment-qtb-pack10.test.ts (1 test) 208ms
+ ✓ tests/engine/art-verdict-judgment-round7.test.ts (2 tests) 198ms
+ ✓ tests/engine/art-verdict-definition-ids-ming-400.test.ts (12 tests) 180ms
+ ✓ tests/engine/art-verdict-definition-ids-ming-382.test.ts (12 tests) 144ms
+ ✓ tests/engine/art-verdict-judgment-round2.test.ts (7 tests) 134ms
+ ✓ tests/engine/c2-defect-fixes.test.ts (14 tests) 118ms
+ ✓ tests/engine/shensha-source-link.test.ts (4 tests) 125ms
+ ✓ tests/engine/bazi-free-reading.test.ts (27 tests) 131ms
+ ✓ tests/engine/art-verdict-definition-ids-ming-pack10-qtb.test.ts (2 tests) 112ms
+ ✓ tests/engine/art-verdict-judgment-round18.test.ts (1 test) 111ms
+ ✓ tests/engine/qimen-source-layouts.test.ts (1926 tests) 93ms
+ ✓ tests/engine/art-verdict-judgment-ming-476.test.ts (25 tests) 91ms
+ ✓ tests/engine/ziwei.test.ts (6 tests) 87ms
+ ✓ tests/engine/art-verdict-definition-ids-ming-375.test.ts (11 tests) 91ms
+ ✓ tests/engine/art-verdict-judgment-ming-460.test.ts (62 tests) 91ms
+ ✓ tests/engine/bazi-twelve-entry-free-reading.test.ts (5 tests) 91ms
+ ✓ tests/engine/art-free-reading-round1.test.ts (8 tests) 69ms
+ ✓ tests/engine/art-verdict-judgment-round4.test.ts (3 tests) 67ms
+ ✓ tests/engine/bazi.test.ts (23 tests) 76ms
+ ✓ tests/engine/art-verdict-fact-runtime.test.ts (7 tests) 77ms
+ ✓ tests/engine/art-verdict-judgment-round11.test.ts (1 test) 62ms
+ ✓ tests/engine/art-verdict-judgment-ming-488.test.ts (25 tests) 64ms
+ ✓ tests/engine/readable-charts.test.ts (6 tests) 63ms
+ ✓ tests/engine/art-verdict-judgment-zpr-e-06.test.ts (9 tests) 61ms
+ ✓ tests/engine/art-verdict-consumer-points.test.ts (7 tests) 57ms
+ ✓ tests/engine/wanzi-divergence.test.ts (2 tests) 59ms
+ ✓ tests/engine/art-boundary-unknowns-ming-483.test.ts (11 tests) 58ms
+ ✓ tests/engine/art-verdict-definition-ids-ming-pack11.test.ts (2 tests) 52ms
+ ✓ tests/engine/liuren-methods.test.ts (21 tests) 53ms
+ ✓ tests/engine/art-verdict-judgment-round5.test.ts (2 tests) 62ms
+ ✓ tests/engine/art-verdict-judgment-round12.test.ts (1 test) 49ms
+ ✓ tests/engine/shensha-rescue.test.ts (8 tests) 49ms
+ ✓ tests/engine/bazi-reading-source-link.test.ts (6 tests) 52ms
+ ✓ tests/engine/art-verdict-gap-matrix-attribution.test.ts (5 tests) 47ms
+ ✓ tests/engine/art-verdict-judgment-round13.test.ts (2 tests) 43ms
+ ✓ tests/engine/art-verdict-judgment-round17.test.ts (6 tests) 40ms
+ ✓ tests/engine/tiaohou-term-phase-months.test.ts (3 tests) 36ms
+ ✓ tests/engine/art-verdict-judgment-round3.test.ts (4 tests) 32ms
+ ✓ tests/engine/bazi-luck-and-boundary-free-reading.test.ts (2 tests) 36ms
+ ✓ tests/engine/bazi-detail.test.ts (5 tests) 28ms
+ ✓ tests/engine/bazi-transit-position-relations.test.ts (25 tests) 52ms
+ ✓ tests/engine/art-verdict-judgment-round6.test.ts (3 tests) 32ms
+ ✓ tests/engine/liuyao-analysis.test.ts (52 tests) 31ms
+ ✓ tests/engine/bazi-transit-source-routes.test.ts (10 tests) 30ms
+ ✓ tests/engine/art-verdict-judgment-zpr-fail-charts.test.ts (3 tests) 27ms
+ ✓ tests/engine/art-verdict-judgment-round10.test.ts (3 tests) 47ms
+ ✓ tests/engine/art-verdict-judgment-round16.test.ts (2 tests) 30ms
+ ✓ tests/engine/qimen-methods.test.ts (34 tests) 20ms
+ ✓ tests/engine/lunar-cast-shared.test.ts (3 tests) 21ms
+ ✓ tests/engine/liuyao-methods.test.ts (10 tests) 25ms
+ ✓ tests/engine/qimen-reading-consistency.test.ts (18 tests) 19ms
+ ✓ tests/engine/liuren-facts.test.ts (2 tests) 18ms
+ ✓ tests/engine/art-verdict-judgment-round9.test.ts (2 tests) 18ms
+ ✓ tests/engine/liuren-seasonal-phase.test.ts (8 tests) 19ms
+ ✓ tests/engine/liuren-guiren.test.ts (14 tests) 17ms
+ ✓ tests/engine/liuyao.test.ts (6 tests) 21ms
+ ✓ tests/engine/art-verdict-judgment-round8.test.ts (2 tests) 18ms
+ ✓ tests/engine/liuren-boundary-unknowns.test.ts (4 tests) 16ms
+ ✓ tests/engine/facts.test.ts (3 tests) 19ms
+ ✓ tests/engine/liuren-combinations.test.ts (12 tests) 14ms
+ ✓ tests/engine/liuren.test.ts (6 tests) 14ms
+ ✓ tests/engine/version-map-pins.test.ts (1 test) 17ms
+ ✓ tests/engine/qimen.test.ts (6 tests) 13ms
+ ✓ tests/engine/qizheng-reading-selection.test.ts (5 tests) 13ms
+ ✓ tests/engine/tiaohou-source-link.test.ts (2 tests) 17ms
+ ✓ tests/engine/art-verdict-judgment-round15.test.ts (3 tests) 14ms
+ ✓ tests/engine/art-verdict-judgment-round14.test.ts (2 tests) 17ms
+ ✓ tests/engine/calendar-boundaries.test.ts (10 tests) 15ms
+ ✓ tests/engine/qizheng-time-basis-page.test.ts (5 tests) 13ms
+ ✓ tests/engine/liuyao-source-components.test.ts (11 tests) 10ms
+ ✓ tests/engine/liuren-reading-selection.test.ts (4 tests) 11ms
+ ✓ tests/engine/liuren-transmission-state.test.ts (5 tests) 10ms
+ ✓ tests/engine/qizheng-wang-gong-xufang.test.ts (7 tests) 10ms
+ ✓ tests/engine/liuren-day-branch-relations.test.ts (9 tests) 9ms
+ ✓ tests/engine/liuren-selection.test.ts (10 tests) 9ms
+ ✓ tests/engine/qizheng.test.ts (8 tests) 7ms
+ ✓ tests/engine/liuyao-solitary.test.ts (5 tests) 8ms
+ ✓ tests/engine/qimen-wonders.test.ts (5 tests) 7ms
+ ✓ tests/engine/qizheng-source-conditions.test.ts (3 tests) 7ms
+ ✓ tests/engine/liuyao-use-summary.test.ts (3 tests) 7ms
+ ✓ tests/engine/qizheng-nodes.test.ts (5 tests) 7ms
+ ✓ tests/engine/liuyao-reading-instances.test.ts (2 tests) 6ms
+ ✓ tests/engine/birth-time-report-export.test.ts (1 test) 6ms
+ ✓ tests/engine/art-free-reading-testids.test.ts (1 test) 4ms
+ ✓ tests/engine/art-verdict-judgment-pack13.test.ts (20 tests) 5ms
+ ✓ tests/engine/chart-insufficient.test.ts (4 tests) 5ms
+ ✓ tests/engine/chart-reading-export.test.ts (2 tests) 4ms
+ ✓ tests/engine/meihua.test.ts (9 tests) 4ms
+ ✓ tests/engine/xiaoliuren-source-example.test.ts (7 tests) 3ms
+ ✓ tests/engine/xiaoliuren.test.ts (13 tests) 3ms
+ ✓ tests/engine/lunar-input.test.ts (1 test) 3ms
+ ✓ tests/engine/liuyao-rescue.test.ts (6 tests) 3ms
+ ✓ tests/engine/knowledge-search.test.ts (4 tests) 3ms
+ ✓ tests/engine/art-verdict-fact-path.test.ts (7 tests) 2ms
+ ✓ tests/engine/art-verdict-judgment-coverage-index.test.ts (1 test) 2ms
+ ✓ tests/engine/regions-input.test.ts (1 test) 2ms
+ ✓ tests/engine/core-ganzhi.test.ts (3 tests) 2ms
+ ✓ tests/engine/bazi-source-rule-ids.test.ts (5 tests) 1ms
+ ✓ tests/engine/tables-lock.test.ts (2 tests) 1ms
+ ✓ tests/engine/regions-hemisphere.test.ts (1 test) 1ms
+
+ Test Files  126 passed (126)
+      Tests  3188 passed (3188)
+   Start at  10:44:53
+   Duration  63.79s (transform 4.84s, setup 0ms, import 13.62s, tests 42.88s, environment 5ms)
+
+exit=0

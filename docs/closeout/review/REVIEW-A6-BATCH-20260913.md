@@ -1,14 +1,14 @@
 # 独立复核：A6 批次（六爻/紫微消费者缺陷修复）合 main 前审查
 
 - 任务：t8（fateradar-closeout，审阅者 `reviewer`）
-- 复核时间：2026-09-13 10:20–10:55 (+0800)
-- 审查对象：**工作树未提交改动**（product worktree，基线 HEAD `00e98fc`）；产品源码我一行未改
+- 复核时间：2026-09-13 10:20–11:00 (+0800)
+- 审查对象：**A6 候选提交 `f030441`**（`fix(A6): liuyao per-line focus keeps all chart-level points + anchored sources; ziwei free-reading takes explicit luck-layer scope; export token gains 4th segment (candidate for review)`，2026-09-13 10:36:22）。我开工时它还在工作树里未提交，快照取自当时的工作树；提交后逐文件比对，**六个受审文件与我所审内容逐字节相同**（`liuyao-free-reading.ts`、`ziwei-free-reading.ts`、`chart.ziwei.tsx`、`evidence-panel.tsx`、`reading-input-export.ts`、`ziwei-viewdate-free-reading.test.ts` 的 md5 与 `git show f030441:<file>` 全等，A6 测试文件亦同）。其后 HEAD 前进到 `cf0c1f7`（A5 批次），不属本次审查范围。
 - 方法：不用成员自报数字。**同一份探针在两棵树上各跑一次**做 A/B：
   - `/tmp/rev/a6-head` = `git archive 00e98fc`（改动前的 HEAD 内容）
-  - `/tmp/rev/a6-wt` = 当前工作树 rsync（含 A6 改动）
-  - 两棵树都把 `node_modules` 软链回真实仓，只读；探针、产物、日志全部落在 `/tmp` 与
+  - `/tmp/rev/a6-wt` = 当时的 A6 工作树内容；另用 `git archive f030441` 建 `/tmp/rev/a6-cand` 跑候选提交自身的类型检查与全量引擎测试
+  - 三棵树都把 `node_modules` 软链回真实仓，只读；探针、产物、日志全部落在 `/tmp` 与
     `classics:docs/closeout/review/a6-batch-20260913/`
-- 未 commit / push / merge；未触碰 `benchmarks/mingli-contest-2024/**`、`scripts/contest-evidence.ts` 等他人现场
+- 未 commit / push / merge；未触碰 `benchmarks/mingli-contest-2024/**`、`scripts/contest-evidence.ts`、`src/lib/rules/source-link.ts`、`.github/workflows/ci.yml` 等他人现场
 
 ## 0. 结论
 
@@ -18,7 +18,7 @@
 | 缺陷 2（紫微运限层） | **成立且已修复**。改前 210 个用例里 120 个「所选层 ≠ 正文层」；改后 0 个，且正文/事实用的是**该层自己的**干支/流曜/四化 |
 | 3 个既有测试的修改 | **语义保留，未放宽**。断言数只增不减（2→4、96→97、115→116）；旧测试对新代码恰好 3 条失败，形态都是「expected X not to equal X」——即旧断言本身编码了错误行为 |
 | 新测试是否只是自证 | **否**。新测试对改前代码 **13 条失败 / 47**，改后 **47/47 通过**（fail-before / pass-after 已实测） |
-| 类型与回归 | `tsc --noEmit` 干净；`vitest run tests/engine` **129 文件 / 3230 条全过** |
+| 类型与回归 | 候选提交 `f030441` 自身：`tsc --noEmit` exit 0；`vitest run tests/engine` **126 文件 / 3188 条全过**；A6 测试文件 10/10。另在含在途 A8/A5 改动的当时工作树上跑过一遍：129 文件 / 3230 条全过（后者含别的批次，不作 A6 证据） |
 | 合 main 建议 | **可合**（两项修复与测试经独立复核成立），但须同时登记第 4 节 (a)–(e) 四项具名缺口，其中 (a) 是「同一缺陷类在其余五术仍在」 |
 
 ## 1. 缺陷 1：六爻逐爻焦点（`liuyao-free-reading.ts`）
@@ -185,8 +185,10 @@ expect(text).not.toContain("当前运限层")   // 不得换层顶替
 
 - 探针脚本：`classics:docs/closeout/review/a6-batch-20260913/probe{,2,4,5,6,7,8}.ts`（同一份文件拷进两棵 /tmp 树各自跑）
 - 原始输出：同目录 `out-{head,wt}.json`（六爻+紫微全量）、`p2-*`（紫微分分支）、`p4-*`（不可用层）、`p5-*`/`p6-*`（scope 表 / 后缀碰撞）、`p7-*`（跨八术点 ID 冒充）、`p8-*`（文档那条调用）
-- 日志：`oldtests-on-newcode.txt`（旧测试×新代码 3 失败）、`newtests-on-oldcode.txt`（新测试×旧代码 13 失败）、`engine-tests.txt`（129 文件/3230 全过）、`typecheck.txt`（exit 0）
+- 日志：`oldtests-on-newcode.txt`（旧测试×新代码 3 失败）、`newtests-on-oldcode.txt`（新测试×旧代码 13 失败）、`cand-typecheck.txt`（候选提交 tsc exit 0）、`cand-engine-tests.txt`（126 文件/3188 全过）、`cand-a6-tests.txt`（10/10）、`engine-tests.txt`（含在途改动的当时工作树 129/3230）、`typecheck.txt`
 - 矩阵比对脚本：`verify_captain_matrix.py`、`verify_matrix_current.py`
+
+**仍未审他人在途改动**：复核期间工作树另出现 `src/lib/rules/source-link.ts`、`.github/workflows/ci.yml`、`scripts/export-bazi-source-rules.ts`、`src/lib/engine/generated/{bazi-anchor-rule-index,tiaohou-profiles}.json`、`docs/closeout/VERSION_MAP.json` 的改动（看方向是 A8 版本钉/重导出，与我 t5 的报告同向），以及 classics 侧 `references/executable/*.json` 的 `named_gaps` 在途改动。这些**不在 t8 范围**，本轮未审、也未计入任何结论。
 
 ## 7. 复审结论
 

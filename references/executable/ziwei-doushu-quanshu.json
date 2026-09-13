@@ -105,7 +105,25 @@
       "rescue": "unimplemented",
       "vernacular": "{locations}。本盘{status}这条来源定义的结构。{conditions}。{limitations}",
       "implementation_assumption": "只核L69夹帝结构；L1593的拱主还有命宫/拱照支路，本条不并入。三方煞破与贵贱效力未由此结构决定。",
-      "verified": false
+      "verified": false,
+      "named_gaps": [
+        {
+          "kind": "unimplemented-reason",
+          "reason_class": "implementation-gap",
+          "claim_checked": "本条 rescue=unimplemented 的既有理由（见 implementation_assumption／unknown_when）",
+          "search_scope": "《紫微斗数全书》全文 4844 行逐字检索：夾帝 1 处/1 行；拱主 5 处/5 行（不用截断检索；如为异体字或简体另计）",
+          "finding": "原书结构与取法明确（见 evidence 原文），缺的是引擎未提供本命紫微／辅弼、魁钺、禄存／天马等位置事实，故条件无法判定。属实现缺口（事实未供／未接入），不是原文未界定。",
+          "evidence": [
+            {
+              "paragraph_id": "ziwei-doushu-quanshu:L0069-L0069",
+              "start_line": 69,
+              "end_line": 69,
+              "quote": "輔弼夾帝為上品，桃花犯主為至淫。"
+            }
+          ],
+          "effect": "rescue 保持 unimplemented（本登记只分类理由，不改变判定语义）。解锁条件：需先产出相应位置事实（紫微/辅弼、魁钺、禄存/天马），再判本条；在此之前保持 unimplemented。"
+        }
+      ]
     },
     {
       "id": "ZWD-E-03",
@@ -385,7 +403,25 @@
       "rescue": "unimplemented",
       "vernacular": "{locations}。本盘{status}这条来源定义的结构。{conditions}。{limitations}",
       "implementation_assumption": "按此明确分支不交换魁钺；位置符合不代表整段吉聚及年龄/墓库行限条件都已成立。",
-      "verified": false
+      "verified": false,
+      "named_gaps": [
+        {
+          "kind": "unimplemented-reason",
+          "reason_class": "implementation-gap",
+          "claim_checked": "本条 rescue=unimplemented 的既有理由（见 implementation_assumption／unknown_when）",
+          "search_scope": "《紫微斗数全书》全文 4844 行逐字检索：魁鉞 42 处/42 行；命宮 34 处/33 行（不用截断检索；如为异体字或简体另计）",
+          "finding": "原书结构与取法明确（见 evidence 原文），缺的是引擎未提供本命紫微／辅弼、魁钺、禄存／天马等位置事实，故条件无法判定。属实现缺口（事实未供／未接入），不是原文未界定。",
+          "evidence": [
+            {
+              "paragraph_id": "ziwei-doushu-quanshu:L0927-L0937",
+              "start_line": 927,
+              "end_line": 928,
+              "quote": "希夷先生答曰：魁鉞斗中司科之星，入命坐貴向貴，或得左右吉聚無不富貴。\n況二星又為上界和合之神，若魁臨命，鉞守身，更迭相守。"
+            }
+          ],
+          "effect": "rescue 保持 unimplemented（本登记只分类理由，不改变判定语义）。解锁条件：需先产出相应位置事实（紫微/辅弼、魁钺、禄存/天马），再判本条；在此之前保持 unimplemented。"
+        }
+      ]
     },
     {
       "id": "ZWD-E-10",
@@ -429,7 +465,25 @@
       "rescue": "unimplemented",
       "vernacular": "{locations}。本盘{status}这条来源定义的结构。{conditions}。{limitations}",
       "implementation_assumption": "只核原书禄马交驰的同宫支路，名称显示禄马同宫；截路空亡、死绝及煞破的效力不由同宫本身决定。",
-      "verified": false
+      "verified": false,
+      "named_gaps": [
+        {
+          "kind": "unimplemented-reason",
+          "reason_class": "implementation-gap",
+          "claim_checked": "本条 rescue=unimplemented 的既有理由（见 implementation_assumption／unknown_when）",
+          "search_scope": "《紫微斗数全书》全文 4844 行逐字检索：祿馬 17 处/17 行；同宫 3 处/3 行；同宮 41 处/40 行（不用截断检索；如为异体字或简体另计）",
+          "finding": "原书结构与取法明确（见 evidence 原文），缺的是引擎未提供本命紫微／辅弼、魁钺、禄存／天马等位置事实，故条件无法判定。属实现缺口（事实未供／未接入），不是原文未界定。",
+          "evidence": [
+            {
+              "paragraph_id": "ziwei-doushu-quanshu:L0976-L0987",
+              "start_line": 976,
+              "end_line": 987,
+              "quote": "希夷先生答曰：諸宮各有制化，如身命臨之謂之驛馬。\n喜祿存、紫府、昌曲，守照為吉。\n如大小二限臨之，更遇祿存紫府，流昌必利。\n如與祿存同宮，謂之祿馬交馳，又曰折鞭馬；\n紫府同宮謂之扶轝馬；\n刑殺同宮謂之負屍馬；\n火星同宮謂之戰馬；\n日月同宮謂雌雄馬；\n逢空亡謂之死馬、亡馬；\n居絕死謂之死馬；\n遇陀羅謂之折足馬。\n以上犯此數者，俱主災病，流年值之依此斷。"
+            }
+          ],
+          "effect": "rescue 保持 unimplemented（本登记只分类理由，不改变判定语义）。解锁条件：需先产出相应位置事实（紫微/辅弼、魁钺、禄存/天马），再判本条；在此之前保持 unimplemented。"
+        }
+      ]
     },
     {
       "id": "ZWD-E-11",

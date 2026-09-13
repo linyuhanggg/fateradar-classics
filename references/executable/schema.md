@@ -48,10 +48,12 @@
 
 | 字段 | 含义 |
 |---|---|
-| kind | `source-term`（术语／读法）或 `verdict-scope`（判定口径） |
+| kind | `source-term`（术语／读法）、`verdict-scope`（判定口径）或 `unimplemented-reason`（unimplemented 理由分类） |
 | term / topic | 登记对象；`source-term` 用 `term`，`verdict-scope` 用 `topic` |
 | status | `source-term`：`criterion-stated`（原文给出取法）／`partially-stated`（给出部分判据）／`source-undefined`（原文未给判据）／`reading-undetermined`（读法待定）；`verdict-scope`：`named-scope-decision` |
+| reason_class | `unimplemented-reason` 必填：`implementation-gap`（原文有判据或条件可读，缺的是引擎实现／事实未供）／`evidence-undecided`（原文本身未界定或歧义）／`out-of-scope`（明确排除） |
 | claim_checked | 本次要核的原判（写清出处），便于第三方复核是否被推翻 |
+| search_scope | `source-term` 必填：检索范围（哪份全文、多少行／是否冻结、原判的检索范围差在哪里），使「全文检索」四个字可复核 |
 | finding / decision | 复核结论；`verdict-scope` 写口径决定 |
 | occurrences / lines_with_term | 该术语在本书全文的出现处数与行数；`verdict-scope` 同义字段为 `cue_occurrences` / `cue_lines`（cue＝口径所本的原文说法） |
 | evidence | 原文证据行：`paragraph_id` + `start_line`／`end_line` + `quote`（quote 必须是这些行的逐字片段，且至少一条含登记词） |
@@ -65,6 +67,16 @@
 
 登记本身**不改变** `satisfy_when`／`fail_when`／`unknown_when` 三态语义，也不提升 `verified`：
 `source-undefined` 不等于「可以不给判据」，`criterion-stated` 也不等于「已经实现」。
+
+`unimplemented-reason` 只用于 `rescue="unimplemented"` 的条款，把「为什么还没实现」分成两类，避免把
+引擎未做写成原文未定（或反过来）：
+
+- `implementation-gap`：原文有判据／条件可读，缺的是引擎实现或事实未供（例：原文已明示透藏条件，
+  但引擎未量化强弱与成局）。
+- `evidence-undecided`：原文本身未界定、异文或读法待定（例：某术语全书仅一处且无取法）。
+
+它的 `evidence` **必须逐字取自本条自己声明的 `sources`**（校验器逐字段比对）：理由分类只能挂在
+条款自己的原文上，不能另引他处充数。`effect` 里要写明解锁条件（什么做完才可能改标）。
 
 ## 来源摘录
 

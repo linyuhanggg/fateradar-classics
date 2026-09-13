@@ -81,7 +81,25 @@
       "rescue": "unimplemented",
       "vernacular": "按《子平真诠》，{name}属{mode}。这是格局路线，不能直接改写成固定五行喜忌。",
       "implementation_assumption": "善/不善是格局术语。已接入路线通过geju.execution列出实际参与的财、官、食伤、印或合绊作用者，藏干与透干分开；不把顺用固定成官财印、逆用固定成印食官。未成立或未接入的路线保留具体缺项，不默认生成五行套餐。",
-      "verified": false
+      "verified": false,
+      "named_gaps": [
+        {
+          "kind": "unimplemented-reason",
+          "reason_class": "implementation-gap",
+          "claim_checked": "本条 rescue=unimplemented 的既有理由（见 implementation_assumption／unknown_when）",
+          "search_scope": "《子平真诠》全文 1774 行逐字检索：順用 3 处/3 行；逆用 4 处/4 行；善 22 处/16 行；不善 6 处/5 行（不用截断检索；如为异体字或简体另计）",
+          "finding": "原文以善／不善定顺用逆用（见 evidence 原文），本条缺的是引擎未接入建禄月劫另取用神的路线，不是原文未给判据。属实现缺口（路线未接入）。",
+          "evidence": [
+            {
+              "paragraph_id": "ziping-zhenquan:L0328-L0328",
+              "start_line": 328,
+              "end_line": 328,
+              "quote": "八字用神，專求月令，以日干配月令地支，而生尅不同，格局分焉。財官印食，此用神之善而順用之者也；煞傷劫刃，此用神之不善而逆用之者也。當順而順，當逆而逆，配合得宜，皆爲貴格。"
+            }
+          ],
+          "effect": "rescue 保持 unimplemented（本登记只分类理由，不改变判定语义）。解锁条件：需接入建禄月劫取用神路线后启用；在此之前 completion 保持信息不足。"
+        }
+      ]
     },
     {
       "id": "ZPR-E-03",
@@ -1421,7 +1439,25 @@
       "rescue": "unimplemented",
       "vernacular": "变之善不善只记原文例的透藏会支。化财为官、化为劫不是已经改格。",
       "implementation_assumption": "辛生寅月逢丙只记年日月时干除日干外见丙，本盘仍按寅藏甲取正财格。壬生戌月逢辛只记见辛，本盘仍按戌本气戊取七杀格。丙生寅月甲不透且支见午戌，本盘仍按寅本气甲取偏印格。丙生申月透壬且支见子辰，本盘仍按申本气庚取偏财格。不按寅藏甲丙戊重写取格。completion 仍为信息不足。",
-      "verified": false
+      "verified": false,
+      "named_gaps": [
+        {
+          "kind": "unimplemented-reason",
+          "reason_class": "implementation-gap",
+          "claim_checked": "本条 rescue=unimplemented 的既有理由（见 implementation_assumption／unknown_when）",
+          "search_scope": "《子平真诠》全文 1774 行逐字检索：並透 24 处/19 行；變之善 1 处/1 行；不善 6 处/5 行（不用截断检索；如为异体字或简体另计）",
+          "finding": "本条原文条件可读且已逐条落成字面条件（并透／支见，见 implementation_assumption 与 evidence 原文），缺的是引擎对「格局高低／有情有力／相神紧要／因成得败」效力层的量化，故 completion 保持信息不足。属实现缺口，不是原文未给判据。",
+          "evidence": [
+            {
+              "paragraph_id": "ziping-zhenquan:L0425-L0430",
+              "start_line": 426,
+              "end_line": 430,
+              "quote": "如辛生寅月，逢丙而化財爲官；\n壬生戌月，逢辛而化煞爲印；\n癸生寅月，藏甲透丙，會午會戌【校：自「逢辛」至「會戌」共十九字，原書缺，據中州本補】，而化傷爲財，即使透官，可作財旺生官論，不作傷官見官；\n乙生寅月，透戊爲財，會午會戌，則月劫化爲食傷【校：「食傷」原作「月生」，據中州本改】。\n如此之類，不可勝數，皆變之善者也。"
+            }
+          ],
+          "effect": "rescue 保持 unimplemented（本登记只分类理由，不改变判定语义）。解锁条件：需先量化效力层（有情有力、相神紧要等），再按原文条件启用；不得把信息不足写成成格或破格。"
+        }
+      ]
     },
     {
       "id": "ZPR-E-34",
@@ -1539,7 +1575,25 @@
       "rescue": "unimplemented",
       "vernacular": "格局高低只记原文透藏。合伤存官不是成格结论，辛丁并透不是已经论有力。",
       "implementation_assumption": "并透只记年日月时干除日干外同时见所列天干。丙子还要求日支为寅或午。不把有情有力覆盖成本盘成格。不改 GE_NAME。completion 仍为信息不足。",
-      "verified": false
+      "verified": false,
+      "named_gaps": [
+        {
+          "kind": "unimplemented-reason",
+          "reason_class": "implementation-gap",
+          "claim_checked": "本条 rescue=unimplemented 的既有理由（见 implementation_assumption／unknown_when）",
+          "search_scope": "《子平真诠》全文 1774 行逐字检索：有情 30 处/25 行；有力 11 处/6 行；格局高低 1 处/1 行（不用截断检索；如为异体字或简体另计）",
+          "finding": "本条原文条件可读且已逐条落成字面条件（并透／支见，见 implementation_assumption 与 evidence 原文），缺的是引擎对「格局高低／有情有力／相神紧要／因成得败」效力层的量化，故 completion 保持信息不足。属实现缺口，不是原文未给判据。",
+          "evidence": [
+            {
+              "paragraph_id": "ziping-zhenquan:L0468-L0468",
+              "start_line": 468,
+              "end_line": 468,
+              "quote": "如正官佩印，不如透財，而四柱帶傷，反推佩印。故甲透酉官，透丁合壬，是謂合傷存官，遂成貴格，以其有情也。財忌比肩，而與煞作合，劫反爲用。故甲生辰月，透戊成格，遇乙爲劫，逢庚爲煞，二者相合，皆得其用，遂成貴格，亦以其有情也。"
+            }
+          ],
+          "effect": "rescue 保持 unimplemented（本登记只分类理由，不改变判定语义）。解锁条件：需先量化效力层（有情有力、相神紧要等），再按原文条件启用；不得把信息不足写成成格或破格。"
+        }
+      ]
     },
     {
       "id": "ZPR-E-37",
@@ -1583,7 +1637,25 @@
       "rescue": "unimplemented",
       "vernacular": "因成得败因败得成只记原文透藏会支与年时干。卯未会财不是破格结论，年丙时壬不是成格结论。",
       "implementation_assumption": "辛亥透丁卯未只记年日月时干除日干外见丁，且地支同时见卯未。辛戌年丙时壬只记年干丙且时干壬。庚酉年月丙丁时壬只记年干月干同时见丙丁且时干壬。不把因成得败覆盖成本盘破格。不改 GE_NAME。completion 仍为信息不足。",
-      "verified": false
+      "verified": false,
+      "named_gaps": [
+        {
+          "kind": "unimplemented-reason",
+          "reason_class": "implementation-gap",
+          "claim_checked": "本条 rescue=unimplemented 的既有理由（见 implementation_assumption／unknown_when）",
+          "search_scope": "《子平真诠》全文 1774 行逐字检索：因成得敗 6 处/4 行；因敗得成 6 处/4 行（不用截断检索；如为异体字或简体另计）",
+          "finding": "本条原文条件可读且已逐条落成字面条件（并透／支见，见 implementation_assumption 与 evidence 原文），缺的是引擎对「格局高低／有情有力／相神紧要／因成得败」效力层的量化，故 completion 保持信息不足。属实现缺口，不是原文未给判据。",
+          "evidence": [
+            {
+              "paragraph_id": "ziping-zhenquan:L0490-L0490",
+              "start_line": 490,
+              "end_line": 490,
+              "quote": "故化傷爲財，格之成也，然辛生亥月，透丁爲用，卯未會財，乃以黨煞，因成得敗矣。印用七煞，格之成也，然癸生申月，秋金重重，略帶財以損太過，逢煞則煞印忌財，因成得敗也。如此之類，不可勝數，皆因成得敗之例也。"
+            }
+          ],
+          "effect": "rescue 保持 unimplemented（本登记只分类理由，不改变判定语义）。解锁条件：需先量化效力层（有情有力、相神紧要等），再按原文条件启用；不得把信息不足写成成格或破格。"
+        }
+      ]
     },
     {
       "id": "ZPR-E-38",
@@ -1646,7 +1718,25 @@
       "rescue": "unimplemented",
       "vernacular": "用神配气候只记原文透藏。透丁为官不是成格结论，木火通明不是已经调候。",
       "implementation_assumption": "庚申会水只记地支见子或辰，年日月时干除日干外见丁且不见壬癸。春木逢火只记甲乙日寅卯月且除日干外见丙或丁。秋金遇水只记庚辛日申酉月且除日干外见壬或癸。不覆盖调候表。不改 GE_NAME。completion 仍为信息不足。",
-      "verified": false
+      "verified": false,
+      "named_gaps": [
+        {
+          "kind": "unimplemented-reason",
+          "reason_class": "implementation-gap",
+          "claim_checked": "本条 rescue=unimplemented 的既有理由（见 implementation_assumption／unknown_when）",
+          "search_scope": "《子平真诠》全文 1774 行逐字检索：氣候 3 处/3 行；調候 4 处/3 行（不用截断检索；如为异体字或简体另计）",
+          "finding": "本条原文条件可读且已逐条落成字面条件（并透／支见，见 implementation_assumption 与 evidence 原文），缺的是引擎对「格局高低／有情有力／相神紧要／因成得败」效力层的量化，故 completion 保持信息不足。属实现缺口，不是原文未给判据。",
+          "evidence": [
+            {
+              "paragraph_id": "ziping-zhenquan:L0504-L0504",
+              "start_line": 504,
+              "end_line": 504,
+              "quote": "是以印綬遇官，此謂官印雙全，無人不貴。而木逢冬水，雖透官星，亦難必貴。蓋金寒而水益凍，凍水不能生木，其理然也。身印兩旺，透食則貴，凡印格皆然。而用之冬木，尤爲秀【校：「秀」原作「透」，據中州本改】氣，以冬木逢火，不惟可以洩身，而即可以調候也。"
+            }
+          ],
+          "effect": "rescue 保持 unimplemented（本登记只分类理由，不改变判定语义）。解锁条件：需先量化效力层（有情有力、相神紧要等），再按原文条件启用；不得把信息不足写成成格或破格。"
+        }
+      ]
     },
     {
       "id": "ZPR-E-39",
@@ -1691,7 +1781,25 @@
       "rescue": "unimplemented",
       "vernacular": "相神紧要只记原文透藏会支与年时干。全赖壬相不是成格结论，相神有伤不是破格结论。",
       "implementation_assumption": "并透只记年日月时干除日干外同时见所列天干。乙酉年丁月癸时戊只记年干丁、月干癸、时干戊。癸亥透丙卯未还要求地支见卯未。庚申透水子辰还要求除日干外见壬或癸且地支见子辰。不把相神无破覆盖成本盘成格。不改 GE_NAME。completion 仍为信息不足。",
-      "verified": false
+      "verified": false,
+      "named_gaps": [
+        {
+          "kind": "unimplemented-reason",
+          "reason_class": "implementation-gap",
+          "claim_checked": "本条 rescue=unimplemented 的既有理由（见 implementation_assumption／unknown_when）",
+          "search_scope": "《子平真诠》全文 1774 行逐字检索：相神 4 处/3 行；相神無破 1 处/1 行；相神有傷 1 处/1 行（不用截断检索；如为异体字或简体另计）",
+          "finding": "本条原文条件可读且已逐条落成字面条件（并透／支见，见 implementation_assumption 与 evidence 原文），缺的是引擎对「格局高低／有情有力／相神紧要／因成得败」效力层的量化，故 completion 保持信息不足。属实现缺口，不是原文未给判据。",
+          "evidence": [
+            {
+              "paragraph_id": "ziping-zhenquan:L0524-L0530",
+              "start_line": 525,
+              "end_line": 530,
+              "quote": "如甲用酉官，透丁逢壬，則合傷存官以成格者，全賴於壬之相；\n戊用子財，透甲並己，則合煞存財以成格者，全賴於己之相；\n乙用酉煞，年丁月癸，時上逢戊，則合去癸印，以使丁得制煞者，全賴於戊之相；\n癸生亥月，透丙爲財，財逢月劫，而卯未來會，則化水爲木，而轉劫以生財者，全賴於卯未之相；\n庚生申月，透水【校：「水」中州本作「癸」】洩氣，不通月令而金氣不甚靈，子辰會局，則化金爲水，而成金水相涵者，全賴於子辰之相。\n如此之等類，相神之緊要也。"
+            }
+          ],
+          "effect": "rescue 保持 unimplemented（本登记只分类理由，不改变判定语义）。解锁条件：需先量化效力层（有情有力、相神紧要等），再按原文条件启用；不得把信息不足写成成格或破格。"
+        }
+      ]
     }
   ]
 }
