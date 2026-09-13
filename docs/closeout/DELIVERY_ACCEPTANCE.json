@@ -1,6 +1,6 @@
 {
   "schema": "fateradar-delivery-acceptance-v1",
-  "generated_at": "2026-09-13T08:25:00Z",
+  "generated_at": "2026-09-13T08:35:00Z",
   "generated_by": "DSH captain（本会话 goal round 1/256）",
   "authority": "classics:docs/FATERADAR_FULL_LIBRARY_PLAN.md（含 2026-09-13 收尾执行修订）",
   "purpose": "唯一收尾状态账本：逐项对应权威方案「总验收与完成条件」1–8。引用既有矩阵与报告，不新造重复指标。",
@@ -525,6 +525,11 @@
           "path": "captain 实测：tests/e2e/reading-sync-acceptance.spec.ts 的 SELECTION_CASES（L285）",
           "shows": "**e2e 覆盖边界已精确界定**（避免把「有 e2e」当成「缺陷已验」）：该 spec 的 `SELECTION_CASES` 里确有 `{ art: \"liuyao\", kind: \"occasion\", how: \"六爻：点爻\", controls: \".ly-board button\" }`——即**真的会点六爻的爻**，但断言的是「**页面侧导出入口 testid 随选位变化**」（选位/导出同步），**并不检查点开一爻后出处块里是否还有古籍锚点**。→ 所以 A6 那条缺陷的**浏览器侧只覆盖到「选位生效且与导出同步」**；「逐爻焦点必须保留总览盘级点 + 每条带 anchored_text/sourceRevision」目前由**单测**覆盖（47/47，含 10 条 A6 用例）。若要浏览器层也钉住出处块内容，需要**新增一条 e2e 断言**（点击 `.ly-board button` 后断出处块至少含 1 条古籍来源）——这是当前 A6 浏览器证据的唯一缺口，已登记",
           "kind": "captain-measured-now（覆盖边界）"
+        },
+        {
+          "path": "reviewer-2 通报（t11 早期报）：origin/main == f030441 事实核对 + 新发现",
+          "shows": "**合入时序事实**（reviewer-2 用 git 实测）：`git rev-parse origin/main` = **f030441**，`git diff --stat f030441 origin/main` = **0 行**；即 A6 候选**已被 captain 合入 main**（captain 在 round 23/25 的决定，账本 A8 已按「先合后审 + fix-forward」记录）；`git log f030441..HEAD -- <A6 六个源文件+测试>` = 空 → A6 内容自提交后未被再改，审查对象与 main 上内容一致（逐文件 md5 已入其报告）。**新发现（不阻断，但必须作为后续提交修）**：`src/routes/chart.ziwei.tsx` 的**12 主题区**其**导出 token 仍写「宫位」名**，而该区 points 已带**所选层** → **同一文件内 token 与 points 不同源**（1 行可修）。→ 这正是「先合后审」承诺的 fix-forward 场景：不能再靠合入门拦下，须作为**后续提交**处理（已并入 t17）。",
+          "kind": "independent-review-finding（post-merge）"
         }
       ],
       "remaining": [
@@ -587,6 +592,12 @@
           "kind": "implementation-gap",
           "scope": "tests/e2e（liuyao 出处块内容断言）",
           "blocks": "A6 browser-level 完整性"
+        },
+        {
+          "item": "【reviewer-2 新发现，post-merge 必修】`src/routes/chart.ziwei.tsx` 12 主题区的导出 token 仍是「宫位」名、而其 points 已带所选层 → **文件内 token 与 points 不同源**（1 行可修）。已并入 t17（其余五术 7 处伪锚点 同一批消费者修复）",
+          "kind": "implementation-gap",
+          "scope": "chart.ziwei.tsx 12 主题区 token 构造",
+          "blocks": "A6 browser-level 同源性（不阻断，但必须修）"
         }
       ],
       "owner": "page-acceptance（实际页面与导出验收）+ algo-impl",
