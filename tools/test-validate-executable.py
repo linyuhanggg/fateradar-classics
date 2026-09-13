@@ -114,6 +114,96 @@ class SourceIntegrityTests(unittest.TestCase):
         self.data["book"]["fulltext"] = "sources/fulltext/bazi/example/other.md"
         self.rejects("BOOK")
 
+    # --- A7 具名登记（named_gaps）-------------------------------------------------
+
+    def named_gap(self):
+        """一条合法登记：术语「相神」在例文 1 处、证据行 L3。"""
+        return {
+            "kind": "source-term",
+            "term": "相神",
+            "status": "source-undefined",
+            "claim_checked": "计划条件称该术语已界定",
+            "finding": "例文只在「相神有傷，立敗其格」处出现，未给判据。",
+            "occurrences": 1,
+            "lines_with_term": 1,
+            "evidence": [
+                {"paragraph_id": "example:L0003-L0003", "start_line": 3, "end_line": 3, "quote": "相神有傷"},
+            ],
+            "effect": "rescue 保持 unimplemented；不启用满足分支。",
+        }
+
+    def test_named_gap_registration_passes(self):
+        self.rule["named_gaps"] = [self.named_gap()]
+        result = self.result()
+        self.assertTrue(result["ok"], [e["code"] for e in result["errors"]])
+        self.assertEqual(result["named_gaps"], 1)
+
+    def test_named_gap_count_must_match_recomputed_fulltext(self):
+        gap = self.named_gap()
+        gap["occurrences"] = 9
+        self.rule["named_gaps"] = [gap]
+        self.rejects("NAMED_GAPS_COUNT")
+
+    def test_named_gap_lines_with_term_must_match_recomputed_fulltext(self):
+        gap = self.named_gap()
+        gap["lines_with_term"] = 2
+        self.rule["named_gaps"] = [gap]
+        self.rejects("NAMED_GAPS_COUNT")
+
+    def test_named_gap_evidence_quote_cannot_be_invented(self):
+        gap = self.named_gap()
+        gap["evidence"][0]["quote"] = "相神無傷，反成格。"
+        self.rule["named_gaps"] = [gap]
+        self.rejects("NAMED_GAPS_EVIDENCE")
+
+    def test_named_gap_evidence_must_contain_the_registered_term(self):
+        gap = self.named_gap()
+        gap["term"] = "相神之神"
+        gap["occurrences"] = 0
+        gap["lines_with_term"] = 0
+        self.rule["named_gaps"] = [gap]
+        self.rejects("NAMED_GAPS_EVIDENCE")
+
+    def test_named_gap_kind_must_be_known(self):
+        gap = self.named_gap()
+        gap["kind"] = "free-text-note"
+        self.rule["named_gaps"] = [gap]
+        self.rejects("NAMED_GAPS")
+
+    def test_reading_undetermined_needs_enumerated_readings(self):
+        gap = self.named_gap()
+        gap["status"] = "reading-undetermined"
+        self.rule["named_gaps"] = [gap]
+        self.rejects("NAMED_GAPS")
+        gap["readings"] = ["讀法甲", "讀法乙"]
+        result = self.result()
+        self.assertTrue(result["ok"], [e["code"] for e in result["errors"]])
+
+    def test_verdict_scope_requires_not_claimed(self):
+        self.rule["named_gaps"] = [{
+            "kind": "verdict-scope",
+            "topic": "例：只见藏干",
+            "status": "named-scope-decision",
+            "decision": "给信息不足，不启用满足分支。",
+            "cue": "相神",
+            "cue_occurrences": 1,
+            "cue_lines": 1,
+            "evidence": [
+                {"paragraph_id": "example:L0003-L0003", "start_line": 3, "end_line": 3, "quote": "相神有傷"},
+            ],
+            "effect": "判定三态语义不变。",
+        }]
+        self.rejects("NAMED_GAPS")
+        self.rule["named_gaps"][0]["not_claimed"] = ["不把只见藏干当作满足", "不当作不满足"]
+        result = self.result()
+        self.assertTrue(result["ok"], [e["code"] for e in result["errors"]])
+
+    def test_named_gap_evidence_paragraph_must_exist(self):
+        gap = self.named_gap()
+        gap["evidence"][0]["paragraph_id"] = "example:L0005-L0005"
+        self.rule["named_gaps"] = [gap]
+        self.rejects("NAMED_GAPS_EVIDENCE")
+
 
 if __name__ == "__main__":
     unittest.main()

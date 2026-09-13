@@ -36,9 +36,35 @@
 | rescue | `self`（本条自身即救应条款）、`unimplemented`（原文有救应条款、引擎尚未实现）、`none`（原文没有救应条款，本条无可实现）、或真实救应规则 ID |
 | vernacular | 白话模板，必须能填入本盘位置 |
 | implementation_assumption | 原文未明说、实现需要的假设 |
+| named_gaps | 可选。具名登记：影响判断而原文未界定／读法待定／口径待定的条件，逐条写进条款并附可复算计数与逐字证据行（见下节） |
 | verified | 当前全部 false；电子文本匹配、模型审查和测试不能代替人工影印核验 |
 
 事实使用柱、宫、星、爻、课、传等位置，不用整段关键词共现。
+
+## 具名登记（`named_gaps`）
+
+「原文未界定」「读法待定」「引擎给信息不足属口径」这类条件必须**写在条款内**，不能只留在过程稿或审计报告里。
+每条登记都要能被独立复核，字段如下：
+
+| 字段 | 含义 |
+|---|---|
+| kind | `source-term`（术语／读法）或 `verdict-scope`（判定口径） |
+| term / topic | 登记对象；`source-term` 用 `term`，`verdict-scope` 用 `topic` |
+| status | `source-term`：`criterion-stated`（原文给出取法）／`partially-stated`（给出部分判据）／`source-undefined`（原文未给判据）／`reading-undetermined`（读法待定）；`verdict-scope`：`named-scope-decision` |
+| claim_checked | 本次要核的原判（写清出处），便于第三方复核是否被推翻 |
+| finding / decision | 复核结论；`verdict-scope` 写口径决定 |
+| occurrences / lines_with_term | 该术语在本书全文的出现处数与行数；`verdict-scope` 同义字段为 `cue_occurrences` / `cue_lines`（cue＝口径所本的原文说法） |
+| evidence | 原文证据行：`paragraph_id` + `start_line`／`end_line` + `quote`（quote 必须是这些行的逐字片段，且至少一条含登记词） |
+| readings | `reading-undetermined` 必填，至少两条读法并列，**不替原文择一** |
+| not_claimed | `verdict-scope` 必填：不得由本登记推出的结论 |
+| effect | 本登记对判定语义的影响；须写明保留了哪条 `rescue` 标签、是否影响满足分支 |
+
+校验器对这些字段要**重算**：`occurrences`／`lines_with_term`（及 `cue_*`）必须与当前全文逐字相符，
+证据行必须落在真实段落内且是原文逐字片段，含登记词。原文一变，登记即校验失败，须重新核对——
+登记不能靠自报数字成立。
+
+登记本身**不改变** `satisfy_when`／`fail_when`／`unknown_when` 三态语义，也不提升 `verified`：
+`source-undefined` 不等于「可以不给判据」，`criterion-stated` 也不等于「已经实现」。
 
 ## 来源摘录
 
@@ -54,8 +80,8 @@
 
 ## 校验边界
 
-`python3 tools/validate-executable.py` 校验本目录全部 JSON 的字段、唯一 ID、真实段落引用、原文行范围、逐字引文、摘要拼接和救应依赖。它不验证古籍预测、规则语义是否完整或产品执行是否正确。
+`python3 tools/validate-executable.py` 校验本目录全部 JSON 的字段、唯一 ID、真实段落引用、原文行范围、逐字引文、摘要拼接、救应依赖和 `named_gaps` 具名登记（计数重算＋证据逐字比对）。它不验证古籍预测、规则语义是否完整或产品执行是否正确。
 
-`python3 tools/test-validate-executable.py` 用独立小文本验证跨段成功，以及外键悬空、超范围、篡改引文、遗漏来源、无效救应等失败分支。两条命令均进入 `.github/workflows/validate-rules.yml`；旧 YAML 和 reading-notes 校验继续保留。
+`python3 tools/test-validate-executable.py` 用独立小文本验证跨段成功，以及外键悬空、超范围、篡改引文、遗漏来源、无效救应、具名登记计数不符／证据伪造等失败分支。两条命令均进入 `.github/workflows/validate-rules.yml`；旧 YAML 和 reading-notes 校验继续保留。
 
 逐条来源调整记录见 `SOURCE_REVIEW.md`。

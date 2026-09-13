@@ -10,13 +10,112 @@ SCHEMA_VERSION = "fateradar-executable-v2"
 QUOTE_SEPARATOR = "\n[…]\n"
 ARTS = {"bazi", "ziwei", "qimen", "liuren", "liuyao", "meihua", "xiaoliuren", "qizheng"}
 TEXT_FIELDS = ("id", "art", "theme", "school", "page", "satisfy_when", "fail_when", "unknown_when", "rescue", "vernacular", "implementation_assumption")
+# `named_gaps`（可选）：A7 要求的具名登记——影响判断、但原文未界定或引擎未实现的条件，
+# 必须写在条款内并带可复算的计数与逐字证据行，不能只写在过程稿里。两种 kind：
+#   source-term    ：某个术语/读法（term）+ 原文状态（status）+ 全文计数 + 原文证据行
+#   verdict-scope  ：某条口径（topic + cue + decision），说明为何给信息不足
+NAMED_GAP_KINDS = ("source-term", "verdict-scope")
+NAMED_GAP_TERM_STATUSES = ("criterion-stated", "partially-stated", "source-undefined", "reading-undetermined")
+NAMED_GAP_SCOPE_STATUSES = ("named-scope-decision",)
+
+
+def validate_named_gaps(rule: dict, rel, rid: str, lines: list[str], paragraphs: dict, fulltext: str, error) -> int:
+    """校验具名登记的字段、全文计数与逐字证据行；返回登记条数。"""
+    gaps = rule.get("named_gaps")
+    if gaps is None:
+        return 0
+    if not isinstance(gaps, list) or not gaps:
+        error("NAMED_GAPS", rel, rid, "named_gaps 必须是非空数组")
+        return 0
+    seen_terms: set[str] = set()
+    for gap in gaps:
+        if not isinstance(gap, dict):
+            error("NAMED_GAPS", rel, rid, "named_gaps 条目必须是对象")
+            continue
+        kind = gap.get("kind")
+        if kind not in NAMED_GAP_KINDS:
+            error("NAMED_GAPS", rel, rid, f"kind 只允许 {'／'.join(NAMED_GAP_KINDS)}：{kind}")
+            continue
+        if not isinstance(gap.get("effect"), str) or not gap["effect"].strip():
+            error("NAMED_GAPS", rel, rid, "effect 必须是非空文本：登记不改变判定语义，要写清保留了哪条标签")
+        anchor = None
+        if kind == "source-term":
+            term = gap.get("term")
+            if not isinstance(term, str) or not term.strip():
+                error("NAMED_GAPS", rel, rid, "source-term 必须有 term")
+                continue
+            anchor = term
+            if gap.get("status") not in NAMED_GAP_TERM_STATUSES:
+                error("NAMED_GAPS", rel, rid, f"source-term status 非法：{gap.get('status')}")
+            if term in seen_terms:
+                error("NAMED_GAPS", rel, rid, f"同一规则内术语重复登记：{term}")
+            seen_terms.add(term)
+            for key in ("claim_checked", "finding"):
+                if not isinstance(gap.get(key), str) or not gap[key].strip():
+                    error("NAMED_GAPS", rel, rid, f"{key} 必须是非空文本")
+            occurrences = fulltext.count(term)
+            lines_with_term = sum(1 for line in lines if term in line)
+            if gap.get("occurrences") != occurrences:
+                error("NAMED_GAPS_COUNT", rel, rid, f"「{term}」occurrences 与全文重算不符：{gap.get('occurrences')} != {occurrences}")
+            if gap.get("lines_with_term") != lines_with_term:
+                error("NAMED_GAPS_COUNT", rel, rid, f"「{term}」lines_with_term 与全文重算不符：{gap.get('lines_with_term')} != {lines_with_term}")
+            readings = gap.get("readings")
+            if gap.get("status") == "reading-undetermined":
+                if not isinstance(readings, list) or len(readings) < 2 or not all(isinstance(x, str) and x.strip() for x in readings):
+                    error("NAMED_GAPS", rel, rid, "reading-undetermined 必须逐条列出至少两条读法")
+        else:
+            for key in ("topic", "decision"):
+                if not isinstance(gap.get(key), str) or not gap[key].strip():
+                    error("NAMED_GAPS", rel, rid, f"verdict-scope 的 {key} 必须是非空文本")
+            if gap.get("status") not in NAMED_GAP_SCOPE_STATUSES:
+                error("NAMED_GAPS", rel, rid, f"verdict-scope status 非法：{gap.get('status')}")
+            not_claimed = gap.get("not_claimed")
+            if not isinstance(not_claimed, list) or not not_claimed or not all(isinstance(x, str) and x.strip() for x in not_claimed):
+                error("NAMED_GAPS", rel, rid, "verdict-scope 必须列出 not_claimed（不得由此登记推出的结论）")
+            cue = gap.get("cue")
+            if not isinstance(cue, str) or not cue.strip():
+                error("NAMED_GAPS", rel, rid, "verdict-scope 必须有 cue（口径所本的原文说法）")
+            else:
+                anchor = cue
+                cue_occurrences = fulltext.count(cue)
+                cue_lines = sum(1 for line in lines if cue in line)
+                if gap.get("cue_occurrences") != cue_occurrences:
+                    error("NAMED_GAPS_COUNT", rel, rid, f"「{cue}」cue_occurrences 与全文重算不符：{gap.get('cue_occurrences')} != {cue_occurrences}")
+                if gap.get("cue_lines") != cue_lines:
+                    error("NAMED_GAPS_COUNT", rel, rid, f"「{cue}」cue_lines 与全文重算不符：{gap.get('cue_lines')} != {cue_lines}")
+        evidence = gap.get("evidence")
+        if not isinstance(evidence, list) or not evidence:
+            error("NAMED_GAPS", rel, rid, "必须给出 evidence 原文行；无证据的登记不予承认")
+            continue
+        collected = ""
+        for item in evidence:
+            if not isinstance(item, dict):
+                error("NAMED_GAPS_EVIDENCE", rel, rid, "evidence 条目必须是对象")
+                continue
+            pid = item.get("paragraph_id")
+            paragraph = paragraphs.get(pid) if isinstance(pid, str) else None
+            if paragraph is None:
+                error("NAMED_GAPS_EVIDENCE", rel, rid, f"evidence 段落不存在：{pid}")
+            start, end, quote = item.get("start_line"), item.get("end_line"), item.get("quote")
+            if type(start) is not int or type(end) is not int or not 1 <= start <= end <= len(lines):
+                error("NAMED_GAPS_EVIDENCE", rel, rid, "evidence 行范围无效")
+                continue
+            if paragraph and not paragraph["start_line"] <= start <= end <= paragraph["end_line"]:
+                error("NAMED_GAPS_EVIDENCE", rel, rid, f"evidence L{start}-L{end} 超出段落 {pid}")
+            if not isinstance(quote, str) or not quote.strip() or quote not in "\n".join(lines[start - 1:end]):
+                error("NAMED_GAPS_EVIDENCE", rel, rid, f"evidence L{start}-L{end} 摘录不是该行原文的逐字片段")
+                continue
+            collected += quote
+        if anchor and anchor not in collected:
+            error("NAMED_GAPS_EVIDENCE", rel, rid, f"证据行里没有出现登记词「{anchor}」")
+    return len(gaps)
 
 
 def validate(root: Path) -> dict:
     errors: list[dict] = []
     rule_ids: set[str] = set()
     dependencies: list[tuple[str, str, str]] = []
-    rule_count = source_count = 0
+    rule_count = source_count = named_gap_count = 0
     files = sorted((root / "references/executable").glob("*.json"))
 
     def error(code: str, file: Path | str, rule: str, message: str) -> None:
@@ -45,7 +144,8 @@ def validate(root: Path) -> dict:
         try:
             ppath = root / "references/inventory/paragraphs" / book["system"] / f"{book['slug']}.json"
             inventory = json.loads(ppath.read_text(encoding="utf-8"))
-            lines = (root / book["fulltext"]).read_text(encoding="utf-8").splitlines()
+            fulltext = (root / book["fulltext"]).read_text(encoding="utf-8")
+            lines = fulltext.splitlines()
         except (OSError, ValueError) as exc:
             error("BOOK", rel, "", str(exc))
             continue
@@ -122,10 +222,12 @@ def validate(root: Path) -> dict:
                 error("PARAGRAPH_IDS", rel, rid, "paragraph_ids 必须是 sources 中真实段落 ID 按顺序去重的列表")
             if rule.get("quote") != QUOTE_SEPARATOR.join(quotes):
                 error("QUOTE_SUMMARY", rel, rid, "顶层 quote 必须由来源摘录用明确省略符连接，不可另行改写")
+            named_gap_count += validate_named_gaps(rule, rel, rid, lines, paragraphs, fulltext, error)
     for file, rid, target in dependencies:
         if target not in rule_ids:
             error("DEPENDENCY", file, rid, f"救应规则不存在：{target}")
-    return {"ok": not errors, "files": len(files), "rules": rule_count, "source_spans": source_count, "errors": errors}
+    return {"ok": not errors, "files": len(files), "rules": rule_count, "source_spans": source_count,
+            "named_gaps": named_gap_count, "errors": errors}
 
 
 def main() -> int:
@@ -139,7 +241,7 @@ def main() -> int:
     else:
         for item in result["errors"]:
             print(f"{item['code']} {item['file']} {item['rule']}: {item['message']}")
-        print(f"{'OK' if result['ok'] else 'FAIL'} {result['files']} packages, {result['rules']} source-linked rule records, {result['source_spans']} source spans")
+        print(f"{'OK' if result['ok'] else 'FAIL'} {result['files']} packages, {result['rules']} source-linked rule records, {result['source_spans']} source spans, {result['named_gaps']} named gaps")
         print("校验仅证明字段与电子文本来源相符，不证明算法完整或人工核验。")
     return 0 if result["ok"] else 1
 

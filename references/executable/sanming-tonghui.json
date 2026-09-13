@@ -142,6 +142,44 @@
       "rescue": "unimplemented",
       "vernacular": "{pillar}见华盖。这是落柱标签，不是孤寡或僧道结论。",
       "implementation_assumption": "现行表只按年支三合库土取华盖。未按日支三合、空破、时坐或重金重盖改写结论。",
+      "named_gaps": [
+        {
+          "kind": "source-term",
+          "term": "夾貴",
+          "status": "criterion-stated",
+          "claim_checked": "A7 剩余项：SMTH-E-04 华盖救应句「惟與夾貴併則為福」的「夾貴」记为原文未界定（原审计称全书检索 8 命中、无一处给出判据）",
+          "finding": "原判不成立：本书另有〈夾貴夾禄〉专章给出取法与书例——「丙丁猪雞以戌為夾貴，壬癸蛇兎以辰為夾貴」，并以「干神一字而支神相應…者是夾禄夾貴也」「辛卯辛丑則正夾貴」举书例；同书 L1415 又给出「取前後各有天乙貴」。缺的是引擎实现，不是原文定义。重算字数：28 处／24 行（原 8 命中正落在前 2000 行内，未见后文专章）。",
+          "occurrences": 28,
+          "lines_with_term": 24,
+          "evidence": [
+            {
+              "paragraph_id": "sanming-tonghui:L4243-L4248",
+              "start_line": 4244,
+              "end_line": 4244,
+              "quote": "丙丁猪雞以戌為夾貴壬癸蛇兎以辰為夾貴"
+            },
+            {
+              "paragraph_id": "sanming-tonghui:L4243-L4248",
+              "start_line": 4245,
+              "end_line": 4245,
+              "quote": "干神一字而支神相應前有貴擁後有馬乘中有建禄者是夾禄夾貴也"
+            },
+            {
+              "paragraph_id": "sanming-tonghui:L4243-L4248",
+              "start_line": 4246,
+              "end_line": 4246,
+              "quote": "若丁巳丁未則正夾禄辛卯辛丑則正夾貴當從落斷之"
+            },
+            {
+              "paragraph_id": "sanming-tonghui:L1393-L1417",
+              "start_line": 1415,
+              "end_line": 1415,
+              "quote": "取前後各有天乙貴更祿馬臨身主大富貴"
+            }
+          ],
+          "effect": "rescue 仍为 unimplemented（原文有救应条款、引擎尚未实现）；理由须写作「原文有取法而未实现」，不得改标 none，也不因本登记启用满足分支或提升 verified。"
+        }
+      ],
       "verified": false
     },
     {
@@ -208,6 +246,68 @@
       "rescue": "unimplemented",
       "vernacular": "{pillar}见孤辰。这是落柱标签，不是孤独结论。",
       "implementation_assumption": "现行表按年支三方进前一辰取孤辰。未按日支、隔角、惆怅煞或贵格包裹改写结论。",
+      "named_gaps": [
+        {
+          "kind": "source-term",
+          "term": "支干朝會包裹貴人",
+          "status": "partially-stated",
+          "claim_checked": "A7 剩余项：SMTH-E-06 孤辰救应句的「支干朝會包裹貴人」记为原文未界定（原审计称「包裹」全书仅本两处、皆无判据）",
+          "finding": "部分成立、原话需更正：「包裹」全书 5 处／3 行，另有〈包裹旗旌〉专章（L4319 小题、L4321「包裹者乃貴也…庚辰庚午拱巳上刼煞曰包裹旗」）给出拱夹书例，但对象是劫煞／亡神的旗旌、不是贵人；「朝會」全书仅 1 处（即本句），无取法。故整句仍不可操作化，却不是「全书皆无判据」。",
+          "occurrences": 1,
+          "lines_with_term": 1,
+          "evidence": [
+            {
+              "paragraph_id": "sanming-tonghui:L1692-L1701",
+              "start_line": 1697,
+              "end_line": 1698,
+              "quote": "或支干朝會包裹貴人雖犯孤寡不以孤\n寡論"
+            },
+            {
+              "paragraph_id": "sanming-tonghui:L4321-L4321",
+              "start_line": 4321,
+              "end_line": 4321,
+              "quote": "包裹者乃貴也且如庚辰丙戌庚午丙子刼煞在巳亡神在亥庚辰庚午拱巳上刼煞曰包裹旗"
+            }
+          ],
+          "effect": "rescue 保持 unimplemented；术语分歧已具名，本条只输出落柱标签与信息不足。"
+        },
+        {
+          "kind": "source-term",
+          "term": "朝會",
+          "status": "source-undefined",
+          "claim_checked": "A7 剩余项：孤辰救应句内的「朝會」无判据",
+          "finding": "全书仅本句 1 处，未给取法或书例，确为原文未界定。",
+          "occurrences": 1,
+          "lines_with_term": 1,
+          "evidence": [
+            {
+              "paragraph_id": "sanming-tonghui:L1692-L1701",
+              "start_line": 1697,
+              "end_line": 1698,
+              "quote": "或支干朝會包裹貴人雖犯孤寡不以孤\n寡論"
+            }
+          ],
+          "effect": "rescue 保持 unimplemented；不替原文择一。"
+        },
+        {
+          "kind": "source-term",
+          "term": "連屬",
+          "status": "source-undefined",
+          "claim_checked": "A7 剩余项：同段鬼谷遗文「連屬不言孤寡」的「連屬」无判据",
+          "finding": "全书仅本句 1 处；本句只举例干支（亥得寅戌、寅得丑巳），未给「連屬」的判定方式，确为原文未界定。",
+          "occurrences": 1,
+          "lines_with_term": 1,
+          "evidence": [
+            {
+              "paragraph_id": "sanming-tonghui:L1692-L1701",
+              "start_line": 1697,
+              "end_line": 1697,
+              "quote": "連屬不言孤寡如亥得寅戌寅得丑巳"
+            }
+          ],
+          "effect": "rescue 保持 unimplemented；不替原文择一。"
+        }
+      ],
       "verified": false
     },
     {
@@ -241,6 +341,68 @@
       "rescue": "unimplemented",
       "vernacular": "{pillar}见寡宿。这是落柱标签，不是婚配结论。",
       "implementation_assumption": "现行表按年支三方退后一辰取寡宿。未按日支、隔角、惆怅煞或贵格包裹改写结论。",
+      "named_gaps": [
+        {
+          "kind": "source-term",
+          "term": "支干朝會包裹貴人",
+          "status": "partially-stated",
+          "claim_checked": "A7 剩余项：SMTH-E-07 寡宿救应句的「支干朝會包裹貴人」记为原文未界定（原审计称「包裹」全书仅本两处、皆无判据）",
+          "finding": "部分成立、原话需更正：「包裹」全书 5 处／3 行，另有〈包裹旗旌〉专章（L4319 小题、L4321「包裹者乃貴也…庚辰庚午拱巳上刼煞曰包裹旗」）给出拱夹书例，但对象是劫煞／亡神的旗旌、不是贵人；「朝會」全书仅 1 处（即本句），无取法。故整句仍不可操作化，却不是「全书皆无判据」。",
+          "occurrences": 1,
+          "lines_with_term": 1,
+          "evidence": [
+            {
+              "paragraph_id": "sanming-tonghui:L1692-L1701",
+              "start_line": 1697,
+              "end_line": 1698,
+              "quote": "或支干朝會包裹貴人雖犯孤寡不以孤\n寡論"
+            },
+            {
+              "paragraph_id": "sanming-tonghui:L4321-L4321",
+              "start_line": 4321,
+              "end_line": 4321,
+              "quote": "包裹者乃貴也且如庚辰丙戌庚午丙子刼煞在巳亡神在亥庚辰庚午拱巳上刼煞曰包裹旗"
+            }
+          ],
+          "effect": "rescue 保持 unimplemented；术语分歧已具名，本条只输出落柱标签与信息不足。"
+        },
+        {
+          "kind": "source-term",
+          "term": "朝會",
+          "status": "source-undefined",
+          "claim_checked": "A7 剩余项：寡宿救应句内的「朝會」无判据",
+          "finding": "全书仅本句 1 处，未给取法或书例，确为原文未界定。",
+          "occurrences": 1,
+          "lines_with_term": 1,
+          "evidence": [
+            {
+              "paragraph_id": "sanming-tonghui:L1692-L1701",
+              "start_line": 1697,
+              "end_line": 1698,
+              "quote": "或支干朝會包裹貴人雖犯孤寡不以孤\n寡論"
+            }
+          ],
+          "effect": "rescue 保持 unimplemented；不替原文择一。"
+        },
+        {
+          "kind": "source-term",
+          "term": "連屬",
+          "status": "source-undefined",
+          "claim_checked": "A7 剩余项：同段鬼谷遗文「連屬不言孤寡」的「連屬」无判据",
+          "finding": "全书仅本句 1 处；本句只举例干支（亥得寅戌、寅得丑巳），未给「連屬」的判定方式，确为原文未界定。",
+          "occurrences": 1,
+          "lines_with_term": 1,
+          "evidence": [
+            {
+              "paragraph_id": "sanming-tonghui:L1692-L1701",
+              "start_line": 1697,
+              "end_line": 1697,
+              "quote": "連屬不言孤寡如亥得寅戌寅得丑巳"
+            }
+          ],
+          "effect": "rescue 保持 unimplemented；不替原文择一。"
+        }
+      ],
       "verified": false
     },
     {
@@ -307,6 +469,94 @@
       "rescue": "unimplemented",
       "vernacular": "{pillar}见亡神。这是落柱标签，不是贫穷结论。",
       "implementation_assumption": "现行表按年支三合临官处取亡神。未按十六般或日支改写结论。",
+      "named_gaps": [
+        {
+          "kind": "source-term",
+          "term": "長生遇貴人",
+          "status": "reading-undetermined",
+          "claim_checked": "A7 剩余项：SMTH-E-09 亡神救应句「須是長生遇貴人，時日更兼天地合」三处读法待定",
+          "finding": "「長生」的主语与对象原文未界定：本句承「命宫若也値亡神」，未说明長生取日干对命宫支、还是对亡神支，也未说明由谁的长生。故不实现、不替原文择一。",
+          "occurrences": 1,
+          "lines_with_term": 1,
+          "evidence": [
+            {
+              "paragraph_id": "sanming-tonghui:L1517-L1520",
+              "start_line": 1520,
+              "end_line": 1520,
+              "quote": "命宫若也値亡神須是長生遇貴人時日更兼天地合匪躬蹇蹇作王臣"
+            }
+          ],
+          "readings": [
+            "長生取日干對命宮支：命宮支落在日干十二長生之長生位",
+            "長生取日干對亡神支：亡神支落在日干十二長生之長生位",
+            "長生另有主語（本句承「命宫若也値亡神」而原文未明言）"
+          ],
+          "effect": "rescue 保持 unimplemented；读法具名登记，不择一、不实现。"
+        },
+        {
+          "kind": "source-term",
+          "term": "貴人",
+          "status": "reading-undetermined",
+          "claim_checked": "A7 剩余项：SMTH-E-09 救应句「長生遇貴人」的「貴人」取法待定",
+          "finding": "本书「貴人」用法多義（天乙貴人自有表与取法；〈福神相還〉又把「貴人」列入福神类目）。本句的「貴人」取天乙貴人一张表，还是泛指贵神／福神，原文未界定。",
+          "occurrences": 337,
+          "lines_with_term": 280,
+          "evidence": [
+            {
+              "paragraph_id": "sanming-tonghui:L1517-L1520",
+              "start_line": 1520,
+              "end_line": 1520,
+              "quote": "命宫若也値亡神須是長生遇貴人時日更兼天地合匪躬蹇蹇作王臣"
+            },
+            {
+              "paragraph_id": "sanming-tonghui:L4252-L4253",
+              "start_line": 4252,
+              "end_line": 4252,
+              "quote": "凡禄馬官貴六合華葢金轝文星貴人正印庫食竒德之類皆謂之福神遞互相還為格"
+            }
+          ],
+          "readings": [
+            "取天乙貴人本表（本书另有天乙貴人取法）",
+            "泛指貴神／福神類（〈福神相還〉把「貴人」列入福神类目）"
+          ],
+          "effect": "readings 未定前不给满足分支；rescue 保持 unimplemented。"
+        },
+        {
+          "kind": "source-term",
+          "term": "天地合",
+          "status": "reading-undetermined",
+          "claim_checked": "A7 剩余项：SMTH-E-09 救应句「時日更兼天地合」的「天地合」构成待定",
+          "finding": "全书 5 处／5 行，无一处给出取法：L1520 只作救应条件；L6057「日時干支為天地合徳」出现于书例叙述；L4812「或天地合三合六合年分」把天地合与三合六合并提。构成未界定。",
+          "occurrences": 5,
+          "lines_with_term": 5,
+          "evidence": [
+            {
+              "paragraph_id": "sanming-tonghui:L1517-L1520",
+              "start_line": 1520,
+              "end_line": 1520,
+              "quote": "時日更兼天地合匪躬蹇蹇作王臣"
+            },
+            {
+              "paragraph_id": "sanming-tonghui:L6055-L6072",
+              "start_line": 6057,
+              "end_line": 6057,
+              "quote": "日時干支為天地合徳貴禄交加"
+            },
+            {
+              "paragraph_id": "sanming-tonghui:L4810-L4813",
+              "start_line": 4812,
+              "end_line": 4812,
+              "quote": "或天地合三合六合年分以此活法叅"
+            }
+          ],
+          "readings": [
+            "日時兩柱天干五合＋地支六合",
+            "日時干支自合（L6057「日時干支為天地合徳」）",
+            "歲運與命局天地相合（L4812「或天地合三合六合年分」）"
+          ],
+          "effect": "readings 未定前不给满足分支；rescue 保持 unimplemented。"
+        }
+      ],
       "verified": false
     },
     {
@@ -340,6 +590,38 @@
       "rescue": "unimplemented",
       "vernacular": "{pillar}见灾煞。这是落柱标签，不是横祸结论。",
       "implementation_assumption": "现行表按年支三合冲将星取灾煞。未按白虎与灾煞微不同、福神相助改写结论。",
+      "named_gaps": [
+        {
+          "kind": "source-term",
+          "term": "福神",
+          "status": "partially-stated",
+          "claim_checked": "A7 剩余项：SMTH-E-10 灾煞救应句「若有福神相助多是武權」的「福神」记为原文无定义",
+          "finding": "原话需更正：本书〈福神相還〉给出类目定义「凡禄馬官貴六合華葢金轝文星貴人正印庫食竒德之類皆謂之福神」（L4252），L1769 又立通例「一切福神所居之位則欲生旺」。故「无定义」不成立；仍不可操作化的是「相助」的判定（同柱／相邻／生扶孰为准）原文未界定。重算字数：46 处／39 行（原 7 命中为重算前的漏计）。",
+          "occurrences": 46,
+          "lines_with_term": 39,
+          "evidence": [
+            {
+              "paragraph_id": "sanming-tonghui:L1671-L1678",
+              "start_line": 1678,
+              "end_line": 1678,
+              "quote": "若有福神相助多是武權"
+            },
+            {
+              "paragraph_id": "sanming-tonghui:L4252-L4253",
+              "start_line": 4252,
+              "end_line": 4252,
+              "quote": "凡禄馬官貴六合華葢金轝文星貴人正印庫食竒德之類皆謂之福神遞互相還為格"
+            },
+            {
+              "paragraph_id": "sanming-tonghui:L1757-L1770",
+              "start_line": 1769,
+              "end_line": 1769,
+              "quote": "一切福神所居之位則欲生旺生旺則榮貴"
+            }
+          ],
+          "effect": "rescue 保持 unimplemented；类目定义不足以判定「相助」，不因本登记启用满足分支。"
+        }
+      ],
       "verified": false
     },
     {

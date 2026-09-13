@@ -467,7 +467,9 @@
       "implementation": [
         "classics:docs/closeout/RESCUE-LABEL-AUDIT-20260912.md",
         "product:docs/implementation/D11-ZPR-E-17-FAIL-BRANCH.md、D5-ZSB-UNKNOWN-FOLD-FIX.md、D7-DLD-E-14-NOT-APPLICABLE-FOLD.md、C2-DEFECT-FIXES.md",
-        "product:docs/SCHOOL_DIVERGENCE.md"
+        "product:docs/SCHOOL_DIVERGENCE.md",
+        "classics:references/executable/sanming-tonghui.json#named_gaps、ziping-zhenquan.json#named_gaps（A7 具名登记，写进条款本体）",
+        "classics:references/executable/schema.md「具名登记（named_gaps）」、tools/validate-executable.py、tools/test-validate-executable.py"
       ],
       "evidence": [
         {
@@ -484,26 +486,58 @@
           "path": "classics:docs/closeout/GAP_LEDGER.json#progress_round30/38",
           "shows": "SMTH-E-14 改标 self；QTB-M-02-12 裁决 none",
           "kind": "ledger"
+        },
+        {
+          "path": "classics:references/executable/sanming-tonghui.json#named_gaps",
+          "shows": "SMTH-E-04/06/07/09/10 逐条具名登记：术语、status、全文计数（校验器重算）、逐字证据行与保留标签",
+          "kind": "recomputed-now"
+        },
+        {
+          "path": "classics:references/executable/ziping-zhenquan.json#named_gaps",
+          "shows": "ZPR-E-06「财只见藏干」口径：cue「財印爲輔」1 处／1 行；只见藏干→信息不足、不启用满足分支、不移除干扰",
+          "kind": "recomputed-now"
+        },
+        {
+          "path": "classics:tools/validate-executable.py",
+          "shows": "named_gaps 校验（计数与全文重算比对、证据行逐字比对、读法并列与 not_claimed 必填）；实测 15 包 258 条 12 条登记 OK、22 个回归测试通过",
+          "kind": "test"
+        },
+        {
+          "path": "classics:references/executable/SOURCE_REVIEW.md#A7 具名登记",
+          "shows": "两处原判更正：夾貴 28 处／24 行（原记 8 命中）且〈夾貴夾禄〉有取法；福神 46 处／39 行（原记 7 命中）且〈福神相還〉有类目定义",
+          "kind": "audit"
         }
       ],
       "remaining": [
         {
-          "item": "SMTH-E-04/06/07/10 未界定术语（夾貴／福神／包裹貴人／連屬，全书检索无判据）",
-          "kind": "evidence-or-semantics-uncertainty",
-          "scope": "神煞 4 条",
-          "blocks": "A7 局部，需具名登记为原文未界定"
-        },
-        {
-          "item": "SMTH-E-09 三处读法待定",
-          "kind": "evidence-or-semantics-uncertainty",
-          "scope": "神煞 1 条",
-          "blocks": "A7 局部"
-        },
-        {
-          "item": "ZPR-E-06 财只见藏干时的口径说明（引擎给信息不足方向正确，需具名登记）",
+          "item": "SMTH-E-04「夾貴」经重算改判为「原文有取法、引擎未实现」（〈夾貴夾禄〉L4244/L4245/L4246、L1415），术语本身不再是「未界定」项；是否按原文取法实现华盖救应属算法侧待办",
           "kind": "implementation-gap",
-          "scope": "子平 1 条",
-          "blocks": "A7"
+          "scope": "神煞 1 条；登记见 sanming-tonghui.json#named_gaps（status=criterion-stated）",
+          "blocks": "A7 局部（已具名登记；实现与否另计）"
+        },
+        {
+          "item": "SMTH-E-06/E-07「支干朝會包裹貴人」已具名登记：包裹 5 处／3 行（另有〈包裹旗旌〉拱夹书例，但对象非贵人）、朝會 1 处、連屬 1 处确无判据",
+          "kind": "evidence-or-semantics-uncertainty",
+          "scope": "神煞 2 条；status=partially-stated／source-undefined",
+          "blocks": "A7 局部（登记已完成，仍不可操作化）"
+        },
+        {
+          "item": "SMTH-E-10「福神」经重算改判为「类目有定义（L4252）、『相助』判定未界定」；rescue 保持 unimplemented",
+          "kind": "evidence-or-semantics-uncertainty",
+          "scope": "神煞 1 条；status=partially-stated",
+          "blocks": "A7 局部（登记已完成）"
+        },
+        {
+          "item": "SMTH-E-09 三处读法已具名登记（長生遇貴人／貴人／天地合，各列读法并列，不替原文择一）",
+          "kind": "evidence-or-semantics-uncertainty",
+          "scope": "神煞 1 条；status=reading-undetermined",
+          "blocks": "A7 局部（登记已完成，实现待口径判定）"
+        },
+        {
+          "item": "ZPR-E-06 财只见藏干口径已具名登记（verdict-scope：只见藏干→信息不足、applies=false、不移除伤官见官干扰）",
+          "kind": "implementation-gap",
+          "scope": "子平 1 条；status=named-scope-decision",
+          "blocks": "A7（登记已完成）"
         },
         {
           "item": "明确不支持的学派/能力单列清单需与 unimplemented 30 条对齐",
@@ -512,10 +546,16 @@
           "blocks": "A7"
         },
         {
-          "item": "SMTH-E-08 同为 unimplemented，审计文件里有具名理由，账本先前枚举遗漏",
+          "item": "SMTH-E-08 同为 unimplemented，审计文件里有具名理由，账本先前枚举遗漏；其「包裏」判据缺口的原话同样需按〈包裹旗旌〉重算更正",
           "kind": "evidence-or-semantics-uncertainty",
           "scope": "神煞 1 条",
           "blocks": "A7 局部枚举完整性"
+        },
+        {
+          "item": "产品侧同源文案需同步更正：product:src/lib/engine/bazi/shensha-rescue.ts 仍写「包裹全书仅 E-06／E-07 两处、皆无判据」",
+          "kind": "implementation-gap",
+          "scope": "product 侧（本成员不得改产品仓）",
+          "blocks": "A7 局部（等 captain／algo-impl 同步）"
         }
       ],
       "owner": "independent-review + classics-audit",
