@@ -470,9 +470,9 @@
       "satisfy_when": "日干羊刃的对冲支出现在四柱地支：只记录落柱名称飞刃",
       "fail_when": "四柱地支未见该干羊刃对冲支",
       "unknown_when": "倒戈、连珠刃、揽辔澄清未论完：不得输出倒戈或无头断语",
-      "rescue": "unimplemented",
+      "rescue": "self",
       "vernacular": "{pillar}见飞刃。这是落柱标签，不是倒戈结论。",
-      "implementation_assumption": "现行表按日干羊刃对冲取飞刃。未按倒戈或揽辔澄清改写。",
+      "implementation_assumption": "现行表按日干羊刃对冲取飞刃。未按倒戈或揽辔澄清改写。救应句「羊刃帶祿更有官印相資尤作吉論」已实现（产品仓 src/lib/engine/bazi/shensha-rescue.ts 的 SMTH-E-14 规格）：前提＝飞刃在盘；另判官（正官或偏官）与印（正印或偏印）是否俱见；**同段原文以「羊刃」立论而本条是飞刃（原文「對宫曰飛刃」），故按两读并列**——严格读须羊刃在盘、从宽读飞刃在盘即可，两读不一致时给信息不足，不择一。不据此改断吉凶结果。",
       "verified": false
     },
     {
