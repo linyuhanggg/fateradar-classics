@@ -24,4 +24,5 @@
 
 ## 外部阻塞
 
-- 奇门统宗 PDF p308–311：见 `docs/closeout/E3-QIMEN-OCR-BATCH-308-311-BLOCKED.md`。最小条件＝用户授权读图。
+- 奇门统宗 PDF p308–311：**已转写入库**（`ocr-batch-cell-level-0308-0311.md`，`nlc-layouts.md` 第308–311页）。旧阻塞文件不再代表现状。
+- 实质待审 1,192 已按类型分账：`docs/closeout/evidence/t29-pending-typed-disposition-20260913.json`（666 總鈐归属不可判／414 真疑字／48 电子分段／39 图像未转写／25 残联）。
