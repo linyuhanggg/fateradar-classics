@@ -121,12 +121,11 @@
         "product:docs/implementation/art-verdict-judgment-gap-matrix.json"
       ],
       "evidence": [
-        {"path": "product:docs/implementation/art-verdict-judgment-gap-matrix.json", "shows": "runtime_wired_after_pack13=258、coverage_index_missing=0、ids_without_probe=0、static_parse_matches_runtime=true、assertions_parsed=418、0 条无归因", "kind": "generated-from-code+data（head 已过期，需重生成）"},
+        {"path": "product:docs/implementation/art-verdict-judgment-gap-matrix.json", "shows": "已在最新 HEAD 由 captain 重生成（2026-09-13T02:17Z；product_head=230effd、classics_head=92f8d62）：runtime_wired_after_pack13=258、coverage_index_wired=258/missing=0、ids_without_probe 空、static_parse_matches_runtime=true、assertions_parsed=418、无 static_runtime_mismatch、无 ids_missing_from_classics_executable、无 duplicate_classics_ids。新暴露：信息不足适用分支 gap 8 条（DLD-E-02..E-09），不满足分支 gap 0；三态齐全按术数 bazi=23 / liuyao=6 / liuren=1", "kind": "generated-on-current-head（captain 重跑）"},
         {"path": "product:docs/implementation/ART-VERDICT-FACT-RUNTIME.md", "shows": "事实字段运行时口径", "kind": "doc"},
         {"path": "product:tests/engine/art-verdict-judgment-*.test.ts", "shows": "28 文件 418 断言", "kind": "test"}
       ],
       "remaining": [
-        {"item": "矩阵需在最新 main 重新生成（矩阵内 product_head=cdb5f9c、classics_head=74edada）", "kind": "execution-blocker", "scope": "重跑 scripts/art-verdict-judgment-gap-matrix.ts 并归档", "blocks": "A3 证据时效"},
         {"item": "页面解释理由/来源与事实的联动需消费者侧验收，不能只看绑定", "kind": "implementation-gap", "scope": "geju.execution / bazi-evidence 消费者", "blocks": "A3 working→pass"}
       ],
       "owner": "algo-impl（算法实现）",
@@ -149,7 +148,8 @@
         {"path": "product:docs/implementation/ART-VERDICT-BRANCH-DECLARATION-AUDIT.md", "shows": "分支声明审计", "kind": "audit"}
       ],
       "remaining": [
-        {"item": "DLD-E-09 / DLD-E-15 未测", "kind": "implementation-gap", "scope": "大六壬 2 条", "blocks": "A4"},
+        {"item": "信息不足适用分支 gap 8 条（最新矩阵实测）：DLD-E-02 / E-03 / E-04 / E-05 / E-06 / E-07 / E-08 / E-09——大六壬这些规则本身可产生「信息不足」，但没有任何真实断言覆盖该分支（其余七术信息不足分支 gap=0；不满足分支全库 gap=0，已断言 224 条）", "kind": "implementation-gap", "scope": "大六壬 8 条", "blocks": "A4"},
+        {"item": "DLD-E-15 未测（最新矩阵未列入 unknown-gap，需单独核对是否属不适用/已声明）", "kind": "implementation-gap", "scope": "大六壬 1 条", "blocks": "A4"},
         {"item": "ZSB-E-15 / ZSB-E-18 / ZSB-E-19 触发 0 次", "kind": "implementation-gap", "scope": "增删卜易 3 条", "blocks": "A4"},
         {"item": "救应余量 30 条 unimplemented 需逐条维持具名理由（不得改成不支持结项）", "kind": "evidence-or-semantics-uncertainty", "scope": "references/executable/*.json rescue 字段", "blocks": "A4 分支覆盖完整性"}
       ],
@@ -191,6 +191,7 @@
       "status": "working",
       "implementation": [
         "product:src/lib/engine/bazi/free-reading.ts（八字，接 12 入口）",
+        "product:src/lib/engine/ziwei-free-reading.ts / liuyao-free-reading.ts（紫微/六爻 dedicated builder；2026-09-13 修六爻逐爻出处断链与紫微运限串层，消费点 chart.ziwei.tsx / chart.liuyao.tsx / EvidencePanel / reading-input-export）",
         "product:src/components/**PointsPanel / EvidencePanel（六术出处接线，commit c200543）",
         "product:docs/FREE_READING_V1.md、docs/PERSONAL_READING.md",
         "product:src/lib/engine/xiaoliuren.ts（pack13 6 条定义接真实输出）"
@@ -198,11 +199,14 @@
       "evidence": [
         {"path": "product:docs/implementation/E-PAGE-ACCEPTANCE-VERIFICATION.md", "shows": "实际页面验收记录（六术出处/来源显示）", "kind": "page-acceptance"},
         {"path": "product:docs/implementation/C3-EIGHT-ARTS-EXPORT-ACCEPTANCE.md", "shows": "八术导出验收记录", "kind": "export-acceptance"},
-        {"path": "classics:docs/closeout/GAP_LEDGER.json#page_consumers", "shows": "bazi_12 已接；other_arts 仅 chart.points + EvidencePanel 关键词匹配，缺 dedicated free-reading；xiaoliuren 已接 6 条", "kind": "ledger"}
+        {"path": "classics:docs/closeout/GAP_LEDGER.json#page_consumers", "shows": "bazi_12 已接；xiaoliuren 已接 6 条。注：其中 other_arts「缺 dedicated free-reading」一句已过期（2026-09-13 实测七术 builder 均存在并接线），该文本待经典仓侧同步", "kind": "ledger（部分过期）"},
+        {"path": "product:tests/engine/a6-liuyao-ziwei-free-reading-consumers.test.ts", "shows": "实跑 10 条：六爻逐爻焦点与总览同源且带古籍锚点/revision、解读点 ID 不冒充规则/段落锚点；紫微所选运限层与正文一致（大限↔流年不串层）、未选层按本命层、层名不存在不换层顶替、导出 token 带层名与页面同层", "kind": "test（本轮）"},
+        {"path": "product:docs/implementation/A6-LIUYAO-ZIWEI-FREE-READING.md", "shows": "两个消费者侧缺陷的复现与改法；本工作树 222 files / 3675 tests passed、tsc --noEmit 通过", "kind": "fix-record（本轮）"}
       ],
       "remaining": [
-        {"item": "其他七术缺 dedicated free-reading builders（紫微/奇门/六壬/六爻/梅花/小六壬/七政主要栏目）", "kind": "implementation-gap", "scope": "七术页面主要栏目", "blocks": "A6 working→pass（主要缺口）"},
-        {"item": "切换资料/位置/时制后旧结论不残留（需逐一回读验收）", "kind": "implementation-gap", "scope": "页面状态与引擎结果同源", "blocks": "A6"},
+        {"item": "「七术缺 dedicated free-reading builders」已核实为过期记录：ziwei/liuyao/qimen/liuren/meihua/xiaoliuren/qizheng 各有 build*FreeReading，已接各自 chart 路由 + EvidencePanel + 导出。现在的主要缺口是**浏览器实测**：八术主要栏目切换资料/位置/时制后与核心事实一致（page-acceptance 执行）", "kind": "implementation-gap", "scope": "八术页面主要栏目（浏览器层，非 builder 缺失）", "blocks": "A6 working→pass（主要缺口＝页面实测）"},
+        {"item": "切换资料/位置/时制后旧结论不残留：本轮已修两处引擎侧实证缺陷——六爻点开一爻后出处/导出断链（逐爻焦点只剩 1 个无来源点、盘级规则点全丢）、紫微解释不跟所选运限层（页面写流年、解释写大限）——均有单测钉住；页面逐一回读仍待 page-acceptance", "kind": "implementation-gap", "scope": "页面状态与引擎结果同源", "blocks": "A6（引擎侧已修，浏览器回读未做）"},
+        {"item": "其余五术（奇门/六壬/梅花/小六壬/七政）未做同口径逐条消费者核对：各术构建函数里「解读点 ID 兜底成规则/段落 ID」的同类风险只在本次两术内修掉，其余术待各自核对", "kind": "implementation-gap", "scope": "其余五术免费解释点", "blocks": "A6 全术口径一致性"},
         {"item": "生时反推不参与首屏；无标注集不得称排序准确率", "kind": "evidence-or-semantics-uncertainty", "scope": "birth-time 页面", "blocks": "不阻塞 A6"}
       ],
       "owner": "page-acceptance（实际页面与导出验收）+ algo-impl",
