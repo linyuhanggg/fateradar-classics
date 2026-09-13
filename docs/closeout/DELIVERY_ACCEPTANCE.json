@@ -1,6 +1,6 @@
 {
   "schema": "fateradar-delivery-acceptance-v1",
-  "generated_at": "2026-09-13T04:55:00Z",
+  "generated_at": "2026-09-13T05:05:00Z",
   "generated_by": "DSH captain（本会话 goal round 1/256）",
   "authority": "classics:docs/FATERADAR_FULL_LIBRARY_PLAN.md（含 2026-09-13 收尾执行修订）",
   "purpose": "唯一收尾状态账本：逐项对应权威方案「总验收与完成条件」1–8。引用既有矩阵与报告，不新造重复指标。",
@@ -577,6 +577,11 @@
           "path": "captain 实测（classics 工作树）：按 kind=unimplemented-reason / reason_class 计数 + tools 校验器",
           "shows": "t14 完成并**经 captain 独立计数确认**：`named_gaps` 共 42 条 = source-term 11 + unimplemented-reason **30** + verdict-scope 1；30 条 unimplemented-reason 的 `reason_class` 分布 = **implementation-gap 22 / evidence-undecided 8**（ID 清单已入 remaining）。机制加固：该 kind 只许用于 rescue=unimplemented；`evidence` 必须逐字取自该条款自身 sources（引他处报错）；`effect` 须写解锁条件；并新增 `search_scope`（全文行数＋sha256＋逐词处数/行数）以显式暴露「原判只搜前 2000 行」这类截断风险。校验：validate-executable OK（258 records / 579 spans / 42 named gaps）、test-validate-executable 27 tests OK、validate-annotations 62,839 entries 0 errors、validate-rules OK 55 files",
           "kind": "captain-reverified-now"
+        },
+        {
+          "path": "captain 实测分诊：按 art/page 归类 22 条 implementation-gap（classics references/executable/*.json#named_gaps）",
+          "shows": "22 条**全部落在主要页面/能力上**，无一条是边缘条目——因此按方案都属于「必须实现、不得计入完成」：**八字 16 条**：调候 10（QTB-M-02-04 / 02-07 / 06-07 / 06-11 / 06-12 / 07-12 / 08-04 / 08-11 / 09-12 / 10-09，page=tiaohou，均为「X月Y日月令取用候选」）、神煞 1（SMTH-E-04 华盖落柱，page=shensha）、用神 1（ZPR-E-02 顺用逆用，page=yongshen）、格局 5（ZPR-E-33 变之善不善分条 / E-36 格局高低分条 / E-37 因成得败因败得成 / E-38 用神配气候分条 / E-39 相神紧要，page=geju）；**紫微 3 条**：ZWD-E-02 辅弼夹帝 / E-09 魁命钺身 / E-10 禄马同宫（page=ziwei，组合条件）；**七政 2 条**：XXDC-E-04 十一曜宫主表与四余庙宫分条 / E-06 四余庙宫两处原文位置分条对照（page=qizheng）。→ 处置顺序建议：先调候 10（同族、口径相近、可共享实现），再 ZPR 格局 5，再紫微 3 组合，再七政 2",
+          "kind": "captain-triaged-now"
         }
       ],
       "remaining": [
