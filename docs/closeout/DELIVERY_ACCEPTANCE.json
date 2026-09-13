@@ -1,6 +1,6 @@
 {
   "schema": "fateradar-delivery-acceptance-v1",
-  "generated_at": "2026-09-13T03:05:00Z",
+  "generated_at": "2026-09-13T03:15:00Z",
   "generated_by": "DSH captain（本会话 goal round 1/256）",
   "authority": "classics:docs/FATERADAR_FULL_LIBRARY_PLAN.md（含 2026-09-13 收尾执行修订）",
   "purpose": "唯一收尾状态账本：逐项对应权威方案「总验收与完成条件」1–8。引用既有矩阵与报告，不新造重复指标。",
@@ -342,6 +342,11 @@
           "path": "product:docs/implementation/ART-VERDICT-SOURCE-CASE-RECOMPUTE.json#batch2（algo-impl t6，未提交；captain 于 10:34 复读当前文件）",
           "shows": "批次2 当前状态（已修正抽取口径后重生成）：qimen 1,919 条 → matchedAll **1,842** / withDiff **77**；liuyao 13 → matchedAll 13 / withDiff 0；meihua 2 → matchedAll 2 / withDiff 0；合计 differenceCount **77**。starPalaceSemantics（1,917 可比）：matchesRawLandingPalace **1,888**、matchesAdjustedStarPalace 1,684、matchesOriginPalace 376 → 原表两列数确实跟**落宫**走，不是「原宫」；引擎对落宫口径的正确率约 98.5%。captain 另用引擎直接复算 阳一局 乙丑时：starPalaceRaw=9（原书 9）、doorPalaceRaw=2（原书 2）、originPalace=1 → 引擎该例正确，此前 1,543 条 starPalaceRaw「差异」系抽取口径未对齐所致的假差异",
           "kind": "captain-reverified-now（含引擎直算复现）"
+        },
+        {
+          "path": "product:docs/implementation/ART-VERDICT-SOURCE-CASE-RECONCILIATION.md（algo-impl，未提交）",
+          "shows": "原书案例『人读断语对账』第一份：10 条挂接（去重 7 个命例）逐条并排读「原书断语要点 vs 引擎判定」。结果：1 条**不适用**（QTB-M-01-09 四柱自身不成立——甲子日无甲申时，原文自标疑例）、5 条**相符**、1 条引擎**信息不足但与原文不矛盾**（ZPR-E-06 财只见藏干，原文同样以财印为辅为条件）。**零例出现「引擎判不满足、原书作正面例」的方向性冲突**（但仅覆盖 7 例，不得外推）。另含一条自查更正：第 41 轮「QTB-M-10-03 缺月内时段粒度」是错的——该条早已有 term-phase 路线 QTB-M-10-03-C01/C02（谷雨前/后），真正缺口是 QTB-M-09-12 与 QTB-M-10-06，已由第 43 轮补齐十二个月中气",
+          "kind": "member-produced + captain-read"
         }
       ],
       "remaining": [
