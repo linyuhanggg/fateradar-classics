@@ -1,6 +1,6 @@
 {
   "schema": "fateradar-delivery-acceptance-v1",
-  "generated_at": "2026-09-13T02:25:00Z",
+  "generated_at": "2026-09-13T02:27:00Z",
   "generated_by": "DSH captain（本会话 goal round 1/256）",
   "authority": "classics:docs/FATERADAR_FULL_LIBRARY_PLAN.md（含 2026-09-13 收尾执行修订）",
   "purpose": "唯一收尾状态账本：逐项对应权威方案「总验收与完成条件」1–8。引用既有矩阵与报告，不新造重复指标。",
@@ -393,6 +393,11 @@
           "path": "product:docs/implementation/A6-LIUYAO-ZIWEI-FREE-READING.md",
           "shows": "两个消费者侧缺陷的复现与改法；本工作树 222 files / 3675 tests passed、tsc --noEmit 通过",
           "kind": "fix-record（本轮）"
+        },
+        {
+          "path": "product:src/routes/chart.*.tsx（captain 实测 grep）",
+          "shows": "ArtFreeReading 确实被 8 个术数路由引用：chart.bazi(6) / chart.liuren(5) / chart.liuyao(3) / chart.meihua(3) / chart.qimen(3) / chart.qizheng(3) / chart.xiaoliuren(3) / chart.ziwei(3)。即「共享免费解释组件已进八术路由」属实，A6 的真实剩余是浏览器层逐栏目回读，不是缺组件",
+          "kind": "captain-verified-now"
         }
       ],
       "remaining": [
