@@ -1,6 +1,6 @@
 {
   "schema": "fateradar-delivery-acceptance-v1",
-  "generated_at": "2026-09-13T03:35:00Z",
+  "generated_at": "2026-09-13T03:45:00Z",
   "generated_by": "DSH captain（本会话 goal round 1/256）",
   "authority": "classics:docs/FATERADAR_FULL_LIBRARY_PLAN.md（含 2026-09-13 收尾执行修订）",
   "purpose": "唯一收尾状态账本：逐项对应权威方案「总验收与完成条件」1–8。引用既有矩阵与报告，不新造重复指标。",
@@ -622,11 +622,16 @@
           "path": "product:.github/workflows/ci.yml（captain 实测）",
           "shows": "CI 以 ref=3dc9d01b… checkout fateradar-classics 到 .fateradar-classics，注释写明用途是验证 CLASSICS_REV 可定位；因此“钉旧”本身不是缺陷，A8 的实质缺口是导出内容漂移",
           "kind": "captain-verified-now"
+        },
+        {
+          "path": "product:src/lib/engine/generated/bazi-anchor-rule-index.json（captain 实测当前工作树 vs HEAD）",
+          "shows": "A8 硬缺口修复进行中且**方向正确**：该产物已按 classics 当前 main 重生成——`sourceRevision` 由 `df73f2324c899b2f316d136de06be560c0ce4054` 变为 `c45dfdb497a3ba802881a4191b976a6786a7f3d1`；行数仍 183，**54 行内容变化**（与 reviewer 独立重生成时发现的 54/183 完全一致）。抽查 QTB-M-01-03：`quote` 新增了原先缺失的救应句片段「或天干透出二丙，庚藏支下，此钝斧无钢…若有壬癸破火，堪作秀才。」→ 变化性质是**补回缺失的来源片段**，不是改动结论或算法。生成器 scripts/export-bazi-source-rules.ts 同时被改（需复核是否只改了取源逻辑）",
+          "kind": "captain-measured-now（工作树未提交，属 t9 进行中）"
         }
       ],
       "remaining": [
         {
-          "item": "内容导出与代码版本可对应【硬缺口，可复现】：src/lib/engine/generated/bazi-anchor-rule-index.json（sourceRevision df73f232，183 条）与在 classics main（eb4cabe）重生成相比 54 条不同（救应句来源段未随导出）。复核产物：docs/closeout/review/bazi-anchor-rule-index-REGEN-20260913.json",
+          "item": "内容导出与代码版本可对应【硬缺口，修复进行中】：`bazi-anchor-rule-index.json` 已重生成，`sourceRevision` df73f232 → c45dfdb，54/183 行补回缺失的救应句来源片段（captain 实测，与 reviewer 独立重生成结论一致）。**仍待**：①生成器改动是否只涉取源逻辑（需独立复核对同一 pin 可复现）②`CLASSICS_REV`（3dc9d01，落后的旧钉）与 ci.yml 的 ref 是否随之更新、或维持旧钉但具名说明「内容与钉一致」的口径",
           "kind": "implementation-gap",
           "scope": "product 内容导出 ↔ classics main（bazi-anchor-rule-index 内容漂移）",
           "blocks": "A8 working→pass（硬缺口）"
