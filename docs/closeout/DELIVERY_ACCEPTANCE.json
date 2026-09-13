@@ -1,6 +1,6 @@
 {
   "schema": "fateradar-delivery-acceptance-v1",
-  "generated_at": "2026-09-13T07:20:00Z",
+  "generated_at": "2026-09-13T07:30:00Z",
   "generated_by": "DSH captain（本会话 goal round 1/256）",
   "authority": "classics:docs/FATERADAR_FULL_LIBRARY_PLAN.md（含 2026-09-13 收尾执行修订）",
   "purpose": "唯一收尾状态账本：逐项对应权威方案「总验收与完成条件」1–8。引用既有矩阵与报告，不新造重复指标。",
@@ -144,6 +144,11 @@
           "path": "captain 复核：a1-open-items-20260913.json 的 counts.inventory_arithmetic vs 权威方案第 53 行",
           "shows": "55 包总数**两种分解都等于 55，但分类不同**，必须具名以免再被当成矛盾：①**磁盘实数（脚本生成）**：已存影印 **34** + Release 影印 **5** + 尚未确认影印 **16** = **55**（catalog ready）；②**权威方案第 53 行原文**：普通仓库 **34** + Release **5** + 未确认底本 **14** + 特殊资料 **2** = **55**。两者只在「未确认」与「特殊资料」的归属上分叉（16 vs 14+2）。→ 本账本采用**磁盘实数**口径（尚未确认影印 = 16，t20 已逐套登记），并**保留方案口径 14+2 作为历史原文**（不在方案文件里改数）；待确认事项：那 2 套「特殊资料」是否已含在这 16 之内，若是，则两口径等价、只需具名；若否，则磁盘实数应为 34+5+16+2=57≠55，需回到 inventory 脚本核分类逻辑",
           "kind": "captain-accounting-note"
+        },
+        {
+          "path": "classics:docs/closeout/evidence/a1-open-items-20260913.md + captain 复核（t20 答复）",
+          "shows": "t20 三问答复：①《總鈐》残格集合实测 **666** 条（draft＋待核实＋含「残格」，跨 L1010–L2468），本件**抽样 10 条**（每 66 取 1）；②未确认影印底本**全量 16 套**（已列名：qiongtong-baojian、huangjin-ce、meihua-yishu、zengshan-buyi、qingnang-jing、rudi-yan-quanshu、shenshi-xuankong-xue、yangzhai-shishu、lantai-miaoxuan、bingjian、shenxiang-quanbian、qimen-faqiao、yuqia-ji、guotian-jing、taiwei-fu、ziwei-doushu-quanshu）；③合计 26 条，**「精确未决且不影响主要能力」= 26，须列 blocked = 0**。取证：`sources/facsimile/**`（全仓 80 件）按 slug 与书名双路检索 → 16 套**全部 0 命中**，catalog 均在 ready 55，source-editions 侧均为电子文本对照层；**解锁需外部材料**（影印件或版本信息）→ 属精确缺失条件而非待办遗漏。关于 14 vs 16：成员**未查明差在哪两套，不猜**——本账本仍按磁盘实数 16，并保留方案原文 14+2 作历史；待确认项收敛为「方案所称『特殊资料 2 套』是否即这 16 套中的两套」（可由 catalog 的类别字段判定，不需新取证）",
+          "kind": "member-produced + captain-read"
         }
       ],
       "remaining": [
