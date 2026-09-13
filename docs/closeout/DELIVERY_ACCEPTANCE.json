@@ -1,6 +1,6 @@
 {
   "schema": "fateradar-delivery-acceptance-v1",
-  "generated_at": "2026-09-13T07:40:00Z",
+  "generated_at": "2026-09-13T07:50:00Z",
   "generated_by": "DSH captain（本会话 goal round 1/256）",
   "authority": "classics:docs/FATERADAR_FULL_LIBRARY_PLAN.md（含 2026-09-13 收尾执行修订）",
   "purpose": "唯一收尾状态账本：逐项对应权威方案「总验收与完成条件」1–8。引用既有矩阵与报告，不新造重复指标。",
@@ -149,13 +149,18 @@
           "path": "classics:docs/closeout/evidence/a1-open-items-20260913.md + captain 复核（t20 答复）",
           "shows": "t20 三问答复：①《總鈐》残格集合实测 **666** 条（draft＋待核实＋含「残格」，跨 L1010–L2468），本件**抽样 10 条**（每 66 取 1）；②未确认影印底本**全量 16 套**（已列名：qiongtong-baojian、huangjin-ce、meihua-yishu、zengshan-buyi、qingnang-jing、rudi-yan-quanshu、shenshi-xuankong-xue、yangzhai-shishu、lantai-miaoxuan、bingjian、shenxiang-quanbian、qimen-faqiao、yuqia-ji、guotian-jing、taiwei-fu、ziwei-doushu-quanshu）；③合计 26 条，**「精确未决且不影响主要能力」= 26，须列 blocked = 0**。取证：`sources/facsimile/**`（全仓 80 件）按 slug 与书名双路检索 → 16 套**全部 0 命中**，catalog 均在 ready 55，source-editions 侧均为电子文本对照层；**解锁需外部材料**（影印件或版本信息）→ 属精确缺失条件而非待办遗漏。关于 14 vs 16：成员**未查明差在哪两套，不猜**——本账本仍按磁盘实数 16，并保留方案原文 14+2 作历史；待确认项收敛为「方案所称『特殊资料 2 套』是否即这 16 套中的两套」（可由 catalog 的类别字段判定，不需新取证）",
           "kind": "member-produced + captain-read"
+        },
+        {
+          "path": "captain 独立复核：expanded a1-open-items-20260913.json（脚本断言重跑）",
+          "shows": "**两项具名条目已完整且经 captain 独立核验**：items **682** = 《總鈐》残格**全量 666** + 未确认影印底本 **16**；unique id **682（0 重复）**；**四栏空值 0**；class **全部** `precise-undecided-not-blocking`；666 条總鈐全部带 locator（paragraphId+content_lead+terms+kind+review）；**0 条自述「归属已定」**→ 不存在可另立类别的子群（子群仅内容形态不同：664 十表格内残字型 + 2 月表神名串型 L1010/L1038）。成员自检与我复算一致。数据未动：validate-annotations 53 books/62,839 entries/0 errors、validate-executable OK（42 named gaps）、validate-rules OK（285 既有 warning）。",
+          "kind": "captain-reverified-now"
         }
       ],
       "remaining": [
         {
-          "item": "A1 收尾（t20 已交集合级登记）：①《總鈐》666 残格——**集合级登记 + 10 条抽样已完成**，性质已更正为「影印在仓、逐格归属不可判」，**待补**：其余 656 条的逐项列轴（可从既有 draft 集合 L1010–L2468 机械展开，四栏同构，不需新判断）；②未确认影印底本——**16 套（按磁盘实数，非 14）逐套四栏齐备**，已完成。两项全部 class=`precise-undecided-not-blocking`；A1 距 pass 仅剩：656 条机械展开 + **独立复核**",
-          "kind": "implementation-gap",
-          "scope": "A1：656 条机械展开 + 独立复核",
+          "item": "【A1 距 pass 仅剩独立复核】两项具名条目已交付并经 captain 独立核验：①《總鈐》残格 **全量 666 条逐项**（每条四栏 + 唯一 locator，性质已更正为「影印在仓、逐格归属不可判」，保留〔?〕）；②未确认影印底本 **16 套**（按磁盘实数，非 14；全量列名；解锁需外部材料）。682 条全部 `precise-undecided-not-blocking`、**0 条 blocked**。draft 去向分账亦已核为与注解集合一一对应。→ 需 **reviewer 独立复核**确认是否可判 A1 pass（captain 不自行判）",
+          "kind": "evidence-or-semantics-uncertainty",
+          "scope": "A1 独立复核",
           "blocks": "A1 working→pass"
         },
         {

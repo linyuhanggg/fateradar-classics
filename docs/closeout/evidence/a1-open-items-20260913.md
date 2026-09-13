@@ -1,47 +1,53 @@
-# A1 未决项逐条证据条目（《總鈐》666 残格抽样 ＋ 未确认影印底本全量）
+# A1 未决项逐条证据条目（《總鈐》666 残格全量 ＋ 未确认影印底本全量）
 
-日期：2026-09-13　执行：classics-audit（t20）　机器可读：`docs/closeout/evidence/a1-open-items-20260913.json`
+日期：2026-09-13（2026-09-13 二次提交：總鈐部分由 10 条抽样扩为**全量 666 条**）　执行：classics-audit（t20）
+机器可读：`docs/closeout/evidence/a1-open-items-20260913.json`
 
-> 本件是**最小可用版本**：666 残格先交 10 条抽样（不追求把 666 格搞清），未确认影印底本**全量列出**。
 > 只新增 `docs/closeout/evidence/**`，**未改** `references/**`、`sources/**` 与账本；`verified`／`canonical_eligible` 保持 false。
+> 666 条为**机械展开**：四栏（`what_is_missing`／`attempts`／`product_handling`／`locator`）按已定类级口径同构填充，**没有**为 656 条重做取证；`locator` 逐条唯一（段落 ID＋内容首串＋神名）。
 
-## 计数（可复算）
+## 计数
 
 | 项 | 数 |
 |---|---:|
 | 《總鈐》残格集合（draft＋待核实＋含「残格」） | 666 |
-| 本件抽样条目 | 10（每 66 条取 1） |
+| 《總鈐》逐条条目（本件） | **666**（全量，非抽样） |
 | 未确认影印底本（全量） | 16 |
-| **精确未决、不影响主要能力**（可作已披露限制） | **26** |
+| 文件内条目合计 | **682** |
+| **精确未决、不影响主要能力**（可作已披露限制） | **682** |
 | **仍影响主要能力（须列 blocked）** | **0** |
 
-口径：两类都「逐项可定位、有精确未决条件、有产品处理与解锁条件」，且都不阻塞八术主能力——666 残格只涉及大六壬《總鈐》表的逐格内容；未确认影印底本的文本按「待校参考」使用，本就不参与算法证据。
+## 自检（脚本断言，可复跑）
 
-## 四栏（每条都有）
+| 检查 | 结果 |
+|---|---|
+| 總鈐条目数 = 666 | 通过（666） |
+| id 无重复 | 通过（unique 666） |
+| 四栏均非空 | 通过（empty = 0） |
+| class 一致 | 通过（666 条全为 `precise-undecided-not-blocking`） |
+| 段落范围 | L1010–L2468（与 B2 报告一致） |
+
+## 四栏口径（666 条同构、逐字一致）
 
 | 栏 | 内容 |
 |---|---|
-| 标识 | 666 残格＝电子本段落 ID（`daliuren-daquan:L####-L####`）＋内容首串＋神名；底本＝`system/slug（书名）`＋inventory 状态＋catalog 条目 |
-| 缺什么 | 666：「列轴已可复原，但逐格内容归属不可判」（字粘连＋邻栏重叠）；底本：「无影印件、底本版本未确认」 |
-| 已尝试的取证方法与结果 | 666：B2 溯源＋B4 实抓 SK1599＋t10 影印定位＋t7/t11 逐格转录＋ROUND6 更正；底本：inventory 脚本实数＋`sources/facsimile/**` 双路检索 0 命中＋catalog 与 source-editions 对照 |
-| 产品处理＋解锁条件 | 两者一致：保持 draft／待校参考，**不入 executable、不猜字、不升 verified**；以「已披露限制」参与验收。解锁见各条 `product_handling` |
+| `what_is_missing` | **影印在仓、逐格归属不可判**（旧记「缺影印件」已推翻）：四庫本卷一影印在仓内（112 页，sha256 7790f774…；《總鈐》＝PDF p15 标题、十表连号 p16–p25，另有逐格转录件 `zongqian-cells-016-020／021-025`）；仍未决的是**逐格内容归属**——字心距≈70px、字面宽≈100–110px，同列粘连成 200–250px 墨条、邻栏 x 重叠 → 「某处有哪些字」可读、「该字属哪一格」不可判 |
+| `attempts` | B2 溯源（集合识别与重算指令）／B4 实抓识典 SK1599 比对／t10 影印定位（p15 标题、p16–p25 十表）／t7·t11 版式普查与逐格转录两半批／ROUND6 §3 的 666/666 更正 note |
+| `product_handling` | 保留〔?〕、**不入规则**：保持 draft（kind=待核实），不入 `references/executable`、不进算法、不猜字、不补格、不连成月日全表、**不升 verified**；只作「已披露限制」参与验收。**解锁条件＝取得可判归属的清晰影印或平行本**，再由独立复核把已定格升 `passage-reviewed` |
+| `locator` | `paragraphId`（`daliuren-daquan:L####-L####`）＋`content_lead`（该条内容首串）＋`terms`（神名，前 8）＋`kind`＋`review` |
 
-## 《總鈐》666 残格：现状一句话
+## 子群检查（是否存在「其实可判」的不同类别）
 
-影印**已在仓内**（`sources/facsimile/other/daliuren-daquan/liuren-daquan-juan1-siku-archive-06054168.pdf`，112 页；《總鈐》＝PDF p15 标题、十表连号 p16–p25），**「缺影印、无法定列」的旧阻塞理由已不成立**，666/666 条已追加更正 note；剩余缺口是**逐格内容归属**（印本字心距≈70px、字面宽≈100–110px，同列粘连、邻栏重叠），两半批逐格转录见 `sources/normalized/san-shi/daliuren-daquan/zongqian-cells-016-020.md`、`zongqian-cells-021-025.md`，版式普查见 `zongqian-layout-016-025.md`。**按方案「两次独立取证无新证据即登记精确未决、转做其他材料」，本条即该登记。**
+对 666 条做了内容类型与自述状态扫描：
 
-抽样 10 条的标识：
+| 子群 | 条数 | 说明 |
+|---|---:|---|
+| 十表·格内残字型（`残格「X」。在…标目下…`） | 664 | 例：`daliuren-daquan:L1044-L1044`「残格「申」。在甲巳甲午甲未甲申标目下。所属日与课传位次信息不足，待核，不补三传、不改正文」 |
+| 月表·神名串型（`十二月X：神名…`） | 2 | `L1010`（十二月辰）、`L1038`（十二月亥）；同为待核，无更优判据 |
+| 自述「归属已定／已定格／已可定列」 | **0** | 无一条声称归属已解决 → **不存在可单独升级的子群** |
 
-- `daliuren-daquan:L1010-L1010`（内容首串：十二月辰：天煞、天空、死神、哭神、五墓、浴神、朱雀、螣蛇、月煞、迷惑、奸门）
-- `daliuren-daquan:L1182-L1182`（内容首串：残格「卯乙五」）
-- `daliuren-daquan:L1324-L1324`（内容首串：残格「亥申酉」）
-- `daliuren-daquan:L1466-L1466`（内容首串：残格「丑午午亥丑卯」）
-- `daliuren-daquan:L1608-L1608`（内容首串：残格「寅辰寅」）
-- `daliuren-daquan:L1750-L1750`（内容首串：残格「戌子丑」）
-- `daliuren-daquan:L1890-L1890`（内容首串：残格「子戌」）
-- `daliuren-daquan:L2034-L2034`（内容首串：残格「戌丑午」）
-- `daliuren-daquan:L2174-L2174`（内容首串：残格「丑寅卯巳未卯」）
-- `daliuren-daquan:L2316-L2316`（内容首串：残格「寅戌」）
+因此 666 条**一律同类别**（`precise-undecided-not-blocking`）；上面两个子群只是内容形态不同，**不改变类别**。
+（另：`kind`／`review` 全部为 待核实／draft；含 note 的条目 666/666；无 note 的 0 条。）
 
 ## 未确认影印底本：16 套全量
 
@@ -64,27 +70,18 @@
 | 15 | ziwei | `taiwei-fu` | 太微赋 | 0 |
 | 16 | ziwei | `ziwei-doushu-quanshu` | 紫微斗数全书 | 0 |
 
-## 计数差异（请 captain 裁定）
+## 计数差异（已按磁盘实数记账）
 
 计划文档 FATERADAR_FULL_LIBRARY_PLAN.md 与账本 A1 写「未确认底本 14 套」；磁盘实数（LIBRARY_INVENTORY.md，2026-09-12 脚本生成）为 **16 套**，且 34+5+16=55 正好等于 catalog ready 55，故以磁盘实数 16 为准；「14」少计 2 套，差在哪两套未查明（不猜），请 captain 裁定以哪一数为账本口径。
-
-## 边界
-
-- 本件不提升任何注解状态、不改任何数据文件、不改账本；不据数字本或期待值补字。
-- 666 残格**不做全量逐条**（按方案：两次独立取证无新证据即登记精确未决）；如日后需要全量，可复用 B2 §1 的重算指令。
-- 未确认影印底本的「解锁」需要**外部材料**（影印件或版本信息），本成员无法凭仓内材料推进；这是精确缺失条件，不是待办遗漏。
 
 ## 复现
 
 ```bash
 cd /Users/yuhanglin/fateradar-goal-20260912/classics
-# 666 集合重算（B2 §1 同式）
 python3 - <<'PY'
 import json
-ann=json.load(open('references/annotations/san-shi/daliuren-daquan.json',encoding='utf-8'))
-S=[e for e in ann['entries'] if e.get('review')!='source-reviewed' and e.get('kind')=='待核实' and '残格' in json.dumps(e,ensure_ascii=False)]
-print(len(S))
+d=json.load(open('docs/closeout/evidence/a1-open-items-20260913.json',encoding='utf-8'))
+zq=[i for i in d['items'] if i['id'].startswith('總鈐')]
+print(len(zq), len({i['id'] for i in zq}), sum(1 for i in zq if any(not i.get(f) for f in ('what_is_missing','attempts','product_handling','locator'))))
 PY
-# 未确认影印底本清单（inventory 实数列）
-grep -n '尚未确认影印' docs/LIBRARY_INVENTORY.md | wc -l
 ```
