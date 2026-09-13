@@ -60,7 +60,18 @@ grep -c '"name": "get_goal"' /tmp/mysess2.jsonl     # -> 0
 - 因此 `maxGoalRounds` 仍是部署默认 **256**；提高到 1024 只能在 preset 切换后由 `update_goal(action=edit, max_goal_rounds=1024)` 完成。
 - **未做**：未注入 host-plane 的 `@deepseek-ai/dsh-tool-goal` 副本（会与 standard-preset 会话内的同名注册形成竞争），未重启任何调度器，未创建第二个 Goal，未标记任何旧 Goal 完成。
 
-## 4. 团队状态目录位置（如实记录）
+## 4. 已知过期来源登记（引用时不得直接采信）
+
+| 来源 | 过期点 | 实测取而代之的值 |
+|---|---|---|
+| `docs/closeout/GAP_LEDGER.json` | `counts.draft=2905`、`source_reviewed=59934`、`rules[].level`（level1=164/level2=88） | 实测 draft **2835**、source-reviewed **60004**；规则级状态以 product 缺口矩阵为准 |
+| `docs/closeout/GAP_LEDGER.json` | `page_consumers.other_arts` = "dedicated free-reading builders missing except bazi" **不成立** | 实测八术均有 dedicated 模块：`src/lib/engine/{liuren,liuyao,meihua,qimen,qizheng,xiaoliuren,ziwei}-free-reading.ts` + `bazi/free-reading.ts`。该字段为旧快照，已由 algo-impl 在 A6 纠正，captain 独立复核确认 |
+| `product/docs/implementation/art-verdict-judgment-gap-matrix.json` | `product_head=cdb5f9c` / `classics_head=74edada` 已不是当前 main（230effd / eb4cabe） | 需在最新 HEAD 重生成后方可作为 A3 证据（登记为 A3 执行项） |
+| `product/docs/implementation/E-PAGE-ACCEPTANCE-VERIFICATION.md`、`C3-EIGHT-ARTS-EXPORT-ACCEPTANCE.md`、`C-EXPORT-READBACK-VERIFICATION.md` | 均为 2026-09-12 14:08–19:24 产出，早于第 43/44 轮 main 合入 | A6/A8 必须在新 main 重跑（page-acceptance t4） |
+
+> 纪律：这些来源仍可用于**定位**，但不得用于**判 pass**。账本的 `measured_baseline` 与 criterion 结论只认实测值。
+
+## 5. 团队状态目录位置（如实记录）
 
 AgentTeams 平台把团队状态目录建在 **`/Users/sync/code/fateradar-classics/.agent-teams/fateradar-closeout/`**（由会话 cwd 决定）。该路径属于本任务明令禁止覆盖的其他任务现场。
 
