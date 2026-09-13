@@ -108,7 +108,10 @@
       "report"
     ],
     "bazi_free_reading": "src/lib/engine/bazi/free-reading.ts -> bazi-workspace-summary / evidence-panel / personal-reading / reading-input-export",
-    "other_arts": "chart.points + EvidencePanel keyword matcher; dedicated free-reading builders missing except bazi",
+    "other_arts": "已作废（2026-09-13 captain 更正）：原文写 dedicated free-reading builders missing except bazi，与实测不符——八术都有 dedicated 免费解释模块（product src/lib/engine/{liuren,liuyao,meihua,qimen,qizheng,xiaoliuren,ziwei}-free-reading.ts 与 bazi/free-reading.ts），均已接各自 chart 路由 + EvidencePanel + 导出。真实剩余是「其余五术未做同口径消费者核对」（解读点 ID 兜底成规则/段落 ID 的同类风险），见 DELIVERY_ACCEPTANCE.json#A6。本字段为 2026-09-11 旧快照，不得再用于判 pass。",
+    "other_arts_stale": true,
+    "other_arts_corrected_at": "2026-09-13",
+    "other_arts_corrected_by": "captain（独立复核八术 free-reading 模块存在性 + algo-impl t3 消费者侧核对）",
     "xiaoliuren": "pack13 起有 6 条 executable 定义（YXJ-E-01–06），接到 src/lib/engine/xiaoliuren.ts 的真实输出；页面/导出/免费解释沿用既有 xiaoliuren 消费者。此前记 0 条是定义缺失，不是算法缺失。"
   },
   "drafts_by_file": [
