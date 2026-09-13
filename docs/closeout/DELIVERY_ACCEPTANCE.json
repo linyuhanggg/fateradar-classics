@@ -1,6 +1,6 @@
 {
   "schema": "fateradar-delivery-acceptance-v1",
-  "generated_at": "2026-09-13T05:05:00Z",
+  "generated_at": "2026-09-13T05:20:00Z",
   "generated_by": "DSH captain（本会话 goal round 1/256）",
   "authority": "classics:docs/FATERADAR_FULL_LIBRARY_PLAN.md（含 2026-09-13 收尾执行修订）",
   "purpose": "唯一收尾状态账本：逐项对应权威方案「总验收与完成条件」1–8。引用既有矩阵与报告，不新造重复指标。",
@@ -714,6 +714,11 @@
           "path": "product:docs/implementation/A8-CONTENT-REVISION-PIN-AUDIT.md §4b/§4c（algo-impl t9 补）",
           "shows": "①54 条差异的性质分类（逐条机械核过）：新增片段 54（每条各 +1）、删除片段 0、片段改写 0、坐标漂移 0；54 条新增片段的 quote 在 c45dfdb4 上逐字命中（54/54），且「被删而仍能在 main 命中」的旧片段 0 条 → 54/54 属「导出该更新」，0 条属产品实现/导出与 classics 不一致。根因有 commit 对应：classics 6ef9ac8「rules(qtb): 救应句出处补齐——54 条处置落地，来源 525→579」，是旧导出钉 df73f232 的后代；同区间另三笔调候提交只改 rescue/unknown_when 等本索引不导出的字段，故不产生片段差异。实例 QTB-M-01-03 新增 qiongtong-baojian:L0093-L0093「…若有壬癸破火，堪作秀才。」②CLASSICS_REV/CI 决策记录（含替代方案与回退）：前移理由——CLASSICS_REV 自身定义＝导出所用 commit，同时供 public 行号链接与神煞 revision 使用；本批既已按 main 重导出 bazi 索引，pin 不动会造成「产物 revision=c45dfdb4、而链接指向 3dc9d01」的溯源错位。前移安全性已证：578 锚点 0 漂移、神煞 4 锚点在 3dc9d01/eb4cabe/c45dfdb4 三处同文、钉定位测试在新钉下通过、CI 仍为固定 SHA 且 ref 与 CLASSICS_REV 逐字相同（避免 fetch-depth 1 读不到对象）。替代方案＝保持 3dc9d01 而只让产物带自身 revision（溯源仍可验证，代价是需固定解释两者不同）；回退只需改两行。③复核命令与原始结果：vitest run（shensha-source-link / reading-input-export-link / c-export-provenance-version-seven-arts / c-export-readback-seven-arts / bazi-source-rule-ids）→ 5 files / 60 tests passed，含「钉死古籍仓可用：五术生成文件的 204 条片段逐行对得上」；tsc --noEmit 通过",
           "kind": "fix-record + decision-memo（本轮）"
+        },
+        {
+          "path": "captain 复算：54 条差异的逐条分类（algo-impl 提供）+ classics 提交 6ef9ac8 存在性/时序核对",
+          "shows": "A8 硬缺口的**性质**已定案：54 条差异 = **新增片段 54 / 删除 0 / 改写 0 / 坐标漂移 0**；54 条新增片段的 quote 在 c45dfdb4 上**逐字命中 54/54**，旧片段「被删但仍能在 main 命中」为 0 条。根因有 commit 对应：classics `6ef9ac8`「rules(qtb): 救应句出处补齐——54 条处置落地，来源 525→579」——captain 实测该 commit 类型=commit、是 origin/main 祖先=yes、且**晚于旧钉 df73f232**=yes（subject：rules(qtb): 救应句出处补齐——54 条处置落地，来源 525→579）。即旧导出钉 df73f232 是 6ef9ac8 的**前代**，产品索引导出太早。→ **54 条里没有一条属「实现不一致」**；同时另三笔改动（调候救应改标 self、09-12/10-06 精确分段）只改 `rescue/unknown_when` 等本索引不导出的字段，故不产生片段差异——与「只有 54 条变」互相印证",
+          "kind": "captain-verified-now（含 commit 时序核对）"
         }
       ],
       "remaining": [
