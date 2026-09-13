@@ -1,25 +1,36 @@
 {
  "artifact": "A1 draft disposition ledger (one row per draft annotation entry)",
  "date": "2026-09-13",
- "by": "classics-audit (t7)",
+ "by": "classics-audit (t7; refreshed after t23 batch 1)",
  "measured": "recomputed from references/annotations/** + tools/source_paragraphs.load_source_paragraphs",
- "draft_total": 2835,
+ "draft_total": 2826,
  "by_disposition": {
   "ledger-metadata": 1531,
   "source-transcription-pending": 1,
-  "entry-review-pending": 1296,
+  "entry-review-pending": 1287,
   "archived-out-of-scope": 7
  },
  "disposition_definitions": {
-  "processed-not-landed": "源段落已核（passage/page-reviewed）、注解仍未提升 —— 即队长所称「已处理未入库」",
+  "processed-not-landed": "源段落已核（passage/page-reviewed）、注解仍未提升",
   "ledger-metadata": "评注或元数据：恢复稿写给自己的定位/状态行，属台账不是知识",
   "source-transcription-pending": "源段落 ocr-draft：影印转写/页审未完成",
-  "entry-review-pending": "实质条目（理论/规则候选/案例/术语/操作步骤）：待逐条审读",
+  "entry-review-pending": "实质条目（理论/规则候选/案例/术语/操作步骤/待核实）：待逐条审读",
   "archived-out-of-scope": "重复或序跋目录：归档"
+ },
+ "batches": {
+  "t23_batch1": {
+   "scope": "(daliuren-daquan, 待核实) 684 条",
+   "overlap_with_zongqian_666": 666,
+   "reviewed_new": 18,
+   "promoted_to_source_reviewed": 9,
+   "kept_draft": 9,
+   "date": "2026-09-13",
+   "note": "重叠部分按 A1 已登记「逐格归属不可判／保留〔?〕」处置，不重复取证；新审读的 18 条逐条给了依据或未决登记"
+  }
  },
  "by_file": {
   "daliuren-daquan.json": {
-   "entry-review-pending": 769,
+   "entry-review-pending": 760,
    "ledger-metadata": 4
   },
   "dili-bianzheng--shidian-SDZJ0504.json": {
@@ -150,7 +161,8 @@
    "kind": "待核实",
    "source_status": "reference-text",
    "disposition": "entry-review-pending",
-   "action": "实质条目：待逐条语义审读（不批量升级）"
+   "action": "实质条目：待逐条语义审读（不批量升级）",
+   "t23_batch1": "已审读（2026-09-13）：保持 draft，未决条件与候选读法已登记在该条注解 notes"
   },
   {
    "file": "daliuren-daquan.json",
@@ -159,7 +171,8 @@
    "kind": "待核实",
    "source_status": "reference-text",
    "disposition": "entry-review-pending",
-   "action": "实质条目：待逐条语义审读（不批量升级）"
+   "action": "实质条目：待逐条语义审读（不批量升级）",
+   "t23_batch1": "已审读（2026-09-13）：保持 draft，未决条件与候选读法已登记在该条注解 notes"
   },
   {
    "file": "daliuren-daquan.json",
@@ -168,7 +181,8 @@
    "kind": "待核实",
    "source_status": "reference-text",
    "disposition": "entry-review-pending",
-   "action": "实质条目：待逐条语义审读（不批量升级）"
+   "action": "实质条目：待逐条语义审读（不批量升级）",
+   "t23_batch1": "已审读（2026-09-13）：保持 draft，未决条件与候选读法已登记在该条注解 notes"
   },
   {
    "file": "daliuren-daquan.json",
@@ -1167,7 +1181,8 @@
    "kind": "待核实",
    "source_status": "reference-text",
    "disposition": "entry-review-pending",
-   "action": "实质条目：待逐条语义审读（不批量升级）"
+   "action": "实质条目：待逐条语义审读（不批量升级）",
+   "t23_batch1": "已审读（2026-09-13）：保持 draft，未决条件与候选读法已登记在该条注解 notes"
   },
   {
    "file": "daliuren-daquan.json",
@@ -6387,7 +6402,8 @@
    "kind": "待核实",
    "source_status": "reference-text",
    "disposition": "entry-review-pending",
-   "action": "实质条目：待逐条语义审读（不批量升级）"
+   "action": "实质条目：待逐条语义审读（不批量升级）",
+   "t23_batch1": "已审读（2026-09-13）：保持 draft，未决条件与候选读法已登记在该条注解 notes"
   },
   {
    "file": "daliuren-daquan.json",
@@ -6396,88 +6412,8 @@
    "kind": "待核实",
    "source_status": "reference-text",
    "disposition": "entry-review-pending",
-   "action": "实质条目：待逐条语义审读（不批量升级）"
-  },
-  {
-   "file": "daliuren-daquan.json",
-   "bookSlug": "daliuren-daquan",
-   "paragraphId": "daliuren-daquan:L2909-L2909",
-   "kind": "待核实",
-   "source_status": "reference-text",
-   "disposition": "entry-review-pending",
-   "action": "实质条目：待逐条语义审读（不批量升级）"
-  },
-  {
-   "file": "daliuren-daquan.json",
-   "bookSlug": "daliuren-daquan",
-   "paragraphId": "daliuren-daquan:L2911-L2911",
-   "kind": "待核实",
-   "source_status": "reference-text",
-   "disposition": "entry-review-pending",
-   "action": "实质条目：待逐条语义审读（不批量升级）"
-  },
-  {
-   "file": "daliuren-daquan.json",
-   "bookSlug": "daliuren-daquan",
-   "paragraphId": "daliuren-daquan:L2913-L2913",
-   "kind": "待核实",
-   "source_status": "reference-text",
-   "disposition": "entry-review-pending",
-   "action": "实质条目：待逐条语义审读（不批量升级）"
-  },
-  {
-   "file": "daliuren-daquan.json",
-   "bookSlug": "daliuren-daquan",
-   "paragraphId": "daliuren-daquan:L2915-L2915",
-   "kind": "待核实",
-   "source_status": "reference-text",
-   "disposition": "entry-review-pending",
-   "action": "实质条目：待逐条语义审读（不批量升级）"
-  },
-  {
-   "file": "daliuren-daquan.json",
-   "bookSlug": "daliuren-daquan",
-   "paragraphId": "daliuren-daquan:L2919-L2919",
-   "kind": "待核实",
-   "source_status": "reference-text",
-   "disposition": "entry-review-pending",
-   "action": "实质条目：待逐条语义审读（不批量升级）"
-  },
-  {
-   "file": "daliuren-daquan.json",
-   "bookSlug": "daliuren-daquan",
-   "paragraphId": "daliuren-daquan:L2921-L2921",
-   "kind": "待核实",
-   "source_status": "reference-text",
-   "disposition": "entry-review-pending",
-   "action": "实质条目：待逐条语义审读（不批量升级）"
-  },
-  {
-   "file": "daliuren-daquan.json",
-   "bookSlug": "daliuren-daquan",
-   "paragraphId": "daliuren-daquan:L2923-L2923",
-   "kind": "待核实",
-   "source_status": "reference-text",
-   "disposition": "entry-review-pending",
-   "action": "实质条目：待逐条语义审读（不批量升级）"
-  },
-  {
-   "file": "daliuren-daquan.json",
-   "bookSlug": "daliuren-daquan",
-   "paragraphId": "daliuren-daquan:L2925-L2925",
-   "kind": "待核实",
-   "source_status": "reference-text",
-   "disposition": "entry-review-pending",
-   "action": "实质条目：待逐条语义审读（不批量升级）"
-  },
-  {
-   "file": "daliuren-daquan.json",
-   "bookSlug": "daliuren-daquan",
-   "paragraphId": "daliuren-daquan:L2927-L2927",
-   "kind": "待核实",
-   "source_status": "reference-text",
-   "disposition": "entry-review-pending",
-   "action": "实质条目：待逐条语义审读（不批量升级）"
+   "action": "实质条目：待逐条语义审读（不批量升级）",
+   "t23_batch1": "已审读（2026-09-13）：保持 draft，未决条件与候选读法已登记在该条注解 notes"
   },
   {
    "file": "daliuren-daquan.json",
@@ -6486,7 +6422,8 @@
    "kind": "待核实",
    "source_status": "reference-text",
    "disposition": "entry-review-pending",
-   "action": "实质条目：待逐条语义审读（不批量升级）"
+   "action": "实质条目：待逐条语义审读（不批量升级）",
+   "t23_batch1": "已审读（2026-09-13）：保持 draft，未决条件与候选读法已登记在该条注解 notes"
   },
   {
    "file": "daliuren-daquan.json",
@@ -6495,7 +6432,8 @@
    "kind": "待核实",
    "source_status": "reference-text",
    "disposition": "entry-review-pending",
-   "action": "实质条目：待逐条语义审读（不批量升级）"
+   "action": "实质条目：待逐条语义审读（不批量升级）",
+   "t23_batch1": "已审读（2026-09-13）：保持 draft，未决条件与候选读法已登记在该条注解 notes"
   },
   {
    "file": "daliuren-daquan.json",
@@ -7008,7 +6946,8 @@
    "kind": "待核实",
    "source_status": "reference-text",
    "disposition": "entry-review-pending",
-   "action": "实质条目：待逐条语义审读（不批量升级）"
+   "action": "实质条目：待逐条语义审读（不批量升级）",
+   "t23_batch1": "已审读（2026-09-13）：保持 draft，未决条件与候选读法已登记在该条注解 notes"
   },
   {
    "file": "daliuren-daquan.json",
