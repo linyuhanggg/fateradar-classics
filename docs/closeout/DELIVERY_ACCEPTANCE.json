@@ -1,6 +1,6 @@
 {
   "schema": "fateradar-delivery-acceptance-v1",
-  "generated_at": "2026-09-13T06:35:00Z",
+  "generated_at": "2026-09-13T06:50:00Z",
   "generated_by": "DSH captain（本会话 goal round 1/256）",
   "authority": "classics:docs/FATERADAR_FULL_LIBRARY_PLAN.md（含 2026-09-13 收尾执行修订）",
   "purpose": "唯一收尾状态账本：逐项对应权威方案「总验收与完成条件」1–8。引用既有矩阵与报告，不新造重复指标。",
@@ -497,6 +497,11 @@
           "path": "classics:docs/closeout/review/INDEPENDENT-REVIEW-A6-BATCH-20260913.md（123 行，最终版）＋ REVIEW-A6-BATCH-20260913.md ＋ a6-batch-20260913/（48 个证据文件）—— 审查人：**reviewer（t8）**；captain 更正：此前误署名为 reviewer-2",
           "shows": "独立审查门通过（可合）：①两条缺陷真实存在、修复真实有效（不是改标签）②**3 个既有测试的修改语义保留——断言数只增不减、无删除与弱化**，旧断言之所以必须改是因为它们依赖「隐式换层」这一被正确去掉的行为 ③**新测试不是自证：对旧代码 13 条失败、对新代码 47/47 通过** ④tsc 干净、引擎全量 129 文件/3,230 条通过 ⑤另三重比对确认 captain 的 A3 矩阵重生成（252 行 + 全部 summary）与两次独立重跑 0 差异。复审同时给出 5 条具名缺口 (a)-(e)，已登记为 A6 remaining【署名更正与措辞精确化（reviewer 指出）】①上述文件与 (a) 的 7 处测量是 **reviewer（t8）** 的产出，不是 reviewer-2；②「1→8」仅是文档那条调用的值，**全量实测为 1→2–15 点**；③那 8 点中 **7 点**带 anchored_text+sourceRevision，**第 8 点是白话总结点**（liuyao:free:main:N，本身不是古籍点，ruleIds 为真实规则 ID）；④新增第三路暴露面：「层在列表但当日不可用」改前会静默换成流年，改后 5/5 如实报不足；⑤ZSB-E-09 专项 550 盘中 90 盘触发：改前 540/540 逐爻缺，改后 0/540",
           "kind": "independent-review-passed"
+        },
+        {
+          "path": "captain 实测：product:tests/e2e/*.spec.ts（Playwright，CI 已在跑）",
+          "shows": "**八术的浏览器层验收已有自动化覆盖**（不是靠人肉点页面）：①`reading-export-eight-arts.spec.ts` 有 1 条「guest export round-trips all eight arts without login」，spec 内引用到全部八术（liuyao/ziwei/qimen/liuren/meihua/xiaoliuren/qizheng/bazi）；②`reading-sync-acceptance.spec.ts` 有「selection / time basis / luck cycle stay in sync with the free reading」与「selection stays in sync for the other arts」两组，逐术参数化（含紫微宫位实体式选位、八字分区式选位、时制、岁运同步），spec 亦引用全八术；③`transit-chart.spec.ts` 含「Ziwei transit guides follow each scope」（正对「所选运限层」）与「all eight entry pages center the journey and reuse colored art names」，spec 亦引用全八术。**且这些 e2e 属于 CI 的 19 步之一，A6 批次在 main 上（`f030441`）CI success → 这组浏览器验收在当前 main 是绿的。**→ 结论：A6 的「八术主要栏目/网页显示与核心事实一致、无需登录」已有**机器可复现的浏览器证据**；仍需补的是：逐术断言完整性由 reviewer/member 读 spec 确认（尤其六爻「点开一爻后出处块是否有来源」这一条是否被现有 spec 覆盖）",
+          "kind": "captain-measured-now"
         }
       ],
       "remaining": [
@@ -796,6 +801,11 @@
           "path": "product:scripts/audit-anchor-pins.py + docs/implementation/A8-CONTENT-REVISION-PIN-AUDIT.md §5b（algo-impl，未提交）",
           "shows": "578 锚点 0 漂移的**可复现证据**（回应 captain 收口要求②）：①脚本只读、扫 `src/lib/**/generated/*.json` 里的全部锚点（rules[].anchor / rules[].fragments[] / notes[].source.anchor 三种位置），对每个锚点取「该产物自身 sourceRevision」与「--target」两处的 file 的 startLine–endLine 行区间文本比对；②同时给出三种判定口径：exact（逐字符含空白）/ **strip（仅忽略整段首尾空白；段内空白与换行必须一致——本报告判定口径）** / wsnorm（折叠连续空白，对照用）；③原始输出：7 份产物 362+82+81+21+12+12+8 = **578 锚点，三种口径均 same=578 / drifted=0 / unavailable=0，退出码 0**；对 --target c45dfdb4 与 --target origin/main（已前进到 fe76a0b9，c45dfdb4 仍是其祖先）两个目标跑均 0 漂移；④复核方式（reviewer-2 一行命令）：`python3 scripts/audit-anchor-pins.py --classics <classics> --target c45dfdb497a3ba802881a4191b976a6786a7f3d1`，期望 [strip] drifted=0 且退出码 0，若有漂移会打印逐条明细（artifact · rule id · file · 行区间 · 自身 revision）；⑤范围说明：产品仓手写规则 catalog.ts 不含行锚点，不在审计范围。",
           "kind": "reproducible-evidence + script（本轮）"
+        },
+        {
+          "path": "captain 实测：product:playwright.config.ts + tests/e2e/ + CI run（f030441 success）",
+          "shows": "A8 的「网页项目完成集成验收」已有机器证据的一半：仓库自带 Playwright 配置（自起 webServer，端口 4173）与 7 个 spec，其中八术导出回读、逐术选位/时制/岁运同步、紫微运限层跟随、认证与后台基础均被覆盖；这些 e2e 在 CI 的 19 步中执行，`f030441`（A6 批次，当前 product main）CI **success**。剩余为：逐术覆盖清单（哪些栏目**没有**被 spec 覆盖要明说）+ 最新 HEAD 上重跑一次。※ 工具链更正：地雷已排除——`ego-browser` 只是「嵌入式 Node 运行时 + Ego API」、**没有现成的 ready 类命令**，不该用它做页面验收；正确路径是仓库自带 Playwright（这也解释了 page-acceptance 长期卡住的原因）",
+          "kind": "captain-measured-now + 工具链更正"
         }
       ],
       "remaining": [
