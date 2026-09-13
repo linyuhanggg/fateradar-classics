@@ -1,6 +1,6 @@
 {
   "schema": "fateradar-delivery-acceptance-v1",
-  "generated_at": "2026-09-13T03:25:00Z",
+  "generated_at": "2026-09-13T03:35:00Z",
   "generated_by": "DSH captain（本会话 goal round 1/256）",
   "authority": "classics:docs/FATERADAR_FULL_LIBRARY_PLAN.md（含 2026-09-13 收尾执行修订）",
   "purpose": "唯一收尾状态账本：逐项对应权威方案「总验收与完成条件」1–8。引用既有矩阵与报告，不新造重复指标。",
@@ -334,17 +334,17 @@
           "kind": "ledger"
         },
         {
-          "path": "product:docs/implementation/ART-VERDICT-SOURCE-CASE-RECONCILIATION.md#第二批（algo-impl t6，未提交）",
+          "path": "product:docs/implementation/ART-VERDICT-SOURCE-CASE-RECONCILIATION.md#第二批（algo-impl t6，已提交 product cf0c1f7）",
           "shows": "逐条人读断语对账 28 条：六爻 14（盘面 21/34 字段全一致；按断语所指对象显式取用后逐条给出候选与优先：11 相符、2 部分相符、1 具名限制；其中 ZS-LY-L0393 原文缺日干支/月建，只在结构层复算）＋梅花 2（起卦算式与卦形 7/7 相符）＋奇门 5（4 一致、1 来源冲突）＋八字 7（满足/不满足/信息不足三态都出现；3 处口径差异或「座次≠用例」已具名）",
           "kind": "human-read-reconciliation（本轮）"
         },
         {
-          "path": "product:docs/implementation/ART-VERDICT-SOURCE-CASE-RECOMPUTE.json#batch2（algo-impl t6，未提交；captain 于 10:34 复读当前文件）",
+          "path": "product:docs/implementation/ART-VERDICT-SOURCE-CASE-RECOMPUTE.json#batch2（algo-impl t6，已提交 product cf0c1f7；captain 于 10:34 复读当前文件）",
           "shows": "批次2 当前状态（已修正抽取口径后重生成）：qimen 1,919 条 → matchedAll **1,842** / withDiff **77**；liuyao 13 → matchedAll 13 / withDiff 0；meihua 2 → matchedAll 2 / withDiff 0；合计 differenceCount **77**。starPalaceSemantics（1,917 可比）：matchesRawLandingPalace **1,888**、matchesAdjustedStarPalace 1,684、matchesOriginPalace 376 → 原表两列数确实跟**落宫**走，不是「原宫」；引擎对落宫口径的正确率约 98.5%。captain 另用引擎直接复算 阳一局 乙丑时：starPalaceRaw=9（原书 9）、doorPalaceRaw=2（原书 2）、originPalace=1 → 引擎该例正确，此前 1,543 条 starPalaceRaw「差异」系抽取口径未对齐所致的假差异",
           "kind": "captain-reverified-now（含引擎直算复现）"
         },
         {
-          "path": "product:docs/implementation/ART-VERDICT-SOURCE-CASE-RECONCILIATION.md（algo-impl，未提交）",
+          "path": "product:docs/implementation/ART-VERDICT-SOURCE-CASE-RECONCILIATION.md（algo-impl，已提交 product cf0c1f7）",
           "shows": "原书案例『人读断语对账』第一份：10 条挂接（去重 7 个命例）逐条并排读「原书断语要点 vs 引擎判定」。结果：1 条**不适用**（QTB-M-01-09 四柱自身不成立——甲子日无甲申时，原文自标疑例）、5 条**相符**、1 条引擎**信息不足但与原文不矛盾**（ZPR-E-06 财只见藏干，原文同样以财印为辅为条件）。**零例出现「引擎判不满足、原书作正面例」的方向性冲突**（但仅覆盖 7 例，不得外推）。另含一条自查更正：第 41 轮「QTB-M-10-03 缺月内时段粒度」是错的——该条早已有 term-phase 路线 QTB-M-10-03-C01/C02（谷雨前/后），真正缺口是 QTB-M-09-12 与 QTB-M-10-06，已由第 43 轮补齐十二个月中气",
           "kind": "member-produced + captain-read"
         }
@@ -705,6 +705,20 @@
       "what": "成员内部 allowance 可能在长批次中耗尽（历史 t31 曾报额度耗尽）",
       "impact": "单批中断，不影响已完成产物",
       "fix": "按授权用现有供应商/模型为必要成员补预算；内部 allowance 与 Goal 轮数、供应商余额分开判断"
+    },
+    {
+      "id": "B-vision",
+      "kind": "execution-blocker",
+      "what": "影印读图能力（modlens 视觉桥）在本机不可用，且**需用户明示同意**才能启用",
+      "evidence": "captain 与成员各自调用 read_image 均失败，同一错误：claude-cli provider failed with code 1；提示本机 codex CLI 已登录且有视觉，但 modlens 未获准复用，需 `modlens config set reuse.<harness> true`。modlens 文档（@liustack/modlens docs/harness-setup.md）写明 engines／**reuse grants**／guard rules 都在 ~/.modlens/config.json；其错误提示原文为 Ask the user。本机可用 CLI：`node <profile>/node_modules/@liustack/modlens/dist/main.js`（无需联网）。",
+      "impact": "阻塞 t2（奇门遁甲统宗 308–311 页逐格转写与疑字登记），进而阻塞 A1（资料去向）与 A2（引文可回溯）中该书的影印独有部分；非视觉部分已完成（渲染 400dpi、取向/门槛实测、版面测绘、管线核实、电子本不含该表的关键负面结论）",
+      "owner": "人类（一句话授权）",
+      "fix_options": [
+        "A) 用户执行：node /Users/yuhanglin/.dsh/profiles/web/node_modules/@liustack/modlens/dist/main.js config set reuse.codex true（写入 ~/.modlens/config.json，与所有 harness 共享）",
+        "B) 用户明示许可成员在本批直接调用已登录的 codex CLI 读这 4 页影印"
+      ],
+      "captain_decision": "captain **未**自行修改 reuse 开关、也未授权成员直调 codex CLI —— 该开关是用户同意门（错误提示即 Ask the user），且会消耗用户 codex 额度；按「工具缺失则明确说明所需启用操作」上报，不冒充资料不可得、不用 OCR 引擎或电子本代填。",
+      "does_not_block": "其余所有不依赖读图的任务（A3/A4/A5/A6/A7 的绝大多数子项、A5 的复算与对账、A8 的 CI/版本核对）"
     }
   ],
   "out_of_scope_queue": [
