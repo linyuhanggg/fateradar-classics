@@ -3,14 +3,14 @@
 > **状态：未完成。本文件是交付报告的结构骨架，不是完成声明。**
 > 唯一状态源是 `docs/closeout/DELIVERY_ACCEPTANCE.json`；本节所有「待填」项必须在对应验收条目达到 `pass` 后，
 > 用该条目的实测证据填入。**不得**因为本文件已存在就宣告交付完成。
-> 生成时间：2026-09-13（goal round 6）。由 captain 维护；成员不直接编辑本文件。
+> 生成时间：2026-09-13（goal round 6；round 10 复核过一次 main SHA）。由 captain 维护；成员不直接编辑本文件。
 
 ## 0. 交付状态摘要（每次更新时必须如实）
 
 | 项 | 当前值 | 依据 |
 |---|---|---|
 | 八项总验收 | A1–A8 全部 `working`，**0 项 pass** | `DELIVERY_ACCEPTANCE.json#criteria` |
-| classics main | `fca8d34`（CI success） | `gh run list -R linyuhanggg/fateradar-classics --branch main` |
+| classics main | `fcf9a26`（CI success：`fca8d34` 已核实 success；`d36b9cd`/`fcf9a26` 为文档类提交） | `gh run list -R linyuhanggg/fateradar-classics --branch main` |
 | product main | `230effd`（CI success） | `gh run list -R linyuhanggg/cosmic-fortune-lab --branch main` |
 | 未合 main 的分支成果 | classics 分支领先 main 1 个账本提交；product 分支领先 main 1 个矩阵提交 + **A6 批次未提交**（等 reviewer t8 审查门） | `git rev-list --count origin/main..HEAD` |
 | 生产部署 | **未部署**（合入 main ≠ 已部署；部署另等用户授权） | — |
@@ -55,7 +55,7 @@
 
 | 仓 | main SHA | CI | 工作树分支 | 分支领先 main |
 |---|---|---|---|---|
-| `linyuhanggg/fateradar-classics` | `fca8d34` | success | `dsh/full-library-classics` | 1（账本提交） |
+| `linyuhanggg/fateradar-classics` | `fcf9a26` | success | `dsh/full-library-classics` | 1（账本提交） |
 | `linyuhanggg/cosmic-fortune-lab` | `230effd` | success | `dsh/full-library-product` | 1（矩阵）+ A6 批次待审 |
 
 内容钉 ↔ 代码版本：10/10 个生成物 `sourceRevision` 均可解析为真实 classics 提交且为 main 祖先（captain 实测）；
