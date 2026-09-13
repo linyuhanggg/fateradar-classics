@@ -1,13 +1,13 @@
 {
  "artifact": "A1 draft disposition ledger (one row per draft annotation entry)",
  "date": "2026-09-13",
- "by": "classics-audit (t7; refreshed after t25; t26 batch)",
+ "by": "classics-audit (refreshed after t26; t27 batch)",
  "measured": "recomputed from references/annotations/** + tools/source_paragraphs.load_source_paragraphs",
- "draft_total": 2752,
+ "draft_total": 2731,
  "by_disposition": {
   "ledger-metadata": 1531,
   "source-transcription-pending": 1,
-  "entry-review-pending": 1213,
+  "entry-review-pending": 1192,
   "archived-out-of-scope": 7
  },
  "disposition_definitions": {
@@ -144,6 +144,37 @@
    ],
    "date": "2026-09-13",
    "note": "玉匣记识典残格/符咒单元格逐字符照录升记录性 source-reviewed；六壬秘本 72 条第二次无新证据具名未决。verified=false。"
+  },
+  "t27_batch": {
+   "scope": "mayi-shenxiang NGJ89241199903149974518 177 + liuren-miben SDZJ0628 42",
+   "reviewed": 219,
+   "promoted_to_source_reviewed": 21,
+   "kept_draft": 198,
+   "promoted_ids": [
+    "liuren-miben:shidian-SDZJ0628:P7549319985417093162",
+    "liuren-miben:shidian-SDZJ0628:P7549319992823824447",
+    "liuren-miben:shidian-SDZJ0628:P7570421063827718179",
+    "liuren-miben:shidian-SDZJ0628:P7573648484054892563",
+    "liuren-miben:shidian-SDZJ0628:P7597138910159290419",
+    "liuren-miben:shidian-SDZJ0628:P7597138910159306803",
+    "mayi-shenxiang:shidian-NGJ89241199903149974518:P7598367380088078376",
+    "mayi-shenxiang:shidian-NGJ89241199903149974518:P7598367454154260480",
+    "mayi-shenxiang:shidian-NGJ89241199903149974518:P7598367464204943360",
+    "mayi-shenxiang:shidian-NGJ89241199903149974518:P7598367464321286179",
+    "mayi-shenxiang:shidian-NGJ89241199903149974518:P7598367464321368099",
+    "mayi-shenxiang:shidian-NGJ89241199903149974518:P7598367464322433059",
+    "mayi-shenxiang:shidian-NGJ89241199903149974518:P7598367464322580515",
+    "mayi-shenxiang:shidian-NGJ89241199903149974518:P7598367464322711587",
+    "mayi-shenxiang:shidian-NGJ89241199903149974518:P7624085868030296091",
+    "mayi-shenxiang:shidian-NGJ89241199903149974518:P7624085868030656539",
+    "mayi-shenxiang:shidian-NGJ89241199903149974518:P7624086152143929353",
+    "mayi-shenxiang:shidian-NGJ89241199903149974518:P7626030500818567194",
+    "mayi-shenxiang:shidian-NGJ89241199903149974518:P7626030500818616346",
+    "mayi-shenxiang:shidian-NGJ89241199903149974518:P7626030500910268454",
+    "mayi-shenxiang:shidian-NGJ89241199903149974518:P7626030500910284838"
+   ],
+   "date": "2026-09-13",
+   "note": "短残句/部位名逐字符照录升记录性 source-reviewed；截断、阙文、图像占位保持 draft。verified=false。"
   }
  },
  "by_file": {
@@ -159,7 +190,7 @@
   },
   "liuren-miben--shidian-SDZJ0628.json": {
    "archived-out-of-scope": 3,
-   "entry-review-pending": 42,
+   "entry-review-pending": 36,
    "ledger-metadata": 5
   },
   "liuren-miben.json": {
@@ -171,7 +202,7 @@
   },
   "mayi-shenxiang--shidian-NGJ89241199903149974518.json": {
    "archived-out-of-scope": 3,
-   "entry-review-pending": 177,
+   "entry-review-pending": 162,
    "ledger-metadata": 42
   },
   "mayi-shenxiang.json": {
@@ -7376,25 +7407,7 @@
   {
    "file": "liuren-miben--shidian-SDZJ0628.json",
    "bookSlug": "liuren-miben",
-   "paragraphId": "liuren-miben:shidian-SDZJ0628:P7549319985417093162",
-   "kind": "规则候选",
-   "source_status": "reference-text",
-   "disposition": "entry-review-pending",
-   "action": "实质条目：待逐条语义审读（不批量升级）"
-  },
-  {
-   "file": "liuren-miben--shidian-SDZJ0628.json",
-   "bookSlug": "liuren-miben",
    "paragraphId": "liuren-miben:shidian-SDZJ0628:P7549319989179695145",
-   "kind": "待核实",
-   "source_status": "reference-text",
-   "disposition": "entry-review-pending",
-   "action": "实质条目：待逐条语义审读（不批量升级）"
-  },
-  {
-   "file": "liuren-miben--shidian-SDZJ0628.json",
-   "bookSlug": "liuren-miben",
-   "paragraphId": "liuren-miben:shidian-SDZJ0628:P7549319992823824447",
    "kind": "待核实",
    "source_status": "reference-text",
    "disposition": "entry-review-pending",
@@ -7574,15 +7587,6 @@
   {
    "file": "liuren-miben--shidian-SDZJ0628.json",
    "bookSlug": "liuren-miben",
-   "paragraphId": "liuren-miben:shidian-SDZJ0628:P7570421063827718179",
-   "kind": "术语",
-   "source_status": "reference-text",
-   "disposition": "entry-review-pending",
-   "action": "实质条目：待逐条语义审读（不批量升级）"
-  },
-  {
-   "file": "liuren-miben--shidian-SDZJ0628.json",
-   "bookSlug": "liuren-miben",
    "paragraphId": "liuren-miben:shidian-SDZJ0628:P7570421063827734563",
    "kind": "待核实",
    "source_status": "reference-text",
@@ -7628,15 +7632,6 @@
   {
    "file": "liuren-miben--shidian-SDZJ0628.json",
    "bookSlug": "liuren-miben",
-   "paragraphId": "liuren-miben:shidian-SDZJ0628:P7573648484054892563",
-   "kind": "待核实",
-   "source_status": "reference-text",
-   "disposition": "entry-review-pending",
-   "action": "实质条目：待逐条语义审读（不批量升级）"
-  },
-  {
-   "file": "liuren-miben--shidian-SDZJ0628.json",
-   "bookSlug": "liuren-miben",
    "paragraphId": "liuren-miben:shidian-SDZJ0628:P7577604183961567284",
    "kind": "规则候选",
    "source_status": "reference-text",
@@ -7648,24 +7643,6 @@
    "bookSlug": "liuren-miben",
    "paragraphId": "liuren-miben:shidian-SDZJ0628:P7577604183961747508",
    "kind": "操作步骤",
-   "source_status": "reference-text",
-   "disposition": "entry-review-pending",
-   "action": "实质条目：待逐条语义审读（不批量升级）"
-  },
-  {
-   "file": "liuren-miben--shidian-SDZJ0628.json",
-   "bookSlug": "liuren-miben",
-   "paragraphId": "liuren-miben:shidian-SDZJ0628:P7597138910159290419",
-   "kind": "规则候选",
-   "source_status": "reference-text",
-   "disposition": "entry-review-pending",
-   "action": "实质条目：待逐条语义审读（不批量升级）"
-  },
-  {
-   "file": "liuren-miben--shidian-SDZJ0628.json",
-   "bookSlug": "liuren-miben",
-   "paragraphId": "liuren-miben:shidian-SDZJ0628:P7597138910159306803",
-   "kind": "规则候选",
    "source_status": "reference-text",
    "disposition": "entry-review-pending",
    "action": "实质条目：待逐条语义审读（不批量升级）"
@@ -8429,15 +8406,6 @@
   {
    "file": "mayi-shenxiang--shidian-NGJ89241199903149974518.json",
    "bookSlug": "mayi-shenxiang",
-   "paragraphId": "mayi-shenxiang:shidian-NGJ89241199903149974518:P7598367380088078376",
-   "kind": "规则候选",
-   "source_status": "reference-text",
-   "disposition": "entry-review-pending",
-   "action": "实质条目：待逐条语义审读（不批量升级）"
-  },
-  {
-   "file": "mayi-shenxiang--shidian-NGJ89241199903149974518.json",
-   "bookSlug": "mayi-shenxiang",
    "paragraphId": "mayi-shenxiang:shidian-NGJ89241199903149974518:P7598367380088193064",
    "kind": "术语",
    "source_status": "reference-text",
@@ -8754,15 +8722,6 @@
    "file": "mayi-shenxiang--shidian-NGJ89241199903149974518.json",
    "bookSlug": "mayi-shenxiang",
    "paragraphId": "mayi-shenxiang:shidian-NGJ89241199903149974518:P7598367454154244096",
-   "kind": "规则候选",
-   "source_status": "reference-text",
-   "disposition": "entry-review-pending",
-   "action": "实质条目：待逐条语义审读（不批量升级）"
-  },
-  {
-   "file": "mayi-shenxiang--shidian-NGJ89241199903149974518.json",
-   "bookSlug": "mayi-shenxiang",
-   "paragraphId": "mayi-shenxiang:shidian-NGJ89241199903149974518:P7598367454154260480",
    "kind": "规则候选",
    "source_status": "reference-text",
    "disposition": "entry-review-pending",
@@ -9293,15 +9252,6 @@
   {
    "file": "mayi-shenxiang--shidian-NGJ89241199903149974518.json",
    "bookSlug": "mayi-shenxiang",
-   "paragraphId": "mayi-shenxiang:shidian-NGJ89241199903149974518:P7598367464204943360",
-   "kind": "规则候选",
-   "source_status": "reference-text",
-   "disposition": "entry-review-pending",
-   "action": "实质条目：待逐条语义审读（不批量升级）"
-  },
-  {
-   "file": "mayi-shenxiang--shidian-NGJ89241199903149974518.json",
-   "bookSlug": "mayi-shenxiang",
    "paragraphId": "mayi-shenxiang:shidian-NGJ89241199903149974518:P7598367464204992512",
    "kind": "规则候选",
    "source_status": "reference-text",
@@ -9473,24 +9423,6 @@
   {
    "file": "mayi-shenxiang--shidian-NGJ89241199903149974518.json",
    "bookSlug": "mayi-shenxiang",
-   "paragraphId": "mayi-shenxiang:shidian-NGJ89241199903149974518:P7598367464321286179",
-   "kind": "案例",
-   "source_status": "reference-text",
-   "disposition": "entry-review-pending",
-   "action": "实质条目：待逐条语义审读（不批量升级）"
-  },
-  {
-   "file": "mayi-shenxiang--shidian-NGJ89241199903149974518.json",
-   "bookSlug": "mayi-shenxiang",
-   "paragraphId": "mayi-shenxiang:shidian-NGJ89241199903149974518:P7598367464321368099",
-   "kind": "术语",
-   "source_status": "reference-text",
-   "disposition": "entry-review-pending",
-   "action": "实质条目：待逐条语义审读（不批量升级）"
-  },
-  {
-   "file": "mayi-shenxiang--shidian-NGJ89241199903149974518.json",
-   "bookSlug": "mayi-shenxiang",
    "paragraphId": "mayi-shenxiang:shidian-NGJ89241199903149974518:P7598367464321384483",
    "kind": "规则候选",
    "source_status": "reference-text",
@@ -9510,15 +9442,6 @@
    "file": "mayi-shenxiang--shidian-NGJ89241199903149974518.json",
    "bookSlug": "mayi-shenxiang",
    "paragraphId": "mayi-shenxiang:shidian-NGJ89241199903149974518:P7598367464322416675",
-   "kind": "规则候选",
-   "source_status": "reference-text",
-   "disposition": "entry-review-pending",
-   "action": "实质条目：待逐条语义审读（不批量升级）"
-  },
-  {
-   "file": "mayi-shenxiang--shidian-NGJ89241199903149974518.json",
-   "bookSlug": "mayi-shenxiang",
-   "paragraphId": "mayi-shenxiang:shidian-NGJ89241199903149974518:P7598367464322433059",
    "kind": "规则候选",
    "source_status": "reference-text",
    "disposition": "entry-review-pending",
@@ -9590,15 +9513,6 @@
   {
    "file": "mayi-shenxiang--shidian-NGJ89241199903149974518.json",
    "bookSlug": "mayi-shenxiang",
-   "paragraphId": "mayi-shenxiang:shidian-NGJ89241199903149974518:P7598367464322580515",
-   "kind": "规则候选",
-   "source_status": "reference-text",
-   "disposition": "entry-review-pending",
-   "action": "实质条目：待逐条语义审读（不批量升级）"
-  },
-  {
-   "file": "mayi-shenxiang--shidian-NGJ89241199903149974518.json",
-   "bookSlug": "mayi-shenxiang",
    "paragraphId": "mayi-shenxiang:shidian-NGJ89241199903149974518:P7598367464322596899",
    "kind": "规则候选",
    "source_status": "reference-text",
@@ -9610,24 +9524,6 @@
    "bookSlug": "mayi-shenxiang",
    "paragraphId": "mayi-shenxiang:shidian-NGJ89241199903149974518:P7598367464322613283",
    "kind": "术语",
-   "source_status": "reference-text",
-   "disposition": "entry-review-pending",
-   "action": "实质条目：待逐条语义审读（不批量升级）"
-  },
-  {
-   "file": "mayi-shenxiang--shidian-NGJ89241199903149974518.json",
-   "bookSlug": "mayi-shenxiang",
-   "paragraphId": "mayi-shenxiang:shidian-NGJ89241199903149974518:P7598367464322711587",
-   "kind": "规则候选",
-   "source_status": "reference-text",
-   "disposition": "entry-review-pending",
-   "action": "实质条目：待逐条语义审读（不批量升级）"
-  },
-  {
-   "file": "mayi-shenxiang--shidian-NGJ89241199903149974518.json",
-   "bookSlug": "mayi-shenxiang",
-   "paragraphId": "mayi-shenxiang:shidian-NGJ89241199903149974518:P7624085868030296091",
-   "kind": "案例",
    "source_status": "reference-text",
    "disposition": "entry-review-pending",
    "action": "实质条目：待逐条语义审读（不批量升级）"
@@ -9671,15 +9567,6 @@
   {
    "file": "mayi-shenxiang--shidian-NGJ89241199903149974518.json",
    "bookSlug": "mayi-shenxiang",
-   "paragraphId": "mayi-shenxiang:shidian-NGJ89241199903149974518:P7624085868030656539",
-   "kind": "规则候选",
-   "source_status": "reference-text",
-   "disposition": "entry-review-pending",
-   "action": "实质条目：待逐条语义审读（不批量升级）"
-  },
-  {
-   "file": "mayi-shenxiang--shidian-NGJ89241199903149974518.json",
-   "bookSlug": "mayi-shenxiang",
    "paragraphId": "mayi-shenxiang:shidian-NGJ89241199903149974518:P7624085868030672923",
    "kind": "规则候选",
    "source_status": "reference-text",
@@ -9699,15 +9586,6 @@
    "file": "mayi-shenxiang--shidian-NGJ89241199903149974518.json",
    "bookSlug": "mayi-shenxiang",
    "paragraphId": "mayi-shenxiang:shidian-NGJ89241199903149974518:P7624085945218023474",
-   "kind": "规则候选",
-   "source_status": "reference-text",
-   "disposition": "entry-review-pending",
-   "action": "实质条目：待逐条语义审读（不批量升级）"
-  },
-  {
-   "file": "mayi-shenxiang--shidian-NGJ89241199903149974518.json",
-   "bookSlug": "mayi-shenxiang",
-   "paragraphId": "mayi-shenxiang:shidian-NGJ89241199903149974518:P7624086152143929353",
    "kind": "规则候选",
    "source_status": "reference-text",
    "disposition": "entry-review-pending",
@@ -9842,25 +9720,7 @@
   {
    "file": "mayi-shenxiang--shidian-NGJ89241199903149974518.json",
    "bookSlug": "mayi-shenxiang",
-   "paragraphId": "mayi-shenxiang:shidian-NGJ89241199903149974518:P7626030500818567194",
-   "kind": "术语",
-   "source_status": "reference-text",
-   "disposition": "entry-review-pending",
-   "action": "实质条目：待逐条语义审读（不批量升级）"
-  },
-  {
-   "file": "mayi-shenxiang--shidian-NGJ89241199903149974518.json",
-   "bookSlug": "mayi-shenxiang",
    "paragraphId": "mayi-shenxiang:shidian-NGJ89241199903149974518:P7626030500818599962",
-   "kind": "规则候选",
-   "source_status": "reference-text",
-   "disposition": "entry-review-pending",
-   "action": "实质条目：待逐条语义审读（不批量升级）"
-  },
-  {
-   "file": "mayi-shenxiang--shidian-NGJ89241199903149974518.json",
-   "bookSlug": "mayi-shenxiang",
-   "paragraphId": "mayi-shenxiang:shidian-NGJ89241199903149974518:P7626030500818616346",
    "kind": "规则候选",
    "source_status": "reference-text",
    "disposition": "entry-review-pending",
@@ -9898,24 +9758,6 @@
    "bookSlug": "mayi-shenxiang",
    "paragraphId": "mayi-shenxiang:shidian-NGJ89241199903149974518:P7626030500910252070",
    "kind": "规则候选",
-   "source_status": "reference-text",
-   "disposition": "entry-review-pending",
-   "action": "实质条目：待逐条语义审读（不批量升级）"
-  },
-  {
-   "file": "mayi-shenxiang--shidian-NGJ89241199903149974518.json",
-   "bookSlug": "mayi-shenxiang",
-   "paragraphId": "mayi-shenxiang:shidian-NGJ89241199903149974518:P7626030500910268454",
-   "kind": "术语",
-   "source_status": "reference-text",
-   "disposition": "entry-review-pending",
-   "action": "实质条目：待逐条语义审读（不批量升级）"
-  },
-  {
-   "file": "mayi-shenxiang--shidian-NGJ89241199903149974518.json",
-   "bookSlug": "mayi-shenxiang",
-   "paragraphId": "mayi-shenxiang:shidian-NGJ89241199903149974518:P7626030500910284838",
-   "kind": "术语",
    "source_status": "reference-text",
    "disposition": "entry-review-pending",
    "action": "实质条目：待逐条语义审读（不批量升级）"
