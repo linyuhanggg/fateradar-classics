@@ -1,6 +1,6 @@
 {
   "schema": "fateradar-delivery-acceptance-v1",
-  "generated_at": "2026-09-13T06:10:00Z",
+  "generated_at": "2026-09-13T06:20:00Z",
   "generated_by": "DSH captain（本会话 goal round 1/256）",
   "authority": "classics:docs/FATERADAR_FULL_LIBRARY_PLAN.md（含 2026-09-13 收尾执行修订）",
   "purpose": "唯一收尾状态账本：逐项对应权威方案「总验收与完成条件」1–8。引用既有矩阵与报告，不新造重复指标。",
@@ -129,6 +129,11 @@
           "path": "classics:docs/closeout/review/a1-draft-disposition-20260913.json（2,835 行逐条）+ A1-DRAFT-ACCOUNT-20260913.md（t7）",
           "shows": "draft 去向分账已完成：**一行一条**（file / bookSlug / paragraphId / kind / source_status / disposition / action）共 2,835 条。四类：**台账元数据 1,531**（qimen nlc-layouts 1,261 + mingli-yueyan nlc-recovery 161 + 其余 109；去向＝保持 draft、不提升、不入审读队列）／**实质条目待审 1,296**（待核实 795、规则候选 297、术语 106、案例 73、理论 16、操作步骤 10）／**待影印转写 1**／**归档 7**（重复 2、序跋目录 5）。关键读数：**「已处理但尚未正式入库」（用户四分类的第 4 类）实测 0 条**（逐条重算源段落状态，含影印层 reviewedRanges 判定）——即 A1 的余量不是「搬运」，而是审读/转写尚未做。与 B1b 的 1,423 条闸门结论吻合（1,422 评注或元数据 + 1 待核实）：闸门拦的是台账。",
           "kind": "member-produced + captain-read"
+        },
+        {
+          "path": "captain 独立复核：a1-draft-disposition-20260913.json ↔ references/annotations/** 逐条对账",
+          "shows": "**双向一一对应（bijection）成立**：分账表 2,835 行、0 行缺 key；直接扫 annotations 得到 **source-reviewed 60,004 + draft 2,835**，且 **distinct draft paragraphId = 2,835**。逐条比对：**2,835 / 2,835 行都命中一个真实 draft 注解**，**0 行找不到**（也无重复/多余行）。分类分布亦与成员报告完全一致：ledger-metadata **1,531** / entry-review-pending **1,296** / archived-out-of-scope **7** / source-transcription-pending **1**。→ A1「每一条 draft 都有可定位去向」不是抄来的数字，而是**与注解集合同构**的账；captain 未自行判 pass（仍待独立复核与另两项具名条目）",
+          "kind": "captain-reverified-now（bijection）"
         }
       ],
       "remaining": [
