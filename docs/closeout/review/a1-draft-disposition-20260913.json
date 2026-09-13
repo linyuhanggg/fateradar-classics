@@ -1,13 +1,13 @@
 {
  "artifact": "A1 draft disposition ledger (one row per draft annotation entry)",
  "date": "2026-09-13",
- "by": "classics-audit (t7; refreshed after t24; t25 batch)",
+ "by": "classics-audit (t7; refreshed after t25; t26 batch)",
  "measured": "recomputed from references/annotations/** + tools/source_paragraphs.load_source_paragraphs",
- "draft_total": 2790,
+ "draft_total": 2752,
  "by_disposition": {
   "ledger-metadata": 1531,
   "source-transcription-pending": 1,
-  "entry-review-pending": 1251,
+  "entry-review-pending": 1213,
   "archived-out-of-scope": 7
  },
  "disposition_definitions": {
@@ -96,6 +96,54 @@
    ],
    "date": "2026-09-13",
    "note": "皇极：旧注「截断」与电子本段末不符者升记录性 source-reviewed；残表/丙辰格照录。紫微：11 宫落点残表逐字符照录。酉宫鿄等保持 draft。verified=false。"
+  },
+  "t26_batch": {
+   "scope": "yuqia-ji--shidian-NA09036 125 + liuren-miben 72",
+   "reviewed": 197,
+   "promoted_to_source_reviewed": 38,
+   "kept_draft": 159,
+   "promoted_ids": [
+    "yuqia-ji:shidian-NA09036:P7655682801630871603",
+    "yuqia-ji:shidian-NA09036:P7655682811890106394",
+    "yuqia-ji:shidian-NA09036:P7655682811890139162",
+    "yuqia-ji:shidian-NA09036:P7655682835168411657",
+    "yuqia-ji:shidian-NA09036:P7655682835168509961",
+    "yuqia-ji:shidian-NA09036:P7655682835168559113",
+    "yuqia-ji:shidian-NA09036:P7655682835168608265",
+    "yuqia-ji:shidian-NA09036:P7655682835168657417",
+    "yuqia-ji:shidian-NA09036:P7655682835168739337",
+    "yuqia-ji:shidian-NA09036:P7655682835168952329",
+    "yuqia-ji:shidian-NA09036:P7655682835169460233",
+    "yuqia-ji:shidian-NA09036:P7655682835169509385",
+    "yuqia-ji:shidian-NA09036:P7655682835169558537",
+    "yuqia-ji:shidian-NA09036:P7655682835169656841",
+    "yuqia-ji:shidian-NA09036:P7655682835169705993",
+    "yuqia-ji:shidian-NA09036:P7655682835268780083",
+    "yuqia-ji:shidian-NA09036:P7655682835268829235",
+    "yuqia-ji:shidian-NA09036:P7655682841874841609",
+    "yuqia-ji:shidian-NA09036:P7655682857521037350",
+    "yuqia-ji:shidian-NA09036:P7655682857521053734",
+    "yuqia-ji:shidian-NA09036:P7655682857521070118",
+    "yuqia-ji:shidian-NA09036:P7655682857521086502",
+    "yuqia-ji:shidian-NA09036:P7655682857521119270",
+    "yuqia-ji:shidian-NA09036:P7655682857521135654",
+    "yuqia-ji:shidian-NA09036:P7655682857521152038",
+    "yuqia-ji:shidian-NA09036:P7655682857521168422",
+    "yuqia-ji:shidian-NA09036:P7655682857574072358",
+    "yuqia-ji:shidian-NA09036:P7655682857574088742",
+    "yuqia-ji:shidian-NA09036:P7655682857575579686",
+    "yuqia-ji:shidian-NA09036:P7655682857632940059",
+    "yuqia-ji:shidian-NA09036:P7655682857632972827",
+    "yuqia-ji:shidian-NA09036:P7655682857633005595",
+    "yuqia-ji:shidian-NA09036:P7655682857633038363",
+    "yuqia-ji:shidian-NA09036:P7655682857633923099",
+    "yuqia-ji:shidian-NA09036:P7655682857633972251",
+    "yuqia-ji:shidian-NA09036:P7655682857634005019",
+    "yuqia-ji:shidian-NA09036:P7655682857701179430",
+    "yuqia-ji:shidian-NA09036:P7662305212744892416"
+   ],
+   "date": "2026-09-13",
+   "note": "玉匣记识典残格/符咒单元格逐字符照录升记录性 source-reviewed；六壬秘本 72 条第二次无新证据具名未决。verified=false。"
   }
  },
  "by_file": {
@@ -150,7 +198,7 @@
    "entry-review-pending": 2
   },
   "yuqia-ji--shidian-NA09036.json": {
-   "entry-review-pending": 125,
+   "entry-review-pending": 87,
    "ledger-metadata": 55
   },
   "yuzhao-shenying--shidian-SK1602.json": {
@@ -10136,15 +10184,6 @@
   {
    "file": "yuqia-ji--shidian-NA09036.json",
    "bookSlug": "yuqia-ji",
-   "paragraphId": "yuqia-ji:shidian-NA09036:P7655682801630871603",
-   "kind": "术语",
-   "source_status": "reference-text",
-   "disposition": "entry-review-pending",
-   "action": "实质条目：待逐条语义审读（不批量升级）"
-  },
-  {
-   "file": "yuqia-ji--shidian-NA09036.json",
-   "bookSlug": "yuqia-ji",
    "paragraphId": "yuqia-ji:shidian-NA09036:P7655682801631199283",
    "kind": "术语",
    "source_status": "reference-text",
@@ -10271,24 +10310,6 @@
   {
    "file": "yuqia-ji--shidian-NA09036.json",
    "bookSlug": "yuqia-ji",
-   "paragraphId": "yuqia-ji:shidian-NA09036:P7655682811890106394",
-   "kind": "待核实",
-   "source_status": "reference-text",
-   "disposition": "entry-review-pending",
-   "action": "实质条目：待逐条语义审读（不批量升级）"
-  },
-  {
-   "file": "yuqia-ji--shidian-NA09036.json",
-   "bookSlug": "yuqia-ji",
-   "paragraphId": "yuqia-ji:shidian-NA09036:P7655682811890139162",
-   "kind": "待核实",
-   "source_status": "reference-text",
-   "disposition": "entry-review-pending",
-   "action": "实质条目：待逐条语义审读（不批量升级）"
-  },
-  {
-   "file": "yuqia-ji--shidian-NA09036.json",
-   "bookSlug": "yuqia-ji",
    "paragraphId": "yuqia-ji:shidian-NA09036:P7655682811890155546",
    "kind": "术语",
    "source_status": "reference-text",
@@ -10334,133 +10355,7 @@
   {
    "file": "yuqia-ji--shidian-NA09036.json",
    "bookSlug": "yuqia-ji",
-   "paragraphId": "yuqia-ji:shidian-NA09036:P7655682835168411657",
-   "kind": "术语",
-   "source_status": "reference-text",
-   "disposition": "entry-review-pending",
-   "action": "实质条目：待逐条语义审读（不批量升级）"
-  },
-  {
-   "file": "yuqia-ji--shidian-NA09036.json",
-   "bookSlug": "yuqia-ji",
    "paragraphId": "yuqia-ji:shidian-NA09036:P7655682835168460809",
-   "kind": "术语",
-   "source_status": "reference-text",
-   "disposition": "entry-review-pending",
-   "action": "实质条目：待逐条语义审读（不批量升级）"
-  },
-  {
-   "file": "yuqia-ji--shidian-NA09036.json",
-   "bookSlug": "yuqia-ji",
-   "paragraphId": "yuqia-ji:shidian-NA09036:P7655682835168509961",
-   "kind": "术语",
-   "source_status": "reference-text",
-   "disposition": "entry-review-pending",
-   "action": "实质条目：待逐条语义审读（不批量升级）"
-  },
-  {
-   "file": "yuqia-ji--shidian-NA09036.json",
-   "bookSlug": "yuqia-ji",
-   "paragraphId": "yuqia-ji:shidian-NA09036:P7655682835168559113",
-   "kind": "术语",
-   "source_status": "reference-text",
-   "disposition": "entry-review-pending",
-   "action": "实质条目：待逐条语义审读（不批量升级）"
-  },
-  {
-   "file": "yuqia-ji--shidian-NA09036.json",
-   "bookSlug": "yuqia-ji",
-   "paragraphId": "yuqia-ji:shidian-NA09036:P7655682835168608265",
-   "kind": "术语",
-   "source_status": "reference-text",
-   "disposition": "entry-review-pending",
-   "action": "实质条目：待逐条语义审读（不批量升级）"
-  },
-  {
-   "file": "yuqia-ji--shidian-NA09036.json",
-   "bookSlug": "yuqia-ji",
-   "paragraphId": "yuqia-ji:shidian-NA09036:P7655682835168657417",
-   "kind": "术语",
-   "source_status": "reference-text",
-   "disposition": "entry-review-pending",
-   "action": "实质条目：待逐条语义审读（不批量升级）"
-  },
-  {
-   "file": "yuqia-ji--shidian-NA09036.json",
-   "bookSlug": "yuqia-ji",
-   "paragraphId": "yuqia-ji:shidian-NA09036:P7655682835168739337",
-   "kind": "术语",
-   "source_status": "reference-text",
-   "disposition": "entry-review-pending",
-   "action": "实质条目：待逐条语义审读（不批量升级）"
-  },
-  {
-   "file": "yuqia-ji--shidian-NA09036.json",
-   "bookSlug": "yuqia-ji",
-   "paragraphId": "yuqia-ji:shidian-NA09036:P7655682835168952329",
-   "kind": "术语",
-   "source_status": "reference-text",
-   "disposition": "entry-review-pending",
-   "action": "实质条目：待逐条语义审读（不批量升级）"
-  },
-  {
-   "file": "yuqia-ji--shidian-NA09036.json",
-   "bookSlug": "yuqia-ji",
-   "paragraphId": "yuqia-ji:shidian-NA09036:P7655682835169460233",
-   "kind": "术语",
-   "source_status": "reference-text",
-   "disposition": "entry-review-pending",
-   "action": "实质条目：待逐条语义审读（不批量升级）"
-  },
-  {
-   "file": "yuqia-ji--shidian-NA09036.json",
-   "bookSlug": "yuqia-ji",
-   "paragraphId": "yuqia-ji:shidian-NA09036:P7655682835169509385",
-   "kind": "术语",
-   "source_status": "reference-text",
-   "disposition": "entry-review-pending",
-   "action": "实质条目：待逐条语义审读（不批量升级）"
-  },
-  {
-   "file": "yuqia-ji--shidian-NA09036.json",
-   "bookSlug": "yuqia-ji",
-   "paragraphId": "yuqia-ji:shidian-NA09036:P7655682835169558537",
-   "kind": "术语",
-   "source_status": "reference-text",
-   "disposition": "entry-review-pending",
-   "action": "实质条目：待逐条语义审读（不批量升级）"
-  },
-  {
-   "file": "yuqia-ji--shidian-NA09036.json",
-   "bookSlug": "yuqia-ji",
-   "paragraphId": "yuqia-ji:shidian-NA09036:P7655682835169656841",
-   "kind": "术语",
-   "source_status": "reference-text",
-   "disposition": "entry-review-pending",
-   "action": "实质条目：待逐条语义审读（不批量升级）"
-  },
-  {
-   "file": "yuqia-ji--shidian-NA09036.json",
-   "bookSlug": "yuqia-ji",
-   "paragraphId": "yuqia-ji:shidian-NA09036:P7655682835169705993",
-   "kind": "术语",
-   "source_status": "reference-text",
-   "disposition": "entry-review-pending",
-   "action": "实质条目：待逐条语义审读（不批量升级）"
-  },
-  {
-   "file": "yuqia-ji--shidian-NA09036.json",
-   "bookSlug": "yuqia-ji",
-   "paragraphId": "yuqia-ji:shidian-NA09036:P7655682835268780083",
-   "kind": "术语",
-   "source_status": "reference-text",
-   "disposition": "entry-review-pending",
-   "action": "实质条目：待逐条语义审读（不批量升级）"
-  },
-  {
-   "file": "yuqia-ji--shidian-NA09036.json",
-   "bookSlug": "yuqia-ji",
-   "paragraphId": "yuqia-ji:shidian-NA09036:P7655682835268829235",
    "kind": "术语",
    "source_status": "reference-text",
    "disposition": "entry-review-pending",
@@ -10515,15 +10410,6 @@
    "file": "yuqia-ji--shidian-NA09036.json",
    "bookSlug": "yuqia-ji",
    "paragraphId": "yuqia-ji:shidian-NA09036:P7655682841874825225",
-   "kind": "待核实",
-   "source_status": "reference-text",
-   "disposition": "entry-review-pending",
-   "action": "实质条目：待逐条语义审读（不批量升级）"
-  },
-  {
-   "file": "yuqia-ji--shidian-NA09036.json",
-   "bookSlug": "yuqia-ji",
-   "paragraphId": "yuqia-ji:shidian-NA09036:P7655682841874841609",
    "kind": "待核实",
    "source_status": "reference-text",
    "disposition": "entry-review-pending",
@@ -10703,106 +10589,7 @@
   {
    "file": "yuqia-ji--shidian-NA09036.json",
    "bookSlug": "yuqia-ji",
-   "paragraphId": "yuqia-ji:shidian-NA09036:P7655682857521037350",
-   "kind": "术语",
-   "source_status": "reference-text",
-   "disposition": "entry-review-pending",
-   "action": "实质条目：待逐条语义审读（不批量升级）"
-  },
-  {
-   "file": "yuqia-ji--shidian-NA09036.json",
-   "bookSlug": "yuqia-ji",
-   "paragraphId": "yuqia-ji:shidian-NA09036:P7655682857521053734",
-   "kind": "术语",
-   "source_status": "reference-text",
-   "disposition": "entry-review-pending",
-   "action": "实质条目：待逐条语义审读（不批量升级）"
-  },
-  {
-   "file": "yuqia-ji--shidian-NA09036.json",
-   "bookSlug": "yuqia-ji",
-   "paragraphId": "yuqia-ji:shidian-NA09036:P7655682857521070118",
-   "kind": "术语",
-   "source_status": "reference-text",
-   "disposition": "entry-review-pending",
-   "action": "实质条目：待逐条语义审读（不批量升级）"
-  },
-  {
-   "file": "yuqia-ji--shidian-NA09036.json",
-   "bookSlug": "yuqia-ji",
-   "paragraphId": "yuqia-ji:shidian-NA09036:P7655682857521086502",
-   "kind": "术语",
-   "source_status": "reference-text",
-   "disposition": "entry-review-pending",
-   "action": "实质条目：待逐条语义审读（不批量升级）"
-  },
-  {
-   "file": "yuqia-ji--shidian-NA09036.json",
-   "bookSlug": "yuqia-ji",
    "paragraphId": "yuqia-ji:shidian-NA09036:P7655682857521102886",
-   "kind": "术语",
-   "source_status": "reference-text",
-   "disposition": "entry-review-pending",
-   "action": "实质条目：待逐条语义审读（不批量升级）"
-  },
-  {
-   "file": "yuqia-ji--shidian-NA09036.json",
-   "bookSlug": "yuqia-ji",
-   "paragraphId": "yuqia-ji:shidian-NA09036:P7655682857521119270",
-   "kind": "术语",
-   "source_status": "reference-text",
-   "disposition": "entry-review-pending",
-   "action": "实质条目：待逐条语义审读（不批量升级）"
-  },
-  {
-   "file": "yuqia-ji--shidian-NA09036.json",
-   "bookSlug": "yuqia-ji",
-   "paragraphId": "yuqia-ji:shidian-NA09036:P7655682857521135654",
-   "kind": "术语",
-   "source_status": "reference-text",
-   "disposition": "entry-review-pending",
-   "action": "实质条目：待逐条语义审读（不批量升级）"
-  },
-  {
-   "file": "yuqia-ji--shidian-NA09036.json",
-   "bookSlug": "yuqia-ji",
-   "paragraphId": "yuqia-ji:shidian-NA09036:P7655682857521152038",
-   "kind": "术语",
-   "source_status": "reference-text",
-   "disposition": "entry-review-pending",
-   "action": "实质条目：待逐条语义审读（不批量升级）"
-  },
-  {
-   "file": "yuqia-ji--shidian-NA09036.json",
-   "bookSlug": "yuqia-ji",
-   "paragraphId": "yuqia-ji:shidian-NA09036:P7655682857521168422",
-   "kind": "术语",
-   "source_status": "reference-text",
-   "disposition": "entry-review-pending",
-   "action": "实质条目：待逐条语义审读（不批量升级）"
-  },
-  {
-   "file": "yuqia-ji--shidian-NA09036.json",
-   "bookSlug": "yuqia-ji",
-   "paragraphId": "yuqia-ji:shidian-NA09036:P7655682857574072358",
-   "kind": "术语",
-   "source_status": "reference-text",
-   "disposition": "entry-review-pending",
-   "action": "实质条目：待逐条语义审读（不批量升级）"
-  },
-  {
-   "file": "yuqia-ji--shidian-NA09036.json",
-   "bookSlug": "yuqia-ji",
-   "paragraphId": "yuqia-ji:shidian-NA09036:P7655682857574088742",
-   "kind": "术语",
-   "source_status": "reference-text",
-   "disposition": "entry-review-pending",
-   "action": "实质条目：待逐条语义审读（不批量升级）"
-  },
-  {
-   "file": "yuqia-ji--shidian-NA09036.json",
-   "bookSlug": "yuqia-ji",
-   "paragraphId": "yuqia-ji:shidian-NA09036:P7655682857575579686",
    "kind": "术语",
    "source_status": "reference-text",
    "disposition": "entry-review-pending",
@@ -10820,53 +10607,8 @@
   {
    "file": "yuqia-ji--shidian-NA09036.json",
    "bookSlug": "yuqia-ji",
-   "paragraphId": "yuqia-ji:shidian-NA09036:P7655682857632940059",
-   "kind": "术语",
-   "source_status": "reference-text",
-   "disposition": "entry-review-pending",
-   "action": "实质条目：待逐条语义审读（不批量升级）"
-  },
-  {
-   "file": "yuqia-ji--shidian-NA09036.json",
-   "bookSlug": "yuqia-ji",
-   "paragraphId": "yuqia-ji:shidian-NA09036:P7655682857632972827",
-   "kind": "术语",
-   "source_status": "reference-text",
-   "disposition": "entry-review-pending",
-   "action": "实质条目：待逐条语义审读（不批量升级）"
-  },
-  {
-   "file": "yuqia-ji--shidian-NA09036.json",
-   "bookSlug": "yuqia-ji",
    "paragraphId": "yuqia-ji:shidian-NA09036:P7655682857632989211",
    "kind": "操作步骤",
-   "source_status": "reference-text",
-   "disposition": "entry-review-pending",
-   "action": "实质条目：待逐条语义审读（不批量升级）"
-  },
-  {
-   "file": "yuqia-ji--shidian-NA09036.json",
-   "bookSlug": "yuqia-ji",
-   "paragraphId": "yuqia-ji:shidian-NA09036:P7655682857633005595",
-   "kind": "术语",
-   "source_status": "reference-text",
-   "disposition": "entry-review-pending",
-   "action": "实质条目：待逐条语义审读（不批量升级）"
-  },
-  {
-   "file": "yuqia-ji--shidian-NA09036.json",
-   "bookSlug": "yuqia-ji",
-   "paragraphId": "yuqia-ji:shidian-NA09036:P7655682857633038363",
-   "kind": "术语",
-   "source_status": "reference-text",
-   "disposition": "entry-review-pending",
-   "action": "实质条目：待逐条语义审读（不批量升级）"
-  },
-  {
-   "file": "yuqia-ji--shidian-NA09036.json",
-   "bookSlug": "yuqia-ji",
-   "paragraphId": "yuqia-ji:shidian-NA09036:P7655682857633923099",
-   "kind": "术语",
    "source_status": "reference-text",
    "disposition": "entry-review-pending",
    "action": "实质条目：待逐条语义审读（不批量升级）"
@@ -10892,35 +10634,8 @@
   {
    "file": "yuqia-ji--shidian-NA09036.json",
    "bookSlug": "yuqia-ji",
-   "paragraphId": "yuqia-ji:shidian-NA09036:P7655682857633972251",
-   "kind": "术语",
-   "source_status": "reference-text",
-   "disposition": "entry-review-pending",
-   "action": "实质条目：待逐条语义审读（不批量升级）"
-  },
-  {
-   "file": "yuqia-ji--shidian-NA09036.json",
-   "bookSlug": "yuqia-ji",
-   "paragraphId": "yuqia-ji:shidian-NA09036:P7655682857634005019",
-   "kind": "术语",
-   "source_status": "reference-text",
-   "disposition": "entry-review-pending",
-   "action": "实质条目：待逐条语义审读（不批量升级）"
-  },
-  {
-   "file": "yuqia-ji--shidian-NA09036.json",
-   "bookSlug": "yuqia-ji",
    "paragraphId": "yuqia-ji:shidian-NA09036:P7655682857701163046",
    "kind": "操作步骤",
-   "source_status": "reference-text",
-   "disposition": "entry-review-pending",
-   "action": "实质条目：待逐条语义审读（不批量升级）"
-  },
-  {
-   "file": "yuqia-ji--shidian-NA09036.json",
-   "bookSlug": "yuqia-ji",
-   "paragraphId": "yuqia-ji:shidian-NA09036:P7655682857701179430",
-   "kind": "术语",
    "source_status": "reference-text",
    "disposition": "entry-review-pending",
    "action": "实质条目：待逐条语义审读（不批量升级）"
@@ -11145,15 +10860,6 @@
    "file": "yuqia-ji--shidian-NA09036.json",
    "bookSlug": "yuqia-ji",
    "paragraphId": "yuqia-ji:shidian-NA09036:P7662305212744876032",
-   "kind": "待核实",
-   "source_status": "reference-text",
-   "disposition": "entry-review-pending",
-   "action": "实质条目：待逐条语义审读（不批量升级）"
-  },
-  {
-   "file": "yuqia-ji--shidian-NA09036.json",
-   "bookSlug": "yuqia-ji",
-   "paragraphId": "yuqia-ji:shidian-NA09036:P7662305212744892416",
    "kind": "待核实",
    "source_status": "reference-text",
    "disposition": "entry-review-pending",
