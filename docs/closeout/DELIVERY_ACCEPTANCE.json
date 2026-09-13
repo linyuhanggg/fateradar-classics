@@ -1,6 +1,6 @@
 {
   "schema": "fateradar-delivery-acceptance-v1",
-  "generated_at": "2026-09-13T03:15:00Z",
+  "generated_at": "2026-09-13T03:25:00Z",
   "generated_by": "DSH captain（本会话 goal round 1/256）",
   "authority": "classics:docs/FATERADAR_FULL_LIBRARY_PLAN.md（含 2026-09-13 收尾执行修订）",
   "purpose": "唯一收尾状态账本：逐项对应权威方案「总验收与完成条件」1–8。引用既有矩阵与报告，不新造重复指标。",
@@ -335,7 +335,7 @@
         },
         {
           "path": "product:docs/implementation/ART-VERDICT-SOURCE-CASE-RECONCILIATION.md#第二批（algo-impl t6，未提交）",
-          "shows": "逐条人读断语对账 27 条：六爻 13（盘面 21/34 字段全一致；按断语所指对象显式取用后逐条给出候选与优先：11 相符、2 部分相符、1 具名限制）＋梅花 2（起卦算式与卦形 7/7 相符）＋奇门 5（4 一致、1 来源冲突）＋八字 7（满足/不满足/信息不足三态都出现；3 处口径差异或「座次≠用例」已具名）",
+          "shows": "逐条人读断语对账 28 条：六爻 14（盘面 21/34 字段全一致；按断语所指对象显式取用后逐条给出候选与优先：11 相符、2 部分相符、1 具名限制；其中 ZS-LY-L0393 原文缺日干支/月建，只在结构层复算）＋梅花 2（起卦算式与卦形 7/7 相符）＋奇门 5（4 一致、1 来源冲突）＋八字 7（满足/不满足/信息不足三态都出现；3 处口径差异或「座次≠用例」已具名）",
           "kind": "human-read-reconciliation（本轮）"
         },
         {
@@ -357,7 +357,7 @@
           "blocks": "A5 working→pass（主要缺口：覆盖率仍低，且证据链只到机械层）"
         },
         {
-          "item": "人读断语对账由 10 条扩到 37 条（本批 +27：六爻 13/梅花 2/奇门 5/八字 7）；仍需扩面到各术主要能力样本（奇门 1,919 条结构化案例只做了 5 条断语级对账 ＋ 全量机械复算）",
+          "item": "人读断语对账由 10 条扩到 38 条（本批 +28：六爻 14/梅花 2/奇门 5/八字 7）；仍需扩面到各术主要能力样本（奇门 1,919 条结构化案例只做了 5 条断语级对账 ＋ 全量机械复算）",
           "kind": "implementation-gap",
           "scope": "product:docs/implementation/ART-VERDICT-SOURCE-CASE-RECONCILIATION.md",
           "blocks": "A5"
@@ -515,6 +515,11 @@
         {
           "path": "classics:references/executable/sanming-tonghui.json#named_gaps（提交 d383143）",
           "shows": "12 条具名登记，逐条带 claim_checked / finding / occurrences / lines_with_term / evidence[段落ID+行区间+逐字引文]；captain 已独立复跑 tools/test-validate-executable.py=22 OK、tools/validate-executable.py=OK(15 packages,258 rules,579 spans,12 named gaps)、tools/validate-rules.py=OK(55 files,285 warnings)",
+          "kind": "captain-reverified-now"
+        },
+        {
+          "path": "captain 实测：git show c45dfdb:<file> vs 工作树（A7 候选 d383143）的 rule id 集合比对 + product WIRED_DEFINITION_IDS 检索",
+          "shows": "跨仓 id 一致性核对通过：references/executable/sanming-tonghui.json id 集合 20→20（removed=[] added=[]）、ziping-zhenquan.json 39→39（removed=[] added=[]）——A7 只新增 named_gaps 字段，未改任何 id；product/src/engine/art-verdict-definition-ids.ts 仍引用这些 id（SMTH-E-04/06/09/10、ZPR-E-06 等共 20 处匹配）。另 captain 独立复跑三个校验器：test-validate-executable.py 22 OK、validate-executable.py OK(258 rules/579 spans/12 named gaps)、validate-rules.py OK(55 files/285 warnings)",
           "kind": "captain-reverified-now"
         }
       ],
