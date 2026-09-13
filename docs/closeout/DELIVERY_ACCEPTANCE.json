@@ -1,6 +1,6 @@
 {
   "schema": "fateradar-delivery-acceptance-v1",
-  "generated_at": "2026-09-13T02:20:00Z",
+  "generated_at": "2026-09-13T02:22:00Z",
   "generated_by": "DSH captain（本会话 goal round 1/256）",
   "authority": "classics:docs/FATERADAR_FULL_LIBRARY_PLAN.md（含 2026-09-13 收尾执行修订）",
   "purpose": "唯一收尾状态账本：逐项对应权威方案「总验收与完成条件」1–8。引用既有矩阵与报告，不新造重复指标。",
@@ -219,6 +219,11 @@
           "path": "classics:docs/closeout/review/art-verdict-judgment-gap-matrix-REGEN-20260913.json",
           "shows": "reviewer 用镜像法（rsync + git show md5 证明 271 个 tracked 输入与 HEAD 230effd 逐字节相同）独立重跑：252 行、static_parse_matches_runtime=true、coverage_index_missing=0、ids_without_probe=[]、418 断言/28 文件、0 无归因、0 探针不符",
           "kind": "independent-verification"
+        },
+        {
+          "path": "classics:docs/closeout/review/art-verdict-judgment-gap-matrix-REGEN-20260913.json vs product:docs/implementation/art-verdict-judgment-gap-matrix.json",
+          "shows": "captain 逐行逐字段比对：252 行、全部字段 0 处不同（reviewer 独立镜像重生成 generated_at=02:04:04Z vs captain 重生成 02:17:01Z）。即 A3 矩阵结论由两次独立重生成相互印证；reviewer 报告中「已提交矩阵仍过期（68 行 classicsRescue + 2 行 unknown_when）」指的是其开始复核时仓内的旧矩阵，已被 00e98fc 的重生成取代",
+          "kind": "cross-check-identical"
         }
       ],
       "remaining": [
@@ -227,12 +232,6 @@
           "kind": "implementation-gap",
           "scope": "geju.execution / bazi-evidence 消费者",
           "blocks": "A3 working→pass"
-        },
-        {
-          "item": "已提交矩阵仍有 68 行 classicsRescue + 2 行 unknown_when 是旧快照（判定性字段不变）；reviewer 重生成产物已归档，可直接采用，不必再跑",
-          "kind": "evidence-or-semantics-uncertainty",
-          "scope": "product:docs/implementation/art-verdict-judgment-gap-matrix.json",
-          "blocks": "A3 证据字段时效（不影响判定性结论）"
         }
       ],
       "owner": "algo-impl（算法实现）",
