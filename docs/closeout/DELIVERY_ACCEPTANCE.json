@@ -709,6 +709,11 @@
           "path": "product:docs/implementation/A8-CONTENT-REVISION-PIN-AUDIT.md（algo-impl，悬空引用已补齐）+ captain 独立扩样核对",
           "shows": "①悬空引用已解决：审计文档已建成，含「哪 7 份产物 / 每个锚点两处行区间比对 / 判定口径」与 578/578 一致 0 漂移的逐产物表；②生成器已加固：新增 `FATERADAR_CLASSICS_ROOT` 快照覆盖 + **脏树拒绝**（references/executable 有未提交改动即抛错，直接针对复核点名的「在带在途改动的树上生成却声称等于某 commit」风险）；快照用 git clone --shared + sparse-checkout，并对 15 个 JSON 逐个做「磁盘 md5 vs git show md5」= 15/15 相同；③captain 独立扩样：自核 489/578 锚点（bazi-anchor 362、liuren 82、ziwei 21、reading-notes 12、qimen 12），全部 **0 行漂移、0 引文不符**——与成员 578/578 结论一致（余 liuyao 81、qizheng 8 未自核）；④同批还修掉同类「戳记过期」：tiaohou-profiles（除 revision 外逐字节相同）、VERSION_MAP.generated_pins.tiaohou，并重跑 art-verdict-consumer-points（probed 52/appeared 50/notProbed 4 与改前相同）",
           "kind": "captain-reverified-now + member-approved"
+        },
+        {
+          "path": "product:docs/implementation/A8-CONTENT-REVISION-PIN-AUDIT.md §4b/§4c（algo-impl t9 补）",
+          "shows": "①54 条差异的性质分类（逐条机械核过）：新增片段 54（每条各 +1）、删除片段 0、片段改写 0、坐标漂移 0；54 条新增片段的 quote 在 c45dfdb4 上逐字命中（54/54），且「被删而仍能在 main 命中」的旧片段 0 条 → 54/54 属「导出该更新」，0 条属产品实现/导出与 classics 不一致。根因有 commit 对应：classics 6ef9ac8「rules(qtb): 救应句出处补齐——54 条处置落地，来源 525→579」，是旧导出钉 df73f232 的后代；同区间另三笔调候提交只改 rescue/unknown_when 等本索引不导出的字段，故不产生片段差异。实例 QTB-M-01-03 新增 qiongtong-baojian:L0093-L0093「…若有壬癸破火，堪作秀才。」②CLASSICS_REV/CI 决策记录（含替代方案与回退）：前移理由——CLASSICS_REV 自身定义＝导出所用 commit，同时供 public 行号链接与神煞 revision 使用；本批既已按 main 重导出 bazi 索引，pin 不动会造成「产物 revision=c45dfdb4、而链接指向 3dc9d01」的溯源错位。前移安全性已证：578 锚点 0 漂移、神煞 4 锚点在 3dc9d01/eb4cabe/c45dfdb4 三处同文、钉定位测试在新钉下通过、CI 仍为固定 SHA 且 ref 与 CLASSICS_REV 逐字相同（避免 fetch-depth 1 读不到对象）。替代方案＝保持 3dc9d01 而只让产物带自身 revision（溯源仍可验证，代价是需固定解释两者不同）；回退只需改两行。③复核命令与原始结果：vitest run（shensha-source-link / reading-input-export-link / c-export-provenance-version-seven-arts / c-export-readback-seven-arts / bazi-source-rule-ids）→ 5 files / 60 tests passed，含「钉死古籍仓可用：五术生成文件的 204 条片段逐行对得上」；tsc --noEmit 通过",
+          "kind": "fix-record + decision-memo（本轮）"
         }
       ],
       "remaining": [
