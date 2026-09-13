@@ -1,6 +1,6 @@
 {
   "schema": "fateradar-delivery-acceptance-v1",
-  "generated_at": "2026-09-13T08:35:00Z",
+  "generated_at": "2026-09-13T08:45:00Z",
   "generated_by": "DSH captain（本会话 goal round 1/256）",
   "authority": "classics:docs/FATERADAR_FULL_LIBRARY_PLAN.md（含 2026-09-13 收尾执行修订）",
   "purpose": "唯一收尾状态账本：逐项对应权威方案「总验收与完成条件」1–8。引用既有矩阵与报告，不新造重复指标。",
@@ -856,6 +856,11 @@
           "path": "captain 集成记录：classics `fe76a0b` → **`5cc8b8b`**（fast-forward，25 个提交）",
           "shows": "**集成内容与各自的验证状态**（为什么可以在 A1 复核结论之前合）：①**docs/ledger**（`DELIVERY_ACCEPTANCE.json`、`FINAL-DELIVERY-REPORT.md`、`CAPTAIN-*.md`、审查产物与证据文件）——captain 自写自核，无运行时风险；②**A7 `named_gaps` 规则数据**（`sanming-tonghui.json`/`ziping-zhenquan.json` 等）——captain 实测 **rule id 集合 20→20、39→39 无增删**，且 `validate-executable`/`test-validate-executable`(27)/`validate-annotations`(62,839/0 errors)/`validate-rules`(285 既有 warning) 全绿；③**奇门措辞统一（上游 595 处 + 再生产物）**——`git diff --cached --stat` 为 **589/589 纯替换**，captain 另用脚本证明**非文本字段 0 处差异**（值未动）；④派生：`source-cases.json` 再生（ids 3,568 相等、值 0 差异）。**门禁**：classics main 的 CI（validate-rules）在 `5cc8b8b` 上运行中——它本身就是数据侧的机械闸门。**流程说明（如实）**：reviewer-2 的 t22（A1 可否判 pass + 复核 captain 改动）尚未出结论。本批大部分是文档/已机械验证的数据改动，为免分支长期领先造成漂移，captain 选择先合入并由 CI 把关；**t22 的结论若发现问题，按 fix-forward 在本任务内修正**（生产未部署，回退面清楚）。product 侧不变：`f030441`（A6 批次，CI success）；A5/A8 候选仍留在分支等 t15/t18。",
           "kind": "captain-integration-note"
+        },
+        {
+          "path": "captain 实测 gh run list（round 50）",
+          "shows": "**classics main 连续三次 CI success**：`5cc8b8b`（25 提交集成后的首个 main SHA）**success**、`e00c80f`（集成说明）**success**、`12009f9`（A2 批次落地）**success** —— 即本轮合入 main 的**A7 named_gaps 数据 + 奇门措辞统一（上游 595 处）+ A1 文档 + 账本**全部通过数据侧机械闸门（validate-rules）。product main 仍为 `f030441`（A6 批次，CI success，含 playwright e2e）。→ A8 的「两仓通过各自必要检查」在**当前两个 main SHA 上均为实测绿**；剩余仍是 A5/A8 候选的独立复核门（t15/t18）与页面侧收口",
+          "kind": "captain-reverified-now"
         }
       ],
       "remaining": [
