@@ -15,7 +15,30 @@
 | 未合 main 的分支成果 | classics 分支领先 main 1 个账本提交；product 分支领先 main 1 个矩阵提交 + **A6 批次未提交**（等 reviewer t8 审查门） | `git rev-list --count origin/main..HEAD` |
 | 生产部署 | **未部署**（合入 main ≠ 已部署；部署另等用户授权） | — |
 
-## 1. 可用入口与使用方式（待填）
+## 1. 可用入口与使用方式（2026-09-13 实测填写；浏览器侧以仓库自带 e2e 为证）
+
+### 1.1 本地运行入口
+
+| 用途 | 命令 / 入口 | 说明 |
+|---|---|---|
+| 开发预览 | `cd product && bun run dev`（Vite） | 默认端口见 `vite.config.ts`；**注意 3210/4173/5186 历史上被占用或用户在用**，起服务前先确认 |
+| 生产构建预览 | `FATERADAR_TARGET=node bun run build` → `node .output/server/index.mjs` | 另有 `bun run build:worker`（`dist/worker.mjs`） |
+| **端到端验收（推荐）** | `bun tests/e2e/prepare.ts` → `FATERADAR_TARGET=node bun run build` → `bun run build:worker` → `npx playwright test` | 仓库自带 Playwright 配置会**自行起 webServer 到 4173**（`tests/e2e/start-server.sh`），无需另起 dev server；缺前置产物会 `Process from config.webServer exited early` |
+| CI 侧 | product CI 的 19 步里已包含上述 prepare/build/build:worker + playwright | 当前 main `f030441` CI **success**（含 e2e） |
+
+### 1.2 免费解释与导出（机器已验的部分）
+
+- **无需登录即可用**：e2e spec `reading-export-eight-arts.spec.ts` 的用例即「**guest export round-trips all eight arts without login**」——CI 在 `f030441` 上通过。
+- **导出与版本钉**：`reading-export.spec.ts` 验「guest export round-trips inputs, **provenance and version pins** without login」。
+- **选位/时制/岁运同步**：`reading-sync-acceptance.spec.ts` 逐术验「换位置后页面解释与导出 `focusPosition`/points 同步变化」「时制口径行与 `input.timeBasis` 一致」「切大运后盘面与导出同步变化」。
+- **运限层**：`transit-chart.spec.ts` 含「**Ziwei transit guides follow each scope**」。
+- **导出文件名口径（A6 批次起）**：紫微导出 token 增第 4 段「运限层」，文件名随之多一段（`@`→`-`），例：`fateradar-ziwei-命宫-2024-06-01-12.json` → `…-12-流年.json`；**旧 3 段 token 仍可解析**，但按本命层重建（语义变化，见 §3 的 A6 (e) 条）。
+- **生时反推**：**不参与首屏**；无独立标注集时只交付候选比较能力，**不声称排序准确率**。
+
+### 1.3 仍待实测/补齐（不写成已验）
+
+- 八术**逐栏目**的浏览器覆盖清单（哪些栏目未被现有 e2e 覆盖）——**待 page-acceptance 产出**（任务 t4，已把要求降到「纯读 spec 也能交」）；
+- **六爻点开一爻后出处块是否仍有古籍锚点**：现有 e2e **未断言**（只断言「选位→导出入口 testid 同步」）；该条由单测覆盖（47/47），浏览器层缺口已具名登记在账本 A6。
 
 - 产品预览入口：待填（须在**最新 main** 上实测后写入，并注明端口、实测日期、实测人）。
 - 免费解释是否需要登录/付款/AI：待 page-acceptance 在最新 main 实测（t4）后填。已知设计口径：免费解释由已审读内容 + 确定性事实组装，不依赖模型服务（见 `product/docs/FREE_READING_V1.md`）。
