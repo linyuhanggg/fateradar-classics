@@ -50,7 +50,14 @@ def validate_condition(condition: dict, where: str) -> None:
         if "".join(condition.get("pair", [])) not in {"甲己", "己甲", "乙庚", "庚乙", "丙辛", "辛丙", "丁壬", "壬丁", "戊癸", "癸戊"}:
             raise ValueError(f"{where}: 不是当前支持的五合对")
     elif kind == "term-phase":
-        if condition.get("term") not in {"谷雨", "夏至", "秋分", "冬至"} or condition.get("phase") not in {"before", "after"}:
+        # 十二个月的中气（与引擎 src/lib/engine/bazi/tiaohou-source.ts 的 MID_TERMS 表一一对应；
+        # 原先只放行四个季节枢纽，导致其余各月的「上半月／下半月」无法表达）。
+        mid_terms = {
+            "立春", "雨水", "惊蛰", "春分", "清明", "谷雨", "立夏", "小满", "芒种", "夏至",
+            "小暑", "大暑", "立秋", "处暑", "白露", "秋分", "寒露", "霜降", "立冬", "小雪",
+            "大雪", "冬至", "小寒", "大寒",
+        }
+        if condition.get("term") not in mid_terms or condition.get("phase") not in {"before", "after"}:
             raise ValueError(f"{where}: 精确中气条件无效")
     elif kind != "unknown" and kind != "branches":
         raise ValueError(f"{where}: 未实现的条件类型 {kind}")
