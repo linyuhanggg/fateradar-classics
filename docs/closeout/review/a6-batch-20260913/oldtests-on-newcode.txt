@@ -1,0 +1,92 @@
+
+ RUN  v4.1.11 /private/tmp/rev/a6-wt
+
+ ❯ tests/engine/c-export-readback-seven-arts.test.ts (20 tests | 1 failed) 499ms
+     ✓ 七术都能产出导出产物（每术至少一条带事实的解释点，且不是信息不足占位） 51ms
+     ✓ 紫微：命宫本盘事实真实，换时辰即变；文件回读重建同一批事实 55ms
+     × 紫微浏览日：focusPosition 自带日期时刻，回读后重建的是同一张流日盘 67ms
+     ✓ 奇门：真实局/宫事实，换时辰局与落宫即变；回读重建同一批事实 3ms
+     ✓ 六壬：真实课体与三传事实，换传到即变；回读重建同一批事实 3ms
+     ✓ 六爻：卦体来自 focusPosition 的 gua token，本卦/变卦事实真实；回读重建同一卦 6ms
+     ✓ 梅花：体用与卦名事实真实，换选卦即变；回读重建同一卦 3ms
+     ✓ 小六壬：三宫落点事实真实，换选宫即变；回读重建同一课 5ms
+     ✓ 七政：命宫与日月黄经事实真实，换宫即变；回读重建同一宫 2ms
+     ✓ 八术页面都挂了导出按钮（各 route 传自己的 focusArt） 4ms
+     ✓ 回读接口已实现，但没有任何产品侧消费方（无导入入口）· 记录 gap 131ms
+     ✓ 六爻缺卦体或卦体非法 → 已解释的信息不足点，不拿演示卦冒充 1ms
+     ✓ 出生年非法（空串/0）时六术一律收口为已解释的信息不足点（原 gap 已修） 1ms
+     ✓ 六爻无卦体时即使出生年非法也走已解释的信息不足点（先于历法） 0ms
+     ✓ 七政出生年为空/0 时不再静默按 1900 排盘，改为信息不足点（原 gap 已修） 2ms
+     ✓ 奇门/七政/小六壬选位不存在 → 各自的 missing 点，不是静默回到总览 3ms
+     ✓ 紫微宫位名不存在 → 按信息不足点收口，与其余六术一致（原 gap 已修） 31ms
+     ✓ 六壬/梅花焦点 token 非法 → 静默回落且文件 focusPosition 与实际内容不一致 · 记录 gap 2ms
+     ✓ 空出生时被静默当子时排盘，且写出的文件自己的读回接口拒绝 · 记录 gap 97ms
+     ✓ 七术报告回读再序列化**字节稳定**（键序已对齐，原 gap 已闭合） 31ms
+ ❯ tests/engine/reading-input-export-link.test.ts (16 tests | 1 failed) 210ms
+     ✓ 钉死基线 SHA，且八字时辰变化时 usedFacts 随之更新 22ms
+     ✓ 紫微选位变化时 paragraphIds / usedFacts 随之更新 43ms
+     ✓ 生时变化会改变同宫位紫微投影事实（输入盘联动） 31ms
+     ✓ 事实不足标未知，不默成立、不编造吉凶 18ms
+     ✓ 导出 JSON 含规则版本与输入摘要，可再读回 19ms
+     × 紫微导出走浏览日期，命宫@本命日 与 命宫@流年 读回不同 46ms
+     ✓ 奇门导出可再打开，换时正文事实不同 5ms
+     ✓ 奇门换宫导出可再打开，宫位 usedFacts 不同 2ms
+     ✓ 六爻缺少爻象时导出信息不足，不拿演示卦冒充 0ms
+     ✓ 六爻焦点带卦体时可按生辰日柱装卦再打开，缺卦体仍信息不足 6ms
+     ✓ 六爻用本卦 points 导出可再打开，不冒充生辰排卦 1ms
+     ✓ 小六壬用本课 points 导出可再打开，换宫正文不同，不拿生辰冒充落点 2ms
+     ✓ 七政换宫或换星导出可再打开，正文事实不同 4ms
+     ✓ 梅花用本卦 points 导出可再打开，换卦正文不同，仅生辰仍信息不足 2ms
+     ✓ 六壬总览与所选传/课导出可再打开，索引不同则事实不同 5ms
+     ✓ 生辰接口也能解析六壬 kind-index 与七政 宫:星，不退回总览 4ms
+ ❯ tests/engine/ziwei-viewdate-free-reading.test.ts (1 test | 1 failed) 63ms
+     × 本命日与另一流年叠宫正文不同 63ms
+
+⎯⎯⎯⎯⎯⎯⎯ Failed Tests 3 ⎯⎯⎯⎯⎯⎯⎯
+
+ FAIL  tests/engine/c-export-readback-seven-arts.test.ts > C-EXPORT-READBACK 七术导出回读（真实执行） > 紫微浏览日：focusPosition 自带日期时刻，回读后重建的是同一张流日盘
+AssertionError: expected [ '宫位=事业', '地支=戌', '天干=甲', …(43) ] to not deeply equal [ '宫位=事业', '地支=戌', '天干=甲', …(43) ]
+
+Compared values have no visual difference.
+
+ ❯ tests/engine/c-export-readback-seven-arts.test.ts:378:32
+    376|       palace: "事业",
+    377|     }).points;
+    378|     expect(factsOf(other)).not.toEqual(facts);
+       |                                ^
+    379|   });
+    380|
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/3]⎯
+
+ FAIL  tests/engine/reading-input-export-link.test.ts > 同 head 实际输入/选位联动与报告导出 (MING-323) > 紫微导出走浏览日期，命宫@本命日 与 命宫@流年 读回不同
+AssertionError: expected '宫位=命宫|地支=午|天干=庚|主星=空宫|本命四化=无|命宫=是|身宫=…' not to be '宫位=命宫|地支=午|天干=庚|主星=空宫|本命四化=无|命宫=是|身宫=…' // Object.is equality
+ ❯ tests/engine/reading-input-export-link.test.ts:200:68
+    198|     expect(natal.points.length).toBeGreaterThan(0);
+    199|     expect(later.points.length).toBeGreaterThan(0);
+    200|     expect(natal.points.flatMap((p) => p.usedFacts).join("|")).not.toB…
+       |                                                                    ^
+    201|       later.points.flatMap((p) => p.usedFacts).join("|"),
+    202|     );
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[2/3]⎯
+
+ FAIL  tests/engine/ziwei-viewdate-free-reading.test.ts > 紫微浏览日期改写当前宫运限解释 > 本命日与另一流年叠宫正文不同
+AssertionError: expected '命宫在庚午，主星空宫。四化无本命四化标记。空宫或单颗星都不是吉凶分数。|本…' not to be '命宫在庚午，主星空宫。四化无本命四化标记。空宫或单颗星都不是吉凶分数。|本…' // Object.is equality
+ ❯ tests/engine/ziwei-viewdate-free-reading.test.ts:25:44
+     23|     const natal = buildZiweiFreeReading(buildZiwei(subject, "1990-01-2…
+     24|     const later = buildZiweiFreeReading(buildZiwei(subject, "2024-01-2…
+     25|     expect(natal.paragraphs.join("|")).not.toBe(later.paragraphs.join(…
+       |                                            ^
+     26|     expect(later.paragraphs.join("")).toMatch(/运限|流曜|四化/);
+     27|   });
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[3/3]⎯
+
+
+ Test Files  3 failed (3)
+      Tests  3 failed | 34 passed (37)
+   Start at  10:26:43
+   Duration  1.91s (transform 651ms, setup 0ms, import 952ms, tests 771ms, environment 0ms)
+
+exit=1

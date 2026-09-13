@@ -1,0 +1,251 @@
+
+ RUN  v4.1.11 /private/tmp/rev/a6-head
+
+ ❯ tests/engine/c-export-readback-seven-arts.test.ts (20 tests | 1 failed) 443ms
+     ✓ 七术都能产出导出产物（每术至少一条带事实的解释点，且不是信息不足占位） 50ms
+     ✓ 紫微：命宫本盘事实真实，换时辰即变；文件回读重建同一批事实 52ms
+     × 紫微浏览日：focusPosition 自带日期时刻与运限层，回读后重建的是同一批事实 24ms
+     ✓ 奇门：真实局/宫事实，换时辰局与落宫即变；回读重建同一批事实 3ms
+     ✓ 六壬：真实课体与三传事实，换传到即变；回读重建同一批事实 3ms
+     ✓ 六爻：卦体来自 focusPosition 的 gua token，本卦/变卦事实真实；回读重建同一卦 5ms
+     ✓ 梅花：体用与卦名事实真实，换选卦即变；回读重建同一卦 4ms
+     ✓ 小六壬：三宫落点事实真实，换选宫即变；回读重建同一课 5ms
+     ✓ 七政：命宫与日月黄经事实真实，换宫即变；回读重建同一宫 2ms
+     ✓ 八术页面都挂了导出按钮（各 route 传自己的 focusArt） 6ms
+     ✓ 回读接口已实现，但没有任何产品侧消费方（无导入入口）· 记录 gap 118ms
+     ✓ 六爻缺卦体或卦体非法 → 已解释的信息不足点，不拿演示卦冒充 1ms
+     ✓ 出生年非法（空串/0）时六术一律收口为已解释的信息不足点（原 gap 已修） 1ms
+     ✓ 六爻无卦体时即使出生年非法也走已解释的信息不足点（先于历法） 0ms
+     ✓ 七政出生年为空/0 时不再静默按 1900 排盘，改为信息不足点（原 gap 已修） 2ms
+     ✓ 奇门/七政/小六壬选位不存在 → 各自的 missing 点，不是静默回到总览 3ms
+     ✓ 紫微宫位名不存在 → 按信息不足点收口，与其余六术一致（原 gap 已修） 32ms
+     ✓ 六壬/梅花焦点 token 非法 → 静默回落且文件 focusPosition 与实际内容不一致 · 记录 gap 2ms
+     ✓ 空出生时被静默当子时排盘，且写出的文件自己的读回接口拒绝 · 记录 gap 100ms
+     ✓ 七术报告回读再序列化**字节稳定**（键序已对齐，原 gap 已闭合） 29ms
+ ❯ tests/engine/reading-input-export-link.test.ts (16 tests | 1 failed) 214ms
+     ✓ 钉死基线 SHA，且八字时辰变化时 usedFacts 随之更新 21ms
+     ✓ 紫微选位变化时 paragraphIds / usedFacts 随之更新 43ms
+     ✓ 生时变化会改变同宫位紫微投影事实（输入盘联动） 32ms
+     ✓ 事实不足标未知，不默成立、不编造吉凶 20ms
+     ✓ 导出 JSON 含规则版本与输入摘要，可再读回 21ms
+     × 紫微导出走浏览日期与所写运限层，命宫@本命日 与 命宫@流年 读回不同 48ms
+     ✓ 奇门导出可再打开，换时正文事实不同 5ms
+     ✓ 奇门换宫导出可再打开，宫位 usedFacts 不同 2ms
+     ✓ 六爻缺少爻象时导出信息不足，不拿演示卦冒充 0ms
+     ✓ 六爻焦点带卦体时可按生辰日柱装卦再打开，缺卦体仍信息不足 6ms
+     ✓ 六爻用本卦 points 导出可再打开，不冒充生辰排卦 1ms
+     ✓ 小六壬用本课 points 导出可再打开，换宫正文不同，不拿生辰冒充落点 2ms
+     ✓ 七政换宫或换星导出可再打开，正文事实不同 4ms
+     ✓ 梅花用本卦 points 导出可再打开，换卦正文不同，仅生辰仍信息不足 1ms
+     ✓ 六壬总览与所选传/课导出可再打开，索引不同则事实不同 4ms
+     ✓ 生辰接口也能解析六壬 kind-index 与七政 宫:星，不退回总览 4ms
+ ❯ tests/engine/ziwei-viewdate-free-reading.test.ts (1 test | 1 failed) 63ms
+     × 本命日与另一流年叠宫正文不同（层名由调用方给出） 63ms
+ ❯ tests/engine/a6-liuyao-ziwei-free-reading-consumers.test.ts (10 tests | 10 failed) 9ms
+     × 总览带得上的盘级规则点，逐爻焦点一个都不能少 3ms
+     × 逐爻焦点至少有能回到原文的古籍读法点（改前为 0） 0ms
+     × 解读点 ID 不再冒充规则 ID / 段落 ID 1ms
+     × 导出跟选中爻：文件里带得出本术 revision 与古籍锚点 1ms
+     × 缺爻位仍是信息不足，且不冒充规则/段落锚点 0ms
+     × 所选层就是正文那层：大限与流年各自指名，互不串层 1ms
+     × 没选层时按本命层解释，不擅自叠一层 0ms
+     × 层名不在本盘运限列表：如实记信息不足，不换层顶替 0ms
+     × 导出 token 带层名：文件里的运限正文与页面同层 1ms
+     × 解读点 ID 不再冒充规则 ID；缺宫点保持信息不足 0ms
+
+⎯⎯⎯⎯⎯⎯ Failed Tests 13 ⎯⎯⎯⎯⎯⎯⎯
+
+ FAIL  tests/engine/a6-liuyao-ziwei-free-reading-consumers.test.ts > A6 六爻：逐爻焦点与总览同源，出处/导出不再断链 > 总览带得上的盘级规则点，逐爻焦点一个都不能少
+AssertionError: 逐爻焦点缺盘级点 liuyao:ZSB-E-03:use:main:1: expected false to be true // Object.is equality
+
+- Expected
++ Received
+
+- true
++ false
+
+ ❯ tests/engine/a6-liuyao-ziwei-free-reading-consumers.test.ts:69:49
+     67|     for (const id of overviewIds) {
+     68|       if (id === "liuyao:free:overview") continue;
+     69|       expect(lineIds.has(id), `逐爻焦点缺盘级点 ${id}`).toBe(true);
+       |                                                 ^
+     70|     }
+     71|     // 逐爻焦点＝本爻白话点 + 本爻命中的规则点 + 盘级点；换爻则本爻白话点与正文随之变化
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/13]⎯
+
+ FAIL  tests/engine/a6-liuyao-ziwei-free-reading-consumers.test.ts > A6 六爻：逐爻焦点与总览同源，出处/导出不再断链 > 逐爻焦点至少有能回到原文的古籍读法点（改前为 0）
+AssertionError: expected 0 to be greater than 0
+ ❯ tests/engine/a6-liuyao-ziwei-free-reading-consumers.test.ts:80:29
+     78|   it("逐爻焦点至少有能回到原文的古籍读法点（改前为 0）", () => {
+     79|     const anchored = lineFocus.points.filter((point) => point.source &…
+     80|     expect(anchored.length).toBeGreaterThan(0);
+       |                             ^
+     81|     for (const point of anchored) {
+     82|       expect(point.source!.kind).toBe("anchored_text");
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[2/13]⎯
+
+ FAIL  tests/engine/a6-liuyao-ziwei-free-reading-consumers.test.ts > A6 六爻：逐爻焦点与总览同源，出处/导出不再断链 > 解读点 ID 不再冒充规则 ID / 段落 ID
+AssertionError: expected [ 'liuyao-free-overview' ] to not include 'liuyao-free-overview'
+ ❯ tests/engine/a6-liuyao-ziwei-free-reading-consumers.test.ts:90:39
+     88|       const ownId = String(point.id ?? "");
+     89|       if (!selfFreeIds.test(ownId)) continue;
+     90|       expect(point.ruleIds ?? []).not.toContain(ownId);
+       |                                       ^
+     91|     }
+     92|     const overviewPoint = overview.points.find((point) => point.id ===…
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[3/13]⎯
+
+ FAIL  tests/engine/a6-liuyao-ziwei-free-reading-consumers.test.ts > A6 六爻：逐爻焦点与总览同源，出处/导出不再断链 > 导出跟选中爻：文件里带得出本术 revision 与古籍锚点
+AssertionError: expected 1 to be greater than 1
+ ❯ tests/engine/a6-liuyao-ziwei-free-reading-consumers.test.ts:108:34
+    106|       }),
+    107|     );
+    108|     expect(report.points.length).toBeGreaterThan(1);
+       |                                  ^
+    109|     expect(report.points.some((point) => point.sourceRevision !== unde…
+    110|     expect(
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[4/13]⎯
+
+ FAIL  tests/engine/a6-liuyao-ziwei-free-reading-consumers.test.ts > A6 六爻：逐爻焦点与总览同源，出处/导出不再断链 > 缺爻位仍是信息不足，且不冒充规则/段落锚点
+AssertionError: expected [ 'liuyao-free-missing-line' ] to not include 'liuyao-free-missing-line'
+ ❯ tests/engine/a6-liuyao-ziwei-free-reading-consumers.test.ts:119:50
+    117|     expect(missing.points[0]?.id).toBe("liuyao-free-missing-line");
+    118|     expect(missing.points[0]?.unknowns?.length).toBeGreaterThan(0);
+    119|     expect(missing.points[0]?.ruleIds ?? []).not.toContain("liuyao-fre…
+       |                                                  ^
+    120|     expect(missing.paragraphs.join("")).toContain("信息不足");
+    121|   });
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[5/13]⎯
+
+ FAIL  tests/engine/a6-liuyao-ziwei-free-reading-consumers.test.ts > A6 紫微：解释跟着所选运限层，不把一层搬到另一层 > 所选层就是正文那层：大限与流年各自指名，互不串层
+AssertionError: expected '命宫在庚午，主星空宫。四化无本命四化标记。空宫或单颗星都不是吉凶分数。本宫…' to contain '当前运限层流年甲辰'
+
+Expected: "当前运限层流年甲辰"
+Received: "命宫在庚午，主星空宫。四化无本命四化标记。空宫或单颗星都不是吉凶分数。本宫当前没有已核为星位符合的组合。没有命中不等于吉，也不另编格局填满。本宫已核不满足：辅弼夹帝（星位不符）；君臣庆会（星位不符）；金灿光辉（星位不符）；魁命钺身（星位不符）；禄马同宫（星位不符）；贪火相逢（星位不符）；日月夹财（星位不符）；日出扶桑（星位不符）；月朗天门（星位不符）；武曲守垣（星位不符）。不满足不得改写成缺项，也不得用套话补成吉。本宫没有标为条件未知的已核组合。当前运限层大限丁卯叠在本宫：流曜运禄 运喜，四化太阴化禄、天同化权、天机化科、巨门化忌。此栏按当前所选日期显示运限落宫与流曜。本命组合另列，运限成败条件尚未完整核定（信息不足）。"
+
+ ❯ tests/engine/a6-liuyao-ziwei-free-reading-consumers.test.ts:139:24
+    137|     const yearlyText = yearlyReading.paragraphs.join("");
+    138|     expect(decadalText).toContain(`当前运限层大限${decadal.ganzhi}`);
+    139|     expect(yearlyText).toContain(`当前运限层流年${yearly.ganzhi}`);
+       |                        ^
+    140|     expect(decadalText).not.toContain(`流年${yearly.ganzhi}`);
+    141|     expect(yearlyText).not.toContain(`大限${decadal.ganzhi}`);
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[6/13]⎯
+
+ FAIL  tests/engine/a6-liuyao-ziwei-free-reading-consumers.test.ts > A6 紫微：解释跟着所选运限层，不把一层搬到另一层 > 没选层时按本命层解释，不擅自叠一层
+AssertionError: expected '命宫在庚午，主星空宫。四化无本命四化标记。空宫或单颗星都不是吉凶分数。本宫…' to contain '本命层'
+
+Expected: "本命层"
+Received: "命宫在庚午，主星空宫。四化无本命四化标记。空宫或单颗星都不是吉凶分数。本宫当前没有已核为星位符合的组合。没有命中不等于吉，也不另编格局填满。本宫已核不满足：辅弼夹帝（星位不符）；君臣庆会（星位不符）；金灿光辉（星位不符）；魁命钺身（星位不符）；禄马同宫（星位不符）；贪火相逢（星位不符）；日月夹财（星位不符）；日出扶桑（星位不符）；月朗天门（星位不符）；武曲守垣（星位不符）。不满足不得改写成缺项，也不得用套话补成吉。本宫没有标为条件未知的已核组合。当前运限层大限丁卯叠在本宫：流曜运禄 运喜，四化太阴化禄、天同化权、天机化科、巨门化忌。此栏按当前所选日期显示运限落宫与流曜。本命组合另列，运限成败条件尚未完整核定（信息不足）。"
+
+ ❯ tests/engine/a6-liuyao-ziwei-free-reading-consumers.test.ts:151:23
+    149|     const natal = buildZiweiFreeReading(viewed, { palace: "命宫" });
+    150|     const natalText = natal.paragraphs.join("");
+    151|     expect(natalText).toContain("本命层");
+       |                       ^
+    152|     expect(natalText).not.toContain("当前运限层");
+    153|     expect(natalText).not.toContain(`大限${decadal.ganzhi}`);
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[7/13]⎯
+
+ FAIL  tests/engine/a6-liuyao-ziwei-free-reading-consumers.test.ts > A6 紫微：解释跟着所选运限层，不把一层搬到另一层 > 层名不在本盘运限列表：如实记信息不足，不换层顶替
+AssertionError: expected '命宫在庚午，主星空宫。四化无本命四化标记。空宫或单颗星都不是吉凶分数。本宫…' not to contain '大限丁卯'
+
+Expected: "大限丁卯"
+Received: "命宫在庚午，主星空宫。四化无本命四化标记。空宫或单颗星都不是吉凶分数。本宫当前没有已核为星位符合的组合。没有命中不等于吉，也不另编格局填满。本宫已核不满足：辅弼夹帝（星位不符）；君臣庆会（星位不符）；金灿光辉（星位不符）；魁命钺身（星位不符）；禄马同宫（星位不符）；贪火相逢（星位不符）；日月夹财（星位不符）；日出扶桑（星位不符）；月朗天门（星位不符）；武曲守垣（星位不符）。不满足不得改写成缺项，也不得用套话补成吉。本宫没有标为条件未知的已核组合。当前运限层大限丁卯叠在本宫：流曜运禄 运喜，四化太阴化禄、天同化权、天机化科、巨门化忌。此栏按当前所选日期显示运限落宫与流曜。本命组合另列，运限成败条件尚未完整核定（信息不足）。"
+
+ ❯ tests/engine/a6-liuyao-ziwei-free-reading-consumers.test.ts:161:22
+    159|     const text = unknown.paragraphs.join("");
+    160|     expect(text).toContain("信息不足");
+    161|     expect(text).not.toContain(`大限${decadal.ganzhi}`);
+       |                      ^
+    162|     expect(text).not.toContain(`流年${yearly.ganzhi}`);
+    163|     expect(unknown.points[0]?.unknowns?.some((item) => item.includes("…
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[8/13]⎯
+
+ FAIL  tests/engine/a6-liuyao-ziwei-free-reading-consumers.test.ts > A6 紫微：解释跟着所选运限层，不把一层搬到另一层 > 导出 token 带层名：文件里的运限正文与页面同层
+AssertionError: expected '命宫在庚午，主星空宫。四化无本命四化标记。空宫或单颗星都不是吉凶分数。本宫…' to contain '流年甲辰'
+
+Expected: "流年甲辰"
+Received: "命宫在庚午，主星空宫。四化无本命四化标记。空宫或单颗星都不是吉凶分数。本宫当前没有已核为星位符合的组合。没有命中不等于吉，也不另编格局填满。本宫已核不满足：辅弼夹帝（星位不符）；君臣庆会（星位不符）；金灿光辉（星位不符）；魁命钺身（星位不符）；禄马同宫（星位不符）；贪火相逢（星位不符）；日月夹财（星位不符）；日出扶桑（星位不符）；月朗天门（星位不符）；武曲守垣（星位不符）。不满足不得改写成缺项，也不得用套话补成吉。本宫没有标为条件未知的已核组合。当前运限层大限丁卯叠在本宫：流曜运禄 运喜，四化太阴化禄、天同化权、天机化科、巨门化忌。此栏按当前所选日期显示运限落宫与流曜。本命组合另列，运限成败条件尚未完整核定（信息不足）。本盘“辅弼夹帝”的已核星位不符。本宫参与位置：相邻宫·命宫（午）：未列本条星曜。紫微在兄弟宫（巳），左辅在子女宫（卯），右弼在交友宫（亥）。本盘不符合“辅弼夹帝”的这条结构定义。这条读法把主星与两侧的协助星一起看，关注主事与支援的位置关系。判断范围：这里只核相邻夹持，三方拱照不替代两侧。星曜的实际作用与煞破仍需另读。关联宫位：中心宫·兄弟宫（巳）：紫微(旺)；相邻宫·夫妻宫（辰）：未列本条星曜；相邻宫·命宫（午）：未列本条星曜；星曜实际位置·子女宫（卯）：左辅；星曜实际位置·交友宫（亥）：右弼。本条绑定段落 ID：ziwei-doushu-quanshu:L0069-L0069。本盘“君臣庆会”的已核星位不符。本宫参与位置：命宫·命宫（午）：未列本条星曜。紫微在兄弟宫（巳）；左辅在子女宫（卯）；右弼在交友宫（亥）。本盘不符合“君臣庆会”的这条结构定义。君臣的比喻指主事星与协助星在命宫同处，可以从分工和支援这个角度继续读。判断范围：相、武、阴来会是原文增强条件；本条只核紫微与左右同守命的基本结构。关联宫位：命宫·命宫（午）：未列本条星曜；星曜实际位置·兄弟宫（巳）：紫微(旺)；星曜实际位置·子女宫（卯）：左辅；星曜实际位置·交友宫（亥）：右弼。本条绑定段落 ID：ziwei-doushu-quanshu:L1595-L1595。本盘“金灿光辉”的已核星位不符。本宫参与位置：命宫·命宫（午）：未列本条星曜。太阳在财帛宫（寅）；命宫十四主星为无。本盘不符合“金灿光辉”的这条结构定义。金灿光辉在这条原文中指太阳单守午命宫；辅星和杂曜仍可同时存在。判断范围：单守限定十四主星，不是清空全部辅杂曜。这里只记录位置结构。关联宫位：命宫·命宫（午）：未列本条星曜。本条绑定段落 ID：ziwei-doushu-quanshu:L1580-L1580。本盘“魁命钺身”的已核星位不符。本宫参与位置：命宫·命宫（午）：未列本条星曜。天魁在迁移宫（子）；天钺在福德宫（申），身宫附在福德宫（申）。本盘不符合“魁命钺身”的这条结构定义。这条读法分别观察命与身两处的贵助，身宫按实际标记定位。判断范围：本条不交换魁钺；原文吉聚及四十后墓库等行限条件不在此本命位置判断内。关联宫位：命宫·命宫（午）：未列本条星曜；星曜实际位置·迁移宫（子）：天魁；身宫·福德宫（申）：天钺。本条绑定段落 ID：ziwei-doushu-quanshu:L0927-L0937。本盘“禄马同宫”的已核星位不符。本宫参与位置：星曜位置·命宫（午）：禄存。禄存在命宫（午），天马在交友宫（亥）。本盘不符合“禄马同宫”的这条结构定义。禄与马分别借资源和行动作比，这里采用原书禄马交驰的同宫支路。判断范围：化禄不能代替禄存，流年星不能代替本命星。截路空亡、死绝等影响仍须另读，未据同宫判财运。关联宫位：星曜位置·命宫（午）：禄存；星曜位置·交友宫（亥）：天马。本条绑定段落 ID：ziwei-doushu-quanshu:L0976-L0987。本盘“贪火相逢”的已核星位不符。本宫参与位置：命宫·命宫（午）：未列本条星曜；三方四正已见干扰·命宫（午）：地劫。贪狼在疾厄宫（丑）；火星在事业宫（戌）；贪狼亮度为庙；火星亮度为庙。本盘不符合“贪火相逢”的这条结构定义。本条只核贪火同命并且二星庙旺的结构，可继续查看同盘已列出的其他作用。判断范围：L1617同命庙旺与L1384三合火贵是不同来源分支，不能互换。；三方无凶尚未完整判定；已列羊陀铃空劫和化忌只是当前可观察的干扰，不是凶曜穷举，未见这些也不等于全无煞破。关联宫位：命宫·命宫（午）：未列本条星曜；星曜实际位置·疾厄宫（丑）：贪狼(庙)化权；星曜实际位置·事业宫（戌）：火星(庙)；三方四正已见干扰·命宫（午）：地劫。本条绑定段落 ID：ziwei-doushu-quanshu:L1617-L1617。本盘已核“日月夹财”为星位不符。武曲守命或财帛：武曲在疾厄宫（丑）（星位不符）；日月分处两个邻宫：太阳在财帛宫（寅），太阴在迁移宫（子）（星位符合）。命宫是该条原文点名的宫位之一，但相关星曜没有落在本宫所需位置。武曲在疾厄宫（丑）；太阳在财帛宫（寅），太阴在迁移宫（子）。本盘不符合“日月夹财”的这条结构定义。日月位于财星两侧，是这条读法观察资源与支持的一种结构。判断范围：本支的中心是武曲，且限定命宫或财帛宫。；结构名称不表示已经推得财产数量或财富结果。本条绑定段落 ID：ziwei-doushu-quanshu:L1572-L1572。本盘已核“日出扶桑”为星位不符。太阳在卯：太阳在财帛宫（寅）（星位不符）；限定命宫或官禄：所在主题为财帛宫（寅）（星位不符）。命宫是该条原文点名的宫位之一，但相关星曜没有落在本宫所需位置。太阳在财帛宫（寅）；所在主题为财帛宫（寅）。本盘不符合“日出扶桑”的这条结构定义。扶桑借早晨的日光作比，描述太阳在卯、同时处在命宫或事业宫的位置。判断范围：这是原文限定的位置名称，不承诺职位或考试结果。本条绑定段落 ID：ziwei-doushu-quanshu:L1587-L1587。本盘已核“月朗天门”为星位不符。太阴在亥：太阴在迁移宫（子）（星位不符）；限定命宫：所在主题为迁移宫（子）（星位不符）。命宫是该条原文点名的宫位之一，但相关星曜没有落在本宫所需位置。太阴在迁移宫（子）；所在主题为迁移宫（子）。本盘不符合“月朗天门”的这条结构定义。天门在此指亥位，月朗描写太阴守命的传统光辉意象。判断范围：本条采用位置格名。后注的子年、夜生等附加取法未与这一基础结构混算。本条绑定段落 ID：ziwei-doushu-quanshu:L1589-L1589。本盘已核“武曲守垣”为星位不符。武曲在卯：武曲在疾厄宫（丑）（星位不符）；限定命宫：所在主题为疾厄宫（丑）（星位不符）。命宫是该条原文点名的宫位之一，但相关星曜没有落在本宫所需位置。武曲在疾厄宫（丑）；所在主题为疾厄宫（丑）。本盘不符合“武曲守垣”的这条结构定义。武曲守垣在这条原文里只认武曲守卯命宫，其他位置另有各自读法。判断范围：原文限定位置，现行亮度为利也不据此改成庙；名称不代表完整贵格。本条绑定段落 ID：ziwei-doushu-quanshu:L1619-L1619。开篇要求不可一概论议，后文组合口诀必须连同这个限制阅读。本书题署只能证明书名，不能代替全书排盘或十二宫取法。本盘四化落宫记录：夫妻天梁化科、疾厄武曲化禄 贪狼化权、交友文曲化忌。化禄不是得财结论，化忌不是祸福结论；本条只记落宫与出处。"
+
+ ❯ tests/engine/a6-liuyao-ziwei-free-reading-consumers.test.ts:183:24
+    181|     const yearlyText = yearlyReport.points.map((point) => point.body ?…
+    182|     expect(decadalText).toContain(`大限${decadal.ganzhi}`);
+    183|     expect(yearlyText).toContain(`流年${yearly.ganzhi}`);
+       |                        ^
+    184|     expect(yearlyText).not.toContain(`大限${decadal.ganzhi}`);
+    185|   });
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[9/13]⎯
+
+ FAIL  tests/engine/a6-liuyao-ziwei-free-reading-consumers.test.ts > A6 紫微：解释跟着所选运限层，不把一层搬到另一层 > 解读点 ID 不再冒充规则 ID；缺宫点保持信息不足
+AssertionError: expected [ 'ziwei-free-palace', …(12) ] to not include 'ziwei-free-palace'
+ ❯ tests/engine/a6-liuyao-ziwei-free-reading-consumers.test.ts:190:39
+    188|     const reading = buildZiweiFreeReading(viewed, { palace: "命宫" });
+    189|     const summary = reading.points.find((point) => point.id === "ziwei…
+    190|     expect(summary.ruleIds ?? []).not.toContain("ziwei-free-palace");
+       |                                       ^
+    191|     const missing = buildZiweiFreeReading(viewed, { palace: "不存在宫" });
+    192|     expect(missing.points[0]?.id).toBe("ziwei-free-missing-palace");
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[10/13]⎯
+
+ FAIL  tests/engine/c-export-readback-seven-arts.test.ts > C-EXPORT-READBACK 七术导出回读（真实执行） > 紫微浏览日：focusPosition 自带日期时刻与运限层，回读后重建的是同一批事实
+AssertionError: expected [ '宫位=事业', '地支=戌', '天干=甲', …(46) ] to include '运限层=流年'
+ ❯ tests/engine/c-export-readback-seven-arts.test.ts:375:19
+    373|     const facts = factsOf(back.points);
+    374|     expect(facts.length).toBeGreaterThan(0);
+    375|     expect(facts).toContain("运限层=流年");
+       |                   ^
+    376|     // 回读数据足以重建：同一 stream 日重建后事实完全一致（含所写运限层）
+    377|     const rebuilt = rebuildFromFile("ziwei", back.input);
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[11/13]⎯
+
+ FAIL  tests/engine/reading-input-export-link.test.ts > 同 head 实际输入/选位联动与报告导出 (MING-323) > 紫微导出走浏览日期与所写运限层，命宫@本命日 与 命宫@流年 读回不同
+AssertionError: expected '宫位=命宫|地支=午|天干=庚|主星=空宫|本命四化=无|命宫=是|身宫=…' to contain '运限层=流年'
+
+Expected: "运限层=流年"
+Received: "宫位=命宫|地支=午|天干=庚|主星=空宫|本命四化=无|命宫=是|身宫=否|组合不满足=ZWD-E-02:辅弼夹帝|组合不满足=ZWD-E-04:君臣庆会|组合不满足=ZWD-E-08:金灿光辉|组合不满足=ZWD-E-09:魁命钺身|组合不满足=ZWD-E-10:禄马同宫|组合不满足=ZWD-E-12:贪火相逢|组合不满足=ZWD-E-03:日月夹财|组合不满足=ZWD-E-05:日出扶桑|组合不满足=ZWD-E-06:月朗天门|组合不满足=ZWD-E-11:武曲守垣|运限层=大限|运限干支=丁卯|流曜=运禄 运喜|运限四化=太阴化禄、天同化权、天机化科、巨门化忌|宫位=命宫|地支=午|天干=庚|主星=空宫|辅星=禄存 地劫|杂曜=咸池 解神 天空|本命四化=无|组合=ZWD-E-02:辅弼夹帝|组合状态=not_satisfied|参与角色=相邻宫|条件/辅弼分别在紫微两侧=紫微在兄弟宫（巳），左辅在子女宫（卯），右弼在交友宫（亥）（星位不符）|宫位=命宫|地支=午|天干=庚|主星=空宫|辅星=禄存 地劫|杂曜=咸池 解神 天空|本命四化=无|组合=ZWD-E-04:君臣庆会|组合状态=not_satisfied|参与角色=命宫|条件/紫微同守命宫=紫微在兄弟宫（巳）（星位不符）|条件/左辅同守命宫=左辅在子女宫（卯）（星位不符）|条件/右弼同守命宫=右弼在交友宫（亥）（星位不符）|宫位=命宫|地支=午|天干=庚|主星=空宫|辅星=禄存 地劫|杂曜=咸池 解神 天空|本命四化=无|组合=ZWD-E-08:金灿光辉|组合状态=not_satisfied|参与角色=命宫|条件/太阳在午命宫=太阳在财帛宫（寅）（星位不符）|条件/命宫唯一十四主星是太阳=命宫十四主星为无（星位不符）|宫位=命宫|地支=午|天干=庚|主星=空宫|辅星=禄存 地劫|杂曜=咸池 解神 天空|本命四化=无|组合=ZWD-E-09:魁命钺身|组合状态=not_satisfied|参与角色=命宫|条件/天魁在命宫=天魁在迁移宫（子）（星位不符）|条件/天钺在实际身宫=天钺在福德宫（申），身宫附在福德宫（申）（星位符合）|宫位=命宫|地支=午|天干=庚|主星=空宫|辅星=禄存 地劫|杂曜=咸池 解神 天空|本命四化=无|组合=ZWD-E-10:禄马同宫|组合状态=not_satisfied|参与角色=星曜位置|条件/禄存和天马本命同宫=禄存在命宫（午），天马在交友宫（亥）（星位不符）|宫位=命宫|地支=午|天干=庚|主星=空宫|辅星=禄存 地劫|杂曜=咸池 解神 天空|本命四化=无|组合=ZWD-E-12:贪火相逢|组合状态=not_satisfied|参与角色=命宫、三方四正已见干扰|条件/贪狼守命=贪狼在疾厄宫（丑）（星位不符）|条件/火星守命=火星在事业宫（戌）（星位不符）|条件/贪狼亮度为庙或旺=贪狼亮度为庙（星位符合）|条件/火星亮度为庙或旺=火星亮度为庙（星位符合）|宫位=命宫|地支=午|天干=庚|主星=空宫|辅星=禄存 地劫|杂曜=咸池 解神 天空|本命四化=无|组合=ZWD-E-03:日月夹财|组合状态=not_satisfied|定义宫核验=true|条件/武曲守命或财帛=武曲在疾厄宫（丑）（星位不符）|条件/日月分处两个邻宫=太阳在财帛宫（寅），太阴在迁移宫（子）（星位符合）|宫位=命宫|地支=午|天干=庚|主星=空宫|辅星=禄存 地劫|杂曜=咸池 解神 天空|本命四化=无|组合=ZWD-E-05:日出扶桑|组合状态=not_satisfied|定义宫核验=true|条件/太阳在卯=太阳在财帛宫（寅）（星位不符）|条件/限定命宫或官禄=所在主题为财帛宫（寅）（星位不符）|宫位=命宫|地支=午|天干=庚|主星=空宫|辅星=禄存 地劫|杂曜=咸池 解神 天空|本命四化=无|组合=ZWD-E-06:月朗天门|组合状态=not_satisfied|定义宫核验=true|条件/太阴在亥=太阴在迁移宫（子）（星位不符）|条件/限定命宫=所在主题为迁移宫（子）（星位不符）|宫位=命宫|地支=午|天干=庚|主星=空宫|辅星=禄存 地劫|杂曜=咸池 解神 天空|本命四化=无|组合=ZWD-E-11:武曲守垣|组合状态=not_satisfied|定义宫核验=true|条件/武曲在卯=武曲在疾厄宫（丑）（星位不符）|条件/限定命宫=所在主题为疾厄宫（丑）（星位不符）|来源=太微赋开篇|来源=飞星原旨题署|本命四化宫=夫妻天梁化科、疾厄武曲化禄 贪狼化权、交友文曲化忌|判定规则=ZWD-E-01"
+
+ ❯ tests/engine/reading-input-export-link.test.ts:200:64
+    198|     expect(natal.points.length).toBeGreaterThan(0);
+    199|     expect(later.points.length).toBeGreaterThan(0);
+    200|     expect(later.points.flatMap((p) => p.usedFacts).join("|")).toConta…
+       |                                                                ^
+    201|     expect(natal.points.flatMap((p) => p.usedFacts).join("|")).not.toB…
+    202|       later.points.flatMap((p) => p.usedFacts).join("|"),
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[12/13]⎯
+
+ FAIL  tests/engine/ziwei-viewdate-free-reading.test.ts > 紫微浏览日期改写当前宫运限解释 > 本命日与另一流年叠宫正文不同（层名由调用方给出）
+AssertionError: expected '命宫在庚午，主星空宫。四化无本命四化标记。空宫或单颗星都不是吉凶分数。本宫…' to contain '当前运限层流年'
+
+Expected: "当前运限层流年"
+Received: "命宫在庚午，主星空宫。四化无本命四化标记。空宫或单颗星都不是吉凶分数。本宫当前没有已核为星位符合的组合。没有命中不等于吉，也不另编格局填满。本宫已核不满足：辅弼夹帝（星位不符）；君臣庆会（星位不符）；金灿光辉（星位不符）；魁命钺身（星位不符）；禄马同宫（星位不符）；贪火相逢（星位不符）；日月夹财（星位不符）；日出扶桑（星位不符）；月朗天门（星位不符）；武曲守垣（星位不符）。不满足不得改写成缺项，也不得用套话补成吉。本宫没有标为条件未知的已核组合。当前运限层大限丁卯叠在本宫：流曜运禄 运喜，四化太阴化禄、天同化权、天机化科、巨门化忌。此栏按当前所选日期显示运限落宫与流曜。本命组合另列，运限成败条件尚未完整核定（信息不足）。"
+
+ ❯ tests/engine/ziwei-viewdate-free-reading.test.ts:40:39
+     38|     expect(natal.paragraphs.join("|")).not.toBe(later.paragraphs.join(…
+     39|     expect(later.paragraphs.join("")).toMatch(/运限|流曜|四化/);
+     40|     expect(later.paragraphs.join("")).toContain("当前运限层流年");
+       |                                       ^
+     41|     expect(later.paragraphs.join("")).not.toContain("当前运限层大限");
+     42|   });
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[13/13]⎯
+
+
+ Test Files  4 failed (4)
+      Tests  13 failed | 34 passed (47)
+   Start at  10:42:39
+   Duration  2.08s (transform 678ms, setup 0ms, import 1.08s, tests 729ms, environment 0ms)
+
+exit=1
