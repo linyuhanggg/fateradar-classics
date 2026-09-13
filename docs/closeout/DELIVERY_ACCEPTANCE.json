@@ -1,6 +1,6 @@
 {
   "schema": "fateradar-delivery-acceptance-v1",
-  "generated_at": "2026-09-13T04:05:00Z",
+  "generated_at": "2026-09-13T04:10:00Z",
   "generated_by": "DSH captain（本会话 goal round 1/256）",
   "authority": "classics:docs/FATERADAR_FULL_LIBRARY_PLAN.md（含 2026-09-13 收尾执行修订）",
   "purpose": "唯一收尾状态账本：逐项对应权威方案「总验收与完成条件」1–8。引用既有矩阵与报告，不新造重复指标。",
@@ -41,7 +41,7 @@
     ]
   },
   "measured_baseline": {
-    "measured_at": "2026-09-13T02:05:00Z",
+    "measured_at": "2026-09-13T04:10:00Z",
     "measured_by": "captain 直接读 references/annotations、references/executable、git、gh（不转抄旧检查点）",
     "annotations_total": 62839,
     "annotations_source_reviewed": 60004,
@@ -74,7 +74,8 @@
       "in_file_product_head": "cdb5f9c",
       "in_file_classics_head": "74edada"
     },
-    "note": "产品矩阵内 head 已过期（A3 已登记重生成）；其余为本次直接实测。draft 余量与 GAP_LEDGER 旧快照（2,905）不同，以本次实测 2,835 为准。"
+    "note": "产品矩阵内 head 已过期（A3 已登记重生成）；其余为本次直接实测。draft 余量与 GAP_LEDGER 旧快照（2,905）不同，以本次实测 2,835 为准。",
+    "reverified_at": "2026-09-13T04:10:00Z（round 21 复算：注解 62,839 = 60,004 + 2,835、规则 258 条 rescue 117/106/30/5 —— 与首次实测完全一致，未漂移）"
   },
   "criteria": [
     {
@@ -801,5 +802,62 @@
     ],
     "conclusion": "八项本轮无一可判 pass；A1/A3/A7 证据质量可信，A8 新增可复现硬缺口，A6 缺口描述已更正。",
     "warning": "product 工作树在 10:06–10:16 被在途工作改动 9 个 tracked 文件 + 新增 6 项未跟踪；此后任何「在最新 HEAD 重跑矩阵/测试」必须先固定快照（rsync 镜像法），否则会把在途工作当成 HEAD 证据。"
-  }
+  },
+  "captain_checks": [
+    {
+      "check": "两仓 main 与分支、CI 结论",
+      "method": "git rev-parse/fetch + gh run list",
+      "result": "classics/main c45dfdb success、product/main 230effd success；分支均领先 main（等审查门）"
+    },
+    {
+      "check": "版本钉可解析性",
+      "method": "git cat-file -t + merge-base --is-ancestor",
+      "result": "10/10 content pin 均为真实 commit 且为 main 祖先（round 2）"
+    },
+    {
+      "check": "基础计数",
+      "method": "直接扫 references/annotations 与 references/executable",
+      "result": "62,839 = 60,004 + 2,835；258 条 rescue 117/106/30/5（round 1 首测，round 21 复算一致）"
+    },
+    {
+      "check": "三位校验器",
+      "method": "python3 tools/{test-validate-executable,validate-executable,validate-rules}.py",
+      "result": "22 tests OK；OK 15 packages/258 rules/579 spans/12 named gaps；OK 55 files/285 warnings（round 14）"
+    },
+    {
+      "check": "矩阵双次独立重生成",
+      "method": "bun run scripts/art-verdict-judgment-gap-matrix.ts vs reviewer 镜像重生成",
+      "result": "252 行全部字段 0 处不同（round 12）"
+    },
+    {
+      "check": "奇门口径",
+      "method": "引擎直算 buildQimenLayout({yang,1,'乙丑'})",
+      "result": "starPalaceRaw=9（原书 9）、doorPalaceRaw=2（原书 2）、originPalace=1 → 引擎正确；1,543 条「差异」系抽取口径（round 12）"
+    },
+    {
+      "check": "A6 批次测试",
+      "method": "npx vitest run 该批次 4 个测试文件",
+      "result": "47/47 通过；并逐条读过新增 10 条断言（含反向断言，非空断言）（round 3/10）"
+    },
+    {
+      "check": "跨仓 rule id 一致性",
+      "method": "git show 旧钉 vs 工作树 id 集合 + product 检索",
+      "result": "sanming-tonghui 20→20、ziping-zhenquan 39→39，removed/added 均为空；product 仍引用（round 17）"
+    },
+    {
+      "check": "A8 锚点保真（captain 独立）",
+      "method": "git show <rev>:<file> 切片 + 空白归一比对",
+      "result": "bazi-anchor 362/362 fragment 与新钉 c45dfdb 逐字相符；reading-notes 12 锚点在其自身钉与新钉间 0 漂移（round 20）"
+    },
+    {
+      "check": "A6/A8 版本三处一致",
+      "method": "git diff 实测",
+      "result": "CLASSICS_REV = ci.yml ref = bazi-anchor sourceRevision = c45dfdb（round 19）"
+    },
+    {
+      "check": "交付文档结构",
+      "method": "文件检查",
+      "result": "FINAL-DELIVERY-REPORT.md（显式标注未完成）+ EIGHT-ARTS-VERIFICATION-MATRIX.md（脚本汇总）已建（round 6/11）"
+    }
+  ]
 }
