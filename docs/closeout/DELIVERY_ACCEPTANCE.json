@@ -1,6 +1,6 @@
 {
   "schema": "fateradar-delivery-acceptance-v1",
-  "generated_at": "2026-09-13T07:10:00Z",
+  "generated_at": "2026-09-13T07:20:00Z",
   "generated_by": "DSH captain（本会话 goal round 1/256）",
   "authority": "classics:docs/FATERADAR_FULL_LIBRARY_PLAN.md（含 2026-09-13 收尾执行修订）",
   "purpose": "唯一收尾状态账本：逐项对应权威方案「总验收与完成条件」1–8。引用既有矩阵与报告，不新造重复指标。",
@@ -139,6 +139,11 @@
           "path": "classics:docs/closeout/evidence/a1-open-items-20260913.json（t20，captain 已读）",
           "shows": "A1 两类未决的**集合级**登记完成：items 26 条 = 《總鈐》残格抽样 10 + 未确认影印底本 16，全部 class=`precise-undecided-not-blocking`，每条四栏齐备（what_is_missing / attempts / product_handling / locator）。**两处重要更正**：①《總鈐》666 残格的旧说法「缺影印件、只能列轴」**已部分解除**——影印在仓内（`sources/facsimile/other/daliuren-daquan/liuren-daquan-juan1-siku-archive-06054168.pdf`，112 页，sha256 7790f774…；《總鈐》＝PDF 第 15 页标题、十表连号 p16–p25），且已有逐格转录件（zongqian-layout-016-025.md / zongqian-cells-016-020.md / -021-025.md）；**真正未决的是「逐格内容归属」**：该印本字心距≈70px、相邻字粘连成 200–250px 墨条、相邻栏 x 重叠 →「某处有哪些字」可读而「该字属哪一格」大面积不可判，不可判处一律留〔?〕。②**数量口径冲突已按磁盘实数解决**：plan/账本记「未确认底本 14 套」，而脚本生成的 `LIBRARY_INVENTORY.md` 实有 **16 行**标「尚未确认影印」（16 行在 ready 55 内、0 行属阻断/排除）→ 以磁盘实数为准，记为 **16**，两数不合并",
           "kind": "member-produced + captain-read"
+        },
+        {
+          "path": "captain 复核：a1-open-items-20260913.json 的 counts.inventory_arithmetic vs 权威方案第 53 行",
+          "shows": "55 包总数**两种分解都等于 55，但分类不同**，必须具名以免再被当成矛盾：①**磁盘实数（脚本生成）**：已存影印 **34** + Release 影印 **5** + 尚未确认影印 **16** = **55**（catalog ready）；②**权威方案第 53 行原文**：普通仓库 **34** + Release **5** + 未确认底本 **14** + 特殊资料 **2** = **55**。两者只在「未确认」与「特殊资料」的归属上分叉（16 vs 14+2）。→ 本账本采用**磁盘实数**口径（尚未确认影印 = 16，t20 已逐套登记），并**保留方案口径 14+2 作为历史原文**（不在方案文件里改数）；待确认事项：那 2 套「特殊资料」是否已含在这 16 之内，若是，则两口径等价、只需具名；若否，则磁盘实数应为 34+5+16+2=57≠55，需回到 inventory 脚本核分类逻辑",
+          "kind": "captain-accounting-note"
         }
       ],
       "remaining": [
