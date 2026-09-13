@@ -1,6 +1,6 @@
 {
   "schema": "fateradar-delivery-acceptance-v1",
-  "generated_at": "2026-09-13T02:55:00Z",
+  "generated_at": "2026-09-13T03:05:00Z",
   "generated_by": "DSH captain（本会话 goal round 1/256）",
   "authority": "classics:docs/FATERADAR_FULL_LIBRARY_PLAN.md（含 2026-09-13 收尾执行修订）",
   "purpose": "唯一收尾状态账本：逐项对应权威方案「总验收与完成条件」1–8。引用既有矩阵与报告，不新造重复指标。",
@@ -506,6 +506,11 @@
           "path": "classics:references/executable/SOURCE_REVIEW.md#A7 具名登记",
           "shows": "两处原判更正：夾貴 28 处／24 行（原记 8 命中）且〈夾貴夾禄〉有取法；福神 46 处／39 行（原记 7 命中）且〈福神相還〉有类目定义",
           "kind": "audit"
+        },
+        {
+          "path": "classics:references/executable/sanming-tonghui.json#named_gaps（提交 d383143）",
+          "shows": "12 条具名登记，逐条带 claim_checked / finding / occurrences / lines_with_term / evidence[段落ID+行区间+逐字引文]；captain 已独立复跑 tools/test-validate-executable.py=22 OK、tools/validate-executable.py=OK(15 packages,258 rules,579 spans,12 named gaps)、tools/validate-rules.py=OK(55 files,285 warnings)",
+          "kind": "captain-reverified-now"
         }
       ],
       "remaining": [
@@ -556,6 +561,12 @@
           "kind": "implementation-gap",
           "scope": "product 侧（本成员不得改产品仓）",
           "blocks": "A7 局部（等 captain／algo-impl 同步）"
+        },
+        {
+          "item": "【方法论风险，可能改变多项分类】t1 的独立重算发现：此前审计对术语的「全书检索」实际只覆盖了前 2000 行左右（SMTH-E-04 報「8 命中」，全文重算为 28 处/24 行；SMTH-E-10 報「7 命中」，重算为 46 处/39 行），而后文专章（〈夾貴夾禄〉L4244-4246、〈福神相還〉L4252、〈包裹旗旌〉L4319/L4321）正落在被漏检区间。本批只重算了 SMTH 系列；**其余 unimplemented 的「原文未界定」理由尚未按全文重算**，其中可能还有把「实现缺口」误记为「证据未决」的情况（实现缺口必须实现，不能结项）",
+          "kind": "implementation-gap",
+          "scope": "references/executable/*.json 中其余 unimplemented 条目的理由复核（全文检索，不用截断结果）",
+          "blocks": "A7 working→pass（分类正确性）"
         }
       ],
       "owner": "independent-review + classics-audit",
