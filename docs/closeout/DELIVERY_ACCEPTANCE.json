@@ -1,6 +1,6 @@
 {
   "schema": "fateradar-delivery-acceptance-v1",
-  "generated_at": "2026-09-13T05:20:00Z",
+  "generated_at": "2026-09-13T05:25:00Z",
   "generated_by": "DSH captain（本会话 goal round 1/256）",
   "authority": "classics:docs/FATERADAR_FULL_LIBRARY_PLAN.md（含 2026-09-13 收尾执行修订）",
   "purpose": "唯一收尾状态账本：逐项对应权威方案「总验收与完成条件」1–8。引用既有矩阵与报告，不新造重复指标。",
@@ -719,6 +719,11 @@
           "path": "captain 复算：54 条差异的逐条分类（algo-impl 提供）+ classics 提交 6ef9ac8 存在性/时序核对",
           "shows": "A8 硬缺口的**性质**已定案：54 条差异 = **新增片段 54 / 删除 0 / 改写 0 / 坐标漂移 0**；54 条新增片段的 quote 在 c45dfdb4 上**逐字命中 54/54**，旧片段「被删但仍能在 main 命中」为 0 条。根因有 commit 对应：classics `6ef9ac8`「rules(qtb): 救应句出处补齐——54 条处置落地，来源 525→579」——captain 实测该 commit 类型=commit、是 origin/main 祖先=yes、且**晚于旧钉 df73f232**=yes（subject：rules(qtb): 救应句出处补齐——54 条处置落地，来源 525→579）。即旧导出钉 df73f232 是 6ef9ac8 的**前代**，产品索引导出太早。→ **54 条里没有一条属「实现不一致」**；同时另三笔改动（调候救应改标 self、09-12/10-06 精确分段）只改 `rescue/unknown_when` 等本索引不导出的字段，故不产生片段差异——与「只有 54 条变」互相印证",
           "kind": "captain-verified-now（含 commit 时序核对）"
+        },
+        {
+          "path": "captain 实测 gh run list（round 29）",
+          "shows": "**首次「过审查门 → 合 main → CI 绿」闭环成立**：product main `f030441`（A6 批次：六爻逐爻焦点补点+去伪锚点、紫微显式运限层）的 CI **success**（含 typecheck / test / build:worker / playwright e2e）；classics main `fe76a0b` 的 validate-rules 亦 **success**。同期**明确排除**未审的 A5 候选 `cf0c1f7` 与 A8 候选 `c300610`（后者待 t18 独立复核门）",
+          "kind": "captain-reverified-now"
         }
       ],
       "remaining": [
