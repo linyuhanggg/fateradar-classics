@@ -1,6 +1,6 @@
 {
   "schema": "fateradar-delivery-acceptance-v1",
-  "generated_at": "2026-09-13T07:50:00Z",
+  "generated_at": "2026-09-13T08:05:00Z",
   "generated_by": "DSH captain（本会话 goal round 1/256）",
   "authority": "classics:docs/FATERADAR_FULL_LIBRARY_PLAN.md（含 2026-09-13 收尾执行修订）",
   "purpose": "唯一收尾状态账本：逐项对应权威方案「总验收与完成条件」1–8。引用既有矩阵与报告，不新造重复指标。",
@@ -154,11 +154,16 @@
           "path": "captain 独立复核：expanded a1-open-items-20260913.json（脚本断言重跑）",
           "shows": "**两项具名条目已完整且经 captain 独立核验**：items **682** = 《總鈐》残格**全量 666** + 未确认影印底本 **16**；unique id **682（0 重复）**；**四栏空值 0**；class **全部** `precise-undecided-not-blocking`；666 条總鈐全部带 locator（paragraphId+content_lead+terms+kind+review）；**0 条自述「归属已定」**→ 不存在可另立类别的子群（子群仅内容形态不同：664 十表格内残字型 + 2 月表神名串型 L1010/L1038）。成员自检与我复算一致。数据未动：validate-annotations 53 books/62,839 entries/0 errors、validate-executable OK（42 named gaps）、validate-rules OK（285 既有 warning）。",
           "kind": "captain-reverified-now"
+        },
+        {
+          "path": "classics:docs/closeout/evidence/a1-open-items-20260913.{json,md}（t20 终版，captain 已读）",
+          "shows": "**14 vs 16 之争已定案：不是等价说法，而是「层级混用 + 旧计数」**——`LIBRARY_INVENTORY.md` 的影印状态**只有三个桶**（已存影印 34 + Release 影印 5 + 尚未确认影印 16 = 55），**没有第四个「特殊资料」桶**；方案同句的「2 份补充 Markdown」实测是 **2 个文件**（`sources/fulltext/san-shi/liuren-zhiyin/supplemental-annotated-golla-vol3-4.md`、`sources/fulltext/san-shi/qimen-dunjia-tongzhi/supplemental-taiyi-qimen-yanyi-vol4-9.md`），分属 liuren-zhiyin 与 qimen-dunjia-tongzhi 两个**既有 pack 内部**（二者都在 34 桶内）→ 属**文件级**，不是包级。catalog 另有 2 个类别独特的 pack（qimen-faqiao、feixing-ziwei-doushu-yuanzhi）但分属不同桶，推不出「14+2」。→ 结论：**34+5+16=55 是包级、脚本实算、可复现的口径，权威**；「34+5+14+2」把 2 个文件当 2 个包相加、且 14 是旧数。本账本按 16 记账正确。另：**locator 已按「页码/列/行范围」补强**——`paragraphId` + `line_range` + **`facsimile_page`**（由各条自述标目映射，可复算：p16 六甲 53／p17 六乙 70／p18 六丙 59／p19 六丁 77／p20 六戊 61／p21 六己 80／p22 六庚 58／p23 六辛 83／p24 六壬 62／p25 六癸 61 = **664 条落页**；剩 2 条月表型无页级映射）+ `facsimile_scope`（十表连号 p16–p25）+ **`column_within_table` 明写「列/格位未建立，不推算填空」** + content_lead/terms/kind/review。captain 复跑自检：682 items、unique 682（0 重复）、四栏空值 0、class 全一致。",
+          "kind": "captain-reverified-now（含争议定案）"
         }
       ],
       "remaining": [
         {
-          "item": "【A1 距 pass 仅剩独立复核】两项具名条目已交付并经 captain 独立核验：①《總鈐》残格 **全量 666 条逐项**（每条四栏 + 唯一 locator，性质已更正为「影印在仓、逐格归属不可判」，保留〔?〕）；②未确认影印底本 **16 套**（按磁盘实数，非 14；全量列名；解锁需外部材料）。682 条全部 `precise-undecided-not-blocking`、**0 条 blocked**。draft 去向分账亦已核为与注解集合一一对应。→ 需 **reviewer 独立复核**确认是否可判 A1 pass（captain 不自行判）",
+          "item": "【A1 距 pass 仅剩独立复核】两项具名条目已交付并经 captain 独立核验：①《總鈐》残格 **全量 666 条逐项**（每条四栏 + 唯一 locator，含影印页映射 664/666；列/格位如实标「未建立」）②未确认影印底本 **16 套**（按磁盘实数；**14 vs 16 已定案为「层级混用＋旧计数」**，34+5+16=55 为权威口径）。682 条全部 `precise-undecided-not-blocking`、**0 条 blocked**；draft 去向分账已核为与注解集合一一对应。→ 需 reviewer-2（t22）给出独立复核结论：**A1 可否判 pass**",
           "kind": "evidence-or-semantics-uncertainty",
           "scope": "A1 独立复核",
           "blocks": "A1 working→pass"
