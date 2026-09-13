@@ -1,6 +1,6 @@
 {
   "schema": "fateradar-delivery-acceptance-v1",
-  "generated_at": "2026-09-13T02:35:00Z",
+  "generated_at": "2026-09-13T02:40:00Z",
   "generated_by": "DSH captain（本会话 goal round 1/256）",
   "authority": "classics:docs/FATERADAR_FULL_LIBRARY_PLAN.md（含 2026-09-13 收尾执行修订）",
   "purpose": "唯一收尾状态账本：逐项对应权威方案「总验收与完成条件」1–8。引用既有矩阵与报告，不新造重复指标。",
@@ -108,6 +108,11 @@
           "path": "classics:docs/closeout/review/INDEPENDENT-VERIFICATION-20260913.md",
           "shows": "reviewer 自算复现：79 文件 / 53 书 / 62,839 = 60,004 + 2,835（15 书）、全部带 paragraphId；54 份 fulltext 与去处表 54 书行同集；41 份影印 PDF",
           "kind": "independent-verification"
+        },
+        {
+          "path": "classics:docs/closeout/FULL-LIBRARY-DISPOSITION-20260912.md#0-更正与现状",
+          "shows": "captain 实测逐书救应：总计 117/106/30/5；与 §1 不符的只有 qiongtong-baojian（66/10/44）与 sanming-tonghui（5/6/9），其余 13 个可执行文件逐书一致",
+          "kind": "captain-recomputed-now"
         }
       ],
       "remaining": [
@@ -130,10 +135,10 @@
           "blocks": "A1 局部"
         },
         {
-          "item": "证据物过期需同步（独立复核实测）：FULL-LIBRARY-DISPOSITION-20260912.md §1 合计行 116/32/105/5 ≠ 当前 117/30/106/5（qiongtong 66/11/43→66/10/44、sanming 4/7/9→5/6/9）；GAP_LEDGER.json 的 source_reviewed=59,934 / draft=2,905 / 基线 4cb96e3、48f68a8 / merged_main=false 均与现状（60,004 / 2,835 / eb4cabe、230effd / 已合 main）矛盾，其中 merged_main=false 可直接证伪",
+          "item": "证据物过期【已处置】：FULL-LIBRARY-DISPOSITION-20260912.md 已加「§0 更正与现状（2026-09-13）」（救应总计更正为 117/106/30/5；qiongtong 66/10/44、sanming 5/6/9 两行按实测更正；其余 13 文件逐书核对一致）；GAP_LEDGER.json 已加 staleness_20260913 登记过期字段（source_reviewed 59,934→60,004、draft 2,905→2,835、merged_main=false 已被证伪、两个基线 SHA 与 rules[].level 过期、page_consumers.other_arts 已作废）。当前权威值以账本 measured_baseline 为准",
           "kind": "evidence-or-semantics-uncertainty",
           "scope": "closeout 报告与 GAP_LEDGER 快照的过期数字（不改动本次实测计数）",
-          "blocks": "A1 引用证据时效；不改变 A1 实测结论"
+          "blocks": "已处置；不改变 A1 实测结论"
         }
       ],
       "owner": "classics-audit（古籍加工及正式入库）",

@@ -6,6 +6,22 @@
 > 全文 `sources/fulltext/**`、影印 `sources/facsimile/**`、可执行规则 `references/executable/*.json`），不是手抄。
 > 本报告只证明**文本来源与处理状态**，不证明预测准确率，也不等于人工影印核验。
 
+## 0. 更正与现状（2026-09-13 captain 补记）
+
+**本文件是 2026-09-12 的快照，其 §1 救应列有 2 行已过期。** 独立复核（reviewer t5）与 captain 复算一致确认：
+下表的救应计数以**当前仓内数据**为准，§1 对应两行按此更正后读取。
+
+- 全库救应总计：**self 117 ／ none 106 ／ unimplemented 30 ／ 交叉引用 5**（= ZPR-E-03×2、ZPR-E-05×1、ZPR-E-08×2），共 258 条。
+  §1 合计行原记 116／32／105／5，**已过期**。
+- 需更正的逐书行：
+  | 书 | §1 原记（self/unimpl/none） | 现状（self/unimpl/none） |
+  |---|---|---|
+  | `qiongtong-baojian`（120 条） | 66/11/43 | **66/10/44** |
+  | `sanming-tonghui`（20 条） | 4/7/9 | **5/6/9** |
+  其余 13 个可执行规则文件的逐书计数与 §1 一致（逐书实测：bushi-zhengzong 2/0/0、daliuren-daquan 13/1/8、guotian-jing 0/0/1、liuren-zhiyin 1/0/0、meihua-yishu 0/0/1、qimen-dunjia-tongzhi 0/0/6、shenfeng-tongkao 0/0/2、xingli-kaoyuan 0/0/1、xingxue-dacheng 0/3/3、yuxiaji-xiaoliuren 0/1/5、zengshan-buyi 19/0/0、ziping-zhenquan 11/6/17〔另交叉 5〕、ziwei-doushu-quanshu 0/3/9）。
+- 本报告**不是**当前状态的唯一来源：注解计数与逐书 draft 分布以 `DELIVERY_ACCEPTANCE.json#measured_baseline` 与 reviewer 的独立复算为准；
+  台账类字段（draft 总数、基线 SHA、`merged_main`）见 `GAP_LEDGER.json`，其中**已登记过期**的字段不得直接采信（见 `CAPTAIN-VERIFICATION-20260913.md` §4）。
+
 ## 1. 逐书处理去向（实测表）
 
 | 书（slug） | 注解条目 | source-reviewed | draft | 全文底本 | 影印PDF | 可执行规则 | 救应标签（self/unimpl/none/交叉） |

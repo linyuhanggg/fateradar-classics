@@ -4734,5 +4734,38 @@
       "调候档案「月内时段」粒度缺一层",
       "ZPR-E-06 财藏干时的口径待定"
     ]
+  },
+  "staleness_20260913": {
+    "marked_by": "captain（依据 reviewer t5 独立复算 + 本次实测）",
+    "why": "本文件是 2026-09-11/12 的快照；下列字段与当前仓内数据不符，引用时必须先核对，不得直接用于判 pass。",
+    "fields": {
+      "counts.source_reviewed": {
+        "in_file": 59934,
+        "current": 60004
+      },
+      "counts.draft": {
+        "in_file": 2905,
+        "current": 2835
+      },
+      "counts.merged_main": {
+        "in_file": false,
+        "current": "两分支成果均已为 origin/main 祖先（已集成）→ false 已被证伪"
+      },
+      "baselines.classics_origin_main": {
+        "in_file": "4cb96e35e545c8496906f9d36081d211f35f86c7",
+        "current": "eb4cabe→2c7714d（classics main 已推进）"
+      },
+      "baselines.product_origin_main": {
+        "in_file": "48f68a8af0fd0ac56d69a4b6c7e733c5bffe63c2",
+        "current": "230effd（product main）"
+      },
+      "rules[].level": {
+        "note": "旧快照 level1=164 / level2=88，落后于当前接线状态；以 product art-verdict-judgment-gap-matrix.json 为准"
+      },
+      "page_consumers.other_arts": {
+        "note": "已就地作废，见本文件 page_consumers.other_arts_stale"
+      }
+    },
+    "current_authority": "classics:docs/closeout/DELIVERY_ACCEPTANCE.json#measured_baseline（并经 reviewer 独立复算）"
   }
 }
