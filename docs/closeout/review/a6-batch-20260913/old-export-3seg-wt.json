@@ -1,0 +1,704 @@
+{
+ "format": "fateradar.reading-report",
+ "version": 1,
+ "exportedAt": "2026-09-13T03:00:00.000Z",
+ "ruleVersions": {
+  "baselineHead": "9daf8dd3387f703a0af99e88293231420c6f9330",
+  "classicsPins": {
+   "tiaohou": "83c654b9638d9b75f8c26cbb9ea5f3825b077d15",
+   "readingNotes": "a8edc922aefac20ca0fe87f1ca48f0e28d5249f3",
+   "knowledge": "37bbde0ab2f43ba1f6fd22ec90b70c18a08cce3a",
+   "featureClassics": "6ef9ac8",
+   "featureProduct": "98e04e6",
+   "note": "generated-file pins, not live origin/main HEAD"
+  },
+  "artRules": {
+   "art": "ziwei",
+   "sourceRevision": "3ca4a47d7ff2716a627a0c48a346f1a316e7d70c",
+   "from": "generated/ziwei-source-rules.json"
+  },
+  "ziwei": {
+   "taiweiSourceRevision": "0d6b7b70914c657d0779cb6ff6048a9f5dee3668",
+   "feixingSourceRevision": "0d6b7b70914c657d0779cb6ff6048a9f5dee3668",
+   "openingParagraphId": "taiwei-fu:L0005-L0005"
+  }
+ },
+ "input": {
+  "name": "golden",
+  "year": "1990",
+  "month": "1",
+  "day": "20",
+  "hour": "13",
+  "minute": "20",
+  "gender": "男",
+  "province": "上海",
+  "city": "上海",
+  "district": "黄浦区",
+  "arts": [
+   "ziwei"
+  ],
+  "focusArt": "ziwei",
+  "focusPosition": "命宫@2024-06-01@12",
+  "timeBasis": "clock"
+ },
+ "points": [
+  {
+   "paragraphIds": [
+    "ziwei-doushu-quanshu:L0069-L0069",
+    "ziwei-doushu-quanshu:L1595-L1595",
+    "ziwei-doushu-quanshu:L1580-L1580",
+    "ziwei-doushu-quanshu:L0927-L0937",
+    "ziwei-doushu-quanshu:L0976-L0987",
+    "ziwei-doushu-quanshu:L1617-L1617",
+    "ziwei-doushu-quanshu:L1572-L1572",
+    "ziwei-doushu-quanshu:L1587-L1587",
+    "ziwei-doushu-quanshu:L1589-L1589",
+    "ziwei-doushu-quanshu:L1619-L1619",
+    "taiwei-fu:L0005-L0005",
+    "feixing-ziwei-doushu-yuanzhi:L0018-L0018"
+   ],
+   "usedFacts": [
+    "宫位=命宫",
+    "地支=午",
+    "天干=庚",
+    "主星=空宫",
+    "本命四化=无",
+    "命宫=是",
+    "身宫=否",
+    "组合不满足=ZWD-E-02:辅弼夹帝",
+    "组合不满足=ZWD-E-04:君臣庆会",
+    "组合不满足=ZWD-E-08:金灿光辉",
+    "组合不满足=ZWD-E-09:魁命钺身",
+    "组合不满足=ZWD-E-10:禄马同宫",
+    "组合不满足=ZWD-E-12:贪火相逢",
+    "组合不满足=ZWD-E-03:日月夹财",
+    "组合不满足=ZWD-E-05:日出扶桑",
+    "组合不满足=ZWD-E-06:月朗天门",
+    "组合不满足=ZWD-E-11:武曲守垣",
+    "运限叠宫=信息不足"
+   ],
+   "unknowns": [
+    "太微赋开篇：不可一概论议——信息不足时不得一概下贵贱断语",
+    "运限成败条件尚未完整核定：信息不足",
+    "飞星原旨不是本盘十二宫取法：信息不足（不得混作同一套）",
+    "开篇限制：不可一概论议（信息不足时不得一概下贵贱断语）"
+   ],
+   "id": "ziwei-free-palace",
+   "title": "命宫：空宫",
+   "body": "命宫在庚午，主星空宫。四化无本命四化标记。空宫或单颗星都不是吉凶分数。本宫当前没有已核为星位符合的组合。没有命中不等于吉，也不另编格局填满。本宫已核不满足：辅弼夹帝（星位不符）；君臣庆会（星位不符）；金灿光辉（星位不符）；魁命钺身（星位不符）；禄马同宫（星位不符）；贪火相逢（星位不符）；日月夹财（星位不符）；日出扶桑（星位不符）；月朗天门（星位不符）；武曲守垣（星位不符）。不满足不得改写成缺项，也不得用套话补成吉。本宫没有标为条件未知的已核组合。本次按本命层解读，没有叠加运限层；要看某一层请在盘面选择大限/流年等时层。",
+   "instanceId": "ziwei:free:午",
+   "ruleIds": [
+    "ZWD-E-02",
+    "ZWD-E-04",
+    "ZWD-E-08",
+    "ZWD-E-09",
+    "ZWD-E-10",
+    "ZWD-E-12",
+    "ZWD-E-03",
+    "ZWD-E-05",
+    "ZWD-E-06",
+    "ZWD-E-11",
+    "taiwei-opening",
+    "feixing-identity"
+   ],
+   "locationIds": [
+    "ziwei:natal:palace:午"
+   ],
+   "verified": false
+  },
+  {
+   "paragraphIds": [
+    "ziwei-doushu-quanshu:L0069-L0069"
+   ],
+   "usedFacts": [
+    "宫位=命宫",
+    "地支=午",
+    "天干=庚",
+    "主星=空宫",
+    "辅星=禄存 地劫",
+    "杂曜=咸池 解神 天空",
+    "本命四化=无",
+    "组合=ZWD-E-02:辅弼夹帝",
+    "组合状态=not_satisfied",
+    "参与角色=相邻宫",
+    "条件/辅弼分别在紫微两侧=紫微在兄弟宫（巳），左辅在子女宫（卯），右弼在交友宫（亥）（星位不符）"
+   ],
+   "unknowns": [
+    "太微赋开篇：不可一概论议——信息不足时不得一概下贵贱断语",
+    "运限成败条件尚未完整核定：信息不足",
+    "飞星原旨不是本盘十二宫取法：信息不足（不得混作同一套）"
+   ],
+   "id": "ZWD-E-02",
+   "title": "辅弼夹帝 · 本盘星位不符",
+   "body": "本盘“辅弼夹帝”的已核星位不符。本宫参与位置：相邻宫·命宫（午）：未列本条星曜。紫微在兄弟宫（巳），左辅在子女宫（卯），右弼在交友宫（亥）。本盘不符合“辅弼夹帝”的这条结构定义。这条读法把主星与两侧的协助星一起看，关注主事与支援的位置关系。判断范围：这里只核相邻夹持，三方拱照不替代两侧。星曜的实际作用与煞破仍需另读。关联宫位：中心宫·兄弟宫（巳）：紫微(旺)；相邻宫·夫妻宫（辰）：未列本条星曜；相邻宫·命宫（午）：未列本条星曜；星曜实际位置·子女宫（卯）：左辅；星曜实际位置·交友宫（亥）：右弼。本条绑定段落 ID：ziwei-doushu-quanshu:L0069-L0069。",
+   "sourceRevision": "3ca4a47d7ff2716a627a0c48a346f1a316e7d70c",
+   "instanceId": "ziwei:natal:午:ZWD-E-02",
+   "ruleIds": [
+    "ZWD-E-02"
+   ],
+   "locationIds": [
+    "ziwei:natal:palace:午"
+   ],
+   "source": {
+    "kind": "anchored_text",
+    "title": "紫微斗数全书",
+    "bookSlug": "ziwei-doushu-quanshu",
+    "paragraphId": "ziwei-doushu-quanshu:L0069-L0069",
+    "quote": "輔弼夾帝為上品，桃花犯主為至淫。",
+    "anchor": {
+     "file": "sources/fulltext/ziwei/ziwei-doushu-quanshu/fulltext.md",
+     "startLine": 69,
+     "endLine": 69
+    }
+   },
+   "verified": false
+  },
+  {
+   "paragraphIds": [
+    "ziwei-doushu-quanshu:L1595-L1595"
+   ],
+   "usedFacts": [
+    "宫位=命宫",
+    "地支=午",
+    "天干=庚",
+    "主星=空宫",
+    "辅星=禄存 地劫",
+    "杂曜=咸池 解神 天空",
+    "本命四化=无",
+    "组合=ZWD-E-04:君臣庆会",
+    "组合状态=not_satisfied",
+    "参与角色=命宫",
+    "条件/紫微同守命宫=紫微在兄弟宫（巳）（星位不符）",
+    "条件/左辅同守命宫=左辅在子女宫（卯）（星位不符）",
+    "条件/右弼同守命宫=右弼在交友宫（亥）（星位不符）"
+   ],
+   "unknowns": [
+    "太微赋开篇：不可一概论议——信息不足时不得一概下贵贱断语",
+    "运限成败条件尚未完整核定：信息不足",
+    "飞星原旨不是本盘十二宫取法：信息不足（不得混作同一套）"
+   ],
+   "id": "ZWD-E-04",
+   "title": "君臣庆会 · 本盘星位不符",
+   "body": "本盘“君臣庆会”的已核星位不符。本宫参与位置：命宫·命宫（午）：未列本条星曜。紫微在兄弟宫（巳）；左辅在子女宫（卯）；右弼在交友宫（亥）。本盘不符合“君臣庆会”的这条结构定义。君臣的比喻指主事星与协助星在命宫同处，可以从分工和支援这个角度继续读。判断范围：相、武、阴来会是原文增强条件；本条只核紫微与左右同守命的基本结构。关联宫位：命宫·命宫（午）：未列本条星曜；星曜实际位置·兄弟宫（巳）：紫微(旺)；星曜实际位置·子女宫（卯）：左辅；星曜实际位置·交友宫（亥）：右弼。本条绑定段落 ID：ziwei-doushu-quanshu:L1595-L1595。",
+   "sourceRevision": "3ca4a47d7ff2716a627a0c48a346f1a316e7d70c",
+   "instanceId": "ziwei:natal:午:ZWD-E-04",
+   "ruleIds": [
+    "ZWD-E-04"
+   ],
+   "locationIds": [
+    "ziwei:natal:palace:午"
+   ],
+   "source": {
+    "kind": "anchored_text",
+    "title": "紫微斗数全书",
+    "bookSlug": "ziwei-doushu-quanshu",
+    "paragraphId": "ziwei-doushu-quanshu:L1595-L1595",
+    "quote": "君臣慶會 紫微左右同守命是也，更會相武陰妙上。",
+    "anchor": {
+     "file": "sources/fulltext/ziwei/ziwei-doushu-quanshu/fulltext.md",
+     "startLine": 1595,
+     "endLine": 1595
+    }
+   },
+   "verified": false
+  },
+  {
+   "paragraphIds": [
+    "ziwei-doushu-quanshu:L1580-L1580"
+   ],
+   "usedFacts": [
+    "宫位=命宫",
+    "地支=午",
+    "天干=庚",
+    "主星=空宫",
+    "辅星=禄存 地劫",
+    "杂曜=咸池 解神 天空",
+    "本命四化=无",
+    "组合=ZWD-E-08:金灿光辉",
+    "组合状态=not_satisfied",
+    "参与角色=命宫",
+    "条件/太阳在午命宫=太阳在财帛宫（寅）（星位不符）",
+    "条件/命宫唯一十四主星是太阳=命宫十四主星为无（星位不符）"
+   ],
+   "unknowns": [
+    "太微赋开篇：不可一概论议——信息不足时不得一概下贵贱断语",
+    "运限成败条件尚未完整核定：信息不足",
+    "飞星原旨不是本盘十二宫取法：信息不足（不得混作同一套）"
+   ],
+   "id": "ZWD-E-08",
+   "title": "金灿光辉 · 本盘星位不符",
+   "body": "本盘“金灿光辉”的已核星位不符。本宫参与位置：命宫·命宫（午）：未列本条星曜。太阳在财帛宫（寅）；命宫十四主星为无。本盘不符合“金灿光辉”的这条结构定义。金灿光辉在这条原文中指太阳单守午命宫；辅星和杂曜仍可同时存在。判断范围：单守限定十四主星，不是清空全部辅杂曜。这里只记录位置结构。关联宫位：命宫·命宫（午）：未列本条星曜。本条绑定段落 ID：ziwei-doushu-quanshu:L1580-L1580。",
+   "sourceRevision": "3ca4a47d7ff2716a627a0c48a346f1a316e7d70c",
+   "instanceId": "ziwei:natal:午:ZWD-E-08",
+   "ruleIds": [
+    "ZWD-E-08"
+   ],
+   "locationIds": [
+    "ziwei:natal:palace:午"
+   ],
+   "source": {
+    "kind": "anchored_text",
+    "title": "紫微斗数全书",
+    "bookSlug": "ziwei-doushu-quanshu",
+    "paragraphId": "ziwei-doushu-quanshu:L1580-L1580",
+    "quote": "金燦光輝 太陽單守，命在午宮是也。",
+    "anchor": {
+     "file": "sources/fulltext/ziwei/ziwei-doushu-quanshu/fulltext.md",
+     "startLine": 1580,
+     "endLine": 1580
+    }
+   },
+   "verified": false
+  },
+  {
+   "paragraphIds": [
+    "ziwei-doushu-quanshu:L0927-L0937"
+   ],
+   "usedFacts": [
+    "宫位=命宫",
+    "地支=午",
+    "天干=庚",
+    "主星=空宫",
+    "辅星=禄存 地劫",
+    "杂曜=咸池 解神 天空",
+    "本命四化=无",
+    "组合=ZWD-E-09:魁命钺身",
+    "组合状态=not_satisfied",
+    "参与角色=命宫",
+    "条件/天魁在命宫=天魁在迁移宫（子）（星位不符）",
+    "条件/天钺在实际身宫=天钺在福德宫（申），身宫附在福德宫（申）（星位符合）"
+   ],
+   "unknowns": [
+    "太微赋开篇：不可一概论议——信息不足时不得一概下贵贱断语",
+    "运限成败条件尚未完整核定：信息不足",
+    "飞星原旨不是本盘十二宫取法：信息不足（不得混作同一套）"
+   ],
+   "id": "ZWD-E-09",
+   "title": "魁命钺身 · 本盘星位不符",
+   "body": "本盘“魁命钺身”的已核星位不符。本宫参与位置：命宫·命宫（午）：未列本条星曜。天魁在迁移宫（子）；天钺在福德宫（申），身宫附在福德宫（申）。本盘不符合“魁命钺身”的这条结构定义。这条读法分别观察命与身两处的贵助，身宫按实际标记定位。判断范围：本条不交换魁钺；原文吉聚及四十后墓库等行限条件不在此本命位置判断内。关联宫位：命宫·命宫（午）：未列本条星曜；星曜实际位置·迁移宫（子）：天魁；身宫·福德宫（申）：天钺。本条绑定段落 ID：ziwei-doushu-quanshu:L0927-L0937。",
+   "sourceRevision": "3ca4a47d7ff2716a627a0c48a346f1a316e7d70c",
+   "instanceId": "ziwei:natal:午:ZWD-E-09",
+   "ruleIds": [
+    "ZWD-E-09"
+   ],
+   "locationIds": [
+    "ziwei:natal:palace:午"
+   ],
+   "source": {
+    "kind": "anchored_text",
+    "title": "紫微斗数全书",
+    "bookSlug": "ziwei-doushu-quanshu",
+    "paragraphId": "ziwei-doushu-quanshu:L0927-L0937",
+    "quote": "希夷先生答曰：魁鉞斗中司科之星，入命坐貴向貴，或得左右吉聚無不富貴。\n況二星又為上界和合之神，若魁臨命，鉞守身，更迭相守。",
+    "anchor": {
+     "file": "sources/fulltext/ziwei/ziwei-doushu-quanshu/fulltext.md",
+     "startLine": 927,
+     "endLine": 928
+    }
+   },
+   "verified": false
+  },
+  {
+   "paragraphIds": [
+    "ziwei-doushu-quanshu:L0976-L0987"
+   ],
+   "usedFacts": [
+    "宫位=命宫",
+    "地支=午",
+    "天干=庚",
+    "主星=空宫",
+    "辅星=禄存 地劫",
+    "杂曜=咸池 解神 天空",
+    "本命四化=无",
+    "组合=ZWD-E-10:禄马同宫",
+    "组合状态=not_satisfied",
+    "参与角色=星曜位置",
+    "条件/禄存和天马本命同宫=禄存在命宫（午），天马在交友宫（亥）（星位不符）"
+   ],
+   "unknowns": [
+    "太微赋开篇：不可一概论议——信息不足时不得一概下贵贱断语",
+    "运限成败条件尚未完整核定：信息不足",
+    "飞星原旨不是本盘十二宫取法：信息不足（不得混作同一套）"
+   ],
+   "id": "ZWD-E-10",
+   "title": "禄马同宫 · 本盘星位不符",
+   "body": "本盘“禄马同宫”的已核星位不符。本宫参与位置：星曜位置·命宫（午）：禄存。禄存在命宫（午），天马在交友宫（亥）。本盘不符合“禄马同宫”的这条结构定义。禄与马分别借资源和行动作比，这里采用原书禄马交驰的同宫支路。判断范围：化禄不能代替禄存，流年星不能代替本命星。截路空亡、死绝等影响仍须另读，未据同宫判财运。关联宫位：星曜位置·命宫（午）：禄存；星曜位置·交友宫（亥）：天马。本条绑定段落 ID：ziwei-doushu-quanshu:L0976-L0987。",
+   "sourceRevision": "3ca4a47d7ff2716a627a0c48a346f1a316e7d70c",
+   "instanceId": "ziwei:natal:午:ZWD-E-10",
+   "ruleIds": [
+    "ZWD-E-10"
+   ],
+   "locationIds": [
+    "ziwei:natal:palace:午"
+   ],
+   "source": {
+    "kind": "anchored_text",
+    "title": "紫微斗数全书",
+    "bookSlug": "ziwei-doushu-quanshu",
+    "paragraphId": "ziwei-doushu-quanshu:L0976-L0987",
+    "quote": "希夷先生答曰：諸宮各有制化，如身命臨之謂之驛馬。\n喜祿存、紫府、昌曲，守照為吉。\n如大小二限臨之，更遇祿存紫府，流昌必利。\n如與祿存同宮，謂之祿馬交馳，又曰折鞭馬；\n紫府同宮謂之扶轝馬；\n刑殺同宮謂之負屍馬；\n火星同宮謂之戰馬；\n日月同宮謂雌雄馬；\n逢空亡謂之死馬、亡馬；\n居絕死謂之死馬；\n遇陀羅謂之折足馬。\n以上犯此數者，俱主災病，流年值之依此斷。",
+    "anchor": {
+     "file": "sources/fulltext/ziwei/ziwei-doushu-quanshu/fulltext.md",
+     "startLine": 976,
+     "endLine": 987
+    }
+   },
+   "verified": false
+  },
+  {
+   "paragraphIds": [
+    "ziwei-doushu-quanshu:L1617-L1617"
+   ],
+   "usedFacts": [
+    "宫位=命宫",
+    "地支=午",
+    "天干=庚",
+    "主星=空宫",
+    "辅星=禄存 地劫",
+    "杂曜=咸池 解神 天空",
+    "本命四化=无",
+    "组合=ZWD-E-12:贪火相逢",
+    "组合状态=not_satisfied",
+    "参与角色=命宫、三方四正已见干扰",
+    "条件/贪狼守命=贪狼在疾厄宫（丑）（星位不符）",
+    "条件/火星守命=火星在事业宫（戌）（星位不符）",
+    "条件/贪狼亮度为庙或旺=贪狼亮度为庙（星位符合）",
+    "条件/火星亮度为庙或旺=火星亮度为庙（星位符合）"
+   ],
+   "unknowns": [
+    "太微赋开篇：不可一概论议——信息不足时不得一概下贵贱断语",
+    "运限成败条件尚未完整核定：信息不足",
+    "飞星原旨不是本盘十二宫取法：信息不足（不得混作同一套）"
+   ],
+   "id": "ZWD-E-12",
+   "title": "贪火相逢 · 本盘星位不符",
+   "body": "本盘“贪火相逢”的已核星位不符。本宫参与位置：命宫·命宫（午）：未列本条星曜；三方四正已见干扰·命宫（午）：地劫。贪狼在疾厄宫（丑）；火星在事业宫（戌）；贪狼亮度为庙；火星亮度为庙。本盘不符合“贪火相逢”的这条结构定义。本条只核贪火同命并且二星庙旺的结构，可继续查看同盘已列出的其他作用。判断范围：L1617同命庙旺与L1384三合火贵是不同来源分支，不能互换。；三方无凶尚未完整判定；已列羊陀铃空劫和化忌只是当前可观察的干扰，不是凶曜穷举，未见这些也不等于全无煞破。关联宫位：命宫·命宫（午）：未列本条星曜；星曜实际位置·疾厄宫（丑）：贪狼(庙)化权；星曜实际位置·事业宫（戌）：火星(庙)；三方四正已见干扰·命宫（午）：地劫。本条绑定段落 ID：ziwei-doushu-quanshu:L1617-L1617。",
+   "sourceRevision": "3ca4a47d7ff2716a627a0c48a346f1a316e7d70c",
+   "instanceId": "ziwei:natal:午:ZWD-E-12",
+   "ruleIds": [
+    "ZWD-E-12"
+   ],
+   "locationIds": [
+    "ziwei:natal:palace:午"
+   ],
+   "source": {
+    "kind": "anchored_text",
+    "title": "紫微斗数全书",
+    "bookSlug": "ziwei-doushu-quanshu",
+    "paragraphId": "ziwei-doushu-quanshu:L1617-L1617",
+    "quote": "貪火相逢 謂二星守命同居廟旺是也。",
+    "anchor": {
+     "file": "sources/fulltext/ziwei/ziwei-doushu-quanshu/fulltext.md",
+     "startLine": 1617,
+     "endLine": 1617
+    }
+   },
+   "verified": false
+  },
+  {
+   "paragraphIds": [
+    "ziwei-doushu-quanshu:L1572-L1572"
+   ],
+   "usedFacts": [
+    "宫位=命宫",
+    "地支=午",
+    "天干=庚",
+    "主星=空宫",
+    "辅星=禄存 地劫",
+    "杂曜=咸池 解神 天空",
+    "本命四化=无",
+    "组合=ZWD-E-03:日月夹财",
+    "组合状态=not_satisfied",
+    "定义宫核验=true",
+    "条件/武曲守命或财帛=武曲在疾厄宫（丑）（星位不符）",
+    "条件/日月分处两个邻宫=太阳在财帛宫（寅），太阴在迁移宫（子）（星位符合）"
+   ],
+   "unknowns": [
+    "太微赋开篇：不可一概论议——信息不足时不得一概下贵贱断语",
+    "运限成败条件尚未完整核定：信息不足",
+    "飞星原旨不是本盘十二宫取法：信息不足（不得混作同一套）"
+   ],
+   "id": "ZWD-E-03",
+   "title": "日月夹财 · 本盘星位不符",
+   "body": "本盘已核“日月夹财”为星位不符。武曲守命或财帛：武曲在疾厄宫（丑）（星位不符）；日月分处两个邻宫：太阳在财帛宫（寅），太阴在迁移宫（子）（星位符合）。命宫是该条原文点名的宫位之一，但相关星曜没有落在本宫所需位置。武曲在疾厄宫（丑）；太阳在财帛宫（寅），太阴在迁移宫（子）。本盘不符合“日月夹财”的这条结构定义。日月位于财星两侧，是这条读法观察资源与支持的一种结构。判断范围：本支的中心是武曲，且限定命宫或财帛宫。；结构名称不表示已经推得财产数量或财富结果。本条绑定段落 ID：ziwei-doushu-quanshu:L1572-L1572。",
+   "sourceRevision": "3ca4a47d7ff2716a627a0c48a346f1a316e7d70c",
+   "instanceId": "ziwei:natal:午:ZWD-E-03",
+   "ruleIds": [
+    "ZWD-E-03"
+   ],
+   "locationIds": [
+    "ziwei:natal:palace:午"
+   ],
+   "source": {
+    "kind": "anchored_text",
+    "title": "紫微斗数全书",
+    "bookSlug": "ziwei-doushu-quanshu",
+    "paragraphId": "ziwei-doushu-quanshu:L1572-L1572",
+    "quote": "日月夾財 武守命日月來夾是也，財帛宮亦然。",
+    "anchor": {
+     "file": "sources/fulltext/ziwei/ziwei-doushu-quanshu/fulltext.md",
+     "startLine": 1572,
+     "endLine": 1572
+    }
+   },
+   "verified": false
+  },
+  {
+   "paragraphIds": [
+    "ziwei-doushu-quanshu:L1587-L1587"
+   ],
+   "usedFacts": [
+    "宫位=命宫",
+    "地支=午",
+    "天干=庚",
+    "主星=空宫",
+    "辅星=禄存 地劫",
+    "杂曜=咸池 解神 天空",
+    "本命四化=无",
+    "组合=ZWD-E-05:日出扶桑",
+    "组合状态=not_satisfied",
+    "定义宫核验=true",
+    "条件/太阳在卯=太阳在财帛宫（寅）（星位不符）",
+    "条件/限定命宫或官禄=所在主题为财帛宫（寅）（星位不符）"
+   ],
+   "unknowns": [
+    "太微赋开篇：不可一概论议——信息不足时不得一概下贵贱断语",
+    "运限成败条件尚未完整核定：信息不足",
+    "飞星原旨不是本盘十二宫取法：信息不足（不得混作同一套）"
+   ],
+   "id": "ZWD-E-05",
+   "title": "日出扶桑 · 本盘星位不符",
+   "body": "本盘已核“日出扶桑”为星位不符。太阳在卯：太阳在财帛宫（寅）（星位不符）；限定命宫或官禄：所在主题为财帛宫（寅）（星位不符）。命宫是该条原文点名的宫位之一，但相关星曜没有落在本宫所需位置。太阳在财帛宫（寅）；所在主题为财帛宫（寅）。本盘不符合“日出扶桑”的这条结构定义。扶桑借早晨的日光作比，描述太阳在卯、同时处在命宫或事业宫的位置。判断范围：这是原文限定的位置名称，不承诺职位或考试结果。本条绑定段落 ID：ziwei-doushu-quanshu:L1587-L1587。",
+   "sourceRevision": "3ca4a47d7ff2716a627a0c48a346f1a316e7d70c",
+   "instanceId": "ziwei:natal:午:ZWD-E-05",
+   "ruleIds": [
+    "ZWD-E-05"
+   ],
+   "locationIds": [
+    "ziwei:natal:palace:午"
+   ],
+   "source": {
+    "kind": "anchored_text",
+    "title": "紫微斗数全书",
+    "bookSlug": "ziwei-doushu-quanshu",
+    "paragraphId": "ziwei-doushu-quanshu:L1587-L1587",
+    "quote": "日出扶桑 日在卯守命是也，守官祿宮亦然。",
+    "anchor": {
+     "file": "sources/fulltext/ziwei/ziwei-doushu-quanshu/fulltext.md",
+     "startLine": 1587,
+     "endLine": 1587
+    }
+   },
+   "verified": false
+  },
+  {
+   "paragraphIds": [
+    "ziwei-doushu-quanshu:L1589-L1589"
+   ],
+   "usedFacts": [
+    "宫位=命宫",
+    "地支=午",
+    "天干=庚",
+    "主星=空宫",
+    "辅星=禄存 地劫",
+    "杂曜=咸池 解神 天空",
+    "本命四化=无",
+    "组合=ZWD-E-06:月朗天门",
+    "组合状态=not_satisfied",
+    "定义宫核验=true",
+    "条件/太阴在亥=太阴在迁移宫（子）（星位不符）",
+    "条件/限定命宫=所在主题为迁移宫（子）（星位不符）"
+   ],
+   "unknowns": [
+    "太微赋开篇：不可一概论议——信息不足时不得一概下贵贱断语",
+    "运限成败条件尚未完整核定：信息不足",
+    "飞星原旨不是本盘十二宫取法：信息不足（不得混作同一套）"
+   ],
+   "id": "ZWD-E-06",
+   "title": "月朗天门 · 本盘星位不符",
+   "body": "本盘已核“月朗天门”为星位不符。太阴在亥：太阴在迁移宫（子）（星位不符）；限定命宫：所在主题为迁移宫（子）（星位不符）。命宫是该条原文点名的宫位之一，但相关星曜没有落在本宫所需位置。太阴在迁移宫（子）；所在主题为迁移宫（子）。本盘不符合“月朗天门”的这条结构定义。天门在此指亥位，月朗描写太阴守命的传统光辉意象。判断范围：本条采用位置格名。后注的子年、夜生等附加取法未与这一基础结构混算。本条绑定段落 ID：ziwei-doushu-quanshu:L1589-L1589。",
+   "sourceRevision": "3ca4a47d7ff2716a627a0c48a346f1a316e7d70c",
+   "instanceId": "ziwei:natal:午:ZWD-E-06",
+   "ruleIds": [
+    "ZWD-E-06"
+   ],
+   "locationIds": [
+    "ziwei:natal:palace:午"
+   ],
+   "source": {
+    "kind": "anchored_text",
+    "title": "紫微斗数全书",
+    "bookSlug": "ziwei-doushu-quanshu",
+    "paragraphId": "ziwei-doushu-quanshu:L1589-L1589",
+    "quote": "月落亥宮 月在亥守命是也，又名月朗天門。",
+    "anchor": {
+     "file": "sources/fulltext/ziwei/ziwei-doushu-quanshu/fulltext.md",
+     "startLine": 1589,
+     "endLine": 1589
+    }
+   },
+   "verified": false
+  },
+  {
+   "paragraphIds": [
+    "ziwei-doushu-quanshu:L1619-L1619"
+   ],
+   "usedFacts": [
+    "宫位=命宫",
+    "地支=午",
+    "天干=庚",
+    "主星=空宫",
+    "辅星=禄存 地劫",
+    "杂曜=咸池 解神 天空",
+    "本命四化=无",
+    "组合=ZWD-E-11:武曲守垣",
+    "组合状态=not_satisfied",
+    "定义宫核验=true",
+    "条件/武曲在卯=武曲在疾厄宫（丑）（星位不符）",
+    "条件/限定命宫=所在主题为疾厄宫（丑）（星位不符）"
+   ],
+   "unknowns": [
+    "太微赋开篇：不可一概论议——信息不足时不得一概下贵贱断语",
+    "运限成败条件尚未完整核定：信息不足",
+    "飞星原旨不是本盘十二宫取法：信息不足（不得混作同一套）"
+   ],
+   "id": "ZWD-E-11",
+   "title": "武曲守垣 · 本盘星位不符",
+   "body": "本盘已核“武曲守垣”为星位不符。武曲在卯：武曲在疾厄宫（丑）（星位不符）；限定命宫：所在主题为疾厄宫（丑）（星位不符）。命宫是该条原文点名的宫位之一，但相关星曜没有落在本宫所需位置。武曲在疾厄宫（丑）；所在主题为疾厄宫（丑）。本盘不符合“武曲守垣”的这条结构定义。武曲守垣在这条原文里只认武曲守卯命宫，其他位置另有各自读法。判断范围：原文限定位置，现行亮度为利也不据此改成庙；名称不代表完整贵格。本条绑定段落 ID：ziwei-doushu-quanshu:L1619-L1619。",
+   "sourceRevision": "3ca4a47d7ff2716a627a0c48a346f1a316e7d70c",
+   "instanceId": "ziwei:natal:午:ZWD-E-11",
+   "ruleIds": [
+    "ZWD-E-11"
+   ],
+   "locationIds": [
+    "ziwei:natal:palace:午"
+   ],
+   "source": {
+    "kind": "anchored_text",
+    "title": "紫微斗数全书",
+    "bookSlug": "ziwei-doushu-quanshu",
+    "paragraphId": "ziwei-doushu-quanshu:L1619-L1619",
+    "quote": "武曲守垣 武守命卯宮是也，余不是。",
+    "anchor": {
+     "file": "sources/fulltext/ziwei/ziwei-doushu-quanshu/fulltext.md",
+     "startLine": 1619,
+     "endLine": 1619
+    }
+   },
+   "verified": false
+  },
+  {
+   "paragraphIds": [
+    "taiwei-fu:L0005-L0005"
+   ],
+   "usedFacts": [
+    "来源=太微赋开篇"
+   ],
+   "unknowns": [
+    "开篇限制：不可一概论议（信息不足时不得一概下贵贱断语）",
+    "太微赋开篇：不可一概论议——信息不足时不得一概下贵贱断语",
+    "运限成败条件尚未完整核定：信息不足",
+    "飞星原旨不是本盘十二宫取法：信息不足（不得混作同一套）"
+   ],
+   "id": "taiwei-opening",
+   "title": "太微赋开篇限制",
+   "body": "开篇要求不可一概论议，后文组合口诀必须连同这个限制阅读。",
+   "sourceRevision": "0d6b7b70914c657d0779cb6ff6048a9f5dee3668",
+   "instanceId": "ziwei:natal:午:taiwei-opening",
+   "ruleIds": [],
+   "locationIds": [
+    "ziwei:natal:palace:午"
+   ],
+   "source": {
+    "kind": "anchored_text",
+    "title": "太微赋",
+    "bookSlug": "taiwei-fu",
+    "paragraphId": "taiwei-fu:L0005-L0005",
+    "quote": "斗數至玄至微，理旨難明，雖設問於百篇之中，猶有言而未盡，至如星之分野，各有所屬，壽夭賢愚，富貴貧賤，不可一概論議。",
+    "anchor": {
+     "file": "sources/fulltext/ziwei/taiwei-fu/fulltext.md",
+     "startLine": 5,
+     "endLine": 5
+    }
+   },
+   "verified": false
+  },
+  {
+   "paragraphIds": [
+    "feixing-ziwei-doushu-yuanzhi:L0018-L0018"
+   ],
+   "usedFacts": [
+    "来源=飞星原旨题署"
+   ],
+   "unknowns": [
+    "飞星原旨不是本盘十二宫取法：信息不足（不得混作同一套）",
+    "太微赋开篇：不可一概论议——信息不足时不得一概下贵贱断语",
+    "运限成败条件尚未完整核定：信息不足"
+   ],
+   "id": "feixing-identity",
+   "title": "飞星原旨不是本盘取法",
+   "body": "本书题署只能证明书名，不能代替全书排盘或十二宫取法。",
+   "sourceRevision": "0d6b7b70914c657d0779cb6ff6048a9f5dee3668",
+   "instanceId": "ziwei:natal:午:feixing-identity",
+   "ruleIds": [],
+   "locationIds": [
+    "ziwei:natal:palace:午"
+   ],
+   "source": {
+    "kind": "anchored_text",
+    "title": "華山陳希夷先生飛星紫微斗數原旨",
+    "bookSlug": "feixing-ziwei-doushu-yuanzhi",
+    "paragraphId": "feixing-ziwei-doushu-yuanzhi:L0018-L0018",
+    "quote": "華山陳希夷先生飛星紫微斗數原旨",
+    "anchor": {
+     "file": "sources/fulltext/ziwei/feixing-ziwei-doushu-yuanzhi/fulltext.md",
+     "startLine": 18,
+     "endLine": 18
+    }
+   },
+   "verified": false
+  },
+  {
+   "paragraphIds": [
+    "ziwei-doushu-quanshu:L1772-L1772"
+   ],
+   "usedFacts": [
+    "本命四化宫=夫妻天梁化科、疾厄武曲化禄 贪狼化权、交友文曲化忌",
+    "判定规则=ZWD-E-01"
+   ],
+   "unknowns": [
+    "太微赋开篇：不可一概论议——信息不足时不得一概下贵贱断语",
+    "运限成败条件尚未完整核定：信息不足",
+    "飞星原旨不是本盘十二宫取法：信息不足（不得混作同一套）"
+   ],
+   "id": "ziwei-free-sihua-chart",
+   "title": "本命四化：夫妻天梁化科、疾厄武曲化禄 贪狼化权、交友文曲化忌",
+   "body": "本盘四化落宫记录：夫妻天梁化科、疾厄武曲化禄 贪狼化权、交友文曲化忌。化禄不是得财结论，化忌不是祸福结论；本条只记落宫与出处。",
+   "sourceRevision": "3ca4a47d7ff2716a627a0c48a346f1a316e7d70c",
+   "instanceId": "ziwei:free:sihua:chart",
+   "ruleIds": [
+    "ZWD-E-01"
+   ],
+   "locationIds": [
+    "ziwei:natal:palace:辰"
+   ],
+   "source": {
+    "kind": "anchored_text",
+    "title": "紫微斗数全书",
+    "bookSlug": "ziwei-doushu-quanshu",
+    "paragraphId": "ziwei-doushu-quanshu:L1772-L1772",
+    "quote": "戊貪月弼機為主，己武貪梁曲最平，庚日武陰同為首，辛巨陽曲昌至臨，",
+    "anchor": {
+     "file": "sources/fulltext/ziwei/ziwei-doushu-quanshu/fulltext.md",
+     "startLine": 1772,
+     "endLine": 1772
+    }
+   },
+   "verified": false
+  }
+ ],
+ "caveats": [
+  "本导出仅锁定同 head 输入/选位与 provenance 联动，不是产品交付。",
+  "事实不足处保留未知，不默成立，不编造吉凶或预测准确率。"
+ ]
+}

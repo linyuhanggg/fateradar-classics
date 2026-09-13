@@ -1,0 +1,329 @@
+diff --git a/tests/engine/a6-liuyao-ziwei-free-reading-consumers.test.ts b/tests/engine/a6-liuyao-ziwei-free-reading-consumers.test.ts
+new file mode 100644
+index 0000000..226b772
+--- /dev/null
++++ b/tests/engine/a6-liuyao-ziwei-free-reading-consumers.test.ts
+@@ -0,0 +1,196 @@
++import { describe, expect, it } from "vitest";
++import { buildZiwei } from "@/lib/engine/ziwei";
++import { buildZiweiFreeReading } from "@/lib/engine/ziwei-free-reading";
++import { buildLiuyao, type LiuyaoLines } from "@/lib/engine/liuyao";
++import { buildLiuyaoFreeReading } from "@/lib/engine/liuyao-free-reading";
++import type { ChartReadingPoint } from "@/lib/engine/reading-notes";
++import { exportReadingReportFromPoints, readBackReadingReport } from "@/lib/reading-input-export";
++import { subjectOf } from "../helpers/subject";
++
++/**
++ * A6 验收：六爻／紫微 dedicated 免费解释**接实际页面与导出消费者**。
++ *
++ * 本文件钉的是两类实测缺陷（2026-09-13 收尾轮，改前先复现、改后钉住）：
++ *
++ * 六爻（`src/lib/engine/liuyao-free-reading.ts`）
++ * - 逐爻焦点此前只返回 1 个点：该点无 `source`（古籍读法），且盘级规则点（旬空／三刑／救应）
++ *   全部消失——而这些点在总览焦点里有。用户点开一爻后，页面出处块与导出都断链。
++ * - 总览／逐爻点把 `liuyao-free-overview`、`liuyao-free-line` 这些**解读点 ID** 同时写成
++ *   「规则 ID」与「段落 ID」（`reading-point-source.tsx` 明确要求点 ID 不能冒充规则/段落锚点）。
++ *
++ * 紫微（`src/lib/engine/ziwei-free-reading.ts`）
++ * - 运限层不跟所选层：`find((item) => item.available)` 恒取第一层（大限），于是页面写
++ *   「正在查看 · 流年 甲辰」、免费解释却写「当前运限层大限丁卯叠在本宫」——同一屏自相矛盾，
++ *   A6「网页显示与核心事实一致」不成立。
++ */
++
++const place = {
++  gender: "男" as const,
++  province: "上海",
++  city: "上海",
++  district: "黄浦区",
++};
++
++const clockSubject = (year: number, month: number, day: number, hour: number, minute = 0) => ({
++  ...subjectOf({ ...place, year, month, day, hour, minute }),
++  timeBasis: "clock" as const,
++});
++
++const lines = (symbols: string): LiuyaoLines =>
++  [...symbols].map((symbol) => ({
++    yin: symbol === "阳" || symbol === "○" ? 1 : 0,
++    moving: symbol === "○" || symbol === "ㄨ",
++  })) as LiuyaoLines;
++
++const idsOf = (points: readonly ChartReadingPoint[]) =>
++  points.map((point) => String(point.instanceId ?? point.id ?? point.title));
++
++const selfFreeIds = /^(liuyao|ziwei)-free-/;
++
++describe("A6 六爻：逐爻焦点与总览同源，出处/导出不再断链", () => {
++  const chart = buildLiuyao({
++    lines: lines("○阴阴阴阴阴"),
++    dayGanZhi: "甲子",
++    monthZhi: "卯",
++    useRelative: "世爻",
++  } as never);
++
++  const overview = buildLiuyaoFreeReading(chart);
++  const lineFocus = buildLiuyaoFreeReading(chart, { lineIndex: 0 });
++  const otherLine = buildLiuyaoFreeReading(chart, { lineIndex: 4 });
++
++  it("总览带得上的盘级规则点，逐爻焦点一个都不能少", () => {
++    const overviewIds = new Set(idsOf(overview.points));
++    const lineIds = new Set(idsOf(lineFocus.points));
++    // 盘级点在总览里（此前那个只补总览的修复证明过它们存在）
++    expect([...overviewIds].some((id) => id.includes("ZSB-E-14"))).toBe(true);
++    for (const id of overviewIds) {
++      if (id === "liuyao:free:overview") continue;
++      expect(lineIds.has(id), `逐爻焦点缺盘级点 ${id}`).toBe(true);
++    }
++    // 逐爻焦点＝本爻白话点 + 本爻命中的规则点 + 盘级点；换爻则本爻白话点与正文随之变化
++    expect(lineIds.has("liuyao:free:main:1")).toBe(true);
++    expect(lineIds.has("liuyao:free:overview")).toBe(false);
++    expect(idsOf(lineFocus.points)).not.toEqual(idsOf(otherLine.points));
++    expect(lineFocus.paragraphs.join("")).not.toBe(otherLine.paragraphs.join(""));
++  });
++
++  it("逐爻焦点至少有能回到原文的古籍读法点（改前为 0）", () => {
++    const anchored = lineFocus.points.filter((point) => point.source && point.sourceRevision);
++    expect(anchored.length).toBeGreaterThan(0);
++    for (const point of anchored) {
++      expect(point.source!.kind).toBe("anchored_text");
++    }
++  });
++
++  it("解读点 ID 不再冒充规则 ID / 段落 ID", () => {
++    for (const point of [...overview.points, ...lineFocus.points]) {
++      const ownId = String(point.id ?? "");
++      if (!selfFreeIds.test(ownId)) continue;
++      expect(point.ruleIds ?? []).not.toContain(ownId);
++    }
++    const overviewPoint = overview.points.find((point) => point.id === "liuyao-free-overview")!;
++    expect(overviewPoint.paragraphIds ?? []).not.toContain("liuyao-free-overview");
++    const linePoint = lineFocus.points.find((point) => point.id === "liuyao-free-line")!;
++    expect(linePoint.paragraphIds ?? []).not.toContain("liuyao-free-line");
++  });
++
++  it("导出跟选中爻：文件里带得出本术 revision 与古籍锚点", () => {
++    const report = readBackReadingReport(
++      exportReadingReportFromPoints({
++        subject: clockSubject(1990, 1, 20, 13),
++        focusArt: "liuyao",
++        focusPosition: "gua:000000:line-1",
++        points: lineFocus.points,
++        exportedAt: "2026-09-13T02:00:00.000Z",
++      }),
++    );
++    expect(report.points.length).toBeGreaterThan(1);
++    expect(report.points.some((point) => point.sourceRevision !== undefined)).toBe(true);
++    expect(
++      report.points.some((point) => (point.ruleIds ?? []).some((id) => /^ZSB-E-/.test(id))),
++    ).toBe(true);
++  });
++
++  it("缺爻位仍是信息不足，且不冒充规则/段落锚点", () => {
++    const missing = buildLiuyaoFreeReading(chart, { lineIndex: 9 });
++    expect(missing.points[0]?.id).toBe("liuyao-free-missing-line");
++    expect(missing.points[0]?.unknowns?.length).toBeGreaterThan(0);
++    expect(missing.points[0]?.ruleIds ?? []).not.toContain("liuyao-free-missing-line");
++    expect(missing.paragraphs.join("")).toContain("信息不足");
++  });
++});
++
++describe("A6 紫微：解释跟着所选运限层，不把一层搬到另一层", () => {
++  const subject = clockSubject(1990, 1, 20, 13, 20);
++  const viewed = buildZiwei(subject, "2024-06-01", 12);
++  const scopes = (viewed.transit?.scopes ?? []).filter((scope) => scope.available);
++  const decadal = scopes[0]!;
++  const yearly = scopes[1]!;
++
++  it("所选层就是正文那层：大限与流年各自指名，互不串层", () => {
++    expect(decadal.name).toBe("大限");
++    expect(yearly.name).toBe("流年");
++    const decadalReading = buildZiweiFreeReading(viewed, { palace: "命宫", scope: decadal.name });
++    const yearlyReading = buildZiweiFreeReading(viewed, { palace: "命宫", scope: yearly.name });
++    const decadalText = decadalReading.paragraphs.join("");
++    const yearlyText = yearlyReading.paragraphs.join("");
++    expect(decadalText).toContain(`当前运限层大限${decadal.ganzhi}`);
++    expect(yearlyText).toContain(`当前运限层流年${yearly.ganzhi}`);
++    expect(decadalText).not.toContain(`流年${yearly.ganzhi}`);
++    expect(yearlyText).not.toContain(`大限${decadal.ganzhi}`);
++    expect(decadalText).not.toBe(yearlyText);
++    // 所选层要落到出处点的事实清单里（页面/导出都读这一份）
++    expect(decadalReading.points[0]?.usedFacts ?? []).toContain("运限层=大限");
++    expect(yearlyReading.points[0]?.usedFacts ?? []).toContain("运限层=流年");
++  });
++
++  it("没选层时按本命层解释，不擅自叠一层", () => {
++    const natal = buildZiweiFreeReading(viewed, { palace: "命宫" });
++    const natalText = natal.paragraphs.join("");
++    expect(natalText).toContain("本命层");
++    expect(natalText).not.toContain("当前运限层");
++    expect(natalText).not.toContain(`大限${decadal.ganzhi}`);
++    expect(natal.points[0]?.usedFacts ?? []).toContain("运限叠宫=信息不足");
++  });
++
++  it("层名不在本盘运限列表：如实记信息不足，不换层顶替", () => {
++    const unknown = buildZiweiFreeReading(viewed, { palace: "命宫", scope: "不存在层" });
++    const text = unknown.paragraphs.join("");
++    expect(text).toContain("信息不足");
++    expect(text).not.toContain(`大限${decadal.ganzhi}`);
++    expect(text).not.toContain(`流年${yearly.ganzhi}`);
++    expect(unknown.points[0]?.unknowns?.some((item) => item.includes("不存在层"))).toBe(true);
++  });
++
++  it("导出 token 带层名：文件里的运限正文与页面同层", () => {
++    const exportFor = (focusPosition: string, scope: string) =>
++      readBackReadingReport(
++        exportReadingReportFromPoints({
++          subject: { ...subject, arts: ["ziwei"] },
++          focusArt: "ziwei",
++          focusPosition,
++          points: buildZiweiFreeReading(viewed, { palace: "命宫", scope }).points,
++          exportedAt: "2026-09-13T02:00:00.000Z",
++        }),
++      );
++    const decadalReport = exportFor("命宫@2024-06-01@12@大限", "大限");
++    const yearlyReport = exportFor("命宫@2024-06-01@12@流年", "流年");
++    expect(decadalReport.input.focusPosition).toBe("命宫@2024-06-01@12@大限");
++    const decadalText = decadalReport.points.map((point) => point.body ?? "").join("");
++    const yearlyText = yearlyReport.points.map((point) => point.body ?? "").join("");
++    expect(decadalText).toContain(`大限${decadal.ganzhi}`);
++    expect(yearlyText).toContain(`流年${yearly.ganzhi}`);
++    expect(yearlyText).not.toContain(`大限${decadal.ganzhi}`);
++  });
++
++  it("解读点 ID 不再冒充规则 ID；缺宫点保持信息不足", () => {
++    const reading = buildZiweiFreeReading(viewed, { palace: "命宫" });
++    const summary = reading.points.find((point) => point.id === "ziwei-free-palace")!;
++    expect(summary.ruleIds ?? []).not.toContain("ziwei-free-palace");
++    const missing = buildZiweiFreeReading(viewed, { palace: "不存在宫" });
++    expect(missing.points[0]?.id).toBe("ziwei-free-missing-palace");
++    expect(missing.points[0]?.ruleIds ?? []).not.toContain("ziwei-free-missing-palace");
++    expect(missing.points[0]?.unknowns?.length).toBeGreaterThan(0);
++  });
++});
+diff --git a/tests/engine/c-export-readback-seven-arts.test.ts b/tests/engine/c-export-readback-seven-arts.test.ts
+index b2a998b..d4bb7a7 100644
+--- a/tests/engine/c-export-readback-seven-arts.test.ts
++++ b/tests/engine/c-export-readback-seven-arts.test.ts
+@@ -186,12 +186,15 @@ function rebuildFromFile(art: Art7, input: ReadingInputSummary): ChartReadingPoi
+   };
+   switch (art) {
+     case "ziwei": {
+-      const [palace, date, hour] = input.focusPosition.split("@");
++      // token 第 4 段＝页面所选的运限层名；与产品侧 parseZiweiFocus 同口径（不跨层取用）。
++      const [palace, date, hour, scope] = input.focusPosition.split("@");
+       const chart =
+         date && /^\d{4}-\d{2}-\d{2}$/.test(date)
+           ? buildZiwei(subject, date, hour === undefined || hour === "" ? undefined : Number(hour))
+           : buildZiwei(subject);
+-      return buildZiweiFreeReading(chart, { palace: palace || "命宫" }).points;
++      const focus: { palace: string; scope?: string } = { palace: palace || "命宫" };
++      if (scope) focus.scope = scope;
++      return buildZiweiFreeReading(chart, focus).points;
+     }
+     case "qimen": {
+       const chart = buildQimen(subject);
+@@ -351,29 +354,32 @@ describe("C-EXPORT-READBACK 七术导出回读（真实执行）", () => {
+     expect(at6).not.toContain("地支=午");
+   });
+ 
+-  it("紫微浏览日：focusPosition 自带日期时刻，回读后重建的是同一张流日盘", () => {
++  it("紫微浏览日：focusPosition 自带日期时刻与运限层，回读后重建的是同一批事实", () => {
+     const subject = subjectFor("ziwei");
+     const viewDate = "2024-01-20";
+     const viewHour = 12;
++    // 运限层由页面显式给出（token 第 4 段）；不带层名时按本命层解释，不自行挑一层。
+     const chart = buildZiwei(subject, viewDate, viewHour);
+-    const points = buildZiweiFreeReading(chart, { palace: "事业" }).points;
++    const points = buildZiweiFreeReading(chart, { palace: "事业", scope: "流年" }).points;
+     const json = exportReadingReportFromPoints({
+       subject,
+       focusArt: "ziwei",
+-      focusPosition: `事业@${viewDate}@${viewHour}`,
++      focusPosition: `事业@${viewDate}@${viewHour}@流年`,
+       points,
+       exportedAt: EXPORTED_AT,
+     });
+     const back = readBackReadingReport(json);
+-    expect(back.input.focusPosition).toBe(`事业@${viewDate}@${viewHour}`);
++    expect(back.input.focusPosition).toBe(`事业@${viewDate}@${viewHour}@流年`);
+     const facts = factsOf(back.points);
+     expect(facts.length).toBeGreaterThan(0);
+-    // 回读数据足以重建：同一 stream 日重建后事实完全一致
++    expect(facts).toContain("运限层=流年");
++    // 回读数据足以重建：同一 stream 日重建后事实完全一致（含所写运限层）
+     const rebuilt = rebuildFromFile("ziwei", back.input);
+     expect(factsOf(rebuilt)).toEqual(facts);
+     // 换一个浏览日 → 事实必须不同（否则「重建一致」是空断言）
+     const other = buildZiweiFreeReading(buildZiwei(subject, "1996-05-06", viewHour), {
+       palace: "事业",
++      scope: "流年",
+     }).points;
+     expect(factsOf(other)).not.toEqual(facts);
+   });
+diff --git a/tests/engine/reading-input-export-link.test.ts b/tests/engine/reading-input-export-link.test.ts
+index bf073fa..2ca6190 100644
+--- a/tests/engine/reading-input-export-link.test.ts
++++ b/tests/engine/reading-input-export-link.test.ts
+@@ -180,23 +180,24 @@ describe("同 head 实际输入/选位联动与报告导出 (MING-323)", () => {
+     expect(back.ruleVersions.classicsPins?.tiaohou).toBe(report.ruleVersions.classicsPins?.tiaohou);
+   });
+ 
+-  it("紫微导出走浏览日期，命宫@本命日 与 命宫@流年 读回不同", () => {
++  it("紫微导出走浏览日期与所写运限层，命宫@本命日 与 命宫@流年 读回不同", () => {
+     const natal = exportReadingReport({
+       subject: { ...baseSubject, arts: ["ziwei"] },
+       focusArt: "ziwei",
+-      focusPosition: "命宫@1990-01-20@12",
++      focusPosition: "命宫@1990-01-20@12@流年",
+       exportedAt: "2026-09-12T16:30:00.000Z",
+     });
+     const later = exportReadingReport({
+       subject: { ...baseSubject, arts: ["ziwei"] },
+       focusArt: "ziwei",
+-      focusPosition: "命宫@2024-01-20@12",
++      focusPosition: "命宫@2024-01-20@12@流年",
+       exportedAt: "2026-09-12T16:30:00.000Z",
+     });
+-    expect(natal.input.focusPosition).toBe("命宫@1990-01-20@12");
+-    expect(later.input.focusPosition).toBe("命宫@2024-01-20@12");
++    expect(natal.input.focusPosition).toBe("命宫@1990-01-20@12@流年");
++    expect(later.input.focusPosition).toBe("命宫@2024-01-20@12@流年");
+     expect(natal.points.length).toBeGreaterThan(0);
+     expect(later.points.length).toBeGreaterThan(0);
++    expect(later.points.flatMap((p) => p.usedFacts).join("|")).toContain("运限层=流年");
+     expect(natal.points.flatMap((p) => p.usedFacts).join("|")).not.toBe(
+       later.points.flatMap((p) => p.usedFacts).join("|"),
+     );
+diff --git a/tests/engine/ziwei-viewdate-free-reading.test.ts b/tests/engine/ziwei-viewdate-free-reading.test.ts
+index d97d6f9..02ca258 100644
+--- a/tests/engine/ziwei-viewdate-free-reading.test.ts
++++ b/tests/engine/ziwei-viewdate-free-reading.test.ts
+@@ -19,10 +19,25 @@ const subject = {
+ };
+ 
+ describe("紫微浏览日期改写当前宫运限解释", () => {
+-  it("本命日与另一流年叠宫正文不同", () => {
+-    const natal = buildZiweiFreeReading(buildZiwei(subject, "1990-01-20", 12), { palace: "命宫" });
+-    const later = buildZiweiFreeReading(buildZiwei(subject, "2024-01-20", 12), { palace: "命宫" });
++  /**
++   * 本测试原本只传浏览日期、不传层名，靠 `buildZiweiFreeReading` **自己挑第一层（大限）**
++   * 才让两段正文不同——那正是本轮的缺陷：页面写「正在查看 · 流年」，解释却写大限，
++   * 「一层的四化被搬到另一层」。现在层名必须由调用方（页面/导出 token）显式给出：
++   * 缺省＝本命层（不叠层），所以这里按页面口径传 `scope`，本测试要验的
++   * 「换浏览日期 → 该层正文随之改写」这一条不受影响，并额外钉住层名必须出现在正文里。
++   */
++  it("本命日与另一流年叠宫正文不同（层名由调用方给出）", () => {
++    const natal = buildZiweiFreeReading(buildZiwei(subject, "1990-01-20", 12), {
++      palace: "命宫",
++      scope: "流年",
++    });
++    const later = buildZiweiFreeReading(buildZiwei(subject, "2024-01-20", 12), {
++      palace: "命宫",
++      scope: "流年",
++    });
+     expect(natal.paragraphs.join("|")).not.toBe(later.paragraphs.join("|"));
+     expect(later.paragraphs.join("")).toMatch(/运限|流曜|四化/);
++    expect(later.paragraphs.join("")).toContain("当前运限层流年");
++    expect(later.paragraphs.join("")).not.toContain("当前运限层大限");
+   });
+ });

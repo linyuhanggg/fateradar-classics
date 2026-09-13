@@ -1,0 +1,66 @@
+{
+ "tree": "/private/tmp/rev/a6-head",
+ "charts": 1600,
+ "lineCases": 9600,
+ "triggered": {
+  "ZSB-E-09": 0,
+  "ZSB-E-14": 1575,
+  "ZSB-E-16": 105,
+  "ZSB-E-17": 32
+ },
+ "violationCases": 9600,
+ "sample": [
+  {
+   "chart": "甲子/卯/0/0",
+   "li": 0,
+   "missing": [
+    "liuyao:ZSB-E-03:use:main:6",
+    "liuyao:BSZZ-E-01:solitary:main:4",
+    "liuyao:ZSB-E-04:root-support:main:6",
+    "liuyao:ZSB-E-14:three-harmony:sanhe:outer:火"
+   ]
+  },
+  {
+   "chart": "甲子/卯/0/0",
+   "li": 1,
+   "missing": [
+    "liuyao:ZSB-E-03:use:main:6",
+    "liuyao:BSZZ-E-01:solitary:main:4",
+    "liuyao:ZSB-E-04:root-support:main:6",
+    "liuyao:ZSB-E-14:three-harmony:sanhe:outer:火"
+   ]
+  },
+  {
+   "chart": "甲子/卯/0/0",
+   "li": 2,
+   "missing": [
+    "liuyao:ZSB-E-03:use:main:6",
+    "liuyao:BSZZ-E-01:solitary:main:4",
+    "liuyao:ZSB-E-04:root-support:main:6",
+    "liuyao:ZSB-E-14:three-harmony:sanhe:outer:火"
+   ]
+  },
+  {
+   "chart": "甲子/卯/0/0",
+   "li": 3,
+   "missing": [
+    "liuyao:ZSB-E-03:use:main:6",
+    "liuyao:BSZZ-E-01:solitary:main:4",
+    "liuyao:ZSB-E-04:root-support:main:6",
+    "liuyao:ZSB-E-14:three-harmony:sanhe:outer:火"
+   ]
+  },
+  {
+   "chart": "甲子/卯/0/0",
+   "li": 4,
+   "missing": [
+    "liuyao:ZSB-E-03:use:main:6",
+    "liuyao:BSZZ-E-01:solitary:main:4",
+    "liuyao:ZSB-E-04:root-support:main:6",
+    "liuyao:ZSB-E-14:three-harmony:sanhe:outer:火"
+   ]
+  }
+ ],
+ "summaryIsOnlyUnanchored": 9600,
+ "lineCasesWithUnanchoredNotSummary": 0
+}

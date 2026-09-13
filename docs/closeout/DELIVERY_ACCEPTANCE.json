@@ -1,6 +1,6 @@
 {
   "schema": "fateradar-delivery-acceptance-v1",
-  "generated_at": "2026-09-13T05:25:00Z",
+  "generated_at": "2026-09-13T05:35:00Z",
   "generated_by": "DSH captain（本会话 goal round 1/256）",
   "authority": "classics:docs/FATERADAR_FULL_LIBRARY_PLAN.md（含 2026-09-13 收尾执行修订）",
   "purpose": "唯一收尾状态账本：逐项对应权威方案「总验收与完成条件」1–8。引用既有矩阵与报告，不新造重复指标。",
@@ -114,14 +114,24 @@
           "path": "classics:docs/closeout/FULL-LIBRARY-DISPOSITION-20260912.md#0-更正与现状",
           "shows": "captain 实测逐书救应：总计 117/106/30/5；与 §1 不符的只有 qiongtong-baojian（66/10/44）与 sanming-tonghui（5/6/9），其余 13 个可执行文件逐书一致",
           "kind": "captain-recomputed-now"
+        },
+        {
+          "path": "classics:docs/closeout/A1-DRAFT-ACCOUNT-20260913.md",
+          "shows": "2,835 条 draft 四类分账：台账 1,531／实质待审 1,296／待转写 1／归档 7；「已处理未入库」实测 0 条",
+          "kind": "recomputed-now"
+        },
+        {
+          "path": "classics:docs/closeout/review/a1-draft-disposition-20260913.json",
+          "shows": "逐条去向表（2,835 行，一行一条，含重算 source_status 与 action）",
+          "kind": "recomputed-now"
         }
       ],
       "remaining": [
         {
-          "item": "2,835 条 draft 逐项闭环去向（不是全审读）",
+          "item": "2,835 条 draft 已四类分账并逐条登记去向（台账 1,531／实质待审 1,296／待转写 1／归档 7）；「已处理未入库」实测 0 条。A1 working→pass 余量＝1,296 条实质条目逐条审读（不批量升级）",
           "kind": "evidence-or-semantics-uncertainty",
-          "scope": "15 书：daliuren-daquan 773、qimen-dunjia-tongzhi 1261、mayi-shenxiang 239、yuqia-ji 180、mingli-yueyan 162、liuren-miben 124、huangji-jingshi 40、ziwei-doushu-quanshu 40、其余 7 书 1–4",
-          "blocks": "A1 working→pass"
+          "scope": "17 文件；逐条表 docs/closeout/review/a1-draft-disposition-20260913.json；分账说明 docs/closeout/A1-DRAFT-ACCOUNT-20260913.md",
+          "blocks": "A1 working→pass（余量为逐条审读，非「已做好的搬进来」）"
         },
         {
           "item": "《總鈐》666 残格缺影印，只能列轴",
@@ -340,6 +350,16 @@
           "kind": "human-read-reconciliation（本轮）"
         },
         {
+          "path": "product:docs/implementation/A5-SOURCE-CASE-BATCH2.md（algo-impl，未提交；captain 点名的增量入口文件名）",
+          "shows": "第二批增量入口页（不复制正文，指向既有命名下的全文）：①先交的 **10 条完整链**逐条表（六爻 6/梅花 2/八字 2），每条含原书断语要点、引擎复算与取值、对账结论、**导出→回读**结果；这 10 条结论分布＝相符 8 / 部分相符 2（水局 unknown、伏神旬空未算）/ 不相符 0。②总体数字：结构化机械复算 1,934 行（奇门 1,842 一致/77 差异全分类）＋断语对账 28 条分布。③差异清单与定位（取用优先序、ZSB-E-14 unknown、伏神旬空未算→t16、奇门 77 条分类→t15、starPalaceRaw 落宫口径、座次≠用例）。④实跑：4 个正式测试文件 → 4 files/49 tests passed；tsc --noEmit 通过。并说明 `tests/engine/_probe-batch2.test.ts` 是临时探针、已删除、从未作为交付物，正式测试为这 4 份（不再造同义测试充数）",
+          "kind": "index + fix-record（本轮）"
+        },
+        {
+          "path": "product:docs/implementation/QIMEN-CASE-DIFF-TRIAGE-20260913.md（algo-impl，未提交）",
+          "shows": "奇门原书案例差异分类（t10 请求的四类判定，按已取消任务的问题给出正式归档）：①**抽取口径/字段映射错（比对侧）= 1,543 条历史值，已归零**——原书「星宫数」列跟**落宫**走（阳一局甲子旬乙丑时记 9，而值符原宫恒为 1），原先误比引擎 originPalace；改比 starPalaceRaw 后 **1,888/1,917** 逐值相同，其中 205 条「原书记 5（中五）/ 引擎寄坤 2」两种口径引擎都取得到，不构成差异。②**引擎实现缺陷 = 0 条**（77 条逐条追根：无一凭空算错，差异按页/表成组出现）。③**流派约定差异 = 0 条独立差异**（中五记 5 vs 寄坤 2 由 starPalaceRaw/starPalace 并列输出吸收）。④**原表歧义/两说并存 = 77 条**：73 条同书两处印值不一致（经典仓已登记 conflictingFields，72 条有同输入 sibling 印值等于引擎值）+ 4 条原印数与同书正文一般法冲突（P266/P273 阴五丁酉 9 vs 8、P312/P319 阴八丙申 3 vs 1，仓库 methodDifferences 已登记）。含 20 条跨阴阳遁/局/旬抽样逐条表、引擎字段语义代码路径（qimen.ts:284/298/301/302/340-341/362-365）与置信度分级。**纪律**：未改引擎实现、未刷 golden、未为让差异数下降迁就原书；独立复核仍走 t15",
+          "kind": "triage + fix-record（本轮）"
+        },
+        {
           "path": "product:docs/implementation/ART-VERDICT-SOURCE-CASE-RECOMPUTE.json#batch2（algo-impl t6，已提交 product cf0c1f7；captain 于 10:34 复读当前文件）",
           "shows": "批次2 当前状态（已修正抽取口径后重生成）：qimen 1,919 条 → matchedAll **1,842** / withDiff **77**；liuyao 13 → matchedAll 13 / withDiff 0；meihua 2 → matchedAll 2 / withDiff 0；合计 differenceCount **77**。starPalaceSemantics（1,917 可比）：matchesRawLandingPalace **1,888**、matchesAdjustedStarPalace 1,684、matchesOriginPalace 376 → 原表两列数确实跟**落宫**走，不是「原宫」；引擎对落宫口径的正确率约 98.5%。captain 另用引擎直接复算 阳一局 乙丑时：starPalaceRaw=9（原书 9）、doorPalaceRaw=2（原书 2）、originPalace=1 → 引擎该例正确，此前 1,543 条 starPalaceRaw「差异」系抽取口径未对齐所致的假差异",
           "kind": "captain-reverified-now（含引擎直算复现）"
@@ -432,8 +452,8 @@
           "kind": "captain-inspected-now"
         },
         {
-          "path": "classics:docs/closeout/review/REVIEW-A6-BATCH-20260913.md（reviewer-2 独立审查，结论=可合）",
-          "shows": "独立审查门通过（可合）：①两条缺陷真实存在、修复真实有效（不是改标签）②**3 个既有测试的修改语义保留——断言数只增不减、无删除与弱化**，旧断言之所以必须改是因为它们依赖「隐式换层」这一被正确去掉的行为 ③**新测试不是自证：对旧代码 13 条失败、对新代码 47/47 通过** ④tsc 干净、引擎全量 129 文件/3,230 条通过 ⑤另三重比对确认 captain 的 A3 矩阵重生成（252 行 + 全部 summary）与两次独立重跑 0 差异。复审同时给出 5 条具名缺口 (a)-(e)，已登记为 A6 remaining",
+          "path": "classics:docs/closeout/review/INDEPENDENT-REVIEW-A6-BATCH-20260913.md（123 行，最终版）＋ REVIEW-A6-BATCH-20260913.md ＋ a6-batch-20260913/（48 个证据文件）—— 审查人：**reviewer（t8）**；captain 更正：此前误署名为 reviewer-2",
+          "shows": "独立审查门通过（可合）：①两条缺陷真实存在、修复真实有效（不是改标签）②**3 个既有测试的修改语义保留——断言数只增不减、无删除与弱化**，旧断言之所以必须改是因为它们依赖「隐式换层」这一被正确去掉的行为 ③**新测试不是自证：对旧代码 13 条失败、对新代码 47/47 通过** ④tsc 干净、引擎全量 129 文件/3,230 条通过 ⑤另三重比对确认 captain 的 A3 矩阵重生成（252 行 + 全部 summary）与两次独立重跑 0 差异。复审同时给出 5 条具名缺口 (a)-(e)，已登记为 A6 remaining【署名更正与措辞精确化（reviewer 指出）】①上述文件与 (a) 的 7 处测量是 **reviewer（t8）** 的产出，不是 reviewer-2；②「1→8」仅是文档那条调用的值，**全量实测为 1→2–15 点**；③那 8 点中 **7 点**带 anchored_text+sourceRevision，**第 8 点是白话总结点**（liuyao:free:main:N，本身不是古籍点，ruleIds 为真实规则 ID）；④新增第三路暴露面：「层在列表但当日不可用」改前会静默换成流年，改后 5/5 如实报不足；⑤ZSB-E-09 专项 550 盘中 90 盘触发：改前 540/540 逐爻缺，改后 0/540",
           "kind": "independent-review-passed"
         }
       ],
@@ -724,6 +744,11 @@
           "path": "captain 实测 gh run list（round 29）",
           "shows": "**首次「过审查门 → 合 main → CI 绿」闭环成立**：product main `f030441`（A6 批次：六爻逐爻焦点补点+去伪锚点、紫微显式运限层）的 CI **success**（含 typecheck / test / build:worker / playwright e2e）；classics main `fe76a0b` 的 validate-rules 亦 **success**。同期**明确排除**未审的 A5 候选 `cf0c1f7` 与 A8 候选 `c300610`（后者待 t18 独立复核门）",
           "kind": "captain-reverified-now"
+        },
+        {
+          "path": "classics:docs/closeout/review/INDEPENDENT-REVIEW-A6-BATCH-20260913.md（reviewer t8 顺带核对 captain 的 A8 登记）",
+          "shows": "reviewer 独立核对 captain 的 A8 登记「准确」，并给出更完整口径：产品**全部 11 个 pin**（不止 10 个）均为真实提交、且都是当前 remote main `fe76a0b` 的祖先；**578 锚点（566 fragments + 12 anchor）**在各自 pin 与当前 main 两份 blob 上逐条「空白归一后整句包含」比对 = **两侧各 0 漂移**；bazi-anchor 在当前工作树重跑生成器 = 183 条**除 sourceRevision 外 0 差异**（QTB-M-01-03 的 L0089+L0093+L0099 都回来了）；其余 6 份 pin 落后 1,432–1,683 提交（本账本登记为 remaining 而非已解决=准确）。两处小注已采纳：①落后计数需写明基线；②A6 evidence 署名已由 reviewer-2 更正为 reviewer（t8）",
+          "kind": "independent-corroboration"
         }
       ],
       "remaining": [

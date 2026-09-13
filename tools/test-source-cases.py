@@ -110,7 +110,7 @@ class PillarSourceChecks(unittest.TestCase):
             "expected": {"chiefStar": "天蓬", "starPalaceRaw": 5}, "canRecompute": True})
         self.assertTrue(fields["canRecompute"])
         self.assertEqual(fields["expected"]["starPalaceRaw"], 5)
-        self.assertEqual(fields["scope"], ["值符星名", "值符原宫数"])
+        self.assertEqual(fields["scope"], ["值符星名", "值符落宫数"])
         self.assertNotIn("birthDate", fields["input"])
         self.assertNotIn("dayPillar", fields["input"])
         self.assertNotIn("chiefDoor", fields["expected"])

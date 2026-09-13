@@ -159,7 +159,7 @@ def case_input(case: dict) -> tuple[dict, tuple | None, str]:
     elif basis == "qimen-layout":
         given, expected = case.get("input", {}), case.get("expected", {})
         names = {"chiefStar": "值符星名", "chiefDoor": "值使门名",
-                 "starPalaceRaw": "值符原宫数", "doorPalaceRaw": "值使原宫数"}
+                 "starPalaceRaw": "值符落宫数", "doorPalaceRaw": "值使落宫数"}
         pair = given.get("timePillar") if isinstance(given, dict) else None
         valid = (isinstance(given, dict) and set(given) == {"dun", "ju", "timePillar"}
                  and given.get("dun") in {"yang", "yin"}
@@ -301,7 +301,7 @@ def collect_cases(root: Path) -> dict:
                 else:
                     by_input[signature] = case_id
             cases.append(row)
-    return {"version": 1, "note": "原书记载与现代独立验盘分开；四柱合法不代表公历可还原。", "cases": cases}
+    return {"version": 1, "note": "原书记载与现代独立验盘分开；四柱合法不代表公历可还原。奇门逐时简表后两数（计数键 starPalaceRaw／doorPalaceRaw，字段名作「值符落宫数／值使落宫数」）经实测跟着落宫走：1,888／1,917 条与落宫一致、仅 376 条与原宫一致，故字段名与说明按落宫命名，原值一律不改；键名为兼容保留，含义即落宫数。", "cases": cases}
 
 
 def main():
