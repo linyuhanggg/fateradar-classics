@@ -1,6 +1,6 @@
 {
   "schema": "fateradar-delivery-acceptance-v1",
-  "generated_at": "2026-09-13T04:30:00Z",
+  "generated_at": "2026-09-13T04:40:00Z",
   "generated_by": "DSH captain（本会话 goal round 1/256）",
   "authority": "classics:docs/FATERADAR_FULL_LIBRARY_PLAN.md（含 2026-09-13 收尾执行修订）",
   "purpose": "唯一收尾状态账本：逐项对应权威方案「总验收与完成条件」1–8。引用既有矩阵与报告，不新造重复指标。",
@@ -683,11 +683,16 @@
           "path": "captain 独立锚点核对（classics 仓 git show 取文本，空白归一后逐字比对）",
           "shows": "①**重生成产物与新钉相符**：`bazi-anchor-rule-index.json`（sourceRevision=c45dfdb）的 **362 个 fragment 覆盖全部 183 条规则**，每个 fragment 的 quote 与该钉上对应行区间文本**逐字一致，0 处不符**（方法：git show c45dfdb:<file> 切片后空白归一比对，判定 quote ⊆ 源文本 或 源文本 ⊆ quote）。②**未重生成的产物对新钉不漂移**：`reading-notes.json`（sourceRevision=a8edc922，旧钉）的 12 个带 anchor 的条目，在其自身 sourceRevision 与 c45dfdb 两处的行区间文本**完全相同（0 漂移）**，且 12/12 quote 与 c45dfdb 上文本一致。→ 支持「前移 CLASSICS_REV 不改变链接语义」这一结论；成员自述的 578 锚点覆盖 7 份产物，captain 本次独立覆盖其中 2 份（374 锚点），其余由 reviewer-2 在 t15 独立复跑",
           "kind": "captain-reverified-now"
+        },
+        {
+          "path": "product:docs/implementation/A8-CONTENT-REVISION-PIN-AUDIT.md（algo-impl，悬空引用已补齐）+ captain 独立扩样核对",
+          "shows": "①悬空引用已解决：审计文档已建成，含「哪 7 份产物 / 每个锚点两处行区间比对 / 判定口径」与 578/578 一致 0 漂移的逐产物表；②生成器已加固：新增 `FATERADAR_CLASSICS_ROOT` 快照覆盖 + **脏树拒绝**（references/executable 有未提交改动即抛错，直接针对复核点名的「在带在途改动的树上生成却声称等于某 commit」风险）；快照用 git clone --shared + sparse-checkout，并对 15 个 JSON 逐个做「磁盘 md5 vs git show md5」= 15/15 相同；③captain 独立扩样：自核 489/578 锚点（bazi-anchor 362、liuren 82、ziwei 21、reading-notes 12、qimen 12），全部 **0 行漂移、0 引文不符**——与成员 578/578 结论一致（余 liuyao 81、qizheng 8 未自核）；④同批还修掉同类「戳记过期」：tiaohou-profiles（除 revision 外逐字节相同）、VERSION_MAP.generated_pins.tiaohou，并重跑 art-verdict-consumer-points（probed 52/appeared 50/notProbed 4 与改前相同）",
+          "kind": "captain-reverified-now + member-approved"
         }
       ],
       "remaining": [
         {
-          "item": "内容导出与代码版本可对应【基本修复，待收口】：bazi-anchor 已重生成（df73f232→c45dfdb，54/183 行补回救应句片段）；CLASSICS_REV 与 ci.yml ref 三处同步为 c45dfdb；captain 独立核到 362/362 fragment 与新钉逐字相符、reading-notes 12 锚点在两钉间 0 漂移。**仍待**：①成员声称的 578 锚点/7 产物全量由 reviewer-2 独立复跑（captain 已覆盖其中 374）②`A8-CONTENT-REVISION-PIN-AUDIT.md` 悬空引用需补或删 ③生成器改动确认只涉取源逻辑",
+          "item": "内容导出与代码版本可对应【已修复主体，剩余为「戳记新鲜度」口径】：bazi-anchor 重生成（54/183 补回救应句片段，captain 抽查 QTB-M-01-03 确认性质）；CLASSICS_REV 与 ci.yml ref 三处同步 c45dfdb；578 锚点 0 漂移（captain 自核 489/578，0 漂移 0 不符）。**剩余（据审计 §8，不写成已解决）**：①其余 generated 产物的 pin 仍早于 main（六壬/六爻/奇门/七政/紫微/reading-notes），本批已验证 0 锚点漂移但**未逐份重跑生成器**——是「戳记新鲜度」问题，需决定是否刷新；②knowledge-index 的 sourceRevision 与 VERSION_MAP 自洽但仍早于 main，生成器未重跑；③A8 的「两仓 main 检查通过 / 网页端到端集成验收」由 CI 与页面侧负责",
           "kind": "implementation-gap",
           "scope": "product 内容导出 ↔ classics main（bazi-anchor-rule-index 内容漂移）",
           "blocks": "A8 working→pass（硬缺口）"
