@@ -71,7 +71,31 @@ grep -c '"name": "get_goal"' /tmp/mysess2.jsonl     # -> 0
 
 > 纪律：这些来源仍可用于**定位**，但不得用于**判 pass**。账本的 `measured_baseline` 与 criterion 结论只认实测值。
 
-## 5. 团队状态目录位置（如实记录）
+## 5. captain 独立跑测：A6 已落地批次（algo-impl t3，尚未收到结项回报）
+
+为不把 A6 的证据建立在成员自报上，captain 在最新工作树上直接跑该批次新增/修改的 4 个测试文件：
+
+```bash
+cd <product> && npx vitest run \
+  tests/engine/a6-liuyao-ziwei-free-reading-consumers.test.ts \
+  tests/engine/c-export-readback-seven-arts.test.ts \
+  tests/engine/reading-input-export-link.test.ts \
+  tests/engine/ziwei-viewdate-free-reading.test.ts
+```
+
+结果（2026-09-13 10:16，rc=0）：
+
+| 测试文件 | 结果 |
+|---|---|
+| `a6-liuyao-ziwei-free-reading-consumers.test.ts` | 10 passed |
+| `c-export-readback-seven-arts.test.ts` | 20 passed |
+| `reading-input-export-link.test.ts` | 16 passed |
+| `ziwei-viewdate-free-reading.test.ts` | 1 passed |
+| **合计** | **4 文件 / 47 tests 全过**（1.56s） |
+
+口径：这只证明**该批次自身测试通过**，不等于 A6 验收通过——A6 的 pass 仍需 page-acceptance 在真实页面/导出上逐栏目实测（t4），以及 reviewer 的代码级独立复核。本记录不提升任何 verified 状态。
+
+## 6. 团队状态目录位置（如实记录）
 
 AgentTeams 平台把团队状态目录建在 **`/Users/sync/code/fateradar-classics/.agent-teams/fateradar-closeout/`**（由会话 cwd 决定）。该路径属于本任务明令禁止覆盖的其他任务现场。
 
