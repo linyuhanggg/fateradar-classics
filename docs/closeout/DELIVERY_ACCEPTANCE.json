@@ -1,6 +1,6 @@
 {
   "schema": "fateradar-delivery-acceptance-v1",
-  "generated_at": "2026-09-13T04:15:00Z",
+  "generated_at": "2026-09-13T04:20:00Z",
   "generated_by": "DSH captain（本会话 goal round 1/256）",
   "authority": "classics:docs/FATERADAR_FULL_LIBRARY_PLAN.md（含 2026-09-13 收尾执行修订）",
   "purpose": "唯一收尾状态账本：逐项对应权威方案「总验收与完成条件」1–8。引用既有矩阵与报告，不新造重复指标。",
@@ -527,6 +527,11 @@
           "path": "captain 实测（工作树，t14 进行中）：git diff --stat references/executable/ + python3 tools/validate-executable.py",
           "shows": "t14（其余 unimplemented 理由全文重审）正在推进且**保持数据有效**：8 个规则文件被改动（+578/−36），`validate-executable.py` 仍 **OK 15 packages / 258 source-linked rule records / 579 source spans**，具名登记数由 **12 → 42**（named gaps）。说明重审不是只写 Markdown，而是把结论落进规则本体的具名登记字段。本批涉及 qiongtong-baojian、sanming-tonghui、xingxue-dacheng、yuxiaji-xiaoliuren、ziping-zhenquan、ziwei-doushu-quanshu、guotian-jing、qimen-dunjia-tongzhi 等",
           "kind": "captain-measured-midflight（classics-audit t14 进行中，数字会继续变）"
+        },
+        {
+          "path": "captain 实测（round 23）：python3 tools/test-validate-executable.py + tools/validate-rules.py",
+          "shows": "t14 的校验覆盖随数据一起长：`test-validate-executable.py` 由 **22 → 27 tests（全 OK）**（新增失败分支用于 named_gaps 的计数/证据行校验），`validate-executable.py` OK 15 packages/258 records/579 spans/**42 named gaps**，`validate-rules.py` OK 55 files/285 warnings（与基线同）。→ 具名登记是「有校验的正式数据」，不是自由文本",
+          "kind": "captain-reverified-now"
         }
       ],
       "remaining": [
@@ -740,6 +745,18 @@
       ],
       "captain_decision": "captain **未**自行修改 reuse 开关、也未授权成员直调 codex CLI —— 该开关是用户同意门（错误提示即 Ask the user），且会消耗用户 codex 额度；按「工具缺失则明确说明所需启用操作」上报，不冒充资料不可得、不用 OCR 引擎或电子本代填。",
       "does_not_block": "其余所有不依赖读图的任务（A3/A4/A5/A6/A7 的绝大多数子项、A5 的复算与对账、A8 的 CI/版本核对）"
+    },
+    {
+      "id": "B-pagethroughput",
+      "kind": "execution-blocker",
+      "what": "page-acceptance 成员反复静默停住（多轮会话文件静止 2+ 分钟且无产出），t4（真实页面/导出验收，A6/A8 的关键子项）长期无进展",
+      "impact": "A6 的「浏览器逐栏目回读」与 A8 的「网页集成验收在最新 main 重跑」缺少证据；已尝试 3 次定向催办（要求最小 3 页产出，或明确回报阻塞原因）",
+      "owner": "captain（调度）",
+      "fix_options": [
+        "已要求该成员二选一：A 路线跑通 ego-browser + dev(3311) 出 3 行结果；B 路线立刻回报确切错误原文",
+        "若仍无产出：把 t4 改派给表现稳定的 reviewer-2（其会话活跃且已有产出），或由 captain 用 ego-browser 先做「最小 3 页」自测以确定是否环境问题"
+      ],
+      "does_not_block": "其余成员线（A3/A5/A7/A8 的非页面部分）"
     }
   ],
   "out_of_scope_queue": [
