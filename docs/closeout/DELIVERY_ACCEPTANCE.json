@@ -1,6 +1,6 @@
 {
   "schema": "fateradar-delivery-acceptance-v1",
-  "generated_at": "2026-09-13T08:45:00Z",
+  "generated_at": "2026-09-13T08:55:00Z",
   "generated_by": "DSH captain（本会话 goal round 1/256）",
   "authority": "classics:docs/FATERADAR_FULL_LIBRARY_PLAN.md（含 2026-09-13 收尾执行修订）",
   "purpose": "唯一收尾状态账本：逐项对应权威方案「总验收与完成条件」1–8。引用既有矩阵与报告，不新造重复指标。",
@@ -159,6 +159,11 @@
           "path": "classics:docs/closeout/evidence/a1-open-items-20260913.{json,md}（t20 终版，captain 已读）",
           "shows": "**14 vs 16 之争已定案：不是等价说法，而是「层级混用 + 旧计数」**——`LIBRARY_INVENTORY.md` 的影印状态**只有三个桶**（已存影印 34 + Release 影印 5 + 尚未确认影印 16 = 55），**没有第四个「特殊资料」桶**；方案同句的「2 份补充 Markdown」实测是 **2 个文件**（`sources/fulltext/san-shi/liuren-zhiyin/supplemental-annotated-golla-vol3-4.md`、`sources/fulltext/san-shi/qimen-dunjia-tongzhi/supplemental-taiyi-qimen-yanyi-vol4-9.md`），分属 liuren-zhiyin 与 qimen-dunjia-tongzhi 两个**既有 pack 内部**（二者都在 34 桶内）→ 属**文件级**，不是包级。catalog 另有 2 个类别独特的 pack（qimen-faqiao、feixing-ziwei-doushu-yuanzhi）但分属不同桶，推不出「14+2」。→ 结论：**34+5+16=55 是包级、脚本实算、可复现的口径，权威**；「34+5+14+2」把 2 个文件当 2 个包相加、且 14 是旧数。本账本按 16 记账正确。另：**locator 已按「页码/列/行范围」补强**——`paragraphId` + `line_range` + **`facsimile_page`**（由各条自述标目映射，可复算：p16 六甲 53／p17 六乙 70／p18 六丙 59／p19 六丁 77／p20 六戊 61／p21 六己 80／p22 六庚 58／p23 六辛 83／p24 六壬 62／p25 六癸 61 = **664 条落页**；剩 2 条月表型无页级映射）+ `facsimile_scope`（十表连号 p16–p25）+ **`column_within_table` 明写「列/格位未建立，不推算填空」** + content_lead/terms/kind/review。captain 复跑自检：682 items、unique 682（0 重复）、四栏空值 0、class 全一致。",
           "kind": "captain-reverified-now（含争议定案）"
+        },
+        {
+          "path": "captain 独立复核：t23 第一批（daliuren×待核实）→ annotations 计数变化",
+          "shows": "**draft 余量首次真实下降**：全库 annotations 由 `source-reviewed 60,004 + draft 2,835` 变为 `source-reviewed 60,013 + draft 2,826`（总数 62,839 不变）——captain 直接扫 `references/annotations/**` 复算确认。本批**重叠分析先行**：684 条与《總鈐》666 集合重叠 **666** 条（按 A1 已登记处置、不重复取证）→ **真正新审读对象仅 18 条**；结果 **提升 9 / 保留 9**（captain 另核：9 条升 `source-reviewed`、9 条仍 `draft`；并抽查 L2909/L2919 源行逐字符一致）。提升的 9 条只支持「**此格原图残画、照录不补位**」这一记录性结论，**明确不支持任何课程条件/取值/吉凶判断**——口径正确。",
+          "kind": "captain-reverified-now"
         }
       ],
       "remaining": [
@@ -221,6 +226,11 @@
           "path": "captain 实测分组：a1-draft-disposition-20260913.json#entries（1,296 条 entry-review-pending 按书/kind 分组）",
           "shows": "**批次已按实测落地，可直接派工**：`entry-review-pending` 共 **1,296** 条 —— **按书**：daliuren-daquan **769**、mayi-shenxiang 193、yuqia-ji 125、liuren-miben 114、huangji-jingshi 40、ziwei-doushu-quanshu 40、dili-bianzheng 4、tianyu-jing 4；**按 kind**：待核实 **794**、规则候选 297、术语 106、案例 73、理论 16、操作步骤 10；**最大交叉批**：(daliuren-daquan, 待核实) **684** ／ (mayi-shenxiang, 规则候选) 128 ／ (liuren-miben, 规则候选) 60 ／ (daliuren-daquan, 规则候选) 58 ／ (yuqia-ji, 术语) 54。→ t23 的「最大一批」有确定答案：**daliuren-daquan × 待核实 = 684 条**（该书的另 58 条规则候选可作第二批）。这批是扩大 A2 可引用锚点基数的主力；纪律仍是**逐条依据、不批量提升、补充来源不作投票**。",
           "kind": "captain-measured-now"
+        },
+        {
+          "path": "classics:references/annotations/san-shi/daliuren-daquan.json（t23b1，提交 519d019）+ captain 复核",
+          "shows": "t23 第一批（(daliuren-daquan, 待核实) 684 条）交付：**重叠 666（不重复取证）+ 新审 18**；提升 9（L2909/2911/2913/2915/2919/2921/2923/2925/2927，图格残画且无未决读法）→ `source-reviewed`，每条 note 含「依据原文段落ID＋行范围（fulltext.md 第 N 行）＋核对方式（引号内字符串与源行逐字符比对、含空格位；另核邻近标目行确认所属图）＋能支持什么」；保留 9（L0286/L0708/L0712/L12369/L2905/L2907/L2929/L4538/L9615）→ 仍 draft，每条写「缺什么证据／已尝试方法／并列候选（不替原文择一）／产品处理／解锁条件」。**未把补充来源当投票证据**（识典/平行本只记在 attempts，不用于判定或补字）。→ 这是 A2「引文可回溯」锚点基数的一次真实扩张（+9 条可引用），且未触碰 verified",
+          "kind": "member-produced + captain-verified"
         }
       ],
       "remaining": [
@@ -279,6 +289,11 @@
           "path": "classics:docs/closeout/review/art-verdict-judgment-gap-matrix-REGEN-20260913.json vs product:docs/implementation/art-verdict-judgment-gap-matrix.json",
           "shows": "captain 逐行逐字段比对：252 行、全部字段 0 处不同（reviewer 独立镜像重生成 generated_at=02:04:04Z vs captain 重生成 02:17:01Z）。即 A3 矩阵结论由两次独立重生成相互印证；reviewer 报告中「已提交矩阵仍过期（68 行 classicsRescue + 2 行 unknown_when）」指的是其开始复核时仓内的旧矩阵，已被 00e98fc 的重生成取代",
           "kind": "cross-check-identical"
+        },
+        {
+          "path": "product:src/lib/engine/liuyao.ts（hiddenState 事实字段）+ tests/engine/liuyao-source-case-use-reconciliation.test.ts（algo-impl t16，未提交）",
+          "shows": "**A3 缺口闭合：伏神旬空由「未算条件」变为可判定事实**。t6 断语对账实测 `bushi-zhengzong:BSZZ-LY-L3538`（原书断语核心条件「父母午火伏二爻丑土下**且旬空**」）：此前 `LiuyaoRow.hidden` 只是显示串（`六亲+干支`），伏神的旬空/月破/旺衰**算不出来** → 按 A3「没有计算的条件不得当成成立」记为未算条件。本批修法（只补事实层、不动结论）：①`LiuyaoRow` 新增结构化 `hiddenState`（branch/element/kong/monthBreak/dayClash/monthSame/daySame/tier/states），伏神与明爻共用同一套标记逻辑；②`liuyao:void` 旬空点标题/正文点名「伏神N处逢空」与「某爻下伏某亲（逢空）」；③`liuyao:hidden` 伏神点列出每个伏神的状态与旺衰；④取用层 `hidden:2` 节点 `state.kong=true` 与行层一致（两层同一事实）。实测：二爻明爻 `state.kong=false`（空亡午未，本爻丑不空）而 `hiddenState.kong=true`（父母丙午逢空）、`states=[逢空]`、tier=相；`analysis.uncomputed` 仍明写「最终成败/应期未给出」→ **没有把该条断语判成成立**（结论仍由条件走）。测试已由「具名限制③」改为真实断言（5 组：明爻不空 / 伏神空 / 两层一致 / 出处点点名 / 未提升结论）。同批复核另两条已钉差异的处置：`ZS-LY-V1-L0444` 水局 unknown = **引擎口径**（规则正文与理由明写「辰仍在当前旬空，按三合一空待填」；辰空是已算事实，非漏算）；`ZS-LY-V1-L0250` 优先序 = **引擎口径**（并列候选全保留、优先按日月支持，理由声明不判成败与应期）→ 两条都**不是实现缺口**，无需改引擎。验证：全仓 `vitest run` 227 files / 3,733 tests passed、`tsc --noEmit` 通过、`lint:ci` 通过。",
+          "kind": "fix-record + test（本轮）"
         }
       ],
       "remaining": [
