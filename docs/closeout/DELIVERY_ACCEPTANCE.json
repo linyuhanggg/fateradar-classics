@@ -1,6 +1,6 @@
 {
   "schema": "fateradar-delivery-acceptance-v1",
-  "generated_at": "2026-09-13T05:55:00Z",
+  "generated_at": "2026-09-13T06:10:00Z",
   "generated_by": "DSH captain（本会话 goal round 1/256）",
   "authority": "classics:docs/FATERADAR_FULL_LIBRARY_PLAN.md（含 2026-09-13 收尾执行修订）",
   "purpose": "唯一收尾状态账本：逐项对应权威方案「总验收与完成条件」1–8。引用既有矩阵与报告，不新造重复指标。",
@@ -389,6 +389,11 @@
           "path": "product:docs/implementation/QIMEN-CASE-DIFF-TRIAGE-20260913.md（168 行，t10 归档）",
           "shows": "奇门差异四类判定成文：1,919 条结构化案例中 **77 条差异，0 条可归因于引擎实现缺陷**——73 条是**原书同书两处印值互不一致**（引擎与其中一处一致，已登记 conflictingFields）、4 条是**原印数与同书正文一般法冲突**（P266/P273 阴五丁酉 9 vs 8、P312/P319 阴八丙申 3 vs 1，引擎取正文法，仓库 methodDifferences 早已登记同一批）；历史上的 1,543 条「starPalaceRaw 系统性错位」= **比对侧字段映射错**，修正后归零。**关键：captain 的起手假设被用「构造输入法」严格检验**——3 局 × 6 旬 × 10 时 = **180 条构造用例**（不依赖任何原书案例），命题「`starPalaceRaw` == 时干在地盘之宫（时干为甲时用旬首之仪）」**180/180 全部成立、0 例外** → 假设(a)（抽取侧取错字段）成立、假设(b)（引擎漏逐时移宫）**被排除**；该命题已钉成回归测试 `tests/engine/qimen-star-palace-semantics.test.ts`。纪律声明：未改引擎、未刷 golden、未为降低差异数迁就原书",
           "kind": "member-produced + captain-read（含构造输入反证）"
+        },
+        {
+          "path": "classics:docs/closeout/evidence/qimen-palace-wording-unify-20260913.md + captain 独立复核（584b379）",
+          "shows": "奇门「原宫数→落宫数」措辞统一完成（治本）：**上游 595 处**跨 9 个文件（annotations 267+3+1、inventory 232、source-editions 1、collation-notes 5、page-reviews 45、nlc-layouts.md 45、manifest 1）；**先固定快照再重跑**（把导出器实读的 6 个路径复制到 /tmp/ca/snap 并逐个记 md5，不再在移动 HEAD 上跑）→ cases=3568、`值符落宫数=1918`、`值符原宫数=0`；1,920 条 qimen 案例中 1,105 条仅因这一处文本而变化。**残留「原宫」全部是概念性表述**（上游 5 处 + 生成物 2 处：口径句「仅 376 条与原宫一致」与「判伏吟时要区分原宫数和寄宫后的落点」）——按裁定保留、未被误替换。captain 独立复核生成物：ids 3,568 相等、**非文本字段 0 处差异**（值未动）后才提交 `584b379`。校验：test-source-cases 18 OK、validate-executable OK（42 named gaps）、validate-annotations 53 books/62,839 entries/0 errors",
+          "kind": "member-produced + captain-verified"
         }
       ],
       "remaining": [
@@ -415,6 +420,12 @@
           "kind": "implementation-gap",
           "scope": "奇门 1,919 条结构化案例",
           "blocks": "A5 证据可信度（结论待独立复核）"
+        },
+        {
+          "item": "产品侧同源措辞尚未同步（待办，不阻断 A5 判定）：`product:src/lib/engine/fixtures/qimen-source-layouts.json` 仍有 4,012 处「原宫数」、以及 `product:scripts/art-verdict-source-case-recompute.ts` 的说明文字——需在 product 侧同步为「落宫」（若该 fixture 由生成器产出，重跑同一生成器即可；须同样遵守先固定快照）",
+          "kind": "implementation-gap",
+          "scope": "product 侧同源副本与脚本说明",
+          "blocks": "不阻断 A5/A6 判定；影响跨仓措辞一致性"
         }
       ],
       "owner": "case-wiring（案例挂接）+ independent-review",
