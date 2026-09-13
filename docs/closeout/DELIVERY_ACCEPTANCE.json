@@ -1,6 +1,6 @@
 {
   "schema": "fateradar-delivery-acceptance-v1",
-  "generated_at": "2026-09-13T04:10:00Z",
+  "generated_at": "2026-09-13T04:15:00Z",
   "generated_by": "DSH captain（本会话 goal round 1/256）",
   "authority": "classics:docs/FATERADAR_FULL_LIBRARY_PLAN.md（含 2026-09-13 收尾执行修订）",
   "purpose": "唯一收尾状态账本：逐项对应权威方案「总验收与完成条件」1–8。引用既有矩阵与报告，不新造重复指标。",
@@ -522,6 +522,11 @@
           "path": "captain 实测：git show c45dfdb:<file> vs 工作树（A7 候选 d383143）的 rule id 集合比对 + product WIRED_DEFINITION_IDS 检索",
           "shows": "跨仓 id 一致性核对通过：references/executable/sanming-tonghui.json id 集合 20→20（removed=[] added=[]）、ziping-zhenquan.json 39→39（removed=[] added=[]）——A7 只新增 named_gaps 字段，未改任何 id；product/src/engine/art-verdict-definition-ids.ts 仍引用这些 id（SMTH-E-04/06/09/10、ZPR-E-06 等共 20 处匹配）。另 captain 独立复跑三个校验器：test-validate-executable.py 22 OK、validate-executable.py OK(258 rules/579 spans/12 named gaps)、validate-rules.py OK(55 files/285 warnings)",
           "kind": "captain-reverified-now"
+        },
+        {
+          "path": "captain 实测（工作树，t14 进行中）：git diff --stat references/executable/ + python3 tools/validate-executable.py",
+          "shows": "t14（其余 unimplemented 理由全文重审）正在推进且**保持数据有效**：8 个规则文件被改动（+578/−36），`validate-executable.py` 仍 **OK 15 packages / 258 source-linked rule records / 579 source spans**，具名登记数由 **12 → 42**（named gaps）。说明重审不是只写 Markdown，而是把结论落进规则本体的具名登记字段。本批涉及 qiongtong-baojian、sanming-tonghui、xingxue-dacheng、yuxiaji-xiaoliuren、ziping-zhenquan、ziwei-doushu-quanshu、guotian-jing、qimen-dunjia-tongzhi 等",
+          "kind": "captain-measured-midflight（classics-audit t14 进行中，数字会继续变）"
         }
       ],
       "remaining": [
