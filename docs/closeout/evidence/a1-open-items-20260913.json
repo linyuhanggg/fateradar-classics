@@ -1,0 +1,452 @@
+{
+ "artifact": "A1 open items（《總鈐》666 残格抽样 ＋ 未确认影印底本全量）— 最小可用版本",
+ "date": "2026-09-13",
+ "by": "classics-audit (t20)",
+ "verified": false,
+ "canonical_eligible": false,
+ "counts": {
+  "zongqian_set_total": 666,
+  "zongqian_samples_in_this_file": 10,
+  "unconfirmed_facsimile_listed": 16,
+  "precise_undecided_not_blocking": 26,
+  "blocks_main_capability": 0,
+  "inventory_arithmetic": "已存影印 34 + Release 影印 5 + 尚未确认影印 16 = 55（catalog ready）"
+ },
+ "discrepancy_note": "计划文档 FATERADAR_FULL_LIBRARY_PLAN.md 与账本 A1 写「未确认底本 14 套」；磁盘实数（LIBRARY_INVENTORY.md，2026-09-12 脚本生成）为 **16 套**，且 34+5+16=55 正好等于 catalog ready 55，故以磁盘实数 16 为准；「14」少计 2 套，差在哪两套未查明（不猜），请 captain 裁定以哪一数为账本口径。",
+ "items": [
+  {
+   "id": "總鈐残格·daliuren-daquan:L1010-L1010",
+   "what_is_missing": "旧记「缺影印件、残格无法定列」已部分解除：影印在仓内（sources/facsimile/other/daliuren-daquan/liuren-daquan-juan1-siku-archive-06054168.pdf，112 页）、列轴可从纸面复原；**仍未解决的是逐格内容的归属**——该印本字心距≈70px、字面宽≈100–110px，同列相邻字粘连成 200–250px 墨条、相邻两栏在 x 上重叠，故「某处有哪些字」可读而「该字属哪一格」大面积不可判；不可判处一律留〔?〕。",
+   "attempts": "① B2 溯源（docs/closeout/B2-DALIUREN-RESIDUE-SOURCE-HUNT.md）：集合＝draft+待核实+含「残格」＝666 条，跨 L1010–L2468；检索识典 SK1599、六壬指南／大六壬秘本／六壬秘本 → 无同表平行本；② B4（docs/closeout/B4-SHIDIAN-SK1599-ZONGQIAN-FETCH.md）：实抓 SK1599「總鈐」章（HTTP 200，767,385 B）比对；③ t10 复核：四庫本卷一影印已在仓内，《總鈐》＝PDF 第 15 页标题、十表连号 p16–p25；④ t7/t11 影印线：sources/normalized/san-shi/daliuren-daquan/zongqian-layout-016-025.md ＋ zongqian-cells-016-020.md ＋ zongqian-cells-021-025.md（逐格转录、p16 八格行标已定案）；⑤ DRAFT_DISPOSITION_ROUND6.md §3：666/666 已追加更正 note（旧阻塞理由过时），不改原文与正文字段。",
+   "product_handling": "保持 draft（kind=待核实）：**不入 references/executable、不进规则/算法、不猜字、不补格、不连成月日全表、不升 verified**；只作「已披露限制」参与验收。解锁条件：逐格原字转录并建立「字→格」归属判据（现有两半批 cells 文件已覆盖部分格），再由独立复核把已定格升 passage-reviewed；未定格继续留〔?〕。",
+   "class": "precise-undecided-not-blocking",
+   "locator": {
+    "paragraphId": "daliuren-daquan:L1010-L1010",
+    "content_lead": "十二月辰：天煞、天空、死神、哭神、五墓、浴神、朱雀、螣蛇、月煞、迷惑、奸门",
+    "terms": [
+     "天煞",
+     "天空",
+     "死神",
+     "哭神",
+     "五墓",
+     "浴神",
+     "朱雀",
+     "螣蛇"
+    ],
+    "kind": "待核实",
+    "review": "draft"
+   },
+   "sampling": "666 条中每 66 条取 1，共 10 条；全量清单与重算指令见 B2 报告 §1。"
+  },
+  {
+   "id": "總鈐残格·daliuren-daquan:L1182-L1182",
+   "what_is_missing": "旧记「缺影印件、残格无法定列」已部分解除：影印在仓内（sources/facsimile/other/daliuren-daquan/liuren-daquan-juan1-siku-archive-06054168.pdf，112 页）、列轴可从纸面复原；**仍未解决的是逐格内容的归属**——该印本字心距≈70px、字面宽≈100–110px，同列相邻字粘连成 200–250px 墨条、相邻两栏在 x 上重叠，故「某处有哪些字」可读而「该字属哪一格」大面积不可判；不可判处一律留〔?〕。",
+   "attempts": "① B2 溯源（docs/closeout/B2-DALIUREN-RESIDUE-SOURCE-HUNT.md）：集合＝draft+待核实+含「残格」＝666 条，跨 L1010–L2468；检索识典 SK1599、六壬指南／大六壬秘本／六壬秘本 → 无同表平行本；② B4（docs/closeout/B4-SHIDIAN-SK1599-ZONGQIAN-FETCH.md）：实抓 SK1599「總鈐」章（HTTP 200，767,385 B）比对；③ t10 复核：四庫本卷一影印已在仓内，《總鈐》＝PDF 第 15 页标题、十表连号 p16–p25；④ t7/t11 影印线：sources/normalized/san-shi/daliuren-daquan/zongqian-layout-016-025.md ＋ zongqian-cells-016-020.md ＋ zongqian-cells-021-025.md（逐格转录、p16 八格行标已定案）；⑤ DRAFT_DISPOSITION_ROUND6.md §3：666/666 已追加更正 note（旧阻塞理由过时），不改原文与正文字段。",
+   "product_handling": "保持 draft（kind=待核实）：**不入 references/executable、不进规则/算法、不猜字、不补格、不连成月日全表、不升 verified**；只作「已披露限制」参与验收。解锁条件：逐格原字转录并建立「字→格」归属判据（现有两半批 cells 文件已覆盖部分格），再由独立复核把已定格升 passage-reviewed；未定格继续留〔?〕。",
+   "class": "precise-undecided-not-blocking",
+   "locator": {
+    "paragraphId": "daliuren-daquan:L1182-L1182",
+    "content_lead": "残格「卯乙五」",
+    "terms": [
+     "卯",
+     "乙五"
+    ],
+    "kind": "待核实",
+    "review": "draft"
+   },
+   "sampling": "666 条中每 66 条取 1，共 10 条；全量清单与重算指令见 B2 报告 §1。"
+  },
+  {
+   "id": "總鈐残格·daliuren-daquan:L1324-L1324",
+   "what_is_missing": "旧记「缺影印件、残格无法定列」已部分解除：影印在仓内（sources/facsimile/other/daliuren-daquan/liuren-daquan-juan1-siku-archive-06054168.pdf，112 页）、列轴可从纸面复原；**仍未解决的是逐格内容的归属**——该印本字心距≈70px、字面宽≈100–110px，同列相邻字粘连成 200–250px 墨条、相邻两栏在 x 上重叠，故「某处有哪些字」可读而「该字属哪一格」大面积不可判；不可判处一律留〔?〕。",
+   "attempts": "① B2 溯源（docs/closeout/B2-DALIUREN-RESIDUE-SOURCE-HUNT.md）：集合＝draft+待核实+含「残格」＝666 条，跨 L1010–L2468；检索识典 SK1599、六壬指南／大六壬秘本／六壬秘本 → 无同表平行本；② B4（docs/closeout/B4-SHIDIAN-SK1599-ZONGQIAN-FETCH.md）：实抓 SK1599「總鈐」章（HTTP 200，767,385 B）比对；③ t10 复核：四庫本卷一影印已在仓内，《總鈐》＝PDF 第 15 页标题、十表连号 p16–p25；④ t7/t11 影印线：sources/normalized/san-shi/daliuren-daquan/zongqian-layout-016-025.md ＋ zongqian-cells-016-020.md ＋ zongqian-cells-021-025.md（逐格转录、p16 八格行标已定案）；⑤ DRAFT_DISPOSITION_ROUND6.md §3：666/666 已追加更正 note（旧阻塞理由过时），不改原文与正文字段。",
+   "product_handling": "保持 draft（kind=待核实）：**不入 references/executable、不进规则/算法、不猜字、不补格、不连成月日全表、不升 verified**；只作「已披露限制」参与验收。解锁条件：逐格原字转录并建立「字→格」归属判据（现有两半批 cells 文件已覆盖部分格），再由独立复核把已定格升 passage-reviewed；未定格继续留〔?〕。",
+   "class": "precise-undecided-not-blocking",
+   "locator": {
+    "paragraphId": "daliuren-daquan:L1324-L1324",
+    "content_lead": "残格「亥申酉」",
+    "terms": [
+     "亥",
+     "申",
+     "酉"
+    ],
+    "kind": "待核实",
+    "review": "draft"
+   },
+   "sampling": "666 条中每 66 条取 1，共 10 条；全量清单与重算指令见 B2 报告 §1。"
+  },
+  {
+   "id": "總鈐残格·daliuren-daquan:L1466-L1466",
+   "what_is_missing": "旧记「缺影印件、残格无法定列」已部分解除：影印在仓内（sources/facsimile/other/daliuren-daquan/liuren-daquan-juan1-siku-archive-06054168.pdf，112 页）、列轴可从纸面复原；**仍未解决的是逐格内容的归属**——该印本字心距≈70px、字面宽≈100–110px，同列相邻字粘连成 200–250px 墨条、相邻两栏在 x 上重叠，故「某处有哪些字」可读而「该字属哪一格」大面积不可判；不可判处一律留〔?〕。",
+   "attempts": "① B2 溯源（docs/closeout/B2-DALIUREN-RESIDUE-SOURCE-HUNT.md）：集合＝draft+待核实+含「残格」＝666 条，跨 L1010–L2468；检索识典 SK1599、六壬指南／大六壬秘本／六壬秘本 → 无同表平行本；② B4（docs/closeout/B4-SHIDIAN-SK1599-ZONGQIAN-FETCH.md）：实抓 SK1599「總鈐」章（HTTP 200，767,385 B）比对；③ t10 复核：四庫本卷一影印已在仓内，《總鈐》＝PDF 第 15 页标题、十表连号 p16–p25；④ t7/t11 影印线：sources/normalized/san-shi/daliuren-daquan/zongqian-layout-016-025.md ＋ zongqian-cells-016-020.md ＋ zongqian-cells-021-025.md（逐格转录、p16 八格行标已定案）；⑤ DRAFT_DISPOSITION_ROUND6.md §3：666/666 已追加更正 note（旧阻塞理由过时），不改原文与正文字段。",
+   "product_handling": "保持 draft（kind=待核实）：**不入 references/executable、不进规则/算法、不猜字、不补格、不连成月日全表、不升 verified**；只作「已披露限制」参与验收。解锁条件：逐格原字转录并建立「字→格」归属判据（现有两半批 cells 文件已覆盖部分格），再由独立复核把已定格升 passage-reviewed；未定格继续留〔?〕。",
+   "class": "precise-undecided-not-blocking",
+   "locator": {
+    "paragraphId": "daliuren-daquan:L1466-L1466",
+    "content_lead": "残格「丑午午亥丑卯」",
+    "terms": [
+     "丑",
+     "午",
+     "亥",
+     "卯"
+    ],
+    "kind": "待核实",
+    "review": "draft"
+   },
+   "sampling": "666 条中每 66 条取 1，共 10 条；全量清单与重算指令见 B2 报告 §1。"
+  },
+  {
+   "id": "總鈐残格·daliuren-daquan:L1608-L1608",
+   "what_is_missing": "旧记「缺影印件、残格无法定列」已部分解除：影印在仓内（sources/facsimile/other/daliuren-daquan/liuren-daquan-juan1-siku-archive-06054168.pdf，112 页）、列轴可从纸面复原；**仍未解决的是逐格内容的归属**——该印本字心距≈70px、字面宽≈100–110px，同列相邻字粘连成 200–250px 墨条、相邻两栏在 x 上重叠，故「某处有哪些字」可读而「该字属哪一格」大面积不可判；不可判处一律留〔?〕。",
+   "attempts": "① B2 溯源（docs/closeout/B2-DALIUREN-RESIDUE-SOURCE-HUNT.md）：集合＝draft+待核实+含「残格」＝666 条，跨 L1010–L2468；检索识典 SK1599、六壬指南／大六壬秘本／六壬秘本 → 无同表平行本；② B4（docs/closeout/B4-SHIDIAN-SK1599-ZONGQIAN-FETCH.md）：实抓 SK1599「總鈐」章（HTTP 200，767,385 B）比对；③ t10 复核：四庫本卷一影印已在仓内，《總鈐》＝PDF 第 15 页标题、十表连号 p16–p25；④ t7/t11 影印线：sources/normalized/san-shi/daliuren-daquan/zongqian-layout-016-025.md ＋ zongqian-cells-016-020.md ＋ zongqian-cells-021-025.md（逐格转录、p16 八格行标已定案）；⑤ DRAFT_DISPOSITION_ROUND6.md §3：666/666 已追加更正 note（旧阻塞理由过时），不改原文与正文字段。",
+   "product_handling": "保持 draft（kind=待核实）：**不入 references/executable、不进规则/算法、不猜字、不补格、不连成月日全表、不升 verified**；只作「已披露限制」参与验收。解锁条件：逐格原字转录并建立「字→格」归属判据（现有两半批 cells 文件已覆盖部分格），再由独立复核把已定格升 passage-reviewed；未定格继续留〔?〕。",
+   "class": "precise-undecided-not-blocking",
+   "locator": {
+    "paragraphId": "daliuren-daquan:L1608-L1608",
+    "content_lead": "残格「寅辰寅」",
+    "terms": [
+     "寅",
+     "辰"
+    ],
+    "kind": "待核实",
+    "review": "draft"
+   },
+   "sampling": "666 条中每 66 条取 1，共 10 条；全量清单与重算指令见 B2 报告 §1。"
+  },
+  {
+   "id": "總鈐残格·daliuren-daquan:L1750-L1750",
+   "what_is_missing": "旧记「缺影印件、残格无法定列」已部分解除：影印在仓内（sources/facsimile/other/daliuren-daquan/liuren-daquan-juan1-siku-archive-06054168.pdf，112 页）、列轴可从纸面复原；**仍未解决的是逐格内容的归属**——该印本字心距≈70px、字面宽≈100–110px，同列相邻字粘连成 200–250px 墨条、相邻两栏在 x 上重叠，故「某处有哪些字」可读而「该字属哪一格」大面积不可判；不可判处一律留〔?〕。",
+   "attempts": "① B2 溯源（docs/closeout/B2-DALIUREN-RESIDUE-SOURCE-HUNT.md）：集合＝draft+待核实+含「残格」＝666 条，跨 L1010–L2468；检索识典 SK1599、六壬指南／大六壬秘本／六壬秘本 → 无同表平行本；② B4（docs/closeout/B4-SHIDIAN-SK1599-ZONGQIAN-FETCH.md）：实抓 SK1599「總鈐」章（HTTP 200，767,385 B）比对；③ t10 复核：四庫本卷一影印已在仓内，《總鈐》＝PDF 第 15 页标题、十表连号 p16–p25；④ t7/t11 影印线：sources/normalized/san-shi/daliuren-daquan/zongqian-layout-016-025.md ＋ zongqian-cells-016-020.md ＋ zongqian-cells-021-025.md（逐格转录、p16 八格行标已定案）；⑤ DRAFT_DISPOSITION_ROUND6.md §3：666/666 已追加更正 note（旧阻塞理由过时），不改原文与正文字段。",
+   "product_handling": "保持 draft（kind=待核实）：**不入 references/executable、不进规则/算法、不猜字、不补格、不连成月日全表、不升 verified**；只作「已披露限制」参与验收。解锁条件：逐格原字转录并建立「字→格」归属判据（现有两半批 cells 文件已覆盖部分格），再由独立复核把已定格升 passage-reviewed；未定格继续留〔?〕。",
+   "class": "precise-undecided-not-blocking",
+   "locator": {
+    "paragraphId": "daliuren-daquan:L1750-L1750",
+    "content_lead": "残格「戌子丑」",
+    "terms": [
+     "戌",
+     "子",
+     "丑"
+    ],
+    "kind": "待核实",
+    "review": "draft"
+   },
+   "sampling": "666 条中每 66 条取 1，共 10 条；全量清单与重算指令见 B2 报告 §1。"
+  },
+  {
+   "id": "總鈐残格·daliuren-daquan:L1890-L1890",
+   "what_is_missing": "旧记「缺影印件、残格无法定列」已部分解除：影印在仓内（sources/facsimile/other/daliuren-daquan/liuren-daquan-juan1-siku-archive-06054168.pdf，112 页）、列轴可从纸面复原；**仍未解决的是逐格内容的归属**——该印本字心距≈70px、字面宽≈100–110px，同列相邻字粘连成 200–250px 墨条、相邻两栏在 x 上重叠，故「某处有哪些字」可读而「该字属哪一格」大面积不可判；不可判处一律留〔?〕。",
+   "attempts": "① B2 溯源（docs/closeout/B2-DALIUREN-RESIDUE-SOURCE-HUNT.md）：集合＝draft+待核实+含「残格」＝666 条，跨 L1010–L2468；检索识典 SK1599、六壬指南／大六壬秘本／六壬秘本 → 无同表平行本；② B4（docs/closeout/B4-SHIDIAN-SK1599-ZONGQIAN-FETCH.md）：实抓 SK1599「總鈐」章（HTTP 200，767,385 B）比对；③ t10 复核：四庫本卷一影印已在仓内，《總鈐》＝PDF 第 15 页标题、十表连号 p16–p25；④ t7/t11 影印线：sources/normalized/san-shi/daliuren-daquan/zongqian-layout-016-025.md ＋ zongqian-cells-016-020.md ＋ zongqian-cells-021-025.md（逐格转录、p16 八格行标已定案）；⑤ DRAFT_DISPOSITION_ROUND6.md §3：666/666 已追加更正 note（旧阻塞理由过时），不改原文与正文字段。",
+   "product_handling": "保持 draft（kind=待核实）：**不入 references/executable、不进规则/算法、不猜字、不补格、不连成月日全表、不升 verified**；只作「已披露限制」参与验收。解锁条件：逐格原字转录并建立「字→格」归属判据（现有两半批 cells 文件已覆盖部分格），再由独立复核把已定格升 passage-reviewed；未定格继续留〔?〕。",
+   "class": "precise-undecided-not-blocking",
+   "locator": {
+    "paragraphId": "daliuren-daquan:L1890-L1890",
+    "content_lead": "残格「子戌」",
+    "terms": [
+     "子",
+     "戌"
+    ],
+    "kind": "待核实",
+    "review": "draft"
+   },
+   "sampling": "666 条中每 66 条取 1，共 10 条；全量清单与重算指令见 B2 报告 §1。"
+  },
+  {
+   "id": "總鈐残格·daliuren-daquan:L2034-L2034",
+   "what_is_missing": "旧记「缺影印件、残格无法定列」已部分解除：影印在仓内（sources/facsimile/other/daliuren-daquan/liuren-daquan-juan1-siku-archive-06054168.pdf，112 页）、列轴可从纸面复原；**仍未解决的是逐格内容的归属**——该印本字心距≈70px、字面宽≈100–110px，同列相邻字粘连成 200–250px 墨条、相邻两栏在 x 上重叠，故「某处有哪些字」可读而「该字属哪一格」大面积不可判；不可判处一律留〔?〕。",
+   "attempts": "① B2 溯源（docs/closeout/B2-DALIUREN-RESIDUE-SOURCE-HUNT.md）：集合＝draft+待核实+含「残格」＝666 条，跨 L1010–L2468；检索识典 SK1599、六壬指南／大六壬秘本／六壬秘本 → 无同表平行本；② B4（docs/closeout/B4-SHIDIAN-SK1599-ZONGQIAN-FETCH.md）：实抓 SK1599「總鈐」章（HTTP 200，767,385 B）比对；③ t10 复核：四庫本卷一影印已在仓内，《總鈐》＝PDF 第 15 页标题、十表连号 p16–p25；④ t7/t11 影印线：sources/normalized/san-shi/daliuren-daquan/zongqian-layout-016-025.md ＋ zongqian-cells-016-020.md ＋ zongqian-cells-021-025.md（逐格转录、p16 八格行标已定案）；⑤ DRAFT_DISPOSITION_ROUND6.md §3：666/666 已追加更正 note（旧阻塞理由过时），不改原文与正文字段。",
+   "product_handling": "保持 draft（kind=待核实）：**不入 references/executable、不进规则/算法、不猜字、不补格、不连成月日全表、不升 verified**；只作「已披露限制」参与验收。解锁条件：逐格原字转录并建立「字→格」归属判据（现有两半批 cells 文件已覆盖部分格），再由独立复核把已定格升 passage-reviewed；未定格继续留〔?〕。",
+   "class": "precise-undecided-not-blocking",
+   "locator": {
+    "paragraphId": "daliuren-daquan:L2034-L2034",
+    "content_lead": "残格「戌丑午」",
+    "terms": [
+     "戌",
+     "丑",
+     "午"
+    ],
+    "kind": "待核实",
+    "review": "draft"
+   },
+   "sampling": "666 条中每 66 条取 1，共 10 条；全量清单与重算指令见 B2 报告 §1。"
+  },
+  {
+   "id": "總鈐残格·daliuren-daquan:L2174-L2174",
+   "what_is_missing": "旧记「缺影印件、残格无法定列」已部分解除：影印在仓内（sources/facsimile/other/daliuren-daquan/liuren-daquan-juan1-siku-archive-06054168.pdf，112 页）、列轴可从纸面复原；**仍未解决的是逐格内容的归属**——该印本字心距≈70px、字面宽≈100–110px，同列相邻字粘连成 200–250px 墨条、相邻两栏在 x 上重叠，故「某处有哪些字」可读而「该字属哪一格」大面积不可判；不可判处一律留〔?〕。",
+   "attempts": "① B2 溯源（docs/closeout/B2-DALIUREN-RESIDUE-SOURCE-HUNT.md）：集合＝draft+待核实+含「残格」＝666 条，跨 L1010–L2468；检索识典 SK1599、六壬指南／大六壬秘本／六壬秘本 → 无同表平行本；② B4（docs/closeout/B4-SHIDIAN-SK1599-ZONGQIAN-FETCH.md）：实抓 SK1599「總鈐」章（HTTP 200，767,385 B）比对；③ t10 复核：四庫本卷一影印已在仓内，《總鈐》＝PDF 第 15 页标题、十表连号 p16–p25；④ t7/t11 影印线：sources/normalized/san-shi/daliuren-daquan/zongqian-layout-016-025.md ＋ zongqian-cells-016-020.md ＋ zongqian-cells-021-025.md（逐格转录、p16 八格行标已定案）；⑤ DRAFT_DISPOSITION_ROUND6.md §3：666/666 已追加更正 note（旧阻塞理由过时），不改原文与正文字段。",
+   "product_handling": "保持 draft（kind=待核实）：**不入 references/executable、不进规则/算法、不猜字、不补格、不连成月日全表、不升 verified**；只作「已披露限制」参与验收。解锁条件：逐格原字转录并建立「字→格」归属判据（现有两半批 cells 文件已覆盖部分格），再由独立复核把已定格升 passage-reviewed；未定格继续留〔?〕。",
+   "class": "precise-undecided-not-blocking",
+   "locator": {
+    "paragraphId": "daliuren-daquan:L2174-L2174",
+    "content_lead": "残格「丑寅卯巳未卯」",
+    "terms": [
+     "丑",
+     "寅",
+     "卯",
+     "巳",
+     "未"
+    ],
+    "kind": "待核实",
+    "review": "draft"
+   },
+   "sampling": "666 条中每 66 条取 1，共 10 条；全量清单与重算指令见 B2 报告 §1。"
+  },
+  {
+   "id": "總鈐残格·daliuren-daquan:L2316-L2316",
+   "what_is_missing": "旧记「缺影印件、残格无法定列」已部分解除：影印在仓内（sources/facsimile/other/daliuren-daquan/liuren-daquan-juan1-siku-archive-06054168.pdf，112 页）、列轴可从纸面复原；**仍未解决的是逐格内容的归属**——该印本字心距≈70px、字面宽≈100–110px，同列相邻字粘连成 200–250px 墨条、相邻两栏在 x 上重叠，故「某处有哪些字」可读而「该字属哪一格」大面积不可判；不可判处一律留〔?〕。",
+   "attempts": "① B2 溯源（docs/closeout/B2-DALIUREN-RESIDUE-SOURCE-HUNT.md）：集合＝draft+待核实+含「残格」＝666 条，跨 L1010–L2468；检索识典 SK1599、六壬指南／大六壬秘本／六壬秘本 → 无同表平行本；② B4（docs/closeout/B4-SHIDIAN-SK1599-ZONGQIAN-FETCH.md）：实抓 SK1599「總鈐」章（HTTP 200，767,385 B）比对；③ t10 复核：四庫本卷一影印已在仓内，《總鈐》＝PDF 第 15 页标题、十表连号 p16–p25；④ t7/t11 影印线：sources/normalized/san-shi/daliuren-daquan/zongqian-layout-016-025.md ＋ zongqian-cells-016-020.md ＋ zongqian-cells-021-025.md（逐格转录、p16 八格行标已定案）；⑤ DRAFT_DISPOSITION_ROUND6.md §3：666/666 已追加更正 note（旧阻塞理由过时），不改原文与正文字段。",
+   "product_handling": "保持 draft（kind=待核实）：**不入 references/executable、不进规则/算法、不猜字、不补格、不连成月日全表、不升 verified**；只作「已披露限制」参与验收。解锁条件：逐格原字转录并建立「字→格」归属判据（现有两半批 cells 文件已覆盖部分格），再由独立复核把已定格升 passage-reviewed；未定格继续留〔?〕。",
+   "class": "precise-undecided-not-blocking",
+   "locator": {
+    "paragraphId": "daliuren-daquan:L2316-L2316",
+    "content_lead": "残格「寅戌」",
+    "terms": [
+     "寅",
+     "戌"
+    ],
+    "kind": "待核实",
+    "review": "draft"
+   },
+   "sampling": "666 条中每 66 条取 1，共 10 条；全量清单与重算指令见 B2 报告 §1。"
+  },
+  {
+   "id": "未确认影印底本·bazi/qiongtong-baojian（穷通宝鉴）",
+   "what_is_missing": "未确认影印底本：仓内没有该 pack 的影印件；底本（版本、刊年、藏地）未确认，无法据影印逐字校勘。",
+   "attempts": "① docs/LIBRARY_INVENTORY.md（由 tools/build-library-inventory.py 从磁盘实数生成）该行最后一栏＝「尚未确认影印」；② 实检 sources/facsimile/**（全仓 80 件影印文件）按 slug 与书名两条路各搜一次 → **0 命中**；③ references/catalog/catalog.json：in ready 55（d2_status=ready）；④ references/source-editions.json：该书对照层均为电子文本层（待校参考），非影印。",
+   "product_handling": "该 pack 文本只作参考层：**不入 executable 规则、不解除算法证据排除、不升 verified**；页面/导出按「待校参考」标注。解锁条件：取得可核影印件（或明确版本信息）后，按 nlc-layouts／page-reviews 同法建立分页转录与 reviewedRanges，再谈段落升级。",
+   "class": "precise-undecided-not-blocking",
+   "locator": {
+    "system": "bazi",
+    "slug": "qiongtong-baojian",
+    "title": "穷通宝鉴",
+    "inventory_status": "尚未确认影印",
+    "facsimile_hits": [],
+    "catalog_entry": "references/catalog/catalog.json#ready_reference_packs"
+   }
+  },
+  {
+   "id": "未确认影印底本·divination/huangjin-ce（黄金策）",
+   "what_is_missing": "未确认影印底本：仓内没有该 pack 的影印件；底本（版本、刊年、藏地）未确认，无法据影印逐字校勘。",
+   "attempts": "① docs/LIBRARY_INVENTORY.md（由 tools/build-library-inventory.py 从磁盘实数生成）该行最后一栏＝「尚未确认影印」；② 实检 sources/facsimile/**（全仓 80 件影印文件）按 slug 与书名两条路各搜一次 → **0 命中**；③ references/catalog/catalog.json：in ready 55（d2_status=ready）；④ references/source-editions.json：该书对照层均为电子文本层（待校参考），非影印。",
+   "product_handling": "该 pack 文本只作参考层：**不入 executable 规则、不解除算法证据排除、不升 verified**；页面/导出按「待校参考」标注。解锁条件：取得可核影印件（或明确版本信息）后，按 nlc-layouts／page-reviews 同法建立分页转录与 reviewedRanges，再谈段落升级。",
+   "class": "precise-undecided-not-blocking",
+   "locator": {
+    "system": "divination",
+    "slug": "huangjin-ce",
+    "title": "黄金策",
+    "inventory_status": "尚未确认影印",
+    "facsimile_hits": [],
+    "catalog_entry": "references/catalog/catalog.json#ready_reference_packs"
+   }
+  },
+  {
+   "id": "未确认影印底本·divination/meihua-yishu（梅花易数）",
+   "what_is_missing": "未确认影印底本：仓内没有该 pack 的影印件；底本（版本、刊年、藏地）未确认，无法据影印逐字校勘。",
+   "attempts": "① docs/LIBRARY_INVENTORY.md（由 tools/build-library-inventory.py 从磁盘实数生成）该行最后一栏＝「尚未确认影印」；② 实检 sources/facsimile/**（全仓 80 件影印文件）按 slug 与书名两条路各搜一次 → **0 命中**；③ references/catalog/catalog.json：in ready 55（d2_status=ready）；④ references/source-editions.json：该书对照层均为电子文本层（待校参考），非影印。",
+   "product_handling": "该 pack 文本只作参考层：**不入 executable 规则、不解除算法证据排除、不升 verified**；页面/导出按「待校参考」标注。解锁条件：取得可核影印件（或明确版本信息）后，按 nlc-layouts／page-reviews 同法建立分页转录与 reviewedRanges，再谈段落升级。",
+   "class": "precise-undecided-not-blocking",
+   "locator": {
+    "system": "divination",
+    "slug": "meihua-yishu",
+    "title": "梅花易数",
+    "inventory_status": "尚未确认影印",
+    "facsimile_hits": [],
+    "catalog_entry": "references/catalog/catalog.json#ready_reference_packs"
+   }
+  },
+  {
+   "id": "未确认影印底本·divination/zengshan-buyi（增删卜易）",
+   "what_is_missing": "未确认影印底本：仓内没有该 pack 的影印件；底本（版本、刊年、藏地）未确认，无法据影印逐字校勘。",
+   "attempts": "① docs/LIBRARY_INVENTORY.md（由 tools/build-library-inventory.py 从磁盘实数生成）该行最后一栏＝「尚未确认影印」；② 实检 sources/facsimile/**（全仓 80 件影印文件）按 slug 与书名两条路各搜一次 → **0 命中**；③ references/catalog/catalog.json：in ready 55（d2_status=ready）；④ references/source-editions.json：该书对照层均为电子文本层（待校参考），非影印。",
+   "product_handling": "该 pack 文本只作参考层：**不入 executable 规则、不解除算法证据排除、不升 verified**；页面/导出按「待校参考」标注。解锁条件：取得可核影印件（或明确版本信息）后，按 nlc-layouts／page-reviews 同法建立分页转录与 reviewedRanges，再谈段落升级。",
+   "class": "precise-undecided-not-blocking",
+   "locator": {
+    "system": "divination",
+    "slug": "zengshan-buyi",
+    "title": "增删卜易",
+    "inventory_status": "尚未确认影印",
+    "facsimile_hits": [],
+    "catalog_entry": "references/catalog/catalog.json#ready_reference_packs"
+   }
+  },
+  {
+   "id": "未确认影印底本·fengshui/qingnang-jing（青囊经）",
+   "what_is_missing": "未确认影印底本：仓内没有该 pack 的影印件；底本（版本、刊年、藏地）未确认，无法据影印逐字校勘。",
+   "attempts": "① docs/LIBRARY_INVENTORY.md（由 tools/build-library-inventory.py 从磁盘实数生成）该行最后一栏＝「尚未确认影印」；② 实检 sources/facsimile/**（全仓 80 件影印文件）按 slug 与书名两条路各搜一次 → **0 命中**；③ references/catalog/catalog.json：in ready 55（d2_status=ready）；④ references/source-editions.json：该书对照层均为电子文本层（待校参考），非影印。",
+   "product_handling": "该 pack 文本只作参考层：**不入 executable 规则、不解除算法证据排除、不升 verified**；页面/导出按「待校参考」标注。解锁条件：取得可核影印件（或明确版本信息）后，按 nlc-layouts／page-reviews 同法建立分页转录与 reviewedRanges，再谈段落升级。",
+   "class": "precise-undecided-not-blocking",
+   "locator": {
+    "system": "fengshui",
+    "slug": "qingnang-jing",
+    "title": "青囊经",
+    "inventory_status": "尚未确认影印",
+    "facsimile_hits": [],
+    "catalog_entry": "references/catalog/catalog.json#ready_reference_packs"
+   }
+  },
+  {
+   "id": "未确认影印底本·fengshui/rudi-yan-quanshu（入地眼全书）",
+   "what_is_missing": "未确认影印底本：仓内没有该 pack 的影印件；底本（版本、刊年、藏地）未确认，无法据影印逐字校勘。",
+   "attempts": "① docs/LIBRARY_INVENTORY.md（由 tools/build-library-inventory.py 从磁盘实数生成）该行最后一栏＝「尚未确认影印」；② 实检 sources/facsimile/**（全仓 80 件影印文件）按 slug 与书名两条路各搜一次 → **0 命中**；③ references/catalog/catalog.json：in ready 55（d2_status=ready）；④ references/source-editions.json：该书对照层均为电子文本层（待校参考），非影印。",
+   "product_handling": "该 pack 文本只作参考层：**不入 executable 规则、不解除算法证据排除、不升 verified**；页面/导出按「待校参考」标注。解锁条件：取得可核影印件（或明确版本信息）后，按 nlc-layouts／page-reviews 同法建立分页转录与 reviewedRanges，再谈段落升级。",
+   "class": "precise-undecided-not-blocking",
+   "locator": {
+    "system": "fengshui",
+    "slug": "rudi-yan-quanshu",
+    "title": "入地眼全书",
+    "inventory_status": "尚未确认影印",
+    "facsimile_hits": [],
+    "catalog_entry": "references/catalog/catalog.json#ready_reference_packs"
+   }
+  },
+  {
+   "id": "未确认影印底本·fengshui/shenshi-xuankong-xue（沈氏玄空学）",
+   "what_is_missing": "未确认影印底本：仓内没有该 pack 的影印件；底本（版本、刊年、藏地）未确认，无法据影印逐字校勘。",
+   "attempts": "① docs/LIBRARY_INVENTORY.md（由 tools/build-library-inventory.py 从磁盘实数生成）该行最后一栏＝「尚未确认影印」；② 实检 sources/facsimile/**（全仓 80 件影印文件）按 slug 与书名两条路各搜一次 → **0 命中**；③ references/catalog/catalog.json：in ready 55（d2_status=ready）；④ references/source-editions.json：该书对照层均为电子文本层（待校参考），非影印。",
+   "product_handling": "该 pack 文本只作参考层：**不入 executable 规则、不解除算法证据排除、不升 verified**；页面/导出按「待校参考」标注。解锁条件：取得可核影印件（或明确版本信息）后，按 nlc-layouts／page-reviews 同法建立分页转录与 reviewedRanges，再谈段落升级。",
+   "class": "precise-undecided-not-blocking",
+   "locator": {
+    "system": "fengshui",
+    "slug": "shenshi-xuankong-xue",
+    "title": "沈氏玄空学",
+    "inventory_status": "尚未确认影印",
+    "facsimile_hits": [],
+    "catalog_entry": "references/catalog/catalog.json#ready_reference_packs"
+   }
+  },
+  {
+   "id": "未确认影印底本·fengshui/yangzhai-shishu（阳宅十书）",
+   "what_is_missing": "未确认影印底本：仓内没有该 pack 的影印件；底本（版本、刊年、藏地）未确认，无法据影印逐字校勘。",
+   "attempts": "① docs/LIBRARY_INVENTORY.md（由 tools/build-library-inventory.py 从磁盘实数生成）该行最后一栏＝「尚未确认影印」；② 实检 sources/facsimile/**（全仓 80 件影印文件）按 slug 与书名两条路各搜一次 → **0 命中**；③ references/catalog/catalog.json：in ready 55（d2_status=ready）；④ references/source-editions.json：该书对照层均为电子文本层（待校参考），非影印。",
+   "product_handling": "该 pack 文本只作参考层：**不入 executable 规则、不解除算法证据排除、不升 verified**；页面/导出按「待校参考」标注。解锁条件：取得可核影印件（或明确版本信息）后，按 nlc-layouts／page-reviews 同法建立分页转录与 reviewedRanges，再谈段落升级。",
+   "class": "precise-undecided-not-blocking",
+   "locator": {
+    "system": "fengshui",
+    "slug": "yangzhai-shishu",
+    "title": "阳宅十书",
+    "inventory_status": "尚未确认影印",
+    "facsimile_hits": [],
+    "catalog_entry": "references/catalog/catalog.json#ready_reference_packs"
+   }
+  },
+  {
+   "id": "未确认影印底本·luming-nayin/lantai-miaoxuan（兰台妙选）",
+   "what_is_missing": "未确认影印底本：仓内没有该 pack 的影印件；底本（版本、刊年、藏地）未确认，无法据影印逐字校勘。",
+   "attempts": "① docs/LIBRARY_INVENTORY.md（由 tools/build-library-inventory.py 从磁盘实数生成）该行最后一栏＝「尚未确认影印」；② 实检 sources/facsimile/**（全仓 80 件影印文件）按 slug 与书名两条路各搜一次 → **0 命中**；③ references/catalog/catalog.json：in ready 55（d2_status=ready）；④ references/source-editions.json：该书对照层均为电子文本层（待校参考），非影印。",
+   "product_handling": "该 pack 文本只作参考层：**不入 executable 规则、不解除算法证据排除、不升 verified**；页面/导出按「待校参考」标注。解锁条件：取得可核影印件（或明确版本信息）后，按 nlc-layouts／page-reviews 同法建立分页转录与 reviewedRanges，再谈段落升级。",
+   "class": "precise-undecided-not-blocking",
+   "locator": {
+    "system": "luming-nayin",
+    "slug": "lantai-miaoxuan",
+    "title": "兰台妙选",
+    "inventory_status": "尚未确认影印",
+    "facsimile_hits": [],
+    "catalog_entry": "references/catalog/catalog.json#ready_reference_packs"
+   }
+  },
+  {
+   "id": "未确认影印底本·physiognomy/bingjian（冰鉴）",
+   "what_is_missing": "未确认影印底本：仓内没有该 pack 的影印件；底本（版本、刊年、藏地）未确认，无法据影印逐字校勘。",
+   "attempts": "① docs/LIBRARY_INVENTORY.md（由 tools/build-library-inventory.py 从磁盘实数生成）该行最后一栏＝「尚未确认影印」；② 实检 sources/facsimile/**（全仓 80 件影印文件）按 slug 与书名两条路各搜一次 → **0 命中**；③ references/catalog/catalog.json：in ready 55（d2_status=ready）；④ references/source-editions.json：该书对照层均为电子文本层（待校参考），非影印。",
+   "product_handling": "该 pack 文本只作参考层：**不入 executable 规则、不解除算法证据排除、不升 verified**；页面/导出按「待校参考」标注。解锁条件：取得可核影印件（或明确版本信息）后，按 nlc-layouts／page-reviews 同法建立分页转录与 reviewedRanges，再谈段落升级。",
+   "class": "precise-undecided-not-blocking",
+   "locator": {
+    "system": "physiognomy",
+    "slug": "bingjian",
+    "title": "冰鉴",
+    "inventory_status": "尚未确认影印",
+    "facsimile_hits": [],
+    "catalog_entry": "references/catalog/catalog.json#ready_reference_packs"
+   }
+  },
+  {
+   "id": "未确认影印底本·physiognomy/shenxiang-quanbian（神相全编）",
+   "what_is_missing": "未确认影印底本：仓内没有该 pack 的影印件；底本（版本、刊年、藏地）未确认，无法据影印逐字校勘。",
+   "attempts": "① docs/LIBRARY_INVENTORY.md（由 tools/build-library-inventory.py 从磁盘实数生成）该行最后一栏＝「尚未确认影印」；② 实检 sources/facsimile/**（全仓 80 件影印文件）按 slug 与书名两条路各搜一次 → **0 命中**；③ references/catalog/catalog.json：in ready 55（d2_status=ready）；④ references/source-editions.json：该书对照层均为电子文本层（待校参考），非影印。",
+   "product_handling": "该 pack 文本只作参考层：**不入 executable 规则、不解除算法证据排除、不升 verified**；页面/导出按「待校参考」标注。解锁条件：取得可核影印件（或明确版本信息）后，按 nlc-layouts／page-reviews 同法建立分页转录与 reviewedRanges，再谈段落升级。",
+   "class": "precise-undecided-not-blocking",
+   "locator": {
+    "system": "physiognomy",
+    "slug": "shenxiang-quanbian",
+    "title": "神相全编",
+    "inventory_status": "尚未确认影印",
+    "facsimile_hits": [],
+    "catalog_entry": "references/catalog/catalog.json#ready_reference_packs"
+   }
+  },
+  {
+   "id": "未确认影印底本·san-shi/qimen-faqiao（奇门法窍（V5.1 核验摘录））",
+   "what_is_missing": "未确认影印底本：仓内没有该 pack 的影印件；底本（版本、刊年、藏地）未确认，无法据影印逐字校勘。",
+   "attempts": "① docs/LIBRARY_INVENTORY.md（由 tools/build-library-inventory.py 从磁盘实数生成）该行最后一栏＝「尚未确认影印」；② 实检 sources/facsimile/**（全仓 80 件影印文件）按 slug 与书名两条路各搜一次 → **0 命中**；③ references/catalog/catalog.json：in ready 55（d2_status=ready）；④ references/source-editions.json：该书对照层均为电子文本层（待校参考），非影印。",
+   "product_handling": "该 pack 文本只作参考层：**不入 executable 规则、不解除算法证据排除、不升 verified**；页面/导出按「待校参考」标注。解锁条件：取得可核影印件（或明确版本信息）后，按 nlc-layouts／page-reviews 同法建立分页转录与 reviewedRanges，再谈段落升级。",
+   "class": "precise-undecided-not-blocking",
+   "locator": {
+    "system": "san-shi",
+    "slug": "qimen-faqiao",
+    "title": "奇门法窍（V5.1 核验摘录）",
+    "inventory_status": "尚未确认影印",
+    "facsimile_hits": [],
+    "catalog_entry": "references/catalog/catalog.json#ready_reference_packs"
+   }
+  },
+  {
+   "id": "未确认影印底本·selection/yuqia-ji（玉匣记）",
+   "what_is_missing": "未确认影印底本：仓内没有该 pack 的影印件；底本（版本、刊年、藏地）未确认，无法据影印逐字校勘。",
+   "attempts": "① docs/LIBRARY_INVENTORY.md（由 tools/build-library-inventory.py 从磁盘实数生成）该行最后一栏＝「尚未确认影印」；② 实检 sources/facsimile/**（全仓 80 件影印文件）按 slug 与书名两条路各搜一次 → **0 命中**；③ references/catalog/catalog.json：in ready 55（d2_status=ready）；④ references/source-editions.json：该书对照层均为电子文本层（待校参考），非影印。",
+   "product_handling": "该 pack 文本只作参考层：**不入 executable 规则、不解除算法证据排除、不升 verified**；页面/导出按「待校参考」标注。解锁条件：取得可核影印件（或明确版本信息）后，按 nlc-layouts／page-reviews 同法建立分页转录与 reviewedRanges，再谈段落升级。",
+   "class": "precise-undecided-not-blocking",
+   "locator": {
+    "system": "selection",
+    "slug": "yuqia-ji",
+    "title": "玉匣记",
+    "inventory_status": "尚未确认影印",
+    "facsimile_hits": [],
+    "catalog_entry": "references/catalog/catalog.json#ready_reference_packs"
+   }
+  },
+  {
+   "id": "未确认影印底本·xingming/guotian-jing（果天经/果老星宗）",
+   "what_is_missing": "未确认影印底本：仓内没有该 pack 的影印件；底本（版本、刊年、藏地）未确认，无法据影印逐字校勘。",
+   "attempts": "① docs/LIBRARY_INVENTORY.md（由 tools/build-library-inventory.py 从磁盘实数生成）该行最后一栏＝「尚未确认影印」；② 实检 sources/facsimile/**（全仓 80 件影印文件）按 slug 与书名两条路各搜一次 → **0 命中**；③ references/catalog/catalog.json：in ready 55（d2_status=ready）；④ references/source-editions.json：该书对照层均为电子文本层（待校参考），非影印。",
+   "product_handling": "该 pack 文本只作参考层：**不入 executable 规则、不解除算法证据排除、不升 verified**；页面/导出按「待校参考」标注。解锁条件：取得可核影印件（或明确版本信息）后，按 nlc-layouts／page-reviews 同法建立分页转录与 reviewedRanges，再谈段落升级。",
+   "class": "precise-undecided-not-blocking",
+   "locator": {
+    "system": "xingming",
+    "slug": "guotian-jing",
+    "title": "果天经/果老星宗",
+    "inventory_status": "尚未确认影印",
+    "facsimile_hits": [],
+    "catalog_entry": "references/catalog/catalog.json#ready_reference_packs"
+   }
+  },
+  {
+   "id": "未确认影印底本·ziwei/taiwei-fu（太微赋）",
+   "what_is_missing": "未确认影印底本：仓内没有该 pack 的影印件；底本（版本、刊年、藏地）未确认，无法据影印逐字校勘。",
+   "attempts": "① docs/LIBRARY_INVENTORY.md（由 tools/build-library-inventory.py 从磁盘实数生成）该行最后一栏＝「尚未确认影印」；② 实检 sources/facsimile/**（全仓 80 件影印文件）按 slug 与书名两条路各搜一次 → **0 命中**；③ references/catalog/catalog.json：in ready 55（d2_status=ready）；④ references/source-editions.json：该书对照层均为电子文本层（待校参考），非影印。",
+   "product_handling": "该 pack 文本只作参考层：**不入 executable 规则、不解除算法证据排除、不升 verified**；页面/导出按「待校参考」标注。解锁条件：取得可核影印件（或明确版本信息）后，按 nlc-layouts／page-reviews 同法建立分页转录与 reviewedRanges，再谈段落升级。",
+   "class": "precise-undecided-not-blocking",
+   "locator": {
+    "system": "ziwei",
+    "slug": "taiwei-fu",
+    "title": "太微赋",
+    "inventory_status": "尚未确认影印",
+    "facsimile_hits": [],
+    "catalog_entry": "references/catalog/catalog.json#ready_reference_packs"
+   }
+  },
+  {
+   "id": "未确认影印底本·ziwei/ziwei-doushu-quanshu（紫微斗数全书）",
+   "what_is_missing": "未确认影印底本：仓内没有该 pack 的影印件；底本（版本、刊年、藏地）未确认，无法据影印逐字校勘。",
+   "attempts": "① docs/LIBRARY_INVENTORY.md（由 tools/build-library-inventory.py 从磁盘实数生成）该行最后一栏＝「尚未确认影印」；② 实检 sources/facsimile/**（全仓 80 件影印文件）按 slug 与书名两条路各搜一次 → **0 命中**；③ references/catalog/catalog.json：in ready 55（d2_status=ready）；④ references/source-editions.json：该书对照层均为电子文本层（待校参考），非影印。",
+   "product_handling": "该 pack 文本只作参考层：**不入 executable 规则、不解除算法证据排除、不升 verified**；页面/导出按「待校参考」标注。解锁条件：取得可核影印件（或明确版本信息）后，按 nlc-layouts／page-reviews 同法建立分页转录与 reviewedRanges，再谈段落升级。",
+   "class": "precise-undecided-not-blocking",
+   "locator": {
+    "system": "ziwei",
+    "slug": "ziwei-doushu-quanshu",
+    "title": "紫微斗数全书",
+    "inventory_status": "尚未确认影印",
+    "facsimile_hits": [],
+    "catalog_entry": "references/catalog/catalog.json#ready_reference_packs"
+   }
+  }
+ ]
+}
