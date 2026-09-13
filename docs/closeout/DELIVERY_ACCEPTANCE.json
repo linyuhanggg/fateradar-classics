@@ -1,6 +1,6 @@
 {
   "schema": "fateradar-delivery-acceptance-v1",
-  "generated_at": "2026-09-13T06:20:00Z",
+  "generated_at": "2026-09-13T06:35:00Z",
   "generated_by": "DSH captain（本会话 goal round 1/256）",
   "authority": "classics:docs/FATERADAR_FULL_LIBRARY_PLAN.md（含 2026-09-13 收尾执行修订）",
   "purpose": "唯一收尾状态账本：逐项对应权威方案「总验收与完成条件」1–8。引用既有矩阵与报告，不新造重复指标。",
@@ -399,6 +399,11 @@
           "path": "classics:docs/closeout/evidence/qimen-palace-wording-unify-20260913.md + captain 独立复核（584b379）",
           "shows": "奇门「原宫数→落宫数」措辞统一完成（治本）：**上游 595 处**跨 9 个文件（annotations 267+3+1、inventory 232、source-editions 1、collation-notes 5、page-reviews 45、nlc-layouts.md 45、manifest 1）；**先固定快照再重跑**（把导出器实读的 6 个路径复制到 /tmp/ca/snap 并逐个记 md5，不再在移动 HEAD 上跑）→ cases=3568、`值符落宫数=1918`、`值符原宫数=0`；1,920 条 qimen 案例中 1,105 条仅因这一处文本而变化。**残留「原宫」全部是概念性表述**（上游 5 处 + 生成物 2 处：口径句「仅 376 条与原宫一致」与「判伏吟时要区分原宫数和寄宫后的落点」）——按裁定保留、未被误替换。captain 独立复核生成物：ids 3,568 相等、**非文本字段 0 处差异**（值未动）后才提交 `584b379`。校验：test-source-cases 18 OK、validate-executable OK（42 named gaps）、validate-annotations 53 books/62,839 entries/0 errors",
           "kind": "member-produced + captain-verified"
+        },
+        {
+          "path": "product:docs/implementation/QIMEN-CASE-DIFF-TRIAGE-20260913.md §2b（40 个来源页组判定）+ captain 实跑其回归测试",
+          "shows": "77 条差异的**细化判定**（一行可多字段，字段计数和 104 > 77）：字段拆分 chiefStar 30 / chiefDoor 20 / starPalaceRaw 29 / doorPalaceRaw 25 / **mainGua 0**（原 5 条经字形归一后消除：八纯卦原书写全名「兑为泽」而引擎写「兑」，六亲繁体 財/孫 ↔ 简体；归一后六爻 13/13 全一致）/ 梅花 0。按 **40 个来源页组**判定：**①引擎缺陷 0** ／ **②原表歧义 73**（P131 阳四局 30 条：总表「禽死」vs 逐时表「輔杜」，引擎同逐时表；P198 阳九局 6 条：总表八八 vs 逐时九九，引擎同逐时条；其余 34 页组 37 条；P131-C03-R03 1 条：另一处印值尚未转录）／ **③口径/流派差异（具名）4**（P266/P273 阴五丁酉、P312/P319 阴八丙申：原印数与同书正文一般法不符，引擎取正文一般法、原印数留对照）／ **④元数据错 0**。另：`meihuaMonthInvariance` 由 checked=0 补为 **checked 2 / stable 2**（换月令 子↔午 前后本卦/互卦/变卦/动爻逐字相同，断言在 meihua-source-components.test.ts）。captain 实跑其新回归测试：`qimen-star-palace-semantics.test.ts` → **5 tests passed**（含 180 条扫掠）",
+          "kind": "member-produced + captain-ran-test"
         }
       ],
       "remaining": [
@@ -786,6 +791,11 @@
           "path": "classics:docs/closeout/review/INDEPENDENT-REVIEW-A6-BATCH-20260913.md（reviewer t8 顺带核对 captain 的 A8 登记）",
           "shows": "reviewer 独立核对 captain 的 A8 登记「准确」，并给出更完整口径：产品**全部 11 个 pin**（不止 10 个）均为真实提交、且都是当前 remote main `fe76a0b` 的祖先；**578 锚点（566 fragments + 12 anchor）**在各自 pin 与当前 main 两份 blob 上逐条「空白归一后整句包含」比对 = **两侧各 0 漂移**；bazi-anchor 在当前工作树重跑生成器 = 183 条**除 sourceRevision 外 0 差异**（QTB-M-01-03 的 L0089+L0093+L0099 都回来了）；其余 6 份 pin 落后 1,432–1,683 提交（本账本登记为 remaining 而非已解决=准确）。两处小注已采纳：①落后计数需写明基线；②A6 evidence 署名已由 reviewer-2 更正为 reviewer（t8）",
           "kind": "independent-corroboration"
+        },
+        {
+          "path": "product:scripts/audit-anchor-pins.py + docs/implementation/A8-CONTENT-REVISION-PIN-AUDIT.md §5b（algo-impl，未提交）",
+          "shows": "578 锚点 0 漂移的**可复现证据**（回应 captain 收口要求②）：①脚本只读、扫 `src/lib/**/generated/*.json` 里的全部锚点（rules[].anchor / rules[].fragments[] / notes[].source.anchor 三种位置），对每个锚点取「该产物自身 sourceRevision」与「--target」两处的 file 的 startLine–endLine 行区间文本比对；②同时给出三种判定口径：exact（逐字符含空白）/ **strip（仅忽略整段首尾空白；段内空白与换行必须一致——本报告判定口径）** / wsnorm（折叠连续空白，对照用）；③原始输出：7 份产物 362+82+81+21+12+12+8 = **578 锚点，三种口径均 same=578 / drifted=0 / unavailable=0，退出码 0**；对 --target c45dfdb4 与 --target origin/main（已前进到 fe76a0b9，c45dfdb4 仍是其祖先）两个目标跑均 0 漂移；④复核方式（reviewer-2 一行命令）：`python3 scripts/audit-anchor-pins.py --classics <classics> --target c45dfdb497a3ba802881a4191b976a6786a7f3d1`，期望 [strip] drifted=0 且退出码 0，若有漂移会打印逐条明细（artifact · rule id · file · 行区间 · 自身 revision）；⑤范围说明：产品仓手写规则 catalog.ts 不含行锚点，不在审计范围。",
+          "kind": "reproducible-evidence + script（本轮）"
         }
       ],
       "remaining": [
