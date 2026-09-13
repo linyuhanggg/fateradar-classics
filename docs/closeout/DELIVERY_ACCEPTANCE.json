@@ -1,10 +1,15 @@
 {
   "schema": "fateradar-delivery-acceptance-v1",
-  "generated_at": "2026-09-13T02:05:00Z",
+  "generated_at": "2026-09-13T02:20:00Z",
   "generated_by": "DSH captain（本会话 goal round 1/256）",
   "authority": "classics:docs/FATERADAR_FULL_LIBRARY_PLAN.md（含 2026-09-13 收尾执行修订）",
   "purpose": "唯一收尾状态账本：逐项对应权威方案「总验收与完成条件」1–8。引用既有矩阵与报告，不新造重复指标。",
-  "status_vocabulary": ["pending", "working", "pass", "blocked"],
+  "status_vocabulary": [
+    "pending",
+    "working",
+    "pass",
+    "blocked"
+  ],
   "status_rule": "报告已写、ID 已接线、测试总数、注解数量均不构成 pass；只有该条验收能力经实际材料/运行结果证实才记 pass。八项均无 pass 时不得结束 Goal。",
   "pending_kinds": {
     "implementation-gap": "来源与输入足够、代码尚未实现或实现错误——必须继续实现，不能改写为不支持结项。",
@@ -49,21 +54,33 @@
     "rescue_none": 106,
     "rescue_unimplemented": 30,
     "rescue_cross_ref": 5,
-    "rules_by_art": {"bazi": 183, "liuren": 23, "liuyao": 21, "ziwei": 12, "qimen": 6, "qizheng": 6, "xiaoliuren": 6, "meihua": 1},
+    "rules_by_art": {
+      "bazi": 183,
+      "liuren": 23,
+      "liuyao": 21,
+      "ziwei": 12,
+      "qimen": 6,
+      "qizheng": 6,
+      "xiaoliuren": 6,
+      "meihua": 1
+    },
     "source_cases_total": 3568,
     "source_cases_wired_and_reconciled": 10,
     "product_matrix_assertions": 418,
     "product_matrix_rows": 252,
     "product_matrix_runtime_wired_after_pack13": 258,
     "product_matrix_generated_at": "2026-09-12T20:56:24.778Z",
-    "product_matrix_stale_heads": {"in_file_product_head": "cdb5f9c", "in_file_classics_head": "74edada"},
+    "product_matrix_stale_heads": {
+      "in_file_product_head": "cdb5f9c",
+      "in_file_classics_head": "74edada"
+    },
     "note": "产品矩阵内 head 已过期（A3 已登记重生成）；其余为本次直接实测。draft 余量与 GAP_LEDGER 旧快照（2,905）不同，以本次实测 2,835 为准。"
   },
   "criteria": [
     {
       "id": "A1",
       "plan_condition": "1. 全部现有资料都有处理去向；缺本、疑文、重复、非现有产品范围和明确排除项目均可定位。不能用「待处理」填满清单后宣称完成。",
-      "capability_under_acceptance": "55 个资料包（54 全文 + 2 补充 MD）逐包处理去向可定位：正文待校／著录元数据／重复／范围外／真实残缺与争议，各自有明确去向，不是笼统「待处理」。",
+      "capability_under_acceptance": "55 行资料包口径（54 书 + 1 影印伪行）逐包处理去向可定位：正文待校／著录元数据／重复／范围外／真实残缺与争议，各自有明确去向，不是笼统「待处理」。（原写「54 全文 + 2 补充 MD」算术不通，已更正）",
       "status": "working",
       "implementation": [
         "classics:docs/closeout/FULL-LIBRARY-DISPOSITION-20260912.md §1 逐书去向表",
@@ -72,14 +89,52 @@
         "classics:references/inventory/**, references/catalog/**, references/source-editions.json"
       ],
       "evidence": [
-        {"path": "classics:docs/closeout/FULL-LIBRARY-DISPOSITION-20260912.md", "shows": "55 包逐书去向；第 3 节列残本、OCR 分页、明确排除项的具体去向", "kind": "script-generated+classified"},
-        {"path": "classics:references/annotations/**/*.json", "shows": "实测 62,839 条 / 53 书：source-reviewed 60,004、draft 2,835（15 书）", "kind": "recomputed-now"},
-        {"path": "classics:docs/closeout/GAP_LEDGER.json", "shows": "drafts_by_file、page_consumers、recovered 台账", "kind": "ledger-snapshot"}
+        {
+          "path": "classics:docs/closeout/FULL-LIBRARY-DISPOSITION-20260912.md",
+          "shows": "55 包逐书去向；第 3 节列残本、OCR 分页、明确排除项的具体去向",
+          "kind": "script-generated+classified"
+        },
+        {
+          "path": "classics:references/annotations/**/*.json",
+          "shows": "实测 62,839 条 / 53 书：source-reviewed 60,004、draft 2,835（15 书）",
+          "kind": "recomputed-now"
+        },
+        {
+          "path": "classics:docs/closeout/GAP_LEDGER.json",
+          "shows": "drafts_by_file、page_consumers、recovered 台账",
+          "kind": "ledger-snapshot"
+        },
+        {
+          "path": "classics:docs/closeout/review/INDEPENDENT-VERIFICATION-20260913.md",
+          "shows": "reviewer 自算复现：79 文件 / 53 书 / 62,839 = 60,004 + 2,835（15 书）、全部带 paragraphId；54 份 fulltext 与去处表 54 书行同集；41 份影印 PDF",
+          "kind": "independent-verification"
+        }
       ],
       "remaining": [
-        {"item": "2,835 条 draft 逐项闭环去向（不是全审读）", "kind": "evidence-or-semantics-uncertainty", "scope": "15 书：daliuren-daquan 773、qimen-dunjia-tongzhi 1261、mayi-shenxiang 239、yuqia-ji 180、mingli-yueyan 162、liuren-miben 124、huangji-jingshi 40、ziwei-doushu-quanshu 40、其余 7 书 2–4", "blocks": "A1 working→pass"},
-        {"item": "《總鈐》666 残格缺影印，只能列轴", "kind": "evidence-or-semantics-uncertainty", "scope": "大六壬残格；closeout 已记来源与缺页", "blocks": "A1 局部，不阻塞主要能力"},
-        {"item": "14 套未确认底本（影印来源待定）", "kind": "evidence-or-semantics-uncertainty", "scope": "references/source-editions.json", "blocks": "A1 局部"}
+        {
+          "item": "2,835 条 draft 逐项闭环去向（不是全审读）",
+          "kind": "evidence-or-semantics-uncertainty",
+          "scope": "15 书：daliuren-daquan 773、qimen-dunjia-tongzhi 1261、mayi-shenxiang 239、yuqia-ji 180、mingli-yueyan 162、liuren-miben 124、huangji-jingshi 40、ziwei-doushu-quanshu 40、其余 7 书 1–4",
+          "blocks": "A1 working→pass"
+        },
+        {
+          "item": "《總鈐》666 残格缺影印，只能列轴",
+          "kind": "evidence-or-semantics-uncertainty",
+          "scope": "大六壬残格；closeout 已记来源与缺页",
+          "blocks": "A1 局部，不阻塞主要能力"
+        },
+        {
+          "item": "14 套未确认底本（影印来源待定）",
+          "kind": "evidence-or-semantics-uncertainty",
+          "scope": "references/source-editions.json",
+          "blocks": "A1 局部"
+        },
+        {
+          "item": "证据物过期需同步（独立复核实测）：FULL-LIBRARY-DISPOSITION-20260912.md §1 合计行 116/32/105/5 ≠ 当前 117/30/106/5（qiongtong 66/11/43→66/10/44、sanming 4/7/9→5/6/9）；GAP_LEDGER.json 的 source_reviewed=59,934 / draft=2,905 / 基线 4cb96e3、48f68a8 / merged_main=false 均与现状（60,004 / 2,835 / eb4cabe、230effd / 已合 main）矛盾，其中 merged_main=false 可直接证伪",
+          "kind": "evidence-or-semantics-uncertainty",
+          "scope": "closeout 报告与 GAP_LEDGER 快照的过期数字（不改动本次实测计数）",
+          "blocks": "A1 引用证据时效；不改变 A1 实测结论"
+        }
       ],
       "owner": "classics-audit（古籍加工及正式入库）",
       "dependencies": [],
@@ -97,16 +152,40 @@
         "product:src/engine/art-verdict-*.ts 的 sources 字段（anchor/revision/quote/bookSlug）"
       ],
       "evidence": [
-        {"path": "classics:docs/closeout/QTB-CITATION-PROVENANCE-20260912.md", "shows": "穷通宝鉴专章引用出处逐条核对", "kind": "audit"},
-        {"path": "classics:references/annotations/**", "shows": "62,839 条全部带 paragraphId；review 二值（source-reviewed／draft）", "kind": "recomputed-now"},
-        {"path": "classics:tools/test-validate-annotations.py", "shows": "注解校验测试", "kind": "test"}
+        {
+          "path": "classics:docs/closeout/QTB-CITATION-PROVENANCE-20260912.md",
+          "shows": "穷通宝鉴专章引用出处逐条核对",
+          "kind": "audit"
+        },
+        {
+          "path": "classics:references/annotations/**",
+          "shows": "62,839 条全部带 paragraphId；review 二值（source-reviewed／draft）",
+          "kind": "recomputed-now"
+        },
+        {
+          "path": "classics:tools/test-validate-annotations.py",
+          "shows": "注解校验测试",
+          "kind": "test"
+        }
       ],
       "remaining": [
-        {"item": "引用级核对只做了穷通专章部分，未覆盖全部 258 条规则及页面实际展示引文", "kind": "implementation-gap", "scope": "product 页面/导出实际渲染引文 ↔ classics 原文范围", "blocks": "A2 working→pass"},
-        {"item": "verified 全库仍 false（不得批量升级）", "kind": "evidence-or-semantics-uncertainty", "scope": "人工影印校勘状态", "blocks": "三态分开需逐条推进，不批量改"}
+        {
+          "item": "引用级核对只做了穷通专章部分，未覆盖全部 258 条规则及页面实际展示引文",
+          "kind": "implementation-gap",
+          "scope": "product 页面/导出实际渲染引文 ↔ classics 原文范围",
+          "blocks": "A2 working→pass"
+        },
+        {
+          "item": "verified 全库仍 false（不得批量升级）",
+          "kind": "evidence-or-semantics-uncertainty",
+          "scope": "人工影印校勘状态",
+          "blocks": "三态分开需逐条推进，不批量改"
+        }
       ],
       "owner": "classics-audit + captain（引用级核对／页面回读）",
-      "dependencies": ["A1"],
+      "dependencies": [
+        "A1"
+      ],
       "blockers": [],
       "pass_definition": "逐条核对页面实际展示引文的原文范围；草稿/已审读/人工校勘三态可分辨。"
     },
@@ -121,15 +200,45 @@
         "product:docs/implementation/art-verdict-judgment-gap-matrix.json"
       ],
       "evidence": [
-        {"path": "product:docs/implementation/art-verdict-judgment-gap-matrix.json", "shows": "已在最新 HEAD 由 captain 重生成（2026-09-13T02:17Z；product_head=230effd、classics_head=92f8d62）：runtime_wired_after_pack13=258、coverage_index_wired=258/missing=0、ids_without_probe 空、static_parse_matches_runtime=true、assertions_parsed=418、无 static_runtime_mismatch、无 ids_missing_from_classics_executable、无 duplicate_classics_ids。新暴露：信息不足适用分支 gap 8 条（DLD-E-02..E-09），不满足分支 gap 0；三态齐全按术数 bazi=23 / liuyao=6 / liuren=1", "kind": "generated-on-current-head（captain 重跑）"},
-        {"path": "product:docs/implementation/ART-VERDICT-FACT-RUNTIME.md", "shows": "事实字段运行时口径", "kind": "doc"},
-        {"path": "product:tests/engine/art-verdict-judgment-*.test.ts", "shows": "28 文件 418 断言", "kind": "test"}
+        {
+          "path": "product:docs/implementation/art-verdict-judgment-gap-matrix.json",
+          "shows": "已在最新 HEAD 由 captain 重生成（2026-09-13T02:17Z；product_head=230effd、classics_head=92f8d62）：runtime_wired_after_pack13=258、coverage_index_wired=258/missing=0、ids_without_probe 空、static_parse_matches_runtime=true、assertions_parsed=418、无 static_runtime_mismatch、无 ids_missing_from_classics_executable、无 duplicate_classics_ids。新暴露：信息不足适用分支 gap 8 条（DLD-E-02..E-09），不满足分支 gap 0；三态齐全按术数 bazi=23 / liuyao=6 / liuren=1",
+          "kind": "generated-on-current-head（captain 重跑）"
+        },
+        {
+          "path": "product:docs/implementation/ART-VERDICT-FACT-RUNTIME.md",
+          "shows": "事实字段运行时口径",
+          "kind": "doc"
+        },
+        {
+          "path": "product:tests/engine/art-verdict-judgment-*.test.ts",
+          "shows": "28 文件 418 断言",
+          "kind": "test"
+        },
+        {
+          "path": "classics:docs/closeout/review/art-verdict-judgment-gap-matrix-REGEN-20260913.json",
+          "shows": "reviewer 用镜像法（rsync + git show md5 证明 271 个 tracked 输入与 HEAD 230effd 逐字节相同）独立重跑：252 行、static_parse_matches_runtime=true、coverage_index_missing=0、ids_without_probe=[]、418 断言/28 文件、0 无归因、0 探针不符",
+          "kind": "independent-verification"
+        }
       ],
       "remaining": [
-        {"item": "页面解释理由/来源与事实的联动需消费者侧验收，不能只看绑定", "kind": "implementation-gap", "scope": "geju.execution / bazi-evidence 消费者", "blocks": "A3 working→pass"}
+        {
+          "item": "页面解释理由/来源与事实的联动需消费者侧验收，不能只看绑定",
+          "kind": "implementation-gap",
+          "scope": "geju.execution / bazi-evidence 消费者",
+          "blocks": "A3 working→pass"
+        },
+        {
+          "item": "已提交矩阵仍有 68 行 classicsRescue + 2 行 unknown_when 是旧快照（判定性字段不变）；reviewer 重生成产物已归档，可直接采用，不必再跑",
+          "kind": "evidence-or-semantics-uncertainty",
+          "scope": "product:docs/implementation/art-verdict-judgment-gap-matrix.json",
+          "blocks": "A3 证据字段时效（不影响判定性结论）"
+        }
       ],
       "owner": "algo-impl（算法实现）",
-      "dependencies": ["A2"],
+      "dependencies": [
+        "A2"
+      ],
       "blockers": [],
       "pass_definition": "矩阵在最新 main 重生成且 0 未归因；页面解释理由与事实一致经独立回读。"
     },
@@ -144,17 +253,47 @@
         "product:docs/implementation/D4-ARBITRATION-INVALIDATED-ASSERTIONS.md、D6-FOLD-SHAPE-AUDIT.md"
       ],
       "evidence": [
-        {"path": "product:docs/implementation/art-verdict-judgment-gap-matrix.json", "shows": "assertions_parsed=418；statuses=[满足,不满足,信息不足]；failBranchDeclared/unknownBranchDeclared 逐行", "kind": "generated"},
-        {"path": "product:docs/implementation/ART-VERDICT-BRANCH-DECLARATION-AUDIT.md", "shows": "分支声明审计", "kind": "audit"}
+        {
+          "path": "product:docs/implementation/art-verdict-judgment-gap-matrix.json",
+          "shows": "assertions_parsed=418；statuses=[满足,不满足,信息不足]；failBranchDeclared/unknownBranchDeclared 逐行",
+          "kind": "generated"
+        },
+        {
+          "path": "product:docs/implementation/ART-VERDICT-BRANCH-DECLARATION-AUDIT.md",
+          "shows": "分支声明审计",
+          "kind": "audit"
+        }
       ],
       "remaining": [
-        {"item": "信息不足适用分支 gap 8 条（最新矩阵实测）：DLD-E-02 / E-03 / E-04 / E-05 / E-06 / E-07 / E-08 / E-09——大六壬这些规则本身可产生「信息不足」，但没有任何真实断言覆盖该分支（其余七术信息不足分支 gap=0；不满足分支全库 gap=0，已断言 224 条）", "kind": "implementation-gap", "scope": "大六壬 8 条", "blocks": "A4"},
-        {"item": "DLD-E-15 未测（最新矩阵未列入 unknown-gap，需单独核对是否属不适用/已声明）", "kind": "implementation-gap", "scope": "大六壬 1 条", "blocks": "A4"},
-        {"item": "ZSB-E-15 / ZSB-E-18 / ZSB-E-19 触发 0 次", "kind": "implementation-gap", "scope": "增删卜易 3 条", "blocks": "A4"},
-        {"item": "救应余量 30 条 unimplemented 需逐条维持具名理由（不得改成不支持结项）", "kind": "evidence-or-semantics-uncertainty", "scope": "references/executable/*.json rescue 字段", "blocks": "A4 分支覆盖完整性"}
+        {
+          "item": "信息不足适用分支 gap 8 条（最新矩阵实测）：DLD-E-02 / E-03 / E-04 / E-05 / E-06 / E-07 / E-08 / E-09——大六壬这些规则本身可产生「信息不足」，但没有任何真实断言覆盖该分支（其余七术信息不足分支 gap=0；不满足分支全库 gap=0，已断言 224 条）",
+          "kind": "implementation-gap",
+          "scope": "大六壬 8 条",
+          "blocks": "A4"
+        },
+        {
+          "item": "DLD-E-15 未测（最新矩阵未列入 unknown-gap，需单独核对是否属不适用/已声明）",
+          "kind": "implementation-gap",
+          "scope": "大六壬 1 条",
+          "blocks": "A4"
+        },
+        {
+          "item": "ZSB-E-15 / ZSB-E-18 / ZSB-E-19 触发 0 次",
+          "kind": "implementation-gap",
+          "scope": "增删卜易 3 条",
+          "blocks": "A4"
+        },
+        {
+          "item": "救应余量 30 条 unimplemented 需逐条维持具名理由（不得改成不支持结项）",
+          "kind": "evidence-or-semantics-uncertainty",
+          "scope": "references/executable/*.json rescue 字段",
+          "blocks": "A4 分支覆盖完整性"
+        }
       ],
       "owner": "algo-impl + independent-review",
-      "dependencies": ["A3"],
+      "dependencies": [
+        "A3"
+      ],
       "blockers": [],
       "pass_definition": "每条规则非适用分支有名有据；未测/零触发项清零或具名登记为原文未界定。"
     },
@@ -170,17 +309,46 @@
         "product:src/engine/art-boundary-unknowns-cases-*.ts"
       ],
       "evidence": [
-        {"path": "product:docs/implementation/ART-VERDICT-CASE-KINDS.json", "shows": "三类案例分账数据", "kind": "generated"},
-        {"path": "product:docs/implementation/ART-VERDICT-SOURCE-CASE-RECOMPUTE.json", "shows": "原书案例复算结果", "kind": "generated"},
-        {"path": "classics:docs/closeout/GAP_LEDGER.json", "shows": "judgment_fixture_sides=258；三类不折算口径", "kind": "ledger"}
+        {
+          "path": "product:docs/implementation/ART-VERDICT-CASE-KINDS.json",
+          "shows": "三类案例分账数据",
+          "kind": "generated"
+        },
+        {
+          "path": "product:docs/implementation/ART-VERDICT-SOURCE-CASE-RECOMPUTE.json",
+          "shows": "原书案例复算结果",
+          "kind": "generated"
+        },
+        {
+          "path": "classics:docs/closeout/GAP_LEDGER.json",
+          "shows": "judgment_fixture_sides=258；三类不折算口径",
+          "kind": "ledger"
+        }
       ],
       "remaining": [
-        {"item": "原书案例机械挂接仅 10/3,568（第 41 轮：10 条逐条复算＋人读断语对账）", "kind": "implementation-gap", "scope": "source-cases.json → product 测试/断言", "blocks": "A5 working→pass（主要缺口）"},
-        {"item": "人读断语对账模板已有 10 条，需扩面到主要能力相关样本", "kind": "implementation-gap", "scope": "product:docs/cases/**", "blocks": "A5"},
-        {"item": "verified 仍 false，不得由测试通过自动提升", "kind": "evidence-or-semantics-uncertainty", "scope": "全库", "blocks": "分账已满足，人工验证仍待"}
+        {
+          "item": "原书案例机械挂接仅 10/3,568（第 41 轮：10 条逐条复算＋人读断语对账）",
+          "kind": "implementation-gap",
+          "scope": "source-cases.json → product 测试/断言",
+          "blocks": "A5 working→pass（主要缺口）"
+        },
+        {
+          "item": "人读断语对账模板已有 10 条，需扩面到主要能力相关样本",
+          "kind": "implementation-gap",
+          "scope": "product:docs/cases/**",
+          "blocks": "A5"
+        },
+        {
+          "item": "verified 仍 false，不得由测试通过自动提升",
+          "kind": "evidence-or-semantics-uncertainty",
+          "scope": "全库",
+          "blocks": "分账已满足，人工验证仍待"
+        }
       ],
       "owner": "case-wiring（案例挂接）+ independent-review",
-      "dependencies": ["A2"],
+      "dependencies": [
+        "A2"
+      ],
       "blockers": [],
       "pass_definition": "按八术主要能力与风险选取的样本完成真实复算＋人读对账，三类账目互不折算。"
     },
@@ -197,20 +365,62 @@
         "product:src/lib/engine/xiaoliuren.ts（pack13 6 条定义接真实输出）"
       ],
       "evidence": [
-        {"path": "product:docs/implementation/E-PAGE-ACCEPTANCE-VERIFICATION.md", "shows": "实际页面验收记录（六术出处/来源显示）", "kind": "page-acceptance"},
-        {"path": "product:docs/implementation/C3-EIGHT-ARTS-EXPORT-ACCEPTANCE.md", "shows": "八术导出验收记录", "kind": "export-acceptance"},
-        {"path": "classics:docs/closeout/GAP_LEDGER.json#page_consumers", "shows": "bazi_12 已接；xiaoliuren 已接 6 条。注：其中 other_arts「缺 dedicated free-reading」一句已过期（2026-09-13 实测七术 builder 均存在并接线），该文本待经典仓侧同步", "kind": "ledger（部分过期）"},
-        {"path": "product:tests/engine/a6-liuyao-ziwei-free-reading-consumers.test.ts", "shows": "实跑 10 条：六爻逐爻焦点与总览同源且带古籍锚点/revision、解读点 ID 不冒充规则/段落锚点；紫微所选运限层与正文一致（大限↔流年不串层）、未选层按本命层、层名不存在不换层顶替、导出 token 带层名与页面同层", "kind": "test（本轮）"},
-        {"path": "product:docs/implementation/A6-LIUYAO-ZIWEI-FREE-READING.md", "shows": "两个消费者侧缺陷的复现与改法；本工作树 222 files / 3675 tests passed、tsc --noEmit 通过", "kind": "fix-record（本轮）"}
+        {
+          "path": "product:docs/implementation/E-PAGE-ACCEPTANCE-VERIFICATION.md",
+          "shows": "实际页面验收记录（六术出处/来源显示）",
+          "kind": "page-acceptance"
+        },
+        {
+          "path": "product:docs/implementation/C3-EIGHT-ARTS-EXPORT-ACCEPTANCE.md",
+          "shows": "八术导出验收记录",
+          "kind": "export-acceptance"
+        },
+        {
+          "path": "classics:docs/closeout/GAP_LEDGER.json#page_consumers",
+          "shows": "bazi_12 已接；xiaoliuren 已接 6 条。注：其中 other_arts「缺 dedicated free-reading」一句已过期（2026-09-13 实测七术 builder 均存在并接线），该文本待经典仓侧同步",
+          "kind": "ledger（部分过期）"
+        },
+        {
+          "path": "product:tests/engine/a6-liuyao-ziwei-free-reading-consumers.test.ts",
+          "shows": "实跑 10 条：六爻逐爻焦点与总览同源且带古籍锚点/revision、解读点 ID 不冒充规则/段落锚点；紫微所选运限层与正文一致（大限↔流年不串层）、未选层按本命层、层名不存在不换层顶替、导出 token 带层名与页面同层",
+          "kind": "test（本轮）"
+        },
+        {
+          "path": "product:docs/implementation/A6-LIUYAO-ZIWEI-FREE-READING.md",
+          "shows": "两个消费者侧缺陷的复现与改法；本工作树 222 files / 3675 tests passed、tsc --noEmit 通过",
+          "kind": "fix-record（本轮）"
+        }
       ],
       "remaining": [
-        {"item": "「七术缺 dedicated free-reading builders」已核实为过期记录：ziwei/liuyao/qimen/liuren/meihua/xiaoliuren/qizheng 各有 build*FreeReading，已接各自 chart 路由 + EvidencePanel + 导出。现在的主要缺口是**浏览器实测**：八术主要栏目切换资料/位置/时制后与核心事实一致（page-acceptance 执行）", "kind": "implementation-gap", "scope": "八术页面主要栏目（浏览器层，非 builder 缺失）", "blocks": "A6 working→pass（主要缺口＝页面实测）"},
-        {"item": "切换资料/位置/时制后旧结论不残留：本轮已修两处引擎侧实证缺陷——六爻点开一爻后出处/导出断链（逐爻焦点只剩 1 个无来源点、盘级规则点全丢）、紫微解释不跟所选运限层（页面写流年、解释写大限）——均有单测钉住；页面逐一回读仍待 page-acceptance", "kind": "implementation-gap", "scope": "页面状态与引擎结果同源", "blocks": "A6（引擎侧已修，浏览器回读未做）"},
-        {"item": "其余五术（奇门/六壬/梅花/小六壬/七政）未做同口径逐条消费者核对：各术构建函数里「解读点 ID 兜底成规则/段落 ID」的同类风险只在本次两术内修掉，其余术待各自核对", "kind": "implementation-gap", "scope": "其余五术免费解释点", "blocks": "A6 全术口径一致性"},
-        {"item": "生时反推不参与首屏；无标注集不得称排序准确率", "kind": "evidence-or-semantics-uncertainty", "scope": "birth-time 页面", "blocks": "不阻塞 A6"}
+        {
+          "item": "八术主要栏目的浏览器实测覆盖：ArtFreeReading 已进 8 个 chart 路由（liuren 4 个 testId、其余各 2），但尚未在真实页面逐栏目打开并确认「本盘结论＋白话原因＋所用事实＋来源＋位置关联」齐备",
+          "kind": "implementation-gap",
+          "scope": "八术主要栏目（真实浏览器）",
+          "blocks": "A6 working→pass"
+        },
+        {
+          "item": "切换资料/位置/时制/运限层后旧结论不残留：六爻逐爻出处断链、紫微运限串层两处引擎侧缺陷已修并有单测钉住；页面层仍需 page-acceptance 逐一回读",
+          "kind": "implementation-gap",
+          "scope": "页面状态与引擎结果同源",
+          "blocks": "A6 working→pass"
+        },
+        {
+          "item": "其余五术（奇门/六壬/梅花/小六壬/七政）未做同口径消费者核对：「解读点 ID 兜底成规则/段落 ID」的同类风险只在六爻/紫微内修掉",
+          "kind": "implementation-gap",
+          "scope": "五术消费者（同口径核对）",
+          "blocks": "A6 working→pass"
+        },
+        {
+          "item": "生时反推不参与首屏；无标注集不得称排序准确率",
+          "kind": "evidence-or-semantics-uncertainty",
+          "scope": "birth-time 页面",
+          "blocks": "不阻塞 A6"
+        }
       ],
       "owner": "page-acceptance（实际页面与导出验收）+ algo-impl",
-      "dependencies": ["A3"],
+      "dependencies": [
+        "A3"
+      ],
       "blockers": [],
       "pass_definition": "八术主要栏目均有真实免费解释，且位置/资料切换后内容与核心事实一致，浏览器实测通过。"
     },
@@ -225,18 +435,59 @@
         "product:docs/SCHOOL_DIVERGENCE.md"
       ],
       "evidence": [
-        {"path": "classics:references/executable/*.json（rescue 字段）", "shows": "实测 2026-09-13：self 117 / none 106 / unimplemented 30 / 交叉 5（ZPR-E-03×2、ZPR-E-05×1、ZPR-E-08×2）", "kind": "recomputed-now"},
-        {"path": "product:docs/implementation/E2-QIZHENG-TIME-BASIS-FIX.md", "shows": "七政时间基准修正", "kind": "fix-record"},
-        {"path": "classics:docs/closeout/GAP_LEDGER.json#progress_round30/38", "shows": "SMTH-E-14 改标 self；QTB-M-02-12 裁决 none", "kind": "ledger"}
+        {
+          "path": "classics:references/executable/*.json（rescue 字段）",
+          "shows": "实测 2026-09-13：self 117 / none 106 / unimplemented 30 / 交叉 5（ZPR-E-03×2、ZPR-E-05×1、ZPR-E-08×2）",
+          "kind": "recomputed-now"
+        },
+        {
+          "path": "product:docs/implementation/E2-QIZHENG-TIME-BASIS-FIX.md",
+          "shows": "七政时间基准修正",
+          "kind": "fix-record"
+        },
+        {
+          "path": "classics:docs/closeout/GAP_LEDGER.json#progress_round30/38",
+          "shows": "SMTH-E-14 改标 self；QTB-M-02-12 裁决 none",
+          "kind": "ledger"
+        }
       ],
       "remaining": [
-        {"item": "SMTH-E-04/06/07/10 未界定术语（夾貴／福神／包裹貴人／連屬，全书检索无判据）", "kind": "evidence-or-semantics-uncertainty", "scope": "神煞 4 条", "blocks": "A7 局部，需具名登记为原文未界定"},
-        {"item": "SMTH-E-09 三处读法待定", "kind": "evidence-or-semantics-uncertainty", "scope": "神煞 1 条", "blocks": "A7 局部"},
-        {"item": "ZPR-E-06 财只见藏干时的口径说明（引擎给信息不足方向正确，需具名登记）", "kind": "implementation-gap", "scope": "子平 1 条", "blocks": "A7"},
-        {"item": "明确不支持的学派/能力单列清单需与 unimplemented 30 条对齐", "kind": "implementation-gap", "scope": "references/executable + product docs/SCHOOL_DIVERGENCE.md", "blocks": "A7"}
+        {
+          "item": "SMTH-E-04/06/07/10 未界定术语（夾貴／福神／包裹貴人／連屬，全书检索无判据）",
+          "kind": "evidence-or-semantics-uncertainty",
+          "scope": "神煞 4 条",
+          "blocks": "A7 局部，需具名登记为原文未界定"
+        },
+        {
+          "item": "SMTH-E-09 三处读法待定",
+          "kind": "evidence-or-semantics-uncertainty",
+          "scope": "神煞 1 条",
+          "blocks": "A7 局部"
+        },
+        {
+          "item": "ZPR-E-06 财只见藏干时的口径说明（引擎给信息不足方向正确，需具名登记）",
+          "kind": "implementation-gap",
+          "scope": "子平 1 条",
+          "blocks": "A7"
+        },
+        {
+          "item": "明确不支持的学派/能力单列清单需与 unimplemented 30 条对齐",
+          "kind": "implementation-gap",
+          "scope": "references/executable + product docs/SCHOOL_DIVERGENCE.md",
+          "blocks": "A7"
+        },
+        {
+          "item": "SMTH-E-08 同为 unimplemented，审计文件里有具名理由，账本先前枚举遗漏",
+          "kind": "evidence-or-semantics-uncertainty",
+          "scope": "神煞 1 条",
+          "blocks": "A7 局部枚举完整性"
+        }
       ],
       "owner": "independent-review + classics-audit",
-      "dependencies": ["A2", "A4"],
+      "dependencies": [
+        "A2",
+        "A4"
+      ],
       "blockers": [],
       "pass_definition": "影响主要判断的已知错误全部修复或撤下；未界定项具名登记且不影响主要能力；不支持项单列。"
     },
@@ -251,17 +502,57 @@
         "product:deploy/**、ecosystem.config.cjs（部署另授权）"
       ],
       "evidence": [
-        {"path": "gh:linyuhanggg/fateradar-classics run 34731428150", "shows": "main eb4cabe validate-rules success", "kind": "ci"},
-        {"path": "gh:linyuhanggg/cosmic-fortune-lab run 34731425370", "shows": "main 230effd ci success（冻结时未取得结论，本次核实为 success）", "kind": "ci"},
-        {"path": "git:main_contains_branch", "shows": "classics d8e80d4→eb4cabe、product 9661476→230effd：两分支 HEAD 均为 origin/main 祖先（已集成）", "kind": "git-verified-now"}
+        {
+          "path": "gh:linyuhanggg/fateradar-classics run 34731428150",
+          "shows": "main eb4cabe validate-rules success",
+          "kind": "ci"
+        },
+        {
+          "path": "gh:linyuhanggg/cosmic-fortune-lab run 34731425370",
+          "shows": "main 230effd ci success（冻结时未取得结论，本次核实为 success）",
+          "kind": "ci"
+        },
+        {
+          "path": "git:main_contains_branch",
+          "shows": "classics d8e80d4→eb4cabe、product 9661476→230effd：两分支 HEAD 均为 origin/main 祖先（已集成）",
+          "kind": "git-verified-now"
+        },
+        {
+          "path": "classics:docs/closeout/review/INDEPENDENT-VERIFICATION-20260913.md",
+          "shows": "gh 独立核实 run 34731428150（classics eb4cabe）与 34731425370（product 230effd，19 步含 typecheck/test/build:worker/playwright e2e）均 success；643/643 带 anchor 规则全引文在 pin 3dc9d01 与 eb4cabe 双 revision 锚点行区间 0 漂移",
+          "kind": "independent-verification"
+        }
       ],
       "remaining": [
-        {"item": "内容导出与代码版本对应的版本钉（classicsPins / sourceRevision）需在最新 main 复核", "kind": "implementation-gap", "scope": "product 依赖的 classics 快照", "blocks": "A8"},
-        {"item": "网页项目端到端集成验收需在最新 main 重跑（现有页面验收记录早于第 43/44 轮）", "kind": "implementation-gap", "scope": "真实页面 + 导出", "blocks": "A8 working→pass"},
-        {"item": "生产部署单独记录，未授权不做", "kind": "evidence-or-semantics-uncertainty", "scope": "product:deploy/**", "blocks": "不阻塞 A8（合入 main ≠ 已部署）"}
+        {
+          "item": "内容导出与代码版本可对应【实测不成立，可复现】：src/lib/engine/generated/bazi-anchor-rule-index.json（sourceRevision df73f232，183 条）与在 classics main（eb4cabe）重生成相比 54 条不同（救应句来源段未随导出）；classics_rev 钉 3dc9d01 落后 main 1750 个提交，CI 的 classics 检出也钉该旧提交。复核产物：docs/closeout/review/bazi-anchor-rule-index-REGEN-20260913.json",
+          "kind": "implementation-gap",
+          "scope": "product 内容导出 ↔ classics main（bazi-anchor-rule-index + CLASSICS_REV/CI pin）",
+          "blocks": "A8 working→pass（硬缺口）"
+        },
+        {
+          "item": "网页项目端到端集成验收需在最新 main 重跑（现有页面验收记录早于第 43/44 轮）",
+          "kind": "implementation-gap",
+          "scope": "真实页面 + 导出",
+          "blocks": "A8 working→pass"
+        },
+        {
+          "item": "生产部署单独记录，未授权不做",
+          "kind": "evidence-or-semantics-uncertainty",
+          "scope": "product:deploy/**",
+          "blocks": "不阻塞 A8（合入 main ≠ 已部署）"
+        }
       ],
       "owner": "captain（唯一集成者）+ page-acceptance",
-      "dependencies": ["A1", "A2", "A3", "A4", "A5", "A6", "A7"],
+      "dependencies": [
+        "A1",
+        "A2",
+        "A3",
+        "A4",
+        "A5",
+        "A6",
+        "A7"
+      ],
       "blockers": [],
       "pass_definition": "两仓最新 main 检查通过；版本可对应；页面/导出集成验收在最新 main 通过；部署状态单列。"
     }
@@ -324,9 +615,55 @@
     "不新增付费服务、不篡改日志、不重启 Multica 或旧调度器"
   ],
   "next_implementation_packages": [
-    {"id": "P1", "what": "其他七术免费解释消费者（A6 主要缺口）", "blocks": "A6"},
-    {"id": "P2", "what": "原书案例挂接扩面 + 人读断语对账（A5 主要缺口）", "blocks": "A5"},
-    {"id": "P3", "what": "神煞未界定术语与 ZPR-E-06 具名登记（A7）", "blocks": "A7"},
-    {"id": "P4", "what": "重生成缺口矩阵 + 调候月内时段余量 + 奇门 308–311 OCR", "blocks": "A3/A4/A1"}
-  ]
+    {
+      "id": "P1",
+      "what": "其他七术免费解释消费者（A6 主要缺口）",
+      "blocks": "A6"
+    },
+    {
+      "id": "P2",
+      "what": "原书案例挂接扩面 + 人读断语对账（A5 主要缺口）",
+      "blocks": "A5"
+    },
+    {
+      "id": "P3",
+      "what": "神煞未界定术语与 ZPR-E-06 具名登记（A7）",
+      "blocks": "A7"
+    },
+    {
+      "id": "P4",
+      "what": "重生成缺口矩阵 + 调候月内时段余量 + 奇门 308–311 OCR",
+      "blocks": "A3/A4/A1"
+    }
+  ],
+  "independent_verification": {
+    "latest_report": "docs/closeout/review/INDEPENDENT-VERIFICATION-20260913.md",
+    "by": "reviewer（团队独立审查岗，t5）",
+    "artifacts": [
+      "docs/closeout/review/art-verdict-judgment-gap-matrix-REGEN-20260913.json",
+      "docs/closeout/review/bazi-anchor-rule-index-REGEN-20260913.json",
+      "docs/closeout/review/tiaohou-profiles-REGEN-20260913.json",
+      "docs/closeout/review/scripts-20260913/（14 个可复现脚本）"
+    ],
+    "methods": [
+      "自算 references/annotations 与 references/executable，不采信成员自报",
+      "rsync 镜像 + 逐文件 git show md5 证明 271 个 tracked 输入与 HEAD 230effd 逐字节相同后重跑矩阵与产物生成器",
+      "gh run view / ls-remote 独立核实 CI 结论与远端 SHA"
+    ],
+    "confirmed": [
+      "A1 计数与逐书 draft 分布",
+      "A7 258 条/15 文件、117-106-30-5、30 条具名理由，且 66 条 unimplemented→self 与 tiaohou-rescue.ts 的 66 个 id 一一对应（排除无证据升级）",
+      "A3 矩阵声称全部成立",
+      "A8 两仓 main CI success；643/643 锚点引文双 revision 0 漂移"
+    ],
+    "discrepancies_folded": [
+      "A8 硬缺口：bazi-anchor-rule-index 54/183 与当前 main 不符",
+      "A1 证据物过期（disposition 合计行、GAP_LEDGER 快照、merged_main=false 被证伪）",
+      "A3 已提交矩阵 68 行 classicsRescue + 2 行 unknown_when 为旧快照",
+      "A7 枚举漏 SMTH-E-08",
+      "A6 缺口描述已改写为「栏目覆盖 + 切换不残留」"
+    ],
+    "conclusion": "八项本轮无一可判 pass；A1/A3/A7 证据质量可信，A8 新增可复现硬缺口，A6 缺口描述已更正。",
+    "warning": "product 工作树在 10:06–10:16 被在途工作改动 9 个 tracked 文件 + 新增 6 项未跟踪；此后任何「在最新 HEAD 重跑矩阵/测试」必须先固定快照（rsync 镜像法），否则会把在途工作当成 HEAD 证据。"
+  }
 }
