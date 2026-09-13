@@ -73,18 +73,24 @@
 - 案例侧（三类必须分开，互不折算）：原书可复算 3,568（13 书）／独立已知盘 140 fixture／合成边界（`art-boundary-unknowns-cases-*`）。**当前原书案例只挂接并对账 10 条**，扩面进行中（t6）。
 - 待填：八术主要栏目逐项「真实输入 → 引擎计算 → 条件/例外/救应 → 页面解释 → 来源 → 导出」证据链（t4）。
 
-## 4. 八项验收证据（逐项索引，待逐项填证）
+## 4. 八项验收证据（逐项索引，2026-09-13 当前状态）
 
-| 条目 | 状态 | 证据入口 | 精确剩余 |
+**八项当前全部 `working`、零 `pass`**（唯一状态源：`DELIVERY_ACCEPTANCE.json#criteria`）。下表只做索引，不新造指标。
+
+| 条目 | 状态 | 已验证的证据（可复现） | 精确剩余 |
 |---|---|---|---|
-| A1 资料去向 | working | `FULL-LIBRARY-DISPOSITION-20260912.md`、reviewer 独立复算 | 见账本 A1.remaining |
-| A2 引文可回溯 | working | reviewer 643/643 锚点**双 revision 0 漂移** | 页面实际展示引文尚未逐条回读 |
-| A3 判断可追到事实/规则/理由 | working | 缺口矩阵（最新 HEAD，双次独立重生成一致） | 消费者侧验收 |
-| A4 分支测试覆盖 | working | 418 断言 / 28 文件 | DLD-E-02～E-09 信息不足分支、ZSB-E-15/18/19 零触发 |
-| A5 三类案例分账 | working | `ART-VERDICT-CASE-KINDS.*` | 原书案例 10/3,568 已对账 |
-| A6 八术免费解释 | working | ArtFreeReading 已进 8 个术数路由（captain 实测） | 浏览器逐栏目回读 + 切换不残留 |
-| A7 已知错误修复/撤下 | working | `RESCUE-LABEL-AUDIT-20260912.md` | SMTH-E-04/06/07/08/09/10、ZPR-E-06 具名登记 |
-| A8 两仓检查+版本对应+集成验收 | working | 两仓 main CI success；**bazi-anchor-rule-index 内容漂移 54/183（硬缺口）** | 见账本 A8.remaining |
+| **A1** 资料去向 | working | 55 行资料包口径（**54 书 + 1 影印伪行**）；注解 **62,839 = source-reviewed 60,013 + draft 2,826**（captain 直扫复算）；draft 2,835→2,826 分账表与注解集合**一一对应**（2,835/2,835、0 多余）；两项具名条目**682 条**（《總鈐》残格 666 逐项 + 未确认影印底本 **16**，已澄清 14 为层级混用） | **独立复核结论**（t22：A1 可否判 pass） |
+| **A2** 引文可回溯 | working | reviewer 复核 **643/643 条带 anchor 规则在 pin 与当前 main 双 revision 0 漂移**；t23b1 新增 **9 条** source-reviewed 锚点（逐字符含空格位比对）；页面出口出处接线（六术 PointsPanel） | ①**页面实际展示的引文未逐条回读**；②六爻出处块浏览器层断言缺口 |
+| **A3** 判断可追事实 | working | 缺口矩阵在最新 HEAD 重生成（**wired 258 / coverage-index missing 0 / ids_without_probe 0 / 418 断言 / 0 无归因**），并与 reviewer 两次独立重生成**逐行 0 差异** | ①伏神旬空「未算条件」修复（t16 在改）；②消费者侧验收 |
+| **A4** 分支测试 | working | 矩阵实测：不满足分支 gap **0**（已断言 224）；信息不足分支 gap **8（DLD-E-02～E-09）** | DLD 8 条 + DLD-E-15 + ZSB-E-15/18/19 零触发（t12） |
+| **A5** 三类案例分账 | working | 结构化复算 **1,934 行**（qimen 1,842 一致 / **77 差异，0 条引擎缺陷**：73 同书两处印值不一致 + 4 原印数与正文一般法冲突）；**180/180 构造输入**证明 starPalaceRaw 语义；人读断语对账 **38 条**；三类分账不折算 | ①t15 独立复核 77 条分类；②覆盖面（1,951/3,568 可复算）；③断语级对账仅 38 条 |
+| **A6** 八术免费解释 | working | **A6 批次已合 main（`f030441`）且 CI success（含 playwright e2e）**；e2e 覆盖**八术导出回读 + 逐术选位/时制/岁运同步 + 紫微运限层**；guest 无需登录 | ①其余五术 7 处「白话点 ID 冒充锚点」（t17）；②`chart.ziwei.tsx` 12 主题区 token 与 points 不同源（1 行，post-merge）；③六爻出处块浏览器断言 |
+| **A7** 已知错误/不单列 | working | 救应标签实测 **self 117 / none 106 / unimplemented 30 / 交叉 5**；30 条 unimplemented **全文重审** → **实现缺口 22**（全部落主要页面：调候 10／格局 5／神煞 1／用神 1／紫微 3／七政 2）+ 证据未决 8；`named_gaps` **42**（11 source-term + 30 unimplemented-reason + 1 verdict-scope） | ①22 条实现缺口（t19 先做调候 10）；②**不支持学派/能力单列清单尚未成文** |
+| **A8** 两仓检查/版本 | working | **classics main `5cc8b8b`/`e00c80f`/`12009f9` CI 三连 success**；**product main `f030441` CI success（含 e2e）**；版本钉 11/11 可解析为真实提交且为 main 祖先；578 锚点 0 漂移（captain 自核 489） | ①A5/A8 候选独立复核门（t15/t18）；②其余产物 pin 新鲜度、knowledge-index 生成器未重跑；③网页逐栏目覆盖清单 |
+
+> 读表须知：`working` 不等于「快完成」——每条的「精确剩余」都是**验收项级的缺口**，不是进度百分比。
+> 证据出处一律以账本 `evidence` 数组与仓库文件为准；本表不代替账本。
+
 
 ## 5. 两仓 main SHA、版本对应与 CI（每次集成后更新）
 
