@@ -155,3 +155,69 @@ cp probe*.ts <tree>/ && cd <tree> && bun probeN.ts            # 探针两棵树�
 | 2) 紫微：`find(item=>item.available)` 是否消除 / 有无新默认 / 不可用层是否记信息不足 | §2 + §4 | 通过（55/55、22/22、5/5；无新隐性默认） |
 | 3) 3 个既有测试是否语义保留（最关心） | **§3**（逐条「断言→证据→判定」表 + 逐条 diff + 行级对账：+233/−15、仅 3 行含 expect 且均以新 token 回来、无 .skip/.only/.todo） | 通过（无放宽、无删除有效覆盖） |
 | 4) token 第 4 段向后兼容 + contest-evidence 现场 | §5 + §6 | 结构兼容/语义需具名说明（有条件通过）；现场**未碰** |
+
+---
+
+# 附录：reviewer-2 独立审查（任务 t11，同一候选 `f030441`）
+
+> 本节由 **reviewer-2** 追加，**不改动上文任何内容**（上文为 t8/`reviewer` 的交付）。写法：只按实际 diff 与我自己的重跑判定，不采信自报。完整版（331 行，含全部原始输出、探针脚本、合并操作边界）在 `classics:docs/closeout/review/INDEPENDENT-REVIEW-A6-BATCH-20260913-reviewer-2.md`。
+> 审查对象绑定：`f030441c092b5d16122fa0d3f5058e3f496e90d7`（父 `00e98fc`，10 文件 / +567 −136），逐文件 md5 已记录。**注意：审查进行中 `origin/main` 已被推到 `f030441`**（`git diff f030441 origin/main` = 0 行；`git reflog show origin/main` 首条＝update by push），即该候选已在 main 上；本地 HEAD 之后另前进 3 个未审提交（`cf0c1f7`/`c300610`/`20ac19b`）。
+
+## 附录-1（第 1 件，最重要）：3 个既有测试的修改 —— **语义保留，未放宽、未删有效覆盖，净新增 4 条断言：通过**
+
+行级对账（我自跑 `git show f030441 --unified=0 -- <三个测试文件>`）：删除 18 行 = 3 行 `--- a/…` 头 + **15 行内容行**；新增 40 行 = 3 行 `+++ b/…` 头 + **37 行内容行**。**15 行删除里含 `expect(` 的只有 3 行，且全部以「同一条断言 + 新 token」加回**：
+
+```
+-  expect(back.input.focusPosition).toBe(`事业@${viewDate}@${viewHour}`);
++  expect(back.input.focusPosition).toBe(`事业@${viewDate}@${viewHour}@流年`);
+-  expect(natal.input.focusPosition).toBe("命宫@1990-01-20@12");
++  expect(natal.input.focusPosition).toBe("命宫@1990-01-20@12@流年");
+-  expect(later.input.focusPosition).toBe("命宫@2024-01-20@12");
++  expect(later.input.focusPosition).toBe("命宫@2024-01-20@12@流年");
+```
+
+其余 12 行删除＝token 字面量、`const [palace,date,hour] = …split("@")` 解析行、3 条 `it(` 标题、2 处旧调用参数（`buildZiweiFreeReading(…,{palace})`）。新增 7 条 `expect(` 中 3 条是上述回归，**4 条为净新增**：`c-export-readback` 的 `toContain("运限层=流年")`、`reading-input-export-link` 的 `toContain("运限层=流年")`、`ziwei-viewdate` 的 `toContain("当前运限层流年")` 与 `not.toContain("当前运限层大限")`（反向断言）。同 diff 内无 `.skip/.only/.todo/xit(`，无被注释掉的断言。
+
+逐条「为什么必须改」：①`ziwei-viewdate`：旧用例「两日正文不同」的**唯一来源**就是被删掉的「不传层名→自动挑第一层（大限）」这一错误行为，不显式给层名两条调用都会落到本命层而变得相同 → 必须显式给 `scope:"流年"`，原两条断言（`paragraphs not.toBe` ＋ `toMatch(/运限|流曜|四化/)`）原样保留。②`c-export-readback`：`rebuildFromFile` 是回读重建路径的**测试侧解析器**，不同步第 4 段则重建落到本命层，`factsOf(rebuilt)).toEqual(facts)` 必失败 → 必须同步；两条原断言（回读一致、换日事实必须不同）保留。③`reading-input-export-link`：`toBe` 断言的就是回读后的 `input.focusPosition` 原值 → token 加一段则期望值必须同步；两日 `facts not.toBe` 保留。
+
+**变异检验（证明「未放宽」不是靠读 diff 自证）**：把 `HEAD~1` 的两个引擎模块还原到 `/tmp/a6old`（其余文件同当前）再跑本批新测试＋被改的 ziwei-viewdate：`11 failed / 0 passed`（A6 新文件 10 条全失败 + ziwei-viewdate 1 条失败）；在 `f030441` 上 `47/47` 通过 → 新断言对两条缺陷敏感、非空断言，且旧用例原本通过所依赖的正是被删除的错误行为。
+
+## 附录-2（第 2 件）：六爻 —— **真修：通过**
+
+- 同料对比（`/tmp/a6old` 还原 `HEAD~1` 模块 vs `f030441`）：逐爻焦点 **1 点 → 8 点**；带 `source`+`sourceRevision` 的点 **0 → 7**（第 8 点为本爻白话点，`paragraphIds: []`，设计上不绑固定段落）。
+- 我的全量扫描（自写探针，2,240 盘 × 6 爻 = **13,440 逐爻样本**）：总览盘级点**一个不缺**（缺失样例 0），且无多余规则点（每例恰好多 1 个 `liuyao:free:main:N`）；**83,316 个盘级点样本全部**带 `source.kind="anchored_text"` + 非空 `sourceRevision` + `anchor.file/startLine` + 非空 `quote`（异常 0）。盘级规则触发与保留：`ZSB-E-09` 240 盘 / `ZSB-E-14` 1,904 / `ZSB-E-16` 381 / `ZSB-E-17` 140，全部在逐爻焦点中出现。
+- 点 ID 冒充：改前 `liuyao-free-line`/`liuyao-free-overview` 被同时写进 `ruleIds` 与 `paragraphIds`（我实测打印），消费者判据见 `src/components/reading-point-source.tsx:11-18`（有 `ruleIds` 即渲染为「规则 ID」）→ 改后 `ruleIds=[]`/真实规则 ID、`paragraphIds=[]`，**不再冒充：通过**。
+
+## 附录-3（第 3 件）：紫微运限层 —— **真消除且未留新隐性默认：通过**
+
+- 改前实测：不传层名时正文写「当前运限层**大限**丁卯…」（恒取列表第一层）；且 **2300 年盘 `大限:false`** 时旧代码静默换成「当前运限层**流年**庚辰…」——两层错（恒取第一层 ＋ 不可用层换层顶替）均复现。
+- 改后实测：25 盘 × 123 个「当日可用层」样本 **0 串层**、0 层缺失、缺省一律本命层（0 例外）；**9 个真实超范围日期**（1500/1850/1901/1950/2130/2200/2300/2400/9999）全部输出「所选运限层大限在当前浏览日期不可用，信息不足」且**不串到可用层**；未知层名 → 「不在本盘运限列表，信息不足」。缺省正文显式写「本次按本命层解读，没有叠加运限层」，与页面 `scopeIndex` 默认 `-1`（显示本命盘）同源，不是新塞的默认。
+
+## 附录-4（第 4 件）：导出 token 第 4 段 —— **结构兼容通过；语义变化须具名说明**
+
+我走真实 `parseZiweiFocus` 路径（`exportReadingReport → buildReadingLinkage → collectZiweiPoints`）实测：3 段 `命宫@2024-06-01@12` → 解析 OK、14 点、正文落到本命层（改前同 token 给的是大限）；4 段 `…@流年` → 正文「当前运限层流年甲辰…」；`…@12@`（第 4 段空）与 2 段 token 均不报错、字段不变；旧 JSON 文件 `readBackReadingReport` 正常（14 点）。→ 结构兼容成立；但同一 3 段 token 的**解释内容变了**（大限→本命层），旧文件与「按同一 token 重算」不再逐字一致，须在文档与账本具名说明。我另 grep 全仓确认**没有**「持久化 token 再喂回重算」的路径（`src/routes/api`、`*.server.ts` 不存 `focusPosition`）。
+
+## 附录-5 我的门禁重跑原始输出（干净快照 `git archive f030441` → `/tmp/a6clean`）
+
+```
+$ npx vitest run tests/engine/a6-liuyao-ziwei-free-reading-consumers.test.ts \
+    tests/engine/ziwei-viewdate-free-reading.test.ts \
+    tests/engine/c-export-readback-seven-arts.test.ts \
+    tests/engine/reading-input-export-link.test.ts
+ ✓ tests/engine/c-export-readback-seven-arts.test.ts (20 tests) 444ms
+ ✓ tests/engine/reading-input-export-link.test.ts (16 tests) 210ms
+ ✓ tests/engine/ziwei-viewdate-free-reading.test.ts (1 test) 62ms
+ ✓ tests/engine/a6-liuyao-ziwei-free-reading-consumers.test.ts (10 tests) 4ms
+ Test Files  4 passed (4)      Tests  47 passed (47)
+
+$ npx tsc --noEmit ; echo TSC_EXIT=$?
+TSC_EXIT=0            # 输出为空
+```
+产品真实布局全仓：`PATH="$HOME/.bun/bin:$PATH" npx vitest run` → **228 文件 / 3,734 条全过，0 失败**（默认 PATH 缺 `~/.bun/bin` 会另出 3 条 spawn-null 失败、`/tmp` 镜像缺同级 classics 会另出 5 条，均为环境非回归，已分别复跑为 15/15 与 27/27 全过）。prettier/eslint 共 7 处告警经 `HEAD~1` 同名文件比对证明**全部改前既存**。禁区检查：`git show --name-only f030441` 的 10 个文件不含 benchmarks/contest-evidence 任何文件。
+
+## 附录-6 reviewer-2 的独有发现（t8 上文未覆盖，非阻断）
+
+`src/routes/chart.ziwei.tsx:837-846`（12 主题区导出）：`points` 已带所选层，但 `focusPosition={topic.palace}` **不带日期与层** → 实测「文件 points 含『当前运限层流年』，而用该 token 重算得到本命层」（总览区 token `宫位@日期@时刻@层` 重算则同层）。属本批未覆盖站点（非本批引入），1 行可修：`focusPosition={comparisonOnly || scopeIndex < 0 ? topic.palace : `${topic.palace}@${date}@${resolvedViewHour}${scope?.name ? `@${scope.name}` : ""}`}`；captain 已入账 `e30dac6` 并并入 t17，无需回滚。
+
+**附录最终判定：可以合 main。**（本批 `f030441` 内无必修项；须登记：上文 §7(a)–(e) 与本附录-6；它事实上已在 main 上，不要求回滚。若要求「零残留」，唯一需后续提交的是附录-6 那一行。）
+

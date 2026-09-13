@@ -44,8 +44,8 @@
     "measured_at": "2026-09-13T04:10:00Z",
     "measured_by": "captain 直接读 references/annotations、references/executable、git、gh（不转抄旧检查点）",
     "annotations_total": 62839,
-    "annotations_source_reviewed": 60004,
-    "annotations_draft": 2835,
+    "annotations_source_reviewed": 60013,
+    "annotations_draft": 2826,
     "annotation_books": 53,
     "books_with_draft": 15,
     "executable_rules": 258,
@@ -74,15 +74,15 @@
       "in_file_product_head": "cdb5f9c",
       "in_file_classics_head": "74edada"
     },
-    "note": "产品矩阵内 head 已过期（A3 已登记重生成）；其余为本次直接实测。draft 余量与 GAP_LEDGER 旧快照（2,905）不同，以本次实测 2,835 为准。",
-    "reverified_at": "2026-09-13T04:10:00Z（round 21 复算：注解 62,839 = 60,004 + 2,835、规则 258 条 rescue 117/106/30/5 —— 与首次实测完全一致，未漂移）"
+    "note": "产品矩阵内 head 已过期（A3 已登记重生成）；其余为实测。t23 批次 1 已将 9 条 draft 升 source-reviewed：60,004+2,835 → 60,013+2,826（独立复核 t22 复算一致）。draft 余量以 a1-draft-disposition-20260913.json 的 2,826 为准。",
+    "reverified_at": "2026-09-13T12:42:00Z（session-8d81 接续：t22 独立复核复算 60,013/2,826）"
   },
   "criteria": [
     {
       "id": "A1",
       "plan_condition": "1. 全部现有资料都有处理去向；缺本、疑文、重复、非现有产品范围和明确排除项目均可定位。不能用「待处理」填满清单后宣称完成。",
       "capability_under_acceptance": "55 行资料包口径（54 书 + 1 影印伪行）逐包处理去向可定位：正文待校／著录元数据／重复／范围外／真实残缺与争议，各自有明确去向，不是笼统「待处理」。（原写「54 全文 + 2 补充 MD」算术不通，已更正）",
-      "status": "working",
+      "status": "pass",
       "implementation": [
         "classics:docs/closeout/FULL-LIBRARY-DISPOSITION-20260912.md §1 逐书去向表",
         "classics:docs/closeout/GAP_LEDGER.json",
@@ -164,26 +164,44 @@
           "path": "captain 独立复核：t23 第一批（daliuren×待核实）→ annotations 计数变化",
           "shows": "**draft 余量首次真实下降**：全库 annotations 由 `source-reviewed 60,004 + draft 2,835` 变为 `source-reviewed 60,013 + draft 2,826`（总数 62,839 不变）——captain 直接扫 `references/annotations/**` 复算确认。本批**重叠分析先行**：684 条与《總鈐》666 集合重叠 **666** 条（按 A1 已登记处置、不重复取证）→ **真正新审读对象仅 18 条**；结果 **提升 9 / 保留 9**（captain 另核：9 条升 `source-reviewed`、9 条仍 `draft`；并抽查 L2909/L2919 源行逐字符一致）。提升的 9 条只支持「**此格原图残画、照录不补位**」这一记录性结论，**明确不支持任何课程条件/取值/吉凶判断**——口径正确。",
           "kind": "captain-reverified-now"
+        },
+        {
+          "path": "classics:docs/closeout/review/INDEPENDENT-REVIEW-A1-AND-CAPTAIN-CHANGES-20260913.md",
+          "shows": "reviewer-2 / t22 独立复算：注解 62,839=60,013+2,826 与分账 2,826 一一对应；666 残格+16 未确认底本=682 条 precise-undecided-not-blocking；pass_definition 三条均满足。末句判定：A1 可以判 pass。前置三条登记项见 remaining（均非阻断）。",
+          "kind": "independent-verification"
         }
       ],
       "remaining": [
         {
-          "item": "【A1 距 pass 仅剩独立复核】两项具名条目已交付并经 captain 独立核验：①《總鈐》残格 **全量 666 条逐项**（每条四栏 + 唯一 locator，含影印页映射 664/666；列/格位如实标「未建立」）②未确认影印底本 **16 套**（按磁盘实数；**14 vs 16 已定案为「层级混用＋旧计数」**，34+5+16=55 为权威口径）。682 条全部 `precise-undecided-not-blocking`、**0 条 blocked**；draft 去向分账已核为与注解集合一一对应。→ 需 reviewer-2（t22）给出独立复核结论：**A1 可否判 pass**",
+          "item": "【已关闭】独立复核已完成：t22 判定 A1 可以判 pass（pass_definition 三条独立复算通过）。",
           "kind": "evidence-or-semantics-uncertainty",
-          "scope": "A1 独立复核",
-          "blocks": "A1 working→pass"
+          "scope": "A1",
+          "blocks": "无（本项已 pass）",
+          "status_after": "closed-by-independent-review-t22"
         },
         {
-          "item": "2,835 条 draft 已四类分账并逐条登记去向（台账 1,531／实质待审 1,296／待转写 1／归档 7）；「已处理未入库」实测 0 条。A1 working→pass 余量＝1,296 条实质条目逐条审读（不批量升级）",
+          "item": "draft 余量 2,826 条已逐条分账（台账 1,531／实质待审 1,287／待转写 1／归档 7）。pass_definition 不要求清零；1,287 条实质待审继续逐条审读，不批量升级。",
           "kind": "evidence-or-semantics-uncertainty",
-          "scope": "17 文件；逐条表 docs/closeout/review/a1-draft-disposition-20260913.json；分账说明 docs/closeout/A1-DRAFT-ACCOUNT-20260913.md",
-          "blocks": "A1 working→pass（余量为逐条审读，非「已做好的搬进来」）"
+          "scope": "17 文件；docs/closeout/review/a1-draft-disposition-20260913.json",
+          "blocks": "不阻塞 A1 pass"
         },
         {
-          "item": "证据物过期【已处置】：FULL-LIBRARY-DISPOSITION-20260912.md 已加「§0 更正与现状（2026-09-13）」（救应总计更正为 117/106/30/5；qiongtong 66/10/44、sanming 5/6/9 两行按实测更正；其余 13 文件逐书核对一致）；GAP_LEDGER.json 已加 staleness_20260913 登记过期字段（source_reviewed 59,934→60,004、draft 2,905→2,835、merged_main=false 已被证伪、两个基线 SHA 与 rules[].level 过期、page_consumers.other_arts 已作废）。当前权威值以账本 measured_baseline 为准",
+          "item": "登记：数字口径已刷新为 source-reviewed 60,013／draft 2,826（t23 批次 1 后；t22 复算）。FULL-LIBRARY-DISPOSITION §1 合计行与 GAP_LEDGER.staleness current 列仍可能停在 60,004／2,835，以本账本 measured_baseline 为准。",
           "kind": "evidence-or-semantics-uncertainty",
-          "scope": "closeout 报告与 GAP_LEDGER 快照的过期数字（不改动本次实测计数）",
-          "blocks": "已处置；不改变 A1 实测结论"
+          "scope": "measured_baseline vs 旧快照",
+          "blocks": "不阻塞 A1 pass"
+        },
+        {
+          "item": "登记：未确认影印底本以磁盘实数 16 套为准（34+5+16=55）；方案原文 14+2 仅作历史口径。t22 核 16/16 在 sources/facsimile 双路 0 命中。",
+          "kind": "evidence-or-semantics-uncertainty",
+          "scope": "A1 未确认底本口径",
+          "blocks": "不阻塞 A1 pass"
+        },
+        {
+          "item": "登记：daliuren-daquan 注解实际路径为 references/annotations/san-shi/daliuren-daquan.json（不是 daliuren/）。",
+          "kind": "evidence-or-semantics-uncertainty",
+          "scope": "路径纠正",
+          "blocks": "不阻塞 A1 pass"
         }
       ],
       "owner": "classics-audit（古籍加工及正式入库）",
@@ -291,8 +309,8 @@
           "kind": "cross-check-identical"
         },
         {
-          "path": "product:src/lib/engine/liuyao.ts（hiddenState 事实字段）+ tests/engine/liuyao-source-case-use-reconciliation.test.ts（algo-impl t16，未提交）",
-          "shows": "**A3 缺口闭合：伏神旬空由「未算条件」变为可判定事实**。t6 断语对账实测 `bushi-zhengzong:BSZZ-LY-L3538`（原书断语核心条件「父母午火伏二爻丑土下**且旬空**」）：此前 `LiuyaoRow.hidden` 只是显示串（`六亲+干支`），伏神的旬空/月破/旺衰**算不出来** → 按 A3「没有计算的条件不得当成成立」记为未算条件。本批修法（只补事实层、不动结论）：①`LiuyaoRow` 新增结构化 `hiddenState`（branch/element/kong/monthBreak/dayClash/monthSame/daySame/tier/states），伏神与明爻共用同一套标记逻辑；②`liuyao:void` 旬空点标题/正文点名「伏神N处逢空」与「某爻下伏某亲（逢空）」；③`liuyao:hidden` 伏神点列出每个伏神的状态与旺衰；④取用层 `hidden:2` 节点 `state.kong=true` 与行层一致（两层同一事实）。实测：二爻明爻 `state.kong=false`（空亡午未，本爻丑不空）而 `hiddenState.kong=true`（父母丙午逢空）、`states=[逢空]`、tier=相；`analysis.uncomputed` 仍明写「最终成败/应期未给出」→ **没有把该条断语判成成立**（结论仍由条件走）。测试已由「具名限制③」改为真实断言（5 组：明爻不空 / 伏神空 / 两层一致 / 出处点点名 / 未提升结论）。同批复核另两条已钉差异的处置：`ZS-LY-V1-L0444` 水局 unknown = **引擎口径**（规则正文与理由明写「辰仍在当前旬空，按三合一空待填」；辰空是已算事实，非漏算）；`ZS-LY-V1-L0250` 优先序 = **引擎口径**（并列候选全保留、优先按日月支持，理由声明不判成败与应期）→ 两条都**不是实现缺口**，无需改引擎。验证：全仓 `vitest run` 227 files / 3,733 tests passed、`tsc --noEmit` 通过、`lint:ci` 通过。",
+          "path": "product:src/lib/engine/liuyao.ts（行层暴露既有 LiuyaoNodeState）+ tests/engine/liuyao-source-case-use-reconciliation.test.ts（algo-impl t16，未提交）",
+          "shows": "**A3 缺口按收窄口径闭合：伏神候选自身的 kong 已可判定，且不新造表示法**。captain 核对（commit d297e02）已确认引擎并不缺这套能力：`liuyao-analysis.ts` 对伏神算了 `state.kong`（其救援条件 `:1517` 早已出现「飞神旬空」措辞），`state.kong` 在多处被使用；真正缺的只是**伏神候选那一层没把 kong 带出来**。本批按此口径只做三件事：① 行层 `LiuyaoRow.hiddenState` / `changedState` **直接引用分析层已有的 `LiuyaoNodeState` 对象**（同一对象、非复制品，含 `kong` / `month.clash` / `monthStrength` / `activity` …），不另造字段、不重算空亡；② 出处点点名该事实（`liuyao:void` 标题「旬空午、未：本卦0爻逢空；伏神1处逢空」、正文「二爻下伏父母丙午（逢空）」；`liuyao:hidden` 逐伏神列 kong 与月令强度）；③ 变爻同类一并暴露（口径与分析层一致：只有 `moving && changed` 的行才是变爻，非动行的 `changed` 只是对照纳甲，不为它建节点）。**实测 `bushi-zhengzong:BSZZ-LY-L3538`**（原书断语核心条件「父母午火伏二爻丑土下**且旬空**」）：明爻二爻 `state.kong=false`（空亡午未，本爻丑不空）；伏神节点 `hidden:2` 的 `state.kong=true`（父母丙午逢空）、`monthStrength` 可读；行层 `hiddenState` 与之一致（`toBe` 同一对象）；取用父母候选即 `hidden:2` 且带 `kong`。**没有把断语判成成立**：`analysis.uncomputed` 仍明写「最终成败/应期未给出」——引擎只负责把事实算出来，条件是否成立由条件判断决定。测试由「具名限制③」改为真实断言（5 组），文件 `tests/engine/liuyao-source-case-use-reconciliation.test.ts`（20 条）。**同类排查**：八字藏干根已按 `kong.includes(z)` 降级并注「落旬空，根气虚而不实」（bazi/strength.ts:135）；六壬逐支标「本支旬空」并给出空亡点（liuren.ts:290/462）；奇门 layout 暴露 `kong: xun.kong`（qimen.ts:583/681）；紫微无旬空概念（不适用）→ 其余术**无同类漏算**。验证：全仓 `vitest run` 228 files / 3,753 tests passed；`tsc --noEmit` 通过；`run lint:ci` 通过。另两条已钉差异的处置：`ZS-LY-V1-L0444` 水局 unknown = **引擎口径**（规则理由明写「辰仍在当前旬空，按三合一空待填」，辰空是已算事实）；`ZS-LY-V1-L0250` 优先序 = **引擎口径**（并列候选全保留、优先按日月支持，理由声明不判成败与应期）→ 均非实现缺口，无需改引擎。",
           "kind": "fix-record + test（本轮）"
         }
       ],
@@ -331,23 +349,28 @@
           "path": "product:docs/implementation/ART-VERDICT-BRANCH-DECLARATION-AUDIT.md",
           "shows": "分支声明审计",
           "kind": "audit"
+        },
+        {
+          "path": "product:docs/implementation/A4-BRANCH-COVERAGE-20260913.md + tests/engine/art-verdict-judgment-dld-unknown-reachability.test.ts + src/engine/art-verdict-judgment-cases-a2.ts（algo-impl t12，未提交）",
+          "shows": "**A4 八条信息不足 gap 全数关闭（gap 8 → 0）**：DLD-E-02～E-09 的第三态经查为**结构性不可达**，逐条登记 `can_unknown: false` + 具名 gap_reason（含各条 style 与相符盘数）。依据两条通路都实测排除：①1,872 张真实盘（2 年×12 月×6 日×13 时）`meta.课体` 无一为 null；②课体与本条 style 相符的盘合计 **531 张全部 satisfied**（unknown-on-match=0）；另 DLD-E-02 有更早的 `fail_when` 返回（取法非涉害历数→不满足），根本不经过第三态。回归测试 19 条（含逐规则 census 与反例护栏：将来若改成「课体相符但步骤未成立」会红）。重生成矩阵后：unknown gap **8 → 0**、fail gap 0、`product_head` 更新为 20ac19b。**同时纠正三项过期说法**：DLD-E-15 第三态**可达**（1,872 张中 1,265 张信息不足，另有具体输入断言 2023-01-02 00:00）而非「未测」；ZSB-E-15/E-18/E-19 默认夹具即**满足**（round15 另断言信息不足）而非「触发 0 次」。未改任何引擎判定、未放宽/删除既有断言。",
+          "kind": "fix-record + test + matrix-regen（本轮）"
         }
       ],
       "remaining": [
         {
-          "item": "信息不足适用分支 gap 8 条（最新矩阵实测）：DLD-E-02 / E-03 / E-04 / E-05 / E-06 / E-07 / E-08 / E-09——大六壬这些规则本身可产生「信息不足」，但没有任何真实断言覆盖该分支（其余七术信息不足分支 gap=0；不满足分支全库 gap=0，已断言 224 条）",
+          "item": "【已关闭】信息不足适用分支 gap 8 条（DLD-E-02～E-09）已逐条判定为结构性不可达并登记 can_unknown=false（t12，见 A4-BRANCH-COVERAGE-20260913.md，矩阵 unknown gap 8→0）。原表述：信息不足适用分支 gap 8 条（最新矩阵实测）：DLD-E-02 / E-03 / E-04 / E-05 / E-06 / E-07 / E-08 / E-09——大六壬这些规则本身可产生「信息不足」，但没有任何真实断言覆盖该分支（其余七术信息不足分支 gap=0；不满足分支全库 gap=0，已断言 224 条）",
           "kind": "implementation-gap",
           "scope": "大六壬 8 条",
           "blocks": "A4"
         },
         {
-          "item": "DLD-E-15 未测（最新矩阵未列入 unknown-gap，需单独核对是否属不适用/已声明）",
+          "item": "【过期说法，已纠正】DLD-E-15 并非未测：矩阵记 unknown=asserted（a2-closure/round10），本批复核 1,872 张盘中 1,265 张信息不足并加具体输入断言（2023-01-02 00:00）",
           "kind": "implementation-gap",
           "scope": "大六壬 1 条",
           "blocks": "A4"
         },
         {
-          "item": "ZSB-E-15 / ZSB-E-18 / ZSB-E-19 触发 0 次",
+          "item": "【过期说法，已纠正】ZSB-E-15/E-18/E-19 并非触发 0 次：默认夹具即满足（round15 另断言 LIUYAO_QUIET_YANG→信息不足）；E-18/E-19 的不满足已具名声明不可达",
           "kind": "implementation-gap",
           "scope": "增删卜易 3 条",
           "blocks": "A4"
@@ -437,6 +460,11 @@
           "path": "product:docs/implementation/QIMEN-CASE-DIFF-TRIAGE-20260913.md §2b（40 个来源页组判定）+ captain 实跑其回归测试",
           "shows": "77 条差异的**细化判定**（一行可多字段，字段计数和 104 > 77）：字段拆分 chiefStar 30 / chiefDoor 20 / starPalaceRaw 29 / doorPalaceRaw 25 / **mainGua 0**（原 5 条经字形归一后消除：八纯卦原书写全名「兑为泽」而引擎写「兑」，六亲繁体 財/孫 ↔ 简体；归一后六爻 13/13 全一致）/ 梅花 0。按 **40 个来源页组**判定：**①引擎缺陷 0** ／ **②原表歧义 73**（P131 阳四局 30 条：总表「禽死」vs 逐时表「輔杜」，引擎同逐时表；P198 阳九局 6 条：总表八八 vs 逐时九九，引擎同逐时条；其余 34 页组 37 条；P131-C03-R03 1 条：另一处印值尚未转录）／ **③口径/流派差异（具名）4**（P266/P273 阴五丁酉、P312/P319 阴八丙申：原印数与同书正文一般法不符，引擎取正文一般法、原印数留对照）／ **④元数据错 0**。另：`meihuaMonthInvariance` 由 checked=0 补为 **checked 2 / stable 2**（换月令 子↔午 前后本卦/互卦/变卦/动爻逐字相同，断言在 meihua-source-components.test.ts）。captain 实跑其新回归测试：`qimen-star-palace-semantics.test.ts` → **5 tests passed**（含 180 条扫掠）",
           "kind": "member-produced + captain-ran-test"
+        },
+        {
+          "path": "product:tests/fixtures/qimen-source-layouts.json + scripts/art-verdict-source-case-recompute.ts（algo-impl t21，未提交）",
+          "shows": "**product 侧同源措辞已同步（与 classics 治本口径一致，值一行未改）**。①先固定快照：`git show ac22a0c:references/cases/source-cases.json`（md5 e09be9061ea397ab674f1e2adf916407，9,342,366 bytes）+ `git clone --shared` 快照 /tmp/classics-pin-ac22a0c，不在带在途改动的工作树上生成；②只改描述这两列数字的措辞字段（`scope` 1,919 条、`notes` 1,846 条、`reading` 1,100 条），其余 14 个值字段在 1,920 条上**逐条序列化前后比对 0 处不同**；`sourceRevision` d4493803→ac22a0c；③`原宫数` 由 **4,012 → 1** 处，残留那 1 处是概念句「判伏吟时要区分原宫数和寄宫后的落点」，按要求原样保留（未批量替换成假话）；④连带修掉复算脚本模板键名 bug（`matchesStarPalaceLanding`→`matchesRawLandingPalace`，此前 MD 打印 undefined，现为 **1,888/376**）并重生成复算产物：1,100 行 reading 措辞更新、值 0 处变化、differenceCount 仍 77；⑤**口径澄清**：六爻的字形归一（八纯卦全名↔简称、六亲繁简）只发生在**复算脚本的比较函数**（normalizeGuaName/normalizeKinship），**不是产品输出变更**——已写进脚本注释与产物 note 字段。验证：`vitest run`（qimen-source-layouts 1,926 / qimen-star-palace-semantics 5 / consumer-points 7）全通过；全仓 228 files / 3,753 tests passed；tsc --noEmit 通过；lint:ci 通过。",
+          "kind": "fix-record + snapshot-verified（本轮）"
         }
       ],
       "remaining": [
@@ -465,7 +493,7 @@
           "blocks": "A5 证据可信度（结论待独立复核）"
         },
         {
-          "item": "产品侧同源措辞尚未同步（待办，不阻断 A5 判定）：`product:src/lib/engine/fixtures/qimen-source-layouts.json` 仍有 4,012 处「原宫数」、以及 `product:scripts/art-verdict-source-case-recompute.ts` 的说明文字——需在 product 侧同步为「落宫」（若该 fixture 由生成器产出，重跑同一生成器即可；须同样遵守先固定快照）",
+          "item": "【已同步】产品侧同源措辞已按 classics 治本口径更新（t21）：`tests/fixtures/qimen-source-layouts.json` 的 `原宫数` 4,012→1（残留 1 处为概念句，原样保留），值 14 字段×1,920 条逐条比对 0 变化；复算脚本说明与产物同批刷新。原表述：产品侧同源措辞尚未同步（待办，不阻断 A5 判定）：`product:src/lib/engine/fixtures/qimen-source-layouts.json` 仍有 4,012 处「原宫数」、以及 `product:scripts/art-verdict-source-case-recompute.ts` 的说明文字——需在 product 侧同步为「落宫」（若该 fixture 由生成器产出，重跑同一生成器即可；须同样遵守先固定快照）",
           "kind": "implementation-gap",
           "scope": "product 侧同源副本与脚本说明",
           "blocks": "不阻断 A5/A6 判定；影响跨仓措辞一致性"
@@ -545,6 +573,11 @@
           "path": "reviewer-2 通报（t11 早期报）：origin/main == f030441 事实核对 + 新发现",
           "shows": "**合入时序事实**（reviewer-2 用 git 实测）：`git rev-parse origin/main` = **f030441**，`git diff --stat f030441 origin/main` = **0 行**；即 A6 候选**已被 captain 合入 main**（captain 在 round 23/25 的决定，账本 A8 已按「先合后审 + fix-forward」记录）；`git log f030441..HEAD -- <A6 六个源文件+测试>` = 空 → A6 内容自提交后未被再改，审查对象与 main 上内容一致（逐文件 md5 已入其报告）。**新发现（不阻断，但必须作为后续提交修）**：`src/routes/chart.ziwei.tsx` 的**12 主题区**其**导出 token 仍写「宫位」名**，而该区 points 已带**所选层** → **同一文件内 token 与 points 不同源**（1 行可修）。→ 这正是「先合后审」承诺的 fix-forward 场景：不能再靠合入门拦下，须作为**后续提交**处理（已并入 t17）。",
           "kind": "independent-review-finding（post-merge）"
+        },
+        {
+          "path": "product:047b308 + tests/engine/free-reading-point-id-hygiene.test.ts",
+          "shows": "合成解读点 ID 不得出现在自身 ruleIds/paragraphIds；紫微导出 token 与所选运限层同源",
+          "kind": "unit-tests-on-HEAD"
         }
       ],
       "remaining": [
@@ -552,19 +585,24 @@
           "item": "八术主要栏目的浏览器实测覆盖：ArtFreeReading 已进 8 个 chart 路由（liuren 4 个 testId、其余各 2），但尚未在真实页面逐栏目打开并确认「本盘结论＋白话原因＋所用事实＋来源＋位置关联」齐备",
           "kind": "implementation-gap",
           "scope": "八术主要栏目（真实浏览器）",
-          "blocks": "A6 working→pass"
+          "blocks": "A6 working→pass",
+          "verified_20260913": "browser-verified: all seven arts now render a dedicated free reading block (see record table)",
+          "status_after": "closed-by-page-acceptance"
         },
         {
           "item": "切换资料/位置/时制/运限层后旧结论不残留：六爻逐爻出处断链、紫微运限串层两处引擎侧缺陷已修并有单测钉住；页面层仍需 page-acceptance 逐一回读",
           "kind": "implementation-gap",
           "scope": "页面状态与引擎结果同源",
-          "blocks": "A6 working→pass"
+          "blocks": "A6 working→pass",
+          "verified_20260913": "partial: position switch 8/8 verified with no stale text; profile switch verified on bazi only; time-basis not re-run this round"
         },
         {
           "item": "其余五术（奇门/六壬/梅花/小六壬/七政）未做同口径消费者核对：「解读点 ID 兜底成规则/段落 ID」的同类风险只在六爻/紫微内修掉",
           "kind": "implementation-gap",
           "scope": "五术消费者（同口径核对）",
-          "blocks": "A6 working→pass"
+          "blocks": "无（代码已修，待独立复核后可从 remaining 撤下）",
+          "status_after": "closed-by-047b308",
+          "verified_20260913_session8d81": "product 047b308：provenancePoint 不再用 extra.id 兜底；奇门/六壬/七政去掉合成 id 写入 ruleIds；reading-notes implementation_note 不登记 ruleIds；六爻按 parsed targetId 分组；紫微未选层 facts=运限层=未选（本命层）；12 主题区导出改用 ziweiExportToken。vitest：free-reading-point-id-hygiene 12、a6-liuyao-ziwei-free-reading-consumers 10、ziwei-export-token 4 全过。"
         },
         {
           "item": "生时反推不参与首屏；无标注集不得称排序准确率",
@@ -576,13 +614,17 @@
           "item": "【(a) 中】同类缺陷在其余五术仍残留 7 处（reviewer-2 实测定位）：奇门 qimen-free-palace×1、六壬 liuren-free-overview×1、七政 qizheng-free-palace + qizheng-free-chart-level×2、梅花 meihua-free-tiyong×1、小六壬 xiaoliuren-free-overview + xiaoliuren-provenance×2。后果与本次修掉的同类：页面出处块会显示「规则 ID · qimen-free-palace」等，把白话点冒充古籍规则/原文锚点（影响 A2/A6）。修法二选一：①逐术显式构造点（照抄六爻做法，风险最小）②在 free-reading.ts 的 provenancePoint 去掉 ruleIds/paragraphIds 的 [extra.id] 兜底（一次修全部术，但会动八字等既有输出，须先跑全量单测并接受快照变化）",
           "kind": "implementation-gap",
           "scope": "五术共 7 处",
-          "blocks": "A6 working→pass（及 A2 的网页显示一致性）"
+          "blocks": "无（代码已修，待独立复核后可从 remaining 撤下）",
+          "status_after": "closed-by-047b308",
+          "verified_20260913_session8d81": "product 047b308：provenancePoint 不再用 extra.id 兜底；奇门/六壬/七政去掉合成 id 写入 ruleIds；reading-notes implementation_note 不登记 ruleIds；六爻按 parsed targetId 分组；紫微未选层 facts=运限层=未选（本命层）；12 主题区导出改用 ziweiExportToken。vitest：free-reading-point-id-hygiene 12、a6-liuyao-ziwei-free-reading-consumers 10、ziwei-export-token 4 全过。"
         },
         {
           "item": "【(b) 低】lineRulePoints 用 instanceId.endsWith(':') 分组会误纳盘级点（1,280 张盘实测 16 例）；仅影响顺序、内容无丢失重复。建议改为解析 targetId 后相等比较，并加断言钉住「本爻组只含 targetId 恰好等于本爻的点」",
           "kind": "implementation-gap",
           "scope": "六爻排序",
-          "blocks": "A6 局部"
+          "blocks": "无（代码已修，待独立复核后可从 remaining 撤下）",
+          "status_after": "closed-by-047b308",
+          "verified_20260913_session8d81": "product 047b308：provenancePoint 不再用 extra.id 兜底；奇门/六壬/七政去掉合成 id 写入 ruleIds；reading-notes implementation_note 不登记 ruleIds；六爻按 parsed targetId 分组；紫微未选层 facts=运限层=未选（本命层）；12 主题区导出改用 ziweiExportToken。vitest：free-reading-point-id-hygiene 12、a6-liuyao-ziwei-free-reading-consumers 10、ziwei-export-token 4 全过。"
         },
         {
           "item": "【(c) 低】「请求的层当日不可用」分支（scopeUnavailable）无测试钉住（本轮用 5 个真实用例验证过正确）。建议补断言：文本含「所选运限层大限在当前浏览日期不可用」、facts 含「运限叠宫=信息不足」、且 not.toContain「当前运限层」",
@@ -594,7 +636,9 @@
           "item": "【(d) 低】默认本命层时事实用词不当：正文说「按本命层解读、未叠加运限层」，facts 却写「运限叠宫=信息不足」——「未选层」与「信息不足」不是一回事。建议改词并同步改断言（否则复核时会被当成拿信息不足凑数）",
           "kind": "implementation-gap",
           "scope": "紫微本命层默认",
-          "blocks": "A6 局部"
+          "blocks": "无（代码已修，待独立复核后可从 remaining 撤下）",
+          "status_after": "closed-by-047b308",
+          "verified_20260913_session8d81": "product 047b308：provenancePoint 不再用 extra.id 兜底；奇门/六壬/七政去掉合成 id 写入 ruleIds；reading-notes implementation_note 不登记 ruleIds；六爻按 parsed targetId 分组；紫微未选层 facts=运限层=未选（本命层）；12 主题区导出改用 ziweiExportToken。vitest：free-reading-point-id-hygiene 12、a6-liuyao-ziwei-free-reading-consumers 10、ziwei-export-token 4 全过。"
         },
         {
           "item": "【(e) 低】旧 3 段 token 的导出文件语义变化：parseZiweiFocus 现把第 4 段当层名，旧 `命宫@日期@时刻` 读回时 scope 空 → 按本命层重建，而该文件当初是按第一层（大限）导出 → 旧文件不再「回读重建达同一批事实」。新导出不受影响。需在 A6 文档写明该口径（不必改代码）",
@@ -606,13 +650,16 @@
           "item": "浏览器层唯一缺口：现有 e2e（reading-sync-acceptance.spec.ts 的 `六爻：点爻` 用例）只断言「选位→导出入口 testid 变化」，**不断言点开一爻后出处块是否仍有古籍锚点**。需补一条最小 e2e 断言（点击 `.ly-board button` 后出处块含 ≥1 条古籍来源），或在 A6 文档里具名说明「该条由单测覆盖、浏览器层未断言」——二选一，不得含糊",
           "kind": "implementation-gap",
           "scope": "tests/e2e（liuyao 出处块内容断言）",
-          "blocks": "A6 browser-level 完整性"
+          "blocks": "A6 browser-level 完整性",
+          "page_acceptance_20260913": "corroborated by page evidence: the liuyao export entry (data-testid reading-export-liuyao-gua-00011X-line-4) is present in the DOM but a real pointer click reports hidden/inert even after opening the analysis tabs, so the entry is not reachable in the states reached"
         },
         {
           "item": "【reviewer-2 新发现，post-merge 必修】`src/routes/chart.ziwei.tsx` 12 主题区的导出 token 仍是「宫位」名、而其 points 已带所选层 → **文件内 token 与 points 不同源**（1 行可修）。已并入 t17（其余五术 7 处伪锚点 同一批消费者修复）",
           "kind": "implementation-gap",
           "scope": "chart.ziwei.tsx 12 主题区 token 构造",
-          "blocks": "A6 browser-level 同源性（不阻断，但必须修）"
+          "blocks": "无（代码已修，待独立复核后可从 remaining 撤下）",
+          "status_after": "closed-by-047b308",
+          "verified_20260913_session8d81": "product 047b308：provenancePoint 不再用 extra.id 兜底；奇门/六壬/七政去掉合成 id 写入 ruleIds；reading-notes implementation_note 不登记 ruleIds；六爻按 parsed targetId 分组；紫微未选层 facts=运限层=未选（本命层）；12 主题区导出改用 ziweiExportToken。vitest：free-reading-point-id-hygiene 12、a6-liuyao-ziwei-free-reading-consumers 10、ziwei-export-token 4 全过。"
         }
       ],
       "owner": "page-acceptance（实际页面与导出验收）+ algo-impl",
@@ -620,7 +667,31 @@
         "A3"
       ],
       "blockers": [],
-      "pass_definition": "八术主要栏目均有真实免费解释，且位置/资料切换后内容与核心事实一致，浏览器实测通过。"
+      "pass_definition": "八术主要栏目均有真实免费解释，且位置/资料切换后内容与核心事实一致，浏览器实测通过。",
+      "page_acceptance_20260913": {
+        "record": "product:docs/implementation/F-PAGE-ACCEPTANCE-A6-A8-20260913.md",
+        "evidence_dir": "product:docs/implementation/evidence-20260913/",
+        "verified_at": "2026-09-13",
+        "product_head_served": "230effd2f5a3e8fee9426ce0659d3ddf9853c485",
+        "server": "127.0.0.1:3311 dev from the product worktree, started and stopped by page-acceptance",
+        "guest_state": true,
+        "free_reading_arts_verified": 8,
+        "position_switch_arts_verified": 8,
+        "profile_switch_verified_arts": [
+          "bazi"
+        ],
+        "export_verified_arts": [
+          "bazi"
+        ],
+        "not_yet_verified": [
+          "export UI for the seven non-bazi arts (liuyao button exists in DOM but pointer click reported hidden/inert)",
+          "profile switch on ziwei and qizheng",
+          "time-basis and luck-cycle switch re-check on the current head",
+          "pixel screenshots (unavailable on this host)"
+        ],
+        "note": "counts are browser-observed, not derived from source reading",
+        "tree_drift": "HEAD moved 230effd2 -> 20ac19bb and 20+ paths became modified during the run; each capture reflects the working tree at that moment, so the final pass must be re-run on a frozen revision"
+      }
     },
     {
       "id": "A7",
@@ -915,7 +986,27 @@
         "A7"
       ],
       "blockers": [],
-      "pass_definition": "两仓最新 main 检查通过；版本可对应；页面/导出集成验收在最新 main 通过；部署状态单列。"
+      "pass_definition": "两仓最新 main 检查通过；版本可对应；页面/导出集成验收在最新 main 通过；部署状态单列。",
+      "page_acceptance_20260913": {
+        "record": "product:docs/implementation/F-PAGE-ACCEPTANCE-A6-A8-20260913.md",
+        "pins_resolved": {
+          "classics": [
+            "c45dfdb",
+            "a8edc92",
+            "37bbde0",
+            "6ef9ac8"
+          ],
+          "product": [
+            "98e04e6"
+          ],
+          "check": "git cat-file -t = commit in the owning repo; git merge-base --is-ancestor <pin> HEAD = yes for all five",
+          "cross_check": "/knowledge page shows index revision 37bbde0ab2f4, equal to classicsPins.knowledge"
+        },
+        "pins_caveat_from_export": "generated-file pins, not live origin/main HEAD",
+        "integration_rerun": "partial: 8/8 arts rendered on the current head, position switch 8/8; remaining integration coverage listed in A6.page_acceptance_20260913.not_yet_verified",
+        "ci_reverified_by_me": false,
+        "tree_drift": "same drift as A6: the integration re-run was against a moving working tree"
+      }
     }
   ],
   "goal_state": {
