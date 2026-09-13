@@ -34,6 +34,8 @@
 
 ## 3. 八术能力、规则与案例验证清单（待填）
 
+**逐术汇总表已生成**：`docs/closeout/EIGHT-ARTS-VERIFICATION-MATRIX.md`（脚本汇总：规则数来自 `references/executable/*.json`，探针/断言来自最新 HEAD 重生成的缺口矩阵，案例数来自 `references/cases/source-cases.json`，bookSlug→术 由 executable 文件名映射）。该表**只是汇总，不是验收结论**。关键读数：八字 183 条规则/849 原书案例、奇门 1,920 案例（其中 1,919 可复算）、六壬 23 条但有 8 条信息不足分支 gap、**小六壬 6 条规则不在 252 行矩阵分母内（pack13）**、七政 6 条 3 unimplemented。
+
 - 规则侧：`product/docs/implementation/art-verdict-judgment-gap-matrix.json`（**已在最新 HEAD 重生成**，且与 reviewer 独立镜像重生成逐行 0 差异）；coverage-index wired 258 / missing 0；不满足分支 gap 0；**信息不足分支 gap 8（DLD-E-02～E-09）**。
 - 案例侧（三类必须分开，互不折算）：原书可复算 3,568（13 书）／独立已知盘 140 fixture／合成边界（`art-boundary-unknowns-cases-*`）。**当前原书案例只挂接并对账 10 条**，扩面进行中（t6）。
 - 待填：八术主要栏目逐项「真实输入 → 引擎计算 → 条件/例外/救应 → 页面解释 → 来源 → 导出」证据链（t4）。
