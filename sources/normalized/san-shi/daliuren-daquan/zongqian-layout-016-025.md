@@ -1,3 +1,5 @@
+> 历史过程稿，已被2026-09-14逐格恢复取代：每页十二格（不是八格），格头两字不是日柱。完整可用转写见 [siku-zongqian-layouts.md](siku-zongqian-layouts.md)，结构数据见 [siku-zongqian-cells.json](siku-zongqian-cells.json)。下文“字格不可判／需新影印”等结论不再代表当前状态；保留只为审计，不应作为新规则或当前阻塞依据。
+
 # 《六壬大全》卷一《總鈐》十表 · 版式與可列性普查（t7 Step 1）
 
 > source_facsimile: `sources/facsimile/other/daliuren-daquan/liuren-daquan-juan1-siku-archive-06054168.pdf`
