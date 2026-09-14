@@ -1,0 +1,46 @@
+{
+  "batch": "t120-minghai-hy1442-120f",
+  "scope": "Remaining 120 unannotated HY1442 paragraphs L13529-L14620; not Qizheng algorithm",
+  "candidateSha256": "3bfefa6488986cd36cfc53b43ad44a0dded503caf40a80060b2a59a04e6f3735",
+  "evidenceSha256": "58b6ae31f2a143b1b8074f941b6bcd3e0a54d09d56b08fecb34272bfaf47511b",
+  "rootReview": "Author draft; independent B10a2/B10b/B10c/B10d ACCEPT after glyph restores. 29 source-reviewed / 91 draft.",
+  "reviewCounts": {
+    "source-reviewed": 29,
+    "draft": 91
+  },
+  "judges": [
+    {
+      "judge": "B10a2",
+      "verdict": "ACCEPT",
+      "candidateSha256": "3bfefa6488986cd36cfc53b43ad44a0dded503caf40a80060b2a59a04e6f3735",
+      "completeParagraphsRead": 30,
+      "indexRange": [0, 29],
+      "findings": []
+    },
+    {
+      "judge": "B10b",
+      "verdict": "ACCEPT",
+      "candidateSha256": "3bfefa6488986cd36cfc53b43ad44a0dded503caf40a80060b2a59a04e6f3735",
+      "completeParagraphsRead": 30,
+      "indexRange": [30, 59],
+      "findings": []
+    },
+    {
+      "judge": "B10c",
+      "verdict": "ACCEPT",
+      "candidateSha256": "3bfefa6488986cd36cfc53b43ad44a0dded503caf40a80060b2a59a04e6f3735",
+      "completeParagraphsRead": 30,
+      "indexRange": [60, 89],
+      "findings": []
+    },
+    {
+      "judge": "B10d",
+      "verdict": "ACCEPT",
+      "candidateSha256": "3bfefa6488986cd36cfc53b43ad44a0dded503caf40a80060b2a59a04e6f3735",
+      "completeParagraphsRead": 30,
+      "indexRange": [90, 119],
+      "findings": []
+    }
+  ],
+  "notBookCompletion": true
+}
