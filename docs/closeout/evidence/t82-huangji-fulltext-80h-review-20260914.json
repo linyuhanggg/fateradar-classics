@@ -1,0 +1,21 @@
+{
+  "batch": "t82-huangji-fulltext-80h",
+  "scope": "Eighth 80 unannotated fulltext.md paragraphs L21092-L21409 Xia-Shang transition; not SK1573, not algorithm",
+  "candidateSha256": "b2a35359273466c6645c93d47ca45cdae0b77af4058737196715a4ff9d0e4b67",
+  "evidenceSha256": "0b2bed8fb155916ca3247a035b8e3332479603f05036c8cb3c8190704deb7405",
+  "rootReview": "Author draft; independent B ACCEPT. 69 source-reviewed chronicle labels / 11 draft residual glyphs.",
+  "reviewCounts": {
+    "source-reviewed": 69,
+    "draft": 11
+  },
+  "judges": [
+    {
+      "judge": "B",
+      "verdict": "ACCEPT",
+      "candidateSha256": "b2a35359273466c6645c93d47ca45cdae0b77af4058737196715a4ff9d0e4b67",
+      "completeParagraphsRead": 80,
+      "findings": []
+    }
+  ],
+  "notBookCompletion": true
+}
