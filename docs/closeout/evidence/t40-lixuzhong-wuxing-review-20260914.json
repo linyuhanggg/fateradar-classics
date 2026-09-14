@@ -1,0 +1,268 @@
+{
+  "scope": "211 inventory paragraphs: 61 source-reviewed electronic interpretations and 150 drafts including source gaps/metadata. Not full-library or complete-edition acceptance.",
+  "rootReview": "Full source paragraphs and final interpretations read; two independent judges and final hashes checked; source glyphs and unresolved interpretations preserved.",
+  "batches": [
+    {
+      "candidate": "lixuzhong-rest18",
+      "target": "bazi/li-xuzhong-mingshu--shidian-SK1601.json",
+      "count": 18,
+      "candidateSha256": "eb2f7d30e2a1cf287cd8188a218574d16cc1700e77416d6edcf59a2a568adf2b",
+      "reviewCounts": {
+        "draft": 17,
+        "source-reviewed": 1
+      },
+      "judges": [
+        {
+          "judge": "A independent source/meaning review",
+          "verdict": "ACCEPT",
+          "candidate": "/tmp/lixuzhong-rest18-candidates.json",
+          "candidateSha256": "eb2f7d30e2a1cf287cd8188a218574d16cc1700e77416d6edcf59a2a568adf2b",
+          "count": 18,
+          "reviews": {
+            "source-reviewed": 1,
+            "draft": 17
+          },
+          "fullSourceReadChars": 23724,
+          "all18SourceTextAndParagraphIdExact": true,
+          "sourceFileSha256": "6eee34bdd6f8731746bb077228fdad8fa6c01d5386bd617150b43b5d1febab9b",
+          "validator": {
+            "entries": 18,
+            "errors": []
+          },
+          "findings": [],
+          "specificChecks": [
+            "P7640163917550043146：三元明为干禄、支命、纳音身；四柱明为胎月日时，另年本日主月使时辅。候选未替换现代四柱或按权重相加。",
+            "P7640163917550059530承土得水多；正文“贱向贵中死”与注后贵差异保持draft。",
+            "P7640163917750763566五组三奇保留原甲已丙；岁胎月日时顺、时日月胎岁逆及连顺相合条件俱保留。",
+            "P7640163917750779950三元九限气运不同于前述元命三元；候选没有将不同定义混用。",
+            "P7640163647993856010天乙贵人一段完整，三命皆旺附加高位条件未遗漏，可作电子语义SR。"
+          ],
+          "reviewScope": "电子文本释义及源锚；不表示影印校勘、历史人物命例或术数效验认证。",
+          "finalDelta": "第3条贵神用于月日时的干支组合；若无德保留原称，不改述为人格失德。"
+        },
+        {
+          "verdict": "ACCEPT",
+          "count": 18,
+          "candidateSha256": "d2276a23b110dee31615789b7fba258733448fb0d86679c7f1ea8c2652ba0bd0",
+          "scope": "18完整源段全部亲读，包括巨段全文及跨段土得水多续接；区分正文古注、引书和清代案语。",
+          "sourceMismatchIds": [],
+          "reviewCounts": {
+            "draft": 17,
+            "source-reviewed": 1
+          },
+          "issues": [
+            {
+              "index": 3,
+              "paragraphId": "li-xuzhong-mingshu:shidian-SK1601:P7640163647993872394",
+              "requiredCorrection": "开头贵神日柱缩窄原文各组月日時貴神。应改贵神干支组合（用于月、日、时），不能仅称日柱。若失德建议明确为若无德神相助/原称无德，避免把术数德神条件误写为品德败坏。",
+              "sourceEvidence": "巳上甲、戊庚人月日時貴神；若無徳，更值空亡。交退伏神，五行無氣，至死不貴。"
+            }
+          ],
+          "priorVerdict": "REJECT",
+          "finalCandidateSha256": "eb2f7d30e2a1cf287cd8188a218574d16cc1700e77416d6edcf59a2a568adf2b",
+          "deltaReview": "所有B阻断已按原段逐项修正，最终候选delta复验通过；不代表影印校勘。"
+        }
+      ]
+    },
+    {
+      "candidate": "wuxing193",
+      "target": "luming-nayin/wuxing-jingji--shidian-7533808921945833506.json",
+      "count": 193,
+      "candidateSha256": "3c6a80446b135635cad95461ad7f521581715a980d3caeed5eae26f2e0cf63d4",
+      "reviewCounts": {
+        "draft": 133,
+        "source-reviewed": 60
+      },
+      "judges": [
+        {
+          "judge": "A independent source/meaning review",
+          "verdict": "ACCEPT",
+          "candidate": "/tmp/wuxing193-candidates.json",
+          "candidateSha256": "3c6a80446b135635cad95461ad7f521581715a980d3caeed5eae26f2e0cf63d4",
+          "evidenceSha256": "9db5cb0da813f3158237ef34c627e4a7f496707a3ff3dc9a23318d5690a14334",
+          "count": 193,
+          "fullSourceReadChars": 11719,
+          "all193SourceTextAndParagraphIdExact": true,
+          "validator": {
+            "entries": 193,
+            "errors": []
+          },
+          "actualReview": {
+            "draft": 133,
+            "source-reviewed": 60
+          },
+          "proposedReviewCounts": {
+            "draft": 133,
+            "source-reviewed": 60
+          },
+          "otherwiseAcceptProposedReviewIds": [
+            "wuxing-jingji:shidian-7533808921945833506:P7538051622246989850",
+            "wuxing-jingji:shidian-7533808921945833506:P7538051622473072649",
+            "wuxing-jingji:shidian-7533808921945833506:P7538051622473170953",
+            "wuxing-jingji:shidian-7533808921945833506:P7538051622473236489",
+            "wuxing-jingji:shidian-7533808921945833506:P7538051622473302025",
+            "wuxing-jingji:shidian-7533808921945833506:P7538051622473334793",
+            "wuxing-jingji:shidian-7533808921945833506:P7538051622473531401",
+            "wuxing-jingji:shidian-7533808921945833506:P7538051622473613321",
+            "wuxing-jingji:shidian-7533808921945833506:P7538051622778290202",
+            "wuxing-jingji:shidian-7533808921945833506:P7538051622778322970",
+            "wuxing-jingji:shidian-7533808921945833506:P7538051622779453466",
+            "wuxing-jingji:shidian-7533808921945833506:P7538051622779519002",
+            "wuxing-jingji:shidian-7533808921945833506:P7538051622779551770",
+            "wuxing-jingji:shidian-7533808921945833506:P7538051622779584538",
+            "wuxing-jingji:shidian-7533808921945833506:P7538051622779617306",
+            "wuxing-jingji:shidian-7533808921945833506:P7538051622779682842",
+            "wuxing-jingji:shidian-7533808921945833506:P7538051622779748378",
+            "wuxing-jingji:shidian-7533808921945833506:P7538051622987890714",
+            "wuxing-jingji:shidian-7533808921945833506:P7538051635668451366",
+            "wuxing-jingji:shidian-7533808921945833506:P7538051636175765554",
+            "wuxing-jingji:shidian-7533808921945833506:P7538051636175798322",
+            "wuxing-jingji:shidian-7533808921945833506:P7538051636175913010",
+            "wuxing-jingji:shidian-7533808921945833506:P7538051658283974706",
+            "wuxing-jingji:shidian-7533808921945833506:P7538051658284056626",
+            "wuxing-jingji:shidian-7533808921945833506:P7538051658284089394",
+            "wuxing-jingji:shidian-7533808921945833506:P7538051658284105778",
+            "wuxing-jingji:shidian-7533808921945833506:P7538051658284122162",
+            "wuxing-jingji:shidian-7533808921945833506:P7538051658284138546",
+            "wuxing-jingji:shidian-7533808921945833506:P7538051658284154930",
+            "wuxing-jingji:shidian-7533808921945833506:P7538051658284187698",
+            "wuxing-jingji:shidian-7533808921945833506:P7538051658284204082",
+            "wuxing-jingji:shidian-7533808921945833506:P7538051658284220466",
+            "wuxing-jingji:shidian-7533808921945833506:P7538051658284236850",
+            "wuxing-jingji:shidian-7533808921945833506:P7538051658284253234",
+            "wuxing-jingji:shidian-7533808921945833506:P7538051658284335154",
+            "wuxing-jingji:shidian-7533808921945833506:P7538051658284351538",
+            "wuxing-jingji:shidian-7533808921945833506:P7538051658284367922",
+            "wuxing-jingji:shidian-7533808921945833506:P7538051658284384306",
+            "wuxing-jingji:shidian-7533808921945833506:P7538051658284400690",
+            "wuxing-jingji:shidian-7533808921945833506:P7538051658284417074",
+            "wuxing-jingji:shidian-7533808921945833506:P7538051658284433458",
+            "wuxing-jingji:shidian-7533808921945833506:P7538051658284449842",
+            "wuxing-jingji:shidian-7533808921945833506:P7538051658284466226",
+            "wuxing-jingji:shidian-7533808921945833506:P7538051658284482610",
+            "wuxing-jingji:shidian-7533808921945833506:P7538051658284515378",
+            "wuxing-jingji:shidian-7533808921945833506:P7538051658284531762",
+            "wuxing-jingji:shidian-7533808921945833506:P7538051658284548146",
+            "wuxing-jingji:shidian-7533808921945833506:P7538051658284564530",
+            "wuxing-jingji:shidian-7533808921945833506:P7538051658284580914",
+            "wuxing-jingji:shidian-7533808921945833506:P7538051659545460782",
+            "wuxing-jingji:shidian-7533808921945833506:P7538051659545477166",
+            "wuxing-jingji:shidian-7533808921945833506:P7538051659545591854",
+            "wuxing-jingji:shidian-7533808921945833506:P7538051666924716042",
+            "wuxing-jingji:shidian-7533808921945833506:P7538051666924748810",
+            "wuxing-jingji:shidian-7533808921945833506:P7538051666924781578",
+            "wuxing-jingji:shidian-7533808921945833506:P7538051667091013642",
+            "wuxing-jingji:shidian-7533808921945833506:P7538051667091046410",
+            "wuxing-jingji:shidian-7533808921945833506:P7538051667091062794",
+            "wuxing-jingji:shidian-7533808921945833506:P7538051667091079178",
+            "wuxing-jingji:shidian-7533808921945833506:P7538051667091095562"
+          ],
+          "specificChecks": [
+            "所有日题/后继时项逐条对读，无按五鼠遁或干支序列改字。父题已巳混用未定者，后继时断同留draft。",
+            "L2650承前十与十二月，非只十二月；L2780/2783大雪前二日至冬至节终范围与刻位双向联读。",
+            "L2709芒种缺刻位保留draft，不借冬至对称项补表。",
+            "L2495/2542不同真官定义、鬼官互化、有救减断保持各书条件，长段残字未假升级。",
+            "L2956凶运刑冲却作方可发福的内在矛盾明确留疑。",
+            "L3125丁丑行丁未排除四柱丁丑丁未条件准确。"
+          ],
+          "reviewScope": "完整电子源段语义；认可其余拟升项的字面释读，不表示历法/数值实测、影印校勘或命理有效性。",
+          "resolvedFindings": [
+            {
+              "paragraphId": "wuxing-jingji:shidian-7533808921945833506:P7538051636175896626",
+              "line": 2033,
+              "sourceText": "鬼谷要訣\n：\n馬在長生須富學，禄逢帝旺足財錢。\n若還刺配𠔥流役，是帶懸\n針刼殺来。",
+              "issue": "原马在长生须富学，候选汇成富财，漏掉并改变学字语义，不能按预期吉断消去。",
+              "requiredFix": "保留富学，释为学识充实须明确据本字释；若仍疑字则明确draft，不准将其作为富财并拟升SR。"
+            }
+          ],
+          "findings": [],
+          "finalDelta": "60拟审项已与evidence逐条对应实际升级，133draft保持；甲已原字及帝𦔽措辞复验通过。",
+          "extraDeltaReviewed": {
+            "33": "父未见出生，保留主体方向",
+            "104": "帝𦔽原字保留",
+            "114": "丁已组原字保留",
+            "166": "背父语义未核，不断出生姿势",
+            "189": "𢈏辰未核，不断庚辰互见"
+          }
+        },
+        {
+          "verdict": "ACCEPT",
+          "scope": "独立B完整193电子源段、上下文和候选释义；61拟source-reviewed审核；项目只读",
+          "candidateSha256": "22f03e826f5bbd7c5009572a4b730456aedabf9b1e868468aa5a9fc2c5d710c7",
+          "count": 193,
+          "sourceTextExactMatchCount": 193,
+          "proposedReviewCounts": {
+            "source-reviewed": 61,
+            "draft": 132
+          },
+          "findings": [
+            {
+              "index1Based": 34,
+              "paragraphId": "wuxing-jingji:shidian-7533808921945833506:P7538051622473531401",
+              "sourceText": "辛未\n時\n先破後成\n丙寅\n時\n多庻出過房或父不見生",
+              "currentVernacular": "承己未日：辛未时先破后成；丙寅时多涉及庶出、过房，或出生时未见父亲，原以不同可能性并列。",
+              "reason": "父不見生的主语是父；出生时未见父亲改变了主语。",
+              "requestedChange": "改为“或父亲未见其出生”，不要推定父死或离家。",
+              "reviewDisposition": "修正后可source-reviewed"
+            },
+            {
+              "index1Based": 102,
+              "paragraphId": "wuxing-jingji:shidian-7533808921945833506:P7538051636175896626",
+              "sourceText": "鬼谷要訣\n：\n馬在長生須富學，禄逢帝旺足財錢。\n若還刺配𠔥流役，是帶懸\n針刼殺来。",
+              "currentVernacular": "《鬼谷要诀》歌句把马在长生、禄逢帝旺与富财相连；又把刺配、流役等不利归于同时带悬针、劫杀，保留吉项之外的附加条件。",
+              "reason": "馬在長生須富學原写富學，不能与足財錢合并释为富财。",
+              "requestedChange": "分别写“马在长生原称富学，禄逢帝旺称足财钱”；富學字义未校须明确保留，不能改富贵。",
+              "reviewDisposition": "建议draft，待富學释义或底字有依据"
+            },
+            {
+              "index1Based": 105,
+              "paragraphId": "wuxing-jingji:shidian-7533808921945833506:P7538051636175945778",
+              "sourceText": "凡真官\n帝𦔽\n為上，臨官次之，\n長生\n又次之。\n若資\n驛馬、學堂、文星、天乙，不得𡻕運，自然奮享。\n閻東叟\n書。\n交互官格，\n大貴。\n甲申\n見\n乙酉\n，\n丙午\n見\n壬子\n，\n乙卯\n見\n戊申\n，\n庚午\n見\n壬午\n，\n丁已\n見\n辛巴\n，\n癸亥\n見\n丁已\n，\n如\n范文正公\n丙午年\n已亥月\n戊子日\n壬子\n時是也。\n六合官星格：\n官星六合少人知，貴在旬中始是奇。\n生日生時，如點入太師\n太傅佩旌旗，\n如\n蔡太師\n丁亥年\n壬寅月\n壬辰日\n辛已時\n是也。\n並\n紫虚局\n。\n上下官印：\n甲已、辛、\n乙\n、戊、庚、丙、\n辛\n、\n癸\n、丁𢈏壬、戊癸、乙已壬甲。\n𢈏乙、\n丁辛\n、\n甲\n、\n丙\n吶壬丁已。\n癸\n、\n丙\n戊\n已上，又名十様錦，主甲科官近禁地，常人亦不至艱辛。\n逐年\n太歲帶祿，在第三位，\n秀才\n請舉及第，常調改官，兩府入相。\n古\n詩云：若人三䖏食，遇祿定封侯。\n官下有官，\n如甲人見辛月丙日時之𩔖是也，主官職崇髙，名位清峻，\n官下有食有合，\n如甲人見辛為官，辛食癸，丙與辛合，在月日時上是也，主為\n官有貼職，常人有兼藝。",
+              "currentVernacular": "本段先列真官以帝旺为上、临官次之、长生再次，继而引交互官格、六合官星及上下官印。官下有官、官下有食有合又另作解释，分别关联官位或兼艺；范文正、蔡太师是书内命例。",
+              "reason": "正文原帝𦔽，释文直接作帝旺，当前notes未说明此处字形关系。",
+              "requestedChange": "改“真官原列帝𦔽为上、临官次之、长生再次”，或给出已核异体依据；不靠格局名称补字。",
+              "reviewDisposition": "保持draft"
+            },
+            {
+              "index1Based": 115,
+              "paragraphId": "wuxing-jingji:shidian-7533808921945833506:P7538051636176109618",
+              "sourceText": "已上貴格，須是支神帯生旺福聚，方入格。\n若有駁雜衝破空\n亡，可臨時加減言之。\n若帶死絶凶殺，禍聚之迅，雖有如無也。\n主吉中有凶，只作薄命斷之，盖變官為鬼也。\n又若\n已酉卯\n人\n見丁壬，\n壬子\n壬午\n人見乙庚，雖納音見庚，真五行尅為官，奈\n本生同受尅，故不作真官，而作真鬼斷之。\n大小運太歲逢之，\n灾尤重，\n變鬼為官雜格\n丁於真五行属木，凡\n丁\n人見乙與庚為鬼，若\n丁亥\n或\n丁卯\n、\n丁\n未\n人見乙庚者，不為鬼而為官。\n若亥卯未全見三丁足者尤\n好。\n盖\n亥卯未\n木之正位，而又得三丁，木盛氣𦔽，全要真金尅\n制之。\n又如\n丁已\n、\n丁酉\n、\n丁丑\n人，丁，真木也，生居金之正位，木弱\n金強，而更見乙庚者不好，鬼旺故也。\n又如六丁皆真木，而見\n乙酉\n、\n乙亥\n，乙，真金也，却不為鬼而反為官，盖丁貴在酉亥故\n也。",
+              "currentVernacular": "本段给前述贵格加上生旺、福聚等条件；冲破空亡须减，死绝凶杀聚则由官转鬼。随后论丁真木见乙庚真金：亥卯未木盛有制可化官，处巳酉丑木弱金强则不同；又以贵人位置说明乙酉乙亥的例外。",
+              "reason": "原丁已、丁酉、丁丑，释文直接巳酉丑；与notes称己巳未校冲突。",
+              "requestedChange": "改“原列丁已、丁酉、丁丑一组，称木弱金强”，不硬定巳。",
+              "reviewDisposition": "保持draft"
+            },
+            {
+              "index1Based": 167,
+              "paragraphId": "wuxing-jingji:shidian-7533808921945833506:P7538051659546574894",
+              "sourceText": "凡小兒生時帶刼殺，主頂有雙旋；帶亡神，主母驚；帶月殺，主背\n父而生及偏頂。\n又亡神，主家中有訟及難產，亦主尅。",
+              "currentVernacular": "本段把生时劫杀、亡神、月杀分别联系到双旋、母惊、出生姿势与偏顶，又续论亡神与诉讼、难产等。",
+              "reason": "背父而生未能直接证明是出生姿势，当前释文把未明关系解释成姿势。",
+              "requestedChange": "保留“月杀项称背父而生及偏顶”，明确背父语义待核，不解释胎位。",
+              "reviewDisposition": "保持draft"
+            },
+            {
+              "index1Based": 190,
+              "paragraphId": "wuxing-jingji:shidian-7533808921945833506:P7538051667091111946",
+              "sourceText": "凡\n甲申\n人行\n丙寅\n運，名曰力停\n相衝，主破財争競，屈伸不辨。\n丙戌\n人行\n辛卯\n運，主鈍滯，只宜\n武人。\n丙子\n人行\n壬寅\n運，壬入丙家，破其財，不好也。\n戊寅\n人行\n丁丑運\n，雖是退神，却有濟化為福。\n庚辰\n人或\n庚辰\n月行\n乙\n酉\n運。\n乙酉\n人或\n乙酉\n月行𢈏辰運，名四鴛鴦刃，大好，須發跡，但\n重叠者不佳。\n乙庚辰、酉年月日時者，大凶。",
+              "currentVernacular": "本段并列多种特例：甲申行丙寅为相冲争竞，丙戌行辛卯偏宜武人，丙子行壬寅为破财；戊寅行丁丑虽退神却可化福。庚辰与乙酉互见的运例称鸳鸯刃，但重叠及年月日時再聚又另判不利。",
+              "reason": "原乙酉行𢈏辰运，当前“庚辰与乙酉互见”在释文已将𢈏辰确定为庚辰。",
+              "requestedChange": "改“庚辰人或月行乙酉运；乙酉人或月的所行运原作𢈏辰，未校”，其余照原。",
+              "reviewDisposition": "保持draft"
+            }
+          ],
+          "otherEntries": "其余187条未见阻断；图像/版面占位明确未完成图读，不计术法恢复。",
+          "reviewConclusion": "除102暂撤拟升级外，其余60拟source-reviewed可在34修正后接受；不是影印verified。",
+          "priorVerdict": "REJECT",
+          "finalCandidateSha256": "3c6a80446b135635cad95461ad7f521581715a980d3caeed5eae26f2e0cf63d4",
+          "deltaReview": "所有B阻断已按原段逐项修正，最终候选delta复验通过；不代表影印校勘。",
+          "finalReviewDisposition": {
+            "source-reviewed": 60,
+            "draft": 133
+          },
+          "lastDeltaAccepted": true
+        }
+      ]
+    }
+  ]
+}
