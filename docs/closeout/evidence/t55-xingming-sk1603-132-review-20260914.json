@@ -1,0 +1,28 @@
+{
+  "batch": "t55-xingming-sk1603-132",
+  "scope": "132 remaining acquired SK1603 paragraphs excluding volume5 already annotated; catalogComplete still false; not facsimile or 七政 efficacy",
+  "candidateSha256": "2f0384531599c73fb0eb92153652d8b23e7c51097d3463fbf8581d350d63e902",
+  "evidenceSha256": "c1d975182e5a3fb44a87f66ddfd1ed0c842c1f34ccee0e719528cff608c95aa0",
+  "previousCandidateSha256": "fd2ef272f0bf3e0de9ed9e5ff42cd34f2bec85988bff183f3ce41817a552caa1",
+  "rootReview": "Author draft; independent B NEEDS_REVISION 11 glyph/order findings; B2 ACCEPT. 99 source-reviewed / 33 draft.",
+  "reviewCounts": {
+    "source-reviewed": 99,
+    "draft": 33
+  },
+  "judges": [
+    {
+      "judge": "B",
+      "verdict": "NEEDS_REVISION",
+      "findings": ["F1", "F2", "F3", "F4", "F5", "F6", "F7", "F8", "F9", "F10", "F11"]
+    },
+    {
+      "judge": "B2",
+      "verdict": "ACCEPT",
+      "candidateSha256": "2f0384531599c73fb0eb92153652d8b23e7c51097d3463fbf8581d350d63e902",
+      "completeParagraphsRead": 132,
+      "previousFindingsClosed": ["F1", "F2", "F3", "F4", "F5", "F6", "F7", "F8", "F9", "F10", "F11"],
+      "findings": []
+    }
+  ],
+  "notBookCompletion": true
+}
