@@ -1,0 +1,21 @@
+{
+  "batch": "t84-huangji-fulltext-80i",
+  "scope": "Ninth 80 unannotated fulltext.md paragraphs L21413-L21731 Shang Tang-Taijia; not SK1573, not algorithm",
+  "candidateSha256": "3d3767b6a6885196439657e102af5e4eb55690413b0dee4eb942e23e67ff7366",
+  "evidenceSha256": "12fb2ff8670d2c689991e8eff5b95e801180157d5555b7a15cc43c2a58d783f8",
+  "rootReview": "Author draft; independent B ACCEPT. 75 source-reviewed chronicle labels / 5 draft residual glyphs.",
+  "reviewCounts": {
+    "source-reviewed": 75,
+    "draft": 5
+  },
+  "judges": [
+    {
+      "judge": "B",
+      "verdict": "ACCEPT",
+      "candidateSha256": "3d3767b6a6885196439657e102af5e4eb55690413b0dee4eb942e23e67ff7366",
+      "completeParagraphsRead": 80,
+      "findings": []
+    }
+  ],
+  "notBookCompletion": true
+}
