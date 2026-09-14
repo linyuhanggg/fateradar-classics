@@ -1,0 +1,21 @@
+{
+  "batch": "t56-shenxiang-sdzj0174-200",
+  "scope": "First 200 unannotated shidian SDZJ0174 paragraphs, mostly catalog titles; not edition completeness or physiognomy efficacy",
+  "candidateSha256": "9f2f58956b661565eba2ee9d24f22fd5170e5d9043ff247ac5c35cf5375192c6",
+  "evidenceSha256": "5f9454583fb20c8a9d50c44b876d0c1e80992593fb1c1b3917ea00f76f19d90c",
+  "rootReview": "Author draft; independent B ACCEPT. 186 source-reviewed catalog titles / 14 draft residual glyphs.",
+  "reviewCounts": {
+    "source-reviewed": 186,
+    "draft": 14
+  },
+  "judges": [
+    {
+      "judge": "B",
+      "verdict": "ACCEPT",
+      "candidateSha256": "9f2f58956b661565eba2ee9d24f22fd5170e5d9043ff247ac5c35cf5375192c6",
+      "completeParagraphsRead": 200,
+      "findings": []
+    }
+  ],
+  "notBookCompletion": true
+}
