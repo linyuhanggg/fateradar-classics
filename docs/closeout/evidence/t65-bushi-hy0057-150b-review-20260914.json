@@ -1,0 +1,33 @@
+{
+  "batch": "t65-bushi-hy0057-150b",
+  "scope": "Second 150 unannotated shidian HY0057 paragraphs L1601-3863; website juan != print; not liuyao algorithm coverage",
+  "candidateSha256": "2d0723891e8824473615b07f40da6b15a109f41709cf73dafa17c03ec1a9c125",
+  "evidenceSha256": "d317542821286163dc0d9beced4b58b26197450000aaea506361edd34202449f",
+  "previousCandidateSha256": "24fea1cdbc30cc40664c872289bf791e086cd7a15c118fadafa13ff5793c44b1",
+  "rootReview": "Author draft; independent B then B2 NEEDS_REVISION on silent glyph normalization; B3 ACCEPT. 89 source-reviewed / 61 draft.",
+  "reviewCounts": {
+    "source-reviewed": 89,
+    "draft": 61
+  },
+  "judges": [
+    {
+      "judge": "B",
+      "verdict": "NEEDS_REVISION",
+      "findings": ["F1", "F2", "F3", "F4"]
+    },
+    {
+      "judge": "B2",
+      "verdict": "NEEDS_REVISION",
+      "findings": ["F4"]
+    },
+    {
+      "judge": "B3",
+      "verdict": "ACCEPT",
+      "candidateSha256": "2d0723891e8824473615b07f40da6b15a109f41709cf73dafa17c03ec1a9c125",
+      "completeParagraphsRead": 150,
+      "previousFindingsClosed": ["F1", "F2", "F3", "F4"],
+      "findings": []
+    }
+  ],
+  "notBookCompletion": true
+}
