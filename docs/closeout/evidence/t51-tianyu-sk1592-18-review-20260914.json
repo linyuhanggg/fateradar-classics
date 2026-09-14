@@ -1,0 +1,35 @@
+{
+  "batch": "t51-tianyu-sk1592-missing-18",
+  "scope": "Recover five previously missing SK1592 catalog chapters (18 paragraphs) from Shidian SSR; remap existing subsection line numbers; 18 new annotations remain draft. Webpage catalog alignment is not facsimile collation or fengshui efficacy.",
+  "candidateSha256": "05bd8a2ed4390c3508f7c9759359f09dc3447678c3b701f0dca76d85dc9afae8",
+  "evidenceSha256": "771f58742dce6359e9fee005d407673133fa7571789dee4b23a5c64a5537238d",
+  "previousCandidateSha256": "3a303c4f680d6a6cc5d5f9ddcd4b080b38e1f9c7a9ad4b2d74fe0c5eb5c9863e",
+  "rootReview": "Author draft; independent B NEEDS_REVISION on F1–F3 (㸔/看, 父毋方为第一, 戊巳/己); B2 ACCEPT on revised hash. All 18 stay draft.",
+  "reviewCounts": {
+    "draft": 18,
+    "source-reviewed": 0
+  },
+  "editionAfter": {
+    "id": "shidian-SK1592",
+    "paragraphCount": 208,
+    "catalogComplete": true
+  },
+  "judges": [
+    {
+      "judge": "B",
+      "verdict": "NEEDS_REVISION",
+      "candidateSha256": "3a303c4f680d6a6cc5d5f9ddcd4b080b38e1f9c7a9ad4b2d74fe0c5eb5c9863e",
+      "findings": ["F1", "F2", "F3"]
+    },
+    {
+      "judge": "B2",
+      "verdict": "ACCEPT",
+      "candidateSha256": "05bd8a2ed4390c3508f7c9759359f09dc3447678c3b701f0dca76d85dc9afae8",
+      "previousFindingsClosed": ["F1", "F2", "F3"],
+      "completeParagraphsRead": 18,
+      "findings": []
+    }
+  ],
+  "notBookCompletion": true,
+  "note": "catalogComplete true means this Shidian dump now matches that site catalog paragraph counts; not a claim that the received Tianyu jing is the complete received text of all printings."
+}
