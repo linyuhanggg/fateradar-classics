@@ -1,0 +1,2888 @@
+{
+  "scope": "350 more Yuqia inventory paragraphs, not complete-book acceptance",
+  "rootReview": "All 350 full source paragraphs and final interpretations read. Four internal-conflict table rows retained draft; corrected noon direction terminology and year-branch wording. Both independent reviews accept final hash.",
+  "candidateSha256": "9a27a4d4e62c997c40f0b0fb4ae66ca57cf2c534c9a90900545d78d80f90bf1c",
+  "reviewCounts": {
+    "source-reviewed": 228,
+    "draft": 122
+  },
+  "judges": [
+    {
+      "role": "Judge A",
+      "verdict": "ACCEPT",
+      "candidateFile": "/tmp/yuqia-next350b-candidates.json",
+      "candidateSha256": "9a27a4d4e62c997c40f0b0fb4ae66ca57cf2c534c9a90900545d78d80f90bf1c",
+      "scope": {
+        "entriesAudited": 350,
+        "sourceExactMatches": 350,
+        "reviewCounts": {
+          "source-reviewed": 232,
+          "draft": 118
+        },
+        "method": "350条完整原段与候选释义全部亲读；补读覆盖范围内全部非空未选行（标题及末续段），核相关段ID集合，非抽样。"
+      },
+      "requiredCorrections": [],
+      "findings": [
+        "天月德表申与后歌甲、阴阳贵人异值均明确照录，不靠算法修原字。",
+        "女命大利月六列、省略月份的厌对、天狗四季列有明确相邻表头支撑，未跨题继承。",
+        "婚年与女命生年、乾坤生辰空白书式、六壬与周易贵人两套用途分别保存。",
+        "丑亥不将禁忌、自相抵触的东四配东四不吉、缺图周堂及掌诀未假称恢复。",
+        "三白仍避诸煞、六德仅限空利方、大运类顺逆对象与制煞例外保留。",
+        "末母仓土王用事后巳午续段已关联，没有漏作全年四季以外无条件用日。"
+      ],
+      "entries": [
+        {
+          "index": 0,
+          "paragraphId": "yuqia-ji:L2560-L2560",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true
+        },
+        {
+          "index": 1,
+          "paragraphId": "yuqia-ji:L2562-L2562",
+          "verdict": "ACCEPT",
+          "review": "draft",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true
+        },
+        {
+          "index": 2,
+          "paragraphId": "yuqia-ji:L2566-L2566",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true
+        },
+        {
+          "index": 3,
+          "paragraphId": "yuqia-ji:L2568-L2568",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true
+        },
+        {
+          "index": 4,
+          "paragraphId": "yuqia-ji:L2570-L2570",
+          "verdict": "ACCEPT",
+          "review": "draft",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true
+        },
+        {
+          "index": 5,
+          "paragraphId": "yuqia-ji:L2572-L2572",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true
+        },
+        {
+          "index": 6,
+          "paragraphId": "yuqia-ji:L2574-L2574",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true
+        },
+        {
+          "index": 7,
+          "paragraphId": "yuqia-ji:L2576-L2576",
+          "verdict": "ACCEPT",
+          "review": "draft",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true
+        },
+        {
+          "index": 8,
+          "paragraphId": "yuqia-ji:L2580-L2580",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true
+        },
+        {
+          "index": 9,
+          "paragraphId": "yuqia-ji:L2582-L2582",
+          "verdict": "ACCEPT",
+          "review": "draft",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true
+        },
+        {
+          "index": 10,
+          "paragraphId": "yuqia-ji:L2584-L2584",
+          "verdict": "ACCEPT",
+          "review": "draft",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true
+        },
+        {
+          "index": 11,
+          "paragraphId": "yuqia-ji:L2586-L2586",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true
+        },
+        {
+          "index": 12,
+          "paragraphId": "yuqia-ji:L2590-L2590",
+          "verdict": "ACCEPT",
+          "review": "draft",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true
+        },
+        {
+          "index": 13,
+          "paragraphId": "yuqia-ji:L2592-L2592",
+          "verdict": "ACCEPT",
+          "review": "draft",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true
+        },
+        {
+          "index": 14,
+          "paragraphId": "yuqia-ji:L2596-L2596",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true
+        },
+        {
+          "index": 15,
+          "paragraphId": "yuqia-ji:L2598-L2598",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true
+        },
+        {
+          "index": 16,
+          "paragraphId": "yuqia-ji:L2600-L2600",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true
+        },
+        {
+          "index": 17,
+          "paragraphId": "yuqia-ji:L2604-L2604",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true
+        },
+        {
+          "index": 18,
+          "paragraphId": "yuqia-ji:L2606-L2606",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true
+        },
+        {
+          "index": 19,
+          "paragraphId": "yuqia-ji:L2610-L2610",
+          "verdict": "ACCEPT",
+          "review": "draft",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true
+        },
+        {
+          "index": 20,
+          "paragraphId": "yuqia-ji:L2612-L2612",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true
+        },
+        {
+          "index": 21,
+          "paragraphId": "yuqia-ji:L2614-L2614",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true
+        },
+        {
+          "index": 22,
+          "paragraphId": "yuqia-ji:L2616-L2616",
+          "verdict": "ACCEPT",
+          "review": "draft",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true
+        },
+        {
+          "index": 23,
+          "paragraphId": "yuqia-ji:L2618-L2618",
+          "verdict": "ACCEPT",
+          "review": "draft",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true
+        },
+        {
+          "index": 24,
+          "paragraphId": "yuqia-ji:L2620-L2620",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true
+        },
+        {
+          "index": 25,
+          "paragraphId": "yuqia-ji:L2624-L2624",
+          "verdict": "ACCEPT",
+          "review": "draft",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true
+        },
+        {
+          "index": 26,
+          "paragraphId": "yuqia-ji:L2626-L2626",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true
+        },
+        {
+          "index": 27,
+          "paragraphId": "yuqia-ji:L2628-L2628",
+          "verdict": "ACCEPT",
+          "review": "draft",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true
+        },
+        {
+          "index": 28,
+          "paragraphId": "yuqia-ji:L2632-L2632",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true
+        },
+        {
+          "index": 29,
+          "paragraphId": "yuqia-ji:L2634-L2634",
+          "verdict": "ACCEPT",
+          "review": "draft",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true
+        },
+        {
+          "index": 30,
+          "paragraphId": "yuqia-ji:L2636-L2636",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true
+        },
+        {
+          "index": 31,
+          "paragraphId": "yuqia-ji:L2638-L2638",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true
+        },
+        {
+          "index": 32,
+          "paragraphId": "yuqia-ji:L2642-L2642",
+          "verdict": "ACCEPT",
+          "review": "draft",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true
+        },
+        {
+          "index": 33,
+          "paragraphId": "yuqia-ji:L2644-L2644",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true
+        },
+        {
+          "index": 34,
+          "paragraphId": "yuqia-ji:L2646-L2646",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true
+        },
+        {
+          "index": 35,
+          "paragraphId": "yuqia-ji:L2648-L2648",
+          "verdict": "ACCEPT",
+          "review": "draft",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true
+        },
+        {
+          "index": 36,
+          "paragraphId": "yuqia-ji:L2652-L2652",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true
+        },
+        {
+          "index": 37,
+          "paragraphId": "yuqia-ji:L2656-L2656",
+          "verdict": "ACCEPT",
+          "review": "draft",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true
+        },
+        {
+          "index": 38,
+          "paragraphId": "yuqia-ji:L2660-L2660",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true
+        },
+        {
+          "index": 39,
+          "paragraphId": "yuqia-ji:L2664-L2664",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true
+        },
+        {
+          "index": 40,
+          "paragraphId": "yuqia-ji:L2668-L2668",
+          "verdict": "ACCEPT",
+          "review": "draft",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true
+        },
+        {
+          "index": 41,
+          "paragraphId": "yuqia-ji:L2670-L2670",
+          "verdict": "ACCEPT",
+          "review": "draft",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true
+        },
+        {
+          "index": 42,
+          "paragraphId": "yuqia-ji:L2674-L2674",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true
+        },
+        {
+          "index": 43,
+          "paragraphId": "yuqia-ji:L2678-L2678",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true
+        },
+        {
+          "index": 44,
+          "paragraphId": "yuqia-ji:L2680-L2680",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true
+        },
+        {
+          "index": 45,
+          "paragraphId": "yuqia-ji:L2684-L2684",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true
+        },
+        {
+          "index": 46,
+          "paragraphId": "yuqia-ji:L2686-L2686",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true
+        },
+        {
+          "index": 47,
+          "paragraphId": "yuqia-ji:L2690-L2690",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true
+        },
+        {
+          "index": 48,
+          "paragraphId": "yuqia-ji:L2694-L2694",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true
+        },
+        {
+          "index": 49,
+          "paragraphId": "yuqia-ji:L2696-L2696",
+          "verdict": "ACCEPT",
+          "review": "draft",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true
+        },
+        {
+          "index": 50,
+          "paragraphId": "yuqia-ji:L2698-L2698",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true
+        },
+        {
+          "index": 51,
+          "paragraphId": "yuqia-ji:L2700-L2700",
+          "verdict": "ACCEPT",
+          "review": "draft",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true
+        },
+        {
+          "index": 52,
+          "paragraphId": "yuqia-ji:L2704-L2704",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true
+        },
+        {
+          "index": 53,
+          "paragraphId": "yuqia-ji:L2706-L2706",
+          "verdict": "ACCEPT",
+          "review": "draft",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true
+        },
+        {
+          "index": 54,
+          "paragraphId": "yuqia-ji:L2710-L2710",
+          "verdict": "ACCEPT",
+          "review": "draft",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true
+        },
+        {
+          "index": 55,
+          "paragraphId": "yuqia-ji:L2712-L2712",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true
+        },
+        {
+          "index": 56,
+          "paragraphId": "yuqia-ji:L2714-L2714",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true
+        },
+        {
+          "index": 57,
+          "paragraphId": "yuqia-ji:L2716-L2716",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true
+        },
+        {
+          "index": 58,
+          "paragraphId": "yuqia-ji:L2718-L2718",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true
+        },
+        {
+          "index": 59,
+          "paragraphId": "yuqia-ji:L2720-L2720",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true
+        },
+        {
+          "index": 60,
+          "paragraphId": "yuqia-ji:L2722-L2722",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true
+        },
+        {
+          "index": 61,
+          "paragraphId": "yuqia-ji:L2724-L2724",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true
+        },
+        {
+          "index": 62,
+          "paragraphId": "yuqia-ji:L2726-L2726",
+          "verdict": "ACCEPT",
+          "review": "draft",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true
+        },
+        {
+          "index": 63,
+          "paragraphId": "yuqia-ji:L2728-L2728",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true
+        },
+        {
+          "index": 64,
+          "paragraphId": "yuqia-ji:L2730-L2730",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true
+        },
+        {
+          "index": 65,
+          "paragraphId": "yuqia-ji:L2732-L2732",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true
+        },
+        {
+          "index": 66,
+          "paragraphId": "yuqia-ji:L2736-L2736",
+          "verdict": "ACCEPT",
+          "review": "draft",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true
+        },
+        {
+          "index": 67,
+          "paragraphId": "yuqia-ji:L2738-L2738",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true
+        },
+        {
+          "index": 68,
+          "paragraphId": "yuqia-ji:L2740-L2740",
+          "verdict": "ACCEPT",
+          "review": "draft",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true
+        },
+        {
+          "index": 69,
+          "paragraphId": "yuqia-ji:L2742-L2742",
+          "verdict": "ACCEPT",
+          "review": "draft",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true
+        },
+        {
+          "index": 70,
+          "paragraphId": "yuqia-ji:L2744-L2744",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true
+        },
+        {
+          "index": 71,
+          "paragraphId": "yuqia-ji:L2746-L2746",
+          "verdict": "ACCEPT",
+          "review": "draft",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true
+        },
+        {
+          "index": 72,
+          "paragraphId": "yuqia-ji:L2748-L2748",
+          "verdict": "ACCEPT",
+          "review": "draft",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true
+        },
+        {
+          "index": 73,
+          "paragraphId": "yuqia-ji:L2752-L2752",
+          "verdict": "ACCEPT",
+          "review": "draft",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true
+        },
+        {
+          "index": 74,
+          "paragraphId": "yuqia-ji:L2754-L2754",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true
+        },
+        {
+          "index": 75,
+          "paragraphId": "yuqia-ji:L2756-L2756",
+          "verdict": "ACCEPT",
+          "review": "draft",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true
+        },
+        {
+          "index": 76,
+          "paragraphId": "yuqia-ji:L2758-L2758",
+          "verdict": "ACCEPT",
+          "review": "draft",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true
+        },
+        {
+          "index": 77,
+          "paragraphId": "yuqia-ji:L2760-L2760",
+          "verdict": "ACCEPT",
+          "review": "draft",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true
+        },
+        {
+          "index": 78,
+          "paragraphId": "yuqia-ji:L2762-L2762",
+          "verdict": "ACCEPT",
+          "review": "draft",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true
+        },
+        {
+          "index": 79,
+          "paragraphId": "yuqia-ji:L2766-L2766",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true
+        },
+        {
+          "index": 80,
+          "paragraphId": "yuqia-ji:L2768-L2768",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true
+        },
+        {
+          "index": 81,
+          "paragraphId": "yuqia-ji:L2770-L2770",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true
+        },
+        {
+          "index": 82,
+          "paragraphId": "yuqia-ji:L2772-L2772",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true
+        },
+        {
+          "index": 83,
+          "paragraphId": "yuqia-ji:L2774-L2774",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true
+        },
+        {
+          "index": 84,
+          "paragraphId": "yuqia-ji:L2778-L2778",
+          "verdict": "ACCEPT",
+          "review": "draft",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true
+        },
+        {
+          "index": 85,
+          "paragraphId": "yuqia-ji:L2780-L2780",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true
+        },
+        {
+          "index": 86,
+          "paragraphId": "yuqia-ji:L2782-L2782",
+          "verdict": "ACCEPT",
+          "review": "draft",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true
+        },
+        {
+          "index": 87,
+          "paragraphId": "yuqia-ji:L2786-L2786",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true
+        },
+        {
+          "index": 88,
+          "paragraphId": "yuqia-ji:L2788-L2788",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true
+        },
+        {
+          "index": 89,
+          "paragraphId": "yuqia-ji:L2792-L2792",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true
+        },
+        {
+          "index": 90,
+          "paragraphId": "yuqia-ji:L2794-L2794",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true
+        },
+        {
+          "index": 91,
+          "paragraphId": "yuqia-ji:L2796-L2796",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true
+        },
+        {
+          "index": 92,
+          "paragraphId": "yuqia-ji:L2798-L2798",
+          "verdict": "ACCEPT",
+          "review": "draft",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true
+        },
+        {
+          "index": 93,
+          "paragraphId": "yuqia-ji:L2800-L2800",
+          "verdict": "ACCEPT",
+          "review": "draft",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true
+        },
+        {
+          "index": 94,
+          "paragraphId": "yuqia-ji:L2802-L2802",
+          "verdict": "ACCEPT",
+          "review": "draft",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true
+        },
+        {
+          "index": 95,
+          "paragraphId": "yuqia-ji:L2804-L2804",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true
+        },
+        {
+          "index": 96,
+          "paragraphId": "yuqia-ji:L2806-L2806",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true
+        },
+        {
+          "index": 97,
+          "paragraphId": "yuqia-ji:L2808-L2808",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true
+        },
+        {
+          "index": 98,
+          "paragraphId": "yuqia-ji:L2810-L2810",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true
+        },
+        {
+          "index": 99,
+          "paragraphId": "yuqia-ji:L2812-L2812",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true
+        },
+        {
+          "index": 100,
+          "paragraphId": "yuqia-ji:L2814-L2814",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true
+        },
+        {
+          "index": 101,
+          "paragraphId": "yuqia-ji:L2816-L2816",
+          "verdict": "ACCEPT",
+          "review": "draft",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true
+        },
+        {
+          "index": 102,
+          "paragraphId": "yuqia-ji:L2818-L2818",
+          "verdict": "ACCEPT",
+          "review": "draft",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true
+        },
+        {
+          "index": 103,
+          "paragraphId": "yuqia-ji:L2820-L2820",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true
+        },
+        {
+          "index": 104,
+          "paragraphId": "yuqia-ji:L2824-L2824",
+          "verdict": "ACCEPT",
+          "review": "draft",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true
+        },
+        {
+          "index": 105,
+          "paragraphId": "yuqia-ji:L2826-L2826",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true
+        },
+        {
+          "index": 106,
+          "paragraphId": "yuqia-ji:L2830-L2830",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true
+        },
+        {
+          "index": 107,
+          "paragraphId": "yuqia-ji:L2832-L2832",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true
+        },
+        {
+          "index": 108,
+          "paragraphId": "yuqia-ji:L2834-L2834",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true
+        },
+        {
+          "index": 109,
+          "paragraphId": "yuqia-ji:L2838-L2838",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true
+        },
+        {
+          "index": 110,
+          "paragraphId": "yuqia-ji:L2840-L2840",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true
+        },
+        {
+          "index": 111,
+          "paragraphId": "yuqia-ji:L2842-L2842",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true
+        },
+        {
+          "index": 112,
+          "paragraphId": "yuqia-ji:L2844-L2844",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true
+        },
+        {
+          "index": 113,
+          "paragraphId": "yuqia-ji:L2846-L2846",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true
+        },
+        {
+          "index": 114,
+          "paragraphId": "yuqia-ji:L2848-L2848",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true
+        },
+        {
+          "index": 115,
+          "paragraphId": "yuqia-ji:L2850-L2850",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true
+        },
+        {
+          "index": 116,
+          "paragraphId": "yuqia-ji:L2852-L2852",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true
+        },
+        {
+          "index": 117,
+          "paragraphId": "yuqia-ji:L2854-L2854",
+          "verdict": "ACCEPT",
+          "review": "draft",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true
+        },
+        {
+          "index": 118,
+          "paragraphId": "yuqia-ji:L2856-L2856",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true
+        },
+        {
+          "index": 119,
+          "paragraphId": "yuqia-ji:L2858-L2858",
+          "verdict": "ACCEPT",
+          "review": "draft",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true
+        },
+        {
+          "index": 120,
+          "paragraphId": "yuqia-ji:L2860-L2860",
+          "verdict": "ACCEPT",
+          "review": "draft",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true
+        },
+        {
+          "index": 121,
+          "paragraphId": "yuqia-ji:L2864-L2864",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true
+        },
+        {
+          "index": 122,
+          "paragraphId": "yuqia-ji:L2866-L2866",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true
+        },
+        {
+          "index": 123,
+          "paragraphId": "yuqia-ji:L2868-L2868",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true
+        },
+        {
+          "index": 124,
+          "paragraphId": "yuqia-ji:L2870-L2870",
+          "verdict": "ACCEPT",
+          "review": "draft",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true
+        },
+        {
+          "index": 125,
+          "paragraphId": "yuqia-ji:L2872-L2872",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true
+        },
+        {
+          "index": 126,
+          "paragraphId": "yuqia-ji:L2874-L2874",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true
+        },
+        {
+          "index": 127,
+          "paragraphId": "yuqia-ji:L2878-L2878",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true
+        },
+        {
+          "index": 128,
+          "paragraphId": "yuqia-ji:L2880-L2880",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true
+        },
+        {
+          "index": 129,
+          "paragraphId": "yuqia-ji:L2882-L2882",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true
+        },
+        {
+          "index": 130,
+          "paragraphId": "yuqia-ji:L2884-L2884",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true
+        },
+        {
+          "index": 131,
+          "paragraphId": "yuqia-ji:L2886-L2886",
+          "verdict": "ACCEPT",
+          "review": "draft",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true
+        },
+        {
+          "index": 132,
+          "paragraphId": "yuqia-ji:L2888-L2888",
+          "verdict": "ACCEPT",
+          "review": "draft",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true
+        },
+        {
+          "index": 133,
+          "paragraphId": "yuqia-ji:L2890-L2890",
+          "verdict": "ACCEPT",
+          "review": "draft",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true
+        },
+        {
+          "index": 134,
+          "paragraphId": "yuqia-ji:L2892-L2892",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true
+        },
+        {
+          "index": 135,
+          "paragraphId": "yuqia-ji:L2894-L2894",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true
+        },
+        {
+          "index": 136,
+          "paragraphId": "yuqia-ji:L2896-L2896",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true
+        },
+        {
+          "index": 137,
+          "paragraphId": "yuqia-ji:L2900-L2913",
+          "verdict": "ACCEPT",
+          "review": "draft",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true
+        },
+        {
+          "index": 138,
+          "paragraphId": "yuqia-ji:L2917-L2917",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true
+        },
+        {
+          "index": 139,
+          "paragraphId": "yuqia-ji:L2919-L2919",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true
+        },
+        {
+          "index": 140,
+          "paragraphId": "yuqia-ji:L2921-L2921",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true
+        },
+        {
+          "index": 141,
+          "paragraphId": "yuqia-ji:L2923-L2923",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true
+        },
+        {
+          "index": 142,
+          "paragraphId": "yuqia-ji:L2925-L2925",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true
+        },
+        {
+          "index": 143,
+          "paragraphId": "yuqia-ji:L2927-L2927",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true
+        },
+        {
+          "index": 144,
+          "paragraphId": "yuqia-ji:L2929-L2929",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true
+        },
+        {
+          "index": 145,
+          "paragraphId": "yuqia-ji:L2931-L2931",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true
+        },
+        {
+          "index": 146,
+          "paragraphId": "yuqia-ji:L2933-L2933",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true
+        },
+        {
+          "index": 147,
+          "paragraphId": "yuqia-ji:L2935-L2935",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true
+        },
+        {
+          "index": 148,
+          "paragraphId": "yuqia-ji:L2937-L2937",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true
+        },
+        {
+          "index": 149,
+          "paragraphId": "yuqia-ji:L2939-L2939",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true
+        },
+        {
+          "index": 150,
+          "paragraphId": "yuqia-ji:L2941-L2941",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true
+        },
+        {
+          "index": 151,
+          "paragraphId": "yuqia-ji:L2943-L2950",
+          "verdict": "ACCEPT",
+          "review": "draft",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true
+        },
+        {
+          "index": 152,
+          "paragraphId": "yuqia-ji:L2952-L2952",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true
+        },
+        {
+          "index": 153,
+          "paragraphId": "yuqia-ji:L2954-L2954",
+          "verdict": "ACCEPT",
+          "review": "draft",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true
+        },
+        {
+          "index": 154,
+          "paragraphId": "yuqia-ji:L2956-L2956",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true
+        },
+        {
+          "index": 155,
+          "paragraphId": "yuqia-ji:L2958-L2958",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true
+        },
+        {
+          "index": 156,
+          "paragraphId": "yuqia-ji:L2962-L2962",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true
+        },
+        {
+          "index": 157,
+          "paragraphId": "yuqia-ji:L2964-L2964",
+          "verdict": "ACCEPT",
+          "review": "draft",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true
+        },
+        {
+          "index": 158,
+          "paragraphId": "yuqia-ji:L2968-L2968",
+          "verdict": "ACCEPT",
+          "review": "draft",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true
+        },
+        {
+          "index": 159,
+          "paragraphId": "yuqia-ji:L2970-L2970",
+          "verdict": "ACCEPT",
+          "review": "draft",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true
+        },
+        {
+          "index": 160,
+          "paragraphId": "yuqia-ji:L2972-L2972",
+          "verdict": "ACCEPT",
+          "review": "draft",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true
+        },
+        {
+          "index": 161,
+          "paragraphId": "yuqia-ji:L2974-L2974",
+          "verdict": "ACCEPT",
+          "review": "draft",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true
+        },
+        {
+          "index": 162,
+          "paragraphId": "yuqia-ji:L2978-L2978",
+          "verdict": "ACCEPT",
+          "review": "draft",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true
+        },
+        {
+          "index": 163,
+          "paragraphId": "yuqia-ji:L2982-L2982",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true
+        },
+        {
+          "index": 164,
+          "paragraphId": "yuqia-ji:L2984-L2984",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true
+        },
+        {
+          "index": 165,
+          "paragraphId": "yuqia-ji:L2986-L2986",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true
+        },
+        {
+          "index": 166,
+          "paragraphId": "yuqia-ji:L2988-L2988",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true
+        },
+        {
+          "index": 167,
+          "paragraphId": "yuqia-ji:L2990-L2990",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true
+        },
+        {
+          "index": 168,
+          "paragraphId": "yuqia-ji:L2992-L2992",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true
+        },
+        {
+          "index": 169,
+          "paragraphId": "yuqia-ji:L2994-L2994",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true
+        },
+        {
+          "index": 170,
+          "paragraphId": "yuqia-ji:L2996-L2996",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true
+        },
+        {
+          "index": 171,
+          "paragraphId": "yuqia-ji:L3000-L3000",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true
+        },
+        {
+          "index": 172,
+          "paragraphId": "yuqia-ji:L3002-L3002",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true
+        },
+        {
+          "index": 173,
+          "paragraphId": "yuqia-ji:L3004-L3004",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true
+        },
+        {
+          "index": 174,
+          "paragraphId": "yuqia-ji:L3006-L3006",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true
+        },
+        {
+          "index": 175,
+          "paragraphId": "yuqia-ji:L3008-L3008",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true
+        },
+        {
+          "index": 176,
+          "paragraphId": "yuqia-ji:L3010-L3010",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true
+        },
+        {
+          "index": 177,
+          "paragraphId": "yuqia-ji:L3014-L3014",
+          "verdict": "ACCEPT",
+          "review": "draft",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true
+        },
+        {
+          "index": 178,
+          "paragraphId": "yuqia-ji:L3016-L3016",
+          "verdict": "ACCEPT",
+          "review": "draft",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true
+        },
+        {
+          "index": 179,
+          "paragraphId": "yuqia-ji:L3018-L3018",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true
+        },
+        {
+          "index": 180,
+          "paragraphId": "yuqia-ji:L3020-L3020",
+          "verdict": "ACCEPT",
+          "review": "draft",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true
+        },
+        {
+          "index": 181,
+          "paragraphId": "yuqia-ji:L3024-L3024",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true
+        },
+        {
+          "index": 182,
+          "paragraphId": "yuqia-ji:L3026-L3026",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true
+        },
+        {
+          "index": 183,
+          "paragraphId": "yuqia-ji:L3028-L3028",
+          "verdict": "ACCEPT",
+          "review": "draft",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true
+        },
+        {
+          "index": 184,
+          "paragraphId": "yuqia-ji:L3032-L3032",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true
+        },
+        {
+          "index": 185,
+          "paragraphId": "yuqia-ji:L3034-L3034",
+          "verdict": "ACCEPT",
+          "review": "draft",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true
+        },
+        {
+          "index": 186,
+          "paragraphId": "yuqia-ji:L3038-L3038",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true
+        },
+        {
+          "index": 187,
+          "paragraphId": "yuqia-ji:L3040-L3040",
+          "verdict": "ACCEPT",
+          "review": "draft",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true
+        },
+        {
+          "index": 188,
+          "paragraphId": "yuqia-ji:L3042-L3042",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true
+        },
+        {
+          "index": 189,
+          "paragraphId": "yuqia-ji:L3044-L3044",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true
+        },
+        {
+          "index": 190,
+          "paragraphId": "yuqia-ji:L3048-L3048",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true
+        },
+        {
+          "index": 191,
+          "paragraphId": "yuqia-ji:L3050-L3050",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true
+        },
+        {
+          "index": 192,
+          "paragraphId": "yuqia-ji:L3052-L3052",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true
+        },
+        {
+          "index": 193,
+          "paragraphId": "yuqia-ji:L3054-L3054",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true
+        },
+        {
+          "index": 194,
+          "paragraphId": "yuqia-ji:L3056-L3056",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true
+        },
+        {
+          "index": 195,
+          "paragraphId": "yuqia-ji:L3058-L3058",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true
+        },
+        {
+          "index": 196,
+          "paragraphId": "yuqia-ji:L3060-L3060",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true
+        },
+        {
+          "index": 197,
+          "paragraphId": "yuqia-ji:L3062-L3062",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true
+        },
+        {
+          "index": 198,
+          "paragraphId": "yuqia-ji:L3064-L3064",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true
+        },
+        {
+          "index": 199,
+          "paragraphId": "yuqia-ji:L3066-L3066",
+          "verdict": "ACCEPT",
+          "review": "draft",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true
+        },
+        {
+          "index": 200,
+          "paragraphId": "yuqia-ji:L3068-L3068",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true
+        },
+        {
+          "index": 201,
+          "paragraphId": "yuqia-ji:L3070-L3070",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true
+        },
+        {
+          "index": 202,
+          "paragraphId": "yuqia-ji:L3072-L3072",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true
+        },
+        {
+          "index": 203,
+          "paragraphId": "yuqia-ji:L3074-L3074",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true
+        },
+        {
+          "index": 204,
+          "paragraphId": "yuqia-ji:L3076-L3076",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true
+        },
+        {
+          "index": 205,
+          "paragraphId": "yuqia-ji:L3078-L3078",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true
+        },
+        {
+          "index": 206,
+          "paragraphId": "yuqia-ji:L3080-L3080",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true
+        },
+        {
+          "index": 207,
+          "paragraphId": "yuqia-ji:L3082-L3082",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true
+        },
+        {
+          "index": 208,
+          "paragraphId": "yuqia-ji:L3084-L3084",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true
+        },
+        {
+          "index": 209,
+          "paragraphId": "yuqia-ji:L3086-L3086",
+          "verdict": "ACCEPT",
+          "review": "draft",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true
+        },
+        {
+          "index": 210,
+          "paragraphId": "yuqia-ji:L3088-L3088",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true
+        },
+        {
+          "index": 211,
+          "paragraphId": "yuqia-ji:L3090-L3090",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true
+        },
+        {
+          "index": 212,
+          "paragraphId": "yuqia-ji:L3094-L3094",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true
+        },
+        {
+          "index": 213,
+          "paragraphId": "yuqia-ji:L3096-L3096",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true
+        },
+        {
+          "index": 214,
+          "paragraphId": "yuqia-ji:L3100-L3100",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true
+        },
+        {
+          "index": 215,
+          "paragraphId": "yuqia-ji:L3102-L3102",
+          "verdict": "ACCEPT",
+          "review": "draft",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true
+        },
+        {
+          "index": 216,
+          "paragraphId": "yuqia-ji:L3108-L3121",
+          "verdict": "ACCEPT",
+          "review": "draft",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true
+        },
+        {
+          "index": 217,
+          "paragraphId": "yuqia-ji:L3125-L3125",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true
+        },
+        {
+          "index": 218,
+          "paragraphId": "yuqia-ji:L3127-L3127",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true
+        },
+        {
+          "index": 219,
+          "paragraphId": "yuqia-ji:L3133-L3133",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true
+        },
+        {
+          "index": 220,
+          "paragraphId": "yuqia-ji:L3135-L3135",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true
+        },
+        {
+          "index": 221,
+          "paragraphId": "yuqia-ji:L3137-L3137",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true
+        },
+        {
+          "index": 222,
+          "paragraphId": "yuqia-ji:L3139-L3139",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true
+        },
+        {
+          "index": 223,
+          "paragraphId": "yuqia-ji:L3141-L3141",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true
+        },
+        {
+          "index": 224,
+          "paragraphId": "yuqia-ji:L3143-L3143",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true
+        },
+        {
+          "index": 225,
+          "paragraphId": "yuqia-ji:L3145-L3145",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true
+        },
+        {
+          "index": 226,
+          "paragraphId": "yuqia-ji:L3147-L3147",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true
+        },
+        {
+          "index": 227,
+          "paragraphId": "yuqia-ji:L3149-L3149",
+          "verdict": "ACCEPT",
+          "review": "draft",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true
+        },
+        {
+          "index": 228,
+          "paragraphId": "yuqia-ji:L3153-L3153",
+          "verdict": "ACCEPT",
+          "review": "draft",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true
+        },
+        {
+          "index": 229,
+          "paragraphId": "yuqia-ji:L3155-L3155",
+          "verdict": "ACCEPT",
+          "review": "draft",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true
+        },
+        {
+          "index": 230,
+          "paragraphId": "yuqia-ji:L3159-L3159",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true
+        },
+        {
+          "index": 231,
+          "paragraphId": "yuqia-ji:L3161-L3161",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true
+        },
+        {
+          "index": 232,
+          "paragraphId": "yuqia-ji:L3165-L3165",
+          "verdict": "ACCEPT",
+          "review": "draft",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true
+        },
+        {
+          "index": 233,
+          "paragraphId": "yuqia-ji:L3167-L3167",
+          "verdict": "ACCEPT",
+          "review": "draft",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true
+        },
+        {
+          "index": 234,
+          "paragraphId": "yuqia-ji:L3171-L3171",
+          "verdict": "ACCEPT",
+          "review": "draft",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true
+        },
+        {
+          "index": 235,
+          "paragraphId": "yuqia-ji:L3173-L3173",
+          "verdict": "ACCEPT",
+          "review": "draft",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true
+        },
+        {
+          "index": 236,
+          "paragraphId": "yuqia-ji:L3175-L3175",
+          "verdict": "ACCEPT",
+          "review": "draft",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true
+        },
+        {
+          "index": 237,
+          "paragraphId": "yuqia-ji:L3177-L3177",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true
+        },
+        {
+          "index": 238,
+          "paragraphId": "yuqia-ji:L3179-L3179",
+          "verdict": "ACCEPT",
+          "review": "draft",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true
+        },
+        {
+          "index": 239,
+          "paragraphId": "yuqia-ji:L3181-L3181",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true
+        },
+        {
+          "index": 240,
+          "paragraphId": "yuqia-ji:L3185-L3185",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true
+        },
+        {
+          "index": 241,
+          "paragraphId": "yuqia-ji:L3187-L3187",
+          "verdict": "ACCEPT",
+          "review": "draft",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true
+        },
+        {
+          "index": 242,
+          "paragraphId": "yuqia-ji:L3189-L3189",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true
+        },
+        {
+          "index": 243,
+          "paragraphId": "yuqia-ji:L3193-L3193",
+          "verdict": "ACCEPT",
+          "review": "draft",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true
+        },
+        {
+          "index": 244,
+          "paragraphId": "yuqia-ji:L3197-L3197",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true
+        },
+        {
+          "index": 245,
+          "paragraphId": "yuqia-ji:L3199-L3199",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true
+        },
+        {
+          "index": 246,
+          "paragraphId": "yuqia-ji:L3201-L3201",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true
+        },
+        {
+          "index": 247,
+          "paragraphId": "yuqia-ji:L3205-L3205",
+          "verdict": "ACCEPT",
+          "review": "draft",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true
+        },
+        {
+          "index": 248,
+          "paragraphId": "yuqia-ji:L3207-L3207",
+          "verdict": "ACCEPT",
+          "review": "draft",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true
+        },
+        {
+          "index": 249,
+          "paragraphId": "yuqia-ji:L3211-L3211",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true
+        },
+        {
+          "index": 250,
+          "paragraphId": "yuqia-ji:L3213-L3218",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true
+        },
+        {
+          "index": 251,
+          "paragraphId": "yuqia-ji:L3220-L3220",
+          "verdict": "ACCEPT",
+          "review": "draft",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true
+        },
+        {
+          "index": 252,
+          "paragraphId": "yuqia-ji:L3222-L3222",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true
+        },
+        {
+          "index": 253,
+          "paragraphId": "yuqia-ji:L3224-L3224",
+          "verdict": "ACCEPT",
+          "review": "draft",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true
+        },
+        {
+          "index": 254,
+          "paragraphId": "yuqia-ji:L3226-L3226",
+          "verdict": "ACCEPT",
+          "review": "draft",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true
+        },
+        {
+          "index": 255,
+          "paragraphId": "yuqia-ji:L3230-L3230",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true
+        },
+        {
+          "index": 256,
+          "paragraphId": "yuqia-ji:L3232-L3232",
+          "verdict": "ACCEPT",
+          "review": "draft",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true
+        },
+        {
+          "index": 257,
+          "paragraphId": "yuqia-ji:L3234-L3234",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true
+        },
+        {
+          "index": 258,
+          "paragraphId": "yuqia-ji:L3236-L3236",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true
+        },
+        {
+          "index": 259,
+          "paragraphId": "yuqia-ji:L3238-L3238",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true
+        },
+        {
+          "index": 260,
+          "paragraphId": "yuqia-ji:L3242-L3254",
+          "verdict": "ACCEPT",
+          "review": "draft",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true
+        },
+        {
+          "index": 261,
+          "paragraphId": "yuqia-ji:L3256-L3261",
+          "verdict": "ACCEPT",
+          "review": "draft",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true
+        },
+        {
+          "index": 262,
+          "paragraphId": "yuqia-ji:L3265-L3265",
+          "verdict": "ACCEPT",
+          "review": "draft",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true
+        },
+        {
+          "index": 263,
+          "paragraphId": "yuqia-ji:L3267-L3267",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true
+        },
+        {
+          "index": 264,
+          "paragraphId": "yuqia-ji:L3269-L3269",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true
+        },
+        {
+          "index": 265,
+          "paragraphId": "yuqia-ji:L3271-L3271",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true
+        },
+        {
+          "index": 266,
+          "paragraphId": "yuqia-ji:L3275-L3275",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true
+        },
+        {
+          "index": 267,
+          "paragraphId": "yuqia-ji:L3277-L3277",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true
+        },
+        {
+          "index": 268,
+          "paragraphId": "yuqia-ji:L3279-L3279",
+          "verdict": "ACCEPT",
+          "review": "draft",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true
+        },
+        {
+          "index": 269,
+          "paragraphId": "yuqia-ji:L3281-L3281",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true
+        },
+        {
+          "index": 270,
+          "paragraphId": "yuqia-ji:L3283-L3283",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true
+        },
+        {
+          "index": 271,
+          "paragraphId": "yuqia-ji:L3285-L3285",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true
+        },
+        {
+          "index": 272,
+          "paragraphId": "yuqia-ji:L3287-L3287",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true
+        },
+        {
+          "index": 273,
+          "paragraphId": "yuqia-ji:L3289-L3289",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true
+        },
+        {
+          "index": 274,
+          "paragraphId": "yuqia-ji:L3291-L3291",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true
+        },
+        {
+          "index": 275,
+          "paragraphId": "yuqia-ji:L3293-L3293",
+          "verdict": "ACCEPT",
+          "review": "draft",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true
+        },
+        {
+          "index": 276,
+          "paragraphId": "yuqia-ji:L3295-L3295",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true
+        },
+        {
+          "index": 277,
+          "paragraphId": "yuqia-ji:L3297-L3297",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true
+        },
+        {
+          "index": 278,
+          "paragraphId": "yuqia-ji:L3299-L3299",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true
+        },
+        {
+          "index": 279,
+          "paragraphId": "yuqia-ji:L3301-L3301",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true
+        },
+        {
+          "index": 280,
+          "paragraphId": "yuqia-ji:L3303-L3303",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true
+        },
+        {
+          "index": 281,
+          "paragraphId": "yuqia-ji:L3305-L3305",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true
+        },
+        {
+          "index": 282,
+          "paragraphId": "yuqia-ji:L3307-L3307",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true
+        },
+        {
+          "index": 283,
+          "paragraphId": "yuqia-ji:L3309-L3309",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true
+        },
+        {
+          "index": 284,
+          "paragraphId": "yuqia-ji:L3311-L3311",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true
+        },
+        {
+          "index": 285,
+          "paragraphId": "yuqia-ji:L3313-L3313",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true
+        },
+        {
+          "index": 286,
+          "paragraphId": "yuqia-ji:L3315-L3315",
+          "verdict": "ACCEPT",
+          "review": "draft",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true
+        },
+        {
+          "index": 287,
+          "paragraphId": "yuqia-ji:L3319-L3319",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true
+        },
+        {
+          "index": 288,
+          "paragraphId": "yuqia-ji:L3321-L3321",
+          "verdict": "ACCEPT",
+          "review": "draft",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true
+        },
+        {
+          "index": 289,
+          "paragraphId": "yuqia-ji:L3323-L3323",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true
+        },
+        {
+          "index": 290,
+          "paragraphId": "yuqia-ji:L3325-L3325",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true
+        },
+        {
+          "index": 291,
+          "paragraphId": "yuqia-ji:L3327-L3327",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true
+        },
+        {
+          "index": 292,
+          "paragraphId": "yuqia-ji:L3329-L3329",
+          "verdict": "ACCEPT",
+          "review": "draft",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true
+        },
+        {
+          "index": 293,
+          "paragraphId": "yuqia-ji:L3331-L3331",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true
+        },
+        {
+          "index": 294,
+          "paragraphId": "yuqia-ji:L3333-L3333",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true
+        },
+        {
+          "index": 295,
+          "paragraphId": "yuqia-ji:L3335-L3335",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true
+        },
+        {
+          "index": 296,
+          "paragraphId": "yuqia-ji:L3337-L3337",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true
+        },
+        {
+          "index": 297,
+          "paragraphId": "yuqia-ji:L3339-L3339",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true
+        },
+        {
+          "index": 298,
+          "paragraphId": "yuqia-ji:L3341-L3341",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true
+        },
+        {
+          "index": 299,
+          "paragraphId": "yuqia-ji:L3343-L3343",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true
+        },
+        {
+          "index": 300,
+          "paragraphId": "yuqia-ji:L3345-L3345",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true
+        },
+        {
+          "index": 301,
+          "paragraphId": "yuqia-ji:L3349-L3349",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true
+        },
+        {
+          "index": 302,
+          "paragraphId": "yuqia-ji:L3351-L3351",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true
+        },
+        {
+          "index": 303,
+          "paragraphId": "yuqia-ji:L3353-L3353",
+          "verdict": "ACCEPT",
+          "review": "draft",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true
+        },
+        {
+          "index": 304,
+          "paragraphId": "yuqia-ji:L3355-L3355",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true
+        },
+        {
+          "index": 305,
+          "paragraphId": "yuqia-ji:L3359-L3359",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true
+        },
+        {
+          "index": 306,
+          "paragraphId": "yuqia-ji:L3361-L3361",
+          "verdict": "ACCEPT",
+          "review": "draft",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true
+        },
+        {
+          "index": 307,
+          "paragraphId": "yuqia-ji:L3363-L3363",
+          "verdict": "ACCEPT",
+          "review": "draft",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true
+        },
+        {
+          "index": 308,
+          "paragraphId": "yuqia-ji:L3367-L3367",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true
+        },
+        {
+          "index": 309,
+          "paragraphId": "yuqia-ji:L3369-L3369",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true
+        },
+        {
+          "index": 310,
+          "paragraphId": "yuqia-ji:L3371-L3371",
+          "verdict": "ACCEPT",
+          "review": "draft",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true
+        },
+        {
+          "index": 311,
+          "paragraphId": "yuqia-ji:L3373-L3373",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true
+        },
+        {
+          "index": 312,
+          "paragraphId": "yuqia-ji:L3377-L3377",
+          "verdict": "ACCEPT",
+          "review": "draft",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true
+        },
+        {
+          "index": 313,
+          "paragraphId": "yuqia-ji:L3379-L3379",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true
+        },
+        {
+          "index": 314,
+          "paragraphId": "yuqia-ji:L3381-L3381",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true
+        },
+        {
+          "index": 315,
+          "paragraphId": "yuqia-ji:L3383-L3383",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true
+        },
+        {
+          "index": 316,
+          "paragraphId": "yuqia-ji:L3387-L3387",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true
+        },
+        {
+          "index": 317,
+          "paragraphId": "yuqia-ji:L3389-L3389",
+          "verdict": "ACCEPT",
+          "review": "draft",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true
+        },
+        {
+          "index": 318,
+          "paragraphId": "yuqia-ji:L3391-L3391",
+          "verdict": "ACCEPT",
+          "review": "draft",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true
+        },
+        {
+          "index": 319,
+          "paragraphId": "yuqia-ji:L3393-L3393",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true
+        },
+        {
+          "index": 320,
+          "paragraphId": "yuqia-ji:L3395-L3395",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true
+        },
+        {
+          "index": 321,
+          "paragraphId": "yuqia-ji:L3397-L3397",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true
+        },
+        {
+          "index": 322,
+          "paragraphId": "yuqia-ji:L3401-L3401",
+          "verdict": "ACCEPT",
+          "review": "draft",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true
+        },
+        {
+          "index": 323,
+          "paragraphId": "yuqia-ji:L3403-L3403",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true
+        },
+        {
+          "index": 324,
+          "paragraphId": "yuqia-ji:L3407-L3414",
+          "verdict": "ACCEPT",
+          "review": "draft",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true
+        },
+        {
+          "index": 325,
+          "paragraphId": "yuqia-ji:L3418-L3418",
+          "verdict": "ACCEPT",
+          "review": "draft",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true
+        },
+        {
+          "index": 326,
+          "paragraphId": "yuqia-ji:L3422-L3422",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true
+        },
+        {
+          "index": 327,
+          "paragraphId": "yuqia-ji:L3426-L3426",
+          "verdict": "ACCEPT",
+          "review": "draft",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true
+        },
+        {
+          "index": 328,
+          "paragraphId": "yuqia-ji:L3428-L3428",
+          "verdict": "ACCEPT",
+          "review": "draft",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true
+        },
+        {
+          "index": 329,
+          "paragraphId": "yuqia-ji:L3432-L3439",
+          "verdict": "ACCEPT",
+          "review": "draft",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true
+        },
+        {
+          "index": 330,
+          "paragraphId": "yuqia-ji:L3443-L3446",
+          "verdict": "ACCEPT",
+          "review": "draft",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true
+        },
+        {
+          "index": 331,
+          "paragraphId": "yuqia-ji:L3448-L3448",
+          "verdict": "ACCEPT",
+          "review": "draft",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true
+        },
+        {
+          "index": 332,
+          "paragraphId": "yuqia-ji:L3450-L3450",
+          "verdict": "ACCEPT",
+          "review": "draft",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true
+        },
+        {
+          "index": 333,
+          "paragraphId": "yuqia-ji:L3452-L3452",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true
+        },
+        {
+          "index": 334,
+          "paragraphId": "yuqia-ji:L3454-L3454",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true
+        },
+        {
+          "index": 335,
+          "paragraphId": "yuqia-ji:L3458-L3465",
+          "verdict": "ACCEPT",
+          "review": "draft",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true
+        },
+        {
+          "index": 336,
+          "paragraphId": "yuqia-ji:L3467-L3467",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true
+        },
+        {
+          "index": 337,
+          "paragraphId": "yuqia-ji:L3469-L3469",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true
+        },
+        {
+          "index": 338,
+          "paragraphId": "yuqia-ji:L3473-L3473",
+          "verdict": "ACCEPT",
+          "review": "draft",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true
+        },
+        {
+          "index": 339,
+          "paragraphId": "yuqia-ji:L3475-L3475",
+          "verdict": "ACCEPT",
+          "review": "draft",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true
+        },
+        {
+          "index": 340,
+          "paragraphId": "yuqia-ji:L3477-L3477",
+          "verdict": "ACCEPT",
+          "review": "draft",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true
+        },
+        {
+          "index": 341,
+          "paragraphId": "yuqia-ji:L3479-L3479",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true
+        },
+        {
+          "index": 342,
+          "paragraphId": "yuqia-ji:L3483-L3483",
+          "verdict": "ACCEPT",
+          "review": "draft",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true
+        },
+        {
+          "index": 343,
+          "paragraphId": "yuqia-ji:L3485-L3485",
+          "verdict": "ACCEPT",
+          "review": "draft",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true
+        },
+        {
+          "index": 344,
+          "paragraphId": "yuqia-ji:L3487-L3487",
+          "verdict": "ACCEPT",
+          "review": "draft",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true
+        },
+        {
+          "index": 345,
+          "paragraphId": "yuqia-ji:L3489-L3489",
+          "verdict": "ACCEPT",
+          "review": "draft",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true
+        },
+        {
+          "index": 346,
+          "paragraphId": "yuqia-ji:L3491-L3491",
+          "verdict": "ACCEPT",
+          "review": "draft",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true
+        },
+        {
+          "index": 347,
+          "paragraphId": "yuqia-ji:L3493-L3493",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true
+        },
+        {
+          "index": 348,
+          "paragraphId": "yuqia-ji:L3497-L3497",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true
+        },
+        {
+          "index": 349,
+          "paragraphId": "yuqia-ji:L3499-L3499",
+          "verdict": "ACCEPT",
+          "review": "draft",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true
+        }
+      ],
+      "finalDeltaReview": {
+        "verdict": "ACCEPT",
+        "fullOriginalReviewPreserved": true,
+        "counts": {
+          "source-reviewed": 228,
+          "draft": 122
+        },
+        "checkedLines": [
+          2730,
+          2732,
+          2744,
+          2880,
+          2882,
+          2884,
+          3096,
+          3479
+        ],
+        "conclusion": "3096午保留地支方位；2730/2732与2744及3479内证抵牾已列具体疑点并draft；2880/2882表与2884取法分开且draft，前六/后六年支用语准确，不混半年。原字未改。"
+      }
+    },
+    {
+      "verdict": "ACCEPT",
+      "count": 350,
+      "candidateSha256": "d24a70163d1646211c821abf743e2007d0ae25fe87fb95b20f6c77338d5607d3",
+      "scope": "350完整原段与连续上下文全部对读；核事项切换、表列列头、方位及年日时条件、真实疑字保留。",
+      "sourceMismatchIds": [],
+      "reviewCounts": {
+        "source-reviewed": 232,
+        "draft": 118
+      },
+      "issues": [
+        {
+          "index": 214,
+          "paragraphId": "yuqia-ji:L3096-L3096",
+          "sourceText": "甲羊戊庚午，乙猴己鼠求，丙雞丁豬位，壬兔癸蛇游，六辛逢虎上，陽貴日中儔。",
+          "requiredCorrection": "午保持日支名误将阳贵方向表的支位当日支；应改午保持地支方位名/午位。此处按所用日干查贵人方向，不是另给午日条件。其他文字、原午不改牛或丑。"
+        }
+      ],
+      "reviewNotes": [
+        "逐月月德申字与后歌甲不同、男禁婚表重复生肖等均如实转述且明确不统一；source-reviewed仅文字释读，不等于替其内容正确性背书。",
+        "350末土王用事续条应保留关联，不代表母仓表已无缺。"
+      ],
+      "priorVerdict": "REJECT",
+      "finalCandidateSha256": "9a27a4d4e62c997c40f0b0fb4ae66ca57cf2c534c9a90900545d78d80f90bf1c",
+      "deltaReview": "所有B阻断已按原段逐项修正，最终候选delta复验通过；不代表影印校勘。",
+      "finalReviewCounts": {
+        "source-reviewed": 228,
+        "draft": 122
+      },
+      "additionalDelta": "L2730/L2732/L2880/L2882按内证冲突降draft、保留原文，接受。",
+      "lastDeltaAccepted": true
+    }
+  ]
+}
