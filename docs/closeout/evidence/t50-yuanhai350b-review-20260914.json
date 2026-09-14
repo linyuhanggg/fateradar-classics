@@ -1,0 +1,164 @@
+{
+  "batch": "t50-yuanhai350b",
+  "scope": "350 new acquired-source entries for yuanhai shidian NGJ892411999032112149610 after t47; not edition completeness or facsimile collation",
+  "candidateSha256": "20fde812e4690c91bdc3af4d63a81fb1f4270128381d4578b5bc61b0c0b873cf",
+  "evidenceSha256": "90d05648a41651e37149a5822df2d03f11393bd6d711ff55ccddcb77abd98975",
+  "sourceFileSha256": "94cbf77c034c2be8944cd5f54476fb3f028791e0ad7ab0c4f513bf32d34f0514",
+  "rootReview": "All 350 full source paragraphs and vernacular read by author/A; independent B ACCEPT on the same final hashes; no further delta.",
+  "reviewCounts": {
+    "source-reviewed": 183,
+    "draft": 167
+  },
+  "judges": [
+    {
+      "judge": "A",
+      "verdict": "ACCEPT",
+      "candidateSha256": "20fde812e4690c91bdc3af4d63a81fb1f4270128381d4578b5bc61b0c0b873cf",
+      "completeParagraphsRead": 350,
+      "sourceCharactersRead": 16898,
+      "scope": "全原段、全部释义及相关上下文亲读；仅电子语义释读审核。",
+      "sourceChecks": {
+        "allLineRangesParagraphHashesIdsExact": true,
+        "allRelatedContextExact": true
+      },
+      "validator": {
+        "entries": 350,
+        "errors": 0
+      },
+      "specificChecks": [
+        "三元干支支藏与四柱年月日时定义未混用。",
+        "飞天、刑合、遥合等坏列未凭公式补全；格局一位与无实官条件有保留。",
+        "财多身弱与身旺能任、原局有制与再制过度、官杀混杂与合去救应分别释读。",
+        "各电子断段同句上下承接已核，外侧L957标题和L2139–2142丁壬注亦读。"
+      ],
+      "resolvedFindings": [
+        {
+          "index": 9,
+          "paragraphId": "yuanhai-ziping:shidian-NGJ892411999032112149610:P7600374083935387698",
+          "line": 978,
+          "sourceText": "春分乙未正相當清明乙木十日管後來八日癸水洋",
+          "issue": "春分乙未译成乙木，与不改木字的note冲突；保留原乙未与待核。"
+        },
+        {
+          "index": 21,
+          "paragraphId": "yuanhai-ziping:shidian-NGJ892411999032112149610:P7600374083935600690",
+          "line": 1011,
+          "sourceText": "亥宫七戊五日甲餘皆壬旺君須記須知得一擬三分",
+          "issue": "得一拟三分没有明确一日单位；保留原词说明单位待核，并改拟draft。"
+        },
+        {
+          "index": 35,
+          "paragraphId": "yuanhai-ziping:shidian-NGJ892411999032112149610:P7600374084141121563",
+          "line": 1045,
+          "sourceText": "但觀中氣所在閏前之月中氣在晦閏後之月中氣在朔無口氣\n則謂之閏月",
+          "issue": "无口气确定译无中气；应明确疑字与推读未定，不把校字作原定义。"
+        },
+        {
+          "index": 74,
+          "paragraphId": "yuanhai-ziping:shidian-NGJ892411999032112149610:P7600374084279468041",
+          "line": 1163,
+          "sourceText": "强金得水方挫其鋒强水得木方泄其勢强木得火方化其頑强\n火得士方止其熖强土得金方制其害",
+          "issue": "强火得士径译得土；应保留原字并注明土为待核读法。"
+        },
+        {
+          "index": 83,
+          "paragraphId": "yuanhai-ziping:shidian-NGJ892411999032112149610:P7634990373135564810",
+          "line": 1192,
+          "sourceText": "也用官星又嫌冲破謂之無情",
+          "issue": "原冲破添刑；删去刑字。"
+        },
+        {
+          "index": 99,
+          "paragraphId": "yuanhai-ziping:shidian-NGJ892411999032112149610:P7634990373135745034",
+          "line": 1224,
+          "sourceText": "不足貪合忘殺爲巳福",
+          "issue": "巳福径译己福；保留原巳福与疑义。"
+        },
+        {
+          "index": 214,
+          "paragraphId": "yuanhai-ziping:shidian-NGJ892411999032112149610:P7600374088393932846",
+          "line": 1615,
+          "sourceText": "貴衆合多定是師妮娼婢",
+          "issue": "贵众释贵人多，与下一注贵者官杀也不合；改官杀众多并关联下一注。"
+        },
+        {
+          "index": 274,
+          "paragraphId": "yuanhai-ziping:shidian-NGJ892411999032112149610:P7600374088591409198",
+          "line": 1821,
+          "sourceText": "登科甲第，官星臨無破之官，",
+          "issue": "无破之官径译无破之宫；保留原官，宫只能作待核读法。"
+        },
+        {
+          "index": 308,
+          "paragraphId": "yuanhai-ziping:shidian-NGJ892411999032112149610:P7600374090305863690",
+          "line": 1949,
+          "sourceText": "宮刑不犯印綬，天德同宮，",
+          "issue": "宫刑径译官刑；原题保留宫刑，可明确下一注作官刑但不合并字。"
+        },
+        {
+          "index": 348,
+          "paragraphId": "yuanhai-ziping:shidian-NGJ892411999032112149610:P7600374093698875443",
+          "line": 2135,
+          "sourceText": "更帶生䏕，爲人忠厚正直之輩。",
+          "issue": "生䏕径译生旺；保留生䏕，旺只能作待核读法。"
+        },
+        {
+          "index": 336,
+          "paragraphId": "yuanhai-ziping:shidian-NGJ892411999032112149610:P7600374090307059722",
+          "line": 2078,
+          "issue": "新增335若冇丙留疑后，本段仍确定译柱有丙丁巳午火并拟SR；需与上段同步保留冇的条件疑义，拟draft。"
+        }
+      ],
+      "deltaReview": "336已保留前段若冇丙条件疑义并拟draft，最终183拟SR167draft；全部delta接受。",
+      "findings": [],
+      "evidenceSha256": "90d05648a41651e37149a5822df2d03f11393bd6d711ff55ccddcb77abd98975",
+      "proposedReviewCounts": {
+        "source-reviewed": 183,
+        "draft": 167
+      }
+    },
+    {
+      "judge": "B",
+      "verdict": "ACCEPT",
+      "candidateSha256": "20fde812e4690c91bdc3af4d63a81fb1f4270128381d4578b5bc61b0c0b873cf",
+      "evidenceSha256": "90d05648a41651e37149a5822df2d03f11393bd6d711ff55ccddcb77abd98975",
+      "completeParagraphsRead": 350,
+      "sourceCharactersRead": 16898,
+      "sourceFileHashMatches": true,
+      "sourceTextMatches": 350,
+      "validatorErrors": 0,
+      "scope": "全350电子原文与释义独立对读；不是影印校勘或现实效验",
+      "projectMutated": false,
+      "proposedReviewCounts": {
+        "source-reviewed": 183,
+        "draft": 167
+      },
+      "acceptedSpecificChecks": [
+        "shasum 复核 candidates=20fde812e4690c91bdc3af4d63a81fb1f4270128381d4578b5bc61b0c0b873cf、evidence=90d05648a41651e37149a5822df2d03f11393bd6d711ff55ccddcb77abd98975，与任务书及审稿包一致。",
+        "350条 paragraphId、起止行、sourceText 与 evidence 及 sources/normalized/.../text.md 逐段一致；sourceFileSha256=94cbf77c034c2be8944cd5f54476fb3f028791e0ad7ab0c4f513bf32d34f0514。",
+        "candidates.review 全为 draft；拟评 183 source-reviewed / 167 draft，未把 draft 抬成 SR。",
+        "临时文件跑 validate-annotations.py：实际稿与拟评稿均为 350 entries、0 errors。",
+        "A 已改 11 处仍成立：乙未、得一拟三分、无口气、强火得士、冲破不添刑、巳福、贵众依夹注官杀、无破之官、宫刑、生䏕、336 承冇丙均保留疑字并按拟评 draft/SR。",
+        "短残段与表项未凭口诀补全司令天数、藏干比例、飞天/遥合/井栏名单；条件、例外、否定（未必、太过、无救、勿作刃等）未删。",
+        "吉凶、格局、命例只按原书说法审核，未评算法对错或现实效验。"
+      ],
+      "findings": [],
+      "resolvedDeltasFromA": [
+        "9 春分乙未：白话保留乙未待核，不改乙木；拟 draft。仍成立。",
+        "21 得一拟三分：未添一日折三分；拟 draft。仍成立。",
+        "35 无口气：不改无中气；拟 draft。仍成立。",
+        "74 强火得士：士字待校，不定作土；拟 draft。仍成立。",
+        "83 冲破谓之无情：未添刑；拟 SR。仍成立。",
+        "99 巳福：不改己福；拟 draft。仍成立。",
+        "214 贵众：依夹注贵者官杀，不释贵人多；拟 SR。仍成立。",
+        "274 无破之官：不改宫；拟 draft。仍成立。",
+        "308 宫刑：不改官刑，与下段官刑分读；拟 draft。仍成立。",
+        "348 生䏕：不改生旺；拟 draft。仍成立。",
+        "336 丁巳午火：不与前段若冇丙默并为有丙丁巳午便有救；拟 draft。仍成立。"
+      ],
+      "notes": "独立对读350条原文、白话、notes、relatedContext。电子语义可释者维持拟 SR，疑字与坏列维持拟 draft。无必须改的误释。"
+    }
+  ],
+  "note": "Full per-paragraph evidence remains in local handoff yuanhai350b-evidence.json at evidenceSha256; this file binds two-judge ACCEPT without duplicating 350 source dumps.",
+  "notBookCompletion": true
+}
