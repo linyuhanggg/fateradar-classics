@@ -1,0 +1,21 @@
+{
+  "batch": "t89-huangji-fulltext-80n",
+  "scope": "Fourteenth 80 unannotated fulltext.md paragraphs L23025-L23344 Western Zhou Mu to Li; not SK1573, not algorithm",
+  "candidateSha256": "38b1bf9d15e8779dc7b273adaf2973004e3058e2d6569f08164d5cb0851b7194",
+  "evidenceSha256": "8a9b6a4f92550906cbbe4ca74210f49ae41a3b566d158493b5d6eb779f6a7233",
+  "rootReview": "Author draft; independent B NEEDS_REVISION F1 then B2 ACCEPT. 74 source-reviewed chronicle labels / 6 draft residual glyphs.",
+  "reviewCounts": {
+    "source-reviewed": 74,
+    "draft": 6
+  },
+  "judges": [
+    {
+      "judge": "B2",
+      "verdict": "ACCEPT",
+      "candidateSha256": "38b1bf9d15e8779dc7b273adaf2973004e3058e2d6569f08164d5cb0851b7194",
+      "completeParagraphsRead": 80,
+      "findings": []
+    }
+  ],
+  "notBookCompletion": true
+}
