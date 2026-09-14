@@ -1,0 +1,28 @@
+{
+  "batch": "t62-zengshan-xyxzsby-150",
+  "scope": "First 150 unannotated shidian XYXZSBY paragraphs; website juan != print; not liuyao algorithm coverage",
+  "candidateSha256": "7bdd8bc8e0bbcd7ebc111e45a3f66b5258452f982d7fc2ccd10929d3f5c925da",
+  "evidenceSha256": "41b3ff07fcd422c5ce9314877f310ab075d0314455ac8d24fdc1d5d73ac2b648",
+  "previousCandidateSha256": "900dd47a89225cd930ccee92bfec21a1b6bfd86a3b8c99ead6366c3ef538c50e",
+  "rootReview": "Author draft; independent B NEEDS_REVISION on cross-paragraph 妻妾财物 and 増刪 template; B2 ACCEPT. 69 source-reviewed / 81 draft.",
+  "reviewCounts": {
+    "source-reviewed": 69,
+    "draft": 81
+  },
+  "judges": [
+    {
+      "judge": "B",
+      "verdict": "NEEDS_REVISION",
+      "findings": ["F1", "F2"]
+    },
+    {
+      "judge": "B2",
+      "verdict": "ACCEPT",
+      "candidateSha256": "7bdd8bc8e0bbcd7ebc111e45a3f66b5258452f982d7fc2ccd10929d3f5c925da",
+      "completeParagraphsRead": 150,
+      "previousFindingsClosed": ["F1", "F2"],
+      "findings": []
+    }
+  ],
+  "notBookCompletion": true
+}
