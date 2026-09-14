@@ -1,0 +1,3288 @@
+{
+  "scope": "沈氏新增146条、玉匣L1421–1801新增160条；不代表全书或全库完成",
+  "reviewType": "电子原文释读独立双审，不是人工校勘或效验",
+  "counts": {
+    "newAnnotations": 306,
+    "sourceReviewed": 250,
+    "draft": 56
+  },
+  "reviews": [
+    {
+      "role": "Judge A",
+      "verdict": "ACCEPT",
+      "scope": "/Users/yuhanglin/fateradar-goal-20260912/classics/references/annotations/fengshui/shenshi-xuankong-xue.json",
+      "annotationSha256": "3c5629df1d9a6f37a20caf4b4db1d3fef5652ddef40b9c8f036027814ab4cd64",
+      "coverage": {
+        "entries": 146,
+        "newEntries": 100,
+        "priorEntries": 46,
+        "sourceReviewed": 145,
+        "draft": 1,
+        "verifiedTrue": 0,
+        "method": "全146条逐条核读完整原段、现行释义及相邻上下文；非抽样。证据146段与当前源文件逐字比对一致。"
+      },
+      "validation": "python3 tools/validate-annotations.py: 54 books, 63478 entries, 0 errors",
+      "requiredCorrections": [],
+      "nonBlockingSuggestions": [
+        {
+          "paragraphIds": [
+            "shenshi-xuankong-xue:L0878-L0884",
+            "shenshi-xuankong-xue:L1014-L1014"
+          ],
+          "suggestion": "泛称“作者”的连续注语可进一步明确称“则先”；现文没有误署沈公，非阻断。"
+        }
+      ],
+      "findings": [
+        "L1093论占凶留疑并保持draft；未猜改吉凶。",
+        "古注理论内容保留祖绵、则先、志伊等身份及经文/注释边界，未因注者身份排除正文。",
+        "L1752元运配宫完整，新增数目、方位、顺逆及三元边界未发现误释。",
+        "source-reviewed明确仅指电子原段语义核读，未声称影印校勘或术数效验获证。"
+      ],
+      "entries": [
+        {
+          "paragraphId": "shenshi-xuankong-xue:L0614-L0614",
+          "judgment": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndContextRead": true
+        },
+        {
+          "paragraphId": "shenshi-xuankong-xue:L0616-L0624",
+          "judgment": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndContextRead": true
+        },
+        {
+          "paragraphId": "shenshi-xuankong-xue:L0650-L0657",
+          "judgment": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndContextRead": true
+        },
+        {
+          "paragraphId": "shenshi-xuankong-xue:L0659-L0659",
+          "judgment": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndContextRead": true
+        },
+        {
+          "paragraphId": "shenshi-xuankong-xue:L0661-L0661",
+          "judgment": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndContextRead": true
+        },
+        {
+          "paragraphId": "shenshi-xuankong-xue:L0663-L0663",
+          "judgment": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndContextRead": true
+        },
+        {
+          "paragraphId": "shenshi-xuankong-xue:L0665-L0665",
+          "judgment": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndContextRead": true
+        },
+        {
+          "paragraphId": "shenshi-xuankong-xue:L0667-L0667",
+          "judgment": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndContextRead": true
+        },
+        {
+          "paragraphId": "shenshi-xuankong-xue:L0669-L0669",
+          "judgment": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndContextRead": true
+        },
+        {
+          "paragraphId": "shenshi-xuankong-xue:L0671-L0671",
+          "judgment": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndContextRead": true
+        },
+        {
+          "paragraphId": "shenshi-xuankong-xue:L0673-L0673",
+          "judgment": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndContextRead": true
+        },
+        {
+          "paragraphId": "shenshi-xuankong-xue:L0675-L0675",
+          "judgment": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndContextRead": true
+        },
+        {
+          "paragraphId": "shenshi-xuankong-xue:L0677-L0677",
+          "judgment": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndContextRead": true
+        },
+        {
+          "paragraphId": "shenshi-xuankong-xue:L0679-L0679",
+          "judgment": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndContextRead": true
+        },
+        {
+          "paragraphId": "shenshi-xuankong-xue:L0681-L0681",
+          "judgment": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndContextRead": true
+        },
+        {
+          "paragraphId": "shenshi-xuankong-xue:L0683-L0683",
+          "judgment": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndContextRead": true
+        },
+        {
+          "paragraphId": "shenshi-xuankong-xue:L0685-L0685",
+          "judgment": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndContextRead": true
+        },
+        {
+          "paragraphId": "shenshi-xuankong-xue:L0687-L0687",
+          "judgment": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndContextRead": true
+        },
+        {
+          "paragraphId": "shenshi-xuankong-xue:L0689-L0689",
+          "judgment": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndContextRead": true
+        },
+        {
+          "paragraphId": "shenshi-xuankong-xue:L0691-L0691",
+          "judgment": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndContextRead": true
+        },
+        {
+          "paragraphId": "shenshi-xuankong-xue:L0693-L0693",
+          "judgment": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndContextRead": true
+        },
+        {
+          "paragraphId": "shenshi-xuankong-xue:L0695-L0695",
+          "judgment": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndContextRead": true
+        },
+        {
+          "paragraphId": "shenshi-xuankong-xue:L0697-L0697",
+          "judgment": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndContextRead": true
+        },
+        {
+          "paragraphId": "shenshi-xuankong-xue:L0699-L0699",
+          "judgment": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndContextRead": true
+        },
+        {
+          "paragraphId": "shenshi-xuankong-xue:L0701-L0701",
+          "judgment": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndContextRead": true
+        },
+        {
+          "paragraphId": "shenshi-xuankong-xue:L0703-L0703",
+          "judgment": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndContextRead": true
+        },
+        {
+          "paragraphId": "shenshi-xuankong-xue:L0705-L0705",
+          "judgment": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndContextRead": true
+        },
+        {
+          "paragraphId": "shenshi-xuankong-xue:L0707-L0707",
+          "judgment": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndContextRead": true
+        },
+        {
+          "paragraphId": "shenshi-xuankong-xue:L0709-L0709",
+          "judgment": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndContextRead": true
+        },
+        {
+          "paragraphId": "shenshi-xuankong-xue:L0711-L0711",
+          "judgment": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndContextRead": true
+        },
+        {
+          "paragraphId": "shenshi-xuankong-xue:L0713-L0713",
+          "judgment": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndContextRead": true
+        },
+        {
+          "paragraphId": "shenshi-xuankong-xue:L0729-L0729",
+          "judgment": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndContextRead": true
+        },
+        {
+          "paragraphId": "shenshi-xuankong-xue:L0731-L0731",
+          "judgment": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndContextRead": true
+        },
+        {
+          "paragraphId": "shenshi-xuankong-xue:L0733-L0733",
+          "judgment": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndContextRead": true
+        },
+        {
+          "paragraphId": "shenshi-xuankong-xue:L0735-L0735",
+          "judgment": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndContextRead": true
+        },
+        {
+          "paragraphId": "shenshi-xuankong-xue:L0737-L0737",
+          "judgment": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndContextRead": true
+        },
+        {
+          "paragraphId": "shenshi-xuankong-xue:L0739-L0739",
+          "judgment": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndContextRead": true
+        },
+        {
+          "paragraphId": "shenshi-xuankong-xue:L0741-L0741",
+          "judgment": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndContextRead": true
+        },
+        {
+          "paragraphId": "shenshi-xuankong-xue:L0743-L0743",
+          "judgment": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndContextRead": true
+        },
+        {
+          "paragraphId": "shenshi-xuankong-xue:L0745-L0745",
+          "judgment": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndContextRead": true
+        },
+        {
+          "paragraphId": "shenshi-xuankong-xue:L0747-L0747",
+          "judgment": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndContextRead": true
+        },
+        {
+          "paragraphId": "shenshi-xuankong-xue:L0749-L0749",
+          "judgment": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndContextRead": true
+        },
+        {
+          "paragraphId": "shenshi-xuankong-xue:L0751-L0751",
+          "judgment": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndContextRead": true
+        },
+        {
+          "paragraphId": "shenshi-xuankong-xue:L0753-L0762",
+          "judgment": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndContextRead": true
+        },
+        {
+          "paragraphId": "shenshi-xuankong-xue:L0779-L0779",
+          "judgment": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndContextRead": true
+        },
+        {
+          "paragraphId": "shenshi-xuankong-xue:L0781-L0781",
+          "judgment": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndContextRead": true
+        },
+        {
+          "paragraphId": "shenshi-xuankong-xue:L0833-L0833",
+          "judgment": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndContextRead": true
+        },
+        {
+          "paragraphId": "shenshi-xuankong-xue:L0835-L0835",
+          "judgment": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndContextRead": true
+        },
+        {
+          "paragraphId": "shenshi-xuankong-xue:L0837-L0837",
+          "judgment": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndContextRead": true
+        },
+        {
+          "paragraphId": "shenshi-xuankong-xue:L0839-L0839",
+          "judgment": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndContextRead": true
+        },
+        {
+          "paragraphId": "shenshi-xuankong-xue:L0845-L0845",
+          "judgment": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndContextRead": true
+        },
+        {
+          "paragraphId": "shenshi-xuankong-xue:L0874-L0874",
+          "judgment": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndContextRead": true
+        },
+        {
+          "paragraphId": "shenshi-xuankong-xue:L0876-L0876",
+          "judgment": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndContextRead": true
+        },
+        {
+          "paragraphId": "shenshi-xuankong-xue:L0878-L0884",
+          "judgment": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndContextRead": true
+        },
+        {
+          "paragraphId": "shenshi-xuankong-xue:L0909-L0909",
+          "judgment": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndContextRead": true
+        },
+        {
+          "paragraphId": "shenshi-xuankong-xue:L0911-L0911",
+          "judgment": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndContextRead": true
+        },
+        {
+          "paragraphId": "shenshi-xuankong-xue:L0913-L0913",
+          "judgment": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndContextRead": true
+        },
+        {
+          "paragraphId": "shenshi-xuankong-xue:L0915-L0915",
+          "judgment": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndContextRead": true
+        },
+        {
+          "paragraphId": "shenshi-xuankong-xue:L0917-L0917",
+          "judgment": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndContextRead": true
+        },
+        {
+          "paragraphId": "shenshi-xuankong-xue:L0919-L0932",
+          "judgment": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndContextRead": true
+        },
+        {
+          "paragraphId": "shenshi-xuankong-xue:L0945-L0945",
+          "judgment": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndContextRead": true
+        },
+        {
+          "paragraphId": "shenshi-xuankong-xue:L0953-L0953",
+          "judgment": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndContextRead": true
+        },
+        {
+          "paragraphId": "shenshi-xuankong-xue:L0955-L0955",
+          "judgment": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndContextRead": true
+        },
+        {
+          "paragraphId": "shenshi-xuankong-xue:L0957-L0963",
+          "judgment": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndContextRead": true
+        },
+        {
+          "paragraphId": "shenshi-xuankong-xue:L0969-L0969",
+          "judgment": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndContextRead": true
+        },
+        {
+          "paragraphId": "shenshi-xuankong-xue:L0971-L0971",
+          "judgment": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndContextRead": true
+        },
+        {
+          "paragraphId": "shenshi-xuankong-xue:L0973-L0973",
+          "judgment": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndContextRead": true
+        },
+        {
+          "paragraphId": "shenshi-xuankong-xue:L0975-L0975",
+          "judgment": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndContextRead": true
+        },
+        {
+          "paragraphId": "shenshi-xuankong-xue:L0977-L0977",
+          "judgment": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndContextRead": true
+        },
+        {
+          "paragraphId": "shenshi-xuankong-xue:L0979-L0979",
+          "judgment": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndContextRead": true
+        },
+        {
+          "paragraphId": "shenshi-xuankong-xue:L0981-L0981",
+          "judgment": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndContextRead": true
+        },
+        {
+          "paragraphId": "shenshi-xuankong-xue:L0983-L0983",
+          "judgment": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndContextRead": true
+        },
+        {
+          "paragraphId": "shenshi-xuankong-xue:L0985-L0985",
+          "judgment": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndContextRead": true
+        },
+        {
+          "paragraphId": "shenshi-xuankong-xue:L0987-L0987",
+          "judgment": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndContextRead": true
+        },
+        {
+          "paragraphId": "shenshi-xuankong-xue:L0989-L0996",
+          "judgment": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndContextRead": true
+        },
+        {
+          "paragraphId": "shenshi-xuankong-xue:L0998-L1010",
+          "judgment": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndContextRead": true
+        },
+        {
+          "paragraphId": "shenshi-xuankong-xue:L1012-L1012",
+          "judgment": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndContextRead": true
+        },
+        {
+          "paragraphId": "shenshi-xuankong-xue:L1014-L1014",
+          "judgment": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndContextRead": true
+        },
+        {
+          "paragraphId": "shenshi-xuankong-xue:L1020-L1020",
+          "judgment": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndContextRead": true
+        },
+        {
+          "paragraphId": "shenshi-xuankong-xue:L1024-L1024",
+          "judgment": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndContextRead": true
+        },
+        {
+          "paragraphId": "shenshi-xuankong-xue:L1032-L1032",
+          "judgment": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndContextRead": true
+        },
+        {
+          "paragraphId": "shenshi-xuankong-xue:L1034-L1034",
+          "judgment": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndContextRead": true
+        },
+        {
+          "paragraphId": "shenshi-xuankong-xue:L1036-L1045",
+          "judgment": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndContextRead": true
+        },
+        {
+          "paragraphId": "shenshi-xuankong-xue:L1047-L1047",
+          "judgment": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndContextRead": true
+        },
+        {
+          "paragraphId": "shenshi-xuankong-xue:L1049-L1049",
+          "judgment": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndContextRead": true
+        },
+        {
+          "paragraphId": "shenshi-xuankong-xue:L1051-L1051",
+          "judgment": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndContextRead": true
+        },
+        {
+          "paragraphId": "shenshi-xuankong-xue:L1053-L1059",
+          "judgment": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndContextRead": true
+        },
+        {
+          "paragraphId": "shenshi-xuankong-xue:L1061-L1061",
+          "judgment": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndContextRead": true
+        },
+        {
+          "paragraphId": "shenshi-xuankong-xue:L1063-L1063",
+          "judgment": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndContextRead": true
+        },
+        {
+          "paragraphId": "shenshi-xuankong-xue:L1065-L1065",
+          "judgment": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndContextRead": true
+        },
+        {
+          "paragraphId": "shenshi-xuankong-xue:L1067-L1067",
+          "judgment": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndContextRead": true
+        },
+        {
+          "paragraphId": "shenshi-xuankong-xue:L1069-L1069",
+          "judgment": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndContextRead": true
+        },
+        {
+          "paragraphId": "shenshi-xuankong-xue:L1071-L1071",
+          "judgment": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndContextRead": true
+        },
+        {
+          "paragraphId": "shenshi-xuankong-xue:L1077-L1077",
+          "judgment": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndContextRead": true
+        },
+        {
+          "paragraphId": "shenshi-xuankong-xue:L1079-L1079",
+          "judgment": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndContextRead": true
+        },
+        {
+          "paragraphId": "shenshi-xuankong-xue:L1085-L1085",
+          "judgment": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndContextRead": true
+        },
+        {
+          "paragraphId": "shenshi-xuankong-xue:L1087-L1087",
+          "judgment": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndContextRead": true
+        },
+        {
+          "paragraphId": "shenshi-xuankong-xue:L1089-L1089",
+          "judgment": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndContextRead": true
+        },
+        {
+          "paragraphId": "shenshi-xuankong-xue:L1091-L1091",
+          "judgment": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndContextRead": true
+        },
+        {
+          "paragraphId": "shenshi-xuankong-xue:L1093-L1093",
+          "judgment": "ACCEPT",
+          "review": "draft",
+          "fullSourceAndContextRead": true
+        },
+        {
+          "paragraphId": "shenshi-xuankong-xue:L1095-L1095",
+          "judgment": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndContextRead": true
+        },
+        {
+          "paragraphId": "shenshi-xuankong-xue:L1097-L1103",
+          "judgment": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndContextRead": true
+        },
+        {
+          "paragraphId": "shenshi-xuankong-xue:L1105-L1105",
+          "judgment": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndContextRead": true
+        },
+        {
+          "paragraphId": "shenshi-xuankong-xue:L1139-L1139",
+          "judgment": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndContextRead": true
+        },
+        {
+          "paragraphId": "shenshi-xuankong-xue:L1141-L1141",
+          "judgment": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndContextRead": true
+        },
+        {
+          "paragraphId": "shenshi-xuankong-xue:L1155-L1155",
+          "judgment": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndContextRead": true
+        },
+        {
+          "paragraphId": "shenshi-xuankong-xue:L1157-L1157",
+          "judgment": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndContextRead": true
+        },
+        {
+          "paragraphId": "shenshi-xuankong-xue:L1159-L1159",
+          "judgment": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndContextRead": true
+        },
+        {
+          "paragraphId": "shenshi-xuankong-xue:L1167-L1167",
+          "judgment": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndContextRead": true
+        },
+        {
+          "paragraphId": "shenshi-xuankong-xue:L1169-L1169",
+          "judgment": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndContextRead": true
+        },
+        {
+          "paragraphId": "shenshi-xuankong-xue:L1171-L1171",
+          "judgment": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndContextRead": true
+        },
+        {
+          "paragraphId": "shenshi-xuankong-xue:L1173-L1173",
+          "judgment": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndContextRead": true
+        },
+        {
+          "paragraphId": "shenshi-xuankong-xue:L1185-L1185",
+          "judgment": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndContextRead": true
+        },
+        {
+          "paragraphId": "shenshi-xuankong-xue:L1187-L1187",
+          "judgment": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndContextRead": true
+        },
+        {
+          "paragraphId": "shenshi-xuankong-xue:L1189-L1189",
+          "judgment": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndContextRead": true
+        },
+        {
+          "paragraphId": "shenshi-xuankong-xue:L1193-L1193",
+          "judgment": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndContextRead": true
+        },
+        {
+          "paragraphId": "shenshi-xuankong-xue:L1195-L1195",
+          "judgment": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndContextRead": true
+        },
+        {
+          "paragraphId": "shenshi-xuankong-xue:L1197-L1204",
+          "judgment": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndContextRead": true
+        },
+        {
+          "paragraphId": "shenshi-xuankong-xue:L1237-L1237",
+          "judgment": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndContextRead": true
+        },
+        {
+          "paragraphId": "shenshi-xuankong-xue:L1247-L1247",
+          "judgment": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndContextRead": true
+        },
+        {
+          "paragraphId": "shenshi-xuankong-xue:L1265-L1265",
+          "judgment": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndContextRead": true
+        },
+        {
+          "paragraphId": "shenshi-xuankong-xue:L1353-L1353",
+          "judgment": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndContextRead": true
+        },
+        {
+          "paragraphId": "shenshi-xuankong-xue:L1357-L1357",
+          "judgment": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndContextRead": true
+        },
+        {
+          "paragraphId": "shenshi-xuankong-xue:L1361-L1361",
+          "judgment": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndContextRead": true
+        },
+        {
+          "paragraphId": "shenshi-xuankong-xue:L1363-L1363",
+          "judgment": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndContextRead": true
+        },
+        {
+          "paragraphId": "shenshi-xuankong-xue:L1367-L1367",
+          "judgment": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndContextRead": true
+        },
+        {
+          "paragraphId": "shenshi-xuankong-xue:L1371-L1371",
+          "judgment": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndContextRead": true
+        },
+        {
+          "paragraphId": "shenshi-xuankong-xue:L1381-L1381",
+          "judgment": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndContextRead": true
+        },
+        {
+          "paragraphId": "shenshi-xuankong-xue:L1385-L1385",
+          "judgment": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndContextRead": true
+        },
+        {
+          "paragraphId": "shenshi-xuankong-xue:L1387-L1387",
+          "judgment": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndContextRead": true
+        },
+        {
+          "paragraphId": "shenshi-xuankong-xue:L1391-L1396",
+          "judgment": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndContextRead": true
+        },
+        {
+          "paragraphId": "shenshi-xuankong-xue:L1421-L1430",
+          "judgment": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndContextRead": true
+        },
+        {
+          "paragraphId": "shenshi-xuankong-xue:L1442-L1442",
+          "judgment": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndContextRead": true
+        },
+        {
+          "paragraphId": "shenshi-xuankong-xue:L1640-L1640",
+          "judgment": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndContextRead": true
+        },
+        {
+          "paragraphId": "shenshi-xuankong-xue:L1650-L1650",
+          "judgment": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndContextRead": true
+        },
+        {
+          "paragraphId": "shenshi-xuankong-xue:L1652-L1652",
+          "judgment": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndContextRead": true
+        },
+        {
+          "paragraphId": "shenshi-xuankong-xue:L1656-L1656",
+          "judgment": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndContextRead": true
+        },
+        {
+          "paragraphId": "shenshi-xuankong-xue:L1658-L1658",
+          "judgment": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndContextRead": true
+        },
+        {
+          "paragraphId": "shenshi-xuankong-xue:L1750-L1750",
+          "judgment": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndContextRead": true
+        },
+        {
+          "paragraphId": "shenshi-xuankong-xue:L1752-L1752",
+          "judgment": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndContextRead": true
+        },
+        {
+          "paragraphId": "shenshi-xuankong-xue:L1754-L1754",
+          "judgment": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndContextRead": true
+        },
+        {
+          "paragraphId": "shenshi-xuankong-xue:L1756-L1756",
+          "judgment": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndContextRead": true
+        },
+        {
+          "paragraphId": "shenshi-xuankong-xue:L1758-L1758",
+          "judgment": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndContextRead": true
+        },
+        {
+          "paragraphId": "shenshi-xuankong-xue:L1760-L1760",
+          "judgment": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndContextRead": true
+        },
+        {
+          "paragraphId": "shenshi-xuankong-xue:L1774-L1774",
+          "judgment": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndContextRead": true
+        },
+        {
+          "paragraphId": "shenshi-xuankong-xue:L1778-L1784",
+          "judgment": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndContextRead": true
+        }
+      ]
+    },
+    {
+      "verdict": "ACCEPT",
+      "reviewer": "Judge B / qimen_candidate_judge",
+      "scope": "全部146条；逐条读取完整原段及释义，并读相关问答、连续注语、例外和引文的上下文。只审电子文本释义，不作图盘复算或预测效验判断。",
+      "annotationPath": "/Users/yuhanglin/fateradar-goal-20260912/classics/references/annotations/fengshui/shenshi-xuankong-xue.json",
+      "annotationSha256": "3c5629df1d9a6f37a20caf4b4db1d3fef5652ddef40b9c8f036027814ab4cd64",
+      "count": 146,
+      "reviewCounts": {
+        "source-reviewed": 145,
+        "draft": 1
+      },
+      "validatorErrors": [],
+      "requiredCorrections": [],
+      "evidence": [
+        "L0650–0713：天干、四维、地支各采用不同论证层，未以通行藏干强改亥藏戊等本书写法。",
+        "L0833–0839：金口诀异文和则先意见分别保留，未把明初刻本说或赞辞当独立考证。",
+        "L0874–0884：则先续注对子母、立向清纯与补救兼向作条件说明；并非把首段禁兼原则当唯一结论。",
+        "L0983–1014：否定山一律顺水一律逆；志伊引温明远与则先的不同零正语境未抹平。",
+        "L1093：论占凶具体疑字仍draft；未暗校为吉凶。",
+        "L1097–1105：志伊所引城门在乾，与则先城门在丑辰、乾为旺水的解释分别呈现。",
+        "L1187–1204：向首为重未被误解成只准向上替；山替、向替、双替、轻兼不替均保留。",
+        "L1353及各运子方段：山环抱、单一子方缺口兼水口前提保留；没有补其余宫位。",
+        "L1752–1784：元运五黄、山向飞星五黄与年月日择时分开；祖绵天盘相逢异说不合并为本宫伏吟。"
+      ],
+      "optionalClarity": [
+        {
+          "paragraphId": "shenshi-xuankong-xue:L0878-L0884",
+          "suggestion": "末句“作者要求”可写“则先续注要求”，使脱离上下文阅读时作者层更明确；当前未署沈公，非阻断。"
+        },
+        {
+          "paragraphId": "shenshi-xuankong-xue:L1014-L1014",
+          "suggestion": "“作者认为”可写“则先认为”，与前段注者身份更直接对应；当前“接前段”已保留归属关系，非阻断。"
+        }
+      ],
+      "items": [
+        {
+          "paragraphId": "shenshi-xuankong-xue:L0614-L0614",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "sourceFile": "sources/fulltext/fengshui/shenshi-xuankong-xue/fulltext.md",
+          "startLine": 614,
+          "endLine": 614,
+          "sourceTextSha256": "7a90d9b855bc681c3836a1b965040b4eb086fc28bacce47de397dd739f1df729"
+        },
+        {
+          "paragraphId": "shenshi-xuankong-xue:L0616-L0624",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "sourceFile": "sources/fulltext/fengshui/shenshi-xuankong-xue/fulltext.md",
+          "startLine": 616,
+          "endLine": 624,
+          "sourceTextSha256": "f85d0ea5e31a05b063976d173582bf8acd355a51d4dedfcbded3ee0e13f1a4ae"
+        },
+        {
+          "paragraphId": "shenshi-xuankong-xue:L0650-L0657",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "sourceFile": "sources/fulltext/fengshui/shenshi-xuankong-xue/fulltext.md",
+          "startLine": 650,
+          "endLine": 657,
+          "sourceTextSha256": "2a7ebdb081e0c40211e45cf40ff5f92b7eea3b57d31a303938a4d5fece4fb0df"
+        },
+        {
+          "paragraphId": "shenshi-xuankong-xue:L0659-L0659",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "sourceFile": "sources/fulltext/fengshui/shenshi-xuankong-xue/fulltext.md",
+          "startLine": 659,
+          "endLine": 659,
+          "sourceTextSha256": "c85d4a84175df912cea2cf8e132a569ca15f00d895260d848e0ab21bece5d88b"
+        },
+        {
+          "paragraphId": "shenshi-xuankong-xue:L0661-L0661",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "sourceFile": "sources/fulltext/fengshui/shenshi-xuankong-xue/fulltext.md",
+          "startLine": 661,
+          "endLine": 661,
+          "sourceTextSha256": "fcc9ad5c137460417fb5c4c25128befa3a031ff78a497c6db2ef6f088b0b6c2b"
+        },
+        {
+          "paragraphId": "shenshi-xuankong-xue:L0663-L0663",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "sourceFile": "sources/fulltext/fengshui/shenshi-xuankong-xue/fulltext.md",
+          "startLine": 663,
+          "endLine": 663,
+          "sourceTextSha256": "737a2dee4e371d48b8ffcdac8195409a64d95888c9f1a32d4e44a5c480fb24e1"
+        },
+        {
+          "paragraphId": "shenshi-xuankong-xue:L0665-L0665",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "sourceFile": "sources/fulltext/fengshui/shenshi-xuankong-xue/fulltext.md",
+          "startLine": 665,
+          "endLine": 665,
+          "sourceTextSha256": "e5c5aeff1ed63f6d1512b8b80813730cb3649ef1eb20676448cf17f52fb8f44d"
+        },
+        {
+          "paragraphId": "shenshi-xuankong-xue:L0667-L0667",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "sourceFile": "sources/fulltext/fengshui/shenshi-xuankong-xue/fulltext.md",
+          "startLine": 667,
+          "endLine": 667,
+          "sourceTextSha256": "06ed9c9af3dc892be29a695346967d0e13ac1dfd5a24d8b93ee5409f6edc1c19"
+        },
+        {
+          "paragraphId": "shenshi-xuankong-xue:L0669-L0669",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "sourceFile": "sources/fulltext/fengshui/shenshi-xuankong-xue/fulltext.md",
+          "startLine": 669,
+          "endLine": 669,
+          "sourceTextSha256": "d67ddf7f7e889ea6f9f1d7f93a94d423ba9f478cff1f9303644a810b8d67ed51"
+        },
+        {
+          "paragraphId": "shenshi-xuankong-xue:L0671-L0671",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "sourceFile": "sources/fulltext/fengshui/shenshi-xuankong-xue/fulltext.md",
+          "startLine": 671,
+          "endLine": 671,
+          "sourceTextSha256": "cee1486bd6c7967907fbd71a2d3bd3e1cf1f233823efdf1f25bd1667215a36b1"
+        },
+        {
+          "paragraphId": "shenshi-xuankong-xue:L0673-L0673",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "sourceFile": "sources/fulltext/fengshui/shenshi-xuankong-xue/fulltext.md",
+          "startLine": 673,
+          "endLine": 673,
+          "sourceTextSha256": "cd3d6345a7711b352586c9709bb1465f61b2472f48244e5365cfa2662cd38541"
+        },
+        {
+          "paragraphId": "shenshi-xuankong-xue:L0675-L0675",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "sourceFile": "sources/fulltext/fengshui/shenshi-xuankong-xue/fulltext.md",
+          "startLine": 675,
+          "endLine": 675,
+          "sourceTextSha256": "f325d997b3475bd6bfd3d8d0b3c1ec54baa681b909bb6ce7c5699354c1213175"
+        },
+        {
+          "paragraphId": "shenshi-xuankong-xue:L0677-L0677",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "sourceFile": "sources/fulltext/fengshui/shenshi-xuankong-xue/fulltext.md",
+          "startLine": 677,
+          "endLine": 677,
+          "sourceTextSha256": "080fdc4fa1e9296a340d5f505e10a76521964eb624f5e5c97ac63f2af5fbe3ff"
+        },
+        {
+          "paragraphId": "shenshi-xuankong-xue:L0679-L0679",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "sourceFile": "sources/fulltext/fengshui/shenshi-xuankong-xue/fulltext.md",
+          "startLine": 679,
+          "endLine": 679,
+          "sourceTextSha256": "a2e0fc61a423f5e7f599a978589ce44a4140fd872a041706864991cdbe8f1bbc"
+        },
+        {
+          "paragraphId": "shenshi-xuankong-xue:L0681-L0681",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "sourceFile": "sources/fulltext/fengshui/shenshi-xuankong-xue/fulltext.md",
+          "startLine": 681,
+          "endLine": 681,
+          "sourceTextSha256": "0bc137f823b83724d15973e3ccae236f38f2c8a1e20809dcd34098f46d63c6f3"
+        },
+        {
+          "paragraphId": "shenshi-xuankong-xue:L0683-L0683",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "sourceFile": "sources/fulltext/fengshui/shenshi-xuankong-xue/fulltext.md",
+          "startLine": 683,
+          "endLine": 683,
+          "sourceTextSha256": "8b4abea82fe4adc21e493cc9bde83d1ebd78af742ef2f33fb6e4d2ec8430759f"
+        },
+        {
+          "paragraphId": "shenshi-xuankong-xue:L0685-L0685",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "sourceFile": "sources/fulltext/fengshui/shenshi-xuankong-xue/fulltext.md",
+          "startLine": 685,
+          "endLine": 685,
+          "sourceTextSha256": "1bf75dc36e9fd0174951cc1f155b1542cded49b5fa2badd6cee260f5600ca54f"
+        },
+        {
+          "paragraphId": "shenshi-xuankong-xue:L0687-L0687",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "sourceFile": "sources/fulltext/fengshui/shenshi-xuankong-xue/fulltext.md",
+          "startLine": 687,
+          "endLine": 687,
+          "sourceTextSha256": "2f9941390821f96b9abe13ee59eec8ff5cef2b9076958782a16100cd81d8bff2"
+        },
+        {
+          "paragraphId": "shenshi-xuankong-xue:L0689-L0689",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "sourceFile": "sources/fulltext/fengshui/shenshi-xuankong-xue/fulltext.md",
+          "startLine": 689,
+          "endLine": 689,
+          "sourceTextSha256": "93dd10b018b954cc3fa52a599b337b7dbf2692e343134dac0bfaaa47d7c0ff05"
+        },
+        {
+          "paragraphId": "shenshi-xuankong-xue:L0691-L0691",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "sourceFile": "sources/fulltext/fengshui/shenshi-xuankong-xue/fulltext.md",
+          "startLine": 691,
+          "endLine": 691,
+          "sourceTextSha256": "c944076aa1203753102202c9da34e351bd20423b5db3296300ec7a851cd64bda"
+        },
+        {
+          "paragraphId": "shenshi-xuankong-xue:L0693-L0693",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "sourceFile": "sources/fulltext/fengshui/shenshi-xuankong-xue/fulltext.md",
+          "startLine": 693,
+          "endLine": 693,
+          "sourceTextSha256": "cf3e61a1fb8be3aa476827aea66fe13d97791825e5e31f4d1389e32d5d16c7a8"
+        },
+        {
+          "paragraphId": "shenshi-xuankong-xue:L0695-L0695",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "sourceFile": "sources/fulltext/fengshui/shenshi-xuankong-xue/fulltext.md",
+          "startLine": 695,
+          "endLine": 695,
+          "sourceTextSha256": "3ac93a0fa99dbd155c0e5366e5d0977f79cda6703eae43cd960cfa3fcffeea51"
+        },
+        {
+          "paragraphId": "shenshi-xuankong-xue:L0697-L0697",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "sourceFile": "sources/fulltext/fengshui/shenshi-xuankong-xue/fulltext.md",
+          "startLine": 697,
+          "endLine": 697,
+          "sourceTextSha256": "77a2aeebb0ad9ee36df2e74f33f741c7cb1e0facd0a5bd609767ad6851ba8ac6"
+        },
+        {
+          "paragraphId": "shenshi-xuankong-xue:L0699-L0699",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "sourceFile": "sources/fulltext/fengshui/shenshi-xuankong-xue/fulltext.md",
+          "startLine": 699,
+          "endLine": 699,
+          "sourceTextSha256": "affea17f9e53aef13a44df823323106a6ad8a4e4a4d81190a61ee03e5a04da62"
+        },
+        {
+          "paragraphId": "shenshi-xuankong-xue:L0701-L0701",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "sourceFile": "sources/fulltext/fengshui/shenshi-xuankong-xue/fulltext.md",
+          "startLine": 701,
+          "endLine": 701,
+          "sourceTextSha256": "2d36e66a556a87ea10627a2170af73e3372b145a8db68a404fcb5008e3044cbe"
+        },
+        {
+          "paragraphId": "shenshi-xuankong-xue:L0703-L0703",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "sourceFile": "sources/fulltext/fengshui/shenshi-xuankong-xue/fulltext.md",
+          "startLine": 703,
+          "endLine": 703,
+          "sourceTextSha256": "d53d3ac6018dd2c7420ab44805522e9c15f1749dd08c00f5a63e2f3e2b5344d1"
+        },
+        {
+          "paragraphId": "shenshi-xuankong-xue:L0705-L0705",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "sourceFile": "sources/fulltext/fengshui/shenshi-xuankong-xue/fulltext.md",
+          "startLine": 705,
+          "endLine": 705,
+          "sourceTextSha256": "28209b755d3f2dada1b08dce60520c5209a2ba1b78e08accc7409c2f37883584"
+        },
+        {
+          "paragraphId": "shenshi-xuankong-xue:L0707-L0707",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "sourceFile": "sources/fulltext/fengshui/shenshi-xuankong-xue/fulltext.md",
+          "startLine": 707,
+          "endLine": 707,
+          "sourceTextSha256": "4b845dd319aba3641fcfcef9c2670e41f9bec16f2c39020bb6f51a2298a702c7"
+        },
+        {
+          "paragraphId": "shenshi-xuankong-xue:L0709-L0709",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "sourceFile": "sources/fulltext/fengshui/shenshi-xuankong-xue/fulltext.md",
+          "startLine": 709,
+          "endLine": 709,
+          "sourceTextSha256": "006107e84c7ce2132c32c9d4c0a1b565ac7ef71afa95452898c152eebe4d81a8"
+        },
+        {
+          "paragraphId": "shenshi-xuankong-xue:L0711-L0711",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "sourceFile": "sources/fulltext/fengshui/shenshi-xuankong-xue/fulltext.md",
+          "startLine": 711,
+          "endLine": 711,
+          "sourceTextSha256": "5516bdb2c66f2bcef8121c1fb9b8fba7d19f5abc5b8cabb58fbbc9887f2fdfe9"
+        },
+        {
+          "paragraphId": "shenshi-xuankong-xue:L0713-L0713",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "sourceFile": "sources/fulltext/fengshui/shenshi-xuankong-xue/fulltext.md",
+          "startLine": 713,
+          "endLine": 713,
+          "sourceTextSha256": "eb4d7e9897291cafe64b15957a186cfaad44096b2d8e250034727057594cc4bd"
+        },
+        {
+          "paragraphId": "shenshi-xuankong-xue:L0729-L0729",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "sourceFile": "sources/fulltext/fengshui/shenshi-xuankong-xue/fulltext.md",
+          "startLine": 729,
+          "endLine": 729,
+          "sourceTextSha256": "56796f3c57a66939c9c02bafa6838a8c485ed5cd477c6e8149f4e22f27713e3f"
+        },
+        {
+          "paragraphId": "shenshi-xuankong-xue:L0731-L0731",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "sourceFile": "sources/fulltext/fengshui/shenshi-xuankong-xue/fulltext.md",
+          "startLine": 731,
+          "endLine": 731,
+          "sourceTextSha256": "c0418733a19f8f999601fcefe049412a143f4d2e885bfe524d04c2424912016b"
+        },
+        {
+          "paragraphId": "shenshi-xuankong-xue:L0733-L0733",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "sourceFile": "sources/fulltext/fengshui/shenshi-xuankong-xue/fulltext.md",
+          "startLine": 733,
+          "endLine": 733,
+          "sourceTextSha256": "4bf883f1f396a4521bd5635b2dece195bda5af107b74c8470073080873cb7f12"
+        },
+        {
+          "paragraphId": "shenshi-xuankong-xue:L0735-L0735",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "sourceFile": "sources/fulltext/fengshui/shenshi-xuankong-xue/fulltext.md",
+          "startLine": 735,
+          "endLine": 735,
+          "sourceTextSha256": "d22900e0ef39b461486804fd9a299dbbfa7a4c01f8932e41a62be09717a532b8"
+        },
+        {
+          "paragraphId": "shenshi-xuankong-xue:L0737-L0737",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "sourceFile": "sources/fulltext/fengshui/shenshi-xuankong-xue/fulltext.md",
+          "startLine": 737,
+          "endLine": 737,
+          "sourceTextSha256": "2ee864876dba468b4b72cbd7a7aa6a7b2e77e430e2337529308a6506d049e11b"
+        },
+        {
+          "paragraphId": "shenshi-xuankong-xue:L0739-L0739",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "sourceFile": "sources/fulltext/fengshui/shenshi-xuankong-xue/fulltext.md",
+          "startLine": 739,
+          "endLine": 739,
+          "sourceTextSha256": "35e13171df06e972a8311882d268e709fbc8bd3f61c5c26c14663f3cb5103ee6"
+        },
+        {
+          "paragraphId": "shenshi-xuankong-xue:L0741-L0741",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "sourceFile": "sources/fulltext/fengshui/shenshi-xuankong-xue/fulltext.md",
+          "startLine": 741,
+          "endLine": 741,
+          "sourceTextSha256": "ffe1ddc34a08e0ce1075b510d61ccac3d2212f78fdbb0d0361650f047c50471f"
+        },
+        {
+          "paragraphId": "shenshi-xuankong-xue:L0743-L0743",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "sourceFile": "sources/fulltext/fengshui/shenshi-xuankong-xue/fulltext.md",
+          "startLine": 743,
+          "endLine": 743,
+          "sourceTextSha256": "a91d89db8682945ca7a6b5ee35250585221e15f498a7d84dbe9968b55f209976"
+        },
+        {
+          "paragraphId": "shenshi-xuankong-xue:L0745-L0745",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "sourceFile": "sources/fulltext/fengshui/shenshi-xuankong-xue/fulltext.md",
+          "startLine": 745,
+          "endLine": 745,
+          "sourceTextSha256": "2fab8f147169838d8970c3100ede27fef936976624d40092ccbe799e91692f3c"
+        },
+        {
+          "paragraphId": "shenshi-xuankong-xue:L0747-L0747",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "sourceFile": "sources/fulltext/fengshui/shenshi-xuankong-xue/fulltext.md",
+          "startLine": 747,
+          "endLine": 747,
+          "sourceTextSha256": "2b3a49f2fe689975aa3f52f3e73b45098250dbfe91742eb4aaa64f4fccd11343"
+        },
+        {
+          "paragraphId": "shenshi-xuankong-xue:L0749-L0749",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "sourceFile": "sources/fulltext/fengshui/shenshi-xuankong-xue/fulltext.md",
+          "startLine": 749,
+          "endLine": 749,
+          "sourceTextSha256": "cba3523e2facb6cf59a2e8d7554fbbb6204bb3755677b8594868bc02baeeee50"
+        },
+        {
+          "paragraphId": "shenshi-xuankong-xue:L0751-L0751",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "sourceFile": "sources/fulltext/fengshui/shenshi-xuankong-xue/fulltext.md",
+          "startLine": 751,
+          "endLine": 751,
+          "sourceTextSha256": "20a365e289c6ae915f15ef99cfdf0d2a503cbc2744d3e702646ed9c15a2c0c07"
+        },
+        {
+          "paragraphId": "shenshi-xuankong-xue:L0753-L0762",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "sourceFile": "sources/fulltext/fengshui/shenshi-xuankong-xue/fulltext.md",
+          "startLine": 753,
+          "endLine": 762,
+          "sourceTextSha256": "24d78a22234f7a285c1245a4d88fa2eebf2d3a961da17b499d941a5616dfecdf"
+        },
+        {
+          "paragraphId": "shenshi-xuankong-xue:L0779-L0779",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "sourceFile": "sources/fulltext/fengshui/shenshi-xuankong-xue/fulltext.md",
+          "startLine": 779,
+          "endLine": 779,
+          "sourceTextSha256": "9c226c0f6958b3e880f08fa5b2bb8db7469321a8e713020c9693396b2e635472"
+        },
+        {
+          "paragraphId": "shenshi-xuankong-xue:L0781-L0781",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "sourceFile": "sources/fulltext/fengshui/shenshi-xuankong-xue/fulltext.md",
+          "startLine": 781,
+          "endLine": 781,
+          "sourceTextSha256": "10b0f5974c523dfef05efd5ed9bd22b06cfd9af1cb9b0a636e1b1ed28ee86e82"
+        },
+        {
+          "paragraphId": "shenshi-xuankong-xue:L0833-L0833",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "sourceFile": "sources/fulltext/fengshui/shenshi-xuankong-xue/fulltext.md",
+          "startLine": 833,
+          "endLine": 833,
+          "sourceTextSha256": "6fbae3454f82c433a093c0c00545bc40babaa23aed96da4b8627ca5b52506782"
+        },
+        {
+          "paragraphId": "shenshi-xuankong-xue:L0835-L0835",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "sourceFile": "sources/fulltext/fengshui/shenshi-xuankong-xue/fulltext.md",
+          "startLine": 835,
+          "endLine": 835,
+          "sourceTextSha256": "040df76e85e9b90c61337d29d5d7d8aae543a04102d011f8ab3414b83db9fbc4"
+        },
+        {
+          "paragraphId": "shenshi-xuankong-xue:L0837-L0837",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "sourceFile": "sources/fulltext/fengshui/shenshi-xuankong-xue/fulltext.md",
+          "startLine": 837,
+          "endLine": 837,
+          "sourceTextSha256": "f4f1de864a0df2b8f8c769552cb688371aca631ed64a5133f0a667680a71c243"
+        },
+        {
+          "paragraphId": "shenshi-xuankong-xue:L0839-L0839",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "sourceFile": "sources/fulltext/fengshui/shenshi-xuankong-xue/fulltext.md",
+          "startLine": 839,
+          "endLine": 839,
+          "sourceTextSha256": "d2528133667c696eee3083e136f28e962831ff3d7e5b13256451168b47a06873"
+        },
+        {
+          "paragraphId": "shenshi-xuankong-xue:L0845-L0845",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "sourceFile": "sources/fulltext/fengshui/shenshi-xuankong-xue/fulltext.md",
+          "startLine": 845,
+          "endLine": 845,
+          "sourceTextSha256": "2cef822094aaaae1be7c1e2684eec071428363db2cf4d19c23d3b36d928bcf56"
+        },
+        {
+          "paragraphId": "shenshi-xuankong-xue:L0874-L0874",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "sourceFile": "sources/fulltext/fengshui/shenshi-xuankong-xue/fulltext.md",
+          "startLine": 874,
+          "endLine": 874,
+          "sourceTextSha256": "499f49355ebafb6624f6447ff453bd52acacbe9068136932a200381b5244d069"
+        },
+        {
+          "paragraphId": "shenshi-xuankong-xue:L0876-L0876",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "sourceFile": "sources/fulltext/fengshui/shenshi-xuankong-xue/fulltext.md",
+          "startLine": 876,
+          "endLine": 876,
+          "sourceTextSha256": "f70938cf8ccda65326e06c092023be6e9467f9bf70eb45e770e2b7878525a4ea"
+        },
+        {
+          "paragraphId": "shenshi-xuankong-xue:L0878-L0884",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "sourceFile": "sources/fulltext/fengshui/shenshi-xuankong-xue/fulltext.md",
+          "startLine": 878,
+          "endLine": 884,
+          "sourceTextSha256": "6b173e80818472973a179a31672f307051d25c50f2704bb3f16b9bbb2ec2a358"
+        },
+        {
+          "paragraphId": "shenshi-xuankong-xue:L0909-L0909",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "sourceFile": "sources/fulltext/fengshui/shenshi-xuankong-xue/fulltext.md",
+          "startLine": 909,
+          "endLine": 909,
+          "sourceTextSha256": "1cf363199428139e1486f8c2515672b8251c9c97db9acefc52fdbfa9c30247b7"
+        },
+        {
+          "paragraphId": "shenshi-xuankong-xue:L0911-L0911",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "sourceFile": "sources/fulltext/fengshui/shenshi-xuankong-xue/fulltext.md",
+          "startLine": 911,
+          "endLine": 911,
+          "sourceTextSha256": "4cbb6c382f7f35769fbcf43cb6d792d515fd0fa4dc9b92905a15a8c8f9fc3307"
+        },
+        {
+          "paragraphId": "shenshi-xuankong-xue:L0913-L0913",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "sourceFile": "sources/fulltext/fengshui/shenshi-xuankong-xue/fulltext.md",
+          "startLine": 913,
+          "endLine": 913,
+          "sourceTextSha256": "13e3d18f2c7f582038fc439dc24788f3fc19e6c78f08e610c3e8fe5177685872"
+        },
+        {
+          "paragraphId": "shenshi-xuankong-xue:L0915-L0915",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "sourceFile": "sources/fulltext/fengshui/shenshi-xuankong-xue/fulltext.md",
+          "startLine": 915,
+          "endLine": 915,
+          "sourceTextSha256": "2778c919c6bead81d08fc8a366e342dc7ade09e72aca867217dce3814edd8a3d"
+        },
+        {
+          "paragraphId": "shenshi-xuankong-xue:L0917-L0917",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "sourceFile": "sources/fulltext/fengshui/shenshi-xuankong-xue/fulltext.md",
+          "startLine": 917,
+          "endLine": 917,
+          "sourceTextSha256": "74530a289a0ef462bafdf1e859be2711a594070fa6a68f8c4424a94fa7eb585c"
+        },
+        {
+          "paragraphId": "shenshi-xuankong-xue:L0919-L0932",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "sourceFile": "sources/fulltext/fengshui/shenshi-xuankong-xue/fulltext.md",
+          "startLine": 919,
+          "endLine": 932,
+          "sourceTextSha256": "d142e93966cb2b83e2454c4dcad0912c66ae179ab53d18fc742f362335569a07"
+        },
+        {
+          "paragraphId": "shenshi-xuankong-xue:L0945-L0945",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "sourceFile": "sources/fulltext/fengshui/shenshi-xuankong-xue/fulltext.md",
+          "startLine": 945,
+          "endLine": 945,
+          "sourceTextSha256": "271b4687738bd3876f848ed136762381c677e566d1fa75a3dbc4a0594935bfd3"
+        },
+        {
+          "paragraphId": "shenshi-xuankong-xue:L0953-L0953",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "sourceFile": "sources/fulltext/fengshui/shenshi-xuankong-xue/fulltext.md",
+          "startLine": 953,
+          "endLine": 953,
+          "sourceTextSha256": "56a6f01c9e2ad1002f0e71c55c76466f0dfb34b761746eba163adaa9fb92f06f"
+        },
+        {
+          "paragraphId": "shenshi-xuankong-xue:L0955-L0955",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "sourceFile": "sources/fulltext/fengshui/shenshi-xuankong-xue/fulltext.md",
+          "startLine": 955,
+          "endLine": 955,
+          "sourceTextSha256": "9305461f28115b21cf54ec3847b601b28dcbf01f53f88ffb5ea9278bfaf4ed83"
+        },
+        {
+          "paragraphId": "shenshi-xuankong-xue:L0957-L0963",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "sourceFile": "sources/fulltext/fengshui/shenshi-xuankong-xue/fulltext.md",
+          "startLine": 957,
+          "endLine": 963,
+          "sourceTextSha256": "ba0db738c9132ef802a652842ceb1bc172d6885bfb7ad0925298df1f8d3e5f7f"
+        },
+        {
+          "paragraphId": "shenshi-xuankong-xue:L0969-L0969",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "sourceFile": "sources/fulltext/fengshui/shenshi-xuankong-xue/fulltext.md",
+          "startLine": 969,
+          "endLine": 969,
+          "sourceTextSha256": "34dece938f3823ef3a3cd045f5faf8e116037006fd344d08ba2a1cd3e857c429"
+        },
+        {
+          "paragraphId": "shenshi-xuankong-xue:L0971-L0971",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "sourceFile": "sources/fulltext/fengshui/shenshi-xuankong-xue/fulltext.md",
+          "startLine": 971,
+          "endLine": 971,
+          "sourceTextSha256": "ec019ebf3b79d4e5ffaf9b901da6deabf131cff7a53bcd2618d8dbc76b9e58cd"
+        },
+        {
+          "paragraphId": "shenshi-xuankong-xue:L0973-L0973",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "sourceFile": "sources/fulltext/fengshui/shenshi-xuankong-xue/fulltext.md",
+          "startLine": 973,
+          "endLine": 973,
+          "sourceTextSha256": "7afb1bc2db560e340ec579315dbfd98d41f8067b21f95a877425a8a279bc31a5"
+        },
+        {
+          "paragraphId": "shenshi-xuankong-xue:L0975-L0975",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "sourceFile": "sources/fulltext/fengshui/shenshi-xuankong-xue/fulltext.md",
+          "startLine": 975,
+          "endLine": 975,
+          "sourceTextSha256": "1864ccafaff1bb143aec42ecb597960f4035eaad79247c7876182d8bcb81a5c6"
+        },
+        {
+          "paragraphId": "shenshi-xuankong-xue:L0977-L0977",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "sourceFile": "sources/fulltext/fengshui/shenshi-xuankong-xue/fulltext.md",
+          "startLine": 977,
+          "endLine": 977,
+          "sourceTextSha256": "7fd4e6539a19de0cd60c749ef03af77f4b5a16c7ba351a627d51e5cad43921e2"
+        },
+        {
+          "paragraphId": "shenshi-xuankong-xue:L0979-L0979",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "sourceFile": "sources/fulltext/fengshui/shenshi-xuankong-xue/fulltext.md",
+          "startLine": 979,
+          "endLine": 979,
+          "sourceTextSha256": "b50a749e9b7f072fd1081c10892f31f8bbd97ef6522831dca9e517aaece6e510"
+        },
+        {
+          "paragraphId": "shenshi-xuankong-xue:L0981-L0981",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "sourceFile": "sources/fulltext/fengshui/shenshi-xuankong-xue/fulltext.md",
+          "startLine": 981,
+          "endLine": 981,
+          "sourceTextSha256": "e73b25a5efae8bb006eb5d9ede58dacffa398dbcdf9acbf06d4931a3432633ae"
+        },
+        {
+          "paragraphId": "shenshi-xuankong-xue:L0983-L0983",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "sourceFile": "sources/fulltext/fengshui/shenshi-xuankong-xue/fulltext.md",
+          "startLine": 983,
+          "endLine": 983,
+          "sourceTextSha256": "7db4bc45a6c55dbffa84204c047f56ef052ca2b65a6d9ccc21f3b2d787839fc4"
+        },
+        {
+          "paragraphId": "shenshi-xuankong-xue:L0985-L0985",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "sourceFile": "sources/fulltext/fengshui/shenshi-xuankong-xue/fulltext.md",
+          "startLine": 985,
+          "endLine": 985,
+          "sourceTextSha256": "475eff1011c64afe4f078d5cd1f213250cc1280bea18dc0346b8415d32f98ca7"
+        },
+        {
+          "paragraphId": "shenshi-xuankong-xue:L0987-L0987",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "sourceFile": "sources/fulltext/fengshui/shenshi-xuankong-xue/fulltext.md",
+          "startLine": 987,
+          "endLine": 987,
+          "sourceTextSha256": "d4864f34a3f14ba4807c859e9a8c7758d418a13a53551312b9c5df007a0d48cf"
+        },
+        {
+          "paragraphId": "shenshi-xuankong-xue:L0989-L0996",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "sourceFile": "sources/fulltext/fengshui/shenshi-xuankong-xue/fulltext.md",
+          "startLine": 989,
+          "endLine": 996,
+          "sourceTextSha256": "a6d4c85b55fa77b9dcb7359d54329ff6ab5f4f4779d570c970fbdc98e407f7b9"
+        },
+        {
+          "paragraphId": "shenshi-xuankong-xue:L0998-L1010",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "sourceFile": "sources/fulltext/fengshui/shenshi-xuankong-xue/fulltext.md",
+          "startLine": 998,
+          "endLine": 1010,
+          "sourceTextSha256": "d22ac3d1d1c9c5f8fd93180e9377ea75b5f59965386a3b5f8a8a5a26a58f4752"
+        },
+        {
+          "paragraphId": "shenshi-xuankong-xue:L1012-L1012",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "sourceFile": "sources/fulltext/fengshui/shenshi-xuankong-xue/fulltext.md",
+          "startLine": 1012,
+          "endLine": 1012,
+          "sourceTextSha256": "ffcc2d22bb50a0e248451411fc72e3dddd2b8b649d7862752b423e3c503d1594"
+        },
+        {
+          "paragraphId": "shenshi-xuankong-xue:L1014-L1014",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "sourceFile": "sources/fulltext/fengshui/shenshi-xuankong-xue/fulltext.md",
+          "startLine": 1014,
+          "endLine": 1014,
+          "sourceTextSha256": "4ef4bdd92fece0b65e1d77e03b0efdf3ed0873ddc4af203e31b81d898570d783"
+        },
+        {
+          "paragraphId": "shenshi-xuankong-xue:L1020-L1020",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "sourceFile": "sources/fulltext/fengshui/shenshi-xuankong-xue/fulltext.md",
+          "startLine": 1020,
+          "endLine": 1020,
+          "sourceTextSha256": "45b84ab68f89d4a601e99a76afb5f1274f163ba3bf88abef283c31fcd378cdd5"
+        },
+        {
+          "paragraphId": "shenshi-xuankong-xue:L1024-L1024",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "sourceFile": "sources/fulltext/fengshui/shenshi-xuankong-xue/fulltext.md",
+          "startLine": 1024,
+          "endLine": 1024,
+          "sourceTextSha256": "7456c8cc3b6339f2b9a9afcf1222a0298e2fc2f874c550470ee3389ca775482e"
+        },
+        {
+          "paragraphId": "shenshi-xuankong-xue:L1032-L1032",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "sourceFile": "sources/fulltext/fengshui/shenshi-xuankong-xue/fulltext.md",
+          "startLine": 1032,
+          "endLine": 1032,
+          "sourceTextSha256": "75591807b3d0ff03a108265bf5348a9c6564d8032671329721683e6fc3540858"
+        },
+        {
+          "paragraphId": "shenshi-xuankong-xue:L1034-L1034",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "sourceFile": "sources/fulltext/fengshui/shenshi-xuankong-xue/fulltext.md",
+          "startLine": 1034,
+          "endLine": 1034,
+          "sourceTextSha256": "56dc951a4d5945b85a3775bd8c3a9b3a6f708fa73390031f0a14f79cf96a75a9"
+        },
+        {
+          "paragraphId": "shenshi-xuankong-xue:L1036-L1045",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "sourceFile": "sources/fulltext/fengshui/shenshi-xuankong-xue/fulltext.md",
+          "startLine": 1036,
+          "endLine": 1045,
+          "sourceTextSha256": "be5c7ea3d1dfdb55f9f1bad0385d1183498283fc3054f9cf813b35bb9296fefb"
+        },
+        {
+          "paragraphId": "shenshi-xuankong-xue:L1047-L1047",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "sourceFile": "sources/fulltext/fengshui/shenshi-xuankong-xue/fulltext.md",
+          "startLine": 1047,
+          "endLine": 1047,
+          "sourceTextSha256": "954bfb82618504715c0c9685f0cfec583afc5f89f3c589640a7c7bc6651baab3"
+        },
+        {
+          "paragraphId": "shenshi-xuankong-xue:L1049-L1049",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "sourceFile": "sources/fulltext/fengshui/shenshi-xuankong-xue/fulltext.md",
+          "startLine": 1049,
+          "endLine": 1049,
+          "sourceTextSha256": "358ad7cf20cb889b104fea51703ab5a298ff99ee0db3da3ad2b8dcf94070e051"
+        },
+        {
+          "paragraphId": "shenshi-xuankong-xue:L1051-L1051",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "sourceFile": "sources/fulltext/fengshui/shenshi-xuankong-xue/fulltext.md",
+          "startLine": 1051,
+          "endLine": 1051,
+          "sourceTextSha256": "22b9a1c05b5c73dba2e96b9f947775bf8e54beff4556f7dec75e37813f0c1a0f"
+        },
+        {
+          "paragraphId": "shenshi-xuankong-xue:L1053-L1059",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "sourceFile": "sources/fulltext/fengshui/shenshi-xuankong-xue/fulltext.md",
+          "startLine": 1053,
+          "endLine": 1059,
+          "sourceTextSha256": "33c1ea63a0469e4b75d61e28827593cfa3950ad70d4625dee24eb1ab7e26fbd8"
+        },
+        {
+          "paragraphId": "shenshi-xuankong-xue:L1061-L1061",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "sourceFile": "sources/fulltext/fengshui/shenshi-xuankong-xue/fulltext.md",
+          "startLine": 1061,
+          "endLine": 1061,
+          "sourceTextSha256": "190c6e4603ab30d040289019b28fce53e80530910c278b6b96ac3fa80ebf44b2"
+        },
+        {
+          "paragraphId": "shenshi-xuankong-xue:L1063-L1063",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "sourceFile": "sources/fulltext/fengshui/shenshi-xuankong-xue/fulltext.md",
+          "startLine": 1063,
+          "endLine": 1063,
+          "sourceTextSha256": "880fbd07ccd46c91a8d764eafe286a143928228d863d0bd4ca0f7ac9c8ca03f8"
+        },
+        {
+          "paragraphId": "shenshi-xuankong-xue:L1065-L1065",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "sourceFile": "sources/fulltext/fengshui/shenshi-xuankong-xue/fulltext.md",
+          "startLine": 1065,
+          "endLine": 1065,
+          "sourceTextSha256": "fbabe9360d383ef4715f87e5ce01ac8d8f620dbdc509d7f20a3ae362131677c0"
+        },
+        {
+          "paragraphId": "shenshi-xuankong-xue:L1067-L1067",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "sourceFile": "sources/fulltext/fengshui/shenshi-xuankong-xue/fulltext.md",
+          "startLine": 1067,
+          "endLine": 1067,
+          "sourceTextSha256": "406def94291821a8c9f2ca15eafda80e1cd68c39703e2efcf207d7ce4e91871c"
+        },
+        {
+          "paragraphId": "shenshi-xuankong-xue:L1069-L1069",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "sourceFile": "sources/fulltext/fengshui/shenshi-xuankong-xue/fulltext.md",
+          "startLine": 1069,
+          "endLine": 1069,
+          "sourceTextSha256": "7d72c8af550deb32fe943d60ab9066a3ebfc612b19c42ceb9bc606e76b60cf05"
+        },
+        {
+          "paragraphId": "shenshi-xuankong-xue:L1071-L1071",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "sourceFile": "sources/fulltext/fengshui/shenshi-xuankong-xue/fulltext.md",
+          "startLine": 1071,
+          "endLine": 1071,
+          "sourceTextSha256": "9606c5a9c373d84607e83eb09f18e976c53adaf6944b9b3e066d5b77ca296a8a"
+        },
+        {
+          "paragraphId": "shenshi-xuankong-xue:L1077-L1077",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "sourceFile": "sources/fulltext/fengshui/shenshi-xuankong-xue/fulltext.md",
+          "startLine": 1077,
+          "endLine": 1077,
+          "sourceTextSha256": "383677cca507cbe3a5cdca36afc9cafe65605b903d23f14af2b227996d408828"
+        },
+        {
+          "paragraphId": "shenshi-xuankong-xue:L1079-L1079",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "sourceFile": "sources/fulltext/fengshui/shenshi-xuankong-xue/fulltext.md",
+          "startLine": 1079,
+          "endLine": 1079,
+          "sourceTextSha256": "f1191c854db5b5423cef581ff82b843c58532f5da081436c431c6bdbb132e8ca"
+        },
+        {
+          "paragraphId": "shenshi-xuankong-xue:L1085-L1085",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "sourceFile": "sources/fulltext/fengshui/shenshi-xuankong-xue/fulltext.md",
+          "startLine": 1085,
+          "endLine": 1085,
+          "sourceTextSha256": "3745b76c4130e4225e9e5b73cee627b5e72692a2a62bade279b1cdf6832fc75f"
+        },
+        {
+          "paragraphId": "shenshi-xuankong-xue:L1087-L1087",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "sourceFile": "sources/fulltext/fengshui/shenshi-xuankong-xue/fulltext.md",
+          "startLine": 1087,
+          "endLine": 1087,
+          "sourceTextSha256": "f36e52cfa2c3040528a3e1ede95323593739d8beee4caeaf52320af0dd0682fc"
+        },
+        {
+          "paragraphId": "shenshi-xuankong-xue:L1089-L1089",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "sourceFile": "sources/fulltext/fengshui/shenshi-xuankong-xue/fulltext.md",
+          "startLine": 1089,
+          "endLine": 1089,
+          "sourceTextSha256": "b465800fe76bcabdc167c42d80b0d3292c0d2eecc08c31cdc911e3bf364fd9dc"
+        },
+        {
+          "paragraphId": "shenshi-xuankong-xue:L1091-L1091",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "sourceFile": "sources/fulltext/fengshui/shenshi-xuankong-xue/fulltext.md",
+          "startLine": 1091,
+          "endLine": 1091,
+          "sourceTextSha256": "0bb1839193fc56c6b75c0a03902a322c8061dc154bf82f6e3838140d25eb38b9"
+        },
+        {
+          "paragraphId": "shenshi-xuankong-xue:L1093-L1093",
+          "verdict": "ACCEPT",
+          "review": "draft",
+          "sourceFile": "sources/fulltext/fengshui/shenshi-xuankong-xue/fulltext.md",
+          "startLine": 1093,
+          "endLine": 1093,
+          "sourceTextSha256": "11b8f2a22ad60aee2c2694f552b4a1ec80f79dd6dd5cb462829085c91b01dff7"
+        },
+        {
+          "paragraphId": "shenshi-xuankong-xue:L1095-L1095",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "sourceFile": "sources/fulltext/fengshui/shenshi-xuankong-xue/fulltext.md",
+          "startLine": 1095,
+          "endLine": 1095,
+          "sourceTextSha256": "54cecd4f077935bc9247d749b0f91b538109a9347cdf625044981e2f58ca2820"
+        },
+        {
+          "paragraphId": "shenshi-xuankong-xue:L1097-L1103",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "sourceFile": "sources/fulltext/fengshui/shenshi-xuankong-xue/fulltext.md",
+          "startLine": 1097,
+          "endLine": 1103,
+          "sourceTextSha256": "9f4385908906214b26ee8bc2bd52ef09c500f15c20f820243189fded9c071229"
+        },
+        {
+          "paragraphId": "shenshi-xuankong-xue:L1105-L1105",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "sourceFile": "sources/fulltext/fengshui/shenshi-xuankong-xue/fulltext.md",
+          "startLine": 1105,
+          "endLine": 1105,
+          "sourceTextSha256": "e9c24b1cbe0a0c2b826a64353052d540ff748f9091dd4a473164d2722a3e5182"
+        },
+        {
+          "paragraphId": "shenshi-xuankong-xue:L1139-L1139",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "sourceFile": "sources/fulltext/fengshui/shenshi-xuankong-xue/fulltext.md",
+          "startLine": 1139,
+          "endLine": 1139,
+          "sourceTextSha256": "b926a19de7874b940f1c8c4f90192a57f684594309bfe4efabd4a929d16ce454"
+        },
+        {
+          "paragraphId": "shenshi-xuankong-xue:L1141-L1141",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "sourceFile": "sources/fulltext/fengshui/shenshi-xuankong-xue/fulltext.md",
+          "startLine": 1141,
+          "endLine": 1141,
+          "sourceTextSha256": "344258176ffbb0b0c550b8215e12bd85b96aa0a11574a716e9b25d4212170966"
+        },
+        {
+          "paragraphId": "shenshi-xuankong-xue:L1155-L1155",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "sourceFile": "sources/fulltext/fengshui/shenshi-xuankong-xue/fulltext.md",
+          "startLine": 1155,
+          "endLine": 1155,
+          "sourceTextSha256": "67925bd765733dc443bcff3b5571e9004911a492e04cc60a59e69d0391080f68"
+        },
+        {
+          "paragraphId": "shenshi-xuankong-xue:L1157-L1157",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "sourceFile": "sources/fulltext/fengshui/shenshi-xuankong-xue/fulltext.md",
+          "startLine": 1157,
+          "endLine": 1157,
+          "sourceTextSha256": "c64454ae57d7ccde8a2590a045977d816672a8a9b90cec2afe3a88b3e832c374"
+        },
+        {
+          "paragraphId": "shenshi-xuankong-xue:L1159-L1159",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "sourceFile": "sources/fulltext/fengshui/shenshi-xuankong-xue/fulltext.md",
+          "startLine": 1159,
+          "endLine": 1159,
+          "sourceTextSha256": "0a9a2448ff9b36b05350156d5c27b1b6b16374e3224ea5eb7318134d234b21b0"
+        },
+        {
+          "paragraphId": "shenshi-xuankong-xue:L1167-L1167",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "sourceFile": "sources/fulltext/fengshui/shenshi-xuankong-xue/fulltext.md",
+          "startLine": 1167,
+          "endLine": 1167,
+          "sourceTextSha256": "fc1c39f91313657b75f7a145243fa8362a9086a27300c147af2a96c6a3ddeaef"
+        },
+        {
+          "paragraphId": "shenshi-xuankong-xue:L1169-L1169",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "sourceFile": "sources/fulltext/fengshui/shenshi-xuankong-xue/fulltext.md",
+          "startLine": 1169,
+          "endLine": 1169,
+          "sourceTextSha256": "86c42758fbc2fea2b479576d4ee202d18d3bb6015e0304752c6a808edd36d540"
+        },
+        {
+          "paragraphId": "shenshi-xuankong-xue:L1171-L1171",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "sourceFile": "sources/fulltext/fengshui/shenshi-xuankong-xue/fulltext.md",
+          "startLine": 1171,
+          "endLine": 1171,
+          "sourceTextSha256": "43e676630cc0aa025653f87f378fb114fc563cae23e3a5137902abdc847da2cf"
+        },
+        {
+          "paragraphId": "shenshi-xuankong-xue:L1173-L1173",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "sourceFile": "sources/fulltext/fengshui/shenshi-xuankong-xue/fulltext.md",
+          "startLine": 1173,
+          "endLine": 1173,
+          "sourceTextSha256": "147c8f8d8b0421bba056c6974d457b46ffca999160d20063a2a90c20b9c241d3"
+        },
+        {
+          "paragraphId": "shenshi-xuankong-xue:L1185-L1185",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "sourceFile": "sources/fulltext/fengshui/shenshi-xuankong-xue/fulltext.md",
+          "startLine": 1185,
+          "endLine": 1185,
+          "sourceTextSha256": "1bdece227c1e2af75fec3eb9beaa79800e82c51bd675ed08d417ed9c5a7311ac"
+        },
+        {
+          "paragraphId": "shenshi-xuankong-xue:L1187-L1187",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "sourceFile": "sources/fulltext/fengshui/shenshi-xuankong-xue/fulltext.md",
+          "startLine": 1187,
+          "endLine": 1187,
+          "sourceTextSha256": "0d5059fdcde459403deb9d6c0140406b7af1df16bfb9a93fc3041c07524a1896"
+        },
+        {
+          "paragraphId": "shenshi-xuankong-xue:L1189-L1189",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "sourceFile": "sources/fulltext/fengshui/shenshi-xuankong-xue/fulltext.md",
+          "startLine": 1189,
+          "endLine": 1189,
+          "sourceTextSha256": "8b155fee5b2a0534f1c517d323d4bc47f7e282b2795653a8b4a94596550cc07e"
+        },
+        {
+          "paragraphId": "shenshi-xuankong-xue:L1193-L1193",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "sourceFile": "sources/fulltext/fengshui/shenshi-xuankong-xue/fulltext.md",
+          "startLine": 1193,
+          "endLine": 1193,
+          "sourceTextSha256": "9fede17dd075cb3043c919b77e2f7816455e926765c436f36ed1f5aead89e255"
+        },
+        {
+          "paragraphId": "shenshi-xuankong-xue:L1195-L1195",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "sourceFile": "sources/fulltext/fengshui/shenshi-xuankong-xue/fulltext.md",
+          "startLine": 1195,
+          "endLine": 1195,
+          "sourceTextSha256": "97a95a42668d39e9f08fed8a98fa8c5fd687acfe692a476aff1fe4f2f8d9f8e0"
+        },
+        {
+          "paragraphId": "shenshi-xuankong-xue:L1197-L1204",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "sourceFile": "sources/fulltext/fengshui/shenshi-xuankong-xue/fulltext.md",
+          "startLine": 1197,
+          "endLine": 1204,
+          "sourceTextSha256": "f66097b0eb25b76d644bd84ca1fff18e765cfcf1c3c0480bb4366df05f452a81"
+        },
+        {
+          "paragraphId": "shenshi-xuankong-xue:L1237-L1237",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "sourceFile": "sources/fulltext/fengshui/shenshi-xuankong-xue/fulltext.md",
+          "startLine": 1237,
+          "endLine": 1237,
+          "sourceTextSha256": "bd744f24ca0f10d9d84379a02aff6894ceff85f501ab64db3abc1cd9a661f949"
+        },
+        {
+          "paragraphId": "shenshi-xuankong-xue:L1247-L1247",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "sourceFile": "sources/fulltext/fengshui/shenshi-xuankong-xue/fulltext.md",
+          "startLine": 1247,
+          "endLine": 1247,
+          "sourceTextSha256": "6b270376505129089801fbabb629a08c3251a17172058219a285246740fffaf7"
+        },
+        {
+          "paragraphId": "shenshi-xuankong-xue:L1265-L1265",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "sourceFile": "sources/fulltext/fengshui/shenshi-xuankong-xue/fulltext.md",
+          "startLine": 1265,
+          "endLine": 1265,
+          "sourceTextSha256": "3c1de7cd95709083e1373b79aa7cd718a3c9827efcac5451761c584f6d693692"
+        },
+        {
+          "paragraphId": "shenshi-xuankong-xue:L1353-L1353",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "sourceFile": "sources/fulltext/fengshui/shenshi-xuankong-xue/fulltext.md",
+          "startLine": 1353,
+          "endLine": 1353,
+          "sourceTextSha256": "d1cb432674d9288e36776375f23210a09561835af85d1d80d360d45277e666e7"
+        },
+        {
+          "paragraphId": "shenshi-xuankong-xue:L1357-L1357",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "sourceFile": "sources/fulltext/fengshui/shenshi-xuankong-xue/fulltext.md",
+          "startLine": 1357,
+          "endLine": 1357,
+          "sourceTextSha256": "b204bde2573868f9918b5d41b87747a8506b41c03df13ba9865f05d18fd38d0d"
+        },
+        {
+          "paragraphId": "shenshi-xuankong-xue:L1361-L1361",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "sourceFile": "sources/fulltext/fengshui/shenshi-xuankong-xue/fulltext.md",
+          "startLine": 1361,
+          "endLine": 1361,
+          "sourceTextSha256": "b70a262ea9728f26dd79fa5b8173740e1584febe447995ddfd415fef1e94bb09"
+        },
+        {
+          "paragraphId": "shenshi-xuankong-xue:L1363-L1363",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "sourceFile": "sources/fulltext/fengshui/shenshi-xuankong-xue/fulltext.md",
+          "startLine": 1363,
+          "endLine": 1363,
+          "sourceTextSha256": "f71dbda1fc8f98c3c58a50225de8eac70fc4a539500ba90e17b1dcefc9ac8a5b"
+        },
+        {
+          "paragraphId": "shenshi-xuankong-xue:L1367-L1367",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "sourceFile": "sources/fulltext/fengshui/shenshi-xuankong-xue/fulltext.md",
+          "startLine": 1367,
+          "endLine": 1367,
+          "sourceTextSha256": "ed28f670a456b07df27bb0e213b9dddbd8bf1e22bc1d765e372d46b52a349aaf"
+        },
+        {
+          "paragraphId": "shenshi-xuankong-xue:L1371-L1371",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "sourceFile": "sources/fulltext/fengshui/shenshi-xuankong-xue/fulltext.md",
+          "startLine": 1371,
+          "endLine": 1371,
+          "sourceTextSha256": "a8c9231928d1c1db74eca85e0ca85a58205a64e465215d6e45b6e44501764fb4"
+        },
+        {
+          "paragraphId": "shenshi-xuankong-xue:L1381-L1381",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "sourceFile": "sources/fulltext/fengshui/shenshi-xuankong-xue/fulltext.md",
+          "startLine": 1381,
+          "endLine": 1381,
+          "sourceTextSha256": "ec07b4f067b53b4c525ae88fc390972113cd7a1463f964ec27ea756ca8a24008"
+        },
+        {
+          "paragraphId": "shenshi-xuankong-xue:L1385-L1385",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "sourceFile": "sources/fulltext/fengshui/shenshi-xuankong-xue/fulltext.md",
+          "startLine": 1385,
+          "endLine": 1385,
+          "sourceTextSha256": "74167401a8f0b6663a715bccd927cf326e96d11140a5c41bde6e45642444079e"
+        },
+        {
+          "paragraphId": "shenshi-xuankong-xue:L1387-L1387",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "sourceFile": "sources/fulltext/fengshui/shenshi-xuankong-xue/fulltext.md",
+          "startLine": 1387,
+          "endLine": 1387,
+          "sourceTextSha256": "726654f4e8d85ce8a8aca78669b6cef9f2c77628410dc5cb2d678454932f8505"
+        },
+        {
+          "paragraphId": "shenshi-xuankong-xue:L1391-L1396",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "sourceFile": "sources/fulltext/fengshui/shenshi-xuankong-xue/fulltext.md",
+          "startLine": 1391,
+          "endLine": 1396,
+          "sourceTextSha256": "6e94b65ceb5f0f59e53575f5db7469db52d85b72d94143c3cfb85105de8066d6"
+        },
+        {
+          "paragraphId": "shenshi-xuankong-xue:L1421-L1430",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "sourceFile": "sources/fulltext/fengshui/shenshi-xuankong-xue/fulltext.md",
+          "startLine": 1421,
+          "endLine": 1430,
+          "sourceTextSha256": "606c57b7ddcdc930b1898c36683c12e4f118f162f11b693846331b7dd2d54ede"
+        },
+        {
+          "paragraphId": "shenshi-xuankong-xue:L1442-L1442",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "sourceFile": "sources/fulltext/fengshui/shenshi-xuankong-xue/fulltext.md",
+          "startLine": 1442,
+          "endLine": 1442,
+          "sourceTextSha256": "a951102ca9dac10ce5e52fd600fe8470ed4e6f0e7cc4a810a7a3675913f47949"
+        },
+        {
+          "paragraphId": "shenshi-xuankong-xue:L1640-L1640",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "sourceFile": "sources/fulltext/fengshui/shenshi-xuankong-xue/fulltext.md",
+          "startLine": 1640,
+          "endLine": 1640,
+          "sourceTextSha256": "6bd67541d7c097dc301025e6ae1e1b481f01ddc9ceae802df382046b94ba9db4"
+        },
+        {
+          "paragraphId": "shenshi-xuankong-xue:L1650-L1650",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "sourceFile": "sources/fulltext/fengshui/shenshi-xuankong-xue/fulltext.md",
+          "startLine": 1650,
+          "endLine": 1650,
+          "sourceTextSha256": "9c383987b03918f5f13fa034e05aa7395a9a280e65747fc4b1efe5efdbefd475"
+        },
+        {
+          "paragraphId": "shenshi-xuankong-xue:L1652-L1652",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "sourceFile": "sources/fulltext/fengshui/shenshi-xuankong-xue/fulltext.md",
+          "startLine": 1652,
+          "endLine": 1652,
+          "sourceTextSha256": "4237c7c482e076466be5416db2aeeb3e3b1c732fa23d6a11c72bf2b8f22515fe"
+        },
+        {
+          "paragraphId": "shenshi-xuankong-xue:L1656-L1656",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "sourceFile": "sources/fulltext/fengshui/shenshi-xuankong-xue/fulltext.md",
+          "startLine": 1656,
+          "endLine": 1656,
+          "sourceTextSha256": "f1c191f230c2b5ca2cb05cc152169ff22e458852d43fd1c0fa26655b1eab8c26"
+        },
+        {
+          "paragraphId": "shenshi-xuankong-xue:L1658-L1658",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "sourceFile": "sources/fulltext/fengshui/shenshi-xuankong-xue/fulltext.md",
+          "startLine": 1658,
+          "endLine": 1658,
+          "sourceTextSha256": "665a8f9256c994c6abb326672451a7b8f3b80bf93fabad19dd7c21a6fed0dd8d"
+        },
+        {
+          "paragraphId": "shenshi-xuankong-xue:L1750-L1750",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "sourceFile": "sources/fulltext/fengshui/shenshi-xuankong-xue/fulltext.md",
+          "startLine": 1750,
+          "endLine": 1750,
+          "sourceTextSha256": "3bf70ccf1690fb338b3faa25038cac931d3f4a93d40d3947522c0c2e8fc8cb58"
+        },
+        {
+          "paragraphId": "shenshi-xuankong-xue:L1752-L1752",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "sourceFile": "sources/fulltext/fengshui/shenshi-xuankong-xue/fulltext.md",
+          "startLine": 1752,
+          "endLine": 1752,
+          "sourceTextSha256": "d6c3fb52bf4420094494801920545f8c5264494a4c3951432b743f6f107afb00"
+        },
+        {
+          "paragraphId": "shenshi-xuankong-xue:L1754-L1754",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "sourceFile": "sources/fulltext/fengshui/shenshi-xuankong-xue/fulltext.md",
+          "startLine": 1754,
+          "endLine": 1754,
+          "sourceTextSha256": "6360f78e797b811be20d3e026935a35c79ffd4988532b428c5e1bc93c598c5ca"
+        },
+        {
+          "paragraphId": "shenshi-xuankong-xue:L1756-L1756",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "sourceFile": "sources/fulltext/fengshui/shenshi-xuankong-xue/fulltext.md",
+          "startLine": 1756,
+          "endLine": 1756,
+          "sourceTextSha256": "01fc75a0a938faf5d6fbcdd70b569fdaef9cd7ec681821b4b519657f614d36dd"
+        },
+        {
+          "paragraphId": "shenshi-xuankong-xue:L1758-L1758",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "sourceFile": "sources/fulltext/fengshui/shenshi-xuankong-xue/fulltext.md",
+          "startLine": 1758,
+          "endLine": 1758,
+          "sourceTextSha256": "cf003de9c13a979c53887e530618a892304dccf198b5ab43c7da2cb8509f9a75"
+        },
+        {
+          "paragraphId": "shenshi-xuankong-xue:L1760-L1760",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "sourceFile": "sources/fulltext/fengshui/shenshi-xuankong-xue/fulltext.md",
+          "startLine": 1760,
+          "endLine": 1760,
+          "sourceTextSha256": "37a236da79b6a14cb90e866f0cea1a2cafddf4d2735d606b5fbf10adcaa2a057"
+        },
+        {
+          "paragraphId": "shenshi-xuankong-xue:L1774-L1774",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "sourceFile": "sources/fulltext/fengshui/shenshi-xuankong-xue/fulltext.md",
+          "startLine": 1774,
+          "endLine": 1774,
+          "sourceTextSha256": "d7ab7a5f041c07872452dca976e53d7d409df5ee59f582b7b5590db27f58f16a"
+        },
+        {
+          "paragraphId": "shenshi-xuankong-xue:L1778-L1784",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "sourceFile": "sources/fulltext/fengshui/shenshi-xuankong-xue/fulltext.md",
+          "startLine": 1778,
+          "endLine": 1784,
+          "sourceTextSha256": "00e37650cefeb0c014e885216980310ff1b871370b703ac309dc9fe4cead5c38"
+        }
+      ],
+      "projectModified": false
+    },
+    {
+      "role": "Judge A",
+      "verdict": "ACCEPT",
+      "scope": {
+        "annotationFile": "/Users/yuhanglin/fateradar-goal-20260912/classics/references/annotations/selection/yuqia-ji.json",
+        "paragraphRange": "yuqia-ji:L1421-L1801",
+        "entries": 160,
+        "sourceReviewed": 105,
+        "draft": 55,
+        "method": "逐条完整核读160原段与当前释义；连续范围全部非空上下文和标题及范围前后续文已读；非抽样。"
+      },
+      "annotationSha256": "9c27ee2c39f311667fe4205bf0cad42c75b90a880eef0708728b6f0bc7d3a70a",
+      "sourceSha256": "d75c07372dd51f74407cf29909725ea55f4a960f1dcc3d37a5e72be6181611f2",
+      "sourceEvidenceExactMatches": 160,
+      "requiredCorrections": [],
+      "findings": [
+        "L1487现为相并则判凶，没有擅增才字必要条件；同时保留吉星相并不忌。",
+        "灭没日嵌入普通段的题名被识别，L1491/L1493未误属九土鬼。",
+        "人神日干、日支、时支三表各按相邻显式表头配列；月日残段L1507未借表补齐。",
+        "上下兀及天迁残图未按期待宫序补造；已/末/回/目/B/问号等疑处保留。",
+        "杨公六月初二及七月两日、鹤神西北与东北仅两方等异常没有按惯例改字或补项。",
+        "入学与剃胎头禁忌保留，白虎头大吉与后续白虎足大凶不混同。",
+        "三元将军各月组仅释原日名断语，未假称恢复具体排日图。",
+        "source-reviewed限电子语义释读；全部verified=false，未冒充现实效验或影印校字完成。"
+      ],
+      "validation": "python3 tools/validate-annotations.py: 54 books, 63478 entries, 0 errors（同一候选当前检验）",
+      "entries": [
+        {
+          "paragraphId": "yuqia-ji:L1421-L1421",
+          "judgment": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndContextRead": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L1423-L1423",
+          "judgment": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndContextRead": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L1425-L1425",
+          "judgment": "ACCEPT",
+          "review": "draft",
+          "fullSourceAndContextRead": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L1427-L1427",
+          "judgment": "ACCEPT",
+          "review": "draft",
+          "fullSourceAndContextRead": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L1429-L1429",
+          "judgment": "ACCEPT",
+          "review": "draft",
+          "fullSourceAndContextRead": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L1431-L1431",
+          "judgment": "ACCEPT",
+          "review": "draft",
+          "fullSourceAndContextRead": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L1433-L1433",
+          "judgment": "ACCEPT",
+          "review": "draft",
+          "fullSourceAndContextRead": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L1435-L1435",
+          "judgment": "ACCEPT",
+          "review": "draft",
+          "fullSourceAndContextRead": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L1437-L1437",
+          "judgment": "ACCEPT",
+          "review": "draft",
+          "fullSourceAndContextRead": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L1439-L1439",
+          "judgment": "ACCEPT",
+          "review": "draft",
+          "fullSourceAndContextRead": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L1441-L1441",
+          "judgment": "ACCEPT",
+          "review": "draft",
+          "fullSourceAndContextRead": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L1443-L1443",
+          "judgment": "ACCEPT",
+          "review": "draft",
+          "fullSourceAndContextRead": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L1445-L1445",
+          "judgment": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndContextRead": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L1449-L1449",
+          "judgment": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndContextRead": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L1451-L1451",
+          "judgment": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndContextRead": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L1453-L1453",
+          "judgment": "ACCEPT",
+          "review": "draft",
+          "fullSourceAndContextRead": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L1457-L1457",
+          "judgment": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndContextRead": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L1459-L1459",
+          "judgment": "ACCEPT",
+          "review": "draft",
+          "fullSourceAndContextRead": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L1461-L1461",
+          "judgment": "ACCEPT",
+          "review": "draft",
+          "fullSourceAndContextRead": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L1463-L1463",
+          "judgment": "ACCEPT",
+          "review": "draft",
+          "fullSourceAndContextRead": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L1467-L1467",
+          "judgment": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndContextRead": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L1469-L1469",
+          "judgment": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndContextRead": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L1471-L1471",
+          "judgment": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndContextRead": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L1473-L1473",
+          "judgment": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndContextRead": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L1475-L1475",
+          "judgment": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndContextRead": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L1477-L1477",
+          "judgment": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndContextRead": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L1479-L1479",
+          "judgment": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndContextRead": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L1483-L1483",
+          "judgment": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndContextRead": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L1485-L1485",
+          "judgment": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndContextRead": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L1487-L1487",
+          "judgment": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndContextRead": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L1489-L1489",
+          "judgment": "ACCEPT",
+          "review": "draft",
+          "fullSourceAndContextRead": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L1491-L1491",
+          "judgment": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndContextRead": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L1493-L1493",
+          "judgment": "ACCEPT",
+          "review": "draft",
+          "fullSourceAndContextRead": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L1497-L1497",
+          "judgment": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndContextRead": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L1499-L1499",
+          "judgment": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndContextRead": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L1501-L1501",
+          "judgment": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndContextRead": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L1505-L1505",
+          "judgment": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndContextRead": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L1507-L1507",
+          "judgment": "ACCEPT",
+          "review": "draft",
+          "fullSourceAndContextRead": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L1509-L1509",
+          "judgment": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndContextRead": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L1511-L1511",
+          "judgment": "ACCEPT",
+          "review": "draft",
+          "fullSourceAndContextRead": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L1513-L1513",
+          "judgment": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndContextRead": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L1515-L1515",
+          "judgment": "ACCEPT",
+          "review": "draft",
+          "fullSourceAndContextRead": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L1517-L1517",
+          "judgment": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndContextRead": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L1519-L1519",
+          "judgment": "ACCEPT",
+          "review": "draft",
+          "fullSourceAndContextRead": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L1521-L1521",
+          "judgment": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndContextRead": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L1525-L1525",
+          "judgment": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndContextRead": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L1527-L1527",
+          "judgment": "ACCEPT",
+          "review": "draft",
+          "fullSourceAndContextRead": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L1529-L1529",
+          "judgment": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndContextRead": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L1533-L1533",
+          "judgment": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndContextRead": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L1535-L1535",
+          "judgment": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndContextRead": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L1537-L1537",
+          "judgment": "ACCEPT",
+          "review": "draft",
+          "fullSourceAndContextRead": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L1539-L1539",
+          "judgment": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndContextRead": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L1541-L1541",
+          "judgment": "ACCEPT",
+          "review": "draft",
+          "fullSourceAndContextRead": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L1543-L1543",
+          "judgment": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndContextRead": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L1545-L1545",
+          "judgment": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndContextRead": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L1547-L1547",
+          "judgment": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndContextRead": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L1549-L1549",
+          "judgment": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndContextRead": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L1551-L1551",
+          "judgment": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndContextRead": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L1553-L1553",
+          "judgment": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndContextRead": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L1555-L1555",
+          "judgment": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndContextRead": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L1557-L1557",
+          "judgment": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndContextRead": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L1559-L1559",
+          "judgment": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndContextRead": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L1561-L1561",
+          "judgment": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndContextRead": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L1563-L1563",
+          "judgment": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndContextRead": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L1565-L1565",
+          "judgment": "ACCEPT",
+          "review": "draft",
+          "fullSourceAndContextRead": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L1569-L1569",
+          "judgment": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndContextRead": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L1571-L1571",
+          "judgment": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndContextRead": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L1573-L1573",
+          "judgment": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndContextRead": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L1575-L1575",
+          "judgment": "ACCEPT",
+          "review": "draft",
+          "fullSourceAndContextRead": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L1577-L1577",
+          "judgment": "ACCEPT",
+          "review": "draft",
+          "fullSourceAndContextRead": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L1579-L1579",
+          "judgment": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndContextRead": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L1581-L1581",
+          "judgment": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndContextRead": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L1583-L1583",
+          "judgment": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndContextRead": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L1587-L1587",
+          "judgment": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndContextRead": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L1589-L1589",
+          "judgment": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndContextRead": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L1591-L1591",
+          "judgment": "ACCEPT",
+          "review": "draft",
+          "fullSourceAndContextRead": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L1593-L1593",
+          "judgment": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndContextRead": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L1597-L1597",
+          "judgment": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndContextRead": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L1601-L1601",
+          "judgment": "ACCEPT",
+          "review": "draft",
+          "fullSourceAndContextRead": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L1603-L1603",
+          "judgment": "ACCEPT",
+          "review": "draft",
+          "fullSourceAndContextRead": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L1605-L1605",
+          "judgment": "ACCEPT",
+          "review": "draft",
+          "fullSourceAndContextRead": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L1607-L1607",
+          "judgment": "ACCEPT",
+          "review": "draft",
+          "fullSourceAndContextRead": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L1609-L1609",
+          "judgment": "ACCEPT",
+          "review": "draft",
+          "fullSourceAndContextRead": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L1611-L1611",
+          "judgment": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndContextRead": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L1613-L1613",
+          "judgment": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndContextRead": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L1619-L1619",
+          "judgment": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndContextRead": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L1621-L1621",
+          "judgment": "ACCEPT",
+          "review": "draft",
+          "fullSourceAndContextRead": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L1625-L1625",
+          "judgment": "ACCEPT",
+          "review": "draft",
+          "fullSourceAndContextRead": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L1627-L1627",
+          "judgment": "ACCEPT",
+          "review": "draft",
+          "fullSourceAndContextRead": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L1629-L1629",
+          "judgment": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndContextRead": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L1631-L1631",
+          "judgment": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndContextRead": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L1633-L1633",
+          "judgment": "ACCEPT",
+          "review": "draft",
+          "fullSourceAndContextRead": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L1635-L1635",
+          "judgment": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndContextRead": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L1637-L1637",
+          "judgment": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndContextRead": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L1639-L1639",
+          "judgment": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndContextRead": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L1641-L1641",
+          "judgment": "ACCEPT",
+          "review": "draft",
+          "fullSourceAndContextRead": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L1643-L1643",
+          "judgment": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndContextRead": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L1647-L1647",
+          "judgment": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndContextRead": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L1649-L1649",
+          "judgment": "ACCEPT",
+          "review": "draft",
+          "fullSourceAndContextRead": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L1653-L1653",
+          "judgment": "ACCEPT",
+          "review": "draft",
+          "fullSourceAndContextRead": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L1657-L1657",
+          "judgment": "ACCEPT",
+          "review": "draft",
+          "fullSourceAndContextRead": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L1659-L1659",
+          "judgment": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndContextRead": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L1663-L1663",
+          "judgment": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndContextRead": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L1665-L1665",
+          "judgment": "ACCEPT",
+          "review": "draft",
+          "fullSourceAndContextRead": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L1667-L1667",
+          "judgment": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndContextRead": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L1669-L1669",
+          "judgment": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndContextRead": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L1673-L1673",
+          "judgment": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndContextRead": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L1675-L1675",
+          "judgment": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndContextRead": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L1677-L1677",
+          "judgment": "ACCEPT",
+          "review": "draft",
+          "fullSourceAndContextRead": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L1679-L1679",
+          "judgment": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndContextRead": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L1681-L1681",
+          "judgment": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndContextRead": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L1683-L1683",
+          "judgment": "ACCEPT",
+          "review": "draft",
+          "fullSourceAndContextRead": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L1685-L1685",
+          "judgment": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndContextRead": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L1687-L1687",
+          "judgment": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndContextRead": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L1691-L1691",
+          "judgment": "ACCEPT",
+          "review": "draft",
+          "fullSourceAndContextRead": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L1693-L1693",
+          "judgment": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndContextRead": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L1695-L1695",
+          "judgment": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndContextRead": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L1699-L1699",
+          "judgment": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndContextRead": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L1701-L1701",
+          "judgment": "ACCEPT",
+          "review": "draft",
+          "fullSourceAndContextRead": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L1703-L1703",
+          "judgment": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndContextRead": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L1705-L1705",
+          "judgment": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndContextRead": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L1707-L1707",
+          "judgment": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndContextRead": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L1709-L1709",
+          "judgment": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndContextRead": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L1711-L1711",
+          "judgment": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndContextRead": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L1713-L1713",
+          "judgment": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndContextRead": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L1715-L1715",
+          "judgment": "ACCEPT",
+          "review": "draft",
+          "fullSourceAndContextRead": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L1717-L1717",
+          "judgment": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndContextRead": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L1719-L1719",
+          "judgment": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndContextRead": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L1721-L1721",
+          "judgment": "ACCEPT",
+          "review": "draft",
+          "fullSourceAndContextRead": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L1725-L1725",
+          "judgment": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndContextRead": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L1727-L1727",
+          "judgment": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndContextRead": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L1729-L1729",
+          "judgment": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndContextRead": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L1733-L1733",
+          "judgment": "ACCEPT",
+          "review": "draft",
+          "fullSourceAndContextRead": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L1735-L1735",
+          "judgment": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndContextRead": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L1739-L1739",
+          "judgment": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndContextRead": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L1743-L1743",
+          "judgment": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndContextRead": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L1745-L1745",
+          "judgment": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndContextRead": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L1749-L1749",
+          "judgment": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndContextRead": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L1753-L1753",
+          "judgment": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndContextRead": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L1757-L1757",
+          "judgment": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndContextRead": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L1761-L1761",
+          "judgment": "ACCEPT",
+          "review": "draft",
+          "fullSourceAndContextRead": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L1763-L1763",
+          "judgment": "ACCEPT",
+          "review": "draft",
+          "fullSourceAndContextRead": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L1767-L1767",
+          "judgment": "ACCEPT",
+          "review": "draft",
+          "fullSourceAndContextRead": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L1769-L1769",
+          "judgment": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndContextRead": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L1771-L1771",
+          "judgment": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndContextRead": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L1773-L1773",
+          "judgment": "ACCEPT",
+          "review": "draft",
+          "fullSourceAndContextRead": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L1775-L1775",
+          "judgment": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndContextRead": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L1777-L1777",
+          "judgment": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndContextRead": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L1779-L1779",
+          "judgment": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndContextRead": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L1781-L1781",
+          "judgment": "ACCEPT",
+          "review": "draft",
+          "fullSourceAndContextRead": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L1783-L1783",
+          "judgment": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndContextRead": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L1785-L1785",
+          "judgment": "ACCEPT",
+          "review": "draft",
+          "fullSourceAndContextRead": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L1787-L1787",
+          "judgment": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndContextRead": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L1789-L1789",
+          "judgment": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndContextRead": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L1791-L1791",
+          "judgment": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndContextRead": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L1793-L1793",
+          "judgment": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndContextRead": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L1795-L1795",
+          "judgment": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndContextRead": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L1797-L1797",
+          "judgment": "ACCEPT",
+          "review": "draft",
+          "fullSourceAndContextRead": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L1799-L1799",
+          "judgment": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndContextRead": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L1801-L1801",
+          "judgment": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndContextRead": true
+        }
+      ]
+    },
+    {
+      "verdict": "ACCEPT",
+      "scope": "160 requested entries L1421-L1801, read complete source paragraphs and actual project vernacular; no project edits",
+      "annotationSha256": "9c27ee2c39f311667fe4205bf0cad42c75b90a880eef0708728b6f0bc7d3a70a",
+      "sourceSha256": "d75c07372dd51f74407cf29909725ea55f4a960f1dcc3d37a5e72be6181611f2",
+      "counts": {
+        "requested": 160,
+        "sourceReviewed": 105,
+        "draft": 55,
+        "actualPackEntries": 211,
+        "validatorErrors": 0,
+        "evidenceSourceMismatch": 0
+      },
+      "evidence": [
+        "L1487保留相并则凶、有吉星相并则不忌，已撤才，不将充分条件改成必要条件。",
+        "L1489题为灭没日，L1491行船忌依真实小标题归属，未沿用库存九土鬼heading误挂。",
+        "L1513/L1517/L1521分别对日干/日支/时支表头，完整保留10/12/12部位次序，不跨表挂错。",
+        "L1453已年、L1459癸末、L1605八月B及未回、L1683戊亥均保留draft，不用干支规律改字。",
+        "L1635西北忌戌乾未增亥；L1641东北忌醜艮未增寅。",
+        "L1581六月初二及七月双日期按原文，不由连续数列纠成常见版本。",
+        "L1717庚午甲午释读作两个完整日柱，没有改source。",
+        "L1743初五饮食与L1745初五剃胎头禁语并存；未把前者或后者删成统一判断。",
+        "L1775金库大凶及L1801白虎头大吉按本表，不按名称善恶套写。",
+        "所有105 source-reviewed的解释均限于电子字面和上下文；医疗、人身灾应均归旧说，未转为现实指南。"
+      ]
+    }
+  ]
+}
