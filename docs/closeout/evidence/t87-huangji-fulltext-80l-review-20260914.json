@@ -1,0 +1,21 @@
+{
+  "batch": "t87-huangji-fulltext-80l",
+  "scope": "Twelfth 80 unannotated fulltext.md paragraphs L22378-L22695 Wu-ding to Di-yi; not SK1573, not algorithm",
+  "candidateSha256": "d462288fd5a8ee6cebc013b857a9666cb9156a9ae1d039e930a87f1516705728",
+  "evidenceSha256": "2fe52a9bb4d3582094c5c828a5e0b08855c69c31df1031f79984d73619ab2a64",
+  "rootReview": "Author draft; independent B ACCEPT. 76 source-reviewed chronicle labels / 4 draft residual glyphs.",
+  "reviewCounts": {
+    "source-reviewed": 76,
+    "draft": 4
+  },
+  "judges": [
+    {
+      "judge": "B",
+      "verdict": "ACCEPT",
+      "candidateSha256": "d462288fd5a8ee6cebc013b857a9666cb9156a9ae1d039e930a87f1516705728",
+      "completeParagraphsRead": 80,
+      "findings": []
+    }
+  ],
+  "notBookCompletion": true
+}
