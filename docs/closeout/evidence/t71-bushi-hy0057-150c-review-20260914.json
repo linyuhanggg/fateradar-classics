@@ -1,0 +1,33 @@
+{
+  "batch": "t71-bushi-hy0057-150c",
+  "scope": "Third 150 unannotated shidian HY0057 paragraphs L3865-5223; website juan != print; not liuyao algorithm coverage",
+  "candidateSha256": "897f98fa272a07000792fca34725783ba2b996a7e6601b0e61cb9b4c3b019a58",
+  "evidenceSha256": "1a388eb58d22327560b2a929222ab021c4f275d3e9f8f1e51c6927e2e069c462",
+  "previousCandidateSha256": "e4f71289c40e491d68e6f7fbc1dcb3e6bf6862efccf60694c421f5a68956cfa0",
+  "rootReview": "Author draft; independent B then B2 NEEDS_REVISION on 夀/擔嚢/攺/經营/擔土; B3 ACCEPT. 58 source-reviewed / 92 draft.",
+  "reviewCounts": {
+    "source-reviewed": 58,
+    "draft": 92
+  },
+  "judges": [
+    {
+      "judge": "B",
+      "verdict": "NEEDS_REVISION",
+      "findings": ["F1", "F2", "F3"]
+    },
+    {
+      "judge": "B2",
+      "verdict": "NEEDS_REVISION",
+      "findings": ["F4"]
+    },
+    {
+      "judge": "B3",
+      "verdict": "ACCEPT",
+      "candidateSha256": "897f98fa272a07000792fca34725783ba2b996a7e6601b0e61cb9b4c3b019a58",
+      "completeParagraphsRead": 150,
+      "previousFindingsClosed": ["F1", "F2", "F3", "F4"],
+      "findings": []
+    }
+  ],
+  "notBookCompletion": true
+}
