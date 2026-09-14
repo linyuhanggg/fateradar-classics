@@ -1,0 +1,22 @@
+{
+  "batch": "t95-huangji-fulltext-80t",
+  "scope": "Twentieth 80 unannotated fulltext.md paragraphs L25258-L25645 Eastern Han to Western Jin; not SK1573, not algorithm",
+  "candidateSha256": "3736d1b4f3e04065d654baaf3d8a242d42f40fb03957cce281c8fb1f89bc5ca7",
+  "evidenceSha256": "a54f523429a1eeb28e3ac79c3a8c7c0335ac5b1d3146a8398fd85ca2426b645e",
+  "rootReview": "Author draft; independent B ACCEPT. 40 source-reviewed chronicle labels / 40 draft including L25327 䖍 demotion.",
+  "reviewCounts": {
+    "source-reviewed": 40,
+    "draft": 40
+  },
+  "judges": [
+    {
+      "judge": "B",
+      "verdict": "ACCEPT",
+      "candidateSha256": "3736d1b4f3e04065d654baaf3d8a242d42f40fb03957cce281c8fb1f89bc5ca7",
+      "completeParagraphsRead": 80,
+      "findings": [],
+      "demotedToDraft": ["huangji-jingshi:L25327-L25327"]
+    }
+  ],
+  "notBookCompletion": true
+}

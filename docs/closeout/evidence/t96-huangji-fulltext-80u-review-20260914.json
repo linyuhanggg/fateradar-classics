@@ -1,0 +1,21 @@
+{
+  "batch": "t96-huangji-fulltext-80u",
+  "scope": "Twenty-first 80 unannotated fulltext.md paragraphs L25649-L26111 Eastern Jin to Sui; not SK1573, not algorithm",
+  "candidateSha256": "8c15efe85cb43a5d8af42f3842012970cee34ec8e25692c82da0942e56f97040",
+  "evidenceSha256": "4de3e778fd6c432bc56656f16450a47b9816ba35f993e11c0fa4c2370c16d247",
+  "rootReview": "Author draft; independent B2 ACCEPT after F1 廵 demotion. 13 source-reviewed / 67 draft.",
+  "reviewCounts": {
+    "source-reviewed": 13,
+    "draft": 67
+  },
+  "judges": [
+    {
+      "judge": "B2",
+      "verdict": "ACCEPT",
+      "candidateSha256": "8c15efe85cb43a5d8af42f3842012970cee34ec8e25692c82da0942e56f97040",
+      "completeParagraphsRead": 80,
+      "findings": []
+    }
+  ],
+  "notBookCompletion": true
+}
