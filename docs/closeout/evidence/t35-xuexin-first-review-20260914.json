@@ -1,0 +1,653 @@
+{
+  "scope": "雪心赋SDZJ0175句解首96库存段，不是全书完成",
+  "sourceReviewed": 64,
+  "draft": 32,
+  "reviews": [
+    {
+      "judgment": "ACCEPT",
+      "scope": "首96条全部完整对读，sourceText逐条与项目行范围完全相同；只读项目，无影印校勘声明。",
+      "nonBlockingSuggestions": [
+        {
+          "paragraphId": "xuexin-fu:shidian-SDZJ0175:P7415886624653066266",
+          "suggestion": "这是完整序文且末有署名，kind用序跋目录比理论更精确；draft及主体释义可保留。"
+        },
+        {
+          "paragraphId": "xuexin-fu:shidian-SDZJ0175:P7415886700674744358",
+          "suggestion": "“山東相、山西將”在本段内部结构完整，没有像“常多君子”那样明确的字义阻碍；疑字举例建议只留“常多君子”，不因统计未验证把完整字串另判讹字。draft不必撤。"
+        },
+        {
+          "paragraphId": "xuexin-fu:shidian-SDZJ0175:P7415886700733431817",
+          "suggestion": "若采用严格原字引述，宜将“宜扞”写为原文“冝扞”；属规范字与异体差别，不构成语义阻断。"
+        }
+      ],
+      "acceptedChecks": [
+        "正赋与注文整体区分准确，没有把注者引述直接冒充正赋作者原句。",
+        "P7415886700674711590木火水金四星原配对完整保留，未补土星，未用通行旺衰表覆盖原文。",
+        "P7415886700733431817保留注者反对机械方位卦例的立场，与正赋山分八卦分别表达。",
+        "P7415886700980912154末會扵与下一原段P7415886700980928538明堂也连读成立；相关ID指向正确，不是猜补残句。",
+        "其他具体列出的draft疑串均可在该段找到；对原文复杂路线、名录、历数和诗句没有强制复原。",
+        "相关段大体为真实相邻上下文，第一章末和第二章首之间的链接不等于误并章节。",
+        "没有verified=true或独立底本校勘宣称。"
+      ],
+      "resolvedFindings": [
+        {
+          "paragraphId": "xuexin-fu:shidian-SDZJ0175:P7415886700733530121",
+          "issue": "疑字引述笔误。释义称原文为“陽泛”，实际原文为“隂泛右路通”。",
+          "correction": "将“陽泛”等文字未校改为“隂泛”“伏義氏”等原字未校；其余释义及draft可保留。"
+        },
+        {
+          "paragraphId": "xuexin-fu:shidian-SDZJ0175:P7415886700926517274",
+          "issue": "疑字引述笔误。释义称“皆詔取”，实际原文为“龍布雖雄湏詔取”，没有“皆詔取”。",
+          "correction": "将疑文引述改为“山大九”“龍布雖雄湏詔取”，其余释义及draft可保留。"
+        },
+        {
+          "paragraphId": "xuexin-fu:shidian-SDZJ0175:P7415886700926271514",
+          "issue": "原句“以言構山發出衆支”被无说明确定释成“主山”，存在把不明原字直接换成明确术语的问题。",
+          "correction": "改为：『注文说山体发出众支，有回顾成为护从的，也有分去另结垣堂的，去来各有结作。开头“構山”字义待核，不直接改作“主山”。』建议保持draft直至该字释读有明确根据。"
+        }
+      ],
+      "blockingFindings": [],
+      "finalVerification": "三项逐条读取最终候选确认已修：隂泛右路通、龍布雖雄湏詔取均与原文一致，構山保留疑字且改中性释义并降draft。",
+      "candidateSha256": "5337d43805570ea492fe87410ff56831fbdd6fcacaacf4300b414fb250885828"
+    },
+    {
+      "role": "Judge B",
+      "verdict": "ACCEPT",
+      "candidateSha256": "5337d43805570ea492fe87410ff56831fbdd6fcacaacf4300b414fb250885828",
+      "coverage": {
+        "entries": 96,
+        "fullSourceParagraphsRead": 96,
+        "sourceReviewed": 64,
+        "draft": 32,
+        "sourceRawExactMatches": 96,
+        "method": "逐条核读96完整电子原段与释义，连读正赋/注文交替及段95后续，不是抽样。"
+      },
+      "requiredCorrections": [],
+      "findings": [
+        "序文严重讹字及署名保持draft；并未把后世注者意见统署正赋作者。",
+        "已核3项修正：隂泛右路通、龍布雖雄湏詔取、構山不擅改主山且draft。",
+        "三停、山分八卦、水口明堂及同干异枝等注文的条件和例外保留，未缩为无条件口诀。",
+        "第95条源句末为会于，后续真实原段为明堂也，relatedParagraphIds已指向P7415886700980928538；释义明说须连读，没有伪装独立完整原句。",
+        "地灵人杰、葬荫与清浊贵贱为传统说法或注者论证，未声称经验因果已获证。"
+      ],
+      "entries": [
+        {
+          "paragraphId": "xuexin-fu:shidian-SDZJ0175:P7415886624653017114",
+          "judgment": "ACCEPT",
+          "review": "draft",
+          "fullSourceAndContextRead": true
+        },
+        {
+          "paragraphId": "xuexin-fu:shidian-SDZJ0175:P7415886624653033498",
+          "judgment": "ACCEPT",
+          "review": "draft",
+          "fullSourceAndContextRead": true
+        },
+        {
+          "paragraphId": "xuexin-fu:shidian-SDZJ0175:P7415886624653049882",
+          "judgment": "ACCEPT",
+          "review": "draft",
+          "fullSourceAndContextRead": true
+        },
+        {
+          "paragraphId": "xuexin-fu:shidian-SDZJ0175:P7415886624653066266",
+          "judgment": "ACCEPT",
+          "review": "draft",
+          "fullSourceAndContextRead": true
+        },
+        {
+          "paragraphId": "xuexin-fu:shidian-SDZJ0175:P7415886624653082650",
+          "judgment": "ACCEPT",
+          "review": "draft",
+          "fullSourceAndContextRead": true
+        },
+        {
+          "paragraphId": "xuexin-fu:shidian-SDZJ0175:P7415886700536152074",
+          "judgment": "ACCEPT",
+          "review": "draft",
+          "fullSourceAndContextRead": true
+        },
+        {
+          "paragraphId": "xuexin-fu:shidian-SDZJ0175:P7415886700536168458",
+          "judgment": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndContextRead": true
+        },
+        {
+          "paragraphId": "xuexin-fu:shidian-SDZJ0175:P7415886700536184842",
+          "judgment": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndContextRead": true
+        },
+        {
+          "paragraphId": "xuexin-fu:shidian-SDZJ0175:P7415886700536201226",
+          "judgment": "ACCEPT",
+          "review": "draft",
+          "fullSourceAndContextRead": true
+        },
+        {
+          "paragraphId": "xuexin-fu:shidian-SDZJ0175:P7415886700536217610",
+          "judgment": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndContextRead": true
+        },
+        {
+          "paragraphId": "xuexin-fu:shidian-SDZJ0175:P7415886700536233994",
+          "judgment": "ACCEPT",
+          "review": "draft",
+          "fullSourceAndContextRead": true
+        },
+        {
+          "paragraphId": "xuexin-fu:shidian-SDZJ0175:P7415886700536250378",
+          "judgment": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndContextRead": true
+        },
+        {
+          "paragraphId": "xuexin-fu:shidian-SDZJ0175:P7415886700536266762",
+          "judgment": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndContextRead": true
+        },
+        {
+          "paragraphId": "xuexin-fu:shidian-SDZJ0175:P7415886700536283146",
+          "judgment": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndContextRead": true
+        },
+        {
+          "paragraphId": "xuexin-fu:shidian-SDZJ0175:P7415886700536299530",
+          "judgment": "ACCEPT",
+          "review": "draft",
+          "fullSourceAndContextRead": true
+        },
+        {
+          "paragraphId": "xuexin-fu:shidian-SDZJ0175:P7415886700536315914",
+          "judgment": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndContextRead": true
+        },
+        {
+          "paragraphId": "xuexin-fu:shidian-SDZJ0175:P7415886700536332298",
+          "judgment": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndContextRead": true
+        },
+        {
+          "paragraphId": "xuexin-fu:shidian-SDZJ0175:P7415886700536348682",
+          "judgment": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndContextRead": true
+        },
+        {
+          "paragraphId": "xuexin-fu:shidian-SDZJ0175:P7415886700536365066",
+          "judgment": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndContextRead": true
+        },
+        {
+          "paragraphId": "xuexin-fu:shidian-SDZJ0175:P7415886700536381450",
+          "judgment": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndContextRead": true
+        },
+        {
+          "paragraphId": "xuexin-fu:shidian-SDZJ0175:P7415886700536397834",
+          "judgment": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndContextRead": true
+        },
+        {
+          "paragraphId": "xuexin-fu:shidian-SDZJ0175:P7415886700536414218",
+          "judgment": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndContextRead": true
+        },
+        {
+          "paragraphId": "xuexin-fu:shidian-SDZJ0175:P7415886700536430602",
+          "judgment": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndContextRead": true
+        },
+        {
+          "paragraphId": "xuexin-fu:shidian-SDZJ0175:P7415886700536446986",
+          "judgment": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndContextRead": true
+        },
+        {
+          "paragraphId": "xuexin-fu:shidian-SDZJ0175:P7415886700674547750",
+          "judgment": "ACCEPT",
+          "review": "draft",
+          "fullSourceAndContextRead": true
+        },
+        {
+          "paragraphId": "xuexin-fu:shidian-SDZJ0175:P7415886700674564134",
+          "judgment": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndContextRead": true
+        },
+        {
+          "paragraphId": "xuexin-fu:shidian-SDZJ0175:P7415886700674580518",
+          "judgment": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndContextRead": true
+        },
+        {
+          "paragraphId": "xuexin-fu:shidian-SDZJ0175:P7415886700674596902",
+          "judgment": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndContextRead": true
+        },
+        {
+          "paragraphId": "xuexin-fu:shidian-SDZJ0175:P7415886700674613286",
+          "judgment": "ACCEPT",
+          "review": "draft",
+          "fullSourceAndContextRead": true
+        },
+        {
+          "paragraphId": "xuexin-fu:shidian-SDZJ0175:P7415886700674629670",
+          "judgment": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndContextRead": true
+        },
+        {
+          "paragraphId": "xuexin-fu:shidian-SDZJ0175:P7415886700674646054",
+          "judgment": "ACCEPT",
+          "review": "draft",
+          "fullSourceAndContextRead": true
+        },
+        {
+          "paragraphId": "xuexin-fu:shidian-SDZJ0175:P7415886700674662438",
+          "judgment": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndContextRead": true
+        },
+        {
+          "paragraphId": "xuexin-fu:shidian-SDZJ0175:P7415886700674678822",
+          "judgment": "ACCEPT",
+          "review": "draft",
+          "fullSourceAndContextRead": true
+        },
+        {
+          "paragraphId": "xuexin-fu:shidian-SDZJ0175:P7415886700674695206",
+          "judgment": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndContextRead": true
+        },
+        {
+          "paragraphId": "xuexin-fu:shidian-SDZJ0175:P7415886700674711590",
+          "judgment": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndContextRead": true
+        },
+        {
+          "paragraphId": "xuexin-fu:shidian-SDZJ0175:P7415886700674727974",
+          "judgment": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndContextRead": true
+        },
+        {
+          "paragraphId": "xuexin-fu:shidian-SDZJ0175:P7415886700674744358",
+          "judgment": "ACCEPT",
+          "review": "draft",
+          "fullSourceAndContextRead": true
+        },
+        {
+          "paragraphId": "xuexin-fu:shidian-SDZJ0175:P7415886700674760742",
+          "judgment": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndContextRead": true
+        },
+        {
+          "paragraphId": "xuexin-fu:shidian-SDZJ0175:P7415886700674777126",
+          "judgment": "ACCEPT",
+          "review": "draft",
+          "fullSourceAndContextRead": true
+        },
+        {
+          "paragraphId": "xuexin-fu:shidian-SDZJ0175:P7415886700674793510",
+          "judgment": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndContextRead": true
+        },
+        {
+          "paragraphId": "xuexin-fu:shidian-SDZJ0175:P7415886700674809894",
+          "judgment": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndContextRead": true
+        },
+        {
+          "paragraphId": "xuexin-fu:shidian-SDZJ0175:P7415886700674826278",
+          "judgment": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndContextRead": true
+        },
+        {
+          "paragraphId": "xuexin-fu:shidian-SDZJ0175:P7415886700674842662",
+          "judgment": "ACCEPT",
+          "review": "draft",
+          "fullSourceAndContextRead": true
+        },
+        {
+          "paragraphId": "xuexin-fu:shidian-SDZJ0175:P7415886700674859046",
+          "judgment": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndContextRead": true
+        },
+        {
+          "paragraphId": "xuexin-fu:shidian-SDZJ0175:P7415886700712296458",
+          "judgment": "ACCEPT",
+          "review": "draft",
+          "fullSourceAndContextRead": true
+        },
+        {
+          "paragraphId": "xuexin-fu:shidian-SDZJ0175:P7415886700712312842",
+          "judgment": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndContextRead": true
+        },
+        {
+          "paragraphId": "xuexin-fu:shidian-SDZJ0175:P7415886700712329226",
+          "judgment": "ACCEPT",
+          "review": "draft",
+          "fullSourceAndContextRead": true
+        },
+        {
+          "paragraphId": "xuexin-fu:shidian-SDZJ0175:P7415886700733317129",
+          "judgment": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndContextRead": true
+        },
+        {
+          "paragraphId": "xuexin-fu:shidian-SDZJ0175:P7415886700733333513",
+          "judgment": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndContextRead": true
+        },
+        {
+          "paragraphId": "xuexin-fu:shidian-SDZJ0175:P7415886700733349897",
+          "judgment": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndContextRead": true
+        },
+        {
+          "paragraphId": "xuexin-fu:shidian-SDZJ0175:P7415886700733366281",
+          "judgment": "ACCEPT",
+          "review": "draft",
+          "fullSourceAndContextRead": true
+        },
+        {
+          "paragraphId": "xuexin-fu:shidian-SDZJ0175:P7415886700733382665",
+          "judgment": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndContextRead": true
+        },
+        {
+          "paragraphId": "xuexin-fu:shidian-SDZJ0175:P7415886700733399049",
+          "judgment": "ACCEPT",
+          "review": "draft",
+          "fullSourceAndContextRead": true
+        },
+        {
+          "paragraphId": "xuexin-fu:shidian-SDZJ0175:P7415886700733415433",
+          "judgment": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndContextRead": true
+        },
+        {
+          "paragraphId": "xuexin-fu:shidian-SDZJ0175:P7415886700733431817",
+          "judgment": "ACCEPT",
+          "review": "draft",
+          "fullSourceAndContextRead": true
+        },
+        {
+          "paragraphId": "xuexin-fu:shidian-SDZJ0175:P7415886700733448201",
+          "judgment": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndContextRead": true
+        },
+        {
+          "paragraphId": "xuexin-fu:shidian-SDZJ0175:P7415886700733464585",
+          "judgment": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndContextRead": true
+        },
+        {
+          "paragraphId": "xuexin-fu:shidian-SDZJ0175:P7415886700733480969",
+          "judgment": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndContextRead": true
+        },
+        {
+          "paragraphId": "xuexin-fu:shidian-SDZJ0175:P7415886700733497353",
+          "judgment": "ACCEPT",
+          "review": "draft",
+          "fullSourceAndContextRead": true
+        },
+        {
+          "paragraphId": "xuexin-fu:shidian-SDZJ0175:P7415886700733513737",
+          "judgment": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndContextRead": true
+        },
+        {
+          "paragraphId": "xuexin-fu:shidian-SDZJ0175:P7415886700733530121",
+          "judgment": "ACCEPT",
+          "review": "draft",
+          "fullSourceAndContextRead": true
+        },
+        {
+          "paragraphId": "xuexin-fu:shidian-SDZJ0175:P7415886700733546505",
+          "judgment": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndContextRead": true
+        },
+        {
+          "paragraphId": "xuexin-fu:shidian-SDZJ0175:P7415886700733562889",
+          "judgment": "ACCEPT",
+          "review": "draft",
+          "fullSourceAndContextRead": true
+        },
+        {
+          "paragraphId": "xuexin-fu:shidian-SDZJ0175:P7415886700733579273",
+          "judgment": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndContextRead": true
+        },
+        {
+          "paragraphId": "xuexin-fu:shidian-SDZJ0175:P7415886700926205978",
+          "judgment": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndContextRead": true
+        },
+        {
+          "paragraphId": "xuexin-fu:shidian-SDZJ0175:P7415886700926222362",
+          "judgment": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndContextRead": true
+        },
+        {
+          "paragraphId": "xuexin-fu:shidian-SDZJ0175:P7415886700926238746",
+          "judgment": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndContextRead": true
+        },
+        {
+          "paragraphId": "xuexin-fu:shidian-SDZJ0175:P7415886700926255130",
+          "judgment": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndContextRead": true
+        },
+        {
+          "paragraphId": "xuexin-fu:shidian-SDZJ0175:P7415886700926271514",
+          "judgment": "ACCEPT",
+          "review": "draft",
+          "fullSourceAndContextRead": true
+        },
+        {
+          "paragraphId": "xuexin-fu:shidian-SDZJ0175:P7415886700926287898",
+          "judgment": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndContextRead": true
+        },
+        {
+          "paragraphId": "xuexin-fu:shidian-SDZJ0175:P7415886700926304282",
+          "judgment": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndContextRead": true
+        },
+        {
+          "paragraphId": "xuexin-fu:shidian-SDZJ0175:P7415886700926320666",
+          "judgment": "ACCEPT",
+          "review": "draft",
+          "fullSourceAndContextRead": true
+        },
+        {
+          "paragraphId": "xuexin-fu:shidian-SDZJ0175:P7415886700926337050",
+          "judgment": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndContextRead": true
+        },
+        {
+          "paragraphId": "xuexin-fu:shidian-SDZJ0175:P7415886700926353434",
+          "judgment": "ACCEPT",
+          "review": "draft",
+          "fullSourceAndContextRead": true
+        },
+        {
+          "paragraphId": "xuexin-fu:shidian-SDZJ0175:P7415886700926369818",
+          "judgment": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndContextRead": true
+        },
+        {
+          "paragraphId": "xuexin-fu:shidian-SDZJ0175:P7415886700926386202",
+          "judgment": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndContextRead": true
+        },
+        {
+          "paragraphId": "xuexin-fu:shidian-SDZJ0175:P7415886700926402586",
+          "judgment": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndContextRead": true
+        },
+        {
+          "paragraphId": "xuexin-fu:shidian-SDZJ0175:P7415886700926418970",
+          "judgment": "ACCEPT",
+          "review": "draft",
+          "fullSourceAndContextRead": true
+        },
+        {
+          "paragraphId": "xuexin-fu:shidian-SDZJ0175:P7415886700926435354",
+          "judgment": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndContextRead": true
+        },
+        {
+          "paragraphId": "xuexin-fu:shidian-SDZJ0175:P7415886700926451738",
+          "judgment": "ACCEPT",
+          "review": "draft",
+          "fullSourceAndContextRead": true
+        },
+        {
+          "paragraphId": "xuexin-fu:shidian-SDZJ0175:P7415886700926468122",
+          "judgment": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndContextRead": true
+        },
+        {
+          "paragraphId": "xuexin-fu:shidian-SDZJ0175:P7415886700926484506",
+          "judgment": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndContextRead": true
+        },
+        {
+          "paragraphId": "xuexin-fu:shidian-SDZJ0175:P7415886700926500890",
+          "judgment": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndContextRead": true
+        },
+        {
+          "paragraphId": "xuexin-fu:shidian-SDZJ0175:P7415886700926517274",
+          "judgment": "ACCEPT",
+          "review": "draft",
+          "fullSourceAndContextRead": true
+        },
+        {
+          "paragraphId": "xuexin-fu:shidian-SDZJ0175:P7415886700980731930",
+          "judgment": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndContextRead": true
+        },
+        {
+          "paragraphId": "xuexin-fu:shidian-SDZJ0175:P7415886700980748314",
+          "judgment": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndContextRead": true
+        },
+        {
+          "paragraphId": "xuexin-fu:shidian-SDZJ0175:P7415886700980764698",
+          "judgment": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndContextRead": true
+        },
+        {
+          "paragraphId": "xuexin-fu:shidian-SDZJ0175:P7415886700980781082",
+          "judgment": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndContextRead": true
+        },
+        {
+          "paragraphId": "xuexin-fu:shidian-SDZJ0175:P7415886700980797466",
+          "judgment": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndContextRead": true
+        },
+        {
+          "paragraphId": "xuexin-fu:shidian-SDZJ0175:P7415886700980813850",
+          "judgment": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndContextRead": true
+        },
+        {
+          "paragraphId": "xuexin-fu:shidian-SDZJ0175:P7415886700980830234",
+          "judgment": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndContextRead": true
+        },
+        {
+          "paragraphId": "xuexin-fu:shidian-SDZJ0175:P7415886700980846618",
+          "judgment": "ACCEPT",
+          "review": "draft",
+          "fullSourceAndContextRead": true
+        },
+        {
+          "paragraphId": "xuexin-fu:shidian-SDZJ0175:P7415886700980863002",
+          "judgment": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndContextRead": true
+        },
+        {
+          "paragraphId": "xuexin-fu:shidian-SDZJ0175:P7415886700980879386",
+          "judgment": "ACCEPT",
+          "review": "draft",
+          "fullSourceAndContextRead": true
+        },
+        {
+          "paragraphId": "xuexin-fu:shidian-SDZJ0175:P7415886700980895770",
+          "judgment": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndContextRead": true
+        },
+        {
+          "paragraphId": "xuexin-fu:shidian-SDZJ0175:P7415886700980912154",
+          "judgment": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndContextRead": true
+        }
+      ]
+    }
+  ]
+}
