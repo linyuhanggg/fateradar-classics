@@ -1,0 +1,21 @@
+{
+  "batch": "t81-huangji-fulltext-80g",
+  "scope": "Seventh 80 unannotated fulltext.md paragraphs L20771-L21088 Xia chronicle; not SK1573, not algorithm",
+  "candidateSha256": "66a66583396db63502c1995ade9e65b46ee0eca0a8089ee4804ce3ac5087322c",
+  "evidenceSha256": "18824e3800ba271a3b2dac06e7320dabc90f699a3a25c1e1fdd40eaf792cf310",
+  "rootReview": "Author draft; independent B ACCEPT. 77 source-reviewed chronicle labels / 3 draft residual glyphs 卒卯 巳酉 壬戊.",
+  "reviewCounts": {
+    "source-reviewed": 77,
+    "draft": 3
+  },
+  "judges": [
+    {
+      "judge": "B",
+      "verdict": "ACCEPT",
+      "candidateSha256": "66a66583396db63502c1995ade9e65b46ee0eca0a8089ee4804ce3ac5087322c",
+      "completeParagraphsRead": 80,
+      "findings": []
+    }
+  ],
+  "notBookCompletion": true
+}
