@@ -1,0 +1,28 @@
+{
+  "batch": "t54-yuanhai350c-first150",
+  "scope": "150 yuanhai shidian paragraphs index 0-149; not edition completeness or facsimile collation",
+  "candidateSha256": "36e00959b13d0884e0ef75d56812d89ed6e6675c0ca678e37c72275ecc82d310",
+  "evidenceSha256": "142638a2ddd9cc2beecdf0319dc6b6ce956d3a9cd9b6391346c3b249f739b38d",
+  "previousCandidateSha256": "6b1731eb7948c8760c252e2e51067b16e9ca5ea0caebaf03a9e509af622d7245",
+  "rootReview": "Author draft packaged by integrator; independent B NEEDS_REVISION on 父毋; B2 ACCEPT. 55 source-reviewed / 95 draft.",
+  "reviewCounts": {
+    "source-reviewed": 55,
+    "draft": 95
+  },
+  "judges": [
+    {
+      "judge": "B",
+      "verdict": "NEEDS_REVISION",
+      "findings": ["F1"]
+    },
+    {
+      "judge": "B2",
+      "verdict": "ACCEPT",
+      "candidateSha256": "36e00959b13d0884e0ef75d56812d89ed6e6675c0ca678e37c72275ecc82d310",
+      "completeParagraphsRead": 150,
+      "previousFindingsClosed": ["F1"],
+      "findings": []
+    }
+  ],
+  "notBookCompletion": true
+}
