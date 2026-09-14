@@ -1,0 +1,407 @@
+{
+  "scope": "59 new main-edition prose readings, excluding the previous 4225 numeric-table entries",
+  "sourceReviewed": 45,
+  "draft": 14,
+  "rootReview": "All 54 full prose sources plus 5 complete matched passages read; author and anthology attribution separated; no numeric emendation or facsimile claim.",
+  "annotationSha256": "e5cbedcd0934f1c2d7787adbfa54024742815f977c89935d43133815789ec2a9",
+  "independentReviews": [
+    {
+      "judge": "A",
+      "verdict": "ACCEPT",
+      "scope": "项目皇极最后59条：54完整prose电子库存段与5条严格整段同文；不重审前4225数字表。",
+      "sourceSha256": "aeceef2a904d915ecce2739d65f0225c5aa5ab47c7a3446264a2b505f16d4d80",
+      "annotationSha256": "e5cbedcd0934f1c2d7787adbfa54024742815f977c89935d43133815789ec2a9",
+      "counts": {
+        "reviewedEntries": 59,
+        "source-reviewed": 45,
+        "draft": 14
+      },
+      "checks": {
+        "all59SourceTextMatchesCurrentSource": true,
+        "all59AreExactLast59ProjectEntries": true,
+        "fiveDuplicateTargetRawMatchesLiveSource": true,
+        "fiveNFCWhitespacePunctuationOnlyFullParagraphCoverage": true,
+        "fiveLinksMatchLiveSourceReviewedTargets": true,
+        "all54CompleteSourceAndActualVernacularRead": true,
+        "all5WholeSourceAndTargetContextRead": true,
+        "validator": "1 books, 4284 entries, 0 errors"
+      },
+      "evidence": [
+        {
+          "id": "huangji-jingshi:L36980-L37070",
+          "result": "长段全部亲读，二萬八千二百一十一兆/二萬八千一百一十一兆、九百四十三千等未改成算法规律；整段draft，原注更思之/或说保留归属。"
+        },
+        {
+          "id": "huangji-jingshi:L36952-L36956",
+          "result": "体数160/192、用数112/152、动植17024及通数二万八千九百八十一万六千五百七十六照书中字面保留，未宣称算术已验。"
+        },
+        {
+          "id": "huangji-jingshi:L37262-L37280",
+          "result": "五年閠、354除12写29及承接疑义明确draft，没有补余数/月长。"
+        },
+        {
+          "id": "huangji-jingshi:L37480-L37484",
+          "result": "四库馆臣索隐提要明确与邵雍正文分离，二卷/一卷判断归馆臣而非本次历史核验。"
+        },
+        {
+          "id": "huangji-jingshi:L37492-L37493",
+          "result": "张行成原序正确归属；太元未改太玄，原数未推算，draft。"
+        },
+        {
+          "id": "huangji-jingshi:L37447-L37448",
+          "result": "主本皆可行也尾句完整释读；异版仅部分匹配未滥判同文。"
+        },
+        {
+          "id": "huangji-jingshi:L37470-L37470",
+          "result": "原文不可谓之学否定结论完整保留，不从异版短句截断。"
+        },
+        {
+          "id": "huangji-jingshi:L37219-L37219",
+          "result": "完整主段仅14归一化字，限定对应长段[7,21)，不并入阴符年代与后续韵法。"
+        }
+      ],
+      "draftParagraphIds": [
+        "huangji-jingshi:L36843-L36861",
+        "huangji-jingshi:L36900-L36913",
+        "huangji-jingshi:L36917-L36924",
+        "huangji-jingshi:L36939-L36948",
+        "huangji-jingshi:L36960-L36976",
+        "huangji-jingshi:L36980-L37070",
+        "huangji-jingshi:L37074-L37098",
+        "huangji-jingshi:L37113-L37121",
+        "huangji-jingshi:L37165-L37176",
+        "huangji-jingshi:L37210-L37215",
+        "huangji-jingshi:L37262-L37280",
+        "huangji-jingshi:L37347-L37377",
+        "huangji-jingshi:L37452-L37457",
+        "huangji-jingshi:L37492-L37493"
+      ],
+      "findings": [],
+      "limitations": "仅对现有电子文字释义及精确同文源锚作判断；不代表影印校勘、数值正确、古代人物史实或传统解释效验。",
+      "projectWrites": false
+    },
+    {
+      "judgment": "ACCEPT",
+      "scope": "项目huangji-jingshi.json末59条，54正文及题署段+5同文段；不审4225数字表。",
+      "counts": {
+        "total": 59,
+        "sourceReviewed": 45,
+        "draft": 14
+      },
+      "method": [
+        "全部59条完整原文与实际注释逐段亲读，包括L36980–37070长段。",
+        "54条evidence及5条sourceRaw均与项目source行范围逐字匹配。",
+        "5个异版目标原段核对项目字节；NFC+去空白及Unicode标点后，主本全文包含于目标原段，未繁简或异体替换。",
+        "读前文标题与原注，核对承接关系、张行成原序及四库馆臣提要层。"
+      ],
+      "findings": [],
+      "acceptedBoundaries": [
+        "L36980–37070只作长段内容与疑点索引，未把疑数概述当成已恢复算法。",
+        "L37447–37448保留皆可行也尾句，未以部分长匹配冒充全文同文。",
+        "L37470保留不可谓之学；异版残句不用于覆盖该否定结尾。",
+        "L37480–37484为索隐四库提要，L37487–37488为馆臣署名，L37492–37493为张行成序，未混归邵雍。",
+        "历史因果、术数与身心比附均留在原书立场层，未冒充独立验证。",
+        "draft中的明确疑字、缺句、数目差异与附注异说都见于对应原段。"
+      ],
+      "entries": [
+        {
+          "paragraphId": "huangji-jingshi:L36825-L36830",
+          "review": "source-reviewed",
+          "judgment": "ACCEPT"
+        },
+        {
+          "paragraphId": "huangji-jingshi:L36834-L36839",
+          "review": "source-reviewed",
+          "judgment": "ACCEPT"
+        },
+        {
+          "paragraphId": "huangji-jingshi:L36843-L36861",
+          "review": "draft",
+          "judgment": "ACCEPT"
+        },
+        {
+          "paragraphId": "huangji-jingshi:L36865-L36873",
+          "review": "source-reviewed",
+          "judgment": "ACCEPT"
+        },
+        {
+          "paragraphId": "huangji-jingshi:L36877-L36896",
+          "review": "source-reviewed",
+          "judgment": "ACCEPT"
+        },
+        {
+          "paragraphId": "huangji-jingshi:L36898-L36898",
+          "review": "source-reviewed",
+          "judgment": "ACCEPT"
+        },
+        {
+          "paragraphId": "huangji-jingshi:L36900-L36913",
+          "review": "draft",
+          "judgment": "ACCEPT"
+        },
+        {
+          "paragraphId": "huangji-jingshi:L36917-L36924",
+          "review": "draft",
+          "judgment": "ACCEPT"
+        },
+        {
+          "paragraphId": "huangji-jingshi:L36928-L36935",
+          "review": "source-reviewed",
+          "judgment": "ACCEPT"
+        },
+        {
+          "paragraphId": "huangji-jingshi:L36939-L36948",
+          "review": "draft",
+          "judgment": "ACCEPT"
+        },
+        {
+          "paragraphId": "huangji-jingshi:L36952-L36956",
+          "review": "source-reviewed",
+          "judgment": "ACCEPT"
+        },
+        {
+          "paragraphId": "huangji-jingshi:L36960-L36976",
+          "review": "draft",
+          "judgment": "ACCEPT"
+        },
+        {
+          "paragraphId": "huangji-jingshi:L36980-L37070",
+          "review": "draft",
+          "judgment": "ACCEPT"
+        },
+        {
+          "paragraphId": "huangji-jingshi:L37074-L37098",
+          "review": "draft",
+          "judgment": "ACCEPT"
+        },
+        {
+          "paragraphId": "huangji-jingshi:L37102-L37105",
+          "review": "source-reviewed",
+          "judgment": "ACCEPT"
+        },
+        {
+          "paragraphId": "huangji-jingshi:L37109-L37109",
+          "review": "source-reviewed",
+          "judgment": "ACCEPT"
+        },
+        {
+          "paragraphId": "huangji-jingshi:L37113-L37121",
+          "review": "draft",
+          "judgment": "ACCEPT"
+        },
+        {
+          "paragraphId": "huangji-jingshi:L37125-L37137",
+          "review": "source-reviewed",
+          "judgment": "ACCEPT"
+        },
+        {
+          "paragraphId": "huangji-jingshi:L37141-L37141",
+          "review": "source-reviewed",
+          "judgment": "ACCEPT"
+        },
+        {
+          "paragraphId": "huangji-jingshi:L37145-L37161",
+          "review": "source-reviewed",
+          "judgment": "ACCEPT"
+        },
+        {
+          "paragraphId": "huangji-jingshi:L37165-L37176",
+          "review": "draft",
+          "judgment": "ACCEPT"
+        },
+        {
+          "paragraphId": "huangji-jingshi:L37180-L37182",
+          "review": "source-reviewed",
+          "judgment": "ACCEPT"
+        },
+        {
+          "paragraphId": "huangji-jingshi:L37186-L37192",
+          "review": "source-reviewed",
+          "judgment": "ACCEPT"
+        },
+        {
+          "paragraphId": "huangji-jingshi:L37196-L37201",
+          "review": "source-reviewed",
+          "judgment": "ACCEPT"
+        },
+        {
+          "paragraphId": "huangji-jingshi:L37205-L37206",
+          "review": "source-reviewed",
+          "judgment": "ACCEPT"
+        },
+        {
+          "paragraphId": "huangji-jingshi:L37210-L37215",
+          "review": "draft",
+          "judgment": "ACCEPT"
+        },
+        {
+          "paragraphId": "huangji-jingshi:L37228-L37229",
+          "review": "source-reviewed",
+          "judgment": "ACCEPT"
+        },
+        {
+          "paragraphId": "huangji-jingshi:L37233-L37233",
+          "review": "source-reviewed",
+          "judgment": "ACCEPT"
+        },
+        {
+          "paragraphId": "huangji-jingshi:L37237-L37250",
+          "review": "source-reviewed",
+          "judgment": "ACCEPT"
+        },
+        {
+          "paragraphId": "huangji-jingshi:L37254-L37258",
+          "review": "source-reviewed",
+          "judgment": "ACCEPT"
+        },
+        {
+          "paragraphId": "huangji-jingshi:L37262-L37280",
+          "review": "draft",
+          "judgment": "ACCEPT"
+        },
+        {
+          "paragraphId": "huangji-jingshi:L37284-L37301",
+          "review": "source-reviewed",
+          "judgment": "ACCEPT"
+        },
+        {
+          "paragraphId": "huangji-jingshi:L37305-L37305",
+          "review": "source-reviewed",
+          "judgment": "ACCEPT"
+        },
+        {
+          "paragraphId": "huangji-jingshi:L37309-L37309",
+          "review": "source-reviewed",
+          "judgment": "ACCEPT"
+        },
+        {
+          "paragraphId": "huangji-jingshi:L37313-L37315",
+          "review": "source-reviewed",
+          "judgment": "ACCEPT"
+        },
+        {
+          "paragraphId": "huangji-jingshi:L37319-L37325",
+          "review": "source-reviewed",
+          "judgment": "ACCEPT"
+        },
+        {
+          "paragraphId": "huangji-jingshi:L37329-L37337",
+          "review": "source-reviewed",
+          "judgment": "ACCEPT"
+        },
+        {
+          "paragraphId": "huangji-jingshi:L37341-L37343",
+          "review": "source-reviewed",
+          "judgment": "ACCEPT"
+        },
+        {
+          "paragraphId": "huangji-jingshi:L37347-L37377",
+          "review": "draft",
+          "judgment": "ACCEPT"
+        },
+        {
+          "paragraphId": "huangji-jingshi:L37381-L37384",
+          "review": "source-reviewed",
+          "judgment": "ACCEPT"
+        },
+        {
+          "paragraphId": "huangji-jingshi:L37388-L37390",
+          "review": "source-reviewed",
+          "judgment": "ACCEPT"
+        },
+        {
+          "paragraphId": "huangji-jingshi:L37394-L37405",
+          "review": "source-reviewed",
+          "judgment": "ACCEPT"
+        },
+        {
+          "paragraphId": "huangji-jingshi:L37409-L37414",
+          "review": "source-reviewed",
+          "judgment": "ACCEPT"
+        },
+        {
+          "paragraphId": "huangji-jingshi:L37418-L37429",
+          "review": "source-reviewed",
+          "judgment": "ACCEPT"
+        },
+        {
+          "paragraphId": "huangji-jingshi:L37433-L37433",
+          "review": "source-reviewed",
+          "judgment": "ACCEPT"
+        },
+        {
+          "paragraphId": "huangji-jingshi:L37437-L37438",
+          "review": "source-reviewed",
+          "judgment": "ACCEPT"
+        },
+        {
+          "paragraphId": "huangji-jingshi:L37442-L37443",
+          "review": "source-reviewed",
+          "judgment": "ACCEPT"
+        },
+        {
+          "paragraphId": "huangji-jingshi:L37447-L37448",
+          "review": "source-reviewed",
+          "judgment": "ACCEPT"
+        },
+        {
+          "paragraphId": "huangji-jingshi:L37452-L37457",
+          "review": "draft",
+          "judgment": "ACCEPT"
+        },
+        {
+          "paragraphId": "huangji-jingshi:L37461-L37462",
+          "review": "source-reviewed",
+          "judgment": "ACCEPT"
+        },
+        {
+          "paragraphId": "huangji-jingshi:L37470-L37470",
+          "review": "source-reviewed",
+          "judgment": "ACCEPT"
+        },
+        {
+          "paragraphId": "huangji-jingshi:L37480-L37484",
+          "review": "source-reviewed",
+          "judgment": "ACCEPT"
+        },
+        {
+          "paragraphId": "huangji-jingshi:L37487-L37488",
+          "review": "source-reviewed",
+          "judgment": "ACCEPT"
+        },
+        {
+          "paragraphId": "huangji-jingshi:L37492-L37493",
+          "review": "draft",
+          "judgment": "ACCEPT"
+        },
+        {
+          "paragraphId": "huangji-jingshi:L20715-L20715",
+          "review": "source-reviewed",
+          "judgment": "ACCEPT"
+        },
+        {
+          "paragraphId": "huangji-jingshi:L37219-L37219",
+          "review": "source-reviewed",
+          "judgment": "ACCEPT"
+        },
+        {
+          "paragraphId": "huangji-jingshi:L37223-L37224",
+          "review": "source-reviewed",
+          "judgment": "ACCEPT"
+        },
+        {
+          "paragraphId": "huangji-jingshi:L37466-L37466",
+          "review": "source-reviewed",
+          "judgment": "ACCEPT"
+        },
+        {
+          "paragraphId": "huangji-jingshi:L37474-L37474",
+          "review": "source-reviewed",
+          "judgment": "ACCEPT"
+        }
+      ],
+      "reviewedTailSha256": "dcfa9a43b878dbad7b494f5a34c5d4a03de824ef624fb7a6c8257114ddc79a9c",
+      "projectModified": false
+    }
+  ]
+}
