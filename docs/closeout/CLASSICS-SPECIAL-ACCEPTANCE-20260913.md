@@ -1,81 +1,37 @@
-# 古籍专项验收报告（2026-09-14 修订；供全项目总负责人汇总）
+# 古籍专项进展与本批验收（2026-09-14）
 
-日期：2026-09-14  
-工作树：`/Users/yuhanglin/fateradar-goal-20260912/classics`  
-仓：`linyuhanggg/fateradar-classics`  
-分支：`dsh/full-library-classics`  
-本文件**不是**全项目八项验收完成声明，只覆盖古籍加工与数据交付。  
-**本文件取代** 2026-09-13 仍写「奇门 308–311 读图授权阻塞」「總鈐 666」的完成口径。
+工作树：`/Users/yuhanglin/fateradar-goal-20260912/classics`
+数据提交：`d3d3cdc9d3c1c293f7abc46a982a7ad8cc449716`；图文恢复提交：`163bec1`。本报告不表示全库或算法/Web已经全部完成。
 
-## 1. 结论
+## 本批实质改动
 
-已知复验退回的两项已施工：
+- 麻衣识典补本：取得39张实际插图，逐图读题字与画面，原图SHA256、网页来源、转写与原段落互相连接。14图题字可转写、10图未见可辨题字、15图题字/完整性/印记仍有未决。图已读不等于正文缺字已补；39个父段未自动升级。全书有115条图像记录，本批只处理其中39条语义队列附图。
+- 奇门统宗PDF300–307：新增1张八扇区四层圆图、39时辰题头与局文、4处跨页关联。正式源新增68段，其中51段source-reviewed；12段是加工元数据，5段保留疑字draft。原有段落ID不变。
+- 连续文本复核：6份注释共27条修订，14条从draft完成电子文本层面的语义审读；1条标题改归序跋目录并保留draft。改正前后续接、年次归属、错误摘要截断和无依据释字。原文不改，不把语义审读当作影印verified。
 
-1. 奇门 PDF 308–311：按「小字在时支左侧、跨页最右＝前页最左续文」重配归属，写入 `nlc-layouts.md`、批次稿、page-reviews。`verified` / `canonical_eligible` 仍 false。
-2. 1192 分型：L1010／L1038 从总钤残格移出（664+2）；39 图像与 25 语义已逐项尝试，能改电子分段的 3 条已改类，其余保持 draft。
+## 当前实测
 
-结构校验已通过（见 §2）。奇门 308–311 归属三份独立读图 pass；漏字／串次经独立复验 pass。1192 分型独立审核 pass（416/664/54/19/39）。  
-不宣称算法、Web 或全项目完成。
+| 项目 | 数量 |
+|---|---:|
+| 注释书名 / 文件 | 53 / 79 |
+| 注释总条数 | 62,907 |
+| source-reviewed | 60,173 |
+| draft | 2,734 |
+| 实质未决 | 1,182 |
+| 加工元数据draft / 归档draft / 封面待转写 | 1,543 / 8 / 1 |
+| verified=true | 0 |
 
-## 2. 基线（本工作树实测）
+旧t30的1,192条中，14条完成电子审读、1条归档；另外新转写奇门产生5条明确字形未决，因此现为1,182。计数不是全书完成率，不能用53减去未决书数宣布其余全书已验收。
 
-| 项 | 值 |
-|---|---|
-| 注解 | 62,839 条 / 79 文件 / 53 书 |
-| `source-reviewed` | **60,108** |
-| `draft` | **2,731** |
-| `verified=true` | **0** |
-| 分账 | 台账元数据 1,531 / 实质待审 1,192 / 待转写 1 / 归档 7 |
-| 实质待审分型（t30） | 664 總鈐残格 / 416 真疑字 / 54 电子分段 / 39 图像 / 19 残联 |
-| 可执行规则 | 258 条 / 15 文件；`named_gaps` 42 |
-| 本批 SHA | `31554216cb4097819b3f4a088cd2ce01b4d749ed`（父 `e90da1a`） |
+当前逐条未决：`evidence/t31-current-classics-unresolved-20260914.json`。旧a1/t30保留为历史快照，不再用于当前余量。
 
-```
-python3 tools/validate-annotations.py --json
-python3 tools/validate-executable.py --json
-```
+## 验收证据
 
-2026-09-14 实测：annotations ok、62839、60108、0 errors；executable ok、258、named_gaps 42、0 errors。校验器只做结构与源 ID，不认证语义。
+两路只读审核分别核查麻衣图文、奇门转写和续接语义；误读、错句界及验证器漏洞均修正后重新接受。详见 `review/INDEPENDENT-REVIEW-CODEX-20260914.md`。
 
-## 3. 正式数据入口
+- annotations：62,907条，60,173 source-reviewed，0错误。
+- executable：258规则、579源段、42 named_gaps，0错误；本轮未改算法规则。
+- figures：39图哈希、段落归属、正文连接均通过；新增反例测试阻止错挂段落、空题字假完成及哈希失配。
+- source-editions 6项、annotation 12项、figure 4项、reading-notes 2项、runtime-evidence 5项测试通过；git diff --check通过。
 
-| 入口 | 路径 |
-|---|---|
-| 注解 | `references/annotations/**` |
-| 规则定义 | `references/executable/*.json` |
-| 原书案例 | `references/cases/source-cases.json`（本专项未改导出器） |
-| 奇门 308–311 转写 | `sources/normalized/san-shi/qimen-dunjia-tongzhi/nlc-layouts.md`；批次 `ocr-batch-cell-level-0308-0311.md` |
-| 列归属映射 | `docs/closeout/evidence/qimen-308-311-column-map-20260914.md` |
-| draft 分账 | `docs/closeout/review/a1-draft-disposition-20260913.json` |
-| 未决 | `docs/closeout/evidence/a1-open-items-20260913.json`（664 总钤 + 2 神煞疑字 + 16 底本） |
-| 分型 | `docs/closeout/evidence/t30-pending-typed-disposition-20260914.json` |
-| 给算法 | `docs/closeout/CLASSICS-DATA-CHANGE-FOR-ALGO-20260913.md` |
-
-## 4. 未决（不笼统「待处理」）
-
-| 类 | 规模 | 产品处理 | 解锁条件 |
-|---|---|---|---|
-| 《總鈐》残格 | **664**（L1040 起） | 保持 draft，不入 executable | 可判「字→格」的清晰影印或平行本 |
-| 十二月神煞疑字 | **2**（L1010 浴神、L1038 灾神） | 保持 draft；**不是**总钤残格 | 神煞名平行本或可核印本 |
-| 大六壬其余实质待审 | 86 | 保持 draft | 影印或可唯一还原的平行句 |
-| 奇门 NLC 台账 | 1,261 ledger-metadata | 不提升 | 随影印转写状态变化 |
-| 奇门 308–311 | 4 页已转写并修订归属 | 可作转写证据；`canonical_eligible=false` | 独立读图复核通过后仍不自动升 verified |
-| 麻衣识典图 | 39 | 保持 draft | 本版图文件落地或页图映射后再读图 |
-| 命理约言封面缺字 | 1 | 不得据电子本代填 | 题名「命」「約」之间纸面留白，已照录 |
-| 其余实质待审 | 见 t30 | 已具名；不批量升级 | 各条 notes |
-| unimplemented | `named_gaps` 42 | **算法任务** | 见 executable |
-| 未确认影印底本 | 16 套 | 磁盘 0 命中 | 取得合法影印 |
-
-## 5. 本专项不做 / 未做
-
-- 不改产品仓、不改 `/Users/sync/code/**`
-- 不跑 `export-source-cases.py`（避免覆盖手工案例）
-- 不更新产品 pin
-- 不把 `source-reviewed` 写成影印 `verified`
-- 不把 300–307 旧批次半读稿当成 308–311 同类已修
-
-## 6. 校验与合入
-
-独立复核：`docs/closeout/review/INDEPENDENT-REVIEW-QIMEN-308-311-20260914.md`、`docs/closeout/review/INDEPENDENT-REVIEW-T30-20260914.md`。**不以** T29／CLASSICS-SPECIAL 旧 PASS 代替本轮。
-
-合入后核对远端 SHA 与 `validate-rules` CI。
+main与CI另见本批发布记录。产品仓和产品pin均未修改。

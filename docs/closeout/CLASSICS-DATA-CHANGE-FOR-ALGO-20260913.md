@@ -1,29 +1,13 @@
-# 给算法任务的数据变更说明（古籍专项滚交）
+# 古籍消费方数据版本（2026-09-14）
 
-- 仓：`https://github.com/linyuhanggg/fateradar-classics`
-- **精确版本**：`31554216cb4097819b3f4a088cd2ce01b4d749ed`（父提交 `e90da1abd98fb3e71dfe3210500305d05ba19940`；合入 main 后以远端 SHA 为准）
-- 本批 **不改** `references/executable/**`、**不改** `references/cases/source-cases.json`
+仓：`linyuhanggg/fateradar-classics`
+精确数据版本：`d3d3cdc9d3c1c293f7abc46a982a7ad8cc449716`。本轮不改executable、source-cases或产品pin。
 
-## 奇门 308–311（消费方必须改读法）
-
-- 正式源：`sources/normalized/san-shi/qimen-dunjia-tongzhi/nlc-layouts.md` PDF第308–311页
-- 映射：`docs/closeout/evidence/qimen-308-311-column-map-20260914.md`
-- **不要**再把 310 最右「戌日五不遇…」当无时支，它是 309 甲寅续文（文字在 310）。
-- **不要**再把 311 最右「門辛伏吟…」当辛酉；它是 310 庚申续文。
-- 311 辛酉断语从「寅刑己」起；壬戌从「休坤制」起；癸亥从「門星伏吟」起。
-- 甲寅／庚申在标题页只有行标宫数，不是「该时无断语」。
-- 311 仅三时支是原页事实，不是缺页。
-- `canonical_eligible` 仍 false；不得当已核算法输入。
-
-## 分型
-
-- 總鈐残格消费集合 **664**（`daliuren-daquan` 且行号 ≥ L1040），不是 666。
-- `daliuren-daquan:L1010-L1010`、`L1038-L1038` 是十二月神煞疑字，**禁止**当总钤残格。
-- 39 条麻衣识典图像占位：无图内文字，禁止当相法条件。
-- t24–t27 所升均为记录性锚点，`verified=false`，不得当课体/庙旺/择日/相法判断输入。
-
-## 其它
-
-- 注解：`source-reviewed` 60,108；`verified` 全 false
-- 22 条 `implementation-gap` 与证据未决仍在 `references/executable` 的 `named_gaps`；实现属算法任务
-- 产品 pin 由算法/Web 任务改
+- 新增奇门PDF300–307，原source段落ID保持；新增68个page-scoped段落。使用 `nlc-layout-page-reviews.json` 区分已核段与5个疑字段。
+- 302甲戌的断语在303页；305辛卯在306页续；306丁酉在307页续。301戊辰短文在302页重见，不另增一个时辰。注释以relatedParagraphIds连接。
+- 303乙亥仍属甲己日；乙庚日从丙子开始。305丙辛日从戊子开始，307丁壬日从庚子开始。
+- 麻衣39段新增figureEvidenceIds；`figure-transcriptions.json`给出题字、画面、未决及本地图像。text.md用「插图校读」标记编辑文字，不能当古籍正文断法。保留上游附着，不保证插图与同段正文一一对应。
+- 麻衣题字14图转写、10图未见可辨题字、15图内部未决；所有父段未因取图自动升级。
+- 14条注释完成电子续接；使用其relatedParagraphIds，尤其皇极己酉记事不得错误归入戊申。
+- source-reviewed60,173是电子/指定原图范围审读，不等于全部影印verified、算法准确率或产品交付率。仍有1,182条实质未决及封面1条。
+- 308–311既有跨页映射仍有效；canonical_eligible仍false。

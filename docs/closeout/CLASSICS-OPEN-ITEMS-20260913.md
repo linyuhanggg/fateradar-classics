@@ -1,29 +1,34 @@
-# 古籍未决清单（2026-09-14 重算）
+# 古籍当前未决（2026-09-14）
 
-逐条机器可读：`docs/closeout/review/a1-draft-disposition-20260913.json`（2,731 draft）与 `docs/closeout/evidence/a1-open-items-20260913.json`（664 总钤残格 + 2 十二月神煞疑字 + 16 未确认底本）。分型以 `docs/closeout/evidence/t30-pending-typed-disposition-20260914.json` 为准。
+数据版本：`d3d3cdc9d3c1c293f7abc46a982a7ad8cc449716`。逐条清单：`evidence/t31-current-classics-unresolved-20260914.json`。
 
-## 实质待审 1,192（均已具名，不升 verified）
+**1,182条实质未决，分布于13个bookSlug；另有《命理约言》封面1条缺字。合计14个书名仍有未决，不是14整本尚未开发。**
 
-| 文件 | 条数 | 要点 |
+| 类型 | 条数 | 当前事实 |
 |---|---:|---|
-| `daliuren-daquan.json` | 752 | **664**＝總鈐残格（L1040 起；影印在仓、逐格归属不可判）；**2**＝十二月神煞疑字（L1010 浴神、L1038 灾神，不是总钤）；其余 86＝t23/t24 已登记疑字/残盘/规则候选 |
-| `mayi-shenxiang--shidian-NGJ89241199903149974518.json` | 162 | 截断/□阙/图像；39 图 URI 无本地文件 |
-| `yuqia-ji--shidian-NA09036.json` | 87 | t26：疑字/残句/圣诞表 |
-| `liuren-miben.json` | 72 | t26：疑字；SDZJ0628 平行本不能唯一还原 |
-| `liuren-miben--shidian-SDZJ0628.json` | 36 | t27：残表/错简/图像 |
-| `ziwei-doushu-quanshu--shidian-SDZJ0170.json` | 29 | t25：截断/鿄/异文；酉宫鿄 |
-| `huangji-jingshi--shidian-DZ1040.json` | 23 | t25：截断/□／○/疑体 |
-| `mayi-shenxiang.json` | 16 | t24：卷六现代附益 |
-| 地理辨正/天玉/三命/星学/玉照/珞琭子补本 | 15 | t24：残句或版面标记 |
+| 总钤格位未定 | 664 | 原有逐格归属问题仍在；不能直接当算法参数 |
+| 真疑字/残缺 | 416 | 包含大六壬L1010、L1038神煞疑字，它们不是总钤 |
+| 电子续接/字面仍待定 | 42 | 已复读邻段；部分局部接齐，但整段仍有字形或句法问题，不等于缺图 |
+| 附图已读、父段仍未决 | 39 | 39原图已落地并校读；不得再写无法获取。正文残缺与15图内部未决分开记录 |
+| 其余语义未决 | 16 | 不凭通说猜补 |
+| 新转写奇门疑字 | 5 | 301乙丑、304壬午、305丁亥、307戊戌的蛇妖末字；307己亥开坤后字 |
 
-分型（t30 重算）：664 總鈐归属不可判／416 真疑字／54 电子分段／39 图像未转写／19 残联。
+| 书名ID | 未决条数 |
+|---|---:|
+| `daliuren-daquan` | 751 |
+| `dili-bianzheng` | 4 |
+| `huangji-jingshi` | 19 |
+| `liuren-miben` | 108 |
+| `luoluzi-sanming` | 1 |
+| `mayi-shenxiang` | 169 |
+| `sanming-tonghui` | 2 |
+| `tianyu-jing` | 3 |
+| `xingxue-dacheng` | 2 |
+| `yuqia-ji` | 87 |
+| `yuzhao-shenying` | 2 |
+| `ziwei-doushu-quanshu` | 29 |
+| `qimen-dunjia-tongzhi` | 5 |
 
-## 非审读队列
+加工元数据draft1,543条、归档draft8条，不是等待开发的规则。封面待转写1条另列。
 
-- 台账元数据 **1,531**（奇门 nlc-layouts 为主）：保持 draft，不提升。
-- 待转写 **1**：`mingli-yueyan:nlc-recovery:P001:L005-L005`（封面题名缺字，ocr-draft）。
-- 归档 **7**：重复/序跋目录。
-
-## 已处理、不得再当阻塞
-
-- 奇门统宗 PDF p308–311：**已转写**，并已按「小字在时支左侧、跨页最右＝前页最左续文」修订归属。旧阻塞文件与 2026-09-13 短列口径不再代表现状。
+已解除的旧阻塞：麻衣39图获取；奇门300–307仅有标题级登记；14条完整电子续接。奇门308–311沿用此前已修归属，不重复计本批成果。

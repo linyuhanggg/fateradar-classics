@@ -43,9 +43,9 @@
   "measured_baseline": {
     "measured_at": "2026-09-13T04:10:00Z",
     "measured_by": "captain 直接读 references/annotations、references/executable、git、gh（不转抄旧检查点）",
-    "annotations_total": 62839,
-    "annotations_source_reviewed": 60013,
-    "annotations_draft": 2826,
+    "annotations_total": 62907,
+    "annotations_source_reviewed": 60173,
+    "annotations_draft": 2734,
     "annotation_books": 53,
     "books_with_draft": 15,
     "executable_rules": 258,
@@ -74,8 +74,15 @@
       "in_file_product_head": "cdb5f9c",
       "in_file_classics_head": "74edada"
     },
-    "note": "产品矩阵内 head 已过期（A3 已登记重生成）；其余为实测。t23 批次 1 已将 9 条 draft 升 source-reviewed：60,004+2,835 → 60,013+2,826（独立复核 t22 复算一致）。draft 余量以 a1-draft-disposition-20260913.json 的 2,826 为准。",
-    "reverified_at": "2026-09-13T12:42:00Z（session-8d81 接续：t22 独立复核复算 60,013/2,826）"
+    "note": "古籍注释已按classics_refresh更新；旧a1/t30及其他字段保留历史口径，当前未决以t31-current-classics-unresolved-20260914.json为准。产品矩阵及全项目状态未在古籍批次重验。",
+    "reverified_at": "2026-09-13T12:42:00Z（session-8d81 接续：t22 独立复核复算 60,013/2,826）",
+    "classics_refresh": {
+      "at": "2026-09-14T00:24:27.740279+00:00",
+      "source_commit": "d3d3cdc9d3c1c293f7abc46a982a7ad8cc449716",
+      "report": "docs/closeout/CLASSICS-SPECIAL-ACCEPTANCE-20260913.md",
+      "substantive_unresolved": 1182,
+      "note": "只刷新古籍注释计数；本账其余算法/Web值及八项状态均未在本轮重验。"
+    }
   },
   "criteria": [
     {
