@@ -1,0 +1,21 @@
+{
+  "batch": "t69-huangji-fulltext-80c",
+  "scope": "Third 80 unannotated fulltext.md paragraphs L17842-L18477; not SK1573 missing chapters, not algorithm coverage; 0803.djvu 442-443 己/巳 not in this batch",
+  "candidateSha256": "58186bed9d4b3366e95b4389ffa232c739421bd0d2d9f2d07acb38ce30a780f4",
+  "evidenceSha256": "0427f72913b081507320ad15d78e202a4e2746b31a96a17f38d678cfddf37746",
+  "rootReview": "Author draft; independent B ACCEPT. 47 source-reviewed chronicle labels / 33 draft residual glyphs and broken tables.",
+  "reviewCounts": {
+    "source-reviewed": 47,
+    "draft": 33
+  },
+  "judges": [
+    {
+      "judge": "B",
+      "verdict": "ACCEPT",
+      "candidateSha256": "58186bed9d4b3366e95b4389ffa232c739421bd0d2d9f2d07acb38ce30a780f4",
+      "completeParagraphsRead": 80,
+      "findings": []
+    }
+  ],
+  "notBookCompletion": true
+}
