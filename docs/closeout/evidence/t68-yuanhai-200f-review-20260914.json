@@ -1,0 +1,28 @@
+{
+  "batch": "t68-yuanhai-200f",
+  "scope": "Yuanhai L8286-9333 after 200e; juan-5 residual poems to 化气; not book completion or algorithm coverage",
+  "candidateSha256": "4f05e630dda22d546c9a938f9e7219843cb144926db7e5b68f91f14f2cc975f2",
+  "evidenceSha256": "81b887ed699830a84a8e349cc81182bb24513b043a3f2a94e68e35d789e8a584",
+  "previousCandidateSha256": "ecd17da326762398336971a5c0366b0beb90e567595a8dc771b4ea909af1ace4",
+  "rootReview": "Author draft; independent B NEEDS_REVISION on 运人/命屮/命裹; B2 ACCEPT. 63 source-reviewed / 137 draft.",
+  "reviewCounts": {
+    "source-reviewed": 63,
+    "draft": 137
+  },
+  "judges": [
+    {
+      "judge": "B",
+      "verdict": "NEEDS_REVISION",
+      "findings": ["F1", "F2", "F3"]
+    },
+    {
+      "judge": "B2",
+      "verdict": "ACCEPT",
+      "candidateSha256": "4f05e630dda22d546c9a938f9e7219843cb144926db7e5b68f91f14f2cc975f2",
+      "completeParagraphsRead": 200,
+      "previousFindingsClosed": ["F1", "F2", "F3"],
+      "findings": []
+    }
+  ],
+  "notBookCompletion": true
+}
