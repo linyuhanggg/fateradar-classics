@@ -1,0 +1,28 @@
+{
+  "batch": "t53-yuanhai350c-remain200",
+  "scope": "200 yuanhai shidian paragraphs index 150-349 after t50; not edition completeness or facsimile collation",
+  "candidateSha256": "3d91bdcb83155fd08fe861b6f21ba9e200c649f96b86dc51a380625a481cca36",
+  "evidenceSha256": "a617a9832d32cd172779e9ddb55342d3cfe37d035dedeb5bde4e5aa1da29f90c",
+  "previousCandidateSha256": "7859ef79024088af40ed5d49cad3e97ce7a81ce6ab827f6f7d7bb21188aa34b7",
+  "rootReview": "Author draft; independent B NEEDS_REVISION on F1-F5 (易养/身强/俱皆/疑字静默改/205 条件未覆盖); B2 ACCEPT on revised hashes. 21 source-reviewed / 179 draft.",
+  "reviewCounts": {
+    "source-reviewed": 21,
+    "draft": 179
+  },
+  "judges": [
+    {
+      "judge": "B",
+      "verdict": "NEEDS_REVISION",
+      "findings": ["F1", "F2", "F3", "F4", "F5"]
+    },
+    {
+      "judge": "B2",
+      "verdict": "ACCEPT",
+      "candidateSha256": "3d91bdcb83155fd08fe861b6f21ba9e200c649f96b86dc51a380625a481cca36",
+      "completeParagraphsRead": 200,
+      "previousFindingsClosed": ["F1", "F2", "F3", "F4", "F5"],
+      "findings": []
+    }
+  ],
+  "notBookCompletion": true
+}
