@@ -1,0 +1,135 @@
+{
+  "scope": "322 acquired SK1610 source paragraphs:262source-reviewed60draft, not full edition completion",
+  "candidateSha256": "5239efd7faa1f2031f7dc9e706abf18e9ac488b36bfad6018fa4047760aee60a",
+  "rootReview": "All complete source paragraphs and vernacular meanings read. Source gaps retained; no image collation or efficacy verification claimed. Conditional meanings and authorship corrected before independent final hash acceptance.",
+  "judges": [
+    {
+      "judge": "A",
+      "verdict": "ACCEPT",
+      "scope": "322 complete electronic paragraphs; source-internal semantic reading, not facsimile or efficacy verification",
+      "candidateSha256": "5239efd7faa1f2031f7dc9e706abf18e9ac488b36bfad6018fa4047760aee60a",
+      "evidenceSha256": "02109f3c02c58bb5be78930a665ddeea94de3a4c9d9d0051329cfd9f220689de",
+      "completeParagraphsRead": 322,
+      "sourceCharactersRead": 40368,
+      "sourceAnchorChecks": {
+        "all322Exact": true,
+        "idsExact": true,
+        "sourceTextHashesExact": true
+      },
+      "validator": {
+        "entries": 322,
+        "errors": 0,
+        "sourceReviewed": 262
+      },
+      "reviewCounts": {
+        "source-reviewed": 262,
+        "draft": 60
+      },
+      "otherChecks": [
+        "第15条超长段全文及末尾已读，不以 excerpt 代完整段；保留 draft",
+        "月年日时层次、日主与用神的财官鬼墓分别检查",
+        "异说及反驳归属保留，不统一四柱与三元定义",
+        "修订15、36、51、53、69、71、86、88、98、109、130、133、140、144、165已逐条复核接受",
+        "具体原字未明、截尾、推论关系有疑的60条保留draft"
+      ],
+      "resolvedFindings": [
+        {
+          "index": 116,
+          "paragraphId": "sanming-tonghui:shidian-SK1610:P7426253696536887334",
+          "line": 931,
+          "issue": "候选把决断与伤人分为是否为用的两种结果；原文善亦屠刽、终亦杀人害物，同时以辅助用神解释决断，不能构成二择。",
+          "sourceEvidence": "凶則為强盗刼掠，善則屠儈活計，終亦殺人害物……臨事有㫁，機變通利……輔佐用神",
+          "requestedFix": "分别陈述猛烈凶煞的伤人取象、辅助用神的决断作用及纯和柔善亦难成事。"
+        },
+        {
+          "index": 153,
+          "paragraphId": "sanming-tonghui:shidian-SK1610:P7426253698134933514",
+          "line": 1120,
+          "issue": "父族扩大原文父亲对象。",
+          "sourceEvidence": "父命惡亡……主父惡死",
+          "requestedFix": "父族改父亲，并保留不同一云对妻及妻亲属、妻家无宅的分别说法。"
+        }
+      ],
+      "findings": [],
+      "deltaReview": "L931 分别保留伤害取象与辅助用神的决断作用；L1120 改父亲并补休废空亡条件。"
+    },
+    {
+      "verdict": "ACCEPT",
+      "scope": "独立B完整322源段+释义+拟review；含第15长段单独重新读取，无抽样替代",
+      "candidateSha256": "384c1fb5f41ce893fee2b7b6c6c59740dd0e2c985b06034c4954d3582b221ef1",
+      "count": 322,
+      "sourceTextExactMatchCount": 322,
+      "proposedReviewCounts": {
+        "source-reviewed": 262,
+        "draft": 60
+      },
+      "resolvedDuringReview": [
+        15,
+        36,
+        51,
+        53,
+        69,
+        71,
+        88,
+        98
+      ],
+      "findings": [
+        {
+          "index1Based": 86,
+          "paragraphId": "sanming-tonghui:shidian-SK1610:P7426253695844646950",
+          "sourceText": "勢情充悦，發旺以時。象意空寒，幽棲度日。\n八字氣候、勢况、情思、體段，如人氣壯氣滿，似和煖喜悦之色，少能達時通濟，利物發明，或嵗運扶持，更何\n言哉。若八字體制孤虛，氣象冷落，兼帶空亡休囚者，任有智術才勇，無所施展，嵗月空閒而已。",
+          "currentVernacular": "气暖充实且有用，得运扶才易发；空寒无所用者不因外助便同样成事。",
+          "reason": "增益条件被写成必要条件；原只说气势充悦已能达时，若有运扶更佳，未说必须运扶。",
+          "requestedChange": "改气势充悦能发用，若运再扶则更佳；空寒无用者才智亦难施展，不添加外助也不能成事的绝对断言。",
+          "reviewAfterFix": "source-reviewed可"
+        },
+        {
+          "index1Based": 109,
+          "paragraphId": "sanming-tonghui:shidian-SK1610:P7426253696536756262",
+          "sourceText": "禄位雖明化氣恐忌驛馬。既見日辰又重\n官星，建禄等件，既明無破，為吉為福必矣。若體用成化，却於其位有妬有奪，化來不得者，為物不成，則亦\n苗而不秀，空貴無官，或有福而非財，積福厚者。驛馬本理於太嵗宫，要來乘用，若日宫又有馬出重叠者，\n反為賤局。一説日辰馬併嵗馬，雖重，馬甚有用，貴氣相安者愈好，再見則不中矣。",
+          "currentVernacular": "禄明现仍可能因阻碍而不能成用；日马重于岁马的说法还受有用、贵气和重叠多少限制。",
+          "reason": "重指日马与岁马重叠，并非日马比岁马重要。",
+          "requestedChange": "改日宫再见马与年马重叠，主说不利；另一说若马有用且贵气相安，虽重反好，再见则不宜。",
+          "reviewAfterFix": "source-reviewed可"
+        },
+        {
+          "index1Based": 130,
+          "paragraphId": "sanming-tonghui:shidian-SK1610:P7426253696553549850",
+          "sourceText": "嵗望闕門，當近朝堂之職；氣衝第宅，難依祖業之基。\n太嵗對為闕門，有拱入格，决主食禄職任，皆近於朝堂要路之處。嵗前第五位若是被衝，更與日主非貴\n氣生扶綂攝者，决主祖上基業離破，不能居住。若乘官符並亡神，主為官㫁沒抄封，犯破碎刼刃，毁售必\n矣。",
+          "currentVernacular": "岁对阙门拱贵为朝向之用，宅位冲坏又不扶则联系离祖，仍须看官符亡没等是否伤用。",
+          "reason": "朝堂任职误写朝向之用；亡没不是本段神名。",
+          "requestedChange": "改岁对阙门拱贵入格，联系近朝堂的任职；宅位受冲及官符、亡神等另联系祖业失去。",
+          "reviewAfterFix": "source-reviewed可"
+        },
+        {
+          "index1Based": 133,
+          "paragraphId": "sanming-tonghui:shidian-SK1610:P7426253696553599002",
+          "sourceText": "卯酉好遷移門户，巳午當感夢生胎。\n犯卯酉字，在日時，好粧飾堂亭，遷改門户，帶馬則常移居止。胎時加臨巳午，帶年禄和諧其日主者，主應\n父母，得夢生産。",
+          "currentVernacular": "卯酉日时被取为装饰迁动，带马则迁动更频；胎时巳午与父母梦生的联想属于原注传说。",
+          "reason": "梦生一项遗漏带年禄、和日主条件，缩写扩大了巳午适用范围。",
+          "requestedChange": "补胎时巳午还须带年禄并与日主和谐，原注才联系父母梦生。",
+          "reviewAfterFix": "source-reviewed可"
+        },
+        {
+          "index1Based": 165,
+          "paragraphId": "sanming-tonghui:shidian-SK1610:P7426253698206089254",
+          "sourceText": "登金歩玉，貴人頭上帶官星。負笈挑簦，學堂館中逢驛\n馬。\n天乙頭上有官星顯露，謂之官星坐貴主貴。學堂乃日主生旺之位，學館為官星生旺之方，臨官之位，亦\n同取用。遇驛馬在中，無甚貴氣者，空有才學無成，即入仕途，亦多奔走道路，落空亡更甚。",
+          "currentVernacular": "天乙临官与学堂、学馆的作用不同；学堂日旺、学馆官旺虽有文路，未必达到最高贵位，空亡还会减力。",
+          "reason": "官星坐贵不是临官阶段；候选遗漏驿马及无甚贵气这一句的核心条件。",
+          "requestedChange": "改天乙头上见官星称官星坐贵；学堂取日主生旺、学馆取官星生旺或临官，内逢驿马而无甚贵气，则原论有学无成或仕途奔走，空亡更甚。",
+          "reviewAfterFix": "source-reviewed可"
+        }
+      ],
+      "otherEntries": "除5处外通过；现有60draft的残句、疑字、署名/题名界限可保留。262拟SR为电子文本释读，不是影印verified。",
+      "projectMutated": false,
+      "priorVerdict": "REJECT",
+      "finalCandidateSha256": "5239efd7faa1f2031f7dc9e706abf18e9ac488b36bfad6018fa4047760aee60a",
+      "finalDelta": "完整原段复验零基index116/L931与153/L1120：猛烈害物与凶煞辅用两说可并存；父命/父恶死指父亲，不扩大父族。两处最终修正ACCEPT。实际262SR60draft。",
+      "finalReviewCounts": {
+        "draft": 60,
+        "source-reviewed": 262
+      },
+      "reviewListExactMatch": true
+    }
+  ]
+}
