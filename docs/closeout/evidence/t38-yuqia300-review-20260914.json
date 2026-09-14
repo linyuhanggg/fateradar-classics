@@ -1,0 +1,4278 @@
+{
+  "scope": "300 new Yuqia main-edition paragraphs L1803–2556",
+  "sourceReviewed": 212,
+  "draft": 88,
+  "rootReview": "All 300 full sources and vernacular read; corrected count of zi days, direction range zi-to-gui, and repeated-item antecedent.",
+  "independentReviews": [
+    {
+      "role": "Judge A",
+      "verdict": "ACCEPT",
+      "candidateFile": "/tmp/yuqia-next300-candidates.json",
+      "candidateSha256": "18ef6fced6fac03a1b1a88dd4994b85bf01b745b38f59f35e21a3235e6f7ab1b",
+      "evidenceFile": "/tmp/yuqia-next300-evidence.json",
+      "scope": {
+        "entriesAudited": 300,
+        "lineRange": [
+          1803,
+          2556
+        ],
+        "method": "逐条完整阅读全部300原段与释义，再阅读范围内全部未选非空行（标题及上下段）、核300关联ID；非抽样。",
+        "sourceExactMatches": 300,
+        "reviewCounts": {
+          "source-reviewed": 212,
+          "draft": 88
+        }
+      },
+      "requiredCorrections": [],
+      "checks": [
+        "L1990四个子日未扩为所有子日，修正通过。",
+        "所有名单重复照录；已/己/巳、末/未、成/戌等真疑字和缺日干保持draft，未按六十甲子期待序列补齐。",
+        "门光星六月与小月、重复五月六月、十一和十二月申日宜葬但忌开金井分别保留。",
+        "L2524正文题头覆盖inventory滞后heading，后续渔猎条未归养蜂。",
+        "出财/纳财、合药/服药、造仓/修仓重复题、养蚕/出蚕与月份续行边界可核。",
+        "平基同前、上梁同定磉、造船与修造引用未声称消除被引段疑字。",
+        "人物伤病、魇镇、治疗及酒方均以旧说释读，未宣称验效；含铅处理酒未整理成现实可用食方。",
+        "没有声称全书完成或影印校勘完成，verified全部false。"
+      ],
+      "entries": [
+        {
+          "index": 0,
+          "paragraphId": "yuqia-ji:L1803-L1803",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true,
+          "sourceSha256": "c1a86587ce829a5d879cbe593faf6f1d073a74b80d5029cbeb0ad44d7168168c"
+        },
+        {
+          "index": 1,
+          "paragraphId": "yuqia-ji:L1805-L1805",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true,
+          "sourceSha256": "c421d76bd64775297e6d641a28851a7b102b258f0952f21c747c5ae408a1c051"
+        },
+        {
+          "index": 2,
+          "paragraphId": "yuqia-ji:L1807-L1807",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true,
+          "sourceSha256": "d7087834263bf2480b3f618346421ab31896011007e1f39e480481ddaf635769"
+        },
+        {
+          "index": 3,
+          "paragraphId": "yuqia-ji:L1809-L1809",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true,
+          "sourceSha256": "32bde4da01e8869df4a1e2a350687f7cdf6948b9e803c13a6ae19463c6b23dc4"
+        },
+        {
+          "index": 4,
+          "paragraphId": "yuqia-ji:L1811-L1811",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true,
+          "sourceSha256": "9f738edb51e1dcce58a4dc045ff80219fc514b9381c31603b4af39ce083d2cb6"
+        },
+        {
+          "index": 5,
+          "paragraphId": "yuqia-ji:L1813-L1813",
+          "verdict": "ACCEPT",
+          "review": "draft",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true,
+          "sourceSha256": "6c3b8243994d4681f62302d2a7bbbfa517d0e1d913ba98169f606b1d139853f4"
+        },
+        {
+          "index": 6,
+          "paragraphId": "yuqia-ji:L1817-L1817",
+          "verdict": "ACCEPT",
+          "review": "draft",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true,
+          "sourceSha256": "5651873841420c344c6a4e9bff96096cfd4d8ccb83672891f999ff060d3dc2f8"
+        },
+        {
+          "index": 7,
+          "paragraphId": "yuqia-ji:L1819-L1819",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true,
+          "sourceSha256": "1c145d61ce91fe7c1519d53820ccf40e8340455138021c93d3a65bd1d4b09f0b"
+        },
+        {
+          "index": 8,
+          "paragraphId": "yuqia-ji:L1823-L1823",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true,
+          "sourceSha256": "836e3aaf3a5db47572859a8c80c158cf8265d8ce1106dece8cab283b4f65a98f"
+        },
+        {
+          "index": 9,
+          "paragraphId": "yuqia-ji:L1825-L1825",
+          "verdict": "ACCEPT",
+          "review": "draft",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true,
+          "sourceSha256": "4cd019e00e40c09a6c51b771120a47ac164a3761572938392ae5132e4f771483"
+        },
+        {
+          "index": 10,
+          "paragraphId": "yuqia-ji:L1829-L1829",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true,
+          "sourceSha256": "05c5d3ac82716b4b35aa79e69354159ea0c1c596d572c8a9472c27b8ae3b8f0f"
+        },
+        {
+          "index": 11,
+          "paragraphId": "yuqia-ji:L1833-L1836",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true,
+          "sourceSha256": "87f87a2ef9c435980d3aab1e8d315af80afc2b83c24037600eed6e86ce58516b"
+        },
+        {
+          "index": 12,
+          "paragraphId": "yuqia-ji:L1840-L1840",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true,
+          "sourceSha256": "afd41c3ae6fb9f30677f28bc5764f5ef55635ab84e2baf761d87dab5c68f027f"
+        },
+        {
+          "index": 13,
+          "paragraphId": "yuqia-ji:L1844-L1844",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true,
+          "sourceSha256": "fce62ecb1aae2b2197aab569094d98a45126678e10714147bcc85f4fa9a18f58"
+        },
+        {
+          "index": 14,
+          "paragraphId": "yuqia-ji:L1846-L1846",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true,
+          "sourceSha256": "20c8dc08d930f516054db7d58868b7e4f5c5eeda734c8b0db0d8699c317cb2c6"
+        },
+        {
+          "index": 15,
+          "paragraphId": "yuqia-ji:L1848-L1848",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true,
+          "sourceSha256": "8fa9dff834a5eb32985d246eb9317626e9357ddd8b15fef601ec5b27235585f5"
+        },
+        {
+          "index": 16,
+          "paragraphId": "yuqia-ji:L1852-L1852",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true,
+          "sourceSha256": "09f0b159bd3f8a6e355ef810ff8d693c855dfc440d8dd3c4effc0ae128ef3037"
+        },
+        {
+          "index": 17,
+          "paragraphId": "yuqia-ji:L1854-L1854",
+          "verdict": "ACCEPT",
+          "review": "draft",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true,
+          "sourceSha256": "f0c93e139f76258a9d75c29fc5fcd9934ee64f1d78805066aa8b12ae2f801da0"
+        },
+        {
+          "index": 18,
+          "paragraphId": "yuqia-ji:L1858-L1858",
+          "verdict": "ACCEPT",
+          "review": "draft",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true,
+          "sourceSha256": "3f6ff9a917645c16cf673c72222486e8c7d9e2415f25612a454c49e132553ee9"
+        },
+        {
+          "index": 19,
+          "paragraphId": "yuqia-ji:L1860-L1860",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true,
+          "sourceSha256": "03d45f0f0f7533b76fcad5fb29269cc88d58d23622c432db4b60eabc11e61e85"
+        },
+        {
+          "index": 20,
+          "paragraphId": "yuqia-ji:L1862-L1862",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true,
+          "sourceSha256": "fdbd14c4e53014d04df6779a1a87825932f3c46bf5a5b090ff427d44fe11b0ee"
+        },
+        {
+          "index": 21,
+          "paragraphId": "yuqia-ji:L1864-L1864",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true,
+          "sourceSha256": "558c3fd548959504cd6b19fbe1f8d378c3db4c55f0c5de89fd992809665d47d7"
+        },
+        {
+          "index": 22,
+          "paragraphId": "yuqia-ji:L1868-L1868",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true,
+          "sourceSha256": "a9dddf64dec1fe7d01ea737dae3e51e54eb386bfc19d1066ee760252c7b5389c"
+        },
+        {
+          "index": 23,
+          "paragraphId": "yuqia-ji:L1870-L1870",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true,
+          "sourceSha256": "7e118d5a845dee4ab45dbe070e30e4af6b7c12a9a8b273b9d3fa9d6b8938f0b0"
+        },
+        {
+          "index": 24,
+          "paragraphId": "yuqia-ji:L1872-L1872",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true,
+          "sourceSha256": "f8e6dea26657ba8f8c2ccd58870d416b34b76ad6af2fced83e1e1a13ee8ec8e4"
+        },
+        {
+          "index": 25,
+          "paragraphId": "yuqia-ji:L1874-L1874",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true,
+          "sourceSha256": "227ff3bee6d2f7881f1f69184751c9d74abfcb1dd11c53c55a24e8011b0ed6e8"
+        },
+        {
+          "index": 26,
+          "paragraphId": "yuqia-ji:L1878-L1878",
+          "verdict": "ACCEPT",
+          "review": "draft",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true,
+          "sourceSha256": "23829bcbdd45c040cdf05bab8ef271d95983fc182508b5cb686f0bdbe9df07b4"
+        },
+        {
+          "index": 27,
+          "paragraphId": "yuqia-ji:L1880-L1880",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true,
+          "sourceSha256": "50a1d20dc10edb1ceec4e02e91db2241983c09dd00e17a34a88f91cb36f16d2f"
+        },
+        {
+          "index": 28,
+          "paragraphId": "yuqia-ji:L1884-L1884",
+          "verdict": "ACCEPT",
+          "review": "draft",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true,
+          "sourceSha256": "87a69fe4a19788296e29ca0967195a2c891b230b722fe7618719911c9fa07877"
+        },
+        {
+          "index": 29,
+          "paragraphId": "yuqia-ji:L1886-L1886",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true,
+          "sourceSha256": "7a65e616c47593004adc1134909a5a521ba4310b3b2160568198fec020e53b17"
+        },
+        {
+          "index": 30,
+          "paragraphId": "yuqia-ji:L1888-L1888",
+          "verdict": "ACCEPT",
+          "review": "draft",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true,
+          "sourceSha256": "f0a0eb92f3fcece051e357ae214943906de2eb1f4b57346de894f5ffca2bbe83"
+        },
+        {
+          "index": 31,
+          "paragraphId": "yuqia-ji:L1890-L1890",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true,
+          "sourceSha256": "e8c53f04a912201960420aea1c5e0f79722a8625d21d614d95925567856f779c"
+        },
+        {
+          "index": 32,
+          "paragraphId": "yuqia-ji:L1892-L1892",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true,
+          "sourceSha256": "4b2d0eb073ffb96c5ffb3af63c926c2e8229c7f7efd63037c9d778a2964fe817"
+        },
+        {
+          "index": 33,
+          "paragraphId": "yuqia-ji:L1894-L1894",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true,
+          "sourceSha256": "dad4a0af7a38f8cd16a1a5e63961fb9cb9a2246236421cba4f6068c9ee101e48"
+        },
+        {
+          "index": 34,
+          "paragraphId": "yuqia-ji:L1898-L1898",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true,
+          "sourceSha256": "7a27d27815409771b6a3d3679a37feb1be16da66e8120d3583a693b7eda7a224"
+        },
+        {
+          "index": 35,
+          "paragraphId": "yuqia-ji:L1900-L1900",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true,
+          "sourceSha256": "8590b47f7a7e22f024325b84b020f531cdd083bd1a499594dd2a74398e354268"
+        },
+        {
+          "index": 36,
+          "paragraphId": "yuqia-ji:L1902-L1902",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true,
+          "sourceSha256": "6a5b7fc4e15556347861cda55cf07de4f7cfa3105c4ebce5edb2a6e84e0e89f5"
+        },
+        {
+          "index": 37,
+          "paragraphId": "yuqia-ji:L1904-L1904",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true,
+          "sourceSha256": "097be86425ea16bd3c48005e8d33a014ae690c5b58853710aa78a22a8ace472d"
+        },
+        {
+          "index": 38,
+          "paragraphId": "yuqia-ji:L1906-L1906",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true,
+          "sourceSha256": "c67334dc17da03e5f4b624d556a7e14cf5454a0547b81fc31d88d938446bc8cb"
+        },
+        {
+          "index": 39,
+          "paragraphId": "yuqia-ji:L1908-L1908",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true,
+          "sourceSha256": "c905b980ce47ef76204e585cd44b71ad24ad8c2cf539bb964a5a1c7a29bb92b3"
+        },
+        {
+          "index": 40,
+          "paragraphId": "yuqia-ji:L1910-L1910",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true,
+          "sourceSha256": "a62cb46bf19bff4c3d5ec59cd33a08373b5c8887fd9f88407e81e80ca4cb30a9"
+        },
+        {
+          "index": 41,
+          "paragraphId": "yuqia-ji:L1912-L1912",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true,
+          "sourceSha256": "a1f4795b0a52df7622cc827b18c0885122b771db6581516e9d6efdca0cbd6505"
+        },
+        {
+          "index": 42,
+          "paragraphId": "yuqia-ji:L1914-L1914",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true,
+          "sourceSha256": "25bffb2bc9f6d9d1e6ba62ffaf01b7e3f18041b274e25f491d5fc8723160c665"
+        },
+        {
+          "index": 43,
+          "paragraphId": "yuqia-ji:L1916-L1916",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true,
+          "sourceSha256": "922bebf74e2d939ecdb21ab8bccc02ccc1a0b92c8217d2e1afe8088f1727d897"
+        },
+        {
+          "index": 44,
+          "paragraphId": "yuqia-ji:L1918-L1918",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true,
+          "sourceSha256": "336d2026cc67a151ffd24317107aeda958068098cad646142356d5f16bb09982"
+        },
+        {
+          "index": 45,
+          "paragraphId": "yuqia-ji:L1922-L1922",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true,
+          "sourceSha256": "dad70db2a3f2a266481aeabd01e96761d9fc1f352c46c44cdf9b6c4a723bc73c"
+        },
+        {
+          "index": 46,
+          "paragraphId": "yuqia-ji:L1924-L1924",
+          "verdict": "ACCEPT",
+          "review": "draft",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true,
+          "sourceSha256": "7fb85ce2032d17f10db6334adc38e2e35fd1cafed737057803b43255f1b826fd"
+        },
+        {
+          "index": 47,
+          "paragraphId": "yuqia-ji:L1928-L1928",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true,
+          "sourceSha256": "5a8d757f0a837e2f666883bf323dfde0cde0edd7116329f8e95a0b17449ec15d"
+        },
+        {
+          "index": 48,
+          "paragraphId": "yuqia-ji:L1930-L1930",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true,
+          "sourceSha256": "06805667b766e58be531b485dd395fb21467c66b51e8c30394c80599b188b06f"
+        },
+        {
+          "index": 49,
+          "paragraphId": "yuqia-ji:L1932-L1932",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true,
+          "sourceSha256": "97c66b204fac8fee2c86d07de3672f3492d673e1c27164752b58205a380e99bd"
+        },
+        {
+          "index": 50,
+          "paragraphId": "yuqia-ji:L1936-L1936",
+          "verdict": "ACCEPT",
+          "review": "draft",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true,
+          "sourceSha256": "a9f7993d79ca80978b0ce09626573b0d221f882f8e198aa2443d40c3c6cd7fec"
+        },
+        {
+          "index": 51,
+          "paragraphId": "yuqia-ji:L1940-L1940",
+          "verdict": "ACCEPT",
+          "review": "draft",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true,
+          "sourceSha256": "a1e0c5d94f397f3ec9786801332375843b49b83d192733718f564040d3904b31"
+        },
+        {
+          "index": 52,
+          "paragraphId": "yuqia-ji:L1942-L1942",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true,
+          "sourceSha256": "9bbb8e019499ea71d0ba73b5e01609416cc4c90d53f1fa20b14f4d5c48c1e18c"
+        },
+        {
+          "index": 53,
+          "paragraphId": "yuqia-ji:L1946-L1946",
+          "verdict": "ACCEPT",
+          "review": "draft",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true,
+          "sourceSha256": "30e6cab2b181c98797be1d575b094d0ebeaaae11789b689701c893505216f11e"
+        },
+        {
+          "index": 54,
+          "paragraphId": "yuqia-ji:L1948-L1948",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true,
+          "sourceSha256": "38c9df4bb7ec9d48975da04ce0c4ef00553a772836164685e1c3610835ab245e"
+        },
+        {
+          "index": 55,
+          "paragraphId": "yuqia-ji:L1950-L1950",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true,
+          "sourceSha256": "0d909e40af6db21969f1883aabb7dd5ce8bfe73fc44251b0285f7c6299bcc90f"
+        },
+        {
+          "index": 56,
+          "paragraphId": "yuqia-ji:L1952-L1952",
+          "verdict": "ACCEPT",
+          "review": "draft",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true,
+          "sourceSha256": "6766d10e28f4c2932861c7a473c8beb8fb9dd6ccc04044857cee9200df38ea8b"
+        },
+        {
+          "index": 57,
+          "paragraphId": "yuqia-ji:L1954-L1954",
+          "verdict": "ACCEPT",
+          "review": "draft",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true,
+          "sourceSha256": "23afd7ec7cda0ac2cca13a1aafca5dc0284eb810ddb815e9be93b7bdfdbead10"
+        },
+        {
+          "index": 58,
+          "paragraphId": "yuqia-ji:L1956-L1956",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true,
+          "sourceSha256": "eff5e384ca63aef0ee1d5ffbe8bace1888e5dc40ec6e1c34e2bb9babe59ec0a7"
+        },
+        {
+          "index": 59,
+          "paragraphId": "yuqia-ji:L1958-L1958",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true,
+          "sourceSha256": "c2b9cc0c08aa0c2351e37386bf9b359cc4834208d0afaf442871bf93d0e1a6dc"
+        },
+        {
+          "index": 60,
+          "paragraphId": "yuqia-ji:L1962-L1962",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true,
+          "sourceSha256": "cbdf4b67dd6c4386c257cbc77c2cda7456529ea000afb942699c74ff84fd3461"
+        },
+        {
+          "index": 61,
+          "paragraphId": "yuqia-ji:L1964-L1964",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true,
+          "sourceSha256": "dbe3f5a5172e7c149d0182050f123adfac5dcc6b5de1cb111004b9bb33d08795"
+        },
+        {
+          "index": 62,
+          "paragraphId": "yuqia-ji:L1968-L1968",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true,
+          "sourceSha256": "fa4d238d91b25feae834fc60afeafec46830c7e3c2907142cc910453a9be8283"
+        },
+        {
+          "index": 63,
+          "paragraphId": "yuqia-ji:L1970-L1970",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true,
+          "sourceSha256": "d264909614e7ef069aae25bac9c406d3d9d5c1812ea560046a10872ac08a0716"
+        },
+        {
+          "index": 64,
+          "paragraphId": "yuqia-ji:L1972-L1972",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true,
+          "sourceSha256": "980032c6fc59e6028c4461873dedceb6d27a2a820085e8d7570a8f5689d9e79d"
+        },
+        {
+          "index": 65,
+          "paragraphId": "yuqia-ji:L1974-L1974",
+          "verdict": "ACCEPT",
+          "review": "draft",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true,
+          "sourceSha256": "c7a199f3bfb9c3f95f6107570324403815af052eef301567adda1aefc1482aeb"
+        },
+        {
+          "index": 66,
+          "paragraphId": "yuqia-ji:L1976-L1976",
+          "verdict": "ACCEPT",
+          "review": "draft",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true,
+          "sourceSha256": "c35228c1d7b89527c21908950770fb662a42b6cc8343e036245f63c8314b825c"
+        },
+        {
+          "index": 67,
+          "paragraphId": "yuqia-ji:L1978-L1978",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true,
+          "sourceSha256": "1b343bd2758df3c62dde8f5ce7cfbd4970f4c1eb663485b6e8ac36323fa8cd85"
+        },
+        {
+          "index": 68,
+          "paragraphId": "yuqia-ji:L1980-L1980",
+          "verdict": "ACCEPT",
+          "review": "draft",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true,
+          "sourceSha256": "02006c5f4db2f119c5da4e286a7f95f525b6cc3fe3070146a84a81b93c244e70"
+        },
+        {
+          "index": 69,
+          "paragraphId": "yuqia-ji:L1982-L1982",
+          "verdict": "ACCEPT",
+          "review": "draft",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true,
+          "sourceSha256": "c3967d588359ec17a42eba9fb8b769ddb60ba5956fdbc9ed354457d989dc48ef"
+        },
+        {
+          "index": 70,
+          "paragraphId": "yuqia-ji:L1984-L1984",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true,
+          "sourceSha256": "8663fc0559b32d6937d4b6f57f5cc364ad5f4be7b45b0d8277273f1b530d89c4"
+        },
+        {
+          "index": 71,
+          "paragraphId": "yuqia-ji:L1986-L1986",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true,
+          "sourceSha256": "929f40f6b0195c4f3d96669e86d187a8e452880d7c2cbadeaa418ab7f690efe8"
+        },
+        {
+          "index": 72,
+          "paragraphId": "yuqia-ji:L1988-L1988",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true,
+          "sourceSha256": "aa42f452ed6238efbcff1eeeff5d9b21419ed98e4a203dded17393cef4027783"
+        },
+        {
+          "index": 73,
+          "paragraphId": "yuqia-ji:L1990-L1990",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true,
+          "sourceSha256": "cc6d6cbc4d2fc6c35eecdea29d64cba659b137561b4f8fae866d671e79e4f288"
+        },
+        {
+          "index": 74,
+          "paragraphId": "yuqia-ji:L1992-L1992",
+          "verdict": "ACCEPT",
+          "review": "draft",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true,
+          "sourceSha256": "243e64a2e8fbe89520728e1609f2470dbaee59ec7cb8e884a821593cf893767f"
+        },
+        {
+          "index": 75,
+          "paragraphId": "yuqia-ji:L1994-L1994",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true,
+          "sourceSha256": "1fa392e91037dd2c3f2f26ac27ccda987766ff9ed9568b0e1af93aded5cb01e0"
+        },
+        {
+          "index": 76,
+          "paragraphId": "yuqia-ji:L1998-L1998",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true,
+          "sourceSha256": "ff9536b68fd8c86f40441d27a6d4ec68fbdfbfa61bf6f964ba9b4f433ec188c3"
+        },
+        {
+          "index": 77,
+          "paragraphId": "yuqia-ji:L2000-L2000",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true,
+          "sourceSha256": "4c01e189fd44281de85b4c1ce9b3d771e2420af5344769d2507dafff7e4e551a"
+        },
+        {
+          "index": 78,
+          "paragraphId": "yuqia-ji:L2002-L2002",
+          "verdict": "ACCEPT",
+          "review": "draft",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true,
+          "sourceSha256": "c3477d60702181c90ee20ef14fff6a4d22b1480d91b1f9fe847dff4888df99fa"
+        },
+        {
+          "index": 79,
+          "paragraphId": "yuqia-ji:L2006-L2006",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true,
+          "sourceSha256": "8fa8dd8f137967a853978ca10d8863fe905221822545fe7498da2b9a94789360"
+        },
+        {
+          "index": 80,
+          "paragraphId": "yuqia-ji:L2008-L2008",
+          "verdict": "ACCEPT",
+          "review": "draft",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true,
+          "sourceSha256": "f46cb57f75b2f65756c60a988f2b53fcad28127278c16f34511353e0340738ea"
+        },
+        {
+          "index": 81,
+          "paragraphId": "yuqia-ji:L2012-L2012",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true,
+          "sourceSha256": "3f7f2516256ea48634feb636374c90599af2420878aaed0fa0253538670f494c"
+        },
+        {
+          "index": 82,
+          "paragraphId": "yuqia-ji:L2014-L2014",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true,
+          "sourceSha256": "50a1d20dc10edb1ceec4e02e91db2241983c09dd00e17a34a88f91cb36f16d2f"
+        },
+        {
+          "index": 83,
+          "paragraphId": "yuqia-ji:L2018-L2018",
+          "verdict": "ACCEPT",
+          "review": "draft",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true,
+          "sourceSha256": "6466d838212fd315647721206c05dc6891c00efc656a43c8474d985247dfa8a6"
+        },
+        {
+          "index": 84,
+          "paragraphId": "yuqia-ji:L2022-L2022",
+          "verdict": "ACCEPT",
+          "review": "draft",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true,
+          "sourceSha256": "87c4689ee37f77e3bf612e63ab9f1dcedacdce64edea22c421ecb738dd1faabc"
+        },
+        {
+          "index": 85,
+          "paragraphId": "yuqia-ji:L2024-L2024",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true,
+          "sourceSha256": "355bf470bee38fab67f5a0c9231ae4404103b91b697db3e5dcb8b692e152303d"
+        },
+        {
+          "index": 86,
+          "paragraphId": "yuqia-ji:L2026-L2026",
+          "verdict": "ACCEPT",
+          "review": "draft",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true,
+          "sourceSha256": "8dd46e6882a60d07367a326be8611ac1627a3b5aef75dac9ea606f9829bc3786"
+        },
+        {
+          "index": 87,
+          "paragraphId": "yuqia-ji:L2028-L2028",
+          "verdict": "ACCEPT",
+          "review": "draft",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true,
+          "sourceSha256": "725c8a01036e5334b92011d16896c863f21140991d5eb61345b4206a2bffc063"
+        },
+        {
+          "index": 88,
+          "paragraphId": "yuqia-ji:L2032-L2032",
+          "verdict": "ACCEPT",
+          "review": "draft",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true,
+          "sourceSha256": "cc8cff28ac7f60b851df9e02e1de30d83fb259555800ad83d0c64d9d5e9e3fd9"
+        },
+        {
+          "index": 89,
+          "paragraphId": "yuqia-ji:L2034-L2034",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true,
+          "sourceSha256": "a0c0234a6e0382503e0f83949f6b443ed08c3d36e4262e844f55c22c4de59243"
+        },
+        {
+          "index": 90,
+          "paragraphId": "yuqia-ji:L2036-L2036",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true,
+          "sourceSha256": "ee78fc80a7bf7e18eb70d4cee518262ea3a1ad3db463f5139c164942cb417352"
+        },
+        {
+          "index": 91,
+          "paragraphId": "yuqia-ji:L2040-L2040",
+          "verdict": "ACCEPT",
+          "review": "draft",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true,
+          "sourceSha256": "1d186fdea3711b73e3027afe6196468e1909c80b87041dc80e9fcc09e8708bcb"
+        },
+        {
+          "index": 92,
+          "paragraphId": "yuqia-ji:L2042-L2042",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true,
+          "sourceSha256": "312e1160641e5e8349ca98045d31bf37cff9df74d9e184ff00f051af61bb5b41"
+        },
+        {
+          "index": 93,
+          "paragraphId": "yuqia-ji:L2044-L2044",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true,
+          "sourceSha256": "e96f7b685dcf6939ed966693484e465a6eda89ebb46a965f09251bc1b41cc933"
+        },
+        {
+          "index": 94,
+          "paragraphId": "yuqia-ji:L2048-L2048",
+          "verdict": "ACCEPT",
+          "review": "draft",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true,
+          "sourceSha256": "2c44af0a9744f8ffc678db4fd5e60b7daf10e3db10fe76837714d1720a1bb6fc"
+        },
+        {
+          "index": 95,
+          "paragraphId": "yuqia-ji:L2050-L2050",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true,
+          "sourceSha256": "0911f5634f7718026fd4955061b316b8219608356f572fe9aea25bd8a9f9ee19"
+        },
+        {
+          "index": 96,
+          "paragraphId": "yuqia-ji:L2052-L2052",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true,
+          "sourceSha256": "6611bea18c3205d270ee849d3bd6e33589c86e54a87082da3fffdd9dc0c075d0"
+        },
+        {
+          "index": 97,
+          "paragraphId": "yuqia-ji:L2056-L2056",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true,
+          "sourceSha256": "1225b1484a6e0210ff4aeca356ab0f166aef3a3a8909114d57ba62a499c47d93"
+        },
+        {
+          "index": 98,
+          "paragraphId": "yuqia-ji:L2060-L2060",
+          "verdict": "ACCEPT",
+          "review": "draft",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true,
+          "sourceSha256": "714477fa1b29a4c77c6ba8d1d59a16d3eb48db0a061f612f8f6f6cbf015e3992"
+        },
+        {
+          "index": 99,
+          "paragraphId": "yuqia-ji:L2062-L2062",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true,
+          "sourceSha256": "c1433c01432770eb7f53028d62d37e47b65ad410cc02caa719d213037d2388f8"
+        },
+        {
+          "index": 100,
+          "paragraphId": "yuqia-ji:L2064-L2064",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true,
+          "sourceSha256": "20b7e586e2fef442648d8428f28baa063b8e5d862bb5ce1d08025463263aa5d4"
+        },
+        {
+          "index": 101,
+          "paragraphId": "yuqia-ji:L2068-L2068",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true,
+          "sourceSha256": "7493d1a32ba50fd21474ae60a937766067931bff12ca6d7e84ab1c6e062f0fea"
+        },
+        {
+          "index": 102,
+          "paragraphId": "yuqia-ji:L2070-L2070",
+          "verdict": "ACCEPT",
+          "review": "draft",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true,
+          "sourceSha256": "40c0b12557c11ea8b8861410b8ef9affcb02c97932fb7ba1c671bc405517ec5c"
+        },
+        {
+          "index": 103,
+          "paragraphId": "yuqia-ji:L2072-L2072",
+          "verdict": "ACCEPT",
+          "review": "draft",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true,
+          "sourceSha256": "90a2647b9c86c394dcd9b7ba4c35e956cfce66b0407c096b44d9330199919dde"
+        },
+        {
+          "index": 104,
+          "paragraphId": "yuqia-ji:L2074-L2074",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true,
+          "sourceSha256": "7a9f4db6e466fcd7776ce51ef85a8e2e8af068b7209738da8f0ba1d13f7d5e19"
+        },
+        {
+          "index": 105,
+          "paragraphId": "yuqia-ji:L2076-L2076",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true,
+          "sourceSha256": "043a4227503a4329685d020fdc82408b53246a7a2cf828e3a728a467183d5346"
+        },
+        {
+          "index": 106,
+          "paragraphId": "yuqia-ji:L2078-L2078",
+          "verdict": "ACCEPT",
+          "review": "draft",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true,
+          "sourceSha256": "bcd8291284549c6133a21c70b11f4dfb3fb039a6d074c70b88ed0b8a1bf2b4da"
+        },
+        {
+          "index": 107,
+          "paragraphId": "yuqia-ji:L2080-L2080",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true,
+          "sourceSha256": "fb8d3c233cb830d7a3f265b32a613679d1433dde7982f086406cafd3a723920a"
+        },
+        {
+          "index": 108,
+          "paragraphId": "yuqia-ji:L2084-L2084",
+          "verdict": "ACCEPT",
+          "review": "draft",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true,
+          "sourceSha256": "80193704f4cb3fbd2b7e784e2592bab8742478efb99d95ff9c9f9692a7e7ca3d"
+        },
+        {
+          "index": 109,
+          "paragraphId": "yuqia-ji:L2086-L2086",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true,
+          "sourceSha256": "62b0a0d434f7583b2d8d161230d9cfbfba1cf8bc03690715164599abf5d46bdc"
+        },
+        {
+          "index": 110,
+          "paragraphId": "yuqia-ji:L2088-L2088",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true,
+          "sourceSha256": "d15faf5451c45abb92c78a089dd2bca32d72e1889c000be63bcb328ae1445073"
+        },
+        {
+          "index": 111,
+          "paragraphId": "yuqia-ji:L2090-L2090",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true,
+          "sourceSha256": "b852fe384a97472de817433a5693c3c8be0f0bfe378447d6c19769d78b9485c9"
+        },
+        {
+          "index": 112,
+          "paragraphId": "yuqia-ji:L2092-L2092",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true,
+          "sourceSha256": "defcf4634b5a80cb9d50782b2f1732cbf5c4c9f45e8c26c0ddcb4c6cee439929"
+        },
+        {
+          "index": 113,
+          "paragraphId": "yuqia-ji:L2094-L2094",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true,
+          "sourceSha256": "fdffe44b1f39b317adfc015c62811495296e417afb6a2084bb5faeb99096f7e3"
+        },
+        {
+          "index": 114,
+          "paragraphId": "yuqia-ji:L2096-L2096",
+          "verdict": "ACCEPT",
+          "review": "draft",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true,
+          "sourceSha256": "80193704f4cb3fbd2b7e784e2592bab8742478efb99d95ff9c9f9692a7e7ca3d"
+        },
+        {
+          "index": 115,
+          "paragraphId": "yuqia-ji:L2098-L2098",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true,
+          "sourceSha256": "9fbedd0cb64d1e3a649708a8c2d1ab67013bd11e58eca50350caefca719a5a81"
+        },
+        {
+          "index": 116,
+          "paragraphId": "yuqia-ji:L2100-L2100",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true,
+          "sourceSha256": "d5488dfc5b6cf1c0ba9fd7e8fab418427c824fc26494ae50497193e82851fd1f"
+        },
+        {
+          "index": 117,
+          "paragraphId": "yuqia-ji:L2104-L2105",
+          "verdict": "ACCEPT",
+          "review": "draft",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true,
+          "sourceSha256": "2715f4159d886a6147c9ed0af6db019e0b1c50a5ba0456584d63719432eb339a"
+        },
+        {
+          "index": 118,
+          "paragraphId": "yuqia-ji:L2109-L2109",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true,
+          "sourceSha256": "bbf40c53de02a6aa0eedef46651be7c9f194cc7ac7a34c52002311e0801a21ce"
+        },
+        {
+          "index": 119,
+          "paragraphId": "yuqia-ji:L2111-L2111",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true,
+          "sourceSha256": "45484a69902b80eae68b7cc7e82e9dda5d59df051558897d9497bd6135bb0b53"
+        },
+        {
+          "index": 120,
+          "paragraphId": "yuqia-ji:L2113-L2113",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true,
+          "sourceSha256": "07f0d158fbb5bbc6cefdb511d2759b565e4eac43cce97a5b165b0ccc8d2c27a1"
+        },
+        {
+          "index": 121,
+          "paragraphId": "yuqia-ji:L2115-L2115",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true,
+          "sourceSha256": "f3806d33dd95d08dc30d97d46ae69c409d4d58b2c1c4fb51686d747ef11b2057"
+        },
+        {
+          "index": 122,
+          "paragraphId": "yuqia-ji:L2117-L2117",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true,
+          "sourceSha256": "2f250bb0fff83ac16177cc5024f2a6be03af1e281295a4dfb9bb784413bf75e3"
+        },
+        {
+          "index": 123,
+          "paragraphId": "yuqia-ji:L2119-L2119",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true,
+          "sourceSha256": "2d3474c85100f1b60670a94b1def5f4e5ed42d5004900372bb550543c1412b0d"
+        },
+        {
+          "index": 124,
+          "paragraphId": "yuqia-ji:L2121-L2121",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true,
+          "sourceSha256": "1e8c5aa6aba5a0885d86cb11334b2c5b877b0981b55a8e6c0e14ad4638aaf52d"
+        },
+        {
+          "index": 125,
+          "paragraphId": "yuqia-ji:L2123-L2123",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true,
+          "sourceSha256": "f31a3e11be20570b5e17068bed5d05fa5c99e22aff113b61586f5ed294ab49fe"
+        },
+        {
+          "index": 126,
+          "paragraphId": "yuqia-ji:L2127-L2127",
+          "verdict": "ACCEPT",
+          "review": "draft",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true,
+          "sourceSha256": "064b0343e65e0f2fc6f1405e7c8efe8093d9b6c3765fa5728dc8362771173ff1"
+        },
+        {
+          "index": 127,
+          "paragraphId": "yuqia-ji:L2129-L2129",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true,
+          "sourceSha256": "d903d2ea14913d15df0d02addcedec45d6a1ae20fd338034478690ae9cd8dada"
+        },
+        {
+          "index": 128,
+          "paragraphId": "yuqia-ji:L2133-L2133",
+          "verdict": "ACCEPT",
+          "review": "draft",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true,
+          "sourceSha256": "2247bd1f00852595d7de89c30a4c56073536a4767d368d334396b10437d58e3c"
+        },
+        {
+          "index": 129,
+          "paragraphId": "yuqia-ji:L2135-L2135",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true,
+          "sourceSha256": "60b6d895caa4710fc9c082148410d116a1068138c13a2e87968e4dee1363d79d"
+        },
+        {
+          "index": 130,
+          "paragraphId": "yuqia-ji:L2137-L2137",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true,
+          "sourceSha256": "415a40b5667a4c697424c1f7d76d96046b1ae71370e76fbee9c9a23fb8869212"
+        },
+        {
+          "index": 131,
+          "paragraphId": "yuqia-ji:L2141-L2141",
+          "verdict": "ACCEPT",
+          "review": "draft",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true,
+          "sourceSha256": "2a8df7c7130e5c19a3a391b9934885242a45d6e0b9e4cd39bf6ad917e5cecc96"
+        },
+        {
+          "index": 132,
+          "paragraphId": "yuqia-ji:L2143-L2143",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true,
+          "sourceSha256": "dccf742ce8c266fb819c0dc66e740fc50bc9237076908c179102ef2a6e5958c6"
+        },
+        {
+          "index": 133,
+          "paragraphId": "yuqia-ji:L2145-L2145",
+          "verdict": "ACCEPT",
+          "review": "draft",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true,
+          "sourceSha256": "19d540e828de032c3e47a352149d77335fddd33b815c8ae060f8bdb72bf54be1"
+        },
+        {
+          "index": 134,
+          "paragraphId": "yuqia-ji:L2149-L2149",
+          "verdict": "ACCEPT",
+          "review": "draft",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true,
+          "sourceSha256": "9df8888bbec7dd27fb468bb5e7ccb918ab1e974fb7846d785ad4c31fecd6438b"
+        },
+        {
+          "index": 135,
+          "paragraphId": "yuqia-ji:L2151-L2151",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true,
+          "sourceSha256": "7901a25e943e5f3d1dd6f67d8a05e9b64c7f94df67b812ba5da0494e68e60321"
+        },
+        {
+          "index": 136,
+          "paragraphId": "yuqia-ji:L2153-L2153",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true,
+          "sourceSha256": "c95e5fceb9348ac67ba9334f861866b41332d4d672700b846198440a9bf69486"
+        },
+        {
+          "index": 137,
+          "paragraphId": "yuqia-ji:L2155-L2155",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true,
+          "sourceSha256": "c68dabb1d64e6198259d82793590742e7c4059bdb9b7b192595b1264171abf4b"
+        },
+        {
+          "index": 138,
+          "paragraphId": "yuqia-ji:L2157-L2157",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true,
+          "sourceSha256": "c13df68eb285a92bb7b1c2f911adb1af2733d256378b36032e35d8ad704338b7"
+        },
+        {
+          "index": 139,
+          "paragraphId": "yuqia-ji:L2161-L2161",
+          "verdict": "ACCEPT",
+          "review": "draft",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true,
+          "sourceSha256": "98e7442b754d3a4a9c9d5ddce4e738d08d0fb01850e859993594fc656662d4a0"
+        },
+        {
+          "index": 140,
+          "paragraphId": "yuqia-ji:L2163-L2163",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true,
+          "sourceSha256": "73886456b8d6851f7120ee2fc5365779c1b830b8b1ae70153f9c990f2dd77418"
+        },
+        {
+          "index": 141,
+          "paragraphId": "yuqia-ji:L2167-L2167",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true,
+          "sourceSha256": "f2c0e39837bdff2c308f79520413427ea239707350cb8db9a02727d9254d9a51"
+        },
+        {
+          "index": 142,
+          "paragraphId": "yuqia-ji:L2169-L2169",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true,
+          "sourceSha256": "3a7f6db9a367e082d3c74cfb173091dab87407679f01d8b640c3a4229b9a04e9"
+        },
+        {
+          "index": 143,
+          "paragraphId": "yuqia-ji:L2171-L2171",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true,
+          "sourceSha256": "3fe02b1b9a7c9065d56c89da64cb11fb1e8bb94e7054674b4a6ec9361e200a71"
+        },
+        {
+          "index": 144,
+          "paragraphId": "yuqia-ji:L2175-L2175",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true,
+          "sourceSha256": "2be75122e613c0ae5aaab4ca027f58a31c0eab54dfbb7c6df0c2a85bd86d1a02"
+        },
+        {
+          "index": 145,
+          "paragraphId": "yuqia-ji:L2177-L2177",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true,
+          "sourceSha256": "8386de1a91e027a90f194e18baea3824e7e8ea0a2eef11cec1c0ef6fb97dcdae"
+        },
+        {
+          "index": 146,
+          "paragraphId": "yuqia-ji:L2181-L2181",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true,
+          "sourceSha256": "1d24655c1230a0e2f2539a60996c098e3bc2a1370c4e0a80b331c7067dbe28c5"
+        },
+        {
+          "index": 147,
+          "paragraphId": "yuqia-ji:L2183-L2183",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true,
+          "sourceSha256": "ad35e8dd07ff8532ec18331d772d2369cfa121270d052d2c608c547d1ba10573"
+        },
+        {
+          "index": 148,
+          "paragraphId": "yuqia-ji:L2187-L2187",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true,
+          "sourceSha256": "5a9659d5953a2a5d2825188bb84343f69ea7fb38ca73c4676def7309af34853a"
+        },
+        {
+          "index": 149,
+          "paragraphId": "yuqia-ji:L2189-L2189",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true,
+          "sourceSha256": "a3413ed4ec135555a1b6d8a31bbf4ebf545e60466e5199df0a76220943cb025b"
+        },
+        {
+          "index": 150,
+          "paragraphId": "yuqia-ji:L2193-L2193",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true,
+          "sourceSha256": "6c3ff55c9fff120e8505cade7b3614071d20cc2965105b7c913b1dff7a675161"
+        },
+        {
+          "index": 151,
+          "paragraphId": "yuqia-ji:L2195-L2195",
+          "verdict": "ACCEPT",
+          "review": "draft",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true,
+          "sourceSha256": "3229344bbc4e296809dbea7ced68ff833ea0420a968f3ffd48c0f5e2647c2b51"
+        },
+        {
+          "index": 152,
+          "paragraphId": "yuqia-ji:L2197-L2197",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true,
+          "sourceSha256": "20f2edab84771dbfdfeb7d5667373d1aeedd325b692e843a7e3f7a400b7ac445"
+        },
+        {
+          "index": 153,
+          "paragraphId": "yuqia-ji:L2199-L2199",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true,
+          "sourceSha256": "5cd36227ff8ff6d412649cf92adf0d9db5a3da76804f4290051b170931cd67f2"
+        },
+        {
+          "index": 154,
+          "paragraphId": "yuqia-ji:L2201-L2201",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true,
+          "sourceSha256": "87bc91f97434537e54ef14d7bac4ee2279a07bd183e3734049535d4ef12a20a0"
+        },
+        {
+          "index": 155,
+          "paragraphId": "yuqia-ji:L2203-L2203",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true,
+          "sourceSha256": "fc24b505fc3cb7a132f2534301efb0f7bff28d6aad981d3ca6c8ef6d2b5e4533"
+        },
+        {
+          "index": 156,
+          "paragraphId": "yuqia-ji:L2207-L2207",
+          "verdict": "ACCEPT",
+          "review": "draft",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true,
+          "sourceSha256": "ccc37fcd3f376ff674e6e5b61ef440d0849a69daa1c3cc87e7db156b3bf3f4d0"
+        },
+        {
+          "index": 157,
+          "paragraphId": "yuqia-ji:L2209-L2209",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true,
+          "sourceSha256": "337c949991474cb1e7f5e99935c0da10c0abc408d22870e5305da3f48f9ca0c0"
+        },
+        {
+          "index": 158,
+          "paragraphId": "yuqia-ji:L2211-L2211",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true,
+          "sourceSha256": "cc7e01381b3c132e4b8c8c08f7021f27422229c9aa8994b8a20594aec9455f99"
+        },
+        {
+          "index": 159,
+          "paragraphId": "yuqia-ji:L2213-L2213",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true,
+          "sourceSha256": "b744d17a632343606c855a94d0d779bdcc5c8f576cd662d845278fe0489f8cf5"
+        },
+        {
+          "index": 160,
+          "paragraphId": "yuqia-ji:L2215-L2215",
+          "verdict": "ACCEPT",
+          "review": "draft",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true,
+          "sourceSha256": "18a95f9c1889f879a7ddfe89d9129093d585fab9a0e684c96eddb054960075c9"
+        },
+        {
+          "index": 161,
+          "paragraphId": "yuqia-ji:L2219-L2219",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true,
+          "sourceSha256": "04695e42803301c5d5ace2599deaa676c71172759839640c37d0fcdffcb316d1"
+        },
+        {
+          "index": 162,
+          "paragraphId": "yuqia-ji:L2221-L2221",
+          "verdict": "ACCEPT",
+          "review": "draft",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true,
+          "sourceSha256": "6864426f82393601a77406e1919a2a43bdc8949091fec1c7830d657aa29912a0"
+        },
+        {
+          "index": 163,
+          "paragraphId": "yuqia-ji:L2223-L2223",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true,
+          "sourceSha256": "125461ad19cbcbdc68e910cc672212d360c5272abf29706b57c5814edc50135b"
+        },
+        {
+          "index": 164,
+          "paragraphId": "yuqia-ji:L2225-L2225",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true,
+          "sourceSha256": "f8a9d63d3993c1a8268821ace2be3a6673bf9cb46fdc6250e02a1e11b3f20420"
+        },
+        {
+          "index": 165,
+          "paragraphId": "yuqia-ji:L2229-L2229",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true,
+          "sourceSha256": "b7e2f75497eb146eec307911466479368b573752ff1c2bf18946e19e20da91e9"
+        },
+        {
+          "index": 166,
+          "paragraphId": "yuqia-ji:L2233-L2233",
+          "verdict": "ACCEPT",
+          "review": "draft",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true,
+          "sourceSha256": "7c6349e47d5b33075792dc93df175018eae58ac9e31c390e9322392ef53028f1"
+        },
+        {
+          "index": 167,
+          "paragraphId": "yuqia-ji:L2237-L2237",
+          "verdict": "ACCEPT",
+          "review": "draft",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true,
+          "sourceSha256": "f35248db289259b93a53e7c157906d2da84d98d45f86912e2e6ce6fb4d889670"
+        },
+        {
+          "index": 168,
+          "paragraphId": "yuqia-ji:L2239-L2239",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true,
+          "sourceSha256": "a3e1506dacc905fa4770598000c56d30d112f01342209cee31e6245e25cf97c3"
+        },
+        {
+          "index": 169,
+          "paragraphId": "yuqia-ji:L2243-L2243",
+          "verdict": "ACCEPT",
+          "review": "draft",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true,
+          "sourceSha256": "d220d6468abbeb3c7954e5fef47270c58797f2c471a28e0b1ad3b6e39c894bac"
+        },
+        {
+          "index": 170,
+          "paragraphId": "yuqia-ji:L2245-L2245",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true,
+          "sourceSha256": "76c9ad014ac891186b10242d43de8baad05f41bb2250824041b22efb9e33ea05"
+        },
+        {
+          "index": 171,
+          "paragraphId": "yuqia-ji:L2249-L2249",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true,
+          "sourceSha256": "2a814f72d268cef9283d5aad2f38d6114b9fc210cf92132f8743c0dd40ff2730"
+        },
+        {
+          "index": 172,
+          "paragraphId": "yuqia-ji:L2251-L2251",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true,
+          "sourceSha256": "50a1d20dc10edb1ceec4e02e91db2241983c09dd00e17a34a88f91cb36f16d2f"
+        },
+        {
+          "index": 173,
+          "paragraphId": "yuqia-ji:L2253-L2253",
+          "verdict": "ACCEPT",
+          "review": "draft",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true,
+          "sourceSha256": "07a3673769b86d51bf33c01228b58115fab52b3fb1680157e9efb79c64879579"
+        },
+        {
+          "index": 174,
+          "paragraphId": "yuqia-ji:L2257-L2257",
+          "verdict": "ACCEPT",
+          "review": "draft",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true,
+          "sourceSha256": "c2062ed41cebee780223919a628606245530ec3a77e5a8502299a95763434baa"
+        },
+        {
+          "index": 175,
+          "paragraphId": "yuqia-ji:L2261-L2261",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true,
+          "sourceSha256": "793233644ce5a0114e73eec6ec7891df466317ebbae41343d17abd59214f4fd7"
+        },
+        {
+          "index": 176,
+          "paragraphId": "yuqia-ji:L2265-L2265",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true,
+          "sourceSha256": "46b20f6a8e608060d555dd8ddb1e6a8993186343febd61e8481eab18c2828789"
+        },
+        {
+          "index": 177,
+          "paragraphId": "yuqia-ji:L2267-L2267",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true,
+          "sourceSha256": "e1fd21e7555b0aa88587601dac6bab17f73f095b6fbea040830b97e066916725"
+        },
+        {
+          "index": 178,
+          "paragraphId": "yuqia-ji:L2271-L2271",
+          "verdict": "ACCEPT",
+          "review": "draft",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true,
+          "sourceSha256": "81e4470dc5f12030e5f9a01128022da7c697100c711491e2b894942306031e08"
+        },
+        {
+          "index": 179,
+          "paragraphId": "yuqia-ji:L2273-L2273",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true,
+          "sourceSha256": "3b664d593cdec5ee64690901e542151ad3c348bb919391dcc75ed9d8d755715e"
+        },
+        {
+          "index": 180,
+          "paragraphId": "yuqia-ji:L2277-L2277",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true,
+          "sourceSha256": "2b3b1b9b18e216cb2ca6d1a743f532a8e6b8cc3953c8c686a0ce81c5fec839f5"
+        },
+        {
+          "index": 181,
+          "paragraphId": "yuqia-ji:L2279-L2279",
+          "verdict": "ACCEPT",
+          "review": "draft",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true,
+          "sourceSha256": "cee9d6b26d6c662354c1f99a39744aaa8501f21e6e53aa6cc5719642da93a0cc"
+        },
+        {
+          "index": 182,
+          "paragraphId": "yuqia-ji:L2281-L2281",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true,
+          "sourceSha256": "b12017c36b60c3439d50f67ab08ab159eab47137fb6f6839067bc35366aab6dd"
+        },
+        {
+          "index": 183,
+          "paragraphId": "yuqia-ji:L2285-L2285",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true,
+          "sourceSha256": "90b8f95a9f4f304d71df41ff4d1e375f62ee62842362242a1789653b595041d7"
+        },
+        {
+          "index": 184,
+          "paragraphId": "yuqia-ji:L2289-L2289",
+          "verdict": "ACCEPT",
+          "review": "draft",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true,
+          "sourceSha256": "2ac20c04ea1353e12742f874477a4ff51cb27f9d3ca12f450c7184256f714832"
+        },
+        {
+          "index": 185,
+          "paragraphId": "yuqia-ji:L2291-L2291",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true,
+          "sourceSha256": "b3c2306f0e31384339d3467544c451ae1f6f0673bf9a612903e0e935680996a5"
+        },
+        {
+          "index": 186,
+          "paragraphId": "yuqia-ji:L2293-L2293",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true,
+          "sourceSha256": "3afbbeef0c4b33292b132050b6118c802438f123f335d1284dcc40ba34701486"
+        },
+        {
+          "index": 187,
+          "paragraphId": "yuqia-ji:L2295-L2295",
+          "verdict": "ACCEPT",
+          "review": "draft",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true,
+          "sourceSha256": "27209ce0124293a2f1c537f65f44b3914b6e8d8465b2bcefbffef29fce6a996d"
+        },
+        {
+          "index": 188,
+          "paragraphId": "yuqia-ji:L2297-L2297",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true,
+          "sourceSha256": "20ae1fba049bd0155ccbe355706870b25209bdeb79a8e2b46a38a493860d3710"
+        },
+        {
+          "index": 189,
+          "paragraphId": "yuqia-ji:L2299-L2299",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true,
+          "sourceSha256": "48d12859fb4ade7bc661d349ca7b4117561c8891aefdfb31b4b8215db60e6ca5"
+        },
+        {
+          "index": 190,
+          "paragraphId": "yuqia-ji:L2301-L2301",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true,
+          "sourceSha256": "c01a282a696a2c45c8bd3e6ab44b1112067e98a0d6c77e7546bed2f9a829576b"
+        },
+        {
+          "index": 191,
+          "paragraphId": "yuqia-ji:L2303-L2303",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true,
+          "sourceSha256": "eb9259300d233a7acff80da7b4241aef1a12c4cdf590e344af80fb206dcd7ce0"
+        },
+        {
+          "index": 192,
+          "paragraphId": "yuqia-ji:L2305-L2305",
+          "verdict": "ACCEPT",
+          "review": "draft",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true,
+          "sourceSha256": "5a5ffb2d1561d2882fc852efe64cb479b173a63bdc9c1739b70efdd2b1168a62"
+        },
+        {
+          "index": 193,
+          "paragraphId": "yuqia-ji:L2307-L2307",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true,
+          "sourceSha256": "a214302457935c7ec8b6d377d46d4f29712fec3e1cb41872869c39f0496c1d92"
+        },
+        {
+          "index": 194,
+          "paragraphId": "yuqia-ji:L2309-L2309",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true,
+          "sourceSha256": "ae78fc80aa3d85f5a771dff4213fe70118914575e555bd8c6426bf6a01ba029e"
+        },
+        {
+          "index": 195,
+          "paragraphId": "yuqia-ji:L2311-L2311",
+          "verdict": "ACCEPT",
+          "review": "draft",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true,
+          "sourceSha256": "8371150dd8d239fea54bf83b33abfdf3ef31ea17a4ee2909943581cbdbfd3eef"
+        },
+        {
+          "index": 196,
+          "paragraphId": "yuqia-ji:L2315-L2315",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true,
+          "sourceSha256": "035ca57f2f8a0c8c59981b33bf033e0375a81013a33d6ea97847dbcc823f6f8d"
+        },
+        {
+          "index": 197,
+          "paragraphId": "yuqia-ji:L2317-L2317",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true,
+          "sourceSha256": "c3ac4701fb1a739a8983eec7091a20498a66425c414b8a84219b08f7eb8d4751"
+        },
+        {
+          "index": 198,
+          "paragraphId": "yuqia-ji:L2321-L2321",
+          "verdict": "ACCEPT",
+          "review": "draft",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true,
+          "sourceSha256": "4750d42b0fb2ecf91ceacbfce0064d102d31c8806e14b871ef9dfc7e32f5ed2a"
+        },
+        {
+          "index": 199,
+          "paragraphId": "yuqia-ji:L2323-L2323",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true,
+          "sourceSha256": "c13d94ce695ec1df5fecec1656fe7aaf599513d49def7897685e6d58a0e4cfb9"
+        },
+        {
+          "index": 200,
+          "paragraphId": "yuqia-ji:L2325-L2325",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true,
+          "sourceSha256": "7a4d5781a3755d693466e37639d0f29f50767f0a32d7fcf1f3df1035249d035d"
+        },
+        {
+          "index": 201,
+          "paragraphId": "yuqia-ji:L2327-L2327",
+          "verdict": "ACCEPT",
+          "review": "draft",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true,
+          "sourceSha256": "8ee72d389737989c1d58eb7d87d2f6e96f5c25367c9aeb379c7d212d2d90f3ff"
+        },
+        {
+          "index": 202,
+          "paragraphId": "yuqia-ji:L2329-L2329",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true,
+          "sourceSha256": "41ae39fbd735fa2a7c4c9f8abfc9131bb7166a943466ef930ea524ccdcd1f50f"
+        },
+        {
+          "index": 203,
+          "paragraphId": "yuqia-ji:L2331-L2331",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true,
+          "sourceSha256": "7a4d5781a3755d693466e37639d0f29f50767f0a32d7fcf1f3df1035249d035d"
+        },
+        {
+          "index": 204,
+          "paragraphId": "yuqia-ji:L2333-L2333",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true,
+          "sourceSha256": "89c8c17b44d69ad9d71a76eded3d6babf89e5bbc3eefce2f47edb5ff3c97b229"
+        },
+        {
+          "index": 205,
+          "paragraphId": "yuqia-ji:L2337-L2337",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true,
+          "sourceSha256": "6e6eb702191d35cf518b3c4999cffc34537a87c798b66e9c480e9dbd069440c7"
+        },
+        {
+          "index": 206,
+          "paragraphId": "yuqia-ji:L2339-L2339",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true,
+          "sourceSha256": "4761a586e0e806d7a9dc5e5684aabeec54f71ad09382fc8d813907530f5d5c20"
+        },
+        {
+          "index": 207,
+          "paragraphId": "yuqia-ji:L2341-L2341",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true,
+          "sourceSha256": "dafc94358aee488e805970a4d415043ffaf3663fa5908f75b6a11fbf85d0745d"
+        },
+        {
+          "index": 208,
+          "paragraphId": "yuqia-ji:L2343-L2343",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true,
+          "sourceSha256": "c8bab3b8dd63c48946d7e0ef4ace7889d2de6d8827fb7b8512dd7bdbb971a002"
+        },
+        {
+          "index": 209,
+          "paragraphId": "yuqia-ji:L2345-L2345",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true,
+          "sourceSha256": "ba9212f0eabc85ef0e2af0827ae9e85fdb13aef6d0d52ff933951bec72093533"
+        },
+        {
+          "index": 210,
+          "paragraphId": "yuqia-ji:L2347-L2347",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true,
+          "sourceSha256": "977fc086599622265ce904b9722551f9896458a5d695f4b194753aa9ed8c24a6"
+        },
+        {
+          "index": 211,
+          "paragraphId": "yuqia-ji:L2349-L2349",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true,
+          "sourceSha256": "550fa6be6fdcd408d66d601fe5d2095022d38a566f7bd6dce3a7877a4bc10d22"
+        },
+        {
+          "index": 212,
+          "paragraphId": "yuqia-ji:L2351-L2351",
+          "verdict": "ACCEPT",
+          "review": "draft",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true,
+          "sourceSha256": "5008589ce474a255a078e04d385245ae16519c3935952640b89893d2d6a2328f"
+        },
+        {
+          "index": 213,
+          "paragraphId": "yuqia-ji:L2353-L2353",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true,
+          "sourceSha256": "9c24e613964da77f5be9e416ca8913b83b253566eadaf28de12f95b32b4efd5d"
+        },
+        {
+          "index": 214,
+          "paragraphId": "yuqia-ji:L2355-L2355",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true,
+          "sourceSha256": "adb20b2bac4c3a4ecfb52eec59407082ebc6b989e75fae9c665340e97c22cf25"
+        },
+        {
+          "index": 215,
+          "paragraphId": "yuqia-ji:L2357-L2357",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true,
+          "sourceSha256": "f0fdbb2094188baa77585e4114596f30bbe7c7abdeb253938a55ed3ddad77a2e"
+        },
+        {
+          "index": 216,
+          "paragraphId": "yuqia-ji:L2359-L2359",
+          "verdict": "ACCEPT",
+          "review": "draft",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true,
+          "sourceSha256": "1ace3823f619f67acbf324740831d0a1d233ce0b0356f670dcdafca8b0a8ed6b"
+        },
+        {
+          "index": 217,
+          "paragraphId": "yuqia-ji:L2361-L2361",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true,
+          "sourceSha256": "52dfd14364a34c39e26e744486c6d6adc1cc3a81effd1aac381bc1ac95aa13c6"
+        },
+        {
+          "index": 218,
+          "paragraphId": "yuqia-ji:L2363-L2363",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true,
+          "sourceSha256": "a9dc3be17e2a379f122acdda16b5795526ea88ed33f6750f7c328cec1328881a"
+        },
+        {
+          "index": 219,
+          "paragraphId": "yuqia-ji:L2365-L2365",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true,
+          "sourceSha256": "e282ffe2e7e5fb28ac5b5b0be3f822b3cad6c37b1f23b70fca285b0486be3eb6"
+        },
+        {
+          "index": 220,
+          "paragraphId": "yuqia-ji:L2369-L2369",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true,
+          "sourceSha256": "7f7b9e2d792a62efb03beea4a2f0d4147fcc427d0f0257908aec6473f486bdee"
+        },
+        {
+          "index": 221,
+          "paragraphId": "yuqia-ji:L2371-L2371",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true,
+          "sourceSha256": "f9b89cd1ab946cccca0b2f26e802a814d0e558acec853a30504fadb58584f9a6"
+        },
+        {
+          "index": 222,
+          "paragraphId": "yuqia-ji:L2373-L2373",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true,
+          "sourceSha256": "b59cdd00b5c85aedfcdf70470405c928993d521fbd84bb70c4b155000df02d1b"
+        },
+        {
+          "index": 223,
+          "paragraphId": "yuqia-ji:L2377-L2377",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true,
+          "sourceSha256": "cbc11b6a83545441e45161625782c71132c5863a4e420c801fad6c7cdbd83131"
+        },
+        {
+          "index": 224,
+          "paragraphId": "yuqia-ji:L2379-L2379",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true,
+          "sourceSha256": "342d2478071ebf140c97d0c89f337910b408291de18b85021c81689a4d10e413"
+        },
+        {
+          "index": 225,
+          "paragraphId": "yuqia-ji:L2381-L2381",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true,
+          "sourceSha256": "8621d3982bb933e43b86f9329c13aa4267e6f616964e4637525649dcc024ffe9"
+        },
+        {
+          "index": 226,
+          "paragraphId": "yuqia-ji:L2383-L2383",
+          "verdict": "ACCEPT",
+          "review": "draft",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true,
+          "sourceSha256": "9d718ea519eb5cf3dc163fb58ef203b02d0ba00d1804a8bda007977e74689abd"
+        },
+        {
+          "index": 227,
+          "paragraphId": "yuqia-ji:L2385-L2385",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true,
+          "sourceSha256": "a627019aa0d480ca91d0053bccffb5c8adcf9a85796826329448fda801c0bbc6"
+        },
+        {
+          "index": 228,
+          "paragraphId": "yuqia-ji:L2387-L2387",
+          "verdict": "ACCEPT",
+          "review": "draft",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true,
+          "sourceSha256": "7d18df3e809838cbde6a6687bd883f82ea6c224c68be0fd453b1cb7e7bcf57f6"
+        },
+        {
+          "index": 229,
+          "paragraphId": "yuqia-ji:L2389-L2389",
+          "verdict": "ACCEPT",
+          "review": "draft",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true,
+          "sourceSha256": "660cfd778a0c6c3f28c4d9266ce3ab5f083fdcb9ed32660775c5650d05ed407b"
+        },
+        {
+          "index": 230,
+          "paragraphId": "yuqia-ji:L2391-L2391",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true,
+          "sourceSha256": "c8916f9c7292e04c985904911634975933a58d9d6e44f862796a6a88b27a9a90"
+        },
+        {
+          "index": 231,
+          "paragraphId": "yuqia-ji:L2393-L2393",
+          "verdict": "ACCEPT",
+          "review": "draft",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true,
+          "sourceSha256": "6191e14d6d8f4f5e175fd4c4f5cc95f944a8b189fa8cda520d34de5f4ce8edd9"
+        },
+        {
+          "index": 232,
+          "paragraphId": "yuqia-ji:L2395-L2395",
+          "verdict": "ACCEPT",
+          "review": "draft",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true,
+          "sourceSha256": "efc872c588a82cc5266108bd1cd18e9b15cc99bbeda20e0d3bd8ee6e6e603bda"
+        },
+        {
+          "index": 233,
+          "paragraphId": "yuqia-ji:L2397-L2397",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true,
+          "sourceSha256": "3c51ecdd4c3ee4fe5770ae21465c12c81c4d22294b9e1c34c48b2c04724cf7ae"
+        },
+        {
+          "index": 234,
+          "paragraphId": "yuqia-ji:L2399-L2399",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true,
+          "sourceSha256": "7a668d101a91f889fc86688578b6624c60a5ed6d671c1eadca13386ed360209b"
+        },
+        {
+          "index": 235,
+          "paragraphId": "yuqia-ji:L2401-L2401",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true,
+          "sourceSha256": "80a0e0afcc5c6ee933baf3ad65e6f2594d2b4bd6d5c08e85b095cc09c1a8e574"
+        },
+        {
+          "index": 236,
+          "paragraphId": "yuqia-ji:L2403-L2403",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true,
+          "sourceSha256": "ed7678da1be22bc0578fe2e124b99763df18661d146d25faa4153cbffcdbda6c"
+        },
+        {
+          "index": 237,
+          "paragraphId": "yuqia-ji:L2405-L2405",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true,
+          "sourceSha256": "7df873210e402fc557b1cbd6f52a45777b766278d86ea972c2c265b7ef837bd2"
+        },
+        {
+          "index": 238,
+          "paragraphId": "yuqia-ji:L2407-L2407",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true,
+          "sourceSha256": "ed7678da1be22bc0578fe2e124b99763df18661d146d25faa4153cbffcdbda6c"
+        },
+        {
+          "index": 239,
+          "paragraphId": "yuqia-ji:L2409-L2409",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true,
+          "sourceSha256": "c96607f49c34a95bf7f932229df1d38843b7383d6676423cc13f425261d9c0d1"
+        },
+        {
+          "index": 240,
+          "paragraphId": "yuqia-ji:L2411-L2411",
+          "verdict": "ACCEPT",
+          "review": "draft",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true,
+          "sourceSha256": "a28971add29bb840e51adb3a59b04f0df04f8c4e801c4dc8bfd98538b62bc953"
+        },
+        {
+          "index": 241,
+          "paragraphId": "yuqia-ji:L2413-L2413",
+          "verdict": "ACCEPT",
+          "review": "draft",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true,
+          "sourceSha256": "b39fe5c3720ea532b5c158dd646ee98cb901d16c2152c215b026ce91a64a3717"
+        },
+        {
+          "index": 242,
+          "paragraphId": "yuqia-ji:L2417-L2417",
+          "verdict": "ACCEPT",
+          "review": "draft",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true,
+          "sourceSha256": "ad960d784103a0fdd9752a395238eedbfd8107c3b622689412678bf163a0dac2"
+        },
+        {
+          "index": 243,
+          "paragraphId": "yuqia-ji:L2419-L2419",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true,
+          "sourceSha256": "d6e082649974d48f7528829ef5476f35e04430b28604781bf983e647fbbc5e21"
+        },
+        {
+          "index": 244,
+          "paragraphId": "yuqia-ji:L2421-L2421",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true,
+          "sourceSha256": "b183c38f8068b1946c50e0cbf5eae4bf087d52a70c07e1bec255660af529d8db"
+        },
+        {
+          "index": 245,
+          "paragraphId": "yuqia-ji:L2423-L2423",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true,
+          "sourceSha256": "ad3ee2d6a1c94521773f51c989be52205ee4fff4853deba113184a9fe5733184"
+        },
+        {
+          "index": 246,
+          "paragraphId": "yuqia-ji:L2425-L2425",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true,
+          "sourceSha256": "94284946cdfe8cbe90eccac1a74349cd24e1e791c4619a1f0fbe0bc74dd5f566"
+        },
+        {
+          "index": 247,
+          "paragraphId": "yuqia-ji:L2427-L2427",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true,
+          "sourceSha256": "c668f5c6ca08cfe9796d4dc71807950569d214a5115ec15790e90bd52f7381c8"
+        },
+        {
+          "index": 248,
+          "paragraphId": "yuqia-ji:L2429-L2429",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true,
+          "sourceSha256": "5b6fd217661cf34157e7bdc10de2562fdfffbc702760480dfb5784aff29304c7"
+        },
+        {
+          "index": 249,
+          "paragraphId": "yuqia-ji:L2431-L2431",
+          "verdict": "ACCEPT",
+          "review": "draft",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true,
+          "sourceSha256": "46f316714cacc2089f84b099435e3bf428bad12c81994da3362205fb4b4b25cf"
+        },
+        {
+          "index": 250,
+          "paragraphId": "yuqia-ji:L2433-L2433",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true,
+          "sourceSha256": "49e7342a5d317a87b21b6f03618f00c1d10cd413dd54df453727f943c88f99af"
+        },
+        {
+          "index": 251,
+          "paragraphId": "yuqia-ji:L2435-L2435",
+          "verdict": "ACCEPT",
+          "review": "draft",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true,
+          "sourceSha256": "42b18eebd686db89489d14cd620c3cc5961de411852d7e3f8f5dfa30f1c89b1a"
+        },
+        {
+          "index": 252,
+          "paragraphId": "yuqia-ji:L2437-L2437",
+          "verdict": "ACCEPT",
+          "review": "draft",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true,
+          "sourceSha256": "d0b6ec109f6f4abd6c62abbc40fa4ea8a2bc73f2894a4a49153b076b0b0e2011"
+        },
+        {
+          "index": 253,
+          "paragraphId": "yuqia-ji:L2439-L2439",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true,
+          "sourceSha256": "cd5933483b8fe06493f8e860b1f2cc74e1204a40849110d851d233d23e572e7f"
+        },
+        {
+          "index": 254,
+          "paragraphId": "yuqia-ji:L2441-L2441",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true,
+          "sourceSha256": "daeea861b5be8e4ffeb8c6d45357ab2fe2b473ade51b742a706f36233547f987"
+        },
+        {
+          "index": 255,
+          "paragraphId": "yuqia-ji:L2443-L2443",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true,
+          "sourceSha256": "7fe1313d850c2decffbc5a97af4f4b18ae7f14260050a2b032ea6e715aa9b6b0"
+        },
+        {
+          "index": 256,
+          "paragraphId": "yuqia-ji:L2445-L2448",
+          "verdict": "ACCEPT",
+          "review": "draft",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true,
+          "sourceSha256": "1ed9093c56a80b00f26a53c869c1201668107ae613836d352ed01d872a465967"
+        },
+        {
+          "index": 257,
+          "paragraphId": "yuqia-ji:L2452-L2452",
+          "verdict": "ACCEPT",
+          "review": "draft",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true,
+          "sourceSha256": "1546cf0cf739b86d0ac6768630aabdb8456bfa81c7f832cccf6581d23a503fbc"
+        },
+        {
+          "index": 258,
+          "paragraphId": "yuqia-ji:L2454-L2454",
+          "verdict": "ACCEPT",
+          "review": "draft",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true,
+          "sourceSha256": "407a5658c3346aafd46adfe7c648842e8382c5151e1a4309d54c9e9b05942aa2"
+        },
+        {
+          "index": 259,
+          "paragraphId": "yuqia-ji:L2458-L2458",
+          "verdict": "ACCEPT",
+          "review": "draft",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true,
+          "sourceSha256": "455123b23fbdf5b14af6c45a19698417fd1a5518e2986e33b10a5890070ef785"
+        },
+        {
+          "index": 260,
+          "paragraphId": "yuqia-ji:L2462-L2462",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true,
+          "sourceSha256": "842ae0ccdc75a998229501c3004d7b1325817672eab1f01086168348cbf29708"
+        },
+        {
+          "index": 261,
+          "paragraphId": "yuqia-ji:L2464-L2464",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true,
+          "sourceSha256": "fdfc89348532a8fce0d2c2761004c08509ad05495ee432d6c226799227132586"
+        },
+        {
+          "index": 262,
+          "paragraphId": "yuqia-ji:L2468-L2468",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true,
+          "sourceSha256": "c9eaee2ec07c836145a5319882473c9fde9357f6d7b91f9c3220573bfd8ac40c"
+        },
+        {
+          "index": 263,
+          "paragraphId": "yuqia-ji:L2470-L2470",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true,
+          "sourceSha256": "d1dea04a9c15a61b9fe4f8e29722a3333f882ee5858b8a53fc22228808cfd959"
+        },
+        {
+          "index": 264,
+          "paragraphId": "yuqia-ji:L2472-L2472",
+          "verdict": "ACCEPT",
+          "review": "draft",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true,
+          "sourceSha256": "51709b84880e60d0acf2688dd101329a3e17482a5f287df2959a78b336657863"
+        },
+        {
+          "index": 265,
+          "paragraphId": "yuqia-ji:L2474-L2474",
+          "verdict": "ACCEPT",
+          "review": "draft",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true,
+          "sourceSha256": "ebaf64829392efd79e11e232682d9d80f0b2ae9662baf7f4e32c2d20e31e82cc"
+        },
+        {
+          "index": 266,
+          "paragraphId": "yuqia-ji:L2478-L2478",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true,
+          "sourceSha256": "a09b70e8c3b8d868d935b234dd4f60ca25650db1948487345a342d1d53ebab10"
+        },
+        {
+          "index": 267,
+          "paragraphId": "yuqia-ji:L2480-L2480",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true,
+          "sourceSha256": "5426da78c410d6e21ae86b6566bd570aa1985d119f541222d6f9e4aa77ebdf0c"
+        },
+        {
+          "index": 268,
+          "paragraphId": "yuqia-ji:L2482-L2482",
+          "verdict": "ACCEPT",
+          "review": "draft",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true,
+          "sourceSha256": "1eff6379eff86bb0ee310cfbebf6c72e845ad2099a3fd21f1ee93a76d3603038"
+        },
+        {
+          "index": 269,
+          "paragraphId": "yuqia-ji:L2484-L2484",
+          "verdict": "ACCEPT",
+          "review": "draft",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true,
+          "sourceSha256": "6dd1b2900a9ae53452bbc940a2b16d3463cbdaffc24f2db00589202e98d2d5b8"
+        },
+        {
+          "index": 270,
+          "paragraphId": "yuqia-ji:L2488-L2488",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true,
+          "sourceSha256": "244f941b7f1d6aac1374a4fea8044ed2bcd8a4619a9ef318deeb3620cb53aa61"
+        },
+        {
+          "index": 271,
+          "paragraphId": "yuqia-ji:L2490-L2490",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true,
+          "sourceSha256": "a6e7bc37a447a4fea2d4db2dbc2cc9afeb8a26c3fd6b61f3652be5149e0c33fd"
+        },
+        {
+          "index": 272,
+          "paragraphId": "yuqia-ji:L2492-L2492",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true,
+          "sourceSha256": "1099812c88469349a0367b63fcc1f6fde3ee48e9915e9424df3e5364a5200696"
+        },
+        {
+          "index": 273,
+          "paragraphId": "yuqia-ji:L2494-L2494",
+          "verdict": "ACCEPT",
+          "review": "draft",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true,
+          "sourceSha256": "4f8d42b030c865a0a8f98a713486eddcab02a921f53bdfbc451133ba2b9aa58d"
+        },
+        {
+          "index": 274,
+          "paragraphId": "yuqia-ji:L2496-L2496",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true,
+          "sourceSha256": "6e22a4db72f4736c8b8fae4a62360e33740c432e5cc3476b33f19b9952567bff"
+        },
+        {
+          "index": 275,
+          "paragraphId": "yuqia-ji:L2498-L2498",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true,
+          "sourceSha256": "96dac56f70fb913660a227f9f484487c273237dcad017fc42b4a514fa591a07c"
+        },
+        {
+          "index": 276,
+          "paragraphId": "yuqia-ji:L2502-L2502",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true,
+          "sourceSha256": "876db74b29d935e246043de3229df8b91e08da1f761f11a4f1b9062a10899d19"
+        },
+        {
+          "index": 277,
+          "paragraphId": "yuqia-ji:L2504-L2504",
+          "verdict": "ACCEPT",
+          "review": "draft",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true,
+          "sourceSha256": "9274bdb6a3434670d493ab23bb47540674b3a011bca698b4a54814b26242bac0"
+        },
+        {
+          "index": 278,
+          "paragraphId": "yuqia-ji:L2506-L2506",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true,
+          "sourceSha256": "0af21385d0a4046dc4f55e8f6625d2632246d4bef2098efd01758f3e5b6e46c9"
+        },
+        {
+          "index": 279,
+          "paragraphId": "yuqia-ji:L2508-L2508",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true,
+          "sourceSha256": "76c9ad014ac891186b10242d43de8baad05f41bb2250824041b22efb9e33ea05"
+        },
+        {
+          "index": 280,
+          "paragraphId": "yuqia-ji:L2512-L2512",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true,
+          "sourceSha256": "4a5c05dabe6233eb521d57d84dfc4874cc78ef368687dc205259ade05ce85bbf"
+        },
+        {
+          "index": 281,
+          "paragraphId": "yuqia-ji:L2514-L2514",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true,
+          "sourceSha256": "cc8cd00cc6ea3fb0fa5bcb3eba06545b213c0e49cd3944a8ed74004a6b4f850d"
+        },
+        {
+          "index": 282,
+          "paragraphId": "yuqia-ji:L2516-L2516",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true,
+          "sourceSha256": "9f0b2acc653003abde9c778999e7af9897c77217c59d6a7a8b6e96f0923de11d"
+        },
+        {
+          "index": 283,
+          "paragraphId": "yuqia-ji:L2518-L2518",
+          "verdict": "ACCEPT",
+          "review": "draft",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true,
+          "sourceSha256": "883b502eeff52f9ae75e3d00325a5e5278bdd01a903278cf80339d151e3c260f"
+        },
+        {
+          "index": 284,
+          "paragraphId": "yuqia-ji:L2520-L2520",
+          "verdict": "ACCEPT",
+          "review": "draft",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true,
+          "sourceSha256": "9ad257336f7bcb70c415670e278046563db70a0bced05503ad999056c8c2379c"
+        },
+        {
+          "index": 285,
+          "paragraphId": "yuqia-ji:L2522-L2522",
+          "verdict": "ACCEPT",
+          "review": "draft",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true,
+          "sourceSha256": "cdf53d148a28e172eae36ebf35ab8dd39b8a6e77d8b5538c851c3d38f9be7208"
+        },
+        {
+          "index": 286,
+          "paragraphId": "yuqia-ji:L2524-L2524",
+          "verdict": "ACCEPT",
+          "review": "draft",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true,
+          "sourceSha256": "1165069b0c918c7b511888e2cf9c533565c080e8302644ea58fc3f6c70bcd764"
+        },
+        {
+          "index": 287,
+          "paragraphId": "yuqia-ji:L2526-L2526",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true,
+          "sourceSha256": "4d893062f5995c0486809468b2617840816a2f2c030e1c4719ed9aca7b43949e"
+        },
+        {
+          "index": 288,
+          "paragraphId": "yuqia-ji:L2528-L2528",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true,
+          "sourceSha256": "4977773c2f5e816fb887374681c8341c22b2abee441f8b7eba154c5aebee64de"
+        },
+        {
+          "index": 289,
+          "paragraphId": "yuqia-ji:L2530-L2530",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true,
+          "sourceSha256": "7698c140fb4b3cc4f590cfb08946b6595eb4d3e4a08ca67011ab463e22828768"
+        },
+        {
+          "index": 290,
+          "paragraphId": "yuqia-ji:L2532-L2532",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true,
+          "sourceSha256": "16170d6ec1aca4c298788d26e048470417ee800aab80f476d9ee03e91b2f3013"
+        },
+        {
+          "index": 291,
+          "paragraphId": "yuqia-ji:L2534-L2534",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true,
+          "sourceSha256": "c17f5e0d9ba87bc74264bb5030dcbe5256a5b0cac70f7a2e1c96653f10b417c1"
+        },
+        {
+          "index": 292,
+          "paragraphId": "yuqia-ji:L2538-L2538",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true,
+          "sourceSha256": "0c5ac2828b753289a2e40023a73164dc6b14cae30ac8722f1967daf9a166d8dd"
+        },
+        {
+          "index": 293,
+          "paragraphId": "yuqia-ji:L2540-L2540",
+          "verdict": "ACCEPT",
+          "review": "draft",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true,
+          "sourceSha256": "25d6ebd24a56495c18f75b19f47bfe564791eb1d9ff57b4b305a1f41e6dbc8c5"
+        },
+        {
+          "index": 294,
+          "paragraphId": "yuqia-ji:L2542-L2542",
+          "verdict": "ACCEPT",
+          "review": "draft",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true,
+          "sourceSha256": "510dfbbb802317b131629347c03146857ec02422a1874c1cacaed8e8ff3a92e9"
+        },
+        {
+          "index": 295,
+          "paragraphId": "yuqia-ji:L2544-L2544",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true,
+          "sourceSha256": "50a1d20dc10edb1ceec4e02e91db2241983c09dd00e17a34a88f91cb36f16d2f"
+        },
+        {
+          "index": 296,
+          "paragraphId": "yuqia-ji:L2546-L2546",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true,
+          "sourceSha256": "ec0a4464966e39850043077e753da1e4c64995a9bd0941d3f31b2431a69e57b5"
+        },
+        {
+          "index": 297,
+          "paragraphId": "yuqia-ji:L2550-L2550",
+          "verdict": "ACCEPT",
+          "review": "draft",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true,
+          "sourceSha256": "2f6dd707facb1d5aeaceee15209cb38d3547ea062663b7ab477690e56320c3a3"
+        },
+        {
+          "index": 298,
+          "paragraphId": "yuqia-ji:L2552-L2552",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true,
+          "sourceSha256": "8a9884f7bc1368af3cb7f37b540e56ebcc3f6efa26f6fc36f35b707c8989a9fe"
+        },
+        {
+          "index": 299,
+          "paragraphId": "yuqia-ji:L2556-L2556",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "fullSourceAndVernacularRead": true,
+          "sourceExactMatch": true,
+          "sourceSha256": "38d49073aaebec64fc9808365509c11e8f352d08665388b5f84dc135959abf6d"
+        }
+      ]
+    },
+    {
+      "judgment": "ACCEPT",
+      "scope": "300条全部亲读完整原段、释义及跨段语境；原文与项目对应行范围逐字一致；未修改项目。",
+      "counts": {
+        "total": 300,
+        "sourceReviewed": 212,
+        "draft": 88
+      },
+      "checks": [
+        "L1990仅四子日，未泛化所有子日。",
+        "同日不同用事的宜忌分别保存，如伏断闭日、破日合药、申日安葬忌开金井。",
+        "坏字已/己、未/末、巳/己及残单字表项未按干支规律补全。",
+        "周堂图缺字、九月/大月疑题及重复五月六月表保留。",
+        "L2524新渔猎题识别正确，未沿库存养蜂heading误挂。",
+        "造酒旧方未作现实操作指导。",
+        "validate_pack零错误，相关IDs存在。"
+      ],
+      "entries": [
+        {
+          "paragraphId": "yuqia-ji:L1803-L1803",
+          "review": "source-reviewed",
+          "judgment": "ACCEPT"
+        },
+        {
+          "paragraphId": "yuqia-ji:L1805-L1805",
+          "review": "source-reviewed",
+          "judgment": "ACCEPT"
+        },
+        {
+          "paragraphId": "yuqia-ji:L1807-L1807",
+          "review": "source-reviewed",
+          "judgment": "ACCEPT"
+        },
+        {
+          "paragraphId": "yuqia-ji:L1809-L1809",
+          "review": "source-reviewed",
+          "judgment": "ACCEPT"
+        },
+        {
+          "paragraphId": "yuqia-ji:L1811-L1811",
+          "review": "source-reviewed",
+          "judgment": "ACCEPT"
+        },
+        {
+          "paragraphId": "yuqia-ji:L1813-L1813",
+          "review": "draft",
+          "judgment": "ACCEPT"
+        },
+        {
+          "paragraphId": "yuqia-ji:L1817-L1817",
+          "review": "draft",
+          "judgment": "ACCEPT"
+        },
+        {
+          "paragraphId": "yuqia-ji:L1819-L1819",
+          "review": "source-reviewed",
+          "judgment": "ACCEPT"
+        },
+        {
+          "paragraphId": "yuqia-ji:L1823-L1823",
+          "review": "source-reviewed",
+          "judgment": "ACCEPT"
+        },
+        {
+          "paragraphId": "yuqia-ji:L1825-L1825",
+          "review": "draft",
+          "judgment": "ACCEPT"
+        },
+        {
+          "paragraphId": "yuqia-ji:L1829-L1829",
+          "review": "source-reviewed",
+          "judgment": "ACCEPT"
+        },
+        {
+          "paragraphId": "yuqia-ji:L1833-L1836",
+          "review": "source-reviewed",
+          "judgment": "ACCEPT"
+        },
+        {
+          "paragraphId": "yuqia-ji:L1840-L1840",
+          "review": "source-reviewed",
+          "judgment": "ACCEPT"
+        },
+        {
+          "paragraphId": "yuqia-ji:L1844-L1844",
+          "review": "source-reviewed",
+          "judgment": "ACCEPT"
+        },
+        {
+          "paragraphId": "yuqia-ji:L1846-L1846",
+          "review": "source-reviewed",
+          "judgment": "ACCEPT"
+        },
+        {
+          "paragraphId": "yuqia-ji:L1848-L1848",
+          "review": "source-reviewed",
+          "judgment": "ACCEPT"
+        },
+        {
+          "paragraphId": "yuqia-ji:L1852-L1852",
+          "review": "source-reviewed",
+          "judgment": "ACCEPT"
+        },
+        {
+          "paragraphId": "yuqia-ji:L1854-L1854",
+          "review": "draft",
+          "judgment": "ACCEPT"
+        },
+        {
+          "paragraphId": "yuqia-ji:L1858-L1858",
+          "review": "draft",
+          "judgment": "ACCEPT"
+        },
+        {
+          "paragraphId": "yuqia-ji:L1860-L1860",
+          "review": "source-reviewed",
+          "judgment": "ACCEPT"
+        },
+        {
+          "paragraphId": "yuqia-ji:L1862-L1862",
+          "review": "source-reviewed",
+          "judgment": "ACCEPT"
+        },
+        {
+          "paragraphId": "yuqia-ji:L1864-L1864",
+          "review": "source-reviewed",
+          "judgment": "ACCEPT"
+        },
+        {
+          "paragraphId": "yuqia-ji:L1868-L1868",
+          "review": "source-reviewed",
+          "judgment": "ACCEPT"
+        },
+        {
+          "paragraphId": "yuqia-ji:L1870-L1870",
+          "review": "source-reviewed",
+          "judgment": "ACCEPT"
+        },
+        {
+          "paragraphId": "yuqia-ji:L1872-L1872",
+          "review": "source-reviewed",
+          "judgment": "ACCEPT"
+        },
+        {
+          "paragraphId": "yuqia-ji:L1874-L1874",
+          "review": "source-reviewed",
+          "judgment": "ACCEPT"
+        },
+        {
+          "paragraphId": "yuqia-ji:L1878-L1878",
+          "review": "draft",
+          "judgment": "ACCEPT"
+        },
+        {
+          "paragraphId": "yuqia-ji:L1880-L1880",
+          "review": "source-reviewed",
+          "judgment": "ACCEPT"
+        },
+        {
+          "paragraphId": "yuqia-ji:L1884-L1884",
+          "review": "draft",
+          "judgment": "ACCEPT"
+        },
+        {
+          "paragraphId": "yuqia-ji:L1886-L1886",
+          "review": "source-reviewed",
+          "judgment": "ACCEPT"
+        },
+        {
+          "paragraphId": "yuqia-ji:L1888-L1888",
+          "review": "draft",
+          "judgment": "ACCEPT"
+        },
+        {
+          "paragraphId": "yuqia-ji:L1890-L1890",
+          "review": "source-reviewed",
+          "judgment": "ACCEPT"
+        },
+        {
+          "paragraphId": "yuqia-ji:L1892-L1892",
+          "review": "source-reviewed",
+          "judgment": "ACCEPT"
+        },
+        {
+          "paragraphId": "yuqia-ji:L1894-L1894",
+          "review": "source-reviewed",
+          "judgment": "ACCEPT"
+        },
+        {
+          "paragraphId": "yuqia-ji:L1898-L1898",
+          "review": "source-reviewed",
+          "judgment": "ACCEPT"
+        },
+        {
+          "paragraphId": "yuqia-ji:L1900-L1900",
+          "review": "source-reviewed",
+          "judgment": "ACCEPT"
+        },
+        {
+          "paragraphId": "yuqia-ji:L1902-L1902",
+          "review": "source-reviewed",
+          "judgment": "ACCEPT"
+        },
+        {
+          "paragraphId": "yuqia-ji:L1904-L1904",
+          "review": "source-reviewed",
+          "judgment": "ACCEPT"
+        },
+        {
+          "paragraphId": "yuqia-ji:L1906-L1906",
+          "review": "source-reviewed",
+          "judgment": "ACCEPT"
+        },
+        {
+          "paragraphId": "yuqia-ji:L1908-L1908",
+          "review": "source-reviewed",
+          "judgment": "ACCEPT"
+        },
+        {
+          "paragraphId": "yuqia-ji:L1910-L1910",
+          "review": "source-reviewed",
+          "judgment": "ACCEPT"
+        },
+        {
+          "paragraphId": "yuqia-ji:L1912-L1912",
+          "review": "source-reviewed",
+          "judgment": "ACCEPT"
+        },
+        {
+          "paragraphId": "yuqia-ji:L1914-L1914",
+          "review": "source-reviewed",
+          "judgment": "ACCEPT"
+        },
+        {
+          "paragraphId": "yuqia-ji:L1916-L1916",
+          "review": "source-reviewed",
+          "judgment": "ACCEPT"
+        },
+        {
+          "paragraphId": "yuqia-ji:L1918-L1918",
+          "review": "source-reviewed",
+          "judgment": "ACCEPT"
+        },
+        {
+          "paragraphId": "yuqia-ji:L1922-L1922",
+          "review": "source-reviewed",
+          "judgment": "ACCEPT"
+        },
+        {
+          "paragraphId": "yuqia-ji:L1924-L1924",
+          "review": "draft",
+          "judgment": "ACCEPT"
+        },
+        {
+          "paragraphId": "yuqia-ji:L1928-L1928",
+          "review": "source-reviewed",
+          "judgment": "ACCEPT"
+        },
+        {
+          "paragraphId": "yuqia-ji:L1930-L1930",
+          "review": "source-reviewed",
+          "judgment": "ACCEPT"
+        },
+        {
+          "paragraphId": "yuqia-ji:L1932-L1932",
+          "review": "source-reviewed",
+          "judgment": "ACCEPT"
+        },
+        {
+          "paragraphId": "yuqia-ji:L1936-L1936",
+          "review": "draft",
+          "judgment": "ACCEPT"
+        },
+        {
+          "paragraphId": "yuqia-ji:L1940-L1940",
+          "review": "draft",
+          "judgment": "ACCEPT"
+        },
+        {
+          "paragraphId": "yuqia-ji:L1942-L1942",
+          "review": "source-reviewed",
+          "judgment": "ACCEPT"
+        },
+        {
+          "paragraphId": "yuqia-ji:L1946-L1946",
+          "review": "draft",
+          "judgment": "ACCEPT"
+        },
+        {
+          "paragraphId": "yuqia-ji:L1948-L1948",
+          "review": "source-reviewed",
+          "judgment": "ACCEPT"
+        },
+        {
+          "paragraphId": "yuqia-ji:L1950-L1950",
+          "review": "source-reviewed",
+          "judgment": "ACCEPT"
+        },
+        {
+          "paragraphId": "yuqia-ji:L1952-L1952",
+          "review": "draft",
+          "judgment": "ACCEPT"
+        },
+        {
+          "paragraphId": "yuqia-ji:L1954-L1954",
+          "review": "draft",
+          "judgment": "ACCEPT"
+        },
+        {
+          "paragraphId": "yuqia-ji:L1956-L1956",
+          "review": "source-reviewed",
+          "judgment": "ACCEPT"
+        },
+        {
+          "paragraphId": "yuqia-ji:L1958-L1958",
+          "review": "source-reviewed",
+          "judgment": "ACCEPT"
+        },
+        {
+          "paragraphId": "yuqia-ji:L1962-L1962",
+          "review": "source-reviewed",
+          "judgment": "ACCEPT"
+        },
+        {
+          "paragraphId": "yuqia-ji:L1964-L1964",
+          "review": "source-reviewed",
+          "judgment": "ACCEPT"
+        },
+        {
+          "paragraphId": "yuqia-ji:L1968-L1968",
+          "review": "source-reviewed",
+          "judgment": "ACCEPT"
+        },
+        {
+          "paragraphId": "yuqia-ji:L1970-L1970",
+          "review": "source-reviewed",
+          "judgment": "ACCEPT"
+        },
+        {
+          "paragraphId": "yuqia-ji:L1972-L1972",
+          "review": "source-reviewed",
+          "judgment": "ACCEPT"
+        },
+        {
+          "paragraphId": "yuqia-ji:L1974-L1974",
+          "review": "draft",
+          "judgment": "ACCEPT"
+        },
+        {
+          "paragraphId": "yuqia-ji:L1976-L1976",
+          "review": "draft",
+          "judgment": "ACCEPT"
+        },
+        {
+          "paragraphId": "yuqia-ji:L1978-L1978",
+          "review": "source-reviewed",
+          "judgment": "ACCEPT"
+        },
+        {
+          "paragraphId": "yuqia-ji:L1980-L1980",
+          "review": "draft",
+          "judgment": "ACCEPT"
+        },
+        {
+          "paragraphId": "yuqia-ji:L1982-L1982",
+          "review": "draft",
+          "judgment": "ACCEPT"
+        },
+        {
+          "paragraphId": "yuqia-ji:L1984-L1984",
+          "review": "source-reviewed",
+          "judgment": "ACCEPT"
+        },
+        {
+          "paragraphId": "yuqia-ji:L1986-L1986",
+          "review": "source-reviewed",
+          "judgment": "ACCEPT"
+        },
+        {
+          "paragraphId": "yuqia-ji:L1988-L1988",
+          "review": "source-reviewed",
+          "judgment": "ACCEPT"
+        },
+        {
+          "paragraphId": "yuqia-ji:L1990-L1990",
+          "review": "source-reviewed",
+          "judgment": "ACCEPT"
+        },
+        {
+          "paragraphId": "yuqia-ji:L1992-L1992",
+          "review": "draft",
+          "judgment": "ACCEPT"
+        },
+        {
+          "paragraphId": "yuqia-ji:L1994-L1994",
+          "review": "source-reviewed",
+          "judgment": "ACCEPT"
+        },
+        {
+          "paragraphId": "yuqia-ji:L1998-L1998",
+          "review": "source-reviewed",
+          "judgment": "ACCEPT"
+        },
+        {
+          "paragraphId": "yuqia-ji:L2000-L2000",
+          "review": "source-reviewed",
+          "judgment": "ACCEPT"
+        },
+        {
+          "paragraphId": "yuqia-ji:L2002-L2002",
+          "review": "draft",
+          "judgment": "ACCEPT"
+        },
+        {
+          "paragraphId": "yuqia-ji:L2006-L2006",
+          "review": "source-reviewed",
+          "judgment": "ACCEPT"
+        },
+        {
+          "paragraphId": "yuqia-ji:L2008-L2008",
+          "review": "draft",
+          "judgment": "ACCEPT"
+        },
+        {
+          "paragraphId": "yuqia-ji:L2012-L2012",
+          "review": "source-reviewed",
+          "judgment": "ACCEPT"
+        },
+        {
+          "paragraphId": "yuqia-ji:L2014-L2014",
+          "review": "source-reviewed",
+          "judgment": "ACCEPT"
+        },
+        {
+          "paragraphId": "yuqia-ji:L2018-L2018",
+          "review": "draft",
+          "judgment": "ACCEPT"
+        },
+        {
+          "paragraphId": "yuqia-ji:L2022-L2022",
+          "review": "draft",
+          "judgment": "ACCEPT"
+        },
+        {
+          "paragraphId": "yuqia-ji:L2024-L2024",
+          "review": "source-reviewed",
+          "judgment": "ACCEPT"
+        },
+        {
+          "paragraphId": "yuqia-ji:L2026-L2026",
+          "review": "draft",
+          "judgment": "ACCEPT"
+        },
+        {
+          "paragraphId": "yuqia-ji:L2028-L2028",
+          "review": "draft",
+          "judgment": "ACCEPT"
+        },
+        {
+          "paragraphId": "yuqia-ji:L2032-L2032",
+          "review": "draft",
+          "judgment": "ACCEPT"
+        },
+        {
+          "paragraphId": "yuqia-ji:L2034-L2034",
+          "review": "source-reviewed",
+          "judgment": "ACCEPT"
+        },
+        {
+          "paragraphId": "yuqia-ji:L2036-L2036",
+          "review": "source-reviewed",
+          "judgment": "ACCEPT"
+        },
+        {
+          "paragraphId": "yuqia-ji:L2040-L2040",
+          "review": "draft",
+          "judgment": "ACCEPT"
+        },
+        {
+          "paragraphId": "yuqia-ji:L2042-L2042",
+          "review": "source-reviewed",
+          "judgment": "ACCEPT"
+        },
+        {
+          "paragraphId": "yuqia-ji:L2044-L2044",
+          "review": "source-reviewed",
+          "judgment": "ACCEPT"
+        },
+        {
+          "paragraphId": "yuqia-ji:L2048-L2048",
+          "review": "draft",
+          "judgment": "ACCEPT"
+        },
+        {
+          "paragraphId": "yuqia-ji:L2050-L2050",
+          "review": "source-reviewed",
+          "judgment": "ACCEPT"
+        },
+        {
+          "paragraphId": "yuqia-ji:L2052-L2052",
+          "review": "source-reviewed",
+          "judgment": "ACCEPT"
+        },
+        {
+          "paragraphId": "yuqia-ji:L2056-L2056",
+          "review": "source-reviewed",
+          "judgment": "ACCEPT"
+        },
+        {
+          "paragraphId": "yuqia-ji:L2060-L2060",
+          "review": "draft",
+          "judgment": "ACCEPT"
+        },
+        {
+          "paragraphId": "yuqia-ji:L2062-L2062",
+          "review": "source-reviewed",
+          "judgment": "ACCEPT"
+        },
+        {
+          "paragraphId": "yuqia-ji:L2064-L2064",
+          "review": "source-reviewed",
+          "judgment": "ACCEPT"
+        },
+        {
+          "paragraphId": "yuqia-ji:L2068-L2068",
+          "review": "source-reviewed",
+          "judgment": "ACCEPT"
+        },
+        {
+          "paragraphId": "yuqia-ji:L2070-L2070",
+          "review": "draft",
+          "judgment": "ACCEPT"
+        },
+        {
+          "paragraphId": "yuqia-ji:L2072-L2072",
+          "review": "draft",
+          "judgment": "ACCEPT"
+        },
+        {
+          "paragraphId": "yuqia-ji:L2074-L2074",
+          "review": "source-reviewed",
+          "judgment": "ACCEPT"
+        },
+        {
+          "paragraphId": "yuqia-ji:L2076-L2076",
+          "review": "source-reviewed",
+          "judgment": "ACCEPT"
+        },
+        {
+          "paragraphId": "yuqia-ji:L2078-L2078",
+          "review": "draft",
+          "judgment": "ACCEPT"
+        },
+        {
+          "paragraphId": "yuqia-ji:L2080-L2080",
+          "review": "source-reviewed",
+          "judgment": "ACCEPT"
+        },
+        {
+          "paragraphId": "yuqia-ji:L2084-L2084",
+          "review": "draft",
+          "judgment": "ACCEPT"
+        },
+        {
+          "paragraphId": "yuqia-ji:L2086-L2086",
+          "review": "source-reviewed",
+          "judgment": "ACCEPT"
+        },
+        {
+          "paragraphId": "yuqia-ji:L2088-L2088",
+          "review": "source-reviewed",
+          "judgment": "ACCEPT"
+        },
+        {
+          "paragraphId": "yuqia-ji:L2090-L2090",
+          "review": "source-reviewed",
+          "judgment": "ACCEPT"
+        },
+        {
+          "paragraphId": "yuqia-ji:L2092-L2092",
+          "review": "source-reviewed",
+          "judgment": "ACCEPT"
+        },
+        {
+          "paragraphId": "yuqia-ji:L2094-L2094",
+          "review": "source-reviewed",
+          "judgment": "ACCEPT"
+        },
+        {
+          "paragraphId": "yuqia-ji:L2096-L2096",
+          "review": "draft",
+          "judgment": "ACCEPT"
+        },
+        {
+          "paragraphId": "yuqia-ji:L2098-L2098",
+          "review": "source-reviewed",
+          "judgment": "ACCEPT"
+        },
+        {
+          "paragraphId": "yuqia-ji:L2100-L2100",
+          "review": "source-reviewed",
+          "judgment": "ACCEPT"
+        },
+        {
+          "paragraphId": "yuqia-ji:L2104-L2105",
+          "review": "draft",
+          "judgment": "ACCEPT"
+        },
+        {
+          "paragraphId": "yuqia-ji:L2109-L2109",
+          "review": "source-reviewed",
+          "judgment": "ACCEPT"
+        },
+        {
+          "paragraphId": "yuqia-ji:L2111-L2111",
+          "review": "source-reviewed",
+          "judgment": "ACCEPT"
+        },
+        {
+          "paragraphId": "yuqia-ji:L2113-L2113",
+          "review": "source-reviewed",
+          "judgment": "ACCEPT"
+        },
+        {
+          "paragraphId": "yuqia-ji:L2115-L2115",
+          "review": "source-reviewed",
+          "judgment": "ACCEPT"
+        },
+        {
+          "paragraphId": "yuqia-ji:L2117-L2117",
+          "review": "source-reviewed",
+          "judgment": "ACCEPT"
+        },
+        {
+          "paragraphId": "yuqia-ji:L2119-L2119",
+          "review": "source-reviewed",
+          "judgment": "ACCEPT"
+        },
+        {
+          "paragraphId": "yuqia-ji:L2121-L2121",
+          "review": "source-reviewed",
+          "judgment": "ACCEPT"
+        },
+        {
+          "paragraphId": "yuqia-ji:L2123-L2123",
+          "review": "source-reviewed",
+          "judgment": "ACCEPT"
+        },
+        {
+          "paragraphId": "yuqia-ji:L2127-L2127",
+          "review": "draft",
+          "judgment": "ACCEPT"
+        },
+        {
+          "paragraphId": "yuqia-ji:L2129-L2129",
+          "review": "source-reviewed",
+          "judgment": "ACCEPT"
+        },
+        {
+          "paragraphId": "yuqia-ji:L2133-L2133",
+          "review": "draft",
+          "judgment": "ACCEPT"
+        },
+        {
+          "paragraphId": "yuqia-ji:L2135-L2135",
+          "review": "source-reviewed",
+          "judgment": "ACCEPT"
+        },
+        {
+          "paragraphId": "yuqia-ji:L2137-L2137",
+          "review": "source-reviewed",
+          "judgment": "ACCEPT"
+        },
+        {
+          "paragraphId": "yuqia-ji:L2141-L2141",
+          "review": "draft",
+          "judgment": "ACCEPT"
+        },
+        {
+          "paragraphId": "yuqia-ji:L2143-L2143",
+          "review": "source-reviewed",
+          "judgment": "ACCEPT"
+        },
+        {
+          "paragraphId": "yuqia-ji:L2145-L2145",
+          "review": "draft",
+          "judgment": "ACCEPT"
+        },
+        {
+          "paragraphId": "yuqia-ji:L2149-L2149",
+          "review": "draft",
+          "judgment": "ACCEPT"
+        },
+        {
+          "paragraphId": "yuqia-ji:L2151-L2151",
+          "review": "source-reviewed",
+          "judgment": "ACCEPT"
+        },
+        {
+          "paragraphId": "yuqia-ji:L2153-L2153",
+          "review": "source-reviewed",
+          "judgment": "ACCEPT"
+        },
+        {
+          "paragraphId": "yuqia-ji:L2155-L2155",
+          "review": "source-reviewed",
+          "judgment": "ACCEPT"
+        },
+        {
+          "paragraphId": "yuqia-ji:L2157-L2157",
+          "review": "source-reviewed",
+          "judgment": "ACCEPT"
+        },
+        {
+          "paragraphId": "yuqia-ji:L2161-L2161",
+          "review": "draft",
+          "judgment": "ACCEPT"
+        },
+        {
+          "paragraphId": "yuqia-ji:L2163-L2163",
+          "review": "source-reviewed",
+          "judgment": "ACCEPT"
+        },
+        {
+          "paragraphId": "yuqia-ji:L2167-L2167",
+          "review": "source-reviewed",
+          "judgment": "ACCEPT"
+        },
+        {
+          "paragraphId": "yuqia-ji:L2169-L2169",
+          "review": "source-reviewed",
+          "judgment": "ACCEPT"
+        },
+        {
+          "paragraphId": "yuqia-ji:L2171-L2171",
+          "review": "source-reviewed",
+          "judgment": "ACCEPT"
+        },
+        {
+          "paragraphId": "yuqia-ji:L2175-L2175",
+          "review": "source-reviewed",
+          "judgment": "ACCEPT"
+        },
+        {
+          "paragraphId": "yuqia-ji:L2177-L2177",
+          "review": "source-reviewed",
+          "judgment": "ACCEPT"
+        },
+        {
+          "paragraphId": "yuqia-ji:L2181-L2181",
+          "review": "source-reviewed",
+          "judgment": "ACCEPT"
+        },
+        {
+          "paragraphId": "yuqia-ji:L2183-L2183",
+          "review": "source-reviewed",
+          "judgment": "ACCEPT"
+        },
+        {
+          "paragraphId": "yuqia-ji:L2187-L2187",
+          "review": "source-reviewed",
+          "judgment": "ACCEPT"
+        },
+        {
+          "paragraphId": "yuqia-ji:L2189-L2189",
+          "review": "source-reviewed",
+          "judgment": "ACCEPT"
+        },
+        {
+          "paragraphId": "yuqia-ji:L2193-L2193",
+          "review": "source-reviewed",
+          "judgment": "ACCEPT"
+        },
+        {
+          "paragraphId": "yuqia-ji:L2195-L2195",
+          "review": "draft",
+          "judgment": "ACCEPT"
+        },
+        {
+          "paragraphId": "yuqia-ji:L2197-L2197",
+          "review": "source-reviewed",
+          "judgment": "ACCEPT"
+        },
+        {
+          "paragraphId": "yuqia-ji:L2199-L2199",
+          "review": "source-reviewed",
+          "judgment": "ACCEPT"
+        },
+        {
+          "paragraphId": "yuqia-ji:L2201-L2201",
+          "review": "source-reviewed",
+          "judgment": "ACCEPT"
+        },
+        {
+          "paragraphId": "yuqia-ji:L2203-L2203",
+          "review": "source-reviewed",
+          "judgment": "ACCEPT"
+        },
+        {
+          "paragraphId": "yuqia-ji:L2207-L2207",
+          "review": "draft",
+          "judgment": "ACCEPT"
+        },
+        {
+          "paragraphId": "yuqia-ji:L2209-L2209",
+          "review": "source-reviewed",
+          "judgment": "ACCEPT"
+        },
+        {
+          "paragraphId": "yuqia-ji:L2211-L2211",
+          "review": "source-reviewed",
+          "judgment": "ACCEPT"
+        },
+        {
+          "paragraphId": "yuqia-ji:L2213-L2213",
+          "review": "source-reviewed",
+          "judgment": "ACCEPT"
+        },
+        {
+          "paragraphId": "yuqia-ji:L2215-L2215",
+          "review": "draft",
+          "judgment": "ACCEPT"
+        },
+        {
+          "paragraphId": "yuqia-ji:L2219-L2219",
+          "review": "source-reviewed",
+          "judgment": "ACCEPT"
+        },
+        {
+          "paragraphId": "yuqia-ji:L2221-L2221",
+          "review": "draft",
+          "judgment": "ACCEPT"
+        },
+        {
+          "paragraphId": "yuqia-ji:L2223-L2223",
+          "review": "source-reviewed",
+          "judgment": "ACCEPT"
+        },
+        {
+          "paragraphId": "yuqia-ji:L2225-L2225",
+          "review": "source-reviewed",
+          "judgment": "ACCEPT"
+        },
+        {
+          "paragraphId": "yuqia-ji:L2229-L2229",
+          "review": "source-reviewed",
+          "judgment": "ACCEPT"
+        },
+        {
+          "paragraphId": "yuqia-ji:L2233-L2233",
+          "review": "draft",
+          "judgment": "ACCEPT"
+        },
+        {
+          "paragraphId": "yuqia-ji:L2237-L2237",
+          "review": "draft",
+          "judgment": "ACCEPT"
+        },
+        {
+          "paragraphId": "yuqia-ji:L2239-L2239",
+          "review": "source-reviewed",
+          "judgment": "ACCEPT"
+        },
+        {
+          "paragraphId": "yuqia-ji:L2243-L2243",
+          "review": "draft",
+          "judgment": "ACCEPT"
+        },
+        {
+          "paragraphId": "yuqia-ji:L2245-L2245",
+          "review": "source-reviewed",
+          "judgment": "ACCEPT"
+        },
+        {
+          "paragraphId": "yuqia-ji:L2249-L2249",
+          "review": "source-reviewed",
+          "judgment": "ACCEPT"
+        },
+        {
+          "paragraphId": "yuqia-ji:L2251-L2251",
+          "review": "source-reviewed",
+          "judgment": "ACCEPT"
+        },
+        {
+          "paragraphId": "yuqia-ji:L2253-L2253",
+          "review": "draft",
+          "judgment": "ACCEPT"
+        },
+        {
+          "paragraphId": "yuqia-ji:L2257-L2257",
+          "review": "draft",
+          "judgment": "ACCEPT"
+        },
+        {
+          "paragraphId": "yuqia-ji:L2261-L2261",
+          "review": "source-reviewed",
+          "judgment": "ACCEPT"
+        },
+        {
+          "paragraphId": "yuqia-ji:L2265-L2265",
+          "review": "source-reviewed",
+          "judgment": "ACCEPT"
+        },
+        {
+          "paragraphId": "yuqia-ji:L2267-L2267",
+          "review": "source-reviewed",
+          "judgment": "ACCEPT"
+        },
+        {
+          "paragraphId": "yuqia-ji:L2271-L2271",
+          "review": "draft",
+          "judgment": "ACCEPT"
+        },
+        {
+          "paragraphId": "yuqia-ji:L2273-L2273",
+          "review": "source-reviewed",
+          "judgment": "ACCEPT"
+        },
+        {
+          "paragraphId": "yuqia-ji:L2277-L2277",
+          "review": "source-reviewed",
+          "judgment": "ACCEPT"
+        },
+        {
+          "paragraphId": "yuqia-ji:L2279-L2279",
+          "review": "draft",
+          "judgment": "ACCEPT"
+        },
+        {
+          "paragraphId": "yuqia-ji:L2281-L2281",
+          "review": "source-reviewed",
+          "judgment": "ACCEPT"
+        },
+        {
+          "paragraphId": "yuqia-ji:L2285-L2285",
+          "review": "source-reviewed",
+          "judgment": "ACCEPT"
+        },
+        {
+          "paragraphId": "yuqia-ji:L2289-L2289",
+          "review": "draft",
+          "judgment": "ACCEPT"
+        },
+        {
+          "paragraphId": "yuqia-ji:L2291-L2291",
+          "review": "source-reviewed",
+          "judgment": "ACCEPT"
+        },
+        {
+          "paragraphId": "yuqia-ji:L2293-L2293",
+          "review": "source-reviewed",
+          "judgment": "ACCEPT"
+        },
+        {
+          "paragraphId": "yuqia-ji:L2295-L2295",
+          "review": "draft",
+          "judgment": "ACCEPT"
+        },
+        {
+          "paragraphId": "yuqia-ji:L2297-L2297",
+          "review": "source-reviewed",
+          "judgment": "ACCEPT"
+        },
+        {
+          "paragraphId": "yuqia-ji:L2299-L2299",
+          "review": "source-reviewed",
+          "judgment": "ACCEPT"
+        },
+        {
+          "paragraphId": "yuqia-ji:L2301-L2301",
+          "review": "source-reviewed",
+          "judgment": "ACCEPT"
+        },
+        {
+          "paragraphId": "yuqia-ji:L2303-L2303",
+          "review": "source-reviewed",
+          "judgment": "ACCEPT"
+        },
+        {
+          "paragraphId": "yuqia-ji:L2305-L2305",
+          "review": "draft",
+          "judgment": "ACCEPT"
+        },
+        {
+          "paragraphId": "yuqia-ji:L2307-L2307",
+          "review": "source-reviewed",
+          "judgment": "ACCEPT"
+        },
+        {
+          "paragraphId": "yuqia-ji:L2309-L2309",
+          "review": "source-reviewed",
+          "judgment": "ACCEPT"
+        },
+        {
+          "paragraphId": "yuqia-ji:L2311-L2311",
+          "review": "draft",
+          "judgment": "ACCEPT"
+        },
+        {
+          "paragraphId": "yuqia-ji:L2315-L2315",
+          "review": "source-reviewed",
+          "judgment": "ACCEPT"
+        },
+        {
+          "paragraphId": "yuqia-ji:L2317-L2317",
+          "review": "source-reviewed",
+          "judgment": "ACCEPT"
+        },
+        {
+          "paragraphId": "yuqia-ji:L2321-L2321",
+          "review": "draft",
+          "judgment": "ACCEPT"
+        },
+        {
+          "paragraphId": "yuqia-ji:L2323-L2323",
+          "review": "source-reviewed",
+          "judgment": "ACCEPT"
+        },
+        {
+          "paragraphId": "yuqia-ji:L2325-L2325",
+          "review": "source-reviewed",
+          "judgment": "ACCEPT"
+        },
+        {
+          "paragraphId": "yuqia-ji:L2327-L2327",
+          "review": "draft",
+          "judgment": "ACCEPT"
+        },
+        {
+          "paragraphId": "yuqia-ji:L2329-L2329",
+          "review": "source-reviewed",
+          "judgment": "ACCEPT"
+        },
+        {
+          "paragraphId": "yuqia-ji:L2331-L2331",
+          "review": "source-reviewed",
+          "judgment": "ACCEPT"
+        },
+        {
+          "paragraphId": "yuqia-ji:L2333-L2333",
+          "review": "source-reviewed",
+          "judgment": "ACCEPT"
+        },
+        {
+          "paragraphId": "yuqia-ji:L2337-L2337",
+          "review": "source-reviewed",
+          "judgment": "ACCEPT"
+        },
+        {
+          "paragraphId": "yuqia-ji:L2339-L2339",
+          "review": "source-reviewed",
+          "judgment": "ACCEPT"
+        },
+        {
+          "paragraphId": "yuqia-ji:L2341-L2341",
+          "review": "source-reviewed",
+          "judgment": "ACCEPT"
+        },
+        {
+          "paragraphId": "yuqia-ji:L2343-L2343",
+          "review": "source-reviewed",
+          "judgment": "ACCEPT"
+        },
+        {
+          "paragraphId": "yuqia-ji:L2345-L2345",
+          "review": "source-reviewed",
+          "judgment": "ACCEPT"
+        },
+        {
+          "paragraphId": "yuqia-ji:L2347-L2347",
+          "review": "source-reviewed",
+          "judgment": "ACCEPT"
+        },
+        {
+          "paragraphId": "yuqia-ji:L2349-L2349",
+          "review": "source-reviewed",
+          "judgment": "ACCEPT"
+        },
+        {
+          "paragraphId": "yuqia-ji:L2351-L2351",
+          "review": "draft",
+          "judgment": "ACCEPT"
+        },
+        {
+          "paragraphId": "yuqia-ji:L2353-L2353",
+          "review": "source-reviewed",
+          "judgment": "ACCEPT"
+        },
+        {
+          "paragraphId": "yuqia-ji:L2355-L2355",
+          "review": "source-reviewed",
+          "judgment": "ACCEPT"
+        },
+        {
+          "paragraphId": "yuqia-ji:L2357-L2357",
+          "review": "source-reviewed",
+          "judgment": "ACCEPT"
+        },
+        {
+          "paragraphId": "yuqia-ji:L2359-L2359",
+          "review": "draft",
+          "judgment": "ACCEPT"
+        },
+        {
+          "paragraphId": "yuqia-ji:L2361-L2361",
+          "review": "source-reviewed",
+          "judgment": "ACCEPT"
+        },
+        {
+          "paragraphId": "yuqia-ji:L2363-L2363",
+          "review": "source-reviewed",
+          "judgment": "ACCEPT"
+        },
+        {
+          "paragraphId": "yuqia-ji:L2365-L2365",
+          "review": "source-reviewed",
+          "judgment": "ACCEPT"
+        },
+        {
+          "paragraphId": "yuqia-ji:L2369-L2369",
+          "review": "source-reviewed",
+          "judgment": "ACCEPT"
+        },
+        {
+          "paragraphId": "yuqia-ji:L2371-L2371",
+          "review": "source-reviewed",
+          "judgment": "ACCEPT"
+        },
+        {
+          "paragraphId": "yuqia-ji:L2373-L2373",
+          "review": "source-reviewed",
+          "judgment": "ACCEPT"
+        },
+        {
+          "paragraphId": "yuqia-ji:L2377-L2377",
+          "review": "source-reviewed",
+          "judgment": "ACCEPT"
+        },
+        {
+          "paragraphId": "yuqia-ji:L2379-L2379",
+          "review": "source-reviewed",
+          "judgment": "ACCEPT"
+        },
+        {
+          "paragraphId": "yuqia-ji:L2381-L2381",
+          "review": "source-reviewed",
+          "judgment": "ACCEPT"
+        },
+        {
+          "paragraphId": "yuqia-ji:L2383-L2383",
+          "review": "draft",
+          "judgment": "ACCEPT"
+        },
+        {
+          "paragraphId": "yuqia-ji:L2385-L2385",
+          "review": "source-reviewed",
+          "judgment": "ACCEPT"
+        },
+        {
+          "paragraphId": "yuqia-ji:L2387-L2387",
+          "review": "draft",
+          "judgment": "ACCEPT"
+        },
+        {
+          "paragraphId": "yuqia-ji:L2389-L2389",
+          "review": "draft",
+          "judgment": "ACCEPT"
+        },
+        {
+          "paragraphId": "yuqia-ji:L2391-L2391",
+          "review": "source-reviewed",
+          "judgment": "ACCEPT"
+        },
+        {
+          "paragraphId": "yuqia-ji:L2393-L2393",
+          "review": "draft",
+          "judgment": "ACCEPT"
+        },
+        {
+          "paragraphId": "yuqia-ji:L2395-L2395",
+          "review": "draft",
+          "judgment": "ACCEPT"
+        },
+        {
+          "paragraphId": "yuqia-ji:L2397-L2397",
+          "review": "source-reviewed",
+          "judgment": "ACCEPT"
+        },
+        {
+          "paragraphId": "yuqia-ji:L2399-L2399",
+          "review": "source-reviewed",
+          "judgment": "ACCEPT"
+        },
+        {
+          "paragraphId": "yuqia-ji:L2401-L2401",
+          "review": "source-reviewed",
+          "judgment": "ACCEPT"
+        },
+        {
+          "paragraphId": "yuqia-ji:L2403-L2403",
+          "review": "source-reviewed",
+          "judgment": "ACCEPT"
+        },
+        {
+          "paragraphId": "yuqia-ji:L2405-L2405",
+          "review": "source-reviewed",
+          "judgment": "ACCEPT"
+        },
+        {
+          "paragraphId": "yuqia-ji:L2407-L2407",
+          "review": "source-reviewed",
+          "judgment": "ACCEPT"
+        },
+        {
+          "paragraphId": "yuqia-ji:L2409-L2409",
+          "review": "source-reviewed",
+          "judgment": "ACCEPT"
+        },
+        {
+          "paragraphId": "yuqia-ji:L2411-L2411",
+          "review": "draft",
+          "judgment": "ACCEPT"
+        },
+        {
+          "paragraphId": "yuqia-ji:L2413-L2413",
+          "review": "draft",
+          "judgment": "ACCEPT"
+        },
+        {
+          "paragraphId": "yuqia-ji:L2417-L2417",
+          "review": "draft",
+          "judgment": "ACCEPT"
+        },
+        {
+          "paragraphId": "yuqia-ji:L2419-L2419",
+          "review": "source-reviewed",
+          "judgment": "ACCEPT"
+        },
+        {
+          "paragraphId": "yuqia-ji:L2421-L2421",
+          "review": "source-reviewed",
+          "judgment": "ACCEPT"
+        },
+        {
+          "paragraphId": "yuqia-ji:L2423-L2423",
+          "review": "source-reviewed",
+          "judgment": "ACCEPT"
+        },
+        {
+          "paragraphId": "yuqia-ji:L2425-L2425",
+          "review": "source-reviewed",
+          "judgment": "ACCEPT"
+        },
+        {
+          "paragraphId": "yuqia-ji:L2427-L2427",
+          "review": "source-reviewed",
+          "judgment": "ACCEPT"
+        },
+        {
+          "paragraphId": "yuqia-ji:L2429-L2429",
+          "review": "source-reviewed",
+          "judgment": "ACCEPT"
+        },
+        {
+          "paragraphId": "yuqia-ji:L2431-L2431",
+          "review": "draft",
+          "judgment": "ACCEPT"
+        },
+        {
+          "paragraphId": "yuqia-ji:L2433-L2433",
+          "review": "source-reviewed",
+          "judgment": "ACCEPT"
+        },
+        {
+          "paragraphId": "yuqia-ji:L2435-L2435",
+          "review": "draft",
+          "judgment": "ACCEPT"
+        },
+        {
+          "paragraphId": "yuqia-ji:L2437-L2437",
+          "review": "draft",
+          "judgment": "ACCEPT"
+        },
+        {
+          "paragraphId": "yuqia-ji:L2439-L2439",
+          "review": "source-reviewed",
+          "judgment": "ACCEPT"
+        },
+        {
+          "paragraphId": "yuqia-ji:L2441-L2441",
+          "review": "source-reviewed",
+          "judgment": "ACCEPT"
+        },
+        {
+          "paragraphId": "yuqia-ji:L2443-L2443",
+          "review": "source-reviewed",
+          "judgment": "ACCEPT"
+        },
+        {
+          "paragraphId": "yuqia-ji:L2445-L2448",
+          "review": "draft",
+          "judgment": "ACCEPT"
+        },
+        {
+          "paragraphId": "yuqia-ji:L2452-L2452",
+          "review": "draft",
+          "judgment": "ACCEPT"
+        },
+        {
+          "paragraphId": "yuqia-ji:L2454-L2454",
+          "review": "draft",
+          "judgment": "ACCEPT"
+        },
+        {
+          "paragraphId": "yuqia-ji:L2458-L2458",
+          "review": "draft",
+          "judgment": "ACCEPT"
+        },
+        {
+          "paragraphId": "yuqia-ji:L2462-L2462",
+          "review": "source-reviewed",
+          "judgment": "ACCEPT"
+        },
+        {
+          "paragraphId": "yuqia-ji:L2464-L2464",
+          "review": "source-reviewed",
+          "judgment": "ACCEPT"
+        },
+        {
+          "paragraphId": "yuqia-ji:L2468-L2468",
+          "review": "source-reviewed",
+          "judgment": "ACCEPT"
+        },
+        {
+          "paragraphId": "yuqia-ji:L2470-L2470",
+          "review": "source-reviewed",
+          "judgment": "ACCEPT"
+        },
+        {
+          "paragraphId": "yuqia-ji:L2472-L2472",
+          "review": "draft",
+          "judgment": "ACCEPT"
+        },
+        {
+          "paragraphId": "yuqia-ji:L2474-L2474",
+          "review": "draft",
+          "judgment": "ACCEPT"
+        },
+        {
+          "paragraphId": "yuqia-ji:L2478-L2478",
+          "review": "source-reviewed",
+          "judgment": "ACCEPT"
+        },
+        {
+          "paragraphId": "yuqia-ji:L2480-L2480",
+          "review": "source-reviewed",
+          "judgment": "ACCEPT"
+        },
+        {
+          "paragraphId": "yuqia-ji:L2482-L2482",
+          "review": "draft",
+          "judgment": "ACCEPT"
+        },
+        {
+          "paragraphId": "yuqia-ji:L2484-L2484",
+          "review": "draft",
+          "judgment": "ACCEPT"
+        },
+        {
+          "paragraphId": "yuqia-ji:L2488-L2488",
+          "review": "source-reviewed",
+          "judgment": "ACCEPT"
+        },
+        {
+          "paragraphId": "yuqia-ji:L2490-L2490",
+          "review": "source-reviewed",
+          "judgment": "ACCEPT"
+        },
+        {
+          "paragraphId": "yuqia-ji:L2492-L2492",
+          "review": "source-reviewed",
+          "judgment": "ACCEPT"
+        },
+        {
+          "paragraphId": "yuqia-ji:L2494-L2494",
+          "review": "draft",
+          "judgment": "ACCEPT"
+        },
+        {
+          "paragraphId": "yuqia-ji:L2496-L2496",
+          "review": "source-reviewed",
+          "judgment": "ACCEPT"
+        },
+        {
+          "paragraphId": "yuqia-ji:L2498-L2498",
+          "review": "source-reviewed",
+          "judgment": "ACCEPT"
+        },
+        {
+          "paragraphId": "yuqia-ji:L2502-L2502",
+          "review": "source-reviewed",
+          "judgment": "ACCEPT"
+        },
+        {
+          "paragraphId": "yuqia-ji:L2504-L2504",
+          "review": "draft",
+          "judgment": "ACCEPT"
+        },
+        {
+          "paragraphId": "yuqia-ji:L2506-L2506",
+          "review": "source-reviewed",
+          "judgment": "ACCEPT"
+        },
+        {
+          "paragraphId": "yuqia-ji:L2508-L2508",
+          "review": "source-reviewed",
+          "judgment": "ACCEPT"
+        },
+        {
+          "paragraphId": "yuqia-ji:L2512-L2512",
+          "review": "source-reviewed",
+          "judgment": "ACCEPT"
+        },
+        {
+          "paragraphId": "yuqia-ji:L2514-L2514",
+          "review": "source-reviewed",
+          "judgment": "ACCEPT"
+        },
+        {
+          "paragraphId": "yuqia-ji:L2516-L2516",
+          "review": "source-reviewed",
+          "judgment": "ACCEPT"
+        },
+        {
+          "paragraphId": "yuqia-ji:L2518-L2518",
+          "review": "draft",
+          "judgment": "ACCEPT"
+        },
+        {
+          "paragraphId": "yuqia-ji:L2520-L2520",
+          "review": "draft",
+          "judgment": "ACCEPT"
+        },
+        {
+          "paragraphId": "yuqia-ji:L2522-L2522",
+          "review": "draft",
+          "judgment": "ACCEPT"
+        },
+        {
+          "paragraphId": "yuqia-ji:L2524-L2524",
+          "review": "draft",
+          "judgment": "ACCEPT"
+        },
+        {
+          "paragraphId": "yuqia-ji:L2526-L2526",
+          "review": "source-reviewed",
+          "judgment": "ACCEPT"
+        },
+        {
+          "paragraphId": "yuqia-ji:L2528-L2528",
+          "review": "source-reviewed",
+          "judgment": "ACCEPT"
+        },
+        {
+          "paragraphId": "yuqia-ji:L2530-L2530",
+          "review": "source-reviewed",
+          "judgment": "ACCEPT"
+        },
+        {
+          "paragraphId": "yuqia-ji:L2532-L2532",
+          "review": "source-reviewed",
+          "judgment": "ACCEPT"
+        },
+        {
+          "paragraphId": "yuqia-ji:L2534-L2534",
+          "review": "source-reviewed",
+          "judgment": "ACCEPT"
+        },
+        {
+          "paragraphId": "yuqia-ji:L2538-L2538",
+          "review": "source-reviewed",
+          "judgment": "ACCEPT"
+        },
+        {
+          "paragraphId": "yuqia-ji:L2540-L2540",
+          "review": "draft",
+          "judgment": "ACCEPT"
+        },
+        {
+          "paragraphId": "yuqia-ji:L2542-L2542",
+          "review": "draft",
+          "judgment": "ACCEPT"
+        },
+        {
+          "paragraphId": "yuqia-ji:L2544-L2544",
+          "review": "source-reviewed",
+          "judgment": "ACCEPT"
+        },
+        {
+          "paragraphId": "yuqia-ji:L2546-L2546",
+          "review": "source-reviewed",
+          "judgment": "ACCEPT"
+        },
+        {
+          "paragraphId": "yuqia-ji:L2550-L2550",
+          "review": "draft",
+          "judgment": "ACCEPT"
+        },
+        {
+          "paragraphId": "yuqia-ji:L2552-L2552",
+          "review": "source-reviewed",
+          "judgment": "ACCEPT"
+        },
+        {
+          "paragraphId": "yuqia-ji:L2556-L2556",
+          "review": "source-reviewed",
+          "judgment": "ACCEPT"
+        }
+      ],
+      "candidateSha256": "18ef6fced6fac03a1b1a88dd4994b85bf01b745b38f59f35e21a3235e6f7ab1b",
+      "resolvedFindings": [
+        {
+          "paragraphId": "yuqia-ji:L2445-L2448",
+          "original": "雖出子方到癸，則對照午丁皆可稟光",
+          "candidate": "子照午丁",
+          "issue": "漏掉癸方，将原文范围压缩为子单独对午丁。",
+          "correction": "保留原句“子方到癸，则对照午丁皆可禀光”，再分别叙三合到子关联申辰、到癸关联巽庚；不新增映射，仍draft。"
+        },
+        {
+          "paragraphId": "yuqia-ji:L2223-L2223",
+          "issue": "乙亥重复不在紧前段L2221，而在名单首段L2219。",
+          "correction": "“乙亥与前段重复”改为“乙亥与本名单首段重复”。"
+        }
+      ],
+      "blockingFindings": [],
+      "finalVerification": "逐字复读2445与2223最终释义，两项修正成立。"
+    }
+  ]
+}
