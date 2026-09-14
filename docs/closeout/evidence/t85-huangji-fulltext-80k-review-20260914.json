@@ -1,0 +1,21 @@
+{
+  "batch": "t85-huangji-fulltext-80k",
+  "scope": "Eleventh 80 unannotated fulltext.md paragraphs L22057-L22374 Pan-geng Wu-ding; not SK1573, not algorithm",
+  "candidateSha256": "2fd1d26fd84e4ca75bb0e9f10acf5ea63bc2669a4f4fc986d9b37ae1b0e21b07",
+  "evidenceSha256": "cf2aaa1ae4b6b8ba2b9b247fa9aa9d70b3fe027821c7a3cc61fed2eba0b42525",
+  "rootReview": "Author draft; independent B ACCEPT. 74 source-reviewed chronicle labels / 6 draft residual glyphs.",
+  "reviewCounts": {
+    "source-reviewed": 74,
+    "draft": 6
+  },
+  "judges": [
+    {
+      "judge": "B",
+      "verdict": "ACCEPT",
+      "candidateSha256": "2fd1d26fd84e4ca75bb0e9f10acf5ea63bc2669a4f4fc986d9b37ae1b0e21b07",
+      "completeParagraphsRead": 80,
+      "findings": []
+    }
+  ],
+  "notBookCompletion": true
+}
