@@ -1,0 +1,21 @@
+{
+  "batch": "t103-huangji-fulltext-80w",
+  "scope": "Twenty-third 80 unannotated fulltext.md paragraphs L26548-L27123 late Tang to Five Dynasties plus residual sound tables; not SK1573, not pitch algorithm",
+  "candidateSha256": "6dda2ae8bdebfd29e821dacf13cfb462ca93778f7de7cc4cada4056c829f52d3",
+  "evidenceSha256": "4bd6b0026c79426de651b91e917a0da357f1af19051be6c2a048db45cecb8e14",
+  "rootReview": "Author draft; independent B ACCEPT on current hash 6dda2ae8. 8 source-reviewed chronicle labels / 72 draft residual tables and glyphs.",
+  "reviewCounts": {
+    "source-reviewed": 8,
+    "draft": 72
+  },
+  "judges": [
+    {
+      "judge": "B",
+      "verdict": "ACCEPT",
+      "candidateSha256": "6dda2ae8bdebfd29e821dacf13cfb462ca93778f7de7cc4cada4056c829f52d3",
+      "completeParagraphsRead": 80,
+      "findings": []
+    }
+  ],
+  "notBookCompletion": true
+}
