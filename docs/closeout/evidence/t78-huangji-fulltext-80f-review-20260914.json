@@ -1,0 +1,21 @@
+{
+  "batch": "t78-huangji-fulltext-80f",
+  "scope": "Sixth 80 unannotated fulltext.md paragraphs L20442-L20767 Yao-Shun-Yu Xia chronicle; not SK1573, not algorithm",
+  "candidateSha256": "aefde6f6579292f423643abcbbbc2b363cc13de198bde122e1370e47e70f3f74",
+  "evidenceSha256": "5934f4b1657aba000847132e184c745a364450b01c3faec418214baa34a8c400",
+  "rootReview": "Author draft; independent B ACCEPT. 72 source-reviewed chronicle labels / 8 draft residual glyphs and broken tables.",
+  "reviewCounts": {
+    "source-reviewed": 72,
+    "draft": 8
+  },
+  "judges": [
+    {
+      "judge": "B",
+      "verdict": "ACCEPT",
+      "candidateSha256": "aefde6f6579292f423643abcbbbc2b363cc13de198bde122e1370e47e70f3f74",
+      "completeParagraphsRead": 80,
+      "findings": []
+    }
+  ],
+  "notBookCompletion": true
+}
