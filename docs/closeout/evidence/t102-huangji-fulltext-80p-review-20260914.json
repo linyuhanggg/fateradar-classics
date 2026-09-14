@@ -1,0 +1,21 @@
+{
+  "batch": "t102-huangji-fulltext-80p",
+  "scope": "Sixteenth 80 unannotated fulltext.md paragraphs L23691-L24107 Spring-Autumn to Warring States; not SK1573, not algorithm",
+  "candidateSha256": "0ad95b7e2f14bfbf307b229661ec6680b495d117708978b566aaa033ea0067bf",
+  "evidenceSha256": "1b69f20bb0ead7a9e9fab31e287a52d415c8f3db920c5862a8fa1198eecb1f51",
+  "rootReview": "Author draft; independent B ACCEPT. 1 source-reviewed short year-pair / 79 draft sticky tables and residual glyphs.",
+  "reviewCounts": {
+    "source-reviewed": 1,
+    "draft": 79
+  },
+  "judges": [
+    {
+      "judge": "B",
+      "verdict": "ACCEPT",
+      "candidateSha256": "0ad95b7e2f14bfbf307b229661ec6680b495d117708978b566aaa033ea0067bf",
+      "completeParagraphsRead": 80,
+      "findings": []
+    }
+  ],
+  "notBookCompletion": true
+}
