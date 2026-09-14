@@ -1,0 +1,760 @@
+{
+  "scope": "皇极主本前12篇数字表及边界段；非全书完成",
+  "sourceSha256": "aeceef2a904d915ecce2739d65f0225c5aa5ab47c7a3446264a2b505f16d4d80",
+  "summary": {
+    "range": [
+      44,
+      12742
+    ],
+    "chapterCount": 12,
+    "inventoryParagraphCount": 4225,
+    "literalRowCount": 4308,
+    "paragraphsWithRows": 4217,
+    "paragraphsWithoutRows": 8,
+    "completeParentRows": 4301,
+    "rowsWithFlags": 905,
+    "flagCounts": {
+      "axis-label-outside-usual-stem-branch-class-preserved": 756,
+      "nonstandard-number-spelling-preserved": 135,
+      "trailing-text-preserved-not-parsed": 125,
+      "volume-heading-in-trailing-text": 5,
+      "non-numeral-in-count-preserved": 6,
+      "invalid-parent-unparsed": 7,
+      "missing-explicit-parent": 7
+    },
+    "eligibleLiteralParagraphs": 3395,
+    "unresolvedOrMetadataParagraphs": 830,
+    "literalReviewAccepted": true
+  },
+  "reviewMeaning": "source-reviewed仅指电子数字表字面坐标释读，不等于影印校勘、历算或数值正确性验证",
+  "reports": [
+    {
+      "role": "Judge A",
+      "verdict": "ACCEPT",
+      "candidateSha256": "5506f817b233b55d6a05ec650f2eeca7138c30853c18a9d052b456a58c6703d2",
+      "sourceSha256": "aeceef2a904d915ecce2739d65f0225c5aa5ab47c7a3446264a2b505f16d4d80",
+      "checks": {
+        "independentRawTokens": 4691,
+        "rowsAllParentsChecked": 4308,
+        "paragraphsFullRawCoverageChecked": 4225,
+        "eligibleLiteralParagraphs": 3395,
+        "remainDraft": 830,
+        "chapterResetsChecked": 12,
+        "badParentRowsIndependentlyFound": [
+          12576,
+          12579,
+          12582,
+          12584,
+          12587,
+          12590,
+          12593
+        ]
+      },
+      "errors": [],
+      "manualReading": {
+        "chapterFirstRandomLast": 36,
+        "allUnparsedGapsRead": true,
+        "criticalLines": [
+          2476,
+          3331,
+          5455,
+          6523,
+          6532,
+          6575,
+          10618,
+          12574,
+          12576,
+          12584,
+          12596
+        ]
+      },
+      "boundary": "仅允许3395无疑整段升级电子数字表字面坐标释读；不认定数值正确、历算解释、影印校勘或全部古籍完成。830疑字/附文/元数据段维持draft。",
+      "findings": [
+        "原文月己六、月戊十一导致相关整组draft，未按期待月支改字。",
+        "12576未解析星己父标已清除旧星；直到12596星庚完整父项才恢复。",
+        "历史年表附文逐字保存为未解析内容，不能因其相邻数表可抽取就升整段。",
+        "所有候选注释当前仍draft，审核接受的是限定3395段的后续升级条件。"
+      ]
+    },
+    {
+      "verdict": "ACCEPT",
+      "acceptedScope": "3395 whole electronic paragraphs may receive source-reviewed solely as literal day/month/star/chen coordinate readings; remaining 830 stay draft. Not facsimile collation, calendar interpretation, arithmetic correctness or predictive verification.",
+      "fullChecks": {
+        "issues": [],
+        "nodeCount": 4691,
+        "rows": 4308,
+        "paragraphs": 4225,
+        "eligible": 3395,
+        "blocked": 830,
+        "sourceHashMatch": true
+      },
+      "prior14AllBlocked": true,
+      "badStarBarrier": "N4254–N4260 keep star=null after 星己辰 at L12576; reset only at explicit 星庚 L12596; no inheritance from 星戊.",
+      "wholeParagraphBarriers": [
+        "L6606 and L6615 merge flags of all leaves and preserve unparsed historical text.",
+        "Six cross-chapter inventory paragraphs retain chapter title residual and stay draft.",
+        "L12742–12743 chapter13 boundary metadata stays draft; 4225 count includes overlapping boundary inventory paragraphs."
+      ],
+      "directSourceSampleCount": 24,
+      "directSourceSampleDetails": [
+        {
+          "rowId": "hj-main-ymxc-L00047-N0001",
+          "chapter": {
+            "line": 44,
+            "raw": "  觀物篇一    以元經㑹一"
+          },
+          "flags": [],
+          "coordinates": {
+            "日": {
+              "literal": "日甲\n〔一〕",
+              "line": 46
+            },
+            "月": {
+              "literal": "月子〔一〕",
+              "line": 47
+            },
+            "星": {
+              "literal": "星甲〔一〕",
+              "line": 47
+            },
+            "辰": {
+              "literal": "辰子〔一〕",
+              "line": 47
+            }
+          }
+        },
+        {
+          "rowId": "hj-main-ymxc-L00511-N0156",
+          "chapter": {
+            "line": 44,
+            "raw": "  觀物篇一    以元經㑹一"
+          },
+          "flags": [],
+          "coordinates": {
+            "日": {
+              "literal": "日甲\n〔一〕",
+              "line": 46
+            },
+            "月": {
+              "literal": "月子〔一〕",
+              "line": 47
+            },
+            "星": {
+              "literal": "星丙\n〔十三〕",
+              "line": 478
+            },
+            "辰": {
+              "literal": "辰亥\n〔一百五十六〕",
+              "line": 511
+            }
+          }
+        },
+        {
+          "rowId": "hj-main-ymxc-L01128-N0361",
+          "chapter": {
+            "line": 1125,
+            "raw": "  觀物篇二    以元經㑹二"
+          },
+          "flags": [],
+          "coordinates": {
+            "日": {
+              "literal": "日甲\n〔一〕",
+              "line": 1127
+            },
+            "月": {
+              "literal": "月丑〔二〕",
+              "line": 1128
+            },
+            "星": {
+              "literal": "星甲〔三十一〕",
+              "line": 1128
+            },
+            "辰": {
+              "literal": "辰子〔三百六十一〕",
+              "line": 1128
+            }
+          }
+        },
+        {
+          "rowId": "hj-main-ymxc-L01538-N0498",
+          "chapter": {
+            "line": 1125,
+            "raw": "  觀物篇二    以元經㑹二"
+          },
+          "flags": [],
+          "coordinates": {
+            "日": {
+              "literal": "日甲\n〔一〕",
+              "line": 1127
+            },
+            "月": {
+              "literal": "月丑〔二〕",
+              "line": 1128
+            },
+            "星": {
+              "literal": "星乙\n〔四十二〕",
+              "line": 1523
+            },
+            "辰": {
+              "literal": "辰巳\n〔四百九十八〕",
+              "line": 1538
+            }
+          }
+        },
+        {
+          "rowId": "hj-main-ymxc-L02209-N0721",
+          "chapter": {
+            "line": 2206,
+            "raw": "  觀物篇三    以元經㑹三"
+          },
+          "flags": [],
+          "coordinates": {
+            "日": {
+              "literal": "日甲\n〔一〕",
+              "line": 2208
+            },
+            "月": {
+              "literal": "月寅〔三〕",
+              "line": 2209
+            },
+            "星": {
+              "literal": "星甲〔六十一〕",
+              "line": 2209
+            },
+            "辰": {
+              "literal": "辰子〔七百二十一〕",
+              "line": 2209
+            }
+          }
+        },
+        {
+          "rowId": "hj-main-ymxc-L02448-N0801",
+          "chapter": {
+            "line": 2206,
+            "raw": "  觀物篇三    以元經㑹三"
+          },
+          "flags": [],
+          "coordinates": {
+            "日": {
+              "literal": "日甲\n〔一〕",
+              "line": 2208
+            },
+            "月": {
+              "literal": "月寅〔三〕",
+              "line": 2209
+            },
+            "星": {
+              "literal": "星庚\n〔六十七〕",
+              "line": 2424
+            },
+            "辰": {
+              "literal": "辰申\n〔八百一〕",
+              "line": 2448
+            }
+          }
+        },
+        {
+          "rowId": "hj-main-ymxc-L03295-N1080",
+          "chapter": {
+            "line": 3292,
+            "raw": "  觀物篇四    以元經㑹四"
+          },
+          "flags": [],
+          "coordinates": {
+            "日": {
+              "literal": "日甲\n〔一〕",
+              "line": 3294
+            },
+            "月": {
+              "literal": "月卯〔四〕",
+              "line": 3295
+            },
+            "星": {
+              "literal": "星甲〔九十一〕",
+              "line": 3295
+            },
+            "辰": {
+              "literal": "辰子〔一千八十一〕",
+              "line": 3295
+            }
+          }
+        },
+        {
+          "rowId": "hj-main-ymxc-L04210-N1385",
+          "chapter": {
+            "line": 3292,
+            "raw": "  觀物篇四    以元經㑹四"
+          },
+          "flags": [],
+          "coordinates": {
+            "日": {
+              "literal": "日甲\n〔一〕",
+              "line": 3294
+            },
+            "月": {
+              "literal": "月卯〔四〕",
+              "line": 3295
+            },
+            "星": {
+              "literal": "星己\n〔一百十六〕",
+              "line": 4192
+            },
+            "辰": {
+              "literal": "辰午\n〔一千三百八十七〕",
+              "line": 4210
+            }
+          }
+        },
+        {
+          "rowId": "hj-main-ymxc-L04374-N1439",
+          "chapter": {
+            "line": 4371,
+            "raw": "  觀物篇五    以元經㑹五"
+          },
+          "flags": [],
+          "coordinates": {
+            "日": {
+              "literal": "日甲\n〔一〕",
+              "line": 4373
+            },
+            "月": {
+              "literal": "月辰〔五〕",
+              "line": 4374
+            },
+            "星": {
+              "literal": "星甲〔一百二十一〕",
+              "line": 4374
+            },
+            "辰": {
+              "literal": "辰子〔一千四百四十一〕",
+              "line": 4374
+            }
+          }
+        },
+        {
+          "rowId": "hj-main-ymxc-L04374-N1439",
+          "chapter": {
+            "line": 4371,
+            "raw": "  觀物篇五    以元經㑹五"
+          },
+          "flags": [],
+          "coordinates": {
+            "日": {
+              "literal": "日甲\n〔一〕",
+              "line": 4373
+            },
+            "月": {
+              "literal": "月辰〔五〕",
+              "line": 4374
+            },
+            "星": {
+              "literal": "星甲〔一百二十一〕",
+              "line": 4374
+            },
+            "辰": {
+              "literal": "辰子〔一千四百四十一〕",
+              "line": 4374
+            }
+          }
+        },
+        {
+          "rowId": "hj-main-ymxc-L05455-N1799",
+          "chapter": {
+            "line": 5452,
+            "raw": "  觀物篇六    以元經㑹六"
+          },
+          "flags": [
+            "axis-label-outside-usual-stem-branch-class-preserved"
+          ],
+          "coordinates": {
+            "日": {
+              "literal": "日甲\n〔一〕",
+              "line": 5454
+            },
+            "月": {
+              "literal": "月己〔六〕",
+              "line": 5455
+            },
+            "星": {
+              "literal": "星甲〔一百五十一〕",
+              "line": 5455
+            },
+            "辰": {
+              "literal": "辰子〔一千八百一〕",
+              "line": 5455
+            }
+          }
+        },
+        {
+          "rowId": "hj-main-ymxc-L06523-N2158",
+          "chapter": {
+            "line": 5452,
+            "raw": "  觀物篇六    以元經㑹六"
+          },
+          "flags": [
+            "trailing-text-preserved-not-parsed",
+            "axis-label-outside-usual-stem-branch-class-preserved",
+            "volume-heading-in-trailing-text"
+          ],
+          "coordinates": {
+            "日": {
+              "literal": "日甲\n〔一〕",
+              "line": 5454
+            },
+            "月": {
+              "literal": "月己〔六〕",
+              "line": 5455
+            },
+            "星": {
+              "literal": "星癸\n〔一百八十〕",
+              "line": 6498
+            },
+            "辰": {
+              "literal": "辰亥〔二千一百六十〕",
+              "line": 6523
+            }
+          }
+        },
+        {
+          "rowId": "hj-main-ymxc-L06532-N2159",
+          "chapter": {
+            "line": 6529,
+            "raw": "  觀物篇七     以元經㑹七"
+          },
+          "flags": [
+            "trailing-text-preserved-not-parsed"
+          ],
+          "coordinates": {
+            "日": {
+              "literal": "日甲\n〔一〕",
+              "line": 6531
+            },
+            "月": {
+              "literal": "月午〔七〕",
+              "line": 6532
+            },
+            "星": {
+              "literal": "星甲〔一百八十一〕",
+              "line": 6532
+            },
+            "辰": {
+              "literal": "辰子〔二千一百六十一〕",
+              "line": 6532
+            }
+          }
+        },
+        {
+          "rowId": "hj-main-ymxc-L06800-N2331",
+          "chapter": {
+            "line": 6529,
+            "raw": "  觀物篇七     以元經㑹七"
+          },
+          "flags": [],
+          "coordinates": {
+            "日": {
+              "literal": "日甲\n〔一〕",
+              "line": 6531
+            },
+            "月": {
+              "literal": "月午〔七〕",
+              "line": 6532
+            },
+            "星": {
+              "literal": "星戊\n〔一百九十五〕",
+              "line": 6788
+            },
+            "辰": {
+              "literal": "辰辰\n〔二千三百三十三〕",
+              "line": 6800
+            }
+          }
+        },
+        {
+          "rowId": "hj-main-ymxc-L07366-N2519",
+          "chapter": {
+            "line": 7363,
+            "raw": "  觀物篇八    以元經㑹八"
+          },
+          "flags": [],
+          "coordinates": {
+            "日": {
+              "literal": "日甲\n〔一〕",
+              "line": 7365
+            },
+            "月": {
+              "literal": "月未〔八〕",
+              "line": 7366
+            },
+            "星": {
+              "literal": "星甲〔二百十一〕",
+              "line": 7366
+            },
+            "辰": {
+              "literal": "辰子〔二千五百二十一〕",
+              "line": 7366
+            }
+          }
+        },
+        {
+          "rowId": "hj-main-ymxc-L07494-N2562",
+          "chapter": {
+            "line": 7363,
+            "raw": "  觀物篇八    以元經㑹八"
+          },
+          "flags": [],
+          "coordinates": {
+            "日": {
+              "literal": "日甲\n〔一〕",
+              "line": 7365
+            },
+            "月": {
+              "literal": "月未〔八〕",
+              "line": 7366
+            },
+            "星": {
+              "literal": "星丁\n〔二百十四〕",
+              "line": 7473
+            },
+            "辰": {
+              "literal": "辰未\n〔二千五百六十四〕",
+              "line": 7494
+            }
+          }
+        },
+        {
+          "rowId": "hj-main-ymxc-L08452-N2879",
+          "chapter": {
+            "line": 8449,
+            "raw": "  觀物篇九     以元經會九"
+          },
+          "flags": [],
+          "coordinates": {
+            "日": {
+              "literal": "日甲\n〔一〕",
+              "line": 8451
+            },
+            "月": {
+              "literal": "月申〔九〕",
+              "line": 8452
+            },
+            "星": {
+              "literal": "星甲〔二百四十一〕",
+              "line": 8452
+            },
+            "辰": {
+              "literal": "辰子〔二千八百八十一〕",
+              "line": 8452
+            }
+          }
+        },
+        {
+          "rowId": "hj-main-ymxc-L08721-N2969",
+          "chapter": {
+            "line": 8449,
+            "raw": "  觀物篇九     以元經會九"
+          },
+          "flags": [],
+          "coordinates": {
+            "日": {
+              "literal": "日甲\n〔一〕",
+              "line": 8451
+            },
+            "月": {
+              "literal": "月申〔九〕",
+              "line": 8452
+            },
+            "星": {
+              "literal": "星辛\n〔二百四十八〕",
+              "line": 8703
+            },
+            "辰": {
+              "literal": "辰午\n〔二千九百七十一〕",
+              "line": 8721
+            }
+          }
+        },
+        {
+          "rowId": "hj-main-ymxc-L09533-N3239",
+          "chapter": {
+            "line": 9530,
+            "raw": "  觀物篇十    以元經會十"
+          },
+          "flags": [],
+          "coordinates": {
+            "日": {
+              "literal": "日甲\n〔一〕",
+              "line": 9532
+            },
+            "月": {
+              "literal": "月酉〔十〕",
+              "line": 9533
+            },
+            "星": {
+              "literal": "星甲〔二百七十一〕",
+              "line": 9533
+            },
+            "辰": {
+              "literal": "辰子〔三千二百四十一〕",
+              "line": 9533
+            }
+          }
+        },
+        {
+          "rowId": "hj-main-ymxc-L10138-N3441",
+          "chapter": {
+            "line": 9530,
+            "raw": "  觀物篇十    以元經會十"
+          },
+          "flags": [],
+          "coordinates": {
+            "日": {
+              "literal": "日甲\n〔一〕",
+              "line": 9532
+            },
+            "月": {
+              "literal": "月酉〔十〕",
+              "line": 9533
+            },
+            "星": {
+              "literal": "星庚\n〔二百八十七〕",
+              "line": 10108
+            },
+            "辰": {
+              "literal": "辰戌\n〔三千四百四十三〕",
+              "line": 10138
+            }
+          }
+        },
+        {
+          "rowId": "hj-main-ymxc-L10618-N3599",
+          "chapter": {
+            "line": 10615,
+            "raw": "  皇極經世書卷二下    宋 邵雍 撰觀物篇十一   以元經㑹十一"
+          },
+          "flags": [
+            "axis-label-outside-usual-stem-branch-class-preserved"
+          ],
+          "coordinates": {
+            "日": {
+              "literal": "日甲\n〔一〕",
+              "line": 10617
+            },
+            "月": {
+              "literal": "月戊〔十一〕",
+              "line": 10618
+            },
+            "星": {
+              "literal": "星甲〔三百一〕",
+              "line": 10618
+            },
+            "辰": {
+              "literal": "辰子〔三千六百一〕",
+              "line": 10618
+            }
+          }
+        },
+        {
+          "rowId": "hj-main-ymxc-L10632-N3604",
+          "chapter": {
+            "line": 10615,
+            "raw": "  皇極經世書卷二下    宋 邵雍 撰觀物篇十一   以元經㑹十一"
+          },
+          "flags": [
+            "axis-label-outside-usual-stem-branch-class-preserved"
+          ],
+          "coordinates": {
+            "日": {
+              "literal": "日甲\n〔一〕",
+              "line": 10617
+            },
+            "月": {
+              "literal": "月戊〔十一〕",
+              "line": 10618
+            },
+            "星": {
+              "literal": "星甲〔三百一〕",
+              "line": 10618
+            },
+            "辰": {
+              "literal": "辰巳\n〔三千六百六〕",
+              "line": 10632
+            }
+          }
+        },
+        {
+          "rowId": "hj-main-ymxc-L11699-N3959",
+          "chapter": {
+            "line": 11696,
+            "raw": "  觀物篇十二   以元經會十二"
+          },
+          "flags": [],
+          "coordinates": {
+            "日": {
+              "literal": "日甲\n〔一〕",
+              "line": 11698
+            },
+            "月": {
+              "literal": "月亥〔十二〕",
+              "line": 11699
+            },
+            "星": {
+              "literal": "星甲〔三百三十一〕",
+              "line": 11699
+            },
+            "辰": {
+              "literal": "辰子〔三千九百六十一〕",
+              "line": 11699
+            }
+          }
+        },
+        {
+          "rowId": "hj-main-ymxc-L11884-N4021",
+          "chapter": {
+            "line": 11696,
+            "raw": "  觀物篇十二   以元經會十二"
+          },
+          "flags": [],
+          "coordinates": {
+            "日": {
+              "literal": "日甲\n〔一〕",
+              "line": 11698
+            },
+            "月": {
+              "literal": "月亥〔十二〕",
+              "line": 11699
+            },
+            "星": {
+              "literal": "星己\n〔三百三十六〕",
+              "line": 11878
+            },
+            "辰": {
+              "literal": "辰寅\n〔四千二十三〕",
+              "line": 11884
+            }
+          }
+        }
+      ],
+      "additionalDirectSourceSpot": "Chapter5 L5012–5019 辰酉〔一千六百五十四〕/辰戌〔一千六百五十五〕/辰亥〔一千六百五十六〕",
+      "reviewSwitchReproduction": {
+        "onlyReviewFieldChanges": 3395,
+        "reviewCounts": {
+          "draft": 830,
+          "source-reviewed": 3395
+        },
+        "validator": "1 books, 4225 entries, 0 errors"
+      },
+      "hashes": {
+        "/Users/yuhanglin/fateradar-goal-20260912/classics/tools/build-huangji-table-context.py": "b6f709dcd9967b64fbf80909e2cf48d33f4e47a792f5190b1b3f4df78ac27dc6",
+        "/tmp/huangji-01-12-root-candidate-v3.json": "5506f817b233b55d6a05ec650f2eeca7138c30853c18a9d052b456a58c6703d2",
+        "/tmp/huangji-01-12-annotations-v3.json": "12aba8b117b09da2c782cdf168e55cbac675bf63d6a55c974e2ea0701d7b6ee5"
+      },
+      "nonblockingLimit": "Conservative numeral grammar may reject valid alternate numeric spellings; rejection preserves draft and raw text, so it does not justify guessing or auto-repair. Current acceptance is limited to exact inputs and the tested literal interpretation."
+    }
+  ],
+  "regression": "tools/test-huangji-table-context.py：4 tests passed；包含坏父7叶隔离、异常数字和混合卷题不可升级、全量源字符及ID锚定、默认候选不得自审",
+  "files": {
+    "tools/build-huangji-table-context.py": "b6f709dcd9967b64fbf80909e2cf48d33f4e47a792f5190b1b3f4df78ac27dc6",
+    "sources/normalized/divination/huangji-jingshi/ymxc-table-context.json": "5900dfc63480d1ffa3543e7a5102f3f4743459e3cf0345616312e925f9a88bac",
+    "references/annotations/divination/huangji-jingshi.json": "6cedb027b35a4baddae8175f72046d6451ae86af0a1c689bb55aedb8ed7a4db9"
+  }
+}
