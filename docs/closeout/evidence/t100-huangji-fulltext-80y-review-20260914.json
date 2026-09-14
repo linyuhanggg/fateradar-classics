@@ -1,0 +1,21 @@
+{
+  "batch": "t100-huangji-fulltext-80y",
+  "scope": "Twenty-fifth 80 unannotated fulltext.md residual sound tables L27763-L28386; not SK1573, not pitch algorithm",
+  "candidateSha256": "0a242a049e689fd670925714994f642d0f9ded9a9f07c0fbb26a78e84fd6fd0a",
+  "evidenceSha256": "ba5a7894ffe6a23d1d910eb8ee5c6451559a1fdcf018cf860da9a46490da821b",
+  "rootReview": "Author draft; independent B ACCEPT on current hash. 0 source-reviewed / 80 draft residual tables.",
+  "reviewCounts": {
+    "source-reviewed": 0,
+    "draft": 80
+  },
+  "judges": [
+    {
+      "judge": "B",
+      "verdict": "ACCEPT",
+      "candidateSha256": "0a242a049e689fd670925714994f642d0f9ded9a9f07c0fbb26a78e84fd6fd0a",
+      "completeParagraphsRead": 80,
+      "findings": []
+    }
+  ],
+  "notBookCompletion": true
+}
