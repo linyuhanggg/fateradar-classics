@@ -1,0 +1,21 @@
+{
+  "batch": "t117-huangji-fulltext-31am",
+  "scope": "Remaining 31 unannotated fulltext.md residual sound tables L36580-L36821; not SK1573, not pitch algorithm. remainingAfter=0 is fulltext remainder not book completion.",
+  "candidateSha256": "134f5888f419a0c2ae02cb750c32b9d68d77345f0bfe25367912513cc695c094",
+  "evidenceSha256": "880f880c4b0116ebad122b0cc9f78a2fb7a7934ffc8e9d21ef12e20da8679582",
+  "rootReview": "Author draft; independent B ACCEPT. 0 source-reviewed / 31 draft residual tables.",
+  "reviewCounts": {
+    "source-reviewed": 0,
+    "draft": 31
+  },
+  "judges": [
+    {
+      "judge": "B",
+      "verdict": "ACCEPT",
+      "candidateSha256": "134f5888f419a0c2ae02cb750c32b9d68d77345f0bfe25367912513cc695c094",
+      "completeParagraphsRead": 31,
+      "findings": []
+    }
+  ],
+  "notBookCompletion": true
+}
