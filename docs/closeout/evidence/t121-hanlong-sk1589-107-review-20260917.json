@@ -1,0 +1,74 @@
+{
+  "batch": "t121-hanlong-sk1589-107",
+  "scope": "SK1589 missing-chapter reimport 107 new paragraph IDs; source 86→193 with annotations. Website juan != print. catalogComplete webpage only, not 古本全帙. Fengshui not an algorithm.",
+  "reviewCounts": {
+    "source-reviewed": 29,
+    "draft": 78
+  },
+  "judges": [
+    {
+      "judge": "B2",
+      "batch": "hanlong2a",
+      "verdict": "ACCEPT",
+      "candidateSha256": "b42d1800a91a0c18c739a8ea39f109ebcee2ad5931215fbb204a3962f2bdb1aa",
+      "evidenceSha256": "feafd8a6d1af4f992f56a3f36238f9362201e8c017ed1b218d7a7b73540899b3",
+      "completeParagraphsRead": 2,
+      "findings": []
+    },
+    {
+      "judge": "B",
+      "batch": "hanlong8a",
+      "verdict": "ACCEPT",
+      "candidateSha256": "debc79d3543669be6f6fb0a4214413a4570e57a945929f9e3c638cb6f3a8d860",
+      "evidenceSha256": "35105ccc285c2874556d50a1dc57cb4a63a9fdc3ed2b24dd8350d6b9e6fb9253",
+      "completeParagraphsRead": 8,
+      "findings": []
+    },
+    {
+      "judge": "B",
+      "batch": "hanlong10b",
+      "verdict": "ACCEPT",
+      "candidateSha256": "0adf01912d59c3c6bcd010f0ae41be610e7e2cceaea67da3e2bc33fbde39c250",
+      "evidenceSha256": "d72e2a0f9b7973accdd845096775c136a2bc640e34eb56434b99709bae2231d7",
+      "completeParagraphsRead": 10,
+      "findings": []
+    },
+    {
+      "judge": "B4",
+      "batch": "hanlong20b",
+      "verdict": "ACCEPT",
+      "candidateSha256": "5c0b64115b1c003a4cd4877d7a5d4423994a64a8b59a3085a516af0123994671",
+      "evidenceSha256": "67c0ee0b7902a9b6764909ddb743a6407fbe2d5a07015f46270ce837414a080b",
+      "completeParagraphsRead": 20,
+      "findings": []
+    },
+    {
+      "judge": "B3",
+      "batch": "hanlong20c",
+      "verdict": "ACCEPT",
+      "candidateSha256": "e71b737ab257731d1ea8d9986342dd0f61fa468eea24fbd39dfb29c5aefea187",
+      "evidenceSha256": "6ef47e6a543d87fddc4d557aff4ebbd823b960aca42ab12f67077c045f5042ed",
+      "completeParagraphsRead": 20,
+      "findings": []
+    },
+    {
+      "judge": "B3",
+      "batch": "hanlong20d",
+      "verdict": "ACCEPT",
+      "candidateSha256": "9abe6c0f1f78a3d6e1c088b8e95374ffcc6fc7e60bd3556d4f5a9261a28a3e8e",
+      "evidenceSha256": "3fcd0df634e2f86583bccb7135289ea597eab424ac95347e8c14e3c06b794639",
+      "completeParagraphsRead": 20,
+      "findings": []
+    },
+    {
+      "judge": "B",
+      "batch": "hanlong107b",
+      "verdict": "ACCEPT",
+      "candidateSha256": "f600955007f8741289f992a7355d4913d74244aae2acd8954ffdff8ddec9ef73",
+      "evidenceSha256": "f9ba615fc98d5a72e0cd223e93dc17842825b09d5f2156facd78b122d2fd1006",
+      "completeParagraphsRead": 27,
+      "findings": []
+    }
+  ],
+  "notBookCompletion": true
+}
