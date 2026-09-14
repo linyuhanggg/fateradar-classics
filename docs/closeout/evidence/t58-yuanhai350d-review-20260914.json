@@ -1,0 +1,33 @@
+{
+  "batch": "t58-yuanhai350d",
+  "scope": "350 yuanhai shidian paragraphs L4297-7291 after t50/t53/t54; not edition completeness or facsimile collation",
+  "candidateSha256": "bc2b624661a61cf06b9425661b07d22b06b8a15e392fb3e6856223b4fe06ab96",
+  "evidenceSha256": "492616ed1b0094f62eb11e25b24f5509799fd2f182b3b2db08a854def40db212",
+  "previousCandidateSha256": "1e16b627e0a0fff0e6125e0eea68d8c13bee209a6112ae0d35ca9370a4f6c8e1",
+  "rootReview": "Author draft; independent B NEEDS_REVISION 16 findings; B2 F17 曰辰; B3 ACCEPT. 69 source-reviewed / 281 draft.",
+  "reviewCounts": {
+    "source-reviewed": 69,
+    "draft": 281
+  },
+  "judges": [
+    {
+      "judge": "B",
+      "verdict": "NEEDS_REVISION",
+      "findings": ["F1", "F2", "F3", "F4", "F5", "F6", "F7", "F8", "F9", "F10", "F11", "F12", "F13", "F14", "F15", "F16"]
+    },
+    {
+      "judge": "B2",
+      "verdict": "NEEDS_REVISION",
+      "findings": ["F17"]
+    },
+    {
+      "judge": "B3",
+      "verdict": "ACCEPT",
+      "candidateSha256": "bc2b624661a61cf06b9425661b07d22b06b8a15e392fb3e6856223b4fe06ab96",
+      "completeParagraphsRead": 350,
+      "previousFindingsClosed": ["F1", "F2", "F3", "F4", "F5", "F6", "F7", "F8", "F9", "F10", "F11", "F12", "F13", "F14", "F15", "F16", "F17"],
+      "findings": []
+    }
+  ],
+  "notBookCompletion": true
+}
