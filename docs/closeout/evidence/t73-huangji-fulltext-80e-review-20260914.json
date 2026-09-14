@@ -1,0 +1,21 @@
+{
+  "batch": "t73-huangji-fulltext-80e",
+  "scope": "Fifth 80 unannotated fulltext.md paragraphs L19165-L20438; not SK1573 missing chapters, not algorithm coverage",
+  "candidateSha256": "4a0a213299a5e319d49257cf10384f77c59b55d1119297ede81ba9f3cfb16c56",
+  "evidenceSha256": "93a1d8b27f2200aec391b50e8187fee8fcdac8c13043f34e7c8ec8337448f7f4",
+  "rootReview": "Author draft; independent B ACCEPT. 65 source-reviewed chronicle labels / 15 draft residual glyphs and volume headers.",
+  "reviewCounts": {
+    "source-reviewed": 65,
+    "draft": 15
+  },
+  "judges": [
+    {
+      "judge": "B",
+      "verdict": "ACCEPT",
+      "candidateSha256": "4a0a213299a5e319d49257cf10384f77c59b55d1119297ede81ba9f3cfb16c56",
+      "completeParagraphsRead": 80,
+      "findings": []
+    }
+  ],
+  "notBookCompletion": true
+}
