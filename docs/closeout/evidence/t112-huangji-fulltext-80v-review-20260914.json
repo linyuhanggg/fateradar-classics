@@ -1,0 +1,21 @@
+{
+  "batch": "t112-huangji-fulltext-80v",
+  "scope": "Twenty-second 80 unannotated fulltext.md paragraphs L26115-L26544 Sui-Tang chronicle; not SK1573, not algorithm",
+  "candidateSha256": "8e88f6c1bd6111be18f6468a42b062fbf8445737751e50d3a289474991aadf64",
+  "evidenceSha256": "39917a10d6f5af88cf8aaa7c10a2d8358c2860cf089daad28876cd2feb3369ab",
+  "rootReview": "Author draft; independent B ACCEPT. 11 source-reviewed short year-pairs / 69 draft sticky tables and residual glyphs.",
+  "reviewCounts": {
+    "source-reviewed": 11,
+    "draft": 69
+  },
+  "judges": [
+    {
+      "judge": "B",
+      "verdict": "ACCEPT",
+      "candidateSha256": "8e88f6c1bd6111be18f6468a42b062fbf8445737751e50d3a289474991aadf64",
+      "completeParagraphsRead": 80,
+      "findings": []
+    }
+  ],
+  "notBookCompletion": true
+}
