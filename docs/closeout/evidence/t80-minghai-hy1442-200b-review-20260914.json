@@ -1,0 +1,21 @@
+{
+  "batch": "t80-minghai-hy1442-200b",
+  "scope": "Second 200 unannotated HY1442 paragraphs L2657-4983; not seven-luminaries calculation",
+  "candidateSha256": "fa877a8d7bfd21a4f93edd4d1270a9645527c3cf756f96230714f2a912248e99",
+  "evidenceSha256": "4adbb719e514cfba8516cdc8cf32657e3ef4a889c67b35977500e8adc1cce359",
+  "rootReview": "Author draft; independent B4/B5 NEEDS_REVISION then B6 ACCEPT. 48 source-reviewed / 152 draft residual glyphs.",
+  "reviewCounts": {
+    "source-reviewed": 48,
+    "draft": 152
+  },
+  "judges": [
+    {
+      "judge": "B6",
+      "verdict": "ACCEPT",
+      "candidateSha256": "fa877a8d7bfd21a4f93edd4d1270a9645527c3cf756f96230714f2a912248e99",
+      "completeParagraphsRead": 200,
+      "findings": []
+    }
+  ],
+  "notBookCompletion": true
+}
