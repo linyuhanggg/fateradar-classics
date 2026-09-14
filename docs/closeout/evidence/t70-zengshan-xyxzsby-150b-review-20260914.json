@@ -1,0 +1,28 @@
+{
+  "batch": "t70-zengshan-xyxzsby-150b",
+  "scope": "Second 150 unannotated shidian XYXZSBY paragraphs; website chapter names != print; not liuyao algorithm coverage",
+  "candidateSha256": "daaa26da4aac742af7fe722fa74040d24c5bf715defb86ecdc840e3730f45abf",
+  "evidenceSha256": "bd10bf4785f7bf9200beec56d18b5d4633e3770c8054cb3cf65579d5ab9c15e9",
+  "previousCandidateSha256": "c6fa436f127fca8b824b599576adc572760d3bd83464f1eb8aca2cfd4719efb7",
+  "rootReview": "Author draft; independent B NEEDS_REVISION on 不經乎/晴或; B2 ACCEPT. 29 source-reviewed / 121 draft.",
+  "reviewCounts": {
+    "source-reviewed": 29,
+    "draft": 121
+  },
+  "judges": [
+    {
+      "judge": "B",
+      "verdict": "NEEDS_REVISION",
+      "findings": ["F1", "F2"]
+    },
+    {
+      "judge": "B2",
+      "verdict": "ACCEPT",
+      "candidateSha256": "daaa26da4aac742af7fe722fa74040d24c5bf715defb86ecdc840e3730f45abf",
+      "completeParagraphsRead": 150,
+      "previousFindingsClosed": ["F1", "F2"],
+      "findings": []
+    }
+  ],
+  "notBookCompletion": true
+}
