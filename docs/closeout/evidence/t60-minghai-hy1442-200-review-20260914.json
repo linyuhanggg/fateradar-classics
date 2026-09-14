@@ -1,0 +1,31 @@
+{
+  "batch": "t60-minghai-hy1442-200",
+  "scope": "First 200 unannotated shidian HY1442 paragraphs; not edition completeness, 七政 collation, or efficacy",
+  "candidateSha256": "41fc056791a9578a34b56e733e18d470efc60c01a6a59d41f12a6e6e4b1ae47d",
+  "evidenceSha256": "ea79e6803d93d7c9a240bb14e8dc015c37566a5a1a85accf8316c6716e83695d",
+  "previousCandidateSha256": "8043fb91f239f0ae6542547431c20be08adca79a4c6468a85ddb095d086683be",
+  "rootReview": "Author draft; independent B then B2 NEEDS_REVISION on silent 七政/子平 substitutions; B3 ACCEPT. 79 source-reviewed / 121 draft.",
+  "reviewCounts": {
+    "source-reviewed": 79,
+    "draft": 121
+  },
+  "judges": [
+    {
+      "judge": "B",
+      "verdict": "NEEDS_REVISION"
+    },
+    {
+      "judge": "B2",
+      "verdict": "NEEDS_REVISION",
+      "findings": ["F8", "F11", "F13", "F14"]
+    },
+    {
+      "judge": "B3",
+      "verdict": "ACCEPT",
+      "candidateSha256": "41fc056791a9578a34b56e733e18d470efc60c01a6a59d41f12a6e6e4b1ae47d",
+      "completeParagraphsRead": 200,
+      "findings": []
+    }
+  ],
+  "notBookCompletion": true
+}
