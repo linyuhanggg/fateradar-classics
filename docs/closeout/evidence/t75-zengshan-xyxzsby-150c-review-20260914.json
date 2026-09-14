@@ -1,0 +1,26 @@
+{
+  "batch": "t75-zengshan-xyxzsby-150c",
+  "scope": "Third 150 unannotated XYXZSBY paragraphs L2954-3610; website 口過天時章 is not the print juan; not algorithm coverage",
+  "candidateSha256": "be98289aa18c3dafa053d3365a01533fe60c5209d760369fefa79530121f798a",
+  "evidenceSha256": "78da460beccb097787c0171133c85cf4b03486c474c967dbe23e8d1b51fa6650",
+  "rootReview": "Author draft; independent B NEEDS_REVISION F1-F3 then B2 ACCEPT. 18 source-reviewed / 132 draft residual glyphs, images, broken tables.",
+  "reviewCounts": {
+    "source-reviewed": 18,
+    "draft": 132
+  },
+  "judges": [
+    {
+      "judge": "B",
+      "verdict": "NEEDS_REVISION",
+      "candidateSha256": "7336314a8a22db233a03da1685d9efd73d978a9fa5bbe9f7960ca442ac7fdb59"
+    },
+    {
+      "judge": "B2",
+      "verdict": "ACCEPT",
+      "candidateSha256": "be98289aa18c3dafa053d3365a01533fe60c5209d760369fefa79530121f798a",
+      "completeParagraphsRead": 150,
+      "findings": []
+    }
+  ],
+  "notBookCompletion": true
+}
