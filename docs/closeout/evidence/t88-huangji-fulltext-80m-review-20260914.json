@@ -1,0 +1,21 @@
+{
+  "batch": "t88-huangji-fulltext-80m",
+  "scope": "Thirteenth 80 unannotated fulltext.md paragraphs L22699-L23021 Shang-Zhou transition; not SK1573, not algorithm",
+  "candidateSha256": "e226860dc5d03510443f9e4fe1d66841985b255caa553cbb7bbc31e8f35d4890",
+  "evidenceSha256": "66d64c7d89f7268ff0d3defcc86b4e1f6abd9fa9da3f0680be2d8a21aa513d5d",
+  "rootReview": "Author draft; independent B ACCEPT. 67 source-reviewed chronicle labels / 13 draft residual glyphs and broken tables.",
+  "reviewCounts": {
+    "source-reviewed": 67,
+    "draft": 13
+  },
+  "judges": [
+    {
+      "judge": "B",
+      "verdict": "ACCEPT",
+      "candidateSha256": "e226860dc5d03510443f9e4fe1d66841985b255caa553cbb7bbc31e8f35d4890",
+      "completeParagraphsRead": 80,
+      "findings": []
+    }
+  ],
+  "notBookCompletion": true
+}
