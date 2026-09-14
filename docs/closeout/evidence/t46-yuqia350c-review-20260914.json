@@ -1,0 +1,2179 @@
+{
+  "scope": "350 entries:168 source-reviewed,182draft including79metadata; not whole book completion",
+  "candidateSha256": "2cd25599f7cbf58da02865f46bcbe67a7c0cdc53276404c47cef75ed0a41a57d",
+  "rootReview": "All350complete source and vernacular read. Corrected outcome vs condition at L3710, preserved unresolved 农晚闭 at L3921. Both judges final hash accepted.",
+  "judges": [
+    {
+      "decision": "ACCEPT",
+      "candidateSha256": "3d3f2fbd247836d97383ee4bcc68ff7cc08265fc91f9fc2e18717753d0517208",
+      "entriesRead": 350,
+      "sourceTextMatches": 350,
+      "relatedSourceTextErrors": 0,
+      "sourceSha256Matches": true,
+      "findings": [
+        {
+          "index": 153,
+          "paragraphId": "yuqia-ji:L3710-L3710",
+          "sourceQuote": "立冬日屬火，無雨雪，主暖，來年旱",
+          "issue": "释文加且，将无雨雪从占断转成合取前提。",
+          "requestedChange": "立冬日属火时，原书占无雨雪、暖及来年旱。保持其余分句。"
+        },
+        {
+          "index": 231,
+          "paragraphId": "yuqia-ji:L3921-L3921",
+          "sourceQuote": "是農晚閉",
+          "issue": "释文开头晚间不忠实，虽后引农晚闭仍含静默改字。",
+          "requestedChange": "首句写农忙、农早忙与原文“农晚闭”三类；仍draft。"
+        }
+      ],
+      "scope": "仅电子源文语义、条件、归属及关联；非影印校勘或占验验证",
+      "reviewCounts": {
+        "source-reviewed": 168,
+        "draft": 182
+      },
+      "priorDecision": "REJECT",
+      "finalCandidateSha256": "2cd25599f7cbf58da02865f46bcbe67a7c0cdc53276404c47cef75ed0a41a57d",
+      "finalDelta": "已对完整原段复验153/L3710无雨雪恢复为占断，231/L3921首句保留农晚闭疑字；两处阻断已解决。",
+      "unresolvedFindings": [],
+      "projectMutated": false
+    },
+    {
+      "judge": "B",
+      "verdict": "ACCEPT",
+      "candidateFile": "/tmp/yuqia-next350c-candidates.json",
+      "candidateSha256": "2cd25599f7cbf58da02865f46bcbe67a7c0cdc53276404c47cef75ed0a41a57d",
+      "count": 350,
+      "reviewCounts": {
+        "draft": 182,
+        "source-reviewed": 168
+      },
+      "scope": "全350条完整原段、释义及所附上下文逐条阅读；另独立加载库存核源文本、行号、paragraphId及关联ID，检查未覆盖间隔标题。仅电子原文释义审核，不证明古代占验或影印原字。",
+      "checks": {
+        "fullSourceAndVernacularRead": 350,
+        "sourceSliceAndInventoryChecks": 350,
+        "sourceMismatchCount": 0,
+        "missingRelatedIds": 0
+      },
+      "findings": [],
+      "specificChecks": [
+        "L3501承母仓季节条，未将巳午泛用于全年。",
+        "L3848戊遇与L3850无雨之异文以及L3852作者评语分开保留。",
+        "L3941火与水头髻描述相同按原字保留，不按期待改。",
+        "L3979戊东南按原文保留。",
+        "春牛年干年支年纳音与日干日支日纳音的部位区分；芒神日支衣料与年支年龄区分。",
+        "日时占表逐条核左右、时支、条件和否定；疑字未暗改。",
+        "65条前置书题目录保持draft，182条draft不伪报已完成释读。"
+      ],
+      "entries": [
+        {
+          "paragraphId": "yuqia-ji:L0003-L0010",
+          "verdict": "ACCEPT",
+          "review": "draft",
+          "sourceExact": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L0012-L0014",
+          "verdict": "ACCEPT",
+          "review": "draft",
+          "sourceExact": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L0018-L0018",
+          "verdict": "ACCEPT",
+          "review": "draft",
+          "sourceExact": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L0020-L0020",
+          "verdict": "ACCEPT",
+          "review": "draft",
+          "sourceExact": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L0022-L0022",
+          "verdict": "ACCEPT",
+          "review": "draft",
+          "sourceExact": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L0024-L0024",
+          "verdict": "ACCEPT",
+          "review": "draft",
+          "sourceExact": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L0026-L0026",
+          "verdict": "ACCEPT",
+          "review": "draft",
+          "sourceExact": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L0028-L0028",
+          "verdict": "ACCEPT",
+          "review": "draft",
+          "sourceExact": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L0030-L0030",
+          "verdict": "ACCEPT",
+          "review": "draft",
+          "sourceExact": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L0032-L0032",
+          "verdict": "ACCEPT",
+          "review": "draft",
+          "sourceExact": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L0034-L0034",
+          "verdict": "ACCEPT",
+          "review": "draft",
+          "sourceExact": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L0036-L0036",
+          "verdict": "ACCEPT",
+          "review": "draft",
+          "sourceExact": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L0038-L0038",
+          "verdict": "ACCEPT",
+          "review": "draft",
+          "sourceExact": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L0040-L0040",
+          "verdict": "ACCEPT",
+          "review": "draft",
+          "sourceExact": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L0042-L0042",
+          "verdict": "ACCEPT",
+          "review": "draft",
+          "sourceExact": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L0044-L0044",
+          "verdict": "ACCEPT",
+          "review": "draft",
+          "sourceExact": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L0046-L0046",
+          "verdict": "ACCEPT",
+          "review": "draft",
+          "sourceExact": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L0048-L0048",
+          "verdict": "ACCEPT",
+          "review": "draft",
+          "sourceExact": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L0050-L0050",
+          "verdict": "ACCEPT",
+          "review": "draft",
+          "sourceExact": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L0052-L0052",
+          "verdict": "ACCEPT",
+          "review": "draft",
+          "sourceExact": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L0054-L0054",
+          "verdict": "ACCEPT",
+          "review": "draft",
+          "sourceExact": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L0056-L0056",
+          "verdict": "ACCEPT",
+          "review": "draft",
+          "sourceExact": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L0058-L0058",
+          "verdict": "ACCEPT",
+          "review": "draft",
+          "sourceExact": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L0060-L0060",
+          "verdict": "ACCEPT",
+          "review": "draft",
+          "sourceExact": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L0062-L0062",
+          "verdict": "ACCEPT",
+          "review": "draft",
+          "sourceExact": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L0064-L0064",
+          "verdict": "ACCEPT",
+          "review": "draft",
+          "sourceExact": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L0066-L0066",
+          "verdict": "ACCEPT",
+          "review": "draft",
+          "sourceExact": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L0068-L0068",
+          "verdict": "ACCEPT",
+          "review": "draft",
+          "sourceExact": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L0070-L0070",
+          "verdict": "ACCEPT",
+          "review": "draft",
+          "sourceExact": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L0072-L0072",
+          "verdict": "ACCEPT",
+          "review": "draft",
+          "sourceExact": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L0074-L0074",
+          "verdict": "ACCEPT",
+          "review": "draft",
+          "sourceExact": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L0076-L0076",
+          "verdict": "ACCEPT",
+          "review": "draft",
+          "sourceExact": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L0078-L0078",
+          "verdict": "ACCEPT",
+          "review": "draft",
+          "sourceExact": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L0080-L0080",
+          "verdict": "ACCEPT",
+          "review": "draft",
+          "sourceExact": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L0082-L0082",
+          "verdict": "ACCEPT",
+          "review": "draft",
+          "sourceExact": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L0084-L0084",
+          "verdict": "ACCEPT",
+          "review": "draft",
+          "sourceExact": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L0086-L0086",
+          "verdict": "ACCEPT",
+          "review": "draft",
+          "sourceExact": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L0088-L0088",
+          "verdict": "ACCEPT",
+          "review": "draft",
+          "sourceExact": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L0090-L0090",
+          "verdict": "ACCEPT",
+          "review": "draft",
+          "sourceExact": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L0092-L0092",
+          "verdict": "ACCEPT",
+          "review": "draft",
+          "sourceExact": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L0094-L0094",
+          "verdict": "ACCEPT",
+          "review": "draft",
+          "sourceExact": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L0096-L0096",
+          "verdict": "ACCEPT",
+          "review": "draft",
+          "sourceExact": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L0098-L0098",
+          "verdict": "ACCEPT",
+          "review": "draft",
+          "sourceExact": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L0100-L0100",
+          "verdict": "ACCEPT",
+          "review": "draft",
+          "sourceExact": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L0102-L0102",
+          "verdict": "ACCEPT",
+          "review": "draft",
+          "sourceExact": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L0104-L0104",
+          "verdict": "ACCEPT",
+          "review": "draft",
+          "sourceExact": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L0106-L0106",
+          "verdict": "ACCEPT",
+          "review": "draft",
+          "sourceExact": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L0108-L0108",
+          "verdict": "ACCEPT",
+          "review": "draft",
+          "sourceExact": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L0110-L0110",
+          "verdict": "ACCEPT",
+          "review": "draft",
+          "sourceExact": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L0112-L0112",
+          "verdict": "ACCEPT",
+          "review": "draft",
+          "sourceExact": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L0114-L0114",
+          "verdict": "ACCEPT",
+          "review": "draft",
+          "sourceExact": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L0116-L0116",
+          "verdict": "ACCEPT",
+          "review": "draft",
+          "sourceExact": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L0118-L0118",
+          "verdict": "ACCEPT",
+          "review": "draft",
+          "sourceExact": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L0120-L0120",
+          "verdict": "ACCEPT",
+          "review": "draft",
+          "sourceExact": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L0122-L0122",
+          "verdict": "ACCEPT",
+          "review": "draft",
+          "sourceExact": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L0124-L0124",
+          "verdict": "ACCEPT",
+          "review": "draft",
+          "sourceExact": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L0126-L0126",
+          "verdict": "ACCEPT",
+          "review": "draft",
+          "sourceExact": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L0128-L0128",
+          "verdict": "ACCEPT",
+          "review": "draft",
+          "sourceExact": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L0130-L0130",
+          "verdict": "ACCEPT",
+          "review": "draft",
+          "sourceExact": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L0132-L0132",
+          "verdict": "ACCEPT",
+          "review": "draft",
+          "sourceExact": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L0134-L0134",
+          "verdict": "ACCEPT",
+          "review": "draft",
+          "sourceExact": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L0136-L0136",
+          "verdict": "ACCEPT",
+          "review": "draft",
+          "sourceExact": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L0138-L0138",
+          "verdict": "ACCEPT",
+          "review": "draft",
+          "sourceExact": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L0140-L0140",
+          "verdict": "ACCEPT",
+          "review": "draft",
+          "sourceExact": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L0142-L0142",
+          "verdict": "ACCEPT",
+          "review": "draft",
+          "sourceExact": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L3501-L3501",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "sourceExact": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L3505-L3505",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "sourceExact": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L3507-L3507",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "sourceExact": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L3509-L3509",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "sourceExact": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L3511-L3511",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "sourceExact": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L3513-L3513",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "sourceExact": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L3515-L3515",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "sourceExact": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L3517-L3517",
+          "verdict": "ACCEPT",
+          "review": "draft",
+          "sourceExact": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L3519-L3519",
+          "verdict": "ACCEPT",
+          "review": "draft",
+          "sourceExact": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L3521-L3521",
+          "verdict": "ACCEPT",
+          "review": "draft",
+          "sourceExact": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L3523-L3523",
+          "verdict": "ACCEPT",
+          "review": "draft",
+          "sourceExact": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L3525-L3525",
+          "verdict": "ACCEPT",
+          "review": "draft",
+          "sourceExact": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L3529-L3529",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "sourceExact": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L3531-L3531",
+          "verdict": "ACCEPT",
+          "review": "draft",
+          "sourceExact": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L3533-L3533",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "sourceExact": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L3535-L3535",
+          "verdict": "ACCEPT",
+          "review": "draft",
+          "sourceExact": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L3537-L3537",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "sourceExact": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L3539-L3539",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "sourceExact": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L3541-L3541",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "sourceExact": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L3543-L3543",
+          "verdict": "ACCEPT",
+          "review": "draft",
+          "sourceExact": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L3547-L3547",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "sourceExact": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L3549-L3549",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "sourceExact": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L3553-L3553",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "sourceExact": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L3555-L3555",
+          "verdict": "ACCEPT",
+          "review": "draft",
+          "sourceExact": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L3557-L3557",
+          "verdict": "ACCEPT",
+          "review": "draft",
+          "sourceExact": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L3559-L3564",
+          "verdict": "ACCEPT",
+          "review": "draft",
+          "sourceExact": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L3568-L3568",
+          "verdict": "ACCEPT",
+          "review": "draft",
+          "sourceExact": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L3570-L3570",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "sourceExact": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L3572-L3572",
+          "verdict": "ACCEPT",
+          "review": "draft",
+          "sourceExact": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L3574-L3574",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "sourceExact": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L3576-L3576",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "sourceExact": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L3578-L3578",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "sourceExact": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L3580-L3580",
+          "verdict": "ACCEPT",
+          "review": "draft",
+          "sourceExact": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L3582-L3582",
+          "verdict": "ACCEPT",
+          "review": "draft",
+          "sourceExact": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L3584-L3584",
+          "verdict": "ACCEPT",
+          "review": "draft",
+          "sourceExact": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L3586-L3586",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "sourceExact": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L3588-L3588",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "sourceExact": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L3590-L3590",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "sourceExact": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L3592-L3592",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "sourceExact": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L3594-L3594",
+          "verdict": "ACCEPT",
+          "review": "draft",
+          "sourceExact": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L3596-L3596",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "sourceExact": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L3598-L3598",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "sourceExact": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L3600-L3600",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "sourceExact": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L3602-L3602",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "sourceExact": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L3604-L3604",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "sourceExact": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L3606-L3606",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "sourceExact": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L3608-L3608",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "sourceExact": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L3610-L3610",
+          "verdict": "ACCEPT",
+          "review": "draft",
+          "sourceExact": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L3612-L3612",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "sourceExact": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L3614-L3614",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "sourceExact": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L3618-L3618",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "sourceExact": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L3620-L3620",
+          "verdict": "ACCEPT",
+          "review": "draft",
+          "sourceExact": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L3622-L3622",
+          "verdict": "ACCEPT",
+          "review": "draft",
+          "sourceExact": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L3624-L3624",
+          "verdict": "ACCEPT",
+          "review": "draft",
+          "sourceExact": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L3626-L3626",
+          "verdict": "ACCEPT",
+          "review": "draft",
+          "sourceExact": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L3628-L3628",
+          "verdict": "ACCEPT",
+          "review": "draft",
+          "sourceExact": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L3630-L3630",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "sourceExact": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L3634-L3634",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "sourceExact": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L3636-L3636",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "sourceExact": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L3638-L3638",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "sourceExact": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L3640-L3640",
+          "verdict": "ACCEPT",
+          "review": "draft",
+          "sourceExact": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L3642-L3642",
+          "verdict": "ACCEPT",
+          "review": "draft",
+          "sourceExact": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L3646-L3646",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "sourceExact": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L3648-L3648",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "sourceExact": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L3652-L3652",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "sourceExact": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L3654-L3654",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "sourceExact": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L3656-L3656",
+          "verdict": "ACCEPT",
+          "review": "draft",
+          "sourceExact": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L3658-L3658",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "sourceExact": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L3662-L3662",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "sourceExact": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L3664-L3664",
+          "verdict": "ACCEPT",
+          "review": "draft",
+          "sourceExact": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L3668-L3668",
+          "verdict": "ACCEPT",
+          "review": "draft",
+          "sourceExact": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L3672-L3672",
+          "verdict": "ACCEPT",
+          "review": "draft",
+          "sourceExact": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L3674-L3674",
+          "verdict": "ACCEPT",
+          "review": "draft",
+          "sourceExact": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L3676-L3676",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "sourceExact": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L3678-L3678",
+          "verdict": "ACCEPT",
+          "review": "draft",
+          "sourceExact": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L3680-L3680",
+          "verdict": "ACCEPT",
+          "review": "draft",
+          "sourceExact": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L3682-L3682",
+          "verdict": "ACCEPT",
+          "review": "draft",
+          "sourceExact": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L3684-L3684",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "sourceExact": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L3688-L3688",
+          "verdict": "ACCEPT",
+          "review": "draft",
+          "sourceExact": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L3690-L3690",
+          "verdict": "ACCEPT",
+          "review": "draft",
+          "sourceExact": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L3692-L3692",
+          "verdict": "ACCEPT",
+          "review": "draft",
+          "sourceExact": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L3694-L3694",
+          "verdict": "ACCEPT",
+          "review": "draft",
+          "sourceExact": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L3698-L3698",
+          "verdict": "ACCEPT",
+          "review": "draft",
+          "sourceExact": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L3700-L3700",
+          "verdict": "ACCEPT",
+          "review": "draft",
+          "sourceExact": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L3702-L3702",
+          "verdict": "ACCEPT",
+          "review": "draft",
+          "sourceExact": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L3704-L3704",
+          "verdict": "ACCEPT",
+          "review": "draft",
+          "sourceExact": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L3708-L3708",
+          "verdict": "ACCEPT",
+          "review": "draft",
+          "sourceExact": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L3710-L3710",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "sourceExact": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L3712-L3712",
+          "verdict": "ACCEPT",
+          "review": "draft",
+          "sourceExact": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L3714-L3734",
+          "verdict": "ACCEPT",
+          "review": "draft",
+          "sourceExact": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L3738-L3738",
+          "verdict": "ACCEPT",
+          "review": "draft",
+          "sourceExact": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L3740-L3740",
+          "verdict": "ACCEPT",
+          "review": "draft",
+          "sourceExact": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L3742-L3742",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "sourceExact": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L3744-L3744",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "sourceExact": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L3746-L3746",
+          "verdict": "ACCEPT",
+          "review": "draft",
+          "sourceExact": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L3748-L3748",
+          "verdict": "ACCEPT",
+          "review": "draft",
+          "sourceExact": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L3750-L3750",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "sourceExact": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L3752-L3752",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "sourceExact": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L3754-L3754",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "sourceExact": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L3756-L3756",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "sourceExact": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L3758-L3758",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "sourceExact": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L3760-L3760",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "sourceExact": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L3762-L3762",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "sourceExact": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L3764-L3764",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "sourceExact": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L3766-L3766",
+          "verdict": "ACCEPT",
+          "review": "draft",
+          "sourceExact": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L3768-L3768",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "sourceExact": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L3770-L3770",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "sourceExact": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L3772-L3772",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "sourceExact": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L3774-L3774",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "sourceExact": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L3776-L3776",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "sourceExact": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L3780-L3780",
+          "verdict": "ACCEPT",
+          "review": "draft",
+          "sourceExact": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L3784-L3784",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "sourceExact": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L3786-L3786",
+          "verdict": "ACCEPT",
+          "review": "draft",
+          "sourceExact": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L3788-L3788",
+          "verdict": "ACCEPT",
+          "review": "draft",
+          "sourceExact": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L3790-L3790",
+          "verdict": "ACCEPT",
+          "review": "draft",
+          "sourceExact": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L3792-L3792",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "sourceExact": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L3794-L3794",
+          "verdict": "ACCEPT",
+          "review": "draft",
+          "sourceExact": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L3796-L3796",
+          "verdict": "ACCEPT",
+          "review": "draft",
+          "sourceExact": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L3798-L3798",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "sourceExact": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L3802-L3802",
+          "verdict": "ACCEPT",
+          "review": "draft",
+          "sourceExact": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L3804-L3804",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "sourceExact": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L3806-L3806",
+          "verdict": "ACCEPT",
+          "review": "draft",
+          "sourceExact": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L3808-L3808",
+          "verdict": "ACCEPT",
+          "review": "draft",
+          "sourceExact": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L3810-L3810",
+          "verdict": "ACCEPT",
+          "review": "draft",
+          "sourceExact": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L3812-L3812",
+          "verdict": "ACCEPT",
+          "review": "draft",
+          "sourceExact": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L3814-L3814",
+          "verdict": "ACCEPT",
+          "review": "draft",
+          "sourceExact": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L3816-L3816",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "sourceExact": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L3820-L3820",
+          "verdict": "ACCEPT",
+          "review": "draft",
+          "sourceExact": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L3822-L3822",
+          "verdict": "ACCEPT",
+          "review": "draft",
+          "sourceExact": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L3824-L3824",
+          "verdict": "ACCEPT",
+          "review": "draft",
+          "sourceExact": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L3826-L3826",
+          "verdict": "ACCEPT",
+          "review": "draft",
+          "sourceExact": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L3828-L3828",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "sourceExact": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L3832-L3832",
+          "verdict": "ACCEPT",
+          "review": "draft",
+          "sourceExact": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L3836-L3836",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "sourceExact": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L3838-L3838",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "sourceExact": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L3842-L3842",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "sourceExact": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L3844-L3844",
+          "verdict": "ACCEPT",
+          "review": "draft",
+          "sourceExact": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L3846-L3846",
+          "verdict": "ACCEPT",
+          "review": "draft",
+          "sourceExact": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L3848-L3848",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "sourceExact": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L3850-L3850",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "sourceExact": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L3852-L3852",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "sourceExact": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L3854-L3854",
+          "verdict": "ACCEPT",
+          "review": "draft",
+          "sourceExact": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L3856-L3856",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "sourceExact": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L3858-L3858",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "sourceExact": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L3860-L3860",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "sourceExact": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L3862-L3862",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "sourceExact": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L3864-L3864",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "sourceExact": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L3868-L3875",
+          "verdict": "ACCEPT",
+          "review": "draft",
+          "sourceExact": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L3877-L3877",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "sourceExact": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L3881-L3881",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "sourceExact": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L3883-L3883",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "sourceExact": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L3885-L3885",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "sourceExact": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L3889-L3889",
+          "verdict": "ACCEPT",
+          "review": "draft",
+          "sourceExact": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L3891-L3891",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "sourceExact": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L3893-L3893",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "sourceExact": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L3895-L3895",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "sourceExact": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L3897-L3897",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "sourceExact": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L3899-L3899",
+          "verdict": "ACCEPT",
+          "review": "draft",
+          "sourceExact": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L3901-L3901",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "sourceExact": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L3903-L3903",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "sourceExact": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L3905-L3905",
+          "verdict": "ACCEPT",
+          "review": "draft",
+          "sourceExact": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L3907-L3907",
+          "verdict": "ACCEPT",
+          "review": "draft",
+          "sourceExact": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L3911-L3911",
+          "verdict": "ACCEPT",
+          "review": "draft",
+          "sourceExact": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L3913-L3913",
+          "verdict": "ACCEPT",
+          "review": "draft",
+          "sourceExact": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L3917-L3917",
+          "verdict": "ACCEPT",
+          "review": "draft",
+          "sourceExact": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L3921-L3921",
+          "verdict": "ACCEPT",
+          "review": "draft",
+          "sourceExact": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L3923-L3923",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "sourceExact": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L3925-L3925",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "sourceExact": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L3929-L3929",
+          "verdict": "ACCEPT",
+          "review": "draft",
+          "sourceExact": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L3933-L3933",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "sourceExact": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L3935-L3935",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "sourceExact": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L3937-L3937",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "sourceExact": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L3939-L3939",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "sourceExact": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L3941-L3941",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "sourceExact": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L3943-L3943",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "sourceExact": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L3947-L3947",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "sourceExact": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L3949-L3949",
+          "verdict": "ACCEPT",
+          "review": "draft",
+          "sourceExact": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L3951-L3951",
+          "verdict": "ACCEPT",
+          "review": "draft",
+          "sourceExact": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L3953-L3953",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "sourceExact": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L3955-L3955",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "sourceExact": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L3957-L3957",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "sourceExact": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L3961-L3961",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "sourceExact": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L3963-L3963",
+          "verdict": "ACCEPT",
+          "review": "draft",
+          "sourceExact": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L3965-L3965",
+          "verdict": "ACCEPT",
+          "review": "draft",
+          "sourceExact": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L3967-L3967",
+          "verdict": "ACCEPT",
+          "review": "draft",
+          "sourceExact": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L3969-L3969",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "sourceExact": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L3971-L3971",
+          "verdict": "ACCEPT",
+          "review": "draft",
+          "sourceExact": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L3975-L3975",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "sourceExact": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L3977-L3977",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "sourceExact": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L3979-L3980",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "sourceExact": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L3984-L3984",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "sourceExact": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L3986-L3986",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "sourceExact": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L3988-L3988",
+          "verdict": "ACCEPT",
+          "review": "draft",
+          "sourceExact": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L3990-L3990",
+          "verdict": "ACCEPT",
+          "review": "draft",
+          "sourceExact": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L3992-L3992",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "sourceExact": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L3994-L3994",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "sourceExact": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L3998-L3998",
+          "verdict": "ACCEPT",
+          "review": "draft",
+          "sourceExact": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L4000-L4000",
+          "verdict": "ACCEPT",
+          "review": "draft",
+          "sourceExact": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L4002-L4002",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "sourceExact": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L4004-L4004",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "sourceExact": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L4006-L4006",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "sourceExact": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L4008-L4008",
+          "verdict": "ACCEPT",
+          "review": "draft",
+          "sourceExact": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L4012-L4012",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "sourceExact": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L4014-L4014",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "sourceExact": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L4016-L4016",
+          "verdict": "ACCEPT",
+          "review": "draft",
+          "sourceExact": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L4018-L4018",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "sourceExact": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L4020-L4020",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "sourceExact": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L4022-L4022",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "sourceExact": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L4026-L4026",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "sourceExact": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L4028-L4028",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "sourceExact": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L4030-L4030",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "sourceExact": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L4032-L4032",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "sourceExact": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L4034-L4034",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "sourceExact": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L4036-L4036",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "sourceExact": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L4040-L4040",
+          "verdict": "ACCEPT",
+          "review": "draft",
+          "sourceExact": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L4042-L4042",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "sourceExact": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L4044-L4044",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "sourceExact": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L4046-L4046",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "sourceExact": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L4048-L4048",
+          "verdict": "ACCEPT",
+          "review": "draft",
+          "sourceExact": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L4050-L4050",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "sourceExact": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L4054-L4054",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "sourceExact": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L4056-L4056",
+          "verdict": "ACCEPT",
+          "review": "draft",
+          "sourceExact": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L4058-L4058",
+          "verdict": "ACCEPT",
+          "review": "draft",
+          "sourceExact": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L4060-L4060",
+          "verdict": "ACCEPT",
+          "review": "draft",
+          "sourceExact": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L4062-L4062",
+          "verdict": "ACCEPT",
+          "review": "draft",
+          "sourceExact": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L4064-L4064",
+          "verdict": "ACCEPT",
+          "review": "draft",
+          "sourceExact": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L4068-L4068",
+          "verdict": "ACCEPT",
+          "review": "draft",
+          "sourceExact": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L4070-L4070",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "sourceExact": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L4072-L4072",
+          "verdict": "ACCEPT",
+          "review": "draft",
+          "sourceExact": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L4074-L4074",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "sourceExact": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L4076-L4076",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "sourceExact": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L4078-L4078",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "sourceExact": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L4082-L4082",
+          "verdict": "ACCEPT",
+          "review": "draft",
+          "sourceExact": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L4084-L4084",
+          "verdict": "ACCEPT",
+          "review": "draft",
+          "sourceExact": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L4086-L4086",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "sourceExact": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L4088-L4088",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "sourceExact": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L4090-L4090",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "sourceExact": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L4092-L4092",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "sourceExact": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L4096-L4096",
+          "verdict": "ACCEPT",
+          "review": "draft",
+          "sourceExact": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L4098-L4098",
+          "verdict": "ACCEPT",
+          "review": "draft",
+          "sourceExact": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L4100-L4100",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "sourceExact": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L4102-L4102",
+          "verdict": "ACCEPT",
+          "review": "draft",
+          "sourceExact": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L4104-L4104",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "sourceExact": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L4106-L4106",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "sourceExact": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L4110-L4110",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "sourceExact": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L4112-L4112",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "sourceExact": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L4114-L4114",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "sourceExact": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L4116-L4116",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "sourceExact": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L4118-L4118",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "sourceExact": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L4120-L4120",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "sourceExact": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L4124-L4124",
+          "verdict": "ACCEPT",
+          "review": "draft",
+          "sourceExact": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L4126-L4126",
+          "verdict": "ACCEPT",
+          "review": "draft",
+          "sourceExact": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L4128-L4128",
+          "verdict": "ACCEPT",
+          "review": "draft",
+          "sourceExact": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L4130-L4130",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "sourceExact": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L4132-L4132",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "sourceExact": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L4134-L4134",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "sourceExact": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L4138-L4138",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "sourceExact": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L4140-L4140",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "sourceExact": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L4142-L4142",
+          "verdict": "ACCEPT",
+          "review": "draft",
+          "sourceExact": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L4144-L4144",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "sourceExact": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L4146-L4146",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "sourceExact": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L4148-L4148",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "sourceExact": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L4152-L4152",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "sourceExact": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L4154-L4154",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "sourceExact": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L4156-L4156",
+          "verdict": "ACCEPT",
+          "review": "draft",
+          "sourceExact": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L4160-L4160",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "sourceExact": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L4162-L4162",
+          "verdict": "ACCEPT",
+          "review": "draft",
+          "sourceExact": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L4164-L4164",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "sourceExact": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L4166-L4166",
+          "verdict": "ACCEPT",
+          "review": "draft",
+          "sourceExact": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L4168-L4168",
+          "verdict": "ACCEPT",
+          "review": "draft",
+          "sourceExact": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L4170-L4170",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "sourceExact": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L4172-L4172",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "sourceExact": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L4174-L4174",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "sourceExact": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L4176-L4176",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "sourceExact": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L4178-L4178",
+          "verdict": "ACCEPT",
+          "review": "draft",
+          "sourceExact": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L4180-L4180",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "sourceExact": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L4182-L4182",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "sourceExact": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L4186-L4186",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "sourceExact": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L4188-L4193",
+          "verdict": "ACCEPT",
+          "review": "draft",
+          "sourceExact": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L4195-L4195",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "sourceExact": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L4197-L4197",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "sourceExact": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L4201-L4201",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "sourceExact": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L4203-L4203",
+          "verdict": "ACCEPT",
+          "review": "draft",
+          "sourceExact": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L4207-L4207",
+          "verdict": "ACCEPT",
+          "review": "source-reviewed",
+          "sourceExact": true
+        },
+        {
+          "paragraphId": "yuqia-ji:L4209-L4209",
+          "verdict": "ACCEPT",
+          "review": "draft",
+          "sourceExact": true
+        }
+      ],
+      "finalDelta": {
+        "indices": [
+          152,
+          230
+        ],
+        "result": "ACCEPT",
+        "detail": "152立冬属火为条件，无雨雪为原书所占结果，已纠正逻辑层次；230农晚闭保留原文，不再译晚间。前次B未指出这两处，采纳A发现后按最新文本复核，其他348条原审核结论维持。"
+      }
+    }
+  ]
+}
