@@ -1,0 +1,28 @@
+{
+  "batch": "t57-bushi-hy0057-150",
+  "scope": "First 150 unannotated shidian HY0057 paragraphs; website juan != print juan; not liuyao algorithm coverage",
+  "candidateSha256": "3a89eed849c453341017681df935ec8d7c3999618233cde1b08397f01a77e1c5",
+  "evidenceSha256": "abf372056141623792858c9a18ae6c99a5d14fb72cf7c4f33b7df3d709d7fc20",
+  "previousCandidateSha256": "ef4a62e4e83cafd657bd94f907ec16f07b746e78f12dff7bf43a871c22e6abf6",
+  "rootReview": "Author draft all proposed draft; independent B NEEDS_REVISION on 代占 inversion / 甲巳 / 已卯 / 卷之三十八; B2 ACCEPT. 0 source-reviewed / 150 draft.",
+  "reviewCounts": {
+    "source-reviewed": 0,
+    "draft": 150
+  },
+  "judges": [
+    {
+      "judge": "B",
+      "verdict": "NEEDS_REVISION",
+      "findings": ["F1", "F2", "F3", "F4"]
+    },
+    {
+      "judge": "B2",
+      "verdict": "ACCEPT",
+      "candidateSha256": "3a89eed849c453341017681df935ec8d7c3999618233cde1b08397f01a77e1c5",
+      "completeParagraphsRead": 150,
+      "previousFindingsClosed": ["F1", "F2", "F3", "F4"],
+      "findings": []
+    }
+  ],
+  "notBookCompletion": true
+}
