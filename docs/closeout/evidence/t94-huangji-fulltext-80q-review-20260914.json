@@ -1,0 +1,21 @@
+{
+  "batch": "t94-huangji-fulltext-80q",
+  "scope": "Seventeenth 80 unannotated fulltext.md paragraphs L24111-L24504 Warring States sticky chronicle; not SK1573, not algorithm",
+  "candidateSha256": "bc4618379f39519e2301dd7b9c9e047677aec99dce07511946f57a730a431b04",
+  "evidenceSha256": "ae0e9b83f0a878a653518cf9d0d939b433f45e103af845a21b7abb9f9f793201",
+  "rootReview": "Author draft; independent B ACCEPT. 9 source-reviewed short year-pairs / 71 draft sticky tables and residual glyphs.",
+  "reviewCounts": {
+    "source-reviewed": 9,
+    "draft": 71
+  },
+  "judges": [
+    {
+      "judge": "B",
+      "verdict": "ACCEPT",
+      "candidateSha256": "bc4618379f39519e2301dd7b9c9e047677aec99dce07511946f57a730a431b04",
+      "completeParagraphsRead": 80,
+      "findings": []
+    }
+  ],
+  "notBookCompletion": true
+}
