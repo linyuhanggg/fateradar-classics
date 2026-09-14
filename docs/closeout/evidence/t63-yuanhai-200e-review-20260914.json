@@ -1,0 +1,21 @@
+{
+  "batch": "t63-yuanhai-200e",
+  "scope": "Yuanhai L7293-8284 after 350d; not book completion or algorithm coverage",
+  "candidateSha256": "f4c846518641c2c93271e692dd5343d00a433f73d61771ffcd0b4ddb1d31f1dd",
+  "evidenceSha256": "398bc133aad043c0e465c6eac4241498c68790ec333fd56e1ba33004fc664f81",
+  "rootReview": "Author draft; independent B ACCEPT. 53 source-reviewed / 147 draft.",
+  "reviewCounts": {
+    "source-reviewed": 53,
+    "draft": 147
+  },
+  "judges": [
+    {
+      "judge": "B",
+      "verdict": "ACCEPT",
+      "candidateSha256": "f4c846518641c2c93271e692dd5343d00a433f73d61771ffcd0b4ddb1d31f1dd",
+      "completeParagraphsRead": 200,
+      "findings": []
+    }
+  ],
+  "notBookCompletion": true
+}
