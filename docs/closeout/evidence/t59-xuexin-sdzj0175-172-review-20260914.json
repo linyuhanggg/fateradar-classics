@@ -1,0 +1,32 @@
+{
+  "batch": "t59-xuexin-sdzj0175-172",
+  "scope": "172 recovered shidian SDZJ0175 paragraphs; catalogComplete for this dump; not facsimile or fengshui efficacy",
+  "candidateSha256": "18700f3acecc685060cb9560e51620d877e94fcb7825d23be8d4a67fccfa80fe",
+  "evidenceSha256": "59e2d6f3b90bcecddd07ea901fd78aa20ef8269acceeca59739388c861dd96a4",
+  "previousCandidateSha256": "9887c9215c944f10cf567d6bc5b81c897859eb29594edae832b1ddeeea112dfc",
+  "rootReview": "Author draft; independent B NEEDS_REVISION 13 findings; B2 ACCEPT. 65 source-reviewed / 107 draft.",
+  "reviewCounts": {
+    "source-reviewed": 65,
+    "draft": 107
+  },
+  "sourceAfterImport": {
+    "paragraphCount": 498,
+    "catalogComplete": true
+  },
+  "judges": [
+    {
+      "judge": "B",
+      "verdict": "NEEDS_REVISION",
+      "findings": ["F1", "F2", "F3", "F4", "F5", "F6", "F7", "F8", "F9", "F10", "F11", "F12", "F13"]
+    },
+    {
+      "judge": "B2",
+      "verdict": "ACCEPT",
+      "candidateSha256": "18700f3acecc685060cb9560e51620d877e94fcb7825d23be8d4a67fccfa80fe",
+      "completeParagraphsRead": 172,
+      "previousFindingsClosed": ["F1", "F2", "F3", "F4", "F5", "F6", "F7", "F8", "F9", "F10", "F11", "F12", "F13"],
+      "findings": []
+    }
+  ],
+  "notBookCompletion": true
+}
