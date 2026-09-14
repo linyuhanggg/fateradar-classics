@@ -1,0 +1,28 @@
+{
+  "batch": "t64-huangji-fulltext-80",
+  "scope": "First 80 unannotated fulltext.md paragraphs; not SK1573 missing chapters, not algorithm coverage",
+  "candidateSha256": "95db1e97a3aad8485c2b3f309ffa42e6cd4377c9dd128124835a7ec3266ea49a",
+  "evidenceSha256": "d08b1d600b9e36e45956d892379fa471fbda5deacce2f24a156de0fc23402416",
+  "previousCandidateSha256": "0877d00559048091dfd4710f7c0cd22d0d4eb24d010f5f50eae4b27342613716",
+  "rootReview": "Author draft; independent B NEEDS_REVISION on 天命之位 split and 蚡冐; B2 ACCEPT. 54 source-reviewed / 26 draft.",
+  "reviewCounts": {
+    "source-reviewed": 54,
+    "draft": 26
+  },
+  "judges": [
+    {
+      "judge": "B",
+      "verdict": "NEEDS_REVISION",
+      "findings": ["F1", "F2"]
+    },
+    {
+      "judge": "B2",
+      "verdict": "ACCEPT",
+      "candidateSha256": "95db1e97a3aad8485c2b3f309ffa42e6cd4377c9dd128124835a7ec3266ea49a",
+      "completeParagraphsRead": 80,
+      "previousFindingsClosed": ["F1", "F2"],
+      "findings": []
+    }
+  ],
+  "notBookCompletion": true
+}
