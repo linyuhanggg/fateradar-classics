@@ -1,0 +1,21 @@
+{
+  "batch": "t104-huangji-fulltext-80s",
+  "scope": "Nineteenth 80 unannotated fulltext.md paragraphs L24906-L25254 Western Han to Eastern Han; not SK1573, not algorithm",
+  "candidateSha256": "7aae989f05addcc4e363643390ec149b300bf15a531657016cd306dba12978d0",
+  "evidenceSha256": "439e0cce36e90d1d8c4587e5a8d88cac57008103f1082708d28cd1c6ca35d54a",
+  "rootReview": "Author draft; independent B2 ACCEPT after F1 經世之已 demotion and F2 东海王 reading. 31 source-reviewed / 49 draft.",
+  "reviewCounts": {
+    "source-reviewed": 31,
+    "draft": 49
+  },
+  "judges": [
+    {
+      "judge": "B2",
+      "verdict": "ACCEPT",
+      "candidateSha256": "7aae989f05addcc4e363643390ec149b300bf15a531657016cd306dba12978d0",
+      "completeParagraphsRead": 80,
+      "findings": []
+    }
+  ],
+  "notBookCompletion": true
+}
