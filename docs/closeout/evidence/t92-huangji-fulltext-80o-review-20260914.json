@@ -1,0 +1,21 @@
+{
+  "batch": "t92-huangji-fulltext-80o",
+  "scope": "Fifteenth 80 unannotated fulltext.md paragraphs L23348-L23687 Gonghe to Qi Huan; not SK1573, not algorithm",
+  "candidateSha256": "575357933892ff947a54498e9ee06449446fd8bbca3324ca581c1135d5e5b1e3",
+  "evidenceSha256": "e8c2f1e8bedafc7f63f2d213bf5940742cd0019bad618a395cee68322f77c2dd",
+  "rootReview": "Author draft; independent B NEEDS_REVISION F1-F5 then B2 ACCEPT. 49 source-reviewed chronicle labels / 31 draft residual glyphs and sticky tables.",
+  "reviewCounts": {
+    "source-reviewed": 49,
+    "draft": 31
+  },
+  "judges": [
+    {
+      "judge": "B2",
+      "verdict": "ACCEPT",
+      "candidateSha256": "575357933892ff947a54498e9ee06449446fd8bbca3324ca581c1135d5e5b1e3",
+      "completeParagraphsRead": 80,
+      "findings": []
+    }
+  ],
+  "notBookCompletion": true
+}
