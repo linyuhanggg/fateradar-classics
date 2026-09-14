@@ -93366,7 +93366,7 @@
     },
     {
       "kind": "规则候选",
-      "vernacular": "急密发兵从急神：私门在卯下用机。旺方、克玄武之方不可去，须向天罡与太阴。末句以逗号收束，方位细则见下段，不据残读补步。",
+      "vernacular": "本歌论紧急出兵，提卯下私门，并说「旺与克玄方莫去，须向天罡与太阴」。下一段释六合为私门、太冲为卯，另列旺方、克我之方及玄武所在方不可往。歌句克玄与注句列举不完全相同，保留两处字面，不能合成为确定禁方步骤。歌、注末均为逗号，再后已转新题，不能凭邻段断定全部补齐。",
       "terms": [
         "急神",
         "私门",
@@ -93375,17 +93375,15 @@
         "太阴"
       ],
       "notes": [
-        "旺与克玄方莫去",
-        "须向天罡与太阴",
-        "歌末逗号残读不补",
-        "不改九宗门",
-        "t2 校核：已查 sources/normalized/shidianguji/SK1599、SDZJ0628、sources/fulltext/san-shi/liuren-miben 与 liuren-zhiyin 及本书内部平行段，未获唯一还原依据，保留 draft。",
-        "t23 第二批未决登记（2026-09-13）：缺什么证据＝本条自述未决标记 「残」、「不补」 所指的字面／残读（见既有 notes 逐条说明；本条无「」引文，以整行逐字比对为准（一致））。已尝试方法＝本条既有 t2 检索（识典 SK1599／SDZJ0628、liuren-miben、liuren-zhiyin 及本书内部平行段）＋本轮逐句比对（源行 7126-7126）。并列候选（不替原文择一）＝沿用既有 notes 所列两存／疑字，本轮不新增择一。**是否具备可实现的判据＝具备（条件骨架完整；落条前只需定下所列字面）**（判定方式＝逐句扫描本条自述：清晰条件句 1 条、带疑字／残读句 1 条；本条未进 references/executable，属「候选实现缺口（未立条）」，不是现有 22 条实现缺口之一）。产品处理＝保持 draft、不入 executable、不进算法、不猜字、不升 verified；解锁条件＝按本条所列字面证据（影印逐字或平行本）定字后再立条。",
-        "t29 电子续接核（2026-09-13）：本条电子源 sources/fulltext/san-shi/daliuren-daquan/fulltext.md:7126-7126 末作「急密发兵从急神，私门卯下用机深。旺与克玄方莫去，须向天罡与太阴，」。下一段 daliuren-daquan:L7128-L7128 起「占者用兵遣将，约战，此正体也。设未阵之先，猝有不虞，则速急发兵应之，当统兵向六合」。此为电子源分段造成的句读切断，不是缺图；已核邻段电子上下文，仍不据邻段改本条疑字或升 source-reviewed。影响＝不可单独作完整规则/断语。解锁＝影印句读或本段疑字唯一还原。"
+        "电子歌注关联已确认，字面分歧仍在，保持draft。不是等待后台任务；需原版对校禁方字句。"
       ],
       "review": "draft",
       "verified": false,
-      "paragraphId": "daliuren-daquan:L7126-L7126"
+      "paragraphId": "daliuren-daquan:L7126-L7126",
+      "relatedParagraphIds": [
+        "daliuren-daquan:L7124-L7124",
+        "daliuren-daquan:L7128-L7128"
+      ]
     },
     {
       "kind": "规则候选",
@@ -94321,21 +94319,21 @@
       "paragraphId": "daliuren-daquan:L7288-L7288"
     },
     {
-      "kind": "术语",
-      "vernacular": "「遣使入敌第三十六」是子目标目。同行夹注「或间谍，或讲盟好」只划范围，不给年日魁罡或传送入传步骤。尾逗号不补后文。",
+      "kind": "序跋目录",
+      "vernacular": "第三十六节「遣使入敌」的题目，夹注列间谍和讲盟好两类用途。具体判断从下一段遣使歌开始，此题目自身不提供术数规则。",
       "terms": [
         "遣使入敌第三十六"
       ],
       "notes": [
-        "标目夹注只划间谍/盟好范围",
-        "不得据标目发明取传",
-        "残读不补",
-        "t2 校核：已查 sources/normalized/shidianguji/SK1599、SDZJ0628、sources/fulltext/san-shi/liuren-miben 与 liuren-zhiyin 及本书内部平行段，未获唯一还原依据，保留 draft。",
-        "t24 未决登记（2026-09-13）：缺什么证据＝标目夹注「或间谍，或讲盟好，」尾逗号后是否夺文。已尝试方法＝对照下行遣使歌及既有 t2 核。无并列候选（不据标目发明取传）。产品处理＝保持 draft、不入 executable、不进算法、不升 verified；解锁条件＝影印标目完整。"
+        "原电子行保留末逗号，不由标目推补文字或生成取传步骤。",
+        "2026-09-14 按段落功能归入序跋目录；不把标题尾标点列作算法实现阻塞，原review=draft保留。"
       ],
       "review": "draft",
       "verified": false,
-      "paragraphId": "daliuren-daquan:L7290-L7290"
+      "paragraphId": "daliuren-daquan:L7290-L7290",
+      "relatedParagraphIds": [
+        "daliuren-daquan:L7292-L7292"
+      ]
     },
     {
       "kind": "规则候选",
