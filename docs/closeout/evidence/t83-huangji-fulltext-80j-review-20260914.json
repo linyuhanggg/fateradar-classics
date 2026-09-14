@@ -1,0 +1,21 @@
+{
+  "batch": "t83-huangji-fulltext-80j",
+  "scope": "Tenth 80 unannotated fulltext.md paragraphs L21735-L22053 Shang capital moves; not SK1573, not algorithm",
+  "candidateSha256": "f0c7846ef039eff419aede9e000e680b2d0b25c6f69f3aad3c49fe527cac1dc7",
+  "evidenceSha256": "d35cf4b4dd033f4e411e9fd02286cf3a5300d734c26cb8eb492ff298a864dcd8",
+  "rootReview": "Author draft; independent B ACCEPT. 75 source-reviewed chronicle labels / 5 draft residual glyphs and broken tables.",
+  "reviewCounts": {
+    "source-reviewed": 75,
+    "draft": 5
+  },
+  "judges": [
+    {
+      "judge": "B",
+      "verdict": "ACCEPT",
+      "candidateSha256": "f0c7846ef039eff419aede9e000e680b2d0b25c6f69f3aad3c49fe527cac1dc7",
+      "completeParagraphsRead": 80,
+      "findings": []
+    }
+  ],
+  "notBookCompletion": true
+}
