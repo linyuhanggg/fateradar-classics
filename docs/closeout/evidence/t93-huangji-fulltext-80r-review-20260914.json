@@ -1,0 +1,21 @@
+{
+  "batch": "t93-huangji-fulltext-80r",
+  "scope": "Eighteenth 80 unannotated fulltext.md paragraphs L24508-L24902 Warring States to Western Han; not SK1573, not algorithm",
+  "candidateSha256": "45d3161767d4ac0f1e263d68e254cb2e65997ef9735d82af15ed84de2f8e3046",
+  "evidenceSha256": "8cb6862f9b60c875670da75af6e458e506b8040b79ddb214006010d2fbf24c91",
+  "rootReview": "Author draft; independent B ACCEPT. 12 source-reviewed chronicle labels / 68 draft residual glyphs and sticky tables.",
+  "reviewCounts": {
+    "source-reviewed": 12,
+    "draft": 68
+  },
+  "judges": [
+    {
+      "judge": "B",
+      "verdict": "ACCEPT",
+      "candidateSha256": "45d3161767d4ac0f1e263d68e254cb2e65997ef9735d82af15ed84de2f8e3046",
+      "completeParagraphsRead": 80,
+      "findings": []
+    }
+  ],
+  "notBookCompletion": true
+}
