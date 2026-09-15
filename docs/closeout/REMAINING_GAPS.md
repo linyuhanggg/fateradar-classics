@@ -3,17 +3,17 @@
 日期：2026-09-15  
 旧稿 draft 2905、SHA `3191806`/`e083dcf` **不是当前进度**。`CLASSICS-SPECIAL-ACCEPTANCE-20260913.md` 仍列 62,907 注释，只是历史快照。
 
-本文件随提交记录 HEAD `40817a5fafdf5b5d0cd42be5d6747bc5baedabc1` 的重算：源段与注释 **86,237**；未注释、重复、悬空 ID 均 0；
-source-reviewed **73,557**；draft **12,680**。
+本文件随提交记录 HEAD `b7ffd9c97f0afee72d496ea3b332cbbd98e90dbd` 的重算：源段与注释 **86,347**；未注释、重复、悬空 ID 均 0；
+source-reviewed **73,660**；draft **12,687**。
 
 ## 必须保留为未完成
 
 | 项 | 数量/状态 | 为何不能标完成 |
 |---|---|---|
 | catalogComplete=false | **9** 个识典补充版本 | 缺章 JSON 已抓取并 staged，但新段注释与独立审核尚未全部合入。已网页取齐的 XYXZSBY、SDZJ0170、SK1588、SK1603、SK1615、SK1618 仍不是古本全帙。 |
-| draft | **12,680** | 逐条处置账已建（`DRAFT_DISPOSITION_LEDGER.json`，12,097 行全覆盖，每行带源 ID、证据路径与分类依据），**分类不是结案**。分类计数：verifiable_text 6,315、catalog_metadata 4,090、figure_or_lacuna 1,981、edition_variant 293、illegible 1。 |
+| draft | **12,687** | 逐条处置账已建（`DRAFT_DISPOSITION_LEDGER.json`，12,097 行全覆盖，每行带源 ID、证据路径与分类依据），**分类不是结案**。分类计数：verifiable_text 6,315、catalog_metadata 4,097、figure_or_lacuna 1,981、edition_variant 293、illegible 1。 |
 | 0803.djvu 己/巳 | **已定为版本异文** | 已实际读图 + 跨版本对照：本版（四庫 0803 册 / SK1573）作「己」，DZ1040 作「巳」。照录本版原字、异文并存，见 `evidence/t127-huangji-0803-jisi-variant.json`。字形本身仍不能独立裁定。 |
-| source-reviewed | 73,557 | 不等于影印精校。 |
+| source-reviewed | 73,660 | 不等于影印精校。 |
 | 产品 pin | 未改 | 古籍 main 合入不代表产品版本已更新。 |
 
 ## 缺章 staging 现状（机械步骤已完成，注释/审核未完成）
@@ -31,7 +31,7 @@ source-reviewed **73,557**；draft **12,680**。
 | 7533808921945833506 | 493 | 3,361 | 2,868 | 0 |
 | SDZJ0170 | 2,134 | 2,134 | 0 | 0 |
 | SK1573 | 670 | 2,571 | 1,901 | 0 |
-| HY2301 | 1,396 | 2,094 | 698 未合入 | 0 |
+| HY2301 | 1,506 | 2,094 | 588 未合入 | 0 |
 | XYXZSBY | 1,723 | 1,723 | 0 | 0 |
 
 XYXZSBY 已分七批合入全部 125 章 / 1,107 新段（t126–t132）；识典网页 `catalogComplete=true`，**不是**古本全帙，不得把网页取齐写成古本全帙。
