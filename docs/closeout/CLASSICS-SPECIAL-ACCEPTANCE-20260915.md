@@ -2,11 +2,11 @@
 
 结论：**尚未全部完成。** 本文件是当前进度。`CLASSICS-SPECIAL-ACCEPTANCE-20260913.md` 仍写 62,907 注释，只可作历史。
 
-精确 SHA 随本提交。基线 `5449b299` 为 81,417 段；t125 后 83,351；本批 t151 后 **86,633**。
+精确 SHA 随本提交。基线 `5449b299` 为 81,417 段；t125 后 83,351；本批 t152 后 **86,809**。
 
 ## 独立重算
 
-源段 86,633，注释 86,633；未注释、悬空 ID、重复 ID 均 0。source-reviewed 73,930，draft 12,703。source-reviewed 不等于影印复核。
+源段 86,809，注释 86,809；未注释、悬空 ID、重复 ID 均 0。source-reviewed 74,105，draft 12,704。source-reviewed 不等于影印复核。
 
 catalogComplete=false 仍 **9** 个：SK1610、DZ1040、SK1573、HY2301、7533808921945833506、SDZJ0174、SK1599、SK1619、SK1609。XYXZSBY、SDZJ0170 与 SK1588、SK1603、SK1615、SK1618 一样，只是识典网页目录取齐，**不是**古本全帙。
 
@@ -38,6 +38,7 @@ catalogComplete=false 仍 **9** 个：SK1610、DZ1040、SK1573、HY2301、753380
 - t149 HY2301《御纂周易折中》缺章继续分批合入：5 章 / 90 新段（86 source-reviewed / 4 draft）。本版 1,506→1,596 段；仍余 24 章 / 498 段未合入，`catalogComplete` 仍 false。
 - t150 HY2301《御纂周易折中》缺章继续分批合入：4 章 / 60 新段（53 source-reviewed / 7 draft）。本版 1,596→1,656 段；仍余 20 章 / 438 段未合入，`catalogComplete` 仍 false。
 - t151 HY2301《御纂周易折中》缺章继续分批合入：3 章 / 136 新段（131 source-reviewed / 5 draft）。本版 1,656→1,792 段；仍余 17 章 / 302 段未合入，`catalogComplete` 仍 false。
+- t152 HY2301《御纂周易折中》缺章继续分批合入：12 章 / 176 新段（175 source-reviewed / 1 draft）。本版 1,792→1,968 段；仍余 5 章 / 126 段未合入，`catalogComplete` 仍 false。
 
 - t122 SK1588：30→320，290 新注释（274 source-reviewed / 16 draft）。
 - t123 SK1603：247→429，182 新注释（113 source-reviewed / 69 draft）。
