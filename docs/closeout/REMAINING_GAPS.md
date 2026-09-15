@@ -3,16 +3,16 @@
 日期：2026-09-15  
 旧稿 draft 2905、SHA `3191806`/`e083dcf` **不是当前进度**。`CLASSICS-SPECIAL-ACCEPTANCE-20260913.md` 仍列 62,907 注释，只是历史快照。
 
-精确 SHA 随本提交。当前重算：源段与注释 83,351；未注释、重复、悬空 ID 均 0；source-reviewed 71,945；draft 11,406。
+本文件随提交记录 HEAD `adbaaf40582ada1496a981d1918bd551ba7e868d` 的重算：源段与注释 **83,670**；未注释、重复、悬空 ID 均 0；source-reviewed **72,108**；draft **11,562**。
 
 ## 必须保留为未完成
 
 | 项 | 数量/状态 | 为何不能标完成 |
 |---|---|---|
 | catalogComplete=false | **11** 个识典补充版本 | 缺章 JSON 已抓取并完成 staged 重导入，但新段注释与独立审核尚未全部合入。已网页取齐的 SK1588、SK1603、SK1615、SK1618 仍不是古本全帙。 |
-| draft | **11,406** | 逐条处置账已建（`DRAFT_DISPOSITION_LEDGER.json`，11,406 行全覆盖，每行带源 ID 与分类证据），**分类不是结案**。 |
+| draft | **11,562** | 逐条处置账已建（`DRAFT_DISPOSITION_LEDGER.json`，11,562 行全覆盖，每行带源 ID、证据路径与分类依据），**分类不是结案**。分类计数：verifiable_text 5,510、catalog_metadata 3,929、figure_or_lacuna 1,842、edition_variant 281。 |
 | 0803.djvu 己/巳 | **已定为版本异文** | 已实际读图 + 跨版本对照：本版（四庫 0803 册 / SK1573）作「己」，DZ1040 作「巳」。照录本版原字、异文并存，见 `evidence/t127-huangji-0803-jisi-variant.json`。字形本身仍不能独立裁定。 |
-| source-reviewed | 71,945 | 不等于影印精校。 |
+| source-reviewed | 72,108 | 不等于影印精校。 |
 | 产品 pin | 未改 | 古籍 main 合入不代表产品版本已更新。 |
 
 ## 缺章 staging 现状（机械步骤已完成，注释/审核未完成）
@@ -60,5 +60,6 @@ staged 后仍有 93 章被判为不足，但差额是**双向**的：部分章 a
 ## 不升、不杜撰
 
 - 不凭口诀、排列规律、算法补原字。
+- 未完成注释与独立审核的缺章不得合入；已合入的段必须有 hash 绑定的独立审核记录。
 - 不把 draft 批量改 source-reviewed。
 - 不删源、不缩分母。
