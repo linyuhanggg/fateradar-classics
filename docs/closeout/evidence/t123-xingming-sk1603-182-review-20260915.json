@@ -1,0 +1,101 @@
+{
+  "batch": "t123-xingming-sk1603-182",
+  "scope": "SK1603 missing-chapter reimport 182 new paragraph IDs; source 247→429 with annotations. Website juan != print. catalogComplete webpage only, not 古本全帙. Xingming not an algorithm.",
+  "reviewCounts": {
+    "source-reviewed": 113,
+    "draft": 69
+  },
+  "judges": [
+    {
+      "judge": "B2",
+      "batch": "sk1603-000",
+      "verdict": "ACCEPT",
+      "candidateSha256": "e798ce857dd2ede1c9ea519cdc6328819f10418a8c3970277e2b1f265e82db57",
+      "evidenceSha256": "ec8ce860402ea08d33bbd8887bb2767992e65b1d20406f0b3ba54c0aff22d2a5",
+      "completeParagraphsRead": 20,
+      "findings": []
+    },
+    {
+      "judge": "B",
+      "batch": "sk1603-020",
+      "verdict": "ACCEPT",
+      "candidateSha256": "3979eaefde038dacf88dd0f611e8956b392e75eb2ae31a7facd2cbf4f4ba1c0e",
+      "evidenceSha256": "00420e7faa96362d608dc6f78162671d26dd90ed09e099e4424a01a0414fdede",
+      "completeParagraphsRead": 20,
+      "findings": []
+    },
+    {
+      "judge": "B",
+      "batch": "sk1603-040",
+      "verdict": "ACCEPT",
+      "candidateSha256": "5e0f38d90761626add2d26d69822fdca59217916d0886439a17b5d2f6d882beb",
+      "evidenceSha256": "4c6f86a0ccdff22b4eb7ef7383b020af30af4fc11d63288005909af79bd43e44",
+      "completeParagraphsRead": 20,
+      "findings": []
+    },
+    {
+      "judge": "B2",
+      "batch": "sk1603-060",
+      "verdict": "ACCEPT",
+      "candidateSha256": "917b849bfe4207669de07faaf67522a3b2c2b6a848a32e856a9c79a50f4cec3d",
+      "evidenceSha256": "1da4a558c2959dbb801f8e1beb6e90b59341d4fbd135fb3ad6ba728e96595f84",
+      "completeParagraphsRead": 20,
+      "findings": []
+    },
+    {
+      "judge": "B2",
+      "batch": "sk1603-080",
+      "verdict": "ACCEPT",
+      "candidateSha256": "7926fe822668f5db5bc1308216264aa4a332985598d167310bce3bd2253e2443",
+      "evidenceSha256": "435740807dd266fc3e4cde518ba043248029f82c1d1d19fa7ad61fcfe7a969ea",
+      "completeParagraphsRead": 20,
+      "findings": []
+    },
+    {
+      "judge": "B",
+      "batch": "sk1603-100",
+      "verdict": "ACCEPT",
+      "candidateSha256": "fac2e5bff2eddaa114af779e256f78fbabafde2609da85a9350e9221aabeb0e1",
+      "evidenceSha256": "d3d95481f15069abf05d38d1faf77efa2ef981f8f8cedcfb1b317b83b5657e8c",
+      "completeParagraphsRead": 20,
+      "findings": []
+    },
+    {
+      "judge": "B",
+      "batch": "sk1603-120",
+      "verdict": "ACCEPT",
+      "candidateSha256": "2db28a0735dd79b68610d6a0db1437bebad800f686806e1357ce3ca8b8723098",
+      "evidenceSha256": "8c620ea3d5e2af1c2ac7796f9e43abbda794c394d69b8e8f4013a243c0edc3b5",
+      "completeParagraphsRead": 20,
+      "findings": []
+    },
+    {
+      "judge": "B",
+      "batch": "sk1603-140",
+      "verdict": "ACCEPT",
+      "candidateSha256": "85ec19fedd65d64c258b27cdb314ead80e447d1437a87dd428425121abb41cbd",
+      "evidenceSha256": "28476393c76c4eb0cf30dbba2e3ea4a42212a987e5e063cd6eb6bc29fea6a787",
+      "completeParagraphsRead": 20,
+      "findings": []
+    },
+    {
+      "judge": "B",
+      "batch": "sk1603-160",
+      "verdict": "ACCEPT",
+      "candidateSha256": "52f21cc3832bd6812a2c6062d4bde998325e26419c0ef3503e3238c9545d48a0",
+      "evidenceSha256": "19dadca64c4f0b324c95a6eb708027841c625835eab9f2c523af90e046f8e961",
+      "completeParagraphsRead": 20,
+      "findings": []
+    },
+    {
+      "judge": "B",
+      "batch": "sk1603-180",
+      "verdict": "ACCEPT",
+      "candidateSha256": "3fd4762bd11de5a8059c095df4faeac419a2833c8273d77398540565a4203a13",
+      "evidenceSha256": "1b45b2809c73be7fa3e32211b083dfbf841bab675b7939c400e82fc13b882570",
+      "completeParagraphsRead": 2,
+      "findings": []
+    }
+  ],
+  "notBookCompletion": true
+}
