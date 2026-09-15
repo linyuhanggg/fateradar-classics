@@ -2,11 +2,11 @@
 
 结论：**尚未全部完成。** 本文件是当前进度。`CLASSICS-SPECIAL-ACCEPTANCE-20260913.md` 仍写 62,907 注释，只可作历史。
 
-精确 SHA 随本提交。基线 `5449b299` 为 81,417 段；t125 后 83,351；本批 t130 后 **84,290**。
+精确 SHA 随本提交。基线 `5449b299` 为 81,417 段；t125 后 83,351；本批 t131 后 **84,404**。
 
 ## 独立重算
 
-源段 84,290，注释 84,290；未注释、悬空 ID、重复 ID 均 0。source-reviewed 72,297，draft 11,993。source-reviewed 不等于影印复核。
+源段 84,404，注释 84,404；未注释、悬空 ID、重复 ID 均 0。source-reviewed 72,349，draft 12,055。source-reviewed 不等于影印复核。
 
 catalogComplete=false 仍 11 个：SK1610、DZ1040、SK1573、XYXZSBY、HY2301、7533808921945833506、SDZJ0174、SK1599、SK1619、SK1609、SDZJ0170。SK1588、SK1603、SK1615、SK1618 网页目录已取齐，不是古本全帙。
 
@@ -17,6 +17,7 @@ catalogComplete=false 仍 11 个：SK1610、DZ1040、SK1573、XYXZSBY、HY2301�
 - t128 XYXZSBY《增刪卜易》缺章继续分批合入：再合 10 章 / 164 新段（35 source-reviewed / 129 draft），累计 66 章 / 695 新段（本版 616→1,311 段）。已抓 125 章中仍余 59 章 / 412 段未合入；`catalogComplete` 仍 false。
 - t129 XYXZSBY《增刪卜易》缺章继续分批合入：再合 17 章 / 84 新段（43 source-reviewed / 41 draft），累计 83 章 / 779 新段（本版 616→1,395 段）。已抓 125 章中仍余 42 章 / 328 段未合入；`catalogComplete` 仍 false。
 - t130 XYXZSBY《增刪卜易》缺章继续分批合入：再合 19 章 / 160 新段（52 source-reviewed / 108 draft），累计 102 章 / 939 新段（本版 616→1,555 段）。已抓 125 章中仍余 23 章 / 168 段未合入；`catalogComplete` 仍 false。
+- t131 XYXZSBY《增刪卜易》缺章继续分批合入：再合 16 章 / 114 新段（52 source-reviewed / 62 draft），累计 118 章 / 1,053 新段（本版 616→1,669 段）。已抓 125 章中仍余 7 章 / 54 段未合入（卡在 pack 380、680 两份未过独立审核）；`catalogComplete` 仍 false。
 
 - t122 SK1588：30→320，290 新注释（274 source-reviewed / 16 draft）。
 - t123 SK1603：247→429，182 新注释（113 source-reviewed / 69 draft）。
