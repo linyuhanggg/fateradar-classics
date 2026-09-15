@@ -1,7 +1,7 @@
 # Draft 逐条处置账（当前 HEAD 自动重算）
 
-HEAD：`fe1cccca47217c57c80a1224a59f1f0dedb8706c`
-draft 总数：**12274**
+HEAD：`9de6d12c334891db4a9d56022417df9dbae9f377`
+draft 总数：**12342**
 
 本文件由 `tools/build-draft-disposition.py` 生成，可随时重跑；每一条 draft 都有独立行记录源 ID、证据路径与分类依据。
 **分类不等于结案**：`catalog_metadata` 依 schema 保留 draft 属正常去向，`verifiable_text`、`figure_or_lacuna`、`edition_variant`、`illegible` 仍是真实待办。
@@ -10,8 +10,8 @@ draft 总数：**12274**
 
 | 分类 | 条数 | 含义 |
 | --- | ---: | --- |
-| `verifiable_text` | 6042 | 可核实正文：电子原文完整可读，尚待完整语义对读 |
-| `catalog_metadata` | 3959 | 目录/元数据：章题、卷端题署、版记或现代恢复说明，按 schema 保留 draft 状态 |
+| `verifiable_text` | 6106 | 可核实正文：电子原文完整可读，尚待完整语义对读 |
+| `catalog_metadata` | 3963 | 目录/元数据：章题、卷端题署、版记或现代恢复说明，按 schema 保留 draft 状态 |
 | `figure_or_lacuna` | 1979 | 图文缺失：含缺字、图像占位或残表标记 |
 | `edition_variant` | 293 | 版本异文：note 记录异文或版本差异问题 |
 | `illegible` | 1 | 原件仍不可辨：残句无正向可读证据 |
@@ -31,8 +31,8 @@ draft 总数：**12274**
 | xingli-kaoyuan | 429 |
 | taiyi-shenshu | 407 |
 | xuexin-fu | 289 |
+| ziwei-doushu-quanshu | 274 |
 | mayi-shenxiang | 215 |
-| ziwei-doushu-quanshu | 206 |
 | mingli-yueyan | 162 |
 | shenxiang-quanbian | 152 |
 | wuxing-jingji | 133 |
