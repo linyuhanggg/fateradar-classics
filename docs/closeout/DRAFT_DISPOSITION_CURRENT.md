@@ -1,7 +1,7 @@
 # Draft 逐条处置账（当前 HEAD 自动重算）
 
-HEAD：`278068cef8705202cef3c8fb8cac58f583a444c1`
-draft 总数：**11715**
+HEAD：`d412a44053c4a862c4e11da96a6a2d680d6e5ddb`
+draft 总数：**11844**
 
 本文件由 `tools/build-draft-disposition.py` 生成，可随时重跑；每一条 draft 都有独立行记录源 ID、证据路径与分类依据。
 **分类不等于结案**：`catalog_metadata` 依 schema 保留 draft 属正常去向，`verifiable_text`、`figure_or_lacuna`、`edition_variant`、`illegible` 仍是真实待办。
@@ -10,10 +10,10 @@ draft 总数：**11715**
 
 | 分类 | 条数 | 含义 |
 | --- | ---: | --- |
-| `verifiable_text` | 5599 | 可核实正文：电子原文完整可读，尚待完整语义对读 |
-| `catalog_metadata` | 3936 | 目录/元数据：章题、卷端题署、版记或现代恢复说明，按 schema 保留 draft 状态 |
-| `figure_or_lacuna` | 1895 | 图文缺失：含缺字、图像占位或残表标记 |
-| `edition_variant` | 285 | 版本异文：note 记录异文或版本差异问题 |
+| `verifiable_text` | 5688 | 可核实正文：电子原文完整可读，尚待完整语义对读 |
+| `catalog_metadata` | 3937 | 目录/元数据：章题、卷端题署、版记或现代恢复说明，按 schema 保留 draft 状态 |
+| `figure_or_lacuna` | 1930 | 图文缺失：含缺字、图像占位或残表标记 |
+| `edition_variant` | 289 | 版本异文：note 记录异文或版本差异问题 |
 
 ## 按书分布（draft 条数）
 
@@ -22,9 +22,9 @@ draft 总数：**11715**
 | huangji-jingshi | 3103 |
 | qimen-dunjia-tongzhi | 1289 |
 | yuanhai-ziping | 1266 |
+| zengshan-buyi | 905 |
 | yuqia-ji | 873 |
 | minghai-quanbian | 804 |
-| zengshan-buyi | 776 |
 | daliuren-daquan | 767 |
 | bushi-zhengzong | 447 |
 | xingli-kaoyuan | 429 |
