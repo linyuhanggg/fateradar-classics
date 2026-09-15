@@ -2,11 +2,11 @@
 
 结论：**尚未全部完成。** 本文件是当前进度。`CLASSICS-SPECIAL-ACCEPTANCE-20260913.md` 仍写 62,907 注释，只可作历史。
 
-精确 SHA 随本提交。基线 `5449b299` 为 81,417 段；t125 后 83,351；本批 t138 后 **85,297**。
+精确 SHA 随本提交。基线 `5449b299` 为 81,417 段；t125 后 83,351；本批 t139 后 **85,417**。
 
 ## 独立重算
 
-源段 85,297，注释 85,297；未注释、悬空 ID、重复 ID 均 0。source-reviewed 72,873，draft 12,424。source-reviewed 不等于影印复核。
+源段 85,417，注释 85,417；未注释、悬空 ID、重复 ID 均 0。source-reviewed 72,950，draft 12,467。source-reviewed 不等于影印复核。
 
 catalogComplete=false 仍 **10** 个：SK1610、DZ1040、SK1573、HY2301、7533808921945833506、SDZJ0174、SK1599、SK1619、SK1609、SDZJ0170。XYXZSBY 与 SK1588、SK1603、SK1615、SK1618 一样，只是识典网页目录取齐，**不是**古本全帙。
 
@@ -25,6 +25,7 @@ catalogComplete=false 仍 **10** 个：SK1610、DZ1040、SK1573、HY2301、75338
 - t136 SDZJ0170《紫微斗数全书》缺章继续分批合入：6 章 / 171 新段（103 source-reviewed / 68 draft）。本版 1,494→1,665 段；仍余 133 章 / 469 段未合入，`catalogComplete` 仍 false。
 - t137 SDZJ0170《紫微斗数全书》缺章继续分批合入：14 章 / 124 新段（74 source-reviewed / 50 draft）。本版 1,665→1,789 段；仍余 119 章 / 345 段未合入，`catalogComplete` 仍 false。
 - t138 SDZJ0170《紫微斗数全书》缺章继续分批合入：40 章 / 120 新段（88 source-reviewed / 32 draft）。本版 1,789→1,909 段；仍余 79 章 / 225 段未合入，`catalogComplete` 仍 false。
+- t139 SDZJ0170《紫微斗数全书》缺章继续分批合入：40 章 / 120 新段（77 source-reviewed / 43 draft）。本版 1,909→2,029 段；仍余 39 章 / 105 段未合入，`catalogComplete` 仍 false。
 
 - t122 SK1588：30→320，290 新注释（274 source-reviewed / 16 draft）。
 - t123 SK1603：247→429，182 新注释（113 source-reviewed / 69 draft）。
