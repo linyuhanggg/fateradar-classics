@@ -1,11 +1,11 @@
 {
   "schema": "fateradar-edition-coverage-v1",
-  "head": "d121a80b4623b3d3f6b8c444b75509ed712557b4",
+  "head": "503f64fcad499fbf9027a021497a8bc39c9a3b30",
   "counts": {
     "editions": 39,
-    "webIncomplete": 10,
-    "heldParagraphs": 26001,
-    "stagedNewParagraphs": 34537
+    "webIncomplete": 9,
+    "heldParagraphs": 26043,
+    "stagedNewParagraphs": 34495
   },
   "editions": [
     {
@@ -949,15 +949,15 @@
       "bookId": "SDZJ0170",
       "bookSlug": "ziwei-doushu-quanshu",
       "editionKind": "shidian-catalog",
-      "webCatalogComplete": false,
+      "webCatalogComplete": true,
       "ancientEditionComplete": false,
       "ancientEditionNote": "网页目录取齐不等于古本全帙；本版未作逐字影印校勘。",
       "declaredChapters": 159,
       "declaredParagraphs": 2134,
-      "heldChapters": 141,
-      "heldParagraphs": 2092,
-      "missingChaptersListed": 18,
-      "missingExpectedParagraphs": 42,
+      "heldChapters": 159,
+      "heldParagraphs": 2134,
+      "missingChaptersListed": 0,
+      "missingExpectedParagraphs": 0,
       "missingActualParagraphs": 0,
       "fetchedChapterFiles": 150,
       "stagedParagraphs": 2134,

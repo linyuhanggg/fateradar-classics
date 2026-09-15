@@ -2,13 +2,13 @@
 
 结论：**尚未全部完成。** 本文件是当前进度。`CLASSICS-SPECIAL-ACCEPTANCE-20260913.md` 仍写 62,907 注释，只可作历史。
 
-精确 SHA 随本提交。基线 `5449b299` 为 81,417 段；t125 后 83,351；本批 t140 后 **85,480**。
+精确 SHA 随本提交。基线 `5449b299` 为 81,417 段；t125 后 83,351；本批 t141 后 **85,522**。
 
 ## 独立重算
 
-源段 85,480，注释 85,480；未注释、悬空 ID、重复 ID 均 0。source-reviewed 72,992，draft 12,488。source-reviewed 不等于影印复核。
+源段 85,522，注释 85,522；未注释、悬空 ID、重复 ID 均 0。source-reviewed 73,014，draft 12,508。source-reviewed 不等于影印复核。
 
-catalogComplete=false 仍 **10** 个：SK1610、DZ1040、SK1573、HY2301、7533808921945833506、SDZJ0174、SK1599、SK1619、SK1609、SDZJ0170。XYXZSBY 与 SK1588、SK1603、SK1615、SK1618 一样，只是识典网页目录取齐，**不是**古本全帙。
+catalogComplete=false 仍 **9** 个：SK1610、DZ1040、SK1573、HY2301、7533808921945833506、SDZJ0174、SK1599、SK1619、SK1609。XYXZSBY、SDZJ0170 与 SK1588、SK1603、SK1615、SK1618 一样，只是识典网页目录取齐，**不是**古本全帙。
 
 ## 已合入
 
@@ -27,6 +27,7 @@ catalogComplete=false 仍 **10** 个：SK1610、DZ1040、SK1573、HY2301、75338
 - t138 SDZJ0170《紫微斗数全书》缺章继续分批合入：40 章 / 120 新段（88 source-reviewed / 32 draft）。本版 1,789→1,909 段；仍余 79 章 / 225 段未合入，`catalogComplete` 仍 false。
 - t139 SDZJ0170《紫微斗数全书》缺章继续分批合入：40 章 / 120 新段（77 source-reviewed / 43 draft）。本版 1,909→2,029 段；仍余 39 章 / 105 段未合入，`catalogComplete` 仍 false。
 - t140 SDZJ0170《紫微斗数全书》缺章继续分批合入：21 章 / 63 新段（42 source-reviewed / 21 draft）。本版 2,029→2,092 段；仍余 18 章 / 42 段未合入（卡在 pack 1020、1040：把下一段星曜写进仅有「又」的残段），`catalogComplete` 仍 false。
+- t141 SDZJ0170《紫微斗数全书》缺章收束：再合 18 章 / 42 新段（22 source-reviewed / 20 draft），累计 150 章 / 1,064 新段（本版 1,070→2,134 段）。识典网页目录 `catalogComplete=true`，**不是**古本全帙；星曜吉凶是原书说法，不入算法已证实。
 
 - t122 SK1588：30→320，290 新注释（274 source-reviewed / 16 draft）。
 - t123 SK1603：247→429，182 新注释（113 source-reviewed / 69 draft）。
@@ -35,7 +36,7 @@ catalogComplete=false 仍 **10** 个：SK1610、DZ1040、SK1573、HY2301、75338
 
 ## 未通过全库完成门槛
 
-1. 10 个补充版本网页缺章未全部补采合入（已抓取并 staged；注释与独立审核未完成）。XYXZSBY 网页目录已取齐，仍非古本全帙。
+1. 9 个补充版本网页缺章未全部补采合入（已抓取并 staged；注释与独立审核未完成）。XYXZSBY 网页目录已取齐，仍非古本全帙。
 2. 12,097 draft 逐条处置账已建，正文疑义与图文缺口未全部真实解决。
 3. 0803.djvu 己/巳 已定为**版本异文**（本版作己、DZ1040 作巳，原字保留），见 `evidence/t127-huangji-0803-jisi-variant.json`；字形本身仍不能独立裁定。
 4. 不以 CI 代替语义及影印验收。

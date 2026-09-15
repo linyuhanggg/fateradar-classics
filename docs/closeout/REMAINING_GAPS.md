@@ -3,17 +3,17 @@
 日期：2026-09-15  
 旧稿 draft 2905、SHA `3191806`/`e083dcf` **不是当前进度**。`CLASSICS-SPECIAL-ACCEPTANCE-20260913.md` 仍列 62,907 注释，只是历史快照。
 
-本文件随提交记录 HEAD `d121a80b4623b3d3f6b8c444b75509ed712557b4` 的重算：源段与注释 **85,480**；未注释、重复、悬空 ID 均 0；
-source-reviewed **72,992**；draft **12,488**。
+本文件随提交记录 HEAD `503f64fcad499fbf9027a021497a8bc39c9a3b30` 的重算：源段与注释 **85,522**；未注释、重复、悬空 ID 均 0；
+source-reviewed **73,014**；draft **12,508**。
 
 ## 必须保留为未完成
 
 | 项 | 数量/状态 | 为何不能标完成 |
 |---|---|---|
-| catalogComplete=false | **10** 个识典补充版本 | 缺章 JSON 已抓取并 staged，但新段注释与独立审核尚未全部合入。已网页取齐的 XYXZSBY、SK1588、SK1603、SK1615、SK1618 仍不是古本全帙。 |
-| draft | **12,488** | 逐条处置账已建（`DRAFT_DISPOSITION_LEDGER.json`，12,097 行全覆盖，每行带源 ID、证据路径与分类依据），**分类不是结案**。分类计数：verifiable_text 6,250、catalog_metadata 3,964、figure_or_lacuna 1,980、edition_variant 293、illegible 1。 |
+| catalogComplete=false | **9** 个识典补充版本 | 缺章 JSON 已抓取并 staged，但新段注释与独立审核尚未全部合入。已网页取齐的 XYXZSBY、SDZJ0170、SK1588、SK1603、SK1615、SK1618 仍不是古本全帙。 |
+| draft | **12,508** | 逐条处置账已建（`DRAFT_DISPOSITION_LEDGER.json`，12,097 行全覆盖，每行带源 ID、证据路径与分类依据），**分类不是结案**。分类计数：verifiable_text 6,270、catalog_metadata 3,964、figure_or_lacuna 1,980、edition_variant 293、illegible 1。 |
 | 0803.djvu 己/巳 | **已定为版本异文** | 已实际读图 + 跨版本对照：本版（四庫 0803 册 / SK1573）作「己」，DZ1040 作「巳」。照录本版原字、异文并存，见 `evidence/t127-huangji-0803-jisi-variant.json`。字形本身仍不能独立裁定。 |
-| source-reviewed | 72,992 | 不等于影印精校。 |
+| source-reviewed | 73,014 | 不等于影印精校。 |
 | 产品 pin | 未改 | 古籍 main 合入不代表产品版本已更新。 |
 
 ## 缺章 staging 现状（机械步骤已完成，注释/审核未完成）
@@ -29,7 +29,7 @@ source-reviewed **72,992**；draft **12,488**。
 | DZ1040 | 2,261 | 6,452 | 4,191 | 0 |
 | SDZJ0174 | 748 | 4,208 | 3,460 | 0 |
 | 7533808921945833506 | 493 | 3,361 | 2,868 | 0 |
-| SDZJ0170 | 2,092 | 2,134 | 42 未合入 | 0 |
+| SDZJ0170 | 2,134 | 2,134 | 0 | 0 |
 | SK1573 | 670 | 2,571 | 1,901 | 0 |
 | HY2301 | 681 | 2,094 | 1,413 | 0 |
 | XYXZSBY | 1,723 | 1,723 | 0 | 0 |
@@ -49,6 +49,7 @@ staged 后仍有 93 章被判为不足，但差额是**双向**的：部分章 a
 ## 已网页取齐、仍非全帙
 
 - XYXZSBY《增刪卜易》识典 dest 1723（网页目录取齐，不是古本全帙；卜筮不入算法）
+- SDZJ0170《紫微斗数全书》识典 dest 2134（网页目录取齐，不是古本全帙；星曜吉凶不入算法已证实）
 - SK1588《葬书》识典 dest 320
 - SK1603《星命溯源》识典 dest 429
 - SK1615《太乙金镜式经》识典 dest 782
