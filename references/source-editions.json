@@ -4111,40 +4111,14 @@
         "识典现成原文字段，未采用网站译文；未完成逐字影印校勘。",
         "网站章节名与印本卷号可能不一致，引用卷号须以正文或影印核定。",
         "网页目录段落取齐不等于古本全帙无缺；同版子篇不计独立来源。",
-        "本次仅收录部分章节，缺失范围见来源清单。"
+        "本次段落数量与该站登记的各章目录一致。"
       ],
       "upstreamBookId": "HY2301",
       "upstreamVersion": 31,
-      "catalogComplete": false,
-      "missingChapters": [
-        {
-          "chapterId": "1mb9hv6w5c9hi",
-          "expected": 50,
-          "actual": 0
-        },
-        {
-          "chapterId": "1kp9kq29t4qi1",
-          "expected": 1,
-          "actual": 0
-        },
-        {
-          "chapterId": "1mb9ics2whc8m",
-          "expected": 57,
-          "actual": 0
-        },
-        {
-          "chapterId": "1kp9kq78u03l5",
-          "expected": 2,
-          "actual": 0
-        },
-        {
-          "chapterId": "1mb9ideh293je",
-          "expected": 16,
-          "actual": 0
-        }
-      ],
-      "paragraphCount": 1968,
-      "figureCount": 38,
+      "catalogComplete": true,
+      "missingChapters": [],
+      "paragraphCount": 2094,
+      "figureCount": 2024,
       "system": "divination"
     },
     {
