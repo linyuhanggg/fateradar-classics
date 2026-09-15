@@ -1,0 +1,40 @@
+{
+  "id": "t127-huangji-0803-jisi-variant",
+  "question": "0803.djvu 第442/443页「經月之□六」是己还是巳",
+  "verdict": "EDITION_VARIANT_RETAIN_BASE_TEXT",
+  "baseEdition": "文淵閣四庫全書 0803 册《皇极经世书》",
+  "glyphReading": {
+    "method": "DSH native image reading via modlens vision bridge (codex route)",
+    "note": "当前会话模型为纯文本模型，read_image 不可用；改用 DSH 视觉桥实际读图。",
+    "page442": "上部左侧未封口；左竖起笔低于顶横、高于中部回接横画；不能无歧义定为己/已/巳。",
+    "page443": "同上；上部左侧开放，左竖起笔低于顶横、高于中部回接横画。",
+    "conclusion": "字形本身不足以裁定，需版本对照。",
+    "images": [
+      ".local/dsh-handoff-20260914/facsimile-evidence/judge442-month.png",
+      ".local/dsh-handoff-20260914/facsimile-evidence/judge-443-month.png"
+    ]
+  },
+  "crossEdition": [
+    {
+      "witness": "本版四庫系统 text layer (huangji-jingshi fulltext.md L12911/L12975)",
+      "reading": "己",
+      "role": "底本原字，保留不改"
+    },
+    {
+      "witness": "SK1573《皇極經世書》識典（四庫全書系统）staged/text.md L10857/L10893",
+      "reading": "己",
+      "role": "同系统参证"
+    },
+    {
+      "witness": "DZ1040《皇極經世》識典 staged/text.md L10477/L10543/L10580",
+      "reading": "巳",
+      "role": "异文见证，另一版本读法"
+    }
+  ],
+  "affectedParagraphIds": [
+    "huangji-jingshi:L12911-L12911",
+    "huangji-jingshi:L12975-L12975"
+  ],
+  "action": "照录本版原字「己」，逐条追加异文与影印读图记录；不改源文、不据序数裁定。",
+  "notDone": "未据六十甲子序数或口诀把本版原字改成「巳」；本版与异文并存记录。"
+}
