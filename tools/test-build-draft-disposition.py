@@ -63,9 +63,12 @@ class DraftDispositionTests(unittest.TestCase):
         recorded = self.ledger["head"]
         self.assertRegex(recorded, r"^[0-9a-f]{40}$")
 
-        def git_ok(*a):
+        def git_out(*a):
             return subprocess.run(["git", "-C", str(ROOT), *a],
-                                  capture_output=True, text=True).returncode == 0
+                                  capture_output=True, text=True)
+
+        def git_ok(*a):
+            return git_out(*a).returncode == 0
 
         if not git_ok("rev-parse", "--git-dir"):
             self.skipTest("not a git work tree; cannot resolve the recorded HEAD")
@@ -74,6 +77,10 @@ class DraftDispositionTests(unittest.TestCase):
         if not git_ok("cat-file", "-e", f"{recorded}^{{commit}}"):
             # CI checks out shallowly, so an ancestor commit may simply be absent.
             self.skipTest(f"{recorded} not present locally (shallow clone)")
+        if git_out("rev-parse", "--is-shallow-repository").stdout.strip() == "true":
+            # A shallow clone grafts the boundary commits, which cuts the parent links an
+            # ancestry walk needs, so --is-ancestor is not meaningful here.
+            self.skipTest("shallow clone: ancestry check is not meaningful")
         self.assertTrue(git_ok("merge-base", "--is-ancestor", recorded, "HEAD"),
                         f"recorded HEAD {recorded} is not an ancestor of HEAD")
 
