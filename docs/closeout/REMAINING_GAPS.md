@@ -1,30 +1,31 @@
-# 真实未决清单（相对总方案，不合 main 的理由）
+# 真实未决清单（当前 HEAD，不是 2026-09-12 快照）
 
-日期：2026-09-12  
-古籍 `3191806`/`e083dcf` · 产品 `365b834`/`ce54614`  
-origin/main 仍是收尾 `4cb96e3` / `48f68a8`。
+日期：2026-09-15  
+本文件取代 `docs/closeout/REMAINING_GAPS.md` 旧稿（旧稿写 draft 2905、SHA `3191806`/`e083dcf`，**不是当前进度**）。  
+`CLASSICS-SPECIAL-ACCEPTANCE-20260913.md` 仍列 62,907 注释，也只是历史快照。
 
-## 已可用（隔离分支）
-
-- 252 executable ID 注册表+探针（接线 ≠ 判断完成）。
-- 判断：ZPR-E-09–16 三态；另 10 条满足/不满足；穷通 119 条月令命中/不命中。
-- 八术免费解释与 JSON 导出；八字 12 栏目各自导出当前块；小六壬导出跟选位。生时候选比较可导出。
-- `/knowledge` 33 包；主导航「资料」。
-- 未登录浏览器：知识检索、八字出盘、栏目切换、紫微点宫。
+精确 SHA 随本提交。当前重算：源段与注释 81,707；未注释、重复、悬空 ID 均 0；source-reviewed 71,205；draft 10,502。
 
 ## 必须保留为未完成
 
 | 项 | 数量/状态 | 为何不能标完成 |
 |---|---|---|
-| draft | **2905** | 奇门 NLC 1261、约言 162 为 ocr-draft，校验器禁止升；大六壬 812 中 695 为待核实 |
-| 规则判断 L4 | 部分 | 每条至少一侧夹具；仅 488 等少数三态齐全。ZWD-E-04/11/12 已有满足/不满足 |
-| 全仓 CI | 产品侧绿 | `bun run test` 3354；node build；`test:e2e` 19。不合 main 因 draft 2905 与判断覆盖缺口 |
-| 浏览器 | 部分 | 无稳定截图（CDP timeout）；未做导出文件回读点击 |
-| origin/main | 未合 | 独立审查 PASS_WITH_GAPS；上述缺口仍可自行继续，但不足交付门槛 |
+| catalogComplete=false | **14** 个识典补充版本 | 网页缺章尚未全部重导入并注释审核。已网页取齐的 SK1588 仍不是古本全帙。 |
+| draft | **10,502** | 分类账已建（可核实正文 / 目录元数据 / 图文缺失 / 版本异文 / 原件仍不可辨），**分类不是结案**。 |
+| 0803.djvu 己/巳 | 未决 | 本轮 DSH 原生 read_image 仍 AMBIGUOUS_GLYPH_RETAIN_DRAFT；不得按六十甲子序改字。 |
+| source-reviewed | 71,205 | 不等于影印精校。 |
+| 产品 pin | 未改 | 古籍 main 合入不代表产品版本已更新。 |
+
+## 已网页取齐、仍非全帙
+
+- SK1588《葬书》识典：dest 320，catalogComplete=true 仅为识典网站目录段数一致。
+
+## 已抓缺章、尚未合入正式库
+
+SK1603、SK1573、SK1615、SK1618、HY2301、XYXZSBY、SDZJ0170、DZ1040 等缺章 JSON 在 `.local/dsh-handoff-20260914/work/`，候选与审核未全部 ACCEPT，不得提前改 catalogComplete。
 
 ## 不升、不杜撰
 
-- 小六壬 0 executable ID。
-- 风水/相法/择日只进知识库。
-- `source-reviewed` ≠ 影印校勘；`verified` 未批量设 true。
-- 不恢复 Multica；不生产部署。
+- 不凭口诀、排列规律、算法补原字。
+- 不把 draft 批量改 source-reviewed。
+- 不删源、不缩分母。
