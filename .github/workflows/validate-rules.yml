@@ -23,6 +23,7 @@ jobs:
             sources/normalized
             sources/excerpts
             tools
+            docs/closeout
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
@@ -38,6 +39,7 @@ jobs:
       - run: python tools/test-export-knowledge.py
       - run: python tools/test-source-cases.py
       - run: python tools/test-source-editions.py
+      - run: python tools/test-build-draft-disposition.py
       - run: python tools/test-huangji-table-context.py
       - run: python tools/test-huangji-chronicle-context.py
       - run: python tools/test-import-shidian.py
