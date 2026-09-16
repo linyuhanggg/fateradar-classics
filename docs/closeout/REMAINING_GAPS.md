@@ -1,3 +1,6 @@
+
+
+> 2026-09-16：已下载 staged 原文 31,525 段已入库，**不再把白话 draft 数量当古籍剩余工作**。真缺口见 `docs/closeout/SOURCE-LIBRARY-DELIVERY-20260916.md`（SK1610 13 章 SSR 无 paragraphList）。
 # 真实未决清单（当前 HEAD，不是 2026-09-12 快照）
 
 日期：2026-09-15  

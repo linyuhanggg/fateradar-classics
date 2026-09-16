@@ -89,6 +89,10 @@ class AnnotationValidation(unittest.TestCase):
         self.data["entries"][0]["relatedParagraphIds"] = ["other:L0001-L0001"]
         self.assertTrue(any("related paragraph" in x for x in module.validate_pack(self.data, self.paragraphs)))
 
+    def test_unannotated_source_paragraph_is_allowed(self):
+        paragraphs = {**self.paragraphs, "book:L0009-L0009": {"start_line": 9, "end_line": 9}}
+        self.assertEqual(module.validate_pack(self.data, paragraphs), [])
+
 
 if __name__ == "__main__":
     unittest.main()
