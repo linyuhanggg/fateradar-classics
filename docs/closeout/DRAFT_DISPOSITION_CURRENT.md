@@ -1,7 +1,7 @@
 # Draft 逐条处置账（当前 HEAD 自动重算）
 
-HEAD：`70097782b7ca65b5abfe30f7890372da618836da`
-draft 总数：**13724**
+HEAD：`36639d5382192a4533bee77ae70e99dd2b42ef28`
+draft 总数：**13820**
 
 本文件由 `tools/build-draft-disposition.py` 生成，可随时重跑；每一条 draft 都有独立行记录源 ID、证据路径与分类依据。
 **分类不等于结案**：`catalog_metadata` 依 schema 保留 draft 属正常去向，`verifiable_text`、`figure_or_lacuna`、`edition_variant`、`illegible` 仍是真实待办。
@@ -10,9 +10,9 @@ draft 总数：**13724**
 
 | 分类 | 条数 | 含义 |
 | --- | ---: | --- |
-| `verifiable_text` | 6904 | 可核实正文：电子原文完整可读，尚待完整语义对读 |
-| `catalog_metadata` | 4510 | 目录/元数据：章题、卷端题署、版记或现代恢复说明，按 schema 保留 draft 状态 |
-| `figure_or_lacuna` | 2016 | 图文缺失：含缺字、图像占位或残表标记 |
+| `verifiable_text` | 6980 | 可核实正文：电子原文完整可读，尚待完整语义对读 |
+| `catalog_metadata` | 4528 | 目录/元数据：章题、卷端题署、版记或现代恢复说明，按 schema 保留 draft 状态 |
+| `figure_or_lacuna` | 2018 | 图文缺失：含缺字、图像占位或残表标记 |
 | `edition_variant` | 293 | 版本异文：note 记录异文或版本差异问题 |
 | `illegible` | 1 | 原件仍不可辨：残句无正向可读证据 |
 
@@ -23,8 +23,8 @@ draft 总数：**13724**
 | huangji-jingshi | 3103 |
 | qimen-dunjia-tongzhi | 1289 |
 | yuanhai-ziping | 1266 |
+| wuxing-jingji | 1207 |
 | zengshan-buyi | 1158 |
-| wuxing-jingji | 1111 |
 | yuqia-ji | 873 |
 | minghai-quanbian | 804 |
 | daliuren-daquan | 767 |
