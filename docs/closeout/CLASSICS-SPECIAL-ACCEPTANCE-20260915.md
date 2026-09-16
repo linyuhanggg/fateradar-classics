@@ -2,11 +2,11 @@
 
 结论：**尚未全部完成。** 本文件是当前进度。`CLASSICS-SPECIAL-ACCEPTANCE-20260913.md` 仍写 62,907 注释，只可作历史。
 
-精确 SHA 随本提交。基线 `5449b299` 为 81,417 段；t125 后 83,351；本批 t159 后 **87,528**。
+精确 SHA 随本提交。基线 `5449b299` 为 81,417 段；t125 后 83,351；本批 t160 后 **87,647**。
 
 ## 独立重算
 
-源段 87,528，注释 87,528；未注释、悬空 ID、重复 ID 均 0。source-reviewed 74,456，draft 13,072。source-reviewed 不等于影印复核。
+源段 87,647，注释 87,647；未注释、悬空 ID、重复 ID 均 0。source-reviewed 74,497，draft 13,150。source-reviewed 不等于影印复核。
 
 catalogComplete=false 仍 **8** 个：SK1610、DZ1040、SK1573、7533808921945833506、SDZJ0174、SK1599、SK1619、SK1609。XYXZSBY、SDZJ0170、HY2301 与 SK1588、SK1603、SK1615、SK1618 一样，只是识典网页目录取齐，**不是**古本全帙。
 
@@ -46,6 +46,7 @@ catalogComplete=false 仍 **8** 个：SK1610、DZ1040、SK1573、753380892194583
 - t157 7533808921945833506《五行精纪》缺章继续分批合入：21 章 / 84 新段（37 source-reviewed / 47 draft）。本版 752→836 段；仍余 385 章 / 2,525 段未合入，`catalogComplete` 仍 false。
 - t158 7533808921945833506《五行精纪》缺章继续分批合入：26 章 / 138 新段（67 source-reviewed / 71 draft）。本版 836→974 段；仍余 359 章 / 2,387 段未合入，`catalogComplete` 仍 false。
 - t159 7533808921945833506《五行精纪》缺章继续分批合入：23 章 / 112 新段（53 source-reviewed / 59 draft）。本版 974→1,086 段；仍余 336 章 / 2,275 段未合入，`catalogComplete` 仍 false。
+- t160 7533808921945833506《五行精纪》缺章继续分批合入：40 章 / 119 新段（41 source-reviewed / 78 draft）。本版 1,086→1,205 段；仍余 296 章 / 2,156 段未合入，`catalogComplete` 仍 false。
 
 - t122 SK1588：30→320，290 新注释（274 source-reviewed / 16 draft）。
 - t123 SK1603：247→429，182 新注释（113 source-reviewed / 69 draft）。
