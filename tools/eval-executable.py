@@ -126,9 +126,10 @@ def _match(facts: list[dict], key: str, want, scope: dict | None) -> bool:
         if f.get("key") != key:
             continue
         if scope:
-            if "pillar" in scope and (f.get("scope") or {}).get("pillar") != scope["pillar"]:
-                continue
-            if "value" in scope and f.get("value") != scope["value"]:
+            # 按 scope 字段逐个比：早年只支持 pillar/value，t183 因紫微格局定义需要
+            # （`{ziwei_star: 紫微, scope: {palace: 命宫}}`）泛化为任意字段同名匹配。
+            fscope = f.get("scope") or {}
+            if any(fscope.get(k) != v for k, v in scope.items()):
                 continue
         if want is None:
             return True
@@ -151,6 +152,59 @@ def eval_field(name: str, want, facts: list[dict], present: set[str]) -> tuple[s
     return (TRUE if ok else FALSE), basis, key, scope
 
 
+DEFINITIONS_DIR = ROOT / "references/definitions"
+
+
+def load_definitions() -> tuple[dict[str, dict], dict[str, dict]]:
+    """读取有据定义表：返回 (可展开的定义, 已查明「无定义」的条目)。
+
+    定义一律来自原文（表内每条都带锚点行与逐字引文），本函数不做任何补写。
+    """
+    defined: dict[str, dict] = {}
+    undefined: dict[str, dict] = {}
+    for f in sorted(DEFINITIONS_DIR.glob("*.json")):
+        d = json.loads(f.read_text(encoding="utf-8"))
+        for e in d.get("entries") or []:
+            defined[e["name"]] = {**e, "_file": f.name}
+        for e in d.get("not_defined") or []:
+            undefined[e["name"]] = {**e, "_file": f.name}
+    return defined, undefined
+
+
+DEFINED, UNDEFINED = load_definitions()
+
+
+def eval_definition(name: str, facts: list[dict], present: set[str]) -> tuple[str, list[str]]:
+    """按定义表求值一个命名定义。三态语义与其它子句一致。"""
+    e = DEFINED.get(name)
+    if e is None:
+        u = UNDEFINED.get(name)
+        if u is not None:
+            ev = (u.get("evidence") or [{}])[0]
+            where = f"（{ev.get('file','')} L{ev.get('line','')}）" if ev else ""
+            return UNDEF, [
+                f"命名定义「{name}」在语料里**没有构成定义**：{u.get('status')}{where}；"
+                f"{u.get('note','')[:80]}"
+            ]
+        return UNDEF, [f"命名定义「{name}」无定义表"]
+    src = e.get("source") or {}
+    where = f"{src.get('file','')} L{src.get('line','')}"
+    expansion = e.get("expansion")
+    if not expansion:
+        return UNKNOWN, [
+            f"命名定义「{name}」**已据原文登记**（{where}：{src.get('quote','')[:48]}），"
+            f"但展开所需事实尚未产出：{'／'.join(e.get('needs') or ['（未列）'])}"
+        ]
+    clauses = expansion.get("all_of") or []
+    missing = [c for c in clauses if c.get("key") not in present]
+    if missing:
+        return UNKNOWN, [f"命名定义「{name}」按 {where} 展开，但本盘缺事实 {sorted({c['key'] for c in missing})}"]
+    bad = [c for c in clauses if not _match(facts, c["key"], c.get("value"), c.get("scope"))]
+    if bad:
+        return FALSE, [f"命名定义「{name}」按 {where} 展开：{[f'{c[chr(107)+chr(101)+chr(121)]}={c.get(chr(118)+chr(97)+chr(108)+chr(117)+chr(101))}' for c in bad]} 未同时成立"]
+    return TRUE, [f"命名定义「{name}」按 {where} 展开且成立"]
+
+
 def eval_when(when, facts: list[dict], present: set[str]) -> tuple[str, list[str]]:
     """求值 `when`，返回 (三态, 依据行)。"""
     notes: list[str] = []
@@ -159,7 +213,9 @@ def eval_when(when, facts: list[dict], present: set[str]) -> tuple[str, list[str
 
     # 命名定义类：没有定义表就无法求值
     if "definition" in when:
-        return UNDEF, [f"命名定义「{when.get('definition')}」无定义表"]
+        # t183：不再一律报「无定义表」——有据定义表里能查到就按原文展开求值；
+        # 语料里确实没有构成定义的，报「没有」并附检索证据；有定义但缺事实的，报缺什么。
+        return eval_definition(when["definition"], facts, present)
     if "interference.id" in when:
         return UNDEF, ["干扰项命名表无注册表"]
 

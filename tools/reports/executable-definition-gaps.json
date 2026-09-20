@@ -1,0 +1,263 @@
+{
+ "report": "executable 层命名定义的可得性（只登记，不写定义）",
+ "generated_by": "t183",
+ "method": "逐名检索 sources/fulltext 下 54 份全文；本门=ziwei 书。",
+ "contract": "按「原文没写就不写」：`absent` 与 `mention-only` 两类**必须留空**，不得据别门散文或常识补写定义。",
+ "unrelated_gap": {
+  "liuyao.structure": {
+   "status": "undefined-everywhere",
+   "why": "17 条 executable 记录以 {exists: \"liuyao.structure\"} 为 when，但该名在**两个仓**里都只被使用、从未被定义（古籍仓与产品仓均无定义处；归档的早期 worktree 里同样只是使用）。",
+   "why_not_guessed": "其 17 个使用者各自的 required_facts 已列出具体子事实，其中 liuyao.node.element（爻五行）与 liuyao.node.state（爻旺衰／空墓）**引擎未产出** —— 故今天连「如实定义它」都构造不出来。",
+   "disposition": "保持未定义；不猜。需要定义者给出它到底指哪些事实。"
+  }
+ },
+ "counts": {
+  "total": 13,
+  "engine-id": 2,
+  "mention-only": 2,
+  "defined-sourced": 8,
+  "absent": 1
+ },
+ "entries": [
+  {
+   "kind": "interference.id",
+   "name": "month-chong",
+   "record": "ZPR-E-08",
+   "book": "ziping-zhenquan.json",
+   "status": "engine-id",
+   "why": "非语料名（引擎关系 id），不属于「从原文找定义」的范畴",
+   "hits": 0,
+   "evidence_sourced": [],
+   "evidence_mentions": []
+  },
+  {
+   "kind": "interference.id",
+   "name": "month-xing",
+   "record": "ZPR-E-08",
+   "book": "ziping-zhenquan.json",
+   "status": "engine-id",
+   "why": "非语料名（引擎关系 id），不属于「从原文找定义」的范畴",
+   "hits": 0,
+   "evidence_sourced": [],
+   "evidence_mentions": []
+  },
+  {
+   "kind": "definition",
+   "name": "辅弼夹帝",
+   "record": "ZWD-E-02",
+   "book": "ziwei-doushu-quanshu.json",
+   "status": "mention-only",
+   "why": "仅在 taiwei-fu／ziwei-doushu-quanshu 出现 2 处（非本门构成定义）",
+   "hits": 2,
+   "evidence_sourced": [],
+   "evidence_mentions": [
+    {
+     "book": "taiwei-fu",
+     "line": 22,
+     "quote": "輔弼夾帝為上品，桃花犯主為至淫。",
+     "rel": "sources/fulltext/ziwei/taiwei-fu/fulltext.md"
+    },
+    {
+     "book": "ziwei-doushu-quanshu",
+     "line": 69,
+     "quote": "輔弼夾帝為上品，桃花犯主為至淫。",
+     "rel": "sources/fulltext/ziwei/ziwei-doushu-quanshu/fulltext.md"
+    }
+   ]
+  },
+  {
+   "kind": "definition",
+   "name": "日月夹财",
+   "record": "ZWD-E-03",
+   "book": "ziwei-doushu-quanshu.json",
+   "status": "defined-sourced",
+   "why": "本门原文给出构成（见 evidence_sourced）",
+   "hits": 7,
+   "evidence_sourced": [
+    {
+     "book": "ziwei-doushu-quanshu",
+     "line": 1572,
+     "quote": "日月夾財 武守命日月來夾是也，財帛宮亦然。",
+     "rel": "sources/fulltext/ziwei/ziwei-doushu-quanshu/fulltext.md",
+     "style": "glossary-entry"
+    },
+    {
+     "book": "ziwei-doushu-quanshu",
+     "line": 4822,
+     "quote": "日月夾財加吉曜不貴則富  如財帛宮在未天府星守，日在午月在申夾財是也，余仿此。",
+     "rel": "sources/fulltext/ziwei/ziwei-doushu-quanshu/fulltext.md",
+     "style": "glossary-entry"
+    }
+   ],
+   "evidence_mentions": []
+  },
+  {
+   "kind": "definition",
+   "name": "君臣庆会",
+   "record": "ZWD-E-04",
+   "book": "ziwei-doushu-quanshu.json",
+   "status": "defined-sourced",
+   "why": "本门原文给出构成（见 evidence_sourced）",
+   "hits": 20,
+   "evidence_sourced": [
+    {
+     "book": "ziwei-doushu-quanshu",
+     "line": 1595,
+     "quote": "君臣慶會 紫微左右同守命是也，更會相武陰妙上。",
+     "rel": "sources/fulltext/ziwei/ziwei-doushu-quanshu/fulltext.md",
+     "style": "glossary-entry"
+    }
+   ],
+   "evidence_mentions": []
+  },
+  {
+   "kind": "definition",
+   "name": "日出扶桑",
+   "record": "ZWD-E-05",
+   "book": "ziwei-doushu-quanshu.json",
+   "status": "defined-sourced",
+   "why": "本门原文给出构成（见 evidence_sourced）",
+   "hits": 13,
+   "evidence_sourced": [
+    {
+     "book": "ziwei-doushu-quanshu",
+     "line": 1587,
+     "quote": "日出扶桑 日在卯守命是也，守官祿宮亦然。",
+     "rel": "sources/fulltext/ziwei/ziwei-doushu-quanshu/fulltext.md",
+     "style": "glossary-entry"
+    }
+   ],
+   "evidence_mentions": []
+  },
+  {
+   "kind": "definition",
+   "name": "月朗天门",
+   "record": "ZWD-E-06",
+   "book": "ziwei-doushu-quanshu.json",
+   "status": "defined-sourced",
+   "why": "本门原文给出构成（见 evidence_sourced）",
+   "hits": 3,
+   "evidence_sourced": [
+    {
+     "book": "ziwei-doushu-quanshu",
+     "line": 1589,
+     "quote": "月落亥宮 月在亥守命是也，又名月朗天門。",
+     "rel": "sources/fulltext/ziwei/ziwei-doushu-quanshu/fulltext.md",
+     "style": "alias"
+    }
+   ],
+   "evidence_mentions": []
+  },
+  {
+   "kind": "definition",
+   "name": "月生沧海",
+   "record": "ZWD-E-07",
+   "book": "ziwei-doushu-quanshu.json",
+   "status": "defined-sourced",
+   "why": "本门原文给出构成（见 evidence_sourced）",
+   "hits": 8,
+   "evidence_sourced": [
+    {
+     "book": "ziwei-doushu-quanshu",
+     "line": 1591,
+     "quote": "月生滄海 月在子宮守田宅是也。",
+     "rel": "sources/fulltext/ziwei/ziwei-doushu-quanshu/fulltext.md",
+     "style": "glossary-entry"
+    }
+   ],
+   "evidence_mentions": []
+  },
+  {
+   "kind": "definition",
+   "name": "金灿光辉",
+   "record": "ZWD-E-08",
+   "book": "ziwei-doushu-quanshu.json",
+   "status": "defined-sourced",
+   "why": "本门原文给出构成（见 evidence_sourced）",
+   "hits": 1,
+   "evidence_sourced": [
+    {
+     "book": "ziwei-doushu-quanshu",
+     "line": 1580,
+     "quote": "金燦光輝 太陽單守，命在午宮是也。",
+     "rel": "sources/fulltext/ziwei/ziwei-doushu-quanshu/fulltext.md",
+     "style": "glossary-entry"
+    }
+   ],
+   "evidence_mentions": []
+  },
+  {
+   "kind": "definition",
+   "name": "魁命钺身",
+   "record": "ZWD-E-09",
+   "book": "ziwei-doushu-quanshu.json",
+   "status": "absent",
+   "why": "全文 0 次",
+   "hits": 0,
+   "evidence_sourced": [],
+   "evidence_mentions": []
+  },
+  {
+   "kind": "definition",
+   "name": "禄马同宫",
+   "record": "ZWD-E-10",
+   "book": "ziwei-doushu-quanshu.json",
+   "status": "mention-only",
+   "why": "仅在 wuxing-jingji／xingxue-dacheng 出现 2 处（非本门构成定义）",
+   "hits": 2,
+   "evidence_sourced": [],
+   "evidence_mentions": [
+    {
+     "book": "wuxing-jingji",
+     "line": 8282,
+     "quote": "凡犯一位，主多口面，二位帶殺主刑徒，如祿馬同宮，卻有衣食，三位及五行刑剋者，刺配，四位並逢刑殺，乃絞斬之命。（林開五命）",
+     "rel": "sources/fulltext/luming-nayin/wuxing-jingji/fulltext.md"
+    },
+    {
+     "book": "xingxue-dacheng",
+     "line": 539,
+     "quote": "慶賀相逢第一尊 禄馬同宫身命欣從来此説為真貴 管取榮華謁帝君禄馬宫中皆有度 度中分秒宜窮數若得来臨身命中 發禄榮身居帝輔",
+     "rel": "sources/fulltext/xingming/xingxue-dacheng/fulltext.md"
+    }
+   ]
+  },
+  {
+   "kind": "definition",
+   "name": "武曲守垣",
+   "record": "ZWD-E-11",
+   "book": "ziwei-doushu-quanshu.json",
+   "status": "defined-sourced",
+   "why": "本门原文给出构成（见 evidence_sourced）",
+   "hits": 1,
+   "evidence_sourced": [
+    {
+     "book": "ziwei-doushu-quanshu",
+     "line": 1619,
+     "quote": "武曲守垣 武守命卯宮是也，余不是。",
+     "rel": "sources/fulltext/ziwei/ziwei-doushu-quanshu/fulltext.md",
+     "style": "glossary-entry"
+    }
+   ],
+   "evidence_mentions": []
+  },
+  {
+   "kind": "definition",
+   "name": "贪火相逢",
+   "record": "ZWD-E-12",
+   "book": "ziwei-doushu-quanshu.json",
+   "status": "defined-sourced",
+   "why": "本门原文给出构成（见 evidence_sourced）",
+   "hits": 1,
+   "evidence_sourced": [
+    {
+     "book": "ziwei-doushu-quanshu",
+     "line": 1617,
+     "quote": "貪火相逢 謂二星守命同居廟旺是也。",
+     "rel": "sources/fulltext/ziwei/ziwei-doushu-quanshu/fulltext.md",
+     "style": "glossary-entry"
+    }
+   ],
+   "evidence_mentions": []
+  }
+ ]
+}

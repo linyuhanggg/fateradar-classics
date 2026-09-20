@@ -1,0 +1,159 @@
+{
+ "report": "紫微命盘「命名格局」的**有据定义**表（t183）",
+ "why": "executable 层有 11 条记录以 {definition: 格局名} 为 when，长期只能报「未提供定义表」。本表回答「这些名字在我们自己的语料里有没有定义」，并给出**可求值的展开**。定义一律取自原文，逐条附锚点行；**没有原文的绝不补写**。",
+ "source_glossary": {
+  "file": "sources/fulltext/ziwei/ziwei-doushu-quanshu/fulltext.md",
+  "range": "L1572-L1622",
+  "note": "紫微斗数全书的格局术语表，体例为「名稱 構成…是也。」；另有别名体例「…又名 X」。"
+ },
+ "entry_format": "每条形如 {name, record_ids, status, source:{file,line,quote}, expansion（可求值的谓词，仅在事实齐备时给出）, required_facts, needs（缺什么）, note}",
+ "entries": [
+  {
+   "name": "君臣庆会",
+   "record_ids": ["ZWD-E-04"],
+   "status": "evaluable",
+   "source": {
+    "file": "sources/fulltext/ziwei/ziwei-doushu-quanshu/fulltext.md",
+    "line": 1595,
+    "quote": "君臣慶會 紫微左右同守命是也，更會相武陰妙上。"
+   },
+   "expansion": {
+    "all_of": [
+     {"key": "ziwei_star", "value": "紫微", "scope": {"palace": "命宫"}},
+     {"key": "ziwei_star", "value": "左辅", "scope": {"palace": "命宫"}},
+     {"key": "ziwei_star", "value": "右弼", "scope": {"palace": "命宫"}}
+    ]
+   },
+   "required_facts": ["ziwei_star@palace", "ziwei_palace"],
+   "needs": [],
+   "note": "「同守命」＝三星同在命宫，用显式 scope.palace 表达（无需 same）。原文末句「更會相武陰妙上」是进一步的会照观察，不属构成，未表达。"
+  },
+  {
+   "name": "武曲守垣",
+   "record_ids": ["ZWD-E-11"],
+   "status": "needs-fact",
+   "source": {
+    "file": "sources/fulltext/ziwei/ziwei-doushu-quanshu/fulltext.md",
+    "line": 1619,
+    "quote": "武曲守垣 武守命卯宮是也，余不是。"
+   },
+   "expansion": null,
+   "required_facts": ["ziwei_star@palace", "raw.palaces.earthlyBranch"],
+   "needs": ["宫地支（palaces.earthlyBranch）——引擎已算（`p.earthlyBranch`），但事实层未产出"],
+   "note": "原文有「余不是」＝只限卯宫，故不能只写「武曲在命宫」——那是**超集**，禁止。"
+  },
+  {
+   "name": "日出扶桑",
+   "record_ids": ["ZWD-E-05"],
+   "status": "needs-fact",
+   "source": {
+    "file": "sources/fulltext/ziwei/ziwei-doushu-quanshu/fulltext.md",
+    "line": 1587,
+    "quote": "日出扶桑 日在卯守命是也，守官祿宮亦然。"
+   },
+   "expansion": null,
+   "required_facts": ["ziwei_star@palace", "raw.palaces.earthlyBranch"],
+   "needs": ["宫地支（同上）"],
+   "note": "两个位置皆可：守命或守事业（官禄），且该宫为卯。"
+  },
+  {
+   "name": "月朗天门",
+   "record_ids": ["ZWD-E-06"],
+   "status": "needs-fact",
+   "source": {
+    "file": "sources/fulltext/ziwei/ziwei-doushu-quanshu/fulltext.md",
+    "line": 1589,
+    "quote": "月落亥宮 月在亥守命是也，又名月朗天門。"
+   },
+   "expansion": null,
+   "required_facts": ["ziwei_star@palace", "raw.palaces.earthlyBranch"],
+   "needs": ["宫地支（同上）"],
+   "note": "**别名体例**：本条名在原文里以「又名」出现，定义实体是「月落亥宫」。（此条是繁简检索坑的实例：初版按简体名检索报「全文 0 次」。）"
+  },
+  {
+   "name": "月生沧海",
+   "record_ids": ["ZWD-E-07"],
+   "status": "needs-fact",
+   "source": {
+    "file": "sources/fulltext/ziwei/ziwei-doushu-quanshu/fulltext.md",
+    "line": 1591,
+    "quote": "月生滄海 月在子宮守田宅是也。"
+   },
+   "expansion": null,
+   "required_facts": ["ziwei_star@palace", "raw.palaces.earthlyBranch"],
+   "needs": ["宫地支（同上）"],
+   "note": "月在子宫而守田宅。"
+  },
+  {
+   "name": "金灿光辉",
+   "record_ids": ["ZWD-E-08"],
+   "status": "needs-fact",
+   "source": {
+    "file": "sources/fulltext/ziwei/ziwei-doushu-quanshu/fulltext.md",
+    "line": 1580,
+    "quote": "金燦光輝 太陽單守，命在午宮是也。"
+   },
+   "expansion": null,
+   "required_facts": ["ziwei_star@palace", "raw.palaces.earthlyBranch"],
+   "needs": ["宫地支", "「單守」判定（命宫除太阳外无其他主星）"],
+   "note": "两截：宫支 ＋ 單守。單守能否用 none_of 表达，需先定「主星」名单，未擅动。"
+  },
+  {
+   "name": "贪火相逢",
+   "record_ids": ["ZWD-E-12"],
+   "status": "needs-fact",
+   "source": {
+    "file": "sources/fulltext/ziwei/ziwei-doushu-quanshu/fulltext.md",
+    "line": 1617,
+    "quote": "貪火相逢 謂二星守命同居廟旺是也。"
+   },
+   "expansion": null,
+   "required_facts": ["ziwei_star@palace", "star.brightness"],
+   "needs": ["星曜亮度（引擎已算 `s.brightness`，事实层未产出）"],
+   "note": "「二星守命同居」＝贪狼与火星同在命宫，这部分可写；但「廟旺」缺事实，只写同宫是**子集**——子集可写，须披露；本轮未写，留待亮度就位。"
+  },
+  {
+   "name": "日月夹财",
+   "record_ids": ["ZWD-E-03"],
+   "status": "needs-fact",
+   "source": {
+    "file": "sources/fulltext/ziwei/ziwei-doushu-quanshu/fulltext.md",
+    "line": 1572,
+    "quote": "日月夾財 武守命日月來夾是也，財帛宮亦然。"
+   },
+   "expansion": null,
+   "required_facts": ["ziwei_star@palace", "relations.jia"],
+   "needs": ["「夹」＝相邻宫的方位关系（引擎未产出关系层）"],
+   "note": "另有 L4822 一条实例说明（財帛宮在未、日在午月在申夾財是也），可作旁证。"
+  }
+ ],
+ "not_defined": [
+  {
+   "name": "辅弼夹帝",
+   "record_ids": ["ZWD-E-02"],
+   "status": "mention-only",
+   "evidence": [
+    {"file": "sources/fulltext/ziwei/taiwei-fu/fulltext.md", "line": 22, "quote": "輔弼夾帝為上品，桃花犯主為至淫。"},
+    {"file": "sources/fulltext/ziwei/ziwei-doushu-quanshu/fulltext.md", "line": 69, "quote": "輔弼夾帝為上品，桃花犯主為至淫。"}
+   ],
+   "note": "两处都只是**赋文断语**（為上品），没有构成定义。术语表里另有「輔弼拱主」（紫微守命二星來拱是也，夾之亦然）——**名字不同**，不据此改名定义。"
+  },
+  {
+   "name": "禄马同宫",
+   "record_ids": ["ZWD-E-10"],
+   "status": "mention-only",
+   "evidence": [
+    {"file": "sources/fulltext/luming-nayin/wuxing-jingji/fulltext.md", "line": 8282, "quote": "如祿馬同宮，卻有衣食"},
+    {"file": "sources/fulltext/xingming/xingxue-dacheng/fulltext.md", "line": 539, "quote": "禄馬同宫身命欣"}
+   ],
+   "note": "只在**别门**（五行精纪／星学大成）散文与歌诀里出现，非本门构成定义。术语表里另有「祿馬佩印」，名字不同。"
+  },
+  {
+   "name": "魁命钺身",
+   "record_ids": ["ZWD-E-09"],
+   "status": "absent",
+   "evidence": [],
+   "note": "全文 **0 次**。术语表里另有「坐貴向貴」（謂魁鉞在命迭相坐拱是也）——名字不同，不据此改名。"
+  }
+ ]
+}
