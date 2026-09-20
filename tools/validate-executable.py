@@ -18,6 +18,9 @@ NAMED_GAP_KINDS = ("source-term", "verdict-scope", "unimplemented-reason")
 NAMED_GAP_TERM_STATUSES = ("criterion-stated", "partially-stated", "source-undefined", "reading-undetermined")
 NAMED_GAP_SCOPE_STATUSES = ("named-scope-decision",)
 NAMED_GAP_REASON_CLASSES = ("implementation-gap", "evidence-undecided", "out-of-scope")
+# 救应专词：出现即说明原文写了救应条款，与 rescue="none" 冲突。
+# 有意**不含** 制化／通关 —— 它们是条款常见内容而非救应标记（见 RESCUE_NONE_CLAUSE 处注释）。
+RESCUE_CLAUSE_WORDS = ("有救", "無救", "无救", "救應", "救应", "可解", "得解", "救神")
 
 
 def validate_named_gaps(rule: dict, rel, rid: str, lines: list[str], paragraphs: dict, fulltext: str, error) -> int:
@@ -206,6 +209,48 @@ def validate(root: Path) -> dict:
             # docs/closeout/RESCUE-LABEL-AUDIT-20260912.md。
             if isinstance(rescue, str) and rescue not in ("self", "unimplemented", "none"):
                 dependencies.append((str(rel), rid, rescue))
+
+            # ── 救应标签的两个契约（t174 补；改前实测这两个方向都没人管）──────────────
+            # (1) 反向：`rescue="unimplemented"` 必须**真的**登记一条 unimplemented-reason。
+            #     原校验器只管正向（reason 只许挂在 unimplemented 上），
+            #     反向没人管 —— 实测把某条 rescue 改成 unimplemented、不写登记，仍然 exit 0。
+            #     那样「原文有救应、引擎未实现」就成了一句无据声明，正是任务书点名的
+            #     「不把未实现的救应写成没有救应」的反面。
+            gaps_here = rule.get("named_gaps") or []
+            has_unimpl_reason = any(
+                isinstance(g, dict) and g.get("kind") == "unimplemented-reason" for g in gaps_here
+            )
+            if rescue == "unimplemented" and not has_unimpl_reason:
+                error(
+                    "RESCUE_GAP",
+                    rel,
+                    rid,
+                    "rescue=unimplemented 必须登记一条 kind=unimplemented-reason 的具名登记"
+                    "（说明是实现缺口还是证据未决），否则「原文有救应」无据",
+                )
+
+            # (2) `rescue="none"` 意为「原文根本没有救应条款」。若本条**自己的来源**里出现
+            #     救应专词，那就是错标。判据只取救应专词（有救/无救/救应/可解/得解/救神），
+            #     **不含** 制化／通关 —— 后者常是条款本身的内容（实测唯一命中项
+            #     QTB-M-10-06 的「其生剋制化，与五月略同」是章节互见，不是救应）。
+            if rescue == "none":
+                # ⚠ 必须直接读 rule，不能读 `sources` 变量：那一行在本段**之后**才赋值，
+                # 此处读到的是**上一条规则**遗留的值（初版即因此误报过 QTB-M-02-06）。
+                own_sources = rule.get("sources")
+                own = " ".join(
+                    str(src.get("quote") or "")
+                    for src in (own_sources or [])
+                    if isinstance(src, dict)
+                )
+                hits = [w for w in RESCUE_CLAUSE_WORDS if w in own]
+                if hits:
+                    error(
+                        "RESCUE_NONE_CLAUSE",
+                        rel,
+                        rid,
+                        f"rescue=none 声明「原文没有救应条款」，但本条来源里出现救应专词 {hits}；"
+                        "不得把未实现的救应写成没有救应",
+                    )
             sources = rule.get("sources")
             if not isinstance(sources, list) or not sources:
                 error("SOURCES", rel, rid, "至少需要一个来源摘录")

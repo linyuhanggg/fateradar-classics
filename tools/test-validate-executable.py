@@ -37,7 +37,7 @@ class SourceIntegrityTests(unittest.TestCase):
             "quote": "官逢傷，而透印以解之。\n[…]\n相神有傷，立敗其格。",
             "required_facts": ["stems"], "when": {"exists": "stems"},
             "satisfy_when": "条件已计算并成立", "fail_when": "条件已计算且不成立", "unknown_when": "缺少位置或力量",
-            "rescue": "unimplemented", "vernacular": "需看印是否能起作用。", "implementation_assumption": "只记录位置。", "verified": False,
+            "rescue": "self", "vernacular": "需看印是否能起作用。", "implementation_assumption": "只记录位置。", "verified": False,
         }
         self.data = {"schema_version": "fateradar-executable-v2", "book": {"slug": "example", "system": "bazi", "title": "例文", "fulltext": "sources/fulltext/bazi/example/fulltext.md"}, "verified": False, "rules": [self.rule]}
         self.path = self.root / "references/executable/example.json"
@@ -226,11 +226,13 @@ class SourceIntegrityTests(unittest.TestCase):
         }
 
     def test_unimplemented_reason_registration_passes(self):
+        self.rule["rescue"] = "unimplemented"
         self.rule["named_gaps"] = [self.unimpl_gap()]
         result = self.result()
         self.assertTrue(result["ok"], [e["code"] for e in result["errors"]])
 
     def test_unimplemented_reason_class_must_be_known(self):
+        self.rule["rescue"] = "unimplemented"
         gap = self.unimpl_gap()
         gap["reason_class"] = "mystery"
         self.rule["named_gaps"] = [gap]
@@ -241,7 +243,35 @@ class SourceIntegrityTests(unittest.TestCase):
         self.rule["named_gaps"] = [self.unimpl_gap()]
         self.rejects("NAMED_GAPS")
 
+    def test_unimplemented_requires_a_reason_registration(self):
+        """反向契约：声明 rescue=unimplemented 就必须真的登记一条 unimplemented-reason。
+
+        改前实测：把某条 rescue 改成 unimplemented、不写登记，校验器仍 exit 0 ——
+        那样「原文有救应、引擎未实现」就是一句无据声明。
+        """
+        self.rule["rescue"] = "unimplemented"
+        self.rule.pop("named_gaps", None)
+        self.rejects("RESCUE_GAP")
+
+    def test_rescue_none_cannot_hide_a_rescue_clause(self):
+        """rescue=none 声明「原文没有救应条款」，来源里却出现救应专词 → 必须被拒。"""
+        self.source.write_text("官逢傷，而透印以解之。\n\n相神有傷，立敗其格。\n\n若無救則凶。\n", encoding="utf-8")
+        paragraphs_path = self.root / "references/inventory/paragraphs/bazi/example.json"
+        paragraphs = json.loads(paragraphs_path.read_text(encoding="utf-8"))
+        paragraphs["paragraphs"].append({"id": "example:L0005-L0005", "start_line": 5, "end_line": 5})
+        paragraphs_path.write_text(json.dumps(paragraphs, ensure_ascii=False), encoding="utf-8")
+        self.rule["paragraph_ids"] = ["example:L0001-L0001", "example:L0005-L0005"]
+        self.rule["sources"] = [
+            {"paragraph_id": "example:L0001-L0001", "start_line": 1, "end_line": 1, "quote": "官逢傷，而透印以解之。"},
+            {"paragraph_id": "example:L0005-L0005", "start_line": 5, "end_line": 5, "quote": "若無救則凶。"},
+        ]
+        self.rule["quote"] = "官逢傷，而透印以解之。\n[…}\n若無救則凶。".replace("}", "]")
+        self.rule["rescue"] = "none"
+        self.rule.pop("named_gaps", None)
+        self.rejects("RESCUE_NONE_CLAUSE")
+
     def test_unimplemented_reason_evidence_must_come_from_its_own_sources(self):
+        self.rule["rescue"] = "unimplemented"
         # 另建一条真实段落，引它作证据（原文逐字无误），但它不在本条的 sources 里 → 必须被拒。
         self.source.write_text(self.source.read_text() + "\n另有一句原文。\n", encoding="utf-8")
         paragraphs = json.loads(self.root.joinpath("references/inventory/paragraphs/bazi/example.json").read_text(encoding="utf-8"))
