@@ -1,0 +1,23 @@
+[
+ {
+  "book": "divination/huozhu-lin",
+  "rule_id": "HZL-R002",
+  "applicable_to_yaml": "[{key: liuyao_yongshen, value: 妻财}, {key: liuyao_yongshen, value: 官鬼}]",
+  "evidence_from_statement": "财官旺相",
+  "note": "「旺相／休囚、有辅／无辅」是该条的**两支断法**，不是适用范围；适用范围为用神属财或官。"
+ },
+ {
+  "book": "divination/huozhu-lin",
+  "rule_id": "HZL-R005",
+  "applicable_to_yaml": "[{key: liuyao_yongshen, value: 妻财}, {key: liuyao_yongshen, value: 官鬼}]",
+  "evidence_from_statement": "财官出现旺相",
+  "note": "「出现宜久远／伏藏多短时」同上属断法；与 R002 同适用范围（原文同以「财官」起句）。"
+ },
+ {
+  "book": "divination/huozhu-lin",
+  "rule_id": "HZL-R004",
+  "applicable_to_yaml": "{any_of: [{all_of: [{key: liuqin, value: 妻财, scope: {yao: 1}}, {key: shiyao, value: 初爻, scope: {yao: 1}}]}, {all_of: [{key: liuqin, value: 官鬼, scope: {yao: 1}}, {key: shiyao, value: 初爻, scope: {yao: 1}}]}, {all_of: [{key: liuqin, value: 妻财, scope: {yao: 2}}, {key: shiyao, value: 二爻, scope: {yao: 2}}]}, {all_of: [{key: liuqin, value: 官鬼, scope: {yao: 2}}, {key: shiyao, value: 二爻, scope: {yao: 2}}]}, {all_of: [{key: liuqin, value: 妻财, scope: {yao: 3}}, {key: shiyao, value: 三爻, scope: {yao: 3}}]}, {all_of: [{key: liuqin, value: 官鬼, scope: {yao: 3}}, {key: shiyao, value: 三爻, scope: {yao: 3}}]}, {all_of: [{key: liuqin, value: 妻财, scope: {yao: 4}}, {key: shiyao, value: 四爻, scope: {yao: 4}}]}, {all_of: [{key: liuqin, value: 官鬼, scope: {yao: 4}}, {key: shiyao, value: 四爻, scope: {yao: 4}}]}, {all_of: [{key: liuqin, value: 妻财, scope: {yao: 5}}, {key: shiyao, value: 五爻, scope: {yao: 5}}]}, {all_of: [{key: liuqin, value: 官鬼, scope: {yao: 5}}, {key: shiyao, value: 五爻, scope: {yao: 5}}]}, {all_of: [{key: liuqin, value: 妻财, scope: {yao: 6}}, {key: shiyao, value: 六爻, scope: {yao: 6}}]}, {all_of: [{key: liuqin, value: 官鬼, scope: {yao: 6}}, {key: shiyao, value: 六爻, scope: {yao: 6}}]}]}",
+  "evidence_from_statement": "财官持世",
+  "note": "「虽可许，但应爻或动爻克所用辅爻则事难成」属断法；适用范围为财／官持世。"
+ }
+]

@@ -145,10 +145,12 @@
     {
       "book": "divination/huozhu-lin",
       "rule_id": "HZL-R002",
-      "decision": "unmapped",
+      "decision": "mapped",
       "reason_class": "fact-not-emitted",
       "evidence_from_statement": "财官旺相、有辅体发动或生世为可用；休囚、克破、无辅则力薄",
-      "note": "缺旺相／休囚、克破、发动、生世关系；「辅体」是取用后的角色（非 FactKey）。"
+      "note": "缺旺相／休囚、克破、发动、生世关系；「辅体」是取用后的角色（非 FactKey）。",
+      "mapped_by": "liuyao-caiguan-map.json",
+      "mapped_note": "t194 映射：「财官」＝妻财/官鬼（求财/求官两路的用神），这是三条共同适用范围；各自的旺相/休囚、出现/伏藏、持世与否属**断法**而非适用范围。R004 的「持世」用枚举配对（6 爻×2 六亲），两句都带取值、不用无取值子句。"
     },
     {
       "book": "divination/huozhu-lin",
@@ -161,18 +163,22 @@
     {
       "book": "divination/huozhu-lin",
       "rule_id": "HZL-R004",
-      "decision": "unmapped",
+      "decision": "mapped",
       "reason_class": "fact-not-emitted",
       "evidence_from_statement": "财官持世虽可许，但应爻或动爻克所用辅爻则事难成",
-      "note": "需要「持世／持某爻」的角色绑定与「应爻／动爻 → 辅爻」的克关系，两者都未产出。"
+      "note": "需要「持世／持某爻」的角色绑定与「应爻／动爻 → 辅爻」的克关系，两者都未产出。",
+      "mapped_by": "liuyao-caiguan-map.json",
+      "mapped_note": "t194 映射：「财官」＝妻财/官鬼（求财/求官两路的用神），这是三条共同适用范围；各自的旺相/休囚、出现/伏藏、持世与否属**断法**而非适用范围。R004 的「持世」用枚举配对（6 爻×2 六亲），两句都带取值、不用无取值子句。"
     },
     {
       "book": "divination/huozhu-lin",
       "rule_id": "HZL-R005",
-      "decision": "unmapped",
+      "decision": "mapped",
       "reason_class": "fact-not-emitted",
       "evidence_from_statement": "财官出现旺相宜久远；伏藏有气虽可取，多利短时或暂成",
-      "note": "缺旺衰与「出现／伏藏」的持续久暂判断；伏藏虽有 fushen 事实，但本条的判据是「有气」与久远/暂成的区分，fushen 无法区分。"
+      "note": "缺旺衰与「出现／伏藏」的持续久暂判断；伏藏虽有 fushen 事实，但本条的判据是「有气」与久远/暂成的区分，fushen 无法区分。",
+      "mapped_by": "liuyao-caiguan-map.json",
+      "mapped_note": "t194 映射：「财官」＝妻财/官鬼（求财/求官两路的用神），这是三条共同适用范围；各自的旺相/休囚、出现/伏藏、持世与否属**断法**而非适用范围。R004 的「持世」用枚举配对（6 爻×2 六亲），两句都带取值、不用无取值子句。"
     },
     {
       "book": "divination/zengshan-buyi",
