@@ -1,0 +1,758 @@
+{
+ "report": "必然恒真（零区分度）映射登记册 —— 只登记、不改规则",
+ "generated_by": "t182",
+ "why": "`--discrimination` 的 hard 档原只认「通配 *」与「整段覆盖封闭值域」，漏掉「域完备键上写单个取值」这一形态；t182 补上后 hard 由 25 条增至 64 条。",
+ "disposition": "**清理会下调既有覆盖率**（这些规则目前都算「已映射」），故属 t179 §6 需人判 ⑥，由人决定；机器不擅自改。",
+ "domain_complete_keys": {
+  "liuyao": [
+   "liushen"
+  ],
+  "qimen": [
+   "bamen",
+   "jiuxing"
+  ],
+  "ziwei": [
+   "sihua",
+   "ziwei_palace"
+  ],
+  "liuren": [
+   "sanchuan"
+  ]
+ },
+ "sample_complete_keys_excluded": {
+  "bazi": [
+   "shishen"
+  ],
+  "qizheng": [
+   "gongwei",
+   "miaowang",
+   "xingyao"
+  ]
+ },
+ "counts": {
+  "total": 64,
+  "bazi": 17,
+  "ziwei": 26,
+  "qimen": 7,
+  "liuren": 9,
+  "liuyao": 4,
+  "qizheng": 1,
+  "by_class": {
+   "domain-complete-key-single-value": 42,
+   "wildcard": 20,
+   "domain-covering-enumeration": 2
+  }
+ },
+ "entries": [
+  {
+   "art": "bazi",
+   "book": "luming-nayin/li-xuzhong-mingshu",
+   "rule_id": "LIXUZHONGMIN-064",
+   "class": "wildcard",
+   "clause": null,
+   "domain_covering": [],
+   "statement": "天乙贵神细分文星/华盖/截路空亡/进神/交神/伏神/羊刃等品类；各有半吉/大败之分。"
+  },
+  {
+   "art": "bazi",
+   "book": "luming-nayin/li-xuzhong-mingshu",
+   "rule_id": "LIXUZHONGMIN-082",
+   "class": "wildcard",
+   "clause": null,
+   "domain_covering": [],
+   "statement": "建子月一阳生为岁首；建寅月草木甲拆为人兴。"
+  },
+  {
+   "art": "bazi",
+   "book": "luming-nayin/luoluzi-sanming",
+   "rule_id": "LZ-07-04",
+   "class": "wildcard",
+   "clause": null,
+   "domain_covering": [],
+   "statement": "八孤五墓临空亡"
+  },
+  {
+   "art": "bazi",
+   "book": "luming-nayin/wuxing-jingji",
+   "rule_id": "WX-07-04",
+   "class": "wildcard",
+   "clause": null,
+   "domain_covering": [],
+   "statement": "空亡"
+  },
+  {
+   "art": "bazi",
+   "book": "bazi/yuanhai-ziping",
+   "rule_id": "YR",
+   "class": "wildcard",
+   "clause": null,
+   "domain_covering": [],
+   "statement": "以日为主，年为本，月为提纲，时为辅佐。"
+  },
+  {
+   "art": "bazi",
+   "book": "bazi/yuanhai-ziping",
+   "rule_id": "YR-04",
+   "class": "wildcard",
+   "clause": null,
+   "domain_covering": [],
+   "statement": "神煞作事项辅证，不主格局；与十神/格局冲突时以格局为主。"
+  },
+  {
+   "art": "bazi",
+   "book": "bazi/yuanhai-ziping",
+   "rule_id": "YUANHAIZIPIN-004",
+   "class": "wildcard",
+   "clause": null,
+   "domain_covering": [],
+   "statement": "月支为提纲；得令者旺、失令者衰；月令决定命局基本强弱。"
+  },
+  {
+   "art": "bazi",
+   "book": "bazi/yuanhai-ziping",
+   "rule_id": "YUANHAIZIPIN-013",
+   "class": "wildcard",
+   "clause": null,
+   "domain_covering": [],
+   "statement": "正官一位清纯为佳（忌伤冲多见）；七煞需制化（食制/印化/合留）；正财身财两停为佳；偏财多情慷慨忌劫夺；印绶生身护身；偏印夺食为忌；食神制煞生财；伤官见官为祸；比肩劫财分夺。"
+  },
+  {
+   "art": "bazi",
+   "book": "bazi/ziping-zhenquan",
+   "rule_id": "ZPR-01",
+   "class": "wildcard",
+   "clause": null,
+   "domain_covering": [],
+   "statement": "八字用神专求月令，以日干配月令地支，按生克不同分财官印食、煞伤劫刃等格局。"
+  },
+  {
+   "art": "bazi",
+   "book": "bazi/ziping-zhenquan",
+   "rule_id": "ZPR-03",
+   "class": "wildcard",
+   "clause": null,
+   "domain_covering": [],
+   "statement": "格局不能只判成败，还要看败中是否有救、成中是否被破；救应能改变格局可用性。"
+  },
+  {
+   "art": "bazi",
+   "book": "bazi/ziping-zhenquan",
+   "rule_id": "ZPR-04",
+   "class": "wildcard",
+   "clause": null,
+   "domain_covering": [],
+   "statement": "月令所藏多气，透干或会支可使财变官、官变印、煞化印等，用神随之变化。"
+  },
+  {
+   "art": "bazi",
+   "book": "bazi/ziping-zhenquan",
+   "rule_id": "ZPR-05",
+   "class": "wildcard",
+   "clause": null,
+   "domain_covering": [],
+   "statement": "用神之外，须看相神是否得力；相神能辅成用神或救护格局，是高低成败关键。"
+  },
+  {
+   "art": "bazi",
+   "book": "bazi/ziping-zhenquan",
+   "rule_id": "ZPR-09",
+   "class": "wildcard",
+   "clause": null,
+   "domain_covering": [],
+   "statement": "同一组十神因生克先后、位置远近、透藏关系不同，吉凶结论不同。"
+  },
+  {
+   "art": "bazi",
+   "book": "bazi/ziping-zhenquan",
+   "rule_id": "ZPR-10",
+   "class": "wildcard",
+   "clause": null,
+   "domain_covering": [],
+   "statement": "本书明确降级星辰神煞，格局判断以月令用神、相神、成败救应为主。"
+  },
+  {
+   "art": "bazi",
+   "book": "bazi/ziping-zhenquan",
+   "rule_id": "ZPR-11",
+   "class": "wildcard",
+   "clause": null,
+   "domain_covering": [],
+   "statement": "外格是月令无用时的权取；若月令自有用神，不可别寻外格。"
+  },
+  {
+   "art": "bazi",
+   "book": "bazi/ziping-zhenquan",
+   "rule_id": "ZPR-12",
+   "class": "wildcard",
+   "clause": null,
+   "domain_covering": [],
+   "statement": "行运不只是增减强弱，还会成格、变格、救格、破格。"
+  },
+  {
+   "art": "bazi",
+   "book": "bazi/ziping-zhenquan",
+   "rule_id": "ZPR-13",
+   "class": "wildcard",
+   "clause": null,
+   "domain_covering": [],
+   "statement": "运中天干、地支作用不同，支中喜忌逢运透清又有特别规则。"
+  },
+  {
+   "art": "ziwei",
+   "book": "ziwei/feixing-ziwei-doushu-yuanzhi",
+   "rule_id": "FEIXINGZIWEI-008",
+   "class": "domain-complete-key-single-value",
+   "clause": {
+    "key": "ziwei_palace",
+    "value": "事业"
+   },
+   "domain_covering": [],
+   "statement": "巨门主口舌是非、公门黑暗、法院警署看守律师等象；天刑主刑法、司法、掌权施令、戒师将帅等象。二者在官禄、命身、流年等位置可作为法律/纠纷/公门事务旁证。"
+  },
+  {
+   "art": "ziwei",
+   "book": "ziwei/feixing-ziwei-doushu-yuanzhi",
+   "rule_id": "FEIXINGZIWEI-009",
+   "class": "domain-complete-key-single-value",
+   "clause": {
+    "key": "ziwei_palace",
+    "value": "兄弟"
+   },
+   "domain_covering": [],
+   "statement": "本书用宫位假借看岳父母、子女配偶、叔伯、外孙等关系，例如岳父母可借兄弟/子女等宫位，外孙可由迁移宫与命垣对照并用三合判定。"
+  },
+  {
+   "art": "ziwei",
+   "book": "ziwei/taiwei-fu",
+   "rule_id": "TAIWEIFU-013",
+   "class": "domain-complete-key-single-value",
+   "clause": {
+    "key": "ziwei_palace",
+    "value": "事业"
+   },
+   "domain_covering": [],
+   "statement": "太阳会文昌于官禄，皇殿朝班，富贵全美。"
+  },
+  {
+   "art": "ziwei",
+   "book": "ziwei/taiwei-fu",
+   "rule_id": "TAIWEIFU-014",
+   "class": "domain-complete-key-single-value",
+   "clause": {
+    "key": "ziwei_palace",
+    "value": "夫妻"
+   },
+   "domain_covering": [],
+   "statement": "太阴会文曲于妻宫，蟾宫折桂，文章全盛。"
+  },
+  {
+   "art": "ziwei",
+   "book": "ziwei/taiwei-fu",
+   "rule_id": "TAIWEIFU-015",
+   "class": "domain-complete-key-single-value",
+   "clause": {
+    "key": "ziwei_palace",
+    "value": "交友"
+   },
+   "domain_covering": [],
+   "statement": "禄居奴仆，纵有官也奔驰；帝遇凶徒，虽获吉而无道。"
+  },
+  {
+   "art": "ziwei",
+   "book": "ziwei/taiwei-fu",
+   "rule_id": "TAIWEIFU-019",
+   "class": "domain-complete-key-single-value",
+   "clause": {
+    "key": "ziwei_palace",
+    "value": "命宫"
+   },
+   "domain_covering": [],
+   "statement": "七杀临于身命加恶煞，必定死亡；铃羊合于命宫遇白虎，须当刑戮。"
+  },
+  {
+   "art": "ziwei",
+   "book": "ziwei/taiwei-fu",
+   "rule_id": "TAIWEIFU-TR",
+   "class": "domain-complete-key-single-value",
+   "clause": {
+    "key": "ziwei_palace",
+    "value": "福德"
+   },
+   "domain_covering": [],
+   "statement": "入庙为奇，失度为虚；身命为福德之本，加以根源为穷通之资。"
+  },
+  {
+   "art": "ziwei",
+   "book": "ziwei/ziwei-doushu-quanshu",
+   "rule_id": "ZIWEIDOUSHUQ-006",
+   "class": "domain-complete-key-single-value",
+   "clause": {
+    "key": "ziwei_palace",
+    "value": "财帛"
+   },
+   "domain_covering": [],
+   "statement": "武曲为财帛主，入命主刚毅决断、宜从事财金武职；庙旺会禄存化禄主大富；落陷会煞或与破军同主孤克破耗。"
+  },
+  {
+   "art": "ziwei",
+   "book": "ziwei/ziwei-doushu-quanshu",
+   "rule_id": "ZIWEIDOUSHUQ-007",
+   "class": "domain-complete-key-single-value",
+   "clause": {
+    "key": "ziwei_palace",
+    "value": "福德"
+   },
+   "domain_covering": [],
+   "statement": "天同为福德主星，入命主温和敦厚、福寿绵长；庙旺主一生安乐；落陷会煞则福薄。"
+  },
+  {
+   "art": "ziwei",
+   "book": "ziwei/ziwei-doushu-quanshu",
+   "rule_id": "ZIWEIDOUSHUQ-014",
+   "class": "domain-complete-key-single-value",
+   "clause": {
+    "key": "ziwei_palace",
+    "value": "父母"
+   },
+   "domain_covering": [],
+   "statement": "天梁为寿星·荫主，入命主父母荫庇、延年益寿、宜文教；庙旺会昌曲主科甲；与天机同主善智。"
+  },
+  {
+   "art": "ziwei",
+   "book": "ziwei/ziwei-doushu-quanshu",
+   "rule_id": "ZIWEIDOUSHUQ-030",
+   "class": "domain-complete-key-single-value",
+   "clause": {
+    "key": "ziwei_palace",
+    "value": "命宫"
+   },
+   "domain_covering": [],
+   "statement": "化忌为四化之凶，主忌讳阻碍是非；入命主多波折；化忌坐疾厄主病；与煞会主灾厄。"
+  },
+  {
+   "art": "ziwei",
+   "book": "ziwei/ziwei-doushu-quanshu",
+   "rule_id": "ZIWEIDOUSHUQ-031",
+   "class": "domain-complete-key-single-value",
+   "clause": {
+    "key": "ziwei_palace",
+    "value": "命宫"
+   },
+   "domain_covering": [],
+   "statement": "化禄+化权+化科三吉化于命宫三方四正，成\"三奇加会\"贵格，主大富大贵。"
+  },
+  {
+   "art": "ziwei",
+   "book": "ziwei/ziwei-doushu-quanshu",
+   "rule_id": "ZIWEIDOUSHUQ-035",
+   "class": "domain-complete-key-single-value",
+   "clause": {
+    "key": "ziwei_palace",
+    "value": "夫妻"
+   },
+   "domain_covering": [],
+   "statement": "妻妾宫主婚姻配偶；男看妻、女看夫；庙旺吉星主婚姻和美；落陷凶煞主婚迟/婚变。**注**：原书\"妻妾\"为古制，现代等同于\"夫妻宫\"。"
+  },
+  {
+   "art": "ziwei",
+   "book": "ziwei/ziwei-doushu-quanshu",
+   "rule_id": "ZIWEIDOUSHUQ-036",
+   "class": "domain-complete-key-single-value",
+   "clause": {
+    "key": "ziwei_palace",
+    "value": "子女"
+   },
+   "domain_covering": [],
+   "statement": "子女宫主子女才能与亲缘；庙旺吉星主子女多才贤孝；落陷凶煞主子缘薄。"
+  },
+  {
+   "art": "ziwei",
+   "book": "ziwei/ziwei-doushu-quanshu",
+   "rule_id": "ZIWEIDOUSHUQ-037",
+   "class": "domain-complete-key-single-value",
+   "clause": {
+    "key": "ziwei_palace",
+    "value": "财帛"
+   },
+   "domain_covering": [],
+   "statement": "财帛宫主一生财源得失；庙旺武曲/天府/禄存/化禄主财厚；落陷会空劫破军主破财。"
+  },
+  {
+   "art": "ziwei",
+   "book": "ziwei/ziwei-doushu-quanshu",
+   "rule_id": "ZIWEIDOUSHUQ-038",
+   "class": "domain-complete-key-single-value",
+   "clause": {
+    "key": "ziwei_palace",
+    "value": "疾厄"
+   },
+   "domain_covering": [],
+   "statement": "疾厄宫主健康疾病灾厄；庙旺吉星主体健少病；落陷凶煞主多病灾。"
+  },
+  {
+   "art": "ziwei",
+   "book": "ziwei/ziwei-doushu-quanshu",
+   "rule_id": "ZIWEIDOUSHUQ-039",
+   "class": "domain-complete-key-single-value",
+   "clause": {
+    "key": "ziwei_palace",
+    "value": "迁移"
+   },
+   "domain_covering": [],
+   "statement": "迁移宫主出外移动际遇；庙旺吉星会天马主出外发达；落陷凶煞主出外不利。"
+  },
+  {
+   "art": "ziwei",
+   "book": "ziwei/ziwei-doushu-quanshu",
+   "rule_id": "ZIWEIDOUSHUQ-040",
+   "class": "domain-complete-key-single-value",
+   "clause": {
+    "key": "ziwei_palace",
+    "value": "交友"
+   },
+   "domain_covering": [],
+   "statement": "奴仆宫主朋友下属；庙旺吉星主朋友助力；落陷凶煞主多损友。**注**：现代义近\"交友宫\"。"
+  },
+  {
+   "art": "ziwei",
+   "book": "ziwei/ziwei-doushu-quanshu",
+   "rule_id": "ZIWEIDOUSHUQ-041",
+   "class": "domain-complete-key-single-value",
+   "clause": {
+    "key": "ziwei_palace",
+    "value": "事业"
+   },
+   "domain_covering": [],
+   "statement": "官禄宫主功名职业；庙旺紫微/太阳/化权/化科主官禄通达；落陷凶煞主职业波折。**注**：现代义近\"事业宫\"。"
+  },
+  {
+   "art": "ziwei",
+   "book": "ziwei/ziwei-doushu-quanshu",
+   "rule_id": "ZIWEIDOUSHUQ-042",
+   "class": "domain-complete-key-single-value",
+   "clause": {
+    "key": "ziwei_palace",
+    "value": "田宅"
+   },
+   "domain_covering": [],
+   "statement": "田宅宫主不动产居所；庙旺太阴/天府/化禄主田宅丰；落陷会空劫主田宅破。"
+  },
+  {
+   "art": "ziwei",
+   "book": "ziwei/ziwei-doushu-quanshu",
+   "rule_id": "ZIWEIDOUSHUQ-043",
+   "class": "domain-complete-key-single-value",
+   "clause": {
+    "key": "ziwei_palace",
+    "value": "福德"
+   },
+   "domain_covering": [],
+   "statement": "福德宫主福气精神享受；庙旺天同/天梁/化禄主一生享福；落陷凶煞主精神苦闷。"
+  },
+  {
+   "art": "ziwei",
+   "book": "ziwei/ziwei-doushu-quanshu",
+   "rule_id": "ZIWEIDOUSHUQ-044",
+   "class": "domain-complete-key-single-value",
+   "clause": {
+    "key": "ziwei_palace",
+    "value": "父母"
+   },
+   "domain_covering": [],
+   "statement": "父母宫主父母与长辈关系；庙旺吉星主父母双全有荫；落陷凶煞主父母缘薄。"
+  },
+  {
+   "art": "ziwei",
+   "book": "ziwei/ziwei-doushu-quanshu",
+   "rule_id": "ZIWEIDOUSHUQ-ZW-02",
+   "class": "domain-complete-key-single-value",
+   "clause": {
+    "key": "ziwei_palace",
+    "value": "命宫"
+   },
+   "domain_covering": [],
+   "statement": "左辅右弼会紫微成\"君臣庆会\"贵格；左右夹命主一生贵人多助；单守命宫力减半。"
+  },
+  {
+   "art": "ziwei",
+   "book": "ziwei/ziwei-doushu-quanshu",
+   "rule_id": "ZIWEIDOUSHUQ-ZW-03",
+   "class": "domain-complete-key-single-value",
+   "clause": {
+    "key": "ziwei_palace",
+    "value": "命宫"
+   },
+   "domain_covering": [],
+   "statement": "化权主权力威严决断；入命/官禄主有权力；与化禄会则富贵双全。"
+  },
+  {
+   "art": "ziwei",
+   "book": "ziwei/ziwei-doushu-quanshu",
+   "rule_id": "ZIWEIDOUSHUQ-ZW-08",
+   "class": "domain-complete-key-single-value",
+   "clause": {
+    "key": "ziwei_palace",
+    "value": "父母"
+   },
+   "domain_covering": [],
+   "statement": "古书\"小儿克亲\"指小儿命格主父母离/早卒之类断语；含强烈宿命因果观。"
+  },
+  {
+   "art": "ziwei",
+   "book": "ziwei/ziwei-doushu-quanshu",
+   "rule_id": "ZW-03",
+   "class": "domain-complete-key-single-value",
+   "clause": {
+    "key": "ziwei_palace",
+    "value": "命宫"
+   },
+   "domain_covering": [],
+   "statement": "化禄为四化之首，主财禄福气；十干所化星各异（甲廉贞化禄、乙天机化禄……）；化禄入命/财/官主一生财福。"
+  },
+  {
+   "art": "qimen",
+   "book": "san-shi/qimen-dunjia-tongzhi",
+   "rule_id": "QM-P10",
+   "class": "domain-complete-key-single-value",
+   "clause": {
+    "key": "bamen",
+    "value": "生门"
+   },
+   "domain_covering": [],
+   "statement": "生门六丙临六戊，此为天遁是分明"
+  },
+  {
+   "art": "qimen",
+   "book": "san-shi/qimen-dunjia-tongzhi",
+   "rule_id": "QM-P11",
+   "class": "domain-complete-key-single-value",
+   "clause": {
+    "key": "bamen",
+    "value": "开门"
+   },
+   "domain_covering": [],
+   "statement": "开门六乙临六己，地遁如斯而已矣"
+  },
+  {
+   "art": "qimen",
+   "book": "san-shi/qimen-dunjia-tongzhi",
+   "rule_id": "QM-P12",
+   "class": "domain-complete-key-single-value",
+   "clause": {
+    "key": "bamen",
+    "value": "休门"
+   },
+   "domain_covering": [],
+   "statement": "休门六丁合太阴，欲识人遁莫过此"
+  },
+  {
+   "art": "qimen",
+   "book": "san-shi/qimen-dunjia-tongzhi",
+   "rule_id": "QM-P17",
+   "class": "wildcard",
+   "clause": null,
+   "domain_covering": [],
+   "statement": "六仪击刑 甲子值符三 甲申值符八 甲戌值符二 甲午值符九 甲辰值符四 甲寅值符四"
+  },
+  {
+   "art": "qimen",
+   "book": "san-shi/qimen-dunjia-tongzhi",
+   "rule_id": "QM-P18",
+   "class": "domain-complete-key-single-value",
+   "clause": {
+    "key": "bamen",
+    "value": "开门"
+   },
+   "domain_covering": [],
+   "statement": "开门临三四宫（金克木） 休门临九宫（水克火） 生门临一宫（土克水） 伤门临八宫（木克土） 景门临六宫（火克金） 死门临一宫（土克水） 惊门临三四宫（金克木） 杜门临二八宫（木克土）"
+  },
+  {
+   "art": "qimen",
+   "book": "san-shi/qimen-dunjia-tongzhi",
+   "rule_id": "QM-P19",
+   "class": "domain-complete-key-single-value",
+   "clause": {
+    "key": "bamen",
+    "value": "休门"
+   },
+   "domain_covering": [],
+   "statement": "云遁 休开生与乙奇合奇，地盘六辛"
+  },
+  {
+   "art": "qimen",
+   "book": "san-shi/qimen-dunjia-tongzhi",
+   "rule_id": "QM-P20",
+   "class": "domain-complete-key-single-value",
+   "clause": {
+    "key": "bamen",
+    "value": "休门"
+   },
+   "domain_covering": [],
+   "statement": "风遁 休开生临乙奇，地盘巽四宫"
+  },
+  {
+   "art": "liuren",
+   "book": "san-shi/daliuren-daquan",
+   "rule_id": "DALIURENDAQU-018",
+   "class": "domain-complete-key-single-value",
+   "clause": {
+    "key": "sanchuan",
+    "value": "初传"
+   },
+   "domain_covering": [],
+   "statement": "三传及日干五行均由已验证事实层给出。"
+  },
+  {
+   "art": "liuren",
+   "book": "san-shi/daliuren-daquan",
+   "rule_id": "DALIURENDAQU-019",
+   "class": "domain-complete-key-single-value",
+   "clause": {
+    "key": "sanchuan",
+    "value": "初传"
+   },
+   "domain_covering": [],
+   "statement": "初传能唯一回指发用课，且上下神传统数值和运算可追踪。"
+  },
+  {
+   "art": "liuren",
+   "book": "san-shi/liuren-miben",
+   "rule_id": "LIURENMIBEN-005",
+   "class": "domain-complete-key-single-value",
+   "clause": {
+    "key": "sanchuan",
+    "value": "初传"
+   },
+   "domain_covering": [],
+   "statement": "LM-R03 已进入射覆解释，adapter 已给发用和空亡状态。"
+  },
+  {
+   "art": "liuren",
+   "book": "san-shi/liuren-miben",
+   "rule_id": "LIURENMIBEN-011",
+   "class": "domain-complete-key-single-value",
+   "clause": {
+    "key": "sanchuan",
+    "value": "初传"
+   },
+   "domain_covering": [
+    "sanchuan"
+   ],
+   "statement": "adapter 已给旬空、落空/陷空和三传位置。"
+  },
+  {
+   "art": "liuren",
+   "book": "san-shi/liuren-miben",
+   "rule_id": "LIURENMIBEN-013",
+   "class": "domain-complete-key-single-value",
+   "clause": {
+    "key": "sanchuan",
+    "value": "初传"
+   },
+   "domain_covering": [],
+   "statement": "已有日辰和三传，问题包含进退、过程或结果。"
+  },
+  {
+   "art": "liuren",
+   "book": "san-shi/liuren-miben",
+   "rule_id": "LIURENMIBEN-017",
+   "class": "domain-complete-key-single-value",
+   "clause": {
+    "key": "sanchuan",
+    "value": "初传"
+   },
+   "domain_covering": [],
+   "statement": "用户明确采用卷十七三才应事，且 LM-R00 已通过。"
+  },
+  {
+   "art": "liuren",
+   "book": "san-shi/liuren-miben",
+   "rule_id": "LIURENMIBEN-022",
+   "class": "domain-complete-key-single-value",
+   "clause": {
+    "key": "sanchuan",
+    "value": "初传"
+   },
+   "domain_covering": [],
+   "statement": "用户问应期，发用、天地盘和民用日期均已验证。"
+  },
+  {
+   "art": "liuren",
+   "book": "san-shi/liuren-zhiyin",
+   "rule_id": "LIURENZHIYIN-011",
+   "class": "domain-complete-key-single-value",
+   "clause": {
+    "key": "sanchuan",
+    "value": "初传"
+   },
+   "domain_covering": [],
+   "statement": "取用和三传已定。"
+  },
+  {
+   "art": "liuren",
+   "book": "san-shi/liuren-zhiyin",
+   "rule_id": "LIURENZHIYIN-019",
+   "class": "domain-complete-key-single-value",
+   "clause": {
+    "key": "sanchuan",
+    "value": "初传"
+   },
+   "domain_covering": [
+    "sanchuan"
+   ],
+   "statement": "三传完整有序，五行关系由确定性事实层给出。"
+  },
+  {
+   "art": "liuyao",
+   "book": "divination/huangjin-ce",
+   "rule_id": "HJC-R002",
+   "class": "wildcard",
+   "clause": null,
+   "domain_covering": [],
+   "statement": "世为自己/本方，应为对方/他人；世应相合相生利互动，世应受伤、俱空或冲克则关系不稳。"
+  },
+  {
+   "art": "liuyao",
+   "book": "divination/huozhu-lin",
+   "rule_id": "HZL-R006",
+   "class": "domain-complete-key-single-value",
+   "clause": {
+    "key": "liushen",
+    "value": "青龙"
+   },
+   "domain_covering": [],
+   "statement": "家宅占专看财、子孙与内三爻宅象，再合青龙、龙德、刑冲克制。"
+  },
+  {
+   "art": "liuyao",
+   "book": "divination/huozhu-lin",
+   "rule_id": "HZL-R007",
+   "class": "domain-covering-enumeration",
+   "clause": null,
+   "domain_covering": [
+    "liuqin"
+   ],
+   "statement": "起造迁移喜子孙、财爻旺相持世；忌官鬼、父母、妻、子、兄弟独发扰宅。"
+  },
+  {
+   "art": "liuyao",
+   "book": "divination/zengshan-buyi",
+   "rule_id": "ZENGSHANBUYI-ZR-10",
+   "class": "domain-covering-enumeration",
+   "clause": null,
+   "domain_covering": [
+    "liuqin"
+   ],
+   "statement": "占天时——父母为雨、子孙为晴、官鬼为云雷、妻财为风、兄弟为风云；旺动则现。"
+  },
+  {
+   "art": "qizheng",
+   "book": "xingming/xingxue-dacheng",
+   "rule_id": "XXDC-M01",
+   "class": "wildcard",
+   "clause": null,
+   "domain_covering": [],
+   "statement": "以宫分依次列命、财帛、兄弟、田宅、男女、奴仆、妻妾、疾厄、迁移、官禄、福德、相貌十二宫；仅用于核对宫位事实。"
+  }
+ ]
+}

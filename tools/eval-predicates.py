@@ -297,6 +297,52 @@ def evaluate(rule: dict, facts: list[dict]) -> dict:
     }
 
 
+# ── 「键本身域完备」：在这些键上，任何无 scope 的 {key: 某取值} 子句**必然成立** ──────
+# 判据不是「样本里都出现」（2 盘不足以判定），而是**引擎按固定轮排/固定布列产出该键的全部取值**，
+# 已逐个核对产出代码：
+#   liuyao.liushen      六神按固定次序轮排六爻 → 6 神每盘齐（facts/emit.ts 逐爻 row.spirit）
+#   qimen.bamen         八门固定布列八宫 → 8 门每盘齐（grid.door）
+#   qimen.jiuxing       九星固定布列（中五寄坤，天禽随 hostedStar）→ 9 星每盘齐
+#   ziwei.sihua         禄权科忌每次各落一星 → 4 化每盘齐（palaces.hua）
+#   ziwei.ziwei_palace  十二宫恒在，另加「身宫」标记 → 每盘齐（palaces.name/isBody）
+#   liuren.sanchuan     三传恒有 → 初/中/末每盘齐（chuan.label）
+# **有意不含** bazi.shishen／qizheng.gongwei 等：它们虽在两个样本里恰好齐，
+# 但取值由可变输入派生（四柱十神、七政宫位），**不足以判定结构完备**——
+# 宁可漏报也不误报，这类另以 sample_complete 单列备查。
+DOMAIN_COMPLETE_KEYS: dict[str, set[str]] = {
+    "liuyao": {"liushen"},
+    "qimen": {"bamen", "jiuxing"},
+    "ziwei": {"sihua", "ziwei_palace"},
+    "liuren": {"sanchuan"},
+}
+# 样本内恰好齐、但结构性未核：只列备查，不计入 hard
+SAMPLE_COMPLETE_KEYS: dict[str, set[str]] = {
+    "bazi": {"shishen"},
+    "qizheng": {"gongwei", "xingyao", "miaowang"},
+}
+
+
+def _or_position_taut(ap, keys: set[str]):
+    """在**或位**找到一条其键域完备的子句（平铺列表成员，或整支都恒真的 any_of 分支）。
+
+    只有或位上的恒真子句才会让整条规则恒真；`all_of` 里的恒真子句不影响结论。
+    """
+    def taut(cl) -> bool:
+        return isinstance(cl, dict) and not cl.get("scope") and cl.get("key") in keys
+
+    if isinstance(ap, list):
+        for cl in ap:
+            if taut(cl):
+                return cl
+        return None
+    if isinstance(ap, dict) and "any_of" in ap:
+        for branch in ap["any_of"]:
+            ls = list(_iter_leaves(branch))
+            if ls and all(taut(x) for x in ls):
+                return ls
+    return None
+
+
 def discrimination_report(art: str, cases: dict, values: dict[str, list[str]]) -> list[dict]:
     """找出在**每个样本盘面**都成立的规则 —— 零区分度的嫌疑犯。
 
@@ -306,7 +352,8 @@ def discrimination_report(art: str, cases: dict, values: dict[str, list[str]]) -
 
     **证据分两档，不可混为一谈**：
     · `hard=True`（可据此动手）：表达式含通配 `*`，或其取值把某个**封闭值域**整段覆盖
-      （如 10 个 rizhu 穷尽天干）——结构上恒真，与盘面无关。
+      （如 10 个 rizhu 穷尽天干），**或**在「域完备键」上写了单个取值
+      （如 ziwei_palace 的任一宫名：该键每盘都产出全部取值）——结构上恒真，与盘面无关。
     · `hard=False`（仅线索）：只是在当前 N 个样本上恰好都成立。样本只有 2 盘时
       「都成立」很常见，**不足以判定凑数**，要加样本再谈。
     """
@@ -321,6 +368,10 @@ def discrimination_report(art: str, cases: dict, values: dict[str, list[str]]) -
             continue
         leaves = list(_iter_leaves(ap if isinstance(ap, dict) else {"any_of": ap}))
         wildcard = any(p.get("value") == "*" for p in leaves)
+        # 「单值 × 域完备键」这一档：此前只认通配与整段覆盖，**漏掉了这一类**
+        # （t182 发现：ziwei_palace / bamen / sanchuan / liushen / sihua / jiuxing）。
+        taut_clause = _or_position_taut(ap, DOMAIN_COMPLETE_KEYS.get(art, set()))
+        sample_clause = None if taut_clause else _or_position_taut(ap, SAMPLE_COMPLETE_KEYS.get(art, set()))
         covering: list[str] = []
         for key in {p["key"] for p in leaves}:
             domain = values.get(key) or []
@@ -337,7 +388,9 @@ def discrimination_report(art: str, cases: dict, values: dict[str, list[str]]) -
                 "leaf_count": len(leaves),
                 "wildcard": wildcard,
                 "domain_covering": covering,
-                "hard": bool(wildcard or covering),
+                "domain_complete_clause": taut_clause,
+                "sample_complete_clause": sample_clause,
+                "hard": bool(wildcard or covering or taut_clause),
                 "statement": (rule.get("statement") or "")[:80],
             }
         )
