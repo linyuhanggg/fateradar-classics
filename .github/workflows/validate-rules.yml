@@ -79,6 +79,9 @@ jobs:
       - run: python tools/executable-definition-gaps.py
       # 繁简折半检索：把「查无」当成待验证的断言（t177/t182/t183 三次同类教训）
       - run: python tools/test-han-search.py
+      # 死引用扫描：谓词引用的键必须在样盘里出现过（恒过的扫描等于没有扫描，故带反例）
+      - run: python tools/dead-reference-report.py
+      - run: python tools/test-dead-references.py
       - run: python tools/test-check-ganzhi-sequences.py
       # 步长筛查：与「已登记待核」集合对账（现有 3 条全部指向奇门 p281 第 6 列的「巳/卯」，
       # 已在 ocr-batch-0280-0298.md 的 doubt_281 登记，需原生读图复读一次才能结案）。
