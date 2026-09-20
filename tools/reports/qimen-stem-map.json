@@ -85,6 +85,24 @@
  },
  {
   "book": "san-shi/qimen-dunjia-tongzhi",
+  "rule_id": "QM-P01",
+  "applicable_to_yaml": "{all_of: [{key: zhifu, value: \"*\"}, {key: dipan_gan, value: 丙}], same: gong}",
+  "evidence_from_statement": "甲值符加地盘丙奇"
+ },
+ {
+  "book": "san-shi/qimen-dunjia-tongzhi",
+  "rule_id": "QM-P02",
+  "applicable_to_yaml": "{all_of: [{key: tianpan_gan, value: 丙}, {key: zhifu, value: \"*\"}], same: gong}",
+  "evidence_from_statement": "丙奇加地盘甲值符"
+ },
+ {
+  "book": "san-shi/qimen-dunjia-tongzhi",
+  "rule_id": "QM-P31",
+  "applicable_to_yaml": "{all_of: [{key: tianpan_gan, value: 庚}, {key: zhifu, value: \"*\"}], same: gong}",
+  "evidence_from_statement": "庚临值符"
+ },
+ {
+  "book": "san-shi/qimen-dunjia-tongzhi",
   "rule_id": "QM-P34",
   "applicable_to_yaml": "{all_of: [{key: tianpan_gan, value: 庚}, {key: dipan_gan, value: 丙}], same: gong}",
   "evidence_from_statement": "六庚加丙奇"

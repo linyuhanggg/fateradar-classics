@@ -1,7 +1,7 @@
 {
   "report": "机械判为「本可表达」但经复核仍不映射的残留（30 条）",
   "generated_by": "t177",
-  "why": "`predicate-gap-report.py` 的 classify() 只按「statement 里能否复原出该 art 的 FactKey 取值」判，对散文式古籍**精度很低**：术名本身（六爻）、同义值域（dongyao/shiyao/yingyao 共享爻位）都会造成假命中。本台账把当前 30 条假命中逐条复核并给出理由类别，**避免后续轮次反复重判同一批**。",
+  "why": "`predicate-gap-report.py` 的 classify() 只按「statement 里能否复原出该 art 的 FactKey 取值」判，对散文式古籍**精度很低**：术名本身（六爻）、同义值域（dongyao/shiyao/yingyao 共享爻位）都会造成假命中。本台账把当前 30 条假命中逐条复核并给出理由类别，**避免后续轮次反复重判同一批**。 **t178 更新**：QM-P01／QM-P02／QM-P31 三条原记 gate-blocked，t177 复核发现 t175/t176 加谓词后分母变大，4/27 = 14.8% ≤ 15%，闸门已不再挡，已按存在性通配＋same: gong 映射并从本台账移除（台账设计如此：被映射即移除）。",
   "caveat": "理由是人工判定，不是机器判决；语言或事实一旦变化（如将来产出性别、大运干支、格局名），本台账的对应条目**应被重新评估并从台账移除**。测试会检查台账条目是否仍未被映射。",
   "reason_classes": {
     "declares-no-single-condition": "原文自己说不能凭单一条件断，映射会窄化它",
@@ -154,27 +154,6 @@
       "triage_kind": "single-pair",
       "reason_class": "partial-only",
       "reason": "只可部分表达，部分映射会失真（其余条件未产出）"
-    },
-    {
-      "art": "qimen",
-      "rule_id": "QM-P01",
-      "triage_kind": "single-pair",
-      "reason_class": "gate-blocked",
-      "reason": "事实已齐，但只能写成存在性通配；会撞 15% 通配闸门（需授权）"
-    },
-    {
-      "art": "qimen",
-      "rule_id": "QM-P02",
-      "triage_kind": "single-pair",
-      "reason_class": "gate-blocked",
-      "reason": "事实已齐，但只能写成存在性通配；会撞 15% 通配闸门（需授权）"
-    },
-    {
-      "art": "qimen",
-      "rule_id": "QM-P31",
-      "triage_kind": "single-pair",
-      "reason_class": "gate-blocked",
-      "reason": "事实已齐，但只能写成存在性通配；会撞 15% 通配闸门（需授权）"
     },
     {
       "art": "qizheng",

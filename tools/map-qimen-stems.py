@@ -67,6 +67,15 @@ MAP: dict[str, tuple[str, str]] = {
         "{key: bamen, value: 杜门}], same: gong}",
         "乙奇合九地杜门",
     ),
+    # ── 值符类：条件问的是**值符所在之宫**，不是值符星名 ─────────────────────
+    # `zhifu` 事实带 `scope.gong`（t173 起），故可用 `same: gong` 把「值符宫」
+    # 与「该宫的天／地盘干」绑在一起。这里 `value: "*"` 的语义是**存在性**
+    # （该键须有事实，取值不限），不是凑数——星名随盘而变，静态写不出。
+    # t173 曾因 15% 通配闸门把这 3 条记为 gate-blocked；t175/t176 加了谓词、
+    # 分母变大后，4/27 = 14.8% ≤ 15%，闸门已不再挡（t177 实测复核）。
+    "QM-P01": ("{all_of: [{key: zhifu, value: \"*\"}, {key: dipan_gan, value: 丙}], same: gong}", "甲值符加地盘丙奇"),
+    "QM-P02": ("{all_of: [{key: tianpan_gan, value: 丙}, {key: zhifu, value: \"*\"}], same: gong}", "丙奇加地盘甲值符"),
+    "QM-P31": ("{all_of: [{key: tianpan_gan, value: 庚}, {key: zhifu, value: \"*\"}], same: gong}", "庚临值符"),
     "QM-P34": ("{all_of: [{key: tianpan_gan, value: 庚}, {key: dipan_gan, value: 丙}], same: gong}", "六庚加丙奇"),
     "QM-P35": ("{all_of: [{key: tianpan_gan, value: 丙}, {key: dipan_gan, value: 庚}], same: gong}", "丙奇加六庚金"),
 }
@@ -82,6 +91,7 @@ def main() -> int:
     rules = {r["rule_id"]: r for r in data["rules"]}
 
     problems: list[str] = []
+    done: set[str] = set()
     for rid, (pred, needle) in MAP.items():
         r = rules.get(rid)
         if r is None:
@@ -89,18 +99,26 @@ def main() -> int:
             continue
         if needle not in (r.get("statement") or ""):
             problems.append(f"{rid} statement 不含复核片段「{needle}」")
-        if r.get("applicable_to"):
-            problems.append(f"{rid} 已有谓词，本批不应改写")
+        cur = r.get("applicable_to")
+        if cur:
+            # 幂等：已是本批要写的谓词就跳过（便于增量加条目）；已有**别的**谓词才报错。
+            if cur == yaml.safe_load(pred):
+                done.add(rid)
+            else:
+                problems.append(f"{rid} 已有不同谓词，本批不应改写：{cur!r}")
     if problems:
         for p in problems:
             print("FAIL:", p, file=sys.stderr)
         return 1
-    print(f"复核通过：{len(MAP)} 条，statement 片段全部命中，且均未映射")
+    todo = [r for r in MAP if r not in done]
+    print(f"复核通过：{len(MAP)} 条（已落实 {len(done)}，本次待写 {len(todo)}）")
 
     if args.dry_run:
         return 0
 
     for rid, (pred, _) in MAP.items():
+        if rid in done:
+            continue
         pattern = re.compile(rf"(?m)^(- rule_id: {re.escape(rid)}\n(?:.*\n)*?  applicable_to: )\[\]$")
         text, n = pattern.subn(lambda mo: mo.group(1) + pred, text, count=1)
         if n != 1:

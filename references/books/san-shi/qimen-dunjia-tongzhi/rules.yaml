@@ -15,7 +15,7 @@ rules:
     start_line: 251
     end_line: 251
   quote: 龙回首 甲值符加地盘丙奇
-  applicable_to: []
+  applicable_to: {all_of: [{key: zhifu, value: "*"}, {key: dipan_gan, value: 丙}], same: gong}
   caveats: []
   school: null
   verified: false
@@ -29,7 +29,7 @@ rules:
     start_line: 253
     end_line: 253
   quote: 鸟跌穴 丙奇加地盘甲值符
-  applicable_to: []
+  applicable_to: {all_of: [{key: tianpan_gan, value: 丙}, {key: zhifu, value: "*"}], same: gong}
   caveats: []
   school: null
   verified: false
@@ -447,7 +447,7 @@ rules:
     start_line: 299
     end_line: 299
   quote: 伏宫 庚临值符
-  applicable_to: []
+  applicable_to: {all_of: [{key: tianpan_gan, value: 庚}, {key: zhifu, value: "*"}], same: gong}
   caveats: []
   school: null
   verified: false

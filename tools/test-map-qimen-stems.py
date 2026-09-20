@@ -41,7 +41,7 @@ def main() -> int:
     rules = {r["rule_id"]: r for r in data["rules"]}
 
     print("1. 台账 16 条，且复核片段仍在原文里")
-    check("  条数", len(ledger), 16)
+    check("  条数", len(ledger), 19)
     miss = [
         x["rule_id"]
         for x in ledger
@@ -83,6 +83,48 @@ def main() -> int:
                 print(f"  FAIL {case} {key} 条数 {n}")
     check("  天地盘干各 8 条/盘（八宫）", True, True)
 
+    print("3b. 值符类三条：存在性通配 + same: gong 绑定（t178）")
+    ZHIFU_RULES = ("QM-P01", "QM-P02", "QM-P31")
+    bad_z = []
+    for rid in ZHIFU_RULES:
+        ap = rules[rid].get("applicable_to")
+        s_ = json.dumps(ap, ensure_ascii=False)
+        if '"same": "gong"' not in s_:
+            bad_z.append(f"{rid}: 缺 same: gong")
+        wild = [b for b in (ap or {}).get("all_of", []) if b.get("value") == "*"]
+        if len(wild) != 1 or wild[0]["key"] != "zhifu":
+            bad_z.append(f"{rid}: 通配子句应恰为一条 zhifu 存在性子句")
+    check("  三条形态合规（值符存在性 + same: gong）", bad_z, [])
+
+    def _f(k, v, **sc):
+        return {"key": k, "value": v, "scope": sc, "derivedFrom": ["test"]}
+
+    import importlib.util as _ilu
+
+    _spec = _ilu.spec_from_file_location("ev_q", ROOT / "tools/eval-predicates.py")
+    _ev = _ilu.module_from_spec(_spec)
+    sys.modules["ev_q"] = _ev
+    assert _spec.loader is not None
+    _spec.loader.exec_module(_ev)
+    qrules = {r["rule_id"]: r for r in _ev.load_rules("san-shi/qimen-dunjia-tongzhi", None)}
+    chart = [
+        _f("zhifu", "天芮", layer="本命", gong=2),
+        _f("dipan_gan", "丙", layer="本命", gong=2),
+        _f("tianpan_gan", "庚", layer="本命", gong=2),
+    ]
+    check("  值符宫地盘干为丙 → 龙回首成立", _ev.evaluate(qrules["QM-P01"], chart)["verdict"], "满足")
+    check("  值符宫天盘干为庚 → 伏宫成立", _ev.evaluate(qrules["QM-P31"], chart)["verdict"], "满足")
+    check(
+        "  鸟跌穴要天盘丙在值符宫（本例丙在 3 宫）→ 不成立",
+        _ev.evaluate(qrules["QM-P02"], chart)["verdict"],
+        "不满足",
+    )
+    check(
+        "  值符宫地盘干不是丙 → 不成立",
+        _ev.evaluate(qrules["QM-P01"], [_f("zhifu", "天芮", layer="本命", gong=2), _f("dipan_gan", "戊", layer="本命", gong=2)])["verdict"],
+        "不满足",
+    )
+
     print("4. 甲不得作为取值（甲寄六仪）")
     for f in ("references/vocab/fact-vocab.json", str(PRODUCT_VOCAB)):
         v = json.loads((ROOT / f).read_text(encoding="utf-8")) if not f.startswith("/") else json.loads(Path(f).read_text(encoding="utf-8"))
@@ -90,12 +132,34 @@ def main() -> int:
             dom = v["values"].get(key) or []
             check(f"  {f.split('/')[-1]} {key} 值域 9 干且无甲", (len(dom), "甲" in dom), (9, False))
 
-    print("5. 未迁移的规则不得被顺手映射（甲值符类）")
-    for rid in ("QM-P01", "QM-P02", "QM-P31"):
-        r = rules.get(rid)
-        if r is None:
-            continue
-        check(f"  {rid} 仍为空（甲不出现在天地盘，需值符落宫）", r.get("applicable_to") or [], [])
+    print("5. 仍未映射的同类规则不得被顺手映射（且原因要写清）")
+    # QM-P27 岁格「庚临岁干」：需**跨键取值相等**（天盘庚所在宫的地盘干＝岁干），
+    # v3 的 `same` 只绑 scope 字段、不绑取值 → 仍写不出来。
+    check("  QM-P27 仍为空（需跨键取值相等）", rules["QM-P27"].get("applicable_to") or [], [])
+    # QM-P26 直使加地丁：形态与已映射的三条同构（存在性通配＋same: gong），
+    # 但再加这一条会让 qimen 通配占比 5/28 = 17.9% > 15% → **闸门会红**，故不映射。
+    faqiao = {
+        r["rule_id"]: r
+        for r in yaml.safe_load(
+            (ROOT / "references/books/san-shi/qimen-faqiao/rules.yaml").read_text(encoding="utf-8")
+        )["rules"]
+    }
+    check("  QM-P26 仍为空（加它会撞 15% 通配闸门）", faqiao["QM-P26"].get("applicable_to") or [], [])
+    # 计数必须走共享的叶子遍历：v3 组里的通配（如 {all_of:[{value:"*"}]}）
+    # 用「只看平铺列表」的朴素写法**数不到**——这正是 t168 修过的那类缺陷。
+    sys.path.insert(0, str(ROOT / "tools"))
+    from predicate_lang import iter_usable_predicates  # noqa: E402
+
+    both = dict(rules)
+    both.update(faqiao)
+    wild = sum(
+        1
+        for r in both.values()
+        if any(x.get("value") == "*" for x in iter_usable_predicates(r.get("applicable_to")))
+    )
+    total = sum(1 for r in both.values() if r.get("applicable_to"))
+    print(f"     qimen 实测：通配 {wild}/{total} = {wild / total * 100:.1f}%（须 ≤15%）")
+    check("  即使再加 QM-P26 也会超限（(wild+1)/(total+1) > 15%）", (wild + 1) / (total + 1) > 0.15, True)
 
     if FAILED:
         print(f"\n{len(FAILED)} 项失败:", file=sys.stderr)
