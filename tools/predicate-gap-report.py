@@ -80,7 +80,20 @@ def load_vocab() -> tuple[list[str], dict[str, list[str]], str]:
 # 各 art 引擎实际产出的 key，与 tools/predicate-report.py 的 ART_EMIT_KEYS 一致。
 ART_EMIT_KEYS: dict[str, frozenset[str]] = {
     "bazi": frozenset(
-        {"rizhu", "yueling", "rizhu_strength", "geju", "yongshen", "shishen", "shensha", "kongwang"}
+        {
+            "rizhu",
+            "yueling",
+            # 四柱干支与纳音：引擎由已有 ganzhi 四柱／「纳音」行逐柱产出（见 emitBaziFacts）。
+            "gan",
+            "zhi",
+            "nayin",
+            "rizhu_strength",
+            "geju",
+            "yongshen",
+            "shishen",
+            "shensha",
+            "kongwang",
+        }
     ),
     "ziwei": frozenset({"ziwei_palace", "ziwei_star", "sihua", "daxian", "liunian_taisui"}),
     "qimen": frozenset({"jiuxing", "bamen", "bashen", "zhifu", "zhishi", "geju_qimen", "kongwang"}),

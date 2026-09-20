@@ -26,6 +26,146 @@
           ]
         },
         {
+          "key": "gan",
+          "value": "庚",
+          "scope": {
+            "layer": "本命",
+            "pillar": "year"
+          },
+          "derivedFrom": [
+            "ganzhi",
+            "rows.天干"
+          ]
+        },
+        {
+          "key": "gan",
+          "value": "甲",
+          "scope": {
+            "layer": "本命",
+            "pillar": "month"
+          },
+          "derivedFrom": [
+            "ganzhi",
+            "rows.天干"
+          ]
+        },
+        {
+          "key": "gan",
+          "value": "壬",
+          "scope": {
+            "layer": "本命",
+            "pillar": "day"
+          },
+          "derivedFrom": [
+            "ganzhi",
+            "rows.天干"
+          ]
+        },
+        {
+          "key": "gan",
+          "value": "丁",
+          "scope": {
+            "layer": "本命",
+            "pillar": "time"
+          },
+          "derivedFrom": [
+            "ganzhi",
+            "rows.天干"
+          ]
+        },
+        {
+          "key": "zhi",
+          "value": "午",
+          "scope": {
+            "layer": "本命",
+            "pillar": "year"
+          },
+          "derivedFrom": [
+            "ganzhi",
+            "rows.地支"
+          ]
+        },
+        {
+          "key": "zhi",
+          "value": "申",
+          "scope": {
+            "layer": "本命",
+            "pillar": "month"
+          },
+          "derivedFrom": [
+            "ganzhi",
+            "rows.地支"
+          ]
+        },
+        {
+          "key": "zhi",
+          "value": "子",
+          "scope": {
+            "layer": "本命",
+            "pillar": "day"
+          },
+          "derivedFrom": [
+            "ganzhi",
+            "rows.地支"
+          ]
+        },
+        {
+          "key": "zhi",
+          "value": "未",
+          "scope": {
+            "layer": "本命",
+            "pillar": "time"
+          },
+          "derivedFrom": [
+            "ganzhi",
+            "rows.地支"
+          ]
+        },
+        {
+          "key": "nayin",
+          "value": "路旁土",
+          "scope": {
+            "layer": "本命",
+            "pillar": "year"
+          },
+          "derivedFrom": [
+            "rows.纳音"
+          ]
+        },
+        {
+          "key": "nayin",
+          "value": "泉中水",
+          "scope": {
+            "layer": "本命",
+            "pillar": "month"
+          },
+          "derivedFrom": [
+            "rows.纳音"
+          ]
+        },
+        {
+          "key": "nayin",
+          "value": "桑柘木",
+          "scope": {
+            "layer": "本命",
+            "pillar": "day"
+          },
+          "derivedFrom": [
+            "rows.纳音"
+          ]
+        },
+        {
+          "key": "nayin",
+          "value": "天河水",
+          "scope": {
+            "layer": "本命",
+            "pillar": "time"
+          },
+          "derivedFrom": [
+            "rows.纳音"
+          ]
+        },
+        {
           "key": "rizhu_strength",
           "value": "极强",
           "scope": {
@@ -43,26 +183,6 @@
           },
           "derivedFrom": [
             "analysis.geju.name"
-          ]
-        },
-        {
-          "key": "yongshen",
-          "value": "土",
-          "scope": {
-            "layer": "本命"
-          },
-          "derivedFrom": [
-            "analysis.yongshen.xi"
-          ]
-        },
-        {
-          "key": "yongshen",
-          "value": "木",
-          "scope": {
-            "layer": "本命"
-          },
-          "derivedFrom": [
-            "analysis.yongshen.xi"
           ]
         },
         {
@@ -469,106 +589,6 @@
           "derivedFrom": [
             "dayun"
           ]
-        },
-        {
-          "key": "shishen",
-          "value": "七杀",
-          "scope": {
-            "layer": "流年"
-          },
-          "derivedFrom": [
-            "liunian"
-          ]
-        },
-        {
-          "key": "shishen",
-          "value": "正官",
-          "scope": {
-            "layer": "流年"
-          },
-          "derivedFrom": [
-            "liunian"
-          ]
-        },
-        {
-          "key": "shishen",
-          "value": "偏印",
-          "scope": {
-            "layer": "流年"
-          },
-          "derivedFrom": [
-            "liunian"
-          ]
-        },
-        {
-          "key": "shishen",
-          "value": "正印",
-          "scope": {
-            "layer": "流年"
-          },
-          "derivedFrom": [
-            "liunian"
-          ]
-        },
-        {
-          "key": "shishen",
-          "value": "比肩",
-          "scope": {
-            "layer": "流年"
-          },
-          "derivedFrom": [
-            "liunian"
-          ]
-        },
-        {
-          "key": "shishen",
-          "value": "劫财",
-          "scope": {
-            "layer": "流年"
-          },
-          "derivedFrom": [
-            "liunian"
-          ]
-        },
-        {
-          "key": "shishen",
-          "value": "食神",
-          "scope": {
-            "layer": "流年"
-          },
-          "derivedFrom": [
-            "liunian"
-          ]
-        },
-        {
-          "key": "shishen",
-          "value": "伤官",
-          "scope": {
-            "layer": "流年"
-          },
-          "derivedFrom": [
-            "liunian"
-          ]
-        },
-        {
-          "key": "shishen",
-          "value": "偏财",
-          "scope": {
-            "layer": "流年"
-          },
-          "derivedFrom": [
-            "liunian"
-          ]
-        },
-        {
-          "key": "shishen",
-          "value": "正财",
-          "scope": {
-            "layer": "流年"
-          },
-          "derivedFrom": [
-            "liunian"
-          ]
         }
       ]
     },
@@ -595,6 +615,146 @@
           },
           "derivedFrom": [
             "ganzhi.month"
+          ]
+        },
+        {
+          "key": "gan",
+          "value": "甲",
+          "scope": {
+            "layer": "本命",
+            "pillar": "year"
+          },
+          "derivedFrom": [
+            "ganzhi",
+            "rows.天干"
+          ]
+        },
+        {
+          "key": "gan",
+          "value": "丙",
+          "scope": {
+            "layer": "本命",
+            "pillar": "month"
+          },
+          "derivedFrom": [
+            "ganzhi",
+            "rows.天干"
+          ]
+        },
+        {
+          "key": "gan",
+          "value": "己",
+          "scope": {
+            "layer": "本命",
+            "pillar": "day"
+          },
+          "derivedFrom": [
+            "ganzhi",
+            "rows.天干"
+          ]
+        },
+        {
+          "key": "gan",
+          "value": "甲",
+          "scope": {
+            "layer": "本命",
+            "pillar": "time"
+          },
+          "derivedFrom": [
+            "ganzhi",
+            "rows.天干"
+          ]
+        },
+        {
+          "key": "zhi",
+          "value": "子",
+          "scope": {
+            "layer": "本命",
+            "pillar": "year"
+          },
+          "derivedFrom": [
+            "ganzhi",
+            "rows.地支"
+          ]
+        },
+        {
+          "key": "zhi",
+          "value": "寅",
+          "scope": {
+            "layer": "本命",
+            "pillar": "month"
+          },
+          "derivedFrom": [
+            "ganzhi",
+            "rows.地支"
+          ]
+        },
+        {
+          "key": "zhi",
+          "value": "巳",
+          "scope": {
+            "layer": "本命",
+            "pillar": "day"
+          },
+          "derivedFrom": [
+            "ganzhi",
+            "rows.地支"
+          ]
+        },
+        {
+          "key": "zhi",
+          "value": "子",
+          "scope": {
+            "layer": "本命",
+            "pillar": "time"
+          },
+          "derivedFrom": [
+            "ganzhi",
+            "rows.地支"
+          ]
+        },
+        {
+          "key": "nayin",
+          "value": "海中金",
+          "scope": {
+            "layer": "本命",
+            "pillar": "year"
+          },
+          "derivedFrom": [
+            "rows.纳音"
+          ]
+        },
+        {
+          "key": "nayin",
+          "value": "炉中火",
+          "scope": {
+            "layer": "本命",
+            "pillar": "month"
+          },
+          "derivedFrom": [
+            "rows.纳音"
+          ]
+        },
+        {
+          "key": "nayin",
+          "value": "大林木",
+          "scope": {
+            "layer": "本命",
+            "pillar": "day"
+          },
+          "derivedFrom": [
+            "rows.纳音"
+          ]
+        },
+        {
+          "key": "nayin",
+          "value": "海中金",
+          "scope": {
+            "layer": "本命",
+            "pillar": "time"
+          },
+          "derivedFrom": [
+            "rows.纳音"
           ]
         },
         {
@@ -1007,106 +1167,6 @@
           },
           "derivedFrom": [
             "dayun"
-          ]
-        },
-        {
-          "key": "shishen",
-          "value": "正官",
-          "scope": {
-            "layer": "流年"
-          },
-          "derivedFrom": [
-            "liunian"
-          ]
-        },
-        {
-          "key": "shishen",
-          "value": "七杀",
-          "scope": {
-            "layer": "流年"
-          },
-          "derivedFrom": [
-            "liunian"
-          ]
-        },
-        {
-          "key": "shishen",
-          "value": "正印",
-          "scope": {
-            "layer": "流年"
-          },
-          "derivedFrom": [
-            "liunian"
-          ]
-        },
-        {
-          "key": "shishen",
-          "value": "偏印",
-          "scope": {
-            "layer": "流年"
-          },
-          "derivedFrom": [
-            "liunian"
-          ]
-        },
-        {
-          "key": "shishen",
-          "value": "劫财",
-          "scope": {
-            "layer": "流年"
-          },
-          "derivedFrom": [
-            "liunian"
-          ]
-        },
-        {
-          "key": "shishen",
-          "value": "比肩",
-          "scope": {
-            "layer": "流年"
-          },
-          "derivedFrom": [
-            "liunian"
-          ]
-        },
-        {
-          "key": "shishen",
-          "value": "伤官",
-          "scope": {
-            "layer": "流年"
-          },
-          "derivedFrom": [
-            "liunian"
-          ]
-        },
-        {
-          "key": "shishen",
-          "value": "食神",
-          "scope": {
-            "layer": "流年"
-          },
-          "derivedFrom": [
-            "liunian"
-          ]
-        },
-        {
-          "key": "shishen",
-          "value": "正财",
-          "scope": {
-            "layer": "流年"
-          },
-          "derivedFrom": [
-            "liunian"
-          ]
-        },
-        {
-          "key": "shishen",
-          "value": "偏财",
-          "scope": {
-            "layer": "流年"
-          },
-          "derivedFrom": [
-            "liunian"
           ]
         }
       ]
@@ -2050,27 +2110,6 @@
           "derivedFrom": [
             "palaces.adjective"
           ]
-        },
-        {
-          "key": "daxian",
-          "value": "田宅",
-          "scope": {
-            "layer": "大运",
-            "palace": "田宅"
-          },
-          "derivedFrom": [
-            "decadal"
-          ]
-        },
-        {
-          "key": "liunian_taisui",
-          "value": "午",
-          "scope": {
-            "layer": "流年"
-          },
-          "derivedFrom": [
-            "calendar.now"
-          ]
         }
       ]
     },
@@ -3011,27 +3050,6 @@
           "derivedFrom": [
             "palaces.adjective"
           ]
-        },
-        {
-          "key": "daxian",
-          "value": "子女",
-          "scope": {
-            "layer": "大运",
-            "palace": "子女"
-          },
-          "derivedFrom": [
-            "decadal"
-          ]
-        },
-        {
-          "key": "liunian_taisui",
-          "value": "午",
-          "scope": {
-            "layer": "流年"
-          },
-          "derivedFrom": [
-            "calendar.now"
-          ]
         }
       ]
     }
@@ -3816,7 +3834,7 @@
         },
         {
           "key": "tianjiang",
-          "value": "天空",
+          "value": "太常",
           "scope": {
             "layer": "本命"
           },
@@ -3837,7 +3855,7 @@
         },
         {
           "key": "tianjiang",
-          "value": "青龙",
+          "value": "玄武",
           "scope": {
             "layer": "本命"
           },
@@ -3873,6 +3891,96 @@
           },
           "derivedFrom": [
             "meta.空亡"
+          ]
+        },
+        {
+          "key": "tianjiang",
+          "value": "白虎",
+          "scope": {
+            "layer": "本命",
+            "palace": "日上"
+          },
+          "derivedFrom": [
+            "ke.一课.god",
+            "palace:亥"
+          ]
+        },
+        {
+          "key": "tianjiang",
+          "value": "天空",
+          "scope": {
+            "layer": "本命",
+            "palace": "辰上"
+          },
+          "derivedFrom": [
+            "ke.三课.god",
+            "palace:子"
+          ]
+        },
+        {
+          "key": "tianjiang",
+          "value": "白虎",
+          "scope": {
+            "layer": "本命",
+            "palace": "初传"
+          },
+          "derivedFrom": [
+            "chuan.初传.god"
+          ]
+        },
+        {
+          "key": "liuqin",
+          "value": "官鬼",
+          "scope": {
+            "layer": "本命",
+            "palace": "初传"
+          },
+          "derivedFrom": [
+            "chuan.初传.relative"
+          ]
+        },
+        {
+          "key": "tianjiang",
+          "value": "太常",
+          "scope": {
+            "layer": "本命",
+            "palace": "中传"
+          },
+          "derivedFrom": [
+            "chuan.中传.god"
+          ]
+        },
+        {
+          "key": "liuqin",
+          "value": "父母",
+          "scope": {
+            "layer": "本命",
+            "palace": "中传"
+          },
+          "derivedFrom": [
+            "chuan.中传.relative"
+          ]
+        },
+        {
+          "key": "tianjiang",
+          "value": "玄武",
+          "scope": {
+            "layer": "本命",
+            "palace": "末传"
+          },
+          "derivedFrom": [
+            "chuan.末传.god"
+          ]
+        },
+        {
+          "key": "liuqin",
+          "value": "父母",
+          "scope": {
+            "layer": "本命",
+            "palace": "末传"
+          },
+          "derivedFrom": [
+            "chuan.末传.relative"
           ]
         }
       ]
@@ -3982,6 +4090,96 @@
           "derivedFrom": [
             "meta.空亡"
           ]
+        },
+        {
+          "key": "tianjiang",
+          "value": "腾蛇",
+          "scope": {
+            "layer": "本命",
+            "palace": "日上"
+          },
+          "derivedFrom": [
+            "ke.一课.god",
+            "palace:未"
+          ]
+        },
+        {
+          "key": "tianjiang",
+          "value": "六合",
+          "scope": {
+            "layer": "本命",
+            "palace": "辰上"
+          },
+          "derivedFrom": [
+            "ke.三课.god",
+            "palace:巳"
+          ]
+        },
+        {
+          "key": "tianjiang",
+          "value": "六合",
+          "scope": {
+            "layer": "本命",
+            "palace": "初传"
+          },
+          "derivedFrom": [
+            "chuan.初传.god"
+          ]
+        },
+        {
+          "key": "liuqin",
+          "value": "父母",
+          "scope": {
+            "layer": "本命",
+            "palace": "初传"
+          },
+          "derivedFrom": [
+            "chuan.初传.relative"
+          ]
+        },
+        {
+          "key": "tianjiang",
+          "value": "贵人",
+          "scope": {
+            "layer": "本命",
+            "palace": "中传"
+          },
+          "derivedFrom": [
+            "chuan.中传.god"
+          ]
+        },
+        {
+          "key": "liuqin",
+          "value": "子孙",
+          "scope": {
+            "layer": "本命",
+            "palace": "中传"
+          },
+          "derivedFrom": [
+            "chuan.中传.relative"
+          ]
+        },
+        {
+          "key": "tianjiang",
+          "value": "天空",
+          "scope": {
+            "layer": "本命",
+            "palace": "末传"
+          },
+          "derivedFrom": [
+            "chuan.末传.god"
+          ]
+        },
+        {
+          "key": "liuqin",
+          "value": "官鬼",
+          "scope": {
+            "layer": "本命",
+            "palace": "末传"
+          },
+          "derivedFrom": [
+            "chuan.末传.relative"
+          ]
         }
       ]
     },
@@ -4089,6 +4287,107 @@
           },
           "derivedFrom": [
             "meta.空亡"
+          ]
+        },
+        {
+          "key": "tianjiang",
+          "value": "腾蛇",
+          "scope": {
+            "layer": "本命",
+            "palace": "日上"
+          },
+          "derivedFrom": [
+            "ke.一课.god",
+            "palace:巳"
+          ]
+        },
+        {
+          "key": "tianjiang",
+          "value": "太阴",
+          "scope": {
+            "layer": "本命",
+            "palace": "辰上"
+          },
+          "derivedFrom": [
+            "ke.三课.god",
+            "palace:寅"
+          ]
+        },
+        {
+          "key": "tianjiang",
+          "value": "腾蛇",
+          "scope": {
+            "layer": "本命",
+            "palace": "初传"
+          },
+          "derivedFrom": [
+            "chuan.初传.god"
+          ]
+        },
+        {
+          "key": "liuqin",
+          "value": "子孙",
+          "scope": {
+            "layer": "本命",
+            "palace": "初传"
+          },
+          "derivedFrom": [
+            "chuan.初传.relative"
+          ]
+        },
+        {
+          "key": "kongwang",
+          "value": "申",
+          "scope": {
+            "layer": "本命",
+            "palace": "初传"
+          },
+          "derivedFrom": [
+            "chuan.初传.void.sky"
+          ]
+        },
+        {
+          "key": "tianjiang",
+          "value": "勾陈",
+          "scope": {
+            "layer": "本命",
+            "palace": "中传"
+          },
+          "derivedFrom": [
+            "chuan.中传.god"
+          ]
+        },
+        {
+          "key": "liuqin",
+          "value": "妻财",
+          "scope": {
+            "layer": "本命",
+            "palace": "中传"
+          },
+          "derivedFrom": [
+            "chuan.中传.relative"
+          ]
+        },
+        {
+          "key": "tianjiang",
+          "value": "白虎",
+          "scope": {
+            "layer": "本命",
+            "palace": "末传"
+          },
+          "derivedFrom": [
+            "chuan.末传.god"
+          ]
+        },
+        {
+          "key": "liuqin",
+          "value": "官鬼",
+          "scope": {
+            "layer": "本命",
+            "palace": "末传"
+          },
+          "derivedFrom": [
+            "chuan.末传.relative"
           ]
         }
       ]
@@ -4198,6 +4497,107 @@
           "derivedFrom": [
             "meta.空亡"
           ]
+        },
+        {
+          "key": "tianjiang",
+          "value": "腾蛇",
+          "scope": {
+            "layer": "本命",
+            "palace": "日上"
+          },
+          "derivedFrom": [
+            "ke.一课.god",
+            "palace:巳"
+          ]
+        },
+        {
+          "key": "tianjiang",
+          "value": "太阴",
+          "scope": {
+            "layer": "本命",
+            "palace": "辰上"
+          },
+          "derivedFrom": [
+            "ke.三课.god",
+            "palace:寅"
+          ]
+        },
+        {
+          "key": "tianjiang",
+          "value": "腾蛇",
+          "scope": {
+            "layer": "本命",
+            "palace": "初传"
+          },
+          "derivedFrom": [
+            "chuan.初传.god"
+          ]
+        },
+        {
+          "key": "liuqin",
+          "value": "官鬼",
+          "scope": {
+            "layer": "本命",
+            "palace": "初传"
+          },
+          "derivedFrom": [
+            "chuan.初传.relative"
+          ]
+        },
+        {
+          "key": "tianjiang",
+          "value": "太阴",
+          "scope": {
+            "layer": "本命",
+            "palace": "中传"
+          },
+          "derivedFrom": [
+            "chuan.中传.god"
+          ]
+        },
+        {
+          "key": "liuqin",
+          "value": "妻财",
+          "scope": {
+            "layer": "本命",
+            "palace": "中传"
+          },
+          "derivedFrom": [
+            "chuan.中传.relative"
+          ]
+        },
+        {
+          "key": "tianjiang",
+          "value": "白虎",
+          "scope": {
+            "layer": "本命",
+            "palace": "末传"
+          },
+          "derivedFrom": [
+            "chuan.末传.god"
+          ]
+        },
+        {
+          "key": "liuqin",
+          "value": "子孙",
+          "scope": {
+            "layer": "本命",
+            "palace": "末传"
+          },
+          "derivedFrom": [
+            "chuan.末传.relative"
+          ]
+        },
+        {
+          "key": "kongwang",
+          "value": "申",
+          "scope": {
+            "layer": "本命",
+            "palace": "末传"
+          },
+          "derivedFrom": [
+            "chuan.末传.void.sky"
+          ]
         }
       ]
     },
@@ -4305,6 +4705,96 @@
           },
           "derivedFrom": [
             "meta.空亡"
+          ]
+        },
+        {
+          "key": "tianjiang",
+          "value": "六合",
+          "scope": {
+            "layer": "本命",
+            "palace": "日上"
+          },
+          "derivedFrom": [
+            "ke.一课.god",
+            "palace:未"
+          ]
+        },
+        {
+          "key": "tianjiang",
+          "value": "白虎",
+          "scope": {
+            "layer": "本命",
+            "palace": "辰上"
+          },
+          "derivedFrom": [
+            "ke.三课.god",
+            "palace:卯"
+          ]
+        },
+        {
+          "key": "tianjiang",
+          "value": "腾蛇",
+          "scope": {
+            "layer": "本命",
+            "palace": "初传"
+          },
+          "derivedFrom": [
+            "chuan.初传.god"
+          ]
+        },
+        {
+          "key": "liuqin",
+          "value": "妻财",
+          "scope": {
+            "layer": "本命",
+            "palace": "初传"
+          },
+          "derivedFrom": [
+            "chuan.初传.relative"
+          ]
+        },
+        {
+          "key": "tianjiang",
+          "value": "天后",
+          "scope": {
+            "layer": "本命",
+            "palace": "中传"
+          },
+          "derivedFrom": [
+            "chuan.中传.god"
+          ]
+        },
+        {
+          "key": "liuqin",
+          "value": "兄弟",
+          "scope": {
+            "layer": "本命",
+            "palace": "中传"
+          },
+          "derivedFrom": [
+            "chuan.中传.relative"
+          ]
+        },
+        {
+          "key": "tianjiang",
+          "value": "玄武",
+          "scope": {
+            "layer": "本命",
+            "palace": "末传"
+          },
+          "derivedFrom": [
+            "chuan.末传.god"
+          ]
+        },
+        {
+          "key": "liuqin",
+          "value": "官鬼",
+          "scope": {
+            "layer": "本命",
+            "palace": "末传"
+          },
+          "derivedFrom": [
+            "chuan.末传.relative"
           ]
         }
       ]
@@ -4414,6 +4904,107 @@
           "derivedFrom": [
             "meta.空亡"
           ]
+        },
+        {
+          "key": "tianjiang",
+          "value": "太常",
+          "scope": {
+            "layer": "本命",
+            "palace": "日上"
+          },
+          "derivedFrom": [
+            "ke.一课.god",
+            "palace:申"
+          ]
+        },
+        {
+          "key": "tianjiang",
+          "value": "勾陈",
+          "scope": {
+            "layer": "本命",
+            "palace": "辰上"
+          },
+          "derivedFrom": [
+            "ke.三课.god",
+            "palace:辰"
+          ]
+        },
+        {
+          "key": "tianjiang",
+          "value": "青龙",
+          "scope": {
+            "layer": "本命",
+            "palace": "初传"
+          },
+          "derivedFrom": [
+            "chuan.初传.god"
+          ]
+        },
+        {
+          "key": "liuqin",
+          "value": "官鬼",
+          "scope": {
+            "layer": "本命",
+            "palace": "初传"
+          },
+          "derivedFrom": [
+            "chuan.初传.relative"
+          ]
+        },
+        {
+          "key": "tianjiang",
+          "value": "天空",
+          "scope": {
+            "layer": "本命",
+            "palace": "中传"
+          },
+          "derivedFrom": [
+            "chuan.中传.god"
+          ]
+        },
+        {
+          "key": "liuqin",
+          "value": "父母",
+          "scope": {
+            "layer": "本命",
+            "palace": "中传"
+          },
+          "derivedFrom": [
+            "chuan.中传.relative"
+          ]
+        },
+        {
+          "key": "tianjiang",
+          "value": "白虎",
+          "scope": {
+            "layer": "本命",
+            "palace": "末传"
+          },
+          "derivedFrom": [
+            "chuan.末传.god"
+          ]
+        },
+        {
+          "key": "liuqin",
+          "value": "兄弟",
+          "scope": {
+            "layer": "本命",
+            "palace": "末传"
+          },
+          "derivedFrom": [
+            "chuan.末传.relative"
+          ]
+        },
+        {
+          "key": "kongwang",
+          "value": "申",
+          "scope": {
+            "layer": "本命",
+            "palace": "末传"
+          },
+          "derivedFrom": [
+            "chuan.末传.void.sky"
+          ]
         }
       ]
     },
@@ -4521,6 +5112,107 @@
           },
           "derivedFrom": [
             "meta.空亡"
+          ]
+        },
+        {
+          "key": "tianjiang",
+          "value": "青龙",
+          "scope": {
+            "layer": "本命",
+            "palace": "日上"
+          },
+          "derivedFrom": [
+            "ke.一课.god",
+            "palace:未"
+          ]
+        },
+        {
+          "key": "tianjiang",
+          "value": "腾蛇",
+          "scope": {
+            "layer": "本命",
+            "palace": "辰上"
+          },
+          "derivedFrom": [
+            "ke.三课.god",
+            "palace:卯"
+          ]
+        },
+        {
+          "key": "tianjiang",
+          "value": "天后",
+          "scope": {
+            "layer": "本命",
+            "palace": "初传"
+          },
+          "derivedFrom": [
+            "chuan.初传.god"
+          ]
+        },
+        {
+          "key": "liuqin",
+          "value": "妻财",
+          "scope": {
+            "layer": "本命",
+            "palace": "初传"
+          },
+          "derivedFrom": [
+            "chuan.初传.relative"
+          ]
+        },
+        {
+          "key": "tianjiang",
+          "value": "玄武",
+          "scope": {
+            "layer": "本命",
+            "palace": "中传"
+          },
+          "derivedFrom": [
+            "chuan.中传.god"
+          ]
+        },
+        {
+          "key": "liuqin",
+          "value": "子孙",
+          "scope": {
+            "layer": "本命",
+            "palace": "中传"
+          },
+          "derivedFrom": [
+            "chuan.中传.relative"
+          ]
+        },
+        {
+          "key": "kongwang",
+          "value": "酉",
+          "scope": {
+            "layer": "本命",
+            "palace": "中传"
+          },
+          "derivedFrom": [
+            "chuan.中传.void.sky"
+          ]
+        },
+        {
+          "key": "tianjiang",
+          "value": "白虎",
+          "scope": {
+            "layer": "本命",
+            "palace": "末传"
+          },
+          "derivedFrom": [
+            "chuan.末传.god"
+          ]
+        },
+        {
+          "key": "liuqin",
+          "value": "兄弟",
+          "scope": {
+            "layer": "本命",
+            "palace": "末传"
+          },
+          "derivedFrom": [
+            "chuan.末传.relative"
           ]
         }
       ]
