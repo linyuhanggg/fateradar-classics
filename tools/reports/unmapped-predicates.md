@@ -8,13 +8,13 @@
 `分类` 是机械判据（见脚本 `classify()`），`台账理由` 是逐条复核结论（见
 `tools/reports/predicate-decisions/*.json`）。两者不一致时以台账为准，且台账必须给原文依据。
 
-共 **582** 条。
+共 **581** 条。
 
 | art | 合计 | 原文无盘面适用条件（通论／体例／取象表／起例取法） | pack 元规则／调用条件，不是盘面条件 | 需要引擎未产出的事实 | 原文有条件但口径未定或明确拒绝单一条件 | 未复核 |
 |---|---:|---:|---:|---:|---:|---:|
-| `bazi` | 301 | 52 | 7 | 39 | 26 | 176 |
+| `bazi` | 298 | 113 | 7 | 147 | 30 | 0 |
 | `liuren` | 42 | 2 | 21 | 18 | 1 | 0 |
-| `liuyao` | 46 | 14 | 1 | 31 | 0 | 0 |
+| `liuyao` | 48 | 14 | 1 | 31 | 0 | 0 |
 | `meihua` | 33 | 9 | 0 | 21 | 3 | 0 |
 | `qimen` | 32 | 1 | 0 | 31 | 0 | 0 |
 | `qizheng` | 65 | 53 | 0 | 12 | 0 | 0 |
@@ -150,182 +150,179 @@
 | `bazi/ziping-zhenquan` | `ZPR-16` | statement 中无可复原的 FactKey 取值 | 原文有条件但口径未定或明确拒绝单一条件 |  | 杂格应在正格不足以取用时讨论，且须严格按原文条件，不可泛化为万能例外。 | 杂格应在正格不足以取用时讨论，且须严格按原文条件，不可泛化为万能例外。 |
 | `bazi/ziping-zhenquan` | `ZPR-P-01` | statement 中无可复原的 FactKey 取值 | 原文无盘面适用条件（通论／体例／取象表／起例取法） |  | 阳干顺行十二长生、阴干逆行。甲木长生在亥、死在午；乙木长生在午、死在亥。其余天干 | 阳干顺行十二长生、阴干逆行。甲木长生在亥、死在午；乙木长生在午、死在亥。其余天干依阴阳互换。 |
 | `bazi/ziping-zhenquan` | `ZPR-P-02` | statement 中无可复原的 FactKey 取值 | 原文无盘面适用条件（通论／体例／取象表／起例取法） |  | 十干合化：甲己合化土、乙庚合化金、丙辛合化水、丁壬合化木、戊癸合化火。 | 十干合化：甲己合化土、乙庚合化金、丙辛合化水、丁壬合化木、戊癸合化火。 |
-| `luming-nayin/li-xuzhong-mingshu` | `LIXUZHONGMIN-003` | statement 中无可复原的 FactKey 取值 | 未复核 |  |  | 子母相承之火；先煙后焰；喜木助、嫌水陵迟；五行相养虽死方亦光耿。 |
-| `luming-nayin/li-xuzhong-mingshu` | `LIXUZHONGMIN-004` | statement 中无可复原的 FactKey 取值 | 未复核 |  |  | 本旺禄休之火；惟欲阴旺恶处盛阳；木火相资连艮震必变鼎。 |
-| `luming-nayin/li-xuzhong-mingshu` | `LIXUZHONGMIN-005` | statement 中无可复原的 FactKey 取值 | 未复核 |  |  | 华实兼荣之木；爱水土忌火金；金养则英实之命。 |
-| `luming-nayin/li-xuzhong-mingshu` | `LIXUZHONGMIN-006` | statement 中无可复原的 FactKey 取值 | 未复核 |  |  | 气胜体刚之木；逢对旺干鬼或木来比助金伐则成栋梁。 |
-| `luming-nayin/li-xuzhong-mingshu` | `LIXUZHONGMIN-007` | statement 中无可复原的 FactKey 取值 | 未复核 |  |  | 含辉始育之土；气数未备喜旺方；独禄会命旺身绝非贵地。 |
-| `luming-nayin/li-xuzhong-mingshu` | `LIXUZHONGMIN-008` | statement 中无可复原的 FactKey 取值 | 未复核 |  |  | 自本立形之土；火助木乘水轻木重亦小康；败而乘禄方为厚载之福。 |
-| `luming-nayin/li-xuzhong-mingshu` | `LIXUZHONGMIN-009` | statement 中无可复原的 FactKey 取值 | 未复核 |  |  | 自任权制之金；刚而有断；爱土木嫌火重；财旺身衰亦清华之贵。 |
-| `luming-nayin/li-xuzhong-mingshu` | `LIXUZHONGMIN-010` | statement 中无可复原的 FactKey 取值 | 未复核 |  |  | 刚锐利用之金；不嫌绝败惟畏鬼多；平易不刑则有自然材器。 |
-| `luming-nayin/li-xuzhong-mingshu` | `LIXUZHONGMIN-011` | statement 中无可复原的 FactKey 取值 | 未复核 |  |  | 墓成息用之火；不求壮旺欲物平资福禄高厚；入格可贵干不必官。 |
-| `luming-nayin/li-xuzhong-mingshu` | `LIXUZHONGMIN-012` | statement 中无可复原的 FactKey 取值 | 未复核 |  |  | 气散游魂之火；生于木火荣方上下不逢相制则成达。 |
-| `luming-nayin/li-xuzhong-mingshu` | `LIXUZHONGMIN-013` | statement 中无可复原的 FactKey 取值 | 未复核 |  |  | 深沉停会之水；会源得生用制于东南为出常之器。 |
-| `luming-nayin/li-xuzhong-mingshu` | `LIXUZHONGMIN-014` | statement 中无可复原的 FactKey 取值 | 未复核 |  |  | 渐下欲流之水；得水土相承经败地源脉不断可升而济物。 |
-| `luming-nayin/li-xuzhong-mingshu` | `LIXUZHONGMIN-015` | statement 中无可复原的 FactKey 取值 | 未复核 |  |  | 生体安和之土；资以火土俱盛金旺之荣；尚可高崇为不常之用。 |
-| `luming-nayin/li-xuzhong-mingshu` | `LIXUZHONGMIN-016` | statement 中无可复原的 FactKey 取值 | 未复核 |  |  | 鬼旺体坚之土；生于金重木多见财重则富贵长远。 |
-| `luming-nayin/li-xuzhong-mingshu` | `LIXUZHONGMIN-017` | statement 中无可复原的 FactKey 取值 | 未复核 |  |  | 显光之金未成材；金刚土重得期相会无炎火之官乃大臣之制。 |
-| `luming-nayin/li-xuzhong-mingshu` | `LIXUZHONGMIN-018` | statement 中无可复原的 FactKey 取值 | 未复核 |  |  | 资始之金；身坚体柔欲平火之制；金助土成则光大之器。 |
-| `luming-nayin/li-xuzhong-mingshu` | `LIXUZHONGMIN-019` | statement 中无可复原的 FactKey 取值 | 未复核 |  |  | 化薪之木；畏在火强得水资；处生旺逢土亦富贵。 |
-| `luming-nayin/li-xuzhong-mingshu` | `LIXUZHONGMIN-020` | statement 中无可复原的 FactKey 取值 | 未复核 |  |  | 伐根之木；气败体柔不嫌金制；喜水之荣会元借生主成重器。 |
-| `luming-nayin/li-xuzhong-mingshu` | `LIXUZHONGMIN-021` | statement 中无可复原的 FactKey 取值 | 未复核 |  |  | 源泉之水；务有资助流长无鬼则运广之渊享高厚之福。 |
-| `luming-nayin/li-xuzhong-mingshu` | `LIXUZHONGMIN-022` | statement 中无可复原的 FactKey 取值 | 未复核 |  |  | 母旺进趋之水；资金济火自乾东而震北亦超卓辅弼之用。 |
-| `luming-nayin/li-xuzhong-mingshu` | `LIXUZHONGMIN-023` | statement 中无可复原的 FactKey 取值 | 未复核 |  |  | 禄资支附坚固火钟之土；资以木光耀不群本重不须旺。 |
-| `luming-nayin/li-xuzhong-mingshu` | `LIXUZHONGMIN-024` | statement 中无可复原的 FactKey 取值 | 未复核 |  |  | 福壮临官之土；润水丽金处魁罡坤艮可显功遂名。 |
-| `luming-nayin/li-xuzhong-mingshu` | `LIXUZHONGMIN-025` | statement 中无可复原的 FactKey 取值 | 未复核 |  |  | 神龙之火；利震巽不畏水刑；干支得官皆显用水木盛尤佳。 |
-| `luming-nayin/li-xuzhong-mingshu` | `LIXUZHONGMIN-026` | statement 中无可复原的 FactKey 取值 | 未复核 |  |  | 余光不凡之火；惟期体重不假奇财；禄资命成方入康荣。 |
-| `luming-nayin/li-xuzhong-mingshu` | `LIXUZHONGMIN-027` | statement 中无可复原的 FactKey 取值 | 未复核 |  |  | 五行坚实之木；不避刑冲不辞衰败；和柔德贵相符必显大用。 |
-| `luming-nayin/li-xuzhong-mingshu` | `LIXUZHONGMIN-028` | statement 中无可复原的 FactKey 取值 | 未复核 |  |  | 经制之木自旺；不畏霜雪气节凌云；制金损火逢旺即巨室之材。 |
-| `luming-nayin/li-xuzhong-mingshu` | `LIXUZHONGMIN-029` | statement 中无可复原的 FactKey 取值 | 未复核 |  |  | 会贵守成之水；五行不杂兑坎之间无物来制可享高福。 |
-| `luming-nayin/li-xuzhong-mingshu` | `LIXUZHONGMIN-030` | statement 中无可复原的 FactKey 取值 | 未复核 |  |  | 流远澄清之水；溢以水在火木荣方音中无土则有济物之德。 |
-| `luming-nayin/li-xuzhong-mingshu` | `LIXUZHONGMIN-031` | statement 中无可复原的 FactKey 取值 | 未复核 |  |  | 沙汰之金志大有节；零火盖之严或旺金集之刚；不遇丁壬可陶熔。 |
-| `luming-nayin/li-xuzhong-mingshu` | `LIXUZHONGMIN-032` | statement 中无可复原的 FactKey 取值 | 未复核 |  |  | 强悍刚矿之金；欲金相用在火盛处父子相乘皆为珍宝。 |
-| `luming-nayin/li-xuzhong-mingshu` | `LIXUZHONGMIN-033` | statement 中无可复原的 FactKey 取值 | 未复核 |  |  | 无资之火；金木壮旺有制得干生为厚实；禄盛无依即灰飞。 |
-| `luming-nayin/li-xuzhong-mingshu` | `LIXUZHONGMIN-034` | statement 中无可复原的 FactKey 取值 | 未复核 |  |  | 平易无为之火；木旺则大炎、木多成用、火助则不清；得此无不贵豪。 |
-| `luming-nayin/li-xuzhong-mingshu` | `LIXUZHONGMIN-035` | statement 中无可复原的 FactKey 取值 | 未复核 |  |  | 不材之木；喜逢水旺资荣；金败自然不嫌禄鬼方可高崇。 |
-| `luming-nayin/li-xuzhong-mingshu` | `LIXUZHONGMIN-036` | statement 中无可复原的 FactKey 取值 | 未复核 |  |  | 粪水育苗之木；水多土而临旺皆有成就；逢败绝主富贵荣盛。 |
-| `luming-nayin/li-xuzhong-mingshu` | `LIXUZHONGMIN-037` | statement 中无可复原的 FactKey 取值 | 未复核 |  |  | 气过浮虚之土；得重土相资水木不刚即享福寿。 |
-| `luming-nayin/li-xuzhong-mingshu` | `LIXUZHONGMIN-038` | statement 中无可复原的 FactKey 取值 | 未复核 |  |  | 气衰就本之土；承火制木重逢木土刑冲假禄元可立功名。 |
-| `luming-nayin/li-xuzhong-mingshu` | `LIXUZHONGMIN-039` | statement 中无可复原的 FactKey 取值 | 未复核 |  |  | 藏用体柔之金；喜土资以旺财官不可太刚；应此富贵久远。 |
-| `luming-nayin/li-xuzhong-mingshu` | `LIXUZHONGMIN-040` | statement 中无可复原的 FactKey 取值 | 未复核 |  |  | 财旺体弱之金；财命相乘喜身在生旺；得真官真气配合贵源。 |
-| `luming-nayin/li-xuzhong-mingshu` | `LIXUZHONGMIN-041` | statement 中无可复原的 FactKey 取值 | 未复核 |  |  | 始壮之火；多生我或会本源却无炎光之极超卓；水轻无土亦可腾达。 |
-| `luming-nayin/li-xuzhong-mingshu` | `LIXUZHONGMIN-042` | statement 中无可复原的 FactKey 取值 | 未复核 |  |  | 进功之火；辅助不息不必旺极；木火相乘虽死败亦贵。 |
-| `luming-nayin/li-xuzhong-mingshu` | `LIXUZHONGMIN-043` | statement 中无可复原的 FactKey 取值 | 未复核 |  |  | 至阴之水；发于阳明蒸气氤氲；处金木旺而冲刑得炎财盛始贵。 |
-| `luming-nayin/li-xuzhong-mingshu` | `LIXUZHONGMIN-044` | statement 中无可复原的 FactKey 取值 | 未复核 |  |  | 禄旺育生之水；水火死败禄干自旺财贵会乾方乃富贵；土在旺乡非长久。 |
-| `luming-nayin/li-xuzhong-mingshu` | `LIXUZHONGMIN-045` | statement 中无可复原的 FactKey 取值 | 未复核 |  |  | 柔顺发生之土；喜临四季得木为荣；独居水火荣方未得尊高。 |
-| `luming-nayin/li-xuzhong-mingshu` | `LIXUZHONGMIN-046` | statement 中无可复原的 FactKey 取值 | 未复核 |  |  | 子旺母衰之土；喜火土荣庆从革之地；水轻木柔亦滋生之德。 |
-| `luming-nayin/li-xuzhong-mingshu` | `LIXUZHONGMIN-047` | statement 中无可复原的 FactKey 取值 | 未复核 |  |  | 钝弱成用之金；火轻金重魁罡相乘可休逸福禄；忌木火极则迍蹇。 |
-| `luming-nayin/li-xuzhong-mingshu` | `LIXUZHONGMIN-048` | statement 中无可复原的 FactKey 取值 | 未复核 |  |  | 木旺禄休之金；得平火之革制于克伐；金水冲击得平安守职。 |
-| `luming-nayin/li-xuzhong-mingshu` | `LIXUZHONGMIN-049` | statement 中无可复原的 FactKey 取值 | 未复核 |  |  | 体柔用刚之木；居旺相得金遇贵地无火可扬名当世。 |
-| `luming-nayin/li-xuzhong-mingshu` | `LIXUZHONGMIN-050` | statement 中无可复原的 FactKey 取值 | 未复核 |  |  | 刚柔相济之木；水土承旺方生育利物；金制生成皆可立功。 |
-| `luming-nayin/li-xuzhong-mingshu` | `LIXUZHONGMIN-051` | statement 中无可复原的 FactKey 取值 | 未复核 |  |  | 渊深处静之水；资以木旺土衰则奇特贵异。 |
-| `luming-nayin/li-xuzhong-mingshu` | `LIXUZHONGMIN-052` | statement 中无可复原的 FactKey 取值 | 未复核 |  |  | 死中受气之水；败无妨；会源于音地未有不达；喜土而清。 |
-| `luming-nayin/li-xuzhong-mingshu` | `LIXUZHONGMIN-053` | statement 中无可复原的 FactKey 取值 | 未复核 |  |  | 发施养生之土；喜火助不畏掩冲自然荣贵。 |
-| `luming-nayin/li-xuzhong-mingshu` | `LIXUZHONGMIN-054` | statement 中无可复原的 FactKey 取值 | 未复核 |  |  | 绝中受气之土；喜土助不畏死败；朝命建元可文章妙选。 |
-| `luming-nayin/li-xuzhong-mingshu` | `LIXUZHONGMIN-055` | statement 中无可复原的 FactKey 取值 | 未复核 |  |  | 神发离明之火；旺中受绝喜木助衰方忌火乘已旺生；应此必魁英。 |
-| `luming-nayin/li-xuzhong-mingshu` | `LIXUZHONGMIN-056` | statement 中无可复原的 FactKey 取值 | 未复核 |  |  | 成功之火；得季夏炎阳守小吉；甲己扶持不须更旺。 |
-| `luming-nayin/li-xuzhong-mingshu` | `LIXUZHONGMIN-057` | statement 中无可复原的 FactKey 取值 | 未复核 |  |  | 未坚柔末之木；春相夏旺金重得火土重得水则出常之器。 |
-| `luming-nayin/li-xuzhong-mingshu` | `LIXUZHONGMIN-058` | statement 中无可复原的 FactKey 取值 | 未复核 |  |  | 包秀结英之木；喜生旺忌见金多；土水相乘为物之贵。 |
-| `luming-nayin/li-xuzhong-mingshu` | `LIXUZHONGMIN-059` | statement 中无可复原的 FactKey 取值 | 未复核 |  |  | 杳之水；喜死败要土之击发能博施之功及物。 |
-| `luming-nayin/li-xuzhong-mingshu` | `LIXUZHONGMIN-060` | statement 中无可复原的 FactKey 取值 | 未复核 |  |  | 始进成终之水；喜逢贵地忌在禄乡；不可守常须升雨雾散江河乃大用。 |
-| `luming-nayin/li-xuzhong-mingshu` | `LIXUZHONGMIN-063` | statement 中无可复原的 FactKey 取值 | 未复核 |  |  | 三命中最吉之神；遇主荣名早达官禄易进；运行至此皆吉兆。 |
-| `luming-nayin/li-xuzhong-mingshu` | `LIXUZHONGMIN-065` | statement 中无可复原的 FactKey 取值 | 未复核 |  |  | 贵合则官位穹崇所作契合；贵食则禄丰足所成造望；二者兼之官高禄重。 |
-| `luming-nayin/li-xuzhong-mingshu` | `LIXUZHONGMIN-066` | statement 中无可复原的 FactKey 取值 | 未复核 |  |  | 贵人交互人多贵；旺气相乘馆殿资；五行不可伤；月日时互换见贵太岁不带者不贵。 |
-| `luming-nayin/li-xuzhong-mingshu` | `LIXUZHONGMIN-070` | statement 中无可复原的 FactKey 取值 | 未复核 |  |  | 寅午戌火体、亥卯未木体、申子辰水体、巳酉丑金体；土则从四事成之。 |
-| `luming-nayin/li-xuzhong-mingshu` | `LIXUZHONGMIN-071` | statement 中无可复原的 FactKey 取值 | 未复核 |  |  | 干支配数：甲己子午9、乙庚丑未8、丙辛寅申7、丁壬卯酉6、戊癸辰戌5、巳亥支数4。除6/5之数则得纳音之用。 |
-| `luming-nayin/li-xuzhong-mingshu` | `LIXUZHONGMIN-073` | statement 中无可复原的 FactKey 取值 | 未复核 |  |  | 智仁则清（水木），礼义则浊（火金），信从四时之气（土）。 |
-| `luming-nayin/li-xuzhong-mingshu` | `LIXUZHONGMIN-074` | statement 中无可复原的 FactKey 取值 | 未复核 |  |  | 水多沉潜伏溺、火多崇礼贪饕、木多柔懦泛交、金多刚直尚勇、土多重厚藏密；各得多则各显其性。 |
-| `luming-nayin/li-xuzhong-mingshu` | `LIXUZHONGMIN-077` | statement 中无可复原的 FactKey 取值 | 未复核 |  |  | 胎主父母祖宗十分主事二分；月主时气十分主事六分；日主未得气十分主事八分；时主用度十分。 |
-| `luming-nayin/li-xuzhong-mingshu` | `LIXUZHONGMIN-078` | statement 中无可复原的 FactKey 取值 | 未复核 |  |  | 主本保合未有贫贱之人；时日乖违岂有久荣之理。 |
-| `luming-nayin/li-xuzhong-mingshu` | `LIXUZHONGMIN-079` | statement 中无可复原的 FactKey 取值 | 未复核 |  |  | 三元入墓日时自旺，虽运并绝逢鬼，鬼亦不能取。 |
-| `luming-nayin/li-xuzhong-mingshu` | `LIXUZHONGMIN-080` | statement 中无可复原的 FactKey 取值 | 未复核 |  |  | 五行相敌轻重相等；遇鬼二则为凶，一重为鬼犹凶中反吉。 |
-| `luming-nayin/li-xuzhong-mingshu` | `LIXUZHONGMIN-081` | statement 中无可复原的 FactKey 取值 | 未复核 |  |  | 尊生卑曰宝，卑生尊曰义，上尅下曰制，下贼上曰伐；以胎月日时上下相生相尅判。 |
-| `luming-nayin/li-xuzhong-mingshu` | `LIXUZHONGMIN-085` | statement 中无可复原的 FactKey 取值 | 未复核 |  |  | 天月德临月将事合神；金印垂腰之贵；递相揖让调鼎位极人臣。 |
-| `luming-nayin/li-xuzhong-mingshu` | `LIXUZHONGMIN-088` | statement 中无可复原的 FactKey 取值 | 未复核 |  |  | 子息先明生气或用尅以推之；自生自旺看运元胎月。 |
-| `luming-nayin/li-xuzhong-mingshu` | `LIXUZHONGMIN-089` | statement 中无可复原的 FactKey 取值 | 未复核 |  |  | 刑聚败极／四柱不收／五行未备／数无取用／一方前后／柱多隔角／真者失时／假者殃尅／主本倒乱／父子乖违皆为贫贱之格。 |
-| `luming-nayin/li-xuzhong-mingshu` | `LIXUZHONGMIN-090` | statement 中无可复原的 FactKey 取值 | 未复核 |  |  | 真者失时假者殃尅；本气绝而花繁纵子成而味拙。 |
-| `luming-nayin/li-xuzhong-mingshu` | `LIXUZHONGMIN-093` | statement 中无可复原的 FactKey 取值 | 未复核 |  |  | 男一岁起寅、女一岁起申；以建元论胜负，助岁运依吉凶。 |
-| `luming-nayin/li-xuzhong-mingshu` | `LIXUZHONGMIN-094` | statement 中无可复原的 FactKey 取值 | 未复核 |  |  | 禄/命/身金入土干支或纳音下；不利君子利小人；子弱母胜。 |
-| `luming-nayin/li-xuzhong-mingshu` | `LIXUZHONGMIN-095` | statement 中无可复原的 FactKey 取值 | 未复核 |  |  | 三元值鬼+二运三刑+并冲柱主本与行年不相承=黄泉失所之命。 |
-| `luming-nayin/li-xuzhong-mingshu` | `LIXUZHONGMIN-096` | statement 中无可复原的 FactKey 取值 | 未复核 |  |  | 金破碎而不返；运至伏吟逢丧吊白衣飞廉孤寡岁刑尅身。 |
-| `luming-nayin/li-xuzhong-mingshu` | `LIXUZHONGMIN-101` | statement 中无可复原的 FactKey 取值 | 未复核 |  |  | 土本无一方之气，从水妻之义；阴阳各逐四时成就；土育于寅。 |
-| `luming-nayin/li-xuzhong-mingshu` | `LIXUZHONGMIN-LX-01` | statement 中无可复原的 FactKey 取值 | 未复核 |  |  | 库墓守财之金；不嫌鬼旺、喜禄财；水土砥砺亦可成器。 |
-| `luming-nayin/li-xuzhong-mingshu` | `LIXUZHONGMIN-LX-03` | statement 中无可复原的 FactKey 取值 | 未复核 |  |  | 坤为土，乾为金，金亦土也，为水母。 |
-| `luming-nayin/li-xuzhong-mingshu` | `LIXUZHONGMIN-LX-04` | statement 中无可复原的 FactKey 取值 | 未复核 |  |  | 干主名禄贵权（衣食受用基），支主金珠积富（得失荣枯本），纳音主才能器识（人伦亲属宗）。 |
-| `luming-nayin/li-xuzhong-mingshu` | `LIXUZHONGMIN-LX-05` | statement 中无可复原的 FactKey 取值 | 未复核 |  |  | 死败全逢刑犹寿考；四仲时生主无妨败；年死败有生主有寿及父母。 |
-| `luming-nayin/li-xuzhong-mingshu` | `LIXUZHONGMIN-LX-06` | statement 中无可复原的 FactKey 取值 | 未复核 |  |  | 生月为父、胎月为母、身尅为妻、妻生为子、时生是妻子之数；成败自然。 |
-| `luming-nayin/li-xuzhong-mingshu` | `LIXUZHONGMIN-LX-07` | statement 中无可复原的 FactKey 取值 | 未复核 |  |  | 阳男阴女顺、阴男阳女逆；十干分月、三日成年。 |
-| `luming-nayin/li-xuzhong-mingshu` | `LIXUZHONGMIN-LX-08` | statement 中无可复原的 FactKey 取值 | 未复核 |  |  | 60甲子中12位神头禄（戊辰/戊戌/己丑/己未/丙午/丁巳/壬子/癸亥/甲寅/乙卯/庚申/辛酉），阴阳专位天地神会。 |
-| `luming-nayin/li-xuzhong-mingshu` | `LX-01` | statement 中无可复原的 FactKey 取值 | 未复核 |  |  | 子旺母衰之金，溺水下韬光，须假火革；命入贵格明暗取官。 |
-| `luming-nayin/li-xuzhong-mingshu` | `LX-02` | statement 中无可复原的 FactKey 取值 | 未复核 |  |  | 此六十位五行支干相乘要分轻重：金溺水下、火出水上；木不得金之所制木无成；金不得火之所制金无成。 |
-| `luming-nayin/li-xuzhong-mingshu` | `LX-03` | statement 中无可复原的 FactKey 取值 | 未复核 |  |  | 清气阳为天，浊气阴为地；造化始于无相因而三生。 |
-| `luming-nayin/li-xuzhong-mingshu` | `LX-05` | statement 中无可复原的 FactKey 取值 | 未复核 |  |  | 四季为五行墓万物所终；时逢之虽会吉而贵亦主妨害尊亲；四孟带煞必尅。 |
-| `luming-nayin/li-xuzhong-mingshu` | `LX-06` | statement 中无可复原的 FactKey 取值 | 未复核 |  |  | 一方之气不可过角；进角为孤、退角为寡；既旺不过一方却言衰者成功也。 |
-| `luming-nayin/li-xuzhong-mingshu` | `LX-07` | statement 中无可复原的 FactKey 取值 | 未复核 |  |  | 三元者大小气运，九限者三运之荣谢；自生得节日为初。 |
-| `luming-nayin/li-xuzhong-mingshu` | `LX-08` | statement 中无可复原的 FactKey 取值 | 未复核 |  |  | 六十载支干同日神头；六合之德五组共三十组（甲己/丙辛/戊癸/庚乙/壬丁）。 |
-| `luming-nayin/luoluzi-sanming` | `LZ-01-01` | statement 中无可复原的 FactKey 取值 | 未复核 |  |  | 三才四气定命基 |
-| `luming-nayin/luoluzi-sanming` | `LZ-01-02` | statement 中无可复原的 FactKey 取值 | 未复核 |  |  | 以干为禄、以支为命 |
-| `luming-nayin/luoluzi-sanming` | `LZ-01-03` | statement 中无可复原的 FactKey 取值 | 未复核 |  |  | 四柱内外详休旺 |
-| `luming-nayin/luoluzi-sanming` | `LZ-02-01` | statement 中无可复原的 FactKey 取值 | 未复核 |  |  | 折除运程一辰十岁 |
-| `luming-nayin/luoluzi-sanming` | `LZ-02-02` | statement 中无可复原的 FactKey 取值 | 未复核 |  |  | 将来者进、功成者退 |
-| `luming-nayin/luoluzi-sanming` | `LZ-02-03` | statement 中无可复原的 FactKey 取值 | 未复核 |  |  | 绝处建禄成贵 |
-| `luming-nayin/luoluzi-sanming` | `LZ-03-01` | statement 中无可复原的 FactKey 取值 | 未复核 |  |  | 三奇歌诀贵格 |
-| `luming-nayin/luoluzi-sanming` | `LZ-03-03` | statement 中无可复原的 FactKey 取值 | 未复核 |  |  | 勾陈得位、真武当权 |
-| `luming-nayin/luoluzi-sanming` | `LZ-05-01` | statement 中无可复原的 FactKey 取值 | 未复核 |  |  | 财命有气背禄不贫 |
-| `luming-nayin/luoluzi-sanming` | `LZ-05-02` | statement 中无可复原的 FactKey 取值 | 未复核 |  |  | 财绝命衰建禄不富 |
-| `luming-nayin/luoluzi-sanming` | `LZ-05-04` | statement 中无可复原的 FactKey 取值 | 未复核 |  |  | 鬼旺身衰夭寿 |
-| `luming-nayin/luoluzi-sanming` | `LZ-05-05` | statement 中无可复原的 FactKey 取值 | 未复核 |  |  | 背禄逐马克妻 |
-| `luming-nayin/luoluzi-sanming` | `LZ-05-06` | statement 中无可复原的 FactKey 取值 | 未复核 |  |  | 禄马同乡两府之贵 |
-| `luming-nayin/luoluzi-sanming` | `LZ-06-04` | statement 中无可复原的 FactKey 取值 | 未复核 |  |  | 生月带禄入仕赫奕 |
-| `luming-nayin/luoluzi-sanming` | `LZ-06-05` | statement 中无可复原的 FactKey 取值 | 未复核 |  |  | 裸形夹煞至凶 |
-| `luming-nayin/luoluzi-sanming` | `LZ-07-01` | statement 中无可复原的 FactKey 取值 | 未复核 |  |  | 四煞五鬼六害七伤 |
-| `luming-nayin/luoluzi-sanming` | `LZ-08-02` | statement 中无可复原的 FactKey 取值 | 未复核 |  |  | 男迎女送前后五年 |
-| `luming-nayin/luoluzi-sanming` | `LZ-08-04` | statement 中无可复原的 FactKey 取值 | 未复核 |  |  | 禍旬向末迎福 |
-| `luming-nayin/luoluzi-sanming` | `LZ-08-07` | statement 中无可复原的 FactKey 取值 | 未复核 |  |  | 身克煞輕、煞克身重 |
-| `luming-nayin/luoluzi-sanming` | `LZ-08-08` | statement 中无可复原的 FactKey 取值 | 未复核 |  |  | 万里回还三归之地 |
-| `luming-nayin/luoluzi-sanming` | `LZ-08-09` | statement 中无可复原的 FactKey 取值 | 未复核 |  |  | 金火两停成大器 |
-| `luming-nayin/luoluzi-sanming` | `LZ-08-10` | statement 中无可复原的 FactKey 取值 | 未复核 |  |  | 处定求动、居安问危 |
-| `luming-nayin/wuxing-jingji` | `WX-01-01` | statement 中无可复原的 FactKey 取值 | 未复核 |  |  | 六甲纳音法 |
-| `luming-nayin/wuxing-jingji` | `WX-02-01` | statement 中无可复原的 FactKey 取值 | 未复核 |  |  | 乾神十干配五常 |
-| `luming-nayin/wuxing-jingji` | `WX-02-02` | statement 中无可复原的 FactKey 取值 | 未复核 |  |  | 阳干阴干性情之分 |
-| `luming-nayin/wuxing-jingji` | `WX-03-01` | statement 中无可复原的 FactKey 取值 | 未复核 |  |  | 支神藏干（人元） |
-| `luming-nayin/wuxing-jingji` | `WX-03-02` | statement 中无可复原的 FactKey 取值 | 未复核 |  |  | 五行四时旺衰 |
-| `luming-nayin/wuxing-jingji` | `WX-03-03` | statement 中无可复原的 FactKey 取值 | 未复核 |  |  | 真五行合化 |
-| `luming-nayin/wuxing-jingji` | `WX-04-02` | statement 中无可复原的 FactKey 取值 | 未复核 |  |  | 日时贵格识别 |
-| `luming-nayin/wuxing-jingji` | `WX-04-04` | statement 中无可复原的 FactKey 取值 | 未复核 |  |  | 节气浅深起运 |
-| `luming-nayin/wuxing-jingji` | `WX-05-01` | statement 中无可复原的 FactKey 取值 | 未复核 |  |  | 天乙贵神识别 |
-| `luming-nayin/wuxing-jingji` | `WX-05-02` | statement 中无可复原的 FactKey 取值 | 未复核 |  |  | 祿馬同乡上贵 |
-| `luming-nayin/wuxing-jingji` | `WX-05-03` | statement 中无可复原的 FactKey 取值 | 未复核 |  |  | 三奇贵格 |
-| `luming-nayin/wuxing-jingji` | `WX-05-04` | statement 中无可复原的 FactKey 取值 | 未复核 |  |  | 四进神贵命 |
-| `luming-nayin/wuxing-jingji` | `WX-05-05` | statement 中无可复原的 FactKey 取值 | 未复核 |  |  | 华盖主孤高僧道 |
-| `luming-nayin/wuxing-jingji` | `WX-05-06` | statement 中无可复原的 FactKey 取值 | 未复核 |  |  | 金舆乘车之贵 |
-| `luming-nayin/wuxing-jingji` | `WX-06-01` | statement 中无可复原的 FactKey 取值 | 未复核 |  |  | 上贵格三大要素 |
-| `luming-nayin/wuxing-jingji` | `WX-07-02` | statement 中无可复原的 FactKey 取值 | 未复核 |  |  | 三刑骨肉 |
-| `luming-nayin/wuxing-jingji` | `WX-07-03` | statement 中无可复原的 FactKey 取值 | 未复核 |  |  | 六害骨肉离 |
-| `luming-nayin/wuxing-jingji` | `WX-07-05` | statement 中无可复原的 FactKey 取值 | 未复核 |  |  | 冲破六冲 |
-| `luming-nayin/wuxing-jingji` | `WX-08-01` | statement 中无可复原的 FactKey 取值 | 未复核 |  |  | 小儿关煞 |
-| `luming-nayin/wuxing-jingji` | `WX-08-02` | statement 中无可复原的 FactKey 取值 | 未复核 |  |  | 男命取格 |
-| `luming-nayin/wuxing-jingji` | `WX-08-03` | statement 中无可复原的 FactKey 取值 | 未复核 |  |  | 女命旧观 |
-| `luming-nayin/wuxing-jingji` | `WX-08-04` | statement 中无可复原的 FactKey 取值 | 未复核 |  |  | 父母位 |
-| `luming-nayin/wuxing-jingji` | `WX-09-01` | statement 中无可复原的 FactKey 取值 | 未复核 |  |  | 子息位 |
-| `luming-nayin/wuxing-jingji` | `WX-09-02` | statement 中无可复原的 FactKey 取值 | 未复核 |  |  | 僧道九流吏卒 |
-| `luming-nayin/wuxing-jingji` | `WX-09-03` | statement 中无可复原的 FactKey 取值 | 未复核 |  |  | 形貌性情 |
-| `luming-nayin/wuxing-jingji` | `WX-09-04` | statement 中无可复原的 FactKey 取值 | 未复核 |  |  | 论疾病 |
-| `luming-nayin/wuxing-jingji` | `WX-09-05` | statement 中无可复原的 FactKey 取值 | 未复核 |  |  | 论壽夭 |
-| `luming-nayin/wuxing-jingji` | `WX-10-01` | statement 中无可复原的 FactKey 取值 | 未复核 |  |  | 大运起例 |
-| `luming-nayin/wuxing-jingji` | `WX-10-02` | statement 中无可复原的 FactKey 取值 | 未复核 |  |  | 小运起例 |
-| `luming-nayin/wuxing-jingji` | `WX-10-03` | statement 中无可复原的 FactKey 取值 | 未复核 |  |  | 二运并行 |
-| `luming-nayin/wuxing-jingji` | `WX-10-04` | statement 中无可复原的 FactKey 取值 | 未复核 |  |  | 太岁伏吟反吟 |
-| `luming-nayin/wuxing-jingji` | `WX-10-05` | statement 中无可复原的 FactKey 取值 | 未复核 |  |  | 歲運合参 |
-| `luming-nayin/yuzhao-shenying` | `YUZHAOSHENYI-004` | statement 中无可复原的 FactKey 取值 | 未复核 |  |  | 时柱尅日柱，干尅轻、音尅重；干音俱尅则为重伤。 |
-| `luming-nayin/yuzhao-shenying` | `YUZHAOSHENYI-005` | statement 中无可复原的 FactKey 取值 | 未复核 |  |  | 时尅日、日尅月、月尅年，两分交战者损尊、伤本、寿促。 |
-| `luming-nayin/yuzhao-shenying` | `YUZHAOSHENYI-006` | statement 中无可复原的 FactKey 取值 | 未复核 |  |  | 二三柱犯纳音月胎者，主祖宗祸患或祖业不继。 |
-| `luming-nayin/yuzhao-shenying` | `YUZHAOSHENYI-012` | statement 中无可复原的 FactKey 取值 | 未复核 |  |  | 辰戌魁罡往来，原文按旺相休囚分作狱官、公吏、屠儿、争讼等。 |
-| `luming-nayin/yuzhao-shenying` | `YUZHAOSHENYI-021` | statement 中无可复原的 FactKey 取值 | 未复核 |  |  | 阳干月德合在干、陰干月德合在支；同柱为近合力强，旁柱为远合力弱。 |
-| `luming-nayin/yuzhao-shenying` | `YUZHAOSHENYI-026` | statement 中无可复原的 FactKey 取值 | 未复核 |  |  | 辰午酉亥自刑+下尅上重见，主自凶。 |
-| `luming-nayin/yuzhao-shenying` | `YUZHAOSHENYI-032` | statement 中无可复原的 FactKey 取值 | 未复核 |  |  | 卯酉门户上下全土，原文主腰脚沉滞。 |
-| `luming-nayin/yuzhao-shenying` | `YUZHAOSHENYI-034` | statement 中无可复原的 FactKey 取值 | 未复核 |  |  | 水土同至寅卯，原文主隔气风痰。 |
-| `luming-nayin/yuzhao-shenying` | `YUZHAOSHENYI-037` | statement 中无可复原的 FactKey 取值 | 未复核 |  |  | 25岁前以月柱合十二宫、25-50以日柱、50后以时柱。 |
-| `luming-nayin/yuzhao-shenying` | `YUZHAOSHENYI-038` | statement 中无可复原的 FactKey 取值 | 未复核 |  |  | 干鬼制者为官；纳音生鬼者亦为官贵。 |
-| `luming-nayin/yuzhao-shenying` | `YUZHAOSHENYI-039` | statement 中无可复原的 FactKey 取值 | 未复核 |  |  | 生干则尊人喜；生纳音则中下人吉。 |
-| `luming-nayin/yuzhao-shenying` | `YUZHAOSHENYI-040` | statement 中无可复原的 FactKey 取值 | 未复核 |  |  | 五行三合局齐者(木亥卯未/火寅午戌/金巳酉丑/水申子辰)俱旺主富贵。 |
-| `luming-nayin/yuzhao-shenying` | `YUZHAOSHENYI-041` | statement 中无可复原的 FactKey 取值 | 未复核 |  |  | 胎朝月、月朝日、日朝时之朝拱关系，主倍禄。 |
-| `luming-nayin/yuzhao-shenying` | `YUZHAOSHENYI-042` | statement 中无可复原的 FactKey 取值 | 未复核 |  |  | 旬中六甲(甲子甲戌甲申甲午甲辰甲寅)全见，主尊荣。 |
-| `luming-nayin/yuzhao-shenying` | `YUZHAOSHENYI-048` | statement 中无可复原的 FactKey 取值 | 未复核 |  |  | 命局四重干合者，主妻或夫再立、子郎重生。 |
-| `luming-nayin/yuzhao-shenying` | `YUZHAOSHENYI-051` | statement 中无可复原的 FactKey 取值 | 未复核 |  |  | 四孟(寅申巳亥)有力之乡见者主发。 |
-| `luming-nayin/yuzhao-shenying` | `YUZHAOSHENYI-053` | statement 中无可复原的 FactKey 取值 | 未复核 |  |  | 自家四柱干支自合为内合，旁柱合本柱为外合。 |
-| `luming-nayin/yuzhao-shenying` | `YUZHAOSHENYI-054` | statement 中无可复原的 FactKey 取值 | 未复核 |  |  | 年生月、月生日、日生时之上生下，主身贫贱；返此为进发。 |
-| `luming-nayin/yuzhao-shenying` | `YUZHAOSHENYI-YZ-02` | statement 中无可复原的 FactKey 取值 | 未复核 |  |  | 干尅支为顺，主头面尊老；支尅干为逆，主身体四支与陰人小口。干尅在尊位为重，音尅在身位为切。 |
-| `luming-nayin/yuzhao-shenying` | `YUZHAOSHENYI-YZ-03` | statement 中无可复原的 FactKey 取值 | 未复核 |  |  | 子午+庚甲组合主他乡外立。 |
-| `luming-nayin/yuzhao-shenying` | `YUZHAOSHENYI-YZ-05` | statement 中无可复原的 FactKey 取值 | 未复核 |  |  | 干防尊老、音同身、尅防同类妻妾、下防陰人小口。 |
-| `luming-nayin/yuzhao-shenying` | `YUZHAOSHENYI-YZ-06` | statement 中无可复原的 FactKey 取值 | 未复核 |  |  | 阳干月德主贵人扶助、陰干主陰人用力。 |
-| `luming-nayin/yuzhao-shenying` | `YUZHAOSHENYI-YZ-07` | statement 中无可复原的 FactKey 取值 | 未复核 |  |  | 父子夫妻儿女按尅合远近判亲疏内外。 |
-| `luming-nayin/yuzhao-shenying` | `YUZHAOSHENYI-YZ-08` | statement 中无可复原的 FactKey 取值 | 未复核 |  |  | 干上至下为退、下至上为进；五行升降以衰兴。 |
-| `luming-nayin/yuzhao-shenying` | `YZ-01` | statement 中无可复原的 FactKey 取值 | 未复核 |  |  | 卦逢生气天德合，仍要长生有所归；先看生我何为父，次看克我是何儿。 |
-| `luming-nayin/yuzhao-shenying` | `YZ-02` | statement 中无可复原的 FactKey 取值 | 未复核 |  |  | 论命须以年/胎/月/日/时五主互参，分别尊卑、干音并重。 |
-| `luming-nayin/yuzhao-shenying` | `YZ-05` | statement 中无可复原的 FactKey 取值 | 未复核 |  |  | 干墓在辰戌丑未；有旺气者为库主储藏，无气者为墓主收藏不发。 |
-| `luming-nayin/yuzhao-shenying` | `YZ-06` | statement 中无可复原的 FactKey 取值 | 未复核 |  |  | 月德合见于四正(子午卯酉)，主十分作福。 |
-| `luming-nayin/yuzhao-shenying` | `YZ-08` | statement 中无可复原的 FactKey 取值 | 未复核 |  |  | 木见旺金主强、火入离中主旺、金向旺中须损折、土积山岗多不动、水盛防走失。 |
+| `luming-nayin/li-xuzhong-mingshu` | `LIXUZHONGMIN-003` | statement 中无可复原的 FactKey 取值 | 需要引擎未产出的事实 | 纳音（六十甲子纳音名）与柱干支 | 子母相承之火；先煙后焰；喜木助、嫌水陵迟；五行相养虽死方亦光耿。 | 子母相承之火；先煙后焰；喜木助、嫌水陵迟；五行相养虽死方亦光耿。 |
+| `luming-nayin/li-xuzhong-mingshu` | `LIXUZHONGMIN-004` | statement 中无可复原的 FactKey 取值 | 需要引擎未产出的事实 | 纳音（六十甲子纳音名）与柱干支 | 本旺禄休之火；惟欲阴旺恶处盛阳；木火相资连艮震必变鼎。 | 本旺禄休之火；惟欲阴旺恶处盛阳；木火相资连艮震必变鼎。 |
+| `luming-nayin/li-xuzhong-mingshu` | `LIXUZHONGMIN-005` | statement 中无可复原的 FactKey 取值 | 需要引擎未产出的事实 | 纳音（六十甲子纳音名）与柱干支 | 华实兼荣之木；爱水土忌火金；金养则英实之命。 | 华实兼荣之木；爱水土忌火金；金养则英实之命。 |
+| `luming-nayin/li-xuzhong-mingshu` | `LIXUZHONGMIN-006` | statement 中无可复原的 FactKey 取值 | 需要引擎未产出的事实 | 纳音（六十甲子纳音名）与柱干支 | 气胜体刚之木；逢对旺干鬼或木来比助金伐则成栋梁。 | 气胜体刚之木；逢对旺干鬼或木来比助金伐则成栋梁。 |
+| `luming-nayin/li-xuzhong-mingshu` | `LIXUZHONGMIN-007` | statement 中无可复原的 FactKey 取值 | 需要引擎未产出的事实 | 纳音（六十甲子纳音名）与柱干支 | 含辉始育之土；气数未备喜旺方；独禄会命旺身绝非贵地。 | 含辉始育之土；气数未备喜旺方；独禄会命旺身绝非贵地。 |
+| `luming-nayin/li-xuzhong-mingshu` | `LIXUZHONGMIN-008` | statement 中无可复原的 FactKey 取值 | 需要引擎未产出的事实 | 纳音（六十甲子纳音名）与柱干支 | 自本立形之土；火助木乘水轻木重亦小康；败而乘禄方为厚载之福。 | 自本立形之土；火助木乘水轻木重亦小康；败而乘禄方为厚载之福。 |
+| `luming-nayin/li-xuzhong-mingshu` | `LIXUZHONGMIN-009` | statement 中无可复原的 FactKey 取值 | 需要引擎未产出的事实 | 纳音（六十甲子纳音名）与柱干支 | 自任权制之金；刚而有断；爱土木嫌火重；财旺身衰亦清华之贵。 | 自任权制之金；刚而有断；爱土木嫌火重；财旺身衰亦清华之贵。 |
+| `luming-nayin/li-xuzhong-mingshu` | `LIXUZHONGMIN-010` | statement 中无可复原的 FactKey 取值 | 需要引擎未产出的事实 | 纳音（六十甲子纳音名）与柱干支 | 刚锐利用之金；不嫌绝败惟畏鬼多；平易不刑则有自然材器。 | 刚锐利用之金；不嫌绝败惟畏鬼多；平易不刑则有自然材器。 |
+| `luming-nayin/li-xuzhong-mingshu` | `LIXUZHONGMIN-011` | statement 中无可复原的 FactKey 取值 | 需要引擎未产出的事实 | 纳音（六十甲子纳音名）与柱干支 | 墓成息用之火；不求壮旺欲物平资福禄高厚；入格可贵干不必官。 | 墓成息用之火；不求壮旺欲物平资福禄高厚；入格可贵干不必官。 |
+| `luming-nayin/li-xuzhong-mingshu` | `LIXUZHONGMIN-012` | statement 中无可复原的 FactKey 取值 | 需要引擎未产出的事实 | 纳音（六十甲子纳音名）与柱干支 | 气散游魂之火；生于木火荣方上下不逢相制则成达。 | 气散游魂之火；生于木火荣方上下不逢相制则成达。 |
+| `luming-nayin/li-xuzhong-mingshu` | `LIXUZHONGMIN-013` | statement 中无可复原的 FactKey 取值 | 需要引擎未产出的事实 | 纳音（六十甲子纳音名）与柱干支 | 深沉停会之水；会源得生用制于东南为出常之器。 | 深沉停会之水；会源得生用制于东南为出常之器。 |
+| `luming-nayin/li-xuzhong-mingshu` | `LIXUZHONGMIN-014` | statement 中无可复原的 FactKey 取值 | 需要引擎未产出的事实 | 纳音（六十甲子纳音名）与柱干支 | 渐下欲流之水；得水土相承经败地源脉不断可升而济物。 | 渐下欲流之水；得水土相承经败地源脉不断可升而济物。 |
+| `luming-nayin/li-xuzhong-mingshu` | `LIXUZHONGMIN-015` | statement 中无可复原的 FactKey 取值 | 需要引擎未产出的事实 | 纳音（六十甲子纳音名）与柱干支 | 生体安和之土；资以火土俱盛金旺之荣；尚可高崇为不常之用。 | 生体安和之土；资以火土俱盛金旺之荣；尚可高崇为不常之用。 |
+| `luming-nayin/li-xuzhong-mingshu` | `LIXUZHONGMIN-016` | statement 中无可复原的 FactKey 取值 | 需要引擎未产出的事实 | 纳音（六十甲子纳音名）与柱干支 | 鬼旺体坚之土；生于金重木多见财重则富贵长远。 | 鬼旺体坚之土；生于金重木多见财重则富贵长远。 |
+| `luming-nayin/li-xuzhong-mingshu` | `LIXUZHONGMIN-017` | statement 中无可复原的 FactKey 取值 | 需要引擎未产出的事实 | 纳音（六十甲子纳音名）与柱干支 | 显光之金未成材；金刚土重得期相会无炎火之官乃大臣之制。 | 显光之金未成材；金刚土重得期相会无炎火之官乃大臣之制。 |
+| `luming-nayin/li-xuzhong-mingshu` | `LIXUZHONGMIN-018` | statement 中无可复原的 FactKey 取值 | 需要引擎未产出的事实 | 纳音（六十甲子纳音名）与柱干支 | 资始之金；身坚体柔欲平火之制；金助土成则光大之器。 | 资始之金；身坚体柔欲平火之制；金助土成则光大之器。 |
+| `luming-nayin/li-xuzhong-mingshu` | `LIXUZHONGMIN-019` | statement 中无可复原的 FactKey 取值 | 需要引擎未产出的事实 | 纳音（六十甲子纳音名）与柱干支 | 化薪之木；畏在火强得水资；处生旺逢土亦富贵。 | 化薪之木；畏在火强得水资；处生旺逢土亦富贵。 |
+| `luming-nayin/li-xuzhong-mingshu` | `LIXUZHONGMIN-020` | statement 中无可复原的 FactKey 取值 | 需要引擎未产出的事实 | 纳音（六十甲子纳音名）与柱干支 | 伐根之木；气败体柔不嫌金制；喜水之荣会元借生主成重器。 | 伐根之木；气败体柔不嫌金制；喜水之荣会元借生主成重器。 |
+| `luming-nayin/li-xuzhong-mingshu` | `LIXUZHONGMIN-021` | statement 中无可复原的 FactKey 取值 | 需要引擎未产出的事实 | 纳音（六十甲子纳音名）与柱干支 | 源泉之水；务有资助流长无鬼则运广之渊享高厚之福。 | 源泉之水；务有资助流长无鬼则运广之渊享高厚之福。 |
+| `luming-nayin/li-xuzhong-mingshu` | `LIXUZHONGMIN-022` | statement 中无可复原的 FactKey 取值 | 需要引擎未产出的事实 | 纳音（六十甲子纳音名）与柱干支 | 母旺进趋之水；资金济火自乾东而震北亦超卓辅弼之用。 | 母旺进趋之水；资金济火自乾东而震北亦超卓辅弼之用。 |
+| `luming-nayin/li-xuzhong-mingshu` | `LIXUZHONGMIN-023` | statement 中无可复原的 FactKey 取值 | 需要引擎未产出的事实 | 纳音（六十甲子纳音名）与柱干支 | 禄资支附坚固火钟之土；资以木光耀不群本重不须旺。 | 禄资支附坚固火钟之土；资以木光耀不群本重不须旺。 |
+| `luming-nayin/li-xuzhong-mingshu` | `LIXUZHONGMIN-024` | statement 中无可复原的 FactKey 取值 | 需要引擎未产出的事实 | 纳音（六十甲子纳音名）与柱干支 | 福壮临官之土；润水丽金处魁罡坤艮可显功遂名。 | 福壮临官之土；润水丽金处魁罡坤艮可显功遂名。 |
+| `luming-nayin/li-xuzhong-mingshu` | `LIXUZHONGMIN-025` | statement 中无可复原的 FactKey 取值 | 需要引擎未产出的事实 | 纳音（六十甲子纳音名）与柱干支 | 神龙之火；利震巽不畏水刑；干支得官皆显用水木盛尤佳。 | 神龙之火；利震巽不畏水刑；干支得官皆显用水木盛尤佳。 |
+| `luming-nayin/li-xuzhong-mingshu` | `LIXUZHONGMIN-026` | statement 中无可复原的 FactKey 取值 | 需要引擎未产出的事实 | 纳音（六十甲子纳音名）与柱干支 | 余光不凡之火；惟期体重不假奇财；禄资命成方入康荣。 | 余光不凡之火；惟期体重不假奇财；禄资命成方入康荣。 |
+| `luming-nayin/li-xuzhong-mingshu` | `LIXUZHONGMIN-027` | statement 中无可复原的 FactKey 取值 | 需要引擎未产出的事实 | 纳音（六十甲子纳音名）与柱干支 | 五行坚实之木；不避刑冲不辞衰败；和柔德贵相符必显大用。 | 五行坚实之木；不避刑冲不辞衰败；和柔德贵相符必显大用。 |
+| `luming-nayin/li-xuzhong-mingshu` | `LIXUZHONGMIN-028` | statement 中无可复原的 FactKey 取值 | 需要引擎未产出的事实 | 纳音（六十甲子纳音名）与柱干支 | 经制之木自旺；不畏霜雪气节凌云；制金损火逢旺即巨室之材。 | 经制之木自旺；不畏霜雪气节凌云；制金损火逢旺即巨室之材。 |
+| `luming-nayin/li-xuzhong-mingshu` | `LIXUZHONGMIN-029` | statement 中无可复原的 FactKey 取值 | 需要引擎未产出的事实 | 纳音（六十甲子纳音名）与柱干支 | 会贵守成之水；五行不杂兑坎之间无物来制可享高福。 | 会贵守成之水；五行不杂兑坎之间无物来制可享高福。 |
+| `luming-nayin/li-xuzhong-mingshu` | `LIXUZHONGMIN-030` | statement 中无可复原的 FactKey 取值 | 需要引擎未产出的事实 | 纳音（六十甲子纳音名）与柱干支 | 流远澄清之水；溢以水在火木荣方音中无土则有济物之德。 | 流远澄清之水；溢以水在火木荣方音中无土则有济物之德。 |
+| `luming-nayin/li-xuzhong-mingshu` | `LIXUZHONGMIN-031` | statement 中无可复原的 FactKey 取值 | 需要引擎未产出的事实 | 纳音（六十甲子纳音名）与柱干支 | 沙汰之金志大有节；零火盖之严或旺金集之刚；不遇丁壬可陶熔。 | 沙汰之金志大有节；零火盖之严或旺金集之刚；不遇丁壬可陶熔。 |
+| `luming-nayin/li-xuzhong-mingshu` | `LIXUZHONGMIN-032` | statement 中无可复原的 FactKey 取值 | 需要引擎未产出的事实 | 纳音（六十甲子纳音名）与柱干支 | 强悍刚矿之金；欲金相用在火盛处父子相乘皆为珍宝。 | 强悍刚矿之金；欲金相用在火盛处父子相乘皆为珍宝。 |
+| `luming-nayin/li-xuzhong-mingshu` | `LIXUZHONGMIN-033` | statement 中无可复原的 FactKey 取值 | 需要引擎未产出的事实 | 纳音（六十甲子纳音名）与柱干支 | 无资之火；金木壮旺有制得干生为厚实；禄盛无依即灰飞。 | 无资之火；金木壮旺有制得干生为厚实；禄盛无依即灰飞。 |
+| `luming-nayin/li-xuzhong-mingshu` | `LIXUZHONGMIN-034` | statement 中无可复原的 FactKey 取值 | 需要引擎未产出的事实 | 纳音（六十甲子纳音名）与柱干支 | 平易无为之火；木旺则大炎、木多成用、火助则不清；得此无不贵豪。 | 平易无为之火；木旺则大炎、木多成用、火助则不清；得此无不贵豪。 |
+| `luming-nayin/li-xuzhong-mingshu` | `LIXUZHONGMIN-035` | statement 中无可复原的 FactKey 取值 | 需要引擎未产出的事实 | 纳音（六十甲子纳音名）与柱干支 | 不材之木；喜逢水旺资荣；金败自然不嫌禄鬼方可高崇。 | 不材之木；喜逢水旺资荣；金败自然不嫌禄鬼方可高崇。 |
+| `luming-nayin/li-xuzhong-mingshu` | `LIXUZHONGMIN-036` | statement 中无可复原的 FactKey 取值 | 需要引擎未产出的事实 | 纳音（六十甲子纳音名）与柱干支 | 粪水育苗之木；水多土而临旺皆有成就；逢败绝主富贵荣盛。 | 粪水育苗之木；水多土而临旺皆有成就；逢败绝主富贵荣盛。 |
+| `luming-nayin/li-xuzhong-mingshu` | `LIXUZHONGMIN-037` | statement 中无可复原的 FactKey 取值 | 需要引擎未产出的事实 | 纳音（六十甲子纳音名）与柱干支 | 气过浮虚之土；得重土相资水木不刚即享福寿。 | 气过浮虚之土；得重土相资水木不刚即享福寿。 |
+| `luming-nayin/li-xuzhong-mingshu` | `LIXUZHONGMIN-038` | statement 中无可复原的 FactKey 取值 | 需要引擎未产出的事实 | 纳音（六十甲子纳音名）与柱干支 | 气衰就本之土；承火制木重逢木土刑冲假禄元可立功名。 | 气衰就本之土；承火制木重逢木土刑冲假禄元可立功名。 |
+| `luming-nayin/li-xuzhong-mingshu` | `LIXUZHONGMIN-039` | statement 中无可复原的 FactKey 取值 | 需要引擎未产出的事实 | 纳音（六十甲子纳音名）与柱干支 | 藏用体柔之金；喜土资以旺财官不可太刚；应此富贵久远。 | 藏用体柔之金；喜土资以旺财官不可太刚；应此富贵久远。 |
+| `luming-nayin/li-xuzhong-mingshu` | `LIXUZHONGMIN-040` | statement 中无可复原的 FactKey 取值 | 需要引擎未产出的事实 | 纳音（六十甲子纳音名）与柱干支 | 财旺体弱之金；财命相乘喜身在生旺；得真官真气配合贵源。 | 财旺体弱之金；财命相乘喜身在生旺；得真官真气配合贵源。 |
+| `luming-nayin/li-xuzhong-mingshu` | `LIXUZHONGMIN-041` | statement 中无可复原的 FactKey 取值 | 需要引擎未产出的事实 | 纳音（六十甲子纳音名）与柱干支 | 始壮之火；多生我或会本源却无炎光之极超卓；水轻无土亦可腾达。 | 始壮之火；多生我或会本源却无炎光之极超卓；水轻无土亦可腾达。 |
+| `luming-nayin/li-xuzhong-mingshu` | `LIXUZHONGMIN-042` | statement 中无可复原的 FactKey 取值 | 需要引擎未产出的事实 | 纳音（六十甲子纳音名）与柱干支 | 进功之火；辅助不息不必旺极；木火相乘虽死败亦贵。 | 进功之火；辅助不息不必旺极；木火相乘虽死败亦贵。 |
+| `luming-nayin/li-xuzhong-mingshu` | `LIXUZHONGMIN-043` | statement 中无可复原的 FactKey 取值 | 需要引擎未产出的事实 | 纳音（六十甲子纳音名）与柱干支 | 至阴之水；发于阳明蒸气氤氲；处金木旺而冲刑得炎财盛始贵。 | 至阴之水；发于阳明蒸气氤氲；处金木旺而冲刑得炎财盛始贵。 |
+| `luming-nayin/li-xuzhong-mingshu` | `LIXUZHONGMIN-044` | statement 中无可复原的 FactKey 取值 | 需要引擎未产出的事实 | 纳音（六十甲子纳音名）与柱干支 | 禄旺育生之水；水火死败禄干自旺财贵会乾方乃富贵；土在旺乡非长久。 | 禄旺育生之水；水火死败禄干自旺财贵会乾方乃富贵；土在旺乡非长久。 |
+| `luming-nayin/li-xuzhong-mingshu` | `LIXUZHONGMIN-045` | statement 中无可复原的 FactKey 取值 | 需要引擎未产出的事实 | 纳音（六十甲子纳音名）与柱干支 | 柔顺发生之土；喜临四季得木为荣；独居水火荣方未得尊高。 | 柔顺发生之土；喜临四季得木为荣；独居水火荣方未得尊高。 |
+| `luming-nayin/li-xuzhong-mingshu` | `LIXUZHONGMIN-046` | statement 中无可复原的 FactKey 取值 | 需要引擎未产出的事实 | 纳音（六十甲子纳音名）与柱干支 | 子旺母衰之土；喜火土荣庆从革之地；水轻木柔亦滋生之德。 | 子旺母衰之土；喜火土荣庆从革之地；水轻木柔亦滋生之德。 |
+| `luming-nayin/li-xuzhong-mingshu` | `LIXUZHONGMIN-047` | statement 中无可复原的 FactKey 取值 | 需要引擎未产出的事实 | 纳音（六十甲子纳音名）与柱干支 | 钝弱成用之金；火轻金重魁罡相乘可休逸福禄；忌木火极则迍蹇。 | 钝弱成用之金；火轻金重魁罡相乘可休逸福禄；忌木火极则迍蹇。 |
+| `luming-nayin/li-xuzhong-mingshu` | `LIXUZHONGMIN-048` | statement 中无可复原的 FactKey 取值 | 需要引擎未产出的事实 | 纳音（六十甲子纳音名）与柱干支 | 木旺禄休之金；得平火之革制于克伐；金水冲击得平安守职。 | 木旺禄休之金；得平火之革制于克伐；金水冲击得平安守职。 |
+| `luming-nayin/li-xuzhong-mingshu` | `LIXUZHONGMIN-049` | statement 中无可复原的 FactKey 取值 | 需要引擎未产出的事实 | 纳音（六十甲子纳音名）与柱干支 | 体柔用刚之木；居旺相得金遇贵地无火可扬名当世。 | 体柔用刚之木；居旺相得金遇贵地无火可扬名当世。 |
+| `luming-nayin/li-xuzhong-mingshu` | `LIXUZHONGMIN-050` | statement 中无可复原的 FactKey 取值 | 需要引擎未产出的事实 | 纳音（六十甲子纳音名）与柱干支 | 刚柔相济之木；水土承旺方生育利物；金制生成皆可立功。 | 刚柔相济之木；水土承旺方生育利物；金制生成皆可立功。 |
+| `luming-nayin/li-xuzhong-mingshu` | `LIXUZHONGMIN-051` | statement 中无可复原的 FactKey 取值 | 需要引擎未产出的事实 | 纳音（六十甲子纳音名）与柱干支 | 渊深处静之水；资以木旺土衰则奇特贵异。 | 渊深处静之水；资以木旺土衰则奇特贵异。 |
+| `luming-nayin/li-xuzhong-mingshu` | `LIXUZHONGMIN-052` | statement 中无可复原的 FactKey 取值 | 需要引擎未产出的事实 | 纳音（六十甲子纳音名）与柱干支 | 死中受气之水；败无妨；会源于音地未有不达；喜土而清。 | 死中受气之水；败无妨；会源于音地未有不达；喜土而清。 |
+| `luming-nayin/li-xuzhong-mingshu` | `LIXUZHONGMIN-053` | statement 中无可复原的 FactKey 取值 | 需要引擎未产出的事实 | 纳音（六十甲子纳音名）与柱干支 | 发施养生之土；喜火助不畏掩冲自然荣贵。 | 发施养生之土；喜火助不畏掩冲自然荣贵。 |
+| `luming-nayin/li-xuzhong-mingshu` | `LIXUZHONGMIN-054` | statement 中无可复原的 FactKey 取值 | 需要引擎未产出的事实 | 纳音（六十甲子纳音名）与柱干支 | 绝中受气之土；喜土助不畏死败；朝命建元可文章妙选。 | 绝中受气之土；喜土助不畏死败；朝命建元可文章妙选。 |
+| `luming-nayin/li-xuzhong-mingshu` | `LIXUZHONGMIN-055` | statement 中无可复原的 FactKey 取值 | 需要引擎未产出的事实 | 纳音（六十甲子纳音名）与柱干支 | 神发离明之火；旺中受绝喜木助衰方忌火乘已旺生；应此必魁英。 | 神发离明之火；旺中受绝喜木助衰方忌火乘已旺生；应此必魁英。 |
+| `luming-nayin/li-xuzhong-mingshu` | `LIXUZHONGMIN-056` | statement 中无可复原的 FactKey 取值 | 需要引擎未产出的事实 | 纳音（六十甲子纳音名）与柱干支 | 成功之火；得季夏炎阳守小吉；甲己扶持不须更旺。 | 成功之火；得季夏炎阳守小吉；甲己扶持不须更旺。 |
+| `luming-nayin/li-xuzhong-mingshu` | `LIXUZHONGMIN-057` | statement 中无可复原的 FactKey 取值 | 需要引擎未产出的事实 | 纳音（六十甲子纳音名）与柱干支 | 未坚柔末之木；春相夏旺金重得火土重得水则出常之器。 | 未坚柔末之木；春相夏旺金重得火土重得水则出常之器。 |
+| `luming-nayin/li-xuzhong-mingshu` | `LIXUZHONGMIN-058` | statement 中无可复原的 FactKey 取值 | 需要引擎未产出的事实 | 纳音（六十甲子纳音名）与柱干支 | 包秀结英之木；喜生旺忌见金多；土水相乘为物之贵。 | 包秀结英之木；喜生旺忌见金多；土水相乘为物之贵。 |
+| `luming-nayin/li-xuzhong-mingshu` | `LIXUZHONGMIN-059` | statement 中无可复原的 FactKey 取值 | 需要引擎未产出的事实 | 纳音（六十甲子纳音名）与柱干支 | 杳之水；喜死败要土之击发能博施之功及物。 | 杳之水；喜死败要土之击发能博施之功及物。 |
+| `luming-nayin/li-xuzhong-mingshu` | `LIXUZHONGMIN-060` | statement 中无可复原的 FactKey 取值 | 需要引擎未产出的事实 | 纳音（六十甲子纳音名）与柱干支 | 始进成终之水；喜逢贵地忌在禄乡；不可守常须升雨雾散江河乃大用。 | 始进成终之水；喜逢贵地忌在禄乡；不可守常须升雨雾散江河乃大用。 |
+| `luming-nayin/li-xuzhong-mingshu` | `LIXUZHONGMIN-065` | statement 中无可复原的 FactKey 取值 | 原文无盘面适用条件（通论／体例／取象表／起例取法） |  | 贵合则官位穹崇所作契合；贵食则禄丰足所成造望；二者兼之官高禄重。 | 贵合则官位穹崇所作契合；贵食则禄丰足所成造望；二者兼之官高禄重。 |
+| `luming-nayin/li-xuzhong-mingshu` | `LIXUZHONGMIN-066` | statement 中无可复原的 FactKey 取值 | 需要引擎未产出的事实 | 年/月/时柱天干互换关系与流年（太岁） | 贵人交互人多贵；旺气相乘馆殿资；五行不可伤；月日时互换见贵太岁不带者不贵。 | 贵人交互人多贵；旺气相乘馆殿资；五行不可伤；月日时互换见贵太岁不带者不贵。 |
+| `luming-nayin/li-xuzhong-mingshu` | `LIXUZHONGMIN-070` | statement 中无可复原的 FactKey 取值 | 原文无盘面适用条件（通论／体例／取象表／起例取法） |  | 寅午戌火体、亥卯未木体、申子辰水体、巳酉丑金体；土则从四事成之。 | 寅午戌火体、亥卯未木体、申子辰水体、巳酉丑金体；土则从四事成之。 |
+| `luming-nayin/li-xuzhong-mingshu` | `LIXUZHONGMIN-071` | statement 中无可复原的 FactKey 取值 | 原文无盘面适用条件（通论／体例／取象表／起例取法） |  | 干支配数：甲己子午9、乙庚丑未8、丙辛寅申7、丁壬卯酉6、戊癸辰戌5、巳亥支数4 | 干支配数：甲己子午9、乙庚丑未8、丙辛寅申7、丁壬卯酉6、戊癸辰戌5、巳亥支数4。除6/5之数则得纳音之用。 |
+| `luming-nayin/li-xuzhong-mingshu` | `LIXUZHONGMIN-073` | statement 中无可复原的 FactKey 取值 | 原文无盘面适用条件（通论／体例／取象表／起例取法） |  | 智仁则清（水木），礼义则浊（火金），信从四时之气（土）。 | 智仁则清（水木），礼义则浊（火金），信从四时之气（土）。 |
+| `luming-nayin/li-xuzhong-mingshu` | `LIXUZHONGMIN-074` | statement 中无可复原的 FactKey 取值 | 原文无盘面适用条件（通论／体例／取象表／起例取法） |  | 水多沉潜伏溺、火多崇礼贪饕、木多柔懦泛交、金多刚直尚勇、土多重厚藏密；各得多则各 | 水多沉潜伏溺、火多崇礼贪饕、木多柔懦泛交、金多刚直尚勇、土多重厚藏密；各得多则各显其性。 |
+| `luming-nayin/li-xuzhong-mingshu` | `LIXUZHONGMIN-077` | statement 中无可复原的 FactKey 取值 | 原文无盘面适用条件（通论／体例／取象表／起例取法） |  | 胎主父母祖宗十分主事二分；月主时气十分主事六分；日主未得气十分主事八分；时主用度 | 胎主父母祖宗十分主事二分；月主时气十分主事六分；日主未得气十分主事八分；时主用度十分。 |
+| `luming-nayin/li-xuzhong-mingshu` | `LIXUZHONGMIN-078` | statement 中无可复原的 FactKey 取值 | 需要引擎未产出的事实 | 四柱干支及柱间生克（主本/时日关系） | 主本保合未有贫贱之人；时日乖违岂有久荣之理。 | 主本保合未有贫贱之人；时日乖违岂有久荣之理。 |
+| `luming-nayin/li-xuzhong-mingshu` | `LIXUZHONGMIN-079` | statement 中无可复原的 FactKey 取值 | 需要引擎未产出的事实 | 三元入墓状态、日时旺衰与大运干支 | 三元入墓日时自旺，虽运并绝逢鬼，鬼亦不能取。 | 三元入墓日时自旺，虽运并绝逢鬼，鬼亦不能取。 |
+| `luming-nayin/li-xuzhong-mingshu` | `LIXUZHONGMIN-080` | statement 中无可复原的 FactKey 取值 | 原文无盘面适用条件（通论／体例／取象表／起例取法） |  | 五行相敌轻重相等；遇鬼二则为凶，一重为鬼犹凶中反吉。 | 五行相敌轻重相等；遇鬼二则为凶，一重为鬼犹凶中反吉。 |
+| `luming-nayin/li-xuzhong-mingshu` | `LIXUZHONGMIN-081` | statement 中无可复原的 FactKey 取值 | 原文无盘面适用条件（通论／体例／取象表／起例取法） |  | 尊生卑曰宝，卑生尊曰义，上尅下曰制，下贼上曰伐；以胎月日时上下相生相尅判。 | 尊生卑曰宝，卑生尊曰义，上尅下曰制，下贼上曰伐；以胎月日时上下相生相尅判。 |
+| `luming-nayin/li-xuzhong-mingshu` | `LIXUZHONGMIN-085` | statement 中无可复原的 FactKey 取值 | 需要引擎未产出的事实 | 天德贵人、月将、事合神（柱间合神） | 天月德临月将事合神；金印垂腰之贵；递相揖让调鼎位极人臣。 | 天月德临月将事合神；金印垂腰之贵；递相揖让调鼎位极人臣。 |
+| `luming-nayin/li-xuzhong-mingshu` | `LIXUZHONGMIN-088` | statement 中无可复原的 FactKey 取值 | 原文无盘面适用条件（通论／体例／取象表／起例取法） |  | 子息先明生气或用尅以推之；自生自旺看运元胎月。 | 子息先明生气或用尅以推之；自生自旺看运元胎月。 |
+| `luming-nayin/li-xuzhong-mingshu` | `LIXUZHONGMIN-089` | statement 中无可复原的 FactKey 取值 | 原文无盘面适用条件（通论／体例／取象表／起例取法） |  | 刑聚败极／四柱不收／五行未备／数无取用／一方前后／柱多隔角／真者失时／假者殃尅／ | 刑聚败极／四柱不收／五行未备／数无取用／一方前后／柱多隔角／真者失时／假者殃尅／主本倒乱／父子乖违皆为贫贱之格。 |
+| `luming-nayin/li-xuzhong-mingshu` | `LIXUZHONGMIN-090` | statement 中无可复原的 FactKey 取值 | 原文无盘面适用条件（通论／体例／取象表／起例取法） |  | 真者失时假者殃尅；本气绝而花繁纵子成而味拙。 | 真者失时假者殃尅；本气绝而花繁纵子成而味拙。 |
+| `luming-nayin/li-xuzhong-mingshu` | `LIXUZHONGMIN-093` | statement 中无可复原的 FactKey 取值 | 原文无盘面适用条件（通论／体例／取象表／起例取法） |  | 男一岁起寅、女一岁起申；以建元论胜负，助岁运依吉凶。 | 男一岁起寅、女一岁起申；以建元论胜负，助岁运依吉凶。 |
+| `luming-nayin/li-xuzhong-mingshu` | `LIXUZHONGMIN-094` | statement 中无可复原的 FactKey 取值 | 原文无盘面适用条件（通论／体例／取象表／起例取法） |  | 禄/命/身金入土干支或纳音下；不利君子利小人；子弱母胜。 | 禄/命/身金入土干支或纳音下；不利君子利小人；子弱母胜。 |
+| `luming-nayin/li-xuzhong-mingshu` | `LIXUZHONGMIN-095` | statement 中无可复原的 FactKey 取值 | 需要引擎未产出的事实 | 大运/流年干支与三刑、冲柱主本之关系 | 三元值鬼+二运三刑+并冲柱主本与行年不相承=黄泉失所之命。 | 三元值鬼+二运三刑+并冲柱主本与行年不相承=黄泉失所之命。 |
+| `luming-nayin/li-xuzhong-mingshu` | `LIXUZHONGMIN-096` | statement 中无可复原的 FactKey 取值 | 需要引擎未产出的事实 | 大运伏吟与丧吊/白衣/飞廉/孤寡/岁刑等神煞名 | 金破碎而不返；运至伏吟逢丧吊白衣飞廉孤寡岁刑尅身。 | 金破碎而不返；运至伏吟逢丧吊白衣飞廉孤寡岁刑尅身。 |
+| `luming-nayin/li-xuzhong-mingshu` | `LIXUZHONGMIN-101` | statement 中无可复原的 FactKey 取值 | 原文无盘面适用条件（通论／体例／取象表／起例取法） |  | 土本无一方之气，从水妻之义；阴阳各逐四时成就；土育于寅。 | 土本无一方之气，从水妻之义；阴阳各逐四时成就；土育于寅。 |
+| `luming-nayin/li-xuzhong-mingshu` | `LIXUZHONGMIN-LX-01` | statement 中无可复原的 FactKey 取值 | 需要引擎未产出的事实 | 纳音（六十甲子纳音名）与柱干支 | 库墓守财之金；不嫌鬼旺、喜禄财；水土砥砺亦可成器。 | 库墓守财之金；不嫌鬼旺、喜禄财；水土砥砺亦可成器。 |
+| `luming-nayin/li-xuzhong-mingshu` | `LIXUZHONGMIN-LX-03` | statement 中无可复原的 FactKey 取值 | 原文无盘面适用条件（通论／体例／取象表／起例取法） |  | 坤为土，乾为金，金亦土也，为水母。 | 坤为土，乾为金，金亦土也，为水母。 |
+| `luming-nayin/li-xuzhong-mingshu` | `LIXUZHONGMIN-LX-04` | statement 中无可复原的 FactKey 取值 | 原文无盘面适用条件（通论／体例／取象表／起例取法） |  | 干主名禄贵权（衣食受用基），支主金珠积富（得失荣枯本），纳音主才能器识（人伦亲属 | 干主名禄贵权（衣食受用基），支主金珠积富（得失荣枯本），纳音主才能器识（人伦亲属宗）。 |
+| `luming-nayin/li-xuzhong-mingshu` | `LIXUZHONGMIN-LX-05` | statement 中无可复原的 FactKey 取值 | 需要引擎未产出的事实 | 时支（四仲）、年支（年死败） | 死败全逢刑犹寿考；四仲时生主无妨败；年死败有生主有寿及父母。 | 死败全逢刑犹寿考；四仲时生主无妨败；年死败有生主有寿及父母。 |
+| `luming-nayin/li-xuzhong-mingshu` | `LIXUZHONGMIN-LX-06` | statement 中无可复原的 FactKey 取值 | 原文无盘面适用条件（通论／体例／取象表／起例取法） |  | 生月为父、胎月为母、身尅为妻、妻生为子、时生是妻子之数；成败自然。 | 生月为父、胎月为母、身尅为妻、妻生为子、时生是妻子之数；成败自然。 |
+| `luming-nayin/li-xuzhong-mingshu` | `LIXUZHONGMIN-LX-07` | statement 中无可复原的 FactKey 取值 | 原文无盘面适用条件（通论／体例／取象表／起例取法） |  | 阳男阴女顺、阴男阳女逆；十干分月、三日成年。 | 阳男阴女顺、阴男阳女逆；十干分月、三日成年。 |
+| `luming-nayin/li-xuzhong-mingshu` | `LIXUZHONGMIN-LX-08` | statement 中无可复原的 FactKey 取值 | 原文无盘面适用条件（通论／体例／取象表／起例取法） |  | 60甲子中12位神头禄（戊辰/戊戌/己丑/己未/丙午/丁巳/壬子/癸亥/甲寅/乙 | 60甲子中12位神头禄（戊辰/戊戌/己丑/己未/丙午/丁巳/壬子/癸亥/甲寅/乙卯/庚申/辛酉），阴阳专位天地神会。 |
+| `luming-nayin/li-xuzhong-mingshu` | `LX-01` | statement 中无可复原的 FactKey 取值 | 需要引擎未产出的事实 | 纳音（六十甲子纳音名）与柱干支 | 子旺母衰之金，溺水下韬光，须假火革；命入贵格明暗取官。 | 子旺母衰之金，溺水下韬光，须假火革；命入贵格明暗取官。 |
+| `luming-nayin/li-xuzhong-mingshu` | `LX-02` | statement 中无可复原的 FactKey 取值 | 原文无盘面适用条件（通论／体例／取象表／起例取法） |  | 此六十位五行支干相乘要分轻重：金溺水下、火出水上；木不得金之所制木无成；金不得火 | 此六十位五行支干相乘要分轻重：金溺水下、火出水上；木不得金之所制木无成；金不得火之所制金无成。 |
+| `luming-nayin/li-xuzhong-mingshu` | `LX-03` | statement 中无可复原的 FactKey 取值 | 原文无盘面适用条件（通论／体例／取象表／起例取法） |  | 清气阳为天，浊气阴为地；造化始于无相因而三生。 | 清气阳为天，浊气阴为地；造化始于无相因而三生。 |
+| `luming-nayin/li-xuzhong-mingshu` | `LX-05` | statement 中无可复原的 FactKey 取值 | 需要引擎未产出的事实 | 时支、年支（月支以外的柱地支） | 四季为五行墓万物所终；时逢之虽会吉而贵亦主妨害尊亲；四孟带煞必尅。 | 四季为五行墓万物所终；时逢之虽会吉而贵亦主妨害尊亲；四孟带煞必尅。 |
+| `luming-nayin/li-xuzhong-mingshu` | `LX-06` | statement 中无可复原的 FactKey 取值 | 原文无盘面适用条件（通论／体例／取象表／起例取法） |  | 一方之气不可过角；进角为孤、退角为寡；既旺不过一方却言衰者成功也。 | 一方之气不可过角；进角为孤、退角为寡；既旺不过一方却言衰者成功也。 |
+| `luming-nayin/li-xuzhong-mingshu` | `LX-07` | statement 中无可复原的 FactKey 取值 | 原文无盘面适用条件（通论／体例／取象表／起例取法） |  | 三元者大小气运，九限者三运之荣谢；自生得节日为初。 | 三元者大小气运，九限者三运之荣谢；自生得节日为初。 |
+| `luming-nayin/li-xuzhong-mingshu` | `LX-08` | statement 中无可复原的 FactKey 取值 | 原文无盘面适用条件（通论／体例／取象表／起例取法） |  | 六十载支干同日神头；六合之德五组共三十组（甲己/丙辛/戊癸/庚乙/壬丁）。 | 六十载支干同日神头；六合之德五组共三十组（甲己/丙辛/戊癸/庚乙/壬丁）。 |
+| `luming-nayin/luoluzi-sanming` | `LZ-01-01` | statement 中无可复原的 FactKey 取值 | 原文无盘面适用条件（通论／体例／取象表／起例取法） |  | 三才四气定命基 | 三才四气定命基 |
+| `luming-nayin/luoluzi-sanming` | `LZ-01-02` | statement 中无可复原的 FactKey 取值 | 原文无盘面适用条件（通论／体例／取象表／起例取法） |  | 以干为禄、以支为命 | 以干为禄、以支为命 |
+| `luming-nayin/luoluzi-sanming` | `LZ-01-03` | statement 中无可复原的 FactKey 取值 | 原文无盘面适用条件（通论／体例／取象表／起例取法） |  | 四柱内外详休旺 | 四柱内外详休旺 |
+| `luming-nayin/luoluzi-sanming` | `LZ-02-01` | statement 中无可复原的 FactKey 取值 | 原文无盘面适用条件（通论／体例／取象表／起例取法） |  | 折除运程一辰十岁 | 折除运程一辰十岁 |
+| `luming-nayin/luoluzi-sanming` | `LZ-02-02` | statement 中无可复原的 FactKey 取值 | 原文无盘面适用条件（通论／体例／取象表／起例取法） |  | 将来者进、功成者退 | 将来者进、功成者退 |
+| `luming-nayin/luoluzi-sanming` | `LZ-02-03` | statement 中无可复原的 FactKey 取值 | 需要引擎未产出的事实 | 干禄/驿马与五行绝地（十二长生） | 绝处建禄成贵 | 绝处建禄成贵 |
+| `luming-nayin/luoluzi-sanming` | `LZ-03-01` | statement 中无可复原的 FactKey 取值 | 原文无盘面适用条件（通论／体例／取象表／起例取法） |  | 三奇歌诀贵格 | 三奇歌诀贵格 |
+| `luming-nayin/luoluzi-sanming` | `LZ-03-03` | statement 中无可复原的 FactKey 取值 | 原文无盘面适用条件（通论／体例／取象表／起例取法） |  | 勾陈得位、真武当权 | 勾陈得位、真武当权 |
+| `luming-nayin/luoluzi-sanming` | `LZ-05-01` | statement 中无可复原的 FactKey 取值 | 原文无盘面适用条件（通论／体例／取象表／起例取法） |  | 财命有气背禄不贫 | 财命有气背禄不贫 |
+| `luming-nayin/luoluzi-sanming` | `LZ-05-02` | statement 中无可复原的 FactKey 取值 | 需要引擎未产出的事实 | 财星（我克者）在月令的旺衰/绝地与干禄 | 财绝命衰建禄不富 | 财绝命衰建禄不富 |
+| `luming-nayin/luoluzi-sanming` | `LZ-05-05` | statement 中无可复原的 FactKey 取值 | 需要引擎未产出的事实 | 干禄/驿马与柱干支生克（背禄逐马） | 背禄逐马克妻 | 背禄逐马克妻 |
+| `luming-nayin/luoluzi-sanming` | `LZ-05-06` | statement 中无可复原的 FactKey 取值 | 需要引擎未产出的事实 | 四柱干支、月将与柱间合、旺相休败 | 禄马同乡两府之贵 | 禄马同乡两府之贵 |
+| `luming-nayin/luoluzi-sanming` | `LZ-06-05` | statement 中无可复原的 FactKey 取值 | 需要引擎未产出的事实 | 裸形/夹煞等神煞名 | 裸形夹煞至凶 | 裸形夹煞至凶 |
+| `luming-nayin/luoluzi-sanming` | `LZ-07-01` | statement 中无可复原的 FactKey 取值 | 需要引擎未产出的事实 | 四煞/五鬼/六害/七伤/地网天罗/三元九宫等名相 | 四煞五鬼六害七伤 | 四煞五鬼六害七伤 |
+| `luming-nayin/luoluzi-sanming` | `LZ-08-02` | statement 中无可复原的 FactKey 取值 | 需要引擎未产出的事实 | 大运干支/起运与节气深浅（前后五年） | 男迎女送前后五年 | 男迎女送前后五年 |
+| `luming-nayin/luoluzi-sanming` | `LZ-08-04` | statement 中无可复原的 FactKey 取值 | 需要引擎未产出的事实 | 旬（祸旬）与大运衰乡 | 禍旬向末迎福 | 禍旬向末迎福 |
+| `luming-nayin/luoluzi-sanming` | `LZ-08-07` | statement 中无可复原的 FactKey 取值 | 需要引擎未产出的事实 | 具体神煞名与身/煞轻重（纳音身命） | 身克煞輕、煞克身重 | 身克煞輕、煞克身重 |
+| `luming-nayin/luoluzi-sanming` | `LZ-08-08` | statement 中无可复原的 FactKey 取值 | 需要引擎未产出的事实 | 勾绞/元亡/三归/宅墓等神煞名 | 万里回还三归之地 | 万里回还三归之地 |
+| `luming-nayin/luoluzi-sanming` | `LZ-08-09` | statement 中无可复原的 FactKey 取值 | 需要引擎未产出的事实 | 五行力量对比（金火两停） | 金火两停成大器 | 金火两停成大器 |
+| `luming-nayin/luoluzi-sanming` | `LZ-08-10` | statement 中无可复原的 FactKey 取值 | 原文无盘面适用条件（通论／体例／取象表／起例取法） |  | 处定求动、居安问危 | 处定求动、居安问危 |
+| `luming-nayin/wuxing-jingji` | `WX-01-01` | statement 中无可复原的 FactKey 取值 | 原文无盘面适用条件（通论／体例／取象表／起例取法） |  | 六甲纳音法 | 六甲纳音法 |
+| `luming-nayin/wuxing-jingji` | `WX-02-01` | statement 中无可复原的 FactKey 取值 | 原文无盘面适用条件（通论／体例／取象表／起例取法） |  | 乾神十干配五常 | 乾神十干配五常 |
+| `luming-nayin/wuxing-jingji` | `WX-02-02` | statement 中无可复原的 FactKey 取值 | 原文无盘面适用条件（通论／体例／取象表／起例取法） |  | 阳干阴干性情之分 | 阳干阴干性情之分 |
+| `luming-nayin/wuxing-jingji` | `WX-03-01` | statement 中无可复原的 FactKey 取值 | 原文无盘面适用条件（通论／体例／取象表／起例取法） |  | 支神藏干（人元） | 支神藏干（人元） |
+| `luming-nayin/wuxing-jingji` | `WX-03-02` | statement 中无可复原的 FactKey 取值 | 原文无盘面适用条件（通论／体例／取象表／起例取法） |  | 五行四时旺衰 | 五行四时旺衰 |
+| `luming-nayin/wuxing-jingji` | `WX-03-03` | statement 中无可复原的 FactKey 取值 | 原文无盘面适用条件（通论／体例／取象表／起例取法） |  | 真五行合化 | 真五行合化 |
+| `luming-nayin/wuxing-jingji` | `WX-04-02` | statement 中无可复原的 FactKey 取值 | 原文无盘面适用条件（通论／体例／取象表／起例取法） |  | 日时贵格识别 | 日时贵格识别 |
+| `luming-nayin/wuxing-jingji` | `WX-04-04` | statement 中无可复原的 FactKey 取值 | 原文无盘面适用条件（通论／体例／取象表／起例取法） |  | 节气浅深起运 | 节气浅深起运 |
+| `luming-nayin/wuxing-jingji` | `WX-05-01` | statement 中无可复原的 FactKey 取值 | 原文无盘面适用条件（通论／体例／取象表／起例取法） |  | 天乙贵神识别 | 天乙贵神识别 |
+| `luming-nayin/wuxing-jingji` | `WX-05-02` | statement 中无可复原的 FactKey 取值 | 需要引擎未产出的事实 | 干禄（十干禄位）及其与驿马的同位关系 | 祿馬同乡上贵 | 祿馬同乡上贵 |
+| `luming-nayin/wuxing-jingji` | `WX-05-03` | statement 中无可复原的 FactKey 取值 | 需要引擎未产出的事实 | 三奇贵人/天德贵人等神煞名与三刑之地支 | 三奇贵格 | 三奇贵格 |
+| `luming-nayin/wuxing-jingji` | `WX-05-04` | statement 中无可复原的 FactKey 取值 | 原文无盘面适用条件（通论／体例／取象表／起例取法） |  | 四进神贵命 | 四进神贵命 |
+| `luming-nayin/wuxing-jingji` | `WX-05-05` | statement 中无可复原的 FactKey 取值 | 原文无盘面适用条件（通论／体例／取象表／起例取法） |  | 华盖主孤高僧道 | 华盖主孤高僧道 |
+| `luming-nayin/wuxing-jingji` | `WX-05-06` | statement 中无可复原的 FactKey 取值 | 原文无盘面适用条件（通论／体例／取象表／起例取法） |  | 金舆乘车之贵 | 金舆乘车之贵 |
+| `luming-nayin/wuxing-jingji` | `WX-06-01` | statement 中无可复原的 FactKey 取值 | 原文有条件但口径未定或明确拒绝单一条件 |  | 上贵格三大要素 | 上贵格三大要素 |
+| `luming-nayin/wuxing-jingji` | `WX-07-02` | statement 中无可复原的 FactKey 取值 | 原文无盘面适用条件（通论／体例／取象表／起例取法） |  | 三刑骨肉 | 三刑骨肉 |
+| `luming-nayin/wuxing-jingji` | `WX-07-03` | statement 中无可复原的 FactKey 取值 | 原文有条件但口径未定或明确拒绝单一条件 |  | 六害骨肉离 | 六害骨肉离 |
+| `luming-nayin/wuxing-jingji` | `WX-07-05` | statement 中无可复原的 FactKey 取值 | 原文无盘面适用条件（通论／体例／取象表／起例取法） |  | 冲破六冲 | 冲破六冲 |
+| `luming-nayin/wuxing-jingji` | `WX-08-01` | statement 中无可复原的 FactKey 取值 | 需要引擎未产出的事实 | 「小儿关煞」神煞名与童限/年龄事实 | 小儿关煞 | 小儿关煞 |
+| `luming-nayin/wuxing-jingji` | `WX-08-02` | statement 中无可复原的 FactKey 取值 | 原文无盘面适用条件（通论／体例／取象表／起例取法） |  | 男命取格 | 男命取格 |
+| `luming-nayin/wuxing-jingji` | `WX-08-03` | statement 中无可复原的 FactKey 取值 | 原文无盘面适用条件（通论／体例／取象表／起例取法） |  | 女命旧观 | 女命旧观 |
+| `luming-nayin/wuxing-jingji` | `WX-08-04` | statement 中无可复原的 FactKey 取值 | 需要引擎未产出的事实 | 纳音年命、父位五行（克母者）与月令旺相 | 父母位 | 父母位 |
+| `luming-nayin/wuxing-jingji` | `WX-09-01` | statement 中无可复原的 FactKey 取值 | 需要引擎未产出的事实 | 纳音年命、子位五行与旺相 | 子息位 | 子息位 |
+| `luming-nayin/wuxing-jingji` | `WX-09-02` | statement 中无可复原的 FactKey 取值 | 需要引擎未产出的事实 | 丧门/孤角神煞名 | 僧道九流吏卒 | 僧道九流吏卒 |
+| `luming-nayin/wuxing-jingji` | `WX-09-03` | statement 中无可复原的 FactKey 取值 | 原文无盘面适用条件（通论／体例／取象表／起例取法） |  | 形貌性情 | 形貌性情 |
+| `luming-nayin/wuxing-jingji` | `WX-09-04` | statement 中无可复原的 FactKey 取值 | 原文无盘面适用条件（通论／体例／取象表／起例取法） |  | 论疾病 | 论疾病 |
+| `luming-nayin/wuxing-jingji` | `WX-09-05` | statement 中无可复原的 FactKey 取值 | 原文无盘面适用条件（通论／体例／取象表／起例取法） |  | 论壽夭 | 论壽夭 |
+| `luming-nayin/wuxing-jingji` | `WX-10-01` | statement 中无可复原的 FactKey 取值 | 原文无盘面适用条件（通论／体例／取象表／起例取法） |  | 大运起例 | 大运起例 |
+| `luming-nayin/wuxing-jingji` | `WX-10-02` | statement 中无可复原的 FactKey 取值 | 原文无盘面适用条件（通论／体例／取象表／起例取法） |  | 小运起例 | 小运起例 |
+| `luming-nayin/wuxing-jingji` | `WX-10-03` | statement 中无可复原的 FactKey 取值 | 需要引擎未产出的事实 | 大运/小运层的神煞（贵人）与运干支 | 二运并行 | 二运并行 |
+| `luming-nayin/wuxing-jingji` | `WX-10-04` | statement 中无可复原的 FactKey 取值 | 需要引擎未产出的事实 | 流年（太岁）干支与本命支干纳音 | 太岁伏吟反吟 | 太岁伏吟反吟 |
+| `luming-nayin/wuxing-jingji` | `WX-10-05` | statement 中无可复原的 FactKey 取值 | 原文有条件但口径未定或明确拒绝单一条件 |  | 歲運合参 | 歲運合参 |
+| `luming-nayin/yuzhao-shenying` | `YUZHAOSHENYI-004` | statement 中无可复原的 FactKey 取值 | 需要引擎未产出的事实 | 时柱干支与纳音及其与日柱的干克/音克 | 时柱尅日柱，干尅轻、音尅重；干音俱尅则为重伤。 | 时柱尅日柱，干尅轻、音尅重；干音俱尅则为重伤。 |
+| `luming-nayin/yuzhao-shenying` | `YUZHAOSHENYI-005` | statement 中无可复原的 FactKey 取值 | 需要引擎未产出的事实 | 各柱干支与纳音（时/日/月/年） | 时尅日、日尅月、月尅年，两分交战者损尊、伤本、寿促。 | 时尅日、日尅月、月尅年，两分交战者损尊、伤本、寿促。 |
+| `luming-nayin/yuzhao-shenying` | `YUZHAOSHENYI-006` | statement 中无可复原的 FactKey 取值 | 需要引擎未产出的事实 | 胎元与月柱纳音 | 二三柱犯纳音月胎者，主祖宗祸患或祖业不继。 | 二三柱犯纳音月胎者，主祖宗祸患或祖业不继。 |
+| `luming-nayin/yuzhao-shenying` | `YUZHAOSHENYI-012` | statement 中无可复原的 FactKey 取值 | 需要引擎未产出的事实 | 四柱地支（辰戌）与旺相休囚状态 | 辰戌魁罡往来，原文按旺相休囚分作狱官、公吏、屠儿、争讼等。 | 辰戌魁罡往来，原文按旺相休囚分作狱官、公吏、屠儿、争讼等。 |
+| `luming-nayin/yuzhao-shenying` | `YUZHAOSHENYI-021` | statement 中无可复原的 FactKey 取值 | 原文无盘面适用条件（通论／体例／取象表／起例取法） |  | 阳干月德合在干、陰干月德合在支；同柱为近合力强，旁柱为远合力弱。 | 阳干月德合在干、陰干月德合在支；同柱为近合力强，旁柱为远合力弱。 |
+| `luming-nayin/yuzhao-shenying` | `YUZHAOSHENYI-026` | statement 中无可复原的 FactKey 取值 | 需要引擎未产出的事实 | 地支（辰午酉亥）自刑与柱间下克上关系 | 辰午酉亥自刑+下尅上重见，主自凶。 | 辰午酉亥自刑+下尅上重见，主自凶。 |
+| `luming-nayin/yuzhao-shenying` | `YUZHAOSHENYI-032` | statement 中无可复原的 FactKey 取值 | 需要引擎未产出的事实 | 柱支（卯酉/巳亥）与所配天干（癸乙壬、乙辛丁） | 卯酉门户上下全土，原文主腰脚沉滞。 | 卯酉门户上下全土，原文主腰脚沉滞。 |
+| `luming-nayin/yuzhao-shenying` | `YUZHAOSHENYI-034` | statement 中无可复原的 FactKey 取值 | 需要引擎未产出的事实 | 纳音（水土）与柱支（寅卯） | 水土同至寅卯，原文主隔气风痰。 | 水土同至寅卯，原文主隔气风痰。 |
+| `luming-nayin/yuzhao-shenying` | `YUZHAOSHENYI-037` | statement 中无可复原的 FactKey 取值 | 原文无盘面适用条件（通论／体例／取象表／起例取法） |  | 25岁前以月柱合十二宫、25-50以日柱、50后以时柱。 | 25岁前以月柱合十二宫、25-50以日柱、50后以时柱。 |
+| `luming-nayin/yuzhao-shenying` | `YUZHAOSHENYI-038` | statement 中无可复原的 FactKey 取值 | 需要引擎未产出的事实 | 纳音与干鬼相制关系、官鬼旺相 | 干鬼制者为官；纳音生鬼者亦为官贵。 | 干鬼制者为官；纳音生鬼者亦为官贵。 |
+| `luming-nayin/yuzhao-shenying` | `YUZHAOSHENYI-039` | statement 中无可复原的 FactKey 取值 | 需要引擎未产出的事实 | 纳音与干生关系 | 生干则尊人喜；生纳音则中下人吉。 | 生干则尊人喜；生纳音则中下人吉。 |
+| `luming-nayin/yuzhao-shenying` | `YUZHAOSHENYI-040` | statement 中无可复原的 FactKey 取值 | 需要引擎未产出的事实 | 纳音本命五行与三合局地支 | 五行三合局齐者(木亥卯未/火寅午戌/金巳酉丑/水申子辰)俱旺主富贵。 | 五行三合局齐者(木亥卯未/火寅午戌/金巳酉丑/水申子辰)俱旺主富贵。 |
+| `luming-nayin/yuzhao-shenying` | `YUZHAOSHENYI-041` | statement 中无可复原的 FactKey 取值 | 需要引擎未产出的事实 | 胎元与四柱干支的朝拱（干合）关系 | 胎朝月、月朝日、日朝时之朝拱关系，主倍禄。 | 胎朝月、月朝日、日朝时之朝拱关系，主倍禄。 |
+| `luming-nayin/yuzhao-shenying` | `YUZHAOSHENYI-042` | statement 中无可复原的 FactKey 取值 | 需要引擎未产出的事实 | 旬（甲子旬等）与各柱干支年顺干 | 旬中六甲(甲子甲戌甲申甲午甲辰甲寅)全见，主尊荣。 | 旬中六甲(甲子甲戌甲申甲午甲辰甲寅)全见，主尊荣。 |
+| `luming-nayin/yuzhao-shenying` | `YUZHAOSHENYI-048` | statement 中无可复原的 FactKey 取值 | 需要引擎未产出的事实 | 年/月/时柱天干（四重干合） | 命局四重干合者，主妻或夫再立、子郎重生。 | 命局四重干合者，主妻或夫再立、子郎重生。 |
+| `luming-nayin/yuzhao-shenying` | `YUZHAOSHENYI-051` | statement 中无可复原的 FactKey 取值 | 需要引擎未产出的事实 | 年/日/时支（四孟所在柱原文未指明） | 四孟(寅申巳亥)有力之乡见者主发。 | 四孟(寅申巳亥)有力之乡见者主发。 |
+| `luming-nayin/yuzhao-shenying` | `YUZHAOSHENYI-053` | statement 中无可复原的 FactKey 取值 | 原文无盘面适用条件（通论／体例／取象表／起例取法） |  | 自家四柱干支自合为内合，旁柱合本柱为外合。 | 自家四柱干支自合为内合，旁柱合本柱为外合。 |
+| `luming-nayin/yuzhao-shenying` | `YUZHAOSHENYI-054` | statement 中无可复原的 FactKey 取值 | 需要引擎未产出的事实 | 各柱纳音（年/月/日/时） | 年生月、月生日、日生时之上生下，主身贫贱；返此为进发。 | 年生月、月生日、日生时之上生下，主身贫贱；返此为进发。 |
+| `luming-nayin/yuzhao-shenying` | `YUZHAOSHENYI-YZ-02` | statement 中无可复原的 FactKey 取值 | 需要引擎未产出的事实 | 各柱干支/纳音及其干克支、支克干关系 | 干尅支为顺，主头面尊老；支尅干为逆，主身体四支与陰人小口。干尅在尊位为重，音尅在 | 干尅支为顺，主头面尊老；支尅干为逆，主身体四支与陰人小口。干尅在尊位为重，音尅在身位为切。 |
+| `luming-nayin/yuzhao-shenying` | `YUZHAOSHENYI-YZ-03` | statement 中无可复原的 FactKey 取值 | 需要引擎未产出的事实 | 年/日支（子午）与庚甲二干在各柱的位置 | 子午+庚甲组合主他乡外立。 | 子午+庚甲组合主他乡外立。 |
+| `luming-nayin/yuzhao-shenying` | `YUZHAOSHENYI-YZ-05` | statement 中无可复原的 FactKey 取值 | 原文无盘面适用条件（通论／体例／取象表／起例取法） |  | 干防尊老、音同身、尅防同类妻妾、下防陰人小口。 | 干防尊老、音同身、尅防同类妻妾、下防陰人小口。 |
+| `luming-nayin/yuzhao-shenying` | `YUZHAOSHENYI-YZ-06` | statement 中无可复原的 FactKey 取值 | 需要引擎未产出的事实 | 月合（月德合神） | 阳干月德主贵人扶助、陰干主陰人用力。 | 阳干月德主贵人扶助、陰干主陰人用力。 |
+| `luming-nayin/yuzhao-shenying` | `YUZHAOSHENYI-YZ-07` | statement 中无可复原的 FactKey 取值 | 原文无盘面适用条件（通论／体例／取象表／起例取法） |  | 父子夫妻儿女按尅合远近判亲疏内外。 | 父子夫妻儿女按尅合远近判亲疏内外。 |
+| `luming-nayin/yuzhao-shenying` | `YUZHAOSHENYI-YZ-08` | statement 中无可复原的 FactKey 取值 | 原文无盘面适用条件（通论／体例／取象表／起例取法） |  | 干上至下为退、下至上为进；五行升降以衰兴。 | 干上至下为退、下至上为进；五行升降以衰兴。 |
+| `luming-nayin/yuzhao-shenying` | `YZ-01` | statement 中无可复原的 FactKey 取值 | 需要引擎未产出的事实 | 年支（三合生气）、天德合与日时柱的干音关系 | 卦逢生气天德合，仍要长生有所归；先看生我何为父，次看克我是何儿。 | 卦逢生气天德合，仍要长生有所归；先看生我何为父，次看克我是何儿。 |
+| `luming-nayin/yuzhao-shenying` | `YZ-02` | statement 中无可复原的 FactKey 取值 | 原文有条件但口径未定或明确拒绝单一条件 |  | 论命须以年/胎/月/日/时五主互参，分别尊卑、干音并重。 | 论命须以年/胎/月/日/时五主互参，分别尊卑、干音并重。 |
+| `luming-nayin/yuzhao-shenying` | `YZ-05` | statement 中无可复原的 FactKey 取值 | 需要引擎未产出的事实 | 各柱地支（辰戌丑未）与干墓/库墓之旺气 | 干墓在辰戌丑未；有旺气者为库主储藏，无气者为墓主收藏不发。 | 干墓在辰戌丑未；有旺气者为库主储藏，无气者为墓主收藏不发。 |
+| `luming-nayin/yuzhao-shenying` | `YZ-06` | statement 中无可复原的 FactKey 取值 | 需要引擎未产出的事实 | 月合（月德之合神）与四正所落柱位 | 月德合见于四正(子午卯酉)，主十分作福。 | 月德合见于四正(子午卯酉)，主十分作福。 |
+| `luming-nayin/yuzhao-shenying` | `YZ-08` | statement 中无可复原的 FactKey 取值 | 原文无盘面适用条件（通论／体例／取象表／起例取法） |  | 木见旺金主强、火入离中主旺、金向旺中须损折、土积山岗多不动、水盛防走失。 | 木见旺金主强、火入离中主旺、金向旺中须损折、土积山岗多不动、水盛防走失。 |
 
 ## liuren
 
@@ -392,6 +389,7 @@
 | `divination/huangjin-ce` | `HJC-R016` | statement 中无可复原的 FactKey 取值 | 需要引擎未产出的事实 |  | 用爻动则身已动，安静则未思归，生克合冲伏藏决定迟速与阻滞 | 行人问归期，先找主象/用爻；用爻动则身已动，安静则未思归，生克合冲伏藏决定迟速与阻滞。 |
 | `divination/huangjin-ce` | `HJC-R017` | statement 中无可复原的 FactKey 取值 | pack 元规则／调用条件，不是盘面条件 |  | 病症、病体、医药章节可记录六亲、五行、卦宫、六神如何取象，但不得输出为现代诊断、 | 病症、病体、医药章节可记录六亲、五行、卦宫、六神如何取象，但不得输出为现代诊断、疗法或用药建议。 |
 | `divination/huozhu-lin` | `HZL` | statement 中无可复原的 FactKey 取值 | 原文无盘面适用条件（通论／体例／取象表／起例取法） |  | 六爻审卦先核世应位置，再进入后续深浅判断 | 六爻审卦先核世应位置，再进入后续深浅判断。 |
+| `divination/huozhu-lin` | `HZL-R001` | 同一 key 多个取值（OR 本可表达） | 未复核 |  | 公用取官鬼，私用取妻财；官用以父母辅，财用以子孙辅 | 公用取官鬼，私用取妻财；官用以父母辅，财用以子孙辅。 |
 | `divination/huozhu-lin` | `HZL-R002` | statement 中无可复原的 FactKey 取值 | 需要引擎未产出的事实 |  | 财官旺相、有辅体发动或生世为可用；休囚、克破、无辅则力薄 | 财官旺相、有辅体发动或生世为可用；休囚、克破、无辅则力薄。 |
 | `divination/huozhu-lin` | `HZL-R003` | statement 中无可复原的 FactKey 取值 | 需要引擎未产出的事实 |  | 乱动时先看世上旁爻、世下亲爻，再以最旺或发动生世之爻为用 | 乱动时先看世上旁爻、世下亲爻，再以最旺或发动生世之爻为用。 |
 | `divination/huozhu-lin` | `HZL-R004` | statement 中无可复原的 FactKey 取值 | 需要引擎未产出的事实 |  | 财官持世虽可许，但应爻或动爻克所用辅爻则事难成 | 财官持世虽可许，但应爻或动爻克所用辅爻则事难成。 |
@@ -417,6 +415,7 @@
 | `divination/zengshan-buyi` | `ZENGSHANBUYI-ZR-14` | statement 中无可复原的 FactKey 取值 | 需要引擎未产出的事实 |  | 占兴讼胜负——世应相战看哪边得日月生扶；世旺应衰胜、世衰应旺败 | 占兴讼胜负——世应相战看哪边得日月生扶；世旺应衰胜、世衰应旺败。 |
 | `divination/zengshan-buyi` | `ZR-02` | statement 中无可复原的 FactKey 取值 | 原文无盘面适用条件（通论／体例／取象表／起例取法） |  | 八宫卦各纳天干（乾纳甲壬…）；六爻配地支按纳甲歌取 | 八宫卦各纳天干（乾纳甲壬、坤纳乙癸、震纳庚、巽纳辛、坎纳戊、离纳己、艮纳丙、兑纳丁）；六爻配地支按纳甲歌取。 |
 | `divination/zengshan-buyi` | `ZR-03` | 同一 key 多个取值（OR 本可表达） | 原文无盘面适用条件（通论／体例／取象表／起例取法） |  | 六亲以本卦所属宫的五行为基准：同五行为兄弟，生宫五行者为父母… | 六亲以本卦所属宫的五行为基准：同五行为兄弟，生宫五行者为父母，宫五行所生者为子孙，克宫五行者为官鬼，宫五行所克者为妻财。 |
+| `divination/zengshan-buyi` | `ZR-04` | 可复原 1 个谓词对（现有语言本可表达） | 未复核 |  | 占父母以父母爻爲用神 | 用神是所占之事在卦中取用的参照爻；本段举自占吉凶取世爻、占父母取父母爻为例。 |
 | `divination/zengshan-buyi` | `ZR-05` | statement 中无可复原的 FactKey 取值 | 需要引擎未产出的事实 |  | 元神旺动而无伤——用神得力；忌神旺动而无制——用神受伤 | 元神旺动而无伤——用神得力；忌神旺动而无制——用神受伤。 |
 | `divination/zengshan-buyi` | `ZR-06` | statement 中无可复原的 FactKey 取值 | 原文无盘面适用条件（通论／体例／取象表／起例取法） |  | 摇卦得三背或三面为动爻，老阳老阴变化；动爻变出之爻为变爻 | 摇卦得三背或三面为动爻，老阳老阴变化；动爻变出之爻为变爻。 |
 | `divination/zengshan-buyi` | `ZR-09` | statement 中无可复原的 FactKey 取值 | 需要引擎未产出的事实 |  | 归魂卦——主回归、还原；游魂卦——主漂泊、不定 | 归魂卦——主回归、还原；游魂卦——主漂泊、不定；问行人、问出行尤宜参看。 |

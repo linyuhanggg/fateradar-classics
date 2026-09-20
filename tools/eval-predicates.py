@@ -38,6 +38,9 @@ from pathlib import Path
 
 import yaml
 
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from predicate_lang import iter_predicates as _iter_leaves  # noqa: E402
+
 ROOT = Path(__file__).resolve().parents[1]
 
 ARTS = ("bazi", "ziwei", "qimen", "liuren", "liuyao", "qizheng")
@@ -287,6 +290,54 @@ def evaluate(rule: dict, facts: list[dict]) -> dict:
     }
 
 
+def discrimination_report(art: str, cases: dict, values: dict[str, list[str]]) -> list[dict]:
+    """找出在**每个样本盘面**都成立的规则 —— 零区分度的嫌疑犯。
+
+    「枚举凑数」不只看取了多少个值，还要看它是否对任何盘都成立：
+    `{key: liuqin, value: 父母}` 值域合法、只取一个值，但六爻每盘都有全部六亲，
+    于是它对每一盘都为真——既没有筛选作用，又把 top-N 证据面板挤满。
+
+    **证据分两档，不可混为一谈**：
+    · `hard=True`（可据此动手）：表达式含通配 `*`，或其取值把某个**封闭值域**整段覆盖
+      （如 10 个 rizhu 穷尽天干）——结构上恒真，与盘面无关。
+    · `hard=False`（仅线索）：只是在当前 N 个样本上恰好都成立。样本只有 2 盘时
+      「都成立」很常见，**不足以判定凑数**，要加样本再谈。
+    """
+    rules = load_rules(None, art)
+    out: list[dict] = []
+    for rule in rules:
+        ap = rule.get("applicable_to")
+        if not ap:
+            continue
+        results = [evaluate(rule, c["facts"]) for c in cases.values()]
+        if not all(r["verdict"] == TRUE for r in results):
+            continue
+        leaves = list(_iter_leaves(ap if isinstance(ap, dict) else {"any_of": ap}))
+        wildcard = any(p.get("value") == "*" for p in leaves)
+        covering: list[str] = []
+        for key in {p["key"] for p in leaves}:
+            domain = values.get(key) or []
+            if not domain:
+                continue  # 开放值域无法结构化判定
+            picked = {p["value"] for p in leaves if p["key"] == key}
+            if picked >= set(domain):
+                covering.append(key)
+        out.append(
+            {
+                "rule_id": rule.get("rule_id"),
+                "book": rule.get("book"),
+                "cases": len(results),
+                "leaf_count": len(leaves),
+                "wildcard": wildcard,
+                "domain_covering": covering,
+                "hard": bool(wildcard or covering),
+                "statement": (rule.get("statement") or "")[:80],
+            }
+        )
+    out.sort(key=lambda r: (not r["hard"], r["rule_id"] or ""))
+    return out
+
+
 def main() -> int:
     ap = argparse.ArgumentParser(description="按盘面状态求规则结论（三态 + 置信度 + 出处）")
     ap.add_argument("--art", choices=ARTS + REFERENCE_ARTS)
@@ -295,6 +346,11 @@ def main() -> int:
     ap.add_argument("--case", default=None)
     ap.add_argument("--json", action="store_true")
     ap.add_argument("-v", "--verbose", action="store_true")
+    ap.add_argument(
+        "--discrimination",
+        action="store_true",
+        help="列出在全部样本盘面都成立的规则（零区分度＝疑为枚举凑数）",
+    )
     ap.add_argument(
         "--only",
         default=None,
@@ -306,6 +362,33 @@ def main() -> int:
         ap.error("--art 与 --book 必须恰好给一个")
 
     art = args.art or art_of(*args.book.split("/", 1))
+    if args.discrimination:
+        raw = json.loads(Path(args.facts).read_text(encoding="utf-8"))
+        if art not in raw:
+            raise SystemExit(f"{args.facts}: 没有 art={art}")
+        vocab = json.loads((ROOT / "references/vocab/fact-vocab.json").read_text(encoding="utf-8"))
+        flat = discrimination_report(art, raw[art], vocab.get("values") or {})
+        hard = [r for r in flat if r["hard"]]
+        if args.json:
+            json.dump(
+                {"art": art, "cases": len(raw[art]), "flat_rules": flat}, sys.stdout, ensure_ascii=False, indent=2
+            )
+            sys.stdout.write("\n")
+            return 0
+        print(
+            f"art={art}：{len(raw[art])} 个样本盘面上都成立、零区分度的规则 {len(flat)} 条"
+            f"（其中结构上恒真的 hard {len(hard)} 条）"
+        )
+        for r in flat:
+            mark = "HARD" if r["hard"] else "soft"
+            why = []
+            if r["wildcard"]:
+                why.append("通配 *")
+            if r["domain_covering"]:
+                why.append("整段覆盖 " + ",".join(r["domain_covering"]))
+            print(f"  [{mark}] {r['rule_id']} ({r['book']}) {'; '.join(why) or '仅样本内都成立'} — {r['statement']}")
+        return 0
+
     facts, case_name = load_chart(Path(args.facts), art, args.case)
     rules = load_rules(args.book, args.art)
     results = [evaluate(r, facts) for r in rules]
