@@ -133,18 +133,26 @@ def main() -> int:
             check(f"  {f.split('/')[-1]} {key} 值域 9 干且无甲", (len(dom), "甲" in dom), (9, False))
 
     print("5. 仍未映射的同类规则不得被顺手映射（且原因要写清）")
-    # QM-P27 岁格「庚临岁干」：需**跨键取值相等**（天盘庚所在宫的地盘干＝岁干），
-    # v3 的 `same` 只绑 scope 字段、不绑取值 → 仍写不出来。
-    check("  QM-P27 仍为空（需跨键取值相等）", rules["QM-P27"].get("applicable_to") or [], [])
-    # QM-P26 直使加地丁：形态与已映射的三条同构（存在性通配＋same: gong），
-    # 但再加这一条会让 qimen 通配占比 5/28 = 17.9% > 15% → **闸门会红**，故不映射。
+    # t188 更新：QM-P27 岁格**已映射**——用「枚举有限域＋分支内配对」表达了跨键相等
+    # （见 tools/map-qimen-lin-pairs.py）；这里改钉它的形态，而不再钉「仍为空」。
+    qm27 = rules["QM-P27"].get("applicable_to")
+    check("  QM-P27 已映射且为枚举配对式", isinstance(qm27, dict) and "any_of" in qm27, True)
+    check(
+        "  QM-P27 全式无通配",
+        any(x.get("value") == "*" for x in __import__("predicate_lang").iter_usable_predicates(qm27)),
+        False,
+    )
+    # QM-P26 直使加地丁：**现在仍不映射，但理由变了** ——
+    # 不再是「会撞 15% 闸门」（qimen 变大后闸门已有余量），而是它必须写成
+    # 「值使门所在宫的地盘干＝丁」，其中值使门名随盘而变 → 需要**无取值子句**（存在性），
+    # 而「无取值子句算不算通配、算不算凑数」这条口径尚未裁定（t179 待授权项 ①）。
     faqiao = {
         r["rule_id"]: r
         for r in yaml.safe_load(
             (ROOT / "references/books/san-shi/qimen-faqiao/rules.yaml").read_text(encoding="utf-8")
         )["rules"]
     }
-    check("  QM-P26 仍为空（加它会撞 15% 通配闸门）", faqiao["QM-P26"].get("applicable_to") or [], [])
+    check("  QM-P26 仍为空（需无取值子句，口径待裁定）", faqiao["QM-P26"].get("applicable_to") or [], [])
     # 计数必须走共享的叶子遍历：v3 组里的通配（如 {all_of:[{value:"*"}]}）
     # 用「只看平铺列表」的朴素写法**数不到**——这正是 t168 修过的那类缺陷。
     sys.path.insert(0, str(ROOT / "tools"))
@@ -159,7 +167,10 @@ def main() -> int:
     )
     total = sum(1 for r in both.values() if r.get("applicable_to"))
     print(f"     qimen 实测：通配 {wild}/{total} = {wild / total * 100:.1f}%（须 ≤15%）")
-    check("  即使再加 QM-P26 也会超限（(wild+1)/(total+1) > 15%）", (wild + 1) / (total + 1) > 0.15, True)
+    # t188 起不再断言「再加一条就会超限」——qimen 谓词数已从 24 增到 35，
+    # 闸门有余量了；继续钉那条旧算术就是钉一条**已经不成立**的结论（t187 才刚记过这类教训）。
+    check("  闸门尚有明确余量（<13%）", wild / total < 0.13, True)
+    check("  若再加一条存在性通配仍在闸门内（应即时重算而非引用旧数）", (wild + 1) / (total + 1) <= 0.15, True)
 
     if FAILED:
         print(f"\n{len(FAILED)} 项失败:", file=sys.stderr)

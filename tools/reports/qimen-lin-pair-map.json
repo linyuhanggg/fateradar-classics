@@ -1,0 +1,134 @@
+[
+ {
+  "book": "san-shi/qimen-dunjia-tongzhi",
+  "rule_id": "QM-P27",
+  "encoding": "enumerated-value-pairing",
+  "applicable_to_yaml": "{any_of: [{all_of: [{all_of: [{key: gan, value: 乙, scope: {pillar: year}}]}, {all_of: [{key: tianpan_gan, value: 庚}, {key: dipan_gan, value: 乙}], same: gong}]}, {all_of: [{all_of: [{key: gan, value: 丙, scope: {pillar: year}}]}, {all_of: [{key: tianpan_gan, value: 庚}, {key: dipan_gan, value: 丙}], same: gong}]}, {all_of: [{all_of: [{key: gan, value: 丁, scope: {pillar: year}}]}, {all_of: [{key: tianpan_gan, value: 庚}, {key: dipan_gan, value: 丁}], same: gong}]}, {all_of: [{all_of: [{key: gan, value: 戊, scope: {pillar: year}}]}, {all_of: [{key: tianpan_gan, value: 庚}, {key: dipan_gan, value: 戊}], same: gong}]}, {all_of: [{all_of: [{key: gan, value: 己, scope: {pillar: year}}]}, {all_of: [{key: tianpan_gan, value: 庚}, {key: dipan_gan, value: 己}], same: gong}]}, {all_of: [{all_of: [{key: gan, value: 庚, scope: {pillar: year}}]}, {all_of: [{key: tianpan_gan, value: 庚}, {key: dipan_gan, value: 庚}], same: gong}]}, {all_of: [{all_of: [{key: gan, value: 辛, scope: {pillar: year}}]}, {all_of: [{key: tianpan_gan, value: 庚}, {key: dipan_gan, value: 辛}], same: gong}]}, {all_of: [{all_of: [{key: gan, value: 壬, scope: {pillar: year}}]}, {all_of: [{key: tianpan_gan, value: 庚}, {key: dipan_gan, value: 壬}], same: gong}]}, {all_of: [{all_of: [{key: gan, value: 癸, scope: {pillar: year}}]}, {all_of: [{key: tianpan_gan, value: 庚}, {key: dipan_gan, value: 癸}], same: gong}]}]}",
+  "tianpan_gan": "庚",
+  "pillar": "year",
+  "earth_stems_enumerated": [
+   "乙",
+   "丙",
+   "丁",
+   "戊",
+   "己",
+   "庚",
+   "辛",
+   "壬",
+   "癸"
+  ],
+  "evidence_from_statement": "庚临岁干",
+  "disclosed": "柱干为甲时不表达（地盘无甲）；原文明细须另判。",
+  "note": ""
+ },
+ {
+  "book": "san-shi/qimen-dunjia-tongzhi",
+  "rule_id": "QM-P28",
+  "encoding": "enumerated-value-pairing",
+  "applicable_to_yaml": "{any_of: [{all_of: [{all_of: [{key: gan, value: 乙, scope: {pillar: month}}]}, {all_of: [{key: tianpan_gan, value: 庚}, {key: dipan_gan, value: 乙}], same: gong}]}, {all_of: [{all_of: [{key: gan, value: 丙, scope: {pillar: month}}]}, {all_of: [{key: tianpan_gan, value: 庚}, {key: dipan_gan, value: 丙}], same: gong}]}, {all_of: [{all_of: [{key: gan, value: 丁, scope: {pillar: month}}]}, {all_of: [{key: tianpan_gan, value: 庚}, {key: dipan_gan, value: 丁}], same: gong}]}, {all_of: [{all_of: [{key: gan, value: 戊, scope: {pillar: month}}]}, {all_of: [{key: tianpan_gan, value: 庚}, {key: dipan_gan, value: 戊}], same: gong}]}, {all_of: [{all_of: [{key: gan, value: 己, scope: {pillar: month}}]}, {all_of: [{key: tianpan_gan, value: 庚}, {key: dipan_gan, value: 己}], same: gong}]}, {all_of: [{all_of: [{key: gan, value: 庚, scope: {pillar: month}}]}, {all_of: [{key: tianpan_gan, value: 庚}, {key: dipan_gan, value: 庚}], same: gong}]}, {all_of: [{all_of: [{key: gan, value: 辛, scope: {pillar: month}}]}, {all_of: [{key: tianpan_gan, value: 庚}, {key: dipan_gan, value: 辛}], same: gong}]}, {all_of: [{all_of: [{key: gan, value: 壬, scope: {pillar: month}}]}, {all_of: [{key: tianpan_gan, value: 庚}, {key: dipan_gan, value: 壬}], same: gong}]}, {all_of: [{all_of: [{key: gan, value: 癸, scope: {pillar: month}}]}, {all_of: [{key: tianpan_gan, value: 庚}, {key: dipan_gan, value: 癸}], same: gong}]}]}",
+  "tianpan_gan": "庚",
+  "pillar": "month",
+  "earth_stems_enumerated": [
+   "乙",
+   "丙",
+   "丁",
+   "戊",
+   "己",
+   "庚",
+   "辛",
+   "壬",
+   "癸"
+  ],
+  "evidence_from_statement": "庚临月干",
+  "disclosed": "柱干为甲时不表达（地盘无甲）；原文明细须另判。",
+  "note": ""
+ },
+ {
+  "book": "san-shi/qimen-dunjia-tongzhi",
+  "rule_id": "QM-P29",
+  "encoding": "enumerated-value-pairing",
+  "applicable_to_yaml": "{any_of: [{all_of: [{all_of: [{key: gan, value: 乙, scope: {pillar: day}}]}, {all_of: [{key: tianpan_gan, value: 庚}, {key: dipan_gan, value: 乙}], same: gong}]}, {all_of: [{all_of: [{key: gan, value: 丙, scope: {pillar: day}}]}, {all_of: [{key: tianpan_gan, value: 庚}, {key: dipan_gan, value: 丙}], same: gong}]}, {all_of: [{all_of: [{key: gan, value: 丁, scope: {pillar: day}}]}, {all_of: [{key: tianpan_gan, value: 庚}, {key: dipan_gan, value: 丁}], same: gong}]}, {all_of: [{all_of: [{key: gan, value: 戊, scope: {pillar: day}}]}, {all_of: [{key: tianpan_gan, value: 庚}, {key: dipan_gan, value: 戊}], same: gong}]}, {all_of: [{all_of: [{key: gan, value: 己, scope: {pillar: day}}]}, {all_of: [{key: tianpan_gan, value: 庚}, {key: dipan_gan, value: 己}], same: gong}]}, {all_of: [{all_of: [{key: gan, value: 庚, scope: {pillar: day}}]}, {all_of: [{key: tianpan_gan, value: 庚}, {key: dipan_gan, value: 庚}], same: gong}]}, {all_of: [{all_of: [{key: gan, value: 辛, scope: {pillar: day}}]}, {all_of: [{key: tianpan_gan, value: 庚}, {key: dipan_gan, value: 辛}], same: gong}]}, {all_of: [{all_of: [{key: gan, value: 壬, scope: {pillar: day}}]}, {all_of: [{key: tianpan_gan, value: 庚}, {key: dipan_gan, value: 壬}], same: gong}]}, {all_of: [{all_of: [{key: gan, value: 癸, scope: {pillar: day}}]}, {all_of: [{key: tianpan_gan, value: 庚}, {key: dipan_gan, value: 癸}], same: gong}]}]}",
+  "tianpan_gan": "庚",
+  "pillar": "day",
+  "earth_stems_enumerated": [
+   "乙",
+   "丙",
+   "丁",
+   "戊",
+   "己",
+   "庚",
+   "辛",
+   "壬",
+   "癸"
+  ],
+  "evidence_from_statement": "庚临日干",
+  "disclosed": "柱干为甲时不表达（地盘无甲）；原文明细须另判。",
+  "note": ""
+ },
+ {
+  "book": "san-shi/qimen-dunjia-tongzhi",
+  "rule_id": "QM-P32",
+  "encoding": "enumerated-value-pairing",
+  "applicable_to_yaml": "{any_of: [{all_of: [{all_of: [{key: gan, value: 乙, scope: {pillar: day}}]}, {all_of: [{key: tianpan_gan, value: 庚}, {key: dipan_gan, value: 乙}], same: gong}]}, {all_of: [{all_of: [{key: gan, value: 丙, scope: {pillar: day}}]}, {all_of: [{key: tianpan_gan, value: 庚}, {key: dipan_gan, value: 丙}], same: gong}]}, {all_of: [{all_of: [{key: gan, value: 丁, scope: {pillar: day}}]}, {all_of: [{key: tianpan_gan, value: 庚}, {key: dipan_gan, value: 丁}], same: gong}]}, {all_of: [{all_of: [{key: gan, value: 戊, scope: {pillar: day}}]}, {all_of: [{key: tianpan_gan, value: 庚}, {key: dipan_gan, value: 戊}], same: gong}]}, {all_of: [{all_of: [{key: gan, value: 己, scope: {pillar: day}}]}, {all_of: [{key: tianpan_gan, value: 庚}, {key: dipan_gan, value: 己}], same: gong}]}, {all_of: [{all_of: [{key: gan, value: 庚, scope: {pillar: day}}]}, {all_of: [{key: tianpan_gan, value: 庚}, {key: dipan_gan, value: 庚}], same: gong}]}, {all_of: [{all_of: [{key: gan, value: 辛, scope: {pillar: day}}]}, {all_of: [{key: tianpan_gan, value: 庚}, {key: dipan_gan, value: 辛}], same: gong}]}, {all_of: [{all_of: [{key: gan, value: 壬, scope: {pillar: day}}]}, {all_of: [{key: tianpan_gan, value: 庚}, {key: dipan_gan, value: 壬}], same: gong}]}, {all_of: [{all_of: [{key: gan, value: 癸, scope: {pillar: day}}]}, {all_of: [{key: tianpan_gan, value: 庚}, {key: dipan_gan, value: 癸}], same: gong}]}]}",
+  "tianpan_gan": "庚",
+  "pillar": "day",
+  "earth_stems_enumerated": [
+   "乙",
+   "丙",
+   "丁",
+   "戊",
+   "己",
+   "庚",
+   "辛",
+   "壬",
+   "癸"
+  ],
+  "evidence_from_statement": "庚临日干",
+  "disclosed": "柱干为甲时不表达（地盘无甲）；原文明细须另判。",
+  "note": "与 QM-P29 同文（日格／伏干两名同条件），式亦相同。"
+ },
+ {
+  "book": "san-shi/qimen-dunjia-tongzhi",
+  "rule_id": "QM-P38",
+  "encoding": "enumerated-value-pairing",
+  "applicable_to_yaml": "{any_of: [{all_of: [{all_of: [{key: gan, value: 乙, scope: {pillar: time}}]}, {all_of: [{key: tianpan_gan, value: 壬}, {key: dipan_gan, value: 乙}], same: gong}]}, {all_of: [{all_of: [{key: gan, value: 丙, scope: {pillar: time}}]}, {all_of: [{key: tianpan_gan, value: 壬}, {key: dipan_gan, value: 丙}], same: gong}]}, {all_of: [{all_of: [{key: gan, value: 丁, scope: {pillar: time}}]}, {all_of: [{key: tianpan_gan, value: 壬}, {key: dipan_gan, value: 丁}], same: gong}]}, {all_of: [{all_of: [{key: gan, value: 戊, scope: {pillar: time}}]}, {all_of: [{key: tianpan_gan, value: 壬}, {key: dipan_gan, value: 戊}], same: gong}]}, {all_of: [{all_of: [{key: gan, value: 己, scope: {pillar: time}}]}, {all_of: [{key: tianpan_gan, value: 壬}, {key: dipan_gan, value: 己}], same: gong}]}, {all_of: [{all_of: [{key: gan, value: 庚, scope: {pillar: time}}]}, {all_of: [{key: tianpan_gan, value: 壬}, {key: dipan_gan, value: 庚}], same: gong}]}, {all_of: [{all_of: [{key: gan, value: 辛, scope: {pillar: time}}]}, {all_of: [{key: tianpan_gan, value: 壬}, {key: dipan_gan, value: 辛}], same: gong}]}, {all_of: [{all_of: [{key: gan, value: 壬, scope: {pillar: time}}]}, {all_of: [{key: tianpan_gan, value: 壬}, {key: dipan_gan, value: 壬}], same: gong}]}, {all_of: [{all_of: [{key: gan, value: 癸, scope: {pillar: time}}]}, {all_of: [{key: tianpan_gan, value: 壬}, {key: dipan_gan, value: 癸}], same: gong}]}]}",
+  "tianpan_gan": "壬",
+  "pillar": "time",
+  "earth_stems_enumerated": [
+   "乙",
+   "丙",
+   "丁",
+   "戊",
+   "己",
+   "庚",
+   "辛",
+   "壬",
+   "癸"
+  ],
+  "evidence_from_statement": "六壬临时干",
+  "disclosed": "柱干为甲时不表达（地盘无甲）；原文明细须另判。",
+  "note": "原文「六壬」＝壬仪。"
+ },
+ {
+  "book": "san-shi/qimen-dunjia-tongzhi",
+  "rule_id": "QM-P39",
+  "encoding": "enumerated-value-pairing",
+  "applicable_to_yaml": "{any_of: [{all_of: [{all_of: [{key: gan, value: 乙, scope: {pillar: time}}]}, {all_of: [{key: tianpan_gan, value: 癸}, {key: dipan_gan, value: 乙}], same: gong}]}, {all_of: [{all_of: [{key: gan, value: 丙, scope: {pillar: time}}]}, {all_of: [{key: tianpan_gan, value: 癸}, {key: dipan_gan, value: 丙}], same: gong}]}, {all_of: [{all_of: [{key: gan, value: 丁, scope: {pillar: time}}]}, {all_of: [{key: tianpan_gan, value: 癸}, {key: dipan_gan, value: 丁}], same: gong}]}, {all_of: [{all_of: [{key: gan, value: 戊, scope: {pillar: time}}]}, {all_of: [{key: tianpan_gan, value: 癸}, {key: dipan_gan, value: 戊}], same: gong}]}, {all_of: [{all_of: [{key: gan, value: 己, scope: {pillar: time}}]}, {all_of: [{key: tianpan_gan, value: 癸}, {key: dipan_gan, value: 己}], same: gong}]}, {all_of: [{all_of: [{key: gan, value: 庚, scope: {pillar: time}}]}, {all_of: [{key: tianpan_gan, value: 癸}, {key: dipan_gan, value: 庚}], same: gong}]}, {all_of: [{all_of: [{key: gan, value: 辛, scope: {pillar: time}}]}, {all_of: [{key: tianpan_gan, value: 癸}, {key: dipan_gan, value: 辛}], same: gong}]}, {all_of: [{all_of: [{key: gan, value: 壬, scope: {pillar: time}}]}, {all_of: [{key: tianpan_gan, value: 癸}, {key: dipan_gan, value: 壬}], same: gong}]}, {all_of: [{all_of: [{key: gan, value: 癸, scope: {pillar: time}}]}, {all_of: [{key: tianpan_gan, value: 癸}, {key: dipan_gan, value: 癸}], same: gong}]}]}",
+  "tianpan_gan": "癸",
+  "pillar": "time",
+  "earth_stems_enumerated": [
+   "乙",
+   "丙",
+   "丁",
+   "戊",
+   "己",
+   "庚",
+   "辛",
+   "壬",
+   "癸"
+  ],
+  "evidence_from_statement": "六癸临时干",
+  "disclosed": "柱干为甲时不表达（地盘无甲）；原文明细须另判。",
+  "note": "原文「六癸」＝癸仪。"
+ }
+]

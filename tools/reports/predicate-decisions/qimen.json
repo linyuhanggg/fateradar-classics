@@ -210,29 +210,35 @@
     {
       "book": "san-shi/qimen-dunjia-tongzhi",
       "rule_id": "QM-P27",
-      "decision": "unmapped",
+      "decision": "mapped",
       "reason_class": "fact-not-emitted",
       "evidence_from_statement": "岁格 庚临岁干",
       "note": "岁格＝天盘庚临岁干。「岁干」是占年干支的天干，引擎无该事实（qimen 只 emit 九星/八门/八神/值符/值使/格局/空亡）。",
-      "missing_fact": "天盘干（庚）、岁干支（天干）"
+      "missing_fact": "天盘干（庚）、岁干支（天干）",
+      "mapped_by": "qimen-lin-pair-map.json",
+      "mapped_note": "t188 映射：把「地盘干取值＝某柱之干」这个跨键相等，用**枚举有限域＋分支内配对**写成精确谓词（不用通配、不加新原语）。柱干为甲时不表达（地盘无甲），已在台账披露。原 reason_class 保留为历史判定。"
     },
     {
       "book": "san-shi/qimen-dunjia-tongzhi",
       "rule_id": "QM-P28",
-      "decision": "unmapped",
+      "decision": "mapped",
       "reason_class": "fact-not-emitted",
       "evidence_from_statement": "月格 庚临月干",
       "note": "月格同上，缺月干事实。",
-      "missing_fact": "天盘干（庚）、月干支（天干）"
+      "missing_fact": "天盘干（庚）、月干支（天干）",
+      "mapped_by": "qimen-lin-pair-map.json",
+      "mapped_note": "t188 映射：把「地盘干取值＝某柱之干」这个跨键相等，用**枚举有限域＋分支内配对**写成精确谓词（不用通配、不加新原语）。柱干为甲时不表达（地盘无甲），已在台账披露。原 reason_class 保留为历史判定。"
     },
     {
       "book": "san-shi/qimen-dunjia-tongzhi",
       "rule_id": "QM-P29",
-      "decision": "unmapped",
+      "decision": "mapped",
       "reason_class": "fact-not-emitted",
       "evidence_from_statement": "日格 庚临日干",
       "note": "日格＝天盘庚临日干。日干无 FactKey；rizhu 只属八字事实、不带奇门盘 scope，不可跨术挪用。",
-      "missing_fact": "天盘干（庚）、日干"
+      "missing_fact": "天盘干（庚）、日干",
+      "mapped_by": "qimen-lin-pair-map.json",
+      "mapped_note": "t188 映射：把「地盘干取值＝某柱之干」这个跨键相等，用**枚举有限域＋分支内配对**写成精确谓词（不用通配、不加新原语）。柱干为甲时不表达（地盘无甲），已在台账披露。原 reason_class 保留为历史判定。"
     },
     {
       "book": "san-shi/qimen-dunjia-tongzhi",
@@ -257,11 +263,13 @@
     {
       "book": "san-shi/qimen-dunjia-tongzhi",
       "rule_id": "QM-P32",
-      "decision": "unmapped",
+      "decision": "mapped",
       "reason_class": "fact-not-emitted",
       "evidence_from_statement": "伏干 庚临日干",
       "note": "伏干＝天盘庚临日干，缺庚与日干。",
-      "missing_fact": "天盘干（庚）、日干"
+      "missing_fact": "天盘干（庚）、日干",
+      "mapped_by": "qimen-lin-pair-map.json",
+      "mapped_note": "t188 映射：把「地盘干取值＝某柱之干」这个跨键相等，用**枚举有限域＋分支内配对**写成精确谓词（不用通配、不加新原语）。柱干为甲时不表达（地盘无甲），已在台账披露。原 reason_class 保留为历史判定。"
     },
     {
       "book": "san-shi/qimen-dunjia-tongzhi",
@@ -316,20 +324,24 @@
     {
       "book": "san-shi/qimen-dunjia-tongzhi",
       "rule_id": "QM-P38",
-      "decision": "unmapped",
+      "decision": "mapped",
       "reason_class": "fact-not-emitted",
       "evidence_from_statement": "地罗遮蔽 六壬临时干",
       "note": "地罗遮蔽＝六壬临时干。六壬为天盘干，时干亦无事实。",
-      "missing_fact": "天盘干（六壬）、时干"
+      "missing_fact": "天盘干（六壬）、时干",
+      "mapped_by": "qimen-lin-pair-map.json",
+      "mapped_note": "t188 映射：把「地盘干取值＝某柱之干」这个跨键相等，用**枚举有限域＋分支内配对**写成精确谓词（不用通配、不加新原语）。柱干为甲时不表达（地盘无甲），已在台账披露。原 reason_class 保留为历史判定。"
     },
     {
       "book": "san-shi/qimen-dunjia-tongzhi",
       "rule_id": "QM-P39",
-      "decision": "unmapped",
+      "decision": "mapped",
       "reason_class": "fact-not-emitted",
       "evidence_from_statement": "天网四张 六癸临时干",
       "note": "天网四张＝六癸临时干，同上。",
-      "missing_fact": "天盘干（六癸）、时干"
+      "missing_fact": "天盘干（六癸）、时干",
+      "mapped_by": "qimen-lin-pair-map.json",
+      "mapped_note": "t188 映射：把「地盘干取值＝某柱之干」这个跨键相等，用**枚举有限域＋分支内配对**写成精确谓词（不用通配、不加新原语）。柱干为甲时不表达（地盘无甲），已在台账披露。原 reason_class 保留为历史判定。"
     },
     {
       "book": "san-shi/qimen-dunjia-tongzhi",

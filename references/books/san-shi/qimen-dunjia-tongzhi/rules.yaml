@@ -391,7 +391,7 @@ rules:
     start_line: 289
     end_line: 289
   quote: 岁格 庚临岁干
-  applicable_to: []
+  applicable_to: {any_of: [{all_of: [{all_of: [{key: gan, value: 乙, scope: {pillar: year}}]}, {all_of: [{key: tianpan_gan, value: 庚}, {key: dipan_gan, value: 乙}], same: gong}]}, {all_of: [{all_of: [{key: gan, value: 丙, scope: {pillar: year}}]}, {all_of: [{key: tianpan_gan, value: 庚}, {key: dipan_gan, value: 丙}], same: gong}]}, {all_of: [{all_of: [{key: gan, value: 丁, scope: {pillar: year}}]}, {all_of: [{key: tianpan_gan, value: 庚}, {key: dipan_gan, value: 丁}], same: gong}]}, {all_of: [{all_of: [{key: gan, value: 戊, scope: {pillar: year}}]}, {all_of: [{key: tianpan_gan, value: 庚}, {key: dipan_gan, value: 戊}], same: gong}]}, {all_of: [{all_of: [{key: gan, value: 己, scope: {pillar: year}}]}, {all_of: [{key: tianpan_gan, value: 庚}, {key: dipan_gan, value: 己}], same: gong}]}, {all_of: [{all_of: [{key: gan, value: 庚, scope: {pillar: year}}]}, {all_of: [{key: tianpan_gan, value: 庚}, {key: dipan_gan, value: 庚}], same: gong}]}, {all_of: [{all_of: [{key: gan, value: 辛, scope: {pillar: year}}]}, {all_of: [{key: tianpan_gan, value: 庚}, {key: dipan_gan, value: 辛}], same: gong}]}, {all_of: [{all_of: [{key: gan, value: 壬, scope: {pillar: year}}]}, {all_of: [{key: tianpan_gan, value: 庚}, {key: dipan_gan, value: 壬}], same: gong}]}, {all_of: [{all_of: [{key: gan, value: 癸, scope: {pillar: year}}]}, {all_of: [{key: tianpan_gan, value: 庚}, {key: dipan_gan, value: 癸}], same: gong}]}]}
   caveats: []
   school: null
   verified: false
@@ -405,7 +405,7 @@ rules:
     start_line: 291
     end_line: 291
   quote: 月格 庚临月干
-  applicable_to: []
+  applicable_to: {any_of: [{all_of: [{all_of: [{key: gan, value: 乙, scope: {pillar: month}}]}, {all_of: [{key: tianpan_gan, value: 庚}, {key: dipan_gan, value: 乙}], same: gong}]}, {all_of: [{all_of: [{key: gan, value: 丙, scope: {pillar: month}}]}, {all_of: [{key: tianpan_gan, value: 庚}, {key: dipan_gan, value: 丙}], same: gong}]}, {all_of: [{all_of: [{key: gan, value: 丁, scope: {pillar: month}}]}, {all_of: [{key: tianpan_gan, value: 庚}, {key: dipan_gan, value: 丁}], same: gong}]}, {all_of: [{all_of: [{key: gan, value: 戊, scope: {pillar: month}}]}, {all_of: [{key: tianpan_gan, value: 庚}, {key: dipan_gan, value: 戊}], same: gong}]}, {all_of: [{all_of: [{key: gan, value: 己, scope: {pillar: month}}]}, {all_of: [{key: tianpan_gan, value: 庚}, {key: dipan_gan, value: 己}], same: gong}]}, {all_of: [{all_of: [{key: gan, value: 庚, scope: {pillar: month}}]}, {all_of: [{key: tianpan_gan, value: 庚}, {key: dipan_gan, value: 庚}], same: gong}]}, {all_of: [{all_of: [{key: gan, value: 辛, scope: {pillar: month}}]}, {all_of: [{key: tianpan_gan, value: 庚}, {key: dipan_gan, value: 辛}], same: gong}]}, {all_of: [{all_of: [{key: gan, value: 壬, scope: {pillar: month}}]}, {all_of: [{key: tianpan_gan, value: 庚}, {key: dipan_gan, value: 壬}], same: gong}]}, {all_of: [{all_of: [{key: gan, value: 癸, scope: {pillar: month}}]}, {all_of: [{key: tianpan_gan, value: 庚}, {key: dipan_gan, value: 癸}], same: gong}]}]}
   caveats: []
   school: null
   verified: false
@@ -419,7 +419,7 @@ rules:
     start_line: 293
     end_line: 293
   quote: 日格 庚临日干
-  applicable_to: []
+  applicable_to: {any_of: [{all_of: [{all_of: [{key: gan, value: 乙, scope: {pillar: day}}]}, {all_of: [{key: tianpan_gan, value: 庚}, {key: dipan_gan, value: 乙}], same: gong}]}, {all_of: [{all_of: [{key: gan, value: 丙, scope: {pillar: day}}]}, {all_of: [{key: tianpan_gan, value: 庚}, {key: dipan_gan, value: 丙}], same: gong}]}, {all_of: [{all_of: [{key: gan, value: 丁, scope: {pillar: day}}]}, {all_of: [{key: tianpan_gan, value: 庚}, {key: dipan_gan, value: 丁}], same: gong}]}, {all_of: [{all_of: [{key: gan, value: 戊, scope: {pillar: day}}]}, {all_of: [{key: tianpan_gan, value: 庚}, {key: dipan_gan, value: 戊}], same: gong}]}, {all_of: [{all_of: [{key: gan, value: 己, scope: {pillar: day}}]}, {all_of: [{key: tianpan_gan, value: 庚}, {key: dipan_gan, value: 己}], same: gong}]}, {all_of: [{all_of: [{key: gan, value: 庚, scope: {pillar: day}}]}, {all_of: [{key: tianpan_gan, value: 庚}, {key: dipan_gan, value: 庚}], same: gong}]}, {all_of: [{all_of: [{key: gan, value: 辛, scope: {pillar: day}}]}, {all_of: [{key: tianpan_gan, value: 庚}, {key: dipan_gan, value: 辛}], same: gong}]}, {all_of: [{all_of: [{key: gan, value: 壬, scope: {pillar: day}}]}, {all_of: [{key: tianpan_gan, value: 庚}, {key: dipan_gan, value: 壬}], same: gong}]}, {all_of: [{all_of: [{key: gan, value: 癸, scope: {pillar: day}}]}, {all_of: [{key: tianpan_gan, value: 庚}, {key: dipan_gan, value: 癸}], same: gong}]}]}
   caveats: []
   school: null
   verified: false
@@ -461,7 +461,7 @@ rules:
     start_line: 301
     end_line: 301
   quote: 伏干 庚临日干
-  applicable_to: []
+  applicable_to: {any_of: [{all_of: [{all_of: [{key: gan, value: 乙, scope: {pillar: day}}]}, {all_of: [{key: tianpan_gan, value: 庚}, {key: dipan_gan, value: 乙}], same: gong}]}, {all_of: [{all_of: [{key: gan, value: 丙, scope: {pillar: day}}]}, {all_of: [{key: tianpan_gan, value: 庚}, {key: dipan_gan, value: 丙}], same: gong}]}, {all_of: [{all_of: [{key: gan, value: 丁, scope: {pillar: day}}]}, {all_of: [{key: tianpan_gan, value: 庚}, {key: dipan_gan, value: 丁}], same: gong}]}, {all_of: [{all_of: [{key: gan, value: 戊, scope: {pillar: day}}]}, {all_of: [{key: tianpan_gan, value: 庚}, {key: dipan_gan, value: 戊}], same: gong}]}, {all_of: [{all_of: [{key: gan, value: 己, scope: {pillar: day}}]}, {all_of: [{key: tianpan_gan, value: 庚}, {key: dipan_gan, value: 己}], same: gong}]}, {all_of: [{all_of: [{key: gan, value: 庚, scope: {pillar: day}}]}, {all_of: [{key: tianpan_gan, value: 庚}, {key: dipan_gan, value: 庚}], same: gong}]}, {all_of: [{all_of: [{key: gan, value: 辛, scope: {pillar: day}}]}, {all_of: [{key: tianpan_gan, value: 庚}, {key: dipan_gan, value: 辛}], same: gong}]}, {all_of: [{all_of: [{key: gan, value: 壬, scope: {pillar: day}}]}, {all_of: [{key: tianpan_gan, value: 庚}, {key: dipan_gan, value: 壬}], same: gong}]}, {all_of: [{all_of: [{key: gan, value: 癸, scope: {pillar: day}}]}, {all_of: [{key: tianpan_gan, value: 庚}, {key: dipan_gan, value: 癸}], same: gong}]}]}
   caveats: []
   school: null
   verified: false
@@ -531,7 +531,7 @@ rules:
     start_line: 327
     end_line: 327
   quote: 地罗遮蔽 六壬临时干
-  applicable_to: []
+  applicable_to: {any_of: [{all_of: [{all_of: [{key: gan, value: 乙, scope: {pillar: time}}]}, {all_of: [{key: tianpan_gan, value: 壬}, {key: dipan_gan, value: 乙}], same: gong}]}, {all_of: [{all_of: [{key: gan, value: 丙, scope: {pillar: time}}]}, {all_of: [{key: tianpan_gan, value: 壬}, {key: dipan_gan, value: 丙}], same: gong}]}, {all_of: [{all_of: [{key: gan, value: 丁, scope: {pillar: time}}]}, {all_of: [{key: tianpan_gan, value: 壬}, {key: dipan_gan, value: 丁}], same: gong}]}, {all_of: [{all_of: [{key: gan, value: 戊, scope: {pillar: time}}]}, {all_of: [{key: tianpan_gan, value: 壬}, {key: dipan_gan, value: 戊}], same: gong}]}, {all_of: [{all_of: [{key: gan, value: 己, scope: {pillar: time}}]}, {all_of: [{key: tianpan_gan, value: 壬}, {key: dipan_gan, value: 己}], same: gong}]}, {all_of: [{all_of: [{key: gan, value: 庚, scope: {pillar: time}}]}, {all_of: [{key: tianpan_gan, value: 壬}, {key: dipan_gan, value: 庚}], same: gong}]}, {all_of: [{all_of: [{key: gan, value: 辛, scope: {pillar: time}}]}, {all_of: [{key: tianpan_gan, value: 壬}, {key: dipan_gan, value: 辛}], same: gong}]}, {all_of: [{all_of: [{key: gan, value: 壬, scope: {pillar: time}}]}, {all_of: [{key: tianpan_gan, value: 壬}, {key: dipan_gan, value: 壬}], same: gong}]}, {all_of: [{all_of: [{key: gan, value: 癸, scope: {pillar: time}}]}, {all_of: [{key: tianpan_gan, value: 壬}, {key: dipan_gan, value: 癸}], same: gong}]}]}
   caveats: []
   school: null
   verified: false
@@ -545,7 +545,7 @@ rules:
     start_line: 329
     end_line: 329
   quote: 天网四张 六癸临时干
-  applicable_to: []
+  applicable_to: {any_of: [{all_of: [{all_of: [{key: gan, value: 乙, scope: {pillar: time}}]}, {all_of: [{key: tianpan_gan, value: 癸}, {key: dipan_gan, value: 乙}], same: gong}]}, {all_of: [{all_of: [{key: gan, value: 丙, scope: {pillar: time}}]}, {all_of: [{key: tianpan_gan, value: 癸}, {key: dipan_gan, value: 丙}], same: gong}]}, {all_of: [{all_of: [{key: gan, value: 丁, scope: {pillar: time}}]}, {all_of: [{key: tianpan_gan, value: 癸}, {key: dipan_gan, value: 丁}], same: gong}]}, {all_of: [{all_of: [{key: gan, value: 戊, scope: {pillar: time}}]}, {all_of: [{key: tianpan_gan, value: 癸}, {key: dipan_gan, value: 戊}], same: gong}]}, {all_of: [{all_of: [{key: gan, value: 己, scope: {pillar: time}}]}, {all_of: [{key: tianpan_gan, value: 癸}, {key: dipan_gan, value: 己}], same: gong}]}, {all_of: [{all_of: [{key: gan, value: 庚, scope: {pillar: time}}]}, {all_of: [{key: tianpan_gan, value: 癸}, {key: dipan_gan, value: 庚}], same: gong}]}, {all_of: [{all_of: [{key: gan, value: 辛, scope: {pillar: time}}]}, {all_of: [{key: tianpan_gan, value: 癸}, {key: dipan_gan, value: 辛}], same: gong}]}, {all_of: [{all_of: [{key: gan, value: 壬, scope: {pillar: time}}]}, {all_of: [{key: tianpan_gan, value: 癸}, {key: dipan_gan, value: 壬}], same: gong}]}, {all_of: [{all_of: [{key: gan, value: 癸, scope: {pillar: time}}]}, {all_of: [{key: tianpan_gan, value: 癸}, {key: dipan_gan, value: 癸}], same: gong}]}]}
   caveats: []
   school: null
   verified: false
