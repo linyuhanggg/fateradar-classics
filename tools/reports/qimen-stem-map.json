@@ -103,6 +103,12 @@
  },
  {
   "book": "san-shi/qimen-dunjia-tongzhi",
+  "rule_id": "QM-P25",
+  "applicable_to_yaml": "[{key: geju_qimen, value: 三奇得使}]",
+  "evidence_from_statement": "乙奇加甲午甲戌"
+ },
+ {
+  "book": "san-shi/qimen-dunjia-tongzhi",
   "rule_id": "QM-P34",
   "applicable_to_yaml": "{all_of: [{key: tianpan_gan, value: 庚}, {key: dipan_gan, value: 丙}], same: gong}",
   "evidence_from_statement": "六庚加丙奇"

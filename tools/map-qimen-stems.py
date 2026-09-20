@@ -76,6 +76,13 @@ MAP: dict[str, tuple[str, str]] = {
     "QM-P01": ("{all_of: [{key: zhifu, value: \"*\"}, {key: dipan_gan, value: 丙}], same: gong}", "甲值符加地盘丙奇"),
     "QM-P02": ("{all_of: [{key: tianpan_gan, value: 丙}, {key: zhifu, value: \"*\"}], same: gong}", "丙奇加地盘甲值符"),
     "QM-P31": ("{all_of: [{key: tianpan_gan, value: 庚}, {key: zhifu, value: \"*\"}], same: gong}", "庚临值符"),
+    # ── 格名类：引擎已把格名当事实产出（`geju_qimen`，源自 patterns/ruleChecks）──────
+    # 沿用既有约定（QM-P14 伏吟局／QM-P15 反吟局 就是 [{key: geju_qimen, value: …}]）。
+    # QM-P25「三奇得使 乙奇加甲午甲戌 丙奇加甲子甲申 丁奇加甲寅甲辰」——
+    # 引擎 `qimen-analysis.ts` 的 ENVOY 表恰为 {乙:[己,辛], 丙:[戊,庚], 丁:[壬,癸]}，
+    # 即 甲午/甲戌 旬首＝辛/己、甲子/甲申＝戊/庚、甲寅/甲辰＝壬/癸，与原文逐项吻合，
+    # 故「本盘 patterns 含三奇得使」就是原文所说的条件。
+    "QM-P25": ("[{key: geju_qimen, value: 三奇得使}]", "乙奇加甲午甲戌"),
     "QM-P34": ("{all_of: [{key: tianpan_gan, value: 庚}, {key: dipan_gan, value: 丙}], same: gong}", "六庚加丙奇"),
     "QM-P35": ("{all_of: [{key: tianpan_gan, value: 丙}, {key: dipan_gan, value: 庚}], same: gong}", "丙奇加六庚金"),
 }

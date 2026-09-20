@@ -190,11 +190,13 @@
     {
       "book": "san-shi/qimen-dunjia-tongzhi",
       "rule_id": "QM-P25",
-      "decision": "unmapped",
+      "decision": "mapped",
       "reason_class": "fact-not-emitted",
       "evidence_from_statement": "三奇得使 乙奇加甲午甲戌 丙奇加甲子甲申 丁奇加甲寅甲辰",
       "note": "三奇得使＝三奇天盘干分别加六甲旬首，全在天盘干层，另需旬首（甲午/甲戌之类）事实，两者皆无。",
-      "missing_fact": "三奇天盘干（乙/丙/丁）与旬首（甲午/甲戌/甲子/甲申/甲寅/甲辰）"
+      "missing_fact": "三奇天盘干（乙/丙/丁）与旬首（甲午/甲戌/甲子/甲申/甲寅/甲辰）",
+      "mapped_by": "qimen-stem-map.json",
+      "mapped_note": "t184 映射：引擎已把格名当事实产出（geju_qimen），沿用 QM-P14/P15 的既有约定；ENVOY 表与原文逐项吻合，故非凑近似名。原 reason_class 保留为历史判定。"
     },
     {
       "book": "san-shi/qimen-faqiao",

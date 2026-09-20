@@ -41,7 +41,7 @@ def main() -> int:
     rules = {r["rule_id"]: r for r in data["rules"]}
 
     print("1. 台账 16 条，且复核片段仍在原文里")
-    check("  条数", len(ledger), 19)
+    check("  条数 20（t184 增 三奇得使）", len(ledger), 20)
     miss = [
         x["rule_id"]
         for x in ledger
