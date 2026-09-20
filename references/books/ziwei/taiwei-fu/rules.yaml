@@ -96,7 +96,7 @@ rules:
     start_line: 18
     end_line: 18
   quote: 日月最嫌反背，祿馬最喜交馳。
-  applicable_to: []
+  applicable_to: {all_of: [{key: ziwei_star, value: 禄存}, {key: ziwei_star, value: 天马}], same: palace}
   caveats:
   - 反背为不吉倾向，非铁口凶论
   school: null
@@ -163,7 +163,7 @@ rules:
     start_line: 24
     end_line: 24
   quote: 魁鉞同行，位居臺輔。
-  applicable_to: []
+  applicable_to: {all_of: [{key: ziwei_star, value: 天魁}, {key: ziwei_star, value: 天钺}], same: palace}
   caveats:
   - 现代解读为贵人扶助倾向，不作绝对仕途论
   school: null
@@ -320,9 +320,7 @@ rules:
     start_line: 45
     end_line: 45
   quote: 忌暗同居身命疾厄，沉困尪羸，凶星會於父母遷移，刑傷破祖。
-  applicable_to:
-  - {key: ziwei_palace, value: 疾厄}
-  - {key: ziwei_palace, value: 迁移}
+  applicable_to: {any_of: [{all_of: [{key: sihua, value: 化忌, scope: {palace: 疾厄}}]}, {all_of: [{key: sihua, value: 化忌, scope: {palace: 迁移}}]}]}
   caveats:
   - ⚠️ 疾病断语 — 仅作文化研究参考，不得铁口断寿断病
   - 不作医学结论

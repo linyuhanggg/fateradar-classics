@@ -138,6 +138,74 @@ def main() -> int:
         if rc == 0 or "V15" not in codes:
             fail(f"illegal palace should V15 FAIL, rc={rc} codes={codes} out={out[:800]}")
         print("reverse6 OK V15 illegal palace")
+
+        # reverse 7..13：谓词语言 v3 的 V16 反例。用 YAML 流式写法注入，避开缩进陷阱。
+        def expect_v16(tag: str, injected: str, *, want: str | None = None) -> None:
+            body = yaml_orig.replace("applicable_to: []", "applicable_to: " + injected, 1)
+            if body == yaml_orig:
+                fail(f"{tag}: could not inject group form")
+            YAML.write_text(body, encoding="utf-8")
+            rc, out = run_validate(["--book", BOOK, "--json"])
+            YAML.write_text(yaml_orig, encoding="utf-8")
+            payload = json.loads(out[out.find("{") :]) if "{" in out else {}
+            codes = [e.get("code") for e in payload.get("errors") or []]
+            if rc == 0 or "V16" not in codes:
+                fail(f"{tag}: should V16 FAIL, rc={rc} codes={codes} out={out[:800]}")
+            if want and not any(want in (e.get("message") or "") for e in payload.get("errors") or []):
+                fail(f"{tag}: V16 message should mention {want!r}, got {codes} {out[:800]}")
+            print(f"{tag} OK V16")
+
+        expect_v16(
+            "reverse7",
+            "{all_of: [{key: shishen, value: 七杀}], bogus_key: [{key: shishen, value: 正官}]}",
+            want="未知组字段",
+        )
+        expect_v16(
+            "reverse8",
+            "{any_of: [{key: shishen, value: 七杀}], all_of: [{key: shishen, value: 正官}]}",
+            want="恰好有一个",
+        )
+        expect_v16(
+            "reverse9",
+            "{any_of: [{key: shishen, value: 七杀}], same: palace}",
+            want="只能出现在 all_of 内",
+        )
+        expect_v16(
+            "reverse10",
+            "{all_of: [{key: shishen, value: 七杀, scope: {gong: 3}}]}",
+            want="scope.gong 仅奇门",
+        )
+        expect_v16(
+            "reverse11",
+            "{all_of: [{key: shishen, value: 七杀}, {key: shishen, value: 正官, scope: {yao: 9}}]}",
+            want="scope.yao",
+        )
+        expect_v16(
+            "reverse12",
+            "{all_of: [{key: shishen, value: 七杀, scope: {pillar: 季}}]}",
+            want="scope.pillar",
+        )
+        # 正例：合法 v3 组必须通过（否则门禁只是「一律拒绝」）
+        good = yaml_orig.replace(
+            "applicable_to: []",
+            "applicable_to: "
+            "{any_of: ["
+            "{all_of: [{key: shishen, value: 七杀, scope: {pillar: month}}, "
+            "{key: rizhu_strength, value: 偏弱}], same: palace}, "
+            "{key: shishen, value: 正官}], "
+            "none_of: [{key: kongwang, value: '*'}]}",
+            1,
+        )
+        if good == yaml_orig:
+            fail("could not inject legal v3 group")
+        YAML.write_text(good, encoding="utf-8")
+        rc, out = run_validate(["--book", BOOK, "--json"])
+        YAML.write_text(yaml_orig, encoding="utf-8")
+        payload = json.loads(out[out.find("{") :]) if "{" in out else {}
+        codes = [e.get("code") for e in payload.get("errors") or []]
+        if rc != 0 or codes:
+            fail(f"legal v3 group should PASS, rc={rc} codes={codes} out={out[:800]}")
+        print("reverse13 OK legal v3 group accepted")
     finally:
         YAML.write_text(yaml_orig, encoding="utf-8")
         FULLTEXT.write_text(ft_orig, encoding="utf-8")

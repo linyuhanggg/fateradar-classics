@@ -16,6 +16,9 @@ from pathlib import Path
 
 import yaml
 
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from predicate_lang import iter_usable_predicates  # noqa: E402
+
 ROOT = Path(__file__).resolve().parents[1]
 ARTS = ("bazi", "ziwei", "qimen", "liuren", "liuyao", "qizheng")
 REFERENCE_ARTS = ("meihua", "yili")
@@ -102,10 +105,12 @@ def art_of(system: str, slug: str) -> str | None:
 
 
 def preds_of(rule: dict) -> list[dict]:
-    preds = rule.get("applicable_to") or []
-    if not isinstance(preds, list):
-        return []
-    return [p for p in preds if isinstance(p, dict) and p.get("key") and p.get("value") is not None]
+    """谓词叶子。v3 组形态（any_of/all_of/none_of 嵌套）同样计数。
+
+    旧实现只认 `isinstance(preds, list)`，会把 v3 组整体读成空 —— 覆盖率少算且不报错。
+    见 tools/predicate_lang.py。
+    """
+    return list(iter_usable_predicates(rule.get("applicable_to")))
 
 
 def load_open_dump() -> dict[str, set[str]]:

@@ -1,0 +1,329 @@
+{
+  "art": "ziwei",
+  "generated_by": "T168 mapper",
+  "decisions": [
+    {
+      "book": "ziwei/ziwei-doushu-quanshu",
+      "rule_id": "ZW-01",
+      "decision": "mapped",
+      "applicable_to_yaml": "{all_of: [{key: ziwei_star, value: 紫微, scope: {palace: 命宫}}]}",
+      "evidence_from_statement": "紫微为帝座尊星，入命主聪明端正、仪表魁梧、有领导力",
+      "note": "只取原文明确写出的「入命」这一统摄条件，绑到命宫。后半句「庙旺会左辅右弼天魁天钺主大富大贵；落陷无吉则成在野孤君」含 庙旺/落陷 亮度与「在野孤君」格局名，二者引擎均未产出，故不写入谓词——谓词语义是「本盘与此条相关」的入口，不是把原文分支逐字转录。"
+    },
+    {
+      "book": "ziwei/ziwei-doushu-quanshu",
+      "rule_id": "ZIWEIDOUSHUQ-ZW-01",
+      "decision": "mapped",
+      "applicable_to_yaml": "{any_of: [{all_of: [{key: ziwei_star, value: 天机, scope: {palace: 命宫}}]}, {all_of: [{key: ziwei_star, value: 天机, scope: {palace: 兄弟}}]}]}",
+      "evidence_from_statement": "天机为兄弟主星，入命主智慧善变…",
+      "note": "原文只有两个带宫位定位的分支：天机入命（命宫）、天机为兄弟主星（兄弟宫）。「与天梁同主善人／与太阴同主参佐」是这两个宫之内的同宫组合，不单独作为入口，以免把无宫位的 天机 令牌写成过宽 OR（会让任意含天机的盘都命中）。落陷会煞属亮度，未产出。"
+    },
+    {
+      "book": "ziwei/ziwei-doushu-quanshu",
+      "rule_id": "ZIWEIDOUSHUQ-008",
+      "decision": "mapped",
+      "applicable_to_yaml": "{any_of: [{all_of: [{key: ziwei_star, value: 廉贞, scope: {palace: 命宫}}]}, {all_of: [{key: ziwei_star, value: 廉贞, scope: {palace: 事业}}]}]}",
+      "evidence_from_statement": "廉贞为官禄囚星，入命主邪正双面…",
+      "note": "原文把两个定位都写出来了：入命（命宫）与 官禄（事业宫）。「会煞落陷」属亮度与星组合，未产出，不写入。"
+    },
+    {
+      "book": "ziwei/ziwei-doushu-quanshu",
+      "rule_id": "ZIWEIDOUSHUQ-011",
+      "decision": "mapped",
+      "applicable_to_yaml": "{all_of: [{key: ziwei_star, value: 贪狼, scope: {palace: 命宫}}]}",
+      "evidence_from_statement": "贪狼为桃花主星，入命主多欲多变、社交广泛",
+      "note": "主体条件是「贪狼入命」，绑命宫。后两分支「与火铃同宫成火贪/铃贪」「与廉贞同宫」是同宫组合且属格局名（暴发格），引擎不产出格局名，且该同宫组合的宫位原文未定，故不写入谓词。"
+    },
+    {
+      "book": "ziwei/ziwei-doushu-quanshu",
+      "rule_id": "ZIWEIDOUSHUQ-012",
+      "decision": "mapped",
+      "applicable_to_yaml": "{all_of: [{key: ziwei_star, value: 巨门, scope: {palace: 命宫}}]}",
+      "evidence_from_statement": "巨门为是非暗星，入命主口舌是非疑虑多",
+      "note": "主体条件是「巨门入命」。「庙旺会吉成巨日同宫/石中隐玉贵格」= 亮度 + 格局名，均未产出；「落陷会煞」= 亮度，未产出。故只写主体条件。"
+    },
+    {
+      "book": "ziwei/ziwei-doushu-quanshu",
+      "rule_id": "ZIWEIDOUSHUQ-015",
+      "decision": "mapped",
+      "applicable_to_yaml": "{all_of: [{key: ziwei_star, value: 七杀, scope: {palace: 命宫}}]}",
+      "evidence_from_statement": "七杀为将星·肃杀，入命主权威决断、刚毅独立",
+      "note": "主体条件是「七杀入命」。「与破军贪狼同三合」是三方四正关系，原文只说同三合——用 same: palace 会凭空断成同宫，属编造条件，故不写；「杀破狼」是格局名，未产出。"
+    },
+    {
+      "book": "ziwei/ziwei-doushu-quanshu",
+      "rule_id": "ZIWEIDOUSHUQ-021",
+      "decision": "mapped",
+      "applicable_to_yaml": "{all_of: [{key: ziwei_star, value: 禄存}, {key: ziwei_star, value: 天马}], same: palace}",
+      "evidence_from_statement": "禄马同宫或会照成禄马交驰富格",
+      "note": "原文明确写「禄马同宫」（禄存与天马同会），同宫可用 same: palace 表达，两个星名引擎均产出，故成对绑定。另一分支「或会照」是三方四正关系（未产出），此处不覆盖；「羊陀夹禄」是夹宫关系（未产出）。谓词覆盖的是原文写明的同宫分支，是原文条件的真子集，不是加码。"
+    },
+    {
+      "book": "ziwei/ziwei-doushu-quanshu",
+      "rule_id": "ZIWEIDOUSHUQ-ZW-04",
+      "decision": "mapped",
+      "applicable_to_yaml": "{all_of: [{key: ziwei_star, value: 紫微, scope: {palace: 兄弟}}]}",
+      "evidence_from_statement": "兄弟宫主兄弟姐妹与同辈关系",
+      "note": "原文的盘面入口是「兄弟宫」+ 该宫星曜吉凶；本条 anchor 引文正是讨论兄弟宫中紫微（及天府/天相/破军）同度。取 紫微 在兄弟宫 作为该条与本盘相关的可判入口。「庙旺/落陷」亮度未产出，不写入。"
+    },
+    {
+      "book": "ziwei/ziwei-doushu-quanshu",
+      "rule_id": "ZW",
+      "decision": "unmapped",
+      "reason_class": "not-a-condition",
+      "evidence_from_statement": "斗数以命、兄弟、妻妾、子女…为十二宫次序",
+      "note": "这是十二宫次序（体例/定盘法），原文没有盘面适用条件；本条 caveat 自己写「仅证明十二宫方法，不授权宫位吉凶」。不是「何时用本条」。"
+    },
+    {
+      "book": "ziwei/ziwei-doushu-quanshu",
+      "rule_id": "ZW-04",
+      "decision": "unmapped",
+      "reason_class": "fact-not-emitted",
+      "evidence_from_statement": "命宫主一生总论：星曜性质 + 庙旺利平闲陷 + 三方四正会照吉煞 + 四化加临；命宫为根本，必须与身宫合参",
+      "note": "命宫本身在事实层没有可枚举取值（ziwei_palace 每盘 13 宫齐备），而本条 statement 自己把成立条件写明为「庙旺利平闲陷 + 三方四正会照 + 四化加临」四元综合：亮度与三方四正引擎均未产出（只有四化可判）。只挂一个恒真的 ziwei_palace=命宫 换覆盖率没有意义，故保持未映射。",
+      "missing_fact": "星曜亮度（庙旺利平闲陷）；三方四正会照关系"
+    },
+    {
+      "book": "ziwei/ziwei-doushu-quanshu",
+      "rule_id": "ZIWEIDOUSHUQ-045",
+      "decision": "unmapped",
+      "reason_class": "not-a-condition",
+      "evidence_from_statement": "05 富贵贫贱格局",
+      "note": "章节标题（目录行）。"
+    },
+    {
+      "book": "ziwei/ziwei-doushu-quanshu",
+      "rule_id": "ZW-05",
+      "decision": "unmapped",
+      "reason_class": "fact-not-emitted",
+      "evidence_from_statement": "富局主要包括：日月并明 / 月朗天门 / 武贪格 / 火贪格 / 铃贪格 / 双禄交流 / 财禄夹马等；命宫三方四正会成富局",
+      "note": "本条列的全是格局名（日月并明/月朗天门/武贪格/火贪格/铃贪格/双禄交流/财禄夹马），成立条件是「命宫三方四正会成」。格局名与三方四正引擎均未产出；若只按星名拼凑（如 武曲+贪狼）即把「武贪格」这一格局判据偷换成星曜共现，属编造。",
+      "missing_fact": "格局名（日月并明/月朗天门/武贪格/火贪格/铃贪格/双禄交流/财禄夹马）；三方四正会照关系"
+    },
+    {
+      "book": "ziwei/ziwei-doushu-quanshu",
+      "rule_id": "ZIWEIDOUSHUQ-048",
+      "decision": "unmapped",
+      "reason_class": "fact-not-emitted",
+      "evidence_from_statement": "贫贱局主要包括：日月反背 / 命无正曜 / 命坐空亡 / 羊陀夹忌 / 火铃夹命 等",
+      "note": "五项都是格局名或关系类判据：日月反背=日月相对位置格局；命无正曜需「正曜」集合定义（引擎虽产出 空宫 令牌，但「无正曜」判定未产出）；羊陀夹忌、火铃夹命均为夹宫关系。夹宫与格局名引擎不产出，逐项拼凑即失真。",
+      "missing_fact": "格局名（日月反背/命无正曜/命坐空亡/羊陀夹忌/火铃夹命）；夹宫关系"
+    },
+    {
+      "book": "ziwei/ziwei-doushu-quanshu",
+      "rule_id": "ZIWEIDOUSHUQ-049",
+      "decision": "unmapped",
+      "reason_class": "fact-not-emitted",
+      "evidence_from_statement": "杂局主要包括：桃花犯主 / 贪武同行 / 廉贞会贪狼 等；吉凶兼备需细判",
+      "note": "三项均为格局名（桃花犯主/贪武同行/廉贞会贪狼），引擎未产出；且原文自称「吉凶兼备需细判」，不构成确定判据。",
+      "missing_fact": "格局名（桃花犯主/贪武同行/廉贞会贪狼）"
+    },
+    {
+      "book": "ziwei/ziwei-doushu-quanshu",
+      "rule_id": "ZIWEIDOUSHUQ-050",
+      "decision": "unmapped",
+      "reason_class": "not-a-condition",
+      "evidence_from_statement": "紫微斗数星曜在 12 地支位有六等亮度：庙最旺、旺、利、平、闲、陷最弱",
+      "note": "这是亮度等级的体例定义（怎么读亮度），不是「何时用本条」；紫微侧亮度本身也未产出（miaowang 只属七政）。"
+    },
+    {
+      "book": "ziwei/ziwei-doushu-quanshu",
+      "rule_id": "ZW-06",
+      "decision": "unmapped",
+      "reason_class": "not-a-condition",
+      "evidence_from_statement": "大限十年一段：水二局自二岁起、木三局自三岁起…；男阳/女阳顺行，男阴/女阴逆行",
+      "note": "大限起例取法（怎么起大限、几岁起、顺逆），非盘面适用条件。caveat 亦写「不得手算大限起例，必须依赖工具」。"
+    },
+    {
+      "book": "ziwei/ziwei-doushu-quanshu",
+      "rule_id": "ZIWEIDOUSHUQ-057",
+      "decision": "unmapped",
+      "reason_class": "not-a-condition",
+      "evidence_from_statement": "本规则仅作总纲索引，详细 144 条留待 D2 续抽",
+      "note": "原文自述是总纲索引行，144 条所忌诀尚未成条；无单一盘面条件可用。"
+    },
+    {
+      "book": "ziwei/ziwei-doushu-quanshu",
+      "rule_id": "ZIWEIDOUSHUQ-058",
+      "decision": "unmapped",
+      "reason_class": "not-a-condition",
+      "evidence_from_statement": "紫微斗数承认阴德可改命延寿；行善积德可化解凶限；此为道德修养层，非命定",
+      "note": "道德修养层（阴骘观），原文自述「非命定」，不构成盘面判据。"
+    },
+    {
+      "book": "ziwei/ziwei-doushu-quanshu",
+      "rule_id": "ZIWEIDOUSHUQ-059",
+      "decision": "unmapped",
+      "reason_class": "not-a-condition",
+      "evidence_from_statement": "07 男女命同异",
+      "note": "章节标题（目录行），无盘面条件。"
+    },
+    {
+      "book": "ziwei/ziwei-doushu-quanshu",
+      "rule_id": "ZIWEIDOUSHUQ-ZW-07",
+      "decision": "unmapped",
+      "reason_class": "fact-not-emitted",
+      "evidence_from_statement": "女命骨髓赋专论女命吉凶…本赋仅作命书历史研究展示",
+      "note": "本条的适用前提是「女命」，而事实层没有性别 FactKey（字面「府相之星女命躔」的府/相与宫位可表达，唯独性别这个决定本条的维度不可判）。原文与本条 caveat 又都要求仅作历史研究。",
+      "missing_fact": "性别（女命/男命）"
+    },
+    {
+      "book": "ziwei/ziwei-doushu-quanshu",
+      "rule_id": "ZIWEIDOUSHUQ-062",
+      "decision": "unmapped",
+      "reason_class": "not-a-condition",
+      "evidence_from_statement": "08 小儿命与夭寿",
+      "note": "章节标题（目录行）。"
+    },
+    {
+      "book": "ziwei/ziwei-doushu-quanshu",
+      "rule_id": "ZW-08",
+      "decision": "unmapped",
+      "reason_class": "fact-not-emitted",
+      "evidence_from_statement": "小儿命论关煞与生时吉凶；关煞重者古书称难养；生时不确则命局误",
+      "note": "本条引文列举 博士/力士/青龙/将军/大耗/死符/病符/官府/奏书/白虎/太岁/七杀 等岁前、将前诸星与关煞，这些令牌引擎未产出；判定还要「分生克制化之垣、看时禄衰败之地、观关杀」，属亮度与生时综合。缺的核心事实是岁前/将前诸星与关煞。",
+      "missing_fact": "岁前/将前诸星（博士/力士/青龙/将军/大耗/死符/病符/官府/奏书/白虎/太岁）与小儿关煞"
+    },
+    {
+      "book": "ziwei/ziwei-doushu-quanshu",
+      "rule_id": "ZIWEIDOUSHUQ-066",
+      "decision": "unmapped",
+      "reason_class": "not-a-condition",
+      "evidence_from_statement": "09 论诸星同垣富贵贫贱夭寿（强 reframe）",
+      "note": "章节标题（目录行）。"
+    },
+    {
+      "book": "ziwei/ziwei-doushu-quanshu",
+      "rule_id": "ZW-09",
+      "decision": "unmapped",
+      "reason_class": "fact-not-emitted",
+      "evidence_from_statement": "紫微斗数综合断法以诸星同垣为核心：本宫星 + 三方四正会照星 + 四化加临 + 庙旺利平闲陷综合判富贵贫贱夭寿",
+      "note": "本条把成立条件明定为「本宫星 + 三方四正会照星 + 四化加临 + 庙旺利平闲陷」四元综合：三方四正与亮度未产出，只有四化可判。跨 key 且大部缺失的综合判法，单挂任一可判令牌都失真。",
+      "missing_fact": "三方四正会照关系；星曜亮度（庙旺利平闲陷）"
+    },
+    {
+      "book": "ziwei/ziwei-doushu-quanshu",
+      "rule_id": "ZIWEIDOUSHUQ-ZW-09",
+      "decision": "unmapped",
+      "reason_class": "fact-not-emitted",
+      "evidence_from_statement": "紫微斗数命格有高下之分：上格主大富大贵、中格主小富小贵、下格主温饱、最下格主贫贱夭折",
+      "note": "本条对象是「命格高下」这一格局分级，引擎不产出格局/命格分级事实；原文判据（入庙/陷地/加杀化忌/三方会羊陀火铃空劫）又全属亮度与三方四正。",
+      "missing_fact": "命格/格局分级；星曜亮度；三方四正会照关系"
+    },
+    {
+      "book": "ziwei/ziwei-doushu-quanshu",
+      "rule_id": "ZIWEIDOUSHUQ-069",
+      "decision": "unmapped",
+      "reason_class": "fact-not-emitted",
+      "evidence_from_statement": "凡命局必先看是否入格：入吉格则富贵可期，入凶格则需化解，不入格则平常",
+      "note": "本条对象是「是否入格」，引擎不产出格局名或入格判定；引文「如命入格，庙旺聚吉，科权禄守，上上之命」的判据还含庙旺（亮度，未产出）。",
+      "missing_fact": "格局名/入格判定；星曜亮度（庙旺）"
+    },
+    {
+      "book": "ziwei/taiwei-fu",
+      "rule_id": "TAIWEIFU-006",
+      "decision": "mapped",
+      "applicable_to_yaml": "{all_of: [{key: ziwei_star, value: 禄存}, {key: ziwei_star, value: 天马}], same: palace}",
+      "evidence_from_statement": "禄马最喜交驰（禄存与天马同会）",
+      "note": "原文括注自己写明「禄存与天马同会」，括注中的「同会」即同宫，两个星名引擎均产出，故用 same: palace 成对绑定。同句前半「日月最嫌反背」原文另加定义「日不入南、月不照北」，属地支方位关系、未产出，不并入本条谓词（本条 statement 以分号并列两半，谓词只需覆盖可判的那半）。"
+    },
+    {
+      "book": "ziwei/taiwei-fu",
+      "rule_id": "TR",
+      "decision": "unmapped",
+      "reason_class": "not-a-condition",
+      "evidence_from_statement": "斗数至玄至微，理旨难明；寿夭贤愚、富贵贫贱，不可一概论议",
+      "note": "通论/题旨，原文自述「不可一概论议」，没有盘面适用条件。"
+    },
+    {
+      "book": "ziwei/taiwei-fu",
+      "rule_id": "TAIWEIFU-005",
+      "decision": "unmapped",
+      "reason_class": "not-a-condition",
+      "evidence_from_statement": "生逢败地发也虚花；绝处逢生，生花不败",
+      "note": "「败地／绝处」在紫微无 FactKey 可对应（十二长生/败绝属八字或长生十二神范畴，紫微事实层未产出该维度）；原文只是义理对句，无宫位或星曜条件。caveat 亦写「须结合大限流年综合判断」。"
+    },
+    {
+      "book": "ziwei/taiwei-fu",
+      "rule_id": "TAIWEIFU-008",
+      "decision": "unmapped",
+      "reason_class": "fact-not-emitted",
+      "evidence_from_statement": "七杀破军专依羊铃之虐；诸星吉，逢凶也吉；诸星凶，逢凶也凶",
+      "note": "本条把两件事并成一条：「七杀破军…羊铃」的星组合，与「诸星吉／凶」的吉凶星总体判法。吉凶星总体没有可判的盘面谓词，且 caveat 明写「现代杀破狼格局教学已与羊铃组合分离，须按派系细分」——读法待定；若只写 七杀/破军/擎羊/铃星 的平铺 OR，会把「专依羊铃之虐」这一关系偷换成「盘里有这四个星之一即相关」，属失真。故保持未映射。",
+      "missing_fact": "吉星/凶星分类（诸星吉／诸星凶）；羊铃与杀破的关联关系"
+    },
+    {
+      "book": "ziwei/taiwei-fu",
+      "rule_id": "TAIWEIFU-010",
+      "decision": "mapped",
+      "evidence_from_statement": "魁钺同行，位居台辅",
+      "note": "原文写「魁钺同行」——天魁与天钺同行（同宫），两个星名引擎均产出，故用 same: palace 成对绑定：两星分处异宫时本条不适用。同条并列的「君臣庆会」是格局名（其判据为紫微得辅弼），引擎不产出格局名，故不写入谓词；谓词只覆盖可判的前半句。",
+      "applicable_to_yaml": "{all_of: [{key: ziwei_star, value: 天魁}, {key: ziwei_star, value: 天钺}], same: palace}"
+    },
+    {
+      "book": "ziwei/taiwei-fu",
+      "rule_id": "TAIWEIFU-017",
+      "decision": "unmapped",
+      "reason_class": "fact-not-emitted",
+      "evidence_from_statement": "杀居绝地，天年夭似颜回；贪坐生乡，寿考永如彭祖",
+      "note": "「绝地／生乡」是十二长生位的绝/生（紫微事实层未产出该维度，与 TAIWEIFU-005 的败地同类），不是宫位名也不是星名；贪/杀虽可表达，但条件落在未产出的「绝地/生乡」上，单写星名会丢掉本条判别核心。",
+      "missing_fact": "十二长生位（绝地/生乡）"
+    },
+    {
+      "book": "ziwei/taiwei-fu",
+      "rule_id": "TAIWEIFU-021",
+      "decision": "mapped",
+      "evidence_from_statement": "帝星动则列宿奔驰；贪守空而财源不聚",
+      "note": "本条四个分句里只有两句能落到 FactKey：帝星=紫微（原文同篇前句「觀乎紫微舍躔…帝星動則列宿奔馳」所指即紫微）；贪=贪狼（贪守空）。土星/金星不是紫微本门星曜名（泛称，非紫微星曜），且「居其垣若可移动」「最怕空亡」无盘面定义，故不写入。谓词覆盖原文写明的两个可判对象，不为其补条件。",
+      "applicable_to_yaml": "{any_of: [{key: ziwei_star, value: 紫微}, {key: ziwei_star, value: 贪狼}]}"
+    },
+    {
+      "book": "ziwei/feixing-ziwei-doushu-yuanzhi",
+      "rule_id": "FEIXINGZIWEI-FZ",
+      "decision": "unmapped",
+      "reason_class": "meta-rule",
+      "evidence_from_statement": "本书观测之道…只能作为对既有盘面事实的旁证和解释框架，不能替代排盘、历法、事实层",
+      "note": "pack 与事实层边界的工程约束（观测法不得替代事实层），不是盘面条件。"
+    },
+    {
+      "book": "ziwei/feixing-ziwei-doushu-yuanzhi",
+      "rule_id": "FEIXINGZIWEI-003",
+      "decision": "unmapped",
+      "reason_class": "meta-rule",
+      "evidence_from_statement": "一切占课和观察须先有身命/盘面定位；没有命身宫、十二宫、星曜、限运等事实，不应使用本 pack 下判断",
+      "note": "明确的调用前置条件（无事实层事实则不得使用本 pack），属 pack 元规则。"
+    },
+    {
+      "book": "ziwei/feixing-ziwei-doushu-yuanzhi",
+      "rule_id": "FEIXINGZIWEI-010",
+      "decision": "unmapped",
+      "reason_class": "meta-rule",
+      "evidence_from_statement": "本书尝试把斗数用于占课：一物一事一地一人均有身命，推演一课即该事整体局势，不必另分主客用神",
+      "note": "本书自创的占课法体例（一物一事一地一人各起身命、不分主客用神），不是既有命盘的盘面条件；caveat 亦标为「属本书创新/实验法」。"
+    },
+    {
+      "book": "ziwei/feixing-ziwei-doushu-yuanzhi",
+      "rule_id": "FEIXINGZIWEI-012",
+      "decision": "unmapped",
+      "reason_class": "not-a-condition",
+      "evidence_from_statement": "本书观察村镇气脉时先看村头庙宇，庙宇坍塌/重新等被作为村中人事兴衰的旁证，并提到《阳宅爱众篇》诸庙宇神煞表",
+      "note": "阳宅/地理观察法与书目线索（庙宇神煞表尚待找底本），没有命盘条件。"
+    },
+    {
+      "book": "ziwei/feixing-ziwei-doushu-yuanzhi",
+      "rule_id": "FEIXINGZIWEI-013",
+      "decision": "unmapped",
+      "reason_class": "meta-rule",
+      "evidence_from_statement": "谈命需因人、语言、心理、社会语境而施说，并区分不敢说、不能说、不可说、不便说、不得不说等情形",
+      "note": "谈命表达体例（如何施说、证据层级不得混淆），约束输出而非盘面。"
+    },
+    {
+      "book": "ziwei/feixing-ziwei-doushu-yuanzhi",
+      "rule_id": "FEIXINGZIWEI-014",
+      "decision": "unmapped",
+      "reason_class": "meta-rule",
+      "evidence_from_statement": "书末自称十二宫活用假借等法为新发明且由考验得来；因此这些规则须作为本书经验法，不得反向改写《紫微斗数全书》《太微赋》的基础义理",
+      "note": "学派效力层级/优先级规则（本书经验法不得改写早期原典本义），属 pack 元规则。"
+    }
+  ]
+}

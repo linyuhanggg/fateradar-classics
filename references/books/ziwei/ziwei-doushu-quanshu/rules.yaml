@@ -36,7 +36,7 @@ rules:
   statement: 紫微为帝座尊星，入命主聪明端正、仪表魁梧、有领导力；庙旺会左辅右弼天魁天钺主大富大贵；落陷无吉则成"在野孤君"，主孤高难合群。
   anchor: {file: sources/fulltext/ziwei/ziwei-doushu-quanshu/fulltext.md, start_line: 425, end_line: 425}
   quote: 希夷先生曰：紫微為帝座，在諸宮能降福消災，解諸星之惡虛。能制火鈴為善，能降七殺為權。
-  applicable_to: []
+  applicable_to: {all_of: [{key: ziwei_star, value: 紫微, scope: {palace: 命宫}}]}
   caveats:
   - 仅作命书文化研究参考，不作铁口断富贵
   - 不替代现代职业/教育规划
@@ -49,7 +49,7 @@ rules:
   statement: 天机为兄弟主星，入命主智慧善变、宜动宜谋；与天梁同主善人；与太阴同主参佐；落陷会煞主奔波劳碌、虚而不实。
   anchor: {file: sources/fulltext/ziwei/ziwei-doushu-quanshu/fulltext.md, start_line: 3248, end_line: 3248}
   quote: 紫微有倚靠年長之兄，天府同三人，天相同三四人，破軍同亦有三人，或各胞生，加羊陀火鈴空劫克害有則欠和。
-  applicable_to: []
+  applicable_to: {any_of: [{all_of: [{key: ziwei_star, value: 天机, scope: {palace: 命宫}}]}, {all_of: [{key: ziwei_star, value: 天机, scope: {palace: 兄弟}}]}]}
   caveats:
   - 仅作文化研究参考
   - 不作铁口断职业
@@ -125,7 +125,7 @@ rules:
   statement: 廉贞为官禄囚星，入命主邪正双面：清白入庙主清贵廉洁；会煞落陷主官非桃花、刑伤囚禁。
   anchor: {file: sources/fulltext/ziwei/ziwei-doushu-quanshu/fulltext.md, start_line: 168, end_line: 168}
   quote: 財居空亡巴三覽四，文曲旺宮聞一知十。暗合廉貞為貪濫之曹吏。
-  applicable_to: []
+  applicable_to: {any_of: [{all_of: [{key: ziwei_star, value: 廉贞, scope: {palace: 命宫}}]}, {all_of: [{key: ziwei_star, value: 廉贞, scope: {palace: 事业}}]}]}
   caveats:
   - 古书"囚禁"断语**严禁**用于现代法律预测
   - 仅作文化研究参考
@@ -175,7 +175,7 @@ rules:
   statement: 贪狼为桃花主星，入命主多欲多变、社交广泛；与火铃同宫成"火贪/铃贪"暴发格；与廉贞同宫主桃花官非。
   anchor: {file: sources/fulltext/ziwei/ziwei-doushu-quanshu/fulltext.md, start_line: 574, end_line: 574}
   quote: 答曰：廉貞屬火，北斗第五星也。
-  applicable_to: []
+  applicable_to: {all_of: [{key: ziwei_star, value: 贪狼, scope: {palace: 命宫}}]}
   caveats:
   - 桃花断语仅作文化研究参考
   - 不作铁口断婚外情
@@ -188,7 +188,7 @@ rules:
   statement: 巨门为是非暗星，入命主口舌是非疑虑多；庙旺会吉成"巨日同宫/石中隐玉"贵格；落陷会煞主官非破败。
   anchor: {file: sources/fulltext/ziwei/ziwei-doushu-quanshu/fulltext.md, start_line: 691, end_line: 691}
   quote: 北斗第二星也，為陰精之星，化氣為暗。
-  applicable_to: []
+  applicable_to: {all_of: [{key: ziwei_star, value: 巨门, scope: {palace: 命宫}}]}
   caveats:
   - 仅作文化研究参考
   - 不作铁口断官非
@@ -246,7 +246,7 @@ rules:
   statement: 七杀为将星·肃杀，入命主权威决断、刚毅独立；庙旺会吉主武贵；与破军贪狼同三合主"杀破狼"创业格；会煞则刑伤孤克。
   anchor: {file: sources/fulltext/ziwei/ziwei-doushu-quanshu/fulltext.md, start_line: 646, end_line: 646}
   quote: 答曰：貪狼北斗解厄之神，第一星也。
-  applicable_to: []
+  applicable_to: {all_of: [{key: ziwei_star, value: 七杀, scope: {palace: 命宫}}]}
   caveats:
   - 仅作文化研究参考
   - '"刑伤"断语不作铁口断'
@@ -370,7 +370,7 @@ rules:
   statement: 禄存主财禄，天马主奔波；禄马同宫或会照成"禄马交驰"富格，主奔波得财；禄存独守且无吉则称"羊陀夹禄"易破。
   anchor: {file: sources/fulltext/ziwei/ziwei-doushu-quanshu/fulltext.md, start_line: 1187, end_line: 1187}
   quote: 苗而不秀科名陷於凶神，發不主財祿主躔於弱地。
-  applicable_to: []
+  applicable_to: {all_of: [{key: ziwei_star, value: 禄存}, {key: ziwei_star, value: 天马}], same: palace}
   caveats:
   - 仅作文化研究参考
   - 不作具体投资决策依据

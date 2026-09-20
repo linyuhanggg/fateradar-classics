@@ -1,0 +1,495 @@
+{
+  "art": "liuren",
+  "generated_by": "T168 mapper (liuren assignment)",
+  "books": [
+    "san-shi/daliuren-daquan",
+    "san-shi/liuren-miben",
+    "san-shi/liuren-zhiyin"
+  ],
+  "scope": {
+    "covered_set": "predicate-gap-report.py --art liuren 报出的 42 条「带锚且 applicable_to 为空」规则（daliuren-daquan 16 / liuren-miben 16 / liuren-zhiyin 10），台账逐条一一对应，无缺无溢。",
+    "decision_rule": "applicable_to 的语义是「命中这些盘面谓词，本条才可被引用」，不是把 statement 逐字逻辑转录。只有原文把具体盘面取值当成该条对象／适用范围时才映射。",
+    "available_facts": [
+      "keti",
+      "sanchuan",
+      "tianjiang",
+      "yuejiang",
+      "kongwang"
+    ],
+    "facts_note": [
+      "liuren 事实只带 scope.layer（本命/大运/流年/流月/流日），无 pillar/palace/gong/yao，故本条不可用位置绑定。",
+      "sanchuan 的取值就是位置本身（初传/中传/末传），不携带所乘地支；无法表达「某支入传」「三传三合局」。",
+      "tianjiang 的 derivedFrom 恒为 chuan.<pos>.god，只能表示「某将坐某一传」，不能表示天将所临的具体宫位（日上/辰上）。",
+      "keti 值域开放，但仓内实测只见过 元首课/伏吟课/涉害课（tools/reports/facts-sample.json、docs/CLASSICS_STATUS.md §7.3）；其余课体名是否稳定产出无据，故不据课体名做映射。"
+    ],
+    "excluded_no_anchor": {
+      "count": 8,
+      "reason": "这些条 anchor 为 null，既不在 predicate-gap-report.py 的未映射口径内，也不计入 predicate-report.py 覆盖率分母；本轮不为其造 applicable_to，故不入 decisions（沿用 meihua-yili 台账的同一处理）。清单由三个 rules.yaml 现算。",
+      "rule_ids": [
+        "san-shi/liuren-miben: LIURENMIBEN-016",
+        "san-shi/liuren-miben: LIURENMIBEN-020",
+        "san-shi/liuren-zhiyin: LR",
+        "san-shi/liuren-zhiyin: LIURENZHIYIN-LR",
+        "san-shi/liuren-zhiyin: LIURENZHIYIN-005",
+        "san-shi/liuren-zhiyin: LIURENZHIYIN-006",
+        "san-shi/liuren-zhiyin: LIURENZHIYIN-007",
+        "san-shi/liuren-zhiyin: LIURENZHIYIN-010"
+      ]
+    },
+    "rules_yaml_changes": "mapped = 0，故三个 rules.yaml 的 applicable_to 一字未动（其余字段本轮全程未碰）。",
+    "legacy_report_note": "tools/reports/unmapped-predicates.md 的过程稿含陈旧 rule_id LIURENZHIYIN-015（该书 rules.yaml 已无此条），本轮不使用该文件作为作业清单，只在个别条的 note 里引用其旧判语以便对照。",
+    "class_boundary": {
+      "issue": "作业书提示「起例/取法（怎么取某课体）→ not-a-condition」，而九宗门分支条目的 statement 写的往往是「本盘是什么结构」。",
+      "line_drawn": "按 statement（不是 quote）的主体划线：①statement 只是取传链的步骤状态（候选还剩几个、比用后是否平手、上游是否通过）→ meta-rule；②statement 陈述本盘结构（四课完整、月将支与占时支相同、日柱属八专日、三传三合）而这些事实引擎未产出 → fact-not-emitted（作业书对该类的定义正是「需要引擎未产出的 FactKey，写清楚缺的是哪个事实」）；③statement 是提要/体例/取法辨析（怎么取天乙贵人、批评单执一端）→ not-a-condition。",
+      "precedent": "旧过程稿 tools/reports/unmapped-predicates.md 对同结构的 LIURENZHIYIN-008（返吟 is_fanyin）、DALIURENDAQU-009（八专日）也判「需要引擎未产出的事实」，与本台账口径一致。",
+      "affected_rule_ids": [
+        "DALIURENDAQU-007",
+        "DALIURENDAQU-008",
+        "DALIURENDAQU-009",
+        "DALIURENDAQU-010",
+        "DALIURENDAQU-011",
+        "DALIURENDAQU-014",
+        "LIURENZHIYIN-004",
+        "LIURENZHIYIN-008",
+        "LIURENZHIYIN-009"
+      ],
+      "note": "这些条目无论归 fact-not-emitted 还是 not-a-condition，decision 都是 unmapped；差别只在理由归类。若上游要求统一按「起例/取法 → not-a-condition」口径，这 9 条可整批改类，谓词决策不变。"
+    }
+  },
+  "reason_class_counts": {
+    "not-a-condition": 2,
+    "meta-rule": 21,
+    "fact-not-emitted": 18,
+    "condition-too-vague": 1
+  },
+  "counts": {
+    "total": 42,
+    "mapped": 0,
+    "unmapped": 42,
+    "by_book": {
+      "san-shi/daliuren-daquan": 16,
+      "san-shi/liuren-miben": 16,
+      "san-shi/liuren-zhiyin": 10
+    }
+  },
+  "coverage": {
+    "before": "liuren 53 anchored / 11 with predicates / 20.8% / wildcard 1 (9.1%)",
+    "after": "liuren 53 anchored / 11 with predicates / 20.8% / wildcard 1 (9.1%) —— 本轮 0 条 mapped，数字不变",
+    "why": "42 条 statement 全是 pack 调用条件／上游通过条件，或依赖引擎未产出的盘面事实（四课、上下克关系、日支与五行、天将落宫、驿马、三传所乘支…）。没有一条把可表达的盘面取值当成自己的适用对象，故按「原文没写就不写」一律留空。"
+  },
+  "genuinely_torn": [
+    {
+      "rule_ids": [
+        "DALIURENDAQU-007",
+        "DALIURENDAQU-008",
+        "DALIURENDAQU-009",
+        "DALIURENDAQU-010",
+        "DALIURENDAQU-011",
+        "DALIURENDAQU-014",
+        "LIURENZHIYIN-004",
+        "LIURENZHIYIN-008",
+        "LIURENZHIYIN-009"
+      ],
+      "alternative": "reason_class 取 not-a-condition（按作业书「起例/取法」口径）而非 fact-not-emitted",
+      "why_torn": "这 9 条都是九宗门分支条目：quote 是取传法（怎么取某课体），但 statement 写的是本盘结构（四课完整、月将支与占时支相同、十二神各居冲位、日柱属八专日、驿马发用…）。按 quote 读像起例，按 statement 读是盘面条件；而作业书对 fact-not-emitted 的定义正是「需要引擎未产出的 FactKey，写清楚缺的是哪个事实」。",
+      "resolution": "取 fact-not-emitted（statement 确有盘面条件，缺的是四课/克关系/日支/占时支/天将落宫等事实），逐条 missing_fact 已写清；若上游按「起例/取法」口径统一改判，见 scope.class_boundary，decision 不变"
+    },
+    {
+      "rule_ids": [
+        "DALIURENDAQU-010",
+        "DALIURENDAQU-011",
+        "DALIURENZHIYIN-008"
+      ],
+      "alternative": "映射 keti=伏吟课 / keti=返吟课",
+      "why_torn": "仓内 references/executable/daliuren-daquan.json 的 DLD-E-03/E-04 正是用 ke.style=伏吟课/返吟课 表达这两条，tools/reports/facts-sample.json 的 caseB 也确有 keti=伏吟课，说明「本盘相关性」的读法在仓内有先例。未采纳的理由：ke.style 属 executable 层另一套事实名（不在 fact-vocab.json）；这两条 statement 的写法是 adapter 标记（is_fuyin/is_fanyin），把它等同于 keti 取值是对 adapter profile 的推断，原文没写；且 docs/CLASSICS_STATUS.md §7.3 记 keti 在 dump 里多为空。",
+      "resolution": "仍判 unmapped / fact-not-emitted，理由见各条 note；若 upstream 确认 adapter 对伏吟/返吟盘稳定产出 keti=伏吟课/返吟课，此三条可改为一条谓词映射。"
+    },
+    {
+      "rule_ids": [
+        "LIURENZHIYIN-013"
+      ],
+      "alternative": "reason_class 取 not-a-condition（注家体例主张）而非 condition-too-vague",
+      "why_torn": "原文「凡看神煞，須干支神將刑克，其事乃發」既可读作通论体例，也可读作「须结合…」的不可操作化条件",
+      "resolution": "取 condition-too-vague，两种口径都记在 note 里，unmapped 结论不变"
+    },
+    {
+      "rule_ids": [
+        "LIURENMIBEN-006",
+        "DALIURENDAQU-017",
+        "LIURENMIBEN-009",
+        "LIURENMIBEN-015"
+      ],
+      "alternative": "meta-rule 与 fact-not-emitted 之间",
+      "why_torn": "这些 statement 是「已有/已给 X 事实」的就绪句式（偏 meta-rule），但 X 本身是引擎未产出的盘面事实（偏 fact-not-emitted）",
+      "resolution": "按「主体的决定性障碍」判：清单里的事实为本条核心且全无 key 者归 fact-not-emitted（009/015/017），pack 级量化条件（006「任何规则…」）归 meta-rule；每条 note 均已并列另一口径"
+    }
+  ],
+  "decisions": [
+    {
+      "book": "san-shi/daliuren-daquan",
+      "rule_id": "DLR",
+      "decision": "unmapped",
+      "reason_class": "meta-rule",
+      "evidence_from_statement": "用户要求实际占事或给出的既有课盘需要被当成事实使用",
+      "note": "这是 pack 的调用条件（用户请求 / 上游课盘是否可作为事实），主体是「谁在问、盘从哪来」，不是盘面取值。quote 为《入式法第一》取传歌诀，属起例，本身无适用条件。故不映射。"
+    },
+    {
+      "book": "san-shi/daliuren-daquan",
+      "rule_id": "DALIURENDAQU-DLR",
+      "decision": "unmapped",
+      "reason_class": "meta-rule",
+      "evidence_from_statement": "DLR-00 通过，adapter 已给日干和寄宫",
+      "note": "显式上游通过条件（DLR-00 通过）＋ adapter 字段就绪声明，与作业书所举「LM-R00 已通过」同类，按 meta-rule。附：本条所需的「日干寄宫」在本 art 事实层无对应 key（liuren 只产出 keti/sanchuan/tianjiang/yuejiang/kongwang），即便当作盘面条件也无法判定。caveat 亦写明不一致时先回 adapter 修正。",
+      "missing_fact": "日干寄宫（甲课寅、乙课辰一类的寄宫表事实）"
+    },
+    {
+      "book": "san-shi/daliuren-daquan",
+      "rule_id": "DALIURENDAQU-003",
+      "decision": "unmapped",
+      "reason_class": "meta-rule",
+      "evidence_from_statement": "四课已确定且不是无效盘",
+      "note": "取传流程的前置状态（四课是否已确定、盘是否有效），是流程门而非盘面条件；「四课」（干上/干阴/支上/支阴）与「无效盘」标记在事实层均无 key。caveat 也只谈「能不能区分上下、候选去重、盘式专分支标记」，全为 adapter 状态。故 meta-rule。",
+      "missing_fact": "四课（干上/干阴/支上/支阴）结构；无效盘标记"
+    },
+    {
+      "book": "san-shi/daliuren-daquan",
+      "rule_id": "DALIURENDAQU-004",
+      "decision": "unmapped",
+      "reason_class": "meta-rule",
+      "evidence_from_statement": "DLR-02 留下两个或更多同方向直接克候选",
+      "note": "取传决策链的中间状态——上一步（DLR-02）留下几个候选，属调用条件；候选的阴阳、上下方向与四课克关系在事实层无 key（caveat 亦只谈 adapter 未输出候选阴阳时停止）。注：旧过程稿 tools/reports/unmapped-predicates.md 对同条判「条件过于复合」，那是旧平铺语言表达力不足的说法，本轮按 v3 语言复判，真实障碍是候选事实未产出＋本条是链上状态。",
+      "missing_fact": "四课上下直接克候选集合；候选阴阳（比用依据）"
+    },
+    {
+      "book": "san-shi/daliuren-daquan",
+      "rule_id": "DALIURENDAQU-005",
+      "decision": "unmapped",
+      "reason_class": "meta-rule",
+      "evidence_from_statement": "多个同方向候选经比用后仍俱比或俱不比",
+      "note": "取传链再下一步的状态（比用后仍平手 → 进入涉害），是流程门。涉害深浅、孟仲季、土寄宫路径、先见顺序在事实层均无 key（caveat 明确「缺字段即 unresolved_shehai，禁止语言模型手数」）。不因 quote 标题含「渉害」就映射 keti=涉害课：statement 说的是候选比用后的平手状态，不是本盘课体名。",
+      "missing_fact": "涉害深浅/孟仲季/土寄宫/先见顺序；候选比用结果"
+    },
+    {
+      "book": "san-shi/daliuren-daquan",
+      "rule_id": "DALIURENDAQU-007",
+      "decision": "unmapped",
+      "reason_class": "fact-not-emitted",
+      "evidence_from_statement": "四课完整、无直接克、无遥克，且不属于伏吟、返吟、八专或三课别责",
+      "note": "本条是昴星分支的进入条件，所述全是盘面结构（四课完整、无克、无遥克、非四种专式），但 liuren 事实层不产出四课、不产出上下克/遥克关系、也不产出伏吟/返吟/八专/别责的盘式标记，整条无法判定。已评估「改映射 keti=昴星课」：statement 未写昴星课这一取值（昴星只出现在 quote），且引擎 keti 实测只见过 元首课/伏吟课/涉害课 一类，其余课体是否稳定产出无从溯源，故不映射。注：旧过程稿对同结构的 DALIURENDAQU-008 判「条件过于复合」，本轮按 v3 语言复判为事实未产出（AND 语言已可表达，缺的是事实）。",
+      "missing_fact": "四课结构；四课上下直接克/遥克关系；伏吟/返吟/八专/三课别责盘式标记"
+    },
+    {
+      "book": "san-shi/daliuren-daquan",
+      "rule_id": "DALIURENDAQU-008",
+      "decision": "unmapped",
+      "reason_class": "fact-not-emitted",
+      "evidence_from_statement": "去重后恰为三课，且无直接克、无遥克",
+      "note": "别责分支的进入条件：需要「四课去重后为三课」这一结构事实与克关系事实，两者引擎都未产出。不映射 keti=别责课：statement 未写该课体取值。旧过程稿亦判「条件过于复合，现有谓词表达不了（三课无克无遥克）」。",
+      "missing_fact": "四课去重结果（三课）；直接克/遥克关系"
+    },
+    {
+      "book": "san-shi/daliuren-daquan",
+      "rule_id": "DALIURENDAQU-009",
+      "decision": "unmapped",
+      "reason_class": "fact-not-emitted",
+      "evidence_from_statement": "日柱属于癸丑、甲寅、丁未、己未、庚申，且干支同位形成两课结构",
+      "note": "本条点名了五个八专日（盘面取值），但 liuren 事实层不产出日柱：既无日支，rizhu 也不是本 art 的产出 key。若只用日干（癸/甲/丁/己/庚）近似，会把「癸丑」扩大成癸酉、癸亥等所有癸日，超出八专日集合——属编造条件，不做。后半「干支同位形成两课结构」同样无 key。旧过程稿同判「需要引擎未产出的事实（日柱癸丑甲寅等专式）」。",
+      "missing_fact": "日柱干支组合（癸丑/甲寅/丁未/己未/庚申）；干支同位与两课结构"
+    },
+    {
+      "book": "san-shi/daliuren-daquan",
+      "rule_id": "DALIURENDAQU-010",
+      "decision": "unmapped",
+      "reason_class": "fact-not-emitted",
+      "evidence_from_statement": "月将支与占时支相同，十二神各居本宫，adapter 标记 is_fuyin=true",
+      "note": "所述为盘面结构（伏吟盘：月将加时同位），但：yuejiang 只给一个「月将支」值，占时支不是 FactKey，「月将支 = 占时支」这一相等关系无从表达；「十二神各居本宫」是天盘落宫位置关系，也未产出；is_fuyin 是 adapter 标记而非 FactKey。已评估改映射 keti=伏吟课（仓内 references/executable/daliuren-daquan.json 的 DLD-E-03 用 ke.style=伏吟课 表达同一条，facts-sample 的 caseB 也确有 keti=伏吟课）：但那是 executable 层另一套事实名（ke.style 不在 fact-vocab.json），而本条 statement 的写法是 adapter 标记；且 dump 中 keti 只见 涉害课/伏吟课/元首课，其余课体是否稳定产出无据。按「原文没写就不写」，不映射。",
+      "missing_fact": "占时支；天盘十二神落宫（本宫）关系；is_fuyin 标记"
+    },
+    {
+      "book": "san-shi/daliuren-daquan",
+      "rule_id": "DALIURENDAQU-011",
+      "decision": "unmapped",
+      "reason_class": "fact-not-emitted",
+      "evidence_from_statement": "十二神各居冲位，adapter 标记 is_fanyin=true",
+      "note": "同 DALIURENDAQU-010：返吟盘式依赖「十二神各居冲位」的天盘落宫与冲位关系，事实层只给 tianjiang 的十二将名，不携带其所临之宫；is_fanyin 亦非 FactKey。旧过程稿对结构完全相同的 LIURENZHIYIN-008（返吟 is_fanyin）判「需要引擎未产出的事实」，本轮结论一致。",
+      "missing_fact": "天盘十二神落宫及其冲位关系；is_fanyin 标记"
+    },
+    {
+      "book": "san-shi/daliuren-daquan",
+      "rule_id": "DALIURENDAQU-012",
+      "decision": "unmapped",
+      "reason_class": "not-a-condition",
+      "evidence_from_statement": "《大全》提要指出，本书所取天乙贵神仍沿俗例，与《星历考原》《协纪辨方书》所倡取法有别，应辨明所用贵人取法",
+      "note": "四库提要对「天乙贵神怎么取」的版本辨析（取法/体例），不是「什么时候用本条」：它说的是昼夜贵人表用哪一家，不是某个盘面的盘面判定条件，也无完整可执行贵人表（caveat 自陈）。机械扫描命中的 tianjiang=贵人 属假命中——词面来自「天乙贵神」四字，原文并未断言本盘有贵人。"
+    },
+    {
+      "book": "san-shi/daliuren-daquan",
+      "rule_id": "DALIURENDAQU-013",
+      "decision": "unmapped",
+      "reason_class": "not-a-condition",
+      "evidence_from_statement": "《大全》提要批评只论课体、只主类神或杂取神煞的偏执，主张避免单执一端",
+      "note": "提要的方法评论（批评専论课体/専主类神/杂取神煞），是全书体例主张，对任何一张盘都成立，也因此不指向任何盘面取值，属通论/体例。caveat 亦写明「不能替代具体课体、类神与神煞的原文条件」。"
+    },
+    {
+      "book": "san-shi/daliuren-daquan",
+      "rule_id": "DALIURENDAQU-014",
+      "decision": "unmapped",
+      "reason_class": "fact-not-emitted",
+      "evidence_from_statement": "官爵课起例：课得岁月年命驿马发用，又天魁、太常入传",
+      "note": "官爵课是合取条件：驿马发用 ∧ 天魁入传 ∧ 太常入传。其中「太常入传」理论上有据可依（引擎 tianjiang 事实 derivedFrom=chuan.<pos>.god，表示该将坐某一传），但驿马与天魁（戌）在事实层无 key，且天将位置不区分具体哪一传。若只映射 tianjiang=太常，等于把「驿马发用＋天魁太常入传」偷换成「太常在某一传」，覆盖面远大于官爵课——属编造，不做。本卡 caveat 亦自陈「当前事实层尚未表达这组驿马及传中条件，因此不自动匹配，保留为待实现的起例」。",
+      "missing_fact": "驿马；天魁（戌）；天将入传位置（且需天魁与太常同时入传）"
+    },
+    {
+      "book": "san-shi/daliuren-daquan",
+      "rule_id": "DALIURENDAQU-015",
+      "decision": "unmapped",
+      "reason_class": "meta-rule",
+      "evidence_from_statement": "想调用毕法赋中的某一法",
+      "note": "典型 pack 调用条件（作业书点名例）：说的是「什么时候去查毕法赋某法」，quote 只写第三十一法/第三十二法的法名，没有给出该法的盘面条件。旧过程稿同判「statement 是 pack 元规则」。"
+    },
+    {
+      "book": "san-shi/daliuren-daquan",
+      "rule_id": "DALIURENDAQU-016",
+      "decision": "unmapped",
+      "reason_class": "meta-rule",
+      "evidence_from_statement": "准备引用本书、声称某卷内容或把规则写入用户答案",
+      "note": "引用/归属/落笔层面的工程约束，与盘面无关。旧过程稿同判「statement 是 pack 元规则」；caveat 也只谈「无证据锚点的候选只能进 validation.md」。"
+    },
+    {
+      "book": "san-shi/daliuren-daquan",
+      "rule_id": "DALIURENDAQU-017",
+      "decision": "unmapped",
+      "reason_class": "fact-not-emitted",
+      "evidence_from_statement": "已确定发用、月令旺相休囚死口径；若判断多少，还必须先按问题确定类神或六亲",
+      "note": "前半是就绪条件（发用已定、旺相休囚死口径已定），后半要求先按问题定类神/六亲。真正卡住判定的是两个未产出事实：月令旺相休囚死（liuren 无 yueling/旺衰 key）与类神/六亲（无 key）。quote 全篇论「数量多少、应期迟速」（旺相气发必欲速、休囚死气皆迟延…），没有可绑定的本 art 取值。旧过程稿同判「需要引擎未产出的事实（月令旺相休囚死/类神）」。",
+      "missing_fact": "月令旺相休囚死；类神/六亲"
+    },
+    {
+      "book": "san-shi/liuren-miben",
+      "rule_id": "LM",
+      "decision": "unmapped",
+      "reason_class": "meta-rule",
+      "evidence_from_statement": "用户要求具体起课、断某一件事或把本书规则套入实际盘",
+      "note": "pack 入口的调用条件（用户请求形态）。quote 是「先鋒門」取占时的体例说明，无盘面适用条件。"
+    },
+    {
+      "book": "san-shi/liuren-miben",
+      "rule_id": "LIURENMIBEN-LM",
+      "decision": "unmapped",
+      "reason_class": "meta-rule",
+      "evidence_from_statement": "查询本书某月将、天将、地支或八卦的传统类象；若用于实际盘，LM-R00 已通过",
+      "note": "主体是「查询本书类象」这一调用条件；后半「LM-R00 已通过」是上游通过条件。本条实质是取象表（quote：神後屬子，其數九，味咸，女虛危三宿三位），表内条目是对月将/干支的类象赋值，不构成本盘的适用条件；且 caveat 明说同一支在不同卷/不同天将下有多重类象，本身就是条件差异表。"
+    },
+    {
+      "book": "san-shi/liuren-miben",
+      "rule_id": "LIURENMIBEN-003",
+      "decision": "unmapped",
+      "reason_class": "meta-rule",
+      "evidence_from_statement": "用户明确查询本书卷三六旬表，或 adapter 已按同一来源 profile 输出对应神煞",
+      "note": "查询触发条件（用户点名查卷三六旬表）＋ adapter 输出条件。且本条的对象是神煞名（子儀神/丁神/天中/閉口/五亡神…），liuren 事实层不产出 shensha，即便按「神煞是否存在」也无法判定。",
+      "missing_fact": "神煞（六旬表诸神煞名）；adapter 的 shensha 输出"
+    },
+    {
+      "book": "san-shi/liuren-miben",
+      "rule_id": "LIURENMIBEN-004",
+      "decision": "unmapped",
+      "reason_class": "meta-rule",
+      "evidence_from_statement": "问题明确为射覆/传统物类推演，且 LM-R00 已通过",
+      "note": "问题域分类条件（是否射覆/物类推演）＋ 上游通过条件，二者都不是盘面谓词。quote 是刚日/柔日取用的取象口诀，caveat 亦限定「中末总弃」只适用卷四射覆，是适用范围声明而非盘面取值。"
+    },
+    {
+      "book": "san-shi/liuren-miben",
+      "rule_id": "LIURENMIBEN-006",
+      "decision": "unmapped",
+      "reason_class": "meta-rule",
+      "evidence_from_statement": "任何规则使用旺、相、死、休、囚",
+      "note": "作业书点名例：这是 pack 级约束——凡涉及旺相死休囚的规则的前置条件，主体不是某张盘。旺相休囚死不是 liuren 的产出 key（本 art 只有 keti/sanchuan/tianjiang/yuejiang/kongwang）；且本书并存四时定理与逐日圆机两说（caveat、conflict-notes），无单一盘面取值可绑。（旧过程稿把它记作「需要引擎未产出的事实」，本轮按作业书口径归 meta-rule：statement 的量化词是「任何规则」。）",
+      "missing_fact": "旺/相/死/休/囚（月令旺衰）"
+    },
+    {
+      "book": "san-shi/liuren-miben",
+      "rule_id": "LIURENMIBEN-007",
+      "decision": "unmapped",
+      "reason_class": "meta-rule",
+      "evidence_from_statement": "已按问题域确定类神，LM-R00 已通过",
+      "note": "作业书点名例：「类神已定＋上游通过」是调用条件，不是盘面取值（类神随问题域而变，本 art 也无类神/六亲 key）。旧过程稿同判「statement 是 pack 元规则」。",
+      "missing_fact": "类神（随问题域映射的取用对象）"
+    },
+    {
+      "book": "san-shi/liuren-miben",
+      "rule_id": "LIURENMIBEN-008",
+      "decision": "unmapped",
+      "reason_class": "meta-rule",
+      "evidence_from_statement": "adapter 或上游解释给出“多吉/多凶”的初步标签",
+      "note": "作业书点名例：「多吉/多凶」是 adapter/上游的汇总标签，不是 FactKey，也没有对应取值域，映射它等于把解释层的结论当盘面事实。",
+      "missing_fact": "多吉/多凶汇总标签（adapter 解释层输出）"
+    },
+    {
+      "book": "san-shi/liuren-miben",
+      "rule_id": "LIURENMIBEN-009",
+      "decision": "unmapped",
+      "reason_class": "fact-not-emitted",
+      "evidence_from_statement": "已有天将、所乘神、旺衰与生克事实",
+      "note": "句式是「已有…事实」的就绪条件，但所列事实里只有天将有 key：所乘神、旺衰、生克在 liuren 事实层都不存在；quote「日鬼加臨辰兩課」还要求「日鬼」与「辰两课」的关系事实，同样未产出。（若只映射 tianjiang=某将，等于只证明「盘上有天将」，与本条断语无关。）",
+      "missing_fact": "所乘神；旺衰；生克；日鬼与辰两课的关系"
+    },
+    {
+      "book": "san-shi/liuren-miben",
+      "rule_id": "LIURENMIBEN-010",
+      "decision": "unmapped",
+      "reason_class": "meta-rule",
+      "evidence_from_statement": "需要用卷十四解释具体问题，LM-R00 已通过",
+      "note": "卷十四调用条件 ＋ 上游通过条件。quote 是「总三十类」的体例提纲（彼此/体用/内外/主客…），是解释框架的类目清单，不构成盘面取值；caveat 亦说同一干支角色随「我去见人/人来见我」变化，不能静态映射。"
+    },
+    {
+      "book": "san-shi/liuren-miben",
+      "rule_id": "LIURENMIBEN-012",
+      "decision": "unmapped",
+      "reason_class": "meta-rule",
+      "evidence_from_statement": "盘面事实完整，准备加入聚散、初建复建或奇格",
+      "note": "工程约束式的就绪条件：「盘面事实完整，准备加入…」。且待加入的概念（聚散、初建/复建、奇格）在事实层没有 key，属尚未实现的衍生事实——本条连「要按哪个盘的哪个取值判定」都还没定义，映射必是编造。旧过程稿亦判「条件过于复合，现有谓词表达不了（聚散初建复建）」。",
+      "missing_fact": "聚散/初建/复建/奇格（未实现的衍生事实）"
+    },
+    {
+      "book": "san-shi/liuren-miben",
+      "rule_id": "LIURENMIBEN-014",
+      "decision": "unmapped",
+      "reason_class": "meta-rule",
+      "evidence_from_statement": "用户询问快慢或应期，LM-R00 已通过",
+      "note": "作业书点名同类：问题域（问快慢/应期）＋ 上游通过条件，属调用条件。旧过程稿同判「statement 是 pack 元规则」。（quote 里的「日上发用/辰上发用/得岁不出岁」等是应期口径，需要日辰与发用位置关系，本 art 未产出，但 statement 自身并未把某个盘面取值当成适用对象。）",
+      "missing_fact": "日辰与发用位置关系（日上/辰上发用）；天乙顺逆、斗罡加卯酉等取期要件"
+    },
+    {
+      "book": "san-shi/liuren-miben",
+      "rule_id": "LIURENMIBEN-015",
+      "decision": "unmapped",
+      "reason_class": "fact-not-emitted",
+      "evidence_from_statement": "adapter 已输出合、鬼、墓、刑冲破害及旺衰",
+      "note": "就绪条件所列事实（合、鬼、墓、刑冲破害、旺衰）在 liuren 事实层全无 key；quote「凡合與德入傳，百事皆吉」还要求「合/德入传」这类三传关系事实，也未产出。tianjiang 只能表示「某将坐某一传」，表达不了「合与德入传」。",
+      "missing_fact": "合入传/德入传；鬼；墓；刑冲破害；旺衰"
+    },
+    {
+      "book": "san-shi/liuren-miben",
+      "rule_id": "LIURENMIBEN-018",
+      "decision": "unmapped",
+      "reason_class": "meta-rule",
+      "evidence_from_statement": "确定性 adapter 已给 `lesson_type` 和生成路径，用户要查本书如何解释该课名",
+      "note": "这是「课名解释查询」的调用条件：adapter 给出 lesson_type（课体类型）与生成路径，用户问本书怎么解释该课名。statement 未给出任何具体课体取值；lesson_type 也不是 FactKey（与 keti 的对应关系本 statement 未写）。且本卡 caveat 明说卷十三与卷十五及通行课名定义互相冲突，任何单一 keti 取值都无法唯一代表本条。"
+    },
+    {
+      "book": "san-shi/liuren-miben",
+      "rule_id": "LIURENMIBEN-019",
+      "decision": "unmapped",
+      "reason_class": "fact-not-emitted",
+      "evidence_from_statement": "adapter 显示巳/亥、干支同出、或生干合支/生支合干的明确结构",
+      "note": "所列结构（巳/亥入传、干支同出、生干合支/生支合干）都要三传所乘之支与干支生合关系：引擎 sanchuan 只在取值里编码位置（初传/中传/末传），不携带所乘地支；生合关系亦无 key。旧过程稿同判「需要引擎未产出的事实（巳亥干支同出/生合结构）」。",
+      "missing_fact": "三传所乘地支；巳/亥入传；干支同出；生干合支/生支合干（生合关系）"
+    },
+    {
+      "book": "san-shi/liuren-miben",
+      "rule_id": "LIURENMIBEN-021",
+      "decision": "unmapped",
+      "reason_class": "fact-not-emitted",
+      "evidence_from_statement": "本段论求财，参看传中是否见财，以及青龙是否居日上；青龙在任意一传不等于龙居日本",
+      "note": "本条条件是天将位置与三传六亲：「青龙居日上」＋「传中见财」。事实层里 tianjiang 的 derivedFrom 恒为 chuan.<pos>.god，即只表示「该将在某一传」——这正是原文明确否定的读法（青龙在任意一传 ≠ 龙居日本），把它当谓词会正好犯本条所禁的错误。「传中财」需要六亲入传，也无 key。本卡 caveat 亦自陈「当前天将事实仅表示入三传，尚未表达日上天将及传中财的条件，因此暂不自动匹配本条」。机械扫描命中的 tianjiang=青龙 属假命中。",
+      "missing_fact": "青龙所临位置（日上）；传中财（六亲入传）"
+    },
+    {
+      "book": "san-shi/liuren-miben",
+      "rule_id": "LIURENMIBEN-023",
+      "decision": "unmapped",
+      "reason_class": "meta-rule",
+      "evidence_from_statement": "用户明确问消息、回复、确认、批复、合同、协议、签字、盖章或其他文书结果，LM-R00 已通过",
+      "note": "问题域分类条件（文书类问事）＋ 上游通过条件，是「该不该引用本条」的调用条件，不指向盘面取值。旧过程稿同判「statement 是 pack 元规则」。"
+    },
+    {
+      "book": "san-shi/liuren-zhiyin",
+      "rule_id": "LIURENZHIYIN-003",
+      "decision": "unmapped",
+      "reason_class": "meta-rule",
+      "evidence_from_statement": "`LR-01` 留下两个或更多同类直接克候选",
+      "note": "与 DALIURENDAQU-004 同构：取传链中间状态（上一步留下几个候选）。候选的直接克关系与同类比较在事实层无 key；caveat 谈的是 lineage 参数隔离，也是流程口径。",
+      "missing_fact": "四课上下直接克候选集合；候选同类性比较依据"
+    },
+    {
+      "book": "san-shi/liuren-zhiyin",
+      "rule_id": "LIURENZHIYIN-004",
+      "decision": "unmapped",
+      "reason_class": "fact-not-emitted",
+      "evidence_from_statement": "四课上下全无直接克；不是八专无克分支",
+      "note": "遥克分支的进入条件，全为盘面结构：需要四课上下克关系与「是否八专无克分支」的盘式判定，两者都未产出。已评估改映射 keti=蒿矢课/弹射课（同书 DALIURENDAQU-006 就是这么映射的）：但本条 statement 未写课体取值，且本条只给出「进入遥克」的前置，未给出蒿矢/弹射的取舍次序（caveat 明确不得颠倒蒿矢与弹射的检查次序）。旧过程稿判「条件过于复合（四课无直接克）」，按 v3 语言复判为事实未产出。",
+      "missing_fact": "四课上下直接克关系；八专无克分支标记"
+    },
+    {
+      "book": "san-shi/liuren-zhiyin",
+      "rule_id": "LIURENZHIYIN-008",
+      "decision": "unmapped",
+      "reason_class": "fact-not-emitted",
+      "evidence_from_statement": "adapter 标记十二神各临冲位，`is_fanyin=true`",
+      "note": "返吟盘式：需要天盘十二神所临之宫及其冲位关系，事实层只有 tianjiang 十二将名（无落宫），is_fanyin 也不是 FactKey。旧过程稿同判「需要引擎未产出的事实（返吟 is_fanyin）」。",
+      "missing_fact": "天盘十二神落宫及其冲位关系；is_fanyin 标记"
+    },
+    {
+      "book": "san-shi/liuren-zhiyin",
+      "rule_id": "LIURENZHIYIN-009",
+      "decision": "unmapped",
+      "reason_class": "fact-not-emitted",
+      "evidence_from_statement": "干支同位，四课去重后为两课，adapter 标记 `is_bazhuan=true`",
+      "note": "八专专式：「干支同位」需要日干与日支的同位关系（liuren 事实层不产出日支），「四课去重后为两课」需要四课结构，is_bazhuan 是 adapter 标记。三者皆不可判定。",
+      "missing_fact": "日支（干支同位）；四课去重结果（两课）；is_bazhuan 标记"
+    },
+    {
+      "book": "san-shi/liuren-zhiyin",
+      "rule_id": "LIURENZHIYIN-012",
+      "decision": "unmapped",
+      "reason_class": "meta-rule",
+      "evidence_from_statement": "用户问题已分类，且不是要求把文化文本当现实保证",
+      "note": "问题域分类条件 ＋ 免责约束（不把文化文本当现实保证），是使用边界，不是盘面取值。quote 里的门类-取象对（占天看雲龍風虎、占婚姻視天後妻財與日辰比和…）在 statement 中并未体现，且那些同样是「按题域分工」的类目，不是本条的适用条件。"
+    },
+    {
+      "book": "san-shi/liuren-zhiyin",
+      "rule_id": "LIURENZHIYIN-013",
+      "decision": "unmapped",
+      "reason_class": "condition-too-vague",
+      "evidence_from_statement": "本注本题下注主张，神煞须结合干支神将刑克参看",
+      "note": "本条是 CTP 题下注的一般读法主张（凡看神煞，须干支神将刑克，其事乃发）：「神煞 + 干支神将刑克」没有范围、没有具体刑克种类、没有可量化判据，属读法待定；且 liuren 事实层不产出神煞。判「not-a-condition」亦可辩（它是注家的体例主张），此处取 condition-too-vague：原文确有「须…乃发」的条件式表述，只是无法操作化——两种口径都不改变 unmapped 的结论，故在台账中并列记录。caveat 亦注明该注作者未定，只是电子注本层文字依据。",
+      "missing_fact": "神煞（本 art 无 key）；刑克种类与范围"
+    },
+    {
+      "book": "san-shi/liuren-zhiyin",
+      "rule_id": "LIURENZHIYIN-014",
+      "decision": "unmapped",
+      "reason_class": "fact-not-emitted",
+      "evidence_from_statement": "三传形成三合局，且明确调用的是张洪注本第三十章现代附录",
+      "note": "「三传形成三合局」需要三传所乘地支及其三合关系：sanchuan 只在取值里编码位置，不携带支，三合关系也无 key，故盘面部分无法判定；后半「明确调用的是…第三十章现代附录」是书内适用范围条件（谁在引用哪一注本），非盘面。caveat 另声明不得用潍坊单例证明三合局普遍应验。",
+      "missing_fact": "三传所乘地支；三合局关系"
+    },
+    {
+      "book": "san-shi/liuren-zhiyin",
+      "rule_id": "LIURENZHIYIN-016",
+      "decision": "unmapped",
+      "reason_class": "fact-not-emitted",
+      "evidence_from_statement": "用户问收款、入账或求财，三传、六亲、旺衰、空墓与天将已由确定性事实层给出",
+      "note": "前半是问题域条件（求财/收款/入账），后半声称事实层已给三传、六亲、旺衰、空墓、天将——但其中六亲、旺衰、墓在 liuren 无 key（空亡有，天将有，但「空墓」的墓没有）。quote 通篇是「三传生日/日生三传/传见妻财父母兄弟子孙官鬼」的六亲与生克关系，本 art 无法表达。旧过程稿亦判同类，并特别注明「不用天将通配凑数」——即不用 tianjiang 通配顶替旺衰空墓，本轮同样拒绝用 tianjiang 或 kongwang 通配凑本条。",
+      "missing_fact": "六亲（三传六亲）；旺衰；墓；三传与日干的生克关系"
+    },
+    {
+      "book": "san-shi/liuren-zhiyin",
+      "rule_id": "LIURENZHIYIN-018",
+      "decision": "unmapped",
+      "reason_class": "fact-not-emitted",
+      "evidence_from_statement": "日干、日支及其五行均由同一确定性课盘给出；问题属于可判成否的具体事件",
+      "note": "判据（quote：辰來克日諸事難成，日往克辰所謀皆遂）要求日干、日支与二者五行生克；liuren 事实层不产出日支，也不产出日干/日支五行，「辰来克日/日往克辰」无从表达；后半「问题属于可判成否的具体事件」是问题域条件。caveat 亦强调不得把「辰来克日」改读成任意一课上神克日，故不能用 sanchuan/tianjiang 近似。",
+      "missing_fact": "日支；日干/日支五行；日干与日支的生克关系"
+    },
+    {
+      "book": "san-shi/liuren-zhiyin",
+      "rule_id": "LIURENZHIYIN-020",
+      "decision": "unmapped",
+      "reason_class": "fact-not-emitted",
+      "evidence_from_statement": "问题类神已由有出处的专项映射确定，三传六亲、旺衰和空亡完整",
+      "note": "与 LIURENZHIYIN-016 同一 quote（174 条）、同一障碍：类神、六亲、旺衰在 liuren 无 key；空亡虽有 kongwang 事实，但「空亡完整」不是盘面条件，只按 kongwang 通配（value: \"*\"）等于凑覆盖率——明确不做。故本条整条不映射。",
+      "missing_fact": "类神；六亲；旺衰"
+    }
+  ]
+}

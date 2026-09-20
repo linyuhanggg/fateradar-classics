@@ -1,0 +1,558 @@
+{
+  "art": "qizheng",
+  "generated_by": "T168 mapper",
+  "assignment": {
+    "unmapped_total_at_start": 65,
+    "books": [
+      "xingming/xingming-suyuan",
+      "xingming/guotian-jing",
+      "xingming/xingxue-dacheng"
+    ],
+    "available_facts": [
+      "xingyao",
+      "gongwei",
+      "xiudu",
+      "miaowang"
+    ],
+    "notes": [
+      "本 art 的 31 条 statement 为书的目录篇名（CATALOG_TITLE_RULE_IDS，见 tools/predicate-report.py）且全部落在 xingming-suyuan；按 docs/CLASSICS_STATUS.md §9.1 的既定约定，这 31 条从覆盖率分母剔除、单独计数，判定为 unmapped/not-a-condition，未做任何映射。",
+      "剩余 34 条逐条读 statement 后，没有任何一条以 xingyao/gongwei/xiudu/miaowang 的具体取值为其主体：其中 30 条是起例/体例/通论/行限取法（not-a-condition），4 条的主体是引擎未产出的实体或状态（fact-not-emitted），缺的事实逐条写在 missing_fact。",
+      "结论：本 art 本轮 mapped = 0，三条 rules.yaml 的 applicable_to 一律保持 []。覆盖率数字未变化（24.4% → 24.4%，11 条带谓词）。未使用 value: \"*\" 凑数，未新增/改动任何 FactKey，未改 statement/quote/anchor/verified/caveats/kind/rule_id。",
+      "反复权衡过两条候选映射（GUOTIANJING-005 映射 xiudu、XXDC-R001 映射 gongwei），最终仍判 unmapped，理由见各条 note。"
+    ]
+  },
+  "decisions": [
+    {
+      "book": "xingming/guotian-jing",
+      "rule_id": "GR-01",
+      "decision": "unmapped",
+      "reason_class": "not-a-condition",
+      "evidence_from_statement": "年干起月：甲己起丙寅…；日干起时：甲己起甲子…",
+      "note": "五虎遁／五鼠遁起例表：说的是年干→月支、日干→时干「怎么取」，不是「何时用本条」。引擎事实层无月柱/时柱干支 FactKey（qizheng 只发 xingyao/gongwei/xiudu/miaowang），且即便有，本条也只是取法而非判定条件。"
+    },
+    {
+      "book": "xingming/guotian-jing",
+      "rule_id": "GUOTIANJING-GR-01",
+      "decision": "unmapped",
+      "reason_class": "not-a-condition",
+      "evidence_from_statement": "12 宫配西法宫名 + 五行 + 中国分野（子土宝瓶、丑土磨羯…）",
+      "note": "十二地支↔西法宫名↔五行↔分野的对应表，是体例表不是判定条件；表里的「宝瓶/人马/双鱼」虽是 gongwei 取值，但它们是这张静态对应表的成分，不是「本盘某宫位与本条相关」的盘面条件——按原文把某个 sign 当成盘面取值时才能映射。"
+    },
+    {
+      "book": "xingming/guotian-jing",
+      "rule_id": "GUOTIANJING-004",
+      "decision": "unmapped",
+      "reason_class": "not-a-condition",
+      "evidence_from_statement": "原书载 24 节气太阳行度 + 太阴行度；**本规则仅作\"古代观测体系\"语义参考**，不作硬判断输入。",
+      "note": "24 节气太阳/太阴行度古值表，原文自己声明「仅作语义参考、不作硬判断输入」，且古值受岁差影响须工具重算，故无盘面适用条件。statement 里唯一 ≥2 字的词表 token 是「太阳」（xingyao 取值），但它是「太阳行度」这个度量表的表头，不是本条的判定对象，映射 xingyao=太阳 会是假命中。"
+    },
+    {
+      "book": "xingming/guotian-jing",
+      "rule_id": "GUOTIANJING-005",
+      "decision": "unmapped",
+      "reason_class": "not-a-condition",
+      "evidence_from_statement": "依出生时刻 + 太阳所躔之宿度 + 节气，按度推宫定命。",
+      "note": "这是「按度推宫定命」的定命起例（用出生时刻 + 太阳所躔宿度 + 节气反推命宫），属于取法/体例，不是盘面适用条件。曾是本轮唯一认真考虑映射的一条：可写成 xiudu 谓词，但(a)statement 的判据是宿「度」不是宿「名」，引擎只发 xiudu=宿名；(b)gap-report 的 token 复原对本条没有产出任何 xiudu 取值（28 宿全是单字，被 ≥2 字过滤），说明没有任何具体宿名被原文当作主体；(c)把一条通行的定命取法绑到某一个 xingyao/xiudu 取值上会改变其适用范围。故留 []。"
+    },
+    {
+      "book": "xingming/guotian-jing",
+      "rule_id": "GUOTIANJING-006",
+      "decision": "unmapped",
+      "reason_class": "not-a-condition",
+      "evidence_from_statement": "大限按宫流转，每宫年数依洞微百六限分配；年分诀 / 行度诀辅助计算。",
+      "note": "行限起例/分年表（大限沿宫流转、每宫年数分配），是算法与取法，不是盘面条件；见下 GR-03/GUOTIANJING-031 同族。"
+    },
+    {
+      "book": "xingming/guotian-jing",
+      "rule_id": "GUOTIANJING-007",
+      "decision": "unmapped",
+      "reason_class": "not-a-condition",
+      "evidence_from_statement": "童限自婴幼期起按古歌分配各宫；现代仅作语义层。",
+      "note": "童限分配古歌，属行限起例表；原文自注「现代仅作语义层」，本命盘面事实不支持。"
+    },
+    {
+      "book": "xingming/guotian-jing",
+      "rule_id": "GR-02",
+      "decision": "unmapped",
+      "reason_class": "not-a-condition",
+      "evidence_from_statement": "十天干各化曜（甲化木、丙化火……）用于神煞起例。",
+      "note": "天干化曜起例（甲化木/丙化火…），是神煞的「怎么起」，不是神煞的「何时断」，属取法/体例。"
+    },
+    {
+      "book": "xingming/guotian-jing",
+      "rule_id": "GUOTIANJING-GR-02",
+      "decision": "unmapped",
+      "reason_class": "fact-not-emitted",
+      "evidence_from_statement": "天禄主享禄，天暗主暗昧；一吉一凶相对。",
+      "note": "是一条判定（天禄→享禄、天暗→暗昧），但主体「天禄/天暗」是果老系虚星，不在 xingyao 词表（太阳/太阴/水星/金星/火星/木星/土星/罗睺/计都/月孛/紫气）内，引擎不产出，映射会失真。",
+      "missing_fact": "神煞/虚星 FactKey（天禄、天暗、天刑、天印…），xingming 系统未产出"
+    },
+    {
+      "book": "xingming/guotian-jing",
+      "rule_id": "GUOTIANJING-011",
+      "decision": "unmapped",
+      "reason_class": "fact-not-emitted",
+      "evidence_from_statement": "天刑（刑伤）/ 天印（官印）/ 天囚（拘禁）/ 天权（权柄）四星组合。",
+      "note": "主体是四个具体虚星及其断语，四星皆无 FactKey，无法把「本盘与此条相关」落在任何盘面取值上。",
+      "missing_fact": "天刑/天印/天囚/天权（神煞层 FactKey 缺失）"
+    },
+    {
+      "book": "xingming/guotian-jing",
+      "rule_id": "GUOTIANJING-012",
+      "decision": "unmapped",
+      "reason_class": "fact-not-emitted",
+      "evidence_from_statement": "科名 / 科甲 / 文星 / 魁星 / 官星 / 印星 / 催官 / 禄神 / 喜神 / 爵星 共 10 星，主功名利禄。",
+      "note": "10 星虚星清单 + 功名利禄断语；星名无 FactKey。注意「官星/印星」是果老虚星名，与八字的 shishen 正官/正印不是同一体系，不可跨系统借用。",
+      "missing_fact": "科名/科甲/文星/魁星/官星/印星/催官/禄神/喜神/爵星（神煞层 FactKey 缺失）"
+    },
+    {
+      "book": "xingming/guotian-jing",
+      "rule_id": "GUOTIANJING-013",
+      "decision": "unmapped",
+      "reason_class": "fact-not-emitted",
+      "evidence_from_statement": "天经 / 地纬 / 天马 / 地驿 / 卦气 / 三元禄 / 职元 / 局主 共 8 星，构成命盘第二层主星。",
+      "note": "第二层主星 8 星清单，星名无 FactKey；原文只说它们构成第二层主星，没有可绑定到 xingyao/gongwei/xiudu/miaowang 的取值。",
+      "missing_fact": "天经/地纬/天马/地驿/卦气/三元禄/职元/局主（神煞层 FactKey 缺失）"
+    },
+    {
+      "book": "xingming/guotian-jing",
+      "rule_id": "GUOTIANJING-014",
+      "decision": "unmapped",
+      "reason_class": "fact-not-emitted",
+      "evidence_from_statement": "斗标 / 注受 / 天乙 / 玉堂 / 文昌 / 天厨 / 岁殿 / 岁驾 共 8 星，主贵人扶持。",
+      "note": "贵人系 8 虚星清单，星名无 FactKey（「天乙/文昌」在果老系是虚星名，不是紫微或八字的同名 fact）。",
+      "missing_fact": "斗标/注受/天乙/玉堂/文昌/天厨/岁殿/岁驾（神煞层 FactKey 缺失）"
+    },
+    {
+      "book": "xingming/guotian-jing",
+      "rule_id": "GUOTIANJING-015",
+      "decision": "unmapped",
+      "reason_class": "fact-not-emitted",
+      "evidence_from_statement": "阳刃 / 唐符 / 国印 / 天雄 / 地雌 / 年符 / 月符 / 大耗小耗 / 天耗地耗 共 9 星；阳刃 + 唐符 + 国印为权煞代表。",
+      "note": "权煞系 9 虚星清单（含原文点名的权煞代表组合）。星名无 FactKey，无法表达「阳刃+唐符+国印」这一组合条件。",
+      "missing_fact": "阳刃/唐符/国印/天雄/地雌/年符/月符/大耗/小耗/天耗/地耗（神煞层 FactKey 缺失）"
+    },
+    {
+      "book": "xingming/guotian-jing",
+      "rule_id": "GUOTIANJING-016",
+      "decision": "unmapped",
+      "reason_class": "fact-not-emitted",
+      "evidence_from_statement": "月廉 / 月煞 / 值难 / 的杀 / 咸池 / 大煞 共 6 星；多与\"色 / 难 / 杀\"相关。",
+      "note": "6 煞清单，煞名无 FactKey。",
+      "missing_fact": "月廉/月煞/值难/的杀/咸池/大煞（神煞层 FactKey 缺失）"
+    },
+    {
+      "book": "xingming/guotian-jing",
+      "rule_id": "GUOTIANJING-017",
+      "decision": "unmapped",
+      "reason_class": "fact-not-emitted",
+      "evidence_from_statement": "空亡 / 孤虚 / 孤辰 / 寡宿 共 4 煞。",
+      "note": "4 煞清单。曾考虑只映射「空亡」（kongwang 有词表：十二支），但(a)kongwang 不在 qizheng 引擎 emit 的 key 集合内（ART_EMIT_KEYS[qizheng] 无 kongwang），(b)果老系「空亡」是旬空/虚星语义，(c)只映射 4 项中的 1 项会与本条「四种煞并举」的适用范围不符。故整条留 []。",
+      "missing_fact": "孤虚/孤辰/寡宿（神煞层 FactKey 缺失）；果老系空亡（qizheng 引擎未产出 kongwang）"
+    },
+    {
+      "book": "xingming/guotian-jing",
+      "rule_id": "GUOTIANJING-018",
+      "decision": "unmapped",
+      "reason_class": "fact-not-emitted",
+      "evidence_from_statement": "三刑 / 六害 / 劫杀 / 亡神 / 天罗（戌亥）/ 地网（辰巳）共 6 煞群…",
+      "note": "6 煞群清单。statement 里的「戌亥/辰巳」是地支，不是 gongwei 的 12 位名（白羊…双鱼），也不是 xingming 因果关系的 scope.palace 取值，不能当宫位条件用。",
+      "missing_fact": "三刑/六害/劫杀/亡神/天罗/地网（神煞层 FactKey 缺失）"
+    },
+    {
+      "book": "xingming/guotian-jing",
+      "rule_id": "GUOTIANJING-019",
+      "decision": "unmapped",
+      "reason_class": "not-a-condition",
+      "evidence_from_statement": "五行长生例 + 天干化曜星例 + 天干吉凶星例；用于推干合长生 + 化曜。",
+      "note": "三个起例表（五行长生/天干化曜/天干吉凶星）及其用途，是「怎么推」的取法与体例，无盘面适用条件。"
+    },
+    {
+      "book": "xingming/guotian-jing",
+      "rule_id": "GUOTIANJING-020",
+      "decision": "unmapped",
+      "reason_class": "not-a-condition",
+      "evidence_from_statement": "五行配四时；春木旺 / 夏火旺 / 秋金旺 / 冬水旺 / 四季土旺；旺相休囚死五态。",
+      "note": "五行配四时 + 旺相休囚死五态的通论/体例；statement 里的「木/火/金/水/土」是五行名（yongshen 词表）不是 qizheng 盘面事实，旺相休囚死五态也无对应 FactKey（miaowang 只有入庙得地/落陷失地/平宫三种，且语义不是五行旺衰）。"
+    },
+    {
+      "book": "xingming/guotian-jing",
+      "rule_id": "GR-03",
+      "decision": "unmapped",
+      "reason_class": "not-a-condition",
+      "evidence_from_statement": "定行限度法 + 逐年行限度法；大限沿宫流转，依洞微百六限分配年数。",
+      "note": "行限「度法」（定行限度法/逐年行限度法）是起例，属取法/体例。"
+    },
+    {
+      "book": "xingming/guotian-jing",
+      "rule_id": "GUOTIANJING-GR-03",
+      "decision": "unmapped",
+      "reason_class": "not-a-condition",
+      "evidence_from_statement": "钦天监校正授时过宫度图 + 逐年行度图 + 命度图；古书中具体图缺。",
+      "note": "原文自述「缺图」，是书志/版本说明与工具属性描述，既无盘面条件也无判定内容。"
+    },
+    {
+      "book": "xingming/guotian-jing",
+      "rule_id": "GR-04",
+      "decision": "unmapped",
+      "reason_class": "not-a-condition",
+      "evidence_from_statement": "先天心法以二十八宿为经，以十一曜为用；尊莫尊于日月，美莫美于官福；贵贱论煞，贫富论财…",
+      "note": "先天心法总纲（以二十八宿为经、十一曜为用；贵贱论煞、贫富论财、寿夭观元气），是体例/纲领性通论，无可判定的单一盘面条件。"
+    },
+    {
+      "book": "xingming/guotian-jing",
+      "rule_id": "GUOTIANJING-GR-04",
+      "decision": "unmapped",
+      "reason_class": "not-a-condition",
+      "evidence_from_statement": "后天口诀以斗杓 / 卦气 / 唐符国印 / 天雄地雌为限度核心；常人命中皆有天雄地雌空亡的煞天地二耗。",
+      "note": "后天口诀纲领（限度核心=斗杓/卦气/唐符国印/天雄地雌），是体例性通论；所提星名同样无 FactKey，但本条的性质是总纲而非某盘判定。"
+    },
+    {
+      "book": "xingming/guotian-jing",
+      "rule_id": "GUOTIANJING-026",
+      "decision": "unmapped",
+      "reason_class": "not-a-condition",
+      "evidence_from_statement": "人生贤愚寿夭非今日为然；气禀之始终各异；以宫主 / 度主 / 身主三主论命；过犹不及泥在太拘。",
+      "note": "禀赋分金论的通论：先说贤愚寿夭本无定论，再给「以三主论命、不可太拘」的方法论告诫，属体例/通论；「宫主/度主/身主」是派生主星身份而非盘面取值。"
+    },
+    {
+      "book": "xingming/guotian-jing",
+      "rule_id": "GR-05",
+      "decision": "unmapped",
+      "reason_class": "not-a-condition",
+      "evidence_from_statement": "观星二十四秘法之看三主：身主 / 宫主 / 度主皆要得局，不泄气，不迟留伏逆于恶地，喜朝元升殿垣局。",
+      "note": "「看三主」的观星总纲（皆要得局、不泄气、不迟留伏逆、喜朝元升殿垣局），是体例性判读原则；「得局/朝元/升殿/垣局」无 FactKey，且本条讲的是读盘方法。"
+    },
+    {
+      "book": "xingming/guotian-jing",
+      "rule_id": "GUOTIANJING-GR-05",
+      "decision": "unmapped",
+      "reason_class": "fact-not-emitted",
+      "evidence_from_statement": "宫强而度弱者不美，度高而宫衰者不善，必须宫度二主皆强为尽美；身主尤为切要。",
+      "note": "这是一条判定（宫主强／度主弱的优劣），主体是「宫主/度主/身主」三种派生主星的强弱——引擎只发 xingyao(十一曜)、gongwei(宫位名)、xiudu(宿名)、miaowang(庙旺)，不产出「某宫之主」「某度之主」的身份与强弱，所以无法表达「宫度二主皆强」。",
+      "missing_fact": "宫主/度主/身主的身份与强弱（由宫/宿五行派生，qizheng 引擎未产出；亦无强弱 FactKey）"
+    },
+    {
+      "book": "xingming/guotian-jing",
+      "rule_id": "GUOTIANJING-031",
+      "decision": "unmapped",
+      "reason_class": "not-a-condition",
+      "evidence_from_statement": "百六限依命、相貌、福德、官禄…次序，年数分别为 15、10、11、15、8、7、11、4.5、4.5、4.5、5、5，合计 100 年 6 个月…",
+      "note": "百六限的宫序与逐年数表（合计 100 年 6 个月），是行限起例表，不是盘面适用条件；宫名（命/相貌/福德/官禄…）是限宫次序而非 gongwei 的 12 位名。"
+    },
+    {
+      "book": "xingming/xingming-suyuan",
+      "rule_id": "XR-01",
+      "decision": "unmapped",
+      "reason_class": "not-a-condition",
+      "evidence_from_statement": "01 五曜连珠",
+      "note": "statement 是卷二目录篇名（CATALOG_TITLE_RULE_IDS 成员，见 tools/predicate-report.py）。原文无判定条件，按 docs/CLASSICS_STATUS.md §9.1 既定约定不映射、从覆盖率分母剔除单独计数。"
+    },
+    {
+      "book": "xingming/xingming-suyuan",
+      "rule_id": "XINGMINGSUYU-XR-01",
+      "decision": "unmapped",
+      "reason_class": "not-a-condition",
+      "evidence_from_statement": "02 二星合璧",
+      "note": "目录篇名（CATALOG_TITLE_RULE_IDS）。不映射；同 XR-01 约定。"
+    },
+    {
+      "book": "xingming/xingming-suyuan",
+      "rule_id": "XINGMINGSUYU-004",
+      "decision": "unmapped",
+      "reason_class": "not-a-condition",
+      "evidence_from_statement": "03 朝拱辅夹",
+      "note": "目录篇名（CATALOG_TITLE_RULE_IDS）。不映射；同 XR-01 约定。"
+    },
+    {
+      "book": "xingming/xingming-suyuan",
+      "rule_id": "XINGMINGSUYU-005",
+      "decision": "unmapped",
+      "reason_class": "not-a-condition",
+      "evidence_from_statement": "04 经纬夹拱",
+      "note": "目录篇名（CATALOG_TITLE_RULE_IDS）。不映射；同 XR-01 约定。"
+    },
+    {
+      "book": "xingming/xingming-suyuan",
+      "rule_id": "XINGMINGSUYU-006",
+      "decision": "unmapped",
+      "reason_class": "not-a-condition",
+      "evidence_from_statement": "05 卦禄斗并",
+      "note": "目录篇名（CATALOG_TITLE_RULE_IDS）。不映射；同 XR-01 约定。"
+    },
+    {
+      "book": "xingming/xingming-suyuan",
+      "rule_id": "XINGMINGSUYU-007",
+      "decision": "unmapped",
+      "reason_class": "not-a-condition",
+      "evidence_from_statement": "06 阴注阳受",
+      "note": "目录篇名（CATALOG_TITLE_RULE_IDS）。statement 无判定条件；quote 内的羊刃/咸池（对 XINGMINGSUYU-XR-04、GUOTIANJING-015 同类）均为无 FactKey 的虚星名，即便按 quote 也不可映射，且不得以 quote 改 statement。不映射。"
+    },
+    {
+      "book": "xingming/xingming-suyuan",
+      "rule_id": "XINGMINGSUYU-008",
+      "decision": "unmapped",
+      "reason_class": "not-a-condition",
+      "evidence_from_statement": "07 七政并旺",
+      "note": "目录篇名（CATALOG_TITLE_RULE_IDS 未收录，但同为篇名）。quote 给出的判定内容为「日月五星各得其所…日午月未水居巳申金居辰酉火居夘戌木居寅亥土居子丑」，即七政各得其位则富贵的位置通则，且所列位置用的是地支（午/未/巳申/辰酉…）而不是 gongwei 的 12 位名（白羊…双鱼），与 xingming 事实的 scope.palace 不同构；keyword「五行/方位」类条件也无 FactKey。故不映射（与 XR-03「五星四时令旺」不同：后者 statement 直接以五星为对象，本条以「并旺」这一星位格局为对象）。"
+    },
+    {
+      "book": "xingming/xingming-suyuan",
+      "rule_id": "XINGMINGSUYU-009",
+      "decision": "unmapped",
+      "reason_class": "not-a-condition",
+      "evidence_from_statement": "08 四主咸屯",
+      "note": "目录篇名（CATALOG_TITLE_RULE_IDS）。不映射；同 XR-01 约定。"
+    },
+    {
+      "book": "xingming/xingming-suyuan",
+      "rule_id": "XINGMINGSUYU-010",
+      "decision": "unmapped",
+      "reason_class": "not-a-condition",
+      "evidence_from_statement": "09 拱夹不起",
+      "note": "目录篇名（CATALOG_TITLE_RULE_IDS）。不映射；同 XR-01 约定。"
+    },
+    {
+      "book": "xingming/xingming-suyuan",
+      "rule_id": "XINGMINGSUYU-XR-02",
+      "decision": "unmapped",
+      "reason_class": "not-a-condition",
+      "evidence_from_statement": "02 三主互参",
+      "note": "目录篇名（CATALOG_TITLE_RULE_IDS）。不映射；同 XR-01 约定。"
+    },
+    {
+      "book": "xingming/xingming-suyuan",
+      "rule_id": "XINGMINGSUYU-015",
+      "decision": "unmapped",
+      "reason_class": "not-a-condition",
+      "evidence_from_statement": "05 一星满用",
+      "note": "目录篇名（CATALOG_TITLE_RULE_IDS）。不映射；同 XR-01 约定。"
+    },
+    {
+      "book": "xingming/xingming-suyuan",
+      "rule_id": "XINGMINGSUYU-016",
+      "decision": "unmapped",
+      "reason_class": "not-a-condition",
+      "evidence_from_statement": "06 恩主随身",
+      "note": "目录篇名（CATALOG_TITLE_RULE_IDS）。不映射；同 XR-01 约定。"
+    },
+    {
+      "book": "xingming/xingming-suyuan",
+      "rule_id": "XINGMINGSUYU-017",
+      "decision": "unmapped",
+      "reason_class": "not-a-condition",
+      "evidence_from_statement": "07 官魁化曜",
+      "note": "目录篇名（CATALOG_TITLE_RULE_IDS 未收录，但同为篇名）。quote「〔炁月〕 乙〔水日〕 丙〔羅羅〕 丁〔計計〕 戊〔孛火〕」是十天干化曜的起例对照表，讲的是「怎么取化曜」，不是「何时引用本条」；且化曜所得的虚星名无 FactKey。不映射。"
+    },
+    {
+      "book": "xingming/xingming-suyuan",
+      "rule_id": "XINGMINGSUYU-XR-03",
+      "decision": "unmapped",
+      "reason_class": "not-a-condition",
+      "evidence_from_statement": "02 三冬之木遇水寒",
+      "note": "目录篇名（CATALOG_TITLE_RULE_IDS）。不映射；同 XR-01 约定。（其姊妹条目 XINGMINGSUYU-021「04 寒月喜阳」等已在别轮映射，本条本身 statement 只是篇名。）"
+    },
+    {
+      "book": "xingming/xingming-suyuan",
+      "rule_id": "XINGMINGSUYU-022",
+      "decision": "unmapped",
+      "reason_class": "not-a-condition",
+      "evidence_from_statement": "05 时令决疑",
+      "note": "目录篇名（CATALOG_TITLE_RULE_IDS）。不映射；同 XR-01 约定。"
+    },
+    {
+      "book": "xingming/xingming-suyuan",
+      "rule_id": "XR-04",
+      "decision": "unmapped",
+      "reason_class": "not-a-condition",
+      "evidence_from_statement": "01 斗杓卦气唐符国印",
+      "note": "目录篇名（CATALOG_TITLE_RULE_IDS）。不映射；同 XR-01 约定。"
+    },
+    {
+      "book": "xingming/xingming-suyuan",
+      "rule_id": "XINGMINGSUYU-XR-04",
+      "decision": "unmapped",
+      "reason_class": "not-a-condition",
+      "evidence_from_statement": "02 天雄阳刃在命",
+      "note": "目录篇名（CATALOG_TITLE_RULE_IDS）。篇名里的天雄/阳刃是无 FactKey 的虚星名，且 statement 只有篇名、无判定条件。不映射。"
+    },
+    {
+      "book": "xingming/xingming-suyuan",
+      "rule_id": "XINGMINGSUYU-026",
+      "decision": "unmapped",
+      "reason_class": "not-a-condition",
+      "evidence_from_statement": "04 天耗地耗",
+      "note": "目录篇名（CATALOG_TITLE_RULE_IDS）。不映射；同 XR-01 约定。"
+    },
+    {
+      "book": "xingming/xingming-suyuan",
+      "rule_id": "XINGMINGSUYU-028",
+      "decision": "unmapped",
+      "reason_class": "not-a-condition",
+      "evidence_from_statement": "06 太岁填实",
+      "note": "目录篇名（CATALOG_TITLE_RULE_IDS）。不映射；同 XR-01 约定。"
+    },
+    {
+      "book": "xingming/xingming-suyuan",
+      "rule_id": "XR-05",
+      "decision": "unmapped",
+      "reason_class": "not-a-condition",
+      "evidence_from_statement": "01 量天尺定坐宫",
+      "note": "目录篇名（CATALOG_TITLE_RULE_IDS）。不映射；同 XR-01 约定。"
+    },
+    {
+      "book": "xingming/xingming-suyuan",
+      "rule_id": "XINGMINGSUYU-XR-05",
+      "decision": "unmapped",
+      "reason_class": "not-a-condition",
+      "evidence_from_statement": "02 洞微大限行限",
+      "note": "目录篇名（CATALOG_TITLE_RULE_IDS）。不映射；同 XR-01 约定。"
+    },
+    {
+      "book": "xingming/xingming-suyuan",
+      "rule_id": "XINGMINGSUYU-031",
+      "decision": "unmapped",
+      "reason_class": "not-a-condition",
+      "evidence_from_statement": "03 行限交宫过度",
+      "note": "目录篇名（CATALOG_TITLE_RULE_IDS）。不映射；同 XR-01 约定。"
+    },
+    {
+      "book": "xingming/xingming-suyuan",
+      "rule_id": "XINGMINGSUYU-033",
+      "decision": "unmapped",
+      "reason_class": "not-a-condition",
+      "evidence_from_statement": "05 限主病再延",
+      "note": "目录篇名（CATALOG_TITLE_RULE_IDS）。不映射；同 XR-01 约定。"
+    },
+    {
+      "book": "xingming/xingming-suyuan",
+      "rule_id": "XINGMINGSUYU-034",
+      "decision": "unmapped",
+      "reason_class": "not-a-condition",
+      "evidence_from_statement": "06 衝刑壓逼",
+      "note": "目录篇名（CATALOG_TITLE_RULE_IDS）。不映射；同 XR-01 约定。"
+    },
+    {
+      "book": "xingming/xingming-suyuan",
+      "rule_id": "XR-06",
+      "decision": "unmapped",
+      "reason_class": "not-a-condition",
+      "evidence_from_statement": "01 妇命以财福为重",
+      "note": "目录篇名（CATALOG_TITLE_RULE_IDS）。不映射；同 XR-01 约定。"
+    },
+    {
+      "book": "xingming/xingming-suyuan",
+      "rule_id": "XINGMINGSUYU-XR-06",
+      "decision": "unmapped",
+      "reason_class": "not-a-condition",
+      "evidence_from_statement": "02 妇人陶到木躔",
+      "note": "目录篇名（CATALOG_TITLE_RULE_IDS）。不映射；同 XR-01 约定。"
+    },
+    {
+      "book": "xingming/xingming-suyuan",
+      "rule_id": "XINGMINGSUYU-037",
+      "decision": "unmapped",
+      "reason_class": "not-a-condition",
+      "evidence_from_statement": "03 五星先天 14 等口诀",
+      "note": "目录篇名（CATALOG_TITLE_RULE_IDS）。不映射；同 XR-01 约定。"
+    },
+    {
+      "book": "xingming/xingming-suyuan",
+      "rule_id": "XINGMINGSUYU-038",
+      "decision": "unmapped",
+      "reason_class": "not-a-condition",
+      "evidence_from_statement": "04 妇人产亡",
+      "note": "目录篇名（CATALOG_TITLE_RULE_IDS）。不映射；同 XR-01 约定。"
+    },
+    {
+      "book": "xingming/xingming-suyuan",
+      "rule_id": "XINGMINGSUYU-039",
+      "decision": "unmapped",
+      "reason_class": "not-a-condition",
+      "evidence_from_statement": "05 鼓盆之嘆",
+      "note": "目录篇名（CATALOG_TITLE_RULE_IDS）。不映射；同 XR-01 约定。"
+    },
+    {
+      "book": "xingming/xingming-suyuan",
+      "rule_id": "XR-07",
+      "decision": "unmapped",
+      "reason_class": "not-a-condition",
+      "evidence_from_statement": "01 化气从天官、正气从果老",
+      "note": "目录篇名（CATALOG_TITLE_RULE_IDS）。不映射；同 XR-01 约定。"
+    },
+    {
+      "book": "xingming/xingming-suyuan",
+      "rule_id": "XINGMINGSUYU-XR-07",
+      "decision": "unmapped",
+      "reason_class": "not-a-condition",
+      "evidence_from_statement": "02 与果老星宗互参原则",
+      "note": "目录篇名（CATALOG_TITLE_RULE_IDS）。不映射；同 XR-01 约定。"
+    },
+    {
+      "book": "xingming/xingming-suyuan",
+      "rule_id": "XINGMINGSUYU-047",
+      "decision": "unmapped",
+      "reason_class": "not-a-condition",
+      "evidence_from_statement": "04 妇人产亡 / 三嫁 / 师尼",
+      "note": "目录篇名（CATALOG_TITLE_RULE_IDS）。不映射；同 XR-01 约定。"
+    },
+    {
+      "book": "xingming/xingming-suyuan",
+      "rule_id": "XINGMINGSUYU-048",
+      "decision": "unmapped",
+      "reason_class": "not-a-condition",
+      "evidence_from_statement": "05 共命贫富寿夭不同",
+      "note": "目录篇名（CATALOG_TITLE_RULE_IDS）。不映射；同 XR-01 约定。"
+    },
+    {
+      "book": "xingming/xingming-suyuan",
+      "rule_id": "XR-08",
+      "decision": "unmapped",
+      "reason_class": "not-a-condition",
+      "evidence_from_statement": "01 卷二·后天口诀全段",
+      "note": "整卷/整段收录标记（「卷二·后天口诀全段」），是卷帙与收录范围说明，不是判定条件；所引原文也只是师徒问答的开场。无盘面条件可复原。"
+    },
+    {
+      "book": "xingming/xingming-suyuan",
+      "rule_id": "XINGMINGSUYU-XR-08",
+      "decision": "unmapped",
+      "reason_class": "not-a-condition",
+      "evidence_from_statement": "02 卷四前篇寿夭案例",
+      "note": "整篇案例收录标记（「卷四前篇寿夭案例」），是收录范围说明；quote 是作者自述访求诀命之士、把可取条目续附于后，即凡例/编纂说明，无盘面条件。"
+    },
+    {
+      "book": "xingming/xingxue-dacheng",
+      "rule_id": "XXDC-R001",
+      "decision": "unmapped",
+      "reason_class": "not-a-condition",
+      "evidence_from_statement": "先定十二宫，再分天盘、地盘、人盘；人盘重四柱填实与空虚。",
+      "note": "排盘体例（先定十二宫，再分天地人三盘；人盘重四柱填实与空虚），是「怎么排」的层级约定。曾考虑映射 gongwei:\"*\"（姊妹条 XXDC-M01 的做法），但(a)本批硬禁止用 value:\"*\" 凑覆盖率，原文并无「任意宫位皆适用」的表述，(b)本条真正讲的是天盘/地盘/人盘分层与四柱填实这类引擎未产出的概念。故留 []。"
+    },
+    {
+      "book": "xingming/xingxue-dacheng",
+      "rule_id": "XXDC-R005",
+      "decision": "unmapped",
+      "reason_class": "fact-not-emitted",
+      "evidence_from_statement": "先以身命二主落宫，按空实、强弱、夹拱、冲驀判人品出处高下，再看福禄恩官田财。",
+      "note": "判读次序条目，主体是「身命二主」及其空实/强弱/夹拱/冲驀，「福禄恩官田财」是果老六主。这些主星身份与空实/强弱/夹拱类判定引擎都不产出（qizheng 只发 xingyao/gongwei/xiudu/miaowang），无法把「本盘与此条相关」落到任何盘面取值上。",
+      "missing_fact": "身主/命主（及福禄恩官田财六主）身份 + 空实/强弱/夹拱/冲驀 判定（qizheng 引擎未产出）"
+    },
+    {
+      "book": "xingming/xingxue-dacheng",
+      "rule_id": "XXDC-R006",
+      "decision": "unmapped",
+      "reason_class": "not-a-condition",
+      "evidence_from_statement": "命为主、财为养命源、妻妾对冲命宫、疾厄迁移官禄福德相貌各有次序。",
+      "note": "十二宫立名次序与各宫取义的通论/体例（命为主、财为养命之源、妻妾与命宫对冲…），讲的是宫序与宫义，不是某宫某星成立的盘面条件；所提宫位名也不是 gongwei 的 12 位名（白羊…双鱼）。"
+    },
+    {
+      "book": "xingming/xingxue-dacheng",
+      "rule_id": "XXDC-R008",
+      "decision": "unmapped",
+      "reason_class": "fact-not-emitted",
+      "evidence_from_statement": "迟、留、伏、逆分别影响有用星和煞星力量；不可用静态星度替代动态状态。",
+      "note": "本条判定对象是十一曜的「迟/留/伏/逆」动态运行状态及其对有用星/煞星力量的影响。引擎无该状态的 FactKey（xingyao 只有星名，miaowang 只有入庙得地/落陷失地/平宫，都不是动态状态）；注意 quote 与 statement 不同（quote 讲昼夜看命度主/身度主），是以 quote 无法作为映射依据。",
+      "missing_fact": "十一曜运行状态 迟/留/伏/逆（qizheng 引擎未产出）"
+    }
+  ]
+}

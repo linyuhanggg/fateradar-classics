@@ -1,0 +1,1210 @@
+{
+  "art": "bazi",
+  "generated_by": "T168 mapper",
+  "scope": "bazi/* 六书（sanming-tonghui, ditiansui-chanwei, yuanhai-ziping, qiongtong-baojian, ziping-zhenquan, mingli-yueyan）；不含 luming-nayin/*（另一 agent 负责）",
+  "decisions": [
+    {
+      "book": "bazi/ditiansui-chanwei",
+      "rule_id": "DR-01",
+      "decision": "unmapped",
+      "applicable_to_yaml": "[]",
+      "evidence_from_statement": "干为天元，支为地元，支中所藏为人元；论命三元一统，以日干为我，旁参支藏。",
+      "note": "三元体例／通论。作业书点名此条为 not-a-condition。原文没有『何时可用本条』的盘面取值。",
+      "reason_class": "not-a-condition"
+    },
+    {
+      "book": "bazi/ditiansui-chanwei",
+      "rule_id": "DITIANSUICHA-DR-01",
+      "decision": "unmapped",
+      "applicable_to_yaml": "[]",
+      "evidence_from_statement": "五气偏全决定命之吉凶；偏者凶、全者吉，此为根本判断框架。",
+      "note": "作业书点名 not-a-condition 的『五气偏全决定命之吉凶』。且 caveat 自陈『偏全非简单的五行皆见，须看流通』，无盘面适用条件。",
+      "reason_class": "not-a-condition"
+    },
+    {
+      "book": "bazi/ditiansui-chanwei",
+      "rule_id": "DITIANSUICHA-005",
+      "decision": "unmapped",
+      "applicable_to_yaml": "[]",
+      "evidence_from_statement": "理为体，气为用；理气不可偏废。",
+      "note": "作业书点名 not-a-condition 的『理为体，气为用』。纯体例。",
+      "reason_class": "not-a-condition"
+    },
+    {
+      "book": "bazi/ditiansui-chanwei",
+      "rule_id": "DITIANSUICHA-006",
+      "decision": "unmapped",
+      "applicable_to_yaml": "[]",
+      "evidence_from_statement": "干支配合得宜（生克化制各得其用）为命之大纲。",
+      "note": "通论大纲。『配合得宜』非盘面取值。",
+      "reason_class": "not-a-condition"
+    },
+    {
+      "book": "bazi/ditiansui-chanwei",
+      "rule_id": "DITIANSUICHA-007",
+      "decision": "unmapped",
+      "applicable_to_yaml": "[]",
+      "evidence_from_statement": "十干各有性情：甲为参天之木…癸为雨露之水；用法各异。",
+      "note": "作业书点名：十干性情为取象表，NOT mapped。逐干取象属象义，不构成『本条只论某干』的适用范围条件。",
+      "reason_class": "not-a-condition"
+    },
+    {
+      "book": "bazi/ditiansui-chanwei",
+      "rule_id": "DITIANSUICHA-008",
+      "decision": "unmapped",
+      "applicable_to_yaml": "[]",
+      "evidence_from_statement": "十二支各有所藏（本气/中气/余气）与季节属性；刑冲合害需结合所藏与位置精判。",
+      "note": "支藏体例＋取法。原文自陈刑冲合害须『结合所藏与位置精判』，无单值适用条件。",
+      "reason_class": "not-a-condition"
+    },
+    {
+      "book": "bazi/ditiansui-chanwei",
+      "rule_id": "DITIANSUICHA-009",
+      "decision": "unmapped",
+      "applicable_to_yaml": "[]",
+      "evidence_from_statement": "天干为外、地支为内；天干之用须根于地支，地支之力须透于天干。",
+      "note": "干支内外体例。且『透干/根』作业书点名属 fact-not-emitted 的取法类。",
+      "reason_class": "not-a-condition"
+    },
+    {
+      "book": "bazi/ditiansui-chanwei",
+      "rule_id": "DR-02",
+      "decision": "unmapped",
+      "applicable_to_yaml": "[]",
+      "evidence_from_statement": "两气合而成象（如水木相涵），五气聚而成形（金木水火土齐备）；形象成则气势顺…",
+      "note": "气势体例。『两气合象／五气聚形』无对应 FactKey（引擎无五行齐备与否的布尔事实），且属通论。",
+      "reason_class": "not-a-condition"
+    },
+    {
+      "book": "bazi/ditiansui-chanwei",
+      "rule_id": "DITIANSUICHA-DR-02",
+      "decision": "unmapped",
+      "applicable_to_yaml": "[]",
+      "evidence_from_statement": "三合局（亥卯未木局等）成局者气势全；方局（寅卯辰东方等）齐全者气势纯。",
+      "note": "原文只列组合定义，本条的对象是『局成／局破』——引擎只有 yueling/rizhu 等事实，无地支集合与成局判定；作业书把『三合局成局量化』列为 fact-not-emitted。",
+      "reason_class": "fact-not-emitted",
+      "missing_fact": "地支三合局／方局的成局状态（三支是否齐）"
+    },
+    {
+      "book": "bazi/ditiansui-chanwei",
+      "rule_id": "DITIANSUICHA-013",
+      "decision": "unmapped",
+      "applicable_to_yaml": "[]",
+      "evidence_from_statement": "以日主为体，以用神为用；体强者用宜泄、体弱者用宜扶。",
+      "note": "体用总则。『体强／体弱』是判语结论而非盘面取值（rizhu_strength 是量化档位，原文未指定档位）。",
+      "reason_class": "not-a-condition"
+    },
+    {
+      "book": "bazi/ditiansui-chanwei",
+      "rule_id": "DITIANSUICHA-015",
+      "decision": "unmapped",
+      "applicable_to_yaml": "[]",
+      "evidence_from_statement": "月令为提纲，决定旺衰、决定喜忌；用神取法以月令为最重要参考。",
+      "note": "作业书点名 not-a-condition 的『月令为提纲』。原文是通论，未把任一具体月支当成本条对象。",
+      "reason_class": "not-a-condition"
+    },
+    {
+      "book": "bazi/ditiansui-chanwei",
+      "rule_id": "DITIANSUICHA-016",
+      "decision": "unmapped",
+      "applicable_to_yaml": "[]",
+      "evidence_from_statement": "生时为命之归宿；时干时支与日主的关系决定晚年归宿。",
+      "note": "作业书点名 not-a-condition 的『生时为命之归宿』。且时支无独立 FactKey。",
+      "reason_class": "not-a-condition"
+    },
+    {
+      "book": "bazi/ditiansui-chanwei",
+      "rule_id": "DR-03",
+      "decision": "unmapped",
+      "applicable_to_yaml": "[]",
+      "evidence_from_statement": "日主衰旺判断需综合月令得令失令、四柱根气、十干性情、合冲解化；不可以“得令”或“失令”一项独断。",
+      "note": "原文自己声明不能单一条件断（作业书点名此类为 condition-too-vague）。原文明确拒绝仅按得令/失令映射。",
+      "reason_class": "condition-too-vague"
+    },
+    {
+      "book": "bazi/ditiansui-chanwei",
+      "rule_id": "DITIANSUICHA-019",
+      "decision": "unmapped",
+      "applicable_to_yaml": "[]",
+      "evidence_from_statement": "五行有源（生发之神）有流（归宿之神）；流通无阻为贵，停滞为滞，反克为凶。",
+      "note": "作业书点名 not-a-condition 的『五行有源有流』。流通与否无 FactKey。",
+      "reason_class": "not-a-condition"
+    },
+    {
+      "book": "bazi/ditiansui-chanwei",
+      "rule_id": "DITIANSUICHA-020",
+      "decision": "unmapped",
+      "applicable_to_yaml": "[]",
+      "evidence_from_statement": "当二五行相战（如金木相战）时，介入第三方（如水）使战局化为生生即为通关；通关之神得令为吉。",
+      "note": "通关取法。原文未指定是哪两个五行、哪一个月支；把 12 个月支全枚举属凑数（作业书禁止）。",
+      "reason_class": "condition-too-vague"
+    },
+    {
+      "book": "bazi/ditiansui-chanwei",
+      "rule_id": "DITIANSUICHA-022",
+      "decision": "unmapped",
+      "applicable_to_yaml": "[]",
+      "evidence_from_statement": "伤官真者（当令而透）泄秀为贵…伤官见官，需结合身强身弱、合冲化解综合判断，非铁定为祸。",
+      "note": "原文自陈『需结合身强身弱、合冲化解综合判断，非铁定为祸』——作业书点名此类不映射。且『当令而透』是透干/司令判定，引擎未产出。",
+      "reason_class": "condition-too-vague"
+    },
+    {
+      "book": "bazi/ditiansui-chanwei",
+      "rule_id": "DITIANSUICHA-023",
+      "decision": "unmapped",
+      "applicable_to_yaml": "[]",
+      "evidence_from_statement": "命局清者（十神不杂、生克得宜）为贵；浊者（十神混杂、生克失宜）为贱；清中有浊、浊中有清者另议。",
+      "note": "清浊通论；caveat 自陈『“清浊”不能简单看十神种类多寡』。原文亦自留『清中有浊、浊中有清者另议』。",
+      "reason_class": "not-a-condition"
+    },
+    {
+      "book": "bazi/ditiansui-chanwei",
+      "rule_id": "DITIANSUICHA-024",
+      "decision": "unmapped",
+      "applicable_to_yaml": "[]",
+      "evidence_from_statement": "当令而透干、得用之神为真神；不当令、被合冲制伏的为假神。",
+      "note": "真假神之辨须『当令＋透干』两项，二者皆非引擎事实（透干/司令为作业书点名的 fact-not-emitted；‘当令’对月令仍是判语）。无单值可锚。",
+      "reason_class": "condition-too-vague"
+    },
+    {
+      "book": "bazi/ditiansui-chanwei",
+      "rule_id": "DITIANSUICHA-025",
+      "decision": "unmapped",
+      "applicable_to_yaml": "[]",
+      "evidence_from_statement": "干性刚（甲丙戊庚壬）柔（乙丁己辛癸）须相济；过刚则折、过柔则靡。",
+      "note": "刚柔体例。虽按阴阳分两组天干，但『须相济』是通论，原文未把『甲丙戊庚壬日主』当成条文的适用范围（不是‘本条只论阳干’）。",
+      "reason_class": "not-a-condition"
+    },
+    {
+      "book": "bazi/ditiansui-chanwei",
+      "rule_id": "DITIANSUICHA-026",
+      "decision": "unmapped",
+      "applicable_to_yaml": "[]",
+      "evidence_from_statement": "顺者吉、逆者凶为大纲；但顺逆需结合气势：从势顺生为顺、反克成势为反，皆可为格。",
+      "note": "作业书点名『顺逆需结合气势』为 condition-too-vague。原文自陈不能单一条件断。",
+      "reason_class": "condition-too-vague"
+    },
+    {
+      "book": "bazi/ditiansui-chanwei",
+      "rule_id": "DR-04",
+      "decision": "mapped",
+      "applicable_to_yaml": "{any_of: [{key: yueling, value: 亥}, {key: yueling, value: 子}, {key: yueling, value: 丑}, {key: yueling, value: 巳}, {key: yueling, value: 午}, {key: yueling, value: 未}]}",
+      "evidence_from_statement": "冬令日主不可无火（暖调）；夏令日主不可无水（寒调）；寒暖得宜者贵。",
+      "note": "作业书给出的正面范例逐字对应：原文以『冬令／夏令』为适用季节，即月令取亥子丑（冬）与巳午未（夏）。"
+    },
+    {
+      "book": "bazi/ditiansui-chanwei",
+      "rule_id": "DITIANSUICHA-DR-04",
+      "decision": "unmapped",
+      "applicable_to_yaml": "[]",
+      "evidence_from_statement": "火土过盛则燥（不长万物）；水土过盛则湿（成淤泥）；燥湿调节为贵。",
+      "note": "『过盛』是程度判语，引擎无五行力量占比事实；原文未给可判定的分档，无法在不编造的前提下写成谓词。",
+      "reason_class": "condition-too-vague"
+    },
+    {
+      "book": "bazi/ditiansui-chanwei",
+      "rule_id": "DITIANSUICHA-029",
+      "decision": "unmapped",
+      "applicable_to_yaml": "[]",
+      "evidence_from_statement": "吉神宜隐藏蓄势（不被冲克）、凶神宜显露受制；隐者贵显、显者贵隐。",
+      "note": "吉凶神煞显隐总论；作业书点名『吉凶神煞不可拘定』类不予映射。冲克亦非引擎事实。",
+      "reason_class": "not-a-condition"
+    },
+    {
+      "book": "bazi/ditiansui-chanwei",
+      "rule_id": "DITIANSUICHA-030",
+      "decision": "unmapped",
+      "applicable_to_yaml": "[]",
+      "evidence_from_statement": "五行众者（如比劫遍野）宜散（食伤泄）、寡者（如孤立一根）宜聚（印星生）。",
+      "note": "『众／寡』为强弱程度判语，原文以『如比劫遍野』举例而非限定；引擎无五行个数／占比事实。",
+      "reason_class": "condition-too-vague"
+    },
+    {
+      "book": "bazi/ditiansui-chanwei",
+      "rule_id": "DITIANSUICHA-031",
+      "decision": "unmapped",
+      "applicable_to_yaml": "[]",
+      "evidence_from_statement": "震（卯）兑（酉）相对；卯酉冲为震兑战；处理须看月令支援。",
+      "note": "原文条件是『卯酉冲』——引擎不产出独立地支事实，也无冲的布尔事实；且处理仍须『看月令支援』。",
+      "reason_class": "fact-not-emitted",
+      "missing_fact": "地支（卯酉、子午等）与冲的判定"
+    },
+    {
+      "book": "bazi/ditiansui-chanwei",
+      "rule_id": "DITIANSUICHA-032",
+      "decision": "unmapped",
+      "applicable_to_yaml": "[]",
+      "evidence_from_statement": "坎（子）离（午）相对；子午冲为坎离战；处理须看月令支援与寒暖。",
+      "note": "同上：子午冲无对应 FactKey（仅 kongwang 是空亡地支词表，非盘面地支）。",
+      "reason_class": "fact-not-emitted",
+      "missing_fact": "地支（子午）与冲的判定"
+    },
+    {
+      "book": "bazi/ditiansui-chanwei",
+      "rule_id": "DR-05",
+      "decision": "unmapped",
+      "applicable_to_yaml": "[]",
+      "evidence_from_statement": "男以正财（偏财）为妻、日支为妻宫；妻星与妻宫俱旺者得贤妻；妻星弱、妻宫被冲克者婚不利。",
+      "note": "财星可用 shishen 表达，但本条的核心判据是『日支为妻宫』并有『妻宫被冲克』——日支与冲皆非引擎事实（作业书点名日支为 fact-not-emitted）。只取财星会丢掉原条一半条件，失真。",
+      "reason_class": "fact-not-emitted",
+      "missing_fact": "日支（妻宫）"
+    },
+    {
+      "book": "bazi/ditiansui-chanwei",
+      "rule_id": "DITIANSUICHA-DR-05",
+      "decision": "unmapped",
+      "applicable_to_yaml": "[]",
+      "evidence_from_statement": "男以官杀为子、女以食伤为子；时柱为子宫；子星生旺、子宫稳定者子嗣顺利。",
+      "note": "本条须先分男命／女命（引擎不产出性别事实），且以时柱为子宫（时柱干支未产出）。shishen 只带 layer/pillar，不足以复原。",
+      "reason_class": "fact-not-emitted",
+      "missing_fact": "时柱（子宫）／性别"
+    },
+    {
+      "book": "bazi/ditiansui-chanwei",
+      "rule_id": "DITIANSUICHA-037",
+      "decision": "unmapped",
+      "applicable_to_yaml": "[]",
+      "evidence_from_statement": "何知其人富——财气通门户…何知其人夭——五行偏枯至极。",
+      "note": "八句经验断语总汇，每句条件（财气通门户／官星有理会／五行流通）皆为判语；caveat 自陈『⚠️ 经验断语，不可铁口』。无单值可锚。",
+      "reason_class": "condition-too-vague"
+    },
+    {
+      "book": "bazi/ditiansui-chanwei",
+      "rule_id": "DITIANSUICHA-038",
+      "decision": "unmapped",
+      "applicable_to_yaml": "[]",
+      "evidence_from_statement": "女命以夫星（正官）、子星（食伤）为重；夫星纯正、子星生旺者吉。",
+      "note": "字面条件『女命』引擎不产出性别事实；若只映射 shishen=正官/食伤，则与 YUANHAIZIPIN-024、SANMINGTONGH-069 等已成条重复且丢失女命限定。caveat 亦自陈『不照搬贞淫等贬义判语』。",
+      "reason_class": "fact-not-emitted",
+      "missing_fact": "性别（女命）"
+    },
+    {
+      "book": "bazi/ditiansui-chanwei",
+      "rule_id": "DITIANSUICHA-039",
+      "decision": "unmapped",
+      "applicable_to_yaml": "[]",
+      "evidence_from_statement": "小儿命主要看关煞、五行偏枯、冲战过重；任氏多次强调“小儿命断夭折须极审慎”。",
+      "note": "对象为『关煞』（引擎未产出该神煞）与『冲战过重』（无事实）；作业书点名神煞派生输入属 fact-not-emitted。",
+      "reason_class": "fact-not-emitted",
+      "missing_fact": "神煞具体名（关煞）"
+    },
+    {
+      "book": "bazi/ditiansui-chanwei",
+      "rule_id": "DITIANSUICHA-040",
+      "decision": "unmapped",
+      "applicable_to_yaml": "[]",
+      "evidence_from_statement": "才（用神得用）与德（喜神有情）的命局表征；才德兼备者贵。",
+      "note": "『得用／有情』为判语；caveat 自陈『抽象判语』。无盘面取值。",
+      "reason_class": "condition-too-vague"
+    },
+    {
+      "book": "bazi/ditiansui-chanwei",
+      "rule_id": "DITIANSUICHA-041",
+      "decision": "unmapped",
+      "applicable_to_yaml": "[]",
+      "evidence_from_statement": "命局气势顺而清者主奋发；气势逆而浊者主抑郁。",
+      "note": "『气势顺清／逆浊』为判语，无量化；caveat 自陈『性情倾向，非心理诊断』。",
+      "reason_class": "condition-too-vague"
+    },
+    {
+      "book": "bazi/ditiansui-chanwei",
+      "rule_id": "DITIANSUICHA-042",
+      "decision": "unmapped",
+      "applicable_to_yaml": "[]",
+      "evidence_from_statement": "十神相生为恩、相克为怨；命局中恩怨配合决定际遇。",
+      "note": "caveat 自陈『抽象判语』。『恩怨配合』需十神之间的生克关系，引擎只给十神点名不给关系图。",
+      "reason_class": "condition-too-vague"
+    },
+    {
+      "book": "bazi/ditiansui-chanwei",
+      "rule_id": "DR-06",
+      "decision": "unmapped",
+      "applicable_to_yaml": "[]",
+      "evidence_from_statement": "闲神（不为用、不为忌）虽不主吉凶，但能起转化作用；闲神被合化为忌神时为凶变。",
+      "note": "『闲神』＝不为用不为忌，须先定用神／忌神关系（判语）；caveat 自陈『闲神判断为本派精修概念』。",
+      "reason_class": "condition-too-vague"
+    },
+    {
+      "book": "bazi/ditiansui-chanwei",
+      "rule_id": "DITIANSUICHA-045",
+      "decision": "unmapped",
+      "applicable_to_yaml": "[]",
+      "evidence_from_statement": "天干五合化气为真化的条件：化神当令、有根、不被冲克。",
+      "note": "条件为『化神当令、有根、不被冲克』——全部是引擎未产出的结构判定；作业书点名透干/司令属 fact-not-emitted。",
+      "reason_class": "fact-not-emitted",
+      "missing_fact": "透干／化气与当令（化神是否有根、是否被冲克）"
+    },
+    {
+      "book": "bazi/ditiansui-chanwei",
+      "rule_id": "DITIANSUICHA-046",
+      "decision": "unmapped",
+      "applicable_to_yaml": "[]",
+      "evidence_from_statement": "日主有微根而大势从之者为假从；化神不真但合而似化者为假化；假从假化者，运行从化之乡反吉…",
+      "note": "假从／假化之辨须『微根』『合而似化』，皆为读法待定；且 caveat 未给可判定阈值。",
+      "reason_class": "condition-too-vague"
+    },
+    {
+      "book": "bazi/ditiansui-chanwei",
+      "rule_id": "DITIANSUICHA-047",
+      "decision": "unmapped",
+      "applicable_to_yaml": "[]",
+      "evidence_from_statement": "顺局（从势顺生）、反局（反克成势）、战局（五行相战需通关）、合局（合化成势）；皆为气势格局。",
+      "note": "四类气势格局的体例命名，无盘面取值条件。",
+      "reason_class": "not-a-condition"
+    },
+    {
+      "book": "bazi/ditiansui-chanwei",
+      "rule_id": "DITIANSUICHA-048",
+      "decision": "unmapped",
+      "applicable_to_yaml": "[]",
+      "evidence_from_statement": "君象（日主为主、众星拱卫）、臣象（日主为臣、君星显达）、母象（印星养身）、子象（食伤泄秀）；皆为气势比拟。",
+      "note": "取象比拟，原文自陈『皆为气势比拟』。",
+      "reason_class": "not-a-condition"
+    },
+    {
+      "book": "bazi/ditiansui-chanwei",
+      "rule_id": "DR-07",
+      "decision": "unmapped",
+      "applicable_to_yaml": "[]",
+      "evidence_from_statement": "木仁、火礼、土信、金义、水智；性情判断以日主五行为主，并结合用神调节。",
+      "note": "取象表（木仁火礼土信金义水智），与作业书点名的『十干各有性情』同类。note：与 DITIANSUICHA-DR-07 不同，本条是对五行的道德取象，不涉盘面取值语句；且『结合用神调节』使条件不可单值化。",
+      "reason_class": "not-a-condition"
+    },
+    {
+      "book": "bazi/ditiansui-chanwei",
+      "rule_id": "DITIANSUICHA-DR-07",
+      "decision": "mapped",
+      "applicable_to_yaml": "{any_of: [{key: rizhu, value: 甲}, {key: rizhu, value: 乙}, {key: rizhu, value: 丙}, {key: rizhu, value: 丁}, {key: rizhu, value: 戊}, {key: rizhu, value: 己}, {key: rizhu, value: 庚}, {key: rizhu, value: 辛}, {key: rizhu, value: 壬}, {key: rizhu, value: 癸}]}",
+      "evidence_from_statement": "五行偏枯对应脏腑（甲乙肝胆、丙丁心小肠、戊己脾胃、庚辛肺大肠、壬癸肾膀胱）；偏枯之气主体质倾向。",
+      "note": "原文以天干分组把『脏腑对应』绑到日主：甲乙／丙丁／戊己／庚辛／壬癸，日主天干直接决定取哪一组，属 rizhu 值域且 10 值齐备＝原文对象覆盖全部日主。torn 记录：本条对每盘都成立（不具区分度），若按‘不得凑数’从严可判 unmapped；但原文确把日主当成本条的对象键，且是唯一可锚事实，故映射并在台账留痕。"
+    },
+    {
+      "book": "bazi/ditiansui-chanwei",
+      "rule_id": "DITIANSUICHA-051",
+      "decision": "unmapped",
+      "applicable_to_yaml": "[]",
+      "evidence_from_statement": "大运为方向、流年为发动；岁运与命局合参，看用神得力、忌神得权。",
+      "note": "『合参』总则，无具体盘面取值；大运/流年干支未产出。",
+      "reason_class": "condition-too-vague"
+    },
+    {
+      "book": "bazi/ditiansui-chanwei",
+      "rule_id": "DITIANSUICHA-052",
+      "decision": "unmapped",
+      "applicable_to_yaml": "[]",
+      "evidence_from_statement": "贞元之运为命之终始；五行流通无阻者主寿，偏枯至极、运行绝地者为危。",
+      "note": "条件落在『运行绝地』（大运干支／十二长生落点），引擎未产出；且 caveat 自陈『绝对禁止铁口断寿命』。",
+      "reason_class": "fact-not-emitted",
+      "missing_fact": "大运干支与运行绝地判定"
+    },
+    {
+      "book": "bazi/mingli-yueyan",
+      "rule_id": "MLY-R004",
+      "decision": "unmapped",
+      "applicable_to_yaml": "[]",
+      "evidence_from_statement": "用神不是固定神名，而是扶抑太过/不及后的平衡机制。",
+      "note": "对『用神』这一概念的元级说明（纠正把它当固定神名的读法），不是某一盘面取值下的适用条件；原文未给任何 FactKey 取值。",
+      "reason_class": "meta-rule"
+    },
+    {
+      "book": "bazi/mingli-yueyan",
+      "rule_id": "MLY-R007",
+      "decision": "unmapped",
+      "applicable_to_yaml": "[]",
+      "evidence_from_statement": "旧书六亲取法多有悖戾，须按命局结构重估。",
+      "note": "对旧书取法的方法论评价（作者自述编纂立场），pack 级元规则；引擎也缺性别／六亲取法事实。",
+      "reason_class": "meta-rule"
+    },
+    {
+      "book": "bazi/qiongtong-baojian",
+      "rule_id": "QTB",
+      "decision": "unmapped",
+      "applicable_to_yaml": "[]",
+      "evidence_from_statement": "五行之土无固定一季之性，须结合四时所乘之气审视调济。",
+      "note": "土行体例（土不专主一季）。原文刻意不把土绑到某一季，属通论。",
+      "reason_class": "not-a-condition"
+    },
+    {
+      "book": "bazi/qiongtong-baojian",
+      "rule_id": "QR",
+      "decision": "unmapped",
+      "applicable_to_yaml": "[]",
+      "evidence_from_statement": "00 五行总论",
+      "note": "纯章节标目（卷首目录行），无陈述内容，更无适用条件。",
+      "reason_class": "not-a-condition"
+    },
+    {
+      "book": "bazi/qiongtong-baojian",
+      "rule_id": "QR-00-01",
+      "decision": "unmapped",
+      "applicable_to_yaml": "[]",
+      "evidence_from_statement": "木主仁、性直；火主礼、性急…生克之理：木生火…金克木。",
+      "note": "取象表＋生克总表（作业书点名『木主仁、性直』为 not-a-condition）。",
+      "reason_class": "not-a-condition"
+    },
+    {
+      "book": "bazi/qiongtong-baojian",
+      "rule_id": "QIONGTONGBAO-QR",
+      "decision": "mapped",
+      "applicable_to_yaml": "{any_of: [{key: rizhu, value: 甲}, {key: rizhu, value: 乙}]}",
+      "evidence_from_statement": "01 论木（行论 + 甲乙木 × 四季）",
+      "note": "作业书正面范例逐字点名：原文明确本条只论甲乙木（引文亦为『木性腾上而无所止…有金则有惟高惟敛之德』的论木章）。"
+    },
+    {
+      "book": "bazi/qiongtong-baojian",
+      "rule_id": "QIONGTONGBAO-014",
+      "decision": "mapped",
+      "applicable_to_yaml": "{any_of: [{key: rizhu, value: 丙}, {key: rizhu, value: 丁}]}",
+      "evidence_from_statement": "02 论火（行论 + 丙丁火 × 四季）",
+      "note": "同 QR 体例：本条只论丙丁火（引文为论火章）。"
+    },
+    {
+      "book": "bazi/qiongtong-baojian",
+      "rule_id": "QIONGTONGBAO-024",
+      "decision": "mapped",
+      "applicable_to_yaml": "{any_of: [{key: rizhu, value: 戊}, {key: rizhu, value: 己}]}",
+      "evidence_from_statement": "03 论土（行论 + 戊己土 × 四季）",
+      "note": "同 QR 体例：本条只论戊己土（引文为论土章）。"
+    },
+    {
+      "book": "bazi/qiongtong-baojian",
+      "rule_id": "QIONGTONGBAO-044",
+      "decision": "mapped",
+      "applicable_to_yaml": "{any_of: [{key: rizhu, value: 壬}, {key: rizhu, value: 癸}]}",
+      "evidence_from_statement": "05 论水（行论 + 壬癸水 × 四季）",
+      "note": "同 QR 体例：本条只论壬癸水（引文为论水章）。"
+    },
+    {
+      "book": "bazi/sanming-tonghui",
+      "rule_id": "R-01",
+      "decision": "unmapped",
+      "applicable_to_yaml": "[]",
+      "evidence_from_statement": "五行以水一六、火二七、木三八、金四九、土五十配生数与成数。",
+      "note": "河图生成数体例；caveat 自陈『本规则属理论铺垫，不直接用于具体断命』。",
+      "reason_class": "not-a-condition"
+    },
+    {
+      "book": "bazi/sanming-tonghui",
+      "rule_id": "SANMINGTONGH-R-01",
+      "decision": "unmapped",
+      "applicable_to_yaml": "[]",
+      "evidence_from_statement": "相生为水生木、木生火…相克为木克土…",
+      "note": "五行生克总表；caveat 自陈『单纯生克不等于吉凶，需结合旺衰与喜忌』。",
+      "reason_class": "not-a-condition"
+    },
+    {
+      "book": "bazi/sanming-tonghui",
+      "rule_id": "SANMINGTONGH-003",
+      "decision": "unmapped",
+      "applicable_to_yaml": "[]",
+      "evidence_from_statement": "本篇以甲子乙丑海中金、壬申癸酉剑锋金、庚辰辛巳白蜡金为例，解释纳音如何用位置和生旺取物象。",
+      "note": "对象是纳音名与干支位置，引擎无纳音 FactKey（作业书点名纳音名属未产出事实）。",
+      "reason_class": "fact-not-emitted",
+      "missing_fact": "纳音（甲子乙丑海中金等纳音名）"
+    },
+    {
+      "book": "bazi/sanming-tonghui",
+      "rule_id": "SANMINGTONGH-004",
+      "decision": "unmapped",
+      "applicable_to_yaml": "[]",
+      "evidence_from_statement": "论海中金须配合所见火、水、木、土等条件…不是单见甲子乙丑便有统一吉凶判词。",
+      "note": "原文自己否定了『单见甲子乙丑』的单值条件，判据落在纳音之间的配合（引擎无纳音事实）。",
+      "reason_class": "fact-not-emitted",
+      "missing_fact": "纳音（甲子乙丑海中金）与年月日时柱干支"
+    },
+    {
+      "book": "bazi/sanming-tonghui",
+      "rule_id": "R-02",
+      "decision": "unmapped",
+      "applicable_to_yaml": "[]",
+      "evidence_from_statement": "十干之禄寄十二支，阳道顺行、阴道逆转，自长生起数至临官。",
+      "note": "取法（怎么取禄），不是『何时用本条』；作业书点名此类 not-a-condition。",
+      "reason_class": "not-a-condition"
+    },
+    {
+      "book": "bazi/sanming-tonghui",
+      "rule_id": "SANMINGTONGH-R-02",
+      "decision": "unmapped",
+      "applicable_to_yaml": "[]",
+      "evidence_from_statement": "月令所藏天干分本气、中气、余气，按节气分日数分配司令；取格优先看本气透干…",
+      "note": "作业书点名『透干／司令』属引擎未产出事实。",
+      "reason_class": "fact-not-emitted",
+      "missing_fact": "月令藏干与人元司令（透干）"
+    },
+    {
+      "book": "bazi/sanming-tonghui",
+      "rule_id": "SANMINGTONGH-007",
+      "decision": "unmapped",
+      "applicable_to_yaml": "[]",
+      "evidence_from_statement": "节在一月的分界，中气在月之半；本篇以丑之终、寅之始解释立节。",
+      "note": "节气体例／历法说明，无适用条件。",
+      "reason_class": "not-a-condition"
+    },
+    {
+      "book": "bazi/sanming-tonghui",
+      "rule_id": "SANMINGTONGH-009",
+      "decision": "unmapped",
+      "applicable_to_yaml": "[]",
+      "evidence_from_statement": "本篇以三日折一年推起运，阳男阴女向出生后的节顺数、阴男阳女向出生前的节逆数…",
+      "note": "起运取法（排法），作业书点名的 not-a-condition 类。",
+      "reason_class": "not-a-condition"
+    },
+    {
+      "book": "bazi/sanming-tonghui",
+      "rule_id": "SANMINGTONGH-010",
+      "decision": "unmapped",
+      "applicable_to_yaml": "[]",
+      "evidence_from_statement": "太岁分生年当生太岁与逐年游行太岁…日犯岁君须结合原局或大运的制化救应、相合有情判断。",
+      "note": "caveat 自陈『当生太岁与游行太岁不可混作同一输入』，而引擎无流年干支／太岁事实；且原文自陈须结合救应，不能单一条件断。",
+      "reason_class": "fact-not-emitted",
+      "missing_fact": "太岁／流年干与柱干支"
+    },
+    {
+      "book": "bazi/sanming-tonghui",
+      "rule_id": "SANMINGTONGH-011",
+      "decision": "unmapped",
+      "applicable_to_yaml": "[]",
+      "evidence_from_statement": "原文以甲子流年又逢甲子大运为岁运并临；并临不一律为凶，须分羊刃七杀与财官印绶及命局喜忌。",
+      "note": "对象是流年＋大运的干支并临，引擎未产出大运/流年干支（作业书点名）；shishen 只带 layer 不足以复原干支相同。",
+      "reason_class": "fact-not-emitted",
+      "missing_fact": "大运干支与流年干支"
+    },
+    {
+      "book": "bazi/sanming-tonghui",
+      "rule_id": "SANMINGTONGH-013",
+      "decision": "unmapped",
+      "applicable_to_yaml": "[]",
+      "evidence_from_statement": "天干五合化气需化神当令、四柱有化神之根、不被冲克破合者方真化。",
+      "note": "条件为『当令、有根、不被冲克破合』，全是引擎未产出的结构判定。",
+      "reason_class": "fact-not-emitted",
+      "missing_fact": "化神之根与冲克破合（透干/合化结构）"
+    },
+    {
+      "book": "bazi/sanming-tonghui",
+      "rule_id": "SANMINGTONGH-015",
+      "decision": "unmapped",
+      "applicable_to_yaml": "[]",
+      "evidence_from_statement": "申子辰、巳酉丑、寅午戌、亥卯未为三合组合；原文强调三字缺一不能直接按三合化局论。",
+      "note": "作业书点名『三合组合为申子辰…』属起例/组合定义 → not-a-condition。",
+      "reason_class": "not-a-condition"
+    },
+    {
+      "book": "bazi/sanming-tonghui",
+      "rule_id": "SANMINGTONGH-016",
+      "decision": "unmapped",
+      "applicable_to_yaml": "[]",
+      "evidence_from_statement": "六害组合为子未、丑午、寅巳、卯辰、申亥、酉戌。",
+      "note": "作业书点名『六害组合为子未…』→ not-a-condition（组合定义，非适用条件）。",
+      "reason_class": "not-a-condition"
+    },
+    {
+      "book": "bazi/sanming-tonghui",
+      "rule_id": "SANMINGTONGH-017",
+      "decision": "unmapped",
+      "applicable_to_yaml": "[]",
+      "evidence_from_statement": "本段列寅巳申无恩之刑、丑戌未恃势之刑、子卯无礼之刑与辰午酉亥自刑…",
+      "note": "三刑组合定义（同 SANMINGTONGH-016 体例）→ not-a-condition。",
+      "reason_class": "not-a-condition"
+    },
+    {
+      "book": "bazi/sanming-tonghui",
+      "rule_id": "SANMINGTONGH-019",
+      "decision": "unmapped",
+      "applicable_to_yaml": "[]",
+      "evidence_from_statement": "十干分配天文（甲雷、乙风…）；十二支分配地理（子齐青州…）。古法以天文地理取象配命。",
+      "note": "作业书点名『十干配天文地理』属取象表 → not-a-condition。",
+      "reason_class": "not-a-condition"
+    },
+    {
+      "book": "bazi/sanming-tonghui",
+      "rule_id": "SANMINGTONGH-021",
+      "decision": "unmapped",
+      "applicable_to_yaml": "[]",
+      "evidence_from_statement": "本篇安命宫先从子宫起正月逆排生月，再将生时加于月宫顺排，逢卯定位；宫干按年干起月法配。",
+      "note": "作业书原样点名『安命宫先从子宫起正月逆排生月』→ not-a-condition（取法）。",
+      "reason_class": "not-a-condition"
+    },
+    {
+      "book": "bazi/sanming-tonghui",
+      "rule_id": "SANMINGTONGH-022",
+      "decision": "unmapped",
+      "applicable_to_yaml": "[]",
+      "evidence_from_statement": "小运以时辰为起点，男阳女阴顺行、男阴女阳逆行，逐年推排…",
+      "note": "作业书原样点名『小运以时辰为起点，男阳女阴顺行』→ not-a-condition（取法）。",
+      "reason_class": "not-a-condition"
+    },
+    {
+      "book": "bazi/sanming-tonghui",
+      "rule_id": "SANMINGTONGH-023",
+      "decision": "unmapped",
+      "applicable_to_yaml": "[]",
+      "evidence_from_statement": "五行在节气转换中有四阶段：进气、交气、退气、伏气。判断五行力量需考虑节气深浅。",
+      "note": "本条对象是『节气深浅』这一连续量，引擎未产出；月令只给月支，无法区分进气/交气。",
+      "reason_class": "fact-not-emitted",
+      "missing_fact": "节气深浅（五行在节气中的阶段）"
+    },
+    {
+      "book": "bazi/sanming-tonghui",
+      "rule_id": "SANMINGTONGH-026",
+      "decision": "unmapped",
+      "applicable_to_yaml": "[]",
+      "evidence_from_statement": "阳干见刃位（甲见卯、丙见午、戊见午、庚见酉、壬见子）为阳刃；阴干一般不取刃。",
+      "note": "作业书原样点名：这是『怎么取阳刃』，不是『何时用本条』→ not-a-condition。",
+      "reason_class": "not-a-condition"
+    },
+    {
+      "book": "bazi/sanming-tonghui",
+      "rule_id": "SANMINGTONGH-027",
+      "decision": "unmapped",
+      "applicable_to_yaml": "[]",
+      "evidence_from_statement": "旬空由十干配十二支未到之位确定，如甲子旬戌亥…不能逢空即凶、逢合即吉。",
+      "note": "作业书原样点名『旬空由十干配十二支未到之位确定』→ not-a-condition；且原文自留『不能逢空即凶』。",
+      "reason_class": "not-a-condition"
+    },
+    {
+      "book": "bazi/sanming-tonghui",
+      "rule_id": "SANMINGTONGH-028",
+      "decision": "unmapped",
+      "applicable_to_yaml": "[]",
+      "evidence_from_statement": "神煞总论以生年纳音释身，须辨煞与本身的克临、生旺衰败及福神扶助；冲破合会可以转化福祸，吉凶神煞不可拘定。",
+      "note": "作业书点名『吉凶神煞不可拘定』→ condition-too-vague；起手还须生年纳音（未产出）。",
+      "reason_class": "condition-too-vague"
+    },
+    {
+      "book": "bazi/sanming-tonghui",
+      "rule_id": "SANMINGTONGH-030",
+      "decision": "unmapped",
+      "applicable_to_yaml": "[]",
+      "evidence_from_statement": "三奇篇并列乙丙丁、甲戊庚诸说…不能仅凭三干齐全定为有效贵格。",
+      "note": "作业书原样点名『不能仅凭三干齐全定为有效贵格』→ condition-too-vague（原文自己拒绝单条件断定）。",
+      "reason_class": "condition-too-vague"
+    },
+    {
+      "book": "bazi/sanming-tonghui",
+      "rule_id": "SANMINGTONGH-033",
+      "decision": "unmapped",
+      "applicable_to_yaml": "[]",
+      "evidence_from_statement": "神煞篇正印为纳音五行正库，金见乙丑、木癸未、火甲戌、水土壬辰丙辰…",
+      "note": "此处『正印』是纳音正库（caveat 自陈『不是日干查单支，也不是十神正印』），引擎无纳音事实，不可误锚 shishen=正印。",
+      "reason_class": "fact-not-emitted",
+      "missing_fact": "纳音五行正库（纳音正印）"
+    },
+    {
+      "book": "bazi/sanming-tonghui",
+      "rule_id": "SANMINGTONGH-034",
+      "decision": "unmapped",
+      "applicable_to_yaml": "[]",
+      "evidence_from_statement": "德秀按月支三合组分别取德干和秀干，须无破冲克压…不能据单一德秀标签判定容貌品性。",
+      "note": "原文按月支三合组取德干/秀干（caveat 指明『申子辰德含壬癸戊己、秀含丙辛甲己』），引擎既无地支集合亦无德秀神煞事实；且原文自陈不可单标签断。",
+      "reason_class": "fact-not-emitted",
+      "missing_fact": "月支三合组与德干/秀干（德秀神煞）"
+    },
+    {
+      "book": "bazi/sanming-tonghui",
+      "rule_id": "SANMINGTONGH-035",
+      "decision": "unmapped",
+      "applicable_to_yaml": "[]",
+      "evidence_from_statement": "元辰冲前后法须分阳男阴女与阴男阳女，且有遇合反吉…不能只用固定年支对照判损耗。",
+      "note": "取法依赖年支与性别，且原文自陈『不能只用固定年支对照』——无单值 FactKey 可锚。",
+      "reason_class": "fact-not-emitted",
+      "missing_fact": "年支与元辰（命前/命后辰）神煞"
+    },
+    {
+      "book": "bazi/sanming-tonghui",
+      "rule_id": "SANMINGTONGH-036",
+      "decision": "unmapped",
+      "applicable_to_yaml": "[]",
+      "evidence_from_statement": "暗金的煞以四仲子午卯酉取巳、四孟寅申巳亥取酉、四季辰戌丑未取丑，分吟呻破碎白衣…",
+      "note": "作业书原样点名『暗金的煞以四仲子午卯酉取巳…』→ not-a-condition（取法）。",
+      "reason_class": "not-a-condition"
+    },
+    {
+      "book": "bazi/sanming-tonghui",
+      "rule_id": "SANMINGTONGH-038",
+      "decision": "unmapped",
+      "applicable_to_yaml": "[]",
+      "evidence_from_statement": "六厄按三合局五行死位取申子辰卯、寅午戌酉、亥卯未午、巳酉丑子…",
+      "note": "神煞取法（同 036 体例）→ not-a-condition。",
+      "reason_class": "not-a-condition"
+    },
+    {
+      "book": "bazi/sanming-tonghui",
+      "rule_id": "SANMINGTONGH-039",
+      "decision": "unmapped",
+      "applicable_to_yaml": "[]",
+      "evidence_from_statement": "勾绞以命前三辰与后三辰分取，并依阳男阴女、阴男阳女互换勾绞…",
+      "note": "神煞取法 → not-a-condition。",
+      "reason_class": "not-a-condition"
+    },
+    {
+      "book": "bazi/sanming-tonghui",
+      "rule_id": "SANMINGTONGH-040",
+      "decision": "unmapped",
+      "applicable_to_yaml": "[]",
+      "evidence_from_statement": "十恶大败篇并列日禄入旬空、元白经特定年日冲、玄黄经年月日与旬等不同取法…",
+      "note": "并列三种取法且原文自陈不成定断，属取法/文献分歧条目 → not-a-condition。",
+      "reason_class": "not-a-condition"
+    },
+    {
+      "book": "bazi/sanming-tonghui",
+      "rule_id": "SANMINGTONGH-046",
+      "decision": "unmapped",
+      "applicable_to_yaml": "[]",
+      "evidence_from_statement": "官煞混杂时，凭月令、合冲、制化决定去官留煞或去煞留官；保留者为格之主。",
+      "note": "去留取决于月令＋合冲＋制化三项判语，caveat 自陈『去留判断细节较多』；无法在不编造的前提下单值化。",
+      "reason_class": "condition-too-vague"
+    },
+    {
+      "book": "bazi/sanming-tonghui",
+      "rule_id": "SANMINGTONGH-048",
+      "decision": "unmapped",
+      "applicable_to_yaml": "[]",
+      "evidence_from_statement": "官印禄库（官印禄库俱全为贵）、相刑遇贵（刑中有贵人解）、三合遇贵（三合局又遇贵人）…",
+      "note": "三个组合分别需要禄库、贵人（相刑中的解神）、三合局，引擎均未产出（无地支集合、无具体神煞名）；caveat 亦自陈『单一条件不构成必然结论』。",
+      "reason_class": "fact-not-emitted",
+      "missing_fact": "禄（临官）位与贵人神煞、地支三合局"
+    },
+    {
+      "book": "bazi/sanming-tonghui",
+      "rule_id": "SANMINGTONGH-049",
+      "decision": "unmapped",
+      "applicable_to_yaml": "[]",
+      "evidence_from_statement": "金木间隔（金木有制为佳）、水火既济（丙壬相配）、金火相成（火炼金成器）…",
+      "note": "三组五行搭配以『相配／成器／有制』为判语，caveat 自陈『不单独构成格局』；丙壬相配只涉局部而本条整体跨三组，单映射会失真。",
+      "reason_class": "condition-too-vague"
+    },
+    {
+      "book": "bazi/sanming-tonghui",
+      "rule_id": "SANMINGTONGH-051",
+      "decision": "unmapped",
+      "applicable_to_yaml": "[]",
+      "evidence_from_statement": "专禄格（日坐临官禄位）禄旺，需财官食伤为用以平衡…",
+      "note": "『日坐临官禄位』＝日干＋日支的组合，引擎无日支事实（作业书点名）；只取日干会与建禄/阳刃条混同。",
+      "reason_class": "fact-not-emitted",
+      "missing_fact": "日支（日坐临官禄位）"
+    },
+    {
+      "book": "bazi/sanming-tonghui",
+      "rule_id": "R-06",
+      "decision": "unmapped",
+      "applicable_to_yaml": "[]",
+      "evidence_from_statement": "庚辰、庚戌、壬辰、戊戌为魁罡日；性烈刚强、聪明果决；忌见财官。",
+      "note": "魁罡须日干＋日支同时命中（庚辰/庚戌/壬辰/戊戌），引擎无日支 FactKey；只取 rizhu∈{庚,壬} 会把庚午、壬寅等非魁罡日误命中。",
+      "reason_class": "fact-not-emitted",
+      "missing_fact": "日支（辰/戌）"
+    },
+    {
+      "book": "bazi/sanming-tonghui",
+      "rule_id": "SANMINGTONGH-R-06",
+      "decision": "unmapped",
+      "applicable_to_yaml": "[]",
+      "evidence_from_statement": "木局曲直（亥卯未或寅卯辰全）、火局炎上…土局稼穑（辰戌丑未全）…",
+      "note": "对象是地支成局（三支或四支齐全），涉及地支集合与成局量化，引擎未产出（作业书点名『三合局成局量化』）。",
+      "reason_class": "fact-not-emitted",
+      "missing_fact": "地支三合局/方局（四支齐全判定）"
+    },
+    {
+      "book": "bazi/sanming-tonghui",
+      "rule_id": "SANMINGTONGH-059",
+      "decision": "unmapped",
+      "applicable_to_yaml": "[]",
+      "evidence_from_statement": "印绶生身、护身；身弱喜印；身强忌印过重。",
+      "note": "『身弱／身强／过重』为判语档位，原文未指定 rizhu_strength 取值；且未点明是正印还是偏印（十神层面为『印』这一泛类）。",
+      "reason_class": "condition-too-vague"
+    },
+    {
+      "book": "bazi/sanming-tonghui",
+      "rule_id": "SANMINGTONGH-060",
+      "decision": "unmapped",
+      "applicable_to_yaml": "[]",
+      "evidence_from_statement": "印多为病、又有财能破印，行运扶财者，弃印就财为格。",
+      "note": "『印多为病』无阈值，『行运扶财』须大运干支（未产出）。",
+      "reason_class": "condition-too-vague"
+    },
+    {
+      "book": "bazi/sanming-tonghui",
+      "rule_id": "SANMINGTONGH-065",
+      "decision": "unmapped",
+      "applicable_to_yaml": "[]",
+      "evidence_from_statement": "阳干见月刃为阳刃格；以官、煞、食、伤制刃为用；不取格而以扶抑论。",
+      "note": "『月刃』须月支落在日干刃位（月支未产出，作业书点名）；虽含官煞食伤，但本条主体是月刃格，单取十神会丢条件。",
+      "reason_class": "fact-not-emitted",
+      "missing_fact": "月支与阳刃神煞"
+    },
+    {
+      "book": "bazi/sanming-tonghui",
+      "rule_id": "SANMINGTONGH-066",
+      "decision": "unmapped",
+      "applicable_to_yaml": "[]",
+      "evidence_from_statement": "日干临官在月支为建禄；不取格而以扶抑论；常以月外财、官、食、伤为用。",
+      "note": "建禄的判定条件即『日干临官在月支』，需要月支事实（未产出）。",
+      "reason_class": "fact-not-emitted",
+      "missing_fact": "月支（日干临官在月支）"
+    },
+    {
+      "book": "bazi/sanming-tonghui",
+      "rule_id": "R-07",
+      "decision": "unmapped",
+      "applicable_to_yaml": "[]",
+      "evidence_from_statement": "日干、十神、五行偏枯决定性情与形貌；木主仁、火主礼、土主信、金主义、水主智。",
+      "note": "取象表＋通论（作业书点名『木主仁、性直』类）；『五行偏枯』无阈值。",
+      "reason_class": "not-a-condition"
+    },
+    {
+      "book": "bazi/sanming-tonghui",
+      "rule_id": "SANMINGTONGH-070",
+      "decision": "unmapped",
+      "applicable_to_yaml": "[]",
+      "evidence_from_statement": "小儿命须看关煞与刑冲破害；关煞重者主夭折或多病。",
+      "note": "对象为关煞与刑冲破害，引擎均未产出；caveat 亦自陈『不得作寿夭结论』。",
+      "reason_class": "fact-not-emitted",
+      "missing_fact": "神煞具体名（关煞）与刑冲破害"
+    },
+    {
+      "book": "bazi/sanming-tonghui",
+      "rule_id": "SANMINGTONGH-075",
+      "decision": "unmapped",
+      "applicable_to_yaml": "[]",
+      "evidence_from_statement": "安静守分（命局平和无冲战）；福寿两备（五行流通、夫星子星皆得用、无冲无破）。二者均为女命理想化标准。",
+      "note": "女命限定（无性别事实）＋『平和无冲战／流通』判语；原文自陈为理想化标准。",
+      "reason_class": "condition-too-vague"
+    },
+    {
+      "book": "bazi/sanming-tonghui",
+      "rule_id": "SANMINGTONGH-076",
+      "decision": "unmapped",
+      "applicable_to_yaml": "[]",
+      "evidence_from_statement": "小儿/少年命局冲战过重、关煞重、五行偏枯至极，古法断为横夭。",
+      "note": "同 070：条件为关煞＋冲战过重（未产出），且属禁止铁口的古法断语。",
+      "reason_class": "fact-not-emitted",
+      "missing_fact": "神煞具体名（关煞）与冲战"
+    },
+    {
+      "book": "bazi/sanming-tonghui",
+      "rule_id": "SANMINGTONGH-078",
+      "decision": "unmapped",
+      "applicable_to_yaml": "[]",
+      "evidence_from_statement": "古法由八字推孕中男女，以年柱时柱或特定干支组合（如阳年阳月阳日阳时生男等）推断。",
+      "note": "条件落在年柱/时柱干支的阴阳组合，引擎未产出年柱/时柱干支（也无性别事实）。",
+      "reason_class": "fact-not-emitted",
+      "missing_fact": "年柱/时柱干支组合"
+    },
+    {
+      "book": "bazi/sanming-tonghui",
+      "rule_id": "R-09",
+      "decision": "unmapped",
+      "applicable_to_yaml": "[]",
+      "evidence_from_statement": "十干各有喜忌支位：甲喜寅卯、忌申酉；乙喜寅卯辰、忌酉戌…",
+      "note": "原文给的是十干对地支的喜忌表，判据在地支；引擎无独立地支 FactKey（作业书点名），若只锚 rizhu 则把 10 干全枚举而成恒真条件——属凑数，故不映射。",
+      "reason_class": "fact-not-emitted",
+      "missing_fact": "月支/日支等地支（十干喜忌支位）"
+    },
+    {
+      "book": "bazi/sanming-tonghui",
+      "rule_id": "SANMINGTONGH-083",
+      "decision": "unmapped",
+      "applicable_to_yaml": "[]",
+      "evidence_from_statement": "以月支为纲论日干吉凶：月支当令则日干得气而旺，月支失令则日干不得气而衰…",
+      "note": "作业书点名 not-a-condition 的『月令为提纲』；引文即『論運者以月支為首』，属通论。",
+      "reason_class": "not-a-condition"
+    },
+    {
+      "book": "bazi/sanming-tonghui",
+      "rule_id": "SANMINGTONGH-084",
+      "decision": "unmapped",
+      "applicable_to_yaml": "[]",
+      "evidence_from_statement": "五行在十二时辰各有旺衰变化（如木旺于寅卯辰时…）；五行与地理方位亦有分野吉凶。",
+      "note": "判据落在时支（未产出）与地域分野（引擎无此维度）。",
+      "reason_class": "fact-not-emitted",
+      "missing_fact": "时支与地支（十二时辰五行）"
+    },
+    {
+      "book": "bazi/sanming-tonghui",
+      "rule_id": "SANMINGTONGH-091",
+      "decision": "unmapped",
+      "applicable_to_yaml": "[]",
+      "evidence_from_statement": "破官/飞财/破财三格的共同原则：原有格局被破之后，另有替代之格可成；破而后立，有救应方可取格…",
+      "note": "『被破／有救应』是格局成败判语，无盘面取值；且涉及三格共同原则而非某一格。",
+      "reason_class": "condition-too-vague"
+    },
+    {
+      "book": "bazi/sanming-tonghui",
+      "rule_id": "SANMINGTONGH-094",
+      "decision": "unmapped",
+      "applicable_to_yaml": "[]",
+      "evidence_from_statement": "子午双包格：命局子午对冲而各有包裹得宜（如子被丑合包裹、午被未合包裹）…",
+      "note": "条件为地支之间的冲与合的包裹关系，引擎未产出地支集合与合冲判定。",
+      "reason_class": "fact-not-emitted",
+      "missing_fact": "地支（子午丑未）与合冲"
+    },
+    {
+      "book": "bazi/sanming-tonghui",
+      "rule_id": "SANMINGTONGH-095",
+      "decision": "unmapped",
+      "applicable_to_yaml": "[]",
+      "evidence_from_statement": "六神兽格（青龙=木、白虎=金…）为五行配六神的取象法；各神兽对应五行须在命局成形（三合或方局）…",
+      "note": "取象法（原文自陈），且成形须三合/方局（未产出）→ 取象表类 not-a-condition。",
+      "reason_class": "not-a-condition"
+    },
+    {
+      "book": "bazi/sanming-tonghui",
+      "rule_id": "SANMINGTONGH-096",
+      "decision": "unmapped",
+      "applicable_to_yaml": "[]",
+      "evidence_from_statement": "还魂借气格：命局借他柱之气为己用（如枯木逢水得生），日主衰弱而有情生扶者可借气还魂；借气来源须有情不破。",
+      "note": "『有情生扶／有情不破』为判语；『借他柱之气』无对应事实；日主衰弱未给档位。",
+      "reason_class": "condition-too-vague"
+    },
+    {
+      "book": "bazi/sanming-tonghui",
+      "rule_id": "SANMINGTONGH-097",
+      "decision": "unmapped",
+      "applicable_to_yaml": "[]",
+      "evidence_from_statement": "八专日（甲寅、乙卯、丁未、己未、庚申、辛酉、壬子、癸丑）日坐禄旺之地，身强为论…",
+      "note": "八专须日干＋日支同时命中，引擎无日支事实；只取日干会误命中（如甲子、乙丑）。",
+      "reason_class": "fact-not-emitted",
+      "missing_fact": "日支（八专日的日支）"
+    },
+    {
+      "book": "bazi/sanming-tonghui",
+      "rule_id": "SANMINGTONGH-098",
+      "decision": "unmapped",
+      "applicable_to_yaml": "[]",
+      "evidence_from_statement": "土局润下、金白水清、木火交辉、火金铸印、火土夹杂…五者皆属两五行配合的特殊格局。",
+      "note": "五格判据是两五行配合与『过燥需水润』等判语，无盘面取值；原文自陈属特殊格局（外格类）。",
+      "reason_class": "condition-too-vague"
+    },
+    {
+      "book": "bazi/sanming-tonghui",
+      "rule_id": "SANMINGTONGH-100",
+      "decision": "unmapped",
+      "applicable_to_yaml": "[]",
+      "evidence_from_statement": "四位纯全（四柱干支同气纯一）与一气生成（四柱地支顺连如寅卯辰巳）皆为专一格局…",
+      "note": "条件落在四柱干支的整体形态（同气／顺连），引擎未产出柱干支（作业书点名干支组合类）。",
+      "reason_class": "fact-not-emitted",
+      "missing_fact": "四柱干支（同气纯一 / 地支顺连）"
+    },
+    {
+      "book": "bazi/sanming-tonghui",
+      "rule_id": "SANMINGTONGH-101",
+      "decision": "unmapped",
+      "applicable_to_yaml": "[]",
+      "evidence_from_statement": "背禄逐马（禄被背不得、马被逐失势）为古法凶断；十干十二年生大贵人例为十干各年大贵人的枚举配合。",
+      "note": "取法／枚举例（禄马取法与年干大贵人例）→ not-a-condition。",
+      "reason_class": "not-a-condition"
+    },
+    {
+      "book": "bazi/sanming-tonghui",
+      "rule_id": "SANMINGTONGH-106",
+      "decision": "unmapped",
+      "applicable_to_yaml": "[]",
+      "evidence_from_statement": "本书卷六所载杂格（30+ 项）多数属古法…杂格可作趣味参考或历史源流追踪，但不得替代正格（八格+建禄阳刃+外格）的判断。",
+      "note": "对本书章节内容的方法论定性＋引用约束（『不得替代正格判断』）＝pack 元规则（作业书点名『准备引用本书…』类）。",
+      "reason_class": "meta-rule"
+    },
+    {
+      "book": "bazi/yuanhai-ziping",
+      "rule_id": "YR-01",
+      "decision": "unmapped",
+      "applicable_to_yaml": "[]",
+      "evidence_from_statement": "阴阳五行为造化之源；命理以五行生克为底层规则。",
+      "note": "作业书点名 not-a-condition 的『五行有源有流』同类底层通论；caveat 自陈『理论铺垫，不直接用于断命』。",
+      "reason_class": "not-a-condition"
+    },
+    {
+      "book": "bazi/yuanhai-ziping",
+      "rule_id": "YUANHAIZIPIN-YR-01",
+      "decision": "unmapped",
+      "applicable_to_yaml": "[]",
+      "evidence_from_statement": "阳干顺行十二宫（长生→帝旺→墓绝），阴干逆行；判断日干在地支的旺衰状态。",
+      "note": "十二长生取法（作业书点名的 not-a-condition 类：『阳干顺行十二宫』如何推，非何时用）。",
+      "reason_class": "not-a-condition"
+    },
+    {
+      "book": "bazi/yuanhai-ziping",
+      "rule_id": "YUANHAIZIPIN-003",
+      "decision": "unmapped",
+      "applicable_to_yaml": "[]",
+      "evidence_from_statement": "以日干为“我”，其余干支相对于日干的十神关系为论命主线。区别于早期禄命“以年为主”。",
+      "note": "子平法体例（以日为主）；是全书方法论声明，无盘面适用条件。",
+      "reason_class": "not-a-condition"
+    },
+    {
+      "book": "bazi/yuanhai-ziping",
+      "rule_id": "YUANHAIZIPIN-007",
+      "decision": "unmapped",
+      "applicable_to_yaml": "[]",
+      "evidence_from_statement": "天干五合（甲己合土等）；地支六合、三合、六冲、三刑、六害各有其成立条件与吉凶作用。",
+      "note": "组合总表＋『各有成立条件』的提示，原文未给任何单值适用条件（成立条件未在此条展开）。",
+      "reason_class": "not-a-condition"
+    },
+    {
+      "book": "bazi/yuanhai-ziping",
+      "rule_id": "YUANHAIZIPIN-008",
+      "decision": "unmapped",
+      "applicable_to_yaml": "[]",
+      "evidence_from_statement": "月令所藏天干分本气、中气、余气；取格优先看本气透干。",
+      "note": "作业书点名『透干／司令』未产出；caveat 未给取值。",
+      "reason_class": "fact-not-emitted",
+      "missing_fact": "月令藏干与透干（人元司令）"
+    },
+    {
+      "book": "bazi/yuanhai-ziping",
+      "rule_id": "YR-02",
+      "decision": "unmapped",
+      "applicable_to_yaml": "[]",
+      "evidence_from_statement": "论命总纲赋文；以“继善”为名…被《三命通会》承袭。",
+      "note": "对篇章体裁与源流的元描述（非断语）→ meta-rule。",
+      "reason_class": "meta-rule"
+    },
+    {
+      "book": "bazi/yuanhai-ziping",
+      "rule_id": "YUANHAIZIPIN-012",
+      "decision": "unmapped",
+      "applicable_to_yaml": "[]",
+      "evidence_from_statement": "看命次序的经验口诀汇总（先看月令、再看十神、再看合冲等）。",
+      "note": "调用次序／看命流程＝程序性元规则（作业书『调用条件』类）；原文未给某盘取值下的适用条件。",
+      "reason_class": "meta-rule"
+    },
+    {
+      "book": "bazi/yuanhai-ziping",
+      "rule_id": "YUANHAIZIPIN-014",
+      "decision": "unmapped",
+      "applicable_to_yaml": "[]",
+      "evidence_from_statement": "建禄格（日干临官在月）与阳刃格（阳干刃在月）皆不取月令格局，而以扶抑论。",
+      "note": "两个格的判定条件都落在月支，引擎未产出月支（作业书点名）；引文亦为不相干的杂气财官句，不能作锚。",
+      "reason_class": "fact-not-emitted",
+      "missing_fact": "月支（日干临官在月 / 阳干刃在月）"
+    },
+    {
+      "book": "bazi/yuanhai-ziping",
+      "rule_id": "YUANHAIZIPIN-019",
+      "decision": "unmapped",
+      "applicable_to_yaml": "[]",
+      "evidence_from_statement": "日主在月令的旺相休囚决定基本强弱倾向。",
+      "note": "作业书点名 not-a-condition 的『月令为提纲』同类（月令旺相休囚总则）。",
+      "reason_class": "not-a-condition"
+    },
+    {
+      "book": "bazi/yuanhai-ziping",
+      "rule_id": "YR-03",
+      "decision": "unmapped",
+      "applicable_to_yaml": "[]",
+      "evidence_from_statement": "大运从月柱起；男阳女阴顺行、男阴女阳逆行；起运岁数按生时距前/后节气日数除三。",
+      "note": "大运排法（起例）→ not-a-condition。",
+      "reason_class": "not-a-condition"
+    },
+    {
+      "book": "bazi/yuanhai-ziping",
+      "rule_id": "YUANHAIZIPIN-YR-03",
+      "decision": "unmapped",
+      "applicable_to_yaml": "[]",
+      "evidence_from_statement": "太岁为流年；大运与流年合参看命局变化。",
+      "note": "『合参』总则且所需大运/流年干支未产出（作业书点名）。",
+      "reason_class": "fact-not-emitted",
+      "missing_fact": "大运干支与流年干支"
+    },
+    {
+      "book": "bazi/yuanhai-ziping",
+      "rule_id": "YUANHAIZIPIN-025",
+      "decision": "unmapped",
+      "applicable_to_yaml": "[]",
+      "evidence_from_statement": "由日干五行论性情：木仁火礼土信金义水智。",
+      "note": "取象表（与 DR-07、R-07 同型），原文只作五行情性泛论，未把五行当成本条适用条件。",
+      "reason_class": "not-a-condition"
+    },
+    {
+      "book": "bazi/yuanhai-ziping",
+      "rule_id": "YUANHAIZIPIN-030",
+      "decision": "unmapped",
+      "applicable_to_yaml": "[]",
+      "evidence_from_statement": "格局取用经验心法汇总：看月令、看透干、看喜忌、看大运。",
+      "note": "取用心法/流程汇总＝程序性元规则；无单值适用条件。",
+      "reason_class": "meta-rule"
+    },
+    {
+      "book": "bazi/yuanhai-ziping",
+      "rule_id": "YUANHAIZIPIN-031",
+      "decision": "unmapped",
+      "applicable_to_yaml": "[]",
+      "evidence_from_statement": "小儿命局看关煞、五行偏枯、冲战过重；古法断夭折需极度谨慎。",
+      "note": "关煞与冲战未产出；原文自陈须极度谨慎。",
+      "reason_class": "fact-not-emitted",
+      "missing_fact": "神煞具体名（关煞）与冲战"
+    },
+    {
+      "book": "bazi/yuanhai-ziping",
+      "rule_id": "YUANHAIZIPIN-033",
+      "decision": "unmapped",
+      "applicable_to_yaml": "[]",
+      "evidence_from_statement": "寿命长短的古法判断：五行流通无偏枯主寿；五行偏枯至极、大运通关不过为危。",
+      "note": "『流通／偏枯至极』为判语（无阈值），且『大运通关不过』需大运干支；caveat 属禁止铁口类。",
+      "reason_class": "condition-too-vague"
+    },
+    {
+      "book": "bazi/yuanhai-ziping",
+      "rule_id": "YUANHAIZIPIN-034",
+      "decision": "unmapped",
+      "applicable_to_yaml": "[]",
+      "evidence_from_statement": "死亡应期的古法断语：大运流年冲克太过、五行绝地等。",
+      "note": "条件落在大运流年干支与绝地（引擎未产出）→ fact-not-emitted。",
+      "reason_class": "fact-not-emitted",
+      "missing_fact": "大运/流年干支与五行绝地判定"
+    },
+    {
+      "book": "bazi/yuanhai-ziping",
+      "rule_id": "YUANHAIZIPIN-035",
+      "decision": "unmapped",
+      "applicable_to_yaml": "[]",
+      "evidence_from_statement": "僧道之命的古法判断：五行偏枯、印星过重、华盖重、六亲无依等。",
+      "note": "华盖（未产出神煞）＋六亲无依（无事实）＋印星过重（无阈值）；shishen=正印/偏印 只覆盖一小部分且会失真。",
+      "reason_class": "fact-not-emitted",
+      "missing_fact": "神煞具体名（华盖）与六亲事实"
+    },
+    {
+      "book": "bazi/yuanhai-ziping",
+      "rule_id": "YUANHAIZIPIN-037",
+      "decision": "unmapped",
+      "applicable_to_yaml": "[]",
+      "evidence_from_statement": "《金玉赋》《格致赋》及卷五其他杂赋均为经验断语赋文体裁，非严格规则；归属待考；与《三命通会》互见。",
+      "note": "对篇章体裁与文献归属的元说明（原文自陈『非严格规则』）→ meta-rule。",
+      "reason_class": "meta-rule"
+    },
+    {
+      "book": "bazi/yuanhai-ziping",
+      "rule_id": "YR-P-01",
+      "decision": "unmapped",
+      "applicable_to_yaml": "[]",
+      "evidence_from_statement": "起运折除以三日为一年，按一年二十四气、七十二候计。",
+      "note": "起运折算取法（起例）→ not-a-condition。",
+      "reason_class": "not-a-condition"
+    },
+    {
+      "book": "bazi/ziping-zhenquan",
+      "rule_id": "ZPR-16",
+      "decision": "unmapped",
+      "applicable_to_yaml": "[]",
+      "evidence_from_statement": "杂格应在正格不足以取用时讨论，且须严格按原文条件，不可泛化为万能例外。",
+      "note": "原文自陈『须严格按原文条件，不可泛化』——即本条自身不提供可判定的单值条件；『正格不足以取用』是格局判断结论，无对应 FactKey。",
+      "reason_class": "condition-too-vague"
+    },
+    {
+      "book": "bazi/ziping-zhenquan",
+      "rule_id": "ZPR-P-01",
+      "decision": "unmapped",
+      "applicable_to_yaml": "[]",
+      "evidence_from_statement": "阳干顺行十二长生、阴干逆行。甲木长生在亥、死在午；乙木长生在午、死在亥。其余天干依阴阳互换。",
+      "note": "十二长生取法（同 YUANHAIZIPIN-YR-01 体例）→ not-a-condition：它说怎么定长生十二宫，不说本条何时适用。",
+      "reason_class": "not-a-condition"
+    },
+    {
+      "book": "bazi/ziping-zhenquan",
+      "rule_id": "ZPR-P-02",
+      "decision": "unmapped",
+      "applicable_to_yaml": "[]",
+      "evidence_from_statement": "十干合化：甲己合化土、乙庚合化金、丙辛合化水、丁壬合化木、戊癸合化火。",
+      "note": "十干合化形式（名字与所记规则）→ not-a-condition：属体例/取法，非「本条只论某日主」的适用范围条件。注：机器分类报 multi-pair-same-key（因 rizhu 值域含十天干），但那是把体例误读成条件。",
+      "reason_class": "not-a-condition"
+    }
+  ]
+}

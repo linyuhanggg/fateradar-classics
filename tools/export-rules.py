@@ -21,6 +21,9 @@ except ImportError:  # pragma: no cover
     sys.exit(1)
 
 ROOT = Path(__file__).resolve().parents[1]
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from predicate_lang import iter_predicates  # noqa: E402
+
 SCHEMA_VERSION = "fateradar-rules-v2"
 # 六个产品 art + 两个分类纠正后的导出 art。产品仓只消费前六个。
 ARTS = ("bazi", "ziwei", "qimen", "liuren", "liuyao", "qizheng", "meihua", "yili")
@@ -67,11 +70,19 @@ def load_yaml(path: Path):
     return yaml.safe_load(path.read_text(encoding="utf-8"))
 
 
+def _iter_predicates(node):
+    """遍历 applicable_to 里所有 predicate（兼容旧平铺列表与 v3 组）。
+
+    唯一实现在 tools/predicate_lang.py —— 契约见 docs/PREDICATE-LANGUAGE-V3.md。
+    没有它，v3 组（mapping）会被 for 循环当成「迭代出键名字符串」而整体丢掉，
+    导出结果静默变成 applicableTo: []，谓词没了但没有任何报错。
+    """
+    return iter_predicates(node)
+
+
 def topic_of(rule: dict) -> str:
     labels: list[str] = []
-    for pred in rule.get("applicable_to") or []:
-        if not isinstance(pred, dict):
-            continue
+    for pred in _iter_predicates(rule.get("applicable_to")):
         value = pred.get("value")
         key = pred.get("key")
         if isinstance(value, str) and value and value != "*":
@@ -96,20 +107,56 @@ def verification_of(rule: dict) -> str:
     return "verified" if rule.get("verified") is True else "provisional"
 
 
-def predicates_of(rule: dict) -> list[dict]:
+def _clean_predicate(pred: dict) -> dict | None:
+    key = pred.get("key")
+    value = pred.get("value")
+    if not isinstance(key, str) or not isinstance(value, str):
+        return None
+    item: dict = {"key": key, "value": value}
+    scope = pred.get("scope")
+    if isinstance(scope, dict) and scope:
+        item["scope"] = scope
+    return item
+
+
+def _clean_clause(node):
+    """v3 组按原结构导出（消费方按同一契约求值），旧平铺列表导成 predicate 数组。"""
+    if isinstance(node, list):
+        out = []
+        for item in node:
+            cleaned = _clean_clause(item)
+            if cleaned is not None:
+                out.append(cleaned)
+        return out
+    if not isinstance(node, dict):
+        return None
+    if "key" in node:
+        return _clean_predicate(node)
+    group: dict = {}
+    for op in ("any_of", "all_of"):
+        if op in node:
+            children = _clean_clause(node[op])
+            group[op] = children if isinstance(children, list) else []
+    if "none_of" in node:
+        children = _clean_clause(node["none_of"])
+        group["none_of"] = children if isinstance(children, list) else []
+    if isinstance(node.get("same"), str):
+        group["same"] = node["same"]
+    return group or None
+
+
+def predicates_of(rule: dict):
+    """旧平铺列表 → predicate 数组（语义不变）；v3 组 → 组对象。"""
+    raw = rule.get("applicable_to")
+    if isinstance(raw, dict):
+        return _clean_clause(raw) or []
     out: list[dict] = []
-    for pred in rule.get("applicable_to") or []:
+    for pred in raw or []:
         if not isinstance(pred, dict):
             continue
-        key = pred.get("key")
-        value = pred.get("value")
-        if not isinstance(key, str) or not isinstance(value, str):
-            continue
-        item: dict = {"key": key, "value": value}
-        scope = pred.get("scope")
-        if isinstance(scope, dict) and scope:
-            item["scope"] = scope
-        out.append(item)
+        cleaned = _clean_predicate(pred)
+        if cleaned is not None:
+            out.append(cleaned)
     return out
 
 

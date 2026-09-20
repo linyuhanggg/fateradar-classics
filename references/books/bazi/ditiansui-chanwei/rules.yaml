@@ -449,7 +449,7 @@ rules:
     start_line: 9532
     end_line: 9532
   quote: 四柱财官得时当令，日主虚弱无气，虽有比劫印绶生扶，而柱中食神生财，财仍破印；
-  applicable_to: []
+  applicable_to: {any_of: [{key: yueling, value: 亥}, {key: yueling, value: 子}, {key: yueling, value: 丑}, {key: yueling, value: 巳}, {key: yueling, value: 午}, {key: yueling, value: 未}]}
   caveats:
   - 本章为旺衰派对调候的旁证视角
   - 调候十干配合精修需转 `bazi/qiongtong-baojian`

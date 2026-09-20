@@ -1,0 +1,91 @@
+{
+  "audit": "T168 captain 复核",
+  "generated_by": "captain (T168)",
+  "method": "逐条把 mapped 决策与规则自身的 statement / quote 对照；只认 statement 能支撑的适用条件，不认从 quote 例文推出来的范围收窄。",
+  "reverted": [
+    {
+      "book": "bazi/ditiansui-chanwei",
+      "rule_id": "DITIANSUICHA-DR-07",
+      "was": "{any_of: [{key: rizhu, value: 甲}, … 10 天干]}",
+      "now": [],
+      "reason_class": "not-a-condition",
+      "why": [
+        "作业书把「五行偏枯对应脏腑」列为 not-a-condition 的取象表范例，本条正是该条。",
+        "10 个 rizhu 取值穷尽该 key 的值域 ⇒ 任何盘都成立，零区分度，是作业书禁止的枚举凑数。",
+        "本条 quote「大忌四柱缺陷，五行偏枯」里没有任何脏腑或天干分组，条件只能来自 statement 的取象表本身。"
+      ]
+    },
+    {
+      "book": "ziwei/taiwei-fu",
+      "rule_id": "TAIWEIFU-021",
+      "was": "{any_of: [{key: ziwei_star, value: 紫微}, {key: ziwei_star, value: 贪狼}]}",
+      "now": [],
+      "reason_class": "not-a-condition",
+      "why": [
+        "quote 的断辞是「土星苟居其垣，若可移動；金星專司財庫，最怕空亡」——两个主语（土星/金星）都不是本门星曜名，无法表达。",
+        "映射取的「紫微」来自 quote 前半句「觀乎紫微舍躔…率列宿而成垣」，那是起景，不是判辞；「贪」来自后半句「貪守空而財源不聚」，其判据「守空」引擎未产出。",
+        "取景 + 半句拼出来的适用条件是失真，按作业书 partial-only 口径宁留空。"
+      ]
+    },
+    {
+      "book": "ziwei/ziwei-doushu-quanshu",
+      "rule_id": "ZIWEIDOUSHUQ-ZW-04",
+      "was": "{all_of: [{key: ziwei_star, value: 紫微, scope: {palace: 兄弟}}]}",
+      "now": [],
+      "reason_class": "not-a-condition",
+      "why": [
+        "statement 是「兄弟宫主兄弟姐妹与同辈关系」的通则，不含任何星名——本条对任何盘都应适用。",
+        "映射的星名「紫微」只出现在 quote 的举例句（「紫微有倚靠年長之兄…」）里，拿例文当适用条件会把通则收窄成「紫微坐兄弟宫才适用」，改变了原文适用范围。"
+      ]
+    }
+  ],
+  "kept_with_disclosure": [
+    {
+      "rule_id": "ZIWEIDOUSHUQ-ZW-01",
+      "kept": "{any_of: [{ziwei_star 天机, palace 命宫}, {ziwei_star 天机, palace 兄弟}]}",
+      "statement_supports": "「天机为兄弟主星，入命主智慧善变」——「入命」直取；「兄弟主星」推出兄弟宫一支属推断。",
+      "partial": "庙旺/落陷、与天梁同、与太阴同、会煞等支未表达（需亮度与会照事实）。"
+    },
+    {
+      "rule_id": "ZIWEIDOUSHUQ-008",
+      "kept": "{any_of: [{廉贞, palace 命宫}, {廉贞, palace 事业}]}",
+      "statement_supports": "「入命」直取；「廉贞为官禄囚星」推出事业宫一支属推断。",
+      "partial": "入庙、会煞落陷等支未表达。"
+    },
+    {
+      "rule_id": "ZIWEIDOUSHUQ-021 / TAIWEIFU-006",
+      "kept": "{all_of: [{禄存}, {天马}], same: palace}",
+      "statement_supports": "原文「禄马同宫或会照」「禄存与天马同会」。",
+      "partial": "「会照」（三方四正）未表达，只覆盖同宫一支；该支是原文条件的真子集，不是新增条件。"
+    },
+    {
+      "rule_id": "TAIWEIFU-010",
+      "kept": "{all_of: [{天魁}, {天钺}], same: palace}",
+      "statement_supports": "原文「魁钺同行」＝天魁天钺同宫。",
+      "partial": "「君臣庆会」半句未表达。"
+    },
+    {
+      "rule_id": "ZW-01 / ZIWEIDOUSHUQ-011 / -012 / -015",
+      "kept": "{ziwei_star <星>, scope: {palace: 命宫}}",
+      "statement_supports": "各条 statement 均含「入命」，直取。",
+      "partial": "庙旺/落陷、格局名（火贪铃贪、杀破狼、巨日同宫等）、会煞等支未表达。"
+    },
+    {
+      "rule_id": "QM-P37",
+      "kept": "{any_of: [...8 组 {bamen <门>, scope {gong <宫>}}...]}",
+      "statement_supports": "原文逐组列出「休加离／伤加坤／杜加艮／景加乾／生加兑／死加坎／开加震／惊加巽」，宫号按后天八卦 1坎…9离。",
+      "partial": "条名「六仪受制」的天盘六仪（戊己庚辛壬癸）无 FactKey；被制的是门+宫这一对，故只映射可机械判定的部分。"
+    },
+    {
+      "rule_id": "DR-04",
+      "kept": "{any_of: [yueling ∈ 亥子丑巳午未]}",
+      "statement_supports": "原文「冬令日主不可无火；夏令日主不可无水」；亥子丑为冬、巳午未为夏。",
+      "partial": "「不可无火/无水」所需的五行有无未表达；本条表达的是「何时适用」。"
+    }
+  ],
+  "policy_notes": [
+    "「X 为 Y 宫主星」这类星性陈述，只有当 statement 同时含「入命」等位置措辞时才按位置映射（直取）；单独由「官禄囚星」推出的宫位支一律在 kept_with_disclosure 里披露为推断。",
+    "any_of 多支规则若只覆盖原文条件的真子集，允许保留并在台账披露；不得新增原文没有的条件。",
+    "凡适用条件只能靠 quote 例文推出、而 statement 不含的，一律不映射。"
+  ]
+}

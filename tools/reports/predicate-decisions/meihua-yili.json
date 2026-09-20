@@ -1,0 +1,644 @@
+{
+  "art": "meihua+yili",
+  "generated_by": "T168 mapper (reference-arts assignment: meihua, yili)",
+  "arts": ["meihua", "yili"],
+  "books": [
+    "divination/meihua-yishu",
+    "divination/zhouyi-zhezhong",
+    "divination/huangji-jingshi"
+  ],
+  "scope": {
+    "covered_set": "predicate-gap-report.py --art meihua (33 rows) + --art yili (33 rows) = 66 anchored·unmapped rules",
+    "note": "台账 66 条 = 上述「带锚且 applicable_to 为空」集合，与 tools/predicate-gap-report.py 逐条一致（已用脚本比对 rule_id 全集，无缺无溢）。",
+    "excluded_no_anchor": {
+      "count": 19,
+      "reason": "这 19 条无 anchor，不在 predicate-gap-report.py 的未映射口径内（该口径只算 anchored 规则）；也不计入 predicate-report.py 覆盖率分母（分母同样是 anchored）。为不编造占位行、也不改动非 applicable_to 字段，未为其造 applicable_to，故不入 decisions。",
+      "rule_ids": [
+        "divination/meihua-yishu: MEIHUAYISHU-003",
+        "divination/zhouyi-zhezhong: ZZR, ZHOUYIZHEZHO-ZZR-01, ZZR-02, ZHOUYIZHEZHO-012, ZHOUYIZHEZHO-ZZR-04, ZHOUYIZHEZHO-017, ZZR-05, ZHOUYIZHEZHO-025, ZHOUYIZHEZHO-030",
+        "divination/huangji-jingshi: HR-01, HUANGJIJINGS-HR-01, HUANGJIJINGS-003, HUANGJIJINGS-004, HR-02, HUANGJIJINGS-HR-02, HUANGJIJINGS-007, HUANGJIJINGS-011, HUANGJIJINGS-020, HUANGJIJINGS-021"
+      ]
+    }
+  },
+  "engine_capability_finding": {
+    "summary": "引擎对 meihua / yili 两个 reference art 完全不产出任何盘面事实。",
+    "evidence": [
+      "tools/predicate-report.py 的 ART_EMIT_KEYS 只定义 bazi/ziwei/qimen/liuren/liuyao/qizheng 六个 art，无 meihua / yili 条目。",
+      "tools/reports/facts-sample.json 的顶层只有六个 art 键（bazi/ziwei/qimen/liuren/liuyao/qizheng），无 meihua / yili 事实样本。",
+      "references/vocab/fact-vocab.json 的 keys 列表（35 项）中没有 meihua_gua，也没有任何卦名／体用／互变／元会运世／爻位阴阳类 key；把 meihua_gua 写进 applicable_to 会直接撞 V7「FactKey 必须存在于词表」门禁。",
+      "本作业不许改词表、不许新增 key，故无法为「卦名／动爻／体卦／用卦／互卦／变卦／体用生克／用方位／元会运世／天声地音」重建谓词。"
+    ],
+    "consequence": "66 条中凡「以盘面取值为适用对象」的规则，其对象全部落在未产出的事实上 → reason_class = fact-not-emitted；其余为通论／体例／起例 → not-a-condition；另有原文自述「不可单凭一项」者 → condition-too-vague；HR-09 为工具调用约束 → meta-rule。",
+    "coverage_effect": "meihua 0.0% → 0.0%，yili 0.0% → 0.0%。分母为 anchored 规则数（meihua 33 / yili 33），不因本次判定改变。"
+  },
+  "decisions": [
+    {
+      "book": "divination/meihua-yishu",
+      "rule_id": "MR-01",
+      "decision": "unmapped",
+      "reason_class": "not-a-condition",
+      "evidence_from_statement": "八卦先天数序为乾一、兑二、离三、震四、巽五、坎六、艮七、坤八；起卦取数皆以此为本。",
+      "note": "先天八卦数序＝固定对照表／取数体例，原文没有「何种盘面用本条」的适用条件。"
+    },
+    {
+      "book": "divination/meihua-yishu",
+      "rule_id": "MEIHUAYISHU-MR-01",
+      "decision": "unmapped",
+      "reason_class": "not-a-condition",
+      "evidence_from_statement": "金生水、水生木、木生火、火生土、土生金；金克木、木克土、土克水、水克火、火克金。",
+      "note": "五行生克通论（原文自注「基础铺垫」），非盘面条件。"
+    },
+    {
+      "book": "divination/meihua-yishu",
+      "rule_id": "MEIHUAYISHU-004",
+      "decision": "unmapped",
+      "reason_class": "not-a-condition",
+      "evidence_from_statement": "震巽木旺于春；离火旺于夏；乾兑金旺于秋；坎水旺于冬；坤艮土旺于辰戌丑未月。",
+      "note": "八卦五行配四时旺衰的固定对照表。刻意不映射 yueling：本条讲的是「卦之五行旺于何季」，不是「月令为某支时用本条」；借用 yueling 会把卦气表偷换成月令条件，属编造条件。"
+    },
+    {
+      "book": "divination/meihua-yishu",
+      "rule_id": "MEIHUAYISHU-005",
+      "decision": "unmapped",
+      "reason_class": "not-a-condition",
+      "evidence_from_statement": "春坤艮衰、夏乾兑衰、秋震巽衰、冬离衰、辰戌丑未坎衰。",
+      "note": "同上条的「卦气衰」对照表（caveat 明言需与 MEIHUAYISHU-004 对照使用），体例而非条件。"
+    },
+    {
+      "book": "divination/meihua-yishu",
+      "rule_id": "MR-02",
+      "decision": "unmapped",
+      "reason_class": "not-a-condition",
+      "evidence_from_statement": "起上下卦时以总数除以 8，取余数对应八卦先天数（恰得 8 取坤）；不足 8 直接取数。",
+      "note": "起卦取法（procedure 性质，kind 已知为 doctrine 但本批不改 kind），caveat 指定须由 tool.divination.qiguagua 计算。"
+    },
+    {
+      "book": "divination/meihua-yishu",
+      "rule_id": "MEIHUAYISHU-MR-02",
+      "decision": "unmapped",
+      "reason_class": "not-a-condition",
+      "evidence_from_statement": "起动爻时以重卦总数（年 + 月 + 日 + 时）除以 6，取余数为动爻位（恰得 6 取上爻）。",
+      "note": "动爻取法／起例。动爻虽是盘面成分，但本条教的是「怎么算出来」，不是「动爻位为某值时用本条」。"
+    },
+    {
+      "book": "divination/meihua-yishu",
+      "rule_id": "MEIHUAYISHU-008",
+      "decision": "unmapped",
+      "reason_class": "not-a-condition",
+      "evidence_from_statement": "互卦只用八卦不取六十四卦名；以重卦的二三四爻为下互、三四五爻为上互；乾坤无互，互其变卦。",
+      "note": "互卦取法体例。互卦本身也无对应 FactKey。"
+    },
+    {
+      "book": "divination/meihua-yishu",
+      "rule_id": "MEIHUAYISHU-009",
+      "decision": "unmapped",
+      "reason_class": "not-a-condition",
+      "evidence_from_statement": "可数之物 / 已成器物 / 已栽树木 / 已建屋宅可起卦；江河山石及未成之物不可起卦；牛马犬豕初生 / 初置时方可起卦。",
+      "note": "起卦时机的准入条件（有无可数之物），与盘面取值无关，不构成 applicable_to 谓词。"
+    },
+    {
+      "book": "divination/meihua-yishu",
+      "rule_id": "MR-03",
+      "decision": "unmapped",
+      "reason_class": "fact-not-emitted",
+      "missing_fact": "体卦／用卦的五行与体用生克关系（体克用·用克体·用生体·体生用·比和）",
+      "evidence_from_statement": "求占者报数起卦，以体用生克及卦象类比断当日动静吉凶；用克体凶、体克用顺、比和平、用生体得、体生用失。",
+      "note": "适用对象是体用生克关系，而引擎无「体卦」「用卦」事实（无 meihua_gua 及体用 key），谓词无从复原。"
+    },
+    {
+      "book": "divination/meihua-yishu",
+      "rule_id": "MR-04",
+      "decision": "unmapped",
+      "reason_class": "not-a-condition",
+      "evidence_from_statement": "起卦后含动爻一卦为用，不含动爻一卦为体；体卦为问占者本身 / 主体，用卦为所问之事 / 客体；体用乃占断主轴。",
+      "note": "体用的定义与取法（怎么判体、怎么判用、体用各代表谁），属术语体例，非条件。"
+    },
+    {
+      "book": "divination/meihua-yishu",
+      "rule_id": "MEIHUAYISHU-MR-04",
+      "decision": "unmapped",
+      "reason_class": "fact-not-emitted",
+      "missing_fact": "体用五行生克关系（用生体／体生用／用克体／体克用／体用比和）",
+      "evidence_from_statement": "用卦生体卦——大吉，主有外财外喜；体卦生用卦——主耗、退财；用卦克体卦——大凶；体卦克用卦——主顺、克他人；体用比和（同五行）——吉，事顺。",
+      "note": "五类体用关系是盘面取值，但引擎不产出体卦／用卦及其五行，无 key 可用。"
+    },
+    {
+      "book": "divination/meihua-yishu",
+      "rule_id": "MEIHUAYISHU-013",
+      "decision": "unmapped",
+      "reason_class": "fact-not-emitted",
+      "missing_fact": "体用五行关系（比和＝同五行）",
+      "evidence_from_statement": "体用同五行（如皆木皆金）为比和，事顺利、平稳；不主大吉大凶。",
+      "note": "同上，比和是体用五行的取值关系，非可用 key。"
+    },
+    {
+      "book": "divination/meihua-yishu",
+      "rule_id": "MEIHUAYISHU-014",
+      "decision": "unmapped",
+      "reason_class": "fact-not-emitted",
+      "missing_fact": "互卦／变卦之卦与体用的生克关系（互卦、变卦、体卦、用卦）",
+      "evidence_from_statement": "互卦看事之中（过程曲折），变卦看事之终（结果归宿）；互变之卦与体用之生克须合参。",
+      "note": "互卦、变卦均无对应 FactKey；本条讲的是互变与体用的合参，主语事实全缺。"
+    },
+    {
+      "book": "divination/meihua-yishu",
+      "rule_id": "MEIHUAYISHU-015",
+      "decision": "unmapped",
+      "reason_class": "condition-too-vague",
+      "evidence_from_statement": "体用并非固定，因时因事而变；体之力借助于互变之中之比和、生扶、克泄综合判断。",
+      "note": "原文自述「体用并非固定」「因时因事而变」，条件是开放式的；同时所依赖的互变事实亦未产出。硬映射必然失真。"
+    },
+    {
+      "book": "divination/meihua-yishu",
+      "rule_id": "MEIHUAYISHU-016",
+      "decision": "unmapped",
+      "reason_class": "fact-not-emitted",
+      "missing_fact": "变卦与体卦的生克关系及变卦旺衰",
+      "evidence_from_statement": "变卦旺则减体之力，变卦克体则祸；变卦生体则福。",
+      "note": "对象为「变卦 vs 体卦」，两者皆无 FactKey。"
+    },
+    {
+      "book": "divination/meihua-yishu",
+      "rule_id": "MR-05",
+      "decision": "unmapped",
+      "reason_class": "condition-too-vague",
+      "evidence_from_statement": "应期取八卦数（如乾应戌亥年月日时）+ 时令旺衰 + 卦气强弱综合断；不可单凭一项。",
+      "note": "原文明确「不可单凭一项」，是三因合参的经验性应期，无法用谓词表达成「本盘相关」而不失真。"
+    },
+    {
+      "book": "divination/meihua-yishu",
+      "rule_id": "MEIHUAYISHU-MR-05",
+      "decision": "unmapped",
+      "reason_class": "fact-not-emitted",
+      "missing_fact": "体卦旺衰（体卦及其五行、时令旺衰）",
+      "evidence_from_statement": "体卦旺则吉力大、凶力减；体卦衰则吉力减、凶力大；判生克须先衡量旺衰。",
+      "note": "适用对象是「体卦旺／衰」，体卦本身未产出（旺衰亦需卦五行 × 时令，引擎无此事实）。"
+    },
+    {
+      "book": "divination/meihua-yishu",
+      "rule_id": "MR-07",
+      "decision": "unmapped",
+      "reason_class": "fact-not-emitted",
+      "missing_fact": "卦象多寡（坎多／离多／震多／巽多／坤多／艮多）与体用生克",
+      "evidence_from_statement": "体克用、用克体晴；用生体雨；坎多雨；离多晴；震多雷；巽多风；坤多阴；艮多雾。",
+      "note": "「某卦多」需要本卦／互卦／变卦的卦名计数，引擎无卦名事实。"
+    },
+    {
+      "book": "divination/meihua-yishu",
+      "rule_id": "MEIHUAYISHU-MR-07",
+      "decision": "unmapped",
+      "reason_class": "fact-not-emitted",
+      "missing_fact": "体用生克关系（用克体／体克用／用生体／体生用／比和）",
+      "evidence_from_statement": "用克体凶、体克用顺、用生体得益、体生用耗损、比和顺利；卦象再合参。",
+      "note": "同 MEIHUAYISHU-MR-04 的五类体用关系，事实未产出。"
+    },
+    {
+      "book": "divination/meihua-yishu",
+      "rule_id": "MEIHUAYISHU-021",
+      "decision": "unmapped",
+      "reason_class": "fact-not-emitted",
+      "missing_fact": "体用取象（体为家宅／用为外事）与体用生克关系",
+      "evidence_from_statement": "体为家宅、用为外事；体克用宅吉、用克体宅有外祟；用生体得外援、体生用宅气泄；比和家宅安。",
+      "note": "占家宅门以体用生克为条件，体卦／用卦及其生克未产出。"
+    },
+    {
+      "book": "divination/meihua-yishu",
+      "rule_id": "MEIHUAYISHU-022",
+      "decision": "unmapped",
+      "reason_class": "fact-not-emitted",
+      "missing_fact": "卦象取象（屋舍新旧／坐向／构件）与体用生克关系",
+      "evidence_from_statement": "屋舍新旧、坐向、构件依卦象分别取；体克用屋无大碍。",
+      "note": "取象所依卦象（卦名／方位卦）无 FactKey，体用生克亦未产出。"
+    },
+    {
+      "book": "divination/meihua-yishu",
+      "rule_id": "MR-08",
+      "decision": "unmapped",
+      "reason_class": "fact-not-emitted",
+      "missing_fact": "体用生克关系（体为求婚者／用为对方）",
+      "evidence_from_statement": "体为求婚者、用为对方；用生体或体克用婚成；用克体或体生用难成；比和顺成。",
+      "note": "占婚以体用生克为条件，事实未产出。"
+    },
+    {
+      "book": "divination/meihua-yishu",
+      "rule_id": "MEIHUAYISHU-MR-08",
+      "decision": "unmapped",
+      "reason_class": "fact-not-emitted",
+      "missing_fact": "卦之阴阳（阳卦为男／阴卦为女）与体用生克关系",
+      "evidence_from_statement": "体为母、用为子；阳卦为男、阴卦为女；体克用 / 用克体产难；体生用 / 用生体顺产；比和顺。",
+      "note": "既需体用生克，又需「阳卦／阴卦」判定，二者皆无 FactKey。"
+    },
+    {
+      "book": "divination/meihua-yishu",
+      "rule_id": "MR-09",
+      "decision": "unmapped",
+      "reason_class": "fact-not-emitted",
+      "missing_fact": "体用生克关系（体为我／用为财）",
+      "evidence_from_statement": "体为我、用为财；用生体得财、体克用得财；体生用耗财、用克体破财；比和守成。",
+      "note": "占求财以体用生克为条件，事实未产出。"
+    },
+    {
+      "book": "divination/meihua-yishu",
+      "rule_id": "MEIHUAYISHU-MR-09",
+      "decision": "unmapped",
+      "reason_class": "fact-not-emitted",
+      "missing_fact": "体用生克关系（交易门）",
+      "evidence_from_statement": "体用生克同求财；用克体交易凶；体克用交易顺。",
+      "note": "占交易以体用生克为条件，事实未产出。"
+    },
+    {
+      "book": "divination/meihua-yishu",
+      "rule_id": "MR-10",
+      "decision": "unmapped",
+      "reason_class": "fact-not-emitted",
+      "missing_fact": "体用生克关系（体为出行者／用为去处）",
+      "evidence_from_statement": "体为出行者、用为去处；体克用顺、用生体得益；用克体凶忌；体生用劳形耗资。",
+      "note": "占出行以体用生克为条件，事实未产出。"
+    },
+    {
+      "book": "divination/meihua-yishu",
+      "rule_id": "MEIHUAYISHU-MR-10",
+      "decision": "unmapped",
+      "reason_class": "fact-not-emitted",
+      "missing_fact": "体用生克关系（体为占者／用为行人）",
+      "evidence_from_statement": "体为占者、用为行人；用生体行人速归；体生用未归；用克体行人遇险；体克用行人受制。",
+      "note": "占行人的归期判断条件为体用生克，事实未产出。"
+    },
+    {
+      "book": "divination/meihua-yishu",
+      "rule_id": "MEIHUAYISHU-029",
+      "decision": "unmapped",
+      "reason_class": "fact-not-emitted",
+      "missing_fact": "体用生克关系（体为求见者／用为所见）",
+      "evidence_from_statement": "体为求见者、用为所见；用生体可见、有益；体克用可见而不悦；用克体不见或有阻。",
+      "note": "占谒见以体用生克为条件，事实未产出。"
+    },
+    {
+      "book": "divination/meihua-yishu",
+      "rule_id": "MEIHUAYISHU-030",
+      "decision": "unmapped",
+      "reason_class": "fact-not-emitted",
+      "missing_fact": "用卦方位（用方位即物之方）与体用生克关系",
+      "evidence_from_statement": "体为失主、用为物 / 拿者；用方位即物之方；体克用易得、用克体难得；卦象类比物形与去向。",
+      "note": "除体用生克外还要「用卦的方位」，方位卦无 FactKey。"
+    },
+    {
+      "book": "divination/meihua-yishu",
+      "rule_id": "MR-11",
+      "decision": "unmapped",
+      "reason_class": "fact-not-emitted",
+      "missing_fact": "体用生克关系与卦象类病象（坎肾／离心／震肝／艮脾）",
+      "evidence_from_statement": "体为病人、用为病；用克体病重；体克用病可制；用生体反耗体；体生用病退；比和病稳。卦象类病象（坎肾、离心、震肝、艮脾）。",
+      "note": "条件为体用生克＋卦象类象，两者皆无对应事实。"
+    },
+    {
+      "book": "divination/meihua-yishu",
+      "rule_id": "MR-12",
+      "decision": "unmapped",
+      "reason_class": "fact-not-emitted",
+      "missing_fact": "体用生克关系（体为告者／用为对方）",
+      "evidence_from_statement": "体为告者、用为对方；体克用胜、用克体败；用生体有人助、体生用己耗。",
+      "note": "占讼以体用生克为条件，事实未产出。"
+    },
+    {
+      "book": "divination/meihua-yishu",
+      "rule_id": "MEIHUAYISHU-MR-12",
+      "decision": "unmapped",
+      "reason_class": "fact-not-emitted",
+      "missing_fact": "体用生克关系（体为后人／用为坟）",
+      "evidence_from_statement": "体为后人、用为坟；体生用耗、用生体福；用克体凶；体克用安。",
+      "note": "占坟墓以体用生克为条件，事实未产出。"
+    },
+    {
+      "book": "divination/meihua-yishu",
+      "rule_id": "MR-13",
+      "decision": "unmapped",
+      "reason_class": "condition-too-vague",
+      "evidence_from_statement": "占断本于体用生克 + 卦气衰旺 + 互变补充 + 类象取义；不拘一格，须临占灵动。",
+      "note": "原文自述「不拘一格，须临占灵动」，是占断总纲（caveat：「本书重心法多于死法」），既无单一盘面条件，也无事实可依。"
+    },
+    {
+      "book": "divination/huangji-jingshi",
+      "rule_id": "HR-04",
+      "decision": "unmapped",
+      "reason_class": "not-a-condition",
+      "evidence_from_statement": "八卦先天数：乾 1、兑 2、离 3、震 4、巽 5、坎 6、艮 7、坤 8。",
+      "note": "数理来源对照表（caveat：本书仅提供数理来源，起卦由梅花体系处理），非盘面条件。"
+    },
+    {
+      "book": "divination/huangji-jingshi",
+      "rule_id": "HUANGJIJINGS-HR-04",
+      "decision": "unmapped",
+      "reason_class": "not-a-condition",
+      "evidence_from_statement": "每加一爻卦数倍增；太极生两仪→四象→八卦→十六→三十二→六十四。",
+      "note": "生成框架／体例，无盘面适用条件。"
+    },
+    {
+      "book": "divination/huangji-jingshi",
+      "rule_id": "HUANGJIJINGS-010",
+      "decision": "unmapped",
+      "reason_class": "not-a-condition",
+      "evidence_from_statement": "先天八卦方位（伏羲）— 乾南坤北、离东坎西；后天八卦方位（文王）— 离南坎北、震东兑西。",
+      "note": "先后天八卦方位对照表。词表内 gongwei 为七政十二宫位，与八卦方位名不同域，不可挪用。"
+    },
+    {
+      "book": "divination/huangji-jingshi",
+      "rule_id": "HR-05",
+      "decision": "unmapped",
+      "reason_class": "not-a-condition",
+      "evidence_from_statement": "以物观物则得理通，以我观物则有情累；圣人之观物在反观。",
+      "note": "观物方法论／哲学义理（caveat：属哲学义理，非具体占断规则）。"
+    },
+    {
+      "book": "divination/huangji-jingshi",
+      "rule_id": "HUANGJIJINGS-HR-05",
+      "decision": "unmapped",
+      "reason_class": "not-a-condition",
+      "evidence_from_statement": "天地之心可知，万化从心起；心为太极，万象皆心之发。",
+      "note": "本体论命题，无形可乎的盘面条件。"
+    },
+    {
+      "book": "divination/huangji-jingshi",
+      "rule_id": "HUANGJIJINGS-014",
+      "decision": "unmapped",
+      "reason_class": "not-a-condition",
+      "evidence_from_statement": "乾坤为体、坎离为用；体不立则用不行，用不行则体不显。",
+      "note": "序卦体用义例（caveat 明言与梅花易数「体用生克」占法不同、非占断方法），论语境而非盘面条件。"
+    },
+    {
+      "book": "divination/huangji-jingshi",
+      "rule_id": "HR-06",
+      "decision": "unmapped",
+      "reason_class": "not-a-condition",
+      "evidence_from_statement": "天声 10 类配地音 12 类、平上去入 4 调 × 开发收闭 4 等；声音之数皆受元会运世数管摄。",
+      "note": "声音唱和之数的分类体例，与个人盘面条件无关（caveat：具体音类查 tool.divination.huangji）。"
+    },
+    {
+      "book": "divination/huangji-jingshi",
+      "rule_id": "HUANGJIJINGS-HR-06",
+      "decision": "unmapped",
+      "reason_class": "not-a-condition",
+      "evidence_from_statement": "天声唱、地音和；唱和成则音律备。",
+      "note": "同 HR-06 的体例性语句，无适用条件。"
+    },
+    {
+      "book": "divination/huangji-jingshi",
+      "rule_id": "HR-07",
+      "decision": "unmapped",
+      "reason_class": "not-a-condition",
+      "evidence_from_statement": "万物分动 / 植 / 飞 / 走；总数受元会运世数管摄；动植之数 12 万 8 千有奇。",
+      "note": "万物分类与总数（caveat：术数符号意义，非生物学分类），非盘面条件。"
+    },
+    {
+      "book": "divination/huangji-jingshi",
+      "rule_id": "HR-09",
+      "decision": "unmapped",
+      "reason_class": "meta-rule",
+      "evidence_from_statement": "元会运世年甲子表 / 卦气配年表 / 声音律吕表，凡查询事实层运算，必须 tool.divination.huangji，严禁 LLM 手算。",
+      "note": "工程调用约束（工具白名单＋禁止手算），不是盘面适用条件。"
+    },
+    {
+      "book": "divination/huangji-jingshi",
+      "rule_id": "HUANGJIJINGS-HR-09",
+      "decision": "unmapped",
+      "reason_class": "not-a-condition",
+      "evidence_from_statement": "邵雍以唐尧元年甲辰（公元前 2357 年）为经世表元始首甲；后续年甲子均依此推。",
+      "note": "历元起点（年甲子推算基准），属建表体例；元会运世无 FactKey。"
+    },
+    {
+      "book": "divination/zhouyi-zhezhong",
+      "rule_id": "ZZR-01",
+      "decision": "unmapped",
+      "reason_class": "fact-not-emitted",
+      "missing_fact": "爻之阴阳（阳爻／阴爻）",
+      "evidence_from_statement": "阳爻居阳位（初三五）、阴爻居阴位（二四上）为\"当位\"；当位则正，多吉。",
+      "note": "爻位本身在 liuyao 有 shiyao/dongyao 取值，但「当位」还须判爻之阴阳，而引擎不产出爻的阴阳属性事实；仅写爻位会丢掉本条的全部条件，属失真映射。"
+    },
+    {
+      "book": "divination/zhouyi-zhezhong",
+      "rule_id": "ZHOUYIZHEZHO-004",
+      "decision": "unmapped",
+      "reason_class": "fact-not-emitted",
+      "missing_fact": "爻之阴阳（刚中／柔中）",
+      "evidence_from_statement": "得中又当位（如九五、六二）为\"中正\"，最贵之爻；多主大吉、君子之道。",
+      "note": "「中正」＝中位＋当位（阴阳得位）双重条件，阴阳事实未产出。"
+    },
+    {
+      "book": "divination/zhouyi-zhezhong",
+      "rule_id": "ZHOUYIZHEZHO-005",
+      "decision": "unmapped",
+      "reason_class": "fact-not-emitted",
+      "missing_fact": "相应两爻的阴阳属性（阴阳相应／同性相应）；且无「应位」事实",
+      "evidence_from_statement": "初与四、二与五、三与上相应；阴阳相应为有应（吉象）、同性相应为无应（孤立）。",
+      "note": "取位对应（初-四／二-五／三-上）是固定结构，但本条断吉凶取决于两爻阴阳是否相反，该事实未产出。刻意不映射 dongyao/shiyao：本条不区分动爻与本卦爻位，映射会引入原文没有的区分。"
+    },
+    {
+      "book": "divination/zhouyi-zhezhong",
+      "rule_id": "ZHOUYIZHEZHO-006",
+      "decision": "unmapped",
+      "reason_class": "fact-not-emitted",
+      "missing_fact": "相邻两爻的阴阳属性（阴阳相比为亲／同性为敌）",
+      "evidence_from_statement": "相邻两爻为比；阴阳相比为亲、同性为敌。比关系次于应。",
+      "note": "「比」的吉凶取决于相邻爻之阴阳，该事实未产出。"
+    },
+    {
+      "book": "divination/zhouyi-zhezhong",
+      "rule_id": "ZHOUYIZHEZHO-007",
+      "decision": "unmapped",
+      "reason_class": "fact-not-emitted",
+      "missing_fact": "卦主（成卦之主／主卦之主）",
+      "evidence_from_statement": "一卦之主爻多为五爻（君位）；或以\"成卦之主\"（一阴一阳独成卦义者）；或以\"主卦之主\"（位最尊德最大者）。",
+      "note": "认定卦主需全卦爻象与卦义，引擎不产出「卦主」事实，也无卦名义理可依。"
+    },
+    {
+      "book": "divination/zhouyi-zhezhong",
+      "rule_id": "ZHOUYIZHEZHO-008",
+      "decision": "unmapped",
+      "reason_class": "not-a-condition",
+      "evidence_from_statement": "易爻随卦时而变义；同一爻位在不同卦中义不同（如九三在乾为君子终日乾乾、在坤无）。",
+      "note": "释爻方法论（caveat：不可执位以释爻）——原文正是在说同一位无固定含义，映射反而违其本旨。"
+    },
+    {
+      "book": "divination/zhouyi-zhezhong",
+      "rule_id": "ZHOUYIZHEZHO-ZZR-02",
+      "decision": "unmapped",
+      "reason_class": "not-a-condition",
+      "evidence_from_statement": "上下两卦之德合为一卦德（如乾下乾上为健中健、坎下离上为水火既济）。",
+      "note": "卦德合成体例；上下卦（卦名）无 FactKey，且体例本身非条件。"
+    },
+    {
+      "book": "divination/zhouyi-zhezhong",
+      "rule_id": "ZHOUYIZHEZHO-011",
+      "decision": "unmapped",
+      "reason_class": "not-a-condition",
+      "evidence_from_statement": "64 卦两两为反对（综卦）；反对之卦义相反相成（如屯蒙、需讼、师比）。",
+      "note": "卦序／反对体例表，非盘面条件。"
+    },
+    {
+      "book": "divination/zhouyi-zhezhong",
+      "rule_id": "ZZR-03",
+      "decision": "unmapped",
+      "reason_class": "not-a-condition",
+      "evidence_from_statement": "乾健、坤顺、震动、巽入、坎陷、离丽、艮止、兑悦；为八卦本德。",
+      "note": "八卦本德取象表，非条件。"
+    },
+    {
+      "book": "divination/zhouyi-zhezhong",
+      "rule_id": "ZHOUYIZHEZHO-ZZR-03",
+      "decision": "unmapped",
+      "reason_class": "not-a-condition",
+      "evidence_from_statement": "八卦各有动物 / 身体 / 家人 / 方位 / 季节等多重类象（详卷十六）。",
+      "note": "类象总目（并指向卷十六），无适用条件。"
+    },
+    {
+      "book": "divination/zhouyi-zhezhong",
+      "rule_id": "ZZR-04",
+      "decision": "unmapped",
+      "reason_class": "not-a-condition",
+      "evidence_from_statement": "易有太极，是生两仪、两仪生四象、四象生八卦；为易理生成之总框架。",
+      "note": "易理生成总框架，非条件。"
+    },
+    {
+      "book": "divination/zhouyi-zhezhong",
+      "rule_id": "ZHOUYIZHEZHO-018",
+      "decision": "unmapped",
+      "reason_class": "not-a-condition",
+      "evidence_from_statement": "六爻分三才；初二为地、三四为人、五上为天。",
+      "note": "爻位与三才的固定对应表。虽提及爻位，但为静态对照体例，没有「何盘用本条」的条件。"
+    },
+    {
+      "book": "divination/zhouyi-zhezhong",
+      "rule_id": "ZHOUYIZHEZHO-019",
+      "decision": "unmapped",
+      "reason_class": "not-a-condition",
+      "evidence_from_statement": "吉凶生大业；悔吝者言乎其小疵；动爻之吉凶悔吝皆由象生。",
+      "note": "系辞通论（吉凶悔吝之义），非盘面条件。"
+    },
+    {
+      "book": "divination/zhouyi-zhezhong",
+      "rule_id": "ZHOUYIZHEZHO-ZZR-05",
+      "decision": "unmapped",
+      "reason_class": "not-a-condition",
+      "evidence_from_statement": "杂卦传以两两反对论卦义之异同（乾刚坤柔、比乐师忧）。",
+      "note": "杂卦传体例，非条件。"
+    },
+    {
+      "book": "divination/zhouyi-zhezhong",
+      "rule_id": "ZZR-06",
+      "decision": "unmapped",
+      "reason_class": "not-a-condition",
+      "evidence_from_statement": "河图天数 1+3+5+7+9 = 25、地数 2+4+6+8+10 = 30、合 55；洛书纵横皆 15。",
+      "note": "河洛数理，非盘面条件。"
+    },
+    {
+      "book": "divination/zhouyi-zhezhong",
+      "rule_id": "ZHOUYIZHEZHO-ZZR-06",
+      "decision": "unmapped",
+      "reason_class": "not-a-condition",
+      "evidence_from_statement": "太极一、两仪二、四象四、八卦八、十六、三十二、六十四；每加一爻倍增。",
+      "note": "生成序数体例，非条件。"
+    },
+    {
+      "book": "divination/zhouyi-zhezhong",
+      "rule_id": "ZHOUYIZHEZHO-024",
+      "decision": "unmapped",
+      "reason_class": "not-a-condition",
+      "evidence_from_statement": "50 根蓍草、去 1 不用、余 49 根、分二挂一揲四归奇，共 18 变成一卦。",
+      "note": "揲蓍起卦程序（caveat：必须 tool.divination.qiguagua），起例非条件。"
+    },
+    {
+      "book": "divination/zhouyi-zhezhong",
+      "rule_id": "ZHOUYIZHEZHO-026",
+      "decision": "unmapped",
+      "reason_class": "fact-not-emitted",
+      "missing_fact": "变爻数目与变爻位、卦名（彖辞／爻辞所指之卦）",
+      "evidence_from_statement": "六爻全静占本卦彖辞 / 卦辞；一爻变占本卦变爻爻辞；二爻变占本卦二变爻、上爻为主；三爻变占本卦及变卦彖辞、本卦为主；四爻变占变卦二不变爻、下爻为主；五爻变占变卦不变爻；六爻全变占之卦彖辞（乾用九 / 坤用六例外）。",
+      "note": "变占法：判据是「变爻的个数」，需要全卦六爻动静集合与卦名；引擎只给动爻位，无「变爻计数」「本卦／变卦卦名」事实，无法复原。"
+    },
+    {
+      "book": "divination/zhouyi-zhezhong",
+      "rule_id": "ZHOUYIZHEZHO-027",
+      "decision": "unmapped",
+      "reason_class": "not-a-condition",
+      "evidence_from_statement": "易者寡过之书；占断为辅，修身为本；君子知幾不待占而后行。",
+      "note": "价值论／修身主张（caveat：本书反对依赖占卜决疑而废修身），无盘面条件。"
+    },
+    {
+      "book": "divination/zhouyi-zhezhong",
+      "rule_id": "ZZR-07",
+      "decision": "unmapped",
+      "reason_class": "not-a-condition",
+      "evidence_from_statement": "本书解卦四层：先程传（义理）、次本义（义理 + 象数兼）、次集说（诸家）、终案语（折中）；学者依此层次研读。",
+      "note": "阅读层次／编纂体例，非条件。"
+    },
+    {
+      "book": "divination/zhouyi-zhezhong",
+      "rule_id": "ZHOUYIZHEZHO-ZZR-07",
+      "decision": "unmapped",
+      "reason_class": "not-a-condition",
+      "evidence_from_statement": "程颐重义理（伊川易传）、朱熹兼象数与卜筮（本义）；本书以朱为正、程为佐。",
+      "note": "学派取舍体例（caveat 已注「形而上／形而下」同源），非盘面条件。"
+    },
+    {
+      "book": "divination/zhouyi-zhezhong",
+      "rule_id": "ZHOUYIZHEZHO-031",
+      "decision": "unmapped",
+      "reason_class": "condition-too-vague",
+      "evidence_from_statement": "解卦兼综时位 / 才德 / 应比 / 中正 / 卦主等多角度；不可执一以蔽义。",
+      "note": "原文自述多角度合参且「不可执一」，本就拒绝单一条件；所涉及的应比、中正、卦主亦均未产出。"
+    }
+  ],
+  "summary": {
+    "total_decisions": 66,
+    "by_art": {
+      "meihua": {
+        "total": 33,
+        "mapped": 0,
+        "unmapped": 33,
+        "reason_class": {
+          "not-a-condition": 9,
+          "fact-not-emitted": 21,
+          "condition-too-vague": 3,
+          "meta-rule": 0
+        }
+      },
+      "yili": {
+        "total": 33,
+        "mapped": 0,
+        "unmapped": 33,
+        "by_book": {
+          "divination/huangji-jingshi": {
+            "total": 11,
+            "reason_class": {
+              "not-a-condition": 10,
+              "meta-rule": 1
+            }
+          },
+          "divination/zhouyi-zhezhong": {
+            "total": 22,
+            "reason_class": {
+              "not-a-condition": 15,
+              "fact-not-emitted": 6,
+              "condition-too-vague": 1
+            }
+          }
+        },
+        "reason_class": {
+          "not-a-condition": 25,
+          "fact-not-emitted": 6,
+          "condition-too-vague": 1,
+          "meta-rule": 1
+        }
+      }
+    },
+    "overall_reason_class": {
+      "not-a-condition": 34,
+      "fact-not-emitted": 27,
+      "condition-too-vague": 4,
+      "meta-rule": 1
+    },
+    "applicable_to_edits": 0,
+    "coverage_before": {"meihua": 0.0, "yili": 0.0},
+    "coverage_after": {"meihua": 0.0, "yili": 0.0}
+  }
+}

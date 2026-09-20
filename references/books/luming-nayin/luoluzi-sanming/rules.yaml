@@ -215,7 +215,7 @@ rules:
     start_line: 564
     end_line: 564
   quote: 若乃身旺鬼絕，雖破命而長年；鬼旺身衰，逢建命而夭壽。
-  applicable_to: []
+  applicable_to: [{key: rizhu_strength, value: 中弱}, {key: rizhu_strength, value: 偏弱}, {key: rizhu_strength, value: 极弱}]
   caveats: []
   school: null
   verified: false
@@ -297,7 +297,7 @@ rules:
     start_line: 617
     end_line: 617
   quote: 生月帶祿，入仕居赫奕之尊；重犯奇儀，蘊藉抱出群之器。
-  applicable_to: []
+  applicable_to: {any_of: [{all_of: [{any_of: [{key: rizhu, value: 甲}, {key: rizhu, value: 乙}]}, {any_of: [{key: yueling, value: 申}, {key: yueling, value: 酉}, {key: yueling, value: 戌}]}]}, {all_of: [{any_of: [{key: rizhu, value: 丙}, {key: rizhu, value: 丁}]}, {any_of: [{key: yueling, value: 亥}, {key: yueling, value: 子}, {key: yueling, value: 丑}]}]}, {all_of: [{any_of: [{key: rizhu, value: 戊}, {key: rizhu, value: 己}]}, {any_of: [{key: yueling, value: 寅}, {key: yueling, value: 卯}, {key: yueling, value: 辰}]}]}, {all_of: [{any_of: [{key: rizhu, value: 庚}, {key: rizhu, value: 辛}]}, {any_of: [{key: yueling, value: 巳}, {key: yueling, value: 午}, {key: yueling, value: 未}]}]}, {all_of: [{any_of: [{key: rizhu, value: 壬}, {key: rizhu, value: 癸}]}, {any_of: [{key: yueling, value: 辰}, {key: yueling, value: 戌}, {key: yueling, value: 丑}, {key: yueling, value: 未}]}]}]}
   caveats: []
   school: null
   verified: false

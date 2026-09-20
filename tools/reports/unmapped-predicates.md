@@ -1,448 +1,645 @@
-# 未能翻译成谓词的规则
+# 未能翻译成谓词的规则（可复算版）
 
-本轮只改 `applicable_to`。下列锚定规则的 statement 无法用该 art 引擎已产出的 FactKey 忠实表达，保持空数组。
+由 `python3 tools/predicate-gap-report.py --md tools/reports/unmapped-predicates.md` 生成。
+口径：`references/books/*/*/rules.yaml` 中 **有 anchor 且 `applicable_to` 为空** 的规则。
+旧版本文件无生成器、含 1 条已不存在的 `LIURENZHIYIN-015`，且把每一条都标成
+「条件过于复合，现有谓词表达不了」——逐条复核后该说法只对其中少数成立，故整份重写。
 
-共 440 条。
+`分类` 是机械判据（见脚本 `classify()`），`台账理由` 是逐条复核结论（见
+`tools/reports/predicate-decisions/*.json`）。两者不一致时以台账为准，且台账必须给原文依据。
 
-| art | book | rule_id | 原因分类 | 需要的事实 |
-|---|---|---|---|---|
-| `bazi` | `bazi/ditiansui-chanwei` | `DR-01` | 条件过于复合，现有谓词表达不了 |  |
-| `bazi` | `bazi/ditiansui-chanwei` | `DITIANSUICHA-DR-01` | 条件过于复合，现有谓词表达不了 |  |
-| `bazi` | `bazi/ditiansui-chanwei` | `DITIANSUICHA-005` | 条件过于复合，现有谓词表达不了 |  |
-| `bazi` | `bazi/ditiansui-chanwei` | `DITIANSUICHA-006` | 条件过于复合，现有谓词表达不了 |  |
-| `bazi` | `bazi/ditiansui-chanwei` | `DITIANSUICHA-007` | 条件过于复合，现有谓词表达不了 |  |
-| `bazi` | `bazi/ditiansui-chanwei` | `DITIANSUICHA-008` | 条件过于复合，现有谓词表达不了 |  |
-| `bazi` | `bazi/ditiansui-chanwei` | `DR-02` | 条件过于复合，现有谓词表达不了 |  |
-| `bazi` | `bazi/ditiansui-chanwei` | `DITIANSUICHA-013` | 条件过于复合，现有谓词表达不了 |  |
-| `bazi` | `bazi/ditiansui-chanwei` | `DITIANSUICHA-015` | 条件过于复合，现有谓词表达不了 |  |
-| `bazi` | `bazi/ditiansui-chanwei` | `DITIANSUICHA-016` | 条件过于复合，现有谓词表达不了 |  |
-| `bazi` | `bazi/ditiansui-chanwei` | `DR-03` | 条件过于复合，现有谓词表达不了 |  |
-| `bazi` | `bazi/ditiansui-chanwei` | `DITIANSUICHA-019` | 条件过于复合，现有谓词表达不了 |  |
-| `bazi` | `bazi/ditiansui-chanwei` | `DITIANSUICHA-020` | 条件过于复合，现有谓词表达不了 |  |
-| `bazi` | `bazi/ditiansui-chanwei` | `DITIANSUICHA-023` | 条件过于复合，现有谓词表达不了 |  |
-| `bazi` | `bazi/ditiansui-chanwei` | `DITIANSUICHA-024` | 条件过于复合，现有谓词表达不了 |  |
-| `bazi` | `bazi/ditiansui-chanwei` | `DITIANSUICHA-025` | 条件过于复合，现有谓词表达不了 |  |
-| `bazi` | `bazi/ditiansui-chanwei` | `DITIANSUICHA-026` | 条件过于复合，现有谓词表达不了 |  |
-| `bazi` | `bazi/ditiansui-chanwei` | `DR-04` | 条件过于复合，现有谓词表达不了 |  |
-| `bazi` | `bazi/ditiansui-chanwei` | `DITIANSUICHA-DR-04` | 条件过于复合，现有谓词表达不了 |  |
-| `bazi` | `bazi/ditiansui-chanwei` | `DITIANSUICHA-029` | 条件过于复合，现有谓词表达不了 |  |
-| `bazi` | `bazi/ditiansui-chanwei` | `DITIANSUICHA-031` | 条件过于复合，现有谓词表达不了 |  |
-| `bazi` | `bazi/ditiansui-chanwei` | `DITIANSUICHA-032` | 条件过于复合，现有谓词表达不了 |  |
-| `bazi` | `bazi/ditiansui-chanwei` | `DITIANSUICHA-037` | 条件过于复合，现有谓词表达不了 |  |
-| `bazi` | `bazi/ditiansui-chanwei` | `DITIANSUICHA-040` | 条件过于复合，现有谓词表达不了 |  |
-| `bazi` | `bazi/ditiansui-chanwei` | `DITIANSUICHA-041` | 条件过于复合，现有谓词表达不了 |  |
-| `bazi` | `bazi/ditiansui-chanwei` | `DITIANSUICHA-042` | 条件过于复合，现有谓词表达不了 |  |
-| `bazi` | `bazi/ditiansui-chanwei` | `DR-06` | 条件过于复合，现有谓词表达不了 |  |
-| `bazi` | `bazi/ditiansui-chanwei` | `DITIANSUICHA-046` | 条件过于复合，现有谓词表达不了 |  |
-| `bazi` | `bazi/ditiansui-chanwei` | `DITIANSUICHA-051` | 条件过于复合，现有谓词表达不了 |  |
-| `bazi` | `bazi/qiongtong-baojian` | `QTB` | 条件过于复合，现有谓词表达不了 |  |
-| `bazi` | `bazi/qiongtong-baojian` | `QR` | 条件过于复合，现有谓词表达不了 |  |
-| `bazi` | `bazi/qiongtong-baojian` | `QR-00-01` | 条件过于复合，现有谓词表达不了 |  |
-| `bazi` | `bazi/qiongtong-baojian` | `QIONGTONGBAO-024` | 条件过于复合，现有谓词表达不了 |  |
-| `bazi` | `bazi/qiongtong-baojian` | `QIONGTONGBAO-044` | 条件过于复合，现有谓词表达不了 |  |
-| `bazi` | `bazi/sanming-tonghui` | `R-01` | 条件过于复合，现有谓词表达不了 |  |
-| `bazi` | `bazi/sanming-tonghui` | `SANMINGTONGH-R-01` | 条件过于复合，现有谓词表达不了 |  |
-| `bazi` | `bazi/sanming-tonghui` | `SANMINGTONGH-004` | 条件过于复合，现有谓词表达不了 |  |
-| `bazi` | `bazi/sanming-tonghui` | `R-02` | 条件过于复合，现有谓词表达不了 |  |
-| `bazi` | `bazi/sanming-tonghui` | `SANMINGTONGH-R-02` | 条件过于复合，现有谓词表达不了 |  |
-| `bazi` | `bazi/sanming-tonghui` | `SANMINGTONGH-007` | 条件过于复合，现有谓词表达不了 |  |
-| `bazi` | `bazi/sanming-tonghui` | `SANMINGTONGH-009` | 条件过于复合，现有谓词表达不了 |  |
-| `bazi` | `bazi/sanming-tonghui` | `SANMINGTONGH-010` | 条件过于复合，现有谓词表达不了 |  |
-| `bazi` | `bazi/sanming-tonghui` | `SANMINGTONGH-011` | 条件过于复合，现有谓词表达不了 |  |
-| `bazi` | `bazi/sanming-tonghui` | `SANMINGTONGH-013` | 条件过于复合，现有谓词表达不了 |  |
-| `bazi` | `bazi/sanming-tonghui` | `SANMINGTONGH-015` | 条件过于复合，现有谓词表达不了 |  |
-| `bazi` | `bazi/sanming-tonghui` | `SANMINGTONGH-016` | 条件过于复合，现有谓词表达不了 |  |
-| `bazi` | `bazi/sanming-tonghui` | `SANMINGTONGH-017` | 条件过于复合，现有谓词表达不了 |  |
-| `bazi` | `bazi/sanming-tonghui` | `SANMINGTONGH-021` | 条件过于复合，现有谓词表达不了 |  |
-| `bazi` | `bazi/sanming-tonghui` | `SANMINGTONGH-022` | 条件过于复合，现有谓词表达不了 |  |
-| `bazi` | `bazi/sanming-tonghui` | `SANMINGTONGH-023` | 条件过于复合，现有谓词表达不了 |  |
-| `bazi` | `bazi/sanming-tonghui` | `SANMINGTONGH-026` | 条件过于复合，现有谓词表达不了 |  |
-| `bazi` | `bazi/sanming-tonghui` | `SANMINGTONGH-028` | 条件过于复合，现有谓词表达不了 |  |
-| `bazi` | `bazi/sanming-tonghui` | `SANMINGTONGH-030` | 条件过于复合，现有谓词表达不了 |  |
-| `bazi` | `bazi/sanming-tonghui` | `SANMINGTONGH-036` | 条件过于复合，现有谓词表达不了 |  |
-| `bazi` | `bazi/sanming-tonghui` | `SANMINGTONGH-038` | 条件过于复合，现有谓词表达不了 |  |
-| `bazi` | `bazi/sanming-tonghui` | `SANMINGTONGH-040` | 条件过于复合，现有谓词表达不了 |  |
-| `bazi` | `bazi/sanming-tonghui` | `SANMINGTONGH-046` | 条件过于复合，现有谓词表达不了 |  |
-| `bazi` | `bazi/sanming-tonghui` | `SANMINGTONGH-048` | 条件过于复合，现有谓词表达不了 |  |
-| `bazi` | `bazi/sanming-tonghui` | `SANMINGTONGH-049` | 条件过于复合，现有谓词表达不了 |  |
-| `bazi` | `bazi/sanming-tonghui` | `SANMINGTONGH-051` | 条件过于复合，现有谓词表达不了 |  |
-| `bazi` | `bazi/sanming-tonghui` | `SANMINGTONGH-R-06` | 条件过于复合，现有谓词表达不了 |  |
-| `bazi` | `bazi/sanming-tonghui` | `SANMINGTONGH-060` | 条件过于复合，现有谓词表达不了 |  |
-| `bazi` | `bazi/sanming-tonghui` | `SANMINGTONGH-065` | 条件过于复合，现有谓词表达不了 |  |
-| `bazi` | `bazi/sanming-tonghui` | `SANMINGTONGH-066` | 条件过于复合，现有谓词表达不了 |  |
-| `bazi` | `bazi/sanming-tonghui` | `R-07` | 条件过于复合，现有谓词表达不了 |  |
-| `bazi` | `bazi/sanming-tonghui` | `SANMINGTONGH-070` | 条件过于复合，现有谓词表达不了 |  |
-| `bazi` | `bazi/sanming-tonghui` | `SANMINGTONGH-075` | 条件过于复合，现有谓词表达不了 |  |
-| `bazi` | `bazi/sanming-tonghui` | `SANMINGTONGH-076` | 条件过于复合，现有谓词表达不了 |  |
-| `bazi` | `bazi/sanming-tonghui` | `SANMINGTONGH-078` | 条件过于复合，现有谓词表达不了 |  |
-| `bazi` | `bazi/sanming-tonghui` | `R-09` | 条件过于复合，现有谓词表达不了 |  |
-| `bazi` | `bazi/sanming-tonghui` | `SANMINGTONGH-083` | 条件过于复合，现有谓词表达不了 |  |
-| `bazi` | `bazi/sanming-tonghui` | `SANMINGTONGH-084` | 条件过于复合，现有谓词表达不了 |  |
-| `bazi` | `bazi/sanming-tonghui` | `SANMINGTONGH-091` | 条件过于复合，现有谓词表达不了 |  |
-| `bazi` | `bazi/sanming-tonghui` | `SANMINGTONGH-094` | 条件过于复合，现有谓词表达不了 |  |
-| `bazi` | `bazi/sanming-tonghui` | `SANMINGTONGH-095` | 条件过于复合，现有谓词表达不了 |  |
-| `bazi` | `bazi/sanming-tonghui` | `SANMINGTONGH-096` | 条件过于复合，现有谓词表达不了 |  |
-| `bazi` | `bazi/sanming-tonghui` | `SANMINGTONGH-097` | 条件过于复合，现有谓词表达不了 |  |
-| `bazi` | `bazi/sanming-tonghui` | `SANMINGTONGH-098` | 条件过于复合，现有谓词表达不了 |  |
-| `bazi` | `bazi/sanming-tonghui` | `SANMINGTONGH-100` | 条件过于复合，现有谓词表达不了 |  |
-| `bazi` | `bazi/sanming-tonghui` | `SANMINGTONGH-106` | 条件过于复合，现有谓词表达不了 |  |
-| `bazi` | `bazi/yuanhai-ziping` | `YR-01` | 条件过于复合，现有谓词表达不了 |  |
-| `bazi` | `bazi/yuanhai-ziping` | `YUANHAIZIPIN-YR-01` | 条件过于复合，现有谓词表达不了 |  |
-| `bazi` | `bazi/yuanhai-ziping` | `YUANHAIZIPIN-003` | 条件过于复合，现有谓词表达不了 |  |
-| `bazi` | `bazi/yuanhai-ziping` | `YUANHAIZIPIN-YR-03` | 条件过于复合，现有谓词表达不了 |  |
-| `bazi` | `bazi/yuanhai-ziping` | `YUANHAIZIPIN-025` | 条件过于复合，现有谓词表达不了 |  |
-| `bazi` | `bazi/yuanhai-ziping` | `YUANHAIZIPIN-030` | 条件过于复合，现有谓词表达不了 |  |
-| `bazi` | `bazi/yuanhai-ziping` | `YUANHAIZIPIN-031` | 条件过于复合，现有谓词表达不了 |  |
-| `bazi` | `bazi/yuanhai-ziping` | `YUANHAIZIPIN-034` | 条件过于复合，现有谓词表达不了 |  |
-| `bazi` | `bazi/yuanhai-ziping` | `YUANHAIZIPIN-035` | 条件过于复合，现有谓词表达不了 |  |
-| `bazi` | `bazi/yuanhai-ziping` | `YR-P-01` | 条件过于复合，现有谓词表达不了 |  |
-| `bazi` | `bazi/ziping-zhenquan` | `ZPR-16` | 条件过于复合，现有谓词表达不了 |  |
-| `bazi` | `bazi/ziping-zhenquan` | `ZPR-P-01` | 条件过于复合，现有谓词表达不了 |  |
-| `bazi` | `bazi/ziping-zhenquan` | `ZPR-P-02` | 条件过于复合，现有谓词表达不了 |  |
-| `bazi` | `luming-nayin/li-xuzhong-mingshu` | `LX-01` | 条件过于复合，现有谓词表达不了 |  |
-| `bazi` | `luming-nayin/li-xuzhong-mingshu` | `LIXUZHONGMIN-LX-01` | 条件过于复合，现有谓词表达不了 |  |
-| `bazi` | `luming-nayin/li-xuzhong-mingshu` | `LIXUZHONGMIN-003` | 条件过于复合，现有谓词表达不了 |  |
-| `bazi` | `luming-nayin/li-xuzhong-mingshu` | `LIXUZHONGMIN-004` | 条件过于复合，现有谓词表达不了 |  |
-| `bazi` | `luming-nayin/li-xuzhong-mingshu` | `LIXUZHONGMIN-005` | 条件过于复合，现有谓词表达不了 |  |
-| `bazi` | `luming-nayin/li-xuzhong-mingshu` | `LIXUZHONGMIN-006` | 条件过于复合，现有谓词表达不了 |  |
-| `bazi` | `luming-nayin/li-xuzhong-mingshu` | `LIXUZHONGMIN-007` | 条件过于复合，现有谓词表达不了 |  |
-| `bazi` | `luming-nayin/li-xuzhong-mingshu` | `LIXUZHONGMIN-008` | 条件过于复合，现有谓词表达不了 |  |
-| `bazi` | `luming-nayin/li-xuzhong-mingshu` | `LIXUZHONGMIN-009` | 条件过于复合，现有谓词表达不了 |  |
-| `bazi` | `luming-nayin/li-xuzhong-mingshu` | `LIXUZHONGMIN-010` | 条件过于复合，现有谓词表达不了 |  |
-| `bazi` | `luming-nayin/li-xuzhong-mingshu` | `LIXUZHONGMIN-011` | 条件过于复合，现有谓词表达不了 |  |
-| `bazi` | `luming-nayin/li-xuzhong-mingshu` | `LIXUZHONGMIN-012` | 条件过于复合，现有谓词表达不了 |  |
-| `bazi` | `luming-nayin/li-xuzhong-mingshu` | `LIXUZHONGMIN-013` | 条件过于复合，现有谓词表达不了 |  |
-| `bazi` | `luming-nayin/li-xuzhong-mingshu` | `LIXUZHONGMIN-014` | 条件过于复合，现有谓词表达不了 |  |
-| `bazi` | `luming-nayin/li-xuzhong-mingshu` | `LIXUZHONGMIN-015` | 条件过于复合，现有谓词表达不了 |  |
-| `bazi` | `luming-nayin/li-xuzhong-mingshu` | `LIXUZHONGMIN-016` | 条件过于复合，现有谓词表达不了 |  |
-| `bazi` | `luming-nayin/li-xuzhong-mingshu` | `LIXUZHONGMIN-017` | 条件过于复合，现有谓词表达不了 |  |
-| `bazi` | `luming-nayin/li-xuzhong-mingshu` | `LIXUZHONGMIN-018` | 条件过于复合，现有谓词表达不了 |  |
-| `bazi` | `luming-nayin/li-xuzhong-mingshu` | `LIXUZHONGMIN-019` | 条件过于复合，现有谓词表达不了 |  |
-| `bazi` | `luming-nayin/li-xuzhong-mingshu` | `LIXUZHONGMIN-020` | 条件过于复合，现有谓词表达不了 |  |
-| `bazi` | `luming-nayin/li-xuzhong-mingshu` | `LIXUZHONGMIN-021` | 条件过于复合，现有谓词表达不了 |  |
-| `bazi` | `luming-nayin/li-xuzhong-mingshu` | `LIXUZHONGMIN-022` | 条件过于复合，现有谓词表达不了 |  |
-| `bazi` | `luming-nayin/li-xuzhong-mingshu` | `LIXUZHONGMIN-023` | 条件过于复合，现有谓词表达不了 |  |
-| `bazi` | `luming-nayin/li-xuzhong-mingshu` | `LIXUZHONGMIN-024` | 条件过于复合，现有谓词表达不了 |  |
-| `bazi` | `luming-nayin/li-xuzhong-mingshu` | `LIXUZHONGMIN-025` | 条件过于复合，现有谓词表达不了 |  |
-| `bazi` | `luming-nayin/li-xuzhong-mingshu` | `LIXUZHONGMIN-026` | 条件过于复合，现有谓词表达不了 |  |
-| `bazi` | `luming-nayin/li-xuzhong-mingshu` | `LIXUZHONGMIN-027` | 条件过于复合，现有谓词表达不了 |  |
-| `bazi` | `luming-nayin/li-xuzhong-mingshu` | `LIXUZHONGMIN-028` | 条件过于复合，现有谓词表达不了 |  |
-| `bazi` | `luming-nayin/li-xuzhong-mingshu` | `LIXUZHONGMIN-029` | 条件过于复合，现有谓词表达不了 |  |
-| `bazi` | `luming-nayin/li-xuzhong-mingshu` | `LIXUZHONGMIN-030` | 条件过于复合，现有谓词表达不了 |  |
-| `bazi` | `luming-nayin/li-xuzhong-mingshu` | `LIXUZHONGMIN-031` | 条件过于复合，现有谓词表达不了 |  |
-| `bazi` | `luming-nayin/li-xuzhong-mingshu` | `LIXUZHONGMIN-032` | 条件过于复合，现有谓词表达不了 |  |
-| `bazi` | `luming-nayin/li-xuzhong-mingshu` | `LIXUZHONGMIN-033` | 条件过于复合，现有谓词表达不了 |  |
-| `bazi` | `luming-nayin/li-xuzhong-mingshu` | `LIXUZHONGMIN-034` | 条件过于复合，现有谓词表达不了 |  |
-| `bazi` | `luming-nayin/li-xuzhong-mingshu` | `LIXUZHONGMIN-035` | 条件过于复合，现有谓词表达不了 |  |
-| `bazi` | `luming-nayin/li-xuzhong-mingshu` | `LIXUZHONGMIN-036` | 条件过于复合，现有谓词表达不了 |  |
-| `bazi` | `luming-nayin/li-xuzhong-mingshu` | `LIXUZHONGMIN-037` | 条件过于复合，现有谓词表达不了 |  |
-| `bazi` | `luming-nayin/li-xuzhong-mingshu` | `LIXUZHONGMIN-038` | 条件过于复合，现有谓词表达不了 |  |
-| `bazi` | `luming-nayin/li-xuzhong-mingshu` | `LIXUZHONGMIN-039` | 条件过于复合，现有谓词表达不了 |  |
-| `bazi` | `luming-nayin/li-xuzhong-mingshu` | `LIXUZHONGMIN-040` | 条件过于复合，现有谓词表达不了 |  |
-| `bazi` | `luming-nayin/li-xuzhong-mingshu` | `LIXUZHONGMIN-041` | 条件过于复合，现有谓词表达不了 |  |
-| `bazi` | `luming-nayin/li-xuzhong-mingshu` | `LIXUZHONGMIN-042` | 条件过于复合，现有谓词表达不了 |  |
-| `bazi` | `luming-nayin/li-xuzhong-mingshu` | `LIXUZHONGMIN-043` | 条件过于复合，现有谓词表达不了 |  |
-| `bazi` | `luming-nayin/li-xuzhong-mingshu` | `LIXUZHONGMIN-044` | 条件过于复合，现有谓词表达不了 |  |
-| `bazi` | `luming-nayin/li-xuzhong-mingshu` | `LIXUZHONGMIN-045` | 条件过于复合，现有谓词表达不了 |  |
-| `bazi` | `luming-nayin/li-xuzhong-mingshu` | `LIXUZHONGMIN-046` | 条件过于复合，现有谓词表达不了 |  |
-| `bazi` | `luming-nayin/li-xuzhong-mingshu` | `LIXUZHONGMIN-047` | 条件过于复合，现有谓词表达不了 |  |
-| `bazi` | `luming-nayin/li-xuzhong-mingshu` | `LIXUZHONGMIN-048` | 条件过于复合，现有谓词表达不了 |  |
-| `bazi` | `luming-nayin/li-xuzhong-mingshu` | `LIXUZHONGMIN-049` | 条件过于复合，现有谓词表达不了 |  |
-| `bazi` | `luming-nayin/li-xuzhong-mingshu` | `LIXUZHONGMIN-050` | 条件过于复合，现有谓词表达不了 |  |
-| `bazi` | `luming-nayin/li-xuzhong-mingshu` | `LIXUZHONGMIN-051` | 条件过于复合，现有谓词表达不了 |  |
-| `bazi` | `luming-nayin/li-xuzhong-mingshu` | `LIXUZHONGMIN-052` | 条件过于复合，现有谓词表达不了 |  |
-| `bazi` | `luming-nayin/li-xuzhong-mingshu` | `LIXUZHONGMIN-053` | 条件过于复合，现有谓词表达不了 |  |
-| `bazi` | `luming-nayin/li-xuzhong-mingshu` | `LIXUZHONGMIN-054` | 条件过于复合，现有谓词表达不了 |  |
-| `bazi` | `luming-nayin/li-xuzhong-mingshu` | `LIXUZHONGMIN-055` | 条件过于复合，现有谓词表达不了 |  |
-| `bazi` | `luming-nayin/li-xuzhong-mingshu` | `LIXUZHONGMIN-056` | 条件过于复合，现有谓词表达不了 |  |
-| `bazi` | `luming-nayin/li-xuzhong-mingshu` | `LIXUZHONGMIN-057` | 条件过于复合，现有谓词表达不了 |  |
-| `bazi` | `luming-nayin/li-xuzhong-mingshu` | `LIXUZHONGMIN-058` | 条件过于复合，现有谓词表达不了 |  |
-| `bazi` | `luming-nayin/li-xuzhong-mingshu` | `LIXUZHONGMIN-059` | 条件过于复合，现有谓词表达不了 |  |
-| `bazi` | `luming-nayin/li-xuzhong-mingshu` | `LIXUZHONGMIN-060` | 条件过于复合，现有谓词表达不了 |  |
-| `bazi` | `luming-nayin/li-xuzhong-mingshu` | `LX-02` | 条件过于复合，现有谓词表达不了 |  |
-| `bazi` | `luming-nayin/li-xuzhong-mingshu` | `LIXUZHONGMIN-063` | 条件过于复合，现有谓词表达不了 |  |
-| `bazi` | `luming-nayin/li-xuzhong-mingshu` | `LIXUZHONGMIN-065` | 条件过于复合，现有谓词表达不了 |  |
-| `bazi` | `luming-nayin/li-xuzhong-mingshu` | `LIXUZHONGMIN-066` | 条件过于复合，现有谓词表达不了 |  |
-| `bazi` | `luming-nayin/li-xuzhong-mingshu` | `LX-03` | 条件过于复合，现有谓词表达不了 |  |
-| `bazi` | `luming-nayin/li-xuzhong-mingshu` | `LIXUZHONGMIN-LX-03` | 条件过于复合，现有谓词表达不了 |  |
-| `bazi` | `luming-nayin/li-xuzhong-mingshu` | `LIXUZHONGMIN-070` | 条件过于复合，现有谓词表达不了 |  |
-| `bazi` | `luming-nayin/li-xuzhong-mingshu` | `LIXUZHONGMIN-071` | 条件过于复合，现有谓词表达不了 |  |
-| `bazi` | `luming-nayin/li-xuzhong-mingshu` | `LIXUZHONGMIN-073` | 条件过于复合，现有谓词表达不了 |  |
-| `bazi` | `luming-nayin/li-xuzhong-mingshu` | `LIXUZHONGMIN-074` | 条件过于复合，现有谓词表达不了 |  |
-| `bazi` | `luming-nayin/li-xuzhong-mingshu` | `LIXUZHONGMIN-LX-04` | 条件过于复合，现有谓词表达不了 |  |
-| `bazi` | `luming-nayin/li-xuzhong-mingshu` | `LIXUZHONGMIN-077` | 条件过于复合，现有谓词表达不了 |  |
-| `bazi` | `luming-nayin/li-xuzhong-mingshu` | `LIXUZHONGMIN-078` | 条件过于复合，现有谓词表达不了 |  |
-| `bazi` | `luming-nayin/li-xuzhong-mingshu` | `LIXUZHONGMIN-079` | 条件过于复合，现有谓词表达不了 |  |
-| `bazi` | `luming-nayin/li-xuzhong-mingshu` | `LIXUZHONGMIN-080` | 条件过于复合，现有谓词表达不了 |  |
-| `bazi` | `luming-nayin/li-xuzhong-mingshu` | `LIXUZHONGMIN-081` | 条件过于复合，现有谓词表达不了 |  |
-| `bazi` | `luming-nayin/li-xuzhong-mingshu` | `LX-05` | 条件过于复合，现有谓词表达不了 |  |
-| `bazi` | `luming-nayin/li-xuzhong-mingshu` | `LIXUZHONGMIN-LX-05` | 条件过于复合，现有谓词表达不了 |  |
-| `bazi` | `luming-nayin/li-xuzhong-mingshu` | `LIXUZHONGMIN-085` | 条件过于复合，现有谓词表达不了 |  |
-| `bazi` | `luming-nayin/li-xuzhong-mingshu` | `LX-06` | 条件过于复合，现有谓词表达不了 |  |
-| `bazi` | `luming-nayin/li-xuzhong-mingshu` | `LIXUZHONGMIN-LX-06` | 条件过于复合，现有谓词表达不了 |  |
-| `bazi` | `luming-nayin/li-xuzhong-mingshu` | `LIXUZHONGMIN-088` | 条件过于复合，现有谓词表达不了 |  |
-| `bazi` | `luming-nayin/li-xuzhong-mingshu` | `LIXUZHONGMIN-089` | 条件过于复合，现有谓词表达不了 |  |
-| `bazi` | `luming-nayin/li-xuzhong-mingshu` | `LIXUZHONGMIN-090` | 条件过于复合，现有谓词表达不了 |  |
-| `bazi` | `luming-nayin/li-xuzhong-mingshu` | `LX-07` | 条件过于复合，现有谓词表达不了 |  |
-| `bazi` | `luming-nayin/li-xuzhong-mingshu` | `LIXUZHONGMIN-LX-07` | 条件过于复合，现有谓词表达不了 |  |
-| `bazi` | `luming-nayin/li-xuzhong-mingshu` | `LIXUZHONGMIN-093` | 条件过于复合，现有谓词表达不了 |  |
-| `bazi` | `luming-nayin/li-xuzhong-mingshu` | `LIXUZHONGMIN-094` | 条件过于复合，现有谓词表达不了 |  |
-| `bazi` | `luming-nayin/li-xuzhong-mingshu` | `LIXUZHONGMIN-095` | 条件过于复合，现有谓词表达不了 |  |
-| `bazi` | `luming-nayin/li-xuzhong-mingshu` | `LIXUZHONGMIN-096` | 条件过于复合，现有谓词表达不了 |  |
-| `bazi` | `luming-nayin/li-xuzhong-mingshu` | `LX-08` | 条件过于复合，现有谓词表达不了 |  |
-| `bazi` | `luming-nayin/li-xuzhong-mingshu` | `LIXUZHONGMIN-LX-08` | 条件过于复合，现有谓词表达不了 |  |
-| `bazi` | `luming-nayin/li-xuzhong-mingshu` | `LIXUZHONGMIN-101` | 条件过于复合，现有谓词表达不了 |  |
-| `bazi` | `luming-nayin/luoluzi-sanming` | `LZ-01-01` | 条件过于复合，现有谓词表达不了 |  |
-| `bazi` | `luming-nayin/luoluzi-sanming` | `LZ-01-02` | 条件过于复合，现有谓词表达不了 |  |
-| `bazi` | `luming-nayin/luoluzi-sanming` | `LZ-01-03` | 条件过于复合，现有谓词表达不了 |  |
-| `bazi` | `luming-nayin/luoluzi-sanming` | `LZ-02-01` | 条件过于复合，现有谓词表达不了 |  |
-| `bazi` | `luming-nayin/luoluzi-sanming` | `LZ-02-02` | 条件过于复合，现有谓词表达不了 |  |
-| `bazi` | `luming-nayin/luoluzi-sanming` | `LZ-02-03` | 条件过于复合，现有谓词表达不了 |  |
-| `bazi` | `luming-nayin/luoluzi-sanming` | `LZ-03-01` | 条件过于复合，现有谓词表达不了 |  |
-| `bazi` | `luming-nayin/luoluzi-sanming` | `LZ-03-03` | 条件过于复合，现有谓词表达不了 |  |
-| `bazi` | `luming-nayin/luoluzi-sanming` | `LZ-05-01` | 条件过于复合，现有谓词表达不了 |  |
-| `bazi` | `luming-nayin/luoluzi-sanming` | `LZ-05-02` | 条件过于复合，现有谓词表达不了 |  |
-| `bazi` | `luming-nayin/luoluzi-sanming` | `LZ-05-04` | 条件过于复合，现有谓词表达不了 |  |
-| `bazi` | `luming-nayin/luoluzi-sanming` | `LZ-05-05` | 条件过于复合，现有谓词表达不了 |  |
-| `bazi` | `luming-nayin/luoluzi-sanming` | `LZ-05-06` | 条件过于复合，现有谓词表达不了 |  |
-| `bazi` | `luming-nayin/luoluzi-sanming` | `LZ-06-04` | 条件过于复合，现有谓词表达不了 |  |
-| `bazi` | `luming-nayin/luoluzi-sanming` | `LZ-06-05` | 条件过于复合，现有谓词表达不了 |  |
-| `bazi` | `luming-nayin/luoluzi-sanming` | `LZ-07-01` | 条件过于复合，现有谓词表达不了 |  |
-| `bazi` | `luming-nayin/luoluzi-sanming` | `LZ-08-02` | 条件过于复合，现有谓词表达不了 |  |
-| `bazi` | `luming-nayin/luoluzi-sanming` | `LZ-08-04` | 条件过于复合，现有谓词表达不了 |  |
-| `bazi` | `luming-nayin/luoluzi-sanming` | `LZ-08-07` | 条件过于复合，现有谓词表达不了 |  |
-| `bazi` | `luming-nayin/luoluzi-sanming` | `LZ-08-08` | 条件过于复合，现有谓词表达不了 |  |
-| `bazi` | `luming-nayin/luoluzi-sanming` | `LZ-08-09` | 条件过于复合，现有谓词表达不了 |  |
-| `bazi` | `luming-nayin/luoluzi-sanming` | `LZ-08-10` | 条件过于复合，现有谓词表达不了 |  |
-| `bazi` | `luming-nayin/wuxing-jingji` | `WX-01-01` | 条件过于复合，现有谓词表达不了 |  |
-| `bazi` | `luming-nayin/wuxing-jingji` | `WX-02-01` | 条件过于复合，现有谓词表达不了 |  |
-| `bazi` | `luming-nayin/wuxing-jingji` | `WX-02-02` | 条件过于复合，现有谓词表达不了 |  |
-| `bazi` | `luming-nayin/wuxing-jingji` | `WX-03-02` | 条件过于复合，现有谓词表达不了 |  |
-| `bazi` | `luming-nayin/wuxing-jingji` | `WX-03-03` | 条件过于复合，现有谓词表达不了 |  |
-| `bazi` | `luming-nayin/wuxing-jingji` | `WX-05-03` | 条件过于复合，现有谓词表达不了 |  |
-| `bazi` | `luming-nayin/wuxing-jingji` | `WX-05-04` | 条件过于复合，现有谓词表达不了 |  |
-| `bazi` | `luming-nayin/wuxing-jingji` | `WX-05-06` | 条件过于复合，现有谓词表达不了 |  |
-| `bazi` | `luming-nayin/wuxing-jingji` | `WX-06-01` | 条件过于复合，现有谓词表达不了 |  |
-| `bazi` | `luming-nayin/wuxing-jingji` | `WX-07-02` | 条件过于复合，现有谓词表达不了 |  |
-| `bazi` | `luming-nayin/wuxing-jingji` | `WX-07-03` | 条件过于复合，现有谓词表达不了 |  |
-| `bazi` | `luming-nayin/wuxing-jingji` | `WX-07-05` | 条件过于复合，现有谓词表达不了 |  |
-| `bazi` | `luming-nayin/wuxing-jingji` | `WX-08-01` | 条件过于复合，现有谓词表达不了 |  |
-| `bazi` | `luming-nayin/wuxing-jingji` | `WX-08-02` | 条件过于复合，现有谓词表达不了 |  |
-| `bazi` | `luming-nayin/wuxing-jingji` | `WX-08-03` | 条件过于复合，现有谓词表达不了 |  |
-| `bazi` | `luming-nayin/wuxing-jingji` | `WX-08-04` | 条件过于复合，现有谓词表达不了 |  |
-| `bazi` | `luming-nayin/wuxing-jingji` | `WX-09-01` | 条件过于复合，现有谓词表达不了 |  |
-| `bazi` | `luming-nayin/wuxing-jingji` | `WX-09-02` | 条件过于复合，现有谓词表达不了 |  |
-| `bazi` | `luming-nayin/wuxing-jingji` | `WX-09-03` | 条件过于复合，现有谓词表达不了 |  |
-| `bazi` | `luming-nayin/wuxing-jingji` | `WX-09-04` | 条件过于复合，现有谓词表达不了 |  |
-| `bazi` | `luming-nayin/wuxing-jingji` | `WX-09-05` | 条件过于复合，现有谓词表达不了 |  |
-| `bazi` | `luming-nayin/wuxing-jingji` | `WX-10-02` | 条件过于复合，现有谓词表达不了 |  |
-| `bazi` | `luming-nayin/wuxing-jingji` | `WX-10-03` | 条件过于复合，现有谓词表达不了 |  |
-| `bazi` | `luming-nayin/wuxing-jingji` | `WX-10-04` | 条件过于复合，现有谓词表达不了 |  |
-| `bazi` | `luming-nayin/wuxing-jingji` | `WX-10-05` | 条件过于复合，现有谓词表达不了 |  |
-| `bazi` | `luming-nayin/yuzhao-shenying` | `YZ-01` | 条件过于复合，现有谓词表达不了 |  |
-| `bazi` | `luming-nayin/yuzhao-shenying` | `YZ-02` | 条件过于复合，现有谓词表达不了 |  |
-| `bazi` | `luming-nayin/yuzhao-shenying` | `YUZHAOSHENYI-YZ-02` | 条件过于复合，现有谓词表达不了 |  |
-| `bazi` | `luming-nayin/yuzhao-shenying` | `YUZHAOSHENYI-004` | 条件过于复合，现有谓词表达不了 |  |
-| `bazi` | `luming-nayin/yuzhao-shenying` | `YUZHAOSHENYI-005` | 条件过于复合，现有谓词表达不了 |  |
-| `bazi` | `luming-nayin/yuzhao-shenying` | `YUZHAOSHENYI-006` | 条件过于复合，现有谓词表达不了 |  |
-| `bazi` | `luming-nayin/yuzhao-shenying` | `YUZHAOSHENYI-YZ-03` | 条件过于复合，现有谓词表达不了 |  |
-| `bazi` | `luming-nayin/yuzhao-shenying` | `YUZHAOSHENYI-012` | 条件过于复合，现有谓词表达不了 |  |
-| `bazi` | `luming-nayin/yuzhao-shenying` | `YZ-05` | 条件过于复合，现有谓词表达不了 |  |
-| `bazi` | `luming-nayin/yuzhao-shenying` | `YUZHAOSHENYI-YZ-05` | 条件过于复合，现有谓词表达不了 |  |
-| `bazi` | `luming-nayin/yuzhao-shenying` | `YUZHAOSHENYI-021` | 条件过于复合，现有谓词表达不了 |  |
-| `bazi` | `luming-nayin/yuzhao-shenying` | `YUZHAOSHENYI-026` | 条件过于复合，现有谓词表达不了 |  |
-| `bazi` | `luming-nayin/yuzhao-shenying` | `YUZHAOSHENYI-032` | 条件过于复合，现有谓词表达不了 |  |
-| `bazi` | `luming-nayin/yuzhao-shenying` | `YUZHAOSHENYI-034` | 条件过于复合，现有谓词表达不了 |  |
-| `bazi` | `luming-nayin/yuzhao-shenying` | `YZ-06` | 条件过于复合，现有谓词表达不了 |  |
-| `bazi` | `luming-nayin/yuzhao-shenying` | `YUZHAOSHENYI-YZ-06` | 条件过于复合，现有谓词表达不了 |  |
-| `bazi` | `luming-nayin/yuzhao-shenying` | `YUZHAOSHENYI-037` | 条件过于复合，现有谓词表达不了 |  |
-| `bazi` | `luming-nayin/yuzhao-shenying` | `YUZHAOSHENYI-038` | 条件过于复合，现有谓词表达不了 |  |
-| `bazi` | `luming-nayin/yuzhao-shenying` | `YUZHAOSHENYI-039` | 条件过于复合，现有谓词表达不了 |  |
-| `bazi` | `luming-nayin/yuzhao-shenying` | `YUZHAOSHENYI-040` | 条件过于复合，现有谓词表达不了 |  |
-| `bazi` | `luming-nayin/yuzhao-shenying` | `YUZHAOSHENYI-041` | 条件过于复合，现有谓词表达不了 |  |
-| `bazi` | `luming-nayin/yuzhao-shenying` | `YUZHAOSHENYI-042` | 条件过于复合，现有谓词表达不了 |  |
-| `bazi` | `luming-nayin/yuzhao-shenying` | `YUZHAOSHENYI-YZ-07` | 条件过于复合，现有谓词表达不了 |  |
-| `bazi` | `luming-nayin/yuzhao-shenying` | `YUZHAOSHENYI-048` | 条件过于复合，现有谓词表达不了 |  |
-| `bazi` | `luming-nayin/yuzhao-shenying` | `YZ-08` | 条件过于复合，现有谓词表达不了 |  |
-| `bazi` | `luming-nayin/yuzhao-shenying` | `YUZHAOSHENYI-YZ-08` | 条件过于复合，现有谓词表达不了 |  |
-| `bazi` | `luming-nayin/yuzhao-shenying` | `YUZHAOSHENYI-051` | 条件过于复合，现有谓词表达不了 |  |
-| `bazi` | `luming-nayin/yuzhao-shenying` | `YUZHAOSHENYI-053` | 条件过于复合，现有谓词表达不了 |  |
-| `bazi` | `luming-nayin/yuzhao-shenying` | `YUZHAOSHENYI-054` | 条件过于复合，现有谓词表达不了 |  |
-| `ziwei` | `ziwei/feixing-ziwei-doushu-yuanzhi` | `FEIXINGZIWEI-010` | 条件过于复合，现有谓词表达不了 |  |
-| `ziwei` | `ziwei/feixing-ziwei-doushu-yuanzhi` | `FEIXINGZIWEI-013` | 通则/无条件 |  |
-| `ziwei` | `ziwei/feixing-ziwei-doushu-yuanzhi` | `FEIXINGZIWEI-014` | 条件过于复合，现有谓词表达不了 |  |
-| `ziwei` | `ziwei/taiwei-fu` | `TR` | 通则/无条件 |  |
-| `ziwei` | `ziwei/taiwei-fu` | `TAIWEIFU-005` | 条件过于复合，现有谓词表达不了 |  |
-| `ziwei` | `ziwei/taiwei-fu` | `TAIWEIFU-006` | 引擎不产出该 art 的此类事实 | xingyao |
-| `ziwei` | `ziwei/taiwei-fu` | `TAIWEIFU-008` | 引擎不产出该 art 的此类事实 | shishen |
-| `ziwei` | `ziwei/taiwei-fu` | `TAIWEIFU-010` | 条件过于复合，现有谓词表达不了 |  |
-| `ziwei` | `ziwei/taiwei-fu` | `TAIWEIFU-017` | 条件过于复合，现有谓词表达不了 |  |
-| `ziwei` | `ziwei/taiwei-fu` | `TAIWEIFU-021` | 条件过于复合，现有谓词表达不了 |  |
-| `ziwei` | `ziwei/ziwei-doushu-quanshu` | `ZIWEIDOUSHUQ-050` | 条件过于复合，现有谓词表达不了 |  |
-| `ziwei` | `ziwei/ziwei-doushu-quanshu` | `ZIWEIDOUSHUQ-058` | 条件过于复合，现有谓词表达不了 |  |
-| `ziwei` | `ziwei/ziwei-doushu-quanshu` | `ZIWEIDOUSHUQ-059` | 条件过于复合，现有谓词表达不了 |  |
-| `ziwei` | `ziwei/ziwei-doushu-quanshu` | `ZIWEIDOUSHUQ-062` | 条件过于复合，现有谓词表达不了 |  |
-| `ziwei` | `ziwei/ziwei-doushu-quanshu` | `ZW-08` | 条件过于复合，现有谓词表达不了 |  |
-| `ziwei` | `ziwei/ziwei-doushu-quanshu` | `ZIWEIDOUSHUQ-069` | 条件过于复合，现有谓词表达不了 |  |
-| `liuyao` | `divination/bushi-zhengzong` | `BSZZ` | 通则/无条件 | 起卦记录法 |
-| `liuyao` | `divination/huangji-jingshi` | `HR-04` | 通则/无条件 | 皇极数/卦气，非六爻盘面 |
-| `liuyao` | `divination/huangji-jingshi` | `HUANGJIJINGS-HR-04` | 通则/无条件 | 皇极数/卦气，非六爻盘面 |
-| `liuyao` | `divination/huangji-jingshi` | `HUANGJIJINGS-010` | 通则/无条件 | 皇极数/卦气，非六爻盘面 |
-| `liuyao` | `divination/huangji-jingshi` | `HR-05` | 通则/无条件 | 皇极数/卦气，非六爻盘面 |
-| `liuyao` | `divination/huangji-jingshi` | `HUANGJIJINGS-HR-05` | 通则/无条件 | 皇极数/卦气，非六爻盘面 |
-| `liuyao` | `divination/huangji-jingshi` | `HUANGJIJINGS-014` | 通则/无条件 | 皇极数/卦气，非六爻盘面 |
-| `liuyao` | `divination/huangji-jingshi` | `HUANGJIJINGS-HR-06` | 通则/无条件 | 皇极数/卦气，非六爻盘面 |
-| `liuyao` | `divination/huangji-jingshi` | `HR-07` | 通则/无条件 | 皇极数/卦气，非六爻盘面 |
-| `liuyao` | `divination/huangji-jingshi` | `HR-09` | 通则/无条件 | 皇极数/卦气，非六爻盘面 |
-| `liuyao` | `divination/huangjin-ce` | `HJC` | 通则/无条件 | 仅动/世/应/伏通配，为守 15% 上限留空 |
-| `liuyao` | `divination/huangjin-ce` | `HJC-R001` | 通则/无条件 | 仅动/世/应/伏通配，为守 15% 上限留空 |
-| `liuyao` | `divination/huangjin-ce` | `HJC-R004` | 条件过于复合，现有谓词表达不了 |  |
-| `liuyao` | `divination/huangjin-ce` | `HJC-R005` | 条件过于复合，现有谓词表达不了 |  |
-| `liuyao` | `divination/huangjin-ce` | `HJC-R006` | 通则/无条件 | 仅动/世/应/伏通配，为守 15% 上限留空 |
-| `liuyao` | `divination/huangjin-ce` | `HJC-R011` | 通则/无条件 | 仅动/世/应/伏通配，为守 15% 上限留空 |
-| `liuyao` | `divination/huangjin-ce` | `HJC-R016` | 通则/无条件 | 仅动/世/应/伏通配，为守 15% 上限留空 |
-| `liuyao` | `divination/huozhu-lin` | `HZL-R004` | 通则/无条件 | 仅动/世/应/伏通配，为守 15% 上限留空 |
-| `liuyao` | `divination/huozhu-lin` | `HZL-R005` | 通则/无条件 | 仅动/世/应/伏通配，为守 15% 上限留空 |
-| `liuyao` | `divination/meihua-yishu` | `MR-01` | 需要引擎未产出的事实 | 体用/卦气/互变/梅花起卦 |
-| `liuyao` | `divination/meihua-yishu` | `MEIHUAYISHU-MR-01` | 需要引擎未产出的事实 | 体用/卦气/互变/梅花起卦 |
-| `liuyao` | `divination/meihua-yishu` | `MEIHUAYISHU-004` | 需要引擎未产出的事实 | 体用/卦气/互变/梅花起卦 |
-| `liuyao` | `divination/meihua-yishu` | `MEIHUAYISHU-005` | 需要引擎未产出的事实 | 体用/卦气/互变/梅花起卦 |
-| `liuyao` | `divination/meihua-yishu` | `MR-02` | 需要引擎未产出的事实 | 体用/卦气/互变/梅花起卦 |
-| `liuyao` | `divination/meihua-yishu` | `MEIHUAYISHU-MR-02` | 需要引擎未产出的事实 | 体用/卦气/互变/梅花起卦 |
-| `liuyao` | `divination/meihua-yishu` | `MEIHUAYISHU-008` | 需要引擎未产出的事实 | 体用/卦气/互变/梅花起卦 |
-| `liuyao` | `divination/meihua-yishu` | `MEIHUAYISHU-009` | 需要引擎未产出的事实 | 体用/卦气/互变/梅花起卦 |
-| `liuyao` | `divination/meihua-yishu` | `MR-04` | 需要引擎未产出的事实 | 体用/卦气/互变/梅花起卦 |
-| `liuyao` | `divination/meihua-yishu` | `MEIHUAYISHU-MR-04` | 需要引擎未产出的事实 | 体用/卦气/互变/梅花起卦 |
-| `liuyao` | `divination/meihua-yishu` | `MEIHUAYISHU-013` | 需要引擎未产出的事实 | 体用/卦气/互变/梅花起卦 |
-| `liuyao` | `divination/meihua-yishu` | `MEIHUAYISHU-014` | 需要引擎未产出的事实 | 体用/卦气/互变/梅花起卦 |
-| `liuyao` | `divination/meihua-yishu` | `MEIHUAYISHU-015` | 需要引擎未产出的事实 | 体用/卦气/互变/梅花起卦 |
-| `liuyao` | `divination/meihua-yishu` | `MEIHUAYISHU-016` | 需要引擎未产出的事实 | 体用/卦气/互变/梅花起卦 |
-| `liuyao` | `divination/meihua-yishu` | `MR-05` | 需要引擎未产出的事实 | 体用/卦气/互变/梅花起卦 |
-| `liuyao` | `divination/meihua-yishu` | `MEIHUAYISHU-MR-05` | 需要引擎未产出的事实 | 体用/卦气/互变/梅花起卦 |
-| `liuyao` | `divination/meihua-yishu` | `MR-07` | 需要引擎未产出的事实 | 体用/卦气/互变/梅花起卦 |
-| `liuyao` | `divination/meihua-yishu` | `MEIHUAYISHU-021` | 需要引擎未产出的事实 | 体用/卦气/互变/梅花起卦 |
-| `liuyao` | `divination/meihua-yishu` | `MEIHUAYISHU-022` | 需要引擎未产出的事实 | 体用/卦气/互变/梅花起卦 |
-| `liuyao` | `divination/meihua-yishu` | `MR-08` | 需要引擎未产出的事实 | 体用/卦气/互变/梅花起卦 |
-| `liuyao` | `divination/meihua-yishu` | `MEIHUAYISHU-MR-08` | 需要引擎未产出的事实 | 体用/卦气/互变/梅花起卦 |
-| `liuyao` | `divination/meihua-yishu` | `MR-09` | 需要引擎未产出的事实 | 体用/卦气/互变/梅花起卦 |
-| `liuyao` | `divination/meihua-yishu` | `MEIHUAYISHU-MR-09` | 需要引擎未产出的事实 | 体用/卦气/互变/梅花起卦 |
-| `liuyao` | `divination/meihua-yishu` | `MR-10` | 需要引擎未产出的事实 | 体用/卦气/互变/梅花起卦 |
-| `liuyao` | `divination/meihua-yishu` | `MEIHUAYISHU-MR-10` | 需要引擎未产出的事实 | 体用/卦气/互变/梅花起卦 |
-| `liuyao` | `divination/meihua-yishu` | `MEIHUAYISHU-029` | 需要引擎未产出的事实 | 体用/卦气/互变/梅花起卦 |
-| `liuyao` | `divination/meihua-yishu` | `MEIHUAYISHU-030` | 需要引擎未产出的事实 | 体用/卦气/互变/梅花起卦 |
-| `liuyao` | `divination/meihua-yishu` | `MR-11` | 需要引擎未产出的事实 | 体用/卦气/互变/梅花起卦 |
-| `liuyao` | `divination/meihua-yishu` | `MR-12` | 需要引擎未产出的事实 | 体用/卦气/互变/梅花起卦 |
-| `liuyao` | `divination/meihua-yishu` | `MEIHUAYISHU-MR-12` | 需要引擎未产出的事实 | 体用/卦气/互变/梅花起卦 |
-| `liuyao` | `divination/meihua-yishu` | `MR-13` | 需要引擎未产出的事实 | 体用/卦气/互变/梅花起卦 |
-| `liuyao` | `divination/zengshan-buyi` | `ZR-04` | 条件过于复合，现有谓词表达不了 |  |
-| `liuyao` | `divination/zengshan-buyi` | `ZENGSHANBUYI-ZR-04` | 条件过于复合，现有谓词表达不了 |  |
-| `liuyao` | `divination/zengshan-buyi` | `ZENGSHANBUYI-007` | 通则/无条件 | 仅动/世/应/伏通配，为守 15% 上限留空 |
-| `liuyao` | `divination/zengshan-buyi` | `ZR-05` | 条件过于复合，现有谓词表达不了 |  |
-| `liuyao` | `divination/zengshan-buyi` | `ZENGSHANBUYI-ZR-05` | 条件过于复合，现有谓词表达不了 |  |
-| `liuyao` | `divination/zengshan-buyi` | `ZENGSHANBUYI-010` | 条件过于复合，现有谓词表达不了 |  |
-| `liuyao` | `divination/zengshan-buyi` | `ZENGSHANBUYI-011` | 通则/无条件 | 仅动/世/应/伏通配，为守 15% 上限留空 |
-| `liuyao` | `divination/zengshan-buyi` | `ZR-06` | 通则/无条件 | 仅动/世/应/伏通配，为守 15% 上限留空 |
-| `liuyao` | `divination/zengshan-buyi` | `ZENGSHANBUYI-ZR-06` | 通则/无条件 | 仅动/世/应/伏通配，为守 15% 上限留空 |
-| `liuyao` | `divination/zengshan-buyi` | `ZENGSHANBUYI-017` | 通则/无条件 | 仅动/世/应/伏通配，为守 15% 上限留空 |
-| `liuyao` | `divination/zengshan-buyi` | `ZENGSHANBUYI-018` | 条件过于复合，现有谓词表达不了 |  |
-| `liuyao` | `divination/zengshan-buyi` | `ZENGSHANBUYI-019` | 通则/无条件 | 仅动/世/应/伏通配，为守 15% 上限留空 |
-| `liuyao` | `divination/zengshan-buyi` | `ZENGSHANBUYI-020` | 条件过于复合，现有谓词表达不了 |  |
-| `liuyao` | `divination/zengshan-buyi` | `ZENGSHANBUYI-021` | 通则/无条件 | 仅动/世/应/伏通配，为守 15% 上限留空 |
-| `liuyao` | `divination/zengshan-buyi` | `ZENGSHANBUYI-024` | 条件过于复合，现有谓词表达不了 |  |
-| `liuyao` | `divination/zengshan-buyi` | `ZENGSHANBUYI-025` | 条件过于复合，现有谓词表达不了 |  |
-| `liuyao` | `divination/zengshan-buyi` | `ZENGSHANBUYI-ZR-08` | 条件过于复合，现有谓词表达不了 |  |
-| `liuyao` | `divination/zengshan-buyi` | `ZENGSHANBUYI-030` | 条件过于复合，现有谓词表达不了 |  |
-| `liuyao` | `divination/zengshan-buyi` | `ZR-09` | 条件过于复合，现有谓词表达不了 |  |
-| `liuyao` | `divination/zengshan-buyi` | `ZR-10` | 通则/无条件 | 仅动/世/应/伏通配，为守 15% 上限留空 |
-| `liuyao` | `divination/zengshan-buyi` | `ZR-13` | 通则/无条件 | 仅动/世/应/伏通配，为守 15% 上限留空 |
-| `liuyao` | `divination/zengshan-buyi` | `ZENGSHANBUYI-ZR-13` | 通则/无条件 | 仅动/世/应/伏通配，为守 15% 上限留空 |
-| `liuyao` | `divination/zengshan-buyi` | `ZENGSHANBUYI-ZR-14` | 通则/无条件 | 仅动/世/应/伏通配，为守 15% 上限留空 |
-| `liuyao` | `divination/zengshan-buyi` | `ZR-16` | 通则/无条件 | 仅动/世/应/伏通配，为守 15% 上限留空 |
-| `liuyao` | `divination/zengshan-buyi` | `ZR-17` | 通则/无条件 | 仅动/世/应/伏通配，为守 15% 上限留空 |
-| `liuyao` | `divination/zhouyi-zhezhong` | `ZZR-01` | 需要引擎未产出的事实 | 当位中正/卦德/蓍草/义理 |
-| `liuyao` | `divination/zhouyi-zhezhong` | `ZHOUYIZHEZHO-004` | 需要引擎未产出的事实 | 当位中正/卦德/蓍草/义理 |
-| `liuyao` | `divination/zhouyi-zhezhong` | `ZHOUYIZHEZHO-005` | 需要引擎未产出的事实 | 当位中正/卦德/蓍草/义理 |
-| `liuyao` | `divination/zhouyi-zhezhong` | `ZHOUYIZHEZHO-006` | 需要引擎未产出的事实 | 当位中正/卦德/蓍草/义理 |
-| `liuyao` | `divination/zhouyi-zhezhong` | `ZHOUYIZHEZHO-007` | 需要引擎未产出的事实 | 当位中正/卦德/蓍草/义理 |
-| `liuyao` | `divination/zhouyi-zhezhong` | `ZHOUYIZHEZHO-008` | 需要引擎未产出的事实 | 当位中正/卦德/蓍草/义理 |
-| `liuyao` | `divination/zhouyi-zhezhong` | `ZHOUYIZHEZHO-ZZR-02` | 需要引擎未产出的事实 | 当位中正/卦德/蓍草/义理 |
-| `liuyao` | `divination/zhouyi-zhezhong` | `ZHOUYIZHEZHO-011` | 需要引擎未产出的事实 | 当位中正/卦德/蓍草/义理 |
-| `liuyao` | `divination/zhouyi-zhezhong` | `ZZR-03` | 需要引擎未产出的事实 | 当位中正/卦德/蓍草/义理 |
-| `liuyao` | `divination/zhouyi-zhezhong` | `ZHOUYIZHEZHO-ZZR-03` | 需要引擎未产出的事实 | 当位中正/卦德/蓍草/义理 |
-| `liuyao` | `divination/zhouyi-zhezhong` | `ZZR-04` | 需要引擎未产出的事实 | 当位中正/卦德/蓍草/义理 |
-| `liuyao` | `divination/zhouyi-zhezhong` | `ZHOUYIZHEZHO-018` | 需要引擎未产出的事实 | 当位中正/卦德/蓍草/义理 |
-| `liuyao` | `divination/zhouyi-zhezhong` | `ZHOUYIZHEZHO-019` | 需要引擎未产出的事实 | 当位中正/卦德/蓍草/义理 |
-| `liuyao` | `divination/zhouyi-zhezhong` | `ZHOUYIZHEZHO-ZZR-05` | 需要引擎未产出的事实 | 当位中正/卦德/蓍草/义理 |
-| `liuyao` | `divination/zhouyi-zhezhong` | `ZZR-06` | 需要引擎未产出的事实 | 当位中正/卦德/蓍草/义理 |
-| `liuyao` | `divination/zhouyi-zhezhong` | `ZHOUYIZHEZHO-ZZR-06` | 需要引擎未产出的事实 | 当位中正/卦德/蓍草/义理 |
-| `liuyao` | `divination/zhouyi-zhezhong` | `ZHOUYIZHEZHO-024` | 需要引擎未产出的事实 | 当位中正/卦德/蓍草/义理 |
-| `liuyao` | `divination/zhouyi-zhezhong` | `ZHOUYIZHEZHO-026` | 需要引擎未产出的事实 | 当位中正/卦德/蓍草/义理 |
-| `liuyao` | `divination/zhouyi-zhezhong` | `ZHOUYIZHEZHO-027` | 需要引擎未产出的事实 | 当位中正/卦德/蓍草/义理 |
-| `liuyao` | `divination/zhouyi-zhezhong` | `ZZR-07` | 需要引擎未产出的事实 | 当位中正/卦德/蓍草/义理 |
-| `liuyao` | `divination/zhouyi-zhezhong` | `ZHOUYIZHEZHO-ZZR-07` | 需要引擎未产出的事实 | 当位中正/卦德/蓍草/义理 |
-| `liuyao` | `divination/zhouyi-zhezhong` | `ZHOUYIZHEZHO-031` | 需要引擎未产出的事实 | 当位中正/卦德/蓍草/义理 |
-| `liuren` | `san-shi/daliuren-daquan` | `DALIURENDAQU-004` | 条件过于复合，现有谓词表达不了 | 同方向直接克候选 |
-| `liuren` | `san-shi/daliuren-daquan` | `DALIURENDAQU-008` | 条件过于复合，现有谓词表达不了 | 三课无克无遥克 |
-| `liuren` | `san-shi/daliuren-daquan` | `DALIURENDAQU-009` | 需要引擎未产出的事实 | 日柱癸丑甲寅等专式 |
-| `liuren` | `san-shi/daliuren-daquan` | `DALIURENDAQU-015` | statement 是 pack 元规则 |  |
-| `liuren` | `san-shi/daliuren-daquan` | `DALIURENDAQU-016` | statement 是 pack 元规则 |  |
-| `liuren` | `san-shi/daliuren-daquan` | `DALIURENDAQU-017` | 需要引擎未产出的事实 | 月令旺相休囚死/类神 |
-| `liuren` | `san-shi/liuren-miben` | `LIURENMIBEN-006` | 需要引擎未产出的事实 | 旺相死休囚 |
-| `liuren` | `san-shi/liuren-miben` | `LIURENMIBEN-007` | statement 是 pack 元规则 |  |
-| `liuren` | `san-shi/liuren-miben` | `LIURENMIBEN-008` | statement 是 pack 元规则 |  |
-| `liuren` | `san-shi/liuren-miben` | `LIURENMIBEN-010` | statement 是 pack 元规则 |  |
-| `liuren` | `san-shi/liuren-miben` | `LIURENMIBEN-012` | 条件过于复合，现有谓词表达不了 | 聚散初建复建 |
-| `liuren` | `san-shi/liuren-miben` | `LIURENMIBEN-014` | statement 是 pack 元规则 |  |
-| `liuren` | `san-shi/liuren-miben` | `LIURENMIBEN-019` | 需要引擎未产出的事实 | 巳亥干支同出/生合结构 |
-| `liuren` | `san-shi/liuren-miben` | `LIURENMIBEN-023` | statement 是 pack 元规则 |  |
-| `liuren` | `san-shi/liuren-zhiyin` | `LIURENZHIYIN-004` | 条件过于复合，现有谓词表达不了 | 四课无直接克 |
-| `liuren` | `san-shi/liuren-zhiyin` | `LIURENZHIYIN-008` | 需要引擎未产出的事实 | 返吟 is_fanyin |
-| `liuren` | `san-shi/liuren-zhiyin` | `LIURENZHIYIN-013` | statement 是 pack 元规则 |  |
-| `liuren` | `san-shi/liuren-zhiyin` | `LIURENZHIYIN-015` | statement 是 pack 元规则 |  |
-| `liuren` | `san-shi/liuren-zhiyin` | `LIURENZHIYIN-016` | 条件过于复合，现有谓词表达不了 | 求财兼旺衰空墓，不用天将通配凑数 |
-| `qimen` | `san-shi/qimen-dunjia-tongzhi` | `QM-P13` | 需要引擎未产出的事实 | 时干克日干/五不遇 |
-| `qimen` | `san-shi/qimen-dunjia-tongzhi` | `QM-P16` | 需要引擎未产出的事实 | 三奇入墓/乙丙丁奇+宫 |
-| `qimen` | `san-shi/qimen-dunjia-tongzhi` | `QM-P25` | 需要引擎未产出的事实 | 三奇得使/乙丙丁奇+六仪 |
-| `qimen` | `san-shi/qimen-dunjia-tongzhi` | `QM-P34` | 需要引擎未产出的事实 | 六庚加丙奇 |
-| `qimen` | `san-shi/qimen-dunjia-tongzhi` | `QM-P35` | 需要引擎未产出的事实 | 丙奇加六庚 |
-| `qimen` | `san-shi/qimen-dunjia-tongzhi` | `QM-P37` | 条件过于复合，现有谓词表达不了 | 八门加宫受制，不把八门整表写成伪通配 |
-| `qimen` | `san-shi/qimen-dunjia-tongzhi` | `QM-P40` | 条件过于复合，现有谓词表达不了 | 九宫尺寸高低 |
-| `qizheng` | `xingming/guotian-jing` | `GR-01` | 需要引擎未产出的事实 | 五曜格局/行限/神煞/妇命专条，无对应 FactKey |
-| `qizheng` | `xingming/guotian-jing` | `GUOTIANJING-GR-02` | 需要引擎未产出的事实 | 五曜格局/行限/神煞/妇命专条，无对应 FactKey |
-| `qizheng` | `xingming/guotian-jing` | `GR-03` | 需要引擎未产出的事实 | 行限度/洞微百六限，不是二十八宿 |
-| `qizheng` | `xingming/guotian-jing` | `GUOTIANJING-GR-03` | 需要引擎未产出的事实 | 五曜格局/行限/神煞/妇命专条，无对应 FactKey |
-| `qizheng` | `xingming/guotian-jing` | `GUOTIANJING-GR-05` | 需要引擎未产出的事实 | 五曜格局/行限/神煞/妇命专条，无对应 FactKey |
-| `qizheng` | `xingming/xingming-suyuan` | `XR-01` | 目录篇名，不是可判定规则 | 五曜格局/行限/神煞/妇命专条，无对应 FactKey |
-| `qizheng` | `xingming/xingming-suyuan` | `XINGMINGSUYU-XR-01` | 目录篇名，不是可判定规则 | 五曜格局/行限/神煞/妇命专条，无对应 FactKey |
-| `qizheng` | `xingming/xingming-suyuan` | `XINGMINGSUYU-004` | 目录篇名，不是可判定规则 | 五曜格局/行限/神煞/妇命专条，无对应 FactKey |
-| `qizheng` | `xingming/xingming-suyuan` | `XINGMINGSUYU-005` | 目录篇名，不是可判定规则 | 五曜格局/行限/神煞/妇命专条，无对应 FactKey |
-| `qizheng` | `xingming/xingming-suyuan` | `XINGMINGSUYU-006` | 目录篇名，不是可判定规则 | 五曜格局/行限/神煞/妇命专条，无对应 FactKey |
-| `qizheng` | `xingming/xingming-suyuan` | `XINGMINGSUYU-007` | 目录篇名，不是可判定规则 | 五曜格局/行限/神煞/妇命专条，无对应 FactKey |
-| `qizheng` | `xingming/xingming-suyuan` | `XINGMINGSUYU-009` | 目录篇名，不是可判定规则 | 五曜格局/行限/神煞/妇命专条，无对应 FactKey |
-| `qizheng` | `xingming/xingming-suyuan` | `XINGMINGSUYU-010` | 目录篇名，不是可判定规则 | 五曜格局/行限/神煞/妇命专条，无对应 FactKey |
-| `qizheng` | `xingming/xingming-suyuan` | `XINGMINGSUYU-XR-02` | 目录篇名，不是可判定规则 | 五曜格局/行限/神煞/妇命专条，无对应 FactKey |
-| `qizheng` | `xingming/xingming-suyuan` | `XINGMINGSUYU-015` | 目录篇名，不是可判定规则 | 五曜格局/行限/神煞/妇命专条，无对应 FactKey |
-| `qizheng` | `xingming/xingming-suyuan` | `XINGMINGSUYU-016` | 目录篇名，不是可判定规则 | 五曜格局/行限/神煞/妇命专条，无对应 FactKey |
-| `qizheng` | `xingming/xingming-suyuan` | `XINGMINGSUYU-XR-03` | 目录篇名，不是可判定规则 | 五曜格局/行限/神煞/妇命专条，无对应 FactKey |
-| `qizheng` | `xingming/xingming-suyuan` | `XINGMINGSUYU-022` | 目录篇名，不是可判定规则 | 五曜格局/行限/神煞/妇命专条，无对应 FactKey |
-| `qizheng` | `xingming/xingming-suyuan` | `XR-04` | 目录篇名，不是可判定规则 | 五曜格局/行限/神煞/妇命专条，无对应 FactKey |
-| `qizheng` | `xingming/xingming-suyuan` | `XINGMINGSUYU-XR-04` | 目录篇名，不是可判定规则 | 五曜格局/行限/神煞/妇命专条，无对应 FactKey |
-| `qizheng` | `xingming/xingming-suyuan` | `XINGMINGSUYU-026` | 目录篇名，不是可判定规则 | 五曜格局/行限/神煞/妇命专条，无对应 FactKey |
-| `qizheng` | `xingming/xingming-suyuan` | `XINGMINGSUYU-028` | 目录篇名，不是可判定规则 | 五曜格局/行限/神煞/妇命专条，无对应 FactKey |
-| `qizheng` | `xingming/xingming-suyuan` | `XR-05` | 目录篇名，不是可判定规则 | 五曜格局/行限/神煞/妇命专条，无对应 FactKey |
-| `qizheng` | `xingming/xingming-suyuan` | `XINGMINGSUYU-XR-05` | 目录篇名，不是可判定规则 | 五曜格局/行限/神煞/妇命专条，无对应 FactKey |
-| `qizheng` | `xingming/xingming-suyuan` | `XINGMINGSUYU-031` | 目录篇名，不是可判定规则 | 五曜格局/行限/神煞/妇命专条，无对应 FactKey |
-| `qizheng` | `xingming/xingming-suyuan` | `XINGMINGSUYU-033` | 目录篇名，不是可判定规则 | 五曜格局/行限/神煞/妇命专条，无对应 FactKey |
-| `qizheng` | `xingming/xingming-suyuan` | `XINGMINGSUYU-034` | 目录篇名，不是可判定规则 | 五曜格局/行限/神煞/妇命专条，无对应 FactKey |
-| `qizheng` | `xingming/xingming-suyuan` | `XR-06` | 目录篇名，不是可判定规则 | 五曜格局/行限/神煞/妇命专条，无对应 FactKey |
-| `qizheng` | `xingming/xingming-suyuan` | `XINGMINGSUYU-XR-06` | 目录篇名，不是可判定规则 | 五曜格局/行限/神煞/妇命专条，无对应 FactKey |
-| `qizheng` | `xingming/xingming-suyuan` | `XINGMINGSUYU-037` | 目录篇名，不是可判定规则 | 五曜格局/行限/神煞/妇命专条，无对应 FactKey |
-| `qizheng` | `xingming/xingming-suyuan` | `XINGMINGSUYU-038` | 目录篇名，不是可判定规则 | 五曜格局/行限/神煞/妇命专条，无对应 FactKey |
-| `qizheng` | `xingming/xingming-suyuan` | `XINGMINGSUYU-039` | 目录篇名，不是可判定规则 | 五曜格局/行限/神煞/妇命专条，无对应 FactKey |
-| `qizheng` | `xingming/xingming-suyuan` | `XR-07` | 目录篇名，不是可判定规则 | 五曜格局/行限/神煞/妇命专条，无对应 FactKey |
-| `qizheng` | `xingming/xingming-suyuan` | `XINGMINGSUYU-XR-07` | 目录篇名，不是可判定规则 | 五曜格局/行限/神煞/妇命专条，无对应 FactKey |
-| `qizheng` | `xingming/xingming-suyuan` | `XINGMINGSUYU-047` | 目录篇名，不是可判定规则 | 五曜格局/行限/神煞/妇命专条，无对应 FactKey |
-| `qizheng` | `xingming/xingming-suyuan` | `XINGMINGSUYU-048` | 目录篇名，不是可判定规则 | 五曜格局/行限/神煞/妇命专条，无对应 FactKey |
-| `qizheng` | `xingming/xingxue-dacheng` | `XXDC-R001` | 通则/无条件 | 先定十二宫的起盘步骤 |
-| `qizheng` | `xingming/xingxue-dacheng` | `XXDC-R005` | 通则/无条件 | 身命落宫总则 |
-| `qizheng` | `xingming/xingxue-dacheng` | `XXDC-R006` | 通则/无条件 | 十二宫次序总则 |
+共 **582** 条。
+
+| art | 合计 | 原文无盘面适用条件（通论／体例／取象表／起例取法） | pack 元规则／调用条件，不是盘面条件 | 需要引擎未产出的事实 | 原文有条件但口径未定或明确拒绝单一条件 | 未复核 |
+|---|---:|---:|---:|---:|---:|---:|
+| `bazi` | 301 | 52 | 7 | 39 | 26 | 176 |
+| `liuren` | 42 | 2 | 21 | 18 | 1 | 0 |
+| `liuyao` | 46 | 14 | 1 | 31 | 0 | 0 |
+| `meihua` | 33 | 9 | 0 | 21 | 3 | 0 |
+| `qimen` | 32 | 1 | 0 | 31 | 0 | 0 |
+| `qizheng` | 65 | 53 | 0 | 12 | 0 | 0 |
+| `yili` | 33 | 25 | 1 | 6 | 1 | 0 |
+| `ziwei` | 30 | 12 | 5 | 11 | 0 | 0 |
+
+## bazi
+
+| book | rule_id | 分类 | 台账理由 | 缺的事实 | 原文依据 | statement |
+|---|---|---|---|---|---|---|
+| `bazi/ditiansui-chanwei` | `DITIANSUICHA-005` | statement 中无可复原的 FactKey 取值 | 原文无盘面适用条件（通论／体例／取象表／起例取法） |  | 理为体，气为用；理气不可偏废。 | 理为体，气为用；理气不可偏废。 |
+| `bazi/ditiansui-chanwei` | `DITIANSUICHA-006` | statement 中无可复原的 FactKey 取值 | 原文无盘面适用条件（通论／体例／取象表／起例取法） |  | 干支配合得宜（生克化制各得其用）为命之大纲。 | 干支配合得宜（生克化制各得其用）为命之大纲。 |
+| `bazi/ditiansui-chanwei` | `DITIANSUICHA-007` | statement 中无可复原的 FactKey 取值 | 原文无盘面适用条件（通论／体例／取象表／起例取法） |  | 十干各有性情：甲为参天之木…癸为雨露之水；用法各异。 | 十干各有性情：甲为参天之木、乙为花卉之木、丙为太阳之火、丁为灯烛之火、戊为城墙之土、己为田园之土、庚为顽铁之金、辛为珠玉之金、壬为江湖之水、… |
+| `bazi/ditiansui-chanwei` | `DITIANSUICHA-008` | statement 中无可复原的 FactKey 取值 | 原文无盘面适用条件（通论／体例／取象表／起例取法） |  | 十二支各有所藏（本气/中气/余气）与季节属性；刑冲合害需结合所藏与位置精判。 | 十二支各有所藏（本气/中气/余气）与季节属性；刑冲合害需结合所藏与位置精判。 |
+| `bazi/ditiansui-chanwei` | `DITIANSUICHA-009` | statement 中无可复原的 FactKey 取值 | 原文无盘面适用条件（通论／体例／取象表／起例取法） |  | 天干为外、地支为内；天干之用须根于地支，地支之力须透于天干。 | 天干为外、地支为内；天干之用须根于地支，地支之力须透于天干。 |
+| `bazi/ditiansui-chanwei` | `DITIANSUICHA-013` | statement 中无可复原的 FactKey 取值 | 原文无盘面适用条件（通论／体例／取象表／起例取法） |  | 以日主为体，以用神为用；体强者用宜泄、体弱者用宜扶。 | 以日主为体，以用神为用；体强者用宜泄、体弱者用宜扶。 |
+| `bazi/ditiansui-chanwei` | `DITIANSUICHA-015` | statement 中无可复原的 FactKey 取值 | 原文无盘面适用条件（通论／体例／取象表／起例取法） |  | 月令为提纲，决定旺衰、决定喜忌；用神取法以月令为最重要参考。 | 月令为提纲，决定旺衰、决定喜忌；用神取法以月令为最重要参考。 |
+| `bazi/ditiansui-chanwei` | `DITIANSUICHA-016` | statement 中无可复原的 FactKey 取值 | 原文无盘面适用条件（通论／体例／取象表／起例取法） |  | 生时为命之归宿；时干时支与日主的关系决定晚年归宿。 | 生时为命之归宿；时干时支与日主的关系决定晚年归宿。 |
+| `bazi/ditiansui-chanwei` | `DITIANSUICHA-019` | statement 中无可复原的 FactKey 取值 | 原文无盘面适用条件（通论／体例／取象表／起例取法） |  | 五行有源（生发之神）有流（归宿之神）；流通无阻为贵，停滞为滞，反克为凶。 | 五行有源（生发之神）有流（归宿之神）；流通无阻为贵，停滞为滞，反克为凶。 |
+| `bazi/ditiansui-chanwei` | `DITIANSUICHA-020` | statement 中无可复原的 FactKey 取值 | 原文有条件但口径未定或明确拒绝单一条件 |  | 当二五行相战（如金木相战）时，介入第三方（如水）使战局化为生生即为通关；通关之神 | 当二五行相战（如金木相战）时，介入第三方（如水）使战局化为生生（金生水、水生木）即为通关；通关之神得令为吉。 |
+| `bazi/ditiansui-chanwei` | `DITIANSUICHA-022` | 可复原 1 个谓词对（现有语言本可表达） | 原文有条件但口径未定或明确拒绝单一条件 |  | 伤官真者（当令而透）泄秀为贵…伤官见官，需结合身强身弱、合冲化解综合判断，非铁定 | 伤官真者（当令而透）泄秀为贵；伤官假者（不当令）反主刑伤；伤官见官，需结合身强身弱、合冲化解综合判断，非铁定为祸。 |
+| `bazi/ditiansui-chanwei` | `DITIANSUICHA-023` | statement 中无可复原的 FactKey 取值 | 原文无盘面适用条件（通论／体例／取象表／起例取法） |  | 命局清者（十神不杂、生克得宜）为贵；浊者（十神混杂、生克失宜）为贱；清中有浊、浊 | 命局清者（十神不杂、生克得宜）为贵；浊者（十神混杂、生克失宜）为贱；清中有浊、浊中有清者另议。 |
+| `bazi/ditiansui-chanwei` | `DITIANSUICHA-024` | statement 中无可复原的 FactKey 取值 | 原文有条件但口径未定或明确拒绝单一条件 |  | 当令而透干、得用之神为真神；不当令、被合冲制伏的为假神。 | 当令而透干、得用之神为真神；不当令、被合冲制伏的为假神；真神得用为贵、假神乱真为凶。 |
+| `bazi/ditiansui-chanwei` | `DITIANSUICHA-025` | statement 中无可复原的 FactKey 取值 | 原文无盘面适用条件（通论／体例／取象表／起例取法） |  | 干性刚（甲丙戊庚壬）柔（乙丁己辛癸）须相济；过刚则折、过柔则靡。 | 干性刚（甲丙戊庚壬）柔（乙丁己辛癸）须相济；过刚则折、过柔则靡。 |
+| `bazi/ditiansui-chanwei` | `DITIANSUICHA-026` | statement 中无可复原的 FactKey 取值 | 原文有条件但口径未定或明确拒绝单一条件 |  | 顺者吉、逆者凶为大纲；但顺逆需结合气势：从势顺生为顺、反克成势为反，皆可为格。 | 顺者吉、逆者凶为大纲；但顺逆需结合气势：从势顺生为顺、反克成势为反，皆可为格。 |
+| `bazi/ditiansui-chanwei` | `DITIANSUICHA-029` | statement 中无可复原的 FactKey 取值 | 原文无盘面适用条件（通论／体例／取象表／起例取法） |  | 吉神宜隐藏蓄势（不被冲克）、凶神宜显露受制；隐者贵显、显者贵隐。 | 吉神宜隐藏蓄势（不被冲克）、凶神宜显露受制；隐者贵显、显者贵隐。 |
+| `bazi/ditiansui-chanwei` | `DITIANSUICHA-030` | statement 中无可复原的 FactKey 取值 | 原文有条件但口径未定或明确拒绝单一条件 |  | 五行众者（如比劫遍野）宜散（食伤泄）、寡者（如孤立一根）宜聚（印星生）。 | 五行众者（如比劫遍野）宜散（食伤泄）、寡者（如孤立一根）宜聚（印星生）。 |
+| `bazi/ditiansui-chanwei` | `DITIANSUICHA-031` | statement 中无可复原的 FactKey 取值 | 需要引擎未产出的事实 | 地支（卯酉、子午等）与冲的判定 | 震（卯）兑（酉）相对；卯酉冲为震兑战；处理须看月令支援。 | 震（卯）兑（酉）相对；卯酉冲为震兑战；处理须看月令支援。 |
+| `bazi/ditiansui-chanwei` | `DITIANSUICHA-032` | statement 中无可复原的 FactKey 取值 | 需要引擎未产出的事实 | 地支（子午）与冲的判定 | 坎（子）离（午）相对；子午冲为坎离战；处理须看月令支援与寒暖。 | 坎（子）离（午）相对；子午冲为坎离战；处理须看月令支援与寒暖。 |
+| `bazi/ditiansui-chanwei` | `DITIANSUICHA-037` | statement 中无可复原的 FactKey 取值 | 原文有条件但口径未定或明确拒绝单一条件 |  | 何知其人富——财气通门户…何知其人夭——五行偏枯至极。 | 何知其人富——财气通门户；何知其人贵——官星有理会；何知其人贫——财神反不真；何知其人贱——官星还不见；何知其人吉——喜神为辅弼；何知其人凶… |
+| `bazi/ditiansui-chanwei` | `DITIANSUICHA-038` | 可复原 1 个谓词对（现有语言本可表达） | 需要引擎未产出的事实 | 性别（女命） | 女命以夫星（正官）、子星（食伤）为重；夫星纯正、子星生旺者吉。 | 女命以夫星（正官）、子星（食伤）为重；夫星纯正、子星生旺者吉；古文有"贞淫"等贬义判语，现代不沿用。 |
+| `bazi/ditiansui-chanwei` | `DITIANSUICHA-039` | statement 中无可复原的 FactKey 取值 | 需要引擎未产出的事实 | 神煞具体名（关煞） | 小儿命主要看关煞、五行偏枯、冲战过重；任氏多次强调“小儿命断夭折须极审慎”。 | 小儿命主要看关煞、五行偏枯、冲战过重；任氏多次强调"小儿命断夭折须极审慎"。 |
+| `bazi/ditiansui-chanwei` | `DITIANSUICHA-040` | statement 中无可复原的 FactKey 取值 | 原文有条件但口径未定或明确拒绝单一条件 |  | 才（用神得用）与德（喜神有情）的命局表征；才德兼备者贵。 | 才（用神得用）与德（喜神有情）的命局表征；才德兼备者贵。 |
+| `bazi/ditiansui-chanwei` | `DITIANSUICHA-041` | statement 中无可复原的 FactKey 取值 | 原文有条件但口径未定或明确拒绝单一条件 |  | 命局气势顺而清者主奋发；气势逆而浊者主抑郁。 | 命局气势顺而清者主奋发；气势逆而浊者主抑郁。 |
+| `bazi/ditiansui-chanwei` | `DITIANSUICHA-042` | statement 中无可复原的 FactKey 取值 | 原文有条件但口径未定或明确拒绝单一条件 |  | 十神相生为恩、相克为怨；命局中恩怨配合决定际遇。 | 十神相生为恩、相克为怨；命局中恩怨配合决定际遇。 |
+| `bazi/ditiansui-chanwei` | `DITIANSUICHA-045` | statement 中无可复原的 FactKey 取值 | 需要引擎未产出的事实 | 透干／化气与当令（化神是否有根、是否被冲克） | 天干五合化气为真化的条件：化神当令、有根、不被冲克。 | 天干五合化气为真化的条件：化神当令、有根、不被冲克。 |
+| `bazi/ditiansui-chanwei` | `DITIANSUICHA-046` | statement 中无可复原的 FactKey 取值 | 原文有条件但口径未定或明确拒绝单一条件 |  | 日主有微根而大势从之者为假从；化神不真但合而似化者为假化；假从假化者，运行从化之 | 日主有微根而大势从之者为假从；化神不真但合而似化者为假化；假从假化者，运行从化之乡反吉、运逢扶身反凶。 |
+| `bazi/ditiansui-chanwei` | `DITIANSUICHA-047` | statement 中无可复原的 FactKey 取值 | 原文无盘面适用条件（通论／体例／取象表／起例取法） |  | 顺局（从势顺生）、反局（反克成势）、战局（五行相战需通关）、合局（合化成势）；皆 | 顺局（从势顺生）、反局（反克成势）、战局（五行相战需通关）、合局（合化成势）；皆为气势格局。 |
+| `bazi/ditiansui-chanwei` | `DITIANSUICHA-048` | statement 中无可复原的 FactKey 取值 | 原文无盘面适用条件（通论／体例／取象表／起例取法） |  | 君象（日主为主、众星拱卫）、臣象（日主为臣、君星显达）、母象（印星养身）、子象（ | 君象（日主为主、众星拱卫）、臣象（日主为臣、君星显达）、母象（印星养身）、子象（食伤泄秀）；皆为气势比拟。 |
+| `bazi/ditiansui-chanwei` | `DITIANSUICHA-051` | statement 中无可复原的 FactKey 取值 | 原文有条件但口径未定或明确拒绝单一条件 |  | 大运为方向、流年为发动；岁运与命局合参，看用神得力、忌神得权。 | 大运为方向、流年为发动；岁运与命局合参，看用神得力、忌神得权。 |
+| `bazi/ditiansui-chanwei` | `DITIANSUICHA-052` | statement 中无可复原的 FactKey 取值 | 需要引擎未产出的事实 | 大运干支与运行绝地判定 | 贞元之运为命之终始；五行流通无阻者主寿，偏枯至极、运行绝地者为危。 | 贞元之运为命之终始；五行流通无阻者主寿，偏枯至极、运行绝地者为危。 |
+| `bazi/ditiansui-chanwei` | `DITIANSUICHA-DR-01` | statement 中无可复原的 FactKey 取值 | 原文无盘面适用条件（通论／体例／取象表／起例取法） |  | 五气偏全决定命之吉凶；偏者凶、全者吉，此为根本判断框架。 | 五气偏全决定命之吉凶；偏者凶、全者吉，此为根本判断框架。 |
+| `bazi/ditiansui-chanwei` | `DITIANSUICHA-DR-02` | statement 中无可复原的 FactKey 取值 | 需要引擎未产出的事实 | 地支三合局／方局的成局状态（三支是否齐） | 三合局（亥卯未木局等）成局者气势全；方局（寅卯辰东方等）齐全者气势纯。 | 三合局（亥卯未木局等）成局者气势全；方局（寅卯辰东方等）齐全者气势纯；局成宜顺、局破宜疏。 |
+| `bazi/ditiansui-chanwei` | `DITIANSUICHA-DR-04` | statement 中无可复原的 FactKey 取值 | 原文有条件但口径未定或明确拒绝单一条件 |  | 火土过盛则燥（不长万物）；水土过盛则湿（成淤泥）；燥湿调节为贵。 | 火土过盛则燥（不长万物）；水土过盛则湿（成淤泥）；燥湿调节为贵。 |
+| `bazi/ditiansui-chanwei` | `DITIANSUICHA-DR-05` | statement 中无可复原的 FactKey 取值 | 需要引擎未产出的事实 | 时柱（子宫）／性别 | 男以官杀为子、女以食伤为子；时柱为子宫；子星生旺、子宫稳定者子嗣顺利。 | 男以官杀为子、女以食伤为子；时柱为子宫；子星生旺、子宫稳定者子嗣顺利。 |
+| `bazi/ditiansui-chanwei` | `DITIANSUICHA-DR-07` | statement 中无可复原的 FactKey 取值 | 未复核 |  | 五行偏枯对应脏腑（甲乙肝胆、丙丁心小肠、戊己脾胃、庚辛肺大肠、壬癸肾膀胱）；偏枯 | 五行偏枯对应脏腑（甲乙肝胆、丙丁心小肠、戊己脾胃、庚辛肺大肠、壬癸肾膀胱）；偏枯之气主体质倾向。 |
+| `bazi/ditiansui-chanwei` | `DR-01` | statement 中无可复原的 FactKey 取值 | 原文无盘面适用条件（通论／体例／取象表／起例取法） |  | 干为天元，支为地元，支中所藏为人元；论命三元一统，以日干为我，旁参支藏。 | 干为天元，支为地元，支中所藏为人元；论命三元一统，以日干为我，旁参支藏。 |
+| `bazi/ditiansui-chanwei` | `DR-02` | statement 中无可复原的 FactKey 取值 | 原文无盘面适用条件（通论／体例／取象表／起例取法） |  | 两气合而成象（如水木相涵），五气聚而成形（金木水火土齐备）；形象成则气势顺… | 两气合而成象（如水木相涵），五气聚而成形（金木水火土齐备）；形象成则气势顺，宜顺其势；形象破则需通关或制伏。 |
+| `bazi/ditiansui-chanwei` | `DR-03` | statement 中无可复原的 FactKey 取值 | 原文有条件但口径未定或明确拒绝单一条件 |  | 日主衰旺判断需综合月令得令失令、四柱根气、十干性情、合冲解化；不可以“得令”或“ | 日主衰旺判断需综合月令得令失令、四柱根气、十干性情、合冲解化；强中有弱、弱中有强；不可以"得令"或"失令"一项独断。 |
+| `bazi/ditiansui-chanwei` | `DR-05` | 同一 key 多个取值（OR 本可表达） | 需要引擎未产出的事实 | 日支（妻宫） | 男以正财（偏财）为妻、日支为妻宫；妻星与妻宫俱旺者得贤妻；妻星弱、妻宫被冲克者婚 | 男以正财（偏财）为妻、日支为妻宫；妻星与妻宫俱旺者得贤妻；妻星弱、妻宫被冲克者婚不利。 |
+| `bazi/ditiansui-chanwei` | `DR-06` | statement 中无可复原的 FactKey 取值 | 原文有条件但口径未定或明确拒绝单一条件 |  | 闲神（不为用、不为忌）虽不主吉凶，但能起转化作用；闲神被合化为忌神时为凶变。 | 闲神（不为用、不为忌）虽不主吉凶，但能起转化作用；闲神被合化为忌神时为凶变。 |
+| `bazi/ditiansui-chanwei` | `DR-07` | statement 中无可复原的 FactKey 取值 | 原文无盘面适用条件（通论／体例／取象表／起例取法） |  | 木仁、火礼、土信、金义、水智；性情判断以日主五行为主，并结合用神调节。 | 木仁、火礼、土信、金义、水智；性情判断以日主五行为主，并结合用神调节。 |
+| `bazi/mingli-yueyan` | `MLY-R004` | statement 中无可复原的 FactKey 取值 | pack 元规则／调用条件，不是盘面条件 |  | 用神不是固定神名，而是扶抑太过/不及后的平衡机制。 | 用神不是固定神名，而是扶抑太过/不及后的平衡机制。 |
+| `bazi/mingli-yueyan` | `MLY-R007` | statement 中无可复原的 FactKey 取值 | pack 元规则／调用条件，不是盘面条件 |  | 旧书六亲取法多有悖戾，须按命局结构重估。 | 旧书六亲取法多有悖戾，须按命局结构重估。 |
+| `bazi/qiongtong-baojian` | `QR` | statement 中无可复原的 FactKey 取值 | 原文无盘面适用条件（通论／体例／取象表／起例取法） |  | 00 五行总论 | 00 五行总论 |
+| `bazi/qiongtong-baojian` | `QR-00-01` | statement 中无可复原的 FactKey 取值 | 原文无盘面适用条件（通论／体例／取象表／起例取法） |  | 木主仁、性直；火主礼、性急…生克之理：木生火…金克木。 | 木主仁、性直；火主礼、性急；土主信、性重；金主义、性刚；水主智、性聪。生克之理：木生火、火生土、土生金、金生水、水生木；木克土、土克水、水克… |
+| `bazi/qiongtong-baojian` | `QTB` | statement 中无可复原的 FactKey 取值 | 原文无盘面适用条件（通论／体例／取象表／起例取法） |  | 五行之土无固定一季之性，须结合四时所乘之气审视调济。 | 五行之土无固定一季之性，须结合四时所乘之气审视调济。 |
+| `bazi/sanming-tonghui` | `R-01` | statement 中无可复原的 FactKey 取值 | 原文无盘面适用条件（通论／体例／取象表／起例取法） |  | 五行以水一六、火二七、木三八、金四九、土五十配生数与成数。 | 五行以水一六、火二七、木三八、金四九、土五十配生数与成数。 |
+| `bazi/sanming-tonghui` | `R-02` | statement 中无可复原的 FactKey 取值 | 原文无盘面适用条件（通论／体例／取象表／起例取法） |  | 十干之禄寄十二支，阳道顺行、阴道逆转，自长生起数至临官。 | 十干之禄寄十二支，阳道顺行、阴道逆转，自长生起数至临官。 |
+| `bazi/sanming-tonghui` | `R-06` | statement 中无可复原的 FactKey 取值 | 需要引擎未产出的事实 | 日支（辰/戌） | 庚辰、庚戌、壬辰、戊戌为魁罡日；性烈刚强、聪明果决；忌见财官。 | 庚辰、庚戌、壬辰、戊戌为魁罡日；性烈刚强、聪明果决；忌见财官。 |
+| `bazi/sanming-tonghui` | `R-07` | statement 中无可复原的 FactKey 取值 | 原文无盘面适用条件（通论／体例／取象表／起例取法） |  | 日干、十神、五行偏枯决定性情与形貌；木主仁、火主礼、土主信、金主义、水主智。 | 日干、十神、五行偏枯决定性情与形貌；木主仁、火主礼、土主信、金主义、水主智。 |
+| `bazi/sanming-tonghui` | `R-09` | statement 中无可复原的 FactKey 取值 | 需要引擎未产出的事实 | 月支/日支等地支（十干喜忌支位） | 十干各有喜忌支位：甲喜寅卯、忌申酉；乙喜寅卯辰、忌酉戌… | 十干各有喜忌支位：甲喜寅卯、忌申酉；乙喜寅卯辰、忌酉戌；丙喜巳午、忌亥子；丁喜巳午未、忌子丑；戊喜巳午辰戌、忌寅卯；己喜巳午未、忌卯辰；庚喜… |
+| `bazi/sanming-tonghui` | `SANMINGTONGH-003` | statement 中无可复原的 FactKey 取值 | 需要引擎未产出的事实 | 纳音（甲子乙丑海中金等纳音名） | 本篇以甲子乙丑海中金、壬申癸酉剑锋金、庚辰辛巳白蜡金为例，解释纳音如何用位置和生 | 本篇以甲子乙丑海中金、壬申癸酉剑锋金、庚辰辛巳白蜡金为例，解释纳音如何用位置和生旺取物象。 |
+| `bazi/sanming-tonghui` | `SANMINGTONGH-004` | statement 中无可复原的 FactKey 取值 | 需要引擎未产出的事实 | 纳音（甲子乙丑海中金）与年月日时柱干支 | 论海中金须配合所见火、水、木、土等条件…不是单见甲子乙丑便有统一吉凶判词。 | 论海中金须配合所见火、水、木、土等条件，作者亦对部分旧说提出异议，不是单见甲子乙丑便有统一吉凶判词。 |
+| `bazi/sanming-tonghui` | `SANMINGTONGH-007` | statement 中无可复原的 FactKey 取值 | 原文无盘面适用条件（通论／体例／取象表／起例取法） |  | 节在一月的分界，中气在月之半；本篇以丑之终、寅之始解释立节。 | 节在一月的分界，中气在月之半；本篇以丑之终、寅之始解释立节。 |
+| `bazi/sanming-tonghui` | `SANMINGTONGH-009` | statement 中无可复原的 FactKey 取值 | 原文无盘面适用条件（通论／体例／取象表／起例取法） |  | 本篇以三日折一年推起运，阳男阴女向出生后的节顺数、阴男阳女向出生前的节逆数… | 本篇以三日折一年推起运，阳男阴女向出生后的节顺数、阴男阳女向出生前的节逆数；须计节令与生时的分数，不宜粗取整日。 |
+| `bazi/sanming-tonghui` | `SANMINGTONGH-010` | statement 中无可复原的 FactKey 取值 | 需要引擎未产出的事实 | 太岁／流年干与柱干支 | 太岁分生年当生太岁与逐年游行太岁…日犯岁君须结合原局或大运的制化救应、相合有情判 | 太岁分生年当生太岁与逐年游行太岁；入命未必为凶。日犯岁君须结合原局或大运的制化救应、相合有情判断。 |
+| `bazi/sanming-tonghui` | `SANMINGTONGH-011` | 可复原 1 个谓词对（现有语言本可表达） | 需要引擎未产出的事实 | 大运干支与流年干支 | 原文以甲子流年又逢甲子大运为岁运并临；并临不一律为凶，须分羊刃七杀与财官印绶及命 | 原文以甲子流年又逢甲子大运为岁运并临；并临不一律为凶，须分羊刃七杀与财官印绶及命局喜忌。 |
+| `bazi/sanming-tonghui` | `SANMINGTONGH-013` | statement 中无可复原的 FactKey 取值 | 需要引擎未产出的事实 | 化神之根与冲克破合（透干/合化结构） | 天干五合化气需化神当令、四柱有化神之根、不被冲克破合者方真化。 | 天干五合化气需化神当令、四柱有化神之根、不被冲克破合者方真化。 |
+| `bazi/sanming-tonghui` | `SANMINGTONGH-015` | statement 中无可复原的 FactKey 取值 | 原文无盘面适用条件（通论／体例／取象表／起例取法） |  | 申子辰、巳酉丑、寅午戌、亥卯未为三合组合；原文强调三字缺一不能直接按三合化局论。 | 申子辰、巳酉丑、寅午戌、亥卯未为三合组合；原文强调三字缺一不能直接按三合化局论。 |
+| `bazi/sanming-tonghui` | `SANMINGTONGH-016` | statement 中无可复原的 FactKey 取值 | 原文无盘面适用条件（通论／体例／取象表／起例取法） |  | 六害组合为子未、丑午、寅巳、卯辰、申亥、酉戌。 | 六害组合为子未、丑午、寅巳、卯辰、申亥、酉戌。 |
+| `bazi/sanming-tonghui` | `SANMINGTONGH-017` | statement 中无可复原的 FactKey 取值 | 原文无盘面适用条件（通论／体例／取象表／起例取法） |  | 本段列寅巳申无恩之刑、丑戌未恃势之刑、子卯无礼之刑与辰午酉亥自刑… | 本段列寅巳申无恩之刑、丑戌未恃势之刑、子卯无礼之刑与辰午酉亥自刑；又并录《三车一览》将前两组名称互换的说法。 |
+| `bazi/sanming-tonghui` | `SANMINGTONGH-019` | statement 中无可复原的 FactKey 取值 | 原文无盘面适用条件（通论／体例／取象表／起例取法） |  | 十干分配天文（甲雷、乙风…）；十二支分配地理（子齐青州…）。古法以天文地理取象配 | 十干分配天文（甲雷、乙风、丙日、丁星、戊霞、己云、庚月、辛霜、壬雨、癸露）；十二支分配地理（子齐青州、丑吴越扬州等）。古法以天文地理取象配命… |
+| `bazi/sanming-tonghui` | `SANMINGTONGH-021` | statement 中无可复原的 FactKey 取值 | 原文无盘面适用条件（通论／体例／取象表／起例取法） |  | 本篇安命宫先从子宫起正月逆排生月，再将生时加于月宫顺排，逢卯定位；宫干按年干起月 | 本篇安命宫先从子宫起正月逆排生月，再将生时加于月宫顺排，逢卯定位；宫干按年干起月法配。 |
+| `bazi/sanming-tonghui` | `SANMINGTONGH-022` | statement 中无可复原的 FactKey 取值 | 原文无盘面适用条件（通论／体例／取象表／起例取法） |  | 小运以时辰为起点，男阳女阴顺行、男阴女阳逆行，逐年推排… | 小运以时辰为起点，男阳女阴顺行、男阴女阳逆行，逐年推排；每一年一柱，用于辅助大运看年内细节。 |
+| `bazi/sanming-tonghui` | `SANMINGTONGH-023` | statement 中无可复原的 FactKey 取值 | 需要引擎未产出的事实 | 节气深浅（五行在节气中的阶段） | 五行在节气转换中有四阶段：进气、交气、退气、伏气。判断五行力量需考虑节气深浅。 | 五行在节气转换中有四阶段：进气（将旺未旺）、交气（正旺）、退气（旺极将衰）、伏气（衰极潜伏）。判断五行力量需考虑节气深浅。 |
+| `bazi/sanming-tonghui` | `SANMINGTONGH-026` | statement 中无可复原的 FactKey 取值 | 原文无盘面适用条件（通论／体例／取象表／起例取法） |  | 阳干见刃位（甲见卯、丙见午、戊见午、庚见酉、壬见子）为阳刃；阴干一般不取刃。 | 阳干见刃位（甲见卯、丙见午、戊见午、庚见酉、壬见子）为阳刃；阴干一般不取刃。 |
+| `bazi/sanming-tonghui` | `SANMINGTONGH-027` | statement 中无可复原的 FactKey 取值 | 原文无盘面适用条件（通论／体例／取象表／起例取法） |  | 旬空由十干配十二支未到之位确定，如甲子旬戌亥…不能逢空即凶、逢合即吉。 | 旬空由十干配十二支未到之位确定，如甲子旬戌亥；原文另分阴阳、前后与互换等法，空亡有用无用须看所空为福聚还是祸聚，不能逢空即凶、逢合即吉。 |
+| `bazi/sanming-tonghui` | `SANMINGTONGH-028` | statement 中无可复原的 FactKey 取值 | 原文有条件但口径未定或明确拒绝单一条件 |  | 神煞总论以生年纳音释身，须辨煞与本身的克临、生旺衰败及福神扶助；冲破合会可以转化 | 神煞总论以生年纳音释身，须辨煞与本身的克临、生旺衰败及福神扶助；冲破合会可以转化福祸，吉凶神煞不可拘定。 |
+| `bazi/sanming-tonghui` | `SANMINGTONGH-030` | statement 中无可复原的 FactKey 取值 | 原文有条件但口径未定或明确拒绝单一条件 |  | 三奇篇并列乙丙丁、甲戊庚诸说…不能仅凭三干齐全定为有效贵格。 | 三奇篇并列乙丙丁、甲戊庚诸说，名称与顺逆取舍有分歧；须另论得体、得地、昼夜、贵神扶助及冲破，不能仅凭三干齐全定为有效贵格。 |
+| `bazi/sanming-tonghui` | `SANMINGTONGH-033` | 可复原 1 个谓词对（现有语言本可表达） | 需要引擎未产出的事实 | 纳音五行正库（纳音正印） | 神煞篇正印为纳音五行正库，金见乙丑、木癸未、火甲戌、水土壬辰丙辰… | 神煞篇正印为纳音五行正库，金见乙丑、木癸未、火甲戌、水土壬辰丙辰；依旺气、贵格、救助及空破等分别论诸印成败。 |
+| `bazi/sanming-tonghui` | `SANMINGTONGH-034` | statement 中无可复原的 FactKey 取值 | 需要引擎未产出的事实 | 月支三合组与德干/秀干（德秀神煞） | 德秀按月支三合组分别取德干和秀干，须无破冲克压…不能据单一德秀标签判定容貌品性。 | 德秀按月支三合组分别取德干和秀干，须无破冲克压，并考察学堂财官扶助；不能据单一德秀标签判定容貌品性。 |
+| `bazi/sanming-tonghui` | `SANMINGTONGH-035` | statement 中无可复原的 FactKey 取值 | 需要引擎未产出的事实 | 年支与元辰（命前/命后辰）神煞 | 元辰冲前后法须分阳男阴女与阴男阳女，且有遇合反吉…不能只用固定年支对照判损耗。 | 元辰冲前后法须分阳男阴女与阴男阳女，且有遇合反吉及子平原有七煞岁运复遇的另一解释，不能只用固定年支对照判损耗。 |
+| `bazi/sanming-tonghui` | `SANMINGTONGH-036` | statement 中无可复原的 FactKey 取值 | 原文无盘面适用条件（通论／体例／取象表／起例取法） |  | 暗金的煞以四仲子午卯酉取巳、四孟寅申巳亥取酉、四季辰戌丑未取丑，分吟呻破碎白衣… | 暗金的煞以四仲子午卯酉取巳、四孟寅申巳亥取酉、四季辰戌丑未取丑，分吟呻破碎白衣；旺相吉神救且入贵格原可无害。 |
+| `bazi/sanming-tonghui` | `SANMINGTONGH-038` | statement 中无可复原的 FactKey 取值 | 原文无盘面适用条件（通论／体例／取象表／起例取法） |  | 六厄按三合局五行死位取申子辰卯、寅午戌酉、亥卯未午、巳酉丑子… | 六厄按三合局五行死位取申子辰卯、寅午戌酉、亥卯未午、巳酉丑子，有救护扶持、生旺贵气另论。 |
+| `bazi/sanming-tonghui` | `SANMINGTONGH-039` | statement 中无可复原的 FactKey 取值 | 原文无盘面适用条件（通论／体例／取象表／起例取法） |  | 勾绞以命前三辰与后三辰分取，并依阳男阴女、阴男阳女互换勾绞… | 勾绞以命前三辰与后三辰分取，并依阳男阴女、阴男阳女互换勾绞；须再看身煞生克、福救及两位是否俱全。 |
+| `bazi/sanming-tonghui` | `SANMINGTONGH-040` | statement 中无可复原的 FactKey 取值 | 原文无盘面适用条件（通论／体例／取象表／起例取法） |  | 十恶大败篇并列日禄入旬空、元白经特定年日冲、玄黄经年月日与旬等不同取法… | 十恶大败篇并列日禄入旬空、元白经特定年日冲、玄黄经年月日与旬等不同取法，原明有吉神贵气可吉，不是固定年查十日即断破败。 |
+| `bazi/sanming-tonghui` | `SANMINGTONGH-046` | statement 中无可复原的 FactKey 取值 | 原文有条件但口径未定或明确拒绝单一条件 |  | 官煞混杂时，凭月令、合冲、制化决定去官留煞或去煞留官；保留者为格之主。 | 官煞混杂时，凭月令、合冲、制化决定去官留煞或去煞留官；保留者为格之主。 |
+| `bazi/sanming-tonghui` | `SANMINGTONGH-048` | statement 中无可复原的 FactKey 取值 | 需要引擎未产出的事实 | 禄（临官）位与贵人神煞、地支三合局 | 官印禄库（官印禄库俱全为贵）、相刑遇贵（刑中有贵人解）、三合遇贵（三合局又遇贵人 | 官印禄库（官印禄库俱全为贵）、相刑遇贵（刑中有贵人解）、三合遇贵（三合局又遇贵人）——三者均为官星得辅助或救应的吉祥组合。 |
+| `bazi/sanming-tonghui` | `SANMINGTONGH-049` | statement 中无可复原的 FactKey 取值 | 原文有条件但口径未定或明确拒绝单一条件 |  | 金木间隔（金木有制为佳）、水火既济（丙壬相配）、金火相成（火炼金成器）… | 金木间隔（金木有制为佳）、水火既济（丙壬相配智慧通达）、金火相成（火炼金成器）——三者均为五行搭配的特殊吉象。 |
+| `bazi/sanming-tonghui` | `SANMINGTONGH-051` | statement 中无可复原的 FactKey 取值 | 需要引擎未产出的事实 | 日支（日坐临官禄位） | 专禄格（日坐临官禄位）禄旺，需财官食伤为用以平衡… | 专禄格（日坐临官禄位）禄旺，需财官食伤为用以平衡；禄旺无制则过刚易折。 |
+| `bazi/sanming-tonghui` | `SANMINGTONGH-059` | statement 中无可复原的 FactKey 取值 | 原文有条件但口径未定或明确拒绝单一条件 |  | 印绶生身、护身；身弱喜印；身强忌印过重。 | 印绶生身、护身；身弱喜印；身强忌印过重。 |
+| `bazi/sanming-tonghui` | `SANMINGTONGH-060` | statement 中无可复原的 FactKey 取值 | 原文有条件但口径未定或明确拒绝单一条件 |  | 印多为病、又有财能破印，行运扶财者，弃印就财为格。 | 印多为病、又有财能破印，行运扶财者，弃印就财为格。 |
+| `bazi/sanming-tonghui` | `SANMINGTONGH-065` | statement 中无可复原的 FactKey 取值 | 需要引擎未产出的事实 | 月支与阳刃神煞 | 阳干见月刃为阳刃格；以官、煞、食、伤制刃为用；不取格而以扶抑论。 | 阳干见月刃为阳刃格；以官、煞、食、伤制刃为用；不取格而以扶抑论。 |
+| `bazi/sanming-tonghui` | `SANMINGTONGH-066` | statement 中无可复原的 FactKey 取值 | 需要引擎未产出的事实 | 月支（日干临官在月支） | 日干临官在月支为建禄；不取格而以扶抑论；常以月外财、官、食、伤为用。 | 日干临官在月支为建禄；不取格而以扶抑论；常以月外财、官、食、伤为用。 |
+| `bazi/sanming-tonghui` | `SANMINGTONGH-070` | statement 中无可复原的 FactKey 取值 | 需要引擎未产出的事实 | 神煞具体名（关煞）与刑冲破害 | 小儿命须看关煞与刑冲破害；关煞重者主夭折或多病。 | 小儿命须看关煞与刑冲破害；关煞重者主夭折或多病。 |
+| `bazi/sanming-tonghui` | `SANMINGTONGH-075` | statement 中无可复原的 FactKey 取值 | 原文有条件但口径未定或明确拒绝单一条件 |  | 安静守分（命局平和无冲战）；福寿两备（五行流通、夫星子星皆得用、无冲无破）。二者 | 安静守分（命局平和无冲战）；福寿两备（五行流通、夫星子星皆得用、无冲无破）。二者均为女命理想化标准。 |
+| `bazi/sanming-tonghui` | `SANMINGTONGH-076` | statement 中无可复原的 FactKey 取值 | 需要引擎未产出的事实 | 神煞具体名（关煞）与冲战 | 小儿/少年命局冲战过重、关煞重、五行偏枯至极，古法断为横夭。 | 小儿/少年命局冲战过重、关煞重、五行偏枯至极，古法断为横夭。 |
+| `bazi/sanming-tonghui` | `SANMINGTONGH-078` | statement 中无可复原的 FactKey 取值 | 需要引擎未产出的事实 | 年柱/时柱干支组合 | 古法由八字推孕中男女，以年柱时柱或特定干支组合（如阳年阳月阳日阳时生男等）推断。 | 古法由八字推孕中男女，以年柱时柱或特定干支组合（如阳年阳月阳日阳时生男等）推断。 |
+| `bazi/sanming-tonghui` | `SANMINGTONGH-083` | statement 中无可复原的 FactKey 取值 | 原文无盘面适用条件（通论／体例／取象表／起例取法） |  | 以月支为纲论日干吉凶：月支当令则日干得气而旺，月支失令则日干不得气而衰… | 以月支为纲论日干吉凶：月支当令则日干得气而旺，月支失令则日干不得气而衰；月支与日干生克关系决定基本旺衰倾向。 |
+| `bazi/sanming-tonghui` | `SANMINGTONGH-084` | statement 中无可复原的 FactKey 取值 | 需要引擎未产出的事实 | 时支与地支（十二时辰五行） | 五行在十二时辰各有旺衰变化（如木旺于寅卯辰时…）；五行与地理方位亦有分野吉凶。 | 五行在十二时辰各有旺衰变化（如木旺于寅卯辰时、火旺于巳午未时等）；五行与地理方位（东南西北中）亦有分野吉凶。时辰定五行当前气数，地域分野作辅… |
+| `bazi/sanming-tonghui` | `SANMINGTONGH-091` | statement 中无可复原的 FactKey 取值 | 原文有条件但口径未定或明确拒绝单一条件 |  | 破官/飞财/破财三格的共同原则：原有格局被破之后，另有替代之格可成；破而后立，有 | 破官/飞财/破财三格的共同原则：原有格局（官格/财格）被破之后，另有替代之格可成；破而后立，有救应方可取格；破而无救则原格毁。 |
+| `bazi/sanming-tonghui` | `SANMINGTONGH-094` | statement 中无可复原的 FactKey 取值 | 需要引擎未产出的事实 | 地支（子午丑未）与合冲 | 子午双包格：命局子午对冲而各有包裹得宜（如子被丑合包裹、午被未合包裹）… | 子午双包格：命局子午对冲而各有包裹得宜（如子被丑合包裹、午被未合包裹）；冲中有合、动中有制则为贵。 |
+| `bazi/sanming-tonghui` | `SANMINGTONGH-095` | statement 中无可复原的 FactKey 取值 | 原文无盘面适用条件（通论／体例／取象表／起例取法） |  | 六神兽格（青龙=木、白虎=金…）为五行配六神的取象法；各神兽对应五行须在命局成形 | 六神兽格（青龙=木、白虎=金、朱雀=火、玄武=水、勾陈=土）为五行配六神的取象法；各神兽对应五行须在命局成形（三合或方局）且格局清纯不破方为… |
+| `bazi/sanming-tonghui` | `SANMINGTONGH-096` | statement 中无可复原的 FactKey 取值 | 原文有条件但口径未定或明确拒绝单一条件 |  | 还魂借气格：命局借他柱之气为己用（如枯木逢水得生），日主衰弱而有情生扶者可借气还 | 还魂借气格：命局借他柱之气为己用（如枯木逢水得生），日主衰弱而有情生扶者可借气还魂；借气来源须有情不破。 |
+| `bazi/sanming-tonghui` | `SANMINGTONGH-097` | statement 中无可复原的 FactKey 取值 | 需要引擎未产出的事实 | 日支（八专日的日支） | 八专日（甲寅、乙卯、丁未、己未、庚申、辛酉、壬子、癸丑）日坐禄旺之地，身强为论… | 八专日（甲寅、乙卯、丁未、己未、庚申、辛酉、壬子、癸丑）日坐禄旺之地，身强为论；以月令它格为用。 |
+| `bazi/sanming-tonghui` | `SANMINGTONGH-098` | statement 中无可复原的 FactKey 取值 | 原文有条件但口径未定或明确拒绝单一条件 |  | 土局润下、金白水清、木火交辉、火金铸印、火土夹杂…五者皆属两五行配合的特殊格局。 | 土局润下（土遇水局，克中有生）；金白水清（金水相生，主聪明）；木火交辉（木火通明，主文采）；火金铸印（火炼金成器，主权威）；火土夹杂（火土过… |
+| `bazi/sanming-tonghui` | `SANMINGTONGH-100` | statement 中无可复原的 FactKey 取值 | 需要引擎未产出的事实 | 四柱干支（同气纯一 / 地支顺连） | 四位纯全（四柱干支同气纯一）与一气生成（四柱地支顺连如寅卯辰巳）皆为专一格局… | 四位纯全（四柱干支同气纯一）与一气生成（四柱地支顺连如寅卯辰巳）皆为专一格局；纯全太过则偏枯，一气顺连为美、逆乱则破。 |
+| `bazi/sanming-tonghui` | `SANMINGTONGH-101` | statement 中无可复原的 FactKey 取值 | 原文无盘面适用条件（通论／体例／取象表／起例取法） |  | 背禄逐马（禄被背不得、马被逐失势）为古法凶断；十干十二年生大贵人例为十干各年大贵 | 背禄逐马（禄被背不得、马被逐失势）为古法凶断；十干十二年生大贵人例为十干各年大贵人的枚举配合。 |
+| `bazi/sanming-tonghui` | `SANMINGTONGH-106` | statement 中无可复原的 FactKey 取值 | pack 元规则／调用条件，不是盘面条件 |  | 本书卷六所载杂格（30+ 项）多数属古法…杂格可作趣味参考或历史源流追踪，但不得 | 本书卷六所载杂格（壬骑龙背、遥合禄马、飞天禄马、六神兽格、趋乾趋艮等 30+ 项）多数属古法、唐宋朝禄命法或取象法，不属后世子平格局体系的主… |
+| `bazi/sanming-tonghui` | `SANMINGTONGH-R-01` | statement 中无可复原的 FactKey 取值 | 原文无盘面适用条件（通论／体例／取象表／起例取法） |  | 相生为水生木、木生火…相克为木克土… | 相生为水生木、木生火、火生土、土生金、金生水；相克为木克土、土克水、水克火、火克金、金克木。 |
+| `bazi/sanming-tonghui` | `SANMINGTONGH-R-02` | statement 中无可复原的 FactKey 取值 | 需要引擎未产出的事实 | 月令藏干与人元司令（透干） | 月令所藏天干分本气、中气、余气，按节气分日数分配司令；取格优先看本气透干… | 月令所藏天干分本气、中气、余气，按节气分日数分配司令；取格优先看本气透干，本气不透看中气、余气。 |
+| `bazi/sanming-tonghui` | `SANMINGTONGH-R-06` | statement 中无可复原的 FactKey 取值 | 需要引擎未产出的事实 | 地支三合局/方局（四支齐全判定） | 木局曲直（亥卯未或寅卯辰全）、火局炎上…土局稼穑（辰戌丑未全）… | 木局曲直（亥卯未或寅卯辰全）、火局炎上（寅午戌或巳午未全）、金局从革（巳酉丑或申酉戌全）、水局润下（申子辰或亥子丑全）、土局稼穑（辰戌丑未全… |
+| `bazi/yuanhai-ziping` | `YR-01` | statement 中无可复原的 FactKey 取值 | 原文无盘面适用条件（通论／体例／取象表／起例取法） |  | 阴阳五行为造化之源；命理以五行生克为底层规则。 | 阴阳五行为造化之源；命理以五行生克为底层规则。 |
+| `bazi/yuanhai-ziping` | `YR-02` | statement 中无可复原的 FactKey 取值 | pack 元规则／调用条件，不是盘面条件 |  | 论命总纲赋文；以“继善”为名…被《三命通会》承袭。 | 论命总纲赋文；以"继善"为名，核心思想为顺天应命、五行配合。被《三命通会》承袭。 |
+| `bazi/yuanhai-ziping` | `YR-03` | statement 中无可复原的 FactKey 取值 | 原文无盘面适用条件（通论／体例／取象表／起例取法） |  | 大运从月柱起；男阳女阴顺行、男阴女阳逆行；起运岁数按生时距前/后节气日数除三。 | 大运从月柱起；男阳女阴顺行、男阴女阳逆行；起运岁数按生时距前/后节气日数除三。 |
+| `bazi/yuanhai-ziping` | `YR-P-01` | statement 中无可复原的 FactKey 取值 | 原文无盘面适用条件（通论／体例／取象表／起例取法） |  | 起运折除以三日为一年，按一年二十四气、七十二候计。 | 起运折除以三日为一年，按一年二十四气、七十二候计。 |
+| `bazi/yuanhai-ziping` | `YUANHAIZIPIN-003` | statement 中无可复原的 FactKey 取值 | 原文无盘面适用条件（通论／体例／取象表／起例取法） |  | 以日干为“我”，其余干支相对于日干的十神关系为论命主线。区别于早期禄命“以年为主 | 以日干为"我"，其余干支相对于日干的十神关系为论命主线。区别于早期禄命"以年为主"。 |
+| `bazi/yuanhai-ziping` | `YUANHAIZIPIN-007` | statement 中无可复原的 FactKey 取值 | 原文无盘面适用条件（通论／体例／取象表／起例取法） |  | 天干五合（甲己合土等）；地支六合、三合、六冲、三刑、六害各有其成立条件与吉凶作用 | 天干五合（甲己合土等）；地支六合、三合、六冲、三刑、六害各有其成立条件与吉凶作用。 |
+| `bazi/yuanhai-ziping` | `YUANHAIZIPIN-008` | statement 中无可复原的 FactKey 取值 | 需要引擎未产出的事实 | 月令藏干与透干（人元司令） | 月令所藏天干分本气、中气、余气；取格优先看本气透干。 | 月令所藏天干分本气、中气、余气；取格优先看本气透干。 |
+| `bazi/yuanhai-ziping` | `YUANHAIZIPIN-012` | statement 中无可复原的 FactKey 取值 | pack 元规则／调用条件，不是盘面条件 |  | 看命次序的经验口诀汇总（先看月令、再看十神、再看合冲等）。 | 看命次序的经验口诀汇总（先看月令、再看十神、再看合冲等）。 |
+| `bazi/yuanhai-ziping` | `YUANHAIZIPIN-014` | statement 中无可复原的 FactKey 取值 | 需要引擎未产出的事实 | 月支（日干临官在月 / 阳干刃在月） | 建禄格（日干临官在月）与阳刃格（阳干刃在月）皆不取月令格局，而以扶抑论。 | 建禄格（日干临官在月）与阳刃格（阳干刃在月）皆不取月令格局，而以扶抑论。 |
+| `bazi/yuanhai-ziping` | `YUANHAIZIPIN-019` | statement 中无可复原的 FactKey 取值 | 原文无盘面适用条件（通论／体例／取象表／起例取法） |  | 日主在月令的旺相休囚决定基本强弱倾向。 | 日主在月令的旺相休囚决定基本强弱倾向。 |
+| `bazi/yuanhai-ziping` | `YUANHAIZIPIN-025` | statement 中无可复原的 FactKey 取值 | 原文无盘面适用条件（通论／体例／取象表／起例取法） |  | 由日干五行论性情：木仁火礼土信金义水智。 | 由日干五行论性情：木仁火礼土信金义水智。 |
+| `bazi/yuanhai-ziping` | `YUANHAIZIPIN-030` | statement 中无可复原的 FactKey 取值 | pack 元规则／调用条件，不是盘面条件 |  | 格局取用经验心法汇总：看月令、看透干、看喜忌、看大运。 | 格局取用经验心法汇总：看月令、看透干、看喜忌、看大运。 |
+| `bazi/yuanhai-ziping` | `YUANHAIZIPIN-031` | statement 中无可复原的 FactKey 取值 | 需要引擎未产出的事实 | 神煞具体名（关煞）与冲战 | 小儿命局看关煞、五行偏枯、冲战过重；古法断夭折需极度谨慎。 | 小儿命局看关煞、五行偏枯、冲战过重；古法断夭折需极度谨慎。 |
+| `bazi/yuanhai-ziping` | `YUANHAIZIPIN-033` | statement 中无可复原的 FactKey 取值 | 原文有条件但口径未定或明确拒绝单一条件 |  | 寿命长短的古法判断：五行流通无偏枯主寿；五行偏枯至极、大运通关不过为危。 | 寿命长短的古法判断：五行流通无偏枯主寿；五行偏枯至极、大运通关不过为危。 |
+| `bazi/yuanhai-ziping` | `YUANHAIZIPIN-034` | statement 中无可复原的 FactKey 取值 | 需要引擎未产出的事实 | 大运/流年干支与五行绝地判定 | 死亡应期的古法断语：大运流年冲克太过、五行绝地等。 | 死亡应期的古法断语：大运流年冲克太过、五行绝地等。 |
+| `bazi/yuanhai-ziping` | `YUANHAIZIPIN-035` | statement 中无可复原的 FactKey 取值 | 需要引擎未产出的事实 | 神煞具体名（华盖）与六亲事实 | 僧道之命的古法判断：五行偏枯、印星过重、华盖重、六亲无依等。 | 僧道之命的古法判断：五行偏枯、印星过重、华盖重、六亲无依等。 |
+| `bazi/yuanhai-ziping` | `YUANHAIZIPIN-037` | statement 中无可复原的 FactKey 取值 | pack 元规则／调用条件，不是盘面条件 |  | 《金玉赋》《格致赋》及卷五其他杂赋均为经验断语赋文体裁，非严格规则；归属待考；与 | 《金玉赋》《格致赋》及卷五其他杂赋均为经验断语赋文体裁，非严格规则；归属待考；与《三命通会》互见。 |
+| `bazi/yuanhai-ziping` | `YUANHAIZIPIN-YR-01` | statement 中无可复原的 FactKey 取值 | 原文无盘面适用条件（通论／体例／取象表／起例取法） |  | 阳干顺行十二宫（长生→帝旺→墓绝），阴干逆行；判断日干在地支的旺衰状态。 | 阳干顺行十二宫（长生→帝旺→墓绝），阴干逆行；判断日干在地支的旺衰状态。 |
+| `bazi/yuanhai-ziping` | `YUANHAIZIPIN-YR-03` | statement 中无可复原的 FactKey 取值 | 需要引擎未产出的事实 | 大运干支与流年干支 | 太岁为流年；大运与流年合参看命局变化。 | 太岁为流年；大运与流年合参看命局变化。 |
+| `bazi/ziping-zhenquan` | `ZPR-16` | statement 中无可复原的 FactKey 取值 | 原文有条件但口径未定或明确拒绝单一条件 |  | 杂格应在正格不足以取用时讨论，且须严格按原文条件，不可泛化为万能例外。 | 杂格应在正格不足以取用时讨论，且须严格按原文条件，不可泛化为万能例外。 |
+| `bazi/ziping-zhenquan` | `ZPR-P-01` | statement 中无可复原的 FactKey 取值 | 原文无盘面适用条件（通论／体例／取象表／起例取法） |  | 阳干顺行十二长生、阴干逆行。甲木长生在亥、死在午；乙木长生在午、死在亥。其余天干 | 阳干顺行十二长生、阴干逆行。甲木长生在亥、死在午；乙木长生在午、死在亥。其余天干依阴阳互换。 |
+| `bazi/ziping-zhenquan` | `ZPR-P-02` | statement 中无可复原的 FactKey 取值 | 原文无盘面适用条件（通论／体例／取象表／起例取法） |  | 十干合化：甲己合化土、乙庚合化金、丙辛合化水、丁壬合化木、戊癸合化火。 | 十干合化：甲己合化土、乙庚合化金、丙辛合化水、丁壬合化木、戊癸合化火。 |
+| `luming-nayin/li-xuzhong-mingshu` | `LIXUZHONGMIN-003` | statement 中无可复原的 FactKey 取值 | 未复核 |  |  | 子母相承之火；先煙后焰；喜木助、嫌水陵迟；五行相养虽死方亦光耿。 |
+| `luming-nayin/li-xuzhong-mingshu` | `LIXUZHONGMIN-004` | statement 中无可复原的 FactKey 取值 | 未复核 |  |  | 本旺禄休之火；惟欲阴旺恶处盛阳；木火相资连艮震必变鼎。 |
+| `luming-nayin/li-xuzhong-mingshu` | `LIXUZHONGMIN-005` | statement 中无可复原的 FactKey 取值 | 未复核 |  |  | 华实兼荣之木；爱水土忌火金；金养则英实之命。 |
+| `luming-nayin/li-xuzhong-mingshu` | `LIXUZHONGMIN-006` | statement 中无可复原的 FactKey 取值 | 未复核 |  |  | 气胜体刚之木；逢对旺干鬼或木来比助金伐则成栋梁。 |
+| `luming-nayin/li-xuzhong-mingshu` | `LIXUZHONGMIN-007` | statement 中无可复原的 FactKey 取值 | 未复核 |  |  | 含辉始育之土；气数未备喜旺方；独禄会命旺身绝非贵地。 |
+| `luming-nayin/li-xuzhong-mingshu` | `LIXUZHONGMIN-008` | statement 中无可复原的 FactKey 取值 | 未复核 |  |  | 自本立形之土；火助木乘水轻木重亦小康；败而乘禄方为厚载之福。 |
+| `luming-nayin/li-xuzhong-mingshu` | `LIXUZHONGMIN-009` | statement 中无可复原的 FactKey 取值 | 未复核 |  |  | 自任权制之金；刚而有断；爱土木嫌火重；财旺身衰亦清华之贵。 |
+| `luming-nayin/li-xuzhong-mingshu` | `LIXUZHONGMIN-010` | statement 中无可复原的 FactKey 取值 | 未复核 |  |  | 刚锐利用之金；不嫌绝败惟畏鬼多；平易不刑则有自然材器。 |
+| `luming-nayin/li-xuzhong-mingshu` | `LIXUZHONGMIN-011` | statement 中无可复原的 FactKey 取值 | 未复核 |  |  | 墓成息用之火；不求壮旺欲物平资福禄高厚；入格可贵干不必官。 |
+| `luming-nayin/li-xuzhong-mingshu` | `LIXUZHONGMIN-012` | statement 中无可复原的 FactKey 取值 | 未复核 |  |  | 气散游魂之火；生于木火荣方上下不逢相制则成达。 |
+| `luming-nayin/li-xuzhong-mingshu` | `LIXUZHONGMIN-013` | statement 中无可复原的 FactKey 取值 | 未复核 |  |  | 深沉停会之水；会源得生用制于东南为出常之器。 |
+| `luming-nayin/li-xuzhong-mingshu` | `LIXUZHONGMIN-014` | statement 中无可复原的 FactKey 取值 | 未复核 |  |  | 渐下欲流之水；得水土相承经败地源脉不断可升而济物。 |
+| `luming-nayin/li-xuzhong-mingshu` | `LIXUZHONGMIN-015` | statement 中无可复原的 FactKey 取值 | 未复核 |  |  | 生体安和之土；资以火土俱盛金旺之荣；尚可高崇为不常之用。 |
+| `luming-nayin/li-xuzhong-mingshu` | `LIXUZHONGMIN-016` | statement 中无可复原的 FactKey 取值 | 未复核 |  |  | 鬼旺体坚之土；生于金重木多见财重则富贵长远。 |
+| `luming-nayin/li-xuzhong-mingshu` | `LIXUZHONGMIN-017` | statement 中无可复原的 FactKey 取值 | 未复核 |  |  | 显光之金未成材；金刚土重得期相会无炎火之官乃大臣之制。 |
+| `luming-nayin/li-xuzhong-mingshu` | `LIXUZHONGMIN-018` | statement 中无可复原的 FactKey 取值 | 未复核 |  |  | 资始之金；身坚体柔欲平火之制；金助土成则光大之器。 |
+| `luming-nayin/li-xuzhong-mingshu` | `LIXUZHONGMIN-019` | statement 中无可复原的 FactKey 取值 | 未复核 |  |  | 化薪之木；畏在火强得水资；处生旺逢土亦富贵。 |
+| `luming-nayin/li-xuzhong-mingshu` | `LIXUZHONGMIN-020` | statement 中无可复原的 FactKey 取值 | 未复核 |  |  | 伐根之木；气败体柔不嫌金制；喜水之荣会元借生主成重器。 |
+| `luming-nayin/li-xuzhong-mingshu` | `LIXUZHONGMIN-021` | statement 中无可复原的 FactKey 取值 | 未复核 |  |  | 源泉之水；务有资助流长无鬼则运广之渊享高厚之福。 |
+| `luming-nayin/li-xuzhong-mingshu` | `LIXUZHONGMIN-022` | statement 中无可复原的 FactKey 取值 | 未复核 |  |  | 母旺进趋之水；资金济火自乾东而震北亦超卓辅弼之用。 |
+| `luming-nayin/li-xuzhong-mingshu` | `LIXUZHONGMIN-023` | statement 中无可复原的 FactKey 取值 | 未复核 |  |  | 禄资支附坚固火钟之土；资以木光耀不群本重不须旺。 |
+| `luming-nayin/li-xuzhong-mingshu` | `LIXUZHONGMIN-024` | statement 中无可复原的 FactKey 取值 | 未复核 |  |  | 福壮临官之土；润水丽金处魁罡坤艮可显功遂名。 |
+| `luming-nayin/li-xuzhong-mingshu` | `LIXUZHONGMIN-025` | statement 中无可复原的 FactKey 取值 | 未复核 |  |  | 神龙之火；利震巽不畏水刑；干支得官皆显用水木盛尤佳。 |
+| `luming-nayin/li-xuzhong-mingshu` | `LIXUZHONGMIN-026` | statement 中无可复原的 FactKey 取值 | 未复核 |  |  | 余光不凡之火；惟期体重不假奇财；禄资命成方入康荣。 |
+| `luming-nayin/li-xuzhong-mingshu` | `LIXUZHONGMIN-027` | statement 中无可复原的 FactKey 取值 | 未复核 |  |  | 五行坚实之木；不避刑冲不辞衰败；和柔德贵相符必显大用。 |
+| `luming-nayin/li-xuzhong-mingshu` | `LIXUZHONGMIN-028` | statement 中无可复原的 FactKey 取值 | 未复核 |  |  | 经制之木自旺；不畏霜雪气节凌云；制金损火逢旺即巨室之材。 |
+| `luming-nayin/li-xuzhong-mingshu` | `LIXUZHONGMIN-029` | statement 中无可复原的 FactKey 取值 | 未复核 |  |  | 会贵守成之水；五行不杂兑坎之间无物来制可享高福。 |
+| `luming-nayin/li-xuzhong-mingshu` | `LIXUZHONGMIN-030` | statement 中无可复原的 FactKey 取值 | 未复核 |  |  | 流远澄清之水；溢以水在火木荣方音中无土则有济物之德。 |
+| `luming-nayin/li-xuzhong-mingshu` | `LIXUZHONGMIN-031` | statement 中无可复原的 FactKey 取值 | 未复核 |  |  | 沙汰之金志大有节；零火盖之严或旺金集之刚；不遇丁壬可陶熔。 |
+| `luming-nayin/li-xuzhong-mingshu` | `LIXUZHONGMIN-032` | statement 中无可复原的 FactKey 取值 | 未复核 |  |  | 强悍刚矿之金；欲金相用在火盛处父子相乘皆为珍宝。 |
+| `luming-nayin/li-xuzhong-mingshu` | `LIXUZHONGMIN-033` | statement 中无可复原的 FactKey 取值 | 未复核 |  |  | 无资之火；金木壮旺有制得干生为厚实；禄盛无依即灰飞。 |
+| `luming-nayin/li-xuzhong-mingshu` | `LIXUZHONGMIN-034` | statement 中无可复原的 FactKey 取值 | 未复核 |  |  | 平易无为之火；木旺则大炎、木多成用、火助则不清；得此无不贵豪。 |
+| `luming-nayin/li-xuzhong-mingshu` | `LIXUZHONGMIN-035` | statement 中无可复原的 FactKey 取值 | 未复核 |  |  | 不材之木；喜逢水旺资荣；金败自然不嫌禄鬼方可高崇。 |
+| `luming-nayin/li-xuzhong-mingshu` | `LIXUZHONGMIN-036` | statement 中无可复原的 FactKey 取值 | 未复核 |  |  | 粪水育苗之木；水多土而临旺皆有成就；逢败绝主富贵荣盛。 |
+| `luming-nayin/li-xuzhong-mingshu` | `LIXUZHONGMIN-037` | statement 中无可复原的 FactKey 取值 | 未复核 |  |  | 气过浮虚之土；得重土相资水木不刚即享福寿。 |
+| `luming-nayin/li-xuzhong-mingshu` | `LIXUZHONGMIN-038` | statement 中无可复原的 FactKey 取值 | 未复核 |  |  | 气衰就本之土；承火制木重逢木土刑冲假禄元可立功名。 |
+| `luming-nayin/li-xuzhong-mingshu` | `LIXUZHONGMIN-039` | statement 中无可复原的 FactKey 取值 | 未复核 |  |  | 藏用体柔之金；喜土资以旺财官不可太刚；应此富贵久远。 |
+| `luming-nayin/li-xuzhong-mingshu` | `LIXUZHONGMIN-040` | statement 中无可复原的 FactKey 取值 | 未复核 |  |  | 财旺体弱之金；财命相乘喜身在生旺；得真官真气配合贵源。 |
+| `luming-nayin/li-xuzhong-mingshu` | `LIXUZHONGMIN-041` | statement 中无可复原的 FactKey 取值 | 未复核 |  |  | 始壮之火；多生我或会本源却无炎光之极超卓；水轻无土亦可腾达。 |
+| `luming-nayin/li-xuzhong-mingshu` | `LIXUZHONGMIN-042` | statement 中无可复原的 FactKey 取值 | 未复核 |  |  | 进功之火；辅助不息不必旺极；木火相乘虽死败亦贵。 |
+| `luming-nayin/li-xuzhong-mingshu` | `LIXUZHONGMIN-043` | statement 中无可复原的 FactKey 取值 | 未复核 |  |  | 至阴之水；发于阳明蒸气氤氲；处金木旺而冲刑得炎财盛始贵。 |
+| `luming-nayin/li-xuzhong-mingshu` | `LIXUZHONGMIN-044` | statement 中无可复原的 FactKey 取值 | 未复核 |  |  | 禄旺育生之水；水火死败禄干自旺财贵会乾方乃富贵；土在旺乡非长久。 |
+| `luming-nayin/li-xuzhong-mingshu` | `LIXUZHONGMIN-045` | statement 中无可复原的 FactKey 取值 | 未复核 |  |  | 柔顺发生之土；喜临四季得木为荣；独居水火荣方未得尊高。 |
+| `luming-nayin/li-xuzhong-mingshu` | `LIXUZHONGMIN-046` | statement 中无可复原的 FactKey 取值 | 未复核 |  |  | 子旺母衰之土；喜火土荣庆从革之地；水轻木柔亦滋生之德。 |
+| `luming-nayin/li-xuzhong-mingshu` | `LIXUZHONGMIN-047` | statement 中无可复原的 FactKey 取值 | 未复核 |  |  | 钝弱成用之金；火轻金重魁罡相乘可休逸福禄；忌木火极则迍蹇。 |
+| `luming-nayin/li-xuzhong-mingshu` | `LIXUZHONGMIN-048` | statement 中无可复原的 FactKey 取值 | 未复核 |  |  | 木旺禄休之金；得平火之革制于克伐；金水冲击得平安守职。 |
+| `luming-nayin/li-xuzhong-mingshu` | `LIXUZHONGMIN-049` | statement 中无可复原的 FactKey 取值 | 未复核 |  |  | 体柔用刚之木；居旺相得金遇贵地无火可扬名当世。 |
+| `luming-nayin/li-xuzhong-mingshu` | `LIXUZHONGMIN-050` | statement 中无可复原的 FactKey 取值 | 未复核 |  |  | 刚柔相济之木；水土承旺方生育利物；金制生成皆可立功。 |
+| `luming-nayin/li-xuzhong-mingshu` | `LIXUZHONGMIN-051` | statement 中无可复原的 FactKey 取值 | 未复核 |  |  | 渊深处静之水；资以木旺土衰则奇特贵异。 |
+| `luming-nayin/li-xuzhong-mingshu` | `LIXUZHONGMIN-052` | statement 中无可复原的 FactKey 取值 | 未复核 |  |  | 死中受气之水；败无妨；会源于音地未有不达；喜土而清。 |
+| `luming-nayin/li-xuzhong-mingshu` | `LIXUZHONGMIN-053` | statement 中无可复原的 FactKey 取值 | 未复核 |  |  | 发施养生之土；喜火助不畏掩冲自然荣贵。 |
+| `luming-nayin/li-xuzhong-mingshu` | `LIXUZHONGMIN-054` | statement 中无可复原的 FactKey 取值 | 未复核 |  |  | 绝中受气之土；喜土助不畏死败；朝命建元可文章妙选。 |
+| `luming-nayin/li-xuzhong-mingshu` | `LIXUZHONGMIN-055` | statement 中无可复原的 FactKey 取值 | 未复核 |  |  | 神发离明之火；旺中受绝喜木助衰方忌火乘已旺生；应此必魁英。 |
+| `luming-nayin/li-xuzhong-mingshu` | `LIXUZHONGMIN-056` | statement 中无可复原的 FactKey 取值 | 未复核 |  |  | 成功之火；得季夏炎阳守小吉；甲己扶持不须更旺。 |
+| `luming-nayin/li-xuzhong-mingshu` | `LIXUZHONGMIN-057` | statement 中无可复原的 FactKey 取值 | 未复核 |  |  | 未坚柔末之木；春相夏旺金重得火土重得水则出常之器。 |
+| `luming-nayin/li-xuzhong-mingshu` | `LIXUZHONGMIN-058` | statement 中无可复原的 FactKey 取值 | 未复核 |  |  | 包秀结英之木；喜生旺忌见金多；土水相乘为物之贵。 |
+| `luming-nayin/li-xuzhong-mingshu` | `LIXUZHONGMIN-059` | statement 中无可复原的 FactKey 取值 | 未复核 |  |  | 杳之水；喜死败要土之击发能博施之功及物。 |
+| `luming-nayin/li-xuzhong-mingshu` | `LIXUZHONGMIN-060` | statement 中无可复原的 FactKey 取值 | 未复核 |  |  | 始进成终之水；喜逢贵地忌在禄乡；不可守常须升雨雾散江河乃大用。 |
+| `luming-nayin/li-xuzhong-mingshu` | `LIXUZHONGMIN-063` | statement 中无可复原的 FactKey 取值 | 未复核 |  |  | 三命中最吉之神；遇主荣名早达官禄易进；运行至此皆吉兆。 |
+| `luming-nayin/li-xuzhong-mingshu` | `LIXUZHONGMIN-065` | statement 中无可复原的 FactKey 取值 | 未复核 |  |  | 贵合则官位穹崇所作契合；贵食则禄丰足所成造望；二者兼之官高禄重。 |
+| `luming-nayin/li-xuzhong-mingshu` | `LIXUZHONGMIN-066` | statement 中无可复原的 FactKey 取值 | 未复核 |  |  | 贵人交互人多贵；旺气相乘馆殿资；五行不可伤；月日时互换见贵太岁不带者不贵。 |
+| `luming-nayin/li-xuzhong-mingshu` | `LIXUZHONGMIN-070` | statement 中无可复原的 FactKey 取值 | 未复核 |  |  | 寅午戌火体、亥卯未木体、申子辰水体、巳酉丑金体；土则从四事成之。 |
+| `luming-nayin/li-xuzhong-mingshu` | `LIXUZHONGMIN-071` | statement 中无可复原的 FactKey 取值 | 未复核 |  |  | 干支配数：甲己子午9、乙庚丑未8、丙辛寅申7、丁壬卯酉6、戊癸辰戌5、巳亥支数4。除6/5之数则得纳音之用。 |
+| `luming-nayin/li-xuzhong-mingshu` | `LIXUZHONGMIN-073` | statement 中无可复原的 FactKey 取值 | 未复核 |  |  | 智仁则清（水木），礼义则浊（火金），信从四时之气（土）。 |
+| `luming-nayin/li-xuzhong-mingshu` | `LIXUZHONGMIN-074` | statement 中无可复原的 FactKey 取值 | 未复核 |  |  | 水多沉潜伏溺、火多崇礼贪饕、木多柔懦泛交、金多刚直尚勇、土多重厚藏密；各得多则各显其性。 |
+| `luming-nayin/li-xuzhong-mingshu` | `LIXUZHONGMIN-077` | statement 中无可复原的 FactKey 取值 | 未复核 |  |  | 胎主父母祖宗十分主事二分；月主时气十分主事六分；日主未得气十分主事八分；时主用度十分。 |
+| `luming-nayin/li-xuzhong-mingshu` | `LIXUZHONGMIN-078` | statement 中无可复原的 FactKey 取值 | 未复核 |  |  | 主本保合未有贫贱之人；时日乖违岂有久荣之理。 |
+| `luming-nayin/li-xuzhong-mingshu` | `LIXUZHONGMIN-079` | statement 中无可复原的 FactKey 取值 | 未复核 |  |  | 三元入墓日时自旺，虽运并绝逢鬼，鬼亦不能取。 |
+| `luming-nayin/li-xuzhong-mingshu` | `LIXUZHONGMIN-080` | statement 中无可复原的 FactKey 取值 | 未复核 |  |  | 五行相敌轻重相等；遇鬼二则为凶，一重为鬼犹凶中反吉。 |
+| `luming-nayin/li-xuzhong-mingshu` | `LIXUZHONGMIN-081` | statement 中无可复原的 FactKey 取值 | 未复核 |  |  | 尊生卑曰宝，卑生尊曰义，上尅下曰制，下贼上曰伐；以胎月日时上下相生相尅判。 |
+| `luming-nayin/li-xuzhong-mingshu` | `LIXUZHONGMIN-085` | statement 中无可复原的 FactKey 取值 | 未复核 |  |  | 天月德临月将事合神；金印垂腰之贵；递相揖让调鼎位极人臣。 |
+| `luming-nayin/li-xuzhong-mingshu` | `LIXUZHONGMIN-088` | statement 中无可复原的 FactKey 取值 | 未复核 |  |  | 子息先明生气或用尅以推之；自生自旺看运元胎月。 |
+| `luming-nayin/li-xuzhong-mingshu` | `LIXUZHONGMIN-089` | statement 中无可复原的 FactKey 取值 | 未复核 |  |  | 刑聚败极／四柱不收／五行未备／数无取用／一方前后／柱多隔角／真者失时／假者殃尅／主本倒乱／父子乖违皆为贫贱之格。 |
+| `luming-nayin/li-xuzhong-mingshu` | `LIXUZHONGMIN-090` | statement 中无可复原的 FactKey 取值 | 未复核 |  |  | 真者失时假者殃尅；本气绝而花繁纵子成而味拙。 |
+| `luming-nayin/li-xuzhong-mingshu` | `LIXUZHONGMIN-093` | statement 中无可复原的 FactKey 取值 | 未复核 |  |  | 男一岁起寅、女一岁起申；以建元论胜负，助岁运依吉凶。 |
+| `luming-nayin/li-xuzhong-mingshu` | `LIXUZHONGMIN-094` | statement 中无可复原的 FactKey 取值 | 未复核 |  |  | 禄/命/身金入土干支或纳音下；不利君子利小人；子弱母胜。 |
+| `luming-nayin/li-xuzhong-mingshu` | `LIXUZHONGMIN-095` | statement 中无可复原的 FactKey 取值 | 未复核 |  |  | 三元值鬼+二运三刑+并冲柱主本与行年不相承=黄泉失所之命。 |
+| `luming-nayin/li-xuzhong-mingshu` | `LIXUZHONGMIN-096` | statement 中无可复原的 FactKey 取值 | 未复核 |  |  | 金破碎而不返；运至伏吟逢丧吊白衣飞廉孤寡岁刑尅身。 |
+| `luming-nayin/li-xuzhong-mingshu` | `LIXUZHONGMIN-101` | statement 中无可复原的 FactKey 取值 | 未复核 |  |  | 土本无一方之气，从水妻之义；阴阳各逐四时成就；土育于寅。 |
+| `luming-nayin/li-xuzhong-mingshu` | `LIXUZHONGMIN-LX-01` | statement 中无可复原的 FactKey 取值 | 未复核 |  |  | 库墓守财之金；不嫌鬼旺、喜禄财；水土砥砺亦可成器。 |
+| `luming-nayin/li-xuzhong-mingshu` | `LIXUZHONGMIN-LX-03` | statement 中无可复原的 FactKey 取值 | 未复核 |  |  | 坤为土，乾为金，金亦土也，为水母。 |
+| `luming-nayin/li-xuzhong-mingshu` | `LIXUZHONGMIN-LX-04` | statement 中无可复原的 FactKey 取值 | 未复核 |  |  | 干主名禄贵权（衣食受用基），支主金珠积富（得失荣枯本），纳音主才能器识（人伦亲属宗）。 |
+| `luming-nayin/li-xuzhong-mingshu` | `LIXUZHONGMIN-LX-05` | statement 中无可复原的 FactKey 取值 | 未复核 |  |  | 死败全逢刑犹寿考；四仲时生主无妨败；年死败有生主有寿及父母。 |
+| `luming-nayin/li-xuzhong-mingshu` | `LIXUZHONGMIN-LX-06` | statement 中无可复原的 FactKey 取值 | 未复核 |  |  | 生月为父、胎月为母、身尅为妻、妻生为子、时生是妻子之数；成败自然。 |
+| `luming-nayin/li-xuzhong-mingshu` | `LIXUZHONGMIN-LX-07` | statement 中无可复原的 FactKey 取值 | 未复核 |  |  | 阳男阴女顺、阴男阳女逆；十干分月、三日成年。 |
+| `luming-nayin/li-xuzhong-mingshu` | `LIXUZHONGMIN-LX-08` | statement 中无可复原的 FactKey 取值 | 未复核 |  |  | 60甲子中12位神头禄（戊辰/戊戌/己丑/己未/丙午/丁巳/壬子/癸亥/甲寅/乙卯/庚申/辛酉），阴阳专位天地神会。 |
+| `luming-nayin/li-xuzhong-mingshu` | `LX-01` | statement 中无可复原的 FactKey 取值 | 未复核 |  |  | 子旺母衰之金，溺水下韬光，须假火革；命入贵格明暗取官。 |
+| `luming-nayin/li-xuzhong-mingshu` | `LX-02` | statement 中无可复原的 FactKey 取值 | 未复核 |  |  | 此六十位五行支干相乘要分轻重：金溺水下、火出水上；木不得金之所制木无成；金不得火之所制金无成。 |
+| `luming-nayin/li-xuzhong-mingshu` | `LX-03` | statement 中无可复原的 FactKey 取值 | 未复核 |  |  | 清气阳为天，浊气阴为地；造化始于无相因而三生。 |
+| `luming-nayin/li-xuzhong-mingshu` | `LX-05` | statement 中无可复原的 FactKey 取值 | 未复核 |  |  | 四季为五行墓万物所终；时逢之虽会吉而贵亦主妨害尊亲；四孟带煞必尅。 |
+| `luming-nayin/li-xuzhong-mingshu` | `LX-06` | statement 中无可复原的 FactKey 取值 | 未复核 |  |  | 一方之气不可过角；进角为孤、退角为寡；既旺不过一方却言衰者成功也。 |
+| `luming-nayin/li-xuzhong-mingshu` | `LX-07` | statement 中无可复原的 FactKey 取值 | 未复核 |  |  | 三元者大小气运，九限者三运之荣谢；自生得节日为初。 |
+| `luming-nayin/li-xuzhong-mingshu` | `LX-08` | statement 中无可复原的 FactKey 取值 | 未复核 |  |  | 六十载支干同日神头；六合之德五组共三十组（甲己/丙辛/戊癸/庚乙/壬丁）。 |
+| `luming-nayin/luoluzi-sanming` | `LZ-01-01` | statement 中无可复原的 FactKey 取值 | 未复核 |  |  | 三才四气定命基 |
+| `luming-nayin/luoluzi-sanming` | `LZ-01-02` | statement 中无可复原的 FactKey 取值 | 未复核 |  |  | 以干为禄、以支为命 |
+| `luming-nayin/luoluzi-sanming` | `LZ-01-03` | statement 中无可复原的 FactKey 取值 | 未复核 |  |  | 四柱内外详休旺 |
+| `luming-nayin/luoluzi-sanming` | `LZ-02-01` | statement 中无可复原的 FactKey 取值 | 未复核 |  |  | 折除运程一辰十岁 |
+| `luming-nayin/luoluzi-sanming` | `LZ-02-02` | statement 中无可复原的 FactKey 取值 | 未复核 |  |  | 将来者进、功成者退 |
+| `luming-nayin/luoluzi-sanming` | `LZ-02-03` | statement 中无可复原的 FactKey 取值 | 未复核 |  |  | 绝处建禄成贵 |
+| `luming-nayin/luoluzi-sanming` | `LZ-03-01` | statement 中无可复原的 FactKey 取值 | 未复核 |  |  | 三奇歌诀贵格 |
+| `luming-nayin/luoluzi-sanming` | `LZ-03-03` | statement 中无可复原的 FactKey 取值 | 未复核 |  |  | 勾陈得位、真武当权 |
+| `luming-nayin/luoluzi-sanming` | `LZ-05-01` | statement 中无可复原的 FactKey 取值 | 未复核 |  |  | 财命有气背禄不贫 |
+| `luming-nayin/luoluzi-sanming` | `LZ-05-02` | statement 中无可复原的 FactKey 取值 | 未复核 |  |  | 财绝命衰建禄不富 |
+| `luming-nayin/luoluzi-sanming` | `LZ-05-04` | statement 中无可复原的 FactKey 取值 | 未复核 |  |  | 鬼旺身衰夭寿 |
+| `luming-nayin/luoluzi-sanming` | `LZ-05-05` | statement 中无可复原的 FactKey 取值 | 未复核 |  |  | 背禄逐马克妻 |
+| `luming-nayin/luoluzi-sanming` | `LZ-05-06` | statement 中无可复原的 FactKey 取值 | 未复核 |  |  | 禄马同乡两府之贵 |
+| `luming-nayin/luoluzi-sanming` | `LZ-06-04` | statement 中无可复原的 FactKey 取值 | 未复核 |  |  | 生月带禄入仕赫奕 |
+| `luming-nayin/luoluzi-sanming` | `LZ-06-05` | statement 中无可复原的 FactKey 取值 | 未复核 |  |  | 裸形夹煞至凶 |
+| `luming-nayin/luoluzi-sanming` | `LZ-07-01` | statement 中无可复原的 FactKey 取值 | 未复核 |  |  | 四煞五鬼六害七伤 |
+| `luming-nayin/luoluzi-sanming` | `LZ-08-02` | statement 中无可复原的 FactKey 取值 | 未复核 |  |  | 男迎女送前后五年 |
+| `luming-nayin/luoluzi-sanming` | `LZ-08-04` | statement 中无可复原的 FactKey 取值 | 未复核 |  |  | 禍旬向末迎福 |
+| `luming-nayin/luoluzi-sanming` | `LZ-08-07` | statement 中无可复原的 FactKey 取值 | 未复核 |  |  | 身克煞輕、煞克身重 |
+| `luming-nayin/luoluzi-sanming` | `LZ-08-08` | statement 中无可复原的 FactKey 取值 | 未复核 |  |  | 万里回还三归之地 |
+| `luming-nayin/luoluzi-sanming` | `LZ-08-09` | statement 中无可复原的 FactKey 取值 | 未复核 |  |  | 金火两停成大器 |
+| `luming-nayin/luoluzi-sanming` | `LZ-08-10` | statement 中无可复原的 FactKey 取值 | 未复核 |  |  | 处定求动、居安问危 |
+| `luming-nayin/wuxing-jingji` | `WX-01-01` | statement 中无可复原的 FactKey 取值 | 未复核 |  |  | 六甲纳音法 |
+| `luming-nayin/wuxing-jingji` | `WX-02-01` | statement 中无可复原的 FactKey 取值 | 未复核 |  |  | 乾神十干配五常 |
+| `luming-nayin/wuxing-jingji` | `WX-02-02` | statement 中无可复原的 FactKey 取值 | 未复核 |  |  | 阳干阴干性情之分 |
+| `luming-nayin/wuxing-jingji` | `WX-03-01` | statement 中无可复原的 FactKey 取值 | 未复核 |  |  | 支神藏干（人元） |
+| `luming-nayin/wuxing-jingji` | `WX-03-02` | statement 中无可复原的 FactKey 取值 | 未复核 |  |  | 五行四时旺衰 |
+| `luming-nayin/wuxing-jingji` | `WX-03-03` | statement 中无可复原的 FactKey 取值 | 未复核 |  |  | 真五行合化 |
+| `luming-nayin/wuxing-jingji` | `WX-04-02` | statement 中无可复原的 FactKey 取值 | 未复核 |  |  | 日时贵格识别 |
+| `luming-nayin/wuxing-jingji` | `WX-04-04` | statement 中无可复原的 FactKey 取值 | 未复核 |  |  | 节气浅深起运 |
+| `luming-nayin/wuxing-jingji` | `WX-05-01` | statement 中无可复原的 FactKey 取值 | 未复核 |  |  | 天乙贵神识别 |
+| `luming-nayin/wuxing-jingji` | `WX-05-02` | statement 中无可复原的 FactKey 取值 | 未复核 |  |  | 祿馬同乡上贵 |
+| `luming-nayin/wuxing-jingji` | `WX-05-03` | statement 中无可复原的 FactKey 取值 | 未复核 |  |  | 三奇贵格 |
+| `luming-nayin/wuxing-jingji` | `WX-05-04` | statement 中无可复原的 FactKey 取值 | 未复核 |  |  | 四进神贵命 |
+| `luming-nayin/wuxing-jingji` | `WX-05-05` | statement 中无可复原的 FactKey 取值 | 未复核 |  |  | 华盖主孤高僧道 |
+| `luming-nayin/wuxing-jingji` | `WX-05-06` | statement 中无可复原的 FactKey 取值 | 未复核 |  |  | 金舆乘车之贵 |
+| `luming-nayin/wuxing-jingji` | `WX-06-01` | statement 中无可复原的 FactKey 取值 | 未复核 |  |  | 上贵格三大要素 |
+| `luming-nayin/wuxing-jingji` | `WX-07-02` | statement 中无可复原的 FactKey 取值 | 未复核 |  |  | 三刑骨肉 |
+| `luming-nayin/wuxing-jingji` | `WX-07-03` | statement 中无可复原的 FactKey 取值 | 未复核 |  |  | 六害骨肉离 |
+| `luming-nayin/wuxing-jingji` | `WX-07-05` | statement 中无可复原的 FactKey 取值 | 未复核 |  |  | 冲破六冲 |
+| `luming-nayin/wuxing-jingji` | `WX-08-01` | statement 中无可复原的 FactKey 取值 | 未复核 |  |  | 小儿关煞 |
+| `luming-nayin/wuxing-jingji` | `WX-08-02` | statement 中无可复原的 FactKey 取值 | 未复核 |  |  | 男命取格 |
+| `luming-nayin/wuxing-jingji` | `WX-08-03` | statement 中无可复原的 FactKey 取值 | 未复核 |  |  | 女命旧观 |
+| `luming-nayin/wuxing-jingji` | `WX-08-04` | statement 中无可复原的 FactKey 取值 | 未复核 |  |  | 父母位 |
+| `luming-nayin/wuxing-jingji` | `WX-09-01` | statement 中无可复原的 FactKey 取值 | 未复核 |  |  | 子息位 |
+| `luming-nayin/wuxing-jingji` | `WX-09-02` | statement 中无可复原的 FactKey 取值 | 未复核 |  |  | 僧道九流吏卒 |
+| `luming-nayin/wuxing-jingji` | `WX-09-03` | statement 中无可复原的 FactKey 取值 | 未复核 |  |  | 形貌性情 |
+| `luming-nayin/wuxing-jingji` | `WX-09-04` | statement 中无可复原的 FactKey 取值 | 未复核 |  |  | 论疾病 |
+| `luming-nayin/wuxing-jingji` | `WX-09-05` | statement 中无可复原的 FactKey 取值 | 未复核 |  |  | 论壽夭 |
+| `luming-nayin/wuxing-jingji` | `WX-10-01` | statement 中无可复原的 FactKey 取值 | 未复核 |  |  | 大运起例 |
+| `luming-nayin/wuxing-jingji` | `WX-10-02` | statement 中无可复原的 FactKey 取值 | 未复核 |  |  | 小运起例 |
+| `luming-nayin/wuxing-jingji` | `WX-10-03` | statement 中无可复原的 FactKey 取值 | 未复核 |  |  | 二运并行 |
+| `luming-nayin/wuxing-jingji` | `WX-10-04` | statement 中无可复原的 FactKey 取值 | 未复核 |  |  | 太岁伏吟反吟 |
+| `luming-nayin/wuxing-jingji` | `WX-10-05` | statement 中无可复原的 FactKey 取值 | 未复核 |  |  | 歲運合参 |
+| `luming-nayin/yuzhao-shenying` | `YUZHAOSHENYI-004` | statement 中无可复原的 FactKey 取值 | 未复核 |  |  | 时柱尅日柱，干尅轻、音尅重；干音俱尅则为重伤。 |
+| `luming-nayin/yuzhao-shenying` | `YUZHAOSHENYI-005` | statement 中无可复原的 FactKey 取值 | 未复核 |  |  | 时尅日、日尅月、月尅年，两分交战者损尊、伤本、寿促。 |
+| `luming-nayin/yuzhao-shenying` | `YUZHAOSHENYI-006` | statement 中无可复原的 FactKey 取值 | 未复核 |  |  | 二三柱犯纳音月胎者，主祖宗祸患或祖业不继。 |
+| `luming-nayin/yuzhao-shenying` | `YUZHAOSHENYI-012` | statement 中无可复原的 FactKey 取值 | 未复核 |  |  | 辰戌魁罡往来，原文按旺相休囚分作狱官、公吏、屠儿、争讼等。 |
+| `luming-nayin/yuzhao-shenying` | `YUZHAOSHENYI-021` | statement 中无可复原的 FactKey 取值 | 未复核 |  |  | 阳干月德合在干、陰干月德合在支；同柱为近合力强，旁柱为远合力弱。 |
+| `luming-nayin/yuzhao-shenying` | `YUZHAOSHENYI-026` | statement 中无可复原的 FactKey 取值 | 未复核 |  |  | 辰午酉亥自刑+下尅上重见，主自凶。 |
+| `luming-nayin/yuzhao-shenying` | `YUZHAOSHENYI-032` | statement 中无可复原的 FactKey 取值 | 未复核 |  |  | 卯酉门户上下全土，原文主腰脚沉滞。 |
+| `luming-nayin/yuzhao-shenying` | `YUZHAOSHENYI-034` | statement 中无可复原的 FactKey 取值 | 未复核 |  |  | 水土同至寅卯，原文主隔气风痰。 |
+| `luming-nayin/yuzhao-shenying` | `YUZHAOSHENYI-037` | statement 中无可复原的 FactKey 取值 | 未复核 |  |  | 25岁前以月柱合十二宫、25-50以日柱、50后以时柱。 |
+| `luming-nayin/yuzhao-shenying` | `YUZHAOSHENYI-038` | statement 中无可复原的 FactKey 取值 | 未复核 |  |  | 干鬼制者为官；纳音生鬼者亦为官贵。 |
+| `luming-nayin/yuzhao-shenying` | `YUZHAOSHENYI-039` | statement 中无可复原的 FactKey 取值 | 未复核 |  |  | 生干则尊人喜；生纳音则中下人吉。 |
+| `luming-nayin/yuzhao-shenying` | `YUZHAOSHENYI-040` | statement 中无可复原的 FactKey 取值 | 未复核 |  |  | 五行三合局齐者(木亥卯未/火寅午戌/金巳酉丑/水申子辰)俱旺主富贵。 |
+| `luming-nayin/yuzhao-shenying` | `YUZHAOSHENYI-041` | statement 中无可复原的 FactKey 取值 | 未复核 |  |  | 胎朝月、月朝日、日朝时之朝拱关系，主倍禄。 |
+| `luming-nayin/yuzhao-shenying` | `YUZHAOSHENYI-042` | statement 中无可复原的 FactKey 取值 | 未复核 |  |  | 旬中六甲(甲子甲戌甲申甲午甲辰甲寅)全见，主尊荣。 |
+| `luming-nayin/yuzhao-shenying` | `YUZHAOSHENYI-048` | statement 中无可复原的 FactKey 取值 | 未复核 |  |  | 命局四重干合者，主妻或夫再立、子郎重生。 |
+| `luming-nayin/yuzhao-shenying` | `YUZHAOSHENYI-051` | statement 中无可复原的 FactKey 取值 | 未复核 |  |  | 四孟(寅申巳亥)有力之乡见者主发。 |
+| `luming-nayin/yuzhao-shenying` | `YUZHAOSHENYI-053` | statement 中无可复原的 FactKey 取值 | 未复核 |  |  | 自家四柱干支自合为内合，旁柱合本柱为外合。 |
+| `luming-nayin/yuzhao-shenying` | `YUZHAOSHENYI-054` | statement 中无可复原的 FactKey 取值 | 未复核 |  |  | 年生月、月生日、日生时之上生下，主身贫贱；返此为进发。 |
+| `luming-nayin/yuzhao-shenying` | `YUZHAOSHENYI-YZ-02` | statement 中无可复原的 FactKey 取值 | 未复核 |  |  | 干尅支为顺，主头面尊老；支尅干为逆，主身体四支与陰人小口。干尅在尊位为重，音尅在身位为切。 |
+| `luming-nayin/yuzhao-shenying` | `YUZHAOSHENYI-YZ-03` | statement 中无可复原的 FactKey 取值 | 未复核 |  |  | 子午+庚甲组合主他乡外立。 |
+| `luming-nayin/yuzhao-shenying` | `YUZHAOSHENYI-YZ-05` | statement 中无可复原的 FactKey 取值 | 未复核 |  |  | 干防尊老、音同身、尅防同类妻妾、下防陰人小口。 |
+| `luming-nayin/yuzhao-shenying` | `YUZHAOSHENYI-YZ-06` | statement 中无可复原的 FactKey 取值 | 未复核 |  |  | 阳干月德主贵人扶助、陰干主陰人用力。 |
+| `luming-nayin/yuzhao-shenying` | `YUZHAOSHENYI-YZ-07` | statement 中无可复原的 FactKey 取值 | 未复核 |  |  | 父子夫妻儿女按尅合远近判亲疏内外。 |
+| `luming-nayin/yuzhao-shenying` | `YUZHAOSHENYI-YZ-08` | statement 中无可复原的 FactKey 取值 | 未复核 |  |  | 干上至下为退、下至上为进；五行升降以衰兴。 |
+| `luming-nayin/yuzhao-shenying` | `YZ-01` | statement 中无可复原的 FactKey 取值 | 未复核 |  |  | 卦逢生气天德合，仍要长生有所归；先看生我何为父，次看克我是何儿。 |
+| `luming-nayin/yuzhao-shenying` | `YZ-02` | statement 中无可复原的 FactKey 取值 | 未复核 |  |  | 论命须以年/胎/月/日/时五主互参，分别尊卑、干音并重。 |
+| `luming-nayin/yuzhao-shenying` | `YZ-05` | statement 中无可复原的 FactKey 取值 | 未复核 |  |  | 干墓在辰戌丑未；有旺气者为库主储藏，无气者为墓主收藏不发。 |
+| `luming-nayin/yuzhao-shenying` | `YZ-06` | statement 中无可复原的 FactKey 取值 | 未复核 |  |  | 月德合见于四正(子午卯酉)，主十分作福。 |
+| `luming-nayin/yuzhao-shenying` | `YZ-08` | statement 中无可复原的 FactKey 取值 | 未复核 |  |  | 木见旺金主强、火入离中主旺、金向旺中须损折、土积山岗多不动、水盛防走失。 |
+
+## liuren
+
+| book | rule_id | 分类 | 台账理由 | 缺的事实 | 原文依据 | statement |
+|---|---|---|---|---|---|---|
+| `san-shi/daliuren-daquan` | `DALIURENDAQU-003` | statement 中无可复原的 FactKey 取值 | pack 元规则／调用条件，不是盘面条件 | 四课（干上/干阴/支上/支阴）结构；无效盘标记 | 四课已确定且不是无效盘 | 四课已确定且不是无效盘。 |
+| `san-shi/daliuren-daquan` | `DALIURENDAQU-004` | statement 中无可复原的 FactKey 取值 | pack 元规则／调用条件，不是盘面条件 | 四课上下直接克候选集合；候选阴阳（比用依据） | DLR-02 留下两个或更多同方向直接克候选 | DLR-02 留下两个或更多同方向直接克候选。 |
+| `san-shi/daliuren-daquan` | `DALIURENDAQU-005` | statement 中无可复原的 FactKey 取值 | pack 元规则／调用条件，不是盘面条件 | 涉害深浅/孟仲季/土寄宫/先见顺序；候选比用结果 | 多个同方向候选经比用后仍俱比或俱不比 | 多个同方向候选经比用后仍俱比或俱不比。 |
+| `san-shi/daliuren-daquan` | `DALIURENDAQU-007` | statement 中无可复原的 FactKey 取值 | 需要引擎未产出的事实 | 四课结构；四课上下直接克/遥克关系；伏吟/返吟/八专/三课别责盘式标记 | 四课完整、无直接克、无遥克，且不属于伏吟、返吟、八专或三课别责 | 四课完整、无直接克、无遥克，且不属于伏吟、返吟、八专或三课别责。 |
+| `san-shi/daliuren-daquan` | `DALIURENDAQU-008` | statement 中无可复原的 FactKey 取值 | 需要引擎未产出的事实 | 四课去重结果（三课）；直接克/遥克关系 | 去重后恰为三课，且无直接克、无遥克 | 去重后恰为三课，且无直接克、无遥克。 |
+| `san-shi/daliuren-daquan` | `DALIURENDAQU-009` | statement 中无可复原的 FactKey 取值 | 需要引擎未产出的事实 | 日柱干支组合（癸丑/甲寅/丁未/己未/庚申）；干支同位与两课结构 | 日柱属于癸丑、甲寅、丁未、己未、庚申，且干支同位形成两课结构 | 日柱属于癸丑、甲寅、丁未、己未、庚申，且干支同位形成两课结构。 |
+| `san-shi/daliuren-daquan` | `DALIURENDAQU-010` | statement 中无可复原的 FactKey 取值 | 需要引擎未产出的事实 | 占时支；天盘十二神落宫（本宫）关系；is_fuyin 标记 | 月将支与占时支相同，十二神各居本宫，adapter 标记 is_fuyin=tr | 月将支与占时支相同，十二神各居本宫，adapter 标记 `is_fuyin=true`。 |
+| `san-shi/daliuren-daquan` | `DALIURENDAQU-011` | statement 中无可复原的 FactKey 取值 | 需要引擎未产出的事实 | 天盘十二神落宫及其冲位关系；is_fanyin 标记 | 十二神各居冲位，adapter 标记 is_fanyin=true | 十二神各居冲位，adapter 标记 `is_fanyin=true`。 |
+| `san-shi/daliuren-daquan` | `DALIURENDAQU-012` | 可复原 1 个谓词对（现有语言本可表达） | 原文无盘面适用条件（通论／体例／取象表／起例取法） |  | 《大全》提要指出，本书所取天乙贵神仍沿俗例，与《星历考原》《协纪辨方书》所倡取法 | 《大全》提要指出，本书所取天乙贵神仍沿俗例，与《星历考原》《协纪辨方书》所倡取法有别，应辨明所用贵人取法。 |
+| `san-shi/daliuren-daquan` | `DALIURENDAQU-013` | statement 中无可复原的 FactKey 取值 | 原文无盘面适用条件（通论／体例／取象表／起例取法） |  | 《大全》提要批评只论课体、只主类神或杂取神煞的偏执，主张避免单执一端 | 《大全》提要批评只论课体、只主类神或杂取神煞的偏执，主张避免单执一端。 |
+| `san-shi/daliuren-daquan` | `DALIURENDAQU-014` | 可复原 1 个谓词对（现有语言本可表达） | 需要引擎未产出的事实 | 驿马；天魁（戌）；天将入传位置（且需天魁与太常同时入传） | 官爵课起例：课得岁月年命驿马发用，又天魁、太常入传 | 官爵课起例：课得岁月年命驿马发用，又天魁、太常入传；本段以此名官爵，并解释驿马及天魁印绶。 |
+| `san-shi/daliuren-daquan` | `DALIURENDAQU-015` | statement 中无可复原的 FactKey 取值 | pack 元规则／调用条件，不是盘面条件 |  | 想调用毕法赋中的某一法 | 想调用毕法赋中的某一法。 |
+| `san-shi/daliuren-daquan` | `DALIURENDAQU-016` | statement 中无可复原的 FactKey 取值 | pack 元规则／调用条件，不是盘面条件 |  | 准备引用本书、声称某卷内容或把规则写入用户答案 | 准备引用本书、声称某卷内容或把规则写入用户答案。 |
+| `san-shi/daliuren-daquan` | `DALIURENDAQU-017` | statement 中无可复原的 FactKey 取值 | 需要引擎未产出的事实 | 月令旺相休囚死；类神/六亲 | 已确定发用、月令旺相休囚死口径；若判断多少，还必须先按问题确定类神或六亲 | 已确定发用、月令旺相休囚死口径；若判断多少，还必须先按问题确定类神或六亲。 |
+| `san-shi/daliuren-daquan` | `DALIURENDAQU-DLR` | statement 中无可复原的 FactKey 取值 | pack 元规则／调用条件，不是盘面条件 | 日干寄宫（甲课寅、乙课辰一类的寄宫表事实） | DLR-00 通过，adapter 已给日干和寄宫 | DLR-00 通过，adapter 已给日干和寄宫。 |
+| `san-shi/daliuren-daquan` | `DLR` | statement 中无可复原的 FactKey 取值 | pack 元规则／调用条件，不是盘面条件 |  | 用户要求实际占事或给出的既有课盘需要被当成事实使用 | 用户要求实际占事或给出的既有课盘需要被当成事实使用。 |
+| `san-shi/liuren-miben` | `LIURENMIBEN-003` | statement 中无可复原的 FactKey 取值 | pack 元规则／调用条件，不是盘面条件 | 神煞（六旬表诸神煞名）；adapter 的 shensha 输出 | 用户明确查询本书卷三六旬表，或 adapter 已按同一来源 profile 输 | 用户明确查询本书卷三六旬表，或 adapter 已按同一来源 profile 输出对应神煞。 |
+| `san-shi/liuren-miben` | `LIURENMIBEN-004` | statement 中无可复原的 FactKey 取值 | pack 元规则／调用条件，不是盘面条件 |  | 问题明确为射覆/传统物类推演，且 LM-R00 已通过 | 问题明确为射覆/传统物类推演，且 LM-R00 已通过。 |
+| `san-shi/liuren-miben` | `LIURENMIBEN-006` | statement 中无可复原的 FactKey 取值 | pack 元规则／调用条件，不是盘面条件 | 旺/相/死/休/囚（月令旺衰） | 任何规则使用旺、相、死、休、囚 | 任何规则使用旺、相、死、休、囚。 |
+| `san-shi/liuren-miben` | `LIURENMIBEN-007` | statement 中无可复原的 FactKey 取值 | pack 元规则／调用条件，不是盘面条件 | 类神（随问题域映射的取用对象） | 已按问题域确定类神，LM-R00 已通过 | 已按问题域确定类神，LM-R00 已通过。 |
+| `san-shi/liuren-miben` | `LIURENMIBEN-008` | statement 中无可复原的 FactKey 取值 | pack 元规则／调用条件，不是盘面条件 | 多吉/多凶汇总标签（adapter 解释层输出） | adapter 或上游解释给出“多吉/多凶”的初步标签 | adapter 或上游解释给出“多吉/多凶”的初步标签。 |
+| `san-shi/liuren-miben` | `LIURENMIBEN-009` | statement 中无可复原的 FactKey 取值 | 需要引擎未产出的事实 | 所乘神；旺衰；生克；日鬼与辰两课的关系 | 已有天将、所乘神、旺衰与生克事实 | 已有天将、所乘神、旺衰与生克事实。 |
+| `san-shi/liuren-miben` | `LIURENMIBEN-010` | statement 中无可复原的 FactKey 取值 | pack 元规则／调用条件，不是盘面条件 |  | 需要用卷十四解释具体问题，LM-R00 已通过 | 需要用卷十四解释具体问题，LM-R00 已通过。 |
+| `san-shi/liuren-miben` | `LIURENMIBEN-012` | statement 中无可复原的 FactKey 取值 | pack 元规则／调用条件，不是盘面条件 | 聚散/初建/复建/奇格（未实现的衍生事实） | 盘面事实完整，准备加入聚散、初建复建或奇格 | 盘面事实完整，准备加入聚散、初建复建或奇格。 |
+| `san-shi/liuren-miben` | `LIURENMIBEN-014` | statement 中无可复原的 FactKey 取值 | pack 元规则／调用条件，不是盘面条件 | 日辰与发用位置关系（日上/辰上发用）；天乙顺逆、斗罡加卯酉等取期要件 | 用户询问快慢或应期，LM-R00 已通过 | 用户询问快慢或应期，LM-R00 已通过。 |
+| `san-shi/liuren-miben` | `LIURENMIBEN-015` | statement 中无可复原的 FactKey 取值 | 需要引擎未产出的事实 | 合入传/德入传；鬼；墓；刑冲破害；旺衰 | adapter 已输出合、鬼、墓、刑冲破害及旺衰 | adapter 已输出合、鬼、墓、刑冲破害及旺衰。 |
+| `san-shi/liuren-miben` | `LIURENMIBEN-018` | statement 中无可复原的 FactKey 取值 | pack 元规则／调用条件，不是盘面条件 |  | 确定性 adapter 已给 `lesson_type` 和生成路径，用户要查本 | 确定性 adapter 已给 `lesson_type` 和生成路径，用户要查本书如何解释该课名。 |
+| `san-shi/liuren-miben` | `LIURENMIBEN-019` | statement 中无可复原的 FactKey 取值 | 需要引擎未产出的事实 | 三传所乘地支；巳/亥入传；干支同出；生干合支/生支合干（生合关系） | adapter 显示巳/亥、干支同出、或生干合支/生支合干的明确结构 | adapter 显示巳/亥、干支同出、或生干合支/生支合干的明确结构。 |
+| `san-shi/liuren-miben` | `LIURENMIBEN-021` | 可复原 1 个谓词对（现有语言本可表达） | 需要引擎未产出的事实 | 青龙所临位置（日上）；传中财（六亲入传） | 本段论求财，参看传中是否见财，以及青龙是否居日上；青龙在任意一传不等于龙居日本 | 本段论求财，参看传中是否见财，以及青龙是否居日上；青龙在任意一传不等于龙居日本。 |
+| `san-shi/liuren-miben` | `LIURENMIBEN-023` | statement 中无可复原的 FactKey 取值 | pack 元规则／调用条件，不是盘面条件 |  | 用户明确问消息、回复、确认、批复、合同、协议、签字、盖章或其他文书结果，LM-R | 用户明确问消息、回复、确认、批复、合同、协议、签字、盖章或其他文书结果，LM-R00 已通过。 |
+| `san-shi/liuren-miben` | `LIURENMIBEN-LM` | statement 中无可复原的 FactKey 取值 | pack 元规则／调用条件，不是盘面条件 |  | 查询本书某月将、天将、地支或八卦的传统类象；若用于实际盘，LM-R00 已通过 | 查询本书某月将、天将、地支或八卦的传统类象；若用于实际盘，LM-R00 已通过。 |
+| `san-shi/liuren-miben` | `LM` | statement 中无可复原的 FactKey 取值 | pack 元规则／调用条件，不是盘面条件 |  | 用户要求具体起课、断某一件事或把本书规则套入实际盘 | 用户要求具体起课、断某一件事或把本书规则套入实际盘。 |
+| `san-shi/liuren-zhiyin` | `LIURENZHIYIN-003` | statement 中无可复原的 FactKey 取值 | pack 元规则／调用条件，不是盘面条件 | 四课上下直接克候选集合；候选同类性比较依据 | `LR-01` 留下两个或更多同类直接克候选 | `LR-01` 留下两个或更多同类直接克候选。 |
+| `san-shi/liuren-zhiyin` | `LIURENZHIYIN-004` | statement 中无可复原的 FactKey 取值 | 需要引擎未产出的事实 | 四课上下直接克关系；八专无克分支标记 | 四课上下全无直接克；不是八专无克分支 | 四课上下全无直接克；不是八专无克分支。 |
+| `san-shi/liuren-zhiyin` | `LIURENZHIYIN-008` | statement 中无可复原的 FactKey 取值 | 需要引擎未产出的事实 | 天盘十二神落宫及其冲位关系；is_fanyin 标记 | adapter 标记十二神各临冲位，`is_fanyin=true` | adapter 标记十二神各临冲位，`is_fanyin=true`。 |
+| `san-shi/liuren-zhiyin` | `LIURENZHIYIN-009` | statement 中无可复原的 FactKey 取值 | 需要引擎未产出的事实 | 日支（干支同位）；四课去重结果（两课）；is_bazhuan 标记 | 干支同位，四课去重后为两课，adapter 标记 `is_bazhuan=tru | 干支同位，四课去重后为两课，adapter 标记 `is_bazhuan=true`。 |
+| `san-shi/liuren-zhiyin` | `LIURENZHIYIN-012` | statement 中无可复原的 FactKey 取值 | pack 元规则／调用条件，不是盘面条件 |  | 用户问题已分类，且不是要求把文化文本当现实保证 | 用户问题已分类，且不是要求把文化文本当现实保证。 |
+| `san-shi/liuren-zhiyin` | `LIURENZHIYIN-013` | statement 中无可复原的 FactKey 取值 | 原文有条件但口径未定或明确拒绝单一条件 | 神煞（本 art 无 key）；刑克种类与范围 | 本注本题下注主张，神煞须结合干支神将刑克参看 | 本注本题下注主张，神煞须结合干支神将刑克参看。 |
+| `san-shi/liuren-zhiyin` | `LIURENZHIYIN-014` | statement 中无可复原的 FactKey 取值 | 需要引擎未产出的事实 | 三传所乘地支；三合局关系 | 三传形成三合局，且明确调用的是张洪注本第三十章现代附录 | 三传形成三合局，且明确调用的是张洪注本第三十章现代附录。 |
+| `san-shi/liuren-zhiyin` | `LIURENZHIYIN-016` | statement 中无可复原的 FactKey 取值 | 需要引擎未产出的事实 | 六亲（三传六亲）；旺衰；墓；三传与日干的生克关系 | 用户问收款、入账或求财，三传、六亲、旺衰、空墓与天将已由确定性事实层给出 | 用户问收款、入账或求财，三传、六亲、旺衰、空墓与天将已由确定性事实层给出。 |
+| `san-shi/liuren-zhiyin` | `LIURENZHIYIN-018` | statement 中无可复原的 FactKey 取值 | 需要引擎未产出的事实 | 日支；日干/日支五行；日干与日支的生克关系 | 日干、日支及其五行均由同一确定性课盘给出；问题属于可判成否的具体事件 | 日干、日支及其五行均由同一确定性课盘给出；问题属于可判成否的具体事件。 |
+| `san-shi/liuren-zhiyin` | `LIURENZHIYIN-020` | statement 中无可复原的 FactKey 取值 | 需要引擎未产出的事实 | 类神；六亲；旺衰 | 问题类神已由有出处的专项映射确定，三传六亲、旺衰和空亡完整 | 问题类神已由有出处的专项映射确定，三传六亲、旺衰和空亡完整。 |
+
+## liuyao
+
+| book | rule_id | 分类 | 台账理由 | 缺的事实 | 原文依据 | statement |
+|---|---|---|---|---|---|---|
+| `divination/bushi-zhengzong` | `BSZZ` | statement 中无可复原的 FactKey 取值 | 原文无盘面适用条件（通论／体例／取象表／起例取法） |  | 六爻投掷自下而上记录，三掷先成内卦 | 六爻投掷自下而上记录，三掷先成内卦。 |
+| `divination/huangjin-ce` | `HJC` | statement 中无可复原的 FactKey 取值 | 需要引擎未产出的事实 |  | 动爻为变化之始、变卦为变化之终 | 占卦以动爻为变化之始、变卦为变化之终。 |
+| `divination/huangjin-ce` | `HJC-R001` | statement 中无可复原的 FactKey 取值 | 需要引擎未产出的事实 |  | 断卦先看日辰、月建对用神、世应、动爻的生克冲合与旺衰 | 断卦先看日辰、月建对用神、世应、动爻的生克冲合与旺衰；不能只凭卦名或单个神煞下结论。 |
+| `divination/huangjin-ce` | `HJC-R003` | statement 中无可复原的 FactKey 取值 | 需要引擎未产出的事实 |  | 动爻主事情发动，变爻主后势或结果；动变比和、进退、回头克等决定进展 | 动爻主事情发动，变爻主后势或结果；动变比和、进退、回头克等决定进展。 |
+| `divination/huangjin-ce` | `HJC-R004` | statement 中无可复原的 FactKey 取值 | 需要引擎未产出的事实 |  | 用神有气且无明显损伤，所问有成 | 用神有气且无明显损伤，所问有成；主象徒存但被伤，谋事不遂。 |
+| `divination/huangjin-ce` | `HJC-R005` | statement 中无可复原的 FactKey 取值 | 需要引擎未产出的事实 |  | 空、合、冲、墓、旺衰不能孤立解释，要看是否逢冲可用、合破无功、墓冲而发 | 用神受伤须有救应；空、合、冲、墓、旺衰不能孤立解释，要看是否逢冲可用、合破无功、墓冲而发。 |
+| `divination/huangjin-ce` | `HJC-R006` | statement 中无可复原的 FactKey 取值 | 需要引擎未产出的事实 |  | 吉凶神煞、六神取象只能作旁证；核心判断仍以生克制化、用神旺衰和世应动变为主 | 吉凶神煞、六神取象只能作旁证；核心判断仍以生克制化、用神旺衰和世应动变为主。 |
+| `divination/huangjin-ce` | `HJC-R007` | 同一 key 多个取值（OR 本可表达） | 原文无盘面适用条件（通论／体例／取象表／起例取法） |  | 天时占以父母主雨、妻财主晴为主要取象，再看子孙日月、兄弟风云、官爻雷电 | 天时占以父母主雨、妻财主晴为主要取象，再看子孙日月、兄弟风云、官爻雷电及四季五行。 |
+| `divination/huangjin-ce` | `HJC-R008` | statement 中无可复原的 FactKey 取值 | 需要引擎未产出的事实 |  | 婚姻先看阴阳、六合六冲、世应合冲生克，再看财鬼是否空亡刑害 | 婚姻先看阴阳、六合六冲、世应合冲生克，再看财鬼是否空亡刑害。 |
+| `divination/huangjin-ce` | `HJC-R009` | 可复原 1 个谓词对（现有语言本可表达） | 需要引擎未产出的事实 |  | 求财先看财爻与子孙；财旺福兴利，财空福绝不利；父兄皆动、兄鬼克世多阻 | 求财先看财爻与子孙；财旺福兴利，财空福绝不利；父兄皆动、兄鬼克世多阻。 |
+| `divination/huangjin-ce` | `HJC-R011` | statement 中无可复原的 FactKey 取值 | 原文无盘面适用条件（通论／体例／取象表／起例取法） |  | 家宅以卦内为宅、卦外为人，合为门、冲为路 | 家宅以卦内为宅、卦外为人，合为门、冲为路，再看宅、门、世应、日月之间的生克冲合。 |
+| `divination/huangjin-ce` | `HJC-R016` | statement 中无可复原的 FactKey 取值 | 需要引擎未产出的事实 |  | 用爻动则身已动，安静则未思归，生克合冲伏藏决定迟速与阻滞 | 行人问归期，先找主象/用爻；用爻动则身已动，安静则未思归，生克合冲伏藏决定迟速与阻滞。 |
+| `divination/huangjin-ce` | `HJC-R017` | statement 中无可复原的 FactKey 取值 | pack 元规则／调用条件，不是盘面条件 |  | 病症、病体、医药章节可记录六亲、五行、卦宫、六神如何取象，但不得输出为现代诊断、 | 病症、病体、医药章节可记录六亲、五行、卦宫、六神如何取象，但不得输出为现代诊断、疗法或用药建议。 |
+| `divination/huozhu-lin` | `HZL` | statement 中无可复原的 FactKey 取值 | 原文无盘面适用条件（通论／体例／取象表／起例取法） |  | 六爻审卦先核世应位置，再进入后续深浅判断 | 六爻审卦先核世应位置，再进入后续深浅判断。 |
+| `divination/huozhu-lin` | `HZL-R002` | statement 中无可复原的 FactKey 取值 | 需要引擎未产出的事实 |  | 财官旺相、有辅体发动或生世为可用；休囚、克破、无辅则力薄 | 财官旺相、有辅体发动或生世为可用；休囚、克破、无辅则力薄。 |
+| `divination/huozhu-lin` | `HZL-R003` | statement 中无可复原的 FactKey 取值 | 需要引擎未产出的事实 |  | 乱动时先看世上旁爻、世下亲爻，再以最旺或发动生世之爻为用 | 乱动时先看世上旁爻、世下亲爻，再以最旺或发动生世之爻为用。 |
+| `divination/huozhu-lin` | `HZL-R004` | statement 中无可复原的 FactKey 取值 | 需要引擎未产出的事实 |  | 财官持世虽可许，但应爻或动爻克所用辅爻则事难成 | 财官持世虽可许，但应爻或动爻克所用辅爻则事难成。 |
+| `divination/huozhu-lin` | `HZL-R005` | statement 中无可复原的 FactKey 取值 | 需要引擎未产出的事实 |  | 财官出现旺相宜久远；伏藏有气虽可取，多利短时或暂成 | 财官出现旺相宜久远；伏藏有气虽可取，多利短时或暂成。 |
+| `divination/zengshan-buyi` | `ZENGSHANBUYI-007` | statement 中无可复原的 FactKey 取值 | 需要引擎未产出的事实 |  | 用神两现时，若仅一爻发动则取动爻；若两爻俱动或俱静，须再择其旺者 | 用神两现时，若仅一爻发动则取动爻；若两爻俱动或俱静，须再择其旺者。旬空、月破等取舍不可脱离实际占验机械套用。 |
+| `divination/zengshan-buyi` | `ZENGSHANBUYI-010` | statement 中无可复原的 FactKey 取值 | 原文无盘面适用条件（通论／体例／取象表／起例取法） |  | 金克木、木克土、土克水、水克火、火克金；忌神之力本于此 | 金克木、木克土、土克水、水克火、火克金；忌神之力本于此。 |
+| `divination/zengshan-buyi` | `ZENGSHANBUYI-011` | statement 中无可复原的 FactKey 取值 | 需要引擎未产出的事实 |  | 用神被克处又逢生扶（日月或动爻）则危而不死；俗谓『贪生忘克』 | 用神被克处又逢生扶（日月或动爻）则危而不死；俗谓"贪生忘克"。 |
+| `divination/zengshan-buyi` | `ZENGSHANBUYI-013` | statement 中无可复原的 FactKey 取值 | 需要引擎未产出的事实 |  | 月建生扶用神则旺、克伤用神则衰；月建之力贯穿一月 | 月建生扶用神则旺、克伤用神则衰；月建之力贯穿一月。 |
+| `divination/zengshan-buyi` | `ZENGSHANBUYI-017` | statement 中无可复原的 FactKey 取值 | 需要引擎未产出的事实 |  | 动爻与变爻间可成回头生、回头克、回头冲、回头合；变爻反作用于本动爻 | 动爻与变爻间可成回头生、回头克、回头冲、回头合；变爻反作用于本动爻。 |
+| `divination/zengshan-buyi` | `ZENGSHANBUYI-018` | statement 中无可复原的 FactKey 取值 | 需要引擎未产出的事实 |  | 静爻得日辰冲为暗动；暗动如同动，能生克他爻 | 静爻得日辰冲为暗动；暗动如同动，能生克他爻。 |
+| `divination/zengshan-buyi` | `ZENGSHANBUYI-019` | statement 中无可复原的 FactKey 取值 | 需要引擎未产出的事实 |  | 动爻被日辰冲为动散，力减不能为大用 | 动爻被日辰冲为动散，力减不能为大用。 |
+| `divination/zengshan-buyi` | `ZENGSHANBUYI-020` | statement 中无可复原的 FactKey 取值 | 需要引擎未产出的事实 |  | 化进神（如寅化卯）力增、化退神（如卯化寅）力减；进神逢冲不进、退神逢冲不退 | 化进神（如寅化卯）力增、化退神（如卯化寅）力减；进神逢冲不进、退神逢冲不退。 |
+| `divination/zengshan-buyi` | `ZENGSHANBUYI-021` | 可复原 1 个谓词对（现有语言本可表达） | 需要引擎未产出的事实 |  | 五爻静一爻动为独发，五爻动一爻静为独静；事之成败与应期仍由用神判断，不得舍用神而 | 五爻静一爻动为独发，五爻动一爻静为独静；事之成败与应期仍由用神判断，不得舍用神而执独发、独静断事。 |
+| `divination/zengshan-buyi` | `ZENGSHANBUYI-024` | statement 中无可复原的 FactKey 取值 | 需要引擎未产出的事实 |  | 寅巳申、丑戌未、子卯三刑；刑则有损伤纠葛 | 寅巳申、丑戌未、子卯三刑；刑则有损伤纠葛。 |
+| `divination/zengshan-buyi` | `ZENGSHANBUYI-025` | statement 中无可复原的 FactKey 取值 | 需要引擎未产出的事实 |  | 反吟主反复颠倒、伏吟主呻吟忧虑；皆非吉象 | 反吟主反复颠倒、伏吟主呻吟忧虑；皆非吉象。 |
+| `divination/zengshan-buyi` | `ZENGSHANBUYI-030` | statement 中无可复原的 FactKey 取值 | 需要引擎未产出的事实 |  | 月建冲爻为月破；月破之爻——静则到底破、动则能伤本变、变则能伤本动、出月或合日不 | 月建冲爻为月破；月破之爻——静则到底破、动则能伤本变、变则能伤本动、出月或合日不破。 |
+| `divination/zengshan-buyi` | `ZENGSHANBUYI-031` | 可复原 1 个谓词对（现有语言本可表达） | 需要引擎未产出的事实 |  | 用神动随官鬼入墓——大凶；用神入日辰之墓亦凶 | 用神动随官鬼入墓——大凶；用神入日辰之墓亦凶。 |
+| `divination/zengshan-buyi` | `ZENGSHANBUYI-ZR-04` | statement 中无可复原的 FactKey 取值 | 原文无盘面适用条件（通论／体例／取象表／起例取法） |  | 生用神者元神（喜其旺动）；克用神者忌神（怕其旺动）；克元神／生忌神者仇神 | 生用神者元神（喜其旺动）；克用神者忌神（怕其旺动）；克元神 / 生忌神者仇神（不可旺）。 |
+| `divination/zengshan-buyi` | `ZENGSHANBUYI-ZR-05` | statement 中无可复原的 FactKey 取值 | 原文无盘面适用条件（通论／体例／取象表／起例取法） |  | 金生水、水生木、木生火、火生土、土生金；元神之力本于此 | 金生水、水生木、木生火、火生土、土生金；元神之力本于此。 |
+| `divination/zengshan-buyi` | `ZENGSHANBUYI-ZR-06` | statement 中无可复原的 FactKey 取值 | 原文无盘面适用条件（通论／体例／取象表／起例取法） |  | 变出之爻能生克冲合本位动爻，不能生克其他爻 | 变出之爻能生克冲合本位动爻，不能生克其他爻；其他爻与本位动爻也不能生克变爻。 |
+| `divination/zengshan-buyi` | `ZENGSHANBUYI-ZR-08` | statement 中无可复原的 FactKey 取值 | 需要引擎未产出的事实 |  | 用神旬空——空而不空（动／旺／临日月）则不空；真空——出旬即应；旬空亦可冲实 | 用神旬空——空而不空（动 / 旺 / 临日月）则不空；真空——出旬即应；旬空亦可冲实。 |
+| `divination/zengshan-buyi` | `ZENGSHANBUYI-ZR-13` | statement 中无可复原的 FactKey 取值 | 需要引擎未产出的事实 |  | 占行人归否——以应爻／远人之爻为用；用动来生世／临归魂——速归；用入墓入空——未 | 占行人归否——以应爻 / 远人之爻为用；用动来生世 / 临归魂——速归；用入墓入空——未归。 |
+| `divination/zengshan-buyi` | `ZENGSHANBUYI-ZR-14` | statement 中无可复原的 FactKey 取值 | 需要引擎未产出的事实 |  | 占兴讼胜负——世应相战看哪边得日月生扶；世旺应衰胜、世衰应旺败 | 占兴讼胜负——世应相战看哪边得日月生扶；世旺应衰胜、世衰应旺败。 |
+| `divination/zengshan-buyi` | `ZR-02` | statement 中无可复原的 FactKey 取值 | 原文无盘面适用条件（通论／体例／取象表／起例取法） |  | 八宫卦各纳天干（乾纳甲壬…）；六爻配地支按纳甲歌取 | 八宫卦各纳天干（乾纳甲壬、坤纳乙癸、震纳庚、巽纳辛、坎纳戊、离纳己、艮纳丙、兑纳丁）；六爻配地支按纳甲歌取。 |
+| `divination/zengshan-buyi` | `ZR-03` | 同一 key 多个取值（OR 本可表达） | 原文无盘面适用条件（通论／体例／取象表／起例取法） |  | 六亲以本卦所属宫的五行为基准：同五行为兄弟，生宫五行者为父母… | 六亲以本卦所属宫的五行为基准：同五行为兄弟，生宫五行者为父母，宫五行所生者为子孙，克宫五行者为官鬼，宫五行所克者为妻财。 |
+| `divination/zengshan-buyi` | `ZR-05` | statement 中无可复原的 FactKey 取值 | 需要引擎未产出的事实 |  | 元神旺动而无伤——用神得力；忌神旺动而无制——用神受伤 | 元神旺动而无伤——用神得力；忌神旺动而无制——用神受伤。 |
+| `divination/zengshan-buyi` | `ZR-06` | statement 中无可复原的 FactKey 取值 | 原文无盘面适用条件（通论／体例／取象表／起例取法） |  | 摇卦得三背或三面为动爻，老阳老阴变化；动爻变出之爻为变爻 | 摇卦得三背或三面为动爻，老阳老阴变化；动爻变出之爻为变爻。 |
+| `divination/zengshan-buyi` | `ZR-09` | statement 中无可复原的 FactKey 取值 | 需要引擎未产出的事实 |  | 归魂卦——主回归、还原；游魂卦——主漂泊、不定 | 归魂卦——主回归、还原；游魂卦——主漂泊、不定；问行人、问出行尤宜参看。 |
+| `divination/zengshan-buyi` | `ZR-10` | statement 中无可复原的 FactKey 取值 | 原文无盘面适用条件（通论／体例／取象表／起例取法） |  | 所有问占先取用神 → 看用神旺衰 → 看元忌动静 → 看应期；此为通则 | 所有问占先取用神 → 看用神旺衰 → 看元忌动静 → 看应期；此为通则。 |
+| `divination/zengshan-buyi` | `ZR-13` | statement 中无可复原的 FactKey 取值 | 需要引擎未产出的事实 |  | 占出行——以世爻为身；忌世动入墓／入空／受冲克；游魂卦不宜远行 | 占出行——以世爻为身；忌世动入墓 / 入空 / 受冲克；游魂卦不宜远行。 |
+| `divination/zengshan-buyi` | `ZR-16` | 同一 key 多个取值（OR 本可表达） | 原文无盘面适用条件（通论／体例／取象表／起例取法） |  | 占家宅——以世爻为人、二爻为宅、五爻为路、六爻为屋顶／远 | 占家宅——以世爻为人、二爻为宅、五爻为路、六爻为屋顶 / 远；世爻旺无伤、宅爻不被冲克为佳。 |
+| `divination/zengshan-buyi` | `ZR-17` | 可复原 1 个谓词对（现有语言本可表达） | 原文无盘面适用条件（通论／体例／取象表／起例取法） |  | 占茔葬——以二爻为穴、世爻为后人；穴旺生世——吉地；穴受冲克——凶地 | 占茔葬——以二爻为穴、世爻为后人；穴旺生世——吉地；穴受冲克——凶地。 |
+
+## meihua
+
+| book | rule_id | 分类 | 台账理由 | 缺的事实 | 原文依据 | statement |
+|---|---|---|---|---|---|---|
+| `divination/meihua-yishu` | `MEIHUAYISHU-004` | statement 中无可复原的 FactKey 取值 | 原文无盘面适用条件（通论／体例／取象表／起例取法） |  | 震巽木旺于春；离火旺于夏；乾兑金旺于秋；坎水旺于冬；坤艮土旺于辰戌丑未月。 | 震巽木旺于春；离火旺于夏；乾兑金旺于秋；坎水旺于冬；坤艮土旺于辰戌丑未月。 |
+| `divination/meihua-yishu` | `MEIHUAYISHU-005` | statement 中无可复原的 FactKey 取值 | 原文无盘面适用条件（通论／体例／取象表／起例取法） |  | 春坤艮衰、夏乾兑衰、秋震巽衰、冬离衰、辰戌丑未坎衰。 | 春坤艮衰、夏乾兑衰、秋震巽衰、冬离衰、辰戌丑未坎衰。 |
+| `divination/meihua-yishu` | `MEIHUAYISHU-008` | statement 中无可复原的 FactKey 取值 | 原文无盘面适用条件（通论／体例／取象表／起例取法） |  | 互卦只用八卦不取六十四卦名；以重卦的二三四爻为下互、三四五爻为上互；乾坤无互，互 | 互卦只用八卦不取六十四卦名；以重卦的二三四爻为下互、三四五爻为上互；乾坤无互，互其变卦。 |
+| `divination/meihua-yishu` | `MEIHUAYISHU-009` | statement 中无可复原的 FactKey 取值 | 原文无盘面适用条件（通论／体例／取象表／起例取法） |  | 可数之物 / 已成器物 / 已栽树木 / 已建屋宅可起卦；江河山石及未成之物不可 | 可数之物 / 已成器物 / 已栽树木 / 已建屋宅可起卦；江河山石及未成之物不可起卦；牛马犬豕初生 / 初置时方可起卦。 |
+| `divination/meihua-yishu` | `MEIHUAYISHU-013` | statement 中无可复原的 FactKey 取值 | 需要引擎未产出的事实 | 体用五行关系（比和＝同五行） | 体用同五行（如皆木皆金）为比和，事顺利、平稳；不主大吉大凶。 | 体用同五行（如皆木皆金）为比和，事顺利、平稳；不主大吉大凶。 |
+| `divination/meihua-yishu` | `MEIHUAYISHU-014` | statement 中无可复原的 FactKey 取值 | 需要引擎未产出的事实 | 互卦／变卦之卦与体用的生克关系（互卦、变卦、体卦、用卦） | 互卦看事之中（过程曲折），变卦看事之终（结果归宿）；互变之卦与体用之生克须合参。 | 互卦看事之中（过程曲折），变卦看事之终（结果归宿）；互变之卦与体用之生克须合参。 |
+| `divination/meihua-yishu` | `MEIHUAYISHU-015` | statement 中无可复原的 FactKey 取值 | 原文有条件但口径未定或明确拒绝单一条件 |  | 体用并非固定，因时因事而变；体之力借助于互变之中之比和、生扶、克泄综合判断。 | 体用并非固定，因时因事而变；体之力借助于互变之中之比和、生扶、克泄综合判断。 |
+| `divination/meihua-yishu` | `MEIHUAYISHU-016` | statement 中无可复原的 FactKey 取值 | 需要引擎未产出的事实 | 变卦与体卦的生克关系及变卦旺衰 | 变卦旺则减体之力，变卦克体则祸；变卦生体则福。 | 变卦旺则减体之力，变卦克体则祸；变卦生体则福。 |
+| `divination/meihua-yishu` | `MEIHUAYISHU-021` | statement 中无可复原的 FactKey 取值 | 需要引擎未产出的事实 | 体用取象（体为家宅／用为外事）与体用生克关系 | 体为家宅、用为外事；体克用宅吉、用克体宅有外祟；用生体得外援、体生用宅气泄；比和 | 体为家宅、用为外事；体克用宅吉、用克体宅有外祟；用生体得外援、体生用宅气泄；比和家宅安。 |
+| `divination/meihua-yishu` | `MEIHUAYISHU-022` | statement 中无可复原的 FactKey 取值 | 需要引擎未产出的事实 | 卦象取象（屋舍新旧／坐向／构件）与体用生克关系 | 屋舍新旧、坐向、构件依卦象分别取；体克用屋无大碍。 | 屋舍新旧、坐向、构件依卦象分别取；体克用屋无大碍。 |
+| `divination/meihua-yishu` | `MEIHUAYISHU-029` | statement 中无可复原的 FactKey 取值 | 需要引擎未产出的事实 | 体用生克关系（体为求见者／用为所见） | 体为求见者、用为所见；用生体可见、有益；体克用可见而不悦；用克体不见或有阻。 | 体为求见者、用为所见；用生体可见、有益；体克用可见而不悦；用克体不见或有阻。 |
+| `divination/meihua-yishu` | `MEIHUAYISHU-030` | statement 中无可复原的 FactKey 取值 | 需要引擎未产出的事实 | 用卦方位（用方位即物之方）与体用生克关系 | 体为失主、用为物 / 拿者；用方位即物之方；体克用易得、用克体难得；卦象类比物形 | 体为失主、用为物 / 拿者；用方位即物之方；体克用易得、用克体难得；卦象类比物形与去向。 |
+| `divination/meihua-yishu` | `MEIHUAYISHU-MR-01` | statement 中无可复原的 FactKey 取值 | 原文无盘面适用条件（通论／体例／取象表／起例取法） |  | 金生水、水生木、木生火、火生土、土生金；金克木、木克土、土克水、水克火、火克金。 | 金生水、水生木、木生火、火生土、土生金；金克木、木克土、土克水、水克火、火克金。 |
+| `divination/meihua-yishu` | `MEIHUAYISHU-MR-02` | statement 中无可复原的 FactKey 取值 | 原文无盘面适用条件（通论／体例／取象表／起例取法） |  | 起动爻时以重卦总数（年 + 月 + 日 + 时）除以 6，取余数为动爻位（恰得  | 起动爻时以重卦总数（年 + 月 + 日 + 时）除以 6，取余数为动爻位（恰得 6 取上爻）。 |
+| `divination/meihua-yishu` | `MEIHUAYISHU-MR-04` | statement 中无可复原的 FactKey 取值 | 需要引擎未产出的事实 | 体用五行生克关系（用生体／体生用／用克体／体克用／体用比和） | 用卦生体卦——大吉，主有外财外喜；体卦生用卦——主耗、退财；用卦克体卦——大凶； | 用卦生体卦——大吉，主有外财外喜；体卦生用卦——主耗、退财；用卦克体卦——大凶；体卦克用卦——主顺、克他人；体用比和（同五行）——吉，事顺。 |
+| `divination/meihua-yishu` | `MEIHUAYISHU-MR-05` | statement 中无可复原的 FactKey 取值 | 需要引擎未产出的事实 | 体卦旺衰（体卦及其五行、时令旺衰） | 体卦旺则吉力大、凶力减；体卦衰则吉力减、凶力大；判生克须先衡量旺衰。 | 体卦旺则吉力大、凶力减；体卦衰则吉力减、凶力大；判生克须先衡量旺衰。 |
+| `divination/meihua-yishu` | `MEIHUAYISHU-MR-07` | statement 中无可复原的 FactKey 取值 | 需要引擎未产出的事实 | 体用生克关系（用克体／体克用／用生体／体生用／比和） | 用克体凶、体克用顺、用生体得益、体生用耗损、比和顺利；卦象再合参。 | 用克体凶、体克用顺、用生体得益、体生用耗损、比和顺利；卦象再合参。 |
+| `divination/meihua-yishu` | `MEIHUAYISHU-MR-08` | statement 中无可复原的 FactKey 取值 | 需要引擎未产出的事实 | 卦之阴阳（阳卦为男／阴卦为女）与体用生克关系 | 体为母、用为子；阳卦为男、阴卦为女；体克用 / 用克体产难；体生用 / 用生体顺 | 体为母、用为子；阳卦为男、阴卦为女；体克用 / 用克体产难；体生用 / 用生体顺产；比和顺。 |
+| `divination/meihua-yishu` | `MEIHUAYISHU-MR-09` | statement 中无可复原的 FactKey 取值 | 需要引擎未产出的事实 | 体用生克关系（交易门） | 体用生克同求财；用克体交易凶；体克用交易顺。 | 体用生克同求财；用克体交易凶；体克用交易顺。 |
+| `divination/meihua-yishu` | `MEIHUAYISHU-MR-10` | statement 中无可复原的 FactKey 取值 | 需要引擎未产出的事实 | 体用生克关系（体为占者／用为行人） | 体为占者、用为行人；用生体行人速归；体生用未归；用克体行人遇险；体克用行人受制。 | 体为占者、用为行人；用生体行人速归；体生用未归；用克体行人遇险；体克用行人受制。 |
+| `divination/meihua-yishu` | `MEIHUAYISHU-MR-12` | statement 中无可复原的 FactKey 取值 | 需要引擎未产出的事实 | 体用生克关系（体为后人／用为坟） | 体为后人、用为坟；体生用耗、用生体福；用克体凶；体克用安。 | 体为后人、用为坟；体生用耗、用生体福；用克体凶；体克用安。 |
+| `divination/meihua-yishu` | `MR-01` | statement 中无可复原的 FactKey 取值 | 原文无盘面适用条件（通论／体例／取象表／起例取法） |  | 八卦先天数序为乾一、兑二、离三、震四、巽五、坎六、艮七、坤八；起卦取数皆以此为本 | 八卦先天数序为乾一、兑二、离三、震四、巽五、坎六、艮七、坤八；起卦取数皆以此为本。 |
+| `divination/meihua-yishu` | `MR-02` | statement 中无可复原的 FactKey 取值 | 原文无盘面适用条件（通论／体例／取象表／起例取法） |  | 起上下卦时以总数除以 8，取余数对应八卦先天数（恰得 8 取坤）；不足 8 直接 | 起上下卦时以总数除以 8，取余数对应八卦先天数（恰得 8 取坤）；不足 8 直接取数。 |
+| `divination/meihua-yishu` | `MR-03` | statement 中无可复原的 FactKey 取值 | 需要引擎未产出的事实 | 体卦／用卦的五行与体用生克关系（体克用·用克体·用生体·体生用·比和） | 求占者报数起卦，以体用生克及卦象类比断当日动静吉凶；用克体凶、体克用顺、比和平、 | 求占者报数起卦，以体用生克及卦象类比断当日动静吉凶；用克体凶、体克用顺、比和平、用生体得、体生用失。 |
+| `divination/meihua-yishu` | `MR-04` | statement 中无可复原的 FactKey 取值 | 原文无盘面适用条件（通论／体例／取象表／起例取法） |  | 起卦后含动爻一卦为用，不含动爻一卦为体；体卦为问占者本身 / 主体，用卦为所问之 | 起卦后含动爻一卦为用，不含动爻一卦为体；体卦为问占者本身 / 主体，用卦为所问之事 / 客体；体用乃占断主轴。 |
+| `divination/meihua-yishu` | `MR-05` | statement 中无可复原的 FactKey 取值 | 原文有条件但口径未定或明确拒绝单一条件 |  | 应期取八卦数（如乾应戌亥年月日时）+ 时令旺衰 + 卦气强弱综合断；不可单凭一项 | 应期取八卦数（如乾应戌亥年月日时）+ 时令旺衰 + 卦气强弱综合断；不可单凭一项。 |
+| `divination/meihua-yishu` | `MR-07` | statement 中无可复原的 FactKey 取值 | 需要引擎未产出的事实 | 卦象多寡（坎多／离多／震多／巽多／坤多／艮多）与体用生克 | 体克用、用克体晴；用生体雨；坎多雨；离多晴；震多雷；巽多风；坤多阴；艮多雾。 | 体克用、用克体晴；用生体雨；坎多雨；离多晴；震多雷；巽多风；坤多阴；艮多雾。 |
+| `divination/meihua-yishu` | `MR-08` | statement 中无可复原的 FactKey 取值 | 需要引擎未产出的事实 | 体用生克关系（体为求婚者／用为对方） | 体为求婚者、用为对方；用生体或体克用婚成；用克体或体生用难成；比和顺成。 | 体为求婚者、用为对方；用生体或体克用婚成；用克体或体生用难成；比和顺成。 |
+| `divination/meihua-yishu` | `MR-09` | statement 中无可复原的 FactKey 取值 | 需要引擎未产出的事实 | 体用生克关系（体为我／用为财） | 体为我、用为财；用生体得财、体克用得财；体生用耗财、用克体破财；比和守成。 | 体为我、用为财；用生体得财、体克用得财；体生用耗财、用克体破财；比和守成。 |
+| `divination/meihua-yishu` | `MR-10` | statement 中无可复原的 FactKey 取值 | 需要引擎未产出的事实 | 体用生克关系（体为出行者／用为去处） | 体为出行者、用为去处；体克用顺、用生体得益；用克体凶忌；体生用劳形耗资。 | 体为出行者、用为去处；体克用顺、用生体得益；用克体凶忌；体生用劳形耗资。 |
+| `divination/meihua-yishu` | `MR-11` | statement 中无可复原的 FactKey 取值 | 需要引擎未产出的事实 | 体用生克关系与卦象类病象（坎肾／离心／震肝／艮脾） | 体为病人、用为病；用克体病重；体克用病可制；用生体反耗体；体生用病退；比和病稳。 | 体为病人、用为病；用克体病重；体克用病可制；用生体反耗体；体生用病退；比和病稳。卦象类病象（坎肾、离心、震肝、艮脾）。 |
+| `divination/meihua-yishu` | `MR-12` | statement 中无可复原的 FactKey 取值 | 需要引擎未产出的事实 | 体用生克关系（体为告者／用为对方） | 体为告者、用为对方；体克用胜、用克体败；用生体有人助、体生用己耗。 | 体为告者、用为对方；体克用胜、用克体败；用生体有人助、体生用己耗。 |
+| `divination/meihua-yishu` | `MR-13` | statement 中无可复原的 FactKey 取值 | 原文有条件但口径未定或明确拒绝单一条件 |  | 占断本于体用生克 + 卦气衰旺 + 互变补充 + 类象取义；不拘一格，须临占灵动 | 占断本于体用生克 + 卦气衰旺 + 互变补充 + 类象取义；不拘一格，须临占灵动。 |
+
+## qimen
+
+| book | rule_id | 分类 | 台账理由 | 缺的事实 | 原文依据 | statement |
+|---|---|---|---|---|---|---|
+| `san-shi/qimen-dunjia-tongzhi` | `QM-P01` | 可复原 1 个谓词对（现有语言本可表达） | 需要引擎未产出的事实 | 天盘干（甲）；地盘干（丙） | 龙回首 甲值符加地盘丙奇 | 龙回首 甲值符加地盘丙奇 |
+| `san-shi/qimen-dunjia-tongzhi` | `QM-P02` | 可复原 1 个谓词对（现有语言本可表达） | 需要引擎未产出的事实 | 天盘干（丙）；地盘干（甲） | 鸟跌穴 丙奇加地盘甲值符 | 鸟跌穴 丙奇加地盘甲值符 |
+| `san-shi/qimen-dunjia-tongzhi` | `QM-P03` | statement 中无可复原的 FactKey 取值 | 需要引擎未产出的事实 | 天盘干（乙）；地盘干（辛） | 龙逃走 乙奇遇辛 | 龙逃走 乙奇遇辛 |
+| `san-shi/qimen-dunjia-tongzhi` | `QM-P04` | statement 中无可复原的 FactKey 取值 | 需要引擎未产出的事实 | 天盘干（辛）；地盘干（乙） | 虎猖狂 辛遇乙奇 | 虎猖狂 辛遇乙奇 |
+| `san-shi/qimen-dunjia-tongzhi` | `QM-P05` | statement 中无可复原的 FactKey 取值 | 需要引擎未产出的事实 | 天盘干（癸）；地盘干（丁） | 蛇妖矫 癸见丁奇 | 蛇妖矫 癸见丁奇 |
+| `san-shi/qimen-dunjia-tongzhi` | `QM-P06` | statement 中无可复原的 FactKey 取值 | 需要引擎未产出的事实 | 天盘干（丁）；地盘干（癸） | 雀投江 丁奇见癸 | 雀投江 丁奇见癸 |
+| `san-shi/qimen-dunjia-tongzhi` | `QM-P07` | statement 中无可复原的 FactKey 取值 | 需要引擎未产出的事实 | 天盘干（庚）；地盘干（癸） | 大格 庚临六癸 | 大格 庚临六癸 |
+| `san-shi/qimen-dunjia-tongzhi` | `QM-P08` | statement 中无可复原的 FactKey 取值 | 需要引擎未产出的事实 | 天盘干（庚）；地盘干（己） | 刑格 庚临六己 | 刑格 庚临六己 |
+| `san-shi/qimen-dunjia-tongzhi` | `QM-P09` | statement 中无可复原的 FactKey 取值 | 需要引擎未产出的事实 | 天盘干（庚）；地盘干（壬） | 小格 庚临壬 | 小格 庚临壬 |
+| `san-shi/qimen-dunjia-tongzhi` | `QM-P13` | statement 中无可复原的 FactKey 取值 | 需要引擎未产出的事实 | 时干、日干（天干类 FactKey） | 时干克日干乃五不遇而灾生 | 时干克日干乃五不遇而灾生 |
+| `san-shi/qimen-dunjia-tongzhi` | `QM-P14` | statement 中无可复原的 FactKey 取值 | 需要引擎未产出的事实 | 天盘星所落之宫（天盘干/天盘星落宫） | 伏吟 本星加本宫 | 伏吟 本星加本宫 |
+| `san-shi/qimen-dunjia-tongzhi` | `QM-P15` | statement 中无可复原的 FactKey 取值 | 需要引擎未产出的事实 | 天盘星所落之宫（天盘干/天盘星落宫） | 反吟 星加对宫 | 反吟 星加对宫 |
+| `san-shi/qimen-dunjia-tongzhi` | `QM-P16` | statement 中无可复原的 FactKey 取值 | 需要引擎未产出的事实 | 三奇天盘干（乙/丙/丁）落宫 | 三奇入墓 乙奇坤宫 丙奇乾宫 丁奇艮宫 | 三奇入墓 乙奇坤宫 丙奇乾宫 丁奇艮宫 |
+| `san-shi/qimen-dunjia-tongzhi` | `QM-P21` | 可复原 1 个谓词对（现有语言本可表达） | 需要引擎未产出的事实 | 天盘干（乙奇） | 龙遁 休门与乙奇合坎 | 龙遁 休门与乙奇合坎 |
+| `san-shi/qimen-dunjia-tongzhi` | `QM-P22` | 可复原 1 个谓词对（现有语言本可表达） | 需要引擎未产出的事实 | 天盘干（乙奇）、地盘干（辛） | 虎遁 休门与乙奇合艮辛 | 虎遁 休门与乙奇合艮辛 |
+| `san-shi/qimen-dunjia-tongzhi` | `QM-P23` | 跨 key 多事实（需 AND） | 需要引擎未产出的事实 | 天盘干（乙奇） | 神遁 休门与乙奇合九天 | 神遁 休门与乙奇合九天 |
+| `san-shi/qimen-dunjia-tongzhi` | `QM-P24` | 跨 key 多事实（需 AND） | 需要引擎未产出的事实 | 天盘干（乙奇） | 鬼遁 乙奇合九地杜门 | 鬼遁 乙奇合九地杜门 |
+| `san-shi/qimen-dunjia-tongzhi` | `QM-P25` | statement 中无可复原的 FactKey 取值 | 需要引擎未产出的事实 | 三奇天盘干（乙/丙/丁）与旬首（甲午/甲戌/甲子/甲申/甲寅/甲辰） | 三奇得使 乙奇加甲午甲戌 丙奇加甲子甲申 丁奇加甲寅甲辰 | 三奇得使 乙奇加甲午甲戌 丙奇加甲子甲申 丁奇加甲寅甲辰 |
+| `san-shi/qimen-dunjia-tongzhi` | `QM-P27` | statement 中无可复原的 FactKey 取值 | 需要引擎未产出的事实 | 天盘干（庚）、岁干支（天干） | 岁格 庚临岁干 | 岁格 庚临岁干 |
+| `san-shi/qimen-dunjia-tongzhi` | `QM-P28` | statement 中无可复原的 FactKey 取值 | 需要引擎未产出的事实 | 天盘干（庚）、月干支（天干） | 月格 庚临月干 | 月格 庚临月干 |
+| `san-shi/qimen-dunjia-tongzhi` | `QM-P29` | statement 中无可复原的 FactKey 取值 | 需要引擎未产出的事实 | 天盘干（庚）、日干 | 日格 庚临日干 | 日格 庚临日干 |
+| `san-shi/qimen-dunjia-tongzhi` | `QM-P30` | statement 中无可复原的 FactKey 取值 | 需要引擎未产出的事实 | 天盘干（庚）、时干 | 时格 庚临时干三奇 | 时格 庚临时干三奇 |
+| `san-shi/qimen-dunjia-tongzhi` | `QM-P31` | 可复原 1 个谓词对（现有语言本可表达） | 需要引擎未产出的事实 | 天盘干（庚） | 伏宫 庚临值符 | 伏宫 庚临值符 |
+| `san-shi/qimen-dunjia-tongzhi` | `QM-P32` | statement 中无可复原的 FactKey 取值 | 需要引擎未产出的事实 | 天盘干（庚）、日干 | 伏干 庚临日干 | 伏干 庚临日干 |
+| `san-shi/qimen-dunjia-tongzhi` | `QM-P33` | statement 中无可复原的 FactKey 取值 | 需要引擎未产出的事实 | 天盘干（庚）、日干 | 飞干格 日干临庚 | 飞干格 日干临庚 |
+| `san-shi/qimen-dunjia-tongzhi` | `QM-P34` | statement 中无可复原的 FactKey 取值 | 需要引擎未产出的事实 | 天盘干（六庚）、地盘干（丙奇） | 太白入荧 六庚加丙奇又庚加卯日时酉丁 | 六庚加丙奇 |
+| `san-shi/qimen-dunjia-tongzhi` | `QM-P35` | statement 中无可复原的 FactKey 取值 | 需要引擎未产出的事实 | 天盘干（丙奇）、地盘干（六庚） | 火入金乡 丙奇加六庚金又丙奇加惊用值符之庚辛 | 丙奇加六庚金 |
+| `san-shi/qimen-dunjia-tongzhi` | `QM-P38` | statement 中无可复原的 FactKey 取值 | 需要引擎未产出的事实 | 天盘干（六壬）、时干 | 地罗遮蔽 六壬临时干 | 地罗遮蔽 六壬临时干 |
+| `san-shi/qimen-dunjia-tongzhi` | `QM-P39` | statement 中无可复原的 FactKey 取值 | 需要引擎未产出的事实 | 天盘干（六癸）、时干 | 天网四张 六癸临时干 | 天网四张 六癸临时干 |
+| `san-shi/qimen-dunjia-tongzhi` | `QM-P40` | statement 中无可复原的 FactKey 取值 | 原文无盘面适用条件（通论／体例／取象表／起例取法） |  | 尺寸高低 一二三四五宫尺寸低，六七八九宫尺寸高 | 尺寸高低 一二三四五宫尺寸低，六七八九宫尺寸高 |
+| `san-shi/qimen-faqiao` | `QM-P26` | statement 中无可复原的 FactKey 取值 | 需要引擎未产出的事实 | 地盘干（丁）；直使（值使门）落宫 | 直使加地丁为守门 | 直使加地丁为守门 |
+| `san-shi/qimen-faqiao` | `QM-P36` | statement 中无可复原的 FactKey 取值 | 需要引擎未产出的事实 | 时干（天干） | 时干入墓，戊戌、壬辰、丙戌、癸未、丁丑、己丑也 | 时干入墓，戊戌、壬辰、丙戌、癸未、丁丑、己丑也 |
+
+## qizheng
+
+| book | rule_id | 分类 | 台账理由 | 缺的事实 | 原文依据 | statement |
+|---|---|---|---|---|---|---|
+| `xingming/guotian-jing` | `GR-01` | statement 中无可复原的 FactKey 取值 | 原文无盘面适用条件（通论／体例／取象表／起例取法） |  | 年干起月：甲己起丙寅…；日干起时：甲己起甲子… | 年干起月：甲己起丙寅，乙庚起戊寅，丙辛起庚寅，丁壬起壬寅，戊癸起甲寅；日干起时：甲己起甲子，乙庚起丙子，丙辛起戊子，丁壬起庚子，戊癸起壬子。 |
+| `xingming/guotian-jing` | `GR-02` | statement 中无可复原的 FactKey 取值 | 原文无盘面适用条件（通论／体例／取象表／起例取法） |  | 十天干各化曜（甲化木、丙化火……）用于神煞起例。 | 十天干各化曜（甲化木、丙化火……）用于神煞起例。 |
+| `xingming/guotian-jing` | `GR-03` | statement 中无可复原的 FactKey 取值 | 原文无盘面适用条件（通论／体例／取象表／起例取法） |  | 定行限度法 + 逐年行限度法；大限沿宫流转，依洞微百六限分配年数。 | 定行限度法 + 逐年行限度法；大限沿宫流转，依洞微百六限分配年数。 |
+| `xingming/guotian-jing` | `GR-04` | statement 中无可复原的 FactKey 取值 | 原文无盘面适用条件（通论／体例／取象表／起例取法） |  | 先天心法以二十八宿为经，以十一曜为用；尊莫尊于日月，美莫美于官福；贵贱论煞，贫富 | 先天心法以二十八宿为经，以十一曜为用；尊莫尊于日月，美莫美于官福；贵贱论煞，贫富论财；贤愚识其高卑，寿夭观其元气。 |
+| `xingming/guotian-jing` | `GR-05` | statement 中无可复原的 FactKey 取值 | 原文无盘面适用条件（通论／体例／取象表／起例取法） |  | 观星二十四秘法之看三主：身主 / 宫主 / 度主皆要得局，不泄气，不迟留伏逆于恶 | 观星二十四秘法之看三主：身主 / 宫主 / 度主皆要得局，不泄气，不迟留伏逆于恶地，喜朝元升殿垣局。 |
+| `xingming/guotian-jing` | `GUOTIANJING-004` | 同一 key 多个取值（OR 本可表达） | 原文无盘面适用条件（通论／体例／取象表／起例取法） |  | 原书载 24 节气太阳行度 + 太阴行度；**本规则仅作"古代观测体系"语义参考 | 原书载 24 节气太阳行度 + 太阴行度；**本规则仅作"古代观测体系"语义参考**，不作硬判断输入。 |
+| `xingming/guotian-jing` | `GUOTIANJING-005` | 可复原 1 个谓词对（现有语言本可表达） | 原文无盘面适用条件（通论／体例／取象表／起例取法） |  | 依出生时刻 + 太阳所躔之宿度 + 节气，按度推宫定命。 | 依出生时刻 + 太阳所躔之宿度 + 节气，按度推宫定命。 |
+| `xingming/guotian-jing` | `GUOTIANJING-006` | statement 中无可复原的 FactKey 取值 | 原文无盘面适用条件（通论／体例／取象表／起例取法） |  | 大限按宫流转，每宫年数依洞微百六限分配；年分诀 / 行度诀辅助计算。 | 大限按宫流转，每宫年数依洞微百六限分配；年分诀 / 行度诀辅助计算。 |
+| `xingming/guotian-jing` | `GUOTIANJING-007` | statement 中无可复原的 FactKey 取值 | 原文无盘面适用条件（通论／体例／取象表／起例取法） |  | 童限自婴幼期起按古歌分配各宫；现代仅作语义层。 | 童限自婴幼期起按古歌分配各宫；现代仅作语义层。 |
+| `xingming/guotian-jing` | `GUOTIANJING-011` | statement 中无可复原的 FactKey 取值 | 需要引擎未产出的事实 | 天刑/天印/天囚/天权（神煞层 FactKey 缺失） | 天刑（刑伤）/ 天印（官印）/ 天囚（拘禁）/ 天权（权柄）四星组合。 | 天刑（刑伤）/ 天印（官印）/ 天囚（拘禁）/ 天权（权柄）四星组合。 |
+| `xingming/guotian-jing` | `GUOTIANJING-012` | statement 中无可复原的 FactKey 取值 | 需要引擎未产出的事实 | 科名/科甲/文星/魁星/官星/印星/催官/禄神/喜神/爵星（神煞层 FactKe | 科名 / 科甲 / 文星 / 魁星 / 官星 / 印星 / 催官 / 禄神 /  | 科名 / 科甲 / 文星 / 魁星 / 官星 / 印星 / 催官 / 禄神 / 喜神 / 爵星 共 10 星，主功名利禄。 |
+| `xingming/guotian-jing` | `GUOTIANJING-013` | statement 中无可复原的 FactKey 取值 | 需要引擎未产出的事实 | 天经/地纬/天马/地驿/卦气/三元禄/职元/局主（神煞层 FactKey 缺失） | 天经 / 地纬 / 天马 / 地驿 / 卦气 / 三元禄 / 职元 / 局主 共 | 天经 / 地纬 / 天马 / 地驿 / 卦气 / 三元禄 / 职元 / 局主 共 8 星，构成命盘第二层主星。 |
+| `xingming/guotian-jing` | `GUOTIANJING-014` | statement 中无可复原的 FactKey 取值 | 需要引擎未产出的事实 | 斗标/注受/天乙/玉堂/文昌/天厨/岁殿/岁驾（神煞层 FactKey 缺失） | 斗标 / 注受 / 天乙 / 玉堂 / 文昌 / 天厨 / 岁殿 / 岁驾 共  | 斗标 / 注受 / 天乙 / 玉堂 / 文昌 / 天厨 / 岁殿 / 岁驾 共 8 星，主贵人扶持。 |
+| `xingming/guotian-jing` | `GUOTIANJING-015` | statement 中无可复原的 FactKey 取值 | 需要引擎未产出的事实 | 阳刃/唐符/国印/天雄/地雌/年符/月符/大耗/小耗/天耗/地耗（神煞层 Fac | 阳刃 / 唐符 / 国印 / 天雄 / 地雌 / 年符 / 月符 / 大耗小耗  | 阳刃 / 唐符 / 国印 / 天雄 / 地雌 / 年符 / 月符 / 大耗小耗 / 天耗地耗 共 9 星；阳刃 + 唐符 + 国印为权煞代表… |
+| `xingming/guotian-jing` | `GUOTIANJING-016` | statement 中无可复原的 FactKey 取值 | 需要引擎未产出的事实 | 月廉/月煞/值难/的杀/咸池/大煞（神煞层 FactKey 缺失） | 月廉 / 月煞 / 值难 / 的杀 / 咸池 / 大煞 共 6 星；多与"色 / | 月廉 / 月煞 / 值难 / 的杀 / 咸池 / 大煞 共 6 星；多与"色 / 难 / 杀"相关。 |
+| `xingming/guotian-jing` | `GUOTIANJING-017` | statement 中无可复原的 FactKey 取值 | 需要引擎未产出的事实 | 孤虚/孤辰/寡宿（神煞层 FactKey 缺失）；果老系空亡（qizheng 引 | 空亡 / 孤虚 / 孤辰 / 寡宿 共 4 煞。 | 空亡 / 孤虚 / 孤辰 / 寡宿 共 4 煞。 |
+| `xingming/guotian-jing` | `GUOTIANJING-018` | statement 中无可复原的 FactKey 取值 | 需要引擎未产出的事实 | 三刑/六害/劫杀/亡神/天罗/地网（神煞层 FactKey 缺失） | 三刑 / 六害 / 劫杀 / 亡神 / 天罗（戌亥）/ 地网（辰巳）共 6 煞群 | 三刑 / 六害 / 劫杀 / 亡神 / 天罗（戌亥）/ 地网（辰巳）共 6 煞群；多与"狱讼""博戏亡家""伤害"语相关。 |
+| `xingming/guotian-jing` | `GUOTIANJING-019` | statement 中无可复原的 FactKey 取值 | 原文无盘面适用条件（通论／体例／取象表／起例取法） |  | 五行长生例 + 天干化曜星例 + 天干吉凶星例；用于推干合长生 + 化曜。 | 五行长生例 + 天干化曜星例 + 天干吉凶星例；用于推干合长生 + 化曜。 |
+| `xingming/guotian-jing` | `GUOTIANJING-020` | statement 中无可复原的 FactKey 取值 | 原文无盘面适用条件（通论／体例／取象表／起例取法） |  | 五行配四时；春木旺 / 夏火旺 / 秋金旺 / 冬水旺 / 四季土旺；旺相休囚死 | 五行配四时；春木旺 / 夏火旺 / 秋金旺 / 冬水旺 / 四季土旺；旺相休囚死五态。 |
+| `xingming/guotian-jing` | `GUOTIANJING-026` | statement 中无可复原的 FactKey 取值 | 原文无盘面适用条件（通论／体例／取象表／起例取法） |  | 人生贤愚寿夭非今日为然；气禀之始终各异；以宫主 / 度主 / 身主三主论命；过犹 | 人生贤愚寿夭非今日为然；气禀之始终各异；以宫主 / 度主 / 身主三主论命；过犹不及泥在太拘。 |
+| `xingming/guotian-jing` | `GUOTIANJING-031` | statement 中无可复原的 FactKey 取值 | 原文无盘面适用条件（通论／体例／取象表／起例取法） |  | 百六限依命、相貌、福德、官禄…次序，年数分别为 15、10、11、15、8、7、 | 百六限依命、相貌、福德、官禄、迁移、疾厄、妻妾、奴仆、男女、田宅、兄弟、财帛次序，年数分别为 15、10、11、15、8、7、11、4.5、… |
+| `xingming/guotian-jing` | `GUOTIANJING-GR-01` | 同一 key 多个取值（OR 本可表达） | 原文无盘面适用条件（通论／体例／取象表／起例取法） |  | 12 宫配西法宫名 + 五行 + 中国分野（子土宝瓶、丑土磨羯…） | 12 宫配西法宫名 + 五行 + 中国分野（子土宝瓶、丑土磨羯、寅木人马…亥木双鱼）。 |
+| `xingming/guotian-jing` | `GUOTIANJING-GR-02` | statement 中无可复原的 FactKey 取值 | 需要引擎未产出的事实 | 神煞/虚星 FactKey（天禄、天暗、天刑、天印…），xingming 系统未 | 天禄主享禄，天暗主暗昧；一吉一凶相对。 | 天禄主享禄，天暗主暗昧；一吉一凶相对。 |
+| `xingming/guotian-jing` | `GUOTIANJING-GR-03` | statement 中无可复原的 FactKey 取值 | 原文无盘面适用条件（通论／体例／取象表／起例取法） |  | 钦天监校正授时过宫度图 + 逐年行度图 + 命度图；古书中具体图缺。 | 钦天监校正授时过宫度图 + 逐年行度图 + 命度图；古书中具体图缺。 |
+| `xingming/guotian-jing` | `GUOTIANJING-GR-04` | statement 中无可复原的 FactKey 取值 | 原文无盘面适用条件（通论／体例／取象表／起例取法） |  | 后天口诀以斗杓 / 卦气 / 唐符国印 / 天雄地雌为限度核心；常人命中皆有天雄 | 后天口诀以斗杓 / 卦气 / 唐符国印 / 天雄地雌为限度核心；常人命中皆有天雄地雌空亡的煞天地二耗。 |
+| `xingming/guotian-jing` | `GUOTIANJING-GR-05` | statement 中无可复原的 FactKey 取值 | 需要引擎未产出的事实 | 宫主/度主/身主的身份与强弱（由宫/宿五行派生，qizheng 引擎未产出；亦无 | 宫强而度弱者不美，度高而宫衰者不善，必须宫度二主皆强为尽美；身主尤为切要。 | 宫强而度弱者不美，度高而宫衰者不善，必须宫度二主皆强为尽美；身主尤为切要。 |
+| `xingming/xingming-suyuan` | `XINGMINGSUYU-004` | statement 中无可复原的 FactKey 取值 | 原文无盘面适用条件（通论／体例／取象表／起例取法） |  | 03 朝拱辅夹 | 03 朝拱辅夹 |
+| `xingming/xingming-suyuan` | `XINGMINGSUYU-005` | statement 中无可复原的 FactKey 取值 | 原文无盘面适用条件（通论／体例／取象表／起例取法） |  | 04 经纬夹拱 | 04 经纬夹拱 |
+| `xingming/xingming-suyuan` | `XINGMINGSUYU-006` | statement 中无可复原的 FactKey 取值 | 原文无盘面适用条件（通论／体例／取象表／起例取法） |  | 05 卦禄斗并 | 05 卦禄斗并 |
+| `xingming/xingming-suyuan` | `XINGMINGSUYU-007` | statement 中无可复原的 FactKey 取值 | 原文无盘面适用条件（通论／体例／取象表／起例取法） |  | 06 阴注阳受 | 06 阴注阳受 |
+| `xingming/xingming-suyuan` | `XINGMINGSUYU-008` | statement 中无可复原的 FactKey 取值 | 原文无盘面适用条件（通论／体例／取象表／起例取法） |  | 07 七政并旺 | 07 七政并旺 |
+| `xingming/xingming-suyuan` | `XINGMINGSUYU-009` | statement 中无可复原的 FactKey 取值 | 原文无盘面适用条件（通论／体例／取象表／起例取法） |  | 08 四主咸屯 | 08 四主咸屯 |
+| `xingming/xingming-suyuan` | `XINGMINGSUYU-010` | statement 中无可复原的 FactKey 取值 | 原文无盘面适用条件（通论／体例／取象表／起例取法） |  | 09 拱夹不起 | 09 拱夹不起 |
+| `xingming/xingming-suyuan` | `XINGMINGSUYU-015` | statement 中无可复原的 FactKey 取值 | 原文无盘面适用条件（通论／体例／取象表／起例取法） |  | 05 一星满用 | 05 一星满用 |
+| `xingming/xingming-suyuan` | `XINGMINGSUYU-016` | statement 中无可复原的 FactKey 取值 | 原文无盘面适用条件（通论／体例／取象表／起例取法） |  | 06 恩主随身 | 06 恩主随身 |
+| `xingming/xingming-suyuan` | `XINGMINGSUYU-017` | statement 中无可复原的 FactKey 取值 | 原文无盘面适用条件（通论／体例／取象表／起例取法） |  | 07 官魁化曜 | 07 官魁化曜 |
+| `xingming/xingming-suyuan` | `XINGMINGSUYU-022` | statement 中无可复原的 FactKey 取值 | 原文无盘面适用条件（通论／体例／取象表／起例取法） |  | 05 时令决疑 | 05 时令决疑 |
+| `xingming/xingming-suyuan` | `XINGMINGSUYU-026` | statement 中无可复原的 FactKey 取值 | 原文无盘面适用条件（通论／体例／取象表／起例取法） |  | 04 天耗地耗 | 04 天耗地耗 |
+| `xingming/xingming-suyuan` | `XINGMINGSUYU-028` | statement 中无可复原的 FactKey 取值 | 原文无盘面适用条件（通论／体例／取象表／起例取法） |  | 06 太岁填实 | 06 太岁填实 |
+| `xingming/xingming-suyuan` | `XINGMINGSUYU-031` | statement 中无可复原的 FactKey 取值 | 原文无盘面适用条件（通论／体例／取象表／起例取法） |  | 03 行限交宫过度 | 03 行限交宫过度 |
+| `xingming/xingming-suyuan` | `XINGMINGSUYU-033` | statement 中无可复原的 FactKey 取值 | 原文无盘面适用条件（通论／体例／取象表／起例取法） |  | 05 限主病再延 | 05 限主病再延 |
+| `xingming/xingming-suyuan` | `XINGMINGSUYU-034` | statement 中无可复原的 FactKey 取值 | 原文无盘面适用条件（通论／体例／取象表／起例取法） |  | 06 衝刑壓逼 | 06 衝刑壓逼 |
+| `xingming/xingming-suyuan` | `XINGMINGSUYU-037` | statement 中无可复原的 FactKey 取值 | 原文无盘面适用条件（通论／体例／取象表／起例取法） |  | 03 五星先天 14 等口诀 | 03 五星先天 14 等口诀 |
+| `xingming/xingming-suyuan` | `XINGMINGSUYU-038` | statement 中无可复原的 FactKey 取值 | 原文无盘面适用条件（通论／体例／取象表／起例取法） |  | 04 妇人产亡 | 04 妇人产亡 |
+| `xingming/xingming-suyuan` | `XINGMINGSUYU-039` | statement 中无可复原的 FactKey 取值 | 原文无盘面适用条件（通论／体例／取象表／起例取法） |  | 05 鼓盆之嘆 | 05 鼓盆之嘆 |
+| `xingming/xingming-suyuan` | `XINGMINGSUYU-047` | statement 中无可复原的 FactKey 取值 | 原文无盘面适用条件（通论／体例／取象表／起例取法） |  | 04 妇人产亡 / 三嫁 / 师尼 | 04 妇人产亡 / 三嫁 / 师尼 |
+| `xingming/xingming-suyuan` | `XINGMINGSUYU-048` | statement 中无可复原的 FactKey 取值 | 原文无盘面适用条件（通论／体例／取象表／起例取法） |  | 05 共命贫富寿夭不同 | 05 共命贫富寿夭不同 |
+| `xingming/xingming-suyuan` | `XINGMINGSUYU-XR-01` | statement 中无可复原的 FactKey 取值 | 原文无盘面适用条件（通论／体例／取象表／起例取法） |  | 02 二星合璧 | 02 二星合璧 |
+| `xingming/xingming-suyuan` | `XINGMINGSUYU-XR-02` | statement 中无可复原的 FactKey 取值 | 原文无盘面适用条件（通论／体例／取象表／起例取法） |  | 02 三主互参 | 02 三主互参 |
+| `xingming/xingming-suyuan` | `XINGMINGSUYU-XR-03` | statement 中无可复原的 FactKey 取值 | 原文无盘面适用条件（通论／体例／取象表／起例取法） |  | 02 三冬之木遇水寒 | 02 三冬之木遇水寒 |
+| `xingming/xingming-suyuan` | `XINGMINGSUYU-XR-04` | statement 中无可复原的 FactKey 取值 | 原文无盘面适用条件（通论／体例／取象表／起例取法） |  | 02 天雄阳刃在命 | 02 天雄阳刃在命 |
+| `xingming/xingming-suyuan` | `XINGMINGSUYU-XR-05` | statement 中无可复原的 FactKey 取值 | 原文无盘面适用条件（通论／体例／取象表／起例取法） |  | 02 洞微大限行限 | 02 洞微大限行限 |
+| `xingming/xingming-suyuan` | `XINGMINGSUYU-XR-06` | statement 中无可复原的 FactKey 取值 | 原文无盘面适用条件（通论／体例／取象表／起例取法） |  | 02 妇人陶到木躔 | 02 妇人陶到木躔 |
+| `xingming/xingming-suyuan` | `XINGMINGSUYU-XR-07` | statement 中无可复原的 FactKey 取值 | 原文无盘面适用条件（通论／体例／取象表／起例取法） |  | 02 与果老星宗互参原则 | 02 与果老星宗互参原则 |
+| `xingming/xingming-suyuan` | `XINGMINGSUYU-XR-08` | statement 中无可复原的 FactKey 取值 | 原文无盘面适用条件（通论／体例／取象表／起例取法） |  | 02 卷四前篇寿夭案例 | 02 卷四前篇寿夭案例 |
+| `xingming/xingming-suyuan` | `XR-01` | statement 中无可复原的 FactKey 取值 | 原文无盘面适用条件（通论／体例／取象表／起例取法） |  | 01 五曜连珠 | 01 五曜连珠 |
+| `xingming/xingming-suyuan` | `XR-04` | statement 中无可复原的 FactKey 取值 | 原文无盘面适用条件（通论／体例／取象表／起例取法） |  | 01 斗杓卦气唐符国印 | 01 斗杓卦气唐符国印 |
+| `xingming/xingming-suyuan` | `XR-05` | statement 中无可复原的 FactKey 取值 | 原文无盘面适用条件（通论／体例／取象表／起例取法） |  | 01 量天尺定坐宫 | 01 量天尺定坐宫 |
+| `xingming/xingming-suyuan` | `XR-06` | statement 中无可复原的 FactKey 取值 | 原文无盘面适用条件（通论／体例／取象表／起例取法） |  | 01 妇命以财福为重 | 01 妇命以财福为重 |
+| `xingming/xingming-suyuan` | `XR-07` | statement 中无可复原的 FactKey 取值 | 原文无盘面适用条件（通论／体例／取象表／起例取法） |  | 01 化气从天官、正气从果老 | 01 化气从天官、正气从果老 |
+| `xingming/xingming-suyuan` | `XR-08` | statement 中无可复原的 FactKey 取值 | 原文无盘面适用条件（通论／体例／取象表／起例取法） |  | 01 卷二·后天口诀全段 | 01 卷二·后天口诀全段 |
+| `xingming/xingxue-dacheng` | `XXDC-R001` | statement 中无可复原的 FactKey 取值 | 原文无盘面适用条件（通论／体例／取象表／起例取法） |  | 先定十二宫，再分天盘、地盘、人盘；人盘重四柱填实与空虚。 | 先定十二宫，再分天盘、地盘、人盘；人盘重四柱填实与空虚。 |
+| `xingming/xingxue-dacheng` | `XXDC-R005` | statement 中无可复原的 FactKey 取值 | 需要引擎未产出的事实 | 身主/命主（及福禄恩官田财六主）身份 + 空实/强弱/夹拱/冲驀 判定（qizh | 先以身命二主落宫，按空实、强弱、夹拱、冲驀判人品出处高下，再看福禄恩官田财。 | 先以身命二主落宫，按空实、强弱、夹拱、冲驀判人品出处高下，再看福禄恩官田财。 |
+| `xingming/xingxue-dacheng` | `XXDC-R006` | statement 中无可复原的 FactKey 取值 | 原文无盘面适用条件（通论／体例／取象表／起例取法） |  | 命为主、财为养命源、妻妾对冲命宫、疾厄迁移官禄福德相貌各有次序。 | 命为主、财为养命源、妻妾对冲命宫、疾厄迁移官禄福德相貌各有次序。 |
+| `xingming/xingxue-dacheng` | `XXDC-R008` | statement 中无可复原的 FactKey 取值 | 需要引擎未产出的事实 | 十一曜运行状态 迟/留/伏/逆（qizheng 引擎未产出） | 迟、留、伏、逆分别影响有用星和煞星力量；不可用静态星度替代动态状态。 | 迟、留、伏、逆分别影响有用星和煞星力量；不可用静态星度替代动态状态。 |
+
+## yili
+
+| book | rule_id | 分类 | 台账理由 | 缺的事实 | 原文依据 | statement |
+|---|---|---|---|---|---|---|
+| `divination/huangji-jingshi` | `HR-04` | statement 中无可复原的 FactKey 取值 | 原文无盘面适用条件（通论／体例／取象表／起例取法） |  | 八卦先天数：乾 1、兑 2、离 3、震 4、巽 5、坎 6、艮 7、坤 8。 | 八卦先天数：乾 1、兑 2、离 3、震 4、巽 5、坎 6、艮 7、坤 8。 |
+| `divination/huangji-jingshi` | `HR-05` | statement 中无可复原的 FactKey 取值 | 原文无盘面适用条件（通论／体例／取象表／起例取法） |  | 以物观物则得理通，以我观物则有情累；圣人之观物在反观。 | 以物观物则得理通，以我观物则有情累；圣人之观物在反观。 |
+| `divination/huangji-jingshi` | `HR-06` | statement 中无可复原的 FactKey 取值 | 原文无盘面适用条件（通论／体例／取象表／起例取法） |  | 天声 10 类配地音 12 类、平上去入 4 调 × 开发收闭 4 等；声音之数 | 天声 10 类配地音 12 类、平上去入 4 调 × 开发收闭 4 等；声音之数皆受元会运世数管摄。 |
+| `divination/huangji-jingshi` | `HR-07` | statement 中无可复原的 FactKey 取值 | 原文无盘面适用条件（通论／体例／取象表／起例取法） |  | 万物分动 / 植 / 飞 / 走；总数受元会运世数管摄；动植之数 12 万 8  | 万物分动 / 植 / 飞 / 走；总数受元会运世数管摄；动植之数 12 万 8 千有奇。 |
+| `divination/huangji-jingshi` | `HR-09` | statement 中无可复原的 FactKey 取值 | pack 元规则／调用条件，不是盘面条件 |  | 元会运世年甲子表 / 卦气配年表 / 声音律吕表，凡查询事实层运算，必须 too | 元会运世年甲子表 / 卦气配年表 / 声音律吕表，凡查询事实层运算，必须 `tool.divination.huangji`，**严禁 LL… |
+| `divination/huangji-jingshi` | `HUANGJIJINGS-010` | statement 中无可复原的 FactKey 取值 | 原文无盘面适用条件（通论／体例／取象表／起例取法） |  | 先天八卦方位（伏羲）— 乾南坤北、离东坎西；后天八卦方位（文王）— 离南坎北、震 | 先天八卦方位（伏羲）— 乾南坤北、离东坎西；后天八卦方位（文王）— 离南坎北、震东兑西。 |
+| `divination/huangji-jingshi` | `HUANGJIJINGS-014` | statement 中无可复原的 FactKey 取值 | 原文无盘面适用条件（通论／体例／取象表／起例取法） |  | 乾坤为体、坎离为用；体不立则用不行，用不行则体不显。 | 乾坤为体、坎离为用；体不立则用不行，用不行则体不显。 |
+| `divination/huangji-jingshi` | `HUANGJIJINGS-HR-04` | statement 中无可复原的 FactKey 取值 | 原文无盘面适用条件（通论／体例／取象表／起例取法） |  | 每加一爻卦数倍增；太极生两仪→四象→八卦→十六→三十二→六十四。 | 每加一爻卦数倍增；太极生两仪→四象→八卦→十六→三十二→六十四。 |
+| `divination/huangji-jingshi` | `HUANGJIJINGS-HR-05` | statement 中无可复原的 FactKey 取值 | 原文无盘面适用条件（通论／体例／取象表／起例取法） |  | 天地之心可知，万化从心起；心为太极，万象皆心之发。 | 天地之心可知，万化从心起；心为太极，万象皆心之发。 |
+| `divination/huangji-jingshi` | `HUANGJIJINGS-HR-06` | statement 中无可复原的 FactKey 取值 | 原文无盘面适用条件（通论／体例／取象表／起例取法） |  | 天声唱、地音和；唱和成则音律备。 | 天声唱、地音和；唱和成则音律备。 |
+| `divination/huangji-jingshi` | `HUANGJIJINGS-HR-09` | statement 中无可复原的 FactKey 取值 | 原文无盘面适用条件（通论／体例／取象表／起例取法） |  | 邵雍以唐尧元年甲辰（公元前 2357 年）为经世表元始首甲；后续年甲子均依此推。 | 邵雍以唐尧元年甲辰（公元前 2357 年）为经世表元始首甲；后续年甲子均依此推。 |
+| `divination/zhouyi-zhezhong` | `ZHOUYIZHEZHO-004` | statement 中无可复原的 FactKey 取值 | 需要引擎未产出的事实 | 爻之阴阳（刚中／柔中） | 得中又当位（如九五、六二）为"中正"，最贵之爻；多主大吉、君子之道。 | 得中又当位（如九五、六二）为"中正"，最贵之爻；多主大吉、君子之道。 |
+| `divination/zhouyi-zhezhong` | `ZHOUYIZHEZHO-005` | statement 中无可复原的 FactKey 取值 | 需要引擎未产出的事实 | 相应两爻的阴阳属性（阴阳相应／同性相应）；且无「应位」事实 | 初与四、二与五、三与上相应；阴阳相应为有应（吉象）、同性相应为无应（孤立）。 | 初与四、二与五、三与上相应；阴阳相应为有应（吉象）、同性相应为无应（孤立）。 |
+| `divination/zhouyi-zhezhong` | `ZHOUYIZHEZHO-006` | statement 中无可复原的 FactKey 取值 | 需要引擎未产出的事实 | 相邻两爻的阴阳属性（阴阳相比为亲／同性为敌） | 相邻两爻为比；阴阳相比为亲、同性为敌。比关系次于应。 | 相邻两爻为比；阴阳相比为亲、同性为敌。比关系次于应。 |
+| `divination/zhouyi-zhezhong` | `ZHOUYIZHEZHO-007` | statement 中无可复原的 FactKey 取值 | 需要引擎未产出的事实 | 卦主（成卦之主／主卦之主） | 一卦之主爻多为五爻（君位）；或以"成卦之主"（一阴一阳独成卦义者）；或以"主卦之 | 一卦之主爻多为五爻（君位）；或以"成卦之主"（一阴一阳独成卦义者）；或以"主卦之主"（位最尊德最大者）。 |
+| `divination/zhouyi-zhezhong` | `ZHOUYIZHEZHO-008` | statement 中无可复原的 FactKey 取值 | 原文无盘面适用条件（通论／体例／取象表／起例取法） |  | 易爻随卦时而变义；同一爻位在不同卦中义不同（如九三在乾为君子终日乾乾、在坤无）。 | 易爻随卦时而变义；同一爻位在不同卦中义不同（如九三在乾为君子终日乾乾、在坤无）。 |
+| `divination/zhouyi-zhezhong` | `ZHOUYIZHEZHO-011` | statement 中无可复原的 FactKey 取值 | 原文无盘面适用条件（通论／体例／取象表／起例取法） |  | 64 卦两两为反对（综卦）；反对之卦义相反相成（如屯蒙、需讼、师比）。 | 64 卦两两为反对（综卦）；反对之卦义相反相成（如屯蒙、需讼、师比）。 |
+| `divination/zhouyi-zhezhong` | `ZHOUYIZHEZHO-018` | statement 中无可复原的 FactKey 取值 | 原文无盘面适用条件（通论／体例／取象表／起例取法） |  | 六爻分三才；初二为地、三四为人、五上为天。 | 六爻分三才；初二为地、三四为人、五上为天。 |
+| `divination/zhouyi-zhezhong` | `ZHOUYIZHEZHO-019` | statement 中无可复原的 FactKey 取值 | 原文无盘面适用条件（通论／体例／取象表／起例取法） |  | 吉凶生大业；悔吝者言乎其小疵；动爻之吉凶悔吝皆由象生。 | 吉凶生大业；悔吝者言乎其小疵；动爻之吉凶悔吝皆由象生。 |
+| `divination/zhouyi-zhezhong` | `ZHOUYIZHEZHO-024` | statement 中无可复原的 FactKey 取值 | 原文无盘面适用条件（通论／体例／取象表／起例取法） |  | 50 根蓍草、去 1 不用、余 49 根、分二挂一揲四归奇，共 18 变成一卦。 | 50 根蓍草、去 1 不用、余 49 根、分二挂一揲四归奇，共 18 变成一卦。 |
+| `divination/zhouyi-zhezhong` | `ZHOUYIZHEZHO-026` | statement 中无可复原的 FactKey 取值 | 需要引擎未产出的事实 | 变爻数目与变爻位、卦名（彖辞／爻辞所指之卦） | 六爻全静占本卦彖辞 / 卦辞；一爻变占本卦变爻爻辞；二爻变占本卦二变爻、上爻为主 | 六爻全静占本卦彖辞 / 卦辞；一爻变占本卦变爻爻辞；二爻变占本卦二变爻、上爻为主；三爻变占本卦及变卦彖辞、本卦为主；四爻变占变卦二不变爻、下… |
+| `divination/zhouyi-zhezhong` | `ZHOUYIZHEZHO-027` | statement 中无可复原的 FactKey 取值 | 原文无盘面适用条件（通论／体例／取象表／起例取法） |  | 易者寡过之书；占断为辅，修身为本；君子知幾不待占而后行。 | 易者寡过之书；占断为辅，修身为本；君子知幾不待占而后行。 |
+| `divination/zhouyi-zhezhong` | `ZHOUYIZHEZHO-031` | statement 中无可复原的 FactKey 取值 | 原文有条件但口径未定或明确拒绝单一条件 |  | 解卦兼综时位 / 才德 / 应比 / 中正 / 卦主等多角度；不可执一以蔽义。 | 解卦兼综时位 / 才德 / 应比 / 中正 / 卦主等多角度；不可执一以蔽义。 |
+| `divination/zhouyi-zhezhong` | `ZHOUYIZHEZHO-ZZR-02` | statement 中无可复原的 FactKey 取值 | 原文无盘面适用条件（通论／体例／取象表／起例取法） |  | 上下两卦之德合为一卦德（如乾下乾上为健中健、坎下离上为水火既济）。 | 上下两卦之德合为一卦德（如乾下乾上为健中健、坎下离上为水火既济）。 |
+| `divination/zhouyi-zhezhong` | `ZHOUYIZHEZHO-ZZR-03` | statement 中无可复原的 FactKey 取值 | 原文无盘面适用条件（通论／体例／取象表／起例取法） |  | 八卦各有动物 / 身体 / 家人 / 方位 / 季节等多重类象（详卷十六）。 | 八卦各有动物 / 身体 / 家人 / 方位 / 季节等多重类象（详卷十六）。 |
+| `divination/zhouyi-zhezhong` | `ZHOUYIZHEZHO-ZZR-05` | statement 中无可复原的 FactKey 取值 | 原文无盘面适用条件（通论／体例／取象表／起例取法） |  | 杂卦传以两两反对论卦义之异同（乾刚坤柔、比乐师忧）。 | 杂卦传以两两反对论卦义之异同（乾刚坤柔、比乐师忧）。 |
+| `divination/zhouyi-zhezhong` | `ZHOUYIZHEZHO-ZZR-06` | statement 中无可复原的 FactKey 取值 | 原文无盘面适用条件（通论／体例／取象表／起例取法） |  | 太极一、两仪二、四象四、八卦八、十六、三十二、六十四；每加一爻倍增。 | 太极一、两仪二、四象四、八卦八、十六、三十二、六十四；每加一爻倍增。 |
+| `divination/zhouyi-zhezhong` | `ZHOUYIZHEZHO-ZZR-07` | statement 中无可复原的 FactKey 取值 | 原文无盘面适用条件（通论／体例／取象表／起例取法） |  | 程颐重义理（伊川易传）、朱熹兼象数与卜筮（本义）；本书以朱为正、程为佐。 | 程颐重义理（伊川易传）、朱熹兼象数与卜筮（本义）；本书以朱为正、程为佐。 |
+| `divination/zhouyi-zhezhong` | `ZZR-01` | statement 中无可复原的 FactKey 取值 | 需要引擎未产出的事实 | 爻之阴阳（阳爻／阴爻） | 阳爻居阳位（初三五）、阴爻居阴位（二四上）为"当位"；当位则正，多吉。 | 阳爻居阳位（初三五）、阴爻居阴位（二四上）为"当位"；当位则正，多吉。 |
+| `divination/zhouyi-zhezhong` | `ZZR-03` | statement 中无可复原的 FactKey 取值 | 原文无盘面适用条件（通论／体例／取象表／起例取法） |  | 乾健、坤顺、震动、巽入、坎陷、离丽、艮止、兑悦；为八卦本德。 | 乾健、坤顺、震动、巽入、坎陷、离丽、艮止、兑悦；为八卦本德。 |
+| `divination/zhouyi-zhezhong` | `ZZR-04` | statement 中无可复原的 FactKey 取值 | 原文无盘面适用条件（通论／体例／取象表／起例取法） |  | 易有太极，是生两仪、两仪生四象、四象生八卦；为易理生成之总框架。 | 易有太极，是生两仪、两仪生四象、四象生八卦；为易理生成之总框架。 |
+| `divination/zhouyi-zhezhong` | `ZZR-06` | statement 中无可复原的 FactKey 取值 | 原文无盘面适用条件（通论／体例／取象表／起例取法） |  | 河图天数 1+3+5+7+9 = 25、地数 2+4+6+8+10 = 30、合 | 河图天数 1+3+5+7+9 = 25、地数 2+4+6+8+10 = 30、合 55；洛书纵横皆 15。 |
+| `divination/zhouyi-zhezhong` | `ZZR-07` | statement 中无可复原的 FactKey 取值 | 原文无盘面适用条件（通论／体例／取象表／起例取法） |  | 本书解卦四层：先程传（义理）、次本义（义理 + 象数兼）、次集说（诸家）、终案语 | 本书解卦四层：先程传（义理）、次本义（义理 + 象数兼）、次集说（诸家）、终案语（折中）；学者依此层次研读。 |
+
+## ziwei
+
+| book | rule_id | 分类 | 台账理由 | 缺的事实 | 原文依据 | statement |
+|---|---|---|---|---|---|---|
+| `ziwei/feixing-ziwei-doushu-yuanzhi` | `FEIXINGZIWEI-003` | 跨 key 多事实（需 AND） | pack 元规则／调用条件，不是盘面条件 |  | 一切占课和观察须先有身命/盘面定位；没有命身宫、十二宫、星曜、限运等事实，不应使 | 本书称斗数“先布出身命垣”，说明一切占课和观察须先有身命/盘面定位；没有命身宫、十二宫、星曜、限运等事实，不应使用本 pack 下判断。 |
+| `ziwei/feixing-ziwei-doushu-yuanzhi` | `FEIXINGZIWEI-010` | statement 中无可复原的 FactKey 取值 | pack 元规则／调用条件，不是盘面条件 |  | 本书尝试把斗数用于占课：一物一事一地一人均有身命，推演一课即该事整体局势，不必另 | 本书尝试把斗数用于占课：一物一事一地一人均有身命，推演一课即该事整体局势，不必另分主客用神。 |
+| `ziwei/feixing-ziwei-doushu-yuanzhi` | `FEIXINGZIWEI-012` | statement 中无可复原的 FactKey 取值 | 原文无盘面适用条件（通论／体例／取象表／起例取法） |  | 本书观察村镇气脉时先看村头庙宇，庙宇坍塌/重新等被作为村中人事兴衰的旁证，并提到 | 本书观察村镇气脉时先看村头庙宇，庙宇坍塌/重新等被作为村中人事兴衰的旁证，并提到《阳宅爱众篇》诸庙宇神煞表。 |
+| `ziwei/feixing-ziwei-doushu-yuanzhi` | `FEIXINGZIWEI-013` | statement 中无可复原的 FactKey 取值 | pack 元规则／调用条件，不是盘面条件 |  | 谈命需因人、语言、心理、社会语境而施说，并区分不敢说、不能说、不可说、不便说、不 | 本书强调谈命需因人、语言、心理、社会语境而施说，并区分不敢说、不能说、不可说、不便说、不得不说等情形。用于 `mingli-master` … |
+| `ziwei/feixing-ziwei-doushu-yuanzhi` | `FEIXINGZIWEI-014` | statement 中无可复原的 FactKey 取值 | pack 元规则／调用条件，不是盘面条件 |  | 书末自称十二宫活用假借等法为新发明且由考验得来；因此这些规则须作为本书经验法，不 | 书末自称十二宫活用假借等法为“新发明”且由考验得来；因此这些规则须作为本书经验法，不得反向改写《紫微斗数全书》《太微赋》的基础义理。 |
+| `ziwei/feixing-ziwei-doushu-yuanzhi` | `FEIXINGZIWEI-FZ` | statement 中无可复原的 FactKey 取值 | pack 元规则／调用条件，不是盘面条件 |  | 本书观测之道…只能作为对既有盘面事实的旁证和解释框架，不能替代排盘、历法、事实层 | 本书“观测之道”把天气变化、人事起伏、富贵剥复视为可观察对象；用于分析时只能作为对既有盘面事实的旁证和解释框架，不能替代排盘、历法、事实层。 |
+| `ziwei/taiwei-fu` | `TAIWEIFU-005` | statement 中无可复原的 FactKey 取值 | 原文无盘面适用条件（通论／体例／取象表／起例取法） |  | 生逢败地发也虚花；绝处逢生，生花不败 | 生逢败地发也虚花；绝处逢生，生花不败。 |
+| `ziwei/taiwei-fu` | `TAIWEIFU-008` | statement 中无可复原的 FactKey 取值 | 需要引擎未产出的事实 | 吉星/凶星分类（诸星吉／诸星凶）；羊铃与杀破的关联关系 | 七杀破军专依羊铃之虐；诸星吉，逢凶也吉；诸星凶，逢凶也凶 | 七杀破军专依羊铃之虐；诸星吉，逢凶也吉；诸星凶，逢凶也凶。 |
+| `ziwei/taiwei-fu` | `TAIWEIFU-017` | statement 中无可复原的 FactKey 取值 | 需要引擎未产出的事实 | 十二长生位（绝地/生乡） | 杀居绝地，天年夭似颜回；贪坐生乡，寿考永如彭祖 | 杀居绝地，天年夭似颜回；贪坐生乡，寿考永如彭祖。 |
+| `ziwei/taiwei-fu` | `TAIWEIFU-021` | statement 中无可复原的 FactKey 取值 | 未复核 |  | 帝星动则列宿奔驰；贪守空而财源不聚 | 土星苟居其垣若可移动；金星专司财库最怕空亡；帝星动则列宿奔驰；贪守空而财源不聚。 |
+| `ziwei/taiwei-fu` | `TR` | statement 中无可复原的 FactKey 取值 | 原文无盘面适用条件（通论／体例／取象表／起例取法） |  | 斗数至玄至微，理旨难明；寿夭贤愚、富贵贫贱，不可一概论议 | 斗数至玄至微，理旨难明；寿夭贤愚、富贵贫贱，不可一概论议。 |
+| `ziwei/ziwei-doushu-quanshu` | `ZIWEIDOUSHUQ-045` | statement 中无可复原的 FactKey 取值 | 原文无盘面适用条件（通论／体例／取象表／起例取法） |  | 05 富贵贫贱格局 | 05 富贵贫贱格局 |
+| `ziwei/ziwei-doushu-quanshu` | `ZIWEIDOUSHUQ-048` | statement 中无可复原的 FactKey 取值 | 需要引擎未产出的事实 | 格局名（日月反背/命无正曜/命坐空亡/羊陀夹忌/火铃夹命）；夹宫关系 | 贫贱局主要包括：日月反背 / 命无正曜 / 命坐空亡 / 羊陀夹忌 / 火铃夹命 | 贫贱局主要包括：日月反背 / 命无正曜 / 命坐空亡 / 羊陀夹忌 / 火铃夹命 等；古书断为终身贫贱。 |
+| `ziwei/ziwei-doushu-quanshu` | `ZIWEIDOUSHUQ-049` | statement 中无可复原的 FactKey 取值 | 需要引擎未产出的事实 | 格局名（桃花犯主/贪武同行/廉贞会贪狼） | 杂局主要包括：桃花犯主 / 贪武同行 / 廉贞会贪狼 等；吉凶兼备需细判 | 杂局主要包括：桃花犯主 / 贪武同行 / 廉贞会贪狼 等；吉凶兼备需细判。 |
+| `ziwei/ziwei-doushu-quanshu` | `ZIWEIDOUSHUQ-050` | statement 中无可复原的 FactKey 取值 | 原文无盘面适用条件（通论／体例／取象表／起例取法） |  | 紫微斗数星曜在 12 地支位有六等亮度：庙最旺、旺、利、平、闲、陷最弱 | 紫微斗数星曜在 12 地支位有六等亮度：庙最旺、旺、利、平、闲、陷最弱；庙旺主吉力大，落陷主吉减凶增。 |
+| `ziwei/ziwei-doushu-quanshu` | `ZIWEIDOUSHUQ-057` | statement 中无可复原的 FactKey 取值 | 原文无盘面适用条件（通论／体例／取象表／起例取法） |  | 本规则仅作总纲索引，详细 144 条留待 D2 续抽 | 大限或小限星辰过 12 宫各遇 12 地支共 144 条所忌诀；本规则仅作总纲索引，详细 144 条留待 D2 续抽。 |
+| `ziwei/ziwei-doushu-quanshu` | `ZIWEIDOUSHUQ-058` | statement 中无可复原的 FactKey 取值 | 原文无盘面适用条件（通论／体例／取象表／起例取法） |  | 紫微斗数承认阴德可改命延寿；行善积德可化解凶限；此为道德修养层，非命定 | 紫微斗数承认阴德可改命延寿；行善积德可化解凶限；此为道德修养层，非命定。 |
+| `ziwei/ziwei-doushu-quanshu` | `ZIWEIDOUSHUQ-059` | statement 中无可复原的 FactKey 取值 | 原文无盘面适用条件（通论／体例／取象表／起例取法） |  | 07 男女命同异 | 07 男女命同异 |
+| `ziwei/ziwei-doushu-quanshu` | `ZIWEIDOUSHUQ-062` | statement 中无可复原的 FactKey 取值 | 原文无盘面适用条件（通论／体例／取象表／起例取法） |  | 08 小儿命与夭寿 | 08 小儿命与夭寿 |
+| `ziwei/ziwei-doushu-quanshu` | `ZIWEIDOUSHUQ-066` | statement 中无可复原的 FactKey 取值 | 原文无盘面适用条件（通论／体例／取象表／起例取法） |  | 09 论诸星同垣富贵贫贱夭寿（强 reframe） | 09 论诸星同垣富贵贫贱夭寿（强 reframe） |
+| `ziwei/ziwei-doushu-quanshu` | `ZIWEIDOUSHUQ-069` | statement 中无可复原的 FactKey 取值 | 需要引擎未产出的事实 | 格局名/入格判定；星曜亮度（庙旺） | 凡命局必先看是否入格：入吉格则富贵可期，入凶格则需化解，不入格则平常 | 凡命局必先看是否入格：入吉格则富贵可期，入凶格则需化解，不入格则平常。 |
+| `ziwei/ziwei-doushu-quanshu` | `ZIWEIDOUSHUQ-ZW-04` | 跨 key 多事实（需 AND） | 未复核 |  | 兄弟宫主兄弟姐妹与同辈关系 | 兄弟宫主兄弟姐妹与同辈关系；庙旺吉星主兄弟和睦多助；落陷凶煞主兄弟少缘。 |
+| `ziwei/ziwei-doushu-quanshu` | `ZIWEIDOUSHUQ-ZW-07` | statement 中无可复原的 FactKey 取值 | 需要引擎未产出的事实 | 性别（女命/男命） | 女命骨髓赋专论女命吉凶…本赋仅作命书历史研究展示 | 女命骨髓赋专论女命吉凶，含"刑夫克子煞"、"伤夫煞"等大量父权时代偏见断语；本赋仅作命书历史研究展示。 |
+| `ziwei/ziwei-doushu-quanshu` | `ZIWEIDOUSHUQ-ZW-09` | statement 中无可复原的 FactKey 取值 | 需要引擎未产出的事实 | 命格/格局分级；星曜亮度；三方四正会照关系 | 紫微斗数命格有高下之分：上格主大富大贵、中格主小富小贵、下格主温饱、最下格主贫贱 | 紫微斗数命格有高下之分：上格主大富大贵、中格主小富小贵、下格主温饱、最下格主贫贱夭折。 |
+| `ziwei/ziwei-doushu-quanshu` | `ZW` | 跨 key 多事实（需 AND） | 原文无盘面适用条件（通论／体例／取象表／起例取法） |  | 斗数以命、兄弟、妻妾、子女…为十二宫次序 | 斗数以命、兄弟、妻妾、子女、财帛、疾厄、迁移、奴仆、官禄、田宅、福德、父母为十二宫次序。 |
+| `ziwei/ziwei-doushu-quanshu` | `ZW-04` | 跨 key 多事实（需 AND） | 需要引擎未产出的事实 | 星曜亮度（庙旺利平闲陷）；三方四正会照关系 | 命宫主一生总论：星曜性质 + 庙旺利平闲陷 + 三方四正会照吉煞 + 四化加临； | 命宫主一生总论：星曜性质 + 庙旺利平闲陷 + 三方四正会照吉煞 + 四化加临；命宫为根本，必须与身宫合参。 |
+| `ziwei/ziwei-doushu-quanshu` | `ZW-05` | 跨 key 多事实（需 AND） | 需要引擎未产出的事实 | 格局名（日月并明/月朗天门/武贪格/火贪格/铃贪格/双禄交流/财禄夹马）；三方四 | 富局主要包括：日月并明 / 月朗天门 / 武贪格 / 火贪格 / 铃贪格 / 双 | 富局主要包括：日月并明 / 月朗天门 / 武贪格 / 火贪格 / 铃贪格 / 双禄交流 / 财禄夹马等；命宫三方四正会成富局。 |
+| `ziwei/ziwei-doushu-quanshu` | `ZW-06` | statement 中无可复原的 FactKey 取值 | 原文无盘面适用条件（通论／体例／取象表／起例取法） |  | 大限十年一段：水二局自二岁起、木三局自三岁起…；男阳/女阳顺行，男阴/女阴逆行 | 大限十年一段：水二局自二岁起、木三局自三岁起、金四局自四岁起、土五局自五岁起、火六局自六岁起；男阳/女阳顺行，男阴/女阴逆行。 |
+| `ziwei/ziwei-doushu-quanshu` | `ZW-08` | statement 中无可复原的 FactKey 取值 | 需要引擎未产出的事实 | 岁前/将前诸星（博士/力士/青龙/将军/大耗/死符/病符/官府/奏书/白虎/太岁 | 小儿命论关煞与生时吉凶；关煞重者古书称难养；生时不确则命局误 | 小儿命论关煞与生时吉凶；关煞重者古书称"难养"；生时不确则命局误。 |
+| `ziwei/ziwei-doushu-quanshu` | `ZW-09` | statement 中无可复原的 FactKey 取值 | 需要引擎未产出的事实 | 三方四正会照关系；星曜亮度（庙旺利平闲陷） | 紫微斗数综合断法以诸星同垣为核心：本宫星 + 三方四正会照星 + 四化加临 +  | 紫微斗数综合断法以"诸星同垣"为核心：本宫星 + 三方四正会照星 + 四化加临 + 庙旺利平闲陷综合判富贵贫贱夭寿。 |
+

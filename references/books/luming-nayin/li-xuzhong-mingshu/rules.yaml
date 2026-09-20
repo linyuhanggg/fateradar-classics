@@ -1071,7 +1071,7 @@ rules:
     start_line: 75
     end_line: 75
   quote: 天乙貴人者三命中最吉之神也若人遇之主榮名早達官祿易進若更三命皆乘旺氣終登將相公卿之位大小運行年至此亦主遷官進財一切加臨至此皆為吉兆〔三命指掌〕
-  applicable_to: []
+  applicable_to: [{key: shensha, value: 天乙贵人}]
   caveats:
   - 古代贵人话语
   - 不作现代职业晋升预测

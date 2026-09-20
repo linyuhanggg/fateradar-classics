@@ -58,7 +58,7 @@ rules:
   statement: 01 论木（行论 + 甲乙木 × 四季）
   anchor: {file: sources/fulltext/bazi/qiongtong-baojian/fulltext.md, start_line: 25, end_line: 25}
   quote: 木性腾上而无所止，气重则欲金任使，有金则有惟高惟敛之德。
-  applicable_to: []
+  applicable_to: {any_of: [{key: rizhu, value: 甲}, {key: rizhu, value: 乙}]}
   caveats: []
   school: null
   verified: false
@@ -235,7 +235,7 @@ rules:
   statement: 02 论火（行论 + 丙丁火 × 四季）
   anchor: {file: sources/fulltext/bazi/qiongtong-baojian/fulltext.md, start_line: 333, end_line: 333}
   quote: 炎炎真火，位镇南方，故火无不明之理，辉光不久。全要伏藏，故明无不灭之象。火以木为体。无木、则火不长焰。火以水为用，无水、则火太酷烈。故火多则不实，火烈则伤物。木能藏火，到寅卯方而生火，不利于西，遇申酉而必死。生居离位，木断有为，若居坎宫，谨畏守礼。
-  applicable_to: []
+  applicable_to: {any_of: [{key: rizhu, value: 丙}, {key: rizhu, value: 丁}]}
   caveats: []
   school: null
   verified: false
@@ -411,7 +411,7 @@ rules:
     start_line: 777
     end_line: 777
   quote: 五行之土，散冠四维，故金木水火，依而成象，是四时皆有用有忌者。火、死酉也。水、旺子也。盖土赖火运，火死则土囚。土喜水才，水旺则土虚。土得金火，方成大器。土高无贵，空惹灰尘。土聚则滞，土散则轻。
-  applicable_to: []
+  applicable_to: {any_of: [{key: rizhu, value: 戊}, {key: rizhu, value: 己}]}
   caveats: []
   school: null
   verified: false
@@ -761,7 +761,7 @@ rules:
     start_line: 1493
     end_line: 1493
   quote: 天倾西北，亥为出水之方，地陷东南，辰为纳水之库，逆流到申而作声，故水不西流。水性润下，顺则有容，顺行十二神，顺也，主有度量，有吉神扶助，乃贵格。逆则有声，逆行十二神，逆也。入格者，主清贵，有声誉。忌刑剋，则横流，爱自死自绝则吉。
-  applicable_to: []
+  applicable_to: {any_of: [{key: rizhu, value: 壬}, {key: rizhu, value: 癸}]}
   caveats: []
   school: null
   verified: false

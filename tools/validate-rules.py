@@ -8,6 +8,7 @@ import hashlib
 import json
 import re
 import sys
+from dataclasses import dataclass
 from pathlib import Path
 
 try:
@@ -255,6 +256,26 @@ def legal_pred_value(key: str, value: str, values: dict[str, list[str]], any_tok
     return value in allowed
 
 
+# ── 谓词语言 v3（复合条件／嵌套／多事实联合／同位置绑定）────────────────────────
+# 契约见 docs/PREDICATE-LANGUAGE-V3.md。旧平铺列表语义不变（仍是 any_of）。
+SCOPE_FIELDS = ("layer", "pillar", "palace", "gong", "yao")
+GROUP_FIELDS = ("any_of", "all_of", "none_of", "same")
+FACT_LAYERS = ("本命", "大运", "流年", "流月", "流日")
+PILLAR_KEYS = ("year", "month", "day", "time")
+MAX_PRED_DEPTH = 4
+
+
+@dataclass(frozen=True)
+class _PredCtx:
+    reporter: "Reporter"
+    rule_id: str
+    book: str
+    system: str
+    fact_keys: set[str]
+    fact_values: dict[str, list[str]]
+    any_token: str
+
+
 class Reporter:
     def __init__(self) -> None:
         self.errors: list[dict[str, str]] = []
@@ -281,6 +302,182 @@ def as_str_list(value, *, field: str, loc: str, reporter: Reporter, rule_id: str
     return value
 
 
+def _validate_predicate(pred, *, loc: str, ctx: "_PredCtx") -> None:
+    """单个 {key, value, scope?} 谓词。旧判据 V2/V7 原样保留，V15/V16 管 scope。"""
+    reporter = ctx.reporter
+    if not isinstance(pred, dict):
+        reporter.add("V2", f"{loc}: 应为 {{key, value}} mapping", rule_id=ctx.rule_id, book=ctx.book)
+        return
+    key = pred.get("key")
+    value = pred.get("value")
+    if not isinstance(key, str) or not key:
+        reporter.add("V2", f"{loc}: key 应为非空字符串", rule_id=ctx.rule_id, book=ctx.book)
+        return
+    if not isinstance(value, str) or not value:
+        reporter.add("V2", f"{loc}: value 应为非空字符串", rule_id=ctx.rule_id, book=ctx.book)
+        return
+    if key not in ctx.fact_keys:
+        reporter.add("V7", f"{loc}: 未登记的 FactKey {key!r}", rule_id=ctx.rule_id, book=ctx.book)
+        return
+    if not legal_pred_value(key, value, ctx.fact_values, ctx.any_token):
+        reporter.add(
+            "V7",
+            f"{loc}: value {value!r} 不在 FACT_VALUES[{key}] 内（通配仅允许 {ctx.any_token!r}）",
+            rule_id=ctx.rule_id,
+            book=ctx.book,
+        )
+    scope = pred.get("scope")
+    if scope is None:
+        return
+    if not isinstance(scope, dict):
+        reporter.add("V2", f"{loc}: scope 应为 mapping", rule_id=ctx.rule_id, book=ctx.book)
+        return
+    for field in scope:
+        if field not in SCOPE_FIELDS:
+            reporter.add(
+                "V16",
+                f"{loc}: 未知 scope 字段 {field!r}（允许 {'/'.join(SCOPE_FIELDS)}）",
+                rule_id=ctx.rule_id,
+                book=ctx.book,
+            )
+    layer = scope.get("layer")
+    if layer is not None and layer not in FACT_LAYERS:
+        reporter.add(
+            "V16",
+            f"{loc}: scope.layer {layer!r} 不在 {'/'.join(FACT_LAYERS)} 内",
+            rule_id=ctx.rule_id,
+            book=ctx.book,
+        )
+    pillar = scope.get("pillar")
+    if pillar is not None and pillar not in PILLAR_KEYS:
+        reporter.add(
+            "V16",
+            f"{loc}: scope.pillar {pillar!r} 不在 {'/'.join(PILLAR_KEYS)} 内",
+            rule_id=ctx.rule_id,
+            book=ctx.book,
+        )
+    if "palace" in scope:
+        palace = scope.get("palace")
+        if ctx.system == "ziwei":
+            allowed = ctx.fact_values.get("ziwei_palace") or []
+            if not isinstance(palace, str) or palace not in allowed:
+                reporter.add(
+                    "V15",
+                    f"{loc}: palace {palace!r} 不在 ziwei_palace 取值内",
+                    rule_id=ctx.rule_id,
+                    book=ctx.book,
+                )
+        elif ctx.system == "xingming":
+            # 七政事实的 scope.palace 就是宫位名（gongwei 取值）。
+            allowed = ctx.fact_values.get("gongwei") or []
+            if not isinstance(palace, str) or palace not in allowed:
+                reporter.add(
+                    "V16",
+                    f"{loc}: palace {palace!r} 不在 gongwei 取值内（七政）",
+                    rule_id=ctx.rule_id,
+                    book=ctx.book,
+                )
+        else:
+            reporter.add(
+                "V15",
+                f"{loc}: 只有 ziwei（十二宫）与 xingming（十二宫位）规则可以写 scope.palace",
+                rule_id=ctx.rule_id,
+                book=ctx.book,
+            )
+    gong = scope.get("gong")
+    if gong is not None:
+        if ctx.system != "san-shi" or not str(key).startswith(("bamen", "bashen", "jiuxing", "zhifu", "zhishi")):
+            reporter.add(
+                "V16",
+                f"{loc}: scope.gong 仅奇门（san-shi/qimen-*）事实可写",
+                rule_id=ctx.rule_id,
+                book=ctx.book,
+            )
+        elif isinstance(gong, bool) or not isinstance(gong, int) or not 1 <= gong <= 9:
+            reporter.add(
+                "V16",
+                f"{loc}: scope.gong {gong!r} 应为 1–9 整数",
+                rule_id=ctx.rule_id,
+                book=ctx.book,
+            )
+    yao = scope.get("yao")
+    if yao is not None:
+        if ctx.system != "divination" or key not in {"shiyao", "yingyao", "dongyao", "liuqin", "liushen"}:
+            reporter.add(
+                "V16",
+                f"{loc}: scope.yao 仅六爻（divination 六爻四本）事实可写",
+                rule_id=ctx.rule_id,
+                book=ctx.book,
+            )
+        elif isinstance(yao, bool) or not isinstance(yao, int) or not 1 <= yao <= 6:
+            reporter.add(
+                "V16",
+                f"{loc}: scope.yao {yao!r} 应为 1–6 整数",
+                rule_id=ctx.rule_id,
+                book=ctx.book,
+            )
+
+
+def _validate_group(group, *, loc: str, ctx: "_PredCtx", depth: int) -> None:
+    """v3 组：{any_of|all_of: [...], none_of?: [...], same?: 字段}。见 docs/PREDICATE-LANGUAGE-V3.md。"""
+    reporter = ctx.reporter
+    if depth > MAX_PRED_DEPTH:
+        reporter.add("V16", f"{loc}: 谓词嵌套深度超过 {MAX_PRED_DEPTH}", rule_id=ctx.rule_id, book=ctx.book)
+        return
+    for field in group:
+        if field not in GROUP_FIELDS:
+            reporter.add(
+                "V16",
+                f"{loc}: 未知组字段 {field!r}（允许 {'/'.join(GROUP_FIELDS)}）",
+                rule_id=ctx.rule_id,
+                book=ctx.book,
+            )
+    ops = [op for op in ("any_of", "all_of") if op in group]
+    if len(ops) != 1:
+        reporter.add(
+            "V16",
+            f"{loc}: any_of/all_of 必须恰好有一个，实际 {ops or '无'}",
+            rule_id=ctx.rule_id,
+            book=ctx.book,
+        )
+        return
+    op = ops[0]
+    for branch in (op, "none_of"):
+        if branch not in group:
+            continue
+        items = group[branch]
+        if not isinstance(items, list) or not items:
+            reporter.add(
+                "V16",
+                f"{loc}.{branch}: 应为非空列表",
+                rule_id=ctx.rule_id,
+                book=ctx.book,
+            )
+            continue
+        for j, clause in enumerate(items):
+            cloc = f"{loc}.{branch}[{j}]"
+            if isinstance(clause, dict) and ("any_of" in clause or "all_of" in clause):
+                _validate_group(clause, loc=cloc, ctx=ctx, depth=depth + 1)
+            else:
+                _validate_predicate(clause, loc=cloc, ctx=ctx)
+    if "same" in group:
+        same = group["same"]
+        if op != "all_of":
+            reporter.add(
+                "V16",
+                f"{loc}.same: 只能出现在 all_of 内（同位置绑定要先「且」）",
+                rule_id=ctx.rule_id,
+                book=ctx.book,
+            )
+        elif same not in SCOPE_FIELDS:
+            reporter.add(
+                "V16",
+                f"{loc}.same: {same!r} 不在 {'/'.join(SCOPE_FIELDS)} 内",
+                rule_id=ctx.rule_id,
+                book=ctx.book,
+            )
+
+
 def validate_predicates(
     raw,
     *,
@@ -296,54 +493,29 @@ def validate_predicates(
     if raw is None:
         reporter.add("V2", f"{loc}: 缺失字段 applicable_to", rule_id=rule_id, book=book)
         return
-    if not isinstance(raw, list):
-        reporter.add("V2", f"{loc}: 字段 applicable_to 应为谓词列表", rule_id=rule_id, book=book)
+    ctx = _PredCtx(
+        reporter=reporter,
+        rule_id=rule_id,
+        book=book,
+        system=system,
+        fact_keys=fact_keys,
+        fact_values=fact_values,
+        any_token=any_token,
+    )
+    if isinstance(raw, list):
+        # 旧形：平铺列表＝any_of，语义不变。
+        for j, pred in enumerate(raw):
+            _validate_predicate(pred, loc=f"{loc} applicable_to[{j}]", ctx=ctx)
         return
-    for j, pred in enumerate(raw):
-        ploc = f"{loc} applicable_to[{j}]"
-        if not isinstance(pred, dict):
-            reporter.add("V2", f"{ploc}: 应为 {{key, value}} mapping", rule_id=rule_id, book=book)
-            continue
-        key = pred.get("key")
-        value = pred.get("value")
-        if not isinstance(key, str) or not key:
-            reporter.add("V2", f"{ploc}: key 应为非空字符串", rule_id=rule_id, book=book)
-            continue
-        if not isinstance(value, str) or not value:
-            reporter.add("V2", f"{ploc}: value 应为非空字符串", rule_id=rule_id, book=book)
-            continue
-        if key not in fact_keys:
-            reporter.add("V7", f"{ploc}: 未登记的 FactKey {key!r}", rule_id=rule_id, book=book)
-            continue
-        if not legal_pred_value(key, value, fact_values, any_token):
-            reporter.add(
-                "V7",
-                f"{ploc}: value {value!r} 不在 FACT_VALUES[{key}] 内（通配仅允许 {any_token!r}）",
-                rule_id=rule_id,
-                book=book,
-            )
-        scope = pred.get("scope")
-        if scope is not None and not isinstance(scope, dict):
-            reporter.add("V2", f"{ploc}: scope 应为 mapping", rule_id=rule_id, book=book)
-            continue
-        if isinstance(scope, dict) and "palace" in scope:
-            palace = scope.get("palace")
-            if system != "ziwei":
-                reporter.add(
-                    "V15",
-                    f"{ploc}: 只有 ziwei 规则可以写 scope.palace",
-                    rule_id=rule_id,
-                    book=book,
-                )
-                continue
-            allowed = fact_values.get("ziwei_palace") or []
-            if not isinstance(palace, str) or palace not in allowed:
-                reporter.add(
-                    "V15",
-                    f"{ploc}: palace {palace!r} 不在 ziwei_palace 取值内",
-                    rule_id=rule_id,
-                    book=book,
-                )
+    if isinstance(raw, dict):
+        _validate_group(raw, loc=loc, ctx=ctx, depth=0)
+        return
+    reporter.add(
+        "V2",
+        f"{loc}: 字段 applicable_to 应为谓词列表或 any_of/all_of 组",
+        rule_id=rule_id,
+        book=book,
+    )
 
 
 def validate_fulltext_lines(ft_path: Path, *, book_key: str, loc: str, reporter: Reporter) -> None:

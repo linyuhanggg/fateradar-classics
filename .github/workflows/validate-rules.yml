@@ -48,6 +48,9 @@ jobs:
       - run: python tools/export-reading-notes.py
       - run: python tools/test-export-reading-notes.py
       - run: python tools/test-validate-gates.py
+      # 谓词语言 v3：叶子遍历（组形不得被读成「没有谓词」）与三态求值语义。
+      - run: python tools/test-predicate-lang.py
+      - run: python tools/test-eval-predicates.py
       - run: python tools/test-check-ganzhi-sequences.py
       # 步长筛查：与「已登记待核」集合对账（现有 3 条全部指向奇门 p281 第 6 列的「巳/卯」，
       # 已在 ocr-batch-0280-0298.md 的 doubt_281 登记，需原生读图复读一次才能结案）。

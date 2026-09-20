@@ -1,0 +1,402 @@
+{
+  "art": "liuyao",
+  "generated_by": "T168 mapper",
+  "books": [
+    "divination/zengshan-buyi",
+    "divination/huangjin-ce",
+    "divination/huozhu-lin",
+    "divination/bushi-zhengzong"
+  ],
+  "reason_class_counts": {
+    "not-a-condition": 14,
+    "fact-not-emitted": 31,
+    "condition-too-vague": 0,
+    "meta-rule": 1
+  },
+  "decisions": [
+    {
+      "book": "divination/bushi-zhengzong",
+      "rule_id": "BSZZ",
+      "decision": "unmapped",
+      "reason_class": "not-a-condition",
+      "evidence_from_statement": "六爻投掷自下而上记录，三掷先成内卦",
+      "note": "起卦／记录体例（三掷成内卦的装卦次序），说明「怎么起卦」，不是盘面适用条件。附带 caveat 亦写明「仅作起卦方法，不授权吉凶判断」。"
+    },
+    {
+      "book": "divination/huangjin-ce",
+      "rule_id": "HJC",
+      "decision": "unmapped",
+      "reason_class": "fact-not-emitted",
+      "evidence_from_statement": "动爻为变化之始、变卦为变化之终",
+      "note": "动爻有 dongyao 事实，但「变卦」这一 OverallHexagram 概念以及变爻序列引擎都不产出；仅按 dongyao 存在与否映射会丢掉本条的核心（变卦）。caveat 亦写「仅作动变方法，不授权具体事项吉凶」。"
+    },
+    {
+      "book": "divination/huangjin-ce",
+      "rule_id": "HJC-R001",
+      "decision": "unmapped",
+      "reason_class": "fact-not-emitted",
+      "evidence_from_statement": "断卦先看日辰、月建对用神、世应、动爻的生克冲合与旺衰",
+      "note": "缺日辰／月建（月日柱）及其对爻的旺衰、生克、冲合关系；原文自身也声明「不能只凭卦名或单个神煞下结论」。"
+    },
+    {
+      "book": "divination/huangjin-ce",
+      "rule_id": "HJC-R003",
+      "decision": "unmapped",
+      "reason_class": "fact-not-emitted",
+      "evidence_from_statement": "动爻主事情发动，变爻主后势或结果；动变比和、进退、回头克等决定进展",
+      "note": "动爻有 dongyao 事实，但变爻／变卦未产出（同 HJC）；「动变比和／进退／回头克」皆为动变之间的生克关系，引擎不产出。"
+    },
+    {
+      "book": "divination/huangjin-ce",
+      "rule_id": "HJC-R004",
+      "decision": "unmapped",
+      "reason_class": "fact-not-emitted",
+      "evidence_from_statement": "用神有气且无明显损伤，所问有成",
+      "note": "「用神」本身不是 FactKey（只是六亲取用后的角色），「有气／无明显损伤」依赖旺衰与冲克关系，均未产出。若只按某个六亲值映射，会把「用神是哪一个」这一取用前提编造成固定值。"
+    },
+    {
+      "book": "divination/huangjin-ce",
+      "rule_id": "HJC-R005",
+      "decision": "unmapped",
+      "reason_class": "fact-not-emitted",
+      "evidence_from_statement": "空、合、冲、墓、旺衰不能孤立解释，要看是否逢冲可用、合破无功、墓冲而发",
+      "note": "缺空亡、六合、冲、入墓、旺衰五类关系事实。原文明确说这些不能孤立解释，单映射反而失真。"
+    },
+    {
+      "book": "divination/huangjin-ce",
+      "rule_id": "HJC-R006",
+      "decision": "unmapped",
+      "reason_class": "fact-not-emitted",
+      "evidence_from_statement": "吉凶神煞、六神取象只能作旁证；核心判断仍以生克制化、用神旺衰和世应动变为主",
+      "note": "本条被冠以「六神取象」（六神有 liushen 事实），但原文主旨是「六神只能作旁证，核心看生克制化／用神旺衰／世应动变」——核心侧全部未产出，按 liushen 映射会把旁证当成适用条件，语义倒置。"
+    },
+    {
+      "book": "divination/huangjin-ce",
+      "rule_id": "HJC-R007",
+      "decision": "unmapped",
+      "reason_class": "not-a-condition",
+      "evidence_from_statement": "天时占以父母主雨、妻财主晴为主要取象，再看子孙日月、兄弟风云、官爻雷电",
+      "note": "断卦总则式的取象表（六亲↔天象的类象对照），不是「本盘与此条相关」的盘面条件；按 kind 的机械分类虽命中 5 个 liuqin 值，但那些值在这里是「类象表的栏目名」，不是盘面取值。"
+    },
+    {
+      "book": "divination/huangjin-ce",
+      "rule_id": "HJC-R008",
+      "decision": "unmapped",
+      "reason_class": "fact-not-emitted",
+      "evidence_from_statement": "婚姻先看阴阳、六合六冲、世应合冲生克，再看财鬼是否空亡刑害",
+      "note": "缺卦体阴阳、六合六冲（卦名层级）、世应之间的合冲生克关系、财鬼空亡与刑害；只有位置事实（shiyao/yingyao）与六亲取值可用，远不足以表达「婚姻盘」的适用条件。"
+    },
+    {
+      "book": "divination/huangjin-ce",
+      "rule_id": "HJC-R009",
+      "decision": "unmapped",
+      "reason_class": "fact-not-emitted",
+      "evidence_from_statement": "求财先看财爻与子孙；财旺福兴利，财空福绝不利；父兄皆动、兄鬼克世多阻",
+      "note": "妻财／子孙／兄弟有 liuqin 事实，但本条的判据是「旺／空／绝」「父兄皆动（多爻动计数）」「兄鬼克世（克世关系）」，全部未产出。只按 {妻财} 或 {子孙} 映射会留下一条看似命中、实则无法成立的谓词（gap 报 single-pair 即由此）。"
+    },
+    {
+      "book": "divination/huangjin-ce",
+      "rule_id": "HJC-R011",
+      "decision": "unmapped",
+      "reason_class": "not-a-condition",
+      "evidence_from_statement": "家宅以卦内为宅、卦外为人，合为门、冲为路",
+      "note": "取象表／体例：把「内外卦／合／冲」这类结构位置与门户道路对号，属「怎么取象」而非「何时用本条」。且内外卦、合、冲同样未产出。"
+    },
+    {
+      "book": "divination/huangjin-ce",
+      "rule_id": "HJC-R016",
+      "decision": "unmapped",
+      "reason_class": "fact-not-emitted",
+      "evidence_from_statement": "用爻动则身已动，安静则未思归，生克合冲伏藏决定迟速与阻滞",
+      "note": "需「用爻」角色与动／静（全六爻动静表）、生克合冲、伏藏关系——均未产出。dongyao 只标出哪些爻动，无法指认「用爻」。"
+    },
+    {
+      "book": "divination/huangjin-ce",
+      "rule_id": "HJC-R017",
+      "decision": "unmapped",
+      "reason_class": "meta-rule",
+      "evidence_from_statement": "病症、病体、医药章节可记录六亲、五行、卦宫、六神如何取象，但不得输出为现代诊断、疗法或用药建议",
+      "note": "pack 侧的记录范围与输出红线（工程约束／免责约束），不是盘面条件。"
+    },
+    {
+      "book": "divination/huozhu-lin",
+      "rule_id": "HZL",
+      "decision": "unmapped",
+      "reason_class": "not-a-condition",
+      "evidence_from_statement": "六爻审卦先核世应位置，再进入后续深浅判断",
+      "note": "读盘工序／调用次序（先核世应再看深浅），caveat 亦写「仅作读盘顺序，不授权吉凶结论」。"
+    },
+    {
+      "book": "divination/huozhu-lin",
+      "rule_id": "HZL-R001",
+      "decision": "mapped",
+      "applicable_to_yaml": "{any_of: [{key: liuqin, value: 官鬼}, {key: liuqin, value: 妻财}, {key: liuqin, value: 父母}, {key: liuqin, value: 子孙}]}",
+      "evidence_from_statement": "公用取官鬼，私用取妻财；官用以父母辅，财用以子孙辅",
+      "note": "原文点名四种类象之爻（官鬼／妻财为主用，父母／子孙为辅体），它们的出现即标志本盘需要用本条取用规则；不写兄弟，因原文未把兄弟列入本条的取用/辅体。"
+    },
+    {
+      "book": "divination/huozhu-lin",
+      "rule_id": "HZL-R002",
+      "decision": "unmapped",
+      "reason_class": "fact-not-emitted",
+      "evidence_from_statement": "财官旺相、有辅体发动或生世为可用；休囚、克破、无辅则力薄",
+      "note": "缺旺相／休囚、克破、发动、生世关系；「辅体」是取用后的角色（非 FactKey）。"
+    },
+    {
+      "book": "divination/huozhu-lin",
+      "rule_id": "HZL-R003",
+      "decision": "unmapped",
+      "reason_class": "fact-not-emitted",
+      "evidence_from_statement": "乱动时先看世上旁爻、世下亲爻，再以最旺或发动生世之爻为用",
+      "note": "「乱动」本身是多爻动的计数条件，facts 只给出各动爻位置，没有动爻总数／乱动标志；「最旺」「生世」「世上世下」关系亦未产出。"
+    },
+    {
+      "book": "divination/huozhu-lin",
+      "rule_id": "HZL-R004",
+      "decision": "unmapped",
+      "reason_class": "fact-not-emitted",
+      "evidence_from_statement": "财官持世虽可许，但应爻或动爻克所用辅爻则事难成",
+      "note": "需要「持世／持某爻」的角色绑定与「应爻／动爻 → 辅爻」的克关系，两者都未产出。"
+    },
+    {
+      "book": "divination/huozhu-lin",
+      "rule_id": "HZL-R005",
+      "decision": "unmapped",
+      "reason_class": "fact-not-emitted",
+      "evidence_from_statement": "财官出现旺相宜久远；伏藏有气虽可取，多利短时或暂成",
+      "note": "缺旺衰与「出现／伏藏」的持续久暂判断；伏藏虽有 fushen 事实，但本条的判据是「有气」与久远/暂成的区分，fushen 无法区分。"
+    },
+    {
+      "book": "divination/zengshan-buyi",
+      "rule_id": "ZR-02",
+      "decision": "unmapped",
+      "reason_class": "not-a-condition",
+      "evidence_from_statement": "八宫卦各纳天干（乾纳甲壬…）；六爻配地支按纳甲歌取",
+      "note": "装卦体例：纳甲与纳支的取法（怎么给八宫卦配干支）。caveat 亦指向 tool.divination.liuyao_bindisk 且禁止 LLM 手算。"
+    },
+    {
+      "book": "divination/zengshan-buyi",
+      "rule_id": "ZR-03",
+      "decision": "unmapped",
+      "reason_class": "not-a-condition",
+      "evidence_from_statement": "六亲以本卦所属宫的五行为基准：同五行为兄弟，生宫五行者为父母…",
+      "note": "装六亲体例：给出的其实是「六亲定义 + 各宫结果表」（乾兑宫金兄土父木财火鬼水子…）。所属宫五行不是 FactKey，本条讲「怎么安六亲」而非「何时用」。caveat 明确「这里规定装六亲的五行基准」。"
+    },
+    {
+      "book": "divination/zengshan-buyi",
+      "rule_id": "ZR-04",
+      "decision": "mapped",
+      "applicable_to_yaml": "{any_of: [{key: liuqin, value: 父母}]}",
+      "evidence_from_statement": "占父母以父母爻爲用神",
+      "note": "原文把「父母爻」当成该问事对象的取用基准——盘面出现父母爻，即是本条所举「占父母」这一类占的对象，故映射父母。原文另举「自占吉凶用此世爻」：世爻是位置角色（哪个爻持世），facts 只给 shiyao/yingyao/dongyao 的位置取值，不是「此爻持世」的标志，无法表达，故未写入。caveat 也声明本段只举两例、不覆盖其他问事对象。"
+    },
+    {
+      "book": "divination/zengshan-buyi",
+      "rule_id": "ZENGSHANBUYI-ZR-04",
+      "decision": "unmapped",
+      "reason_class": "not-a-condition",
+      "evidence_from_statement": "生用神者元神（喜其旺动）；克用神者忌神（怕其旺动）；克元神／生忌神者仇神",
+      "note": "元神／忌神／仇神的定义体例：一切以「用神」这一角色为中心，而用神不是 FactKey（同 ZR-04 说明），生克关系也未产出；原文没有盘面适用条件。"
+    },
+    {
+      "book": "divination/zengshan-buyi",
+      "rule_id": "ZENGSHANBUYI-007",
+      "decision": "unmapped",
+      "reason_class": "fact-not-emitted",
+      "evidence_from_statement": "用神两现时，若仅一爻发动则取动爻；若两爻俱动或俱静，须再择其旺者",
+      "note": "本条对象是「用神两现」（同一六亲出现两次）——facts 没有「用神」角色，也没有「同一六亲出现次数」这一聚合条件；「俱动／俱静」需动爻计数，「择其旺者」需旺衰。caveat 亦声明不许按单一条件硬选。"
+    },
+    {
+      "book": "divination/zengshan-buyi",
+      "rule_id": "ZR-05",
+      "decision": "unmapped",
+      "reason_class": "fact-not-emitted",
+      "evidence_from_statement": "元神旺动而无伤——用神得力；忌神旺动而无制——用神受伤",
+      "note": "需用神／元神／忌神三种角色 + 旺衰 + 「无伤／无制」关系，全部未产出；原文两分支也非单一盘面条件。"
+    },
+    {
+      "book": "divination/zengshan-buyi",
+      "rule_id": "ZENGSHANBUYI-ZR-05",
+      "decision": "unmapped",
+      "reason_class": "not-a-condition",
+      "evidence_from_statement": "金生水、水生木、木生火、火生土、土生金；元神之力本于此",
+      "note": "五行相生的体例（生克表），不是盘面条件；爻与爻之间的生克关系引擎也不产出。"
+    },
+    {
+      "book": "divination/zengshan-buyi",
+      "rule_id": "ZENGSHANBUYI-010",
+      "decision": "unmapped",
+      "reason_class": "not-a-condition",
+      "evidence_from_statement": "金克木、木克土、土克水、水克火、火克金；忌神之力本于此",
+      "note": "五行相克的体例（克表），同 ZENGSHANBUYI-ZR-05，无盘面适用条件。"
+    },
+    {
+      "book": "divination/zengshan-buyi",
+      "rule_id": "ZENGSHANBUYI-011",
+      "decision": "unmapped",
+      "reason_class": "fact-not-emitted",
+      "evidence_from_statement": "用神被克处又逢生扶（日月或动爻）则危而不死；俗谓『贪生忘克』",
+      "note": "「被克　＋　得日月或动爻生扶」是两条关系的叠加，且用神是角色；缺日辰月建、生扶关系与用神指认。"
+    },
+    {
+      "book": "divination/zengshan-buyi",
+      "rule_id": "ZENGSHANBUYI-013",
+      "decision": "unmapped",
+      "reason_class": "fact-not-emitted",
+      "evidence_from_statement": "月建生扶用神则旺、克伤用神则衰；月建之力贯穿一月",
+      "note": "缺月建（月柱地支）以及月建对爻的生扶／克伤关系；用神亦为角色。"
+    },
+    {
+      "book": "divination/zengshan-buyi",
+      "rule_id": "ZR-06",
+      "decision": "unmapped",
+      "reason_class": "not-a-condition",
+      "evidence_from_statement": "摇卦得三背或三面为动爻，老阳老阴变化；动爻变出之爻为变爻",
+      "note": "起卦与记爻体例（背／面→拆重单交、老阳老阴→动爻、变爻定义）。caveat 指向 tool.divination.liuyao_bindisk 且禁止 LLM 手算。"
+    },
+    {
+      "book": "divination/zengshan-buyi",
+      "rule_id": "ZENGSHANBUYI-ZR-06",
+      "decision": "unmapped",
+      "reason_class": "not-a-condition",
+      "evidence_from_statement": "变出之爻能生克冲合本位动爻，不能生克其他爻",
+      "note": "作用范围体例：变爻只作用于本位动爻、不及他爻。它描述的是变爻的作用域，不是「本盘何时适用」的盘面条件；且变爻本身未产出。若按 dongyao 存在来映射，则任何有动爻的盘都命中，谓词无实义。"
+    },
+    {
+      "book": "divination/zengshan-buyi",
+      "rule_id": "ZENGSHANBUYI-017",
+      "decision": "unmapped",
+      "reason_class": "fact-not-emitted",
+      "evidence_from_statement": "动爻与变爻间可成回头生、回头克、回头冲、回头合；变爻反作用于本动爻",
+      "note": "缺变爻，也就没有「回头生／克／冲／合」这类动变之间的关系事实。"
+    },
+    {
+      "book": "divination/zengshan-buyi",
+      "rule_id": "ZENGSHANBUYI-018",
+      "decision": "unmapped",
+      "reason_class": "fact-not-emitted",
+      "evidence_from_statement": "静爻得日辰冲为暗动；暗动如同动，能生克他爻",
+      "note": "缺日辰（日柱地支）与日辰冲爻关系；「静爻」也需要全爻动静表（facts 只给动爻）。引文本身即「爻沖有五」的体例列举。"
+    },
+    {
+      "book": "divination/zengshan-buyi",
+      "rule_id": "ZENGSHANBUYI-019",
+      "decision": "unmapped",
+      "reason_class": "fact-not-emitted",
+      "evidence_from_statement": "动爻被日辰冲为动散，力减不能为大用",
+      "note": "缺日辰与日辰冲动爻的关系（动散）；forces 亦无「力减」量度。"
+    },
+    {
+      "book": "divination/zengshan-buyi",
+      "rule_id": "ZENGSHANBUYI-020",
+      "decision": "unmapped",
+      "reason_class": "fact-not-emitted",
+      "evidence_from_statement": "化进神（如寅化卯）力增、化退神（如卯化寅）力减；进神逢冲不进、退神逢冲不退",
+      "note": "进神／退神是「动爻地支 → 变爻地支」的比较（寅化卯等），爻地支与变爻都未产出。"
+    },
+    {
+      "book": "divination/zengshan-buyi",
+      "rule_id": "ZENGSHANBUYI-021",
+      "decision": "unmapped",
+      "reason_class": "fact-not-emitted",
+      "evidence_from_statement": "五爻静一爻动为独发，五爻动一爻静为独静；事之成败与应期仍由用神判断，不得舍用神而执独发、独静断事",
+      "note": "独发／独静本身是「恰一爻动／恰五爻动」的计数条件，facts 只逐爻给出动爻位置、没有动爻计数（none_of 只能证明「不存在某位置的动爻」，此处需计数），故无法表达。原文又明确把成败与应期归到用神，并斥「捨其用神執之而決事者」为谬，本条的可引用条件本就落在用神侧（未产出）。"
+    },
+    {
+      "book": "divination/zengshan-buyi",
+      "rule_id": "ZENGSHANBUYI-024",
+      "decision": "unmapped",
+      "reason_class": "fact-not-emitted",
+      "evidence_from_statement": "寅巳申、丑戌未、子卯三刑；刑则有损伤纠葛",
+      "note": "三刑是地支组合（跨爻／跨日月），facts 不产出各爻地支，也不产出刑的关系。"
+    },
+    {
+      "book": "divination/zengshan-buyi",
+      "rule_id": "ZENGSHANBUYI-025",
+      "decision": "unmapped",
+      "reason_class": "fact-not-emitted",
+      "evidence_from_statement": "反吟主反复颠倒、伏吟主呻吟忧虑；皆非吉象",
+      "note": "反吟／伏吟由内外卦（卦名）与其变动定义——卦名与卦变均未产出。引文本身即卦变沖克的体例说明。"
+    },
+    {
+      "book": "divination/zengshan-buyi",
+      "rule_id": "ZENGSHANBUYI-ZR-08",
+      "decision": "unmapped",
+      "reason_class": "fact-not-emitted",
+      "evidence_from_statement": "用神旬空——空而不空（动／旺／临日月）则不空；真空——出旬即应；旬空亦可冲实",
+      "note": "缺旬空、日辰／月建、旺衰；用神为角色。caveat 亦声明旬空须由 tool.divination.liuyao_bindisk 计算、禁止 LLM 手算。"
+    },
+    {
+      "book": "divination/zengshan-buyi",
+      "rule_id": "ZENGSHANBUYI-030",
+      "decision": "unmapped",
+      "reason_class": "fact-not-emitted",
+      "evidence_from_statement": "月建冲爻为月破；月破之爻——静则到底破、动则能伤本变、变则能伤本动、出月或合日不破",
+      "note": "月破是月建（月柱地支）冲爻的结果，月建与冲关系均未产出；另需静／动／变三种状态与出月／合日的时间条件。"
+    },
+    {
+      "book": "divination/zengshan-buyi",
+      "rule_id": "ZENGSHANBUYI-031",
+      "decision": "unmapped",
+      "reason_class": "fact-not-emitted",
+      "evidence_from_statement": "用神动随官鬼入墓——大凶；用神入日辰之墓亦凶",
+      "note": "缺入墓（墓库）关系与日辰；用神为角色，随鬼入墓是同爻内「用神＝官鬼」并入墓的复合判断，facts 无法表达。"
+    },
+    {
+      "book": "divination/zengshan-buyi",
+      "rule_id": "ZR-09",
+      "decision": "unmapped",
+      "reason_class": "fact-not-emitted",
+      "evidence_from_statement": "归魂卦——主回归、还原；游魂卦——主漂泊、不定",
+      "note": "归魂／游魂是卦名层级的分类（八宫卦变），引擎不产出卦名。"
+    },
+    {
+      "book": "divination/zengshan-buyi",
+      "rule_id": "ZR-10",
+      "decision": "unmapped",
+      "reason_class": "not-a-condition",
+      "evidence_from_statement": "所有问占先取用神 → 看用神旺衰 → 看元忌动静 → 看应期；此为通则",
+      "note": "断卦总则／工序（读盘顺序），原文自称「通则」，不含盘面适用条件。"
+    },
+    {
+      "book": "divination/zengshan-buyi",
+      "rule_id": "ZR-13",
+      "decision": "unmapped",
+      "reason_class": "fact-not-emitted",
+      "evidence_from_statement": "占出行——以世爻为身；忌世动入墓／入空／受冲克；游魂卦不宜远行",
+      "note": "缺入墓、空亡、冲克关系与游魂卦名；「世爻为身」是角色指定（哪个爻持世），facts 的 shiyao 只是位置取值。"
+    },
+    {
+      "book": "divination/zengshan-buyi",
+      "rule_id": "ZENGSHANBUYI-ZR-13",
+      "decision": "unmapped",
+      "reason_class": "fact-not-emitted",
+      "evidence_from_statement": "占行人归否——以应爻／远人之爻为用；用动来生世／临归魂——速归；用入墓入空——未归",
+      "note": "缺入墓、空亡、归魂卦名，以及「用爻生世」的关系；用爻为角色。"
+    },
+    {
+      "book": "divination/zengshan-buyi",
+      "rule_id": "ZENGSHANBUYI-ZR-14",
+      "decision": "unmapped",
+      "reason_class": "fact-not-emitted",
+      "evidence_from_statement": "占兴讼胜负——世应相战看哪边得日月生扶；世旺应衰胜、世衰应旺败",
+      "note": "缺日月生扶与旺衰；shiyao／yingyao 只给位置，无法表达「世应相战」及其强弱对比。"
+    },
+    {
+      "book": "divination/zengshan-buyi",
+      "rule_id": "ZR-16",
+      "decision": "unmapped",
+      "reason_class": "not-a-condition",
+      "evidence_from_statement": "占家宅——以世爻为人、二爻为宅、五爻为路、六爻为屋顶／远",
+      "note": "爻位取象表（引文更完整：「初井二竈三牀四門五爻爲人六爻棟宇」），属「怎么取象」的体例。且若强行写成 {key: shiyao, value: 二爻}，对任何六爻盘恒真——谓词没有实义；六爻盘必有二爻/五爻/六爻，这正是「不许用条件凑覆盖」的情形。判吉凶侧的「世旺无伤／宅爻不被冲克」另需旺衰与冲克关系（未产出）。"
+    },
+    {
+      "book": "divination/zengshan-buyi",
+      "rule_id": "ZR-17",
+      "decision": "unmapped",
+      "reason_class": "not-a-condition",
+      "evidence_from_statement": "占茔葬——以二爻为穴、世爻为后人；穴旺生世——吉地；穴受冲克——凶地",
+      "note": "本条 statement 的取象与原文相反，故绝不能映射：引文写「古以二爻爲穴，內卦爲穴，騰蛇爲穴，屢試不驗，所驗者，世爲穴也」——原文明确否掉「二爻为穴」，改以世爻为穴。按 statement 把二爻编成条件即等于编造被原文否证的条件。判吉凶侧另需旺衰／生扶／冲克（未产出）。"
+    }
+  ]
+}

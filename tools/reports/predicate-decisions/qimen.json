@@ -1,0 +1,301 @@
+{
+  "art": "qimen",
+  "generated_by": "T168 mapper",
+  "decisions": [
+    {
+      "book": "san-shi/qimen-dunjia-tongzhi",
+      "rule_id": "QM-P01",
+      "decision": "unmapped",
+      "reason_class": "fact-not-emitted",
+      "evidence_from_statement": "龙回首 甲值符加地盘丙奇",
+      "note": "本条条件是天盘甲与地盘丙的相对关系（龙回首）。天盘干无 FactKey；bashen=值符 是八神里的值符，不是「甲值符」这个天盘甲旬首，拿它顶替会把「甲临丙」偷换成「值符临丙」，失真。故整条不映射。",
+      "missing_fact": "天盘干（甲）；地盘干（丙）"
+    },
+    {
+      "book": "san-shi/qimen-dunjia-tongzhi",
+      "rule_id": "QM-P02",
+      "decision": "unmapped",
+      "reason_class": "fact-not-emitted",
+      "evidence_from_statement": "鸟跌穴 丙奇加地盘甲值符",
+      "note": "与 QM-P01 结构相反，同样两枚令牌皆天盘/地盘干。本盘相关性无法用现有事实判定。",
+      "missing_fact": "天盘干（丙）；地盘干（甲）"
+    },
+    {
+      "book": "san-shi/qimen-dunjia-tongzhi",
+      "rule_id": "QM-P03",
+      "decision": "unmapped",
+      "reason_class": "fact-not-emitted",
+      "evidence_from_statement": "龙逃走 乙奇遇辛",
+      "note": "「乙奇遇辛」＝天盘乙遇地盘辛，两个都是干，无 FactKey。",
+      "missing_fact": "天盘干（乙）；地盘干（辛）"
+    },
+    {
+      "book": "san-shi/qimen-dunjia-tongzhi",
+      "rule_id": "QM-P04",
+      "decision": "unmapped",
+      "reason_class": "fact-not-emitted",
+      "evidence_from_statement": "虎猖狂 辛遇乙奇",
+      "note": "「辛遇乙奇」＝天盘辛遇地盘乙奇，同上。",
+      "missing_fact": "天盘干（辛）；地盘干（乙）"
+    },
+    {
+      "book": "san-shi/qimen-dunjia-tongzhi",
+      "rule_id": "QM-P05",
+      "decision": "unmapped",
+      "reason_class": "fact-not-emitted",
+      "evidence_from_statement": "蛇妖矫 癸见丁奇",
+      "note": "「癸见丁奇」＝天盘癸见地盘丁奇，同上。",
+      "missing_fact": "天盘干（癸）；地盘干（丁）"
+    },
+    {
+      "book": "san-shi/qimen-dunjia-tongzhi",
+      "rule_id": "QM-P06",
+      "decision": "unmapped",
+      "reason_class": "fact-not-emitted",
+      "evidence_from_statement": "雀投江 丁奇见癸",
+      "note": "「丁奇见癸」＝天盘丁见地盘癸，同上。",
+      "missing_fact": "天盘干（丁）；地盘干（癸）"
+    },
+    {
+      "book": "san-shi/qimen-dunjia-tongzhi",
+      "rule_id": "QM-P07",
+      "decision": "unmapped",
+      "reason_class": "fact-not-emitted",
+      "evidence_from_statement": "大格 庚临六癸",
+      "note": "「庚临六癸」＝天盘庚加地盘癸，两个都是干。",
+      "missing_fact": "天盘干（庚）；地盘干（癸）"
+    },
+    {
+      "book": "san-shi/qimen-dunjia-tongzhi",
+      "rule_id": "QM-P08",
+      "decision": "unmapped",
+      "reason_class": "fact-not-emitted",
+      "evidence_from_statement": "刑格 庚临六己",
+      "note": "「庚临六己」＝天盘庚加地盘己，同上。",
+      "missing_fact": "天盘干（庚）；地盘干（己）"
+    },
+    {
+      "book": "san-shi/qimen-dunjia-tongzhi",
+      "rule_id": "QM-P09",
+      "decision": "unmapped",
+      "reason_class": "fact-not-emitted",
+      "evidence_from_statement": "小格 庚临壬",
+      "note": "「庚临壬」＝天盘庚加地盘壬，同上。",
+      "missing_fact": "天盘干（庚）；地盘干（壬）"
+    },
+    {
+      "book": "san-shi/qimen-dunjia-tongzhi",
+      "rule_id": "QM-P13",
+      "decision": "unmapped",
+      "reason_class": "fact-not-emitted",
+      "evidence_from_statement": "时干克日干乃五不遇而灾生",
+      "note": "五不遇格＝时干克日干。时干与日干都是天干类事实，引擎未产出；虽然九宫的宫位五行可由 scope.gong 推出，但「克」判的是两干五行关系，不是宫位，不能替代。",
+      "missing_fact": "时干、日干（天干类 FactKey）"
+    },
+    {
+      "book": "san-shi/qimen-dunjia-tongzhi",
+      "rule_id": "QM-P14",
+      "decision": "unmapped",
+      "reason_class": "fact-not-emitted",
+      "evidence_from_statement": "伏吟 本星加本宫",
+      "note": "伏吟＝天盘星落回本宫。引擎只产出星名（jiuxing/zhifu）与门名，没有「星+落宫」这一事实，也没有本宫位置，无法判「加本宫」。",
+      "missing_fact": "天盘星所落之宫（天盘干/天盘星落宫）"
+    },
+    {
+      "book": "san-shi/qimen-dunjia-tongzhi",
+      "rule_id": "QM-P15",
+      "decision": "unmapped",
+      "reason_class": "fact-not-emitted",
+      "evidence_from_statement": "反吟 星加对宫",
+      "note": "反吟＝天盘星落对宫。对宫虽可由宫号推出，但缺「天盘星现落何宫」这一事实，无法判「加对宫」。",
+      "missing_fact": "天盘星所落之宫（天盘干/天盘星落宫）"
+    },
+    {
+      "book": "san-shi/qimen-dunjia-tongzhi",
+      "rule_id": "QM-P16",
+      "decision": "unmapped",
+      "reason_class": "fact-not-emitted",
+      "evidence_from_statement": "三奇入墓 乙奇坤宫 丙奇乾宫 丁奇艮宫",
+      "note": "三奇入墓在天盘干层：乙奇落坤、丙奇落乾、丁奇落艮。三元组两个维度（奇干＋落宫）都缺（无奇干 FactKey，也没有「奇干落宫」事实），虽有 scope.gong 也不成条件。",
+      "missing_fact": "三奇天盘干（乙/丙/丁）落宫"
+    },
+    {
+      "book": "san-shi/qimen-dunjia-tongzhi",
+      "rule_id": "QM-P21",
+      "decision": "unmapped",
+      "reason_class": "fact-not-emitted",
+      "evidence_from_statement": "龙遁 休门与乙奇合坎",
+      "note": "龙遁＝休门 × 乙奇 × 坎宫。乙奇为天盘干，无 FactKey。若只写「休门×坎宫」，与 P37 那组可复原点不同：原文此处必须乙奇同到，实为「休门与乙奇合坎」，乙奇不是可省的旁枝。",
+      "missing_fact": "天盘干（乙奇）"
+    },
+    {
+      "book": "san-shi/qimen-dunjia-tongzhi",
+      "rule_id": "QM-P22",
+      "decision": "unmapped",
+      "reason_class": "fact-not-emitted",
+      "evidence_from_statement": "虎遁 休门与乙奇合艮辛",
+      "note": "虎遁＝休门 × 乙奇 × 艮宫 × 辛（乙奇与辛同宫）。缺乙奇与辛两个干。",
+      "missing_fact": "天盘干（乙奇）、地盘干（辛）"
+    },
+    {
+      "book": "san-shi/qimen-dunjia-tongzhi",
+      "rule_id": "QM-P23",
+      "decision": "unmapped",
+      "reason_class": "fact-not-emitted",
+      "evidence_from_statement": "神遁 休门与乙奇合九天",
+      "note": "神遁＝休门 × 乙奇 × 九天。brief 示例指出乙奇无 FactKey 时默认不映射；若按 P10-P12 先例只取 bamen 休门 就不落表达力的坑（会丢条件），故保留 unmapped。",
+      "missing_fact": "天盘干（乙奇）"
+    },
+    {
+      "book": "san-shi/qimen-dunjia-tongzhi",
+      "rule_id": "QM-P24",
+      "decision": "unmapped",
+      "reason_class": "fact-not-emitted",
+      "evidence_from_statement": "鬼遁 乙奇合九地杜门",
+      "note": "鬼遁＝乙奇 × 九地 × 杜门。乙奇无 FactKey；仅取杜门＋九地会丢掉「乙奇」这个限定。",
+      "missing_fact": "天盘干（乙奇）"
+    },
+    {
+      "book": "san-shi/qimen-dunjia-tongzhi",
+      "rule_id": "QM-P25",
+      "decision": "unmapped",
+      "reason_class": "fact-not-emitted",
+      "evidence_from_statement": "三奇得使 乙奇加甲午甲戌 丙奇加甲子甲申 丁奇加甲寅甲辰",
+      "note": "三奇得使＝三奇天盘干分别加六甲旬首，全在天盘干层，另需旬首（甲午/甲戌之类）事实，两者皆无。",
+      "missing_fact": "三奇天盘干（乙/丙/丁）与旬首（甲午/甲戌/甲子/甲申/甲寅/甲辰）"
+    },
+    {
+      "book": "san-shi/qimen-faqiao",
+      "rule_id": "QM-P26",
+      "decision": "unmapped",
+      "reason_class": "fact-not-emitted",
+      "evidence_from_statement": "直使加地丁为守门",
+      "note": "法窍此句原文无主语门名，「直使加地丁」按同书体例是值使门（天盘门）加地盘丁。地盘丁无 FactKey；若只取 zhishi=* 就成了空条件，属把「加地丁」丢掉，不可。",
+      "missing_fact": "地盘干（丁）；直使（值使门）落宫"
+    },
+    {
+      "book": "san-shi/qimen-dunjia-tongzhi",
+      "rule_id": "QM-P27",
+      "decision": "unmapped",
+      "reason_class": "fact-not-emitted",
+      "evidence_from_statement": "岁格 庚临岁干",
+      "note": "岁格＝天盘庚临岁干。「岁干」是占年干支的天干，引擎无该事实（qimen 只 emit 九星/八门/八神/值符/值使/格局/空亡）。",
+      "missing_fact": "天盘干（庚）、岁干支（天干）"
+    },
+    {
+      "book": "san-shi/qimen-dunjia-tongzhi",
+      "rule_id": "QM-P28",
+      "decision": "unmapped",
+      "reason_class": "fact-not-emitted",
+      "evidence_from_statement": "月格 庚临月干",
+      "note": "月格同上，缺月干事实。",
+      "missing_fact": "天盘干（庚）、月干支（天干）"
+    },
+    {
+      "book": "san-shi/qimen-dunjia-tongzhi",
+      "rule_id": "QM-P29",
+      "decision": "unmapped",
+      "reason_class": "fact-not-emitted",
+      "evidence_from_statement": "日格 庚临日干",
+      "note": "日格＝天盘庚临日干。日干无 FactKey；rizhu 只属八字事实、不带奇门盘 scope，不可跨术挪用。",
+      "missing_fact": "天盘干（庚）、日干"
+    },
+    {
+      "book": "san-shi/qimen-dunjia-tongzhi",
+      "rule_id": "QM-P30",
+      "decision": "unmapped",
+      "reason_class": "fact-not-emitted",
+      "evidence_from_statement": "时格 庚临时干三奇",
+      "note": "时格＝天盘庚临时干／加三奇，缺时干与三奇干。",
+      "missing_fact": "天盘干（庚）、时干"
+    },
+    {
+      "book": "san-shi/qimen-dunjia-tongzhi",
+      "rule_id": "QM-P31",
+      "decision": "unmapped",
+      "reason_class": "fact-not-emitted",
+      "evidence_from_statement": "伏宫 庚临值符",
+      "note": "伏宫＝天盘庚临值符（天盘六甲旬首）。引擎的 zhifu 是九星域的值符星，不带「庚临」的地盘/天盘干关系；单取 zhifu 就是空条件。",
+      "missing_fact": "天盘干（庚）"
+    },
+    {
+      "book": "san-shi/qimen-dunjia-tongzhi",
+      "rule_id": "QM-P32",
+      "decision": "unmapped",
+      "reason_class": "fact-not-emitted",
+      "evidence_from_statement": "伏干 庚临日干",
+      "note": "伏干＝天盘庚临日干，缺庚与日干。",
+      "missing_fact": "天盘干（庚）、日干"
+    },
+    {
+      "book": "san-shi/qimen-dunjia-tongzhi",
+      "rule_id": "QM-P33",
+      "decision": "unmapped",
+      "reason_class": "fact-not-emitted",
+      "evidence_from_statement": "飞干格 日干临庚",
+      "note": "飞干格＝日干临天盘庚，同上两枚干。",
+      "missing_fact": "天盘干（庚）、日干"
+    },
+    {
+      "book": "san-shi/qimen-dunjia-tongzhi",
+      "rule_id": "QM-P34",
+      "decision": "unmapped",
+      "reason_class": "fact-not-emitted",
+      "evidence_from_statement": "太白入荧 六庚加丙奇又庚加卯日时酉丁",
+      "note": "太白入荧＝天盘六庚加地盘丙奇；原文另一路「庚加卯日时酉丁」还需日/时支，亦无事实。",
+      "missing_fact": "天盘干（六庚）、地盘干（丙奇）"
+    },
+    {
+      "book": "san-shi/qimen-dunjia-tongzhi",
+      "rule_id": "QM-P35",
+      "decision": "unmapped",
+      "reason_class": "fact-not-emitted",
+      "evidence_from_statement": "火入金乡 丙奇加六庚金又丙奇加惊用值符之庚辛",
+      "note": "火入金乡＝天盘丙奇加地盘六庚；原文另一路「丙奇加惊用值符之庚辛」还需惊门＋值符天盘庚辛，缺干。keyword 层只有惊门可用，不足以代表本条。",
+      "missing_fact": "天盘干（丙奇）、地盘干（六庚）"
+    },
+    {
+      "book": "san-shi/qimen-faqiao",
+      "rule_id": "QM-P36",
+      "decision": "unmapped",
+      "reason_class": "fact-not-emitted",
+      "evidence_from_statement": "时干入墓，戊戌、壬辰、丙戌、癸未、丁丑、己丑也",
+      "note": "时干入墓＝时干为戊/壬/丙/癸/丁/己而落墓支。时干为天干，引擎未产出；六宫的宫位五行替代不了「天干＋墓支」的判据。",
+      "missing_fact": "时干（天干）"
+    },
+    {
+      "book": "san-shi/qimen-dunjia-tongzhi",
+      "rule_id": "QM-P37",
+      "decision": "mapped",
+      "applicable_to_yaml": "{any_of: [{all_of: [{key: bamen, value: 休门, scope: {gong: 9}}]}, {all_of: [{key: bamen, value: 伤门, scope: {gong: 2}}]}, {all_of: [{key: bamen, value: 杜门, scope: {gong: 8}}]}, {all_of: [{key: bamen, value: 景门, scope: {gong: 6}}]}, {all_of: [{key: bamen, value: 生门, scope: {gong: 7}}]}, {all_of: [{key: bamen, value: 死门, scope: {gong: 1}}]}, {all_of: [{key: bamen, value: 开门, scope: {gong: 3}}]}, {all_of: [{key: bamen, value: 惊门, scope: {gong: 4}}]}]}",
+      "evidence_from_statement": "休加离 伤加坤 杜加艮 景加乾 生加兑 死加坎 开加震 惊加巽",
+      "note": "原文八组「门加宫」，逐组 (八门 + 宫号) AND、组间 OR，八门为 bamen 域、宫号为 scope.gong。本条 statement 已给全部八组完整枚举（quote 只摘前五组，判据按 statement）。条首「六仪受制」是被制之理的名目，不是额外条件：原文的成立条件就是这八对门／宫。奇门事实 bamen 带 scope.gong，故本条区间可机械判定。九宫：1坎 2坤 3震 4巽 5中 6乾 7兑 8艮 9离。"
+    },
+    {
+      "book": "san-shi/qimen-dunjia-tongzhi",
+      "rule_id": "QM-P38",
+      "decision": "unmapped",
+      "reason_class": "fact-not-emitted",
+      "evidence_from_statement": "地罗遮蔽 六壬临时干",
+      "note": "地罗遮蔽＝六壬临时干。六壬为天盘干，时干亦无事实。",
+      "missing_fact": "天盘干（六壬）、时干"
+    },
+    {
+      "book": "san-shi/qimen-dunjia-tongzhi",
+      "rule_id": "QM-P39",
+      "decision": "unmapped",
+      "reason_class": "fact-not-emitted",
+      "evidence_from_statement": "天网四张 六癸临时干",
+      "note": "天网四张＝六癸临时干，同上。",
+      "missing_fact": "天盘干（六癸）、时干"
+    },
+    {
+      "book": "san-shi/qimen-dunjia-tongzhi",
+      "rule_id": "QM-P40",
+      "decision": "unmapped",
+      "reason_class": "not-a-condition",
+      "evidence_from_statement": "尺寸高低 一二三四五宫尺寸低，六七八九宫尺寸高",
+      "note": "本句是九宫尺寸高低的取象定表（固定宫号→尺寸属性），不是「何时引用本条」的成立条件；原文无临/加/遇/合这类盘面关系，也未指明作用于某门某星。按 T168 口径属「取象表／体例」类。若枚举九宫 gong 1–9（或写 scope 通配）会把「表述」当条件，属变相凑覆盖率，故不映射。"
+    }
+  ]
+}

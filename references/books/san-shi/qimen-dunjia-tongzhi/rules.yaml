@@ -517,7 +517,7 @@ rules:
     start_line: 323
     end_line: 323
   quote: 六仪受制 休加离 伤加坤 杜加艮 景加乾
-  applicable_to: []
+  applicable_to: {any_of: [{all_of: [{key: bamen, value: 休门, scope: {gong: 9}}]}, {all_of: [{key: bamen, value: 伤门, scope: {gong: 2}}]}, {all_of: [{key: bamen, value: 杜门, scope: {gong: 8}}]}, {all_of: [{key: bamen, value: 景门, scope: {gong: 6}}]}, {all_of: [{key: bamen, value: 生门, scope: {gong: 7}}]}, {all_of: [{key: bamen, value: 死门, scope: {gong: 1}}]}, {all_of: [{key: bamen, value: 开门, scope: {gong: 3}}]}, {all_of: [{key: bamen, value: 惊门, scope: {gong: 4}}]}]}
   caveats: []
   school: null
   verified: false

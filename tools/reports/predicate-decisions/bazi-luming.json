@@ -1,0 +1,1703 @@
+{
+  "art": "bazi",
+  "generated_by": "T168 mapper",
+  "scope": "luming-nayin/* 四书（li-xuzhong-mingshu, wuxing-jingji, yuzhao-shenying, luoluzi-sanming）；不含 bazi/* 六书（另一 agent 负责）。这四书本属 art=bazi（见 tools/predicate-report.py 的 art_of）。",
+  "unmapped_total_at_start": 176,
+  "reason_class_counts": {
+    "fact-not-emitted": 108,
+    "not-a-condition": 61,
+    "condition-too-vague": 4,
+    "mapped": 3
+  },
+  "decisions": [
+    {
+      "book": "luming-nayin/li-xuzhong-mingshu",
+      "rule_id": "LIXUZHONGMIN-003",
+      "decision": "unmapped",
+      "reason_class": "fact-not-emitted",
+      "applicable_to_yaml": "[]",
+      "evidence_from_statement": "子母相承之火；先煙后焰；喜木助、嫌水陵迟；五行相养虽死方亦光耿。",
+      "note": "本条取象名「子母相承之火」。六十甲子纳音取象条：quote 以干支名领起（如「甲子天官蔵…」），statement 描述该纳音干支组合的取象与宜忌。引擎事实层没有干支/纳音 FactKey（bazi 只发 rizhu 日干、yueling 月支、rizhu_strength、geju、yongshen、shishen、shensha、kongwang）；把该干支映射成 rizhu=<其干> 会把「某干支之纳音」偷换成「日主某干」，既非原文条件，也会误命中该日主的一切盘，属编造，故不映射（同类『干支取象』在仓内已有 rizhu=<干> 的旧映射，本批不沿用该宽法）。",
+      "missing_fact": "纳音（六十甲子纳音名）与柱干支"
+    },
+    {
+      "book": "luming-nayin/li-xuzhong-mingshu",
+      "rule_id": "LIXUZHONGMIN-004",
+      "decision": "unmapped",
+      "reason_class": "fact-not-emitted",
+      "applicable_to_yaml": "[]",
+      "evidence_from_statement": "本旺禄休之火；惟欲阴旺恶处盛阳；木火相资连艮震必变鼎。",
+      "note": "本条取象名「本旺禄休之火」。六十甲子纳音取象条：quote 以干支名领起（如「甲子天官蔵…」），statement 描述该纳音干支组合的取象与宜忌。引擎事实层没有干支/纳音 FactKey（bazi 只发 rizhu 日干、yueling 月支、rizhu_strength、geju、yongshen、shishen、shensha、kongwang）；把该干支映射成 rizhu=<其干> 会把「某干支之纳音」偷换成「日主某干」，既非原文条件，也会误命中该日主的一切盘，属编造，故不映射（同类『干支取象』在仓内已有 rizhu=<干> 的旧映射，本批不沿用该宽法）。",
+      "missing_fact": "纳音（六十甲子纳音名）与柱干支"
+    },
+    {
+      "book": "luming-nayin/li-xuzhong-mingshu",
+      "rule_id": "LIXUZHONGMIN-005",
+      "decision": "unmapped",
+      "reason_class": "fact-not-emitted",
+      "applicable_to_yaml": "[]",
+      "evidence_from_statement": "华实兼荣之木；爱水土忌火金；金养则英实之命。",
+      "note": "本条取象名「华实兼荣之木」。六十甲子纳音取象条：quote 以干支名领起（如「甲子天官蔵…」），statement 描述该纳音干支组合的取象与宜忌。引擎事实层没有干支/纳音 FactKey（bazi 只发 rizhu 日干、yueling 月支、rizhu_strength、geju、yongshen、shishen、shensha、kongwang）；把该干支映射成 rizhu=<其干> 会把「某干支之纳音」偷换成「日主某干」，既非原文条件，也会误命中该日主的一切盘，属编造，故不映射（同类『干支取象』在仓内已有 rizhu=<干> 的旧映射，本批不沿用该宽法）。",
+      "missing_fact": "纳音（六十甲子纳音名）与柱干支"
+    },
+    {
+      "book": "luming-nayin/li-xuzhong-mingshu",
+      "rule_id": "LIXUZHONGMIN-006",
+      "decision": "unmapped",
+      "reason_class": "fact-not-emitted",
+      "applicable_to_yaml": "[]",
+      "evidence_from_statement": "气胜体刚之木；逢对旺干鬼或木来比助金伐则成栋梁。",
+      "note": "本条取象名「气胜体刚之木」。六十甲子纳音取象条：quote 以干支名领起（如「甲子天官蔵…」），statement 描述该纳音干支组合的取象与宜忌。引擎事实层没有干支/纳音 FactKey（bazi 只发 rizhu 日干、yueling 月支、rizhu_strength、geju、yongshen、shishen、shensha、kongwang）；把该干支映射成 rizhu=<其干> 会把「某干支之纳音」偷换成「日主某干」，既非原文条件，也会误命中该日主的一切盘，属编造，故不映射（同类『干支取象』在仓内已有 rizhu=<干> 的旧映射，本批不沿用该宽法）。",
+      "missing_fact": "纳音（六十甲子纳音名）与柱干支"
+    },
+    {
+      "book": "luming-nayin/li-xuzhong-mingshu",
+      "rule_id": "LIXUZHONGMIN-007",
+      "decision": "unmapped",
+      "reason_class": "fact-not-emitted",
+      "applicable_to_yaml": "[]",
+      "evidence_from_statement": "含辉始育之土；气数未备喜旺方；独禄会命旺身绝非贵地。",
+      "note": "本条取象名「含辉始育之土」。六十甲子纳音取象条：quote 以干支名领起（如「甲子天官蔵…」），statement 描述该纳音干支组合的取象与宜忌。引擎事实层没有干支/纳音 FactKey（bazi 只发 rizhu 日干、yueling 月支、rizhu_strength、geju、yongshen、shishen、shensha、kongwang）；把该干支映射成 rizhu=<其干> 会把「某干支之纳音」偷换成「日主某干」，既非原文条件，也会误命中该日主的一切盘，属编造，故不映射（同类『干支取象』在仓内已有 rizhu=<干> 的旧映射，本批不沿用该宽法）。",
+      "missing_fact": "纳音（六十甲子纳音名）与柱干支"
+    },
+    {
+      "book": "luming-nayin/li-xuzhong-mingshu",
+      "rule_id": "LIXUZHONGMIN-008",
+      "decision": "unmapped",
+      "reason_class": "fact-not-emitted",
+      "applicable_to_yaml": "[]",
+      "evidence_from_statement": "自本立形之土；火助木乘水轻木重亦小康；败而乘禄方为厚载之福。",
+      "note": "本条取象名「自本立形之土」。六十甲子纳音取象条：quote 以干支名领起（如「甲子天官蔵…」），statement 描述该纳音干支组合的取象与宜忌。引擎事实层没有干支/纳音 FactKey（bazi 只发 rizhu 日干、yueling 月支、rizhu_strength、geju、yongshen、shishen、shensha、kongwang）；把该干支映射成 rizhu=<其干> 会把「某干支之纳音」偷换成「日主某干」，既非原文条件，也会误命中该日主的一切盘，属编造，故不映射（同类『干支取象』在仓内已有 rizhu=<干> 的旧映射，本批不沿用该宽法）。",
+      "missing_fact": "纳音（六十甲子纳音名）与柱干支"
+    },
+    {
+      "book": "luming-nayin/li-xuzhong-mingshu",
+      "rule_id": "LIXUZHONGMIN-009",
+      "decision": "unmapped",
+      "reason_class": "fact-not-emitted",
+      "applicable_to_yaml": "[]",
+      "evidence_from_statement": "自任权制之金；刚而有断；爱土木嫌火重；财旺身衰亦清华之贵。",
+      "note": "本条取象名「自任权制之金」。六十甲子纳音取象条：quote 以干支名领起（如「甲子天官蔵…」），statement 描述该纳音干支组合的取象与宜忌。引擎事实层没有干支/纳音 FactKey（bazi 只发 rizhu 日干、yueling 月支、rizhu_strength、geju、yongshen、shishen、shensha、kongwang）；把该干支映射成 rizhu=<其干> 会把「某干支之纳音」偷换成「日主某干」，既非原文条件，也会误命中该日主的一切盘，属编造，故不映射（同类『干支取象』在仓内已有 rizhu=<干> 的旧映射，本批不沿用该宽法）。",
+      "missing_fact": "纳音（六十甲子纳音名）与柱干支"
+    },
+    {
+      "book": "luming-nayin/li-xuzhong-mingshu",
+      "rule_id": "LIXUZHONGMIN-010",
+      "decision": "unmapped",
+      "reason_class": "fact-not-emitted",
+      "applicable_to_yaml": "[]",
+      "evidence_from_statement": "刚锐利用之金；不嫌绝败惟畏鬼多；平易不刑则有自然材器。",
+      "note": "本条取象名「刚锐利用之金」。六十甲子纳音取象条：quote 以干支名领起（如「甲子天官蔵…」），statement 描述该纳音干支组合的取象与宜忌。引擎事实层没有干支/纳音 FactKey（bazi 只发 rizhu 日干、yueling 月支、rizhu_strength、geju、yongshen、shishen、shensha、kongwang）；把该干支映射成 rizhu=<其干> 会把「某干支之纳音」偷换成「日主某干」，既非原文条件，也会误命中该日主的一切盘，属编造，故不映射（同类『干支取象』在仓内已有 rizhu=<干> 的旧映射，本批不沿用该宽法）。",
+      "missing_fact": "纳音（六十甲子纳音名）与柱干支"
+    },
+    {
+      "book": "luming-nayin/li-xuzhong-mingshu",
+      "rule_id": "LIXUZHONGMIN-011",
+      "decision": "unmapped",
+      "reason_class": "fact-not-emitted",
+      "applicable_to_yaml": "[]",
+      "evidence_from_statement": "墓成息用之火；不求壮旺欲物平资福禄高厚；入格可贵干不必官。",
+      "note": "本条取象名「墓成息用之火」。六十甲子纳音取象条：quote 以干支名领起（如「甲子天官蔵…」），statement 描述该纳音干支组合的取象与宜忌。引擎事实层没有干支/纳音 FactKey（bazi 只发 rizhu 日干、yueling 月支、rizhu_strength、geju、yongshen、shishen、shensha、kongwang）；把该干支映射成 rizhu=<其干> 会把「某干支之纳音」偷换成「日主某干」，既非原文条件，也会误命中该日主的一切盘，属编造，故不映射（同类『干支取象』在仓内已有 rizhu=<干> 的旧映射，本批不沿用该宽法）。",
+      "missing_fact": "纳音（六十甲子纳音名）与柱干支"
+    },
+    {
+      "book": "luming-nayin/li-xuzhong-mingshu",
+      "rule_id": "LIXUZHONGMIN-012",
+      "decision": "unmapped",
+      "reason_class": "fact-not-emitted",
+      "applicable_to_yaml": "[]",
+      "evidence_from_statement": "气散游魂之火；生于木火荣方上下不逢相制则成达。",
+      "note": "本条取象名「气散游魂之火」。六十甲子纳音取象条：quote 以干支名领起（如「甲子天官蔵…」），statement 描述该纳音干支组合的取象与宜忌。引擎事实层没有干支/纳音 FactKey（bazi 只发 rizhu 日干、yueling 月支、rizhu_strength、geju、yongshen、shishen、shensha、kongwang）；把该干支映射成 rizhu=<其干> 会把「某干支之纳音」偷换成「日主某干」，既非原文条件，也会误命中该日主的一切盘，属编造，故不映射（同类『干支取象』在仓内已有 rizhu=<干> 的旧映射，本批不沿用该宽法）。",
+      "missing_fact": "纳音（六十甲子纳音名）与柱干支"
+    },
+    {
+      "book": "luming-nayin/li-xuzhong-mingshu",
+      "rule_id": "LIXUZHONGMIN-013",
+      "decision": "unmapped",
+      "reason_class": "fact-not-emitted",
+      "applicable_to_yaml": "[]",
+      "evidence_from_statement": "深沉停会之水；会源得生用制于东南为出常之器。",
+      "note": "本条取象名「深沉停会之水」。六十甲子纳音取象条：quote 以干支名领起（如「甲子天官蔵…」），statement 描述该纳音干支组合的取象与宜忌。引擎事实层没有干支/纳音 FactKey（bazi 只发 rizhu 日干、yueling 月支、rizhu_strength、geju、yongshen、shishen、shensha、kongwang）；把该干支映射成 rizhu=<其干> 会把「某干支之纳音」偷换成「日主某干」，既非原文条件，也会误命中该日主的一切盘，属编造，故不映射（同类『干支取象』在仓内已有 rizhu=<干> 的旧映射，本批不沿用该宽法）。",
+      "missing_fact": "纳音（六十甲子纳音名）与柱干支"
+    },
+    {
+      "book": "luming-nayin/li-xuzhong-mingshu",
+      "rule_id": "LIXUZHONGMIN-014",
+      "decision": "unmapped",
+      "reason_class": "fact-not-emitted",
+      "applicable_to_yaml": "[]",
+      "evidence_from_statement": "渐下欲流之水；得水土相承经败地源脉不断可升而济物。",
+      "note": "本条取象名「渐下欲流之水」。六十甲子纳音取象条：quote 以干支名领起（如「甲子天官蔵…」），statement 描述该纳音干支组合的取象与宜忌。引擎事实层没有干支/纳音 FactKey（bazi 只发 rizhu 日干、yueling 月支、rizhu_strength、geju、yongshen、shishen、shensha、kongwang）；把该干支映射成 rizhu=<其干> 会把「某干支之纳音」偷换成「日主某干」，既非原文条件，也会误命中该日主的一切盘，属编造，故不映射（同类『干支取象』在仓内已有 rizhu=<干> 的旧映射，本批不沿用该宽法）。",
+      "missing_fact": "纳音（六十甲子纳音名）与柱干支"
+    },
+    {
+      "book": "luming-nayin/li-xuzhong-mingshu",
+      "rule_id": "LIXUZHONGMIN-015",
+      "decision": "unmapped",
+      "reason_class": "fact-not-emitted",
+      "applicable_to_yaml": "[]",
+      "evidence_from_statement": "生体安和之土；资以火土俱盛金旺之荣；尚可高崇为不常之用。",
+      "note": "本条取象名「生体安和之土」。六十甲子纳音取象条：quote 以干支名领起（如「甲子天官蔵…」），statement 描述该纳音干支组合的取象与宜忌。引擎事实层没有干支/纳音 FactKey（bazi 只发 rizhu 日干、yueling 月支、rizhu_strength、geju、yongshen、shishen、shensha、kongwang）；把该干支映射成 rizhu=<其干> 会把「某干支之纳音」偷换成「日主某干」，既非原文条件，也会误命中该日主的一切盘，属编造，故不映射（同类『干支取象』在仓内已有 rizhu=<干> 的旧映射，本批不沿用该宽法）。",
+      "missing_fact": "纳音（六十甲子纳音名）与柱干支"
+    },
+    {
+      "book": "luming-nayin/li-xuzhong-mingshu",
+      "rule_id": "LIXUZHONGMIN-016",
+      "decision": "unmapped",
+      "reason_class": "fact-not-emitted",
+      "applicable_to_yaml": "[]",
+      "evidence_from_statement": "鬼旺体坚之土；生于金重木多见财重则富贵长远。",
+      "note": "本条取象名「鬼旺体坚之土」。六十甲子纳音取象条：quote 以干支名领起（如「甲子天官蔵…」），statement 描述该纳音干支组合的取象与宜忌。引擎事实层没有干支/纳音 FactKey（bazi 只发 rizhu 日干、yueling 月支、rizhu_strength、geju、yongshen、shishen、shensha、kongwang）；把该干支映射成 rizhu=<其干> 会把「某干支之纳音」偷换成「日主某干」，既非原文条件，也会误命中该日主的一切盘，属编造，故不映射（同类『干支取象』在仓内已有 rizhu=<干> 的旧映射，本批不沿用该宽法）。",
+      "missing_fact": "纳音（六十甲子纳音名）与柱干支"
+    },
+    {
+      "book": "luming-nayin/li-xuzhong-mingshu",
+      "rule_id": "LIXUZHONGMIN-017",
+      "decision": "unmapped",
+      "reason_class": "fact-not-emitted",
+      "applicable_to_yaml": "[]",
+      "evidence_from_statement": "显光之金未成材；金刚土重得期相会无炎火之官乃大臣之制。",
+      "note": "本条取象名「显光之金未成材」。六十甲子纳音取象条：quote 以干支名领起（如「甲子天官蔵…」），statement 描述该纳音干支组合的取象与宜忌。引擎事实层没有干支/纳音 FactKey（bazi 只发 rizhu 日干、yueling 月支、rizhu_strength、geju、yongshen、shishen、shensha、kongwang）；把该干支映射成 rizhu=<其干> 会把「某干支之纳音」偷换成「日主某干」，既非原文条件，也会误命中该日主的一切盘，属编造，故不映射（同类『干支取象』在仓内已有 rizhu=<干> 的旧映射，本批不沿用该宽法）。",
+      "missing_fact": "纳音（六十甲子纳音名）与柱干支"
+    },
+    {
+      "book": "luming-nayin/li-xuzhong-mingshu",
+      "rule_id": "LIXUZHONGMIN-018",
+      "decision": "unmapped",
+      "reason_class": "fact-not-emitted",
+      "applicable_to_yaml": "[]",
+      "evidence_from_statement": "资始之金；身坚体柔欲平火之制；金助土成则光大之器。",
+      "note": "本条取象名「资始之金」。六十甲子纳音取象条：quote 以干支名领起（如「甲子天官蔵…」），statement 描述该纳音干支组合的取象与宜忌。引擎事实层没有干支/纳音 FactKey（bazi 只发 rizhu 日干、yueling 月支、rizhu_strength、geju、yongshen、shishen、shensha、kongwang）；把该干支映射成 rizhu=<其干> 会把「某干支之纳音」偷换成「日主某干」，既非原文条件，也会误命中该日主的一切盘，属编造，故不映射（同类『干支取象』在仓内已有 rizhu=<干> 的旧映射，本批不沿用该宽法）。",
+      "missing_fact": "纳音（六十甲子纳音名）与柱干支"
+    },
+    {
+      "book": "luming-nayin/li-xuzhong-mingshu",
+      "rule_id": "LIXUZHONGMIN-019",
+      "decision": "unmapped",
+      "reason_class": "fact-not-emitted",
+      "applicable_to_yaml": "[]",
+      "evidence_from_statement": "化薪之木；畏在火强得水资；处生旺逢土亦富贵。",
+      "note": "本条取象名「化薪之木」。六十甲子纳音取象条：quote 以干支名领起（如「甲子天官蔵…」），statement 描述该纳音干支组合的取象与宜忌。引擎事实层没有干支/纳音 FactKey（bazi 只发 rizhu 日干、yueling 月支、rizhu_strength、geju、yongshen、shishen、shensha、kongwang）；把该干支映射成 rizhu=<其干> 会把「某干支之纳音」偷换成「日主某干」，既非原文条件，也会误命中该日主的一切盘，属编造，故不映射（同类『干支取象』在仓内已有 rizhu=<干> 的旧映射，本批不沿用该宽法）。",
+      "missing_fact": "纳音（六十甲子纳音名）与柱干支"
+    },
+    {
+      "book": "luming-nayin/li-xuzhong-mingshu",
+      "rule_id": "LIXUZHONGMIN-020",
+      "decision": "unmapped",
+      "reason_class": "fact-not-emitted",
+      "applicable_to_yaml": "[]",
+      "evidence_from_statement": "伐根之木；气败体柔不嫌金制；喜水之荣会元借生主成重器。",
+      "note": "本条取象名「伐根之木」。六十甲子纳音取象条：quote 以干支名领起（如「甲子天官蔵…」），statement 描述该纳音干支组合的取象与宜忌。引擎事实层没有干支/纳音 FactKey（bazi 只发 rizhu 日干、yueling 月支、rizhu_strength、geju、yongshen、shishen、shensha、kongwang）；把该干支映射成 rizhu=<其干> 会把「某干支之纳音」偷换成「日主某干」，既非原文条件，也会误命中该日主的一切盘，属编造，故不映射（同类『干支取象』在仓内已有 rizhu=<干> 的旧映射，本批不沿用该宽法）。",
+      "missing_fact": "纳音（六十甲子纳音名）与柱干支"
+    },
+    {
+      "book": "luming-nayin/li-xuzhong-mingshu",
+      "rule_id": "LIXUZHONGMIN-021",
+      "decision": "unmapped",
+      "reason_class": "fact-not-emitted",
+      "applicable_to_yaml": "[]",
+      "evidence_from_statement": "源泉之水；务有资助流长无鬼则运广之渊享高厚之福。",
+      "note": "本条取象名「源泉之水」。六十甲子纳音取象条：quote 以干支名领起（如「甲子天官蔵…」），statement 描述该纳音干支组合的取象与宜忌。引擎事实层没有干支/纳音 FactKey（bazi 只发 rizhu 日干、yueling 月支、rizhu_strength、geju、yongshen、shishen、shensha、kongwang）；把该干支映射成 rizhu=<其干> 会把「某干支之纳音」偷换成「日主某干」，既非原文条件，也会误命中该日主的一切盘，属编造，故不映射（同类『干支取象』在仓内已有 rizhu=<干> 的旧映射，本批不沿用该宽法）。",
+      "missing_fact": "纳音（六十甲子纳音名）与柱干支"
+    },
+    {
+      "book": "luming-nayin/li-xuzhong-mingshu",
+      "rule_id": "LIXUZHONGMIN-022",
+      "decision": "unmapped",
+      "reason_class": "fact-not-emitted",
+      "applicable_to_yaml": "[]",
+      "evidence_from_statement": "母旺进趋之水；资金济火自乾东而震北亦超卓辅弼之用。",
+      "note": "本条取象名「母旺进趋之水」。六十甲子纳音取象条：quote 以干支名领起（如「甲子天官蔵…」），statement 描述该纳音干支组合的取象与宜忌。引擎事实层没有干支/纳音 FactKey（bazi 只发 rizhu 日干、yueling 月支、rizhu_strength、geju、yongshen、shishen、shensha、kongwang）；把该干支映射成 rizhu=<其干> 会把「某干支之纳音」偷换成「日主某干」，既非原文条件，也会误命中该日主的一切盘，属编造，故不映射（同类『干支取象』在仓内已有 rizhu=<干> 的旧映射，本批不沿用该宽法）。",
+      "missing_fact": "纳音（六十甲子纳音名）与柱干支"
+    },
+    {
+      "book": "luming-nayin/li-xuzhong-mingshu",
+      "rule_id": "LIXUZHONGMIN-023",
+      "decision": "unmapped",
+      "reason_class": "fact-not-emitted",
+      "applicable_to_yaml": "[]",
+      "evidence_from_statement": "禄资支附坚固火钟之土；资以木光耀不群本重不须旺。",
+      "note": "本条取象名「禄资支附坚固火钟之土」。六十甲子纳音取象条：quote 以干支名领起（如「甲子天官蔵…」），statement 描述该纳音干支组合的取象与宜忌。引擎事实层没有干支/纳音 FactKey（bazi 只发 rizhu 日干、yueling 月支、rizhu_strength、geju、yongshen、shishen、shensha、kongwang）；把该干支映射成 rizhu=<其干> 会把「某干支之纳音」偷换成「日主某干」，既非原文条件，也会误命中该日主的一切盘，属编造，故不映射（同类『干支取象』在仓内已有 rizhu=<干> 的旧映射，本批不沿用该宽法）。",
+      "missing_fact": "纳音（六十甲子纳音名）与柱干支"
+    },
+    {
+      "book": "luming-nayin/li-xuzhong-mingshu",
+      "rule_id": "LIXUZHONGMIN-024",
+      "decision": "unmapped",
+      "reason_class": "fact-not-emitted",
+      "applicable_to_yaml": "[]",
+      "evidence_from_statement": "福壮临官之土；润水丽金处魁罡坤艮可显功遂名。",
+      "note": "本条取象名「福壮临官之土」。六十甲子纳音取象条：quote 以干支名领起（如「甲子天官蔵…」），statement 描述该纳音干支组合的取象与宜忌。引擎事实层没有干支/纳音 FactKey（bazi 只发 rizhu 日干、yueling 月支、rizhu_strength、geju、yongshen、shishen、shensha、kongwang）；把该干支映射成 rizhu=<其干> 会把「某干支之纳音」偷换成「日主某干」，既非原文条件，也会误命中该日主的一切盘，属编造，故不映射（同类『干支取象』在仓内已有 rizhu=<干> 的旧映射，本批不沿用该宽法）。",
+      "missing_fact": "纳音（六十甲子纳音名）与柱干支"
+    },
+    {
+      "book": "luming-nayin/li-xuzhong-mingshu",
+      "rule_id": "LIXUZHONGMIN-025",
+      "decision": "unmapped",
+      "reason_class": "fact-not-emitted",
+      "applicable_to_yaml": "[]",
+      "evidence_from_statement": "神龙之火；利震巽不畏水刑；干支得官皆显用水木盛尤佳。",
+      "note": "本条取象名「神龙之火」。六十甲子纳音取象条：quote 以干支名领起（如「甲子天官蔵…」），statement 描述该纳音干支组合的取象与宜忌。引擎事实层没有干支/纳音 FactKey（bazi 只发 rizhu 日干、yueling 月支、rizhu_strength、geju、yongshen、shishen、shensha、kongwang）；把该干支映射成 rizhu=<其干> 会把「某干支之纳音」偷换成「日主某干」，既非原文条件，也会误命中该日主的一切盘，属编造，故不映射（同类『干支取象』在仓内已有 rizhu=<干> 的旧映射，本批不沿用该宽法）。",
+      "missing_fact": "纳音（六十甲子纳音名）与柱干支"
+    },
+    {
+      "book": "luming-nayin/li-xuzhong-mingshu",
+      "rule_id": "LIXUZHONGMIN-026",
+      "decision": "unmapped",
+      "reason_class": "fact-not-emitted",
+      "applicable_to_yaml": "[]",
+      "evidence_from_statement": "余光不凡之火；惟期体重不假奇财；禄资命成方入康荣。",
+      "note": "本条取象名「余光不凡之火」。六十甲子纳音取象条：quote 以干支名领起（如「甲子天官蔵…」），statement 描述该纳音干支组合的取象与宜忌。引擎事实层没有干支/纳音 FactKey（bazi 只发 rizhu 日干、yueling 月支、rizhu_strength、geju、yongshen、shishen、shensha、kongwang）；把该干支映射成 rizhu=<其干> 会把「某干支之纳音」偷换成「日主某干」，既非原文条件，也会误命中该日主的一切盘，属编造，故不映射（同类『干支取象』在仓内已有 rizhu=<干> 的旧映射，本批不沿用该宽法）。",
+      "missing_fact": "纳音（六十甲子纳音名）与柱干支"
+    },
+    {
+      "book": "luming-nayin/li-xuzhong-mingshu",
+      "rule_id": "LIXUZHONGMIN-027",
+      "decision": "unmapped",
+      "reason_class": "fact-not-emitted",
+      "applicable_to_yaml": "[]",
+      "evidence_from_statement": "五行坚实之木；不避刑冲不辞衰败；和柔德贵相符必显大用。",
+      "note": "本条取象名「五行坚实之木」。六十甲子纳音取象条：quote 以干支名领起（如「甲子天官蔵…」），statement 描述该纳音干支组合的取象与宜忌。引擎事实层没有干支/纳音 FactKey（bazi 只发 rizhu 日干、yueling 月支、rizhu_strength、geju、yongshen、shishen、shensha、kongwang）；把该干支映射成 rizhu=<其干> 会把「某干支之纳音」偷换成「日主某干」，既非原文条件，也会误命中该日主的一切盘，属编造，故不映射（同类『干支取象』在仓内已有 rizhu=<干> 的旧映射，本批不沿用该宽法）。",
+      "missing_fact": "纳音（六十甲子纳音名）与柱干支"
+    },
+    {
+      "book": "luming-nayin/li-xuzhong-mingshu",
+      "rule_id": "LIXUZHONGMIN-028",
+      "decision": "unmapped",
+      "reason_class": "fact-not-emitted",
+      "applicable_to_yaml": "[]",
+      "evidence_from_statement": "经制之木自旺；不畏霜雪气节凌云；制金损火逢旺即巨室之材。",
+      "note": "本条取象名「经制之木自旺」。六十甲子纳音取象条：quote 以干支名领起（如「甲子天官蔵…」），statement 描述该纳音干支组合的取象与宜忌。引擎事实层没有干支/纳音 FactKey（bazi 只发 rizhu 日干、yueling 月支、rizhu_strength、geju、yongshen、shishen、shensha、kongwang）；把该干支映射成 rizhu=<其干> 会把「某干支之纳音」偷换成「日主某干」，既非原文条件，也会误命中该日主的一切盘，属编造，故不映射（同类『干支取象』在仓内已有 rizhu=<干> 的旧映射，本批不沿用该宽法）。",
+      "missing_fact": "纳音（六十甲子纳音名）与柱干支"
+    },
+    {
+      "book": "luming-nayin/li-xuzhong-mingshu",
+      "rule_id": "LIXUZHONGMIN-029",
+      "decision": "unmapped",
+      "reason_class": "fact-not-emitted",
+      "applicable_to_yaml": "[]",
+      "evidence_from_statement": "会贵守成之水；五行不杂兑坎之间无物来制可享高福。",
+      "note": "本条取象名「会贵守成之水」。六十甲子纳音取象条：quote 以干支名领起（如「甲子天官蔵…」），statement 描述该纳音干支组合的取象与宜忌。引擎事实层没有干支/纳音 FactKey（bazi 只发 rizhu 日干、yueling 月支、rizhu_strength、geju、yongshen、shishen、shensha、kongwang）；把该干支映射成 rizhu=<其干> 会把「某干支之纳音」偷换成「日主某干」，既非原文条件，也会误命中该日主的一切盘，属编造，故不映射（同类『干支取象』在仓内已有 rizhu=<干> 的旧映射，本批不沿用该宽法）。",
+      "missing_fact": "纳音（六十甲子纳音名）与柱干支"
+    },
+    {
+      "book": "luming-nayin/li-xuzhong-mingshu",
+      "rule_id": "LIXUZHONGMIN-030",
+      "decision": "unmapped",
+      "reason_class": "fact-not-emitted",
+      "applicable_to_yaml": "[]",
+      "evidence_from_statement": "流远澄清之水；溢以水在火木荣方音中无土则有济物之德。",
+      "note": "本条取象名「流远澄清之水」。六十甲子纳音取象条：quote 以干支名领起（如「甲子天官蔵…」），statement 描述该纳音干支组合的取象与宜忌。引擎事实层没有干支/纳音 FactKey（bazi 只发 rizhu 日干、yueling 月支、rizhu_strength、geju、yongshen、shishen、shensha、kongwang）；把该干支映射成 rizhu=<其干> 会把「某干支之纳音」偷换成「日主某干」，既非原文条件，也会误命中该日主的一切盘，属编造，故不映射（同类『干支取象』在仓内已有 rizhu=<干> 的旧映射，本批不沿用该宽法）。",
+      "missing_fact": "纳音（六十甲子纳音名）与柱干支"
+    },
+    {
+      "book": "luming-nayin/li-xuzhong-mingshu",
+      "rule_id": "LIXUZHONGMIN-031",
+      "decision": "unmapped",
+      "reason_class": "fact-not-emitted",
+      "applicable_to_yaml": "[]",
+      "evidence_from_statement": "沙汰之金志大有节；零火盖之严或旺金集之刚；不遇丁壬可陶熔。",
+      "note": "本条取象名「沙汰之金志大有节」。六十甲子纳音取象条：quote 以干支名领起（如「甲子天官蔵…」），statement 描述该纳音干支组合的取象与宜忌。引擎事实层没有干支/纳音 FactKey（bazi 只发 rizhu 日干、yueling 月支、rizhu_strength、geju、yongshen、shishen、shensha、kongwang）；把该干支映射成 rizhu=<其干> 会把「某干支之纳音」偷换成「日主某干」，既非原文条件，也会误命中该日主的一切盘，属编造，故不映射（同类『干支取象』在仓内已有 rizhu=<干> 的旧映射，本批不沿用该宽法）。",
+      "missing_fact": "纳音（六十甲子纳音名）与柱干支"
+    },
+    {
+      "book": "luming-nayin/li-xuzhong-mingshu",
+      "rule_id": "LIXUZHONGMIN-032",
+      "decision": "unmapped",
+      "reason_class": "fact-not-emitted",
+      "applicable_to_yaml": "[]",
+      "evidence_from_statement": "强悍刚矿之金；欲金相用在火盛处父子相乘皆为珍宝。",
+      "note": "本条取象名「强悍刚矿之金」。六十甲子纳音取象条：quote 以干支名领起（如「甲子天官蔵…」），statement 描述该纳音干支组合的取象与宜忌。引擎事实层没有干支/纳音 FactKey（bazi 只发 rizhu 日干、yueling 月支、rizhu_strength、geju、yongshen、shishen、shensha、kongwang）；把该干支映射成 rizhu=<其干> 会把「某干支之纳音」偷换成「日主某干」，既非原文条件，也会误命中该日主的一切盘，属编造，故不映射（同类『干支取象』在仓内已有 rizhu=<干> 的旧映射，本批不沿用该宽法）。",
+      "missing_fact": "纳音（六十甲子纳音名）与柱干支"
+    },
+    {
+      "book": "luming-nayin/li-xuzhong-mingshu",
+      "rule_id": "LIXUZHONGMIN-033",
+      "decision": "unmapped",
+      "reason_class": "fact-not-emitted",
+      "applicable_to_yaml": "[]",
+      "evidence_from_statement": "无资之火；金木壮旺有制得干生为厚实；禄盛无依即灰飞。",
+      "note": "本条取象名「无资之火」。六十甲子纳音取象条：quote 以干支名领起（如「甲子天官蔵…」），statement 描述该纳音干支组合的取象与宜忌。引擎事实层没有干支/纳音 FactKey（bazi 只发 rizhu 日干、yueling 月支、rizhu_strength、geju、yongshen、shishen、shensha、kongwang）；把该干支映射成 rizhu=<其干> 会把「某干支之纳音」偷换成「日主某干」，既非原文条件，也会误命中该日主的一切盘，属编造，故不映射（同类『干支取象』在仓内已有 rizhu=<干> 的旧映射，本批不沿用该宽法）。",
+      "missing_fact": "纳音（六十甲子纳音名）与柱干支"
+    },
+    {
+      "book": "luming-nayin/li-xuzhong-mingshu",
+      "rule_id": "LIXUZHONGMIN-034",
+      "decision": "unmapped",
+      "reason_class": "fact-not-emitted",
+      "applicable_to_yaml": "[]",
+      "evidence_from_statement": "平易无为之火；木旺则大炎、木多成用、火助则不清；得此无不贵豪。",
+      "note": "本条取象名「平易无为之火」。六十甲子纳音取象条：quote 以干支名领起（如「甲子天官蔵…」），statement 描述该纳音干支组合的取象与宜忌。引擎事实层没有干支/纳音 FactKey（bazi 只发 rizhu 日干、yueling 月支、rizhu_strength、geju、yongshen、shishen、shensha、kongwang）；把该干支映射成 rizhu=<其干> 会把「某干支之纳音」偷换成「日主某干」，既非原文条件，也会误命中该日主的一切盘，属编造，故不映射（同类『干支取象』在仓内已有 rizhu=<干> 的旧映射，本批不沿用该宽法）。",
+      "missing_fact": "纳音（六十甲子纳音名）与柱干支"
+    },
+    {
+      "book": "luming-nayin/li-xuzhong-mingshu",
+      "rule_id": "LIXUZHONGMIN-035",
+      "decision": "unmapped",
+      "reason_class": "fact-not-emitted",
+      "applicable_to_yaml": "[]",
+      "evidence_from_statement": "不材之木；喜逢水旺资荣；金败自然不嫌禄鬼方可高崇。",
+      "note": "本条取象名「不材之木」。六十甲子纳音取象条：quote 以干支名领起（如「甲子天官蔵…」），statement 描述该纳音干支组合的取象与宜忌。引擎事实层没有干支/纳音 FactKey（bazi 只发 rizhu 日干、yueling 月支、rizhu_strength、geju、yongshen、shishen、shensha、kongwang）；把该干支映射成 rizhu=<其干> 会把「某干支之纳音」偷换成「日主某干」，既非原文条件，也会误命中该日主的一切盘，属编造，故不映射（同类『干支取象』在仓内已有 rizhu=<干> 的旧映射，本批不沿用该宽法）。",
+      "missing_fact": "纳音（六十甲子纳音名）与柱干支"
+    },
+    {
+      "book": "luming-nayin/li-xuzhong-mingshu",
+      "rule_id": "LIXUZHONGMIN-036",
+      "decision": "unmapped",
+      "reason_class": "fact-not-emitted",
+      "applicable_to_yaml": "[]",
+      "evidence_from_statement": "粪水育苗之木；水多土而临旺皆有成就；逢败绝主富贵荣盛。",
+      "note": "本条取象名「粪水育苗之木」。六十甲子纳音取象条：quote 以干支名领起（如「甲子天官蔵…」），statement 描述该纳音干支组合的取象与宜忌。引擎事实层没有干支/纳音 FactKey（bazi 只发 rizhu 日干、yueling 月支、rizhu_strength、geju、yongshen、shishen、shensha、kongwang）；把该干支映射成 rizhu=<其干> 会把「某干支之纳音」偷换成「日主某干」，既非原文条件，也会误命中该日主的一切盘，属编造，故不映射（同类『干支取象』在仓内已有 rizhu=<干> 的旧映射，本批不沿用该宽法）。",
+      "missing_fact": "纳音（六十甲子纳音名）与柱干支"
+    },
+    {
+      "book": "luming-nayin/li-xuzhong-mingshu",
+      "rule_id": "LIXUZHONGMIN-037",
+      "decision": "unmapped",
+      "reason_class": "fact-not-emitted",
+      "applicable_to_yaml": "[]",
+      "evidence_from_statement": "气过浮虚之土；得重土相资水木不刚即享福寿。",
+      "note": "本条取象名「气过浮虚之土」。六十甲子纳音取象条：quote 以干支名领起（如「甲子天官蔵…」），statement 描述该纳音干支组合的取象与宜忌。引擎事实层没有干支/纳音 FactKey（bazi 只发 rizhu 日干、yueling 月支、rizhu_strength、geju、yongshen、shishen、shensha、kongwang）；把该干支映射成 rizhu=<其干> 会把「某干支之纳音」偷换成「日主某干」，既非原文条件，也会误命中该日主的一切盘，属编造，故不映射（同类『干支取象』在仓内已有 rizhu=<干> 的旧映射，本批不沿用该宽法）。",
+      "missing_fact": "纳音（六十甲子纳音名）与柱干支"
+    },
+    {
+      "book": "luming-nayin/li-xuzhong-mingshu",
+      "rule_id": "LIXUZHONGMIN-038",
+      "decision": "unmapped",
+      "reason_class": "fact-not-emitted",
+      "applicable_to_yaml": "[]",
+      "evidence_from_statement": "气衰就本之土；承火制木重逢木土刑冲假禄元可立功名。",
+      "note": "本条取象名「气衰就本之土」。六十甲子纳音取象条：quote 以干支名领起（如「甲子天官蔵…」），statement 描述该纳音干支组合的取象与宜忌。引擎事实层没有干支/纳音 FactKey（bazi 只发 rizhu 日干、yueling 月支、rizhu_strength、geju、yongshen、shishen、shensha、kongwang）；把该干支映射成 rizhu=<其干> 会把「某干支之纳音」偷换成「日主某干」，既非原文条件，也会误命中该日主的一切盘，属编造，故不映射（同类『干支取象』在仓内已有 rizhu=<干> 的旧映射，本批不沿用该宽法）。",
+      "missing_fact": "纳音（六十甲子纳音名）与柱干支"
+    },
+    {
+      "book": "luming-nayin/li-xuzhong-mingshu",
+      "rule_id": "LIXUZHONGMIN-039",
+      "decision": "unmapped",
+      "reason_class": "fact-not-emitted",
+      "applicable_to_yaml": "[]",
+      "evidence_from_statement": "藏用体柔之金；喜土资以旺财官不可太刚；应此富贵久远。",
+      "note": "本条取象名「藏用体柔之金」。六十甲子纳音取象条：quote 以干支名领起（如「甲子天官蔵…」），statement 描述该纳音干支组合的取象与宜忌。引擎事实层没有干支/纳音 FactKey（bazi 只发 rizhu 日干、yueling 月支、rizhu_strength、geju、yongshen、shishen、shensha、kongwang）；把该干支映射成 rizhu=<其干> 会把「某干支之纳音」偷换成「日主某干」，既非原文条件，也会误命中该日主的一切盘，属编造，故不映射（同类『干支取象』在仓内已有 rizhu=<干> 的旧映射，本批不沿用该宽法）。",
+      "missing_fact": "纳音（六十甲子纳音名）与柱干支"
+    },
+    {
+      "book": "luming-nayin/li-xuzhong-mingshu",
+      "rule_id": "LIXUZHONGMIN-040",
+      "decision": "unmapped",
+      "reason_class": "fact-not-emitted",
+      "applicable_to_yaml": "[]",
+      "evidence_from_statement": "财旺体弱之金；财命相乘喜身在生旺；得真官真气配合贵源。",
+      "note": "本条取象名「财旺体弱之金」。六十甲子纳音取象条：quote 以干支名领起（如「甲子天官蔵…」），statement 描述该纳音干支组合的取象与宜忌。引擎事实层没有干支/纳音 FactKey（bazi 只发 rizhu 日干、yueling 月支、rizhu_strength、geju、yongshen、shishen、shensha、kongwang）；把该干支映射成 rizhu=<其干> 会把「某干支之纳音」偷换成「日主某干」，既非原文条件，也会误命中该日主的一切盘，属编造，故不映射（同类『干支取象』在仓内已有 rizhu=<干> 的旧映射，本批不沿用该宽法）。",
+      "missing_fact": "纳音（六十甲子纳音名）与柱干支"
+    },
+    {
+      "book": "luming-nayin/li-xuzhong-mingshu",
+      "rule_id": "LIXUZHONGMIN-041",
+      "decision": "unmapped",
+      "reason_class": "fact-not-emitted",
+      "applicable_to_yaml": "[]",
+      "evidence_from_statement": "始壮之火；多生我或会本源却无炎光之极超卓；水轻无土亦可腾达。",
+      "note": "本条取象名「始壮之火」。六十甲子纳音取象条：quote 以干支名领起（如「甲子天官蔵…」），statement 描述该纳音干支组合的取象与宜忌。引擎事实层没有干支/纳音 FactKey（bazi 只发 rizhu 日干、yueling 月支、rizhu_strength、geju、yongshen、shishen、shensha、kongwang）；把该干支映射成 rizhu=<其干> 会把「某干支之纳音」偷换成「日主某干」，既非原文条件，也会误命中该日主的一切盘，属编造，故不映射（同类『干支取象』在仓内已有 rizhu=<干> 的旧映射，本批不沿用该宽法）。",
+      "missing_fact": "纳音（六十甲子纳音名）与柱干支"
+    },
+    {
+      "book": "luming-nayin/li-xuzhong-mingshu",
+      "rule_id": "LIXUZHONGMIN-042",
+      "decision": "unmapped",
+      "reason_class": "fact-not-emitted",
+      "applicable_to_yaml": "[]",
+      "evidence_from_statement": "进功之火；辅助不息不必旺极；木火相乘虽死败亦贵。",
+      "note": "本条取象名「进功之火」。六十甲子纳音取象条：quote 以干支名领起（如「甲子天官蔵…」），statement 描述该纳音干支组合的取象与宜忌。引擎事实层没有干支/纳音 FactKey（bazi 只发 rizhu 日干、yueling 月支、rizhu_strength、geju、yongshen、shishen、shensha、kongwang）；把该干支映射成 rizhu=<其干> 会把「某干支之纳音」偷换成「日主某干」，既非原文条件，也会误命中该日主的一切盘，属编造，故不映射（同类『干支取象』在仓内已有 rizhu=<干> 的旧映射，本批不沿用该宽法）。",
+      "missing_fact": "纳音（六十甲子纳音名）与柱干支"
+    },
+    {
+      "book": "luming-nayin/li-xuzhong-mingshu",
+      "rule_id": "LIXUZHONGMIN-043",
+      "decision": "unmapped",
+      "reason_class": "fact-not-emitted",
+      "applicable_to_yaml": "[]",
+      "evidence_from_statement": "至阴之水；发于阳明蒸气氤氲；处金木旺而冲刑得炎财盛始贵。",
+      "note": "本条取象名「至阴之水」。六十甲子纳音取象条：quote 以干支名领起（如「甲子天官蔵…」），statement 描述该纳音干支组合的取象与宜忌。引擎事实层没有干支/纳音 FactKey（bazi 只发 rizhu 日干、yueling 月支、rizhu_strength、geju、yongshen、shishen、shensha、kongwang）；把该干支映射成 rizhu=<其干> 会把「某干支之纳音」偷换成「日主某干」，既非原文条件，也会误命中该日主的一切盘，属编造，故不映射（同类『干支取象』在仓内已有 rizhu=<干> 的旧映射，本批不沿用该宽法）。",
+      "missing_fact": "纳音（六十甲子纳音名）与柱干支"
+    },
+    {
+      "book": "luming-nayin/li-xuzhong-mingshu",
+      "rule_id": "LIXUZHONGMIN-044",
+      "decision": "unmapped",
+      "reason_class": "fact-not-emitted",
+      "applicable_to_yaml": "[]",
+      "evidence_from_statement": "禄旺育生之水；水火死败禄干自旺财贵会乾方乃富贵；土在旺乡非长久。",
+      "note": "本条取象名「禄旺育生之水」。六十甲子纳音取象条：quote 以干支名领起（如「甲子天官蔵…」），statement 描述该纳音干支组合的取象与宜忌。引擎事实层没有干支/纳音 FactKey（bazi 只发 rizhu 日干、yueling 月支、rizhu_strength、geju、yongshen、shishen、shensha、kongwang）；把该干支映射成 rizhu=<其干> 会把「某干支之纳音」偷换成「日主某干」，既非原文条件，也会误命中该日主的一切盘，属编造，故不映射（同类『干支取象』在仓内已有 rizhu=<干> 的旧映射，本批不沿用该宽法）。",
+      "missing_fact": "纳音（六十甲子纳音名）与柱干支"
+    },
+    {
+      "book": "luming-nayin/li-xuzhong-mingshu",
+      "rule_id": "LIXUZHONGMIN-045",
+      "decision": "unmapped",
+      "reason_class": "fact-not-emitted",
+      "applicable_to_yaml": "[]",
+      "evidence_from_statement": "柔顺发生之土；喜临四季得木为荣；独居水火荣方未得尊高。",
+      "note": "本条取象名「柔顺发生之土」。六十甲子纳音取象条：quote 以干支名领起（如「甲子天官蔵…」），statement 描述该纳音干支组合的取象与宜忌。引擎事实层没有干支/纳音 FactKey（bazi 只发 rizhu 日干、yueling 月支、rizhu_strength、geju、yongshen、shishen、shensha、kongwang）；把该干支映射成 rizhu=<其干> 会把「某干支之纳音」偷换成「日主某干」，既非原文条件，也会误命中该日主的一切盘，属编造，故不映射（同类『干支取象』在仓内已有 rizhu=<干> 的旧映射，本批不沿用该宽法）。",
+      "missing_fact": "纳音（六十甲子纳音名）与柱干支"
+    },
+    {
+      "book": "luming-nayin/li-xuzhong-mingshu",
+      "rule_id": "LIXUZHONGMIN-046",
+      "decision": "unmapped",
+      "reason_class": "fact-not-emitted",
+      "applicable_to_yaml": "[]",
+      "evidence_from_statement": "子旺母衰之土；喜火土荣庆从革之地；水轻木柔亦滋生之德。",
+      "note": "本条取象名「子旺母衰之土」。六十甲子纳音取象条：quote 以干支名领起（如「甲子天官蔵…」），statement 描述该纳音干支组合的取象与宜忌。引擎事实层没有干支/纳音 FactKey（bazi 只发 rizhu 日干、yueling 月支、rizhu_strength、geju、yongshen、shishen、shensha、kongwang）；把该干支映射成 rizhu=<其干> 会把「某干支之纳音」偷换成「日主某干」，既非原文条件，也会误命中该日主的一切盘，属编造，故不映射（同类『干支取象』在仓内已有 rizhu=<干> 的旧映射，本批不沿用该宽法）。",
+      "missing_fact": "纳音（六十甲子纳音名）与柱干支"
+    },
+    {
+      "book": "luming-nayin/li-xuzhong-mingshu",
+      "rule_id": "LIXUZHONGMIN-047",
+      "decision": "unmapped",
+      "reason_class": "fact-not-emitted",
+      "applicable_to_yaml": "[]",
+      "evidence_from_statement": "钝弱成用之金；火轻金重魁罡相乘可休逸福禄；忌木火极则迍蹇。",
+      "note": "本条取象名「钝弱成用之金」。六十甲子纳音取象条：quote 以干支名领起（如「甲子天官蔵…」），statement 描述该纳音干支组合的取象与宜忌。引擎事实层没有干支/纳音 FactKey（bazi 只发 rizhu 日干、yueling 月支、rizhu_strength、geju、yongshen、shishen、shensha、kongwang）；把该干支映射成 rizhu=<其干> 会把「某干支之纳音」偷换成「日主某干」，既非原文条件，也会误命中该日主的一切盘，属编造，故不映射（同类『干支取象』在仓内已有 rizhu=<干> 的旧映射，本批不沿用该宽法）。",
+      "missing_fact": "纳音（六十甲子纳音名）与柱干支"
+    },
+    {
+      "book": "luming-nayin/li-xuzhong-mingshu",
+      "rule_id": "LIXUZHONGMIN-048",
+      "decision": "unmapped",
+      "reason_class": "fact-not-emitted",
+      "applicable_to_yaml": "[]",
+      "evidence_from_statement": "木旺禄休之金；得平火之革制于克伐；金水冲击得平安守职。",
+      "note": "本条取象名「木旺禄休之金」。六十甲子纳音取象条：quote 以干支名领起（如「甲子天官蔵…」），statement 描述该纳音干支组合的取象与宜忌。引擎事实层没有干支/纳音 FactKey（bazi 只发 rizhu 日干、yueling 月支、rizhu_strength、geju、yongshen、shishen、shensha、kongwang）；把该干支映射成 rizhu=<其干> 会把「某干支之纳音」偷换成「日主某干」，既非原文条件，也会误命中该日主的一切盘，属编造，故不映射（同类『干支取象』在仓内已有 rizhu=<干> 的旧映射，本批不沿用该宽法）。",
+      "missing_fact": "纳音（六十甲子纳音名）与柱干支"
+    },
+    {
+      "book": "luming-nayin/li-xuzhong-mingshu",
+      "rule_id": "LIXUZHONGMIN-049",
+      "decision": "unmapped",
+      "reason_class": "fact-not-emitted",
+      "applicable_to_yaml": "[]",
+      "evidence_from_statement": "体柔用刚之木；居旺相得金遇贵地无火可扬名当世。",
+      "note": "本条取象名「体柔用刚之木」。六十甲子纳音取象条：quote 以干支名领起（如「甲子天官蔵…」），statement 描述该纳音干支组合的取象与宜忌。引擎事实层没有干支/纳音 FactKey（bazi 只发 rizhu 日干、yueling 月支、rizhu_strength、geju、yongshen、shishen、shensha、kongwang）；把该干支映射成 rizhu=<其干> 会把「某干支之纳音」偷换成「日主某干」，既非原文条件，也会误命中该日主的一切盘，属编造，故不映射（同类『干支取象』在仓内已有 rizhu=<干> 的旧映射，本批不沿用该宽法）。",
+      "missing_fact": "纳音（六十甲子纳音名）与柱干支"
+    },
+    {
+      "book": "luming-nayin/li-xuzhong-mingshu",
+      "rule_id": "LIXUZHONGMIN-050",
+      "decision": "unmapped",
+      "reason_class": "fact-not-emitted",
+      "applicable_to_yaml": "[]",
+      "evidence_from_statement": "刚柔相济之木；水土承旺方生育利物；金制生成皆可立功。",
+      "note": "本条取象名「刚柔相济之木」。六十甲子纳音取象条：quote 以干支名领起（如「甲子天官蔵…」），statement 描述该纳音干支组合的取象与宜忌。引擎事实层没有干支/纳音 FactKey（bazi 只发 rizhu 日干、yueling 月支、rizhu_strength、geju、yongshen、shishen、shensha、kongwang）；把该干支映射成 rizhu=<其干> 会把「某干支之纳音」偷换成「日主某干」，既非原文条件，也会误命中该日主的一切盘，属编造，故不映射（同类『干支取象』在仓内已有 rizhu=<干> 的旧映射，本批不沿用该宽法）。",
+      "missing_fact": "纳音（六十甲子纳音名）与柱干支"
+    },
+    {
+      "book": "luming-nayin/li-xuzhong-mingshu",
+      "rule_id": "LIXUZHONGMIN-051",
+      "decision": "unmapped",
+      "reason_class": "fact-not-emitted",
+      "applicable_to_yaml": "[]",
+      "evidence_from_statement": "渊深处静之水；资以木旺土衰则奇特贵异。",
+      "note": "本条取象名「渊深处静之水」。六十甲子纳音取象条：quote 以干支名领起（如「甲子天官蔵…」），statement 描述该纳音干支组合的取象与宜忌。引擎事实层没有干支/纳音 FactKey（bazi 只发 rizhu 日干、yueling 月支、rizhu_strength、geju、yongshen、shishen、shensha、kongwang）；把该干支映射成 rizhu=<其干> 会把「某干支之纳音」偷换成「日主某干」，既非原文条件，也会误命中该日主的一切盘，属编造，故不映射（同类『干支取象』在仓内已有 rizhu=<干> 的旧映射，本批不沿用该宽法）。",
+      "missing_fact": "纳音（六十甲子纳音名）与柱干支"
+    },
+    {
+      "book": "luming-nayin/li-xuzhong-mingshu",
+      "rule_id": "LIXUZHONGMIN-052",
+      "decision": "unmapped",
+      "reason_class": "fact-not-emitted",
+      "applicable_to_yaml": "[]",
+      "evidence_from_statement": "死中受气之水；败无妨；会源于音地未有不达；喜土而清。",
+      "note": "本条取象名「死中受气之水」。六十甲子纳音取象条：quote 以干支名领起（如「甲子天官蔵…」），statement 描述该纳音干支组合的取象与宜忌。引擎事实层没有干支/纳音 FactKey（bazi 只发 rizhu 日干、yueling 月支、rizhu_strength、geju、yongshen、shishen、shensha、kongwang）；把该干支映射成 rizhu=<其干> 会把「某干支之纳音」偷换成「日主某干」，既非原文条件，也会误命中该日主的一切盘，属编造，故不映射（同类『干支取象』在仓内已有 rizhu=<干> 的旧映射，本批不沿用该宽法）。",
+      "missing_fact": "纳音（六十甲子纳音名）与柱干支"
+    },
+    {
+      "book": "luming-nayin/li-xuzhong-mingshu",
+      "rule_id": "LIXUZHONGMIN-053",
+      "decision": "unmapped",
+      "reason_class": "fact-not-emitted",
+      "applicable_to_yaml": "[]",
+      "evidence_from_statement": "发施养生之土；喜火助不畏掩冲自然荣贵。",
+      "note": "本条取象名「发施养生之土」。六十甲子纳音取象条：quote 以干支名领起（如「甲子天官蔵…」），statement 描述该纳音干支组合的取象与宜忌。引擎事实层没有干支/纳音 FactKey（bazi 只发 rizhu 日干、yueling 月支、rizhu_strength、geju、yongshen、shishen、shensha、kongwang）；把该干支映射成 rizhu=<其干> 会把「某干支之纳音」偷换成「日主某干」，既非原文条件，也会误命中该日主的一切盘，属编造，故不映射（同类『干支取象』在仓内已有 rizhu=<干> 的旧映射，本批不沿用该宽法）。",
+      "missing_fact": "纳音（六十甲子纳音名）与柱干支"
+    },
+    {
+      "book": "luming-nayin/li-xuzhong-mingshu",
+      "rule_id": "LIXUZHONGMIN-054",
+      "decision": "unmapped",
+      "reason_class": "fact-not-emitted",
+      "applicable_to_yaml": "[]",
+      "evidence_from_statement": "绝中受气之土；喜土助不畏死败；朝命建元可文章妙选。",
+      "note": "本条取象名「绝中受气之土」。六十甲子纳音取象条：quote 以干支名领起（如「甲子天官蔵…」），statement 描述该纳音干支组合的取象与宜忌。引擎事实层没有干支/纳音 FactKey（bazi 只发 rizhu 日干、yueling 月支、rizhu_strength、geju、yongshen、shishen、shensha、kongwang）；把该干支映射成 rizhu=<其干> 会把「某干支之纳音」偷换成「日主某干」，既非原文条件，也会误命中该日主的一切盘，属编造，故不映射（同类『干支取象』在仓内已有 rizhu=<干> 的旧映射，本批不沿用该宽法）。",
+      "missing_fact": "纳音（六十甲子纳音名）与柱干支"
+    },
+    {
+      "book": "luming-nayin/li-xuzhong-mingshu",
+      "rule_id": "LIXUZHONGMIN-055",
+      "decision": "unmapped",
+      "reason_class": "fact-not-emitted",
+      "applicable_to_yaml": "[]",
+      "evidence_from_statement": "神发离明之火；旺中受绝喜木助衰方忌火乘已旺生；应此必魁英。",
+      "note": "本条取象名「神发离明之火」。六十甲子纳音取象条：quote 以干支名领起（如「甲子天官蔵…」），statement 描述该纳音干支组合的取象与宜忌。引擎事实层没有干支/纳音 FactKey（bazi 只发 rizhu 日干、yueling 月支、rizhu_strength、geju、yongshen、shishen、shensha、kongwang）；把该干支映射成 rizhu=<其干> 会把「某干支之纳音」偷换成「日主某干」，既非原文条件，也会误命中该日主的一切盘，属编造，故不映射（同类『干支取象』在仓内已有 rizhu=<干> 的旧映射，本批不沿用该宽法）。",
+      "missing_fact": "纳音（六十甲子纳音名）与柱干支"
+    },
+    {
+      "book": "luming-nayin/li-xuzhong-mingshu",
+      "rule_id": "LIXUZHONGMIN-056",
+      "decision": "unmapped",
+      "reason_class": "fact-not-emitted",
+      "applicable_to_yaml": "[]",
+      "evidence_from_statement": "成功之火；得季夏炎阳守小吉；甲己扶持不须更旺。",
+      "note": "本条取象名「成功之火」。六十甲子纳音取象条：quote 以干支名领起（如「甲子天官蔵…」），statement 描述该纳音干支组合的取象与宜忌。引擎事实层没有干支/纳音 FactKey（bazi 只发 rizhu 日干、yueling 月支、rizhu_strength、geju、yongshen、shishen、shensha、kongwang）；把该干支映射成 rizhu=<其干> 会把「某干支之纳音」偷换成「日主某干」，既非原文条件，也会误命中该日主的一切盘，属编造，故不映射（同类『干支取象』在仓内已有 rizhu=<干> 的旧映射，本批不沿用该宽法）。",
+      "missing_fact": "纳音（六十甲子纳音名）与柱干支"
+    },
+    {
+      "book": "luming-nayin/li-xuzhong-mingshu",
+      "rule_id": "LIXUZHONGMIN-057",
+      "decision": "unmapped",
+      "reason_class": "fact-not-emitted",
+      "applicable_to_yaml": "[]",
+      "evidence_from_statement": "未坚柔末之木；春相夏旺金重得火土重得水则出常之器。",
+      "note": "本条取象名「未坚柔末之木」。六十甲子纳音取象条：quote 以干支名领起（如「甲子天官蔵…」），statement 描述该纳音干支组合的取象与宜忌。引擎事实层没有干支/纳音 FactKey（bazi 只发 rizhu 日干、yueling 月支、rizhu_strength、geju、yongshen、shishen、shensha、kongwang）；把该干支映射成 rizhu=<其干> 会把「某干支之纳音」偷换成「日主某干」，既非原文条件，也会误命中该日主的一切盘，属编造，故不映射（同类『干支取象』在仓内已有 rizhu=<干> 的旧映射，本批不沿用该宽法）。",
+      "missing_fact": "纳音（六十甲子纳音名）与柱干支"
+    },
+    {
+      "book": "luming-nayin/li-xuzhong-mingshu",
+      "rule_id": "LIXUZHONGMIN-058",
+      "decision": "unmapped",
+      "reason_class": "fact-not-emitted",
+      "applicable_to_yaml": "[]",
+      "evidence_from_statement": "包秀结英之木；喜生旺忌见金多；土水相乘为物之贵。",
+      "note": "本条取象名「包秀结英之木」。六十甲子纳音取象条：quote 以干支名领起（如「甲子天官蔵…」），statement 描述该纳音干支组合的取象与宜忌。引擎事实层没有干支/纳音 FactKey（bazi 只发 rizhu 日干、yueling 月支、rizhu_strength、geju、yongshen、shishen、shensha、kongwang）；把该干支映射成 rizhu=<其干> 会把「某干支之纳音」偷换成「日主某干」，既非原文条件，也会误命中该日主的一切盘，属编造，故不映射（同类『干支取象』在仓内已有 rizhu=<干> 的旧映射，本批不沿用该宽法）。",
+      "missing_fact": "纳音（六十甲子纳音名）与柱干支"
+    },
+    {
+      "book": "luming-nayin/li-xuzhong-mingshu",
+      "rule_id": "LIXUZHONGMIN-059",
+      "decision": "unmapped",
+      "reason_class": "fact-not-emitted",
+      "applicable_to_yaml": "[]",
+      "evidence_from_statement": "杳之水；喜死败要土之击发能博施之功及物。",
+      "note": "本条取象名「杳之水」。六十甲子纳音取象条：quote 以干支名领起（如「甲子天官蔵…」），statement 描述该纳音干支组合的取象与宜忌。引擎事实层没有干支/纳音 FactKey（bazi 只发 rizhu 日干、yueling 月支、rizhu_strength、geju、yongshen、shishen、shensha、kongwang）；把该干支映射成 rizhu=<其干> 会把「某干支之纳音」偷换成「日主某干」，既非原文条件，也会误命中该日主的一切盘，属编造，故不映射（同类『干支取象』在仓内已有 rizhu=<干> 的旧映射，本批不沿用该宽法）。",
+      "missing_fact": "纳音（六十甲子纳音名）与柱干支"
+    },
+    {
+      "book": "luming-nayin/li-xuzhong-mingshu",
+      "rule_id": "LIXUZHONGMIN-060",
+      "decision": "unmapped",
+      "reason_class": "fact-not-emitted",
+      "applicable_to_yaml": "[]",
+      "evidence_from_statement": "始进成终之水；喜逢贵地忌在禄乡；不可守常须升雨雾散江河乃大用。",
+      "note": "本条取象名「始进成终之水」。六十甲子纳音取象条：quote 以干支名领起（如「甲子天官蔵…」），statement 描述该纳音干支组合的取象与宜忌。引擎事实层没有干支/纳音 FactKey（bazi 只发 rizhu 日干、yueling 月支、rizhu_strength、geju、yongshen、shishen、shensha、kongwang）；把该干支映射成 rizhu=<其干> 会把「某干支之纳音」偷换成「日主某干」，既非原文条件，也会误命中该日主的一切盘，属编造，故不映射（同类『干支取象』在仓内已有 rizhu=<干> 的旧映射，本批不沿用该宽法）。",
+      "missing_fact": "纳音（六十甲子纳音名）与柱干支"
+    },
+    {
+      "book": "luming-nayin/li-xuzhong-mingshu",
+      "rule_id": "LIXUZHONGMIN-063",
+      "decision": "mapped",
+      "applicable_to_yaml": "[{key: shensha, value: 天乙贵人}]",
+      "evidence_from_statement": "天乙貴人者三命中最吉之神也若人遇之主榮名早達官祿易進…大小運行年至此亦主遷官進財",
+      "note": "原文以「天乙贵人」为本条对象、以「若人遇之」为条件——这是产出事实 shensha 的合法取值（facts-sample 的 bazi 样本里确有 shensha=天乙贵人）。故映为 {key: shensha, value: 天乙贵人}。后半「大小运行年至此」涉及运/年层，未产出，不写入谓词（谓词只判本盘相关性，不是逐句转录）。"
+    },
+    {
+      "book": "luming-nayin/li-xuzhong-mingshu",
+      "rule_id": "LIXUZHONGMIN-065",
+      "decision": "unmapped",
+      "reason_class": "not-a-condition",
+      "applicable_to_yaml": "[]",
+      "evidence_from_statement": "贵合则官位穹崇所作契合；贵食则禄丰足所成造望；二者兼之官高禄重。",
+      "note": "取法：「贵合/贵食」怎么取（甲戊庚贵在丑未、甲得己丑己未…；甲食丙乙食丁…），是标明哪些干支组合算贵合贵食，不是「何时用本条」。引擎也没有柱干支与十神-神煞同柱关系。"
+    },
+    {
+      "book": "luming-nayin/li-xuzhong-mingshu",
+      "rule_id": "LIXUZHONGMIN-066",
+      "decision": "unmapped",
+      "reason_class": "fact-not-emitted",
+      "applicable_to_yaml": "[]",
+      "evidence_from_statement": "贵人交互人多贵；旺气相乘馆殿资；五行不可伤；月日时互换见贵太岁不带者不贵。",
+      "note": "条件为「月日时互换见贵」——须各柱天干互换取贵，并参旺气相乘、五行不可伤、太岁带不带；引擎只发日干 rizhu（无年/月/时干），亦无柱间互换关系与流年太岁。",
+      "missing_fact": "年/月/时柱天干互换关系与流年（太岁）"
+    },
+    {
+      "book": "luming-nayin/li-xuzhong-mingshu",
+      "rule_id": "LIXUZHONGMIN-070",
+      "decision": "unmapped",
+      "reason_class": "not-a-condition",
+      "applicable_to_yaml": "[]",
+      "evidence_from_statement": "寅午戌火体、亥卯未木体、申子辰水体、巳酉丑金体；土则从四事成之。",
+      "note": "三合局体表（寅午戌火体、亥卯未木体、申子辰水体、巳酉丑金体，土从四事成之）：作业书点名「三合组合表」属 not-a-condition。"
+    },
+    {
+      "book": "luming-nayin/li-xuzhong-mingshu",
+      "rule_id": "LIXUZHONGMIN-071",
+      "decision": "unmapped",
+      "reason_class": "not-a-condition",
+      "applicable_to_yaml": "[]",
+      "evidence_from_statement": "干支配数：甲己子午9、乙庚丑未8、丙辛寅申7、丁壬卯酉6、戊癸辰戌5、巳亥支数4。除6/5之数则得纳音之用。",
+      "note": "起例/算法：干支配数（甲己子午九…巳亥支数四）与「除六五之数得纳音之用」，是算纳音的方法，不是条件。"
+    },
+    {
+      "book": "luming-nayin/li-xuzhong-mingshu",
+      "rule_id": "LIXUZHONGMIN-073",
+      "decision": "unmapped",
+      "reason_class": "not-a-condition",
+      "applicable_to_yaml": "[]",
+      "evidence_from_statement": "智仁则清（水木），礼义则浊（火金），信从四时之气（土）。",
+      "note": "取象表：五行配五常（水智木仁火礼土信金义）与清浊之分，无盘面取值。"
+    },
+    {
+      "book": "luming-nayin/li-xuzhong-mingshu",
+      "rule_id": "LIXUZHONGMIN-074",
+      "decision": "unmapped",
+      "reason_class": "not-a-condition",
+      "applicable_to_yaml": "[]",
+      "evidence_from_statement": "水多沉潜伏溺、火多崇礼贪饕、木多柔懦泛交、金多刚直尚勇、土多重厚藏密；各得多则各显其性。",
+      "note": "取象/体例：五行偏多则各显其性（水多沉潜、火多崇礼贪饕、木多柔懦、金多刚直、土多重厚）；性质是性情取象表，且「多」无量化、引擎也不产出五行多寡计数。"
+    },
+    {
+      "book": "luming-nayin/li-xuzhong-mingshu",
+      "rule_id": "LIXUZHONGMIN-077",
+      "decision": "unmapped",
+      "reason_class": "not-a-condition",
+      "applicable_to_yaml": "[]",
+      "evidence_from_statement": "胎主父母祖宗十分主事二分；月主时气十分主事六分；日主未得气十分主事八分；时主用度十分。",
+      "note": "体例：胎主父母祖宗十分主事二分、月主时气十分主事六分、日主未得气十分主事八分、时主用度十分——分主权重之体例。"
+    },
+    {
+      "book": "luming-nayin/li-xuzhong-mingshu",
+      "rule_id": "LIXUZHONGMIN-078",
+      "decision": "unmapped",
+      "reason_class": "fact-not-emitted",
+      "applicable_to_yaml": "[]",
+      "evidence_from_statement": "主本保合未有贫贱之人；时日乖违岂有久荣之理。",
+      "note": "「主本保合」＝年柱(主)与日柱(本)的干支相生相合，「时日乖违」＝日时与年柱乖违；须各柱干支及柱间生克（注：年克日减力、日克年多迍剥），引擎无柱干支与柱间关系。",
+      "missing_fact": "四柱干支及柱间生克（主本/时日关系）"
+    },
+    {
+      "book": "luming-nayin/li-xuzhong-mingshu",
+      "rule_id": "LIXUZHONGMIN-079",
+      "decision": "unmapped",
+      "reason_class": "fact-not-emitted",
+      "applicable_to_yaml": "[]",
+      "evidence_from_statement": "三元入墓日时自旺，虽运并绝逢鬼，鬼亦不能取。",
+      "note": "需判三元（干/支/纳音）入墓、日时自旺、大运并绝逢鬼三事，引擎皆不产出（无纳音、无墓库状态、无运干支）。",
+      "missing_fact": "三元入墓状态、日时旺衰与大运干支"
+    },
+    {
+      "book": "luming-nayin/li-xuzhong-mingshu",
+      "rule_id": "LIXUZHONGMIN-080",
+      "decision": "unmapped",
+      "reason_class": "not-a-condition",
+      "applicable_to_yaml": "[]",
+      "evidence_from_statement": "五行相敌轻重相等；遇鬼二则为凶，一重为鬼犹凶中反吉。",
+      "note": "体例：五行相敌轻重相等时的吉凶权衡（遇鬼二则为凶、一重为鬼犹凶中反吉），无具体盘面取值。"
+    },
+    {
+      "book": "luming-nayin/li-xuzhong-mingshu",
+      "rule_id": "LIXUZHONGMIN-081",
+      "decision": "unmapped",
+      "reason_class": "not-a-condition",
+      "applicable_to_yaml": "[]",
+      "evidence_from_statement": "尊生卑曰宝，卑生尊曰义，上尅下曰制，下贼上曰伐；以胎月日时上下相生相尅判。",
+      "note": "取法/定义：宝义制伐四事（尊生卑曰宝、卑生尊曰义、上克下曰制、下贼上曰伐）与以胎月日时上下相生相克判之，是界说。"
+    },
+    {
+      "book": "luming-nayin/li-xuzhong-mingshu",
+      "rule_id": "LIXUZHONGMIN-085",
+      "decision": "unmapped",
+      "reason_class": "fact-not-emitted",
+      "applicable_to_yaml": "[]",
+      "evidence_from_statement": "天月德临月将事合神；金印垂腰之贵；递相揖让调鼎位极人臣。",
+      "note": "条件是天月德临月将事合神（三者相合）；引擎神煞只发本命层有限名目（月德贵人在样本内），无天德贵人、无月将（月建+节气），亦无柱间合神。只取「月德贵人」会丢掉本条核心的月将与合神，按作业书「缺一块就不映射」从严留空。",
+      "missing_fact": "天德贵人、月将、事合神（柱间合神）"
+    },
+    {
+      "book": "luming-nayin/li-xuzhong-mingshu",
+      "rule_id": "LIXUZHONGMIN-088",
+      "decision": "unmapped",
+      "reason_class": "not-a-condition",
+      "applicable_to_yaml": "[]",
+      "evidence_from_statement": "子息先明生气或用尅以推之；自生自旺看运元胎月。",
+      "note": "取法：推子息先明生气或用克以推之，再自生自旺看运元胎月——推子息之法，不是适用条件。"
+    },
+    {
+      "book": "luming-nayin/li-xuzhong-mingshu",
+      "rule_id": "LIXUZHONGMIN-089",
+      "decision": "unmapped",
+      "reason_class": "not-a-condition",
+      "applicable_to_yaml": "[]",
+      "evidence_from_statement": "刑聚败极／四柱不收／五行未备／数无取用／一方前后／柱多隔角／真者失时／假者殃尅／主本倒乱／父子乖违皆为贫贱之格。",
+      "note": "体例/格名表：刑聚败极、四柱不收、五行未备、数无取用、一方前后、柱多隔角、真者失时、假者殃克、主本倒乱、父子乖违十种贫贱格的定义（quote 逐格举干支为例）。geju 虽为开放值域，但这些格名不由引擎产出，且格名本身即取法定义。"
+    },
+    {
+      "book": "luming-nayin/li-xuzhong-mingshu",
+      "rule_id": "LIXUZHONGMIN-090",
+      "decision": "unmapped",
+      "reason_class": "not-a-condition",
+      "applicable_to_yaml": "[]",
+      "evidence_from_statement": "真者失时假者殃尅；本气绝而花繁纵子成而味拙。",
+      "note": "通论：真者失时假者殃克、本气绝而花繁纵子成而味拙，属论理之辞，无盘面条件。"
+    },
+    {
+      "book": "luming-nayin/li-xuzhong-mingshu",
+      "rule_id": "LIXUZHONGMIN-093",
+      "decision": "unmapped",
+      "reason_class": "not-a-condition",
+      "applicable_to_yaml": "[]",
+      "evidence_from_statement": "男一岁起寅、女一岁起申；以建元论胜负，助岁运依吉凶。",
+      "note": "起例：男一岁起寅、女一岁起申的小运起法，以建元论胜负。"
+    },
+    {
+      "book": "luming-nayin/li-xuzhong-mingshu",
+      "rule_id": "LIXUZHONGMIN-094",
+      "decision": "unmapped",
+      "reason_class": "not-a-condition",
+      "applicable_to_yaml": "[]",
+      "evidence_from_statement": "禄/命/身金入土干支或纳音下；不利君子利小人；子弱母胜。",
+      "note": "体例/限名：藏限（禄金入土干下、命金入土支下、身金入土纳音下）等运限名相定义，且须纳音。"
+    },
+    {
+      "book": "luming-nayin/li-xuzhong-mingshu",
+      "rule_id": "LIXUZHONGMIN-095",
+      "decision": "unmapped",
+      "reason_class": "fact-not-emitted",
+      "applicable_to_yaml": "[]",
+      "evidence_from_statement": "三元值鬼+二运三刑+并冲柱主本与行年不相承=黄泉失所之命。",
+      "note": "黄泉失所之命＝三元值鬼＋二运见三刑并冲＋柱主本与行年不相承，全落在大运/流年层，引擎只有本命事实与大运层十神，无运干支、无三刑冲关系、无行年。",
+      "missing_fact": "大运/流年干支与三刑、冲柱主本之关系"
+    },
+    {
+      "book": "luming-nayin/li-xuzhong-mingshu",
+      "rule_id": "LIXUZHONGMIN-096",
+      "decision": "unmapped",
+      "reason_class": "fact-not-emitted",
+      "applicable_to_yaml": "[]",
+      "evidence_from_statement": "金破碎而不返；运至伏吟逢丧吊白衣飞廉孤寡岁刑尅身。",
+      "note": "破碎限须运至伏吟再逢丧吊、白衣、飞廉、孤寡、岁刑克身；这些神煞名引擎均不产出（facts-sample 神煞仅劫煞/国印贵人/天乙贵人/天医/天喜/太极贵人/孤辰/学堂/将星/月德贵人/灾煞/红艳/羊刃/飞刃/驿马），且无运层伏吟。",
+      "missing_fact": "大运伏吟与丧吊/白衣/飞廉/孤寡/岁刑等神煞名"
+    },
+    {
+      "book": "luming-nayin/li-xuzhong-mingshu",
+      "rule_id": "LIXUZHONGMIN-101",
+      "decision": "unmapped",
+      "reason_class": "not-a-condition",
+      "applicable_to_yaml": "[]",
+      "evidence_from_statement": "土本无一方之气，从水妻之义；阴阳各逐四时成就；土育于寅。",
+      "note": "体例：土本无一方之气、从水妻之义、阴阳各逐四时成就、土育于寅。"
+    },
+    {
+      "book": "luming-nayin/li-xuzhong-mingshu",
+      "rule_id": "LIXUZHONGMIN-LX-01",
+      "decision": "unmapped",
+      "reason_class": "fact-not-emitted",
+      "applicable_to_yaml": "[]",
+      "evidence_from_statement": "库墓守财之金；不嫌鬼旺、喜禄财；水土砥砺亦可成器。",
+      "note": "本条取象名「库墓守财之金」。六十甲子纳音取象条：quote 以干支名领起（如「甲子天官蔵…」），statement 描述该纳音干支组合的取象与宜忌。引擎事实层没有干支/纳音 FactKey（bazi 只发 rizhu 日干、yueling 月支、rizhu_strength、geju、yongshen、shishen、shensha、kongwang）；把该干支映射成 rizhu=<其干> 会把「某干支之纳音」偷换成「日主某干」，既非原文条件，也会误命中该日主的一切盘，属编造，故不映射（同类『干支取象』在仓内已有 rizhu=<干> 的旧映射，本批不沿用该宽法）。",
+      "missing_fact": "纳音（六十甲子纳音名）与柱干支"
+    },
+    {
+      "book": "luming-nayin/li-xuzhong-mingshu",
+      "rule_id": "LIXUZHONGMIN-LX-03",
+      "decision": "unmapped",
+      "reason_class": "not-a-condition",
+      "applicable_to_yaml": "[]",
+      "evidence_from_statement": "坤为土，乾为金，金亦土也，为水母。",
+      "note": "取象/体例：坤为土、乾为金、金亦土也为水母，属卦象配五行，无盘面条件。"
+    },
+    {
+      "book": "luming-nayin/li-xuzhong-mingshu",
+      "rule_id": "LIXUZHONGMIN-LX-04",
+      "decision": "unmapped",
+      "reason_class": "not-a-condition",
+      "applicable_to_yaml": "[]",
+      "evidence_from_statement": "干主名禄贵权（衣食受用基），支主金珠积富（得失荣枯本），纳音主才能器识（人伦亲属宗）。",
+      "note": "体例：干主名禄贵权（衣食受用之基）、支主金珠积富（得失荣枯之本）、纳音主才能器识（人伦亲属之宗）的三元分主。"
+    },
+    {
+      "book": "luming-nayin/li-xuzhong-mingshu",
+      "rule_id": "LIXUZHONGMIN-LX-05",
+      "decision": "unmapped",
+      "reason_class": "fact-not-emitted",
+      "applicable_to_yaml": "[]",
+      "evidence_from_statement": "死败全逢刑犹寿考；四仲时生主无妨败；年死败有生主有寿及父母。",
+      "note": "「四仲时生」落在时支（子午卯酉）、「年死败有生」落在年支；引擎无时支、年支事实。",
+      "missing_fact": "时支（四仲）、年支（年死败）"
+    },
+    {
+      "book": "luming-nayin/li-xuzhong-mingshu",
+      "rule_id": "LIXUZHONGMIN-LX-06",
+      "decision": "unmapped",
+      "reason_class": "not-a-condition",
+      "applicable_to_yaml": "[]",
+      "evidence_from_statement": "生月为父、胎月为母、身尅为妻、妻生为子、时生是妻子之数；成败自然。",
+      "note": "体例：生月为父、胎月为母、身克为妻、妻生为子、时生是妻子之数的六亲分位。"
+    },
+    {
+      "book": "luming-nayin/li-xuzhong-mingshu",
+      "rule_id": "LIXUZHONGMIN-LX-07",
+      "decision": "unmapped",
+      "reason_class": "not-a-condition",
+      "applicable_to_yaml": "[]",
+      "evidence_from_statement": "阳男阴女顺、阴男阳女逆；十干分月、三日成年。",
+      "note": "起例：阳男阴女顺、阴男阳女逆，十干分为月、三日成一年——大运排法。作业书点名起例属 not-a-condition。"
+    },
+    {
+      "book": "luming-nayin/li-xuzhong-mingshu",
+      "rule_id": "LIXUZHONGMIN-LX-08",
+      "decision": "unmapped",
+      "reason_class": "not-a-condition",
+      "applicable_to_yaml": "[]",
+      "evidence_from_statement": "60甲子中12位神头禄（戊辰/戊戌/己丑/己未/丙午/丁巳/壬子/癸亥/甲寅/乙卯/庚申/辛酉），阴阳专位天地神会。",
+      "note": "纳音/神头禄表：六十甲子中十二位神头禄（戊辰/戊戌/己丑/己未/丙午/丁巳/壬子/癸亥/甲寅/乙卯/庚申/辛酉），阴阳专位天地神会，属表。"
+    },
+    {
+      "book": "luming-nayin/li-xuzhong-mingshu",
+      "rule_id": "LX-01",
+      "decision": "unmapped",
+      "reason_class": "fact-not-emitted",
+      "applicable_to_yaml": "[]",
+      "evidence_from_statement": "子旺母衰之金，溺水下韬光，须假火革；命入贵格明暗取官。",
+      "note": "本条取象名「子旺母衰之金，溺水下韬光，须」。六十甲子纳音取象条：quote 以干支名领起（如「甲子天官蔵…」），statement 描述该纳音干支组合的取象与宜忌。引擎事实层没有干支/纳音 FactKey（bazi 只发 rizhu 日干、yueling 月支、rizhu_strength、geju、yongshen、shishen、shensha、kongwang）；把该干支映射成 rizhu=<其干> 会把「某干支之纳音」偷换成「日主某干」，既非原文条件，也会误命中该日主的一切盘，属编造，故不映射（同类『干支取象』在仓内已有 rizhu=<干> 的旧映射，本批不沿用该宽法）。",
+      "missing_fact": "纳音（六十甲子纳音名）与柱干支"
+    },
+    {
+      "book": "luming-nayin/li-xuzhong-mingshu",
+      "rule_id": "LX-02",
+      "decision": "unmapped",
+      "reason_class": "not-a-condition",
+      "applicable_to_yaml": "[]",
+      "evidence_from_statement": "此六十位五行支干相乘要分轻重：金溺水下、火出水上；木不得金之所制木无成；金不得火之所制金无成。",
+      "note": "体例：总说六十位五行支干相乘要分轻重（金溺水下、火出水上；木不得金制则无成、金不得火制则无成），是论命纲目，条件里的举例（甲子乙亥、辛亥之金）皆为干支名，无盘面适用取值。"
+    },
+    {
+      "book": "luming-nayin/li-xuzhong-mingshu",
+      "rule_id": "LX-03",
+      "decision": "unmapped",
+      "reason_class": "not-a-condition",
+      "applicable_to_yaml": "[]",
+      "evidence_from_statement": "清气阳为天，浊气阴为地；造化始于无相因而三生。",
+      "note": "通论：清气阳为天、浊气阴为地、造化始于无相因而三生，纯体例。"
+    },
+    {
+      "book": "luming-nayin/li-xuzhong-mingshu",
+      "rule_id": "LX-05",
+      "decision": "unmapped",
+      "reason_class": "fact-not-emitted",
+      "applicable_to_yaml": "[]",
+      "evidence_from_statement": "四季为五行墓万物所终；时逢之虽会吉而贵亦主妨害尊亲；四孟带煞必尅。",
+      "note": "条件「时逢四季（辰戌丑未）」落在时支、「四孟带煞」落在年支/支上；引擎只发月支 yueling，年/日/时支未产出。",
+      "missing_fact": "时支、年支（月支以外的柱地支）"
+    },
+    {
+      "book": "luming-nayin/li-xuzhong-mingshu",
+      "rule_id": "LX-06",
+      "decision": "unmapped",
+      "reason_class": "not-a-condition",
+      "applicable_to_yaml": "[]",
+      "evidence_from_statement": "一方之气不可过角；进角为孤、退角为寡；既旺不过一方却言衰者成功也。",
+      "note": "体例：一方之气不可过角、进角为孤退角为寡，既旺不过一方却言衰者成功也——五行旺衰功成之体例。"
+    },
+    {
+      "book": "luming-nayin/li-xuzhong-mingshu",
+      "rule_id": "LX-07",
+      "decision": "unmapped",
+      "reason_class": "not-a-condition",
+      "applicable_to_yaml": "[]",
+      "evidence_from_statement": "三元者大小气运，九限者三运之荣谢；自生得节日为初。",
+      "note": "体例：三元者大小气运、九限者三运之荣谢，自生得节日为初——名相定义。"
+    },
+    {
+      "book": "luming-nayin/li-xuzhong-mingshu",
+      "rule_id": "LX-08",
+      "decision": "unmapped",
+      "reason_class": "not-a-condition",
+      "applicable_to_yaml": "[]",
+      "evidence_from_statement": "六十载支干同日神头；六合之德五组共三十组（甲己/丙辛/戊癸/庚乙/壬丁）。",
+      "note": "起例/组合表：六十载支干同日神头与六合之德三十组（甲己/丙辛/戊癸/庚乙/壬丁）的分组，属表。"
+    },
+    {
+      "book": "luming-nayin/luoluzi-sanming",
+      "rule_id": "LZ-01-01",
+      "decision": "unmapped",
+      "reason_class": "not-a-condition",
+      "applicable_to_yaml": "[]",
+      "evidence_from_statement": "三才四气定命基",
+      "note": "赋文体例：元一气兮先天，禀清浊兮自然；著三才以成象，播四气以为年。"
+    },
+    {
+      "book": "luming-nayin/luoluzi-sanming",
+      "rule_id": "LZ-01-02",
+      "decision": "unmapped",
+      "reason_class": "not-a-condition",
+      "applicable_to_yaml": "[]",
+      "evidence_from_statement": "以干为禄、以支为命",
+      "note": "体例：以干为禄、向背定其贫富；以支为命、详顺逆以循环。"
+    },
+    {
+      "book": "luming-nayin/luoluzi-sanming",
+      "rule_id": "LZ-01-03",
+      "decision": "unmapped",
+      "reason_class": "not-a-condition",
+      "applicable_to_yaml": "[]",
+      "evidence_from_statement": "四柱内外详休旺",
+      "note": "体例：看命先精四柱内外、天元并三合有无克夺所有之贵。"
+    },
+    {
+      "book": "luming-nayin/luoluzi-sanming",
+      "rule_id": "LZ-02-01",
+      "decision": "unmapped",
+      "reason_class": "not-a-condition",
+      "applicable_to_yaml": "[]",
+      "evidence_from_statement": "折除运程一辰十岁",
+      "note": "起例：行运则一辰十岁，折除乃三日为年——大运排法。"
+    },
+    {
+      "book": "luming-nayin/luoluzi-sanming",
+      "rule_id": "LZ-02-02",
+      "decision": "unmapped",
+      "reason_class": "not-a-condition",
+      "applicable_to_yaml": "[]",
+      "evidence_from_statement": "将来者进、功成者退",
+      "note": "通论：其为气也，将来者进，功成者退（如蛇在灰、如鳝在尘）。"
+    },
+    {
+      "book": "luming-nayin/luoluzi-sanming",
+      "rule_id": "LZ-02-03",
+      "decision": "unmapped",
+      "reason_class": "fact-not-emitted",
+      "applicable_to_yaml": "[]",
+      "evidence_from_statement": "绝处建禄成贵",
+      "note": "「五行绝处有禄马」须柱干支取禄马并判十二长生绝地（干禄、驿马按支取）；引擎无禄、无纳音、无十二长生、无柱干支。",
+      "missing_fact": "干禄/驿马与五行绝地（十二长生）"
+    },
+    {
+      "book": "luming-nayin/luoluzi-sanming",
+      "rule_id": "LZ-03-01",
+      "decision": "unmapped",
+      "reason_class": "not-a-condition",
+      "applicable_to_yaml": "[]",
+      "evidence_from_statement": "三奇歌诀贵格",
+      "note": "歌诀/起例表：三奇歌（甲己六辛头、乙戊向庚求、丙辛遭癸美…）列各干三奇之配。"
+    },
+    {
+      "book": "luming-nayin/luoluzi-sanming",
+      "rule_id": "LZ-03-03",
+      "decision": "unmapped",
+      "reason_class": "not-a-condition",
+      "applicable_to_yaml": "[]",
+      "evidence_from_statement": "勾陈得位、真武当权",
+      "note": "赋文格名：勾陈得位、真武当权，只有格名与赞辞（不亏小信以成仁、知是大才而分瑞），原文没有说出适用条件；格名亦非引擎产出的 geju 值（样本 geju 为偏印格等子平格名）。"
+    },
+    {
+      "book": "luming-nayin/luoluzi-sanming",
+      "rule_id": "LZ-05-01",
+      "decision": "unmapped",
+      "reason_class": "not-a-condition",
+      "applicable_to_yaml": "[]",
+      "evidence_from_statement": "财命有气背禄不贫",
+      "note": "释文体例：解「财命有气」之义（唯有水克火为财，春生火旺，故曰财命有气也）——释义，不是判定条件。"
+    },
+    {
+      "book": "luming-nayin/luoluzi-sanming",
+      "rule_id": "LZ-05-02",
+      "decision": "unmapped",
+      "reason_class": "fact-not-emitted",
+      "applicable_to_yaml": "[]",
+      "evidence_from_statement": "财绝命衰建禄不富",
+      "note": "「财绝命衰」须按月令判财星绝（注：六辛人八月生、六壬人十月生，皆财绝命衰，纵建禄而不富），并按干取禄；引擎无「财星在月令之气」的判据、无干禄，注中「六甲人正月生」一例又自承非生月带官禄，无可复算条件。",
+      "missing_fact": "财星（我克者）在月令的旺衰/绝地与干禄"
+    },
+    {
+      "book": "luming-nayin/luoluzi-sanming",
+      "rule_id": "LZ-05-04",
+      "decision": "mapped",
+      "applicable_to_yaml": "[{key: rizhu_strength, value: 中弱}, {key: rizhu_strength, value: 偏弱}, {key: rizhu_strength, value: 极弱}]",
+      "evidence_from_statement": "若乃身旺鬼絕，雖破命而長年；鬼旺身衰，逢建命而夭壽（注：身衰者，如甲人秋生，秋金旺乃甲木絕…必夭壽也）",
+      "note": "本条与同书 LZ-05-03（身旺鬼绝长年）同锚同引、是同一赋句的两半；LZ-05-03 已由既有作业映为 rizhu_strength 的中强/偏强/极强三档。为与该已存在的成对映射对称，且原文「身衰」二字直书、注文以生月（甲人秋生）定身之旺衰，映为 rizhu_strength 中弱/偏弱/极弱三档（引擎取值域确有这三档）。「鬼旺」（纳音官鬼）未产出，未写入谓词。"
+    },
+    {
+      "book": "luming-nayin/luoluzi-sanming",
+      "rule_id": "LZ-05-05",
+      "decision": "unmapped",
+      "reason_class": "fact-not-emitted",
+      "applicable_to_yaml": "[]",
+      "evidence_from_statement": "背禄逐马克妻",
+      "note": "背禄逐马须柱干支夺财（注：六甲人生三春九夏天元带丙丁则背禄；甲逢乙或亥卯木克逐马），须各柱天干与支；引擎无。",
+      "missing_fact": "干禄/驿马与柱干支生克（背禄逐马）"
+    },
+    {
+      "book": "luming-nayin/luoluzi-sanming",
+      "rule_id": "LZ-05-06",
+      "decision": "unmapped",
+      "reason_class": "fact-not-emitted",
+      "applicable_to_yaml": "[]",
+      "evidence_from_statement": "禄马同乡两府之贵",
+      "note": "禄马同乡两府之贵以壬寅年庚戌月癸卯日乙卯时为例，须四柱干支、月将（九月将在卯）、诸合（卯戌合/乙庚合/戊癸合）与休败不居。",
+      "missing_fact": "四柱干支、月将与柱间合、旺相休败"
+    },
+    {
+      "book": "luming-nayin/luoluzi-sanming",
+      "rule_id": "LZ-06-04",
+      "decision": "mapped",
+      "applicable_to_yaml": "{any_of: [{all_of: [{any_of: [{key: rizhu, value: 甲}, {key: rizhu, value: 乙}]}, {any_of: [{key: yueling, value: 申}, {key: yueling, value: 酉}, {key: yueling, value: 戌}]}]}, {all_of: [{any_of: [{key: rizhu, value: 丙}, {key: rizhu, value: 丁}]}, {any_of: [{key: yueling, value: 亥}, {key: yueling, value: 子}, {key: yueling, value: 丑}]}]}, {all_of: [{any_of: [{key: rizhu, value: 戊}, {key: rizhu, value: 己}]}, {any_of: [{key: yueling, value: 寅}, {key: yueling, value: 卯}, {key: yueling, value: 辰}]}]}, {all_of: [{any_of: [{key: rizhu, value: 庚}, {key: rizhu, value: 辛}]}, {any_of: [{key: yueling, value: 巳}, {key: yueling, value: 午}, {key: yueling, value: 未}]}]}, {all_of: [{any_of: [{key: rizhu, value: 壬}, {key: rizhu, value: 癸}]}, {any_of: [{key: yueling, value: 辰}, {key: yueling, value: 戌}, {key: yueling, value: 丑}, {key: yueling, value: 未}]}]}]}",
+      "evidence_from_statement": "生月帶祿，入仕居赫奕之尊（注：生月帶官祿者，如甲乙人秋生，丙丁人冬生，戊己人春生，庚辛人夏生，壬癸人生于四季月是也。且如甲乙木用金為官祿也，庚金旺，是生月官祿也）",
+      "note": "注文给出的是穷尽式定义（五组干 × 生月季，以「是也」收束并自解其理：官禄之行旺于生月），故这是 (日干 × 月令) 的 AND 条件，非举例。用 v3 组语法写：五组 any_of，组内 all_of(日干 any_of, 月令 any_of)。季→支按注文自身的逻辑展开（秋＝申酉戌，因注云「庚金旺」；四季月＝辰戌丑未），未额外发明任何条件；「人」取日干（与同书既有映射如 LX-02 甲戊庚牛羊→rizhu 的口径一致）。"
+    },
+    {
+      "book": "luming-nayin/luoluzi-sanming",
+      "rule_id": "LZ-06-05",
+      "decision": "unmapped",
+      "reason_class": "fact-not-emitted",
+      "applicable_to_yaml": "[]",
+      "evidence_from_statement": "裸形夹煞至凶",
+      "note": "就中裸形夹煞、魄往丰都，所犯有伤魂归岱岭——「裸形」「夹煞」神煞名引擎不产出（样本神煞 15 项中无此二名）。",
+      "missing_fact": "裸形/夹煞等神煞名"
+    },
+    {
+      "book": "luming-nayin/luoluzi-sanming",
+      "rule_id": "LZ-07-01",
+      "decision": "unmapped",
+      "reason_class": "fact-not-emitted",
+      "applicable_to_yaml": "[]",
+      "evidence_from_statement": "四煞五鬼六害七伤",
+      "note": "四煞、五鬼、六害、七伤、地网天罗、三元九宫诸名相与吉凶并见之权衡，均非引擎产出事实。",
+      "missing_fact": "四煞/五鬼/六害/七伤/地网天罗/三元九宫等名相"
+    },
+    {
+      "book": "luming-nayin/luoluzi-sanming",
+      "rule_id": "LZ-08-02",
+      "decision": "unmapped",
+      "reason_class": "fact-not-emitted",
+      "applicable_to_yaml": "[]",
+      "evidence_from_statement": "男迎女送前后五年",
+      "note": "一运十年分前后五年，男迎者前五年发福，须得节气深；须大运干支与起运节气深浅，引擎无运干支与起运数据。",
+      "missing_fact": "大运干支/起运与节气深浅（前后五年）"
+    },
+    {
+      "book": "luming-nayin/luoluzi-sanming",
+      "rule_id": "LZ-08-04",
+      "decision": "unmapped",
+      "reason_class": "fact-not-emitted",
+      "applicable_to_yaml": "[]",
+      "evidence_from_statement": "禍旬向末迎福",
+      "note": "祸旬向末言福可以迎推、才入衰乡论灾宜其逆课、男迎女送否泰交居——须旬与大运衰乡，皆未产出。",
+      "missing_fact": "旬（祸旬）与大运衰乡"
+    },
+    {
+      "book": "luming-nayin/luoluzi-sanming",
+      "rule_id": "LZ-08-07",
+      "decision": "unmapped",
+      "reason_class": "fact-not-emitted",
+      "applicable_to_yaml": "[]",
+      "evidence_from_statement": "身克煞輕、煞克身重",
+      "note": "「须要明其神煞，较重较量」：身克煞而尚轻、煞克身而尤重，要求对具体神煞与（纳音）身煞轻重作权衡；神煞名与纳音身命未产出。",
+      "missing_fact": "具体神煞名与身/煞轻重（纳音身命）"
+    },
+    {
+      "book": "luming-nayin/luoluzi-sanming",
+      "rule_id": "LZ-08-08",
+      "decision": "unmapped",
+      "reason_class": "fact-not-emitted",
+      "applicable_to_yaml": "[]",
+      "evidence_from_statement": "万里回还三归之地",
+      "note": "狂横起于勾绞、祸几发于元亡、宅墓同处、万里回还乃是三归之地——勾绞/元亡/三归/宅墓等神煞名均未产出。",
+      "missing_fact": "勾绞/元亡/三归/宅墓等神煞名"
+    },
+    {
+      "book": "luming-nayin/luoluzi-sanming",
+      "rule_id": "LZ-08-09",
+      "decision": "unmapped",
+      "reason_class": "fact-not-emitted",
+      "applicable_to_yaml": "[]",
+      "evidence_from_statement": "金火两停成大器",
+      "note": "「金火两停」指五行中金火二行气势均衡方能成大器；引擎只有日主整体强弱 rizhu_strength（含极弱…极强七档，由月令等综合而来），不能等同金火两行两停，映射即失真。",
+      "missing_fact": "五行力量对比（金火两停）"
+    },
+    {
+      "book": "luming-nayin/luoluzi-sanming",
+      "rule_id": "LZ-08-10",
+      "decision": "unmapped",
+      "reason_class": "not-a-condition",
+      "applicable_to_yaml": "[]",
+      "evidence_from_statement": "处定求动、居安问危",
+      "note": "赋文体例：处定求动、克未进而难迁；居安问危、可凶中而卜吉——占法原则。"
+    },
+    {
+      "book": "luming-nayin/wuxing-jingji",
+      "rule_id": "WX-01-01",
+      "decision": "unmapped",
+      "reason_class": "not-a-condition",
+      "applicable_to_yaml": "[]",
+      "evidence_from_statement": "六甲纳音法",
+      "note": "起例/表：六甲纳音法（天气始于甲、地气始于子，十干配十二支周而复始则六甲成）。作业书点名「纳音六十甲子表」属 not-a-condition。"
+    },
+    {
+      "book": "luming-nayin/wuxing-jingji",
+      "rule_id": "WX-02-01",
+      "decision": "unmapped",
+      "reason_class": "not-a-condition",
+      "applicable_to_yaml": "[]",
+      "evidence_from_statement": "乾神十干配五常",
+      "note": "取象表：乾神十干配五常（本条 quote 与 WX-01-01 同引《六微指论》六甲成之文），属十干配五常的对应表。"
+    },
+    {
+      "book": "luming-nayin/wuxing-jingji",
+      "rule_id": "WX-02-02",
+      "decision": "unmapped",
+      "reason_class": "not-a-condition",
+      "applicable_to_yaml": "[]",
+      "evidence_from_statement": "阳干阴干性情之分",
+      "note": "取法/体例：以阳干生阴干、阴干生阳干为正印（阳生阳阴生阴为偏印）——这是正/偏印的取法定义；后半「月日时在四贵、华盖之上」的四贵/四平/四忌/华盖皆非引擎产出神煞名。正偏印只是取法，不是本条适用条件。"
+    },
+    {
+      "book": "luming-nayin/wuxing-jingji",
+      "rule_id": "WX-03-01",
+      "decision": "unmapped",
+      "reason_class": "not-a-condition",
+      "applicable_to_yaml": "[]",
+      "evidence_from_statement": "支神藏干（人元）",
+      "note": "体例表：支神藏干（人元）表（亥子水、寅卯木、巳午火、申酉金、辰戌丑未土）。"
+    },
+    {
+      "book": "luming-nayin/wuxing-jingji",
+      "rule_id": "WX-03-02",
+      "decision": "unmapped",
+      "reason_class": "not-a-condition",
+      "applicable_to_yaml": "[]",
+      "evidence_from_statement": "五行四时旺衰",
+      "note": "体例：五行四时旺衰之通说（犯之者遭刑有疾、四时休败）。"
+    },
+    {
+      "book": "luming-nayin/wuxing-jingji",
+      "rule_id": "WX-03-03",
+      "decision": "unmapped",
+      "reason_class": "not-a-condition",
+      "applicable_to_yaml": "[]",
+      "evidence_from_statement": "真五行合化",
+      "note": "起例：真五行合化与五虎遁（甲己宫土遁起丙寅、乙庚商金起戊寅…），是取宫商成敗之法。"
+    },
+    {
+      "book": "luming-nayin/wuxing-jingji",
+      "rule_id": "WX-04-02",
+      "decision": "unmapped",
+      "reason_class": "not-a-condition",
+      "applicable_to_yaml": "[]",
+      "evidence_from_statement": "日时贵格识别",
+      "note": "篇名/目录标题（quote 仅「釋日時貴格」四字）：原文没有给出适用盘面条件。与同书 WX-04-01「五位起例」同形。"
+    },
+    {
+      "book": "luming-nayin/wuxing-jingji",
+      "rule_id": "WX-04-04",
+      "decision": "unmapped",
+      "reason_class": "not-a-condition",
+      "applicable_to_yaml": "[]",
+      "evidence_from_statement": "节气浅深起运",
+      "note": "起例：节气浅深起运（立春正月节、雨水正月中…），是排运方法。"
+    },
+    {
+      "book": "luming-nayin/wuxing-jingji",
+      "rule_id": "WX-05-01",
+      "decision": "unmapped",
+      "reason_class": "not-a-condition",
+      "applicable_to_yaml": "[]",
+      "evidence_from_statement": "天乙贵神识别",
+      "note": "篇名（quote 仅「第十四卷論天乙貴神」）：卷目条，未给出条件，「识别」即取法。天乙贵人虽是引擎产出值，但本条文字并未以天乙贵人为适用条件（识别之法在别条），照标题补谓词属编造，故留空并登记为 torn。"
+    },
+    {
+      "book": "luming-nayin/wuxing-jingji",
+      "rule_id": "WX-05-02",
+      "decision": "unmapped",
+      "reason_class": "fact-not-emitted",
+      "applicable_to_yaml": "[]",
+      "evidence_from_statement": "祿馬同乡上贵",
+      "note": "「禄马同乡」＝干禄与驿马同位；引擎神煞可发驿马，但没有禄（干禄须柱干支推），也无同柱关系。quote 仅为卷名「第十七卷並論祿馬」。",
+      "missing_fact": "干禄（十干禄位）及其与驿马的同位关系"
+    },
+    {
+      "book": "luming-nayin/wuxing-jingji",
+      "rule_id": "WX-05-03",
+      "decision": "unmapped",
+      "reason_class": "fact-not-emitted",
+      "applicable_to_yaml": "[]",
+      "evidence_from_statement": "三奇贵格",
+      "note": "条件为三刑须相等、更带三奇、贵人、天德方官极品；三奇（三奇贵人）与天德不是引擎产出神煞名，三刑须地支组合，贵人只是其中一项，整条不可表达。",
+      "missing_fact": "三奇贵人/天德贵人等神煞名与三刑之地支"
+    },
+    {
+      "book": "luming-nayin/wuxing-jingji",
+      "rule_id": "WX-05-04",
+      "decision": "unmapped",
+      "reason_class": "not-a-condition",
+      "applicable_to_yaml": "[]",
+      "evidence_from_statement": "四进神贵命",
+      "note": "起例/表：进神、交神、退神、伏神由干支定（甲午为第三进神则丙午丁未戊申为交退伏神…），是标明哪些干支属何神，属作业书点名的「取法」。"
+    },
+    {
+      "book": "luming-nayin/wuxing-jingji",
+      "rule_id": "WX-05-05",
+      "decision": "unmapped",
+      "reason_class": "not-a-condition",
+      "applicable_to_yaml": "[]",
+      "evidence_from_statement": "华盖主孤高僧道",
+      "note": "取法：华盖由三合局取（寅午戌人在戌、巳酉丑人在丑、申子辰人在辰、亥卯未人在未）；且「华盖」不在引擎神煞样本值域内，映射无从下手。"
+    },
+    {
+      "book": "luming-nayin/wuxing-jingji",
+      "rule_id": "WX-05-06",
+      "decision": "unmapped",
+      "reason_class": "not-a-condition",
+      "applicable_to_yaml": "[]",
+      "evidence_from_statement": "金舆乘车之贵",
+      "note": "取法：金舆常在禄前二辰、命前二辰、马前二辰——定义取法，非适用条件。"
+    },
+    {
+      "book": "luming-nayin/wuxing-jingji",
+      "rule_id": "WX-06-01",
+      "decision": "unmapped",
+      "reason_class": "condition-too-vague",
+      "applicable_to_yaml": "[]",
+      "evidence_from_statement": "上贵格三大要素",
+      "note": "原文自陈「所临时加减言之」「虽有如无」「亦作薄命断之」：须合支神生旺福聚、驳杂冲破空亡、死绝凶杀诸项加减，并举例「己酉己卯人见丁壬」等干支组合。原文自己拒绝单条件断，映射反而失真。"
+    },
+    {
+      "book": "luming-nayin/wuxing-jingji",
+      "rule_id": "WX-07-02",
+      "decision": "unmapped",
+      "reason_class": "not-a-condition",
+      "applicable_to_yaml": "[]",
+      "evidence_from_statement": "三刑骨肉",
+      "note": "取法/定义：刑有四种（无礼刑子刑卯卯复刑子…），是刑的名相定义。"
+    },
+    {
+      "book": "luming-nayin/wuxing-jingji",
+      "rule_id": "WX-07-03",
+      "decision": "unmapped",
+      "reason_class": "condition-too-vague",
+      "applicable_to_yaml": "[]",
+      "evidence_from_statement": "六害骨肉离",
+      "note": "「凡空亡遇三者」的「三者」未明指何物，且须合禄马落空亡、大小运至此、三命又在衰乡综合；空亡虽是产出事实，但本条不是「见空亡即用」，无法定出可复算条件。"
+    },
+    {
+      "book": "luming-nayin/wuxing-jingji",
+      "rule_id": "WX-07-05",
+      "decision": "unmapped",
+      "reason_class": "not-a-condition",
+      "applicable_to_yaml": "[]",
+      "evidence_from_statement": "冲破六冲",
+      "note": "通论/体例：相冲者十二支战击之神，大概为凶，然冲处要相生（辛巳冲癸亥即金生水）、同类相克者最凶，属体例。"
+    },
+    {
+      "book": "luming-nayin/wuxing-jingji",
+      "rule_id": "WX-08-01",
+      "decision": "unmapped",
+      "reason_class": "fact-not-emitted",
+      "applicable_to_yaml": "[]",
+      "evidence_from_statement": "小儿关煞",
+      "note": "statement 标题为「小儿关煞」（引擎无关煞神煞名、无年龄/童限事实）；quote 实为日干取象表（日带甲乙者印堂宽…日带壬者眼大好酒）。日干虽可映射 rizhu，但通写十干等于恒真，属作业书禁止的「* 凑数」，故不映射。",
+      "missing_fact": "「小儿关煞」神煞名与童限/年龄事实"
+    },
+    {
+      "book": "luming-nayin/wuxing-jingji",
+      "rule_id": "WX-08-02",
+      "decision": "unmapped",
+      "reason_class": "not-a-condition",
+      "applicable_to_yaml": "[]",
+      "evidence_from_statement": "男命取格",
+      "note": "体例：男命以年为父、胎为母、月为兄弟、日为已身妻妾、时为子孙的六亲分位；后半「子午卯酉日生主娶子午卯酉命妻，或日支三六合、干合俱不得偕老」须日支与合，属举例，非本条主体。"
+    },
+    {
+      "book": "luming-nayin/wuxing-jingji",
+      "rule_id": "WX-08-03",
+      "decision": "unmapped",
+      "reason_class": "not-a-condition",
+      "applicable_to_yaml": "[]",
+      "evidence_from_statement": "女命旧观",
+      "note": "体例：女命以年为翁父、胎为婆母、月为妯娌、日为夫/己身、时为子孙的分位。"
+    },
+    {
+      "book": "luming-nayin/wuxing-jingji",
+      "rule_id": "WX-08-04",
+      "decision": "unmapped",
+      "reason_class": "fact-not-emitted",
+      "applicable_to_yaml": "[]",
+      "evidence_from_statement": "父母位",
+      "note": "父位以「克母者」按纳音命定（戊辰木命以土为父、丁卯火命以金为父），再判父在有气之乡与月令旺乡（十一月生为旺乡）；引擎无纳音年命、无父位五行、无纳音旺相判据。",
+      "missing_fact": "纳音年命、父位五行（克母者）与月令旺相"
+    },
+    {
+      "book": "luming-nayin/wuxing-jingji",
+      "rule_id": "WX-09-01",
+      "decision": "unmapped",
+      "reason_class": "fact-not-emitted",
+      "applicable_to_yaml": "[]",
+      "evidence_from_statement": "子息位",
+      "note": "子位以「妻命所生者」定（木命以金为子、甲子人以火为子），再判旺相有气之乡（五月生火乘旺气）；引擎无纳音命与子位五行。",
+      "missing_fact": "纳音年命、子位五行与旺相"
+    },
+    {
+      "book": "luming-nayin/wuxing-jingji",
+      "rule_id": "WX-09-02",
+      "decision": "unmapped",
+      "reason_class": "fact-not-emitted",
+      "applicable_to_yaml": "[]",
+      "evidence_from_statement": "僧道九流吏卒",
+      "note": "条件为丧门、孤角、空亡三者（推道德命者）；空亡是产出事实，丧门与孤角不是，取其一不能代表本条。",
+      "missing_fact": "丧门/孤角神煞名"
+    },
+    {
+      "book": "luming-nayin/wuxing-jingji",
+      "rule_id": "WX-09-03",
+      "decision": "unmapped",
+      "reason_class": "not-a-condition",
+      "applicable_to_yaml": "[]",
+      "evidence_from_statement": "形貌性情",
+      "note": "取象表：凡人禀五行之气而生，形貌美恶、性之刚柔由金木水火土——五行形性取象。"
+    },
+    {
+      "book": "luming-nayin/wuxing-jingji",
+      "rule_id": "WX-09-04",
+      "decision": "unmapped",
+      "reason_class": "not-a-condition",
+      "applicable_to_yaml": "[]",
+      "evidence_from_statement": "论疾病",
+      "note": "通论：疾苦皆由阴阳五行之气虚实寒热太过不及而致。作业书点名「五行偏枯对应脏腑」类取象属 not-a-condition。"
+    },
+    {
+      "book": "luming-nayin/wuxing-jingji",
+      "rule_id": "WX-09-05",
+      "decision": "unmapped",
+      "reason_class": "not-a-condition",
+      "applicable_to_yaml": "[]",
+      "evidence_from_statement": "论壽夭",
+      "note": "通论：寿夭大抵生旺为寿长、死绝为夭折。此处「生旺/死绝」是纳音五行在四时的旺相（同章下文：以本年纳音与生月纳音观其刑克、生月居支干纳音旺处），不是日主强弱 rizhu_strength；按 rizhu_strength 映射属时代错置的偷换，故不映射。"
+    },
+    {
+      "book": "luming-nayin/wuxing-jingji",
+      "rule_id": "WX-10-01",
+      "decision": "unmapped",
+      "reason_class": "not-a-condition",
+      "applicable_to_yaml": "[]",
+      "evidence_from_statement": "大运起例",
+      "note": "起例：大运起法（一岁奇九月之大运）。"
+    },
+    {
+      "book": "luming-nayin/wuxing-jingji",
+      "rule_id": "WX-10-02",
+      "decision": "unmapped",
+      "reason_class": "not-a-condition",
+      "applicable_to_yaml": "[]",
+      "evidence_from_statement": "小运起例",
+      "note": "起例：小运者阴阳生成之数也。"
+    },
+    {
+      "book": "luming-nayin/wuxing-jingji",
+      "rule_id": "WX-10-03",
+      "decision": "unmapped",
+      "reason_class": "fact-not-emitted",
+      "applicable_to_yaml": "[]",
+      "evidence_from_statement": "二运并行",
+      "note": "「凡二运见贵人」须在大运＋小运层判贵人临位；引擎神煞只在本命层产出（大运/流年层只有十神），小运更无事实。",
+      "missing_fact": "大运/小运层的神煞（贵人）与运干支"
+    },
+    {
+      "book": "luming-nayin/wuxing-jingji",
+      "rule_id": "WX-10-04",
+      "decision": "unmapped",
+      "reason_class": "fact-not-emitted",
+      "applicable_to_yaml": "[]",
+      "evidence_from_statement": "太岁伏吟反吟",
+      "note": "太岁（流年）欲常与本命支干纳音相合、无冲害刑克，仍加本命贵人禄马；须流年干支、本命支干纳音、禄马，引擎皆无。",
+      "missing_fact": "流年（太岁）干支与本命支干纳音"
+    },
+    {
+      "book": "luming-nayin/wuxing-jingji",
+      "rule_id": "WX-10-05",
+      "decision": "unmapped",
+      "reason_class": "condition-too-vague",
+      "applicable_to_yaml": "[]",
+      "evidence_from_statement": "歲運合参",
+      "note": "原文只说「当在岁运相遇也」，属须岁运合参的综合判断，没有可量化或可复算的单一条件。"
+    },
+    {
+      "book": "luming-nayin/yuzhao-shenying",
+      "rule_id": "YUZHAOSHENYI-004",
+      "decision": "unmapped",
+      "reason_class": "fact-not-emitted",
+      "applicable_to_yaml": "[]",
+      "evidence_from_statement": "时柱尅日柱，干尅轻、音尅重；干音俱尅则为重伤。",
+      "note": "时来破日：干克轻、音克重、干音俱克为重（假令辛巳金人得丁亥日时丁克辛、辛巳金人得己丑日…），全是柱干支与纳音关系。",
+      "missing_fact": "时柱干支与纳音及其与日柱的干克/音克"
+    },
+    {
+      "book": "luming-nayin/yuzhao-shenying",
+      "rule_id": "YUZHAOSHENYI-005",
+      "decision": "unmapped",
+      "reason_class": "fact-not-emitted",
+      "applicable_to_yaml": "[]",
+      "evidence_from_statement": "时尅日、日尅月、月尅年，两分交战者损尊、伤本、寿促。",
+      "note": "时克日、日克月、月克年两分交战者损尊伤本寿促（假令庚子年丙戌月壬寅日戊申时丁丑胎、庚子年土壬午月木壬申日金甲辰时火），须逐柱干与纳音。",
+      "missing_fact": "各柱干支与纳音（时/日/月/年）"
+    },
+    {
+      "book": "luming-nayin/yuzhao-shenying",
+      "rule_id": "YUZHAOSHENYI-006",
+      "decision": "unmapped",
+      "reason_class": "fact-not-emitted",
+      "applicable_to_yaml": "[]",
+      "evidence_from_statement": "二三柱犯纳音月胎者，主祖宗祸患或祖业不继。",
+      "note": "三犯月胎：「二三柱犯纳音月胎者」言祖上尊人久祸患（假令甲辰火为胎月，日时有丁丑水丙午水者），须胎元与月柱纳音。",
+      "missing_fact": "胎元与月柱纳音"
+    },
+    {
+      "book": "luming-nayin/yuzhao-shenying",
+      "rule_id": "YUZHAOSHENYI-012",
+      "decision": "unmapped",
+      "reason_class": "fact-not-emitted",
+      "applicable_to_yaml": "[]",
+      "evidence_from_statement": "辰戌魁罡往来，原文按旺相休囚分作狱官、公吏、屠儿、争讼等。",
+      "note": "魁罡上见往来加临：「辰戌往来四柱见之」为公吏狱人屠儿斗讼，又以旺相休囚分狱官/不道之人/屠儿狱吏，须四柱地支与旺相状态。",
+      "missing_fact": "四柱地支（辰戌）与旺相休囚状态"
+    },
+    {
+      "book": "luming-nayin/yuzhao-shenying",
+      "rule_id": "YUZHAOSHENYI-021",
+      "decision": "unmapped",
+      "reason_class": "not-a-condition",
+      "applicable_to_yaml": "[]",
+      "evidence_from_statement": "阳干月德合在干、陰干月德合在支；同柱为近合力强，旁柱为远合力弱。",
+      "note": "取法：阳干德合在干、阴干德合在支（甲德自干、乙德在庚、丙德自干…），再论近合/远合之强弱——德合取法表。"
+    },
+    {
+      "book": "luming-nayin/yuzhao-shenying",
+      "rule_id": "YUZHAOSHENYI-026",
+      "decision": "unmapped",
+      "reason_class": "fact-not-emitted",
+      "applicable_to_yaml": "[]",
+      "evidence_from_statement": "辰午酉亥自刑+下尅上重见，主自凶。",
+      "note": "自刑重见（辰午酉亥为自刑）又更下克上者主自凶（假令戊申土人得乙酉日时），须柱支与柱间上下相克。",
+      "missing_fact": "地支（辰午酉亥）自刑与柱间下克上关系"
+    },
+    {
+      "book": "luming-nayin/yuzhao-shenying",
+      "rule_id": "YUZHAOSHENYI-032",
+      "decision": "unmapped",
+      "reason_class": "fact-not-emitted",
+      "applicable_to_yaml": "[]",
+      "evidence_from_statement": "卯酉门户上下全土，原文主腰脚沉滞。",
+      "note": "「癸乙壬加卯酉男女私情」「乙辛丁巳亥酉官事阴人常有」：皆特定天干加特定地支的组合，须柱干支（引擎无年月时干、无日/时支）。",
+      "missing_fact": "柱支（卯酉/巳亥）与所配天干（癸乙壬、乙辛丁）"
+    },
+    {
+      "book": "luming-nayin/yuzhao-shenying",
+      "rule_id": "YUZHAOSHENYI-034",
+      "decision": "unmapped",
+      "reason_class": "fact-not-emitted",
+      "applicable_to_yaml": "[]",
+      "evidence_from_statement": "水土同至寅卯，原文主隔气风痰。",
+      "note": "「水土同来寅卯平生隔气风痰」＝纳音水土之身行到寅卯（假令戊申土人三月乙…），须纳音与柱支。",
+      "missing_fact": "纳音（水土）与柱支（寅卯）"
+    },
+    {
+      "book": "luming-nayin/yuzhao-shenying",
+      "rule_id": "YUZHAOSHENYI-037",
+      "decision": "unmapped",
+      "reason_class": "not-a-condition",
+      "applicable_to_yaml": "[]",
+      "evidence_from_statement": "25岁前以月柱合十二宫、25-50以日柱、50后以时柱。",
+      "note": "起例：三限见详于四柱——25岁前以生月主事、25至50以生日为主、50后以生时为主合十二宫。"
+    },
+    {
+      "book": "luming-nayin/yuzhao-shenying",
+      "rule_id": "YUZHAOSHENYI-038",
+      "decision": "unmapped",
+      "reason_class": "fact-not-emitted",
+      "applicable_to_yaml": "[]",
+      "evidence_from_statement": "干鬼制者为官；纳音生鬼者亦为官贵。",
+      "note": "「干鬼制者为官、纳音生鬼者亦为官贵」：须纳音与干鬼生制关系（假令戌人先寅后甲中旺者官也，纳音土以木为鬼，鬼旺后有水生官）。",
+      "missing_fact": "纳音与干鬼相制关系、官鬼旺相"
+    },
+    {
+      "book": "luming-nayin/yuzhao-shenying",
+      "rule_id": "YUZHAOSHENYI-039",
+      "decision": "unmapped",
+      "reason_class": "fact-not-emitted",
+      "applicable_to_yaml": "[]",
+      "evidence_from_statement": "生干则尊人喜；生纳音则中下人吉。",
+      "note": "「生干则尊人喜、生纳音则中下人吉」（假令庚逢巳者生干也、水逢金者亦佳），须干与纳音的生克关系。",
+      "missing_fact": "纳音与干生关系"
+    },
+    {
+      "book": "luming-nayin/yuzhao-shenying",
+      "rule_id": "YUZHAOSHENYI-040",
+      "decision": "unmapped",
+      "reason_class": "fact-not-emitted",
+      "applicable_to_yaml": "[]",
+      "evidence_from_statement": "五行三合局齐者(木亥卯未/火寅午戌/金巳酉丑/水申子辰)俱旺主富贵。",
+      "note": "「全逢本卦」＝纳音命得本家三合卦（木得亥卯未、火得寅午戌、金得巳酉丑、水得申子辰）更犯旺相者富贵；须纳音命与三合局地支，引擎无纳音、无各柱地支。",
+      "missing_fact": "纳音本命五行与三合局地支"
+    },
+    {
+      "book": "luming-nayin/yuzhao-shenying",
+      "rule_id": "YUZHAOSHENYI-041",
+      "decision": "unmapped",
+      "reason_class": "fact-not-emitted",
+      "applicable_to_yaml": "[]",
+      "evidence_from_statement": "胎朝月、月朝日、日朝时之朝拱关系，主倍禄。",
+      "note": "三交四聚：胎朝月、月朝日、日朝时名倍禄（假令乙酉水人甲申月水丙寅日火癸巳时水，甲朝寅丙朝巳故借贵），须胎元与各柱干支的朝拱关系。",
+      "missing_fact": "胎元与四柱干支的朝拱（干合）关系"
+    },
+    {
+      "book": "luming-nayin/yuzhao-shenying",
+      "rule_id": "YUZHAOSHENYI-042",
+      "decision": "unmapped",
+      "reason_class": "fact-not-emitted",
+      "applicable_to_yaml": "[]",
+      "evidence_from_statement": "旬中六甲(甲子甲戌甲申甲午甲辰甲寅)全见，主尊荣。",
+      "note": "六仪之神：甲子旬中甲子甲戌甲申甲午甲辰甲寅同为旬中见年顺干为仪（又有月仪），旬中六甲全见主尊荣；须旬与各柱干支，「六仪」亦非产出神煞。",
+      "missing_fact": "旬（甲子旬等）与各柱干支年顺干"
+    },
+    {
+      "book": "luming-nayin/yuzhao-shenying",
+      "rule_id": "YUZHAOSHENYI-048",
+      "decision": "unmapped",
+      "reason_class": "fact-not-emitted",
+      "applicable_to_yaml": "[]",
+      "evidence_from_statement": "命局四重干合者，主妻或夫再立、子郎重生。",
+      "note": "「合逢四位」＝四重干合（假令甲子人己巳月丁卯日壬寅时，甲己丁壬四重合），须年/月/时柱天干；引擎只发日干 rizhu。",
+      "missing_fact": "年/月/时柱天干（四重干合）"
+    },
+    {
+      "book": "luming-nayin/yuzhao-shenying",
+      "rule_id": "YUZHAOSHENYI-051",
+      "decision": "unmapped",
+      "reason_class": "fact-not-emitted",
+      "applicable_to_yaml": "[]",
+      "evidence_from_statement": "四孟(寅申巳亥)有力之乡见者主发。",
+      "note": "「四孟见有力之乡者发」只说四孟（寅申巳亥），未指明落在哪一柱（同段四仲子午卯酉、四季辰戌丑未亦然）；引擎只发月支 yueling，绑到月令等于替原文指定柱位，属编造。",
+      "missing_fact": "年/日/时支（四孟所在柱原文未指明）"
+    },
+    {
+      "book": "luming-nayin/yuzhao-shenying",
+      "rule_id": "YUZHAOSHENYI-053",
+      "decision": "unmapped",
+      "reason_class": "not-a-condition",
+      "applicable_to_yaml": "[]",
+      "evidence_from_statement": "自家四柱干支自合为内合，旁柱合本柱为外合。",
+      "note": "取法：自家四柱干支自合为内合、旁柱合本柱为外合的界说（合分内外取于进退之方）。"
+    },
+    {
+      "book": "luming-nayin/yuzhao-shenying",
+      "rule_id": "YUZHAOSHENYI-054",
+      "decision": "unmapped",
+      "reason_class": "fact-not-emitted",
+      "applicable_to_yaml": "[]",
+      "evidence_from_statement": "年生月、月生日、日生时之上生下，主身贫贱；返此为进发。",
+      "note": "quote 明言「论纳音也」：年生月、月生日、日生时之上生下主身贫贱，返之为进发（假令甲子金年丁丑月水戊辰日木戊午时火），须各柱纳音。",
+      "missing_fact": "各柱纳音（年/月/日/时）"
+    },
+    {
+      "book": "luming-nayin/yuzhao-shenying",
+      "rule_id": "YUZHAOSHENYI-YZ-02",
+      "decision": "unmapped",
+      "reason_class": "fact-not-emitted",
+      "applicable_to_yaml": "[]",
+      "evidence_from_statement": "干尅支为顺，主头面尊老；支尅干为逆，主身体四支与陰人小口。干尅在尊位为重，音尅在身位为切。",
+      "note": "顺逆以干克支/支克干判（假令癸未木壬戌月庚午日己卯时癸丑胎皆下克上），并以干克在尊位为重、音克在身位为切；须各柱干支与纳音，引擎皆无。",
+      "missing_fact": "各柱干支/纳音及其干克支、支克干关系"
+    },
+    {
+      "book": "luming-nayin/yuzhao-shenying",
+      "rule_id": "YUZHAOSHENYI-YZ-03",
+      "decision": "unmapped",
+      "reason_class": "fact-not-emitted",
+      "applicable_to_yaml": "[]",
+      "evidence_from_statement": "子午+庚甲组合主他乡外立。",
+      "note": "「子午逢之他乡外立」＝子午之支上见庚甲二干（假令甲子人逢庚戌、甲午日时），须柱支与年月时干；引擎只发月支 yueling 与日干 rizhu。",
+      "missing_fact": "年/日支（子午）与庚甲二干在各柱的位置"
+    },
+    {
+      "book": "luming-nayin/yuzhao-shenying",
+      "rule_id": "YUZHAOSHENYI-YZ-05",
+      "decision": "unmapped",
+      "reason_class": "not-a-condition",
+      "applicable_to_yaml": "[]",
+      "evidence_from_statement": "干防尊老、音同身、尅防同类妻妾、下防陰人小口。",
+      "note": "体例：干防尊老、音同身、克防同类妻妾、下防阴人小口的上下分位对应（三才入墓之尊卑分属），无可锚盘面取值。"
+    },
+    {
+      "book": "luming-nayin/yuzhao-shenying",
+      "rule_id": "YUZHAOSHENYI-YZ-06",
+      "decision": "unmapped",
+      "reason_class": "fact-not-emitted",
+      "applicable_to_yaml": "[]",
+      "evidence_from_statement": "阳干月德主贵人扶助、陰干主陰人用力。",
+      "note": "两分句对举：见月德阳干者主贵人扶助接引、见月合者主阴人用力。月德贵人虽可映射，但本条是月德/月合对举，缺月合即半条不可表达；照同类「将星扶德合贵只取将星」的宽法会把对举句读成单向，从严留空（torn 已记）。",
+      "missing_fact": "月合（月德合神）"
+    },
+    {
+      "book": "luming-nayin/yuzhao-shenying",
+      "rule_id": "YUZHAOSHENYI-YZ-07",
+      "decision": "unmapped",
+      "reason_class": "not-a-condition",
+      "applicable_to_yaml": "[]",
+      "evidence_from_statement": "父子夫妻儿女按尅合远近判亲疏内外。",
+      "note": "体例：父子夫妻儿女按克合远近判亲疏内外（一揆而推之），属六亲取象体例。"
+    },
+    {
+      "book": "luming-nayin/yuzhao-shenying",
+      "rule_id": "YUZHAOSHENYI-YZ-08",
+      "decision": "unmapped",
+      "reason_class": "not-a-condition",
+      "applicable_to_yaml": "[]",
+      "evidence_from_statement": "干上至下为退、下至上为进；五行升降以衰兴。",
+      "note": "体例：十干从上至下为退、从下至上为进，五行升降定衰兴。"
+    },
+    {
+      "book": "luming-nayin/yuzhao-shenying",
+      "rule_id": "YZ-01",
+      "decision": "unmapped",
+      "reason_class": "fact-not-emitted",
+      "applicable_to_yaml": "[]",
+      "evidence_from_statement": "卦逢生气天德合，仍要长生有所归；先看生我何为父，次看克我是何儿。",
+      "note": "「卦逢生气天德合」的生气由年支三合取（亥卯未人在亥、申子辰人在申、巳酉丑人在巳、寅午戌人在寅），或由干长生取（甲乙木到亥…），天德合另立（天德者正丁二坤三壬…），且须要日时；引擎无年支、无天德/天德合、无干长生。",
+      "missing_fact": "年支（三合生气）、天德合与日时柱的干音关系"
+    },
+    {
+      "book": "luming-nayin/yuzhao-shenying",
+      "rule_id": "YZ-02",
+      "decision": "unmapped",
+      "reason_class": "condition-too-vague",
+      "applicable_to_yaml": "[]",
+      "evidence_from_statement": "论命须以年/胎/月/日/时五主互参，分别尊卑、干音并重。",
+      "note": "原文即「论命须以年/胎/月/日/时五主互参，分别尊卑、干音并重」——自己声明不能单一条件断；且胎元、年干、纳音均未产出。作业书把「须结合…综合判断」归 condition-too-vague。"
+    },
+    {
+      "book": "luming-nayin/yuzhao-shenying",
+      "rule_id": "YZ-05",
+      "decision": "unmapped",
+      "reason_class": "fact-not-emitted",
+      "applicable_to_yaml": "[]",
+      "evidence_from_statement": "干墓在辰戌丑未；有旺气者为库主储藏，无气者为墓主收藏不发。",
+      "note": "干墓（甲乙在未、丙丁到戌、庚辛到丑、戊己壬癸到辰）须柱支才成立，库/墓之分又须旺气（有旺气者库、无旺气者墓）；引擎只有月支 yueling，无各柱地支与旺气。本条取法成分亦重，两属之下从严不映射。",
+      "missing_fact": "各柱地支（辰戌丑未）与干墓/库墓之旺气"
+    },
+    {
+      "book": "luming-nayin/yuzhao-shenying",
+      "rule_id": "YZ-06",
+      "decision": "unmapped",
+      "reason_class": "fact-not-emitted",
+      "applicable_to_yaml": "[]",
+      "evidence_from_statement": "月德合见于四正(子午卯酉)，主十分作福。",
+      "note": "「月德双加有合」是月德与月合两件同时到方十分作福（注：寅午戌丙辛月合月德、亥卯未甲己德合…），月合不是引擎产出的神煞（样本只有月德贵人），且「四正」落在哪一柱原文未指明；缺月合即不可表达。",
+      "missing_fact": "月合（月德之合神）与四正所落柱位"
+    },
+    {
+      "book": "luming-nayin/yuzhao-shenying",
+      "rule_id": "YZ-08",
+      "decision": "unmapped",
+      "reason_class": "not-a-condition",
+      "applicable_to_yaml": "[]",
+      "evidence_from_statement": "木见旺金主强、火入离中主旺、金向旺中须损折、土积山岗多不动、水盛防走失。",
+      "note": "取象表：木见旺金主强、火入离中主旺、金向旺中须损折、土积山岗多不动、水盛防走失——五行多寡吉凶取象，无量化条件。"
+    }
+  ]
+}
