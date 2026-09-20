@@ -13,6 +13,7 @@ Unrecovered rules stay anchor: null and are listed in tools/reports/unanchorable
 from __future__ import annotations
 
 import argparse
+import importlib.util
 import json
 import re
 import sys
@@ -22,6 +23,19 @@ from pathlib import Path
 import yaml
 
 ROOT = Path(__file__).resolve().parents[1]
+
+
+def _load_v13():
+    """复用 validate-rules.py 的劣质 quote 判据（单一实现，避免两处判据漂移）。"""
+    spec = importlib.util.spec_from_file_location("vr_for_recover", ROOT / "tools/validate-rules.py")
+    mod = importlib.util.module_from_spec(spec)
+    sys.modules["vr_for_recover"] = mod
+    assert spec.loader is not None
+    spec.loader.exec_module(mod)
+    return mod.v13_bad_quote
+
+
+v13_bad_quote = _load_v13()
 WS_RE = re.compile(r"\s+", re.UNICODE)
 HAN_RE = re.compile(r"[㐀-鿿]")
 MD_JUNK_RE = re.compile(r"\*\*|⚠️|（\*\*[^*]+\*\*：[^）]*）|\([^)]*强 reframe[^)]*\)")
@@ -292,6 +306,40 @@ def main() -> int:
                 already += 1
                 continue
             quote = rule.get("quote") or ""
+
+            # ── 两道前置闸门（t168 补）───────────────────────────────────────
+            # 光凭「这段字符串能在 fulltext 里找到」不足以给锚点。实测跑一遍会撞出 31 个
+            # validate-rules 错误，分两类，都是「把不该锚的东西锚上了」：
+            #   · 25 条 V15：条目自报 `quote_kind: restatement`（编者重述、不是引文），
+            #     其 quote 往往是**来源标签**（如「入地眼全書龍法卷二」
+            #     「看正偏印法/看偏正财法-卷一-命理约言-陳素庵(清)」），碰巧与 fulltext 里
+            #     某行标题相同就被锚上了 —— 这正是「不要硬锚」要防的。
+            #   · 6 条 V13：quote 是卷首署名／标题行，本就不能当断辞。
+            # 所以先跳过 restatement，再用 V13 的判据把劣质 quote 挡掉。
+            if rule.get("quote_kind") == "restatement":
+                unanchorable.append(
+                    {
+                        "book": key,
+                        "art": art_of(book.get("system"), book.get("slug")),
+                        "rule_id": rid,
+                        "reason": "quote_kind=restatement（编者重述，不是引文，不该给引文锚点）",
+                        "quote": quote[:120],
+                    }
+                )
+                continue
+            junk = v13_bad_quote(quote, str(book.get("title") or ""))
+            if junk:
+                unanchorable.append(
+                    {
+                        "book": key,
+                        "art": art_of(book.get("system"), book.get("slug")),
+                        "rule_id": rid,
+                        "reason": f"劣质 quote，不可为断辞：{junk}",
+                        "quote": quote[:120],
+                    }
+                )
+                continue
+
             hit = recover_one(quote, hays)
             if hit is None:
                 unanchorable.append(
