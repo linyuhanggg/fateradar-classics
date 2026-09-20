@@ -297,11 +297,13 @@
     {
       "book": "san-shi/qimen-faqiao",
       "rule_id": "QM-P36",
-      "decision": "unmapped",
+      "decision": "mapped",
       "reason_class": "fact-not-emitted",
       "evidence_from_statement": "时干入墓，戊戌、壬辰、丙戌、癸未、丁丑、己丑也",
       "note": "时干入墓＝时干为戊/壬/丙/癸/丁/己而落墓支。时干为天干，引擎未产出；六宫的宫位五行替代不了「天干＋墓支」的判据。",
-      "missing_fact": "时干（天干）"
+      "missing_fact": "时干（天干）",
+      "mapped_by": "fixed-value-map.json",
+      "mapped_note": "t186 映射：条件就是「时柱等于原文所列六对干支之一」，用显式柱位 scope；前提是奇门侧产出四柱干支（同轮加的 passthrough，引擎 facts.ganZhi 本来就有）。原 reason_class 保留为历史判定。"
     },
     {
       "book": "san-shi/qimen-dunjia-tongzhi",

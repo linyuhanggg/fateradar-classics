@@ -25,7 +25,7 @@ rules:
   anchor: {file: sources/excerpts/qimen-faqiao-chaibu-v1.md, start_line: 36, end_line: 36}
   quote: 时干入墓，戊戌、壬辰、丙戌、癸未、丁丑、己丑也
   quote_kind: verbatim
-  applicable_to: []
+  applicable_to: {any_of: [{all_of: [{key: gan, value: 戊, scope: {pillar: time}}, {key: zhi, value: 戌, scope: {pillar: time}}]}, {all_of: [{key: gan, value: 壬, scope: {pillar: time}}, {key: zhi, value: 辰, scope: {pillar: time}}]}, {all_of: [{key: gan, value: 丙, scope: {pillar: time}}, {key: zhi, value: 戌, scope: {pillar: time}}]}, {all_of: [{key: gan, value: 癸, scope: {pillar: time}}, {key: zhi, value: 未, scope: {pillar: time}}]}, {all_of: [{key: gan, value: 丁, scope: {pillar: time}}, {key: zhi, value: 丑, scope: {pillar: time}}]}, {all_of: [{key: gan, value: 己, scope: {pillar: time}}, {key: zhi, value: 丑, scope: {pillar: time}}]}]}
   caveats: []
   school: null
   verified: false

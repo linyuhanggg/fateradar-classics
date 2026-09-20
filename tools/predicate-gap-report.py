@@ -103,6 +103,9 @@ ART_EMIT_KEYS: dict[str, frozenset[str]] = {
             "bashen",
             "zhifu",
             "zhishi",
+                        # 四柱干支：引擎 facts.ganZhi 直接透传（与 bazi 共用键，按 scope.pillar 区分）。
+            "gan",
+            "zhi",
             "geju_qimen",
             # 天盘干／地盘干：由已有 QimenCell.sky / .earth 逐宫产出。
             "tianpan_gan",

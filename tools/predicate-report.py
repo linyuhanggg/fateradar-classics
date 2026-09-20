@@ -22,7 +22,10 @@ from predicate_lang import iter_usable_predicates  # noqa: E402
 ROOT = Path(__file__).resolve().parents[1]
 ARTS = ("bazi", "ziwei", "qimen", "liuren", "liuyao", "qizheng")
 REFERENCE_ARTS = ("meihua", "yili")
-OPEN_KEYS = ("geju", "shensha", "ziwei_star", "geju_qimen", "keti")
+OPEN_KEYS = ("geju", "shensha", "ziwei_star",             # 四柱干支：引擎 facts.ganZhi 直接透传（与 bazi 共用键，按 scope.pillar 区分）。
+            "gan",
+            "zhi",
+            "geju_qimen", "keti")
 
 # 七政 statement 实为书的目录篇名、没有判定条件。肉眼确认后从覆盖率分母剔除，单独计数。
 # 名单取自 P11 表：36 条「需要引擎未产出的事实」减去 GR-01 / GR-03 / GUOTIANJING-GR-02 / GUOTIANJING-GR-03 / GUOTIANJING-GR-05。

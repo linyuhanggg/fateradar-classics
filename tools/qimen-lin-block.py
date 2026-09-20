@@ -118,9 +118,9 @@ def main() -> int:
         "still_unmapped": unmapped,
         "quote_check": "全部逐字命中" if not quote_mismatch else f"不命中：{quote_mismatch}",
         "facts": {
-            "have": ["tianpan_gan", "dipan_gan"],
-            "missing": ["奇门侧四柱干事实（引擎已算 facts.ganZhi，事实层未产出）"],
-            "hard_part": "把「地盘干取值」与「某柱干」绑定",
+            "have": ["tianpan_gan", "dipan_gan", "gan/zhi@scope.pillar（t186 产出，四柱干支透传）"],
+            "missing": [],
+            "hard_part": "把「地盘干取值」与「某柱干」绑定（＝跨键取值相等；事实齐了，只差这一件）",
         },
         "qimen_gate_now": {"wildcard_rules": wild, "rules_with_predicate": total},
         "options": options,
@@ -138,7 +138,8 @@ def main() -> int:
     print(f"语义：{report['semantics']}")
     print("\n缺什么：")
     print(f"  已有   : {', '.join(report['facts']['have'])}")
-    print(f"  缺     : {report['facts']['missing'][0]}")
+    miss = report["facts"]["missing"]
+    print(f"  缺     : {miss[0] if miss else '（无——t186 已补上四柱干支）'}")
     print(f"  真卡点 : {report['facts']['hard_part']}")
     print("\n三种编码各撞什么：")
     for k, v in options.items():

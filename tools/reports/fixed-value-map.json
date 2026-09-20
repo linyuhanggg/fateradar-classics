@@ -21,6 +21,13 @@
   "note": "平铺列表＝或：二选一（传中见财 / 青龙居日上）。引擎自带 unknown `LR-UNKNOWN-MIBEN-021-WIRE` 说「规则 applicableTo 仍为空」，本条即那次接线。"
  },
  {
+  "book": "san-shi/qimen-faqiao",
+  "rule_id": "QM-P36",
+  "applicable_to_yaml": "{any_of: [{all_of: [{key: gan, value: 戊, scope: {pillar: time}}, {key: zhi, value: 戌, scope: {pillar: time}}]}, {all_of: [{key: gan, value: 壬, scope: {pillar: time}}, {key: zhi, value: 辰, scope: {pillar: time}}]}, {all_of: [{key: gan, value: 丙, scope: {pillar: time}}, {key: zhi, value: 戌, scope: {pillar: time}}]}, {all_of: [{key: gan, value: 癸, scope: {pillar: time}}, {key: zhi, value: 未, scope: {pillar: time}}]}, {all_of: [{key: gan, value: 丁, scope: {pillar: time}}, {key: zhi, value: 丑, scope: {pillar: time}}]}, {all_of: [{key: gan, value: 己, scope: {pillar: time}}, {key: zhi, value: 丑, scope: {pillar: time}}]}]}",
+  "evidence_from_statement": "时干入墓，戊戌、壬辰、丙戌、癸未、丁丑、己丑也",
+  "note": "六对皆时柱；「入墓」之名取自原文该表，未自行推墓位。"
+ },
+ {
   "book": "bazi/sanming-tonghui",
   "rule_id": "SANMINGTONGH-004",
   "applicable_to_yaml": "[{key: nayin, value: 海中金}]",

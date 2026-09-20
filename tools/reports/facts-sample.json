@@ -3059,6 +3059,94 @@
       "label": "甲 1990-08-15 13:20 男 上海",
       "facts": [
         {
+          "key": "gan",
+          "value": "庚",
+          "scope": {
+            "layer": "本命",
+            "pillar": "year"
+          },
+          "derivedFrom": [
+            "ganZhi"
+          ]
+        },
+        {
+          "key": "zhi",
+          "value": "午",
+          "scope": {
+            "layer": "本命",
+            "pillar": "year"
+          },
+          "derivedFrom": [
+            "ganZhi"
+          ]
+        },
+        {
+          "key": "gan",
+          "value": "甲",
+          "scope": {
+            "layer": "本命",
+            "pillar": "month"
+          },
+          "derivedFrom": [
+            "ganZhi"
+          ]
+        },
+        {
+          "key": "zhi",
+          "value": "申",
+          "scope": {
+            "layer": "本命",
+            "pillar": "month"
+          },
+          "derivedFrom": [
+            "ganZhi"
+          ]
+        },
+        {
+          "key": "gan",
+          "value": "壬",
+          "scope": {
+            "layer": "本命",
+            "pillar": "day"
+          },
+          "derivedFrom": [
+            "ganZhi"
+          ]
+        },
+        {
+          "key": "zhi",
+          "value": "子",
+          "scope": {
+            "layer": "本命",
+            "pillar": "day"
+          },
+          "derivedFrom": [
+            "ganZhi"
+          ]
+        },
+        {
+          "key": "gan",
+          "value": "丁",
+          "scope": {
+            "layer": "本命",
+            "pillar": "time"
+          },
+          "derivedFrom": [
+            "ganZhi"
+          ]
+        },
+        {
+          "key": "zhi",
+          "value": "未",
+          "scope": {
+            "layer": "本命",
+            "pillar": "time"
+          },
+          "derivedFrom": [
+            "ganZhi"
+          ]
+        },
+        {
           "key": "jiuxing",
           "value": "天英",
           "scope": {
@@ -3627,6 +3715,94 @@
     "caseB": {
       "label": "乙 1984-02-04 23:40 女 上海",
       "facts": [
+        {
+          "key": "gan",
+          "value": "甲",
+          "scope": {
+            "layer": "本命",
+            "pillar": "year"
+          },
+          "derivedFrom": [
+            "ganZhi"
+          ]
+        },
+        {
+          "key": "zhi",
+          "value": "子",
+          "scope": {
+            "layer": "本命",
+            "pillar": "year"
+          },
+          "derivedFrom": [
+            "ganZhi"
+          ]
+        },
+        {
+          "key": "gan",
+          "value": "丙",
+          "scope": {
+            "layer": "本命",
+            "pillar": "month"
+          },
+          "derivedFrom": [
+            "ganZhi"
+          ]
+        },
+        {
+          "key": "zhi",
+          "value": "寅",
+          "scope": {
+            "layer": "本命",
+            "pillar": "month"
+          },
+          "derivedFrom": [
+            "ganZhi"
+          ]
+        },
+        {
+          "key": "gan",
+          "value": "己",
+          "scope": {
+            "layer": "本命",
+            "pillar": "day"
+          },
+          "derivedFrom": [
+            "ganZhi"
+          ]
+        },
+        {
+          "key": "zhi",
+          "value": "巳",
+          "scope": {
+            "layer": "本命",
+            "pillar": "day"
+          },
+          "derivedFrom": [
+            "ganZhi"
+          ]
+        },
+        {
+          "key": "gan",
+          "value": "甲",
+          "scope": {
+            "layer": "本命",
+            "pillar": "time"
+          },
+          "derivedFrom": [
+            "ganZhi"
+          ]
+        },
+        {
+          "key": "zhi",
+          "value": "子",
+          "scope": {
+            "layer": "本命",
+            "pillar": "time"
+          },
+          "derivedFrom": [
+            "ganZhi"
+          ]
+        },
         {
           "key": "jiuxing",
           "value": "天辅",
