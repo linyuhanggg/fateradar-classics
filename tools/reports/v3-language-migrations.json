@@ -1,0 +1,53 @@
+{
+  "report": "谓词语言 v3 升级时的**语义变动**登记",
+  "generated_by": "t180（跨提交契约审计发现）",
+  "why": "t168 的 v3 升级提交 `1f25bb5` 里，`applicable_to` 变动的规则共 21 条；其中 20 条是 `[] → 谓词`（新增映射，出处已由 `predicate-decisions/*.json` 覆盖），**只有 1 条是「已有谓词 → 另一个谓词」的语义变动**，此前无任何台账记录。跨提交审计（`tools/audit-contract.py`）把它揪了出来——这正是该审计存在的意义。",
+  "entries": [
+    {
+      "book": "ziwei/taiwei-fu",
+      "rule_id": "TAIWEIFU-018",
+      "commit": "1f25bb5",
+      "change_class": "flat-true-to-discriminating",
+      "before_v2_flat": [
+        {
+          "key": "ziwei_palace",
+          "value": "疾厄"
+        },
+        {
+          "key": "ziwei_palace",
+          "value": "迁移"
+        }
+      ],
+      "after_v3": {
+        "any_of": [
+          {
+            "all_of": [
+              {
+                "key": "sihua",
+                "value": "化忌",
+                "scope": {
+                  "palace": "疾厄"
+                }
+              }
+            ]
+          },
+          {
+            "all_of": [
+              {
+                "key": "sihua",
+                "value": "化忌",
+                "scope": {
+                  "palace": "迁移"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      "evidence_from_statement": "忌暗同居身命疾厄",
+      "why_changed": "v2 那两条是「疾厄宫事实存在 / 迁移宫事实存在」——**每一张盘都成立**（十二宫恒在），属结构恒真、零筛选。v3 形式改为要求**化忌**确实落在该宫，才对得上原文「忌…同居…疾厄」。所以这是一次**修正**，不是改写口径。",
+      "disclosed_partial": "只取「疾厄／迁移」两宫（沿 v2 的宫位选择，未含「身命」），且未表达「暗」星与「凶星会于父母」两截——属**子集**，已在文档披露。",
+      "semantics_verified": "每盘化忌恰落一宫，故该式可判真假；实测两样本盘均不成立。"
+    }
+  ]
+}
