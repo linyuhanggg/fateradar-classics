@@ -73,6 +73,19 @@ MAP: dict[str, tuple[str, str, str]] = {
         "平铺列表＝或：二选一（传中见财 / 青龙居日上）。"
         "引擎自带 unknown `LR-UNKNOWN-MIBEN-021-WIRE` 说「规则 applicableTo 仍为空」，本条即那次接线。",
     ),
+    # ── 六爻具名状态（引擎 analysis 已算，t193 才产成事实）────────────────────────
+    # 「月建冲爻为月破」「静爻得日辰冲为暗动」的条件，正是引擎给出的**具名分类**
+    # （`state.monthStrength` / `state.activity.label`）。取名而不另算。
+    "ZENGSHANBUYI-030": (
+        "[{key: liuyao_month_strength, value: 月破}]",
+        "月建冲爻为月破",
+        "条件是「本卦有月破之爻」；后文「静则到底破、动则能伤本变…出月或合日不破」是断法细则，未表达。",
+    ),
+    "ZENGSHANBUYI-018": (
+        "[{key: liuyao_activity, value: 暗动}]",
+        "静爻得日辰冲为暗动",
+        "条件是「本卦有暗动之爻」；「暗动如同动，能生克他爻」是断法，未表达。",
+    ),
     # ── 六壬课体（`keti`）：引擎按取传结果定课体名，事实层早已产出 ──────────────
     # 「伏吟／返吟／八专」在原文里既是课体名、也是条件（adapter 的 is_fuyin/is_fanyin/is_bazhuan
     # 就是判这些），故 {keti: 伏吟课} 正是「本盘为伏吟」的忠实写法。

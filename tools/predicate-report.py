@@ -135,6 +135,10 @@ ART_EMIT_KEYS: dict[str, frozenset[str]] = {
             # 纳甲地支（本爻／变爻）：引擎 row.ganzhi[1] / row.changed[1] 直接产出。
             "yao_zhi",
             "bian_yao_zhi",
+            # 具名状态三键：引擎 analysis 已算（用神／月建强度／爻活动），此前只进解读文本。
+            "liuyao_yongshen",
+            "liuyao_month_strength",
+            "liuyao_activity",
         }
     ),
     "qizheng": frozenset({"xingyao", "gongwei", "xiudu", "miaowang"}),

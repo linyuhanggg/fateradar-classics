@@ -272,7 +272,7 @@ rules:
     start_line: 7387
     end_line: 7387
   quote: 沖者散也，凡占凶事宜於沖散、占吉事而不宜，必兼用神而言，用神旺𨿽沖不破，用神失陷凶而又凶，六合卦變六沖卦者，用神旺者始吉終凶，圖事難成，有始無終也。爻沖有五：爻與月沖謂月破。爻遇日沖爲暗動。休囚而遇日沖謂之日破。動爻化回頭沖。如逢仇敵。爻遇爻沖謂之相殺也。
-  applicable_to: []
+  applicable_to: [{key: liuyao_activity, value: 暗动}]
   caveats:
   - 暗动力虽显但不及真动
   school: null
@@ -448,7 +448,7 @@ rules:
     start_line: 7067
     end_line: 7067
   quote: 月建沖爻卽爲月破，乃無用之爻也。
-  applicable_to: []
+  applicable_to: [{key: liuyao_month_strength, value: 月破}]
   caveats:
   - 本书对月破有"动则能伤"重大补充，与他书有差异
   - 以本书为准

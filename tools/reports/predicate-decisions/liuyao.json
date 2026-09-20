@@ -289,10 +289,12 @@
     {
       "book": "divination/zengshan-buyi",
       "rule_id": "ZENGSHANBUYI-018",
-      "decision": "unmapped",
+      "decision": "mapped",
       "reason_class": "fact-not-emitted",
       "evidence_from_statement": "静爻得日辰冲为暗动；暗动如同动，能生克他爻",
-      "note": "缺日辰（日柱地支）与日辰冲爻关系；「静爻」也需要全爻动静表（facts 只给动爻）。引文本身即「爻沖有五」的体例列举。"
+      "note": "缺日辰（日柱地支）与日辰冲爻关系；「静爻」也需要全爻动静表（facts 只给动爻）。引文本身即「爻沖有五」的体例列举。",
+      "mapped_by": "fixed-value-map.json",
+      "mapped_note": "t193 映射：条件是引擎给出的**具名分类**（月建强度『月破』／爻活动『暗动』），t193 起这两枚事实才产出。取名不另算。原 reason_class 保留为历史判定。"
     },
     {
       "book": "divination/zengshan-buyi",
@@ -347,10 +349,12 @@
     {
       "book": "divination/zengshan-buyi",
       "rule_id": "ZENGSHANBUYI-030",
-      "decision": "unmapped",
+      "decision": "mapped",
       "reason_class": "fact-not-emitted",
       "evidence_from_statement": "月建冲爻为月破；月破之爻——静则到底破、动则能伤本变、变则能伤本动、出月或合日不破",
-      "note": "月破是月建（月柱地支）冲爻的结果，月建与冲关系均未产出；另需静／动／变三种状态与出月／合日的时间条件。"
+      "note": "月破是月建（月柱地支）冲爻的结果，月建与冲关系均未产出；另需静／动／变三种状态与出月／合日的时间条件。",
+      "mapped_by": "fixed-value-map.json",
+      "mapped_note": "t193 映射：条件是引擎给出的**具名分类**（月建强度『月破』／爻活动『暗动』），t193 起这两枚事实才产出。取名不另算。原 reason_class 保留为历史判定。"
     },
     {
       "book": "divination/zengshan-buyi",
