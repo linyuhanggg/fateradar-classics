@@ -21,6 +21,27 @@
   "note": "平铺列表＝或：二选一（传中见财 / 青龙居日上）。引擎自带 unknown `LR-UNKNOWN-MIBEN-021-WIRE` 说「规则 applicableTo 仍为空」，本条即那次接线。"
  },
  {
+  "book": "san-shi/daliuren-daquan",
+  "rule_id": "DALIURENDAQU-010",
+  "applicable_to_yaml": "[{key: keti, value: 伏吟课}]",
+  "evidence_from_statement": "十二神各居本宫",
+  "note": "原文「伏吟有克还为用，无克刚干柔取辰」即伏吟课取传；「月将支与占时支相同」是伏吟的成因。"
+ },
+ {
+  "book": "san-shi/daliuren-daquan",
+  "rule_id": "DALIURENDAQU-011",
+  "applicable_to_yaml": "[{key: keti, value: 返吟课}]",
+  "evidence_from_statement": "十二神各居冲位",
+  "note": "原文「返吟有克亦为用，无克别有井栏名」即返吟课取传。"
+ },
+ {
+  "book": "san-shi/liuren-zhiyin",
+  "rule_id": "LIURENZHIYIN-009",
+  "applicable_to_yaml": "[{key: keti, value: 八专课}]",
+  "evidence_from_statement": "干支同位",
+  "note": "八专课的定义就是干支同位（引擎 liuren-transmissions.ts 在干支同位时定八专课）；「四课去重后为两课」是同一结构的另一面，未单独表达。"
+ },
+ {
   "book": "san-shi/qimen-faqiao",
   "rule_id": "QM-P36",
   "applicable_to_yaml": "{any_of: [{all_of: [{key: gan, value: 戊, scope: {pillar: time}}, {key: zhi, value: 戌, scope: {pillar: time}}]}, {all_of: [{key: gan, value: 壬, scope: {pillar: time}}, {key: zhi, value: 辰, scope: {pillar: time}}]}, {all_of: [{key: gan, value: 丙, scope: {pillar: time}}, {key: zhi, value: 戌, scope: {pillar: time}}]}, {all_of: [{key: gan, value: 癸, scope: {pillar: time}}, {key: zhi, value: 未, scope: {pillar: time}}]}, {all_of: [{key: gan, value: 丁, scope: {pillar: time}}, {key: zhi, value: 丑, scope: {pillar: time}}]}, {all_of: [{key: gan, value: 己, scope: {pillar: time}}, {key: zhi, value: 丑, scope: {pillar: time}}]}]}",

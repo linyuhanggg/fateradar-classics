@@ -140,7 +140,7 @@ rules:
   statement: 月将支与占时支相同，十二神各居本宫，adapter 标记 `is_fuyin=true`。
   anchor: {file: sources/fulltext/san-shi/daliuren-daquan/fulltext.md, start_line: 89, end_line: 94}
   quote: 伏吟有克还为用，无克刚干柔取辰。迤逦刑之作中末，从兹《玉厯》职其真。若也自刑为发用，次传颠倒日辰并。次传更复自刑者，冲取末传不论刑。
-  applicable_to: []
+  applicable_to: [{key: keti, value: 伏吟课}]
   caveats:
   - 刑表、冲表或日干寄宫不统一时停止
   school: null
@@ -152,7 +152,7 @@ rules:
   statement: 十二神各居冲位，adapter 标记 `is_fanyin=true`。
   anchor: {file: sources/fulltext/san-shi/daliuren-daquan/fulltext.md, start_line: 95, end_line: 98}
   quote: 返吟有克亦为用，无克别有井栏名。若知六日该无克，丑未同干丁己辛。丑日登明未太乙，辰中日末识原因阳日用辰，阴日用日，辰上作中，日上作末。
-  applicable_to: []
+  applicable_to: [{key: keti, value: 返吟课}]
   caveats:
   - adapter 没有 `well_rail_trace` 或 profile 未经过 golden tests 时返回 `unresolved_fanyin_well_rail`
   school: null

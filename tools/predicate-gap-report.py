@@ -98,6 +98,9 @@ ART_EMIT_KEYS: dict[str, frozenset[str]] = {
     "ziwei": frozenset({"ziwei_palace", "ziwei_star", "sihua", "daxian", "liunian_taisui"}),
     "qimen": frozenset(
         {
+            # 四柱干支：引擎 facts.ganZhi 直接透传（与 bazi 共用键，按 scope.pillar 区分）。
+            "gan",
+            "zhi",
             "jiuxing",
             "bamen",
             "bashen",

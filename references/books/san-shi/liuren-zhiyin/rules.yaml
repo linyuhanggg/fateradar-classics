@@ -120,7 +120,7 @@ rules:
   statement: 干支同位，四课去重后为两课，adapter 标记 `is_bazhuan=true`。
   anchor: {file: sources/fulltext/san-shi/liuren-zhiyin/fulltext.md, start_line: 202, end_line: 202}
   quote: 32. 八專以逆順為真。
-  applicable_to: []
+  applicable_to: [{key: keti, value: 八专课}]
   caveats:
   - 两课无克不能进入遥克、昴星或别责
   school: null

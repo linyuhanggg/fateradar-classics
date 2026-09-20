@@ -4348,6 +4348,673 @@
           ]
         }
       ]
+    },
+    "caseC": {
+      "label": "反吟局 2026-01-01 11:00 男 上海",
+      "facts": [
+        {
+          "key": "gan",
+          "value": "乙",
+          "scope": {
+            "layer": "本命",
+            "pillar": "year"
+          },
+          "derivedFrom": [
+            "ganZhi"
+          ]
+        },
+        {
+          "key": "zhi",
+          "value": "巳",
+          "scope": {
+            "layer": "本命",
+            "pillar": "year"
+          },
+          "derivedFrom": [
+            "ganZhi"
+          ]
+        },
+        {
+          "key": "gan",
+          "value": "戊",
+          "scope": {
+            "layer": "本命",
+            "pillar": "month"
+          },
+          "derivedFrom": [
+            "ganZhi"
+          ]
+        },
+        {
+          "key": "zhi",
+          "value": "子",
+          "scope": {
+            "layer": "本命",
+            "pillar": "month"
+          },
+          "derivedFrom": [
+            "ganZhi"
+          ]
+        },
+        {
+          "key": "gan",
+          "value": "乙",
+          "scope": {
+            "layer": "本命",
+            "pillar": "day"
+          },
+          "derivedFrom": [
+            "ganZhi"
+          ]
+        },
+        {
+          "key": "zhi",
+          "value": "亥",
+          "scope": {
+            "layer": "本命",
+            "pillar": "day"
+          },
+          "derivedFrom": [
+            "ganZhi"
+          ]
+        },
+        {
+          "key": "gan",
+          "value": "壬",
+          "scope": {
+            "layer": "本命",
+            "pillar": "time"
+          },
+          "derivedFrom": [
+            "ganZhi"
+          ]
+        },
+        {
+          "key": "zhi",
+          "value": "午",
+          "scope": {
+            "layer": "本命",
+            "pillar": "time"
+          },
+          "derivedFrom": [
+            "ganZhi"
+          ]
+        },
+        {
+          "key": "jiuxing",
+          "value": "天心",
+          "scope": {
+            "layer": "本命",
+            "palace": "四宫 巽",
+            "gong": 4
+          },
+          "derivedFrom": [
+            "grid.star"
+          ]
+        },
+        {
+          "key": "bamen",
+          "value": "死门",
+          "scope": {
+            "layer": "本命",
+            "palace": "四宫 巽",
+            "gong": 4
+          },
+          "derivedFrom": [
+            "grid.door"
+          ]
+        },
+        {
+          "key": "bashen",
+          "value": "太阴",
+          "scope": {
+            "layer": "本命",
+            "palace": "四宫 巽",
+            "gong": 4
+          },
+          "derivedFrom": [
+            "grid.god"
+          ]
+        },
+        {
+          "key": "tianpan_gan",
+          "value": "庚",
+          "scope": {
+            "layer": "本命",
+            "palace": "四宫 巽",
+            "gong": 4
+          },
+          "derivedFrom": [
+            "grid.sky"
+          ]
+        },
+        {
+          "key": "dipan_gan",
+          "value": "戊",
+          "scope": {
+            "layer": "本命",
+            "palace": "四宫 巽",
+            "gong": 4
+          },
+          "derivedFrom": [
+            "grid.earth"
+          ]
+        },
+        {
+          "key": "jiuxing",
+          "value": "天蓬",
+          "scope": {
+            "layer": "本命",
+            "palace": "九宫 离",
+            "gong": 9
+          },
+          "derivedFrom": [
+            "grid.star"
+          ]
+        },
+        {
+          "key": "bamen",
+          "value": "惊门",
+          "scope": {
+            "layer": "本命",
+            "palace": "九宫 离",
+            "gong": 9
+          },
+          "derivedFrom": [
+            "grid.door"
+          ]
+        },
+        {
+          "key": "bashen",
+          "value": "六合",
+          "scope": {
+            "layer": "本命",
+            "palace": "九宫 离",
+            "gong": 9
+          },
+          "derivedFrom": [
+            "grid.god"
+          ]
+        },
+        {
+          "key": "tianpan_gan",
+          "value": "丁",
+          "scope": {
+            "layer": "本命",
+            "palace": "九宫 离",
+            "gong": 9
+          },
+          "derivedFrom": [
+            "grid.sky"
+          ]
+        },
+        {
+          "key": "dipan_gan",
+          "value": "癸",
+          "scope": {
+            "layer": "本命",
+            "palace": "九宫 离",
+            "gong": 9
+          },
+          "derivedFrom": [
+            "grid.earth"
+          ]
+        },
+        {
+          "key": "jiuxing",
+          "value": "天任",
+          "scope": {
+            "layer": "本命",
+            "palace": "二宫 坤",
+            "gong": 2
+          },
+          "derivedFrom": [
+            "grid.star"
+          ]
+        },
+        {
+          "key": "bamen",
+          "value": "开门",
+          "scope": {
+            "layer": "本命",
+            "palace": "二宫 坤",
+            "gong": 2
+          },
+          "derivedFrom": [
+            "grid.door"
+          ]
+        },
+        {
+          "key": "bashen",
+          "value": "白虎",
+          "scope": {
+            "layer": "本命",
+            "palace": "二宫 坤",
+            "gong": 2
+          },
+          "derivedFrom": [
+            "grid.god"
+          ]
+        },
+        {
+          "key": "tianpan_gan",
+          "value": "壬",
+          "scope": {
+            "layer": "本命",
+            "palace": "二宫 坤",
+            "gong": 2
+          },
+          "derivedFrom": [
+            "grid.sky"
+          ]
+        },
+        {
+          "key": "dipan_gan",
+          "value": "丙",
+          "scope": {
+            "layer": "本命",
+            "palace": "二宫 坤",
+            "gong": 2
+          },
+          "derivedFrom": [
+            "grid.earth"
+          ]
+        },
+        {
+          "key": "jiuxing",
+          "value": "天柱",
+          "scope": {
+            "layer": "本命",
+            "palace": "三宫 震",
+            "gong": 3
+          },
+          "derivedFrom": [
+            "grid.star"
+          ]
+        },
+        {
+          "key": "bamen",
+          "value": "景门",
+          "scope": {
+            "layer": "本命",
+            "palace": "三宫 震",
+            "gong": 3
+          },
+          "derivedFrom": [
+            "grid.door"
+          ]
+        },
+        {
+          "key": "bashen",
+          "value": "腾蛇",
+          "scope": {
+            "layer": "本命",
+            "palace": "三宫 震",
+            "gong": 3
+          },
+          "derivedFrom": [
+            "grid.god"
+          ]
+        },
+        {
+          "key": "tianpan_gan",
+          "value": "辛",
+          "scope": {
+            "layer": "本命",
+            "palace": "三宫 震",
+            "gong": 3
+          },
+          "derivedFrom": [
+            "grid.sky"
+          ]
+        },
+        {
+          "key": "dipan_gan",
+          "value": "乙",
+          "scope": {
+            "layer": "本命",
+            "palace": "三宫 震",
+            "gong": 3
+          },
+          "derivedFrom": [
+            "grid.earth"
+          ]
+        },
+        {
+          "key": "jiuxing",
+          "value": "天冲",
+          "scope": {
+            "layer": "本命",
+            "palace": "七宫 兑",
+            "gong": 7
+          },
+          "derivedFrom": [
+            "grid.star"
+          ]
+        },
+        {
+          "key": "bamen",
+          "value": "休门",
+          "scope": {
+            "layer": "本命",
+            "palace": "七宫 兑",
+            "gong": 7
+          },
+          "derivedFrom": [
+            "grid.door"
+          ]
+        },
+        {
+          "key": "bashen",
+          "value": "玄武",
+          "scope": {
+            "layer": "本命",
+            "palace": "七宫 兑",
+            "gong": 7
+          },
+          "derivedFrom": [
+            "grid.god"
+          ]
+        },
+        {
+          "key": "tianpan_gan",
+          "value": "乙",
+          "scope": {
+            "layer": "本命",
+            "palace": "七宫 兑",
+            "gong": 7
+          },
+          "derivedFrom": [
+            "grid.sky"
+          ]
+        },
+        {
+          "key": "dipan_gan",
+          "value": "辛",
+          "scope": {
+            "layer": "本命",
+            "palace": "七宫 兑",
+            "gong": 7
+          },
+          "derivedFrom": [
+            "grid.earth"
+          ]
+        },
+        {
+          "key": "jiuxing",
+          "value": "天芮",
+          "scope": {
+            "layer": "本命",
+            "palace": "八宫 艮",
+            "gong": 8
+          },
+          "derivedFrom": [
+            "grid.star"
+          ]
+        },
+        {
+          "key": "jiuxing",
+          "value": "天禽",
+          "scope": {
+            "layer": "本命",
+            "palace": "八宫 艮",
+            "gong": 8
+          },
+          "derivedFrom": [
+            "grid.hostedStar"
+          ]
+        },
+        {
+          "key": "bamen",
+          "value": "杜门",
+          "scope": {
+            "layer": "本命",
+            "palace": "八宫 艮",
+            "gong": 8
+          },
+          "derivedFrom": [
+            "grid.door"
+          ]
+        },
+        {
+          "key": "bashen",
+          "value": "值符",
+          "scope": {
+            "layer": "本命",
+            "palace": "八宫 艮",
+            "gong": 8
+          },
+          "derivedFrom": [
+            "grid.god"
+          ]
+        },
+        {
+          "key": "tianpan_gan",
+          "value": "丙",
+          "scope": {
+            "layer": "本命",
+            "palace": "八宫 艮",
+            "gong": 8
+          },
+          "derivedFrom": [
+            "grid.sky"
+          ]
+        },
+        {
+          "key": "dipan_gan",
+          "value": "壬",
+          "scope": {
+            "layer": "本命",
+            "palace": "八宫 艮",
+            "gong": 8
+          },
+          "derivedFrom": [
+            "grid.earth"
+          ]
+        },
+        {
+          "key": "jiuxing",
+          "value": "天英",
+          "scope": {
+            "layer": "本命",
+            "palace": "一宫 坎",
+            "gong": 1
+          },
+          "derivedFrom": [
+            "grid.star"
+          ]
+        },
+        {
+          "key": "bamen",
+          "value": "伤门",
+          "scope": {
+            "layer": "本命",
+            "palace": "一宫 坎",
+            "gong": 1
+          },
+          "derivedFrom": [
+            "grid.door"
+          ]
+        },
+        {
+          "key": "bashen",
+          "value": "九天",
+          "scope": {
+            "layer": "本命",
+            "palace": "一宫 坎",
+            "gong": 1
+          },
+          "derivedFrom": [
+            "grid.god"
+          ]
+        },
+        {
+          "key": "tianpan_gan",
+          "value": "癸",
+          "scope": {
+            "layer": "本命",
+            "palace": "一宫 坎",
+            "gong": 1
+          },
+          "derivedFrom": [
+            "grid.sky"
+          ]
+        },
+        {
+          "key": "dipan_gan",
+          "value": "丁",
+          "scope": {
+            "layer": "本命",
+            "palace": "一宫 坎",
+            "gong": 1
+          },
+          "derivedFrom": [
+            "grid.earth"
+          ]
+        },
+        {
+          "key": "jiuxing",
+          "value": "天辅",
+          "scope": {
+            "layer": "本命",
+            "palace": "六宫 乾",
+            "gong": 6
+          },
+          "derivedFrom": [
+            "grid.star"
+          ]
+        },
+        {
+          "key": "bamen",
+          "value": "生门",
+          "scope": {
+            "layer": "本命",
+            "palace": "六宫 乾",
+            "gong": 6
+          },
+          "derivedFrom": [
+            "grid.door"
+          ]
+        },
+        {
+          "key": "bashen",
+          "value": "九地",
+          "scope": {
+            "layer": "本命",
+            "palace": "六宫 乾",
+            "gong": 6
+          },
+          "derivedFrom": [
+            "grid.god"
+          ]
+        },
+        {
+          "key": "tianpan_gan",
+          "value": "戊",
+          "scope": {
+            "layer": "本命",
+            "palace": "六宫 乾",
+            "gong": 6
+          },
+          "derivedFrom": [
+            "grid.sky"
+          ]
+        },
+        {
+          "key": "dipan_gan",
+          "value": "庚",
+          "scope": {
+            "layer": "本命",
+            "palace": "六宫 乾",
+            "gong": 6
+          },
+          "derivedFrom": [
+            "grid.earth"
+          ]
+        },
+        {
+          "key": "zhifu",
+          "value": "天禽",
+          "scope": {
+            "layer": "本命",
+            "gong": 8
+          },
+          "derivedFrom": [
+            "meta.值符"
+          ]
+        },
+        {
+          "key": "zhishi",
+          "value": "死门",
+          "scope": {
+            "layer": "本命",
+            "gong": 4
+          },
+          "derivedFrom": [
+            "meta.值使"
+          ]
+        },
+        {
+          "key": "geju_qimen",
+          "value": "反吟局",
+          "scope": {
+            "layer": "本命"
+          },
+          "derivedFrom": [
+            "patterns"
+          ]
+        },
+        {
+          "key": "geju_qimen",
+          "value": "门迫",
+          "scope": {
+            "layer": "本命"
+          },
+          "derivedFrom": [
+            "patterns"
+          ]
+        },
+        {
+          "key": "geju_qimen",
+          "value": "三奇得使",
+          "scope": {
+            "layer": "本命"
+          },
+          "derivedFrom": [
+            "patterns"
+          ]
+        },
+        {
+          "key": "geju_qimen",
+          "value": "奇门相合",
+          "scope": {
+            "layer": "本命"
+          },
+          "derivedFrom": [
+            "patterns"
+          ]
+        },
+        {
+          "key": "kongwang",
+          "value": "申",
+          "scope": {
+            "layer": "本命"
+          },
+          "derivedFrom": [
+            "meta.空亡"
+          ]
+        },
+        {
+          "key": "kongwang",
+          "value": "酉",
+          "scope": {
+            "layer": "本命"
+          },
+          "derivedFrom": [
+            "meta.空亡"
+          ]
+        }
+      ]
     }
   },
   "liuren": {
@@ -5777,6 +6444,603 @@
           },
           "derivedFrom": [
             "chuan.末传.relative"
+          ]
+        }
+      ]
+    },
+    "caseH": {
+      "label": "返吟课 2026-01-01 13:00 男 上海",
+      "facts": [
+        {
+          "key": "keti",
+          "value": "返吟课",
+          "scope": {
+            "layer": "本命"
+          },
+          "derivedFrom": [
+            "meta.课体"
+          ]
+        },
+        {
+          "key": "sanchuan",
+          "value": "初传",
+          "scope": {
+            "layer": "本命"
+          },
+          "derivedFrom": [
+            "chuan.初传",
+            "巳"
+          ]
+        },
+        {
+          "key": "tianjiang",
+          "value": "白虎",
+          "scope": {
+            "layer": "本命"
+          },
+          "derivedFrom": [
+            "chuan.初传.god"
+          ]
+        },
+        {
+          "key": "sanchuan",
+          "value": "中传",
+          "scope": {
+            "layer": "本命"
+          },
+          "derivedFrom": [
+            "chuan.中传",
+            "亥"
+          ]
+        },
+        {
+          "key": "tianjiang",
+          "value": "腾蛇",
+          "scope": {
+            "layer": "本命"
+          },
+          "derivedFrom": [
+            "chuan.中传.god"
+          ]
+        },
+        {
+          "key": "sanchuan",
+          "value": "末传",
+          "scope": {
+            "layer": "本命"
+          },
+          "derivedFrom": [
+            "chuan.末传",
+            "巳"
+          ]
+        },
+        {
+          "key": "yuejiang",
+          "value": "丑",
+          "scope": {
+            "layer": "本命"
+          },
+          "derivedFrom": [
+            "meta.月将"
+          ]
+        },
+        {
+          "key": "kongwang",
+          "value": "申",
+          "scope": {
+            "layer": "本命"
+          },
+          "derivedFrom": [
+            "meta.空亡"
+          ]
+        },
+        {
+          "key": "kongwang",
+          "value": "酉",
+          "scope": {
+            "layer": "本命"
+          },
+          "derivedFrom": [
+            "meta.空亡"
+          ]
+        },
+        {
+          "key": "tianjiang",
+          "value": "朱雀",
+          "scope": {
+            "layer": "本命",
+            "palace": "日上"
+          },
+          "derivedFrom": [
+            "ke.一课.god",
+            "palace:辰"
+          ]
+        },
+        {
+          "key": "tianjiang",
+          "value": "白虎",
+          "scope": {
+            "layer": "本命",
+            "palace": "辰上"
+          },
+          "derivedFrom": [
+            "ke.三课.god",
+            "palace:亥"
+          ]
+        },
+        {
+          "key": "tianjiang",
+          "value": "白虎",
+          "scope": {
+            "layer": "本命",
+            "palace": "初传"
+          },
+          "derivedFrom": [
+            "chuan.初传.god"
+          ]
+        },
+        {
+          "key": "liuqin",
+          "value": "子孙",
+          "scope": {
+            "layer": "本命",
+            "palace": "初传"
+          },
+          "derivedFrom": [
+            "chuan.初传.relative"
+          ]
+        },
+        {
+          "key": "tianjiang",
+          "value": "腾蛇",
+          "scope": {
+            "layer": "本命",
+            "palace": "中传"
+          },
+          "derivedFrom": [
+            "chuan.中传.god"
+          ]
+        },
+        {
+          "key": "liuqin",
+          "value": "父母",
+          "scope": {
+            "layer": "本命",
+            "palace": "中传"
+          },
+          "derivedFrom": [
+            "chuan.中传.relative"
+          ]
+        },
+        {
+          "key": "tianjiang",
+          "value": "白虎",
+          "scope": {
+            "layer": "本命",
+            "palace": "末传"
+          },
+          "derivedFrom": [
+            "chuan.末传.god"
+          ]
+        },
+        {
+          "key": "liuqin",
+          "value": "子孙",
+          "scope": {
+            "layer": "本命",
+            "palace": "末传"
+          },
+          "derivedFrom": [
+            "chuan.末传.relative"
+          ]
+        }
+      ]
+    },
+    "caseI": {
+      "label": "八专课 2026-02-02 01:00 男 上海",
+      "facts": [
+        {
+          "key": "keti",
+          "value": "八专课",
+          "scope": {
+            "layer": "本命"
+          },
+          "derivedFrom": [
+            "meta.课体"
+          ]
+        },
+        {
+          "key": "sanchuan",
+          "value": "初传",
+          "scope": {
+            "layer": "本命"
+          },
+          "derivedFrom": [
+            "chuan.初传",
+            "卯"
+          ]
+        },
+        {
+          "key": "tianjiang",
+          "value": "天空",
+          "scope": {
+            "layer": "本命"
+          },
+          "derivedFrom": [
+            "chuan.初传.god"
+          ]
+        },
+        {
+          "key": "sanchuan",
+          "value": "中传",
+          "scope": {
+            "layer": "本命"
+          },
+          "derivedFrom": [
+            "chuan.中传",
+            "午"
+          ]
+        },
+        {
+          "key": "tianjiang",
+          "value": "六合",
+          "scope": {
+            "layer": "本命"
+          },
+          "derivedFrom": [
+            "chuan.中传.god"
+          ]
+        },
+        {
+          "key": "sanchuan",
+          "value": "末传",
+          "scope": {
+            "layer": "本命"
+          },
+          "derivedFrom": [
+            "chuan.末传",
+            "午"
+          ]
+        },
+        {
+          "key": "yuejiang",
+          "value": "子",
+          "scope": {
+            "layer": "本命"
+          },
+          "derivedFrom": [
+            "meta.月将"
+          ]
+        },
+        {
+          "key": "kongwang",
+          "value": "寅",
+          "scope": {
+            "layer": "本命"
+          },
+          "derivedFrom": [
+            "meta.空亡"
+          ]
+        },
+        {
+          "key": "kongwang",
+          "value": "卯",
+          "scope": {
+            "layer": "本命"
+          },
+          "derivedFrom": [
+            "meta.空亡"
+          ]
+        },
+        {
+          "key": "tianjiang",
+          "value": "六合",
+          "scope": {
+            "layer": "本命",
+            "palace": "日上"
+          },
+          "derivedFrom": [
+            "ke.一课.god",
+            "palace:未"
+          ]
+        },
+        {
+          "key": "tianjiang",
+          "value": "六合",
+          "scope": {
+            "layer": "本命",
+            "palace": "辰上"
+          },
+          "derivedFrom": [
+            "ke.三课.god",
+            "palace:未"
+          ]
+        },
+        {
+          "key": "tianjiang",
+          "value": "天空",
+          "scope": {
+            "layer": "本命",
+            "palace": "初传"
+          },
+          "derivedFrom": [
+            "chuan.初传.god"
+          ]
+        },
+        {
+          "key": "liuqin",
+          "value": "父母",
+          "scope": {
+            "layer": "本命",
+            "palace": "初传"
+          },
+          "derivedFrom": [
+            "chuan.初传.relative"
+          ]
+        },
+        {
+          "key": "kongwang",
+          "value": "卯",
+          "scope": {
+            "layer": "本命",
+            "palace": "初传"
+          },
+          "derivedFrom": [
+            "chuan.初传.void.sky"
+          ]
+        },
+        {
+          "key": "tianjiang",
+          "value": "六合",
+          "scope": {
+            "layer": "本命",
+            "palace": "中传"
+          },
+          "derivedFrom": [
+            "chuan.中传.god"
+          ]
+        },
+        {
+          "key": "liuqin",
+          "value": "兄弟",
+          "scope": {
+            "layer": "本命",
+            "palace": "中传"
+          },
+          "derivedFrom": [
+            "chuan.中传.relative"
+          ]
+        },
+        {
+          "key": "tianjiang",
+          "value": "六合",
+          "scope": {
+            "layer": "本命",
+            "palace": "末传"
+          },
+          "derivedFrom": [
+            "chuan.末传.god"
+          ]
+        },
+        {
+          "key": "liuqin",
+          "value": "兄弟",
+          "scope": {
+            "layer": "本命",
+            "palace": "末传"
+          },
+          "derivedFrom": [
+            "chuan.末传.relative"
+          ]
+        }
+      ]
+    },
+    "caseJ": {
+      "label": "别责课 2026-01-23 03:00 男 上海",
+      "facts": [
+        {
+          "key": "keti",
+          "value": "别责课",
+          "scope": {
+            "layer": "本命"
+          },
+          "derivedFrom": [
+            "meta.课体"
+          ]
+        },
+        {
+          "key": "sanchuan",
+          "value": "初传",
+          "scope": {
+            "layer": "本命"
+          },
+          "derivedFrom": [
+            "chuan.初传",
+            "丑"
+          ]
+        },
+        {
+          "key": "tianjiang",
+          "value": "勾陈",
+          "scope": {
+            "layer": "本命"
+          },
+          "derivedFrom": [
+            "chuan.初传.god"
+          ]
+        },
+        {
+          "key": "sanchuan",
+          "value": "中传",
+          "scope": {
+            "layer": "本命"
+          },
+          "derivedFrom": [
+            "chuan.中传",
+            "巳"
+          ]
+        },
+        {
+          "key": "tianjiang",
+          "value": "太常",
+          "scope": {
+            "layer": "本命"
+          },
+          "derivedFrom": [
+            "chuan.中传.god"
+          ]
+        },
+        {
+          "key": "sanchuan",
+          "value": "末传",
+          "scope": {
+            "layer": "本命"
+          },
+          "derivedFrom": [
+            "chuan.末传",
+            "巳"
+          ]
+        },
+        {
+          "key": "yuejiang",
+          "value": "子",
+          "scope": {
+            "layer": "本命"
+          },
+          "derivedFrom": [
+            "meta.月将"
+          ]
+        },
+        {
+          "key": "kongwang",
+          "value": "辰",
+          "scope": {
+            "layer": "本命"
+          },
+          "derivedFrom": [
+            "meta.空亡"
+          ]
+        },
+        {
+          "key": "kongwang",
+          "value": "巳",
+          "scope": {
+            "layer": "本命"
+          },
+          "derivedFrom": [
+            "meta.空亡"
+          ]
+        },
+        {
+          "key": "tianjiang",
+          "value": "太常",
+          "scope": {
+            "layer": "本命",
+            "palace": "日上"
+          },
+          "derivedFrom": [
+            "ke.一课.god",
+            "palace:未"
+          ]
+        },
+        {
+          "key": "tianjiang",
+          "value": "太阴",
+          "scope": {
+            "layer": "本命",
+            "palace": "辰上"
+          },
+          "derivedFrom": [
+            "ke.三课.god",
+            "palace:酉"
+          ]
+        },
+        {
+          "key": "tianjiang",
+          "value": "勾陈",
+          "scope": {
+            "layer": "本命",
+            "palace": "初传"
+          },
+          "derivedFrom": [
+            "chuan.初传.god"
+          ]
+        },
+        {
+          "key": "liuqin",
+          "value": "子孙",
+          "scope": {
+            "layer": "本命",
+            "palace": "初传"
+          },
+          "derivedFrom": [
+            "chuan.初传.relative"
+          ]
+        },
+        {
+          "key": "tianjiang",
+          "value": "太常",
+          "scope": {
+            "layer": "本命",
+            "palace": "中传"
+          },
+          "derivedFrom": [
+            "chuan.中传.god"
+          ]
+        },
+        {
+          "key": "liuqin",
+          "value": "兄弟",
+          "scope": {
+            "layer": "本命",
+            "palace": "中传"
+          },
+          "derivedFrom": [
+            "chuan.中传.relative"
+          ]
+        },
+        {
+          "key": "kongwang",
+          "value": "巳",
+          "scope": {
+            "layer": "本命",
+            "palace": "中传"
+          },
+          "derivedFrom": [
+            "chuan.中传.void.sky"
+          ]
+        },
+        {
+          "key": "tianjiang",
+          "value": "太常",
+          "scope": {
+            "layer": "本命",
+            "palace": "末传"
+          },
+          "derivedFrom": [
+            "chuan.末传.god"
+          ]
+        },
+        {
+          "key": "liuqin",
+          "value": "兄弟",
+          "scope": {
+            "layer": "本命",
+            "palace": "末传"
+          },
+          "derivedFrom": [
+            "chuan.末传.relative"
+          ]
+        },
+        {
+          "key": "kongwang",
+          "value": "巳",
+          "scope": {
+            "layer": "本命",
+            "palace": "末传"
+          },
+          "derivedFrom": [
+            "chuan.末传.void.sky"
           ]
         }
       ]

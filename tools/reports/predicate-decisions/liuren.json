@@ -199,20 +199,24 @@
     {
       "book": "san-shi/daliuren-daquan",
       "rule_id": "DALIURENDAQU-010",
-      "decision": "unmapped",
+      "decision": "mapped",
       "reason_class": "fact-not-emitted",
       "evidence_from_statement": "月将支与占时支相同，十二神各居本宫，adapter 标记 is_fuyin=true",
       "note": "所述为盘面结构（伏吟盘：月将加时同位），但：yuejiang 只给一个「月将支」值，占时支不是 FactKey，「月将支 = 占时支」这一相等关系无从表达；「十二神各居本宫」是天盘落宫位置关系，也未产出；is_fuyin 是 adapter 标记而非 FactKey。已评估改映射 keti=伏吟课（仓内 references/executable/daliuren-daquan.json 的 DLD-E-03 用 ke.style=伏吟课 表达同一条，facts-sample 的 caseB 也确有 keti=伏吟课）：但那是 executable 层另一套事实名（ke.style 不在 fact-vocab.json），而本条 statement 的写法是 adapter 标记；且 dump 中 keti 只见 涉害课/伏吟课/元首课，其余课体是否稳定产出无据。按「原文没写就不写」，不映射。",
-      "missing_fact": "占时支；天盘十二神落宫（本宫）关系；is_fuyin 标记"
+      "missing_fact": "占时支；天盘十二神落宫（本宫）关系；is_fuyin 标记",
+      "mapped_by": "fixed-value-map.json",
+      "mapped_note": "t187 映射：条件就是课体（伏吟／返吟／八专），引擎按取传结果定课体名、事实层早已产出 keti；沿用既有约定（DALIURENDAQU-006 蒿矢/弹射、LIURENZHIYIN-017 元首/重审）。原 reason_class 保留为历史判定。"
     },
     {
       "book": "san-shi/daliuren-daquan",
       "rule_id": "DALIURENDAQU-011",
-      "decision": "unmapped",
+      "decision": "mapped",
       "reason_class": "fact-not-emitted",
       "evidence_from_statement": "十二神各居冲位，adapter 标记 is_fanyin=true",
       "note": "同 DALIURENDAQU-010：返吟盘式依赖「十二神各居冲位」的天盘落宫与冲位关系，事实层只给 tianjiang 的十二将名，不携带其所临之宫；is_fanyin 亦非 FactKey。旧过程稿对结构完全相同的 LIURENZHIYIN-008（返吟 is_fanyin）判「需要引擎未产出的事实」，本轮结论一致。",
-      "missing_fact": "天盘十二神落宫及其冲位关系；is_fanyin 标记"
+      "missing_fact": "天盘十二神落宫及其冲位关系；is_fanyin 标记",
+      "mapped_by": "fixed-value-map.json",
+      "mapped_note": "t187 映射：条件就是课体（伏吟／返吟／八专），引擎按取传结果定课体名、事实层早已产出 keti；沿用既有约定（DALIURENDAQU-006 蒿矢/弹射、LIURENZHIYIN-017 元首/重审）。原 reason_class 保留为历史判定。"
     },
     {
       "book": "san-shi/daliuren-daquan",
@@ -434,11 +438,13 @@
     {
       "book": "san-shi/liuren-zhiyin",
       "rule_id": "LIURENZHIYIN-009",
-      "decision": "unmapped",
+      "decision": "mapped",
       "reason_class": "fact-not-emitted",
       "evidence_from_statement": "干支同位，四课去重后为两课，adapter 标记 `is_bazhuan=true`",
       "note": "八专专式：「干支同位」需要日干与日支的同位关系（liuren 事实层不产出日支），「四课去重后为两课」需要四课结构，is_bazhuan 是 adapter 标记。三者皆不可判定。",
-      "missing_fact": "日支（干支同位）；四课去重结果（两课）；is_bazhuan 标记"
+      "missing_fact": "日支（干支同位）；四课去重结果（两课）；is_bazhuan 标记",
+      "mapped_by": "fixed-value-map.json",
+      "mapped_note": "t187 映射：条件就是课体（伏吟／返吟／八专），引擎按取传结果定课体名、事实层早已产出 keti；沿用既有约定（DALIURENDAQU-006 蒿矢/弹射、LIURENZHIYIN-017 元首/重审）。原 reason_class 保留为历史判定。"
     },
     {
       "book": "san-shi/liuren-zhiyin",
