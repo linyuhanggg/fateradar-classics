@@ -416,7 +416,7 @@ def _validate_predicate(pred, *, loc: str, ctx: "_PredCtx") -> None:
             )
     yao = scope.get("yao")
     if yao is not None:
-        if ctx.system != "divination" or key not in {"shiyao", "yingyao", "dongyao", "liuqin", "liushen"}:
+        if ctx.system != "divination" or key not in {"shiyao", "yingyao", "dongyao", "liuqin", "liushen", "yao_zhi", "bian_yao_zhi"}:
             reporter.add(
                 "V16",
                 f"{loc}: scope.yao 仅六爻（divination 六爻四本）事实可写",

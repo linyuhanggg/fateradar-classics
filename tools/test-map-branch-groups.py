@@ -63,7 +63,7 @@ def main() -> int:
                 rules[(k, r["rule_id"])] = r
 
     print("1. 台账 9 条，复核片段仍在原文里")
-    check("  条数", len(ledger), 9)
+    check("  条数 12（9 条四柱 + 3 条六爻爻支）", len(ledger), 12)
     miss = [
         x["rule_id"]
         for x in ledger
@@ -71,7 +71,7 @@ def main() -> int:
     ]
     check("  statement 片段全部命中", miss, [])
 
-    print("2. 谓词形态：只用 zhi、无通配、无 same")
+    print("2. 谓词形态：只用 zhi／yao_zhi、无通配、无 same")
     bad = []
     for x in ledger:
         ap = rules[(x["book"], x["rule_id"])].get("applicable_to")
@@ -79,8 +79,8 @@ def main() -> int:
             bad.append(f"{x['rule_id']}: 空")
             continue
         ls = leaves(ap if isinstance(ap, dict) else {"any_of": ap})
-        if {l["key"] for l in ls} != {"zhi"}:
-            bad.append(f"{x['rule_id']}: 非 zhi 键")
+        if {l["key"] for l in ls} not in ({"zhi"}, {"yao_zhi"}):
+            bad.append(f"{x['rule_id']}: 非 zhi／yao_zhi 键")
         if any(l.get("value") == "*" for l in ls):
             bad.append(f"{x['rule_id']}: 用了通配")
         if isinstance(ap, dict) and ap.get("same"):
@@ -115,13 +115,31 @@ def main() -> int:
         "信息不足",
     )
 
-    print("4. anchor:null 的那条要如实登记（不在门禁分母内）")
+    print("4. anchor:null 的条目要如实登记（不在门禁分母内）")
     san18 = rules[("bazi/sanming-tonghui", "SANMINGTONGH-018")]["anchor"]
     check("  SANMINGTONGH-018 仍是 anchor:null", san18, None)
+    # 六爻三条里 ZR-07 / ZENGSHANBUYI-ZR-07 也是 anchor:null（故覆盖率只 +1）
+    nulls = {x["rule_id"] for x in ledger if rules[(x["book"], x["rule_id"])].get("anchor") is None}
+    check("  台账里 anchor:null 的恰好这 3 条", sorted(nulls), ["SANMINGTONGH-018", "ZENGSHANBUYI-ZR-07", "ZR-07"])
+
+    print("5. 六爻爻支成组：六冲卦／六合卦必须互斥且各自成立")
+    lr = {}
+    for bk in ("divination/zengshan-buyi",):
+        for r in ev.load_rules(bk, None):
+            lr[r["rule_id"]] = r
+    chong = [fact("yao_zhi", b, layer="本命", yao=i) for i, b in enumerate(("子", "寅", "辰", "午", "申", "戌"), 1)]
+    he = [fact("yao_zhi", b, layer="本命", yao=i) for i, b in enumerate(("子", "寅", "辰", "丑", "亥", "酉"), 1)]
+    check("  子寅辰午申戌（六冲卦）→ 六冲成立", ev.evaluate(lr["ZENGSHANBUYI-ZR-07"], chong)["verdict"], "满足")
+    check("  同一盘 → 六合不成立", ev.evaluate(lr["ZR-07"], chong)["verdict"], "不满足")
+    check("  子寅辰丑亥酉（六合卦）→ 六合成立", ev.evaluate(lr["ZR-07"], he)["verdict"], "满足")
+    check("  同一盘 → 六冲不成立", ev.evaluate(lr["ZENGSHANBUYI-ZR-07"], he)["verdict"], "不满足")
+    check("  两盘都不成三刑", [ev.evaluate(lr["ZENGSHANBUYI-024"], x)["verdict"] for x in (chong, he)], ["不满足", "不满足"])
+    # 关键：六冲的认定必须靠**两个不同爻**上的支，不能靠同一爻
+    one_yao = [fact("yao_zhi", "子", layer="本命", yao=1), fact("yao_zhi", "午", layer="本命", yao=1)]
     check(
-        "  台账里 9 条中恰好 1 条不在门禁分母内",
-        sum(1 for x in ledger if rules[(x["book"], x["rule_id"])].get("anchor") is None),
-        1,
+        "  同一爻上同时给子与午（伪造）仍算成立——这是「异爻」未被强制的已知边界，如实记录",
+        ev.evaluate(lr["ZENGSHANBUYI-ZR-07"], one_yao)["verdict"],
+        "满足",
     )
 
     if FAILED:

@@ -330,7 +330,7 @@ rules:
   anchor: null
   quote: 楚江李坦我平鑑定
   quote_kind: restatement
-  applicable_to: []
+  applicable_to: {any_of: [{all_of: [{key: yao_zhi, value: 子}, {key: yao_zhi, value: 丑}]}, {all_of: [{key: yao_zhi, value: 寅}, {key: yao_zhi, value: 亥}]}, {all_of: [{key: yao_zhi, value: 卯}, {key: yao_zhi, value: 戌}]}, {all_of: [{key: yao_zhi, value: 辰}, {key: yao_zhi, value: 酉}]}, {all_of: [{key: yao_zhi, value: 巳}, {key: yao_zhi, value: 申}]}, {all_of: [{key: yao_zhi, value: 午}, {key: yao_zhi, value: 未}]}]}
   caveats:
   - 合住用神有时反不利（事不动）
   school: null
@@ -343,7 +343,7 @@ rules:
   anchor: null
   quote: 楚江李坦我平鑑定
   quote_kind: restatement
-  applicable_to: []
+  applicable_to: {any_of: [{all_of: [{key: yao_zhi, value: 子}, {key: yao_zhi, value: 午}]}, {all_of: [{key: yao_zhi, value: 丑}, {key: yao_zhi, value: 未}]}, {all_of: [{key: yao_zhi, value: 寅}, {key: yao_zhi, value: 申}]}, {all_of: [{key: yao_zhi, value: 卯}, {key: yao_zhi, value: 酉}]}, {all_of: [{key: yao_zhi, value: 辰}, {key: yao_zhi, value: 戌}]}, {all_of: [{key: yao_zhi, value: 巳}, {key: yao_zhi, value: 亥}]}]}
   caveats:
   - 六冲卦不一定凶，看用神状态
   school: null
@@ -358,7 +358,7 @@ rules:
     start_line: 1504
     end_line: 1504
   quote: 斷﹕世臨午火﹐子日沖之﹐休囚爲日破﹐不爲暗動﹐今日若審﹐必有責罰﹐果於本日見官責杖二十﹐此卽卦見二午﹐豈可謂之一子不沖二午耶﹐又曰寅巳申爲三刑﹐若有寅巳二字﹐而無申字﹐或有寅申二字﹐而無巳字﹐但少一字﹐不成三刑﹐又曰亥卯未爲三合﹐卦有二﹐內少一字者﹐不成三合。
-  applicable_to: []
+  applicable_to: {any_of: [{all_of: [{key: yao_zhi, value: 寅}, {key: yao_zhi, value: 巳}, {key: yao_zhi, value: 申}]}, {all_of: [{key: yao_zhi, value: 丑}, {key: yao_zhi, value: 戌}, {key: yao_zhi, value: 未}]}, {all_of: [{key: yao_zhi, value: 子}, {key: yao_zhi, value: 卯}]}]}
   caveats:
   - 本书重视六冲六合，三刑作辅
   school: null

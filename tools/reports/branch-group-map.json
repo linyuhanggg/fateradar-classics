@@ -61,5 +61,26 @@
   "applicable_to_yaml": "{all_of: [{key: zhi, value: 子}, {key: zhi, value: 午}]}",
   "evidence_from_statement": "子午冲为坎离战",
   "partial": ""
+ },
+ {
+  "book": "divination/zengshan-buyi",
+  "rule_id": "ZR-07",
+  "applicable_to_yaml": "{any_of: [{all_of: [{key: yao_zhi, value: 子}, {key: yao_zhi, value: 丑}]}, {all_of: [{key: yao_zhi, value: 寅}, {key: yao_zhi, value: 亥}]}, {all_of: [{key: yao_zhi, value: 卯}, {key: yao_zhi, value: 戌}]}, {all_of: [{key: yao_zhi, value: 辰}, {key: yao_zhi, value: 酉}]}, {all_of: [{key: yao_zhi, value: 巳}, {key: yao_zhi, value: 申}]}, {all_of: [{key: yao_zhi, value: 午}, {key: yao_zhi, value: 未}]}]}",
+  "evidence_from_statement": "子丑、寅亥、卯戌、辰酉、巳申、午未六合",
+  "partial": "「合则成事、合则停、合住忌神则解凶」是断语不是条件，未表达；本条只用爻支，未含月建／日辰之支（更窄，不是更宽）。"
+ },
+ {
+  "book": "divination/zengshan-buyi",
+  "rule_id": "ZENGSHANBUYI-ZR-07",
+  "applicable_to_yaml": "{any_of: [{all_of: [{key: yao_zhi, value: 子}, {key: yao_zhi, value: 午}]}, {all_of: [{key: yao_zhi, value: 丑}, {key: yao_zhi, value: 未}]}, {all_of: [{key: yao_zhi, value: 寅}, {key: yao_zhi, value: 申}]}, {all_of: [{key: yao_zhi, value: 卯}, {key: yao_zhi, value: 酉}]}, {all_of: [{key: yao_zhi, value: 辰}, {key: yao_zhi, value: 戌}]}, {all_of: [{key: yao_zhi, value: 巳}, {key: yao_zhi, value: 亥}]}]}",
+  "evidence_from_statement": "子午、丑未、寅申、卯酉、辰戌、巳亥六冲",
+  "partial": "同上：只用爻支。"
+ },
+ {
+  "book": "divination/zengshan-buyi",
+  "rule_id": "ZENGSHANBUYI-024",
+  "applicable_to_yaml": "{any_of: [{all_of: [{key: yao_zhi, value: 寅}, {key: yao_zhi, value: 巳}, {key: yao_zhi, value: 申}]}, {all_of: [{key: yao_zhi, value: 丑}, {key: yao_zhi, value: 戌}, {key: yao_zhi, value: 未}]}, {all_of: [{key: yao_zhi, value: 子}, {key: yao_zhi, value: 卯}]}]}",
+  "evidence_from_statement": "寅巳申、丑戌未、子卯三刑",
+  "partial": "原文列三组；「刑则有损伤纠葛」是断语不是条件。只用爻支，未含日月之支。"
  }
 ]

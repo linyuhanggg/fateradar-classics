@@ -35,15 +35,21 @@ SANHE = [("申", "子", "辰"), ("巳", "酉", "丑"), ("寅", "午", "戌"), ("
 FANGJU = [("寅", "卯", "辰"), ("巳", "午", "未"), ("申", "酉", "戌"), ("亥", "子", "丑")]
 LIUCHONG = [("子", "午"), ("丑", "未"), ("寅", "申"), ("卯", "酉"), ("辰", "戌"), ("巳", "亥")]
 TUJU = [("辰", "戌", "丑", "未")]
+# 六爻：地支六合／六冲／三刑（原文列举）
+LIUHE = [("子", "丑"), ("寅", "亥"), ("卯", "戌"), ("辰", "酉"), ("巳", "申"), ("午", "未")]
+LIUCHONG_YAO = [("子", "午"), ("丑", "未"), ("寅", "申"), ("卯", "酉"), ("辰", "戌"), ("巳", "亥")]
+SANXING = [("寅", "巳", "申"), ("丑", "戌", "未"), ("子", "卯")]
 
 
-def group(*branches: str) -> str:
-    inner = ", ".join(f"{{key: zhi, value: {b}}}" for b in branches)
+def group(*branches: str, key: str = "zhi") -> str:
+    """一组地支的 all_of。`key` 默认四柱地支 `zhi`；六爻用爻支 `yao_zhi`。"""
+    inner = ", ".join(f"{{key: {key}, value: {b}}}" for b in branches)
     return f"{{all_of: [{inner}]}}"
 
 
-def any_of(groups: list[tuple[str, ...]]) -> str:
-    return "{any_of: [" + ", ".join(group(*g) for g in groups) + "]}"
+def any_of(groups: list[tuple[str, ...]], *, key: str = "zhi") -> str:
+    """组间为或。"""
+    return "{any_of: [" + ", ".join(group(*g, key=key) for g in groups) + "]}"
 
 
 # rule_id → (谓词, statement 复核片段, 已知的部分覆盖说明)
@@ -93,6 +99,25 @@ MAP: dict[str, tuple[str, str, str]] = {
         "子午冲为坎离战",
         "",
     ),
+    # ── 六爻：爻支成组（事实来自 t178 新增的 `yao_zhi`）──────────────────────
+    # 同为「几个地支同时出现」，只是键换成爻支 `yao_zhi`；仍然**不加 same**——
+    # 六合／六冲／三刑要的正是这几个支落在**不同爻**上（同支两见是自刑，另一回事）。
+    "ZR-07": (
+        any_of(LIUHE, key="yao_zhi"),
+        "子丑、寅亥、卯戌、辰酉、巳申、午未六合",
+        "「合则成事、合则停、合住忌神则解凶」是断语不是条件，未表达；"
+        "本条只用爻支，未含月建／日辰之支（更窄，不是更宽）。",
+    ),
+    "ZENGSHANBUYI-ZR-07": (
+        any_of(LIUCHONG_YAO, key="yao_zhi"),
+        "子午、丑未、寅申、卯酉、辰戌、巳亥六冲",
+        "同上：只用爻支。",
+    ),
+    "ZENGSHANBUYI-024": (
+        any_of(SANXING, key="yao_zhi"),
+        "寅巳申、丑戌未、子卯三刑",
+        "原文列三组；「刑则有损伤纠葛」是断语不是条件。只用爻支，未含日月之支。",
+    ),
 }
 
 
@@ -113,6 +138,7 @@ def main() -> int:
             if isinstance(r, dict) and r.get("rule_id") in MAP:
                 found[r["rule_id"]] = (p, r)
 
+    done: set[str] = set()
     for rid, (pred, needle, _note) in MAP.items():
         if rid not in found:
             problems.append(f"{rid} 不存在")
@@ -120,13 +146,18 @@ def main() -> int:
         _p, r = found[rid]
         if needle not in (r.get("statement") or ""):
             problems.append(f"{rid} statement 不含复核片段「{needle}」")
-        if r.get("applicable_to"):
-            problems.append(f"{rid} 已有谓词，本批不应改写")
+        cur = r.get("applicable_to")
+        if cur:
+            # 幂等：已是本批要写的谓词就跳过；已有**别的**谓词才报错。
+            if cur == yaml.safe_load(pred):
+                done.add(rid)
+            else:
+                problems.append(f"{rid} 已有不同谓词，本批不应改写")
     if problems:
         for x in problems:
             print("FAIL:", x, file=sys.stderr)
         return 1
-    print(f"复核通过：{len(MAP)} 条，statement 片段全部命中，且均未映射")
+    print(f"复核通过：{len(MAP)} 条（已落实 {len(done)}，本次待写 {len(MAP) - len(done)}）")
 
     if args.dry_run:
         for rid, (pred, _n, _note) in MAP.items():
@@ -134,6 +165,8 @@ def main() -> int:
         return 0
 
     for rid, (pred, _needle, _note) in MAP.items():
+        if rid in done:
+            continue
         path, _r = found[rid]
         text = targets[path]
         pattern = re.compile(rf"(?m)^(- rule_id: {re.escape(rid)}\n(?:.*\n)*?  applicable_to: )\[\]$")
