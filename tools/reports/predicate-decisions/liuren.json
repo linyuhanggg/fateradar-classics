@@ -388,11 +388,13 @@
     {
       "book": "san-shi/liuren-miben",
       "rule_id": "LIURENMIBEN-021",
-      "decision": "unmapped",
+      "decision": "mapped",
       "reason_class": "fact-not-emitted",
       "evidence_from_statement": "本段论求财，参看传中是否见财，以及青龙是否居日上；青龙在任意一传不等于龙居日本",
       "note": "本条条件是天将位置与三传六亲：「青龙居日上」＋「传中见财」。事实层里 tianjiang 的 derivedFrom 恒为 chuan.<pos>.god，即只表示「该将在某一传」——这正是原文明确否定的读法（青龙在任意一传 ≠ 龙居日本），把它当谓词会正好犯本条所禁的错误。「传中财」需要六亲入传，也无 key。本卡 caveat 亦自陈「当前天将事实仅表示入三传，尚未表达日上天将及传中财的条件，因此暂不自动匹配本条」。机械扫描命中的 tianjiang=青龙 属假命中。",
-      "missing_fact": "青龙所临位置（日上）；传中财（六亲入传）"
+      "missing_fact": "青龙所临位置（日上）；传中财（六亲入传）",
+      "mapped_by": "fixed-value-map.json",
+      "mapped_note": "t170–t178 施工中已映射（措辞与出处见 mapped_by）。台账原先仍写 unmapped，与规则实际不一致——t181 据实况改正。原 reason_class 保留为历史判定。"
     },
     {
       "book": "san-shi/liuren-miben",

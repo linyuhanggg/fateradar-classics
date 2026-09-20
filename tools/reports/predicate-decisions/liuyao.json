@@ -129,10 +129,18 @@
     {
       "book": "divination/huozhu-lin",
       "rule_id": "HZL-R001",
-      "decision": "mapped",
+      "decision": "reverted",
       "applicable_to_yaml": "{any_of: [{key: liuqin, value: 官鬼}, {key: liuqin, value: 妻财}, {key: liuqin, value: 父母}, {key: liuqin, value: 子孙}]}",
       "evidence_from_statement": "公用取官鬼，私用取妻财；官用以父母辅，财用以子孙辅",
-      "note": "原文点名四种类象之爻（官鬼／妻财为主用，父母／子孙为辅体），它们的出现即标志本盘需要用本条取用规则；不写兄弟，因原文未把兄弟列入本条的取用/辅体。"
+      "note": "原文点名四种类象之爻（官鬼／妻财为主用，父母／子孙为辅体），它们的出现即标志本盘需要用本条取用规则；不写兄弟，因原文未把兄弟列入本条的取用/辅体。",
+      "reason_class": "not-a-condition",
+      "reverted_by": "captain-audit.json",
+      "reverted_why": [
+        "同为取用神取法（公用取官鬼、私用取妻财…），不是盘面适用条件。",
+        "枚举 5 个六亲中的 4 个，而六爻每盘都有全部六亲 ⇒ 恒真、零区分度，是作业书禁止的枚举凑数。",
+        "该条 quote 是「阴阳男女，次策推排；」，与其 statement 本就不对应，证据基础不成立，更不能据此写适用条件。"
+      ],
+      "reverted_note": "本条曾被作业书判为 mapped，t168 复核后**撤回**：理由见 reverted_why。台账原先仍写 mapped，与规则实际为空不一致——t181 据 captain-audit 改正。"
     },
     {
       "book": "divination/huozhu-lin",
@@ -185,10 +193,18 @@
     {
       "book": "divination/zengshan-buyi",
       "rule_id": "ZR-04",
-      "decision": "mapped",
+      "decision": "reverted",
       "applicable_to_yaml": "{any_of: [{key: liuqin, value: 父母}]}",
       "evidence_from_statement": "占父母以父母爻爲用神",
-      "note": "原文把「父母爻」当成该问事对象的取用基准——盘面出现父母爻，即是本条所举「占父母」这一类占的对象，故映射父母。原文另举「自占吉凶用此世爻」：世爻是位置角色（哪个爻持世），facts 只给 shiyao/yingyao/dongyao 的位置取值，不是「此爻持世」的标志，无法表达，故未写入。caveat 也声明本段只举两例、不覆盖其他问事对象。"
+      "note": "原文把「父母爻」当成该问事对象的取用基准——盘面出现父母爻，即是本条所举「占父母」这一类占的对象，故映射父母。原文另举「自占吉凶用此世爻」：世爻是位置角色（哪个爻持世），facts 只给 shiyao/yingyao/dongyao 的位置取值，不是「此爻持世」的标志，无法表达，故未写入。caveat 也声明本段只举两例、不覆盖其他问事对象。",
+      "reason_class": "not-a-condition",
+      "reverted_by": "captain-audit.json",
+      "reverted_why": [
+        "原文是「取用神取法」（占父母则取父母爻为用神），属于「怎么取用神」，不是「何时适用本条」。",
+        "零区分度实测：六爻每一盘都含全部六亲（facts-sample caseA 5/5、caseB 4/5+1 伏神），故 {liuqin: <任意值>} 对任何盘恒真，没有筛选作用，属枚举凑数的同一后果。",
+        "后果实测：这一映射与 HZL-R001 一起把产品仓 liuyao 两盘 top-6 压成同一集合（predicate-matching 断言红），即证据面板退化为与盘面无关。"
+      ],
+      "reverted_note": "本条曾被作业书判为 mapped，t168 复核后**撤回**：理由见 reverted_why。台账原先仍写 mapped，与规则实际为空不一致——t181 据 captain-audit 改正。"
     },
     {
       "book": "divination/zengshan-buyi",
@@ -305,10 +321,12 @@
     {
       "book": "divination/zengshan-buyi",
       "rule_id": "ZENGSHANBUYI-024",
-      "decision": "unmapped",
+      "decision": "mapped",
       "reason_class": "fact-not-emitted",
       "evidence_from_statement": "寅巳申、丑戌未、子卯三刑；刑则有损伤纠葛",
-      "note": "三刑是地支组合（跨爻／跨日月），facts 不产出各爻地支，也不产出刑的关系。"
+      "note": "三刑是地支组合（跨爻／跨日月），facts 不产出各爻地支，也不产出刑的关系。",
+      "mapped_by": "branch-group-map.json",
+      "mapped_note": "t170–t178 施工中已映射（措辞与出处见 mapped_by）。台账原先仍写 unmapped，与规则实际不一致——t181 据实况改正。原 reason_class 保留为历史判定。"
     },
     {
       "book": "divination/zengshan-buyi",

@@ -78,12 +78,14 @@
     {
       "book": "bazi/ditiansui-chanwei",
       "rule_id": "DITIANSUICHA-DR-02",
-      "decision": "unmapped",
+      "decision": "mapped",
       "applicable_to_yaml": "[]",
       "evidence_from_statement": "三合局（亥卯未木局等）成局者气势全；方局（寅卯辰东方等）齐全者气势纯。",
       "note": "原文只列组合定义，本条的对象是『局成／局破』——引擎只有 yueling/rizhu 等事实，无地支集合与成局判定；作业书把『三合局成局量化』列为 fact-not-emitted。",
       "reason_class": "fact-not-emitted",
-      "missing_fact": "地支三合局／方局的成局状态（三支是否齐）"
+      "missing_fact": "地支三合局／方局的成局状态（三支是否齐）",
+      "mapped_by": "branch-group-map.json",
+      "mapped_note": "t170–t178 施工中已映射（措辞与出处见 mapped_by）。台账原先仍写 unmapped，与规则实际不一致——t181 据实况改正。原 reason_class 保留为历史判定。"
     },
     {
       "book": "bazi/ditiansui-chanwei",
@@ -222,22 +224,26 @@
     {
       "book": "bazi/ditiansui-chanwei",
       "rule_id": "DITIANSUICHA-031",
-      "decision": "unmapped",
+      "decision": "mapped",
       "applicable_to_yaml": "[]",
       "evidence_from_statement": "震（卯）兑（酉）相对；卯酉冲为震兑战；处理须看月令支援。",
       "note": "原文条件是『卯酉冲』——引擎不产出独立地支事实，也无冲的布尔事实；且处理仍须『看月令支援』。",
       "reason_class": "fact-not-emitted",
-      "missing_fact": "地支（卯酉、子午等）与冲的判定"
+      "missing_fact": "地支（卯酉、子午等）与冲的判定",
+      "mapped_by": "branch-group-map.json",
+      "mapped_note": "t170–t178 施工中已映射（措辞与出处见 mapped_by）。台账原先仍写 unmapped，与规则实际不一致——t181 据实况改正。原 reason_class 保留为历史判定。"
     },
     {
       "book": "bazi/ditiansui-chanwei",
       "rule_id": "DITIANSUICHA-032",
-      "decision": "unmapped",
+      "decision": "mapped",
       "applicable_to_yaml": "[]",
       "evidence_from_statement": "坎（子）离（午）相对；子午冲为坎离战；处理须看月令支援与寒暖。",
       "note": "同上：子午冲无对应 FactKey（仅 kongwang 是空亡地支词表，非盘面地支）。",
       "reason_class": "fact-not-emitted",
-      "missing_fact": "地支（子午）与冲的判定"
+      "missing_fact": "地支（子午）与冲的判定",
+      "mapped_by": "branch-group-map.json",
+      "mapped_note": "t170–t178 施工中已映射（措辞与出处见 mapped_by）。台账原先仍写 unmapped，与规则实际不一致——t181 据实况改正。原 reason_class 保留为历史判定。"
     },
     {
       "book": "bazi/ditiansui-chanwei",
@@ -373,10 +379,18 @@
     {
       "book": "bazi/ditiansui-chanwei",
       "rule_id": "DITIANSUICHA-DR-07",
-      "decision": "mapped",
+      "decision": "reverted",
       "applicable_to_yaml": "{any_of: [{key: rizhu, value: 甲}, {key: rizhu, value: 乙}, {key: rizhu, value: 丙}, {key: rizhu, value: 丁}, {key: rizhu, value: 戊}, {key: rizhu, value: 己}, {key: rizhu, value: 庚}, {key: rizhu, value: 辛}, {key: rizhu, value: 壬}, {key: rizhu, value: 癸}]}",
       "evidence_from_statement": "五行偏枯对应脏腑（甲乙肝胆、丙丁心小肠、戊己脾胃、庚辛肺大肠、壬癸肾膀胱）；偏枯之气主体质倾向。",
-      "note": "原文以天干分组把『脏腑对应』绑到日主：甲乙／丙丁／戊己／庚辛／壬癸，日主天干直接决定取哪一组，属 rizhu 值域且 10 值齐备＝原文对象覆盖全部日主。torn 记录：本条对每盘都成立（不具区分度），若按‘不得凑数’从严可判 unmapped；但原文确把日主当成本条的对象键，且是唯一可锚事实，故映射并在台账留痕。"
+      "note": "原文以天干分组把『脏腑对应』绑到日主：甲乙／丙丁／戊己／庚辛／壬癸，日主天干直接决定取哪一组，属 rizhu 值域且 10 值齐备＝原文对象覆盖全部日主。torn 记录：本条对每盘都成立（不具区分度），若按‘不得凑数’从严可判 unmapped；但原文确把日主当成本条的对象键，且是唯一可锚事实，故映射并在台账留痕。",
+      "reason_class": "not-a-condition",
+      "reverted_by": "captain-audit.json",
+      "reverted_why": [
+        "作业书把「五行偏枯对应脏腑」列为 not-a-condition 的取象表范例，本条正是该条。",
+        "10 个 rizhu 取值穷尽该 key 的值域 ⇒ 任何盘都成立，零区分度，是作业书禁止的枚举凑数。",
+        "本条 quote「大忌四柱缺陷，五行偏枯」里没有任何脏腑或天干分组，条件只能来自 statement 的取象表本身。"
+      ],
+      "reverted_note": "本条曾被作业书判为 mapped，t168 复核后**撤回**：理由见 reverted_why。台账原先仍写 mapped，与规则实际为空不一致——t181 据 captain-audit 改正。"
     },
     {
       "book": "bazi/ditiansui-chanwei",
@@ -505,12 +519,14 @@
     {
       "book": "bazi/sanming-tonghui",
       "rule_id": "SANMINGTONGH-004",
-      "decision": "unmapped",
+      "decision": "mapped",
       "applicable_to_yaml": "[]",
       "evidence_from_statement": "论海中金须配合所见火、水、木、土等条件…不是单见甲子乙丑便有统一吉凶判词。",
       "note": "原文自己否定了『单见甲子乙丑』的单值条件，判据落在纳音之间的配合（引擎无纳音事实）。",
       "reason_class": "fact-not-emitted",
-      "missing_fact": "纳音（甲子乙丑海中金）与年月日时柱干支"
+      "missing_fact": "纳音（甲子乙丑海中金）与年月日时柱干支",
+      "mapped_by": "fixed-value-map.json",
+      "mapped_note": "t170–t178 施工中已映射（措辞与出处见 mapped_by）。台账原先仍写 unmapped，与规则实际不一致——t181 据实况改正。原 reason_class 保留为历史判定。"
     },
     {
       "book": "bazi/sanming-tonghui",
@@ -582,11 +598,13 @@
     {
       "book": "bazi/sanming-tonghui",
       "rule_id": "SANMINGTONGH-015",
-      "decision": "unmapped",
+      "decision": "mapped",
       "applicable_to_yaml": "[]",
       "evidence_from_statement": "申子辰、巳酉丑、寅午戌、亥卯未为三合组合；原文强调三字缺一不能直接按三合化局论。",
       "note": "作业书点名『三合组合为申子辰…』属起例/组合定义 → not-a-condition。",
-      "reason_class": "not-a-condition"
+      "reason_class": "not-a-condition",
+      "mapped_by": "branch-group-map.json",
+      "mapped_note": "t170–t178 施工中已映射（措辞与出处见 mapped_by）。台账原先仍写 unmapped，与规则实际不一致——t181 据实况改正。原 reason_class 保留为历史判定。"
     },
     {
       "book": "bazi/sanming-tonghui",
@@ -786,22 +804,26 @@
     {
       "book": "bazi/sanming-tonghui",
       "rule_id": "R-06",
-      "decision": "unmapped",
+      "decision": "mapped",
       "applicable_to_yaml": "[]",
       "evidence_from_statement": "庚辰、庚戌、壬辰、戊戌为魁罡日；性烈刚强、聪明果决；忌见财官。",
       "note": "魁罡须日干＋日支同时命中（庚辰/庚戌/壬辰/戊戌），引擎无日支 FactKey；只取 rizhu∈{庚,壬} 会把庚午、壬寅等非魁罡日误命中。",
       "reason_class": "fact-not-emitted",
-      "missing_fact": "日支（辰/戌）"
+      "missing_fact": "日支（辰/戌）",
+      "mapped_by": "fixed-value-map.json",
+      "mapped_note": "t170–t178 施工中已映射（措辞与出处见 mapped_by）。台账原先仍写 unmapped，与规则实际不一致——t181 据实况改正。原 reason_class 保留为历史判定。"
     },
     {
       "book": "bazi/sanming-tonghui",
       "rule_id": "SANMINGTONGH-R-06",
-      "decision": "unmapped",
+      "decision": "mapped",
       "applicable_to_yaml": "[]",
       "evidence_from_statement": "木局曲直（亥卯未或寅卯辰全）、火局炎上…土局稼穑（辰戌丑未全）…",
       "note": "对象是地支成局（三支或四支齐全），涉及地支集合与成局量化，引擎未产出（作业书点名『三合局成局量化』）。",
       "reason_class": "fact-not-emitted",
-      "missing_fact": "地支三合局/方局（四支齐全判定）"
+      "missing_fact": "地支三合局/方局（四支齐全判定）",
+      "mapped_by": "branch-group-map.json",
+      "mapped_note": "t170–t178 施工中已映射（措辞与出处见 mapped_by）。台账原先仍写 unmapped，与规则实际不一致——t181 据实况改正。原 reason_class 保留为历史判定。"
     },
     {
       "book": "bazi/sanming-tonghui",
@@ -940,11 +962,13 @@
     {
       "book": "bazi/sanming-tonghui",
       "rule_id": "SANMINGTONGH-095",
-      "decision": "unmapped",
+      "decision": "mapped",
       "applicable_to_yaml": "[]",
       "evidence_from_statement": "六神兽格（青龙=木、白虎=金…）为五行配六神的取象法；各神兽对应五行须在命局成形（三合或方局）…",
       "note": "取象法（原文自陈），且成形须三合/方局（未产出）→ 取象表类 not-a-condition。",
-      "reason_class": "not-a-condition"
+      "reason_class": "not-a-condition",
+      "mapped_by": "branch-group-map.json",
+      "mapped_note": "t170–t178 施工中已映射（措辞与出处见 mapped_by）。台账原先仍写 unmapped，与规则实际不一致——t181 据实况改正。原 reason_class 保留为历史判定。"
     },
     {
       "book": "bazi/sanming-tonghui",
@@ -958,12 +982,14 @@
     {
       "book": "bazi/sanming-tonghui",
       "rule_id": "SANMINGTONGH-097",
-      "decision": "unmapped",
+      "decision": "mapped",
       "applicable_to_yaml": "[]",
       "evidence_from_statement": "八专日（甲寅、乙卯、丁未、己未、庚申、辛酉、壬子、癸丑）日坐禄旺之地，身强为论…",
       "note": "八专须日干＋日支同时命中，引擎无日支事实；只取日干会误命中（如甲子、乙丑）。",
       "reason_class": "fact-not-emitted",
-      "missing_fact": "日支（八专日的日支）"
+      "missing_fact": "日支（八专日的日支）",
+      "mapped_by": "fixed-value-map.json",
+      "mapped_note": "t170–t178 施工中已映射（措辞与出处见 mapped_by）。台账原先仍写 unmapped，与规则实际不一致——t181 据实况改正。原 reason_class 保留为历史判定。"
     },
     {
       "book": "bazi/sanming-tonghui",

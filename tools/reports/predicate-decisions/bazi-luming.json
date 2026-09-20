@@ -13,582 +13,698 @@
     {
       "book": "luming-nayin/li-xuzhong-mingshu",
       "rule_id": "LIXUZHONGMIN-003",
-      "decision": "unmapped",
+      "decision": "mapped",
       "reason_class": "fact-not-emitted",
       "applicable_to_yaml": "[]",
       "evidence_from_statement": "子母相承之火；先煙后焰；喜木助、嫌水陵迟；五行相养虽死方亦光耿。",
       "note": "本条取象名「子母相承之火」。六十甲子纳音取象条：quote 以干支名领起（如「甲子天官蔵…」），statement 描述该纳音干支组合的取象与宜忌。引擎事实层没有干支/纳音 FactKey（bazi 只发 rizhu 日干、yueling 月支、rizhu_strength、geju、yongshen、shishen、shensha、kongwang）；把该干支映射成 rizhu=<其干> 会把「某干支之纳音」偷换成「日主某干」，既非原文条件，也会误命中该日主的一切盘，属编造，故不映射（同类『干支取象』在仓内已有 rizhu=<干> 的旧映射，本批不沿用该宽法）。",
-      "missing_fact": "纳音（六十甲子纳音名）与柱干支"
+      "missing_fact": "纳音（六十甲子纳音名）与柱干支",
+      "mapped_by": "nayin-ganzhi-map.json",
+      "mapped_note": "t170–t178 施工中已映射（措辞与出处见 mapped_by）。台账原先仍写 unmapped，与规则实际不一致——t181 据实况改正。原 reason_class 保留为历史判定。"
     },
     {
       "book": "luming-nayin/li-xuzhong-mingshu",
       "rule_id": "LIXUZHONGMIN-004",
-      "decision": "unmapped",
+      "decision": "mapped",
       "reason_class": "fact-not-emitted",
       "applicable_to_yaml": "[]",
       "evidence_from_statement": "本旺禄休之火；惟欲阴旺恶处盛阳；木火相资连艮震必变鼎。",
       "note": "本条取象名「本旺禄休之火」。六十甲子纳音取象条：quote 以干支名领起（如「甲子天官蔵…」），statement 描述该纳音干支组合的取象与宜忌。引擎事实层没有干支/纳音 FactKey（bazi 只发 rizhu 日干、yueling 月支、rizhu_strength、geju、yongshen、shishen、shensha、kongwang）；把该干支映射成 rizhu=<其干> 会把「某干支之纳音」偷换成「日主某干」，既非原文条件，也会误命中该日主的一切盘，属编造，故不映射（同类『干支取象』在仓内已有 rizhu=<干> 的旧映射，本批不沿用该宽法）。",
-      "missing_fact": "纳音（六十甲子纳音名）与柱干支"
+      "missing_fact": "纳音（六十甲子纳音名）与柱干支",
+      "mapped_by": "nayin-ganzhi-map.json",
+      "mapped_note": "t170–t178 施工中已映射（措辞与出处见 mapped_by）。台账原先仍写 unmapped，与规则实际不一致——t181 据实况改正。原 reason_class 保留为历史判定。"
     },
     {
       "book": "luming-nayin/li-xuzhong-mingshu",
       "rule_id": "LIXUZHONGMIN-005",
-      "decision": "unmapped",
+      "decision": "mapped",
       "reason_class": "fact-not-emitted",
       "applicable_to_yaml": "[]",
       "evidence_from_statement": "华实兼荣之木；爱水土忌火金；金养则英实之命。",
       "note": "本条取象名「华实兼荣之木」。六十甲子纳音取象条：quote 以干支名领起（如「甲子天官蔵…」），statement 描述该纳音干支组合的取象与宜忌。引擎事实层没有干支/纳音 FactKey（bazi 只发 rizhu 日干、yueling 月支、rizhu_strength、geju、yongshen、shishen、shensha、kongwang）；把该干支映射成 rizhu=<其干> 会把「某干支之纳音」偷换成「日主某干」，既非原文条件，也会误命中该日主的一切盘，属编造，故不映射（同类『干支取象』在仓内已有 rizhu=<干> 的旧映射，本批不沿用该宽法）。",
-      "missing_fact": "纳音（六十甲子纳音名）与柱干支"
+      "missing_fact": "纳音（六十甲子纳音名）与柱干支",
+      "mapped_by": "nayin-ganzhi-map.json",
+      "mapped_note": "t170–t178 施工中已映射（措辞与出处见 mapped_by）。台账原先仍写 unmapped，与规则实际不一致——t181 据实况改正。原 reason_class 保留为历史判定。"
     },
     {
       "book": "luming-nayin/li-xuzhong-mingshu",
       "rule_id": "LIXUZHONGMIN-006",
-      "decision": "unmapped",
+      "decision": "mapped",
       "reason_class": "fact-not-emitted",
       "applicable_to_yaml": "[]",
       "evidence_from_statement": "气胜体刚之木；逢对旺干鬼或木来比助金伐则成栋梁。",
       "note": "本条取象名「气胜体刚之木」。六十甲子纳音取象条：quote 以干支名领起（如「甲子天官蔵…」），statement 描述该纳音干支组合的取象与宜忌。引擎事实层没有干支/纳音 FactKey（bazi 只发 rizhu 日干、yueling 月支、rizhu_strength、geju、yongshen、shishen、shensha、kongwang）；把该干支映射成 rizhu=<其干> 会把「某干支之纳音」偷换成「日主某干」，既非原文条件，也会误命中该日主的一切盘，属编造，故不映射（同类『干支取象』在仓内已有 rizhu=<干> 的旧映射，本批不沿用该宽法）。",
-      "missing_fact": "纳音（六十甲子纳音名）与柱干支"
+      "missing_fact": "纳音（六十甲子纳音名）与柱干支",
+      "mapped_by": "nayin-ganzhi-map.json",
+      "mapped_note": "t170–t178 施工中已映射（措辞与出处见 mapped_by）。台账原先仍写 unmapped，与规则实际不一致——t181 据实况改正。原 reason_class 保留为历史判定。"
     },
     {
       "book": "luming-nayin/li-xuzhong-mingshu",
       "rule_id": "LIXUZHONGMIN-007",
-      "decision": "unmapped",
+      "decision": "mapped",
       "reason_class": "fact-not-emitted",
       "applicable_to_yaml": "[]",
       "evidence_from_statement": "含辉始育之土；气数未备喜旺方；独禄会命旺身绝非贵地。",
       "note": "本条取象名「含辉始育之土」。六十甲子纳音取象条：quote 以干支名领起（如「甲子天官蔵…」），statement 描述该纳音干支组合的取象与宜忌。引擎事实层没有干支/纳音 FactKey（bazi 只发 rizhu 日干、yueling 月支、rizhu_strength、geju、yongshen、shishen、shensha、kongwang）；把该干支映射成 rizhu=<其干> 会把「某干支之纳音」偷换成「日主某干」，既非原文条件，也会误命中该日主的一切盘，属编造，故不映射（同类『干支取象』在仓内已有 rizhu=<干> 的旧映射，本批不沿用该宽法）。",
-      "missing_fact": "纳音（六十甲子纳音名）与柱干支"
+      "missing_fact": "纳音（六十甲子纳音名）与柱干支",
+      "mapped_by": "nayin-ganzhi-map.json",
+      "mapped_note": "t170–t178 施工中已映射（措辞与出处见 mapped_by）。台账原先仍写 unmapped，与规则实际不一致——t181 据实况改正。原 reason_class 保留为历史判定。"
     },
     {
       "book": "luming-nayin/li-xuzhong-mingshu",
       "rule_id": "LIXUZHONGMIN-008",
-      "decision": "unmapped",
+      "decision": "mapped",
       "reason_class": "fact-not-emitted",
       "applicable_to_yaml": "[]",
       "evidence_from_statement": "自本立形之土；火助木乘水轻木重亦小康；败而乘禄方为厚载之福。",
       "note": "本条取象名「自本立形之土」。六十甲子纳音取象条：quote 以干支名领起（如「甲子天官蔵…」），statement 描述该纳音干支组合的取象与宜忌。引擎事实层没有干支/纳音 FactKey（bazi 只发 rizhu 日干、yueling 月支、rizhu_strength、geju、yongshen、shishen、shensha、kongwang）；把该干支映射成 rizhu=<其干> 会把「某干支之纳音」偷换成「日主某干」，既非原文条件，也会误命中该日主的一切盘，属编造，故不映射（同类『干支取象』在仓内已有 rizhu=<干> 的旧映射，本批不沿用该宽法）。",
-      "missing_fact": "纳音（六十甲子纳音名）与柱干支"
+      "missing_fact": "纳音（六十甲子纳音名）与柱干支",
+      "mapped_by": "nayin-ganzhi-map.json",
+      "mapped_note": "t170–t178 施工中已映射（措辞与出处见 mapped_by）。台账原先仍写 unmapped，与规则实际不一致——t181 据实况改正。原 reason_class 保留为历史判定。"
     },
     {
       "book": "luming-nayin/li-xuzhong-mingshu",
       "rule_id": "LIXUZHONGMIN-009",
-      "decision": "unmapped",
+      "decision": "mapped",
       "reason_class": "fact-not-emitted",
       "applicable_to_yaml": "[]",
       "evidence_from_statement": "自任权制之金；刚而有断；爱土木嫌火重；财旺身衰亦清华之贵。",
       "note": "本条取象名「自任权制之金」。六十甲子纳音取象条：quote 以干支名领起（如「甲子天官蔵…」），statement 描述该纳音干支组合的取象与宜忌。引擎事实层没有干支/纳音 FactKey（bazi 只发 rizhu 日干、yueling 月支、rizhu_strength、geju、yongshen、shishen、shensha、kongwang）；把该干支映射成 rizhu=<其干> 会把「某干支之纳音」偷换成「日主某干」，既非原文条件，也会误命中该日主的一切盘，属编造，故不映射（同类『干支取象』在仓内已有 rizhu=<干> 的旧映射，本批不沿用该宽法）。",
-      "missing_fact": "纳音（六十甲子纳音名）与柱干支"
+      "missing_fact": "纳音（六十甲子纳音名）与柱干支",
+      "mapped_by": "nayin-ganzhi-map.json",
+      "mapped_note": "t170–t178 施工中已映射（措辞与出处见 mapped_by）。台账原先仍写 unmapped，与规则实际不一致——t181 据实况改正。原 reason_class 保留为历史判定。"
     },
     {
       "book": "luming-nayin/li-xuzhong-mingshu",
       "rule_id": "LIXUZHONGMIN-010",
-      "decision": "unmapped",
+      "decision": "mapped",
       "reason_class": "fact-not-emitted",
       "applicable_to_yaml": "[]",
       "evidence_from_statement": "刚锐利用之金；不嫌绝败惟畏鬼多；平易不刑则有自然材器。",
       "note": "本条取象名「刚锐利用之金」。六十甲子纳音取象条：quote 以干支名领起（如「甲子天官蔵…」），statement 描述该纳音干支组合的取象与宜忌。引擎事实层没有干支/纳音 FactKey（bazi 只发 rizhu 日干、yueling 月支、rizhu_strength、geju、yongshen、shishen、shensha、kongwang）；把该干支映射成 rizhu=<其干> 会把「某干支之纳音」偷换成「日主某干」，既非原文条件，也会误命中该日主的一切盘，属编造，故不映射（同类『干支取象』在仓内已有 rizhu=<干> 的旧映射，本批不沿用该宽法）。",
-      "missing_fact": "纳音（六十甲子纳音名）与柱干支"
+      "missing_fact": "纳音（六十甲子纳音名）与柱干支",
+      "mapped_by": "nayin-ganzhi-map.json",
+      "mapped_note": "t170–t178 施工中已映射（措辞与出处见 mapped_by）。台账原先仍写 unmapped，与规则实际不一致——t181 据实况改正。原 reason_class 保留为历史判定。"
     },
     {
       "book": "luming-nayin/li-xuzhong-mingshu",
       "rule_id": "LIXUZHONGMIN-011",
-      "decision": "unmapped",
+      "decision": "mapped",
       "reason_class": "fact-not-emitted",
       "applicable_to_yaml": "[]",
       "evidence_from_statement": "墓成息用之火；不求壮旺欲物平资福禄高厚；入格可贵干不必官。",
       "note": "本条取象名「墓成息用之火」。六十甲子纳音取象条：quote 以干支名领起（如「甲子天官蔵…」），statement 描述该纳音干支组合的取象与宜忌。引擎事实层没有干支/纳音 FactKey（bazi 只发 rizhu 日干、yueling 月支、rizhu_strength、geju、yongshen、shishen、shensha、kongwang）；把该干支映射成 rizhu=<其干> 会把「某干支之纳音」偷换成「日主某干」，既非原文条件，也会误命中该日主的一切盘，属编造，故不映射（同类『干支取象』在仓内已有 rizhu=<干> 的旧映射，本批不沿用该宽法）。",
-      "missing_fact": "纳音（六十甲子纳音名）与柱干支"
+      "missing_fact": "纳音（六十甲子纳音名）与柱干支",
+      "mapped_by": "nayin-ganzhi-map.json",
+      "mapped_note": "t170–t178 施工中已映射（措辞与出处见 mapped_by）。台账原先仍写 unmapped，与规则实际不一致——t181 据实况改正。原 reason_class 保留为历史判定。"
     },
     {
       "book": "luming-nayin/li-xuzhong-mingshu",
       "rule_id": "LIXUZHONGMIN-012",
-      "decision": "unmapped",
+      "decision": "mapped",
       "reason_class": "fact-not-emitted",
       "applicable_to_yaml": "[]",
       "evidence_from_statement": "气散游魂之火；生于木火荣方上下不逢相制则成达。",
       "note": "本条取象名「气散游魂之火」。六十甲子纳音取象条：quote 以干支名领起（如「甲子天官蔵…」），statement 描述该纳音干支组合的取象与宜忌。引擎事实层没有干支/纳音 FactKey（bazi 只发 rizhu 日干、yueling 月支、rizhu_strength、geju、yongshen、shishen、shensha、kongwang）；把该干支映射成 rizhu=<其干> 会把「某干支之纳音」偷换成「日主某干」，既非原文条件，也会误命中该日主的一切盘，属编造，故不映射（同类『干支取象』在仓内已有 rizhu=<干> 的旧映射，本批不沿用该宽法）。",
-      "missing_fact": "纳音（六十甲子纳音名）与柱干支"
+      "missing_fact": "纳音（六十甲子纳音名）与柱干支",
+      "mapped_by": "nayin-ganzhi-map.json",
+      "mapped_note": "t170–t178 施工中已映射（措辞与出处见 mapped_by）。台账原先仍写 unmapped，与规则实际不一致——t181 据实况改正。原 reason_class 保留为历史判定。"
     },
     {
       "book": "luming-nayin/li-xuzhong-mingshu",
       "rule_id": "LIXUZHONGMIN-013",
-      "decision": "unmapped",
+      "decision": "mapped",
       "reason_class": "fact-not-emitted",
       "applicable_to_yaml": "[]",
       "evidence_from_statement": "深沉停会之水；会源得生用制于东南为出常之器。",
       "note": "本条取象名「深沉停会之水」。六十甲子纳音取象条：quote 以干支名领起（如「甲子天官蔵…」），statement 描述该纳音干支组合的取象与宜忌。引擎事实层没有干支/纳音 FactKey（bazi 只发 rizhu 日干、yueling 月支、rizhu_strength、geju、yongshen、shishen、shensha、kongwang）；把该干支映射成 rizhu=<其干> 会把「某干支之纳音」偷换成「日主某干」，既非原文条件，也会误命中该日主的一切盘，属编造，故不映射（同类『干支取象』在仓内已有 rizhu=<干> 的旧映射，本批不沿用该宽法）。",
-      "missing_fact": "纳音（六十甲子纳音名）与柱干支"
+      "missing_fact": "纳音（六十甲子纳音名）与柱干支",
+      "mapped_by": "nayin-ganzhi-map.json",
+      "mapped_note": "t170–t178 施工中已映射（措辞与出处见 mapped_by）。台账原先仍写 unmapped，与规则实际不一致——t181 据实况改正。原 reason_class 保留为历史判定。"
     },
     {
       "book": "luming-nayin/li-xuzhong-mingshu",
       "rule_id": "LIXUZHONGMIN-014",
-      "decision": "unmapped",
+      "decision": "mapped",
       "reason_class": "fact-not-emitted",
       "applicable_to_yaml": "[]",
       "evidence_from_statement": "渐下欲流之水；得水土相承经败地源脉不断可升而济物。",
       "note": "本条取象名「渐下欲流之水」。六十甲子纳音取象条：quote 以干支名领起（如「甲子天官蔵…」），statement 描述该纳音干支组合的取象与宜忌。引擎事实层没有干支/纳音 FactKey（bazi 只发 rizhu 日干、yueling 月支、rizhu_strength、geju、yongshen、shishen、shensha、kongwang）；把该干支映射成 rizhu=<其干> 会把「某干支之纳音」偷换成「日主某干」，既非原文条件，也会误命中该日主的一切盘，属编造，故不映射（同类『干支取象』在仓内已有 rizhu=<干> 的旧映射，本批不沿用该宽法）。",
-      "missing_fact": "纳音（六十甲子纳音名）与柱干支"
+      "missing_fact": "纳音（六十甲子纳音名）与柱干支",
+      "mapped_by": "nayin-ganzhi-map.json",
+      "mapped_note": "t170–t178 施工中已映射（措辞与出处见 mapped_by）。台账原先仍写 unmapped，与规则实际不一致——t181 据实况改正。原 reason_class 保留为历史判定。"
     },
     {
       "book": "luming-nayin/li-xuzhong-mingshu",
       "rule_id": "LIXUZHONGMIN-015",
-      "decision": "unmapped",
+      "decision": "mapped",
       "reason_class": "fact-not-emitted",
       "applicable_to_yaml": "[]",
       "evidence_from_statement": "生体安和之土；资以火土俱盛金旺之荣；尚可高崇为不常之用。",
       "note": "本条取象名「生体安和之土」。六十甲子纳音取象条：quote 以干支名领起（如「甲子天官蔵…」），statement 描述该纳音干支组合的取象与宜忌。引擎事实层没有干支/纳音 FactKey（bazi 只发 rizhu 日干、yueling 月支、rizhu_strength、geju、yongshen、shishen、shensha、kongwang）；把该干支映射成 rizhu=<其干> 会把「某干支之纳音」偷换成「日主某干」，既非原文条件，也会误命中该日主的一切盘，属编造，故不映射（同类『干支取象』在仓内已有 rizhu=<干> 的旧映射，本批不沿用该宽法）。",
-      "missing_fact": "纳音（六十甲子纳音名）与柱干支"
+      "missing_fact": "纳音（六十甲子纳音名）与柱干支",
+      "mapped_by": "nayin-ganzhi-map.json",
+      "mapped_note": "t170–t178 施工中已映射（措辞与出处见 mapped_by）。台账原先仍写 unmapped，与规则实际不一致——t181 据实况改正。原 reason_class 保留为历史判定。"
     },
     {
       "book": "luming-nayin/li-xuzhong-mingshu",
       "rule_id": "LIXUZHONGMIN-016",
-      "decision": "unmapped",
+      "decision": "mapped",
       "reason_class": "fact-not-emitted",
       "applicable_to_yaml": "[]",
       "evidence_from_statement": "鬼旺体坚之土；生于金重木多见财重则富贵长远。",
       "note": "本条取象名「鬼旺体坚之土」。六十甲子纳音取象条：quote 以干支名领起（如「甲子天官蔵…」），statement 描述该纳音干支组合的取象与宜忌。引擎事实层没有干支/纳音 FactKey（bazi 只发 rizhu 日干、yueling 月支、rizhu_strength、geju、yongshen、shishen、shensha、kongwang）；把该干支映射成 rizhu=<其干> 会把「某干支之纳音」偷换成「日主某干」，既非原文条件，也会误命中该日主的一切盘，属编造，故不映射（同类『干支取象』在仓内已有 rizhu=<干> 的旧映射，本批不沿用该宽法）。",
-      "missing_fact": "纳音（六十甲子纳音名）与柱干支"
+      "missing_fact": "纳音（六十甲子纳音名）与柱干支",
+      "mapped_by": "nayin-ganzhi-map.json",
+      "mapped_note": "t170–t178 施工中已映射（措辞与出处见 mapped_by）。台账原先仍写 unmapped，与规则实际不一致——t181 据实况改正。原 reason_class 保留为历史判定。"
     },
     {
       "book": "luming-nayin/li-xuzhong-mingshu",
       "rule_id": "LIXUZHONGMIN-017",
-      "decision": "unmapped",
+      "decision": "mapped",
       "reason_class": "fact-not-emitted",
       "applicable_to_yaml": "[]",
       "evidence_from_statement": "显光之金未成材；金刚土重得期相会无炎火之官乃大臣之制。",
       "note": "本条取象名「显光之金未成材」。六十甲子纳音取象条：quote 以干支名领起（如「甲子天官蔵…」），statement 描述该纳音干支组合的取象与宜忌。引擎事实层没有干支/纳音 FactKey（bazi 只发 rizhu 日干、yueling 月支、rizhu_strength、geju、yongshen、shishen、shensha、kongwang）；把该干支映射成 rizhu=<其干> 会把「某干支之纳音」偷换成「日主某干」，既非原文条件，也会误命中该日主的一切盘，属编造，故不映射（同类『干支取象』在仓内已有 rizhu=<干> 的旧映射，本批不沿用该宽法）。",
-      "missing_fact": "纳音（六十甲子纳音名）与柱干支"
+      "missing_fact": "纳音（六十甲子纳音名）与柱干支",
+      "mapped_by": "nayin-ganzhi-map.json",
+      "mapped_note": "t170–t178 施工中已映射（措辞与出处见 mapped_by）。台账原先仍写 unmapped，与规则实际不一致——t181 据实况改正。原 reason_class 保留为历史判定。"
     },
     {
       "book": "luming-nayin/li-xuzhong-mingshu",
       "rule_id": "LIXUZHONGMIN-018",
-      "decision": "unmapped",
+      "decision": "mapped",
       "reason_class": "fact-not-emitted",
       "applicable_to_yaml": "[]",
       "evidence_from_statement": "资始之金；身坚体柔欲平火之制；金助土成则光大之器。",
       "note": "本条取象名「资始之金」。六十甲子纳音取象条：quote 以干支名领起（如「甲子天官蔵…」），statement 描述该纳音干支组合的取象与宜忌。引擎事实层没有干支/纳音 FactKey（bazi 只发 rizhu 日干、yueling 月支、rizhu_strength、geju、yongshen、shishen、shensha、kongwang）；把该干支映射成 rizhu=<其干> 会把「某干支之纳音」偷换成「日主某干」，既非原文条件，也会误命中该日主的一切盘，属编造，故不映射（同类『干支取象』在仓内已有 rizhu=<干> 的旧映射，本批不沿用该宽法）。",
-      "missing_fact": "纳音（六十甲子纳音名）与柱干支"
+      "missing_fact": "纳音（六十甲子纳音名）与柱干支",
+      "mapped_by": "nayin-ganzhi-map.json",
+      "mapped_note": "t170–t178 施工中已映射（措辞与出处见 mapped_by）。台账原先仍写 unmapped，与规则实际不一致——t181 据实况改正。原 reason_class 保留为历史判定。"
     },
     {
       "book": "luming-nayin/li-xuzhong-mingshu",
       "rule_id": "LIXUZHONGMIN-019",
-      "decision": "unmapped",
+      "decision": "mapped",
       "reason_class": "fact-not-emitted",
       "applicable_to_yaml": "[]",
       "evidence_from_statement": "化薪之木；畏在火强得水资；处生旺逢土亦富贵。",
       "note": "本条取象名「化薪之木」。六十甲子纳音取象条：quote 以干支名领起（如「甲子天官蔵…」），statement 描述该纳音干支组合的取象与宜忌。引擎事实层没有干支/纳音 FactKey（bazi 只发 rizhu 日干、yueling 月支、rizhu_strength、geju、yongshen、shishen、shensha、kongwang）；把该干支映射成 rizhu=<其干> 会把「某干支之纳音」偷换成「日主某干」，既非原文条件，也会误命中该日主的一切盘，属编造，故不映射（同类『干支取象』在仓内已有 rizhu=<干> 的旧映射，本批不沿用该宽法）。",
-      "missing_fact": "纳音（六十甲子纳音名）与柱干支"
+      "missing_fact": "纳音（六十甲子纳音名）与柱干支",
+      "mapped_by": "nayin-ganzhi-map.json",
+      "mapped_note": "t170–t178 施工中已映射（措辞与出处见 mapped_by）。台账原先仍写 unmapped，与规则实际不一致——t181 据实况改正。原 reason_class 保留为历史判定。"
     },
     {
       "book": "luming-nayin/li-xuzhong-mingshu",
       "rule_id": "LIXUZHONGMIN-020",
-      "decision": "unmapped",
+      "decision": "mapped",
       "reason_class": "fact-not-emitted",
       "applicable_to_yaml": "[]",
       "evidence_from_statement": "伐根之木；气败体柔不嫌金制；喜水之荣会元借生主成重器。",
       "note": "本条取象名「伐根之木」。六十甲子纳音取象条：quote 以干支名领起（如「甲子天官蔵…」），statement 描述该纳音干支组合的取象与宜忌。引擎事实层没有干支/纳音 FactKey（bazi 只发 rizhu 日干、yueling 月支、rizhu_strength、geju、yongshen、shishen、shensha、kongwang）；把该干支映射成 rizhu=<其干> 会把「某干支之纳音」偷换成「日主某干」，既非原文条件，也会误命中该日主的一切盘，属编造，故不映射（同类『干支取象』在仓内已有 rizhu=<干> 的旧映射，本批不沿用该宽法）。",
-      "missing_fact": "纳音（六十甲子纳音名）与柱干支"
+      "missing_fact": "纳音（六十甲子纳音名）与柱干支",
+      "mapped_by": "nayin-ganzhi-map.json",
+      "mapped_note": "t170–t178 施工中已映射（措辞与出处见 mapped_by）。台账原先仍写 unmapped，与规则实际不一致——t181 据实况改正。原 reason_class 保留为历史判定。"
     },
     {
       "book": "luming-nayin/li-xuzhong-mingshu",
       "rule_id": "LIXUZHONGMIN-021",
-      "decision": "unmapped",
+      "decision": "mapped",
       "reason_class": "fact-not-emitted",
       "applicable_to_yaml": "[]",
       "evidence_from_statement": "源泉之水；务有资助流长无鬼则运广之渊享高厚之福。",
       "note": "本条取象名「源泉之水」。六十甲子纳音取象条：quote 以干支名领起（如「甲子天官蔵…」），statement 描述该纳音干支组合的取象与宜忌。引擎事实层没有干支/纳音 FactKey（bazi 只发 rizhu 日干、yueling 月支、rizhu_strength、geju、yongshen、shishen、shensha、kongwang）；把该干支映射成 rizhu=<其干> 会把「某干支之纳音」偷换成「日主某干」，既非原文条件，也会误命中该日主的一切盘，属编造，故不映射（同类『干支取象』在仓内已有 rizhu=<干> 的旧映射，本批不沿用该宽法）。",
-      "missing_fact": "纳音（六十甲子纳音名）与柱干支"
+      "missing_fact": "纳音（六十甲子纳音名）与柱干支",
+      "mapped_by": "nayin-ganzhi-map.json",
+      "mapped_note": "t170–t178 施工中已映射（措辞与出处见 mapped_by）。台账原先仍写 unmapped，与规则实际不一致——t181 据实况改正。原 reason_class 保留为历史判定。"
     },
     {
       "book": "luming-nayin/li-xuzhong-mingshu",
       "rule_id": "LIXUZHONGMIN-022",
-      "decision": "unmapped",
+      "decision": "mapped",
       "reason_class": "fact-not-emitted",
       "applicable_to_yaml": "[]",
       "evidence_from_statement": "母旺进趋之水；资金济火自乾东而震北亦超卓辅弼之用。",
       "note": "本条取象名「母旺进趋之水」。六十甲子纳音取象条：quote 以干支名领起（如「甲子天官蔵…」），statement 描述该纳音干支组合的取象与宜忌。引擎事实层没有干支/纳音 FactKey（bazi 只发 rizhu 日干、yueling 月支、rizhu_strength、geju、yongshen、shishen、shensha、kongwang）；把该干支映射成 rizhu=<其干> 会把「某干支之纳音」偷换成「日主某干」，既非原文条件，也会误命中该日主的一切盘，属编造，故不映射（同类『干支取象』在仓内已有 rizhu=<干> 的旧映射，本批不沿用该宽法）。",
-      "missing_fact": "纳音（六十甲子纳音名）与柱干支"
+      "missing_fact": "纳音（六十甲子纳音名）与柱干支",
+      "mapped_by": "nayin-ganzhi-map.json",
+      "mapped_note": "t170–t178 施工中已映射（措辞与出处见 mapped_by）。台账原先仍写 unmapped，与规则实际不一致——t181 据实况改正。原 reason_class 保留为历史判定。"
     },
     {
       "book": "luming-nayin/li-xuzhong-mingshu",
       "rule_id": "LIXUZHONGMIN-023",
-      "decision": "unmapped",
+      "decision": "mapped",
       "reason_class": "fact-not-emitted",
       "applicable_to_yaml": "[]",
       "evidence_from_statement": "禄资支附坚固火钟之土；资以木光耀不群本重不须旺。",
       "note": "本条取象名「禄资支附坚固火钟之土」。六十甲子纳音取象条：quote 以干支名领起（如「甲子天官蔵…」），statement 描述该纳音干支组合的取象与宜忌。引擎事实层没有干支/纳音 FactKey（bazi 只发 rizhu 日干、yueling 月支、rizhu_strength、geju、yongshen、shishen、shensha、kongwang）；把该干支映射成 rizhu=<其干> 会把「某干支之纳音」偷换成「日主某干」，既非原文条件，也会误命中该日主的一切盘，属编造，故不映射（同类『干支取象』在仓内已有 rizhu=<干> 的旧映射，本批不沿用该宽法）。",
-      "missing_fact": "纳音（六十甲子纳音名）与柱干支"
+      "missing_fact": "纳音（六十甲子纳音名）与柱干支",
+      "mapped_by": "nayin-ganzhi-map.json",
+      "mapped_note": "t170–t178 施工中已映射（措辞与出处见 mapped_by）。台账原先仍写 unmapped，与规则实际不一致——t181 据实况改正。原 reason_class 保留为历史判定。"
     },
     {
       "book": "luming-nayin/li-xuzhong-mingshu",
       "rule_id": "LIXUZHONGMIN-024",
-      "decision": "unmapped",
+      "decision": "mapped",
       "reason_class": "fact-not-emitted",
       "applicable_to_yaml": "[]",
       "evidence_from_statement": "福壮临官之土；润水丽金处魁罡坤艮可显功遂名。",
       "note": "本条取象名「福壮临官之土」。六十甲子纳音取象条：quote 以干支名领起（如「甲子天官蔵…」），statement 描述该纳音干支组合的取象与宜忌。引擎事实层没有干支/纳音 FactKey（bazi 只发 rizhu 日干、yueling 月支、rizhu_strength、geju、yongshen、shishen、shensha、kongwang）；把该干支映射成 rizhu=<其干> 会把「某干支之纳音」偷换成「日主某干」，既非原文条件，也会误命中该日主的一切盘，属编造，故不映射（同类『干支取象』在仓内已有 rizhu=<干> 的旧映射，本批不沿用该宽法）。",
-      "missing_fact": "纳音（六十甲子纳音名）与柱干支"
+      "missing_fact": "纳音（六十甲子纳音名）与柱干支",
+      "mapped_by": "nayin-ganzhi-map.json",
+      "mapped_note": "t170–t178 施工中已映射（措辞与出处见 mapped_by）。台账原先仍写 unmapped，与规则实际不一致——t181 据实况改正。原 reason_class 保留为历史判定。"
     },
     {
       "book": "luming-nayin/li-xuzhong-mingshu",
       "rule_id": "LIXUZHONGMIN-025",
-      "decision": "unmapped",
+      "decision": "mapped",
       "reason_class": "fact-not-emitted",
       "applicable_to_yaml": "[]",
       "evidence_from_statement": "神龙之火；利震巽不畏水刑；干支得官皆显用水木盛尤佳。",
       "note": "本条取象名「神龙之火」。六十甲子纳音取象条：quote 以干支名领起（如「甲子天官蔵…」），statement 描述该纳音干支组合的取象与宜忌。引擎事实层没有干支/纳音 FactKey（bazi 只发 rizhu 日干、yueling 月支、rizhu_strength、geju、yongshen、shishen、shensha、kongwang）；把该干支映射成 rizhu=<其干> 会把「某干支之纳音」偷换成「日主某干」，既非原文条件，也会误命中该日主的一切盘，属编造，故不映射（同类『干支取象』在仓内已有 rizhu=<干> 的旧映射，本批不沿用该宽法）。",
-      "missing_fact": "纳音（六十甲子纳音名）与柱干支"
+      "missing_fact": "纳音（六十甲子纳音名）与柱干支",
+      "mapped_by": "nayin-ganzhi-map.json",
+      "mapped_note": "t170–t178 施工中已映射（措辞与出处见 mapped_by）。台账原先仍写 unmapped，与规则实际不一致——t181 据实况改正。原 reason_class 保留为历史判定。"
     },
     {
       "book": "luming-nayin/li-xuzhong-mingshu",
       "rule_id": "LIXUZHONGMIN-026",
-      "decision": "unmapped",
+      "decision": "mapped",
       "reason_class": "fact-not-emitted",
       "applicable_to_yaml": "[]",
       "evidence_from_statement": "余光不凡之火；惟期体重不假奇财；禄资命成方入康荣。",
       "note": "本条取象名「余光不凡之火」。六十甲子纳音取象条：quote 以干支名领起（如「甲子天官蔵…」），statement 描述该纳音干支组合的取象与宜忌。引擎事实层没有干支/纳音 FactKey（bazi 只发 rizhu 日干、yueling 月支、rizhu_strength、geju、yongshen、shishen、shensha、kongwang）；把该干支映射成 rizhu=<其干> 会把「某干支之纳音」偷换成「日主某干」，既非原文条件，也会误命中该日主的一切盘，属编造，故不映射（同类『干支取象』在仓内已有 rizhu=<干> 的旧映射，本批不沿用该宽法）。",
-      "missing_fact": "纳音（六十甲子纳音名）与柱干支"
+      "missing_fact": "纳音（六十甲子纳音名）与柱干支",
+      "mapped_by": "nayin-ganzhi-map.json",
+      "mapped_note": "t170–t178 施工中已映射（措辞与出处见 mapped_by）。台账原先仍写 unmapped，与规则实际不一致——t181 据实况改正。原 reason_class 保留为历史判定。"
     },
     {
       "book": "luming-nayin/li-xuzhong-mingshu",
       "rule_id": "LIXUZHONGMIN-027",
-      "decision": "unmapped",
+      "decision": "mapped",
       "reason_class": "fact-not-emitted",
       "applicable_to_yaml": "[]",
       "evidence_from_statement": "五行坚实之木；不避刑冲不辞衰败；和柔德贵相符必显大用。",
       "note": "本条取象名「五行坚实之木」。六十甲子纳音取象条：quote 以干支名领起（如「甲子天官蔵…」），statement 描述该纳音干支组合的取象与宜忌。引擎事实层没有干支/纳音 FactKey（bazi 只发 rizhu 日干、yueling 月支、rizhu_strength、geju、yongshen、shishen、shensha、kongwang）；把该干支映射成 rizhu=<其干> 会把「某干支之纳音」偷换成「日主某干」，既非原文条件，也会误命中该日主的一切盘，属编造，故不映射（同类『干支取象』在仓内已有 rizhu=<干> 的旧映射，本批不沿用该宽法）。",
-      "missing_fact": "纳音（六十甲子纳音名）与柱干支"
+      "missing_fact": "纳音（六十甲子纳音名）与柱干支",
+      "mapped_by": "nayin-ganzhi-map.json",
+      "mapped_note": "t170–t178 施工中已映射（措辞与出处见 mapped_by）。台账原先仍写 unmapped，与规则实际不一致——t181 据实况改正。原 reason_class 保留为历史判定。"
     },
     {
       "book": "luming-nayin/li-xuzhong-mingshu",
       "rule_id": "LIXUZHONGMIN-028",
-      "decision": "unmapped",
+      "decision": "mapped",
       "reason_class": "fact-not-emitted",
       "applicable_to_yaml": "[]",
       "evidence_from_statement": "经制之木自旺；不畏霜雪气节凌云；制金损火逢旺即巨室之材。",
       "note": "本条取象名「经制之木自旺」。六十甲子纳音取象条：quote 以干支名领起（如「甲子天官蔵…」），statement 描述该纳音干支组合的取象与宜忌。引擎事实层没有干支/纳音 FactKey（bazi 只发 rizhu 日干、yueling 月支、rizhu_strength、geju、yongshen、shishen、shensha、kongwang）；把该干支映射成 rizhu=<其干> 会把「某干支之纳音」偷换成「日主某干」，既非原文条件，也会误命中该日主的一切盘，属编造，故不映射（同类『干支取象』在仓内已有 rizhu=<干> 的旧映射，本批不沿用该宽法）。",
-      "missing_fact": "纳音（六十甲子纳音名）与柱干支"
+      "missing_fact": "纳音（六十甲子纳音名）与柱干支",
+      "mapped_by": "nayin-ganzhi-map.json",
+      "mapped_note": "t170–t178 施工中已映射（措辞与出处见 mapped_by）。台账原先仍写 unmapped，与规则实际不一致——t181 据实况改正。原 reason_class 保留为历史判定。"
     },
     {
       "book": "luming-nayin/li-xuzhong-mingshu",
       "rule_id": "LIXUZHONGMIN-029",
-      "decision": "unmapped",
+      "decision": "mapped",
       "reason_class": "fact-not-emitted",
       "applicable_to_yaml": "[]",
       "evidence_from_statement": "会贵守成之水；五行不杂兑坎之间无物来制可享高福。",
       "note": "本条取象名「会贵守成之水」。六十甲子纳音取象条：quote 以干支名领起（如「甲子天官蔵…」），statement 描述该纳音干支组合的取象与宜忌。引擎事实层没有干支/纳音 FactKey（bazi 只发 rizhu 日干、yueling 月支、rizhu_strength、geju、yongshen、shishen、shensha、kongwang）；把该干支映射成 rizhu=<其干> 会把「某干支之纳音」偷换成「日主某干」，既非原文条件，也会误命中该日主的一切盘，属编造，故不映射（同类『干支取象』在仓内已有 rizhu=<干> 的旧映射，本批不沿用该宽法）。",
-      "missing_fact": "纳音（六十甲子纳音名）与柱干支"
+      "missing_fact": "纳音（六十甲子纳音名）与柱干支",
+      "mapped_by": "nayin-ganzhi-map.json",
+      "mapped_note": "t170–t178 施工中已映射（措辞与出处见 mapped_by）。台账原先仍写 unmapped，与规则实际不一致——t181 据实况改正。原 reason_class 保留为历史判定。"
     },
     {
       "book": "luming-nayin/li-xuzhong-mingshu",
       "rule_id": "LIXUZHONGMIN-030",
-      "decision": "unmapped",
+      "decision": "mapped",
       "reason_class": "fact-not-emitted",
       "applicable_to_yaml": "[]",
       "evidence_from_statement": "流远澄清之水；溢以水在火木荣方音中无土则有济物之德。",
       "note": "本条取象名「流远澄清之水」。六十甲子纳音取象条：quote 以干支名领起（如「甲子天官蔵…」），statement 描述该纳音干支组合的取象与宜忌。引擎事实层没有干支/纳音 FactKey（bazi 只发 rizhu 日干、yueling 月支、rizhu_strength、geju、yongshen、shishen、shensha、kongwang）；把该干支映射成 rizhu=<其干> 会把「某干支之纳音」偷换成「日主某干」，既非原文条件，也会误命中该日主的一切盘，属编造，故不映射（同类『干支取象』在仓内已有 rizhu=<干> 的旧映射，本批不沿用该宽法）。",
-      "missing_fact": "纳音（六十甲子纳音名）与柱干支"
+      "missing_fact": "纳音（六十甲子纳音名）与柱干支",
+      "mapped_by": "nayin-ganzhi-map.json",
+      "mapped_note": "t170–t178 施工中已映射（措辞与出处见 mapped_by）。台账原先仍写 unmapped，与规则实际不一致——t181 据实况改正。原 reason_class 保留为历史判定。"
     },
     {
       "book": "luming-nayin/li-xuzhong-mingshu",
       "rule_id": "LIXUZHONGMIN-031",
-      "decision": "unmapped",
+      "decision": "mapped",
       "reason_class": "fact-not-emitted",
       "applicable_to_yaml": "[]",
       "evidence_from_statement": "沙汰之金志大有节；零火盖之严或旺金集之刚；不遇丁壬可陶熔。",
       "note": "本条取象名「沙汰之金志大有节」。六十甲子纳音取象条：quote 以干支名领起（如「甲子天官蔵…」），statement 描述该纳音干支组合的取象与宜忌。引擎事实层没有干支/纳音 FactKey（bazi 只发 rizhu 日干、yueling 月支、rizhu_strength、geju、yongshen、shishen、shensha、kongwang）；把该干支映射成 rizhu=<其干> 会把「某干支之纳音」偷换成「日主某干」，既非原文条件，也会误命中该日主的一切盘，属编造，故不映射（同类『干支取象』在仓内已有 rizhu=<干> 的旧映射，本批不沿用该宽法）。",
-      "missing_fact": "纳音（六十甲子纳音名）与柱干支"
+      "missing_fact": "纳音（六十甲子纳音名）与柱干支",
+      "mapped_by": "nayin-ganzhi-map.json",
+      "mapped_note": "t170–t178 施工中已映射（措辞与出处见 mapped_by）。台账原先仍写 unmapped，与规则实际不一致——t181 据实况改正。原 reason_class 保留为历史判定。"
     },
     {
       "book": "luming-nayin/li-xuzhong-mingshu",
       "rule_id": "LIXUZHONGMIN-032",
-      "decision": "unmapped",
+      "decision": "mapped",
       "reason_class": "fact-not-emitted",
       "applicable_to_yaml": "[]",
       "evidence_from_statement": "强悍刚矿之金；欲金相用在火盛处父子相乘皆为珍宝。",
       "note": "本条取象名「强悍刚矿之金」。六十甲子纳音取象条：quote 以干支名领起（如「甲子天官蔵…」），statement 描述该纳音干支组合的取象与宜忌。引擎事实层没有干支/纳音 FactKey（bazi 只发 rizhu 日干、yueling 月支、rizhu_strength、geju、yongshen、shishen、shensha、kongwang）；把该干支映射成 rizhu=<其干> 会把「某干支之纳音」偷换成「日主某干」，既非原文条件，也会误命中该日主的一切盘，属编造，故不映射（同类『干支取象』在仓内已有 rizhu=<干> 的旧映射，本批不沿用该宽法）。",
-      "missing_fact": "纳音（六十甲子纳音名）与柱干支"
+      "missing_fact": "纳音（六十甲子纳音名）与柱干支",
+      "mapped_by": "nayin-ganzhi-map.json",
+      "mapped_note": "t170–t178 施工中已映射（措辞与出处见 mapped_by）。台账原先仍写 unmapped，与规则实际不一致——t181 据实况改正。原 reason_class 保留为历史判定。"
     },
     {
       "book": "luming-nayin/li-xuzhong-mingshu",
       "rule_id": "LIXUZHONGMIN-033",
-      "decision": "unmapped",
+      "decision": "mapped",
       "reason_class": "fact-not-emitted",
       "applicable_to_yaml": "[]",
       "evidence_from_statement": "无资之火；金木壮旺有制得干生为厚实；禄盛无依即灰飞。",
       "note": "本条取象名「无资之火」。六十甲子纳音取象条：quote 以干支名领起（如「甲子天官蔵…」），statement 描述该纳音干支组合的取象与宜忌。引擎事实层没有干支/纳音 FactKey（bazi 只发 rizhu 日干、yueling 月支、rizhu_strength、geju、yongshen、shishen、shensha、kongwang）；把该干支映射成 rizhu=<其干> 会把「某干支之纳音」偷换成「日主某干」，既非原文条件，也会误命中该日主的一切盘，属编造，故不映射（同类『干支取象』在仓内已有 rizhu=<干> 的旧映射，本批不沿用该宽法）。",
-      "missing_fact": "纳音（六十甲子纳音名）与柱干支"
+      "missing_fact": "纳音（六十甲子纳音名）与柱干支",
+      "mapped_by": "nayin-ganzhi-map.json",
+      "mapped_note": "t170–t178 施工中已映射（措辞与出处见 mapped_by）。台账原先仍写 unmapped，与规则实际不一致——t181 据实况改正。原 reason_class 保留为历史判定。"
     },
     {
       "book": "luming-nayin/li-xuzhong-mingshu",
       "rule_id": "LIXUZHONGMIN-034",
-      "decision": "unmapped",
+      "decision": "mapped",
       "reason_class": "fact-not-emitted",
       "applicable_to_yaml": "[]",
       "evidence_from_statement": "平易无为之火；木旺则大炎、木多成用、火助则不清；得此无不贵豪。",
       "note": "本条取象名「平易无为之火」。六十甲子纳音取象条：quote 以干支名领起（如「甲子天官蔵…」），statement 描述该纳音干支组合的取象与宜忌。引擎事实层没有干支/纳音 FactKey（bazi 只发 rizhu 日干、yueling 月支、rizhu_strength、geju、yongshen、shishen、shensha、kongwang）；把该干支映射成 rizhu=<其干> 会把「某干支之纳音」偷换成「日主某干」，既非原文条件，也会误命中该日主的一切盘，属编造，故不映射（同类『干支取象』在仓内已有 rizhu=<干> 的旧映射，本批不沿用该宽法）。",
-      "missing_fact": "纳音（六十甲子纳音名）与柱干支"
+      "missing_fact": "纳音（六十甲子纳音名）与柱干支",
+      "mapped_by": "nayin-ganzhi-map.json",
+      "mapped_note": "t170–t178 施工中已映射（措辞与出处见 mapped_by）。台账原先仍写 unmapped，与规则实际不一致——t181 据实况改正。原 reason_class 保留为历史判定。"
     },
     {
       "book": "luming-nayin/li-xuzhong-mingshu",
       "rule_id": "LIXUZHONGMIN-035",
-      "decision": "unmapped",
+      "decision": "mapped",
       "reason_class": "fact-not-emitted",
       "applicable_to_yaml": "[]",
       "evidence_from_statement": "不材之木；喜逢水旺资荣；金败自然不嫌禄鬼方可高崇。",
       "note": "本条取象名「不材之木」。六十甲子纳音取象条：quote 以干支名领起（如「甲子天官蔵…」），statement 描述该纳音干支组合的取象与宜忌。引擎事实层没有干支/纳音 FactKey（bazi 只发 rizhu 日干、yueling 月支、rizhu_strength、geju、yongshen、shishen、shensha、kongwang）；把该干支映射成 rizhu=<其干> 会把「某干支之纳音」偷换成「日主某干」，既非原文条件，也会误命中该日主的一切盘，属编造，故不映射（同类『干支取象』在仓内已有 rizhu=<干> 的旧映射，本批不沿用该宽法）。",
-      "missing_fact": "纳音（六十甲子纳音名）与柱干支"
+      "missing_fact": "纳音（六十甲子纳音名）与柱干支",
+      "mapped_by": "nayin-ganzhi-map.json",
+      "mapped_note": "t170–t178 施工中已映射（措辞与出处见 mapped_by）。台账原先仍写 unmapped，与规则实际不一致——t181 据实况改正。原 reason_class 保留为历史判定。"
     },
     {
       "book": "luming-nayin/li-xuzhong-mingshu",
       "rule_id": "LIXUZHONGMIN-036",
-      "decision": "unmapped",
+      "decision": "mapped",
       "reason_class": "fact-not-emitted",
       "applicable_to_yaml": "[]",
       "evidence_from_statement": "粪水育苗之木；水多土而临旺皆有成就；逢败绝主富贵荣盛。",
       "note": "本条取象名「粪水育苗之木」。六十甲子纳音取象条：quote 以干支名领起（如「甲子天官蔵…」），statement 描述该纳音干支组合的取象与宜忌。引擎事实层没有干支/纳音 FactKey（bazi 只发 rizhu 日干、yueling 月支、rizhu_strength、geju、yongshen、shishen、shensha、kongwang）；把该干支映射成 rizhu=<其干> 会把「某干支之纳音」偷换成「日主某干」，既非原文条件，也会误命中该日主的一切盘，属编造，故不映射（同类『干支取象』在仓内已有 rizhu=<干> 的旧映射，本批不沿用该宽法）。",
-      "missing_fact": "纳音（六十甲子纳音名）与柱干支"
+      "missing_fact": "纳音（六十甲子纳音名）与柱干支",
+      "mapped_by": "nayin-ganzhi-map.json",
+      "mapped_note": "t170–t178 施工中已映射（措辞与出处见 mapped_by）。台账原先仍写 unmapped，与规则实际不一致——t181 据实况改正。原 reason_class 保留为历史判定。"
     },
     {
       "book": "luming-nayin/li-xuzhong-mingshu",
       "rule_id": "LIXUZHONGMIN-037",
-      "decision": "unmapped",
+      "decision": "mapped",
       "reason_class": "fact-not-emitted",
       "applicable_to_yaml": "[]",
       "evidence_from_statement": "气过浮虚之土；得重土相资水木不刚即享福寿。",
       "note": "本条取象名「气过浮虚之土」。六十甲子纳音取象条：quote 以干支名领起（如「甲子天官蔵…」），statement 描述该纳音干支组合的取象与宜忌。引擎事实层没有干支/纳音 FactKey（bazi 只发 rizhu 日干、yueling 月支、rizhu_strength、geju、yongshen、shishen、shensha、kongwang）；把该干支映射成 rizhu=<其干> 会把「某干支之纳音」偷换成「日主某干」，既非原文条件，也会误命中该日主的一切盘，属编造，故不映射（同类『干支取象』在仓内已有 rizhu=<干> 的旧映射，本批不沿用该宽法）。",
-      "missing_fact": "纳音（六十甲子纳音名）与柱干支"
+      "missing_fact": "纳音（六十甲子纳音名）与柱干支",
+      "mapped_by": "nayin-ganzhi-map.json",
+      "mapped_note": "t170–t178 施工中已映射（措辞与出处见 mapped_by）。台账原先仍写 unmapped，与规则实际不一致——t181 据实况改正。原 reason_class 保留为历史判定。"
     },
     {
       "book": "luming-nayin/li-xuzhong-mingshu",
       "rule_id": "LIXUZHONGMIN-038",
-      "decision": "unmapped",
+      "decision": "mapped",
       "reason_class": "fact-not-emitted",
       "applicable_to_yaml": "[]",
       "evidence_from_statement": "气衰就本之土；承火制木重逢木土刑冲假禄元可立功名。",
       "note": "本条取象名「气衰就本之土」。六十甲子纳音取象条：quote 以干支名领起（如「甲子天官蔵…」），statement 描述该纳音干支组合的取象与宜忌。引擎事实层没有干支/纳音 FactKey（bazi 只发 rizhu 日干、yueling 月支、rizhu_strength、geju、yongshen、shishen、shensha、kongwang）；把该干支映射成 rizhu=<其干> 会把「某干支之纳音」偷换成「日主某干」，既非原文条件，也会误命中该日主的一切盘，属编造，故不映射（同类『干支取象』在仓内已有 rizhu=<干> 的旧映射，本批不沿用该宽法）。",
-      "missing_fact": "纳音（六十甲子纳音名）与柱干支"
+      "missing_fact": "纳音（六十甲子纳音名）与柱干支",
+      "mapped_by": "nayin-ganzhi-map.json",
+      "mapped_note": "t170–t178 施工中已映射（措辞与出处见 mapped_by）。台账原先仍写 unmapped，与规则实际不一致——t181 据实况改正。原 reason_class 保留为历史判定。"
     },
     {
       "book": "luming-nayin/li-xuzhong-mingshu",
       "rule_id": "LIXUZHONGMIN-039",
-      "decision": "unmapped",
+      "decision": "mapped",
       "reason_class": "fact-not-emitted",
       "applicable_to_yaml": "[]",
       "evidence_from_statement": "藏用体柔之金；喜土资以旺财官不可太刚；应此富贵久远。",
       "note": "本条取象名「藏用体柔之金」。六十甲子纳音取象条：quote 以干支名领起（如「甲子天官蔵…」），statement 描述该纳音干支组合的取象与宜忌。引擎事实层没有干支/纳音 FactKey（bazi 只发 rizhu 日干、yueling 月支、rizhu_strength、geju、yongshen、shishen、shensha、kongwang）；把该干支映射成 rizhu=<其干> 会把「某干支之纳音」偷换成「日主某干」，既非原文条件，也会误命中该日主的一切盘，属编造，故不映射（同类『干支取象』在仓内已有 rizhu=<干> 的旧映射，本批不沿用该宽法）。",
-      "missing_fact": "纳音（六十甲子纳音名）与柱干支"
+      "missing_fact": "纳音（六十甲子纳音名）与柱干支",
+      "mapped_by": "nayin-ganzhi-map.json",
+      "mapped_note": "t170–t178 施工中已映射（措辞与出处见 mapped_by）。台账原先仍写 unmapped，与规则实际不一致——t181 据实况改正。原 reason_class 保留为历史判定。"
     },
     {
       "book": "luming-nayin/li-xuzhong-mingshu",
       "rule_id": "LIXUZHONGMIN-040",
-      "decision": "unmapped",
+      "decision": "mapped",
       "reason_class": "fact-not-emitted",
       "applicable_to_yaml": "[]",
       "evidence_from_statement": "财旺体弱之金；财命相乘喜身在生旺；得真官真气配合贵源。",
       "note": "本条取象名「财旺体弱之金」。六十甲子纳音取象条：quote 以干支名领起（如「甲子天官蔵…」），statement 描述该纳音干支组合的取象与宜忌。引擎事实层没有干支/纳音 FactKey（bazi 只发 rizhu 日干、yueling 月支、rizhu_strength、geju、yongshen、shishen、shensha、kongwang）；把该干支映射成 rizhu=<其干> 会把「某干支之纳音」偷换成「日主某干」，既非原文条件，也会误命中该日主的一切盘，属编造，故不映射（同类『干支取象』在仓内已有 rizhu=<干> 的旧映射，本批不沿用该宽法）。",
-      "missing_fact": "纳音（六十甲子纳音名）与柱干支"
+      "missing_fact": "纳音（六十甲子纳音名）与柱干支",
+      "mapped_by": "nayin-ganzhi-map.json",
+      "mapped_note": "t170–t178 施工中已映射（措辞与出处见 mapped_by）。台账原先仍写 unmapped，与规则实际不一致——t181 据实况改正。原 reason_class 保留为历史判定。"
     },
     {
       "book": "luming-nayin/li-xuzhong-mingshu",
       "rule_id": "LIXUZHONGMIN-041",
-      "decision": "unmapped",
+      "decision": "mapped",
       "reason_class": "fact-not-emitted",
       "applicable_to_yaml": "[]",
       "evidence_from_statement": "始壮之火；多生我或会本源却无炎光之极超卓；水轻无土亦可腾达。",
       "note": "本条取象名「始壮之火」。六十甲子纳音取象条：quote 以干支名领起（如「甲子天官蔵…」），statement 描述该纳音干支组合的取象与宜忌。引擎事实层没有干支/纳音 FactKey（bazi 只发 rizhu 日干、yueling 月支、rizhu_strength、geju、yongshen、shishen、shensha、kongwang）；把该干支映射成 rizhu=<其干> 会把「某干支之纳音」偷换成「日主某干」，既非原文条件，也会误命中该日主的一切盘，属编造，故不映射（同类『干支取象』在仓内已有 rizhu=<干> 的旧映射，本批不沿用该宽法）。",
-      "missing_fact": "纳音（六十甲子纳音名）与柱干支"
+      "missing_fact": "纳音（六十甲子纳音名）与柱干支",
+      "mapped_by": "nayin-ganzhi-map.json",
+      "mapped_note": "t170–t178 施工中已映射（措辞与出处见 mapped_by）。台账原先仍写 unmapped，与规则实际不一致——t181 据实况改正。原 reason_class 保留为历史判定。"
     },
     {
       "book": "luming-nayin/li-xuzhong-mingshu",
       "rule_id": "LIXUZHONGMIN-042",
-      "decision": "unmapped",
+      "decision": "mapped",
       "reason_class": "fact-not-emitted",
       "applicable_to_yaml": "[]",
       "evidence_from_statement": "进功之火；辅助不息不必旺极；木火相乘虽死败亦贵。",
       "note": "本条取象名「进功之火」。六十甲子纳音取象条：quote 以干支名领起（如「甲子天官蔵…」），statement 描述该纳音干支组合的取象与宜忌。引擎事实层没有干支/纳音 FactKey（bazi 只发 rizhu 日干、yueling 月支、rizhu_strength、geju、yongshen、shishen、shensha、kongwang）；把该干支映射成 rizhu=<其干> 会把「某干支之纳音」偷换成「日主某干」，既非原文条件，也会误命中该日主的一切盘，属编造，故不映射（同类『干支取象』在仓内已有 rizhu=<干> 的旧映射，本批不沿用该宽法）。",
-      "missing_fact": "纳音（六十甲子纳音名）与柱干支"
+      "missing_fact": "纳音（六十甲子纳音名）与柱干支",
+      "mapped_by": "nayin-ganzhi-map.json",
+      "mapped_note": "t170–t178 施工中已映射（措辞与出处见 mapped_by）。台账原先仍写 unmapped，与规则实际不一致——t181 据实况改正。原 reason_class 保留为历史判定。"
     },
     {
       "book": "luming-nayin/li-xuzhong-mingshu",
       "rule_id": "LIXUZHONGMIN-043",
-      "decision": "unmapped",
+      "decision": "mapped",
       "reason_class": "fact-not-emitted",
       "applicable_to_yaml": "[]",
       "evidence_from_statement": "至阴之水；发于阳明蒸气氤氲；处金木旺而冲刑得炎财盛始贵。",
       "note": "本条取象名「至阴之水」。六十甲子纳音取象条：quote 以干支名领起（如「甲子天官蔵…」），statement 描述该纳音干支组合的取象与宜忌。引擎事实层没有干支/纳音 FactKey（bazi 只发 rizhu 日干、yueling 月支、rizhu_strength、geju、yongshen、shishen、shensha、kongwang）；把该干支映射成 rizhu=<其干> 会把「某干支之纳音」偷换成「日主某干」，既非原文条件，也会误命中该日主的一切盘，属编造，故不映射（同类『干支取象』在仓内已有 rizhu=<干> 的旧映射，本批不沿用该宽法）。",
-      "missing_fact": "纳音（六十甲子纳音名）与柱干支"
+      "missing_fact": "纳音（六十甲子纳音名）与柱干支",
+      "mapped_by": "nayin-ganzhi-map.json",
+      "mapped_note": "t170–t178 施工中已映射（措辞与出处见 mapped_by）。台账原先仍写 unmapped，与规则实际不一致——t181 据实况改正。原 reason_class 保留为历史判定。"
     },
     {
       "book": "luming-nayin/li-xuzhong-mingshu",
       "rule_id": "LIXUZHONGMIN-044",
-      "decision": "unmapped",
+      "decision": "mapped",
       "reason_class": "fact-not-emitted",
       "applicable_to_yaml": "[]",
       "evidence_from_statement": "禄旺育生之水；水火死败禄干自旺财贵会乾方乃富贵；土在旺乡非长久。",
       "note": "本条取象名「禄旺育生之水」。六十甲子纳音取象条：quote 以干支名领起（如「甲子天官蔵…」），statement 描述该纳音干支组合的取象与宜忌。引擎事实层没有干支/纳音 FactKey（bazi 只发 rizhu 日干、yueling 月支、rizhu_strength、geju、yongshen、shishen、shensha、kongwang）；把该干支映射成 rizhu=<其干> 会把「某干支之纳音」偷换成「日主某干」，既非原文条件，也会误命中该日主的一切盘，属编造，故不映射（同类『干支取象』在仓内已有 rizhu=<干> 的旧映射，本批不沿用该宽法）。",
-      "missing_fact": "纳音（六十甲子纳音名）与柱干支"
+      "missing_fact": "纳音（六十甲子纳音名）与柱干支",
+      "mapped_by": "nayin-ganzhi-map.json",
+      "mapped_note": "t170–t178 施工中已映射（措辞与出处见 mapped_by）。台账原先仍写 unmapped，与规则实际不一致——t181 据实况改正。原 reason_class 保留为历史判定。"
     },
     {
       "book": "luming-nayin/li-xuzhong-mingshu",
       "rule_id": "LIXUZHONGMIN-045",
-      "decision": "unmapped",
+      "decision": "mapped",
       "reason_class": "fact-not-emitted",
       "applicable_to_yaml": "[]",
       "evidence_from_statement": "柔顺发生之土；喜临四季得木为荣；独居水火荣方未得尊高。",
       "note": "本条取象名「柔顺发生之土」。六十甲子纳音取象条：quote 以干支名领起（如「甲子天官蔵…」），statement 描述该纳音干支组合的取象与宜忌。引擎事实层没有干支/纳音 FactKey（bazi 只发 rizhu 日干、yueling 月支、rizhu_strength、geju、yongshen、shishen、shensha、kongwang）；把该干支映射成 rizhu=<其干> 会把「某干支之纳音」偷换成「日主某干」，既非原文条件，也会误命中该日主的一切盘，属编造，故不映射（同类『干支取象』在仓内已有 rizhu=<干> 的旧映射，本批不沿用该宽法）。",
-      "missing_fact": "纳音（六十甲子纳音名）与柱干支"
+      "missing_fact": "纳音（六十甲子纳音名）与柱干支",
+      "mapped_by": "nayin-ganzhi-map.json",
+      "mapped_note": "t170–t178 施工中已映射（措辞与出处见 mapped_by）。台账原先仍写 unmapped，与规则实际不一致——t181 据实况改正。原 reason_class 保留为历史判定。"
     },
     {
       "book": "luming-nayin/li-xuzhong-mingshu",
       "rule_id": "LIXUZHONGMIN-046",
-      "decision": "unmapped",
+      "decision": "mapped",
       "reason_class": "fact-not-emitted",
       "applicable_to_yaml": "[]",
       "evidence_from_statement": "子旺母衰之土；喜火土荣庆从革之地；水轻木柔亦滋生之德。",
       "note": "本条取象名「子旺母衰之土」。六十甲子纳音取象条：quote 以干支名领起（如「甲子天官蔵…」），statement 描述该纳音干支组合的取象与宜忌。引擎事实层没有干支/纳音 FactKey（bazi 只发 rizhu 日干、yueling 月支、rizhu_strength、geju、yongshen、shishen、shensha、kongwang）；把该干支映射成 rizhu=<其干> 会把「某干支之纳音」偷换成「日主某干」，既非原文条件，也会误命中该日主的一切盘，属编造，故不映射（同类『干支取象』在仓内已有 rizhu=<干> 的旧映射，本批不沿用该宽法）。",
-      "missing_fact": "纳音（六十甲子纳音名）与柱干支"
+      "missing_fact": "纳音（六十甲子纳音名）与柱干支",
+      "mapped_by": "nayin-ganzhi-map.json",
+      "mapped_note": "t170–t178 施工中已映射（措辞与出处见 mapped_by）。台账原先仍写 unmapped，与规则实际不一致——t181 据实况改正。原 reason_class 保留为历史判定。"
     },
     {
       "book": "luming-nayin/li-xuzhong-mingshu",
       "rule_id": "LIXUZHONGMIN-047",
-      "decision": "unmapped",
+      "decision": "mapped",
       "reason_class": "fact-not-emitted",
       "applicable_to_yaml": "[]",
       "evidence_from_statement": "钝弱成用之金；火轻金重魁罡相乘可休逸福禄；忌木火极则迍蹇。",
       "note": "本条取象名「钝弱成用之金」。六十甲子纳音取象条：quote 以干支名领起（如「甲子天官蔵…」），statement 描述该纳音干支组合的取象与宜忌。引擎事实层没有干支/纳音 FactKey（bazi 只发 rizhu 日干、yueling 月支、rizhu_strength、geju、yongshen、shishen、shensha、kongwang）；把该干支映射成 rizhu=<其干> 会把「某干支之纳音」偷换成「日主某干」，既非原文条件，也会误命中该日主的一切盘，属编造，故不映射（同类『干支取象』在仓内已有 rizhu=<干> 的旧映射，本批不沿用该宽法）。",
-      "missing_fact": "纳音（六十甲子纳音名）与柱干支"
+      "missing_fact": "纳音（六十甲子纳音名）与柱干支",
+      "mapped_by": "nayin-ganzhi-map.json",
+      "mapped_note": "t170–t178 施工中已映射（措辞与出处见 mapped_by）。台账原先仍写 unmapped，与规则实际不一致——t181 据实况改正。原 reason_class 保留为历史判定。"
     },
     {
       "book": "luming-nayin/li-xuzhong-mingshu",
       "rule_id": "LIXUZHONGMIN-048",
-      "decision": "unmapped",
+      "decision": "mapped",
       "reason_class": "fact-not-emitted",
       "applicable_to_yaml": "[]",
       "evidence_from_statement": "木旺禄休之金；得平火之革制于克伐；金水冲击得平安守职。",
       "note": "本条取象名「木旺禄休之金」。六十甲子纳音取象条：quote 以干支名领起（如「甲子天官蔵…」），statement 描述该纳音干支组合的取象与宜忌。引擎事实层没有干支/纳音 FactKey（bazi 只发 rizhu 日干、yueling 月支、rizhu_strength、geju、yongshen、shishen、shensha、kongwang）；把该干支映射成 rizhu=<其干> 会把「某干支之纳音」偷换成「日主某干」，既非原文条件，也会误命中该日主的一切盘，属编造，故不映射（同类『干支取象』在仓内已有 rizhu=<干> 的旧映射，本批不沿用该宽法）。",
-      "missing_fact": "纳音（六十甲子纳音名）与柱干支"
+      "missing_fact": "纳音（六十甲子纳音名）与柱干支",
+      "mapped_by": "nayin-ganzhi-map.json",
+      "mapped_note": "t170–t178 施工中已映射（措辞与出处见 mapped_by）。台账原先仍写 unmapped，与规则实际不一致——t181 据实况改正。原 reason_class 保留为历史判定。"
     },
     {
       "book": "luming-nayin/li-xuzhong-mingshu",
       "rule_id": "LIXUZHONGMIN-049",
-      "decision": "unmapped",
+      "decision": "mapped",
       "reason_class": "fact-not-emitted",
       "applicable_to_yaml": "[]",
       "evidence_from_statement": "体柔用刚之木；居旺相得金遇贵地无火可扬名当世。",
       "note": "本条取象名「体柔用刚之木」。六十甲子纳音取象条：quote 以干支名领起（如「甲子天官蔵…」），statement 描述该纳音干支组合的取象与宜忌。引擎事实层没有干支/纳音 FactKey（bazi 只发 rizhu 日干、yueling 月支、rizhu_strength、geju、yongshen、shishen、shensha、kongwang）；把该干支映射成 rizhu=<其干> 会把「某干支之纳音」偷换成「日主某干」，既非原文条件，也会误命中该日主的一切盘，属编造，故不映射（同类『干支取象』在仓内已有 rizhu=<干> 的旧映射，本批不沿用该宽法）。",
-      "missing_fact": "纳音（六十甲子纳音名）与柱干支"
+      "missing_fact": "纳音（六十甲子纳音名）与柱干支",
+      "mapped_by": "nayin-ganzhi-map.json",
+      "mapped_note": "t170–t178 施工中已映射（措辞与出处见 mapped_by）。台账原先仍写 unmapped，与规则实际不一致——t181 据实况改正。原 reason_class 保留为历史判定。"
     },
     {
       "book": "luming-nayin/li-xuzhong-mingshu",
       "rule_id": "LIXUZHONGMIN-050",
-      "decision": "unmapped",
+      "decision": "mapped",
       "reason_class": "fact-not-emitted",
       "applicable_to_yaml": "[]",
       "evidence_from_statement": "刚柔相济之木；水土承旺方生育利物；金制生成皆可立功。",
       "note": "本条取象名「刚柔相济之木」。六十甲子纳音取象条：quote 以干支名领起（如「甲子天官蔵…」），statement 描述该纳音干支组合的取象与宜忌。引擎事实层没有干支/纳音 FactKey（bazi 只发 rizhu 日干、yueling 月支、rizhu_strength、geju、yongshen、shishen、shensha、kongwang）；把该干支映射成 rizhu=<其干> 会把「某干支之纳音」偷换成「日主某干」，既非原文条件，也会误命中该日主的一切盘，属编造，故不映射（同类『干支取象』在仓内已有 rizhu=<干> 的旧映射，本批不沿用该宽法）。",
-      "missing_fact": "纳音（六十甲子纳音名）与柱干支"
+      "missing_fact": "纳音（六十甲子纳音名）与柱干支",
+      "mapped_by": "nayin-ganzhi-map.json",
+      "mapped_note": "t170–t178 施工中已映射（措辞与出处见 mapped_by）。台账原先仍写 unmapped，与规则实际不一致——t181 据实况改正。原 reason_class 保留为历史判定。"
     },
     {
       "book": "luming-nayin/li-xuzhong-mingshu",
       "rule_id": "LIXUZHONGMIN-051",
-      "decision": "unmapped",
+      "decision": "mapped",
       "reason_class": "fact-not-emitted",
       "applicable_to_yaml": "[]",
       "evidence_from_statement": "渊深处静之水；资以木旺土衰则奇特贵异。",
       "note": "本条取象名「渊深处静之水」。六十甲子纳音取象条：quote 以干支名领起（如「甲子天官蔵…」），statement 描述该纳音干支组合的取象与宜忌。引擎事实层没有干支/纳音 FactKey（bazi 只发 rizhu 日干、yueling 月支、rizhu_strength、geju、yongshen、shishen、shensha、kongwang）；把该干支映射成 rizhu=<其干> 会把「某干支之纳音」偷换成「日主某干」，既非原文条件，也会误命中该日主的一切盘，属编造，故不映射（同类『干支取象』在仓内已有 rizhu=<干> 的旧映射，本批不沿用该宽法）。",
-      "missing_fact": "纳音（六十甲子纳音名）与柱干支"
+      "missing_fact": "纳音（六十甲子纳音名）与柱干支",
+      "mapped_by": "nayin-ganzhi-map.json",
+      "mapped_note": "t170–t178 施工中已映射（措辞与出处见 mapped_by）。台账原先仍写 unmapped，与规则实际不一致——t181 据实况改正。原 reason_class 保留为历史判定。"
     },
     {
       "book": "luming-nayin/li-xuzhong-mingshu",
       "rule_id": "LIXUZHONGMIN-052",
-      "decision": "unmapped",
+      "decision": "mapped",
       "reason_class": "fact-not-emitted",
       "applicable_to_yaml": "[]",
       "evidence_from_statement": "死中受气之水；败无妨；会源于音地未有不达；喜土而清。",
       "note": "本条取象名「死中受气之水」。六十甲子纳音取象条：quote 以干支名领起（如「甲子天官蔵…」），statement 描述该纳音干支组合的取象与宜忌。引擎事实层没有干支/纳音 FactKey（bazi 只发 rizhu 日干、yueling 月支、rizhu_strength、geju、yongshen、shishen、shensha、kongwang）；把该干支映射成 rizhu=<其干> 会把「某干支之纳音」偷换成「日主某干」，既非原文条件，也会误命中该日主的一切盘，属编造，故不映射（同类『干支取象』在仓内已有 rizhu=<干> 的旧映射，本批不沿用该宽法）。",
-      "missing_fact": "纳音（六十甲子纳音名）与柱干支"
+      "missing_fact": "纳音（六十甲子纳音名）与柱干支",
+      "mapped_by": "nayin-ganzhi-map.json",
+      "mapped_note": "t170–t178 施工中已映射（措辞与出处见 mapped_by）。台账原先仍写 unmapped，与规则实际不一致——t181 据实况改正。原 reason_class 保留为历史判定。"
     },
     {
       "book": "luming-nayin/li-xuzhong-mingshu",
       "rule_id": "LIXUZHONGMIN-053",
-      "decision": "unmapped",
+      "decision": "mapped",
       "reason_class": "fact-not-emitted",
       "applicable_to_yaml": "[]",
       "evidence_from_statement": "发施养生之土；喜火助不畏掩冲自然荣贵。",
       "note": "本条取象名「发施养生之土」。六十甲子纳音取象条：quote 以干支名领起（如「甲子天官蔵…」），statement 描述该纳音干支组合的取象与宜忌。引擎事实层没有干支/纳音 FactKey（bazi 只发 rizhu 日干、yueling 月支、rizhu_strength、geju、yongshen、shishen、shensha、kongwang）；把该干支映射成 rizhu=<其干> 会把「某干支之纳音」偷换成「日主某干」，既非原文条件，也会误命中该日主的一切盘，属编造，故不映射（同类『干支取象』在仓内已有 rizhu=<干> 的旧映射，本批不沿用该宽法）。",
-      "missing_fact": "纳音（六十甲子纳音名）与柱干支"
+      "missing_fact": "纳音（六十甲子纳音名）与柱干支",
+      "mapped_by": "nayin-ganzhi-map.json",
+      "mapped_note": "t170–t178 施工中已映射（措辞与出处见 mapped_by）。台账原先仍写 unmapped，与规则实际不一致——t181 据实况改正。原 reason_class 保留为历史判定。"
     },
     {
       "book": "luming-nayin/li-xuzhong-mingshu",
       "rule_id": "LIXUZHONGMIN-054",
-      "decision": "unmapped",
+      "decision": "mapped",
       "reason_class": "fact-not-emitted",
       "applicable_to_yaml": "[]",
       "evidence_from_statement": "绝中受气之土；喜土助不畏死败；朝命建元可文章妙选。",
       "note": "本条取象名「绝中受气之土」。六十甲子纳音取象条：quote 以干支名领起（如「甲子天官蔵…」），statement 描述该纳音干支组合的取象与宜忌。引擎事实层没有干支/纳音 FactKey（bazi 只发 rizhu 日干、yueling 月支、rizhu_strength、geju、yongshen、shishen、shensha、kongwang）；把该干支映射成 rizhu=<其干> 会把「某干支之纳音」偷换成「日主某干」，既非原文条件，也会误命中该日主的一切盘，属编造，故不映射（同类『干支取象』在仓内已有 rizhu=<干> 的旧映射，本批不沿用该宽法）。",
-      "missing_fact": "纳音（六十甲子纳音名）与柱干支"
+      "missing_fact": "纳音（六十甲子纳音名）与柱干支",
+      "mapped_by": "nayin-ganzhi-map.json",
+      "mapped_note": "t170–t178 施工中已映射（措辞与出处见 mapped_by）。台账原先仍写 unmapped，与规则实际不一致——t181 据实况改正。原 reason_class 保留为历史判定。"
     },
     {
       "book": "luming-nayin/li-xuzhong-mingshu",
       "rule_id": "LIXUZHONGMIN-055",
-      "decision": "unmapped",
+      "decision": "mapped",
       "reason_class": "fact-not-emitted",
       "applicable_to_yaml": "[]",
       "evidence_from_statement": "神发离明之火；旺中受绝喜木助衰方忌火乘已旺生；应此必魁英。",
       "note": "本条取象名「神发离明之火」。六十甲子纳音取象条：quote 以干支名领起（如「甲子天官蔵…」），statement 描述该纳音干支组合的取象与宜忌。引擎事实层没有干支/纳音 FactKey（bazi 只发 rizhu 日干、yueling 月支、rizhu_strength、geju、yongshen、shishen、shensha、kongwang）；把该干支映射成 rizhu=<其干> 会把「某干支之纳音」偷换成「日主某干」，既非原文条件，也会误命中该日主的一切盘，属编造，故不映射（同类『干支取象』在仓内已有 rizhu=<干> 的旧映射，本批不沿用该宽法）。",
-      "missing_fact": "纳音（六十甲子纳音名）与柱干支"
+      "missing_fact": "纳音（六十甲子纳音名）与柱干支",
+      "mapped_by": "nayin-ganzhi-map.json",
+      "mapped_note": "t170–t178 施工中已映射（措辞与出处见 mapped_by）。台账原先仍写 unmapped，与规则实际不一致——t181 据实况改正。原 reason_class 保留为历史判定。"
     },
     {
       "book": "luming-nayin/li-xuzhong-mingshu",
       "rule_id": "LIXUZHONGMIN-056",
-      "decision": "unmapped",
+      "decision": "mapped",
       "reason_class": "fact-not-emitted",
       "applicable_to_yaml": "[]",
       "evidence_from_statement": "成功之火；得季夏炎阳守小吉；甲己扶持不须更旺。",
       "note": "本条取象名「成功之火」。六十甲子纳音取象条：quote 以干支名领起（如「甲子天官蔵…」），statement 描述该纳音干支组合的取象与宜忌。引擎事实层没有干支/纳音 FactKey（bazi 只发 rizhu 日干、yueling 月支、rizhu_strength、geju、yongshen、shishen、shensha、kongwang）；把该干支映射成 rizhu=<其干> 会把「某干支之纳音」偷换成「日主某干」，既非原文条件，也会误命中该日主的一切盘，属编造，故不映射（同类『干支取象』在仓内已有 rizhu=<干> 的旧映射，本批不沿用该宽法）。",
-      "missing_fact": "纳音（六十甲子纳音名）与柱干支"
+      "missing_fact": "纳音（六十甲子纳音名）与柱干支",
+      "mapped_by": "nayin-ganzhi-map.json",
+      "mapped_note": "t170–t178 施工中已映射（措辞与出处见 mapped_by）。台账原先仍写 unmapped，与规则实际不一致——t181 据实况改正。原 reason_class 保留为历史判定。"
     },
     {
       "book": "luming-nayin/li-xuzhong-mingshu",
       "rule_id": "LIXUZHONGMIN-057",
-      "decision": "unmapped",
+      "decision": "mapped",
       "reason_class": "fact-not-emitted",
       "applicable_to_yaml": "[]",
       "evidence_from_statement": "未坚柔末之木；春相夏旺金重得火土重得水则出常之器。",
       "note": "本条取象名「未坚柔末之木」。六十甲子纳音取象条：quote 以干支名领起（如「甲子天官蔵…」），statement 描述该纳音干支组合的取象与宜忌。引擎事实层没有干支/纳音 FactKey（bazi 只发 rizhu 日干、yueling 月支、rizhu_strength、geju、yongshen、shishen、shensha、kongwang）；把该干支映射成 rizhu=<其干> 会把「某干支之纳音」偷换成「日主某干」，既非原文条件，也会误命中该日主的一切盘，属编造，故不映射（同类『干支取象』在仓内已有 rizhu=<干> 的旧映射，本批不沿用该宽法）。",
-      "missing_fact": "纳音（六十甲子纳音名）与柱干支"
+      "missing_fact": "纳音（六十甲子纳音名）与柱干支",
+      "mapped_by": "nayin-ganzhi-map.json",
+      "mapped_note": "t170–t178 施工中已映射（措辞与出处见 mapped_by）。台账原先仍写 unmapped，与规则实际不一致——t181 据实况改正。原 reason_class 保留为历史判定。"
     },
     {
       "book": "luming-nayin/li-xuzhong-mingshu",
       "rule_id": "LIXUZHONGMIN-058",
-      "decision": "unmapped",
+      "decision": "mapped",
       "reason_class": "fact-not-emitted",
       "applicable_to_yaml": "[]",
       "evidence_from_statement": "包秀结英之木；喜生旺忌见金多；土水相乘为物之贵。",
       "note": "本条取象名「包秀结英之木」。六十甲子纳音取象条：quote 以干支名领起（如「甲子天官蔵…」），statement 描述该纳音干支组合的取象与宜忌。引擎事实层没有干支/纳音 FactKey（bazi 只发 rizhu 日干、yueling 月支、rizhu_strength、geju、yongshen、shishen、shensha、kongwang）；把该干支映射成 rizhu=<其干> 会把「某干支之纳音」偷换成「日主某干」，既非原文条件，也会误命中该日主的一切盘，属编造，故不映射（同类『干支取象』在仓内已有 rizhu=<干> 的旧映射，本批不沿用该宽法）。",
-      "missing_fact": "纳音（六十甲子纳音名）与柱干支"
+      "missing_fact": "纳音（六十甲子纳音名）与柱干支",
+      "mapped_by": "nayin-ganzhi-map.json",
+      "mapped_note": "t170–t178 施工中已映射（措辞与出处见 mapped_by）。台账原先仍写 unmapped，与规则实际不一致——t181 据实况改正。原 reason_class 保留为历史判定。"
     },
     {
       "book": "luming-nayin/li-xuzhong-mingshu",
       "rule_id": "LIXUZHONGMIN-059",
-      "decision": "unmapped",
+      "decision": "mapped",
       "reason_class": "fact-not-emitted",
       "applicable_to_yaml": "[]",
       "evidence_from_statement": "杳之水；喜死败要土之击发能博施之功及物。",
       "note": "本条取象名「杳之水」。六十甲子纳音取象条：quote 以干支名领起（如「甲子天官蔵…」），statement 描述该纳音干支组合的取象与宜忌。引擎事实层没有干支/纳音 FactKey（bazi 只发 rizhu 日干、yueling 月支、rizhu_strength、geju、yongshen、shishen、shensha、kongwang）；把该干支映射成 rizhu=<其干> 会把「某干支之纳音」偷换成「日主某干」，既非原文条件，也会误命中该日主的一切盘，属编造，故不映射（同类『干支取象』在仓内已有 rizhu=<干> 的旧映射，本批不沿用该宽法）。",
-      "missing_fact": "纳音（六十甲子纳音名）与柱干支"
+      "missing_fact": "纳音（六十甲子纳音名）与柱干支",
+      "mapped_by": "nayin-ganzhi-map.json",
+      "mapped_note": "t170–t178 施工中已映射（措辞与出处见 mapped_by）。台账原先仍写 unmapped，与规则实际不一致——t181 据实况改正。原 reason_class 保留为历史判定。"
     },
     {
       "book": "luming-nayin/li-xuzhong-mingshu",
       "rule_id": "LIXUZHONGMIN-060",
-      "decision": "unmapped",
+      "decision": "mapped",
       "reason_class": "fact-not-emitted",
       "applicable_to_yaml": "[]",
       "evidence_from_statement": "始进成终之水；喜逢贵地忌在禄乡；不可守常须升雨雾散江河乃大用。",
       "note": "本条取象名「始进成终之水」。六十甲子纳音取象条：quote 以干支名领起（如「甲子天官蔵…」），statement 描述该纳音干支组合的取象与宜忌。引擎事实层没有干支/纳音 FactKey（bazi 只发 rizhu 日干、yueling 月支、rizhu_strength、geju、yongshen、shishen、shensha、kongwang）；把该干支映射成 rizhu=<其干> 会把「某干支之纳音」偷换成「日主某干」，既非原文条件，也会误命中该日主的一切盘，属编造，故不映射（同类『干支取象』在仓内已有 rizhu=<干> 的旧映射，本批不沿用该宽法）。",
-      "missing_fact": "纳音（六十甲子纳音名）与柱干支"
+      "missing_fact": "纳音（六十甲子纳音名）与柱干支",
+      "mapped_by": "nayin-ganzhi-map.json",
+      "mapped_note": "t170–t178 施工中已映射（措辞与出处见 mapped_by）。台账原先仍写 unmapped，与规则实际不一致——t181 据实况改正。原 reason_class 保留为历史判定。"
     },
     {
       "book": "luming-nayin/li-xuzhong-mingshu",
@@ -620,11 +736,13 @@
     {
       "book": "luming-nayin/li-xuzhong-mingshu",
       "rule_id": "LIXUZHONGMIN-070",
-      "decision": "unmapped",
+      "decision": "mapped",
       "reason_class": "not-a-condition",
       "applicable_to_yaml": "[]",
       "evidence_from_statement": "寅午戌火体、亥卯未木体、申子辰水体、巳酉丑金体；土则从四事成之。",
-      "note": "三合局体表（寅午戌火体、亥卯未木体、申子辰水体、巳酉丑金体，土从四事成之）：作业书点名「三合组合表」属 not-a-condition。"
+      "note": "三合局体表（寅午戌火体、亥卯未木体、申子辰水体、巳酉丑金体，土从四事成之）：作业书点名「三合组合表」属 not-a-condition。",
+      "mapped_by": "branch-group-map.json",
+      "mapped_note": "t170–t178 施工中已映射（措辞与出处见 mapped_by）。台账原先仍写 unmapped，与规则实际不一致——t181 据实况改正。原 reason_class 保留为历史判定。"
     },
     {
       "book": "luming-nayin/li-xuzhong-mingshu",
@@ -787,12 +905,14 @@
     {
       "book": "luming-nayin/li-xuzhong-mingshu",
       "rule_id": "LIXUZHONGMIN-LX-01",
-      "decision": "unmapped",
+      "decision": "mapped",
       "reason_class": "fact-not-emitted",
       "applicable_to_yaml": "[]",
       "evidence_from_statement": "库墓守财之金；不嫌鬼旺、喜禄财；水土砥砺亦可成器。",
       "note": "本条取象名「库墓守财之金」。六十甲子纳音取象条：quote 以干支名领起（如「甲子天官蔵…」），statement 描述该纳音干支组合的取象与宜忌。引擎事实层没有干支/纳音 FactKey（bazi 只发 rizhu 日干、yueling 月支、rizhu_strength、geju、yongshen、shishen、shensha、kongwang）；把该干支映射成 rizhu=<其干> 会把「某干支之纳音」偷换成「日主某干」，既非原文条件，也会误命中该日主的一切盘，属编造，故不映射（同类『干支取象』在仓内已有 rizhu=<干> 的旧映射，本批不沿用该宽法）。",
-      "missing_fact": "纳音（六十甲子纳音名）与柱干支"
+      "missing_fact": "纳音（六十甲子纳音名）与柱干支",
+      "mapped_by": "nayin-ganzhi-map.json",
+      "mapped_note": "t170–t178 施工中已映射（措辞与出处见 mapped_by）。台账原先仍写 unmapped，与规则实际不一致——t181 据实况改正。原 reason_class 保留为历史判定。"
     },
     {
       "book": "luming-nayin/li-xuzhong-mingshu",
@@ -852,12 +972,14 @@
     {
       "book": "luming-nayin/li-xuzhong-mingshu",
       "rule_id": "LX-01",
-      "decision": "unmapped",
+      "decision": "mapped",
       "reason_class": "fact-not-emitted",
       "applicable_to_yaml": "[]",
       "evidence_from_statement": "子旺母衰之金，溺水下韬光，须假火革；命入贵格明暗取官。",
       "note": "本条取象名「子旺母衰之金，溺水下韬光，须」。六十甲子纳音取象条：quote 以干支名领起（如「甲子天官蔵…」），statement 描述该纳音干支组合的取象与宜忌。引擎事实层没有干支/纳音 FactKey（bazi 只发 rizhu 日干、yueling 月支、rizhu_strength、geju、yongshen、shishen、shensha、kongwang）；把该干支映射成 rizhu=<其干> 会把「某干支之纳音」偷换成「日主某干」，既非原文条件，也会误命中该日主的一切盘，属编造，故不映射（同类『干支取象』在仓内已有 rizhu=<干> 的旧映射，本批不沿用该宽法）。",
-      "missing_fact": "纳音（六十甲子纳音名）与柱干支"
+      "missing_fact": "纳音（六十甲子纳音名）与柱干支",
+      "mapped_by": "nayin-ganzhi-map.json",
+      "mapped_note": "t170–t178 施工中已映射（措辞与出处见 mapped_by）。台账原先仍写 unmapped，与规则实际不一致——t181 据实况改正。原 reason_class 保留为历史判定。"
     },
     {
       "book": "luming-nayin/li-xuzhong-mingshu",
@@ -1528,12 +1650,14 @@
     {
       "book": "luming-nayin/yuzhao-shenying",
       "rule_id": "YUZHAOSHENYI-040",
-      "decision": "unmapped",
+      "decision": "mapped",
       "reason_class": "fact-not-emitted",
       "applicable_to_yaml": "[]",
       "evidence_from_statement": "五行三合局齐者(木亥卯未/火寅午戌/金巳酉丑/水申子辰)俱旺主富贵。",
       "note": "「全逢本卦」＝纳音命得本家三合卦（木得亥卯未、火得寅午戌、金得巳酉丑、水得申子辰）更犯旺相者富贵；须纳音命与三合局地支，引擎无纳音、无各柱地支。",
-      "missing_fact": "纳音本命五行与三合局地支"
+      "missing_fact": "纳音本命五行与三合局地支",
+      "mapped_by": "branch-group-map.json",
+      "mapped_note": "t170–t178 施工中已映射（措辞与出处见 mapped_by）。台账原先仍写 unmapped，与规则实际不一致——t181 据实况改正。原 reason_class 保留为历史判定。"
     },
     {
       "book": "luming-nayin/yuzhao-shenying",

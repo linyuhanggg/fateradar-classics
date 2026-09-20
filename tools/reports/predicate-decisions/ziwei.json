@@ -61,10 +61,17 @@
     {
       "book": "ziwei/ziwei-doushu-quanshu",
       "rule_id": "ZIWEIDOUSHUQ-ZW-04",
-      "decision": "mapped",
+      "decision": "reverted",
       "applicable_to_yaml": "{all_of: [{key: ziwei_star, value: 紫微, scope: {palace: 兄弟}}]}",
       "evidence_from_statement": "兄弟宫主兄弟姐妹与同辈关系",
-      "note": "原文的盘面入口是「兄弟宫」+ 该宫星曜吉凶；本条 anchor 引文正是讨论兄弟宫中紫微（及天府/天相/破军）同度。取 紫微 在兄弟宫 作为该条与本盘相关的可判入口。「庙旺/落陷」亮度未产出，不写入。"
+      "note": "原文的盘面入口是「兄弟宫」+ 该宫星曜吉凶；本条 anchor 引文正是讨论兄弟宫中紫微（及天府/天相/破军）同度。取 紫微 在兄弟宫 作为该条与本盘相关的可判入口。「庙旺/落陷」亮度未产出，不写入。",
+      "reason_class": "not-a-condition",
+      "reverted_by": "captain-audit.json",
+      "reverted_why": [
+        "statement 是「兄弟宫主兄弟姐妹与同辈关系」的通则，不含任何星名——本条对任何盘都应适用。",
+        "映射的星名「紫微」只出现在 quote 的举例句（「紫微有倚靠年長之兄…」）里，拿例文当适用条件会把通则收窄成「紫微坐兄弟宫才适用」，改变了原文适用范围。"
+      ],
+      "reverted_note": "本条曾被作业书判为 mapped，t168 复核后**撤回**：理由见 reverted_why。台账原先仍写 mapped，与规则实际为空不一致——t181 据 captain-audit 改正。"
     },
     {
       "book": "ziwei/ziwei-doushu-quanshu",
@@ -272,10 +279,18 @@
     {
       "book": "ziwei/taiwei-fu",
       "rule_id": "TAIWEIFU-021",
-      "decision": "mapped",
+      "decision": "reverted",
       "evidence_from_statement": "帝星动则列宿奔驰；贪守空而财源不聚",
       "note": "本条四个分句里只有两句能落到 FactKey：帝星=紫微（原文同篇前句「觀乎紫微舍躔…帝星動則列宿奔馳」所指即紫微）；贪=贪狼（贪守空）。土星/金星不是紫微本门星曜名（泛称，非紫微星曜），且「居其垣若可移动」「最怕空亡」无盘面定义，故不写入。谓词覆盖原文写明的两个可判对象，不为其补条件。",
-      "applicable_to_yaml": "{any_of: [{key: ziwei_star, value: 紫微}, {key: ziwei_star, value: 贪狼}]}"
+      "applicable_to_yaml": "{any_of: [{key: ziwei_star, value: 紫微}, {key: ziwei_star, value: 贪狼}]}",
+      "reason_class": "not-a-condition",
+      "reverted_by": "captain-audit.json",
+      "reverted_why": [
+        "quote 的断辞是「土星苟居其垣，若可移動；金星專司財庫，最怕空亡」——两个主语（土星/金星）都不是本门星曜名，无法表达。",
+        "映射取的「紫微」来自 quote 前半句「觀乎紫微舍躔…率列宿而成垣」，那是起景，不是判辞；「贪」来自后半句「貪守空而財源不聚」，其判据「守空」引擎未产出。",
+        "取景 + 半句拼出来的适用条件是失真，按作业书 partial-only 口径宁留空。"
+      ],
+      "reverted_note": "本条曾被作业书判为 mapped，t168 复核后**撤回**：理由见 reverted_why。台账原先仍写 mapped，与规则实际为空不一致——t181 据 captain-audit 改正。"
     },
     {
       "book": "ziwei/feixing-ziwei-doushu-yuanzhi",
