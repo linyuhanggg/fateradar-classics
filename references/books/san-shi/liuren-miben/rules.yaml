@@ -306,7 +306,7 @@ rules:
     start_line: 5533
     end_line: 5533
   quote: 時下無傷猶獲寶，支干俱損不如歸凡求財，傳中見財易求，無才難取；龍居日本財堪覓。
-  applicable_to: []
+  applicable_to: [{key: tianjiang, value: 青龙, scope: {palace: 日上}}, {key: liuqin, value: 妻财, scope: {palace: 初传}}, {key: liuqin, value: 妻财, scope: {palace: 中传}}, {key: liuqin, value: 妻财, scope: {palace: 末传}}]
   caveats:
   - 原文要求日上位置；当前天将事实仅表示入三传，尚未表达日上天将及传中财的条件，因此暂不自动匹配本条。
   - 此段不支持只凭青龙出现便保证获财，也未论原概括所称凶将不能推翻旺相财爻。

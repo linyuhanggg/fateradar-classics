@@ -259,6 +259,8 @@ def legal_pred_value(key: str, value: str, values: dict[str, list[str]], any_tok
 # ── 谓词语言 v3（复合条件／嵌套／多事实联合／同位置绑定）────────────────────────
 # 契约见 docs/PREDICATE-LANGUAGE-V3.md。旧平铺列表语义不变（仍是 any_of）。
 SCOPE_FIELDS = ("layer", "pillar", "palace", "gong", "yao")
+# 六壬课传位置（引擎 pushScoped 实际产出的取值）。
+LIU_REN_POSITIONS = ("日上", "辰上", "初传", "中传", "末传")
 GROUP_FIELDS = ("any_of", "all_of", "none_of", "same")
 FACT_LAYERS = ("本命", "大运", "流年", "流月", "流日")
 PILLAR_KEYS = ("year", "month", "day", "time")
@@ -377,10 +379,22 @@ def _validate_predicate(pred, *, loc: str, ctx: "_PredCtx") -> None:
                     rule_id=ctx.rule_id,
                     book=ctx.book,
                 )
+        elif ctx.book.startswith(("san-shi/liuren-", "san-shi/daliuren-")):
+            # 六壬的「位置」不是宫而是课传位置：日上／辰上／初传／中传／末传。
+            # `liuren.ts` 的 pushScoped 已按这些位置产出 tianjiang / liuqin / kongwang，
+            # 谓词必须能引用它们——否则「青龙居日上」这类条件永远写不出来
+            # （引擎自带的 unknown `LR-UNKNOWN-MIBEN-021-WIRE` 正是这句话）。
+            if not isinstance(palace, str) or palace not in LIU_REN_POSITIONS:
+                reporter.add(
+                    "V16",
+                    f"{loc}: palace {palace!r} 不在六壬位置取值内（{'／'.join(LIU_REN_POSITIONS)}）",
+                    rule_id=ctx.rule_id,
+                    book=ctx.book,
+                )
         else:
             reporter.add(
                 "V15",
-                f"{loc}: 只有 ziwei（十二宫）与 xingming（十二宫位）规则可以写 scope.palace",
+                f"{loc}: 只有 ziwei（十二宫）、xingming（宫位）与六壬（课传位置）规则可以写 scope.palace",
                 rule_id=ctx.rule_id,
                 book=ctx.book,
             )

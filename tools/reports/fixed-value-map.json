@@ -1,0 +1,30 @@
+[
+ {
+  "book": "bazi/sanming-tonghui",
+  "rule_id": "R-06",
+  "applicable_to_yaml": "{any_of: [{all_of: [{key: gan, value: 庚, scope: {pillar: day}}, {key: zhi, value: 辰, scope: {pillar: day}}]}, {all_of: [{key: gan, value: 庚, scope: {pillar: day}}, {key: zhi, value: 戌, scope: {pillar: day}}]}, {all_of: [{key: gan, value: 壬, scope: {pillar: day}}, {key: zhi, value: 辰, scope: {pillar: day}}]}, {all_of: [{key: gan, value: 戊, scope: {pillar: day}}, {key: zhi, value: 戌, scope: {pillar: day}}]}]}",
+  "evidence_from_statement": "庚辰、庚戌、壬辰、戊戌为魁罡日",
+  "note": "四对皆日柱；「忌见财官」是断语不是条件，未表达。"
+ },
+ {
+  "book": "bazi/sanming-tonghui",
+  "rule_id": "SANMINGTONGH-097",
+  "applicable_to_yaml": "{any_of: [{all_of: [{key: gan, value: 甲, scope: {pillar: day}}, {key: zhi, value: 寅, scope: {pillar: day}}]}, {all_of: [{key: gan, value: 乙, scope: {pillar: day}}, {key: zhi, value: 卯, scope: {pillar: day}}]}, {all_of: [{key: gan, value: 丁, scope: {pillar: day}}, {key: zhi, value: 未, scope: {pillar: day}}]}, {all_of: [{key: gan, value: 己, scope: {pillar: day}}, {key: zhi, value: 未, scope: {pillar: day}}]}, {all_of: [{key: gan, value: 庚, scope: {pillar: day}}, {key: zhi, value: 申, scope: {pillar: day}}]}, {all_of: [{key: gan, value: 辛, scope: {pillar: day}}, {key: zhi, value: 酉, scope: {pillar: day}}]}, {all_of: [{key: gan, value: 壬, scope: {pillar: day}}, {key: zhi, value: 子, scope: {pillar: day}}]}, {all_of: [{key: gan, value: 癸, scope: {pillar: day}}, {key: zhi, value: 丑, scope: {pillar: day}}]}]}",
+  "evidence_from_statement": "八专日（甲寅、乙卯、丁未、己未、庚申、辛酉、壬子、癸丑）",
+  "note": "八对皆日柱；「日坐禄旺之地，身强为论；以月令它格为用」是断语，未表达。"
+ },
+ {
+  "book": "san-shi/liuren-miben",
+  "rule_id": "LIURENMIBEN-021",
+  "applicable_to_yaml": "[{key: tianjiang, value: 青龙, scope: {palace: 日上}}, {key: liuqin, value: 妻财, scope: {palace: 初传}}, {key: liuqin, value: 妻财, scope: {palace: 中传}}, {key: liuqin, value: 妻财, scope: {palace: 末传}}]",
+  "evidence_from_statement": "参看传中是否见财，以及青龙是否居日上",
+  "note": "平铺列表＝或：二选一（传中见财 / 青龙居日上）。引擎自带 unknown `LR-UNKNOWN-MIBEN-021-WIRE` 说「规则 applicableTo 仍为空」，本条即那次接线。"
+ },
+ {
+  "book": "bazi/sanming-tonghui",
+  "rule_id": "SANMINGTONGH-004",
+  "applicable_to_yaml": "[{key: nayin, value: 海中金}]",
+  "evidence_from_statement": "论海中金须配合所见火、水、木、土等条件",
+  "note": "本条即「具名纳音」条件；**t170 产出的 `nayin` 事实此前无谓词使用，本条是第一个**。"
+ }
+]

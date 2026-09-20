@@ -83,7 +83,7 @@ rules:
     子見庚午坎離相濟見辛未官星帶貴乙丑見庚午官貴互換甲子見戊寅絶地逢生見己卯天干合化乙丑見戊寅亦絶地逢生見己卯則歸祿帶財餘土又當仍分年上祿馬貴人方准沙土埋金誠不宜見有火亦不吉柱中逢金砂鑞原未成器海中又未成器彼此無益故無火不宜劒釵已成器金相見有助
 
     玅選謂之脱體化神主貴泊金亦好如甲子見甲子乙丑見乙丑同類相資柱中喜見一寅見戊寅謂之崑山片玉如甲子見乙丑謂之干支連珠非得火煉不可即子平金神格之義也'
-  applicable_to: []
+  applicable_to: [{key: nayin, value: 海中金}]
   caveats:
   - 本段只讨论海中金，并非完整六十甲子性格表。
   - 古代纳音吉凶说法不直接转成现代健康、寿命或职业结论。
@@ -1083,7 +1083,7 @@ rules:
   statement: 庚辰、庚戌、壬辰、戊戌为魁罡日；性烈刚强、聪明果决；忌见财官。
   anchor: {file: sources/fulltext/bazi/sanming-tonghui/fulltext.md, start_line: 9417, end_line: 9417}
   quote: 年傷日干名為本主不和
-  applicable_to: []
+  applicable_to: {any_of: [{all_of: [{key: gan, value: 庚, scope: {pillar: day}}, {key: zhi, value: 辰, scope: {pillar: day}}]}, {all_of: [{key: gan, value: 庚, scope: {pillar: day}}, {key: zhi, value: 戌, scope: {pillar: day}}]}, {all_of: [{key: gan, value: 壬, scope: {pillar: day}}, {key: zhi, value: 辰, scope: {pillar: day}}]}, {all_of: [{key: gan, value: 戊, scope: {pillar: day}}, {key: zhi, value: 戌, scope: {pillar: day}}]}]}
   caveats:
   - 魁罡多则贵
   - 财官杂之则破格
@@ -1907,7 +1907,7 @@ rules:
     start_line: 9713
     end_line: 9713
   quote: 〔支干同類如甲寅乙卯丙午丁未庚申辛酉壬子癸丑戊午己未戊戌己丑是也行運會煞必主不祿以其恃強與煞相争煞竟尅身故也〕
-  applicable_to: []
+  applicable_to: {any_of: [{all_of: [{key: gan, value: 甲, scope: {pillar: day}}, {key: zhi, value: 寅, scope: {pillar: day}}]}, {all_of: [{key: gan, value: 乙, scope: {pillar: day}}, {key: zhi, value: 卯, scope: {pillar: day}}]}, {all_of: [{key: gan, value: 丁, scope: {pillar: day}}, {key: zhi, value: 未, scope: {pillar: day}}]}, {all_of: [{key: gan, value: 己, scope: {pillar: day}}, {key: zhi, value: 未, scope: {pillar: day}}]}, {all_of: [{key: gan, value: 庚, scope: {pillar: day}}, {key: zhi, value: 申, scope: {pillar: day}}]}, {all_of: [{key: gan, value: 辛, scope: {pillar: day}}, {key: zhi, value: 酉, scope: {pillar: day}}]}, {all_of: [{key: gan, value: 壬, scope: {pillar: day}}, {key: zhi, value: 子, scope: {pillar: day}}]}, {all_of: [{key: gan, value: 癸, scope: {pillar: day}}, {key: zhi, value: 丑, scope: {pillar: day}}]}]}
   caveats:
   - 八专日身强需看是否过旺无制
   - 过旺需食伤、财、官为用

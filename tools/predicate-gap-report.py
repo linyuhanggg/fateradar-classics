@@ -110,7 +110,18 @@ ART_EMIT_KEYS: dict[str, frozenset[str]] = {
             "kongwang",
         }
     ),
-    "liuren": frozenset({"keti", "sanchuan", "tianjiang", "yuejiang", "kongwang"}),
+    "liuren": frozenset(
+        {
+            "keti",
+            "sanchuan",
+            "tianjiang",
+            # 三传所乘六亲：`liuren.ts` 的 pushScoped 已产出（盘面样本实测有
+            # scope.palace=初传/中传/末传 的 liuqin），此前只是没登记进本表。
+            "liuqin",
+            "yuejiang",
+            "kongwang",
+        }
+    ),
     "liuyao": frozenset(
         {
             "shiyao",

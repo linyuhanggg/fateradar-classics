@@ -206,6 +206,40 @@ def main() -> int:
         if rc != 0 or codes:
             fail(f"legal v3 group should PASS, rc={rc} codes={codes} out={out[:800]}")
         print("reverse13 OK legal v3 group accepted")
+
+        # reverse14：六壬 scope.palace 只接受课传位置（日上/辰上/初传/中传/末传）。
+        LIUREN_BOOK = "san-shi/liuren-miben"
+        LIUREN_YAML = ROOT / "references/books" / LIUREN_BOOK / "rules.yaml"
+        lr_orig = LIUREN_YAML.read_text(encoding="utf-8")
+        try:
+            illegal_palace = lr_orig.replace(
+                "applicable_to: []",
+                "applicable_to: [{key: tianjiang, value: 青龙, scope: {palace: 伪位置}}]",
+                1,
+            )
+            if illegal_palace == lr_orig:
+                fail("reverse14: could not inject liuren palace")
+            LIUREN_YAML.write_text(illegal_palace, encoding="utf-8")
+            rc, out = run_validate(["--book", LIUREN_BOOK, "--json"])
+            payload = json.loads(out[out.find("{") :]) if "{" in out else {}
+            codes = [e.get("code") for e in payload.get("errors") or []]
+            if rc == 0 or "V16" not in codes:
+                fail(f"reverse14: illegal liuren palace should V16 FAIL, rc={rc} codes={codes}")
+            # 正例：合法课传位置必须通过
+            legal_palace = lr_orig.replace(
+                "applicable_to: []",
+                "applicable_to: [{key: tianjiang, value: 青龙, scope: {palace: 日上}}]",
+                1,
+            )
+            LIUREN_YAML.write_text(legal_palace, encoding="utf-8")
+            rc, out = run_validate(["--book", LIUREN_BOOK, "--json"])
+            payload = json.loads(out[out.find("{") :]) if "{" in out else {}
+            codes = [e.get("code") for e in payload.get("errors") or []]
+            if rc != 0 or codes:
+                fail(f"reverse14: legal liuren palace should PASS, rc={rc} codes={codes}")
+        finally:
+            LIUREN_YAML.write_text(lr_orig, encoding="utf-8")
+        print("reverse14 OK V16 liuren palace (非法红／合法绿)")
     finally:
         YAML.write_text(yaml_orig, encoding="utf-8")
         FULLTEXT.write_text(ft_orig, encoding="utf-8")
