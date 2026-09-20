@@ -8,7 +8,10 @@
       "book": "divination/zengshan-buyi",
       "rule_id": "ZR-09",
       "statement": "归魂卦——主回归、还原；游魂卦——主漂泊、不定；问行人、问出行尤宜参看。",
-      "concept_in_statement": ["归魂卦", "游魂卦"],
+      "concept_in_statement": [
+        "归魂卦",
+        "游魂卦"
+      ],
       "evidence": {
         "anchor": "sources/fulltext/divination/zengshan-buyi/fulltext.md L5410-L5410",
         "quote_contains_concept": false,
@@ -16,13 +19,15 @@
         "correspondence": 0.3,
         "quote_is_verbatim_slice_of_anchor": true
       },
-      "note": "锚定原文讲的是出行／世爻，通篇无归魂、游魂二字。"
+      "note": "锚定原文讲出行／世爻，通篇无归魂、游魂二字。"
     },
     {
       "book": "divination/zengshan-buyi",
       "rule_id": "ZR-13",
       "statement": "占出行——以世爻为身；忌世动入墓 / 入空 / 受冲克；游魂卦不宜远行。",
-      "concept_in_statement": ["游魂卦"],
+      "concept_in_statement": [
+        "游魂卦"
+      ],
       "evidence": {
         "anchor": "sources/fulltext/divination/zengshan-buyi/fulltext.md L5410-L5410",
         "quote_contains_concept": false,
@@ -36,7 +41,9 @@
       "book": "divination/zengshan-buyi",
       "rule_id": "ZENGSHANBUYI-ZR-13",
       "statement": "占行人归否——以应爻 / 远人之爻为用；用动来生世 / 临归魂——速归；用入墓入空——未归。",
-      "concept_in_statement": ["归魂"],
+      "concept_in_statement": [
+        "归魂"
+      ],
       "evidence": {
         "anchor": "sources/fulltext/divination/zengshan-buyi/fulltext.md L1967-L1967",
         "quote_contains_concept": false,
@@ -47,10 +54,19 @@
       "note": "锚定原文讲用神动克世／静生世的迟速，不含归魂。"
     }
   ],
-  "disposition": "三条**保持 applicable_to: []**。本轮已把 `liuyao_seq`（世序／游魂／归魂）事实产出，本可立刻映射这三条；因上述证据而不映射。要收口需在古籍侧先解决 statement↔anchor 不符（改锚到真正讲归魂／游魂的原文，或把 statement 标为编者综述）。",
+  "disposition": "三条**保持 applicable_to: []**。t173 已把 `liuyao_seq`（世序／游魂／归魂）事实产出，本可立刻映射这三条；因 statement 无据而不映射。",
   "related_negative": {
     "what": "不能拿 references/vocab/terms.yaml 当「概念落地」的权威判据",
     "evidence": "1023 条里 791 条 kind=imported，含整句（如「日柱及其纳音条文语义。」）；且条目 fact_key 是**分术**的，例如「六合」→ fact_key: bashen（奇门六合神），而六爻规则要的是地支六合——照它套会串术。",
     "consequence": "要做得精确，须先把 terms 里 curated 的 285 条（star/god/shensha/element/ke/palace/door/cycle/bazi-structure）与 791 条 imported 分开，属另一笔。"
+  },
+  "t177_correction": {
+    "what": "更正 t173 里「改锚到真正讲归魂／游魂的原文」这一提法——**本版电子文本里没有那样的正文**。",
+    "how_established": [
+      "全文有「歸魂遊魂章第又二十六」**章题两处**（L188 目录、L361 正文标题）；但 L361 之后紧接着的是下一章「月破章第二十七」，**该章没有正文**。",
+      "断语用词在全文出现次数：漂泊 0、飄泊 0、回歸 0、回归 0、還原 0、还原 0。",
+      "全文确有「歸魂」7 行（L65/L67/L188/L361/L573/L7722 等），但都是**结构定义与取法**（如 L7722「歸魂卦爲各宮之第八卦，如乾宮中之火天大有」、L67「歸魂卦世在三爻」），不是「主回归／主漂泊」这类**断语**。"
+    ],
+    "consequence": "这三条的判定内容在本版**没有可锚的正文**：既不能改锚（无处可锚），也不该照 statement 写谓词。正确处置是把 statement 标为**编者综述**（或换版本重做），属人判；机器不擅自改 statement／quote／anchor。"
   }
 }

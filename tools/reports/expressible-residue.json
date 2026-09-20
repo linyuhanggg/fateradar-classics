@@ -1,0 +1,236 @@
+{
+  "report": "机械判为「本可表达」但经复核仍不映射的残留（30 条）",
+  "generated_by": "t177",
+  "why": "`predicate-gap-report.py` 的 classify() 只按「statement 里能否复原出该 art 的 FactKey 取值」判，对散文式古籍**精度很低**：术名本身（六爻）、同义值域（dongyao/shiyao/yingyao 共享爻位）都会造成假命中。本台账把当前 30 条假命中逐条复核并给出理由类别，**避免后续轮次反复重判同一批**。",
+  "caveat": "理由是人工判定，不是机器判决；语言或事实一旦变化（如将来产出性别、大运干支、格局名），本台账的对应条目**应被重新评估并从台账移除**。测试会检查台账条目是否仍未被映射。",
+  "reason_classes": {
+    "declares-no-single-condition": "原文自己说不能凭单一条件断，映射会窄化它",
+    "needs-gender": "需要性别事实（本仓无 gender key）",
+    "needs-dayun-liunian-ganzhi": "需要大运／流年干支事实（未产出）",
+    "needs-cross-key-equality": "需跨键取值相等（v3 的 same 只绑 scope 字段，不绑取值）",
+    "zero-discrimination": "零区分度：该取值在每一盘上都成立（如六爻每盘都有全部六亲）",
+    "equation-table": "取象表／类象映射，不是盘面适用条件",
+    "derivation-method": "取法（怎么取），不是「何时适用」",
+    "needs-counting": "需计数条件（如恰一爻动）",
+    "needs-relation": "需关系判定（入墓／合冲／三合等）未产出",
+    "ungrounded": "statement 断言的概念在本版锚定原文里不存在（本版该章无正文）",
+    "gate-blocked": "事实已齐，但只能写成存在性通配；会撞 15% 通配闸门（需授权）",
+    "partial-only": "只可部分表达，部分映射会失真（其余条件未产出）",
+    "statement-declines": "原文自陈「仅作语义参考，不作硬判断输入」",
+    "scope-narrowing": "照 statement 写会把通则收窄（t168 已撤回同款）",
+    "needs-geju": "需要格局名事实（未产出）",
+    "meta-rule": "pack 元规则，不是盘面条件"
+  },
+  "entries": [
+    {
+      "art": "bazi",
+      "rule_id": "DITIANSUICHA-022",
+      "triage_kind": "single-pair",
+      "reason_class": "declares-no-single-condition",
+      "reason": "原文自己说不能凭单一条件断，映射会窄化它"
+    },
+    {
+      "art": "bazi",
+      "rule_id": "DR-05",
+      "triage_kind": "multi-pair-same-key",
+      "reason_class": "needs-gender",
+      "reason": "需要性别事实（本仓无 gender key）"
+    },
+    {
+      "art": "bazi",
+      "rule_id": "DITIANSUICHA-038",
+      "triage_kind": "single-pair",
+      "reason_class": "needs-gender",
+      "reason": "需要性别事实（本仓无 gender key）"
+    },
+    {
+      "art": "bazi",
+      "rule_id": "SANMINGTONGH-011",
+      "triage_kind": "single-pair",
+      "reason_class": "needs-dayun-liunian-ganzhi",
+      "reason": "需要大运／流年干支事实（未产出）"
+    },
+    {
+      "art": "bazi",
+      "rule_id": "SANMINGTONGH-033",
+      "triage_kind": "single-pair",
+      "reason_class": "needs-cross-key-equality",
+      "reason": "需跨键取值相等（v3 的 same 只绑 scope 字段，不绑取值）"
+    },
+    {
+      "art": "liuyao",
+      "rule_id": "HJC-R007",
+      "triage_kind": "multi-pair-same-key",
+      "reason_class": "equation-table",
+      "reason": "取象表／类象映射，不是盘面适用条件"
+    },
+    {
+      "art": "liuyao",
+      "rule_id": "HJC-R009",
+      "triage_kind": "single-pair",
+      "reason_class": "zero-discrimination",
+      "reason": "零区分度：该取值在每一盘上都成立（如六爻每盘都有全部六亲）"
+    },
+    {
+      "art": "liuyao",
+      "rule_id": "HZL-R001",
+      "triage_kind": "multi-pair-same-key",
+      "reason_class": "zero-discrimination",
+      "reason": "零区分度：该取值在每一盘上都成立（如六爻每盘都有全部六亲）"
+    },
+    {
+      "art": "liuyao",
+      "rule_id": "ZR-03",
+      "triage_kind": "multi-pair-same-key",
+      "reason_class": "derivation-method",
+      "reason": "取法（怎么取），不是「何时适用」"
+    },
+    {
+      "art": "liuyao",
+      "rule_id": "ZR-04",
+      "triage_kind": "single-pair",
+      "reason_class": "zero-discrimination",
+      "reason": "零区分度：该取值在每一盘上都成立（如六爻每盘都有全部六亲）"
+    },
+    {
+      "art": "liuyao",
+      "rule_id": "ZENGSHANBUYI-021",
+      "triage_kind": "single-pair",
+      "reason_class": "needs-counting",
+      "reason": "需计数条件（如恰一爻动）"
+    },
+    {
+      "art": "liuyao",
+      "rule_id": "ZENGSHANBUYI-031",
+      "triage_kind": "single-pair",
+      "reason_class": "needs-relation",
+      "reason": "需关系判定（入墓／合冲／三合等）未产出"
+    },
+    {
+      "art": "liuyao",
+      "rule_id": "ZR-09",
+      "triage_kind": "multi-pair-same-key",
+      "reason_class": "ungrounded",
+      "reason": "statement 断言的概念在本版锚定原文里不存在（本版该章无正文）"
+    },
+    {
+      "art": "liuyao",
+      "rule_id": "ZR-13",
+      "triage_kind": "single-pair",
+      "reason_class": "ungrounded",
+      "reason": "statement 断言的概念在本版锚定原文里不存在（本版该章无正文）"
+    },
+    {
+      "art": "liuyao",
+      "rule_id": "ZENGSHANBUYI-ZR-13",
+      "triage_kind": "single-pair",
+      "reason_class": "ungrounded",
+      "reason": "statement 断言的概念在本版锚定原文里不存在（本版该章无正文）"
+    },
+    {
+      "art": "liuyao",
+      "rule_id": "ZR-16",
+      "triage_kind": "multi-pair-same-key",
+      "reason_class": "zero-discrimination",
+      "reason": "零区分度：该取值在每一盘上都成立（如六爻每盘都有全部六亲）"
+    },
+    {
+      "art": "liuyao",
+      "rule_id": "ZR-17",
+      "triage_kind": "single-pair",
+      "reason_class": "zero-discrimination",
+      "reason": "零区分度：该取值在每一盘上都成立（如六爻每盘都有全部六亲）"
+    },
+    {
+      "art": "liuren",
+      "rule_id": "DALIURENDAQU-012",
+      "triage_kind": "single-pair",
+      "reason_class": "derivation-method",
+      "reason": "取法（怎么取），不是「何时适用」"
+    },
+    {
+      "art": "liuren",
+      "rule_id": "DALIURENDAQU-014",
+      "triage_kind": "single-pair",
+      "reason_class": "partial-only",
+      "reason": "只可部分表达，部分映射会失真（其余条件未产出）"
+    },
+    {
+      "art": "qimen",
+      "rule_id": "QM-P01",
+      "triage_kind": "single-pair",
+      "reason_class": "gate-blocked",
+      "reason": "事实已齐，但只能写成存在性通配；会撞 15% 通配闸门（需授权）"
+    },
+    {
+      "art": "qimen",
+      "rule_id": "QM-P02",
+      "triage_kind": "single-pair",
+      "reason_class": "gate-blocked",
+      "reason": "事实已齐，但只能写成存在性通配；会撞 15% 通配闸门（需授权）"
+    },
+    {
+      "art": "qimen",
+      "rule_id": "QM-P31",
+      "triage_kind": "single-pair",
+      "reason_class": "gate-blocked",
+      "reason": "事实已齐，但只能写成存在性通配；会撞 15% 通配闸门（需授权）"
+    },
+    {
+      "art": "qizheng",
+      "rule_id": "GUOTIANJING-GR-01",
+      "triage_kind": "multi-pair-same-key",
+      "reason_class": "equation-table",
+      "reason": "取象表／类象映射，不是盘面适用条件"
+    },
+    {
+      "art": "qizheng",
+      "rule_id": "GUOTIANJING-004",
+      "triage_kind": "multi-pair-same-key",
+      "reason_class": "statement-declines",
+      "reason": "原文自陈「仅作语义参考，不作硬判断输入」"
+    },
+    {
+      "art": "qizheng",
+      "rule_id": "GUOTIANJING-005",
+      "triage_kind": "single-pair",
+      "reason_class": "derivation-method",
+      "reason": "取法（怎么取），不是「何时适用」"
+    },
+    {
+      "art": "ziwei",
+      "rule_id": "FEIXINGZIWEI-003",
+      "triage_kind": "multi-key",
+      "reason_class": "meta-rule",
+      "reason": "pack 元规则，不是盘面条件"
+    },
+    {
+      "art": "ziwei",
+      "rule_id": "ZW",
+      "triage_kind": "multi-key",
+      "reason_class": "equation-table",
+      "reason": "取象表／类象映射，不是盘面适用条件"
+    },
+    {
+      "art": "ziwei",
+      "rule_id": "ZW-04",
+      "triage_kind": "multi-key",
+      "reason_class": "needs-geju",
+      "reason": "需要格局名事实（未产出）"
+    },
+    {
+      "art": "ziwei",
+      "rule_id": "ZIWEIDOUSHUQ-ZW-04",
+      "triage_kind": "multi-key",
+      "reason_class": "scope-narrowing",
+      "reason": "照 statement 写会把通则收窄（t168 已撤回同款）"
+    },
+    {
+      "art": "ziwei",
+      "rule_id": "ZW-05",
+      "triage_kind": "multi-key",
+      "reason_class": "needs-geju",
+      "reason": "需要格局名事实（未产出）"
+    }
+  ]
+}
