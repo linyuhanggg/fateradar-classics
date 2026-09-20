@@ -156,6 +156,32 @@ def main() -> int:
         31,
     )
 
+    print("D. t173：值符／值使落宫事实接上后，两条记录应可判")
+    check(
+        "  zhifu.palace 已接到 zhifu",
+        ee.lookup_field("zhifu.palace")[0],
+        "zhifu",
+    )
+    check("  timedry.palace 已接到 zhishi", ee.lookup_field("timedry.palace")[0], "zhishi")
+    by_id = {r["id"]: r for r in data["results"]}
+    for rid in ("QMD-E-01", "QMD-E-02"):
+        check(f"  {rid} 不再是信息不足", by_id.get(rid, {}).get("verdict") != "信息不足", True)
+    check(
+        "  两者置信度为 1.0（引用字段全部可判）",
+        [by_id[r]["confidence"] for r in ("QMD-E-01", "QMD-E-02")],
+        [1.0, 1.0],
+    )
+    check(
+        "  且 zhifu/zhishi 确实带 scope.gong（事实层证据）",
+        all(
+            f.get("scope", {}).get("gong") is not None
+            for c in json.loads((ROOT / "tools/reports/facts-sample.json").read_text(encoding="utf-8"))["qimen"].values()
+            for f in c["facts"]
+            if f["key"] in ("zhifu", "zhishi")
+        ),
+        True,
+    )
+
     if FAILED:
         print(f"\n{len(FAILED)} 项失败:", file=sys.stderr)
         for f in FAILED:

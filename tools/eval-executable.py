@@ -80,8 +80,10 @@ FIELD_MAP: dict[str, tuple[str, dict | None, str]] = {
     "star.palace": ("xingyao", None, "某曜所落宫位：xingyao 事实自带 scope.palace"),
     "sun.palace": ("xingyao", {"value": "太阳"}, "太阳所落宫位"),
     # 接不上的（如实登记，不凑近似名）
-    "zhifu.palace": (None, None, "值符所落之宫：引擎未产出（QMD-E-01 的三态因此不可判）"),
-    "timedry.palace": (None, None, "值使所落之宫：引擎未产出"),
+    # t173 起 zhifu / zhishi 事实带上 scope.gong（值符星落宫 / 值使门落宫，
+    # 取自引擎已有的 layout.starPalace / layout.doorPalace）。
+    "zhifu.palace": ("zhifu", None, "值符所落之宫：t173 起 zhifu 事实带 scope.gong"),
+    "timedry.palace": ("zhishi", None, "值使所落之宫：t173 起 zhishi 事实带 scope.gong"),
     "positions": (None, None, "六爻位置总名：未产出（引擎产出的是 shiyao/yingyao/dongyao 分名）"),
     "four.ke": (None, None, "四课：引擎未产出"),
     "shehai.method": (None, None, "涉害取法：引擎未产出"),

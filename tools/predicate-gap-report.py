@@ -111,7 +111,18 @@ ART_EMIT_KEYS: dict[str, frozenset[str]] = {
         }
     ),
     "liuren": frozenset({"keti", "sanchuan", "tianjiang", "yuejiang", "kongwang"}),
-    "liuyao": frozenset({"shiyao", "yingyao", "liuqin", "liushen", "fushen", "dongyao"}),
+    "liuyao": frozenset(
+        {
+            "shiyao",
+            "yingyao",
+            "liuqin",
+            "liushen",
+            "fushen",
+            "dongyao",
+            # 世序／卦体分类（本宫…游魂／归魂）：引擎 main.sequence 直接透传。
+            "liuyao_seq",
+        }
+    ),
     "qizheng": frozenset({"xingyao", "gongwei", "xiudu", "miaowang"}),
 }
 
@@ -255,6 +266,62 @@ def load_ledgers() -> dict[tuple[str, str], dict]:
     return out
 
 
+# 事实缺口归因：**分诊线索，不是判决**。只用来给「下一批做什么」排序。
+# 归类依据是台账里那句手写的「需要的事实」文本。**分类带 art 约束**——否则会出现
+# 「八字条目的『时干』被归到奇门」这类串档（初版实测过）。
+FACT_GAP_RULES: tuple[tuple[str, tuple[str, ...], tuple[str, ...]], ...] = (
+    # (标签, 关键词, 适用 art；空＝不限)
+    ("六爻：月建日辰／变卦变爻／爻位", ("月建", "日辰", "变爻", "变卦", "六冲", "六合", "入墓", "卦名", "旺衰", "空亡", "世爻", "应爻", "互卦"), ("liuyao",)),
+    ("奇门：天地盘干／值符值使落宫／时干", ("值符", "直使", "三奇", "天盘干", "地盘干", "六庚", "乙奇", "时干", "六壬临", "六癸"), ("qimen",)),
+    ("六壬：四课／课体细节／驿马", ("四课", "驿马", "天将落宫", "遥克", "上下克", "课体"), ("liuren",)),
+    ("梅花：体用生克", ("体卦", "用卦", "体用", "互卦"), ("meihua", "yili")),
+    ("纳音：象辞与纳音名", ("纳音",), ()),
+    ("神煞：具体名与取法", ("神煞", "关煞", "德干", "秀干", "元辰"), ()),
+    ("地支关系：三合局／方局／冲合", ("三合", "方局", "相冲", "六冲", "自刑", "下克上"), ()),
+    ("柱干支：时／岁／月／日柱", ("岁干", "月干", "日干", "时干", "柱干", "日支", "月支", "时支", "年支", "柱干支", "天干类", "藏干"), ()),
+    ("格局／行限／亮度", ("格局", "行限", "虚星", "三方四正", "亮度"), ()),
+    ("大运／流年干支", ("大运", "流年"), ()),
+    ("性别（女命／男命）", ("性别", "女命", "男命"), ()),
+)
+
+
+def fact_gap_summary(rows: list[dict]) -> list[tuple[str, list[dict]]]:
+    """把**当前仍未映射**且台账判为 fact-not-emitted 的规则按缺口归因分组。
+
+    必须按 live `applicable_to` 过滤：台账是当时的过程记录，此后被映射掉的条目
+    仍写着 fact-not-emitted，不过滤会把已完成的算成待办。
+    """
+    ledgers = load_ledgers()
+    idx = {}
+    for p in sorted((ROOT / "references/books").glob("*/*/rules.yaml")):
+        d = yaml.safe_load(p.read_text(encoding="utf-8"))
+        b = d.get("book") or {}
+        k = f"{b.get('system')}/{b.get('slug')}"
+        for r in d.get("rules") or []:
+            if isinstance(r, dict):
+                idx[(k, r.get("rule_id"))] = r
+    groups: dict[str, list[dict]] = {}
+    for r in rows:
+        d = ledgers.get((r["book"], r["rule_id"]))
+        if not d or d.get("reason_class") != "fact-not-emitted":
+            continue
+        live = idx.get((r["book"], r["rule_id"]))
+        if live is None or (live.get("applicable_to") or []):
+            continue
+        text = (d.get("missing_fact") or "") + " " + (d.get("note") or "")
+        label = "其他／未归类"
+        for name, keys, arts in FACT_GAP_RULES:
+            if arts and r["art"] not in arts:
+                continue
+            if any(k in text for k in keys):
+                label = name
+                break
+        groups.setdefault(label, []).append(
+            {"rule_id": r["rule_id"], "book": r["book"], "art": r["art"], "missing": (d.get("missing_fact") or "")[:60]}
+        )
+    return sorted(groups.items(), key=lambda kv: -len(kv[1]))
+
+
 REASON_LABEL = {
     "not-a-condition": "原文无盘面适用条件（通论／体例／取象表／起例取法）",
     "meta-rule": "pack 元规则／调用条件，不是盘面条件",
@@ -342,6 +409,7 @@ def main() -> int:
     ap.add_argument("--art", default=None, help="只看某一术")
     ap.add_argument("-v", "--verbose", action="store_true", help="逐条打印 statement")
     ap.add_argument("--md", default=None, help="把报告写回该 markdown 路径（可复算）")
+    ap.add_argument("--fact-gaps", action="store_true", help="按「需要的事实」给当前未映射规则排序（下批优先级）")
     args = ap.parse_args()
 
     data = collect()
@@ -352,6 +420,20 @@ def main() -> int:
     by_art: dict[str, Counter] = {}
     for r in rows:
         by_art.setdefault(r["art"], Counter())[r["kind"]] += 1
+
+    if args.fact_gaps:
+        groups = fact_gap_summary(rows)
+        total = sum(len(v) for _, v in groups)
+        print(f"当前仍为 fact-not-emitted 的未映射规则 {total} 条（已按 live applicable_to 过滤）")
+        if args.json:
+            json.dump({"total": total, "groups": {k: v for k, v in groups}}, sys.stdout, ensure_ascii=False, indent=2)
+            sys.stdout.write("\n")
+            return 0
+        for name, items in groups:
+            print(f"\n{len(items):4}  {name}")
+            for it in items[:3]:
+                print(f"        {it['rule_id']:20} {it['missing']}")
+        return 0
 
     if args.md:
         write_markdown(rows, path=(ROOT / args.md) if not Path(args.md).is_absolute() else Path(args.md))

@@ -3554,7 +3554,8 @@
           "key": "zhifu",
           "value": "天柱",
           "scope": {
-            "layer": "本命"
+            "layer": "本命",
+            "gong": 2
           },
           "derivedFrom": [
             "meta.值符"
@@ -3564,7 +3565,8 @@
           "key": "zhishi",
           "value": "惊门",
           "scope": {
-            "layer": "本命"
+            "layer": "本命",
+            "gong": 4
           },
           "derivedFrom": [
             "meta.值使"
@@ -4121,7 +4123,8 @@
           "key": "zhifu",
           "value": "天禽",
           "scope": {
-            "layer": "本命"
+            "layer": "本命",
+            "gong": 2
           },
           "derivedFrom": [
             "meta.值符"
@@ -4131,7 +4134,8 @@
           "key": "zhishi",
           "value": "死门",
           "scope": {
-            "layer": "本命"
+            "layer": "本命",
+            "gong": 2
           },
           "derivedFrom": [
             "meta.值使"
@@ -5607,6 +5611,16 @@
       "label": "乾宫本宫安静 111111 · 甲 1990-08-15",
       "facts": [
         {
+          "key": "liuyao_seq",
+          "value": "本宫",
+          "scope": {
+            "layer": "本命"
+          },
+          "derivedFrom": [
+            "main.sequence"
+          ]
+        },
+        {
           "key": "liuqin",
           "value": "子孙",
           "scope": {
@@ -5765,6 +5779,16 @@
     "caseB": {
       "label": "地天泰初爻动 111000 · 乙 1984-02-04",
       "facts": [
+        {
+          "key": "liuyao_seq",
+          "value": "三世",
+          "scope": {
+            "layer": "本命"
+          },
+          "derivedFrom": [
+            "main.sequence"
+          ]
+        },
         {
           "key": "liuqin",
           "value": "妻财",

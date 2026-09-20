@@ -108,7 +108,18 @@ ART_EMIT_KEYS: dict[str, frozenset[str]] = {
         }
     ),
     "liuren": frozenset({"keti", "sanchuan", "tianjiang", "yuejiang", "kongwang"}),
-    "liuyao": frozenset({"shiyao", "yingyao", "liuqin", "liushen", "fushen", "dongyao"}),
+    "liuyao": frozenset(
+        {
+            "shiyao",
+            "yingyao",
+            "liuqin",
+            "liushen",
+            "fushen",
+            "dongyao",
+            # 世序／卦体分类（本宫…游魂／归魂）：引擎 main.sequence 直接透传。
+            "liuyao_seq",
+        }
+    ),
     "qizheng": frozenset({"xingyao", "gongwei", "xiudu", "miaowang"}),
 }
 

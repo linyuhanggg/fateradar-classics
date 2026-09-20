@@ -1,0 +1,56 @@
+{
+  "report": "statement 与锚定原文不符的条目（机器实测）",
+  "generated_by": "t173",
+  "why": "谓词只许照 statement 写；若 statement 断言的**概念**在其锚定原文里根本不出现，那么照它写出的谓词就是把无据断言打扮成有据。本轮因此**拒绝**映射下列三条。",
+  "method": "取 statement 里的概念词（以 卦/格/课/局/煞 结尾），在 fold_han 归一后的**锚定行区间**与 quote 中查找；再看 V14 对应度。仅列**逐条人工复核过**的条目——机器批量判据（后缀启发式）在本库噪声过大（初版 292 个命中里绝大多数是「的命局」「须按命局」这类散文残片），故不作为工具出货。",
+  "entries": [
+    {
+      "book": "divination/zengshan-buyi",
+      "rule_id": "ZR-09",
+      "statement": "归魂卦——主回归、还原；游魂卦——主漂泊、不定；问行人、问出行尤宜参看。",
+      "concept_in_statement": ["归魂卦", "游魂卦"],
+      "evidence": {
+        "anchor": "sources/fulltext/divination/zengshan-buyi/fulltext.md L5410-L5410",
+        "quote_contains_concept": false,
+        "anchored_line_contains_concept": false,
+        "correspondence": 0.3,
+        "quote_is_verbatim_slice_of_anchor": true
+      },
+      "note": "锚定原文讲的是出行／世爻，通篇无归魂、游魂二字。"
+    },
+    {
+      "book": "divination/zengshan-buyi",
+      "rule_id": "ZR-13",
+      "statement": "占出行——以世爻为身；忌世动入墓 / 入空 / 受冲克；游魂卦不宜远行。",
+      "concept_in_statement": ["游魂卦"],
+      "evidence": {
+        "anchor": "sources/fulltext/divination/zengshan-buyi/fulltext.md L5410-L5410",
+        "quote_contains_concept": false,
+        "anchored_line_contains_concept": false,
+        "correspondence": 0.591,
+        "quote_is_verbatim_slice_of_anchor": true
+      },
+      "note": "与 ZR-09 同锚同行；该行不含游魂。"
+    },
+    {
+      "book": "divination/zengshan-buyi",
+      "rule_id": "ZENGSHANBUYI-ZR-13",
+      "statement": "占行人归否——以应爻 / 远人之爻为用；用动来生世 / 临归魂——速归；用入墓入空——未归。",
+      "concept_in_statement": ["归魂"],
+      "evidence": {
+        "anchor": "sources/fulltext/divination/zengshan-buyi/fulltext.md L1967-L1967",
+        "quote_contains_concept": false,
+        "anchored_line_contains_concept": false,
+        "correspondence": 0.522,
+        "quote_is_verbatim_slice_of_anchor": true
+      },
+      "note": "锚定原文讲用神动克世／静生世的迟速，不含归魂。"
+    }
+  ],
+  "disposition": "三条**保持 applicable_to: []**。本轮已把 `liuyao_seq`（世序／游魂／归魂）事实产出，本可立刻映射这三条；因上述证据而不映射。要收口需在古籍侧先解决 statement↔anchor 不符（改锚到真正讲归魂／游魂的原文，或把 statement 标为编者综述）。",
+  "related_negative": {
+    "what": "不能拿 references/vocab/terms.yaml 当「概念落地」的权威判据",
+    "evidence": "1023 条里 791 条 kind=imported，含整句（如「日柱及其纳音条文语义。」）；且条目 fact_key 是**分术**的，例如「六合」→ fact_key: bashen（奇门六合神），而六爻规则要的是地支六合——照它套会串术。",
+    "consequence": "要做得精确，须先把 terms 里 curated 的 285 条（star/god/shensha/element/ke/palace/door/cycle/bazi-structure）与 791 条 imported 分开，属另一笔。"
+  }
+}
