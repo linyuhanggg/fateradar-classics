@@ -438,11 +438,13 @@ def main() -> int:
     if args.fact_gaps:
         groups = fact_gap_summary(rows)
         total = sum(len(v) for _, v in groups)
-        print(f"当前仍为 fact-not-emitted 的未映射规则 {total} 条（已按 live applicable_to 过滤）")
         if args.json:
+            # --json 时**不得**先 print：那会把抬头混进 stdout，让下游 json.load 解析失败
+            # （本工具初版即如此，被自己的调用方抓到）。
             json.dump({"total": total, "groups": {k: v for k, v in groups}}, sys.stdout, ensure_ascii=False, indent=2)
             sys.stdout.write("\n")
             return 0
+        print(f"当前仍为 fact-not-emitted 的未映射规则 {total} 条（已按 live applicable_to 过滤）")
         for name, items in groups:
             print(f"\n{len(items):4}  {name}")
             for it in items[:3]:
