@@ -189,7 +189,11 @@ def collect() -> dict:
 
 
 def load_ledgers() -> dict[tuple[str, str], dict]:
-    """把各 art 的判定台账读成 (book, rule_id) → decision。台账是过程记录，缺失不报错。"""
+    """把各 art 的判定台账读成 (book, rule_id) → decision。台账是过程记录，缺失不报错。
+
+    `captain-audit.json` 的 `reverted` 列表是**权威覆盖**：复核撤回的条目以 captain 结论为准，
+    但不改写各 art 台账原件（保留「谁在什么阶段判了什么」的可追溯性）。
+    """
     out: dict[tuple[str, str], dict] = {}
     for path in sorted((ROOT / "tools/reports/predicate-decisions").glob("*.json")):
         if path.name == "captain-audit.json":
@@ -202,6 +206,26 @@ def load_ledgers() -> dict[tuple[str, str], dict]:
             key = (row.get("book"), row.get("rule_id"))
             if key[0] and key[1]:
                 out[key] = {**row, "_ledger": path.name}
+
+    audit_path = ROOT / "tools/reports/predicate-decisions/captain-audit.json"
+    if audit_path.is_file():
+        try:
+            audit = json.loads(audit_path.read_text(encoding="utf-8"))
+        except json.JSONDecodeError:
+            audit = {}
+        for row in audit.get("reverted") or []:
+            key = (row.get("book"), row.get("rule_id"))
+            if not (key[0] and key[1]):
+                continue
+            prev = out.get(key, {})
+            out[key] = {
+                **prev,
+                "decision": "unmapped",
+                "reason_class": row.get("reason_class") or "not-a-condition",
+                "note": f"captain 复核撤回（原映射：{row.get('was')}）",
+                "_ledger": "captain-audit.json",
+                "_reverted_from": row.get("was"),
+            }
     return out
 
 

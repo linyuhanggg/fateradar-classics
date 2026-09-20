@@ -37,8 +37,38 @@
         "statement 是「兄弟宫主兄弟姐妹与同辈关系」的通则，不含任何星名——本条对任何盘都应适用。",
         "映射的星名「紫微」只出现在 quote 的举例句（「紫微有倚靠年長之兄…」）里，拿例文当适用条件会把通则收窄成「紫微坐兄弟宫才适用」，改变了原文适用范围。"
       ]
+    },
+    {
+      "book": "divination/zengshan-buyi",
+      "rule_id": "ZR-04",
+      "was": "{any_of: [{key: liuqin, value: 父母}]}",
+      "now": [],
+      "reason_class": "not-a-condition",
+      "why": [
+        "原文是「取用神取法」（占父母则取父母爻为用神），属于「怎么取用神」，不是「何时适用本条」。",
+        "零区分度实测：六爻每一盘都含全部六亲（facts-sample caseA 5/5、caseB 4/5+1 伏神），故 {liuqin: <任意值>} 对任何盘恒真，没有筛选作用，属枚举凑数的同一后果。",
+        "后果实测：这一映射与 HZL-R001 一起把产品仓 liuyao 两盘 top-6 压成同一集合（predicate-matching 断言红），即证据面板退化为与盘面无关。"
+      ]
+    },
+    {
+      "book": "divination/huozhu-lin",
+      "rule_id": "HZL-R001",
+      "was": "{any_of: [{key: liuqin, value: 官鬼}, {key: liuqin, value: 妻财}, {key: liuqin, value: 父母}, {key: liuqin, value: 子孙}]}",
+      "now": [],
+      "reason_class": "not-a-condition",
+      "why": [
+        "同为取用神取法（公用取官鬼、私用取妻财…），不是盘面适用条件。",
+        "枚举 5 个六亲中的 4 个，而六爻每盘都有全部六亲 ⇒ 恒真、零区分度，是作业书禁止的枚举凑数。",
+        "该条 quote 是「阴阳男女，次策推排；」，与其 statement 本就不对应，证据基础不成立，更不能据此写适用条件。"
+      ]
     }
   ],
+  "instrument_added": {
+    "command": "python3 tools/eval-predicates.py --art <art> --discrimination",
+    "what": "列出在所有样本盘面上都成立的规则，分两档：hard（含通配 * 或取值整段覆盖封闭值域＝结构恒真，可据此动手）与 soft（仅当前样本内都成立，样本只有 2 盘时不足以判定凑数）。",
+    "finding": "既有的结构恒真映射（本轮之前就有）：bazi 17（全部为通配 *）、liuren 3、liuyao 3、qimen 1、qizheng 1、ziwei 0。本轮新增的 18 条存活映射无一命中 hard。",
+    "not_done": "未清理既有结构恒真映射：它们不在本轮「未映射」集合内，清理会下调既有覆盖率，属单独一笔，需另行授权。"
+  },
   "kept_with_disclosure": [
     {
       "rule_id": "ZIWEIDOUSHUQ-ZW-01",
