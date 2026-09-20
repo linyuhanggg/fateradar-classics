@@ -283,7 +283,7 @@ rules:
     散之為合葢謂支屬人元故以此論之如申子辰申乃子之母辰乃子之子申乃水生子乃水旺辰乃水氣生即産旺即成庫即收有生有成有收萬物得始得終乃自然之理故申子申為水局若三字缺其一則化不成局不可以三合化局論葢天地間道理兩則化一隂一陽之謂也三則化三生萬物之謂也巳
 
     酉丑寅午戍亥卯未皆然五行不言土者四行皆頼土成局萬物皆歸藏於土故也若辰戌丑未全自作土局論凡命有合要得局為佳假令丙丁生人見亥卯未印巳酉丑財為得局見寅午戍火為本局申子辰水為官局辰戍丑未土為傷局又如丙人見巳酉丑丁人見寅午戍為三位禄格謂丙以巳為禄丁以'
-  applicable_to: []
+  applicable_to: {any_of: [{all_of: [{key: zhi, value: 申}, {key: zhi, value: 子}, {key: zhi, value: 辰}]}, {all_of: [{key: zhi, value: 巳}, {key: zhi, value: 酉}, {key: zhi, value: 丑}]}, {all_of: [{key: zhi, value: 寅}, {key: zhi, value: 午}, {key: zhi, value: 戌}]}, {all_of: [{key: zhi, value: 亥}, {key: zhi, value: 卯}, {key: zhi, value: 未}]}]}
   caveats:
   - 半合与三合全局要区分；是否成势仍须结合命局。
   school: null
@@ -353,7 +353,7 @@ rules:
   anchor: null
   quote: 正月節   二月節   三月節
   quote_kind: restatement
-  applicable_to: []
+  applicable_to: {any_of: [{all_of: [{key: zhi, value: 子}, {key: zhi, value: 午}]}, {all_of: [{key: zhi, value: 丑}, {key: zhi, value: 未}]}, {all_of: [{key: zhi, value: 寅}, {key: zhi, value: 申}]}, {all_of: [{key: zhi, value: 卯}, {key: zhi, value: 酉}]}, {all_of: [{key: zhi, value: 辰}, {key: zhi, value: 戌}]}, {all_of: [{key: zhi, value: 巳}, {key: zhi, value: 亥}]}]}
   caveats:
   - 冲不一定凶
   - 冲喜用为凶，冲忌神为吉
@@ -1099,7 +1099,7 @@ rules:
     start_line: 10089
     end_line: 10089
   quote: 〔日干庚辛地支巳酉丑或申酉戌全者乃從革之象庚日干頭再有甲戊辛日干頭再有壬癸其人死當廟食於百世矣何以言之夫金之為用也剛而其為質也固剛者義氣之發固者可久之道人之仗義者生為忠臣{{SKchar|2636}}必為明神矣此理可與達士論之〕
-  applicable_to: []
+  applicable_to: {any_of: [{all_of: [{key: zhi, value: 申}, {key: zhi, value: 子}, {key: zhi, value: 辰}]}, {all_of: [{key: zhi, value: 巳}, {key: zhi, value: 酉}, {key: zhi, value: 丑}]}, {all_of: [{key: zhi, value: 寅}, {key: zhi, value: 午}, {key: zhi, value: 戌}]}, {all_of: [{key: zhi, value: 亥}, {key: zhi, value: 卯}, {key: zhi, value: 未}]}, {all_of: [{key: zhi, value: 寅}, {key: zhi, value: 卯}, {key: zhi, value: 辰}]}, {all_of: [{key: zhi, value: 巳}, {key: zhi, value: 午}, {key: zhi, value: 未}]}, {all_of: [{key: zhi, value: 申}, {key: zhi, value: 酉}, {key: zhi, value: 戌}]}, {all_of: [{key: zhi, value: 亥}, {key: zhi, value: 子}, {key: zhi, value: 丑}]}, {all_of: [{key: zhi, value: 辰}, {key: zhi, value: 戌}, {key: zhi, value: 丑}, {key: zhi, value: 未}]}]}
   caveats:
   - 专局忌克化神之神
   - 运行克神则破格
@@ -1875,7 +1875,7 @@ rules:
     start_line: 670
     end_line: 670
   quote: 五行皆賴土也推其形色則水黑火赤木青金白土黃此正色也及其變易則不然常以生旺從正色〔當生旺則正氣全可見正色〕死絶從母色〔水者木之母死絶則黑木者火之母死絶則青火者土之母死絶則赤土者金之母死絕則黃夫五行死絕則氣歸根見母之色凡人遇苦楚而呻吟母者乃其義也〕成形
-  applicable_to: []
+  applicable_to: {any_of: [{all_of: [{key: zhi, value: 申}, {key: zhi, value: 子}, {key: zhi, value: 辰}]}, {all_of: [{key: zhi, value: 巳}, {key: zhi, value: 酉}, {key: zhi, value: 丑}]}, {all_of: [{key: zhi, value: 寅}, {key: zhi, value: 午}, {key: zhi, value: 戌}]}, {all_of: [{key: zhi, value: 亥}, {key: zhi, value: 卯}, {key: zhi, value: 未}]}, {all_of: [{key: zhi, value: 寅}, {key: zhi, value: 卯}, {key: zhi, value: 辰}]}, {all_of: [{key: zhi, value: 巳}, {key: zhi, value: 午}, {key: zhi, value: 未}]}, {all_of: [{key: zhi, value: 申}, {key: zhi, value: 酉}, {key: zhi, value: 戌}]}, {all_of: [{key: zhi, value: 亥}, {key: zhi, value: 子}, {key: zhi, value: 丑}]}]}
   caveats:
   - 六神兽格属古法取象，不作现代八字主线结论
   - 本质上可归入五行专局格（曲直/从革/炎上/润下/稼穑）的变体

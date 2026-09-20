@@ -1,0 +1,65 @@
+[
+ {
+  "book": "bazi/sanming-tonghui",
+  "rule_id": "SANMINGTONGH-015",
+  "applicable_to_yaml": "{any_of: [{all_of: [{key: zhi, value: 申}, {key: zhi, value: 子}, {key: zhi, value: 辰}]}, {all_of: [{key: zhi, value: 巳}, {key: zhi, value: 酉}, {key: zhi, value: 丑}]}, {all_of: [{key: zhi, value: 寅}, {key: zhi, value: 午}, {key: zhi, value: 戌}]}, {all_of: [{key: zhi, value: 亥}, {key: zhi, value: 卯}, {key: zhi, value: 未}]}]}",
+  "evidence_from_statement": "申子辰、巳酉丑、寅午戌、亥卯未为三合组合",
+  "partial": "原文「三字缺一不能直接按三合化局论」正是本式（每局三句 all_of）要表达的。"
+ },
+ {
+  "book": "luming-nayin/li-xuzhong-mingshu",
+  "rule_id": "LIXUZHONGMIN-070",
+  "applicable_to_yaml": "{any_of: [{all_of: [{key: zhi, value: 申}, {key: zhi, value: 子}, {key: zhi, value: 辰}]}, {all_of: [{key: zhi, value: 巳}, {key: zhi, value: 酉}, {key: zhi, value: 丑}]}, {all_of: [{key: zhi, value: 寅}, {key: zhi, value: 午}, {key: zhi, value: 戌}]}, {all_of: [{key: zhi, value: 亥}, {key: zhi, value: 卯}, {key: zhi, value: 未}]}]}",
+  "evidence_from_statement": "寅午戌火体、亥卯未木体、申子辰水体、巳酉丑金体",
+  "partial": "末句「土则从四事成之」未表达（土不另成三合局）。"
+ },
+ {
+  "book": "luming-nayin/yuzhao-shenying",
+  "rule_id": "YUZHAOSHENYI-040",
+  "applicable_to_yaml": "{any_of: [{all_of: [{key: zhi, value: 申}, {key: zhi, value: 子}, {key: zhi, value: 辰}]}, {all_of: [{key: zhi, value: 巳}, {key: zhi, value: 酉}, {key: zhi, value: 丑}]}, {all_of: [{key: zhi, value: 寅}, {key: zhi, value: 午}, {key: zhi, value: 戌}]}, {all_of: [{key: zhi, value: 亥}, {key: zhi, value: 卯}, {key: zhi, value: 未}]}]}",
+  "evidence_from_statement": "五行三合局齐者(木亥卯未/火寅午戌/金巳酉丑/水申子辰)",
+  "partial": ""
+ },
+ {
+  "book": "bazi/ditiansui-chanwei",
+  "rule_id": "DITIANSUICHA-DR-02",
+  "applicable_to_yaml": "{any_of: [{all_of: [{key: zhi, value: 申}, {key: zhi, value: 子}, {key: zhi, value: 辰}]}, {all_of: [{key: zhi, value: 巳}, {key: zhi, value: 酉}, {key: zhi, value: 丑}]}, {all_of: [{key: zhi, value: 寅}, {key: zhi, value: 午}, {key: zhi, value: 戌}]}, {all_of: [{key: zhi, value: 亥}, {key: zhi, value: 卯}, {key: zhi, value: 未}]}, {all_of: [{key: zhi, value: 寅}, {key: zhi, value: 卯}, {key: zhi, value: 辰}]}, {all_of: [{key: zhi, value: 巳}, {key: zhi, value: 午}, {key: zhi, value: 未}]}, {all_of: [{key: zhi, value: 申}, {key: zhi, value: 酉}, {key: zhi, value: 戌}]}, {all_of: [{key: zhi, value: 亥}, {key: zhi, value: 子}, {key: zhi, value: 丑}]}]}",
+  "evidence_from_statement": "三合局（亥卯未木局等）成局者气势全；方局（寅卯辰东方等）齐全者气势纯",
+  "partial": "「局成宜顺、局破宜疏」的处置语未表达。"
+ },
+ {
+  "book": "bazi/sanming-tonghui",
+  "rule_id": "SANMINGTONGH-095",
+  "applicable_to_yaml": "{any_of: [{all_of: [{key: zhi, value: 申}, {key: zhi, value: 子}, {key: zhi, value: 辰}]}, {all_of: [{key: zhi, value: 巳}, {key: zhi, value: 酉}, {key: zhi, value: 丑}]}, {all_of: [{key: zhi, value: 寅}, {key: zhi, value: 午}, {key: zhi, value: 戌}]}, {all_of: [{key: zhi, value: 亥}, {key: zhi, value: 卯}, {key: zhi, value: 未}]}, {all_of: [{key: zhi, value: 寅}, {key: zhi, value: 卯}, {key: zhi, value: 辰}]}, {all_of: [{key: zhi, value: 巳}, {key: zhi, value: 午}, {key: zhi, value: 未}]}, {all_of: [{key: zhi, value: 申}, {key: zhi, value: 酉}, {key: zhi, value: 戌}]}, {all_of: [{key: zhi, value: 亥}, {key: zhi, value: 子}, {key: zhi, value: 丑}]}]}",
+  "evidence_from_statement": "各神兽对应五行须在命局成形（三合或方局）",
+  "partial": "「格局清纯不破」未表达（需格局与破格判定）。"
+ },
+ {
+  "book": "bazi/sanming-tonghui",
+  "rule_id": "SANMINGTONGH-R-06",
+  "applicable_to_yaml": "{any_of: [{all_of: [{key: zhi, value: 申}, {key: zhi, value: 子}, {key: zhi, value: 辰}]}, {all_of: [{key: zhi, value: 巳}, {key: zhi, value: 酉}, {key: zhi, value: 丑}]}, {all_of: [{key: zhi, value: 寅}, {key: zhi, value: 午}, {key: zhi, value: 戌}]}, {all_of: [{key: zhi, value: 亥}, {key: zhi, value: 卯}, {key: zhi, value: 未}]}, {all_of: [{key: zhi, value: 寅}, {key: zhi, value: 卯}, {key: zhi, value: 辰}]}, {all_of: [{key: zhi, value: 巳}, {key: zhi, value: 午}, {key: zhi, value: 未}]}, {all_of: [{key: zhi, value: 申}, {key: zhi, value: 酉}, {key: zhi, value: 戌}]}, {all_of: [{key: zhi, value: 亥}, {key: zhi, value: 子}, {key: zhi, value: 丑}]}, {all_of: [{key: zhi, value: 辰}, {key: zhi, value: 戌}, {key: zhi, value: 丑}, {key: zhi, value: 未}]}]}",
+  "evidence_from_statement": "木局曲直（亥卯未或寅卯辰全）",
+  "partial": "土局稼穑为四支全（辰戌丑未），已按四句 all_of 表达；「专局成时以化神为用」未表达。"
+ },
+ {
+  "book": "bazi/sanming-tonghui",
+  "rule_id": "SANMINGTONGH-018",
+  "applicable_to_yaml": "{any_of: [{all_of: [{key: zhi, value: 子}, {key: zhi, value: 午}]}, {all_of: [{key: zhi, value: 丑}, {key: zhi, value: 未}]}, {all_of: [{key: zhi, value: 寅}, {key: zhi, value: 申}]}, {all_of: [{key: zhi, value: 卯}, {key: zhi, value: 酉}]}, {all_of: [{key: zhi, value: 辰}, {key: zhi, value: 戌}]}, {all_of: [{key: zhi, value: 巳}, {key: zhi, value: 亥}]}]}",
+  "evidence_from_statement": "子午、丑未、寅申、卯酉、辰戌、巳亥相冲",
+  "partial": "六对相冲逐对成组；「冲动、移动、变化之象」是断语不是条件。"
+ },
+ {
+  "book": "bazi/ditiansui-chanwei",
+  "rule_id": "DITIANSUICHA-031",
+  "applicable_to_yaml": "{all_of: [{key: zhi, value: 卯}, {key: zhi, value: 酉}]}",
+  "evidence_from_statement": "卯酉冲为震兑战",
+  "partial": ""
+ },
+ {
+  "book": "bazi/ditiansui-chanwei",
+  "rule_id": "DITIANSUICHA-032",
+  "applicable_to_yaml": "{all_of: [{key: zhi, value: 子}, {key: zhi, value: 午}]}",
+  "evidence_from_statement": "子午冲为坎离战",
+  "partial": ""
+ }
+]

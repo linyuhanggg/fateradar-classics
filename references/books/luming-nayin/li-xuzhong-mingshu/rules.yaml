@@ -1187,7 +1187,7 @@ rules:
     start_line: 108
     end_line: 108
   quote: 至六而為耦為隂陽之始作天地之真運然而真運在天必自地而得之矣何則天罡本乎辰也陽動而隂静得十二常轉位自甲子為始至於辰則見戌是地之功也故甲之為土明矣是知真運在天自地而得之也〕寅午戌火體亥卯未木體申子辰水體巳酉丑金體斯非真體乃五行生旺庫之地土則從四事
-  applicable_to: []
+  applicable_to: {any_of: [{all_of: [{key: zhi, value: 申}, {key: zhi, value: 子}, {key: zhi, value: 辰}]}, {all_of: [{key: zhi, value: 巳}, {key: zhi, value: 酉}, {key: zhi, value: 丑}]}, {all_of: [{key: zhi, value: 寅}, {key: zhi, value: 午}, {key: zhi, value: 戌}]}, {all_of: [{key: zhi, value: 亥}, {key: zhi, value: 卯}, {key: zhi, value: 未}]}]}
   caveats:
   - 同上
   school: null

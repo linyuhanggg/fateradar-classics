@@ -169,7 +169,7 @@ rules:
   statement: 三合局（亥卯未木局等）成局者气势全；方局（寅卯辰东方等）齐全者气势纯；局成宜顺、局破宜疏。
   anchor: {file: sources/fulltext/bazi/ditiansui-chanwei/fulltext.md, start_line: 10521, end_line: 10521}
   quote: 合有宜不宜，合多不为奇。
-  applicable_to: []
+  applicable_to: {any_of: [{all_of: [{key: zhi, value: 申}, {key: zhi, value: 子}, {key: zhi, value: 辰}]}, {all_of: [{key: zhi, value: 巳}, {key: zhi, value: 酉}, {key: zhi, value: 丑}]}, {all_of: [{key: zhi, value: 寅}, {key: zhi, value: 午}, {key: zhi, value: 戌}]}, {all_of: [{key: zhi, value: 亥}, {key: zhi, value: 卯}, {key: zhi, value: 未}]}, {all_of: [{key: zhi, value: 寅}, {key: zhi, value: 卯}, {key: zhi, value: 辰}]}, {all_of: [{key: zhi, value: 巳}, {key: zhi, value: 午}, {key: zhi, value: 未}]}, {all_of: [{key: zhi, value: 申}, {key: zhi, value: 酉}, {key: zhi, value: 戌}]}, {all_of: [{key: zhi, value: 亥}, {key: zhi, value: 子}, {key: zhi, value: 丑}]}]}
   caveats:
   - 方与局不混
   - 方为同方位三支齐、局为三合三支齐
@@ -509,7 +509,7 @@ rules:
     start_line: 101
     end_line: 101
   quote: 卯酉为震兑，主仁义之真极；
-  applicable_to: []
+  applicable_to: {all_of: [{key: zhi, value: 卯}, {key: zhi, value: 酉}]}
   caveats:
   - 本派对卯酉冲不一律凶论，要看气势
   school: null
@@ -524,7 +524,7 @@ rules:
     start_line: 102
     end_line: 102
   quote: 子午为坎离，宰天地之中气。
-  applicable_to: []
+  applicable_to: {all_of: [{key: zhi, value: 子}, {key: zhi, value: 午}]}
   caveats:
   - 与寒暖章互参
   school: null

@@ -644,7 +644,7 @@ rules:
     start_line: 55
     end_line: 55
   quote: 身生納音則中下人吉或後人進旺返此則凶退耳假令庚逢巳者生干也外干同推假令水逢金者亦佳返此為咎〕全逢本卦相應而出自尊顔〔木為身得亥夘未逢旺相火得寅午戌依上土得四季金巳酉丑水申子辰但得本家卦更犯旺相者富貴矣假令丙子水人庚子月土庚辰金日甲申時水十一月水
-  applicable_to: []
+  applicable_to: {any_of: [{all_of: [{key: zhi, value: 申}, {key: zhi, value: 子}, {key: zhi, value: 辰}]}, {all_of: [{key: zhi, value: 巳}, {key: zhi, value: 酉}, {key: zhi, value: 丑}]}, {all_of: [{key: zhi, value: 寅}, {key: zhi, value: 午}, {key: zhi, value: 戌}]}, {all_of: [{key: zhi, value: 亥}, {key: zhi, value: 卯}, {key: zhi, value: 未}]}]}
   caveats:
   - 富贵判断为传统话语
   - 不作现代财运预测
