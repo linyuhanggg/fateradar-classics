@@ -130,5 +130,27 @@
   "evidence_from_statement": "六癸临时干",
   "disclosed": "柱干为甲时不表达（地盘无甲）；原文明细须另判。",
   "note": "原文「六癸」＝癸仪。"
+ },
+ {
+  "book": "san-shi/qimen-dunjia-tongzhi",
+  "rule_id": "QM-P33",
+  "encoding": "enumerated-value-pairing-reverse",
+  "applicable_to_yaml": "{any_of: [{all_of: [{all_of: [{key: gan, value: 乙, scope: {pillar: day}}]}, {all_of: [{key: tianpan_gan, value: 乙}, {key: dipan_gan, value: 庚}], same: gong}]}, {all_of: [{all_of: [{key: gan, value: 丙, scope: {pillar: day}}]}, {all_of: [{key: tianpan_gan, value: 丙}, {key: dipan_gan, value: 庚}], same: gong}]}, {all_of: [{all_of: [{key: gan, value: 丁, scope: {pillar: day}}]}, {all_of: [{key: tianpan_gan, value: 丁}, {key: dipan_gan, value: 庚}], same: gong}]}, {all_of: [{all_of: [{key: gan, value: 戊, scope: {pillar: day}}]}, {all_of: [{key: tianpan_gan, value: 戊}, {key: dipan_gan, value: 庚}], same: gong}]}, {all_of: [{all_of: [{key: gan, value: 己, scope: {pillar: day}}]}, {all_of: [{key: tianpan_gan, value: 己}, {key: dipan_gan, value: 庚}], same: gong}]}, {all_of: [{all_of: [{key: gan, value: 庚, scope: {pillar: day}}]}, {all_of: [{key: tianpan_gan, value: 庚}, {key: dipan_gan, value: 庚}], same: gong}]}, {all_of: [{all_of: [{key: gan, value: 辛, scope: {pillar: day}}]}, {all_of: [{key: tianpan_gan, value: 辛}, {key: dipan_gan, value: 庚}], same: gong}]}, {all_of: [{all_of: [{key: gan, value: 壬, scope: {pillar: day}}]}, {all_of: [{key: tianpan_gan, value: 壬}, {key: dipan_gan, value: 庚}], same: gong}]}, {all_of: [{all_of: [{key: gan, value: 癸, scope: {pillar: day}}]}, {all_of: [{key: tianpan_gan, value: 癸}, {key: dipan_gan, value: 庚}], same: gong}]}]}",
+  "tianpan_gan": "庚",
+  "pillar": "day",
+  "earth_stems_enumerated": [
+   "乙",
+   "丙",
+   "丁",
+   "戊",
+   "己",
+   "庚",
+   "辛",
+   "壬",
+   "癸"
+  ],
+  "evidence_from_statement": "日干临庚",
+  "disclosed": "柱干为甲时不表达（地盘无甲）；原文明细须另判。",
+  "note": "「日干临庚」是反向式：天盘是日干、地盘是庚。"
  }
 ]

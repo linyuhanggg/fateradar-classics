@@ -475,7 +475,7 @@ rules:
     start_line: 303
     end_line: 303
   quote: 飞干格 日干临庚
-  applicable_to: []
+  applicable_to: {any_of: [{all_of: [{all_of: [{key: gan, value: 乙, scope: {pillar: day}}]}, {all_of: [{key: tianpan_gan, value: 乙}, {key: dipan_gan, value: 庚}], same: gong}]}, {all_of: [{all_of: [{key: gan, value: 丙, scope: {pillar: day}}]}, {all_of: [{key: tianpan_gan, value: 丙}, {key: dipan_gan, value: 庚}], same: gong}]}, {all_of: [{all_of: [{key: gan, value: 丁, scope: {pillar: day}}]}, {all_of: [{key: tianpan_gan, value: 丁}, {key: dipan_gan, value: 庚}], same: gong}]}, {all_of: [{all_of: [{key: gan, value: 戊, scope: {pillar: day}}]}, {all_of: [{key: tianpan_gan, value: 戊}, {key: dipan_gan, value: 庚}], same: gong}]}, {all_of: [{all_of: [{key: gan, value: 己, scope: {pillar: day}}]}, {all_of: [{key: tianpan_gan, value: 己}, {key: dipan_gan, value: 庚}], same: gong}]}, {all_of: [{all_of: [{key: gan, value: 庚, scope: {pillar: day}}]}, {all_of: [{key: tianpan_gan, value: 庚}, {key: dipan_gan, value: 庚}], same: gong}]}, {all_of: [{all_of: [{key: gan, value: 辛, scope: {pillar: day}}]}, {all_of: [{key: tianpan_gan, value: 辛}, {key: dipan_gan, value: 庚}], same: gong}]}, {all_of: [{all_of: [{key: gan, value: 壬, scope: {pillar: day}}]}, {all_of: [{key: tianpan_gan, value: 壬}, {key: dipan_gan, value: 庚}], same: gong}]}, {all_of: [{all_of: [{key: gan, value: 癸, scope: {pillar: day}}]}, {all_of: [{key: tianpan_gan, value: 癸}, {key: dipan_gan, value: 庚}], same: gong}]}]}
   caveats: []
   school: null
   verified: false

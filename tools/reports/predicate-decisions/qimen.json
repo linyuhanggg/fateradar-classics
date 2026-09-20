@@ -274,11 +274,13 @@
     {
       "book": "san-shi/qimen-dunjia-tongzhi",
       "rule_id": "QM-P33",
-      "decision": "unmapped",
+      "decision": "mapped",
       "reason_class": "fact-not-emitted",
       "evidence_from_statement": "飞干格 日干临庚",
       "note": "飞干格＝日干临天盘庚，同上两枚干。",
-      "missing_fact": "天盘干（庚）、日干"
+      "missing_fact": "天盘干（庚）、日干",
+      "mapped_by": "qimen-lin-pair-map.json",
+      "mapped_note": "t189 映射：反向式「日干临庚」＝天盘(日干)压地盘庚，同 t188 的枚举配对，等式两侧互换。原 reason_class 保留为历史判定。"
     },
     {
       "book": "san-shi/qimen-dunjia-tongzhi",
