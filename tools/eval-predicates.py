@@ -270,9 +270,16 @@ def evaluate(rule: dict, facts: list[dict]) -> dict:
         "confidence": confidence,
         "fact_coverage": round(coverage, 3),
         "missing_fact_keys": missing,
-        "matched": [
-            {"key": f.get("key"), "value": f.get("value"), "scope": f.get("scope")} for f in res.matched
-        ],
+        # `matched` 是**结论为「满足」时的见证集**：不满足/信息不足时一律留空，
+        # 免得消费方把「各子句单独命中过」误当成整条成立（all_of 里这很常见）。
+        "matched": (
+            [
+                {"key": f.get("key"), "value": f.get("value"), "scope": f.get("scope")}
+                for f in res.matched
+            ]
+            if res.state == TRUE
+            else []
+        ),
         # 出处：电子文本溯源（原文行范围 + 逐字摘录），不是人工影印核验结论。
         "source": {
             "rule_id": rule.get("rule_id"),

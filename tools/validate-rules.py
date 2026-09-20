@@ -386,7 +386,7 @@ def _validate_predicate(pred, *, loc: str, ctx: "_PredCtx") -> None:
             )
     gong = scope.get("gong")
     if gong is not None:
-        if ctx.system != "san-shi" or not str(key).startswith(("bamen", "bashen", "jiuxing", "zhifu", "zhishi")):
+        if ctx.system != "san-shi" or not str(key).startswith(("bamen", "bashen", "jiuxing", "zhifu", "zhishi", "tianpan_gan", "dipan_gan")):
             reporter.add(
                 "V16",
                 f"{loc}: scope.gong 仅奇门（san-shi/qimen-*）事实可写",

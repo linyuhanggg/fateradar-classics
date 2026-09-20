@@ -186,6 +186,17 @@ def main() -> int:
     check("  verification 为 provisional", src["verification"], "provisional")
     check("  verified 恒 false", r["verified"], False)
 
+    print("9b. matched 只在「满足」时给见证集")
+    r = M.evaluate(
+        rule({"all_of": [{"key": "bamen", "value": "休门"}, {"key": "bashen", "value": "九天"}]}),
+        [fact("bamen", "休门"), fact("bashen", "太阴")],
+    )
+    check("  all_of 不满足时 matched 为空（不许把子句命中当整条成立）", (r["verdict"], r["matched"]), ("不满足", []))
+    r = M.evaluate(rule(both), [fact("bamen", "休门"), fact("bashen", "九天")])
+    check("  满足时给出见证集", (r["verdict"], len(r["matched"])), ("满足", 2))
+    r = M.evaluate(rule({"any_of": [{"key": "bamen", "value": "休门"}]}), [fact("bashen", "九天")])
+    check("  信息不足时 matched 也为空", (r["verdict"], r["matched"]), ("信息不足", []))
+
     print("10. 空 applicable_to 不猜结论")
     r = M.evaluate(rule([]), [fact("bamen", "休门")])
     check("  → 信息不足", r["verdict"], "信息不足")

@@ -93,7 +93,20 @@ ART_EMIT_KEYS: dict[str, frozenset[str]] = {
         }
     ),
     "ziwei": frozenset({"ziwei_palace", "ziwei_star", "sihua", "daxian", "liunian_taisui"}),
-    "qimen": frozenset({"jiuxing", "bamen", "bashen", "zhifu", "zhishi", "geju_qimen", "kongwang"}),
+    "qimen": frozenset(
+        {
+            "jiuxing",
+            "bamen",
+            "bashen",
+            "zhifu",
+            "zhishi",
+            "geju_qimen",
+            # 天盘干／地盘干：由已有 QimenCell.sky / .earth 逐宫产出。
+            "tianpan_gan",
+            "dipan_gan",
+            "kongwang",
+        }
+    ),
     "liuren": frozenset({"keti", "sanchuan", "tianjiang", "yuejiang", "kongwang"}),
     "liuyao": frozenset({"shiyao", "yingyao", "liuqin", "liushen", "fushen", "dongyao"}),
     "qizheng": frozenset({"xingyao", "gongwei", "xiudu", "miaowang"}),

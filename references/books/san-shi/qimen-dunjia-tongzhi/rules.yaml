@@ -43,7 +43,7 @@ rules:
     start_line: 273
     end_line: 273
   quote: 龙逃走 乙奇遇辛
-  applicable_to: []
+  applicable_to: {all_of: [{key: tianpan_gan, value: 乙}, {key: dipan_gan, value: 辛}], same: gong}
   caveats: []
   school: null
   verified: false
@@ -57,7 +57,7 @@ rules:
     start_line: 275
     end_line: 275
   quote: 虎猖狂 辛遇乙奇
-  applicable_to: []
+  applicable_to: {all_of: [{key: tianpan_gan, value: 辛}, {key: dipan_gan, value: 乙}], same: gong}
   caveats: []
   school: null
   verified: false
@@ -71,7 +71,7 @@ rules:
     start_line: 277
     end_line: 277
   quote: 蛇妖矫 癸见丁奇
-  applicable_to: []
+  applicable_to: {all_of: [{key: tianpan_gan, value: 癸}, {key: dipan_gan, value: 丁}], same: gong}
   caveats: []
   school: null
   verified: false
@@ -85,7 +85,7 @@ rules:
     start_line: 279
     end_line: 279
   quote: 雀投江 丁奇见癸
-  applicable_to: []
+  applicable_to: {all_of: [{key: tianpan_gan, value: 丁}, {key: dipan_gan, value: 癸}], same: gong}
   caveats: []
   school: null
   verified: false
@@ -99,7 +99,7 @@ rules:
     start_line: 285
     end_line: 285
   quote: 大格 庚临六癸
-  applicable_to: []
+  applicable_to: {all_of: [{key: tianpan_gan, value: 庚}, {key: dipan_gan, value: 癸}], same: gong}
   caveats: []
   school: null
   verified: false
@@ -113,7 +113,7 @@ rules:
     start_line: 287
     end_line: 287
   quote: 刑格 庚临六己
-  applicable_to: []
+  applicable_to: {all_of: [{key: tianpan_gan, value: 庚}, {key: dipan_gan, value: 己}], same: gong}
   caveats: []
   school: null
   verified: false
@@ -127,7 +127,7 @@ rules:
     start_line: 297
     end_line: 297
   quote: 小格 庚临壬
-  applicable_to: []
+  applicable_to: {all_of: [{key: tianpan_gan, value: 庚}, {key: dipan_gan, value: 壬}], same: gong}
   caveats: []
   school: null
   verified: false
@@ -205,7 +205,7 @@ rules:
     start_line: 311
     end_line: 311
   quote: 伏吟 本星加本宫
-  applicable_to: []
+  applicable_to: [{key: geju_qimen, value: 伏吟局}]
   caveats: []
   school: null
   verified: false
@@ -219,7 +219,7 @@ rules:
     start_line: 309
     end_line: 309
   quote: 反吟 星加对宫
-  applicable_to: []
+  applicable_to: [{key: geju_qimen, value: 反吟局}]
   caveats: []
   school: null
   verified: false
@@ -233,7 +233,7 @@ rules:
     start_line: 315
     end_line: 315
   quote: 三奇入墓 乙奇坤宫 丙奇乾宫 丁奇艮宫
-  applicable_to: []
+  applicable_to: [{key: tianpan_gan, value: 乙, scope: {gong: 2}}, {key: tianpan_gan, value: 丙, scope: {gong: 6}}, {key: tianpan_gan, value: 丁, scope: {gong: 8}}]
   caveats: []
   school: null
   verified: false
@@ -321,7 +321,7 @@ rules:
     start_line: 265
     end_line: 265
   quote: 龙遁 休门与乙奇合坎
-  applicable_to: []
+  applicable_to: {all_of: [{key: bamen, value: 休门, scope: {gong: 1}}, {key: tianpan_gan, value: 乙, scope: {gong: 1}}]}
   caveats: []
   school: null
   verified: false
@@ -335,7 +335,7 @@ rules:
     start_line: 267
     end_line: 267
   quote: 虎遁 休门与乙奇合艮辛
-  applicable_to: []
+  applicable_to: {all_of: [{key: bamen, value: 休门, scope: {gong: 8}}, {key: tianpan_gan, value: 乙, scope: {gong: 8}}, {key: dipan_gan, value: 辛, scope: {gong: 8}}]}
   caveats: []
   school: null
   verified: false
@@ -349,7 +349,7 @@ rules:
     start_line: 269
     end_line: 269
   quote: 神遁 休门与乙奇合九天
-  applicable_to: []
+  applicable_to: {all_of: [{key: bamen, value: 休门}, {key: tianpan_gan, value: 乙}, {key: bashen, value: 九天}], same: gong}
   caveats: []
   school: null
   verified: false
@@ -363,7 +363,7 @@ rules:
     start_line: 271
     end_line: 271
   quote: 鬼遁 乙奇合九地杜门
-  applicable_to: []
+  applicable_to: {all_of: [{key: tianpan_gan, value: 乙}, {key: bashen, value: 九地}, {key: bamen, value: 杜门}], same: gong}
   caveats: []
   school: null
   verified: false
@@ -489,7 +489,7 @@ rules:
     start_line: 305
     end_line: 305
   quote: 太白入荧 六庚加丙奇又庚加卯日时酉丁
-  applicable_to: []
+  applicable_to: {all_of: [{key: tianpan_gan, value: 庚}, {key: dipan_gan, value: 丙}], same: gong}
   caveats: []
   school: null
   verified: false
@@ -503,7 +503,7 @@ rules:
     start_line: 307
     end_line: 307
   quote: 火入金乡 丙奇加六庚金又丙奇加惊用值符之庚辛
-  applicable_to: []
+  applicable_to: {all_of: [{key: tianpan_gan, value: 丙}, {key: dipan_gan, value: 庚}], same: gong}
   caveats: []
   school: null
   verified: false

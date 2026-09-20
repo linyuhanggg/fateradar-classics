@@ -1,0 +1,98 @@
+[
+ {
+  "book": "san-shi/qimen-dunjia-tongzhi",
+  "rule_id": "QM-P03",
+  "applicable_to_yaml": "{all_of: [{key: tianpan_gan, value: 乙}, {key: dipan_gan, value: 辛}], same: gong}",
+  "evidence_from_statement": "乙奇遇辛"
+ },
+ {
+  "book": "san-shi/qimen-dunjia-tongzhi",
+  "rule_id": "QM-P04",
+  "applicable_to_yaml": "{all_of: [{key: tianpan_gan, value: 辛}, {key: dipan_gan, value: 乙}], same: gong}",
+  "evidence_from_statement": "辛遇乙奇"
+ },
+ {
+  "book": "san-shi/qimen-dunjia-tongzhi",
+  "rule_id": "QM-P05",
+  "applicable_to_yaml": "{all_of: [{key: tianpan_gan, value: 癸}, {key: dipan_gan, value: 丁}], same: gong}",
+  "evidence_from_statement": "癸见丁奇"
+ },
+ {
+  "book": "san-shi/qimen-dunjia-tongzhi",
+  "rule_id": "QM-P06",
+  "applicable_to_yaml": "{all_of: [{key: tianpan_gan, value: 丁}, {key: dipan_gan, value: 癸}], same: gong}",
+  "evidence_from_statement": "丁奇见癸"
+ },
+ {
+  "book": "san-shi/qimen-dunjia-tongzhi",
+  "rule_id": "QM-P07",
+  "applicable_to_yaml": "{all_of: [{key: tianpan_gan, value: 庚}, {key: dipan_gan, value: 癸}], same: gong}",
+  "evidence_from_statement": "庚临六癸"
+ },
+ {
+  "book": "san-shi/qimen-dunjia-tongzhi",
+  "rule_id": "QM-P08",
+  "applicable_to_yaml": "{all_of: [{key: tianpan_gan, value: 庚}, {key: dipan_gan, value: 己}], same: gong}",
+  "evidence_from_statement": "庚临六己"
+ },
+ {
+  "book": "san-shi/qimen-dunjia-tongzhi",
+  "rule_id": "QM-P09",
+  "applicable_to_yaml": "{all_of: [{key: tianpan_gan, value: 庚}, {key: dipan_gan, value: 壬}], same: gong}",
+  "evidence_from_statement": "庚临壬"
+ },
+ {
+  "book": "san-shi/qimen-dunjia-tongzhi",
+  "rule_id": "QM-P14",
+  "applicable_to_yaml": "[{key: geju_qimen, value: 伏吟局}]",
+  "evidence_from_statement": "伏吟"
+ },
+ {
+  "book": "san-shi/qimen-dunjia-tongzhi",
+  "rule_id": "QM-P15",
+  "applicable_to_yaml": "[{key: geju_qimen, value: 反吟局}]",
+  "evidence_from_statement": "反吟"
+ },
+ {
+  "book": "san-shi/qimen-dunjia-tongzhi",
+  "rule_id": "QM-P16",
+  "applicable_to_yaml": "[{key: tianpan_gan, value: 乙, scope: {gong: 2}}, {key: tianpan_gan, value: 丙, scope: {gong: 6}}, {key: tianpan_gan, value: 丁, scope: {gong: 8}}]",
+  "evidence_from_statement": "乙奇坤宫"
+ },
+ {
+  "book": "san-shi/qimen-dunjia-tongzhi",
+  "rule_id": "QM-P21",
+  "applicable_to_yaml": "{all_of: [{key: bamen, value: 休门, scope: {gong: 1}}, {key: tianpan_gan, value: 乙, scope: {gong: 1}}]}",
+  "evidence_from_statement": "休门与乙奇合坎"
+ },
+ {
+  "book": "san-shi/qimen-dunjia-tongzhi",
+  "rule_id": "QM-P22",
+  "applicable_to_yaml": "{all_of: [{key: bamen, value: 休门, scope: {gong: 8}}, {key: tianpan_gan, value: 乙, scope: {gong: 8}}, {key: dipan_gan, value: 辛, scope: {gong: 8}}]}",
+  "evidence_from_statement": "休门与乙奇合艮辛"
+ },
+ {
+  "book": "san-shi/qimen-dunjia-tongzhi",
+  "rule_id": "QM-P23",
+  "applicable_to_yaml": "{all_of: [{key: bamen, value: 休门}, {key: tianpan_gan, value: 乙}, {key: bashen, value: 九天}], same: gong}",
+  "evidence_from_statement": "休门与乙奇合九天"
+ },
+ {
+  "book": "san-shi/qimen-dunjia-tongzhi",
+  "rule_id": "QM-P24",
+  "applicable_to_yaml": "{all_of: [{key: tianpan_gan, value: 乙}, {key: bashen, value: 九地}, {key: bamen, value: 杜门}], same: gong}",
+  "evidence_from_statement": "乙奇合九地杜门"
+ },
+ {
+  "book": "san-shi/qimen-dunjia-tongzhi",
+  "rule_id": "QM-P34",
+  "applicable_to_yaml": "{all_of: [{key: tianpan_gan, value: 庚}, {key: dipan_gan, value: 丙}], same: gong}",
+  "evidence_from_statement": "六庚加丙奇"
+ },
+ {
+  "book": "san-shi/qimen-dunjia-tongzhi",
+  "rule_id": "QM-P35",
+  "applicable_to_yaml": "{all_of: [{key: tianpan_gan, value: 丙}, {key: dipan_gan, value: 庚}], same: gong}",
+  "evidence_from_statement": "丙奇加六庚金"
+ }
+]
