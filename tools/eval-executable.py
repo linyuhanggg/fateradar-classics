@@ -203,14 +203,38 @@ def eval_definition(name: str, facts: list[dict], present: set[str]) -> tuple[st
             f"命名定义「{name}」**已据原文登记**（{where}：{src.get('quote','')[:48]}），"
             f"但展开所需事实尚未产出：{'／'.join(e.get('needs') or ['（未列）'])}"
         ]
-    clauses = expansion.get("all_of") or []
-    missing = [c for c in clauses if c.get("key") not in present]
-    if missing:
-        return UNKNOWN, [f"命名定义「{name}」按 {where} 展开，但本盘缺事实 {sorted({c['key'] for c in missing})}"]
-    bad = [c for c in clauses if not _match(facts, c["key"], c.get("value"), c.get("scope"))]
-    if bad:
-        return FALSE, [f"命名定义「{name}」按 {where} 展开：{[f'{c[chr(107)+chr(101)+chr(121)]}={c.get(chr(118)+chr(97)+chr(108)+chr(117)+chr(101))}' for c in bad]} 未同时成立"]
-    return TRUE, [f"命名定义「{name}」按 {where} 展开且成立"]
+    # ⚠ t208 修：原实现只读 `expansion["all_of"]`，于是**或形（any_of）定义会被当成空合取
+    # → 恒真**。日出扶桑（「日在卯守命是也，守官祿宮亦然」）就是或形，曾对每张盘都报「满足」。
+    # 现在：合取／析取各自求值；**未知形态一律 UNKNOWN，绝不默认 TRUE**。
+    def _clause_status(cls: dict) -> str:
+        """单句：ok／missing（缺键）／bad（不成立）。"""
+        if cls.get("key") not in present:
+            return "missing"
+        return "ok" if _match(facts, cls["key"], cls.get("value"), cls.get("scope")) else "bad"
+
+    if "all_of" in expansion:
+        clauses = expansion["all_of"] or []
+        missing = [c for c in clauses if _clause_status(c) == "missing"]
+        if missing:
+            return UNKNOWN, [f"命名定义「{name}」按 {where} 展开，但本盘缺事实 {sorted({c['key'] for c in missing})}"]
+        bad = [c for c in clauses if _clause_status(c) == "bad"]
+        if bad:
+            return FALSE, [f"命名定义「{name}」按 {where} 展开：{'、'.join(f'{c.get(chr(107)+chr(101)+chr(121))}={c.get(chr(118)+chr(97)+chr(108)+chr(117)+chr(101))}' for c in bad)} 未同时成立"]
+        return TRUE, [f"命名定义「{name}」按 {where} 展开且成立"]
+
+    if "any_of" in expansion:
+        branches = expansion["any_of"] or []
+        statuses = [[_clause_status(c) for c in (b.get("all_of") or [])] for b in branches]
+        if any(st and all(s == "ok" for s in st) for st in statuses):
+            return TRUE, [f"命名定义「{name}」按 {where} 展开：有一支成立"]
+        if any("missing" in st for st in statuses):
+            return UNKNOWN, [f"命名定义「{name}」按 {where} 展开为或形，但仍有分支缺事实，无法排除"]
+        return FALSE, [f"命名定义「{name}」按 {where} 展开为或形，各支均不成立"]
+
+    return UNKNOWN, [
+        f"命名定义「{name}」的展开形态（{sorted(expansion)}）求值器不认识——"
+        "**按未知处理，不得默认成立**"
+    ]
 
 
 def eval_when(when, facts: list[dict], present: set[str]) -> tuple[str, list[str]]:
