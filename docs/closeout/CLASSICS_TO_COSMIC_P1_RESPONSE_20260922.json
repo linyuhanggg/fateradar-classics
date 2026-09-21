@@ -279,5 +279,28 @@
     "previousFailureReport": "tools/reports/p1-bazi-20260922/flow-year-unknown-before.json",
     "reason": "参考求值器和产品 matcher 均能传递显式信息不足；YUANHAIZIPIN-YR-03 在按 scope.year 过滤后通过满足/不满足/信息不足三态样盘。",
     "fixtureSha256": "d53d3a8a64ca11826950276791ef2e84abaa7f01d914fdfb1e38f51dc200b47c"
+  },
+  "productIntegrationAudit": {
+    "command": "cd /Users/sync/code/cosmic-fortune-lab && bunx vitest run tests/rules/explicit-unknown-facts.test.ts tests/engine/bazi-vertical.test.ts --reporter=dot",
+    "exitCode": 1,
+    "result": "BLOCKED_PRODUCT_TEST_FIXTURE_ALIGNMENT",
+    "log": "tools/reports/p1-bazi-20260922/cosmic-integration-before.log",
+    "testsPassed": "22/24",
+    "failures": [
+      {
+        "test": "大运与流年关系分类只归一结构关系，不推断吉凶",
+        "ruleId": null,
+        "cause": "cosmic test expects 2027=相克, but regenerated shared fixture and engine output 2027=其他; classics fixture SHA d53d3a8a... is authoritative for this handoff.",
+        "requiredAction": "product test must align expected value with regenerated fixture or provide an explicitly versioned fixture change; do not infer 相克 in classics."
+      },
+      {
+        "test": "交接七条规则的正例、反例和缺键边界在产品求值器复算",
+        "ruleId": "YUANHAIZIPIN-YR-03",
+        "cause": "generic product harness does not apply manifest fixtureCases year selectors; it evaluates the full multi-year fact set, so the negative case matches a different year.",
+        "requiredAction": "product harness must consume caseFlowYear@2025/caseFlowYear@2026/caseFlowYearUnknown@2100 and filter scope.year before predicate evaluation; keep three-state semantics."
+      }
+    ],
+    "scope": "read_only_product_validation; no cosmic files changed by classics",
+    "fixtureSha256": "d53d3a8a64ca11826950276791ef2e84abaa7f01d914fdfb1e38f51dc200b47c"
   }
 }

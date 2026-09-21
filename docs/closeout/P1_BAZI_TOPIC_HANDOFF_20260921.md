@@ -146,3 +146,12 @@ git diff --check
 ## 2026-09-22 求值边界纠正
 
 首次运行 `python3 tools/audit-flow-year-unknown.py` 曾失败（exit 1），失败证据保留在 `tools/reports/p1-bazi-20260922/flow-year-unknown-before.json`；当时 2100 的 Fact 值“信息不足”被参考求值器降成“不满足”。classics 已修正两个已登记流年 FactKey 的显式未知传递，并以固定三态诊断复跑通过；当前报告为 `tools/reports/p1-bazi-20260922/flow-year-unknown.json`。新增 `tools/audit-flow-year-yr03.py` 对 `YUANHAIZIPIN-YR-03` 按 `scope.year` 过滤后也通过满足/不满足/信息不足三态。该规则只交付结构性“忌象候选”，不表达制化、喜忌或现实事件。
+
+## 产品只读验收记录（2026-09-22）
+
+古籍仓只读运行 cosmic 的八字垂直测试，命令与失败输出见 `tools/reports/p1-bazi-20260922/cosmic-integration-before.log`；结果 `22/24`，exit 1。失败均属于产品测试与当前已锁定事实合同的对齐问题：
+
+1. 流年关系测试把 2027 期望写成 `相克`，而共享 facts fixture（SHA `d53d3a8a64ca11826950276791ef2e84abaa7f01d914fdfb1e38f51dc200b47c`）明确为 `其他`。
+2. 交接规则通用 harness 未按 manifest 的 `scope.year` 选择器过滤多年份事实，导致 `YUANHAIZIPIN-YR-03` 反例误命中。
+
+产品需修正测试 fixture 期望及年份过滤后重跑；古籍仓不修改规则语义，也不把跨年份混合求值当成通过。

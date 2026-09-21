@@ -13,3 +13,19 @@ cosmic 已重建共享 facts sample：现在有 `本命`、`大运`、`流年`�
 ## 2026-09-22 求值边界纠正
 
 首次运行 `python3 tools/audit-flow-year-unknown.py` 曾失败（exit 1），失败证据保留在 `tools/reports/p1-bazi-20260922/flow-year-unknown-before.json`；当时 2100 的 Fact 值“信息不足”被参考求值器降成“不满足”。classics 已修正参考求值器的显式未知传递，并以固定三态诊断复跑通过；当前报告为 `tools/reports/p1-bazi-20260922/flow-year-unknown.json`。这只关闭参考求值器的语义门；当前 YUANHAIZIPIN-YR-03 已另以关系分类事实通过独立三态审计，不等于其制化/喜忌作用语义已经完成；`SANMINGTONGH-011` 仍因刃杀财官印绶、喜忌和救应语义缺失而阻塞。产品仓需在真实 fixture 上回归同一契约，救应/喜忌语义由 classics 提供原文和人工流派裁决，不交给产品猜测。
+
+## 2026-09-22 产品侧只读验收阻塞
+
+古籍仓在产品仓只读运行：
+
+```bash
+cd /Users/sync/code/cosmic-fortune-lab
+bunx vitest run tests/rules/explicit-unknown-facts.test.ts tests/engine/bazi-vertical.test.ts --reporter=dot
+```
+
+结果为 `22/24` 通过、exit 1；完整失败日志保存在 `tools/reports/p1-bazi-20260922/cosmic-integration-before.log`。这次只读验收未修改 cosmic 文件。
+
+- `大运与流年关系分类只归一结构关系，不推断吉凶` 仍期待 `2027=相克`，但共享 fixture SHA `d53d3a8a64ca11826950276791ef2e84abaa7f01d914fdfb1e38f51dc200b47c` 和当前生成器输出是 `2027=其他`。产品测试需对齐已重建 fixture，或提交有版本号的 fixture 变更；古籍规则不把 `其他` 推断成 `相克`。
+- `交接七条规则的正例、反例和缺键边界在产品求值器复算` 中 `YUANHAIZIPIN-YR-03` 的反例得到 `满足`。产品通用 harness 尚未消费 manifest 的 `caseFlowYear@2025`、`caseFlowYear@2026`、`caseFlowYearUnknown@2100` 年份选择器，而是把多年份事实混在一起求值。产品需先按 `scope.year` 过滤，再求值并保留三态；古籍仓不撤回年份作用域来迁就该 harness。
+
+在上述两项修正前，产品侧交接状态保持 `partial`，不能宣称七条规则端到端验收通过。
