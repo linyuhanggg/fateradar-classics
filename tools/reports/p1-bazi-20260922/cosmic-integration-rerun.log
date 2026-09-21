@@ -1,0 +1,48 @@
+
+ RUN  v4.1.11 /Users/sync/code/cosmic-fortune-lab
+
+····x····x··············
+
+⎯⎯⎯⎯⎯⎯⎯ Failed Tests 2 ⎯⎯⎯⎯⎯⎯⎯
+
+ FAIL  tests/engine/bazi-vertical.test.ts > 八字第一批垂直闭环 > 流年切换改变时间层和快照身份，但保留同一出生输入
+AssertionError: expected false to be true // Object.is equality
+
+- Expected
++ Received
+
+- true
++ false
+
+ ❯ tests/engine/bazi-vertical.test.ts:158:7
+    156|         (rule) => rule.status === "unknown" && rule.evidence.length ==…
+    157|       ),
+    158|     ).toBe(true);
+       |       ^
+    159|     for (const topic of FIRST_BAZI_TOPIC_IDS) {
+    160|       expect(viewed.topicMap[topic].status).toBe("unknown");
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/2]⎯
+
+ FAIL  tests/engine/bazi-vertical.test.ts > 八字第一批垂直闭环 > 交接七条规则的正例、反例和缺键边界在产品求值器复算
+AssertionError: YUANHAIZIPIN-YR-03: expected '满足' to be '不满足' // Object.is equality
+
+Expected: "不满足"
+Received: "满足"
+
+ ❯ tests/engine/bazi-vertical.test.ts:287:78
+    285|       );
+    286|       expect(evaluateApplicableTo(predicate, positive).verdict, rule.r…
+    287|       expect(evaluateApplicableTo(predicate, negative).verdict, rule.r…
+       |                                                                              ^
+    288|       expect(evaluateApplicableTo(predicate, boundary).verdict, rule.r…
+    289|     }
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[2/2]⎯
+
+
+ Test Files  1 failed | 1 passed (2)
+      Tests  2 failed | 22 passed (24)
+   Start at  03:48:18
+   Duration  906ms (transform 508ms, setup 0ms, import 678ms, tests 130ms, environment 0ms)
+

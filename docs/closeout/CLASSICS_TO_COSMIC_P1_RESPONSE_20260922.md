@@ -29,3 +29,12 @@ bunx vitest run tests/rules/explicit-unknown-facts.test.ts tests/engine/bazi-ver
 - `交接七条规则的正例、反例和缺键边界在产品求值器复算` 中 `YUANHAIZIPIN-YR-03` 的反例得到 `满足`。产品通用 harness 尚未消费 manifest 的 `caseFlowYear@2025`、`caseFlowYear@2026`、`caseFlowYearUnknown@2100` 年份选择器，而是把多年份事实混在一起求值。产品需先按 `scope.year` 过滤，再求值并保留三态；古籍仓不撤回年份作用域来迁就该 harness。
 
 在上述两项修正前，产品侧交接状态保持 `partial`，不能宣称七条规则端到端验收通过。
+
+## 产品侧重跑（2026-09-22）
+
+cosmic 重跑同一命令后仍为 `22/24` 通过、exit 1，日志见 `tools/reports/p1-bazi-20260922/cosmic-integration-rerun.log`：
+
+- `流年切换改变时间层和快照身份，但保留同一出生输入` 仍要求所有流年 RuleEvaluation 都是 `unknown`。该断言与已采纳的 `YUANHAIZIPIN-YR-03` 不一致：它明确支持流年层，选定年份命中时可以是 `satisfied`；产品应只把未支持的规则/主题保留为 `unknown`。
+- `交接七条规则的正例、反例和缺键边界在产品求值器复算` 中 `YUANHAIZIPIN-YR-03` 反例仍为 `满足`，说明通用 harness 仍未应用 `verification.negative` 的年份选择器。
+
+古籍仓没有修改 cosmic 文件；在产品修正这两处后，再进行端到端重跑。

@@ -155,3 +155,7 @@ git diff --check
 2. 交接规则通用 harness 未按 manifest 的 `scope.year` 选择器过滤多年份事实，导致 `YUANHAIZIPIN-YR-03` 反例误命中。
 
 产品需修正测试 fixture 期望及年份过滤后重跑；古籍仓不修改规则语义，也不把跨年份混合求值当成通过。
+
+### 重跑结果
+
+2026-09-22 重跑 cosmic 垂直测试仍为 `22/24`；`YUANHAIZIPIN-YR-03` 的流年支持范围和 manifest 年份选择器尚未被产品测试完全消费。失败日志：`tools/reports/p1-bazi-20260922/cosmic-integration-rerun.log`。

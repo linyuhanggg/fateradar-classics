@@ -301,6 +301,27 @@
       }
     ],
     "scope": "read_only_product_validation; no cosmic files changed by classics",
-    "fixtureSha256": "d53d3a8a64ca11826950276791ef2e84abaa7f01d914fdfb1e38f51dc200b47c"
+    "fixtureSha256": "d53d3a8a64ca11826950276791ef2e84abaa7f01d914fdfb1e38f51dc200b47c",
+    "rerun": {
+      "command": "cd /Users/sync/code/cosmic-fortune-lab && bunx vitest run tests/rules/explicit-unknown-facts.test.ts tests/engine/bazi-vertical.test.ts --reporter=dot",
+      "exitCode": 1,
+      "result": "STILL_BLOCKED_PRODUCT_TIME_SCOPE_AND_FIXTURE_HARNESS",
+      "log": "tools/reports/p1-bazi-20260922/cosmic-integration-rerun.log",
+      "testsPassed": "22/24",
+      "failures": [
+        {
+          "test": "流年切换改变时间层和快照身份，但保留同一出生输入",
+          "ruleId": "YUANHAIZIPIN-YR-03",
+          "cause": "test still requires every year-layer RuleEvaluation to be unknown, but the adopted rule is applicable at 流年 and the selected year may satisfy it.",
+          "requiredAction": "product test must distinguish supported 流年 rule evaluation from unsupported topic semantics; only unsupported rules/topics remain unknown."
+        },
+        {
+          "test": "交接七条规则的正例、反例和缺键边界在产品求值器复算",
+          "ruleId": "YUANHAIZIPIN-YR-03",
+          "cause": "negative fixture evaluation still returns 满足, indicating manifest year selector is not applied by the product harness for this rule.",
+          "requiredAction": "apply verification.negative year selector before evaluation and keep scope.year filtering."
+        }
+      ]
+    }
   }
 }
