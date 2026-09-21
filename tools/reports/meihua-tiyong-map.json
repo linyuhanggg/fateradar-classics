@@ -1,0 +1,13 @@
+[
+ {
+  "book": "divination/meihua-yishu",
+  "rule_id": "MEIHUAYISHU-013",
+  "applicable_to_yaml": "{any_of: [{all_of: [{key: meihua_ti_element, value: 木, scope: {palace: 本卦}}, {key: meihua_yong_element, value: 木, scope: {palace: 本卦}}]}, {all_of: [{key: meihua_ti_element, value: 火, scope: {palace: 本卦}}, {key: meihua_yong_element, value: 火, scope: {palace: 本卦}}]}, {all_of: [{key: meihua_ti_element, value: 土, scope: {palace: 本卦}}, {key: meihua_yong_element, value: 土, scope: {palace: 本卦}}]}, {all_of: [{key: meihua_ti_element, value: 金, scope: {palace: 本卦}}, {key: meihua_yong_element, value: 金, scope: {palace: 本卦}}]}, {all_of: [{key: meihua_ti_element, value: 水, scope: {palace: 本卦}}, {key: meihua_yong_element, value: 水, scope: {palace: 本卦}}]}]}",
+  "evidence_from_statement": "体用同五行（如皆木皆金）为比和",
+  "facts": [
+   "meihua_ti_element",
+   "meihua_yong_element(scope.palace=本卦)"
+  ],
+  "note": "条件＝**本卦**的体卦与用卦五行相同（五支枚举：木木/火火/土土/金金/水水）。互卦、变卦各有自己的体用，原文「体用」指本卦那一对，故 scope 限定「本卦」。「事顺利、平稳；不主大吉大凶」是断语，未表达。"
+ }
+]

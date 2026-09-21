@@ -260,6 +260,9 @@ def legal_pred_value(key: str, value: str, values: dict[str, list[str]], any_tok
 # 契约见 docs/PREDICATE-LANGUAGE-V3.md。旧平铺列表语义不变（仍是 any_of）。
 SCOPE_FIELDS = ("layer", "pillar", "palace", "gong", "yao")
 # 六壬课传位置（引擎 pushScoped 实际产出的取值）。
+# 梅花三卦的角色（引擎 `meihua-base.ts` 的 `scope.palace`）。
+MEIHUA_ROLES = ("本卦", "互卦", "变卦")
+
 LIU_REN_POSITIONS = ("日上", "辰上", "初传", "中传", "末传")
 GROUP_FIELDS = ("any_of", "all_of", "none_of", "same")
 FACT_LAYERS = ("本命", "大运", "流年", "流月", "流日")
@@ -391,10 +394,23 @@ def _validate_predicate(pred, *, loc: str, ctx: "_PredCtx") -> None:
                     rule_id=ctx.rule_id,
                     book=ctx.book,
                 )
+        elif ctx.book.startswith("divination/meihua-"):
+            # 梅花的 scope.palace 不是「宫」而是**卦的角色**：本卦／互卦／变卦。
+            # 引擎一直在这样产出（`meihua-base.ts`：`scope: {palace: item.role}`，
+            # 三卦各有自己的体／用），故谓词必须能引用角色——否则「体用同五行（本卦那一对）」
+            # 这类条件写不出来（会把互卦/变卦的体用也算进来）。与六壬的位置例外同理。
+            if not isinstance(palace, str) or palace not in MEIHUA_ROLES:
+                reporter.add(
+                    "V16",
+                    f"{loc}: palace {palace!r} 不在梅花卦角色取值内（{'／'.join(MEIHUA_ROLES)}）",
+                    rule_id=ctx.rule_id,
+                    book=ctx.book,
+                )
         else:
             reporter.add(
                 "V15",
-                f"{loc}: 只有 ziwei（十二宫）、xingming（宫位）与六壬（课传位置）规则可以写 scope.palace",
+                f"{loc}: 只有 ziwei（十二宫）、xingming（宫位）、六壬（课传位置）"
+                "与梅花（卦角色：本卦／互卦／变卦）规则可以写 scope.palace",
                 rule_id=ctx.rule_id,
                 book=ctx.book,
             )

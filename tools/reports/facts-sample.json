@@ -30058,6 +30058,216 @@
       ]
     }
   },
+  "meihua": {
+    "caseA": {
+      "label": "梅花 甲 1990-08-15 13:20 男 上海",
+      "facts": [
+        {
+          "key": "meihua_gua",
+          "value": "坎·体坎用坎",
+          "scope": {
+            "layer": "本命",
+            "palace": "本卦"
+          },
+          "derivedFrom": [
+            "上卦坎下卦坎，动第4爻"
+          ]
+        },
+        {
+          "key": "meihua_ti_element",
+          "value": "水",
+          "scope": {
+            "layer": "本命",
+            "palace": "本卦"
+          },
+          "derivedFrom": [
+            "本卦体卦坎"
+          ]
+        },
+        {
+          "key": "meihua_yong_element",
+          "value": "水",
+          "scope": {
+            "layer": "本命",
+            "palace": "本卦"
+          },
+          "derivedFrom": [
+            "本卦用卦坎"
+          ]
+        },
+        {
+          "key": "meihua_gua",
+          "value": "山雷颐·体震用艮",
+          "scope": {
+            "layer": "本命",
+            "palace": "互卦"
+          },
+          "derivedFrom": [
+            "上卦坎下卦坎，动第4爻"
+          ]
+        },
+        {
+          "key": "meihua_ti_element",
+          "value": "木",
+          "scope": {
+            "layer": "本命",
+            "palace": "互卦"
+          },
+          "derivedFrom": [
+            "互卦体卦震"
+          ]
+        },
+        {
+          "key": "meihua_yong_element",
+          "value": "土",
+          "scope": {
+            "layer": "本命",
+            "palace": "互卦"
+          },
+          "derivedFrom": [
+            "互卦用卦艮"
+          ]
+        },
+        {
+          "key": "meihua_gua",
+          "value": "泽水困·体坎用兑",
+          "scope": {
+            "layer": "本命",
+            "palace": "变卦"
+          },
+          "derivedFrom": [
+            "上卦坎下卦坎，动第4爻"
+          ]
+        },
+        {
+          "key": "meihua_ti_element",
+          "value": "水",
+          "scope": {
+            "layer": "本命",
+            "palace": "变卦"
+          },
+          "derivedFrom": [
+            "变卦体卦坎"
+          ]
+        },
+        {
+          "key": "meihua_yong_element",
+          "value": "金",
+          "scope": {
+            "layer": "本命",
+            "palace": "变卦"
+          },
+          "derivedFrom": [
+            "变卦用卦兑"
+          ]
+        }
+      ]
+    },
+    "caseB": {
+      "label": "梅花 乙 1984-02-04 23:40 女 上海",
+      "facts": [
+        {
+          "key": "meihua_gua",
+          "value": "风水涣·体坎用巽",
+          "scope": {
+            "layer": "本命",
+            "palace": "本卦"
+          },
+          "derivedFrom": [
+            "上卦巽下卦坎，动第6爻"
+          ]
+        },
+        {
+          "key": "meihua_ti_element",
+          "value": "水",
+          "scope": {
+            "layer": "本命",
+            "palace": "本卦"
+          },
+          "derivedFrom": [
+            "本卦体卦坎"
+          ]
+        },
+        {
+          "key": "meihua_yong_element",
+          "value": "木",
+          "scope": {
+            "layer": "本命",
+            "palace": "本卦"
+          },
+          "derivedFrom": [
+            "本卦用卦巽"
+          ]
+        },
+        {
+          "key": "meihua_gua",
+          "value": "山雷颐·体震用艮",
+          "scope": {
+            "layer": "本命",
+            "palace": "互卦"
+          },
+          "derivedFrom": [
+            "上卦巽下卦坎，动第6爻"
+          ]
+        },
+        {
+          "key": "meihua_ti_element",
+          "value": "木",
+          "scope": {
+            "layer": "本命",
+            "palace": "互卦"
+          },
+          "derivedFrom": [
+            "互卦体卦震"
+          ]
+        },
+        {
+          "key": "meihua_yong_element",
+          "value": "土",
+          "scope": {
+            "layer": "本命",
+            "palace": "互卦"
+          },
+          "derivedFrom": [
+            "互卦用卦艮"
+          ]
+        },
+        {
+          "key": "meihua_gua",
+          "value": "坎·体坎用坎",
+          "scope": {
+            "layer": "本命",
+            "palace": "变卦"
+          },
+          "derivedFrom": [
+            "上卦巽下卦坎，动第6爻"
+          ]
+        },
+        {
+          "key": "meihua_ti_element",
+          "value": "水",
+          "scope": {
+            "layer": "本命",
+            "palace": "变卦"
+          },
+          "derivedFrom": [
+            "变卦体卦坎"
+          ]
+        },
+        {
+          "key": "meihua_yong_element",
+          "value": "水",
+          "scope": {
+            "layer": "本命",
+            "palace": "变卦"
+          },
+          "derivedFrom": [
+            "变卦用卦坎"
+          ]
+        }
+      ]
+    }
+  },
   "yili": {
     "caseA": {
       "label": "易理·乾为天 111111（阳爻六位）",

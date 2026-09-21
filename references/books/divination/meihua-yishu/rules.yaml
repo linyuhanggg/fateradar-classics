@@ -193,7 +193,7 @@ rules:
     start_line: 1691
     end_line: 1691
   quote: 以卦五行明生克比和之理，此一用卦。
-  applicable_to: []
+  applicable_to: {any_of: [{all_of: [{key: meihua_ti_element, value: 木, scope: {palace: 本卦}}, {key: meihua_yong_element, value: 木, scope: {palace: 本卦}}]}, {all_of: [{key: meihua_ti_element, value: 火, scope: {palace: 本卦}}, {key: meihua_yong_element, value: 火, scope: {palace: 本卦}}]}, {all_of: [{key: meihua_ti_element, value: 土, scope: {palace: 本卦}}, {key: meihua_yong_element, value: 土, scope: {palace: 本卦}}]}, {all_of: [{key: meihua_ti_element, value: 金, scope: {palace: 本卦}}, {key: meihua_yong_element, value: 金, scope: {palace: 本卦}}]}, {all_of: [{key: meihua_ti_element, value: 水, scope: {palace: 本卦}}, {key: meihua_yong_element, value: 水, scope: {palace: 本卦}}]}]}
   caveats:
   - 比和虽吉，仍须看互变
   school: null

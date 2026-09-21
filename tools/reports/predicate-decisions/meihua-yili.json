@@ -128,11 +128,12 @@
     {
       "book": "divination/meihua-yishu",
       "rule_id": "MEIHUAYISHU-013",
-      "decision": "unmapped",
-      "reason_class": "fact-not-emitted",
+      "decision": "mapped",
       "missing_fact": "体用五行关系（比和＝同五行）",
       "evidence_from_statement": "体用同五行（如皆木皆金）为比和，事顺利、平稳；不主大吉大凶。",
-      "note": "同上，比和是体用五行的取值关系，非可用 key。"
+      "note": "同上，比和是体用五行的取值关系，非可用 key。",
+      "mapped_by": "meihua-tiyong-map.json",
+      "mapped_note": "t215 映射：条件＝**本卦**的体卦与用卦五行相同（五支枚举）。脚注 t215 同时把 V15 的 scope.palace 例外扩到梅花（角色：本卦／互卦／变卦）——引擎一直按角色产出，不扩展就写不出「只看本卦那一对」。「事顺利、平稳；不主大吉大凶」是断语，未表达。"
     },
     {
       "book": "divination/meihua-yishu",

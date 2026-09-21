@@ -164,6 +164,8 @@ ART_EMIT_KEYS: dict[str, frozenset[str]] = {
     ),
     # t211：小六壬（参考术，不在六术门禁内）——执行层有 6 条记录，引擎本来就产事实。
     "xiaoliuren": frozenset({"xiaoliuren_palace"}),
+    # 梅花（参考术）：体用五行由引擎产出（`ti.element`／`yong.element`，t215）。
+    "meihua": frozenset({"meihua_ti_element", "meihua_yong_element", "meihua_gua"}),
     # 易理（参考术）：与六爻同源——同一卦的爻层事实共用（t214）。
     "yili": frozenset({"yao_yinyang"}),
     "qizheng": frozenset({"qizheng_ascendant", "xingyao", "gongwei", "xiudu", "miaowang"}),
