@@ -20,7 +20,7 @@ from pathlib import Path
 import yaml
 
 ROOT = Path(__file__).resolve().parents[1]
-CLASSICS_REV = "c5bba9be08c4080107a5a001a6e0b886ae34a558"
+CLASSICS_REV = "6321186f6aeebd0737537c45286153eedf49adb4"
 SAMPLE = ROOT / "tools/reports/facts-sample.json"
 PRODUCT_ROOT = Path("/Users/sync/code/cosmic-fortune-lab")
 
@@ -327,7 +327,7 @@ def make_manifest(output: Path, export_file: Path | None) -> dict:
         "predicateLanguage": "fateradar-rules-v3",
         "classicsRev": CLASSICS_REV,
         "sourceHeadAtAudit": git_head(ROOT),
-        "classicsRevChanged": False,
+        "classicsRevChanged": True,
         "factFixture": {
             "path": "tools/reports/facts-sample.json",
             "sha256": sample_hash,

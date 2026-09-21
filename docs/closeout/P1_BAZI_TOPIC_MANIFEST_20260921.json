@@ -1,0 +1,1388 @@
+{
+  "manifestVersion": "fateradar-p1-bazi-topic-handoff-v1",
+  "generatedAt": "2026-09-22",
+  "generatedBy": "tools/generate-p1-bazi-manifest.py",
+  "art": "bazi",
+  "ruleSchema": "fateradar-rules-v2",
+  "predicateLanguage": "fateradar-rules-v3",
+  "classicsRev": "6321186f6aeebd0737537c45286153eedf49adb4",
+  "sourceHeadAtAudit": "6321186f6aeebd0737537c45286153eedf49adb4",
+  "classicsRevChanged": true,
+  "factFixture": {
+    "path": "tools/reports/facts-sample.json",
+    "sha256": "d53d3a8a64ca11826950276791ef2e84abaa7f01d914fdfb1e38f51dc200b47c",
+    "caseCount": 26,
+    "generator": {
+      "command": "bun scripts/dump-facts.ts /Users/sync/code/fateradar-classics",
+      "repo": "/Users/sync/code/cosmic-fortune-lab",
+      "repoHead": "93c7245db2dbfa82e3a8ce69cc74ab318391b988",
+      "script": "/Users/sync/code/cosmic-fortune-lab/scripts/dump-facts.ts",
+      "scriptSha256": "d21e8f48638653199e56363d844ab7ad4b9c461c1beba2fea6edabeb7d6105f2",
+      "productFixtureSha256": "d53d3a8a64ca11826950276791ef2e84abaa7f01d914fdfb1e38f51dc200b47c",
+      "workingTreeInputs": "scripts/dump-facts.ts 和 tests/fixtures/facts-sample.json 在生成时均为未提交改动。"
+    },
+    "differenceFromClassicsHead": "git diff --numstat: 11974\t1559\ttools/reports/facts-sample.json; 原因是按产品生成器重建事实快照，新增时间层/逐柱事实和覆盖样盘。"
+  },
+  "contract": {
+    "pipeline": "Fact -> RuleEvaluation -> TopicEvaluation",
+    "states": {
+      "satisfied": "满足",
+      "not_satisfied": "不满足",
+      "unknown": "信息不足"
+    },
+    "unknownPolicy": "缺少事实、未实现时间层、性别/计数/关系合同不完整时保留 unknown；不写成 not_satisfied。",
+    "verifiedPolicy": "本 manifest 的所有规则 verified=false；只有固定样盘、明确验收证据和人工出处核验完成后才可改变。",
+    "layerPolicy": "本批采纳规则仅适用于本命。流年/流月/大运不是把本命规则复制过去；需要产品提供明确 scope 条件后另行验收。"
+  },
+  "topics": {
+    "overview": {
+      "status": "partial",
+      "ruleIds": [
+        "DITIANSUICHA-003",
+        "DITIANSUICHA-DR-03",
+        "DITIANSUICHA-DR-06",
+        "SANMINGTONGH-015",
+        "DITIANSUICHA-032",
+        "SANMINGTONGH-097",
+        "YUANHAIZIPIN-YR-03"
+      ],
+      "requiredFactKeys": [
+        "rizhu",
+        "yueling",
+        "zhi",
+        "rizhu_strength",
+        "geju",
+        "yongshen",
+        "canggan"
+      ],
+      "blockers": [
+        "本命结构事实可以进入证据层；格局成败、用神细节和岁运触发尚未形成每条规则的完整条件。"
+      ]
+    },
+    "personality": {
+      "status": "partial",
+      "ruleIds": [
+        "DITIANSUICHA-003",
+        "DITIANSUICHA-004",
+        "DITIANSUICHA-DR-03",
+        "SANMINGTONGH-097"
+      ],
+      "requiredFactKeys": [
+        "rizhu",
+        "rizhu_strength",
+        "shishen",
+        "canggan"
+      ],
+      "blockers": [
+        "只交付稳定倾向证据；不交付绝对人格标签，需产品保留现实核对问题。"
+      ]
+    },
+    "career": {
+      "status": "partial",
+      "ruleIds": [
+        "DITIANSUICHA-DR-06",
+        "SANMINGTONGH-015"
+      ],
+      "requiredFactKeys": [
+        "rizhu_strength",
+        "shishen",
+        "geju",
+        "yongshen",
+        "yueling"
+      ],
+      "blockers": [
+        "职位/行业、完整格局成败、取用和岁运窗口不是当前三条规则的充分条件。"
+      ]
+    },
+    "wealth": {
+      "status": "partial",
+      "ruleIds": [
+        "DITIANSUICHA-DR-06"
+      ],
+      "requiredFactKeys": [
+        "rizhu_strength",
+        "shishen",
+        "yongshen"
+      ],
+      "blockers": [
+        "当前只可交付‘极弱/从格入口’结构证据；财星位置、身财两停、比劫夺财和岁运尚未形成完整合同。"
+      ]
+    },
+    "relationship": {
+      "status": "partial",
+      "ruleIds": [
+        "SANMINGTONGH-015",
+        "DITIANSUICHA-032"
+      ],
+      "requiredFactKeys": [
+        "rizhu",
+        "zhi",
+        "shishen"
+      ],
+      "blockers": [
+        "配偶星/日支作用、性别条件和关系反馈没有完整 Fact 合同；冲合只能作为结构证据。"
+      ]
+    },
+    "health": {
+      "status": "partial",
+      "ruleIds": [
+        "DITIANSUICHA-003",
+        "DITIANSUICHA-DR-03"
+      ],
+      "requiredFactKeys": [
+        "rizhu_strength",
+        "yueling",
+        "gan_element"
+      ],
+      "blockers": [
+        "没有医疗、症状、作息等产品事实；古籍结构只能做传统养生关注点，不能做诊断或事件预测。"
+      ]
+    }
+  },
+  "rules": [
+    {
+      "ruleId": "DITIANSUICHA-003",
+      "art": "bazi",
+      "book": "bazi/ditiansui-chanwei",
+      "primaryTopic": "overview",
+      "secondaryTopics": [
+        "personality",
+        "health"
+      ],
+      "status": "adopted_as_provisional_evidence",
+      "role": "supporting",
+      "statement": "八字干支顺接相生（天干气弱地支生之、地支气衰天干辅之）为吉；反克为害则凶；命贵中和，偏枯终于有损。",
+      "quote": "如天干气弱，地支生之，地支神衰，天干辅之，皆为有情而顺则吉；",
+      "anchor": {
+        "file": "sources/fulltext/bazi/ditiansui-chanwei/fulltext.md",
+        "startLine": 29,
+        "endLine": 29
+      },
+      "applicableTo": [
+        {
+          "key": "rizhu_strength",
+          "value": "中和"
+        }
+      ],
+      "requiredFacts": [
+        {
+          "key": "rizhu_strength",
+          "scope": {
+            "layer": "本命"
+          },
+          "predicateScope": [
+            {}
+          ]
+        }
+      ],
+      "applicableLayers": [
+        "本命"
+      ],
+      "unsupportedLayers": [
+        "大运",
+        "流年",
+        "流月",
+        "流日"
+      ],
+      "semantics": {
+        "satisfied": "applicable_to 整体满足，且返回完整 matched Fact 见证集。",
+        "notSatisfied": "所需 FactKey 存在，但 applicable_to 没有命中；不能解释为现实事件不发生。",
+        "unknown": "任一所需 FactKey 缺失，或产品传入的时间层/柱位不在本 manifest 合同内；不能降级为 not_satisfied。"
+      },
+      "caveats": [
+        "本派核心立场",
+        "\"奇异\"（如四戊午、四癸亥）一律按偏枯论，不得作奇格高论",
+        "只表示中和/偏枯的传统结构证据，不是现实吉凶或健康诊断。"
+      ],
+      "exceptionsAndBreaks": [
+        "本派核心立场",
+        "\"奇异\"（如四戊午、四癸亥）一律按偏枯论，不得作奇格高论",
+        "只表示中和/偏枯的传统结构证据，不是现实吉凶或健康诊断。"
+      ],
+      "conflictNotes": [
+        "不同古籍/流派对旺衰、格局与冲合解释可能冲突；产品保留来源与 unknown，不在本仓合并成分数。"
+      ],
+      "verification": {
+        "verified": false,
+        "fixtureSource": "tools/reports/facts-sample.json",
+        "positive": {
+          "case": "cov1_bazi_2",
+          "factCount": 81,
+          "verdict": "满足",
+          "confidence": 1.0,
+          "factCoverage": 1.0,
+          "missingFactKeys": []
+        },
+        "negative": {
+          "case": "caseA",
+          "factCount": 80,
+          "verdict": "不满足",
+          "confidence": 1.0,
+          "factCoverage": 1.0,
+          "missingFactKeys": []
+        },
+        "boundary": {
+          "case": "cov1_bazi_2",
+          "factCount": 80,
+          "verdict": "信息不足",
+          "confidence": 0.0,
+          "factCoverage": 0.0,
+          "missingFactKeys": [
+            "rizhu_strength"
+          ]
+        },
+        "result": "三态固定样盘通过；这只证明求值和输入覆盖，不证明现实预测准确率。"
+      },
+      "export": {
+        "artifact": "dist/rules/bazi.json",
+        "classicsRev": "6321186f6aeebd0737537c45286153eedf49adb4",
+        "generatedFile": ".local/staging/p1-bazi-20260921/rules/bazi.json",
+        "sha256": "95d884c10cd01864d1d252f52ea3b51483acffb87c45a4d75b4945d8729e3625"
+      }
+    },
+    {
+      "ruleId": "DITIANSUICHA-004",
+      "art": "bazi",
+      "book": "bazi/ditiansui-chanwei",
+      "primaryTopic": "personality",
+      "secondaryTopics": [],
+      "status": "adopted_as_provisional_evidence",
+      "role": "method",
+      "statement": "知命之人当平心定气，不取奇偏怪格；以中和为贵。",
+      "quote": "然总以中和为主，犹如人之无病，由四肢健量，营卫调和，行止自如，诸多安适：设使有病，则忧多乐少，举动艰难，如遇良药则可岂不为终身之患乎？",
+      "anchor": {
+        "file": "sources/fulltext/bazi/ditiansui-chanwei/fulltext.md",
+        "startLine": 3691,
+        "endLine": 3691
+      },
+      "applicableTo": [
+        {
+          "key": "rizhu_strength",
+          "value": "中和"
+        }
+      ],
+      "requiredFacts": [
+        {
+          "key": "rizhu_strength",
+          "scope": {
+            "layer": "本命"
+          },
+          "predicateScope": [
+            {}
+          ]
+        }
+      ],
+      "applicableLayers": [
+        "本命"
+      ],
+      "unsupportedLayers": [
+        "大运",
+        "流年",
+        "流月",
+        "流日"
+      ],
+      "semantics": {
+        "satisfied": "applicable_to 整体满足，且返回完整 matched Fact 见证集。",
+        "notSatisfied": "所需 FactKey 存在，但 applicable_to 没有命中；不能解释为现实事件不发生。",
+        "unknown": "任一所需 FactKey 缺失，或产品传入的时间层/柱位不在本 manifest 合同内；不能降级为 not_satisfied。"
+      },
+      "caveats": [
+        "方法论层面",
+        "任氏多次警告勿信\"奇格\"",
+        "这是方法论/取舍倾向证据，不能生成固定人格标签。"
+      ],
+      "exceptionsAndBreaks": [
+        "方法论层面",
+        "任氏多次警告勿信\"奇格\"",
+        "这是方法论/取舍倾向证据，不能生成固定人格标签。"
+      ],
+      "conflictNotes": [
+        "不同古籍/流派对旺衰、格局与冲合解释可能冲突；产品保留来源与 unknown，不在本仓合并成分数。"
+      ],
+      "verification": {
+        "verified": false,
+        "fixtureSource": "tools/reports/facts-sample.json",
+        "positive": {
+          "case": "cov1_bazi_2",
+          "factCount": 81,
+          "verdict": "满足",
+          "confidence": 1.0,
+          "factCoverage": 1.0,
+          "missingFactKeys": []
+        },
+        "negative": {
+          "case": "caseA",
+          "factCount": 80,
+          "verdict": "不满足",
+          "confidence": 1.0,
+          "factCoverage": 1.0,
+          "missingFactKeys": []
+        },
+        "boundary": {
+          "case": "cov1_bazi_2",
+          "factCount": 80,
+          "verdict": "信息不足",
+          "confidence": 0.0,
+          "factCoverage": 0.0,
+          "missingFactKeys": [
+            "rizhu_strength"
+          ]
+        },
+        "result": "三态固定样盘通过；这只证明求值和输入覆盖，不证明现实预测准确率。"
+      },
+      "export": {
+        "artifact": "dist/rules/bazi.json",
+        "classicsRev": "6321186f6aeebd0737537c45286153eedf49adb4",
+        "generatedFile": ".local/staging/p1-bazi-20260921/rules/bazi.json",
+        "sha256": "95d884c10cd01864d1d252f52ea3b51483acffb87c45a4d75b4945d8729e3625"
+      }
+    },
+    {
+      "ruleId": "DITIANSUICHA-DR-03",
+      "art": "bazi",
+      "book": "bazi/ditiansui-chanwei",
+      "primaryTopic": "health",
+      "secondaryTopics": [
+        "overview",
+        "personality"
+      ],
+      "status": "adopted_as_provisional_evidence",
+      "role": "supporting",
+      "statement": "命贵中和；五行流通、刚柔得宜者富贵；偏枯至极者贫贱。",
+      "quote": "由此观之，命贵中和，偏枯终于有损；",
+      "anchor": {
+        "file": "sources/fulltext/bazi/ditiansui-chanwei/fulltext.md",
+        "startLine": 48,
+        "endLine": 48
+      },
+      "applicableTo": [
+        {
+          "key": "rizhu_strength",
+          "value": "中和"
+        }
+      ],
+      "requiredFacts": [
+        {
+          "key": "rizhu_strength",
+          "scope": {
+            "layer": "本命"
+          },
+          "predicateScope": [
+            {}
+          ]
+        }
+      ],
+      "applicableLayers": [
+        "本命"
+      ],
+      "unsupportedLayers": [
+        "大运",
+        "流年",
+        "流月",
+        "流日"
+      ],
+      "semantics": {
+        "satisfied": "applicable_to 整体满足，且返回完整 matched Fact 见证集。",
+        "notSatisfied": "所需 FactKey 存在，但 applicable_to 没有命中；不能解释为现实事件不发生。",
+        "unknown": "任一所需 FactKey 缺失，或产品传入的时间层/柱位不在本 manifest 合同内；不能降级为 not_satisfied。"
+      },
+      "caveats": [
+        "\"中和\"不是五行皆有",
+        "是五行配合得宜、流通无阻",
+        "健康主题只可显示传统平衡/作息关注点；不作疾病、风险概率或医疗建议。"
+      ],
+      "exceptionsAndBreaks": [
+        "\"中和\"不是五行皆有",
+        "是五行配合得宜、流通无阻",
+        "健康主题只可显示传统平衡/作息关注点；不作疾病、风险概率或医疗建议。"
+      ],
+      "conflictNotes": [
+        "不同古籍/流派对旺衰、格局与冲合解释可能冲突；产品保留来源与 unknown，不在本仓合并成分数。"
+      ],
+      "verification": {
+        "verified": false,
+        "fixtureSource": "tools/reports/facts-sample.json",
+        "positive": {
+          "case": "cov1_bazi_2",
+          "factCount": 81,
+          "verdict": "满足",
+          "confidence": 1.0,
+          "factCoverage": 1.0,
+          "missingFactKeys": []
+        },
+        "negative": {
+          "case": "caseA",
+          "factCount": 80,
+          "verdict": "不满足",
+          "confidence": 1.0,
+          "factCoverage": 1.0,
+          "missingFactKeys": []
+        },
+        "boundary": {
+          "case": "cov1_bazi_2",
+          "factCount": 80,
+          "verdict": "信息不足",
+          "confidence": 0.0,
+          "factCoverage": 0.0,
+          "missingFactKeys": [
+            "rizhu_strength"
+          ]
+        },
+        "result": "三态固定样盘通过；这只证明求值和输入覆盖，不证明现实预测准确率。"
+      },
+      "export": {
+        "artifact": "dist/rules/bazi.json",
+        "classicsRev": "6321186f6aeebd0737537c45286153eedf49adb4",
+        "generatedFile": ".local/staging/p1-bazi-20260921/rules/bazi.json",
+        "sha256": "95d884c10cd01864d1d252f52ea3b51483acffb87c45a4d75b4945d8729e3625"
+      }
+    },
+    {
+      "ruleId": "DITIANSUICHA-DR-06",
+      "art": "bazi",
+      "book": "bazi/ditiansui-chanwei",
+      "primaryTopic": "career",
+      "secondaryTopics": [
+        "wealth",
+        "overview"
+      ],
+      "status": "adopted_as_provisional_evidence",
+      "role": "structural",
+      "statement": "日主无根极弱时，从最旺之神：从财、从煞、从儿（食伤）、从势（多势并旺）；运忌扶身。",
+      "quote": "变者，必从五行之气势也，曰从财，曰从官杀，曰从食伤，曰从强，曰从弱，曰从势，曰一行得气，曰两气成形。",
+      "anchor": {
+        "file": "sources/fulltext/bazi/ditiansui-chanwei/fulltext.md",
+        "startLine": 2665,
+        "endLine": 2665
+      },
+      "applicableTo": [
+        {
+          "key": "rizhu_strength",
+          "value": "极弱"
+        }
+      ],
+      "requiredFacts": [
+        {
+          "key": "rizhu_strength",
+          "scope": {
+            "layer": "本命"
+          },
+          "predicateScope": [
+            {}
+          ]
+        }
+      ],
+      "applicableLayers": [
+        "本命"
+      ],
+      "unsupportedLayers": [
+        "大运",
+        "流年",
+        "流月",
+        "流日"
+      ],
+      "semantics": {
+        "satisfied": "applicable_to 整体满足，且返回完整 matched Fact 见证集。",
+        "notSatisfied": "所需 FactKey 存在，但 applicable_to 没有命中；不能解释为现实事件不发生。",
+        "unknown": "任一所需 FactKey 缺失，或产品传入的时间层/柱位不在本 manifest 合同内；不能降级为 not_satisfied。"
+      },
+      "caveats": [
+        "从格判定严格，必须无根",
+        "运逢扶身则破",
+        "“从格”还需要无根、最旺之神和破格条件；本条谓词只表达极弱入口，不能单独判从财/从煞。"
+      ],
+      "exceptionsAndBreaks": [
+        "从格判定严格，必须无根",
+        "运逢扶身则破",
+        "“从格”还需要无根、最旺之神和破格条件；本条谓词只表达极弱入口，不能单独判从财/从煞。"
+      ],
+      "conflictNotes": [
+        "不同古籍/流派对旺衰、格局与冲合解释可能冲突；产品保留来源与 unknown，不在本仓合并成分数。"
+      ],
+      "verification": {
+        "verified": false,
+        "fixtureSource": "tools/reports/facts-sample.json",
+        "positive": {
+          "case": "cov1_bazi_1",
+          "factCount": 83,
+          "verdict": "满足",
+          "confidence": 1.0,
+          "factCoverage": 1.0,
+          "missingFactKeys": []
+        },
+        "negative": {
+          "case": "caseA",
+          "factCount": 80,
+          "verdict": "不满足",
+          "confidence": 1.0,
+          "factCoverage": 1.0,
+          "missingFactKeys": []
+        },
+        "boundary": {
+          "case": "cov1_bazi_1",
+          "factCount": 82,
+          "verdict": "信息不足",
+          "confidence": 0.0,
+          "factCoverage": 0.0,
+          "missingFactKeys": [
+            "rizhu_strength"
+          ]
+        },
+        "result": "三态固定样盘通过；这只证明求值和输入覆盖，不证明现实预测准确率。"
+      },
+      "export": {
+        "artifact": "dist/rules/bazi.json",
+        "classicsRev": "6321186f6aeebd0737537c45286153eedf49adb4",
+        "generatedFile": ".local/staging/p1-bazi-20260921/rules/bazi.json",
+        "sha256": "95d884c10cd01864d1d252f52ea3b51483acffb87c45a4d75b4945d8729e3625"
+      }
+    },
+    {
+      "ruleId": "SANMINGTONGH-015",
+      "art": "bazi",
+      "book": "bazi/sanming-tonghui",
+      "primaryTopic": "overview",
+      "secondaryTopics": [
+        "relationship",
+        "career"
+      ],
+      "status": "adopted_as_provisional_evidence",
+      "role": "structural",
+      "statement": "申子辰、巳酉丑、寅午戌、亥卯未为三合组合；原文强调三字缺一不能直接按三合化局论。",
+      "quote": "考厯家申子辰初之氣俱起於下漏一刻巳酉丑初之氣俱起於二十六刻寅午戊初之氣俱起於五十一刻亥卯未初之氣俱起於七十六刻氣皆起於同刻是天地自然之理也故謂之三合或以三合者如人一身之運用也精乃天之元氣乃神之本是以精為氣之母神為氣之子子母互相生精氣神全而不\n散之為合葢謂支屬人元故以此論之如申子辰申乃子之母辰乃子之子申乃水生子乃水旺辰乃水氣生即産旺即成庫即收有生有成有收萬物得始得終乃自然之理故申子申為水局若三字缺其一則化不成局不可以三合化局論葢天地間道理兩則化一隂一陽之謂也三則化三生萬物之謂也巳\n酉丑寅午戍亥卯未皆然五行不言土者四行皆頼土成局萬物皆歸藏於土故也若辰戌丑未全自作土局論凡命有合要得局為佳假令丙丁生人見亥卯未印巳酉丑財為得局見寅午戍火為本局申子辰水為官局辰戍丑未土為傷局又如丙人見巳酉丑丁人見寅午戍為三位禄格謂丙以巳為禄丁以",
+      "anchor": {
+        "file": "sources/fulltext/bazi/sanming-tonghui/fulltext.md",
+        "startLine": 1216,
+        "endLine": 1218
+      },
+      "applicableTo": {
+        "any_of": [
+          {
+            "all_of": [
+              {
+                "key": "zhi",
+                "value": "申"
+              },
+              {
+                "key": "zhi",
+                "value": "子"
+              },
+              {
+                "key": "zhi",
+                "value": "辰"
+              }
+            ]
+          },
+          {
+            "all_of": [
+              {
+                "key": "zhi",
+                "value": "巳"
+              },
+              {
+                "key": "zhi",
+                "value": "酉"
+              },
+              {
+                "key": "zhi",
+                "value": "丑"
+              }
+            ]
+          },
+          {
+            "all_of": [
+              {
+                "key": "zhi",
+                "value": "寅"
+              },
+              {
+                "key": "zhi",
+                "value": "午"
+              },
+              {
+                "key": "zhi",
+                "value": "戌"
+              }
+            ]
+          },
+          {
+            "all_of": [
+              {
+                "key": "zhi",
+                "value": "亥"
+              },
+              {
+                "key": "zhi",
+                "value": "卯"
+              },
+              {
+                "key": "zhi",
+                "value": "未"
+              }
+            ]
+          }
+        ]
+      },
+      "requiredFacts": [
+        {
+          "key": "zhi",
+          "scope": {
+            "layer": "本命",
+            "pillar": [
+              "year",
+              "month",
+              "day",
+              "time"
+            ]
+          },
+          "predicateScope": [
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {}
+          ]
+        }
+      ],
+      "applicableLayers": [
+        "本命"
+      ],
+      "unsupportedLayers": [
+        "大运",
+        "流年",
+        "流月",
+        "流日"
+      ],
+      "semantics": {
+        "satisfied": "applicable_to 整体满足，且返回完整 matched Fact 见证集。",
+        "notSatisfied": "所需 FactKey 存在，但 applicable_to 没有命中；不能解释为现实事件不发生。",
+        "unknown": "任一所需 FactKey 缺失，或产品传入的时间层/柱位不在本 manifest 合同内；不能降级为 not_satisfied。"
+      },
+      "caveats": [
+        "半合与三合全局要区分；是否成势仍须结合命局。",
+        "三合组合是结构证据，不等于关系事件、职业结果或富贵结论；半合、成势和冲破仍待判断。",
+        "产品评估时只传本命四柱。"
+      ],
+      "exceptionsAndBreaks": [
+        "半合与三合全局要区分；是否成势仍须结合命局。",
+        "三合组合是结构证据，不等于关系事件、职业结果或富贵结论；半合、成势和冲破仍待判断。",
+        "产品评估时只传本命四柱。"
+      ],
+      "conflictNotes": [
+        "不同古籍/流派对旺衰、格局与冲合解释可能冲突；产品保留来源与 unknown，不在本仓合并成分数。"
+      ],
+      "verification": {
+        "verified": false,
+        "fixtureSource": "tools/reports/facts-sample.json",
+        "positive": {
+          "case": "cov1_bazi_1",
+          "factCount": 83,
+          "verdict": "满足",
+          "confidence": 1.0,
+          "factCoverage": 1.0,
+          "missingFactKeys": []
+        },
+        "negative": {
+          "case": "caseA",
+          "factCount": 80,
+          "verdict": "不满足",
+          "confidence": 1.0,
+          "factCoverage": 1.0,
+          "missingFactKeys": []
+        },
+        "boundary": {
+          "case": "cov1_bazi_1",
+          "factCount": 79,
+          "verdict": "信息不足",
+          "confidence": 0.0,
+          "factCoverage": 0.0,
+          "missingFactKeys": [
+            "zhi"
+          ]
+        },
+        "result": "三态固定样盘通过；这只证明求值和输入覆盖，不证明现实预测准确率。"
+      },
+      "export": {
+        "artifact": "dist/rules/bazi.json",
+        "classicsRev": "6321186f6aeebd0737537c45286153eedf49adb4",
+        "generatedFile": ".local/staging/p1-bazi-20260921/rules/bazi.json",
+        "sha256": "95d884c10cd01864d1d252f52ea3b51483acffb87c45a4d75b4945d8729e3625"
+      }
+    },
+    {
+      "ruleId": "DITIANSUICHA-032",
+      "art": "bazi",
+      "book": "bazi/ditiansui-chanwei",
+      "primaryTopic": "relationship",
+      "secondaryTopics": [
+        "overview"
+      ],
+      "status": "adopted_as_provisional_evidence",
+      "role": "structural",
+      "statement": "坎（子）离（午）相对；子午冲为坎离战；处理须看月令支援与寒暖。",
+      "quote": "子午为坎离，宰天地之中气。",
+      "anchor": {
+        "file": "sources/fulltext/bazi/ditiansui-chanwei/fulltext.md",
+        "startLine": 102,
+        "endLine": 102
+      },
+      "applicableTo": {
+        "all_of": [
+          {
+            "key": "zhi",
+            "value": "子"
+          },
+          {
+            "key": "zhi",
+            "value": "午"
+          }
+        ]
+      },
+      "requiredFacts": [
+        {
+          "key": "zhi",
+          "scope": {
+            "layer": "本命",
+            "pillar": [
+              "year",
+              "month",
+              "day",
+              "time"
+            ]
+          },
+          "predicateScope": [
+            {},
+            {}
+          ]
+        }
+      ],
+      "applicableLayers": [
+        "本命"
+      ],
+      "unsupportedLayers": [
+        "大运",
+        "流年",
+        "流月",
+        "流日"
+      ],
+      "semantics": {
+        "satisfied": "applicable_to 整体满足，且返回完整 matched Fact 见证集。",
+        "notSatisfied": "所需 FactKey 存在，但 applicable_to 没有命中；不能解释为现实事件不发生。",
+        "unknown": "任一所需 FactKey 缺失，或产品传入的时间层/柱位不在本 manifest 合同内；不能降级为 not_satisfied。"
+      },
+      "caveats": [
+        "与寒暖章互参",
+        "子午相对只表示传统冲动/变化证据，不能写成分手、疾病或迁移事件。",
+        "规则谓词未写 layer，产品必须只传本命四柱。"
+      ],
+      "exceptionsAndBreaks": [
+        "与寒暖章互参",
+        "子午相对只表示传统冲动/变化证据，不能写成分手、疾病或迁移事件。",
+        "规则谓词未写 layer，产品必须只传本命四柱。"
+      ],
+      "conflictNotes": [
+        "不同古籍/流派对旺衰、格局与冲合解释可能冲突；产品保留来源与 unknown，不在本仓合并成分数。"
+      ],
+      "verification": {
+        "verified": false,
+        "fixtureSource": "tools/reports/facts-sample.json",
+        "positive": {
+          "case": "caseA",
+          "factCount": 80,
+          "verdict": "满足",
+          "confidence": 1.0,
+          "factCoverage": 1.0,
+          "missingFactKeys": []
+        },
+        "negative": {
+          "case": "caseB",
+          "factCount": 78,
+          "verdict": "不满足",
+          "confidence": 1.0,
+          "factCoverage": 1.0,
+          "missingFactKeys": []
+        },
+        "boundary": {
+          "case": "caseA",
+          "factCount": 76,
+          "verdict": "信息不足",
+          "confidence": 0.0,
+          "factCoverage": 0.0,
+          "missingFactKeys": [
+            "zhi"
+          ]
+        },
+        "result": "三态固定样盘通过；这只证明求值和输入覆盖，不证明现实预测准确率。"
+      },
+      "export": {
+        "artifact": "dist/rules/bazi.json",
+        "classicsRev": "6321186f6aeebd0737537c45286153eedf49adb4",
+        "generatedFile": ".local/staging/p1-bazi-20260921/rules/bazi.json",
+        "sha256": "95d884c10cd01864d1d252f52ea3b51483acffb87c45a4d75b4945d8729e3625"
+      }
+    },
+    {
+      "ruleId": "SANMINGTONGH-097",
+      "art": "bazi",
+      "book": "bazi/sanming-tonghui",
+      "primaryTopic": "personality",
+      "secondaryTopics": [
+        "overview"
+      ],
+      "status": "adopted_as_provisional_evidence",
+      "role": "structural",
+      "statement": "八专日（甲寅、乙卯、丁未、己未、庚申、辛酉、壬子、癸丑）日坐禄旺之地，身强为论；以月令它格为用。",
+      "quote": "〔支干同類如甲寅乙卯丙午丁未庚申辛酉壬子癸丑戊午己未戊戌己丑是也行運會煞必主不祿以其恃強與煞相争煞竟尅身故也〕",
+      "anchor": {
+        "file": "sources/fulltext/bazi/sanming-tonghui/fulltext.md",
+        "startLine": 9713,
+        "endLine": 9713
+      },
+      "applicableTo": {
+        "any_of": [
+          {
+            "all_of": [
+              {
+                "key": "gan",
+                "value": "甲",
+                "scope": {
+                  "pillar": "day"
+                }
+              },
+              {
+                "key": "zhi",
+                "value": "寅",
+                "scope": {
+                  "pillar": "day"
+                }
+              }
+            ]
+          },
+          {
+            "all_of": [
+              {
+                "key": "gan",
+                "value": "乙",
+                "scope": {
+                  "pillar": "day"
+                }
+              },
+              {
+                "key": "zhi",
+                "value": "卯",
+                "scope": {
+                  "pillar": "day"
+                }
+              }
+            ]
+          },
+          {
+            "all_of": [
+              {
+                "key": "gan",
+                "value": "丁",
+                "scope": {
+                  "pillar": "day"
+                }
+              },
+              {
+                "key": "zhi",
+                "value": "未",
+                "scope": {
+                  "pillar": "day"
+                }
+              }
+            ]
+          },
+          {
+            "all_of": [
+              {
+                "key": "gan",
+                "value": "己",
+                "scope": {
+                  "pillar": "day"
+                }
+              },
+              {
+                "key": "zhi",
+                "value": "未",
+                "scope": {
+                  "pillar": "day"
+                }
+              }
+            ]
+          },
+          {
+            "all_of": [
+              {
+                "key": "gan",
+                "value": "庚",
+                "scope": {
+                  "pillar": "day"
+                }
+              },
+              {
+                "key": "zhi",
+                "value": "申",
+                "scope": {
+                  "pillar": "day"
+                }
+              }
+            ]
+          },
+          {
+            "all_of": [
+              {
+                "key": "gan",
+                "value": "辛",
+                "scope": {
+                  "pillar": "day"
+                }
+              },
+              {
+                "key": "zhi",
+                "value": "酉",
+                "scope": {
+                  "pillar": "day"
+                }
+              }
+            ]
+          },
+          {
+            "all_of": [
+              {
+                "key": "gan",
+                "value": "壬",
+                "scope": {
+                  "pillar": "day"
+                }
+              },
+              {
+                "key": "zhi",
+                "value": "子",
+                "scope": {
+                  "pillar": "day"
+                }
+              }
+            ]
+          },
+          {
+            "all_of": [
+              {
+                "key": "gan",
+                "value": "癸",
+                "scope": {
+                  "pillar": "day"
+                }
+              },
+              {
+                "key": "zhi",
+                "value": "丑",
+                "scope": {
+                  "pillar": "day"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      "requiredFacts": [
+        {
+          "key": "gan",
+          "scope": {
+            "layer": "本命",
+            "pillar": "day"
+          },
+          "predicateScope": [
+            {
+              "pillar": "day"
+            },
+            {
+              "pillar": "day"
+            },
+            {
+              "pillar": "day"
+            },
+            {
+              "pillar": "day"
+            },
+            {
+              "pillar": "day"
+            },
+            {
+              "pillar": "day"
+            },
+            {
+              "pillar": "day"
+            },
+            {
+              "pillar": "day"
+            }
+          ]
+        },
+        {
+          "key": "zhi",
+          "scope": {
+            "layer": "本命",
+            "pillar": "day"
+          },
+          "predicateScope": [
+            {
+              "pillar": "day"
+            },
+            {
+              "pillar": "day"
+            },
+            {
+              "pillar": "day"
+            },
+            {
+              "pillar": "day"
+            },
+            {
+              "pillar": "day"
+            },
+            {
+              "pillar": "day"
+            },
+            {
+              "pillar": "day"
+            },
+            {
+              "pillar": "day"
+            }
+          ]
+        }
+      ],
+      "applicableLayers": [
+        "本命"
+      ],
+      "unsupportedLayers": [
+        "大运",
+        "流年",
+        "流月",
+        "流日"
+      ],
+      "semantics": {
+        "satisfied": "applicable_to 整体满足，且返回完整 matched Fact 见证集。",
+        "notSatisfied": "所需 FactKey 存在，但 applicable_to 没有命中；不能解释为现实事件不发生。",
+        "unknown": "任一所需 FactKey 缺失，或产品传入的时间层/柱位不在本 manifest 合同内；不能降级为 not_satisfied。"
+      },
+      "caveats": [
+        "八专日身强需看是否过旺无制",
+        "过旺需食伤、财、官为用",
+        "八专日只说明日柱组合入口；身强、过旺、制化和月令仍是未表达条件。"
+      ],
+      "exceptionsAndBreaks": [
+        "八专日身强需看是否过旺无制",
+        "过旺需食伤、财、官为用",
+        "八专日只说明日柱组合入口；身强、过旺、制化和月令仍是未表达条件。"
+      ],
+      "conflictNotes": [
+        "不同古籍/流派对旺衰、格局与冲合解释可能冲突；产品保留来源与 unknown，不在本仓合并成分数。"
+      ],
+      "verification": {
+        "verified": false,
+        "fixtureSource": "tools/reports/facts-sample.json",
+        "positive": {
+          "case": "caseA",
+          "factCount": 80,
+          "verdict": "满足",
+          "confidence": 1.0,
+          "factCoverage": 1.0,
+          "missingFactKeys": []
+        },
+        "negative": {
+          "case": "caseB",
+          "factCount": 78,
+          "verdict": "不满足",
+          "confidence": 1.0,
+          "factCoverage": 1.0,
+          "missingFactKeys": []
+        },
+        "boundary": {
+          "case": "caseA",
+          "factCount": 76,
+          "verdict": "信息不足",
+          "confidence": 0.5,
+          "factCoverage": 0.5,
+          "missingFactKeys": [
+            "gan"
+          ]
+        },
+        "result": "三态固定样盘通过；这只证明求值和输入覆盖，不证明现实预测准确率。"
+      },
+      "export": {
+        "artifact": "dist/rules/bazi.json",
+        "classicsRev": "6321186f6aeebd0737537c45286153eedf49adb4",
+        "generatedFile": ".local/staging/p1-bazi-20260921/rules/bazi.json",
+        "sha256": "95d884c10cd01864d1d252f52ea3b51483acffb87c45a4d75b4945d8729e3625"
+      }
+    },
+    {
+      "ruleId": "YUANHAIZIPIN-YR-03",
+      "art": "bazi",
+      "book": "bazi/yuanhai-ziping",
+      "primaryTopic": "overview",
+      "secondaryTopics": [
+        "career",
+        "wealth"
+      ],
+      "status": "adopted_as_provisional_evidence",
+      "role": "structural",
+      "statement": "流年层若大运—流年关系分类为相冲、相克或相刑，记为原文所称的忌象候选；仅作结构证据，仍须结合命局制化与喜忌，不直接断现实事件。",
+      "quote": "大运不宜与太岁相剋、相冲者凶；更刑、冲、相剋者亦忌。",
+      "anchor": {
+        "file": "sources/fulltext/bazi/yuanhai-ziping/fulltext.md",
+        "startLine": 182,
+        "endLine": 182
+      },
+      "applicableTo": {
+        "any_of": [
+          {
+            "key": "dayun_liunian_relation_class",
+            "value": "相冲",
+            "scope": {
+              "layer": "流年"
+            }
+          },
+          {
+            "key": "dayun_liunian_relation_class",
+            "value": "相克",
+            "scope": {
+              "layer": "流年"
+            }
+          },
+          {
+            "key": "dayun_liunian_relation_class",
+            "value": "相刑",
+            "scope": {
+              "layer": "流年"
+            }
+          }
+        ]
+      },
+      "requiredFacts": [
+        {
+          "key": "dayun_liunian_relation_class",
+          "scope": {
+            "layer": "流年",
+            "year": "selected"
+          },
+          "predicateScope": [
+            {
+              "layer": "流年"
+            },
+            {
+              "layer": "流年"
+            },
+            {
+              "layer": "流年"
+            }
+          ]
+        }
+      ],
+      "applicableLayers": [
+        "流年"
+      ],
+      "unsupportedLayers": [
+        "本命",
+        "大运",
+        "流月",
+        "流日"
+      ],
+      "semantics": {
+        "satisfied": "applicable_to 整体满足，且返回完整 matched Fact 见证集。",
+        "notSatisfied": "所需 FactKey 存在，但 applicable_to 没有命中；不能解释为现实事件不发生。",
+        "unknown": "任一所需 FactKey 缺失，或产品传入的时间层/柱位不在本 manifest 合同内；不能降级为 not_satisfied。"
+      },
+      "caveats": [
+        "本书框架已确立但细节不如后世精密。",
+        "关系分类事实必须已按当前选定流年过滤，并保留 scope.year；跨年份混入会污染求值。",
+        "“忌象候选”不是现实凶事结论；制化、喜忌和命局作用尚未由本条表达。",
+        "只记录相冲/相克/相刑的流年关系忌象候选，不等于现实凶事；必须先按当前选定年份过滤事实。",
+        "制化、喜忌和命局作用尚未由本条表达，产品应保留后续 unknown。"
+      ],
+      "exceptionsAndBreaks": [
+        "本书框架已确立但细节不如后世精密。",
+        "关系分类事实必须已按当前选定流年过滤，并保留 scope.year；跨年份混入会污染求值。",
+        "“忌象候选”不是现实凶事结论；制化、喜忌和命局作用尚未由本条表达。",
+        "只记录相冲/相克/相刑的流年关系忌象候选，不等于现实凶事；必须先按当前选定年份过滤事实。",
+        "制化、喜忌和命局作用尚未由本条表达，产品应保留后续 unknown。"
+      ],
+      "conflictNotes": [
+        "不同古籍/流派对旺衰、格局与冲合解释可能冲突；产品保留来源与 unknown，不在本仓合并成分数。"
+      ],
+      "verification": {
+        "verified": false,
+        "fixtureSource": "tools/reports/facts-sample.json",
+        "positive": {
+          "case": "caseFlowYear",
+          "factCount": 15,
+          "verdict": "满足",
+          "confidence": 1.0,
+          "factCoverage": 1.0,
+          "missingFactKeys": []
+        },
+        "negative": {
+          "case": "caseFlowYear",
+          "factCount": 12,
+          "verdict": "不满足",
+          "confidence": 1.0,
+          "factCoverage": 1.0,
+          "missingFactKeys": []
+        },
+        "boundary": {
+          "case": "caseFlowYearUnknown",
+          "factCount": 9,
+          "verdict": "信息不足",
+          "confidence": 1.0,
+          "factCoverage": 1.0,
+          "missingFactKeys": []
+        },
+        "result": "三态固定样盘通过；这只证明求值和输入覆盖，不证明现实预测准确率。"
+      },
+      "export": {
+        "artifact": "dist/rules/bazi.json",
+        "classicsRev": "6321186f6aeebd0737537c45286153eedf49adb4",
+        "generatedFile": ".local/staging/p1-bazi-20260921/rules/bazi.json",
+        "sha256": "95d884c10cd01864d1d252f52ea3b51483acffb87c45a4d75b4945d8729e3625"
+      }
+    }
+  ],
+  "statusSummary": {
+    "adopted": [
+      "DITIANSUICHA-003",
+      "DITIANSUICHA-004",
+      "DITIANSUICHA-032",
+      "DITIANSUICHA-DR-03",
+      "DITIANSUICHA-DR-06",
+      "SANMINGTONGH-015",
+      "SANMINGTONGH-097",
+      "YUANHAIZIPIN-YR-03"
+    ],
+    "blocked": [
+      {
+        "ruleId": "DITIANSUICHA-DR-02",
+        "status": "blocked",
+        "reason": "V14 低对应度：固定锚点 L10521 只有“合有宜不宜”，没有三合/方局取值；当前谓词的具体组合不能从该 quote 追溯，退回等待更精确出处。"
+      },
+      {
+        "ruleId": "DITIANSUICHA-012",
+        "status": "blocked",
+        "reason": "谓词只列十神/格局值，未表达声明中的月令、透干、司令和破格条件；固定样盘 24/24 满足，不能作为区分性规则。"
+      },
+      {
+        "ruleId": "SANMINGTONGH-102",
+        "status": "blocked",
+        "reason": "声明含年柱、时柱、日坐、身强和比劫冲夺，谓词仅为无柱位 shishen OR；固定样盘 24/24 满足。"
+      },
+      {
+        "ruleId": "YUANHAIZIPIN-023",
+        "status": "blocked",
+        "reason": "正财谓词无柱位/身能任财条件，且古代妻财语义不能直接转成现代伴侣或收入结论。"
+      },
+      {
+        "ruleId": "YUANHAIZIPIN-024",
+        "status": "blocked",
+        "reason": "声明明确女命、夫宫和子星，但当前 FactKey 没有性别/夫宫/子星完整合同；现谓词命中不能判关系结果。"
+      },
+      {
+        "ruleId": "SANMINGTONGH-069",
+        "status": "blocked",
+        "reason": "同类女命/正官夫星规则缺少性别和夫宫条件，保持 unknown。"
+      },
+      {
+        "ruleId": "DITIANSUICHA-031",
+        "status": "blocked",
+        "reason": "当前固定样盘没有同时命中卯、酉的正例；需增加独立固定正例并确认本命层绑定后再进入 P1。"
+      },
+      {
+        "ruleId": "SANMINGTONGH-R-02",
+        "status": "blocked",
+        "reason": "谓词表达月令藏干+透干，但固定锚点 L3218 为偏财长段，未支持该陈述；等待正确出处后再评估。"
+      },
+      {
+        "ruleId": "YUANHAIZIPIN-008",
+        "status": "blocked",
+        "reason": "同样的月令藏干+透干谓词锚到‘假令月令有用神’，不足以支持完整陈述。"
+      }
+    ],
+    "rejectedRound50Drafts": [
+      "SANMINGTONGH-051",
+      "SANMINGTONGH-065",
+      "SANMINGTONGH-066",
+      "YUANHAIZIPIN-014",
+      "WX-05-02"
+    ],
+    "rejectedInvalidScope": [
+      {
+        "ruleId": "TAIWEIFU-004",
+        "rejectedField": "scope.palace=伪宫名",
+        "remainingBaseCondition": "ziwei_star=天马（旧条件保留但不进入本 P1 八字 manifest）"
+      }
+    ]
+  },
+  "productFactGaps": [
+    {
+      "topic": "relationship",
+      "gap": "性别/配偶星/夫宫与关系反馈的明确合同",
+      "state": "阻塞",
+      "action": "产品仓定义 FactKey 或输入结构；未定义前保持 unknown。"
+    },
+    {
+      "topic": "all",
+      "gap": "流年、流月、流日的逐柱干支/关系事实与层级绑定",
+      "state": "部分可用",
+      "action": "产品仓按时间层过滤事实；古籍仓不把本命规则复制为岁运结论。"
+    },
+    {
+      "topic": "wealth",
+      "gap": "财星位置、身财两停、比劫夺财与岁运触发",
+      "state": "阻塞",
+      "action": "补齐事实和复合谓词后另开授权批次。"
+    },
+    {
+      "topic": "health",
+      "gap": "作息、症状、体检等现实资料",
+      "state": "产品边界",
+      "action": "仅用于用户核对，不由古籍规则仓生成诊断。"
+    },
+    {
+      "topic": "all",
+      "gap": "多现/计数、跨柱同支关系",
+      "state": "阻塞",
+      "action": "增加计数或关系事实合同；当前不能用重复无 scope 谓词近似。"
+    }
+  ],
+  "round50Audit": {
+    "draftMap": "tools/reports/shensha-position-map.json",
+    "draftStatus": "not_accepted",
+    "fneInventory": "tools/reports/fne-residue-inventory.json",
+    "scopePillarProof": {
+      "result": "通过：生成器为 shensha 事实写入 scope.layer=本命 与 scope.pillar=year/month/day/time；固定样盘重建后与产品 fixture 字节一致。",
+      "generator": "bun scripts/dump-facts.ts /Users/sync/code/fateradar-classics",
+      "proofFile": "tools/reports/p1-bazi-20260921/shensha-scope-proof.json",
+      "sampleSha256": "d53d3a8a64ca11826950276791ef2e84abaa7f01d914fdfb1e38f51dc200b47c",
+      "shenshaFactCount": 289,
+      "semanticLimit": "柱位存在不证明神煞代理等价于建禄/专禄格局。"
+    },
+    "wx0502": "退回：只能写同柱禄神/驿马保守子集；跨柱同支未覆盖，且当前锚点仅卷名。",
+    "ziweiPseudoPalace": {
+      "ruleId": "TAIWEIFU-004",
+      "result": "退回",
+      "failureLog": "tools/reports/p1-bazi-20260921/round50-schema-before.json"
+    },
+    "ledger": {
+      "command": "python3 tools/test-ledger-consistency.py",
+      "result": "ALL LEDGER-CONSISTENCY OK; 464 条未映射均有 reason_class。"
+    }
+  }
+}

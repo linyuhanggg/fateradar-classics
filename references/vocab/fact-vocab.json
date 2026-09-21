@@ -68,7 +68,8 @@
     "xiaoliuren_lunar_month",
     "xiaoliuren_lunar_day",
     "xiaoliuren_count_good",
-    "gan_element"
+    "gan_element",
+    "dayun_liunian_relation_class"
   ],
   "values": {
     "meihua_gua": [],
@@ -679,6 +680,13 @@
       "入庙得地",
       "落陷失地",
       "平宫"
+    ],
+    "dayun_liunian_relation_class": [
+      "相冲",
+      "相克",
+      "相刑",
+      "其他",
+      "信息不足"
     ]
   },
   "any": "*"

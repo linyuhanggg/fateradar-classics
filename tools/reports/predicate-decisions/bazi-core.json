@@ -800,8 +800,9 @@
       "applicable_to_yaml": "[]",
       "evidence_from_statement": "专禄格（日坐临官禄位）禄旺，需财官食伤为用以平衡…",
       "note": "『日坐临官禄位』＝日干＋日支的组合，引擎无日支事实（作业书点名）；只取日干会与建禄/阳刃条混同。",
-      "reason_class": "fact-not-emitted",
-      "missing_fact": "日支（日坐临官禄位）"
+      "missing_fact": "已核的专禄（日干与日支临官）关系事实/出处",
+      "reason_class": "condition-too-vague",
+      "audit_note_20260921": "原文锚点只写飞禄/合禄等长段，未在固定行证明“专禄（日坐临官）”；虽然样盘证明 shensha 带 scope.pillar，但神煞命中不能替代已核的日柱专禄事实。"
     },
     {
       "book": "bazi/sanming-tonghui",
@@ -852,8 +853,9 @@
       "applicable_to_yaml": "[]",
       "evidence_from_statement": "阳干见月刃为阳刃格；以官、煞、食、伤制刃为用；不取格而以扶抑论。",
       "note": "『月刃』须月支落在日干刃位（月支未产出，作业书点名）；虽含官煞食伤，但本条主体是月刃格，单取十神会丢条件。",
-      "reason_class": "fact-not-emitted",
-      "missing_fact": "月支与阳刃神煞"
+      "missing_fact": "已核的阳干+月刃格局事实/出处",
+      "reason_class": "condition-too-vague",
+      "audit_note_20260921": "原文锚点缺少“阳干见月刃”的完整句（相邻行才出现月刃）；神煞柱位事实已证实，但 shensha→阳刃格代理等价性与锚点仍未通过。"
     },
     {
       "book": "bazi/sanming-tonghui",
@@ -862,8 +864,9 @@
       "applicable_to_yaml": "[]",
       "evidence_from_statement": "日干临官在月支为建禄；不取格而以扶抑论；常以月外财、官、食、伤为用。",
       "note": "建禄的判定条件即『日干临官在月支』，需要月支事实（未产出）。",
-      "reason_class": "fact-not-emitted",
-      "missing_fact": "月支（日干临官在月支）"
+      "missing_fact": "已核的日干临官+月支建禄事实/出处",
+      "reason_class": "condition-too-vague",
+      "audit_note_20260921": "原文锚点讨论月令与破格，未在固定行证明“日干临官在月支”；月柱 shensha 事实存在，不能据代理补齐原文条件。"
     },
     {
       "book": "bazi/sanming-tonghui",
@@ -1103,8 +1106,9 @@
       "applicable_to_yaml": "[]",
       "evidence_from_statement": "建禄格（日干临官在月）与阳刃格（阳干刃在月）皆不取月令格局，而以扶抑论。",
       "note": "两个格的判定条件都落在月支，引擎未产出月支（作业书点名）；引文亦为不相干的杂气财官句，不能作锚。",
-      "reason_class": "fact-not-emitted",
-      "missing_fact": "月支（日干临官在月 / 阳干刃在月）"
+      "missing_fact": "正确原文锚点与建禄/阳刃格局事实合同",
+      "reason_class": "condition-too-vague",
+      "audit_note_20260921": "固定锚点“杂气财官，刑冲则发”与建禄/阳刃陈述不相干；退回，等待正确原文锚点和格局事实合同。"
     },
     {
       "book": "bazi/yuanhai-ziping",
@@ -1127,12 +1131,11 @@
     {
       "book": "bazi/yuanhai-ziping",
       "rule_id": "YUANHAIZIPIN-YR-03",
-      "decision": "unmapped",
-      "applicable_to_yaml": "[]",
-      "evidence_from_statement": "太岁为流年；大运与流年合参看命局变化。",
-      "note": "『合参』总则且所需大运/流年干支未产出（作业书点名）。",
-      "reason_class": "fact-not-emitted",
-      "missing_fact": "大运干支与流年干支"
+      "decision": "mapped",
+      "applicable_to_yaml": "any_of:\n- key: dayun_liunian_relation_class\n  value: 相冲\n  scope:\n    layer: 流年\n- key: dayun_liunian_relation_class\n  value: 相克\n  scope:\n    layer: 流年\n- key: dayun_liunian_relation_class\n  value: 相刑\n  scope:\n    layer: 流年",
+      "evidence_from_statement": "流年层大运—流年关系分类为相冲、相克或相刑时，记为忌象候选结构证据。",
+      "note": "已具备 dayun_liunian_relation_class 与 scope.year；规则只表达结构候选，不表达制化、喜忌或现实事件。",
+      "source": "tools/audit-flow-year-yr03.py"
     },
     {
       "book": "bazi/yuanhai-ziping",
@@ -1236,5 +1239,7 @@
       "note": "十干合化形式（名字与所记规则）→ not-a-condition：属体例/取法，非「本条只论某日主」的适用范围条件。注：机器分类报 multi-pair-same-key（因 rizhu 值域含十天干），但那是把体例误读成条件。",
       "reason_class": "not-a-condition"
     }
-  ]
+  ],
+  "audited_at": "2026-09-21",
+  "audit_basis": "P1 六主题 Goal：Round 50 映射审计；退回无充分出处/语义合同的草稿。"
 }

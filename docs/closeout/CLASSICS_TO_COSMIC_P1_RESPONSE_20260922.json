@@ -1,0 +1,283 @@
+{
+  "schema": "fateradar-classics-p1-cross-repo-response-v1",
+  "date": "2026-09-22",
+  "request": "/Users/sync/code/cosmic-fortune-lab/docs/closeout/COSMIC_TO_CLASSICS_P1_REQUEST_20260922.md",
+  "status": "partial",
+  "decision": "one_flow_year_rule_adopted",
+  "classicsRev": "6321186f6aeebd0737537c45286153eedf49adb4",
+  "factsFixture": {
+    "path": "tools/reports/facts-sample.json",
+    "layersPresent": [
+      "本命",
+      "大运",
+      "流年"
+    ],
+    "reason": "cosmic 已重建带流年年份 scope 和关系分类枚举的共享 fixture；YUANHAIZIPIN-YR-03 已形成保守结构规则，但制化救应与喜忌作用仍未表达。",
+    "sha256": "d53d3a8a64ca11826950276791ef2e84abaa7f01d914fdfb1e38f51dc200b47c",
+    "caseCount": 26,
+    "generatorCommand": "bun scripts/dump-facts.ts /Users/sync/code/fateradar-classics",
+    "productFixtureCompared": true,
+    "comparison": "cmp -s tools/reports/facts-sample.json /Users/sync/code/cosmic-fortune-lab/tests/fixtures/facts-sample.json => identical",
+    "remainingSemanticGaps": [
+      "制化救应条件",
+      "喜忌及刃杀财官印绶作用分类",
+      "关系作用于命局的 transit_effect_semantics"
+    ]
+  },
+  "candidates": [
+    {
+      "ruleId": "SANMINGTONGH-010",
+      "primaryTopic": "overview",
+      "status": "blocked",
+      "source": {
+        "book": "bazi/sanming-tonghui",
+        "anchor": {
+          "file": "sources/fulltext/bazi/sanming-tonghui/fulltext.md",
+          "startLine": 1080,
+          "endLine": 1083
+        }
+      },
+      "missingContract": [
+        {
+          "key": "rescue_condition",
+          "definition": "原局或大运制化、相合救应是否成立；不能用名称出现代理"
+        }
+      ],
+      "availableFacts": [
+        "liunian_gan",
+        "liunian_zhi",
+        "natal_day_gan",
+        "liunian_natal_relation"
+      ],
+      "whyBlocked": "基础流年事实已由 cosmic fixture 提供；原文仍要求制化救应，且当前规则 applicable_to 为空，无法安全改成单一流年谓词。",
+      "requiredFixtures": [
+        "satisfied",
+        "not_satisfied",
+        "unknown"
+      ],
+      "verified": false
+    },
+    {
+      "ruleId": "SANMINGTONGH-011",
+      "primaryTopic": "overview",
+      "status": "blocked",
+      "source": {
+        "book": "bazi/sanming-tonghui",
+        "anchor": {
+          "file": "sources/fulltext/bazi/sanming-tonghui/fulltext.md",
+          "startLine": 1084,
+          "endLine": 1084
+        }
+      },
+      "missingContract": [
+        {
+          "key": "natal_favorable_context",
+          "definition": "命局喜忌、刃杀财官印绶分类及救应"
+        },
+        {
+          "key": "suiyun_binglin_semantics",
+          "definition": "并临结构如何结合刃杀/财官印绶和命局喜忌解释；不能只用结构真假"
+        }
+      ],
+      "availableFacts": [
+        "liunian_gan_zhi",
+        "dayun_gan_zhi",
+        "dayun_liunian_relation",
+        "suiyun_binglin",
+        "natal_favorable_context"
+      ],
+      "whyBlocked": "参考求值器的显式未知传递已修正并通过固定三态诊断；产品 matcher 尚需同一契约回归。另缺刃杀财官印绶、喜忌和救应语义。",
+      "requiredFixtures": [
+        "satisfied",
+        "not_satisfied",
+        "unknown"
+      ],
+      "verified": false,
+      "fixtureCases": {
+        "satisfied": "caseFlowYearBinglin",
+        "not_satisfied": "caseFlowYear",
+        "unknown": "caseFlowYearUnknown"
+      }
+    },
+    {
+      "ruleId": "YUANHAIZIPIN-YR-03",
+      "primaryTopic": "overview",
+      "secondaryTopics": [
+        "career",
+        "wealth"
+      ],
+      "status": "adopted_as_provisional_evidence",
+      "role": "structural",
+      "statement": "流年层若大运—流年关系分类为相冲、相克或相刑，记为原文所称的忌象候选；仅作结构证据，仍须结合命局制化与喜忌，不直接断现实事件。",
+      "quote": "大运不宜与太岁相剋、相冲者凶；更刑、冲、相剋者亦忌。",
+      "anchor": {
+        "file": "sources/fulltext/bazi/yuanhai-ziping/fulltext.md",
+        "startLine": 182,
+        "endLine": 182
+      },
+      "applicableTo": {
+        "any_of": [
+          {
+            "key": "dayun_liunian_relation_class",
+            "value": "相冲",
+            "scope": {
+              "layer": "流年"
+            }
+          },
+          {
+            "key": "dayun_liunian_relation_class",
+            "value": "相克",
+            "scope": {
+              "layer": "流年"
+            }
+          },
+          {
+            "key": "dayun_liunian_relation_class",
+            "value": "相刑",
+            "scope": {
+              "layer": "流年"
+            }
+          }
+        ]
+      },
+      "requiredFacts": [
+        {
+          "key": "dayun_liunian_relation_class",
+          "scope": {
+            "layer": "流年",
+            "year": "selected"
+          },
+          "predicateScope": [
+            {
+              "layer": "流年"
+            },
+            {
+              "layer": "流年"
+            },
+            {
+              "layer": "流年"
+            }
+          ]
+        }
+      ],
+      "applicableLayers": [
+        "流年"
+      ],
+      "unsupportedLayers": [
+        "本命",
+        "大运",
+        "流月",
+        "流日"
+      ],
+      "semantics": {
+        "satisfied": "applicable_to 整体满足，且返回完整 matched Fact 见证集。",
+        "notSatisfied": "所需 FactKey 存在，但 applicable_to 没有命中；不能解释为现实事件不发生。",
+        "unknown": "任一所需 FactKey 缺失，或产品传入的时间层/柱位不在本 manifest 合同内；不能降级为 not_satisfied。"
+      },
+      "caveats": [
+        "本书框架已确立但细节不如后世精密。",
+        "关系分类事实必须已按当前选定流年过滤，并保留 scope.year；跨年份混入会污染求值。",
+        "“忌象候选”不是现实凶事结论；制化、喜忌和命局作用尚未由本条表达。",
+        "只记录相冲/相克/相刑的流年关系忌象候选，不等于现实凶事；必须先按当前选定年份过滤事实。",
+        "制化、喜忌和命局作用尚未由本条表达，产品应保留后续 unknown。"
+      ],
+      "conflictNotes": [
+        "不同古籍/流派对旺衰、格局与冲合解释可能冲突；产品保留来源与 unknown，不在本仓合并成分数。"
+      ],
+      "fixtureCases": {
+        "positive": "caseFlowYear@2025",
+        "negative": "caseFlowYear@2026",
+        "unknown": "caseFlowYearUnknown@2100"
+      },
+      "verification": {
+        "verified": false,
+        "fixtureSource": "tools/reports/facts-sample.json",
+        "positive": {
+          "case": "caseFlowYear",
+          "factCount": 15,
+          "verdict": "满足",
+          "confidence": 1.0,
+          "factCoverage": 1.0,
+          "missingFactKeys": []
+        },
+        "negative": {
+          "case": "caseFlowYear",
+          "factCount": 12,
+          "verdict": "不满足",
+          "confidence": 1.0,
+          "factCoverage": 1.0,
+          "missingFactKeys": []
+        },
+        "boundary": {
+          "case": "caseFlowYearUnknown",
+          "factCount": 9,
+          "verdict": "信息不足",
+          "confidence": 1.0,
+          "factCoverage": 1.0,
+          "missingFactKeys": []
+        },
+        "result": "三态固定样盘通过；这只证明求值和输入覆盖，不证明现实预测准确率。"
+      },
+      "export": {
+        "artifact": "dist/rules/bazi.json",
+        "classicsRev": "6321186f6aeebd0737537c45286153eedf49adb4",
+        "generatedFile": ".local/staging/p1-bazi-20260921/rules/bazi.json",
+        "sha256": "95d884c10cd01864d1d252f52ea3b51483acffb87c45a4d75b4945d8729e3625"
+      },
+      "verified": false
+    },
+    {
+      "ruleId": "DITIANSUICHA-051",
+      "primaryTopic": "overview",
+      "status": "blocked",
+      "source": {
+        "book": "bazi/ditiansui-chanwei",
+        "anchor": {
+          "file": "sources/fulltext/bazi/ditiansui-chanwei/fulltext.md",
+          "startLine": 13400,
+          "endLine": 13400
+        }
+      },
+      "missingContract": [
+        {
+          "key": "dayun_direction",
+          "definition": "大运作为作用方向的可计算表示"
+        },
+        {
+          "key": "liunian_activation",
+          "definition": "流年作为发动层的可计算表示"
+        },
+        {
+          "key": "yongshen_effective",
+          "definition": "用神在岁运中的得力状态"
+        },
+        {
+          "key": "jishen_empowered",
+          "definition": "忌神在岁运中的得权状态"
+        }
+      ],
+      "whyBlocked": "这是岁运合参原则；方向、流年和本命喜忌事实已有，但仍缺用神得力、忌神得权及制化救应的可计算语义和固定三态样盘，不能安全形成 satisfied/not_satisfied 规则。",
+      "requiredFixtures": [
+        "satisfied",
+        "not_satisfied",
+        "unknown"
+      ],
+      "verified": false,
+      "availableFacts": [
+        "dayun_direction",
+        "liunian_gan_zhi",
+        "natal_favorable_context"
+      ]
+    }
+  ],
+  "productAction": "产品仓已提供 dayun_liunian_relation_class 及 scope.year；请消费 YUANHAIZIPIN-YR-03 的结构性“忌象候选”结果，并保留制化/喜忌缺口为 unknown。其余 blocked 候选不自行补规则。",
+  "classicsAction": "已采纳 YUANHAIZIPIN-YR-03 为 verified=false 的保守流年结构证据，并将 CLASSICS_REV 更新为包含该规则的 6321186f6aeebd0737537c45286153eedf49adb4；其余候选保持 blocked，不恢复 440 条 unmapped 目标。",
+  "evaluationAudit": {
+    "command": "python3 tools/audit-flow-year-unknown.py",
+    "result": "PASS_AFTER_REFERENCE_FIX_AND_YR03",
+    "report": "tools/reports/p1-bazi-20260922/flow-year-yr03.json",
+    "previousFailureReport": "tools/reports/p1-bazi-20260922/flow-year-unknown-before.json",
+    "reason": "参考求值器和产品 matcher 均能传递显式信息不足；YUANHAIZIPIN-YR-03 在按 scope.year 过滤后通过满足/不满足/信息不足三态样盘。",
+    "fixtureSha256": "d53d3a8a64ca11826950276791ef2e84abaa7f01d914fdfb1e38f51dc200b47c"
+  }
+}

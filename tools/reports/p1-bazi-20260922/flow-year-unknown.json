@@ -1,0 +1,84 @@
+{
+  "command": "python3 tools/audit-flow-year-unknown.py",
+  "fixtureSha256": "d53d3a8a64ca11826950276791ef2e84abaa7f01d914fdfb1e38f51dc200b47c",
+  "affectedCandidate": "SANMINGTONGH-011",
+  "probe": {
+    "rule_id": "AUDIT_ONLY_NOT_FOR_EXPORT",
+    "applicable_to": [
+      {
+        "key": "suiyun_binglin",
+        "value": "是",
+        "scope": {
+          "layer": "流年"
+        }
+      }
+    ]
+  },
+  "ruleAdopted": false,
+  "passed": true,
+  "cases": [
+    {
+      "case": "caseFlowYearBinglin",
+      "year": 1993,
+      "expected": "满足",
+      "actual": "满足",
+      "passed": true,
+      "facts": [
+        {
+          "key": "suiyun_binglin",
+          "value": "是",
+          "scope": {
+            "layer": "流年",
+            "year": 1993
+          },
+          "derivedFrom": [
+            "dayun",
+            "liunian"
+          ]
+        }
+      ]
+    },
+    {
+      "case": "caseFlowYear",
+      "year": 2026,
+      "expected": "不满足",
+      "actual": "不满足",
+      "passed": true,
+      "facts": [
+        {
+          "key": "suiyun_binglin",
+          "value": "否",
+          "scope": {
+            "layer": "流年",
+            "year": 2026
+          },
+          "derivedFrom": [
+            "dayun",
+            "liunian"
+          ]
+        }
+      ]
+    },
+    {
+      "case": "caseFlowYearUnknown",
+      "year": 2100,
+      "expected": "信息不足",
+      "actual": "信息不足",
+      "passed": true,
+      "facts": [
+        {
+          "key": "suiyun_binglin",
+          "value": "信息不足",
+          "scope": {
+            "layer": "流年",
+            "year": 2100
+          },
+          "derivedFrom": [
+            "dayun",
+            "liunian"
+          ]
+        }
+      ]
+    }
+  ]
+}
