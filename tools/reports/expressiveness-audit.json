@@ -1,0 +1,79 @@
+{
+ "report": "谓词语言表达力审计（哪些条件写得出、哪些写不出）",
+ "generated_by": "t207",
+ "method": "按 37 轮施工中**实际遇到**的条件形状归类，每类给证据（规则 id / 工具 / 轮次），而不是按关键词扫（t207 试过：29 个「时序」关键词命中里，多数是「丑之终、寅之始」这类历法描述或应期断法，不是适用条件——扫出来会把需求夸大）。",
+ "classes": [
+  {
+   "id": "groups-nesting",
+   "name": "复合条件／嵌套",
+   "status": "supported",
+   "evidence": "v3 原生支持 any_of/all_of/none_of + same；t188 起还实际用上了「嵌套 all_of + 内层 same」",
+   "demand": "已消化"
+  },
+  {
+   "id": "cross-key-equality",
+   "name": "跨键取值相等（X 的取值等于 Y 的取值）",
+   "status": "solved-by-enumeration",
+   "evidence": "t188/t189 奇门「X临Y」柱干类、t194 六爻持世、t195 八字透干、t197 用神旬空、t204 六壬四课完整",
+   "demand": "已消化（写法是枚举有限域＋分支内配对，不用通配、不加原语）",
+   "caveat": "t195 修过一次判据误报：成对分支不算「覆盖恒真」"
+  },
+  {
+   "id": "universal-exclusion",
+   "name": "全称／排除（「四课全无直接克」）",
+   "status": "solved-by-none-of",
+   "evidence": "t200 LIURENZHIYIN-004：none_of 排除 + 正句保证键在场（否则缺键真空成立、三态也判不出信息不足）",
+   "demand": "已消化"
+  },
+  {
+   "id": "or-enumeration",
+   "name": "或位穷举（覆盖某键整个值域）",
+   "status": "supported-with-risk",
+   "evidence": "t182 恒真登记册 64 条（域覆盖 2、域完备键单值 42、通配 20）",
+   "demand": "写得出，但**容易变成恒真**；已登记名单供消费方过滤"
+  },
+  {
+   "id": "counting",
+   "name": "计数（有且仅有 N 个：独发／独静／两现）",
+   "status": "MISSING",
+   "evidence": "ZENGSHANBUYI-007（用神两现…一爻发动／两爻俱动俱静）、ZENGSHANBUYI-021（五爻静一爻动为独发）",
+   "demand": "约 2–3 条；v3 无计数语义 → 这是**唯一有真实需求的语言缺口**",
+   "candidates": [
+    {
+     "rule_id": "ZENGSHANBUYI-007",
+     "statement": "用神两现时，若仅一爻发动则取动爻；若两爻俱动或俱静，须再择其旺者。旬空、月破等取舍不可脱离实际占验机械套用。",
+     "unmapped": true,
+     "triage_kind": "single-pair"
+    },
+    {
+     "rule_id": "ZENGSHANBUYI-021",
+     "statement": "五爻静一爻动为独发，五爻动一爻静为独静；事之成败与应期仍由用神判断，不得舍用神而执独发、独静断事。",
+     "unmapped": true,
+     "triage_kind": "single-pair"
+    }
+   ]
+  },
+  {
+   "id": "temporal",
+   "name": "时序（先…后…）",
+   "status": "little-applicability-demand",
+   "evidence": "t207 读过全部 29 个时序关键词命中：多为历法描述（「丑之终、寅之始」）或应期/断法（「破而后立」「出月不破」），**不是适用条件**",
+   "demand": "适用条件侧几乎没有需求；时序信息在断语里，不在 applicable_to 里"
+  },
+  {
+   "id": "cross-key-relation",
+   "name": "跨键关系（生克冲合墓绝）",
+   "status": "expressible-but-explosive",
+   "evidence": "按有限表枚举可写（地支 12×12 支对 × 爻位 6×6 ≈ 千级分支/条）；t175/t178 只做了**成组关系**（三合/六冲/刑）",
+   "demand": "约 7–9 条真实需求；**不建议**用谓词枚举硬写——应改由引擎产出判定名（如 liuyao 的具名状态那样）"
+  },
+  {
+   "id": "derived-judgement",
+   "name": "派生判定（元神／忌神、变卦与体用关系、七政格局）",
+   "status": "engine-side",
+   "evidence": "引擎只把这类判定写进解读文本，未产成事实（t203 查过：liuyao 的元神/忌神只有散文）；t38 轮查过七政无格局计算",
+   "demand": "数十条；属**引擎投入**，不是语言问题"
+  }
+ ],
+ "conclusion": "目标里列的四类方向：**复合条件/嵌套**语言原生支持、**多事实联合**已用枚举配对解决、**时序**在适用条件侧几乎没有需求；真正的语言缺口只剩**计数**（约 2–3 条）。其余大头是**引擎未产出派生判定**与**契约上永久留空的通论/体例**，都不是语言问题。"
+}

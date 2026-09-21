@@ -90,6 +90,8 @@ jobs:
       - run: python tools/test-domain-check.py
       # 低对应度分诊：产出「人眼读单」（字符串方法判不了锚点，故只列线索）
       - run: python tools/test-low-correspondence.py
+      # 表达力审计：哪些条件写得出、哪些写不出（含「计数类候选仍未映射」的提醒）
+      - run: python tools/test-expressiveness-audit.py
       - run: python tools/test-check-ganzhi-sequences.py
       # 步长筛查：与「已登记待核」集合对账（现有 3 条全部指向奇门 p281 第 6 列的「巳/卯」，
       # 已在 ocr-batch-0280-0298.md 的 doubt_281 登记，需原生读图复读一次才能结案）。
