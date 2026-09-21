@@ -156,6 +156,8 @@ ART_EMIT_KEYS: dict[str, frozenset[str]] = {
             "bian_yao_zhi",
             # 具名状态三键：引擎 analysis 已算（用神／月建强度／爻活动），此前只进解读文本。
             "liuyao_yongshen",
+            "liuyao_yongshen_zhi",
+            "liuyao_yongshen_state",
             "liuyao_month_strength",
             "liuyao_activity",
             "liuyao_kong",

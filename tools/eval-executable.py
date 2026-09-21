@@ -95,8 +95,10 @@ FIELD_MAP: dict[str, tuple[str, dict | None, str]] = {
     "ascendant.sign": ("qizheng_ascendant", None, "上升点所在宫；t205 起产出（引擎按 Math.floor(asc/30)%12 取）"),
     "four.ke": ("liuren_ke", None, "四课各课上神；t205 起产出（与 sanchuan 同形）"),
     "shehai.method": ("liuren_shehai", None, "涉害取法；t205 起产出，沿用引擎原值 depth／mengzhong"),
-    "yongshen.zhi": (None, None, "用神地支：引擎只产出用神五行 yongshen"),
-    "yongshen.state": (None, None, "用神旺衰状态：引擎未产出"),
+    # t210 更正：这两个字段**不是跨键配对**——引擎 `use.preferredIds` 已经把「哪一爻是用神」定下来了，
+    # 所以引擎能直接给出该爻的支与旺衰，事实层照接即可。（t205 我判断成「需配对」是错的。）
+    "yongshen.zhi": ("liuyao_yongshen_zhi", None, "用神所取之爻的支；t210 起产出"),
+    "yongshen.state": ("liuyao_yongshen_state", None, "用神之爻的月建强度；t210 起产出"),
     "stars": (None, None, "星曜集合总名：未产出（分名是 xingyao）"),
     "star.name": ("xingyao", None, "星曜名；引擎产出 xingyao"),
     "star.dignity": ("miaowang", None, "庙旺；引擎产出 miaowang"),
