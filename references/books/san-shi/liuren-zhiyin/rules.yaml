@@ -54,7 +54,7 @@ rules:
     start_line: 156
     end_line: 156
   quote: 21. 無克是以遙嗔。
-  applicable_to: []
+  applicable_to: {all_of: [{key: liuren_ke_relation, value: 无直接克}], none_of: [{key: liuren_ke_relation, value: 下贼上}, {key: liuren_ke_relation, value: 上克下}, {key: keti, value: 八专课}]}
   caveats:
   - 不得颠倒蒿矢与弹射的检查次序，也不得把遥克当直接贼克
   school: null

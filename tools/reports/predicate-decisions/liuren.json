@@ -422,11 +422,13 @@
     {
       "book": "san-shi/liuren-zhiyin",
       "rule_id": "LIURENZHIYIN-004",
-      "decision": "unmapped",
+      "decision": "mapped",
       "reason_class": "fact-not-emitted",
       "evidence_from_statement": "四课上下全无直接克；不是八专无克分支",
       "note": "遥克分支的进入条件，全为盘面结构：需要四课上下克关系与「是否八专无克分支」的盘式判定，两者都未产出。已评估改映射 keti=蒿矢课/弹射课（同书 DALIURENDAQU-006 就是这么映射的）：但本条 statement 未写课体取值，且本条只给出「进入遥克」的前置，未给出蒿矢/弹射的取舍次序（caveat 明确不得颠倒蒿矢与弹射的检查次序）。旧过程稿判「条件过于复合（四课无直接克）」，按 v3 语言复判为事实未产出。",
-      "missing_fact": "四课上下直接克关系；八专无克分支标记"
+      "missing_fact": "四课上下直接克关系；八专无克分支标记",
+      "mapped_by": "liuren-ke-relation-map.json",
+      "mapped_note": "t200 映射：条件是「四课上下全无直接克 ＋ 非八专」。全称判断用 none_of 排除「下贼上／上克下」表达；正句保证键在场，否则缺键会真空成立、三态也判不出「信息不足」。前提是四课关系入事实层（t200 新增 liuren_ke_relation）。"
     },
     {
       "book": "san-shi/liuren-zhiyin",

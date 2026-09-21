@@ -43,7 +43,7 @@ def main() -> int:
     classes = data["reason_classes"]
 
     print("1. 台账自洽")
-    check("  条数 29（t197 新增一条「取值无样盘覆盖」）", len(entries), 29)
+    check("  条数 31（t200 新增两条「需未产出判定」）", len(entries), 31)
     ids = [(e["art"], e["rule_id"]) for e in entries]
     check("  无重复", len(ids), len(set(ids)))
     check("  理由类别都在表里", [e["reason_class"] for e in entries if e["reason_class"] not in classes], [])
@@ -97,7 +97,7 @@ def main() -> int:
     dist = Counter(e["reason_class"] for e in entries)
     print("     " + " ".join(f"{k}={v}" for k, v in dist.most_common()))
     kinds = Counter(e["triage_kind"] for e in entries)
-    check("  三类合计 29", sum(kinds.values()), 29)
+    check("  三类合计 31", sum(kinds.values()), 31)
     print("     " + " ".join(f"{k}={v}" for k, v in kinds.most_common()))
 
     if FAILED:

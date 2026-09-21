@@ -1,0 +1,15 @@
+[
+ {
+  "book": "san-shi/liuren-zhiyin",
+  "rule_id": "LIURENZHIYIN-004",
+  "applicable_to_yaml": "{all_of: [{key: liuren_ke_relation, value: 无直接克}], none_of: [{key: liuren_ke_relation, value: 下贼上}, {key: liuren_ke_relation, value: 上克下}, {key: keti, value: 八专课}]}",
+  "evidence_from_statement": "四课上下全无直接克；不是八专无克分支",
+  "encoding": "universal-via-none_of",
+  "method": "「全无直接克」是对四课的全称判断：整盘产出出现过的关系取值，用 none_of 排除「下贼上／上克下」；正句 {liuren_ke_relation: 无直接克} 同时保证键在场（否则缺键会退化成真空成立，三态也判不出「信息不足」）。",
+  "facts": [
+   "liuren_ke_relation",
+   "keti"
+  ],
+  "note": "与 DALIURENDAQU-007 的区别：007 还要求「四课完整、无遥克」，引擎未产出这两项，写成谓词会**过宽**，故本轮不映射。"
+ }
+]
