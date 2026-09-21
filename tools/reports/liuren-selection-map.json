@@ -1,0 +1,28 @@
+[
+ {
+  "book": "san-shi/daliuren-daquan",
+  "rule_id": "DALIURENDAQU-007",
+  "applicable_to_yaml": "{all_of: [{key: liuren_ke_relation, value: 无直接克}, {key: liuren_ke_completeness, value: 四课}, {key: liuren_yaoke, value: 无}], none_of: [{key: keti, value: 伏吟课}, {key: keti, value: 返吟课}, {key: keti, value: 八专课}, {key: keti, value: 别责课}]}",
+  "evidence_from_statement": "四课完整、无直接克、无遥克",
+  "facts": [
+   "liuren_ke_relation",
+   "liuren_ke_completeness",
+   "liuren_yaoke",
+   "keti"
+  ],
+  "note": "四个排除项（伏吟/返吟/八专/三课别责）来自原文，用 none_of 表达；「四课完整」与「无遥克」由 t204 新产出的 liuren_ke_completeness／liuren_yaoke 判定。"
+ },
+ {
+  "book": "san-shi/daliuren-daquan",
+  "rule_id": "DALIURENDAQU-008",
+  "applicable_to_yaml": "{all_of: [{key: liuren_ke_completeness, value: 三课}, {key: liuren_ke_relation, value: 无直接克}, {key: liuren_yaoke, value: 无}]}",
+  "evidence_from_statement": "去重后恰为三课",
+  "facts": [
+   "liuren_ke_relation",
+   "liuren_ke_completeness",
+   "liuren_yaoke",
+   "keti"
+  ],
+  "note": "「去重后恰为三课」＝引擎取传分支用的 `unique(courses).length === 3`（t204 产出为事实）；与「无直接克、无遥克」合取，三句都带取值。"
+ }
+]

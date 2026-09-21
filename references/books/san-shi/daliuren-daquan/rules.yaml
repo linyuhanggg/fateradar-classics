@@ -97,7 +97,7 @@ rules:
   statement: 四课完整、无直接克、无遥克，且不属于伏吟、返吟、八专或三课别责。
   anchor: {file: sources/fulltext/san-shi/daliuren-daquan/fulltext.md, start_line: 82, end_line: 82}
   quote: 无遥无克昴星穷，阳仰阴俯酉位中论初传也。刚日先辰而后日，柔日先日而后辰论中末也。
-  applicable_to: []
+  applicable_to: {all_of: [{key: liuren_ke_relation, value: 无直接克}, {key: liuren_ke_completeness, value: 四课}, {key: liuren_yaoke, value: 无}], none_of: [{key: keti, value: 伏吟课}, {key: keti, value: 返吟课}, {key: keti, value: 八专课}, {key: keti, value: 别责课}]}
   caveats:
   - adapter 只给“虎视”名称而不给酉上/酉下事实字段时停止
   - 三课、两课不得进入本卡
@@ -113,7 +113,7 @@ rules:
     start_line: 86
     end_line: 86
   quote: 四课不全三课备，无遥无克别责例。刚日干合上头神，柔日支前三合取。皆以天上作初传，阴阳中末干中寄。刚三柔六共九课，此课先贤俱隠秘。戊午戊辰与丙辰，干上皆午是为亲。辛丑辛未各二日，下上皆是丑未真。丁酉当为己丁是，辛酉原来是酉辛。
-  applicable_to: []
+  applicable_to: {all_of: [{key: liuren_ke_completeness, value: 三课}, {key: liuren_ke_relation, value: 无直接克}, {key: liuren_yaoke, value: 无}]}
   caveats:
   - 阴日未提供经过校定的 `biezhe_profile` 时返回 `unresolved_biezhe_yin`
   school: null

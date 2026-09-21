@@ -17114,6 +17114,26 @@
           ]
         },
         {
+          "key": "liuren_ke_completeness",
+          "value": "三课",
+          "scope": {
+            "layer": "本命"
+          },
+          "derivedFrom": [
+            "selection.dedupedCourseCount"
+          ]
+        },
+        {
+          "key": "liuren_yaoke",
+          "value": "有",
+          "scope": {
+            "layer": "本命"
+          },
+          "derivedFrom": [
+            "selection.yaoke"
+          ]
+        },
+        {
           "key": "sanchuan",
           "value": "初传",
           "scope": {
@@ -17407,6 +17427,26 @@
           },
           "derivedFrom": [
             "selection.courses[].relation"
+          ]
+        },
+        {
+          "key": "liuren_ke_completeness",
+          "value": "四课",
+          "scope": {
+            "layer": "本命"
+          },
+          "derivedFrom": [
+            "selection.dedupedCourseCount"
+          ]
+        },
+        {
+          "key": "liuren_yaoke",
+          "value": "无",
+          "scope": {
+            "layer": "本命"
+          },
+          "derivedFrom": [
+            "selection.yaoke"
           ]
         },
         {
@@ -17713,6 +17753,26 @@
           },
           "derivedFrom": [
             "selection.courses[].relation"
+          ]
+        },
+        {
+          "key": "liuren_ke_completeness",
+          "value": "三课",
+          "scope": {
+            "layer": "本命"
+          },
+          "derivedFrom": [
+            "selection.dedupedCourseCount"
+          ]
+        },
+        {
+          "key": "liuren_yaoke",
+          "value": "有",
+          "scope": {
+            "layer": "本命"
+          },
+          "derivedFrom": [
+            "selection.yaoke"
           ]
         },
         {
@@ -18033,6 +18093,26 @@
           ]
         },
         {
+          "key": "liuren_ke_completeness",
+          "value": "三课",
+          "scope": {
+            "layer": "本命"
+          },
+          "derivedFrom": [
+            "selection.dedupedCourseCount"
+          ]
+        },
+        {
+          "key": "liuren_yaoke",
+          "value": "有",
+          "scope": {
+            "layer": "本命"
+          },
+          "derivedFrom": [
+            "selection.yaoke"
+          ]
+        },
+        {
           "key": "sanchuan",
           "value": "初传",
           "scope": {
@@ -18340,6 +18420,26 @@
           ]
         },
         {
+          "key": "liuren_ke_completeness",
+          "value": "四课",
+          "scope": {
+            "layer": "本命"
+          },
+          "derivedFrom": [
+            "selection.dedupedCourseCount"
+          ]
+        },
+        {
+          "key": "liuren_yaoke",
+          "value": "有",
+          "scope": {
+            "layer": "本命"
+          },
+          "derivedFrom": [
+            "selection.yaoke"
+          ]
+        },
+        {
           "key": "sanchuan",
           "value": "初传",
           "scope": {
@@ -18633,6 +18733,26 @@
           },
           "derivedFrom": [
             "selection.courses[].relation"
+          ]
+        },
+        {
+          "key": "liuren_ke_completeness",
+          "value": "四课",
+          "scope": {
+            "layer": "本命"
+          },
+          "derivedFrom": [
+            "selection.dedupedCourseCount"
+          ]
+        },
+        {
+          "key": "liuren_yaoke",
+          "value": "有",
+          "scope": {
+            "layer": "本命"
+          },
+          "derivedFrom": [
+            "selection.yaoke"
           ]
         },
         {
@@ -18950,6 +19070,26 @@
           },
           "derivedFrom": [
             "selection.courses[].relation"
+          ]
+        },
+        {
+          "key": "liuren_ke_completeness",
+          "value": "四课",
+          "scope": {
+            "layer": "本命"
+          },
+          "derivedFrom": [
+            "selection.dedupedCourseCount"
+          ]
+        },
+        {
+          "key": "liuren_yaoke",
+          "value": "有",
+          "scope": {
+            "layer": "本命"
+          },
+          "derivedFrom": [
+            "selection.yaoke"
           ]
         },
         {
@@ -19280,6 +19420,26 @@
           ]
         },
         {
+          "key": "liuren_ke_completeness",
+          "value": "四课",
+          "scope": {
+            "layer": "本命"
+          },
+          "derivedFrom": [
+            "selection.dedupedCourseCount"
+          ]
+        },
+        {
+          "key": "liuren_yaoke",
+          "value": "有",
+          "scope": {
+            "layer": "本命"
+          },
+          "derivedFrom": [
+            "selection.yaoke"
+          ]
+        },
+        {
           "key": "sanchuan",
           "value": "初传",
           "scope": {
@@ -19566,6 +19726,26 @@
           ]
         },
         {
+          "key": "liuren_ke_completeness",
+          "value": "四课",
+          "scope": {
+            "layer": "本命"
+          },
+          "derivedFrom": [
+            "selection.dedupedCourseCount"
+          ]
+        },
+        {
+          "key": "liuren_yaoke",
+          "value": "无",
+          "scope": {
+            "layer": "本命"
+          },
+          "derivedFrom": [
+            "selection.yaoke"
+          ]
+        },
+        {
           "key": "sanchuan",
           "value": "初传",
           "scope": {
@@ -19751,6 +19931,333 @@
         }
       ]
     },
+    "caseK": {
+      "label": "昴星课 2026-01-04 17:00 男 上海",
+      "facts": [
+        {
+          "key": "gan",
+          "value": "乙",
+          "scope": {
+            "layer": "本命",
+            "pillar": "year"
+          },
+          "derivedFrom": [
+            "ganZhi"
+          ]
+        },
+        {
+          "key": "zhi",
+          "value": "巳",
+          "scope": {
+            "layer": "本命",
+            "pillar": "year"
+          },
+          "derivedFrom": [
+            "ganZhi"
+          ]
+        },
+        {
+          "key": "gan",
+          "value": "戊",
+          "scope": {
+            "layer": "本命",
+            "pillar": "month"
+          },
+          "derivedFrom": [
+            "ganZhi"
+          ]
+        },
+        {
+          "key": "zhi",
+          "value": "子",
+          "scope": {
+            "layer": "本命",
+            "pillar": "month"
+          },
+          "derivedFrom": [
+            "ganZhi"
+          ]
+        },
+        {
+          "key": "gan",
+          "value": "戊",
+          "scope": {
+            "layer": "本命",
+            "pillar": "day"
+          },
+          "derivedFrom": [
+            "ganZhi"
+          ]
+        },
+        {
+          "key": "zhi",
+          "value": "寅",
+          "scope": {
+            "layer": "本命",
+            "pillar": "day"
+          },
+          "derivedFrom": [
+            "ganZhi"
+          ]
+        },
+        {
+          "key": "gan",
+          "value": "辛",
+          "scope": {
+            "layer": "本命",
+            "pillar": "time"
+          },
+          "derivedFrom": [
+            "ganZhi"
+          ]
+        },
+        {
+          "key": "zhi",
+          "value": "酉",
+          "scope": {
+            "layer": "本命",
+            "pillar": "time"
+          },
+          "derivedFrom": [
+            "ganZhi"
+          ]
+        },
+        {
+          "key": "keti",
+          "value": "昴星课",
+          "scope": {
+            "layer": "本命"
+          },
+          "derivedFrom": [
+            "meta.课体"
+          ]
+        },
+        {
+          "key": "liuren_ke_relation",
+          "value": "无直接克",
+          "scope": {
+            "layer": "本命"
+          },
+          "derivedFrom": [
+            "selection.courses[].relation"
+          ]
+        },
+        {
+          "key": "liuren_ke_completeness",
+          "value": "四课",
+          "scope": {
+            "layer": "本命"
+          },
+          "derivedFrom": [
+            "selection.dedupedCourseCount"
+          ]
+        },
+        {
+          "key": "liuren_yaoke",
+          "value": "无",
+          "scope": {
+            "layer": "本命"
+          },
+          "derivedFrom": [
+            "selection.yaoke"
+          ]
+        },
+        {
+          "key": "sanchuan",
+          "value": "初传",
+          "scope": {
+            "layer": "本命"
+          },
+          "derivedFrom": [
+            "chuan.初传",
+            "丑"
+          ]
+        },
+        {
+          "key": "tianjiang",
+          "value": "贵人",
+          "scope": {
+            "layer": "本命"
+          },
+          "derivedFrom": [
+            "chuan.初传.god"
+          ]
+        },
+        {
+          "key": "sanchuan",
+          "value": "中传",
+          "scope": {
+            "layer": "本命"
+          },
+          "derivedFrom": [
+            "chuan.中传",
+            "午"
+          ]
+        },
+        {
+          "key": "tianjiang",
+          "value": "白虎",
+          "scope": {
+            "layer": "本命"
+          },
+          "derivedFrom": [
+            "chuan.中传.god"
+          ]
+        },
+        {
+          "key": "sanchuan",
+          "value": "末传",
+          "scope": {
+            "layer": "本命"
+          },
+          "derivedFrom": [
+            "chuan.末传",
+            "酉"
+          ]
+        },
+        {
+          "key": "tianjiang",
+          "value": "勾陈",
+          "scope": {
+            "layer": "本命"
+          },
+          "derivedFrom": [
+            "chuan.末传.god"
+          ]
+        },
+        {
+          "key": "yuejiang",
+          "value": "丑",
+          "scope": {
+            "layer": "本命"
+          },
+          "derivedFrom": [
+            "meta.月将"
+          ]
+        },
+        {
+          "key": "kongwang",
+          "value": "申",
+          "scope": {
+            "layer": "本命"
+          },
+          "derivedFrom": [
+            "meta.空亡"
+          ]
+        },
+        {
+          "key": "kongwang",
+          "value": "酉",
+          "scope": {
+            "layer": "本命"
+          },
+          "derivedFrom": [
+            "meta.空亡"
+          ]
+        },
+        {
+          "key": "tianjiang",
+          "value": "勾陈",
+          "scope": {
+            "layer": "本命",
+            "palace": "日上"
+          },
+          "derivedFrom": [
+            "ke.一课.god",
+            "palace:巳"
+          ]
+        },
+        {
+          "key": "tianjiang",
+          "value": "白虎",
+          "scope": {
+            "layer": "本命",
+            "palace": "辰上"
+          },
+          "derivedFrom": [
+            "ke.三课.god",
+            "palace:寅"
+          ]
+        },
+        {
+          "key": "tianjiang",
+          "value": "贵人",
+          "scope": {
+            "layer": "本命",
+            "palace": "初传"
+          },
+          "derivedFrom": [
+            "chuan.初传.god"
+          ]
+        },
+        {
+          "key": "liuqin",
+          "value": "兄弟",
+          "scope": {
+            "layer": "本命",
+            "palace": "初传"
+          },
+          "derivedFrom": [
+            "chuan.初传.relative"
+          ]
+        },
+        {
+          "key": "tianjiang",
+          "value": "白虎",
+          "scope": {
+            "layer": "本命",
+            "palace": "中传"
+          },
+          "derivedFrom": [
+            "chuan.中传.god"
+          ]
+        },
+        {
+          "key": "liuqin",
+          "value": "父母",
+          "scope": {
+            "layer": "本命",
+            "palace": "中传"
+          },
+          "derivedFrom": [
+            "chuan.中传.relative"
+          ]
+        },
+        {
+          "key": "tianjiang",
+          "value": "勾陈",
+          "scope": {
+            "layer": "本命",
+            "palace": "末传"
+          },
+          "derivedFrom": [
+            "chuan.末传.god"
+          ]
+        },
+        {
+          "key": "liuqin",
+          "value": "子孙",
+          "scope": {
+            "layer": "本命",
+            "palace": "末传"
+          },
+          "derivedFrom": [
+            "chuan.末传.relative"
+          ]
+        },
+        {
+          "key": "kongwang",
+          "value": "酉",
+          "scope": {
+            "layer": "本命",
+            "palace": "末传"
+          },
+          "derivedFrom": [
+            "chuan.末传.void.sky"
+          ]
+        }
+      ]
+    },
     "caseJ": {
       "label": "别责课 2026-01-23 03:00 男 上海",
       "facts": [
@@ -19860,6 +20367,26 @@
           },
           "derivedFrom": [
             "selection.courses[].relation"
+          ]
+        },
+        {
+          "key": "liuren_ke_completeness",
+          "value": "三课",
+          "scope": {
+            "layer": "本命"
+          },
+          "derivedFrom": [
+            "selection.dedupedCourseCount"
+          ]
+        },
+        {
+          "key": "liuren_yaoke",
+          "value": "无",
+          "scope": {
+            "layer": "本命"
+          },
+          "derivedFrom": [
+            "selection.yaoke"
           ]
         },
         {

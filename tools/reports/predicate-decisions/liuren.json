@@ -172,20 +172,24 @@
     {
       "book": "san-shi/daliuren-daquan",
       "rule_id": "DALIURENDAQU-007",
-      "decision": "unmapped",
+      "decision": "mapped",
       "reason_class": "fact-not-emitted",
       "evidence_from_statement": "四课完整、无直接克、无遥克，且不属于伏吟、返吟、八专或三课别责",
       "note": "本条是昴星分支的进入条件，所述全是盘面结构（四课完整、无克、无遥克、非四种专式），但 liuren 事实层不产出四课、不产出上下克/遥克关系、也不产出伏吟/返吟/八专/别责的盘式标记，整条无法判定。已评估「改映射 keti=昴星课」：statement 未写昴星课这一取值（昴星只出现在 quote），且引擎 keti 实测只见过 元首课/伏吟课/涉害课 一类，其余课体是否稳定产出无从溯源，故不映射。注：旧过程稿对同结构的 DALIURENDAQU-008 判「条件过于复合」，本轮按 v3 语言复判为事实未产出（AND 语言已可表达，缺的是事实）。",
-      "missing_fact": "四课结构；四课上下直接克/遥克关系；伏吟/返吟/八专/三课别责盘式标记"
+      "missing_fact": "四课结构；四课上下直接克/遥克关系；伏吟/返吟/八专/三课别责盘式标记",
+      "mapped_by": "liuren-selection-map.json",
+      "mapped_note": "t204 映射：t200 时因「四课完整／无遥克」引擎未产出而不能写（只写一半会过宽），t204 把这两项也产成事实（liuren_ke_completeness／liuren_yaoke，均取自引擎取传时已算的 unique(courses).length 与 shooting/returning 候选），现三句齐备、写法精确。"
     },
     {
       "book": "san-shi/daliuren-daquan",
       "rule_id": "DALIURENDAQU-008",
-      "decision": "unmapped",
+      "decision": "mapped",
       "reason_class": "fact-not-emitted",
       "evidence_from_statement": "去重后恰为三课，且无直接克、无遥克",
       "note": "别责分支的进入条件：需要「四课去重后为三课」这一结构事实与克关系事实，两者引擎都未产出。不映射 keti=别责课：statement 未写该课体取值。旧过程稿亦判「条件过于复合，现有谓词表达不了（三课无克无遥克）」。",
-      "missing_fact": "四课去重结果（三课）；直接克/遥克关系"
+      "missing_fact": "四课去重结果（三课）；直接克/遥克关系",
+      "mapped_by": "liuren-selection-map.json",
+      "mapped_note": "t204 映射：t200 时因「四课完整／无遥克」引擎未产出而不能写（只写一半会过宽），t204 把这两项也产成事实（liuren_ke_completeness／liuren_yaoke，均取自引擎取传时已算的 unique(courses).length 与 shooting/returning 候选），现三句齐备、写法精确。"
     },
     {
       "book": "san-shi/daliuren-daquan",

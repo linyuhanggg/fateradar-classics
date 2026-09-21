@@ -117,8 +117,11 @@ ART_EMIT_KEYS: dict[str, frozenset[str]] = {
             "keti",
             "sanchuan",
             "tianjiang",
-            # 四课逐课上下关系（引擎 selection.courses[].relation）。
+            # 四课逐课上下关系（引擎 selection.courses[].relation）、
+            # 去重课数与遥克候选（取传时已算）。
             "liuren_ke_relation",
+            "liuren_ke_completeness",
+            "liuren_yaoke",
             # 四柱干支：引擎 facts.ganZhi 直接透传（与 bazi/qimen 共用键，按 scope.pillar 区分）。
             "gan",
             "zhi",
