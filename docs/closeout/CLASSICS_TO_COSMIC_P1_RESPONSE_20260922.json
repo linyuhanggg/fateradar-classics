@@ -270,7 +270,7 @@
       ]
     }
   ],
-  "productAction": "产品仓已提供 dayun_liunian_relation_class 及 scope.year；请消费 YUANHAIZIPIN-YR-03 的结构性“忌象候选”结果，并保留制化/喜忌缺口为 unknown。其余 blocked 候选不自行补规则。",
+  "productAction": "产品仓已提供 dayun_liunian_relation_class 及 scope.year；请消费 YUANHAIZIPIN-YR-03 的结构性“忌象候选”结果，并保留制化/喜忌缺口为 unknown。其余 blocked 候选不自行补规则。 测试 harness 必须先按 verification case/year 过滤 facts；流年视图断言按 applicableLayers 区分可执行规则与仍为 unknown 的主题语义。",
   "classicsAction": "已采纳 YUANHAIZIPIN-YR-03 为 verified=false 的保守流年结构证据，并将 CLASSICS_REV 更新为包含该规则的 6321186f6aeebd0737537c45286153eedf49adb4；其余候选保持 blocked，不恢复 440 条 unmapped 目标。",
   "evaluationAudit": {
     "command": "python3 tools/audit-flow-year-unknown.py",

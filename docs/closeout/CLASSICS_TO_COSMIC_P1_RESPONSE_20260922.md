@@ -38,3 +38,9 @@ cosmic 重跑同一命令后仍为 `22/24` 通过、exit 1，日志见 `tools/re
 - `交接七条规则的正例、反例和缺键边界在产品求值器复算` 中 `YUANHAIZIPIN-YR-03` 反例仍为 `满足`，说明通用 harness 仍未应用 `verification.negative` 的年份选择器。
 
 古籍仓没有修改 cosmic 文件；在产品修正这两处后，再进行端到端重跑。
+
+## 给产品测试 harness 的最小消费契约
+
+对 `manifest.rules[*].verification`，产品测试应先解析 `case` 和可选 `year`：取对应 case 的 facts，再保留 `fact.scope.year === year` 的事实，最后调用 predicate evaluator。不能把整个 `caseFlowYear` 的多年份事实直接作为一个盘面。
+
+流年视图的断言也应按规则的 `applicableLayers` 判断：`YUANHAIZIPIN-YR-03` 在 `流年` 是可执行结构证据，因此选定年份命中时允许 `satisfied`；尚未实现的主题语义、未支持时间层和缺事实条件才保持 `unknown`。这两个断言是产品消费合同的一部分，不需要古籍仓改变规则。
