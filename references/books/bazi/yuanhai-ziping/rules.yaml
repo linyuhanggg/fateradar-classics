@@ -330,15 +330,30 @@ rules:
   verified_at: null
 - rule_id: YUANHAIZIPIN-YR-03
   kind: doctrine
-  statement: 太岁为流年；大运与流年合参看命局变化。
+  statement: 流年层若大运—流年关系分类为相冲、相克或相刑，记为原文所称的忌象候选；仅作结构证据，仍须结合命局制化与喜忌，不直接断现实事件。
   anchor:
     file: sources/fulltext/bazi/yuanhai-ziping/fulltext.md
     start_line: 182
     end_line: 182
   quote: 大运不宜与太岁相剋、相冲者凶；更刑、冲、相剋者亦忌。
-  applicable_to: []
+  applicable_to:
+    any_of:
+    - key: dayun_liunian_relation_class
+      value: 相冲
+      scope:
+        layer: 流年
+    - key: dayun_liunian_relation_class
+      value: 相克
+      scope:
+        layer: 流年
+    - key: dayun_liunian_relation_class
+      value: 相刑
+      scope:
+        layer: 流年
   caveats:
-  - 本书框架已确立但细节不如后世精密
+  - 本书框架已确立但细节不如后世精密。
+  - 关系分类事实必须已按当前选定流年过滤，并保留 scope.year；跨年份混入会污染求值。
+  - “忌象候选”不是现实凶事结论；制化、喜忌和命局作用尚未由本条表达。
   school: null
   verified: false
   verified_by: null

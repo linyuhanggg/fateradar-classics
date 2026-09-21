@@ -89,6 +89,8 @@ class Clause:
 
 
 def fact_matches(fact: dict, pred: dict) -> bool:
+    if is_unknown_fact(fact):
+        return False
     if fact.get("key") != pred.get("key"):
         return False
     val = pred.get("value")
@@ -100,6 +102,12 @@ def fact_matches(fact: dict, pred: dict) -> bool:
         if fscope.get(field) != want:
             return False
     return True
+
+
+def is_unknown_fact(fact: dict) -> bool:
+    # Only these registered contracts use this value as missing input.
+    # Do not reinterpret arbitrary open-vocabulary text as an unknown marker.
+    return fact.get("key") in {"suiyun_binglin", "dayun_liunian_relation_class"} and fact.get("value") == "信息不足"
 
 
 def referenced_keys(clause) -> set[str]:
@@ -136,6 +144,13 @@ def eval_predicate(pred: dict, facts: list[dict], present: set[str]) -> Clause:
         return Clause(UNKNOWN, [], {})
     matched = [f for f in facts if fact_matches(f, pred)]
     if not matched:
+        scope = pred.get("scope") or {}
+        if any(
+            f.get("key") == key and is_unknown_fact(f)
+            and all((f.get("scope") or {}).get(k) == v for k, v in scope.items())
+            for f in facts
+        ):
+            return Clause(UNKNOWN, [], {})
         return Clause(FALSE, [], {})
     # 绑定值取自**命中事实**携带的 scope 字段（不只是谓词自己声明的那些）：
     # `same: palace` 要能绑「两个谓词都没写 palace」的同宫事实，否则 same 就没有用途。

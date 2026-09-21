@@ -96,6 +96,23 @@ def main() -> int:
     check("  → 信息不足", r["verdict"], "信息不足")
     check("  缺事实被点名", r["missing_fact_keys"], ["keti"])
 
+    check(
+        "  显式信息不足事实不能降级为不满足",
+        M.evaluate(
+            rule([{"key": "suiyun_binglin", "value": "是", "scope": {"layer": "流年"}}]),
+            [fact("suiyun_binglin", "信息不足", layer="流年", year=2100)],
+        )["verdict"],
+        "信息不足",
+    )
+    check(
+        "  流年关系分类的信息不足不能降级为不满足",
+        M.evaluate(
+            rule([{"key": "dayun_liunian_relation_class", "value": "相冲", "scope": {"layer": "流年"}}]),
+            [fact("dayun_liunian_relation_class", "信息不足", layer="流年", year=2100)],
+        )["verdict"],
+        "信息不足",
+    )
+
     print("4. any_of 嵌套 all_of（OR-of-AND）")
     nested = {
         "any_of": [
