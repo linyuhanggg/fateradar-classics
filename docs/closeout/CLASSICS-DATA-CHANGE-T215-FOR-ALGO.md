@@ -57,7 +57,9 @@ qizheng_ascendant, meihua_ti_element, meihua_yong_element
 它们全部退化成 `盘面：值`。而那条测试只覆盖 `meihua`／`xiaoliuren`，所以**瞒了十轮**——
 直到本轮新增梅花两键才撞上。
 
-**已全部登记**，并把这件事写成交付清单的一项：
+**已全部登记**；随后做了一次**全量比对**（词表 63 键 vs `LABELS`），
+又查出 **3 个更早的漏登**（t171 的 `tianpan_gan`／`dipan_gan`、t208 的 `ziwei_palace_zhi`），一并补齐——
+现在**词表 63 个键无标签空缺**。并把这件事写成交付清单的一项：
 **经典侧新增 FactKey 时，必须同步登记消费方标签**（否则消费方的取证显示会退化）。
 
 另一处产品测试 `tests/engine/meihua.test.ts`「卦上只带体用，不带六亲世应等**纳甲**结构」
