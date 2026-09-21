@@ -1,0 +1,28 @@
+[
+ {
+  "book": "divination/zengshan-buyi",
+  "rule_id": "ZENGSHANBUYI-020",
+  "applicable_to_yaml": "{any_of: [{key: liuyao_progression, value: 进神}, {key: liuyao_progression, value: 退神}]}",
+  "evidence_from_statement": "化进神",
+  "facts": [
+   "liuyao_progression",
+   "liuyao_tomb",
+   "liuyao_yongshen",
+   "liuqin"
+  ],
+  "note": "「化进神力增、化退神力减」的适用范围＝本卦有爻化进神或化退神；引擎另判「退神支对但近事旺、暂不退」，故只在 status=satisfied 时产出该事实（未定不产出）。「进神逢冲不进、退神逢冲不退」属断法细则，未表达。"
+ },
+ {
+  "book": "divination/zengshan-buyi",
+  "rule_id": "ZENGSHANBUYI-031",
+  "applicable_to_yaml": "{any_of: [{all_of: [{key: liuyao_yongshen, value: 父母}, {key: liuqin, value: 父母, scope: {yao: 1}}, {key: liuyao_tomb, value: 入日墓, scope: {yao: 1}}]}, {all_of: [{key: liuyao_yongshen, value: 父母}, {key: liuqin, value: 父母, scope: {yao: 2}}, {key: liuyao_tomb, value: 入日墓, scope: {yao: 2}}]}, {all_of: [{key: liuyao_yongshen, value: 父母}, {key: liuqin, value: 父母, scope: {yao: 3}}, {key: liuyao_tomb, value: 入日墓, scope: {yao: 3}}]}, {all_of: [{key: liuyao_yongshen, value: 父母}, {key: liuqin, value: 父母, scope: {yao: 4}}, {key: liuyao_tomb, value: 入日墓, scope: {yao: 4}}]}, {all_of: [{key: liuyao_yongshen, value: 父母}, {key: liuqin, value: 父母, scope: {yao: 5}}, {key: liuyao_tomb, value: 入日墓, scope: {yao: 5}}]}, {all_of: [{key: liuyao_yongshen, value: 父母}, {key: liuqin, value: 父母, scope: {yao: 6}}, {key: liuyao_tomb, value: 入日墓, scope: {yao: 6}}]}, {all_of: [{key: liuyao_yongshen, value: 兄弟}, {key: liuqin, value: 兄弟, scope: {yao: 1}}, {key: liuyao_tomb, value: 入日墓, scope: {yao: 1}}]}, {all_of: [{key: liuyao_yongshen, value: 兄弟}, {key: liuqin, value: 兄弟, scope: {yao: 2}}, {key: liuyao_tomb, value: 入日墓, scope: {yao: 2}}]}, {all_of: [{key: liuyao_yongshen, value: 兄弟}, {key: liuqin, value: 兄弟, scope: {yao: 3}}, {key: liuyao_tomb, value: 入日墓, scope: {yao: 3}}]}, {all_of: [{key: liuyao_yongshen, value: 兄弟}, {key: liuqin, value: 兄弟, scope: {yao: 4}}, {key: liuyao_tomb, value: 入日墓, scope: {yao: 4}}]}, {all_of: [{key: liuyao_yongshen, value: 兄弟}, {key: liuqin, value: 兄弟, scope: {yao: 5}}, {key: liuyao_tomb, value: 入日墓, scope: {yao: 5}}]}, {all_of: [{key: liuyao_yongshen, value: 兄弟}, {key: liuqin, value: 兄弟, scope: {yao: 6}}, {key: liuyao_tomb, value: 入日墓, scope: {yao: 6}}]}, {all_of: [{key: liuyao_yongshen, value: 子孙}, {key: liuqin, value: 子孙, scope: {yao: 1}}, {key: liuyao_tomb, value: 入日墓, scope: {yao: 1}}]}, {all_of: [{key: liuyao_yongshen, value: 子孙}, {key: liuqin, value: 子孙, scope: {yao: 2}}, {key: liuyao_tomb, value: 入日墓, scope: {yao: 2}}]}, {all_of: [{key: liuyao_yongshen, value: 子孙}, {key: liuqin, value: 子孙, scope: {yao: 3}}, {key: liuyao_tomb, value: 入日墓, scope: {yao: 3}}]}, {all_of: [{key: liuyao_yongshen, value: 子孙}, {key: liuqin, value: 子孙, scope: {yao: 4}}, {key: liuyao_tomb, value: 入日墓, scope: {yao: 4}}]}, {all_of: [{key: liuyao_yongshen, value: 子孙}, {key: liuqin, value: 子孙, scope: {yao: 5}}, {key: liuyao_tomb, value: 入日墓, scope: {yao: 5}}]}, {all_of: [{key: liuyao_yongshen, value: 子孙}, {key: liuqin, value: 子孙, scope: {yao: 6}}, {key: liuyao_tomb, value: 入日墓, scope: {yao: 6}}]}, {all_of: [{key: liuyao_yongshen, value: 妻财}, {key: liuqin, value: 妻财, scope: {yao: 1}}, {key: liuyao_tomb, value: 入日墓, scope: {yao: 1}}]}, {all_of: [{key: liuyao_yongshen, value: 妻财}, {key: liuqin, value: 妻财, scope: {yao: 2}}, {key: liuyao_tomb, value: 入日墓, scope: {yao: 2}}]}, {all_of: [{key: liuyao_yongshen, value: 妻财}, {key: liuqin, value: 妻财, scope: {yao: 3}}, {key: liuyao_tomb, value: 入日墓, scope: {yao: 3}}]}, {all_of: [{key: liuyao_yongshen, value: 妻财}, {key: liuqin, value: 妻财, scope: {yao: 4}}, {key: liuyao_tomb, value: 入日墓, scope: {yao: 4}}]}, {all_of: [{key: liuyao_yongshen, value: 妻财}, {key: liuqin, value: 妻财, scope: {yao: 5}}, {key: liuyao_tomb, value: 入日墓, scope: {yao: 5}}]}, {all_of: [{key: liuyao_yongshen, value: 妻财}, {key: liuqin, value: 妻财, scope: {yao: 6}}, {key: liuyao_tomb, value: 入日墓, scope: {yao: 6}}]}, {all_of: [{key: liuyao_yongshen, value: 官鬼}, {key: liuqin, value: 官鬼, scope: {yao: 1}}, {key: liuyao_tomb, value: 入日墓, scope: {yao: 1}}]}, {all_of: [{key: liuyao_yongshen, value: 官鬼}, {key: liuqin, value: 官鬼, scope: {yao: 2}}, {key: liuyao_tomb, value: 入日墓, scope: {yao: 2}}]}, {all_of: [{key: liuyao_yongshen, value: 官鬼}, {key: liuqin, value: 官鬼, scope: {yao: 3}}, {key: liuyao_tomb, value: 入日墓, scope: {yao: 3}}]}, {all_of: [{key: liuyao_yongshen, value: 官鬼}, {key: liuqin, value: 官鬼, scope: {yao: 4}}, {key: liuyao_tomb, value: 入日墓, scope: {yao: 4}}]}, {all_of: [{key: liuyao_yongshen, value: 官鬼}, {key: liuqin, value: 官鬼, scope: {yao: 5}}, {key: liuyao_tomb, value: 入日墓, scope: {yao: 5}}]}, {all_of: [{key: liuyao_yongshen, value: 官鬼}, {key: liuqin, value: 官鬼, scope: {yao: 6}}, {key: liuyao_tomb, value: 入日墓, scope: {yao: 6}}]}]}",
+  "evidence_from_statement": "用神入日辰之墓",
+  "facts": [
+   "liuyao_progression",
+   "liuyao_tomb",
+   "liuyao_yongshen",
+   "liuqin"
+  ],
+  "note": "**部分表达**：原文两支——「用神动随官鬼入墓」与「用神入**日辰**之墓」。本式写后一支：用神所在之爻入日辰之墓（5 六亲 × 6 爻 枚举配对，与 t197 的用神旬空同形）。**t209 自纠**：初版把用神取值写死成「官鬼」（照原文措辞），那是错的——用神随盘而定，必须枚举五种六亲并与 liuyao_yongshen 配对。前一支持「用神随官鬼入墓」＝两爻关系，谓词层不写（表达力审计第 7 类）。"
+ }
+]

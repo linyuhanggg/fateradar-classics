@@ -153,6 +153,8 @@ ART_EMIT_KEYS: dict[str, frozenset[str]] = {
             "liuyao_month_strength",
             "liuyao_activity",
             "liuyao_kong",
+            "liuyao_progression",
+            "liuyao_tomb",
             "liuyao_reversal",
         }
     ),

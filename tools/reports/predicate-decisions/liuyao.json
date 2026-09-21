@@ -313,10 +313,12 @@
     {
       "book": "divination/zengshan-buyi",
       "rule_id": "ZENGSHANBUYI-020",
-      "decision": "unmapped",
+      "decision": "mapped",
       "reason_class": "fact-not-emitted",
       "evidence_from_statement": "化进神（如寅化卯）力增、化退神（如卯化寅）力减；进神逢冲不进、退神逢冲不退",
-      "note": "进神／退神是「动爻地支 → 变爻地支」的比较（寅化卯等），爻地支与变爻都未产出。"
+      "note": "进神／退神是「动爻地支 → 变爻地支」的比较（寅化卯等），爻地支与变爻都未产出。",
+      "mapped_by": "liuyao-progression-map.json",
+      "mapped_note": "t209 映射：020＝有爻化进神或化退神（引擎 state.progression，**仅 status=satisfied 时产出**——引擎另判「退神支对但近事旺、暂不退」）；031＝用神所在之爻入日辰之墓（5 六亲 × 6 爻 枚举配对）。原文 031 的另一支「用神随官鬼入墓」是两爻关系，谓词层不写。"
     },
     {
       "book": "divination/zengshan-buyi",
@@ -367,10 +369,12 @@
     {
       "book": "divination/zengshan-buyi",
       "rule_id": "ZENGSHANBUYI-031",
-      "decision": "unmapped",
+      "decision": "mapped",
       "reason_class": "fact-not-emitted",
       "evidence_from_statement": "用神动随官鬼入墓——大凶；用神入日辰之墓亦凶",
-      "note": "缺入墓（墓库）关系与日辰；用神为角色，随鬼入墓是同爻内「用神＝官鬼」并入墓的复合判断，facts 无法表达。"
+      "note": "缺入墓（墓库）关系与日辰；用神为角色，随鬼入墓是同爻内「用神＝官鬼」并入墓的复合判断，facts 无法表达。",
+      "mapped_by": "liuyao-progression-map.json",
+      "mapped_note": "t209 映射：020＝有爻化进神或化退神（引擎 state.progression，**仅 status=satisfied 时产出**——引擎另判「退神支对但近事旺、暂不退」）；031＝用神所在之爻入日辰之墓（5 六亲 × 6 爻 枚举配对）。原文 031 的另一支「用神随官鬼入墓」是两爻关系，谓词层不写。"
     },
     {
       "book": "divination/zengshan-buyi",

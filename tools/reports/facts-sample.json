@@ -31291,6 +31291,1013 @@
         }
       ]
     },
+    "cov4_liuyao_1": {
+      "label": "覆盖4·六爻 1990-1-1 111111（演示 2 条）",
+      "facts": [
+        {
+          "key": "liuyao_seq",
+          "value": "本宫",
+          "scope": {
+            "layer": "本命"
+          },
+          "derivedFrom": [
+            "main.sequence"
+          ]
+        },
+        {
+          "key": "liuyao_yongshen",
+          "value": "妻财",
+          "scope": {
+            "layer": "本命"
+          },
+          "derivedFrom": [
+            "analysis.use.requested"
+          ]
+        },
+        {
+          "key": "liuqin",
+          "value": "子孙",
+          "scope": {
+            "layer": "本命",
+            "yao": 1
+          },
+          "derivedFrom": [
+            "rows.relative"
+          ]
+        },
+        {
+          "key": "liushen",
+          "value": "朱雀",
+          "scope": {
+            "layer": "本命",
+            "yao": 1
+          },
+          "derivedFrom": [
+            "rows.spirit"
+          ]
+        },
+        {
+          "key": "yao_zhi",
+          "value": "子",
+          "scope": {
+            "layer": "本命",
+            "yao": 1
+          },
+          "derivedFrom": [
+            "rows.ganzhi"
+          ]
+        },
+        {
+          "key": "liuyao_month_strength",
+          "value": "临月",
+          "scope": {
+            "layer": "本命",
+            "yao": 1
+          },
+          "derivedFrom": [
+            "state.monthStrength"
+          ]
+        },
+        {
+          "key": "liuyao_activity",
+          "value": "静",
+          "scope": {
+            "layer": "本命",
+            "yao": 1
+          },
+          "derivedFrom": [
+            "state.activity.label"
+          ]
+        },
+        {
+          "key": "liuyao_tomb",
+          "value": "入动墓",
+          "scope": {
+            "layer": "本命",
+            "yao": 1
+          },
+          "derivedFrom": [
+            "state.lifecycle.tombs"
+          ]
+        },
+        {
+          "key": "bian_yao_zhi",
+          "value": "巳",
+          "scope": {
+            "layer": "本命",
+            "yao": 1
+          },
+          "derivedFrom": [
+            "rows.changed"
+          ]
+        },
+        {
+          "key": "liuqin",
+          "value": "妻财",
+          "scope": {
+            "layer": "本命",
+            "yao": 2
+          },
+          "derivedFrom": [
+            "rows.relative"
+          ]
+        },
+        {
+          "key": "liushen",
+          "value": "勾陈",
+          "scope": {
+            "layer": "本命",
+            "yao": 2
+          },
+          "derivedFrom": [
+            "rows.spirit"
+          ]
+        },
+        {
+          "key": "yao_zhi",
+          "value": "寅",
+          "scope": {
+            "layer": "本命",
+            "yao": 2
+          },
+          "derivedFrom": [
+            "rows.ganzhi"
+          ]
+        },
+        {
+          "key": "liuyao_month_strength",
+          "value": "相",
+          "scope": {
+            "layer": "本命",
+            "yao": 2
+          },
+          "derivedFrom": [
+            "state.monthStrength"
+          ]
+        },
+        {
+          "key": "liuyao_activity",
+          "value": "静",
+          "scope": {
+            "layer": "本命",
+            "yao": 2
+          },
+          "derivedFrom": [
+            "state.activity.label"
+          ]
+        },
+        {
+          "key": "bian_yao_zhi",
+          "value": "卯",
+          "scope": {
+            "layer": "本命",
+            "yao": 2
+          },
+          "derivedFrom": [
+            "rows.changed"
+          ]
+        },
+        {
+          "key": "liuqin",
+          "value": "父母",
+          "scope": {
+            "layer": "本命",
+            "yao": 3
+          },
+          "derivedFrom": [
+            "rows.relative"
+          ]
+        },
+        {
+          "key": "liushen",
+          "value": "腾蛇",
+          "scope": {
+            "layer": "本命",
+            "yao": 3
+          },
+          "derivedFrom": [
+            "rows.spirit"
+          ]
+        },
+        {
+          "key": "yao_zhi",
+          "value": "辰",
+          "scope": {
+            "layer": "本命",
+            "yao": 3
+          },
+          "derivedFrom": [
+            "rows.ganzhi"
+          ]
+        },
+        {
+          "key": "liuyao_month_strength",
+          "value": "休囚",
+          "scope": {
+            "layer": "本命",
+            "yao": 3
+          },
+          "derivedFrom": [
+            "state.monthStrength"
+          ]
+        },
+        {
+          "key": "liuyao_activity",
+          "value": "明动",
+          "scope": {
+            "layer": "本命",
+            "yao": 3
+          },
+          "derivedFrom": [
+            "state.activity.label"
+          ]
+        },
+        {
+          "key": "liuyao_progression",
+          "value": "退神",
+          "scope": {
+            "layer": "本命",
+            "yao": 3
+          },
+          "derivedFrom": [
+            "state.progression"
+          ]
+        },
+        {
+          "key": "bian_yao_zhi",
+          "value": "丑",
+          "scope": {
+            "layer": "本命",
+            "yao": 3
+          },
+          "derivedFrom": [
+            "rows.changed"
+          ]
+        },
+        {
+          "key": "yingyao",
+          "value": "三爻",
+          "scope": {
+            "layer": "本命",
+            "yao": 3
+          },
+          "derivedFrom": [
+            "rows.mark"
+          ]
+        },
+        {
+          "key": "dongyao",
+          "value": "三爻",
+          "scope": {
+            "layer": "本命",
+            "yao": 3
+          },
+          "derivedFrom": [
+            "rows.moving"
+          ]
+        },
+        {
+          "key": "liuqin",
+          "value": "官鬼",
+          "scope": {
+            "layer": "本命",
+            "yao": 4
+          },
+          "derivedFrom": [
+            "rows.relative"
+          ]
+        },
+        {
+          "key": "liushen",
+          "value": "白虎",
+          "scope": {
+            "layer": "本命",
+            "yao": 4
+          },
+          "derivedFrom": [
+            "rows.spirit"
+          ]
+        },
+        {
+          "key": "yao_zhi",
+          "value": "午",
+          "scope": {
+            "layer": "本命",
+            "yao": 4
+          },
+          "derivedFrom": [
+            "rows.ganzhi"
+          ]
+        },
+        {
+          "key": "liuyao_month_strength",
+          "value": "月破",
+          "scope": {
+            "layer": "本命",
+            "yao": 4
+          },
+          "derivedFrom": [
+            "state.monthStrength"
+          ]
+        },
+        {
+          "key": "liuyao_activity",
+          "value": "静",
+          "scope": {
+            "layer": "本命",
+            "yao": 4
+          },
+          "derivedFrom": [
+            "state.activity.label"
+          ]
+        },
+        {
+          "key": "bian_yao_zhi",
+          "value": "午",
+          "scope": {
+            "layer": "本命",
+            "yao": 4
+          },
+          "derivedFrom": [
+            "rows.changed"
+          ]
+        },
+        {
+          "key": "liuqin",
+          "value": "兄弟",
+          "scope": {
+            "layer": "本命",
+            "yao": 5
+          },
+          "derivedFrom": [
+            "rows.relative"
+          ]
+        },
+        {
+          "key": "liushen",
+          "value": "玄武",
+          "scope": {
+            "layer": "本命",
+            "yao": 5
+          },
+          "derivedFrom": [
+            "rows.spirit"
+          ]
+        },
+        {
+          "key": "yao_zhi",
+          "value": "申",
+          "scope": {
+            "layer": "本命",
+            "yao": 5
+          },
+          "derivedFrom": [
+            "rows.ganzhi"
+          ]
+        },
+        {
+          "key": "liuyao_month_strength",
+          "value": "休囚",
+          "scope": {
+            "layer": "本命",
+            "yao": 5
+          },
+          "derivedFrom": [
+            "state.monthStrength"
+          ]
+        },
+        {
+          "key": "liuyao_activity",
+          "value": "日破",
+          "scope": {
+            "layer": "本命",
+            "yao": 5
+          },
+          "derivedFrom": [
+            "state.activity.label"
+          ]
+        },
+        {
+          "key": "bian_yao_zhi",
+          "value": "申",
+          "scope": {
+            "layer": "本命",
+            "yao": 5
+          },
+          "derivedFrom": [
+            "rows.changed"
+          ]
+        },
+        {
+          "key": "liuqin",
+          "value": "父母",
+          "scope": {
+            "layer": "本命",
+            "yao": 6
+          },
+          "derivedFrom": [
+            "rows.relative"
+          ]
+        },
+        {
+          "key": "liushen",
+          "value": "青龙",
+          "scope": {
+            "layer": "本命",
+            "yao": 6
+          },
+          "derivedFrom": [
+            "rows.spirit"
+          ]
+        },
+        {
+          "key": "yao_zhi",
+          "value": "戌",
+          "scope": {
+            "layer": "本命",
+            "yao": 6
+          },
+          "derivedFrom": [
+            "rows.ganzhi"
+          ]
+        },
+        {
+          "key": "liuyao_month_strength",
+          "value": "休囚",
+          "scope": {
+            "layer": "本命",
+            "yao": 6
+          },
+          "derivedFrom": [
+            "state.monthStrength"
+          ]
+        },
+        {
+          "key": "liuyao_activity",
+          "value": "静",
+          "scope": {
+            "layer": "本命",
+            "yao": 6
+          },
+          "derivedFrom": [
+            "state.activity.label"
+          ]
+        },
+        {
+          "key": "liuyao_kong",
+          "value": "空",
+          "scope": {
+            "layer": "本命",
+            "yao": 6
+          },
+          "derivedFrom": [
+            "state.kong"
+          ]
+        },
+        {
+          "key": "liuyao_tomb",
+          "value": "入动墓",
+          "scope": {
+            "layer": "本命",
+            "yao": 6
+          },
+          "derivedFrom": [
+            "state.lifecycle.tombs"
+          ]
+        },
+        {
+          "key": "bian_yao_zhi",
+          "value": "戌",
+          "scope": {
+            "layer": "本命",
+            "yao": 6
+          },
+          "derivedFrom": [
+            "rows.changed"
+          ]
+        },
+        {
+          "key": "shiyao",
+          "value": "六爻",
+          "scope": {
+            "layer": "本命",
+            "yao": 6
+          },
+          "derivedFrom": [
+            "rows.mark"
+          ]
+        }
+      ]
+    },
+    "cov4_liuyao_2": {
+      "label": "覆盖4·六爻 1990-1-3 000000（演示 2 条）",
+      "facts": [
+        {
+          "key": "liuyao_seq",
+          "value": "本宫",
+          "scope": {
+            "layer": "本命"
+          },
+          "derivedFrom": [
+            "main.sequence"
+          ]
+        },
+        {
+          "key": "liuyao_yongshen",
+          "value": "妻财",
+          "scope": {
+            "layer": "本命"
+          },
+          "derivedFrom": [
+            "analysis.use.requested"
+          ]
+        },
+        {
+          "key": "liuqin",
+          "value": "兄弟",
+          "scope": {
+            "layer": "本命",
+            "yao": 1
+          },
+          "derivedFrom": [
+            "rows.relative"
+          ]
+        },
+        {
+          "key": "liushen",
+          "value": "勾陈",
+          "scope": {
+            "layer": "本命",
+            "yao": 1
+          },
+          "derivedFrom": [
+            "rows.spirit"
+          ]
+        },
+        {
+          "key": "yao_zhi",
+          "value": "未",
+          "scope": {
+            "layer": "本命",
+            "yao": 1
+          },
+          "derivedFrom": [
+            "rows.ganzhi"
+          ]
+        },
+        {
+          "key": "liuyao_month_strength",
+          "value": "休囚",
+          "scope": {
+            "layer": "本命",
+            "yao": 1
+          },
+          "derivedFrom": [
+            "state.monthStrength"
+          ]
+        },
+        {
+          "key": "liuyao_activity",
+          "value": "明动",
+          "scope": {
+            "layer": "本命",
+            "yao": 1
+          },
+          "derivedFrom": [
+            "state.activity.label"
+          ]
+        },
+        {
+          "key": "liuyao_tomb",
+          "value": "入日墓",
+          "scope": {
+            "layer": "本命",
+            "yao": 1
+          },
+          "derivedFrom": [
+            "state.lifecycle.tombs"
+          ]
+        },
+        {
+          "key": "bian_yao_zhi",
+          "value": "子",
+          "scope": {
+            "layer": "本命",
+            "yao": 1
+          },
+          "derivedFrom": [
+            "rows.changed"
+          ]
+        },
+        {
+          "key": "dongyao",
+          "value": "初爻",
+          "scope": {
+            "layer": "本命",
+            "yao": 1
+          },
+          "derivedFrom": [
+            "rows.moving"
+          ]
+        },
+        {
+          "key": "liuqin",
+          "value": "父母",
+          "scope": {
+            "layer": "本命",
+            "yao": 2
+          },
+          "derivedFrom": [
+            "rows.relative"
+          ]
+        },
+        {
+          "key": "liushen",
+          "value": "腾蛇",
+          "scope": {
+            "layer": "本命",
+            "yao": 2
+          },
+          "derivedFrom": [
+            "rows.spirit"
+          ]
+        },
+        {
+          "key": "yao_zhi",
+          "value": "巳",
+          "scope": {
+            "layer": "本命",
+            "yao": 2
+          },
+          "derivedFrom": [
+            "rows.ganzhi"
+          ]
+        },
+        {
+          "key": "liuyao_month_strength",
+          "value": "休囚",
+          "scope": {
+            "layer": "本命",
+            "yao": 2
+          },
+          "derivedFrom": [
+            "state.monthStrength"
+          ]
+        },
+        {
+          "key": "liuyao_activity",
+          "value": "静",
+          "scope": {
+            "layer": "本命",
+            "yao": 2
+          },
+          "derivedFrom": [
+            "state.activity.label"
+          ]
+        },
+        {
+          "key": "bian_yao_zhi",
+          "value": "寅",
+          "scope": {
+            "layer": "本命",
+            "yao": 2
+          },
+          "derivedFrom": [
+            "rows.changed"
+          ]
+        },
+        {
+          "key": "liuqin",
+          "value": "官鬼",
+          "scope": {
+            "layer": "本命",
+            "yao": 3
+          },
+          "derivedFrom": [
+            "rows.relative"
+          ]
+        },
+        {
+          "key": "liushen",
+          "value": "白虎",
+          "scope": {
+            "layer": "本命",
+            "yao": 3
+          },
+          "derivedFrom": [
+            "rows.spirit"
+          ]
+        },
+        {
+          "key": "yao_zhi",
+          "value": "卯",
+          "scope": {
+            "layer": "本命",
+            "yao": 3
+          },
+          "derivedFrom": [
+            "rows.ganzhi"
+          ]
+        },
+        {
+          "key": "liuyao_month_strength",
+          "value": "相",
+          "scope": {
+            "layer": "本命",
+            "yao": 3
+          },
+          "derivedFrom": [
+            "state.monthStrength"
+          ]
+        },
+        {
+          "key": "liuyao_activity",
+          "value": "静",
+          "scope": {
+            "layer": "本命",
+            "yao": 3
+          },
+          "derivedFrom": [
+            "state.activity.label"
+          ]
+        },
+        {
+          "key": "liuyao_tomb",
+          "value": "入动墓",
+          "scope": {
+            "layer": "本命",
+            "yao": 3
+          },
+          "derivedFrom": [
+            "state.lifecycle.tombs"
+          ]
+        },
+        {
+          "key": "bian_yao_zhi",
+          "value": "辰",
+          "scope": {
+            "layer": "本命",
+            "yao": 3
+          },
+          "derivedFrom": [
+            "rows.changed"
+          ]
+        },
+        {
+          "key": "yingyao",
+          "value": "三爻",
+          "scope": {
+            "layer": "本命",
+            "yao": 3
+          },
+          "derivedFrom": [
+            "rows.mark"
+          ]
+        },
+        {
+          "key": "liuqin",
+          "value": "兄弟",
+          "scope": {
+            "layer": "本命",
+            "yao": 4
+          },
+          "derivedFrom": [
+            "rows.relative"
+          ]
+        },
+        {
+          "key": "liushen",
+          "value": "玄武",
+          "scope": {
+            "layer": "本命",
+            "yao": 4
+          },
+          "derivedFrom": [
+            "rows.spirit"
+          ]
+        },
+        {
+          "key": "yao_zhi",
+          "value": "丑",
+          "scope": {
+            "layer": "本命",
+            "yao": 4
+          },
+          "derivedFrom": [
+            "rows.ganzhi"
+          ]
+        },
+        {
+          "key": "liuyao_month_strength",
+          "value": "休囚",
+          "scope": {
+            "layer": "本命",
+            "yao": 4
+          },
+          "derivedFrom": [
+            "state.monthStrength"
+          ]
+        },
+        {
+          "key": "liuyao_activity",
+          "value": "静",
+          "scope": {
+            "layer": "本命",
+            "yao": 4
+          },
+          "derivedFrom": [
+            "state.activity.label"
+          ]
+        },
+        {
+          "key": "liuyao_tomb",
+          "value": "入日墓",
+          "scope": {
+            "layer": "本命",
+            "yao": 4
+          },
+          "derivedFrom": [
+            "state.lifecycle.tombs"
+          ]
+        },
+        {
+          "key": "bian_yao_zhi",
+          "value": "丑",
+          "scope": {
+            "layer": "本命",
+            "yao": 4
+          },
+          "derivedFrom": [
+            "rows.changed"
+          ]
+        },
+        {
+          "key": "liuqin",
+          "value": "妻财",
+          "scope": {
+            "layer": "本命",
+            "yao": 5
+          },
+          "derivedFrom": [
+            "rows.relative"
+          ]
+        },
+        {
+          "key": "liushen",
+          "value": "青龙",
+          "scope": {
+            "layer": "本命",
+            "yao": 5
+          },
+          "derivedFrom": [
+            "rows.spirit"
+          ]
+        },
+        {
+          "key": "yao_zhi",
+          "value": "亥",
+          "scope": {
+            "layer": "本命",
+            "yao": 5
+          },
+          "derivedFrom": [
+            "rows.ganzhi"
+          ]
+        },
+        {
+          "key": "liuyao_month_strength",
+          "value": "旺",
+          "scope": {
+            "layer": "本命",
+            "yao": 5
+          },
+          "derivedFrom": [
+            "state.monthStrength"
+          ]
+        },
+        {
+          "key": "liuyao_activity",
+          "value": "静",
+          "scope": {
+            "layer": "本命",
+            "yao": 5
+          },
+          "derivedFrom": [
+            "state.activity.label"
+          ]
+        },
+        {
+          "key": "liuyao_kong",
+          "value": "空",
+          "scope": {
+            "layer": "本命",
+            "yao": 5
+          },
+          "derivedFrom": [
+            "state.kong"
+          ]
+        },
+        {
+          "key": "liuyao_tomb",
+          "value": "入日墓",
+          "scope": {
+            "layer": "本命",
+            "yao": 5
+          },
+          "derivedFrom": [
+            "state.lifecycle.tombs"
+          ]
+        },
+        {
+          "key": "bian_yao_zhi",
+          "value": "亥",
+          "scope": {
+            "layer": "本命",
+            "yao": 5
+          },
+          "derivedFrom": [
+            "rows.changed"
+          ]
+        },
+        {
+          "key": "liuqin",
+          "value": "子孙",
+          "scope": {
+            "layer": "本命",
+            "yao": 6
+          },
+          "derivedFrom": [
+            "rows.relative"
+          ]
+        },
+        {
+          "key": "liushen",
+          "value": "朱雀",
+          "scope": {
+            "layer": "本命",
+            "yao": 6
+          },
+          "derivedFrom": [
+            "rows.spirit"
+          ]
+        },
+        {
+          "key": "yao_zhi",
+          "value": "酉",
+          "scope": {
+            "layer": "本命",
+            "yao": 6
+          },
+          "derivedFrom": [
+            "rows.ganzhi"
+          ]
+        },
+        {
+          "key": "liuyao_month_strength",
+          "value": "休囚",
+          "scope": {
+            "layer": "本命",
+            "yao": 6
+          },
+          "derivedFrom": [
+            "state.monthStrength"
+          ]
+        },
+        {
+          "key": "liuyao_activity",
+          "value": "静",
+          "scope": {
+            "layer": "本命",
+            "yao": 6
+          },
+          "derivedFrom": [
+            "state.activity.label"
+          ]
+        },
+        {
+          "key": "bian_yao_zhi",
+          "value": "酉",
+          "scope": {
+            "layer": "本命",
+            "yao": 6
+          },
+          "derivedFrom": [
+            "rows.changed"
+          ]
+        },
+        {
+          "key": "shiyao",
+          "value": "六爻",
+          "scope": {
+            "layer": "本命",
+            "yao": 6
+          },
+          "derivedFrom": [
+            "rows.mark"
+          ]
+        }
+      ]
+    },
     "cov2_liuyao_1": {
       "label": "覆盖2·六爻 1988-2-19 000111（演示 2 条）",
       "facts": [
@@ -31367,6 +32374,17 @@
           },
           "derivedFrom": [
             "state.activity.label"
+          ]
+        },
+        {
+          "key": "liuyao_tomb",
+          "value": "入日墓",
+          "scope": {
+            "layer": "本命",
+            "yao": 1
+          },
+          "derivedFrom": [
+            "state.lifecycle.tombs"
           ]
         },
         {
@@ -31675,6 +32693,17 @@
           },
           "derivedFrom": [
             "state.activity.label"
+          ]
+        },
+        {
+          "key": "liuyao_tomb",
+          "value": "入日墓",
+          "scope": {
+            "layer": "本命",
+            "yao": 6
+          },
+          "derivedFrom": [
+            "state.lifecycle.tombs"
           ]
         },
         {
