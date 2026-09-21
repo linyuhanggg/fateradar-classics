@@ -145,6 +145,8 @@ ART_EMIT_KEYS: dict[str, frozenset[str]] = {
             "dongyao",
             # 世序／卦体分类（本宫…游魂／归魂）：引擎 main.sequence 直接透传。
             "liuyao_seq",
+            # 爻之阴阳（阳／阴）：易理类规则（当位／中正／相应）要看它，与六爻同源。
+            "yao_yinyang",
             # 纳甲地支（本爻／变爻）：引擎 row.ganzhi[1] / row.changed[1] 直接产出。
             "yao_zhi",
             "bian_yao_zhi",
@@ -162,6 +164,8 @@ ART_EMIT_KEYS: dict[str, frozenset[str]] = {
     ),
     # t211：小六壬（参考术，不在六术门禁内）——执行层有 6 条记录，引擎本来就产事实。
     "xiaoliuren": frozenset({"xiaoliuren_palace"}),
+    # 易理（参考术）：与六爻同源——同一卦的爻层事实共用（t214）。
+    "yili": frozenset({"yao_yinyang"}),
     "qizheng": frozenset({"qizheng_ascendant", "xingyao", "gongwei", "xiudu", "miaowang"}),
 }
 

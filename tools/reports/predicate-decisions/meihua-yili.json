@@ -1,7 +1,10 @@
 {
   "art": "meihua+yili",
   "generated_by": "T168 mapper (reference-arts assignment: meihua, yili)",
-  "arts": ["meihua", "yili"],
+  "arts": [
+    "meihua",
+    "yili"
+  ],
   "books": [
     "divination/meihua-yishu",
     "divination/zhouyi-zhezhong",
@@ -408,29 +411,32 @@
     {
       "book": "divination/zhouyi-zhezhong",
       "rule_id": "ZZR-01",
-      "decision": "unmapped",
-      "reason_class": "fact-not-emitted",
+      "decision": "mapped",
       "missing_fact": "爻之阴阳（阳爻／阴爻）",
       "evidence_from_statement": "阳爻居阳位（初三五）、阴爻居阴位（二四上）为\"当位\"；当位则正，多吉。",
-      "note": "爻位本身在 liuyao 有 shiyao/dongyao 取值，但「当位」还须判爻之阴阳，而引擎不产出爻的阴阳属性事实；仅写爻位会丢掉本条的全部条件，属失真映射。"
+      "note": "爻位本身在 liuyao 有 shiyao/dongyao 取值，但「当位」还须判爻之阴阳，而引擎不产出爻的阴阳属性事实；仅写爻位会丢掉本条的全部条件，属失真映射。",
+      "mapped_by": "yili-structure-map.json",
+      "mapped_note": "t214 映射：条件＝**本卦有当位之爻**；六支逐一枚举（位置与阴阳都在原文里）。「当位则正，多吉」是断语，未表达。"
     },
     {
       "book": "divination/zhouyi-zhezhong",
       "rule_id": "ZHOUYIZHEZHO-004",
-      "decision": "unmapped",
-      "reason_class": "fact-not-emitted",
+      "decision": "mapped",
       "missing_fact": "爻之阴阳（刚中／柔中）",
       "evidence_from_statement": "得中又当位（如九五、六二）为\"中正\"，最贵之爻；多主大吉、君子之道。",
-      "note": "「中正」＝中位＋当位（阴阳得位）双重条件，阴阳事实未产出。"
+      "note": "「中正」＝中位＋当位（阴阳得位）双重条件，阴阳事实未产出。",
+      "mapped_by": "yili-structure-map.json",
+      "mapped_note": "t214 映射：条件＝有「中正」之爻（九五为阳、六二为阴）；原文只举此二例，故只写这两支。"
     },
     {
       "book": "divination/zhouyi-zhezhong",
       "rule_id": "ZHOUYIZHEZHO-005",
-      "decision": "unmapped",
-      "reason_class": "fact-not-emitted",
+      "decision": "mapped",
       "missing_fact": "相应两爻的阴阳属性（阴阳相应／同性相应）；且无「应位」事实",
       "evidence_from_statement": "初与四、二与五、三与上相应；阴阳相应为有应（吉象）、同性相应为无应（孤立）。",
-      "note": "取位对应（初-四／二-五／三-上）是固定结构，但本条断吉凶取决于两爻阴阳是否相反，该事实未产出。刻意不映射 dongyao/shiyao：本条不区分动爻与本卦爻位，映射会引入原文没有的区分。"
+      "note": "取位对应（初-四／二-五／三-上）是固定结构，但本条断吉凶取决于两爻阴阳是否相反，该事实未产出。刻意不映射 dongyao/shiyao：本条不区分动爻与本卦爻位，映射会引入原文没有的区分。",
+      "mapped_by": "yili-structure-map.json",
+      "mapped_note": "t214 映射：条件＝存在一对相应之爻（初四／二五／三上）且**阴阳相反**；「同性相应为无应」是反例说明，未写成排除。"
     },
     {
       "book": "divination/zhouyi-zhezhong",
@@ -638,7 +644,13 @@
       "meta-rule": 1
     },
     "applicable_to_edits": 0,
-    "coverage_before": {"meihua": 0.0, "yili": 0.0},
-    "coverage_after": {"meihua": 0.0, "yili": 0.0}
+    "coverage_before": {
+      "meihua": 0.0,
+      "yili": 0.0
+    },
+    "coverage_after": {
+      "meihua": 0.0,
+      "yili": 0.0
+    }
   }
 }

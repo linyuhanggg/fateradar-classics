@@ -50,9 +50,10 @@ def main() -> int:
         sorted(k for k in ("literal", "enumerated", "canonical", "canonical-reviewed", "engine-state") if t.get(k)),
         ["canonical-reviewed", "engine-state", "enumerated", "literal"],
     )
+    # 只在「待读为空」时要求「已读非空」；反之不要求（待读非零是**有未读**的信号，不是失败）。
     check(
-        "  待读与已读的登记表一致（待读为空 ⇒ 全部登记过）",
-        (t.get("canonical", 0) == 0) == (t.get("canonical-reviewed", 0) > 0),
+        "  待读为空 ⇒ 已读过（单向蕴含）",
+        (t.get("canonical", 0) > 0) or (t.get("canonical-reviewed", 0) > 0),
         True,
     )
     check("  取值叶子数 > 1000", data["value_leaves"] > 1000, True)

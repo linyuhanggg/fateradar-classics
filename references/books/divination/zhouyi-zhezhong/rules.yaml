@@ -28,7 +28,7 @@ rules:
     start_line: 2398
     end_line: 2398
   quote: 本義〔位雖得正然過剛不中志從於上不能久於其所故為不恒其德或承之羞之象或者不知其何人之辭承奉也言人皆得奉而進之不知其所自來也貞吝者正而不恒為可羞吝申戒占者之辭〕程傳〔三陽爻居陽位處得其位是其常處也乃志從於上六不惟隂陽相應風復從雷於恒處而不處不恒之人
-  applicable_to: []
+  applicable_to: {any_of: [{all_of: [{key: yao_yinyang, value: 阳, scope: {yao: 1}}]}, {all_of: [{key: yao_yinyang, value: 阳, scope: {yao: 3}}]}, {all_of: [{key: yao_yinyang, value: 阳, scope: {yao: 5}}]}, {all_of: [{key: yao_yinyang, value: 阴, scope: {yao: 2}}]}, {all_of: [{key: yao_yinyang, value: 阴, scope: {yao: 4}}]}, {all_of: [{key: yao_yinyang, value: 阴, scope: {yao: 6}}]}]}
   caveats:
   - 当位非必然吉
   - 尚需看爻之时位与应
@@ -57,7 +57,7 @@ rules:
     start_line: 4409
     end_line: 4409
   quote: 本義〔以卦徳卦體而言陽猶可亨也〕程傳〔以卦才言也内健而外巽健而能巽也二五居中剛中也陽性上進下復乾體志在於行也剛居中為剛而得中又為中剛言畜陽則以柔巽言能亨則由剛中以成卦之義言則為隂畜陽以卦才言則陽為剛中才如是故畜雖小而能亨也〕
-  applicable_to: []
+  applicable_to: {any_of: [{all_of: [{key: yao_yinyang, value: 阳, scope: {yao: 5}}]}, {all_of: [{key: yao_yinyang, value: 阴, scope: {yao: 2}}]}]}
   caveats:
   - —
   school: null
@@ -72,7 +72,7 @@ rules:
     start_line: 1265
     end_line: 1265
   quote: 臣二言大臣盡其職任以答夫君三與上相交泰之終也故三言平變而爲陂上言城復而于隍蓋君子進而小人退所以致泰也君委任而臣效忠所以致泰也抑天運之循環泰極而否有必然者而保泰之意隱然有不容不恐懼焉則平陂城隍其旨嚴哉○吳氏曰愼曰初四以氣類言二體之始也三上以時運
-  applicable_to: []
+  applicable_to: {any_of: [{all_of: [{key: yao_yinyang, value: 阳, scope: {yao: 1}}, {key: yao_yinyang, value: 阴, scope: {yao: 4}}]}, {all_of: [{key: yao_yinyang, value: 阴, scope: {yao: 1}}, {key: yao_yinyang, value: 阳, scope: {yao: 4}}]}, {all_of: [{key: yao_yinyang, value: 阳, scope: {yao: 2}}, {key: yao_yinyang, value: 阴, scope: {yao: 5}}]}, {all_of: [{key: yao_yinyang, value: 阴, scope: {yao: 2}}, {key: yao_yinyang, value: 阳, scope: {yao: 5}}]}, {all_of: [{key: yao_yinyang, value: 阳, scope: {yao: 3}}, {key: yao_yinyang, value: 阴, scope: {yao: 6}}]}, {all_of: [{key: yao_yinyang, value: 阴, scope: {yao: 3}}, {key: yao_yinyang, value: 阳, scope: {yao: 6}}]}]}
   caveats:
   - 与卜筮"世应"概念不同
   - 此处专属义理解卦

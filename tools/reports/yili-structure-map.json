@@ -1,0 +1,32 @@
+[
+ {
+  "book": "yili",
+  "rule_id": "ZZR-01",
+  "applicable_to_yaml": "{any_of: [{all_of: [{key: yao_yinyang, value: 阳, scope: {yao: 1}}]}, {all_of: [{key: yao_yinyang, value: 阳, scope: {yao: 3}}]}, {all_of: [{key: yao_yinyang, value: 阳, scope: {yao: 5}}]}, {all_of: [{key: yao_yinyang, value: 阴, scope: {yao: 2}}]}, {all_of: [{key: yao_yinyang, value: 阴, scope: {yao: 4}}]}, {all_of: [{key: yao_yinyang, value: 阴, scope: {yao: 6}}]}]}",
+  "evidence_from_statement": "阳爻居阳位（初三五）、阴爻居阴位（二四上）为\"当位\"",
+  "facts": [
+   "yao_yinyang(scope.yao)"
+  ],
+  "note": "条件＝本卦**有当位之爻**（阳居初/三/五，或阴居二/四/六）；六支逐一枚举。「当位则正，多吉」是断语，未表达。"
+ },
+ {
+  "book": "yili",
+  "rule_id": "ZHOUYIZHEZHO-004",
+  "applicable_to_yaml": "{any_of: [{all_of: [{key: yao_yinyang, value: 阳, scope: {yao: 5}}]}, {all_of: [{key: yao_yinyang, value: 阴, scope: {yao: 2}}]}]}",
+  "evidence_from_statement": "得中又当位（如九五、六二）",
+  "facts": [
+   "yao_yinyang(scope.yao)"
+  ],
+  "note": "条件＝本卦有「中正」之爻：五爻为阳（九五）或二爻为阴（六二）。原文只举此二例，故只写这两支。"
+ },
+ {
+  "book": "yili",
+  "rule_id": "ZHOUYIZHEZHO-005",
+  "applicable_to_yaml": "{any_of: [{all_of: [{key: yao_yinyang, value: 阳, scope: {yao: 1}}, {key: yao_yinyang, value: 阴, scope: {yao: 4}}]}, {all_of: [{key: yao_yinyang, value: 阴, scope: {yao: 1}}, {key: yao_yinyang, value: 阳, scope: {yao: 4}}]}, {all_of: [{key: yao_yinyang, value: 阳, scope: {yao: 2}}, {key: yao_yinyang, value: 阴, scope: {yao: 5}}]}, {all_of: [{key: yao_yinyang, value: 阴, scope: {yao: 2}}, {key: yao_yinyang, value: 阳, scope: {yao: 5}}]}, {all_of: [{key: yao_yinyang, value: 阳, scope: {yao: 3}}, {key: yao_yinyang, value: 阴, scope: {yao: 6}}]}, {all_of: [{key: yao_yinyang, value: 阴, scope: {yao: 3}}, {key: yao_yinyang, value: 阳, scope: {yao: 6}}]}]}",
+  "evidence_from_statement": "初与四、二与五、三与上相应；阴阳相应为有应",
+  "facts": [
+   "yao_yinyang(scope.yao)"
+  ],
+  "note": "条件＝存在一对「相应」之爻且**阴阳相反**（三对 × 两向 = 六支）。「同性相应为无应」是反例说明，未写成排除。"
+ }
+]
