@@ -182,6 +182,63 @@ def main() -> int:
         True,
     )
 
+    print("6. t211 跨盘汇总：口径与分类都要成立")
+    out = subprocess.run(
+        [sys.executable, str(TOOL), "--all", "--across", "--json"],
+        capture_output=True,
+        text=True,
+        check=False,
+    )
+    check("  --across --json 退出码 0", out.returncode, 0)
+    data = json.loads(out.stdout)
+    recs = data["results"]
+    # 该术在本仓无样盘的记录走早退分支，**本就没有** across 信息（不得算失败）。
+    sample0 = json.loads((ROOT / "tools/reports/facts-sample.json").read_text(encoding="utf-8"))
+    check(
+        "  有样盘的记录都带 across 汇总",
+        [r["id"] for r in recs if r["art"] in sample0 and "across" not in r],
+        [],
+    )
+    check(
+        "  无样盘的记录都标了 no_sample_for_art",
+        [r["id"] for r in recs if r["art"] not in sample0 and not r.get("no_sample_for_art")],
+        [],
+    )
+    # 不变量一：跨盘可判 ⊇ 首盘可判（首盘判得出 ⇒ 至少一张盘判得出）
+    first_ok = [r for r in recs if r["verdict"] in (ee.TRUE, ee.FALSE)]
+    across_ok = [r for r in recs if (r.get("across") or {}).get("decidable_somewhere")]
+    check("  跨盘可判数 ≥ 首盘可判数", len(across_ok) >= len(first_ok), True)
+    check(
+        "  首盘可判的都在跨盘可判里",
+        sorted({r["id"] for r in first_ok} - {r["id"] for r in across_ok}),
+        [],
+    )
+    # 不变量二：decidable_somewhere ⇔ decidable_cases 非空
+    bad = [
+        r["id"]
+        for r in recs
+        if bool((r.get("across") or {}).get("decidable_cases")) != bool((r.get("across") or {}).get("decidable_somewhere"))
+    ]
+    check("  两个字段一致", bad, [])
+    # 不变量三：per_case 覆盖该术全部样盘
+    sample = json.loads((ROOT / "tools/reports/facts-sample.json").read_text(encoding="utf-8"))
+    bad2 = []
+    for r in recs:
+        ac = r.get("across") or {}
+        if not ac:
+            continue
+        cases = sample.get(r["art"])
+        if cases and ac["cases"] != len(cases):
+            bad2.append(f"{r['id']}: {ac['cases']} != {len(cases)}")
+    check("  per_case 覆盖全部样盘", bad2, [])
+    # 不变量四：标了 no_sample_for_art 的，必须确实是本仓没有该术样盘
+    marked = [r for r in recs if r.get("no_sample_for_art")]
+    check(
+        "  no_sample_for_art 标记为真时该术确实无样盘",
+        [r["id"] for r in marked if r["art"] in sample],
+        [],
+    )
+
     if FAILED:
         print(f"\n{len(FAILED)} 项失败:", file=sys.stderr)
         for f in FAILED:

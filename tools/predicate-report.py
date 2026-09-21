@@ -160,6 +160,8 @@ ART_EMIT_KEYS: dict[str, frozenset[str]] = {
             "liuyao_reversal",
         }
     ),
+    # t211：小六壬（参考术，不在六术门禁内）——执行层有 6 条记录，引擎本来就产事实。
+    "xiaoliuren": frozenset({"xiaoliuren_palace"}),
     "qizheng": frozenset({"qizheng_ascendant", "xingyao", "gongwei", "xiudu", "miaowang"}),
 }
 

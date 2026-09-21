@@ -110,7 +110,11 @@ FIELD_MAP: dict[str, tuple[str, dict | None, str]] = {
     "meihua.role": (None, None, "梅花体用角色：同上"),
     "liuyao.structure": (None, None, "六爻卦体结构：引擎未产出"),
     "interference.id": (None, None, "干扰项命名表：无注册表"),
-    "xiaoliuren.palace.hour": (None, None, "小六壬时宫：本仓事实层未产出（产品词表有此键，古籍仓词表无）"),
+    # t211：小六壬三宫由引擎产出（键 `xiaoliuren_palace`，`scope.palace` 为「月宫／日宫／时宫」）。
+    # 旧注说「古籍仓词表无」已过期——t195 起词表由引擎 `toFactVocabJson()` 生成，该键一直在。
+    "xiaoliuren.palace.month": ("xiaoliuren_palace", {"palace": "月宫"}, "小六壬月宫；引擎产出 xiaoliuren_palace"),
+    "xiaoliuren.palace.day": ("xiaoliuren_palace", {"palace": "日宫"}, "小六壬日宫；同上"),
+    "xiaoliuren.palace.hour": ("xiaoliuren_palace", {"palace": "时宫"}, "小六壬时宫；同上"),
 }
 # 前缀映射：`tenGodFacts.<十神>.<层/性>` 这类带变量的名字
 PREFIX_MAP: list[tuple[str, str, dict | None, str]] = [
@@ -379,6 +383,14 @@ def main() -> int:
     ap.add_argument("--case", default=None, help="facts-sample 里的 case（默认该 art 首个）")
     ap.add_argument("--json", action="store_true")
     ap.add_argument("-v", "--verbose", action="store_true")
+    ap.add_argument(
+        "--across",
+        action="store_true",
+        help=(
+            "跨盘汇总：每条记录在**本术全部样盘**上求值，分「至少一张盘可判（满足/不满足）」"
+            "与「任何盘都判不了」。默认口径只取首个样盘，会掩盖「只在某些盘上才可判」的改进（t210 的教训）。"
+        ),
+    )
     args = ap.parse_args()
 
     files = (
@@ -408,6 +420,7 @@ def main() -> int:
                         "has_named_gaps": bool(rule.get("named_gaps")),
                         "verified": rule.get("verified"),
                         "implementation_assumption": rule.get("implementation_assumption"),
+                        "no_sample_for_art": True,
                         "notes": [f"本仓 facts-sample 无 art={art} 的盘面（无引擎事实）"],
                         "source": {},
                     }
@@ -415,7 +428,17 @@ def main() -> int:
                 continue
             cases = sample[art]
             case = args.case if args.case in cases else sorted(cases)[0]
-            results.append(evaluate_record(rule, cases[case]["facts"]))
+            rec = evaluate_record(rule, cases[case]["facts"])
+            if args.across:
+                per_case = {c: evaluate_record(rule, v["facts"])["verdict"] for c, v in sorted(cases.items())}
+                decidable = [c for c, v in per_case.items() if v in (TRUE, FALSE)]
+                rec["across"] = {
+                    "cases": len(per_case),
+                    "per_case": per_case,
+                    "decidable_cases": decidable,
+                    "decidable_somewhere": bool(decidable),
+                }
+            results.append(rec)
 
     tally = Counter(r["verdict"] for r in results)
     if args.json:
@@ -438,6 +461,30 @@ def main() -> int:
     print(f"  rescue=unimplemented {sum(1 for r in results if r['rescue_unimplemented'])} 条；"
           f"带 named_gaps {sum(1 for r in results if r['has_named_gaps'])} 条；"
           f"verified=true {sum(1 for r in results if r['verified'] is True)} 条")
+    if args.across:
+        somewhere = [r for r in results if (r.get("across") or {}).get("decidable_somewhere")]
+        nowhere = [r for r in results if not (r.get("across") or {}).get("decidable_somewhere")]
+        print()
+        print(f"跨盘汇总（每条在本术全部样盘上求值）：")
+        print(f"  至少一张盘可判：{len(somewhere)} 条")
+        print(f"  任何盘都判不了：{len(nowhere)} 条")
+        by_reason = Counter()
+        for r in nowhere:
+            if r.get("no_sample_for_art"):
+                by_reason["**本仓没有该术的样盘**（补样盘即可判）"] += 1
+            elif r["unmapped_fields"]:
+                by_reason["引用接不上 FactKey 的字段"] += 1
+            elif r["verdict"] == UNDEF:
+                by_reason["语料无构成定义"] += 1
+            else:
+                by_reason["事实键在任何样盘都不在场"] += 1
+        for k, v in by_reason.most_common():
+            print(f"    {v:4} {k}")
+        if nowhere and args.verbose:
+            print("  判不了的条目：")
+            for r in nowhere[:40]:
+                print(f"    {r['id']:10} {r['theme'] or '':18} 字段={','.join(sorted(set(r['unmapped_fields'])))[:60]}")
+
     unmapped = Counter(f for r in results for f in r["unmapped_fields"])
     if unmapped:
         print("\n接不上 FactKey 的字段（这些记录的对应子句只能是信息不足）：")

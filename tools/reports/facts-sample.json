@@ -30058,6 +30058,84 @@
       ]
     }
   },
+  "xiaoliuren": {
+    "caseA": {
+      "label": "小六壬 甲 1990-08-15 13:20 男 上海",
+      "facts": [
+        {
+          "key": "xiaoliuren_palace",
+          "value": "空亡",
+          "scope": {
+            "layer": "本命",
+            "palace": "月宫"
+          },
+          "derivedFrom": [
+            "正月起大安，顺数至6月，落空亡"
+          ]
+        },
+        {
+          "key": "xiaoliuren_palace",
+          "value": "空亡",
+          "scope": {
+            "layer": "本命",
+            "palace": "日宫"
+          },
+          "derivedFrom": [
+            "自月宫空亡起初一，顺数至25日，落空亡"
+          ]
+        },
+        {
+          "key": "xiaoliuren_palace",
+          "value": "大安",
+          "scope": {
+            "layer": "本命",
+            "palace": "时宫"
+          },
+          "derivedFrom": [
+            "自日宫空亡起子时，顺数至未时，落大安"
+          ]
+        }
+      ]
+    },
+    "caseB": {
+      "label": "小六壬 乙 1984-02-04 23:40 女 上海",
+      "facts": [
+        {
+          "key": "xiaoliuren_palace",
+          "value": "大安",
+          "scope": {
+            "layer": "本命",
+            "palace": "月宫"
+          },
+          "derivedFrom": [
+            "正月起大安，顺数至1月，落大安"
+          ]
+        },
+        {
+          "key": "xiaoliuren_palace",
+          "value": "速喜",
+          "scope": {
+            "layer": "本命",
+            "palace": "日宫"
+          },
+          "derivedFrom": [
+            "自月宫大安起初一，顺数至3日，落速喜"
+          ]
+        },
+        {
+          "key": "xiaoliuren_palace",
+          "value": "速喜",
+          "scope": {
+            "layer": "本命",
+            "palace": "时宫"
+          },
+          "derivedFrom": [
+            "自日宫速喜起子时，顺数至子时，落速喜"
+          ]
+        }
+      ]
+    }
+  },
   "liuyao": {
     "caseA": {
       "label": "乾宫本宫安静 111111 · 甲 1990-08-15",
