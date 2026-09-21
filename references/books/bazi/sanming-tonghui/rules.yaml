@@ -115,7 +115,7 @@ rules:
     start_line: 3218
     end_line: 3218
   quote: 財豐亦能旺官以財盛自生官運行旺相福禄俱臻一遇官鄉便可發福如柱中原帶官星便作好命看若兄弟輩出縱入官鄉發福必偏財月令所帶最重不宜柱中多逢年上偏財生旺月令柱中通氣主受伯叔祖考産䕃豐隆或外祖產業恩養大要日主興隆財星生旺運向財旺之鄉發福若見刑衝破害比
-  applicable_to: []
+  applicable_to: {any_of: [{all_of: [{key: canggan, value: 甲, scope: {pillar: month}}, {key: gan, value: 甲}]}, {all_of: [{key: canggan, value: 乙, scope: {pillar: month}}, {key: gan, value: 乙}]}, {all_of: [{key: canggan, value: 丙, scope: {pillar: month}}, {key: gan, value: 丙}]}, {all_of: [{key: canggan, value: 丁, scope: {pillar: month}}, {key: gan, value: 丁}]}, {all_of: [{key: canggan, value: 戊, scope: {pillar: month}}, {key: gan, value: 戊}]}, {all_of: [{key: canggan, value: 己, scope: {pillar: month}}, {key: gan, value: 己}]}, {all_of: [{key: canggan, value: 庚, scope: {pillar: month}}, {key: gan, value: 庚}]}, {all_of: [{key: canggan, value: 辛, scope: {pillar: month}}, {key: gan, value: 辛}]}, {all_of: [{key: canggan, value: 壬, scope: {pillar: month}}, {key: gan, value: 壬}]}, {all_of: [{key: canggan, value: 癸, scope: {pillar: month}}, {key: gan, value: 癸}]}]}
   caveats:
   - 本气分配日数古今略有差异
   - 与《子平真诠》R2 互证，但日数细节以专精派 pack 为准

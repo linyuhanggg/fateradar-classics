@@ -540,12 +540,14 @@
     {
       "book": "bazi/sanming-tonghui",
       "rule_id": "SANMINGTONGH-R-02",
-      "decision": "unmapped",
+      "decision": "mapped",
       "applicable_to_yaml": "[]",
       "evidence_from_statement": "月令所藏天干分本气、中气、余气，按节气分日数分配司令；取格优先看本气透干…",
       "note": "作业书点名『透干／司令』属引擎未产出事实。",
       "reason_class": "fact-not-emitted",
-      "missing_fact": "月令藏干与人元司令（透干）"
+      "missing_fact": "月令藏干与人元司令（透干）",
+      "mapped_by": "bazi-tougan-map.json",
+      "mapped_note": "t195 映射：「取格优先看本气透干」的适用范围＝月令藏干有透干者；用枚举十天干与 gan 配对（无通配）。完全无透干的情形不在本式内（子集，已披露）。"
     },
     {
       "book": "bazi/sanming-tonghui",
@@ -1067,12 +1069,14 @@
     {
       "book": "bazi/yuanhai-ziping",
       "rule_id": "YUANHAIZIPIN-008",
-      "decision": "unmapped",
+      "decision": "mapped",
       "applicable_to_yaml": "[]",
       "evidence_from_statement": "月令所藏天干分本气、中气、余气；取格优先看本气透干。",
       "note": "作业书点名『透干／司令』未产出；caveat 未给取值。",
       "reason_class": "fact-not-emitted",
-      "missing_fact": "月令藏干与透干（人元司令）"
+      "missing_fact": "月令藏干与透干（人元司令）",
+      "mapped_by": "bazi-tougan-map.json",
+      "mapped_note": "t195 映射：同 SANMINGTONGH-R-02（两书同说「取格优先看本气透干」）；适用范围＝月令藏干有透干者，枚举十天干与 gan 配对，无通配。"
     },
     {
       "book": "bazi/yuanhai-ziping",

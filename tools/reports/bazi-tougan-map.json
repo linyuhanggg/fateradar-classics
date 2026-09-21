@@ -1,0 +1,22 @@
+[
+ {
+  "book": "bazi/sanming-tonghui",
+  "rule_id": "SANMINGTONGH-R-02",
+  "applicable_to_yaml": "{any_of: [{all_of: [{key: canggan, value: 甲, scope: {pillar: month}}, {key: gan, value: 甲}]}, {all_of: [{key: canggan, value: 乙, scope: {pillar: month}}, {key: gan, value: 乙}]}, {all_of: [{key: canggan, value: 丙, scope: {pillar: month}}, {key: gan, value: 丙}]}, {all_of: [{key: canggan, value: 丁, scope: {pillar: month}}, {key: gan, value: 丁}]}, {all_of: [{key: canggan, value: 戊, scope: {pillar: month}}, {key: gan, value: 戊}]}, {all_of: [{key: canggan, value: 己, scope: {pillar: month}}, {key: gan, value: 己}]}, {all_of: [{key: canggan, value: 庚, scope: {pillar: month}}, {key: gan, value: 庚}]}, {all_of: [{key: canggan, value: 辛, scope: {pillar: month}}, {key: gan, value: 辛}]}, {all_of: [{key: canggan, value: 壬, scope: {pillar: month}}, {key: gan, value: 壬}]}, {all_of: [{key: canggan, value: 癸, scope: {pillar: month}}, {key: gan, value: 癸}]}]}",
+  "evidence_from_statement": "取格优先看本气透干",
+  "encoding": "enumerated-value-pairing-over-ten-stems",
+  "fact_contract": "canggan(scope.pillar) 与 gan 取值相同即「透」；全式无通配、无 same。",
+  "disclosed": "适用范围为「月令藏干有透干者」；完全无透干的情形不在本式内（子集）。",
+  "note": "适用范围＝月令藏干有透干者（本气透或中气余气透）；「按节气分日数分配司令」属取格细则，未表达；完全无透干的情形不在本式内（子集）。"
+ },
+ {
+  "book": "bazi/yuanhai-ziping",
+  "rule_id": "YUANHAIZIPIN-008",
+  "applicable_to_yaml": "{any_of: [{all_of: [{key: canggan, value: 甲, scope: {pillar: month}}, {key: gan, value: 甲}]}, {all_of: [{key: canggan, value: 乙, scope: {pillar: month}}, {key: gan, value: 乙}]}, {all_of: [{key: canggan, value: 丙, scope: {pillar: month}}, {key: gan, value: 丙}]}, {all_of: [{key: canggan, value: 丁, scope: {pillar: month}}, {key: gan, value: 丁}]}, {all_of: [{key: canggan, value: 戊, scope: {pillar: month}}, {key: gan, value: 戊}]}, {all_of: [{key: canggan, value: 己, scope: {pillar: month}}, {key: gan, value: 己}]}, {all_of: [{key: canggan, value: 庚, scope: {pillar: month}}, {key: gan, value: 庚}]}, {all_of: [{key: canggan, value: 辛, scope: {pillar: month}}, {key: gan, value: 辛}]}, {all_of: [{key: canggan, value: 壬, scope: {pillar: month}}, {key: gan, value: 壬}]}, {all_of: [{key: canggan, value: 癸, scope: {pillar: month}}, {key: gan, value: 癸}]}]}",
+  "evidence_from_statement": "取格优先看本气透干",
+  "encoding": "enumerated-value-pairing-over-ten-stems",
+  "fact_contract": "canggan(scope.pillar) 与 gan 取值相同即「透」；全式无通配、无 same。",
+  "disclosed": "适用范围为「月令藏干有透干者」；完全无透干的情形不在本式内（子集）。",
+  "note": "与 SANMINGTONGH-R-02 同文同式（两书同说取格先看透干）。"
+ }
+]

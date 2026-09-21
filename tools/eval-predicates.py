@@ -343,6 +343,37 @@ def _or_position_taut(ap, keys: set[str]):
     return None
 
 
+def _or_position_single_key_covering(ap, leaves, values: dict[str, list[str]]) -> list[str]:
+    """或位「单键穷举覆盖」检测：只有这种形状才是结构恒真。
+
+    判据：把或位拆成备选（平铺列表的成员，或 `any_of` 的分支）；
+    **每个备选都恰好只约束一个键（同名、且不写 scope）**，且各备选取值合起来
+    覆盖该键的封闭值域 → 该规则对任何盘都成立（如 10 个 rizhu 穷尽天干、
+    5 个 liuqin 穷尽六亲）。
+
+    反例（**不得**判为恒真）：`{any_of:[{all_of:[{gan:甲},{canggan:甲}]}, …]}` ——
+    每支同时约束两个键，取值是**成对**出现的，并不因为「合起来覆盖了值域」就恒真。
+    """
+    if isinstance(ap, list):
+        alts = [[c] for c in ap if isinstance(c, dict)]
+    elif isinstance(ap, dict) and "any_of" in ap:
+        alts = [list(_iter_leaves(b)) for b in ap["any_of"]]
+    else:
+        alts = [[c] for c in leaves]
+    keys = {c.get("key") for alt in alts for c in alt if not c.get("scope")}
+    if len(keys) != 1:
+        return []
+    key = next(iter(keys))
+    domain = values.get(key) or []
+    if not domain:
+        return []
+    for alt in alts:
+        if not alt or any(c.get("scope") or c.get("key") != key for c in alt):
+            return []          # 有备选约束了别的键 → 成对/复合，不判恒真
+    picked = {c.get("value") for alt in alts for c in alt}
+    return [key] if picked >= set(domain) else []
+
+
 def discrimination_report(art: str, cases: dict, values: dict[str, list[str]]) -> list[dict]:
     """找出在**每个样本盘面**都成立的规则 —— 零区分度的嫌疑犯。
 
@@ -372,14 +403,11 @@ def discrimination_report(art: str, cases: dict, values: dict[str, list[str]]) -
         # （t182 发现：ziwei_palace / bamen / sanchuan / liushen / sihua / jiuxing）。
         taut_clause = _or_position_taut(ap, DOMAIN_COMPLETE_KEYS.get(art, set()))
         sample_clause = None if taut_clause else _or_position_taut(ap, SAMPLE_COMPLETE_KEYS.get(art, set()))
-        covering: list[str] = []
-        for key in {p["key"] for p in leaves}:
-            domain = values.get(key) or []
-            if not domain:
-                continue  # 开放值域无法结构化判定
-            picked = {p["value"] for p in leaves if p["key"] == key}
-            if picked >= set(domain):
-                covering.append(key)
+        # 「整段覆盖某个封闭值域」只在这种形状下才等于结构恒真：
+        # **或位的每个备选各自只约束同一个键**，且这些取值合起来覆盖该键的值域。
+        # 旧版把覆盖判在整个表达式上，于是把「**成对**分支」也误判成恒真
+        # （t188/t195 的枚举配对式：每支同时约束两个键，覆盖是成对出现的，并不恒真）。
+        covering = _or_position_single_key_covering(ap, leaves, values)
         out.append(
             {
                 "rule_id": rule.get("rule_id"),

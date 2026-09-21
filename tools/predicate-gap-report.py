@@ -86,6 +86,8 @@ ART_EMIT_KEYS: dict[str, frozenset[str]] = {
             # 四柱干支与纳音：引擎由已有 ganzhi 四柱／「纳音」行逐柱产出（见 emitBaziFacts）。
             "gan",
             "zhi",
+            # 藏干（`PillarFact.hidden`，本气在前）：emitBaziFacts 早就在读它算十神。
+            "canggan",
             "nayin",
             "rizhu_strength",
             "geju",

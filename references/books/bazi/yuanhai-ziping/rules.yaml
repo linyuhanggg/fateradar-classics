@@ -123,7 +123,7 @@ rules:
   statement: 月令所藏天干分本气、中气、余气；取格优先看本气透干。
   anchor: {file: sources/fulltext/bazi/yuanhai-ziping/fulltext.md, start_line: 134, end_line: 134}
   quote: 假令月令有用神，得父母力。
-  applicable_to: []
+  applicable_to: {any_of: [{all_of: [{key: canggan, value: 甲, scope: {pillar: month}}, {key: gan, value: 甲}]}, {all_of: [{key: canggan, value: 乙, scope: {pillar: month}}, {key: gan, value: 乙}]}, {all_of: [{key: canggan, value: 丙, scope: {pillar: month}}, {key: gan, value: 丙}]}, {all_of: [{key: canggan, value: 丁, scope: {pillar: month}}, {key: gan, value: 丁}]}, {all_of: [{key: canggan, value: 戊, scope: {pillar: month}}, {key: gan, value: 戊}]}, {all_of: [{key: canggan, value: 己, scope: {pillar: month}}, {key: gan, value: 己}]}, {all_of: [{key: canggan, value: 庚, scope: {pillar: month}}, {key: gan, value: 庚}]}, {all_of: [{key: canggan, value: 辛, scope: {pillar: month}}, {key: gan, value: 辛}]}, {all_of: [{key: canggan, value: 壬, scope: {pillar: month}}, {key: gan, value: 壬}]}, {all_of: [{key: canggan, value: 癸, scope: {pillar: month}}, {key: gan, value: 癸}]}]}
   caveats:
   - 本气分配日数与《三命通会》R-02-02 互证，但细节略有差异
   school: null
