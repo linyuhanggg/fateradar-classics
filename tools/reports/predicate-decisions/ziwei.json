@@ -339,6 +339,59 @@
       "reason_class": "meta-rule",
       "evidence_from_statement": "书末自称十二宫活用假借等法为新发明且由考验得来；因此这些规则须作为本书经验法，不得反向改写《紫微斗数全书》《太微赋》的基础义理",
       "note": "学派效力层级/优先级规则（本书经验法不得改写早期原典本义），属 pack 元规则。"
+    },
+    {
+      "book": "ziwei/ziwei-doushu-quanshu",
+      "rule_id": "ZIWEIDOUSHUQ-055",
+      "decision": "mapped",
+      "applicable_to_yaml": "[{key: sihua, value: 化忌, scope: {palace: 命宫}}, {key: ziwei_star, value: 禄存, scope: {palace: 财帛}}]",
+      "evidence_from_statement": "流年化忌入命宫主一年波折；流年禄存入财帛主一年财厚",
+      "note": "t213 **修正**：原谓词首句 {liunian_taisui: 午} 的取值**不在本条 statement/quote 里**——是 t170 期把样本观测到的流年支当成了条件（**按样本拟合**）。该子句已删；只留原文逐字写出的两句：「流年化忌入命宫」「流年禄存入财帛」。「流年太岁会大限/小限主星煞，吉凶倍之」是通则，未写。"
+    },
+    {
+      "book": "ziwei/ziwei-doushu-quanshu",
+      "rule_id": "ZIWEIDOUSHUQ-ZW-06",
+      "decision": "reverted",
+      "applicable_to_yaml": "",
+      "evidence_from_statement": "大限+小限+太岁三限合参定吉凶",
+      "reason_class": "meta-rule",
+      "note": "t213 **撤回谓词**：原谓词 {daxian:子女/田宅, liunian_taisui:午} 三个取值**都不在原文里**，是把样本观测量当成条件。本条原文是**通则**（三限合参），适用前提为「三限齐备」，属就绪条件。**撤回复盖率因此下降，这是对的**（契约：可溯源优先于覆盖率）。"
+    },
+    {
+      "book": "ziwei/taiwei-fu",
+      "rule_id": "TAIWEIFU-020",
+      "decision": "reverted",
+      "applicable_to_yaml": "",
+      "evidence_from_statement": "童子限如水上泡沤，老人限似风中燃烛；遇杀无制乃流年最忌",
+      "reason_class": "fact-not-emitted",
+      "note": "t213 **撤回谓词**：原谓词只有 {liunian_taisui: 午}，而原文讲的是「童子限/老人限…遇杀无制」——**取值与原文无关**（样本拟合）。原文条件所需的「限类型（童子/老人）」与「制化判定」引擎均未产出，故清空谓词并归 fact-not-emitted。"
+    },
+    {
+      "book": "ziwei/ziwei-doushu-quanshu",
+      "rule_id": "ZIWEIDOUSHUQ-051",
+      "decision": "reverted",
+      "applicable_to_yaml": "",
+      "evidence_from_statement": "06 大限/小限/流年运程",
+      "reason_class": "meta-rule",
+      "note": "t213 撤回谓词：statement 是**章节标题**，原谓词 {daxian: 子女} 的宫位原文未写。三限类规则的适用前提是「三限齐备」，属就绪条件。"
+    },
+    {
+      "book": "ziwei/ziwei-doushu-quanshu",
+      "rule_id": "ZIWEIDOUSHUQ-054",
+      "decision": "reverted",
+      "applicable_to_yaml": "",
+      "evidence_from_statement": "大限行至南斗诸星宫得力一类断法，行至北斗诸星宫得力另一类断法",
+      "reason_class": "fact-not-emitted",
+      "note": "t213 撤回谓词：原文讲**南斗/北斗诸星宫**，原谓词 {daxian: 田宅} 与之无关。需「星属南斗／北斗」与「大限所行宫」的关系事实。"
+    },
+    {
+      "book": "ziwei/ziwei-doushu-quanshu",
+      "rule_id": "ZIWEIDOUSHUQ-065",
+      "decision": "reverted",
+      "applicable_to_yaml": "",
+      "evidence_from_statement": "命局有先贫后富之象（如大限早凶后吉、武贪格三十后发等）",
+      "reason_class": "fact-not-emitted",
+      "note": "t213 撤回谓词：原文讲「先贫后富之象」，未指名宫位；{daxian: 子女/田宅} 属样本拟合。需大限序列与武贪格判定。"
     }
   ]
 }

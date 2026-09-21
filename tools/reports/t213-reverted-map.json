@@ -1,0 +1,47 @@
+[
+ {
+  "book": "ziwei/ziwei-doushu-quanshu",
+  "rule_id": "ZIWEIDOUSHUQ-ZW-06",
+  "applicable_to_yaml": "[]",
+  "decision": "reverted",
+  "reason_class": "meta-rule",
+  "why_reverted": "取值溯源检查（t212）发现原谓词 {daxian:子女/田宅, liunian_taisui:午} 的三个取值**都不在本条 statement/quote 里**——t170 期把样本观测量当成了条件。原文是通则（三限合参定吉凶），适用前提为「三限齐备」，属就绪条件，故清空谓词。",
+  "coverage_effect": "ziwei 已映射 63 → 61（覆盖率 67.7% → 65.6%）。**撤回复盖率下降，方向是对的。**"
+ },
+ {
+  "book": "ziwei/taiwei-fu",
+  "rule_id": "TAIWEIFU-020",
+  "applicable_to_yaml": "[]",
+  "decision": "reverted",
+  "reason_class": "fact-not-emitted",
+  "why_reverted": "原谓词只有 {liunian_taisui: 午}，而原文讲的是「童子限/老人限…遇杀无制」——**取值与原文无关**（样本拟合）。原文条件所需的「限类型」与「制化判定」引擎未产出。",
+  "coverage_effect": "同上，计入 ziwei 的 63 → 61。"
+ },
+ {
+  "book": "ziwei/ziwei-doushu-quanshu",
+  "rule_id": "ZIWEIDOUSHUQ-051",
+  "applicable_to_yaml": "[]",
+  "decision": "reverted",
+  "reason_class": "meta-rule",
+  "why_reverted": "statement 是**章节标题**（「06 大限/小限/流年运程」），原谓词 {daxian: 子女} 的宫位在原文里没有；三限类规则的适用前提是「三限齐备」，属就绪条件。",
+  "coverage_effect": "计入 ziwei 的 63 → 58。"
+ },
+ {
+  "book": "ziwei/ziwei-doushu-quanshu",
+  "rule_id": "ZIWEIDOUSHUQ-054",
+  "applicable_to_yaml": "[]",
+  "decision": "reverted",
+  "reason_class": "fact-not-emitted",
+  "why_reverted": "原文讲**南斗/北斗诸星宫**（「南斗諸星吉凶，大限斷下五年應」），原谓词 {daxian: 田宅} 与之无关——又一处把宫位当条件。需要「星属南斗／北斗」与「大限所行宫」的关系事实，引擎未产出。",
+  "coverage_effect": "计入 ziwei 的 63 → 58。"
+ },
+ {
+  "book": "ziwei/ziwei-doushu-quanshu",
+  "rule_id": "ZIWEIDOUSHUQ-065",
+  "applicable_to_yaml": "[]",
+  "decision": "reverted",
+  "reason_class": "fact-not-emitted",
+  "why_reverted": "原文讲「先贫后富之象」（大限早凶后吉、武贪格三十后发），未指名宫位；原谓词 {daxian: 子女/田宅} 属样本拟合。需要大限序列与武贪格判定，引擎未产出。",
+  "coverage_effect": "计入 ziwei 的 63 → 58。"
+ }
+]

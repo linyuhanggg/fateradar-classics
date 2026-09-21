@@ -92,6 +92,18 @@ ENGINE_STATE_KEYS = frozenset(
 )
 
 
+EQUIVALENCES = ROOT / "tools/reports/value-equivalences.json"
+
+
+def _reviewed() -> dict[tuple[str, str], dict]:
+    """已逐组读过的「名目对译／原文未提」——读过的不再进待读清单（t213 起）。"""
+    try:
+        data = json.loads(EQUIVALENCES.read_text(encoding="utf-8"))
+    except OSError:
+        return {}
+    return {(e["key"], str(e["value"])): e for e in data.get("entries", [])}
+
+
 def classify() -> dict:
     per_class = Counter()
     canonical_pairs: dict[tuple[str, str], dict] = {}
@@ -122,6 +134,11 @@ def classify() -> dict:
                 if key in ENGINE_STATE_KEYS:
                     per_class["engine-state"] += 1
                     continue
+                reviewed = _reviewed()
+                pair_key = (key, str(value))
+                if pair_key in reviewed:
+                    per_class["canonical-reviewed"] += 1
+                    continue
                 per_class["canonical"] += 1
                 slot = canonical_pairs.setdefault(
                     (key, str(value)),
@@ -148,6 +165,7 @@ def classify() -> dict:
                 "也有「本条只是没提这个值」（section 标题、就绪条件式 statement）。"
             ),
             "engine-state": "取值由引擎判定产出（列举在工具里的 ENGINE_STATE_KEYS）",
+            "canonical-reviewed": "同上，但**已逐组读过并登记**在 tools/reports/value-equivalences.json（t213 起）",
         },
         "rules_scanned": rows,
         "value_leaves": total,
@@ -174,7 +192,7 @@ def main() -> int:
     t = data["tally"]
     total = data["value_leaves"]
     print(f"取值叶子 {total} 处（{data['rules_scanned']} 条带谓词的规则）：")
-    for k in ("literal", "enumerated", "canonical", "engine-state"):
+    for k in ("literal", "enumerated", "canonical", "canonical-reviewed", "engine-state"):
         n = t.get(k, 0)
         print(f"   {n:5} ({n / total * 100:4.1f}%)  {k:13} {data['classes'][k]}")
     print(f"\n枚举编码涉及的键：{data['enumerated_keys']}")

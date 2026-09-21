@@ -43,12 +43,24 @@ def main() -> int:
 
     print("1. 分类完备、四类齐全")
     check("  四类之和 == 取值叶子数", sum(t.values()), data["value_leaves"])
+    # t213 起「待读」一类可以**为零**（读过就登记进 value-equivalences.json）——那是好状态，
+    # 所以不要求 canonical > 0；要求的是「读过 + 待读」两类的和 == 非字面/非枚举/非引擎态的总量。
     check(
-        "  四类都出现（literal/enumerated/canonical/engine-state）",
-        sorted(k for k in ("literal", "enumerated", "canonical", "engine-state") if t.get(k)),
-        ["canonical", "engine-state", "enumerated", "literal"],
+        "  五类都参与计数（含 canonical-reviewed）",
+        sorted(k for k in ("literal", "enumerated", "canonical", "canonical-reviewed", "engine-state") if t.get(k)),
+        ["canonical-reviewed", "engine-state", "enumerated", "literal"],
+    )
+    check(
+        "  待读与已读的登记表一致（待读为空 ⇒ 全部登记过）",
+        (t.get("canonical", 0) == 0) == (t.get("canonical-reviewed", 0) > 0),
+        True,
     )
     check("  取值叶子数 > 1000", data["value_leaves"] > 1000, True)
+    check(
+        "  五类之和 == 取值叶子数（含 canonical-reviewed）",
+        sum(t.get(k, 0) for k in ("literal", "enumerated", "canonical", "canonical-reviewed", "engine-state")),
+        data["value_leaves"],
+    )
 
     print("2. 可复现")
     again = vp.classify()

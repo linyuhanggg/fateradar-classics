@@ -1,0 +1,201 @@
+{
+ "report": "取值「名目对译／原文未提」的逐组裁定（t213 读毕 23 组）",
+ "generated_by": "t213",
+ "method": "由 tools/value-provenance-report.py 列出「既非字面、也非枚举、也非引擎态」的取值组，逐组读原文后裁定并登记；登记过的组不再出现在待读清单里。",
+ "statuses": {
+  "legit-transcription": "真·名目对译：原文俗称／简称／异名 → 规范名，**用词不同但所指同一**",
+  "statement-doesnt-name": "原文那一句确实没写这个值（章节标题、就绪条件式、或条件由标题推得）——不是对译问题"
+ },
+ "entries": [
+  {
+   "key": "shishen",
+   "value": "七杀",
+   "status": "legit-transcription",
+   "source_terms": [
+    "七煞",
+    "偏官"
+   ],
+   "note": "原文作「偏官（七煞）」；引擎十神规范名为「七杀」。同物异名。"
+  },
+  {
+   "key": "liuqin",
+   "value": "妻财",
+   "status": "legit-transcription",
+   "source_terms": [
+    "财"
+   ],
+   "note": "原文多作「财」「财爻」；六亲规范名为「妻财」。"
+  },
+  {
+   "key": "sihua",
+   "value": "化忌",
+   "status": "legit-transcription",
+   "source_terms": [
+    "忌"
+   ],
+   "note": "原文作「忌暗同居…」；四化规范名为「化忌」。"
+  },
+  {
+   "key": "ziwei_palace",
+   "value": "事业",
+   "status": "legit-transcription",
+   "source_terms": [
+    "官禄",
+    "官"
+   ],
+   "note": "原文作「官禄」；引擎宫名用「事业」（t208 已在 ziwei-geju 定义表注明同一对译）。"
+  },
+  {
+   "key": "ziwei_palace",
+   "value": "交友",
+   "status": "legit-transcription",
+   "source_terms": [
+    "奴仆"
+   ],
+   "note": "原文作「奴仆」；引擎宫名用「交友」。同宫异名。"
+  },
+  {
+   "key": "ziwei_palace",
+   "value": "夫妻",
+   "status": "legit-transcription",
+   "source_terms": [
+    "妻宫"
+   ],
+   "note": "原文作「妻宫」；引擎宫名「夫妻」。"
+  },
+  {
+   "key": "ziwei_palace",
+   "value": "命宫",
+   "status": "legit-transcription",
+   "source_terms": [
+    "命"
+   ],
+   "note": "原文作「化禄入命」；规范宫名「命宫」。"
+  },
+  {
+   "key": "ziwei_star",
+   "value": "天魁",
+   "status": "legit-transcription",
+   "source_terms": [
+    "魁"
+   ],
+   "note": "原文作「魁钺同行」；星曜规范名「天魁」。"
+  },
+  {
+   "key": "ziwei_star",
+   "value": "天钺",
+   "status": "legit-transcription",
+   "source_terms": [
+    "钺"
+   ],
+   "note": "原文作「魁钺同行」；星曜规范名「天钺」。"
+  },
+  {
+   "key": "ziwei_star",
+   "value": "禄存",
+   "status": "legit-transcription",
+   "source_terms": [
+    "禄"
+   ],
+   "note": "原文作「禄居奴仆」；星曜规范名「禄存」。"
+  },
+  {
+   "key": "rizhu",
+   "value": "甲",
+   "status": "statement-doesnt-name",
+   "source_terms": [],
+   "note": "穷通宝鉴**以日干分章**：「木性腾上…」属甲木章。日干由章节定，句内不写。同组：乙/丁/戊/己/庚/辛/壬/癸。"
+  },
+  {
+   "key": "sanchuan",
+   "value": "初传",
+   "status": "statement-doesnt-name",
+   "source_terms": [],
+   "note": "相关 statement 是就绪条件式（「三传及日干五行均由已验证事实层给出」）；「初传」是引擎的三传位名。"
+  },
+  {
+   "key": "daxian",
+   "value": "子女 / 田宅",
+   "status": "statement-doesnt-name",
+   "source_terms": [],
+   "note": "相关 statement 是章节标题／通则（「06 大限/小限/流年运程」「三限合参定吉凶」），未指名宫位。**t213 已就此撤回 ZIWEIDOUSHUQ-ZW-06 的谓词**（把宫位当条件＝样本拟合）。"
+  },
+  {
+   "key": "liunian_taisui",
+   "value": "午",
+   "status": "reverted",
+   "source_terms": [],
+   "note": "**查实为样本拟合**：三条规则的该取值都不在原文里。t213 已处理——ZIWEIDOUSHUQ-055 删去该子句、ZIWEIDOUSHUQ-ZW-06 与 TAIWEIFU-020 撤回谓词（覆盖率下降 2 条）。"
+  },
+  {
+   "key": "rizhu",
+   "value": "乙",
+   "status": "statement-doesnt-name",
+   "source_terms": [],
+   "note": "穷通宝鉴以日干分章：该章讲该日干的四季宜忌，句内不写日干本身。与「甲」同组。"
+  },
+  {
+   "key": "rizhu",
+   "value": "丁",
+   "status": "statement-doesnt-name",
+   "source_terms": [],
+   "note": "穷通宝鉴以日干分章：该章讲该日干的四季宜忌，句内不写日干本身。与「甲」同组。"
+  },
+  {
+   "key": "rizhu",
+   "value": "戊",
+   "status": "statement-doesnt-name",
+   "source_terms": [],
+   "note": "穷通宝鉴以日干分章：该章讲该日干的四季宜忌，句内不写日干本身。与「甲」同组。"
+  },
+  {
+   "key": "rizhu",
+   "value": "己",
+   "status": "statement-doesnt-name",
+   "source_terms": [],
+   "note": "穷通宝鉴以日干分章：该章讲该日干的四季宜忌，句内不写日干本身。与「甲」同组。"
+  },
+  {
+   "key": "rizhu",
+   "value": "庚",
+   "status": "statement-doesnt-name",
+   "source_terms": [],
+   "note": "穷通宝鉴以日干分章：该章讲该日干的四季宜忌，句内不写日干本身。与「甲」同组。"
+  },
+  {
+   "key": "rizhu",
+   "value": "辛",
+   "status": "statement-doesnt-name",
+   "source_terms": [],
+   "note": "穷通宝鉴以日干分章：该章讲该日干的四季宜忌，句内不写日干本身。与「甲」同组。"
+  },
+  {
+   "key": "rizhu",
+   "value": "壬",
+   "status": "statement-doesnt-name",
+   "source_terms": [],
+   "note": "穷通宝鉴以日干分章：该章讲该日干的四季宜忌，句内不写日干本身。与「甲」同组。"
+  },
+  {
+   "key": "rizhu",
+   "value": "癸",
+   "status": "statement-doesnt-name",
+   "source_terms": [],
+   "note": "穷通宝鉴以日干分章：该章讲该日干的四季宜忌，句内不写日干本身。与「甲」同组。"
+  },
+  {
+   "key": "daxian",
+   "value": "子女",
+   "status": "statement-doesnt-name",
+   "source_terms": [],
+   "note": "原文相关句未写该取值（章节标题／就绪条件式，或条件由标题推得）；逐组读过，非对译问题。"
+  },
+  {
+   "key": "daxian",
+   "value": "田宅",
+   "status": "statement-doesnt-name",
+   "source_terms": [],
+   "note": "原文相关句未写该取值（章节标题／就绪条件式，或条件由标题推得）；逐组读过，非对译问题。"
+  }
+ ]
+}
