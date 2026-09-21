@@ -106,7 +106,7 @@ python3 tools/generate-p1-bazi-manifest.py \
 
 结果：导出共 846 条（八字 doctrine 446、procedure 3）；八字导出 SHA-256 为 `95d884c10cd01864d1d252f52ea3b51483acffb87c45a4d75b4945d8729e3625`。manifest 生成 8 条采纳规则；每条都验证 `满足 / 不满足 / 信息不足` 三态，全部 `verified=false`。
 
-当前 manifest SHA-256：`8b54f89fe7c63b85cbbcdd7efbd8b55d111baa46e5e16886e864d06ee7f76993`。
+当前 manifest SHA-256：`8221f2187e0a7901bda67b7585502ca95e18ac5d8164dc56d3c27f7c56989675`。
 
 版本锁复核：8 条采纳 ruleId 均存在于 `CLASSICS_REV=6321186f6aeebd0737537c45286153eedf49adb4` 指向的提交，且 `applicable_to` 与当前源文件一致；本轮因实际新增流年规则而更新版本锁。
 

@@ -6,7 +6,7 @@
   "ruleSchema": "fateradar-rules-v2",
   "predicateLanguage": "fateradar-rules-v3",
   "classicsRev": "6321186f6aeebd0737537c45286153eedf49adb4",
-  "sourceHeadAtAudit": "6321186f6aeebd0737537c45286153eedf49adb4",
+  "sourceHeadAtAudit": "15cfe0cc16918bfa2f697e7b6fcff56860086a81",
   "classicsRevChanged": true,
   "factFixture": {
     "path": "tools/reports/facts-sample.json",
@@ -21,7 +21,7 @@
       "productFixtureSha256": "d53d3a8a64ca11826950276791ef2e84abaa7f01d914fdfb1e38f51dc200b47c",
       "workingTreeInputs": "scripts/dump-facts.ts 和 tests/fixtures/facts-sample.json 在生成时均为未提交改动。"
     },
-    "differenceFromClassicsHead": "git diff --numstat: 11974\t1559\ttools/reports/facts-sample.json; 原因是按产品生成器重建事实快照，新增时间层/逐柱事实和覆盖样盘。"
+    "differenceFromClassicsHead": "git diff --numstat: 无工作区 diff; 原因是按产品生成器重建事实快照，新增时间层/逐柱事实和覆盖样盘。"
   },
   "contract": {
     "pipeline": "Fact -> RuleEvaluation -> TopicEvaluation",
@@ -1229,7 +1229,8 @@
           "verdict": "满足",
           "confidence": 1.0,
           "factCoverage": 1.0,
-          "missingFactKeys": []
+          "missingFactKeys": [],
+          "year": 2025
         },
         "negative": {
           "case": "caseFlowYear",
@@ -1237,7 +1238,8 @@
           "verdict": "不满足",
           "confidence": 1.0,
           "factCoverage": 1.0,
-          "missingFactKeys": []
+          "missingFactKeys": [],
+          "year": 2026
         },
         "boundary": {
           "case": "caseFlowYearUnknown",
@@ -1245,7 +1247,8 @@
           "verdict": "信息不足",
           "confidence": 1.0,
           "factCoverage": 1.0,
-          "missingFactKeys": []
+          "missingFactKeys": [],
+          "year": 2100
         },
         "result": "三态固定样盘通过；这只证明求值和输入覆盖，不证明现实预测准确率。"
       },

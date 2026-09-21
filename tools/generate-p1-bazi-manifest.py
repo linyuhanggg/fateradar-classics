@@ -217,15 +217,18 @@ def fixture_result(module, rule: dict, facts: list[dict], case: str, remove: lis
     selected = [f for f in facts if f.get("key") not in set(remove or [])]
     if year is not None:
         selected = [f for f in selected if (f.get("scope") or {}).get("year") == year]
-    result = module.evaluate(rule, selected)
-    return {
+    evaluation = module.evaluate(rule, selected)
+    result = {
         "case": case,
         "factCount": len(selected),
-        "verdict": result["verdict"],
-        "confidence": result.get("confidence"),
-        "factCoverage": result.get("fact_coverage"),
-        "missingFactKeys": result.get("missing_fact_keys", []),
+        "verdict": evaluation["verdict"],
+        "confidence": evaluation.get("confidence"),
+        "factCoverage": evaluation.get("fact_coverage"),
+        "missingFactKeys": evaluation.get("missing_fact_keys", []),
     }
+    if year is not None:
+        result["year"] = year
+    return result
 
 
 def make_manifest(output: Path, export_file: Path | None) -> dict:
