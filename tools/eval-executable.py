@@ -108,7 +108,21 @@ FIELD_MAP: dict[str, tuple[str, dict | None, str]] = {
     "meihua.ti.element": (None, None, "梅花体卦五行：本仓无 meihua 引擎事实"),
     "meihua.yong.element": (None, None, "梅花用卦五行：同上"),
     "meihua.role": (None, None, "梅花体用角色：同上"),
-    "liuyao.structure": (None, None, "六爻卦体结构：引擎未产出"),
+    # t217：**推断后落地，并如实归因**。
+    # 17 条使用者的 when 全是 `{exists: "liuyao.structure"}`，其 satisfy_when 描述的都是
+    # **逐爻结构分析** → 该名所指为「本卦逐爻结构层已就位」。代理键用 `yao_zhi`：
+    # 任何构建成功的六爻盘都有六枚，且**只在该层存在时为真**，故判定是保守的。
+    # 另一种读法（「引擎已算完结构分析」）在当下引擎上同样恒成立，故两种读法下 `exists` 同真。
+    # 若人裁定为别的所指，需回改本条——台账 tools/reports/liuyao-structure-proposal.json 记着依据。
+    # t217：这六条是**直接对应**（字段名与引擎结构一一对得上），不涉推断。
+    "liuyao.node.branch": ("yao_zhi", None, "本爻纳甲支；引擎 rows.ganzhi[1] 产出"),
+    "liuyao.changed.branch": ("bian_yao_zhi", None, "变爻纳甲支（仅动爻）"),
+    "liuyao.node.moving": ("dongyao", None, "动爻；引擎产出 dongyao（无动爻时缺席）"),
+    "liuyao.node.activity": ("liuyao_activity", None, "逐爻活动状态；t193 起产出"),
+    "liuyao.node.element": ("liuyao_node_element", None, "爻五行；t217 起产出"),
+    "liuyao.hidden": ("fushen", None, "伏神；引擎产出 fushen"),
+    "question.useRelative": ("liuyao_yongshen", None, "用神；引擎按所问事项取（未定则不产出）"),
+    "liuyao.structure": ("yao_zhi", None, "逐爻结构层在场（推断；代理键 yao_zhi）。依据见 liuyao-structure-proposal.json"),
     "interference.id": (None, None, "干扰项命名表：无注册表"),
     # t211：小六壬三宫由引擎产出（键 `xiaoliuren_palace`，`scope.palace` 为「月宫／日宫／时宫」）。
     # 旧注说「古籍仓词表无」已过期——t195 起词表由引擎 `toFactVocabJson()` 生成，该键一直在。

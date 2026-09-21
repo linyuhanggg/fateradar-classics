@@ -145,6 +145,8 @@ ART_EMIT_KEYS: dict[str, frozenset[str]] = {
             "dongyao",
             # 世序／卦体分类（本宫…游魂／归魂）：引擎 main.sequence 直接透传。
             "liuyao_seq",
+            # 爻五行（execute 层 liuyao.node.element 要它）。
+            "liuyao_node_element",
             # 爻之阴阳（阳／阴）：易理类规则（当位／中正／相应）要看它，与六爻同源。
             "yao_yinyang",
             # 纳甲地支（本爻／变爻）：引擎 row.ganzhi[1] / row.changed[1] 直接产出。

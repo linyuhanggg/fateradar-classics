@@ -1,28 +1,28 @@
 {
  "report": "executable 层跨盘汇总",
- "generated_by": "t211",
- "method": "每条记录在本术**全部**样盘上求值；分「至少一张盘可判」与「任何盘都判不了」，后者按原因归类。默认口径只取首个样盘（会掩盖只看某些盘才可判的改进）。",
+ "generated_by": "t217",
+ "method": "每条记录在本术全部样盘上求值；分「至少一张盘可判」与「任何盘都判不了」并归类。",
  "tally": {
-  "满足": 75,
+  "满足": 92,
   "不满足": 152,
-  "信息不足": 27,
+  "信息不足": 10,
   "未提供定义表": 4
  },
  "records": 258,
  "across": {
-  "decidable_somewhere": 229,
+  "decidable_somewhere": 246,
   "nowhere": [
    {
     "id": "MHY-E-01",
     "art": "meihua",
-    "theme": "体用生克方向",
-    "unmapped_fields": [],
-    "no_sample_for_art": true
+    "unmapped_fields": [
+     "meihua.ti.element"
+    ],
+    "no_sample_for_art": false
    },
    {
     "id": "YXJ-E-01",
     "art": "xiaoliuren",
-    "theme": "起课数法（大安上起正月、月上起日、日上起时）",
     "unmapped_fields": [
      "xiaoliuren.hour.branch"
     ],
@@ -31,7 +31,6 @@
    {
     "id": "YXJ-E-05",
     "art": "xiaoliuren",
-    "theme": "断曰歌诀与三宫组合不并入本盘断语",
     "unmapped_fields": [
      "xiaoliuren.count.good"
     ],
@@ -40,176 +39,20 @@
    {
     "id": "YXJ-E-06",
     "art": "xiaoliuren",
-    "theme": "闰月起课口径（本节未规定）",
     "unmapped_fields": [
      "xiaoliuren.lunar.month"
     ],
     "no_sample_for_art": false
    },
    {
-    "id": "ZSB-E-03",
-    "art": "liuyao",
-    "theme": "用神来源与同类多现取舍",
-    "unmapped_fields": [
-     "liuyao.structure"
-    ],
-    "no_sample_for_art": false
-   },
-   {
-    "id": "ZSB-E-04",
-    "art": "liuyao",
-    "theme": "月日支持与余气",
-    "unmapped_fields": [
-     "liuyao.structure"
-    ],
-    "no_sample_for_art": false
-   },
-   {
-    "id": "ZSB-E-05",
-    "art": "liuyao",
-    "theme": "静爻日冲的暗动与日破",
-    "unmapped_fields": [
-     "liuyao.structure"
-    ],
-    "no_sample_for_art": false
-   },
-   {
-    "id": "ZSB-E-06",
-    "art": "liuyao",
-    "theme": "变爻只回头作用本位",
-    "unmapped_fields": [
-     "liuyao.structure"
-    ],
-    "no_sample_for_art": false
-   },
-   {
-    "id": "ZSB-E-07",
-    "art": "liuyao",
-    "theme": "回头冲与回头克分开",
-    "unmapped_fields": [
-     "liuyao.structure"
-    ],
-    "no_sample_for_art": false
-   },
-   {
-    "id": "ZSB-E-08",
-    "art": "liuyao",
-    "theme": "进退结构及作用时机",
-    "unmapped_fields": [
-     "liuyao.structure"
-    ],
-    "no_sample_for_art": false
-   },
-   {
-    "id": "ZSB-E-09",
-    "art": "liuyao",
-    "theme": "飞伏生克与出伏条件",
-    "unmapped_fields": [
-     "liuyao.structure"
-    ],
-    "no_sample_for_art": false
-   },
-   {
-    "id": "ZSB-E-10",
-    "art": "liuyao",
-    "theme": "动爻合绊及待冲",
-    "unmapped_fields": [
-     "liuyao.structure"
-    ],
-    "no_sample_for_art": false
-   },
-   {
-    "id": "ZSB-E-11",
-    "art": "liuyao",
-    "theme": "元忌同动与用神根气",
-    "unmapped_fields": [
-     "liuyao.structure"
-    ],
-    "no_sample_for_art": false
-   },
-   {
-    "id": "ZSB-E-12",
-    "art": "liuyao",
-    "theme": "日动变三墓与绝的结构位置",
-    "unmapped_fields": [
-     "liuyao.structure"
-    ],
-    "no_sample_for_art": false
-   },
-   {
-    "id": "ZSB-E-13",
-    "art": "liuyao",
-    "theme": "旺用仍保留当前旬空",
-    "unmapped_fields": [
-     "liuyao.structure"
-    ],
-    "no_sample_for_art": false
-   },
-   {
-    "id": "ZSB-E-14",
-    "art": "liuyao",
-    "theme": "主卦活动三合与内初三、外四六动变三合",
-    "unmapped_fields": [
-     "liuyao.structure"
-    ],
-    "no_sample_for_art": false
-   },
-   {
-    "id": "ZSB-E-15",
-    "art": "liuyao",
-    "theme": "内外合局的生克竞争",
-    "unmapped_fields": [
-     "liuyao.structure"
-    ],
-    "no_sample_for_art": false
-   },
-   {
-    "id": "ZSB-E-16",
-    "art": "liuyao",
-    "theme": "寅巳申齐时刑与寅生巳的取舍",
-    "unmapped_fields": [
-     "liuyao.structure"
-    ],
-    "no_sample_for_art": false
-   },
-   {
-    "id": "ZSB-E-17",
-    "art": "liuyao",
-    "theme": "日冲本位回克变爻的解除条件",
-    "unmapped_fields": [
-     "liuyao.structure"
-    ],
-    "no_sample_for_art": false
-   },
-   {
-    "id": "ZSB-E-18",
-    "art": "liuyao",
-    "theme": "反吟所选用爻的支持与回冲回克、辰日合护",
-    "unmapped_fields": [
-     "liuyao.structure"
-    ],
-    "no_sample_for_art": false
-   },
-   {
-    "id": "ZSB-E-19",
-    "art": "liuyao",
-    "theme": "伏吟同支结构与有根逢冲月条件",
-    "unmapped_fields": [
-     "liuyao.structure"
-    ],
-    "no_sample_for_art": false
-   },
-   {
     "id": "ZPR-E-08",
     "art": "bazi",
-    "theme": "刑冲会合以解",
     "unmapped_fields": [],
     "no_sample_for_art": false
    },
    {
     "id": "ZWD-E-01",
     "art": "ziwei",
-    "theme": "生年干四化落宫",
     "unmapped_fields": [
      "year.gan.doushu"
     ],
@@ -218,42 +61,36 @@
    {
     "id": "ZWD-E-02",
     "art": "ziwei",
-    "theme": "辅弼夹帝",
     "unmapped_fields": [],
     "no_sample_for_art": false
    },
    {
     "id": "ZWD-E-03",
     "art": "ziwei",
-    "theme": "日月夹财",
     "unmapped_fields": [],
     "no_sample_for_art": false
    },
    {
     "id": "ZWD-E-08",
     "art": "ziwei",
-    "theme": "金灿光辉",
     "unmapped_fields": [],
     "no_sample_for_art": false
    },
    {
     "id": "ZWD-E-09",
     "art": "ziwei",
-    "theme": "魁命钺身",
     "unmapped_fields": [],
     "no_sample_for_art": false
    },
    {
     "id": "ZWD-E-10",
     "art": "ziwei",
-    "theme": "禄马同宫",
     "unmapped_fields": [],
     "no_sample_for_art": false
    },
    {
     "id": "ZWD-E-12",
     "art": "ziwei",
-    "theme": "贪火相逢",
     "unmapped_fields": [],
     "no_sample_for_art": false
    }

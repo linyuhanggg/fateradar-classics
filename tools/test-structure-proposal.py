@@ -36,10 +36,20 @@ def check(tag: str, got, want) -> None:
 def main() -> int:
     led = json.loads((ROOT / "tools/reports/liuyao-structure-proposal.json").read_text(encoding="utf-8"))
 
-    print("1. 提议**未落地**（机器不替人裁定未定义的名）")
+    print("1. t217 起：**已落地，但必须带着归因**")
     mapping = ee.FIELD_MAP.get("liuyao.structure")
-    check("  FIELD_MAP 里仍有该字段条目", mapping is not None, True)
-    check("  且仍接不上 FactKey（key 为 None）", (mapping or (None,))[0], None)
+    check("  FIELD_MAP 里有该字段条目", mapping is not None, True)
+    check("  已接到代理键 yao_zhi", (mapping or (None,))[0], "yao_zhi")
+    check(
+        "  且说明里写明是**推断**（机器不把推断当已证）",
+        "推断" in (mapping or ("", "", ""))[2],
+        True,
+    )
+    check(
+        "  且指向依据台账",
+        "liuyao-structure-proposal.json" in (mapping or ("", "", ""))[2],
+        True,
+    )
 
     print("2. 台账完整")
     recs = led["records"]
@@ -50,7 +60,17 @@ def main() -> int:
         [r["id"] for r in recs if "exists" not in json.dumps(r.get("required_facts") or []) and "exists" not in str(r.get("satisfy_when"))][:0],
         [],
     )
-    check("  状态写明未落地", "未应用" in led["status"] or "proposal" in led["status"], True)
+    # t217：已落地为代理键，但状态里仍须表明**正式定义待人工裁定**。
+    check(
+        "  台账状态标明「已落地但定义待人裁定」",
+        "applied" in led["status"] and "裁定" in led["status"],
+        True,
+    )
+    check(
+        "  台账记有「两读法在当下引擎上同真」的依据",
+        "恒成立" in led["caveat"] or "恒成立" in json.dumps(led, ensure_ascii=False),
+        True,
+    )
 
     print("3. 提议的代理键真实存在且逐爻必有")
     vocab = json.loads((ROOT / "references/vocab/fact-vocab.json").read_text(encoding="utf-8"))

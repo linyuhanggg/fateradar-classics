@@ -1,7 +1,7 @@
 {
  "report": "`liuyao.structure` 的**定义提议**（只提议，不落地）",
  "generated_by": "t216",
- "status": "proposal — 待人工裁定；**未应用到 FIELD_MAP**",
+ "status": "applied-with-attribution（t217 落地为代理键；正式定义仍待人工裁定）",
  "why_blocked_since": "t183：该名在**两个仓**里都只被使用、从未被定义；按「原文没写就不写」，不猜它的所指。",
  "new_evidence": "本轮把 17 条使用者的 when／satisfy_when 逐条读过。**17 条全部**是 `when: {exists: \"liuyao.structure\"}`，而 satisfy_when 描述的是**逐爻结构分析**：节点临月／五行未破、旺相静爻被日冲、真实动位的变爻对本位形成生克冲合、同元素进退支对、伏用得日月飞或动生、日支／动爻支／变爻支落墓绝位、三支在真实三位置齐全…… → 这些都以「**本卦的逐爻结构层已就位**」为前提。",
  "proposed_denotation": "`liuyao.structure` ＝「本卦的逐爻结构事实齐备」——即事实袋里存在逐爻的结构键（纳甲支／六亲／六神／世应／伏神／动爻／变爻支／月建强度／活动／旬空／进退／墓位）。",
@@ -201,5 +201,17 @@
     "month.zhi"
    ]
   }
- ]
+ ],
+ "applied": {
+  "when": "t217",
+  "mapping": {
+   "field": "liuyao.structure",
+   "fact_key": "yao_zhi",
+   "scope": null
+  },
+  "why_safe": "两种候选读法在**当下引擎**上**恒成立**：构建成功的六爻盘既有逐爻结构层（→ yao_zhi 在场），也已跑完结构分析（`liuyao-analysis` 的 ruleChecks）。故 `{exists: …}` 的判定**不依赖**选哪种读法。",
+  "why_conservative": "代理键 yao_zhi **只在该层存在时为真**（每张盘恰好六枚），故判定是保守的：不会因为引擎少算而误判成立。",
+  "effect": "17 条使用者的 when 变为成立 → 可执行层「满足」75 → 92、信息不足 27 → 10。",
+  "rollback": "若人工裁定 `liuyao.structure` 另有所指，回改 FIELD_MAP 一条即可；本条同时带「推断」标注，不被当作已证事实。"
+ }
 }
