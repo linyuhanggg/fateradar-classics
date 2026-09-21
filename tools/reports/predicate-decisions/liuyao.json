@@ -347,10 +347,12 @@
     {
       "book": "divination/zengshan-buyi",
       "rule_id": "ZENGSHANBUYI-ZR-08",
-      "decision": "unmapped",
+      "decision": "mapped",
       "reason_class": "fact-not-emitted",
       "evidence_from_statement": "用神旬空——空而不空（动／旺／临日月）则不空；真空——出旬即应；旬空亦可冲实",
-      "note": "缺旬空、日辰／月建、旺衰；用神为角色。caveat 亦声明旬空须由 tool.divination.liuyao_bindisk 计算、禁止 LLM 手算。"
+      "note": "缺旬空、日辰／月建、旺衰；用神为角色。caveat 亦声明旬空须由 tool.divination.liuyao_bindisk 计算、禁止 LLM 手算。",
+      "mapped_by": "liuyao-kong-map.json",
+      "mapped_note": "t197 映射：适用范围＝「用神所在之爻旬空」，用 5 六亲 × 6 爻 的枚举配对（三句都带取值与 scope，不用无取值子句）。用神为世/应爻的情形不在式内（子集已披露）。"
     },
     {
       "book": "divination/zengshan-buyi",

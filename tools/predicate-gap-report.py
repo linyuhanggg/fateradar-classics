@@ -150,6 +150,8 @@ ART_EMIT_KEYS: dict[str, frozenset[str]] = {
             "liuyao_yongshen",
             "liuyao_month_strength",
             "liuyao_activity",
+            "liuyao_kong",
+            "liuyao_reversal",
         }
     ),
     "qizheng": frozenset({"xingyao", "gongwei", "xiudu", "miaowang"}),
