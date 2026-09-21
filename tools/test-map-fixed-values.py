@@ -64,7 +64,7 @@ def main() -> int:
                 idx[(k, r["rule_id"])] = r
 
     print("1. 台账 4 条，复核片段仍在原文里")
-    check("  条数 10（+t193 两条六爻具名状态）", len(ledger), 10)
+    check("  条数 11（+t196 六壬日柱枚举对）", len(ledger), 11)
     check(
         "  statement 片段全部命中",
         [x["rule_id"] for x in ledger if x["evidence_from_statement"] not in (idx[(x["book"], x["rule_id"])].get("statement") or "")],

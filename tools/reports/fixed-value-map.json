@@ -21,6 +21,13 @@
   "note": "平铺列表＝或：二选一（传中见财 / 青龙居日上）。引擎自带 unknown `LR-UNKNOWN-MIBEN-021-WIRE` 说「规则 applicableTo 仍为空」，本条即那次接线。"
  },
  {
+  "book": "san-shi/daliuren-daquan",
+  "rule_id": "DALIURENDAQU-009",
+  "applicable_to_yaml": "{any_of: [{all_of: [{key: gan, value: 癸, scope: {pillar: day}}, {key: zhi, value: 丑, scope: {pillar: day}}]}, {all_of: [{key: gan, value: 甲, scope: {pillar: day}}, {key: zhi, value: 寅, scope: {pillar: day}}]}, {all_of: [{key: gan, value: 丁, scope: {pillar: day}}, {key: zhi, value: 未, scope: {pillar: day}}]}, {all_of: [{key: gan, value: 己, scope: {pillar: day}}, {key: zhi, value: 未, scope: {pillar: day}}]}, {all_of: [{key: gan, value: 庚, scope: {pillar: day}}, {key: zhi, value: 申, scope: {pillar: day}}]}]}",
+  "evidence_from_statement": "日柱属于癸丑、甲寅、丁未、己未、庚申",
+  "note": "**子集**：原文还要求「干支同位形成两课结构」，那是四课去重结果（引擎未产出），与本式无关的一半已如实披露。"
+ },
+ {
   "book": "divination/zengshan-buyi",
   "rule_id": "ZENGSHANBUYI-030",
   "applicable_to_yaml": "[{key: liuyao_month_strength, value: 月破}]",

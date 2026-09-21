@@ -190,11 +190,13 @@
     {
       "book": "san-shi/daliuren-daquan",
       "rule_id": "DALIURENDAQU-009",
-      "decision": "unmapped",
+      "decision": "mapped",
       "reason_class": "fact-not-emitted",
       "evidence_from_statement": "日柱属于癸丑、甲寅、丁未、己未、庚申，且干支同位形成两课结构",
       "note": "本条点名了五个八专日（盘面取值），但 liuren 事实层不产出日柱：既无日支，rizhu 也不是本 art 的产出 key。若只用日干（癸/甲/丁/己/庚）近似，会把「癸丑」扩大成癸酉、癸亥等所有癸日，超出八专日集合——属编造条件，不做。后半「干支同位形成两课结构」同样无 key。旧过程稿同判「需要引擎未产出的事实（日柱癸丑甲寅等专式）」。",
-      "missing_fact": "日柱干支组合（癸丑/甲寅/丁未/己未/庚申）；干支同位与两课结构"
+      "missing_fact": "日柱干支组合（癸丑/甲寅/丁未/己未/庚申）；干支同位与两课结构",
+      "mapped_by": "fixed-value-map.json",
+      "mapped_note": "t196 映射：条件的一半是「日柱属于癸丑/甲寅/丁未/己未/庚申」，用显式柱位枚举对；前提是六壬侧产出四柱干支（t196 passthrough）。「干支同位形成两课结构」一半未表达（子集，已披露）。"
     },
     {
       "book": "san-shi/daliuren-daquan",

@@ -128,7 +128,7 @@ rules:
     start_line: 90
     end_line: 90
   quote: 两课无克号八专，阳日日阳顺行三连本位数。阴日辰阴逆三位，中末总向日上眠。
-  applicable_to: []
+  applicable_to: {any_of: [{all_of: [{key: gan, value: 癸, scope: {pillar: day}}, {key: zhi, value: 丑, scope: {pillar: day}}]}, {all_of: [{key: gan, value: 甲, scope: {pillar: day}}, {key: zhi, value: 寅, scope: {pillar: day}}]}, {all_of: [{key: gan, value: 丁, scope: {pillar: day}}, {key: zhi, value: 未, scope: {pillar: day}}]}, {all_of: [{key: gan, value: 己, scope: {pillar: day}}, {key: zhi, value: 未, scope: {pillar: day}}]}, {all_of: [{key: gan, value: 庚, scope: {pillar: day}}, {key: zhi, value: 申, scope: {pillar: day}}]}]}
   caveats:
   - 不在五日集合、课数不是两课或计数是否含本位不明时停止
   school: null

@@ -117,6 +117,9 @@ ART_EMIT_KEYS: dict[str, frozenset[str]] = {
             "keti",
             "sanchuan",
             "tianjiang",
+            # 四柱干支：引擎 facts.ganZhi 直接透传（与 bazi/qimen 共用键，按 scope.pillar 区分）。
+            "gan",
+            "zhi",
             # 三传所乘六亲：`liuren.ts` 的 pushScoped 已产出（盘面样本实测有
             # scope.palace=初传/中传/末传 的 liuqin），此前只是没登记进本表。
             "liuqin",
