@@ -159,3 +159,7 @@ git diff --check
 ### 重跑结果
 
 2026-09-22 重跑 cosmic 垂直测试仍为 `22/24`；`YUANHAIZIPIN-YR-03` 的流年支持范围和 manifest 年份选择器尚未被产品测试完全消费。失败日志：`tools/reports/p1-bazi-20260922/cosmic-integration-rerun.log`。
+
+### 最新重跑
+
+年份选择器同步后，cosmic 垂直测试为 `23/24`；剩余失败是流年视图把可执行的 `YUANHAIZIPIN-YR-03` 也强制断言为 `unknown`。最新日志：`tools/reports/p1-bazi-20260922/cosmic-integration-latest.log`。

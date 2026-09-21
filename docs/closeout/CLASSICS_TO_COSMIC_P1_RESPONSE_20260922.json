@@ -322,6 +322,20 @@
           "requiredAction": "apply verification.negative year selector before evaluation and keep scope.year filtering."
         }
       ]
+    },
+    "latest": {
+      "command": "cd /Users/sync/code/cosmic-fortune-lab && bunx vitest run tests/rules/explicit-unknown-facts.test.ts tests/engine/bazi-vertical.test.ts --reporter=dot",
+      "exitCode": 1,
+      "result": "ONE_PRODUCT_ASSERTION_REMAINS",
+      "log": "tools/reports/p1-bazi-20260922/cosmic-integration-latest.log",
+      "testsPassed": "23/24",
+      "fixedSinceRerun": "YUANHAIZIPIN-YR-03 negative fixture now passes after manifest year selector regeneration",
+      "failure": {
+        "test": "流年切换改变时间层和快照身份，但保留同一出生输入",
+        "ruleId": "YUANHAIZIPIN-YR-03",
+        "cause": "test still asserts every year-layer RuleEvaluation has status unknown and no evidence, while this rule is explicitly executable at 流年.",
+        "requiredAction": "change the assertion to allow supported 流年 rules to evaluate against the selected year; keep unsupported layers/topics unknown."
+      }
     }
   }
 }

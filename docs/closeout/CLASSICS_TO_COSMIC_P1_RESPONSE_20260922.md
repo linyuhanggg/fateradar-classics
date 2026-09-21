@@ -44,3 +44,9 @@ cosmic 重跑同一命令后仍为 `22/24` 通过、exit 1，日志见 `tools/re
 对 `manifest.rules[*].verification`，产品测试应先解析 `case` 和可选 `year`：取对应 case 的 facts，再保留 `fact.scope.year === year` 的事实，最后调用 predicate evaluator。不能把整个 `caseFlowYear` 的多年份事实直接作为一个盘面。
 
 流年视图的断言也应按规则的 `applicableLayers` 判断：`YUANHAIZIPIN-YR-03` 在 `流年` 是可执行结构证据，因此选定年份命中时允许 `satisfied`；尚未实现的主题语义、未支持时间层和缺事实条件才保持 `unknown`。这两个断言是产品消费合同的一部分，不需要古籍仓改变规则。
+
+## 最新产品验收（2026-09-22）
+
+manifest 重新生成并同步年份选择器后，cosmic 测试已提升到 `23/24` 通过；`YUANHAIZIPIN-YR-03` 反例已通过。最新失败日志见 `tools/reports/p1-bazi-20260922/cosmic-integration-latest.log`。
+
+剩余唯一失败是流年切换测试仍断言所有流年 RuleEvaluation 必须为 `unknown` 且没有 evidence。该断言不符合本 manifest：`YUANHAIZIPIN-YR-03` 的 `applicableLayers` 包含 `流年`，选定年份命中时应产生结构证据。产品只需放宽该断言，保留未支持层和未交付主题语义的 `unknown`。
