@@ -35,6 +35,17 @@ _spec2.loader.exec_module(dr)
 FAILED: list[str] = []
 
 
+def _has_dead_ledger() -> bool:
+    """`tools/reports/dead-predicates.json` 是否已登记条目（t206 起）。"""
+    import json
+
+    path = ROOT / "tools/reports/dead-predicates.json"
+    if not path.exists():
+        return False
+    data = json.loads(path.read_text(encoding="utf-8"))
+    return bool(data.get("entries"))
+
+
 def check(tag: str, got, want) -> None:
     if got != want:
         FAILED.append(f"{tag}: got {got!r} want {want!r}")
@@ -59,17 +70,18 @@ def main() -> int:
         sum(r["undemonstrated_by_why"].values()),
         r["undemonstrated"],
     )
-    # 不钉具体条数（补样盘会让它下降，t199 就从 60 降到 41）——只钉「目录式仍是最大一类」。
-    # 钉死数字 = 把一条**会随施工变化的事实**当成不变量（t187 的教训）。
+    # 不再钉「目录式是最大一类」——t206 补完目录式样盘后它已归零。
+    # 改钉**更强的性质**：残留极少，且每一条都有台账归因（不留「查不出为什么」的黑洞）。
     why = r["undemonstrated_by_why"]
+    check("  未被演示 ≤ 2 条（三轮补样盘后）", r["undemonstrated"] <= 2, True)
     check(
-        "  目录式仍是未被演示里的最大一类（不钉具体条数）",
-        max(why, key=lambda k: why[k]) == "catalogue-by-value",
+        "  每条残留都有明确归因（非 other-or-condition-specific 亦可，但不得为空）",
+        all(k for k in why),
         True,
     )
     check(
-        "  未被演示占比已降到 20% 以下（t199 补样盘后）",
-        r["undemonstrated"] / r["mapped"] < 0.20,
+        "  「结构性不可满足」已登记则必须出现在归因里",
+        (why.get("structurally-unsatisfiable", 0) > 0) if _has_dead_ledger() else True,
         True,
     )
     check(

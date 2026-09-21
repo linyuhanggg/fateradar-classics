@@ -70,7 +70,23 @@ def classify(rule: dict, cases: dict) -> str:
     return "混合(无满足)"
 
 
-def why(rule_id: str) -> str:
+DEAD_LEDGER = ROOT / "tools/reports/dead-predicates.json"
+
+
+def _registered_dead() -> dict[str, str]:
+    """已查证「结构性不可满足」的规则（见 tools/reports/dead-predicates.json）。"""
+    try:
+        data = json.loads(DEAD_LEDGER.read_text(encoding="utf-8"))
+    except OSError:
+        return {}
+    return {e["rule_id"]: e.get("kind", "structurally-unsatisfiable") for e in data.get("entries", [])}
+
+
+def why(rule_id: str, dead: dict[str, str] | None = None) -> str:
+    if dead is None:
+        dead = _registered_dead()
+    if rule_id in dead:
+        return dead[rule_id]
     return "catalogue-by-value" if rule_id.startswith(CATALOGUE_PREFIXES) else "other-or-condition-specific"
 
 
