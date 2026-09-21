@@ -95,6 +95,8 @@ jobs:
       # 取值溯源：谓词里的取值是怎么来的（字面／枚举／需人读／引擎态）
       - run: python tools/value-provenance-report.py
       - run: python tools/test-value-provenance.py
+      # 未定义名的提议台账：钉「提议未落地」（机器不替人裁定未定义的名）
+      - run: python tools/test-structure-proposal.py
       - run: python tools/test-check-ganzhi-sequences.py
       # 步长筛查：与「已登记待核」集合对账（现有 3 条全部指向奇门 p281 第 6 列的「巳/卯」，
       # 已在 ocr-batch-0280-0298.md 的 doubt_281 登记，需原生读图复读一次才能结案）。

@@ -1,0 +1,205 @@
+{
+ "report": "`liuyao.structure` 的**定义提议**（只提议，不落地）",
+ "generated_by": "t216",
+ "status": "proposal — 待人工裁定；**未应用到 FIELD_MAP**",
+ "why_blocked_since": "t183：该名在**两个仓**里都只被使用、从未被定义；按「原文没写就不写」，不猜它的所指。",
+ "new_evidence": "本轮把 17 条使用者的 when／satisfy_when 逐条读过。**17 条全部**是 `when: {exists: \"liuyao.structure\"}`，而 satisfy_when 描述的是**逐爻结构分析**：节点临月／五行未破、旺相静爻被日冲、真实动位的变爻对本位形成生克冲合、同元素进退支对、伏用得日月飞或动生、日支／动爻支／变爻支落墓绝位、三支在真实三位置齐全…… → 这些都以「**本卦的逐爻结构层已就位**」为前提。",
+ "proposed_denotation": "`liuyao.structure` ＝「本卦的逐爻结构事实齐备」——即事实袋里存在逐爻的结构键（纳甲支／六亲／六神／世应／伏神／动爻／变爻支／月建强度／活动／旬空／进退／墓位）。",
+ "proposed_mapping": {
+  "field": "liuyao.structure",
+  "fact_key": "yao_zhi",
+  "scope": null,
+  "rationale": "与 t205 给 `positions` 的处理同理：用一枚**逐爻必有**的键作「逐爻结构在场」的代理。任何构建成功的六爻盘都有六枚 yao_zhi。",
+  "effect_if_applied": "17 条记录从「未提供定义表／信息不足」变为**可判**（其 when 即成立）。"
+ },
+ "caveat": "这 17 条的 satisfy_when 描述的分析，**引擎自己已有实现**（`liuyao-analysis.ts` 的 `ruleChecks`，按 ZSB-E-01…E-19 编排）。因此「structure」很可能指的是**引擎已算完那一层**，而不只是「事实层有键」。若人裁定为后者，本条映射即可用；若为前者，需另立一枚「引擎结构分析已完成」的事实。",
+ "remaining_prerequisite": "`liuyao.node.element`（爻五行）仍未产出：`liuyao-analysis` 的节点状态里有 `element`，事实层没有对应键。本轮**未加**（它在谓词侧 0 客户、只被这条被阻塞的 bundle 引用），列为落地该定义时的前置项。",
+ "records": [
+  {
+   "id": "ZSB-E-03",
+   "theme": "用神来源与同类多现取舍",
+   "satisfy_when": "明确对象后保留实际本卦、日月、动位变出、伏藏候选，并按一动一静取动及明确当令比较",
+   "required_facts": [
+    "question.useRelative",
+    "liuyao.structure",
+    "month.zhi",
+    "day.ganzhi"
+   ]
+  },
+  {
+   "id": "ZSB-E-04",
+   "theme": "月日支持与余气",
+   "satisfy_when": "节点临月、同月五行未破、月生，或日临比生构成可见支持；未月火、丑月水另列原表余气",
+   "required_facts": [
+    "month.zhi",
+    "day.ganzhi",
+    "liuyao.node.element",
+    "liuyao.interactions"
+   ]
+  },
+  {
+   "id": "ZSB-E-05",
+   "theme": "静爻日冲的暗动与日破",
+   "satisfy_when": "旺相静爻被日冲，或旬空静爻遇冲空，记录启动条件",
+   "required_facts": [
+    "liuyao.node.moving",
+    "liuyao.node.branch",
+    "day.ganzhi",
+    "month.zhi"
+   ]
+  },
+  {
+   "id": "ZSB-E-06",
+   "theme": "变爻只回头作用本位",
+   "satisfy_when": "真实动位的变爻对其本位动爻形成生克冲合",
+   "required_facts": [
+    "liuyao.node.position",
+    "liuyao.node.moving",
+    "liuyao.changed.branch"
+   ]
+  },
+  {
+   "id": "ZSB-E-07",
+   "theme": "回头冲与回头克分开",
+   "satisfy_when": "变与本位相冲且变五行不克本位，明确为回头冲而非回头克",
+   "required_facts": [
+    "liuyao.changed.branch",
+    "liuyao.node.branch",
+    "liuyao.node.moving"
+   ]
+  },
+  {
+   "id": "ZSB-E-08",
+   "theme": "进退结构及作用时机",
+   "satisfy_when": "真实动位符合本书所列同元素进退支对，分进退显示，并检查旺衰空破",
+   "required_facts": [
+    "liuyao.node.branch",
+    "liuyao.changed.branch",
+    "liuyao.node.moving",
+    "question.horizon"
+   ]
+  },
+  {
+   "id": "ZSB-E-09",
+   "theme": "飞伏生克与出伏条件",
+   "satisfy_when": "相关伏用得日月飞或动生，或飞空破衰墓而出现相应支持；记录具体路径",
+   "required_facts": [
+    "liuyao.hidden",
+    "liuyao.node.state",
+    "day.ganzhi",
+    "month.zhi"
+   ]
+  },
+  {
+   "id": "ZSB-E-10",
+   "theme": "动爻合绊及待冲",
+   "satisfy_when": "日月合住明动爻且未冲开；本位纯化合只在本次作为向外生用的元神时采用午元化未例的概括取法，记录向外生扶受绊",
+   "required_facts": [
+    "liuyao.node.moving",
+    "liuyao.node.branch",
+    "day.ganzhi",
+    "month.zhi",
+    "liuyao.changed.branch"
+   ]
+  },
+  {
+   "id": "ZSB-E-11",
+   "theme": "元忌同动与用神根气",
+   "satisfy_when": "同一用神的忌与元确实发动，忌生元、元生用且用有明确根气，合绊回克等未阻断",
+   "required_facts": [
+    "question.useRelative",
+    "liuyao.node.moving",
+    "liuyao.node.state",
+    "liuyao.interactions"
+   ]
+  },
+  {
+   "id": "ZSB-E-12",
+   "theme": "日动变三墓与绝的结构位置",
+   "satisfy_when": "日支、实际动爻支或本位变支落在本书相应墓绝位置，保留载体与对象",
+   "required_facts": [
+    "liuyao.node.element",
+    "day.ganzhi",
+    "liuyao.node.moving",
+    "liuyao.changed.branch"
+   ]
+  },
+  {
+   "id": "ZSB-E-13",
+   "theme": "旺用仍保留当前旬空",
+   "satisfy_when": "当前节点旬空且有明确日月生扶，二者并存",
+   "required_facts": [
+    "day.ganzhi",
+    "month.zhi",
+    "liuyao.node.state"
+   ]
+  },
+  {
+   "id": "ZSB-E-14",
+   "theme": "主卦活动三合与内初三、外四六动变三合",
+   "satisfy_when": "主卦三支在真实三位置齐全且至少一处明动或确认暗动，静成员可参与；或两原端爻确有活动而第三支来自两端之一真实本位变支；当前作用另查空破和外来墓等",
+   "required_facts": [
+    "liuyao.structure",
+    "liuyao.node.activity",
+    "liuyao.node.state",
+    "month.zhi",
+    "day.ganzhi"
+   ]
+  },
+  {
+   "id": "ZSB-E-15",
+   "theme": "内外合局的生克竞争",
+   "satisfy_when": "两局之形已具备，以各局五行和日月支持比较；有克制关系而弱局无扶、受克局当月旺，则此克制不足",
+   "required_facts": [
+    "liuyao.structure",
+    "liuyao.node.activity",
+    "liuyao.node.state",
+    "month.zhi",
+    "day.ganzhi"
+   ]
+  },
+  {
+   "id": "ZSB-E-16",
+   "theme": "寅巳申齐时刑与寅生巳的取舍",
+   "satisfy_when": "实际巳节点与本次可达的寅、申日月/动变/同位飞伏来源齐全，外来作用无未决项，则对其中寅生巳路线采用论刑不论生；旺相原始事实保留",
+   "required_facts": [
+    "liuyao.structure",
+    "liuyao.node.activity",
+    "liuyao.node.state",
+    "month.zhi",
+    "day.ganzhi"
+   ]
+  },
+  {
+   "id": "ZSB-E-17",
+   "theme": "日冲本位回克变爻的解除条件",
+   "satisfy_when": "真实本位变支克原动爻，且当前日支正冲该变支，则解除这一回克牵制；同时合本爻按冲克神合起的原例处理",
+   "required_facts": [
+    "liuyao.structure",
+    "liuyao.node.state",
+    "day.ganzhi"
+   ]
+  },
+  {
+   "id": "ZSB-E-18",
+   "theme": "反吟所选用爻的支持与回冲回克、辰日合护",
+   "satisfy_when": "内或外三位本变纳支逐位相冲且有真实动位，识别支反吟；所选主事爻有明确支持且未化冲克，或符合世酉化卯辰合并戌财暗动的明确合护，则具本书对应支持条件",
+   "required_facts": [
+    "liuyao.structure",
+    "liuyao.node.state",
+    "month.zhi",
+    "day.ganzhi"
+   ]
+  },
+  {
+   "id": "ZSB-E-19",
+   "theme": "伏吟同支结构与有根逢冲月条件",
+   "satisfy_when": "内或外三位纳支本变相同且有真实动位，识别伏吟；所选参照在该真动位、有明确支持且本月冲该支，则具当月冲开条件",
+   "required_facts": [
+    "liuyao.structure",
+    "liuyao.node.state",
+    "month.zhi"
+   ]
+  }
+ ]
+}
