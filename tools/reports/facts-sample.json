@@ -1358,7 +1358,7 @@
         }
       ]
     },
-    "caseD": {
+    "cov1_bazi_1": {
       "label": "覆盖·八字 1990-10-16 7:20 女（演示 27 条）",
       "facts": [
         {
@@ -2081,7 +2081,7 @@
         }
       ]
     },
-    "caseE": {
+    "cov1_bazi_2": {
       "label": "覆盖·八字 1990-1-1 13:20 男（演示 13 条）",
       "facts": [
         {
@@ -2782,7 +2782,7 @@
         }
       ]
     },
-    "caseF": {
+    "cov1_bazi_3": {
       "label": "覆盖·八字 1988-4-13 1:20 男（演示 7 条）",
       "facts": [
         {
@@ -3526,7 +3526,7 @@
         }
       ]
     },
-    "caseG": {
+    "cov1_bazi_4": {
       "label": "覆盖·八字 1988-1-7 1:20 男（演示 6 条）",
       "facts": [
         {
@@ -4182,7 +4182,7 @@
         }
       ]
     },
-    "caseH": {
+    "cov1_bazi_5": {
       "label": "覆盖·八字 1988-1-16 1:20 女（演示 5 条）",
       "facts": [
         {
@@ -4862,6 +4862,1912 @@
         {
           "key": "shishen",
           "value": "伤官",
+          "scope": {
+            "layer": "大运"
+          },
+          "derivedFrom": [
+            "dayun"
+          ]
+        }
+      ]
+    },
+    "cov2_bazi_1": {
+      "label": "覆盖2·八字 1988-1-9 1:20（演示 5 条）",
+      "facts": [
+        {
+          "key": "rizhu",
+          "value": "癸",
+          "scope": {
+            "layer": "本命",
+            "pillar": "day"
+          },
+          "derivedFrom": [
+            "ganzhi.day"
+          ]
+        },
+        {
+          "key": "yueling",
+          "value": "丑",
+          "scope": {
+            "layer": "本命",
+            "pillar": "month"
+          },
+          "derivedFrom": [
+            "ganzhi.month"
+          ]
+        },
+        {
+          "key": "gan",
+          "value": "丁",
+          "scope": {
+            "layer": "本命",
+            "pillar": "year"
+          },
+          "derivedFrom": [
+            "ganzhi",
+            "rows.天干"
+          ]
+        },
+        {
+          "key": "gan",
+          "value": "癸",
+          "scope": {
+            "layer": "本命",
+            "pillar": "month"
+          },
+          "derivedFrom": [
+            "ganzhi",
+            "rows.天干"
+          ]
+        },
+        {
+          "key": "gan",
+          "value": "癸",
+          "scope": {
+            "layer": "本命",
+            "pillar": "day"
+          },
+          "derivedFrom": [
+            "ganzhi",
+            "rows.天干"
+          ]
+        },
+        {
+          "key": "gan",
+          "value": "癸",
+          "scope": {
+            "layer": "本命",
+            "pillar": "time"
+          },
+          "derivedFrom": [
+            "ganzhi",
+            "rows.天干"
+          ]
+        },
+        {
+          "key": "zhi",
+          "value": "卯",
+          "scope": {
+            "layer": "本命",
+            "pillar": "year"
+          },
+          "derivedFrom": [
+            "ganzhi",
+            "rows.地支"
+          ]
+        },
+        {
+          "key": "zhi",
+          "value": "丑",
+          "scope": {
+            "layer": "本命",
+            "pillar": "month"
+          },
+          "derivedFrom": [
+            "ganzhi",
+            "rows.地支"
+          ]
+        },
+        {
+          "key": "zhi",
+          "value": "亥",
+          "scope": {
+            "layer": "本命",
+            "pillar": "day"
+          },
+          "derivedFrom": [
+            "ganzhi",
+            "rows.地支"
+          ]
+        },
+        {
+          "key": "zhi",
+          "value": "丑",
+          "scope": {
+            "layer": "本命",
+            "pillar": "time"
+          },
+          "derivedFrom": [
+            "ganzhi",
+            "rows.地支"
+          ]
+        },
+        {
+          "key": "nayin",
+          "value": "炉中火",
+          "scope": {
+            "layer": "本命",
+            "pillar": "year"
+          },
+          "derivedFrom": [
+            "rows.纳音"
+          ]
+        },
+        {
+          "key": "nayin",
+          "value": "桑柘木",
+          "scope": {
+            "layer": "本命",
+            "pillar": "month"
+          },
+          "derivedFrom": [
+            "rows.纳音"
+          ]
+        },
+        {
+          "key": "nayin",
+          "value": "大海水",
+          "scope": {
+            "layer": "本命",
+            "pillar": "day"
+          },
+          "derivedFrom": [
+            "rows.纳音"
+          ]
+        },
+        {
+          "key": "nayin",
+          "value": "桑柘木",
+          "scope": {
+            "layer": "本命",
+            "pillar": "time"
+          },
+          "derivedFrom": [
+            "rows.纳音"
+          ]
+        },
+        {
+          "key": "rizhu_strength",
+          "value": "极强",
+          "scope": {
+            "layer": "本命"
+          },
+          "derivedFrom": [
+            "analysis.strength.tier"
+          ]
+        },
+        {
+          "key": "geju",
+          "value": "比劫取用",
+          "scope": {
+            "layer": "本命"
+          },
+          "derivedFrom": [
+            "analysis.geju.name"
+          ]
+        },
+        {
+          "key": "yongshen",
+          "value": "木",
+          "scope": {
+            "layer": "本命"
+          },
+          "derivedFrom": [
+            "analysis.yongshen.xi"
+          ]
+        },
+        {
+          "key": "yongshen",
+          "value": "火",
+          "scope": {
+            "layer": "本命"
+          },
+          "derivedFrom": [
+            "analysis.yongshen.xi"
+          ]
+        },
+        {
+          "key": "shishen",
+          "value": "偏财",
+          "scope": {
+            "layer": "本命",
+            "pillar": "year"
+          },
+          "derivedFrom": [
+            "rows.十神"
+          ]
+        },
+        {
+          "key": "shishen",
+          "value": "比肩",
+          "scope": {
+            "layer": "本命",
+            "pillar": "month"
+          },
+          "derivedFrom": [
+            "rows.十神"
+          ]
+        },
+        {
+          "key": "shishen",
+          "value": "比肩",
+          "scope": {
+            "layer": "本命",
+            "pillar": "time"
+          },
+          "derivedFrom": [
+            "rows.十神"
+          ]
+        },
+        {
+          "key": "canggan",
+          "value": "乙",
+          "scope": {
+            "layer": "本命",
+            "pillar": "year"
+          },
+          "derivedFrom": [
+            "rows.藏干"
+          ]
+        },
+        {
+          "key": "shishen",
+          "value": "食神",
+          "scope": {
+            "layer": "本命",
+            "pillar": "year"
+          },
+          "derivedFrom": [
+            "rows.藏干"
+          ]
+        },
+        {
+          "key": "canggan",
+          "value": "己",
+          "scope": {
+            "layer": "本命",
+            "pillar": "month"
+          },
+          "derivedFrom": [
+            "rows.藏干"
+          ]
+        },
+        {
+          "key": "shishen",
+          "value": "七杀",
+          "scope": {
+            "layer": "本命",
+            "pillar": "month"
+          },
+          "derivedFrom": [
+            "rows.藏干"
+          ]
+        },
+        {
+          "key": "canggan",
+          "value": "癸",
+          "scope": {
+            "layer": "本命",
+            "pillar": "month"
+          },
+          "derivedFrom": [
+            "rows.藏干"
+          ]
+        },
+        {
+          "key": "canggan",
+          "value": "辛",
+          "scope": {
+            "layer": "本命",
+            "pillar": "month"
+          },
+          "derivedFrom": [
+            "rows.藏干"
+          ]
+        },
+        {
+          "key": "shishen",
+          "value": "偏印",
+          "scope": {
+            "layer": "本命",
+            "pillar": "month"
+          },
+          "derivedFrom": [
+            "rows.藏干"
+          ]
+        },
+        {
+          "key": "canggan",
+          "value": "壬",
+          "scope": {
+            "layer": "本命",
+            "pillar": "day"
+          },
+          "derivedFrom": [
+            "rows.藏干"
+          ]
+        },
+        {
+          "key": "shishen",
+          "value": "劫财",
+          "scope": {
+            "layer": "本命",
+            "pillar": "day"
+          },
+          "derivedFrom": [
+            "rows.藏干"
+          ]
+        },
+        {
+          "key": "canggan",
+          "value": "甲",
+          "scope": {
+            "layer": "本命",
+            "pillar": "day"
+          },
+          "derivedFrom": [
+            "rows.藏干"
+          ]
+        },
+        {
+          "key": "shishen",
+          "value": "伤官",
+          "scope": {
+            "layer": "本命",
+            "pillar": "day"
+          },
+          "derivedFrom": [
+            "rows.藏干"
+          ]
+        },
+        {
+          "key": "canggan",
+          "value": "己",
+          "scope": {
+            "layer": "本命",
+            "pillar": "time"
+          },
+          "derivedFrom": [
+            "rows.藏干"
+          ]
+        },
+        {
+          "key": "shishen",
+          "value": "七杀",
+          "scope": {
+            "layer": "本命",
+            "pillar": "time"
+          },
+          "derivedFrom": [
+            "rows.藏干"
+          ]
+        },
+        {
+          "key": "canggan",
+          "value": "癸",
+          "scope": {
+            "layer": "本命",
+            "pillar": "time"
+          },
+          "derivedFrom": [
+            "rows.藏干"
+          ]
+        },
+        {
+          "key": "canggan",
+          "value": "辛",
+          "scope": {
+            "layer": "本命",
+            "pillar": "time"
+          },
+          "derivedFrom": [
+            "rows.藏干"
+          ]
+        },
+        {
+          "key": "shishen",
+          "value": "偏印",
+          "scope": {
+            "layer": "本命",
+            "pillar": "time"
+          },
+          "derivedFrom": [
+            "rows.藏干"
+          ]
+        },
+        {
+          "key": "shensha",
+          "value": "天乙贵人",
+          "scope": {
+            "layer": "本命",
+            "pillar": "year"
+          },
+          "derivedFrom": [
+            "rows.神煞"
+          ]
+        },
+        {
+          "key": "shensha",
+          "value": "太极贵人",
+          "scope": {
+            "layer": "本命",
+            "pillar": "year"
+          },
+          "derivedFrom": [
+            "rows.神煞"
+          ]
+        },
+        {
+          "key": "shensha",
+          "value": "文昌",
+          "scope": {
+            "layer": "本命",
+            "pillar": "year"
+          },
+          "derivedFrom": [
+            "rows.神煞"
+          ]
+        },
+        {
+          "key": "shensha",
+          "value": "学堂",
+          "scope": {
+            "layer": "本命",
+            "pillar": "year"
+          },
+          "derivedFrom": [
+            "rows.神煞"
+          ]
+        },
+        {
+          "key": "shensha",
+          "value": "将星",
+          "scope": {
+            "layer": "本命",
+            "pillar": "year"
+          },
+          "derivedFrom": [
+            "rows.神煞"
+          ]
+        },
+        {
+          "key": "shensha",
+          "value": "华盖",
+          "scope": {
+            "layer": "本命",
+            "pillar": "month"
+          },
+          "derivedFrom": [
+            "rows.神煞"
+          ]
+        },
+        {
+          "key": "shensha",
+          "value": "寡宿",
+          "scope": {
+            "layer": "本命",
+            "pillar": "month"
+          },
+          "derivedFrom": [
+            "rows.神煞"
+          ]
+        },
+        {
+          "key": "shensha",
+          "value": "天乙贵人",
+          "scope": {
+            "layer": "本命",
+            "pillar": "day"
+          },
+          "derivedFrom": [
+            "rows.神煞"
+          ]
+        },
+        {
+          "key": "shensha",
+          "value": "羊刃",
+          "scope": {
+            "layer": "本命",
+            "pillar": "day"
+          },
+          "derivedFrom": [
+            "rows.神煞"
+          ]
+        },
+        {
+          "key": "shensha",
+          "value": "华盖",
+          "scope": {
+            "layer": "本命",
+            "pillar": "time"
+          },
+          "derivedFrom": [
+            "rows.神煞"
+          ]
+        },
+        {
+          "key": "shensha",
+          "value": "寡宿",
+          "scope": {
+            "layer": "本命",
+            "pillar": "time"
+          },
+          "derivedFrom": [
+            "rows.神煞"
+          ]
+        },
+        {
+          "key": "kongwang",
+          "value": "子",
+          "scope": {
+            "layer": "本命"
+          },
+          "derivedFrom": [
+            "meta.kong"
+          ]
+        },
+        {
+          "key": "kongwang",
+          "value": "丑",
+          "scope": {
+            "layer": "本命"
+          },
+          "derivedFrom": [
+            "meta.kong"
+          ]
+        },
+        {
+          "key": "shishen",
+          "value": "伤官",
+          "scope": {
+            "layer": "大运"
+          },
+          "derivedFrom": [
+            "dayun"
+          ]
+        },
+        {
+          "key": "shishen",
+          "value": "食神",
+          "scope": {
+            "layer": "大运"
+          },
+          "derivedFrom": [
+            "dayun"
+          ]
+        },
+        {
+          "key": "shishen",
+          "value": "正财",
+          "scope": {
+            "layer": "大运"
+          },
+          "derivedFrom": [
+            "dayun"
+          ]
+        },
+        {
+          "key": "shishen",
+          "value": "偏财",
+          "scope": {
+            "layer": "大运"
+          },
+          "derivedFrom": [
+            "dayun"
+          ]
+        },
+        {
+          "key": "shishen",
+          "value": "正官",
+          "scope": {
+            "layer": "大运"
+          },
+          "derivedFrom": [
+            "dayun"
+          ]
+        },
+        {
+          "key": "shishen",
+          "value": "七杀",
+          "scope": {
+            "layer": "大运"
+          },
+          "derivedFrom": [
+            "dayun"
+          ]
+        },
+        {
+          "key": "shishen",
+          "value": "正印",
+          "scope": {
+            "layer": "大运"
+          },
+          "derivedFrom": [
+            "dayun"
+          ]
+        },
+        {
+          "key": "shishen",
+          "value": "偏印",
+          "scope": {
+            "layer": "大运"
+          },
+          "derivedFrom": [
+            "dayun"
+          ]
+        },
+        {
+          "key": "shishen",
+          "value": "劫财",
+          "scope": {
+            "layer": "大运"
+          },
+          "derivedFrom": [
+            "dayun"
+          ]
+        },
+        {
+          "key": "shishen",
+          "value": "比肩",
+          "scope": {
+            "layer": "大运"
+          },
+          "derivedFrom": [
+            "dayun"
+          ]
+        }
+      ]
+    },
+    "cov2_bazi_2": {
+      "label": "覆盖2·八字 1988-1-1 1:20（演示 4 条）",
+      "facts": [
+        {
+          "key": "rizhu",
+          "value": "乙",
+          "scope": {
+            "layer": "本命",
+            "pillar": "day"
+          },
+          "derivedFrom": [
+            "ganzhi.day"
+          ]
+        },
+        {
+          "key": "yueling",
+          "value": "子",
+          "scope": {
+            "layer": "本命",
+            "pillar": "month"
+          },
+          "derivedFrom": [
+            "ganzhi.month"
+          ]
+        },
+        {
+          "key": "gan",
+          "value": "丁",
+          "scope": {
+            "layer": "本命",
+            "pillar": "year"
+          },
+          "derivedFrom": [
+            "ganzhi",
+            "rows.天干"
+          ]
+        },
+        {
+          "key": "gan",
+          "value": "壬",
+          "scope": {
+            "layer": "本命",
+            "pillar": "month"
+          },
+          "derivedFrom": [
+            "ganzhi",
+            "rows.天干"
+          ]
+        },
+        {
+          "key": "gan",
+          "value": "乙",
+          "scope": {
+            "layer": "本命",
+            "pillar": "day"
+          },
+          "derivedFrom": [
+            "ganzhi",
+            "rows.天干"
+          ]
+        },
+        {
+          "key": "gan",
+          "value": "丁",
+          "scope": {
+            "layer": "本命",
+            "pillar": "time"
+          },
+          "derivedFrom": [
+            "ganzhi",
+            "rows.天干"
+          ]
+        },
+        {
+          "key": "zhi",
+          "value": "卯",
+          "scope": {
+            "layer": "本命",
+            "pillar": "year"
+          },
+          "derivedFrom": [
+            "ganzhi",
+            "rows.地支"
+          ]
+        },
+        {
+          "key": "zhi",
+          "value": "子",
+          "scope": {
+            "layer": "本命",
+            "pillar": "month"
+          },
+          "derivedFrom": [
+            "ganzhi",
+            "rows.地支"
+          ]
+        },
+        {
+          "key": "zhi",
+          "value": "卯",
+          "scope": {
+            "layer": "本命",
+            "pillar": "day"
+          },
+          "derivedFrom": [
+            "ganzhi",
+            "rows.地支"
+          ]
+        },
+        {
+          "key": "zhi",
+          "value": "丑",
+          "scope": {
+            "layer": "本命",
+            "pillar": "time"
+          },
+          "derivedFrom": [
+            "ganzhi",
+            "rows.地支"
+          ]
+        },
+        {
+          "key": "nayin",
+          "value": "炉中火",
+          "scope": {
+            "layer": "本命",
+            "pillar": "year"
+          },
+          "derivedFrom": [
+            "rows.纳音"
+          ]
+        },
+        {
+          "key": "nayin",
+          "value": "桑柘木",
+          "scope": {
+            "layer": "本命",
+            "pillar": "month"
+          },
+          "derivedFrom": [
+            "rows.纳音"
+          ]
+        },
+        {
+          "key": "nayin",
+          "value": "大溪水",
+          "scope": {
+            "layer": "本命",
+            "pillar": "day"
+          },
+          "derivedFrom": [
+            "rows.纳音"
+          ]
+        },
+        {
+          "key": "nayin",
+          "value": "涧下水",
+          "scope": {
+            "layer": "本命",
+            "pillar": "time"
+          },
+          "derivedFrom": [
+            "rows.纳音"
+          ]
+        },
+        {
+          "key": "rizhu_strength",
+          "value": "极强",
+          "scope": {
+            "layer": "本命"
+          },
+          "derivedFrom": [
+            "analysis.strength.tier"
+          ]
+        },
+        {
+          "key": "geju",
+          "value": "偏印格",
+          "scope": {
+            "layer": "本命"
+          },
+          "derivedFrom": [
+            "analysis.geju.name"
+          ]
+        },
+        {
+          "key": "yongshen",
+          "value": "火",
+          "scope": {
+            "layer": "本命"
+          },
+          "derivedFrom": [
+            "analysis.yongshen.xi"
+          ]
+        },
+        {
+          "key": "shishen",
+          "value": "食神",
+          "scope": {
+            "layer": "本命",
+            "pillar": "year"
+          },
+          "derivedFrom": [
+            "rows.十神"
+          ]
+        },
+        {
+          "key": "shishen",
+          "value": "正印",
+          "scope": {
+            "layer": "本命",
+            "pillar": "month"
+          },
+          "derivedFrom": [
+            "rows.十神"
+          ]
+        },
+        {
+          "key": "shishen",
+          "value": "食神",
+          "scope": {
+            "layer": "本命",
+            "pillar": "time"
+          },
+          "derivedFrom": [
+            "rows.十神"
+          ]
+        },
+        {
+          "key": "canggan",
+          "value": "乙",
+          "scope": {
+            "layer": "本命",
+            "pillar": "year"
+          },
+          "derivedFrom": [
+            "rows.藏干"
+          ]
+        },
+        {
+          "key": "shishen",
+          "value": "比肩",
+          "scope": {
+            "layer": "本命",
+            "pillar": "year"
+          },
+          "derivedFrom": [
+            "rows.藏干"
+          ]
+        },
+        {
+          "key": "canggan",
+          "value": "癸",
+          "scope": {
+            "layer": "本命",
+            "pillar": "month"
+          },
+          "derivedFrom": [
+            "rows.藏干"
+          ]
+        },
+        {
+          "key": "shishen",
+          "value": "偏印",
+          "scope": {
+            "layer": "本命",
+            "pillar": "month"
+          },
+          "derivedFrom": [
+            "rows.藏干"
+          ]
+        },
+        {
+          "key": "canggan",
+          "value": "乙",
+          "scope": {
+            "layer": "本命",
+            "pillar": "day"
+          },
+          "derivedFrom": [
+            "rows.藏干"
+          ]
+        },
+        {
+          "key": "shishen",
+          "value": "比肩",
+          "scope": {
+            "layer": "本命",
+            "pillar": "day"
+          },
+          "derivedFrom": [
+            "rows.藏干"
+          ]
+        },
+        {
+          "key": "canggan",
+          "value": "己",
+          "scope": {
+            "layer": "本命",
+            "pillar": "time"
+          },
+          "derivedFrom": [
+            "rows.藏干"
+          ]
+        },
+        {
+          "key": "shishen",
+          "value": "偏财",
+          "scope": {
+            "layer": "本命",
+            "pillar": "time"
+          },
+          "derivedFrom": [
+            "rows.藏干"
+          ]
+        },
+        {
+          "key": "canggan",
+          "value": "癸",
+          "scope": {
+            "layer": "本命",
+            "pillar": "time"
+          },
+          "derivedFrom": [
+            "rows.藏干"
+          ]
+        },
+        {
+          "key": "shishen",
+          "value": "偏印",
+          "scope": {
+            "layer": "本命",
+            "pillar": "time"
+          },
+          "derivedFrom": [
+            "rows.藏干"
+          ]
+        },
+        {
+          "key": "canggan",
+          "value": "辛",
+          "scope": {
+            "layer": "本命",
+            "pillar": "time"
+          },
+          "derivedFrom": [
+            "rows.藏干"
+          ]
+        },
+        {
+          "key": "shishen",
+          "value": "七杀",
+          "scope": {
+            "layer": "本命",
+            "pillar": "time"
+          },
+          "derivedFrom": [
+            "rows.藏干"
+          ]
+        },
+        {
+          "key": "shensha",
+          "value": "太极贵人",
+          "scope": {
+            "layer": "本命",
+            "pillar": "year"
+          },
+          "derivedFrom": [
+            "rows.神煞"
+          ]
+        },
+        {
+          "key": "shensha",
+          "value": "禄神",
+          "scope": {
+            "layer": "本命",
+            "pillar": "year"
+          },
+          "derivedFrom": [
+            "rows.神煞"
+          ]
+        },
+        {
+          "key": "shensha",
+          "value": "将星",
+          "scope": {
+            "layer": "本命",
+            "pillar": "year"
+          },
+          "derivedFrom": [
+            "rows.神煞"
+          ]
+        },
+        {
+          "key": "shensha",
+          "value": "天乙贵人",
+          "scope": {
+            "layer": "本命",
+            "pillar": "month"
+          },
+          "derivedFrom": [
+            "rows.神煞"
+          ]
+        },
+        {
+          "key": "shensha",
+          "value": "太极贵人",
+          "scope": {
+            "layer": "本命",
+            "pillar": "month"
+          },
+          "derivedFrom": [
+            "rows.神煞"
+          ]
+        },
+        {
+          "key": "shensha",
+          "value": "桃花",
+          "scope": {
+            "layer": "本命",
+            "pillar": "month"
+          },
+          "derivedFrom": [
+            "rows.神煞"
+          ]
+        },
+        {
+          "key": "shensha",
+          "value": "月德贵人",
+          "scope": {
+            "layer": "本命",
+            "pillar": "month"
+          },
+          "derivedFrom": [
+            "rows.神煞"
+          ]
+        },
+        {
+          "key": "shensha",
+          "value": "太极贵人",
+          "scope": {
+            "layer": "本命",
+            "pillar": "day"
+          },
+          "derivedFrom": [
+            "rows.神煞"
+          ]
+        },
+        {
+          "key": "shensha",
+          "value": "禄神",
+          "scope": {
+            "layer": "本命",
+            "pillar": "day"
+          },
+          "derivedFrom": [
+            "rows.神煞"
+          ]
+        },
+        {
+          "key": "shensha",
+          "value": "将星",
+          "scope": {
+            "layer": "本命",
+            "pillar": "day"
+          },
+          "derivedFrom": [
+            "rows.神煞"
+          ]
+        },
+        {
+          "key": "shensha",
+          "value": "华盖",
+          "scope": {
+            "layer": "本命",
+            "pillar": "time"
+          },
+          "derivedFrom": [
+            "rows.神煞"
+          ]
+        },
+        {
+          "key": "shensha",
+          "value": "寡宿",
+          "scope": {
+            "layer": "本命",
+            "pillar": "time"
+          },
+          "derivedFrom": [
+            "rows.神煞"
+          ]
+        },
+        {
+          "key": "kongwang",
+          "value": "子",
+          "scope": {
+            "layer": "本命"
+          },
+          "derivedFrom": [
+            "meta.kong"
+          ]
+        },
+        {
+          "key": "kongwang",
+          "value": "丑",
+          "scope": {
+            "layer": "本命"
+          },
+          "derivedFrom": [
+            "meta.kong"
+          ]
+        },
+        {
+          "key": "shishen",
+          "value": "偏印",
+          "scope": {
+            "layer": "大运"
+          },
+          "derivedFrom": [
+            "dayun"
+          ]
+        },
+        {
+          "key": "shishen",
+          "value": "劫财",
+          "scope": {
+            "layer": "大运"
+          },
+          "derivedFrom": [
+            "dayun"
+          ]
+        },
+        {
+          "key": "shishen",
+          "value": "比肩",
+          "scope": {
+            "layer": "大运"
+          },
+          "derivedFrom": [
+            "dayun"
+          ]
+        },
+        {
+          "key": "shishen",
+          "value": "伤官",
+          "scope": {
+            "layer": "大运"
+          },
+          "derivedFrom": [
+            "dayun"
+          ]
+        },
+        {
+          "key": "shishen",
+          "value": "食神",
+          "scope": {
+            "layer": "大运"
+          },
+          "derivedFrom": [
+            "dayun"
+          ]
+        },
+        {
+          "key": "shishen",
+          "value": "正财",
+          "scope": {
+            "layer": "大运"
+          },
+          "derivedFrom": [
+            "dayun"
+          ]
+        },
+        {
+          "key": "shishen",
+          "value": "偏财",
+          "scope": {
+            "layer": "大运"
+          },
+          "derivedFrom": [
+            "dayun"
+          ]
+        },
+        {
+          "key": "shishen",
+          "value": "正官",
+          "scope": {
+            "layer": "大运"
+          },
+          "derivedFrom": [
+            "dayun"
+          ]
+        },
+        {
+          "key": "shishen",
+          "value": "七杀",
+          "scope": {
+            "layer": "大运"
+          },
+          "derivedFrom": [
+            "dayun"
+          ]
+        },
+        {
+          "key": "shishen",
+          "value": "正印",
+          "scope": {
+            "layer": "大运"
+          },
+          "derivedFrom": [
+            "dayun"
+          ]
+        }
+      ]
+    },
+    "cov2_bazi_3": {
+      "label": "覆盖2·八字 1988-1-3 1:20（演示 3 条）",
+      "facts": [
+        {
+          "key": "rizhu",
+          "value": "丁",
+          "scope": {
+            "layer": "本命",
+            "pillar": "day"
+          },
+          "derivedFrom": [
+            "ganzhi.day"
+          ]
+        },
+        {
+          "key": "yueling",
+          "value": "子",
+          "scope": {
+            "layer": "本命",
+            "pillar": "month"
+          },
+          "derivedFrom": [
+            "ganzhi.month"
+          ]
+        },
+        {
+          "key": "gan",
+          "value": "丁",
+          "scope": {
+            "layer": "本命",
+            "pillar": "year"
+          },
+          "derivedFrom": [
+            "ganzhi",
+            "rows.天干"
+          ]
+        },
+        {
+          "key": "gan",
+          "value": "壬",
+          "scope": {
+            "layer": "本命",
+            "pillar": "month"
+          },
+          "derivedFrom": [
+            "ganzhi",
+            "rows.天干"
+          ]
+        },
+        {
+          "key": "gan",
+          "value": "丁",
+          "scope": {
+            "layer": "本命",
+            "pillar": "day"
+          },
+          "derivedFrom": [
+            "ganzhi",
+            "rows.天干"
+          ]
+        },
+        {
+          "key": "gan",
+          "value": "辛",
+          "scope": {
+            "layer": "本命",
+            "pillar": "time"
+          },
+          "derivedFrom": [
+            "ganzhi",
+            "rows.天干"
+          ]
+        },
+        {
+          "key": "zhi",
+          "value": "卯",
+          "scope": {
+            "layer": "本命",
+            "pillar": "year"
+          },
+          "derivedFrom": [
+            "ganzhi",
+            "rows.地支"
+          ]
+        },
+        {
+          "key": "zhi",
+          "value": "子",
+          "scope": {
+            "layer": "本命",
+            "pillar": "month"
+          },
+          "derivedFrom": [
+            "ganzhi",
+            "rows.地支"
+          ]
+        },
+        {
+          "key": "zhi",
+          "value": "巳",
+          "scope": {
+            "layer": "本命",
+            "pillar": "day"
+          },
+          "derivedFrom": [
+            "ganzhi",
+            "rows.地支"
+          ]
+        },
+        {
+          "key": "zhi",
+          "value": "丑",
+          "scope": {
+            "layer": "本命",
+            "pillar": "time"
+          },
+          "derivedFrom": [
+            "ganzhi",
+            "rows.地支"
+          ]
+        },
+        {
+          "key": "nayin",
+          "value": "炉中火",
+          "scope": {
+            "layer": "本命",
+            "pillar": "year"
+          },
+          "derivedFrom": [
+            "rows.纳音"
+          ]
+        },
+        {
+          "key": "nayin",
+          "value": "桑柘木",
+          "scope": {
+            "layer": "本命",
+            "pillar": "month"
+          },
+          "derivedFrom": [
+            "rows.纳音"
+          ]
+        },
+        {
+          "key": "nayin",
+          "value": "沙中土",
+          "scope": {
+            "layer": "本命",
+            "pillar": "day"
+          },
+          "derivedFrom": [
+            "rows.纳音"
+          ]
+        },
+        {
+          "key": "nayin",
+          "value": "壁上土",
+          "scope": {
+            "layer": "本命",
+            "pillar": "time"
+          },
+          "derivedFrom": [
+            "rows.纳音"
+          ]
+        },
+        {
+          "key": "rizhu_strength",
+          "value": "中弱",
+          "scope": {
+            "layer": "本命"
+          },
+          "derivedFrom": [
+            "analysis.strength.tier"
+          ]
+        },
+        {
+          "key": "geju",
+          "value": "七杀格",
+          "scope": {
+            "layer": "本命"
+          },
+          "derivedFrom": [
+            "analysis.geju.name"
+          ]
+        },
+        {
+          "key": "yongshen",
+          "value": "木",
+          "scope": {
+            "layer": "本命"
+          },
+          "derivedFrom": [
+            "analysis.yongshen.xi"
+          ]
+        },
+        {
+          "key": "yongshen",
+          "value": "火",
+          "scope": {
+            "layer": "本命"
+          },
+          "derivedFrom": [
+            "analysis.yongshen.xi"
+          ]
+        },
+        {
+          "key": "shishen",
+          "value": "比肩",
+          "scope": {
+            "layer": "本命",
+            "pillar": "year"
+          },
+          "derivedFrom": [
+            "rows.十神"
+          ]
+        },
+        {
+          "key": "shishen",
+          "value": "正官",
+          "scope": {
+            "layer": "本命",
+            "pillar": "month"
+          },
+          "derivedFrom": [
+            "rows.十神"
+          ]
+        },
+        {
+          "key": "shishen",
+          "value": "偏财",
+          "scope": {
+            "layer": "本命",
+            "pillar": "time"
+          },
+          "derivedFrom": [
+            "rows.十神"
+          ]
+        },
+        {
+          "key": "canggan",
+          "value": "乙",
+          "scope": {
+            "layer": "本命",
+            "pillar": "year"
+          },
+          "derivedFrom": [
+            "rows.藏干"
+          ]
+        },
+        {
+          "key": "shishen",
+          "value": "偏印",
+          "scope": {
+            "layer": "本命",
+            "pillar": "year"
+          },
+          "derivedFrom": [
+            "rows.藏干"
+          ]
+        },
+        {
+          "key": "canggan",
+          "value": "癸",
+          "scope": {
+            "layer": "本命",
+            "pillar": "month"
+          },
+          "derivedFrom": [
+            "rows.藏干"
+          ]
+        },
+        {
+          "key": "shishen",
+          "value": "七杀",
+          "scope": {
+            "layer": "本命",
+            "pillar": "month"
+          },
+          "derivedFrom": [
+            "rows.藏干"
+          ]
+        },
+        {
+          "key": "canggan",
+          "value": "丙",
+          "scope": {
+            "layer": "本命",
+            "pillar": "day"
+          },
+          "derivedFrom": [
+            "rows.藏干"
+          ]
+        },
+        {
+          "key": "shishen",
+          "value": "劫财",
+          "scope": {
+            "layer": "本命",
+            "pillar": "day"
+          },
+          "derivedFrom": [
+            "rows.藏干"
+          ]
+        },
+        {
+          "key": "canggan",
+          "value": "庚",
+          "scope": {
+            "layer": "本命",
+            "pillar": "day"
+          },
+          "derivedFrom": [
+            "rows.藏干"
+          ]
+        },
+        {
+          "key": "shishen",
+          "value": "正财",
+          "scope": {
+            "layer": "本命",
+            "pillar": "day"
+          },
+          "derivedFrom": [
+            "rows.藏干"
+          ]
+        },
+        {
+          "key": "canggan",
+          "value": "戊",
+          "scope": {
+            "layer": "本命",
+            "pillar": "day"
+          },
+          "derivedFrom": [
+            "rows.藏干"
+          ]
+        },
+        {
+          "key": "shishen",
+          "value": "伤官",
+          "scope": {
+            "layer": "本命",
+            "pillar": "day"
+          },
+          "derivedFrom": [
+            "rows.藏干"
+          ]
+        },
+        {
+          "key": "canggan",
+          "value": "己",
+          "scope": {
+            "layer": "本命",
+            "pillar": "time"
+          },
+          "derivedFrom": [
+            "rows.藏干"
+          ]
+        },
+        {
+          "key": "shishen",
+          "value": "食神",
+          "scope": {
+            "layer": "本命",
+            "pillar": "time"
+          },
+          "derivedFrom": [
+            "rows.藏干"
+          ]
+        },
+        {
+          "key": "canggan",
+          "value": "癸",
+          "scope": {
+            "layer": "本命",
+            "pillar": "time"
+          },
+          "derivedFrom": [
+            "rows.藏干"
+          ]
+        },
+        {
+          "key": "shishen",
+          "value": "七杀",
+          "scope": {
+            "layer": "本命",
+            "pillar": "time"
+          },
+          "derivedFrom": [
+            "rows.藏干"
+          ]
+        },
+        {
+          "key": "canggan",
+          "value": "辛",
+          "scope": {
+            "layer": "本命",
+            "pillar": "time"
+          },
+          "derivedFrom": [
+            "rows.藏干"
+          ]
+        },
+        {
+          "key": "shensha",
+          "value": "太极贵人",
+          "scope": {
+            "layer": "本命",
+            "pillar": "year"
+          },
+          "derivedFrom": [
+            "rows.神煞"
+          ]
+        },
+        {
+          "key": "shensha",
+          "value": "将星",
+          "scope": {
+            "layer": "本命",
+            "pillar": "year"
+          },
+          "derivedFrom": [
+            "rows.神煞"
+          ]
+        },
+        {
+          "key": "shensha",
+          "value": "桃花",
+          "scope": {
+            "layer": "本命",
+            "pillar": "month"
+          },
+          "derivedFrom": [
+            "rows.神煞"
+          ]
+        },
+        {
+          "key": "shensha",
+          "value": "月德贵人",
+          "scope": {
+            "layer": "本命",
+            "pillar": "month"
+          },
+          "derivedFrom": [
+            "rows.神煞"
+          ]
+        },
+        {
+          "key": "shensha",
+          "value": "羊刃",
+          "scope": {
+            "layer": "本命",
+            "pillar": "day"
+          },
+          "derivedFrom": [
+            "rows.神煞"
+          ]
+        },
+        {
+          "key": "shensha",
+          "value": "驿马",
+          "scope": {
+            "layer": "本命",
+            "pillar": "day"
+          },
+          "derivedFrom": [
+            "rows.神煞"
+          ]
+        },
+        {
+          "key": "shensha",
+          "value": "孤辰",
+          "scope": {
+            "layer": "本命",
+            "pillar": "day"
+          },
+          "derivedFrom": [
+            "rows.神煞"
+          ]
+        },
+        {
+          "key": "shensha",
+          "value": "天德贵人",
+          "scope": {
+            "layer": "本命",
+            "pillar": "day"
+          },
+          "derivedFrom": [
+            "rows.神煞"
+          ]
+        },
+        {
+          "key": "shensha",
+          "value": "华盖",
+          "scope": {
+            "layer": "本命",
+            "pillar": "time"
+          },
+          "derivedFrom": [
+            "rows.神煞"
+          ]
+        },
+        {
+          "key": "shensha",
+          "value": "寡宿",
+          "scope": {
+            "layer": "本命",
+            "pillar": "time"
+          },
+          "derivedFrom": [
+            "rows.神煞"
+          ]
+        },
+        {
+          "key": "kongwang",
+          "value": "子",
+          "scope": {
+            "layer": "本命"
+          },
+          "derivedFrom": [
+            "meta.kong"
+          ]
+        },
+        {
+          "key": "kongwang",
+          "value": "丑",
+          "scope": {
+            "layer": "本命"
+          },
+          "derivedFrom": [
+            "meta.kong"
+          ]
+        },
+        {
+          "key": "shishen",
+          "value": "七杀",
+          "scope": {
+            "layer": "大运"
+          },
+          "derivedFrom": [
+            "dayun"
+          ]
+        },
+        {
+          "key": "shishen",
+          "value": "正印",
+          "scope": {
+            "layer": "大运"
+          },
+          "derivedFrom": [
+            "dayun"
+          ]
+        },
+        {
+          "key": "shishen",
+          "value": "偏印",
+          "scope": {
+            "layer": "大运"
+          },
+          "derivedFrom": [
+            "dayun"
+          ]
+        },
+        {
+          "key": "shishen",
+          "value": "劫财",
+          "scope": {
+            "layer": "大运"
+          },
+          "derivedFrom": [
+            "dayun"
+          ]
+        },
+        {
+          "key": "shishen",
+          "value": "比肩",
+          "scope": {
+            "layer": "大运"
+          },
+          "derivedFrom": [
+            "dayun"
+          ]
+        },
+        {
+          "key": "shishen",
+          "value": "伤官",
+          "scope": {
+            "layer": "大运"
+          },
+          "derivedFrom": [
+            "dayun"
+          ]
+        },
+        {
+          "key": "shishen",
+          "value": "食神",
+          "scope": {
+            "layer": "大运"
+          },
+          "derivedFrom": [
+            "dayun"
+          ]
+        },
+        {
+          "key": "shishen",
+          "value": "正财",
+          "scope": {
+            "layer": "大运"
+          },
+          "derivedFrom": [
+            "dayun"
+          ]
+        },
+        {
+          "key": "shishen",
+          "value": "偏财",
+          "scope": {
+            "layer": "大运"
+          },
+          "derivedFrom": [
+            "dayun"
+          ]
+        },
+        {
+          "key": "shishen",
+          "value": "正官",
           "scope": {
             "layer": "大运"
           },
@@ -7714,7 +9620,7 @@
         }
       ]
     },
-    "caseD": {
+    "cov1_ziwei_1": {
       "label": "覆盖·紫微 1990-3-22 7:20 女（演示 5 条）",
       "facts": [
         {
@@ -8676,7 +10582,7 @@
         }
       ]
     },
-    "caseE": {
+    "cov1_ziwei_2": {
       "label": "覆盖·紫微 1988-1-7 1:20 男（演示 1 条）",
       "facts": [
         {
@@ -9590,6 +11496,945 @@
           },
           "derivedFrom": [
             "palaces.adjective"
+          ]
+        }
+      ]
+    },
+    "cov2_ziwei_1": {
+      "label": "覆盖2·紫微 1988-1-2 1:20（演示 1 条）",
+      "facts": [
+        {
+          "key": "ziwei_palace",
+          "value": "命宫",
+          "scope": {
+            "layer": "本命",
+            "palace": "命宫"
+          },
+          "derivedFrom": [
+            "palaces.name"
+          ]
+        },
+        {
+          "key": "ziwei_star",
+          "value": "太阳",
+          "scope": {
+            "layer": "本命",
+            "palace": "命宫"
+          },
+          "derivedFrom": [
+            "palaces.stars"
+          ]
+        },
+        {
+          "key": "ziwei_star",
+          "value": "天魁",
+          "scope": {
+            "layer": "本命",
+            "palace": "命宫"
+          },
+          "derivedFrom": [
+            "palaces.minor"
+          ]
+        },
+        {
+          "key": "ziwei_star",
+          "value": "铃星",
+          "scope": {
+            "layer": "本命",
+            "palace": "命宫"
+          },
+          "derivedFrom": [
+            "palaces.minor"
+          ]
+        },
+        {
+          "key": "ziwei_star",
+          "value": "天姚",
+          "scope": {
+            "layer": "本命",
+            "palace": "命宫"
+          },
+          "derivedFrom": [
+            "palaces.adjective"
+          ]
+        },
+        {
+          "key": "ziwei_star",
+          "value": "天福",
+          "scope": {
+            "layer": "本命",
+            "palace": "命宫"
+          },
+          "derivedFrom": [
+            "palaces.adjective"
+          ]
+        },
+        {
+          "key": "ziwei_star",
+          "value": "旬空",
+          "scope": {
+            "layer": "本命",
+            "palace": "命宫"
+          },
+          "derivedFrom": [
+            "palaces.adjective"
+          ]
+        },
+        {
+          "key": "ziwei_palace",
+          "value": "兄弟",
+          "scope": {
+            "layer": "本命",
+            "palace": "兄弟"
+          },
+          "derivedFrom": [
+            "palaces.name"
+          ]
+        },
+        {
+          "key": "ziwei_star",
+          "value": "武曲",
+          "scope": {
+            "layer": "本命",
+            "palace": "兄弟"
+          },
+          "derivedFrom": [
+            "palaces.stars"
+          ]
+        },
+        {
+          "key": "ziwei_star",
+          "value": "地空",
+          "scope": {
+            "layer": "本命",
+            "palace": "兄弟"
+          },
+          "derivedFrom": [
+            "palaces.minor"
+          ]
+        },
+        {
+          "key": "ziwei_star",
+          "value": "火星",
+          "scope": {
+            "layer": "本命",
+            "palace": "兄弟"
+          },
+          "derivedFrom": [
+            "palaces.minor"
+          ]
+        },
+        {
+          "key": "ziwei_star",
+          "value": "天月",
+          "scope": {
+            "layer": "本命",
+            "palace": "兄弟"
+          },
+          "derivedFrom": [
+            "palaces.adjective"
+          ]
+        },
+        {
+          "key": "ziwei_palace",
+          "value": "夫妻",
+          "scope": {
+            "layer": "本命",
+            "palace": "夫妻"
+          },
+          "derivedFrom": [
+            "palaces.name"
+          ]
+        },
+        {
+          "key": "ziwei_star",
+          "value": "天同",
+          "scope": {
+            "layer": "本命",
+            "palace": "夫妻"
+          },
+          "derivedFrom": [
+            "palaces.stars"
+          ]
+        },
+        {
+          "key": "ziwei_star",
+          "value": "文昌",
+          "scope": {
+            "layer": "本命",
+            "palace": "夫妻"
+          },
+          "derivedFrom": [
+            "palaces.minor"
+          ]
+        },
+        {
+          "key": "ziwei_star",
+          "value": "天钺",
+          "scope": {
+            "layer": "本命",
+            "palace": "夫妻"
+          },
+          "derivedFrom": [
+            "palaces.minor"
+          ]
+        },
+        {
+          "key": "ziwei_star",
+          "value": "天虚",
+          "scope": {
+            "layer": "本命",
+            "palace": "夫妻"
+          },
+          "derivedFrom": [
+            "palaces.adjective"
+          ]
+        },
+        {
+          "key": "sihua",
+          "value": "化权",
+          "scope": {
+            "layer": "本命",
+            "palace": "夫妻"
+          },
+          "derivedFrom": [
+            "palaces.hua"
+          ]
+        },
+        {
+          "key": "ziwei_palace",
+          "value": "子女",
+          "scope": {
+            "layer": "本命",
+            "palace": "子女"
+          },
+          "derivedFrom": [
+            "palaces.name"
+          ]
+        },
+        {
+          "key": "ziwei_star",
+          "value": "七杀",
+          "scope": {
+            "layer": "本命",
+            "palace": "子女"
+          },
+          "derivedFrom": [
+            "palaces.stars"
+          ]
+        },
+        {
+          "key": "ziwei_star",
+          "value": "恩光",
+          "scope": {
+            "layer": "本命",
+            "palace": "子女"
+          },
+          "derivedFrom": [
+            "palaces.adjective"
+          ]
+        },
+        {
+          "key": "ziwei_star",
+          "value": "月德",
+          "scope": {
+            "layer": "本命",
+            "palace": "子女"
+          },
+          "derivedFrom": [
+            "palaces.adjective"
+          ]
+        },
+        {
+          "key": "ziwei_palace",
+          "value": "财帛",
+          "scope": {
+            "layer": "本命",
+            "palace": "财帛"
+          },
+          "derivedFrom": [
+            "palaces.name"
+          ]
+        },
+        {
+          "key": "ziwei_star",
+          "value": "天梁",
+          "scope": {
+            "layer": "本命",
+            "palace": "财帛"
+          },
+          "derivedFrom": [
+            "palaces.stars"
+          ]
+        },
+        {
+          "key": "ziwei_star",
+          "value": "擎羊",
+          "scope": {
+            "layer": "本命",
+            "palace": "财帛"
+          },
+          "derivedFrom": [
+            "palaces.minor"
+          ]
+        },
+        {
+          "key": "ziwei_star",
+          "value": "龙池",
+          "scope": {
+            "layer": "本命",
+            "palace": "财帛"
+          },
+          "derivedFrom": [
+            "palaces.adjective"
+          ]
+        },
+        {
+          "key": "ziwei_star",
+          "value": "凤阁",
+          "scope": {
+            "layer": "本命",
+            "palace": "财帛"
+          },
+          "derivedFrom": [
+            "palaces.adjective"
+          ]
+        },
+        {
+          "key": "ziwei_star",
+          "value": "台辅",
+          "scope": {
+            "layer": "本命",
+            "palace": "财帛"
+          },
+          "derivedFrom": [
+            "palaces.adjective"
+          ]
+        },
+        {
+          "key": "ziwei_star",
+          "value": "华盖",
+          "scope": {
+            "layer": "本命",
+            "palace": "财帛"
+          },
+          "derivedFrom": [
+            "palaces.adjective"
+          ]
+        },
+        {
+          "key": "ziwei_star",
+          "value": "天刑",
+          "scope": {
+            "layer": "本命",
+            "palace": "财帛"
+          },
+          "derivedFrom": [
+            "palaces.adjective"
+          ]
+        },
+        {
+          "key": "ziwei_star",
+          "value": "年解",
+          "scope": {
+            "layer": "本命",
+            "palace": "财帛"
+          },
+          "derivedFrom": [
+            "palaces.adjective"
+          ]
+        },
+        {
+          "key": "ziwei_palace",
+          "value": "疾厄",
+          "scope": {
+            "layer": "本命",
+            "palace": "疾厄"
+          },
+          "derivedFrom": [
+            "palaces.name"
+          ]
+        },
+        {
+          "key": "ziwei_star",
+          "value": "廉贞",
+          "scope": {
+            "layer": "本命",
+            "palace": "疾厄"
+          },
+          "derivedFrom": [
+            "palaces.stars"
+          ]
+        },
+        {
+          "key": "ziwei_star",
+          "value": "天相",
+          "scope": {
+            "layer": "本命",
+            "palace": "疾厄"
+          },
+          "derivedFrom": [
+            "palaces.stars"
+          ]
+        },
+        {
+          "key": "ziwei_star",
+          "value": "禄存",
+          "scope": {
+            "layer": "本命",
+            "palace": "疾厄"
+          },
+          "derivedFrom": [
+            "palaces.minor"
+          ]
+        },
+        {
+          "key": "ziwei_star",
+          "value": "天喜",
+          "scope": {
+            "layer": "本命",
+            "palace": "疾厄"
+          },
+          "derivedFrom": [
+            "palaces.adjective"
+          ]
+        },
+        {
+          "key": "ziwei_star",
+          "value": "解神",
+          "scope": {
+            "layer": "本命",
+            "palace": "疾厄"
+          },
+          "derivedFrom": [
+            "palaces.adjective"
+          ]
+        },
+        {
+          "key": "ziwei_star",
+          "value": "阴煞",
+          "scope": {
+            "layer": "本命",
+            "palace": "疾厄"
+          },
+          "derivedFrom": [
+            "palaces.adjective"
+          ]
+        },
+        {
+          "key": "ziwei_star",
+          "value": "天使",
+          "scope": {
+            "layer": "本命",
+            "palace": "疾厄"
+          },
+          "derivedFrom": [
+            "palaces.adjective"
+          ]
+        },
+        {
+          "key": "ziwei_palace",
+          "value": "迁移",
+          "scope": {
+            "layer": "本命",
+            "palace": "迁移"
+          },
+          "derivedFrom": [
+            "palaces.name"
+          ]
+        },
+        {
+          "key": "ziwei_star",
+          "value": "巨门",
+          "scope": {
+            "layer": "本命",
+            "palace": "迁移"
+          },
+          "derivedFrom": [
+            "palaces.stars"
+          ]
+        },
+        {
+          "key": "ziwei_star",
+          "value": "文曲",
+          "scope": {
+            "layer": "本命",
+            "palace": "迁移"
+          },
+          "derivedFrom": [
+            "palaces.minor"
+          ]
+        },
+        {
+          "key": "ziwei_star",
+          "value": "天马",
+          "scope": {
+            "layer": "本命",
+            "palace": "迁移"
+          },
+          "derivedFrom": [
+            "palaces.minor"
+          ]
+        },
+        {
+          "key": "ziwei_star",
+          "value": "陀罗",
+          "scope": {
+            "layer": "本命",
+            "palace": "迁移"
+          },
+          "derivedFrom": [
+            "palaces.minor"
+          ]
+        },
+        {
+          "key": "ziwei_star",
+          "value": "天厨",
+          "scope": {
+            "layer": "本命",
+            "palace": "迁移"
+          },
+          "derivedFrom": [
+            "palaces.adjective"
+          ]
+        },
+        {
+          "key": "ziwei_star",
+          "value": "孤辰",
+          "scope": {
+            "layer": "本命",
+            "palace": "迁移"
+          },
+          "derivedFrom": [
+            "palaces.adjective"
+          ]
+        },
+        {
+          "key": "ziwei_star",
+          "value": "蜚廉",
+          "scope": {
+            "layer": "本命",
+            "palace": "迁移"
+          },
+          "derivedFrom": [
+            "palaces.adjective"
+          ]
+        },
+        {
+          "key": "ziwei_star",
+          "value": "破碎",
+          "scope": {
+            "layer": "本命",
+            "palace": "迁移"
+          },
+          "derivedFrom": [
+            "palaces.adjective"
+          ]
+        },
+        {
+          "key": "sihua",
+          "value": "化忌",
+          "scope": {
+            "layer": "本命",
+            "palace": "迁移"
+          },
+          "derivedFrom": [
+            "palaces.hua"
+          ]
+        },
+        {
+          "key": "ziwei_palace",
+          "value": "交友",
+          "scope": {
+            "layer": "本命",
+            "palace": "交友"
+          },
+          "derivedFrom": [
+            "palaces.name"
+          ]
+        },
+        {
+          "key": "ziwei_star",
+          "value": "贪狼",
+          "scope": {
+            "layer": "本命",
+            "palace": "交友"
+          },
+          "derivedFrom": [
+            "palaces.stars"
+          ]
+        },
+        {
+          "key": "ziwei_star",
+          "value": "天贵",
+          "scope": {
+            "layer": "本命",
+            "palace": "交友"
+          },
+          "derivedFrom": [
+            "palaces.adjective"
+          ]
+        },
+        {
+          "key": "ziwei_star",
+          "value": "天寿",
+          "scope": {
+            "layer": "本命",
+            "palace": "交友"
+          },
+          "derivedFrom": [
+            "palaces.adjective"
+          ]
+        },
+        {
+          "key": "ziwei_star",
+          "value": "天空",
+          "scope": {
+            "layer": "本命",
+            "palace": "交友"
+          },
+          "derivedFrom": [
+            "palaces.adjective"
+          ]
+        },
+        {
+          "key": "ziwei_star",
+          "value": "天伤",
+          "scope": {
+            "layer": "本命",
+            "palace": "交友"
+          },
+          "derivedFrom": [
+            "palaces.adjective"
+          ]
+        },
+        {
+          "key": "ziwei_palace",
+          "value": "事业",
+          "scope": {
+            "layer": "本命",
+            "palace": "事业"
+          },
+          "derivedFrom": [
+            "palaces.name"
+          ]
+        },
+        {
+          "key": "ziwei_star",
+          "value": "太阴",
+          "scope": {
+            "layer": "本命",
+            "palace": "事业"
+          },
+          "derivedFrom": [
+            "palaces.stars"
+          ]
+        },
+        {
+          "key": "ziwei_star",
+          "value": "封诰",
+          "scope": {
+            "layer": "本命",
+            "palace": "事业"
+          },
+          "derivedFrom": [
+            "palaces.adjective"
+          ]
+        },
+        {
+          "key": "ziwei_star",
+          "value": "空亡",
+          "scope": {
+            "layer": "本命",
+            "palace": "事业"
+          },
+          "derivedFrom": [
+            "palaces.adjective"
+          ]
+        },
+        {
+          "key": "ziwei_star",
+          "value": "天哭",
+          "scope": {
+            "layer": "本命",
+            "palace": "事业"
+          },
+          "derivedFrom": [
+            "palaces.adjective"
+          ]
+        },
+        {
+          "key": "sihua",
+          "value": "化禄",
+          "scope": {
+            "layer": "本命",
+            "palace": "事业"
+          },
+          "derivedFrom": [
+            "palaces.hua"
+          ]
+        },
+        {
+          "key": "ziwei_palace",
+          "value": "田宅",
+          "scope": {
+            "layer": "本命",
+            "palace": "田宅"
+          },
+          "derivedFrom": [
+            "palaces.name"
+          ]
+        },
+        {
+          "key": "ziwei_star",
+          "value": "紫微",
+          "scope": {
+            "layer": "本命",
+            "palace": "田宅"
+          },
+          "derivedFrom": [
+            "palaces.stars"
+          ]
+        },
+        {
+          "key": "ziwei_star",
+          "value": "天府",
+          "scope": {
+            "layer": "本命",
+            "palace": "田宅"
+          },
+          "derivedFrom": [
+            "palaces.stars"
+          ]
+        },
+        {
+          "key": "ziwei_star",
+          "value": "左辅",
+          "scope": {
+            "layer": "本命",
+            "palace": "田宅"
+          },
+          "derivedFrom": [
+            "palaces.minor"
+          ]
+        },
+        {
+          "key": "ziwei_star",
+          "value": "三台",
+          "scope": {
+            "layer": "本命",
+            "palace": "田宅"
+          },
+          "derivedFrom": [
+            "palaces.adjective"
+          ]
+        },
+        {
+          "key": "ziwei_star",
+          "value": "天才",
+          "scope": {
+            "layer": "本命",
+            "palace": "田宅"
+          },
+          "derivedFrom": [
+            "palaces.adjective"
+          ]
+        },
+        {
+          "key": "ziwei_star",
+          "value": "天巫",
+          "scope": {
+            "layer": "本命",
+            "palace": "田宅"
+          },
+          "derivedFrom": [
+            "palaces.adjective"
+          ]
+        },
+        {
+          "key": "ziwei_star",
+          "value": "天官",
+          "scope": {
+            "layer": "本命",
+            "palace": "田宅"
+          },
+          "derivedFrom": [
+            "palaces.adjective"
+          ]
+        },
+        {
+          "key": "ziwei_star",
+          "value": "截路",
+          "scope": {
+            "layer": "本命",
+            "palace": "田宅"
+          },
+          "derivedFrom": [
+            "palaces.adjective"
+          ]
+        },
+        {
+          "key": "ziwei_palace",
+          "value": "福德",
+          "scope": {
+            "layer": "本命",
+            "palace": "福德"
+          },
+          "derivedFrom": [
+            "palaces.name"
+          ]
+        },
+        {
+          "key": "ziwei_palace",
+          "value": "身宫",
+          "scope": {
+            "layer": "本命",
+            "palace": "福德"
+          },
+          "derivedFrom": [
+            "palaces.isBody"
+          ]
+        },
+        {
+          "key": "ziwei_star",
+          "value": "天机",
+          "scope": {
+            "layer": "本命",
+            "palace": "福德"
+          },
+          "derivedFrom": [
+            "palaces.stars"
+          ]
+        },
+        {
+          "key": "ziwei_star",
+          "value": "寡宿",
+          "scope": {
+            "layer": "本命",
+            "palace": "福德"
+          },
+          "derivedFrom": [
+            "palaces.adjective"
+          ]
+        },
+        {
+          "key": "sihua",
+          "value": "化科",
+          "scope": {
+            "layer": "本命",
+            "palace": "福德"
+          },
+          "derivedFrom": [
+            "palaces.hua"
+          ]
+        },
+        {
+          "key": "ziwei_palace",
+          "value": "父母",
+          "scope": {
+            "layer": "本命",
+            "palace": "父母"
+          },
+          "derivedFrom": [
+            "palaces.name"
+          ]
+        },
+        {
+          "key": "ziwei_star",
+          "value": "破军",
+          "scope": {
+            "layer": "本命",
+            "palace": "父母"
+          },
+          "derivedFrom": [
+            "palaces.stars"
+          ]
+        },
+        {
+          "key": "ziwei_star",
+          "value": "右弼",
+          "scope": {
+            "layer": "本命",
+            "palace": "父母"
+          },
+          "derivedFrom": [
+            "palaces.minor"
+          ]
+        },
+        {
+          "key": "ziwei_star",
+          "value": "地劫",
+          "scope": {
+            "layer": "本命",
+            "palace": "父母"
+          },
+          "derivedFrom": [
+            "palaces.minor"
+          ]
+        },
+        {
+          "key": "ziwei_star",
+          "value": "红鸾",
+          "scope": {
+            "layer": "本命",
+            "palace": "父母"
+          },
+          "derivedFrom": [
+            "palaces.adjective"
+          ]
+        },
+        {
+          "key": "ziwei_star",
+          "value": "咸池",
+          "scope": {
+            "layer": "本命",
+            "palace": "父母"
+          },
+          "derivedFrom": [
+            "palaces.adjective"
+          ]
+        },
+        {
+          "key": "ziwei_star",
+          "value": "八座",
+          "scope": {
+            "layer": "本命",
+            "palace": "父母"
+          },
+          "derivedFrom": [
+            "palaces.adjective"
+          ]
+        },
+        {
+          "key": "ziwei_star",
+          "value": "天德",
+          "scope": {
+            "layer": "本命",
+            "palace": "父母"
+          },
+          "derivedFrom": [
+            "palaces.adjective"
+          ]
+        },
+        {
+          "key": "daxian",
+          "value": "子女",
+          "scope": {
+            "layer": "大运",
+            "palace": "子女"
+          },
+          "derivedFrom": [
+            "decadal"
+          ]
+        },
+        {
+          "key": "liunian_taisui",
+          "value": "午",
+          "scope": {
+            "layer": "流年"
+          },
+          "derivedFrom": [
+            "transit.viewYear"
           ]
         }
       ]
@@ -11557,7 +14402,7 @@
         }
       ]
     },
-    "caseD": {
+    "cov1_qimen_1": {
       "label": "覆盖·奇门 1993-6-1 7:20 男（演示 7 条）",
       "facts": [
         {
@@ -12194,7 +15039,7 @@
         }
       ]
     },
-    "caseE": {
+    "cov1_qimen_2": {
       "label": "覆盖·奇门 1988-5-1 1:20 男（演示 5 条）",
       "facts": [
         {
@@ -12851,7 +15696,7 @@
         }
       ]
     },
-    "caseF": {
+    "cov1_qimen_3": {
       "label": "覆盖·奇门 1990-6-7 1:20 男（演示 3 条）",
       "facts": [
         {
@@ -13488,7 +16333,7 @@
         }
       ]
     },
-    "caseG": {
+    "cov1_qimen_4": {
       "label": "覆盖·奇门 1988-1-7 7:20 男（演示 2 条）",
       "facts": [
         {
@@ -18437,6 +21282,815 @@
         },
         {
           "key": "shiyao",
+          "value": "六爻",
+          "scope": {
+            "layer": "本命",
+            "yao": 6
+          },
+          "derivedFrom": [
+            "rows.mark"
+          ]
+        }
+      ]
+    },
+    "cov2_liuyao_1": {
+      "label": "覆盖2·六爻 1988-2-19 000111（演示 2 条）",
+      "facts": [
+        {
+          "key": "liuyao_seq",
+          "value": "三世",
+          "scope": {
+            "layer": "本命"
+          },
+          "derivedFrom": [
+            "main.sequence"
+          ]
+        },
+        {
+          "key": "liuyao_yongshen",
+          "value": "妻财",
+          "scope": {
+            "layer": "本命"
+          },
+          "derivedFrom": [
+            "analysis.use.requested"
+          ]
+        },
+        {
+          "key": "liuqin",
+          "value": "父母",
+          "scope": {
+            "layer": "本命",
+            "yao": 1
+          },
+          "derivedFrom": [
+            "rows.relative"
+          ]
+        },
+        {
+          "key": "liushen",
+          "value": "青龙",
+          "scope": {
+            "layer": "本命",
+            "yao": 1
+          },
+          "derivedFrom": [
+            "rows.spirit"
+          ]
+        },
+        {
+          "key": "yao_zhi",
+          "value": "未",
+          "scope": {
+            "layer": "本命",
+            "yao": 1
+          },
+          "derivedFrom": [
+            "rows.ganzhi"
+          ]
+        },
+        {
+          "key": "liuyao_month_strength",
+          "value": "休囚",
+          "scope": {
+            "layer": "本命",
+            "yao": 1
+          },
+          "derivedFrom": [
+            "state.monthStrength"
+          ]
+        },
+        {
+          "key": "liuyao_activity",
+          "value": "静",
+          "scope": {
+            "layer": "本命",
+            "yao": 1
+          },
+          "derivedFrom": [
+            "state.activity.label"
+          ]
+        },
+        {
+          "key": "fushen",
+          "value": "子孙",
+          "scope": {
+            "layer": "本命",
+            "yao": 1
+          },
+          "derivedFrom": [
+            "rows.hidden"
+          ]
+        },
+        {
+          "key": "liuqin",
+          "value": "官鬼",
+          "scope": {
+            "layer": "本命",
+            "yao": 2
+          },
+          "derivedFrom": [
+            "rows.relative"
+          ]
+        },
+        {
+          "key": "liushen",
+          "value": "朱雀",
+          "scope": {
+            "layer": "本命",
+            "yao": 2
+          },
+          "derivedFrom": [
+            "rows.spirit"
+          ]
+        },
+        {
+          "key": "yao_zhi",
+          "value": "巳",
+          "scope": {
+            "layer": "本命",
+            "yao": 2
+          },
+          "derivedFrom": [
+            "rows.ganzhi"
+          ]
+        },
+        {
+          "key": "liuyao_month_strength",
+          "value": "相",
+          "scope": {
+            "layer": "本命",
+            "yao": 2
+          },
+          "derivedFrom": [
+            "state.monthStrength"
+          ]
+        },
+        {
+          "key": "liuyao_activity",
+          "value": "静",
+          "scope": {
+            "layer": "本命",
+            "yao": 2
+          },
+          "derivedFrom": [
+            "state.activity.label"
+          ]
+        },
+        {
+          "key": "liuqin",
+          "value": "妻财",
+          "scope": {
+            "layer": "本命",
+            "yao": 3
+          },
+          "derivedFrom": [
+            "rows.relative"
+          ]
+        },
+        {
+          "key": "liushen",
+          "value": "勾陈",
+          "scope": {
+            "layer": "本命",
+            "yao": 3
+          },
+          "derivedFrom": [
+            "rows.spirit"
+          ]
+        },
+        {
+          "key": "yao_zhi",
+          "value": "卯",
+          "scope": {
+            "layer": "本命",
+            "yao": 3
+          },
+          "derivedFrom": [
+            "rows.ganzhi"
+          ]
+        },
+        {
+          "key": "liuyao_month_strength",
+          "value": "旺",
+          "scope": {
+            "layer": "本命",
+            "yao": 3
+          },
+          "derivedFrom": [
+            "state.monthStrength"
+          ]
+        },
+        {
+          "key": "liuyao_activity",
+          "value": "静",
+          "scope": {
+            "layer": "本命",
+            "yao": 3
+          },
+          "derivedFrom": [
+            "state.activity.label"
+          ]
+        },
+        {
+          "key": "liuyao_kong",
+          "value": "空",
+          "scope": {
+            "layer": "本命",
+            "yao": 3
+          },
+          "derivedFrom": [
+            "state.kong"
+          ]
+        },
+        {
+          "key": "shiyao",
+          "value": "三爻",
+          "scope": {
+            "layer": "本命",
+            "yao": 3
+          },
+          "derivedFrom": [
+            "rows.mark"
+          ]
+        },
+        {
+          "key": "liuqin",
+          "value": "官鬼",
+          "scope": {
+            "layer": "本命",
+            "yao": 4
+          },
+          "derivedFrom": [
+            "rows.relative"
+          ]
+        },
+        {
+          "key": "liushen",
+          "value": "腾蛇",
+          "scope": {
+            "layer": "本命",
+            "yao": 4
+          },
+          "derivedFrom": [
+            "rows.spirit"
+          ]
+        },
+        {
+          "key": "yao_zhi",
+          "value": "午",
+          "scope": {
+            "layer": "本命",
+            "yao": 4
+          },
+          "derivedFrom": [
+            "rows.ganzhi"
+          ]
+        },
+        {
+          "key": "liuyao_month_strength",
+          "value": "相",
+          "scope": {
+            "layer": "本命",
+            "yao": 4
+          },
+          "derivedFrom": [
+            "state.monthStrength"
+          ]
+        },
+        {
+          "key": "liuyao_activity",
+          "value": "静",
+          "scope": {
+            "layer": "本命",
+            "yao": 4
+          },
+          "derivedFrom": [
+            "state.activity.label"
+          ]
+        },
+        {
+          "key": "liuqin",
+          "value": "兄弟",
+          "scope": {
+            "layer": "本命",
+            "yao": 5
+          },
+          "derivedFrom": [
+            "rows.relative"
+          ]
+        },
+        {
+          "key": "liushen",
+          "value": "白虎",
+          "scope": {
+            "layer": "本命",
+            "yao": 5
+          },
+          "derivedFrom": [
+            "rows.spirit"
+          ]
+        },
+        {
+          "key": "yao_zhi",
+          "value": "申",
+          "scope": {
+            "layer": "本命",
+            "yao": 5
+          },
+          "derivedFrom": [
+            "rows.ganzhi"
+          ]
+        },
+        {
+          "key": "liuyao_month_strength",
+          "value": "月破",
+          "scope": {
+            "layer": "本命",
+            "yao": 5
+          },
+          "derivedFrom": [
+            "state.monthStrength"
+          ]
+        },
+        {
+          "key": "liuyao_activity",
+          "value": "静",
+          "scope": {
+            "layer": "本命",
+            "yao": 5
+          },
+          "derivedFrom": [
+            "state.activity.label"
+          ]
+        },
+        {
+          "key": "liuqin",
+          "value": "父母",
+          "scope": {
+            "layer": "本命",
+            "yao": 6
+          },
+          "derivedFrom": [
+            "rows.relative"
+          ]
+        },
+        {
+          "key": "liushen",
+          "value": "玄武",
+          "scope": {
+            "layer": "本命",
+            "yao": 6
+          },
+          "derivedFrom": [
+            "rows.spirit"
+          ]
+        },
+        {
+          "key": "yao_zhi",
+          "value": "戌",
+          "scope": {
+            "layer": "本命",
+            "yao": 6
+          },
+          "derivedFrom": [
+            "rows.ganzhi"
+          ]
+        },
+        {
+          "key": "liuyao_month_strength",
+          "value": "休囚",
+          "scope": {
+            "layer": "本命",
+            "yao": 6
+          },
+          "derivedFrom": [
+            "state.monthStrength"
+          ]
+        },
+        {
+          "key": "liuyao_activity",
+          "value": "日冲待辨",
+          "scope": {
+            "layer": "本命",
+            "yao": 6
+          },
+          "derivedFrom": [
+            "state.activity.label"
+          ]
+        },
+        {
+          "key": "yingyao",
+          "value": "六爻",
+          "scope": {
+            "layer": "本命",
+            "yao": 6
+          },
+          "derivedFrom": [
+            "rows.mark"
+          ]
+        }
+      ]
+    },
+    "cov2_liuyao_2": {
+      "label": "覆盖2·六爻 1988-1-1 101010（演示 1 条）",
+      "facts": [
+        {
+          "key": "liuyao_seq",
+          "value": "三世",
+          "scope": {
+            "layer": "本命"
+          },
+          "derivedFrom": [
+            "main.sequence"
+          ]
+        },
+        {
+          "key": "liuyao_yongshen",
+          "value": "妻财",
+          "scope": {
+            "layer": "本命"
+          },
+          "derivedFrom": [
+            "analysis.use.requested"
+          ]
+        },
+        {
+          "key": "liuqin",
+          "value": "子孙",
+          "scope": {
+            "layer": "本命",
+            "yao": 1
+          },
+          "derivedFrom": [
+            "rows.relative"
+          ]
+        },
+        {
+          "key": "liushen",
+          "value": "青龙",
+          "scope": {
+            "layer": "本命",
+            "yao": 1
+          },
+          "derivedFrom": [
+            "rows.spirit"
+          ]
+        },
+        {
+          "key": "yao_zhi",
+          "value": "卯",
+          "scope": {
+            "layer": "本命",
+            "yao": 1
+          },
+          "derivedFrom": [
+            "rows.ganzhi"
+          ]
+        },
+        {
+          "key": "liuyao_month_strength",
+          "value": "相",
+          "scope": {
+            "layer": "本命",
+            "yao": 1
+          },
+          "derivedFrom": [
+            "state.monthStrength"
+          ]
+        },
+        {
+          "key": "liuyao_activity",
+          "value": "静",
+          "scope": {
+            "layer": "本命",
+            "yao": 1
+          },
+          "derivedFrom": [
+            "state.activity.label"
+          ]
+        },
+        {
+          "key": "liuqin",
+          "value": "官鬼",
+          "scope": {
+            "layer": "本命",
+            "yao": 2
+          },
+          "derivedFrom": [
+            "rows.relative"
+          ]
+        },
+        {
+          "key": "liushen",
+          "value": "朱雀",
+          "scope": {
+            "layer": "本命",
+            "yao": 2
+          },
+          "derivedFrom": [
+            "rows.spirit"
+          ]
+        },
+        {
+          "key": "yao_zhi",
+          "value": "丑",
+          "scope": {
+            "layer": "本命",
+            "yao": 2
+          },
+          "derivedFrom": [
+            "rows.ganzhi"
+          ]
+        },
+        {
+          "key": "liuyao_month_strength",
+          "value": "休囚",
+          "scope": {
+            "layer": "本命",
+            "yao": 2
+          },
+          "derivedFrom": [
+            "state.monthStrength"
+          ]
+        },
+        {
+          "key": "liuyao_activity",
+          "value": "静",
+          "scope": {
+            "layer": "本命",
+            "yao": 2
+          },
+          "derivedFrom": [
+            "state.activity.label"
+          ]
+        },
+        {
+          "key": "liuyao_kong",
+          "value": "空",
+          "scope": {
+            "layer": "本命",
+            "yao": 2
+          },
+          "derivedFrom": [
+            "state.kong"
+          ]
+        },
+        {
+          "key": "liuqin",
+          "value": "兄弟",
+          "scope": {
+            "layer": "本命",
+            "yao": 3
+          },
+          "derivedFrom": [
+            "rows.relative"
+          ]
+        },
+        {
+          "key": "liushen",
+          "value": "勾陈",
+          "scope": {
+            "layer": "本命",
+            "yao": 3
+          },
+          "derivedFrom": [
+            "rows.spirit"
+          ]
+        },
+        {
+          "key": "yao_zhi",
+          "value": "亥",
+          "scope": {
+            "layer": "本命",
+            "yao": 3
+          },
+          "derivedFrom": [
+            "rows.ganzhi"
+          ]
+        },
+        {
+          "key": "liuyao_month_strength",
+          "value": "旺",
+          "scope": {
+            "layer": "本命",
+            "yao": 3
+          },
+          "derivedFrom": [
+            "state.monthStrength"
+          ]
+        },
+        {
+          "key": "liuyao_activity",
+          "value": "静",
+          "scope": {
+            "layer": "本命",
+            "yao": 3
+          },
+          "derivedFrom": [
+            "state.activity.label"
+          ]
+        },
+        {
+          "key": "shiyao",
+          "value": "三爻",
+          "scope": {
+            "layer": "本命",
+            "yao": 3
+          },
+          "derivedFrom": [
+            "rows.mark"
+          ]
+        },
+        {
+          "key": "fushen",
+          "value": "妻财",
+          "scope": {
+            "layer": "本命",
+            "yao": 3
+          },
+          "derivedFrom": [
+            "rows.hidden"
+          ]
+        },
+        {
+          "key": "liuqin",
+          "value": "父母",
+          "scope": {
+            "layer": "本命",
+            "yao": 4
+          },
+          "derivedFrom": [
+            "rows.relative"
+          ]
+        },
+        {
+          "key": "liushen",
+          "value": "腾蛇",
+          "scope": {
+            "layer": "本命",
+            "yao": 4
+          },
+          "derivedFrom": [
+            "rows.spirit"
+          ]
+        },
+        {
+          "key": "yao_zhi",
+          "value": "申",
+          "scope": {
+            "layer": "本命",
+            "yao": 4
+          },
+          "derivedFrom": [
+            "rows.ganzhi"
+          ]
+        },
+        {
+          "key": "liuyao_month_strength",
+          "value": "休囚",
+          "scope": {
+            "layer": "本命",
+            "yao": 4
+          },
+          "derivedFrom": [
+            "state.monthStrength"
+          ]
+        },
+        {
+          "key": "liuyao_activity",
+          "value": "静",
+          "scope": {
+            "layer": "本命",
+            "yao": 4
+          },
+          "derivedFrom": [
+            "state.activity.label"
+          ]
+        },
+        {
+          "key": "liuqin",
+          "value": "官鬼",
+          "scope": {
+            "layer": "本命",
+            "yao": 5
+          },
+          "derivedFrom": [
+            "rows.relative"
+          ]
+        },
+        {
+          "key": "liushen",
+          "value": "白虎",
+          "scope": {
+            "layer": "本命",
+            "yao": 5
+          },
+          "derivedFrom": [
+            "rows.spirit"
+          ]
+        },
+        {
+          "key": "yao_zhi",
+          "value": "戌",
+          "scope": {
+            "layer": "本命",
+            "yao": 5
+          },
+          "derivedFrom": [
+            "rows.ganzhi"
+          ]
+        },
+        {
+          "key": "liuyao_month_strength",
+          "value": "休囚",
+          "scope": {
+            "layer": "本命",
+            "yao": 5
+          },
+          "derivedFrom": [
+            "state.monthStrength"
+          ]
+        },
+        {
+          "key": "liuyao_activity",
+          "value": "静",
+          "scope": {
+            "layer": "本命",
+            "yao": 5
+          },
+          "derivedFrom": [
+            "state.activity.label"
+          ]
+        },
+        {
+          "key": "liuqin",
+          "value": "兄弟",
+          "scope": {
+            "layer": "本命",
+            "yao": 6
+          },
+          "derivedFrom": [
+            "rows.relative"
+          ]
+        },
+        {
+          "key": "liushen",
+          "value": "玄武",
+          "scope": {
+            "layer": "本命",
+            "yao": 6
+          },
+          "derivedFrom": [
+            "rows.spirit"
+          ]
+        },
+        {
+          "key": "yao_zhi",
+          "value": "子",
+          "scope": {
+            "layer": "本命",
+            "yao": 6
+          },
+          "derivedFrom": [
+            "rows.ganzhi"
+          ]
+        },
+        {
+          "key": "liuyao_month_strength",
+          "value": "临月",
+          "scope": {
+            "layer": "本命",
+            "yao": 6
+          },
+          "derivedFrom": [
+            "state.monthStrength"
+          ]
+        },
+        {
+          "key": "liuyao_activity",
+          "value": "静",
+          "scope": {
+            "layer": "本命",
+            "yao": 6
+          },
+          "derivedFrom": [
+            "state.activity.label"
+          ]
+        },
+        {
+          "key": "liuyao_kong",
+          "value": "空",
+          "scope": {
+            "layer": "本命",
+            "yao": 6
+          },
+          "derivedFrom": [
+            "state.kong"
+          ]
+        },
+        {
+          "key": "yingyao",
           "value": "六爻",
           "scope": {
             "layer": "本命",

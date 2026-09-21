@@ -1,0 +1,268 @@
+{
+ "report": "验证深度：口径内已映射规则在本术样盘上的三态分布",
+ "generated_by": "t198",
+ "method": "对每条『带锚 + 有谓词』的规则，在本术**全部**样盘上求值并归类；样盘取自 tools/reports/facts-sample.json。",
+ "per_art": {
+  "bazi": {
+   "有满足样本": 187,
+   "全不满足": 37
+  },
+  "liuyao": {
+   "有满足样本": 28
+  },
+  "liuren": {
+   "有满足样本": 17
+  },
+  "qimen": {
+   "有满足样本": 36
+  },
+  "qizheng": {
+   "有满足样本": 11
+  },
+  "ziwei": {
+   "有满足样本": 62,
+   "全不满足": 1
+  }
+ },
+ "total": {
+  "有满足样本": 341,
+  "全不满足": 38
+ },
+ "mapped": 379,
+ "demonstrated": 341,
+ "undemonstrated": 38,
+ "undemonstrated_by_why": {
+  "catalogue-by-value": 37,
+  "other-or-condition-specific": 1
+ },
+ "entries": [
+  {
+   "art": "bazi",
+   "rule_id": "LIXUZHONGMIN-LX-01",
+   "kind": "全不满足",
+   "why": "catalogue-by-value"
+  },
+  {
+   "art": "bazi",
+   "rule_id": "LIXUZHONGMIN-008",
+   "kind": "全不满足",
+   "why": "catalogue-by-value"
+  },
+  {
+   "art": "bazi",
+   "rule_id": "LIXUZHONGMIN-009",
+   "kind": "全不满足",
+   "why": "catalogue-by-value"
+  },
+  {
+   "art": "bazi",
+   "rule_id": "LIXUZHONGMIN-010",
+   "kind": "全不满足",
+   "why": "catalogue-by-value"
+  },
+  {
+   "art": "bazi",
+   "rule_id": "LIXUZHONGMIN-011",
+   "kind": "全不满足",
+   "why": "catalogue-by-value"
+  },
+  {
+   "art": "bazi",
+   "rule_id": "LIXUZHONGMIN-012",
+   "kind": "全不满足",
+   "why": "catalogue-by-value"
+  },
+  {
+   "art": "bazi",
+   "rule_id": "LIXUZHONGMIN-015",
+   "kind": "全不满足",
+   "why": "catalogue-by-value"
+  },
+  {
+   "art": "bazi",
+   "rule_id": "LIXUZHONGMIN-016",
+   "kind": "全不满足",
+   "why": "catalogue-by-value"
+  },
+  {
+   "art": "bazi",
+   "rule_id": "LIXUZHONGMIN-017",
+   "kind": "全不满足",
+   "why": "catalogue-by-value"
+  },
+  {
+   "art": "bazi",
+   "rule_id": "LIXUZHONGMIN-018",
+   "kind": "全不满足",
+   "why": "catalogue-by-value"
+  },
+  {
+   "art": "bazi",
+   "rule_id": "LIXUZHONGMIN-019",
+   "kind": "全不满足",
+   "why": "catalogue-by-value"
+  },
+  {
+   "art": "bazi",
+   "rule_id": "LIXUZHONGMIN-020",
+   "kind": "全不满足",
+   "why": "catalogue-by-value"
+  },
+  {
+   "art": "bazi",
+   "rule_id": "LIXUZHONGMIN-022",
+   "kind": "全不满足",
+   "why": "catalogue-by-value"
+  },
+  {
+   "art": "bazi",
+   "rule_id": "LIXUZHONGMIN-024",
+   "kind": "全不满足",
+   "why": "catalogue-by-value"
+  },
+  {
+   "art": "bazi",
+   "rule_id": "LIXUZHONGMIN-025",
+   "kind": "全不满足",
+   "why": "catalogue-by-value"
+  },
+  {
+   "art": "bazi",
+   "rule_id": "LIXUZHONGMIN-027",
+   "kind": "全不满足",
+   "why": "catalogue-by-value"
+  },
+  {
+   "art": "bazi",
+   "rule_id": "LIXUZHONGMIN-028",
+   "kind": "全不满足",
+   "why": "catalogue-by-value"
+  },
+  {
+   "art": "bazi",
+   "rule_id": "LIXUZHONGMIN-029",
+   "kind": "全不满足",
+   "why": "catalogue-by-value"
+  },
+  {
+   "art": "bazi",
+   "rule_id": "LIXUZHONGMIN-030",
+   "kind": "全不满足",
+   "why": "catalogue-by-value"
+  },
+  {
+   "art": "bazi",
+   "rule_id": "LIXUZHONGMIN-031",
+   "kind": "全不满足",
+   "why": "catalogue-by-value"
+  },
+  {
+   "art": "bazi",
+   "rule_id": "LIXUZHONGMIN-033",
+   "kind": "全不满足",
+   "why": "catalogue-by-value"
+  },
+  {
+   "art": "bazi",
+   "rule_id": "LIXUZHONGMIN-034",
+   "kind": "全不满足",
+   "why": "catalogue-by-value"
+  },
+  {
+   "art": "bazi",
+   "rule_id": "LIXUZHONGMIN-036",
+   "kind": "全不满足",
+   "why": "catalogue-by-value"
+  },
+  {
+   "art": "bazi",
+   "rule_id": "LIXUZHONGMIN-037",
+   "kind": "全不满足",
+   "why": "catalogue-by-value"
+  },
+  {
+   "art": "bazi",
+   "rule_id": "LIXUZHONGMIN-039",
+   "kind": "全不满足",
+   "why": "catalogue-by-value"
+  },
+  {
+   "art": "bazi",
+   "rule_id": "LIXUZHONGMIN-040",
+   "kind": "全不满足",
+   "why": "catalogue-by-value"
+  },
+  {
+   "art": "bazi",
+   "rule_id": "LIXUZHONGMIN-041",
+   "kind": "全不满足",
+   "why": "catalogue-by-value"
+  },
+  {
+   "art": "bazi",
+   "rule_id": "LIXUZHONGMIN-042",
+   "kind": "全不满足",
+   "why": "catalogue-by-value"
+  },
+  {
+   "art": "bazi",
+   "rule_id": "LIXUZHONGMIN-043",
+   "kind": "全不满足",
+   "why": "catalogue-by-value"
+  },
+  {
+   "art": "bazi",
+   "rule_id": "LIXUZHONGMIN-045",
+   "kind": "全不满足",
+   "why": "catalogue-by-value"
+  },
+  {
+   "art": "bazi",
+   "rule_id": "LIXUZHONGMIN-046",
+   "kind": "全不满足",
+   "why": "catalogue-by-value"
+  },
+  {
+   "art": "bazi",
+   "rule_id": "LIXUZHONGMIN-047",
+   "kind": "全不满足",
+   "why": "catalogue-by-value"
+  },
+  {
+   "art": "bazi",
+   "rule_id": "LIXUZHONGMIN-048",
+   "kind": "全不满足",
+   "why": "catalogue-by-value"
+  },
+  {
+   "art": "bazi",
+   "rule_id": "LIXUZHONGMIN-055",
+   "kind": "全不满足",
+   "why": "catalogue-by-value"
+  },
+  {
+   "art": "bazi",
+   "rule_id": "LIXUZHONGMIN-056",
+   "kind": "全不满足",
+   "why": "catalogue-by-value"
+  },
+  {
+   "art": "bazi",
+   "rule_id": "LIXUZHONGMIN-057",
+   "kind": "全不满足",
+   "why": "catalogue-by-value"
+  },
+  {
+   "art": "bazi",
+   "rule_id": "LIXUZHONGMIN-059",
+   "kind": "全不满足",
+   "why": "catalogue-by-value"
+  },
+  {
+   "art": "ziwei",
+   "rule_id": "TAIWEIFU-010",
+   "kind": "全不满足",
+   "why": "other-or-condition-specific"
+  }
+ ]
+}
