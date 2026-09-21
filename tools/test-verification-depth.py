@@ -59,9 +59,17 @@ def main() -> int:
         sum(r["undemonstrated_by_why"].values()),
         r["undemonstrated"],
     )
+    # 不钉具体条数（补样盘会让它下降，t199 就从 60 降到 41）——只钉「目录式仍是最大一类」。
+    # 钉死数字 = 把一条**会随施工变化的事实**当成不变量（t187 的教训）。
+    why = r["undemonstrated_by_why"]
     check(
-        "  目录式（六十甲子一类）占大头",
-        r["undemonstrated_by_why"].get("catalogue-by-value", 0) >= 50,
+        "  目录式仍是未被演示里的最大一类（不钉具体条数）",
+        max(why, key=lambda k: why[k]) == "catalogue-by-value",
+        True,
+    )
+    check(
+        "  未被演示占比已降到 20% 以下（t199 补样盘后）",
+        r["undemonstrated"] / r["mapped"] < 0.20,
         True,
     )
     check(

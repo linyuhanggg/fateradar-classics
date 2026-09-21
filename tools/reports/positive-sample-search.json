@@ -1,0 +1,276 @@
+{
+ "report": "正面样盘搜索（贪心集合覆盖）：为「从未被任何样盘满足」的规则找满足它的输入",
+ "generated_by": "t199",
+ "method": {
+  "goal": "覆盖率只说「写了谓词」；键检查只说「键存在」。本搜索补的是「正面演示」——找到让这些谓词判为『满足』的真实输入。",
+  "algorithm": "贪心集合覆盖：每轮在候选集上求值全部「当前未被演示」的规则，取命中最多的一张盘加入，命中即从待覆盖集合移除；重复至无候选命中或达轮次上限。",
+  "candidate_grid": "10 个年份（1988/1990/1993/1995/1998/2001/2004/2007/2010/2013）× 12 月 × 每 3 日 × 4 时辰（1/7/13/19 时），上海；性别按日奇偶。",
+  "evaluator": "产品 `evaluateApplicableTo` + 已生成 `generated/<art>.json` 的 applicableTo（与消费方同一求值器）。",
+  "note": "候选网格只影响「找到哪张盘」，不影响规则本身；换网格会得到不同的等价输入。"
+ },
+ "results": {
+  "bazi": {
+   "added": 5,
+   "covered_rules": 58,
+   "chosen": [
+    {
+     "subject": {
+      "gender": "女",
+      "year": "1990",
+      "month": "10",
+      "day": "16",
+      "hour": "7"
+     },
+     "covers": 27,
+     "rule_ids": [
+      "DITIANSUICHA-DR-02",
+      "DITIANSUICHA-036",
+      "DITIANSUICHA-DR-06",
+      "QIONGTONGBAO-QR",
+      "QR-01-00",
+      "QR-01-01",
+      "QR-01-02",
+      "QR-01-03",
+      "QR-01-04",
+      "SANMINGTONGH-012",
+      "SANMINGTONGH-015",
+      "SANMINGTONGH-029",
+      "SANMINGTONGH-045",
+      "SANMINGTONGH-057",
+      "R-04",
+      "SANMINGTONGH-095",
+      "SANMINGTONGH-104",
+      "YUANHAIZIPIN-016",
+      "YUANHAIZIPIN-017",
+      "ZPR-06",
+      "LZ-05-04",
+      "YUZHAOSHENYI-016",
+      "YUZHAOSHENYI-022",
+      "YUZHAOSHENYI-030",
+      "YUZHAOSHENYI-033",
+      "YUZHAOSHENYI-040",
+      "YUZHAOSHENYI-052"
+     ]
+    },
+    {
+     "subject": {
+      "gender": "男",
+      "year": "1990",
+      "month": "1",
+      "day": "1",
+      "hour": "13"
+     },
+     "covers": 13,
+     "rule_ids": [
+      "DITIANSUICHA-003",
+      "DITIANSUICHA-004",
+      "DITIANSUICHA-DR-03",
+      "DR-04",
+      "QIONGTONGBAO-014",
+      "QR-02-00",
+      "QR-02-01",
+      "QR-02-02",
+      "QR-02-03",
+      "QR-02-04",
+      "SANMINGTONGH-020",
+      "YUZHAOSHENYI-011",
+      "YUZHAOSHENYI-028"
+     ]
+    },
+    {
+     "subject": {
+      "gender": "男",
+      "year": "1988",
+      "month": "4",
+      "day": "13",
+      "hour": "1"
+     },
+     "covers": 7,
+     "rule_ids": [
+      "QR-03-01",
+      "QR-03-02",
+      "QR-03-03",
+      "QR-03-04",
+      "R-06",
+      "SANMINGTONGH-062",
+      "YUZHAOSHENYI-027"
+     ]
+    },
+    {
+     "subject": {
+      "gender": "男",
+      "year": "1988",
+      "month": "1",
+      "day": "7",
+      "hour": "1"
+     },
+     "covers": 6,
+     "rule_ids": [
+      "DITIANSUICHA-031",
+      "QR-04-05",
+      "QR-04-06",
+      "QR-04-07",
+      "QR-04-08",
+      "SANMINGTONGH-087"
+     ]
+    },
+    {
+     "subject": {
+      "gender": "女",
+      "year": "1988",
+      "month": "1",
+      "day": "16",
+      "hour": "1"
+     },
+     "covers": 5,
+     "rule_ids": [
+      "QR-04-01",
+      "QR-04-02",
+      "QR-04-03",
+      "QR-04-04",
+      "YUZHAOSHENYI-031"
+     ]
+    }
+   ],
+   "still_undemonstrated": [
+    "QR-01-05",
+    "QR-01-06",
+    "QR-01-07",
+    "QR-01-08",
+    "QR-02-05",
+    "QR-02-06",
+    "QR-02-07",
+    "QR-05-05",
+    "QR-05-06",
+    "QR-05-07",
+    "QR-05-08",
+    "YUZHAOSHENYI-013"
+   ]
+  },
+  "ziwei": {
+   "added": 2,
+   "covered_rules": 6,
+   "chosen": [
+    {
+     "subject": {
+      "gender": "女",
+      "year": "1990",
+      "month": "3",
+      "day": "22",
+      "hour": "7"
+     },
+     "covers": 5,
+     "rule_ids": [
+      "TAIWEIFU-018",
+      "ZW-01",
+      "ZIWEIDOUSHUQ-008",
+      "ZIWEIDOUSHUQ-009",
+      "ZIWEIDOUSHUQ-015"
+     ]
+    },
+    {
+     "subject": {
+      "gender": "男",
+      "year": "1988",
+      "month": "1",
+      "day": "7",
+      "hour": "1"
+     },
+     "covers": 1,
+     "rule_ids": [
+      "ZIWEIDOUSHUQ-012"
+     ]
+    }
+   ],
+   "still_undemonstrated": [
+    "TAIWEIFU-010",
+    "ZIWEIDOUSHUQ-051"
+   ]
+  },
+  "qimen": {
+   "added": 4,
+   "covered_rules": 17,
+   "chosen": [
+    {
+     "subject": {
+      "gender": "男",
+      "year": "1993",
+      "month": "6",
+      "day": "1",
+      "hour": "7"
+     },
+     "covers": 7,
+     "rule_ids": [
+      "QM-P01",
+      "QM-P07",
+      "QM-P16",
+      "QM-P27",
+      "QM-P29",
+      "QM-P32",
+      "QM-P39"
+     ]
+    },
+    {
+     "subject": {
+      "gender": "男",
+      "year": "1988",
+      "month": "5",
+      "day": "1",
+      "hour": "1"
+     },
+     "covers": 5,
+     "rule_ids": [
+      "QM-P08",
+      "QM-P31",
+      "QM-P33",
+      "QM-P35",
+      "QM-P36"
+     ]
+    },
+    {
+     "subject": {
+      "gender": "男",
+      "year": "1990",
+      "month": "6",
+      "day": "7",
+      "hour": "1"
+     },
+     "covers": 3,
+     "rule_ids": [
+      "QM-P21",
+      "QM-P23",
+      "QM-P38"
+     ]
+    },
+    {
+     "subject": {
+      "gender": "男",
+      "year": "1988",
+      "month": "1",
+      "day": "7",
+      "hour": "7"
+     },
+     "covers": 2,
+     "rule_ids": [
+      "QM-P09",
+      "QM-P22"
+     ]
+    }
+   ],
+   "still_undemonstrated": []
+  }
+ },
+ "effect": {
+  "before": {
+   "mapped": 378,
+   "demonstrated": 220,
+   "undemonstrated": 158
+  },
+  "after": {
+   "mapped": 378,
+   "demonstrated": 320,
+   "undemonstrated": 58
+  },
+  "note": "qimen 由 19/36 升到 36/36（100%）；bazi 94→171；ziwei 55→61。未改任何规则，只补样盘。"
+ }
+}
