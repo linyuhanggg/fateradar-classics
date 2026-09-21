@@ -114,6 +114,15 @@ FIELD_MAP: dict[str, tuple[str, dict | None, str]] = {
     # 任何构建成功的六爻盘都有六枚，且**只在该层存在时为真**，故判定是保守的。
     # 另一种读法（「引擎已算完结构分析」）在当下引擎上同样恒成立，故两种读法下 `exists` 同真。
     # 若人裁定为别的所指，需回改本条——台账 tools/reports/liuyao-structure-proposal.json 记着依据。
+    # t218：小六壬的起课输入与吉类计数（引擎产出，此前只在 meta 文本里）。
+    "xiaoliuren.hour.branch": ("xiaoliuren_hour_zhi", None, "占时地支；t218 起产出"),
+    "xiaoliuren.lunar.month": ("xiaoliuren_lunar_month", None, "农历月；t218 起产出"),
+    "xiaoliuren.lunar.day": ("xiaoliuren_lunar_day", None, "农历日；t218 起产出"),
+    "xiaoliuren.count.good": ("xiaoliuren_count_good", None, "三宫吉类计数（0–3）；t218 起产出"),
+    # t218：日干五行（逐柱产出，日柱那一枚）
+    "day.gan.element": ("gan_element", {"pillar": "day"}, "天干五行（日柱）；t218 起产出"),
+    # t215 的 meihua 事实已产出，但当时漏了把这条字段接上——t218 补。
+    "meihua.ti.element": ("meihua_ti_element", None, "体卦五行；t215 产出，t218 接上字段"),
     # t217：这六条是**直接对应**（字段名与引擎结构一一对得上），不涉推断。
     "liuyao.node.branch": ("yao_zhi", None, "本爻纳甲支；引擎 rows.ganzhi[1] 产出"),
     "liuyao.changed.branch": ("bian_yao_zhi", None, "变爻纳甲支（仅动爻）"),

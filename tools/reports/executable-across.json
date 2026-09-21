@@ -1,49 +1,17 @@
 {
  "report": "executable 层跨盘汇总",
- "generated_by": "t217",
+ "generated_by": "t218",
  "method": "每条记录在本术全部样盘上求值；分「至少一张盘可判」与「任何盘都判不了」并归类。",
  "tally": {
-  "满足": 92,
+  "满足": 96,
   "不满足": 152,
-  "信息不足": 10,
+  "信息不足": 6,
   "未提供定义表": 4
  },
  "records": 258,
  "across": {
-  "decidable_somewhere": 246,
+  "decidable_somewhere": 250,
   "nowhere": [
-   {
-    "id": "MHY-E-01",
-    "art": "meihua",
-    "unmapped_fields": [
-     "meihua.ti.element"
-    ],
-    "no_sample_for_art": false
-   },
-   {
-    "id": "YXJ-E-01",
-    "art": "xiaoliuren",
-    "unmapped_fields": [
-     "xiaoliuren.hour.branch"
-    ],
-    "no_sample_for_art": false
-   },
-   {
-    "id": "YXJ-E-05",
-    "art": "xiaoliuren",
-    "unmapped_fields": [
-     "xiaoliuren.count.good"
-    ],
-    "no_sample_for_art": false
-   },
-   {
-    "id": "YXJ-E-06",
-    "art": "xiaoliuren",
-    "unmapped_fields": [
-     "xiaoliuren.lunar.month"
-    ],
-    "no_sample_for_art": false
-   },
    {
     "id": "ZPR-E-08",
     "art": "bazi",

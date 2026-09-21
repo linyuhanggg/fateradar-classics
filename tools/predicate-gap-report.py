@@ -85,6 +85,7 @@ ART_EMIT_KEYS: dict[str, frozenset[str]] = {
             "yueling",
             # 四柱干支与纳音：引擎由已有 ganzhi 四柱／「纳音」行逐柱产出（见 emitBaziFacts）。
             "gan",
+            "gan_element",
             "zhi",
             # 藏干（`PillarFact.hidden`，本气在前）：emitBaziFacts 早就在读它算十神。
             "canggan",
@@ -171,7 +172,9 @@ ART_EMIT_KEYS: dict[str, frozenset[str]] = {
         }
     ),
     # t211：小六壬（参考术，不在六术门禁内）——执行层有 6 条记录，引擎本来就产事实。
-    "xiaoliuren": frozenset({"xiaoliuren_palace"}),
+    "xiaoliuren": frozenset(
+        {"xiaoliuren_palace", "xiaoliuren_hour_zhi", "xiaoliuren_lunar_month", "xiaoliuren_lunar_day", "xiaoliuren_count_good"}
+    ),
     # 梅花（参考术）：体用五行由引擎产出（`ti.element`／`yong.element`，t215）。
     "meihua": frozenset({"meihua_ti_element", "meihua_yong_element", "meihua_gua"}),
     # 易理（参考术）：与六爻同源——同一卦的爻层事实共用（t214）。
