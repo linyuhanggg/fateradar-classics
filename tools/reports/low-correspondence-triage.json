@@ -1,0 +1,773 @@
+{
+ "report": "低对应度分诊",
+ "generated_by": "t202",
+ "method": "correspondence() 是汉字集合召回率，对「表格型引文」与「长综述+短引文」会误报。本报告用**内容二元组**做覆盖（单字会因常用字而误判，t202 实读验证过）。本报告以 statement 的内容字分别比锚点邻域(±30 行)、同文件其它窗口、其它文件，分三类并给出证据；**只提议，不改 statement/quote/anchor**。",
+ "threshold": 0.05,
+ "counts": {
+  "no-overlap-anywhere": 23,
+  "near-anchor": 8,
+  "higher-overlap-window-found": 9
+ },
+ "entries": [
+  {
+   "book": "bazi/ditiansui-chanwei",
+   "rule_id": "DITIANSUICHA-039",
+   "correspondence": 0.034,
+   "anchor": {
+    "file": "sources/fulltext/bazi/ditiansui-chanwei/fulltext.md",
+    "start_line": 8503,
+    "end_line": 8503
+   },
+   "near_coverage": 0.103,
+   "same_file_best": {
+    "coverage": 0.207,
+    "start_line": 31
+   },
+   "kind": "no-overlap-anywhere",
+   "statement_head": "小儿命主要看关煞、五行偏枯、冲战过重；任氏多次强调\"小儿命断夭折须极审慎\"。",
+   "quote_head": "论财论杀论精神，四柱和平易养成，气势攸长无削丧，杀关虽有不伤身。",
+   "proposal": "**请人眼读一遍**：statement 是不是现代归纳/包级声明？引文主题与它是否同一件事？字符串指标（单字/二元组）判不了这一层——t202 已用实读证过。"
+  },
+  {
+   "book": "bazi/ditiansui-chanwei",
+   "rule_id": "DITIANSUICHA-048",
+   "correspondence": 0.038,
+   "anchor": {
+    "file": "sources/fulltext/bazi/ditiansui-chanwei/fulltext.md",
+    "start_line": 10688,
+    "end_line": 10688
+   },
+   "near_coverage": 0.118,
+   "same_file_best": {
+    "coverage": 0.147,
+    "start_line": 8491
+   },
+   "kind": "no-overlap-anywhere",
+   "statement_head": "君象（日主为主、众星拱卫）、臣象（日主为臣、君星显达）、母象（印星养身）、子象（食伤泄秀）；皆为气势比拟。",
+   "quote_head": "君不可抗也。贵乎损上以益下。",
+   "proposal": "**请人眼读一遍**：statement 是不是现代归纳/包级声明？引文主题与它是否同一件事？字符串指标（单字/二元组）判不了这一层——t202 已用实读证过。"
+  },
+  {
+   "book": "bazi/sanming-tonghui",
+   "rule_id": "SANMINGTONGH-101",
+   "correspondence": 0.034,
+   "anchor": {
+    "file": "sources/fulltext/bazi/sanming-tonghui/fulltext.md",
+    "start_line": 4363,
+    "end_line": 4363
+   },
+   "near_coverage": 0.263,
+   "same_file_best": {
+    "coverage": 0.211,
+    "start_line": 3361
+   },
+   "kind": "no-overlap-anywhere",
+   "statement_head": "背禄逐马（禄被背不得、马被逐失势）为古法凶断；十干十二年生大贵人例为十干各年大贵人的枚举配合。",
+   "quote_head": "六甲年〔丁卯〕月〔乙未〕日〔戊寅〕時   六乙年〔己卯〕月〔甲戌〕日〔乙亥〕時六丙年〔庚寅〕月〔丁巳〕日〔丙午〕時   ",
+   "proposal": "**请人眼读一遍**：statement 是不是现代归纳/包级声明？引文主题与它是否同一件事？字符串指标（单字/二元组）判不了这一层——t202 已用实读证过。"
+  },
+  {
+   "book": "bazi/yuanhai-ziping",
+   "rule_id": "YUANHAIZIPIN-014",
+   "correspondence": 0.045,
+   "anchor": {
+    "file": "sources/fulltext/bazi/yuanhai-ziping/fulltext.md",
+    "start_line": 2736,
+    "end_line": 2736
+   },
+   "near_coverage": 0.071,
+   "same_file_best": {
+    "coverage": 0.214,
+    "start_line": 151
+   },
+   "kind": "no-overlap-anywhere",
+   "statement_head": "建禄格（日干临官在月）与阳刃格（阳干刃在月）皆不取月令格局，而以扶抑论。",
+   "quote_head": "杂气财官，刑冲则发。",
+   "proposal": "**请人眼读一遍**：statement 是不是现代归纳/包级声明？引文主题与它是否同一件事？字符串指标（单字/二元组）判不了这一层——t202 已用实读证过。"
+  },
+  {
+   "book": "divination/huozhu-lin",
+   "rule_id": "HZL-R001",
+   "correspondence": 0.0,
+   "anchor": {
+    "file": "sources/fulltext/divination/huozhu-lin/fulltext.md",
+    "start_line": 109,
+    "end_line": 112
+   },
+   "near_coverage": 0.474,
+   "same_file_best": {
+    "coverage": 0.579,
+    "start_line": 61
+   },
+   "kind": "near-anchor",
+   "statement_head": "公用取官鬼，私用取妻财；官用以父母辅，财用以子孙辅。",
+   "quote_head": "阴阳男女，次策推排；",
+   "proposal": "**请人眼读一遍**：statement 是不是现代归纳/包级声明？引文主题与它是否同一件事？字符串指标（单字/二元组）判不了这一层——t202 已用实读证过。"
+  },
+  {
+   "book": "fengshui/dutian-baozhao-jing",
+   "rule_id": "DTR-01",
+   "correspondence": 0.029,
+   "anchor": {
+    "file": "sources/fulltext/fengshui/dutian-baozhao-jing/fulltext.md",
+    "start_line": 12,
+    "end_line": 12
+   },
+   "near_coverage": 0.342,
+   "same_file_best": {
+    "coverage": 0.105,
+    "start_line": 181
+   },
+   "kind": "near-anchor",
+   "statement_head": "上篇先以龙穴、水口、砂水、平洋来龙作为总纲；砂曲星辰正、水口锁门、穴见阳神等共同构成兴隆语境。",
+   "quote_head": "楊公妙應不多言.實實作家傳.人生禍福由天定.賢達能安命.",
+   "proposal": "**请人眼读一遍**：statement 是不是现代归纳/包级声明？引文主题与它是否同一件事？字符串指标（单字/二元组）判不了这一层——t202 已用实读证过。"
+  },
+  {
+   "book": "fengshui/qingnang-aoyu",
+   "rule_id": "QNA-R002",
+   "correspondence": 0.0,
+   "anchor": {
+    "file": "sources/fulltext/fengshui/qingnang-aoyu/fulltext.md",
+    "start_line": 10,
+    "end_line": 13
+   },
+   "near_coverage": 0.036,
+   "same_file_best": {
+    "coverage": 0.0,
+    "start_line": 0
+   },
+   "kind": "no-overlap-anywhere",
+   "statement_head": "书中连续说雌雄、山水、玄空；理气判断不得只看坐山，须同时给山、水、向、水口。",
+   "quote_head": "左為陽, 子癸至亥壬, 右為陰, 午丁至巳丙,",
+   "proposal": "**请人眼读一遍**：statement 是不是现代归纳/包级声明？引文主题与它是否同一件事？字符串指标（单字/二元组）判不了这一层——t202 已用实读证过。"
+  },
+  {
+   "book": "fengshui/shenshi-xuankong-xue",
+   "rule_id": "XK",
+   "correspondence": 0.0,
+   "anchor": {
+    "file": "sources/fulltext/fengshui/shenshi-xuankong-xue/fulltext.md",
+    "start_line": 24,
+    "end_line": 29
+   },
+   "near_coverage": 0.158,
+   "same_file_best": {
+    "coverage": 0.053,
+    "start_line": 3841
+   },
+   "kind": "no-overlap-anywhere",
+   "statement_head": "本 pack 是公开网页转写层，不是 1935 民国排印本逐页校本。",
+   "quote_head": "余以葬事，涉猎地理诸书，觉其说庞杂，有歧之又歧之慨！及读《沈氏玄空学》，江迂生太史《序》曰：“峦头征实，古今无伪书；理气",
+   "proposal": "**请人眼读一遍**：statement 是不是现代归纳/包级声明？引文主题与它是否同一件事？字符串指标（单字/二元组）判不了这一层——t202 已用实读证过。"
+  },
+  {
+   "book": "fengshui/shenshi-xuankong-xue",
+   "rule_id": "SHENSHIXUANK-003",
+   "correspondence": 0.0,
+   "anchor": {
+    "file": "sources/fulltext/fengshui/shenshi-xuankong-xue/fulltext.md",
+    "start_line": 3715,
+    "end_line": 3720
+   },
+   "near_coverage": 0.227,
+   "same_file_best": {
+    "coverage": 0.182,
+    "start_line": 1171
+   },
+   "kind": "no-overlap-anywhere",
+   "statement_head": "阴宅秘断、阳宅秘断是历史案例叙述，不能用来承诺现实应验。",
+   "quote_head": "向上有破屋并水，开巽方门，前有三叉水口，兑方有水至巽方门前聚消。",
+   "proposal": "**请人眼读一遍**：statement 是不是现代归纳/包级声明？引文主题与它是否同一件事？字符串指标（单字/二元组）判不了这一层——t202 已用实读证过。"
+  },
+  {
+   "book": "fengshui/xuexin-fu",
+   "rule_id": "XXF",
+   "correspondence": 0.0,
+   "anchor": {
+    "file": "sources/fulltext/fengshui/xuexin-fu/fulltext.md",
+    "start_line": 191,
+    "end_line": 195
+   },
+   "near_coverage": 0.222,
+   "same_file_best": {
+    "coverage": 0.222,
+    "start_line": 1
+   },
+   "kind": "no-overlap-anywhere",
+   "statement_head": "R01 先水口與明堂，再談穴局",
+   "quote_head": "城上星峰卓卓，真如插戟護垣；面前墩阜累累，喚作排衙唱喏。",
+   "proposal": "**请人眼读一遍**：statement 是不是现代归纳/包级声明？引文主题与它是否同一件事？字符串指标（单字/二元组）判不了这一层——t202 已用实读证过。"
+  },
+  {
+   "book": "fengshui/yangzhai-shishu",
+   "rule_id": "YZS-R017",
+   "correspondence": 0.048,
+   "anchor": {
+    "file": "sources/fulltext/fengshui/yangzhai-shishu/fulltext.md",
+    "start_line": 2622,
+    "end_line": 2622
+   },
+   "near_coverage": 0.25,
+   "same_file_best": {
+    "coverage": 0.205,
+    "start_line": 1
+   },
+   "kind": "no-overlap-anywhere",
+   "statement_head": "论符镇含大量符图；本 pack 可说明其在书中用于“宅兆既凶，又岁月难待”的传统语境，但不转写符形、不指导现实执行。",
+   "quote_head": "修宅造門，非甚有力之家，難以卒辦。縱有力者，非遲",
+   "proposal": "**请人眼读一遍**：statement 是不是现代归纳/包级声明？引文主题与它是否同一件事？字符串指标（单字/二元组）判不了这一层——t202 已用实读证过。"
+  },
+  {
+   "book": "fengshui/zangfa-daozhang",
+   "rule_id": "ZFD-R009",
+   "correspondence": 0.036,
+   "anchor": {
+    "file": "sources/fulltext/fengshui/zangfa-daozhang/fulltext.md",
+    "start_line": 155,
+    "end_line": 155
+   },
+   "near_coverage": 0.0,
+   "same_file_best": {
+    "coverage": 0.065,
+    "start_line": 211
+   },
+   "kind": "no-overlap-anywhere",
+   "statement_head": "文中有棺、井、壙、墳等古代葬法操作语汇；在现代只能作为文本证据与术语研究。",
+   "quote_head": "天地玄機，由人幹運，須憑目巧，總在心靈。",
+   "proposal": "**请人眼读一遍**：statement 是不是现代归纳/包级声明？引文主题与它是否同一件事？字符串指标（单字/二元组）判不了这一层——t202 已用实读证过。"
+  },
+  {
+   "book": "luming-nayin/wuxing-jingji",
+   "rule_id": "WX-03-01",
+   "correspondence": 0.0,
+   "anchor": {
+    "file": "sources/fulltext/luming-nayin/wuxing-jingji/fulltext.md",
+    "start_line": 2206,
+    "end_line": 2213
+   },
+   "near_coverage": 0.2,
+   "same_file_best": {
+    "coverage": 0.2,
+    "start_line": 61
+   },
+   "kind": "no-overlap-anywhere",
+   "statement_head": "支神藏干（人元）",
+   "quote_head": "亥子(水)寅卯(木)巳午(火)申酉(金)辰戍醜未(土)",
+   "proposal": "**请人眼读一遍**：statement 是不是现代归纳/包级声明？引文主题与它是否同一件事？字符串指标（单字/二元组）判不了这一层——t202 已用实读证过。"
+  },
+  {
+   "book": "luming-nayin/wuxing-jingji",
+   "rule_id": "WX-05-05",
+   "correspondence": 0.0,
+   "anchor": {
+    "file": "sources/fulltext/luming-nayin/wuxing-jingji/fulltext.md",
+    "start_line": 6758,
+    "end_line": 6765
+   },
+   "near_coverage": 0.5,
+   "same_file_best": {
+    "coverage": 0.5,
+    "start_line": 6781
+   },
+   "kind": "near-anchor",
+   "statement_head": "华盖主孤高僧道",
+   "quote_head": "寅午戌人在戌巳酉醜人在醜申子辰人在辰亥卯未人在未",
+   "proposal": "**请人眼读一遍**：statement 是不是现代归纳/包级声明？引文主题与它是否同一件事？字符串指标（单字/二元组）判不了这一层——t202 已用实读证过。"
+  },
+  {
+   "book": "physiognomy/shenxiang-quanbian",
+   "rule_id": "SHENXIANGQUA-015",
+   "correspondence": 0.048,
+   "anchor": {
+    "file": "sources/fulltext/physiognomy/shenxiang-quanbian/fulltext.md",
+    "start_line": 1323,
+    "end_line": 1323
+   },
+   "near_coverage": 0.208,
+   "same_file_best": {
+    "coverage": 0.458,
+    "start_line": 271
+   },
+   "kind": "higher-overlap-window-found",
+   "statement_head": "木形瘦长 / 火形尖锐 / 土形敦厚 / 金形方正 / 水形圆润；体型分五行。",
+   "quote_head": "下停長，終日區區促壽疆。上停長，下停短，衣食自然",
+   "proposal": "**请人眼读一遍**：statement 是不是现代归纳/包级声明？引文主题与它是否同一件事？字符串指标（单字/二元组）判不了这一层——t202 已用实读证过。"
+  },
+  {
+   "book": "physiognomy/shenxiang-quanbian",
+   "rule_id": "SR-03",
+   "correspondence": 0.048,
+   "anchor": {
+    "file": "sources/fulltext/physiognomy/shenxiang-quanbian/fulltext.md",
+    "start_line": 5,
+    "end_line": 5
+   },
+   "near_coverage": 0.04,
+   "same_file_best": {
+    "coverage": 0.24,
+    "start_line": 391
+   },
+   "kind": "no-overlap-anywhere",
+   "statement_head": "相之精微在形 / 神 / 气 / 声四要素；古文以\"神为君，形为臣，气为养\"层级。",
+   "quote_head": "​ 欽定古今圖書集成博物彙編藝術典",
+   "proposal": "**请人眼读一遍**：statement 是不是现代归纳/包级声明？引文主题与它是否同一件事？字符串指标（单字/二元组）判不了这一层——t202 已用实读证过。"
+  },
+  {
+   "book": "physiognomy/shenxiang-quanbian",
+   "rule_id": "SHENXIANGQUA-SR-03",
+   "correspondence": 0.043,
+   "anchor": {
+    "file": "sources/fulltext/physiognomy/shenxiang-quanbian/fulltext.md",
+    "start_line": 1408,
+    "end_line": 1408
+   },
+   "near_coverage": 0.033,
+   "same_file_best": {
+    "coverage": 0.3,
+    "start_line": 1321
+   },
+   "kind": "higher-overlap-window-found",
+   "statement_head": "原书列富格 / 贵格 / 寿相格 / 福德格诸成相；本 pack 仅作\"古代富贵寿福观念语义提取\"。",
+   "quote_head": "材，善御其德，又善治其器，善御其馬。小人反是，其氣",
+   "proposal": "**请人眼读一遍**：statement 是不是现代归纳/包级声明？引文主题与它是否同一件事？字符串指标（单字/二元组）判不了这一层——t202 已用实读证过。"
+  },
+  {
+   "book": "physiognomy/shenxiang-quanbian",
+   "rule_id": "SHENXIANGQUA-027",
+   "correspondence": 0.0,
+   "anchor": {
+    "file": "sources/fulltext/physiognomy/shenxiang-quanbian/fulltext.md",
+    "start_line": 2444,
+    "end_line": 2447
+   },
+   "near_coverage": 0.042,
+   "same_file_best": {
+    "coverage": 0.167,
+    "start_line": 5041
+   },
+   "kind": "no-overlap-anywhere",
+   "statement_head": "人中深长清晰为相之吉征；古文与子嗣寿命相关之论按 safety-redlines 屏蔽。",
+   "quote_head": "夭，廕下須教破且休。",
+   "proposal": "**请人眼读一遍**：statement 是不是现代归纳/包级声明？引文主题与它是否同一件事？字符串指标（单字/二元组）判不了这一层——t202 已用实读证过。"
+  },
+  {
+   "book": "physiognomy/shenxiang-quanbian",
+   "rule_id": "SR-05",
+   "correspondence": 0.0,
+   "anchor": {
+    "file": "sources/fulltext/physiognomy/shenxiang-quanbian/fulltext.md",
+    "start_line": 2696,
+    "end_line": 2697
+   },
+   "near_coverage": 0.32,
+   "same_file_best": {
+    "coverage": 0.28,
+    "start_line": 2971
+   },
+   "kind": "near-anchor",
+   "statement_head": "五行金木水火土相生相克之理用于相术；五脏所出对应五行外华。",
+   "quote_head": "暴，太緩則遲，周旋不失其節，進退各中其度者，至貴」",
+   "proposal": "**请人眼读一遍**：statement 是不是现代归纳/包级声明？引文主题与它是否同一件事？字符串指标（单字/二元组）判不了这一层——t202 已用实读证过。"
+  },
+  {
+   "book": "physiognomy/shenxiang-quanbian",
+   "rule_id": "SHENXIANGQUA-SR-05",
+   "correspondence": 0.0,
+   "anchor": {
+    "file": "sources/fulltext/physiognomy/shenxiang-quanbian/fulltext.md",
+    "start_line": 2775,
+    "end_line": 2777
+   },
+   "near_coverage": 0.0,
+   "same_file_best": {
+    "coverage": 0.263,
+    "start_line": 391
+   },
+   "kind": "no-overlap-anywhere",
+   "statement_head": "器气章 + 形神章并论；形以载神，气以养神，器以承气。",
+   "quote_head": "則心曲，故曰「觀其表則知其裡矣。」",
+   "proposal": "**请人眼读一遍**：statement 是不是现代归纳/包级声明？引文主题与它是否同一件事？字符串指标（单字/二元组）判不了这一层——t202 已用实读证过。"
+  },
+  {
+   "book": "physiognomy/shenxiang-quanbian",
+   "rule_id": "SHENXIANGQUA-035",
+   "correspondence": 0.03,
+   "anchor": {
+    "file": "sources/fulltext/physiognomy/shenxiang-quanbian/fulltext.md",
+    "start_line": 2997,
+    "end_line": 2997
+   },
+   "near_coverage": 0.0,
+   "same_file_best": {
+    "coverage": 0.436,
+    "start_line": 2671
+   },
+   "kind": "higher-overlap-window-found",
+   "statement_head": "原书分相善 / 相恶 / 相忠信慈孝 / 相愚僻凶暴 / 相形带杀；性格类条目可作 reframe 后语义引用，\"凶暴\"",
+   "quote_head": "前，此相之人終不貴。鼻大眼小金剋木，一世貧寒主",
+   "proposal": "**请人眼读一遍**：statement 是不是现代归纳/包级声明？引文主题与它是否同一件事？字符串指标（单字/二元组）判不了这一层——t202 已用实读证过。"
+  },
+  {
+   "book": "physiognomy/shenxiang-quanbian",
+   "rule_id": "SHENXIANGQUA-043",
+   "correspondence": 0.0,
+   "anchor": {
+    "file": "sources/fulltext/physiognomy/shenxiang-quanbian/fulltext.md",
+    "start_line": 4003,
+    "end_line": 4003
+   },
+   "near_coverage": 0.042,
+   "same_file_best": {
+    "coverage": 0.292,
+    "start_line": 3781
+   },
+   "kind": "no-overlap-anywhere",
+   "statement_head": "人伦大统赋上篇为张行简集大成之作；从总论起依次论部位。",
+   "quote_head": "「塵蒙」而身無所資，玉潤而名高先唱。",
+   "proposal": "**请人眼读一遍**：statement 是不是现代归纳/包级声明？引文主题与它是否同一件事？字符串指标（单字/二元组）判不了这一层——t202 已用实读证过。"
+  },
+  {
+   "book": "physiognomy/shenxiang-quanbian",
+   "rule_id": "SHENXIANGQUA-SR-08",
+   "correspondence": 0.043,
+   "anchor": {
+    "file": "sources/fulltext/physiognomy/shenxiang-quanbian/fulltext.md",
+    "start_line": 4450,
+    "end_line": 4450
+   },
+   "near_coverage": 0.0,
+   "same_file_best": {
+    "coverage": 0.304,
+    "start_line": 4111
+   },
+   "kind": "higher-overlap-window-found",
+   "statement_head": "鬼眼先生 / 西岳先生 / 唐举三种相法集；多以韵语口诀形式存世。",
+   "quote_head": "善盡美之人；兩眼雌雄，豈由仁由義」之子。色如常變",
+   "proposal": "**请人眼读一遍**：statement 是不是现代归纳/包级声明？引文主题与它是否同一件事？字符串指标（单字/二元组）判不了这一层——t202 已用实读证过。"
+  },
+  {
+   "book": "physiognomy/shenxiang-quanbian",
+   "rule_id": "SHENXIANGQUA-048",
+   "correspondence": 0.029,
+   "anchor": {
+    "file": "sources/fulltext/physiognomy/shenxiang-quanbian/fulltext.md",
+    "start_line": 5169,
+    "end_line": 5170
+   },
+   "near_coverage": 0.024,
+   "same_file_best": {
+    "coverage": 0.366,
+    "start_line": 4591
+   },
+   "kind": "higher-overlap-window-found",
+   "statement_head": "原书列何知歌 / 何知诀 / 凶暴歌 / 刑害歌 / 无子歌 / 恶死歌 等八篇韵语；以\"何知人……\"句式列举具体相征对",
+   "quote_head": "吟，言祕密謹似珠金，若人收得得意集，此法須收拾，",
+   "proposal": "**请人眼读一遍**：statement 是不是现代归纳/包级声明？引文主题与它是否同一件事？字符串指标（单字/二元组）判不了这一层——t202 已用实读证过。"
+  },
+  {
+   "book": "san-shi/daliuren-daquan",
+   "rule_id": "DALIURENDAQU-003",
+   "correspondence": 0.0,
+   "anchor": {
+    "file": "sources/fulltext/san-shi/daliuren-daquan/fulltext.md",
+    "start_line": 63,
+    "end_line": 64
+   },
+   "near_coverage": 0.1,
+   "same_file_best": {
+    "coverage": 0.2,
+    "start_line": 9211
+   },
+   "kind": "no-overlap-anywhere",
+   "statement_head": "四课已确定且不是无效盘。",
+   "quote_head": "一 贼克法一下克上曰重审，一上克下曰元首",
+   "proposal": "**请人眼读一遍**：statement 是不是现代归纳/包级声明？引文主题与它是否同一件事？字符串指标（单字/二元组）判不了这一层——t202 已用实读证过。"
+  },
+  {
+   "book": "san-shi/daliuren-daquan",
+   "rule_id": "DALIURENDAQU-010",
+   "correspondence": 0.0,
+   "anchor": {
+    "file": "sources/fulltext/san-shi/daliuren-daquan/fulltext.md",
+    "start_line": 89,
+    "end_line": 94
+   },
+   "near_coverage": 0.059,
+   "same_file_best": {
+    "coverage": 0.412,
+    "start_line": 10141
+   },
+   "kind": "higher-overlap-window-found",
+   "statement_head": "月将支与占时支相同，十二神各居本宫，adapter 标记 `is_fuyin=true`。",
+   "quote_head": "伏吟有克还为用，无克刚干柔取辰。迤逦刑之作中末，从兹《玉厯》职其真。若也自刑为发用，次传颠倒日辰并。次传更复自刑者，冲取",
+   "proposal": "**请人眼读一遍**：statement 是不是现代归纳/包级声明？引文主题与它是否同一件事？字符串指标（单字/二元组）判不了这一层——t202 已用实读证过。"
+  },
+  {
+   "book": "san-shi/daliuren-daquan",
+   "rule_id": "DALIURENDAQU-011",
+   "correspondence": 0.0,
+   "anchor": {
+    "file": "sources/fulltext/san-shi/daliuren-daquan/fulltext.md",
+    "start_line": 95,
+    "end_line": 98
+   },
+   "near_coverage": 0.125,
+   "same_file_best": {
+    "coverage": 0.75,
+    "start_line": 10351
+   },
+   "kind": "higher-overlap-window-found",
+   "statement_head": "十二神各居冲位，adapter 标记 `is_fanyin=true`。",
+   "quote_head": "返吟有克亦为用，无克别有井栏名。若知六日该无克，丑未同干丁己辛。丑日登明未太乙，辰中日末识原因阳日用辰，阴日用日，辰上作",
+   "proposal": "**请人眼读一遍**：statement 是不是现代归纳/包级声明？引文主题与它是否同一件事？字符串指标（单字/二元组）判不了这一层——t202 已用实读证过。"
+  },
+  {
+   "book": "san-shi/liuren-miben",
+   "rule_id": "LIURENMIBEN-LM",
+   "correspondence": 0.0,
+   "anchor": {
+    "file": "sources/fulltext/san-shi/liuren-miben/fulltext.md",
+    "start_line": 76,
+    "end_line": 84
+   },
+   "near_coverage": 0.037,
+   "same_file_best": {
+    "coverage": 0.111,
+    "start_line": 1
+   },
+   "kind": "no-overlap-anywhere",
+   "statement_head": "查询本书某月将、天将、地支或八卦的传统类象；若用于实际盘，LM-R00 已通过。",
+   "quote_head": "神後屬子，其數九，味咸，女虛危三宿三位。",
+   "proposal": "**请人眼读一遍**：statement 是不是现代归纳/包级声明？引文主题与它是否同一件事？字符串指标（单字/二元组）判不了这一层——t202 已用实读证过。"
+  },
+  {
+   "book": "selection/donggong-zeri",
+   "rule_id": "DONGGONGZERI-006",
+   "correspondence": 0.0,
+   "anchor": {
+    "file": "sources/fulltext/selection/donggong-zeri/fulltext.md",
+    "start_line": 867,
+    "end_line": 870
+   },
+   "near_coverage": 0.171,
+   "same_file_best": {
+    "coverage": 0.195,
+    "start_line": 91
+   },
+   "kind": "no-overlap-anywhere",
+   "statement_head": "本书将煞贡、直星、人专列为可用于上官赴任、临政亲民、入学等事的吉日类；可作民间通书“通用吉日”证据层。",
+   "quote_head": "正、四、七、十，四孟之月：",
+   "proposal": "**请人眼读一遍**：statement 是不是现代归纳/包级声明？引文主题与它是否同一件事？字符串指标（单字/二元组）判不了这一层——t202 已用实读证过。"
+  },
+  {
+   "book": "xingming/guotian-jing",
+   "rule_id": "GUOTIANJING-006",
+   "correspondence": 0.0,
+   "anchor": {
+    "file": "sources/fulltext/xingming/guotian-jing/fulltext.md",
+    "start_line": 388,
+    "end_line": 389
+   },
+   "near_coverage": 0.037,
+   "same_file_best": {
+    "coverage": 0.222,
+    "start_line": 1
+   },
+   "kind": "no-overlap-anywhere",
+   "statement_head": "大限按宫流转，每宫年数依洞微百六限分配；年分诀 / 行度诀辅助计算。",
+   "quote_head": "向：向者诸星向朝也，如日月向朝，如官福向朝，如田财向朝，如文魁向朝，如经纬向朝，如三元满用向朝，如一主专权向朝。向者有情",
+   "proposal": "**请人眼读一遍**：statement 是不是现代归纳/包级声明？引文主题与它是否同一件事？字符串指标（单字/二元组）判不了这一层——t202 已用实读证过。"
+  },
+  {
+   "book": "xingming/guotian-jing",
+   "rule_id": "GUOTIANJING-007",
+   "correspondence": 0.0,
+   "anchor": {
+    "file": "sources/fulltext/xingming/guotian-jing/fulltext.md",
+    "start_line": 28,
+    "end_line": 35
+   },
+   "near_coverage": 0.05,
+   "same_file_best": {
+    "coverage": 0.05,
+    "start_line": 541
+   },
+   "kind": "no-overlap-anywhere",
+   "statement_head": "童限自婴幼期起按古歌分配各宫；现代仅作语义层。",
+   "quote_head": "昼夜百刻日永日短之图、",
+   "proposal": "**请人眼读一遍**：statement 是不是现代归纳/包级声明？引文主题与它是否同一件事？字符串指标（单字/二元组）判不了这一层——t202 已用实读证过。"
+  },
+  {
+   "book": "xingming/guotian-jing",
+   "rule_id": "GUOTIANJING-020",
+   "correspondence": 0.0,
+   "anchor": {
+    "file": "sources/fulltext/xingming/guotian-jing/fulltext.md",
+    "start_line": 1270,
+    "end_line": 1272
+   },
+   "near_coverage": 0.444,
+   "same_file_best": {
+    "coverage": 0.333,
+    "start_line": 1771
+   },
+   "kind": "near-anchor",
+   "statement_head": "五行配四时；春木旺 / 夏火旺 / 秋金旺 / 冬水旺 / 四季土旺；旺相休囚死五态。",
+   "quote_head": "豹尾：同 上，戌未辰丑戌未辰丑戌未辰丑。",
+   "proposal": "**请人眼读一遍**：statement 是不是现代归纳/包级声明？引文主题与它是否同一件事？字符串指标（单字/二元组）判不了这一层——t202 已用实读证过。"
+  },
+  {
+   "book": "xingming/xingming-suyuan",
+   "rule_id": "XINGMINGSUYU-008",
+   "correspondence": 0.0,
+   "anchor": {
+    "file": "sources/fulltext/xingming/xingming-suyuan/fulltext.md",
+    "start_line": 255,
+    "end_line": 258
+   },
+   "near_coverage": 1.0,
+   "same_file_best": {
+    "coverage": 0.333,
+    "start_line": 1
+   },
+   "kind": "near-anchor",
+   "statement_head": "07 七政并旺",
+   "quote_head": "日月五星各得其所富貴之原也如日午月未水居巳申金居辰酉火居夘戌木居寅亥土居子丑是也",
+   "proposal": "**请人眼读一遍**：statement 是不是现代归纳/包级声明？引文主题与它是否同一件事？字符串指标（单字/二元组）判不了这一层——t202 已用实读证过。"
+  },
+  {
+   "book": "xingming/xingming-suyuan",
+   "rule_id": "XINGMINGSUYU-017",
+   "correspondence": 0.0,
+   "anchor": {
+    "file": "sources/fulltext/xingming/xingming-suyuan/fulltext.md",
+    "start_line": 413,
+    "end_line": 418
+   },
+   "near_coverage": 0.667,
+   "same_file_best": {
+    "coverage": 0.333,
+    "start_line": 31
+   },
+   "kind": "near-anchor",
+   "statement_head": "07 官魁化曜",
+   "quote_head": "〔炁月〕 乙〔水日〕 丙〔羅羅〕 丁〔計計〕 戊〔孛火〕",
+   "proposal": "**请人眼读一遍**：statement 是不是现代归纳/包级声明？引文主题与它是否同一件事？字符串指标（单字/二元组）判不了这一层——t202 已用实读证过。"
+  },
+  {
+   "book": "xingming/xingxue-dacheng",
+   "rule_id": "XXDC-R008",
+   "correspondence": 0.042,
+   "anchor": {
+    "file": "sources/fulltext/xingming/xingxue-dacheng/fulltext.md",
+    "start_line": 1205,
+    "end_line": 1205
+   },
+   "near_coverage": 0.25,
+   "same_file_best": {
+    "coverage": 0.214,
+    "start_line": 1141
+   },
+   "kind": "no-overlap-anywhere",
+   "statement_head": "迟、留、伏、逆分别影响有用星和煞星力量；不可用静态星度替代动态状态。",
+   "quote_head": "一立身在何度何宫晝生人看命度主夜生人看身度主如上望前望後及下生者看身度主為亦如命度之法",
+   "proposal": "**请人眼读一遍**：statement 是不是现代归纳/包级声明？引文主题与它是否同一件事？字符串指标（单字/二元组）判不了这一层——t202 已用实读证过。"
+  },
+  {
+   "book": "ziwei/ziwei-doushu-quanshu",
+   "rule_id": "ZW",
+   "correspondence": 0.031,
+   "anchor": {
+    "file": "sources/fulltext/ziwei/ziwei-doushu-quanshu/fulltext.md",
+    "start_line": 3248,
+    "end_line": 3248
+   },
+   "near_coverage": 0.032,
+   "same_file_best": {
+    "coverage": 0.452,
+    "start_line": 1681
+   },
+   "kind": "higher-overlap-window-found",
+   "statement_head": "斗数以命、兄弟、妻妾、子女、财帛、疾厄、迁移、奴仆、官禄、田宅、福德、父母为十二宫次序。",
+   "quote_head": "紫微有倚靠年長之兄，天府同三人，天相同三四人，破軍同亦有三人，或各胞生，加羊陀火鈴空劫克害有則欠和。",
+   "proposal": "**请人眼读一遍**：statement 是不是现代归纳/包级声明？引文主题与它是否同一件事？字符串指标（单字/二元组）判不了这一层——t202 已用实读证过。"
+  },
+  {
+   "book": "ziwei/ziwei-doushu-quanshu",
+   "rule_id": "ZIWEIDOUSHUQ-045",
+   "correspondence": 0.0,
+   "anchor": {
+    "file": "sources/fulltext/ziwei/ziwei-doushu-quanshu/fulltext.md",
+    "start_line": 1634,
+    "end_line": 1642
+   },
+   "near_coverage": 0.2,
+   "same_file_best": {
+    "coverage": 0.6,
+    "start_line": 31
+   },
+   "kind": "higher-overlap-window-found",
+   "statement_head": "05 富贵贫贱格局",
+   "quote_head": "生不逢時 命坐空亡逢廉貞是也。",
+   "proposal": "**请人眼读一遍**：statement 是不是现代归纳/包级声明？引文主题与它是否同一件事？字符串指标（单字/二元组）判不了这一层——t202 已用实读证过。"
+  },
+  {
+   "book": "ziwei/ziwei-doushu-quanshu",
+   "rule_id": "ZIWEIDOUSHUQ-049",
+   "correspondence": 0.04,
+   "anchor": {
+    "file": "sources/fulltext/ziwei/ziwei-doushu-quanshu/fulltext.md",
+    "start_line": 1661,
+    "end_line": 1661
+   },
+   "near_coverage": 0.115,
+   "same_file_best": {
+    "coverage": 0.192,
+    "start_line": 1201
+   },
+   "kind": "no-overlap-anywhere",
+   "statement_head": "杂局主要包括：桃花犯主 / 贪武同行 / 廉贞会贪狼 等；吉凶兼备需细判。",
+   "quote_head": "風雲際會 身命雖弱二限逢祿馬是也。",
+   "proposal": "**请人眼读一遍**：statement 是不是现代归纳/包级声明？引文主题与它是否同一件事？字符串指标（单字/二元组）判不了这一层——t202 已用实读证过。"
+  },
+  {
+   "book": "ziwei/ziwei-doushu-quanshu",
+   "rule_id": "ZIWEIDOUSHUQ-066",
+   "correspondence": 0.0,
+   "anchor": {
+    "file": "sources/fulltext/ziwei/ziwei-doushu-quanshu/fulltext.md",
+    "start_line": 4242,
+    "end_line": 4246
+   },
+   "near_coverage": 0.818,
+   "same_file_best": {
+    "coverage": 0.364,
+    "start_line": 1471
+   },
+   "kind": "near-anchor",
+   "statement_head": "09 论诸星同垣富贵贫贱夭寿（强 reframe）",
+   "quote_head": "紫微 廟丑未午 旺寅申卯酉巳亥 平子 無陷",
+   "proposal": "**请人眼读一遍**：statement 是不是现代归纳/包级声明？引文主题与它是否同一件事？字符串指标（单字/二元组）判不了这一层——t202 已用实读证过。"
+  },
+  {
+   "book": "ziwei/ziwei-doushu-quanshu",
+   "rule_id": "ZIWEIDOUSHUQ-ZW-09",
+   "correspondence": 0.04,
+   "anchor": {
+    "file": "sources/fulltext/ziwei/ziwei-doushu-quanshu/fulltext.md",
+    "start_line": 1642,
+    "end_line": 1642
+   },
+   "near_coverage": 0.061,
+   "same_file_best": {
+    "coverage": 0.152,
+    "start_line": 1471
+   },
+   "kind": "no-overlap-anywhere",
+   "statement_head": "紫微斗数命格有高下之分：上格主大富大贵、中格主小富小贵、下格主温饱、最下格主贫贱夭折。",
+   "quote_head": "生不逢時 命坐空亡逢廉貞是也。",
+   "proposal": "**请人眼读一遍**：statement 是不是现代归纳/包级声明？引文主题与它是否同一件事？字符串指标（单字/二元组）判不了这一层——t202 已用实读证过。"
+  }
+ ]
+}
