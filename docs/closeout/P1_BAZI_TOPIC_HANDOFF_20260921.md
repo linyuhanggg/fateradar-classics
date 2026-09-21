@@ -163,3 +163,7 @@ git diff --check
 ### 最新重跑
 
 年份选择器同步后，cosmic 垂直测试为 `23/24`；剩余失败是流年视图把可执行的 `YUANHAIZIPIN-YR-03` 也强制断言为 `unknown`。最新日志：`tools/reports/p1-bazi-20260922/cosmic-integration-latest.log`。
+
+### 最终验收
+
+2026-09-22 cosmic 相关测试 `24/24` 通过；facts SHA、`CLASSICS_REV` 和 manifest SHA 已对齐。古籍侧停止本 Goal，不恢复 440 条 `unmapped` 批次；后续产品开发按 manifest 消费，阻塞事实继续保持 `unknown`。

@@ -50,3 +50,7 @@ cosmic 重跑同一命令后仍为 `22/24` 通过、exit 1，日志见 `tools/re
 manifest 重新生成并同步年份选择器后，cosmic 测试已提升到 `23/24` 通过；`YUANHAIZIPIN-YR-03` 反例已通过。最新失败日志见 `tools/reports/p1-bazi-20260922/cosmic-integration-latest.log`。
 
 剩余唯一失败是流年切换测试仍断言所有流年 RuleEvaluation 必须为 `unknown` 且没有 evidence。该断言不符合本 manifest：`YUANHAIZIPIN-YR-03` 的 `applicableLayers` 包含 `流年`，选定年份命中时应产生结构证据。产品只需放宽该断言，保留未支持层和未交付主题语义的 `unknown`。
+
+## 最终产品验收（2026-09-22）
+
+cosmic 已完成年份选择器和流年视图断言对齐；相关测试最终为 `24/24` 通过，日志见 `tools/reports/p1-bazi-20260922/cosmic-integration-green.log`。产品 fixture 与古籍 fixture 字节一致（SHA `d53d3a8a64ca11826950276791ef2e84abaa7f01d914fdfb1e38f51dc200b47c`），`CLASSICS_REV` 与 manifest SHA 也已对齐。交接状态可供产品继续消费；未形成合同的事实和主题语义仍按 manifest 保持 `unknown`。

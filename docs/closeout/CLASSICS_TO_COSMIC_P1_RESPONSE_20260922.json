@@ -2,7 +2,7 @@
   "schema": "fateradar-classics-p1-cross-repo-response-v1",
   "date": "2026-09-22",
   "request": "/Users/sync/code/cosmic-fortune-lab/docs/closeout/COSMIC_TO_CLASSICS_P1_REQUEST_20260922.md",
-  "status": "partial",
+  "status": "ready_for_product_consumption",
   "decision": "one_flow_year_rule_adopted",
   "classicsRev": "6321186f6aeebd0737537c45286153eedf49adb4",
   "factsFixture": {
@@ -270,7 +270,7 @@
       ]
     }
   ],
-  "productAction": "产品仓已提供 dayun_liunian_relation_class 及 scope.year；请消费 YUANHAIZIPIN-YR-03 的结构性“忌象候选”结果，并保留制化/喜忌缺口为 unknown。其余 blocked 候选不自行补规则。 测试 harness 必须先按 verification case/year 过滤 facts；流年视图断言按 applicableLayers 区分可执行规则与仍为 unknown 的主题语义。",
+  "productAction": "产品仓已提供 dayun_liunian_relation_class 及 scope.year；请消费 YUANHAIZIPIN-YR-03 的结构性“忌象候选”结果，并保留制化/喜忌缺口为 unknown。其余 blocked 候选不自行补规则。 测试 harness 必须先按 verification case/year 过滤 facts；流年视图断言按 applicableLayers 区分可执行规则与仍为 unknown 的主题语义。 相关产品验收已通过；可继续实现六主题消费，阻塞项仍按 manifest 保持 unknown。",
   "classicsAction": "已采纳 YUANHAIZIPIN-YR-03 为 verified=false 的保守流年结构证据，并将 CLASSICS_REV 更新为包含该规则的 6321186f6aeebd0737537c45286153eedf49adb4；其余候选保持 blocked，不恢复 440 条 unmapped 目标。",
   "evaluationAudit": {
     "command": "python3 tools/audit-flow-year-unknown.py",
@@ -325,17 +325,13 @@
     },
     "latest": {
       "command": "cd /Users/sync/code/cosmic-fortune-lab && bunx vitest run tests/rules/explicit-unknown-facts.test.ts tests/engine/bazi-vertical.test.ts --reporter=dot",
-      "exitCode": 1,
-      "result": "ONE_PRODUCT_ASSERTION_REMAINS",
-      "log": "tools/reports/p1-bazi-20260922/cosmic-integration-latest.log",
-      "testsPassed": "23/24",
-      "fixedSinceRerun": "YUANHAIZIPIN-YR-03 negative fixture now passes after manifest year selector regeneration",
-      "failure": {
-        "test": "流年切换改变时间层和快照身份，但保留同一出生输入",
-        "ruleId": "YUANHAIZIPIN-YR-03",
-        "cause": "test still asserts every year-layer RuleEvaluation has status unknown and no evidence, while this rule is explicitly executable at 流年.",
-        "requiredAction": "change the assertion to allow supported 流年 rules to evaluate against the selected year; keep unsupported layers/topics unknown."
-      }
+      "exitCode": 0,
+      "result": "PASS",
+      "log": "tools/reports/p1-bazi-20260922/cosmic-integration-green.log",
+      "testsPassed": "24/24",
+      "factsFixtureSha256": "d53d3a8a64ca11826950276791ef2e84abaa7f01d914fdfb1e38f51dc200b47c",
+      "cosmicClassicsRev": "6321186f6aeebd0737537c45286153eedf49adb4",
+      "cosmicManifestSha256": "8221f2187e0a7901bda67b7585502ca95e18ac5d8164dc56d3c27f7c56989675"
     }
   }
 }
