@@ -122,6 +122,9 @@ ART_EMIT_KEYS: dict[str, frozenset[str]] = {
             "liuren_ke_relation",
             "liuren_ke_completeness",
             "liuren_yaoke",
+            # 四课上神与涉害取法（引擎取传时已算；t205 产出）。
+            "liuren_ke",
+            "liuren_shehai",
             # 四柱干支：引擎 facts.ganZhi 直接透传（与 bazi/qimen 共用键，按 scope.pillar 区分）。
             "gan",
             "zhi",
@@ -153,7 +156,7 @@ ART_EMIT_KEYS: dict[str, frozenset[str]] = {
             "liuyao_reversal",
         }
     ),
-    "qizheng": frozenset({"xingyao", "gongwei", "xiudu", "miaowang"}),
+    "qizheng": frozenset({"qizheng_ascendant", "xingyao", "gongwei", "xiudu", "miaowang"}),
 }
 
 

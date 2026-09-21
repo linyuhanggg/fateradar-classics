@@ -84,9 +84,17 @@ FIELD_MAP: dict[str, tuple[str, dict | None, str]] = {
     # 取自引擎已有的 layout.starPalace / layout.doorPalace）。
     "zhifu.palace": ("zhifu", None, "值符所落之宫：t173 起 zhifu 事实带 scope.gong"),
     "timedry.palace": ("zhishi", None, "值使所落之宫：t173 起 zhishi 事实带 scope.gong"),
-    "positions": (None, None, "六爻位置总名：未产出（引擎产出的是 shiyao/yingyao/dongyao 分名）"),
-    "four.ke": (None, None, "四课：引擎未产出"),
-    "shehai.method": (None, None, "涉害取法：引擎未产出"),
+    # t205 更新：旧注说「引擎产出的是逐爻分名」——那就照分名接。
+    # 「positions 在场」＝**本盘产出了逐爻事实**，任何六爻盘都成立（六个爻位总在）。
+    # 用 `yao_zhi`（逐爻纳甲支，逐爻必有）作在场代理；`.activity`／`.moving` 各接真身。
+    "positions": ("yao_zhi", None, "六爻位置总名 → 逐爻在场（yao_zhi 逐爻必有）；见 positions.main.* 各项"),
+    "positions.main.activity": ("liuyao_activity", None, "逐爻活动状态；t193 起产出"),
+    "positions.main.moving": ("dongyao", None, "动爻；引擎产出 dongyao（无动爻时本键缺席，故不作在场代理）"),
+    # t205 更新：这两项引擎**早就算过**（`selection.courses` 与 `selection.shehaiMethod`），
+    # 此前只进解读文本。现在产成事实，记录里的子句才判得出来。
+    "ascendant.sign": ("qizheng_ascendant", None, "上升点所在宫；t205 起产出（引擎按 Math.floor(asc/30)%12 取）"),
+    "four.ke": ("liuren_ke", None, "四课各课上神；t205 起产出（与 sanchuan 同形）"),
+    "shehai.method": ("liuren_shehai", None, "涉害取法；t205 起产出，沿用引擎原值 depth／mengzhong"),
     "yongshen.zhi": (None, None, "用神地支：引擎只产出用神五行 yongshen"),
     "yongshen.state": (None, None, "用神旺衰状态：引擎未产出"),
     "stars": (None, None, "星曜集合总名：未产出（分名是 xingyao）"),
