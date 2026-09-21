@@ -1,0 +1,204 @@
+{
+ "report": "谓词取值的溯源分类",
+ "generated_by": "t212",
+ "question": "每个取值叶子，在本条规则的 statement／quote 里吗？不在的话是怎么来的？",
+ "classes": {
+  "literal": "取值字面出现在本条 statement／quote 里（繁简折叠后）",
+  "enumerated": "本条在同一键上展开 ≥3 个取值——值域枚举，不是原文用词",
+  "canonical": "取值既非字面、也非枚举、也非引擎态——**这一类需要人读**：既有真·名目对译（财→妻财、七煞→七杀、官祿宮→事业），也有「本条只是没提这个值」（section 标题、就绪条件式 statement）。",
+  "engine-state": "取值由引擎判定产出（列举在工具里的 ENGINE_STATE_KEYS）"
+ },
+ "rules_scanned": 391,
+ "value_leaves": 1355,
+ "tally": {
+  "literal": 797,
+  "enumerated": 477,
+  "engine-state": 37,
+  "canonical": 44
+ },
+ "enumerated_keys": {
+  "zhi": 38,
+  "shishen": 19,
+  "yueling": 22,
+  "rizhu_strength": 27,
+  "canggan": 20,
+  "gan": 76,
+  "liuqin": 71,
+  "shiyao": 12,
+  "liuyao_yongshen": 54,
+  "liuyao_tomb": 30,
+  "rizhu": 10,
+  "keti": 4,
+  "sanchuan": 5,
+  "liuren_ke_relation": 2,
+  "bamen": 14,
+  "dipan_gan": 48,
+  "tianpan_gan": 8,
+  "xingyao": 9,
+  "xiudu": 6,
+  "ziwei_star": 2
+ },
+ "canonical_pairs": [
+  {
+   "key": "sanchuan",
+   "value": "初传",
+   "sample_rule": "DALIURENDAQU-018",
+   "sample_statement": "三传及日干五行均由已验证事实层给出。",
+   "count": 6
+  },
+  {
+   "key": "daxian",
+   "value": "子女",
+   "sample_rule": "ZIWEIDOUSHUQ-051",
+   "sample_statement": "06 大限/小限/流年运程",
+   "count": 4
+  },
+  {
+   "key": "daxian",
+   "value": "田宅",
+   "sample_rule": "ZIWEIDOUSHUQ-ZW-06",
+   "sample_statement": "大限+小限+太岁三限合参定吉凶；三者皆吉则吉，皆凶则凶；二吉一凶减半，二凶一吉化险。",
+   "count": 4
+  },
+  {
+   "key": "shishen",
+   "value": "七杀",
+   "sample_rule": "SANMINGTONGH-050",
+   "sample_statement": "偏官（七煞）诸子格：天元坐煞（日坐七煞需制化）、时上一位贵（时上一位七煞有制为权星）、年上七煞（年柱七煞需制化）。共性为七煞在特定柱位，制化",
+   "count": 3
+  },
+  {
+   "key": "liuqin",
+   "value": "妻财",
+   "sample_rule": "HJC-R010",
+   "sample_statement": "财来生世或就世较易，我去寻财、世持动兄、财被日伤则难；应期看生衰旺合。",
+   "count": 3
+  },
+  {
+   "key": "liunian_taisui",
+   "value": "午",
+   "sample_rule": "TAIWEIFU-020",
+   "sample_statement": "童子限如水上泡沤，老人限似风中燃烛；遇杀无制乃流年最忌。",
+   "count": 3
+  },
+  {
+   "key": "rizhu",
+   "value": "甲",
+   "sample_rule": "QR-01-00",
+   "sample_statement": "木性腾上而无所止；春木阳气方盛，宜火以宣其华；夏木根干叶燥，宜水以润之；秋木气衰枝叶凋零，宜金以斩削；冬木枝叶归根，宜火以暖之。",
+   "count": 2
+  },
+  {
+   "key": "ziwei_palace",
+   "value": "事业",
+   "sample_rule": "FEIXINGZIWEI-008",
+   "sample_statement": "巨门主口舌是非、公门黑暗、法院警署看守律师等象；天刑主刑法、司法、掌权施令、戒师将帅等象。二者在官禄、命身、流年等位置可作为法律/纠纷/公门",
+   "count": 2
+  },
+  {
+   "key": "sihua",
+   "value": "化忌",
+   "sample_rule": "TAIWEIFU-018",
+   "sample_statement": "忌暗同居身命疾厄，沉困尪羸；凶星会于父母迁移，刑伤破祖。",
+   "count": 2
+  },
+  {
+   "key": "ziwei_palace",
+   "value": "命宫",
+   "sample_rule": "ZW-03",
+   "sample_statement": "化禄为四化之首，主财禄福气；十干所化星各异（甲廉贞化禄、乙天机化禄……）；化禄入命/财/官主一生财福。",
+   "count": 2
+  },
+  {
+   "key": "rizhu",
+   "value": "乙",
+   "sample_rule": "QR-01-00",
+   "sample_statement": "木性腾上而无所止；春木阳气方盛，宜火以宣其华；夏木根干叶燥，宜水以润之；秋木气衰枝叶凋零，宜金以斩削；冬木枝叶归根，宜火以暖之。",
+   "count": 1
+  },
+  {
+   "key": "rizhu",
+   "value": "丁",
+   "sample_rule": "QR-02-00",
+   "sample_statement": "火性炎上，宜其得地见水以济之；春火炎而未烈，秋火退气，冬火气衰，夏火炎烈。喜壬水克之、忌癸水熄之，丙喜见甲乙发其光。",
+   "count": 1
+  },
+  {
+   "key": "rizhu",
+   "value": "戊",
+   "sample_rule": "QR-03-00",
+   "sample_statement": "土主信、性重，散在四维，不立一方；春土气虚而薄，宜火生之；夏土性燥，宜水润之；秋土子旺母衰，宜火助之；冬土外寒内温，宜火暖之。",
+   "count": 1
+  },
+  {
+   "key": "rizhu",
+   "value": "己",
+   "sample_rule": "QR-03-00",
+   "sample_statement": "土主信、性重，散在四维，不立一方；春土气虚而薄，宜火生之；夏土性燥，宜水润之；秋土子旺母衰，宜火助之；冬土外寒内温，宜火暖之。",
+   "count": 1
+  },
+  {
+   "key": "rizhu",
+   "value": "庚",
+   "sample_rule": "QR-04-00",
+   "sample_statement": "金性沉重、主义、性刚；春金犹寒，宜火气以舒之；夏金尤柔，宜土厚以扶之；秋金当权，喜火炼以成器；冬金寒甚，喜火暖以解冻。",
+   "count": 1
+  },
+  {
+   "key": "rizhu",
+   "value": "辛",
+   "sample_rule": "QR-04-00",
+   "sample_statement": "金性沉重、主义、性刚；春金犹寒，宜火气以舒之；夏金尤柔，宜土厚以扶之；秋金当权，喜火炼以成器；冬金寒甚，喜火暖以解冻。",
+   "count": 1
+  },
+  {
+   "key": "rizhu",
+   "value": "壬",
+   "sample_rule": "QR-05-00",
+   "sample_statement": "水主智、性聪，至清而柔；春水泛滥，宜土堤之；夏水涸竭，宜金生之；秋水通源，喜水之归；冬水冻凝，喜火之暖。",
+   "count": 1
+  },
+  {
+   "key": "rizhu",
+   "value": "癸",
+   "sample_rule": "QR-05-00",
+   "sample_statement": "水主智、性聪，至清而柔；春水泛滥，宜土堤之；夏水涸竭，宜金生之；秋水通源，喜水之归；冬水冻凝，喜火之暖。",
+   "count": 1
+  },
+  {
+   "key": "ziwei_star",
+   "value": "天魁",
+   "sample_rule": "TAIWEIFU-010",
+   "sample_statement": "魁钺同行，位居台辅；君臣庆会，材善经邦。",
+   "count": 1
+  },
+  {
+   "key": "ziwei_star",
+   "value": "天钺",
+   "sample_rule": "TAIWEIFU-010",
+   "sample_statement": "魁钺同行，位居台辅；君臣庆会，材善经邦。",
+   "count": 1
+  },
+  {
+   "key": "ziwei_palace",
+   "value": "夫妻",
+   "sample_rule": "TAIWEIFU-014",
+   "sample_statement": "太阴会文曲于妻宫，蟾宫折桂，文章全盛。",
+   "count": 1
+  },
+  {
+   "key": "ziwei_star",
+   "value": "禄存",
+   "sample_rule": "TAIWEIFU-015",
+   "sample_statement": "禄居奴仆，纵有官也奔驰；帝遇凶徒，虽获吉而无道。",
+   "count": 1
+  },
+  {
+   "key": "ziwei_palace",
+   "value": "交友",
+   "sample_rule": "TAIWEIFU-015",
+   "sample_statement": "禄居奴仆，纵有官也奔驰；帝遇凶徒，虽获吉而无道。",
+   "count": 1
+  }
+ ]
+}
