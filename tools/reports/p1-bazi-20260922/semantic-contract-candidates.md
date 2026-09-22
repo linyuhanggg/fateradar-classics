@@ -26,3 +26,23 @@ python3 tools/verify-semantic-contract-candidates.py
 - `DITIANSUICHA-051`：[`sources/fulltext/bazi/ditiansui-chanwei/fulltext.md:13400`](../../../sources/fulltext/bazi/ditiansui-chanwei/fulltext.md#L13400)–`13430`。原文同时要求喜忌、重干支、盖头/截脚和原局制化；当前只有 `yongshen` 名称、自由文本 `natal_favorable_context` 和干支，不能推出用神得力/忌神得权。
 
 `natal_favorable_context` 仅是描述性文本；`shishen`、`yongshen`、动态关系文本只能作为候选输入，不能代理保留语义键。三条均继续 `blocked`，待人工裁决后再补结构化事实、三态样盘和正式交接。
+
+## 给主会话的最小裁决表
+
+下一轮只需回答下面的合同问题；回答前不需要改代码。每个被采纳的键都必须同时给出值域、作用层、缺失/零值语义，以及共享 fixture 中各一条 `满足`、`不满足`、`信息不足` 样盘。
+
+1. `SANMINGTONGH-010`
+   - `甲日克戊岁` 是否只限原文示例，还是允许推广到全部日干克岁干？
+   - `庚申制甲` 的证据是同柱 `庚申`，还是任一可计算的庚辛/金根条件？
+   - `癸戊相合` 是否要求合化、得令或不被冲破？
+   - 同时有一项、两项救应时，输出 `成立`、分级结果，还是仍为 `信息不足`？
+2. `SANMINGTONGH-011`
+   - `natal_binglin_class` 的分类算法和多类优先级是什么？
+   - `natal_favorable_context` 的稳定枚举是什么？自由文本不能直接消费。
+   - 岁运并临的作用如何由本命、大运、流年三层事实判定？
+3. `DITIANSUICHA-051`
+   - `yongshen_effective` 与 `jishen_empowered` 的值域和判定条件是什么？
+   - 盖头/截脚的权重、原局制化和冲战覆盖例外如何编码？
+   - “大运重支、太岁重干”只作为输入权重，还是有可审计的三态输出？
+
+未回答的项目继续返回 `信息不足`；不能用十神名称、神煞名称或喜用文本代答。
