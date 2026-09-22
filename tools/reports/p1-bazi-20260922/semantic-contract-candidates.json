@@ -1,0 +1,182 @@
+{
+  "schema": "fateradar-bazi-semantic-contract-candidate-v1",
+  "date": "2026-09-22",
+  "status": "not_adopted",
+  "semanticContractStatus": "pending",
+  "fixture": {
+    "path": "tools/reports/facts-sample.json",
+    "sha256": "ee750a96ae11dece15bdcef26b5e0fcc6b928a1e6947f1aa7ffd47fdb4c53aa7",
+    "caseCount": 26
+  },
+  "policy": {
+    "rulesMutation": "本候选不修改 rules.yaml、manifest、applicable_to 或 verified。",
+    "unknown": "缺少正式语义或作用无法判定时返回信息不足。",
+    "proxyBan": "shishen、yongshen 名称、动态关系文本和自由文本喜忌不能单独代理语义键。"
+  },
+  "contracts": [
+    {
+      "ruleId": "SANMINGTONGH-010",
+      "adoptableNow": false,
+      "source": {
+        "file": "sources/fulltext/bazi/sanming-tonghui/fulltext.md",
+        "startLine": 1080,
+        "endLine": 1083,
+        "observations": [
+          "L1081 区分岁伤日干与日犯岁君。",
+          "L1082 给出甲日克戊年时庚申制甲、癸与戊相合的救应例子，并说明一字、二字和无字的不同结果。",
+          "L1083 继续要求大运、日主与太岁相和相顺或遭刑冲破害。"
+        ]
+      },
+      "candidateContract": {
+        "outputs": {
+          "rescue_condition": ["成立", "不成立", "信息不足"],
+          "transit_effect_semantics": ["成立", "不成立", "信息不足"]
+        },
+        "scope": {"layer": "流年", "year": "selected"},
+        "requiredFacts": [
+          "natal_day_gan",
+          "liunian_gan",
+          "liunian_natal_relation",
+          "natal_rescue_evidence",
+          "dayun_rescue_evidence",
+          "transit_effect_semantics"
+        ],
+        "candidateCondition": "先确认日干克选定流年岁干，再按原局/大运的正式救应证据判断；仅有干支相合、相克名称时不得判成立。",
+        "exceptions": [
+          "当生太岁与游行太岁分开处理。",
+          "甲日克戊年示例不能自动推广到其他干支对。",
+          "若同时存在多个救应，必须有优先级和是否可叠加的流派裁决。"
+        ],
+        "triState": {
+          "satisfied": "有完整日犯岁君条件、正式救应证据和作用结论。",
+          "not_satisfied": "输入齐全且确认无救应或作用不成立；不能由救应键缺失推出。",
+          "unknown": "缺任一正式救应/作用输入，或流派未裁决推广范围。"
+        }
+      },
+      "currentEvidence": {
+        "shapeOnly": ["natal_day_gan", "liunian_gan", "liunian_natal_relation", "dayun_gan_zhi", "dayun_liunian_relation"],
+        "missing": ["natal_rescue_evidence", "dayun_rescue_evidence", "transit_effect_semantics"],
+        "fixtures": {
+          "satisfied": null,
+          "not_satisfied": null,
+          "unknown": {"case": "caseFlowYearUnknown", "year": 2100}
+        }
+      },
+      "humanDecisions": [
+        "庚申制甲必须是同柱庚申、任一庚辛金根，还是另有力量阈值？大运救应是否同一算法？",
+        "癸合戊的有情与庚申制甲能否叠加；只有一项时三值域中的成立/不成立如何定义？",
+        "相合有情是否必须判断合化、得令、被冲破，还是只判断合的存在？"
+      ]
+    },
+    {
+      "ruleId": "SANMINGTONGH-011",
+      "adoptableNow": false,
+      "source": {
+        "file": "sources/fulltext/bazi/sanming-tonghui/fulltext.md",
+        "startLine": 1084,
+        "endLine": 1084,
+        "observations": [
+          "原文把甲子流年再逢甲子大运定义为岁运并临。",
+          "原文只给出羊刃七煞为凶、财官印绶亦吉的分类方向，并未给出命局分类和喜忌算法。"
+        ]
+      },
+      "candidateContract": {
+        "outputs": {
+          "natal_binglin_class": ["羊刃", "七杀", "财官印绶", "信息不足"],
+          "natal_favorable_context": ["有利", "不利", "信息不足"],
+          "suiyun_binglin_semantics": ["成立", "不成立", "信息不足"]
+        },
+        "scope": {"layer": "流年", "year": "selected"},
+        "requiredFacts": [
+          "suiyun_binglin",
+          "natal_binglin_class",
+          "natal_favorable_context",
+          "suiyun_binglin_semantics"
+        ],
+        "candidateCondition": "先用选定年份确认大运干支与流年干支相同，再用正式命局分类和喜忌/救应合同解释并临；形态键本身只证明并临形态。",
+        "exceptions": [
+          "羊刃、七杀、财官印绶可能同时出现，必须定义优先级或多标签域。",
+          "十神名称只可作输入候选，不能替代刃位、七杀作用和财官印绶分类。",
+          "自由文本 natal_favorable_context 必须有结构化值域和来源，不可解析字符串猜测。"
+        ],
+        "triState": {
+          "satisfied": "并临形态、命局分类、喜忌/救应作用均有正式事实。",
+          "not_satisfied": "所有必需事实存在且判断明确为不成立。",
+          "unknown": "只有并临形态，或分类/喜忌/救应任一缺失。"
+        }
+      },
+      "currentEvidence": {
+        "shapeOnly": ["suiyun_binglin", "dayun_gan_zhi", "liunian_gan_zhi", "shishen"],
+        "missing": ["natal_binglin_class", "suiyun_binglin_semantics"],
+        "nonContractual": ["natal_favorable_context"],
+        "fixtures": {
+          "satisfied": null,
+          "not_satisfied": null,
+          "unknown": {"case": "caseFlowYearUnknown", "year": 2100},
+          "shapePositiveOnly": {"case": "caseFlowYearBinglin", "year": 1993}
+        }
+      },
+      "humanDecisions": [
+        "刃、杀、财官印绶按日主/月令/透藏/根气如何分类；多类并存时输出单值还是多标签？",
+        "命局喜忌是针对日主、分类项还是整个流年作用；有利/不利的判定条件和救应是什么？",
+        "并临只在干支完全相同成立，还是允许同类/纳音等扩展？"
+      ]
+    },
+    {
+      "ruleId": "DITIANSUICHA-051",
+      "adoptableNow": false,
+      "source": {
+        "file": "sources/fulltext/bazi/ditiansui-chanwei/fulltext.md",
+        "startLine": 13400,
+        "endLine": 13430,
+        "observations": [
+          "L13400-L13407 区分大运重地支、太岁重天干，并要求结合喜行/忌行。",
+          "L13416-L13422 定义盖头、截脚及其对吉凶强度的影响。",
+          "L13423-L13430 增加原局制化、冲战和天干地支作用的例外。"
+        ]
+      },
+      "candidateContract": {
+        "outputs": {
+          "yongshen_effective": ["成立", "不成立", "信息不足"],
+          "jishen_empowered": ["成立", "不成立", "信息不足"],
+          "transit_effect_semantics": ["成立", "不成立", "信息不足"]
+        },
+        "scope": {"layer": "流年", "year": "selected"},
+        "requiredFacts": [
+          "yongshen_effective",
+          "jishen_empowered",
+          "transit_effect_semantics",
+          "natal_favorable_context",
+          "dayun_gan_zhi",
+          "liunian_gan_zhi"
+        ],
+        "candidateCondition": "以结构化用神/忌神、选定大运和流年干支及盖头/截脚关系判定作用；yongshen 名称或自由文本喜忌不够。",
+        "exceptions": [
+          "盖头/截脚是元素组合表，不等于所有日主和命局都同一强度。",
+          "大运地支与流年天干的权重、原局透干/根气/冲破必须明确。",
+          "源文的案例不能直接变成普遍阈值或现实事件规则。"
+        ],
+        "triState": {
+          "satisfied": "用神/忌神已结构化，作用方向和盖头/截脚/冲战例外均可复算。",
+          "not_satisfied": "输入齐全且作用明确不成立。",
+          "unknown": "缺忌神、作用方向、权重或例外任一项。"
+        }
+      },
+      "currentEvidence": {
+        "shapeOnly": ["dayun_gan_zhi", "liunian_gan_zhi", "dayun_direction"],
+        "nonContractual": ["yongshen", "natal_favorable_context"],
+        "missing": ["jishen_empowered", "yongshen_effective", "transit_effect_semantics"],
+        "fixtures": {
+          "satisfied": null,
+          "not_satisfied": null,
+          "unknown": {"case": "caseFlowYearUnknown", "year": 2100}
+        }
+      },
+      "humanDecisions": [
+        "用神、忌神的结构化值域和冲突/多用神规则是什么？",
+        "盖头、截脚和原局制化如何组合为作用结果；强度减半是否只是解释文字还是离散值？",
+        "大运重支、流年重干的权重和天克地冲/岁运冲克覆盖关系如何定义？"
+      ]
+    }
+  ]
+}

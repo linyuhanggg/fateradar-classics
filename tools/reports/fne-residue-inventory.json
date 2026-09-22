@@ -1,0 +1,990 @@
+{
+ "report": "unmapped 的 fact-not-emitted：**当前**缺什么（按主题分组）",
+ "generated_by": "t219",
+ "why": "t219 复核：距多数 fne 判断已过约 20 轮，事实层新增约 25 键，故按「缺什么」重新分组。结论：可立刻写的只有 1 条（月刃，本轮已落地）；其余成组阻塞于**具体事实**或**关系层**。",
+ "counts": {
+  "其它": 66,
+  "神煞·未算的具体名": 10,
+  "关系层（冲/合/刑/害/会/生克）": 58,
+  "岁运（大运/流年）": 11,
+  "历法细节（节气深浅/时辰五行/纳音正库）": 12,
+  "计数/多现": 1,
+  "格局/取用判定": 2
+ },
+ "groups": {
+  "其它": [
+   {
+    "rule_id": "DR-05",
+    "art": null,
+    "missing": "日支（妻宫）",
+    "statement": "男以正财（偏财）为妻、日支为妻宫；妻星与妻宫俱旺者得贤妻；妻星弱、妻宫被冲克者婚不利。"
+   },
+   {
+    "rule_id": "DITIANSUICHA-DR-05",
+    "art": null,
+    "missing": "时柱（子宫）／性别",
+    "statement": "男以官杀为子、女以食伤为子；时柱为子宫；子星生旺、子宫稳定者子嗣顺利。"
+   },
+   {
+    "rule_id": "DITIANSUICHA-038",
+    "art": null,
+    "missing": "性别（女命）",
+    "statement": "女命以夫星（正官）、子星（食伤）为重；夫星纯正、子星生旺者吉；古文有\"贞淫\"等贬义判语，现代不沿用。"
+   },
+   {
+    "rule_id": "SANMINGTONGH-051",
+    "art": null,
+    "missing": "日支（日坐临官禄位）",
+    "statement": "专禄格（日坐临官禄位）禄旺，需财官食伤为用以平衡；禄旺无制则过刚易折。"
+   },
+   {
+    "rule_id": "SANMINGTONGH-066",
+    "art": null,
+    "missing": "月支（日干临官在月支）",
+    "statement": "日干临官在月支为建禄；不取格而以扶抑论；常以月外财、官、食、伤为用。"
+   },
+   {
+    "rule_id": "R-09",
+    "art": null,
+    "missing": "月支/日支等地支（十干喜忌支位）",
+    "statement": "十干各有喜忌支位：甲喜寅卯、忌申酉；乙喜寅卯辰、忌酉戌；丙喜巳午、忌亥子；丁喜巳午未、忌子丑；戊喜巳午辰戌、忌寅"
+   },
+   {
+    "rule_id": "SANMINGTONGH-100",
+    "art": null,
+    "missing": "四柱干支（同气纯一 / 地支顺连）",
+    "statement": "四位纯全（四柱干支同气纯一）与一气生成（四柱地支顺连如寅卯辰巳）皆为专一格局；纯全太过则偏枯，一气顺连为美、逆乱"
+   },
+   {
+    "rule_id": "YUANHAIZIPIN-014",
+    "art": null,
+    "missing": "月支（日干临官在月 / 阳干刃在月）",
+    "statement": "建禄格（日干临官在月）与阳刃格（阳干刃在月）皆不取月令格局，而以扶抑论。"
+   },
+   {
+    "rule_id": "HJC",
+    "art": null,
+    "missing": "（账本未记）",
+    "statement": "占卦以动爻为变化之始、变卦为变化之终。"
+   },
+   {
+    "rule_id": "HJC-R001",
+    "art": null,
+    "missing": "（账本未记）",
+    "statement": "断卦先看日辰、月建对用神、世应、动爻的生克冲合与旺衰；不能只凭卦名或单个神煞下结论。"
+   },
+   {
+    "rule_id": "HJC-R003",
+    "art": null,
+    "missing": "（账本未记）",
+    "statement": "动爻主事情发动，变爻主后势或结果；动变比和、进退、回头克等决定进展。"
+   },
+   {
+    "rule_id": "HJC-R004",
+    "art": null,
+    "missing": "（账本未记）",
+    "statement": "用神有气且无明显损伤，所问有成；主象徒存但被伤，谋事不遂。"
+   },
+   {
+    "rule_id": "HJC-R005",
+    "art": null,
+    "missing": "（账本未记）",
+    "statement": "用神受伤须有救应；空、合、冲、墓、旺衰不能孤立解释，要看是否逢冲可用、合破无功、墓冲而发。"
+   },
+   {
+    "rule_id": "HJC-R006",
+    "art": null,
+    "missing": "（账本未记）",
+    "statement": "吉凶神煞、六神取象只能作旁证；核心判断仍以生克制化、用神旺衰和世应动变为主。"
+   },
+   {
+    "rule_id": "HJC-R008",
+    "art": null,
+    "missing": "（账本未记）",
+    "statement": "婚姻先看阴阳、六合六冲、世应合冲生克，再看财鬼是否空亡刑害。"
+   },
+   {
+    "rule_id": "HJC-R009",
+    "art": null,
+    "missing": "（账本未记）",
+    "statement": "求财先看财爻与子孙；财旺福兴利，财空福绝不利；父兄皆动、兄鬼克世多阻。"
+   },
+   {
+    "rule_id": "HJC-R016",
+    "art": null,
+    "missing": "（账本未记）",
+    "statement": "行人问归期，先找主象/用爻；用爻动则身已动，安静则未思归，生克合冲伏藏决定迟速与阻滞。"
+   },
+   {
+    "rule_id": "HZL-R003",
+    "art": null,
+    "missing": "（账本未记）",
+    "statement": "乱动时先看世上旁爻、世下亲爻，再以最旺或发动生世之爻为用。"
+   },
+   {
+    "rule_id": "MEIHUAYISHU-MR-05",
+    "art": null,
+    "missing": "体卦旺衰（体卦及其五行、时令旺衰）",
+    "statement": "体卦旺则吉力大、凶力减；体卦衰则吉力减、凶力大；判生克须先衡量旺衰。"
+   },
+   {
+    "rule_id": "ZENGSHANBUYI-007",
+    "art": null,
+    "missing": "（账本未记）",
+    "statement": "用神两现时，若仅一爻发动则取动爻；若两爻俱动或俱静，须再择其旺者。旬空、月破等取舍不可脱离实际占验机械套用。"
+   },
+   {
+    "rule_id": "ZR-05",
+    "art": null,
+    "missing": "（账本未记）",
+    "statement": "元神旺动而无伤——用神得力；忌神旺动而无制——用神受伤。"
+   },
+   {
+    "rule_id": "ZENGSHANBUYI-011",
+    "art": null,
+    "missing": "（账本未记）",
+    "statement": "用神被克处又逢生扶（日月或动爻）则危而不死；俗谓\"贪生忘克\"。"
+   },
+   {
+    "rule_id": "ZENGSHANBUYI-013",
+    "art": null,
+    "missing": "（账本未记）",
+    "statement": "月建生扶用神则旺、克伤用神则衰；月建之力贯穿一月。"
+   },
+   {
+    "rule_id": "ZENGSHANBUYI-017",
+    "art": null,
+    "missing": "（账本未记）",
+    "statement": "动爻与变爻间可成回头生、回头克、回头冲、回头合；变爻反作用于本动爻。"
+   },
+   {
+    "rule_id": "ZENGSHANBUYI-019",
+    "art": null,
+    "missing": "（账本未记）",
+    "statement": "动爻被日辰冲为动散，力减不能为大用。"
+   },
+   {
+    "rule_id": "ZENGSHANBUYI-021",
+    "art": null,
+    "missing": "（账本未记）",
+    "statement": "五爻静一爻动为独发，五爻动一爻静为独静；事之成败与应期仍由用神判断，不得舍用神而执独发、独静断事。"
+   },
+   {
+    "rule_id": "ZENGSHANBUYI-025",
+    "art": null,
+    "missing": "（账本未记）",
+    "statement": "反吟主反复颠倒、伏吟主呻吟忧虑；皆非吉象。"
+   },
+   {
+    "rule_id": "ZR-09",
+    "art": null,
+    "missing": "（账本未记）",
+    "statement": "归魂卦——主回归、还原；游魂卦——主漂泊、不定；问行人、问出行尤宜参看。"
+   },
+   {
+    "rule_id": "ZR-13",
+    "art": null,
+    "missing": "（账本未记）",
+    "statement": "占出行——以世爻为身；忌世动入墓 / 入空 / 受冲克；游魂卦不宜远行。"
+   },
+   {
+    "rule_id": "ZENGSHANBUYI-ZR-13",
+    "art": null,
+    "missing": "（账本未记）",
+    "statement": "占行人归否——以应爻 / 远人之爻为用；用动来生世 / 临归魂——速归；用入墓入空——未归。"
+   },
+   {
+    "rule_id": "ZENGSHANBUYI-ZR-14",
+    "art": null,
+    "missing": "（账本未记）",
+    "statement": "占兴讼胜负——世应相战看哪边得日月生扶；世旺应衰胜、世衰应旺败。"
+   },
+   {
+    "rule_id": "ZHOUYIZHEZHO-006",
+    "art": null,
+    "missing": "相邻两爻的阴阳属性（阴阳相比为亲／同性为敌）",
+    "statement": "相邻两爻为比；阴阳相比为亲、同性为敌。比关系次于应。"
+   },
+   {
+    "rule_id": "ZHOUYIZHEZHO-007",
+    "art": null,
+    "missing": "卦主（成卦之主／主卦之主）",
+    "statement": "一卦之主爻多为五爻（君位）；或以\"成卦之主\"（一阴一阳独成卦义者）；或以\"主卦之主\"（位最尊德最大者）。"
+   },
+   {
+    "rule_id": "LX-05",
+    "art": null,
+    "missing": "时支、年支（月支以外的柱地支）",
+    "statement": "四季为五行墓万物所终；时逢之虽会吉而贵亦主妨害尊亲；四孟带煞必尅。"
+   },
+   {
+    "rule_id": "LIXUZHONGMIN-LX-05",
+    "art": null,
+    "missing": "时支（四仲）、年支（年死败）",
+    "statement": "死败全逢刑犹寿考；四仲时生主无妨败；年死败有生主有寿及父母。"
+   },
+   {
+    "rule_id": "LZ-02-03",
+    "art": null,
+    "missing": "干禄/驿马与五行绝地（十二长生）",
+    "statement": "绝处建禄成贵"
+   },
+   {
+    "rule_id": "LZ-06-05",
+    "art": null,
+    "missing": "裸形/夹煞等神煞名",
+    "statement": "裸形夹煞至凶"
+   },
+   {
+    "rule_id": "LZ-08-08",
+    "art": null,
+    "missing": "勾绞/元亡/三归/宅墓等神煞名",
+    "statement": "万里回还三归之地"
+   },
+   {
+    "rule_id": "LZ-08-09",
+    "art": null,
+    "missing": "五行力量对比（金火两停）",
+    "statement": "金火两停成大器"
+   },
+   {
+    "rule_id": "WX-05-02",
+    "art": null,
+    "missing": "干禄（十干禄位）及其与驿马的同位关系",
+    "statement": "祿馬同乡上贵"
+   },
+   {
+    "rule_id": "WX-09-02",
+    "art": null,
+    "missing": "丧门/孤角神煞名",
+    "statement": "僧道九流吏卒"
+   },
+   {
+    "rule_id": "YUZHAOSHENYI-YZ-03",
+    "art": null,
+    "missing": "年/日支（子午）与庚甲二干在各柱的位置",
+    "statement": "子午+庚甲组合主他乡外立。"
+   },
+   {
+    "rule_id": "YUZHAOSHENYI-012",
+    "art": null,
+    "missing": "四柱地支（辰戌）与旺相休囚状态",
+    "statement": "辰戌魁罡往来，原文按旺相休囚分作狱官、公吏、屠儿、争讼等。"
+   },
+   {
+    "rule_id": "YZ-05",
+    "art": null,
+    "missing": "各柱地支（辰戌丑未）与干墓/库墓之旺气",
+    "statement": "干墓在辰戌丑未；有旺气者为库主储藏，无气者为墓主收藏不发。"
+   },
+   {
+    "rule_id": "YUZHAOSHENYI-032",
+    "art": null,
+    "missing": "柱支（卯酉/巳亥）与所配天干（癸乙壬、乙辛丁）",
+    "statement": "卯酉门户上下全土，原文主腰脚沉滞。"
+   },
+   {
+    "rule_id": "YUZHAOSHENYI-042",
+    "art": null,
+    "missing": "旬（甲子旬等）与各柱干支年顺干",
+    "statement": "旬中六甲(甲子甲戌甲申甲午甲辰甲寅)全见，主尊荣。"
+   },
+   {
+    "rule_id": "YUZHAOSHENYI-051",
+    "art": null,
+    "missing": "年/日/时支（四孟所在柱原文未指明）",
+    "statement": "四孟(寅申巳亥)有力之乡见者主发。"
+   },
+   {
+    "rule_id": "DALIURENDAQU-014",
+    "art": null,
+    "missing": "驿马；天魁（戌）；天将入传位置（且需天魁与太常同时入传）",
+    "statement": "官爵课起例：课得岁月年命驿马发用，又天魁、太常入传；本段以此名官爵，并解释驿马及天魁印绶。"
+   },
+   {
+    "rule_id": "DALIURENDAQU-017",
+    "art": null,
+    "missing": "月令旺相休囚死；类神/六亲",
+    "statement": "已确定发用、月令旺相休囚死口径；若判断多少，还必须先按问题确定类神或六亲。"
+   },
+   {
+    "rule_id": "LIURENZHIYIN-020",
+    "art": null,
+    "missing": "类神；六亲；旺衰",
+    "statement": "问题类神已由有出处的专项映射确定，三传六亲、旺衰和空亡完整。"
+   },
+   {
+    "rule_id": "QM-P13",
+    "art": null,
+    "missing": "时干、日干（天干类 FactKey）",
+    "statement": "时干克日干乃五不遇而灾生"
+   },
+   {
+    "rule_id": "QM-P30",
+    "art": null,
+    "missing": "天盘干（庚）、时干",
+    "statement": "时格 庚临时干三奇"
+   },
+   {
+    "rule_id": "QM-P26",
+    "art": null,
+    "missing": "地盘干（丁）；直使（值使门）落宫",
+    "statement": "直使加地丁为守门"
+   },
+   {
+    "rule_id": "GUOTIANJING-012",
+    "art": null,
+    "missing": "科名/科甲/文星/魁星/官星/印星/催官/禄神/喜神/爵星（神煞层 FactKey 缺失）",
+    "statement": "科名 / 科甲 / 文星 / 魁星 / 官星 / 印星 / 催官 / 禄神 / 喜神 / 爵星 共 10 星，主"
+   },
+   {
+    "rule_id": "GUOTIANJING-013",
+    "art": null,
+    "missing": "天经/地纬/天马/地驿/卦气/三元禄/职元/局主（神煞层 FactKey 缺失）",
+    "statement": "天经 / 地纬 / 天马 / 地驿 / 卦气 / 三元禄 / 职元 / 局主 共 8 星，构成命盘第二层主星。"
+   },
+   {
+    "rule_id": "GUOTIANJING-014",
+    "art": null,
+    "missing": "斗标/注受/天乙/玉堂/文昌/天厨/岁殿/岁驾（神煞层 FactKey 缺失）",
+    "statement": "斗标 / 注受 / 天乙 / 玉堂 / 文昌 / 天厨 / 岁殿 / 岁驾 共 8 星，主贵人扶持。"
+   },
+   {
+    "rule_id": "GUOTIANJING-016",
+    "art": null,
+    "missing": "月廉/月煞/值难/的杀/咸池/大煞（神煞层 FactKey 缺失）",
+    "statement": "月廉 / 月煞 / 值难 / 的杀 / 咸池 / 大煞 共 6 星；多与\"色 / 难 / 杀\"相关。"
+   },
+   {
+    "rule_id": "GUOTIANJING-017",
+    "art": null,
+    "missing": "孤虚/孤辰/寡宿（神煞层 FactKey 缺失）；果老系空亡（qizheng 引擎未产出 kongwang）",
+    "statement": "空亡 / 孤虚 / 孤辰 / 寡宿 共 4 煞。"
+   },
+   {
+    "rule_id": "GUOTIANJING-GR-05",
+    "art": null,
+    "missing": "宫主/度主/身主的身份与强弱（由宫/宿五行派生，qizheng 引擎未产出；亦无强弱 FactKey）",
+    "statement": "宫强而度弱者不美，度高而宫衰者不善，必须宫度二主皆强为尽美；身主尤为切要。"
+   },
+   {
+    "rule_id": "XXDC-R008",
+    "art": null,
+    "missing": "十一曜运行状态 迟/留/伏/逆（qizheng 引擎未产出）",
+    "statement": "迟、留、伏、逆分别影响有用星和煞星力量；不可用静态星度替代动态状态。"
+   },
+   {
+    "rule_id": "TAIWEIFU-008",
+    "art": null,
+    "missing": "吉星/凶星分类（诸星吉／诸星凶）；羊铃与杀破的关联关系",
+    "statement": "七杀破军专依羊铃之虐；诸星吉，逢凶也吉；诸星凶，逢凶也凶。"
+   },
+   {
+    "rule_id": "TAIWEIFU-017",
+    "art": null,
+    "missing": "十二长生位（绝地/生乡）",
+    "statement": "杀居绝地，天年夭似颜回；贪坐生乡，寿考永如彭祖。"
+   },
+   {
+    "rule_id": "TAIWEIFU-020",
+    "art": null,
+    "missing": "（账本未记）",
+    "statement": "童子限如水上泡沤，老人限似风中燃烛；遇杀无制乃流年最忌。"
+   },
+   {
+    "rule_id": "ZIWEIDOUSHUQ-054",
+    "art": null,
+    "missing": "（账本未记）",
+    "statement": "大限行至南斗诸星宫得力一类断法，行至北斗诸星宫得力另一类断法；不得混判。"
+   },
+   {
+    "rule_id": "ZIWEIDOUSHUQ-ZW-07",
+    "art": null,
+    "missing": "性别（女命/男命）",
+    "statement": "女命骨髓赋专论女命吉凶，含\"刑夫克子煞\"、\"伤夫煞\"等大量父权时代偏见断语；本赋仅作命书历史研究展示。"
+   },
+   {
+    "rule_id": "ZIWEIDOUSHUQ-065",
+    "art": null,
+    "missing": "（账本未记）",
+    "statement": "命局有先贫后富之象（如大限早凶后吉、武贪格三十后发等）；为命学动态发展观，非命定贫富。"
+   }
+  ],
+  "神煞·未算的具体名": [
+   {
+    "rule_id": "DITIANSUICHA-039",
+    "art": null,
+    "missing": "神煞具体名（关煞）",
+    "statement": "小儿命主要看关煞、五行偏枯、冲战过重；任氏多次强调\"小儿命断夭折须极审慎\"。"
+   },
+   {
+    "rule_id": "SANMINGTONGH-034",
+    "art": null,
+    "missing": "月支三合组与德干/秀干（德秀神煞）",
+    "statement": "德秀按月支三合组分别取德干和秀干，须无破冲克压，并考察学堂财官扶助；不能据单一德秀标签判定容貌品性。"
+   },
+   {
+    "rule_id": "SANMINGTONGH-035",
+    "art": null,
+    "missing": "年支与元辰（命前/命后辰）神煞",
+    "statement": "元辰冲前后法须分阳男阴女与阴男阳女，且有遇合反吉及子平原有七煞岁运复遇的另一解释，不能只用固定年支对照判损耗。"
+   },
+   {
+    "rule_id": "SANMINGTONGH-070",
+    "art": null,
+    "missing": "神煞具体名（关煞）与刑冲破害",
+    "statement": "小儿命须看关煞与刑冲破害；关煞重者主夭折或多病。"
+   },
+   {
+    "rule_id": "SANMINGTONGH-076",
+    "art": null,
+    "missing": "神煞具体名（关煞）与冲战",
+    "statement": "小儿/少年命局冲战过重、关煞重、五行偏枯至极，古法断为横夭。"
+   },
+   {
+    "rule_id": "YUANHAIZIPIN-031",
+    "art": null,
+    "missing": "神煞具体名（关煞）与冲战",
+    "statement": "小儿命局看关煞、五行偏枯、冲战过重；古法断夭折需极度谨慎。"
+   },
+   {
+    "rule_id": "YUANHAIZIPIN-035",
+    "art": null,
+    "missing": "神煞具体名（华盖）与六亲事实",
+    "statement": "僧道之命的古法判断：五行偏枯、印星过重、华盖重、六亲无依等。"
+   },
+   {
+    "rule_id": "WX-08-01",
+    "art": null,
+    "missing": "「小儿关煞」神煞名与童限/年龄事实",
+    "statement": "小儿关煞"
+   },
+   {
+    "rule_id": "GUOTIANJING-015",
+    "art": null,
+    "missing": "阳刃/唐符/国印/天雄/地雌/年符/月符/大耗/小耗/天耗/地耗（神煞层 FactKey 缺失）",
+    "statement": "阳刃 / 唐符 / 国印 / 天雄 / 地雌 / 年符 / 月符 / 大耗小耗 / 天耗地耗 共 9 星；阳刃 "
+   },
+   {
+    "rule_id": "ZW-08",
+    "art": null,
+    "missing": "岁前/将前诸星（博士/力士/青龙/将军/大耗/死符/病符/官府/奏书/白虎/太岁）与小儿关煞",
+    "statement": "小儿命论关煞与生时吉凶；关煞重者古书称\"难养\"；生时不确则命局误。"
+   }
+  ],
+  "关系层（冲/合/刑/害/会/生克）": [
+   {
+    "rule_id": "DITIANSUICHA-045",
+    "art": null,
+    "missing": "透干／化气与当令（化神是否有根、是否被冲克）",
+    "statement": "天干五合化气为真化的条件：化神当令、有根、不被冲克。"
+   },
+   {
+    "rule_id": "SANMINGTONGH-013",
+    "art": null,
+    "missing": "化神之根与冲克破合（透干/合化结构）",
+    "statement": "天干五合化气需化神当令、四柱有化神之根、不被冲克破合者方真化。"
+   },
+   {
+    "rule_id": "SANMINGTONGH-048",
+    "art": null,
+    "missing": "禄（临官）位与贵人神煞、地支三合局",
+    "statement": "官印禄库（官印禄库俱全为贵）、相刑遇贵（刑中有贵人解）、三合遇贵（三合局又遇贵人）——三者均为官星得辅助或救应的"
+   },
+   {
+    "rule_id": "SANMINGTONGH-078",
+    "art": null,
+    "missing": "年柱/时柱干支组合",
+    "statement": "古法由八字推孕中男女，以年柱时柱或特定干支组合（如阳年阳月阳日阳时生男等）推断。"
+   },
+   {
+    "rule_id": "SANMINGTONGH-094",
+    "art": null,
+    "missing": "地支（子午丑未）与合冲",
+    "statement": "子午双包格：命局子午对冲而各有包裹得宜（如子被丑合包裹、午被未合包裹）；冲中有合、动中有制则为贵。"
+   },
+   {
+    "rule_id": "MR-03",
+    "art": null,
+    "missing": "体卦／用卦的五行与体用生克关系（体克用·用克体·用生体·体生用·比和）",
+    "statement": "求占者报数起卦，以体用生克及卦象类比断当日动静吉凶；用克体凶、体克用顺、比和平、用生体得、体生用失。"
+   },
+   {
+    "rule_id": "MEIHUAYISHU-MR-04",
+    "art": null,
+    "missing": "体用五行生克关系（用生体／体生用／用克体／体克用／体用比和）",
+    "statement": "用卦生体卦——大吉，主有外财外喜；体卦生用卦——主耗、退财；用卦克体卦——大凶；体卦克用卦——主顺、克他人；体用"
+   },
+   {
+    "rule_id": "MEIHUAYISHU-014",
+    "art": null,
+    "missing": "互卦／变卦之卦与体用的生克关系（互卦、变卦、体卦、用卦）",
+    "statement": "互卦看事之中（过程曲折），变卦看事之终（结果归宿）；互变之卦与体用之生克须合参。"
+   },
+   {
+    "rule_id": "MEIHUAYISHU-016",
+    "art": null,
+    "missing": "变卦与体卦的生克关系及变卦旺衰",
+    "statement": "变卦旺则减体之力，变卦克体则祸；变卦生体则福。"
+   },
+   {
+    "rule_id": "MR-07",
+    "art": null,
+    "missing": "卦象多寡（坎多／离多／震多／巽多／坤多／艮多）与体用生克",
+    "statement": "体克用、用克体晴；用生体雨；坎多雨；离多晴；震多雷；巽多风；坤多阴；艮多雾。"
+   },
+   {
+    "rule_id": "MEIHUAYISHU-MR-07",
+    "art": null,
+    "missing": "体用生克关系（用克体／体克用／用生体／体生用／比和）",
+    "statement": "用克体凶、体克用顺、用生体得益、体生用耗损、比和顺利；卦象再合参。"
+   },
+   {
+    "rule_id": "MEIHUAYISHU-021",
+    "art": null,
+    "missing": "体用取象（体为家宅／用为外事）与体用生克关系",
+    "statement": "体为家宅、用为外事；体克用宅吉、用克体宅有外祟；用生体得外援、体生用宅气泄；比和家宅安。"
+   },
+   {
+    "rule_id": "MEIHUAYISHU-022",
+    "art": null,
+    "missing": "卦象取象（屋舍新旧／坐向／构件）与体用生克关系",
+    "statement": "屋舍新旧、坐向、构件依卦象分别取；体克用屋无大碍。"
+   },
+   {
+    "rule_id": "MR-08",
+    "art": null,
+    "missing": "体用生克关系（体为求婚者／用为对方）",
+    "statement": "体为求婚者、用为对方；用生体或体克用婚成；用克体或体生用难成；比和顺成。"
+   },
+   {
+    "rule_id": "MEIHUAYISHU-MR-08",
+    "art": null,
+    "missing": "卦之阴阳（阳卦为男／阴卦为女）与体用生克关系",
+    "statement": "体为母、用为子；阳卦为男、阴卦为女；体克用 / 用克体产难；体生用 / 用生体顺产；比和顺。"
+   },
+   {
+    "rule_id": "MR-09",
+    "art": null,
+    "missing": "体用生克关系（体为我／用为财）",
+    "statement": "体为我、用为财；用生体得财、体克用得财；体生用耗财、用克体破财；比和守成。"
+   },
+   {
+    "rule_id": "MEIHUAYISHU-MR-09",
+    "art": null,
+    "missing": "体用生克关系（交易门）",
+    "statement": "体用生克同求财；用克体交易凶；体克用交易顺。"
+   },
+   {
+    "rule_id": "MR-10",
+    "art": null,
+    "missing": "体用生克关系（体为出行者／用为去处）",
+    "statement": "体为出行者、用为去处；体克用顺、用生体得益；用克体凶忌；体生用劳形耗资。"
+   },
+   {
+    "rule_id": "MEIHUAYISHU-MR-10",
+    "art": null,
+    "missing": "体用生克关系（体为占者／用为行人）",
+    "statement": "体为占者、用为行人；用生体行人速归；体生用未归；用克体行人遇险；体克用行人受制。"
+   },
+   {
+    "rule_id": "MEIHUAYISHU-029",
+    "art": null,
+    "missing": "体用生克关系（体为求见者／用为所见）",
+    "statement": "体为求见者、用为所见；用生体可见、有益；体克用可见而不悦；用克体不见或有阻。"
+   },
+   {
+    "rule_id": "MEIHUAYISHU-030",
+    "art": null,
+    "missing": "用卦方位（用方位即物之方）与体用生克关系",
+    "statement": "体为失主、用为物 / 拿者；用方位即物之方；体克用易得、用克体难得；卦象类比物形与去向。"
+   },
+   {
+    "rule_id": "MR-11",
+    "art": null,
+    "missing": "体用生克关系与卦象类病象（坎肾／离心／震肝／艮脾）",
+    "statement": "体为病人、用为病；用克体病重；体克用病可制；用生体反耗体；体生用病退；比和病稳。卦象类病象（坎肾、离心、震肝、艮"
+   },
+   {
+    "rule_id": "MR-12",
+    "art": null,
+    "missing": "体用生克关系（体为告者／用为对方）",
+    "statement": "体为告者、用为对方；体克用胜、用克体败；用生体有人助、体生用己耗。"
+   },
+   {
+    "rule_id": "MEIHUAYISHU-MR-12",
+    "art": null,
+    "missing": "体用生克关系（体为后人／用为坟）",
+    "statement": "体为后人、用为坟；体生用耗、用生体福；用克体凶；体克用安。"
+   },
+   {
+    "rule_id": "LIXUZHONGMIN-078",
+    "art": null,
+    "missing": "四柱干支及柱间生克（主本/时日关系）",
+    "statement": "主本保合未有贫贱之人；时日乖违岂有久荣之理。"
+   },
+   {
+    "rule_id": "LIXUZHONGMIN-085",
+    "art": null,
+    "missing": "天德贵人、月将、事合神（柱间合神）",
+    "statement": "天月德临月将事合神；金印垂腰之贵；递相揖让调鼎位极人臣。"
+   },
+   {
+    "rule_id": "LIXUZHONGMIN-095",
+    "art": null,
+    "missing": "大运/流年干支与三刑、冲柱主本之关系",
+    "statement": "三元值鬼+二运三刑+并冲柱主本与行年不相承=黄泉失所之命。"
+   },
+   {
+    "rule_id": "LIXUZHONGMIN-096",
+    "art": null,
+    "missing": "大运伏吟与丧吊/白衣/飞廉/孤寡/岁刑等神煞名",
+    "statement": "金破碎而不返；运至伏吟逢丧吊白衣飞廉孤寡岁刑尅身。"
+   },
+   {
+    "rule_id": "LZ-05-02",
+    "art": null,
+    "missing": "财星（我克者）在月令的旺衰/绝地与干禄",
+    "statement": "财绝命衰建禄不富"
+   },
+   {
+    "rule_id": "LZ-05-05",
+    "art": null,
+    "missing": "干禄/驿马与柱干支生克（背禄逐马）",
+    "statement": "背禄逐马克妻"
+   },
+   {
+    "rule_id": "LZ-05-06",
+    "art": null,
+    "missing": "四柱干支、月将与柱间合、旺相休败",
+    "statement": "禄马同乡两府之贵"
+   },
+   {
+    "rule_id": "LZ-07-01",
+    "art": null,
+    "missing": "四煞/五鬼/六害/七伤/地网天罗/三元九宫等名相",
+    "statement": "四煞五鬼六害七伤"
+   },
+   {
+    "rule_id": "WX-05-03",
+    "art": null,
+    "missing": "三奇贵人/天德贵人等神煞名与三刑之地支",
+    "statement": "三奇贵格"
+   },
+   {
+    "rule_id": "WX-08-04",
+    "art": null,
+    "missing": "纳音年命、父位五行（克母者）与月令旺相",
+    "statement": "父母位"
+   },
+   {
+    "rule_id": "YZ-01",
+    "art": null,
+    "missing": "年支（三合生气）、天德合与日时柱的干音关系",
+    "statement": "卦逢生气天德合，仍要长生有所归；先看生我何为父，次看克我是何儿。"
+   },
+   {
+    "rule_id": "YUZHAOSHENYI-YZ-02",
+    "art": null,
+    "missing": "各柱干支/纳音及其干克支、支克干关系",
+    "statement": "干尅支为顺，主头面尊老；支尅干为逆，主身体四支与陰人小口。干尅在尊位为重，音尅在身位为切。"
+   },
+   {
+    "rule_id": "YUZHAOSHENYI-004",
+    "art": null,
+    "missing": "时柱干支与纳音及其与日柱的干克/音克",
+    "statement": "时柱尅日柱，干尅轻、音尅重；干音俱尅则为重伤。"
+   },
+   {
+    "rule_id": "YUZHAOSHENYI-026",
+    "art": null,
+    "missing": "地支（辰午酉亥）自刑与柱间下克上关系",
+    "statement": "辰午酉亥自刑+下尅上重见，主自凶。"
+   },
+   {
+    "rule_id": "YZ-06",
+    "art": null,
+    "missing": "月合（月德之合神）与四正所落柱位",
+    "statement": "月德合见于四正(子午卯酉)，主十分作福。"
+   },
+   {
+    "rule_id": "YUZHAOSHENYI-YZ-06",
+    "art": null,
+    "missing": "月合（月德合神）",
+    "statement": "阳干月德主贵人扶助、陰干主陰人用力。"
+   },
+   {
+    "rule_id": "YUZHAOSHENYI-041",
+    "art": null,
+    "missing": "胎元与四柱干支的朝拱（干合）关系",
+    "statement": "胎朝月、月朝日、日朝时之朝拱关系，主倍禄。"
+   },
+   {
+    "rule_id": "YUZHAOSHENYI-048",
+    "art": null,
+    "missing": "年/月/时柱天干（四重干合）",
+    "statement": "命局四重干合者，主妻或夫再立、子郎重生。"
+   },
+   {
+    "rule_id": "LIURENMIBEN-009",
+    "art": null,
+    "missing": "所乘神；旺衰；生克；日鬼与辰两课的关系",
+    "statement": "已有天将、所乘神、旺衰与生克事实。"
+   },
+   {
+    "rule_id": "LIURENMIBEN-015",
+    "art": null,
+    "missing": "合入传/德入传；鬼；墓；刑冲破害；旺衰",
+    "statement": "adapter 已输出合、鬼、墓、刑冲破害及旺衰。"
+   },
+   {
+    "rule_id": "LIURENMIBEN-019",
+    "art": null,
+    "missing": "三传所乘地支；巳/亥入传；干支同出；生干合支/生支合干（生合关系）",
+    "statement": "adapter 显示巳/亥、干支同出、或生干合支/生支合干的明确结构。"
+   },
+   {
+    "rule_id": "LIURENZHIYIN-008",
+    "art": null,
+    "missing": "天盘十二神落宫及其冲位关系；is_fanyin 标记",
+    "statement": "adapter 标记十二神各临冲位，`is_fanyin=true`。"
+   },
+   {
+    "rule_id": "LIURENZHIYIN-014",
+    "art": null,
+    "missing": "三传所乘地支；三合局关系",
+    "statement": "三传形成三合局，且明确调用的是张洪注本第三十章现代附录。"
+   },
+   {
+    "rule_id": "LIURENZHIYIN-016",
+    "art": null,
+    "missing": "六亲（三传六亲）；旺衰；墓；三传与日干的生克关系",
+    "statement": "用户问收款、入账或求财，三传、六亲、旺衰、空墓与天将已由确定性事实层给出。"
+   },
+   {
+    "rule_id": "LIURENZHIYIN-018",
+    "art": null,
+    "missing": "日支；日干/日支五行；日干与日支的生克关系",
+    "statement": "日干、日支及其五行均由同一确定性课盘给出；问题属于可判成否的具体事件。"
+   },
+   {
+    "rule_id": "GUOTIANJING-GR-02",
+    "art": null,
+    "missing": "神煞/虚星 FactKey（天禄、天暗、天刑、天印…），xingming 系统未产出",
+    "statement": "天禄主享禄，天暗主暗昧；一吉一凶相对。"
+   },
+   {
+    "rule_id": "GUOTIANJING-011",
+    "art": null,
+    "missing": "天刑/天印/天囚/天权（神煞层 FactKey 缺失）",
+    "statement": "天刑（刑伤）/ 天印（官印）/ 天囚（拘禁）/ 天权（权柄）四星组合。"
+   },
+   {
+    "rule_id": "GUOTIANJING-018",
+    "art": null,
+    "missing": "三刑/六害/劫杀/亡神/天罗/地网（神煞层 FactKey 缺失）",
+    "statement": "三刑 / 六害 / 劫杀 / 亡神 / 天罗（戌亥）/ 地网（辰巳）共 6 煞群；多与\"狱讼\"\"博戏亡家\"\"伤害"
+   },
+   {
+    "rule_id": "XXDC-R005",
+    "art": null,
+    "missing": "身主/命主（及福禄恩官田财六主）身份 + 空实/强弱/夹拱/冲驀 判定（qizheng 引擎未产出）",
+    "statement": "先以身命二主落宫，按空实、强弱、夹拱、冲驀判人品出处高下，再看福禄恩官田财。"
+   },
+   {
+    "rule_id": "ZW-04",
+    "art": null,
+    "missing": "星曜亮度（庙旺利平闲陷）；三方四正会照关系",
+    "statement": "命宫主一生总论：星曜性质 + 庙旺利平闲陷 + 三方四正会照吉煞 + 四化加临；命宫为根本，必须与身宫合参。"
+   },
+   {
+    "rule_id": "ZW-05",
+    "art": null,
+    "missing": "格局名（日月并明/月朗天门/武贪格/火贪格/铃贪格/双禄交流/财禄夹马）；三方四正会照关系",
+    "statement": "富局主要包括：日月并明 / 月朗天门 / 武贪格 / 火贪格 / 铃贪格 / 双禄交流 / 财禄夹马等；命宫三方"
+   },
+   {
+    "rule_id": "ZIWEIDOUSHUQ-049",
+    "art": null,
+    "missing": "格局名（桃花犯主/贪武同行/廉贞会贪狼）",
+    "statement": "杂局主要包括：桃花犯主 / 贪武同行 / 廉贞会贪狼 等；吉凶兼备需细判。"
+   },
+   {
+    "rule_id": "ZW-09",
+    "art": null,
+    "missing": "三方四正会照关系；星曜亮度（庙旺利平闲陷）",
+    "statement": "紫微斗数综合断法以\"诸星同垣\"为核心：本宫星 + 三方四正会照星 + 四化加临 + 庙旺利平闲陷综合判富贵贫贱夭"
+   },
+   {
+    "rule_id": "ZIWEIDOUSHUQ-ZW-09",
+    "art": null,
+    "missing": "命格/格局分级；星曜亮度；三方四正会照关系",
+    "statement": "紫微斗数命格有高下之分：上格主大富大贵、中格主小富小贵、下格主温饱、最下格主贫贱夭折。"
+   }
+  ],
+  "岁运（大运/流年）": [
+   {
+    "rule_id": "DITIANSUICHA-052",
+    "art": null,
+    "missing": "大运干支与运行绝地判定",
+    "statement": "贞元之运为命之终始；五行流通无阻者主寿，偏枯至极、运行绝地者为危。"
+   },
+   {
+    "rule_id": "SANMINGTONGH-010",
+    "art": null,
+    "missing": "太岁／流年干与柱干支",
+    "statement": "太岁分生年当生太岁与逐年游行太岁；入命未必为凶。日犯岁君须结合原局或大运的制化救应、相合有情判断。"
+   },
+   {
+    "rule_id": "SANMINGTONGH-011",
+    "art": null,
+    "missing": "大运干支与流年干支",
+    "statement": "原文以甲子流年又逢甲子大运为岁运并临；并临不一律为凶，须分羊刃七杀与财官印绶及命局喜忌。"
+   },
+   {
+    "rule_id": "YUANHAIZIPIN-YR-03",
+    "art": null,
+    "missing": "大运干支与流年干支",
+    "statement": "太岁为流年；大运与流年合参看命局变化。"
+   },
+   {
+    "rule_id": "YUANHAIZIPIN-034",
+    "art": null,
+    "missing": "大运/流年干支与五行绝地判定",
+    "statement": "死亡应期的古法断语：大运流年冲克太过、五行绝地等。"
+   },
+   {
+    "rule_id": "LIXUZHONGMIN-066",
+    "art": null,
+    "missing": "年/月/时柱天干互换关系与流年（太岁）",
+    "statement": "贵人交互人多贵；旺气相乘馆殿资；五行不可伤；月日时互换见贵太岁不带者不贵。"
+   },
+   {
+    "rule_id": "LIXUZHONGMIN-079",
+    "art": null,
+    "missing": "三元入墓状态、日时旺衰与大运干支",
+    "statement": "三元入墓日时自旺，虽运并绝逢鬼，鬼亦不能取。"
+   },
+   {
+    "rule_id": "LZ-08-02",
+    "art": null,
+    "missing": "大运干支/起运与节气深浅（前后五年）",
+    "statement": "男迎女送前后五年"
+   },
+   {
+    "rule_id": "LZ-08-04",
+    "art": null,
+    "missing": "旬（祸旬）与大运衰乡",
+    "statement": "禍旬向末迎福"
+   },
+   {
+    "rule_id": "WX-10-03",
+    "art": null,
+    "missing": "大运/小运层的神煞（贵人）与运干支",
+    "statement": "二运并行"
+   },
+   {
+    "rule_id": "WX-10-04",
+    "art": null,
+    "missing": "流年（太岁）干支与本命支干纳音",
+    "statement": "太岁伏吟反吟"
+   }
+  ],
+  "历法细节（节气深浅/时辰五行/纳音正库）": [
+   {
+    "rule_id": "SANMINGTONGH-003",
+    "art": null,
+    "missing": "纳音（甲子乙丑海中金等纳音名）",
+    "statement": "本篇以甲子乙丑海中金、壬申癸酉剑锋金、庚辰辛巳白蜡金为例，解释纳音如何用位置和生旺取物象。"
+   },
+   {
+    "rule_id": "SANMINGTONGH-023",
+    "art": null,
+    "missing": "节气深浅（五行在节气中的阶段）",
+    "statement": "五行在节气转换中有四阶段：进气（将旺未旺）、交气（正旺）、退气（旺极将衰）、伏气（衰极潜伏）。判断五行力量需考虑"
+   },
+   {
+    "rule_id": "SANMINGTONGH-033",
+    "art": null,
+    "missing": "纳音五行正库（纳音正印）",
+    "statement": "神煞篇正印为纳音五行正库，金见乙丑、木癸未、火甲戌、水土壬辰丙辰；依旺气、贵格、救助及空破等分别论诸印成败。"
+   },
+   {
+    "rule_id": "SANMINGTONGH-084",
+    "art": null,
+    "missing": "时支与地支（十二时辰五行）",
+    "statement": "五行在十二时辰各有旺衰变化（如木旺于寅卯辰时、火旺于巳午未时等）；五行与地理方位（东南西北中）亦有分野吉凶。时辰"
+   },
+   {
+    "rule_id": "LZ-08-07",
+    "art": null,
+    "missing": "具体神煞名与身/煞轻重（纳音身命）",
+    "statement": "身克煞輕、煞克身重"
+   },
+   {
+    "rule_id": "WX-09-01",
+    "art": null,
+    "missing": "纳音年命、子位五行与旺相",
+    "statement": "子息位"
+   },
+   {
+    "rule_id": "YUZHAOSHENYI-005",
+    "art": null,
+    "missing": "各柱干支与纳音（时/日/月/年）",
+    "statement": "时尅日、日尅月、月尅年，两分交战者损尊、伤本、寿促。"
+   },
+   {
+    "rule_id": "YUZHAOSHENYI-006",
+    "art": null,
+    "missing": "胎元与月柱纳音",
+    "statement": "二三柱犯纳音月胎者，主祖宗祸患或祖业不继。"
+   },
+   {
+    "rule_id": "YUZHAOSHENYI-034",
+    "art": null,
+    "missing": "纳音（水土）与柱支（寅卯）",
+    "statement": "水土同至寅卯，原文主隔气风痰。"
+   },
+   {
+    "rule_id": "YUZHAOSHENYI-038",
+    "art": null,
+    "missing": "纳音与干鬼相制关系、官鬼旺相",
+    "statement": "干鬼制者为官；纳音生鬼者亦为官贵。"
+   },
+   {
+    "rule_id": "YUZHAOSHENYI-039",
+    "art": null,
+    "missing": "纳音与干生关系",
+    "statement": "生干则尊人喜；生纳音则中下人吉。"
+   },
+   {
+    "rule_id": "YUZHAOSHENYI-054",
+    "art": null,
+    "missing": "各柱纳音（年/月/日/时）",
+    "statement": "年生月、月生日、日生时之上生下，主身贫贱；返此为进发。"
+   }
+  ],
+  "计数/多现": [
+   {
+    "rule_id": "ZHOUYIZHEZHO-026",
+    "art": null,
+    "missing": "变爻数目与变爻位、卦名（彖辞／爻辞所指之卦）",
+    "statement": "六爻全静占本卦彖辞 / 卦辞；一爻变占本卦变爻爻辞；二爻变占本卦二变爻、上爻为主；三爻变占本卦及变卦彖辞、本卦为"
+   }
+  ],
+  "格局/取用判定": [
+   {
+    "rule_id": "ZIWEIDOUSHUQ-048",
+    "art": null,
+    "missing": "格局名（日月反背/命无正曜/命坐空亡/羊陀夹忌/火铃夹命）；夹宫关系",
+    "statement": "贫贱局主要包括：日月反背 / 命无正曜 / 命坐空亡 / 羊陀夹忌 / 火铃夹命 等；古书断为终身贫贱。"
+   },
+   {
+    "rule_id": "ZIWEIDOUSHUQ-069",
+    "art": null,
+    "missing": "格局名/入格判定；星曜亮度（庙旺）",
+    "statement": "凡命局必先看是否入格：入吉格则富贵可期，入凶格则需化解，不入格则平常。"
+   }
+  ]
+ }
+}

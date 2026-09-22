@@ -1,0 +1,57 @@
+[
+ {
+  "book": "bazi/sanming-tonghui",
+  "rule_id": "SANMINGTONGH-065",
+  "applicable_to_yaml": "{all_of: [{any_of: [{key: rizhu, value: 甲}, {key: rizhu, value: 丙}, {key: rizhu, value: 戊}, {key: rizhu, value: 庚}, {key: rizhu, value: 壬}]}, {key: shensha, value: 羊刃, scope: {pillar: month}}]}",
+  "evidence_from_statement": "阳干见月刃为阳刃格",
+  "facts": [
+   "rizhu",
+   "shensha(scope.pillar)"
+  ],
+  "note": "条件＝**阳日干**且**羊刃在月柱**（原文两支都写：『阳干』『月刃』）。「以官、煞、食、伤制刃为用；不取格而以扶抑论」是取用与体例说明，未表达。t219 新发现：`shensha` 事实**带 scope.pillar**（神煞落在哪一柱），故『月刃』可写；此前 ledger 记『神煞未产出』是过时判断。"
+ },
+ {
+  "book": "bazi",
+  "rule_id": "SANMINGTONGH-051",
+  "applicable_to_yaml": "[{key: shensha, value: 禄神, scope: {pillar: day}}]",
+  "evidence_from_statement": "专禄格（日坐临官禄位）",
+  "facts": [
+   "shensha(scope.pillar)",
+   "rizhu"
+  ],
+  "note": "条件＝**日支为日干之禄**（引擎的禄神落在日柱，与「日坐临官」同义）。「需财官食伤为用以平衡」是取用说明，未表达。"
+ },
+ {
+  "book": "bazi",
+  "rule_id": "SANMINGTONGH-066",
+  "applicable_to_yaml": "[{key: shensha, value: 禄神, scope: {pillar: month}}]",
+  "evidence_from_statement": "日干临官在月支为建禄",
+  "facts": [
+   "shensha(scope.pillar)",
+   "rizhu"
+  ],
+  "note": "条件＝**月支为日干之禄**（禄神落在月柱）。"
+ },
+ {
+  "book": "bazi",
+  "rule_id": "YUANHAIZIPIN-014",
+  "applicable_to_yaml": "{any_of: [{key: shensha, value: 禄神, scope: {pillar: month}}, {all_of: [{any_of: [{key: rizhu, value: 甲}, {key: rizhu, value: 丙}, {key: rizhu, value: 戊}, {key: rizhu, value: 庚}, {key: rizhu, value: 壬}]}, {key: shensha, value: 羊刃, scope: {pillar: month}}]}]}",
+  "evidence_from_statement": "建禄格（日干临官在月）与阳刃格（阳干刃在月）",
+  "facts": [
+   "shensha(scope.pillar)",
+   "rizhu"
+  ],
+  "note": "条件＝**月支为禄**（建禄）**或**（阳日干且羊刃在月）（阳刃格）——原文两支都写。"
+ },
+ {
+  "book": "bazi",
+  "rule_id": "WX-05-02",
+  "applicable_to_yaml": "{any_of: [{all_of: [{key: shensha, value: 禄神, scope: {pillar: year}}, {key: shensha, value: 驿马, scope: {pillar: year}}]}, {all_of: [{key: shensha, value: 禄神, scope: {pillar: month}}, {key: shensha, value: 驿马, scope: {pillar: month}}]}, {all_of: [{key: shensha, value: 禄神, scope: {pillar: day}}, {key: shensha, value: 驿马, scope: {pillar: day}}]}, {all_of: [{key: shensha, value: 禄神, scope: {pillar: time}}, {key: shensha, value: 驿马, scope: {pillar: time}}]}]}",
+  "evidence_from_statement": "祿馬同乡上贵",
+  "facts": [
+   "shensha(scope.pillar)",
+   "rizhu"
+  ],
+  "note": "条件＝**同一柱上既有禄神又有驿马**（四柱枚举）。**披露**：若禄与马分处不同柱但同支，本式不覆盖（那是跨键的支相等，写全会爆）；本式是保守子集。"
+ }
+]

@@ -12,8 +12,8 @@
       "大运",
       "流年"
     ],
-    "reason": "cosmic 已重建带流年年份 scope 和关系分类枚举的共享 fixture；YUANHAIZIPIN-YR-03 已形成保守结构规则，但制化救应与喜忌作用仍未表达。",
-    "sha256": "d53d3a8a64ca11826950276791ef2e84abaa7f01d914fdfb1e38f51dc200b47c",
+    "reason": "cosmic 与 classics 已同步带流年年份 scope、关系分类、选定大运 active scope 及结构事实合同的共享 fixture；三条语义阻塞仍未表达。",
+    "sha256": "ee750a96ae11dece15bdcef26b5e0fcc6b928a1e6947f1aa7ffd47fdb4c53aa7",
     "caseCount": 26,
     "generatorCommand": "bun scripts/dump-facts.ts /Users/sync/code/fateradar-classics",
     "productFixtureCompared": true,
@@ -46,8 +46,11 @@
       "availableFacts": [
         "liunian_gan",
         "liunian_zhi",
+        "liunian_gan_zhi",
         "natal_day_gan",
-        "liunian_natal_relation"
+        "liunian_natal_relation",
+        "dayun_gan_zhi",
+        "dayun_liunian_relation"
       ],
       "whyBlocked": "基础流年事实已由 cosmic fixture 提供；原文仍要求制化救应，且当前规则 applicable_to 为空，无法安全改成单一流年谓词。",
       "requiredFixtures": [
@@ -83,10 +86,13 @@
         "liunian_gan_zhi",
         "dayun_gan_zhi",
         "dayun_liunian_relation",
+        "dayun_liunian_relation_class",
         "suiyun_binglin",
-        "natal_favorable_context"
+        "natal_favorable_context",
+        "shishen",
+        "shensha"
       ],
-      "whyBlocked": "参考求值器的显式未知传递已修正并通过固定三态诊断；产品 matcher 尚需同一契约回归。另缺刃杀财官印绶、喜忌和救应语义。",
+      "whyBlocked": "选定大运 active scope 已由 cosmic fixture 提供并通过三态审计；仍缺刃杀/七杀与财官印绶分类、命局喜忌和制化救应语义，不能只用岁运并临或十神名称形成规则。",
       "requiredFixtures": [
         "satisfied",
         "not_satisfied",
@@ -194,7 +200,7 @@
         "fixtureSource": "tools/reports/facts-sample.json",
         "positive": {
           "case": "caseFlowYear",
-          "factCount": 15,
+          "factCount": 17,
           "verdict": "满足",
           "confidence": 1.0,
           "factCoverage": 1.0,
@@ -202,7 +208,7 @@
         },
         "negative": {
           "case": "caseFlowYear",
-          "factCount": 12,
+          "factCount": 14,
           "verdict": "不满足",
           "confidence": 1.0,
           "factCoverage": 1.0,
@@ -266,10 +272,22 @@
       "availableFacts": [
         "dayun_direction",
         "liunian_gan_zhi",
+        "dayun_gan_zhi",
+        "dayun_liunian_relation",
+        "dayun_liunian_relation_class",
         "natal_favorable_context"
       ]
     }
   ],
+  "manifestContractCorrection": {
+    "field": "contract.layerPolicy",
+    "previous": "本批采纳规则仅适用于本命。流年/流月/大运不是把本命规则复制过去；需要产品提供明确 scope 条件后另行验收。",
+    "corrected": "各规则仅在其 applicableLayers 声明的层求值：当前 7 条本命规则仅适用于本命，YUANHAIZIPIN-YR-03 仅适用于流年。不得把本命规则复制到流年/流月/大运；未声明或缺少 scope 条件时保留 unknown。",
+    "classicsManifestSha256": "d33db94fc94d91a98d8624010de7dce48cb472771cc213e377f8aef338ff3d21",
+    "cosmicManifestSha256": "d33db94fc94d91a98d8624010de7dce48cb472771cc213e377f8aef338ff3d21",
+    "cosmicGeneratedHandoffSha256": "7165f5cf7be1244cefc135aa24b716a3e0002c2df87e1cd59c948847bbf1a08f",
+    "productAction": "已重新导入当前 Classics manifest；当前交接源与消费产物 hash 已同步，相关规则/主题回归继续通过。"
+  },
   "productAction": "产品仓已提供 dayun_liunian_relation_class 及 scope.year；请消费 YUANHAIZIPIN-YR-03 的结构性“忌象候选”结果，并保留制化/喜忌缺口为 unknown。其余 blocked 候选不自行补规则。 测试 harness 必须先按 verification case/year 过滤 facts；流年视图断言按 applicableLayers 区分可执行规则与仍为 unknown 的主题语义。 相关产品验收已通过；可继续实现六主题消费，阻塞项仍按 manifest 保持 unknown。",
   "classicsAction": "已采纳 YUANHAIZIPIN-YR-03 为 verified=false 的保守流年结构证据，并将 CLASSICS_REV 更新为包含该规则的 6321186f6aeebd0737537c45286153eedf49adb4；其余候选保持 blocked，不恢复 440 条 unmapped 目标。",
   "evaluationAudit": {
@@ -278,7 +296,7 @@
     "report": "tools/reports/p1-bazi-20260922/flow-year-yr03.json",
     "previousFailureReport": "tools/reports/p1-bazi-20260922/flow-year-unknown-before.json",
     "reason": "参考求值器和产品 matcher 均能传递显式信息不足；YUANHAIZIPIN-YR-03 在按 scope.year 过滤后通过满足/不满足/信息不足三态样盘。",
-    "fixtureSha256": "d53d3a8a64ca11826950276791ef2e84abaa7f01d914fdfb1e38f51dc200b47c"
+    "fixtureSha256": "ee750a96ae11dece15bdcef26b5e0fcc6b928a1e6947f1aa7ffd47fdb4c53aa7"
   },
   "productIntegrationAudit": {
     "command": "cd /Users/sync/code/cosmic-fortune-lab && bunx vitest run tests/rules/explicit-unknown-facts.test.ts tests/engine/bazi-vertical.test.ts --reporter=dot",
@@ -324,14 +342,79 @@
       ]
     },
     "latest": {
-      "command": "cd /Users/sync/code/cosmic-fortune-lab && bunx vitest run tests/rules/explicit-unknown-facts.test.ts tests/engine/bazi-vertical.test.ts --reporter=dot",
+      "command": "cd /Users/sync/code/cosmic-fortune-lab && bunx vitest run --reporter=dot",
       "exitCode": 0,
       "result": "PASS",
-      "log": "tools/reports/p1-bazi-20260922/cosmic-integration-green.log",
-      "testsPassed": "24/24",
-      "factsFixtureSha256": "d53d3a8a64ca11826950276791ef2e84abaa7f01d914fdfb1e38f51dc200b47c",
+      "log": "local full rerun 2026-09-22",
+      "testsPassed": "4170/4170",
+      "factsFixtureSha256": "ee750a96ae11dece15bdcef26b5e0fcc6b928a1e6947f1aa7ffd47fdb4c53aa7",
       "cosmicClassicsRev": "6321186f6aeebd0737537c45286153eedf49adb4",
-      "cosmicManifestSha256": "8221f2187e0a7901bda67b7585502ca95e18ac5d8164dc56d3c27f7c56989675"
+      "cosmicManifestSha256": "d33db94fc94d91a98d8624010de7dce48cb472771cc213e377f8aef338ff3d21",
+      "cosmicGeneratedHandoffSha256": "7165f5cf7be1244cefc135aa24b716a3e0002c2df87e1cd59c948847bbf1a08f",
+      "testFilesPassed": "296/296",
+      "testsSkipped": "44",
+      "testFilesSkipped": "2"
     }
+  },
+  "currentFixtureRecheck": {
+    "date": "2026-09-22",
+    "fixtureSha256": "ee750a96ae11dece15bdcef26b5e0fcc6b928a1e6947f1aa7ffd47fdb4c53aa7",
+    "manifestSha256": "d33db94fc94d91a98d8624010de7dce48cb472771cc213e377f8aef338ff3d21",
+    "caseCount": 26,
+    "productFixtureCompared": "cmp -s tools/reports/facts-sample.json /Users/sync/code/cosmic-fortune-lab/tests/fixtures/facts-sample.json => identical",
+    "structuralFacts": [
+      "gender",
+      "spouse_star",
+      "spouse_palace_zhi",
+      "shishen_count",
+      "natal_same_zhi",
+      "natal_relation"
+    ],
+    "semanticBlockers": [
+      "SANMINGTONGH-010",
+      "SANMINGTONGH-011",
+      "DITIANSUICHA-051"
+    ],
+    "rulePolicy": "三条 semantic blocker 继续保持 blocked；不得修改 applicable_to 或 verified。",
+    "classicsManifestSha256": "d33db94fc94d91a98d8624010de7dce48cb472771cc213e377f8aef338ff3d21"
+  },
+  "semanticContractRequest": {
+    "path": "tools/reports/p1-bazi-20260922/semantic-contract-request.json",
+    "status": "pending",
+    "fixtureSha256": "ee750a96ae11dece15bdcef26b5e0fcc6b928a1e6947f1aa7ffd47fdb4c53aa7",
+    "ruleIds": [
+      "SANMINGTONGH-010",
+      "SANMINGTONGH-011",
+      "DITIANSUICHA-051"
+    ],
+    "ruleMutation": "未修改 applicable_to 或 verified；待交付键未加入可执行词表。"
+  },
+  "semanticContractStatus": "pending",
+  "semanticContractCandidateAudit": {
+    "status": "pass",
+    "adopted": false,
+    "rulesChanged": false,
+    "manifestChanged": false,
+    "candidateJson": "tools/reports/p1-bazi-20260922/semantic-contract-candidates.json",
+    "candidateMarkdown": "tools/reports/p1-bazi-20260922/semantic-contract-candidates.md",
+    "auditReport": "tools/reports/p1-bazi-20260922/semantic-contract-candidate-audit.json",
+    "verifier": "tools/verify-semantic-contract-candidates.py",
+    "fixtureSha256": "ee750a96ae11dece15bdcef26b5e0fcc6b928a1e6947f1aa7ffd47fdb4c53aa7",
+    "decisionRequired": [
+      "SANMINGTONGH-010 的救应推广范围、阈值、优先级和一/二项救应值域",
+      "SANMINGTONGH-011 的刃杀/财官印绶分类、喜忌和岁运并临作用",
+      "DITIANSUICHA-051 的用神/忌神作用、盖头截脚权重和原局例外"
+    ],
+    "semanticContractStatus": "pending",
+    "currentManifestSha256": "d33db94fc94d91a98d8624010de7dce48cb472771cc213e377f8aef338ff3d21",
+    "currentGeneratedHandoffSha256": "7165f5cf7be1244cefc135aa24b716a3e0002c2df87e1cd59c948847bbf1a08f"
+  },
+  "currentSync": {
+    "manifestSha256": "d33db94fc94d91a98d8624010de7dce48cb472771cc213e377f8aef338ff3d21",
+    "cosmicManifestSha256": "d33db94fc94d91a98d8624010de7dce48cb472771cc213e377f8aef338ff3d21",
+    "cosmicGeneratedHandoffSha256": "7165f5cf7be1244cefc135aa24b716a3e0002c2df87e1cd59c948847bbf1a08f",
+    "fixtureSha256": "ee750a96ae11dece15bdcef26b5e0fcc6b928a1e6947f1aa7ffd47fdb4c53aa7",
+    "command": "python3 scripts/import-bazi-topic-handoff.py /Users/sync/code/fateradar-classics/docs/closeout/P1_BAZI_TOPIC_MANIFEST_20260921.json",
+    "result": "PASS; 8 rules imported"
   }
 }

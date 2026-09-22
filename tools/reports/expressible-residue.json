@@ -22,7 +22,8 @@
     "meta-rule": "pack 元规则，不是盘面条件",
     "needs-pairing": "需把两个键的**取值**配对（如「用神×爻位」→「该爻的月建强度」）：可用枚举配对写，但本轮未做；属下一批候选",
     "fact-value-uncovered": "事实键已产出，但其**取值在样盘里从未出现** → 该规则无法被样盘演示；且该取值本身罕见（见 note 的遍历证据）",
-    "needs-unemitted-judgement": "需引擎**未产出**的判定项（如遥克候选、四课去重后的课数）：只写能写的那一半会让谓词**过宽**（在不该适用时也判适用）"
+    "needs-unemitted-judgement": "需引擎**未产出**的判定项（如遥克候选、四课去重后的课数）：只写能写的那一半会让谓词**过宽**（在不该适用时也判适用）",
+    "needs-binglin-semantics": "岁运并临结构事实与选定大运 scope 已有，但刃杀／财官印绶、命局喜忌及救应语义仍未形成合同"
   },
   "entries": [
     {
@@ -50,8 +51,8 @@
       "art": "bazi",
       "rule_id": "SANMINGTONGH-011",
       "triage_kind": "single-pair",
-      "reason_class": "needs-dayun-liunian-ganzhi",
-      "reason": "需要大运／流年干支事实（未产出）"
+      "reason_class": "needs-binglin-semantics",
+      "reason": "样盘已有岁运并临、选定大运／流年干支及 scope.year；但羊刃七煞、财官印绶、命局喜忌与救应条件仍未产出"
     },
     {
       "art": "bazi",

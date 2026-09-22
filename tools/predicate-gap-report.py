@@ -83,6 +83,15 @@ ART_EMIT_KEYS: dict[str, frozenset[str]] = {
         {
             "rizhu",
             "yueling",
+            # P1 结构事实：由产品事实层直接产出；目前仅登记接收，不代表已有规则消费。
+            "gender",
+            "spouse_star",
+            "spouse_palace_zhi",
+            "shishen_count",
+            "natal_same_zhi",
+            "natal_relation",
+            # 流年结构事实：由产品事实层正式产出并被 YUANHAIZIPIN-YR-03 消费。
+            "dayun_liunian_relation_class",
             # 四柱干支与纳音：引擎由已有 ganzhi 四柱／「纳音」行逐柱产出（见 emitBaziFacts）。
             "gan",
             "gan_element",
@@ -196,6 +205,27 @@ SYNONYM_GROUPS: tuple[frozenset[str], ...] = (
 # 术名本身出现在 statement 里不是条件（如「六爻」同时是 yao 键的取值）。
 ART_SELF_NAMES = frozenset({"六爻", "八字", "紫微", "奇门", "六壬", "七政"})
 
+# 事实层已经有合同，但这些键不应单凭文面值命中就把候选规则视为
+# 可表达：结构登记与古籍语义规则就绪是两个不同的状态。已映射的
+# YUANHAIZIPIN-YR-03 通过专门 manifest 消费该流年键，不改变本台账
+# 对未映射语句的 29 条基线。
+NON_RULE_READY_BAZI_KEYS = frozenset(
+    {
+        "gender",
+        "spouse_star",
+        "spouse_palace_zhi",
+        "shishen_count",
+        "natal_same_zhi",
+        "natal_relation",
+        "dayun_liunian_relation_class",
+    }
+)
+
+ART_CLASSIFY_KEYS: dict[str, frozenset[str]] = {
+    art: keys - (NON_RULE_READY_BAZI_KEYS if art == "bazi" else frozenset())
+    for art, keys in ART_EMIT_KEYS.items()
+}
+
 
 def group_of(key: str) -> str:
     for g in SYNONYM_GROUPS:
@@ -209,7 +239,7 @@ DOCTRINE_CUES = ("为体", "为用", "之理", "之道", "不可", "须", "当",
 
 
 def classify(art: str, statement: str, values: dict[str, list[str]]) -> dict:
-    keys = ART_EMIT_KEYS.get(art, frozenset())
+    keys = ART_CLASSIFY_KEYS.get(art, frozenset())
     tokens: list[tuple[str, str]] = []
     for key in sorted(keys):
         for val in values.get(key) or []:

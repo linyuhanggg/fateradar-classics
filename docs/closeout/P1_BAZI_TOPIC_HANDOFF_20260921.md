@@ -167,3 +167,7 @@ git diff --check
 ### 最终验收
 
 2026-09-22 cosmic 相关测试 `24/24` 通过；facts SHA、`CLASSICS_REV` 和 manifest SHA 已对齐。古籍侧停止本 Goal，不恢复 440 条 `unmapped` 批次；后续产品开发按 manifest 消费，阻塞事实继续保持 `unknown`。
+
+## 生成器与产品导入复核（2026-09-22）
+
+manifest 已按当前生成器重建，Cosmic 已重新导入。当前源 manifest SHA-256 为 `d33db94fc94d91a98d8624010de7dce48cb472771cc213e377f8aef338ff3d21`，产品 handoff SHA-256 为 `7165f5cf7be1244cefc135aa24b716a3e0002c2df87e1cd59c948847bbf1a08f`，共享 fixture SHA-256 为 `ee750a96ae11dece15bdcef26b5e0fcc6b928a1e6947f1aa7ffd47fdb4c53aa7`。生成器输出与提交 manifest 一致；产品导入 8 条规则通过。

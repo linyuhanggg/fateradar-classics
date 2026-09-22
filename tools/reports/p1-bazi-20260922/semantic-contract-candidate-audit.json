@@ -1,0 +1,534 @@
+{
+  "schema": "fateradar-bazi-semantic-contract-candidate-audit-v1",
+  "status": "pass",
+  "candidateAdopted": false,
+  "rulesChanged": false,
+  "manifestChanged": false,
+  "checks": [
+    {
+      "check": "fixture_sha256",
+      "expected": "ee750a96ae11dece15bdcef26b5e0fcc6b928a1e6947f1aa7ffd47fdb4c53aa7",
+      "actual": "ee750a96ae11dece15bdcef26b5e0fcc6b928a1e6947f1aa7ffd47fdb4c53aa7"
+    },
+    {
+      "check": "SANMINGTONGH-010",
+      "ruleMutation": "none",
+      "sourceAnchor": {
+        "line": 1081,
+        "needle": "日犯歳君"
+      },
+      "missingRequiredFactsInCases": {
+        "caseA": [
+          "dayun_rescue_evidence",
+          "liunian_gan",
+          "liunian_natal_relation",
+          "natal_rescue_evidence",
+          "transit_effect_semantics"
+        ],
+        "caseB": [
+          "dayun_rescue_evidence",
+          "liunian_gan",
+          "liunian_natal_relation",
+          "natal_rescue_evidence",
+          "transit_effect_semantics"
+        ],
+        "caseFlowYear": [
+          "dayun_rescue_evidence",
+          "natal_rescue_evidence",
+          "transit_effect_semantics"
+        ],
+        "caseFlowYearBinglin": [
+          "dayun_rescue_evidence",
+          "natal_rescue_evidence",
+          "transit_effect_semantics"
+        ],
+        "caseFlowYearUnknown": [
+          "dayun_rescue_evidence",
+          "natal_rescue_evidence",
+          "transit_effect_semantics"
+        ],
+        "cov1_bazi_1": [
+          "dayun_rescue_evidence",
+          "liunian_gan",
+          "liunian_natal_relation",
+          "natal_rescue_evidence",
+          "transit_effect_semantics"
+        ],
+        "cov1_bazi_2": [
+          "dayun_rescue_evidence",
+          "liunian_gan",
+          "liunian_natal_relation",
+          "natal_rescue_evidence",
+          "transit_effect_semantics"
+        ],
+        "cov1_bazi_3": [
+          "dayun_rescue_evidence",
+          "liunian_gan",
+          "liunian_natal_relation",
+          "natal_rescue_evidence",
+          "transit_effect_semantics"
+        ],
+        "cov1_bazi_4": [
+          "dayun_rescue_evidence",
+          "liunian_gan",
+          "liunian_natal_relation",
+          "natal_rescue_evidence",
+          "transit_effect_semantics"
+        ],
+        "cov1_bazi_5": [
+          "dayun_rescue_evidence",
+          "liunian_gan",
+          "liunian_natal_relation",
+          "natal_rescue_evidence",
+          "transit_effect_semantics"
+        ],
+        "cov2_bazi_1": [
+          "dayun_rescue_evidence",
+          "liunian_gan",
+          "liunian_natal_relation",
+          "natal_rescue_evidence",
+          "transit_effect_semantics"
+        ],
+        "cov2_bazi_2": [
+          "dayun_rescue_evidence",
+          "liunian_gan",
+          "liunian_natal_relation",
+          "natal_rescue_evidence",
+          "transit_effect_semantics"
+        ],
+        "cov2_bazi_3": [
+          "dayun_rescue_evidence",
+          "liunian_gan",
+          "liunian_natal_relation",
+          "natal_rescue_evidence",
+          "transit_effect_semantics"
+        ],
+        "cov3_bazi_1": [
+          "dayun_rescue_evidence",
+          "liunian_gan",
+          "liunian_natal_relation",
+          "natal_rescue_evidence",
+          "transit_effect_semantics"
+        ],
+        "cov3_bazi_2": [
+          "dayun_rescue_evidence",
+          "liunian_gan",
+          "liunian_natal_relation",
+          "natal_rescue_evidence",
+          "transit_effect_semantics"
+        ],
+        "cov3_bazi_3": [
+          "dayun_rescue_evidence",
+          "liunian_gan",
+          "liunian_natal_relation",
+          "natal_rescue_evidence",
+          "transit_effect_semantics"
+        ],
+        "cov3_bazi_4": [
+          "dayun_rescue_evidence",
+          "liunian_gan",
+          "liunian_natal_relation",
+          "natal_rescue_evidence",
+          "transit_effect_semantics"
+        ],
+        "cov3_bazi_5": [
+          "dayun_rescue_evidence",
+          "liunian_gan",
+          "liunian_natal_relation",
+          "natal_rescue_evidence",
+          "transit_effect_semantics"
+        ],
+        "cov3_bazi_6": [
+          "dayun_rescue_evidence",
+          "liunian_gan",
+          "liunian_natal_relation",
+          "natal_rescue_evidence",
+          "transit_effect_semantics"
+        ],
+        "cov3_bazi_7": [
+          "dayun_rescue_evidence",
+          "liunian_gan",
+          "liunian_natal_relation",
+          "natal_rescue_evidence",
+          "transit_effect_semantics"
+        ],
+        "cov3_bazi_8": [
+          "dayun_rescue_evidence",
+          "liunian_gan",
+          "liunian_natal_relation",
+          "natal_rescue_evidence",
+          "transit_effect_semantics"
+        ],
+        "cov3_bazi_9": [
+          "dayun_rescue_evidence",
+          "liunian_gan",
+          "liunian_natal_relation",
+          "natal_rescue_evidence",
+          "transit_effect_semantics"
+        ],
+        "cov3_bazi_10": [
+          "dayun_rescue_evidence",
+          "liunian_gan",
+          "liunian_natal_relation",
+          "natal_rescue_evidence",
+          "transit_effect_semantics"
+        ],
+        "cov3_bazi_11": [
+          "dayun_rescue_evidence",
+          "liunian_gan",
+          "liunian_natal_relation",
+          "natal_rescue_evidence",
+          "transit_effect_semantics"
+        ],
+        "cov3_bazi_12": [
+          "dayun_rescue_evidence",
+          "liunian_gan",
+          "liunian_natal_relation",
+          "natal_rescue_evidence",
+          "transit_effect_semantics"
+        ],
+        "cov3_bazi_13": [
+          "dayun_rescue_evidence",
+          "liunian_gan",
+          "liunian_natal_relation",
+          "natal_rescue_evidence",
+          "transit_effect_semantics"
+        ]
+      },
+      "fixtureTriState": {
+        "satisfied": null,
+        "not_satisfied": null,
+        "unknown": {
+          "case": "caseFlowYearUnknown",
+          "year": 2100
+        }
+      }
+    },
+    {
+      "check": "SANMINGTONGH-011",
+      "ruleMutation": "none",
+      "sourceAnchor": {
+        "line": 1084,
+        "needle": "嵗運并臨"
+      },
+      "missingRequiredFactsInCases": {
+        "caseA": [
+          "natal_binglin_class",
+          "suiyun_binglin",
+          "suiyun_binglin_semantics"
+        ],
+        "caseB": [
+          "natal_binglin_class",
+          "suiyun_binglin",
+          "suiyun_binglin_semantics"
+        ],
+        "caseFlowYear": [
+          "natal_binglin_class",
+          "suiyun_binglin_semantics"
+        ],
+        "caseFlowYearBinglin": [
+          "natal_binglin_class",
+          "suiyun_binglin_semantics"
+        ],
+        "caseFlowYearUnknown": [
+          "natal_binglin_class",
+          "suiyun_binglin_semantics"
+        ],
+        "cov1_bazi_1": [
+          "natal_binglin_class",
+          "suiyun_binglin",
+          "suiyun_binglin_semantics"
+        ],
+        "cov1_bazi_2": [
+          "natal_binglin_class",
+          "suiyun_binglin",
+          "suiyun_binglin_semantics"
+        ],
+        "cov1_bazi_3": [
+          "natal_binglin_class",
+          "suiyun_binglin",
+          "suiyun_binglin_semantics"
+        ],
+        "cov1_bazi_4": [
+          "natal_binglin_class",
+          "suiyun_binglin",
+          "suiyun_binglin_semantics"
+        ],
+        "cov1_bazi_5": [
+          "natal_binglin_class",
+          "suiyun_binglin",
+          "suiyun_binglin_semantics"
+        ],
+        "cov2_bazi_1": [
+          "natal_binglin_class",
+          "suiyun_binglin",
+          "suiyun_binglin_semantics"
+        ],
+        "cov2_bazi_2": [
+          "natal_binglin_class",
+          "suiyun_binglin",
+          "suiyun_binglin_semantics"
+        ],
+        "cov2_bazi_3": [
+          "natal_binglin_class",
+          "suiyun_binglin",
+          "suiyun_binglin_semantics"
+        ],
+        "cov3_bazi_1": [
+          "natal_binglin_class",
+          "suiyun_binglin",
+          "suiyun_binglin_semantics"
+        ],
+        "cov3_bazi_2": [
+          "natal_binglin_class",
+          "suiyun_binglin",
+          "suiyun_binglin_semantics"
+        ],
+        "cov3_bazi_3": [
+          "natal_binglin_class",
+          "suiyun_binglin",
+          "suiyun_binglin_semantics"
+        ],
+        "cov3_bazi_4": [
+          "natal_binglin_class",
+          "suiyun_binglin",
+          "suiyun_binglin_semantics"
+        ],
+        "cov3_bazi_5": [
+          "natal_binglin_class",
+          "suiyun_binglin",
+          "suiyun_binglin_semantics"
+        ],
+        "cov3_bazi_6": [
+          "natal_binglin_class",
+          "suiyun_binglin",
+          "suiyun_binglin_semantics"
+        ],
+        "cov3_bazi_7": [
+          "natal_binglin_class",
+          "suiyun_binglin",
+          "suiyun_binglin_semantics"
+        ],
+        "cov3_bazi_8": [
+          "natal_binglin_class",
+          "suiyun_binglin",
+          "suiyun_binglin_semantics"
+        ],
+        "cov3_bazi_9": [
+          "natal_binglin_class",
+          "suiyun_binglin",
+          "suiyun_binglin_semantics"
+        ],
+        "cov3_bazi_10": [
+          "natal_binglin_class",
+          "suiyun_binglin",
+          "suiyun_binglin_semantics"
+        ],
+        "cov3_bazi_11": [
+          "natal_binglin_class",
+          "suiyun_binglin",
+          "suiyun_binglin_semantics"
+        ],
+        "cov3_bazi_12": [
+          "natal_binglin_class",
+          "suiyun_binglin",
+          "suiyun_binglin_semantics"
+        ],
+        "cov3_bazi_13": [
+          "natal_binglin_class",
+          "suiyun_binglin",
+          "suiyun_binglin_semantics"
+        ]
+      },
+      "fixtureTriState": {
+        "satisfied": null,
+        "not_satisfied": null,
+        "unknown": {
+          "case": "caseFlowYearUnknown",
+          "year": 2100
+        },
+        "shapePositiveOnly": {
+          "case": "caseFlowYearBinglin",
+          "year": 1993
+        }
+      }
+    },
+    {
+      "check": "DITIANSUICHA-051",
+      "ruleMutation": "none",
+      "sourceAnchor": {
+        "line": 13407,
+        "needle": "喜神用神"
+      },
+      "missingRequiredFactsInCases": {
+        "caseA": [
+          "jishen_empowered",
+          "liunian_gan_zhi",
+          "transit_effect_semantics",
+          "yongshen_effective"
+        ],
+        "caseB": [
+          "jishen_empowered",
+          "liunian_gan_zhi",
+          "transit_effect_semantics",
+          "yongshen_effective"
+        ],
+        "caseFlowYear": [
+          "jishen_empowered",
+          "transit_effect_semantics",
+          "yongshen_effective"
+        ],
+        "caseFlowYearBinglin": [
+          "jishen_empowered",
+          "transit_effect_semantics",
+          "yongshen_effective"
+        ],
+        "caseFlowYearUnknown": [
+          "jishen_empowered",
+          "transit_effect_semantics",
+          "yongshen_effective"
+        ],
+        "cov1_bazi_1": [
+          "jishen_empowered",
+          "liunian_gan_zhi",
+          "transit_effect_semantics",
+          "yongshen_effective"
+        ],
+        "cov1_bazi_2": [
+          "jishen_empowered",
+          "liunian_gan_zhi",
+          "transit_effect_semantics",
+          "yongshen_effective"
+        ],
+        "cov1_bazi_3": [
+          "jishen_empowered",
+          "liunian_gan_zhi",
+          "transit_effect_semantics",
+          "yongshen_effective"
+        ],
+        "cov1_bazi_4": [
+          "jishen_empowered",
+          "liunian_gan_zhi",
+          "transit_effect_semantics",
+          "yongshen_effective"
+        ],
+        "cov1_bazi_5": [
+          "jishen_empowered",
+          "liunian_gan_zhi",
+          "transit_effect_semantics",
+          "yongshen_effective"
+        ],
+        "cov2_bazi_1": [
+          "jishen_empowered",
+          "liunian_gan_zhi",
+          "transit_effect_semantics",
+          "yongshen_effective"
+        ],
+        "cov2_bazi_2": [
+          "jishen_empowered",
+          "liunian_gan_zhi",
+          "transit_effect_semantics",
+          "yongshen_effective"
+        ],
+        "cov2_bazi_3": [
+          "jishen_empowered",
+          "liunian_gan_zhi",
+          "transit_effect_semantics",
+          "yongshen_effective"
+        ],
+        "cov3_bazi_1": [
+          "jishen_empowered",
+          "liunian_gan_zhi",
+          "transit_effect_semantics",
+          "yongshen_effective"
+        ],
+        "cov3_bazi_2": [
+          "jishen_empowered",
+          "liunian_gan_zhi",
+          "transit_effect_semantics",
+          "yongshen_effective"
+        ],
+        "cov3_bazi_3": [
+          "jishen_empowered",
+          "liunian_gan_zhi",
+          "transit_effect_semantics",
+          "yongshen_effective"
+        ],
+        "cov3_bazi_4": [
+          "jishen_empowered",
+          "liunian_gan_zhi",
+          "transit_effect_semantics",
+          "yongshen_effective"
+        ],
+        "cov3_bazi_5": [
+          "jishen_empowered",
+          "liunian_gan_zhi",
+          "transit_effect_semantics",
+          "yongshen_effective"
+        ],
+        "cov3_bazi_6": [
+          "jishen_empowered",
+          "liunian_gan_zhi",
+          "transit_effect_semantics",
+          "yongshen_effective"
+        ],
+        "cov3_bazi_7": [
+          "jishen_empowered",
+          "liunian_gan_zhi",
+          "transit_effect_semantics",
+          "yongshen_effective"
+        ],
+        "cov3_bazi_8": [
+          "jishen_empowered",
+          "liunian_gan_zhi",
+          "transit_effect_semantics",
+          "yongshen_effective"
+        ],
+        "cov3_bazi_9": [
+          "jishen_empowered",
+          "liunian_gan_zhi",
+          "transit_effect_semantics",
+          "yongshen_effective"
+        ],
+        "cov3_bazi_10": [
+          "jishen_empowered",
+          "liunian_gan_zhi",
+          "transit_effect_semantics",
+          "yongshen_effective"
+        ],
+        "cov3_bazi_11": [
+          "jishen_empowered",
+          "liunian_gan_zhi",
+          "transit_effect_semantics",
+          "yongshen_effective"
+        ],
+        "cov3_bazi_12": [
+          "jishen_empowered",
+          "liunian_gan_zhi",
+          "transit_effect_semantics",
+          "yongshen_effective"
+        ],
+        "cov3_bazi_13": [
+          "jishen_empowered",
+          "liunian_gan_zhi",
+          "transit_effect_semantics",
+          "yongshen_effective"
+        ]
+      },
+      "fixtureTriState": {
+        "satisfied": null,
+        "not_satisfied": null,
+        "unknown": {
+          "case": "caseFlowYearUnknown",
+          "year": 2100
+        }
+      }
+    },
+    {
+      "check": "shape_fixture_boundaries",
+      "caseFlowYearBinglin1993": "shape facts present; semantic outputs absent",
+      "caseFlowYearUnknown2100": "explicit unknown facts present"
+    }
+  ],
+  "conclusion": "三条候选均保留 blocked；当前只有结构形态或自由文本，缺正式语义键和满足/不满足样盘。"
+}

@@ -1,6 +1,6 @@
 {
   "command": "python3 tools/audit-flow-year-yr03.py",
-  "fixtureSha256": "d53d3a8a64ca11826950276791ef2e84abaa7f01d914fdfb1e38f51dc200b47c",
+  "fixtureSha256": "ee750a96ae11dece15bdcef26b5e0fcc6b928a1e6947f1aa7ffd47fdb4c53aa7",
   "ruleId": "YUANHAIZIPIN-YR-03",
   "ruleAdopted": true,
   "scopePolicy": "先按选定 scope.year 过滤，再执行流年层谓词",

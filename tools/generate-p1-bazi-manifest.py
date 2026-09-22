@@ -120,13 +120,13 @@ TOPIC_META = {
     },
     "career": {
         "status": "partial",
-        "ruleIds": ["DITIANSUICHA-DR-06", "SANMINGTONGH-015"],
+        "ruleIds": ["DITIANSUICHA-DR-06", "SANMINGTONGH-015", "YUANHAIZIPIN-YR-03"],
         "requiredFactKeys": ["rizhu_strength", "shishen", "geju", "yongshen", "yueling"],
         "blockers": ["职位/行业、完整格局成败、取用和岁运窗口不是当前三条规则的充分条件。"],
     },
     "wealth": {
         "status": "partial",
-        "ruleIds": ["DITIANSUICHA-DR-06"],
+        "ruleIds": ["DITIANSUICHA-DR-06", "YUANHAIZIPIN-YR-03"],
         "requiredFactKeys": ["rizhu_strength", "shishen", "yongshen"],
         "blockers": ["当前只可交付‘极弱/从格入口’结构证据；财星位置、身财两停、比劫夺财和岁运尚未形成完整合同。"],
     },
@@ -323,6 +323,10 @@ def make_manifest(output: Path, export_file: Path | None) -> dict:
     }
     return {
         "manifestVersion": "fateradar-p1-bazi-topic-handoff-v1",
+        # Structural P1 rules are consumable, but the three semantic blockers
+        # remain pending. A future contract must change this field explicitly;
+        # the product importer refuses reserved semantic predicates otherwise.
+        "semanticContractStatus": "pending",
         "generatedAt": datetime.date.today().isoformat(),
         "generatedBy": "tools/generate-p1-bazi-manifest.py",
         "art": "bazi",
@@ -343,7 +347,7 @@ def make_manifest(output: Path, export_file: Path | None) -> dict:
             "states": {"satisfied": "满足", "not_satisfied": "不满足", "unknown": "信息不足"},
             "unknownPolicy": "缺少事实、未实现时间层、性别/计数/关系合同不完整时保留 unknown；不写成 not_satisfied。",
             "verifiedPolicy": "本 manifest 的所有规则 verified=false；只有固定样盘、明确验收证据和人工出处核验完成后才可改变。",
-            "layerPolicy": "本批采纳规则仅适用于本命。流年/流月/大运不是把本命规则复制过去；需要产品提供明确 scope 条件后另行验收。",
+            "layerPolicy": "各规则仅在其 applicableLayers 声明的层求值：当前 7 条本命规则仅适用于本命，YUANHAIZIPIN-YR-03 仅适用于流年。不得把本命规则复制到流年/流月/大运；未声明或缺少 scope 条件时保留 unknown。",
         },
         "topics": TOPIC_META,
         "rules": entries,
@@ -354,11 +358,11 @@ def make_manifest(output: Path, export_file: Path | None) -> dict:
             "rejectedInvalidScope": [{"ruleId": "TAIWEIFU-004", "rejectedField": "scope.palace=伪宫名", "remainingBaseCondition": "ziwei_star=天马（旧条件保留但不进入本 P1 八字 manifest）"}],
         },
         "productFactGaps": [
-            {"topic": "relationship", "gap": "性别/配偶星/夫宫与关系反馈的明确合同", "state": "阻塞", "action": "产品仓定义 FactKey 或输入结构；未定义前保持 unknown。"},
+            {"topic": "relationship", "gap": "性别/配偶星/夫宫与关系反馈的明确合同", "state": "部分可用", "action": "已增加 gender、spouse_star、spouse_palace_zhi 结构事实；关系反馈与古籍复合语义仍保持 unknown，未升级规则。"},
             {"topic": "all", "gap": "流年、流月、流日的逐柱干支/关系事实与层级绑定", "state": "部分可用", "action": "产品仓按时间层过滤事实；古籍仓不把本命规则复制为岁运结论。"},
-            {"topic": "wealth", "gap": "财星位置、身财两停、比劫夺财与岁运触发", "state": "阻塞", "action": "补齐事实和复合谓词后另开授权批次。"},
+            {"topic": "wealth", "gap": "财星位置、身财两停、比劫夺财与岁运触发", "state": "部分可用", "action": "已增加逐柱十神与 shishen_count，可供财星位置/计数取证；身财两停、比劫夺财与岁运触发仍阻塞。"},
             {"topic": "health", "gap": "作息、症状、体检等现实资料", "state": "产品边界", "action": "仅用于用户核对，不由古籍规则仓生成诊断。"},
-            {"topic": "all", "gap": "多现/计数、跨柱同支关系", "state": "阻塞", "action": "增加计数或关系事实合同；当前不能用重复无 scope 谓词近似。"},
+            {"topic": "all", "gap": "多现/计数、跨柱同支关系", "state": "部分可用", "action": "已增加 shishen_count、natal_same_zhi、natal_relation；尚未把这些结构事实升级为古籍复合结论。"},
         ],
         "round50Audit": {
             "draftMap": "tools/reports/shensha-position-map.json",

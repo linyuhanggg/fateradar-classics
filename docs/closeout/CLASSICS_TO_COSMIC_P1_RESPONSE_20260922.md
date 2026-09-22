@@ -2,7 +2,7 @@
 
 产品请求见 `/Users/sync/code/cosmic-fortune-lab/docs/closeout/COSMIC_TO_CLASSICS_P1_REQUEST_20260922.md`。当前回复为 **partial**：已采纳 1 条 `verified=false` 的保守流年结构规则，其余候选仍阻塞。
 
-cosmic 已重建共享 facts sample：现在有 `本命`、`大运`、`流年`，并带年份 scope、流年干支、流年与本命关系、大运干支/方向、本命喜忌、`suiyun_binglin`、`dayun_liunian_relation` 和稳定的 `dayun_liunian_relation_class` 事实。当前 26 个八字固定 case 的 SHA-256 为 `d53d3a8a64ca11826950276791ef2e84abaa7f01d914fdfb1e38f51dc200b47c`，与产品仓 fixture 字节一致。
+cosmic 已重建共享 facts sample：现在有 `本命`、`大运`、`流年`，并带年份 scope、流年干支、流年与本命关系、大运干支/方向、本命喜忌、`suiyun_binglin`、`dayun_liunian_relation` 和稳定的 `dayun_liunian_relation_class` 事实。当前 26 个八字固定 case 的 SHA-256 为 `ee750a96ae11dece15bdcef26b5e0fcc6b928a1e6947f1aa7ffd47fdb4c53aa7`，与产品仓 fixture 字节一致；当前源 manifest SHA-256 为 `36453d273f248f33705fb8a59372c16b1de510303351b53d801f690dfb94459b`，产品 handoff SHA-256 为 `62b8e8c1e68f21874799faa76878d13aa8aba7748ffe9ce80ef17ed8ee58cead`。
 
 本轮采纳 `YUANHAIZIPIN-YR-03`：流年层 `dayun_liunian_relation_class ∈ {相冲, 相克, 相刑}` 时，输出原文所称的“忌象候选”结构证据；先按选定 `scope.year` 过滤，再求值。固定样盘为 `caseFlowYear@2025=满足`、`caseFlowYear@2026=不满足`、`caseFlowYearUnknown@2100=信息不足`。该规则不输出现实事件，制化、喜忌和命局作用仍保留 unknown。
 
@@ -54,3 +54,101 @@ manifest 重新生成并同步年份选择器后，cosmic 测试已提升到 `23
 ## 最终产品验收（2026-09-22）
 
 cosmic 已完成年份选择器和流年视图断言对齐；相关测试最终为 `24/24` 通过，日志见 `tools/reports/p1-bazi-20260922/cosmic-integration-green.log`。产品 fixture 与古籍 fixture 字节一致（SHA `d53d3a8a64ca11826950276791ef2e84abaa7f01d914fdfb1e38f51dc200b47c`），`CLASSICS_REV` 与 manifest SHA 也已对齐。交接状态可供产品继续消费；未形成合同的事实和主题语义仍按 manifest 保持 `unknown`。
+
+## 2026-09-22 主题映射同步
+
+产品重新导入 manifest 后，`YUANHAIZIPIN-YR-03` 已同时登记到 `overview`、`career`、`wealth` 三个主题；这只是同一条流年结构证据的主题消费映射，不增加新的规则语义。最新 manifest SHA-256 为 `229406ae2dd1cad2e80ab2a000f0da684f83c0d72cb6957a875f88d485a14ddf`，交接状态仍为 `partial`。
+## 2026-09-22 事实复核：选定大运与三条阻塞规则
+
+对产品重新提供的 `tools/reports/facts-sample.json`（本轮重建后 SHA-256 `ff641776d2a120f1ace49335c4a0f60349cc5a697ff597f4eab9a398a2969b69`）逐条复核后，三条候选仍不能安全升级：
+
+- `SANMINGTONGH-010` 的原文锚点 `L1080-L1083` 明确要求制化救应与相合有情；已有流年干支和本命关系只够表达结构入口，不能把庚辛制甲乙、癸合戊等名称出现代理为救应成立。
+- `SANMINGTONGH-011` 的 `caseFlowYearBinglin@1993` 能证明 `suiyun_binglin=是`，且重建后的样盘已有当前选定年份的 active `dayun_gan_zhi`/`shishen` scope；但仍缺羊刃/七杀与财官印绶分类、命局喜忌及救应条件。
+- `DITIANSUICHA-051` 的 `L13400` 只有岁运合参原则，尚无可判定的 `yongshen_effective`、`jishen_empowered` 或关系作用于命局的合同。
+
+因此本轮只确认事实输入已部分具备，不变更任何 `applicable_to` 或 `verified`。产品下一次交接应继续补齐上述作用语义的正式 FactKey、例外和满足/不满足/信息不足样盘；active 大运事实本身已进入本轮样盘，但在语义合同形成前三条继续保持 `blocked`。
+
+## 2026-09-22 事实复核后续：active 大运 scope 已同步
+
+cosmic 已将选定年份有效大运的 `dayun_gan_zhi` 与 `shishen` 下沉到统一 `emitBaziFacts`，并重建共享 fixture。当前产品与 classics fixture SHA-256 均为 `ff641776d2a120f1ace49335c4a0f60349cc5a697ff597f4eab9a398a2969b69`；流年样盘现在带 `{layer: 大运, year}` 的 active scope，同时保留无年份大运候选列表。
+
+这关闭了 `SANMINGTONGH-011` 的 active scope 输入缺口，但没有关闭其语义阻塞：仍缺羊刃/七杀与财官印绶分类、命局喜忌、制化救应和三态可审计条件。`SANMINGTONGH-010` 仍缺制化救应，`DITIANSUICHA-051` 仍缺用神得力/忌神得权及岁运作用语义。三条候选继续保持 `blocked`，没有修改 `applicable_to` 或 `verified`。
+
+本轮 classics 校验：`python3 tools/audit-flow-year-unknown.py` 三态通过；`python3 tools/test-expressible-residue.py` 的 29 条台账自洽；`python3 tools/test-ledger-consistency.py` 的 463 条未映射规则台账一致。
+## 2026-09-22 manifest hash 复核
+
+active 大运事实同步后，产品与 classics 当前 manifest 字节 SHA-256 为 `06fb5cab18279d80190f16862dbc5cb268b323ad8fa8cf95bef667e93486e501`；此前 `229406ae…` 仅对应 active scope 同步前的旧 manifest，最新机器回复已更新为当前值。
+
+## 2026-09-22 `layerPolicy` 合同纠正
+
+审计发现 manifest 的 `contract.layerPolicy` 仍写成“仅适用于本命”，但 8 条规则中已有 7 条声明 `applicableLayers=[本命]`，`YUANHAIZIPIN-YR-03` 声明 `applicableLayers=[流年]`。已在生成器和 manifest 中改为按各条 `applicableLayers` 求值：不得把本命规则复制到其他时间层；未声明或缺少 scope 条件时保留 `unknown`。
+
+修正后的 classics manifest SHA-256 为 `93fdfa3cb220e77c06d98f49702b4caaba2732091e4d171243010a71ccd203b7`。产品仓需重新运行 `python3 scripts/import-bazi-topic-handoff.py ...`，同步 `src/lib/rules/generated/bazi-topic-handoff.json`，并重跑版本/主题回归；在此之前，旧的 `06fb5cab…` 只代表上一版产品导入证据。
+
+## 2026-09-22 产品同步回归
+
+产品仓已导入修正后的 manifest：`cosmicManifestSha256=93fdfa3cb220e77c06d98f49702b4caaba2732091e4d171243010a71ccd203b7`，生成 handoff 文件 SHA-256 为 `40800101bf00e9d5779502a84b5db473a0b0cd798ee5fe00f7994a8a73c33b55`。定向回归命令 `bunx vitest run tests/rules/explicit-unknown-facts.test.ts tests/engine/bazi-vertical.test.ts --reporter=dot` 结果为 2 files / 24 tests 全通过；这只验证 manifest 导入和当前八字主题链路，不替代全量测试。
+
+## 2026-09-22 semantic-gap recheck
+
+重新以当前 `tools/reports/facts-sample.json`（SHA-256 `ff641776d2a120f1ace49335c4a0f60349cc5a697ff597f4eab9a398a2969b69`）审计 `SANMINGTONGH-010`、`SANMINGTONGH-011`、`DITIANSUICHA-051`。三条均继续保持 `blocked`，没有任何一条可诚实升级：
+
+- `SANMINGTONGH-010` 仍缺可计算的 `rescue_condition`；流年干支和关系只构成结构入口。
+- `SANMINGTONGH-011` 仍缺刃杀/财官印绶分类、命局喜忌和救应语义；`suiyun_binglin`、active 大运 scope、十神/神煞名称不能代理完整解释。
+- `DITIANSUICHA-051` 仍缺 `yongshen_effective`、`jishen_empowered` 及岁运作用语义；`dayun_direction`、流年干支和描述性喜忌不足以求值。
+
+逐条事实、scope 和最小缺口见 [`semantic-gap-audit.json`](../../tools/reports/p1-bazi-20260922/semantic-gap-audit.json)。在 classics 提供正式 FactKey/value 枚举、例外和满足/不满足/信息不足样盘之前，产品继续保留 `unknown`，不得修改 `applicable_to` 或 `verified`。
+
+## 2026-09-22 当前事实契约登记
+
+Classics 已在 `references/vocab/fact-vocab.json` 登记产品输入合同的六个结构 FactKey：`gender`、`spouse_star`、`spouse_palace_zhi`、`shishen_count`、`natal_same_zhi`、`natal_relation`。登记内容包括值形状/值域、`scope`、缺失语义和零值语义；六键已加入两份 predicate 工具的 Bazi 接收键表。这里仅表示产品事实可被识别和复核，不构成规则消费合同，也不升级任何规则的 `applicable_to`、`verified` 或三态结论。
+
+当前共享 fixture `tools/reports/facts-sample.json` 的 SHA-256 为 `ee750a96ae11dece15bdcef26b5e0fcc6b928a1e6947f1aa7ffd47fdb4c53aa7`；当前 Classics 主题 manifest `docs/closeout/P1_BAZI_TOPIC_MANIFEST_20260921.json` 的 SHA-256 为 `93fdfa3cb220e77c06d98f49702b4caaba2732091e4d171243010a71ccd203b7`。六个结构键仅作为输入事实登记，关系结果、身财两停、比劫夺财、制化救应和岁运现实作用仍需后续正式语义合同。
+
+`dayun_liunian_relation_class` 已由 cosmic 正式 emit，且 Classics 词表已有其稳定枚举；现已同步登记到两份 predicate 工具的 `ART_EMIT_KEYS`，`python3 tools/predicate-report.py --json --check-open-values --check-art-keys` 通过。该键与前述六个结构键在机械残留扫描中仍按“事实可用不等于规则语义就绪”处理，因此现有 29 条 expressible-residue 台账、463 条未映射台账和三条 semantic blocker 均保持不变。
+
+## 2026-09-22 当前 fixture 与 manifest 同步复核
+
+当前共享 fixture `tools/reports/facts-sample.json` 与产品 fixture 字节一致，SHA-256 为 `ee750a96ae11dece15bdcef26b5e0fcc6b928a1e6947f1aa7ffd47fdb4c53aa7`，共 26 个八字样盘。重新运行 `python3 tools/generate-p1-bazi-manifest.py --output docs/closeout/P1_BAZI_TOPIC_MANIFEST_20260921.json` 后，源 manifest SHA-256 为 `36453d273f248f33705fb8a59372c16b1de510303351b53d801f690dfb94459b`，与产品侧当前 manifest/handoff 指针一致。
+
+当前 productFactGaps 已反映六个结构 FactKey 的“部分可用”状态：性别/配偶星/日支、逐柱十神与计数、跨柱同支与本命关系可作结构证据；缺失不代表零值，也不等于关系或现实结果。制化救应、刃杀/财官印绶与命局喜忌、用神得力/忌神得权及岁运作用仍没有正式合同。
+
+因此 `SANMINGTONGH-010`、`SANMINGTONGH-011`、`DITIANSUICHA-051` 继续保持 `blocked` 和 `verified=false`，不得把当前结构事实或自由文本喜忌代理为三态语义结论。逐条当前事实和缺口见 [`semantic-gap-audit.json`](../../tools/reports/p1-bazi-20260922/semantic-gap-audit.json)，其 fixture SHA 已同步为 `ee750a96ae11dece15bdcef26b5e0fcc6b928a1e6947f1aa7ffd47fdb4c53aa7`。
+
+## 2026-09-22 共享 fixture 与 manifest 最终同步
+
+前一版 Classics manifest 仍记录旧 fixture `ff641776…`，而当前 `tools/reports/facts-sample.json` 已重建为 `ee750a96…`。现已用当前生成器重建源 manifest，并同步 `productFactGaps` 的“部分可用”状态；Classics 与 Cosmic 当前源 manifest 字节 SHA-256 均为 `36453d273f248f33705fb8a59372c16b1de510303351b53d801f690dfb94459b`，产品 handoff 产物 SHA-256 为 `62b8e8c1e68f21874799faa76878d13aa8aba7748ffe9ce80ef17ed8ee58cead`，共享 fixture SHA-256 为 `ee750a96ae11dece15bdcef26b5e0fcc6b928a1e6947f1aa7ffd47fdb4c53aa7`。
+
+Cosmic 重新导入该 manifest 后，目标回归 5 个文件、48 项通过；Classics 的 flow-year、residue、ledger、executable、open-values 和 art-keys 检查继续通过。三条语义 blocker 没有升级，`applicable_to`、`verified` 和 29/463 台账均未改变。
+
+## 2026-09-22 三条语义合同请求已机器化
+
+三条 blocker 的下一次交接要求已写入 [`semantic-contract-request.json`](../../tools/reports/p1-bazi-20260922/semantic-contract-request.json)。该文件只登记待交付的 FactKey、值域、scope、缺失/零值语义、原文锚点和三态样盘要求，状态为 `pending`；当前没有把这些待定义键加入可执行词表，也没有修改任何规则的 `applicable_to` 或 `verified`。满足/不满足样盘仍需 Classics 根据原文和流派裁决补齐，`caseFlowYearUnknown@2100` 仅作为现有缺键边界，不能冒充满足或不满足正例。
+
+Cosmic 的消费门槛已同步写入该机器请求的 `consumerGate`：将来 manifest 若消费保留语义键，除了把 `semanticContractStatus` 改为 `accepted`，还必须为每个实际消费的键提供包含“信息不足”的 `valueDomain`、`scope.layer`，以及共享 fixture 中真实存在的满足/不满足/信息不足三态 case；仅改状态字段会被 Cosmic 导入器拒绝。
+
+## 2026-09-22 当前 Cosmic 全量回归
+
+在当前共享 fixture、manifest 和 handoff hash 下，Cosmic 全量 `bunx vitest run --reporter=dot` 已通过 **296 个测试文件、4170 项测试**，另有 2 个文件和 44 项跳过。新增的 handoff semantic import gate 也已覆盖正常 pending 导入与伪 accepted 缺合同拒绝路径。该回归证明产品交接门禁和现有三态链路稳定，不改变三条 Classics semantic blocker 的 `blocked`/`verified=false` 状态。
+
+## 2026-09-22 语义合同候选审计（未采纳）
+
+Classics 已生成只读候选包 `tools/reports/p1-bazi-20260922/semantic-contract-candidates.json`，配套验证脚本为 `tools/verify-semantic-contract-candidates.py`，审计报告为 `tools/reports/p1-bazi-20260922/semantic-contract-candidate-audit.json`。脚本验证通过，且确认共享 fixture SHA-256 为 `ee750a96ae11dece15bdcef26b5e0fcc6b928a1e6947f1aa7ffd47fdb4c53aa7`；三条规则均保持 `candidateAdopted=false`、`rulesChanged=false`、`manifestChanged=false`、`verified=false`。
+
+该包只把缺口写成候选外形，尚不能进入 manifest：010 还缺救应推广范围、阈值、优先级和满足/不满足样盘；011 还缺刃杀/财官印绶分类、喜忌和岁运并临作用；051 还缺结构化用神/忌神作用、盖头截脚权重和例外样盘。Cosmic 因此继续保持 `semanticContractStatus=pending`，不消费这些候选键。
+
+## 2026-09-22 交接生成器可重复性修正
+
+生成器新增导出文件路径与 SHA-256 后，已重新生成 manifest 并让 cosmic 重新导入：
+
+- Classics/Cosmic 源 manifest SHA-256：`d33db94fc94d91a98d8624010de7dce48cb472771cc213e377f8aef338ff3d21`
+- Cosmic handoff 产物 SHA-256：`7165f5cf7be1244cefc135aa24b716a3e0002c2df87e1cd59c948847bbf1a08f`
+- 共享 fixture SHA-256：`ee750a96ae11dece15bdcef26b5e0fcc6b928a1e6947f1aa7ffd47fdb4c53aa7`
+- 导入命令：`python3 scripts/import-bazi-topic-handoff.py /Users/sync/code/fateradar-classics/docs/closeout/P1_BAZI_TOPIC_MANIFEST_20260921.json`
+- 结果：8 条规则导入成功；三条 semantic blocker 仍为 `pending/blocked`，没有升级 `applicable_to` 或 `verified`。
+
+## 2026-09-22 当前字节锁复核
+
+当前 Classics 与 Cosmic 源 manifest 字节一致，SHA-256 为 `d33db94fc94d91a98d8624010de7dce48cb472771cc213e377f8aef338ff3d21`；Cosmic handoff 产物 SHA-256 为 `7165f5cf7be1244cefc135aa24b716a3e0002c2df87e1cd59c948847bbf1a08f`，共享 fixture SHA-256 为 `ee750a96ae11dece15bdcef26b5e0fcc6b928a1e6947f1aa7ffd47fdb4c53aa7`。此前 hash 只代表旧工作区同步阶段。
+
+本次只复核字节锁和候选审计，不改变 `semanticContractStatus=pending`，也不升级三条 blocker。

@@ -1,0 +1,268 @@
+{
+  "schema": "fateradar-bazi-semantic-contract-request-v1",
+  "status": "pending",
+  "generatedAt": "2026-09-22",
+  "fixture": {
+    "path": "tools/reports/facts-sample.json",
+    "sha256": "ee750a96ae11dece15bdcef26b5e0fcc6b928a1e6947f1aa7ffd47fdb4c53aa7",
+    "caseCount": 26
+  },
+  "policy": {
+    "ruleMutation": "不得在合同交付前修改 rules.yaml 的 applicable_to 或 verified。",
+    "unknown": "缺失、未定义或作用无法判定时必须返回信息不足，不得折成不满足。",
+    "zero": "未输出显式零值的结构事实不能被当作零次。"
+  },
+  "requests": [
+    {
+      "ruleId": "SANMINGTONGH-010",
+      "status": "blocked",
+      "anchor": {
+        "file": "sources/fulltext/bazi/sanming-tonghui/fulltext.md",
+        "startLine": 1080,
+        "endLine": 1083
+      },
+      "requiredFacts": [
+        {
+          "key": "rescue_condition",
+          "valueDomain": [
+            "成立",
+            "不成立",
+            "信息不足"
+          ],
+          "scope": {
+            "layer": "流年",
+            "year": "selected"
+          },
+          "provenance": [
+            "本命",
+            "大运"
+          ],
+          "missingSemantics": "缺少原局/大运制化或相合有情的可判定条件时信息不足。"
+        },
+        {
+          "key": "transit_effect_semantics",
+          "valueDomain": [
+            "成立",
+            "不成立",
+            "信息不足"
+          ],
+          "scope": {
+            "layer": "流年",
+            "year": "selected"
+          },
+          "provenance": [
+            "流年",
+            "本命",
+            "大运"
+          ],
+          "missingSemantics": "结构关系存在但作用于命局未定义时信息不足。"
+        }
+      ],
+      "fixtures": {
+        "satisfied": {
+          "case": null,
+          "year": null
+        },
+        "not_satisfied": {
+          "case": null,
+          "year": null
+        },
+        "unknown": {
+          "case": "caseFlowYearUnknown",
+          "year": 2100
+        }
+      },
+      "currentEvidence": [
+        "liunian_gan",
+        "liunian_zhi",
+        "liunian_natal_relation",
+        "dayun_liunian_relation",
+        "dayun_liunian_relation_class"
+      ],
+      "gap": "现有结构事实不能代理制化救应、相合有情。",
+      "sourceObservation": "原文 L1081-L1083 明确区分日犯岁君与救应，并举庚申制甲、癸与戊相合为有救/有情的例子；是否可推广为稳定的跨干支作用合同，必须由 Classics 依据原文和流派裁决。"
+    },
+    {
+      "ruleId": "SANMINGTONGH-011",
+      "status": "blocked",
+      "anchor": {
+        "file": "sources/fulltext/bazi/sanming-tonghui/fulltext.md",
+        "startLine": 1084,
+        "endLine": 1084
+      },
+      "requiredFacts": [
+        {
+          "key": "natal_binglin_class",
+          "valueDomain": [
+            "羊刃",
+            "七杀",
+            "财官印绶",
+            "信息不足"
+          ],
+          "scope": {
+            "layer": "本命"
+          },
+          "provenance": [
+            "本命"
+          ],
+          "missingSemantics": "未完成刃杀/财官印绶分类时信息不足。"
+        },
+        {
+          "key": "natal_favorable_context",
+          "valueDomain": [
+            "有利",
+            "不利",
+            "信息不足"
+          ],
+          "scope": {
+            "layer": "本命"
+          },
+          "provenance": [
+            "本命"
+          ],
+          "missingSemantics": "自由文本喜用不足以形成稳定分类时信息不足。"
+        },
+        {
+          "key": "suiyun_binglin_semantics",
+          "valueDomain": [
+            "成立",
+            "不成立",
+            "信息不足"
+          ],
+          "scope": {
+            "layer": "流年",
+            "year": "selected"
+          },
+          "provenance": [
+            "本命",
+            "大运",
+            "流年"
+          ],
+          "missingSemantics": "岁运并临只证明形态，未交付喜忌/救应作用时信息不足。"
+        }
+      ],
+      "fixtures": {
+        "satisfied": {
+          "case": null,
+          "year": null
+        },
+        "not_satisfied": {
+          "case": null,
+          "year": null
+        },
+        "unknown": {
+          "case": "caseFlowYearUnknown",
+          "year": 2100
+        }
+      },
+      "currentEvidence": [
+        "suiyun_binglin",
+        "dayun_gan_zhi",
+        "shishen",
+        "natal_favorable_context"
+      ],
+      "gap": "现有并临结构、十神名称和描述性喜忌不能代理刃杀/财官印绶及命局喜忌。",
+      "sourceObservation": "原文 L1084 明确以甲子流年再逢甲子运为岁运并临，并区分羊刃七煞与财官印绶；分类、命局喜忌和救应仍需形成可执行值域。"
+    },
+    {
+      "ruleId": "DITIANSUICHA-051",
+      "status": "blocked",
+      "anchor": {
+        "file": "sources/fulltext/bazi/ditiansui-chanwei/fulltext.md",
+        "startLine": 13400,
+        "endLine": 13400
+      },
+      "requiredFacts": [
+        {
+          "key": "yongshen_effective",
+          "valueDomain": [
+            "成立",
+            "不成立",
+            "信息不足"
+          ],
+          "scope": {
+            "layer": "流年",
+            "year": "selected"
+          },
+          "provenance": [
+            "本命",
+            "大运",
+            "流年"
+          ],
+          "missingSemantics": "缺少岁运作用于用神的正式条件时信息不足。"
+        },
+        {
+          "key": "jishen_empowered",
+          "valueDomain": [
+            "成立",
+            "不成立",
+            "信息不足"
+          ],
+          "scope": {
+            "layer": "流年",
+            "year": "selected"
+          },
+          "provenance": [
+            "本命",
+            "大运",
+            "流年"
+          ],
+          "missingSemantics": "缺少岁运作用于忌神的正式条件时信息不足。"
+        },
+        {
+          "key": "transit_effect_semantics",
+          "valueDomain": [
+            "成立",
+            "不成立",
+            "信息不足"
+          ],
+          "scope": {
+            "layer": "流年",
+            "year": "selected"
+          },
+          "provenance": [
+            "本命",
+            "大运",
+            "流年"
+          ],
+          "missingSemantics": "只有方向/干支而无作用合同时时信息不足。"
+        }
+      ],
+      "fixtures": {
+        "satisfied": {
+          "case": null,
+          "year": null
+        },
+        "not_satisfied": {
+          "case": null,
+          "year": null
+        },
+        "unknown": {
+          "case": "caseFlowYearUnknown",
+          "year": 2100
+        }
+      },
+      "currentEvidence": [
+        "dayun_direction",
+        "liunian_gan_zhi",
+        "natal_favorable_context"
+      ],
+      "gap": "岁运方向和描述性喜忌不能代理用神得力、忌神得权。",
+      "sourceObservation": "原文 L13400-L13412 明确大运重地支、太岁重天干，并要求结合喜行/忌行、盖头截脚；这些作用关系尚需定义为可计算合同。"
+    }
+  ],
+  "consumerGate": {
+    "manifestField": "semanticContractStatus",
+    "acceptedValue": "accepted",
+    "requiredSemanticContracts": {
+      "valueDomain": "list including 信息不足",
+      "scope": "object with layer",
+      "fixtures": {
+        "satisfied": "case name present in shared fixture",
+        "not_satisfied": "case name present in shared fixture",
+        "unknown": "case name present in shared fixture"
+      }
+    },
+    "note": "Cosmic importer rejects accepted manifests that consume reserved keys without these fields."
+  }
+}

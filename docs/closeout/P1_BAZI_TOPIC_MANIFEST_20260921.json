@@ -1,16 +1,17 @@
 {
   "manifestVersion": "fateradar-p1-bazi-topic-handoff-v1",
+  "semanticContractStatus": "pending",
   "generatedAt": "2026-09-22",
   "generatedBy": "tools/generate-p1-bazi-manifest.py",
   "art": "bazi",
   "ruleSchema": "fateradar-rules-v2",
   "predicateLanguage": "fateradar-rules-v3",
   "classicsRev": "6321186f6aeebd0737537c45286153eedf49adb4",
-  "sourceHeadAtAudit": "15cfe0cc16918bfa2f697e7b6fcff56860086a81",
+  "sourceHeadAtAudit": "fbcccdf19329ae1ab60eacbd45ccea7e99afa25d",
   "classicsRevChanged": true,
   "factFixture": {
     "path": "tools/reports/facts-sample.json",
-    "sha256": "d53d3a8a64ca11826950276791ef2e84abaa7f01d914fdfb1e38f51dc200b47c",
+    "sha256": "ee750a96ae11dece15bdcef26b5e0fcc6b928a1e6947f1aa7ffd47fdb4c53aa7",
     "caseCount": 26,
     "generator": {
       "command": "bun scripts/dump-facts.ts /Users/sync/code/fateradar-classics",
@@ -18,10 +19,10 @@
       "repoHead": "93c7245db2dbfa82e3a8ce69cc74ab318391b988",
       "script": "/Users/sync/code/cosmic-fortune-lab/scripts/dump-facts.ts",
       "scriptSha256": "d21e8f48638653199e56363d844ab7ad4b9c461c1beba2fea6edabeb7d6105f2",
-      "productFixtureSha256": "d53d3a8a64ca11826950276791ef2e84abaa7f01d914fdfb1e38f51dc200b47c",
+      "productFixtureSha256": "ee750a96ae11dece15bdcef26b5e0fcc6b928a1e6947f1aa7ffd47fdb4c53aa7",
       "workingTreeInputs": "scripts/dump-facts.ts 和 tests/fixtures/facts-sample.json 在生成时均为未提交改动。"
     },
-    "differenceFromClassicsHead": "git diff --numstat: 无工作区 diff; 原因是按产品生成器重建事实快照，新增时间层/逐柱事实和覆盖样盘。"
+    "differenceFromClassicsHead": "git diff --numstat: 7059\t777\ttools/reports/facts-sample.json; 原因是按产品生成器重建事实快照，新增时间层/逐柱事实和覆盖样盘。"
   },
   "contract": {
     "pipeline": "Fact -> RuleEvaluation -> TopicEvaluation",
@@ -32,7 +33,7 @@
     },
     "unknownPolicy": "缺少事实、未实现时间层、性别/计数/关系合同不完整时保留 unknown；不写成 not_satisfied。",
     "verifiedPolicy": "本 manifest 的所有规则 verified=false；只有固定样盘、明确验收证据和人工出处核验完成后才可改变。",
-    "layerPolicy": "本批采纳规则仅适用于本命。流年/流月/大运不是把本命规则复制过去；需要产品提供明确 scope 条件后另行验收。"
+    "layerPolicy": "各规则仅在其 applicableLayers 声明的层求值：当前 7 条本命规则仅适用于本命，YUANHAIZIPIN-YR-03 仅适用于流年。不得把本命规则复制到流年/流月/大运；未声明或缺少 scope 条件时保留 unknown。"
   },
   "topics": {
     "overview": {
@@ -81,7 +82,8 @@
       "status": "partial",
       "ruleIds": [
         "DITIANSUICHA-DR-06",
-        "SANMINGTONGH-015"
+        "SANMINGTONGH-015",
+        "YUANHAIZIPIN-YR-03"
       ],
       "requiredFactKeys": [
         "rizhu_strength",
@@ -97,7 +99,8 @@
     "wealth": {
       "status": "partial",
       "ruleIds": [
-        "DITIANSUICHA-DR-06"
+        "DITIANSUICHA-DR-06",
+        "YUANHAIZIPIN-YR-03"
       ],
       "requiredFactKeys": [
         "rizhu_strength",
@@ -207,7 +210,7 @@
         "fixtureSource": "tools/reports/facts-sample.json",
         "positive": {
           "case": "cov1_bazi_2",
-          "factCount": 81,
+          "factCount": 99,
           "verdict": "满足",
           "confidence": 1.0,
           "factCoverage": 1.0,
@@ -215,7 +218,7 @@
         },
         "negative": {
           "case": "caseA",
-          "factCount": 80,
+          "factCount": 102,
           "verdict": "不满足",
           "confidence": 1.0,
           "factCoverage": 1.0,
@@ -223,7 +226,7 @@
         },
         "boundary": {
           "case": "cov1_bazi_2",
-          "factCount": 80,
+          "factCount": 98,
           "verdict": "信息不足",
           "confidence": 0.0,
           "factCoverage": 0.0,
@@ -304,7 +307,7 @@
         "fixtureSource": "tools/reports/facts-sample.json",
         "positive": {
           "case": "cov1_bazi_2",
-          "factCount": 81,
+          "factCount": 99,
           "verdict": "满足",
           "confidence": 1.0,
           "factCoverage": 1.0,
@@ -312,7 +315,7 @@
         },
         "negative": {
           "case": "caseA",
-          "factCount": 80,
+          "factCount": 102,
           "verdict": "不满足",
           "confidence": 1.0,
           "factCoverage": 1.0,
@@ -320,7 +323,7 @@
         },
         "boundary": {
           "case": "cov1_bazi_2",
-          "factCount": 80,
+          "factCount": 98,
           "verdict": "信息不足",
           "confidence": 0.0,
           "factCoverage": 0.0,
@@ -404,7 +407,7 @@
         "fixtureSource": "tools/reports/facts-sample.json",
         "positive": {
           "case": "cov1_bazi_2",
-          "factCount": 81,
+          "factCount": 99,
           "verdict": "满足",
           "confidence": 1.0,
           "factCoverage": 1.0,
@@ -412,7 +415,7 @@
         },
         "negative": {
           "case": "caseA",
-          "factCount": 80,
+          "factCount": 102,
           "verdict": "不满足",
           "confidence": 1.0,
           "factCoverage": 1.0,
@@ -420,7 +423,7 @@
         },
         "boundary": {
           "case": "cov1_bazi_2",
-          "factCount": 80,
+          "factCount": 98,
           "verdict": "信息不足",
           "confidence": 0.0,
           "factCoverage": 0.0,
@@ -504,7 +507,7 @@
         "fixtureSource": "tools/reports/facts-sample.json",
         "positive": {
           "case": "cov1_bazi_1",
-          "factCount": 83,
+          "factCount": 104,
           "verdict": "满足",
           "confidence": 1.0,
           "factCoverage": 1.0,
@@ -512,7 +515,7 @@
         },
         "negative": {
           "case": "caseA",
-          "factCount": 80,
+          "factCount": 102,
           "verdict": "不满足",
           "confidence": 1.0,
           "factCoverage": 1.0,
@@ -520,7 +523,7 @@
         },
         "boundary": {
           "case": "cov1_bazi_1",
-          "factCount": 82,
+          "factCount": 103,
           "verdict": "信息不足",
           "confidence": 0.0,
           "factCoverage": 0.0,
@@ -683,7 +686,7 @@
         "fixtureSource": "tools/reports/facts-sample.json",
         "positive": {
           "case": "cov1_bazi_1",
-          "factCount": 83,
+          "factCount": 104,
           "verdict": "满足",
           "confidence": 1.0,
           "factCoverage": 1.0,
@@ -691,7 +694,7 @@
         },
         "negative": {
           "case": "caseA",
-          "factCount": 80,
+          "factCount": 102,
           "verdict": "不满足",
           "confidence": 1.0,
           "factCoverage": 1.0,
@@ -699,7 +702,7 @@
         },
         "boundary": {
           "case": "cov1_bazi_1",
-          "factCount": 79,
+          "factCount": 100,
           "verdict": "信息不足",
           "confidence": 0.0,
           "factCoverage": 0.0,
@@ -795,7 +798,7 @@
         "fixtureSource": "tools/reports/facts-sample.json",
         "positive": {
           "case": "caseA",
-          "factCount": 80,
+          "factCount": 102,
           "verdict": "满足",
           "confidence": 1.0,
           "factCoverage": 1.0,
@@ -803,7 +806,7 @@
         },
         "negative": {
           "case": "caseB",
-          "factCount": 78,
+          "factCount": 97,
           "verdict": "不满足",
           "confidence": 1.0,
           "factCoverage": 1.0,
@@ -811,7 +814,7 @@
         },
         "boundary": {
           "case": "caseA",
-          "factCount": 76,
+          "factCount": 98,
           "verdict": "信息不足",
           "confidence": 0.0,
           "factCoverage": 0.0,
@@ -1093,7 +1096,7 @@
         "fixtureSource": "tools/reports/facts-sample.json",
         "positive": {
           "case": "caseA",
-          "factCount": 80,
+          "factCount": 102,
           "verdict": "满足",
           "confidence": 1.0,
           "factCoverage": 1.0,
@@ -1101,7 +1104,7 @@
         },
         "negative": {
           "case": "caseB",
-          "factCount": 78,
+          "factCount": 97,
           "verdict": "不满足",
           "confidence": 1.0,
           "factCoverage": 1.0,
@@ -1109,7 +1112,7 @@
         },
         "boundary": {
           "case": "caseA",
-          "factCount": 76,
+          "factCount": 98,
           "verdict": "信息不足",
           "confidence": 0.5,
           "factCoverage": 0.5,
@@ -1225,7 +1228,7 @@
         "fixtureSource": "tools/reports/facts-sample.json",
         "positive": {
           "case": "caseFlowYear",
-          "factCount": 15,
+          "factCount": 17,
           "verdict": "满足",
           "confidence": 1.0,
           "factCoverage": 1.0,
@@ -1234,7 +1237,7 @@
         },
         "negative": {
           "case": "caseFlowYear",
-          "factCount": 12,
+          "factCount": 14,
           "verdict": "不满足",
           "confidence": 1.0,
           "factCoverage": 1.0,
@@ -1337,8 +1340,8 @@
     {
       "topic": "relationship",
       "gap": "性别/配偶星/夫宫与关系反馈的明确合同",
-      "state": "阻塞",
-      "action": "产品仓定义 FactKey 或输入结构；未定义前保持 unknown。"
+      "state": "部分可用",
+      "action": "已增加 gender、spouse_star、spouse_palace_zhi 结构事实；关系反馈与古籍复合语义仍保持 unknown，未升级规则。"
     },
     {
       "topic": "all",
@@ -1349,8 +1352,8 @@
     {
       "topic": "wealth",
       "gap": "财星位置、身财两停、比劫夺财与岁运触发",
-      "state": "阻塞",
-      "action": "补齐事实和复合谓词后另开授权批次。"
+      "state": "部分可用",
+      "action": "已增加逐柱十神与 shishen_count，可供财星位置/计数取证；身财两停、比劫夺财与岁运触发仍阻塞。"
     },
     {
       "topic": "health",
@@ -1361,8 +1364,8 @@
     {
       "topic": "all",
       "gap": "多现/计数、跨柱同支关系",
-      "state": "阻塞",
-      "action": "增加计数或关系事实合同；当前不能用重复无 scope 谓词近似。"
+      "state": "部分可用",
+      "action": "已增加 shishen_count、natal_same_zhi、natal_relation；尚未把这些结构事实升级为古籍复合结论。"
     }
   ],
   "round50Audit": {
@@ -1373,7 +1376,7 @@
       "result": "通过：生成器为 shensha 事实写入 scope.layer=本命 与 scope.pillar=year/month/day/time；固定样盘重建后与产品 fixture 字节一致。",
       "generator": "bun scripts/dump-facts.ts /Users/sync/code/fateradar-classics",
       "proofFile": "tools/reports/p1-bazi-20260921/shensha-scope-proof.json",
-      "sampleSha256": "d53d3a8a64ca11826950276791ef2e84abaa7f01d914fdfb1e38f51dc200b47c",
+      "sampleSha256": "ee750a96ae11dece15bdcef26b5e0fcc6b928a1e6947f1aa7ffd47fdb4c53aa7",
       "shenshaFactCount": 289,
       "semanticLimit": "柱位存在不证明神煞代理等价于建禄/专禄格局。"
     },

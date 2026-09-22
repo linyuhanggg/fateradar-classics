@@ -1,0 +1,2931 @@
+{
+  "schema": "fateradar.classics.bazi.semantic-gap-audit.v1",
+  "date": "2026-09-22",
+  "fixture": "tools/reports/facts-sample.json",
+  "fixtureSha256": "ee750a96ae11dece15bdcef26b5e0fcc6b928a1e6947f1aa7ffd47fdb4c53aa7",
+  "status": "partial",
+  "summary": "三条阻塞候选均仍缺正式作用语义；不升级 applicable_to 或 verified。",
+  "candidates": [
+    {
+      "ruleId": "SANMINGTONGH-010",
+      "status": "blocked",
+      "verified": false,
+      "anchor": {
+        "file": "sources/fulltext/bazi/sanming-tonghui/fulltext.md",
+        "startLine": 1080,
+        "endLine": 1083
+      },
+      "requiredMissingContracts": [
+        {
+          "key": "rescue_condition",
+          "definition": "原局或大运制化、相合救应是否成立；不能用名称出现代理"
+        }
+      ],
+      "availableFactKeys": [
+        "liunian_gan",
+        "liunian_zhi",
+        "liunian_gan_zhi",
+        "natal_day_gan",
+        "liunian_natal_relation",
+        "dayun_gan_zhi",
+        "dayun_liunian_relation"
+      ],
+      "evidenceCases": {
+        "caseFlowYear": [
+          {
+            "key": "natal_day_gan",
+            "value": "壬",
+            "scope": {
+              "layer": "本命",
+              "pillar": "day"
+            }
+          },
+          {
+            "key": "liunian_gan",
+            "value": "戊",
+            "scope": {
+              "layer": "流年",
+              "year": 2018
+            }
+          },
+          {
+            "key": "liunian_zhi",
+            "value": "戌",
+            "scope": {
+              "layer": "流年",
+              "year": 2018
+            }
+          },
+          {
+            "key": "liunian_gan",
+            "value": "己",
+            "scope": {
+              "layer": "流年",
+              "year": 2019
+            }
+          },
+          {
+            "key": "liunian_zhi",
+            "value": "亥",
+            "scope": {
+              "layer": "流年",
+              "year": 2019
+            }
+          },
+          {
+            "key": "liunian_gan",
+            "value": "庚",
+            "scope": {
+              "layer": "流年",
+              "year": 2020
+            }
+          },
+          {
+            "key": "liunian_zhi",
+            "value": "子",
+            "scope": {
+              "layer": "流年",
+              "year": 2020
+            }
+          },
+          {
+            "key": "liunian_gan",
+            "value": "辛",
+            "scope": {
+              "layer": "流年",
+              "year": 2021
+            }
+          },
+          {
+            "key": "liunian_zhi",
+            "value": "丑",
+            "scope": {
+              "layer": "流年",
+              "year": 2021
+            }
+          },
+          {
+            "key": "liunian_gan",
+            "value": "壬",
+            "scope": {
+              "layer": "流年",
+              "year": 2022
+            }
+          },
+          {
+            "key": "liunian_zhi",
+            "value": "寅",
+            "scope": {
+              "layer": "流年",
+              "year": 2022
+            }
+          },
+          {
+            "key": "liunian_gan",
+            "value": "癸",
+            "scope": {
+              "layer": "流年",
+              "year": 2023
+            }
+          },
+          {
+            "key": "liunian_zhi",
+            "value": "卯",
+            "scope": {
+              "layer": "流年",
+              "year": 2023
+            }
+          },
+          {
+            "key": "liunian_gan",
+            "value": "甲",
+            "scope": {
+              "layer": "流年",
+              "year": 2024
+            }
+          },
+          {
+            "key": "liunian_zhi",
+            "value": "辰",
+            "scope": {
+              "layer": "流年",
+              "year": 2024
+            }
+          },
+          {
+            "key": "liunian_gan",
+            "value": "乙",
+            "scope": {
+              "layer": "流年",
+              "year": 2025
+            }
+          },
+          {
+            "key": "liunian_zhi",
+            "value": "巳",
+            "scope": {
+              "layer": "流年",
+              "year": 2025
+            }
+          },
+          {
+            "key": "liunian_gan",
+            "value": "丙",
+            "scope": {
+              "layer": "流年",
+              "year": 2026
+            }
+          },
+          {
+            "key": "liunian_zhi",
+            "value": "午",
+            "scope": {
+              "layer": "流年",
+              "year": 2026
+            }
+          },
+          {
+            "key": "liunian_gan",
+            "value": "丁",
+            "scope": {
+              "layer": "流年",
+              "year": 2027
+            }
+          },
+          {
+            "key": "liunian_zhi",
+            "value": "未",
+            "scope": {
+              "layer": "流年",
+              "year": 2027
+            }
+          },
+          {
+            "key": "liunian_natal_relation",
+            "value": "天干相生:戊生庚",
+            "scope": {
+              "layer": "流年",
+              "year": 2018
+            }
+          },
+          {
+            "key": "liunian_natal_relation",
+            "value": "天干相克:甲克戊",
+            "scope": {
+              "layer": "流年",
+              "year": 2018
+            }
+          },
+          {
+            "key": "liunian_natal_relation",
+            "value": "天干相克:戊克壬",
+            "scope": {
+              "layer": "流年",
+              "year": 2018
+            }
+          },
+          {
+            "key": "liunian_natal_relation",
+            "value": "天干相生:丁生戊",
+            "scope": {
+              "layer": "流年",
+              "year": 2018
+            }
+          },
+          {
+            "key": "liunian_natal_relation",
+            "value": "六破:未戌相破",
+            "scope": {
+              "layer": "流年",
+              "year": 2018
+            }
+          },
+          {
+            "key": "liunian_natal_relation",
+            "value": "天干相生:己生庚",
+            "scope": {
+              "layer": "流年",
+              "year": 2019
+            }
+          },
+          {
+            "key": "liunian_natal_relation",
+            "value": "天干五合:甲己合",
+            "scope": {
+              "layer": "流年",
+              "year": 2019
+            }
+          },
+          {
+            "key": "liunian_natal_relation",
+            "value": "天干相克:甲克己",
+            "scope": {
+              "layer": "流年",
+              "year": 2019
+            }
+          },
+          {
+            "key": "liunian_natal_relation",
+            "value": "六害:申亥相害",
+            "scope": {
+              "layer": "流年",
+              "year": 2019
+            }
+          },
+          {
+            "key": "liunian_natal_relation",
+            "value": "天干相克:己克壬",
+            "scope": {
+              "layer": "流年",
+              "year": 2019
+            }
+          },
+          {
+            "key": "liunian_natal_relation",
+            "value": "天干相生:丁生己",
+            "scope": {
+              "layer": "流年",
+              "year": 2019
+            }
+          },
+          {
+            "key": "liunian_natal_relation",
+            "value": "六冲:午子相冲",
+            "scope": {
+              "layer": "流年",
+              "year": 2020
+            }
+          },
+          {
+            "key": "liunian_natal_relation",
+            "value": "天干相克:庚克甲",
+            "scope": {
+              "layer": "流年",
+              "year": 2020
+            }
+          },
+          {
+            "key": "liunian_natal_relation",
+            "value": "天干相生:庚生壬",
+            "scope": {
+              "layer": "流年",
+              "year": 2020
+            }
+          },
+          {
+            "key": "liunian_natal_relation",
+            "value": "天干相克:丁克庚",
+            "scope": {
+              "layer": "流年",
+              "year": 2020
+            }
+          },
+          {
+            "key": "liunian_natal_relation",
+            "value": "六害:未子相害",
+            "scope": {
+              "layer": "流年",
+              "year": 2020
+            }
+          },
+          {
+            "key": "liunian_natal_relation",
+            "value": "六害:午丑相害",
+            "scope": {
+              "layer": "流年",
+              "year": 2021
+            }
+          },
+          {
+            "key": "liunian_natal_relation",
+            "value": "天干相克:辛克甲",
+            "scope": {
+              "layer": "流年",
+              "year": 2021
+            }
+          },
+          {
+            "key": "liunian_natal_relation",
+            "value": "天干相生:辛生壬",
+            "scope": {
+              "layer": "流年",
+              "year": 2021
+            }
+          },
+          {
+            "key": "liunian_natal_relation",
+            "value": "六合:子丑六合",
+            "scope": {
+              "layer": "流年",
+              "year": 2021
+            }
+          },
+          {
+            "key": "liunian_natal_relation",
+            "value": "天干相克:丁克辛",
+            "scope": {
+              "layer": "流年",
+              "year": 2021
+            }
+          },
+          {
+            "key": "liunian_natal_relation",
+            "value": "六冲:未丑相冲",
+            "scope": {
+              "layer": "流年",
+              "year": 2021
+            }
+          },
+          {
+            "key": "liunian_natal_relation",
+            "value": "天干相生:庚生壬",
+            "scope": {
+              "layer": "流年",
+              "year": 2022
+            }
+          },
+          {
+            "key": "liunian_natal_relation",
+            "value": "天干相生:壬生甲",
+            "scope": {
+              "layer": "流年",
+              "year": 2022
+            }
+          },
+          {
+            "key": "liunian_natal_relation",
+            "value": "六冲:申寅相冲",
+            "scope": {
+              "layer": "流年",
+              "year": 2022
+            }
+          },
+          {
+            "key": "liunian_natal_relation",
+            "value": "天干五合:丁壬合",
+            "scope": {
+              "layer": "流年",
+              "year": 2022
+            }
+          },
+          {
+            "key": "liunian_natal_relation",
+            "value": "天干相克:壬克丁",
+            "scope": {
+              "layer": "流年",
+              "year": 2022
+            }
+          },
+          {
+            "key": "liunian_natal_relation",
+            "value": "天干相生:庚生癸",
+            "scope": {
+              "layer": "流年",
+              "year": 2023
+            }
+          },
+          {
+            "key": "liunian_natal_relation",
+            "value": "六破:午卯相破",
+            "scope": {
+              "layer": "流年",
+              "year": 2023
+            }
+          },
+          {
+            "key": "liunian_natal_relation",
+            "value": "天干相生:癸生甲",
+            "scope": {
+              "layer": "流年",
+              "year": 2023
+            }
+          },
+          {
+            "key": "liunian_natal_relation",
+            "value": "相刑:子卯相刑",
+            "scope": {
+              "layer": "流年",
+              "year": 2023
+            }
+          },
+          {
+            "key": "liunian_natal_relation",
+            "value": "天干相克:癸克丁",
+            "scope": {
+              "layer": "流年",
+              "year": 2023
+            }
+          },
+          {
+            "key": "liunian_natal_relation",
+            "value": "天干相克:庚克甲",
+            "scope": {
+              "layer": "流年",
+              "year": 2024
+            }
+          },
+          {
+            "key": "liunian_natal_relation",
+            "value": "天干相生:壬生甲",
+            "scope": {
+              "layer": "流年",
+              "year": 2024
+            }
+          },
+          {
+            "key": "liunian_natal_relation",
+            "value": "天干相生:甲生丁",
+            "scope": {
+              "layer": "流年",
+              "year": 2024
+            }
+          },
+          {
+            "key": "liunian_natal_relation",
+            "value": "三合:申子辰水局",
+            "scope": {
+              "layer": "流年",
+              "year": 2024
+            }
+          },
+          {
+            "key": "liunian_natal_relation",
+            "value": "天干五合:庚乙合",
+            "scope": {
+              "layer": "流年",
+              "year": 2025
+            }
+          },
+          {
+            "key": "liunian_natal_relation",
+            "value": "天干相克:庚克乙",
+            "scope": {
+              "layer": "流年",
+              "year": 2025
+            }
+          },
+          {
+            "key": "liunian_natal_relation",
+            "value": "六合:申巳六合",
+            "scope": {
+              "layer": "流年",
+              "year": 2025
+            }
+          },
+          {
+            "key": "liunian_natal_relation",
+            "value": "六破:申巳相破",
+            "scope": {
+              "layer": "流年",
+              "year": 2025
+            }
+          },
+          {
+            "key": "liunian_natal_relation",
+            "value": "天干相生:壬生乙",
+            "scope": {
+              "layer": "流年",
+              "year": 2025
+            }
+          },
+          {
+            "key": "liunian_natal_relation",
+            "value": "天干相生:乙生丁",
+            "scope": {
+              "layer": "流年",
+              "year": 2025
+            }
+          },
+          {
+            "key": "liunian_natal_relation",
+            "value": "三会:南方火会",
+            "scope": {
+              "layer": "流年",
+              "year": 2025
+            }
+          },
+          {
+            "key": "liunian_natal_relation",
+            "value": "天干相克:丙克庚",
+            "scope": {
+              "layer": "流年",
+              "year": 2026
+            }
+          },
+          {
+            "key": "liunian_natal_relation",
+            "value": "相刑:午午自刑",
+            "scope": {
+              "layer": "流年",
+              "year": 2026
+            }
+          },
+          {
+            "key": "liunian_natal_relation",
+            "value": "天干相生:甲生丙",
+            "scope": {
+              "layer": "流年",
+              "year": 2026
+            }
+          },
+          {
+            "key": "liunian_natal_relation",
+            "value": "天干相克:壬克丙",
+            "scope": {
+              "layer": "流年",
+              "year": 2026
+            }
+          },
+          {
+            "key": "liunian_natal_relation",
+            "value": "六冲:子午相冲",
+            "scope": {
+              "layer": "流年",
+              "year": 2026
+            }
+          },
+          {
+            "key": "liunian_natal_relation",
+            "value": "六合:未午六合",
+            "scope": {
+              "layer": "流年",
+              "year": 2026
+            }
+          },
+          {
+            "key": "liunian_natal_relation",
+            "value": "天干相克:丁克庚",
+            "scope": {
+              "layer": "流年",
+              "year": 2027
+            }
+          },
+          {
+            "key": "liunian_natal_relation",
+            "value": "六合:午未六合",
+            "scope": {
+              "layer": "流年",
+              "year": 2027
+            }
+          },
+          {
+            "key": "liunian_natal_relation",
+            "value": "天干相生:甲生丁",
+            "scope": {
+              "layer": "流年",
+              "year": 2027
+            }
+          },
+          {
+            "key": "liunian_natal_relation",
+            "value": "天干五合:壬丁合",
+            "scope": {
+              "layer": "流年",
+              "year": 2027
+            }
+          },
+          {
+            "key": "liunian_natal_relation",
+            "value": "天干相克:壬克丁",
+            "scope": {
+              "layer": "流年",
+              "year": 2027
+            }
+          },
+          {
+            "key": "liunian_natal_relation",
+            "value": "六害:子未相害",
+            "scope": {
+              "layer": "流年",
+              "year": 2027
+            }
+          }
+        ]
+      },
+      "upgradeDecision": "blocked",
+      "reason": "已有流年干支与关系只证明结构入口；缺制化救应/相合有情的正式可计算条件及三态样盘。"
+    },
+    {
+      "ruleId": "SANMINGTONGH-011",
+      "status": "blocked",
+      "verified": false,
+      "anchor": {
+        "file": "sources/fulltext/bazi/sanming-tonghui/fulltext.md",
+        "startLine": 1084,
+        "endLine": 1084
+      },
+      "requiredMissingContracts": [
+        {
+          "key": "natal_favorable_context",
+          "definition": "命局喜忌、刃杀财官印绶分类及救应；当前同名事实仅描述性文本，不能直接求值"
+        },
+        {
+          "key": "suiyun_binglin_semantics",
+          "definition": "并临如何结合刃杀/财官印绶、命局喜忌和救应解释"
+        }
+      ],
+      "availableFactKeys": [
+        "liunian_gan_zhi",
+        "dayun_gan_zhi",
+        "dayun_liunian_relation",
+        "dayun_liunian_relation_class",
+        "suiyun_binglin",
+        "natal_favorable_context",
+        "shishen",
+        "shensha"
+      ],
+      "evidenceCases": {
+        "caseFlowYearBinglin": [
+          {
+            "key": "natal_favorable_context",
+            "value": "喜用=火、木;忌=未列出",
+            "scope": {
+              "layer": "本命"
+            }
+          },
+          {
+            "key": "shishen",
+            "value": "劫财",
+            "scope": {
+              "layer": "本命",
+              "pillar": "year"
+            }
+          },
+          {
+            "key": "shishen",
+            "value": "偏印",
+            "scope": {
+              "layer": "本命",
+              "pillar": "month"
+            }
+          },
+          {
+            "key": "shishen",
+            "value": "劫财",
+            "scope": {
+              "layer": "本命",
+              "pillar": "time"
+            }
+          },
+          {
+            "key": "shishen",
+            "value": "偏财",
+            "scope": {
+              "layer": "本命",
+              "pillar": "year"
+            }
+          },
+          {
+            "key": "shishen",
+            "value": "七杀",
+            "scope": {
+              "layer": "本命",
+              "pillar": "year"
+            }
+          },
+          {
+            "key": "shishen",
+            "value": "正财",
+            "scope": {
+              "layer": "本命",
+              "pillar": "month"
+            }
+          },
+          {
+            "key": "shishen",
+            "value": "正财",
+            "scope": {
+              "layer": "本命",
+              "pillar": "day"
+            }
+          },
+          {
+            "key": "shishen",
+            "value": "正印",
+            "scope": {
+              "layer": "本命",
+              "pillar": "time"
+            }
+          },
+          {
+            "key": "shishen",
+            "value": "正官",
+            "scope": {
+              "layer": "本命",
+              "pillar": "time"
+            }
+          },
+          {
+            "key": "shensha",
+            "value": "天医",
+            "scope": {
+              "layer": "本命",
+              "pillar": "year"
+            }
+          },
+          {
+            "key": "shensha",
+            "value": "天乙贵人",
+            "scope": {
+              "layer": "本命",
+              "pillar": "month"
+            }
+          },
+          {
+            "key": "shensha",
+            "value": "飞刃",
+            "scope": {
+              "layer": "本命",
+              "pillar": "month"
+            }
+          },
+          {
+            "key": "shensha",
+            "value": "桃花",
+            "scope": {
+              "layer": "本命",
+              "pillar": "month"
+            }
+          },
+          {
+            "key": "shensha",
+            "value": "天乙贵人",
+            "scope": {
+              "layer": "本命",
+              "pillar": "day"
+            }
+          },
+          {
+            "key": "shensha",
+            "value": "飞刃",
+            "scope": {
+              "layer": "本命",
+              "pillar": "day"
+            }
+          },
+          {
+            "key": "shensha",
+            "value": "桃花",
+            "scope": {
+              "layer": "本命",
+              "pillar": "day"
+            }
+          },
+          {
+            "key": "shensha",
+            "value": "天乙贵人",
+            "scope": {
+              "layer": "本命",
+              "pillar": "time"
+            }
+          },
+          {
+            "key": "shensha",
+            "value": "太极贵人",
+            "scope": {
+              "layer": "本命",
+              "pillar": "time"
+            }
+          },
+          {
+            "key": "shensha",
+            "value": "金舆",
+            "scope": {
+              "layer": "本命",
+              "pillar": "time"
+            }
+          },
+          {
+            "key": "dayun_gan_zhi",
+            "value": "乙亥",
+            "scope": {
+              "layer": "大运"
+            }
+          },
+          {
+            "key": "shishen",
+            "value": "正官",
+            "scope": {
+              "layer": "大运"
+            }
+          },
+          {
+            "key": "dayun_gan_zhi",
+            "value": "甲戌",
+            "scope": {
+              "layer": "大运"
+            }
+          },
+          {
+            "key": "shishen",
+            "value": "七杀",
+            "scope": {
+              "layer": "大运"
+            }
+          },
+          {
+            "key": "dayun_gan_zhi",
+            "value": "癸酉",
+            "scope": {
+              "layer": "大运"
+            }
+          },
+          {
+            "key": "shishen",
+            "value": "正财",
+            "scope": {
+              "layer": "大运"
+            }
+          },
+          {
+            "key": "dayun_gan_zhi",
+            "value": "壬申",
+            "scope": {
+              "layer": "大运"
+            }
+          },
+          {
+            "key": "shishen",
+            "value": "偏财",
+            "scope": {
+              "layer": "大运"
+            }
+          },
+          {
+            "key": "dayun_gan_zhi",
+            "value": "辛未",
+            "scope": {
+              "layer": "大运"
+            }
+          },
+          {
+            "key": "shishen",
+            "value": "伤官",
+            "scope": {
+              "layer": "大运"
+            }
+          },
+          {
+            "key": "dayun_gan_zhi",
+            "value": "庚午",
+            "scope": {
+              "layer": "大运"
+            }
+          },
+          {
+            "key": "shishen",
+            "value": "食神",
+            "scope": {
+              "layer": "大运"
+            }
+          },
+          {
+            "key": "dayun_gan_zhi",
+            "value": "己巳",
+            "scope": {
+              "layer": "大运"
+            }
+          },
+          {
+            "key": "shishen",
+            "value": "劫财",
+            "scope": {
+              "layer": "大运"
+            }
+          },
+          {
+            "key": "dayun_gan_zhi",
+            "value": "戊辰",
+            "scope": {
+              "layer": "大运"
+            }
+          },
+          {
+            "key": "shishen",
+            "value": "比肩",
+            "scope": {
+              "layer": "大运"
+            }
+          },
+          {
+            "key": "dayun_gan_zhi",
+            "value": "丁卯",
+            "scope": {
+              "layer": "大运"
+            }
+          },
+          {
+            "key": "shishen",
+            "value": "正印",
+            "scope": {
+              "layer": "大运"
+            }
+          },
+          {
+            "key": "dayun_gan_zhi",
+            "value": "丙寅",
+            "scope": {
+              "layer": "大运"
+            }
+          },
+          {
+            "key": "shishen",
+            "value": "偏印",
+            "scope": {
+              "layer": "大运"
+            }
+          },
+          {
+            "key": "shishen",
+            "value": "比肩",
+            "scope": {
+              "layer": "流年",
+              "year": 1988
+            }
+          },
+          {
+            "key": "dayun_gan_zhi",
+            "value": "癸酉",
+            "scope": {
+              "layer": "大运",
+              "year": 1988
+            }
+          },
+          {
+            "key": "shishen",
+            "value": "正财",
+            "scope": {
+              "layer": "大运",
+              "year": 1988
+            }
+          },
+          {
+            "key": "suiyun_binglin",
+            "value": "否",
+            "scope": {
+              "layer": "流年",
+              "year": 1988
+            }
+          },
+          {
+            "key": "dayun_liunian_relation",
+            "value": "天干五合:癸戊合",
+            "scope": {
+              "layer": "流年",
+              "year": 1988
+            }
+          },
+          {
+            "key": "dayun_liunian_relation",
+            "value": "天干相克:戊克癸",
+            "scope": {
+              "layer": "流年",
+              "year": 1988
+            }
+          },
+          {
+            "key": "dayun_liunian_relation",
+            "value": "六合:酉辰六合",
+            "scope": {
+              "layer": "流年",
+              "year": 1988
+            }
+          },
+          {
+            "key": "shishen",
+            "value": "劫财",
+            "scope": {
+              "layer": "流年",
+              "year": 1989
+            }
+          },
+          {
+            "key": "dayun_gan_zhi",
+            "value": "癸酉",
+            "scope": {
+              "layer": "大运",
+              "year": 1989
+            }
+          },
+          {
+            "key": "shishen",
+            "value": "正财",
+            "scope": {
+              "layer": "大运",
+              "year": 1989
+            }
+          },
+          {
+            "key": "suiyun_binglin",
+            "value": "否",
+            "scope": {
+              "layer": "流年",
+              "year": 1989
+            }
+          },
+          {
+            "key": "dayun_liunian_relation",
+            "value": "天干相克:己克癸",
+            "scope": {
+              "layer": "流年",
+              "year": 1989
+            }
+          },
+          {
+            "key": "shishen",
+            "value": "食神",
+            "scope": {
+              "layer": "流年",
+              "year": 1990
+            }
+          },
+          {
+            "key": "dayun_gan_zhi",
+            "value": "癸酉",
+            "scope": {
+              "layer": "大运",
+              "year": 1990
+            }
+          },
+          {
+            "key": "shishen",
+            "value": "正财",
+            "scope": {
+              "layer": "大运",
+              "year": 1990
+            }
+          },
+          {
+            "key": "suiyun_binglin",
+            "value": "否",
+            "scope": {
+              "layer": "流年",
+              "year": 1990
+            }
+          },
+          {
+            "key": "dayun_liunian_relation",
+            "value": "天干相生:庚生癸",
+            "scope": {
+              "layer": "流年",
+              "year": 1990
+            }
+          },
+          {
+            "key": "shishen",
+            "value": "伤官",
+            "scope": {
+              "layer": "流年",
+              "year": 1991
+            }
+          },
+          {
+            "key": "dayun_gan_zhi",
+            "value": "癸酉",
+            "scope": {
+              "layer": "大运",
+              "year": 1991
+            }
+          },
+          {
+            "key": "shishen",
+            "value": "正财",
+            "scope": {
+              "layer": "大运",
+              "year": 1991
+            }
+          },
+          {
+            "key": "suiyun_binglin",
+            "value": "否",
+            "scope": {
+              "layer": "流年",
+              "year": 1991
+            }
+          },
+          {
+            "key": "dayun_liunian_relation",
+            "value": "天干相生:辛生癸",
+            "scope": {
+              "layer": "流年",
+              "year": 1991
+            }
+          },
+          {
+            "key": "shishen",
+            "value": "偏财",
+            "scope": {
+              "layer": "流年",
+              "year": 1992
+            }
+          },
+          {
+            "key": "dayun_gan_zhi",
+            "value": "癸酉",
+            "scope": {
+              "layer": "大运",
+              "year": 1992
+            }
+          },
+          {
+            "key": "shishen",
+            "value": "正财",
+            "scope": {
+              "layer": "大运",
+              "year": 1992
+            }
+          },
+          {
+            "key": "suiyun_binglin",
+            "value": "否",
+            "scope": {
+              "layer": "流年",
+              "year": 1992
+            }
+          },
+          {
+            "key": "shishen",
+            "value": "正财",
+            "scope": {
+              "layer": "流年",
+              "year": 1993
+            }
+          },
+          {
+            "key": "dayun_gan_zhi",
+            "value": "癸酉",
+            "scope": {
+              "layer": "大运",
+              "year": 1993
+            }
+          },
+          {
+            "key": "shishen",
+            "value": "正财",
+            "scope": {
+              "layer": "大运",
+              "year": 1993
+            }
+          },
+          {
+            "key": "suiyun_binglin",
+            "value": "是",
+            "scope": {
+              "layer": "流年",
+              "year": 1993
+            }
+          },
+          {
+            "key": "dayun_liunian_relation",
+            "value": "相刑:酉酉自刑",
+            "scope": {
+              "layer": "流年",
+              "year": 1993
+            }
+          },
+          {
+            "key": "shishen",
+            "value": "七杀",
+            "scope": {
+              "layer": "流年",
+              "year": 1994
+            }
+          },
+          {
+            "key": "dayun_gan_zhi",
+            "value": "癸酉",
+            "scope": {
+              "layer": "大运",
+              "year": 1994
+            }
+          },
+          {
+            "key": "shishen",
+            "value": "正财",
+            "scope": {
+              "layer": "大运",
+              "year": 1994
+            }
+          },
+          {
+            "key": "suiyun_binglin",
+            "value": "否",
+            "scope": {
+              "layer": "流年",
+              "year": 1994
+            }
+          },
+          {
+            "key": "dayun_liunian_relation",
+            "value": "天干相生:癸生甲",
+            "scope": {
+              "layer": "流年",
+              "year": 1994
+            }
+          },
+          {
+            "key": "dayun_liunian_relation",
+            "value": "六害:酉戌相害",
+            "scope": {
+              "layer": "流年",
+              "year": 1994
+            }
+          },
+          {
+            "key": "shishen",
+            "value": "正官",
+            "scope": {
+              "layer": "流年",
+              "year": 1995
+            }
+          },
+          {
+            "key": "dayun_gan_zhi",
+            "value": "癸酉",
+            "scope": {
+              "layer": "大运",
+              "year": 1995
+            }
+          },
+          {
+            "key": "shishen",
+            "value": "正财",
+            "scope": {
+              "layer": "大运",
+              "year": 1995
+            }
+          },
+          {
+            "key": "suiyun_binglin",
+            "value": "否",
+            "scope": {
+              "layer": "流年",
+              "year": 1995
+            }
+          },
+          {
+            "key": "dayun_liunian_relation",
+            "value": "天干相生:癸生乙",
+            "scope": {
+              "layer": "流年",
+              "year": 1995
+            }
+          },
+          {
+            "key": "shishen",
+            "value": "偏印",
+            "scope": {
+              "layer": "流年",
+              "year": 1996
+            }
+          },
+          {
+            "key": "dayun_gan_zhi",
+            "value": "癸酉",
+            "scope": {
+              "layer": "大运",
+              "year": 1996
+            }
+          },
+          {
+            "key": "shishen",
+            "value": "正财",
+            "scope": {
+              "layer": "大运",
+              "year": 1996
+            }
+          },
+          {
+            "key": "suiyun_binglin",
+            "value": "否",
+            "scope": {
+              "layer": "流年",
+              "year": 1996
+            }
+          },
+          {
+            "key": "dayun_liunian_relation",
+            "value": "天干相克:癸克丙",
+            "scope": {
+              "layer": "流年",
+              "year": 1996
+            }
+          },
+          {
+            "key": "dayun_liunian_relation",
+            "value": "六破:酉子相破",
+            "scope": {
+              "layer": "流年",
+              "year": 1996
+            }
+          },
+          {
+            "key": "shishen",
+            "value": "正印",
+            "scope": {
+              "layer": "流年",
+              "year": 1997
+            }
+          },
+          {
+            "key": "dayun_gan_zhi",
+            "value": "癸酉",
+            "scope": {
+              "layer": "大运",
+              "year": 1997
+            }
+          },
+          {
+            "key": "shishen",
+            "value": "正财",
+            "scope": {
+              "layer": "大运",
+              "year": 1997
+            }
+          },
+          {
+            "key": "suiyun_binglin",
+            "value": "否",
+            "scope": {
+              "layer": "流年",
+              "year": 1997
+            }
+          },
+          {
+            "key": "dayun_liunian_relation",
+            "value": "天干相克:癸克丁",
+            "scope": {
+              "layer": "流年",
+              "year": 1997
+            }
+          }
+        ],
+        "caseFlowYear": [
+          {
+            "key": "natal_favorable_context",
+            "value": "喜用=火;忌=未列出",
+            "scope": {
+              "layer": "本命"
+            }
+          },
+          {
+            "key": "shishen",
+            "value": "偏印",
+            "scope": {
+              "layer": "本命",
+              "pillar": "year"
+            }
+          },
+          {
+            "key": "shishen",
+            "value": "食神",
+            "scope": {
+              "layer": "本命",
+              "pillar": "month"
+            }
+          },
+          {
+            "key": "shishen",
+            "value": "正财",
+            "scope": {
+              "layer": "本命",
+              "pillar": "time"
+            }
+          },
+          {
+            "key": "shishen",
+            "value": "正财",
+            "scope": {
+              "layer": "本命",
+              "pillar": "year"
+            }
+          },
+          {
+            "key": "shishen",
+            "value": "正官",
+            "scope": {
+              "layer": "本命",
+              "pillar": "year"
+            }
+          },
+          {
+            "key": "shishen",
+            "value": "偏印",
+            "scope": {
+              "layer": "本命",
+              "pillar": "month"
+            }
+          },
+          {
+            "key": "shishen",
+            "value": "比肩",
+            "scope": {
+              "layer": "本命",
+              "pillar": "month"
+            }
+          },
+          {
+            "key": "shishen",
+            "value": "七杀",
+            "scope": {
+              "layer": "本命",
+              "pillar": "month"
+            }
+          },
+          {
+            "key": "shishen",
+            "value": "劫财",
+            "scope": {
+              "layer": "本命",
+              "pillar": "day"
+            }
+          },
+          {
+            "key": "shishen",
+            "value": "正官",
+            "scope": {
+              "layer": "本命",
+              "pillar": "time"
+            }
+          },
+          {
+            "key": "shishen",
+            "value": "伤官",
+            "scope": {
+              "layer": "本命",
+              "pillar": "time"
+            }
+          },
+          {
+            "key": "shensha",
+            "value": "飞刃",
+            "scope": {
+              "layer": "本命",
+              "pillar": "year"
+            }
+          },
+          {
+            "key": "shensha",
+            "value": "将星",
+            "scope": {
+              "layer": "本命",
+              "pillar": "year"
+            }
+          },
+          {
+            "key": "shensha",
+            "value": "太极贵人",
+            "scope": {
+              "layer": "本命",
+              "pillar": "month"
+            }
+          },
+          {
+            "key": "shensha",
+            "value": "学堂",
+            "scope": {
+              "layer": "本命",
+              "pillar": "month"
+            }
+          },
+          {
+            "key": "shensha",
+            "value": "驿马",
+            "scope": {
+              "layer": "本命",
+              "pillar": "month"
+            }
+          },
+          {
+            "key": "shensha",
+            "value": "孤辰",
+            "scope": {
+              "layer": "本命",
+              "pillar": "month"
+            }
+          },
+          {
+            "key": "shensha",
+            "value": "羊刃",
+            "scope": {
+              "layer": "本命",
+              "pillar": "day"
+            }
+          },
+          {
+            "key": "shensha",
+            "value": "红艳",
+            "scope": {
+              "layer": "本命",
+              "pillar": "day"
+            }
+          },
+          {
+            "key": "shensha",
+            "value": "灾煞",
+            "scope": {
+              "layer": "本命",
+              "pillar": "day"
+            }
+          },
+          {
+            "key": "shensha",
+            "value": "月德贵人",
+            "scope": {
+              "layer": "本命",
+              "pillar": "day"
+            }
+          },
+          {
+            "key": "shensha",
+            "value": "国印贵人",
+            "scope": {
+              "layer": "本命",
+              "pillar": "time"
+            }
+          },
+          {
+            "key": "shensha",
+            "value": "天乙贵人",
+            "scope": {
+              "layer": "本命",
+              "pillar": "time"
+            }
+          },
+          {
+            "key": "shensha",
+            "value": "天喜",
+            "scope": {
+              "layer": "本命",
+              "pillar": "time"
+            }
+          },
+          {
+            "key": "shensha",
+            "value": "天医",
+            "scope": {
+              "layer": "本命",
+              "pillar": "time"
+            }
+          },
+          {
+            "key": "dayun_gan_zhi",
+            "value": "乙酉",
+            "scope": {
+              "layer": "大运"
+            }
+          },
+          {
+            "key": "shishen",
+            "value": "伤官",
+            "scope": {
+              "layer": "大运"
+            }
+          },
+          {
+            "key": "dayun_gan_zhi",
+            "value": "丙戌",
+            "scope": {
+              "layer": "大运"
+            }
+          },
+          {
+            "key": "shishen",
+            "value": "偏财",
+            "scope": {
+              "layer": "大运"
+            }
+          },
+          {
+            "key": "dayun_gan_zhi",
+            "value": "丁亥",
+            "scope": {
+              "layer": "大运"
+            }
+          },
+          {
+            "key": "shishen",
+            "value": "正财",
+            "scope": {
+              "layer": "大运"
+            }
+          },
+          {
+            "key": "dayun_gan_zhi",
+            "value": "戊子",
+            "scope": {
+              "layer": "大运"
+            }
+          },
+          {
+            "key": "shishen",
+            "value": "七杀",
+            "scope": {
+              "layer": "大运"
+            }
+          },
+          {
+            "key": "dayun_gan_zhi",
+            "value": "己丑",
+            "scope": {
+              "layer": "大运"
+            }
+          },
+          {
+            "key": "shishen",
+            "value": "正官",
+            "scope": {
+              "layer": "大运"
+            }
+          },
+          {
+            "key": "dayun_gan_zhi",
+            "value": "庚寅",
+            "scope": {
+              "layer": "大运"
+            }
+          },
+          {
+            "key": "shishen",
+            "value": "偏印",
+            "scope": {
+              "layer": "大运"
+            }
+          },
+          {
+            "key": "dayun_gan_zhi",
+            "value": "辛卯",
+            "scope": {
+              "layer": "大运"
+            }
+          },
+          {
+            "key": "shishen",
+            "value": "正印",
+            "scope": {
+              "layer": "大运"
+            }
+          },
+          {
+            "key": "dayun_gan_zhi",
+            "value": "壬辰",
+            "scope": {
+              "layer": "大运"
+            }
+          },
+          {
+            "key": "shishen",
+            "value": "比肩",
+            "scope": {
+              "layer": "大运"
+            }
+          },
+          {
+            "key": "dayun_gan_zhi",
+            "value": "癸巳",
+            "scope": {
+              "layer": "大运"
+            }
+          },
+          {
+            "key": "shishen",
+            "value": "劫财",
+            "scope": {
+              "layer": "大运"
+            }
+          },
+          {
+            "key": "dayun_gan_zhi",
+            "value": "甲午",
+            "scope": {
+              "layer": "大运"
+            }
+          },
+          {
+            "key": "shishen",
+            "value": "食神",
+            "scope": {
+              "layer": "大运"
+            }
+          },
+          {
+            "key": "shishen",
+            "value": "七杀",
+            "scope": {
+              "layer": "流年",
+              "year": 2018
+            }
+          },
+          {
+            "key": "dayun_gan_zhi",
+            "value": "丁亥",
+            "scope": {
+              "layer": "大运",
+              "year": 2018
+            }
+          },
+          {
+            "key": "shishen",
+            "value": "正财",
+            "scope": {
+              "layer": "大运",
+              "year": 2018
+            }
+          },
+          {
+            "key": "suiyun_binglin",
+            "value": "否",
+            "scope": {
+              "layer": "流年",
+              "year": 2018
+            }
+          },
+          {
+            "key": "dayun_liunian_relation",
+            "value": "天干相生:丁生戊",
+            "scope": {
+              "layer": "流年",
+              "year": 2018
+            }
+          },
+          {
+            "key": "shishen",
+            "value": "正官",
+            "scope": {
+              "layer": "流年",
+              "year": 2019
+            }
+          },
+          {
+            "key": "dayun_gan_zhi",
+            "value": "丁亥",
+            "scope": {
+              "layer": "大运",
+              "year": 2019
+            }
+          },
+          {
+            "key": "shishen",
+            "value": "正财",
+            "scope": {
+              "layer": "大运",
+              "year": 2019
+            }
+          },
+          {
+            "key": "suiyun_binglin",
+            "value": "否",
+            "scope": {
+              "layer": "流年",
+              "year": 2019
+            }
+          },
+          {
+            "key": "dayun_liunian_relation",
+            "value": "天干相生:丁生己",
+            "scope": {
+              "layer": "流年",
+              "year": 2019
+            }
+          },
+          {
+            "key": "dayun_liunian_relation",
+            "value": "相刑:亥亥自刑",
+            "scope": {
+              "layer": "流年",
+              "year": 2019
+            }
+          },
+          {
+            "key": "shishen",
+            "value": "偏印",
+            "scope": {
+              "layer": "流年",
+              "year": 2020
+            }
+          },
+          {
+            "key": "dayun_gan_zhi",
+            "value": "丁亥",
+            "scope": {
+              "layer": "大运",
+              "year": 2020
+            }
+          },
+          {
+            "key": "shishen",
+            "value": "正财",
+            "scope": {
+              "layer": "大运",
+              "year": 2020
+            }
+          },
+          {
+            "key": "suiyun_binglin",
+            "value": "否",
+            "scope": {
+              "layer": "流年",
+              "year": 2020
+            }
+          },
+          {
+            "key": "dayun_liunian_relation",
+            "value": "天干相克:丁克庚",
+            "scope": {
+              "layer": "流年",
+              "year": 2020
+            }
+          },
+          {
+            "key": "shishen",
+            "value": "正印",
+            "scope": {
+              "layer": "流年",
+              "year": 2021
+            }
+          },
+          {
+            "key": "dayun_gan_zhi",
+            "value": "丁亥",
+            "scope": {
+              "layer": "大运",
+              "year": 2021
+            }
+          },
+          {
+            "key": "shishen",
+            "value": "正财",
+            "scope": {
+              "layer": "大运",
+              "year": 2021
+            }
+          },
+          {
+            "key": "suiyun_binglin",
+            "value": "否",
+            "scope": {
+              "layer": "流年",
+              "year": 2021
+            }
+          },
+          {
+            "key": "dayun_liunian_relation",
+            "value": "天干相克:丁克辛",
+            "scope": {
+              "layer": "流年",
+              "year": 2021
+            }
+          },
+          {
+            "key": "shishen",
+            "value": "比肩",
+            "scope": {
+              "layer": "流年",
+              "year": 2022
+            }
+          },
+          {
+            "key": "dayun_gan_zhi",
+            "value": "丁亥",
+            "scope": {
+              "layer": "大运",
+              "year": 2022
+            }
+          },
+          {
+            "key": "shishen",
+            "value": "正财",
+            "scope": {
+              "layer": "大运",
+              "year": 2022
+            }
+          },
+          {
+            "key": "suiyun_binglin",
+            "value": "否",
+            "scope": {
+              "layer": "流年",
+              "year": 2022
+            }
+          },
+          {
+            "key": "dayun_liunian_relation",
+            "value": "天干五合:丁壬合",
+            "scope": {
+              "layer": "流年",
+              "year": 2022
+            }
+          },
+          {
+            "key": "dayun_liunian_relation",
+            "value": "天干相克:壬克丁",
+            "scope": {
+              "layer": "流年",
+              "year": 2022
+            }
+          },
+          {
+            "key": "dayun_liunian_relation",
+            "value": "六合:亥寅六合",
+            "scope": {
+              "layer": "流年",
+              "year": 2022
+            }
+          },
+          {
+            "key": "dayun_liunian_relation",
+            "value": "六破:亥寅相破",
+            "scope": {
+              "layer": "流年",
+              "year": 2022
+            }
+          },
+          {
+            "key": "shishen",
+            "value": "劫财",
+            "scope": {
+              "layer": "流年",
+              "year": 2023
+            }
+          },
+          {
+            "key": "dayun_gan_zhi",
+            "value": "丁亥",
+            "scope": {
+              "layer": "大运",
+              "year": 2023
+            }
+          },
+          {
+            "key": "shishen",
+            "value": "正财",
+            "scope": {
+              "layer": "大运",
+              "year": 2023
+            }
+          },
+          {
+            "key": "suiyun_binglin",
+            "value": "否",
+            "scope": {
+              "layer": "流年",
+              "year": 2023
+            }
+          },
+          {
+            "key": "dayun_liunian_relation",
+            "value": "天干相克:癸克丁",
+            "scope": {
+              "layer": "流年",
+              "year": 2023
+            }
+          },
+          {
+            "key": "shishen",
+            "value": "食神",
+            "scope": {
+              "layer": "流年",
+              "year": 2024
+            }
+          },
+          {
+            "key": "dayun_gan_zhi",
+            "value": "丁亥",
+            "scope": {
+              "layer": "大运",
+              "year": 2024
+            }
+          },
+          {
+            "key": "shishen",
+            "value": "正财",
+            "scope": {
+              "layer": "大运",
+              "year": 2024
+            }
+          },
+          {
+            "key": "suiyun_binglin",
+            "value": "否",
+            "scope": {
+              "layer": "流年",
+              "year": 2024
+            }
+          },
+          {
+            "key": "dayun_liunian_relation",
+            "value": "天干相生:甲生丁",
+            "scope": {
+              "layer": "流年",
+              "year": 2024
+            }
+          },
+          {
+            "key": "shishen",
+            "value": "伤官",
+            "scope": {
+              "layer": "流年",
+              "year": 2025
+            }
+          },
+          {
+            "key": "dayun_gan_zhi",
+            "value": "丁亥",
+            "scope": {
+              "layer": "大运",
+              "year": 2025
+            }
+          },
+          {
+            "key": "shishen",
+            "value": "正财",
+            "scope": {
+              "layer": "大运",
+              "year": 2025
+            }
+          },
+          {
+            "key": "suiyun_binglin",
+            "value": "否",
+            "scope": {
+              "layer": "流年",
+              "year": 2025
+            }
+          },
+          {
+            "key": "dayun_liunian_relation",
+            "value": "天干相生:乙生丁",
+            "scope": {
+              "layer": "流年",
+              "year": 2025
+            }
+          },
+          {
+            "key": "dayun_liunian_relation",
+            "value": "六冲:亥巳相冲",
+            "scope": {
+              "layer": "流年",
+              "year": 2025
+            }
+          },
+          {
+            "key": "shishen",
+            "value": "偏财",
+            "scope": {
+              "layer": "流年",
+              "year": 2026
+            }
+          },
+          {
+            "key": "dayun_gan_zhi",
+            "value": "丁亥",
+            "scope": {
+              "layer": "大运",
+              "year": 2026
+            }
+          },
+          {
+            "key": "shishen",
+            "value": "正财",
+            "scope": {
+              "layer": "大运",
+              "year": 2026
+            }
+          },
+          {
+            "key": "suiyun_binglin",
+            "value": "否",
+            "scope": {
+              "layer": "流年",
+              "year": 2026
+            }
+          },
+          {
+            "key": "shishen",
+            "value": "正财",
+            "scope": {
+              "layer": "流年",
+              "year": 2027
+            }
+          },
+          {
+            "key": "dayun_gan_zhi",
+            "value": "丁亥",
+            "scope": {
+              "layer": "大运",
+              "year": 2027
+            }
+          },
+          {
+            "key": "shishen",
+            "value": "正财",
+            "scope": {
+              "layer": "大运",
+              "year": 2027
+            }
+          },
+          {
+            "key": "suiyun_binglin",
+            "value": "否",
+            "scope": {
+              "layer": "流年",
+              "year": 2027
+            }
+          }
+        ],
+        "caseFlowYearUnknown": [
+          {
+            "key": "natal_favorable_context",
+            "value": "喜用=火;忌=未列出",
+            "scope": {
+              "layer": "本命"
+            }
+          },
+          {
+            "key": "shishen",
+            "value": "偏印",
+            "scope": {
+              "layer": "本命",
+              "pillar": "year"
+            }
+          },
+          {
+            "key": "shishen",
+            "value": "食神",
+            "scope": {
+              "layer": "本命",
+              "pillar": "month"
+            }
+          },
+          {
+            "key": "shishen",
+            "value": "正财",
+            "scope": {
+              "layer": "本命",
+              "pillar": "time"
+            }
+          },
+          {
+            "key": "shishen",
+            "value": "正财",
+            "scope": {
+              "layer": "本命",
+              "pillar": "year"
+            }
+          },
+          {
+            "key": "shishen",
+            "value": "正官",
+            "scope": {
+              "layer": "本命",
+              "pillar": "year"
+            }
+          },
+          {
+            "key": "shishen",
+            "value": "偏印",
+            "scope": {
+              "layer": "本命",
+              "pillar": "month"
+            }
+          },
+          {
+            "key": "shishen",
+            "value": "比肩",
+            "scope": {
+              "layer": "本命",
+              "pillar": "month"
+            }
+          },
+          {
+            "key": "shishen",
+            "value": "七杀",
+            "scope": {
+              "layer": "本命",
+              "pillar": "month"
+            }
+          },
+          {
+            "key": "shishen",
+            "value": "劫财",
+            "scope": {
+              "layer": "本命",
+              "pillar": "day"
+            }
+          },
+          {
+            "key": "shishen",
+            "value": "正官",
+            "scope": {
+              "layer": "本命",
+              "pillar": "time"
+            }
+          },
+          {
+            "key": "shishen",
+            "value": "伤官",
+            "scope": {
+              "layer": "本命",
+              "pillar": "time"
+            }
+          },
+          {
+            "key": "shensha",
+            "value": "飞刃",
+            "scope": {
+              "layer": "本命",
+              "pillar": "year"
+            }
+          },
+          {
+            "key": "shensha",
+            "value": "将星",
+            "scope": {
+              "layer": "本命",
+              "pillar": "year"
+            }
+          },
+          {
+            "key": "shensha",
+            "value": "太极贵人",
+            "scope": {
+              "layer": "本命",
+              "pillar": "month"
+            }
+          },
+          {
+            "key": "shensha",
+            "value": "学堂",
+            "scope": {
+              "layer": "本命",
+              "pillar": "month"
+            }
+          },
+          {
+            "key": "shensha",
+            "value": "驿马",
+            "scope": {
+              "layer": "本命",
+              "pillar": "month"
+            }
+          },
+          {
+            "key": "shensha",
+            "value": "孤辰",
+            "scope": {
+              "layer": "本命",
+              "pillar": "month"
+            }
+          },
+          {
+            "key": "shensha",
+            "value": "羊刃",
+            "scope": {
+              "layer": "本命",
+              "pillar": "day"
+            }
+          },
+          {
+            "key": "shensha",
+            "value": "红艳",
+            "scope": {
+              "layer": "本命",
+              "pillar": "day"
+            }
+          },
+          {
+            "key": "shensha",
+            "value": "灾煞",
+            "scope": {
+              "layer": "本命",
+              "pillar": "day"
+            }
+          },
+          {
+            "key": "shensha",
+            "value": "月德贵人",
+            "scope": {
+              "layer": "本命",
+              "pillar": "day"
+            }
+          },
+          {
+            "key": "shensha",
+            "value": "国印贵人",
+            "scope": {
+              "layer": "本命",
+              "pillar": "time"
+            }
+          },
+          {
+            "key": "shensha",
+            "value": "天乙贵人",
+            "scope": {
+              "layer": "本命",
+              "pillar": "time"
+            }
+          },
+          {
+            "key": "shensha",
+            "value": "天喜",
+            "scope": {
+              "layer": "本命",
+              "pillar": "time"
+            }
+          },
+          {
+            "key": "shensha",
+            "value": "天医",
+            "scope": {
+              "layer": "本命",
+              "pillar": "time"
+            }
+          },
+          {
+            "key": "dayun_gan_zhi",
+            "value": "乙酉",
+            "scope": {
+              "layer": "大运"
+            }
+          },
+          {
+            "key": "shishen",
+            "value": "伤官",
+            "scope": {
+              "layer": "大运"
+            }
+          },
+          {
+            "key": "dayun_gan_zhi",
+            "value": "丙戌",
+            "scope": {
+              "layer": "大运"
+            }
+          },
+          {
+            "key": "shishen",
+            "value": "偏财",
+            "scope": {
+              "layer": "大运"
+            }
+          },
+          {
+            "key": "dayun_gan_zhi",
+            "value": "丁亥",
+            "scope": {
+              "layer": "大运"
+            }
+          },
+          {
+            "key": "shishen",
+            "value": "正财",
+            "scope": {
+              "layer": "大运"
+            }
+          },
+          {
+            "key": "dayun_gan_zhi",
+            "value": "戊子",
+            "scope": {
+              "layer": "大运"
+            }
+          },
+          {
+            "key": "shishen",
+            "value": "七杀",
+            "scope": {
+              "layer": "大运"
+            }
+          },
+          {
+            "key": "dayun_gan_zhi",
+            "value": "己丑",
+            "scope": {
+              "layer": "大运"
+            }
+          },
+          {
+            "key": "shishen",
+            "value": "正官",
+            "scope": {
+              "layer": "大运"
+            }
+          },
+          {
+            "key": "dayun_gan_zhi",
+            "value": "庚寅",
+            "scope": {
+              "layer": "大运"
+            }
+          },
+          {
+            "key": "shishen",
+            "value": "偏印",
+            "scope": {
+              "layer": "大运"
+            }
+          },
+          {
+            "key": "dayun_gan_zhi",
+            "value": "辛卯",
+            "scope": {
+              "layer": "大运"
+            }
+          },
+          {
+            "key": "shishen",
+            "value": "正印",
+            "scope": {
+              "layer": "大运"
+            }
+          },
+          {
+            "key": "dayun_gan_zhi",
+            "value": "壬辰",
+            "scope": {
+              "layer": "大运"
+            }
+          },
+          {
+            "key": "shishen",
+            "value": "比肩",
+            "scope": {
+              "layer": "大运"
+            }
+          },
+          {
+            "key": "dayun_gan_zhi",
+            "value": "癸巳",
+            "scope": {
+              "layer": "大运"
+            }
+          },
+          {
+            "key": "shishen",
+            "value": "劫财",
+            "scope": {
+              "layer": "大运"
+            }
+          },
+          {
+            "key": "dayun_gan_zhi",
+            "value": "甲午",
+            "scope": {
+              "layer": "大运"
+            }
+          },
+          {
+            "key": "shishen",
+            "value": "食神",
+            "scope": {
+              "layer": "大运"
+            }
+          },
+          {
+            "key": "shishen",
+            "value": "偏印",
+            "scope": {
+              "layer": "流年",
+              "year": 2100
+            }
+          },
+          {
+            "key": "suiyun_binglin",
+            "value": "信息不足",
+            "scope": {
+              "layer": "流年",
+              "year": 2100
+            }
+          },
+          {
+            "key": "shishen",
+            "value": "正印",
+            "scope": {
+              "layer": "流年",
+              "year": 2101
+            }
+          },
+          {
+            "key": "suiyun_binglin",
+            "value": "信息不足",
+            "scope": {
+              "layer": "流年",
+              "year": 2101
+            }
+          },
+          {
+            "key": "shishen",
+            "value": "比肩",
+            "scope": {
+              "layer": "流年",
+              "year": 2102
+            }
+          },
+          {
+            "key": "suiyun_binglin",
+            "value": "信息不足",
+            "scope": {
+              "layer": "流年",
+              "year": 2102
+            }
+          },
+          {
+            "key": "shishen",
+            "value": "劫财",
+            "scope": {
+              "layer": "流年",
+              "year": 2103
+            }
+          },
+          {
+            "key": "suiyun_binglin",
+            "value": "信息不足",
+            "scope": {
+              "layer": "流年",
+              "year": 2103
+            }
+          },
+          {
+            "key": "shishen",
+            "value": "食神",
+            "scope": {
+              "layer": "流年",
+              "year": 2104
+            }
+          },
+          {
+            "key": "suiyun_binglin",
+            "value": "信息不足",
+            "scope": {
+              "layer": "流年",
+              "year": 2104
+            }
+          },
+          {
+            "key": "shishen",
+            "value": "伤官",
+            "scope": {
+              "layer": "流年",
+              "year": 2105
+            }
+          },
+          {
+            "key": "suiyun_binglin",
+            "value": "信息不足",
+            "scope": {
+              "layer": "流年",
+              "year": 2105
+            }
+          },
+          {
+            "key": "shishen",
+            "value": "偏财",
+            "scope": {
+              "layer": "流年",
+              "year": 2106
+            }
+          },
+          {
+            "key": "suiyun_binglin",
+            "value": "信息不足",
+            "scope": {
+              "layer": "流年",
+              "year": 2106
+            }
+          },
+          {
+            "key": "shishen",
+            "value": "正财",
+            "scope": {
+              "layer": "流年",
+              "year": 2107
+            }
+          },
+          {
+            "key": "suiyun_binglin",
+            "value": "信息不足",
+            "scope": {
+              "layer": "流年",
+              "year": 2107
+            }
+          },
+          {
+            "key": "shishen",
+            "value": "七杀",
+            "scope": {
+              "layer": "流年",
+              "year": 2108
+            }
+          },
+          {
+            "key": "suiyun_binglin",
+            "value": "信息不足",
+            "scope": {
+              "layer": "流年",
+              "year": 2108
+            }
+          },
+          {
+            "key": "shishen",
+            "value": "正官",
+            "scope": {
+              "layer": "流年",
+              "year": 2109
+            }
+          },
+          {
+            "key": "suiyun_binglin",
+            "value": "信息不足",
+            "scope": {
+              "layer": "流年",
+              "year": 2109
+            }
+          }
+        ]
+      },
+      "upgradeDecision": "blocked",
+      "reason": "已有并临结构、active 大运 scope 和名称级十神/神煞；缺分类、喜忌、救应的正式语义与三态样盘。"
+    },
+    {
+      "ruleId": "DITIANSUICHA-051",
+      "status": "blocked",
+      "verified": false,
+      "anchor": {
+        "file": "sources/fulltext/bazi/ditiansui-chanwei/fulltext.md",
+        "startLine": 13400,
+        "endLine": 13400
+      },
+      "requiredMissingContracts": [
+        {
+          "key": "yongshen_effective",
+          "definition": "用神在岁运中的得力状态"
+        },
+        {
+          "key": "jishen_empowered",
+          "definition": "忌神在岁运中的得权状态"
+        },
+        {
+          "key": "transit_effect_semantics",
+          "definition": "岁运作用于命局的可计算关系与例外"
+        }
+      ],
+      "availableFactKeys": [
+        "dayun_direction",
+        "liunian_gan_zhi",
+        "dayun_gan_zhi",
+        "dayun_liunian_relation",
+        "dayun_liunian_relation_class",
+        "natal_favorable_context"
+      ],
+      "evidenceCases": {
+        "caseFlowYear": [
+          {
+            "key": "natal_favorable_context",
+            "value": "喜用=火;忌=未列出",
+            "scope": {
+              "layer": "本命"
+            }
+          },
+          {
+            "key": "dayun_direction",
+            "value": "顺行",
+            "scope": {
+              "layer": "本命"
+            }
+          },
+          {
+            "key": "liunian_gan_zhi",
+            "value": "戊戌",
+            "scope": {
+              "layer": "流年",
+              "year": 2018
+            }
+          },
+          {
+            "key": "liunian_gan_zhi",
+            "value": "己亥",
+            "scope": {
+              "layer": "流年",
+              "year": 2019
+            }
+          },
+          {
+            "key": "liunian_gan_zhi",
+            "value": "庚子",
+            "scope": {
+              "layer": "流年",
+              "year": 2020
+            }
+          },
+          {
+            "key": "liunian_gan_zhi",
+            "value": "辛丑",
+            "scope": {
+              "layer": "流年",
+              "year": 2021
+            }
+          },
+          {
+            "key": "liunian_gan_zhi",
+            "value": "壬寅",
+            "scope": {
+              "layer": "流年",
+              "year": 2022
+            }
+          },
+          {
+            "key": "liunian_gan_zhi",
+            "value": "癸卯",
+            "scope": {
+              "layer": "流年",
+              "year": 2023
+            }
+          },
+          {
+            "key": "liunian_gan_zhi",
+            "value": "甲辰",
+            "scope": {
+              "layer": "流年",
+              "year": 2024
+            }
+          },
+          {
+            "key": "liunian_gan_zhi",
+            "value": "乙巳",
+            "scope": {
+              "layer": "流年",
+              "year": 2025
+            }
+          },
+          {
+            "key": "liunian_gan_zhi",
+            "value": "丙午",
+            "scope": {
+              "layer": "流年",
+              "year": 2026
+            }
+          },
+          {
+            "key": "liunian_gan_zhi",
+            "value": "丁未",
+            "scope": {
+              "layer": "流年",
+              "year": 2027
+            }
+          }
+        ],
+        "caseFlowYearUnknown": [
+          {
+            "key": "natal_favorable_context",
+            "value": "喜用=火;忌=未列出",
+            "scope": {
+              "layer": "本命"
+            }
+          },
+          {
+            "key": "dayun_direction",
+            "value": "顺行",
+            "scope": {
+              "layer": "本命"
+            }
+          },
+          {
+            "key": "liunian_gan_zhi",
+            "value": "庚申",
+            "scope": {
+              "layer": "流年",
+              "year": 2100
+            }
+          },
+          {
+            "key": "liunian_gan_zhi",
+            "value": "辛酉",
+            "scope": {
+              "layer": "流年",
+              "year": 2101
+            }
+          },
+          {
+            "key": "liunian_gan_zhi",
+            "value": "壬戌",
+            "scope": {
+              "layer": "流年",
+              "year": 2102
+            }
+          },
+          {
+            "key": "liunian_gan_zhi",
+            "value": "癸亥",
+            "scope": {
+              "layer": "流年",
+              "year": 2103
+            }
+          },
+          {
+            "key": "liunian_gan_zhi",
+            "value": "甲子",
+            "scope": {
+              "layer": "流年",
+              "year": 2104
+            }
+          },
+          {
+            "key": "liunian_gan_zhi",
+            "value": "乙丑",
+            "scope": {
+              "layer": "流年",
+              "year": 2105
+            }
+          },
+          {
+            "key": "liunian_gan_zhi",
+            "value": "丙寅",
+            "scope": {
+              "layer": "流年",
+              "year": 2106
+            }
+          },
+          {
+            "key": "liunian_gan_zhi",
+            "value": "丁卯",
+            "scope": {
+              "layer": "流年",
+              "year": 2107
+            }
+          },
+          {
+            "key": "liunian_gan_zhi",
+            "value": "戊辰",
+            "scope": {
+              "layer": "流年",
+              "year": 2108
+            }
+          },
+          {
+            "key": "liunian_gan_zhi",
+            "value": "己巳",
+            "scope": {
+              "layer": "流年",
+              "year": 2109
+            }
+          }
+        ]
+      },
+      "upgradeDecision": "blocked",
+      "reason": "方向/发动层和描述性喜忌输入存在，但没有用神得力、忌神得权及岁运作用合同或三态样盘。"
+    }
+  ],
+  "policy": "保留 unknown；不得把结构事实、十神/神煞名称出现或自由文本喜忌代理为 satisfied/not_satisfied。",
+  "currentFixtureRecheck": {
+    "manifestSha256": "36453d273f248f33705fb8a59372c16b1de510303351b53d801f690dfb94459b",
+    "caseCount": 26,
+    "structuralFacts": [
+      "gender",
+      "spouse_star",
+      "spouse_palace_zhi",
+      "shishen_count",
+      "natal_same_zhi",
+      "natal_relation"
+    ]
+  }
+}

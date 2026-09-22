@@ -1,0 +1,13 @@
+{
+  "ok": false,
+  "files": 1,
+  "errors": [
+    {
+      "code": "V15",
+      "book": "ziwei/taiwei-fu",
+      "rule_id": "TAIWEIFU-004",
+      "message": "references/books/ziwei/taiwei-fu/rules.yaml rules[3] applicable_to[0]: palace '伪宫名' 不在 ziwei_palace 取值内"
+    }
+  ],
+  "warnings": []
+}

@@ -80,6 +80,15 @@ ART_EMIT_KEYS: dict[str, frozenset[str]] = {
         {
             "rizhu",
             "yueling",
+            # P1 结构事实：由产品事实层直接产出；目前仅登记接收，不代表已有规则消费。
+            "gender",
+            "spouse_star",
+            "spouse_palace_zhi",
+            "shishen_count",
+            "natal_same_zhi",
+            "natal_relation",
+            # 流年结构事实：由产品事实层正式产出并被 YUANHAIZIPIN-YR-03 消费。
+            "dayun_liunian_relation_class",
             # 四柱干支与纳音：引擎由已有 ganzhi 四柱／「纳音」行逐柱产出（见 emitBaziFacts）。
             "gan",
             "gan_element",

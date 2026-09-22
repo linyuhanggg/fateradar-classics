@@ -4,10 +4,9 @@
   "scope": "luming-nayin/* 四书（li-xuzhong-mingshu, wuxing-jingji, yuzhao-shenying, luoluzi-sanming）；不含 bazi/* 六书（另一 agent 负责）。这四书本属 art=bazi（见 tools/predicate-report.py 的 art_of）。",
   "unmapped_total_at_start": 176,
   "reason_class_counts": {
-    "fact-not-emitted": 108,
-    "not-a-condition": 61,
-    "condition-too-vague": 4,
-    "mapped": 3
+    "condition-too-vague": 5,
+    "fact-not-emitted": 107,
+    "not-a-condition": 61
   },
   "decisions": [
     {
@@ -1328,11 +1327,12 @@
       "book": "luming-nayin/wuxing-jingji",
       "rule_id": "WX-05-02",
       "decision": "unmapped",
-      "reason_class": "fact-not-emitted",
       "applicable_to_yaml": "[]",
       "evidence_from_statement": "祿馬同乡上贵",
       "note": "「禄马同乡」＝干禄与驿马同位；引擎神煞可发驿马，但没有禄（干禄须柱干支推），也无同柱关系。quote 仅为卷名「第十七卷並論祿馬」。",
-      "missing_fact": "干禄（十干禄位）及其与驿马的同位关系"
+      "missing_fact": "跨柱同支的完整禄马同乡关系事实（同柱子集可验证）",
+      "reason_class": "condition-too-vague",
+      "audit_note_20260921": "scope.pillar 已由生成器/样盘证实，但当前原文锚点只有卷名；同柱禄神+驿马仅保守子集，跨柱同支关系仍无事实/表达合同。"
     },
     {
       "book": "luming-nayin/wuxing-jingji",
@@ -1823,5 +1823,7 @@
       "evidence_from_statement": "木见旺金主强、火入离中主旺、金向旺中须损折、土积山岗多不动、水盛防走失。",
       "note": "取象表：木见旺金主强、火入离中主旺、金向旺中须损折、土积山岗多不动、水盛防走失——五行多寡吉凶取象，无量化条件。"
     }
-  ]
+  ],
+  "audited_at": "2026-09-21",
+  "audit_basis": "P1 六主题 Goal：Round 50 映射审计；退回无充分出处/语义合同的草稿。"
 }

@@ -2,6 +2,12 @@
   "keys": [
     "rizhu",
     "yueling",
+    "gender",
+    "spouse_star",
+    "spouse_palace_zhi",
+    "shishen_count",
+    "natal_same_zhi",
+    "natal_relation",
     "gan",
     "zhi",
     "nayin",
@@ -156,6 +162,12 @@
       "戌",
       "亥"
     ],
+    "gender": [],
+    "spouse_star": [],
+    "spouse_palace_zhi": [],
+    "shishen_count": [],
+    "natal_same_zhi": [],
+    "natal_relation": [],
     "gan": [
       "甲",
       "乙",
@@ -688,6 +700,55 @@
       "其他",
       "信息不足"
     ]
+  },
+  "contracts": {
+    "gender": {
+      "art": "bazi",
+      "scope": {"layer": "本命"},
+      "valueShape": "enum",
+      "valueDomain": ["男", "女"],
+      "missing": "缺失即信息不足；不得默认性别或把缺失当作任一性别。",
+      "zero": "不适用"
+    },
+    "spouse_star": {
+      "art": "bazi",
+      "scope": {"layer": "本命", "pillar": ["year", "month", "day", "time"]},
+      "valueShape": "shishen",
+      "valueDomain": ["比肩", "劫财", "食神", "伤官", "偏财", "正财", "七杀", "正官", "偏印", "正印"],
+      "emittedSubset": ["正财", "偏财", "正官", "七杀"],
+      "missing": "只在对应柱出现结构标签；缺失不证明零次，要求存在时仍按缺键处理。",
+      "zero": "没有 spouse_star 事实不是显式零值。"
+    },
+    "spouse_palace_zhi": {
+      "art": "bazi",
+      "scope": {"layer": "本命", "pillar": "day"},
+      "valueShape": "zhi",
+      "valueDomain": ["子", "丑", "寅", "卯", "辰", "巳", "午", "未", "申", "酉", "戌", "亥"],
+      "missing": "缺失即日支观察位信息不足；该键不等于夫宫吉凶或关系结果。",
+      "zero": "不适用"
+    },
+    "shishen_count": {
+      "art": "bazi",
+      "scope": {"layer": "本命"},
+      "valueShape": "十神=正整数",
+      "countBasis": "其余三枚明干与全部藏干；只输出实际出现的十神。",
+      "missing": "某十神没有事实不证明已审计为零；不能把缺失降为 not_satisfied。",
+      "zero": "零值不输出；若规则需要零值，必须另行交接显式零合同。"
+    },
+    "natal_same_zhi": {
+      "art": "bazi",
+      "scope": {"layer": "本命"},
+      "valueShape": "地支@pillar-pillar",
+      "missing": "只输出发现的同支组合；未出现不是关系事件结论，需完整柱位合同后才能判无此组合。",
+      "zero": "不输出零值。"
+    },
+    "natal_relation": {
+      "art": "bazi",
+      "scope": {"layer": "本命"},
+      "valueShape": "关系类型:标签@pillar-pillar",
+      "missing": "关系参与柱位编码在 value 中；缺失不能推断无关系，除非消费方声明完整关系枚举。",
+      "zero": "不输出零值；结构关系不等于关系结果或现实事件。"
+    }
   },
   "any": "*"
 }
