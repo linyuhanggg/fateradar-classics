@@ -2,7 +2,7 @@
 
 产品请求见 `/Users/sync/code/cosmic-fortune-lab/docs/closeout/COSMIC_TO_CLASSICS_P1_REQUEST_20260922.md`。当前回复为 **partial**：已采纳 1 条 `verified=false` 的保守流年结构规则，其余候选仍阻塞。
 
-cosmic 已重建共享 facts sample：现在有 `本命`、`大运`、`流年`，并带年份 scope、流年干支、流年与本命关系、大运干支/方向、本命喜忌、`suiyun_binglin`、`dayun_liunian_relation` 和稳定的 `dayun_liunian_relation_class` 事实。当前 26 个八字固定 case 的 SHA-256 为 `ee750a96ae11dece15bdcef26b5e0fcc6b928a1e6947f1aa7ffd47fdb4c53aa7`，与产品仓 fixture 字节一致；当前源 manifest SHA-256 为 `36453d273f248f33705fb8a59372c16b1de510303351b53d801f690dfb94459b`，产品 handoff SHA-256 为 `62b8e8c1e68f21874799faa76878d13aa8aba7748ffe9ce80ef17ed8ee58cead`。
+cosmic 已重建共享 facts sample：现在有 `本命`、`大运`、`流年`，并带年份 scope、流年干支、流年与本命关系、大运干支/方向、本命喜忌、`suiyun_binglin`、`dayun_liunian_relation` 和稳定的 `dayun_liunian_relation_class` 事实。当前 26 个八字固定 case 的 SHA-256 为 `ee750a96ae11dece15bdcef26b5e0fcc6b928a1e6947f1aa7ffd47fdb4c53aa7`，与产品仓 fixture 字节一致；当前源 manifest SHA-256 为 `d33db94fc94d91a98d8624010de7dce48cb472771cc213e377f8aef338ff3d21`，产品 handoff SHA-256 为 `7165f5cf7be1244cefc135aa24b716a3e0002c2df87e1cd59c948847bbf1a08f`。文中较早出现的 hash 均为历史重建阶段证据，以末尾“当前交接指针”为准。
 
 本轮采纳 `YUANHAIZIPIN-YR-03`：流年层 `dayun_liunian_relation_class ∈ {相冲, 相克, 相刑}` 时，输出原文所称的“忌象候选”结构证据；先按选定 `scope.year` 过滤，再求值。固定样盘为 `caseFlowYear@2025=满足`、`caseFlowYear@2026=不满足`、`caseFlowYearUnknown@2100=信息不足`。该规则不输出现实事件，制化、喜忌和命局作用仍保留 unknown。
 
