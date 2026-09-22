@@ -409,6 +409,16 @@
     "currentManifestSha256": "d33db94fc94d91a98d8624010de7dce48cb472771cc213e377f8aef338ff3d21",
     "currentGeneratedHandoffSha256": "7165f5cf7be1244cefc135aa24b716a3e0002c2df87e1cd59c948847bbf1a08f"
   },
+  "releaseAudit": {
+    "localMain": "97e9ebec3f02c8c98cbcef8af1fa095da0299da4",
+    "remoteMain": "cd41f5b5cd31c107384633da0a75d89626938679",
+    "classicsRevisionRemoteReachable": false,
+    "candidateRevisionRemoteReachable": false,
+    "sourceLinkTests": "3 files / 13 tests passed locally",
+    "classicsExecutable": "15 files / 258 rules / 579 source spans / 0 errors",
+    "ledgerConsistency": "463 unmapped rules all have reason_class",
+    "releaseStatus": "blocked_until_remote_candidate"
+  },
   "currentSync": {
     "manifestSha256": "d33db94fc94d91a98d8624010de7dce48cb472771cc213e377f8aef338ff3d21",
     "cosmicManifestSha256": "d33db94fc94d91a98d8624010de7dce48cb472771cc213e377f8aef338ff3d21",

@@ -152,3 +152,9 @@ Classics 已生成只读候选包 `tools/reports/p1-bazi-20260922/semantic-contr
 当前 Classics 与 Cosmic 源 manifest 字节一致，SHA-256 为 `d33db94fc94d91a98d8624010de7dce48cb472771cc213e377f8aef338ff3d21`；Cosmic handoff 产物 SHA-256 为 `7165f5cf7be1244cefc135aa24b716a3e0002c2df87e1cd59c948847bbf1a08f`，共享 fixture SHA-256 为 `ee750a96ae11dece15bdcef26b5e0fcc6b928a1e6947f1aa7ffd47fdb4c53aa7`。此前 hash 只代表旧工作区同步阶段。
 
 本次只复核字节锁和候选审计，不改变 `semanticContractStatus=pending`，也不升级三条 blocker。
+
+## 2026-09-22 当前发布候选复核
+
+Classics 当前本地 `main` 为 `97e9ebec3f02c8c98cbcef8af1fa095da0299da4`，该提交已包含候选合同和发布证据，且其父链包含 `CLASSICS_REV=6321186f6aeebd0737537c45286153eedf49adb4`。远端仍只有 `origin/main=cd41f5b5cd31c107384633da0a75d89626938679`，`git ls-remote` 未返回 `6321186f…` 或 `97e9ebe…`；因此当前只能证明本地树可复核，不能把 CI 或远端发布写成完成。
+
+本地复核结果：Cosmic 三个 source-link 文件 13 项通过；Classics `validate-executable` 为 15 个文件、258 条规则、579 个 source span、0 errors；ledger consistency 为 463 条未映射全部有理由。
