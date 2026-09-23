@@ -43,14 +43,30 @@ def one_value(facts: list[dict], key: str, scope: dict) -> str | None:
     return next(iter(values)) if len(values) == 1 else None
 
 
+def entry_value(facts: list[dict], keys: tuple[str, ...], scope: dict) -> tuple[str | None, bool]:
+    values = {
+        fact.get("value") for fact in facts
+        if fact.get("key") in keys and fact.get("scope") == scope
+    }
+    if len(values) > 1:
+        return None, True
+    return (next(iter(values)) if values else None), False
+
+
 def classify(facts: list[dict], selected_year: int) -> str:
     """Classify only the named local clause, not its effectiveness or fortune."""
-    day = one_value(facts, "gan", {"layer": "本命", "pillar": "day"})
-    year = one_value(facts, "liunian_gan", {"layer": "流年", "year": selected_year})
+    day, day_conflict = entry_value(
+        facts, ("gan", "natal_day_gan"), {"layer": "本命", "pillar": "day"}
+    )
+    year, year_conflict = entry_value(
+        facts, ("liunian_gan",), {"layer": "流年", "year": selected_year}
+    )
+    if day_conflict or year_conflict:
+        return "undetermined"
+    if (day in GAN and day != "甲") or (year in GAN and year != "戊"):
+        return "not_applicable"
     if day not in GAN or year not in GAN:
         return "undetermined"
-    if day != "甲" or year != "戊":
-        return "not_applicable"
 
     natal = [one_value(facts, "gan", {"layer": "本命", "pillar": pillar}) for pillar in PILLARS]
     active_luck = one_value(facts, "dayun_gan_zhi", {"layer": "大运", "year": selected_year})
@@ -132,6 +148,25 @@ def main() -> None:
         for fact in base
     ]
     assert classify(doubled, 2018) == "undetermined"
+    without_day = [
+        fact for fact in base
+        if not (fact["key"] in {"gan", "natal_day_gan"}
+                and fact["scope"] == {"layer": "本命", "pillar": "day"})
+    ]
+    without_year = [
+        fact for fact in base
+        if not (fact["key"] == "liunian_gan"
+                and fact["scope"] == {"layer": "流年", "year": 2018})
+    ]
+    assert classify([
+        *without_day, {"key": "gan", "value": "乙", "scope": {"layer": "本命", "pillar": "day"}}
+    ], 2100) == "not_applicable"
+    assert classify([
+        *without_year, {"key": "liunian_gan", "value": "丁", "scope": {"layer": "流年", "year": 2018}}
+    ], 2018) == "not_applicable"
+    assert classify([
+        *base, {"key": "natal_day_gan", "value": "乙", "scope": {"layer": "本命", "pillar": "day"}}
+    ], 2018) == "undetermined"
     print("PASS SMTH-010 Gui/Wu local clause: 4 present / 3 absent / 1 undetermined / 2 not-applicable; effective affinity unadjudicated")
 
 

@@ -42,6 +42,9 @@ def main() -> None:
     }
     for clause in source["clauses"]:
         assert clause["quote"] in lines[clause["line"] - 1], clause
+    facsimile = audit["facsimile"]
+    assert hashlib.sha256((ROOT / facsimile["path"]).read_bytes()).hexdigest() == facsimile["sha256"]
+    assert facsimile["pdfPagesReviewed"] == [121, 122, 125]
     for witness in audit["editorialWitnesses"]:
         assert witness["quote"] in (ROOT / witness["path"]).read_text().splitlines()[witness["line"] - 1], witness
 
@@ -52,6 +55,18 @@ def main() -> None:
         "key": "rescue_condition", "values": ["成立", "不成立", "信息不足"]
     }
     assert all(values == ["proven", "ruled_out", "undetermined"] for values in boundary["independentSourceInputs"].values())
+    gate = audit["consumerGate"]
+    assert gate["status"] == "full_effect_factkey_not_adopted"
+    assert gate["requestedKey"] == "rescue_condition"
+    assert gate["requestedValues"] == ["成立", "不成立", "信息不足"]
+    assert gate["notApplicableIsSeparate"] is True
+    assert all(gate[field] is None for field in (
+        "fullEffectThreshold", "fullEffectPriority", "negativeExhaustionPolicy"
+    ))
+    assert [item["id"] for item in audit["adjudicationGates"]] == [
+        "gengshen_effect_sufficiency", "guiwu_effect_sufficiency",
+        "later_rescue_boolean_and_exhaustion", "exception_precedence",
+    ]
     assert len(audit["sourceDecisionsNeeded"]) == 4
     minimum = [item for item in audit["sourceDecisionsNeeded"] if item.get("minimumNextDecision")]
     assert len(minimum) == 1 and minimum[0]["id"] == "suppression_scope"
@@ -105,11 +120,30 @@ def main() -> None:
         assert effect.evaluate(partial, 2018) == {
             "entryVerdict": "信息不足", "sourceEffectTier": "信息不足"
         }
+    alias_conflict = [*both_facts, {"key": "gan", "value": "乙", "scope": {"layer": "本命", "pillar": "day"}}]
+    assert effect.evaluate(alias_conflict, 2018)["entryVerdict"] == "信息不足"
+    without_day = [
+        fact for fact in both_facts
+        if not (fact["key"] in {"gan", "natal_day_gan"}
+                and fact["scope"] == {"layer": "本命", "pillar": "day"})
+    ]
+    known_non_jia = [
+        *without_day, {"key": "gan", "value": "乙", "scope": {"layer": "本命", "pillar": "day"}}
+    ]
+    assert effect.evaluate(known_non_jia, 2100) == {
+        "entryVerdict": "不满足", "sourceEffectTier": "不适用"
+    }
+    known_non_wu = [
+        *missing_annual, {"key": "liunian_gan", "value": "丁", "scope": {"layer": "流年", "year": 2018}}
+    ]
+    assert effect.evaluate(known_non_wu, 2018) == {
+        "entryVerdict": "不满足", "sourceEffectTier": "不适用"
+    }
 
     rules = yaml.safe_load((ROOT / "references/books/bazi/sanming-tonghui/rules.yaml").read_text())["rules"]
     original = next(rule for rule in rules if rule["rule_id"] == "SANMINGTONGH-010")
     assert original["applicable_to"] == [] and original["verified"] is False
-    print("PASS SMTH-010 effect audit: 10 real chart entries, 0 effect verdicts, 3 conflict/missing gates, 10 source clauses, 3 editorial witnesses")
+    print("PASS SMTH-010 effect audit: 10 real chart entries, 0 effect verdicts, 6 conflict/missing gates, 10 source clauses, 3 facsimile pages, 3 editorial witnesses")
 
 
 if __name__ == "__main__":

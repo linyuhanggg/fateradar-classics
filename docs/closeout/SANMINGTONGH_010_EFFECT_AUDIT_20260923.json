@@ -18,6 +18,11 @@
       { "line": 9697, "quote": "日犯歳君以歳為用神者無咎", "role": "same_book_yongshen_exception" }
     ]
   },
+  "facsimile": {
+    "path": "sources/facsimile/other/sanming-tonghui/NLC416-13jh000156-94145.pdf",
+    "sha256": "c6eac6fca6411e45cb801f9b771aca6dd6a6d2dfb57ecc36ea5f42ecf1ac8bf9",
+    "pdfPagesReviewed": [121, 122, 125]
+  },
   "editorialWitnesses": [
     { "path": "sources/normalized/shidianguji/HY1521/text.md", "line": 4914, "quote": "四柱元有庚申金，", "status": "punctuation_does_not_settle_effect_scope" },
     { "path": "sources/normalized/shidianguji/SK1610/text.md", "line": 5177, "quote": "四柱元有庚申金，或大運中亦有将甲木制伏純粹，", "status": "punctuation_does_not_settle_effect_scope" },
@@ -40,6 +45,49 @@
     "provenancePolicy": "每个 proven/ruled_out 均须绑定原局四柱或所选年有效大运的事实见证、来源条款、解释口径与独立复核；不得由结构字样自动定值。",
     "effectTierPolicy": "L1082 的两输入条件阶梯只是局部来源步骤；即使两项已定值，L1086–1087 及 L9697 的例外/次序未裁决前不得输出全章最终作用。"
   },
+  "consumerGate": {
+    "status": "full_effect_factkey_not_adopted",
+    "requestedKey": "rescue_condition",
+    "requestedValues": ["成立", "不成立", "信息不足"],
+    "notApplicableIsSeparate": true,
+    "entryShortCircuit": "已知非甲日或所选年已知非戊，另一入口键即使缺失，本例也不适用；两键均未证伪而缺失则信息不足。",
+    "entryConflict": "同一柱位 gan@day 与 natal_day_gan 不一致、或同一所选年流年干互相矛盾时，入口信息不足，不以任一别名覆盖另一值。",
+    "fullEffectThreshold": null,
+    "fullEffectPriority": null,
+    "negativeExhaustionPolicy": null,
+    "reason": "成立是任一救应、两项俱全还是含 L1086–1087 例外的全章结论未裁；没有可验证的作用正反真盘。",
+    "safeEmission": "仅已交付 010A 入口及 010 中性结构观察可消费；甲日戊岁真实盘的完整作用一律未知，不发行 rescue_condition 的已证真或假。"
+  },
+  "adjudicationGates": [
+    {
+      "id": "gengshen_effect_sufficiency",
+      "isolatingFixture": "caseP1_010_same_only@2018",
+      "question": "原局同柱庚申在 L1082 中是有救的充分条件，还是仍须证明制甲纯粹到不能克戊？",
+      "missing": "同语境、含完整原局与当年有效运的庚申有救及受干扰不救判例，或同书明确的作用阈值。",
+      "sourcePages": [121]
+    },
+    {
+      "id": "guiwu_effect_sufficiency",
+      "isolatingFixtures": ["caseP1_010_natal_gui_only@2018", "caseP1_010_luck_gui_only@2018"],
+      "question": "一癸戊合在本例是否即足够有情，多癸、冲破、合化与原局／有效运并存如何取舍？",
+      "missing": "同语境有效有情正反判词与多癸或受伤的取舍依据。",
+      "sourcePages": [121, 125]
+    },
+    {
+      "id": "later_rescue_boolean_and_exhaustion",
+      "isolatingFixtures": ["caseP1_010_neither@2018", "caseP1_010_unknown_luck@2018"],
+      "question": "L1086 无庚辛、金局制木、火局焚木如何断句、组合和证明有效，何时可穷尽全部救应路径？",
+      "missing": "同语境的断句及作用判例；L1086 后两命例分别为戊日壬年和壬日丙年，不能充当甲日戊岁作用反例。",
+      "sourcePages": [121, 122]
+    },
+    {
+      "id": "exception_precedence",
+      "isolatingFixture": "caseP1_010_both@2018",
+      "question": "L1087 日干天月德且太岁为用神如何独立定值，并与 L1082 阶梯、L1086、L9697 排序？",
+      "missing": "日干与两德的对应口径、太岁为用神的独立事实及例外优先级判例。",
+      "sourcePages": [122]
+    }
+  ],
   "sourceDecisionsNeeded": [
     {
       "id": "suppression_scope",

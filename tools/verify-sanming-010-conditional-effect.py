@@ -17,16 +17,19 @@ CONTRACT = ROOT / "docs/closeout/SANMINGTONGH_010_CONDITIONAL_EFFECT_CONTRACT_20
 FIXTURE = ROOT / "tools/reports/facts-sample.json"
 UNKNOWN = "信息不足"
 OUT_OF_SCOPE = "不适用"
+GAN = set("甲乙丙丁戊己庚辛壬癸")
 
 
-def scoped_value(facts: list[dict], key: str, scope: dict) -> str | None:
+def scoped_value(facts: list[dict], keys: tuple[str, ...], scope: dict) -> tuple[str | None, bool]:
     values = {
         fact.get("value")
         for fact in facts
-        if fact.get("key") == key
-        and all((fact.get("scope") or {}).get(k) == v for k, v in scope.items())
+        if fact.get("key") in keys and fact.get("scope") == scope
     }
-    return next(iter(values)) if len(values) == 1 else None
+    if len(values) > 1:
+        return None, True
+    value = next(iter(values)) if values else None
+    return (value if value in GAN else None), False
 
 
 def evaluate(
@@ -42,8 +45,14 @@ def evaluate(
     statuses = {"proven", "ruled_out", "undetermined"}
     if effective_suppression not in statuses or affinity not in statuses:
         raise ValueError("invalid semantic status")
-    day = scoped_value(facts, "natal_day_gan", {"layer": "本命", "pillar": "day"})
-    year_gan = scoped_value(facts, "liunian_gan", {"layer": "流年", "year": selected_year})
+    day, day_conflict = scoped_value(
+        facts, ("natal_day_gan", "gan"), {"layer": "本命", "pillar": "day"}
+    )
+    year_gan, year_conflict = scoped_value(
+        facts, ("liunian_gan",), {"layer": "流年", "year": selected_year}
+    )
+    if day_conflict or year_conflict:
+        return {"entryVerdict": UNKNOWN, "sourceEffectTier": UNKNOWN}
     if (day is not None and day != "甲") or (year_gan is not None and year_gan != "戊"):
         return {"entryVerdict": "不满足", "sourceEffectTier": OUT_OF_SCOPE}
     if day is None or year_gan is None:
@@ -99,6 +108,25 @@ def main() -> None:
         )
     assert evaluate(entry_facts, 2100)["entryVerdict"] == UNKNOWN
     assert evaluate([], 2018)["entryVerdict"] == UNKNOWN
+    without_day = [
+        fact for fact in entry_facts
+        if not (fact["key"] in {"gan", "natal_day_gan"}
+                and fact.get("scope") == {"layer": "本命", "pillar": "day"})
+    ]
+    without_year = [
+        fact for fact in entry_facts
+        if not (fact["key"] == "liunian_gan"
+                and fact.get("scope") == {"layer": "流年", "year": 2018})
+    ]
+    assert evaluate([
+        *without_day, {"key": "gan", "value": "乙", "scope": {"layer": "本命", "pillar": "day"}}
+    ], 2100)["sourceEffectTier"] == OUT_OF_SCOPE
+    assert evaluate([
+        *without_year, {"key": "liunian_gan", "value": "丁", "scope": {"layer": "流年", "year": 2018}}
+    ], 2018)["sourceEffectTier"] == OUT_OF_SCOPE
+    assert evaluate([
+        *entry_facts, {"key": "gan", "value": "乙", "scope": {"layer": "本命", "pillar": "day"}}
+    ], 2018)["entryVerdict"] == UNKNOWN
     print(f"source clauses {len(source['clauses'])}; real entry fixtures {checked_real}; synthetic ladder states 9: OK")
 
 
