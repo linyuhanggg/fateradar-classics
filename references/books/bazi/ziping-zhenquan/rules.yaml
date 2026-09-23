@@ -215,6 +215,49 @@ rules:
   verified: false
   verified_by: null
   verified_at: null
+- rule_id: ZPR-P1-03
+  kind: doctrine
+  statement: 甲日辰月透戊的偏财取用入口，在《子平真诠》财官印食“善而顺用”的总括中属于顺用候选类；只给这个入口标来源分类，不裁决唯一用神、本格喜忌或顺用成效。
+  anchor:
+    file: sources/fulltext/bazi/ziping-zhenquan/fulltext.md
+    start_line: 328
+    end_line: 328
+  quote: 財官印食，此用神之善而順用之者也；煞傷劫刃，此用神之不善而逆用之者也。
+  applicable_to:
+    all_of:
+    - key: rizhu
+      value: 甲
+      scope: {layer: 本命, pillar: day}
+    - key: yueling
+      value: 辰
+      scope: {layer: 本命, pillar: month}
+    - key: canggan
+      value: 戊
+      scope: {layer: 本命, pillar: month}
+    - any_of:
+      - key: gan
+        value: 戊
+        scope: {layer: 本命, pillar: year}
+      - key: gan
+        value: 戊
+        scope: {layer: 本命, pillar: month}
+      - key: gan
+        value: 戊
+        scope: {layer: 本命, pillar: time}
+  candidate_output:
+    entry: 甲辰月透戊偏财
+    category: 财
+    direction: 顺用
+    status: 候选
+  caveats:
+  - 本条在 ZPR-P1-01 的“偏财取用入口”之上只增加来源所称“财善顺用”的候选分类；入口本身见 L544，类别总括见 L328。这是两句原文相接的推断，并非 L544 另有“已顺用”的断语。
+  - “满足”仅表示本命戊透入口可标顺用候选，不表示该入口已被裁为唯一用神、财格已成或财喜食神相生、生官护财等逐格关系已经成立。
+  - 同透癸、乙或会支时仍允许多入口并存；本标签只跟随偏财入口，不给其他入口定方向，也不覆盖建禄月劫另取。
+  - 本条没有升级 ZPR-E-02 的 satisfy_when、rescue、verified 或适用条件，也不作六主题吉凶出口。
+  school: 子平真诠月令取用方向分类
+  verified: false
+  verified_by: null
+  verified_at: null
 - rule_id: ZPR-07
   kind: doctrine
   statement: 财官印食虽为四吉神，但遇冲克混杂、护卫不当，也能破格。
