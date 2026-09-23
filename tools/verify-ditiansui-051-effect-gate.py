@@ -17,7 +17,7 @@ SOURCE = ROOT / "sources/fulltext/bazi/ditiansui-chanwei/fulltext.md"
 FIXTURE = ROOT / "tools/reports/facts-sample.json"
 RULES = ROOT / "dist/rules/bazi.json"
 SHAPES = ROOT / "tools/reports/p1-bazi-20260922/ditiansui-051-shape-examples.json"
-EXPECTED_FIXTURE_SHA256 = "3f9e7b62c4d35cc4df2006cec7c994a2178d922a50377ab62c39e10d4c5b3dcc"
+EXPECTED_FIXTURE_SHA256 = "206638e12e5390ea8d41f8140d23f61efcee673dfa5aebd65e2dc95c937df5f8"
 
 # Distinct source branches: the same listed shape is not an effect verdict.
 SOURCE_CUES = {
@@ -59,7 +59,7 @@ def main() -> None:
     fixture_sha = hashlib.sha256(fixture_bytes).hexdigest()
     assert fixture_sha == EXPECTED_FIXTURE_SHA256, "fixture changed; re-audit 051 effect examples"
     charts = json.loads(fixture_bytes)["bazi"]
-    assert len(charts) == 43, "case count changed; re-audit 051 effect examples"
+    assert len(charts) == 50, "case count changed; re-audit 051 effect examples"
 
     semantic_hits = {
         case_id: sorted({fact["key"] for fact in chart["facts"]} & MISSING_SEMANTIC_FACTS)
@@ -102,7 +102,7 @@ def main() -> None:
 
     print(json.dumps({
         "status": "PASS",
-        "scope": "current_43_real_date_charts_only",
+        "scope": "current_50_real_date_charts_only",
         "sourceCuesChecked": len(SOURCE_CUES),
         "fixtureSha256": fixture_sha,
         "realDateCharts": len(charts),

@@ -26,13 +26,13 @@
 
 ## 当前真实盘的反证
 
-`python3 tools/verify-ditiansui-051-favorite-boundary.py` 对原文 12 个定点短句和当前共享的 43 个真实日期八字盘重跑。当前样盘文件 SHA-256 为 `3f9e7b62c4d35cc4df2006cec7c994a2178d922a50377ab62c39e10d4c5b3dcc`。43 盘均无 `favorite_luck_element_decision_record`、正式 `yongshen`、`natal_favorable_context`、`yongshen_effective` 或 `jishen_empowered` 事实。校验器逐盘核对四柱干支及日干、月支一致性，并统计《喜神》举例入口的真实重叠，不把事实键缺失本身误写成古籍不可能作出判断。
+`python3 tools/verify-ditiansui-051-favorite-boundary.py` 对原文 12 个定点短句和冻结的共享 50 个真实日期八字盘重跑。当前样盘文件 SHA-256 为 `206638e12e5390ea8d41f8140d23f61efcee673dfa5aebd65e2dc95c937df5f8`。50 盘均无 `favorite_luck_element_decision_record`、正式 `yongshen`、`natal_favorable_context`、`yongshen_effective` 或 `jishen_empowered` 事实。校验器逐盘核对四柱干支及日干、月支一致性，并统计《喜神》举例入口的真实重叠，不把事实键缺失本身误写成古籍不可能作出判断。
 
 | 真实盘 | 已有结构与候选 | 不能升级的原因 |
 |---|---|---|
 | `caseP1_051_tiaohou_candidate@2025`：1990-01-01 13:20，男，上海 | 丙日子月；`rizhu_strength=中和`；调候候选壬、戊，档案“基础候选”；有效大运癸酉。 | 壬、戊只是《穷通宝鉴》路线候选干，不是《滴天髓》已裁决喜行水、土；也没有逐值负例。 |
 | `caseP1_011_seven_killer@2031`：1952-03-10 11:20，男，上海 | 乙日卯月；`rizhu_strength=极强`；调候候选丙、癸，档案“基础候选”；有效大运辛亥。产品 `analysis.yongshen.routes` 的扶抑候选另有金、火、土。 | 辛亥会在**假设**喜金时命中“喜金截脚”，但 Product 的 `routes[].adopted` 仅选展示路线，根层正式 `xi/ji=[]`；旺极可能从强，路线和五行均未裁决。 |
 
-其中 `cov3_bazi_1` 是必须显式拦截的假阳性：1970-02-07 13:20 的排盘为**庚戌／戊寅／戊午／己未**，确实满足 [L7315](../../sources/fulltext/bazi/ditiansui-chanwei/fulltext.md#L7315) 举例开头的“戊日寅月”，且月支藏甲、样盘给出 `七杀格`、`rizhu_strength=极强`、调候候选丙／甲／癸。但这四项都没有裁定“**寅中甲木为用神**”；原文只有在这一前提下才继续分“元神厚→水喜”和“元神薄→火喜”，[L7317](../../sources/fulltext/bazi/ditiansui-chanwei/fulltext.md#L7317) 还另开身弱改用寅中丙火的入口。`极强` 是现有盘面标签，不是原文“元神厚”的同义事实，也没有排除旺极反宜扶、寅午戌合火等结构对取用的影响。即使裁定本命喜神，[L2967](../../sources/fulltext/bazi/ditiansui-chanwei/fulltext.md#L2967) 的随岁运取用和 [L13402](../../sources/fulltext/bazi/ditiansui-chanwei/fulltext.md#L13402) 的所选年合参仍须过关。因此 43 盘中**1 盘命中原文举例的两个字面条件，0 盘在当前合同中完成其全部前提裁决**；不能把此盘填为喜水、喜火，或反推其它五行为忌。
+其中 `cov3_bazi_1` 是必须显式拦截的假阳性：1970-02-07 13:20 的排盘为**庚戌／戊寅／戊午／己未**，确实满足 [L7315](../../sources/fulltext/bazi/ditiansui-chanwei/fulltext.md#L7315) 举例开头的“戊日寅月”，且月支藏甲、样盘给出 `七杀格`、`rizhu_strength=极强`、调候候选丙／甲／癸。但这四项都没有裁定“**寅中甲木为用神**”；原文只有在这一前提下才继续分“元神厚→水喜”和“元神薄→火喜”，[L7317](../../sources/fulltext/bazi/ditiansui-chanwei/fulltext.md#L7317) 还另开身弱改用寅中丙火的入口。`极强` 是现有盘面标签，不是原文“元神厚”的同义事实，也没有排除旺极反宜扶、寅午戌合火等结构对取用的影响。即使裁定本命喜神，[L2967](../../sources/fulltext/bazi/ditiansui-chanwei/fulltext.md#L2967) 的随岁运取用和 [L13402](../../sources/fulltext/bazi/ditiansui-chanwei/fulltext.md#L13402) 的所选年合参仍须过关。因此 50 盘中**1 盘命中原文举例的两个字面条件，0 盘在当前合同中完成其全部前提裁决**；不能把此盘填为喜水、喜火，或反推其它五行为忌。
 
-因此当前没有可诚实填入“满足／不满足”的共享真实盘。这是对**当前 43 盘及现有合同**的结论，不是说古籍不能判断这些命局。若要继续算法开发，先为至少两组同结构但不同厚薄／从格的真盘建立可复核判断，尤其给 `cov3_bazi_1` 的甲木取用与厚薄分支作来源裁决；再给同一年范围内的正、显式非喜、冲突、缺键各一例，并明确“随岁运取用”何时覆盖本命基线。未完成前，051 主规则和产品语义输入保持 `unknown`。
+因此当前没有可诚实填入“满足／不满足”的共享真实盘。这是对**当前 50 盘及现有合同**的结论，不是说古籍不能判断这些命局。若要继续算法开发，先为至少两组同结构但不同厚薄／从格的真盘建立可复核判断，尤其给 `cov3_bazi_1` 的甲木取用与厚薄分支作来源裁决；再给同一年范围内的正、显式非喜、冲突、缺键各一例，并明确“随岁运取用”何时覆盖本命基线。未完成前，051 主规则和产品语义输入保持 `unknown`。

@@ -12,6 +12,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 SOURCE = ROOT / "sources/fulltext/bazi/ditiansui-chanwei/fulltext.md"
 FACTS = ROOT / "tools/reports/facts-sample.json"
+EXPECTED_FIXTURE_SHA256 = "206638e12e5390ea8d41f8140d23f61efcee673dfa5aebd65e2dc95c937df5f8"
 
 SOURCE_CUES = {
     2663: "再究司令以定真假，然后取用",
@@ -70,8 +71,11 @@ def main() -> None:
             assert cue in lines[number - 1], (number, cue)
 
     fixture_bytes = FACTS.read_bytes()
+    assert hashlib.sha256(fixture_bytes).hexdigest() == EXPECTED_FIXTURE_SHA256, (
+        "shared fixture changed; re-audit the real-chart boundary"
+    )
     charts = json.loads(fixture_bytes)["bazi"]
-    assert len(charts) == 43, "shared fixture changed; re-audit the real-chart boundary"
+    assert len(charts) == 50, "shared fixture changed; re-audit the real-chart boundary"
     semantic_hits = {
         case_id: sorted({fact["key"] for fact in chart["facts"]} & SEMANTIC_KEYS)
         for case_id, chart in charts.items()
