@@ -1,0 +1,72 @@
+{
+  "id": "ZPR-E-02-yin-bing-local-principal-candidate",
+  "status": "candidate_not_registered_do_not_emit",
+  "claim": "寅月甲不透、寅藏丙独透时，L419 的局部月令主入口为丙；不裁最终主格、兼格、作用或救应",
+  "source": {
+    "path": "sources/fulltext/bazi/ziping-zhenquan/fulltext.md",
+    "lines": [328, 340, 419, 421, 542, 548]
+  },
+  "scope": {"layer": "本命"},
+  "inputs": {
+    "monthZhi": {"key": "zhi", "scope": {"layer": "本命", "pillar": "month"}, "cardinality": "one_distinct_value"},
+    "monthOrder": {"key": "yueling", "scope": {"layer": "本命", "pillar": "month"}, "cardinality": "one_distinct_value_equal_monthZhi"},
+    "monthHiddenStems": {"key": "canggan", "scope": {"layer": "本命", "pillar": "month"}, "cardinality": "complete_exact_set_甲丙戊_for_寅"},
+    "exposedNatalStems": {"key": "gan", "scopes": [
+      {"layer": "本命", "pillar": "year"},
+      {"layer": "本命", "pillar": "month"},
+      {"layer": "本命", "pillar": "time"}
+    ], "cardinality": "one_distinct_value_each"},
+    "consumerChartCompleteness": {"keys": ["gan", "zhi"], "scope": {"layer": "本命"}, "pillars": ["year", "month", "day", "time"], "cardinality": "one_distinct_value_per_key_and_pillar_for_localPrincipalStem"},
+    "consumerDayGan": {"key": "gan", "scope": {"layer": "本命", "pillar": "day"}, "conservativeExclusion": ["甲", "乙"]}
+  },
+  "supportedMonth": "寅",
+  "expectedMonthHiddenStems": ["甲", "丙", "戊"],
+  "output": {
+    "premiseState": "满足|不满足|信息不足",
+    "localPrincipalStem": "丙|信息不足",
+    "finalPrincipalStem": "信息不足",
+    "semantics": "不满足只否定 L419 的甲不透而丙透前件；信息不足不得解释为无月令入口。丙为局部原文主入口，不等于整盘唯一主格。"
+  },
+  "conflictPolicy": {
+    "甲丙兼透": "前件不满足；丙或甲的最终主次仍信息不足",
+    "丙戊兼透且甲不透": "前件满足，但 L419 未裁定戊兼透时的主兼优先级，局部主入口保持信息不足",
+    "木日寅月": "L349–351 的禄劫另取程序与 L419 的先后未裁；Product 消费门槛暂不在甲乙日输出局部主入口，非原文唯一结论",
+    "monthHiddenMismatchOrIncomplete": "信息不足",
+    "scopeValueConflict": "信息不足",
+    "missingNatalStemPillar": "除已知甲使前件为假外均信息不足",
+    "meetingsAndEffects": "不由本候选裁断；L421 会支可再变化，L548 兼透可兼用"
+  },
+  "realDateProbes": [
+    {
+      "id": "yin_bing_only_1969",
+      "producer": "Product buildBazi; clock time; Shanghai Huangpu; male",
+      "birth": {"year": "1969", "month": "2", "day": "13", "hour": "10", "minute": "20"},
+      "pillars": {"year": "己酉", "month": "丙寅", "day": "己未", "time": "己巳"},
+      "premiseState": "满足",
+      "localPrincipalStem": "丙"
+    },
+    {
+      "id": "caseB",
+      "producer": "shared facts-sample.json",
+      "birth": {"year": "1984", "month": "2", "day": "4", "hour": "23", "minute": "40"},
+      "pillars": {"year": "甲子", "month": "丙寅", "day": "己巳", "time": "甲子"},
+      "premiseState": "不满足",
+      "localPrincipalStem": "信息不足"
+    },
+    {
+      "id": "cov3_bazi_1",
+      "producer": "shared facts-sample.json",
+      "birth": {"year": "1970", "month": "2", "day": "7", "hour": "13", "minute": "20"},
+      "pillars": {"year": "庚戌", "month": "戊寅", "day": "戊午", "time": "己未"},
+      "premiseState": "不满足",
+      "localPrincipalStem": "信息不足"
+    }
+  ],
+  "partialInputProbe": {
+    "fromRealDateProbe": "yin_bing_only_1969",
+    "remove": {"key": "gan", "scope": {"layer": "本命", "pillar": "year"}},
+    "premiseState": "信息不足",
+    "localPrincipalStem": "信息不足"
+  },
+  "fixture": {"path": "tools/reports/facts-sample.json", "sha256": "3f9e7b62c4d35cc4df2006cec7c994a2178d922a50377ab62c39e10d4c5b3dcc", "baziCases": 43}
+}
