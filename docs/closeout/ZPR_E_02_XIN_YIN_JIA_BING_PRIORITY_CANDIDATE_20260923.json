@@ -1,0 +1,51 @@
+{
+  "id": "ZPR-E-02-xin-yin-jia-bing-priority-candidate",
+  "status": "candidate_not_registered_do_not_emit",
+  "claim": "辛日寅月甲丙并透的原文例型中，正财为主格入口，正官为兼格入口；不裁整盘成败或实际作用",
+  "source": {
+    "path": "sources/fulltext/bazi/ziping-zhenquan/fulltext.md",
+    "lines": [328, 349, 350, 351, 419, 426, 435, 452, 542, 548]
+  },
+  "scope": {"layer": "本命"},
+  "inputs": {
+    "dayStem": {"key": "gan", "scope": {"layer": "本命", "pillar": "day"}, "expected": "辛"},
+    "monthBranch": {"key": "zhi", "scope": {"layer": "本命", "pillar": "month"}, "expected": "寅"},
+    "monthOrder": {"key": "yueling", "scope": {"layer": "本命", "pillar": "month"}, "expected": "寅"},
+    "monthHiddenStems": {"key": "canggan", "scope": {"layer": "本命", "pillar": "month"}, "completeExactSet": ["甲", "丙", "戊"]},
+    "exposedStems": {"key": "gan", "scopes": [
+      {"layer": "本命", "pillar": "year"},
+      {"layer": "本命", "pillar": "month"},
+      {"layer": "本命", "pillar": "time"}
+    ], "required": ["甲", "丙"], "conservativeNoExtraMonthHiddenStem": "戊"},
+    "completeNatalPillars": {"keys": ["gan", "zhi"], "pillars": ["year", "month", "day", "time"], "cardinality": "one_distinct_value_per_key_and_pillar"},
+    "fullYinWuXuMeeting": {"branches": ["寅", "午", "戌"], "policy": "if_all_present_keep_priority_unknown"}
+  },
+  "output": {
+    "caseState": "满足|不满足|信息不足",
+    "whenSatisfied": {
+      "entrySet": [
+        {"entryId": "ZPR-E-02:month-寅:hidden-甲:辛日正财", "sourceStem": "甲", "tenGod": "正财", "localRank": "主"},
+        {"entryId": "ZPR-E-02:month-寅:hidden-丙:辛日正官", "sourceStem": "丙", "tenGod": "正官", "localRank": "兼"}
+      ],
+      "structuralPairLabel": "财官相生（L452 原文例型，不等于整盘实际相生已成）"
+    },
+    "alwaysUnknown": ["wholeChartCompletion", "wholeChartPurity", "actualRelationEffect", "rescue", "auspiciousOutcome", "selectedYearEffect"],
+    "negativeMeaning": "不满足只否定本辛日寅月甲丙清楚例型，不否定其他月令入口或整个 ZPR-E-02"
+  },
+  "conflictPolicy": {
+    "甲丙兼透且戊另透": "L435 未排定第三个寅藏入口；caseState=信息不足",
+    "甲丙兼透且寅午戌全会": "L548 透而又会并用；caseState=信息不足",
+    "己日甲丙兼透": "L435 专说辛日；caseState=不满足，不倒推己日的主兼",
+    "丙戊兼透而甲不透": "L419 前件可满足，但 L435 例型不满足；丙戊主兼仍未知",
+    "woodDayYinMonth": "L349–351 的禄劫另取程序不由本条消解",
+    "missingOrConflictingScopedFact": "信息不足，不从旧 geju 名称或流年补键"
+  },
+  "realDateProbes": [
+    {"id": "xin_yin_jia_bing_1984", "birth": {"year": "1984", "month": "2", "day": "7", "hour": "10", "minute": "20"}, "pillars": {"year": "甲子", "month": "丙寅", "day": "辛未", "time": "癸巳"}, "caseState": "满足"},
+    {"id": "xin_yin_jia_bing_1954", "birth": {"year": "1954", "month": "2", "day": "14", "hour": "2", "minute": "20"}, "pillars": {"year": "甲午", "month": "丙寅", "day": "辛丑", "time": "己丑"}, "caseState": "满足"},
+    {"id": "xin_yin_no_jia_1979", "birth": {"year": "1979", "month": "2", "day": "13", "hour": "10", "minute": "20"}, "pillars": {"year": "己未", "month": "丙寅", "day": "辛亥", "time": "癸巳"}, "caseState": "不满足"},
+    {"id": "xin_yin_jia_bing_wu_1984", "birth": {"year": "1984", "month": "2", "day": "7", "hour": "20", "minute": "20"}, "pillars": {"year": "甲子", "month": "丙寅", "day": "辛未", "time": "戊戌"}, "caseState": "信息不足"},
+    {"id": "xin_yin_jia_bing_meeting_1994", "birth": {"year": "1994", "month": "2", "day": "14", "hour": "12", "minute": "20"}, "pillars": {"year": "甲戌", "month": "丙寅", "day": "辛未", "time": "甲午"}, "caseState": "信息不足"}
+  ],
+  "fixture": {"path": "tools/reports/facts-sample.json", "sha256": "3f9e7b62c4d35cc4df2006cec7c994a2178d922a50377ab62c39e10d4c5b3dcc", "baziCases": 43}
+}
