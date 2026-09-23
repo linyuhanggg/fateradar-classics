@@ -60,6 +60,10 @@ class SourceShapeContractTest(unittest.TestCase):
                              "scope": {"layer": "大运", "year": 2025}}]
         self.assertEqual(evaluate_shape(conflict, 2025, "jiejiao",
                                         self.hypothetical("火"))["verdict"], "信息不足")
+        impossible = [{"key": "dayun_gan_zhi", "value": "甲丑",
+                       "scope": {"layer": "大运", "year": 2025}}]
+        self.assertEqual(evaluate_shape(impossible, 2025, "jiejiao",
+                                        self.hypothetical("火"))["verdict"], "信息不足")
 
     def test_shape_specific_negative_is_not_effect_negative(self) -> None:
         facts = self.cases["caseFlowYear"]["facts"]

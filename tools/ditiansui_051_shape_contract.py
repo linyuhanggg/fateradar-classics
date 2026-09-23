@@ -16,6 +16,18 @@ SHAPES = {"gaitou", "jiejiao"}
 ELEMENTS = set("木火土金水")
 GAN = set("甲乙丙丁戊己庚辛壬癸")
 ZHI = set("子丑寅卯辰巳午未申酉戌亥")
+GAN_ORDER = "甲乙丙丁戊己庚辛壬癸"
+ZHI_ORDER = "子丑寅卯辰巳午未申酉戌亥"
+
+
+def _is_ganzhi(pillar: Any) -> bool:
+    return (
+        isinstance(pillar, str)
+        and len(pillar) == 2
+        and pillar[0] in GAN
+        and pillar[1] in ZHI
+        and GAN_ORDER.index(pillar[0]) % 2 == ZHI_ORDER.index(pillar[1]) % 2
+    )
 
 
 def _result(verdict: str, reason: str, year: int, shape: str, *,
@@ -51,10 +63,7 @@ def evaluate_shape(
         if fact.get("key") == "dayun_gan_zhi"
         and fact.get("scope") == {"layer": "大运", "year": year}
     ]
-    if not pillars or any(
-        not isinstance(p, str) or len(p) != 2 or p[0] not in GAN or p[1] not in ZHI
-        for p in pillars
-    ) or len(set(pillars)) != 1:
+    if not pillars or any(not _is_ganzhi(p) for p in pillars) or len(set(pillars)) != 1:
         return _result("信息不足", "selected_year_luck_pillar_missing_or_conflicting", year, shape)
     pillar = next(iter(pillars))
 
