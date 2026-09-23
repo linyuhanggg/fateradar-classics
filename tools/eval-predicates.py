@@ -14,7 +14,7 @@
 
 **置信度的定义（机械、透明，不是预测准确率）**
 
-    fact_coverage   = 表达式引用到的 FactKey 中，本盘实际存在的比例
+    fact_coverage   = 表达式引用到的 FactKey 中，本盘所需密集柱位事实均在场的比例
     wildcard_penalty = 表达式里用到通配 `*` 时的 0.2 折扣
     confidence      = round(fact_coverage * (1 - wildcard_penalty), 3)
 
@@ -22,7 +22,7 @@
 它**不**表示古籍预测的准确度；`verified` 恒为 `false`，电子文本匹配与测试都不能代替人工影印核验。
 
 三值语义要点（缺输入不是「不满足」）：
-  · 谓词的 key 在本盘**完全不存在** → 该子句 `unknown`
+  · 谓词的 key 完全缺失，或 gan/zhi/canggan 所需柱位缺失 → 该子句 `unknown`
   · `any_of`：有真即真；无真而有 unknown → unknown；否则假
   · `all_of`：有假即假；无假而有 unknown → unknown；否则真（再校验 `same` 同位置绑定）
   · `none_of`：判「事实存在与否」。有匹配 → 假；无匹配但有 key 缺失 → unknown（无法证明「没有」）；
@@ -57,7 +57,7 @@ DIVINATION_SLUG_TO_ART = {
 }
 
 TRUE, FALSE, UNKNOWN = "满足", "不满足", "信息不足"
-SCOPE_FIELDS = ("layer", "pillar", "palace", "gong", "yao")
+SCOPE_FIELDS = ("layer", "pillar", "palace", "gong", "yao", "ruleId")
 
 
 def art_of(system: str, slug: str) -> str | None:
@@ -96,12 +96,19 @@ def fact_matches(fact: dict, pred: dict) -> bool:
     val = pred.get("value")
     if val != "*" and fact.get("value") != val:
         return False
-    scope = pred.get("scope") or {}
-    fscope = fact.get("scope") or {}
-    for field, want in scope.items():
-        if fscope.get(field) != want:
-            return False
-    return True
+    return fact_scope_matches(fact, pred)
+
+
+def fact_scope_matches(fact: dict, pred: dict) -> bool:
+    return all(
+        (fact.get("scope") or {}).get(field) == want
+        for field, want in (pred.get("scope") or {}).items()
+    )
+
+
+# 完整四柱每柱必有天干、地支、至少一枚藏干；其他键（如神煞）
+# 是稀疏标签，某柱未出现可以是明确不满足，不能一律当缺输入。
+COMPLETE_PILLAR_FACT_KEYS = {"gan", "zhi", "canggan"}
 
 
 def is_unknown_fact(fact: dict) -> bool:
@@ -140,16 +147,23 @@ def constrains(clause, field: str) -> bool:
 
 def eval_predicate(pred: dict, facts: list[dict], present: set[str]) -> Clause:
     key = pred.get("key")
+    if key == "liuren_selection_rule_status" and not (pred.get("scope") or {}).get("ruleId"):
+        return Clause(UNKNOWN, [], {})
     if key not in present:
         return Clause(UNKNOWN, [], {})
+    scoped = [f for f in facts if f.get("key") == key and fact_scope_matches(f, pred)]
+    if (pred.get("scope") or {}).get("pillar") and key in COMPLETE_PILLAR_FACT_KEYS and not scoped:
+        # Another pillar carrying the same dense FactKey does not prove this
+        # pillar was emitted. Missing input cannot prove a negative claim.
+        return Clause(UNKNOWN, [], {})
+    if key == "liuren_selection_rule_status" and (pred.get("scope") or {}).get("ruleId"):
+        # This key is multi-valued across rules. Another rule's record never
+        # proves that the requested rule was checked on this chart.
+        if not scoped or len({f.get("value") for f in scoped}) != 1:
+            return Clause(UNKNOWN, [], {})
     matched = [f for f in facts if fact_matches(f, pred)]
     if not matched:
-        scope = pred.get("scope") or {}
-        if any(
-            f.get("key") == key and is_unknown_fact(f)
-            and all((f.get("scope") or {}).get(k) == v for k, v in scope.items())
-            for f in facts
-        ):
+        if any(is_unknown_fact(f) for f in scoped):
             return Clause(UNKNOWN, [], {})
         return Clause(FALSE, [], {})
     # 绑定值取自**命中事实**携带的 scope 字段（不只是谓词自己声明的那些）：
@@ -271,11 +285,14 @@ def evaluate(rule: dict, facts: list[dict]) -> dict:
         }
     clause = ap if isinstance(ap, dict) else {"any_of": ap}
     res = eval_clause(clause, facts, present)
-    covered = {k for k in keys if k in present}
+    missing = sorted({
+        pred["key"] for pred in _iter_leaves(clause)
+        if eval_predicate(pred, facts, present).state == UNKNOWN
+    })
+    covered = keys - set(missing)
     coverage = (len(covered) / len(keys)) if keys else 1.0
     penalty = 0.2 if uses_wildcard(clause) else 0.0
     confidence = round(max(0.0, coverage * (1.0 - penalty)), 3)
-    missing = sorted(k for k in keys if k not in present)
     anchor = rule.get("anchor") or {}
     return {
         "rule_id": rule.get("rule_id"),

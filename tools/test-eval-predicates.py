@@ -112,7 +112,6 @@ def main() -> int:
         )["verdict"],
         "信息不足",
     )
-
     same_zhi = rule([{"key": "suiyun_same_zhi", "value": "是", "scope": {"layer": "流年", "year": 2100}}])
     unresolved = M.evaluate(same_zhi, [fact("suiyun_same_zhi", "信息不足", layer="流年", year=2100)])
     check("  同支事实显式未知 → 信息不足", unresolved["verdict"], "信息不足")
@@ -190,6 +189,28 @@ def main() -> int:
     pos = {"all_of": [{"key": "bamen", "value": "休门", "scope": {"gong": 9}}]}
     check("  宫位不符 → 不满足", M.evaluate(rule(pos), [fact("bamen", "休门", gong=1)])["verdict"], "不满足")
     check("  宫位相符 → 满足", M.evaluate(rule(pos), [fact("bamen", "休门", gong=9)])["verdict"], "满足")
+
+    print("7b. 密集四柱事实缺单柱位不等于该柱位条件为假")
+    year_wu = {"all_of": [{"key": "gan", "value": "戊", "scope": {"layer": "本命", "pillar": "year"}}]}
+    missing_year = [fact("gan", "丙", layer="本命", pillar="month"), fact("gan", "丙", layer="本命", pillar="time")]
+    r = M.evaluate(rule(year_wu), missing_year)
+    check("  只有月时干、缺年干 → 信息不足", r["verdict"], "信息不足")
+    check("  缺柱位仍点名 gan", r["missing_fact_keys"], ["gan"])
+    check("  年干已知非戊 → 不满足", M.evaluate(rule(year_wu), missing_year + [fact("gan", "辛", layer="本命", pillar="year")])["verdict"], "不满足")
+    check("  年干戊 → 满足", M.evaluate(rule(year_wu), missing_year + [fact("gan", "戊", layer="本命", pillar="year")])["verdict"], "满足")
+    sparse = {"all_of": [{"key": "shensha", "value": "羊刃", "scope": {"layer": "本命", "pillar": "year"}}]}
+    check("  神煞是稀疏标签，另柱有值而年柱未见 → 不满足", M.evaluate(rule(sparse), [fact("shensha", "羊刃", layer="本命", pillar="time")])["verdict"], "不满足")
+
+    print("7c. 六壬按 scope.ruleId 判定取传；同 key 别条在场不填本条缺项")
+    selection = {"key": "liuren_selection_rule_status", "value": "adopted", "scope": {"layer": "本命", "ruleId": "DLD-E-04"}}
+    inner = fact("liuren_selection_rule_status", "adopted", layer="本命", ruleId="DLD-E-06")
+    check("  未指定 ruleId 禁止任意匹配", M.evaluate(rule([{"key": "liuren_selection_rule_status", "value": "adopted"}]), [inner])["verdict"], "信息不足")
+    check("  返吟外层缺项、比用内层仍在 → 信息不足", M.evaluate(rule([selection]), [inner])["verdict"], "信息不足")
+    negative = fact("liuren_selection_rule_status", "not_adopted", layer="本命", ruleId="DLD-E-04")
+    check("  外层明确未采用 → 不满足", M.evaluate(rule([selection]), [inner, negative])["verdict"], "不满足")
+    positive = fact("liuren_selection_rule_status", "adopted", layer="本命", ruleId="DLD-E-04")
+    check("  外层采用 → 满足", M.evaluate(rule([selection]), [inner, positive])["verdict"], "满足")
+    check("  外层两状态矛盾 → 信息不足", M.evaluate(rule([selection]), [inner, negative, positive])["verdict"], "信息不足")
 
     print("8. 置信度＝输入完备度（机械口径，不是预测准确率）")
     r = M.evaluate(rule({"any_of": [{"key": "bamen", "value": "休门"}]}), [fact("bamen", "休门")])
