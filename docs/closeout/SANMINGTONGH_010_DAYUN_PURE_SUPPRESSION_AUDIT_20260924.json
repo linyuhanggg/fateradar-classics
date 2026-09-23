@@ -1,0 +1,166 @@
+{
+  "schema": "fateradar-smth-010-dayun-pure-suppression-audit-v1",
+  "status": "undetermined_no_executable_source_threshold",
+  "ruleId": "SANMINGTONGH-010",
+  "scope": {
+    "sourceClause": "L1082 大运纯制伏支路",
+    "isolatingFixture": "caseP1_010_split_only@2018",
+    "fullRuleEffect": "信息不足"
+  },
+  "decision": {
+    "dayunPureSuppression": "undetermined",
+    "reason": "L1082 states the required result (甲木 is purely subdued and can no longer overcome 戊土), but neither L1082 nor the reviewed same-book passages provide a source-defined, executable input threshold that can prove or exhaustively disprove this Dayun branch.",
+    "notEquivalentTo": [
+      "大运干支出现庚辛",
+      "对五行字数作计数",
+      "从强弱标签推断纯粹制伏",
+      "本命庚与申跨柱拼接"
+    ],
+    "candidateAdopted": false,
+    "rulesChanged": false,
+    "manifestChanged": false,
+    "verified": false
+  },
+  "primarySource": {
+    "path": "sources/fulltext/bazi/sanming-tonghui/fulltext.md",
+    "sha256": "ef01ff5ff538a2c64af7fda15b1393b4eeb9f75a311fe3dda7f39f0ecaa66298",
+    "clauses": [
+      {
+        "line": 1082,
+        "quote": "或大運中亦有将甲木制伏純粹不能尅戊土為有救",
+        "role": "branch_requirement_but_no_observable_threshold"
+      },
+      {
+        "line": 1085,
+        "quote": "假如甲日見戊年太嵗甲又生寅卯亥未年月日時又重見甲乙字併",
+        "role": "later_same_example_setup"
+      },
+      {
+        "line": 1086,
+        "quote": "柱中無庚辛巳酉丑金局制木丙丁火局焚木者太凶",
+        "role": "later_adverse_clause_not_a_defined_dayun_threshold"
+      },
+      {
+        "line": 1087,
+        "quote": "若日干是天月徳太嵗是用神則無咎而反有獲",
+        "role": "later_exception_requires_separate_inputs_and_precedence"
+      },
+      {
+        "line": 9697,
+        "quote": "日犯歳君以歳為用神者無咎",
+        "role": "same_book_commentary_exception"
+      },
+      {
+        "line": 9697,
+        "quote": "身旺者㓙弱者無咎日與運俱犯之方主大㓙五行有救亦减分數最怕天衝地擊",
+        "role": "same_book_commentary_modifiers_without_l1082_precedence"
+      },
+      {
+        "line": 9697,
+        "quote": "且如六乙人逢巳歳運活木尅活土却有生意財源倍有六甲生人逢戊歳運死木",
+        "role": "same_book_dead_wood_example_not_a_l1082_dayun_threshold"
+      },
+      {
+        "line": 9698,
+        "quote": "尅死土則不吉重者䘮身羊刃格不喜歳運刑衝",
+        "role": "same_book_dead_wood_outcome_and_yang_blade_modifier"
+      },
+      {
+        "line": 3085,
+        "quote": "以上諸制合生化須要無太過不及",
+        "role": "general_seven_killings_balance_warning_different_context"
+      },
+      {
+        "line": 3086,
+        "quote": "若七煞止一而制伏有二三處喜行煞旺地倘運再遇制伏則盡法無民雖猛如虎狼亦不能逞其技矣是又不可專言制伏要輕重得所",
+        "role": "general_seven_killings_balance_warning_not_transferred_as_threshold"
+      },
+      {
+        "line": 3087,
+        "quote": "假令甲寅生人為身旺嵗月見庚申為煞旺柱中不透火制地支子辰㑹印成局則煞生印印生身作權貴㸔",
+        "role": "different_seven_killings_path_not_an_l1082_case"
+      }
+    ]
+  },
+  "relatedWoodDefinitions": [
+    {
+      "line": 687,
+      "quote": "甲戌乙亥木之源甲寅乙卯木之鄉甲辰乙巳木之生皆活木也甲申乙酉木受尅甲午乙未木自死甲子乙丑金尅木皆死木也",
+      "finding": "The book gives stem-branch descriptions for active/dead wood; it does not equate any listed category with the L1082 condition that the selected Dayun purely subdues natal 甲 so it cannot overcome the selected 戊 year."
+    },
+    {
+      "line": 688,
+      "quote": "金而造庚辛必利生木見金自傷死木得火自焚",
+      "finding": "This describes contrasting wood interactions, not an exhaustive threshold or a branch-specific positive/negative decision procedure."
+    },
+    {
+      "line": 743,
+      "quote": "榮悴觸物變化亦無定形須看火金水何如又看化合何如不可執一論",
+      "finding": "The same chapter expressly warns that 甲 wood cannot be decided by a single fixed attribute; no deterministic mapping to the L1082 Dayun phrase is supplied here."
+    }
+  ],
+  "editorialWitnesses": [
+    {
+      "path": "sources/normalized/shidianguji/HY1521/text.md",
+      "sha256": "707ac9bc6796bdb679833fc280040485d95b36da6f7aca0b3e2adbb9e57d19d3",
+      "line": 4915,
+      "quote": "或大運中亦有將甲木制伏純粹，不能尅戊土，爲有",
+      "supports": "The Dayun branch explicitly requires complete suppression such that 甲 cannot overcome 戊; this witness adds punctuation, not a measurable threshold."
+    },
+    {
+      "path": "sources/normalized/shidianguji/SK1610/text.md",
+      "sha256": "4f705b654672fe6d8106353401541634de9d3db6e300271bfab7ca7e427f24dd",
+      "line": 5177,
+      "quote": "四柱元有庚申金，或大運中亦有将甲木制伏純粹，",
+      "supports": "The witness confirms the two alternative branches and retains the qualitative pure-suppression wording."
+    }
+  ],
+  "facsimile": {
+    "path": "sources/facsimile/other/sanming-tonghui/NLC416-13jh000156-94145.pdf",
+    "sha256": "c6eac6fca6411e45cb801f9b771aca6dd6a6d2dfb57ecc36ea5f42ecf1ac8bf9",
+    "pages": [121, 122],
+    "priorReviewRecord": "docs/closeout/SANMINGTONGH_010_L1082_BRANCH_AUDIT_20260923.json",
+    "scopeNote": "The cited prior audit records visual review of imprint pages 43–44 (PDF pages 121–122). This audit rechecks the PDF hash and source transcriptions; it does not claim a new visual review."
+  },
+  "fixture": {
+    "path": "tools/reports/facts-sample.json",
+    "sha256": "206638e12e5390ea8d41f8140d23f61efcee673dfa5aebd65e2dc95c937df5f8",
+    "caseId": "caseP1_010_split_only",
+    "selectedYear": 2018,
+    "label": "caseP1_010_split_only 1970-7-3 11:20 男 上海 selectedYear=2018",
+    "natalDayGan": "甲",
+    "liunianGan": "戊",
+    "effectiveDayun": {
+      "scope": {"layer": "大运", "year": 2018},
+      "value": "丁亥"
+    },
+    "natalPillars": {
+      "year": {"gan": "庚", "zhi": "戌"},
+      "month": {"gan": "壬", "zhi": "午"},
+      "day": {"gan": "甲", "zhi": "申"},
+      "time": {"gan": "庚", "zhi": "午"}
+    },
+    "sourceBranchProjection": {
+      "entry": "满足",
+      "natalGengshenBranch": "不满足",
+      "namedGuiWuBranch": "不满足",
+      "dayunPureSuppression": "undetermined",
+      "localL1082Tier": "信息不足",
+      "full010Effect": "信息不足"
+    },
+    "fixtureMeaning": "A cross-pillar natal 庚 and 申 do not satisfy the explicit natal 庚申 branch. The known selected-year Dayun data do not prove or disprove the separate qualitative pure-suppression branch."
+  },
+  "sourceSearchInventory": [
+    "L1081–1087: full local 太岁 example, rescue branches, later adverse clause, and explicit exception.",
+    "L9697–9698: same-book day/year conflict commentary, dead-wood/dead-earth example, strength/useful-god modifiers, and Yang Blade warning.",
+    "L687–691 and L738–745: general wood nature and active/dead descriptions.",
+    "L3084–3090, L9161–9169, L9181–9182, L9363–9364, L9431: general Seven Killings / control material reviewed for a potentially reusable threshold."
+  ],
+  "futureAdoptionRequirements": [
+    "A source-anchored complete input domain for the selected effective Dayun and natal 甲 / selected 戊 relation.",
+    "A source-anchored positive criterion and an exhaustive negative criterion; lack of a listed marker is not enough to rule the branch out.",
+    "Explicit treatment of interference, competing controls, and the later L1086–1087 and L9697–9698 modifiers and their precedence.",
+    "At least one source-supported positive, one source-supported negative, and missing/conflicting-input unknown example."
+  ],
+  "boundary": "This local branch remains undetermined for the current candidate model. The full SANMINGTONGH-010 effect remains 信息不足; no rule, manifest, or Product FactKey is adopted by this audit."
+}
