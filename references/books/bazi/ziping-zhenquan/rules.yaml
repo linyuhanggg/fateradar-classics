@@ -167,6 +167,54 @@ rules:
   verified: false
   verified_by: null
   verified_at: null
+- rule_id: ZPR-P1-02
+  kind: doctrine
+  statement: 甲日生辰月，本命另见申、子两支时，具备申子辰会支取水印的结构入口；须再核成局、冲破与并用，不直接判印格已成。
+  anchor:
+    file: sources/fulltext/bazi/ziping-zhenquan/fulltext.md
+    start_line: 542
+    end_line: 548
+  quote: 何謂會支？如甲生辰月，逢申與子會局，則用水印是也。
+  applicable_to:
+    all_of:
+    - key: rizhu
+      value: 甲
+      scope: {layer: 本命, pillar: day}
+    - key: yueling
+      value: 辰
+      scope: {layer: 本命, pillar: month}
+    - key: zhi
+      value: 辰
+      scope: {layer: 本命, pillar: month}
+    - any_of:
+      - key: zhi
+        value: 申
+        scope: {layer: 本命, pillar: year}
+      - key: zhi
+        value: 申
+        scope: {layer: 本命, pillar: day}
+      - key: zhi
+        value: 申
+        scope: {layer: 本命, pillar: time}
+    - any_of:
+      - key: zhi
+        value: 子
+        scope: {layer: 本命, pillar: year}
+      - key: zhi
+        value: 子
+        scope: {layer: 本命, pillar: day}
+      - key: zhi
+        value: 子
+        scope: {layer: 本命, pillar: time}
+  caveats:
+  - 本条只判本命申子辰三支齐备的会支核验入口；支齐不单独证明成局、化水、格局清浊或现实结果。
+  - 月令辰须在本命月支，申、子须在本命其他柱；不可借大运、流年、流月或流日凑局。
+  - 依原文“一透则一用，兼透则兼用，透而又会则透与会并用”，本条不得排除同盘的戊、癸、乙透干入口。
+  - 影印核对见 NLC416-11jh010455-35296.pdf 第41页（印本32页）；会支之后的有情无情与冲破条件未由本谓词判定。
+  school: 子平真诠月令杂气取用
+  verified: false
+  verified_by: null
+  verified_at: null
 - rule_id: ZPR-07
   kind: doctrine
   statement: 财官印食虽为四吉神，但遇冲克混杂、护卫不当，也能破格。
