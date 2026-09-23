@@ -61,9 +61,19 @@
   "adjudicationGates": [
     {
       "id": "gengshen_effect_sufficiency",
+      "status": "resolved_for_explicit_local_branch_only",
       "isolatingFixture": "caseP1_010_same_only@2018",
-      "question": "原局同柱庚申在 L1082 中是有救的充分条件，还是仍须证明制甲纯粹到不能克戊？",
-      "missing": "同语境、含完整原局与当年有效运的庚申有救及受干扰不救判例，或同书明确的作用阈值。",
+      "question": "原局同柱庚申是否为 L1082 明写的独立文字支路？",
+      "resolution": "是。原字以“或”分列本命四柱庚申和大运纯制伏两路；HY1521 与 SK1610 的断句互证。完整无冲突四柱见同柱庚申，足以满足这个局部文字支路；这不定全章有效制伏或最终吉凶。",
+      "remainingBoundary": "缺本命庚申时，整体有救仍因另一大运支路未裁而为 undetermined。",
+      "sourcePages": [121]
+    },
+    {
+      "id": "dayun_pure_suppression_threshold",
+      "status": "blocked_source_threshold",
+      "isolatingFixture": "caseP1_010_split_only@2018",
+      "question": "不满足本命同柱庚申支路时，哪些有来源支持的所选年大运输入足以证明或排除‘将甲木制伏纯粹不能克戊土’？",
+      "missing": "明确的来源条件、冲突／干扰政策及同语境有效、无效和缺项样例；不得以庚辛字样或五行计数自造阈值。若原文没有可执行阈值，该支路应保留 undetermined。",
       "sourcePages": [121]
     },
     {
@@ -90,11 +100,11 @@
   ],
   "sourceDecisionsNeeded": [
     {
-      "id": "suppression_scope",
+      "id": "dayun_pure_suppression",
       "minimumNextDecision": true,
-      "isolatingFixture": "caseP1_010_same_only@2018",
-      "question": "L1082 的四柱庚申是否自身充分，还是仍须独立证明甲木已被纯粹制伏到不能克戊？庚辛、金局与火局如何分别定有效性？",
-      "blockedBy": [1082, 1086, 3087]
+      "isolatingFixture": "caseP1_010_split_only@2018",
+      "question": "对无本命同柱庚申的甲日戊年盘，L1082 大运‘制伏纯粹不能克戊’支路有哪些来源支持的输入和充分条件？什么条件能排除该支路？若原文未定义可执行阈值，是否应固定为 undetermined？",
+      "blockedBy": [1082]
     },
     {
       "id": "affinity_precedence",
@@ -114,7 +124,8 @@
   ],
   "fixture": {
     "path": "tools/reports/facts-sample.json",
-    "sha256": "3f9e7b62c4d35cc4df2006cec7c994a2178d922a50377ab62c39e10d4c5b3dcc",
+    "sha256": "206638e12e5390ea8d41f8140d23f61efcee673dfa5aebd65e2dc95c937df5f8",
+    "baziCaseCount": 50,
     "entrySatisfied": ["both", "same_only", "split_only", "split_and_gui", "natal_gui_only", "luck_gui_only", "neither", "unknown_luck"],
     "entryNotApplicable": ["wrong_day", "wrong_year"],
     "fullEffectAdjudicatedPositive": [],

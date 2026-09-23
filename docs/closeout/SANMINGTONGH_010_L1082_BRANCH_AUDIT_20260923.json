@@ -1,0 +1,231 @@
+{
+  "schema": "fateradar-smth-010-l1082-branch-audit-v1",
+  "status": "local_source_branch_audit_only",
+  "sourceRuleId": "SANMINGTONGH-010",
+  "source": {
+    "path": "sources/fulltext/bazi/sanming-tonghui/fulltext.md",
+    "sha256": "ef01ff5ff538a2c64af7fda15b1393b4eeb9f75a311fe3dda7f39f0ecaa66298",
+    "clauses": [
+      {
+        "line": 1081,
+        "quote": "日犯嵗君如甲日尅戊年為偏財",
+        "role": "entry"
+      },
+      {
+        "line": 1082,
+        "quote": "四柱元有庚申金或大運中亦有将甲木制伏純粹不能尅戊土為有救",
+        "role": "two_alternative_rescue_branches"
+      },
+      {
+        "line": 1082,
+        "quote": "如大運并四柱中有一癸字與戊相合為有情",
+        "role": "local_gui_wu_branch"
+      },
+      {
+        "line": 1082,
+        "quote": "若二字俱全其年凶反為吉有一字者㐫半二字俱無㓙莫能觧",
+        "role": "conditional_ladder"
+      },
+      {
+        "line": 1086,
+        "quote": "柱中無庚辛巳酉丑金局制木丙丁火局焚木者太凶",
+        "role": "later_clause_not_resolved"
+      },
+      {
+        "line": 1087,
+        "quote": "若日干是天月徳太嵗是用神則無咎而反有獲",
+        "role": "later_exception_not_resolved"
+      },
+      {
+        "line": 1118,
+        "quote": "戊與癸何名為無情之合",
+        "role": "separate_ten_gan_naming_context"
+      }
+    ]
+  },
+  "editorialWitnesses": [
+    {
+      "path": "sources/normalized/shidianguji/HY1521/text.md",
+      "line": 4914,
+      "quote": "四柱元有庚申金，",
+      "supports": "the natal Geng-Shen branch ends before 或"
+    },
+    {
+      "path": "sources/normalized/shidianguji/HY1521/text.md",
+      "line": 4915,
+      "quote": "或大運中亦有將甲木制伏純粹，不能尅戊土，爲有",
+      "supports": "the explicit suppression threshold belongs to the Dayun alternative"
+    },
+    {
+      "path": "sources/normalized/shidianguji/SK1610/text.md",
+      "line": 5177,
+      "quote": "四柱元有庚申金，或大運中亦有将甲木制伏純粹，",
+      "supports": "the alternative construction and clause punctuation"
+    }
+  ],
+  "facsimile": {
+    "path": "sources/facsimile/other/sanming-tonghui/NLC416-13jh000156-94145.pdf",
+    "sha256": "c6eac6fca6411e45cb801f9b771aca6dd6a6d2dfb57ecc36ea5f42ecf1ac8bf9",
+    "pdfPagesVisuallyReviewed": [121, 122, 125],
+    "imprintPages": [43, 44, 47],
+    "reviewNote": "pp.121-122 show the 甲日戊年 and later conditions without modern punctuation; p.125 shows 戊癸无情之合 in the separate 十干合取象 section. The source reading follows the unpunctuated alternative grammar and is corroborated by two independently punctuated normalized witnesses."
+  },
+  "adjudicatedLocalReading": {
+    "entry": "本命日干甲且所选流年干戊；只读对应 scope.year，不借同盘其它流年。",
+    "natalGengshenBranch": "L1082 says 四柱元有庚申金 or the separate pure-suppression Dayun path. A complete natal same-pillar 庚申 satisfies this literal natal branch; the phrase 制伏纯粹不能尅戊土 modifies the Dayun branch and is not imported as a force threshold for the natal branch.",
+    "samePillar": "庚 and 申 must be the Gan and Zhi of the same natal pillar. Cross-pillar 庚/申 cannot be combined into 庚申.",
+    "localGuiWuBranch": "Within the selected 甲日戊年 example, exactly one visible 癸 stem across the complete natal four Gan and that year's effective Dayun Gan satisfies the named local clause. Zero visible 癸 disproves only this named branch. More than one visible 癸 is 信息不足 because the line's 一癸 scope and same-book pairing conflicts are not resolved.",
+    "dayunPureSuppression": "No executable threshold is adopted. Without a proven natal 庚申 branch, this alternative stays 信息不足 even when the selected Dayun is known; visible 庚/辛, hidden stems, or element counts do not prove or disprove 纯粹制伏.",
+    "laterConditions": "L1086, L1087, and L9697 remain outside this local step; no L1082 ladder output is promoted to a full SANMINGTONGH-010 or six-topic verdict."
+  },
+  "candidateOnlyOutputs": [
+    {
+      "name": "smth_010_l1082_natal_gengshen_branch",
+      "domain": ["满足", "不满足", "信息不足", "不适用"],
+      "scope": {"layer": "流年", "year": "selected"},
+      "policy": "The branch is evaluated only after entry is known. Both positive and negative require all four natal gan/zhi pairs to be complete and conflict-free."
+    },
+    {
+      "name": "smth_010_l1082_named_guiwu_branch",
+      "domain": ["满足", "不满足", "信息不足", "不适用"],
+      "scope": {"layer": "流年", "year": "selected"},
+      "policy": "Requires one selected-year liunian_gan=戊, all four natal gan values, and exactly one dayun_gan_zhi for that selected year. Counts visible natal Gan plus only the selected-year effective Dayun Gan."
+    },
+    {
+      "name": "smth_010_l1082_source_effect_tier",
+      "domain": ["凶反为吉", "凶半", "凶莫能解", "信息不足", "不适用"],
+      "scope": {"layer": "流年", "year": "selected"},
+      "policy": "Runs only the four-way local L1082 ladder when both source inputs are independently determinate. It is not the full chapter outcome and is not an exported Product FactKey."
+    }
+  ],
+  "inputFactContract": {
+    "requiredKeys": ["gan", "zhi", "natal_day_gan", "liunian_gan", "dayun_gan_zhi"],
+    "entryScope": {
+      "natalDay": {"layer": "本命", "pillar": "day"},
+      "selectedYearGan": {"layer": "流年", "year": "selected"}
+    },
+    "natalPillars": ["year", "month", "day", "time"],
+    "selectedDayunScope": {"layer": "大运", "year": "selected"},
+    "conflictPolicy": "Equal duplicates at the same key/scope collapse to one value. Distinct values at a required scope are a conflict and produce 信息不足. Missing or invalid required values produce 信息不足. Other years and unscoped lifetime Dayun entries cannot fill the selected-year scope.",
+    "multiGuiPolicy": "Exactly one visible 癸 satisfies the local named branch; zero disproves only that branch; two or more remain 信息不足.",
+    "crossPillarPolicy": "A natal gan=庚 in one pillar and zhi=申 in a different pillar do not satisfy the Geng-Shen branch.",
+    "notApplicablePolicy": "Known natal day Gan other than 甲 or known selected-year Gan other than 戊 makes this source example 不适用; an entry conflict or missing selected-year input is 信息不足."
+  },
+  "fixture": {
+    "path": "tools/reports/facts-sample.json",
+    "sha256": "206638e12e5390ea8d41f8140d23f61efcee673dfa5aebd65e2dc95c937df5f8",
+    "baziCaseCount": 50,
+    "010CaseIds": [
+      "caseP1_010_both",
+      "caseP1_010_same_only",
+      "caseP1_010_split_only",
+      "caseP1_010_split_and_gui",
+      "caseP1_010_natal_gui_only",
+      "caseP1_010_luck_gui_only",
+      "caseP1_010_neither",
+      "caseP1_010_wrong_day",
+      "caseP1_010_wrong_year",
+      "caseP1_010_unknown_luck"
+    ],
+    "inputProjectionSha256": "b86e3cd535090cba80eeebbc024356f58f7ed5dcca6f07ef26a9cc0eca48d934",
+    "fixtureNotes": "The 50-case v6 fixture adds seven non-010 Bazi cases relative to the prior 43-case fixture. The ten 010 cases and their consumed input projection are preserved."
+  },
+  "realChartProjection": {
+    "caseP1_010_both": {
+      "entry": "满足",
+      "natalGengshenBranch": "满足",
+      "namedGuiWuBranch": "满足",
+      "effectiveSuppressionInput": "proven",
+      "localAffinityInput": "proven",
+      "localL1082Tier": "凶反为吉",
+      "full010Effect": "信息不足"
+    },
+    "caseP1_010_same_only": {
+      "entry": "满足",
+      "natalGengshenBranch": "满足",
+      "namedGuiWuBranch": "不满足",
+      "effectiveSuppressionInput": "proven",
+      "localAffinityInput": "ruled_out",
+      "localL1082Tier": "凶半",
+      "full010Effect": "信息不足"
+    },
+    "caseP1_010_split_only": {
+      "entry": "满足",
+      "natalGengshenBranch": "不满足",
+      "namedGuiWuBranch": "不满足",
+      "effectiveSuppressionInput": "undetermined",
+      "localAffinityInput": "ruled_out",
+      "localL1082Tier": "信息不足",
+      "full010Effect": "信息不足"
+    },
+    "caseP1_010_split_and_gui": {
+      "entry": "满足",
+      "natalGengshenBranch": "不满足",
+      "namedGuiWuBranch": "满足",
+      "effectiveSuppressionInput": "undetermined",
+      "localAffinityInput": "proven",
+      "localL1082Tier": "信息不足",
+      "full010Effect": "信息不足"
+    },
+    "caseP1_010_natal_gui_only": {
+      "entry": "满足",
+      "natalGengshenBranch": "不满足",
+      "namedGuiWuBranch": "满足",
+      "effectiveSuppressionInput": "undetermined",
+      "localAffinityInput": "proven",
+      "localL1082Tier": "信息不足",
+      "full010Effect": "信息不足"
+    },
+    "caseP1_010_luck_gui_only": {
+      "entry": "满足",
+      "natalGengshenBranch": "不满足",
+      "namedGuiWuBranch": "满足",
+      "effectiveSuppressionInput": "undetermined",
+      "localAffinityInput": "proven",
+      "localL1082Tier": "信息不足",
+      "full010Effect": "信息不足"
+    },
+    "caseP1_010_neither": {
+      "entry": "满足",
+      "natalGengshenBranch": "不满足",
+      "namedGuiWuBranch": "不满足",
+      "effectiveSuppressionInput": "undetermined",
+      "localAffinityInput": "ruled_out",
+      "localL1082Tier": "信息不足",
+      "full010Effect": "信息不足"
+    },
+    "caseP1_010_unknown_luck": {
+      "entry": "满足",
+      "natalGengshenBranch": "不满足",
+      "namedGuiWuBranch": "信息不足",
+      "effectiveSuppressionInput": "undetermined",
+      "localAffinityInput": "undetermined",
+      "localL1082Tier": "信息不足",
+      "full010Effect": "信息不足"
+    },
+    "caseP1_010_wrong_day": {
+      "entry": "不适用",
+      "natalGengshenBranch": "不适用",
+      "namedGuiWuBranch": "不适用",
+      "effectiveSuppressionInput": "不适用",
+      "localAffinityInput": "不适用",
+      "localL1082Tier": "不适用",
+      "full010Effect": "不适用"
+    },
+    "caseP1_010_wrong_year": {
+      "entry": "不适用",
+      "natalGengshenBranch": "不适用",
+      "namedGuiWuBranch": "不适用",
+      "effectiveSuppressionInput": "不适用",
+      "localAffinityInput": "不适用",
+      "localL1082Tier": "不适用",
+      "full010Effect": "不适用"
+    }
+  },
+  "notPromoted": [
+    "No FactKey is added to shared vocabularies, no shared manifest or rule export changes, and no rescue_condition or transit_effect_semantics is emitted.",
+    "The true/false/unknown projections are for named L1082 source branches only. They are not complete 010 fortune labels or empirical event validation.",
+    "The pure-suppression Dayun branch, L1086 later criteria, L1087 exception, and L9697 precedence still block the full SANMINGTONGH-010 contract.",
+    "SANMINGTONGH-010 remains applicable_to=[] and verified=false."
+  ]
+}

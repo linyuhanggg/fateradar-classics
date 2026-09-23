@@ -18,7 +18,7 @@ HASHES = {
     HY: "707ac9bc6796bdb679833fc280040485d95b36da6f7aca0b3e2adbb9e57d19d3",
     SK: "4f705b654672fe6d8106353401541634de9d3db6e300271bfab7ca7e427f24dd",
     PDF: "c6eac6fca6411e45cb801f9b771aca6dd6a6d2dfb57ecc36ea5f42ecf1ac8bf9",
-    FIXTURE: "3f9e7b62c4d35cc4df2006cec7c994a2178d922a50377ab62c39e10d4c5b3dcc",
+    FIXTURE: "206638e12e5390ea8d41f8140d23f61efcee673dfa5aebd65e2dc95c937df5f8",
 }
 PILLARS = ("year", "month", "day", "time")
 
@@ -35,19 +35,15 @@ def scoped_value(facts: list[dict], key: str, scope: dict) -> tuple[str | None, 
 
 def named_natal_gengshen(facts: list[dict]) -> str:
     """Three states for one literal natal witness, never for effective 有救."""
-    incomplete = False
+    pairs: list[tuple[str, str]] = []
     for pillar in PILLARS:
         scope = {"layer": "本命", "pillar": pillar}
         gan, gan_conflict = scoped_value(facts, "gan", scope)
         zhi, zhi_conflict = scoped_value(facts, "zhi", scope)
-        if gan_conflict or zhi_conflict:
-            incomplete = True
-            continue
-        if gan == "庚" and zhi == "申":
-            return "present"
-        if gan is None or zhi is None:
-            incomplete = True
-    return "undetermined" if incomplete else "absent"
+        if gan_conflict or zhi_conflict or gan is None or zhi is None:
+            return "undetermined"
+        pairs.append((gan, zhi))
+    return "present" if ("庚", "申") in pairs else "absent"
 
 
 def main() -> None:

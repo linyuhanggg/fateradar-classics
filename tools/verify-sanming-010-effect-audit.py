@@ -64,23 +64,34 @@ def main() -> None:
         "fullEffectThreshold", "fullEffectPriority", "negativeExhaustionPolicy"
     ))
     assert [item["id"] for item in audit["adjudicationGates"]] == [
-        "gengshen_effect_sufficiency", "guiwu_effect_sufficiency",
+        "gengshen_effect_sufficiency", "dayun_pure_suppression_threshold",
+        "guiwu_effect_sufficiency",
         "later_rescue_boolean_and_exhaustion", "exception_precedence",
     ]
+    gengshen_gate = audit["adjudicationGates"][0]
+    assert gengshen_gate["status"] == "resolved_for_explicit_local_branch_only"
+    assert "不定全章" in gengshen_gate["resolution"]
+    dayun_gate = audit["adjudicationGates"][1]
+    assert dayun_gate["status"] == "blocked_source_threshold"
+    assert dayun_gate["isolatingFixture"] == "caseP1_010_split_only@2018"
     assert len(audit["sourceDecisionsNeeded"]) == 4
     minimum = [item for item in audit["sourceDecisionsNeeded"] if item.get("minimumNextDecision")]
-    assert len(minimum) == 1 and minimum[0]["id"] == "suppression_scope"
-    assert minimum[0]["isolatingFixture"] == "caseP1_010_same_only@2018"
+    assert len(minimum) == 1 and minimum[0]["id"] == "dayun_pure_suppression"
+    assert minimum[0]["isolatingFixture"] == "caseP1_010_split_only@2018"
 
     fixture = audit["fixture"]
     fixture_bytes = (ROOT / fixture["path"]).read_bytes()
     assert hashlib.sha256(fixture_bytes).hexdigest() == fixture["sha256"]
     cases = json.loads(fixture_bytes)["bazi"]
+    assert len(cases) == fixture["baziCaseCount"] == 50
     effect = load_module("smth_010_conditional", ROOT / "tools/verify-sanming-010-conditional-effect.py")
     structure = load_module("smth_010_post_anchor", ROOT / "tools/audit-smth-010-post-anchor.py")
     entry = fixture["entrySatisfied"]
     outside = fixture["entryNotApplicable"]
     assert len(entry) == 8 and len(outside) == 2 and len(set(entry + outside)) == 10
+    assert {case_id for case_id in cases if case_id.startswith("caseP1_010_")} == {
+        f"caseP1_010_{suffix}" for suffix in entry + outside
+    }
     assert fixture["fullEffectUnknown"] == entry
     assert fixture["fullEffectAdjudicatedPositive"] == fixture["fullEffectAdjudicatedNegative"] == []
     for suffix in entry + outside:
