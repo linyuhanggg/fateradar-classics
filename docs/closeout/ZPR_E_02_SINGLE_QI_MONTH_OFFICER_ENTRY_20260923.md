@@ -1,6 +1,6 @@
 # ZPR-E-02：单气月支的正官原始入口候选
 
-**裁决**：43 个共享真实日期盘足以构成一个**原始月令入口**的正／反／未知三态，而不足以裁成“正官格已定”“顺用喜忌已生效”或完整 ZPR-E-02。候选机器合同见[同名 JSON](./ZPR_E_02_SINGLE_QI_MONTH_OFFICER_ENTRY_20260923.json)；运行 `python3 tools/verify-zpr-e-02-single-qi-month-entry.py`。这是独立候选，`candidate_not_registered_do_not_emit`，不改变正式 manifest、`references/executable`、共享 fixture 或 Product 输出。既有[正官完整作用门槛](./ZPR_E_02_ZHENGGUAN_CELL_GATE_20260923.md)继续有效。
+**裁决**：43 个共享真实日期盘足以构成一个**原始月令入口**的正／反／未知三态，而不足以裁成“正官格已定”“顺用喜忌已生效”或完整 ZPR-E-02。候选机器合同见[同名 JSON](./ZPR_E_02_SINGLE_QI_MONTH_OFFICER_ENTRY_20260923.json)；运行 `python3 tools/verify-zpr-e-02-single-qi-month-entry.py`。本文保留候选阶段的原始裁决记录；窄入口后来经[正式化门槛](./ZPR_E_02_SINGLE_QI_FORMALIZATION_GATE_20260923.md)进入 V5 来源交接。`references/executable` 中 ZPR-E-02 本体未变，[正官完整作用门槛](./ZPR_E_02_ZHENGGUAN_CELL_GATE_20260923.md)继续有效。
 
 ## 原文把哪两层分开
 

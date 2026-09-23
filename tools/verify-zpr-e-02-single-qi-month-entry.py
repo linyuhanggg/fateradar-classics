@@ -15,7 +15,7 @@ CONTRACT = ROOT / "docs/closeout/ZPR_E_02_SINGLE_QI_MONTH_OFFICER_ENTRY_20260923
 SOURCE = ROOT / "sources/fulltext/bazi/ziping-zhenquan/fulltext.md"
 FIXTURE = ROOT / "tools/reports/facts-sample.json"
 EXECUTABLE = ROOT / "references/executable/ziping-zhenquan.json"
-FIXTURE_SHA = "6915a56e7fef202a5c3f145106e0205b2ae1590ad2348d7f5d7ade6dd04518fb"
+FIXTURE_SHA = "3f9e7b62c4d35cc4df2006cec7c994a2178d922a50377ab62c39e10d4c5b3dcc"
 SOURCE_CUES = {
     146: "甲以庚爲煞，以辛爲官",
     147: "庚官而辛煞",
@@ -126,7 +126,7 @@ def main() -> None:
         "status": "PASS", "claim": contract["claim"], "sourceCues": len(SOURCE_CUES),
         "fixtureSha256": FIXTURE_SHA, "realDateCharts": len(charts), "cases": results,
         "allChartStates": {state: len(cases) for state, cases in all_states.items()},
-        "negativeMeaning": "this_single_qi_entry_only", "formalFactRegistered": False,
+        "negativeMeaning": "this_single_qi_entry_only", "historicalCandidateRecord": True,
         "zprE02FullEffectDelivered": False,
     }, ensure_ascii=False, sort_keys=True))
 

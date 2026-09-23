@@ -1,0 +1,35 @@
+{
+  "id": "ZPR-E-02-single-qi-officer-formalization-gate",
+  "status": "source_registered_v5_handoff_product_import_pending",
+  "claim": "单气月支正官原始入口，不是正官主格、顺用作用或救应",
+  "sourceRuleId": "ZPR-P1-04",
+  "sourceLines": [146, 147, 149, 328, 340, 342, 419, 421, 468, 470, 883],
+  "derivedStructuralFact": {
+    "key": "natal_month_single_qi_hidden_stem",
+    "scope": {"layer": "本命", "pillar": "month"},
+    "valueByBranch": {"子": "癸", "卯": "乙", "酉": "辛"},
+    "cardinality": "at_most_one_distinct_value_at_exact_scope",
+    "emitWhen": "本命月支 zhi 与月令 yueling 均唯一且相等；支为子、卯、酉；本命月柱 canggan 由完整排盘产出且不同值集合恰好等于对应支唯一标准藏干",
+    "omitWhen": "任一输入缺失、未知、冲突，月令与月支不一致，月支非受支持单气支，或月藏集合不等于该支唯一标准藏干",
+    "logicalInputFacts": [
+      {"key": "zhi", "scope": {"layer": "本命", "pillar": "month"}},
+      {"key": "yueling", "scope": {"layer": "本命", "pillar": "month"}},
+      {"key": "canggan", "scope": {"layer": "本命", "pillar": "month"}}
+    ],
+    "producerDerivedFrom": ["ganzhi.month", "rows.藏干"],
+    "semanticBoundary": "仅编码完整单气月支的实际唯一藏干，不含日干、十神、格局、顺逆或吉凶"
+  },
+  "regularOfficerStemByDay": {
+    "甲": "辛", "乙": "庚", "丙": "癸", "丁": "壬", "戊": "乙",
+    "己": "甲", "庚": "丁", "辛": "丙", "壬": "己", "癸": "戊"
+  },
+  "registeredPredicate": "十个 any_of 分支，每支为 gan@本命/day=日干 AND natal_month_single_qi_hidden_stem@本命/month=该日干正官干。键缺失则信息不足；已知唯一藏干但配对不符只否定本窄入口。",
+  "registration": {
+    "sourceRev": "b5fdef36dff2b9c3d82d97ac38a6fb26f0f83df5",
+    "manifestVersion": "fateradar-p1-bazi-topic-handoff-v5",
+    "manifestPath": "docs/closeout/P1_BAZI_TOPIC_MANIFEST_20260923_V5.json",
+    "fixtureSha256": "3f9e7b62c4d35cc4df2006cec7c994a2178d922a50377ab62c39e10d4c5b3dcc",
+    "productImport": "pending",
+    "fullZprE02Effect": "not_delivered"
+  }
+}
