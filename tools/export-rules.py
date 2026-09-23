@@ -220,6 +220,39 @@ def candidate_sources_of(rule: dict) -> list[dict] | None:
     return out
 
 
+def source_entry_outputs_of(rule: dict) -> list[dict] | None:
+    """Preserve source-named month entries without pretending they are directions.
+
+    One rule may name several coexisting entries.  This metadata is emitted
+    only on a satisfied evaluation and is never fed back into applicable_to.
+    """
+    raw = rule.get("source_entry_outputs")
+    if raw is None:
+        return None
+    if not isinstance(raw, list) or not raw or len(raw) > 3:
+        raise ValueError(f"{rule.get('rule_id')}: source_entry_outputs must contain 1-3 entries")
+    expected = {"entryId", "sourceStem", "localRank", "sourceLine", "scope", "emitOn"}
+    result = []
+    seen = set()
+    for entry in raw:
+        if not isinstance(entry, dict) or set(entry) not in (expected | {"tenGod"}, expected | {"tenGodPolicy"}):
+            raise ValueError(f"{rule.get('rule_id')}: malformed source entry output")
+        if (not isinstance(entry["entryId"], str) or not entry["entryId"]
+                or entry["entryId"] in seen or entry["sourceStem"] not in set("甲乙丙丁戊己庚辛壬癸")
+                or entry["localRank"] not in {"主", "兼"}
+                or not isinstance(entry["sourceLine"], int) or entry["sourceLine"] <= 0
+                or entry["scope"] != {"layer": "本命", "pillar": "month"}
+                or entry["emitOn"] != "满足"):
+            raise ValueError(f"{rule.get('rule_id')}: invalid source entry output")
+        if "tenGod" in entry and (not isinstance(entry["tenGod"], str) or not entry["tenGod"]):
+            raise ValueError(f"{rule.get('rule_id')}: invalid fixed tenGod")
+        if "tenGodPolicy" in entry and entry["tenGodPolicy"] != "derive_from_natal_day_gan":
+            raise ValueError(f"{rule.get('rule_id')}: invalid tenGodPolicy")
+        seen.add(entry["entryId"])
+        result.append(dict(entry))
+    return result
+
+
 def convert(rule: dict, *, art: str, title: str, slug_path: str) -> dict:
     anchor = rule["anchor"]
     item = {
@@ -245,6 +278,9 @@ def convert(rule: dict, *, art: str, title: str, slug_path: str) -> dict:
         item["candidateSources"] = candidate_sources_of(rule)
     elif rule.get("candidate_sources") is not None:
         raise ValueError(f"{rule.get('rule_id')}: candidate_sources without candidate_output")
+    source_entry_outputs = source_entry_outputs_of(rule)
+    if source_entry_outputs is not None:
+        item["sourceEntryOutputs"] = source_entry_outputs
     return item
 
 

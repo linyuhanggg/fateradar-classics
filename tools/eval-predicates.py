@@ -108,7 +108,10 @@ def fact_scope_matches(fact: dict, pred: dict) -> bool:
 
 # 完整四柱每柱必有天干、地支、至少一枚藏干；其他键（如神煞）
 # 是稀疏标签，某柱未出现可以是明确不满足，不能一律当缺输入。
-COMPLETE_PILLAR_FACT_KEYS = {"gan", "zhi", "canggan", "natal_month_single_qi_hidden_stem"}
+COMPLETE_PILLAR_FACT_KEYS = {
+    "gan", "zhi", "canggan", "natal_month_single_qi_hidden_stem",
+    "natal_yin_hidden_exposure_pattern", "natal_yin_simple_hidden_exposure_pattern",
+}
 
 # One value is expected for each exact scope. A duplicate value is harmless;
 # contradictory values, including a known value beside an explicit unknown,
@@ -118,6 +121,7 @@ SINGLE_VALUE_BAZI_FACT_KEYS = {
     "rizhu", "natal_day_gan", "yueling", "gender", "spouse_palace_zhi",
     "gan", "zhi", "gan_element", "nayin", "rizhu_strength", "geju",
     "natal_month_single_qi_hidden_stem",
+    "natal_yin_hidden_exposure_pattern", "natal_yin_simple_hidden_exposure_pattern",
     "tiaohou_profile_status", "dayun_direction", "dayun_gan_zhi",
     "liunian_gan", "liunian_zhi", "liunian_gan_zhi",
     "dayun_liunian_relation_class", "suiyun_binglin", "suiyun_same_zhi",

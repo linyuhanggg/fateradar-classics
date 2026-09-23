@@ -320,6 +320,42 @@ rules:
   verified: false
   verified_by: null
   verified_at: null
+- rule_id: ZPR-P1-06
+  kind: doctrine
+  statement: 辛日寅月，寅藏甲丙戊完整，甲与丙并透而戊未透、又未见寅午戌全会的清楚形态中，原文以正财为局部主入口、正官为兼入口；不据此裁整盘成败、纯杂或实际财官相生作用。
+  anchor:
+    file: sources/fulltext/bazi/ziping-zhenquan/fulltext.md
+    start_line: 435
+    end_line: 435
+  quote: 如辛生寅月，透丙化官，而又透甲，格成正財，正官乃其兼格也；
+  applicable_to:
+    all_of:
+    - {key: gan, value: 辛, scope: {layer: 本命, pillar: day}}
+    - {key: natal_yin_simple_hidden_exposure_pattern, value: 甲丙, scope: {layer: 本命, pillar: month}}
+  source_entry_outputs:
+  - entryId: ZPR-E-02:month-寅:hidden-甲:辛日正财
+    sourceStem: 甲
+    tenGod: 正财
+    localRank: 主
+    sourceLine: 435
+    scope: {layer: 本命, pillar: month}
+    emitOn: 满足
+  - entryId: ZPR-E-02:month-寅:hidden-丙:辛日正官
+    sourceStem: 丙
+    tenGod: 正官
+    localRank: 兼
+    sourceLine: 435
+    scope: {layer: 本命, pillar: month}
+    emitOn: 满足
+  caveats:
+  - 本条是 L435 辛日例型的局部主兼入口；L452 所说甲丙并透财官相生、两相得、纯，不能由此直接投射为任一真实日期盘的整盘成格或实际作用满足。
+  - natal_yin_simple_hidden_exposure_pattern 是独立结构键，只在完整寅月月藏甲丙戊、逐柱干支完整、月令与月支一致、月藏透干不超过两枚且未见寅午戌全会时发。三透、全会、缺值或冲突时缺键为信息不足，不能判成本例型的反证。
+  - 不满足只否定这个辛日寅月甲丙清楚例型；己日甲丙兼透、丙戊兼透和其它主兼形态须另行裁决。
+  - 本条不升级 ZPR-E-02 的 satisfy_when、rescue、verified，不向六主题输出成败、喜忌、吉凶或流年作用。
+  school: 子平真诠寅月主兼入口
+  verified: false
+  verified_by: null
+  verified_at: null
 - rule_id: ZPR-07
   kind: doctrine
   statement: 财官印食虽为四吉神，但遇冲克混杂、护卫不当，也能破格。
