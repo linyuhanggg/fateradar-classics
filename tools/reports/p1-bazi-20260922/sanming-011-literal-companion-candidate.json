@@ -1,0 +1,69 @@
+{
+  "schema": "fateradar-bazi-sourcing-companion-candidate-v1",
+  "status": "candidate_only",
+  "sourceRuleId": "SANMINGTONGH-011",
+  "baseHandoff": {
+    "path": "docs/closeout/P1_BAZI_TOPIC_MANIFEST_20260921.json",
+    "sha256": "dd2293b4bee38edf4aea3020769c2f4be8f09419b94135abd7d7ca12e20a5e7c",
+    "ruleCount": 11,
+    "unchanged": true
+  },
+  "rule": {
+    "ruleId": "SANMINGTONGH-P1-011A",
+    "art": "bazi",
+    "book": "bazi/sanming-tonghui",
+    "kind": "doctrine",
+    "primaryTopic": "overview",
+    "secondaryTopics": [],
+    "role": "structural",
+    "status": "candidate_only",
+    "statement": "《论太岁》明列甲子流年又逢甲子大运，称这一组合为岁运并临；本条只标这个字面例的形态。",
+    "quote": "又如甲子流年又是甲子運謂之嵗運并臨",
+    "anchor": {
+      "file": "sources/fulltext/bazi/sanming-tonghui/fulltext.md",
+      "startLine": 1084,
+      "endLine": 1084
+    },
+    "applicableTo": {
+      "all_of": [
+        {
+          "key": "liunian_gan_zhi",
+          "value": "甲子",
+          "scope": {"layer": "流年"}
+        },
+        {
+          "key": "suiyun_binglin",
+          "value": "是",
+          "scope": {"layer": "流年"}
+        }
+      ]
+    },
+    "requiredFacts": [
+      {"key": "liunian_gan_zhi", "scope": {"layer": "流年", "year": "selected"}},
+      {"key": "suiyun_binglin", "scope": {"layer": "流年", "year": "selected"}}
+    ],
+    "factSlicePolicy": "只传选定流年 year 的流年事实；suiyun_binglin 已比较同年有效大运与流年完整干支。不得把其他年份、未选定的大运事实混入求值。",
+    "applicableLayers": ["流年"],
+    "unsupportedLayers": ["本命", "大运", "流月", "流日"],
+    "caveats": [
+      "只限原文甲子流年／甲子运例；不把任意两柱同干支都标为本条已获原文例证。",
+      "只判字面来源形态，不执行 SANMINGTONGH-011 后半句的羊刃七煞／财官印绶分类，也不下吉凶、事件或主题作用结论。",
+      "L1084 随后改谈甲子日逢甲子太岁的日年相并；本条不得拿本命日柱替代有效大运。",
+      "同书《消息赋》徐注 L8893 的庚午运／戊午岁为同支异干形态，不属于本条。",
+      "缺有效大运时 suiyun_binglin=信息不足；即使流年甲子明确，也必须返回信息不足。"
+    ],
+    "verified": false
+  },
+  "scope": {"layer": "流年", "year": "selected"},
+  "fixture": {
+    "path": "tools/reports/p1-bazi-20260922/sanming-011-literal-chart-fixture.json",
+    "sha256": "2f6da6abc82eefbbb73a20c4311b4e93337f916119067561bab616a8279ebce1",
+    "producerRepo": "/Users/sync/code/cosmic-fortune-lab",
+    "producerRepoHead": "93c7245db2dbfa82e3a8ce69cc74ab318391b988",
+    "producerWorkingTree": "buildBazi 与 emit.ts 为本地未提交输入；以真盘 fixture 和可选 Product 重放校验，不宣称远端可复现。",
+    "satisfied": {"case": "literal_jiazi_positive", "year": 1984, "verdict": "满足"},
+    "notSatisfied": {"case": "literal_jiazi_wrong_luck", "year": 1984, "verdict": "不满足"},
+    "unknown": {"case": "literal_jiazi_no_active_luck", "year": 1984, "verdict": "信息不足"},
+    "wrongYear": {"case": "literal_jiazi_prior_year", "year": 1983, "verdict": "不满足"}
+  }
+}

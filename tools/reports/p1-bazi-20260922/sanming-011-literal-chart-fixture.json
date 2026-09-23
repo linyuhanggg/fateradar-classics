@@ -1,0 +1,246 @@
+{
+  "schema": "sanming-011-literal-chart-fixture-v1",
+  "producer": "cosmic buildBazi(..., selectedYear, undefined, {buildVertical:false})",
+  "cases": {
+    "literal_jiazi_positive": {
+      "birth": {
+        "year": 1933,
+        "month": 7,
+        "day": 10,
+        "hour": 13,
+        "minute": 20,
+        "gender": "女",
+        "province": "上海",
+        "city": "上海",
+        "district": "黄浦区",
+        "timeBasis": "clock"
+      },
+      "selectedYear": 1984,
+      "pillars": {
+        "year": "癸酉",
+        "month": "己未",
+        "day": "丁丑",
+        "time": "丁未"
+      },
+      "qiyun": "1943-02-16（11 岁顺行）",
+      "activeLuck": {
+        "ganzhi": "甲子",
+        "startYear": 1983,
+        "endYear": 1992
+      },
+      "facts": [
+        {
+          "key": "liunian_gan_zhi",
+          "value": "甲子",
+          "scope": {
+            "layer": "流年",
+            "year": 1984
+          },
+          "derivedFrom": [
+            "liunian"
+          ]
+        },
+        {
+          "key": "dayun_gan_zhi",
+          "value": "甲子",
+          "scope": {
+            "layer": "大运",
+            "year": 1984
+          },
+          "derivedFrom": [
+            "dayun.selected",
+            "liunian"
+          ]
+        },
+        {
+          "key": "suiyun_binglin",
+          "value": "是",
+          "scope": {
+            "layer": "流年",
+            "year": 1984
+          },
+          "derivedFrom": [
+            "dayun",
+            "liunian"
+          ]
+        }
+      ]
+    },
+    "literal_jiazi_wrong_luck": {
+      "birth": {
+        "year": 1960,
+        "month": 1,
+        "day": 1,
+        "hour": 13,
+        "minute": 20,
+        "gender": "男",
+        "province": "上海",
+        "city": "上海",
+        "district": "黄浦区",
+        "timeBasis": "clock"
+      },
+      "selectedYear": 1984,
+      "pillars": {
+        "year": "己亥",
+        "month": "丙子",
+        "day": "戊子",
+        "time": "己未"
+      },
+      "qiyun": "1968-02-15（9 岁逆行）",
+      "activeLuck": {
+        "ganzhi": "甲戌",
+        "startYear": 1978,
+        "endYear": 1987
+      },
+      "facts": [
+        {
+          "key": "liunian_gan_zhi",
+          "value": "甲子",
+          "scope": {
+            "layer": "流年",
+            "year": 1984
+          },
+          "derivedFrom": [
+            "liunian"
+          ]
+        },
+        {
+          "key": "dayun_gan_zhi",
+          "value": "甲戌",
+          "scope": {
+            "layer": "大运",
+            "year": 1984
+          },
+          "derivedFrom": [
+            "dayun.selected",
+            "liunian"
+          ]
+        },
+        {
+          "key": "suiyun_binglin",
+          "value": "否",
+          "scope": {
+            "layer": "流年",
+            "year": 1984
+          },
+          "derivedFrom": [
+            "dayun",
+            "liunian"
+          ]
+        }
+      ]
+    },
+    "literal_jiazi_no_active_luck": {
+      "birth": {
+        "year": 1984,
+        "month": 6,
+        "day": 10,
+        "hour": 13,
+        "minute": 20,
+        "gender": "男",
+        "province": "上海",
+        "city": "上海",
+        "district": "黄浦区",
+        "timeBasis": "clock"
+      },
+      "selectedYear": 1984,
+      "pillars": {
+        "year": "甲子",
+        "month": "庚午",
+        "day": "乙亥",
+        "time": "癸未"
+      },
+      "qiyun": "1993-05-06（10 岁顺行）",
+      "activeLuck": null,
+      "facts": [
+        {
+          "key": "liunian_gan_zhi",
+          "value": "甲子",
+          "scope": {
+            "layer": "流年",
+            "year": 1984
+          },
+          "derivedFrom": [
+            "liunian"
+          ]
+        },
+        {
+          "key": "suiyun_binglin",
+          "value": "信息不足",
+          "scope": {
+            "layer": "流年",
+            "year": 1984
+          },
+          "derivedFrom": [
+            "dayun",
+            "liunian"
+          ]
+        }
+      ]
+    },
+    "literal_jiazi_prior_year": {
+      "birth": {
+        "year": 1933,
+        "month": 7,
+        "day": 10,
+        "hour": 13,
+        "minute": 20,
+        "gender": "女",
+        "province": "上海",
+        "city": "上海",
+        "district": "黄浦区",
+        "timeBasis": "clock"
+      },
+      "selectedYear": 1983,
+      "pillars": {
+        "year": "癸酉",
+        "month": "己未",
+        "day": "丁丑",
+        "time": "丁未"
+      },
+      "qiyun": "1943-02-16（11 岁顺行）",
+      "activeLuck": {
+        "ganzhi": "甲子",
+        "startYear": 1983,
+        "endYear": 1992
+      },
+      "facts": [
+        {
+          "key": "liunian_gan_zhi",
+          "value": "癸亥",
+          "scope": {
+            "layer": "流年",
+            "year": 1983
+          },
+          "derivedFrom": [
+            "liunian"
+          ]
+        },
+        {
+          "key": "dayun_gan_zhi",
+          "value": "甲子",
+          "scope": {
+            "layer": "大运",
+            "year": 1983
+          },
+          "derivedFrom": [
+            "dayun.selected",
+            "liunian"
+          ]
+        },
+        {
+          "key": "suiyun_binglin",
+          "value": "否",
+          "scope": {
+            "layer": "流年",
+            "year": 1983
+          },
+          "derivedFrom": [
+            "dayun",
+            "liunian"
+          ]
+        }
+      ]
+    }
+  }
+}
