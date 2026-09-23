@@ -201,6 +201,28 @@ def main() -> int:
     sparse = {"all_of": [{"key": "shensha", "value": "羊刃", "scope": {"layer": "本命", "pillar": "year"}}]}
     check("  神煞是稀疏标签，另柱有值而年柱未见 → 不满足", M.evaluate(rule(sparse), [fact("shensha", "羊刃", layer="本命", pillar="time")])["verdict"], "不满足")
 
+    print("7b2. 同 scope 的单值事实冲突不能作满足见证")
+    entry = rule({"all_of": [
+        {"key": "gan", "value": "甲", "scope": {"layer": "本命", "pillar": "day"}},
+        {"key": "liunian_gan_zhi", "value": "戊戌", "scope": {"layer": "流年", "year": 2018}},
+    ]})
+    day_jia = fact("gan", "甲", layer="本命", pillar="day")
+    year_wuxu = fact("liunian_gan_zhi", "戊戌", layer="流年", year=2018)
+    check("  甲日戊戌年 → 满足", M.evaluate(entry, [day_jia, year_wuxu])["verdict"], "满足")
+    check("  同年另有丁酉 → 信息不足", M.evaluate(entry, [day_jia, year_wuxu, fact("liunian_gan_zhi", "丁酉", layer="流年", year=2018)])["verdict"], "信息不足")
+    check("  冲突点名流年干支", M.evaluate(entry, [day_jia, year_wuxu, fact("liunian_gan_zhi", "丁酉", layer="流年", year=2018)])["missing_fact_keys"], ["liunian_gan_zhi"])
+    check("  异年丁酉不冲突", M.evaluate(entry, [day_jia, year_wuxu, fact("liunian_gan_zhi", "丁酉", layer="流年", year=2017)])["verdict"], "满足")
+    jiazi = rule({"all_of": [
+        {"key": "liunian_gan_zhi", "value": "甲子", "scope": {"layer": "流年", "year": 1984}},
+        {"key": "suiyun_binglin", "value": "是", "scope": {"layer": "流年", "year": 1984}},
+    ]})
+    jiazi_year = fact("liunian_gan_zhi", "甲子", layer="流年", year=1984)
+    binglin_yes = fact("suiyun_binglin", "是", layer="流年", year=1984)
+    check("  并临同 scope 已知与未知并存 → 信息不足", M.evaluate(jiazi, [jiazi_year, binglin_yes, fact("suiyun_binglin", "信息不足", layer="流年", year=1984)])["verdict"], "信息不足")
+    check("  完全相同的重复记录仍满足", M.evaluate(jiazi, [jiazi_year, binglin_yes, dict(binglin_yes)])["verdict"], "满足")
+    shishen = rule([{"key": "shishen", "value": "正财", "scope": {"layer": "本命", "pillar": "year"}}])
+    check("  同柱多十神仍可满足", M.evaluate(shishen, [fact("shishen", "正财", layer="本命", pillar="year"), fact("shishen", "偏财", layer="本命", pillar="year")])["verdict"], "满足")
+
     print("7c. 六壬按 scope.ruleId 判定取传；同 key 别条在场不填本条缺项")
     selection = {"key": "liuren_selection_rule_status", "value": "adopted", "scope": {"layer": "本命", "ruleId": "DLD-E-04"}}
     inner = fact("liuren_selection_rule_status", "adopted", layer="本命", ruleId="DLD-E-06")

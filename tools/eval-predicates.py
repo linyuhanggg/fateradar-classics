@@ -110,11 +110,41 @@ def fact_scope_matches(fact: dict, pred: dict) -> bool:
 # 是稀疏标签，某柱未出现可以是明确不满足，不能一律当缺输入。
 COMPLETE_PILLAR_FACT_KEYS = {"gan", "zhi", "canggan"}
 
+# One value is expected for each exact scope. A duplicate value is harmless;
+# contradictory values, including a known value beside an explicit unknown,
+# cannot witness a rule. Labels such as shishen/canggan are intentionally
+# absent because they can have several values at one pillar.
+SINGLE_VALUE_BAZI_FACT_KEYS = {
+    "rizhu", "natal_day_gan", "yueling", "gender", "spouse_palace_zhi",
+    "gan", "zhi", "gan_element", "nayin", "rizhu_strength", "geju",
+    "tiaohou_profile_status", "dayun_direction", "dayun_gan_zhi",
+    "liunian_gan", "liunian_zhi", "liunian_gan_zhi",
+    "dayun_liunian_relation_class", "suiyun_binglin", "suiyun_same_zhi",
+    "rescue_condition", "liunian_activation", "yongshen_effective", "jishen_empowered",
+}
+
+
+def has_conflicting_single_value_facts(key: str, scoped: list[dict]) -> bool:
+    if key not in SINGLE_VALUE_BAZI_FACT_KEYS:
+        return False
+    values_by_scope: dict[tuple, set] = {}
+    for fact in scoped:
+        scope = fact.get("scope") or {}
+        exact_scope = tuple(scope.get(field) for field in ("layer", "year", "pillar", "palace", "gong", "yao", "ruleId"))
+        values = values_by_scope.setdefault(exact_scope, set())
+        values.add(fact.get("value"))
+        if len(values) > 1:
+            return True
+    return False
+
 
 def is_unknown_fact(fact: dict) -> bool:
     # Only these registered contracts use this value as missing input.
     # Do not reinterpret arbitrary open-vocabulary text as an unknown marker.
-    return fact.get("key") in {"suiyun_binglin", "suiyun_same_zhi", "dayun_liunian_relation_class"} and fact.get("value") == "信息不足"
+    return fact.get("key") in {
+        "suiyun_binglin", "suiyun_same_zhi", "dayun_liunian_relation_class",
+        "rescue_condition", "liunian_activation", "yongshen_effective", "jishen_empowered",
+    } and fact.get("value") == "信息不足"
 
 
 def referenced_keys(clause) -> set[str]:
@@ -152,6 +182,8 @@ def eval_predicate(pred: dict, facts: list[dict], present: set[str]) -> Clause:
     if key not in present:
         return Clause(UNKNOWN, [], {})
     scoped = [f for f in facts if f.get("key") == key and fact_scope_matches(f, pred)]
+    if has_conflicting_single_value_facts(key, scoped):
+        return Clause(UNKNOWN, [], {})
     if (pred.get("scope") or {}).get("pillar") and key in COMPLETE_PILLAR_FACT_KEYS and not scoped:
         # Another pillar carrying the same dense FactKey does not prove this
         # pillar was emitted. Missing input cannot prove a negative claim.
