@@ -271,6 +271,55 @@ rules:
   verified: false
   verified_by: null
   verified_at: null
+- rule_id: ZPR-P1-04
+  kind: doctrine
+  statement: 本命月令与月支一致、且子卯酉单气月支的完整唯一藏干为该日干正官干时，仅确认原始月令正官入口；不裁主格、兼格、顺用作用或救应。
+  anchor:
+    file: sources/fulltext/bazi/ziping-zhenquan/fulltext.md
+    start_line: 328
+    end_line: 328
+  quote: 八字用神，專求月令，以日干配月令地支，而生尅不同，格局分焉。
+  applicable_to:
+    any_of:
+    - all_of:
+      - {key: gan, value: 甲, scope: {layer: 本命, pillar: day}}
+      - {key: natal_month_single_qi_hidden_stem, value: 辛, scope: {layer: 本命, pillar: month}}
+    - all_of:
+      - {key: gan, value: 乙, scope: {layer: 本命, pillar: day}}
+      - {key: natal_month_single_qi_hidden_stem, value: 庚, scope: {layer: 本命, pillar: month}}
+    - all_of:
+      - {key: gan, value: 丙, scope: {layer: 本命, pillar: day}}
+      - {key: natal_month_single_qi_hidden_stem, value: 癸, scope: {layer: 本命, pillar: month}}
+    - all_of:
+      - {key: gan, value: 丁, scope: {layer: 本命, pillar: day}}
+      - {key: natal_month_single_qi_hidden_stem, value: 壬, scope: {layer: 本命, pillar: month}}
+    - all_of:
+      - {key: gan, value: 戊, scope: {layer: 本命, pillar: day}}
+      - {key: natal_month_single_qi_hidden_stem, value: 乙, scope: {layer: 本命, pillar: month}}
+    - all_of:
+      - {key: gan, value: 己, scope: {layer: 本命, pillar: day}}
+      - {key: natal_month_single_qi_hidden_stem, value: 甲, scope: {layer: 本命, pillar: month}}
+    - all_of:
+      - {key: gan, value: 庚, scope: {layer: 本命, pillar: day}}
+      - {key: natal_month_single_qi_hidden_stem, value: 丁, scope: {layer: 本命, pillar: month}}
+    - all_of:
+      - {key: gan, value: 辛, scope: {layer: 本命, pillar: day}}
+      - {key: natal_month_single_qi_hidden_stem, value: 丙, scope: {layer: 本命, pillar: month}}
+    - all_of:
+      - {key: gan, value: 壬, scope: {layer: 本命, pillar: day}}
+      - {key: natal_month_single_qi_hidden_stem, value: 己, scope: {layer: 本命, pillar: month}}
+    - all_of:
+      - {key: gan, value: 癸, scope: {layer: 本命, pillar: day}}
+      - {key: natal_month_single_qi_hidden_stem, value: 戊, scope: {layer: 本命, pillar: month}}
+  caveats:
+  - 本条只用 L328 月令配日干、L146–149 正官十干分类、L419–421 单气与多藏变化，以及 L468–470、L883 的甲酉／丙子例证，确认窄原始入口。多藏月（包括当前 fixture 的午）保持信息不足，不等于无官或无月令取用。
+  - natal_month_single_qi_hidden_stem 必须由完整本命月支、月令、月藏结构独立产生；原始 canggan 为多值事实，不得直接代替该单值结构键。此键缺失、冲突、上游输入不完整或月令不等月支，均为信息不足。
+  - 满足不代表正官主格、兼格取舍、顺用成效、财生／印护、伤官／煞混、刑冲破害及救应成立；ZPR-E-02 的 rescue=unimplemented、verified=false 维持。
+  - 不满足只否定此单气正官原始入口；不得据此推定其它月令入口、用神或 ZPR-E-02 整条不满足。
+  school: 子平真诠月令原始入口
+  verified: false
+  verified_by: null
+  verified_at: null
 - rule_id: ZPR-07
   kind: doctrine
   statement: 财官印食虽为四吉神，但遇冲克混杂、护卫不当，也能破格。

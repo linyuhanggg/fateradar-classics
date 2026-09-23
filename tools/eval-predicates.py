@@ -117,6 +117,7 @@ COMPLETE_PILLAR_FACT_KEYS = {"gan", "zhi", "canggan"}
 SINGLE_VALUE_BAZI_FACT_KEYS = {
     "rizhu", "natal_day_gan", "yueling", "gender", "spouse_palace_zhi",
     "gan", "zhi", "gan_element", "nayin", "rizhu_strength", "geju",
+    "natal_month_single_qi_hidden_stem",
     "tiaohou_profile_status", "dayun_direction", "dayun_gan_zhi",
     "liunian_gan", "liunian_zhi", "liunian_gan_zhi",
     "dayun_liunian_relation_class", "suiyun_binglin", "suiyun_same_zhi",
