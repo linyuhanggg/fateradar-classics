@@ -803,15 +803,17 @@ rules:
   verified_at: null
 - rule_id: DITIANSUICHA-051
   kind: doctrine
-  statement: 大运为方向、流年为发动；岁运与命局合参，看用神得力、忌神得权。
+  statement: 大运重地支而不废天干，太岁重天干而不废地支；须先权日主与原局轻重、辨喜忌，再合看岁运战冲和好。
   anchor:
     file: sources/fulltext/bazi/ditiansui-chanwei/fulltext.md
     start_line: 13400
-    end_line: 13400
+    end_line: 13405
   quote: 原注：日主譬如吾身，局中之神，譬之舟马引从之人，大运譬所到之地，故重地支，未尝无天干。
   applicable_to: []
   caveats:
   - 必须由 tool.bazi.paipan 起大运表
+  - 此锚点不含“用神得力、忌神得权”的三态判定；忌神得势另见何知章 L7365-L7374，跨章合参须另立合同
+  - 盖头截脚与原局制化、根气、冲战和日主旺衰须合参，不能由干支形态直接推吉凶
   school: null
   verified: false
   verified_by: null
