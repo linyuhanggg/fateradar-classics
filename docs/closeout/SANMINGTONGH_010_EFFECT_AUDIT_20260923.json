@@ -1,0 +1,82 @@
+{
+  "schema": "fateradar-smth-010-effect-audit-v1",
+  "ruleId": "SANMINGTONGH-010",
+  "status": "blocked_full_effect",
+  "source": {
+    "path": "sources/fulltext/bazi/sanming-tonghui/fulltext.md",
+    "sha256": "ef01ff5ff538a2c64af7fda15b1393b4eeb9f75a311fe3dda7f39f0ecaa66298",
+    "clauses": [
+      { "line": 1081, "quote": "日犯嵗君如甲日尅戊年為偏財", "role": "literal_entry" },
+      { "line": 1082, "quote": "四柱元有庚申金或大運中亦有将甲木制伏純粹不能尅戊土為有救", "role": "effective_suppression" },
+      { "line": 1082, "quote": "如大運并四柱中有一癸字與戊相合為有情", "role": "affinity" },
+      { "line": 1082, "quote": "若二字俱全其年凶反為吉有一字者㐫半二字俱無㓙莫能觧", "role": "conditional_ladder" },
+      { "line": 1086, "quote": "柱中無庚辛巳酉丑金局制木丙丁火局焚木者太凶", "role": "later_clause" },
+      { "line": 1087, "quote": "若日干是天月徳太嵗是用神則無咎而反有獲", "role": "later_exception" },
+      { "line": 1118, "quote": "戊與癸何名為無情之合", "role": "same_book_affinity_tension" },
+      { "line": 3087, "quote": "甲寅生人為身旺嵗月見庚申為煞旺柱中不透火制地支子辰㑹印成局則煞生印印生身", "role": "same_book_gengshen_countercontext" },
+      { "line": 8035, "quote": "有情乃合氣也", "role": "broader_affinity_definition" },
+      { "line": 9697, "quote": "日犯歳君以歳為用神者無咎", "role": "same_book_yongshen_exception" }
+    ]
+  },
+  "editorialWitnesses": [
+    { "path": "sources/normalized/shidianguji/HY1521/text.md", "line": 4914, "quote": "四柱元有庚申金，", "status": "punctuation_does_not_settle_effect_scope" },
+    { "path": "sources/normalized/shidianguji/SK1610/text.md", "line": 5177, "quote": "四柱元有庚申金，或大運中亦有将甲木制伏純粹，", "status": "punctuation_does_not_settle_effect_scope" },
+    { "path": "sources/normalized/shidianguji/HY1521/text.md", "line": 4961, "quote": "柱中無庚辛、巳酉丑金局制木", "status": "punctuation_does_not_settle_precedence" }
+  ],
+  "proposedTypedInterface": {
+    "status": "review_only_not_adopted",
+    "scope": { "layer": "流年", "year": "selected" },
+    "entry": ["满足", "不满足", "信息不足"],
+    "independentSourceInputs": {
+      "effectiveSuppression": ["proven", "ruled_out", "undetermined"],
+      "affinity": ["proven", "ruled_out", "undetermined"],
+      "laterClauseResolution": ["proven", "ruled_out", "undetermined"],
+      "dayDeAndYearYongshenException": ["proven", "ruled_out", "undetermined"]
+    },
+    "requestedProductKey": { "key": "rescue_condition", "values": ["成立", "不成立", "信息不足"] },
+    "emissionPolicyNow": "甲日戊岁入口满足的真实样盘只可给 rescue_condition=信息不足；入口不满足应标不适用，而不是 rescue_condition=不成立。",
+    "missingPolicy": "任一来源通道缺失、未裁决、资料冲突或未穷尽原局与所选年有效大运时保留 undetermined；未见某个具名线索不能推出 ruled_out。",
+    "conflictPolicy": "同一 scope 同一键出现相异确定值，先把该通道置为 undetermined，不以先后顺序挑值；本命、选定年流年和当年有效大运三种 scope 不得互相补缺。",
+    "provenancePolicy": "每个 proven/ruled_out 均须绑定原局四柱或所选年有效大运的事实见证、来源条款、解释口径与独立复核；不得由结构字样自动定值。",
+    "effectTierPolicy": "L1082 的两输入条件阶梯只是局部来源步骤；即使两项已定值，L1086–1087 及 L9697 的例外/次序未裁决前不得输出全章最终作用。"
+  },
+  "sourceDecisionsNeeded": [
+    {
+      "id": "suppression_scope",
+      "minimumNextDecision": true,
+      "isolatingFixture": "caseP1_010_same_only@2018",
+      "question": "L1082 的四柱庚申是否自身充分，还是仍须独立证明甲木已被纯粹制伏到不能克戊？庚辛、金局与火局如何分别定有效性？",
+      "blockedBy": [1082, 1086, 3087]
+    },
+    {
+      "id": "affinity_precedence",
+      "question": "L1082 本例戊癸有情与 L1118 无情之合、L8035 一般合气有情按何对象和优先级共存？合名、合化、得令、冲破是否改变定值？",
+      "blockedBy": [1082, 1118, 8035]
+    },
+    {
+      "id": "later_clause_order",
+      "question": "L1086 连写的无庚辛、金局制木、丙丁火局焚木如何断句与组合；L1087 日干天月德且太岁为用神如何取得并在 L1082 阶梯之后排序？",
+      "blockedBy": [1086, 1087, 9697]
+    },
+    {
+      "id": "year_and_luck",
+      "question": "L9697 的岁运、身旺弱与 L1082 的大运庚申/癸如何按所选年有效柱取值，缺运时何种结论仍可定？",
+      "blockedBy": [1082, 9697]
+    }
+  ],
+  "fixture": {
+    "path": "tools/reports/facts-sample.json",
+    "sha256": "6915a56e7fef202a5c3f145106e0205b2ae1590ad2348d7f5d7ade6dd04518fb",
+    "entrySatisfied": ["both", "same_only", "split_only", "split_and_gui", "natal_gui_only", "luck_gui_only", "neither", "unknown_luck"],
+    "entryNotApplicable": ["wrong_day", "wrong_year"],
+    "fullEffectAdjudicatedPositive": [],
+    "fullEffectAdjudicatedNegative": [],
+    "fullEffectUnknown": ["both", "same_only", "split_only", "split_and_gui", "natal_gui_only", "luck_gui_only", "neither", "unknown_luck"],
+    "namedEvidenceOnly": {
+      "both": "本命年柱庚申、月柱癸和日柱天月德标签并见；没有独立的有效制伏、戊癸有情或太岁用神定值。",
+      "neither": "旧两线索未见，但本命年与时干均为庚；neither 不能读成 L1086 的无庚辛，更不能读成无救。",
+      "unknown_luck": "所选年无有效大运事实，且本命寅午戌三支齐并发出火局文本；既不能排除大运救应，也不能认作焚木。"
+    }
+  },
+  "nonPromotion": ["SANMINGTONGH-010 applicable_to=[] 与 verified=false 保持", "不得新增 rescue_condition 或 transit_effect_semantics 事实", "不得将具名结构线索充作真实救应正反例"]
+}
