@@ -8,11 +8,11 @@
 
 戊另透时，寅中有第三个透干入口，[L548](../../sources/fulltext/bazi/ziping-zhenquan/fulltext.md#L548)的「兼透则兼用」没有在 L435 之后给出三者主兼优先级；寅午戌全会时，L548 又说「透而又会则透与会并用」。两种形态都保持本候选**信息不足**。这里的排除是保守消费门槛，并非声称原书断定甲正财不再为主。寅巳害等其它关系不由本入口门槛改写主兼，但会使整盘作用更加不能从 L435 推断。[L349–351](../../sources/fulltext/bazi/ziping-zhenquan/fulltext.md#L349)的木日寅月禄劫另取、[L419](../../sources/fulltext/bazi/ziping-zhenquan/fulltext.md#L419)的丙独透、[L542–548](../../sources/fulltext/bazi/ziping-zhenquan/fulltext.md#L542)的杂气取清，均不能据辛日这一具体例型推广成所有日干的通用排序。
 
-`caseState=不满足` 只否定本**辛寅甲丙清楚例型**，不否定其他主格、兼格或整个 ZPR-E-02。月支、月令、藏干或逐柱事实缺失、冲突时一律信息不足；流年干及旧产品格局标签不能补本命键。完整字段、入口 ID、冲突政策和真实日期盘在 JSON 中固定。候选尚未登记 FactKey，不进入正式 P1 manifest，不修改 ZPR-E-02 的 `rescue=unimplemented`、`verified=false`。
+`caseState=不满足` 只否定本**辛寅甲丙清楚例型**，不否定其他主格、兼格或整个 ZPR-E-02。月支、月令、藏干或逐柱事实缺失、冲突时一律信息不足；流年干及旧产品格局标签不能补本命键。完整字段、入口 ID、冲突政策和真实日期盘在 JSON 中固定。该窄例型已由 Classics 登记为 `ZPR-P1-06`、`verified=false`，进入 [V6 交接](./P1_BAZI_TOPIC_MANIFEST_20260923_V6.json)；Product 导入前仍只是古籍侧来源证据，不修改 ZPR-E-02 的 `rescue=unimplemented`、`verified=false`。
 
 ## 真实日期盘覆盖
 
-以下时钟时间均按 Product `buildBazi` 的上海黄浦区、男、`timeBasis=clock` 生成四柱；这是输入生成器的可复算证据，**不是古籍对这些现代真盘的作用裁决**。43 盘共享 [`facts-sample.json`](../../tools/reports/facts-sample.json) 中 5 个寅月盘没有该分支正例，因此额外取真日期测试。正式交接前应纳入共享样盘、锁定生成器版本，并复核节气、日界与时区。
+以下时钟时间均按 Product `buildBazi` 的上海黄浦区、男、`timeBasis=clock` 生成四柱，已纳入 50 盘共享 [`facts-sample.json`](../../tools/reports/facts-sample.json)，SHA-256 `206638e12e5390ea8d41f8140d23f61efcee673dfa5aebd65e2dc95c937df5f8`；这是输入生成器的可复算证据，**不是古籍对这些现代真盘的作用裁决**。正式产品交接仍需复核节气、日界与时区。
 
 | 真实日期 | 四柱 | 本候选三态 | 限定解释 |
 | --- | --- | --- | --- |

@@ -7,13 +7,10 @@ from __future__ import annotations
 
 import hashlib
 import json
-import os
-import subprocess
 from pathlib import Path
 
 
 ROOT = Path(__file__).resolve().parents[1]
-PRODUCT = ROOT.parent / "cosmic-fortune-lab"
 CONTRACT = ROOT / "docs/closeout/ZPR_E_02_XIN_YIN_JIA_BING_PRIORITY_CANDIDATE_20260923.json"
 SOURCE = ROOT / "sources/fulltext/bazi/ziping-zhenquan/fulltext.md"
 FIXTURE = ROOT / "tools/reports/facts-sample.json"
@@ -76,26 +73,14 @@ def without(facts: list[dict], key: str, pillar: str) -> list[dict]:
     return [fact for fact in facts if fact.get("key") != key or fact.get("scope") != scope]
 
 
-def product_chart(birth: dict[str, str]) -> dict:
-    script = '''
-import { buildBazi } from "./src/lib/engine/bazi";
-const birth = JSON.parse(process.env.ZPR_BIRTH);
-const chart = buildBazi({ name: "ZPR L435 true-date probe", gender: "男",
-  ...birth, arts: ["bazi"], province: "上海", city: "上海",
-  district: "黄浦区", timeBasis: "clock" });
-console.log(JSON.stringify({ pillars: chart.ganzhi, facts: chart.facts }));
-'''
-    env = {**os.environ, "ZPR_BIRTH": json.dumps(birth, ensure_ascii=False)}
-    completed = subprocess.run(
-        ["bun", "-e", script], cwd=PRODUCT, env=env,
-        text=True, capture_output=True, check=True,
-    )
-    return json.loads(completed.stdout.strip())
+def pillars(facts: list[dict]) -> dict[str, str]:
+    return {pillar: one(facts, "gan", pillar) + one(facts, "zhi", pillar) for pillar in PILLARS}
 
 
 def main() -> None:
     contract = json.loads(CONTRACT.read_text())
-    assert contract["status"] == "candidate_not_registered_do_not_emit"
+    assert contract["status"] == "classics_provisional_ZPR-P1-06_product_pending"
+    assert contract["formalRuleId"] == "ZPR-P1-06"
     assert contract["scope"] == {"layer": "本命"}
     assert contract["source"]["lines"] == sorted(SOURCE_CUES)
     assert contract["output"]["alwaysUnknown"] == [
@@ -117,17 +102,17 @@ def main() -> None:
     assert rule["rescue"] == "unimplemented" and rule["verified"] is False
     assert hashlib.sha256(FIXTURE.read_bytes()).hexdigest() == contract["fixture"]["sha256"]
     shared = json.loads(FIXTURE.read_text())["bazi"]
-    assert len(shared) == contract["fixture"]["baziCases"] == 43
+    assert len(shared) == contract["fixture"]["baziCases"] == 50
 
     results: dict[str, str] = {}
     for probe in contract["realDateProbes"]:
-        chart = product_chart(probe["birth"])
-        assert chart["pillars"] == probe["pillars"], probe["id"]
-        actual = decide(chart["facts"])
+        facts = shared[probe["fixtureCaseId"]]["facts"]
+        assert pillars(facts) == probe["pillars"], probe["id"]
+        actual = decide(facts)
         assert actual == probe["caseState"], (probe["id"], actual)
         results[probe["id"]] = actual
         if probe["id"] == "xin_yin_jia_bing_1984":
-            positive = chart["facts"]
+            positive = facts
 
     assert decide(without(positive, "gan", "year")) == UNKNOWN
     assert decide(without(positive, "canggan", "month")) == UNKNOWN
@@ -149,13 +134,16 @@ def main() -> None:
         for case_id, chart in shared.items()
         if one(chart["facts"], "zhi", "month") == "寅"
     }
-    assert len(shared_yin) == 5
-    assert "满足" not in shared_yin.values()
+    assert len(shared_yin) == 12
+    assert {case_id for case_id, verdict in shared_yin.items() if verdict == "满足"} == {
+        "caseP1_ZPR_month_xin_jia_bing_1954",
+        "caseP1_ZPR_month_xin_jia_bing_1984",
+    }
     print(json.dumps({
         "status": "PASS", "sourceCues": len(SOURCE_CUES),
         "fixtureSha256": contract["fixture"]["sha256"],
         "sharedRealDateCharts": len(shared), "sharedYinMonthCharts": shared_yin,
-        "additionalRealDateProbes": results,
+        "sharedNamedProbes": results,
         "fullZprE02Delivered": False,
     }, ensure_ascii=False, sort_keys=True))
 

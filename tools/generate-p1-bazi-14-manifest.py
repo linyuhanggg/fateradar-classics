@@ -6,10 +6,10 @@ from __future__ import annotations
 import argparse
 import copy
 import hashlib
-import importlib.util
 import json
 import subprocess
 import sys
+import types
 from pathlib import Path
 
 import yaml
@@ -66,9 +66,9 @@ def make_manifest() -> dict:
     evaluator_bytes = committed_bytes(SOURCE_EVALUATOR)
     fixture_bytes = committed_bytes("tools/reports/facts-sample.json")
     vocab_bytes = committed_bytes(SOURCE_VOCAB)
-    assert (ROOT / SOURCE_RULES).read_bytes() == rule_bytes
-    assert (ROOT / SOURCE_EVALUATOR).read_bytes() == evaluator_bytes
-    assert FACT_FIXTURE.read_bytes() == fixture_bytes
+    # V5 is a historical handoff. Later source rules and shared fixture may
+    # advance; replay its own pinned revision instead of requiring HEAD to
+    # remain byte-identical to the old source commit.
     assert sha256(fixture_bytes) == FACT_SHA
     vocab = json.loads(vocab_bytes)
     assert FACT_KEY in vocab["keys"]
@@ -100,7 +100,11 @@ def make_manifest() -> dict:
                and branch["all_of"][1]["scope"] == FACT_SCOPE
                for branch in source["applicable_to"]["any_of"])
 
-    export_bytes = EXPORT_PATH.read_bytes()
+    current_export = json.loads(EXPORT_PATH.read_bytes())
+    # V6 adds exactly P1-06. Removing that one later rule reconstructs the V5
+    # export byte-for-byte; the fixed SHA below proves no older entry drifted.
+    historical_export = [rule for rule in current_export if rule["ruleId"] != "ZPR-P1-06"]
+    export_bytes = (json.dumps(historical_export, ensure_ascii=False, indent=2) + "\n").encode()
     assert sha256(export_bytes) == EXPORT_SHA
     export = json.loads(export_bytes)
     exported = [rule for rule in export if rule["ruleId"] == RULE_ID]
@@ -113,11 +117,10 @@ def make_manifest() -> dict:
     assert old_export_sha == base["rules"][-1]["export"]["sha256"]
     assert len(previous_export) == 451 and len(export) == 452
 
-    spec = importlib.util.spec_from_file_location("zpr_p1_evaluator", ROOT / SOURCE_EVALUATOR)
-    assert spec and spec.loader
-    evaluator = importlib.util.module_from_spec(spec)
+    evaluator = types.ModuleType("zpr_p1_evaluator")
+    evaluator.__file__ = str(ROOT / SOURCE_EVALUATOR)
     sys.modules["zpr_p1_evaluator"] = evaluator
-    spec.loader.exec_module(evaluator)
+    exec(compile(evaluator_bytes, evaluator.__file__, "exec"), evaluator.__dict__)
     assert FACT_KEY in evaluator.SINGLE_VALUE_BAZI_FACT_KEYS
     cases = json.loads(fixture_bytes)["bazi"]
     assert len(cases) == 43

@@ -39,7 +39,8 @@
   "realDateProbes": [
     {
       "id": "yin_bing_only_1969",
-      "producer": "Product buildBazi; clock time; Shanghai Huangpu; male",
+      "producer": "shared facts-sample.json; Product buildBazi clock time Shanghai Huangpu male",
+      "fixtureCaseId": "caseP1_ZPR_month_yin_bing_only_1969",
       "birth": {"year": "1969", "month": "2", "day": "13", "hour": "10", "minute": "20"},
       "pillars": {"year": "己酉", "month": "丙寅", "day": "己未", "time": "己巳"},
       "premiseState": "满足",
@@ -48,6 +49,7 @@
     {
       "id": "caseB",
       "producer": "shared facts-sample.json",
+      "fixtureCaseId": "caseB",
       "birth": {"year": "1984", "month": "2", "day": "4", "hour": "23", "minute": "40"},
       "pillars": {"year": "甲子", "month": "丙寅", "day": "己巳", "time": "甲子"},
       "premiseState": "不满足",
@@ -56,6 +58,7 @@
     {
       "id": "cov3_bazi_1",
       "producer": "shared facts-sample.json",
+      "fixtureCaseId": "cov3_bazi_1",
       "birth": {"year": "1970", "month": "2", "day": "7", "hour": "13", "minute": "20"},
       "pillars": {"year": "庚戌", "month": "戊寅", "day": "戊午", "time": "己未"},
       "premiseState": "不满足",
@@ -68,5 +71,5 @@
     "premiseState": "信息不足",
     "localPrincipalStem": "信息不足"
   },
-  "fixture": {"path": "tools/reports/facts-sample.json", "sha256": "3f9e7b62c4d35cc4df2006cec7c994a2178d922a50377ab62c39e10d4c5b3dcc", "baziCases": 43}
+  "fixture": {"path": "tools/reports/facts-sample.json", "sha256": "206638e12e5390ea8d41f8140d23f61efcee673dfa5aebd65e2dc95c937df5f8", "baziCases": 50}
 }

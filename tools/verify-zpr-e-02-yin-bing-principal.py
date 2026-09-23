@@ -8,13 +8,10 @@ from __future__ import annotations
 
 import hashlib
 import json
-import os
-import subprocess
 from pathlib import Path
 
 
 ROOT = Path(__file__).resolve().parents[1]
-PRODUCT = ROOT.parent / "cosmic-fortune-lab"
 CONTRACT = ROOT / "docs/closeout/ZPR_E_02_YIN_BING_PRINCIPAL_CANDIDATE_20260923.json"
 SOURCE = ROOT / "sources/fulltext/bazi/ziping-zhenquan/fulltext.md"
 FIXTURE = ROOT / "tools/reports/facts-sample.json"
@@ -91,23 +88,6 @@ def pillars(facts: list[dict]) -> dict[str, str]:
     return {pillar: one(facts, "gan", pillar) + one(facts, "zhi", pillar) for pillar in PILLARS}
 
 
-def product_chart(birth: dict[str, str]) -> dict:
-    script = '''
-import { buildBazi } from "./src/lib/engine/bazi";
-const birth = JSON.parse(process.env.ZPR_BIRTH);
-const chart = buildBazi({ name: "ZPR L419 true-date probe", gender: "男",
-  ...birth, arts: ["bazi"], province: "上海", city: "上海",
-  district: "黄浦区", timeBasis: "clock" });
-console.log(JSON.stringify({ pillars: chart.ganzhi, facts: chart.facts }));
-'''
-    env = {**os.environ, "ZPR_BIRTH": json.dumps(birth, ensure_ascii=False)}
-    completed = subprocess.run(
-        ["bun", "-e", script], cwd=PRODUCT, env=env,
-        text=True, capture_output=True, check=True,
-    )
-    return json.loads(completed.stdout.strip())
-
-
 def main() -> None:
     contract = json.loads(CONTRACT.read_text())
     assert contract["status"] == "candidate_not_registered_do_not_emit"
@@ -123,17 +103,12 @@ def main() -> None:
     assert rule["rescue"] == "unimplemented" and rule["verified"] is False
     assert hashlib.sha256(FIXTURE.read_bytes()).hexdigest() == contract["fixture"]["sha256"]
     charts = json.loads(FIXTURE.read_text())["bazi"]
-    assert len(charts) == contract["fixture"]["baziCases"] == 43
+    assert len(charts) == contract["fixture"]["baziCases"] == 50
 
     real_date_results = {}
     for probe in contract["realDateProbes"]:
-        if probe["producer"].startswith("Product buildBazi"):
-            calculated = product_chart(probe["birth"])
-            facts = calculated["facts"]
-            assert calculated["pillars"] == probe["pillars"], probe["id"]
-        else:
-            facts = charts[probe["id"]]["facts"]
-            assert pillars(facts) == probe["pillars"], probe["id"]
+        facts = charts[probe["fixtureCaseId"]]["facts"]
+        assert pillars(facts) == probe["pillars"], probe["id"]
         actual = decide(facts)
         expected = {key: probe[key] for key in ("premiseState", "localPrincipalStem")}
         assert actual == expected, (probe["id"], actual, expected)
@@ -164,22 +139,25 @@ def main() -> None:
         {"key": "geju", "value": "正官格", "scope": {"layer": "本命"}},
     ]) == {"premiseState": "满足", "localPrincipalStem": "丙"}
 
-    competing = product_chart({"year": "1979", "month": "2", "day": "11", "hour": "7", "minute": "20"})
-    assert competing["pillars"] == {"year": "己未", "month": "丙寅", "day": "己酉", "time": "戊辰"}
-    assert decide(competing["facts"]) == {"premiseState": "满足", "localPrincipalStem": UNKNOWN}
+    competing = charts["caseP1_ZPR_month_yin_bing_wu_1979"]["facts"]
+    assert pillars(competing) == {"year": "己未", "month": "丙寅", "day": "己酉", "time": "戊辰"}
+    assert decide(competing) == {"premiseState": "满足", "localPrincipalStem": UNKNOWN}
 
     yin_cases = {}
     for case_id, chart in charts.items():
         if one(chart["facts"], "zhi", "month") == "寅":
             yin_cases[case_id] = decide(chart["facts"])
-    assert len(yin_cases) == 5
-    assert all(result["localPrincipalStem"] == UNKNOWN for result in yin_cases.values())
+    assert len(yin_cases) == 12
+    assert {case_id for case_id, result in yin_cases.items() if result["localPrincipalStem"] == "丙"} == {
+        "caseP1_ZPR_month_yin_bing_only_1969",
+        "caseP1_ZPR_month_xin_no_jia_1979",
+    }
     print(json.dumps({
         "status": "PASS", "sourceCues": len(SOURCE_CUES),
         "fixtureSha256": contract["fixture"]["sha256"],
         "sharedRealDateCharts": len(charts), "sharedYinMonthCharts": yin_cases,
-        "additionalRealDateProbes": real_date_results,
-        "competingWuExposure": decide(competing["facts"]),
+        "sharedNamedProbes": real_date_results,
+        "competingWuExposure": decide(competing),
         "fullZprE02Delivered": False,
     }, ensure_ascii=False, sort_keys=True))
 

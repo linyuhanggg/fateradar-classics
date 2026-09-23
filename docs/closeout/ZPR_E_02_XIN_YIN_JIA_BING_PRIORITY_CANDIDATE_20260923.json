@@ -1,6 +1,7 @@
 {
   "id": "ZPR-E-02-xin-yin-jia-bing-priority-candidate",
-  "status": "candidate_not_registered_do_not_emit",
+  "status": "classics_provisional_ZPR-P1-06_product_pending",
+  "formalRuleId": "ZPR-P1-06",
   "claim": "辛日寅月甲丙并透的原文例型中，正财为主格入口，正官为兼格入口；不裁整盘成败或实际作用",
   "source": {
     "path": "sources/fulltext/bazi/ziping-zhenquan/fulltext.md",
@@ -41,11 +42,11 @@
     "missingOrConflictingScopedFact": "信息不足，不从旧 geju 名称或流年补键"
   },
   "realDateProbes": [
-    {"id": "xin_yin_jia_bing_1984", "birth": {"year": "1984", "month": "2", "day": "7", "hour": "10", "minute": "20"}, "pillars": {"year": "甲子", "month": "丙寅", "day": "辛未", "time": "癸巳"}, "caseState": "满足"},
-    {"id": "xin_yin_jia_bing_1954", "birth": {"year": "1954", "month": "2", "day": "14", "hour": "2", "minute": "20"}, "pillars": {"year": "甲午", "month": "丙寅", "day": "辛丑", "time": "己丑"}, "caseState": "满足"},
-    {"id": "xin_yin_no_jia_1979", "birth": {"year": "1979", "month": "2", "day": "13", "hour": "10", "minute": "20"}, "pillars": {"year": "己未", "month": "丙寅", "day": "辛亥", "time": "癸巳"}, "caseState": "不满足"},
-    {"id": "xin_yin_jia_bing_wu_1984", "birth": {"year": "1984", "month": "2", "day": "7", "hour": "20", "minute": "20"}, "pillars": {"year": "甲子", "month": "丙寅", "day": "辛未", "time": "戊戌"}, "caseState": "信息不足"},
-    {"id": "xin_yin_jia_bing_meeting_1994", "birth": {"year": "1994", "month": "2", "day": "14", "hour": "12", "minute": "20"}, "pillars": {"year": "甲戌", "month": "丙寅", "day": "辛未", "time": "甲午"}, "caseState": "信息不足"}
+    {"id": "xin_yin_jia_bing_1984", "fixtureCaseId": "caseP1_ZPR_month_xin_jia_bing_1984", "birth": {"year": "1984", "month": "2", "day": "7", "hour": "10", "minute": "20"}, "pillars": {"year": "甲子", "month": "丙寅", "day": "辛未", "time": "癸巳"}, "caseState": "满足"},
+    {"id": "xin_yin_jia_bing_1954", "fixtureCaseId": "caseP1_ZPR_month_xin_jia_bing_1954", "birth": {"year": "1954", "month": "2", "day": "14", "hour": "2", "minute": "20"}, "pillars": {"year": "甲午", "month": "丙寅", "day": "辛丑", "time": "己丑"}, "caseState": "满足"},
+    {"id": "xin_yin_no_jia_1979", "fixtureCaseId": "caseP1_ZPR_month_xin_no_jia_1979", "birth": {"year": "1979", "month": "2", "day": "13", "hour": "10", "minute": "20"}, "pillars": {"year": "己未", "month": "丙寅", "day": "辛亥", "time": "癸巳"}, "caseState": "不满足"},
+    {"id": "xin_yin_jia_bing_wu_1984", "fixtureCaseId": "caseP1_ZPR_month_xin_jia_bing_wu_1984", "birth": {"year": "1984", "month": "2", "day": "7", "hour": "20", "minute": "20"}, "pillars": {"year": "甲子", "month": "丙寅", "day": "辛未", "time": "戊戌"}, "caseState": "信息不足"},
+    {"id": "xin_yin_jia_bing_meeting_1994", "fixtureCaseId": "caseP1_ZPR_month_xin_jia_bing_meeting_1994", "birth": {"year": "1994", "month": "2", "day": "14", "hour": "12", "minute": "20"}, "pillars": {"year": "甲戌", "month": "丙寅", "day": "辛未", "time": "甲午"}, "caseState": "信息不足"}
   ],
-  "fixture": {"path": "tools/reports/facts-sample.json", "sha256": "3f9e7b62c4d35cc4df2006cec7c994a2178d922a50377ab62c39e10d4c5b3dcc", "baziCases": 43}
+  "fixture": {"path": "tools/reports/facts-sample.json", "sha256": "206638e12e5390ea8d41f8140d23f61efcee673dfa5aebd65e2dc95c937df5f8", "baziCases": 50}
 }

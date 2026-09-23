@@ -92,7 +92,8 @@ def main() -> None:
 
     if args.compare_product_fixture:
         product = args.product_root / "tests/fixtures/facts-sample.json"
-        assert product.read_bytes() == module.FACT_FIXTURE.read_bytes(), "shared fixture bytes differ"
+        pinned_fixture = module.committed_bytes("tools/reports/facts-sample.json")
+        assert product.read_bytes() == pinned_fixture, "Product fixture is no longer the historical V5 copy"
 
     print(
         f"PASS 14-rule V5 handoff; sha256={hashlib.sha256(actual_bytes).hexdigest()}; "
