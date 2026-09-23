@@ -113,6 +113,13 @@ def main() -> int:
         "信息不足",
     )
 
+    same_zhi = rule([{"key": "suiyun_same_zhi", "value": "是", "scope": {"layer": "流年", "year": 2100}}])
+    unresolved = M.evaluate(same_zhi, [fact("suiyun_same_zhi", "信息不足", layer="流年", year=2100)])
+    check("  同支事实显式未知 → 信息不足", unresolved["verdict"], "信息不足")
+    check("  同支未知事实点名缺键", unresolved["missing_fact_keys"], ["suiyun_same_zhi"])
+    check("  同支明确为是 → 满足", M.evaluate(same_zhi, [fact("suiyun_same_zhi", "是", layer="流年", year=2100)])["verdict"], "满足")
+    check("  同支明确为否 → 不满足", M.evaluate(same_zhi, [fact("suiyun_same_zhi", "否", layer="流年", year=2100)])["verdict"], "不满足")
+
     print("4. any_of 嵌套 all_of（OR-of-AND）")
     nested = {
         "any_of": [

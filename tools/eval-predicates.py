@@ -107,7 +107,7 @@ def fact_matches(fact: dict, pred: dict) -> bool:
 def is_unknown_fact(fact: dict) -> bool:
     # Only these registered contracts use this value as missing input.
     # Do not reinterpret arbitrary open-vocabulary text as an unknown marker.
-    return fact.get("key") in {"suiyun_binglin", "dayun_liunian_relation_class"} and fact.get("value") == "信息不足"
+    return fact.get("key") in {"suiyun_binglin", "suiyun_same_zhi", "dayun_liunian_relation_class"} and fact.get("value") == "信息不足"
 
 
 def referenced_keys(clause) -> set[str]:
@@ -256,7 +256,7 @@ def load_rules(book: str | None, art: str | None) -> list[dict]:
 
 def evaluate(rule: dict, facts: list[dict]) -> dict:
     ap = rule.get("applicable_to")
-    present = {f.get("key") for f in facts if isinstance(f, dict)}
+    present = {f.get("key") for f in facts if isinstance(f, dict) and not is_unknown_fact(f)}
     keys = referenced_keys(ap if isinstance(ap, dict) else {"any_of": ap or []})
     if not ap:
         return {

@@ -202,7 +202,7 @@ rules:
   verified_at: null
 - rule_id: SANMINGTONGH-011
   kind: doctrine
-  statement: 原文以甲子流年又逢甲子大运为岁运并临；并临不一律为凶，须分羊刃七杀与财官印绶及命局喜忌。
+  statement: 原文以甲子流年又逢甲子大运为岁运并临；紧接区分羊刃七煞为凶、财官印绶亦吉，并说明“灾殃立至”特指羊刃。
   anchor:
     file: sources/fulltext/bazi/sanming-tonghui/fulltext.md
     start_line: 1084
@@ -211,7 +211,8 @@ rules:
   applicable_to: []
   caveats:
   - 同干支并临只确认组合形态，不直接判断必有大事或灾祸。
-  - 原文的刃杀/财官印分类仍须取用、救应和实际作用条件，不能按十神名称简单计分。
+  - 本条 L1084 未定义刃杀/财官印绶如何从本命、大运和流年分类，也未给出多类并存时的优先级；不能按十神名称简单计分。
+  - 命局喜忌、救应和实际作用须另审同书《论阳刃》L3459-L3471、《消息赋》徐注 L8893-L8894 等段，不能冒充为 L1084 的单锚可执行条件。
   - 属于理论条目，未形成自动判断现实事件的执行规则。
   school: null
   verified: false
