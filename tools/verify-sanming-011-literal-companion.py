@@ -100,7 +100,12 @@ def main() -> None:
     source_rules = yaml.safe_load((ROOT / "references/books/bazi/sanming-tonghui/rules.yaml").read_text())["rules"]
     original = next(item for item in source_rules if item["rule_id"] == "SANMINGTONGH-011")
     assert original["applicable_to"] == [] and original["verified"] is False
-    assert rule["ruleId"] not in {item["rule_id"] for item in source_rules}
+    promoted = [item for item in source_rules if item["rule_id"] == rule["ruleId"]]
+    assert len(promoted) <= 1
+    if promoted:
+        assert promoted[0]["applicable_to"] == rule["applicableTo"]
+        assert promoted[0]["quote"] == rule["quote"]
+        assert promoted[0]["verified"] is False
 
     fixture_ref = manifest["fixture"]
     fixture_path = ROOT / fixture_ref["path"]
@@ -149,7 +154,7 @@ def main() -> None:
 
     if args.replay_product:
         replay_product(cases, args.product_root)
-    print("PASS SANMINGTONGH-P1-011A literal companion: 4 real chart years, selected-year gate, 11-rule lock unchanged")
+    print("PASS SANMINGTONGH-P1-011A literal companion: 4 real chart years, selected-year gate, v2 11-rule lock unchanged")
 
 
 if __name__ == "__main__":

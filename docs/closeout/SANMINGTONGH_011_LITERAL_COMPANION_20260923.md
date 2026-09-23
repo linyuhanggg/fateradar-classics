@@ -1,6 +1,6 @@
 # 《论太岁》甲子岁运字面例的独立候选（2026-09-23）
 
-结论：[L1084](../../sources/fulltext/bazi/sanming-tonghui/fulltext.md#L1084) 足以支持一个**只限“甲子流年又是甲子运”**的来源形态入口。已准备[独立候选 manifest](../../tools/reports/p1-bazi-20260922/sanming-011-literal-companion-candidate.json)和[四个真盘年输入](../../tools/reports/p1-bazi-20260922/sanming-011-literal-chart-fixture.json)，候选 ID 为 `SANMINGTONGH-P1-011A`、主题仅 `overview`、作用层仅所选流年、`verified=false`。它未进入既有 11 条正式 P1 manifest，也未修改 `SANMINGTONGH-011` 原规则或产品。
+结论：[L1084](../../sources/fulltext/bazi/sanming-tonghui/fulltext.md#L1084) 足以支持一个**只限“甲子流年又是甲子运”**的来源形态入口。本文保留正式采纳前的[独立候选 manifest](../../tools/reports/p1-bazi-20260922/sanming-011-literal-companion-candidate.json)和[四个真盘年输入](../../tools/reports/p1-bazi-20260922/sanming-011-literal-chart-fixture.json)作为审计历史。候选 ID `SANMINGTONGH-P1-011A` 已单独进入[正式 v3 12 条 P1 交接](SANMINGTONGH_011A_12_RULE_HANDOFF_20260923.md)，主题仍仅 `overview`、作用层仍仅所选流年、`verified=false`；原 `SANMINGTONGH-011` 不变。
 
 | 真盘输入（上海，clock） | 所选年 | 有效大运／流年 | 字面入口三态 |
 | --- | ---: | --- | --- |
@@ -15,4 +15,4 @@
 
 这条入口不推广到任意两柱同干支。L1084 随后说的“甲子日见甲子太岁”是**日年相并**，不能以本命日柱替代运柱；[《消息赋》徐注 L8893](../../sources/fulltext/bazi/sanming-tonghui/fulltext.md#L8893)的庚午运／戊午岁则另属同支异干用法。原规则 L1084 的刃杀与财官印绶分支仍缺取值层级、并存政策、喜忌及救应，见[分类来源核对](SANMINGTONGH_011_CLASSIFICATION_PROVENANCE_20260923.md)。因此本候选即使满足，也只可显示“原文甲子岁运形态”，不可输出吉凶、现实事件或六主题作用。
 
-下一步若产品要正式消费，应单独审查并导入此 companion，保留原 11 条 manifest 的锁定版本与 pending 语义状态，同时加所选年过滤与初始／选中／取消选中／移动端行为验收。完整 `SANMINGTONGH-011` 的作用合同仍另行阻塞；这个字面入口不构成其完成证明。
+Product 下一步需审查并导入 v3 交接，保留原 11 条 manifest 的锁定版本与 pending 语义状态，同时加所选年过滤与初始／选中／取消选中／移动端行为验收。完整 `SANMINGTONGH-011` 的作用合同仍另行阻塞；这个字面入口不构成其完成证明。

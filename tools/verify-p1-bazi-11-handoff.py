@@ -6,6 +6,7 @@ from __future__ import annotations
 import hashlib
 import importlib.util
 import json
+import subprocess
 from pathlib import Path
 
 import yaml
@@ -26,6 +27,15 @@ def main() -> None:
     require(spec is not None and spec.loader is not None, "cannot load manifest generator")
     module = importlib.util.module_from_spec(spec)
     spec.loader.exec_module(module)
+
+    # The v2 handoff is a historical lock. 011A adds a new source rule after
+    # SOURCE_REV; replay its fingerprints from that revision while comparing
+    # the eleven selected rule bodies to the still-present current YAML.
+    def historical_source_sha(path: str) -> str:
+        data = subprocess.check_output(["git", "show", f"{SOURCE_REV}:{path}"], cwd=ROOT)
+        return hashlib.sha256(data).hexdigest()
+
+    module.pinned_source_sha = historical_source_sha
 
     regenerated = module.make_manifest(MANIFEST, None)
     actual_bytes = MANIFEST.read_bytes()
