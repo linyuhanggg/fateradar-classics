@@ -1,0 +1,43 @@
+{
+  "schema": "sanming-011-classification-scope-candidate-v1",
+  "ruleId": "SANMINGTONGH-011",
+  "status": "unadopted_draft",
+  "factKeyProposal": "sanming_011_classification_evidence",
+  "factKeyStatus": "not_registered_do_not_emit",
+  "scope": {"layer": "流年", "year": "selected"},
+  "valueShape": {
+    "sourcePassage": ["L1084", "L3459-L3471", "L4959-L4962"],
+    "shape": ["同干支", "同支异干", "刃再遇", "信息不足"],
+    "candidateGroup": ["阳刃", "七杀", "财", "官", "印绶"],
+    "candidateState": ["原始标签已见", "原始标签未见", "信息不足"],
+    "candidateOrigin": ["本命透干", "本命藏干", "本命神煞原始标签", "选定大运天干", "选定流年天干"],
+    "pillar": ["year", "month", "day", "time", "selectedDayun", "selectedLiunian"],
+    "derivedFrom": "原事实的非空来源数组；本命逐柱与所选年份两层不可合并",
+    "effectVerdict": ["未裁决"]
+  },
+  "sourceBoundaries": [
+    {"passage": "L1084", "shape": "甲子流年／甲子运字面例", "effectText": "独羊刃七煞为凶、财官印绶亦吉", "classificationAlgorithmSupplied": false},
+    {"passage": "L3459-L3471", "shape": "时上阳刃再遇及多条件分支", "effectText": "有刃印无煞而岁运逢煞可反为厚福；月令合他格按他格断", "classificationAlgorithmSupplied": false},
+    {"passage": "L4959-L4962", "shape": "六甲日丁卯时", "effectText": "柱有七煞合刃、行财官印绶可大贵", "classificationAlgorithmSupplied": false}
+  ],
+  "conditionalPrecedence": [
+    {"if": "月令确证合财官印绶或他格", "then": "L3471 明言按他格断", "status": "source_supported_but_gate_unimplemented"},
+    {"if": "原局确证有刃有印无煞且岁运逢煞", "then": "L3468 的厚福分支不同于原局煞刃再逢", "status": "source_supported_but_gate_unimplemented"}
+  ],
+  "unresolvedPrecedence": [
+    "L1084 未说明分类只取本命、透干、藏干、选定大运或选定流年中的哪一层。",
+    "七杀与财官印绶原始标签可同现；没有同层或跨层覆盖顺序。",
+    "L1624 与 L1635 有不同刃口径；通用神煞羊刃不是本条已裁决阳刃。",
+    "L3459 的甲日乙卯时与 L4959-L4962 六甲日丁卯时相抵触，不能用真实出生时柱满足前者。",
+    "得力、喜忌、制化救应、用神损益尚无可执行三态合同。"
+  ],
+  "fixture": "tools/reports/facts-sample.json",
+  "cases": [
+    {"case": "caseFlowYearBinglin", "year": 1993, "shape": "是", "sameBranch": "是", "natalRaw": {"七杀": true, "财官印绶": true, "羊刃": false}, "selectedLuckStem": "正财", "selectedYearStem": "正财", "effectVerdict": "未裁决"},
+    {"case": "caseP1_011_seven_killer", "year": 2031, "shape": "是", "sameBranch": "是", "natalRaw": {"七杀": false, "财官印绶": true, "羊刃": false}, "selectedLuckStem": "七杀", "selectedYearStem": "七杀", "effectVerdict": "未裁决"},
+    {"case": "caseP1_011_proper_officer", "year": 1960, "shape": "是", "sameBranch": "是", "natalRaw": {"七杀": true, "财官印绶": true, "羊刃": false}, "selectedLuckStem": "正官", "selectedYearStem": "正官", "effectVerdict": "未裁决"},
+    {"case": "caseFlowYear", "year": 2019, "shape": "否", "sameBranch": "是", "natalRaw": {"七杀": true, "财官印绶": true, "羊刃": true}, "selectedLuckStem": "正财", "selectedYearStem": "正官", "effectVerdict": "未裁决"},
+    {"case": "caseFlowYear", "year": 2026, "shape": "否", "sameBranch": "否", "natalRaw": {"七杀": true, "财官印绶": true, "羊刃": true}, "selectedLuckStem": "正财", "selectedYearStem": "偏财", "effectVerdict": "未裁决"},
+    {"case": "caseFlowYearUnknown", "year": 2100, "shape": "信息不足", "sameBranch": "信息不足", "natalRaw": {"七杀": true, "财官印绶": true, "羊刃": true}, "selectedLuckStem": null, "selectedYearStem": "偏印", "effectVerdict": "未裁决"}
+  ]
+}
