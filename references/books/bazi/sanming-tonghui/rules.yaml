@@ -218,6 +218,55 @@ rules:
   verified: false
   verified_by: null
   verified_at: null
+- rule_id: SANMINGTONGH-P1-010A
+  kind: doctrine
+  statement: 《论太岁》以甲日克戊年举日犯岁君之例；本条只标本命甲日遇所选戊流年的字面入口。
+  anchor:
+    file: sources/fulltext/bazi/sanming-tonghui/fulltext.md
+    start_line: 1081
+    end_line: 1081
+  quote: 日犯嵗君如甲日尅戊年為偏財
+  applicable_to:
+    all_of:
+    - key: gan
+      value: 甲
+      scope:
+        layer: 本命
+        pillar: day
+    - any_of:
+      - key: liunian_gan_zhi
+        value: 戊子
+        scope:
+          layer: 流年
+      - key: liunian_gan_zhi
+        value: 戊寅
+        scope:
+          layer: 流年
+      - key: liunian_gan_zhi
+        value: 戊辰
+        scope:
+          layer: 流年
+      - key: liunian_gan_zhi
+        value: 戊午
+        scope:
+          layer: 流年
+      - key: liunian_gan_zhi
+        value: 戊申
+        scope:
+          layer: 流年
+      - key: liunian_gan_zhi
+        value: 戊戌
+        scope:
+          layer: 流年
+  caveats:
+  - 仅识别甲日遇所选戊流年的原文示例；不推广为任意日干克流年干的完整日犯岁君规则。
+  - 求值必须保留本命日柱事实并只取所选年份的流年事实；其它戊年不得补足当前年份。
+  - 本条不裁定庚申或癸戊合是否有救、有情，也不推断凶半、凶莫能解或现实事件。
+  - 缺本命日干或所选年干支时为信息不足；已有完整四柱而有效大运未知，不影响此字面入口，但完整 010 仍未知。
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
 - rule_id: SANMINGTONGH-P1-011A
   kind: doctrine
   statement: 《论太岁》明列甲子流年又逢甲子大运，称这一组合为岁运并临；本条只标这个字面例的形态。
