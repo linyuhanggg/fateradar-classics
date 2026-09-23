@@ -218,6 +218,33 @@ rules:
   verified: false
   verified_by: null
   verified_at: null
+- rule_id: SANMINGTONGH-P1-011A
+  kind: doctrine
+  statement: 《论太岁》明列甲子流年又逢甲子大运，称这一组合为岁运并临；本条只标这个字面例的形态。
+  anchor:
+    file: sources/fulltext/bazi/sanming-tonghui/fulltext.md
+    start_line: 1084
+    end_line: 1084
+  quote: 又如甲子流年又是甲子運謂之嵗運并臨
+  applicable_to:
+    all_of:
+    - key: liunian_gan_zhi
+      value: 甲子
+      scope:
+        layer: 流年
+    - key: suiyun_binglin
+      value: 是
+      scope:
+        layer: 流年
+  caveats:
+  - 仅甲子流年再逢同年甲子运的字面形态，不推广到任意同干支，也不替代 SANMINGTONGH-011 的语义合同。
+  - 求值前必须只传所选年份的流年事实；混入异年并临事实会误报满足。
+  - 缺该年有效大运则并临为信息不足，不能按未见甲子运判不满足。
+  - 不输出羊刃七煞、财官印绶的分类作用、吉凶或现实事件；本命日柱甲子不得替代甲子运。
+  school: null
+  verified: false
+  verified_by: null
+  verified_at: null
 - rule_id: SANMINGTONGH-012
   kind: doctrine
   statement: 十干五合所配化气为甲己土、乙庚金、丙辛水、丁壬木、戊癸火；有组合不等于条件已经满足。

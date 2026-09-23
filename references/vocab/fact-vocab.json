@@ -75,7 +75,9 @@
     "xiaoliuren_lunar_day",
     "xiaoliuren_count_good",
     "gan_element",
-    "dayun_liunian_relation_class"
+    "dayun_liunian_relation_class",
+    "liunian_gan_zhi",
+    "suiyun_binglin"
   ],
   "values": {
     "meihua_gua": [],
@@ -699,6 +701,12 @@
       "相刑",
       "其他",
       "信息不足"
+    ],
+    "liunian_gan_zhi": [],
+    "suiyun_binglin": [
+      "是",
+      "否",
+      "信息不足"
     ]
   },
   "contracts": {
@@ -748,6 +756,22 @@
       "valueShape": "关系类型:标签@pillar-pillar",
       "missing": "关系参与柱位编码在 value 中；缺失不能推断无关系，除非消费方声明完整关系枚举。",
       "zero": "不输出零值；结构关系不等于关系结果或现实事件。"
+    },
+    "liunian_gan_zhi": {
+      "art": "bazi",
+      "scope": {"layer": "流年", "year": "selected"},
+      "valueShape": "六十甲子干支",
+      "missing": "无选定流年或该年未排出时为信息不足；不可借另一年份的流年干支代替。",
+      "zero": "不适用"
+    },
+    "suiyun_binglin": {
+      "art": "bazi",
+      "scope": {"layer": "流年", "year": "selected"},
+      "valueShape": "enum",
+      "valueDomain": ["是", "否", "信息不足"],
+      "comparison": "只比较所选年有效大运与该年流年的完整干支是否相同；没有有效大运时显式输出信息不足。",
+      "missing": "缺所选年事实或显式信息不足均不得降成不满足；不得混入其他年份事实。",
+      "zero": "否表示该年有效大运与流年完整干支不相同，不表示无岁运作用。"
     }
   },
   "any": "*"
