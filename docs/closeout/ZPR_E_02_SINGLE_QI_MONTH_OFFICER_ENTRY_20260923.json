@@ -1,0 +1,31 @@
+{
+  "id": "ZPR-E-02-single-qi-month-officer-entry-candidate",
+  "status": "candidate_not_registered_do_not_emit",
+  "claim": "本命月支单气的原始月令正官入口；不裁决最终主格、兼格、顺用作用或救应",
+  "sourceLines": [146, 147, 149, 328, 340, 342, 419, 421, 468, 470, 883, 929, 933, 937, 944, 951, 953],
+  "scope": {"layer": "本命"},
+  "inputs": {
+    "dayGan": {"key": "gan", "scope": {"layer": "本命", "pillar": "day"}, "cardinality": "exactly_one_distinct_value"},
+    "monthZhi": {"key": "zhi", "scope": {"layer": "本命", "pillar": "month"}, "cardinality": "exactly_one_distinct_value"},
+    "monthOrder": {"key": "yueling", "scope": {"layer": "本命", "pillar": "month"}, "cardinality": "exactly_one_distinct_value_equal_to_monthZhi"},
+    "monthHiddenStems": {"key": "canggan", "scope": {"layer": "本命", "pillar": "month"}, "cardinality": "complete_for_supported_single_qi_branch"}
+  },
+  "supportedSingleQiBranches": {"子": "癸", "卯": "乙", "酉": "辛"},
+  "regularOfficerStemByDay": {
+    "甲": "辛", "乙": "庚", "丙": "癸", "丁": "壬", "戊": "乙",
+    "己": "甲", "庚": "丁", "辛": "丙", "壬": "己", "癸": "戊"
+  },
+  "truthTable": {
+    "满足": "月令、月支一致且属支持的单气支，月支藏干完整、无冲突，唯一藏干等于该日干的正官干",
+    "不满足": "同样完整的单气月支，唯一藏干不是该日干的正官干；仅否定本条入口",
+    "信息不足": "所需事实缺失或冲突，或者月支不是本合同支持的单气支；不代表其他月令入口不存在"
+  },
+  "fixtures": [
+    {"caseId": "caseP1_051_tiaohou_candidate", "expected": "满足", "reason": "丙日子月，子藏癸官；子未害留在作用层"},
+    {"caseId": "caseP1_010_luck_gui_only", "expected": "满足", "reason": "甲日酉月，酉藏辛官；丁伤、庚煞及酉酉刑留在作用层"},
+    {"caseId": "caseP1_010_neither", "expected": "满足", "reason": "甲日酉月，酉藏辛官；庚煞、乙庚合及戌酉害留在作用层"},
+    {"caseId": "cov2_bazi_3", "expected": "不满足", "reason": "丁日子月，癸不是丁的正官壬；不否定七煞等入口"},
+    {"caseId": "cov2_bazi_2", "expected": "不满足", "reason": "乙日子月，癸不是乙的正官庚；不否定印等入口"},
+    {"caseId": "caseB", "expected": "信息不足", "reason": "己日寅月虽藏甲官，但寅有甲丙戊且丙透，本单气合同不裁主格"}
+  ]
+}
