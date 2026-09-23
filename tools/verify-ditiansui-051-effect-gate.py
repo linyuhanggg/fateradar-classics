@@ -16,7 +16,7 @@ ROOT = Path(__file__).resolve().parents[1]
 SOURCE = ROOT / "sources/fulltext/bazi/ditiansui-chanwei/fulltext.md"
 FIXTURE = ROOT / "tools/reports/facts-sample.json"
 RULES = ROOT / "dist/rules/bazi.json"
-EXPECTED_FIXTURE_SHA256 = "6915a56e7fef202a5c3f145106e0205b2ae1590ad2348d7f5d7ade6dd04518fb"
+EXPECTED_FIXTURE_SHA256 = "3f9e7b62c4d35cc4df2006cec7c994a2178d922a50377ab62c39e10d4c5b3dcc"
 
 # Distinct source branches: the same listed shape is not an effect verdict.
 SOURCE_CUES = {

@@ -18,7 +18,7 @@ HASHES = {
     HY: "707ac9bc6796bdb679833fc280040485d95b36da6f7aca0b3e2adbb9e57d19d3",
     SK: "4f705b654672fe6d8106353401541634de9d3db6e300271bfab7ca7e427f24dd",
     PDF: "c6eac6fca6411e45cb801f9b771aca6dd6a6d2dfb57ecc36ea5f42ecf1ac8bf9",
-    FIXTURE: "6915a56e7fef202a5c3f145106e0205b2ae1590ad2348d7f5d7ade6dd04518fb",
+    FIXTURE: "3f9e7b62c4d35cc4df2006cec7c994a2178d922a50377ab62c39e10d4c5b3dcc",
 }
 PILLARS = ("year", "month", "day", "time")
 
