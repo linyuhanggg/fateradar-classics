@@ -47,7 +47,18 @@ def natal_raw_groups(facts: list[dict]) -> dict[str, bool]:
     }
 
 
-def verify_source() -> None:
+def stem_raw_groups(facts: list[dict], year: int) -> list[str]:
+    names = {
+        selected_value(facts, "shishen", layer, year)
+        for layer in ("大运", "流年")
+    }
+    return [group for group, seen in (
+        ("七杀", "七杀" in names),
+        ("财官印绶", bool(names & BENEFICIAL_NAMES)),
+    ) if seen]
+
+
+def verify_source() -> set[str]:
     lines = SOURCE.read_text().splitlines()
     anchors = {
         1084: ["甲子流年又是甲子運", "獨羊刃七煞為凶財官印綬亦吉"],
@@ -71,10 +82,11 @@ def verify_source() -> None:
     assert block
     assert re.search(r"(?m)^  applicable_to: \[\]$", block.group(0))
     assert re.search(r"(?m)^  verified: false$", block.group(0))
+    return {f"L{line}" for line in anchors}
 
 
 def main() -> None:
-    verify_source()
+    source_anchors = verify_source()
     contract = json.loads(CONTRACT.read_text())
     assert contract["schema"] == "sanming-011-classification-scope-candidate-v1"
     assert contract["status"] == "unadopted_draft"
@@ -109,6 +121,40 @@ def main() -> None:
     assert by_case["caseP1_011_proper_officer", 1960]["natalRaw"]["七杀"]
     assert by_case["caseP1_011_proper_officer", 1960]["selectedYearStem"] == "正官"
     assert by_case["caseFlowYearUnknown", 2100]["selectedLuckStem"] is None
+    witnesses = contract["scopeAmbiguityWitnesses"]
+    assert {(item["case"], item["year"]) for item in witnesses} == {
+        ("caseFlowYearBinglin", 1993),
+        ("caseP1_011_seven_killer", 2031),
+        ("caseP1_011_proper_officer", 1960),
+    }
+    for witness in witnesses:
+        facts = chart_cases[witness["case"]]["facts"]
+        natal = natal_raw_groups(facts)
+        assert witness["natalRawGroups"] == [
+            group for group in ("七杀", "财官印绶") if natal[group]
+        ], witness
+        assert witness["selectedStemRawGroups"] == stem_raw_groups(facts, witness["year"]), witness
+    expected_blockers = {
+        "source_scoped_classification": {
+            "sourceAnchors": {"L1084", "L1624", "L1635", "L3459", "L4959", "L4962"},
+            "fixtureWitnesses": {"caseFlowYearBinglin@1993", "caseP1_011_seven_killer@2031", "caseP1_011_proper_officer@1960"},
+        },
+        "coexistence_and_conditional_order": {
+            "sourceAnchors": {"L1084", "L3468", "L3471"},
+            "fixtureWitnesses": {"caseFlowYearBinglin@1993", "caseP1_011_seven_killer@2031", "caseP1_011_proper_officer@1960"},
+        },
+        "effect_and_tristate_examples": {
+            "sourceAnchors": {"L1084", "L3468", "L3471", "L8893", "L10158"},
+            "fixtureWitnesses": set(observed),
+        },
+    }
+    assert {item["id"] for item in contract["minimumBlockingDecisions"]} == set(expected_blockers)
+    for blocker in contract["minimumBlockingDecisions"]:
+        expected = expected_blockers[blocker["id"]]
+        assert set(blocker["sourceAnchors"]) == expected["sourceAnchors"]
+        assert set(blocker["sourceAnchors"]) <= source_anchors
+        assert set(blocker["fixtureWitnesses"]) == expected["fixtureWitnesses"]
+        assert set(blocker["fixtureWitnesses"]) <= set(observed)
     print(json.dumps({"ruleId": contract["ruleId"], "status": contract["status"], "checked": observed}, ensure_ascii=False))
 
 

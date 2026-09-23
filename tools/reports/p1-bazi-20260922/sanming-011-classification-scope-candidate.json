@@ -31,6 +31,16 @@
     "L3459 的甲日乙卯时与 L4959-L4962 六甲日丁卯时相抵触，不能用真实出生时柱满足前者。",
     "得力、喜忌、制化救应、用神损益尚无可执行三态合同。"
   ],
+  "scopeAmbiguityWitnesses": [
+    {"case": "caseFlowYearBinglin", "year": 1993, "natalRawGroups": ["七杀", "财官印绶"], "selectedStemRawGroups": ["财官印绶"], "proves": "本命同层多值，不能用单一类别覆盖"},
+    {"case": "caseP1_011_seven_killer", "year": 2031, "natalRawGroups": ["财官印绶"], "selectedStemRawGroups": ["七杀"], "proves": "只取本命与只取所选岁运会给出相反方向"},
+    {"case": "caseP1_011_proper_officer", "year": 1960, "natalRawGroups": ["七杀", "财官印绶"], "selectedStemRawGroups": ["财官印绶"], "proves": "只取岁运会漏掉本命七杀，且本命两类同现"}
+  ],
+  "minimumBlockingDecisions": [
+    {"id": "source_scoped_classification", "sourceAnchors": ["L1084", "L1624", "L1635", "L3459", "L4959", "L4962"], "fixtureWitnesses": ["caseFlowYearBinglin@1993", "caseP1_011_seven_killer@2031", "caseP1_011_proper_officer@1960"], "needed": "分别裁定 L1084、L3459-L3471、L4959-L4962 的刃起法及本命透干、藏干、格局、所选大运、所选流年中哪些层级构成有效类别；保留多值与逐柱来源", "current": "原文只有条件叙述，没有统一分类取值算法"},
+    {"id": "coexistence_and_conditional_order", "sourceAnchors": ["L1084", "L3468", "L3471"], "fixtureWitnesses": ["caseFlowYearBinglin@1993", "caseP1_011_seven_killer@2031", "caseP1_011_proper_officer@1960"], "needed": "裁定同层多类、跨层相反类别及 L3471 月令他格门槛的冲突处理；未知前提不得按否处理", "current": "L3468 的有刃有印无煞岁运逢煞反转成厚福，不能推出七杀或印绶的通用覆盖优先级"},
+    {"id": "effect_and_tristate_examples", "sourceAnchors": ["L1084", "L3468", "L3471", "L8893", "L10158"], "fixtureWitnesses": ["caseFlowYearBinglin@1993", "caseP1_011_seven_killer@2031", "caseP1_011_proper_officer@1960", "caseFlowYear@2019", "caseFlowYear@2026", "caseFlowYearUnknown@2100"], "needed": "为有效类别、喜忌、制化救应及损用神给可复核输入；每个作用分支分别提供真日期、所选年、有效大运、逐柱出处的作用正例、反例、未知例", "current": "六个盘年仅有形态是／否／信息不足；作用均未裁决"}
+  ],
   "fixture": "tools/reports/facts-sample.json",
   "cases": [
     {"case": "caseFlowYearBinglin", "year": 1993, "shape": "是", "sameBranch": "是", "natalRaw": {"七杀": true, "财官印绶": true, "羊刃": false}, "selectedLuckStem": "正财", "selectedYearStem": "正财", "effectVerdict": "未裁决"},

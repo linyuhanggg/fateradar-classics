@@ -19,4 +19,18 @@
 
 [核对器](../../tools/verify-sanming-011-classification-scope.py)锁定六盘年的同干支形态三态：1993、2031、1960 年为“是”，2019、2026 年为“否”，2100 年缺有效大运为“信息不足”。2019 年丁亥运／己亥岁还单独显示同支“是”，证明同干支的“否”不能否定另一段来源。1993 年的本命七杀和财官印绶同现、2031 年本命／岁运标签分歧、1960 年相反的分歧也逐项断言。**六盘都没有来源支持的 011 作用正例、反例或未知三态标注，作用全部“未裁决”。** 结构形态的正反未知不能充作作用样盘。
 
-解除阻断需要古籍侧先给每段来源独立的形态和刃位取法、原局格局及月令他格的可复核判据，裁定同层与跨层多标签如何处理，再定义七杀／财官印绶得力、喜忌、制化救应及损用神的输入和冲突顺序。每个作用分支须有真实日期盘、选定年、有效大运、本命逐柱来源的正例、反例、未知例；L3459 的不可达甲日乙卯时只能作来源冲突，不能列为真盘。此前 011 继续 `applicable_to=[]`、`verified=false`，产品对其作用保持 unknown；011A 的字面入口不能证明原 011 完成。
+### 最小反例与阻塞决策
+
+[机器草案](../../tools/reports/p1-bazi-20260922/sanming-011-classification-scope-candidate.json)的 `scopeAmbiguityWitnesses` 将三盘的**本命原始组**与**所选岁运天干原始组**分开，并由核对器从共享 fixture 重新计算。这些都不是有效类别或吉凶判定：
+
+| 真盘年 | 本命原始组 | 所选岁运天干原始组 | 单值政策的损失 |
+| --- | --- | --- | --- |
+| `caseFlowYearBinglin@1993` | 七杀、财官印绶 | 财官印绶 | 本命同层两组并存，任取其一会抹掉另一组。 |
+| `caseP1_011_seven_killer@2031` | 财官印绶 | 七杀 | 只取本命与只取岁运导向相反。 |
+| `caseP1_011_proper_officer@1960` | 七杀、财官印绶 | 财官印绶 | 只取岁运会漏掉本命七杀。 |
+
+解除阻断只需先裁定三个相互依赖的问题，草案以 `minimumBlockingDecisions` 固定：① 分别给 L1084、L3459–3471、L4959–4962 的刃起法和有效分类层级，说明本命透干、藏干、格局与所选大运、流年哪些入组；② 给同层多值、跨层相反组及 L3471“月令合他格”的条件优先级，任何未知前提保留未知；③ 给得力、喜忌、制化救应、损用神的可复核输入，并为每个作用分支提供真实日期盘、选定年、有效大运及逐柱出处的作用正例、反例、未知例。当前六盘只满足**形态**的正反未知，不能填补第三项；L3459 的不可达甲日乙卯时只能作来源冲突，不能列为真盘。
+
+每项的原文与盘例均在草案中用 `sourceAnchors`、`fixtureWitnesses` 明列，核对器逐字检查锚点并重算盘例：① 对照[L1084](../../sources/fulltext/bazi/sanming-tonghui/fulltext.md#L1084)、[L1624／1635](../../sources/fulltext/bazi/sanming-tonghui/fulltext.md#L1624)、[L3459](../../sources/fulltext/bazi/sanming-tonghui/fulltext.md#L3459)、[L4959／4962](../../sources/fulltext/bazi/sanming-tonghui/fulltext.md#L4959)及上表三盘；② 对照[L1084](../../sources/fulltext/bazi/sanming-tonghui/fulltext.md#L1084)、[L3468／3471](../../sources/fulltext/bazi/sanming-tonghui/fulltext.md#L3468)及上表三盘；③ 对照[L1084](../../sources/fulltext/bazi/sanming-tonghui/fulltext.md#L1084)、[L3468／3471](../../sources/fulltext/bazi/sanming-tonghui/fulltext.md#L3468)、[L8893](../../sources/fulltext/bazi/sanming-tonghui/fulltext.md#L8893)、[L10158](../../sources/fulltext/bazi/sanming-tonghui/fulltext.md#L10158)及六盘年。第三项盘例只能证明**目前缺作用裁决**，不能把“未裁决”冒充已验证的语义 unknown 真盘。
+
+在这些裁决和样盘交齐前，011 继续 `applicable_to=[]`、`verified=false`，产品对其作用保持 unknown；011A 的字面入口不能证明原 011 完成。
