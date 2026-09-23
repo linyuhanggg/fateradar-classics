@@ -1,7 +1,9 @@
 """Prove the structural FactKey preserves the narrow ZPR entry's tri-state.
 
 Run: python3 tools/verify-zpr-e-02-formalization-gate.py
-The source rule is registered; Product imports the separate V5 handoff.
+The V5 historical 43-chart projection remains locked while current V6's seven
+appended Yin-month probes are checked as information-insufficient for this
+single-qi entry. The source rule remains provisional.
 """
 from __future__ import annotations
 
@@ -9,6 +11,7 @@ import copy
 import hashlib
 import importlib.util
 import json
+import subprocess
 import sys
 from pathlib import Path
 
@@ -20,6 +23,21 @@ CONTRACT = ROOT / "docs/closeout/ZPR_E_02_SINGLE_QI_FORMALIZATION_GATE_20260923.
 CANDIDATE = ROOT / "docs/closeout/ZPR_E_02_SINGLE_QI_MONTH_OFFICER_ENTRY_20260923.json"
 FIXTURE = ROOT / "tools/reports/facts-sample.json"
 FIXTURE_SHA = "3f9e7b62c4d35cc4df2006cec7c994a2178d922a50377ab62c39e10d4c5b3dcc"
+CURRENT_FIXTURE_SHA = "206638e12e5390ea8d41f8140d23f61efcee673dfa5aebd65e2dc95c937df5f8"
+V5_FIXTURE_REV = "fe69959fd925b8a4e26552761a49445a43a5f16a"
+V6_ADDED_CASES = {
+    "caseP1_ZPR_month_yin_bing_only_1969",
+    "caseP1_ZPR_month_xin_jia_bing_1954",
+    "caseP1_ZPR_month_xin_jia_bing_1984",
+    "caseP1_ZPR_month_xin_no_jia_1979",
+    "caseP1_ZPR_month_xin_jia_bing_wu_1984",
+    "caseP1_ZPR_month_xin_jia_bing_meeting_1994",
+    "caseP1_ZPR_month_yin_bing_wu_1979",
+}
+V6_ADDED_STRUCTURAL_KEYS = {
+    "natal_yin_hidden_exposure_pattern",
+    "natal_yin_simple_hidden_exposure_pattern",
+}
 FACT_SCOPE = {"layer": "本命", "pillar": "month"}
 DAY_SCOPE = {"layer": "本命", "pillar": "day"}
 
@@ -78,15 +96,33 @@ def without(facts: list[dict], key: str, scope: dict) -> list[dict]:
     return [fact for fact in facts if fact.get("key") != key or fact.get("scope") != scope]
 
 
+def v5_projection(chart: dict) -> dict:
+    """Remove only the two new structural facts appended to the V5 sample."""
+    projected = copy.deepcopy(chart)
+    projected["facts"] = [
+        fact for fact in projected["facts"]
+        if fact.get("key") not in V6_ADDED_STRUCTURAL_KEYS
+    ]
+    return projected
+
+
 def main() -> None:
     contract = json.loads(CONTRACT.read_text())
     candidate = json.loads(CANDIDATE.read_text())
     assert contract["status"] == "source_registered_v5_handoff_product_import_pending"
     assert contract["derivedStructuralFact"]["valueByBranch"] == candidate["supportedSingleQiBranches"]
     assert contract["regularOfficerStemByDay"] == candidate["regularOfficerStemByDay"]
-    assert hashlib.sha256(FIXTURE.read_bytes()).hexdigest() == FIXTURE_SHA
-    charts = json.loads(FIXTURE.read_text())["bazi"]
-    assert len(charts) == 43
+    current_fixture_bytes = FIXTURE.read_bytes()
+    assert hashlib.sha256(current_fixture_bytes).hexdigest() == CURRENT_FIXTURE_SHA
+    current_charts = json.loads(current_fixture_bytes)["bazi"]
+    v5_fixture_bytes = subprocess.check_output(
+        ["git", "show", f"{V5_FIXTURE_REV}:tools/reports/facts-sample.json"], cwd=ROOT
+    )
+    assert hashlib.sha256(v5_fixture_bytes).hexdigest() == FIXTURE_SHA
+    charts = json.loads(v5_fixture_bytes)["bazi"]
+    assert len(charts) == 43 and len(current_charts) == 50
+    assert set(current_charts) - set(charts) == V6_ADDED_CASES
+    assert all(v5_projection(current_charts[case_id]) == chart for case_id, chart in charts.items())
 
     narrow = load_module("zpr_narrow_candidate", ROOT / "tools/verify-zpr-e-02-single-qi-month-entry.py")
     evaluator = load_module("zpr_predicate_reference", ROOT / "tools/eval-predicates.py")
@@ -111,6 +147,18 @@ def main() -> None:
     assert {state: len(ids) for state, ids in results.items()} == {
         "满足": 4, "不满足": 7, "信息不足": 32,
     }
+
+    current_results: dict[str, list[str]] = {}
+    for case_id, chart in current_charts.items():
+        actual = evaluator.evaluate(rule, chart["facts"])["verdict"]
+        current_results.setdefault(actual, []).append(case_id)
+    assert {state: len(ids) for state, ids in current_results.items()} == {
+        "满足": 4, "不满足": 7, "信息不足": 39,
+    }
+    assert all(
+        case_id in current_results["信息不足"]
+        for case_id in V6_ADDED_CASES
+    )
 
     positive = without(charts["caseP1_010_luck_gui_only"]["facts"], fact_key, FACT_SCOPE)
     negative = without(charts["cov2_bazi_3"]["facts"], fact_key, FACT_SCOPE)
@@ -164,9 +212,12 @@ def main() -> None:
     print(json.dumps({
         "status": "PASS", "sourceRuleRegistered": True,
         "derivedFactProducedByProduct": True,
-        "fixtureSha256": FIXTURE_SHA,
-        "realDateCharts": len(charts),
-        "allChartStates": {state: len(ids) for state, ids in results.items()},
+        "v5FixtureSha256": FIXTURE_SHA,
+        "currentFixtureSha256": CURRENT_FIXTURE_SHA,
+        "v5HistoricalCharts": len(charts),
+        "currentFixtureCharts": len(current_charts),
+        "v5HistoricalChartStates": {state: len(ids) for state, ids in results.items()},
+        "currentFixtureStates": {state: len(ids) for state, ids in current_results.items()},
         "probes": {label: expected for label, (_, expected) in probes.items()},
         "bareCangganFalsePositive": True,
         "derivedFactSingletonGuard": guard_status,

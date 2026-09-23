@@ -1,0 +1,303 @@
+{
+  "id": "ZPR-E-02-full-algorithm-candidate-20260923",
+  "status": "candidate_not_registered_not_executable_product_contract",
+  "sourceRuleId": "ZPR-E-02",
+  "sourceRevision": "313b0731804987daef83c5e3a9c9a92b93b30885",
+  "sourcePath": "sources/fulltext/bazi/ziping-zhenquan/fulltext.md",
+  "fixture": {
+    "path": "tools/reports/facts-sample.json",
+    "sha256": "206638e12e5390ea8d41f8140d23f61efcee673dfa5aebd65e2dc95c937df5f8",
+    "baziCases": 50
+  },
+  "claim": "按来源逐层抽取月令入口候选、主兼／变化、顺逆标签、八类喜忌与具名救应；任何未裁定作用和路线冲突均为信息不足。本合同不升级 ZPR-E-02 verified/rescue，也不是 Cosmic 可消费规则。",
+  "scope": {
+    "layer": "本命",
+    "candidateEntryIdentity": "routeId + monthBranch + sourceStem + sourceLine",
+    "selectedYearMayNotSupplyNatalInput": true,
+    "genericGejuLabelMayNotSupplyRouteOrVerdict": true,
+    "exposedStemScopes": ["年干", "月干", "时干"],
+    "dayStemIsNotAnExposedMonthUse": true
+  },
+  "truthSemantics": {
+    "states": ["满足", "不满足", "信息不足"],
+    "conflict": "同一键同一精确作用域多值冲突为信息不足，不按优先级挑值",
+    "missing": "需用输入缺失为信息不足，不视为不存在",
+    "localNegative": "不满足只否定当前命名来源例型，不否定其它月令入口、其它格局或整条 ZPR-E-02",
+    "wholeRule": "只有月令入口取舍、所属路线顺逆、该路线完整喜忌作用、反证扫描及已触发救应均有来源限定判据和真盘证据后才能判定；目前统一信息不足"
+  },
+  "inputContract": {
+    "requiredChartFacts": [
+      {"semanticSlot": "natal_day_stem", "factKey": "gan", "scope": {"layer": "本命", "pillar": "day"}, "cardinality": "exactly_one_distinct_valid_value"},
+      {"semanticSlot": "natal_month_branch", "factKey": "zhi", "scope": {"layer": "本命", "pillar": "month"}, "cardinality": "exactly_one_distinct_valid_value"},
+      {"semanticSlot": "natal_month_order", "factKey": "yueling", "scope": {"layer": "本命", "pillar": "month"}, "cardinality": "exactly_one_distinct_valid_value_equal_to_month_branch"},
+      {"semanticSlot": "complete_natal_stems_and_branches", "factKeys": ["gan", "zhi"], "scope": {"layer": "本命"}, "pillars": ["year", "month", "day", "time"], "cardinality": "exactly_one_valid_value_per_key_and_pillar"},
+      {"semanticSlot": "complete_month_hidden_stems", "factKey": "canggan", "scope": {"layer": "本命", "pillar": "month"}, "cardinality": "exact_match_to_supported_branch_hidden_set_or_withhold"}
+    ],
+    "observationDoesNotImplyEffect": ["gan", "zhi", "canggan", "shishen", "natal_relation", "geju", "geju.execution", "analysis.yongshen.routes"],
+    "requiredButNotYetRegisteredSemanticSlots": [
+      "adjudicated_month_route_id_and_origin_basis",
+      "principal_and_companion_role_per_route",
+      "route_specific_shun_or_ni_direction",
+      "actor_target_relation_kind_and_strength",
+      "position_exposure_and_hidden_stem_semantics_per_relation",
+      "complete_counterevidence_scan_and_explicit_nonoccurrence",
+      "route_specific_rescue_result_and_rescue_damage",
+      "unresolved_overlap_or_change_priority"
+    ]
+  },
+  "supportedHiddenStemSets": {
+    "子": ["癸"], "丑": ["己", "癸", "辛"], "寅": ["甲", "丙", "戊"], "卯": ["乙"],
+    "辰": ["戊", "乙", "癸"], "巳": ["丙", "戊", "庚"], "午": ["丁", "己"], "未": ["己", "丁", "乙"],
+    "申": ["庚", "壬", "戊"], "酉": ["辛"], "戌": ["戊", "辛", "丁"], "亥": ["壬", "甲"]
+  },
+  "hiddenStemSetCaveat": "此映射仅用于核对当前 Product fixture 的月藏完整性与识别原文具名藏干；除原文逐项给出者外，不宣称《子平真诠》据此裁定每支主次。",
+  "namedSourcePatterns": [
+    {
+      "id": "ZPR-L419-YIN-NO-JIA-EXPOSED-BING",
+      "sourceLines": [419],
+      "match": {"dayStem": null, "monthBranch": "寅", "visibleAll": ["丙"], "visibleNone": ["甲"]},
+      "ambiguousWhen": [{"visibleAny": ["戊"]}, {"dayStemAny": ["甲", "乙"]}],
+      "output": {"claim": "寅月本主甲不透而丙透时，丙可作月令局部主入口", "entryStem": "丙", "localRank": "主", "wholeChart格局": "信息不足"},
+      "limits": ["不得由丙作局部主入口推出丙格成败、喜忌或吉凶", "甲乙日寅月另受 L349–351 禄劫另取前提约束", "戊另透时原文未裁主兼次序"]
+    },
+    {
+      "id": "ZPR-L421-DING-HAI-MAO-WEI-RESOURCE-CHANGE",
+      "sourceLines": [421],
+      "match": {"dayStem": "丁", "monthBranch": "亥", "branchAll": ["卯", "未"]},
+      "output": {"claim": "亥月原正官入口遇亥卯未全会，原文记作化印", "localRole": "印", "wholeChart作用": "信息不足"}
+    },
+    {
+      "id": "ZPR-L421-JI-SHEN-REN-EXPOSED-WEALTH-CHANGE",
+      "sourceLines": [421],
+      "match": {"dayStem": "己", "monthBranch": "申", "visibleAll": ["壬"]},
+      "output": {"claim": "己日申月藏庚、壬透时，原文记作由伤官变化为财", "localRole": "财", "wholeChart作用": "信息不足"}
+    },
+    {
+      "id": "ZPR-L426-XIN-YIN-BING-OFFICER-CHANGE",
+      "sourceLines": [426],
+      "match": {"dayStem": "辛", "monthBranch": "寅", "visibleAll": ["丙"]},
+      "output": {"claim": "辛日寅月逢丙透的原文变化例为由财化官", "localRole": "官", "rank": "甲兼透另依 L435 裁决"}
+    },
+    {
+      "id": "ZPR-L427-REN-XU-XIN-RESOURCE-CHANGE",
+      "sourceLines": [427],
+      "match": {"dayStem": "壬", "monthBranch": "戌", "visibleAll": ["辛"]},
+      "output": {"claim": "壬日戌月逢辛透的原文变化例为由煞化印", "localRole": "印"}
+    },
+    {
+      "id": "ZPR-L428-GUI-YIN-BING-YIN-WU-XU-WEALTH-CHANGE",
+      "sourceLines": [428],
+      "match": {"dayStem": "癸", "monthBranch": "寅", "visibleAll": ["丙"], "visibleNone": ["甲"], "branchAll": ["午", "戌"]},
+      "output": {"claim": "甲藏而丙透、寅午戌会时原文记作伤官化财；官另透时可作财旺生官论", "localRole": "财", "wholeChart成格": "官透等路线须另行核验"}
+    },
+    {
+      "id": "ZPR-L429-YI-YIN-WU-YIN-WU-XU-FOOD-CHANGE",
+      "sourceLines": [429],
+      "match": {"dayStem": "乙", "monthBranch": "寅", "visibleAll": ["戊"], "branchAll": ["午", "戌"]},
+      "output": {"claim": "乙日寅月透戊并寅午戌会，原文记作月劫化食伤", "localRole": "食伤"}
+    },
+    {
+      "id": "ZPR-L432-BING-YIN-WU-XU-ROB_CHANGE",
+      "sourceLines": [432],
+      "match": {"dayStem": "丙", "monthBranch": "寅", "branchAll": ["午", "戌"], "visibleNone": ["甲", "壬"]},
+      "output": {"claim": "丙日寅月甲不透并寅午戌会的原文变化例为印化劫", "localRole": "劫", "overlapNote": "若透甲或壬，L438 另称仍为印、格不破"}
+    },
+    {
+      "id": "ZPR-L432-BING-SHEN-REN-ZI-CHEN-KILL_CHANGE",
+      "sourceLines": [432],
+      "match": {"dayStem": "丙", "monthBranch": "申", "visibleAll": ["壬"], "visibleNone": ["庚"], "branchAll": ["子", "辰"]},
+      "output": {"claim": "丙日申月庚藏、壬透并申子辰会的原文变化例为财化煞", "localRole": "煞"}
+    },
+    {
+      "id": "ZPR-L435-XIN-YIN-JIA-BING-PRINCIPAL-COMPANION",
+      "sourceLines": [435, 452],
+      "match": {"dayStem": "辛", "monthBranch": "寅", "visibleAll": ["甲", "丙"]},
+      "ambiguousWhen": [{"visibleAny": ["戊"]}, {"branchAll": ["午", "戌"]}],
+      "output": {
+        "claim": "辛日寅月甲丙并透的限定例型，正财主入口、正官兼入口；L452称财官相生、两相得",
+        "entries": [
+          {"entryId": "ZPR-E-02:month-寅:hidden-甲:辛日正财", "sourceStem": "甲", "tenGod": "正财", "localRank": "主"},
+          {"entryId": "ZPR-E-02:month-寅:hidden-丙:辛日正官", "sourceStem": "丙", "tenGod": "正官", "localRank": "兼"}
+        ],
+        "notProven": ["full格局成败", "整盘纯杂", "财官相生实际作用", "喜忌", "救应", "流年作用"]
+      },
+      "limits": ["戊另透时未裁三入口主兼", "寅午戌另有透会并用关系，当前优先未知", "只能否定此窄例，不能否定其他辛日寅月路线"]
+    },
+    {
+      "id": "ZPR-L436-YI-SHEN-WU-REN-OFFICER-PRINCIPAL-RESOURCE-COMPANION",
+      "sourceLines": [436],
+      "match": {"dayStem": "乙", "monthBranch": "申", "visibleAll": ["壬", "戊"]},
+      "output": {"claim": "乙日申月壬透化印、戊又透，原文明指格成正官、印为兼格；财生官且印退位", "principalRole": "正官", "companionRole": "印"}
+    },
+    {
+      "id": "ZPR-L437-GUI-YIN-BING-JIA-HURTING-PRINCIPAL",
+      "sourceLines": [437],
+      "match": {"dayStem": "癸", "monthBranch": "寅", "visibleAll": ["丙", "甲"]},
+      "output": {"claim": "癸日寅月丙透化财、甲又透，原文判格成伤官，并注明忌见戊官", "principalRole": "伤官", "namedCounterevidence": "戊官忌见"}
+    },
+    {
+      "id": "ZPR-L438-BING-YIN-WU-XU-JIA_OR_REN-PRESERVE-RESOURCE",
+      "sourceLines": [438],
+      "match": {"dayStem": "丙", "monthBranch": "寅", "branchAll": ["午", "戌"], "visibleAny": ["甲", "壬"]},
+      "output": {"claim": "丙日寅月午戌会劫又透甲或壬，原文判仍为印、格不破", "principalRole": "印"}
+    },
+    {
+      "id": "ZPR-L439-BING-SHEN-REN-WU-KEEP-WEALTH",
+      "sourceLines": [439],
+      "match": {"dayStem": "丙", "monthBranch": "申", "visibleAll": ["壬", "戊"]},
+      "output": {"claim": "丙日申月壬化煞又透戊，原文以食神制煞生财判仍为财格", "principalRole": "财", "namedMechanism": "食神制煞生财"}
+    },
+    {
+      "id": "ZPR-L452-PURE-XIN-YIN-JIA-BING",
+      "sourceLines": [452],
+      "match": {"dayStem": "辛", "monthBranch": "寅", "visibleAll": ["甲", "丙"]},
+      "ambiguousWhen": [{"visibleAny": ["戊"]}, {"branchAll": ["午", "戌"]}],
+      "output": {"localClassification": "纯", "reason": "财与官相生，两相得", "rank": "本句不另定主兼；主兼引用 L435"}
+    },
+    {
+      "id": "ZPR-L452-PURE-WU-SHEN-GENG-REN",
+      "sourceLines": [452],
+      "match": {"dayStem": "戊", "monthBranch": "申", "visibleAll": ["庚", "壬"]},
+      "output": {"localClassification": "纯", "reason": "财与食相生，两相得", "rank": "未明示"}
+    },
+    {
+      "id": "ZPR-L452-PURE-GUI-WEI-YI-JI",
+      "sourceLines": [452],
+      "match": {"dayStem": "癸", "monthBranch": "未", "visibleAll": ["乙", "己"]},
+      "output": {"localClassification": "纯", "reason": "煞与食相尅而得其当", "rank": "未明示"}
+    },
+    {
+      "id": "ZPR-L454-MIXED-REN-WEI-YI-JI",
+      "sourceLines": [454],
+      "match": {"dayStem": "壬", "monthBranch": "未", "visibleAll": ["乙", "己"]},
+      "output": {"localClassification": "杂", "reason": "官与伤相尅、两不相谋", "rank": "未明示"}
+    },
+    {
+      "id": "ZPR-L454-MIXED-JIA-CHEN-WU-REN",
+      "sourceLines": [454],
+      "match": {"dayStem": "甲", "monthBranch": "辰", "visibleAll": ["戊", "壬"]},
+      "output": {"localClassification": "杂", "reason": "印与财相尅、两不相谋", "rank": "未明示"}
+    },
+    {
+      "id": "ZPR-L454-MIXED-GUI-WU-DING-JI",
+      "sourceLines": [454],
+      "match": {"dayStem": "癸", "monthBranch": "午", "visibleAll": ["丁", "己"]},
+      "output": {"localClassification": "杂", "reason": "财生煞而适为累", "rank": "未明示"}
+    }
+  ],
+  "p106HandoffPredicateComparison": {
+    "sourceLiteralL435Scope": {"states": {"满足": 2, "不满足": 46, "信息不足": 2}, "unknownCases": ["caseP1_ZPR_month_xin_jia_bing_wu_1984", "caseP1_ZPR_month_xin_jia_bing_meeting_1994"]},
+    "v6PredicateCurrent": {"states": {"满足": 2, "不满足": 44, "信息不足": 4}, "unknownCases": ["caseP1_ZPR_month_xin_jia_bing_wu_1984", "caseP1_ZPR_month_xin_jia_bing_meeting_1994", "cov1_bazi_4", "cov3_bazi_6"]},
+    "difference": "V6 predicate checks natal day gan and natal_yin_simple_hidden_exposure_pattern only. For cov1_bazi_4 and cov3_bazi_6 the day is 辛 while month branch and month order are known 丑/辰, but the Yin-only derived key is absent, so its dense-fact evaluator returns unknown. The source-literal L435 candidate also checks month branch/order; those two charts definitively do not match this narrow pattern.",
+    "recommendedFuturePredicateGuard": [
+      {"key": "zhi", "value": "寅", "scope": {"layer": "本命", "pillar": "month"}},
+      {"key": "yueling", "value": "寅", "scope": {"layer": "本命", "pillar": "month"}}
+    ],
+    "decision": "Keep the published V6 count as the handoff evaluator result; use 2/46/2 for this independent source-literal pattern audit. Do not mutate V6 in place."
+  },
+  "fourStorehouseRuleCandidate": {
+    "sourceLines": [542, 544, 546, 548],
+    "scope": "仅按杂气章中辰戌丑未透干会支语义保守建模，不把该条泛化到所有月支",
+    "selection": "source-confirmed exposed month-hidden stem gives a local month-use candidate; one透则一用，多透则兼用；source-confirmed meeting adds a separate meeting-derived use, 透而又会则二者并用",
+    "localEvaluator": {
+      "monthBranches": ["辰", "戌", "丑", "未"],
+      "exposedPillars": ["year", "month", "time"],
+      "ifOneExposedHiddenStem": "一用",
+      "ifMultipleExposedHiddenStems": "兼用; no principal/companion ranking inferred",
+      "ifNamedExposedStemAndNamedMeetingBothExist": "透与会并用",
+      "ifNoNamedRouteExists": "不满足 this four-storehouse local candidate only; other E-02 routes remain possible",
+      "visibleTenGodRole": "derive from natal day stem and exposed hidden stem as an annotation; role derivation does not itself prove any effect",
+      "meetingPatternsImplementedFromExactExamples": [
+        {"monthBranch": "辰", "otherBranches": ["申", "子"], "dayStem": "甲", "localMeetingRole": "印", "sourceLines": [546]},
+        {"monthBranch": "未", "otherBranches": ["亥", "卯"], "dayStem": "壬", "localMeetingRole": "伤官", "sourceLines": [558]},
+        {"monthBranch": "戌", "otherBranches": ["寅", "午"], "dayStem": "甲", "localMeetingRole": "伤官", "sourceLines": [561]}
+      ],
+    "unsupportedMeetingBoundary": "丑月巳酉组合在L554用‘或巳或酉’表述；本候选将有关组合保留为信息不足，直到来源裁定是二支齐全还是任选其一"
+    },
+    "currentFixtureAudit": {
+      "fixtureSha256": "206638e12e5390ea8d41f8140d23f61efcee673dfa5aebd65e2dc95c937df5f8",
+      "caseCount": 50,
+      "states": {"满足": 11, "不满足": 37, "信息不足": 2},
+      "satisfiedProbeCases": ["caseP1_ZPR_01_wu_only", "caseP1_ZPR_01_wu_gui_both", "caseP1_ZPR_02_shen_zi"],
+      "unknownCases": ["cov1_bazi_4", "cov3_bazi_12"],
+      "unknownReason": "L554丑月巳酉会金的‘或巳或酉’未裁定为两支齐全或任选其一"
+    },
+    "meetingEvidence": "Only accept a meeting pattern whose full branch set is complete and whose source example names that combination; otherwise information insufficient",
+    "relationshipState": "有情/无情须再过 L550–575 的作用关系规则；不得从同时存在直接判吉凶",
+    "examples": [
+      {"sourceLines": [542, 544], "anchor": "甲辰月透戊/癸/乙分别取偏财/正印/月劫"},
+      {"sourceLines": [546, 552], "anchor": "甲辰月申子辰会水取印"},
+      {"sourceLines": [553], "anchor": "丙辰月癸官与乙印并透，官印相生、印去暗土清官"},
+      {"sourceLines": [554], "anchor": "甲丑月辛官、巳酉会金、己财生官"},
+      {"sourceLines": [558], "anchor": "壬未月己官与亥卯伤官会，合而无情"},
+      {"sourceLines": [559, 560], "anchor": "甲辰月戊财与癸印合，或壬印与财相伤"},
+      {"sourceLines": [561], "anchor": "甲戌月辛官、丁伤官与寅午伤官会，合而无情"},
+      {"sourceLines": [564, 565, 566], "anchor": "甲辰月壬印受丙生土或辰戌冲影响，需再看申子会与月气"},
+      {"sourceLines": [569, 570], "anchor": "癸辰月戊官与申子水会相尅，但所尅为劫财、月劫用官无害"},
+      {"sourceLines": [571, 572], "anchor": "丙辰月戊食与壬煞并透相尅，但食制煞可有情"}
+    ]
+  },
+  "directionCandidate": {
+    "sourceLines": [328, 330, 334],
+    "modeByAdjudicatedEntryKind": {"财": "顺用", "官": "顺用", "印": "顺用", "食": "顺用", "煞": "逆用", "伤": "逆用", "劫": "逆用", "刃": "逆用"},
+    "guard": "只给来源明确且已裁决的 entry 输出方向；禄劫总括逆用与 L349–351 另取财官煞食路线分开；并存入口逐个标注",
+    "notEquivalentTo": ["五行扶抑喜忌", "调候喜忌", "已成格", "现实吉凶"]
+  },
+  "effectCandidate": {
+    "sourceLines": [330, 331, 332, 333, 334, 335, 336, 337, 340, 342, 347],
+    "ruleIntroCallsIt": "顺逆之大略",
+    "perRouteClauses": [
+      {"entryKind": "财", "favorableClauses": ["财喜食神以相生", "生官以护财"]},
+      {"entryKind": "官", "favorableClauses": ["官喜透财以相生", "生印以护官"]},
+      {"entryKind": "印", "favorableClauses": ["印喜官煞以相生", "劫才以护印"]},
+      {"entryKind": "食", "favorableClauses": ["食喜身旺以相生", "生财以护食"]},
+      {"entryKind": "七煞", "favorableClauses": ["喜食神以制伏"], "unfavorableClauses": ["忌财印以资扶"]},
+      {"entryKind": "伤官", "favorableClauses": ["喜佩印以制伏", "生财以化伤"]},
+      {"entryKind": "阳刃", "favorableClauses": ["喜官煞以制伏"], "unfavorableClauses": ["忌官煞之俱无"]},
+      {"entryKind": "月劫", "favorableClauses": ["喜透官以制伏", "利用财而透食以化劫"]}
+    ],
+    "claimUnit": "每个已裁决的routeId × 原文分句 × 具体作用者/对象，不是整盘固定元素清单",
+    "requirementsBeforeVerdict": ["入口主兼已裁决", "喜忌作用具体作用者和目标可定位", "透干与藏干分别核验", "相生制伏化伤护卫关系有独立判据", "已扫描该分句相关反证", "未决及其它路线不被跨格代替"],
+    "currentState": "所有50盘均信息不足；fixture只含观察事实，没有上述 route-scoped effect adjudications"
+  },
+  "rescueCandidate": {
+    "sourceLines": [383, 385, 396, 398, 409, 411],
+    "state": "unimplemented",
+    "perRoutePatterns": [
+      {"anchor": "官逢伤，透印解", "sourceLines": [399]},
+      {"anchor": "杂煞，合煞清", "sourceLines": [400]},
+      {"anchor": "刑冲，会合解", "sourceLines": [401]},
+      {"anchor": "财逢劫，透食化或生官制", "sourceLines": [402]},
+      {"anchor": "财逢煞，食神制煞生财或存财合煞", "sourceLines": [403]},
+      {"anchor": "印逢财，劫财解或合财存印", "sourceLines": [404]},
+      {"anchor": "食逢枭，就煞成格或生财护食", "sourceLines": [405]},
+      {"anchor": "煞逢食制、印护煞又逢财去印存食", "sourceLines": [406]},
+      {"anchor": "伤官生财透煞且煞逢合", "sourceLines": [407]},
+      {"anchor": "阳刃用官煞、带伤食而重印护", "sourceLines": [408]},
+      {"anchor": "建禄月劫官遇伤而伤被合；用财带煞而煞被合", "sourceLines": [409]}
+    ],
+    "openQuestions": ["先有何种成立/败象才可启动对应救应", "透干、根气、合绊和作用是否有效的判据", "救应者是否被合损及复合救应顺序", "无救应的完整扫描与显式反证", "与 geju.execution.issues 的逐句对应"]
+  },
+  "globalFailureAdjudication": {
+    "currentExecutableFailWhen": "没有月令用神可分顺逆",
+    "sourceConflict": "L349–351允许建禄月劫月令无可直接为用时，转扫四柱财官煞食透干会支另取；缺入口事实或候选未裁决不能等价于不存在",
+    "candidateState": "unknown_until_full_month_route_search_and_adjudication",
+    "prohibitedShortcut": "任何一个窄入口不满足都不能触发整条规则不满足"
+  },
+  "unresolvedAdjudicationsAndMinimumEvidence": [
+    {"id": "yin-three-stems", "question": "辛日寅月甲丙戊均透时，L435主财兼官与L548兼透则兼用如何共同裁决？", "minimumExistingChart": "caseP1_ZPR_month_xin_jia_bing_wu_1984 = 甲子/丙寅/辛未/戊戌", "minimumSourceDecision": "明确L548多透的适用边界及第三透干与L435两入口的主兼顺序"},
+    {"id": "yin-through-meeting", "question": "辛日寅月甲丙透并寅午戌全会时，L435双入口和L548透会并用如何并列？", "minimumExistingChart": "caseP1_ZPR_month_xin_jia_bing_meeting_1994 = 甲戌/丙寅/辛未/甲午", "minimumSourceDecision": "明确寅月L548是否直接适用、会局产生的入口及与甲丙主兼关系"},
+    {"id": "yin-bing-only", "question": "寅月甲不透而丙透，若戊也透，是否仍由丙作主、戊兼用或全部待判？", "minimumExistingCharts": ["caseP1_ZPR_month_yin_bing_only_1969", "caseP1_ZPR_month_yin_bing_wu_1979"], "minimumSourceDecision": "L419的‘不透甲而透丙’是否允许第三藏干戊兼透，以及其作用范围"},
+    {"id": "wood-day-lu-jie", "question": "甲/乙日寅月先保留禄劫总括逆用，还是直接进入L349–351另取路线？", "minimumSourceDecision": "区分月令本体与另取财官煞食的两个routeId，并裁决L352–353按语所述刃劫张力"},
+    {"id": "all-other-months", "question": "L419变化机制如何扩展到无具名变化例的月份？", "minimumSourceDecision": "逐月给本气/中气/余气的源自原文角色映射及透干/会支形成入口的适用条件；不能以通行藏干表代替书中角色裁决"},
+    {"id": "eight-effect-classes", "question": "每一类格局的喜忌关系如何从共现事实升格为实际作用及明确反例？", "minimumRealDateCases": "每个可启动分句至少一正例、一完整扫描的负例、一缺键/竞争路线未知例；附入口与每柱作用注记"},
+    {"id": "rescue-order", "question": "L398–409各救应触发、作用有效性、救应自身损伤和先后顺序如何定值？", "minimumRealDateCases": "逐条具名救应各一正例、一反例、一缺项未知例；若多救应同盘出现另需优先顺序裁决"}
+  ],
+  "releaseGuard": {
+    "executableRuleChanges": false,
+    "factVocabularyChanges": false,
+    "manifestChanges": false,
+    "productImportEligible": false,
+    "keepCurrentRuleFields": {"rescue": "unimplemented", "verified": false}
+  }
+}
