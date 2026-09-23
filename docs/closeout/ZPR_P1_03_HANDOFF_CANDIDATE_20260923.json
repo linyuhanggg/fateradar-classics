@@ -10,26 +10,38 @@
     "acceptedRuleCount": 10
   },
   "sourceFiles": {
-    "rulesYamlSha256": "0fcb524c9c6bc68d8e6eef99760fc85addf6b6bb2fb433068f362f389ab5318e",
-    "exporterSha256": "3b21296c35b34435c438f39906f86ac14729dc02c15bdda26629cfdb964d4703",
+    "rulesYamlSha256": "d898cda719edb5a29c1f40c449a9295eb2f9314786fa19882816039a867f2c66",
+    "exporterSha256": "47e8305fc90803c4f3657b885818f0bc7bc80108d52fdf019d892ea8af7ce9bb",
     "evaluatorSha256": "be17fe2fb63934827980cce6272e75d4349be7c618466e5074c405168e35dd30",
     "predicateLanguageSha256": "a6a5685bf2225523c28fc208a30d6ad617e6782f77fb88d2505fba1e57477619",
     "fulltextSha256": "5d0e11098aa076468da4bd805159550c178c1ee31d325e30be5f042d9051a053"
   },
   "sourceChain": [
     {
-      "role": "entry",
-      "line": 544,
-      "quote": "透戊則用偏財"
-    },
-    {
       "role": "direction_category",
-      "line": 328,
+      "anchor": {
+        "file": "sources/fulltext/bazi/ziping-zhenquan/fulltext.md",
+        "startLine": 328,
+        "endLine": 328
+      },
       "quote": "財官印食，此用神之善而順用之者也"
     },
     {
+      "role": "entry",
+      "anchor": {
+        "file": "sources/fulltext/bazi/ziping-zhenquan/fulltext.md",
+        "startLine": 544,
+        "endLine": 544
+      },
+      "quote": "透戊則用偏財"
+    },
+    {
       "role": "coexisting_entries",
-      "line": 548,
+      "anchor": {
+        "file": "sources/fulltext/bazi/ziping-zhenquan/fulltext.md",
+        "startLine": 548,
+        "endLine": 548
+      },
       "quote": "兼透則兼用，透而又會，則透與會並用"
     }
   ],
@@ -150,7 +162,36 @@
         "layer": "本命"
       },
       "emitOn": "满足"
-    }
+    },
+    "candidateSources": [
+      {
+        "role": "direction_category",
+        "anchor": {
+          "file": "sources/fulltext/bazi/ziping-zhenquan/fulltext.md",
+          "startLine": 328,
+          "endLine": 328
+        },
+        "quote": "財官印食，此用神之善而順用之者也"
+      },
+      {
+        "role": "entry",
+        "anchor": {
+          "file": "sources/fulltext/bazi/ziping-zhenquan/fulltext.md",
+          "startLine": 544,
+          "endLine": 544
+        },
+        "quote": "透戊則用偏財"
+      },
+      {
+        "role": "coexisting_entries",
+        "anchor": {
+          "file": "sources/fulltext/bazi/ziping-zhenquan/fulltext.md",
+          "startLine": 548,
+          "endLine": 548
+        },
+        "quote": "兼透則兼用，透而又會，則透與會並用"
+      }
+    ]
   },
   "verification": [
     {
@@ -242,6 +283,7 @@
   ],
   "activationRequires": [
     "Product 明确允许新规则 ID，钉住含本合同的 Classics 提交并重导出 bazi 规则；旧 P1 manifest 不会自动接纳本候选。",
+    "Product 对外展示本候选时须并列保留 candidateSources 的 L328 分类、L544 入口与 L548 并用锚点；不能只引用主 anchor L328。",
     "Product 仅在 overview 的来源结构证据中显示方向候选；保留 ZPR-E-02 为信息不足及六主题作用语义 pending。",
     "Product 测试入口多值并存、反例不附方向与缺项未知，且不得从 candidateOutput 生成自身 applicableTo 输入。"
   ]

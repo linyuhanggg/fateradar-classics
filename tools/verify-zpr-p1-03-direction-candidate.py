@@ -5,6 +5,7 @@ from __future__ import annotations
 
 import importlib.util
 import json
+from copy import deepcopy
 from pathlib import Path
 
 import yaml
@@ -56,7 +57,18 @@ def main() -> int:
     )
     assert exported["ruleId"] == "ZPR-P1-03"
     assert exported["candidateOutput"] == candidate["candidate_output"]
+    assert [(s["role"], s["anchor"]["startLine"]) for s in exported["candidateSources"]] == [
+        ("direction_category", 328), ("entry", 544), ("coexisting_entries", 548)
+    ]
     assert exported["applicableTo"] == candidate["applicable_to"]
+    malformed = deepcopy(candidate)
+    malformed["candidate_sources"][1]["quote"] = "非源文入口"
+    try:
+        load_exporter().convert(malformed, art="bazi", title="子平真诠", slug_path="bazi/ziping-zhenquan")
+    except ValueError as error:
+        assert "candidate source quote misses anchor" in str(error)
+    else:
+        raise AssertionError("candidate source quote without a matching anchor was accepted")
     assert "candidateOutput" not in load_exporter().convert(
         entry, art="bazi", title="子平真诠", slug_path="bazi/ziping-zhenquan"
     )

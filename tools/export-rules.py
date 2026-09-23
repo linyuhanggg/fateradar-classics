@@ -183,6 +183,43 @@ def candidate_output_of(rule: dict) -> dict | None:
     return dict(raw)
 
 
+def candidate_sources_of(rule: dict) -> list[dict] | None:
+    """Keep every source needed to justify a derived candidate label."""
+    raw = rule.get("candidate_sources")
+    if raw is None:
+        if rule.get("candidate_output") is not None:
+            raise ValueError(f"{rule.get('rule_id')}: candidate_output requires candidate_sources")
+        return None
+    if rule.get("candidate_output") is None or not isinstance(raw, list) or len(raw) < 2:
+        raise ValueError(f"{rule.get('rule_id')}: candidate_sources requires a candidate output and two source anchors")
+    out = []
+    roles = set()
+    for source in raw:
+        if not isinstance(source, dict) or set(source) != {"role", "anchor", "quote"}:
+            raise ValueError(f"{rule.get('rule_id')}: malformed candidate source")
+        role, anchor, quote = source["role"], source["anchor"], source["quote"]
+        if not isinstance(role, str) or not role or role in roles or not isinstance(anchor, dict):
+            raise ValueError(f"{rule.get('rule_id')}: duplicate or malformed candidate source role")
+        roles.add(role)
+        if set(anchor) != {"file", "start_line", "end_line"}:
+            raise ValueError(f"{rule.get('rule_id')}: malformed candidate source anchor")
+        path = ROOT / anchor["file"]
+        start, end = anchor["start_line"], anchor["end_line"]
+        if not path.is_file() or not isinstance(start, int) or not isinstance(end, int) or end < start:
+            raise ValueError(f"{rule.get('rule_id')}: invalid candidate source anchor")
+        lines = path.read_text(encoding="utf-8").splitlines()
+        if end > len(lines) or not isinstance(quote, str) or not quote or quote not in "\n".join(lines[start - 1:end]):
+            raise ValueError(f"{rule.get('rule_id')}: candidate source quote misses anchor")
+        out.append({
+            "role": role,
+            "anchor": {"file": anchor["file"], "startLine": start, "endLine": end},
+            "quote": quote,
+        })
+    if not {"entry", "direction_category"} <= roles:
+        raise ValueError(f"{rule.get('rule_id')}: candidate sources need entry and direction category")
+    return out
+
+
 def convert(rule: dict, *, art: str, title: str, slug_path: str) -> dict:
     anchor = rule["anchor"]
     item = {
@@ -205,6 +242,9 @@ def convert(rule: dict, *, art: str, title: str, slug_path: str) -> dict:
     candidate_output = candidate_output_of(rule)
     if candidate_output is not None:
         item["candidateOutput"] = candidate_output
+        item["candidateSources"] = candidate_sources_of(rule)
+    elif rule.get("candidate_sources") is not None:
+        raise ValueError(f"{rule.get('rule_id')}: candidate_sources without candidate_output")
     return item
 
 

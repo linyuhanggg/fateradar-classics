@@ -252,6 +252,16 @@ rules:
     status: 候选
     scope: {layer: 本命}
     emitOn: 满足
+  candidate_sources:
+  - role: direction_category
+    anchor: {file: sources/fulltext/bazi/ziping-zhenquan/fulltext.md, start_line: 328, end_line: 328}
+    quote: 財官印食，此用神之善而順用之者也
+  - role: entry
+    anchor: {file: sources/fulltext/bazi/ziping-zhenquan/fulltext.md, start_line: 544, end_line: 544}
+    quote: 透戊則用偏財
+  - role: coexisting_entries
+    anchor: {file: sources/fulltext/bazi/ziping-zhenquan/fulltext.md, start_line: 548, end_line: 548}
+    quote: 兼透則兼用，透而又會，則透與會並用
   caveats:
   - 本条在 ZPR-P1-01 的“偏财取用入口”之上只增加来源所称“财善顺用”的候选分类；入口本身见 L544，类别总括见 L328。这是两句原文相接的推断，并非 L544 另有“已顺用”的断语。
   - “满足”仅表示本命戊透入口可标顺用候选，不表示该入口已被裁为唯一用神、财格已成或财喜食神相生、生官护财等逐格关系已经成立。

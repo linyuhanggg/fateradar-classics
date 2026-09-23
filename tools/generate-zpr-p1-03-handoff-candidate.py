@@ -90,14 +90,10 @@ def build() -> dict:
     current_manifest = json.loads(MANIFEST.read_text())
     assert current_manifest["semanticContractStatus"] == "pending"
     assert "ZPR-P1-03" not in {r["ruleId"] for r in current_manifest["rules"]}
-    source_lines = FULLTEXT.read_text().splitlines()
-    source_chain = [
-        {"role": "entry", "line": 544, "quote": "透戊則用偏財"},
-        {"role": "direction_category", "line": 328, "quote": "財官印食，此用神之善而順用之者也"},
-        {"role": "coexisting_entries", "line": 548, "quote": "兼透則兼用，透而又會，則透與會並用"},
+    source_chain = exported["candidateSources"]
+    assert [(source["role"], source["anchor"]["startLine"]) for source in source_chain] == [
+        ("direction_category", 328), ("entry", 544), ("coexisting_entries", 548)
     ]
-    for anchor in source_chain:
-        assert anchor["quote"] in source_lines[anchor["line"] - 1], anchor
     return {
         "manifestVersion": "fateradar-p1-bazi-topic-handoff-candidate-v1",
         "reviewStatus": "proposed_not_importable",
@@ -140,6 +136,7 @@ def build() -> dict:
         "missingInputProjections": projections,
         "activationRequires": [
             "Product 明确允许新规则 ID，钉住含本合同的 Classics 提交并重导出 bazi 规则；旧 P1 manifest 不会自动接纳本候选。",
+            "Product 对外展示本候选时须并列保留 candidateSources 的 L328 分类、L544 入口与 L548 并用锚点；不能只引用主 anchor L328。",
             "Product 仅在 overview 的来源结构证据中显示方向候选；保留 ZPR-E-02 为信息不足及六主题作用语义 pending。",
             "Product 测试入口多值并存、反例不附方向与缺项未知，且不得从 candidateOutput 生成自身 applicableTo 输入。",
         ],
