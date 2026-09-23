@@ -14,10 +14,19 @@ RULES = ROOT / "references/books/bazi/ziping-zhenquan/rules.yaml"
 FULLTEXT = ROOT / "sources/fulltext/bazi/ziping-zhenquan/fulltext.md"
 FIXTURE = ROOT / "tools/reports/facts-sample.json"
 EXECUTABLE = ROOT / "references/executable/ziping-zhenquan.json"
+EXPORTER = ROOT / "tools/export-rules.py"
 
 
 def load_evaluator():
     spec = importlib.util.spec_from_file_location("eval_predicates", ROOT / "tools/eval-predicates.py")
+    module = importlib.util.module_from_spec(spec)
+    assert spec.loader is not None
+    spec.loader.exec_module(module)
+    return module
+
+
+def load_exporter():
+    spec = importlib.util.spec_from_file_location("export_rules", EXPORTER)
     module = importlib.util.module_from_spec(spec)
     assert spec.loader is not None
     spec.loader.exec_module(module)
@@ -38,9 +47,19 @@ def main() -> int:
     candidate = rules["ZPR-P1-03"]
     assert candidate["applicable_to"] == entry["applicable_to"]
     assert candidate["candidate_output"] == {
-        "entry": "甲辰月透戊偏财", "category": "财", "direction": "顺用", "status": "候选"
+        "entryId": "ZPR-P1-01", "entry": "甲辰月透戊偏财", "category": "财",
+        "direction": "顺用", "status": "候选", "scope": {"layer": "本命"}, "emitOn": "满足"
     }
     assert candidate["verified"] is False
+    exported = load_exporter().convert(
+        candidate, art="bazi", title="子平真诠", slug_path="bazi/ziping-zhenquan"
+    )
+    assert exported["ruleId"] == "ZPR-P1-03"
+    assert exported["candidateOutput"] == candidate["candidate_output"]
+    assert exported["applicableTo"] == candidate["applicable_to"]
+    assert "candidateOutput" not in load_exporter().convert(
+        entry, art="bazi", title="子平真诠", slug_path="bazi/ziping-zhenquan"
+    )
     lines = FULLTEXT.read_text().splitlines()
     assert candidate["quote"] in lines[327]
     assert "財官印食，此用神之善而順用之者也" in lines[327]
@@ -64,6 +83,9 @@ def main() -> int:
         assert "上海" in cases[name]["label"]
         got = evaluator.evaluate(candidate, cases[name]["facts"])["verdict"]
         assert got == expected, (name, got, expected)
+        assert (exported["candidateOutput"] if got == "满足" else None) == (
+            candidate["candidate_output"] if expected == "满足" else None
+        )
 
     positive = cases["caseP1_ZPR_01_wu_only"]["facts"]
     assert evaluator.evaluate(candidate, without(positive, "gan", "year"))["verdict"] == "信息不足"

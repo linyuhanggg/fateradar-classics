@@ -160,9 +160,32 @@ def predicates_of(rule: dict):
     return out
 
 
+def candidate_output_of(rule: dict) -> dict | None:
+    """Keep an entry-scoped source label separate from input Fact predicates.
+
+    A candidate output is metadata on a satisfied RuleEvaluation. It is never
+    an emitted FactKey and must not be fed back into applicable_to.
+    """
+    raw = rule.get("candidate_output")
+    if raw is None:
+        return None
+    fields = {"entryId", "entry", "category", "direction", "status", "scope", "emitOn"}
+    if not isinstance(raw, dict) or set(raw) != fields:
+        raise ValueError(f"{rule.get('rule_id')}: candidate_output must have {sorted(fields)}")
+    if any(not isinstance(raw[field], str) or not raw[field] for field in fields - {"scope"}):
+        raise ValueError(f"{rule.get('rule_id')}: candidate_output text fields must be nonempty")
+    if raw["direction"] not in {"顺用", "逆用"} or raw["status"] != "候选":
+        raise ValueError(f"{rule.get('rule_id')}: candidate_output must be a direction candidate")
+    if raw["scope"] != {"layer": "本命"} or raw["emitOn"] != "满足":
+        raise ValueError(f"{rule.get('rule_id')}: candidate_output only belongs to a satisfied natal evaluation")
+    if raw["entryId"] == rule.get("rule_id"):
+        raise ValueError(f"{rule.get('rule_id')}: entryId must identify the entry, not its classifier")
+    return dict(raw)
+
+
 def convert(rule: dict, *, art: str, title: str, slug_path: str) -> dict:
     anchor = rule["anchor"]
-    return {
+    item = {
         "ruleId": rule["rule_id"],
         "art": art,
         "topic": topic_of(rule),
@@ -179,6 +202,10 @@ def convert(rule: dict, *, art: str, title: str, slug_path: str) -> dict:
             "endLine": anchor["end_line"],
         },
     }
+    candidate_output = candidate_output_of(rule)
+    if candidate_output is not None:
+        item["candidateOutput"] = candidate_output
+    return item
 
 
 def usable_anchor(rule: dict) -> bool:

@@ -245,10 +245,13 @@ rules:
         value: 戊
         scope: {layer: 本命, pillar: time}
   candidate_output:
+    entryId: ZPR-P1-01
     entry: 甲辰月透戊偏财
     category: 财
     direction: 顺用
     status: 候选
+    scope: {layer: 本命}
+    emitOn: 满足
   caveats:
   - 本条在 ZPR-P1-01 的“偏财取用入口”之上只增加来源所称“财善顺用”的候选分类；入口本身见 L544，类别总括见 L328。这是两句原文相接的推断，并非 L544 另有“已顺用”的断语。
   - “满足”仅表示本命戊透入口可标顺用候选，不表示该入口已被裁为唯一用神、财格已成或财喜食神相生、生官护财等逐格关系已经成立。

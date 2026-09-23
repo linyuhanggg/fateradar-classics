@@ -2,7 +2,7 @@
 
 ## 可交付结论
 
-`ZPR-P1-03` 只为 `ZPR-P1-01` 已识别的**甲日、辰月、月藏戊且本命年／月／时干透戊**这一偏财取用入口，增加一个来源分类：`candidate_output={entry:甲辰月透戊偏财, category:财, direction:顺用, status:候选}`。这是可供产品另行建正式 FactKey 的机读候选输出，**不是**当前词表中可直接消费的 Fact，也不是 `ZPR-E-02` 整条的满足结论。它比 `ZPR-P1-01` 多了“该入口属于财善顺用的候选类”一项信息；适用谓词沿用 P1-01，以保证不会从任意柱上的偏财十神或 `geju` 名称反推入口。
+`ZPR-P1-03` 只为 `ZPR-P1-01` 已识别的**甲日、辰月、月藏戊且本命年／月／时干透戊**这一偏财取用入口，增加一个来源分类：`candidate_output={entryId:ZPR-P1-01, entry:甲辰月透戊偏财, category:财, direction:顺用, status:候选, scope:{layer:本命}, emitOn:满足}`。它是附在 `ZPR-P1-03` **RuleEvaluation** 上的来源输出元数据，不是 FactKey；不能把它反馈为本条 `applicable_to` 的输入，也不是 `ZPR-E-02` 整条的满足结论。它比 `ZPR-P1-01` 多了“该入口属于财善顺用的候选类”一项信息；适用谓词沿用 P1-01，以保证不会从任意柱上的偏财十神或 `geju` 名称反推入口。
 
 该分类把[原文 L544](../../sources/fulltext/bazi/ziping-zhenquan/fulltext.md#L544)“甲生辰月，透戊则用偏财”与[原文 L328](../../sources/fulltext/bazi/ziping-zhenquan/fulltext.md#L328)“财官印食……善而顺用”相接，属于**有据的跨句推断**；L544 本身没有断言“已经顺用”。[L548](../../sources/fulltext/bazi/ziping-zhenquan/fulltext.md#L548)还明说兼透、透与会可并用，因此同盘其它入口不能被这枚标签覆盖。P1-01 对 L544–548 的国图影印本 PDF 第 41 页／原印 32 页已有目视核对；本条新增的 L328 分类目前按电子全文逐字锚定，未把整部书或规则升为 `verified=true`。
 
@@ -19,10 +19,12 @@
 
 谓词需要 `rizhu=甲@本命/day`、`yueling=辰@本命/month`、`canggan=戊@本命/month`，以及本命年／月／时干中至少一枚 `gan=戊`。求值器对天干、藏干执行**逐柱密集事实**缺位检查。日干不是甲、月令不是辰、三处本命干明确均无戊时，本条可为“不满足”；它从不把“不满足”解释成逆用成立或古籍教义错误。移除正例里的 `geju` 和 `shishen` 名称事实仍为满足，说明本合同靠柱位结构而非产品已有的格局名称。
 
+消费时以 `ruleId + candidateOutput.entryId` 为记录身份，`scope.layer=本命`；**只有**该条 RuleEvaluation 为“满足”才附候选分类。不满足保留反例状态但无方向输出，信息不足也无方向输出。未来其它取用入口应有独立入口 ID 与分类规则，多个候选并存须保留为多条记录，不能合并成单个 `geju.mode`。同一入口若出现相冲的候选方向，应进入待核而非任选一条。本合同当前只交付戊透偏财这一枚入口，不宣称癸透或会支入口的分类已经实现。
+
 ## 未采纳的上层语义与版本边界
 
 “顺用候选”还不是财格已成、实际财喜食神相生／生官护财、护卫救应有效、扶抑或调候喜行、财富结果。月令多入口取舍、逐干逐支作用、位置力度、冲合制化、喜忌及反证覆盖均未由这四枚输入事实解决。[`ZPR-E-02` 边界审计](./ZPR_E_02_SEMANTIC_BOUNDARY_20260923.md)继续适用；`references/executable/ziping-zhenquan.json` 的 `satisfy_when`、`rescue=unimplemented`、`verified=false` 与 `applicable_to` 未改，不能因本条为满足而给 E-02 输出“满足”。
 
-机读定义在 [`rules.yaml`](../../references/books/bazi/ziping-zhenquan/rules.yaml) 的 `ZPR-P1-03`，`candidate_output` 仅是本条源定义的待映射输出声明；尚未登记正式 `FactKey`，未改八字 P1 manifest 或 `semanticContractStatus=pending`，未改产品仓或发布。当前源文 SHA-256 `5d0e11098aa076468da4bd805159550c178c1ee31d325e30be5f042d9051a053`，本条源文件 SHA-256 `5cdb9504ccd482a939feae4339a1c2f448fdcbbed07ff5a55780e4b070f56ec1`，共享 fixture SHA-256 `6915a56e7fef202a5c3f145106e0205b2ae1590ad2348d7f5d7ade6dd04518fb`。本地基准 Classics `a611764b49f9a9f4f5872c82e1f21515fdcf3a2c`；产品若选择导入，须另钉包含本规则的**不可变提交**并核对上述文件指纹，不以当前 `main` 或旧 Bazi manifest 的 `CLASSICS_REV=01eaf71` 偷代本条来源。
+机读定义在 [`rules.yaml`](../../references/books/bazi/ziping-zhenquan/rules.yaml) 的 `ZPR-P1-03`，[`export-rules.py`](../../tools/export-rules.py) 将其保留为导出规则的 `candidateOutput`。可审查的[独立 P1 handoff 候选 JSON](./ZPR_P1_03_HANDOFF_CANDIDATE_20260923.json)由 [`generate-zpr-p1-03-handoff-candidate.py`](../../tools/generate-zpr-p1-03-handoff-candidate.py)生成，另列 L328／L544／L548 来源链；提议只入 `overview` 来源结构证据，`reviewStatus=proposed_not_importable`。当前产品 importer 固定接收原 10 条，不会自动纳入本候选。未登记新的 FactKey，未改正式八字 P1 manifest、`semanticContractStatus=pending`、ZPR-E-02 或产品仓。源文 SHA-256 `5d0e11098aa076468da4bd805159550c178c1ee31d325e30be5f042d9051a053`；规则 YAML `0fcb524c9c6bc68d8e6eef99760fc85addf6b6bb2fb433068f362f389ab5318e`；导出器 `3b21296c35b34435c438f39906f86ac14729dc02c15bdda26629cfdb964d4703`；共享 fixture `6915a56e7fef202a5c3f145106e0205b2ae1590ad2348d7f5d7ade6dd04518fb`；handoff 候选 JSON `afd1d9931d8c96f7be3c7bdd29fdb1b189f18da894e8d1f2cad68a61e8446176`。候选 JSON 还记录了求值器与谓词语言文件的现场 SHA，以免把其它代理尚未提交的求值器变更误称为本提交的一部分。P1-03 初版来源规则提交为 `4eb4478d453f5b4b6a38af99b347f69bbf9edc36`；产品若选择导入，须另钉包含本轮导出合同的不可变提交并核对指纹，不以当前 `main` 或旧 Bazi manifest 的 `CLASSICS_REV=01eaf71` 偷代本条来源。
 
-验收命令：`python3 tools/verify-zpr-p1-03-direction-candidate.py`、`python3 tools/validate-rules.py --book bazi/ziping-zhenquan --json`。前者核 L328／L544／L548 证据链、四个真实日期样盘与缺项投影，并确认 E-02 仍未验收；后者只校验规则格式与电子来源锚点，不证明预测有效性或人工影印全书校勘。
+验收命令：`python3 tools/verify-zpr-p1-03-direction-candidate.py`、`python3 tools/generate-zpr-p1-03-handoff-candidate.py --output .local/staging/zpr-p1-03-handoff-recheck.json` 并与交接候选逐字比较、`python3 tools/validate-rules.py --book bazi/ziping-zhenquan --json`。第一项核 L328／L544／L548 证据链、导出字段、四个真实日期样盘与缺项投影，并确认 E-02 仍未验收；最后一项只校验规则格式与电子来源锚点，不证明预测有效性或人工影印全书校勘。
