@@ -129,6 +129,44 @@ rules:
   verified: false
   verified_by: null
   verified_at: null
+- rule_id: ZPR-P1-01
+  kind: doctrine
+  statement: 甲日生辰月，辰中戊土透于本命年、月或时干时，偏财可列为月令杂气取用入口；这不等于偏财格已成或现实财运。
+  anchor:
+    file: sources/fulltext/bazi/ziping-zhenquan/fulltext.md
+    start_line: 542
+    end_line: 548
+  quote: 何謂透干？如甲生辰【校：「辰」原作「三」，據下文及中州本改】月，透戊則用偏財，透癸則用正印，透乙則用月劫是也。
+  applicable_to:
+    all_of:
+    - key: rizhu
+      value: 甲
+      scope: {layer: 本命, pillar: day}
+    - key: yueling
+      value: 辰
+      scope: {layer: 本命, pillar: month}
+    - key: canggan
+      value: 戊
+      scope: {layer: 本命, pillar: month}
+    - any_of:
+      - key: gan
+        value: 戊
+        scope: {layer: 本命, pillar: year}
+      - key: gan
+        value: 戊
+        scope: {layer: 本命, pillar: month}
+      - key: gan
+        value: 戊
+        scope: {layer: 本命, pillar: time}
+  caveats:
+  - 只判“透戊形成偏财取用入口”，不判偏财为唯一用神、格局清浊成败或富贵。
+  - 同透癸或乙须依原文“兼透则兼用”；申子辰会支须依“透而又会则并用”，不得覆盖其他入口。
+  - 原文没有要求本条单独核司令深浅；若扩张为用神得力或财富结果，须另判司令、相神、救应与冲破。
+  - 影印核对见 NLC416-11jh010455-35296.pdf 第41页（印本32页）；电子本“辰”有校记，影印本作“辰”。
+  school: 子平真诠月令杂气取用
+  verified: false
+  verified_by: null
+  verified_at: null
 - rule_id: ZPR-07
   kind: doctrine
   statement: 财官印食虽为四吉神，但遇冲克混杂、护卫不当，也能破格。
