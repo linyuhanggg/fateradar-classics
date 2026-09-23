@@ -6,13 +6,13 @@
 
 | 对象 | 固定版本／SHA-256 |
 |---|---|
-| 源规则提交 `CLASSICS_REV` | `b9d7bb5413f042901c8bcd4635327ba585992d66` |
-| 新 manifest | `13aa085a01b40add88b4fe3582ce1ac3ea601878a09291c37c2538cd99c740d1` |
+| 源规则提交 `CLASSICS_REV` | `7947994bdd4f06557eb2991d5f7932933bd345ae` |
+| 新 manifest | `dd2293b4bee38edf4aea3020769c2f4be8f09419b94135abd7d7ca12e20a5e7c` |
 | 此前产品已锁 10 条 manifest | `c645237397039d001367ad2df6f624d0f363f1daee9ca07fdf3031b4f511d6ab` |
 | 旧 10 条语义字段指纹 | `d2587a335b380fe63d152e3283f0d24c645c31dd9fd33ec244cb729a76b5b63b` |
 | 两仓相同的 43-case fixture | `6915a56e7fef202a5c3f145106e0205b2ae1590ad2348d7f5d7ade6dd04518fb` |
 
-新增前，古籍仓工作树的 10 条 manifest 与产品仓已锁 `c645…` **整文件逐字节相同**；43-case fixture 逐字节相同；旧 10 条的 `statement`、`quote`、`anchor`、`applicableTo` 与产品已生成八字规则逐条一致。新增后的 generator 锁定旧 10 条 `ruleId/statement/quote/anchor/applicableTo/primaryTopic/secondaryTopics/role/status/applicableLayers/unsupportedLayers` 的规范化指纹，变化只包括新规则、版本/来源指纹、总览规则清单与 10→11 条数量。其它五个主题的规则归属不变。新 manifest 为 `fateradar-p1-bazi-topic-handoff-v2`，`semanticContractStatus=pending`、11 条均 `verification.verified=false`。
+新增前，古籍仓工作树的 10 条 manifest 与产品仓已锁 `c645…` **整文件逐字节相同**；43-case fixture 逐字节相同；旧 10 条的 `statement`、`quote`、`anchor`、`applicableTo` 与产品已生成八字规则逐条一致。新增后的 generator 锁定旧 10 条 `ruleId/statement/quote/anchor/applicableTo/primaryTopic/secondaryTopics/role/status/applicableLayers/unsupportedLayers` 的规范化指纹，变化只包括新规则、版本/来源指纹、总览规则清单与 10→11 条数量。其它五个主题的规则归属不变。源修订现包含 `DITIANSUICHA-051` 的谨慎陈述及 L13400–L13405 锚点，并在 `sourceFingerprint` 中逐文件锁定四本古籍的规则与全文、导出器和求值器；旧 `b9d7bb5` 交接锁已被本版取代，不应导入。新 manifest 为 `fateradar-p1-bazi-topic-handoff-v2`，`semanticContractStatus=pending`、11 条均 `verification.verified=false`。
 
 `candidateOutput` 是 `ZPR-P1-03` 满足时附在 `RuleEvaluation` 上的来源输出元数据，不是独立 `FactKey`，不能回填本规则的 `applicableTo`。不满足和信息不足均无方向输出；缺逐柱 `gan` 的真实样盘为 `信息不足`，不能降为 `不满足`。戊癸兼透样盘仍有偏财入口，但 `兼透则兼用` 不许写成独占入口。产品若展示该分类，必须同时保留三段 `candidateSources`：L328 的善而顺用分类、L544 的透戊偏财入口、L548 的兼透并用；单独的主 `anchor=L328` 不支持完整陈述。
 

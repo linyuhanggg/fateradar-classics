@@ -19,7 +19,7 @@ from pathlib import Path
 import yaml
 
 ROOT = Path(__file__).resolve().parents[1]
-CLASSICS_REV = "b9d7bb5413f042901c8bcd4635327ba585992d66"
+CLASSICS_REV = "7947994bdd4f06557eb2991d5f7932933bd345ae"
 SAMPLE = ROOT / "tools/reports/facts-sample.json"
 PRODUCT_ROOT = Path("/Users/sync/code/cosmic-fortune-lab")
 FIXTURE_SHA256 = "6915a56e7fef202a5c3f145106e0205b2ae1590ad2348d7f5d7ade6dd04518fb"
@@ -453,6 +453,12 @@ def make_manifest(output: Path, export_file: Path | None) -> dict:
         "sourceFingerprint": {
             "zipingRulesYamlSha256": pinned_source_sha("references/books/bazi/ziping-zhenquan/rules.yaml"),
             "zipingFulltextSha256": pinned_source_sha("sources/fulltext/bazi/ziping-zhenquan/fulltext.md"),
+            "ditiansuiRulesYamlSha256": pinned_source_sha("references/books/bazi/ditiansui-chanwei/rules.yaml"),
+            "ditiansuiFulltextSha256": pinned_source_sha("sources/fulltext/bazi/ditiansui-chanwei/fulltext.md"),
+            "sanmingRulesYamlSha256": pinned_source_sha("references/books/bazi/sanming-tonghui/rules.yaml"),
+            "sanmingFulltextSha256": pinned_source_sha("sources/fulltext/bazi/sanming-tonghui/fulltext.md"),
+            "yuanhaiRulesYamlSha256": pinned_source_sha("references/books/bazi/yuanhai-ziping/rules.yaml"),
+            "yuanhaiFulltextSha256": pinned_source_sha("sources/fulltext/bazi/yuanhai-ziping/fulltext.md"),
             "exporterSha256": pinned_source_sha("tools/export-rules.py"),
             "evaluatorSha256": pinned_source_sha("tools/eval-predicates.py"),
         },

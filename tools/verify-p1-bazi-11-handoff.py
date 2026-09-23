@@ -8,9 +8,12 @@ import importlib.util
 import json
 from pathlib import Path
 
+import yaml
+
 ROOT = Path(__file__).resolve().parents[1]
 MANIFEST = ROOT / "docs/closeout/P1_BAZI_TOPIC_MANIFEST_20260921.json"
 PRODUCT_FIXTURE = Path("/Users/sync/code/cosmic-fortune-lab/tests/fixtures/facts-sample.json")
+SOURCE_REV = "7947994bdd4f06557eb2991d5f7932933bd345ae"
 
 
 def require(condition: bool, message: str) -> None:
@@ -30,12 +33,20 @@ def main() -> None:
     require(actual_bytes == expected_bytes, "manifest differs from reproducible generator output")
     manifest = json.loads(actual_bytes)
     require(manifest["manifestVersion"] == "fateradar-p1-bazi-topic-handoff-v2", "wrong handoff version")
+    require(manifest["classicsRev"] == SOURCE_REV, "source revision lacks corrected 051")
     require(manifest["semanticContractStatus"] == "pending", "semantic blockers were upgraded")
     require(len(manifest["rules"]) == 11, "handoff must contain 11 distinct rules")
     require(len({rule["ruleId"] for rule in manifest["rules"]}) == 11, "duplicate rule ID")
     require(all(rule["verification"]["verified"] is False for rule in manifest["rules"]), "verified was upgraded")
     require(manifest["carryoverTenSemanticSha256"] == module.TEN_RULE_SEMANTIC_SHA256, "old ten changed meaning")
     require(module.carryover_semantic_sha(manifest["rules"]) == module.TEN_RULE_SEMANTIC_SHA256, "old ten changed meaning")
+
+    ditiansui_yaml = ROOT / "references/books/bazi/ditiansui-chanwei/rules.yaml"
+    require(manifest["sourceFingerprint"]["ditiansuiRulesYamlSha256"] == hashlib.sha256(ditiansui_yaml.read_bytes()).hexdigest(), "051 source fingerprint drift")
+    ditiansui_rules = yaml.safe_load(ditiansui_yaml.read_text(encoding="utf-8"))["rules"]
+    rule_051 = next(rule for rule in ditiansui_rules if rule["rule_id"] == "DITIANSUICHA-051")
+    require(rule_051["anchor"]["end_line"] == 13405, "051 lost multi-line anchor")
+    require("用神得力、忌神得权" not in rule_051["statement"], "051 regressed to ungrounded assertion")
 
     local_fixture = (ROOT / manifest["factFixture"]["path"]).read_bytes()
     require(hashlib.sha256(local_fixture).hexdigest() == module.FIXTURE_SHA256, "fixture hash drift")
