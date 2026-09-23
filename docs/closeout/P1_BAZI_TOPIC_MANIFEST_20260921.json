@@ -1,28 +1,36 @@
 {
-  "manifestVersion": "fateradar-p1-bazi-topic-handoff-v1",
+  "manifestVersion": "fateradar-p1-bazi-topic-handoff-v2",
   "semanticContractStatus": "pending",
-  "generatedAt": "2026-09-22",
+  "generatedAt": "2026-09-23",
   "generatedBy": "tools/generate-p1-bazi-manifest.py",
   "art": "bazi",
   "ruleSchema": "fateradar-rules-v2",
   "predicateLanguage": "fateradar-rules-v3",
-  "classicsRev": "6321186f6aeebd0737537c45286153eedf49adb4",
-  "sourceHeadAtAudit": "fbcccdf19329ae1ab60eacbd45ccea7e99afa25d",
+  "classicsRev": "b9d7bb5413f042901c8bcd4635327ba585992d66",
+  "sourceHeadAtAudit": "b9d7bb5413f042901c8bcd4635327ba585992d66",
   "classicsRevChanged": true,
+  "carryoverTenSemanticSha256": "d2587a335b380fe63d152e3283f0d24c645c31dd9fd33ec244cb729a76b5b63b",
+  "carryoverTenProductManifestSha256": "c645237397039d001367ad2df6f624d0f363f1daee9ca07fdf3031b4f511d6ab",
+  "sourceFingerprint": {
+    "zipingRulesYamlSha256": "d898cda719edb5a29c1f40c449a9295eb2f9314786fa19882816039a867f2c66",
+    "zipingFulltextSha256": "5d0e11098aa076468da4bd805159550c178c1ee31d325e30be5f042d9051a053",
+    "exporterSha256": "47e8305fc90803c4f3657b885818f0bc7bc80108d52fdf019d892ea8af7ce9bb",
+    "evaluatorSha256": "be17fe2fb63934827980cce6272e75d4349be7c618466e5074c405168e35dd30"
+  },
   "factFixture": {
     "path": "tools/reports/facts-sample.json",
-    "sha256": "ee750a96ae11dece15bdcef26b5e0fcc6b928a1e6947f1aa7ffd47fdb4c53aa7",
-    "caseCount": 26,
+    "sha256": "6915a56e7fef202a5c3f145106e0205b2ae1590ad2348d7f5d7ade6dd04518fb",
+    "caseCount": 43,
     "generator": {
       "command": "bun scripts/dump-facts.ts /Users/sync/code/fateradar-classics",
       "repo": "/Users/sync/code/cosmic-fortune-lab",
       "repoHead": "93c7245db2dbfa82e3a8ce69cc74ab318391b988",
       "script": "/Users/sync/code/cosmic-fortune-lab/scripts/dump-facts.ts",
-      "scriptSha256": "d21e8f48638653199e56363d844ab7ad4b9c461c1beba2fea6edabeb7d6105f2",
-      "productFixtureSha256": "ee750a96ae11dece15bdcef26b5e0fcc6b928a1e6947f1aa7ffd47fdb4c53aa7",
+      "scriptSha256": "e2f84a1b910d722aae995ed7deecf079680d81477bce0ed41f1903808ea0baee",
+      "productFixtureSha256": "6915a56e7fef202a5c3f145106e0205b2ae1590ad2348d7f5d7ade6dd04518fb",
       "workingTreeInputs": "scripts/dump-facts.ts 和 tests/fixtures/facts-sample.json 在生成时均为未提交改动。"
     },
-    "differenceFromClassicsHead": "git diff --numstat: 7059\t777\ttools/reports/facts-sample.json; 原因是按产品生成器重建事实快照，新增时间层/逐柱事实和覆盖样盘。"
+    "differenceFromClassicsHead": "43 个八字样盘由产品生成器重建；以 factFixture.sha256 锁定，重跑不依赖实时 git diff。"
   },
   "contract": {
     "pipeline": "Fact -> RuleEvaluation -> TopicEvaluation",
@@ -33,12 +41,15 @@
     },
     "unknownPolicy": "缺少事实、未实现时间层、性别/计数/关系合同不完整时保留 unknown；不写成 not_satisfied。",
     "verifiedPolicy": "本 manifest 的所有规则 verified=false；只有固定样盘、明确验收证据和人工出处核验完成后才可改变。",
-    "layerPolicy": "各规则仅在其 applicableLayers 声明的层求值：当前 7 条本命规则仅适用于本命，YUANHAIZIPIN-YR-03 仅适用于流年。不得把本命规则复制到流年/流月/大运；未声明或缺少 scope 条件时保留 unknown。"
+    "layerPolicy": "各规则仅在其 applicableLayers 声明的层求值：当前 10 条本命规则仅适用于本命，YUANHAIZIPIN-YR-03 仅适用于流年。不得把本命规则复制到流年/流月/大运；未声明或缺少 scope 条件时保留 unknown。"
   },
   "topics": {
     "overview": {
       "status": "partial",
       "ruleIds": [
+        "ZPR-P1-01",
+        "ZPR-P1-02",
+        "ZPR-P1-03",
         "DITIANSUICHA-003",
         "DITIANSUICHA-DR-03",
         "DITIANSUICHA-DR-06",
@@ -51,9 +62,9 @@
         "rizhu",
         "yueling",
         "zhi",
+        "gan",
         "rizhu_strength",
         "geju",
-        "yongshen",
         "canggan"
       ],
       "blockers": [
@@ -89,7 +100,6 @@
         "rizhu_strength",
         "shishen",
         "geju",
-        "yongshen",
         "yueling"
       ],
       "blockers": [
@@ -99,16 +109,20 @@
     "wealth": {
       "status": "partial",
       "ruleIds": [
+        "ZPR-P1-01",
         "DITIANSUICHA-DR-06",
         "YUANHAIZIPIN-YR-03"
       ],
       "requiredFactKeys": [
+        "rizhu",
+        "yueling",
+        "canggan",
+        "gan",
         "rizhu_strength",
-        "shishen",
-        "yongshen"
+        "shishen"
       ],
       "blockers": [
-        "当前只可交付‘极弱/从格入口’结构证据；财星位置、身财两停、比劫夺财和岁运尚未形成完整合同。"
+        "已能交付甲辰月戊透的偏财取用入口及极弱/从格入口；唯一用神、财星力量、身财两停、比劫夺财和岁运尚未形成完整合同。"
       ]
     },
     "relationship": {
@@ -143,6 +157,706 @@
     }
   },
   "rules": [
+    {
+      "ruleId": "ZPR-P1-03",
+      "art": "bazi",
+      "book": "bazi/ziping-zhenquan",
+      "primaryTopic": "overview",
+      "secondaryTopics": [],
+      "status": "adopted_as_provisional_evidence",
+      "role": "source_classification",
+      "statement": "甲日辰月透戊的偏财取用入口，在《子平真诠》财官印食“善而顺用”的总括中属于顺用候选类；只给这个入口标来源分类，不裁决唯一用神、本格喜忌或顺用成效。",
+      "quote": "財官印食，此用神之善而順用之者也；煞傷劫刃，此用神之不善而逆用之者也。",
+      "anchor": {
+        "file": "sources/fulltext/bazi/ziping-zhenquan/fulltext.md",
+        "startLine": 328,
+        "endLine": 328
+      },
+      "applicableTo": {
+        "all_of": [
+          {
+            "key": "rizhu",
+            "value": "甲",
+            "scope": {
+              "layer": "本命",
+              "pillar": "day"
+            }
+          },
+          {
+            "key": "yueling",
+            "value": "辰",
+            "scope": {
+              "layer": "本命",
+              "pillar": "month"
+            }
+          },
+          {
+            "key": "canggan",
+            "value": "戊",
+            "scope": {
+              "layer": "本命",
+              "pillar": "month"
+            }
+          },
+          {
+            "any_of": [
+              {
+                "key": "gan",
+                "value": "戊",
+                "scope": {
+                  "layer": "本命",
+                  "pillar": "year"
+                }
+              },
+              {
+                "key": "gan",
+                "value": "戊",
+                "scope": {
+                  "layer": "本命",
+                  "pillar": "month"
+                }
+              },
+              {
+                "key": "gan",
+                "value": "戊",
+                "scope": {
+                  "layer": "本命",
+                  "pillar": "time"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      "requiredFacts": [
+        {
+          "key": "rizhu",
+          "scope": {
+            "layer": "本命",
+            "pillar": "day"
+          },
+          "predicateScope": [
+            {
+              "layer": "本命",
+              "pillar": "day"
+            }
+          ]
+        },
+        {
+          "key": "yueling",
+          "scope": {
+            "layer": "本命",
+            "pillar": "month"
+          },
+          "predicateScope": [
+            {
+              "layer": "本命",
+              "pillar": "month"
+            }
+          ]
+        },
+        {
+          "key": "canggan",
+          "scope": {
+            "layer": "本命",
+            "pillar": "month"
+          },
+          "predicateScope": [
+            {
+              "layer": "本命",
+              "pillar": "month"
+            }
+          ]
+        },
+        {
+          "key": "gan",
+          "scope": {
+            "layer": "本命",
+            "pillar": [
+              "year",
+              "month",
+              "time"
+            ]
+          },
+          "predicateScope": [
+            {
+              "layer": "本命",
+              "pillar": "year"
+            },
+            {
+              "layer": "本命",
+              "pillar": "month"
+            },
+            {
+              "layer": "本命",
+              "pillar": "time"
+            }
+          ]
+        }
+      ],
+      "applicableLayers": [
+        "本命"
+      ],
+      "unsupportedLayers": [
+        "大运",
+        "流年",
+        "流月",
+        "流日"
+      ],
+      "semantics": {
+        "satisfied": "仅本入口满足时附 candidateOutput；来源方向为候选，不等于喜忌或主题作用。",
+        "notSatisfied": "只否定这条偏财入口，不附顺逆方向，也不否定其它入口。",
+        "unknown": "所需柱位事实缺失时不附方向；缺键不得降为不满足。"
+      },
+      "caveats": [
+        "本条在 ZPR-P1-01 的“偏财取用入口”之上只增加来源所称“财善顺用”的候选分类；入口本身见 L544，类别总括见 L328。这是两句原文相接的推断，并非 L544 另有“已顺用”的断语。",
+        "“满足”仅表示本命戊透入口可标顺用候选，不表示该入口已被裁为唯一用神、财格已成或财喜食神相生、生官护财等逐格关系已经成立。",
+        "同透癸、乙或会支时仍允许多入口并存；本标签只跟随偏财入口，不给其他入口定方向，也不覆盖建禄月劫另取。",
+        "本条没有升级 ZPR-E-02 的 satisfy_when、rescue、verified 或适用条件，也不作六主题吉凶出口。",
+        "仅在本规则满足时附 candidateOutput；反例与缺项不附方向，不能把它回写为本规则 applicableTo 的 Fact。",
+        "展示出处必须并列保留 candidateSources 的 L328 分类、L544 入口与 L548 并用。"
+      ],
+      "exceptionsAndBreaks": [
+        "本条在 ZPR-P1-01 的“偏财取用入口”之上只增加来源所称“财善顺用”的候选分类；入口本身见 L544，类别总括见 L328。这是两句原文相接的推断，并非 L544 另有“已顺用”的断语。",
+        "“满足”仅表示本命戊透入口可标顺用候选，不表示该入口已被裁为唯一用神、财格已成或财喜食神相生、生官护财等逐格关系已经成立。",
+        "同透癸、乙或会支时仍允许多入口并存；本标签只跟随偏财入口，不给其他入口定方向，也不覆盖建禄月劫另取。",
+        "本条没有升级 ZPR-E-02 的 satisfy_when、rescue、verified 或适用条件，也不作六主题吉凶出口。",
+        "仅在本规则满足时附 candidateOutput；反例与缺项不附方向，不能把它回写为本规则 applicableTo 的 Fact。",
+        "展示出处必须并列保留 candidateSources 的 L328 分类、L544 入口与 L548 并用。"
+      ],
+      "conflictNotes": [
+        "不同古籍/流派对旺衰、格局与冲合解释可能冲突；产品保留来源与 unknown，不在本仓合并成分数。"
+      ],
+      "verification": {
+        "verified": false,
+        "fixtureSource": "tools/reports/facts-sample.json",
+        "positive": {
+          "case": "caseP1_ZPR_01_wu_only",
+          "factCount": 102,
+          "verdict": "满足",
+          "confidence": 1.0,
+          "factCoverage": 1.0,
+          "missingFactKeys": []
+        },
+        "negative": {
+          "case": "caseP1_ZPR_01_no_wu",
+          "factCount": 104,
+          "verdict": "不满足",
+          "confidence": 1.0,
+          "factCoverage": 1.0,
+          "missingFactKeys": []
+        },
+        "boundary": {
+          "case": "caseP1_ZPR_01_no_wu",
+          "factCount": 103,
+          "verdict": "信息不足",
+          "confidence": 0.75,
+          "factCoverage": 0.75,
+          "missingFactKeys": [
+            "gan"
+          ]
+        },
+        "result": "三态固定样盘通过；这只证明求值和输入覆盖，不证明现实预测准确率。",
+        "coexistingEntry": {
+          "case": "caseP1_ZPR_01_wu_gui_both",
+          "factCount": 103,
+          "verdict": "满足",
+          "confidence": 1.0,
+          "factCoverage": 1.0,
+          "missingFactKeys": []
+        }
+      },
+      "export": {
+        "artifact": "dist/rules/bazi.json",
+        "classicsRev": "b9d7bb5413f042901c8bcd4635327ba585992d66"
+      },
+      "candidateOutput": {
+        "entryId": "ZPR-P1-01",
+        "entry": "甲辰月透戊偏财",
+        "category": "财",
+        "direction": "顺用",
+        "status": "候选",
+        "scope": {
+          "layer": "本命"
+        },
+        "emitOn": "满足"
+      },
+      "candidateSources": [
+        {
+          "role": "direction_category",
+          "anchor": {
+            "file": "sources/fulltext/bazi/ziping-zhenquan/fulltext.md",
+            "startLine": 328,
+            "endLine": 328
+          },
+          "quote": "財官印食，此用神之善而順用之者也"
+        },
+        {
+          "role": "entry",
+          "anchor": {
+            "file": "sources/fulltext/bazi/ziping-zhenquan/fulltext.md",
+            "startLine": 544,
+            "endLine": 544
+          },
+          "quote": "透戊則用偏財"
+        },
+        {
+          "role": "coexisting_entries",
+          "anchor": {
+            "file": "sources/fulltext/bazi/ziping-zhenquan/fulltext.md",
+            "startLine": 548,
+            "endLine": 548
+          },
+          "quote": "兼透則兼用，透而又會，則透與會並用"
+        }
+      ]
+    },
+    {
+      "ruleId": "ZPR-P1-02",
+      "art": "bazi",
+      "book": "bazi/ziping-zhenquan",
+      "primaryTopic": "overview",
+      "secondaryTopics": [],
+      "status": "adopted_as_provisional_evidence",
+      "role": "structural",
+      "statement": "甲日生辰月，本命另见申、子两支时，具备申子辰会支取水印的结构入口；须再核成局、冲破与并用，不直接判印格已成。",
+      "quote": "何謂會支？如甲生辰月，逢申與子會局，則用水印是也。",
+      "anchor": {
+        "file": "sources/fulltext/bazi/ziping-zhenquan/fulltext.md",
+        "startLine": 542,
+        "endLine": 548
+      },
+      "applicableTo": {
+        "all_of": [
+          {
+            "key": "rizhu",
+            "value": "甲",
+            "scope": {
+              "layer": "本命",
+              "pillar": "day"
+            }
+          },
+          {
+            "key": "yueling",
+            "value": "辰",
+            "scope": {
+              "layer": "本命",
+              "pillar": "month"
+            }
+          },
+          {
+            "key": "zhi",
+            "value": "辰",
+            "scope": {
+              "layer": "本命",
+              "pillar": "month"
+            }
+          },
+          {
+            "any_of": [
+              {
+                "key": "zhi",
+                "value": "申",
+                "scope": {
+                  "layer": "本命",
+                  "pillar": "year"
+                }
+              },
+              {
+                "key": "zhi",
+                "value": "申",
+                "scope": {
+                  "layer": "本命",
+                  "pillar": "day"
+                }
+              },
+              {
+                "key": "zhi",
+                "value": "申",
+                "scope": {
+                  "layer": "本命",
+                  "pillar": "time"
+                }
+              }
+            ]
+          },
+          {
+            "any_of": [
+              {
+                "key": "zhi",
+                "value": "子",
+                "scope": {
+                  "layer": "本命",
+                  "pillar": "year"
+                }
+              },
+              {
+                "key": "zhi",
+                "value": "子",
+                "scope": {
+                  "layer": "本命",
+                  "pillar": "day"
+                }
+              },
+              {
+                "key": "zhi",
+                "value": "子",
+                "scope": {
+                  "layer": "本命",
+                  "pillar": "time"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      "requiredFacts": [
+        {
+          "key": "rizhu",
+          "scope": {
+            "layer": "本命",
+            "pillar": "day"
+          },
+          "predicateScope": [
+            {
+              "layer": "本命",
+              "pillar": "day"
+            }
+          ]
+        },
+        {
+          "key": "yueling",
+          "scope": {
+            "layer": "本命",
+            "pillar": "month"
+          },
+          "predicateScope": [
+            {
+              "layer": "本命",
+              "pillar": "month"
+            }
+          ]
+        },
+        {
+          "key": "zhi",
+          "scope": {
+            "layer": "本命",
+            "pillar": [
+              "year",
+              "month",
+              "day",
+              "time"
+            ]
+          },
+          "predicateScope": [
+            {
+              "layer": "本命",
+              "pillar": "month"
+            },
+            {
+              "layer": "本命",
+              "pillar": "year"
+            },
+            {
+              "layer": "本命",
+              "pillar": "day"
+            },
+            {
+              "layer": "本命",
+              "pillar": "time"
+            },
+            {
+              "layer": "本命",
+              "pillar": "year"
+            },
+            {
+              "layer": "本命",
+              "pillar": "day"
+            },
+            {
+              "layer": "本命",
+              "pillar": "time"
+            }
+          ]
+        }
+      ],
+      "applicableLayers": [
+        "本命"
+      ],
+      "unsupportedLayers": [
+        "大运",
+        "流年",
+        "流月",
+        "流日"
+      ],
+      "semantics": {
+        "satisfied": "applicable_to 整体满足，且返回完整 matched Fact 见证集。",
+        "notSatisfied": "所需 FactKey 存在，但 applicable_to 没有命中；不能解释为现实事件不发生。",
+        "unknown": "任一所需 FactKey 缺失，或产品传入的时间层/柱位不在本 manifest 合同内；不能降级为 not_satisfied。"
+      },
+      "caveats": [
+        "本条只判本命申子辰三支齐备的会支核验入口；支齐不单独证明成局、化水、格局清浊或现实结果。",
+        "月令辰须在本命月支，申、子须在本命其他柱；不可借大运、流年、流月或流日凑局。",
+        "依原文“一透则一用，兼透则兼用，透而又会则透与会并用”，本条不得排除同盘的戊、癸、乙透干入口。",
+        "影印核对见 NLC416-11jh010455-35296.pdf 第41页（印本32页）；会支之后的有情无情与冲破条件未由本谓词判定。",
+        "仅有甲辰月本命申子辰支齐的会支核验入口；不能单凭支齐判成局、印格或现实结果。",
+        "透干入口可与会支并存，须按原文兼用；影印证据：NLC416-11jh010455-35296.pdf 第41页（印本32页）。"
+      ],
+      "exceptionsAndBreaks": [
+        "本条只判本命申子辰三支齐备的会支核验入口；支齐不单独证明成局、化水、格局清浊或现实结果。",
+        "月令辰须在本命月支，申、子须在本命其他柱；不可借大运、流年、流月或流日凑局。",
+        "依原文“一透则一用，兼透则兼用，透而又会则透与会并用”，本条不得排除同盘的戊、癸、乙透干入口。",
+        "影印核对见 NLC416-11jh010455-35296.pdf 第41页（印本32页）；会支之后的有情无情与冲破条件未由本谓词判定。",
+        "仅有甲辰月本命申子辰支齐的会支核验入口；不能单凭支齐判成局、印格或现实结果。",
+        "透干入口可与会支并存，须按原文兼用；影印证据：NLC416-11jh010455-35296.pdf 第41页（印本32页）。"
+      ],
+      "conflictNotes": [
+        "不同古籍/流派对旺衰、格局与冲合解释可能冲突；产品保留来源与 unknown，不在本仓合并成分数。"
+      ],
+      "verification": {
+        "verified": false,
+        "fixtureSource": "tools/reports/facts-sample.json",
+        "positive": {
+          "case": "caseP1_ZPR_02_shen_zi",
+          "factCount": 96,
+          "verdict": "满足",
+          "confidence": 1.0,
+          "factCoverage": 1.0,
+          "missingFactKeys": []
+        },
+        "negative": {
+          "case": "caseP1_ZPR_01_no_wu",
+          "factCount": 104,
+          "verdict": "不满足",
+          "confidence": 1.0,
+          "factCoverage": 1.0,
+          "missingFactKeys": []
+        },
+        "boundary": {
+          "case": "caseP1_ZPR_02_shen_zi",
+          "factCount": 95,
+          "verdict": "信息不足",
+          "confidence": 0.667,
+          "factCoverage": 0.667,
+          "missingFactKeys": [
+            "zhi"
+          ]
+        },
+        "result": "三态固定样盘通过；这只证明求值和输入覆盖，不证明现实预测准确率。"
+      },
+      "export": {
+        "artifact": "dist/rules/bazi.json",
+        "classicsRev": "b9d7bb5413f042901c8bcd4635327ba585992d66"
+      }
+    },
+    {
+      "ruleId": "ZPR-P1-01",
+      "art": "bazi",
+      "book": "bazi/ziping-zhenquan",
+      "primaryTopic": "wealth",
+      "secondaryTopics": [
+        "overview"
+      ],
+      "status": "adopted_as_provisional_evidence",
+      "role": "structural",
+      "statement": "甲日生辰月，辰中戊土透于本命年、月或时干时，偏财可列为月令杂气取用入口；这不等于偏财格已成或现实财运。",
+      "quote": "何謂透干？如甲生辰【校：「辰」原作「三」，據下文及中州本改】月，透戊則用偏財，透癸則用正印，透乙則用月劫是也。",
+      "anchor": {
+        "file": "sources/fulltext/bazi/ziping-zhenquan/fulltext.md",
+        "startLine": 542,
+        "endLine": 548
+      },
+      "applicableTo": {
+        "all_of": [
+          {
+            "key": "rizhu",
+            "value": "甲",
+            "scope": {
+              "layer": "本命",
+              "pillar": "day"
+            }
+          },
+          {
+            "key": "yueling",
+            "value": "辰",
+            "scope": {
+              "layer": "本命",
+              "pillar": "month"
+            }
+          },
+          {
+            "key": "canggan",
+            "value": "戊",
+            "scope": {
+              "layer": "本命",
+              "pillar": "month"
+            }
+          },
+          {
+            "any_of": [
+              {
+                "key": "gan",
+                "value": "戊",
+                "scope": {
+                  "layer": "本命",
+                  "pillar": "year"
+                }
+              },
+              {
+                "key": "gan",
+                "value": "戊",
+                "scope": {
+                  "layer": "本命",
+                  "pillar": "month"
+                }
+              },
+              {
+                "key": "gan",
+                "value": "戊",
+                "scope": {
+                  "layer": "本命",
+                  "pillar": "time"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      "requiredFacts": [
+        {
+          "key": "rizhu",
+          "scope": {
+            "layer": "本命",
+            "pillar": "day"
+          },
+          "predicateScope": [
+            {
+              "layer": "本命",
+              "pillar": "day"
+            }
+          ]
+        },
+        {
+          "key": "yueling",
+          "scope": {
+            "layer": "本命",
+            "pillar": "month"
+          },
+          "predicateScope": [
+            {
+              "layer": "本命",
+              "pillar": "month"
+            }
+          ]
+        },
+        {
+          "key": "canggan",
+          "scope": {
+            "layer": "本命",
+            "pillar": "month"
+          },
+          "predicateScope": [
+            {
+              "layer": "本命",
+              "pillar": "month"
+            }
+          ]
+        },
+        {
+          "key": "gan",
+          "scope": {
+            "layer": "本命",
+            "pillar": [
+              "year",
+              "month",
+              "time"
+            ]
+          },
+          "predicateScope": [
+            {
+              "layer": "本命",
+              "pillar": "year"
+            },
+            {
+              "layer": "本命",
+              "pillar": "month"
+            },
+            {
+              "layer": "本命",
+              "pillar": "time"
+            }
+          ]
+        }
+      ],
+      "applicableLayers": [
+        "本命"
+      ],
+      "unsupportedLayers": [
+        "大运",
+        "流年",
+        "流月",
+        "流日"
+      ],
+      "semantics": {
+        "satisfied": "applicable_to 整体满足，且返回完整 matched Fact 见证集。",
+        "notSatisfied": "所需 FactKey 存在，但 applicable_to 没有命中；不能解释为现实事件不发生。",
+        "unknown": "任一所需 FactKey 缺失，或产品传入的时间层/柱位不在本 manifest 合同内；不能降级为 not_satisfied。"
+      },
+      "caveats": [
+        "只判“透戊形成偏财取用入口”，不判偏财为唯一用神、格局清浊成败或富贵。",
+        "同透癸或乙须依原文“兼透则兼用”；申子辰会支须依“透而又会则并用”，不得覆盖其他入口。",
+        "原文没有要求本条单独核司令深浅；若扩张为用神得力或财富结果，须另判司令、相神、救应与冲破。",
+        "影印核对见 NLC416-11jh010455-35296.pdf 第41页（印本32页）；电子本“辰”有校记，影印本作“辰”。",
+        "仅有甲辰月戊透的偏财取用入口；不判唯一用神、格局清浊成败、财富或岁运结果。",
+        "影印证据：NLC416-11jh010455-35296.pdf 第41页（印本32页）。"
+      ],
+      "exceptionsAndBreaks": [
+        "只判“透戊形成偏财取用入口”，不判偏财为唯一用神、格局清浊成败或富贵。",
+        "同透癸或乙须依原文“兼透则兼用”；申子辰会支须依“透而又会则并用”，不得覆盖其他入口。",
+        "原文没有要求本条单独核司令深浅；若扩张为用神得力或财富结果，须另判司令、相神、救应与冲破。",
+        "影印核对见 NLC416-11jh010455-35296.pdf 第41页（印本32页）；电子本“辰”有校记，影印本作“辰”。",
+        "仅有甲辰月戊透的偏财取用入口；不判唯一用神、格局清浊成败、财富或岁运结果。",
+        "影印证据：NLC416-11jh010455-35296.pdf 第41页（印本32页）。"
+      ],
+      "conflictNotes": [
+        "不同古籍/流派对旺衰、格局与冲合解释可能冲突；产品保留来源与 unknown，不在本仓合并成分数。"
+      ],
+      "verification": {
+        "verified": false,
+        "fixtureSource": "tools/reports/facts-sample.json",
+        "positive": {
+          "case": "caseP1_ZPR_01_wu_only",
+          "factCount": 102,
+          "verdict": "满足",
+          "confidence": 1.0,
+          "factCoverage": 1.0,
+          "missingFactKeys": []
+        },
+        "negative": {
+          "case": "caseP1_ZPR_01_no_wu",
+          "factCount": 104,
+          "verdict": "不满足",
+          "confidence": 1.0,
+          "factCoverage": 1.0,
+          "missingFactKeys": []
+        },
+        "boundary": {
+          "case": "caseP1_ZPR_01_no_wu",
+          "factCount": 103,
+          "verdict": "信息不足",
+          "confidence": 0.75,
+          "factCoverage": 0.75,
+          "missingFactKeys": [
+            "gan"
+          ]
+        },
+        "result": "三态固定样盘通过；这只证明求值和输入覆盖，不证明现实预测准确率。"
+      },
+      "export": {
+        "artifact": "dist/rules/bazi.json",
+        "classicsRev": "b9d7bb5413f042901c8bcd4635327ba585992d66"
+      }
+    },
     {
       "ruleId": "DITIANSUICHA-003",
       "art": "bazi",
@@ -218,7 +932,7 @@
         },
         "negative": {
           "case": "caseA",
-          "factCount": 102,
+          "factCount": 103,
           "verdict": "不满足",
           "confidence": 1.0,
           "factCoverage": 1.0,
@@ -238,9 +952,7 @@
       },
       "export": {
         "artifact": "dist/rules/bazi.json",
-        "classicsRev": "6321186f6aeebd0737537c45286153eedf49adb4",
-        "generatedFile": ".local/staging/p1-bazi-20260921/rules/bazi.json",
-        "sha256": "95d884c10cd01864d1d252f52ea3b51483acffb87c45a4d75b4945d8729e3625"
+        "classicsRev": "b9d7bb5413f042901c8bcd4635327ba585992d66"
       }
     },
     {
@@ -315,7 +1027,7 @@
         },
         "negative": {
           "case": "caseA",
-          "factCount": 102,
+          "factCount": 103,
           "verdict": "不满足",
           "confidence": 1.0,
           "factCoverage": 1.0,
@@ -335,9 +1047,7 @@
       },
       "export": {
         "artifact": "dist/rules/bazi.json",
-        "classicsRev": "6321186f6aeebd0737537c45286153eedf49adb4",
-        "generatedFile": ".local/staging/p1-bazi-20260921/rules/bazi.json",
-        "sha256": "95d884c10cd01864d1d252f52ea3b51483acffb87c45a4d75b4945d8729e3625"
+        "classicsRev": "b9d7bb5413f042901c8bcd4635327ba585992d66"
       }
     },
     {
@@ -415,7 +1125,7 @@
         },
         "negative": {
           "case": "caseA",
-          "factCount": 102,
+          "factCount": 103,
           "verdict": "不满足",
           "confidence": 1.0,
           "factCoverage": 1.0,
@@ -435,9 +1145,7 @@
       },
       "export": {
         "artifact": "dist/rules/bazi.json",
-        "classicsRev": "6321186f6aeebd0737537c45286153eedf49adb4",
-        "generatedFile": ".local/staging/p1-bazi-20260921/rules/bazi.json",
-        "sha256": "95d884c10cd01864d1d252f52ea3b51483acffb87c45a4d75b4945d8729e3625"
+        "classicsRev": "b9d7bb5413f042901c8bcd4635327ba585992d66"
       }
     },
     {
@@ -507,7 +1215,7 @@
         "fixtureSource": "tools/reports/facts-sample.json",
         "positive": {
           "case": "cov1_bazi_1",
-          "factCount": 104,
+          "factCount": 105,
           "verdict": "满足",
           "confidence": 1.0,
           "factCoverage": 1.0,
@@ -515,7 +1223,7 @@
         },
         "negative": {
           "case": "caseA",
-          "factCount": 102,
+          "factCount": 103,
           "verdict": "不满足",
           "confidence": 1.0,
           "factCoverage": 1.0,
@@ -523,7 +1231,7 @@
         },
         "boundary": {
           "case": "cov1_bazi_1",
-          "factCount": 103,
+          "factCount": 104,
           "verdict": "信息不足",
           "confidence": 0.0,
           "factCoverage": 0.0,
@@ -535,9 +1243,7 @@
       },
       "export": {
         "artifact": "dist/rules/bazi.json",
-        "classicsRev": "6321186f6aeebd0737537c45286153eedf49adb4",
-        "generatedFile": ".local/staging/p1-bazi-20260921/rules/bazi.json",
-        "sha256": "95d884c10cd01864d1d252f52ea3b51483acffb87c45a4d75b4945d8729e3625"
+        "classicsRev": "b9d7bb5413f042901c8bcd4635327ba585992d66"
       }
     },
     {
@@ -686,7 +1392,7 @@
         "fixtureSource": "tools/reports/facts-sample.json",
         "positive": {
           "case": "cov1_bazi_1",
-          "factCount": 104,
+          "factCount": 105,
           "verdict": "满足",
           "confidence": 1.0,
           "factCoverage": 1.0,
@@ -694,7 +1400,7 @@
         },
         "negative": {
           "case": "caseA",
-          "factCount": 102,
+          "factCount": 103,
           "verdict": "不满足",
           "confidence": 1.0,
           "factCoverage": 1.0,
@@ -702,7 +1408,7 @@
         },
         "boundary": {
           "case": "cov1_bazi_1",
-          "factCount": 100,
+          "factCount": 101,
           "verdict": "信息不足",
           "confidence": 0.0,
           "factCoverage": 0.0,
@@ -714,9 +1420,7 @@
       },
       "export": {
         "artifact": "dist/rules/bazi.json",
-        "classicsRev": "6321186f6aeebd0737537c45286153eedf49adb4",
-        "generatedFile": ".local/staging/p1-bazi-20260921/rules/bazi.json",
-        "sha256": "95d884c10cd01864d1d252f52ea3b51483acffb87c45a4d75b4945d8729e3625"
+        "classicsRev": "b9d7bb5413f042901c8bcd4635327ba585992d66"
       }
     },
     {
@@ -798,7 +1502,7 @@
         "fixtureSource": "tools/reports/facts-sample.json",
         "positive": {
           "case": "caseA",
-          "factCount": 102,
+          "factCount": 103,
           "verdict": "满足",
           "confidence": 1.0,
           "factCoverage": 1.0,
@@ -806,7 +1510,7 @@
         },
         "negative": {
           "case": "caseB",
-          "factCount": 97,
+          "factCount": 96,
           "verdict": "不满足",
           "confidence": 1.0,
           "factCoverage": 1.0,
@@ -814,7 +1518,7 @@
         },
         "boundary": {
           "case": "caseA",
-          "factCount": 98,
+          "factCount": 99,
           "verdict": "信息不足",
           "confidence": 0.0,
           "factCoverage": 0.0,
@@ -826,9 +1530,7 @@
       },
       "export": {
         "artifact": "dist/rules/bazi.json",
-        "classicsRev": "6321186f6aeebd0737537c45286153eedf49adb4",
-        "generatedFile": ".local/staging/p1-bazi-20260921/rules/bazi.json",
-        "sha256": "95d884c10cd01864d1d252f52ea3b51483acffb87c45a4d75b4945d8729e3625"
+        "classicsRev": "b9d7bb5413f042901c8bcd4635327ba585992d66"
       }
     },
     {
@@ -1096,7 +1798,7 @@
         "fixtureSource": "tools/reports/facts-sample.json",
         "positive": {
           "case": "caseA",
-          "factCount": 102,
+          "factCount": 103,
           "verdict": "满足",
           "confidence": 1.0,
           "factCoverage": 1.0,
@@ -1104,7 +1806,7 @@
         },
         "negative": {
           "case": "caseB",
-          "factCount": 97,
+          "factCount": 96,
           "verdict": "不满足",
           "confidence": 1.0,
           "factCoverage": 1.0,
@@ -1112,7 +1814,7 @@
         },
         "boundary": {
           "case": "caseA",
-          "factCount": 98,
+          "factCount": 99,
           "verdict": "信息不足",
           "confidence": 0.5,
           "factCoverage": 0.5,
@@ -1124,9 +1826,7 @@
       },
       "export": {
         "artifact": "dist/rules/bazi.json",
-        "classicsRev": "6321186f6aeebd0737537c45286153eedf49adb4",
-        "generatedFile": ".local/staging/p1-bazi-20260921/rules/bazi.json",
-        "sha256": "95d884c10cd01864d1d252f52ea3b51483acffb87c45a4d75b4945d8729e3625"
+        "classicsRev": "b9d7bb5413f042901c8bcd4635327ba585992d66"
       }
     },
     {
@@ -1228,7 +1928,7 @@
         "fixtureSource": "tools/reports/facts-sample.json",
         "positive": {
           "case": "caseFlowYear",
-          "factCount": 17,
+          "factCount": 18,
           "verdict": "满足",
           "confidence": 1.0,
           "factCoverage": 1.0,
@@ -1237,7 +1937,7 @@
         },
         "negative": {
           "case": "caseFlowYear",
-          "factCount": 14,
+          "factCount": 15,
           "verdict": "不满足",
           "confidence": 1.0,
           "factCoverage": 1.0,
@@ -1246,20 +1946,20 @@
         },
         "boundary": {
           "case": "caseFlowYearUnknown",
-          "factCount": 9,
+          "factCount": 10,
           "verdict": "信息不足",
-          "confidence": 1.0,
-          "factCoverage": 1.0,
-          "missingFactKeys": [],
+          "confidence": 0.0,
+          "factCoverage": 0.0,
+          "missingFactKeys": [
+            "dayun_liunian_relation_class"
+          ],
           "year": 2100
         },
         "result": "三态固定样盘通过；这只证明求值和输入覆盖，不证明现实预测准确率。"
       },
       "export": {
         "artifact": "dist/rules/bazi.json",
-        "classicsRev": "6321186f6aeebd0737537c45286153eedf49adb4",
-        "generatedFile": ".local/staging/p1-bazi-20260921/rules/bazi.json",
-        "sha256": "95d884c10cd01864d1d252f52ea3b51483acffb87c45a4d75b4945d8729e3625"
+        "classicsRev": "b9d7bb5413f042901c8bcd4635327ba585992d66"
       }
     }
   ],
@@ -1272,7 +1972,10 @@
       "DITIANSUICHA-DR-06",
       "SANMINGTONGH-015",
       "SANMINGTONGH-097",
-      "YUANHAIZIPIN-YR-03"
+      "YUANHAIZIPIN-YR-03",
+      "ZPR-P1-01",
+      "ZPR-P1-02",
+      "ZPR-P1-03"
     ],
     "blocked": [
       {
@@ -1376,8 +2079,8 @@
       "result": "通过：生成器为 shensha 事实写入 scope.layer=本命 与 scope.pillar=year/month/day/time；固定样盘重建后与产品 fixture 字节一致。",
       "generator": "bun scripts/dump-facts.ts /Users/sync/code/fateradar-classics",
       "proofFile": "tools/reports/p1-bazi-20260921/shensha-scope-proof.json",
-      "sampleSha256": "ee750a96ae11dece15bdcef26b5e0fcc6b928a1e6947f1aa7ffd47fdb4c53aa7",
-      "shenshaFactCount": 289,
+      "sampleSha256": "6915a56e7fef202a5c3f145106e0205b2ae1590ad2348d7f5d7ade6dd04518fb",
+      "shenshaFactCount": 473,
       "semanticLimit": "柱位存在不证明神煞代理等价于建禄/专禄格局。"
     },
     "wx0502": "退回：只能写同柱禄神/驿马保守子集；跨柱同支未覆盖，且当前锚点仅卷名。",

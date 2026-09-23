@@ -9,7 +9,6 @@ product needs when building Fact -> RuleEvaluation -> TopicEvaluation.
 from __future__ import annotations
 
 import argparse
-import datetime
 import hashlib
 import importlib.util
 import json
@@ -20,13 +19,84 @@ from pathlib import Path
 import yaml
 
 ROOT = Path(__file__).resolve().parents[1]
-CLASSICS_REV = "6321186f6aeebd0737537c45286153eedf49adb4"
+CLASSICS_REV = "b9d7bb5413f042901c8bcd4635327ba585992d66"
 SAMPLE = ROOT / "tools/reports/facts-sample.json"
 PRODUCT_ROOT = Path("/Users/sync/code/cosmic-fortune-lab")
+FIXTURE_SHA256 = "6915a56e7fef202a5c3f145106e0205b2ae1590ad2348d7f5d7ade6dd04518fb"
+PRODUCT_FIXTURE_REPO_HEAD = "93c7245db2dbfa82e3a8ce69cc74ab318391b988"
+PRODUCT_SCRIPT_SHA256 = "e2f84a1b910d722aae995ed7deecf079680d81477bce0ed41f1903808ea0baee"
+PRODUCT_TEN_MANIFEST_SHA256 = "c645237397039d001367ad2df6f624d0f363f1daee9ca07fdf3031b4f511d6ab"
+TEN_RULE_SEMANTIC_SHA256 = "d2587a335b380fe63d152e3283f0d24c645c31dd9fd33ec244cb729a76b5b63b"
+TEN_RULE_SEMANTIC_FIELDS = (
+    "ruleId", "statement", "quote", "anchor", "applicableTo", "primaryTopic",
+    "secondaryTopics", "role", "status", "applicableLayers", "unsupportedLayers",
+)
 
 # A rule is listed once here and may be referenced by more than one topic.  A
 # topic assignment is handoff metadata; it does not change rules.yaml.
 RULE_META = {
+    "ZPR-P1-03": {
+        "primaryTopic": "overview",
+        "secondaryTopics": [],
+        "requiredFacts": [
+            {"key": "rizhu", "scope": {"layer": "本命", "pillar": "day"}},
+            {"key": "yueling", "scope": {"layer": "本命", "pillar": "month"}},
+            {"key": "canggan", "scope": {"layer": "本命", "pillar": "month"}},
+            {"key": "gan", "scope": {"layer": "本命", "pillar": ["year", "month", "time"]}},
+        ],
+        "fixtures": {
+            "positive": "caseP1_ZPR_01_wu_only",
+            "negative": "caseP1_ZPR_01_no_wu",
+            "boundary": "caseP1_ZPR_01_no_wu",
+            "boundaryRemoveScoped": [{"key": "gan", "scope": {"layer": "本命", "pillar": "year"}}],
+        },
+        "role": "source_classification",
+        "extraCaveats": [
+            "仅在本规则满足时附 candidateOutput；反例与缺项不附方向，不能把它回写为本规则 applicableTo 的 Fact。",
+            "展示出处必须并列保留 candidateSources 的 L328 分类、L544 入口与 L548 并用。",
+        ],
+    },
+    "ZPR-P1-02": {
+        "primaryTopic": "overview",
+        "secondaryTopics": [],
+        "requiredFacts": [
+            {"key": "rizhu", "scope": {"layer": "本命", "pillar": "day"}},
+            {"key": "yueling", "scope": {"layer": "本命", "pillar": "month"}},
+            {"key": "zhi", "scope": {"layer": "本命", "pillar": ["year", "month", "day", "time"]}},
+        ],
+        "fixtures": {
+            "positive": "caseP1_ZPR_02_shen_zi",
+            "negative": "caseP1_ZPR_01_no_wu",
+            "boundary": "caseP1_ZPR_02_shen_zi",
+            "boundaryRemoveScoped": [{"key": "zhi", "scope": {"layer": "本命", "pillar": "year"}}],
+        },
+        "role": "structural",
+        "extraCaveats": [
+            "仅有甲辰月本命申子辰支齐的会支核验入口；不能单凭支齐判成局、印格或现实结果。",
+            "透干入口可与会支并存，须按原文兼用；影印证据：NLC416-11jh010455-35296.pdf 第41页（印本32页）。",
+        ],
+    },
+    "ZPR-P1-01": {
+        "primaryTopic": "wealth",
+        "secondaryTopics": ["overview"],
+        "requiredFacts": [
+            {"key": "rizhu", "scope": {"layer": "本命", "pillar": "day"}},
+            {"key": "yueling", "scope": {"layer": "本命", "pillar": "month"}},
+            {"key": "canggan", "scope": {"layer": "本命", "pillar": "month"}},
+            {"key": "gan", "scope": {"layer": "本命", "pillar": ["year", "month", "time"]}},
+        ],
+        "fixtures": {
+            "positive": "caseP1_ZPR_01_wu_only",
+            "negative": "caseP1_ZPR_01_no_wu",
+            "boundary": "caseP1_ZPR_01_no_wu",
+            "boundaryRemoveScoped": [{"key": "gan", "scope": {"layer": "本命", "pillar": "year"}}],
+        },
+        "role": "structural",
+        "extraCaveats": [
+            "仅有甲辰月戊透的偏财取用入口；不判唯一用神、格局清浊成败、财富或岁运结果。",
+            "影印证据：NLC416-11jh010455-35296.pdf 第41页（印本32页）。",
+        ],
+    },
     "DITIANSUICHA-003": {
         "primaryTopic": "overview",
         "secondaryTopics": ["personality", "health"],
@@ -108,8 +178,8 @@ RULE_META = {
 TOPIC_META = {
     "overview": {
         "status": "partial",
-        "ruleIds": ["DITIANSUICHA-003", "DITIANSUICHA-DR-03", "DITIANSUICHA-DR-06", "SANMINGTONGH-015", "DITIANSUICHA-032", "SANMINGTONGH-097", "YUANHAIZIPIN-YR-03"],
-        "requiredFactKeys": ["rizhu", "yueling", "zhi", "rizhu_strength", "geju", "yongshen", "canggan"],
+        "ruleIds": ["ZPR-P1-01", "ZPR-P1-02", "ZPR-P1-03", "DITIANSUICHA-003", "DITIANSUICHA-DR-03", "DITIANSUICHA-DR-06", "SANMINGTONGH-015", "DITIANSUICHA-032", "SANMINGTONGH-097", "YUANHAIZIPIN-YR-03"],
+        "requiredFactKeys": ["rizhu", "yueling", "zhi", "gan", "rizhu_strength", "geju", "canggan"],
         "blockers": ["本命结构事实可以进入证据层；格局成败、用神细节和岁运触发尚未形成每条规则的完整条件。"],
     },
     "personality": {
@@ -121,14 +191,14 @@ TOPIC_META = {
     "career": {
         "status": "partial",
         "ruleIds": ["DITIANSUICHA-DR-06", "SANMINGTONGH-015", "YUANHAIZIPIN-YR-03"],
-        "requiredFactKeys": ["rizhu_strength", "shishen", "geju", "yongshen", "yueling"],
+        "requiredFactKeys": ["rizhu_strength", "shishen", "geju", "yueling"],
         "blockers": ["职位/行业、完整格局成败、取用和岁运窗口不是当前三条规则的充分条件。"],
     },
     "wealth": {
         "status": "partial",
-        "ruleIds": ["DITIANSUICHA-DR-06", "YUANHAIZIPIN-YR-03"],
-        "requiredFactKeys": ["rizhu_strength", "shishen", "yongshen"],
-        "blockers": ["当前只可交付‘极弱/从格入口’结构证据；财星位置、身财两停、比劫夺财和岁运尚未形成完整合同。"],
+        "ruleIds": ["ZPR-P1-01", "DITIANSUICHA-DR-06", "YUANHAIZIPIN-YR-03"],
+        "requiredFactKeys": ["rizhu", "yueling", "canggan", "gan", "rizhu_strength", "shishen"],
+        "blockers": ["已能交付甲辰月戊透的偏财取用入口及极弱/从格入口；唯一用神、财星力量、身财两停、比劫夺财和岁运尚未形成完整合同。"],
     },
     "relationship": {
         "status": "partial",
@@ -167,11 +237,24 @@ def load_eval_module():
     return module
 
 
-def git_head(path: Path) -> str | None:
-    try:
-        return subprocess.check_output(["git", "-C", str(path), "rev-parse", "HEAD"], text=True).strip()
-    except (OSError, subprocess.CalledProcessError):
-        return None
+def pinned_source_sha(relative_path: str) -> str:
+    path = ROOT / relative_path
+    actual = path.read_bytes()
+    pinned = subprocess.check_output(["git", "show", f"{CLASSICS_REV}:{relative_path}"], cwd=ROOT)
+    if actual != pinned:
+        raise RuntimeError(f"来源工作树与 CLASSICS_REV 不同：{relative_path}")
+    return hashlib.sha256(pinned).hexdigest()
+
+
+def carryover_semantic_sha(entries: list[dict]) -> str:
+    carryover = [
+        {field: entry[field] for field in TEN_RULE_SEMANTIC_FIELDS}
+        for entry in entries if entry["ruleId"] != "ZPR-P1-03"
+    ]
+    if len(carryover) != 10:
+        raise RuntimeError(f"旧规则应精确保留 10 条，实际 {len(carryover)} 条")
+    payload = json.dumps(sorted(carryover, key=lambda entry: entry["ruleId"]), ensure_ascii=False, sort_keys=True, separators=(",", ":"))
+    return hashlib.sha256(payload.encode("utf-8")).hexdigest()
 
 
 def load_rule_index() -> dict[str, dict]:
@@ -213,8 +296,17 @@ def leaves(node) -> list[dict]:
     return out
 
 
-def fixture_result(module, rule: dict, facts: list[dict], case: str, remove: list[str] | None = None, year: int | None = None) -> dict:
-    selected = [f for f in facts if f.get("key") not in set(remove or [])]
+def fixture_result(module, rule: dict, facts: list[dict], case: str, remove: list[str] | None = None, year: int | None = None, remove_scoped: list[dict] | None = None) -> dict:
+    def omitted(fact: dict) -> bool:
+        if fact.get("key") in set(remove or []):
+            return True
+        return any(
+            fact.get("key") == item.get("key")
+            and all((fact.get("scope") or {}).get(k) == v for k, v in (item.get("scope") or {}).items())
+            for item in remove_scoped or []
+        )
+
+    selected = [f for f in facts if not omitted(f)]
     if year is not None:
         selected = [f for f in selected if (f.get("scope") or {}).get("year") == year]
     evaluation = module.evaluate(rule, selected)
@@ -235,13 +327,9 @@ def make_manifest(output: Path, export_file: Path | None) -> dict:
     module = load_eval_module()
     sample = json.loads(SAMPLE.read_text(encoding="utf-8"))
     bazi_cases = sample["bazi"]
-    try:
-        diff_numstat = subprocess.check_output(
-            ["git", "-C", str(ROOT), "diff", "--numstat", "--", str(SAMPLE.relative_to(ROOT))],
-            text=True,
-        ).strip() or "无工作区 diff"
-    except (OSError, subprocess.CalledProcessError):
-        diff_numstat = "无法读取工作区 diff"
+    sample_hash = hashlib.sha256(SAMPLE.read_bytes()).hexdigest()
+    if sample_hash != FIXTURE_SHA256:
+        raise RuntimeError(f"共享 fixture 指纹变化：{sample_hash} != {FIXTURE_SHA256}")
     shensha_fact_count = sum(
         1
         for case in bazi_cases.values()
@@ -261,7 +349,7 @@ def make_manifest(output: Path, export_file: Path | None) -> dict:
         pos = fixture_result(module, rule, bazi_cases[fixture["positive"]]["facts"], fixture["positive"], year=fixture.get("positiveYear"))
         neg = fixture_result(module, rule, bazi_cases[fixture["negative"]]["facts"], fixture["negative"], year=fixture.get("negativeYear"))
         if "boundary" in fixture:
-            boundary = fixture_result(module, rule, bazi_cases[fixture["boundary"]]["facts"], fixture["boundary"], year=fixture.get("boundaryYear"))
+            boundary = fixture_result(module, rule, bazi_cases[fixture["boundary"]]["facts"], fixture["boundary"], year=fixture.get("boundaryYear"), remove_scoped=fixture.get("boundaryRemoveScoped"))
         else:
             boundary = fixture_result(module, rule, bazi_cases[fixture["positive"]]["facts"], fixture["positive"], fixture.get("boundaryRemove"), year=fixture.get("positiveYear"))
         expected = {"positive": "满足", "negative": "不满足", "boundary": "信息不足"}
@@ -275,7 +363,7 @@ def make_manifest(output: Path, export_file: Path | None) -> dict:
         if export_file and export_file.exists():
             export_info["generatedFile"] = str(export_file)
             export_info["sha256"] = hashlib.sha256(export_file.read_bytes()).hexdigest()
-        entries.append({
+        entry = {
             "ruleId": rid,
             "art": "bazi",
             "book": rule["book"],
@@ -296,6 +384,8 @@ def make_manifest(output: Path, export_file: Path | None) -> dict:
                 "unknown": "任一所需 FactKey 缺失，或产品传入的时间层/柱位不在本 manifest 合同内；不能降级为 not_satisfied。",
             },
             "caveats": list(rule.get("caveats") or []) + meta["extraCaveats"],
+            # Legacy handoff alias. Consumers should render caveats once, not
+            # concatenate the two identical lists into duplicate copy.
             "exceptionsAndBreaks": list(rule.get("caveats") or []) + meta["extraCaveats"],
             "conflictNotes": ["不同古籍/流派对旺衰、格局与冲合解释可能冲突；产品保留来源与 unknown，不在本仓合并成分数。"],
             "verification": {
@@ -307,47 +397,78 @@ def make_manifest(output: Path, export_file: Path | None) -> dict:
                 "result": "三态固定样盘通过；这只证明求值和输入覆盖，不证明现实预测准确率。",
             },
             "export": export_info,
-        })
+        }
+        if rid == "ZPR-P1-03":
+            export_module_path = ROOT / "tools/export-rules.py"
+            export_spec = importlib.util.spec_from_file_location("p1_export_rules", export_module_path)
+            if export_spec is None or export_spec.loader is None:
+                raise RuntimeError(f"无法加载 {export_module_path}")
+            export_module = importlib.util.module_from_spec(export_spec)
+            export_spec.loader.exec_module(export_module)
+            exported = export_module.convert(rule, art="bazi", title=rule["title"], slug_path=rule["book"])
+            entry["candidateOutput"] = exported["candidateOutput"]
+            entry["candidateSources"] = exported["candidateSources"]
+            entry["semantics"] = {
+                "satisfied": "仅本入口满足时附 candidateOutput；来源方向为候选，不等于喜忌或主题作用。",
+                "notSatisfied": "只否定这条偏财入口，不附顺逆方向，也不否定其它入口。",
+                "unknown": "所需柱位事实缺失时不附方向；缺键不得降为不满足。",
+            }
+            coexistence = fixture_result(
+                module, rule, bazi_cases["caseP1_ZPR_01_wu_gui_both"]["facts"], "caseP1_ZPR_01_wu_gui_both"
+            )
+            if coexistence["verdict"] != "满足":
+                raise RuntimeError("ZPR-P1-03 戊癸兼透样盘未保留偏财入口")
+            entry["verification"]["coexistingEntry"] = coexistence
+        entries.append(entry)
 
-    sample_hash = hashlib.sha256(SAMPLE.read_bytes()).hexdigest()
-    product_script = PRODUCT_ROOT / "scripts/dump-facts.ts"
-    product_fixture = PRODUCT_ROOT / "tests/fixtures/facts-sample.json"
+    carryover_sha = carryover_semantic_sha(entries)
+    if carryover_sha != TEN_RULE_SEMANTIC_SHA256:
+        raise RuntimeError(f"旧 10 条规则语义偏离产品锁定版：{carryover_sha} != {TEN_RULE_SEMANTIC_SHA256}")
+
     product_info = {
         "command": "bun scripts/dump-facts.ts /Users/sync/code/fateradar-classics",
         "repo": str(PRODUCT_ROOT),
-        "repoHead": git_head(PRODUCT_ROOT),
-        "script": str(product_script),
-        "scriptSha256": hashlib.sha256(product_script.read_bytes()).hexdigest() if product_script.exists() else None,
-        "productFixtureSha256": hashlib.sha256(product_fixture.read_bytes()).hexdigest() if product_fixture.exists() else None,
+        "repoHead": PRODUCT_FIXTURE_REPO_HEAD,
+        "script": str(PRODUCT_ROOT / "scripts/dump-facts.ts"),
+        "scriptSha256": PRODUCT_SCRIPT_SHA256,
+        "productFixtureSha256": FIXTURE_SHA256,
         "workingTreeInputs": "scripts/dump-facts.ts 和 tests/fixtures/facts-sample.json 在生成时均为未提交改动。",
     }
     return {
-        "manifestVersion": "fateradar-p1-bazi-topic-handoff-v1",
+        "manifestVersion": "fateradar-p1-bazi-topic-handoff-v2",
         # Structural P1 rules are consumable, but the three semantic blockers
         # remain pending. A future contract must change this field explicitly;
         # the product importer refuses reserved semantic predicates otherwise.
         "semanticContractStatus": "pending",
-        "generatedAt": datetime.date.today().isoformat(),
+        "generatedAt": "2026-09-23",
         "generatedBy": "tools/generate-p1-bazi-manifest.py",
         "art": "bazi",
         "ruleSchema": "fateradar-rules-v2",
         "predicateLanguage": "fateradar-rules-v3",
         "classicsRev": CLASSICS_REV,
-        "sourceHeadAtAudit": git_head(ROOT),
+        "sourceHeadAtAudit": CLASSICS_REV,
         "classicsRevChanged": True,
+        "carryoverTenSemanticSha256": carryover_sha,
+        "carryoverTenProductManifestSha256": PRODUCT_TEN_MANIFEST_SHA256,
+        "sourceFingerprint": {
+            "zipingRulesYamlSha256": pinned_source_sha("references/books/bazi/ziping-zhenquan/rules.yaml"),
+            "zipingFulltextSha256": pinned_source_sha("sources/fulltext/bazi/ziping-zhenquan/fulltext.md"),
+            "exporterSha256": pinned_source_sha("tools/export-rules.py"),
+            "evaluatorSha256": pinned_source_sha("tools/eval-predicates.py"),
+        },
         "factFixture": {
             "path": "tools/reports/facts-sample.json",
             "sha256": sample_hash,
             "caseCount": len(bazi_cases),
             "generator": product_info,
-            "differenceFromClassicsHead": f"git diff --numstat: {diff_numstat}; 原因是按产品生成器重建事实快照，新增时间层/逐柱事实和覆盖样盘。",
+            "differenceFromClassicsHead": "43 个八字样盘由产品生成器重建；以 factFixture.sha256 锁定，重跑不依赖实时 git diff。",
         },
         "contract": {
             "pipeline": "Fact -> RuleEvaluation -> TopicEvaluation",
             "states": {"satisfied": "满足", "not_satisfied": "不满足", "unknown": "信息不足"},
             "unknownPolicy": "缺少事实、未实现时间层、性别/计数/关系合同不完整时保留 unknown；不写成 not_satisfied。",
             "verifiedPolicy": "本 manifest 的所有规则 verified=false；只有固定样盘、明确验收证据和人工出处核验完成后才可改变。",
-            "layerPolicy": "各规则仅在其 applicableLayers 声明的层求值：当前 7 条本命规则仅适用于本命，YUANHAIZIPIN-YR-03 仅适用于流年。不得把本命规则复制到流年/流月/大运；未声明或缺少 scope 条件时保留 unknown。",
+            "layerPolicy": "各规则仅在其 applicableLayers 声明的层求值：当前 10 条本命规则仅适用于本命，YUANHAIZIPIN-YR-03 仅适用于流年。不得把本命规则复制到流年/流月/大运；未声明或缺少 scope 条件时保留 unknown。",
         },
         "topics": TOPIC_META,
         "rules": entries,

@@ -1,5 +1,21 @@
 # P1 八字六主题规则/事实交接（2026-09-21）
 
+## 2026-09-23 最新古籍交接
+
+古籍仓已有 11 条 v2 manifest：在此前产品已消费的 10 条结构规则之外，仅向 `overview` 加入 `ZPR-P1-03` 的来源候选分类。新 manifest SHA-256 为 `13aa085a01b40add88b4fe3582ce1ac3ea601878a09291c37c2538cd99c740d1`，源提交 `b9d7bb5413f042901c8bcd4635327ba585992d66`；产品仓仍为 10 条 v1 锁，待独立审核导入。具体语义、三态、旧 10 条不变性和导入边界见 [11 条交接](./ZPR_P1_03_11_RULE_HANDOFF_20260923.md)。下节保留此前 10 条产品锁的审计记录。
+
+## 2026-09-23 此前 10 条产品锁
+
+六主题 manifest 现有 **10 条**可消费的 provisional 结构证据：9 条本命、1 条流年；`semanticContractStatus=pending`，全部 `verified=false`。`ZPR-P1-01` 只判甲日辰月戊透的偏财取用入口之一，原文、影印、逐柱三态和边界见 [透戊交接](./ZPR_P1_01_HANDOFF_20260923.md)；`ZPR-P1-02` 只判甲日辰月本命申子辰齐备的会支取水印核验入口，兼透并用及成局待判，见 [会支交接](./ZPR_P1_02_HANDOFF_20260923.md)。共享 fixture 为 43 个八字 case，SHA-256 `6915a56e7fef202a5c3f145106e0205b2ae1590ad2348d7f5d7ade6dd04518fb`；当前 manifest SHA-256 `c645237397039d001367ad2df6f624d0f363f1daee9ca07fdf3031b4f511d6ab`，源规则版本 `CLASSICS_REV=01eaf711c5838b1f6101c49c495cbd4f9e3f27b2`。新增源规则已在本地提交，其余生成器、清单与交接文件仍在工作树，尚未推送。下文原 8 条、26 case 和旧版本哈希是当时施工记录，不代表当前锁。
+
+本次整文件 SHA 更新来自 15 个六壬 case 各新增八条按 `scope.ruleId` 区分的取传状态事实；八字仍为 43 个 case，P1 的 10 条结构规则、三态与 `pending` 权限未升级。Product 已按新 manifest 导入，当前生成 handoff SHA-256 为 `e83358e4d9b989970948964404a009613794202422f42c999d3cb685f818e6b0`。
+
+后续六壬 executable 源定义提交 `a611764b49f9a9f4f5872c82e1f21515fdcf3a2c` 属于另一来源版本维度，不修改本交接锁定的八字 10 条 YAML 规则；本 manifest 的 `CLASSICS_REV` 和 `sourceHeadAtAudit` 保持上述八字审计提交。其六壬取传合同见[独立审计](./DLD_E_03_09_SCOPED_STEP_CONTRACT_20260923.md)。
+
+产品本轮撤回原先 33 个样盘里的未裁决 `yongshen`／`natal_favorable_context` 事实；扶抑、临时格局和调候路线候选只在分析层供复核，不能作为 051「已得用」输入。manifest 的总览、事业、财务 `requiredFactKeys` 同步撤回 `yongshen`，10 条结构规则及其三态不变。
+
+本轮 43-case 增量包括 `caseP1_ZPR_02_shen_zi` 的会支正例与 `caseP1_ZPR_01_wu_gui_both` 的戊癸兼透边界。后者仍命中戊透入口，但不能据此判唯一偏财格；前者仅命中会支水印入口，不能判印格已成。010、011、051 的完整语义合同仍处于阻塞状态。
+
 状态：完成本轮审计，六个主题均有可消费的本命结构证据或明确阻塞；另新增 1 条可消费的流年结构证据。旧目标“消化 440 条 `unmapped`”保持暂停；本交接不以 unmapped 数量下降作为算法正确性的证据。
 
 机器清单见 [`P1_BAZI_TOPIC_MANIFEST_20260921.json`](./P1_BAZI_TOPIC_MANIFEST_20260921.json)。它从当前 `rules.yaml` 读取 `statement`、`quote`、`anchor` 和 `applicable_to`，再附加主题、Fact scope、三态样盘和导出版本，产品可以用它把 `Fact → RuleEvaluation → TopicEvaluation` 串起来。
@@ -49,10 +65,10 @@
 
 | 主题 | 当前状态 | 可直接消费的本命结构证据 | 产品仍需保留的阻塞 |
 |---|---|---|---|
-| `overview` 命格总览 | `partial` | `DITIANSUICHA-003`, `DITIANSUICHA-DR-03`, `DITIANSUICHA-DR-06`, `SANMINGTONGH-015`, `DITIANSUICHA-032`, `SANMINGTONGH-097` | 格局成败、用神细节和岁运触发不是这些谓词的充分条件 |
+| `overview` 命格总览 | `partial` | `ZPR-P1-01`, `ZPR-P1-02`, `DITIANSUICHA-003`, `DITIANSUICHA-DR-03`, `DITIANSUICHA-DR-06`, `SANMINGTONGH-015`, `DITIANSUICHA-032`, `SANMINGTONGH-097` | 戊透与申子辰齐备各是独立取用入口；成局、格局成败、用神细节和岁运触发尚未判定 |
 | `personality` 性格 | `partial` | `DITIANSUICHA-003`, `DITIANSUICHA-004`, `DITIANSUICHA-DR-03`, `SANMINGTONGH-097` | 只写稳定倾向和现实核对问题，不写绝对人格标签 |
 | `career` 事业 | `partial` | `DITIANSUICHA-DR-06`, `SANMINGTONGH-015` | 职位/行业、完整格局成败、取用和时间窗口尚未形成合同 |
-| `wealth` 财运 | `partial` | `DITIANSUICHA-DR-06`（极弱/从格入口，辅助证据） | 财星位置、身财两停、比劫夺财和岁运触发缺失；不输出金额或事件 |
+| `wealth` 财运 | `partial` | `ZPR-P1-01`（戊透偏财取用入口）、`DITIANSUICHA-DR-06`（极弱/从格入口，辅助证据） | 唯一用神、财星力量、身财两停、比劫夺财和岁运触发缺失；不输出金额或事件 |
 | `relationship` 感情 | `partial` | `SANMINGTONGH-015`, `DITIANSUICHA-032`（三合/子午结构证据） | 性别、配偶星、夫宫、关系反馈缺少完整 Fact 合同；冲合不等于婚姻事件 |
 | `health` 健康 | `partial` | `DITIANSUICHA-003`, `DITIANSUICHA-DR-03`（中和/偏枯的传统关注点） | 没有医疗、症状、作息事实；只作养生关注点，不作诊断 |
 
