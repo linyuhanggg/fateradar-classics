@@ -21,7 +21,7 @@
     "meaning": "所选年有效大运天干的原始 shishen 值是否恰为七杀；这不是 L1084 的有效七煞或凶判",
     "satisfied": "所选年大运 shishen 明确为七杀",
     "notSatisfied": "所选年大运 shishen 明确存在且为其他值",
-    "unknown": "所选年大运 shishen 缺失、冲突或无有效大运"
+    "unknown": "所选年大运 shishen 缺失或无有效大运；同 scope 多事实违反唯一性，须阻断投影而非取任一值"
   },
   "cases": [
     {"case": "caseFlowYearBinglin", "year": 1993, "natalObservedLabels": ["七杀", "偏印", "偏财", "劫财", "正印", "正官", "正财"], "selectedDayunStem": "正财", "selectedLiunianStem": "正财", "suiyunShape": "是", "neutralProbeVerdict": "不满足", "classification": "未裁决", "effect": "未裁决"},

@@ -2,7 +2,7 @@
 
 结论：可以交付一个**隔离、可执行的原始标签投影**，不能把它称作《三命通会》对“独羊刃七煞／财官印绶”的有效分类，更不能交付吉凶作用。候选见[机器合同](../../tools/reports/p1-bazi-20260922/sanming-011-neutral-raw-label-candidate.json)，运行 `python3 tools/verify-sanming-011-neutral-raw-label.py` 从共享真盘事实重算。它不注册 FactKey、不修改共享 fixture、规则、manifest 或产品；原 `SANMINGTONGH-011` 仍为 `applicable_to=[]`、`verified=false`。
 
-投影只保留既有十神的**确切字面值**：本命逐柱 `shishen` 可多值并保留 `pillar`、`derivedFrom`，所选年只取 `scope.layer=大运／流年` 且 `scope.year=selectedYear` 的天干 `shishen`；并临另取同年 `suiyun_binglin` 三态。没有标签的本命列只说明 fixture 未观察到，不能断言命局无此类别。所选年有效大运的 `shishen` 若存在且不为“七杀”，才能否定“**所选大运天干原始十神恰为七杀**”这个字面等值探针；缺该事实返回信息不足。该探针不是 011 的作用谓词。
+投影只保留既有十神的**确切字面值**：本命逐柱 `shishen` 可多值并保留 `pillar`、`derivedFrom`，所选年只取 `scope.layer=大运／流年` 且 `scope.year=selectedYear` 的天干 `shishen`；并临另取同年 `suiyun_binglin` 三态。没有标签的本命列只说明 fixture 未观察到，不能断言命局无此类别。所选年有效大运的 `shishen` 若存在且不为“七杀”，才能否定“**所选大运天干原始十神恰为七杀**”这个字面等值探针；缺该事实返回信息不足，同 scope 出现多个天干十神则违反唯一性并阻断投影。该探针不是 011 的作用谓词。
 
 | 真盘年 | 所选大运干十神 | 字面七杀探针 | 并临形态 | 011 分类及作用 |
 | --- | --- | --- | --- | --- |
