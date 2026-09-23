@@ -26,7 +26,7 @@
 
 ## 当前真实盘的反证
 
-`python3 tools/verify-ditiansui-051-favorite-boundary.py` 对原文 12 个定点短句和当前共享的 43 个真实日期八字盘重跑。样盘文件 SHA-256 为 `6915a56e7fef202a5c3f145106e0205b2ae1590ad2348d7f5d7ade6dd04518fb`。43 盘均无 `favorite_luck_element_decision_record`、正式 `yongshen`、`natal_favorable_context`、`yongshen_effective` 或 `jishen_empowered` 事实。校验器逐盘核对四柱干支及日干、月支一致性，并统计《喜神》举例入口的真实重叠，不把事实键缺失本身误写成古籍不可能作出判断。
+`python3 tools/verify-ditiansui-051-favorite-boundary.py` 对原文 12 个定点短句和当前共享的 43 个真实日期八字盘重跑。当前样盘文件 SHA-256 为 `3f9e7b62c4d35cc4df2006cec7c994a2178d922a50377ab62c39e10d4c5b3dcc`。43 盘均无 `favorite_luck_element_decision_record`、正式 `yongshen`、`natal_favorable_context`、`yongshen_effective` 或 `jishen_empowered` 事实。校验器逐盘核对四柱干支及日干、月支一致性，并统计《喜神》举例入口的真实重叠，不把事实键缺失本身误写成古籍不可能作出判断。
 
 | 真实盘 | 已有结构与候选 | 不能升级的原因 |
 |---|---|---|

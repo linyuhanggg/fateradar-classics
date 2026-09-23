@@ -16,6 +16,7 @@ ROOT = Path(__file__).resolve().parents[1]
 SOURCE = ROOT / "sources/fulltext/bazi/ditiansui-chanwei/fulltext.md"
 FIXTURE = ROOT / "tools/reports/facts-sample.json"
 RULES = ROOT / "dist/rules/bazi.json"
+SHAPES = ROOT / "tools/reports/p1-bazi-20260922/ditiansui-051-shape-examples.json"
 EXPECTED_FIXTURE_SHA256 = "3f9e7b62c4d35cc4df2006cec7c994a2178d922a50377ab62c39e10d4c5b3dcc"
 
 # Distinct source branches: the same listed shape is not an effect verdict.
@@ -67,14 +68,34 @@ def main() -> None:
     }
     assert not semantic_hits, semantic_hits
 
-    cases_with_selected_luck = sum(
-        any(
-            fact.get("key") == "dayun_gan_zhi"
+    shape_rows = json.loads(SHAPES.read_text())["rows"]
+    assert len(shape_rows) == 37
+    listed_pillars = {row["luckPillar"] for row in shape_rows}
+    wood_rescue_pillars = {
+        row["luckPillar"] for row in shape_rows
+        if row["favoriteElement"] == "木" and row["shape"] == "jiejiao"
+        and row["luckPillar"] in {"甲申", "乙酉"}
+    }
+    assert wood_rescue_pillars == {"甲申", "乙酉"}
+
+    # Count chart IDs rather than years: many charts contain ten scoped luck
+    # records for the same pillar. A listed pillar remains only a hypothetical
+    # morphology match until 喜行 and its effect branch are adjudicated.
+    scoped_luck = {
+        case_id: {
+            fact["value"] for fact in chart["facts"]
+            if fact.get("key") == "dayun_gan_zhi"
             and fact.get("scope", {}).get("layer") == "大运"
             and isinstance(fact.get("scope", {}).get("year"), int)
-            for fact in chart["facts"]
-        )
-        for chart in charts.values()
+        }
+        for case_id, chart in charts.items()
+    }
+    cases_with_selected_luck = sum(bool(pillars) for pillars in scoped_luck.values())
+    cases_with_listed_shape_luck = sum(bool(pillars & listed_pillars) for pillars in scoped_luck.values())
+    cases_with_wood_rescue_luck = sum(bool(pillars & wood_rescue_pillars) for pillars in scoped_luck.values())
+    assert (cases_with_selected_luck, cases_with_listed_shape_luck, cases_with_wood_rescue_luck) == (15, 8, 0), (
+        "real-date coverage changed; re-audit the 051 effect gate",
+        cases_with_selected_luck, cases_with_listed_shape_luck, cases_with_wood_rescue_luck,
     )
     rule = next(rule for rule in json.loads(RULES.read_text()) if rule["ruleId"] == "DITIANSUICHA-051")
     assert rule["applicableTo"] == [] and rule["verification"] == "provisional"
@@ -86,6 +107,8 @@ def main() -> None:
         "fixtureSha256": fixture_sha,
         "realDateCharts": len(charts),
         "chartsWithYearScopedLuck": cases_with_selected_luck,
+        "chartsWithAnyListedShapeLuck": cases_with_listed_shape_luck,
+        "chartsWithWoodJiejiaoRescueLuck": cases_with_wood_rescue_luck,
         "chartsWithAdjudicatedFavoriteOrEffectFact": len(semantic_hits),
         "positiveEffectCases": 0,
         "negativeEffectCases": 0,
