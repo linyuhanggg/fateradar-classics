@@ -1,6 +1,6 @@
-# `SANMINGTONGH-097` 来源范围复核（未形成新交接）
+# `SANMINGTONGH-097` 来源范围复核（V9 候选未导入）
 
-2026-09-24 初次复核发现：当时规则的八专日名单、锚点和谓词并非同一条可执行原文合同，故产品暂停把它判为命中或未命中。下面记录后续本地源规则修订；六主题 manifest 和产品锁尚未更新，`verified=false` 未改变。
+2026-09-24 初次复核发现：当时规则的八专日名单、锚点和谓词并非同一条可执行原文合同，故产品暂停把它判为命中或未命中。下面记录后续本地源规则修订；Classics 已生成[完整 V9 来源候选](./P1_BAZI_TOPIC_MANIFEST_20260924_V9.json)，但产品锁与正式消费清单尚未更新，`verified=false` 未改变。
 
 ## 2026-09-24 本地源规则修订（尚未交接产品）
 
@@ -8,7 +8,7 @@
 
 [`test-map-fixed-values.py`](../../tools/test-map-fixed-values.py) 现在逐字核对原文锚点、名单谓词、本命层和柱位，并对共享 50 张真实日期盘复算：10 张满足、40 张不满足。`cov1_bazi_3`（1988-04-13，戊戌日）为真实满足盘；`caseA`（1990-08-15，壬子日）为真实不满足盘；在戊戌盘删去本命日支的缺输入投影为信息不足，异时间层的戊戌不能补成本命事实，同层戊／壬日干冲突亦为信息不足。这些只验证 L1761 名单判定，不验证原段附断或个人性格。`python3 tools/test-map-fixed-values.py`、`python3 tools/map-fixed-values.py --dry-run`、`python3 tools/validate-rules.py --json` 均通过。
 
-本修订尚未进入远端，也**没有**形成新 P1 manifest；当前仅有[单条来源修订候选](./SANMINGTONGH_097_SOURCE_HANDOFF_20260924.json)。Classics V7、Product V8 与产品生成 handoff 仍保留历史 `097`；产品消费者继续把它隔离为来源冲突 `unknown`。下一份完整交接须版本化替换该条来源、谓词和正反未知样盘，并撤去未经来源支持的性格主题归属；产品经导入门禁及版本升级后才能消费新的中性名单结构。个人性格判断仍须另行提供作用合同。
+本修订尚未进入远端。[单条来源修订候选](./SANMINGTONGH_097_SOURCE_HANDOFF_20260924.json)已扩成可重建的[完整 V9 P1 候选清单](./P1_BAZI_TOPIC_MANIFEST_20260924_V9.json)，含 15 条 provisional 规则，`097` 改为总览中性名单并退出性格主题；语义合同仍 `pending`，全部 `verified=false`。Classics V7、Product V8 与产品生成 handoff 仍保留历史 `097`；产品消费者继续把它隔离为来源冲突 `unknown`。产品 importer 目前拒绝 V9 版本，需经版本化导入门禁、来源可获取性和产品回归后才能消费新的中性名单结构。个人性格判断仍须另行提供作用合同。
 
 ## 修订前来源冲突记录
 
