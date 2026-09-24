@@ -1,0 +1,3343 @@
+{
+  "manifestVersion": "fateradar-p1-bazi-topic-handoff-v9",
+  "semanticContractStatus": "pending",
+  "generatedAt": "2026-09-24",
+  "generatedBy": "tools/generate-p1-bazi-v9-manifest.py",
+  "art": "bazi",
+  "ruleSchema": "fateradar-rules-v2",
+  "predicateLanguage": "fateradar-rules-v3",
+  "classicsRev": "f23b12997ccebe7920324de5cf8993bd24cb2331",
+  "sourceHeadAtAudit": "f23b12997ccebe7920324de5cf8993bd24cb2331",
+  "classicsRevChanged": true,
+  "carryoverTenSemanticSha256": "d2587a335b380fe63d152e3283f0d24c645c31dd9fd33ec244cb729a76b5b63b",
+  "carryoverTenProductManifestSha256": "c645237397039d001367ad2df6f624d0f363f1daee9ca07fdf3031b4f511d6ab",
+  "sourceFingerprint": {
+    "zipingRulesYamlSha256": "bce6f0cdafba4a17be97be3c76c37332449ec06283cdaae81548bb5120bd496d",
+    "zipingFulltextSha256": "5d0e11098aa076468da4bd805159550c178c1ee31d325e30be5f042d9051a053",
+    "ditiansuiRulesYamlSha256": "ede9cfbac6ee9dc4879f9ddf51dbf492e4cc80c1809ab0bb97445c5d331dde3f",
+    "ditiansuiFulltextSha256": "2eca5a1a22582650f3ca64b6d33b3758bd0ba2a19f48393a1604947e0ee5cd65",
+    "sanmingRulesYamlSha256": "8b6dd495f6f3845cf3779bdf8cd70ff609f36c08aa365f05f3c97e04223144c8",
+    "sanmingFulltextSha256": "ef01ff5ff538a2c64af7fda15b1393b4eeb9f75a311fe3dda7f39f0ecaa66298",
+    "yuanhaiRulesYamlSha256": "38f57efe8b44a6bcee59f00eed0b2cd1a1d3357843b18c3c9fab3381145788ae",
+    "yuanhaiFulltextSha256": "08f5c689ac7059e319d8f1b2276e9ccae748c0c036aec3b7dd27ac470e9e70be",
+    "exporterSha256": "a069b2d914a5139c3b4de650bc76fd1fba75a864a8fd4a7f5523e8899d3ed193",
+    "evaluatorSha256": "9e22790a852e424cf90e6cef4c04450af31f853943e71b621938ed5ee720f910",
+    "factVocabSha256": "f4e02572deb0d8c963e95ff6c82ddca1f1a4640027096e1cc31fd7bc9db7d2a6"
+  },
+  "factFixture": {
+    "path": "tools/reports/facts-sample.json",
+    "sha256": "206638e12e5390ea8d41f8140d23f61efcee673dfa5aebd65e2dc95c937df5f8",
+    "caseCount": 50,
+    "generator": {
+      "command": "bun scripts/dump-facts.ts /Users/sync/code/fateradar-classics",
+      "repo": "/Users/sync/code/cosmic-fortune-lab",
+      "repoHead": "93c7245db2dbfa82e3a8ce69cc74ab318391b988",
+      "script": "/Users/sync/code/cosmic-fortune-lab/scripts/dump-facts.ts",
+      "scriptSha256": "1eda435ccf11439644c756d8c6e1d5d07c75108de5fd27dd7f6339a04aacaf25",
+      "productFixtureSha256": "206638e12e5390ea8d41f8140d23f61efcee673dfa5aebd65e2dc95c937df5f8",
+      "workingTreeInputs": "Product 真实日期盘由脚本生成；以脚本指纹、50 盘 fixture 字节和本 sourceRev 锁定。"
+    },
+    "differenceFromClassicsHead": "50 个八字样盘来自 Product 机械排盘；旧 43 盘除新增结构 Fact 外逐项不变。"
+  },
+  "contract": {
+    "pipeline": "Fact -> RuleEvaluation -> TopicEvaluation",
+    "states": {
+      "satisfied": "满足",
+      "not_satisfied": "不满足",
+      "unknown": "信息不足"
+    },
+    "unknownPolicy": "缺少事实、未实现时间层、性别/计数/关系合同不完整时保留 unknown；不写成 not_satisfied。",
+    "verifiedPolicy": "本 manifest 的所有规则 verified=false；只有固定样盘、明确验收证据和人工出处核验完成后才可改变。",
+    "layerPolicy": "当前 10 条本命规则只适用于本命；YUANHAIZIPIN-YR-03、SANMINGTONGH-P1-011A 和 SANMINGTONGH-P1-010A 只适用于所选流年。三条流年规则求值前必须保留本命事实、只取 scope.year=selectedYear 的流年事实；未选年与缺事实均保留信息不足。"
+  },
+  "topics": {
+    "overview": {
+      "status": "partial",
+      "ruleIds": [
+        "ZPR-P1-01",
+        "ZPR-P1-02",
+        "ZPR-P1-03",
+        "DITIANSUICHA-003",
+        "DITIANSUICHA-DR-03",
+        "DITIANSUICHA-DR-06",
+        "SANMINGTONGH-015",
+        "DITIANSUICHA-032",
+        "SANMINGTONGH-097",
+        "YUANHAIZIPIN-YR-03",
+        "SANMINGTONGH-P1-011A",
+        "SANMINGTONGH-P1-010A",
+        "ZPR-P1-04",
+        "ZPR-P1-06"
+      ],
+      "requiredFactKeys": [
+        "rizhu",
+        "yueling",
+        "zhi",
+        "gan",
+        "rizhu_strength",
+        "geju",
+        "canggan",
+        "liunian_gan_zhi",
+        "suiyun_binglin",
+        "natal_month_single_qi_hidden_stem",
+        "natal_yin_simple_hidden_exposure_pattern"
+      ],
+      "blockers": [
+        "本命结构事实可以进入证据层；格局成败、用神细节和岁运触发尚未形成每条规则的完整条件。"
+      ]
+    },
+    "personality": {
+      "status": "partial",
+      "ruleIds": [
+        "DITIANSUICHA-003",
+        "DITIANSUICHA-004",
+        "DITIANSUICHA-DR-03"
+      ],
+      "requiredFactKeys": [
+        "rizhu",
+        "rizhu_strength",
+        "shishen",
+        "canggan"
+      ],
+      "blockers": [
+        "现有性格主题规则尚无已接受的个人倾向作用合同；097 仅是 L1761 日柱名单，不支持性格归属。"
+      ]
+    },
+    "career": {
+      "status": "partial",
+      "ruleIds": [
+        "DITIANSUICHA-DR-06",
+        "SANMINGTONGH-015",
+        "YUANHAIZIPIN-YR-03"
+      ],
+      "requiredFactKeys": [
+        "rizhu_strength",
+        "shishen",
+        "geju",
+        "yueling"
+      ],
+      "blockers": [
+        "职位/行业、完整格局成败、取用和岁运窗口不是当前三条规则的充分条件。"
+      ]
+    },
+    "wealth": {
+      "status": "partial",
+      "ruleIds": [
+        "ZPR-P1-01",
+        "DITIANSUICHA-DR-06",
+        "YUANHAIZIPIN-YR-03"
+      ],
+      "requiredFactKeys": [
+        "rizhu",
+        "yueling",
+        "canggan",
+        "gan",
+        "rizhu_strength",
+        "shishen"
+      ],
+      "blockers": [
+        "已能交付甲辰月戊透的偏财取用入口及极弱/从格入口；唯一用神、财星力量、身财两停、比劫夺财和岁运尚未形成完整合同。"
+      ]
+    },
+    "relationship": {
+      "status": "partial",
+      "ruleIds": [
+        "SANMINGTONGH-015",
+        "DITIANSUICHA-032"
+      ],
+      "requiredFactKeys": [
+        "rizhu",
+        "zhi",
+        "shishen"
+      ],
+      "blockers": [
+        "配偶星/日支作用、性别条件和关系反馈没有完整 Fact 合同；冲合只能作为结构证据。"
+      ]
+    },
+    "health": {
+      "status": "partial",
+      "ruleIds": [
+        "DITIANSUICHA-003",
+        "DITIANSUICHA-DR-03"
+      ],
+      "requiredFactKeys": [
+        "rizhu_strength",
+        "yueling",
+        "gan_element"
+      ],
+      "blockers": [
+        "没有医疗、症状、作息等产品事实；古籍结构只能做传统养生关注点，不能做诊断或事件预测。"
+      ]
+    }
+  },
+  "rules": [
+    {
+      "ruleId": "ZPR-P1-03",
+      "art": "bazi",
+      "book": "bazi/ziping-zhenquan",
+      "primaryTopic": "overview",
+      "secondaryTopics": [],
+      "status": "adopted_as_provisional_evidence",
+      "role": "source_classification",
+      "statement": "甲日辰月透戊的偏财取用入口，在《子平真诠》财官印食“善而顺用”的总括中属于顺用候选类；只给这个入口标来源分类，不裁决唯一用神、本格喜忌或顺用成效。",
+      "quote": "財官印食，此用神之善而順用之者也；煞傷劫刃，此用神之不善而逆用之者也。",
+      "anchor": {
+        "file": "sources/fulltext/bazi/ziping-zhenquan/fulltext.md",
+        "startLine": 328,
+        "endLine": 328
+      },
+      "applicableTo": {
+        "all_of": [
+          {
+            "key": "rizhu",
+            "value": "甲",
+            "scope": {
+              "layer": "本命",
+              "pillar": "day"
+            }
+          },
+          {
+            "key": "yueling",
+            "value": "辰",
+            "scope": {
+              "layer": "本命",
+              "pillar": "month"
+            }
+          },
+          {
+            "key": "canggan",
+            "value": "戊",
+            "scope": {
+              "layer": "本命",
+              "pillar": "month"
+            }
+          },
+          {
+            "any_of": [
+              {
+                "key": "gan",
+                "value": "戊",
+                "scope": {
+                  "layer": "本命",
+                  "pillar": "year"
+                }
+              },
+              {
+                "key": "gan",
+                "value": "戊",
+                "scope": {
+                  "layer": "本命",
+                  "pillar": "month"
+                }
+              },
+              {
+                "key": "gan",
+                "value": "戊",
+                "scope": {
+                  "layer": "本命",
+                  "pillar": "time"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      "requiredFacts": [
+        {
+          "key": "rizhu",
+          "scope": {
+            "layer": "本命",
+            "pillar": "day"
+          },
+          "predicateScope": [
+            {
+              "layer": "本命",
+              "pillar": "day"
+            }
+          ]
+        },
+        {
+          "key": "yueling",
+          "scope": {
+            "layer": "本命",
+            "pillar": "month"
+          },
+          "predicateScope": [
+            {
+              "layer": "本命",
+              "pillar": "month"
+            }
+          ]
+        },
+        {
+          "key": "canggan",
+          "scope": {
+            "layer": "本命",
+            "pillar": "month"
+          },
+          "predicateScope": [
+            {
+              "layer": "本命",
+              "pillar": "month"
+            }
+          ]
+        },
+        {
+          "key": "gan",
+          "scope": {
+            "layer": "本命",
+            "pillar": [
+              "year",
+              "month",
+              "time"
+            ]
+          },
+          "predicateScope": [
+            {
+              "layer": "本命",
+              "pillar": "year"
+            },
+            {
+              "layer": "本命",
+              "pillar": "month"
+            },
+            {
+              "layer": "本命",
+              "pillar": "time"
+            }
+          ]
+        }
+      ],
+      "applicableLayers": [
+        "本命"
+      ],
+      "unsupportedLayers": [
+        "大运",
+        "流年",
+        "流月",
+        "流日"
+      ],
+      "semantics": {
+        "satisfied": "仅本入口满足时附 candidateOutput；来源方向为候选，不等于喜忌或主题作用。",
+        "notSatisfied": "只否定这条偏财入口，不附顺逆方向，也不否定其它入口。",
+        "unknown": "所需柱位事实缺失时不附方向；缺键不得降为不满足。"
+      },
+      "caveats": [
+        "本条在 ZPR-P1-01 的“偏财取用入口”之上只增加来源所称“财善顺用”的候选分类；入口本身见 L544，类别总括见 L328。这是两句原文相接的推断，并非 L544 另有“已顺用”的断语。",
+        "“满足”仅表示本命戊透入口可标顺用候选，不表示该入口已被裁为唯一用神、财格已成或财喜食神相生、生官护财等逐格关系已经成立。",
+        "同透癸、乙或会支时仍允许多入口并存；本标签只跟随偏财入口，不给其他入口定方向，也不覆盖建禄月劫另取。",
+        "本条没有升级 ZPR-E-02 的 satisfy_when、rescue、verified 或适用条件，也不作六主题吉凶出口。",
+        "仅在本规则满足时附 candidateOutput；反例与缺项不附方向，不能把它回写为本规则 applicableTo 的 Fact。",
+        "展示出处必须并列保留 candidateSources 的 L328 分类、L544 入口与 L548 并用。"
+      ],
+      "exceptionsAndBreaks": [
+        "本条在 ZPR-P1-01 的“偏财取用入口”之上只增加来源所称“财善顺用”的候选分类；入口本身见 L544，类别总括见 L328。这是两句原文相接的推断，并非 L544 另有“已顺用”的断语。",
+        "“满足”仅表示本命戊透入口可标顺用候选，不表示该入口已被裁为唯一用神、财格已成或财喜食神相生、生官护财等逐格关系已经成立。",
+        "同透癸、乙或会支时仍允许多入口并存；本标签只跟随偏财入口，不给其他入口定方向，也不覆盖建禄月劫另取。",
+        "本条没有升级 ZPR-E-02 的 satisfy_when、rescue、verified 或适用条件，也不作六主题吉凶出口。",
+        "仅在本规则满足时附 candidateOutput；反例与缺项不附方向，不能把它回写为本规则 applicableTo 的 Fact。",
+        "展示出处必须并列保留 candidateSources 的 L328 分类、L544 入口与 L548 并用。"
+      ],
+      "conflictNotes": [
+        "不同古籍/流派对旺衰、格局与冲合解释可能冲突；产品保留来源与 unknown，不在本仓合并成分数。"
+      ],
+      "verification": {
+        "verified": false,
+        "fixtureSource": "tools/reports/facts-sample.json",
+        "positive": {
+          "case": "caseP1_ZPR_01_wu_only",
+          "factCount": 102,
+          "verdict": "满足",
+          "confidence": 1.0,
+          "factCoverage": 1.0,
+          "missingFactKeys": []
+        },
+        "negative": {
+          "case": "caseP1_ZPR_01_no_wu",
+          "factCount": 104,
+          "verdict": "不满足",
+          "confidence": 1.0,
+          "factCoverage": 1.0,
+          "missingFactKeys": []
+        },
+        "boundary": {
+          "case": "caseP1_ZPR_01_no_wu",
+          "factCount": 103,
+          "verdict": "信息不足",
+          "confidence": 0.75,
+          "factCoverage": 0.75,
+          "missingFactKeys": [
+            "gan"
+          ]
+        },
+        "result": "三态固定样盘通过；这只证明求值和输入覆盖，不证明现实预测准确率。",
+        "coexistingEntry": {
+          "case": "caseP1_ZPR_01_wu_gui_both",
+          "factCount": 103,
+          "verdict": "满足",
+          "confidence": 1.0,
+          "factCoverage": 1.0,
+          "missingFactKeys": []
+        }
+      },
+      "export": {
+        "artifact": "dist/rules/bazi.json",
+        "classicsRev": "7947994bdd4f06557eb2991d5f7932933bd345ae"
+      },
+      "candidateOutput": {
+        "entryId": "ZPR-P1-01",
+        "entry": "甲辰月透戊偏财",
+        "category": "财",
+        "direction": "顺用",
+        "status": "候选",
+        "scope": {
+          "layer": "本命"
+        },
+        "emitOn": "满足"
+      },
+      "candidateSources": [
+        {
+          "role": "direction_category",
+          "anchor": {
+            "file": "sources/fulltext/bazi/ziping-zhenquan/fulltext.md",
+            "startLine": 328,
+            "endLine": 328
+          },
+          "quote": "財官印食，此用神之善而順用之者也"
+        },
+        {
+          "role": "entry",
+          "anchor": {
+            "file": "sources/fulltext/bazi/ziping-zhenquan/fulltext.md",
+            "startLine": 544,
+            "endLine": 544
+          },
+          "quote": "透戊則用偏財"
+        },
+        {
+          "role": "coexisting_entries",
+          "anchor": {
+            "file": "sources/fulltext/bazi/ziping-zhenquan/fulltext.md",
+            "startLine": 548,
+            "endLine": 548
+          },
+          "quote": "兼透則兼用，透而又會，則透與會並用"
+        }
+      ]
+    },
+    {
+      "ruleId": "ZPR-P1-02",
+      "art": "bazi",
+      "book": "bazi/ziping-zhenquan",
+      "primaryTopic": "overview",
+      "secondaryTopics": [],
+      "status": "adopted_as_provisional_evidence",
+      "role": "structural",
+      "statement": "甲日生辰月，本命另见申、子两支时，具备申子辰会支取水印的结构入口；须再核成局、冲破与并用，不直接判印格已成。",
+      "quote": "何謂會支？如甲生辰月，逢申與子會局，則用水印是也。",
+      "anchor": {
+        "file": "sources/fulltext/bazi/ziping-zhenquan/fulltext.md",
+        "startLine": 542,
+        "endLine": 548
+      },
+      "applicableTo": {
+        "all_of": [
+          {
+            "key": "rizhu",
+            "value": "甲",
+            "scope": {
+              "layer": "本命",
+              "pillar": "day"
+            }
+          },
+          {
+            "key": "yueling",
+            "value": "辰",
+            "scope": {
+              "layer": "本命",
+              "pillar": "month"
+            }
+          },
+          {
+            "key": "zhi",
+            "value": "辰",
+            "scope": {
+              "layer": "本命",
+              "pillar": "month"
+            }
+          },
+          {
+            "any_of": [
+              {
+                "key": "zhi",
+                "value": "申",
+                "scope": {
+                  "layer": "本命",
+                  "pillar": "year"
+                }
+              },
+              {
+                "key": "zhi",
+                "value": "申",
+                "scope": {
+                  "layer": "本命",
+                  "pillar": "day"
+                }
+              },
+              {
+                "key": "zhi",
+                "value": "申",
+                "scope": {
+                  "layer": "本命",
+                  "pillar": "time"
+                }
+              }
+            ]
+          },
+          {
+            "any_of": [
+              {
+                "key": "zhi",
+                "value": "子",
+                "scope": {
+                  "layer": "本命",
+                  "pillar": "year"
+                }
+              },
+              {
+                "key": "zhi",
+                "value": "子",
+                "scope": {
+                  "layer": "本命",
+                  "pillar": "day"
+                }
+              },
+              {
+                "key": "zhi",
+                "value": "子",
+                "scope": {
+                  "layer": "本命",
+                  "pillar": "time"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      "requiredFacts": [
+        {
+          "key": "rizhu",
+          "scope": {
+            "layer": "本命",
+            "pillar": "day"
+          },
+          "predicateScope": [
+            {
+              "layer": "本命",
+              "pillar": "day"
+            }
+          ]
+        },
+        {
+          "key": "yueling",
+          "scope": {
+            "layer": "本命",
+            "pillar": "month"
+          },
+          "predicateScope": [
+            {
+              "layer": "本命",
+              "pillar": "month"
+            }
+          ]
+        },
+        {
+          "key": "zhi",
+          "scope": {
+            "layer": "本命",
+            "pillar": [
+              "year",
+              "month",
+              "day",
+              "time"
+            ]
+          },
+          "predicateScope": [
+            {
+              "layer": "本命",
+              "pillar": "month"
+            },
+            {
+              "layer": "本命",
+              "pillar": "year"
+            },
+            {
+              "layer": "本命",
+              "pillar": "day"
+            },
+            {
+              "layer": "本命",
+              "pillar": "time"
+            },
+            {
+              "layer": "本命",
+              "pillar": "year"
+            },
+            {
+              "layer": "本命",
+              "pillar": "day"
+            },
+            {
+              "layer": "本命",
+              "pillar": "time"
+            }
+          ]
+        }
+      ],
+      "applicableLayers": [
+        "本命"
+      ],
+      "unsupportedLayers": [
+        "大运",
+        "流年",
+        "流月",
+        "流日"
+      ],
+      "semantics": {
+        "satisfied": "applicable_to 整体满足，且返回完整 matched Fact 见证集。",
+        "notSatisfied": "所需 FactKey 存在，但 applicable_to 没有命中；不能解释为现实事件不发生。",
+        "unknown": "任一所需 FactKey 缺失，或产品传入的时间层/柱位不在本 manifest 合同内；不能降级为 not_satisfied。"
+      },
+      "caveats": [
+        "本条只判本命申子辰三支齐备的会支核验入口；支齐不单独证明成局、化水、格局清浊或现实结果。",
+        "月令辰须在本命月支，申、子须在本命其他柱；不可借大运、流年、流月或流日凑局。",
+        "依原文“一透则一用，兼透则兼用，透而又会则透与会并用”，本条不得排除同盘的戊、癸、乙透干入口。",
+        "影印核对见 NLC416-11jh010455-35296.pdf 第41页（印本32页）；会支之后的有情无情与冲破条件未由本谓词判定。",
+        "仅有甲辰月本命申子辰支齐的会支核验入口；不能单凭支齐判成局、印格或现实结果。",
+        "透干入口可与会支并存，须按原文兼用；影印证据：NLC416-11jh010455-35296.pdf 第41页（印本32页）。"
+      ],
+      "exceptionsAndBreaks": [
+        "本条只判本命申子辰三支齐备的会支核验入口；支齐不单独证明成局、化水、格局清浊或现实结果。",
+        "月令辰须在本命月支，申、子须在本命其他柱；不可借大运、流年、流月或流日凑局。",
+        "依原文“一透则一用，兼透则兼用，透而又会则透与会并用”，本条不得排除同盘的戊、癸、乙透干入口。",
+        "影印核对见 NLC416-11jh010455-35296.pdf 第41页（印本32页）；会支之后的有情无情与冲破条件未由本谓词判定。",
+        "仅有甲辰月本命申子辰支齐的会支核验入口；不能单凭支齐判成局、印格或现实结果。",
+        "透干入口可与会支并存，须按原文兼用；影印证据：NLC416-11jh010455-35296.pdf 第41页（印本32页）。"
+      ],
+      "conflictNotes": [
+        "不同古籍/流派对旺衰、格局与冲合解释可能冲突；产品保留来源与 unknown，不在本仓合并成分数。"
+      ],
+      "verification": {
+        "verified": false,
+        "fixtureSource": "tools/reports/facts-sample.json",
+        "positive": {
+          "case": "caseP1_ZPR_02_shen_zi",
+          "factCount": 96,
+          "verdict": "满足",
+          "confidence": 1.0,
+          "factCoverage": 1.0,
+          "missingFactKeys": []
+        },
+        "negative": {
+          "case": "caseP1_ZPR_01_no_wu",
+          "factCount": 104,
+          "verdict": "不满足",
+          "confidence": 1.0,
+          "factCoverage": 1.0,
+          "missingFactKeys": []
+        },
+        "boundary": {
+          "case": "caseP1_ZPR_02_shen_zi",
+          "factCount": 95,
+          "verdict": "信息不足",
+          "confidence": 0.667,
+          "factCoverage": 0.667,
+          "missingFactKeys": [
+            "zhi"
+          ]
+        },
+        "result": "三态固定样盘通过；这只证明求值和输入覆盖，不证明现实预测准确率。"
+      },
+      "export": {
+        "artifact": "dist/rules/bazi.json",
+        "classicsRev": "7947994bdd4f06557eb2991d5f7932933bd345ae"
+      }
+    },
+    {
+      "ruleId": "ZPR-P1-01",
+      "art": "bazi",
+      "book": "bazi/ziping-zhenquan",
+      "primaryTopic": "wealth",
+      "secondaryTopics": [
+        "overview"
+      ],
+      "status": "adopted_as_provisional_evidence",
+      "role": "structural",
+      "statement": "甲日生辰月，辰中戊土透于本命年、月或时干时，偏财可列为月令杂气取用入口；这不等于偏财格已成或现实财运。",
+      "quote": "何謂透干？如甲生辰【校：「辰」原作「三」，據下文及中州本改】月，透戊則用偏財，透癸則用正印，透乙則用月劫是也。",
+      "anchor": {
+        "file": "sources/fulltext/bazi/ziping-zhenquan/fulltext.md",
+        "startLine": 542,
+        "endLine": 548
+      },
+      "applicableTo": {
+        "all_of": [
+          {
+            "key": "rizhu",
+            "value": "甲",
+            "scope": {
+              "layer": "本命",
+              "pillar": "day"
+            }
+          },
+          {
+            "key": "yueling",
+            "value": "辰",
+            "scope": {
+              "layer": "本命",
+              "pillar": "month"
+            }
+          },
+          {
+            "key": "canggan",
+            "value": "戊",
+            "scope": {
+              "layer": "本命",
+              "pillar": "month"
+            }
+          },
+          {
+            "any_of": [
+              {
+                "key": "gan",
+                "value": "戊",
+                "scope": {
+                  "layer": "本命",
+                  "pillar": "year"
+                }
+              },
+              {
+                "key": "gan",
+                "value": "戊",
+                "scope": {
+                  "layer": "本命",
+                  "pillar": "month"
+                }
+              },
+              {
+                "key": "gan",
+                "value": "戊",
+                "scope": {
+                  "layer": "本命",
+                  "pillar": "time"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      "requiredFacts": [
+        {
+          "key": "rizhu",
+          "scope": {
+            "layer": "本命",
+            "pillar": "day"
+          },
+          "predicateScope": [
+            {
+              "layer": "本命",
+              "pillar": "day"
+            }
+          ]
+        },
+        {
+          "key": "yueling",
+          "scope": {
+            "layer": "本命",
+            "pillar": "month"
+          },
+          "predicateScope": [
+            {
+              "layer": "本命",
+              "pillar": "month"
+            }
+          ]
+        },
+        {
+          "key": "canggan",
+          "scope": {
+            "layer": "本命",
+            "pillar": "month"
+          },
+          "predicateScope": [
+            {
+              "layer": "本命",
+              "pillar": "month"
+            }
+          ]
+        },
+        {
+          "key": "gan",
+          "scope": {
+            "layer": "本命",
+            "pillar": [
+              "year",
+              "month",
+              "time"
+            ]
+          },
+          "predicateScope": [
+            {
+              "layer": "本命",
+              "pillar": "year"
+            },
+            {
+              "layer": "本命",
+              "pillar": "month"
+            },
+            {
+              "layer": "本命",
+              "pillar": "time"
+            }
+          ]
+        }
+      ],
+      "applicableLayers": [
+        "本命"
+      ],
+      "unsupportedLayers": [
+        "大运",
+        "流年",
+        "流月",
+        "流日"
+      ],
+      "semantics": {
+        "satisfied": "applicable_to 整体满足，且返回完整 matched Fact 见证集。",
+        "notSatisfied": "所需 FactKey 存在，但 applicable_to 没有命中；不能解释为现实事件不发生。",
+        "unknown": "任一所需 FactKey 缺失，或产品传入的时间层/柱位不在本 manifest 合同内；不能降级为 not_satisfied。"
+      },
+      "caveats": [
+        "只判“透戊形成偏财取用入口”，不判偏财为唯一用神、格局清浊成败或富贵。",
+        "同透癸或乙须依原文“兼透则兼用”；申子辰会支须依“透而又会则并用”，不得覆盖其他入口。",
+        "原文没有要求本条单独核司令深浅；若扩张为用神得力或财富结果，须另判司令、相神、救应与冲破。",
+        "影印核对见 NLC416-11jh010455-35296.pdf 第41页（印本32页）；电子本“辰”有校记，影印本作“辰”。",
+        "仅有甲辰月戊透的偏财取用入口；不判唯一用神、格局清浊成败、财富或岁运结果。",
+        "影印证据：NLC416-11jh010455-35296.pdf 第41页（印本32页）。"
+      ],
+      "exceptionsAndBreaks": [
+        "只判“透戊形成偏财取用入口”，不判偏财为唯一用神、格局清浊成败或富贵。",
+        "同透癸或乙须依原文“兼透则兼用”；申子辰会支须依“透而又会则并用”，不得覆盖其他入口。",
+        "原文没有要求本条单独核司令深浅；若扩张为用神得力或财富结果，须另判司令、相神、救应与冲破。",
+        "影印核对见 NLC416-11jh010455-35296.pdf 第41页（印本32页）；电子本“辰”有校记，影印本作“辰”。",
+        "仅有甲辰月戊透的偏财取用入口；不判唯一用神、格局清浊成败、财富或岁运结果。",
+        "影印证据：NLC416-11jh010455-35296.pdf 第41页（印本32页）。"
+      ],
+      "conflictNotes": [
+        "不同古籍/流派对旺衰、格局与冲合解释可能冲突；产品保留来源与 unknown，不在本仓合并成分数。"
+      ],
+      "verification": {
+        "verified": false,
+        "fixtureSource": "tools/reports/facts-sample.json",
+        "positive": {
+          "case": "caseP1_ZPR_01_wu_only",
+          "factCount": 102,
+          "verdict": "满足",
+          "confidence": 1.0,
+          "factCoverage": 1.0,
+          "missingFactKeys": []
+        },
+        "negative": {
+          "case": "caseP1_ZPR_01_no_wu",
+          "factCount": 104,
+          "verdict": "不满足",
+          "confidence": 1.0,
+          "factCoverage": 1.0,
+          "missingFactKeys": []
+        },
+        "boundary": {
+          "case": "caseP1_ZPR_01_no_wu",
+          "factCount": 103,
+          "verdict": "信息不足",
+          "confidence": 0.75,
+          "factCoverage": 0.75,
+          "missingFactKeys": [
+            "gan"
+          ]
+        },
+        "result": "三态固定样盘通过；这只证明求值和输入覆盖，不证明现实预测准确率。"
+      },
+      "export": {
+        "artifact": "dist/rules/bazi.json",
+        "classicsRev": "7947994bdd4f06557eb2991d5f7932933bd345ae"
+      }
+    },
+    {
+      "ruleId": "DITIANSUICHA-003",
+      "art": "bazi",
+      "book": "bazi/ditiansui-chanwei",
+      "primaryTopic": "overview",
+      "secondaryTopics": [
+        "personality",
+        "health"
+      ],
+      "status": "adopted_as_provisional_evidence",
+      "role": "supporting",
+      "statement": "八字干支顺接相生（天干气弱地支生之、地支气衰天干辅之）为吉；反克为害则凶；命贵中和，偏枯终于有损。",
+      "quote": "如天干气弱，地支生之，地支神衰，天干辅之，皆为有情而顺则吉；",
+      "anchor": {
+        "file": "sources/fulltext/bazi/ditiansui-chanwei/fulltext.md",
+        "startLine": 29,
+        "endLine": 29
+      },
+      "applicableTo": [
+        {
+          "key": "rizhu_strength",
+          "value": "中和"
+        }
+      ],
+      "requiredFacts": [
+        {
+          "key": "rizhu_strength",
+          "scope": {
+            "layer": "本命"
+          },
+          "predicateScope": [
+            {}
+          ]
+        }
+      ],
+      "applicableLayers": [
+        "本命"
+      ],
+      "unsupportedLayers": [
+        "大运",
+        "流年",
+        "流月",
+        "流日"
+      ],
+      "semantics": {
+        "satisfied": "applicable_to 整体满足，且返回完整 matched Fact 见证集。",
+        "notSatisfied": "所需 FactKey 存在，但 applicable_to 没有命中；不能解释为现实事件不发生。",
+        "unknown": "任一所需 FactKey 缺失，或产品传入的时间层/柱位不在本 manifest 合同内；不能降级为 not_satisfied。"
+      },
+      "caveats": [
+        "本派核心立场",
+        "\"奇异\"（如四戊午、四癸亥）一律按偏枯论，不得作奇格高论",
+        "只表示中和/偏枯的传统结构证据，不是现实吉凶或健康诊断。"
+      ],
+      "exceptionsAndBreaks": [
+        "本派核心立场",
+        "\"奇异\"（如四戊午、四癸亥）一律按偏枯论，不得作奇格高论",
+        "只表示中和/偏枯的传统结构证据，不是现实吉凶或健康诊断。"
+      ],
+      "conflictNotes": [
+        "不同古籍/流派对旺衰、格局与冲合解释可能冲突；产品保留来源与 unknown，不在本仓合并成分数。"
+      ],
+      "verification": {
+        "verified": false,
+        "fixtureSource": "tools/reports/facts-sample.json",
+        "positive": {
+          "case": "cov1_bazi_2",
+          "factCount": 99,
+          "verdict": "满足",
+          "confidence": 1.0,
+          "factCoverage": 1.0,
+          "missingFactKeys": []
+        },
+        "negative": {
+          "case": "caseA",
+          "factCount": 103,
+          "verdict": "不满足",
+          "confidence": 1.0,
+          "factCoverage": 1.0,
+          "missingFactKeys": []
+        },
+        "boundary": {
+          "case": "cov1_bazi_2",
+          "factCount": 98,
+          "verdict": "信息不足",
+          "confidence": 0.0,
+          "factCoverage": 0.0,
+          "missingFactKeys": [
+            "rizhu_strength"
+          ]
+        },
+        "result": "三态固定样盘通过；这只证明求值和输入覆盖，不证明现实预测准确率。"
+      },
+      "export": {
+        "artifact": "dist/rules/bazi.json",
+        "classicsRev": "7947994bdd4f06557eb2991d5f7932933bd345ae"
+      }
+    },
+    {
+      "ruleId": "DITIANSUICHA-004",
+      "art": "bazi",
+      "book": "bazi/ditiansui-chanwei",
+      "primaryTopic": "personality",
+      "secondaryTopics": [],
+      "status": "adopted_as_provisional_evidence",
+      "role": "method",
+      "statement": "知命之人当平心定气，不取奇偏怪格；以中和为贵。",
+      "quote": "然总以中和为主，犹如人之无病，由四肢健量，营卫调和，行止自如，诸多安适：设使有病，则忧多乐少，举动艰难，如遇良药则可岂不为终身之患乎？",
+      "anchor": {
+        "file": "sources/fulltext/bazi/ditiansui-chanwei/fulltext.md",
+        "startLine": 3691,
+        "endLine": 3691
+      },
+      "applicableTo": [
+        {
+          "key": "rizhu_strength",
+          "value": "中和"
+        }
+      ],
+      "requiredFacts": [
+        {
+          "key": "rizhu_strength",
+          "scope": {
+            "layer": "本命"
+          },
+          "predicateScope": [
+            {}
+          ]
+        }
+      ],
+      "applicableLayers": [
+        "本命"
+      ],
+      "unsupportedLayers": [
+        "大运",
+        "流年",
+        "流月",
+        "流日"
+      ],
+      "semantics": {
+        "satisfied": "applicable_to 整体满足，且返回完整 matched Fact 见证集。",
+        "notSatisfied": "所需 FactKey 存在，但 applicable_to 没有命中；不能解释为现实事件不发生。",
+        "unknown": "任一所需 FactKey 缺失，或产品传入的时间层/柱位不在本 manifest 合同内；不能降级为 not_satisfied。"
+      },
+      "caveats": [
+        "方法论层面",
+        "任氏多次警告勿信\"奇格\"",
+        "这是方法论/取舍倾向证据，不能生成固定人格标签。"
+      ],
+      "exceptionsAndBreaks": [
+        "方法论层面",
+        "任氏多次警告勿信\"奇格\"",
+        "这是方法论/取舍倾向证据，不能生成固定人格标签。"
+      ],
+      "conflictNotes": [
+        "不同古籍/流派对旺衰、格局与冲合解释可能冲突；产品保留来源与 unknown，不在本仓合并成分数。"
+      ],
+      "verification": {
+        "verified": false,
+        "fixtureSource": "tools/reports/facts-sample.json",
+        "positive": {
+          "case": "cov1_bazi_2",
+          "factCount": 99,
+          "verdict": "满足",
+          "confidence": 1.0,
+          "factCoverage": 1.0,
+          "missingFactKeys": []
+        },
+        "negative": {
+          "case": "caseA",
+          "factCount": 103,
+          "verdict": "不满足",
+          "confidence": 1.0,
+          "factCoverage": 1.0,
+          "missingFactKeys": []
+        },
+        "boundary": {
+          "case": "cov1_bazi_2",
+          "factCount": 98,
+          "verdict": "信息不足",
+          "confidence": 0.0,
+          "factCoverage": 0.0,
+          "missingFactKeys": [
+            "rizhu_strength"
+          ]
+        },
+        "result": "三态固定样盘通过；这只证明求值和输入覆盖，不证明现实预测准确率。"
+      },
+      "export": {
+        "artifact": "dist/rules/bazi.json",
+        "classicsRev": "7947994bdd4f06557eb2991d5f7932933bd345ae"
+      }
+    },
+    {
+      "ruleId": "DITIANSUICHA-DR-03",
+      "art": "bazi",
+      "book": "bazi/ditiansui-chanwei",
+      "primaryTopic": "health",
+      "secondaryTopics": [
+        "overview",
+        "personality"
+      ],
+      "status": "adopted_as_provisional_evidence",
+      "role": "supporting",
+      "statement": "命贵中和；五行流通、刚柔得宜者富贵；偏枯至极者贫贱。",
+      "quote": "由此观之，命贵中和，偏枯终于有损；",
+      "anchor": {
+        "file": "sources/fulltext/bazi/ditiansui-chanwei/fulltext.md",
+        "startLine": 48,
+        "endLine": 48
+      },
+      "applicableTo": [
+        {
+          "key": "rizhu_strength",
+          "value": "中和"
+        }
+      ],
+      "requiredFacts": [
+        {
+          "key": "rizhu_strength",
+          "scope": {
+            "layer": "本命"
+          },
+          "predicateScope": [
+            {}
+          ]
+        }
+      ],
+      "applicableLayers": [
+        "本命"
+      ],
+      "unsupportedLayers": [
+        "大运",
+        "流年",
+        "流月",
+        "流日"
+      ],
+      "semantics": {
+        "satisfied": "applicable_to 整体满足，且返回完整 matched Fact 见证集。",
+        "notSatisfied": "所需 FactKey 存在，但 applicable_to 没有命中；不能解释为现实事件不发生。",
+        "unknown": "任一所需 FactKey 缺失，或产品传入的时间层/柱位不在本 manifest 合同内；不能降级为 not_satisfied。"
+      },
+      "caveats": [
+        "\"中和\"不是五行皆有",
+        "是五行配合得宜、流通无阻",
+        "健康主题只可显示传统平衡/作息关注点；不作疾病、风险概率或医疗建议。"
+      ],
+      "exceptionsAndBreaks": [
+        "\"中和\"不是五行皆有",
+        "是五行配合得宜、流通无阻",
+        "健康主题只可显示传统平衡/作息关注点；不作疾病、风险概率或医疗建议。"
+      ],
+      "conflictNotes": [
+        "不同古籍/流派对旺衰、格局与冲合解释可能冲突；产品保留来源与 unknown，不在本仓合并成分数。"
+      ],
+      "verification": {
+        "verified": false,
+        "fixtureSource": "tools/reports/facts-sample.json",
+        "positive": {
+          "case": "cov1_bazi_2",
+          "factCount": 99,
+          "verdict": "满足",
+          "confidence": 1.0,
+          "factCoverage": 1.0,
+          "missingFactKeys": []
+        },
+        "negative": {
+          "case": "caseA",
+          "factCount": 103,
+          "verdict": "不满足",
+          "confidence": 1.0,
+          "factCoverage": 1.0,
+          "missingFactKeys": []
+        },
+        "boundary": {
+          "case": "cov1_bazi_2",
+          "factCount": 98,
+          "verdict": "信息不足",
+          "confidence": 0.0,
+          "factCoverage": 0.0,
+          "missingFactKeys": [
+            "rizhu_strength"
+          ]
+        },
+        "result": "三态固定样盘通过；这只证明求值和输入覆盖，不证明现实预测准确率。"
+      },
+      "export": {
+        "artifact": "dist/rules/bazi.json",
+        "classicsRev": "7947994bdd4f06557eb2991d5f7932933bd345ae"
+      }
+    },
+    {
+      "ruleId": "DITIANSUICHA-DR-06",
+      "art": "bazi",
+      "book": "bazi/ditiansui-chanwei",
+      "primaryTopic": "career",
+      "secondaryTopics": [
+        "wealth",
+        "overview"
+      ],
+      "status": "adopted_as_provisional_evidence",
+      "role": "structural",
+      "statement": "日主无根极弱时，从最旺之神：从财、从煞、从儿（食伤）、从势（多势并旺）；运忌扶身。",
+      "quote": "变者，必从五行之气势也，曰从财，曰从官杀，曰从食伤，曰从强，曰从弱，曰从势，曰一行得气，曰两气成形。",
+      "anchor": {
+        "file": "sources/fulltext/bazi/ditiansui-chanwei/fulltext.md",
+        "startLine": 2665,
+        "endLine": 2665
+      },
+      "applicableTo": [
+        {
+          "key": "rizhu_strength",
+          "value": "极弱"
+        }
+      ],
+      "requiredFacts": [
+        {
+          "key": "rizhu_strength",
+          "scope": {
+            "layer": "本命"
+          },
+          "predicateScope": [
+            {}
+          ]
+        }
+      ],
+      "applicableLayers": [
+        "本命"
+      ],
+      "unsupportedLayers": [
+        "大运",
+        "流年",
+        "流月",
+        "流日"
+      ],
+      "semantics": {
+        "satisfied": "applicable_to 整体满足，且返回完整 matched Fact 见证集。",
+        "notSatisfied": "所需 FactKey 存在，但 applicable_to 没有命中；不能解释为现实事件不发生。",
+        "unknown": "任一所需 FactKey 缺失，或产品传入的时间层/柱位不在本 manifest 合同内；不能降级为 not_satisfied。"
+      },
+      "caveats": [
+        "从格判定严格，必须无根",
+        "运逢扶身则破",
+        "“从格”还需要无根、最旺之神和破格条件；本条谓词只表达极弱入口，不能单独判从财/从煞。"
+      ],
+      "exceptionsAndBreaks": [
+        "从格判定严格，必须无根",
+        "运逢扶身则破",
+        "“从格”还需要无根、最旺之神和破格条件；本条谓词只表达极弱入口，不能单独判从财/从煞。"
+      ],
+      "conflictNotes": [
+        "不同古籍/流派对旺衰、格局与冲合解释可能冲突；产品保留来源与 unknown，不在本仓合并成分数。"
+      ],
+      "verification": {
+        "verified": false,
+        "fixtureSource": "tools/reports/facts-sample.json",
+        "positive": {
+          "case": "cov1_bazi_1",
+          "factCount": 105,
+          "verdict": "满足",
+          "confidence": 1.0,
+          "factCoverage": 1.0,
+          "missingFactKeys": []
+        },
+        "negative": {
+          "case": "caseA",
+          "factCount": 103,
+          "verdict": "不满足",
+          "confidence": 1.0,
+          "factCoverage": 1.0,
+          "missingFactKeys": []
+        },
+        "boundary": {
+          "case": "cov1_bazi_1",
+          "factCount": 104,
+          "verdict": "信息不足",
+          "confidence": 0.0,
+          "factCoverage": 0.0,
+          "missingFactKeys": [
+            "rizhu_strength"
+          ]
+        },
+        "result": "三态固定样盘通过；这只证明求值和输入覆盖，不证明现实预测准确率。"
+      },
+      "export": {
+        "artifact": "dist/rules/bazi.json",
+        "classicsRev": "7947994bdd4f06557eb2991d5f7932933bd345ae"
+      }
+    },
+    {
+      "ruleId": "SANMINGTONGH-015",
+      "art": "bazi",
+      "book": "bazi/sanming-tonghui",
+      "primaryTopic": "overview",
+      "secondaryTopics": [
+        "relationship",
+        "career"
+      ],
+      "status": "adopted_as_provisional_evidence",
+      "role": "structural",
+      "statement": "申子辰、巳酉丑、寅午戌、亥卯未为三合组合；原文强调三字缺一不能直接按三合化局论。",
+      "quote": "考厯家申子辰初之氣俱起於下漏一刻巳酉丑初之氣俱起於二十六刻寅午戊初之氣俱起於五十一刻亥卯未初之氣俱起於七十六刻氣皆起於同刻是天地自然之理也故謂之三合或以三合者如人一身之運用也精乃天之元氣乃神之本是以精為氣之母神為氣之子子母互相生精氣神全而不\n散之為合葢謂支屬人元故以此論之如申子辰申乃子之母辰乃子之子申乃水生子乃水旺辰乃水氣生即産旺即成庫即收有生有成有收萬物得始得終乃自然之理故申子申為水局若三字缺其一則化不成局不可以三合化局論葢天地間道理兩則化一隂一陽之謂也三則化三生萬物之謂也巳\n酉丑寅午戍亥卯未皆然五行不言土者四行皆頼土成局萬物皆歸藏於土故也若辰戌丑未全自作土局論凡命有合要得局為佳假令丙丁生人見亥卯未印巳酉丑財為得局見寅午戍火為本局申子辰水為官局辰戍丑未土為傷局又如丙人見巳酉丑丁人見寅午戍為三位禄格謂丙以巳為禄丁以",
+      "anchor": {
+        "file": "sources/fulltext/bazi/sanming-tonghui/fulltext.md",
+        "startLine": 1216,
+        "endLine": 1218
+      },
+      "applicableTo": {
+        "any_of": [
+          {
+            "all_of": [
+              {
+                "key": "zhi",
+                "value": "申"
+              },
+              {
+                "key": "zhi",
+                "value": "子"
+              },
+              {
+                "key": "zhi",
+                "value": "辰"
+              }
+            ]
+          },
+          {
+            "all_of": [
+              {
+                "key": "zhi",
+                "value": "巳"
+              },
+              {
+                "key": "zhi",
+                "value": "酉"
+              },
+              {
+                "key": "zhi",
+                "value": "丑"
+              }
+            ]
+          },
+          {
+            "all_of": [
+              {
+                "key": "zhi",
+                "value": "寅"
+              },
+              {
+                "key": "zhi",
+                "value": "午"
+              },
+              {
+                "key": "zhi",
+                "value": "戌"
+              }
+            ]
+          },
+          {
+            "all_of": [
+              {
+                "key": "zhi",
+                "value": "亥"
+              },
+              {
+                "key": "zhi",
+                "value": "卯"
+              },
+              {
+                "key": "zhi",
+                "value": "未"
+              }
+            ]
+          }
+        ]
+      },
+      "requiredFacts": [
+        {
+          "key": "zhi",
+          "scope": {
+            "layer": "本命",
+            "pillar": [
+              "year",
+              "month",
+              "day",
+              "time"
+            ]
+          },
+          "predicateScope": [
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {}
+          ]
+        }
+      ],
+      "applicableLayers": [
+        "本命"
+      ],
+      "unsupportedLayers": [
+        "大运",
+        "流年",
+        "流月",
+        "流日"
+      ],
+      "semantics": {
+        "satisfied": "applicable_to 整体满足，且返回完整 matched Fact 见证集。",
+        "notSatisfied": "所需 FactKey 存在，但 applicable_to 没有命中；不能解释为现实事件不发生。",
+        "unknown": "任一所需 FactKey 缺失，或产品传入的时间层/柱位不在本 manifest 合同内；不能降级为 not_satisfied。"
+      },
+      "caveats": [
+        "半合与三合全局要区分；是否成势仍须结合命局。",
+        "三合组合是结构证据，不等于关系事件、职业结果或富贵结论；半合、成势和冲破仍待判断。",
+        "产品评估时只传本命四柱。"
+      ],
+      "exceptionsAndBreaks": [
+        "半合与三合全局要区分；是否成势仍须结合命局。",
+        "三合组合是结构证据，不等于关系事件、职业结果或富贵结论；半合、成势和冲破仍待判断。",
+        "产品评估时只传本命四柱。"
+      ],
+      "conflictNotes": [
+        "不同古籍/流派对旺衰、格局与冲合解释可能冲突；产品保留来源与 unknown，不在本仓合并成分数。"
+      ],
+      "verification": {
+        "verified": false,
+        "fixtureSource": "tools/reports/facts-sample.json",
+        "positive": {
+          "case": "cov1_bazi_1",
+          "factCount": 105,
+          "verdict": "满足",
+          "confidence": 1.0,
+          "factCoverage": 1.0,
+          "missingFactKeys": []
+        },
+        "negative": {
+          "case": "caseA",
+          "factCount": 103,
+          "verdict": "不满足",
+          "confidence": 1.0,
+          "factCoverage": 1.0,
+          "missingFactKeys": []
+        },
+        "boundary": {
+          "case": "cov1_bazi_1",
+          "factCount": 101,
+          "verdict": "信息不足",
+          "confidence": 0.0,
+          "factCoverage": 0.0,
+          "missingFactKeys": [
+            "zhi"
+          ]
+        },
+        "result": "三态固定样盘通过；这只证明求值和输入覆盖，不证明现实预测准确率。"
+      },
+      "export": {
+        "artifact": "dist/rules/bazi.json",
+        "classicsRev": "7947994bdd4f06557eb2991d5f7932933bd345ae"
+      }
+    },
+    {
+      "ruleId": "DITIANSUICHA-032",
+      "art": "bazi",
+      "book": "bazi/ditiansui-chanwei",
+      "primaryTopic": "relationship",
+      "secondaryTopics": [
+        "overview"
+      ],
+      "status": "adopted_as_provisional_evidence",
+      "role": "structural",
+      "statement": "坎（子）离（午）相对；子午冲为坎离战；处理须看月令支援与寒暖。",
+      "quote": "子午为坎离，宰天地之中气。",
+      "anchor": {
+        "file": "sources/fulltext/bazi/ditiansui-chanwei/fulltext.md",
+        "startLine": 102,
+        "endLine": 102
+      },
+      "applicableTo": {
+        "all_of": [
+          {
+            "key": "zhi",
+            "value": "子"
+          },
+          {
+            "key": "zhi",
+            "value": "午"
+          }
+        ]
+      },
+      "requiredFacts": [
+        {
+          "key": "zhi",
+          "scope": {
+            "layer": "本命",
+            "pillar": [
+              "year",
+              "month",
+              "day",
+              "time"
+            ]
+          },
+          "predicateScope": [
+            {},
+            {}
+          ]
+        }
+      ],
+      "applicableLayers": [
+        "本命"
+      ],
+      "unsupportedLayers": [
+        "大运",
+        "流年",
+        "流月",
+        "流日"
+      ],
+      "semantics": {
+        "satisfied": "applicable_to 整体满足，且返回完整 matched Fact 见证集。",
+        "notSatisfied": "所需 FactKey 存在，但 applicable_to 没有命中；不能解释为现实事件不发生。",
+        "unknown": "任一所需 FactKey 缺失，或产品传入的时间层/柱位不在本 manifest 合同内；不能降级为 not_satisfied。"
+      },
+      "caveats": [
+        "与寒暖章互参",
+        "子午相对只表示传统冲动/变化证据，不能写成分手、疾病或迁移事件。",
+        "规则谓词未写 layer，产品必须只传本命四柱。"
+      ],
+      "exceptionsAndBreaks": [
+        "与寒暖章互参",
+        "子午相对只表示传统冲动/变化证据，不能写成分手、疾病或迁移事件。",
+        "规则谓词未写 layer，产品必须只传本命四柱。"
+      ],
+      "conflictNotes": [
+        "不同古籍/流派对旺衰、格局与冲合解释可能冲突；产品保留来源与 unknown，不在本仓合并成分数。"
+      ],
+      "verification": {
+        "verified": false,
+        "fixtureSource": "tools/reports/facts-sample.json",
+        "positive": {
+          "case": "caseA",
+          "factCount": 103,
+          "verdict": "满足",
+          "confidence": 1.0,
+          "factCoverage": 1.0,
+          "missingFactKeys": []
+        },
+        "negative": {
+          "case": "caseB",
+          "factCount": 96,
+          "verdict": "不满足",
+          "confidence": 1.0,
+          "factCoverage": 1.0,
+          "missingFactKeys": []
+        },
+        "boundary": {
+          "case": "caseA",
+          "factCount": 99,
+          "verdict": "信息不足",
+          "confidence": 0.0,
+          "factCoverage": 0.0,
+          "missingFactKeys": [
+            "zhi"
+          ]
+        },
+        "result": "三态固定样盘通过；这只证明求值和输入覆盖，不证明现实预测准确率。"
+      },
+      "export": {
+        "artifact": "dist/rules/bazi.json",
+        "classicsRev": "7947994bdd4f06557eb2991d5f7932933bd345ae"
+      }
+    },
+    {
+      "ruleId": "SANMINGTONGH-097",
+      "art": "bazi",
+      "book": "bazi/sanming-tonghui",
+      "primaryTopic": "overview",
+      "secondaryTopics": [],
+      "status": "adopted_as_provisional_evidence",
+      "role": "structural",
+      "statement": "《论诸神煞》所列八专日为甲寅、乙卯、己未、丁未、庚申、辛酉、戊戌、癸丑；本条仅识别日柱是否在此名单。",
+      "quote": "八專乃甲寅乙卯己未丁未庚申辛酉戊戌癸丑是也",
+      "anchor": {
+        "file": "sources/fulltext/bazi/sanming-tonghui/fulltext.md",
+        "startLine": 1761,
+        "endLine": 1761
+      },
+      "applicableTo": {
+        "any_of": [
+          {
+            "all_of": [
+              {
+                "key": "gan",
+                "value": "甲",
+                "scope": {
+                  "layer": "本命",
+                  "pillar": "day"
+                }
+              },
+              {
+                "key": "zhi",
+                "value": "寅",
+                "scope": {
+                  "layer": "本命",
+                  "pillar": "day"
+                }
+              }
+            ]
+          },
+          {
+            "all_of": [
+              {
+                "key": "gan",
+                "value": "乙",
+                "scope": {
+                  "layer": "本命",
+                  "pillar": "day"
+                }
+              },
+              {
+                "key": "zhi",
+                "value": "卯",
+                "scope": {
+                  "layer": "本命",
+                  "pillar": "day"
+                }
+              }
+            ]
+          },
+          {
+            "all_of": [
+              {
+                "key": "gan",
+                "value": "己",
+                "scope": {
+                  "layer": "本命",
+                  "pillar": "day"
+                }
+              },
+              {
+                "key": "zhi",
+                "value": "未",
+                "scope": {
+                  "layer": "本命",
+                  "pillar": "day"
+                }
+              }
+            ]
+          },
+          {
+            "all_of": [
+              {
+                "key": "gan",
+                "value": "丁",
+                "scope": {
+                  "layer": "本命",
+                  "pillar": "day"
+                }
+              },
+              {
+                "key": "zhi",
+                "value": "未",
+                "scope": {
+                  "layer": "本命",
+                  "pillar": "day"
+                }
+              }
+            ]
+          },
+          {
+            "all_of": [
+              {
+                "key": "gan",
+                "value": "庚",
+                "scope": {
+                  "layer": "本命",
+                  "pillar": "day"
+                }
+              },
+              {
+                "key": "zhi",
+                "value": "申",
+                "scope": {
+                  "layer": "本命",
+                  "pillar": "day"
+                }
+              }
+            ]
+          },
+          {
+            "all_of": [
+              {
+                "key": "gan",
+                "value": "辛",
+                "scope": {
+                  "layer": "本命",
+                  "pillar": "day"
+                }
+              },
+              {
+                "key": "zhi",
+                "value": "酉",
+                "scope": {
+                  "layer": "本命",
+                  "pillar": "day"
+                }
+              }
+            ]
+          },
+          {
+            "all_of": [
+              {
+                "key": "gan",
+                "value": "戊",
+                "scope": {
+                  "layer": "本命",
+                  "pillar": "day"
+                }
+              },
+              {
+                "key": "zhi",
+                "value": "戌",
+                "scope": {
+                  "layer": "本命",
+                  "pillar": "day"
+                }
+              }
+            ]
+          },
+          {
+            "all_of": [
+              {
+                "key": "gan",
+                "value": "癸",
+                "scope": {
+                  "layer": "本命",
+                  "pillar": "day"
+                }
+              },
+              {
+                "key": "zhi",
+                "value": "丑",
+                "scope": {
+                  "layer": "本命",
+                  "pillar": "day"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      "requiredFacts": [
+        {
+          "key": "gan",
+          "scope": {
+            "layer": "本命",
+            "pillar": "day"
+          },
+          "predicateScope": [
+            {
+              "layer": "本命",
+              "pillar": "day"
+            }
+          ]
+        },
+        {
+          "key": "zhi",
+          "scope": {
+            "layer": "本命",
+            "pillar": "day"
+          },
+          "predicateScope": [
+            {
+              "layer": "本命",
+              "pillar": "day"
+            }
+          ]
+        }
+      ],
+      "applicableLayers": [
+        "本命"
+      ],
+      "unsupportedLayers": [
+        "大运",
+        "流年",
+        "流月",
+        "流日"
+      ],
+      "semantics": {
+        "satisfied": "本命日干、日支完整一致且同柱属于 L1761 八日名单；只识别名单，不推出性格或吉凶。",
+        "notSatisfied": "本命日干、日支完整一致，但该日柱不在 L1761 八日名单；只否定此名单成员身份。",
+        "unknown": "本命日干或日支缺失、同柱冲突或只有其它时间层事实时，保留信息不足。"
+      },
+      "caveats": [
+        "本条只采用《论诸神煞》L1761 的八日名单，不合并《消息赋》L9713 的十二支干同类日或《八专禄旺》L3808 的四日核心说。",
+        "原段附断及其它篇章的旺衰、格局、性格与关系作用均不由日柱名单直接推出。"
+      ],
+      "exceptionsAndBreaks": [
+        "本条只采用《论诸神煞》L1761 的八日名单，不合并《消息赋》L9713 的十二支干同类日或《八专禄旺》L3808 的四日核心说。",
+        "原段附断及其它篇章的旺衰、格局、性格与关系作用均不由日柱名单直接推出。"
+      ],
+      "conflictNotes": [
+        "L1761 八日名单与 L9713 十二支干同类、L3808 四日专禄旺核心分别立论；不得混为同一谓词。"
+      ],
+      "verification": {
+        "verified": false,
+        "fixtureSource": "tools/reports/facts-sample.json",
+        "positive": {
+          "case": "cov1_bazi_3",
+          "factCount": 110,
+          "verdict": "满足",
+          "confidence": 1.0,
+          "factCoverage": 1.0,
+          "missingFactKeys": []
+        },
+        "negative": {
+          "case": "caseA",
+          "factCount": 103,
+          "verdict": "不满足",
+          "confidence": 1.0,
+          "factCoverage": 1.0,
+          "missingFactKeys": []
+        },
+        "boundary": {
+          "case": "cov1_bazi_3_minus_natal_day_zhi",
+          "factCount": 109,
+          "verdict": "信息不足",
+          "confidence": 0.5,
+          "factCoverage": 0.5,
+          "missingFactKeys": [
+            "zhi"
+          ]
+        },
+        "foreignLayerGuard": {
+          "case": "synthetic_other_layer_only",
+          "factCount": 2,
+          "verdict": "信息不足",
+          "confidence": 0.0,
+          "factCoverage": 0.0,
+          "missingFactKeys": [
+            "gan",
+            "zhi"
+          ]
+        },
+        "conflictingNatalDayGan": {
+          "case": "cov1_bazi_3_conflicting_day_gan",
+          "factCount": 111,
+          "verdict": "信息不足",
+          "confidence": 0.5,
+          "factCoverage": 0.5,
+          "missingFactKeys": [
+            "gan"
+          ]
+        },
+        "allRealChartStates": {
+          "满足": 10,
+          "不满足": 40,
+          "信息不足": 0
+        },
+        "result": "L1761 八日名单的三态样盘通过；不证明性格、关系、旺衰、吉凶或现实预测准确率。"
+      }
+    },
+    {
+      "ruleId": "YUANHAIZIPIN-YR-03",
+      "art": "bazi",
+      "book": "bazi/yuanhai-ziping",
+      "primaryTopic": "overview",
+      "secondaryTopics": [
+        "career",
+        "wealth"
+      ],
+      "status": "adopted_as_provisional_evidence",
+      "role": "structural",
+      "statement": "流年层若大运—流年关系分类为相冲、相克或相刑，记为原文所称的忌象候选；仅作结构证据，仍须结合命局制化与喜忌，不直接断现实事件。",
+      "quote": "大运不宜与太岁相剋、相冲者凶；更刑、冲、相剋者亦忌。",
+      "anchor": {
+        "file": "sources/fulltext/bazi/yuanhai-ziping/fulltext.md",
+        "startLine": 182,
+        "endLine": 182
+      },
+      "applicableTo": {
+        "any_of": [
+          {
+            "key": "dayun_liunian_relation_class",
+            "value": "相冲",
+            "scope": {
+              "layer": "流年"
+            }
+          },
+          {
+            "key": "dayun_liunian_relation_class",
+            "value": "相克",
+            "scope": {
+              "layer": "流年"
+            }
+          },
+          {
+            "key": "dayun_liunian_relation_class",
+            "value": "相刑",
+            "scope": {
+              "layer": "流年"
+            }
+          }
+        ]
+      },
+      "requiredFacts": [
+        {
+          "key": "dayun_liunian_relation_class",
+          "scope": {
+            "layer": "流年",
+            "year": "selected"
+          },
+          "predicateScope": [
+            {
+              "layer": "流年"
+            },
+            {
+              "layer": "流年"
+            },
+            {
+              "layer": "流年"
+            }
+          ]
+        }
+      ],
+      "applicableLayers": [
+        "流年"
+      ],
+      "unsupportedLayers": [
+        "本命",
+        "大运",
+        "流月",
+        "流日"
+      ],
+      "semantics": {
+        "satisfied": "applicable_to 整体满足，且返回完整 matched Fact 见证集。",
+        "notSatisfied": "所需 FactKey 存在，但 applicable_to 没有命中；不能解释为现实事件不发生。",
+        "unknown": "任一所需 FactKey 缺失，或产品传入的时间层/柱位不在本 manifest 合同内；不能降级为 not_satisfied。"
+      },
+      "caveats": [
+        "本书框架已确立但细节不如后世精密。",
+        "关系分类事实必须已按当前选定流年过滤，并保留 scope.year；跨年份混入会污染求值。",
+        "“忌象候选”不是现实凶事结论；制化、喜忌和命局作用尚未由本条表达。",
+        "只记录相冲/相克/相刑的流年关系忌象候选，不等于现实凶事；必须先按当前选定年份过滤事实。",
+        "制化、喜忌和命局作用尚未由本条表达，产品应保留后续 unknown。"
+      ],
+      "exceptionsAndBreaks": [
+        "本书框架已确立但细节不如后世精密。",
+        "关系分类事实必须已按当前选定流年过滤，并保留 scope.year；跨年份混入会污染求值。",
+        "“忌象候选”不是现实凶事结论；制化、喜忌和命局作用尚未由本条表达。",
+        "只记录相冲/相克/相刑的流年关系忌象候选，不等于现实凶事；必须先按当前选定年份过滤事实。",
+        "制化、喜忌和命局作用尚未由本条表达，产品应保留后续 unknown。"
+      ],
+      "conflictNotes": [
+        "不同古籍/流派对旺衰、格局与冲合解释可能冲突；产品保留来源与 unknown，不在本仓合并成分数。"
+      ],
+      "verification": {
+        "verified": false,
+        "fixtureSource": "tools/reports/facts-sample.json",
+        "positive": {
+          "case": "caseFlowYear",
+          "factCount": 18,
+          "verdict": "满足",
+          "confidence": 1.0,
+          "factCoverage": 1.0,
+          "missingFactKeys": [],
+          "year": 2025
+        },
+        "negative": {
+          "case": "caseFlowYear",
+          "factCount": 15,
+          "verdict": "不满足",
+          "confidence": 1.0,
+          "factCoverage": 1.0,
+          "missingFactKeys": [],
+          "year": 2026
+        },
+        "boundary": {
+          "case": "caseFlowYearUnknown",
+          "factCount": 10,
+          "verdict": "信息不足",
+          "confidence": 0.0,
+          "factCoverage": 0.0,
+          "missingFactKeys": [
+            "dayun_liunian_relation_class"
+          ],
+          "year": 2100
+        },
+        "result": "三态固定样盘通过；这只证明求值和输入覆盖，不证明现实预测准确率。"
+      },
+      "export": {
+        "artifact": "dist/rules/bazi.json",
+        "classicsRev": "7947994bdd4f06557eb2991d5f7932933bd345ae"
+      }
+    },
+    {
+      "ruleId": "SANMINGTONGH-P1-011A",
+      "art": "bazi",
+      "book": "bazi/sanming-tonghui",
+      "primaryTopic": "overview",
+      "secondaryTopics": [],
+      "status": "adopted_as_provisional_evidence",
+      "role": "structural",
+      "sourceRuleId": "SANMINGTONGH-011",
+      "statement": "《论太岁》明列甲子流年又逢甲子大运，称这一组合为岁运并临；本条只标这个字面例的形态。",
+      "quote": "又如甲子流年又是甲子運謂之嵗運并臨",
+      "anchor": {
+        "file": "sources/fulltext/bazi/sanming-tonghui/fulltext.md",
+        "startLine": 1084,
+        "endLine": 1084
+      },
+      "applicableTo": {
+        "all_of": [
+          {
+            "key": "liunian_gan_zhi",
+            "value": "甲子",
+            "scope": {
+              "layer": "流年"
+            }
+          },
+          {
+            "key": "suiyun_binglin",
+            "value": "是",
+            "scope": {
+              "layer": "流年"
+            }
+          }
+        ]
+      },
+      "requiredFacts": [
+        {
+          "key": "liunian_gan_zhi",
+          "scope": {
+            "layer": "流年",
+            "year": "selected"
+          },
+          "predicateScope": [
+            {
+              "layer": "流年"
+            }
+          ]
+        },
+        {
+          "key": "suiyun_binglin",
+          "scope": {
+            "layer": "流年",
+            "year": "selected"
+          },
+          "predicateScope": [
+            {
+              "layer": "流年"
+            }
+          ]
+        }
+      ],
+      "factSlicePolicy": "只传选定流年 year 的流年事实；suiyun_binglin 已比较同年有效大运与流年完整干支。不得把其他年份、未选定的大运事实混入求值。",
+      "applicableLayers": [
+        "流年"
+      ],
+      "unsupportedLayers": [
+        "本命",
+        "大运",
+        "流月",
+        "流日"
+      ],
+      "semantics": {
+        "satisfied": "仅所选年甲子流年且有效大运也是甲子时，确认原文字面形态；不推断吉凶。",
+        "notSatisfied": "该年已知流年或有效大运不符甲子组合；只否定本条字面例。",
+        "unknown": "缺所选年流年或有效大运时为信息不足；异年事实不能补缺。"
+      },
+      "caveats": [
+        "仅甲子流年再逢同年甲子运的字面形态，不推广到任意同干支，也不替代 SANMINGTONGH-011 的语义合同。",
+        "求值前必须只传所选年份的流年事实；混入异年并临事实会误报满足。",
+        "缺该年有效大运则并临为信息不足，不能按未见甲子运判不满足。",
+        "不输出羊刃七煞、财官印绶的分类作用、吉凶或现实事件；本命日柱甲子不得替代甲子运。"
+      ],
+      "exceptionsAndBreaks": [
+        "仅甲子流年再逢同年甲子运的字面形态，不推广到任意同干支，也不替代 SANMINGTONGH-011 的语义合同。",
+        "求值前必须只传所选年份的流年事实；混入异年并临事实会误报满足。",
+        "缺该年有效大运则并临为信息不足，不能按未见甲子运判不满足。",
+        "不输出羊刃七煞、财官印绶的分类作用、吉凶或现实事件；本命日柱甲子不得替代甲子运。"
+      ],
+      "conflictNotes": [
+        "SANMINGTONGH-011 的刃杀／财官印绶分类合同仍 pending；本条不填补。"
+      ],
+      "verification": {
+        "verified": false,
+        "fixtureSource": "tools/reports/p1-bazi-20260922/sanming-011-literal-chart-fixture.json",
+        "positive": {
+          "case": "literal_jiazi_positive",
+          "year": 1984,
+          "factCount": 3,
+          "verdict": "满足",
+          "confidence": 1.0,
+          "factCoverage": 1.0,
+          "missingFactKeys": []
+        },
+        "negative": {
+          "case": "literal_jiazi_wrong_luck",
+          "year": 1984,
+          "factCount": 3,
+          "verdict": "不满足",
+          "confidence": 1.0,
+          "factCoverage": 1.0,
+          "missingFactKeys": []
+        },
+        "boundary": {
+          "case": "literal_jiazi_no_active_luck",
+          "year": 1984,
+          "factCount": 2,
+          "verdict": "信息不足",
+          "confidence": 0.5,
+          "factCoverage": 0.5,
+          "missingFactKeys": [
+            "suiyun_binglin"
+          ]
+        },
+        "wrongYear": {
+          "case": "literal_jiazi_prior_year",
+          "year": 1983,
+          "factCount": 3,
+          "verdict": "不满足",
+          "confidence": 1.0,
+          "factCoverage": 1.0,
+          "missingFactKeys": []
+        },
+        "foreignYearGuard": "异年并临事实未过滤会误报满足；按所选年过滤后保持信息不足。",
+        "result": "四个真盘年与污染门禁通过；只验证来源形态和三态，不证明现实预测准确率。"
+      },
+      "export": {
+        "artifact": "dist/rules/bazi.json",
+        "classicsRev": "a6ab65a182c1936a1938c0e1a1ea15bd2ea2e6f9",
+        "sha256": "781e5c5f31dfe4747f06e5f9fce758e89eed136166987c5c233cc43f66a6a1b2"
+      }
+    },
+    {
+      "ruleId": "SANMINGTONGH-P1-010A",
+      "art": "bazi",
+      "book": "bazi/sanming-tonghui",
+      "primaryTopic": "overview",
+      "secondaryTopics": [],
+      "status": "adopted_as_provisional_evidence",
+      "role": "structural",
+      "sourceRuleId": "SANMINGTONGH-010",
+      "statement": "《论太岁》以甲日克戊年举日犯岁君之例；本条只标本命甲日遇所选戊流年的字面入口。",
+      "quote": "日犯嵗君如甲日尅戊年為偏財",
+      "anchor": {
+        "file": "sources/fulltext/bazi/sanming-tonghui/fulltext.md",
+        "startLine": 1081,
+        "endLine": 1081
+      },
+      "applicableTo": {
+        "all_of": [
+          {
+            "key": "gan",
+            "value": "甲",
+            "scope": {
+              "layer": "本命",
+              "pillar": "day"
+            }
+          },
+          {
+            "any_of": [
+              {
+                "key": "liunian_gan_zhi",
+                "value": "戊子",
+                "scope": {
+                  "layer": "流年"
+                }
+              },
+              {
+                "key": "liunian_gan_zhi",
+                "value": "戊寅",
+                "scope": {
+                  "layer": "流年"
+                }
+              },
+              {
+                "key": "liunian_gan_zhi",
+                "value": "戊辰",
+                "scope": {
+                  "layer": "流年"
+                }
+              },
+              {
+                "key": "liunian_gan_zhi",
+                "value": "戊午",
+                "scope": {
+                  "layer": "流年"
+                }
+              },
+              {
+                "key": "liunian_gan_zhi",
+                "value": "戊申",
+                "scope": {
+                  "layer": "流年"
+                }
+              },
+              {
+                "key": "liunian_gan_zhi",
+                "value": "戊戌",
+                "scope": {
+                  "layer": "流年"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      "requiredFacts": [
+        {
+          "key": "gan",
+          "scope": {
+            "layer": "本命",
+            "pillar": "day"
+          },
+          "predicateScope": [
+            {
+              "layer": "本命",
+              "pillar": "day"
+            }
+          ]
+        },
+        {
+          "key": "liunian_gan_zhi",
+          "scope": {
+            "layer": "流年",
+            "year": "selected"
+          },
+          "predicateScope": [
+            {
+              "layer": "流年"
+            },
+            {
+              "layer": "流年"
+            },
+            {
+              "layer": "流年"
+            },
+            {
+              "layer": "流年"
+            },
+            {
+              "layer": "流年"
+            },
+            {
+              "layer": "流年"
+            }
+          ]
+        }
+      ],
+      "factSlicePolicy": "保留本命日柱 gan；仅传所选流年 year 的 liunian_gan_zhi。不得用异年戊干支补缺。",
+      "applicableLayers": [
+        "流年"
+      ],
+      "unsupportedLayers": [
+        "本命",
+        "大运",
+        "流月",
+        "流日"
+      ],
+      "semantics": {
+        "satisfied": "仅确认本命甲日遇所选戊流年的原文示例入口；不推断救应或吉凶。",
+        "notSatisfied": "已知日干或所选年干支不符；只否定本条字面例，不否定其它日犯岁君条件。",
+        "unknown": "本命日干或所选年干支缺失时为信息不足；异年事实不能补缺。"
+      },
+      "caveats": [
+        "仅识别甲日遇所选戊流年的原文示例；不推广为任意日干克流年干的完整日犯岁君规则。",
+        "求值必须保留本命日柱事实并只取所选年份的流年事实；其它戊年不得补足当前年份。",
+        "本条不裁定庚申或癸戊合是否有救、有情，也不推断凶半、凶莫能解或现实事件。",
+        "缺本命日干或所选年干支时为信息不足；已有完整四柱而有效大运未知，不影响此字面入口，但完整 010 仍未知。"
+      ],
+      "exceptionsAndBreaks": [
+        "仅识别甲日遇所选戊流年的原文示例；不推广为任意日干克流年干的完整日犯岁君规则。",
+        "求值必须保留本命日柱事实并只取所选年份的流年事实；其它戊年不得补足当前年份。",
+        "本条不裁定庚申或癸戊合是否有救、有情，也不推断凶半、凶莫能解或现实事件。",
+        "缺本命日干或所选年干支时为信息不足；已有完整四柱而有效大运未知，不影响此字面入口，但完整 010 仍未知。"
+      ],
+      "conflictNotes": [
+        "原 SANMINGTONGH-010 的有救、有情及 L1085–1087 后续条件仍未完成；本条不填补。"
+      ],
+      "verification": {
+        "verified": false,
+        "fixtureSource": "tools/reports/facts-sample.json",
+        "positive": {
+          "case": "caseP1_010_both",
+          "year": 2018,
+          "factCount": 92,
+          "verdict": "满足",
+          "confidence": 1.0,
+          "factCoverage": 1.0,
+          "missingFactKeys": []
+        },
+        "negative": {
+          "case": "caseP1_010_wrong_day",
+          "year": 2018,
+          "factCount": 95,
+          "verdict": "不满足",
+          "confidence": 1.0,
+          "factCoverage": 1.0,
+          "missingFactKeys": []
+        },
+        "wrongYear": {
+          "case": "caseP1_010_wrong_year",
+          "year": 2017,
+          "factCount": 90,
+          "verdict": "不满足",
+          "confidence": 1.0,
+          "factCoverage": 1.0,
+          "missingFactKeys": []
+        },
+        "unknownLuck": {
+          "case": "caseP1_010_unknown_luck",
+          "year": 2018,
+          "factCount": 90,
+          "verdict": "满足",
+          "confidence": 1.0,
+          "factCoverage": 1.0,
+          "missingFactKeys": []
+        },
+        "boundary": {
+          "case": "caseP1_010_both_minus_selected_year",
+          "year": 2018,
+          "factCount": 91,
+          "verdict": "信息不足",
+          "confidence": 0.5,
+          "factCoverage": 0.5,
+          "missingFactKeys": [
+            "liunian_gan_zhi"
+          ]
+        },
+        "missingDay": {
+          "case": "caseP1_010_both_minus_day_gan",
+          "year": 2018,
+          "factCount": 91,
+          "verdict": "信息不足",
+          "confidence": 0.5,
+          "factCoverage": 0.5,
+          "missingFactKeys": [
+            "gan"
+          ]
+        },
+        "foreignYearGuard": "整袋含 2018 戊年会让 2017 错年误报；按所选年切片后为不满足。",
+        "result": "三个真实盘边界与两种删键未知通过；只验证来源入口和三态，不证明作用或现实准确率。"
+      },
+      "export": {
+        "artifact": "dist/rules/bazi.json",
+        "classicsRev": "af53647efa1dde4d967bdacc918ca42913e2bab1",
+        "sha256": "baa69b67dd8fcf7b9b70cefee88af9d41086205bbc6a79d47b26eecb958bd888"
+      }
+    },
+    {
+      "ruleId": "ZPR-P1-04",
+      "art": "bazi",
+      "book": "bazi/ziping-zhenquan",
+      "primaryTopic": "overview",
+      "secondaryTopics": [],
+      "status": "adopted_as_provisional_evidence",
+      "role": "structural",
+      "sourceRuleId": "ZPR-E-02",
+      "statement": "本命月令与月支一致、且子卯酉单气月支的完整唯一藏干为该日干正官干时，仅确认原始月令正官入口；不裁主格、兼格、顺用作用或救应。",
+      "quote": "八字用神，專求月令，以日干配月令地支，而生尅不同，格局分焉。",
+      "anchor": {
+        "file": "sources/fulltext/bazi/ziping-zhenquan/fulltext.md",
+        "startLine": 328,
+        "endLine": 328
+      },
+      "supportingSources": [
+        {
+          "role": "officer_killer_mapping",
+          "anchor": {
+            "file": "sources/fulltext/bazi/ziping-zhenquan/fulltext.md",
+            "startLine": 146,
+            "endLine": 149
+          },
+          "quote": "甲以庚爲煞，以辛爲官"
+        },
+        {
+          "role": "single_qi_boundary",
+          "anchor": {
+            "file": "sources/fulltext/bazi/ziping-zhenquan/fulltext.md",
+            "startLine": 419,
+            "endLine": 419
+          },
+          "quote": "除子午卯酉外，餘皆有藏"
+        },
+        {
+          "role": "jia_you_officer_example",
+          "anchor": {
+            "file": "sources/fulltext/bazi/ziping-zhenquan/fulltext.md",
+            "startLine": 468,
+            "endLine": 468
+          },
+          "quote": "甲透酉官"
+        },
+        {
+          "role": "bing_zi_officer_example",
+          "anchor": {
+            "file": "sources/fulltext/bazi/ziping-zhenquan/fulltext.md",
+            "startLine": 470,
+            "endLine": 470
+          },
+          "quote": "丙生子月，癸水透"
+        }
+      ],
+      "sourceDisplayPolicy": "主 quote 仅 L328 月令配日干；十干正官分类及单气边界需并列展示 supportingSources。Product generated bazi.json 当前仅有主锚，若界面不读取 handoff 附锚，不得把单句显示为完整出处。",
+      "applicableTo": {
+        "any_of": [
+          {
+            "all_of": [
+              {
+                "key": "gan",
+                "value": "甲",
+                "scope": {
+                  "layer": "本命",
+                  "pillar": "day"
+                }
+              },
+              {
+                "key": "natal_month_single_qi_hidden_stem",
+                "value": "辛",
+                "scope": {
+                  "layer": "本命",
+                  "pillar": "month"
+                }
+              }
+            ]
+          },
+          {
+            "all_of": [
+              {
+                "key": "gan",
+                "value": "乙",
+                "scope": {
+                  "layer": "本命",
+                  "pillar": "day"
+                }
+              },
+              {
+                "key": "natal_month_single_qi_hidden_stem",
+                "value": "庚",
+                "scope": {
+                  "layer": "本命",
+                  "pillar": "month"
+                }
+              }
+            ]
+          },
+          {
+            "all_of": [
+              {
+                "key": "gan",
+                "value": "丙",
+                "scope": {
+                  "layer": "本命",
+                  "pillar": "day"
+                }
+              },
+              {
+                "key": "natal_month_single_qi_hidden_stem",
+                "value": "癸",
+                "scope": {
+                  "layer": "本命",
+                  "pillar": "month"
+                }
+              }
+            ]
+          },
+          {
+            "all_of": [
+              {
+                "key": "gan",
+                "value": "丁",
+                "scope": {
+                  "layer": "本命",
+                  "pillar": "day"
+                }
+              },
+              {
+                "key": "natal_month_single_qi_hidden_stem",
+                "value": "壬",
+                "scope": {
+                  "layer": "本命",
+                  "pillar": "month"
+                }
+              }
+            ]
+          },
+          {
+            "all_of": [
+              {
+                "key": "gan",
+                "value": "戊",
+                "scope": {
+                  "layer": "本命",
+                  "pillar": "day"
+                }
+              },
+              {
+                "key": "natal_month_single_qi_hidden_stem",
+                "value": "乙",
+                "scope": {
+                  "layer": "本命",
+                  "pillar": "month"
+                }
+              }
+            ]
+          },
+          {
+            "all_of": [
+              {
+                "key": "gan",
+                "value": "己",
+                "scope": {
+                  "layer": "本命",
+                  "pillar": "day"
+                }
+              },
+              {
+                "key": "natal_month_single_qi_hidden_stem",
+                "value": "甲",
+                "scope": {
+                  "layer": "本命",
+                  "pillar": "month"
+                }
+              }
+            ]
+          },
+          {
+            "all_of": [
+              {
+                "key": "gan",
+                "value": "庚",
+                "scope": {
+                  "layer": "本命",
+                  "pillar": "day"
+                }
+              },
+              {
+                "key": "natal_month_single_qi_hidden_stem",
+                "value": "丁",
+                "scope": {
+                  "layer": "本命",
+                  "pillar": "month"
+                }
+              }
+            ]
+          },
+          {
+            "all_of": [
+              {
+                "key": "gan",
+                "value": "辛",
+                "scope": {
+                  "layer": "本命",
+                  "pillar": "day"
+                }
+              },
+              {
+                "key": "natal_month_single_qi_hidden_stem",
+                "value": "丙",
+                "scope": {
+                  "layer": "本命",
+                  "pillar": "month"
+                }
+              }
+            ]
+          },
+          {
+            "all_of": [
+              {
+                "key": "gan",
+                "value": "壬",
+                "scope": {
+                  "layer": "本命",
+                  "pillar": "day"
+                }
+              },
+              {
+                "key": "natal_month_single_qi_hidden_stem",
+                "value": "己",
+                "scope": {
+                  "layer": "本命",
+                  "pillar": "month"
+                }
+              }
+            ]
+          },
+          {
+            "all_of": [
+              {
+                "key": "gan",
+                "value": "癸",
+                "scope": {
+                  "layer": "本命",
+                  "pillar": "day"
+                }
+              },
+              {
+                "key": "natal_month_single_qi_hidden_stem",
+                "value": "戊",
+                "scope": {
+                  "layer": "本命",
+                  "pillar": "month"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      "requiredFacts": [
+        {
+          "key": "gan",
+          "scope": {
+            "layer": "本命",
+            "pillar": "day"
+          },
+          "predicateScope": [
+            {
+              "layer": "本命",
+              "pillar": "day"
+            },
+            {
+              "layer": "本命",
+              "pillar": "day"
+            },
+            {
+              "layer": "本命",
+              "pillar": "day"
+            },
+            {
+              "layer": "本命",
+              "pillar": "day"
+            },
+            {
+              "layer": "本命",
+              "pillar": "day"
+            },
+            {
+              "layer": "本命",
+              "pillar": "day"
+            },
+            {
+              "layer": "本命",
+              "pillar": "day"
+            },
+            {
+              "layer": "本命",
+              "pillar": "day"
+            },
+            {
+              "layer": "本命",
+              "pillar": "day"
+            },
+            {
+              "layer": "本命",
+              "pillar": "day"
+            }
+          ]
+        },
+        {
+          "key": "natal_month_single_qi_hidden_stem",
+          "scope": {
+            "layer": "本命",
+            "pillar": "month"
+          },
+          "predicateScope": [
+            {
+              "layer": "本命",
+              "pillar": "month"
+            },
+            {
+              "layer": "本命",
+              "pillar": "month"
+            },
+            {
+              "layer": "本命",
+              "pillar": "month"
+            },
+            {
+              "layer": "本命",
+              "pillar": "month"
+            },
+            {
+              "layer": "本命",
+              "pillar": "month"
+            },
+            {
+              "layer": "本命",
+              "pillar": "month"
+            },
+            {
+              "layer": "本命",
+              "pillar": "month"
+            },
+            {
+              "layer": "本命",
+              "pillar": "month"
+            },
+            {
+              "layer": "本命",
+              "pillar": "month"
+            },
+            {
+              "layer": "本命",
+              "pillar": "month"
+            }
+          ]
+        }
+      ],
+      "factSlicePolicy": "只取本命日干和本命月柱结构键；岁运、格局标签和作用结果不能补本命月令缺项。",
+      "applicableLayers": [
+        "本命"
+      ],
+      "unsupportedLayers": [
+        "大运",
+        "流年",
+        "流月",
+        "流日"
+      ],
+      "semantics": {
+        "satisfied": "只确认单气月支的正官原始入口；不判主格、顺用作用、救应或吉凶。",
+        "notSatisfied": "完整单气月支已知但其唯一藏干不是该日干正官干；仅否定本窄入口。",
+        "unknown": "结构键或日干缺失、冲突、多藏、月令与月支不一致时为信息不足；不得否定其它入口。"
+      },
+      "caveats": [
+        "本条只用 L328 月令配日干、L146–149 正官十干分类、L419–421 单气与多藏变化，以及 L468–470、L883 的甲酉／丙子例证，确认窄原始入口。多藏月（包括当前 fixture 的午）保持信息不足，不等于无官或无月令取用。",
+        "natal_month_single_qi_hidden_stem 必须由完整本命月支、月令、月藏结构独立产生；原始 canggan 为多值事实，不得直接代替该单值结构键。此键缺失、冲突、上游输入不完整或月令不等月支，均为信息不足。",
+        "满足不代表正官主格、兼格取舍、顺用成效、财生／印护、伤官／煞混、刑冲破害及救应成立；ZPR-E-02 的 rescue=unimplemented、verified=false 维持。",
+        "不满足只否定此单气正官原始入口；不得据此推定其它月令入口、用神或 ZPR-E-02 整条不满足。"
+      ],
+      "exceptionsAndBreaks": [
+        "本条只用 L328 月令配日干、L146–149 正官十干分类、L419–421 单气与多藏变化，以及 L468–470、L883 的甲酉／丙子例证，确认窄原始入口。多藏月（包括当前 fixture 的午）保持信息不足，不等于无官或无月令取用。",
+        "natal_month_single_qi_hidden_stem 必须由完整本命月支、月令、月藏结构独立产生；原始 canggan 为多值事实，不得直接代替该单值结构键。此键缺失、冲突、上游输入不完整或月令不等月支，均为信息不足。",
+        "满足不代表正官主格、兼格取舍、顺用成效、财生／印护、伤官／煞混、刑冲破害及救应成立；ZPR-E-02 的 rescue=unimplemented、verified=false 维持。",
+        "不满足只否定此单气正官原始入口；不得据此推定其它月令入口、用神或 ZPR-E-02 整条不满足。"
+      ],
+      "conflictNotes": [
+        "ZPR-E-02 的完整正官格、顺用作用和救应尚未裁决；本条满足不升级整条 E-02。"
+      ],
+      "verification": {
+        "verified": false,
+        "fixtureSource": "tools/reports/facts-sample.json",
+        "positive": {
+          "case": "caseP1_010_luck_gui_only",
+          "factCount": 241,
+          "verdict": "满足",
+          "confidence": 1.0,
+          "factCoverage": 1.0,
+          "missingFactKeys": []
+        },
+        "negative": {
+          "case": "cov2_bazi_3",
+          "factCount": 99,
+          "verdict": "不满足",
+          "confidence": 1.0,
+          "factCoverage": 1.0,
+          "missingFactKeys": []
+        },
+        "unknown": {
+          "case": "caseB",
+          "factCount": 96,
+          "verdict": "信息不足",
+          "confidence": 0.5,
+          "factCoverage": 0.5,
+          "missingFactKeys": [
+            "natal_month_single_qi_hidden_stem"
+          ]
+        },
+        "missingStructuralFact": {
+          "case": "caseP1_010_luck_gui_only_minus_single_qi_fact",
+          "factCount": 240,
+          "verdict": "信息不足",
+          "confidence": 0.5,
+          "factCoverage": 0.5,
+          "missingFactKeys": [
+            "natal_month_single_qi_hidden_stem"
+          ]
+        },
+        "conflictingStructuralFact": {
+          "case": "caseP1_010_luck_gui_only_conflicting_single_qi_fact",
+          "factCount": 242,
+          "verdict": "信息不足",
+          "confidence": 0.5,
+          "factCoverage": 0.5,
+          "missingFactKeys": [
+            "natal_month_single_qi_hidden_stem"
+          ]
+        },
+        "foreignLayerGuard": {
+          "case": "caseP1_010_luck_gui_only_foreign_layer_fact",
+          "factCount": 241,
+          "verdict": "信息不足",
+          "confidence": 0.5,
+          "factCoverage": 0.5,
+          "missingFactKeys": [
+            "natal_month_single_qi_hidden_stem"
+          ]
+        },
+        "allRealChartStates": {
+          "满足": 4,
+          "不满足": 7,
+          "信息不足": 32
+        },
+        "result": "43 个真实日期盘及缺值、冲突、异层污染门禁通过；只证明来源窄入口三态，不证明完整作用或现实准确率。"
+      },
+      "export": {
+        "artifact": "dist/rules/bazi.json",
+        "classicsRev": "b5fdef36dff2b9c3d82d97ac38a6fb26f0f83df5",
+        "sha256": "489073b00238bbb035e649c54878e7bf15d698b590244b1bc1bce96cddbab1d8"
+      }
+    },
+    {
+      "ruleId": "ZPR-P1-06",
+      "art": "bazi",
+      "book": "bazi/ziping-zhenquan",
+      "primaryTopic": "overview",
+      "secondaryTopics": [],
+      "status": "adopted_as_provisional_evidence",
+      "role": "source_entry_priority",
+      "sourceRuleId": "ZPR-E-02",
+      "statement": "辛日寅月，寅藏甲丙戊完整，甲与丙并透而戊未透、又未见寅午戌全会的清楚形态中，原文以正财为局部主入口、正官为兼入口；不据此裁整盘成败、纯杂或实际财官相生作用。",
+      "quote": "如辛生寅月，透丙化官，而又透甲，格成正財，正官乃其兼格也；",
+      "anchor": {
+        "file": "sources/fulltext/bazi/ziping-zhenquan/fulltext.md",
+        "startLine": 435,
+        "endLine": 435
+      },
+      "supportingSources": [
+        {
+          "role": "month_hidden_base",
+          "anchor": {
+            "file": "sources/fulltext/bazi/ziping-zhenquan/fulltext.md",
+            "startLine": 419,
+            "endLine": 419
+          },
+          "quote": "即以寅論，甲爲本主"
+        },
+        {
+          "role": "paired_relation_illustration",
+          "anchor": {
+            "file": "sources/fulltext/bazi/ziping-zhenquan/fulltext.md",
+            "startLine": 452,
+            "endLine": 452
+          },
+          "quote": "辛生寅月，甲丙並透，財與官相生，兩相得也"
+        },
+        {
+          "role": "coexisting_entry_boundary",
+          "anchor": {
+            "file": "sources/fulltext/bazi/ziping-zhenquan/fulltext.md",
+            "startLine": 548,
+            "endLine": 548
+          },
+          "quote": "兼透則兼用，透而又會，則透與會並用"
+        }
+      ],
+      "sourceDisplayPolicy": "L435 单句只支持辛寅甲丙例型的局部主兼；L452 另支持财官相生的原文例型。两句均不证明任一真实盘的整盘成格、纯杂或实际作用。",
+      "applicableTo": {
+        "all_of": [
+          {
+            "key": "gan",
+            "value": "辛",
+            "scope": {
+              "layer": "本命",
+              "pillar": "day"
+            }
+          },
+          {
+            "key": "zhi",
+            "value": "寅",
+            "scope": {
+              "layer": "本命",
+              "pillar": "month"
+            }
+          },
+          {
+            "key": "yueling",
+            "value": "寅",
+            "scope": {
+              "layer": "本命",
+              "pillar": "month"
+            }
+          },
+          {
+            "key": "natal_yin_simple_hidden_exposure_pattern",
+            "value": "甲丙",
+            "scope": {
+              "layer": "本命",
+              "pillar": "month"
+            }
+          }
+        ]
+      },
+      "sourceEntryOutputs": [
+        {
+          "entryId": "ZPR-E-02:month-寅:hidden-甲:辛日正财",
+          "sourceStem": "甲",
+          "tenGod": "正财",
+          "localRank": "主",
+          "sourceLine": 435,
+          "scope": {
+            "layer": "本命",
+            "pillar": "month"
+          },
+          "emitOn": "满足"
+        },
+        {
+          "entryId": "ZPR-E-02:month-寅:hidden-丙:辛日正官",
+          "sourceStem": "丙",
+          "tenGod": "正官",
+          "localRank": "兼",
+          "sourceLine": 435,
+          "scope": {
+            "layer": "本命",
+            "pillar": "month"
+          },
+          "emitOn": "满足"
+        }
+      ],
+      "requiredFacts": [
+        {
+          "key": "gan",
+          "scope": {
+            "layer": "本命",
+            "pillar": "day"
+          },
+          "predicateScope": [
+            {
+              "layer": "本命",
+              "pillar": "day"
+            }
+          ]
+        },
+        {
+          "key": "zhi",
+          "scope": {
+            "layer": "本命",
+            "pillar": "month"
+          },
+          "predicateScope": [
+            {
+              "layer": "本命",
+              "pillar": "month"
+            }
+          ]
+        },
+        {
+          "key": "yueling",
+          "scope": {
+            "layer": "本命",
+            "pillar": "month"
+          },
+          "predicateScope": [
+            {
+              "layer": "本命",
+              "pillar": "month"
+            }
+          ]
+        },
+        {
+          "key": "natal_yin_simple_hidden_exposure_pattern",
+          "scope": {
+            "layer": "本命",
+            "pillar": "month"
+          },
+          "predicateScope": [
+            {
+              "layer": "本命",
+              "pillar": "month"
+            }
+          ]
+        }
+      ],
+      "factSlicePolicy": "只消费本命日干、本命月支、本命月令与完整寅月清楚暴露形态；月支和月令须均为寅。流年干、其它层事实和旧格局标签不参与。",
+      "applicableLayers": [
+        "本命"
+      ],
+      "unsupportedLayers": [
+        "大运",
+        "流年",
+        "流月",
+        "流日"
+      ],
+      "semantics": {
+        "satisfied": "仅输出甲正财主、丙正官兼这两枚局部来源入口，不判整盘成败或作用。",
+        "notSatisfied": "本命所需事实完整且自洽时，任一适用条件已知不成立（包括月支或月令明确非寅）即不满足；只否定辛日寅月甲丙清楚例型。",
+        "unknown": "月支、月令、日干或结构键缺失/冲突时保留信息不足；三透戊、寅午戌全会仍因结构键缺席而未知。"
+      },
+      "caveats": [
+        "本条是 L435 辛日例型的局部主兼入口；L452 所说甲丙并透财官相生、两相得、纯，不能由此直接投射为任一真实日期盘的整盘成格或实际作用满足。",
+        "natal_yin_simple_hidden_exposure_pattern 是独立结构键，只在完整寅月月藏甲丙戊、逐柱干支完整、月令与月支一致、月藏透干不超过两枚且未见寅午戌全会时发。三透、全会、缺值或冲突时缺键为信息不足，不能判成本例型的反证。",
+        "不满足只否定这个辛日寅月甲丙清楚例型；己日甲丙兼透、丙戊兼透和其它主兼形态须另行裁决。",
+        "本条不升级 ZPR-E-02 的 satisfy_when、rescue、verified，不向六主题输出成败、喜忌、吉凶或流年作用。",
+        "V7 在 V6 谓词上显式增加 zhi=寅@本命月柱 与 yueling=寅@本命月柱；月支、月令为丑/辰的已知盘只判本窄例型不满足，不补推其其它格局入口。"
+      ],
+      "exceptionsAndBreaks": [
+        "本条是 L435 辛日例型的局部主兼入口；L452 所说甲丙并透财官相生、两相得、纯，不能由此直接投射为任一真实日期盘的整盘成格或实际作用满足。",
+        "natal_yin_simple_hidden_exposure_pattern 是独立结构键，只在完整寅月月藏甲丙戊、逐柱干支完整、月令与月支一致、月藏透干不超过两枚且未见寅午戌全会时发。三透、全会、缺值或冲突时缺键为信息不足，不能判成本例型的反证。",
+        "不满足只否定这个辛日寅月甲丙清楚例型；己日甲丙兼透、丙戊兼透和其它主兼形态须另行裁决。",
+        "本条不升级 ZPR-E-02 的 satisfy_when、rescue、verified，不向六主题输出成败、喜忌、吉凶或流年作用。",
+        "V7 在 V6 谓词上显式增加 zhi=寅@本命月柱 与 yueling=寅@本命月柱；月支、月令为丑/辰的已知盘只判本窄例型不满足，不补推其其它格局入口。"
+      ],
+      "conflictNotes": [
+        "L435 不裁己日甲丙、丙戊兼透、三透或透而又会的整盘主兼；原 ZPR-E-02 仍未验收。",
+        "V7 两张新增不满足盘的本命月支与月令均一致且已知为丑/辰；单键同 scope 多值冲突仍按谓词语言返回信息不足。"
+      ],
+      "verification": {
+        "verified": false,
+        "fixtureSource": "tools/reports/facts-sample.json",
+        "positive": {
+          "case": "caseP1_ZPR_month_xin_jia_bing_1954",
+          "factCount": 106,
+          "verdict": "满足",
+          "confidence": 1.0,
+          "factCoverage": 1.0,
+          "missingFactKeys": []
+        },
+        "secondPositive": {
+          "case": "caseP1_ZPR_month_xin_jia_bing_1984",
+          "factCount": 108,
+          "verdict": "满足",
+          "confidence": 1.0,
+          "factCoverage": 1.0,
+          "missingFactKeys": []
+        },
+        "negative": {
+          "case": "caseP1_ZPR_month_xin_no_jia_1979",
+          "factCount": 108,
+          "verdict": "不满足",
+          "confidence": 1.0,
+          "factCoverage": 1.0,
+          "missingFactKeys": []
+        },
+        "tripleExposureUnknown": {
+          "case": "caseP1_ZPR_month_xin_jia_bing_wu_1984",
+          "factCount": 106,
+          "verdict": "信息不足",
+          "confidence": 0.75,
+          "factCoverage": 0.75,
+          "missingFactKeys": [
+            "natal_yin_simple_hidden_exposure_pattern"
+          ]
+        },
+        "meetingUnknown": {
+          "case": "caseP1_ZPR_month_xin_jia_bing_meeting_1994",
+          "factCount": 107,
+          "verdict": "信息不足",
+          "confidence": 0.75,
+          "factCoverage": 0.75,
+          "missingFactKeys": [
+            "natal_yin_simple_hidden_exposure_pattern"
+          ]
+        },
+        "missingStructuralFact": {
+          "case": "missingStructuralFact",
+          "factCount": 105,
+          "verdict": "信息不足",
+          "confidence": 0.75,
+          "factCoverage": 0.75,
+          "missingFactKeys": [
+            "natal_yin_simple_hidden_exposure_pattern"
+          ]
+        },
+        "conflictingStructuralFact": {
+          "case": "conflictingStructuralFact",
+          "factCount": 107,
+          "verdict": "信息不足",
+          "confidence": 0.75,
+          "factCoverage": 0.75,
+          "missingFactKeys": [
+            "natal_yin_simple_hidden_exposure_pattern"
+          ]
+        },
+        "foreignLayerGuard": {
+          "case": "foreignLayerGuard",
+          "factCount": 106,
+          "verdict": "信息不足",
+          "confidence": 0.75,
+          "factCoverage": 0.75,
+          "missingFactKeys": [
+            "natal_yin_simple_hidden_exposure_pattern"
+          ]
+        },
+        "allRealChartStates": {
+          "满足": 2,
+          "不满足": 46,
+          "信息不足": 2
+        },
+        "result": "50 张固定真日期盘按 V7 谓词得到满足 2、不满足 46、信息不足 2；两张已知非寅月盘明确落入本窄例型之外，三透与全会两例仍未知。只验证局部来源入口的输入三态，不证明完整作用或现实准确率。",
+        "nonYinMonthBranchNegative": {
+          "case": "cov1_bazi_4",
+          "factCount": 94,
+          "verdict": "不满足",
+          "confidence": 0.75,
+          "factCoverage": 0.75,
+          "missingFactKeys": [
+            "natal_yin_simple_hidden_exposure_pattern"
+          ]
+        },
+        "nonYinMonthOrderNegative": {
+          "case": "cov3_bazi_6",
+          "factCount": 99,
+          "verdict": "不满足",
+          "confidence": 0.75,
+          "factCoverage": 0.75,
+          "missingFactKeys": [
+            "natal_yin_simple_hidden_exposure_pattern"
+          ]
+        },
+        "missingMonthBranch": {
+          "case": "missingMonthBranch",
+          "factCount": 105,
+          "verdict": "信息不足",
+          "confidence": 0.75,
+          "factCoverage": 0.75,
+          "missingFactKeys": [
+            "zhi"
+          ]
+        },
+        "missingMonthOrder": {
+          "case": "missingMonthOrder",
+          "factCount": 105,
+          "verdict": "信息不足",
+          "confidence": 0.75,
+          "factCoverage": 0.75,
+          "missingFactKeys": [
+            "yueling"
+          ]
+        },
+        "conflictingMonthBranch": {
+          "case": "conflictingMonthBranch",
+          "factCount": 107,
+          "verdict": "信息不足",
+          "confidence": 0.75,
+          "factCoverage": 0.75,
+          "missingFactKeys": [
+            "zhi"
+          ]
+        },
+        "conflictingMonthOrder": {
+          "case": "conflictingMonthOrder",
+          "factCount": 107,
+          "verdict": "信息不足",
+          "confidence": 0.75,
+          "factCoverage": 0.75,
+          "missingFactKeys": [
+            "yueling"
+          ]
+        }
+      },
+      "export": {
+        "artifact": "dist/rules/bazi.json",
+        "classicsRev": "4434c43e7c729c1547f49897bb227870b8d402a0",
+        "sha256": "1b75338270877e952a9d37475ad09f52573d864f54806c17a1e8a4ef18ca1fb0"
+      }
+    }
+  ],
+  "statusSummary": {
+    "adopted": [
+      "DITIANSUICHA-003",
+      "DITIANSUICHA-004",
+      "DITIANSUICHA-032",
+      "DITIANSUICHA-DR-03",
+      "DITIANSUICHA-DR-06",
+      "SANMINGTONGH-015",
+      "SANMINGTONGH-097",
+      "SANMINGTONGH-P1-010A",
+      "SANMINGTONGH-P1-011A",
+      "YUANHAIZIPIN-YR-03",
+      "ZPR-P1-01",
+      "ZPR-P1-02",
+      "ZPR-P1-03",
+      "ZPR-P1-04",
+      "ZPR-P1-06"
+    ],
+    "blocked": [
+      {
+        "ruleId": "DITIANSUICHA-DR-02",
+        "status": "blocked",
+        "reason": "V14 低对应度：固定锚点 L10521 只有“合有宜不宜”，没有三合/方局取值；当前谓词的具体组合不能从该 quote 追溯，退回等待更精确出处。"
+      },
+      {
+        "ruleId": "DITIANSUICHA-012",
+        "status": "blocked",
+        "reason": "谓词只列十神/格局值，未表达声明中的月令、透干、司令和破格条件；固定样盘 24/24 满足，不能作为区分性规则。"
+      },
+      {
+        "ruleId": "SANMINGTONGH-102",
+        "status": "blocked",
+        "reason": "声明含年柱、时柱、日坐、身强和比劫冲夺，谓词仅为无柱位 shishen OR；固定样盘 24/24 满足。"
+      },
+      {
+        "ruleId": "YUANHAIZIPIN-023",
+        "status": "blocked",
+        "reason": "正财谓词无柱位/身能任财条件，且古代妻财语义不能直接转成现代伴侣或收入结论。"
+      },
+      {
+        "ruleId": "YUANHAIZIPIN-024",
+        "status": "blocked",
+        "reason": "声明明确女命、夫宫和子星，但当前 FactKey 没有性别/夫宫/子星完整合同；现谓词命中不能判关系结果。"
+      },
+      {
+        "ruleId": "SANMINGTONGH-069",
+        "status": "blocked",
+        "reason": "同类女命/正官夫星规则缺少性别和夫宫条件，保持 unknown。"
+      },
+      {
+        "ruleId": "DITIANSUICHA-031",
+        "status": "blocked",
+        "reason": "当前固定样盘没有同时命中卯、酉的正例；需增加独立固定正例并确认本命层绑定后再进入 P1。"
+      },
+      {
+        "ruleId": "SANMINGTONGH-R-02",
+        "status": "blocked",
+        "reason": "谓词表达月令藏干+透干，但固定锚点 L3218 为偏财长段，未支持该陈述；等待正确出处后再评估。"
+      },
+      {
+        "ruleId": "YUANHAIZIPIN-008",
+        "status": "blocked",
+        "reason": "同样的月令藏干+透干谓词锚到‘假令月令有用神’，不足以支持完整陈述。"
+      }
+    ],
+    "rejectedRound50Drafts": [
+      "SANMINGTONGH-051",
+      "SANMINGTONGH-065",
+      "SANMINGTONGH-066",
+      "YUANHAIZIPIN-014",
+      "WX-05-02"
+    ],
+    "rejectedInvalidScope": [
+      {
+        "ruleId": "TAIWEIFU-004",
+        "rejectedField": "scope.palace=伪宫名",
+        "remainingBaseCondition": "ziwei_star=天马（旧条件保留但不进入本 P1 八字 manifest）"
+      }
+    ]
+  },
+  "productFactGaps": [
+    {
+      "topic": "relationship",
+      "gap": "性别/配偶星/夫宫与关系反馈的明确合同",
+      "state": "部分可用",
+      "action": "已增加 gender、spouse_star、spouse_palace_zhi 结构事实；关系反馈与古籍复合语义仍保持 unknown，未升级规则。"
+    },
+    {
+      "topic": "all",
+      "gap": "流年、流月、流日的逐柱干支/关系事实与层级绑定",
+      "state": "部分可用",
+      "action": "产品仓按时间层过滤事实；古籍仓不把本命规则复制为岁运结论。"
+    },
+    {
+      "topic": "wealth",
+      "gap": "财星位置、身财两停、比劫夺财与岁运触发",
+      "state": "部分可用",
+      "action": "已增加逐柱十神与 shishen_count，可供财星位置/计数取证；身财两停、比劫夺财与岁运触发仍阻塞。"
+    },
+    {
+      "topic": "health",
+      "gap": "作息、症状、体检等现实资料",
+      "state": "产品边界",
+      "action": "仅用于用户核对，不由古籍规则仓生成诊断。"
+    },
+    {
+      "topic": "all",
+      "gap": "多现/计数、跨柱同支关系",
+      "state": "部分可用",
+      "action": "已增加 shishen_count、natal_same_zhi、natal_relation；尚未把这些结构事实升级为古籍复合结论。"
+    }
+  ],
+  "round50Audit": {
+    "draftMap": "tools/reports/shensha-position-map.json",
+    "draftStatus": "not_accepted",
+    "fneInventory": "tools/reports/fne-residue-inventory.json",
+    "scopePillarProof": {
+      "result": "通过：生成器为 shensha 事实写入 scope.layer=本命 与 scope.pillar=year/month/day/time；固定样盘重建后与产品 fixture 字节一致。",
+      "generator": "bun scripts/dump-facts.ts /Users/sync/code/fateradar-classics",
+      "proofFile": "tools/reports/p1-bazi-20260921/shensha-scope-proof.json",
+      "sampleSha256": "6915a56e7fef202a5c3f145106e0205b2ae1590ad2348d7f5d7ade6dd04518fb",
+      "shenshaFactCount": 473,
+      "semanticLimit": "柱位存在不证明神煞代理等价于建禄/专禄格局。"
+    },
+    "wx0502": "退回：只能写同柱禄神/驿马保守子集；跨柱同支未覆盖，且当前锚点仅卷名。",
+    "ziweiPseudoPalace": {
+      "ruleId": "TAIWEIFU-004",
+      "result": "退回",
+      "failureLog": "tools/reports/p1-bazi-20260921/round50-schema-before.json"
+    },
+    "ledger": {
+      "command": "python3 tools/test-ledger-consistency.py",
+      "result": "ALL LEDGER-CONSISTENCY OK; 464 条未映射均有 reason_class。"
+    }
+  },
+  "previousHandoff": {
+    "path": "docs/closeout/P1_BAZI_TOPIC_MANIFEST_20260924_V7.json",
+    "sha256": "f3d689cf0c24ca61685548ee4246461701bf1436191d3580c461a3c6e068f306",
+    "ruleCount": 15
+  },
+  "supplementalFactFixture": {
+    "path": "tools/reports/p1-bazi-20260922/sanming-011-literal-chart-fixture.json",
+    "sha256": "2f6da6abc82eefbbb73a20c4311b4e93337f916119067561bab616a8279ebce1",
+    "caseCount": 4,
+    "producer": "cosmic buildBazi(..., selectedYear, undefined, {buildVertical:false})",
+    "replay": "python3 tools/verify-p1-bazi-12-handoff.py --replay-product"
+  },
+  "handoffStatus": "candidate_pending_product_v9_import_and_remote_publication",
+  "exportState": {
+    "candidateOnly": true,
+    "sourceRuleYamlChanged": true,
+    "classicsDistChanged": false,
+    "note": "097 is corrected in the pinned rules.yaml. Existing export metadata on other rules remains historical; 097 has no current dist export. Product V8 is unchanged."
+  },
+  "priorScopeCorrection": {
+    "ruleId": "ZPR-P1-06",
+    "sourceAnchor": {
+      "file": "sources/fulltext/bazi/ziping-zhenquan/fulltext.md",
+      "startLine": 435,
+      "endLine": 435,
+      "quote": "如辛生寅月，透丙化官，而又透甲，格成正財，正官乃其兼格也；"
+    },
+    "predicateSchema": {
+      "version": "fateradar-rules-v3",
+      "document": "docs/PREDICATE-LANGUAGE-V3.md",
+      "documentRev": "4434c43e7c729c1547f49897bb227870b8d402a0",
+      "documentSha256": "95641647798655f175fc2b2627208d0a3df188a91767ff653719d93e9d4c0bc9"
+    },
+    "priorV6Counts": {
+      "满足": 2,
+      "不满足": 44,
+      "信息不足": 4
+    },
+    "candidateV7Counts": {
+      "满足": 2,
+      "不满足": 46,
+      "信息不足": 2
+    },
+    "reason": "V6 只核本命日干和寅月专属派生结构键；cov1_bazi_4 与 cov3_bazi_6 的本命月支、月令已知为丑、辰，但派生键缺席，故旧谓词给信息不足。V7 将 L435 明示的寅月适用域以现有 zhi/yueling 事实显式列入 all_of。",
+    "preserved": [
+      "V6 文件与 SHA-256 不变。",
+      "共享 fixture 不变。",
+      "ZPR-E-02 的整体语义、rescue 标签与 verified=false 不变。",
+      "不新增格局作用、成败、救应、吉凶或流年效果推断。",
+      "Classic rules.yaml 与 dist/rules/bazi.json 不由本候选改写。"
+    ]
+  },
+  "sourceCorrection": {
+    "ruleId": "SANMINGTONGH-097",
+    "sourceRevision": "f23b12997ccebe7920324de5cf8993bd24cb2331",
+    "sourceDelta": {
+      "path": "docs/closeout/SANMINGTONGH_097_SOURCE_HANDOFF_20260924.json",
+      "sha256": "7cdea905b3eb8236234fa3c87c5b2736790e5c3a7cf6ae562ea97a2f8f46a4a1"
+    },
+    "priorV7Counts": {
+      "满足": 12,
+      "不满足": 38,
+      "信息不足": 0
+    },
+    "candidateV9Counts": {
+      "满足": 10,
+      "不满足": 40,
+      "信息不足": 0
+    },
+    "topicChange": "personality -> overview-only neutral structural evidence",
+    "effectStatus": "no personality or other personal effect contract"
+  }
+}
