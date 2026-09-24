@@ -4,11 +4,11 @@
 
 ## 2026-09-24 本地源规则修订（尚未交接产品）
 
-上述审计之后，已在本仓工作区把 [`SANMINGTONGH-097` 规则源](../../references/books/bazi/sanming-tonghui/rules.yaml)收窄为《论诸神煞》L1761 的八日名单：甲寅、乙卯、己未、丁未、庚申、辛酉、戊戌、癸丑；锚点与逐字引文同指 L1761，谓词只读本命日干和日支。原来误入名单的壬子退出，戊戌进入；原 statement 的“身强、月令他格为用”及相关作用 caveat 已移除。新 caveat 明确不合并 L9713 十二支干同类或 L3808 四日核心说，也不从名单推出性格、关系、旺衰或吉凶。`verified=false` 未改变。
+上述审计之后，已在本仓本地提交 `1fe030d` 将 [`SANMINGTONGH-097` 规则源](../../references/books/bazi/sanming-tonghui/rules.yaml)收窄为《论诸神煞》L1761 的八日名单：甲寅、乙卯、己未、丁未、庚申、辛酉、戊戌、癸丑；锚点与逐字引文同指 L1761，谓词只读本命日干和日支。原来误入名单的壬子退出，戊戌进入；原 statement 的“身强、月令他格为用”及相关作用 caveat 已移除。新 caveat 明确不合并 L9713 十二支干同类或 L3808 四日核心说，也不从名单推出性格、关系、旺衰或吉凶。`verified=false` 未改变。
 
 [`test-map-fixed-values.py`](../../tools/test-map-fixed-values.py) 现在逐字核对原文锚点、名单谓词、本命层和柱位，并对共享 50 张真实日期盘复算：10 张满足、40 张不满足。`cov1_bazi_3`（1988-04-13，戊戌日）为真实满足盘；`caseA`（1990-08-15，壬子日）为真实不满足盘；在戊戌盘删去本命日支的缺输入投影为信息不足，异时间层的戊戌不能补成本命事实，同层戊／壬日干冲突亦为信息不足。这些只验证 L1761 名单判定，不验证原段附断或个人性格。`python3 tools/test-map-fixed-values.py`、`python3 tools/map-fixed-values.py --dry-run`、`python3 tools/validate-rules.py --json` 均通过。
 
-本修订尚未进入远端，也**没有**形成新 P1 manifest。Classics V7、Product V8 与产品生成 handoff 仍保留历史 `097`；产品消费者继续把它隔离为来源冲突 `unknown`。下一份交接须版本化替换该条来源、谓词和正反未知样盘，并撤去未经来源支持的性格主题归属；产品经导入门禁及版本升级后才能消费新的中性名单结构。个人性格判断仍须另行提供作用合同。
+本修订尚未进入远端，也**没有**形成新 P1 manifest；当前仅有[单条来源修订候选](./SANMINGTONGH_097_SOURCE_HANDOFF_20260924.json)。Classics V7、Product V8 与产品生成 handoff 仍保留历史 `097`；产品消费者继续把它隔离为来源冲突 `unknown`。下一份完整交接须版本化替换该条来源、谓词和正反未知样盘，并撤去未经来源支持的性格主题归属；产品经导入门禁及版本升级后才能消费新的中性名单结构。个人性格判断仍须另行提供作用合同。
 
 ## 修订前来源冲突记录
 

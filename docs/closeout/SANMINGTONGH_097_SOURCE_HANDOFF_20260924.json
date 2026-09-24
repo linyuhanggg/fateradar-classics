@@ -1,0 +1,256 @@
+{
+  "handoffVersion": "fateradar-p1-bazi-097-source-correction-v1",
+  "status": "candidate_not_full_manifest_not_product_importable",
+  "sourceRevision": "1fe030d93c7cf8f95ea89b7df669aa7080a7eb2b",
+  "baseManifest": {
+    "path": "docs/closeout/P1_BAZI_TOPIC_MANIFEST_20260924_V7.json",
+    "sha256": "f3d689cf0c24ca61685548ee4246461701bf1436191d3580c461a3c6e068f306",
+    "version": "v7"
+  },
+  "factFixture": {
+    "path": "tools/reports/facts-sample.json",
+    "sha256": "206638e12e5390ea8d41f8140d23f61efcee673dfa5aebd65e2dc95c937df5f8",
+    "caseCount": 50
+  },
+  "sourceFiles": {
+    "rulesYaml": {
+      "path": "references/books/bazi/sanming-tonghui/rules.yaml",
+      "sha256": "8b6dd495f6f3845cf3779bdf8cd70ff609f36c08aa365f05f3c97e04223144c8"
+    },
+    "fulltext": {
+      "path": "sources/fulltext/bazi/sanming-tonghui/fulltext.md",
+      "sha256": "ef01ff5ff538a2c64af7fda15b1393b4eeb9f75a311fe3dda7f39f0ecaa66298"
+    }
+  },
+  "rule": {
+    "ruleId": "SANMINGTONGH-097",
+    "book": "bazi/sanming-tonghui",
+    "role": "structural_day_pair_membership_only",
+    "statement": "《论诸神煞》所列八专日为甲寅、乙卯、己未、丁未、庚申、辛酉、戊戌、癸丑；本条仅识别日柱是否在此名单。",
+    "quote": "八專乃甲寅乙卯己未丁未庚申辛酉戊戌癸丑是也",
+    "anchor": {
+      "file": "sources/fulltext/bazi/sanming-tonghui/fulltext.md",
+      "start_line": 1761,
+      "end_line": 1761
+    },
+    "applicableTo": {
+      "any_of": [
+        {
+          "all_of": [
+            {
+              "key": "gan",
+              "value": "甲",
+              "scope": {
+                "layer": "本命",
+                "pillar": "day"
+              }
+            },
+            {
+              "key": "zhi",
+              "value": "寅",
+              "scope": {
+                "layer": "本命",
+                "pillar": "day"
+              }
+            }
+          ]
+        },
+        {
+          "all_of": [
+            {
+              "key": "gan",
+              "value": "乙",
+              "scope": {
+                "layer": "本命",
+                "pillar": "day"
+              }
+            },
+            {
+              "key": "zhi",
+              "value": "卯",
+              "scope": {
+                "layer": "本命",
+                "pillar": "day"
+              }
+            }
+          ]
+        },
+        {
+          "all_of": [
+            {
+              "key": "gan",
+              "value": "己",
+              "scope": {
+                "layer": "本命",
+                "pillar": "day"
+              }
+            },
+            {
+              "key": "zhi",
+              "value": "未",
+              "scope": {
+                "layer": "本命",
+                "pillar": "day"
+              }
+            }
+          ]
+        },
+        {
+          "all_of": [
+            {
+              "key": "gan",
+              "value": "丁",
+              "scope": {
+                "layer": "本命",
+                "pillar": "day"
+              }
+            },
+            {
+              "key": "zhi",
+              "value": "未",
+              "scope": {
+                "layer": "本命",
+                "pillar": "day"
+              }
+            }
+          ]
+        },
+        {
+          "all_of": [
+            {
+              "key": "gan",
+              "value": "庚",
+              "scope": {
+                "layer": "本命",
+                "pillar": "day"
+              }
+            },
+            {
+              "key": "zhi",
+              "value": "申",
+              "scope": {
+                "layer": "本命",
+                "pillar": "day"
+              }
+            }
+          ]
+        },
+        {
+          "all_of": [
+            {
+              "key": "gan",
+              "value": "辛",
+              "scope": {
+                "layer": "本命",
+                "pillar": "day"
+              }
+            },
+            {
+              "key": "zhi",
+              "value": "酉",
+              "scope": {
+                "layer": "本命",
+                "pillar": "day"
+              }
+            }
+          ]
+        },
+        {
+          "all_of": [
+            {
+              "key": "gan",
+              "value": "戊",
+              "scope": {
+                "layer": "本命",
+                "pillar": "day"
+              }
+            },
+            {
+              "key": "zhi",
+              "value": "戌",
+              "scope": {
+                "layer": "本命",
+                "pillar": "day"
+              }
+            }
+          ]
+        },
+        {
+          "all_of": [
+            {
+              "key": "gan",
+              "value": "癸",
+              "scope": {
+                "layer": "本命",
+                "pillar": "day"
+              }
+            },
+            {
+              "key": "zhi",
+              "value": "丑",
+              "scope": {
+                "layer": "本命",
+                "pillar": "day"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "requiredFacts": [
+      {
+        "key": "gan",
+        "scope": {
+          "layer": "本命",
+          "pillar": "day"
+        }
+      },
+      {
+        "key": "zhi",
+        "scope": {
+          "layer": "本命",
+          "pillar": "day"
+        }
+      }
+    ],
+    "caveats": [
+      "本条只采用《论诸神煞》L1761 的八日名单，不合并《消息赋》L9713 的十二支干同类日或《八专禄旺》L3808 的四日核心说。",
+      "原段附断及其它篇章的旺衰、格局、性格与关系作用均不由日柱名单直接推出。"
+    ],
+    "verified": false,
+    "oldV7RealChartStates": {
+      "满足": 12,
+      "不满足": 38
+    },
+    "candidateRealChartStates": {
+      "不满足": 40,
+      "满足": 10
+    },
+    "examples": {
+      "positive": {
+        "case": "cov1_bazi_3",
+        "verdict": "满足"
+      },
+      "negative": {
+        "case": "caseA",
+        "verdict": "不满足"
+      },
+      "missingNatalDayBranch": {
+        "projectionOf": "cov1_bazi_3",
+        "removed": {
+          "key": "zhi",
+          "scope": {
+            "layer": "本命",
+            "pillar": "day"
+          }
+        },
+        "verdict": "信息不足"
+      }
+    }
+  },
+  "proposedTopicDisposition": {
+    "overview": "neutral structural evidence only",
+    "personality": "remove unsupported attribution; requires a separate effect contract"
+  },
+  "productState": "V8 retains old 097 and forces its consumer result to unknown; no import or topic change yet"
+}
