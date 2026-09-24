@@ -9,9 +9,9 @@
  {
   "book": "bazi/sanming-tonghui",
   "rule_id": "SANMINGTONGH-097",
-  "applicable_to_yaml": "{any_of: [{all_of: [{key: gan, value: 甲, scope: {pillar: day}}, {key: zhi, value: 寅, scope: {pillar: day}}]}, {all_of: [{key: gan, value: 乙, scope: {pillar: day}}, {key: zhi, value: 卯, scope: {pillar: day}}]}, {all_of: [{key: gan, value: 丁, scope: {pillar: day}}, {key: zhi, value: 未, scope: {pillar: day}}]}, {all_of: [{key: gan, value: 己, scope: {pillar: day}}, {key: zhi, value: 未, scope: {pillar: day}}]}, {all_of: [{key: gan, value: 庚, scope: {pillar: day}}, {key: zhi, value: 申, scope: {pillar: day}}]}, {all_of: [{key: gan, value: 辛, scope: {pillar: day}}, {key: zhi, value: 酉, scope: {pillar: day}}]}, {all_of: [{key: gan, value: 壬, scope: {pillar: day}}, {key: zhi, value: 子, scope: {pillar: day}}]}, {all_of: [{key: gan, value: 癸, scope: {pillar: day}}, {key: zhi, value: 丑, scope: {pillar: day}}]}]}",
-  "evidence_from_statement": "八专日（甲寅、乙卯、丁未、己未、庚申、辛酉、壬子、癸丑）",
-  "note": "八对皆日柱；「日坐禄旺之地，身强为论；以月令它格为用」是断语，未表达。"
+  "applicable_to_yaml": "{any_of: [{all_of: [{key: gan, value: 甲, scope: {layer: 本命, pillar: day}}, {key: zhi, value: 寅, scope: {layer: 本命, pillar: day}}]}, {all_of: [{key: gan, value: 乙, scope: {layer: 本命, pillar: day}}, {key: zhi, value: 卯, scope: {layer: 本命, pillar: day}}]}, {all_of: [{key: gan, value: 己, scope: {layer: 本命, pillar: day}}, {key: zhi, value: 未, scope: {layer: 本命, pillar: day}}]}, {all_of: [{key: gan, value: 丁, scope: {layer: 本命, pillar: day}}, {key: zhi, value: 未, scope: {layer: 本命, pillar: day}}]}, {all_of: [{key: gan, value: 庚, scope: {layer: 本命, pillar: day}}, {key: zhi, value: 申, scope: {layer: 本命, pillar: day}}]}, {all_of: [{key: gan, value: 辛, scope: {layer: 本命, pillar: day}}, {key: zhi, value: 酉, scope: {layer: 本命, pillar: day}}]}, {all_of: [{key: gan, value: 戊, scope: {layer: 本命, pillar: day}}, {key: zhi, value: 戌, scope: {layer: 本命, pillar: day}}]}, {all_of: [{key: gan, value: 癸, scope: {layer: 本命, pillar: day}}, {key: zhi, value: 丑, scope: {layer: 本命, pillar: day}}]}]}",
+  "evidence_from_statement": "八专日为甲寅、乙卯、己未、丁未、庚申、辛酉、戊戌、癸丑",
+  "note": "八对皆日柱；只识别《论诸神煞》L1761 名单，不表达性格、关系或旺衰作用。"
  },
  {
   "book": "san-shi/liuren-miben",

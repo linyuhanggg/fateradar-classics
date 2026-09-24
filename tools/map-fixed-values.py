@@ -36,15 +36,16 @@ import yaml
 ROOT = Path(__file__).resolve().parents[1]
 
 
-def pair_on_pillar(gan: str, zhi: str, pillar: str) -> str:
+def pair_on_pillar(gan: str, zhi: str, pillar: str, layer: str | None = None) -> str:
+    scope = f"layer: {layer}, pillar: {pillar}" if layer else f"pillar: {pillar}"
     return (
-        f"{{all_of: [{{key: gan, value: {gan}, scope: {{pillar: {pillar}}}}}, "
-        f"{{key: zhi, value: {zhi}, scope: {{pillar: {pillar}}}}}]}}"
+        f"{{all_of: [{{key: gan, value: {gan}, scope: {{{scope}}}}}, "
+        f"{{key: zhi, value: {zhi}, scope: {{{scope}}}}}]}}"
     )
 
 
-def any_pairs(pairs: list[tuple[str, str]], pillar: str) -> str:
-    return "{any_of: [" + ", ".join(pair_on_pillar(g, z, pillar) for g, z in pairs) + "]}"
+def any_pairs(pairs: list[tuple[str, str]], pillar: str, layer: str | None = None) -> str:
+    return "{any_of: [" + ", ".join(pair_on_pillar(g, z, pillar, layer) for g, z in pairs) + "]}"
 
 
 # rule_id → (谓词, statement 复核片段, 说明)
@@ -56,11 +57,12 @@ MAP: dict[str, tuple[str, str, str]] = {
     ),
     "SANMINGTONGH-097": (
         any_pairs(
-            [("甲", "寅"), ("乙", "卯"), ("丁", "未"), ("己", "未"), ("庚", "申"), ("辛", "酉"), ("壬", "子"), ("癸", "丑")],
+            [("甲", "寅"), ("乙", "卯"), ("己", "未"), ("丁", "未"), ("庚", "申"), ("辛", "酉"), ("戊", "戌"), ("癸", "丑")],
             "day",
+            "本命",
         ),
-        "八专日（甲寅、乙卯、丁未、己未、庚申、辛酉、壬子、癸丑）",
-        "八对皆日柱；「日坐禄旺之地，身强为论；以月令它格为用」是断语，未表达。",
+        "八专日为甲寅、乙卯、己未、丁未、庚申、辛酉、戊戌、癸丑",
+        "八对皆日柱；只识别《论诸神煞》L1761 名单，不表达性格、关系或旺衰作用。",
     ),
     # 六壬：位置级天将／六亲（引擎已产出 scope.palace=日上/辰上/初传/中传/末传）。
     # 原文特意点明「青龙在任意一传不等于龙居日本」——`scope.palace=日上` 正是这个区分。

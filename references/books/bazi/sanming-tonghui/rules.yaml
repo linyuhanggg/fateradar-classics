@@ -1978,16 +1978,16 @@ rules:
   verified_at: null
 - rule_id: SANMINGTONGH-097
   kind: doctrine
-  statement: 八专日（甲寅、乙卯、丁未、己未、庚申、辛酉、壬子、癸丑）日坐禄旺之地，身强为论；以月令它格为用。
+  statement: 《论诸神煞》所列八专日为甲寅、乙卯、己未、丁未、庚申、辛酉、戊戌、癸丑；本条仅识别日柱是否在此名单。
   anchor:
     file: sources/fulltext/bazi/sanming-tonghui/fulltext.md
-    start_line: 9713
-    end_line: 9713
-  quote: 〔支干同類如甲寅乙卯丙午丁未庚申辛酉壬子癸丑戊午己未戊戌己丑是也行運會煞必主不祿以其恃強與煞相争煞竟尅身故也〕
-  applicable_to: {any_of: [{all_of: [{key: gan, value: 甲, scope: {pillar: day}}, {key: zhi, value: 寅, scope: {pillar: day}}]}, {all_of: [{key: gan, value: 乙, scope: {pillar: day}}, {key: zhi, value: 卯, scope: {pillar: day}}]}, {all_of: [{key: gan, value: 丁, scope: {pillar: day}}, {key: zhi, value: 未, scope: {pillar: day}}]}, {all_of: [{key: gan, value: 己, scope: {pillar: day}}, {key: zhi, value: 未, scope: {pillar: day}}]}, {all_of: [{key: gan, value: 庚, scope: {pillar: day}}, {key: zhi, value: 申, scope: {pillar: day}}]}, {all_of: [{key: gan, value: 辛, scope: {pillar: day}}, {key: zhi, value: 酉, scope: {pillar: day}}]}, {all_of: [{key: gan, value: 壬, scope: {pillar: day}}, {key: zhi, value: 子, scope: {pillar: day}}]}, {all_of: [{key: gan, value: 癸, scope: {pillar: day}}, {key: zhi, value: 丑, scope: {pillar: day}}]}]}
+    start_line: 1761
+    end_line: 1761
+  quote: 八專乃甲寅乙卯己未丁未庚申辛酉戊戌癸丑是也
+  applicable_to: {any_of: [{all_of: [{key: gan, value: 甲, scope: {layer: 本命, pillar: day}}, {key: zhi, value: 寅, scope: {layer: 本命, pillar: day}}]}, {all_of: [{key: gan, value: 乙, scope: {layer: 本命, pillar: day}}, {key: zhi, value: 卯, scope: {layer: 本命, pillar: day}}]}, {all_of: [{key: gan, value: 己, scope: {layer: 本命, pillar: day}}, {key: zhi, value: 未, scope: {layer: 本命, pillar: day}}]}, {all_of: [{key: gan, value: 丁, scope: {layer: 本命, pillar: day}}, {key: zhi, value: 未, scope: {layer: 本命, pillar: day}}]}, {all_of: [{key: gan, value: 庚, scope: {layer: 本命, pillar: day}}, {key: zhi, value: 申, scope: {layer: 本命, pillar: day}}]}, {all_of: [{key: gan, value: 辛, scope: {layer: 本命, pillar: day}}, {key: zhi, value: 酉, scope: {layer: 本命, pillar: day}}]}, {all_of: [{key: gan, value: 戊, scope: {layer: 本命, pillar: day}}, {key: zhi, value: 戌, scope: {layer: 本命, pillar: day}}]}, {all_of: [{key: gan, value: 癸, scope: {layer: 本命, pillar: day}}, {key: zhi, value: 丑, scope: {layer: 本命, pillar: day}}]}]}
   caveats:
-  - 八专日身强需看是否过旺无制
-  - 过旺需食伤、财、官为用
+  - 本条只采用《论诸神煞》L1761 的八日名单，不合并《消息赋》L9713 的十二支干同类日或《八专禄旺》L3808 的四日核心说。
+  - 原段附断及其它篇章的旺衰、格局、性格与关系作用均不由日柱名单直接推出。
   school: null
   verified: false
   verified_by: null

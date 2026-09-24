@@ -15,6 +15,7 @@ from __future__ import annotations
 import importlib.util
 import json
 import sys
+from collections import Counter
 from pathlib import Path
 
 import yaml
@@ -101,16 +102,51 @@ def main() -> int:
         fact("gan", "己", layer="本命", pillar="day"),
         fact("zhi", "未", layer="本命", pillar="day"),
     ]
-    check("  日柱壬子 → 八专日成立", ev.evaluate(rules["SANMINGTONGH-097"], chart_renzi)["verdict"], "满足")
+    chart_wuxu = [
+        fact("gan", "戊", layer="本命", pillar="day"),
+        fact("zhi", "戌", layer="本命", pillar="day"),
+    ]
+    check("  日柱壬子 → 非 L1761 八专日", ev.evaluate(rules["SANMINGTONGH-097"], chart_renzi)["verdict"], "不满足")
     check("  日柱己巳 → 不成立（八专列的是己未）", ev.evaluate(rules["SANMINGTONGH-097"], chart_jisi)["verdict"], "不满足")
     check("  日柱己未 → 成立", ev.evaluate(rules["SANMINGTONGH-097"], chart_jiwei)["verdict"], "满足")
-    check("  日柱壬子 → 不是魁罡（庚辰/庚戌/壬辰/戊戌）", ev.evaluate(rules["R-06"], chart_renzi)["verdict"], "不满足")
-    # 关键：scope 钉在 day，year=庚午 不能把「庚…辰」凑成魁罡
+    check("  日柱戊戌 → 成立", ev.evaluate(rules["SANMINGTONGH-097"], chart_wuxu)["verdict"], "满足")
     check(
-        "  年柱庚午 + 日柱壬子 不得被当成魁罡/八专的错配（柱位须同一柱）",
-        ev.evaluate(rules["R-06"], [fact("gan", "庚", layer="本命", pillar="year"), fact("zhi", "辰", layer="本命", pillar="day")])["verdict"],
+        "  日支缺失 → 信息不足",
+        ev.evaluate(rules["SANMINGTONGH-097"], [fact("gan", "戊", layer="本命", pillar="day")])["verdict"],
+        "信息不足",
+    )
+    check(
+        "  仅其它时间层的戊戌日柱 → 本命信息不足",
+        ev.evaluate(rules["SANMINGTONGH-097"], [fact("gan", "戊", layer="流年", pillar="day"), fact("zhi", "戌", layer="流年", pillar="day")])["verdict"],
+        "信息不足",
+    )
+    check(
+        "  本命日干戊壬冲突 → 信息不足",
+        ev.evaluate(rules["SANMINGTONGH-097"], [*chart_wuxu, fact("gan", "壬", layer="本命", pillar="day")])["verdict"],
+        "信息不足",
+    )
+    check("  日柱壬子 → 不是魁罡（庚辰/庚戌/壬辰/戊戌）", ev.evaluate(rules["R-06"], chart_renzi)["verdict"], "不满足")
+    # 关键：scope 钉在 day，年干庚不能与日支辰凑成魁罡；日干丁使反例输入完整。
+    check(
+        "  年干庚 + 日柱丁辰 不得拼成庚辰魁罡",
+        ev.evaluate(rules["R-06"], [fact("gan", "庚", layer="本命", pillar="year"), fact("gan", "丁", layer="本命", pillar="day"), fact("zhi", "辰", layer="本命", pillar="day")])["verdict"],
         "不满足",
     )
+    source_rule = rules["SANMINGTONGH-097"]
+    source_lines = (ROOT / source_rule["anchor"]["file"]).read_text(encoding="utf-8").splitlines()
+    check("  原文锚点固定为《论诸神煞》L1761", (source_rule["anchor"]["start_line"], source_rule["anchor"]["end_line"]), (1761, 1761))
+    check("  八日引文在锚点逐字可见", source_rule["quote"] in source_lines[1760], True)
+    check("  来源规则仍未验证现实准确率", source_rule["verified"], False)
+    real_cases = json.loads((ROOT / "tools/reports/facts-sample.json").read_text(encoding="utf-8"))["bazi"]
+    real_counts = Counter(ev.evaluate(source_rule, case["facts"])["verdict"] for case in real_cases.values())
+    check("  50 张真实日期盘重算", dict(real_counts), {"不满足": 40, "满足": 10})
+    check("  戊戌真实盘满足", ev.evaluate(source_rule, real_cases["cov1_bazi_3"]["facts"])["verdict"], "满足")
+    check("  壬子真实盘不满足", ev.evaluate(source_rule, real_cases["caseA"]["facts"])["verdict"], "不满足")
+    missing_day_branch = [
+        item for item in real_cases["cov1_bazi_3"]["facts"]
+        if not (item.get("key") == "zhi" and item.get("scope") == {"layer": "本命", "pillar": "day"})
+    ]
+    check("  戊戌真实盘删去本命日支后未知", ev.evaluate(source_rule, missing_day_branch)["verdict"], "信息不足")
 
     print("4. 语义：具名纳音")
     check(
