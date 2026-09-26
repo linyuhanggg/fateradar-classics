@@ -1,0 +1,277 @@
+{
+  "schema": "fateradar-bazi-semantic-contracts-v1",
+  "contractVersion": "p1-bazi-semantic-contracts-20260927-v1",
+  "art": "bazi",
+  "semanticContractStatus": "accepted",
+  "verified": true,
+  "verificationMethod": "delegated_adjudication",
+  "verificationComponents": [
+    "原文锚点逐字校验：每条引文在所钉行内逐字出现",
+    "裁决书：docs/closeout/P1_SEMANTIC_CONTRACT_ADJUDICATION_20260927.md 逐条写明疑点、裁决与可执行条件",
+    "三态样盘：每个语义键都有满足、不满足、信息不足三类样盘",
+    "双实现一致：产品 TypeScript 实现与本仓 Python 复算在全部样盘及逐年样本上逐行一致"
+  ],
+  "adjudication": {
+    "id": "p1-semantic-adjudication-20260927",
+    "document": "docs/closeout/P1_SEMANTIC_CONTRACT_ADJUDICATION_20260927.md",
+    "commit": "d8c7883cb93e2c28a96aae2f6658e77dbf3dc6a2",
+    "adjudicator": "Claude（claude-opus-5-5），用户 2026-09-27 委托代为裁决，无人工复核",
+    "userInstruction": "原文解释交给你来拍板，不需要人类接入，然后你继续开发"
+  },
+  "sourcePin": {
+    "path": "sources/fulltext",
+    "gitTree": "f296230d0f095eb57a5002e8394913c21f0d2025",
+    "remoteRef": "refs/heads/main",
+    "remoteCommit": "cd41f5b5cd31c107384633da0a75d89626938679",
+    "note": "全文树与远端 main 逐字节相同；本合同的引文可在远端复核。"
+  },
+  "fixture": {
+    "path": "tools/reports/p1-bazi-20260927/semantic-contract-fixture.json",
+    "sha256": "fcb04592107760140cf8fab10d417ce1c193eea351bf90a4d17b1d691256846d",
+    "caseCount": 24,
+    "sampleRows": 4500,
+    "producer": "cosmic-fortune-lab scripts/dump-semantic-contract-fixture.ts（真排盘）"
+  },
+  "sources": {
+    "sanming": "sources/fulltext/bazi/sanming-tonghui/fulltext.md",
+    "ditiansui": "sources/fulltext/bazi/ditiansui-chanwei/fulltext.md"
+  },
+  "anchors": [
+    { "id": "smth-rifan-principle", "source": "sanming", "startLine": 1081, "endLine": 1081, "quote": "日犯歳君災殃必重" },
+    { "id": "smth-rifan-example", "source": "sanming", "startLine": 1081, "endLine": 1081, "quote": "日犯嵗君如甲日尅戊年為偏財" },
+    { "id": "smth-rescue-control", "source": "sanming", "startLine": 1082, "endLine": 1082, "quote": "四柱元有庚申金或大運中亦有将甲木制伏純粹不能尅戊土為有救經云戊巳愁逢甲乙干頭湏要庚辛是也" },
+    { "id": "smth-rescue-combine", "source": "sanming", "startLine": 1082, "endLine": 1082, "quote": "如大運并四柱中有一癸字與戊相合為有情經云壬以癸妹配戊凶為吉兆是也" },
+    { "id": "smth-rescue-ladder", "source": "sanming", "startLine": 1082, "endLine": 1082, "quote": "若二字俱全其年凶反為吉有一字者㐫半二字俱無㓙莫能觧" },
+    { "id": "smth-fire-clause", "source": "sanming", "startLine": 1086, "endLine": 1086, "quote": "柱中無庚辛巳酉丑金局制木丙丁火局焚木者太凶" },
+    { "id": "smth-severity-exception", "source": "sanming", "startLine": 1087, "endLine": 1087, "quote": "大抵日犯嵗君在五陽干則重在五隂干則輕若日干是天月徳太嵗是用神則無咎而反有獲" },
+    { "id": "smth-binglin", "source": "sanming", "startLine": 1084, "endLine": 1084, "quote": "又如甲子流年又是甲子運謂之嵗運并臨獨羊刃七煞為凶財官印綬亦吉經云嵗運并臨災殃立至此指羊刃言也" },
+    { "id": "smth-ganhe", "source": "sanming", "startLine": 1107, "endLine": 1107, "quote": "惟隂見陽陽見隂為合" },
+    { "id": "smth-tiande-table", "source": "sanming", "startLine": 3658, "endLine": 3658, "quote": "正月丁喜亥將忌見癸傷丁二月坤宜戌將忌寅破三月壬宜酉將忌戊傷四月辛宜申將忌丁傷五月乾宜未將忌巳破六月甲宜午將忌庚傷七月癸宜已將忌己傷八月艮宜辰將忌申破九月丙宜卯將忌壬傷十月乙宜寅將忌辛傷十一月巽宜丑將忌亥破十二月庚" },
+    { "id": "smth-yuede-table", "source": "sanming", "startLine": 3659, "endLine": 3659, "quote": "月德寅午戌月丙合辛忌壬傷亥卯未月甲合巳忌庚傷申子辰月壬合丁忌戊傷巳酉丑月庚" },
+    { "id": "smth-yuede-summary", "source": "sanming", "startLine": 1446, "endLine": 1446, "quote": "壬甲丙庚謂之月徳" },
+    { "id": "smth-yangren-luqian", "source": "sanming", "startLine": 1623, "endLine": 1623, "quote": "故羊刃常居祿前一辰" },
+    { "id": "smth-yangren-yang-only", "source": "sanming", "startLine": 3458, "endLine": 3458, "quote": "惟甲丙戊庚壬五陽干有刃乙丁己辛癸五陰干無刃故曰陽刃惟見傷官與陽刃同禍故乙見丙亦謂之刃" },
+    { "id": "smth-yangren-three", "source": "sanming", "startLine": 3459, "endLine": 3459, "quote": "陽刃有三有刼財刃甲見乙是也不利財官格有䕶禄刃甲見卯是也大利歸禄格有背禄刃乙丙是也" },
+    { "id": "smth-daoshi", "source": "sanming", "startLine": 3316, "endLine": 3316, "quote": "倒食即偏印之謂" },
+    { "id": "dts-xiji-premise", "source": "ditiansui", "startLine": 13402, "endLine": 13402, "quote": "看喜行行何运，忌行何运" },
+    { "id": "dts-gaitou", "source": "ditiansui", "startLine": 13421, "endLine": 13421, "quote": "盖干头喜支，运以重支" },
+    { "id": "dts-rifan-strength", "source": "ditiansui", "startLine": 13432, "endLine": 13432, "quote": "日犯岁君，日主旺相无咎，日主休囚必凶" }
+  ],
+  "semanticContracts": {
+    "rizhu_fan_suijun": {
+      "rulings": ["010-1"],
+      "valueDomain": ["是", "否", "信息不足"],
+      "scope": { "layer": "流年", "year": "selected" },
+      "provenance": ["本命", "流年"],
+      "definition": "日干五行克所选流年干五行为是；阳干克其所合之阴干（甲己、丙辛、戊癸、庚乙、壬丁）为信息不足；不相克为否；日干或流年干缺失为信息不足。",
+      "anchors": ["smth-rifan-principle", "smth-rifan-example", "smth-severity-exception", "smth-ganhe"],
+      "fixtures": {
+        "satisfied": { "case": "p010_literal_ji", "year": 2008, "expectedValue": "是" },
+        "not_satisfied": { "case": "p010_not_applicable", "year": 1946, "expectedValue": "否" },
+        "unknown": { "case": "p010_combine_pair", "year": 1955, "expectedValue": "信息不足" }
+      }
+    },
+    "suijun_rescue_control": {
+      "rulings": ["010-2"],
+      "valueDomain": ["成立", "不成立", "不适用", "信息不足"],
+      "scope": { "layer": "流年", "year": "selected" },
+      "provenance": ["本命", "大运"],
+      "definition": "取样干（本命年、月、时干与所选年有效大运干）见克日干之行而不见日干所生之行为成立；两者并见、只见日干所生之行、或只在取样支见克日干之行为信息不足；都不见为不成立；起运前为信息不足；非日犯岁君为不适用。",
+      "anchors": ["smth-rescue-control", "smth-fire-clause"],
+      "fixtures": {
+        "satisfied": { "case": "p010_literal_ji", "year": 2008, "expectedValue": "成立" },
+        "not_satisfied": { "case": "p010_literal_half_combine", "year": 1968, "expectedValue": "不成立" },
+        "unknown": { "case": "p010_literal_unknown", "year": 1998, "expectedValue": "信息不足" }
+      }
+    },
+    "suijun_rescue_combine": {
+      "rulings": ["010-3"],
+      "valueDomain": ["成立", "不成立", "不适用", "信息不足"],
+      "scope": { "layer": "流年", "year": "selected" },
+      "provenance": ["本命", "大运"],
+      "definition": "取样干恰见一个流年干之合干、且不另见与流年同干者为成立；合干两个以上，或恰一个而另见同干者为信息不足；不见合干为不成立；不要求合化；起运前为信息不足；非日犯岁君为不适用。",
+      "anchors": ["smth-rescue-combine", "smth-ganhe"],
+      "fixtures": {
+        "satisfied": { "case": "p010_literal_ji", "year": 2008, "expectedValue": "成立" },
+        "not_satisfied": { "case": "p010_literal_half_control", "year": 1948, "expectedValue": "不成立" },
+        "unknown": { "case": "p010_preluck", "year": 1946, "expectedValue": "信息不足" }
+      }
+    },
+    "rizhu_tianyue_de": {
+      "rulings": ["010-5"],
+      "valueDomain": ["是", "否", "信息不足"],
+      "scope": { "layer": "本命" },
+      "provenance": ["本命"],
+      "definition": "日干为本命月天德（寅丁、辰壬、巳辛、未甲、申癸、戌丙、亥乙、丑庚；卯午酉子为卦位，不落天干）或月德（寅午戌丙、亥卯未甲、申子辰壬、巳酉丑庚）为是；否则为否；日干或月支缺失为信息不足。",
+      "anchors": ["smth-severity-exception", "smth-tiande-table", "smth-yuede-table", "smth-yuede-summary"],
+      "fixtures": {
+        "satisfied": { "case": "p010_tianyue", "expectedValue": "是" },
+        "not_satisfied": { "case": "p010_literal_ji", "expectedValue": "否" },
+        "unknown": { "case": "synthetic_tianyue_missing_month", "expectedValue": "信息不足" }
+      }
+    },
+    "suiyun_binglin_class": {
+      "rulings": ["011-1", "011-2", "011-3"],
+      "valueDomain": ["羊刃七杀", "财官印绶", "其他", "不适用", "信息不足"],
+      "scope": { "layer": "流年", "year": "selected" },
+      "provenance": ["本命", "大运", "流年"],
+      "definition": "仅在所选流年干支与有效大运干支完全相同时分类：并临天干为日干七杀，或阳干日主见并临地支为其陽刃（甲卯、丙午、戊午、庚酉、壬子）且天干不属财官印绶，为羊刃七杀；阳干刃与正偏财、正官、正印并见为信息不足；阴干地支落祿前一辰、天干为劫财、阴干见伤官为刃不确定，天干非七杀即信息不足；无刃无煞而天干为正偏财、正官、正印为财官印绶；其余为其他；未并临为不适用；并临未知或日干缺失为信息不足。",
+      "anchors": ["smth-binglin", "smth-yangren-luqian", "smth-yangren-yang-only", "smth-yangren-three", "smth-daoshi"],
+      "fixtures": {
+        "satisfied": { "case": "p011_sha", "year": 1994, "expectedValue": "羊刃七杀" },
+        "not_satisfied": { "case": "p011_cai", "year": 2004, "expectedValue": "财官印绶" },
+        "unknown": { "case": "p011_uncertain", "year": 1992, "expectedValue": "信息不足" }
+      },
+      "examples": [
+        { "case": "p011_ren", "year": 1987, "expectedValue": "羊刃七杀" },
+        { "case": "p011_other", "year": 2002, "expectedValue": "其他" },
+        { "case": "p011_not", "year": 1946, "expectedValue": "不适用" },
+        { "case": "p011_conflict", "year": 1999, "expectedValue": "信息不足" },
+        { "case": "p011_preluck", "year": 1946, "expectedValue": "信息不足" }
+      ]
+    }
+  },
+  "syntheticCases": {
+    "synthetic_tianyue_missing_month": {
+      "note": "真盘总有月支，信息不足只在输入缺月支时出现；以结构输入直接声明。",
+      "input": { "dayGan": "甲", "monthZhi": null },
+      "expected": { "rizhu_tianyue_de": "信息不足" }
+    }
+  },
+  "rules": [
+    {
+      "ruleId": "SANMINGTONGH-010-L1-JI",
+      "sourceRuleId": "SANMINGTONGH-010",
+      "semanticContractId": "SMTH-010-SUIJUN-20260927",
+      "book": "bazi/sanming-tonghui",
+      "chapter": "论太岁",
+      "topic": "overview",
+      "layer": "流年",
+      "contractPurpose": "fortune_polarity",
+      "label": "吉",
+      "rulings": ["010-1", "010-2", "010-3", "010-4", "010-5"],
+      "quote": "若二字俱全其年凶反為吉",
+      "anchor": { "file": "sources/fulltext/bazi/sanming-tonghui/fulltext.md", "startLine": 1082, "endLine": 1082 },
+      "supportingAnchors": ["smth-rifan-principle", "smth-rescue-control", "smth-rescue-combine", "smth-severity-exception"],
+      "applicableTo": {
+        "all_of": [
+          { "key": "rizhu_fan_suijun", "value": "是", "scope": { "layer": "流年" } },
+          { "key": "rizhu_tianyue_de", "value": "否", "scope": { "layer": "本命" } },
+          { "key": "suijun_rescue_control", "value": "成立", "scope": { "layer": "流年" } },
+          { "key": "suijun_rescue_combine", "value": "成立", "scope": { "layer": "流年" } }
+        ]
+      },
+      "plainSummary": "这一年流年天干被你的日干所克，古书称“日犯岁君”；但原局或大运里既有制住日干的字，又有与流年天干相合的字，按《三命通会·论太岁》的说法，这一年反而转为吉。",
+      "fixtures": {
+        "satisfied": ["p010_literal_ji", "p010_general_ji"],
+        "not_satisfied": ["p010_literal_half_control", "p010_not_applicable", "p010_tianyue"],
+        "unknown": ["p010_literal_unknown", "p010_preluck"]
+      }
+    },
+    {
+      "ruleId": "SANMINGTONGH-010-L1-XIONG",
+      "sourceRuleId": "SANMINGTONGH-010",
+      "semanticContractId": "SMTH-010-SUIJUN-20260927",
+      "book": "bazi/sanming-tonghui",
+      "chapter": "论太岁",
+      "topic": "overview",
+      "layer": "流年",
+      "contractPurpose": "fortune_polarity",
+      "label": "凶",
+      "rulings": ["010-1", "010-2", "010-3", "010-4", "010-5"],
+      "quote": "有一字者㐫半二字俱無㓙莫能觧",
+      "anchor": { "file": "sources/fulltext/bazi/sanming-tonghui/fulltext.md", "startLine": 1082, "endLine": 1082 },
+      "supportingAnchors": ["smth-rifan-principle", "smth-rifan-example", "smth-rescue-control", "smth-rescue-combine", "smth-severity-exception"],
+      "applicableTo": {
+        "all_of": [
+          { "key": "rizhu_fan_suijun", "value": "是", "scope": { "layer": "流年" } },
+          { "key": "rizhu_tianyue_de", "value": "否", "scope": { "layer": "本命" } },
+          {
+            "any_of": [
+              { "key": "suijun_rescue_control", "value": "不成立", "scope": { "layer": "流年" } },
+              { "key": "suijun_rescue_combine", "value": "不成立", "scope": { "layer": "流年" } }
+            ]
+          }
+        ]
+      },
+      "plainSummary": "这一年流年天干被你的日干所克，古书称“日犯岁君”；原局与大运里的救应不齐，按《三命通会·论太岁》的说法，这一年偏凶，宜守不宜进。",
+      "fixtures": {
+        "satisfied": ["p010_literal_half_control", "p010_literal_half_combine", "p010_literal_none", "p010_literal_control_unknown_xiong", "p010_general_xiong", "p010_yin_day_xiong", "p_both_conflict"],
+        "not_satisfied": ["p010_literal_ji", "p010_not_applicable", "p010_tianyue"],
+        "unknown": ["p010_literal_unknown", "p010_preluck", "p010_combine_pair"]
+      }
+    },
+    {
+      "ruleId": "SANMINGTONGH-011-L1-XIONG",
+      "sourceRuleId": "SANMINGTONGH-011",
+      "semanticContractId": "SMTH-011-BINGLIN-20260927",
+      "book": "bazi/sanming-tonghui",
+      "chapter": "论太岁",
+      "topic": "overview",
+      "layer": "流年",
+      "contractPurpose": "fortune_polarity",
+      "label": "凶",
+      "rulings": ["011-1", "011-2", "011-3", "011-4"],
+      "quote": "獨羊刃七煞為凶",
+      "anchor": { "file": "sources/fulltext/bazi/sanming-tonghui/fulltext.md", "startLine": 1084, "endLine": 1084 },
+      "supportingAnchors": ["smth-binglin", "smth-yangren-yang-only", "smth-yangren-three"],
+      "applicableTo": {
+        "all_of": [
+          { "key": "suiyun_binglin", "value": "是", "scope": { "layer": "流年" } },
+          { "key": "suiyun_binglin_class", "value": "羊刃七杀", "scope": { "layer": "流年" } }
+        ]
+      },
+      "plainSummary": "这一年的流年干支与当年大运完全相同，古书称“岁运并临”；这组干支对你的日干是七杀或羊刃，按《三命通会·论太岁》的说法，这一年偏凶。",
+      "fixtures": {
+        "satisfied": ["p011_sha", "p011_ren", "p011_literal_jiazi"],
+        "not_satisfied": ["p011_cai", "p011_other", "p011_not"],
+        "unknown": ["p011_uncertain", "p011_conflict", "p011_preluck"]
+      }
+    },
+    {
+      "ruleId": "SANMINGTONGH-011-L1-JI",
+      "sourceRuleId": "SANMINGTONGH-011",
+      "semanticContractId": "SMTH-011-BINGLIN-20260927",
+      "book": "bazi/sanming-tonghui",
+      "chapter": "论太岁",
+      "topic": "overview",
+      "layer": "流年",
+      "contractPurpose": "fortune_polarity",
+      "label": "吉",
+      "rulings": ["011-1", "011-2", "011-3", "011-4"],
+      "quote": "財官印綬亦吉",
+      "anchor": { "file": "sources/fulltext/bazi/sanming-tonghui/fulltext.md", "startLine": 1084, "endLine": 1084 },
+      "supportingAnchors": ["smth-binglin", "smth-daoshi"],
+      "applicableTo": {
+        "all_of": [
+          { "key": "suiyun_binglin", "value": "是", "scope": { "layer": "流年" } },
+          { "key": "suiyun_binglin_class", "value": "财官印绶", "scope": { "layer": "流年" } }
+        ]
+      },
+      "plainSummary": "这一年的流年干支与当年大运完全相同，古书称“岁运并临”；这组干支对你的日干是财、官或印，按《三命通会·论太岁》的说法，这一年偏吉。",
+      "fixtures": {
+        "satisfied": ["p011_cai", "p_both_conflict"],
+        "not_satisfied": ["p011_sha", "p011_other", "p011_not"],
+        "unknown": ["p011_conflict", "p011_uncertain", "p011_preluck"]
+      }
+    }
+  ],
+  "conflictPolicy": "010 与 011 在同一年给出相反方向时，合同层不裁决先后；样盘 p_both_conflict 即此情形。产品不得择一，按冲突处理。",
+  "excluded": [
+    {
+      "ruleId": "DITIANSUICHA-051",
+      "ruling": "not_l1_eligible",
+      "reason": "每个分支都以喜忌或日主旺衰为前提，原文未给可执行算法；本产品的喜忌与旺衰属 L2 流派口径，L1 不得以 L2 为前提。",
+      "anchors": ["dts-xiji-premise", "dts-gaitou", "dts-rifan-strength"],
+      "reservedKeysRemainPending": ["yongshen_effective", "jishen_empowered"]
+    }
+  ],
+  "supersededRequestKeys": {
+    "note": "2026-09-22 请求中的占位键不改变含义，仍保留、仍 pending、不被本合同消费。",
+    "keys": ["rescue_condition", "transit_effect_semantics", "natal_binglin_class", "natal_favorable_context", "suiyun_binglin_semantics"]
+  },
+  "publication": {
+    "status": "accepted_local_pending_remote_publication",
+    "note": "本合同只在本地分支 claude/l1-semantic-adjudication 提交；推送远端须用户另行授权。全文树未改，引文在远端可复核。"
+  }
+}
