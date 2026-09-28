@@ -1,0 +1,38 @@
+title: "壬学琐记"
+slug: "renxue-suoji"
+system: "san-shi"
+school:
+  - "大六壬"
+source_status: "complete_text"
+source_state_summary: "维基文库固定修订全文已入库（后人按语已移出）；底本未注明，未取得影印、未逐页校勘"
+distillation_allowed: true
+distillation_scope: "可抽取作者亲历的占验记录作样本外占例；理论条目只作参考，不据以直接定算法。"
+
+edition_statement: >-
+  维基文库《壬学琐记》修订 193207（2009-02-08，录入者 Wmrwiki）为唯一取得件，简体录入，
+  页面未注明所据底本。原作清·程树勋撰，前有侄夔光绪七年（1881）跋。原页末“北海闲人按”
+  两条为后人所加人物注释，已移出正文并在 provenance 中保留原文。
+author_attribution:
+  cheng_shuxun: "正文为程树勋随笔所记的见闻与亲历占验（自称“予”“愚按”）。"
+  cheng_kui: "卷首跋署“光绪七年岁次辛巳立夏后五日 侄夔谨跋”。"
+  later_note: "“北海闲人按”为后人注释，不得并称原文。"
+
+source_urls:
+  - "https://zh.wikisource.org/w/index.php?oldid=193207"
+
+license:
+  original_work: "原作公版"
+  transcription: "维基文库录入文本，CC BY-SA（录入时 3.0，页脚现行 4.0）；再利用须署名并以相同方式共享"
+  attribution: "维基文库《壬学琐记》，修订 193207，录入者 Wmrwiki"
+
+local_files:
+  - path: "sources/raw/san-shi/renxue-suoji/wikisource-rev193207-api.json"
+    role: "原始取得件（MediaWiki API 响应，含 revid 与 sha1）"
+  - path: "sources/normalized/san-shi/renxue-suoji/wikisource-rev193207.md"
+    role: "规范化正文（正文行号 = 文件行号 − 4）"
+  - path: "sources/normalized/san-shi/renxue-suoji/wikisource-rev193207.provenance.json"
+    role: "取得记录、转换与移出内容"
+
+risks:
+  - "底本未注明，未经影印逐字校勘"
+  - "简体录入，个别字可能为录入时的简化或误字"

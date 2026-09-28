@@ -1,0 +1,45 @@
+{
+  "version": 1,
+  "bookSlug": "renxue-suoji",
+  "editionId": "wikisource-rev193207",
+  "sourceType": "wikisource-fixed-electronic-reference",
+  "retrievedAt": "2026-09-28T08:40:34+00:00",
+  "pageTitle": "壬学琐记",
+  "pageId": 101815,
+  "revisionId": 193207,
+  "revisionTimestamp": "2009-02-08T21:25:05Z",
+  "contributor": "Wmrwiki",
+  "mediawikiSha1": "8b7e0ab723110db36a73a78c25bcbf3958c9f859",
+  "rawApiFile": "sources/raw/san-shi/renxue-suoji/wikisource-rev193207-api.json",
+  "rawApiSha256": "6afa9bc96ce885fbce092340262d5cbd9c9bb101bd1c9ea20f5f85cb8d87f81f",
+  "normalizedFile": "sources/normalized/san-shi/renxue-suoji/wikisource-rev193207.md",
+  "normalizedSha256": "6617b80de16aaab70af78257e4ec8cca0da232bb17610b9d2e83e5369463d2b1",
+  "bodyLineOffset": 4,
+  "bodyLines": "原页第 1–121 行（共 124 行）",
+  "removed": [
+    {
+      "sourceLines": "122–124",
+      "reason": "“北海闲人按”后人所加人物注释（杨继盛、阮元），不属程树勋原文",
+      "text": [
+        "　　北海闲人按：",
+        "　　杨忠愍公，明臣杨继盛，精于兵事、历算、术数之学，因参劾权奸严嵩被杀，谥忠愍。",
+        "　　阮芸苔公，清臣阮元，字芸苔，历事乾隆、嘉庆、道光三朝，先后任浙江巡抚、两广总督，仕途、学术均有盛名，虽主刻《十三经注疏》。"
+      ]
+    }
+  ],
+  "transformations": [
+    "逐行照录原页第 1–121 行，行序、空行与全角空格缩进不变",
+    "不繁简转换，不校改正文疑字",
+    "移出原页第 122–124 行后人按语；第 24、27 行“愚按”为作者自按，保留"
+  ],
+  "license": {
+    "originalWork": "清·程树勋《壬学琐记》，原作公版",
+    "transcription": "维基文库录入文本，CC BY-SA（录入时 3.0，页脚现行 4.0）；再利用须署名并以相同方式共享",
+    "attribution": "维基文库《壬学琐记》，修订 193207，录入者 Wmrwiki，https://zh.wikisource.org/w/index.php?oldid=193207"
+  },
+  "risks": [
+    "页面未注明所据底本，未经影印逐字校勘",
+    "简体转录，个别字可能为录入时的简化或误字"
+  ],
+  "verified": false
+}
