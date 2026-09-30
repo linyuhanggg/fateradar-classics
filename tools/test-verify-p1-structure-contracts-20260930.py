@@ -32,8 +32,21 @@ class StructureContractsTest(unittest.TestCase):
     def evaluate(self, name):
         return V.evaluate_chart(self.case(name)["facts"], self.contract)
 
+    def pending(self):
+        c = copy.deepcopy(self.original)
+        c["status"], c["verified"], c["fixture"] = "pending_product_fixture", False, None
+        return c
+
     def test_baseline_pending(self):
-        self.assertEqual(V.verify(self.contract)["productFixture"], "pending")
+        self.assertEqual(V.verify(self.pending())["productFixture"], "pending")
+
+    def test_committed_contract_matches_its_declared_state(self):
+        report = V.verify(self.contract)
+        if self.contract["status"] == "accepted":
+            self.assertEqual(report["productFixture"], "verified")
+            self.assertEqual(report["productRows"], self.contract["fixture"]["rowCount"])
+        else:
+            self.assertEqual(report["productFixture"], "pending")
 
     def test_a_changed_quote_rejected(self):
         self.contract["anchors"][0]["quote"] += "錯"
@@ -68,7 +81,7 @@ class StructureContractsTest(unittest.TestCase):
     def test_f_accepted_or_verified_needs_fixture(self):
         for field, value in (("status", "accepted"), ("verified", True)):
             with self.subTest(field=field):
-                c = copy.deepcopy(self.original)
+                c = self.pending()
                 c[field] = value
                 with self.assertRaisesRegex(V.VerificationError, "fixture"):
                     V.verify(c)
@@ -177,6 +190,7 @@ class StructureContractsTest(unittest.TestCase):
 
     def test_dry_run_checks_an_external_fixture_and_writes_nothing(self):
         import tempfile
+        before = V.CONTRACTS.read_bytes()
         with tempfile.TemporaryDirectory() as tmp:
             report_path = Path(tmp) / "report.json"
             original_report, V.REPORT = V.REPORT, report_path
@@ -192,7 +206,7 @@ class StructureContractsTest(unittest.TestCase):
                 self.assertFalse(report_path.exists())
             finally:
                 V.REPORT = original_report
-        self.assertIsNone(json.loads(V.CONTRACTS.read_text(encoding="utf-8"))["fixture"])
+        self.assertEqual(V.CONTRACTS.read_bytes(), before)
 
     def test_semantic_and_anchor_role_mutations_rejected(self):
         for mutation in ("structure", "anchorRole", "display"):

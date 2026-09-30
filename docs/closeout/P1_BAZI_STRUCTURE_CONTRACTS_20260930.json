@@ -3,14 +3,14 @@
   "contractVersion": "p1-bazi-structure-contracts-20260930-v1",
   "art": "bazi",
   "contractPurpose": "structure_statement",
-  "status": "pending_product_fixture",
-  "verified": false,
+  "status": "accepted",
+  "verified": true,
   "verificationMethod": "delegated_adjudication",
   "verificationComponents": [
     "原文锚点逐字校验：每条引文在所钉行内逐字出现",
     "裁决书：docs/closeout/P1_STRUCTURE_CONTRACT_ADJUDICATION_20260930.md 逐条写明疑点、裁决与可执行条件",
     "三态样盘：每条结构合同都有满足、不满足、信息不足三类样盘",
-    "双实现一致：待产品夹具；产品 TypeScript 与本仓 Python 须逐盘一致，完成前不标 accepted 或 verified"
+    "双实现一致：产品 TypeScript（cosmic-fortune-lab b50be4b）与本仓 Python 独立复算在 780 行真排盘夹具（coverage388 388 行、named 2 行、time_removed 390 行）与 29 个合成样盘上逐行一致"
   ],
   "adjudication": {
     "id": "p1-structure-adjudication-20260930",
@@ -740,7 +740,18 @@
       "reason": "388 盘无满足样盘；L435 的“化官”“格成正財”“兼格”与 L452 的“兩相得”超出结构观察，待有正例与扩样再裁。"
     }
   ],
-  "fixture": null,
+  "fixture": {
+    "path": "tools/reports/p1-bazi-20260930/structure-contract-fixture.json",
+    "sha256": "e00d268a84c1e74e7e3aff30ed9a567c899fe97a6df7f2bc9d402149b8ae16fb",
+    "rowCount": 780,
+    "cohorts": {
+      "coverage388": 388,
+      "named": 2,
+      "time_removed": 390
+    },
+    "producer": "cosmic-fortune-lab scripts/eval/dump-structure-contract-fixture.ts（真排盘）",
+    "productCommit": "b50be4b956f5c9be0a04771bf20da1000c87bfa3"
+  },
   "fixtureFormat": {
     "path": "tools/reports/p1-bazi-20260930/structure-contract-fixture.json",
     "sha256": null,

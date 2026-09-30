@@ -1,20 +1,115 @@
 {
   "result": "PASS",
   "contractVersion": "p1-bazi-structure-contracts-20260930-v1",
-  "status": "pending_product_fixture",
-  "verified": false,
+  "status": "accepted",
+  "verified": true,
   "verificationMethod": "delegated_adjudication",
   "sourceCommit": "672aabc0a5fcba04cb1d5fc1d712233dca03d95a",
   "sourceTree": "f296230d0f095eb57a5002e8394913c21f0d2025",
   "adjudicationCommit": "48077232269ded4da1bcee2058603b7f80f9fd79",
-  "productFixture": "pending",
-  "fixtureSha256": null,
-  "productRows": 0,
-  "cohorts": {},
-  "coverage": {},
+  "productFixture": "verified",
+  "fixtureSha256": "e00d268a84c1e74e7e3aff30ed9a567c899fe97a6df7f2bc9d402149b8ae16fb",
+  "productRows": 780,
+  "cohorts": {
+    "coverage388": {
+      "rows": 388,
+      "uniqueCharts": 388,
+      "atLeastOneStatementCharts": 67,
+      "satisfiedStatements": 68,
+      "displayedStatements": 68,
+      "rowsWithProductStatements": 388,
+      "ruleStates": {
+        "SANMINGTONGH-015-L1-STRUCT": {
+          "satisfied": 16,
+          "not_satisfied": 372,
+          "unknown": 0
+        },
+        "SMTH-CHONGJI-ZIWU-L1-STRUCT": {
+          "satisfied": 23,
+          "not_satisfied": 365,
+          "unknown": 0
+        },
+        "SMTH-CHONGJI-MAOYOU-L1-STRUCT": {
+          "satisfied": 27,
+          "not_satisfied": 361,
+          "unknown": 0
+        },
+        "ZPR-P1-01-L1-STRUCT": {
+          "satisfied": 2,
+          "not_satisfied": 386,
+          "unknown": 0
+        }
+      }
+    },
+    "named": {
+      "rows": 2,
+      "uniqueCharts": 2,
+      "atLeastOneStatementCharts": 2,
+      "satisfiedStatements": 4,
+      "displayedStatements": 3,
+      "rowsWithProductStatements": 2,
+      "ruleStates": {
+        "SANMINGTONGH-015-L1-STRUCT": {
+          "satisfied": 1,
+          "not_satisfied": 1,
+          "unknown": 0
+        },
+        "SMTH-CHONGJI-ZIWU-L1-STRUCT": {
+          "satisfied": 1,
+          "not_satisfied": 1,
+          "unknown": 0
+        },
+        "SMTH-CHONGJI-MAOYOU-L1-STRUCT": {
+          "satisfied": 0,
+          "not_satisfied": 2,
+          "unknown": 0
+        },
+        "ZPR-P1-01-L1-STRUCT": {
+          "satisfied": 2,
+          "not_satisfied": 0,
+          "unknown": 0
+        }
+      }
+    },
+    "time_removed": {
+      "rows": 390,
+      "uniqueCharts": 390,
+      "atLeastOneStatementCharts": 41,
+      "satisfiedStatements": 42,
+      "displayedStatements": 42,
+      "rowsWithProductStatements": 390,
+      "ruleStates": {
+        "SANMINGTONGH-015-L1-STRUCT": {
+          "satisfied": 6,
+          "not_satisfied": 213,
+          "unknown": 171
+        },
+        "SMTH-CHONGJI-ZIWU-L1-STRUCT": {
+          "satisfied": 15,
+          "not_satisfied": 233,
+          "unknown": 142
+        },
+        "SMTH-CHONGJI-MAOYOU-L1-STRUCT": {
+          "satisfied": 18,
+          "not_satisfied": 225,
+          "unknown": 147
+        },
+        "ZPR-P1-01-L1-STRUCT": {
+          "satisfied": 3,
+          "not_satisfied": 383,
+          "unknown": 4
+        }
+      }
+    }
+  },
+  "coverage": {
+    "uniqueCharts": 390,
+    "atLeastOneStatementCharts": 69,
+    "deduplicationKey": "id"
+  },
   "syntheticCases": 29,
   "anchors": 19,
-  "checks": 910,
+  "checks": 42361,
   "syntheticResults": {
     "R1_cap": {
       "results": {
