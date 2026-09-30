@@ -1,0 +1,1975 @@
+{
+  "result": "PASS",
+  "contractVersion": "p1-bazi-structure-contracts-20260930-v1",
+  "status": "pending_product_fixture",
+  "verified": false,
+  "verificationMethod": "delegated_adjudication",
+  "sourceCommit": "672aabc0a5fcba04cb1d5fc1d712233dca03d95a",
+  "sourceTree": "f296230d0f095eb57a5002e8394913c21f0d2025",
+  "adjudicationCommit": "48077232269ded4da1bcee2058603b7f80f9fd79",
+  "productFixture": "pending",
+  "fixtureSha256": null,
+  "productRows": 0,
+  "cohorts": {},
+  "coverage": {},
+  "syntheticCases": 29,
+  "anchors": 19,
+  "checks": 910,
+  "syntheticResults": {
+    "R1_cap": {
+      "results": {
+        "SANMINGTONGH-015-L1-STRUCT": {
+          "ruleId": "SANMINGTONGH-015-L1-STRUCT",
+          "semanticContractId": "SMTH-015-SANHE-20260930",
+          "state": "satisfied",
+          "positions": {
+            "申": [
+              "year"
+            ],
+            "子": [
+              "day"
+            ],
+            "辰": [
+              "month"
+            ]
+          },
+          "displayed": true,
+          "verificationMethod": "delegated_adjudication",
+          "sourceCommit": "672aabc0a5fcba04cb1d5fc1d712233dca03d95a",
+          "adjudicationCommit": "48077232269ded4da1bcee2058603b7f80f9fd79"
+        },
+        "SMTH-CHONGJI-ZIWU-L1-STRUCT": {
+          "ruleId": "SMTH-CHONGJI-ZIWU-L1-STRUCT",
+          "semanticContractId": "SMTH-CHONGJI-ZIWU-20260930",
+          "state": "satisfied",
+          "positions": {
+            "子": [
+              "day"
+            ],
+            "午": [
+              "time"
+            ]
+          },
+          "displayed": true,
+          "verificationMethod": "delegated_adjudication",
+          "sourceCommit": "672aabc0a5fcba04cb1d5fc1d712233dca03d95a",
+          "adjudicationCommit": "48077232269ded4da1bcee2058603b7f80f9fd79"
+        },
+        "SMTH-CHONGJI-MAOYOU-L1-STRUCT": {
+          "ruleId": "SMTH-CHONGJI-MAOYOU-L1-STRUCT",
+          "semanticContractId": "SMTH-CHONGJI-MAOYOU-20260930",
+          "state": "not_satisfied",
+          "displayed": false,
+          "verificationMethod": "delegated_adjudication",
+          "sourceCommit": "672aabc0a5fcba04cb1d5fc1d712233dca03d95a",
+          "adjudicationCommit": "48077232269ded4da1bcee2058603b7f80f9fd79",
+          "notDisplayedReason": "not_satisfied"
+        },
+        "ZPR-P1-01-L1-STRUCT": {
+          "ruleId": "ZPR-P1-01-L1-STRUCT",
+          "semanticContractId": "ZPR-P1-01-TOUWU-20260930",
+          "state": "satisfied",
+          "positions": {
+            "戊": [
+              "year"
+            ]
+          },
+          "displayed": false,
+          "verificationMethod": "delegated_adjudication",
+          "sourceCommit": "672aabc0a5fcba04cb1d5fc1d712233dca03d95a",
+          "adjudicationCommit": "48077232269ded4da1bcee2058603b7f80f9fd79",
+          "notDisplayedReason": "display_cap"
+        }
+      },
+      "display": [
+        "SANMINGTONGH-015-L1-STRUCT",
+        "SMTH-CHONGJI-ZIWU-L1-STRUCT"
+      ],
+      "statements": [
+        "你的盘里申在年柱、子在日柱、辰在月柱，三字齐全；《三命通会·论支元三合》称申子辰为水局，并说三字缺一就不能按三合论。",
+        "你的盘里子在日柱、午在时柱，从子数到午是七位；《三命通会·论冲击》说地支取七位为冲，并举子午为对冲之例。"
+      ],
+      "rendered": {
+        "SANMINGTONGH-015-L1-STRUCT": {
+          "statement": "你的盘里申在年柱、子在日柱、辰在月柱，三字齐全；《三命通会·论支元三合》称申子辰为水局，并说三字缺一就不能按三合论。",
+          "fold": "《三命通会·论支元三合》说申是水生之地、子是水旺之地、辰是水库之地，所以称水局；又说三字缺一就不能按三合化局论。这里只说三字齐全，不说局已化成。"
+        },
+        "SMTH-CHONGJI-ZIWU-L1-STRUCT": {
+          "statement": "你的盘里子在日柱、午在时柱，从子数到午是七位；《三命通会·论冲击》说地支取七位为冲，并举子午为对冲之例。",
+          "fold": "《三命通会·论冲击》：地支取七位为冲，如子午对冲，子至午七数。同篇后文另讲冲的各种情形与轻重，这里只说两字的位置，不据此下判断。另一本书的称呼：《滴天髓阐微·知命》把子午对应为坎离（水火）。"
+        },
+        "ZPR-P1-01-L1-STRUCT": {
+          "statement": "你是甲日生在辰月，辰中的戊字露在年柱的天干，与《子平真诠》论杂气一篇所举的写法一致。",
+          "fold": "《子平真诠》论杂气一篇举甲日辰月为例，说‘透戊则用偏财’；同篇也说要取其清者、看配合是否有情。这里只说盘上结构，不据此下判断。"
+        }
+      }
+    },
+    "R2_hour_wu": {
+      "results": {
+        "SANMINGTONGH-015-L1-STRUCT": {
+          "ruleId": "SANMINGTONGH-015-L1-STRUCT",
+          "semanticContractId": "SMTH-015-SANHE-20260930",
+          "state": "not_satisfied",
+          "displayed": false,
+          "verificationMethod": "delegated_adjudication",
+          "sourceCommit": "672aabc0a5fcba04cb1d5fc1d712233dca03d95a",
+          "adjudicationCommit": "48077232269ded4da1bcee2058603b7f80f9fd79",
+          "notDisplayedReason": "not_satisfied"
+        },
+        "SMTH-CHONGJI-ZIWU-L1-STRUCT": {
+          "ruleId": "SMTH-CHONGJI-ZIWU-L1-STRUCT",
+          "semanticContractId": "SMTH-CHONGJI-ZIWU-20260930",
+          "state": "not_satisfied",
+          "displayed": false,
+          "verificationMethod": "delegated_adjudication",
+          "sourceCommit": "672aabc0a5fcba04cb1d5fc1d712233dca03d95a",
+          "adjudicationCommit": "48077232269ded4da1bcee2058603b7f80f9fd79",
+          "notDisplayedReason": "not_satisfied"
+        },
+        "SMTH-CHONGJI-MAOYOU-L1-STRUCT": {
+          "ruleId": "SMTH-CHONGJI-MAOYOU-L1-STRUCT",
+          "semanticContractId": "SMTH-CHONGJI-MAOYOU-20260930",
+          "state": "not_satisfied",
+          "displayed": false,
+          "verificationMethod": "delegated_adjudication",
+          "sourceCommit": "672aabc0a5fcba04cb1d5fc1d712233dca03d95a",
+          "adjudicationCommit": "48077232269ded4da1bcee2058603b7f80f9fd79",
+          "notDisplayedReason": "not_satisfied"
+        },
+        "ZPR-P1-01-L1-STRUCT": {
+          "ruleId": "ZPR-P1-01-L1-STRUCT",
+          "semanticContractId": "ZPR-P1-01-TOUWU-20260930",
+          "state": "satisfied",
+          "positions": {
+            "戊": [
+              "time"
+            ]
+          },
+          "displayed": true,
+          "verificationMethod": "delegated_adjudication",
+          "sourceCommit": "672aabc0a5fcba04cb1d5fc1d712233dca03d95a",
+          "adjudicationCommit": "48077232269ded4da1bcee2058603b7f80f9fd79"
+        }
+      },
+      "display": [
+        "ZPR-P1-01-L1-STRUCT"
+      ],
+      "statements": [
+        "你是甲日生在辰月，辰中的戊字露在时柱的天干，与《子平真诠》论杂气一篇所举的写法一致。"
+      ],
+      "rendered": {
+        "ZPR-P1-01-L1-STRUCT": {
+          "statement": "你是甲日生在辰月，辰中的戊字露在时柱的天干，与《子平真诠》论杂气一篇所举的写法一致。",
+          "fold": "《子平真诠》论杂气一篇举甲日辰月为例，说‘透戊则用偏财’；同篇也说要取其清者、看配合是否有情。这里只说盘上结构，不据此下判断。"
+        }
+      }
+    },
+    "R2_time_removed": {
+      "results": {
+        "SANMINGTONGH-015-L1-STRUCT": {
+          "ruleId": "SANMINGTONGH-015-L1-STRUCT",
+          "semanticContractId": "SMTH-015-SANHE-20260930",
+          "state": "not_satisfied",
+          "displayed": false,
+          "verificationMethod": "delegated_adjudication",
+          "sourceCommit": "672aabc0a5fcba04cb1d5fc1d712233dca03d95a",
+          "adjudicationCommit": "48077232269ded4da1bcee2058603b7f80f9fd79",
+          "notDisplayedReason": "not_satisfied"
+        },
+        "SMTH-CHONGJI-ZIWU-L1-STRUCT": {
+          "ruleId": "SMTH-CHONGJI-ZIWU-L1-STRUCT",
+          "semanticContractId": "SMTH-CHONGJI-ZIWU-20260930",
+          "state": "unknown",
+          "unknownPillars": [
+            "time"
+          ],
+          "missingKeys": [
+            {
+              "key": "zhi",
+              "pillar": "time"
+            }
+          ],
+          "displayed": false,
+          "verificationMethod": "delegated_adjudication",
+          "sourceCommit": "672aabc0a5fcba04cb1d5fc1d712233dca03d95a",
+          "adjudicationCommit": "48077232269ded4da1bcee2058603b7f80f9fd79",
+          "notDisplayedReason": "unknown"
+        },
+        "SMTH-CHONGJI-MAOYOU-L1-STRUCT": {
+          "ruleId": "SMTH-CHONGJI-MAOYOU-L1-STRUCT",
+          "semanticContractId": "SMTH-CHONGJI-MAOYOU-20260930",
+          "state": "not_satisfied",
+          "displayed": false,
+          "verificationMethod": "delegated_adjudication",
+          "sourceCommit": "672aabc0a5fcba04cb1d5fc1d712233dca03d95a",
+          "adjudicationCommit": "48077232269ded4da1bcee2058603b7f80f9fd79",
+          "notDisplayedReason": "not_satisfied"
+        },
+        "ZPR-P1-01-L1-STRUCT": {
+          "ruleId": "ZPR-P1-01-L1-STRUCT",
+          "semanticContractId": "ZPR-P1-01-TOUWU-20260930",
+          "state": "unknown",
+          "unknownPillars": [
+            "time"
+          ],
+          "missingKeys": [
+            {
+              "key": "gan",
+              "pillar": "time"
+            }
+          ],
+          "displayed": false,
+          "verificationMethod": "delegated_adjudication",
+          "sourceCommit": "672aabc0a5fcba04cb1d5fc1d712233dca03d95a",
+          "adjudicationCommit": "48077232269ded4da1bcee2058603b7f80f9fd79",
+          "notDisplayedReason": "unknown"
+        }
+      },
+      "display": [],
+      "statements": [],
+      "rendered": {}
+    },
+    "sanhe_two_time_missing": {
+      "results": {
+        "SANMINGTONGH-015-L1-STRUCT": {
+          "ruleId": "SANMINGTONGH-015-L1-STRUCT",
+          "semanticContractId": "SMTH-015-SANHE-20260930",
+          "state": "unknown",
+          "unknownPillars": [
+            "time"
+          ],
+          "missingKeys": [
+            {
+              "key": "zhi",
+              "pillar": "time"
+            }
+          ],
+          "displayed": false,
+          "verificationMethod": "delegated_adjudication",
+          "sourceCommit": "672aabc0a5fcba04cb1d5fc1d712233dca03d95a",
+          "adjudicationCommit": "48077232269ded4da1bcee2058603b7f80f9fd79",
+          "notDisplayedReason": "unknown"
+        },
+        "SMTH-CHONGJI-ZIWU-L1-STRUCT": {
+          "ruleId": "SMTH-CHONGJI-ZIWU-L1-STRUCT",
+          "semanticContractId": "SMTH-CHONGJI-ZIWU-20260930",
+          "state": "unknown",
+          "unknownPillars": [
+            "time"
+          ],
+          "missingKeys": [
+            {
+              "key": "zhi",
+              "pillar": "time"
+            }
+          ],
+          "displayed": false,
+          "verificationMethod": "delegated_adjudication",
+          "sourceCommit": "672aabc0a5fcba04cb1d5fc1d712233dca03d95a",
+          "adjudicationCommit": "48077232269ded4da1bcee2058603b7f80f9fd79",
+          "notDisplayedReason": "unknown"
+        },
+        "SMTH-CHONGJI-MAOYOU-L1-STRUCT": {
+          "ruleId": "SMTH-CHONGJI-MAOYOU-L1-STRUCT",
+          "semanticContractId": "SMTH-CHONGJI-MAOYOU-20260930",
+          "state": "unknown",
+          "unknownPillars": [
+            "time"
+          ],
+          "missingKeys": [
+            {
+              "key": "zhi",
+              "pillar": "time"
+            }
+          ],
+          "displayed": false,
+          "verificationMethod": "delegated_adjudication",
+          "sourceCommit": "672aabc0a5fcba04cb1d5fc1d712233dca03d95a",
+          "adjudicationCommit": "48077232269ded4da1bcee2058603b7f80f9fd79",
+          "notDisplayedReason": "unknown"
+        },
+        "ZPR-P1-01-L1-STRUCT": {
+          "ruleId": "ZPR-P1-01-L1-STRUCT",
+          "semanticContractId": "ZPR-P1-01-TOUWU-20260930",
+          "state": "not_satisfied",
+          "displayed": false,
+          "verificationMethod": "delegated_adjudication",
+          "sourceCommit": "672aabc0a5fcba04cb1d5fc1d712233dca03d95a",
+          "adjudicationCommit": "48077232269ded4da1bcee2058603b7f80f9fd79",
+          "notDisplayedReason": "not_satisfied"
+        }
+      },
+      "display": [],
+      "statements": [],
+      "rendered": {}
+    },
+    "sanhe_one_time_missing": {
+      "results": {
+        "SANMINGTONGH-015-L1-STRUCT": {
+          "ruleId": "SANMINGTONGH-015-L1-STRUCT",
+          "semanticContractId": "SMTH-015-SANHE-20260930",
+          "state": "not_satisfied",
+          "displayed": false,
+          "verificationMethod": "delegated_adjudication",
+          "sourceCommit": "672aabc0a5fcba04cb1d5fc1d712233dca03d95a",
+          "adjudicationCommit": "48077232269ded4da1bcee2058603b7f80f9fd79",
+          "notDisplayedReason": "not_satisfied"
+        },
+        "SMTH-CHONGJI-ZIWU-L1-STRUCT": {
+          "ruleId": "SMTH-CHONGJI-ZIWU-L1-STRUCT",
+          "semanticContractId": "SMTH-CHONGJI-ZIWU-20260930",
+          "state": "not_satisfied",
+          "displayed": false,
+          "verificationMethod": "delegated_adjudication",
+          "sourceCommit": "672aabc0a5fcba04cb1d5fc1d712233dca03d95a",
+          "adjudicationCommit": "48077232269ded4da1bcee2058603b7f80f9fd79",
+          "notDisplayedReason": "not_satisfied"
+        },
+        "SMTH-CHONGJI-MAOYOU-L1-STRUCT": {
+          "ruleId": "SMTH-CHONGJI-MAOYOU-L1-STRUCT",
+          "semanticContractId": "SMTH-CHONGJI-MAOYOU-20260930",
+          "state": "not_satisfied",
+          "displayed": false,
+          "verificationMethod": "delegated_adjudication",
+          "sourceCommit": "672aabc0a5fcba04cb1d5fc1d712233dca03d95a",
+          "adjudicationCommit": "48077232269ded4da1bcee2058603b7f80f9fd79",
+          "notDisplayedReason": "not_satisfied"
+        },
+        "ZPR-P1-01-L1-STRUCT": {
+          "ruleId": "ZPR-P1-01-L1-STRUCT",
+          "semanticContractId": "ZPR-P1-01-TOUWU-20260930",
+          "state": "not_satisfied",
+          "displayed": false,
+          "verificationMethod": "delegated_adjudication",
+          "sourceCommit": "672aabc0a5fcba04cb1d5fc1d712233dca03d95a",
+          "adjudicationCommit": "48077232269ded4da1bcee2058603b7f80f9fd79",
+          "notDisplayedReason": "not_satisfied"
+        }
+      },
+      "display": [],
+      "statements": [],
+      "rendered": {}
+    },
+    "sanhe_repeated_shen": {
+      "results": {
+        "SANMINGTONGH-015-L1-STRUCT": {
+          "ruleId": "SANMINGTONGH-015-L1-STRUCT",
+          "semanticContractId": "SMTH-015-SANHE-20260930",
+          "state": "satisfied",
+          "positions": {
+            "申": [
+              "year",
+              "month"
+            ],
+            "子": [
+              "day"
+            ],
+            "辰": [
+              "time"
+            ]
+          },
+          "displayed": true,
+          "verificationMethod": "delegated_adjudication",
+          "sourceCommit": "672aabc0a5fcba04cb1d5fc1d712233dca03d95a",
+          "adjudicationCommit": "48077232269ded4da1bcee2058603b7f80f9fd79"
+        },
+        "SMTH-CHONGJI-ZIWU-L1-STRUCT": {
+          "ruleId": "SMTH-CHONGJI-ZIWU-L1-STRUCT",
+          "semanticContractId": "SMTH-CHONGJI-ZIWU-20260930",
+          "state": "not_satisfied",
+          "displayed": false,
+          "verificationMethod": "delegated_adjudication",
+          "sourceCommit": "672aabc0a5fcba04cb1d5fc1d712233dca03d95a",
+          "adjudicationCommit": "48077232269ded4da1bcee2058603b7f80f9fd79",
+          "notDisplayedReason": "not_satisfied"
+        },
+        "SMTH-CHONGJI-MAOYOU-L1-STRUCT": {
+          "ruleId": "SMTH-CHONGJI-MAOYOU-L1-STRUCT",
+          "semanticContractId": "SMTH-CHONGJI-MAOYOU-20260930",
+          "state": "not_satisfied",
+          "displayed": false,
+          "verificationMethod": "delegated_adjudication",
+          "sourceCommit": "672aabc0a5fcba04cb1d5fc1d712233dca03d95a",
+          "adjudicationCommit": "48077232269ded4da1bcee2058603b7f80f9fd79",
+          "notDisplayedReason": "not_satisfied"
+        },
+        "ZPR-P1-01-L1-STRUCT": {
+          "ruleId": "ZPR-P1-01-L1-STRUCT",
+          "semanticContractId": "ZPR-P1-01-TOUWU-20260930",
+          "state": "not_satisfied",
+          "displayed": false,
+          "verificationMethod": "delegated_adjudication",
+          "sourceCommit": "672aabc0a5fcba04cb1d5fc1d712233dca03d95a",
+          "adjudicationCommit": "48077232269ded4da1bcee2058603b7f80f9fd79",
+          "notDisplayedReason": "not_satisfied"
+        }
+      },
+      "display": [
+        "SANMINGTONGH-015-L1-STRUCT"
+      ],
+      "statements": [
+        "你的盘里申在年柱和月柱、子在日柱、辰在时柱，三字齐全；《三命通会·论支元三合》称申子辰为水局，并说三字缺一就不能按三合论。"
+      ],
+      "rendered": {
+        "SANMINGTONGH-015-L1-STRUCT": {
+          "statement": "你的盘里申在年柱和月柱、子在日柱、辰在时柱，三字齐全；《三命通会·论支元三合》称申子辰为水局，并说三字缺一就不能按三合论。",
+          "fold": "《三命通会·论支元三合》说申是水生之地、子是水旺之地、辰是水库之地，所以称水局；又说三字缺一就不能按三合化局论。这里只说三字齐全，不说局已化成。"
+        }
+      }
+    },
+    "sanhe_metal": {
+      "results": {
+        "SANMINGTONGH-015-L1-STRUCT": {
+          "ruleId": "SANMINGTONGH-015-L1-STRUCT",
+          "semanticContractId": "SMTH-015-SANHE-20260930",
+          "state": "satisfied",
+          "positions": {
+            "巳": [
+              "year"
+            ],
+            "酉": [
+              "month"
+            ],
+            "丑": [
+              "day",
+              "time"
+            ]
+          },
+          "displayed": true,
+          "verificationMethod": "delegated_adjudication",
+          "sourceCommit": "672aabc0a5fcba04cb1d5fc1d712233dca03d95a",
+          "adjudicationCommit": "48077232269ded4da1bcee2058603b7f80f9fd79"
+        },
+        "SMTH-CHONGJI-ZIWU-L1-STRUCT": {
+          "ruleId": "SMTH-CHONGJI-ZIWU-L1-STRUCT",
+          "semanticContractId": "SMTH-CHONGJI-ZIWU-20260930",
+          "state": "not_satisfied",
+          "displayed": false,
+          "verificationMethod": "delegated_adjudication",
+          "sourceCommit": "672aabc0a5fcba04cb1d5fc1d712233dca03d95a",
+          "adjudicationCommit": "48077232269ded4da1bcee2058603b7f80f9fd79",
+          "notDisplayedReason": "not_satisfied"
+        },
+        "SMTH-CHONGJI-MAOYOU-L1-STRUCT": {
+          "ruleId": "SMTH-CHONGJI-MAOYOU-L1-STRUCT",
+          "semanticContractId": "SMTH-CHONGJI-MAOYOU-20260930",
+          "state": "not_satisfied",
+          "displayed": false,
+          "verificationMethod": "delegated_adjudication",
+          "sourceCommit": "672aabc0a5fcba04cb1d5fc1d712233dca03d95a",
+          "adjudicationCommit": "48077232269ded4da1bcee2058603b7f80f9fd79",
+          "notDisplayedReason": "not_satisfied"
+        },
+        "ZPR-P1-01-L1-STRUCT": {
+          "ruleId": "ZPR-P1-01-L1-STRUCT",
+          "semanticContractId": "ZPR-P1-01-TOUWU-20260930",
+          "state": "not_satisfied",
+          "displayed": false,
+          "verificationMethod": "delegated_adjudication",
+          "sourceCommit": "672aabc0a5fcba04cb1d5fc1d712233dca03d95a",
+          "adjudicationCommit": "48077232269ded4da1bcee2058603b7f80f9fd79",
+          "notDisplayedReason": "not_satisfied"
+        }
+      },
+      "display": [
+        "SANMINGTONGH-015-L1-STRUCT"
+      ],
+      "statements": [
+        "你的盘里巳在年柱、酉在月柱、丑在日柱和时柱，三字齐全，是《三命通会·论支元三合》所列三合的一组；书中也说三字缺一就不能按三合论。"
+      ],
+      "rendered": {
+        "SANMINGTONGH-015-L1-STRUCT": {
+          "statement": "你的盘里巳在年柱、酉在月柱、丑在日柱和时柱，三字齐全，是《三命通会·论支元三合》所列三合的一组；书中也说三字缺一就不能按三合论。",
+          "fold": "《三命通会·论支元三合》只对申子辰写明水局，其余三组以‘皆然’带过；按同篇所说生、旺、库的道理，巳酉丑对应金——这是按同篇道理推算的，这一篇没有直接写出。这里只说三字齐全，不说局已化成。"
+        }
+      }
+    },
+    "sanhe_fire": {
+      "results": {
+        "SANMINGTONGH-015-L1-STRUCT": {
+          "ruleId": "SANMINGTONGH-015-L1-STRUCT",
+          "semanticContractId": "SMTH-015-SANHE-20260930",
+          "state": "satisfied",
+          "positions": {
+            "寅": [
+              "year"
+            ],
+            "午": [
+              "month"
+            ],
+            "戌": [
+              "day"
+            ]
+          },
+          "displayed": true,
+          "verificationMethod": "delegated_adjudication",
+          "sourceCommit": "672aabc0a5fcba04cb1d5fc1d712233dca03d95a",
+          "adjudicationCommit": "48077232269ded4da1bcee2058603b7f80f9fd79"
+        },
+        "SMTH-CHONGJI-ZIWU-L1-STRUCT": {
+          "ruleId": "SMTH-CHONGJI-ZIWU-L1-STRUCT",
+          "semanticContractId": "SMTH-CHONGJI-ZIWU-20260930",
+          "state": "not_satisfied",
+          "displayed": false,
+          "verificationMethod": "delegated_adjudication",
+          "sourceCommit": "672aabc0a5fcba04cb1d5fc1d712233dca03d95a",
+          "adjudicationCommit": "48077232269ded4da1bcee2058603b7f80f9fd79",
+          "notDisplayedReason": "not_satisfied"
+        },
+        "SMTH-CHONGJI-MAOYOU-L1-STRUCT": {
+          "ruleId": "SMTH-CHONGJI-MAOYOU-L1-STRUCT",
+          "semanticContractId": "SMTH-CHONGJI-MAOYOU-20260930",
+          "state": "not_satisfied",
+          "displayed": false,
+          "verificationMethod": "delegated_adjudication",
+          "sourceCommit": "672aabc0a5fcba04cb1d5fc1d712233dca03d95a",
+          "adjudicationCommit": "48077232269ded4da1bcee2058603b7f80f9fd79",
+          "notDisplayedReason": "not_satisfied"
+        },
+        "ZPR-P1-01-L1-STRUCT": {
+          "ruleId": "ZPR-P1-01-L1-STRUCT",
+          "semanticContractId": "ZPR-P1-01-TOUWU-20260930",
+          "state": "not_satisfied",
+          "displayed": false,
+          "verificationMethod": "delegated_adjudication",
+          "sourceCommit": "672aabc0a5fcba04cb1d5fc1d712233dca03d95a",
+          "adjudicationCommit": "48077232269ded4da1bcee2058603b7f80f9fd79",
+          "notDisplayedReason": "not_satisfied"
+        }
+      },
+      "display": [
+        "SANMINGTONGH-015-L1-STRUCT"
+      ],
+      "statements": [
+        "你的盘里寅在年柱、午在月柱、戌在日柱，三字齐全，是《三命通会·论支元三合》所列三合的一组；书中也说三字缺一就不能按三合论。"
+      ],
+      "rendered": {
+        "SANMINGTONGH-015-L1-STRUCT": {
+          "statement": "你的盘里寅在年柱、午在月柱、戌在日柱，三字齐全，是《三命通会·论支元三合》所列三合的一组；书中也说三字缺一就不能按三合论。",
+          "fold": "《三命通会·论支元三合》只对申子辰写明水局，其余三组以‘皆然’带过；按同篇所说生、旺、库的道理，寅午戌对应火——这是按同篇道理推算的，这一篇没有直接写出。这里只说三字齐全，不说局已化成。"
+        }
+      }
+    },
+    "sanhe_wood": {
+      "results": {
+        "SANMINGTONGH-015-L1-STRUCT": {
+          "ruleId": "SANMINGTONGH-015-L1-STRUCT",
+          "semanticContractId": "SMTH-015-SANHE-20260930",
+          "state": "satisfied",
+          "positions": {
+            "亥": [
+              "year"
+            ],
+            "卯": [
+              "month"
+            ],
+            "未": [
+              "day"
+            ]
+          },
+          "displayed": true,
+          "verificationMethod": "delegated_adjudication",
+          "sourceCommit": "672aabc0a5fcba04cb1d5fc1d712233dca03d95a",
+          "adjudicationCommit": "48077232269ded4da1bcee2058603b7f80f9fd79"
+        },
+        "SMTH-CHONGJI-ZIWU-L1-STRUCT": {
+          "ruleId": "SMTH-CHONGJI-ZIWU-L1-STRUCT",
+          "semanticContractId": "SMTH-CHONGJI-ZIWU-20260930",
+          "state": "not_satisfied",
+          "displayed": false,
+          "verificationMethod": "delegated_adjudication",
+          "sourceCommit": "672aabc0a5fcba04cb1d5fc1d712233dca03d95a",
+          "adjudicationCommit": "48077232269ded4da1bcee2058603b7f80f9fd79",
+          "notDisplayedReason": "not_satisfied"
+        },
+        "SMTH-CHONGJI-MAOYOU-L1-STRUCT": {
+          "ruleId": "SMTH-CHONGJI-MAOYOU-L1-STRUCT",
+          "semanticContractId": "SMTH-CHONGJI-MAOYOU-20260930",
+          "state": "not_satisfied",
+          "displayed": false,
+          "verificationMethod": "delegated_adjudication",
+          "sourceCommit": "672aabc0a5fcba04cb1d5fc1d712233dca03d95a",
+          "adjudicationCommit": "48077232269ded4da1bcee2058603b7f80f9fd79",
+          "notDisplayedReason": "not_satisfied"
+        },
+        "ZPR-P1-01-L1-STRUCT": {
+          "ruleId": "ZPR-P1-01-L1-STRUCT",
+          "semanticContractId": "ZPR-P1-01-TOUWU-20260930",
+          "state": "not_satisfied",
+          "displayed": false,
+          "verificationMethod": "delegated_adjudication",
+          "sourceCommit": "672aabc0a5fcba04cb1d5fc1d712233dca03d95a",
+          "adjudicationCommit": "48077232269ded4da1bcee2058603b7f80f9fd79",
+          "notDisplayedReason": "not_satisfied"
+        }
+      },
+      "display": [
+        "SANMINGTONGH-015-L1-STRUCT"
+      ],
+      "statements": [
+        "你的盘里亥在年柱、卯在月柱、未在日柱，三字齐全，是《三命通会·论支元三合》所列三合的一组；书中也说三字缺一就不能按三合论。"
+      ],
+      "rendered": {
+        "SANMINGTONGH-015-L1-STRUCT": {
+          "statement": "你的盘里亥在年柱、卯在月柱、未在日柱，三字齐全，是《三命通会·论支元三合》所列三合的一组；书中也说三字缺一就不能按三合论。",
+          "fold": "《三命通会·论支元三合》只对申子辰写明水局，其余三组以‘皆然’带过；按同篇所说生、旺、库的道理，亥卯未对应木——这是按同篇道理推算的，这一篇没有直接写出。这里只说三字齐全，不说局已化成。"
+        }
+      }
+    },
+    "known_none": {
+      "results": {
+        "SANMINGTONGH-015-L1-STRUCT": {
+          "ruleId": "SANMINGTONGH-015-L1-STRUCT",
+          "semanticContractId": "SMTH-015-SANHE-20260930",
+          "state": "not_satisfied",
+          "displayed": false,
+          "verificationMethod": "delegated_adjudication",
+          "sourceCommit": "672aabc0a5fcba04cb1d5fc1d712233dca03d95a",
+          "adjudicationCommit": "48077232269ded4da1bcee2058603b7f80f9fd79",
+          "notDisplayedReason": "not_satisfied"
+        },
+        "SMTH-CHONGJI-ZIWU-L1-STRUCT": {
+          "ruleId": "SMTH-CHONGJI-ZIWU-L1-STRUCT",
+          "semanticContractId": "SMTH-CHONGJI-ZIWU-20260930",
+          "state": "not_satisfied",
+          "displayed": false,
+          "verificationMethod": "delegated_adjudication",
+          "sourceCommit": "672aabc0a5fcba04cb1d5fc1d712233dca03d95a",
+          "adjudicationCommit": "48077232269ded4da1bcee2058603b7f80f9fd79",
+          "notDisplayedReason": "not_satisfied"
+        },
+        "SMTH-CHONGJI-MAOYOU-L1-STRUCT": {
+          "ruleId": "SMTH-CHONGJI-MAOYOU-L1-STRUCT",
+          "semanticContractId": "SMTH-CHONGJI-MAOYOU-20260930",
+          "state": "not_satisfied",
+          "displayed": false,
+          "verificationMethod": "delegated_adjudication",
+          "sourceCommit": "672aabc0a5fcba04cb1d5fc1d712233dca03d95a",
+          "adjudicationCommit": "48077232269ded4da1bcee2058603b7f80f9fd79",
+          "notDisplayedReason": "not_satisfied"
+        },
+        "ZPR-P1-01-L1-STRUCT": {
+          "ruleId": "ZPR-P1-01-L1-STRUCT",
+          "semanticContractId": "ZPR-P1-01-TOUWU-20260930",
+          "state": "not_satisfied",
+          "displayed": false,
+          "verificationMethod": "delegated_adjudication",
+          "sourceCommit": "672aabc0a5fcba04cb1d5fc1d712233dca03d95a",
+          "adjudicationCommit": "48077232269ded4da1bcee2058603b7f80f9fd79",
+          "notDisplayedReason": "not_satisfied"
+        }
+      },
+      "display": [],
+      "statements": [],
+      "rendered": {}
+    },
+    "ziwu_time_missing": {
+      "results": {
+        "SANMINGTONGH-015-L1-STRUCT": {
+          "ruleId": "SANMINGTONGH-015-L1-STRUCT",
+          "semanticContractId": "SMTH-015-SANHE-20260930",
+          "state": "not_satisfied",
+          "displayed": false,
+          "verificationMethod": "delegated_adjudication",
+          "sourceCommit": "672aabc0a5fcba04cb1d5fc1d712233dca03d95a",
+          "adjudicationCommit": "48077232269ded4da1bcee2058603b7f80f9fd79",
+          "notDisplayedReason": "not_satisfied"
+        },
+        "SMTH-CHONGJI-ZIWU-L1-STRUCT": {
+          "ruleId": "SMTH-CHONGJI-ZIWU-L1-STRUCT",
+          "semanticContractId": "SMTH-CHONGJI-ZIWU-20260930",
+          "state": "unknown",
+          "unknownPillars": [
+            "time"
+          ],
+          "missingKeys": [
+            {
+              "key": "zhi",
+              "pillar": "time"
+            }
+          ],
+          "displayed": false,
+          "verificationMethod": "delegated_adjudication",
+          "sourceCommit": "672aabc0a5fcba04cb1d5fc1d712233dca03d95a",
+          "adjudicationCommit": "48077232269ded4da1bcee2058603b7f80f9fd79",
+          "notDisplayedReason": "unknown"
+        },
+        "SMTH-CHONGJI-MAOYOU-L1-STRUCT": {
+          "ruleId": "SMTH-CHONGJI-MAOYOU-L1-STRUCT",
+          "semanticContractId": "SMTH-CHONGJI-MAOYOU-20260930",
+          "state": "not_satisfied",
+          "displayed": false,
+          "verificationMethod": "delegated_adjudication",
+          "sourceCommit": "672aabc0a5fcba04cb1d5fc1d712233dca03d95a",
+          "adjudicationCommit": "48077232269ded4da1bcee2058603b7f80f9fd79",
+          "notDisplayedReason": "not_satisfied"
+        },
+        "ZPR-P1-01-L1-STRUCT": {
+          "ruleId": "ZPR-P1-01-L1-STRUCT",
+          "semanticContractId": "ZPR-P1-01-TOUWU-20260930",
+          "state": "not_satisfied",
+          "displayed": false,
+          "verificationMethod": "delegated_adjudication",
+          "sourceCommit": "672aabc0a5fcba04cb1d5fc1d712233dca03d95a",
+          "adjudicationCommit": "48077232269ded4da1bcee2058603b7f80f9fd79",
+          "notDisplayedReason": "not_satisfied"
+        }
+      },
+      "display": [],
+      "statements": [],
+      "rendered": {}
+    },
+    "ziwu_none_time_missing": {
+      "results": {
+        "SANMINGTONGH-015-L1-STRUCT": {
+          "ruleId": "SANMINGTONGH-015-L1-STRUCT",
+          "semanticContractId": "SMTH-015-SANHE-20260930",
+          "state": "not_satisfied",
+          "displayed": false,
+          "verificationMethod": "delegated_adjudication",
+          "sourceCommit": "672aabc0a5fcba04cb1d5fc1d712233dca03d95a",
+          "adjudicationCommit": "48077232269ded4da1bcee2058603b7f80f9fd79",
+          "notDisplayedReason": "not_satisfied"
+        },
+        "SMTH-CHONGJI-ZIWU-L1-STRUCT": {
+          "ruleId": "SMTH-CHONGJI-ZIWU-L1-STRUCT",
+          "semanticContractId": "SMTH-CHONGJI-ZIWU-20260930",
+          "state": "not_satisfied",
+          "displayed": false,
+          "verificationMethod": "delegated_adjudication",
+          "sourceCommit": "672aabc0a5fcba04cb1d5fc1d712233dca03d95a",
+          "adjudicationCommit": "48077232269ded4da1bcee2058603b7f80f9fd79",
+          "notDisplayedReason": "not_satisfied"
+        },
+        "SMTH-CHONGJI-MAOYOU-L1-STRUCT": {
+          "ruleId": "SMTH-CHONGJI-MAOYOU-L1-STRUCT",
+          "semanticContractId": "SMTH-CHONGJI-MAOYOU-20260930",
+          "state": "not_satisfied",
+          "displayed": false,
+          "verificationMethod": "delegated_adjudication",
+          "sourceCommit": "672aabc0a5fcba04cb1d5fc1d712233dca03d95a",
+          "adjudicationCommit": "48077232269ded4da1bcee2058603b7f80f9fd79",
+          "notDisplayedReason": "not_satisfied"
+        },
+        "ZPR-P1-01-L1-STRUCT": {
+          "ruleId": "ZPR-P1-01-L1-STRUCT",
+          "semanticContractId": "ZPR-P1-01-TOUWU-20260930",
+          "state": "not_satisfied",
+          "displayed": false,
+          "verificationMethod": "delegated_adjudication",
+          "sourceCommit": "672aabc0a5fcba04cb1d5fc1d712233dca03d95a",
+          "adjudicationCommit": "48077232269ded4da1bcee2058603b7f80f9fd79",
+          "notDisplayedReason": "not_satisfied"
+        }
+      },
+      "display": [],
+      "statements": [],
+      "rendered": {}
+    },
+    "two_pillars_missing": {
+      "results": {
+        "SANMINGTONGH-015-L1-STRUCT": {
+          "ruleId": "SANMINGTONGH-015-L1-STRUCT",
+          "semanticContractId": "SMTH-015-SANHE-20260930",
+          "state": "unknown",
+          "unknownPillars": [
+            "month",
+            "time"
+          ],
+          "missingKeys": [
+            {
+              "key": "zhi",
+              "pillar": "month"
+            },
+            {
+              "key": "zhi",
+              "pillar": "time"
+            }
+          ],
+          "displayed": false,
+          "verificationMethod": "delegated_adjudication",
+          "sourceCommit": "672aabc0a5fcba04cb1d5fc1d712233dca03d95a",
+          "adjudicationCommit": "48077232269ded4da1bcee2058603b7f80f9fd79",
+          "notDisplayedReason": "unknown"
+        },
+        "SMTH-CHONGJI-ZIWU-L1-STRUCT": {
+          "ruleId": "SMTH-CHONGJI-ZIWU-L1-STRUCT",
+          "semanticContractId": "SMTH-CHONGJI-ZIWU-20260930",
+          "state": "unknown",
+          "unknownPillars": [
+            "month",
+            "time"
+          ],
+          "missingKeys": [
+            {
+              "key": "zhi",
+              "pillar": "month"
+            },
+            {
+              "key": "zhi",
+              "pillar": "time"
+            }
+          ],
+          "displayed": false,
+          "verificationMethod": "delegated_adjudication",
+          "sourceCommit": "672aabc0a5fcba04cb1d5fc1d712233dca03d95a",
+          "adjudicationCommit": "48077232269ded4da1bcee2058603b7f80f9fd79",
+          "notDisplayedReason": "unknown"
+        },
+        "SMTH-CHONGJI-MAOYOU-L1-STRUCT": {
+          "ruleId": "SMTH-CHONGJI-MAOYOU-L1-STRUCT",
+          "semanticContractId": "SMTH-CHONGJI-MAOYOU-20260930",
+          "state": "unknown",
+          "unknownPillars": [
+            "month",
+            "time"
+          ],
+          "missingKeys": [
+            {
+              "key": "zhi",
+              "pillar": "month"
+            },
+            {
+              "key": "zhi",
+              "pillar": "time"
+            }
+          ],
+          "displayed": false,
+          "verificationMethod": "delegated_adjudication",
+          "sourceCommit": "672aabc0a5fcba04cb1d5fc1d712233dca03d95a",
+          "adjudicationCommit": "48077232269ded4da1bcee2058603b7f80f9fd79",
+          "notDisplayedReason": "unknown"
+        },
+        "ZPR-P1-01-L1-STRUCT": {
+          "ruleId": "ZPR-P1-01-L1-STRUCT",
+          "semanticContractId": "ZPR-P1-01-TOUWU-20260930",
+          "state": "unknown",
+          "unknownPillars": [
+            "month",
+            "time"
+          ],
+          "missingKeys": [
+            {
+              "key": "gan",
+              "pillar": "month"
+            },
+            {
+              "key": "zhi",
+              "pillar": "month"
+            },
+            {
+              "key": "canggan",
+              "pillar": "month"
+            },
+            {
+              "key": "gan",
+              "pillar": "time"
+            }
+          ],
+          "displayed": false,
+          "verificationMethod": "delegated_adjudication",
+          "sourceCommit": "672aabc0a5fcba04cb1d5fc1d712233dca03d95a",
+          "adjudicationCommit": "48077232269ded4da1bcee2058603b7f80f9fd79",
+          "notDisplayedReason": "unknown"
+        }
+      },
+      "display": [],
+      "statements": [],
+      "rendered": {}
+    },
+    "maoyou_complete": {
+      "results": {
+        "SANMINGTONGH-015-L1-STRUCT": {
+          "ruleId": "SANMINGTONGH-015-L1-STRUCT",
+          "semanticContractId": "SMTH-015-SANHE-20260930",
+          "state": "not_satisfied",
+          "displayed": false,
+          "verificationMethod": "delegated_adjudication",
+          "sourceCommit": "672aabc0a5fcba04cb1d5fc1d712233dca03d95a",
+          "adjudicationCommit": "48077232269ded4da1bcee2058603b7f80f9fd79",
+          "notDisplayedReason": "not_satisfied"
+        },
+        "SMTH-CHONGJI-ZIWU-L1-STRUCT": {
+          "ruleId": "SMTH-CHONGJI-ZIWU-L1-STRUCT",
+          "semanticContractId": "SMTH-CHONGJI-ZIWU-20260930",
+          "state": "not_satisfied",
+          "displayed": false,
+          "verificationMethod": "delegated_adjudication",
+          "sourceCommit": "672aabc0a5fcba04cb1d5fc1d712233dca03d95a",
+          "adjudicationCommit": "48077232269ded4da1bcee2058603b7f80f9fd79",
+          "notDisplayedReason": "not_satisfied"
+        },
+        "SMTH-CHONGJI-MAOYOU-L1-STRUCT": {
+          "ruleId": "SMTH-CHONGJI-MAOYOU-L1-STRUCT",
+          "semanticContractId": "SMTH-CHONGJI-MAOYOU-20260930",
+          "state": "satisfied",
+          "positions": {
+            "卯": [
+              "year"
+            ],
+            "酉": [
+              "month"
+            ]
+          },
+          "displayed": true,
+          "verificationMethod": "delegated_adjudication",
+          "sourceCommit": "672aabc0a5fcba04cb1d5fc1d712233dca03d95a",
+          "adjudicationCommit": "48077232269ded4da1bcee2058603b7f80f9fd79"
+        },
+        "ZPR-P1-01-L1-STRUCT": {
+          "ruleId": "ZPR-P1-01-L1-STRUCT",
+          "semanticContractId": "ZPR-P1-01-TOUWU-20260930",
+          "state": "not_satisfied",
+          "displayed": false,
+          "verificationMethod": "delegated_adjudication",
+          "sourceCommit": "672aabc0a5fcba04cb1d5fc1d712233dca03d95a",
+          "adjudicationCommit": "48077232269ded4da1bcee2058603b7f80f9fd79",
+          "notDisplayedReason": "not_satisfied"
+        }
+      },
+      "display": [
+        "SMTH-CHONGJI-MAOYOU-L1-STRUCT"
+      ],
+      "statements": [
+        "你的盘里卯在年柱、酉在月柱，从卯数到酉是七位；《三命通会·论冲击》说地支取七位为冲。"
+      ],
+      "rendered": {
+        "SMTH-CHONGJI-MAOYOU-L1-STRUCT": {
+          "statement": "你的盘里卯在年柱、酉在月柱，从卯数到酉是七位；《三命通会·论冲击》说地支取七位为冲。",
+          "fold": "《三命通会·论冲击》说地支取七位为冲，书中举的例子是子午；从卯数到酉同样是七位。同篇后文另讲冲的各种情形与轻重，这里只说两字的位置，不据此下判断。另一本书的称呼：《滴天髓阐微·知命》把卯酉对应为震兑。"
+        }
+      }
+    },
+    "maoyou_time_missing": {
+      "results": {
+        "SANMINGTONGH-015-L1-STRUCT": {
+          "ruleId": "SANMINGTONGH-015-L1-STRUCT",
+          "semanticContractId": "SMTH-015-SANHE-20260930",
+          "state": "not_satisfied",
+          "displayed": false,
+          "verificationMethod": "delegated_adjudication",
+          "sourceCommit": "672aabc0a5fcba04cb1d5fc1d712233dca03d95a",
+          "adjudicationCommit": "48077232269ded4da1bcee2058603b7f80f9fd79",
+          "notDisplayedReason": "not_satisfied"
+        },
+        "SMTH-CHONGJI-ZIWU-L1-STRUCT": {
+          "ruleId": "SMTH-CHONGJI-ZIWU-L1-STRUCT",
+          "semanticContractId": "SMTH-CHONGJI-ZIWU-20260930",
+          "state": "not_satisfied",
+          "displayed": false,
+          "verificationMethod": "delegated_adjudication",
+          "sourceCommit": "672aabc0a5fcba04cb1d5fc1d712233dca03d95a",
+          "adjudicationCommit": "48077232269ded4da1bcee2058603b7f80f9fd79",
+          "notDisplayedReason": "not_satisfied"
+        },
+        "SMTH-CHONGJI-MAOYOU-L1-STRUCT": {
+          "ruleId": "SMTH-CHONGJI-MAOYOU-L1-STRUCT",
+          "semanticContractId": "SMTH-CHONGJI-MAOYOU-20260930",
+          "state": "unknown",
+          "unknownPillars": [
+            "time"
+          ],
+          "missingKeys": [
+            {
+              "key": "zhi",
+              "pillar": "time"
+            }
+          ],
+          "displayed": false,
+          "verificationMethod": "delegated_adjudication",
+          "sourceCommit": "672aabc0a5fcba04cb1d5fc1d712233dca03d95a",
+          "adjudicationCommit": "48077232269ded4da1bcee2058603b7f80f9fd79",
+          "notDisplayedReason": "unknown"
+        },
+        "ZPR-P1-01-L1-STRUCT": {
+          "ruleId": "ZPR-P1-01-L1-STRUCT",
+          "semanticContractId": "ZPR-P1-01-TOUWU-20260930",
+          "state": "not_satisfied",
+          "displayed": false,
+          "verificationMethod": "delegated_adjudication",
+          "sourceCommit": "672aabc0a5fcba04cb1d5fc1d712233dca03d95a",
+          "adjudicationCommit": "48077232269ded4da1bcee2058603b7f80f9fd79",
+          "notDisplayedReason": "not_satisfied"
+        }
+      },
+      "display": [],
+      "statements": [],
+      "rendered": {}
+    },
+    "jia_not_jia": {
+      "results": {
+        "SANMINGTONGH-015-L1-STRUCT": {
+          "ruleId": "SANMINGTONGH-015-L1-STRUCT",
+          "semanticContractId": "SMTH-015-SANHE-20260930",
+          "state": "not_satisfied",
+          "displayed": false,
+          "verificationMethod": "delegated_adjudication",
+          "sourceCommit": "672aabc0a5fcba04cb1d5fc1d712233dca03d95a",
+          "adjudicationCommit": "48077232269ded4da1bcee2058603b7f80f9fd79",
+          "notDisplayedReason": "not_satisfied"
+        },
+        "SMTH-CHONGJI-ZIWU-L1-STRUCT": {
+          "ruleId": "SMTH-CHONGJI-ZIWU-L1-STRUCT",
+          "semanticContractId": "SMTH-CHONGJI-ZIWU-20260930",
+          "state": "not_satisfied",
+          "displayed": false,
+          "verificationMethod": "delegated_adjudication",
+          "sourceCommit": "672aabc0a5fcba04cb1d5fc1d712233dca03d95a",
+          "adjudicationCommit": "48077232269ded4da1bcee2058603b7f80f9fd79",
+          "notDisplayedReason": "not_satisfied"
+        },
+        "SMTH-CHONGJI-MAOYOU-L1-STRUCT": {
+          "ruleId": "SMTH-CHONGJI-MAOYOU-L1-STRUCT",
+          "semanticContractId": "SMTH-CHONGJI-MAOYOU-20260930",
+          "state": "not_satisfied",
+          "displayed": false,
+          "verificationMethod": "delegated_adjudication",
+          "sourceCommit": "672aabc0a5fcba04cb1d5fc1d712233dca03d95a",
+          "adjudicationCommit": "48077232269ded4da1bcee2058603b7f80f9fd79",
+          "notDisplayedReason": "not_satisfied"
+        },
+        "ZPR-P1-01-L1-STRUCT": {
+          "ruleId": "ZPR-P1-01-L1-STRUCT",
+          "semanticContractId": "ZPR-P1-01-TOUWU-20260930",
+          "state": "not_satisfied",
+          "displayed": false,
+          "verificationMethod": "delegated_adjudication",
+          "sourceCommit": "672aabc0a5fcba04cb1d5fc1d712233dca03d95a",
+          "adjudicationCommit": "48077232269ded4da1bcee2058603b7f80f9fd79",
+          "notDisplayedReason": "not_satisfied"
+        }
+      },
+      "display": [],
+      "statements": [],
+      "rendered": {}
+    },
+    "jia_not_chen": {
+      "results": {
+        "SANMINGTONGH-015-L1-STRUCT": {
+          "ruleId": "SANMINGTONGH-015-L1-STRUCT",
+          "semanticContractId": "SMTH-015-SANHE-20260930",
+          "state": "not_satisfied",
+          "displayed": false,
+          "verificationMethod": "delegated_adjudication",
+          "sourceCommit": "672aabc0a5fcba04cb1d5fc1d712233dca03d95a",
+          "adjudicationCommit": "48077232269ded4da1bcee2058603b7f80f9fd79",
+          "notDisplayedReason": "not_satisfied"
+        },
+        "SMTH-CHONGJI-ZIWU-L1-STRUCT": {
+          "ruleId": "SMTH-CHONGJI-ZIWU-L1-STRUCT",
+          "semanticContractId": "SMTH-CHONGJI-ZIWU-20260930",
+          "state": "not_satisfied",
+          "displayed": false,
+          "verificationMethod": "delegated_adjudication",
+          "sourceCommit": "672aabc0a5fcba04cb1d5fc1d712233dca03d95a",
+          "adjudicationCommit": "48077232269ded4da1bcee2058603b7f80f9fd79",
+          "notDisplayedReason": "not_satisfied"
+        },
+        "SMTH-CHONGJI-MAOYOU-L1-STRUCT": {
+          "ruleId": "SMTH-CHONGJI-MAOYOU-L1-STRUCT",
+          "semanticContractId": "SMTH-CHONGJI-MAOYOU-20260930",
+          "state": "not_satisfied",
+          "displayed": false,
+          "verificationMethod": "delegated_adjudication",
+          "sourceCommit": "672aabc0a5fcba04cb1d5fc1d712233dca03d95a",
+          "adjudicationCommit": "48077232269ded4da1bcee2058603b7f80f9fd79",
+          "notDisplayedReason": "not_satisfied"
+        },
+        "ZPR-P1-01-L1-STRUCT": {
+          "ruleId": "ZPR-P1-01-L1-STRUCT",
+          "semanticContractId": "ZPR-P1-01-TOUWU-20260930",
+          "state": "not_satisfied",
+          "displayed": false,
+          "verificationMethod": "delegated_adjudication",
+          "sourceCommit": "672aabc0a5fcba04cb1d5fc1d712233dca03d95a",
+          "adjudicationCommit": "48077232269ded4da1bcee2058603b7f80f9fd79",
+          "notDisplayedReason": "not_satisfied"
+        }
+      },
+      "display": [],
+      "statements": [],
+      "rendered": {}
+    },
+    "jia_missing_hidden": {
+      "results": {
+        "SANMINGTONGH-015-L1-STRUCT": {
+          "ruleId": "SANMINGTONGH-015-L1-STRUCT",
+          "semanticContractId": "SMTH-015-SANHE-20260930",
+          "state": "not_satisfied",
+          "displayed": false,
+          "verificationMethod": "delegated_adjudication",
+          "sourceCommit": "672aabc0a5fcba04cb1d5fc1d712233dca03d95a",
+          "adjudicationCommit": "48077232269ded4da1bcee2058603b7f80f9fd79",
+          "notDisplayedReason": "not_satisfied"
+        },
+        "SMTH-CHONGJI-ZIWU-L1-STRUCT": {
+          "ruleId": "SMTH-CHONGJI-ZIWU-L1-STRUCT",
+          "semanticContractId": "SMTH-CHONGJI-ZIWU-20260930",
+          "state": "not_satisfied",
+          "displayed": false,
+          "verificationMethod": "delegated_adjudication",
+          "sourceCommit": "672aabc0a5fcba04cb1d5fc1d712233dca03d95a",
+          "adjudicationCommit": "48077232269ded4da1bcee2058603b7f80f9fd79",
+          "notDisplayedReason": "not_satisfied"
+        },
+        "SMTH-CHONGJI-MAOYOU-L1-STRUCT": {
+          "ruleId": "SMTH-CHONGJI-MAOYOU-L1-STRUCT",
+          "semanticContractId": "SMTH-CHONGJI-MAOYOU-20260930",
+          "state": "not_satisfied",
+          "displayed": false,
+          "verificationMethod": "delegated_adjudication",
+          "sourceCommit": "672aabc0a5fcba04cb1d5fc1d712233dca03d95a",
+          "adjudicationCommit": "48077232269ded4da1bcee2058603b7f80f9fd79",
+          "notDisplayedReason": "not_satisfied"
+        },
+        "ZPR-P1-01-L1-STRUCT": {
+          "ruleId": "ZPR-P1-01-L1-STRUCT",
+          "semanticContractId": "ZPR-P1-01-TOUWU-20260930",
+          "state": "unknown",
+          "unknownPillars": [
+            "month"
+          ],
+          "missingKeys": [
+            {
+              "key": "canggan",
+              "pillar": "month"
+            }
+          ],
+          "displayed": false,
+          "verificationMethod": "delegated_adjudication",
+          "sourceCommit": "672aabc0a5fcba04cb1d5fc1d712233dca03d95a",
+          "adjudicationCommit": "48077232269ded4da1bcee2058603b7f80f9fd79",
+          "notDisplayedReason": "unknown"
+        }
+      },
+      "display": [],
+      "statements": [],
+      "rendered": {}
+    },
+    "jia_year_wu_time_missing": {
+      "results": {
+        "SANMINGTONGH-015-L1-STRUCT": {
+          "ruleId": "SANMINGTONGH-015-L1-STRUCT",
+          "semanticContractId": "SMTH-015-SANHE-20260930",
+          "state": "satisfied",
+          "positions": {
+            "申": [
+              "year"
+            ],
+            "子": [
+              "day"
+            ],
+            "辰": [
+              "month"
+            ]
+          },
+          "displayed": true,
+          "verificationMethod": "delegated_adjudication",
+          "sourceCommit": "672aabc0a5fcba04cb1d5fc1d712233dca03d95a",
+          "adjudicationCommit": "48077232269ded4da1bcee2058603b7f80f9fd79"
+        },
+        "SMTH-CHONGJI-ZIWU-L1-STRUCT": {
+          "ruleId": "SMTH-CHONGJI-ZIWU-L1-STRUCT",
+          "semanticContractId": "SMTH-CHONGJI-ZIWU-20260930",
+          "state": "unknown",
+          "unknownPillars": [
+            "time"
+          ],
+          "missingKeys": [
+            {
+              "key": "zhi",
+              "pillar": "time"
+            }
+          ],
+          "displayed": false,
+          "verificationMethod": "delegated_adjudication",
+          "sourceCommit": "672aabc0a5fcba04cb1d5fc1d712233dca03d95a",
+          "adjudicationCommit": "48077232269ded4da1bcee2058603b7f80f9fd79",
+          "notDisplayedReason": "unknown"
+        },
+        "SMTH-CHONGJI-MAOYOU-L1-STRUCT": {
+          "ruleId": "SMTH-CHONGJI-MAOYOU-L1-STRUCT",
+          "semanticContractId": "SMTH-CHONGJI-MAOYOU-20260930",
+          "state": "not_satisfied",
+          "displayed": false,
+          "verificationMethod": "delegated_adjudication",
+          "sourceCommit": "672aabc0a5fcba04cb1d5fc1d712233dca03d95a",
+          "adjudicationCommit": "48077232269ded4da1bcee2058603b7f80f9fd79",
+          "notDisplayedReason": "not_satisfied"
+        },
+        "ZPR-P1-01-L1-STRUCT": {
+          "ruleId": "ZPR-P1-01-L1-STRUCT",
+          "semanticContractId": "ZPR-P1-01-TOUWU-20260930",
+          "state": "satisfied",
+          "positions": {
+            "戊": [
+              "year"
+            ]
+          },
+          "displayed": true,
+          "verificationMethod": "delegated_adjudication",
+          "sourceCommit": "672aabc0a5fcba04cb1d5fc1d712233dca03d95a",
+          "adjudicationCommit": "48077232269ded4da1bcee2058603b7f80f9fd79"
+        }
+      },
+      "display": [
+        "SANMINGTONGH-015-L1-STRUCT",
+        "ZPR-P1-01-L1-STRUCT"
+      ],
+      "statements": [
+        "你的盘里申在年柱、子在日柱、辰在月柱，三字齐全；《三命通会·论支元三合》称申子辰为水局，并说三字缺一就不能按三合论。",
+        "你是甲日生在辰月，辰中的戊字露在年柱的天干，与《子平真诠》论杂气一篇所举的写法一致。"
+      ],
+      "rendered": {
+        "SANMINGTONGH-015-L1-STRUCT": {
+          "statement": "你的盘里申在年柱、子在日柱、辰在月柱，三字齐全；《三命通会·论支元三合》称申子辰为水局，并说三字缺一就不能按三合论。",
+          "fold": "《三命通会·论支元三合》说申是水生之地、子是水旺之地、辰是水库之地，所以称水局；又说三字缺一就不能按三合化局论。这里只说三字齐全，不说局已化成。"
+        },
+        "ZPR-P1-01-L1-STRUCT": {
+          "statement": "你是甲日生在辰月，辰中的戊字露在年柱的天干，与《子平真诠》论杂气一篇所举的写法一致。",
+          "fold": "《子平真诠》论杂气一篇举甲日辰月为例，说‘透戊则用偏财’；同篇也说要取其清者、看配合是否有情。这里只说盘上结构，不据此下判断。"
+        }
+      }
+    },
+    "jia_year_month_wu": {
+      "results": {
+        "SANMINGTONGH-015-L1-STRUCT": {
+          "ruleId": "SANMINGTONGH-015-L1-STRUCT",
+          "semanticContractId": "SMTH-015-SANHE-20260930",
+          "state": "not_satisfied",
+          "displayed": false,
+          "verificationMethod": "delegated_adjudication",
+          "sourceCommit": "672aabc0a5fcba04cb1d5fc1d712233dca03d95a",
+          "adjudicationCommit": "48077232269ded4da1bcee2058603b7f80f9fd79",
+          "notDisplayedReason": "not_satisfied"
+        },
+        "SMTH-CHONGJI-ZIWU-L1-STRUCT": {
+          "ruleId": "SMTH-CHONGJI-ZIWU-L1-STRUCT",
+          "semanticContractId": "SMTH-CHONGJI-ZIWU-20260930",
+          "state": "not_satisfied",
+          "displayed": false,
+          "verificationMethod": "delegated_adjudication",
+          "sourceCommit": "672aabc0a5fcba04cb1d5fc1d712233dca03d95a",
+          "adjudicationCommit": "48077232269ded4da1bcee2058603b7f80f9fd79",
+          "notDisplayedReason": "not_satisfied"
+        },
+        "SMTH-CHONGJI-MAOYOU-L1-STRUCT": {
+          "ruleId": "SMTH-CHONGJI-MAOYOU-L1-STRUCT",
+          "semanticContractId": "SMTH-CHONGJI-MAOYOU-20260930",
+          "state": "not_satisfied",
+          "displayed": false,
+          "verificationMethod": "delegated_adjudication",
+          "sourceCommit": "672aabc0a5fcba04cb1d5fc1d712233dca03d95a",
+          "adjudicationCommit": "48077232269ded4da1bcee2058603b7f80f9fd79",
+          "notDisplayedReason": "not_satisfied"
+        },
+        "ZPR-P1-01-L1-STRUCT": {
+          "ruleId": "ZPR-P1-01-L1-STRUCT",
+          "semanticContractId": "ZPR-P1-01-TOUWU-20260930",
+          "state": "satisfied",
+          "positions": {
+            "戊": [
+              "year",
+              "month"
+            ]
+          },
+          "displayed": true,
+          "verificationMethod": "delegated_adjudication",
+          "sourceCommit": "672aabc0a5fcba04cb1d5fc1d712233dca03d95a",
+          "adjudicationCommit": "48077232269ded4da1bcee2058603b7f80f9fd79"
+        }
+      },
+      "display": [
+        "ZPR-P1-01-L1-STRUCT"
+      ],
+      "statements": [
+        "你是甲日生在辰月，辰中的戊字露在年柱和月柱的天干，与《子平真诠》论杂气一篇所举的写法一致。"
+      ],
+      "rendered": {
+        "ZPR-P1-01-L1-STRUCT": {
+          "statement": "你是甲日生在辰月，辰中的戊字露在年柱和月柱的天干，与《子平真诠》论杂气一篇所举的写法一致。",
+          "fold": "《子平真诠》论杂气一篇举甲日辰月为例，说‘透戊则用偏财’；同篇也说要取其清者、看配合是否有情。这里只说盘上结构，不据此下判断。"
+        }
+      }
+    },
+    "jia_three_wu": {
+      "results": {
+        "SANMINGTONGH-015-L1-STRUCT": {
+          "ruleId": "SANMINGTONGH-015-L1-STRUCT",
+          "semanticContractId": "SMTH-015-SANHE-20260930",
+          "state": "not_satisfied",
+          "displayed": false,
+          "verificationMethod": "delegated_adjudication",
+          "sourceCommit": "672aabc0a5fcba04cb1d5fc1d712233dca03d95a",
+          "adjudicationCommit": "48077232269ded4da1bcee2058603b7f80f9fd79",
+          "notDisplayedReason": "not_satisfied"
+        },
+        "SMTH-CHONGJI-ZIWU-L1-STRUCT": {
+          "ruleId": "SMTH-CHONGJI-ZIWU-L1-STRUCT",
+          "semanticContractId": "SMTH-CHONGJI-ZIWU-20260930",
+          "state": "not_satisfied",
+          "displayed": false,
+          "verificationMethod": "delegated_adjudication",
+          "sourceCommit": "672aabc0a5fcba04cb1d5fc1d712233dca03d95a",
+          "adjudicationCommit": "48077232269ded4da1bcee2058603b7f80f9fd79",
+          "notDisplayedReason": "not_satisfied"
+        },
+        "SMTH-CHONGJI-MAOYOU-L1-STRUCT": {
+          "ruleId": "SMTH-CHONGJI-MAOYOU-L1-STRUCT",
+          "semanticContractId": "SMTH-CHONGJI-MAOYOU-20260930",
+          "state": "not_satisfied",
+          "displayed": false,
+          "verificationMethod": "delegated_adjudication",
+          "sourceCommit": "672aabc0a5fcba04cb1d5fc1d712233dca03d95a",
+          "adjudicationCommit": "48077232269ded4da1bcee2058603b7f80f9fd79",
+          "notDisplayedReason": "not_satisfied"
+        },
+        "ZPR-P1-01-L1-STRUCT": {
+          "ruleId": "ZPR-P1-01-L1-STRUCT",
+          "semanticContractId": "ZPR-P1-01-TOUWU-20260930",
+          "state": "satisfied",
+          "positions": {
+            "戊": [
+              "year",
+              "month",
+              "time"
+            ]
+          },
+          "displayed": true,
+          "verificationMethod": "delegated_adjudication",
+          "sourceCommit": "672aabc0a5fcba04cb1d5fc1d712233dca03d95a",
+          "adjudicationCommit": "48077232269ded4da1bcee2058603b7f80f9fd79"
+        }
+      },
+      "display": [
+        "ZPR-P1-01-L1-STRUCT"
+      ],
+      "statements": [
+        "你是甲日生在辰月，辰中的戊字露在年柱、月柱和时柱的天干，与《子平真诠》论杂气一篇所举的写法一致。"
+      ],
+      "rendered": {
+        "ZPR-P1-01-L1-STRUCT": {
+          "statement": "你是甲日生在辰月，辰中的戊字露在年柱、月柱和时柱的天干，与《子平真诠》论杂气一篇所举的写法一致。",
+          "fold": "《子平真诠》论杂气一篇举甲日辰月为例，说‘透戊则用偏财’；同篇也说要取其清者、看配合是否有情。这里只说盘上结构，不据此下判断。"
+        }
+      }
+    },
+    "jia_no_wu": {
+      "results": {
+        "SANMINGTONGH-015-L1-STRUCT": {
+          "ruleId": "SANMINGTONGH-015-L1-STRUCT",
+          "semanticContractId": "SMTH-015-SANHE-20260930",
+          "state": "not_satisfied",
+          "displayed": false,
+          "verificationMethod": "delegated_adjudication",
+          "sourceCommit": "672aabc0a5fcba04cb1d5fc1d712233dca03d95a",
+          "adjudicationCommit": "48077232269ded4da1bcee2058603b7f80f9fd79",
+          "notDisplayedReason": "not_satisfied"
+        },
+        "SMTH-CHONGJI-ZIWU-L1-STRUCT": {
+          "ruleId": "SMTH-CHONGJI-ZIWU-L1-STRUCT",
+          "semanticContractId": "SMTH-CHONGJI-ZIWU-20260930",
+          "state": "not_satisfied",
+          "displayed": false,
+          "verificationMethod": "delegated_adjudication",
+          "sourceCommit": "672aabc0a5fcba04cb1d5fc1d712233dca03d95a",
+          "adjudicationCommit": "48077232269ded4da1bcee2058603b7f80f9fd79",
+          "notDisplayedReason": "not_satisfied"
+        },
+        "SMTH-CHONGJI-MAOYOU-L1-STRUCT": {
+          "ruleId": "SMTH-CHONGJI-MAOYOU-L1-STRUCT",
+          "semanticContractId": "SMTH-CHONGJI-MAOYOU-20260930",
+          "state": "not_satisfied",
+          "displayed": false,
+          "verificationMethod": "delegated_adjudication",
+          "sourceCommit": "672aabc0a5fcba04cb1d5fc1d712233dca03d95a",
+          "adjudicationCommit": "48077232269ded4da1bcee2058603b7f80f9fd79",
+          "notDisplayedReason": "not_satisfied"
+        },
+        "ZPR-P1-01-L1-STRUCT": {
+          "ruleId": "ZPR-P1-01-L1-STRUCT",
+          "semanticContractId": "ZPR-P1-01-TOUWU-20260930",
+          "state": "not_satisfied",
+          "displayed": false,
+          "verificationMethod": "delegated_adjudication",
+          "sourceCommit": "672aabc0a5fcba04cb1d5fc1d712233dca03d95a",
+          "adjudicationCommit": "48077232269ded4da1bcee2058603b7f80f9fd79",
+          "notDisplayedReason": "not_satisfied"
+        }
+      },
+      "display": [],
+      "statements": [],
+      "rendered": {}
+    },
+    "jia_hidden_without_wu": {
+      "results": {
+        "SANMINGTONGH-015-L1-STRUCT": {
+          "ruleId": "SANMINGTONGH-015-L1-STRUCT",
+          "semanticContractId": "SMTH-015-SANHE-20260930",
+          "state": "not_satisfied",
+          "displayed": false,
+          "verificationMethod": "delegated_adjudication",
+          "sourceCommit": "672aabc0a5fcba04cb1d5fc1d712233dca03d95a",
+          "adjudicationCommit": "48077232269ded4da1bcee2058603b7f80f9fd79",
+          "notDisplayedReason": "not_satisfied"
+        },
+        "SMTH-CHONGJI-ZIWU-L1-STRUCT": {
+          "ruleId": "SMTH-CHONGJI-ZIWU-L1-STRUCT",
+          "semanticContractId": "SMTH-CHONGJI-ZIWU-20260930",
+          "state": "not_satisfied",
+          "displayed": false,
+          "verificationMethod": "delegated_adjudication",
+          "sourceCommit": "672aabc0a5fcba04cb1d5fc1d712233dca03d95a",
+          "adjudicationCommit": "48077232269ded4da1bcee2058603b7f80f9fd79",
+          "notDisplayedReason": "not_satisfied"
+        },
+        "SMTH-CHONGJI-MAOYOU-L1-STRUCT": {
+          "ruleId": "SMTH-CHONGJI-MAOYOU-L1-STRUCT",
+          "semanticContractId": "SMTH-CHONGJI-MAOYOU-20260930",
+          "state": "not_satisfied",
+          "displayed": false,
+          "verificationMethod": "delegated_adjudication",
+          "sourceCommit": "672aabc0a5fcba04cb1d5fc1d712233dca03d95a",
+          "adjudicationCommit": "48077232269ded4da1bcee2058603b7f80f9fd79",
+          "notDisplayedReason": "not_satisfied"
+        },
+        "ZPR-P1-01-L1-STRUCT": {
+          "ruleId": "ZPR-P1-01-L1-STRUCT",
+          "semanticContractId": "ZPR-P1-01-TOUWU-20260930",
+          "state": "not_satisfied",
+          "displayed": false,
+          "verificationMethod": "delegated_adjudication",
+          "sourceCommit": "672aabc0a5fcba04cb1d5fc1d712233dca03d95a",
+          "adjudicationCommit": "48077232269ded4da1bcee2058603b7f80f9fd79",
+          "notDisplayedReason": "not_satisfied"
+        }
+      },
+      "display": [],
+      "statements": [],
+      "rendered": {}
+    },
+    "jia_year_gan_missing": {
+      "results": {
+        "SANMINGTONGH-015-L1-STRUCT": {
+          "ruleId": "SANMINGTONGH-015-L1-STRUCT",
+          "semanticContractId": "SMTH-015-SANHE-20260930",
+          "state": "not_satisfied",
+          "displayed": false,
+          "verificationMethod": "delegated_adjudication",
+          "sourceCommit": "672aabc0a5fcba04cb1d5fc1d712233dca03d95a",
+          "adjudicationCommit": "48077232269ded4da1bcee2058603b7f80f9fd79",
+          "notDisplayedReason": "not_satisfied"
+        },
+        "SMTH-CHONGJI-ZIWU-L1-STRUCT": {
+          "ruleId": "SMTH-CHONGJI-ZIWU-L1-STRUCT",
+          "semanticContractId": "SMTH-CHONGJI-ZIWU-20260930",
+          "state": "not_satisfied",
+          "displayed": false,
+          "verificationMethod": "delegated_adjudication",
+          "sourceCommit": "672aabc0a5fcba04cb1d5fc1d712233dca03d95a",
+          "adjudicationCommit": "48077232269ded4da1bcee2058603b7f80f9fd79",
+          "notDisplayedReason": "not_satisfied"
+        },
+        "SMTH-CHONGJI-MAOYOU-L1-STRUCT": {
+          "ruleId": "SMTH-CHONGJI-MAOYOU-L1-STRUCT",
+          "semanticContractId": "SMTH-CHONGJI-MAOYOU-20260930",
+          "state": "not_satisfied",
+          "displayed": false,
+          "verificationMethod": "delegated_adjudication",
+          "sourceCommit": "672aabc0a5fcba04cb1d5fc1d712233dca03d95a",
+          "adjudicationCommit": "48077232269ded4da1bcee2058603b7f80f9fd79",
+          "notDisplayedReason": "not_satisfied"
+        },
+        "ZPR-P1-01-L1-STRUCT": {
+          "ruleId": "ZPR-P1-01-L1-STRUCT",
+          "semanticContractId": "ZPR-P1-01-TOUWU-20260930",
+          "state": "unknown",
+          "unknownPillars": [
+            "year"
+          ],
+          "missingKeys": [
+            {
+              "key": "gan",
+              "pillar": "year"
+            }
+          ],
+          "displayed": false,
+          "verificationMethod": "delegated_adjudication",
+          "sourceCommit": "672aabc0a5fcba04cb1d5fc1d712233dca03d95a",
+          "adjudicationCommit": "48077232269ded4da1bcee2058603b7f80f9fd79",
+          "notDisplayedReason": "unknown"
+        }
+      },
+      "display": [],
+      "statements": [],
+      "rendered": {}
+    },
+    "jia_day_gan_missing": {
+      "results": {
+        "SANMINGTONGH-015-L1-STRUCT": {
+          "ruleId": "SANMINGTONGH-015-L1-STRUCT",
+          "semanticContractId": "SMTH-015-SANHE-20260930",
+          "state": "not_satisfied",
+          "displayed": false,
+          "verificationMethod": "delegated_adjudication",
+          "sourceCommit": "672aabc0a5fcba04cb1d5fc1d712233dca03d95a",
+          "adjudicationCommit": "48077232269ded4da1bcee2058603b7f80f9fd79",
+          "notDisplayedReason": "not_satisfied"
+        },
+        "SMTH-CHONGJI-ZIWU-L1-STRUCT": {
+          "ruleId": "SMTH-CHONGJI-ZIWU-L1-STRUCT",
+          "semanticContractId": "SMTH-CHONGJI-ZIWU-20260930",
+          "state": "not_satisfied",
+          "displayed": false,
+          "verificationMethod": "delegated_adjudication",
+          "sourceCommit": "672aabc0a5fcba04cb1d5fc1d712233dca03d95a",
+          "adjudicationCommit": "48077232269ded4da1bcee2058603b7f80f9fd79",
+          "notDisplayedReason": "not_satisfied"
+        },
+        "SMTH-CHONGJI-MAOYOU-L1-STRUCT": {
+          "ruleId": "SMTH-CHONGJI-MAOYOU-L1-STRUCT",
+          "semanticContractId": "SMTH-CHONGJI-MAOYOU-20260930",
+          "state": "not_satisfied",
+          "displayed": false,
+          "verificationMethod": "delegated_adjudication",
+          "sourceCommit": "672aabc0a5fcba04cb1d5fc1d712233dca03d95a",
+          "adjudicationCommit": "48077232269ded4da1bcee2058603b7f80f9fd79",
+          "notDisplayedReason": "not_satisfied"
+        },
+        "ZPR-P1-01-L1-STRUCT": {
+          "ruleId": "ZPR-P1-01-L1-STRUCT",
+          "semanticContractId": "ZPR-P1-01-TOUWU-20260930",
+          "state": "unknown",
+          "unknownPillars": [
+            "day"
+          ],
+          "missingKeys": [
+            {
+              "key": "gan",
+              "pillar": "day"
+            }
+          ],
+          "displayed": false,
+          "verificationMethod": "delegated_adjudication",
+          "sourceCommit": "672aabc0a5fcba04cb1d5fc1d712233dca03d95a",
+          "adjudicationCommit": "48077232269ded4da1bcee2058603b7f80f9fd79",
+          "notDisplayedReason": "unknown"
+        }
+      },
+      "display": [],
+      "statements": [],
+      "rendered": {}
+    },
+    "conflict_day_zhi": {
+      "results": {
+        "SANMINGTONGH-015-L1-STRUCT": {
+          "ruleId": "SANMINGTONGH-015-L1-STRUCT",
+          "semanticContractId": "SMTH-015-SANHE-20260930",
+          "state": "unknown",
+          "unknownPillars": [
+            "day"
+          ],
+          "conflicts": [
+            {
+              "key": "zhi",
+              "pillar": "day",
+              "values": [
+                "子",
+                "酉"
+              ]
+            }
+          ],
+          "displayed": false,
+          "verificationMethod": "delegated_adjudication",
+          "sourceCommit": "672aabc0a5fcba04cb1d5fc1d712233dca03d95a",
+          "adjudicationCommit": "48077232269ded4da1bcee2058603b7f80f9fd79",
+          "notDisplayedReason": "unknown"
+        },
+        "SMTH-CHONGJI-ZIWU-L1-STRUCT": {
+          "ruleId": "SMTH-CHONGJI-ZIWU-L1-STRUCT",
+          "semanticContractId": "SMTH-CHONGJI-ZIWU-20260930",
+          "state": "unknown",
+          "unknownPillars": [
+            "day"
+          ],
+          "conflicts": [
+            {
+              "key": "zhi",
+              "pillar": "day",
+              "values": [
+                "子",
+                "酉"
+              ]
+            }
+          ],
+          "displayed": false,
+          "verificationMethod": "delegated_adjudication",
+          "sourceCommit": "672aabc0a5fcba04cb1d5fc1d712233dca03d95a",
+          "adjudicationCommit": "48077232269ded4da1bcee2058603b7f80f9fd79",
+          "notDisplayedReason": "unknown"
+        },
+        "SMTH-CHONGJI-MAOYOU-L1-STRUCT": {
+          "ruleId": "SMTH-CHONGJI-MAOYOU-L1-STRUCT",
+          "semanticContractId": "SMTH-CHONGJI-MAOYOU-20260930",
+          "state": "unknown",
+          "unknownPillars": [
+            "day"
+          ],
+          "conflicts": [
+            {
+              "key": "zhi",
+              "pillar": "day",
+              "values": [
+                "子",
+                "酉"
+              ]
+            }
+          ],
+          "displayed": false,
+          "verificationMethod": "delegated_adjudication",
+          "sourceCommit": "672aabc0a5fcba04cb1d5fc1d712233dca03d95a",
+          "adjudicationCommit": "48077232269ded4da1bcee2058603b7f80f9fd79",
+          "notDisplayedReason": "unknown"
+        },
+        "ZPR-P1-01-L1-STRUCT": {
+          "ruleId": "ZPR-P1-01-L1-STRUCT",
+          "semanticContractId": "ZPR-P1-01-TOUWU-20260930",
+          "state": "satisfied",
+          "positions": {
+            "戊": [
+              "year"
+            ]
+          },
+          "displayed": true,
+          "verificationMethod": "delegated_adjudication",
+          "sourceCommit": "672aabc0a5fcba04cb1d5fc1d712233dca03d95a",
+          "adjudicationCommit": "48077232269ded4da1bcee2058603b7f80f9fd79"
+        }
+      },
+      "display": [
+        "ZPR-P1-01-L1-STRUCT"
+      ],
+      "statements": [
+        "你是甲日生在辰月，辰中的戊字露在年柱的天干，与《子平真诠》论杂气一篇所举的写法一致。"
+      ],
+      "rendered": {
+        "ZPR-P1-01-L1-STRUCT": {
+          "statement": "你是甲日生在辰月，辰中的戊字露在年柱的天干，与《子平真诠》论杂气一篇所举的写法一致。",
+          "fold": "《子平真诠》论杂气一篇举甲日辰月为例，说‘透戊则用偏财’；同篇也说要取其清者、看配合是否有情。这里只说盘上结构，不据此下判断。"
+        }
+      }
+    },
+    "conflict_time_gan": {
+      "results": {
+        "SANMINGTONGH-015-L1-STRUCT": {
+          "ruleId": "SANMINGTONGH-015-L1-STRUCT",
+          "semanticContractId": "SMTH-015-SANHE-20260930",
+          "state": "satisfied",
+          "positions": {
+            "申": [
+              "year"
+            ],
+            "子": [
+              "day"
+            ],
+            "辰": [
+              "month"
+            ]
+          },
+          "displayed": true,
+          "verificationMethod": "delegated_adjudication",
+          "sourceCommit": "672aabc0a5fcba04cb1d5fc1d712233dca03d95a",
+          "adjudicationCommit": "48077232269ded4da1bcee2058603b7f80f9fd79"
+        },
+        "SMTH-CHONGJI-ZIWU-L1-STRUCT": {
+          "ruleId": "SMTH-CHONGJI-ZIWU-L1-STRUCT",
+          "semanticContractId": "SMTH-CHONGJI-ZIWU-20260930",
+          "state": "satisfied",
+          "positions": {
+            "子": [
+              "day"
+            ],
+            "午": [
+              "time"
+            ]
+          },
+          "displayed": true,
+          "verificationMethod": "delegated_adjudication",
+          "sourceCommit": "672aabc0a5fcba04cb1d5fc1d712233dca03d95a",
+          "adjudicationCommit": "48077232269ded4da1bcee2058603b7f80f9fd79"
+        },
+        "SMTH-CHONGJI-MAOYOU-L1-STRUCT": {
+          "ruleId": "SMTH-CHONGJI-MAOYOU-L1-STRUCT",
+          "semanticContractId": "SMTH-CHONGJI-MAOYOU-20260930",
+          "state": "not_satisfied",
+          "displayed": false,
+          "verificationMethod": "delegated_adjudication",
+          "sourceCommit": "672aabc0a5fcba04cb1d5fc1d712233dca03d95a",
+          "adjudicationCommit": "48077232269ded4da1bcee2058603b7f80f9fd79",
+          "notDisplayedReason": "not_satisfied"
+        },
+        "ZPR-P1-01-L1-STRUCT": {
+          "ruleId": "ZPR-P1-01-L1-STRUCT",
+          "semanticContractId": "ZPR-P1-01-TOUWU-20260930",
+          "state": "unknown",
+          "unknownPillars": [
+            "time"
+          ],
+          "conflicts": [
+            {
+              "key": "gan",
+              "pillar": "time",
+              "values": [
+                "戊",
+                "庚"
+              ]
+            }
+          ],
+          "displayed": false,
+          "verificationMethod": "delegated_adjudication",
+          "sourceCommit": "672aabc0a5fcba04cb1d5fc1d712233dca03d95a",
+          "adjudicationCommit": "48077232269ded4da1bcee2058603b7f80f9fd79",
+          "notDisplayedReason": "unknown"
+        }
+      },
+      "display": [
+        "SANMINGTONGH-015-L1-STRUCT",
+        "SMTH-CHONGJI-ZIWU-L1-STRUCT"
+      ],
+      "statements": [
+        "你的盘里申在年柱、子在日柱、辰在月柱，三字齐全；《三命通会·论支元三合》称申子辰为水局，并说三字缺一就不能按三合论。",
+        "你的盘里子在日柱、午在时柱，从子数到午是七位；《三命通会·论冲击》说地支取七位为冲，并举子午为对冲之例。"
+      ],
+      "rendered": {
+        "SANMINGTONGH-015-L1-STRUCT": {
+          "statement": "你的盘里申在年柱、子在日柱、辰在月柱，三字齐全；《三命通会·论支元三合》称申子辰为水局，并说三字缺一就不能按三合论。",
+          "fold": "《三命通会·论支元三合》说申是水生之地、子是水旺之地、辰是水库之地，所以称水局；又说三字缺一就不能按三合化局论。这里只说三字齐全，不说局已化成。"
+        },
+        "SMTH-CHONGJI-ZIWU-L1-STRUCT": {
+          "statement": "你的盘里子在日柱、午在时柱，从子数到午是七位；《三命通会·论冲击》说地支取七位为冲，并举子午为对冲之例。",
+          "fold": "《三命通会·论冲击》：地支取七位为冲，如子午对冲，子至午七数。同篇后文另讲冲的各种情形与轻重，这里只说两字的位置，不据此下判断。另一本书的称呼：《滴天髓阐微·知命》把子午对应为坎离（水火）。"
+        }
+      }
+    },
+    "ziwu_repeated_zi": {
+      "results": {
+        "SANMINGTONGH-015-L1-STRUCT": {
+          "ruleId": "SANMINGTONGH-015-L1-STRUCT",
+          "semanticContractId": "SMTH-015-SANHE-20260930",
+          "state": "not_satisfied",
+          "displayed": false,
+          "verificationMethod": "delegated_adjudication",
+          "sourceCommit": "672aabc0a5fcba04cb1d5fc1d712233dca03d95a",
+          "adjudicationCommit": "48077232269ded4da1bcee2058603b7f80f9fd79",
+          "notDisplayedReason": "not_satisfied"
+        },
+        "SMTH-CHONGJI-ZIWU-L1-STRUCT": {
+          "ruleId": "SMTH-CHONGJI-ZIWU-L1-STRUCT",
+          "semanticContractId": "SMTH-CHONGJI-ZIWU-20260930",
+          "state": "satisfied",
+          "positions": {
+            "子": [
+              "year",
+              "month",
+              "time"
+            ],
+            "午": [
+              "day"
+            ]
+          },
+          "displayed": true,
+          "verificationMethod": "delegated_adjudication",
+          "sourceCommit": "672aabc0a5fcba04cb1d5fc1d712233dca03d95a",
+          "adjudicationCommit": "48077232269ded4da1bcee2058603b7f80f9fd79"
+        },
+        "SMTH-CHONGJI-MAOYOU-L1-STRUCT": {
+          "ruleId": "SMTH-CHONGJI-MAOYOU-L1-STRUCT",
+          "semanticContractId": "SMTH-CHONGJI-MAOYOU-20260930",
+          "state": "not_satisfied",
+          "displayed": false,
+          "verificationMethod": "delegated_adjudication",
+          "sourceCommit": "672aabc0a5fcba04cb1d5fc1d712233dca03d95a",
+          "adjudicationCommit": "48077232269ded4da1bcee2058603b7f80f9fd79",
+          "notDisplayedReason": "not_satisfied"
+        },
+        "ZPR-P1-01-L1-STRUCT": {
+          "ruleId": "ZPR-P1-01-L1-STRUCT",
+          "semanticContractId": "ZPR-P1-01-TOUWU-20260930",
+          "state": "not_satisfied",
+          "displayed": false,
+          "verificationMethod": "delegated_adjudication",
+          "sourceCommit": "672aabc0a5fcba04cb1d5fc1d712233dca03d95a",
+          "adjudicationCommit": "48077232269ded4da1bcee2058603b7f80f9fd79",
+          "notDisplayedReason": "not_satisfied"
+        }
+      },
+      "display": [
+        "SMTH-CHONGJI-ZIWU-L1-STRUCT"
+      ],
+      "statements": [
+        "你的盘里子在年柱、月柱和时柱、午在日柱，从子数到午是七位；《三命通会·论冲击》说地支取七位为冲，并举子午为对冲之例。"
+      ],
+      "rendered": {
+        "SMTH-CHONGJI-ZIWU-L1-STRUCT": {
+          "statement": "你的盘里子在年柱、月柱和时柱、午在日柱，从子数到午是七位；《三命通会·论冲击》说地支取七位为冲，并举子午为对冲之例。",
+          "fold": "《三命通会·论冲击》：地支取七位为冲，如子午对冲，子至午七数。同篇后文另讲冲的各种情形与轻重，这里只说两字的位置，不据此下判断。另一本书的称呼：《滴天髓阐微·知命》把子午对应为坎离（水火）。"
+        }
+      }
+    },
+    "all_missing": {
+      "results": {
+        "SANMINGTONGH-015-L1-STRUCT": {
+          "ruleId": "SANMINGTONGH-015-L1-STRUCT",
+          "semanticContractId": "SMTH-015-SANHE-20260930",
+          "state": "unknown",
+          "unknownPillars": [
+            "year",
+            "month",
+            "day",
+            "time"
+          ],
+          "missingKeys": [
+            {
+              "key": "zhi",
+              "pillar": "year"
+            },
+            {
+              "key": "zhi",
+              "pillar": "month"
+            },
+            {
+              "key": "zhi",
+              "pillar": "day"
+            },
+            {
+              "key": "zhi",
+              "pillar": "time"
+            }
+          ],
+          "displayed": false,
+          "verificationMethod": "delegated_adjudication",
+          "sourceCommit": "672aabc0a5fcba04cb1d5fc1d712233dca03d95a",
+          "adjudicationCommit": "48077232269ded4da1bcee2058603b7f80f9fd79",
+          "notDisplayedReason": "unknown"
+        },
+        "SMTH-CHONGJI-ZIWU-L1-STRUCT": {
+          "ruleId": "SMTH-CHONGJI-ZIWU-L1-STRUCT",
+          "semanticContractId": "SMTH-CHONGJI-ZIWU-20260930",
+          "state": "unknown",
+          "unknownPillars": [
+            "year",
+            "month",
+            "day",
+            "time"
+          ],
+          "missingKeys": [
+            {
+              "key": "zhi",
+              "pillar": "year"
+            },
+            {
+              "key": "zhi",
+              "pillar": "month"
+            },
+            {
+              "key": "zhi",
+              "pillar": "day"
+            },
+            {
+              "key": "zhi",
+              "pillar": "time"
+            }
+          ],
+          "displayed": false,
+          "verificationMethod": "delegated_adjudication",
+          "sourceCommit": "672aabc0a5fcba04cb1d5fc1d712233dca03d95a",
+          "adjudicationCommit": "48077232269ded4da1bcee2058603b7f80f9fd79",
+          "notDisplayedReason": "unknown"
+        },
+        "SMTH-CHONGJI-MAOYOU-L1-STRUCT": {
+          "ruleId": "SMTH-CHONGJI-MAOYOU-L1-STRUCT",
+          "semanticContractId": "SMTH-CHONGJI-MAOYOU-20260930",
+          "state": "unknown",
+          "unknownPillars": [
+            "year",
+            "month",
+            "day",
+            "time"
+          ],
+          "missingKeys": [
+            {
+              "key": "zhi",
+              "pillar": "year"
+            },
+            {
+              "key": "zhi",
+              "pillar": "month"
+            },
+            {
+              "key": "zhi",
+              "pillar": "day"
+            },
+            {
+              "key": "zhi",
+              "pillar": "time"
+            }
+          ],
+          "displayed": false,
+          "verificationMethod": "delegated_adjudication",
+          "sourceCommit": "672aabc0a5fcba04cb1d5fc1d712233dca03d95a",
+          "adjudicationCommit": "48077232269ded4da1bcee2058603b7f80f9fd79",
+          "notDisplayedReason": "unknown"
+        },
+        "ZPR-P1-01-L1-STRUCT": {
+          "ruleId": "ZPR-P1-01-L1-STRUCT",
+          "semanticContractId": "ZPR-P1-01-TOUWU-20260930",
+          "state": "unknown",
+          "unknownPillars": [
+            "year",
+            "month",
+            "day",
+            "time"
+          ],
+          "missingKeys": [
+            {
+              "key": "gan",
+              "pillar": "year"
+            },
+            {
+              "key": "gan",
+              "pillar": "month"
+            },
+            {
+              "key": "zhi",
+              "pillar": "month"
+            },
+            {
+              "key": "canggan",
+              "pillar": "month"
+            },
+            {
+              "key": "gan",
+              "pillar": "day"
+            },
+            {
+              "key": "gan",
+              "pillar": "time"
+            }
+          ],
+          "displayed": false,
+          "verificationMethod": "delegated_adjudication",
+          "sourceCommit": "672aabc0a5fcba04cb1d5fc1d712233dca03d95a",
+          "adjudicationCommit": "48077232269ded4da1bcee2058603b7f80f9fd79",
+          "notDisplayedReason": "unknown"
+        }
+      },
+      "display": [],
+      "statements": [],
+      "rendered": {}
+    }
+  },
+  "limitations": [
+    "Python 只复算输入 facts，不重排出生时间；合成样盘不等于产品端到端验收。",
+    "productStatements 为可选字段；仅在提供时逐字比对，报告列明提供行数。"
+  ]
+}

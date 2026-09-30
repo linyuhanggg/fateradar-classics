@@ -1,0 +1,3542 @@
+{
+  "schema": "fateradar-bazi-structure-contracts-v1",
+  "contractVersion": "p1-bazi-structure-contracts-20260930-v1",
+  "art": "bazi",
+  "contractPurpose": "structure_statement",
+  "status": "pending_product_fixture",
+  "verified": false,
+  "verificationMethod": "delegated_adjudication",
+  "verificationComponents": [
+    "原文锚点逐字校验：每条引文在所钉行内逐字出现",
+    "裁决书：docs/closeout/P1_STRUCTURE_CONTRACT_ADJUDICATION_20260930.md 逐条写明疑点、裁决与可执行条件",
+    "三态样盘：每条结构合同都有满足、不满足、信息不足三类样盘",
+    "双实现一致：待产品夹具；产品 TypeScript 与本仓 Python 须逐盘一致，完成前不标 accepted 或 verified"
+  ],
+  "adjudication": {
+    "id": "p1-structure-adjudication-20260930",
+    "document": "docs/closeout/P1_STRUCTURE_CONTRACT_ADJUDICATION_20260930.md",
+    "commit": "48077232269ded4da1bcee2058603b7f80f9fd79",
+    "adjudicator": "Claude（claude-opus-5-5），受用户委托代为裁决，无人工复核",
+    "userInstruction": "用户 2026-09-27 在产品会话中指示“原文解释交给你来拍板，不需要人类接入，然后你继续开发”；2026-09-30 用户授权编排会话操作本仓，并说明授权范围内的操作直接执行、不再询问。"
+  },
+  "sourcePin": {
+    "path": "sources/fulltext",
+    "gitTree": "f296230d0f095eb57a5002e8394913c21f0d2025",
+    "remoteRef": "refs/heads/main",
+    "remoteCommit": "672aabc0a5fcba04cb1d5fc1d712233dca03d95a"
+  },
+  "sources": {
+    "sanming": "sources/fulltext/bazi/sanming-tonghui/fulltext.md",
+    "ditiansui": "sources/fulltext/bazi/ditiansui-chanwei/fulltext.md",
+    "ziping": "sources/fulltext/bazi/ziping-zhenquan/fulltext.md"
+  },
+  "anchors": [
+    {
+      "id": "smth-sanhe-list",
+      "source": "sanming",
+      "startLine": 1216,
+      "endLine": 1216,
+      "quote": "考厯家申子辰初之氣俱起於下漏一刻巳酉丑初之氣俱起於二十六刻寅午戊初之氣俱起於五十一刻亥卯未初之氣俱起於七十六刻氣皆起於同刻是天地自然之理也故謂之三合",
+      "role": "statement"
+    },
+    {
+      "id": "smth-sanhe-water",
+      "source": "sanming",
+      "startLine": 1217,
+      "endLine": 1217,
+      "quote": "如申子辰申乃子之母辰乃子之子申乃水生子乃水旺辰乃水氣生即産旺即成庫即收有生有成有收萬物得始得終乃自然之理故申子申為水局若三字缺其一則化不成局不可以三合化局論",
+      "role": "statement"
+    },
+    {
+      "id": "smth-sanhe-collation",
+      "source": "sanming",
+      "startLine": 1218,
+      "endLine": 1218,
+      "quote": "酉丑寅午戍亥卯未皆然五行不言土者四行皆頼土成局",
+      "role": "support"
+    },
+    {
+      "id": "smth-sanhe-effect",
+      "source": "sanming",
+      "startLine": 1218,
+      "endLine": 1218,
+      "quote": "凡命有合要得局為佳",
+      "role": "not_authorized"
+    },
+    {
+      "id": "smth-chongji-heading",
+      "source": "sanming",
+      "startLine": 1282,
+      "endLine": 1282,
+      "quote": "〔對靣相衝之氣謂之一七煞者是也〕",
+      "role": "support"
+    },
+    {
+      "id": "smth-chongji-definition",
+      "source": "sanming",
+      "startLine": 1283,
+      "endLine": 1283,
+      "quote": "地支取七位為衝猶天干取七位為煞之義如子午對衝子至午七數",
+      "role": "statement"
+    },
+    {
+      "id": "smth-chongji-sha",
+      "source": "sanming",
+      "startLine": 1283,
+      "endLine": 1283,
+      "quote": "數中六則合七則過故相衝擊為煞也",
+      "role": "not_authorized"
+    },
+    {
+      "id": "smth-chongji-effect",
+      "source": "sanming",
+      "startLine": 1284,
+      "endLine": 1284,
+      "quote": "神大槩為凶然有為福之甚者乃衝處相生",
+      "role": "not_authorized"
+    },
+    {
+      "id": "dts-four-names",
+      "source": "ditiansui",
+      "startLine": 97,
+      "endLine": 97,
+      "quote": "地支子午卯酉，又配坎离震兑。",
+      "role": "fold_other_book"
+    },
+    {
+      "id": "dts-maoyou-name",
+      "source": "ditiansui",
+      "startLine": 101,
+      "endLine": 101,
+      "quote": "卯酉为震兑",
+      "role": "fold_other_book"
+    },
+    {
+      "id": "dts-ziwu-name",
+      "source": "ditiansui",
+      "startLine": 102,
+      "endLine": 102,
+      "quote": "子午为坎离",
+      "role": "fold_other_book"
+    },
+    {
+      "id": "dts-example-premise",
+      "source": "ditiansui",
+      "startLine": 98,
+      "endLine": 98,
+      "quote": "支全四正，气贯八方，然五行无土，虽诞秋令，不作旺论。",
+      "role": "not_authorized"
+    },
+    {
+      "id": "dts-ziwu-effect",
+      "source": "ditiansui",
+      "startLine": 99,
+      "endLine": 99,
+      "quote": "最喜子午逢冲，水克火，使午火不破酉金，足以辅主；",
+      "role": "not_authorized"
+    },
+    {
+      "id": "dts-maoyou-effect",
+      "source": "ditiansui",
+      "startLine": 100,
+      "endLine": 100,
+      "quote": "更妙卯酉逢冲，金克木，则卯木不助午火，制伏得宜。",
+      "role": "not_authorized"
+    },
+    {
+      "id": "dts-jiji-effect",
+      "source": "ditiansui",
+      "startLine": 103,
+      "endLine": 103,
+      "quote": "且坎离得日月之正体，无消无灭，一润一暄，坐下端门，水火既济。",
+      "role": "not_authorized"
+    },
+    {
+      "id": "zpr-chen-hidden",
+      "source": "ziping",
+      "startLine": 542,
+      "endLine": 542,
+      "quote": "如辰本藏戊，而又爲水庫，爲乙餘氣【校：「氣」字據中州本補】，三者俱有",
+      "role": "statement"
+    },
+    {
+      "id": "zpr-clear-premise",
+      "source": "ziping",
+      "startLine": 542,
+      "endLine": 542,
+      "quote": "透干會支，取其清者用之，雜而不雜也。",
+      "role": "support"
+    },
+    {
+      "id": "zpr-jia-chen-wu",
+      "source": "ziping",
+      "startLine": 544,
+      "endLine": 544,
+      "quote": "如甲生辰【校：「辰」原作「三」，據下文及中州本改】月，透戊則用偏財",
+      "role": "statement"
+    },
+    {
+      "id": "zpr-emotion-effect",
+      "source": "ziping",
+      "startLine": 548,
+      "endLine": 548,
+      "quote": "其合而有情者則爲吉，其合而無情者則不吉。",
+      "role": "not_authorized"
+    }
+  ],
+  "rules": [
+    {
+      "category": "sanhe",
+      "ruleId": "SANMINGTONGH-015-L1-STRUCT",
+      "semanticContractId": "SMTH-015-SANHE-20260930",
+      "sourceRuleId": "SANMINGTONGH-015",
+      "relatedNonL1RuleIds": [],
+      "displayOrder": 1,
+      "book": "bazi/sanming-tonghui",
+      "chapter": "論支元三合",
+      "pageCitation": "《三命通会·论支元三合》",
+      "topic": "overview",
+      "layer": "本命",
+      "contractPurpose": "structure_statement",
+      "rulings": [
+        "015-1",
+        "015-2",
+        "015-3",
+        "015-4"
+      ],
+      "statementAnchors": [
+        "smth-sanhe-list",
+        "smth-sanhe-water"
+      ],
+      "foldAnchors": [
+        "smth-sanhe-collation"
+      ],
+      "notAuthorizedAnchors": [
+        "smth-sanhe-effect"
+      ],
+      "structure": {
+        "kind": "branch_triad_complete",
+        "pillars": [
+          "year",
+          "month",
+          "day",
+          "time"
+        ],
+        "groups": [
+          {
+            "branches": [
+              "申",
+              "子",
+              "辰"
+            ],
+            "variant": "water"
+          },
+          {
+            "branches": [
+              "巳",
+              "酉",
+              "丑"
+            ],
+            "variant": "other",
+            "foldElement": "金"
+          },
+          {
+            "branches": [
+              "寅",
+              "午",
+              "戌"
+            ],
+            "variant": "other",
+            "foldElement": "火"
+          },
+          {
+            "branches": [
+              "亥",
+              "卯",
+              "未"
+            ],
+            "variant": "other",
+            "foldElement": "木"
+          }
+        ]
+      },
+      "copy": {
+        "water": {
+          "statement": "你的盘里申在{pos:申}、子在{pos:子}、辰在{pos:辰}，三字齐全；《三命通会·论支元三合》称申子辰为水局，并说三字缺一就不能按三合论。",
+          "fold": "《三命通会·论支元三合》说申是水生之地、子是水旺之地、辰是水库之地，所以称水局；又说三字缺一就不能按三合化局论。这里只说三字齐全，不说局已化成。"
+        },
+        "other": {
+          "statement": "你的盘里{b1}在{pos:b1}、{b2}在{pos:b2}、{b3}在{pos:b3}，三字齐全，是《三命通会·论支元三合》所列三合的一组；书中也说三字缺一就不能按三合论。",
+          "fold": "《三命通会·论支元三合》只对申子辰写明水局，其余三组以‘皆然’带过；按同篇所说生、旺、库的道理，{b1}{b2}{b3}对应{element}——这是按同篇道理推算的，这一篇没有直接写出。这里只说三字齐全，不说局已化成。"
+        }
+      },
+      "fixtures": {
+        "satisfied": [
+          "R1_cap",
+          "sanhe_repeated_shen",
+          "sanhe_metal",
+          "sanhe_fire",
+          "sanhe_wood",
+          "jia_year_wu_time_missing",
+          "conflict_time_gan"
+        ],
+        "not_satisfied": [
+          "R2_hour_wu",
+          "R2_time_removed",
+          "sanhe_one_time_missing",
+          "known_none",
+          "ziwu_time_missing",
+          "ziwu_none_time_missing",
+          "maoyou_complete",
+          "maoyou_time_missing",
+          "jia_not_jia",
+          "jia_not_chen",
+          "jia_missing_hidden",
+          "jia_year_month_wu",
+          "jia_three_wu",
+          "jia_no_wu",
+          "jia_hidden_without_wu",
+          "jia_year_gan_missing",
+          "jia_day_gan_missing",
+          "ziwu_repeated_zi"
+        ],
+        "unknown": [
+          "sanhe_two_time_missing",
+          "two_pillars_missing",
+          "conflict_day_zhi",
+          "all_missing"
+        ]
+      }
+    },
+    {
+      "category": "ziwu",
+      "ruleId": "SMTH-CHONGJI-ZIWU-L1-STRUCT",
+      "semanticContractId": "SMTH-CHONGJI-ZIWU-20260930",
+      "sourceRuleId": null,
+      "relatedNonL1RuleIds": [
+        "DITIANSUICHA-032"
+      ],
+      "displayOrder": 2,
+      "book": "bazi/sanming-tonghui",
+      "chapter": "論衝擊",
+      "pageCitation": "《三命通会·论冲击》",
+      "topic": "overview",
+      "layer": "本命",
+      "contractPurpose": "structure_statement",
+      "rulings": [
+        "5-1",
+        "5-2"
+      ],
+      "statementAnchors": [
+        "smth-chongji-definition"
+      ],
+      "foldAnchors": [
+        "smth-chongji-heading",
+        "dts-four-names",
+        "dts-ziwu-name"
+      ],
+      "notAuthorizedAnchors": [
+        "smth-chongji-sha",
+        "smth-chongji-effect",
+        "dts-example-premise",
+        "dts-ziwu-effect",
+        "dts-maoyou-effect",
+        "dts-jiji-effect"
+      ],
+      "structure": {
+        "kind": "branch_pair_present",
+        "pillars": [
+          "year",
+          "month",
+          "day",
+          "time"
+        ],
+        "branches": [
+          "子",
+          "午"
+        ]
+      },
+      "copy": {
+        "statement": "你的盘里子在{pos:子}、午在{pos:午}，从子数到午是七位；《三命通会·论冲击》说地支取七位为冲，并举子午为对冲之例。",
+        "fold": "《三命通会·论冲击》：地支取七位为冲，如子午对冲，子至午七数。同篇后文另讲冲的各种情形与轻重，这里只说两字的位置，不据此下判断。另一本书的称呼：《滴天髓阐微·知命》把子午对应为坎离（水火）。"
+      },
+      "fixtures": {
+        "satisfied": [
+          "R1_cap",
+          "conflict_time_gan",
+          "ziwu_repeated_zi"
+        ],
+        "not_satisfied": [
+          "R2_hour_wu",
+          "sanhe_one_time_missing",
+          "sanhe_repeated_shen",
+          "sanhe_metal",
+          "sanhe_fire",
+          "sanhe_wood",
+          "known_none",
+          "ziwu_none_time_missing",
+          "maoyou_complete",
+          "maoyou_time_missing",
+          "jia_not_jia",
+          "jia_not_chen",
+          "jia_missing_hidden",
+          "jia_year_month_wu",
+          "jia_three_wu",
+          "jia_no_wu",
+          "jia_hidden_without_wu",
+          "jia_year_gan_missing",
+          "jia_day_gan_missing"
+        ],
+        "unknown": [
+          "R2_time_removed",
+          "sanhe_two_time_missing",
+          "ziwu_time_missing",
+          "two_pillars_missing",
+          "jia_year_wu_time_missing",
+          "conflict_day_zhi",
+          "all_missing"
+        ]
+      }
+    },
+    {
+      "category": "maoyou",
+      "ruleId": "SMTH-CHONGJI-MAOYOU-L1-STRUCT",
+      "semanticContractId": "SMTH-CHONGJI-MAOYOU-20260930",
+      "sourceRuleId": null,
+      "relatedNonL1RuleIds": [
+        "DITIANSUICHA-031"
+      ],
+      "displayOrder": 3,
+      "book": "bazi/sanming-tonghui",
+      "chapter": "論衝擊",
+      "pageCitation": "《三命通会·论冲击》",
+      "topic": "overview",
+      "layer": "本命",
+      "contractPurpose": "structure_statement",
+      "rulings": [
+        "6-1",
+        "6-2"
+      ],
+      "statementAnchors": [
+        "smth-chongji-definition"
+      ],
+      "foldAnchors": [
+        "smth-chongji-heading",
+        "dts-four-names",
+        "dts-maoyou-name"
+      ],
+      "notAuthorizedAnchors": [
+        "smth-chongji-sha",
+        "smth-chongji-effect",
+        "dts-example-premise",
+        "dts-ziwu-effect",
+        "dts-maoyou-effect",
+        "dts-jiji-effect"
+      ],
+      "structure": {
+        "kind": "branch_pair_present",
+        "pillars": [
+          "year",
+          "month",
+          "day",
+          "time"
+        ],
+        "branches": [
+          "卯",
+          "酉"
+        ]
+      },
+      "copy": {
+        "statement": "你的盘里卯在{pos:卯}、酉在{pos:酉}，从卯数到酉是七位；《三命通会·论冲击》说地支取七位为冲。",
+        "fold": "《三命通会·论冲击》说地支取七位为冲，书中举的例子是子午；从卯数到酉同样是七位。同篇后文另讲冲的各种情形与轻重，这里只说两字的位置，不据此下判断。另一本书的称呼：《滴天髓阐微·知命》把卯酉对应为震兑。"
+      },
+      "fixtures": {
+        "satisfied": [
+          "maoyou_complete"
+        ],
+        "not_satisfied": [
+          "R1_cap",
+          "R2_hour_wu",
+          "R2_time_removed",
+          "sanhe_one_time_missing",
+          "sanhe_repeated_shen",
+          "sanhe_metal",
+          "sanhe_fire",
+          "sanhe_wood",
+          "known_none",
+          "ziwu_time_missing",
+          "ziwu_none_time_missing",
+          "jia_not_jia",
+          "jia_not_chen",
+          "jia_missing_hidden",
+          "jia_year_wu_time_missing",
+          "jia_year_month_wu",
+          "jia_three_wu",
+          "jia_no_wu",
+          "jia_hidden_without_wu",
+          "jia_year_gan_missing",
+          "jia_day_gan_missing",
+          "conflict_time_gan",
+          "ziwu_repeated_zi"
+        ],
+        "unknown": [
+          "sanhe_two_time_missing",
+          "two_pillars_missing",
+          "maoyou_time_missing",
+          "conflict_day_zhi",
+          "all_missing"
+        ]
+      }
+    },
+    {
+      "category": "jia_chen_wu",
+      "ruleId": "ZPR-P1-01-L1-STRUCT",
+      "semanticContractId": "ZPR-P1-01-TOUWU-20260930",
+      "sourceRuleId": "ZPR-P1-01",
+      "relatedNonL1RuleIds": [],
+      "displayOrder": 4,
+      "book": "bazi/ziping-zhenquan",
+      "chapter": "論雜氣如何取用",
+      "pageCitation": "《子平真诠》论杂气一篇",
+      "topic": "overview",
+      "layer": "本命",
+      "contractPurpose": "structure_statement",
+      "rulings": [
+        "P1-01-1",
+        "P1-01-2"
+      ],
+      "statementAnchors": [
+        "zpr-chen-hidden",
+        "zpr-jia-chen-wu"
+      ],
+      "foldAnchors": [
+        "zpr-clear-premise"
+      ],
+      "notAuthorizedAnchors": [
+        "zpr-emotion-effect"
+      ],
+      "structure": {
+        "kind": "month_hidden_stem_exposed",
+        "dayStem": "甲",
+        "monthBranch": "辰",
+        "hiddenStem": "戊",
+        "exposedAt": [
+          "year",
+          "month",
+          "time"
+        ]
+      },
+      "copy": {
+        "statement": "你是甲日生在辰月，辰中的戊字露在{pos:戊}的天干，与《子平真诠》论杂气一篇所举的写法一致。",
+        "fold": "《子平真诠》论杂气一篇举甲日辰月为例，说‘透戊则用偏财’；同篇也说要取其清者、看配合是否有情。这里只说盘上结构，不据此下判断。"
+      },
+      "fixtures": {
+        "satisfied": [
+          "R1_cap",
+          "R2_hour_wu",
+          "jia_year_wu_time_missing",
+          "jia_year_month_wu",
+          "jia_three_wu",
+          "conflict_day_zhi"
+        ],
+        "not_satisfied": [
+          "sanhe_two_time_missing",
+          "sanhe_one_time_missing",
+          "sanhe_repeated_shen",
+          "sanhe_metal",
+          "sanhe_fire",
+          "sanhe_wood",
+          "known_none",
+          "ziwu_time_missing",
+          "ziwu_none_time_missing",
+          "maoyou_complete",
+          "maoyou_time_missing",
+          "jia_not_jia",
+          "jia_not_chen",
+          "jia_no_wu",
+          "jia_hidden_without_wu",
+          "ziwu_repeated_zi"
+        ],
+        "unknown": [
+          "R2_time_removed",
+          "two_pillars_missing",
+          "jia_missing_hidden",
+          "jia_year_gan_missing",
+          "jia_day_gan_missing",
+          "conflict_time_gan",
+          "all_missing"
+        ]
+      }
+    }
+  ],
+  "factVocabulary": {
+    "shape": {
+      "key": "gan|zhi|canggan",
+      "value": "字",
+      "scope": {
+        "layer": "本命",
+        "pillar": "year|month|day|time"
+      }
+    },
+    "pillars": [
+      "year",
+      "month",
+      "day",
+      "time"
+    ],
+    "keys": {
+      "gan": {
+        "cardinality": "single",
+        "values": [
+          "甲",
+          "乙",
+          "丙",
+          "丁",
+          "戊",
+          "己",
+          "庚",
+          "辛",
+          "壬",
+          "癸"
+        ]
+      },
+      "zhi": {
+        "cardinality": "single",
+        "values": [
+          "子",
+          "丑",
+          "寅",
+          "卯",
+          "辰",
+          "巳",
+          "午",
+          "未",
+          "申",
+          "酉",
+          "戌",
+          "亥"
+        ]
+      },
+      "canggan": {
+        "cardinality": "multiple",
+        "values": [
+          "甲",
+          "乙",
+          "丙",
+          "丁",
+          "戊",
+          "己",
+          "庚",
+          "辛",
+          "壬",
+          "癸"
+        ]
+      }
+    },
+    "notes": [
+      "其他键、非本命层忽略；时柱只用 time。",
+      "缺事实键表示未知柱，不以值“信息不足”代替。",
+      "同柱同键的重复相同值去重；gan/zhi 有两个不同值即冲突，canggan 多值不是冲突。",
+      "辰月的 canggan@month 逐条发戊、乙、癸；不从 zhi 自动补藏干。"
+    ]
+  },
+  "triState": {
+    "states": [
+      "satisfied",
+      "not_satisfied",
+      "unknown"
+    ],
+    "rulings": [
+      "第 3 节未知柱",
+      "015-4",
+      "5-2",
+      "6-2",
+      "P1-01-2",
+      "第 9 节导出 JSON、数量与次序"
+    ],
+    "common": "相关单值键的冲突优先于满足与不满足，整条 unknown；缺键为未知柱，不作否定；冲突柱不计入缺键柱数 k。",
+    "sanhe": "已知柱中任一组三字齐全即 satisfied；否则某组已出现 p 个不同字，若 1 ≤ 3−p ≤ k 则 unknown；否则 not_satisfied。同一字重复不顶替另一字。",
+    "pairs": "已知柱两字都出现即 satisfied；否则已出现 p 种，若 2−p ≤ k 则 unknown；否则 not_satisfied。",
+    "jia_chen_wu": "先查 gan@day、zhi@month、canggan@month 缺失或相关 gan/zhi 冲突，任一即 unknown；前提完整但日干非甲、月支非辰或月柱藏干无戊则 not_satisfied；否则年月时干任一戊则 satisfied，多处全列；没戊而任一缺 gan 则 unknown；全部已知无戊则 not_satisfied。",
+    "export": "每盘记录四条三态，满足附全部柱位；unknown 记录缺键柱或冲突；满足但排在前两句之后的记 display_cap。",
+    "currentProduct": "裁决书第 3 节：当前产品排盘要求四柱齐全；缺柱情形只在合成事实样盘出现，仍须验证。"
+  },
+  "displayPolicy": {
+    "placement": "overview_natal_after_reasons_before_advice",
+    "countsAsReason": false,
+    "label": "古籍依据：",
+    "maxStatements": 2,
+    "order": [
+      "sanhe",
+      "ziwu",
+      "maoyou",
+      "jia_chen_wu"
+    ],
+    "onePerCategory": true,
+    "onlyState": "satisfied",
+    "notDisplayedReason": "display_cap",
+    "positionOrder": [
+      "year",
+      "month",
+      "day",
+      "time"
+    ],
+    "positionNames": {
+      "year": "年柱",
+      "month": "月柱",
+      "day": "日柱",
+      "time": "时柱"
+    },
+    "positionJoin": "一处：年柱；两处：年柱和日柱；三处以上：年柱、月柱和时柱。",
+    "foldPlacement": "盘面依据",
+    "preservesTopicTier": true
+  },
+  "exportPolicy": {
+    "everyRuleEveryChart": true,
+    "fields": [
+      "ruleId",
+      "semanticContractId",
+      "state",
+      "positions",
+      "unknownPillars",
+      "missingKeys",
+      "conflicts",
+      "displayed",
+      "notDisplayedReason",
+      "verificationMethod",
+      "sourceCommit",
+      "adjudicationCommit"
+    ],
+    "positions": "仅 satisfied：{字: [year|month|day|time, ...]}，所有位置按四柱顺序。",
+    "unknownPillars": "仅 unknown：缺键或冲突所涉柱的并集，按四柱顺序。",
+    "missingKeys": "仅有缺键时：[{key, pillar}]，按四柱顺序、同柱 gan/zhi/canggan 顺序。",
+    "conflicts": "仅有冲突时：[{key, pillar, values}]，值按十干/十二支顺序；canggan 不报告多值冲突。",
+    "notDisplayedReason": {
+      "satisfied": "display_cap（仅超过最多两句时）",
+      "not_satisfied": "not_satisfied",
+      "unknown": "unknown"
+    },
+    "verificationMethod": "delegated_adjudication",
+    "sourceCommit": "sourcePin.remoteCommit",
+    "adjudicationCommit": "adjudication.commit",
+    "statements": "expectedStatements / productStatements 为已显示正文字符串数组，与 expectedDisplay / productDisplay 同序；不带 displayPolicy.label。每个 satisfied 的折叠都验文案，即使受 display_cap 限制未显示。"
+  },
+  "excluded": [
+    {
+      "ruleId": "ZPR-P1-03",
+      "ruling": "not_l1_eligible",
+      "reason": "把 P1-01 的入口归为“财官印食，善而顺用”（L328）的用神方向分类，前提是用神与配合，属产品流派说法层；去掉方向词只剩与 P1-01 相同的结构观察，不另出合同或显示句。"
+    }
+  ],
+  "deferred": [
+    {
+      "ruleId": "ZPR-P1-04",
+      "ruling": "deferred",
+      "reason": "产品单气结构出口与 L419“除子午卯酉外，餘皆有藏”的范围须先对齐；支持链需 L146–149、L419、L468、L470 合看，L883 又说明仅见丙子月不能承诺正官格，先对齐范围再裁。"
+    },
+    {
+      "ruleId": "ZPR-P1-06",
+      "ruling": "deferred",
+      "reason": "388 盘无满足样盘；L435 的“化官”“格成正財”“兼格”与 L452 的“兩相得”超出结构观察，待有正例与扩样再裁。"
+    }
+  ],
+  "fixture": null,
+  "fixtureFormat": {
+    "path": "tools/reports/p1-bazi-20260930/structure-contract-fixture.json",
+    "sha256": null,
+    "sha256Policy": "产品接入后由编排者将 path 与该文件原始字节 sha256 填入 fixture；本处 sha256 为待填说明，不是已核验摘要。",
+    "rows": [
+      {
+        "id": "每个 cohort 内唯一的盘编号；重复行拒绝，跨 cohort 按 id 去重统计总体覆盖",
+        "cohort": "coverage388|named|time_removed",
+        "birthInput?": "产品原始出生输入，仅追溯；Python 只读 facts 独立复算",
+        "facts": [
+          {
+            "key": "gan|zhi|canggan",
+            "value": "字",
+            "scope": {
+              "layer": "本命",
+              "pillar": "year|month|day|time"
+            }
+          }
+        ],
+        "product": {
+          "<ruleId>": {
+            "state": "satisfied|not_satisfied|unknown",
+            "positions?": "见 exportPolicy",
+            "unknownPillars?": "见 exportPolicy",
+            "missingKeys?": "见 exportPolicy",
+            "conflicts?": "见 exportPolicy",
+            "displayed": "boolean",
+            "notDisplayedReason?": "见 exportPolicy"
+          }
+        },
+        "productDisplay": [
+          "ruleId..."
+        ],
+        "productStatements?": [
+          "已显示正文，不带行首标签，与 productDisplay 同序"
+        ]
+      }
+    ],
+    "comparison": "四条结果必须齐全，比较三态、柱位、未知诊断、显示及未显示原因；有 productStatements 时逐字比对。可选附 exportPolicy 中的追溯字段，若提供也逐项比对。",
+    "coverage": "按 cohort 报行数、去重盘数、各规则三态计数、满足/显示句数及至少一句的去重盘数；测试替身不代表产品验收。"
+  },
+  "syntheticCases": [
+    {
+      "id": "R1_cap",
+      "description": "任务提供的产品真排盘记录：1968-04-24 12:30 上海 真太阳时 男，戊申 丙辰 甲子 庚午；此处只验证给定事实，不重新排盘。",
+      "facts": [
+        {
+          "key": "gan",
+          "value": "戊",
+          "scope": {
+            "layer": "本命",
+            "pillar": "year"
+          }
+        },
+        {
+          "key": "zhi",
+          "value": "申",
+          "scope": {
+            "layer": "本命",
+            "pillar": "year"
+          }
+        },
+        {
+          "key": "gan",
+          "value": "丙",
+          "scope": {
+            "layer": "本命",
+            "pillar": "month"
+          }
+        },
+        {
+          "key": "zhi",
+          "value": "辰",
+          "scope": {
+            "layer": "本命",
+            "pillar": "month"
+          }
+        },
+        {
+          "key": "gan",
+          "value": "甲",
+          "scope": {
+            "layer": "本命",
+            "pillar": "day"
+          }
+        },
+        {
+          "key": "zhi",
+          "value": "子",
+          "scope": {
+            "layer": "本命",
+            "pillar": "day"
+          }
+        },
+        {
+          "key": "gan",
+          "value": "庚",
+          "scope": {
+            "layer": "本命",
+            "pillar": "time"
+          }
+        },
+        {
+          "key": "zhi",
+          "value": "午",
+          "scope": {
+            "layer": "本命",
+            "pillar": "time"
+          }
+        },
+        {
+          "key": "canggan",
+          "value": "戊",
+          "scope": {
+            "layer": "本命",
+            "pillar": "month"
+          }
+        },
+        {
+          "key": "canggan",
+          "value": "乙",
+          "scope": {
+            "layer": "本命",
+            "pillar": "month"
+          }
+        },
+        {
+          "key": "canggan",
+          "value": "癸",
+          "scope": {
+            "layer": "本命",
+            "pillar": "month"
+          }
+        }
+      ],
+      "expected": {
+        "SANMINGTONGH-015-L1-STRUCT": "satisfied",
+        "SMTH-CHONGJI-ZIWU-L1-STRUCT": "satisfied",
+        "SMTH-CHONGJI-MAOYOU-L1-STRUCT": "not_satisfied",
+        "ZPR-P1-01-L1-STRUCT": "satisfied"
+      },
+      "expectedDisplay": [
+        "SANMINGTONGH-015-L1-STRUCT",
+        "SMTH-CHONGJI-ZIWU-L1-STRUCT"
+      ],
+      "expectedPositions": {
+        "SANMINGTONGH-015-L1-STRUCT": {
+          "申": [
+            "year"
+          ],
+          "子": [
+            "day"
+          ],
+          "辰": [
+            "month"
+          ]
+        },
+        "SMTH-CHONGJI-ZIWU-L1-STRUCT": {
+          "子": [
+            "day"
+          ],
+          "午": [
+            "time"
+          ]
+        },
+        "ZPR-P1-01-L1-STRUCT": {
+          "戊": [
+            "year"
+          ]
+        }
+      },
+      "expectedStatements": [
+        "你的盘里申在年柱、子在日柱、辰在月柱，三字齐全；《三命通会·论支元三合》称申子辰为水局，并说三字缺一就不能按三合论。",
+        "你的盘里子在日柱、午在时柱，从子数到午是七位；《三命通会·论冲击》说地支取七位为冲，并举子午为对冲之例。"
+      ]
+    },
+    {
+      "id": "R2_hour_wu",
+      "description": "任务提供的产品真排盘记录：1990-04-09 08:30 上海 真太阳时，庚午 庚辰 甲辰 戊辰；戊仅在时干。",
+      "facts": [
+        {
+          "key": "gan",
+          "value": "庚",
+          "scope": {
+            "layer": "本命",
+            "pillar": "year"
+          }
+        },
+        {
+          "key": "zhi",
+          "value": "午",
+          "scope": {
+            "layer": "本命",
+            "pillar": "year"
+          }
+        },
+        {
+          "key": "gan",
+          "value": "庚",
+          "scope": {
+            "layer": "本命",
+            "pillar": "month"
+          }
+        },
+        {
+          "key": "zhi",
+          "value": "辰",
+          "scope": {
+            "layer": "本命",
+            "pillar": "month"
+          }
+        },
+        {
+          "key": "gan",
+          "value": "甲",
+          "scope": {
+            "layer": "本命",
+            "pillar": "day"
+          }
+        },
+        {
+          "key": "zhi",
+          "value": "辰",
+          "scope": {
+            "layer": "本命",
+            "pillar": "day"
+          }
+        },
+        {
+          "key": "gan",
+          "value": "戊",
+          "scope": {
+            "layer": "本命",
+            "pillar": "time"
+          }
+        },
+        {
+          "key": "zhi",
+          "value": "辰",
+          "scope": {
+            "layer": "本命",
+            "pillar": "time"
+          }
+        },
+        {
+          "key": "canggan",
+          "value": "戊",
+          "scope": {
+            "layer": "本命",
+            "pillar": "month"
+          }
+        },
+        {
+          "key": "canggan",
+          "value": "乙",
+          "scope": {
+            "layer": "本命",
+            "pillar": "month"
+          }
+        },
+        {
+          "key": "canggan",
+          "value": "癸",
+          "scope": {
+            "layer": "本命",
+            "pillar": "month"
+          }
+        }
+      ],
+      "expected": {
+        "SANMINGTONGH-015-L1-STRUCT": "not_satisfied",
+        "SMTH-CHONGJI-ZIWU-L1-STRUCT": "not_satisfied",
+        "SMTH-CHONGJI-MAOYOU-L1-STRUCT": "not_satisfied",
+        "ZPR-P1-01-L1-STRUCT": "satisfied"
+      },
+      "expectedDisplay": [
+        "ZPR-P1-01-L1-STRUCT"
+      ],
+      "expectedPositions": {
+        "ZPR-P1-01-L1-STRUCT": {
+          "戊": [
+            "time"
+          ]
+        }
+      },
+      "expectedStatements": [
+        "你是甲日生在辰月，辰中的戊字露在时柱的天干，与《子平真诠》论杂气一篇所举的写法一致。"
+      ]
+    },
+    {
+      "id": "R2_time_removed",
+      "description": "R2 删除时柱全部事实。",
+      "facts": [
+        {
+          "key": "gan",
+          "value": "庚",
+          "scope": {
+            "layer": "本命",
+            "pillar": "year"
+          }
+        },
+        {
+          "key": "zhi",
+          "value": "午",
+          "scope": {
+            "layer": "本命",
+            "pillar": "year"
+          }
+        },
+        {
+          "key": "gan",
+          "value": "庚",
+          "scope": {
+            "layer": "本命",
+            "pillar": "month"
+          }
+        },
+        {
+          "key": "zhi",
+          "value": "辰",
+          "scope": {
+            "layer": "本命",
+            "pillar": "month"
+          }
+        },
+        {
+          "key": "gan",
+          "value": "甲",
+          "scope": {
+            "layer": "本命",
+            "pillar": "day"
+          }
+        },
+        {
+          "key": "zhi",
+          "value": "辰",
+          "scope": {
+            "layer": "本命",
+            "pillar": "day"
+          }
+        },
+        {
+          "key": "canggan",
+          "value": "戊",
+          "scope": {
+            "layer": "本命",
+            "pillar": "month"
+          }
+        },
+        {
+          "key": "canggan",
+          "value": "乙",
+          "scope": {
+            "layer": "本命",
+            "pillar": "month"
+          }
+        },
+        {
+          "key": "canggan",
+          "value": "癸",
+          "scope": {
+            "layer": "本命",
+            "pillar": "month"
+          }
+        }
+      ],
+      "expected": {
+        "SANMINGTONGH-015-L1-STRUCT": "not_satisfied",
+        "SMTH-CHONGJI-ZIWU-L1-STRUCT": "unknown",
+        "SMTH-CHONGJI-MAOYOU-L1-STRUCT": "not_satisfied",
+        "ZPR-P1-01-L1-STRUCT": "unknown"
+      },
+      "expectedDisplay": [],
+      "expectedPositions": {},
+      "expectedStatements": []
+    },
+    {
+      "id": "sanhe_two_time_missing",
+      "description": "申、子已见，缺时柱可补辰。",
+      "facts": [
+        {
+          "key": "gan",
+          "value": "庚",
+          "scope": {
+            "layer": "本命",
+            "pillar": "year"
+          }
+        },
+        {
+          "key": "zhi",
+          "value": "申",
+          "scope": {
+            "layer": "本命",
+            "pillar": "year"
+          }
+        },
+        {
+          "key": "gan",
+          "value": "庚",
+          "scope": {
+            "layer": "本命",
+            "pillar": "month"
+          }
+        },
+        {
+          "key": "zhi",
+          "value": "子",
+          "scope": {
+            "layer": "本命",
+            "pillar": "month"
+          }
+        },
+        {
+          "key": "gan",
+          "value": "乙",
+          "scope": {
+            "layer": "本命",
+            "pillar": "day"
+          }
+        },
+        {
+          "key": "zhi",
+          "value": "卯",
+          "scope": {
+            "layer": "本命",
+            "pillar": "day"
+          }
+        },
+        {
+          "key": "canggan",
+          "value": "癸",
+          "scope": {
+            "layer": "本命",
+            "pillar": "month"
+          }
+        }
+      ],
+      "expected": {
+        "SANMINGTONGH-015-L1-STRUCT": "unknown",
+        "SMTH-CHONGJI-ZIWU-L1-STRUCT": "unknown",
+        "SMTH-CHONGJI-MAOYOU-L1-STRUCT": "unknown",
+        "ZPR-P1-01-L1-STRUCT": "not_satisfied"
+      },
+      "expectedDisplay": [],
+      "expectedPositions": {},
+      "expectedStatements": []
+    },
+    {
+      "id": "sanhe_one_time_missing",
+      "description": "仅见申，时柱一柱不能补两个字。",
+      "facts": [
+        {
+          "key": "gan",
+          "value": "庚",
+          "scope": {
+            "layer": "本命",
+            "pillar": "year"
+          }
+        },
+        {
+          "key": "zhi",
+          "value": "申",
+          "scope": {
+            "layer": "本命",
+            "pillar": "year"
+          }
+        },
+        {
+          "key": "gan",
+          "value": "庚",
+          "scope": {
+            "layer": "本命",
+            "pillar": "month"
+          }
+        },
+        {
+          "key": "zhi",
+          "value": "申",
+          "scope": {
+            "layer": "本命",
+            "pillar": "month"
+          }
+        },
+        {
+          "key": "gan",
+          "value": "乙",
+          "scope": {
+            "layer": "本命",
+            "pillar": "day"
+          }
+        },
+        {
+          "key": "zhi",
+          "value": "申",
+          "scope": {
+            "layer": "本命",
+            "pillar": "day"
+          }
+        },
+        {
+          "key": "canggan",
+          "value": "癸",
+          "scope": {
+            "layer": "本命",
+            "pillar": "month"
+          }
+        }
+      ],
+      "expected": {
+        "SANMINGTONGH-015-L1-STRUCT": "not_satisfied",
+        "SMTH-CHONGJI-ZIWU-L1-STRUCT": "not_satisfied",
+        "SMTH-CHONGJI-MAOYOU-L1-STRUCT": "not_satisfied",
+        "ZPR-P1-01-L1-STRUCT": "not_satisfied"
+      },
+      "expectedDisplay": [],
+      "expectedPositions": {},
+      "expectedStatements": []
+    },
+    {
+      "id": "sanhe_repeated_shen",
+      "description": "申在两柱，全部列出。",
+      "facts": [
+        {
+          "key": "gan",
+          "value": "庚",
+          "scope": {
+            "layer": "本命",
+            "pillar": "year"
+          }
+        },
+        {
+          "key": "zhi",
+          "value": "申",
+          "scope": {
+            "layer": "本命",
+            "pillar": "year"
+          }
+        },
+        {
+          "key": "gan",
+          "value": "庚",
+          "scope": {
+            "layer": "本命",
+            "pillar": "month"
+          }
+        },
+        {
+          "key": "zhi",
+          "value": "申",
+          "scope": {
+            "layer": "本命",
+            "pillar": "month"
+          }
+        },
+        {
+          "key": "gan",
+          "value": "乙",
+          "scope": {
+            "layer": "本命",
+            "pillar": "day"
+          }
+        },
+        {
+          "key": "zhi",
+          "value": "子",
+          "scope": {
+            "layer": "本命",
+            "pillar": "day"
+          }
+        },
+        {
+          "key": "gan",
+          "value": "庚",
+          "scope": {
+            "layer": "本命",
+            "pillar": "time"
+          }
+        },
+        {
+          "key": "zhi",
+          "value": "辰",
+          "scope": {
+            "layer": "本命",
+            "pillar": "time"
+          }
+        },
+        {
+          "key": "canggan",
+          "value": "癸",
+          "scope": {
+            "layer": "本命",
+            "pillar": "month"
+          }
+        }
+      ],
+      "expected": {
+        "SANMINGTONGH-015-L1-STRUCT": "satisfied",
+        "SMTH-CHONGJI-ZIWU-L1-STRUCT": "not_satisfied",
+        "SMTH-CHONGJI-MAOYOU-L1-STRUCT": "not_satisfied",
+        "ZPR-P1-01-L1-STRUCT": "not_satisfied"
+      },
+      "expectedDisplay": [
+        "SANMINGTONGH-015-L1-STRUCT"
+      ],
+      "expectedPositions": {
+        "SANMINGTONGH-015-L1-STRUCT": {
+          "申": [
+            "year",
+            "month"
+          ],
+          "子": [
+            "day"
+          ],
+          "辰": [
+            "time"
+          ]
+        }
+      },
+      "expectedStatements": [
+        "你的盘里申在年柱和月柱、子在日柱、辰在时柱，三字齐全；《三命通会·论支元三合》称申子辰为水局，并说三字缺一就不能按三合论。"
+      ]
+    },
+    {
+      "id": "sanhe_metal",
+      "description": "巳酉丑；金只在折叠。",
+      "facts": [
+        {
+          "key": "gan",
+          "value": "庚",
+          "scope": {
+            "layer": "本命",
+            "pillar": "year"
+          }
+        },
+        {
+          "key": "zhi",
+          "value": "巳",
+          "scope": {
+            "layer": "本命",
+            "pillar": "year"
+          }
+        },
+        {
+          "key": "gan",
+          "value": "庚",
+          "scope": {
+            "layer": "本命",
+            "pillar": "month"
+          }
+        },
+        {
+          "key": "zhi",
+          "value": "酉",
+          "scope": {
+            "layer": "本命",
+            "pillar": "month"
+          }
+        },
+        {
+          "key": "gan",
+          "value": "乙",
+          "scope": {
+            "layer": "本命",
+            "pillar": "day"
+          }
+        },
+        {
+          "key": "zhi",
+          "value": "丑",
+          "scope": {
+            "layer": "本命",
+            "pillar": "day"
+          }
+        },
+        {
+          "key": "gan",
+          "value": "庚",
+          "scope": {
+            "layer": "本命",
+            "pillar": "time"
+          }
+        },
+        {
+          "key": "zhi",
+          "value": "丑",
+          "scope": {
+            "layer": "本命",
+            "pillar": "time"
+          }
+        },
+        {
+          "key": "canggan",
+          "value": "癸",
+          "scope": {
+            "layer": "本命",
+            "pillar": "month"
+          }
+        }
+      ],
+      "expected": {
+        "SANMINGTONGH-015-L1-STRUCT": "satisfied",
+        "SMTH-CHONGJI-ZIWU-L1-STRUCT": "not_satisfied",
+        "SMTH-CHONGJI-MAOYOU-L1-STRUCT": "not_satisfied",
+        "ZPR-P1-01-L1-STRUCT": "not_satisfied"
+      },
+      "expectedDisplay": [
+        "SANMINGTONGH-015-L1-STRUCT"
+      ],
+      "expectedPositions": {
+        "SANMINGTONGH-015-L1-STRUCT": {
+          "巳": [
+            "year"
+          ],
+          "酉": [
+            "month"
+          ],
+          "丑": [
+            "day",
+            "time"
+          ]
+        }
+      },
+      "expectedStatements": [
+        "你的盘里巳在年柱、酉在月柱、丑在日柱和时柱，三字齐全，是《三命通会·论支元三合》所列三合的一组；书中也说三字缺一就不能按三合论。"
+      ]
+    },
+    {
+      "id": "sanhe_fire",
+      "description": "寅午戌；规范戌字；火只在折叠。",
+      "facts": [
+        {
+          "key": "gan",
+          "value": "庚",
+          "scope": {
+            "layer": "本命",
+            "pillar": "year"
+          }
+        },
+        {
+          "key": "zhi",
+          "value": "寅",
+          "scope": {
+            "layer": "本命",
+            "pillar": "year"
+          }
+        },
+        {
+          "key": "gan",
+          "value": "庚",
+          "scope": {
+            "layer": "本命",
+            "pillar": "month"
+          }
+        },
+        {
+          "key": "zhi",
+          "value": "午",
+          "scope": {
+            "layer": "本命",
+            "pillar": "month"
+          }
+        },
+        {
+          "key": "gan",
+          "value": "乙",
+          "scope": {
+            "layer": "本命",
+            "pillar": "day"
+          }
+        },
+        {
+          "key": "zhi",
+          "value": "戌",
+          "scope": {
+            "layer": "本命",
+            "pillar": "day"
+          }
+        },
+        {
+          "key": "gan",
+          "value": "庚",
+          "scope": {
+            "layer": "本命",
+            "pillar": "time"
+          }
+        },
+        {
+          "key": "zhi",
+          "value": "辰",
+          "scope": {
+            "layer": "本命",
+            "pillar": "time"
+          }
+        },
+        {
+          "key": "canggan",
+          "value": "癸",
+          "scope": {
+            "layer": "本命",
+            "pillar": "month"
+          }
+        }
+      ],
+      "expected": {
+        "SANMINGTONGH-015-L1-STRUCT": "satisfied",
+        "SMTH-CHONGJI-ZIWU-L1-STRUCT": "not_satisfied",
+        "SMTH-CHONGJI-MAOYOU-L1-STRUCT": "not_satisfied",
+        "ZPR-P1-01-L1-STRUCT": "not_satisfied"
+      },
+      "expectedDisplay": [
+        "SANMINGTONGH-015-L1-STRUCT"
+      ],
+      "expectedPositions": {
+        "SANMINGTONGH-015-L1-STRUCT": {
+          "寅": [
+            "year"
+          ],
+          "午": [
+            "month"
+          ],
+          "戌": [
+            "day"
+          ]
+        }
+      },
+      "expectedStatements": [
+        "你的盘里寅在年柱、午在月柱、戌在日柱，三字齐全，是《三命通会·论支元三合》所列三合的一组；书中也说三字缺一就不能按三合论。"
+      ]
+    },
+    {
+      "id": "sanhe_wood",
+      "description": "亥卯未；木只在折叠。",
+      "facts": [
+        {
+          "key": "gan",
+          "value": "庚",
+          "scope": {
+            "layer": "本命",
+            "pillar": "year"
+          }
+        },
+        {
+          "key": "zhi",
+          "value": "亥",
+          "scope": {
+            "layer": "本命",
+            "pillar": "year"
+          }
+        },
+        {
+          "key": "gan",
+          "value": "庚",
+          "scope": {
+            "layer": "本命",
+            "pillar": "month"
+          }
+        },
+        {
+          "key": "zhi",
+          "value": "卯",
+          "scope": {
+            "layer": "本命",
+            "pillar": "month"
+          }
+        },
+        {
+          "key": "gan",
+          "value": "乙",
+          "scope": {
+            "layer": "本命",
+            "pillar": "day"
+          }
+        },
+        {
+          "key": "zhi",
+          "value": "未",
+          "scope": {
+            "layer": "本命",
+            "pillar": "day"
+          }
+        },
+        {
+          "key": "gan",
+          "value": "庚",
+          "scope": {
+            "layer": "本命",
+            "pillar": "time"
+          }
+        },
+        {
+          "key": "zhi",
+          "value": "辰",
+          "scope": {
+            "layer": "本命",
+            "pillar": "time"
+          }
+        },
+        {
+          "key": "canggan",
+          "value": "癸",
+          "scope": {
+            "layer": "本命",
+            "pillar": "month"
+          }
+        }
+      ],
+      "expected": {
+        "SANMINGTONGH-015-L1-STRUCT": "satisfied",
+        "SMTH-CHONGJI-ZIWU-L1-STRUCT": "not_satisfied",
+        "SMTH-CHONGJI-MAOYOU-L1-STRUCT": "not_satisfied",
+        "ZPR-P1-01-L1-STRUCT": "not_satisfied"
+      },
+      "expectedDisplay": [
+        "SANMINGTONGH-015-L1-STRUCT"
+      ],
+      "expectedPositions": {
+        "SANMINGTONGH-015-L1-STRUCT": {
+          "亥": [
+            "year"
+          ],
+          "卯": [
+            "month"
+          ],
+          "未": [
+            "day"
+          ]
+        }
+      },
+      "expectedStatements": [
+        "你的盘里亥在年柱、卯在月柱、未在日柱，三字齐全，是《三命通会·论支元三合》所列三合的一组；书中也说三字缺一就不能按三合论。"
+      ]
+    },
+    {
+      "id": "known_none",
+      "description": "四柱已知，没有完整三合或任一对冲。",
+      "facts": [
+        {
+          "key": "gan",
+          "value": "庚",
+          "scope": {
+            "layer": "本命",
+            "pillar": "year"
+          }
+        },
+        {
+          "key": "zhi",
+          "value": "子",
+          "scope": {
+            "layer": "本命",
+            "pillar": "year"
+          }
+        },
+        {
+          "key": "gan",
+          "value": "庚",
+          "scope": {
+            "layer": "本命",
+            "pillar": "month"
+          }
+        },
+        {
+          "key": "zhi",
+          "value": "丑",
+          "scope": {
+            "layer": "本命",
+            "pillar": "month"
+          }
+        },
+        {
+          "key": "gan",
+          "value": "乙",
+          "scope": {
+            "layer": "本命",
+            "pillar": "day"
+          }
+        },
+        {
+          "key": "zhi",
+          "value": "寅",
+          "scope": {
+            "layer": "本命",
+            "pillar": "day"
+          }
+        },
+        {
+          "key": "gan",
+          "value": "庚",
+          "scope": {
+            "layer": "本命",
+            "pillar": "time"
+          }
+        },
+        {
+          "key": "zhi",
+          "value": "卯",
+          "scope": {
+            "layer": "本命",
+            "pillar": "time"
+          }
+        },
+        {
+          "key": "canggan",
+          "value": "己",
+          "scope": {
+            "layer": "本命",
+            "pillar": "month"
+          }
+        },
+        {
+          "key": "canggan",
+          "value": "癸",
+          "scope": {
+            "layer": "本命",
+            "pillar": "month"
+          }
+        },
+        {
+          "key": "canggan",
+          "value": "辛",
+          "scope": {
+            "layer": "本命",
+            "pillar": "month"
+          }
+        }
+      ],
+      "expected": {
+        "SANMINGTONGH-015-L1-STRUCT": "not_satisfied",
+        "SMTH-CHONGJI-ZIWU-L1-STRUCT": "not_satisfied",
+        "SMTH-CHONGJI-MAOYOU-L1-STRUCT": "not_satisfied",
+        "ZPR-P1-01-L1-STRUCT": "not_satisfied"
+      },
+      "expectedDisplay": [],
+      "expectedPositions": {},
+      "expectedStatements": []
+    },
+    {
+      "id": "ziwu_time_missing",
+      "description": "只见子，缺时柱可补午；子重复三柱。",
+      "facts": [
+        {
+          "key": "gan",
+          "value": "庚",
+          "scope": {
+            "layer": "本命",
+            "pillar": "year"
+          }
+        },
+        {
+          "key": "zhi",
+          "value": "子",
+          "scope": {
+            "layer": "本命",
+            "pillar": "year"
+          }
+        },
+        {
+          "key": "gan",
+          "value": "庚",
+          "scope": {
+            "layer": "本命",
+            "pillar": "month"
+          }
+        },
+        {
+          "key": "zhi",
+          "value": "子",
+          "scope": {
+            "layer": "本命",
+            "pillar": "month"
+          }
+        },
+        {
+          "key": "gan",
+          "value": "乙",
+          "scope": {
+            "layer": "本命",
+            "pillar": "day"
+          }
+        },
+        {
+          "key": "zhi",
+          "value": "子",
+          "scope": {
+            "layer": "本命",
+            "pillar": "day"
+          }
+        },
+        {
+          "key": "canggan",
+          "value": "癸",
+          "scope": {
+            "layer": "本命",
+            "pillar": "month"
+          }
+        }
+      ],
+      "expected": {
+        "SANMINGTONGH-015-L1-STRUCT": "not_satisfied",
+        "SMTH-CHONGJI-ZIWU-L1-STRUCT": "unknown",
+        "SMTH-CHONGJI-MAOYOU-L1-STRUCT": "not_satisfied",
+        "ZPR-P1-01-L1-STRUCT": "not_satisfied"
+      },
+      "expectedDisplay": [],
+      "expectedPositions": {},
+      "expectedStatements": []
+    },
+    {
+      "id": "ziwu_none_time_missing",
+      "description": "子午都无，只缺一柱不能补齐。",
+      "facts": [
+        {
+          "key": "gan",
+          "value": "庚",
+          "scope": {
+            "layer": "本命",
+            "pillar": "year"
+          }
+        },
+        {
+          "key": "zhi",
+          "value": "丑",
+          "scope": {
+            "layer": "本命",
+            "pillar": "year"
+          }
+        },
+        {
+          "key": "gan",
+          "value": "庚",
+          "scope": {
+            "layer": "本命",
+            "pillar": "month"
+          }
+        },
+        {
+          "key": "zhi",
+          "value": "丑",
+          "scope": {
+            "layer": "本命",
+            "pillar": "month"
+          }
+        },
+        {
+          "key": "gan",
+          "value": "乙",
+          "scope": {
+            "layer": "本命",
+            "pillar": "day"
+          }
+        },
+        {
+          "key": "zhi",
+          "value": "丑",
+          "scope": {
+            "layer": "本命",
+            "pillar": "day"
+          }
+        },
+        {
+          "key": "canggan",
+          "value": "己",
+          "scope": {
+            "layer": "本命",
+            "pillar": "month"
+          }
+        },
+        {
+          "key": "canggan",
+          "value": "癸",
+          "scope": {
+            "layer": "本命",
+            "pillar": "month"
+          }
+        },
+        {
+          "key": "canggan",
+          "value": "辛",
+          "scope": {
+            "layer": "本命",
+            "pillar": "month"
+          }
+        }
+      ],
+      "expected": {
+        "SANMINGTONGH-015-L1-STRUCT": "not_satisfied",
+        "SMTH-CHONGJI-ZIWU-L1-STRUCT": "not_satisfied",
+        "SMTH-CHONGJI-MAOYOU-L1-STRUCT": "not_satisfied",
+        "ZPR-P1-01-L1-STRUCT": "not_satisfied"
+      },
+      "expectedDisplay": [],
+      "expectedPositions": {},
+      "expectedStatements": []
+    },
+    {
+      "id": "two_pillars_missing",
+      "description": "月柱、时柱都缺，子午卯酉皆可两柱补齐。",
+      "facts": [
+        {
+          "key": "gan",
+          "value": "庚",
+          "scope": {
+            "layer": "本命",
+            "pillar": "year"
+          }
+        },
+        {
+          "key": "zhi",
+          "value": "丑",
+          "scope": {
+            "layer": "本命",
+            "pillar": "year"
+          }
+        },
+        {
+          "key": "gan",
+          "value": "乙",
+          "scope": {
+            "layer": "本命",
+            "pillar": "day"
+          }
+        },
+        {
+          "key": "zhi",
+          "value": "丑",
+          "scope": {
+            "layer": "本命",
+            "pillar": "day"
+          }
+        }
+      ],
+      "expected": {
+        "SANMINGTONGH-015-L1-STRUCT": "unknown",
+        "SMTH-CHONGJI-ZIWU-L1-STRUCT": "unknown",
+        "SMTH-CHONGJI-MAOYOU-L1-STRUCT": "unknown",
+        "ZPR-P1-01-L1-STRUCT": "unknown"
+      },
+      "expectedDisplay": [],
+      "expectedPositions": {},
+      "expectedStatements": []
+    },
+    {
+      "id": "maoyou_complete",
+      "description": "卯酉分居年月柱。",
+      "facts": [
+        {
+          "key": "gan",
+          "value": "庚",
+          "scope": {
+            "layer": "本命",
+            "pillar": "year"
+          }
+        },
+        {
+          "key": "zhi",
+          "value": "卯",
+          "scope": {
+            "layer": "本命",
+            "pillar": "year"
+          }
+        },
+        {
+          "key": "gan",
+          "value": "庚",
+          "scope": {
+            "layer": "本命",
+            "pillar": "month"
+          }
+        },
+        {
+          "key": "zhi",
+          "value": "酉",
+          "scope": {
+            "layer": "本命",
+            "pillar": "month"
+          }
+        },
+        {
+          "key": "gan",
+          "value": "乙",
+          "scope": {
+            "layer": "本命",
+            "pillar": "day"
+          }
+        },
+        {
+          "key": "zhi",
+          "value": "丑",
+          "scope": {
+            "layer": "本命",
+            "pillar": "day"
+          }
+        },
+        {
+          "key": "gan",
+          "value": "庚",
+          "scope": {
+            "layer": "本命",
+            "pillar": "time"
+          }
+        },
+        {
+          "key": "zhi",
+          "value": "辰",
+          "scope": {
+            "layer": "本命",
+            "pillar": "time"
+          }
+        },
+        {
+          "key": "canggan",
+          "value": "癸",
+          "scope": {
+            "layer": "本命",
+            "pillar": "month"
+          }
+        }
+      ],
+      "expected": {
+        "SANMINGTONGH-015-L1-STRUCT": "not_satisfied",
+        "SMTH-CHONGJI-ZIWU-L1-STRUCT": "not_satisfied",
+        "SMTH-CHONGJI-MAOYOU-L1-STRUCT": "satisfied",
+        "ZPR-P1-01-L1-STRUCT": "not_satisfied"
+      },
+      "expectedDisplay": [
+        "SMTH-CHONGJI-MAOYOU-L1-STRUCT"
+      ],
+      "expectedPositions": {
+        "SMTH-CHONGJI-MAOYOU-L1-STRUCT": {
+          "卯": [
+            "year"
+          ],
+          "酉": [
+            "month"
+          ]
+        }
+      },
+      "expectedStatements": [
+        "你的盘里卯在年柱、酉在月柱，从卯数到酉是七位；《三命通会·论冲击》说地支取七位为冲。"
+      ]
+    },
+    {
+      "id": "maoyou_time_missing",
+      "description": "只见酉，缺时柱可补卯。",
+      "facts": [
+        {
+          "key": "gan",
+          "value": "庚",
+          "scope": {
+            "layer": "本命",
+            "pillar": "year"
+          }
+        },
+        {
+          "key": "zhi",
+          "value": "酉",
+          "scope": {
+            "layer": "本命",
+            "pillar": "year"
+          }
+        },
+        {
+          "key": "gan",
+          "value": "庚",
+          "scope": {
+            "layer": "本命",
+            "pillar": "month"
+          }
+        },
+        {
+          "key": "zhi",
+          "value": "酉",
+          "scope": {
+            "layer": "本命",
+            "pillar": "month"
+          }
+        },
+        {
+          "key": "gan",
+          "value": "乙",
+          "scope": {
+            "layer": "本命",
+            "pillar": "day"
+          }
+        },
+        {
+          "key": "zhi",
+          "value": "酉",
+          "scope": {
+            "layer": "本命",
+            "pillar": "day"
+          }
+        },
+        {
+          "key": "canggan",
+          "value": "癸",
+          "scope": {
+            "layer": "本命",
+            "pillar": "month"
+          }
+        }
+      ],
+      "expected": {
+        "SANMINGTONGH-015-L1-STRUCT": "not_satisfied",
+        "SMTH-CHONGJI-ZIWU-L1-STRUCT": "not_satisfied",
+        "SMTH-CHONGJI-MAOYOU-L1-STRUCT": "unknown",
+        "ZPR-P1-01-L1-STRUCT": "not_satisfied"
+      },
+      "expectedDisplay": [],
+      "expectedPositions": {},
+      "expectedStatements": []
+    },
+    {
+      "id": "jia_not_jia",
+      "description": "日干乙，前提完整。",
+      "facts": [
+        {
+          "key": "gan",
+          "value": "庚",
+          "scope": {
+            "layer": "本命",
+            "pillar": "year"
+          }
+        },
+        {
+          "key": "zhi",
+          "value": "午",
+          "scope": {
+            "layer": "本命",
+            "pillar": "year"
+          }
+        },
+        {
+          "key": "gan",
+          "value": "庚",
+          "scope": {
+            "layer": "本命",
+            "pillar": "month"
+          }
+        },
+        {
+          "key": "zhi",
+          "value": "辰",
+          "scope": {
+            "layer": "本命",
+            "pillar": "month"
+          }
+        },
+        {
+          "key": "gan",
+          "value": "乙",
+          "scope": {
+            "layer": "本命",
+            "pillar": "day"
+          }
+        },
+        {
+          "key": "zhi",
+          "value": "辰",
+          "scope": {
+            "layer": "本命",
+            "pillar": "day"
+          }
+        },
+        {
+          "key": "gan",
+          "value": "戊",
+          "scope": {
+            "layer": "本命",
+            "pillar": "time"
+          }
+        },
+        {
+          "key": "zhi",
+          "value": "辰",
+          "scope": {
+            "layer": "本命",
+            "pillar": "time"
+          }
+        },
+        {
+          "key": "canggan",
+          "value": "戊",
+          "scope": {
+            "layer": "本命",
+            "pillar": "month"
+          }
+        },
+        {
+          "key": "canggan",
+          "value": "乙",
+          "scope": {
+            "layer": "本命",
+            "pillar": "month"
+          }
+        },
+        {
+          "key": "canggan",
+          "value": "癸",
+          "scope": {
+            "layer": "本命",
+            "pillar": "month"
+          }
+        }
+      ],
+      "expected": {
+        "SANMINGTONGH-015-L1-STRUCT": "not_satisfied",
+        "SMTH-CHONGJI-ZIWU-L1-STRUCT": "not_satisfied",
+        "SMTH-CHONGJI-MAOYOU-L1-STRUCT": "not_satisfied",
+        "ZPR-P1-01-L1-STRUCT": "not_satisfied"
+      },
+      "expectedDisplay": [],
+      "expectedPositions": {},
+      "expectedStatements": []
+    },
+    {
+      "id": "jia_not_chen",
+      "description": "月支丑，前提完整。",
+      "facts": [
+        {
+          "key": "gan",
+          "value": "庚",
+          "scope": {
+            "layer": "本命",
+            "pillar": "year"
+          }
+        },
+        {
+          "key": "zhi",
+          "value": "午",
+          "scope": {
+            "layer": "本命",
+            "pillar": "year"
+          }
+        },
+        {
+          "key": "gan",
+          "value": "庚",
+          "scope": {
+            "layer": "本命",
+            "pillar": "month"
+          }
+        },
+        {
+          "key": "zhi",
+          "value": "丑",
+          "scope": {
+            "layer": "本命",
+            "pillar": "month"
+          }
+        },
+        {
+          "key": "gan",
+          "value": "甲",
+          "scope": {
+            "layer": "本命",
+            "pillar": "day"
+          }
+        },
+        {
+          "key": "zhi",
+          "value": "辰",
+          "scope": {
+            "layer": "本命",
+            "pillar": "day"
+          }
+        },
+        {
+          "key": "gan",
+          "value": "戊",
+          "scope": {
+            "layer": "本命",
+            "pillar": "time"
+          }
+        },
+        {
+          "key": "zhi",
+          "value": "辰",
+          "scope": {
+            "layer": "本命",
+            "pillar": "time"
+          }
+        },
+        {
+          "key": "canggan",
+          "value": "己",
+          "scope": {
+            "layer": "本命",
+            "pillar": "month"
+          }
+        },
+        {
+          "key": "canggan",
+          "value": "癸",
+          "scope": {
+            "layer": "本命",
+            "pillar": "month"
+          }
+        },
+        {
+          "key": "canggan",
+          "value": "辛",
+          "scope": {
+            "layer": "本命",
+            "pillar": "month"
+          }
+        }
+      ],
+      "expected": {
+        "SANMINGTONGH-015-L1-STRUCT": "not_satisfied",
+        "SMTH-CHONGJI-ZIWU-L1-STRUCT": "not_satisfied",
+        "SMTH-CHONGJI-MAOYOU-L1-STRUCT": "not_satisfied",
+        "ZPR-P1-01-L1-STRUCT": "not_satisfied"
+      },
+      "expectedDisplay": [],
+      "expectedPositions": {},
+      "expectedStatements": []
+    },
+    {
+      "id": "jia_missing_hidden",
+      "description": "辰月缺 canggan@month，不自行补。",
+      "facts": [
+        {
+          "key": "gan",
+          "value": "庚",
+          "scope": {
+            "layer": "本命",
+            "pillar": "year"
+          }
+        },
+        {
+          "key": "zhi",
+          "value": "午",
+          "scope": {
+            "layer": "本命",
+            "pillar": "year"
+          }
+        },
+        {
+          "key": "gan",
+          "value": "庚",
+          "scope": {
+            "layer": "本命",
+            "pillar": "month"
+          }
+        },
+        {
+          "key": "zhi",
+          "value": "辰",
+          "scope": {
+            "layer": "本命",
+            "pillar": "month"
+          }
+        },
+        {
+          "key": "gan",
+          "value": "甲",
+          "scope": {
+            "layer": "本命",
+            "pillar": "day"
+          }
+        },
+        {
+          "key": "zhi",
+          "value": "辰",
+          "scope": {
+            "layer": "本命",
+            "pillar": "day"
+          }
+        },
+        {
+          "key": "gan",
+          "value": "戊",
+          "scope": {
+            "layer": "本命",
+            "pillar": "time"
+          }
+        },
+        {
+          "key": "zhi",
+          "value": "辰",
+          "scope": {
+            "layer": "本命",
+            "pillar": "time"
+          }
+        }
+      ],
+      "expected": {
+        "SANMINGTONGH-015-L1-STRUCT": "not_satisfied",
+        "SMTH-CHONGJI-ZIWU-L1-STRUCT": "not_satisfied",
+        "SMTH-CHONGJI-MAOYOU-L1-STRUCT": "not_satisfied",
+        "ZPR-P1-01-L1-STRUCT": "unknown"
+      },
+      "expectedDisplay": [],
+      "expectedPositions": {},
+      "expectedStatements": []
+    },
+    {
+      "id": "jia_year_wu_time_missing",
+      "description": "年干已见戊，时柱缺失不妨碍满足。",
+      "facts": [
+        {
+          "key": "gan",
+          "value": "戊",
+          "scope": {
+            "layer": "本命",
+            "pillar": "year"
+          }
+        },
+        {
+          "key": "zhi",
+          "value": "申",
+          "scope": {
+            "layer": "本命",
+            "pillar": "year"
+          }
+        },
+        {
+          "key": "gan",
+          "value": "丙",
+          "scope": {
+            "layer": "本命",
+            "pillar": "month"
+          }
+        },
+        {
+          "key": "zhi",
+          "value": "辰",
+          "scope": {
+            "layer": "本命",
+            "pillar": "month"
+          }
+        },
+        {
+          "key": "gan",
+          "value": "甲",
+          "scope": {
+            "layer": "本命",
+            "pillar": "day"
+          }
+        },
+        {
+          "key": "zhi",
+          "value": "子",
+          "scope": {
+            "layer": "本命",
+            "pillar": "day"
+          }
+        },
+        {
+          "key": "canggan",
+          "value": "戊",
+          "scope": {
+            "layer": "本命",
+            "pillar": "month"
+          }
+        },
+        {
+          "key": "canggan",
+          "value": "乙",
+          "scope": {
+            "layer": "本命",
+            "pillar": "month"
+          }
+        },
+        {
+          "key": "canggan",
+          "value": "癸",
+          "scope": {
+            "layer": "本命",
+            "pillar": "month"
+          }
+        }
+      ],
+      "expected": {
+        "SANMINGTONGH-015-L1-STRUCT": "satisfied",
+        "SMTH-CHONGJI-ZIWU-L1-STRUCT": "unknown",
+        "SMTH-CHONGJI-MAOYOU-L1-STRUCT": "not_satisfied",
+        "ZPR-P1-01-L1-STRUCT": "satisfied"
+      },
+      "expectedDisplay": [
+        "SANMINGTONGH-015-L1-STRUCT",
+        "ZPR-P1-01-L1-STRUCT"
+      ],
+      "expectedPositions": {
+        "SANMINGTONGH-015-L1-STRUCT": {
+          "申": [
+            "year"
+          ],
+          "子": [
+            "day"
+          ],
+          "辰": [
+            "month"
+          ]
+        },
+        "ZPR-P1-01-L1-STRUCT": {
+          "戊": [
+            "year"
+          ]
+        }
+      },
+      "expectedStatements": [
+        "你的盘里申在年柱、子在日柱、辰在月柱，三字齐全；《三命通会·论支元三合》称申子辰为水局，并说三字缺一就不能按三合论。",
+        "你是甲日生在辰月，辰中的戊字露在年柱的天干，与《子平真诠》论杂气一篇所举的写法一致。"
+      ]
+    },
+    {
+      "id": "jia_year_month_wu",
+      "description": "戊在年、月干，两处全列。",
+      "facts": [
+        {
+          "key": "gan",
+          "value": "戊",
+          "scope": {
+            "layer": "本命",
+            "pillar": "year"
+          }
+        },
+        {
+          "key": "zhi",
+          "value": "午",
+          "scope": {
+            "layer": "本命",
+            "pillar": "year"
+          }
+        },
+        {
+          "key": "gan",
+          "value": "戊",
+          "scope": {
+            "layer": "本命",
+            "pillar": "month"
+          }
+        },
+        {
+          "key": "zhi",
+          "value": "辰",
+          "scope": {
+            "layer": "本命",
+            "pillar": "month"
+          }
+        },
+        {
+          "key": "gan",
+          "value": "甲",
+          "scope": {
+            "layer": "本命",
+            "pillar": "day"
+          }
+        },
+        {
+          "key": "zhi",
+          "value": "辰",
+          "scope": {
+            "layer": "本命",
+            "pillar": "day"
+          }
+        },
+        {
+          "key": "gan",
+          "value": "庚",
+          "scope": {
+            "layer": "本命",
+            "pillar": "time"
+          }
+        },
+        {
+          "key": "zhi",
+          "value": "辰",
+          "scope": {
+            "layer": "本命",
+            "pillar": "time"
+          }
+        },
+        {
+          "key": "canggan",
+          "value": "戊",
+          "scope": {
+            "layer": "本命",
+            "pillar": "month"
+          }
+        },
+        {
+          "key": "canggan",
+          "value": "乙",
+          "scope": {
+            "layer": "本命",
+            "pillar": "month"
+          }
+        },
+        {
+          "key": "canggan",
+          "value": "癸",
+          "scope": {
+            "layer": "本命",
+            "pillar": "month"
+          }
+        }
+      ],
+      "expected": {
+        "SANMINGTONGH-015-L1-STRUCT": "not_satisfied",
+        "SMTH-CHONGJI-ZIWU-L1-STRUCT": "not_satisfied",
+        "SMTH-CHONGJI-MAOYOU-L1-STRUCT": "not_satisfied",
+        "ZPR-P1-01-L1-STRUCT": "satisfied"
+      },
+      "expectedDisplay": [
+        "ZPR-P1-01-L1-STRUCT"
+      ],
+      "expectedPositions": {
+        "ZPR-P1-01-L1-STRUCT": {
+          "戊": [
+            "year",
+            "month"
+          ]
+        }
+      },
+      "expectedStatements": [
+        "你是甲日生在辰月，辰中的戊字露在年柱和月柱的天干，与《子平真诠》论杂气一篇所举的写法一致。"
+      ]
+    },
+    {
+      "id": "jia_three_wu",
+      "description": "戊在年、月、时干，三处全列。",
+      "facts": [
+        {
+          "key": "gan",
+          "value": "戊",
+          "scope": {
+            "layer": "本命",
+            "pillar": "year"
+          }
+        },
+        {
+          "key": "zhi",
+          "value": "午",
+          "scope": {
+            "layer": "本命",
+            "pillar": "year"
+          }
+        },
+        {
+          "key": "gan",
+          "value": "戊",
+          "scope": {
+            "layer": "本命",
+            "pillar": "month"
+          }
+        },
+        {
+          "key": "zhi",
+          "value": "辰",
+          "scope": {
+            "layer": "本命",
+            "pillar": "month"
+          }
+        },
+        {
+          "key": "gan",
+          "value": "甲",
+          "scope": {
+            "layer": "本命",
+            "pillar": "day"
+          }
+        },
+        {
+          "key": "zhi",
+          "value": "辰",
+          "scope": {
+            "layer": "本命",
+            "pillar": "day"
+          }
+        },
+        {
+          "key": "gan",
+          "value": "戊",
+          "scope": {
+            "layer": "本命",
+            "pillar": "time"
+          }
+        },
+        {
+          "key": "zhi",
+          "value": "辰",
+          "scope": {
+            "layer": "本命",
+            "pillar": "time"
+          }
+        },
+        {
+          "key": "canggan",
+          "value": "戊",
+          "scope": {
+            "layer": "本命",
+            "pillar": "month"
+          }
+        },
+        {
+          "key": "canggan",
+          "value": "乙",
+          "scope": {
+            "layer": "本命",
+            "pillar": "month"
+          }
+        },
+        {
+          "key": "canggan",
+          "value": "癸",
+          "scope": {
+            "layer": "本命",
+            "pillar": "month"
+          }
+        }
+      ],
+      "expected": {
+        "SANMINGTONGH-015-L1-STRUCT": "not_satisfied",
+        "SMTH-CHONGJI-ZIWU-L1-STRUCT": "not_satisfied",
+        "SMTH-CHONGJI-MAOYOU-L1-STRUCT": "not_satisfied",
+        "ZPR-P1-01-L1-STRUCT": "satisfied"
+      },
+      "expectedDisplay": [
+        "ZPR-P1-01-L1-STRUCT"
+      ],
+      "expectedPositions": {
+        "ZPR-P1-01-L1-STRUCT": {
+          "戊": [
+            "year",
+            "month",
+            "time"
+          ]
+        }
+      },
+      "expectedStatements": [
+        "你是甲日生在辰月，辰中的戊字露在年柱、月柱和时柱的天干，与《子平真诠》论杂气一篇所举的写法一致。"
+      ]
+    },
+    {
+      "id": "jia_no_wu",
+      "description": "前提完整，三干都已知但无戊。",
+      "facts": [
+        {
+          "key": "gan",
+          "value": "庚",
+          "scope": {
+            "layer": "本命",
+            "pillar": "year"
+          }
+        },
+        {
+          "key": "zhi",
+          "value": "午",
+          "scope": {
+            "layer": "本命",
+            "pillar": "year"
+          }
+        },
+        {
+          "key": "gan",
+          "value": "庚",
+          "scope": {
+            "layer": "本命",
+            "pillar": "month"
+          }
+        },
+        {
+          "key": "zhi",
+          "value": "辰",
+          "scope": {
+            "layer": "本命",
+            "pillar": "month"
+          }
+        },
+        {
+          "key": "gan",
+          "value": "甲",
+          "scope": {
+            "layer": "本命",
+            "pillar": "day"
+          }
+        },
+        {
+          "key": "zhi",
+          "value": "辰",
+          "scope": {
+            "layer": "本命",
+            "pillar": "day"
+          }
+        },
+        {
+          "key": "gan",
+          "value": "庚",
+          "scope": {
+            "layer": "本命",
+            "pillar": "time"
+          }
+        },
+        {
+          "key": "zhi",
+          "value": "辰",
+          "scope": {
+            "layer": "本命",
+            "pillar": "time"
+          }
+        },
+        {
+          "key": "canggan",
+          "value": "戊",
+          "scope": {
+            "layer": "本命",
+            "pillar": "month"
+          }
+        },
+        {
+          "key": "canggan",
+          "value": "乙",
+          "scope": {
+            "layer": "本命",
+            "pillar": "month"
+          }
+        },
+        {
+          "key": "canggan",
+          "value": "癸",
+          "scope": {
+            "layer": "本命",
+            "pillar": "month"
+          }
+        }
+      ],
+      "expected": {
+        "SANMINGTONGH-015-L1-STRUCT": "not_satisfied",
+        "SMTH-CHONGJI-ZIWU-L1-STRUCT": "not_satisfied",
+        "SMTH-CHONGJI-MAOYOU-L1-STRUCT": "not_satisfied",
+        "ZPR-P1-01-L1-STRUCT": "not_satisfied"
+      },
+      "expectedDisplay": [],
+      "expectedPositions": {},
+      "expectedStatements": []
+    },
+    {
+      "id": "jia_hidden_without_wu",
+      "description": "藏干事实存在但无戊。",
+      "facts": [
+        {
+          "key": "gan",
+          "value": "庚",
+          "scope": {
+            "layer": "本命",
+            "pillar": "year"
+          }
+        },
+        {
+          "key": "zhi",
+          "value": "午",
+          "scope": {
+            "layer": "本命",
+            "pillar": "year"
+          }
+        },
+        {
+          "key": "gan",
+          "value": "庚",
+          "scope": {
+            "layer": "本命",
+            "pillar": "month"
+          }
+        },
+        {
+          "key": "zhi",
+          "value": "辰",
+          "scope": {
+            "layer": "本命",
+            "pillar": "month"
+          }
+        },
+        {
+          "key": "gan",
+          "value": "甲",
+          "scope": {
+            "layer": "本命",
+            "pillar": "day"
+          }
+        },
+        {
+          "key": "zhi",
+          "value": "辰",
+          "scope": {
+            "layer": "本命",
+            "pillar": "day"
+          }
+        },
+        {
+          "key": "gan",
+          "value": "戊",
+          "scope": {
+            "layer": "本命",
+            "pillar": "time"
+          }
+        },
+        {
+          "key": "zhi",
+          "value": "辰",
+          "scope": {
+            "layer": "本命",
+            "pillar": "time"
+          }
+        },
+        {
+          "key": "canggan",
+          "value": "乙",
+          "scope": {
+            "layer": "本命",
+            "pillar": "month"
+          }
+        },
+        {
+          "key": "canggan",
+          "value": "癸",
+          "scope": {
+            "layer": "本命",
+            "pillar": "month"
+          }
+        }
+      ],
+      "expected": {
+        "SANMINGTONGH-015-L1-STRUCT": "not_satisfied",
+        "SMTH-CHONGJI-ZIWU-L1-STRUCT": "not_satisfied",
+        "SMTH-CHONGJI-MAOYOU-L1-STRUCT": "not_satisfied",
+        "ZPR-P1-01-L1-STRUCT": "not_satisfied"
+      },
+      "expectedDisplay": [],
+      "expectedPositions": {},
+      "expectedStatements": []
+    },
+    {
+      "id": "jia_year_gan_missing",
+      "description": "前提完整，无已知戊，年干缺失。",
+      "facts": [
+        {
+          "key": "zhi",
+          "value": "午",
+          "scope": {
+            "layer": "本命",
+            "pillar": "year"
+          }
+        },
+        {
+          "key": "gan",
+          "value": "庚",
+          "scope": {
+            "layer": "本命",
+            "pillar": "month"
+          }
+        },
+        {
+          "key": "zhi",
+          "value": "辰",
+          "scope": {
+            "layer": "本命",
+            "pillar": "month"
+          }
+        },
+        {
+          "key": "gan",
+          "value": "甲",
+          "scope": {
+            "layer": "本命",
+            "pillar": "day"
+          }
+        },
+        {
+          "key": "zhi",
+          "value": "辰",
+          "scope": {
+            "layer": "本命",
+            "pillar": "day"
+          }
+        },
+        {
+          "key": "gan",
+          "value": "庚",
+          "scope": {
+            "layer": "本命",
+            "pillar": "time"
+          }
+        },
+        {
+          "key": "zhi",
+          "value": "辰",
+          "scope": {
+            "layer": "本命",
+            "pillar": "time"
+          }
+        },
+        {
+          "key": "canggan",
+          "value": "戊",
+          "scope": {
+            "layer": "本命",
+            "pillar": "month"
+          }
+        },
+        {
+          "key": "canggan",
+          "value": "乙",
+          "scope": {
+            "layer": "本命",
+            "pillar": "month"
+          }
+        },
+        {
+          "key": "canggan",
+          "value": "癸",
+          "scope": {
+            "layer": "本命",
+            "pillar": "month"
+          }
+        }
+      ],
+      "expected": {
+        "SANMINGTONGH-015-L1-STRUCT": "not_satisfied",
+        "SMTH-CHONGJI-ZIWU-L1-STRUCT": "not_satisfied",
+        "SMTH-CHONGJI-MAOYOU-L1-STRUCT": "not_satisfied",
+        "ZPR-P1-01-L1-STRUCT": "unknown"
+      },
+      "expectedDisplay": [],
+      "expectedPositions": {},
+      "expectedStatements": []
+    },
+    {
+      "id": "jia_day_gan_missing",
+      "description": "日干缺失优先于否定。",
+      "facts": [
+        {
+          "key": "gan",
+          "value": "庚",
+          "scope": {
+            "layer": "本命",
+            "pillar": "year"
+          }
+        },
+        {
+          "key": "zhi",
+          "value": "午",
+          "scope": {
+            "layer": "本命",
+            "pillar": "year"
+          }
+        },
+        {
+          "key": "gan",
+          "value": "庚",
+          "scope": {
+            "layer": "本命",
+            "pillar": "month"
+          }
+        },
+        {
+          "key": "zhi",
+          "value": "辰",
+          "scope": {
+            "layer": "本命",
+            "pillar": "month"
+          }
+        },
+        {
+          "key": "zhi",
+          "value": "辰",
+          "scope": {
+            "layer": "本命",
+            "pillar": "day"
+          }
+        },
+        {
+          "key": "gan",
+          "value": "戊",
+          "scope": {
+            "layer": "本命",
+            "pillar": "time"
+          }
+        },
+        {
+          "key": "zhi",
+          "value": "辰",
+          "scope": {
+            "layer": "本命",
+            "pillar": "time"
+          }
+        },
+        {
+          "key": "canggan",
+          "value": "戊",
+          "scope": {
+            "layer": "本命",
+            "pillar": "month"
+          }
+        },
+        {
+          "key": "canggan",
+          "value": "乙",
+          "scope": {
+            "layer": "本命",
+            "pillar": "month"
+          }
+        },
+        {
+          "key": "canggan",
+          "value": "癸",
+          "scope": {
+            "layer": "本命",
+            "pillar": "month"
+          }
+        }
+      ],
+      "expected": {
+        "SANMINGTONGH-015-L1-STRUCT": "not_satisfied",
+        "SMTH-CHONGJI-ZIWU-L1-STRUCT": "not_satisfied",
+        "SMTH-CHONGJI-MAOYOU-L1-STRUCT": "not_satisfied",
+        "ZPR-P1-01-L1-STRUCT": "unknown"
+      },
+      "expectedDisplay": [],
+      "expectedPositions": {},
+      "expectedStatements": []
+    },
+    {
+      "id": "conflict_day_zhi",
+      "description": "日支子/酉冲突；前三条 unknown，甲日辰月不读日支。",
+      "facts": [
+        {
+          "key": "gan",
+          "value": "戊",
+          "scope": {
+            "layer": "本命",
+            "pillar": "year"
+          }
+        },
+        {
+          "key": "zhi",
+          "value": "申",
+          "scope": {
+            "layer": "本命",
+            "pillar": "year"
+          }
+        },
+        {
+          "key": "gan",
+          "value": "丙",
+          "scope": {
+            "layer": "本命",
+            "pillar": "month"
+          }
+        },
+        {
+          "key": "zhi",
+          "value": "辰",
+          "scope": {
+            "layer": "本命",
+            "pillar": "month"
+          }
+        },
+        {
+          "key": "gan",
+          "value": "甲",
+          "scope": {
+            "layer": "本命",
+            "pillar": "day"
+          }
+        },
+        {
+          "key": "zhi",
+          "value": "子",
+          "scope": {
+            "layer": "本命",
+            "pillar": "day"
+          }
+        },
+        {
+          "key": "gan",
+          "value": "庚",
+          "scope": {
+            "layer": "本命",
+            "pillar": "time"
+          }
+        },
+        {
+          "key": "zhi",
+          "value": "午",
+          "scope": {
+            "layer": "本命",
+            "pillar": "time"
+          }
+        },
+        {
+          "key": "canggan",
+          "value": "戊",
+          "scope": {
+            "layer": "本命",
+            "pillar": "month"
+          }
+        },
+        {
+          "key": "canggan",
+          "value": "乙",
+          "scope": {
+            "layer": "本命",
+            "pillar": "month"
+          }
+        },
+        {
+          "key": "canggan",
+          "value": "癸",
+          "scope": {
+            "layer": "本命",
+            "pillar": "month"
+          }
+        },
+        {
+          "key": "zhi",
+          "value": "酉",
+          "scope": {
+            "layer": "本命",
+            "pillar": "day"
+          }
+        }
+      ],
+      "expected": {
+        "SANMINGTONGH-015-L1-STRUCT": "unknown",
+        "SMTH-CHONGJI-ZIWU-L1-STRUCT": "unknown",
+        "SMTH-CHONGJI-MAOYOU-L1-STRUCT": "unknown",
+        "ZPR-P1-01-L1-STRUCT": "satisfied"
+      },
+      "expectedDisplay": [
+        "ZPR-P1-01-L1-STRUCT"
+      ],
+      "expectedPositions": {
+        "ZPR-P1-01-L1-STRUCT": {
+          "戊": [
+            "year"
+          ]
+        }
+      },
+      "expectedStatements": [
+        "你是甲日生在辰月，辰中的戊字露在年柱的天干，与《子平真诠》论杂气一篇所举的写法一致。"
+      ]
+    },
+    {
+      "id": "conflict_time_gan",
+      "description": "时干庚/戊冲突；即使年干戊也 unknown。",
+      "facts": [
+        {
+          "key": "gan",
+          "value": "戊",
+          "scope": {
+            "layer": "本命",
+            "pillar": "year"
+          }
+        },
+        {
+          "key": "zhi",
+          "value": "申",
+          "scope": {
+            "layer": "本命",
+            "pillar": "year"
+          }
+        },
+        {
+          "key": "gan",
+          "value": "丙",
+          "scope": {
+            "layer": "本命",
+            "pillar": "month"
+          }
+        },
+        {
+          "key": "zhi",
+          "value": "辰",
+          "scope": {
+            "layer": "本命",
+            "pillar": "month"
+          }
+        },
+        {
+          "key": "gan",
+          "value": "甲",
+          "scope": {
+            "layer": "本命",
+            "pillar": "day"
+          }
+        },
+        {
+          "key": "zhi",
+          "value": "子",
+          "scope": {
+            "layer": "本命",
+            "pillar": "day"
+          }
+        },
+        {
+          "key": "gan",
+          "value": "庚",
+          "scope": {
+            "layer": "本命",
+            "pillar": "time"
+          }
+        },
+        {
+          "key": "zhi",
+          "value": "午",
+          "scope": {
+            "layer": "本命",
+            "pillar": "time"
+          }
+        },
+        {
+          "key": "canggan",
+          "value": "戊",
+          "scope": {
+            "layer": "本命",
+            "pillar": "month"
+          }
+        },
+        {
+          "key": "canggan",
+          "value": "乙",
+          "scope": {
+            "layer": "本命",
+            "pillar": "month"
+          }
+        },
+        {
+          "key": "canggan",
+          "value": "癸",
+          "scope": {
+            "layer": "本命",
+            "pillar": "month"
+          }
+        },
+        {
+          "key": "gan",
+          "value": "戊",
+          "scope": {
+            "layer": "本命",
+            "pillar": "time"
+          }
+        }
+      ],
+      "expected": {
+        "SANMINGTONGH-015-L1-STRUCT": "satisfied",
+        "SMTH-CHONGJI-ZIWU-L1-STRUCT": "satisfied",
+        "SMTH-CHONGJI-MAOYOU-L1-STRUCT": "not_satisfied",
+        "ZPR-P1-01-L1-STRUCT": "unknown"
+      },
+      "expectedDisplay": [
+        "SANMINGTONGH-015-L1-STRUCT",
+        "SMTH-CHONGJI-ZIWU-L1-STRUCT"
+      ],
+      "expectedPositions": {
+        "SANMINGTONGH-015-L1-STRUCT": {
+          "申": [
+            "year"
+          ],
+          "子": [
+            "day"
+          ],
+          "辰": [
+            "month"
+          ]
+        },
+        "SMTH-CHONGJI-ZIWU-L1-STRUCT": {
+          "子": [
+            "day"
+          ],
+          "午": [
+            "time"
+          ]
+        }
+      },
+      "expectedStatements": [
+        "你的盘里申在年柱、子在日柱、辰在月柱，三字齐全；《三命通会·论支元三合》称申子辰为水局，并说三字缺一就不能按三合论。",
+        "你的盘里子在日柱、午在时柱，从子数到午是七位；《三命通会·论冲击》说地支取七位为冲，并举子午为对冲之例。"
+      ]
+    },
+    {
+      "id": "ziwu_repeated_zi",
+      "description": "子在三柱，渲染三处顺序。",
+      "facts": [
+        {
+          "key": "gan",
+          "value": "庚",
+          "scope": {
+            "layer": "本命",
+            "pillar": "year"
+          }
+        },
+        {
+          "key": "zhi",
+          "value": "子",
+          "scope": {
+            "layer": "本命",
+            "pillar": "year"
+          }
+        },
+        {
+          "key": "gan",
+          "value": "庚",
+          "scope": {
+            "layer": "本命",
+            "pillar": "month"
+          }
+        },
+        {
+          "key": "zhi",
+          "value": "子",
+          "scope": {
+            "layer": "本命",
+            "pillar": "month"
+          }
+        },
+        {
+          "key": "gan",
+          "value": "乙",
+          "scope": {
+            "layer": "本命",
+            "pillar": "day"
+          }
+        },
+        {
+          "key": "zhi",
+          "value": "午",
+          "scope": {
+            "layer": "本命",
+            "pillar": "day"
+          }
+        },
+        {
+          "key": "gan",
+          "value": "庚",
+          "scope": {
+            "layer": "本命",
+            "pillar": "time"
+          }
+        },
+        {
+          "key": "zhi",
+          "value": "子",
+          "scope": {
+            "layer": "本命",
+            "pillar": "time"
+          }
+        },
+        {
+          "key": "canggan",
+          "value": "癸",
+          "scope": {
+            "layer": "本命",
+            "pillar": "month"
+          }
+        }
+      ],
+      "expected": {
+        "SANMINGTONGH-015-L1-STRUCT": "not_satisfied",
+        "SMTH-CHONGJI-ZIWU-L1-STRUCT": "satisfied",
+        "SMTH-CHONGJI-MAOYOU-L1-STRUCT": "not_satisfied",
+        "ZPR-P1-01-L1-STRUCT": "not_satisfied"
+      },
+      "expectedDisplay": [
+        "SMTH-CHONGJI-ZIWU-L1-STRUCT"
+      ],
+      "expectedPositions": {
+        "SMTH-CHONGJI-ZIWU-L1-STRUCT": {
+          "子": [
+            "year",
+            "month",
+            "time"
+          ],
+          "午": [
+            "day"
+          ]
+        }
+      },
+      "expectedStatements": [
+        "你的盘里子在年柱、月柱和时柱、午在日柱，从子数到午是七位；《三命通会·论冲击》说地支取七位为冲，并举子午为对冲之例。"
+      ]
+    },
+    {
+      "id": "all_missing",
+      "description": "四柱全部缺失，四条均 unknown。",
+      "facts": [],
+      "expected": {
+        "SANMINGTONGH-015-L1-STRUCT": "unknown",
+        "SMTH-CHONGJI-ZIWU-L1-STRUCT": "unknown",
+        "SMTH-CHONGJI-MAOYOU-L1-STRUCT": "unknown",
+        "ZPR-P1-01-L1-STRUCT": "unknown"
+      },
+      "expectedDisplay": [],
+      "expectedPositions": {},
+      "expectedStatements": []
+    }
+  ]
+}
